@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\War3Map.Template.Source\War3Map.Template.Source.csproj" />
+    <ProjectReference Include="..\..\src\War3Map.Template.Source\AzerothWarsCSharp.Template.Source.csproj" />
   </ItemGroup>
 
   <ItemGroup>
