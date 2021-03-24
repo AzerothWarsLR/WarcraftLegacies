@@ -1,17 +1,19 @@
-﻿using War3Map.Template.Common.Constants;
+﻿using AzerothWarsCSharp.Template.Source.Setup;
+using AzerothWarsCSharp.Common.Constants;
 
 using static War3Api.Common;
 
-namespace War3Map.Template.Source
+namespace AzerothWarsCSharp.Source
 {
-    internal static class Program
+  internal static class Program
+  {
+    private static void Main()
     {
-        private static void Main()
-        {
-            for (var i = 0; i < PlayerConstants.PlayerSlotCount; i++)
-            {
-                BlzDisplayChatMessage(Player(i), 0, "Hello world!");
-            }
-        }
+      for (var i = 0; i < PlayerConstants.PlayerSlotCount; i++)
+      {
+        BlzDisplayChatMessage(Player(i), 0, "Hello world!");
+      }
+      GameSetup.Initialize();
     }
+  }
 }

@@ -1,28 +1,32 @@
-﻿using War3Net.Build;
+﻿using System.Collections.Generic;
+using War3Net.Build;
 using War3Net.IO.Mpq;
 
-namespace War3Map.Template.Launcher
+namespace AzerothWarsCSharp.Launcher
 {
-    internal static class CompilerOptions
+  internal static class CompilerOptions
+  {
+    public static ScriptCompilerOptions GetCompilerOptions(string sourceDirectory, string outputDirectory)
     {
-        public static ScriptCompilerOptions GetCompilerOptions(string sourceDirectory, string outputDirectory)
-        {
-            var scriptCompilerOptions = new ScriptCompilerOptions(CSharpLua.CoreSystem.CoreSystemProvider.GetCoreSystemFiles());
+      var dict = new Dictionary<string, int>();
 
-            scriptCompilerOptions.MapInfo = Info.GetMapInfo();
-            scriptCompilerOptions.MapEnvironment = Info.GetMapEnvironment(scriptCompilerOptions.MapInfo);
+      var scriptCompilerOptions = new ScriptCompilerOptions(CSharpLua.CoreSystem.CoreSystemProvider.GetCoreSystemFiles())
+      {
+        MapInfo = Info.GetMapInfo()
+      };
+      scriptCompilerOptions.MapEnvironment = Info.GetMapEnvironment(scriptCompilerOptions.MapInfo);
 
-            scriptCompilerOptions.SourceDirectory = sourceDirectory;
-            scriptCompilerOptions.OutputDirectory = outputDirectory;
+      scriptCompilerOptions.SourceDirectory = sourceDirectory;
+      scriptCompilerOptions.OutputDirectory = outputDirectory;
 
-            scriptCompilerOptions.DefaultFileFlags = MpqFileFlags.Exists | MpqFileFlags.CompressedMulti;
-            scriptCompilerOptions.FileFlags[ListFile.FileName] = MpqFileFlags.Exists | MpqFileFlags.CompressedMulti | MpqFileFlags.Encrypted | MpqFileFlags.BlockOffsetAdjustedKey;
+      scriptCompilerOptions.DefaultFileFlags = MpqFileFlags.Exists | MpqFileFlags.CompressedMulti;
+      scriptCompilerOptions.FileFlags[ListFile.FileName] = MpqFileFlags.Exists | MpqFileFlags.CompressedMulti | MpqFileFlags.Encrypted | MpqFileFlags.BlockOffsetAdjustedKey;
 
 #if DEBUG
-            scriptCompilerOptions.Debug = true;
+      scriptCompilerOptions.Debug = true;
 #endif
 
-            return scriptCompilerOptions;
-        }
+      return scriptCompilerOptions;
     }
+  }
 }

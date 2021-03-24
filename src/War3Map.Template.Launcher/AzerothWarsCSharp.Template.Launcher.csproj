@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\War3Map.Template.Common\AzerothWarsCSharp.Template.Common.csproj" />
+    <ProjectReference Include="..\AzerothWarsCSharp.Common\AzerothWarsCSharp.Template.Common.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -15,10 +15,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Assets\**" />
     <Content Include="Assets\**">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Assets\test.cs" />
   </ItemGroup>
 
 </Project>

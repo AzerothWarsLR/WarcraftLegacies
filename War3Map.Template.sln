@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.Template.Launcher", "src\War3Map.Template.Launcher\AzerothWarsCSharp.Template.Launcher.csproj", "{7467C647-3C6F-437C-A761-7E37542F577C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.Template.Launcher", "src\AzerothWarsCSharp.Launcher\AzerothWarsCSharp.Template.Launcher.csproj", "{7467C647-3C6F-437C-A761-7E37542F577C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.Template.Source", "src\War3Map.Template.Source\AzerothWarsCSharp.Template.Source.csproj", "{F93D82E3-B6B7-4BBD-B87D-8AD0969BFC94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.Template.Source", "src\AzerothWarsCSharp.Source\AzerothWarsCSharp.Template.Source.csproj", "{F93D82E3-B6B7-4BBD-B87D-8AD0969BFC94}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.Template.Common", "src\War3Map.Template.Common\AzerothWarsCSharp.Template.Common.csproj", "{60229EED-4712-4161-9C58-7616C2128336}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.Template.Common", "src\AzerothWarsCSharp.Common\AzerothWarsCSharp.Template.Common.csproj", "{60229EED-4712-4161-9C58-7616C2128336}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.Template.Generated", "src\War3Map.Template.Generated\AzerothWarsCSharp.Template.Generated.csproj", "{3DE25822-0AB6-4F6B-B8E3-6353A4068171}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.Template.Generated", "src\AzerothWarsCSharp.Generated\AzerothWarsCSharp.Template.Generated.csproj", "{3DE25822-0AB6-4F6B-B8E3-6353A4068171}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.Template.Tests", "tests\War3Map.Template.Tests\AzerothWarsCSharp.Template.Tests.csproj", "{AC91DCE4-ABE5-4EE2-94D4-5ED37DB7DD58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.Template.Tests", "tests\AzerothWarsCSharp.Tests\AzerothWarsCSharp.Template.Tests.csproj", "{AC91DCE4-ABE5-4EE2-94D4-5ED37DB7DD58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

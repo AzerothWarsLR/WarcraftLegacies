@@ -1,4 +1,4 @@
-﻿namespace War3Map.Template.Common.Constants
+﻿namespace AzerothWarsCSharp.Common.Constants
 {
     public static class PlayerConstants
     {
