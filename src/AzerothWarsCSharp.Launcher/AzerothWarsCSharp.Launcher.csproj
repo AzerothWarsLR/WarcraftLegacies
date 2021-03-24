@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AzerothWarsCSharp.Common\AzerothWarsCSharp.Template.Common.csproj" />
+    <ProjectReference Include="..\AzerothWarsCSharp.Common\AzerothWarsCSharp.Common.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Assets\test.cs" />
+    <Folder Include="Assets\" />
   </ItemGroup>
 
 </Project>

@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Launcher
   internal static class Program
   {
     // Input
-    private const string SourceCodeProjectFolderPath = @"..\..\..\..\AzerothWarsCSharp.Template.Source";
+    private const string SourceCodeProjectFolderPath = @"..\..\..\..\AzerothWarsCSharp.Source";
     private const string AssetsFolderPath = @".\Assets\";
 
     // Output

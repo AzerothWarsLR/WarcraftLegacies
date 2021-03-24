@@ -9,8 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AzerothWarsCSharp.Common\AzerothWarsCSharp.Template.Common.csproj" />
-    <ProjectReference Include="..\AzerothWarsCSharp.Generated\AzerothWarsCSharp.Template.Generated.csproj" />
+    <ProjectReference Include="..\AzerothWarsCSharp.Common\AzerothWarsCSharp.Common.csproj" />
+    <ProjectReference Include="..\AzerothWarsCSharp.Generated\AzerothWarsCSharp.Generated.csproj" />
   </ItemGroup>
 
 </Project>
