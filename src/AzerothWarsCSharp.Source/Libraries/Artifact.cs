@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WCSharp.Events;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Template.Source.Libraries
@@ -28,13 +29,22 @@ namespace AzerothWarsCSharp.Template.Source.Libraries
     private ArtifactStatus _status;
     private readonly string _description;
     private readonly Person _owningPerson;
+    private static Dictionary<item, Artifact> _byItem = new();
+
+    public Artifact(item item)
+    {
+      PlayerUnitEvents.Register(PlayerUnitEvent.ItemTypeIsPickedUp, 
+        ArtifactPickedUp(EventArgs.Empty), 
+        GetItemTypeId(item));
+      PlayerUnitEvents.Register(PlayerUnitEvent.ItemTypeIsDropped, OnArtifactDropped, GetItemTypeId(item));
+    }
 
     public static EventHandler<ArtifactEventArgs> ArtifactCreated
     {
       get;
     }
 
-    public static EventHandler<ArtifactEventArgs> ArtifactAquired
+    public static EventHandler<ArtifactEventArgs> ArtifactPickedUp
     {
       get;
     }
@@ -74,15 +84,16 @@ namespace AzerothWarsCSharp.Template.Source.Libraries
       get;
     }
 
+    public static Artifact ByItem(item whichItem)
+    {
+      return _byItem[whichItem];
+    }
+
     /// <summary>
     /// Registers Warcraft 3 native triggers related to Artifacts.
     /// </summary>
     public static void Initialize()
     {
-      throw new Exception();
-    }
-
-    public Artifact(item item) {
       throw new NotImplementedException();
     }
 
@@ -147,6 +158,16 @@ namespace AzerothWarsCSharp.Template.Source.Libraries
     /// Pings the Artifact on the minimap.
     /// </summary>
     public void Ping()
+    {
+      throw new NotImplementedException();
+    }
+
+    private static void OnUnitCarryingArtifactChangesOwner()
+    {
+      throw new NotImplementedException();
+    }
+
+    private static void OnPersonChangesFaction()
     {
       throw new NotImplementedException();
     }
