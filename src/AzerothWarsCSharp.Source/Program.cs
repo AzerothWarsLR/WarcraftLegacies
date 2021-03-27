@@ -1,5 +1,5 @@
 ﻿using AzerothWarsCSharp.Common.Constants;
-
+using AzerothWarsCSharp.Source.Setup;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source

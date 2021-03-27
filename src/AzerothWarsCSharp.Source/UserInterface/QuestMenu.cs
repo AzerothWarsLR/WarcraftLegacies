@@ -21,8 +21,8 @@ namespace AzerothWarsCSharp.Source.UserInterface
 
     static QuestMenu()
     {
-      Faction.QuestAdded += OnFactionQuestAdded;
-      Faction.QuestProgressChanged += OnFactionQuestProgressChanged;
+      //Faction.QuestAdded += OnFactionQuestAdded;
+      //Faction.QuestProgressChanged += OnFactionQuestProgressChanged;
     }
   }
 }
