@@ -41,10 +41,10 @@ namespace AzerothWarsCSharp.Launcher
       info.EditorVersion = 6072;
       info.GameVersion = gamePatch.ToVersion();
 
-      info.MapName = "Just another Warcraft III map";
-      info.MapAuthor = "Unknown";
+      info.MapName = "Azeroth Wars CSharp";
+      info.MapAuthor = "YakaryBovine";
       info.MapDescription = "Nondescript";
-      info.RecommendedPlayers = "Any";
+      info.RecommendedPlayers = "12";
 
       const int DefaultLeftComplement = 6;
       const int DefaultRightComplement = 6;

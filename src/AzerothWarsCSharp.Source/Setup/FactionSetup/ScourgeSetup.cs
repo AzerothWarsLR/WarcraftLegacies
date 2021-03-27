@@ -1,9 +1,5 @@
 ﻿using AzerothWarsCSharp.Template.Source.Libraries;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Template.Source.Setup
 {
@@ -13,7 +9,7 @@ namespace AzerothWarsCSharp.Template.Source.Setup
 
     public static void Initialize()
     {
-      throw new NotImplementedException();
+      Scourge = new Faction("Scourge", PLAYER_COLOR_PURPLE, "|c00540081", "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp", 3);
     }
   }
 }

@@ -15,28 +15,32 @@ namespace AzerothWarsCSharp.Launcher
       var team0Players = new PlayerData[PlayerConstants.PlayerSlotCount];
       for (var i = 0; i < PlayerConstants.PlayerSlotCount; i++)
       {
-        var playerData = new PlayerData();
-        playerData.Id = i;
-        playerData.Name = $"Player {i + 1}";
-        playerData.Controller = PlayerController.User;
-        playerData.Race = PlayerRace.Human;
-        playerData.StartPosition = new Vector2(0f, 0f);
-        playerData.Flags = PlayerFlags.FixedStartPosition;
-        playerData.AllyLowPriorityFlags = new Bitmask32();
-        playerData.AllyHighPriorityFlags = new Bitmask32();
+        var playerData = new PlayerData
+        {
+          Id = i,
+          Name = $"Player {i + 1}",
+          Controller = PlayerController.User,
+          Race = PlayerRace.Human,
+          StartPosition = new Vector2(0f, 0f),
+          Flags = PlayerFlags.FixedStartPosition,
+          AllyLowPriorityFlags = new Bitmask32(),
+          AllyHighPriorityFlags = new Bitmask32()
+        };
 
         team0Players[i] = playerData;
       }
 
-      var team1Player = new PlayerData();
-      team1Player.Id = 23;
-      team1Player.Name = "Enemies";
-      team1Player.Controller = PlayerController.Computer;
-      team1Player.Race = PlayerRace.Orc;
-      team1Player.StartPosition = new Vector2(0f, 0f);
-      team1Player.Flags = PlayerFlags.FixedStartPosition;
-      team1Player.AllyLowPriorityFlags = new Bitmask32();
-      team1Player.AllyHighPriorityFlags = new Bitmask32();
+      var team1Player = new PlayerData
+      {
+        Id = 23,
+        Name = "Enemies",
+        Controller = PlayerController.Computer,
+        Race = PlayerRace.Orc,
+        StartPosition = new Vector2(0f, 0f),
+        Flags = PlayerFlags.FixedStartPosition,
+        AllyLowPriorityFlags = new Bitmask32(),
+        AllyHighPriorityFlags = new Bitmask32()
+      };
 
       // Add players to MapInfo
       mapInfo.Players.Clear();

@@ -3,7 +3,6 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
-using AzerothWarsCSharp.Launcher;
 using War3Net.Build;
 
 namespace AzerothWarsCSharp.Launcher

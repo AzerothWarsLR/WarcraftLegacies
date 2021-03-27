@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Template.Source.Libraries
 {
   public class FactionEventArgs : EventArgs
   {
-    public Faction Faction;
+    public FactionEventArgs(Faction faction)
+    {
+      Faction = faction;
+    }
+
+    public Faction Faction { get; }
   }
   public class FactionChangesTeamArgs
   {
@@ -32,17 +34,27 @@ namespace AzerothWarsCSharp.Template.Source.Libraries
 
   public class Faction
   {
-    public static readonly int UNLIMITED = 200;
+    public static int UNLIMITED { get; } = 200;
 
-    public static EventHandler<FactionChangesTeamArgs> ChangesTeam;
+    public static HashSet<Faction> All { get; } = new();
 
-    public static EventHandler<FactionEventArgs> ChangesPerson;
+    public EventHandler<FactionChangesTeamArgs> ChangesTeam { get; set; }
+    public EventHandler<FactionEventArgs> ChangesPerson { get; set; }
+    public EventHandler<FactionEventArgs> ObjectLevelChanged { get; set; }
+    public EventHandler<FactionQuestAddedArgs> QuestAdded { get; set; }
+    public EventHandler<FactionQuestProgressChangedArgs> QuestProgressChanged { get; set; }
+    public static EventHandler<FactionEventArgs> FactionCreated { get; set; }
 
-    public static EventHandler<FactionEventArgs> ObjectLevelChanged;
-
-    public static EventHandler<FactionQuestAddedArgs> QuestAdded;
-
-    public static EventHandler<FactionQuestProgressChangedArgs> QuestProgressChanged;
+    public Faction(string name, playercolor playercolor, string prefixColor, string icon, int weight)
+    {
+      Name = name;
+      PlayerColor = playercolor;
+      PrefixColor = prefixColor;
+      Icon = icon;
+      Weight = weight;
+      FactionCreated?.Invoke(this, new FactionEventArgs(this));
+      All.Add(this);
+    }
 
     /// <summary>
     /// A research that is enabled for all players whenever this Faction is occupied.
@@ -138,15 +150,27 @@ namespace AzerothWarsCSharp.Template.Source.Libraries
     }
 
     /// <summary>
+    /// The string that goes before the faction's name to color it.
+    /// </summary>
+    public string PrefixColor
+    {
+      get;
+    }
+
+    /// <summary>
     /// Faction's name with a color prefix.
     /// </summary>
     public string ColoredName
     {
       get
       {
-        throw new NotImplementedException();
+        return PrefixColor + Name;
       }
     }
+
+    public string Icon { get;  }
+
+    public int ControlPoints { get; private set; }
 
     /// <summary>
     /// Player currently occupying this Faction.
@@ -196,6 +220,14 @@ namespace AzerothWarsCSharp.Template.Source.Libraries
       {
         return true;
       }
+    }
+
+    /// <summary>
+    /// The WC3 player color of this faction in-game.
+    /// </summary>
+    public playercolor PlayerColor
+    {
+      get; set;
     }
 
     /// <summary>

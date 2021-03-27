@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AzerothWarsCSharp.Source.UserInterface;
 
 namespace AzerothWarsCSharp.Template.Source.Setup
 {
@@ -12,6 +8,7 @@ namespace AzerothWarsCSharp.Template.Source.Setup
     {
       TeamSetup.Initialize();
       FactionSetup.Initialize();
+      FactionMultiboard.Initialize();
     }
   }
 }

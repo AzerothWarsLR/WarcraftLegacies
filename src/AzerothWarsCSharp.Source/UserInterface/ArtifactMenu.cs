@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AzerothWarsCSharp.Template.Source.UserInterface
+namespace AzerothWarsCSharp.Source.UserInterface
 {
-  class Multiboard
+  public static class ArtifactMenu
   {
+
   }
 }

@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -16,9 +13,26 @@ namespace AzerothWarsCSharp.Template.Source.Libraries
     Hidden
   }
 
-  public class ArtifactEventArgs : EventArgs
+  public sealed class ArtifactEventArgs : EventArgs
   {
+    public ArtifactEventArgs(Artifact artifact)
+    {
+      Artifact = artifact;
+    }
 
+    public Artifact Artifact { get; }
+  }
+
+  public sealed class ArtifactManipulatedEventArgs : EventArgs
+  {
+    public ArtifactManipulatedEventArgs(Artifact artifact, unit manipulatingUnit)
+    {
+      Artifact = artifact;
+      ManipulatingUnit = manipulatingUnit;
+    }
+
+    public Artifact Artifact { get; }
+    public unit ManipulatingUnit { get; }
   }
 
   /// <summary>
@@ -27,62 +41,40 @@ namespace AzerothWarsCSharp.Template.Source.Libraries
   public class Artifact
   {
     private ArtifactStatus _status;
-    private readonly string _description;
+    private string _description;
     private readonly Person _owningPerson;
-    private static Dictionary<item, Artifact> _byItem = new();
+    private readonly item _item;
+    private static readonly Dictionary<item, Artifact> _byItem = new();
 
     public Artifact(item item)
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.ItemTypeIsPickedUp, 
-        ArtifactPickedUp(EventArgs.Empty), 
+      _item = item;
+      PlayerUnitEvents.Register(PlayerUnitEvent.ItemTypeIsPickedUp,
+        () => PickedUp?.Invoke(this, new ArtifactEventArgs(this)),
         GetItemTypeId(item));
-      PlayerUnitEvents.Register(PlayerUnitEvent.ItemTypeIsDropped, OnArtifactDropped, GetItemTypeId(item));
+      PlayerUnitEvents.Register(PlayerUnitEvent.ItemTypeIsDropped,
+        () => Dropped?.Invoke(this, new ArtifactEventArgs(this)),
+        GetItemTypeId(item));
+      ArtifactCreated?.Invoke(this, new ArtifactEventArgs(this));
     }
 
-    public static EventHandler<ArtifactEventArgs> ArtifactCreated
+    ~Artifact()
     {
-      get;
+      //TODO: Unregister events
+      Destroyed?.Invoke(this, new ArtifactEventArgs(this));
+      _byItem[_item] = null;
+      throw new NotImplementedException();
     }
 
-    public static EventHandler<ArtifactEventArgs> ArtifactPickedUp
-    {
-      get;
-    }
-
-    public static EventHandler<ArtifactEventArgs> ArtifactDropped
-    {
-      get;
-    }
-
-    public static EventHandler<ArtifactEventArgs> ArtifactDestroyed
-    {
-      get;
-    }
-
-    public static EventHandler<ArtifactEventArgs> ArtifactOwnerChanged
-    {
-      get;
-    }
-
-    public static EventHandler<ArtifactEventArgs> ArtifactStatusChanged
-    {
-      get;
-    }
-
-    public static EventHandler<ArtifactEventArgs> ArtifactFactionChanged
-    {
-      get;
-    }
-
-    public static EventHandler<ArtifactEventArgs> ArtifactCarrierOwnedChanged
-    {
-      get;
-    }
-
-    public static EventHandler<ArtifactEventArgs> ArtifactDescriptionChanged
-    {
-      get;
-    }
+    public static EventHandler<ArtifactEventArgs> ArtifactCreated { get; set; }
+    public EventHandler<ArtifactEventArgs> PickedUp { get; set; }
+    public EventHandler<ArtifactEventArgs> Dropped { get; set; }
+    public EventHandler<ArtifactEventArgs> Destroyed { get; set; }
+    public EventHandler<ArtifactEventArgs> OwnerChanged { get; set; }
+    public EventHandler<ArtifactEventArgs> StatusChanged { get; set; }
+    public EventHandler<ArtifactEventArgs> FactionChanged { get; set; }
+    public EventHandler<ArtifactEventArgs> CarrierOwnedChanged { get; set; }
+    public EventHandler<ArtifactEventArgs> DescriptionChanged { get; set; }
 
     public static Artifact ByItem(item whichItem)
     {
@@ -109,7 +101,7 @@ namespace AzerothWarsCSharp.Template.Source.Libraries
       set
       {
         _status = value;
-        throw new NotImplementedException();
+        StatusChanged?.Invoke(this, new ArtifactEventArgs(this));
       }
     }
 
@@ -124,7 +116,8 @@ namespace AzerothWarsCSharp.Template.Source.Libraries
       }
       set
       {
-        throw new NotImplementedException();
+        _description = value;
+        DescriptionChanged?.Invoke(this, new ArtifactEventArgs(this));
       }
     }
 

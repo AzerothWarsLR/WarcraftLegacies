@@ -4,9 +4,4 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="War3Api.Blizzard.Legacy" Version="1.31.1.5" />
-    <PackageReference Include="War3Api.Common.Legacy" Version="1.31.1.5" />
-  </ItemGroup>
-
 </Project>
