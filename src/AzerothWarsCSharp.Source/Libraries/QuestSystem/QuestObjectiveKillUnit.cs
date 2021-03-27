@@ -1,7 +1,7 @@
 ﻿using System;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Template.Source.Libraries
+namespace AzerothWarsCSharp.Source.Libraries
 {
   public sealed class QuestObjectiveKillUnit : QuestObjective
   {

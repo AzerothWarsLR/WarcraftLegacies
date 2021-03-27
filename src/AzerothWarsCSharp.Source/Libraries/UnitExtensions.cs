@@ -2,7 +2,7 @@
 using static War3Api.Blizzard;
 using System;
 
-namespace AzerothWarsCSharp.Template.Source.Libraries
+namespace AzerothWarsCSharp.Source.Libraries
 {
   public static class UnitUtils
   {

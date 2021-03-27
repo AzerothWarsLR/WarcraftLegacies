@@ -7,7 +7,7 @@ using AzerothWarsCSharp.Common.Constants;
 using static War3Api.Common;
 using static War3Api.Blizzard;
 
-namespace AzerothWarsCSharp.Template.Source.Libraries
+namespace AzerothWarsCSharp.Source.Libraries
 {
   public class LegendDiesEventArgs : EventArgs
   {

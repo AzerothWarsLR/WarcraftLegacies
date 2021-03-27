@@ -1,8 +1,8 @@
-﻿using AzerothWarsCSharp.Template.Source.Libraries;
+﻿using AzerothWarsCSharp.Source.Libraries;
 using System;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Template.Source.UserInterface
+namespace AzerothWarsCSharp.Source.UserInterface
 {
   public static class QuestMenu
   {

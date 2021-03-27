@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Template.Source.Libraries
+namespace AzerothWarsCSharp.Source.Libraries
 {
   public class Person
   {

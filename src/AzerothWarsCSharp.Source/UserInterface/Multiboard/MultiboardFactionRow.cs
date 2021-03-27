@@ -1,4 +1,4 @@
-﻿using AzerothWarsCSharp.Template.Source.Libraries;
+﻿using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.UserInterface
 {
