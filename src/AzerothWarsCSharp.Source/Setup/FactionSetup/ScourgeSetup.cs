@@ -1,7 +1,7 @@
-﻿using AzerothWarsCSharp.Template.Source.Libraries;
+﻿using AzerothWarsCSharp.Source.Libraries;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Template.Source.Setup
+namespace AzerothWarsCSharp.Source.Setup
 {
   public class ScourgeSetup
   {

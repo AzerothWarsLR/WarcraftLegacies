@@ -1,6 +1,6 @@
 ﻿using AzerothWarsCSharp.Source.UserInterface;
 
-namespace AzerothWarsCSharp.Template.Source.Setup
+namespace AzerothWarsCSharp.Source.Setup
 {
   public class GameSetup
   {

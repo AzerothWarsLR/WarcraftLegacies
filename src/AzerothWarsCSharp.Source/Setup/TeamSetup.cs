@@ -1,6 +1,6 @@
-﻿using AzerothWarsCSharp.Template.Source.Libraries;
+﻿using AzerothWarsCSharp.Source.Libraries;
 
-namespace AzerothWarsCSharp.Template.Source.Setup
+namespace AzerothWarsCSharp.Source.Setup
 {
   public static class TeamSetup
   {
