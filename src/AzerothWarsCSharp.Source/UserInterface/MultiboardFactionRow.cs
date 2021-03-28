@@ -1,4 +1,5 @@
 ﻿using AzerothWarsCSharp.Source.Libraries;
+using AzerothWarsCSharp.Source.Multiboard;
 
 namespace AzerothWarsCSharp.Source.UserInterface
 {

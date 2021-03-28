@@ -1,4 +1,5 @@
 ﻿using AzerothWarsCSharp.Source.Libraries;
+using AzerothWarsCSharp.Source.Multiboard;
 using System.Collections.Generic;
 using static War3Api.Blizzard;
 using static War3Api.Common;
@@ -52,7 +53,7 @@ namespace AzerothWarsCSharp.Source.UserInterface
 
     private void OnRowValueChanged(object sender, MultiboardRowChangedArgs e)
     {
-
+      //UPDATE THE UI
     }
 
     private void OnRowIconChanged(object sender, MultiboardRowChangedArgs e)

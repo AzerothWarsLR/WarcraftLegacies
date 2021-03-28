@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AzerothWarsCSharp.Source.UserInterface
+namespace AzerothWarsCSharp.Source.Multiboard
 {
   public sealed class MultiboardItem
   {

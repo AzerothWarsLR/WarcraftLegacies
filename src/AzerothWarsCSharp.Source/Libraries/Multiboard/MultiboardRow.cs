@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AzerothWarsCSharp.Source.UserInterface
+namespace AzerothWarsCSharp.Source.Multiboard
 {
   public class MultiboardRowChangedArgs : EventArgs
   {
