@@ -1,0 +1,3 @@
+war3mapimported\ArtifactBackdrop.fdf
+ui\framedef\ui\escmenutemplates.fdf
+ui\framedef\glue\standardtemplates.fdf
