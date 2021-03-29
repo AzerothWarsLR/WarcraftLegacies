@@ -17,11 +17,12 @@ namespace AzerothWarsCSharp.Source.Setup
         Description = "Kill Sapphiron the Blue Dragon to reanimate her as a Frost Wyrm.",
         Icon = "ReplaceableTextures\\CommandButtons\\BTNFrostWyrm.blp",
         CompletionPopup = "Sapphiron has been slain, and has been reanimated as a mighty Frost Worm under the command of the Scourge.",
-        CompletionDescription = "THe demihero Sapphiron",
-        OnAdd = delegate(Faction owner) {
+        CompletionDescription = "The demihero Sapphiron",
+        OnAdd = (Faction owner) =>
+        {
           owner.ModObjectLimit(SAPPHIRON_RESEARCH, Faction.UNLIMITED);
         },
-        OnComplete = delegate(Faction owner)
+        OnComplete = (Faction owner) =>
         {
           CreateUnit(owner.Player, SAPPHIRON_ID, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()), GetUnitFacing(GetTriggerUnit()));
           SetPlayerTechResearched(owner.Player, SAPPHIRON_RESEARCH, 1);

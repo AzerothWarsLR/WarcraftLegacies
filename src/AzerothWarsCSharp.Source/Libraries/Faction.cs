@@ -4,46 +4,26 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Libraries
 {
-  public class FactionEventArgs : EventArgs
-  {
-    public FactionEventArgs(Faction faction)
-    {
-      Faction = faction;
-    }
-
-    public Faction Faction { get; }
-  }
-  public class FactionChangesTeamArgs
-  {
-    public Faction FactionChangingTeam;
-    public Team PreviousTeam;
-  }
-
-  public class FactionQuestProgressChangedArgs
-  {
-    public Faction Faction;
-    public QuestEx QuestEx;
-    public QuestProgress PreviousProgress;
-  }
-
-  public class FactionQuestAddedArgs
-  {
-    public Faction Faction;
-    public QuestEx QuestEx;
-  }
-
+  /// <summary>
+  /// A collection of object limits, object limits, quests, etc.
+  /// Players play the game by controlling a particular Faction.
+  /// </summary>
   public class Faction
   {
     public static int UNLIMITED { get; } = 200;
 
     public static HashSet<Faction> All { get; } = new();
 
-    public EventHandler<FactionChangesTeamArgs> ChangesTeam { get; set; }
-    public EventHandler<FactionEventArgs> ChangesPerson { get; set; }
-    public EventHandler<FactionEventArgs> ObjectLevelChanged { get; set; }
-    public EventHandler<FactionQuestAddedArgs> QuestAdded { get; set; }
-    public EventHandler<FactionQuestProgressChangedArgs> QuestProgressChanged { get; set; }
-    public static EventHandler<FactionEventArgs> FactionCreated { get; set; }
+    public event EventHandler<FactionTeamChangedEventArgs> TeamChanged;
+    public event EventHandler<FactionEventArgs> ChangesPerson;
+    public event EventHandler<FactionEventArgs> ObjectLevelChanged;
+    public event EventHandler<FactionQuestAddedEventArgs> QuestAdded;
+    public event EventHandler<FactionQuestProgressChangedEventArgs> QuestProgressChanged;
+    public event EventHandler<FactionEventArgs> IncomeChanged;
+    public event EventHandler<FactionEventArgs> WeightChanged;
+    public event EventHandler<FactionEventArgs> NameChanged;
+    public event EventHandler<FactionEventArgs> IconChanged;
+    public static event EventHandler<FactionEventArgs> FactionCreated;
 
     public Faction(string name, playercolor playercolor, string prefixColor, string icon, int weight)
     {
@@ -62,6 +42,7 @@ namespace AzerothWarsCSharp.Source.Libraries
     public int PresenceResearch
     {
       get;
+      set;
     }
 
     /// <summary>
@@ -70,35 +51,24 @@ namespace AzerothWarsCSharp.Source.Libraries
     public int AbsenceResearch
     {
       get;
+      set;
     }
 
     /// <summary>
     /// Unlike native gold, this can be fractional.
     /// </summary>
-    public float Gold
+    public double Gold
     {
       get
       {
-        throw new NotImplementedException();
+        return GetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD) + _excessGold;
       }
       set
       {
-        throw new NotImplementedException();
-      }
-    }
-
-    /// <summary>
-    /// Unlike native lumber, this can be fractional.
-    /// </summary>
-    public float Lumber
-    {
-      get
-      {
-        throw new NotImplementedException();
-      }
-      set
-      {
-        throw new NotImplementedException();
+        double newTotalGold = value + _excessGold;
+        int truncatedGold = (int)Math.Truncate(newTotalGold);
+        _excessGold = 1 - truncatedGold;
+        SetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD, truncatedGold);
       }
     }
 
@@ -107,22 +77,31 @@ namespace AzerothWarsCSharp.Source.Libraries
     /// </summary>
     public int Weight
     {
-      get;
+      get
+      {
+        return _weight;
+      }
+      set
+      {
+        _weight = value;
+        WeightChanged?.Invoke(this, new FactionEventArgs(this));
+      }
     }
 
     /// <summary>
     /// Gold earned per second.
     /// </summary>
     /// <returns></returns>
-    public float Income
+    public double Income
     {
       get
       {
-        throw new NotImplementedException();
+        return _income;
       }
       set
       {
-        throw new NotImplementedException();
+        _income = value;
+        IncomeChanged?.Invoke(this, new FactionEventArgs(this));
       }
     }
 
@@ -133,11 +112,12 @@ namespace AzerothWarsCSharp.Source.Libraries
     {
       get
       {
-        throw new NotImplementedException();
+        return _team;
       }
       set
       {
-        throw new NotImplementedException();
+        _team = value;
+        TeamChanged?.Invoke(this, new FactionTeamChangedEventArgs());
       }
     }
 
@@ -146,7 +126,15 @@ namespace AzerothWarsCSharp.Source.Libraries
     /// </summary>
     public string Name
     {
-      get;
+      get
+      {
+        return _name;
+      }
+      set
+      {
+        _name = value;
+        NameChanged?.Invoke(this, new FactionEventArgs(this));
+      }
     }
 
     /// <summary>
@@ -168,8 +156,23 @@ namespace AzerothWarsCSharp.Source.Libraries
       }
     }
 
-    public string Icon { get;  }
-
+    /// <summary>
+    /// The icon that renders on the multiboard.
+    /// </summary>
+    public string Icon { 
+      get {
+        return _icon;
+      } 
+      set
+      {
+        _icon = value;
+        IconChanged?.Invoke(this, new FactionEventArgs(this));
+      }
+    }
+    
+    /// <summary>
+    /// Number of Control Points this player has.
+    /// </summary>
     public int ControlPoints { get; private set; }
 
     /// <summary>
@@ -227,7 +230,15 @@ namespace AzerothWarsCSharp.Source.Libraries
     /// </summary>
     public playercolor PlayerColor
     {
-      get; set;
+      get
+      {
+        return _playercolor;
+      }
+      set
+      {
+        _playercolor = value;
+        SetPlayerColor(Player, _playercolor);
+      }
     }
 
     /// <summary>
@@ -236,7 +247,8 @@ namespace AzerothWarsCSharp.Source.Libraries
     /// <param name="quest"></param>
     public void AddQuest(QuestEx quest)
     {
-      throw new NotImplementedException();
+      _quests.Add(quest);
+      QuestAdded?.Invoke(this, new FactionQuestAddedEventArgs());
     }
 
     /// <summary>
@@ -272,5 +284,14 @@ namespace AzerothWarsCSharp.Source.Libraries
     {
       throw new NotImplementedException();
     }
+
+    private double _excessGold = 0;
+    private Team _team;
+    private double _income = 0;
+    private int _weight;
+    private string _name;
+    private string _icon;
+    private playercolor _playercolor;
+    private readonly List<QuestEx> _quests = new();
   }
 }

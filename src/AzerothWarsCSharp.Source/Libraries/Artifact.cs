@@ -66,15 +66,15 @@ namespace AzerothWarsCSharp.Source.Libraries
       throw new NotImplementedException();
     }
 
-    public static EventHandler<ArtifactEventArgs> ArtifactCreated { get; set; }
-    public EventHandler<ArtifactEventArgs> PickedUp { get; set; }
-    public EventHandler<ArtifactEventArgs> Dropped { get; set; }
-    public EventHandler<ArtifactEventArgs> Destroyed { get; set; }
-    public EventHandler<ArtifactEventArgs> OwnerChanged { get; set; }
-    public EventHandler<ArtifactEventArgs> StatusChanged { get; set; }
-    public EventHandler<ArtifactEventArgs> FactionChanged { get; set; }
-    public EventHandler<ArtifactEventArgs> CarrierOwnedChanged { get; set; }
-    public EventHandler<ArtifactEventArgs> DescriptionChanged { get; set; }
+    public static event EventHandler<ArtifactEventArgs> ArtifactCreated;
+    public event EventHandler<ArtifactEventArgs> PickedUp;
+    public event EventHandler<ArtifactEventArgs> Dropped;
+    public event EventHandler<ArtifactEventArgs> Destroyed;
+    public event EventHandler<ArtifactEventArgs> OwnerChanged;
+    public event EventHandler<ArtifactEventArgs> StatusChanged;
+    public event EventHandler<ArtifactEventArgs> FactionChanged;
+    public event EventHandler<ArtifactEventArgs> CarrierOwnedChanged;
+    public event EventHandler<ArtifactEventArgs> DescriptionChanged;
 
     public static Artifact ByItem(item whichItem)
     {

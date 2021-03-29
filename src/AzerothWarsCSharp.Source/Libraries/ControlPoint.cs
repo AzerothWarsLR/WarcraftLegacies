@@ -1,12 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Libraries
 {
-  class ControlPoint
+  public class ControlPoint
   {
+    public static List<ControlPoint> All { get; } = new();
+
+    public static event EventHandler<ControlPointEventArgs> Created;
+    public static event EventHandler<ControlPointEventArgs> Destroyed;
+
+    ~ControlPoint()
+    {
+      Destroyed?.Invoke(this, new ControlPointEventArgs(this));
+    }
+
+    public unit Unit
+    {
+      get; set;
+    }
   }
 }
