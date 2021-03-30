@@ -2,6 +2,6 @@
 {
     public static class PlayerConstants
     {
-        public const int PlayerSlotCount = 2;
+        public const int PlayerSlotCount = 24;
     }
 }
