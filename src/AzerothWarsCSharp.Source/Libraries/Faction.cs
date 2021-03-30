@@ -37,6 +37,25 @@ namespace AzerothWarsCSharp.Source.Libraries
     }
 
     /// <summary>
+    /// Returns the Faction being controlled by this player.
+    /// </summary>
+    /// <param name="whichPlayer"></param>
+    /// <returns></returns>
+    public static Faction ByPlayerHandle(player whichPlayer)
+    {
+      throw new NotImplementedException();
+    }
+    /// <summary>
+    /// Returns the faction with this name.
+    /// </summary>
+    /// <param name="name"></param>
+    /// <returns></returns>
+    public static Faction ByName(string name)
+    {
+      throw new NotImplementedException();
+    }
+
+    /// <summary>
     /// A research that is enabled for all players whenever this Faction is occupied.
     /// </summary>
     public int PresenceResearch
