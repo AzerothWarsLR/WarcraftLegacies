@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Libraries
       DisplayTextToPlayer(whichPlayer, 0, 0, msg);
     }
 
-    private static bool CanPlayerUseCheats(player whichPlayer)
+    public static bool CanPlayerUseCheats(player whichPlayer)
     {
       if (GetPlayerName(whichPlayer) == "YakaryBovine#6863" || GetPlayerName(whichPlayer) == "Lordsebas#11619" || Active)
       {
