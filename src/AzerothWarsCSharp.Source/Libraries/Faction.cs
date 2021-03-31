@@ -271,6 +271,16 @@ namespace AzerothWarsCSharp.Source.Libraries
     }
 
     /// <summary>
+    /// Returns the level of a research.
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
+    public int GetObjectLevel(int obj)
+    {
+      throw new NotImplementedException();
+    }
+
+    /// <summary>
     /// Sets the research level of an object to a value.
     /// </summary>
     public void SetObjectLevel(int obj, int level)
