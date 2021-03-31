@@ -45,6 +45,6 @@ namespace AzerothWarsCSharp.Source.Libraries
       }
     }
 
-    private static Dictionary<string, OnCheatDelegate> _cheatsByActivator = new();
+    private static readonly Dictionary<string, OnCheatDelegate> _cheatsByActivator = new();
   }
 }

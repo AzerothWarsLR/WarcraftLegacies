@@ -52,6 +52,6 @@ namespace AzerothWarsCSharp.Source.Commands
       }
     }
 
-    private static HashSet<player> _godPlayers = new ();
+    private static readonly HashSet<player> _godPlayers = new ();
   }
 }

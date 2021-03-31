@@ -47,6 +47,6 @@ namespace AzerothWarsCSharp.Source.Commands
       }
     }
 
-    private static HashSet<player> _enabledPlayers = new();
+    private static readonly HashSet<player> _enabledPlayers = new();
   }
 }
