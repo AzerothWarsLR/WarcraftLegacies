@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AzerothWarsCSharp.Source.Libraries
 { 
@@ -17,6 +14,16 @@ namespace AzerothWarsCSharp.Source.Libraries
     {
       Name = name;
       All.Add(this);
+    }
+
+    /// <summary>
+    /// Returns the Team with the provided name.
+    /// </summary>
+    /// <param name="name"></param>
+    /// <returns></returns>
+    public static Team ByName(string name)
+    {
+      throw new NotImplementedException();
     }
 
     public static HashSet<Team> All { get; } = new();
