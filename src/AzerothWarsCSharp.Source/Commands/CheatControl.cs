@@ -1,6 +1,7 @@
 ﻿using AzerothWarsCSharp.Source.Libraries;
 using static War3Api.Common;
 using static War3Api.Blizzard;
+using AzerothWarsCSharp.Common.Constants;
 
 namespace AzerothWarsCSharp.Source.Commands
 {
@@ -16,9 +17,8 @@ namespace AzerothWarsCSharp.Source.Commands
         var target = arguments[0];
         if (target == "all")
         {
-          for (var i = 0; i < 24; i++)
+          for (var i = 0; i < PlayerConstants.PlayerSlotCount; i++)
           {
-            SetPlayerAllianceStateBJ(triggerPlayer, Player(i), bj_ALLIANCE_ALLIED_ADVUNITS);
             SetPlayerAllianceStateBJ(Player(i), triggerPlayer, bj_ALLIANCE_ALLIED_ADVUNITS);
             CheatCommand.Display(triggerPlayer, "Granted control of all players.");
           }
@@ -27,7 +27,6 @@ namespace AzerothWarsCSharp.Source.Commands
         {
           if (int.TryParse(arguments[0], out int playerId))
           {
-            SetPlayerAllianceStateBJ(triggerPlayer, Player(int.Parse(target)), bj_ALLIANCE_ALLIED_ADVUNITS);
             SetPlayerAllianceStateBJ(Player(int.Parse(target)), triggerPlayer, bj_ALLIANCE_ALLIED_ADVUNITS);
             CheatCommand.Display(triggerPlayer, "Granted control of player " + GetPlayerName(Player(playerId)));
           }
