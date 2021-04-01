@@ -204,6 +204,10 @@ namespace AzerothWarsCSharp.Source.Libraries
       {
         throw new NotImplementedException();
       }
+      set
+      {
+        throw new NotImplementedException();
+      }
     }
 
     /// <summary>
