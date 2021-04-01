@@ -30,11 +30,13 @@ namespace AzerothWarsCSharp.Source.Commands
         if (factionToInvite.Team == sendingTeam)
         {
           DisplayTextToPlayer(triggerPlayer, 0, 0, factionToInvite.ColoredName + " is already on your team.");
+          return;
         }
 
         if (factionToInvite.Player == null)
         {
           DisplayTextToPlayer(triggerPlayer, 0, 0, "There is no player with the faction " + factionToInvite.ColoredName);
+          return;
         }
 
         sendingTeam.InviteFaction(factionToInvite);
