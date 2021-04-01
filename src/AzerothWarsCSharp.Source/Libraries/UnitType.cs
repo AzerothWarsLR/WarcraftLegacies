@@ -8,5 +8,9 @@ namespace AzerothWarsCSharp.Source.Libraries
 {
   class UnitType
   {
+    internal static object ByUnitTypeId(int v)
+    {
+      throw new NotImplementedException();
+    }
   }
 }
