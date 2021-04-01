@@ -26,10 +26,23 @@ namespace AzerothWarsCSharp.Source.Libraries
       throw new NotImplementedException();
     }
 
+    /// <summary>
+    /// A complete set of ALL Teams.
+    /// </summary>
     public static HashSet<Team> All { get; } = new();
 
     public EventHandler<TeamEventArgs> ChangesSize;
 
     public string Name { get; }
+
+    public bool CanFitFaction(Faction joinerFaction)
+    {
+      throw new NotImplementedException();
+    }
+
+    public bool IsFactionInvited(Faction whichFaction)
+    {
+      throw new NotImplementedException();
+    }
   }
 }
