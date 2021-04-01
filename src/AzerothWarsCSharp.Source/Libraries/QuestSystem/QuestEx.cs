@@ -43,5 +43,10 @@ namespace AzerothWarsCSharp.Source.Libraries
     public Faction Owner;
     public List<QuestObjective> QuestObjectives;
     public quest BlzQuest;
+
+    public Message MessageByProgress(QuestProgress progress)
+    {
+      throw new NotImplementedException();
+    }
   }
 }
