@@ -275,7 +275,7 @@ namespace AzerothWarsCSharp.Source.Libraries
     /// </summary>
     /// <param name="factionObject"></param>
     /// <returns></returns>
-    internal static int GetObjectLimit(int factionObject)
+    public int GetObjectLimit(int factionObject)
     {
       throw new NotImplementedException();
     }
