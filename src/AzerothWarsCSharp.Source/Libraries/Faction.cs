@@ -21,6 +21,7 @@ namespace AzerothWarsCSharp.Source.Libraries
     public event EventHandler<FactionQuestProgressChangedEventArgs> QuestProgressChanged;
     public event EventHandler<FactionEventArgs> IncomeChanged;
     public event EventHandler<FactionEventArgs> WeightChanged;
+
     public event EventHandler<FactionEventArgs> NameChanged;
     public event EventHandler<FactionEventArgs> IconChanged;
     public static event EventHandler<FactionEventArgs> FactionCreated;
@@ -235,9 +236,9 @@ namespace AzerothWarsCSharp.Source.Libraries
     public string VictoryMusic { get; set; }
 
     /// <summary>
-    /// Whether or not this Faction can be invited to join a team.
+    /// Whether or not this Faction can voluntarily change teams.
     /// </summary>
-    public virtual bool CanBeInvited {
+    public virtual bool CanVoluntarilyChangeTeams {
       get
       {
         return true;
@@ -258,6 +259,21 @@ namespace AzerothWarsCSharp.Source.Libraries
         _playercolor = value;
         SetPlayerColor(Player, _playercolor);
       }
+    }
+
+    /// <summary>
+    /// A list of all of the units, heroes, structures, and researches this faction can do.
+    /// </summary>
+    public List<int> ObjectList { get; } = new();
+
+    /// <summary>
+    /// How many of this object this faction can train, build, or research.
+    /// </summary>
+    /// <param name="factionObject"></param>
+    /// <returns></returns>
+    internal static int GetObjectLimit(int factionObject)
+    {
+      throw new NotImplementedException();
     }
 
     /// <summary>

@@ -35,12 +35,31 @@ namespace AzerothWarsCSharp.Source.Libraries
 
     public string Name { get; }
 
+    /// <summary>
+    /// Checks whether or not a faction would have too much weight to join this team.
+    /// </summary>
+    /// <param name="joinerFaction"></param>
+    /// <returns></returns>
     public bool CanFitFaction(Faction joinerFaction)
     {
       throw new NotImplementedException();
     }
 
+    /// <summary>
+    /// Checks if a faction has previously been invited to this team.
+    /// </summary>
+    /// <param name="whichFaction"></param>
+    /// <returns></returns>
     public bool IsFactionInvited(Faction whichFaction)
+    {
+      throw new NotImplementedException();
+    }
+
+    /// <summary>
+    /// Invites a faction to join this team, but doesn't actually add them to it.
+    /// </summary>
+    /// <param name="joinerFaction"></param>
+    public void InviteFaction(object joinerFaction)
     {
       throw new NotImplementedException();
     }

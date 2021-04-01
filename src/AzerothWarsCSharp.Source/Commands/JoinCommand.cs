@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Commands
   {
     public static void Initialize()
     {
-      CheatCommand.Register("join", (player triggerPlayer, string[] arguments) =>
+      Command.Register("join", (player triggerPlayer, string[] arguments) =>
       {
         var teamToJoin = Team.ByName(arguments[1]);
         var joinerFaction = Faction.ByPlayerHandle(triggerPlayer);
