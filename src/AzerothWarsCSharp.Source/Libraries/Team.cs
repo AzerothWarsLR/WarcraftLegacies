@@ -56,6 +56,15 @@ namespace AzerothWarsCSharp.Source.Libraries
     }
 
     /// <summary>
+    /// Withdraws an invite to join this team.
+    /// </summary>
+    /// <param name="factionToInvite"></param>
+    public void UninviteFaction(Faction factionToInvite)
+    {
+      throw new NotImplementedException();
+    }
+
+    /// <summary>
     /// Invites a faction to join this team, but doesn't actually add them to it.
     /// </summary>
     /// <param name="joinerFaction"></param>
