@@ -55,6 +55,6 @@ namespace AzerothWarsCSharp.Source.GameLogic
       ControlPoint.Destroyed += OnControlPointDestroyed;
     }
 
-    private static Dictionary<ControlPoint, trigger> _damageTriggers = new();
+    private static readonly Dictionary<ControlPoint, trigger> _damageTriggers = new();
   }
 }
