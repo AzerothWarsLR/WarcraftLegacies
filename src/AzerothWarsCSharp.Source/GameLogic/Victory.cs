@@ -9,8 +9,8 @@ namespace AzerothWarsCSharp.Source.GameLogic
   /// </summary>
   public static class Victory
   {
-    private static readonly int CPS_VICTORY = 80;
-    private static readonly int CPCS_WARNING = 70;
+    public static int CPS_VICTORY { get; } = 80;
+    public static int CPS_WARNING { get; } = 70;
     private static readonly string VICTORY_COLOR = "|cff911499";
     private static bool _gameWon = false;
 
@@ -56,7 +56,7 @@ namespace AzerothWarsCSharp.Source.GameLogic
         {
           TeamVictory(triggerTeam);
         }
-        else if (teamTotalCPs > CPCS_WARNING)
+        else if (teamTotalCPs > CPS_WARNING)
         {
           TeamWarning(triggerTeam, teamTotalCPs);
         }
