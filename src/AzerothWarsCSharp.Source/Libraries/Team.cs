@@ -36,6 +36,14 @@ namespace AzerothWarsCSharp.Source.Libraries
     public string Name { get; }
 
     /// <summary>
+    /// A set of all Factions in this Team.
+    /// </summary>
+    public HashSet<Faction> Factions
+    {
+      get;
+    }
+
+    /// <summary>
     /// Checks whether or not a faction would have too much weight to join this team.
     /// </summary>
     /// <param name="joinerFaction"></param>

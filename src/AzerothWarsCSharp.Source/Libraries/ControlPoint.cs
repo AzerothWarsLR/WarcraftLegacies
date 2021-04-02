@@ -10,6 +10,9 @@ namespace AzerothWarsCSharp.Source.Libraries
 
     public static event EventHandler<ControlPointEventArgs> Created;
     public static event EventHandler<ControlPointEventArgs> Destroyed;
+    public event EventHandler<ControlPointEventArgs> OwnerChanged;
+
+    public Faction OwningFaction { get; private set; }
 
     ~ControlPoint()
     {
