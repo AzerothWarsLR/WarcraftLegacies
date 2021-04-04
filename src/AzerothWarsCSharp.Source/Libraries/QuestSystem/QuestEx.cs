@@ -4,21 +4,7 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Libraries
 {
-  public enum QuestProgress
-  {
-    Undiscovered,
-    Incomplete,
-    Complete,
-    Failed
-  }
-
-  public class QuestChangedEventArgs
-  {
-    public QuestEx QuestEx;
-    public QuestProgress FormerProgress;
-  }
-
-  public class QuestEx
+  public class QuestEx : IObjectiveParent
   {
     public Action<Faction> OnDiscover;
     public Action<Faction> OnComplete;
@@ -41,8 +27,9 @@ namespace AzerothWarsCSharp.Source.Libraries
     public bool ProgressLocked;
     public QuestProgress Progress;
     public Faction Owner;
-    public List<QuestObjective> QuestObjectives;
-    public quest BlzQuest;
+    public List<Objective> QuestObjectives;
+
+    public List<Objective> Objectives { get; }
 
     public Message MessageByProgress(QuestProgress progress)
     {

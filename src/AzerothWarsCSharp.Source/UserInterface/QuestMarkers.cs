@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AzerothWarsCSharp.Source.Libraries
+namespace AzerothWarsCSharp.Source.UserInterface
 {
-  public abstract class QuestObjective
+  class QuestMarkers
   {
   }
 }

@@ -26,6 +26,11 @@ namespace AzerothWarsCSharp.Source.Libraries
       throw new NotImplementedException();
     }
 
+    internal bool ContainsPlayer(War3Api.Common.player player)
+    {
+      throw new NotImplementedException();
+    }
+
     /// <summary>
     /// A complete set of ALL Teams.
     /// </summary>

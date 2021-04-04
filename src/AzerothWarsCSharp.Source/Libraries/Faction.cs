@@ -18,9 +18,11 @@ namespace AzerothWarsCSharp.Source.Libraries
     public event EventHandler<FactionEventArgs> ChangesPerson;
     public event EventHandler<FactionEventArgs> ObjectLevelChanged;
     public event EventHandler<FactionQuestAddedEventArgs> QuestAdded;
+    public event EventHandler<FactionQuestAddedEventArgs> QuestRemoved;
     public event EventHandler<FactionQuestProgressChangedEventArgs> QuestProgressChanged;
     public event EventHandler<FactionEventArgs> IncomeChanged;
     public event EventHandler<FactionEventArgs> WeightChanged;
+    public event EventHandler<FactionEventArgs> Destroyed;
 
     public event EventHandler<FactionEventArgs> NameChanged;
     public event EventHandler<FactionEventArgs> IconChanged;

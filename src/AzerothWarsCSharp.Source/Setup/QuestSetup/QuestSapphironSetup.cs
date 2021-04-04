@@ -27,11 +27,8 @@ namespace AzerothWarsCSharp.Source.Setup
           CreateUnit(owner.Player, SAPPHIRON_ID, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()), GetUnitFacing(GetTriggerUnit()));
           SetPlayerTechResearched(owner.Player, SAPPHIRON_RESEARCH, 1);
         },
-        QuestObjectives = new List<QuestObjective>()
-        {
-          new QuestObjectiveKillUnit(null)
-        }
       };
+      questKillSapphiron.AddObjective(new ObjectiveKillUnit(questKillSapphiron, null));
       ScourgeSetup.Scourge.AddQuest(questKillSapphiron);
     }
   }
