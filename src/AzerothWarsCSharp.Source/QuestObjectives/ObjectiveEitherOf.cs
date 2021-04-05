@@ -4,9 +4,9 @@ using WCSharp.Utils.Data;
 
 namespace AzerothWarsCSharp.Source.QuestObjectives
 {
-  public class ObjectiveEitherOf : Objective, IObjectiveParent, SubquestLogInfo
+  public class ObjectiveEitherOf : Objective
   {
-    public ObjectiveEitherOf(IObjectiveParent parent, Objective questObjectiveA, Objective questObjectiveB) : base(parent)
+    public ObjectiveEitherOf(Faction holder, Objective questObjectiveA, Objective questObjectiveB) : base(holder)
     {
       Description = questObjectiveA.Description + " or " + questObjectiveB.Description;
       _questObjectiveA = questObjectiveA;
@@ -22,8 +22,6 @@ namespace AzerothWarsCSharp.Source.QuestObjectives
         throw new NotImplementedException();
       }
     }
-
-    public string Description { get; }
 
     private void OnChildQuestProgressChanged(object sender, ObjectiveEventArgs e)
     {

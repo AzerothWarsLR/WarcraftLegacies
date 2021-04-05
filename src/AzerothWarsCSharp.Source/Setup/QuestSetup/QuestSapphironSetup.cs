@@ -1,5 +1,4 @@
 ﻿using AzerothWarsCSharp.Source.Libraries;
-using System.Collections.Generic;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup
@@ -11,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Setup
 
     public static void Initialize()
     {
-      var questKillSapphiron = new QuestEx()
+      var questKillSapphiron = new QuestEx(ScourgeSetup.Scourge)
       {
         Title = "Sapphiron",
         Description = "Kill Sapphiron the Blue Dragon to reanimate her as a Frost Wyrm.",
@@ -28,8 +27,6 @@ namespace AzerothWarsCSharp.Source.Setup
           SetPlayerTechResearched(owner.Player, SAPPHIRON_RESEARCH, 1);
         },
       };
-      questKillSapphiron.AddObjective(new ObjectiveKillUnit(questKillSapphiron, null));
-      ScourgeSetup.Scourge.AddQuest(questKillSapphiron);
     }
   }
 }

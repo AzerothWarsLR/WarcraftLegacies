@@ -1,18 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AzerothWarsCSharp.Source.Libraries
 {
   public class ObjectiveEventArgs : EventArgs
   {
-    public Objective QuestObjective { get; }
+    public Objective Objective { get; }
 
-    public ObjectiveEventArgs(Objective questObjective)
+    public ObjectiveEventArgs(Objective objective)
     {
-      QuestObjective = questObjective;
+      Objective = objective;
     }
   }
 }

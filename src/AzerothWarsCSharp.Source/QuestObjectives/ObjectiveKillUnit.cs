@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Libraries
       }
     }
 
-    public ObjectiveKillUnit(IObjectiveParent parent, unit target) : base(parent)
+    public ObjectiveKillUnit(Faction holder, unit target) : base(holder)
     {
       _target = target ?? throw new ArgumentNullException(nameof(target));
       PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDies, OnTargetDeath);

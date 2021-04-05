@@ -7,96 +7,47 @@ namespace AzerothWarsCSharp.Source.UserInterface
 {
   public static class QuestMenu
   {
-    private static void SetupQuestForPlayer(QuestEx quest, player whichPlayer)
+    private static void OnObjectiveDestroyed(object sender, ObjectiveEventArgs e)
     {
-      if (GetLocalPlayer() == whichPlayer)
-      {
-        var blzQuest = CreateQuest();
-        QuestSetTitle(blzQuest, quest.Title);
-        QuestSetDescription(blzQuest, quest.Description);
-        QuestSetIconPath(blzQuest, quest.Icon);
-        foreach (var objective in quest.Objectives)
-        {
-          var blzQuestItem = QuestCreateItem(blzQuest);
-          QuestItemSetDescription(blzQuestItem, objective.Description);
-          QuestItemSetCompleted(blzQuestItem, objective.Progress == QuestProgress.Complete);
-          _blzQuestitemsByLogSubEntry[objective] = blzQuestItem;
-        }
-      }
+      UnregisterObjective(e.Objective);
     }
 
-    private static void UpdateQuestForPlayer(QuestEx quest, player whichPlayer)
+    private static void OnObjectiveCreated(object sender, ObjectiveEventArgs e)
     {
-      if (GetLocalPlayer() == whichPlayer)
-      {
-        QuestSetDescription(_blzQuestsByQuestEx[quest], quest.Description);
-      }
+      RegisterObjective(e.Objective);
     }
 
-    private static void OnFactionQuestProgressChanged(object sender, FactionQuestProgressChangedEventArgs e)
+    private static void OnObjectiveFactionChanged(object sender, ObjectiveEventArgs e)
     {
-      if (e.Faction != null)
-      {
-        UpdateQuestForPlayer(e.QuestEx, e.Faction.Player);
-      }
+
     }
 
-    private static void OnFactionQuestAdded(object sender, FactionQuestAddedEventArgs e)
+    private static void OnObjectiveProgressChanged(object sender, ObjectiveEventArgs e)
     {
-      if (GetLocalPlayer() == e.Faction.Player)
-      {
-        var questEx = e.QuestEx;
-        {
-          if (_blzQuestsByQuestEx.ContainsKey(questEx))
-          {
-            var blzQuest = _blzQuestsByQuestEx[questEx];
-            QuestSetEnabled(blzQuest, true);
-          }
-          else
-          {
-            SetupQuestForPlayer(questEx, e.Faction.Player);
-          }
-        }
-      }
+
     }
 
-    private static void OnFactionQuestRemoved(object sender, FactionQuestAddedEventArgs e)
+    private static void UnregisterObjective(Objective objective)
     {
-      throw new NotImplementedException();
+      objective.ProgressChanged -= OnObjectiveProgressChanged;
+      objective.FactionChanged -= OnObjectiveFactionChanged;
+      objective.Destroyed -= OnObjectiveDestroyed;
     }
 
-    private static void UnregisterFaction(Faction faction)
+    private static void RegisterObjective(Objective objective)
     {
-      faction.QuestAdded += OnFactionQuestAdded;
-      faction.QuestRemoved += OnFactionQuestRemoved;
-      faction.QuestProgressChanged += OnFactionQuestProgressChanged;
-    }
-
-    private static void RegisterFaction(Faction faction)
-    {
-      faction.QuestAdded += OnFactionQuestAdded;
-      faction.QuestRemoved += OnFactionQuestRemoved;
-      faction.QuestProgressChanged += OnFactionQuestProgressChanged;
-      faction.Destroyed += OnFactionDestroyed;
-    }
-
-    private static void OnFactionDestroyed(object sender, FactionEventArgs e)
-    {
-      UnregisterFaction(e.Faction);
-    }
-
-    private static void OnFactionCreated(object sender, FactionEventArgs e)
-    {
-      RegisterFaction(e.Faction);
+      objective.ProgressChanged += OnObjectiveProgressChanged;
+      objective.FactionChanged += OnObjectiveFactionChanged;
+      objective.Destroyed += OnObjectiveDestroyed;
     }
 
     public static void Initialize()
     {
-      foreach (var faction in Faction.All)
+      foreach (var objective in Objective.All)
       {
-        RegisterFaction(faction);
+        RegisterObjective(objective);
       }
-      Faction.FactionCreated += OnFactionCreated;
+      Objective.Created += OnObjectiveCreated;
     }
 
     private static readonly Dictionary<QuestEx, quest> _blzQuestsByQuestEx = new();

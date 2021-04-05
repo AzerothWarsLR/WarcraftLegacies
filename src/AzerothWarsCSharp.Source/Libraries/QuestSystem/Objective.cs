@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using WCSharp.Utils.Data;
 namespace AzerothWarsCSharp.Source.Libraries
 {
@@ -8,22 +9,30 @@ namespace AzerothWarsCSharp.Source.Libraries
   /// </summary>
   public abstract class Objective
   {
-    public Objective(IObjectiveParent parent)
+    public static IEnumerable<Objective> All 
+    { 
+      get 
+      {
+        return _all;
+      }
+    }
+
+    public Objective(Faction holder)
     {
-      Parent = parent;
+      Holder = holder;
+      _all.Add(this);
     }
 
     public QuestProgress Progress { get; protected set; }
 
     /// <summary>
-    /// The data structure reponsible for telling this QuestObjective which Faction can complete it.
-    /// </summary>
-    public IObjectiveParent Parent { get; }
-
-    /// <summary>
     /// Raised when this objective's progress has changed.
     /// </summary>
     public event EventHandler<ObjectiveEventArgs> ProgressChanged;
+    public event EventHandler<ObjectiveEventArgs> Destroyed;
+    public event EventHandler<ObjectiveEventArgs> FactionChanged;
+    public event EventHandler<ObjectiveEventArgs> TeamChanged;
+    public static event EventHandler<ObjectiveEventArgs> Created;
 
     public Action<Faction> OnDiscover;
     public Action<Faction> OnComplete;
@@ -51,6 +60,8 @@ namespace AzerothWarsCSharp.Source.Libraries
     /// </summary>
     public Faction Holder { get; }
 
-    public string Description { get; }
+    public string Description { get; protected set; }
+
+    private static readonly List<Objective> _all = new();
   }
 }

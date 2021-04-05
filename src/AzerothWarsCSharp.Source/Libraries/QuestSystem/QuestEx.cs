@@ -4,14 +4,14 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Libraries
 {
-  public class QuestEx : IObjectiveParent
+  public class QuestEx
   {
     public Action<Faction> OnDiscover;
     public Action<Faction> OnComplete;
     public Action<Faction> OnFail;
     public Action<Faction> OnAdd;
 
-    public QuestEx()
+    public QuestEx(Faction holder)
     {
       throw new NotImplementedException();
     }
@@ -27,9 +27,6 @@ namespace AzerothWarsCSharp.Source.Libraries
     public bool ProgressLocked;
     public QuestProgress Progress;
     public Faction Owner;
-    public List<Objective> QuestObjectives;
-
-    public List<Objective> Objectives { get; }
 
     public Message MessageByProgress(QuestProgress progress)
     {

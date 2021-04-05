@@ -17,13 +17,9 @@ namespace AzerothWarsCSharp.Source.Libraries
     public event EventHandler<FactionTeamChangedEventArgs> TeamChanged;
     public event EventHandler<FactionEventArgs> ChangesPerson;
     public event EventHandler<FactionEventArgs> ObjectLevelChanged;
-    public event EventHandler<FactionQuestAddedEventArgs> QuestAdded;
-    public event EventHandler<FactionQuestAddedEventArgs> QuestRemoved;
-    public event EventHandler<FactionQuestProgressChangedEventArgs> QuestProgressChanged;
     public event EventHandler<FactionEventArgs> IncomeChanged;
     public event EventHandler<FactionEventArgs> WeightChanged;
     public event EventHandler<FactionEventArgs> Destroyed;
-
     public event EventHandler<FactionEventArgs> NameChanged;
     public event EventHandler<FactionEventArgs> IconChanged;
     public static event EventHandler<FactionEventArgs> FactionCreated;
@@ -283,16 +279,6 @@ namespace AzerothWarsCSharp.Source.Libraries
     }
 
     /// <summary>
-    /// Adds a Quest to this Faction's quest log.
-    /// </summary>
-    /// <param name="quest"></param>
-    public void AddQuest(QuestEx quest)
-    {
-      _quests.Add(quest);
-      QuestAdded?.Invoke(this, new FactionQuestAddedEventArgs());
-    }
-
-    /// <summary>
     /// Returns the level of a research.
     /// </summary>
     /// <param name="obj"></param>
@@ -343,6 +329,5 @@ namespace AzerothWarsCSharp.Source.Libraries
     private string _name;
     private string _icon;
     private playercolor _playercolor;
-    private readonly List<QuestEx> _quests = new();
   }
 }
