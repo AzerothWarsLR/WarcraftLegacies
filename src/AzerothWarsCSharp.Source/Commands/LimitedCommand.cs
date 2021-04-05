@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Commands
         {
           foreach (var factionObject in triggerFaction.ObjectList)
           {
-            if (GetUnitTypeId(unit) == factionObject && Faction.GetObjectLimit(factionObject) < Faction.UNLIMITED)
+            if (GetUnitTypeId(unit) == factionObject && triggerFaction.GetObjectLimit(factionObject) < Faction.UNLIMITED)
             {
               PingMinimapForPlayer(triggerPlayer, GetUnitX(unit), GetUnitY(unit), 5);
             }
