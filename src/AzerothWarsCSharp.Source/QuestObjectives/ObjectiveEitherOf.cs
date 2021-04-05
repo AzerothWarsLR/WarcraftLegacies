@@ -1,6 +1,6 @@
 ﻿using AzerothWarsCSharp.Source.Libraries;
 using System;
-using WCSharp.Utils.Data;
+using WCSharp.Shared.Data;
 
 namespace AzerothWarsCSharp.Source.QuestObjectives
 {

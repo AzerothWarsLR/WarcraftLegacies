@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using WCSharp.Utils.Data;
+using WCSharp.Shared.Data;
 namespace AzerothWarsCSharp.Source.Libraries
 {
   /// <summary>

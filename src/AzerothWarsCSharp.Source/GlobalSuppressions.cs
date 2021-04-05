@@ -7,3 +7,4 @@ using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Style", "IDE1006:Naming Styles", Justification = "<Pending>", Scope = "member", Target = "~P:Regions.chaosmod2")]
 [assembly: SuppressMessage("Style", "IDE1006:Naming Styles", Justification = "<Pending>", Scope = "member", Target = "~P:Regions.storm2")]
+[assembly: SuppressMessage("Design", "CA1050:Declare types in namespaces", Justification = "<Pending>", Scope = "type", Target = "~T:Constants")]

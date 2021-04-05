@@ -1,6 +1,6 @@
 ﻿using AzerothWarsCSharp.Source.Libraries;
 using static War3Api.Common;
-using WCSharp.Utils.Extensions;
+using WCSharp.Shared.Extensions;
 
 namespace AzerothWarsCSharp.Source.Commands
 {

@@ -1,5 +1,5 @@
 ﻿using AzerothWarsCSharp.Source.Libraries;
-using WCSharp.Utils.Extensions;
+using WCSharp.Shared.Extensions;
 using static War3Api.Common;
 using static War3Api.Blizzard;
 
