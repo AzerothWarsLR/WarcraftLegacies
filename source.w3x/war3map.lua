@@ -1,174 +1,173 @@
-gg_rct_Aerie_Peak = nil
-gg_rct_Solliden_Farmstead = nil
-gg_rct_Arathi_Ships = nil
-gg_rct_Auberdine_Ships = nil
-gg_rct_Auberdine_Ships_2 = nil
-gg_rct_AzjolNerubDragonblight_Exit = nil
-gg_rct_Blasted_Lands_Weather = nil
-gg_rct_Barren_Excavation = nil
-gg_rct_Blackrock_Entrance = nil
-gg_rct_Blackrock_Exit = nil
-gg_rct_Book_of_Mediv_Chaos = nil
-gg_rct_Borean_Tundra = nil
+gg_rct_AeriePeak = nil
+gg_rct_SollidenFarmstead = nil
+gg_rct_ArathiShips = nil
+gg_rct_AuberdineShips = nil
+gg_rct_AuberdineShips2 = nil
+gg_rct_AzjolNerubDragonblightExit = nil
+gg_rct_BlastedLandsWeather = nil
+gg_rct_BarrenExcavation = nil
+gg_rct_BlackrockEntrance = nil
+gg_rct_BlackrockExit = nil
+gg_rct_BookofMedivChaos = nil
+gg_rct_BoreanTundra = nil
 gg_rct_Brill = nil
-gg_rct_Broken_Isles = nil
+gg_rct_BrokenIsles = nil
 gg_rct_CaerDarrowShipyard = nil
-gg_rct_Cathedral_of_Light = nil
-gg_rct_Central_Northrend = nil
+gg_rct_CathedralofLight = nil
+gg_rct_CentralNorthrend = nil
 gg_rct_Chaosmod1 = nil
 gg_rct_Coldarra = nil
-gg_rct_Construction_Site_2 = nil
-gg_rct_Corins_Crossing = nil
+gg_rct_ConstructionSite2 = nil
+gg_rct_CorinsCrossing = nil
 gg_rct_Crossroads = nil
 gg_rct_Dalaran = nil
-gg_rct_Dalaran_Dungeon = nil
-gg_rct_Dalaran_Dungeons_Entrance = nil
-gg_rct_Dalaran_Dungeons_Exit = nil
+gg_rct_DalaranDungeon = nil
+gg_rct_DalaranDungeonsEntrance = nil
+gg_rct_DalaranDungeonsExit = nil
 gg_rct_DalaranExit2 = nil
-gg_rct_Dark_Portal_Entrance_1 = nil
-gg_rct_Dark_Portal_Exit_1 = nil
-gg_rct_Darkspear_Island = nil
+gg_rct_DarkPortalEntrance1 = nil
+gg_rct_DarkPortalExit1 = nil
+gg_rct_DarkspearIsland = nil
 gg_rct_Darrowshire = nil
-gg_rct_Demongate_1 = nil
-gg_rct_Demongate_2 = nil
+gg_rct_Demongate1 = nil
+gg_rct_Demongate2 = nil
 gg_rct_DemonGate3 = nil
-gg_rct_Desolace_Ships = nil
-gg_rct_Dire_Maul_Entrance = nil
-gg_rct_Dire_Maul_Exit = nil
-gg_rct_Dun_Morogh_Excavation = nil
-gg_rct_Dun_Morogh_Ships = nil
-gg_rct_Duskwood_Weather = nil
-gg_rct_Dustwallow_Ships = nil
-gg_rct_East_Thandol = nil
-gg_rct_Eastern_Northrend = nil
+gg_rct_DesolaceShips = nil
+gg_rct_DireMaulEntrance = nil
+gg_rct_DireMaulExit = nil
+gg_rct_DunMoroghExcavation = nil
+gg_rct_DunMoroghShips = nil
+gg_rct_DuskwoodWeather = nil
+gg_rct_DustwallowShips = nil
+gg_rct_EastThandol = nil
+gg_rct_EasternNorthrend = nil
 gg_rct_EssenceSpawn = nil
-gg_rct_Far_Eastern_Northrend = nil
-gg_rct_Felwood_Vision = nil
-gg_rct_Fenris_ships = nil
+gg_rct_FarEasternNorthrend = nil
+gg_rct_FelwoodVision = nil
+gg_rct_Fenrisships = nil
 gg_rct_Fjord = nil
 gg_rct_Gilneas = nil
-gg_rct_Gilneas_Canals = nil
+gg_rct_GilneasCanals = nil
 gg_rct_Gnomergan = nil
 gg_rct_Greymane = nil
-gg_rct_Grim_Batol = nil
-gg_rct_Grim_Batol_Tunnel_Entrance = nil
-gg_rct_Grim_Batol_Tunnel_Top = nil
+gg_rct_GrimBatol = nil
+gg_rct_GrimBatolTunnelEntrance = nil
+gg_rct_GrimBatolTunnelTop = nil
 gg_rct_Havenshire = nil
 gg_rct_Hearthglen = nil
 gg_rct_HeroOrItemWaitRect = nil
 gg_rct_HonorHold = nil
-gg_rct_Howling_Fjord = nil
-gg_rct_Ice_Crown = nil
+gg_rct_HowlingFjord = nil
+gg_rct_IceCrown = nil
 gg_rct_IcecrownShipyard = nil
 gg_rct_IllidanSpawn = nil
 gg_rct_Ironforge = nil
-gg_rct_Jaina_soul_gem = nil
-gg_rct_Kali_Ships = nil
+gg_rct_Jainasoulgem = nil
+gg_rct_KaliShips = nil
 gg_rct_Kultiras = nil
 gg_rct_LichKing = nil
-gg_rct_Loch_Modan_Ships = nil
-gg_rct_Lordaeron_East = nil
-gg_rct_Lordaeron_West = nil
+gg_rct_LochModanShips = nil
+gg_rct_LordaeronEast = nil
+gg_rct_LordaeronWest = nil
 gg_rct_Maelstrom = nil
 gg_rct_MaelStromOuter = nil
 gg_rct_Maelstromposition = nil
 gg_rct_Moonglade = nil
-gg_rct_Murloc_Attack = nil
-gg_rct_Murloc_Spawn_1 = nil
-gg_rct_Murloc_Spawn_2 = nil
+gg_rct_MurlocAttack = nil
+gg_rct_MurlocSpawn1 = nil
+gg_rct_MurlocSpawn2 = nil
 gg_rct_InstanceNazjatar = nil
-gg_rct_Nether_Exit = nil
-gg_rct_Northern_Kali_Ships = nil
-gg_rct_Northrend_ships = nil
+gg_rct_NetherExit = nil
+gg_rct_NorthernKaliShips = nil
+gg_rct_Northrendships = nil
 gg_rct_OrgGate = nil
 gg_rct_Orgrimmar = nil
-gg_rct_Outland_Ships = nil
-gg_rct_Plague_1 = nil
-gg_rct_Plague_2 = nil
-gg_rct_Plague_3 = nil
-gg_rct_Plague_4 = nil
-gg_rct_Plague_5 = nil
-gg_rct_Plague_6 = nil
-gg_rct_Plague_7 = nil
-gg_rct_Quel_Ships_1 = nil
-gg_rct_Quel_Ships_2 = nil
-gg_rct_Quel_Ships_3 = nil
+gg_rct_OutlandShips = nil
+gg_rct_Plague1 = nil
+gg_rct_Plague2 = nil
+gg_rct_Plague3 = nil
+gg_rct_Plague4 = nil
+gg_rct_Plague5 = nil
+gg_rct_Plague6 = nil
+gg_rct_Plague7 = nil
+gg_rct_QuelShips1 = nil
+gg_rct_QuelShips2 = nil
+gg_rct_QuelShips3 = nil
 gg_rct_Quelthalas = nil
 gg_rct_storm2 = nil
 gg_rct_storm3 = nil
 gg_rct_storm4 = nil
-gg_rct_Sargeras_Entrance = nil
-gg_rct_Sargeras_Exit = nil
+gg_rct_SargerasEntrance = nil
+gg_rct_SargerasExit = nil
 gg_rct_ScarletMonastery = nil
-gg_rct_Scholomance_Entrance = nil
+gg_rct_ScholomanceEntrance = nil
 gg_rct_Scholomance_Exit = nil
-gg_rct_Sea_Witch_Storm = nil
-gg_rct_Shadowforge_City = nil
-gg_rct_Shadowforge_gate = nil
-gg_rct_Shadowmoon_Excavation = nil
-gg_rct_Siphon_Cast_Zone = nil
-gg_rct_South_EK_Ships = nil
-gg_rct_Stonemaul_Keep = nil
-gg_rct_Storm_peak_Excavation = nil
-gg_rct_Storm_Peaks = nil
+gg_rct_SeaWitchStorm = nil
+gg_rct_ShadowforgeCity = nil
+gg_rct_Shadowforgegate = nil
+gg_rct_ShadowmoonExcavation = nil
+gg_rct_SouthEKShips = nil
+gg_rct_StonemaulKeep = nil
+gg_rct_StormpeakExcavation = nil
+gg_rct_StormPeaks = nil
 gg_rct_Storm1 = nil
 gg_rct_Stormwind = nil
-gg_rct_Stratholme_Platform_entrance = nil
-gg_rct_Stratholme_platform_exit = nil
+gg_rct_StratholmePlatformentrance = nil
+gg_rct_Stratholmeplatformexit = nil
 gg_rct_StratholmeShipyard = nil
 gg_rct_Stromgarde = nil
-gg_rct_Stromwind_antiship = nil
-gg_rct_STV_Ships = nil
+gg_rct_Stromwindantiship = nil
+gg_rct_STVShips = nil
 gg_rct_Terenas = nil
 gg_rct_The_Basin = nil
-gg_rct_Thrall_2 = nil
-gg_rct_Thrall_3 = nil
-gg_rct_Thrall_4 = nil
-gg_rct_Thrall_5 = nil
-gg_rct_Thrall_6 = nil
-gg_rct_Thrall_Landing1 = nil
-gg_rct_Thrall_Ship_1 = nil
-gg_rct_Thrall_Ship_2 = nil
-gg_rct_Tomb_Of_Sargeras_Ships = nil
+gg_rct_Thrall2 = nil
+gg_rct_Thrall3 = nil
+gg_rct_Thrall4 = nil
+gg_rct_Thrall5 = nil
+gg_rct_Thrall6 = nil
+gg_rct_ThrallLanding1 = nil
+gg_rct_ThrallShip1 = nil
+gg_rct_ThrallShip2 = nil
+gg_rct_TombOfSargerasShips = nil
 gg_rct_TwistingNether = nil
-gg_rct_Vandermar_Village = nil
+gg_rct_VandermarVillage = nil
 gg_rct_WarsongCamp = nil
-gg_rct_West_Thandol = nil
-gg_rct_Winterpspring_Excavation = nil
-gg_rct_Zangarmarsh_Fog_1 = nil
-gg_rct_Zangarmarsh_Fog_2 = nil
-gg_rct_Zangarmarsh_Fog_3 = nil
-gg_rct_ZF_Spawn_1 = nil
-gg_rct_ZF_Spawn_2 = nil
+gg_rct_WestThandol = nil
+gg_rct_WinterpspringExcavation = nil
+gg_rct_ZangarmarshFog1 = nil
+gg_rct_ZangarmarshFog2 = nil
+gg_rct_ZangarmarshFog3 = nil
+gg_rct_ZFSpawn1 = nil
+gg_rct_ZFSpawn2 = nil
 gg_rct_Zulfarrak = nil
-gg_rct_East_of_Azeroth = nil
-gg_rct_West_of_Kalimdor = nil
-gg_rct_ZulAman_trolls = nil
-gg_rct_Silvermon_Palace_trolls = nil
+gg_rct_EastofAzeroth = nil
+gg_rct_WestofKalimdor = nil
+gg_rct_ZulAmantrolls = nil
+gg_rct_SilvermonPalacetrolls = nil
 gg_rct_BloodpactFountain = nil
 gg_rct_FTSummon = nil
-gg_rct_Book_Retrieval = nil
-gg_rct_King_Arthas_crown = nil
-gg_rct_Drekthars_Spellbook = nil
+gg_rct_BookRetrieval = nil
+gg_rct_KingArthascrown = nil
+gg_rct_DrektharsSpellbook = nil
 gg_rct_HallofGlory2 = nil
 gg_rct_HallofGlory3 = nil
-gg_rct_Queltalas_2 = nil
+gg_rct_Queltalas2 = nil
 gg_rct_Masteries = nil
-gg_rct_Cthun_prevent_1 = nil
+gg_rct_Cthunprevent1 = nil
 gg_rct_AhnQiraj = nil
-gg_rct_Cthun_position = nil
-gg_rct_Sunwell_region = nil
-gg_rct_Inner_AhnQiraj = nil
-gg_rct_Outer_AhnQiraj = nil
+gg_rct_Cthunposition = nil
+gg_rct_Sunwellregion = nil
+gg_rct_InnerAhnQiraj = nil
+gg_rct_OuterAhnQiraj = nil
 gg_rct_InstanceAhnqiraj = nil
-gg_rct_Inner_Teldrassil = nil
-gg_rct_Outer_Teldrassil = nil
+gg_rct_InnerTeldrassil = nil
+gg_rct_OuterTeldrassil = nil
 gg_rct_RiseSpawn2 = nil
 gg_rct_CrossroadsOuter = nil
-gg_rct_AzjolNerub_South_Entrance = nil
-gg_rct_AzjolNerub_North_Exit = nil
-gg_rct_AzjolNerubNorth_entrance = nil
-gg_rct_Alterac_Exca = nil
+gg_rct_AzjolNerubSouthEntrance = nil
+gg_rct_AzjolNerubNorthExit = nil
+gg_rct_AzjolNerubNorthentrance = nil
+gg_rct_AlteracExca = nil
 gg_rct_AstanaarCap = nil
 gg_rct_Andorhal = nil
 gg_rct_TempestKeep = nil
@@ -184,39 +183,37 @@ gg_rct_DalaranEntrance2 = nil
 gg_rct_InstanceDalaranDungeon1 = nil
 gg_rct_InstanceDalaranDungeon2 = nil
 gg_rct_InstanceDalaranDungeon3 = nil
-gg_rct_Tempest_Keep_Evacuate = nil
+gg_rct_TempestKeepEvacuate = nil
 gg_rct_Gazlower = nil
 gg_rct_Varok = nil
-gg_rct_Region_077 = nil
 gg_rct_Twilight_highland_portal = nil
 gg_rct_Mannoroth = nil
 gg_rct_Jergosh = nil
-gg_rct_Dark_Portal_Exit_2 = nil
-gg_rct_Dark_Portal_Exit_3 = nil
-gg_rct_Dark_Portal_Entrance_2 = nil
-gg_rct_Dark_Portal_Entrance_3 = nil
+gg_rct_DarkPortalExit2 = nil
+gg_rct_DarkPortalExit3 = nil
+gg_rct_DarkPortalEntrance2 = nil
+gg_rct_DarkPortalEntrance3 = nil
 gg_rct_Chen = nil
-gg_rct_QuelDanil_Lodge = nil
+gg_rct_QuelDanilLodge = nil
 gg_rct_HighBourne = nil
-gg_rct_YoggUnit1 = nil
 gg_rct_Andrassil = nil
 gg_rct_EvilIllidanSpawn = nil
 gg_rct_VaultoftheWardens = nil
 gg_rct_Theramore = nil
 gg_rct_Tol_Barad_Mist = nil
 gg_rct_Terrordale = nil
-gg_rct_Dreadscar_1 = nil
+gg_rct_Dreadscar1 = nil
 gg_rct_Deemspring = nil
-gg_rct_Dreadscar_3 = nil
+gg_rct_Dreadscar3 = nil
 gg_rct_chaosmod2 = nil
-gg_rct_Scholo_Ships = nil
+gg_rct_ScholoShips = nil
 gg_rct_DalaCutscene1 = nil
-gg_rct_Dreadscar_2 = nil
+gg_rct_Dreadscar2 = nil
 gg_rct_DalaCutscene2 = nil
 gg_rct_DalaCutscene3 = nil
 gg_rct_DalaCutscene4 = nil
-gg_rct_DalaCutscene4_Copy = nil
-gg_rct_DalaCutscene4_Copy_2 = nil
+gg_rct_DalaCutscene4Copy = nil
+gg_rct_DalaCutscene4Copy2 = nil
 gg_rct_Lord1 = nil
 gg_rct_Lord2 = nil
 gg_rct_Lord3 = nil
@@ -238,8 +235,8 @@ gg_rct_Sent2 = nil
 gg_rct_Sent3 = nil
 gg_rct_Sent4 = nil
 gg_rct_Sent5 = nil
-gg_rct_Sent_6 = nil
-gg_rct_Sent_7 = nil
+gg_rct_Sent6 = nil
+gg_rct_Sent7 = nil
 gg_rct_Sent8 = nil
 gg_rct_Sent9 = nil
 gg_rct_Sent10 = nil
@@ -284,9 +281,9 @@ gg_rct_CairneStart = nil
 gg_rct_Druid4 = nil
 gg_rct_Druid5 = nil
 gg_rct_Sent11 = nil
-gg_rct_Sent_12 = nil
+gg_rct_Sent12 = nil
 gg_rct_MoongladeVillage = nil
-gg_rct_Dwarf_group_1 = nil
+gg_rct_Dwarfgroup1 = nil
 gg_rct_GrizzlyHills = nil
 gg_cam_Dalaran_1 = nil
 gg_cam_Dalaran_2 = nil
@@ -2252,7 +2249,7 @@ function CreateUnitsForPlayer0()
     u = BlzCreateUnitWithSkin(p, FourCC("uabo"), -11814.6, -30173.4, 90.000, FourCC("uabo"))
     u = BlzCreateUnitWithSkin(p, FourCC("ucry"), -11448.1, -30453.1, 126.665, FourCC("ucry"))
     u = BlzCreateUnitWithSkin(p, FourCC("n038"), -5534.6, 23981.1, 269.000, FourCC("n038"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_AzjolNerub_North_Exit), GetRectCenterY(gg_rct_AzjolNerub_North_Exit))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_AzjolNerubNorthExit), GetRectCenterY(gg_rct_AzjolNerubNorthExit))
     WaygateActivate(u, true)
     SetUnitAcquireRange(u, 200.0)
     u = BlzCreateUnitWithSkin(p, FourCC("uabo"), 14867.6, 6802.8, 251.643, FourCC("uabo"))
@@ -2499,7 +2496,7 @@ function CreateBuildingsForPlayer2()
     u = BlzCreateUnitWithSkin(p, FourCC("n04I"), 5504.0, -28736.0, 270.000, FourCC("n04I"))
     u = BlzCreateUnitWithSkin(p, FourCC("o034"), -1920.0, -23424.0, 270.000, FourCC("o034"))
     u = BlzCreateUnitWithSkin(p, FourCC("n036"), 15584.0, -19552.0, 270.000, FourCC("n036"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_Dark_Portal_Exit_2), GetRectCenterY(gg_rct_Dark_Portal_Exit_2))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_DarkPortalExit2), GetRectCenterY(gg_rct_DarkPortalExit2))
     WaygateActivate(u, true)
     SetUnitAcquireRange(u, 200.0)
     u = BlzCreateUnitWithSkin(p, FourCC("ocbw"), 14336.0, -10304.0, 270.000, FourCC("ocbw"))
@@ -2540,11 +2537,11 @@ function CreateBuildingsForPlayer2()
     u = BlzCreateUnitWithSkin(p, FourCC("ocbw"), 14720.0, -10304.0, 270.000, FourCC("ocbw"))
     u = BlzCreateUnitWithSkin(p, FourCC("o035"), -3520.0, -30912.0, 270.000, FourCC("o035"))
     u = BlzCreateUnitWithSkin(p, FourCC("n036"), 17440.0, -19232.0, 270.000, FourCC("n036"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_Dark_Portal_Exit_3), GetRectCenterY(gg_rct_Dark_Portal_Exit_3))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_DarkPortalExit3), GetRectCenterY(gg_rct_DarkPortalExit3))
     WaygateActivate(u, true)
     SetUnitAcquireRange(u, 200.0)
     u = BlzCreateUnitWithSkin(p, FourCC("n036"), 16544.0, -19168.0, 270.000, FourCC("n036"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_Dark_Portal_Exit_1), GetRectCenterY(gg_rct_Dark_Portal_Exit_1))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_DarkPortalExit1), GetRectCenterY(gg_rct_DarkPortalExit1))
     WaygateActivate(u, true)
     SetUnitAcquireRange(u, 200.0)
     u = BlzCreateUnitWithSkin(p, FourCC("u00Q"), 13728.0, -11872.0, 270.000, FourCC("u00Q"))
@@ -3955,7 +3952,7 @@ function CreateBuildingsForPlayer10()
     u = BlzCreateUnitWithSkin(p, FourCC("h06T"), 14752.0, 1312.0, 270.000, FourCC("h06T"))
     u = BlzCreateUnitWithSkin(p, FourCC("n07T"), 10816.0, -14432.0, 270.000, FourCC("n07T"))
     u = BlzCreateUnitWithSkin(p, FourCC("n036"), 4576.0, -24736.0, 270.000, FourCC("n036"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_Dark_Portal_Entrance_3), GetRectCenterY(gg_rct_Dark_Portal_Entrance_3))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_DarkPortalEntrance3), GetRectCenterY(gg_rct_DarkPortalEntrance3))
     WaygateActivate(u, true)
     u = BlzCreateUnitWithSkin(p, FourCC("n07L"), 5184.0, -12480.0, 270.000, FourCC("n07L"))
     u = BlzCreateUnitWithSkin(p, FourCC("h06F"), 18528.0, -17376.0, 270.000, FourCC("h06F"))
@@ -4028,10 +4025,10 @@ function CreateBuildingsForPlayer10()
     u = BlzCreateUnitWithSkin(p, FourCC("h072"), 10688.0, -14272.0, 270.000, FourCC("h072"))
     u = BlzCreateUnitWithSkin(p, FourCC("hars"), 8288.0, -16224.0, 170.000, FourCC("hars"))
     u = BlzCreateUnitWithSkin(p, FourCC("n036"), 4704.0, -25376.0, 270.000, FourCC("n036"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_Dark_Portal_Entrance_1), GetRectCenterY(gg_rct_Dark_Portal_Entrance_1))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_DarkPortalEntrance1), GetRectCenterY(gg_rct_DarkPortalEntrance1))
     WaygateActivate(u, true)
     u = BlzCreateUnitWithSkin(p, FourCC("n036"), 5216.0, -25760.0, 270.000, FourCC("n036"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_Dark_Portal_Entrance_2), GetRectCenterY(gg_rct_Dark_Portal_Entrance_2))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_DarkPortalEntrance2), GetRectCenterY(gg_rct_DarkPortalEntrance2))
     WaygateActivate(u, true)
     u = BlzCreateUnitWithSkin(p, FourCC("ncbb"), 9088.0, -11840.0, 270.000, FourCC("ncbb"))
     u = BlzCreateUnitWithSkin(p, FourCC("n05J"), 17408.0, -17920.0, 270.000, FourCC("n05J"))
@@ -4400,7 +4397,7 @@ function CreateNeutralHostileBuildings()
     u = BlzCreateUnitWithSkin(p, FourCC("n02S"), 3392.0, 22976.0, 270.000, FourCC("n02S"))
     u = BlzCreateUnitWithSkin(p, FourCC("nfr1"), 4672.0, 18496.0, 87.282, FourCC("nfr1"))
     u = BlzCreateUnitWithSkin(p, FourCC("n032"), -18400.0, -31136.0, 270.000, FourCC("n032"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_Sargeras_Entrance), GetRectCenterY(gg_rct_Sargeras_Entrance))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_SargerasEntrance), GetRectCenterY(gg_rct_SargerasEntrance))
     WaygateActivate(u, true)
     u = BlzCreateUnitWithSkin(p, FourCC("h059"), 7936.0, 896.0, 270.000, FourCC("h059"))
     SetUnitAcquireRange(u, 200.0)
@@ -7675,11 +7672,11 @@ function CreateNeutralPassiveBuildings()
     u = BlzCreateUnitWithSkin(p, FourCC("h004"), -11712.0, -13440.0, 1.599, FourCC("h004"))
     u = BlzCreateUnitWithSkin(p, FourCC("osld"), 12032.0, -17472.0, 314.112, FourCC("osld"))
     u = BlzCreateUnitWithSkin(p, FourCC("n033"), 12768.0, -10656.0, 270.000, FourCC("n033"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_Blackrock_Exit), GetRectCenterY(gg_rct_Blackrock_Exit))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_BlackrockExit), GetRectCenterY(gg_rct_BlackrockExit))
     WaygateActivate(u, true)
     u = BlzCreateUnitWithSkin(p, FourCC("ngme"), 11456.0, 9728.0, 270.000, FourCC("ngme"))
     u = BlzCreateUnitWithSkin(p, FourCC("n033"), 20064.0, -29856.0, 270.000, FourCC("n033"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_Blackrock_Entrance), GetRectCenterY(gg_rct_Blackrock_Entrance))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_BlackrockEntrance), GetRectCenterY(gg_rct_BlackrockEntrance))
     WaygateActivate(u, true)
     u = BlzCreateUnitWithSkin(p, FourCC("h07C"), 7488.0, -5824.0, 60.000, FourCC("h07C"))
     u = BlzCreateUnitWithSkin(p, FourCC("h013"), 7648.0, -5280.0, 270.000, FourCC("h013"))
@@ -7697,7 +7694,7 @@ function CreateNeutralPassiveBuildings()
     WaygateSetDestination(u, GetRectCenterX(gg_rct_DalaranExit2), GetRectCenterY(gg_rct_DalaranExit2))
     WaygateActivate(u, true)
     u = BlzCreateUnitWithSkin(p, FourCC("n03S"), 14976.0, 320.0, 270.000, FourCC("n03S"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_East_Thandol), GetRectCenterY(gg_rct_East_Thandol))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_EastThandol), GetRectCenterY(gg_rct_EastThandol))
     WaygateActivate(u, true)
     u = BlzCreateUnitWithSkin(p, FourCC("ngad"), -10432.0, 10176.0, 270.000, FourCC("ngad"))
     u = BlzCreateUnitWithSkin(p, FourCC("ncb8"), 13312.0, 1088.0, 270.000, FourCC("ncb8"))
@@ -7750,14 +7747,14 @@ function CreateNeutralPassiveBuildings()
     u = BlzCreateUnitWithSkin(p, FourCC("h072"), 4608.0, -5888.0, 270.000, FourCC("h072"))
     u = BlzCreateUnitWithSkin(p, FourCC("h06T"), 4320.0, -4768.0, 270.000, FourCC("h06T"))
     u = BlzCreateUnitWithSkin(p, FourCC("n03I"), -18144.0, 20896.0, 270.000, FourCC("n03I"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_Dire_Maul_Entrance), GetRectCenterY(gg_rct_Dire_Maul_Entrance))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_DireMaulEntrance), GetRectCenterY(gg_rct_DireMaulEntrance))
     WaygateActivate(u, true)
     SetUnitAcquireRange(u, 200.0)
     u = BlzCreateUnitWithSkin(p, FourCC("n04B"), -21056.0, 17536.0, 270.000, FourCC("n04B"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_Scholomance_Entrance), GetRectCenterY(gg_rct_Scholomance_Entrance))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_ScholomanceEntrance), GetRectCenterY(gg_rct_ScholomanceEntrance))
     WaygateActivate(u, true)
     u = BlzCreateUnitWithSkin(p, FourCC("n03H"), -14208.0, 20736.0, 270.000, FourCC("n03H"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_Dalaran_Dungeons_Entrance), GetRectCenterY(gg_rct_Dalaran_Dungeons_Entrance))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_DalaranDungeonsEntrance), GetRectCenterY(gg_rct_DalaranDungeonsEntrance))
     WaygateActivate(u, true)
     u = BlzCreateUnitWithSkin(p, FourCC("harm"), 17344.0, -30784.0, 270.000, FourCC("harm"))
     u = BlzCreateUnitWithSkin(p, FourCC("ngme"), -6912.0, 5312.0, 270.000, FourCC("ngme"))
@@ -7786,7 +7783,7 @@ function CreateNeutralPassiveBuildings()
     u = BlzCreateUnitWithSkin(p, FourCC("o02Q"), -12160.0, -2432.0, 270.000, FourCC("o02Q"))
     u = BlzCreateUnitWithSkin(p, FourCC("o01S"), -12096.0, -1984.0, 340.000, FourCC("o01S"))
     u = BlzCreateUnitWithSkin(p, FourCC("n03A"), 8640.0, 4800.0, 270.000, FourCC("n03A"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_Dalaran_Dungeons_Exit), GetRectCenterY(gg_rct_Dalaran_Dungeons_Exit))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_DalaranDungeonsExit), GetRectCenterY(gg_rct_DalaranDungeonsExit))
     WaygateActivate(u, true)
     u = BlzCreateUnitWithSkin(p, FourCC("h071"), 13568.0, 1280.0, 270.000, FourCC("h071"))
     u = BlzCreateUnitWithSkin(p, FourCC("h07L"), 18112.0, -30976.0, 270.000, FourCC("h07L"))
@@ -7809,7 +7806,7 @@ function CreateNeutralPassiveBuildings()
     u = BlzCreateUnitWithSkin(p, FourCC("n0A3"), 11712.0, -30592.0, 270.000, FourCC("n0A3"))
     u = BlzCreateUnitWithSkin(p, FourCC("h03P"), 8064.0, -6400.0, 270.000, FourCC("h03P"))
     u = BlzCreateUnitWithSkin(p, FourCC("n03Q"), 17216.0, 384.0, 270.000, FourCC("n03Q"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_West_Thandol), GetRectCenterY(gg_rct_West_Thandol))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_WestThandol), GetRectCenterY(gg_rct_WestThandol))
     WaygateActivate(u, true)
     u = BlzCreateUnitWithSkin(p, FourCC("h06D"), 4192.0, -6240.0, 270.000, FourCC("h06D"))
     u = BlzCreateUnitWithSkin(p, FourCC("obar"), -10944.0, -12992.0, 270.000, FourCC("obar"))
@@ -7836,10 +7833,10 @@ function CreateNeutralPassiveBuildings()
     u = BlzCreateUnitWithSkin(p, FourCC("ndmg"), -21184.0, 22080.0, 270.000, FourCC("ndmg"))
     u = BlzCreateUnitWithSkin(p, FourCC("u015"), -19744.0, 21536.0, 270.000, FourCC("u015"))
     u = BlzCreateUnitWithSkin(p, FourCC("n079"), -18656.0, -26080.0, 270.000, FourCC("n079"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_Outer_AhnQiraj), GetRectCenterY(gg_rct_Outer_AhnQiraj))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_OuterAhnQiraj), GetRectCenterY(gg_rct_OuterAhnQiraj))
     WaygateActivate(u, true)
     u = BlzCreateUnitWithSkin(p, FourCC("n07A"), -18912.0, -18208.0, 270.000, FourCC("n07A"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_Inner_AhnQiraj), GetRectCenterY(gg_rct_Inner_AhnQiraj))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_InnerAhnQiraj), GetRectCenterY(gg_rct_InnerAhnQiraj))
     WaygateActivate(u, true)
     u = BlzCreateUnitWithSkin(p, FourCC("e00R"), -16704.0, 22720.0, 270.000, FourCC("e00R"))
     u = BlzCreateUnitWithSkin(p, FourCC("ngad"), 19072.0, -9664.0, 270.000, FourCC("ngad"))
@@ -7860,7 +7857,7 @@ function CreateNeutralPassiveBuildings()
     u = BlzCreateUnitWithSkin(p, FourCC("n06M"), -16640.0, 23168.0, 193.701, FourCC("n06M"))
     SetUnitState(u, UNIT_STATE_MANA, 500)
     u = BlzCreateUnitWithSkin(p, FourCC("n03I"), -17024.0, -8448.0, 88.215, FourCC("n03I"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_Dire_Maul_Exit), GetRectCenterY(gg_rct_Dire_Maul_Exit))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_DireMaulExit), GetRectCenterY(gg_rct_DireMaulExit))
     WaygateActivate(u, true)
     SetUnitAcquireRange(u, 200.0)
     u = BlzCreateUnitWithSkin(p, FourCC("ovln"), -14624.0, -4768.0, 270.000, FourCC("ovln"))
@@ -7995,7 +7992,7 @@ function CreateNeutralPassive()
     u = BlzCreateUnitWithSkin(p, FourCC("opeo"), -16482.3, -4716.1, 66.261, FourCC("opeo"))
     u = BlzCreateUnitWithSkin(p, FourCC("Eevi"), 10876.6, -28690.7, 351.749, FourCC("Eevi"))
     u = BlzCreateUnitWithSkin(p, FourCC("n038"), -3296.0, 17856.0, 270.000, FourCC("n038"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_AzjolNerubDragonblight_Exit), GetRectCenterY(gg_rct_AzjolNerubDragonblight_Exit))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_AzjolNerubDragonblightExit), GetRectCenterY(gg_rct_AzjolNerubDragonblightExit))
     WaygateActivate(u, true)
     SetUnitAcquireRange(u, 200.0)
     u = BlzCreateUnitWithSkin(p, FourCC("U00L"), -20005.7, 22051.8, 320.000, FourCC("U00L"))
@@ -8074,7 +8071,7 @@ function CreateNeutralPassive()
     u = BlzCreateUnitWithSkin(p, FourCC("opeo"), -1507.8, -2126.7, 4.150, FourCC("opeo"))
     IssueImmediateOrder(u, "repairoff")
     u = BlzCreateUnitWithSkin(p, FourCC("n038"), -12768.0, -26720.0, 270.000, FourCC("n038"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_AzjolNerub_South_Entrance), GetRectCenterY(gg_rct_AzjolNerub_South_Entrance))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_AzjolNerubSouthEntrance), GetRectCenterY(gg_rct_AzjolNerubSouthEntrance))
     WaygateActivate(u, true)
     u = BlzCreateUnitWithSkin(p, FourCC("n04H"), -20418.7, 22562.6, 305.737, FourCC("n04H"))
     u = BlzCreateUnitWithSkin(p, FourCC("n04H"), -20741.5, 22800.3, 128.709, FourCC("n04H"))
@@ -8151,10 +8148,10 @@ function CreateNeutralPassive()
     u = BlzCreateUnitWithSkin(p, FourCC("nvil"), 15111.3, 12044.2, 347.398, FourCC("nvil"))
     u = BlzCreateUnitWithSkin(p, FourCC("nvl2"), 14050.0, 11795.8, 303.631, FourCC("nvl2"))
     u = BlzCreateUnitWithSkin(p, FourCC("n08R"), 16568.8, -2772.2, 315.280, FourCC("n08R"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_Grim_Batol_Tunnel_Top), GetRectCenterY(gg_rct_Grim_Batol_Tunnel_Top))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_GrimBatolTunnelTop), GetRectCenterY(gg_rct_GrimBatolTunnelTop))
     WaygateActivate(u, true)
     u = BlzCreateUnitWithSkin(p, FourCC("n08R"), 16760.8, -2484.2, 116.560, FourCC("n08R"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_Grim_Batol_Tunnel_Entrance), GetRectCenterY(gg_rct_Grim_Batol_Tunnel_Entrance))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_GrimBatolTunnelEntrance), GetRectCenterY(gg_rct_GrimBatolTunnelEntrance))
     WaygateActivate(u, true)
     u = BlzCreateUnitWithSkin(p, FourCC("nvlw"), 12365.8, 2024.0, 4.182, FourCC("nvlw"))
     u = BlzCreateUnitWithSkin(p, FourCC("nvl2"), 10959.5, 1962.6, 331.200, FourCC("nvl2"))
@@ -8191,7 +8188,7 @@ function CreateNeutralPassive()
     u = BlzCreateUnitWithSkin(p, FourCC("nlds"), 11315.2, -30021.5, 138.882, FourCC("nlds"))
     u = BlzCreateUnitWithSkin(p, FourCC("nvlw"), 21011.9, 8161.3, 318.286, FourCC("nvlw"))
     u = BlzCreateUnitWithSkin(p, FourCC("n038"), -8608.0, -28896.0, 270.000, FourCC("n038"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_AzjolNerubNorth_entrance), GetRectCenterY(gg_rct_AzjolNerubNorth_entrance))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_AzjolNerubNorthentrance), GetRectCenterY(gg_rct_AzjolNerubNorthentrance))
     WaygateActivate(u, true)
     u = BlzCreateUnitWithSkin(p, FourCC("nlds"), 11084.3, -29812.4, 2.988, FourCC("nlds"))
     u = BlzCreateUnitWithSkin(p, FourCC("nvlw"), 19613.7, 8237.5, 221.538, FourCC("nvlw"))
@@ -8314,11 +8311,11 @@ function CreateNeutralPassive()
     u = BlzCreateUnitWithSkin(p, FourCC("nvl2"), 13895.4, 11687.7, 281.965, FourCC("nvl2"))
     u = BlzCreateUnitWithSkin(p, FourCC("nvl2"), 15252.3, 12918.4, 128.606, FourCC("nvl2"))
     u = BlzCreateUnitWithSkin(p, FourCC("n09Q"), 14552.0, 12354.3, 102.180, FourCC("n09Q"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_Stratholme_platform_exit), GetRectCenterY(gg_rct_Stratholme_platform_exit))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_Stratholmeplatformexit), GetRectCenterY(gg_rct_Stratholmeplatformexit))
     WaygateActivate(u, true)
     SetUnitAcquireRange(u, 200.0)
     u = BlzCreateUnitWithSkin(p, FourCC("n09Q"), 14736.4, 12349.3, 265.900, FourCC("n09Q"))
-    WaygateSetDestination(u, GetRectCenterX(gg_rct_Stratholme_Platform_entrance), GetRectCenterY(gg_rct_Stratholme_Platform_entrance))
+    WaygateSetDestination(u, GetRectCenterX(gg_rct_StratholmePlatformentrance), GetRectCenterY(gg_rct_StratholmePlatformentrance))
     WaygateActivate(u, true)
     SetUnitAcquireRange(u, 200.0)
     u = BlzCreateUnitWithSkin(p, FourCC("nvl2"), 13887.0, 12840.8, 303.631, FourCC("nvl2"))
@@ -8376,215 +8373,206 @@ end
 
 function CreateRegions()
     local we
-    gg_rct_Aerie_Peak = Rect(13600.0, 4096.0, 14752.0, 5184.0)
-    gg_rct_Solliden_Farmstead = Rect(6400.0, 8992.0, 7808.0, 10592.0)
-    gg_rct_Arathi_Ships = Rect(16256.0, 768.0, 17024.0, 1632.0)
-    gg_rct_Auberdine_Ships = Rect(-18272.0, 2848.0, -15936.0, 5312.0)
-    gg_rct_Auberdine_Ships_2 = Rect(-16640.0, 7424.0, -9504.0, 11072.0)
-    gg_rct_AzjolNerubDragonblight_Exit = Rect(-12992.0, -26944.0, -12544.0, -26720.0)
-    gg_rct_Blasted_Lands_Weather = Rect(14944.0, -21344.0, 18592.0, -17984.0)
-    we = AddWeatherEffect(gg_rct_Blasted_Lands_Weather, FourCC("FDrl"))
+    gg_rct_AeriePeak = Rect(13600.0, 4096.0, 14752.0, 5184.0)
+    gg_rct_SollidenFarmstead = Rect(6400.0, 8992.0, 7808.0, 10592.0)
+    gg_rct_ArathiShips = Rect(16256.0, 768.0, 17024.0, 1632.0)
+    gg_rct_AuberdineShips = Rect(-18272.0, 2848.0, -15936.0, 5312.0)
+    gg_rct_AuberdineShips2 = Rect(-16640.0, 7424.0, -9504.0, 11072.0)
+    gg_rct_AzjolNerubDragonblightExit = Rect(-12992.0, -26944.0, -12544.0, -26720.0)
+    gg_rct_BlastedLandsWeather = Rect(14944.0, -21344.0, 18592.0, -17984.0)
+    we = AddWeatherEffect(gg_rct_BlastedLandsWeather, FourCC("FDrl"))
     EnableWeatherEffect(we, true)
-    gg_rct_Barren_Excavation = Rect(-10656.0, -15392.0, -10592.0, -15328.0)
-    gg_rct_Blackrock_Entrance = Rect(12576.0, -10784.0, 12960.0, -10656.0)
-    gg_rct_Blackrock_Exit = Rect(19808.0, -30048.0, 20320.0, -29888.0)
-    gg_rct_Book_of_Mediv_Chaos = Rect(2336.0, 18176.0, 2496.0, 18304.0)
-    gg_rct_Borean_Tundra = Rect(-9152.0, 13664.0, -4768.0, 19008.0)
+    gg_rct_BarrenExcavation = Rect(-10656.0, -15392.0, -10592.0, -15328.0)
+    gg_rct_BlackrockEntrance = Rect(12576.0, -10784.0, 12960.0, -10656.0)
+    gg_rct_BlackrockExit = Rect(19808.0, -30048.0, 20320.0, -29888.0)
+    gg_rct_BookofMedivChaos = Rect(2336.0, 18176.0, 2496.0, 18304.0)
+    gg_rct_BoreanTundra = Rect(-9152.0, 13664.0, -4768.0, 19008.0)
     gg_rct_Brill = Rect(8064.0, 10144.0, 9792.0, 11648.0)
-    gg_rct_Broken_Isles = Rect(-2848.0, 5568.0, 1920.0, 9472.0)
-    we = AddWeatherEffect(gg_rct_Broken_Isles, FourCC("RAlr"))
+    gg_rct_BrokenIsles = Rect(-2848.0, 5568.0, 1920.0, 9472.0)
+    we = AddWeatherEffect(gg_rct_BrokenIsles, FourCC("RAlr"))
     EnableWeatherEffect(we, true)
     gg_rct_CaerDarrowShipyard = Rect(8608.0, 2016.0, 18496.0, 11424.0)
-    gg_rct_Cathedral_of_Light = Rect(8320.0, -11872.0, 8800.0, -11456.0)
-    gg_rct_Central_Northrend = Rect(-4160.0, 15104.0, 1952.0, 20320.0)
-    we = AddWeatherEffect(gg_rct_Central_Northrend, FourCC("SNls"))
+    gg_rct_CathedralofLight = Rect(8320.0, -11872.0, 8800.0, -11456.0)
+    gg_rct_CentralNorthrend = Rect(-4160.0, 15104.0, 1952.0, 20320.0)
+    we = AddWeatherEffect(gg_rct_CentralNorthrend, FourCC("SNls"))
     EnableWeatherEffect(we, true)
     gg_rct_Chaosmod1 = Rect(11904.0, -12192.0, 14016.0, -10528.0)
     gg_rct_Coldarra = Rect(-10656.0, 16896.0, -8704.0, 18272.0)
     we = AddWeatherEffect(gg_rct_Coldarra, FourCC("SNls"))
     EnableWeatherEffect(we, true)
-    gg_rct_Construction_Site_2 = Rect(10752.0, -12160.0, 11360.0, -11488.0)
-    gg_rct_Corins_Crossing = Rect(16192.0, 8896.0, 18080.0, 10944.0)
+    gg_rct_ConstructionSite2 = Rect(10752.0, -12160.0, 11360.0, -11488.0)
+    gg_rct_CorinsCrossing = Rect(16192.0, 8896.0, 18080.0, 10944.0)
     gg_rct_Crossroads = Rect(-12480.0, -2592.0, -11424.0, -1568.0)
     gg_rct_Dalaran = Rect(8448.0, 4000.0, 10336.0, 5760.0)
-    gg_rct_Dalaran_Dungeon = Rect(-14272.0, 20160.0, -10752.0, 23744.0)
-    we = AddWeatherEffect(gg_rct_Dalaran_Dungeon, FourCC("FDbh"))
+    gg_rct_DalaranDungeon = Rect(-14272.0, 20160.0, -10752.0, 23744.0)
+    we = AddWeatherEffect(gg_rct_DalaranDungeon, FourCC("FDbh"))
     EnableWeatherEffect(we, true)
-    gg_rct_Dalaran_Dungeons_Entrance = Rect(8544.0, 4576.0, 8928.0, 4928.0)
-    gg_rct_Dalaran_Dungeons_Exit = Rect(-14336.0, 20576.0, -13888.0, 20832.0)
+    gg_rct_DalaranDungeonsEntrance = Rect(8544.0, 4576.0, 8928.0, 4928.0)
+    gg_rct_DalaranDungeonsExit = Rect(-14336.0, 20576.0, -13888.0, 20832.0)
     gg_rct_DalaranExit2 = Rect(9696.0, 5152.0, 9984.0, 5440.0)
-    gg_rct_Dark_Portal_Entrance_1 = Rect(16288.0, -19008.0, 16704.0, -18688.0)
-    gg_rct_Dark_Portal_Exit_1 = Rect(4224.0, -25792.0, 4576.0, -25344.0)
-    gg_rct_Darkspear_Island = Rect(-4384.0, -3552.0, -1120.0, -1408.0)
+    gg_rct_DarkPortalEntrance1 = Rect(16288.0, -19008.0, 16704.0, -18688.0)
+    gg_rct_DarkPortalExit1 = Rect(4224.0, -25792.0, 4576.0, -25344.0)
+    gg_rct_DarkspearIsland = Rect(-4384.0, -3552.0, -1120.0, -1408.0)
     gg_rct_Darrowshire = Rect(16096.0, 7168.0, 17600.0, 8480.0)
-    gg_rct_Demongate_1 = Rect(-1248.0, -22400.0, -864.0, -22016.0)
-    gg_rct_Demongate_2 = Rect(5152.0, -29152.0, 5504.0, -28800.0)
+    gg_rct_Demongate1 = Rect(-1248.0, -22400.0, -864.0, -22016.0)
+    gg_rct_Demongate2 = Rect(5152.0, -29152.0, 5504.0, -28800.0)
     gg_rct_DemonGate3 = Rect(352.0, -25472.0, 864.0, -25024.0)
-    gg_rct_Desolace_Ships = Rect(-18720.0, -7584.0, -16192.0, -3488.0)
-    gg_rct_Dire_Maul_Entrance = Rect(-17184.0, -8736.0, -16864.0, -8576.0)
-    gg_rct_Dire_Maul_Exit = Rect(-18272.0, 20960.0, -18016.0, 21088.0)
-    gg_rct_Dun_Morogh_Excavation = Rect(10592.0, -7328.0, 10656.0, -7264.0)
-    gg_rct_Dun_Morogh_Ships = Rect(7296.0, -7872.0, 14240.0, -4992.0)
-    gg_rct_Duskwood_Weather = Rect(9120.0, -16992.0, 12992.0, -15584.0)
-    we = AddWeatherEffect(gg_rct_Duskwood_Weather, FourCC("FDwl"))
+    gg_rct_DesolaceShips = Rect(-18720.0, -7584.0, -16192.0, -3488.0)
+    gg_rct_DireMaulEntrance = Rect(-17184.0, -8736.0, -16864.0, -8576.0)
+    gg_rct_DireMaulExit = Rect(-18272.0, 20960.0, -18016.0, 21088.0)
+    gg_rct_DunMoroghExcavation = Rect(10592.0, -7328.0, 10656.0, -7264.0)
+    gg_rct_DunMoroghShips = Rect(7296.0, -7872.0, 14240.0, -4992.0)
+    gg_rct_DuskwoodWeather = Rect(9120.0, -16992.0, 12992.0, -15584.0)
+    we = AddWeatherEffect(gg_rct_DuskwoodWeather, FourCC("FDwl"))
     EnableWeatherEffect(we, true)
-    gg_rct_Dustwallow_Ships = Rect(-12416.0, -8736.0, -8768.0, -6144.0)
-    gg_rct_East_Thandol = Rect(17120.0, 288.0, 17312.0, 448.0)
-    gg_rct_Eastern_Northrend = Rect(-1152.0, 20320.0, 4608.0, 21408.0)
+    gg_rct_DustwallowShips = Rect(-12416.0, -8736.0, -8768.0, -6144.0)
+    gg_rct_EastThandol = Rect(17120.0, 288.0, 17312.0, 448.0)
+    gg_rct_EasternNorthrend = Rect(-1152.0, 20320.0, 4608.0, 21408.0)
     gg_rct_EssenceSpawn = Rect(-12160.0, 6240.0, -11968.0, 6400.0)
-    gg_rct_Far_Eastern_Northrend = Rect(4608.0, 20064.0, 7328.0, 22944.0)
-    we = AddWeatherEffect(gg_rct_Far_Eastern_Northrend, FourCC("SNhs"))
+    gg_rct_FarEasternNorthrend = Rect(4608.0, 20064.0, 7328.0, 22944.0)
+    we = AddWeatherEffect(gg_rct_FarEasternNorthrend, FourCC("SNhs"))
     EnableWeatherEffect(we, true)
-    gg_rct_Felwood_Vision = Rect(-16224.0, 5888.0, -14560.0, 7776.0)
-    gg_rct_Fenris_ships = Rect(5760.0, 4960.0, 13024.0, 8128.0)
+    gg_rct_FelwoodVision = Rect(-16224.0, 5888.0, -14560.0, 7776.0)
+    gg_rct_Fenrisships = Rect(5760.0, 4960.0, 13024.0, 8128.0)
     gg_rct_Fjord = Rect(1568.0, 13408.0, 8192.0, 20096.0)
     gg_rct_Gilneas = Rect(4096.0, -2624.0, 9792.0, 2624.0)
-    gg_rct_Gilneas_Canals = Rect(5888.0, -1344.0, 8640.0, 2624.0)
+    gg_rct_GilneasCanals = Rect(5888.0, -1344.0, 8640.0, 2624.0)
     gg_rct_Gnomergan = Rect(7296.0, -6528.0, 8672.0, -4960.0)
     gg_rct_Greymane = Rect(7072.0, 352.0, 7328.0, 544.0)
-    gg_rct_Grim_Batol = Rect(16000.0, -4192.0, 17952.0, -2048.0)
-    gg_rct_Grim_Batol_Tunnel_Entrance = Rect(16480.0, -2944.0, 16672.0, -2784.0)
-    gg_rct_Grim_Batol_Tunnel_Top = Rect(16608.0, -2496.0, 16832.0, -2400.0)
+    gg_rct_GrimBatol = Rect(16000.0, -4192.0, 17952.0, -2048.0)
+    gg_rct_GrimBatolTunnelEntrance = Rect(16480.0, -2944.0, 16672.0, -2784.0)
+    gg_rct_GrimBatolTunnelTop = Rect(16608.0, -2496.0, 16832.0, -2400.0)
     gg_rct_Havenshire = Rect(20128.0, 7040.0, 22112.0, 9472.0)
     gg_rct_Hearthglen = Rect(10624.0, 10176.0, 13312.0, 11744.0)
     gg_rct_HeroOrItemWaitRect = Rect(20640.0, 24256.0, 21184.0, 24512.0)
     gg_rct_HonorHold = Rect(2208.0, -27360.0, 3936.0, -26016.0)
-    gg_rct_Howling_Fjord = Rect(5408.0, 15328.0, 5472.0, 15392.0)
-    gg_rct_Ice_Crown = Rect(-4096.0, 19808.0, -2048.0, 24928.0)
-    we = AddWeatherEffect(gg_rct_Ice_Crown, FourCC("SNbs"))
+    gg_rct_HowlingFjord = Rect(5408.0, 15328.0, 5472.0, 15392.0)
+    gg_rct_IceCrown = Rect(-4096.0, 19808.0, -2048.0, 24928.0)
+    we = AddWeatherEffect(gg_rct_IceCrown, FourCC("SNbs"))
     EnableWeatherEffect(we, true)
     gg_rct_IcecrownShipyard = Rect(-6976.0, 22304.0, -1248.0, 24992.0)
     we = AddWeatherEffect(gg_rct_IcecrownShipyard, FourCC("SNbs"))
     EnableWeatherEffect(we, true)
     gg_rct_IllidanSpawn = Rect(-12960.0, 6080.0, -12896.0, 6144.0)
     gg_rct_Ironforge = Rect(9792.0, -5728.0, 10016.0, -5536.0)
-    gg_rct_Jaina_soul_gem = Rect(-21120.0, 17408.0, -19104.0, 19776.0)
-    gg_rct_Kali_Ships = Rect(-17600.0, -15296.0, -10816.0, 5600.0)
+    gg_rct_Jainasoulgem = Rect(-21120.0, 17408.0, -19104.0, 19776.0)
+    gg_rct_KaliShips = Rect(-17600.0, -15296.0, -10816.0, 5600.0)
     gg_rct_Kultiras = Rect(2464.0, -6336.0, 4992.0, -2912.0)
     gg_rct_LichKing = Rect(-3520.0, 20224.0, -3136.0, 20704.0)
-    gg_rct_Loch_Modan_Ships = Rect(14656.0, -8064.0, 17952.0, -1536.0)
-    gg_rct_Lordaeron_East = Rect(12896.0, 7456.0, 18240.0, 13984.0)
-    gg_rct_Lordaeron_West = Rect(3584.0, 7200.0, 13792.0, 13024.0)
+    gg_rct_LochModanShips = Rect(14656.0, -8064.0, 17952.0, -1536.0)
+    gg_rct_LordaeronEast = Rect(12896.0, 7456.0, 18240.0, 13984.0)
+    gg_rct_LordaeronWest = Rect(3584.0, 7200.0, 13792.0, 13024.0)
     gg_rct_Maelstrom = Rect(-1344.0, 704.0, 1248.0, 3232.0)
     we = AddWeatherEffect(gg_rct_Maelstrom, FourCC("WNcw"))
     EnableWeatherEffect(we, true)
     gg_rct_MaelStromOuter = Rect(-288.0, 1696.0, 256.0, 2176.0)
     gg_rct_Maelstromposition = Rect(-128.0, 1888.0, -96.0, 1920.0)
     gg_rct_Moonglade = Rect(-12992.0, 10176.0, -12416.0, 10656.0)
-    gg_rct_Murloc_Attack = Rect(-3456.0, -2368.0, -3296.0, -2176.0)
-    gg_rct_Murloc_Spawn_1 = Rect(-3680.0, -3584.0, -3136.0, -3296.0)
-    gg_rct_Murloc_Spawn_2 = Rect(-4608.0, -3040.0, -4416.0, -2592.0)
+    gg_rct_MurlocAttack = Rect(-3456.0, -2368.0, -3296.0, -2176.0)
+    gg_rct_MurlocSpawn1 = Rect(-3680.0, -3584.0, -3136.0, -3296.0)
+    gg_rct_MurlocSpawn2 = Rect(-4608.0, -3040.0, -4416.0, -2592.0)
     gg_rct_InstanceNazjatar = Rect(7872.0, -31584.0, 15552.0, -26624.0)
-    gg_rct_Nether_Exit = Rect(-21504.0, 20736.0, -19616.0, 21504.0)
-    gg_rct_Northern_Kali_Ships = Rect(-17344.0, -1376.0, -8704.0, 8800.0)
-    gg_rct_Northrend_ships = Rect(-9216.0, 19680.0, 6048.0, 24992.0)
+    gg_rct_NetherExit = Rect(-21504.0, 20736.0, -19616.0, 21504.0)
+    gg_rct_NorthernKaliShips = Rect(-17344.0, -1376.0, -8704.0, 8800.0)
+    gg_rct_Northrendships = Rect(-9216.0, 19680.0, 6048.0, 24992.0)
     gg_rct_OrgGate = Rect(-9280.0, -1344.0, -9088.0, -1248.0)
-    gg_rct_Orgrimmar = Rect(-9824.0, -1408.0, -7424.0, 1248.0)
-    gg_rct_Outland_Ships = Rect(-6432.0, -32224.0, 6688.0, -18176.0)
-    gg_rct_Plague_1 = Rect(6368.0, 6848.0, 7840.0, 10816.0)
-    gg_rct_Plague_2 = Rect(11392.0, 8416.0, 13824.0, 9888.0)
-    gg_rct_Plague_3 = Rect(15808.0, 7616.0, 18496.0, 8832.0)
-    gg_rct_Plague_4 = Rect(15328.0, 8896.0, 18496.0, 10944.0)
-    gg_rct_Plague_5 = Rect(7136.0, 10272.0, 9280.0, 11840.0)
-    gg_rct_Plague_6 = Rect(5632.0, 3136.0, 8032.0, 5728.0)
-    gg_rct_Plague_7 = Rect(9024.0, 1984.0, 12736.0, 3424.0)
-    gg_rct_Quel_Ships_1 = Rect(16384.0, 16608.0, 20096.0, 17568.0)
-    gg_rct_Quel_Ships_2 = Rect(17216.0, 13984.0, 20512.0, 17568.0)
-    gg_rct_Quel_Ships_3 = Rect(16160.0, 11392.0, 21920.0, 15584.0)
+    gg_rct_Orgrimmar = Rect(-9792.0, -1984.0, -7392.0, 672.0)
+    gg_rct_OutlandShips = Rect(-6432.0, -32224.0, 6688.0, -18176.0)
+    gg_rct_Plague1 = Rect(6368.0, 6848.0, 7840.0, 10816.0)
+    gg_rct_Plague2 = Rect(11392.0, 8416.0, 13824.0, 9888.0)
+    gg_rct_Plague3 = Rect(15808.0, 7616.0, 18496.0, 8832.0)
+    gg_rct_Plague4 = Rect(15328.0, 8896.0, 18496.0, 10944.0)
+    gg_rct_Plague5 = Rect(7136.0, 10272.0, 9280.0, 11840.0)
+    gg_rct_Plague6 = Rect(5632.0, 3136.0, 8032.0, 5728.0)
+    gg_rct_Plague7 = Rect(9024.0, 1984.0, 12736.0, 3424.0)
+    gg_rct_QuelShips1 = Rect(16384.0, 16608.0, 20096.0, 17568.0)
+    gg_rct_QuelShips2 = Rect(17216.0, 13984.0, 20512.0, 17568.0)
+    gg_rct_QuelShips3 = Rect(16160.0, 11392.0, 21920.0, 15584.0)
     gg_rct_Quelthalas = Rect(15136.0, 13536.0, 21408.0, 23168.0)
     gg_rct_storm2 = Rect(-2016.0, 608.0, -384.0, 2368.0)
     gg_rct_storm3 = Rect(-736.0, 320.0, 1184.0, 1824.0)
     gg_rct_storm4 = Rect(128.0, 2080.0, 1504.0, 2400.0)
-    gg_rct_Sargeras_Entrance = Rect(-1024.0, 8096.0, -448.0, 8576.0)
-    gg_rct_Sargeras_Exit = Rect(-18528.0, -31040.0, -18208.0, -30720.0)
+    gg_rct_SargerasEntrance = Rect(-1024.0, 8096.0, -448.0, 8576.0)
+    gg_rct_SargerasExit = Rect(-18528.0, -31040.0, -18208.0, -30720.0)
     gg_rct_ScarletMonastery = Rect(11072.0, 11168.0, 11520.0, 11840.0)
-    gg_rct_Scholomance_Entrance = Rect(14560.0, 7552.0, 14912.0, 7872.0)
+    gg_rct_ScholomanceEntrance = Rect(14560.0, 7552.0, 14912.0, 7872.0)
     gg_rct_Scholomance_Exit = Rect(-21120.0, 17440.0, -20736.0, 17792.0)
-    gg_rct_Sea_Witch_Storm = Rect(-5312.0, -4480.0, -32.0, -96.0)
-    gg_rct_Shadowforge_City = Rect(16704.0, -31744.0, 18272.0, -30560.0)
-    gg_rct_Shadowforge_gate = Rect(17888.0, -31712.0, 18272.0, -30912.0)
-    gg_rct_Shadowmoon_Excavation = Rect(2528.0, -31072.0, 2592.0, -31008.0)
-    gg_rct_Siphon_Cast_Zone = Rect(-11744.0, 7424.0, -11488.0, 7648.0)
-    gg_rct_South_EK_Ships = Rect(7776.0, -18208.0, 18336.0, -12704.0)
-    gg_rct_Stonemaul_Keep = Rect(-11744.0, -9728.0, -9952.0, -7424.0)
-    gg_rct_Storm_peak_Excavation = Rect(3360.0, 22944.0, 3424.0, 23008.0)
-    gg_rct_Storm_Peaks = Rect(-1088.0, 21088.0, 4640.0, 25088.0)
-    we = AddWeatherEffect(gg_rct_Storm_Peaks, FourCC("SNhs"))
+    gg_rct_SeaWitchStorm = Rect(-5312.0, -4480.0, -32.0, -96.0)
+    gg_rct_ShadowforgeCity = Rect(16704.0, -31744.0, 18272.0, -30560.0)
+    gg_rct_Shadowforgegate = Rect(17888.0, -31712.0, 18272.0, -30912.0)
+    gg_rct_ShadowmoonExcavation = Rect(2528.0, -31072.0, 2592.0, -31008.0)
+    gg_rct_SouthEKShips = Rect(7776.0, -18208.0, 18336.0, -12704.0)
+    gg_rct_StonemaulKeep = Rect(-11744.0, -9728.0, -9952.0, -7424.0)
+    gg_rct_StormpeakExcavation = Rect(3360.0, 22944.0, 3424.0, 23008.0)
+    gg_rct_StormPeaks = Rect(-1088.0, 21088.0, 4640.0, 25088.0)
+    we = AddWeatherEffect(gg_rct_StormPeaks, FourCC("SNhs"))
     EnableWeatherEffect(we, true)
     gg_rct_Storm1 = Rect(-2016.0, 2336.0, 1504.0, 4000.0)
     gg_rct_Stormwind = Rect(10880.0, -10176.0, 11040.0, -10016.0)
-    gg_rct_Stratholme_Platform_entrance = Rect(14560.0, 12320.0, 14592.0, 12384.0)
-    gg_rct_Stratholme_platform_exit = Rect(14720.0, 12320.0, 14784.0, 12416.0)
+    gg_rct_StratholmePlatformentrance = Rect(14560.0, 12320.0, 14592.0, 12384.0)
+    gg_rct_Stratholmeplatformexit = Rect(14720.0, 12320.0, 14784.0, 12416.0)
     gg_rct_StratholmeShipyard = Rect(13696.0, 7232.0, 19264.0, 11616.0)
     gg_rct_Stromgarde = Rect(13120.0, 448.0, 15264.0, 2048.0)
-    gg_rct_Stromwind_antiship = Rect(8128.0, -12896.0, 11392.0, -9888.0)
-    gg_rct_STV_Ships = Rect(10112.0, -20032.0, 14048.0, -17600.0)
+    gg_rct_Stromwindantiship = Rect(8128.0, -12896.0, 11392.0, -9888.0)
+    gg_rct_STVShips = Rect(10112.0, -20032.0, 14048.0, -17600.0)
     gg_rct_Terenas = Rect(8096.0, 7776.0, 10048.0, 9472.0)
     gg_rct_The_Basin = Rect(-8288.0, 16256.0, -4096.0, 22336.0)
-    gg_rct_Thrall_2 = Rect(-2912.0, -2880.0, -2496.0, -2528.0)
-    gg_rct_Thrall_3 = Rect(-2656.0, -1888.0, -2048.0, -1504.0)
-    gg_rct_Thrall_4 = Rect(-2464.0, -1568.0, -2336.0, -1376.0)
-    gg_rct_Thrall_5 = Rect(-2272.0, -1568.0, -2144.0, -1344.0)
-    gg_rct_Thrall_6 = Rect(-2656.0, -1856.0, -1920.0, -960.0)
-    gg_rct_Thrall_Landing1 = Rect(-4096.0, -3328.0, -3264.0, -2656.0)
-    gg_rct_Thrall_Ship_1 = Rect(-1184.0, -1824.0, -1088.0, -1728.0)
-    gg_rct_Thrall_Ship_2 = Rect(-1184.0, -2336.0, -1088.0, -2240.0)
-    gg_rct_Tomb_Of_Sargeras_Ships = Rect(-18944.0, -31456.0, -16160.0, -28416.0)
+    gg_rct_Thrall2 = Rect(-2912.0, -2880.0, -2496.0, -2528.0)
+    gg_rct_Thrall3 = Rect(-2656.0, -1888.0, -2048.0, -1504.0)
+    gg_rct_Thrall4 = Rect(-2464.0, -1568.0, -2336.0, -1376.0)
+    gg_rct_Thrall5 = Rect(-2272.0, -1568.0, -2144.0, -1344.0)
+    gg_rct_Thrall6 = Rect(-2656.0, -1856.0, -1920.0, -960.0)
+    gg_rct_ThrallLanding1 = Rect(-4096.0, -3328.0, -3264.0, -2656.0)
+    gg_rct_ThrallShip1 = Rect(-1184.0, -1824.0, -1088.0, -1728.0)
+    gg_rct_ThrallShip2 = Rect(-1184.0, -2336.0, -1088.0, -2240.0)
+    gg_rct_TombOfSargerasShips = Rect(-18944.0, -31456.0, -16160.0, -28416.0)
     gg_rct_TwistingNether = Rect(-21504.0, 20736.0, -19552.0, 23744.0)
-    gg_rct_Vandermar_Village = Rect(6592.0, 6656.0, 7840.0, 8864.0)
+    gg_rct_VandermarVillage = Rect(6592.0, 6656.0, 7840.0, 8864.0)
     gg_rct_WarsongCamp = Rect(-11072.0, 832.0, -9632.0, 2688.0)
-    gg_rct_West_Thandol = Rect(14880.0, 192.0, 15072.0, 416.0)
-    gg_rct_Winterpspring_Excavation = Rect(-9952.0, 9632.0, -9888.0, 9696.0)
-    gg_rct_Zangarmarsh_Fog_1 = Rect(-5984.0, -26368.0, -3232.0, -24128.0)
-    we = AddWeatherEffect(gg_rct_Zangarmarsh_Fog_1, FourCC("FDbh"))
+    gg_rct_WestThandol = Rect(14880.0, 192.0, 15072.0, 416.0)
+    gg_rct_WinterpspringExcavation = Rect(-9952.0, 9632.0, -9888.0, 9696.0)
+    gg_rct_ZangarmarshFog1 = Rect(-5984.0, -26368.0, -3232.0, -24128.0)
+    we = AddWeatherEffect(gg_rct_ZangarmarshFog1, FourCC("FDbh"))
     EnableWeatherEffect(we, true)
-    gg_rct_Zangarmarsh_Fog_2 = Rect(-3264.0, -26272.0, -800.0, -24768.0)
-    we = AddWeatherEffect(gg_rct_Zangarmarsh_Fog_2, FourCC("FDbh"))
+    gg_rct_ZangarmarshFog2 = Rect(-3264.0, -26272.0, -800.0, -24768.0)
+    we = AddWeatherEffect(gg_rct_ZangarmarshFog2, FourCC("FDbh"))
     EnableWeatherEffect(we, true)
-    gg_rct_Zangarmarsh_Fog_3 = Rect(-2912.0, -26752.0, -832.0, -25120.0)
-    we = AddWeatherEffect(gg_rct_Zangarmarsh_Fog_3, FourCC("FDbh"))
+    gg_rct_ZangarmarshFog3 = Rect(-2912.0, -26752.0, -832.0, -25120.0)
+    we = AddWeatherEffect(gg_rct_ZangarmarshFog3, FourCC("FDbh"))
     EnableWeatherEffect(we, true)
-    gg_rct_ZF_Spawn_1 = Rect(-11968.0, -12928.0, -11616.0, -12768.0)
-    gg_rct_ZF_Spawn_2 = Rect(-11456.0, -12800.0, -11200.0, -12544.0)
+    gg_rct_ZFSpawn1 = Rect(-11968.0, -12928.0, -11616.0, -12768.0)
+    gg_rct_ZFSpawn2 = Rect(-11456.0, -12800.0, -11200.0, -12544.0)
     gg_rct_Zulfarrak = Rect(-12352.0, -14272.0, -10592.0, -12064.0)
-    gg_rct_East_of_Azeroth = Rect(21664.0, -8544.0, 22112.0, -8032.0)
-    gg_rct_West_of_Kalimdor = Rect(-20864.0, 4576.0, -20256.0, 5216.0)
-    gg_rct_ZulAman_trolls = Rect(20192.0, 11360.0, 22848.0, 16064.0)
-    gg_rct_Silvermon_Palace_trolls = Rect(20416.0, 18880.0, 20640.0, 19168.0)
+    gg_rct_EastofAzeroth = Rect(21664.0, -8544.0, 22112.0, -8032.0)
+    gg_rct_WestofKalimdor = Rect(-20864.0, 4576.0, -20256.0, 5216.0)
+    gg_rct_ZulAmantrolls = Rect(20192.0, 11360.0, 22848.0, 16064.0)
+    gg_rct_SilvermonPalacetrolls = Rect(20416.0, 18880.0, 20640.0, 19168.0)
     gg_rct_BloodpactFountain = Rect(-11552.0, 3072.0, -11200.0, 3328.0)
     gg_rct_FTSummon = Rect(-3392.0, 20384.0, -3232.0, 20512.0)
-    gg_rct_Book_Retrieval = Rect(-12000.0, 23616.0, -11616.0, 24064.0)
-    gg_rct_King_Arthas_crown = Rect(8896.0, 8320.0, 9280.0, 8512.0)
-    gg_rct_Drekthars_Spellbook = Rect(-12256.0, 6368.0, -10880.0, 7712.0)
+    gg_rct_BookRetrieval = Rect(-12000.0, 23616.0, -11616.0, 24064.0)
+    gg_rct_KingArthascrown = Rect(8896.0, 8320.0, 9280.0, 8512.0)
+    gg_rct_DrektharsSpellbook = Rect(-12256.0, 6368.0, -10880.0, 7712.0)
     gg_rct_HallofGlory2 = Rect(13600.0, 9472.0, 13792.0, 9568.0)
     gg_rct_HallofGlory3 = Rect(9344.0, 7936.0, 9536.0, 8096.0)
-    gg_rct_Queltalas_2 = Rect(16256.0, 11936.0, 20224.0, 14016.0)
+    gg_rct_Queltalas2 = Rect(16256.0, 11936.0, 20224.0, 14016.0)
     gg_rct_Masteries = Rect(21536.0, 23968.0, 22432.0, 24640.0)
-    gg_rct_Cthun_prevent_1 = Rect(19968.0, 23296.0, 22560.0, 24736.0)
+    gg_rct_Cthunprevent1 = Rect(19968.0, 23296.0, 22560.0, 24736.0)
     gg_rct_AhnQiraj = Rect(-19808.0, -18880.0, -15776.0, -15072.0)
-    gg_rct_Cthun_position = Rect(-18656.0, -23776.0, -18624.0, -23744.0)
-    gg_rct_Sunwell_region = Rect(15456.0, 18816.0, 20768.0, 23168.0)
-    gg_rct_Inner_AhnQiraj = Rect(-19008.0, -26080.0, -18336.0, -25728.0)
-    gg_rct_Outer_AhnQiraj = Rect(-18816.0, -18496.0, -18496.0, -18048.0)
+    gg_rct_Cthunposition = Rect(-18656.0, -23776.0, -18624.0, -23744.0)
+    gg_rct_Sunwellregion = Rect(15456.0, 18816.0, 20768.0, 23168.0)
+    gg_rct_InnerAhnQiraj = Rect(-19008.0, -26080.0, -18336.0, -25728.0)
+    gg_rct_OuterAhnQiraj = Rect(-18816.0, -18496.0, -18496.0, -18048.0)
     gg_rct_InstanceAhnqiraj = Rect(-20000.0, -26144.0, -17344.0, -22848.0)
-    gg_rct_Inner_Teldrassil = Rect(-18848.0, 13280.0, -18528.0, 13568.0)
-    gg_rct_Outer_Teldrassil = Rect(-19616.0, 12800.0, -19392.0, 13024.0)
+    gg_rct_InnerTeldrassil = Rect(-18848.0, 13280.0, -18528.0, 13568.0)
+    gg_rct_OuterTeldrassil = Rect(-19616.0, 12800.0, -19392.0, 13024.0)
     gg_rct_RiseSpawn2 = Rect(12704.0, 17376.0, 14080.0, 18816.0)
     gg_rct_CrossroadsOuter = Rect(-12896.0, -2592.0, -10816.0, -768.0)
-    gg_rct_AzjolNerub_South_Entrance = Rect(-3456.0, 17696.0, -3136.0, 17856.0)
-    gg_rct_AzjolNerub_North_Exit = Rect(-8832.0, -28992.0, -8352.0, -28864.0)
-    gg_rct_Auberdine_Ships_2 = Rect(-16640.0, 7424.0, -9504.0, 11072.0)
-    gg_rct_Auberdine_Ships = Rect(-18272.0, 2848.0, -15936.0, 5312.0)
-    gg_rct_AzjolNerubNorth_entrance = Rect(-5760.0, 23808.0, -5312.0, 24000.0)
-    gg_rct_Auberdine_Ships_2 = Rect(-16640.0, 7424.0, -9504.0, 11072.0)
-    gg_rct_Auberdine_Ships = Rect(-18272.0, 2848.0, -15936.0, 5312.0)
-    gg_rct_Arathi_Ships = Rect(16256.0, 768.0, 17024.0, 1632.0)
-    gg_rct_Alterac_Exca = Rect(11104.0, 5856.0, 11168.0, 5920.0)
+    gg_rct_AzjolNerubSouthEntrance = Rect(-3456.0, 17696.0, -3136.0, 17856.0)
+    gg_rct_AzjolNerubNorthExit = Rect(-8832.0, -28992.0, -8352.0, -28864.0)
+    gg_rct_AzjolNerubNorthentrance = Rect(-5760.0, 23808.0, -5312.0, 24000.0)
+    gg_rct_AlteracExca = Rect(11104.0, 5856.0, 11168.0, 5920.0)
     gg_rct_AstanaarCap = Rect(-17376.0, 1184.0, -15168.0, 2848.0)
-    gg_rct_Arathi_Ships = Rect(16256.0, 768.0, 17024.0, 1632.0)
     gg_rct_Andorhal = Rect(11136.0, 7104.0, 13696.0, 8512.0)
-    gg_rct_Aerie_Peak = Rect(13600.0, 4096.0, 14752.0, 5184.0)
-    gg_rct_Arathi_Ships = Rect(16256.0, 768.0, 17024.0, 1632.0)
     gg_rct_TempestKeep = Rect(-544.0, -23232.0, 5024.0, -17952.0)
     gg_rct_Sunwell = Rect(18208.0, 21376.0, 18912.0, 21984.0)
     gg_rct_InstanceBarrowDeeps = Rect(15712.0, -32128.0, 15840.0, -31904.0)
@@ -8598,23 +8586,19 @@ function CreateRegions()
     gg_rct_InstanceDalaranDungeon1 = Rect(-13792.0, 20256.0, -10944.0, 24096.0)
     gg_rct_InstanceDalaranDungeon2 = Rect(-14176.0, 20192.0, -13792.0, 22176.0)
     gg_rct_InstanceDalaranDungeon3 = Rect(-14432.0, 20544.0, -14112.0, 20928.0)
-    gg_rct_Tempest_Keep_Evacuate = Rect(-3200.0, -21888.0, -2336.0, -21024.0)
+    gg_rct_TempestKeepEvacuate = Rect(-3200.0, -21888.0, -2336.0, -21024.0)
     gg_rct_Gazlower = Rect(-8032.0, -4672.0, -7968.0, -4576.0)
     gg_rct_Varok = Rect(-8064.0, 96.0, -7968.0, 224.0)
-    gg_rct_Region_077 = Rect(4640.0, 16832.0, 7200.0, 17504.0)
-    we = AddWeatherEffect(gg_rct_Region_077, FourCC("SNls"))
-    EnableWeatherEffect(we, true)
     gg_rct_Twilight_highland_portal = Rect(19200.0, -512.0, 19520.0, -160.0)
     gg_rct_Mannoroth = Rect(-10592.0, -9472.0, -10176.0, -9024.0)
     gg_rct_Jergosh = Rect(-11360.0, -9024.0, -11200.0, -8864.0)
-    gg_rct_Dark_Portal_Exit_2 = Rect(4032.0, -25088.0, 4416.0, -24704.0)
-    gg_rct_Dark_Portal_Exit_3 = Rect(4864.0, -26304.0, 5248.0, -25920.0)
-    gg_rct_Dark_Portal_Entrance_2 = Rect(17600.0, -19232.0, 18016.0, -18912.0)
-    gg_rct_Dark_Portal_Entrance_3 = Rect(15232.0, -19392.0, 15648.0, -19072.0)
+    gg_rct_DarkPortalExit2 = Rect(4032.0, -25088.0, 4416.0, -24704.0)
+    gg_rct_DarkPortalExit3 = Rect(4864.0, -26304.0, 5248.0, -25920.0)
+    gg_rct_DarkPortalEntrance2 = Rect(17600.0, -19232.0, 18016.0, -18912.0)
+    gg_rct_DarkPortalEntrance3 = Rect(15232.0, -19392.0, 15648.0, -19072.0)
     gg_rct_Chen = Rect(-9536.0, -2848.0, -9088.0, -2176.0)
-    gg_rct_QuelDanil_Lodge = Rect(15360.0, 4352.0, 16160.0, 5152.0)
+    gg_rct_QuelDanilLodge = Rect(15360.0, 4352.0, 16160.0, 5152.0)
     gg_rct_HighBourne = Rect(-17536.0, 22272.0, -16448.0, 23584.0)
-    gg_rct_YoggUnit1 = Rect(-160.0, 23200.0, 288.0, 23488.0)
     gg_rct_Andrassil = Rect(4992.0, 18400.0, 5440.0, 18816.0)
     gg_rct_EvilIllidanSpawn = Rect(2816.0, -20480.0, 3072.0, -20224.0)
     gg_rct_VaultoftheWardens = Rect(-1152.0, 6784.0, -832.0, 7104.0)
@@ -8623,18 +8607,18 @@ function CreateRegions()
     we = AddWeatherEffect(gg_rct_Tol_Barad_Mist, FourCC("FDgh"))
     EnableWeatherEffect(we, true)
     gg_rct_Terrordale = Rect(14656.0, 10336.0, 15968.0, 10880.0)
-    gg_rct_Dreadscar_1 = Rect(18080.0, 12256.0, 18784.0, 14688.0)
+    gg_rct_Dreadscar1 = Rect(18080.0, 12256.0, 18784.0, 14688.0)
     gg_rct_Deemspring = Rect(17408.0, 18016.0, 17536.0, 18144.0)
-    gg_rct_Dreadscar_3 = Rect(18304.0, 19424.0, 18816.0, 21408.0)
+    gg_rct_Dreadscar3 = Rect(18304.0, 19424.0, 18816.0, 21408.0)
     gg_rct_chaosmod2 = Rect(20448.0, -31968.0, 22560.0, -28512.0)
-    gg_rct_Scholo_Ships = Rect(-21344.0, 17280.0, -18976.0, 20032.0)
+    gg_rct_ScholoShips = Rect(-21344.0, 17280.0, -18976.0, 20032.0)
     gg_rct_DalaCutscene1 = Rect(9600.0, 3488.0, 9664.0, 3552.0)
-    gg_rct_Dreadscar_2 = Rect(17856.0, 15392.0, 19008.0, 17376.0)
+    gg_rct_Dreadscar2 = Rect(17856.0, 15392.0, 19008.0, 17376.0)
     gg_rct_DalaCutscene2 = Rect(9664.0, 3232.0, 9728.0, 3296.0)
     gg_rct_DalaCutscene3 = Rect(9760.0, 3328.0, 9824.0, 3392.0)
     gg_rct_DalaCutscene4 = Rect(9504.0, 3072.0, 9568.0, 3136.0)
-    gg_rct_DalaCutscene4_Copy = Rect(9376.0, 3072.0, 9440.0, 3136.0)
-    gg_rct_DalaCutscene4_Copy_2 = Rect(9472.0, 2976.0, 9536.0, 3040.0)
+    gg_rct_DalaCutscene4Copy = Rect(9376.0, 3072.0, 9440.0, 3136.0)
+    gg_rct_DalaCutscene4Copy2 = Rect(9472.0, 2976.0, 9536.0, 3040.0)
     gg_rct_Lord1 = Rect(12064.0, 8672.0, 12128.0, 8736.0)
     gg_rct_Lord2 = Rect(11904.0, 8736.0, 11968.0, 8800.0)
     gg_rct_Lord3 = Rect(12608.0, 8608.0, 12672.0, 8672.0)
@@ -8656,8 +8640,8 @@ function CreateRegions()
     gg_rct_Sent3 = Rect(-16768.0, 9856.0, -16704.0, 9920.0)
     gg_rct_Sent4 = Rect(-17152.0, 9440.0, -17088.0, 9504.0)
     gg_rct_Sent5 = Rect(-17344.0, 8448.0, -17280.0, 8512.0)
-    gg_rct_Sent_6 = Rect(-17184.0, 8960.0, -17120.0, 9024.0)
-    gg_rct_Sent_7 = Rect(-17088.0, 8928.0, -17024.0, 8992.0)
+    gg_rct_Sent6 = Rect(-17184.0, 8960.0, -17120.0, 9024.0)
+    gg_rct_Sent7 = Rect(-17088.0, 8928.0, -17024.0, 8992.0)
     gg_rct_Sent8 = Rect(-20448.0, -8704.0, -20384.0, -8640.0)
     gg_rct_Sent9 = Rect(-16928.0, 9504.0, -16864.0, 9568.0)
     gg_rct_Sent10 = Rect(-20192.0, -8928.0, -20128.0, -8864.0)
@@ -8702,9 +8686,9 @@ function CreateRegions()
     gg_rct_Druid4 = Rect(-13088.0, 3264.0, -13024.0, 3328.0)
     gg_rct_Druid5 = Rect(-13824.0, 3872.0, -13760.0, 3936.0)
     gg_rct_Sent11 = Rect(-17664.0, -13408.0, -17600.0, -13344.0)
-    gg_rct_Sent_12 = Rect(-17120.0, 9120.0, -17056.0, 9184.0)
+    gg_rct_Sent12 = Rect(-17120.0, 9120.0, -17056.0, 9184.0)
     gg_rct_MoongladeVillage = Rect(-14592.0, 10048.0, -12288.0, 12192.0)
-    gg_rct_Dwarf_group_1 = Rect(11712.0, -3520.0, 12096.0, -2912.0)
+    gg_rct_Dwarfgroup1 = Rect(11712.0, -3520.0, 12096.0, -2912.0)
     gg_rct_GrizzlyHills = Rect(3456.0, 17184.0, 5952.0, 19232.0)
 end
 
