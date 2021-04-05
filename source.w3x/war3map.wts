@@ -12,22 +12,24 @@ Jaina Proudmoore
 
 STRING 2
 {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+Azeroth Wars Reforged 1.16
 }
 
 STRING 3
 {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+12 players
 }
 
 STRING 4
 {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+This map always uses Classic graphics.
+
+Check out the Azeroth Wars Discord server to download the map and chat about the game. https://discord.gg/pnWZs69
 }
 
 STRING 5
 {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+Sebas, Yak, Dave, Rich
 }
 
 STRING 6
@@ -44,1305 +46,99 @@ Revive Daughter of the Sea
 
 STRING 8
 {
-Available commands: 
- -income
- -invite [faction name]
- -join [team name]
- -uninvite [faction name]
- -unally
- -share [faction name]
+Azeroth Wars Reforged 1.16
 }
 
 STRING 9
 {
-The Mages of Dalaran have begun building a Titan.
-}
+Fight over the control of Azeroth as one of over 12 factions from the Warcraft III campaign.
 
-STRING 10
-{
-You can now build a new building: The Kul Tiras Barrack, to train elite fighting units.
-}
-
-STRING 11
-{
-The Mages of Dalaran have completed their Titan.
-}
-
-STRING 12
-{
-The Mages of Dalaran have begun building a Titan.
-}
-
-STRING 13
-{
-You can now build a new building: The Kul Tiras Barrack, to train elite fighting units.
-}
-
-STRING 14
-{
-The Mages of Dalaran have completed their Titan.
-}
-
-STRING 15
-{
-Legion Summon
-}
-
-STRING 16
-{
-The Burning Legion is being summoned!
-}
-
-STRING 17
-{
-The last Elven Runestone has been destroyed. Dark times have fallen over Quel'thalas.
-
-Silvermoon is now vulnerable.
-}
-
-STRING 18
-{
-The Obelisks which shielded and stood watch over Icecrown have been destroyed.
-
-The Frozen Throne is now vulnerable.
-}
-
-STRING 19
-{
-Commands
-}
-
-STRING 20
-{
-General:
--info for useful commands
--obs makes you into an observer
-Camera:
--reset sets the camera at default height.
--mid/(-med) sets the camera to a height slightly below default.
--far sets the camera  to a height slightly above default.
-}
-
-STRING 21
-{
-Discord
-}
-
-STRING 22
-{
-Please visit our Discord at: https://discord.gg/4eGZn
-And our website at: https://www.diplomunion.com/awlr
-}
-
-STRING 23
-{
-Credits
-}
-
-STRING 24
-{
-|cffffcc00Azeroth Wars Reforged|r
-}
-
-STRING 25
-{
-|cffaaaaaaJoin our Discord:|r discord.gg/pnWZs69
+Edited by YakaryBovine, Lordebas, DaveRolf, and Richardik
+Discord link: https://discord.gg/4eGZnR5
 }
 
 STRING 26
+// Units: h050 (Horizontal Wooden Gate), Ubertip (Tooltip - Extended)
 {
  
 }
 
-STRING 27
-{
-To the West of Kalimdor
-}
-
-STRING 28
-{
-To the East of Azeroth
-}
-
-STRING 29
-{
-The Tomb of Sargeras is now accessible, unlock it with a lvl 10 or more hero.
-
-}
-
-STRING 30
-{
-Book of Medivh has been retrieved from its pedestal.
-
-}
-
-STRING 31
-{
-Book of Medivh has been retrieved from its pedestal.
-
-}
-
-STRING 32
-{
-The Tomb of Sargeras has been opened.
-
-}
-
-STRING 33
-{
-Engineers started their repairs on the Thandol Span bridge.
-}
-
-STRING 34
-{
-Thandol Span bridge is once again functional and has been reinforced making it impossible to destroy the bridge again.
-}
-
-STRING 35
-{
-|cffD27575CHEAT:|r Cinematics being skipped.
-}
-
-STRING 36
-{
-Tichondrius
-}
-
-STRING 37
-// Sound/Dialogue/UndeadCampaign/Undead05A/U05ATichondrius01.flac
-{
-You've done well... so far. But the true test still lies before you.
-}
-
 STRING 38
+// Units: U00A (Scourge Commander), Propernames (Proper Names)
 {
 Baron Rivendare
-}
-
-STRING 39
-// Sound/Dialogue/UndeadCampaign/Undead05A/U05AArthas02.flac
-{
-I was wondering when you'd show up.
-}
-
-STRING 40
-{
-Tichondrius
-}
-
-STRING 41
-// Sound/Dialogue/UndeadCampaign/Undead05A/U05ATichondrius03.flac
-{
-I am here to ensure that you do your job, little human. Not do it for you.
-}
-
-STRING 42
-{
-Baron Rivendare
-}
-
-STRING 43
-// Sound/Dialogue/UndeadCampaign/Undead05A/U05AArthas06.flac
-{
-Do you think that he suspects that you've been aiding me, necromancer?
-}
-
-STRING 44
-{
-Acolyte
-}
-
-STRING 45
-// war3mapImported/U05AKelThuzad07XX.mp3
-{
-I'm sure he suspects quite a bit.
-}
-
-STRING 46
-{
-Kel'thuzad
-}
-
-STRING 47
-// Units/Undead/KelThuzadLich/KelThuzadYes4.flac
-{
-Indeed.
-}
-
-STRING 48
-{
-Kel'thuzad
-}
-
-STRING 49
-// Sound/Dialogue/UndeadCampaign/Undead05BInterlude/U05BKelThuzad35.flac
-{
-They are agents of the ones who created our master: the fiery lords of the Burning Legion.
-}
-
-STRING 50
-{
-Kel'thuzad
-}
-
-STRING 51
-// war3mapImported/U06KelThuzad02XX3.mp3
-{
-The first phase of the Lich King's plan is to engineer the Scourge, which would eradicate any group that might resist the Legion's arrival.
-}
-
-STRING 52
-{
-Kel'thuzad
-}
-
-STRING 53
-// war3mapImported/U06KelThuzad04X.mp3
-{
-The second phase is to actually summon the demon lord who will spark the invasion.
-}
-
-STRING 54
-{
-Kel'thuzad
-}
-
-STRING 55
-// war3mapImported/U05BKelThuzad39XX.mp3
-{
-Now come, we have much work to do.
 }
 
 STRING 56
+// Units: Ubal (Envoy of Archimonde), Propernames (Proper Names)
 {
 Anetheron
-}
-
-STRING 57
-// Sound/Dialogue/UndeadCampaign/Undead02Interlude/U02DreadlordA32.flac
-{
-Is everything proceeding as planned, Tichondrius? Lord Archimonde demands a report on the Scourge.
-}
-
-STRING 58
-{
-Tichondrius
-}
-
-STRING 59
-// Sound/Dialogue/UndeadCampaign/Undead02Interlude/U02Tichondrius36.flac
-{
-Believe me, brother. Neither the Lich King nor his undead lackeys will jeopardize the Legion's return!
 }
 
 STRING 60
+// Units: U00L (Envoy of Archimonde), Propernames (Proper Names)
 {
 Anetheron
 }
 
-STRING 61
-// Sound/Dialogue/UndeadCampaign/Undead02Interlude/U02DreadlordA37.flac
-{
-See that they do not. Lord Archimonde has little patience for failure.
-}
-
-STRING 62
-{
-Archimonde
-}
-
-STRING 63
-// Sound/Dialogue/UndeadCampaign/Undead06/U06Archimonde26.flac
-{
-Seek out the mortal city of Dalaran. It is there that the tome is kept. At twilight, three days from now, you will begin the summoning.
-}
-
-STRING 64
-{
-Mal'ganis
-}
-
-STRING 65
-// Units/Undead/HeroDreadLord/HeroDreadlordYes1.flac
-{
-That was my plan.
-}
-
-STRING 66
-{
-Rend
-
-}
-
-STRING 67
-// Sound/Dialogue/HumanCampaign/Human02/H02Blademaster11.flac
-{
-Paladin fool! The warlocks of the Blackrock clan have spoken! Soon, demons will rain from the sky, and this wretched world will burn!
-}
-
-STRING 68
-{
-Rend
-
-}
-
-STRING 69
-// Units/Orc/HeroBladeMaster/HeroBladeMasterWarcry1.flac
-{
-For the Burning Blade!
-}
-
 STRING 70
+// Units: nchg (Fel Grunt), Name (Name)
 {
 Fel Grunt
 }
 
-STRING 71
-// Sound/Dialogue/TutorialCampaign/Demo03/D03Grunt17.flac
-{
-Warchief, one of the humans escaped!
-}
-
 STRING 72
+// Units: owar (Bonebreaker), Name (Name)
 {
 Bonebreaker
-}
-
-STRING 73
-// Units/Orc/Hellscream/GromYesAttack3.flac
-{
-Weak-minded coward!
-}
-
-STRING 74
-{
-Bonebreaker
-}
-
-STRING 75
-// Sound/Dialogue/OrcCampaign/Orc03/O03Grom14.flac
-{
-I can wait no longer. The humans must be slaughtered!
 }
 
 STRING 76
+// Units: h01B (Outrider), Name (Name)
 {
 Outrider
 }
 
-STRING 77
-// Units/Human/Knight/KnightYesAttack1.flac
-{
-For the King!
-}
-
-STRING 78
-{
-Warlock
-}
-
-STRING 79
-// Sound/Dialogue/HumanExpCamp/Human07x/A07OrcWarlock01.flac
-{
-Our enemies draw near, Lord Magtheridon.
-}
-
-STRING 80
-{
-Magtheridon
-}
-
-STRING 81
-// Sound/Dialogue/HumanExpCamp/Human07x/A07Magtheridon02.flac
-{
-These upstarts are tiresome gnats, nothing more. The might of Magtheridon cannot be denied! I am the Lord of Outland! Those who dispute my rule will soon regret their folly.
-}
-
-STRING 82
-{
-Uther
-}
-
-STRING 83
-// Sound/Dialogue/HumanCampaign/Human01/H01Uther01.flac
-{
-Welcome, Prince Arthas. The men and I are honored by your presence.
-}
-
-STRING 84
-{
-Arthas
-}
-
-STRING 85
-// Sound/Dialogue/HumanCampaign/Human01/H01Arthas02.flac
-{
-Can the formalities, Uther. I'm not king yet. It's good to see you.
-}
-
-STRING 86
-{
-Uther
-}
-
-STRING 87
-// Sound/Dialogue/HumanCampaign/Human01/H01Uther03.flac
-{
-You too, lad. I'm pleased that King Terenas sent you to help me.
-}
-
-STRING 88
-{
-Arthas
-}
-
-STRING 89
-// Sound/Dialogue/HumanCampaign/Human01/H01Arthas06.flac
-{
-Look, here's where we stand. Our scouts have confirmed that there is an orc encampment hidden somewhere over the next ridge.
-}
-
-STRING 90
-{
-Uther
-}
-
-STRING 91
-// Sound/Dialogue/HumanCampaign/Human01/H01Uther07.flac
-{
-As I suspected...
-}
-
-STRING 92
-{
-Arthas
-}
-
-STRING 93
-// Sound/Dialogue/HumanCampaign/Human01/H01Arthas08.flac
-{
-It gets worse. They're preparing to attack the nearby village of Strahnbrad. As far as we know, the village is completely defenseless.
-}
-
-STRING 94
-{
-Uther
-}
-
-STRING 95
-// Sound/Dialogue/HumanCampaign/Human02/H02Uther02.flac
-{
-Damn. These orcs will never surrender.
-}
-
-STRING 96
-{
-Uther
-}
-
-STRING 97
-// Sound/Dialogue/HumanCampaign/Human02/H02Uther06.flac
-{
-Now, if you're feeling up to it, I want you to lead the attack.
-}
-
-STRING 98
-{
-Arthas
-}
-
-STRING 99
-// Sound/Dialogue/HumanCampaign/Human02/H02Arthas07.flac
-{
-Me? Well, of course!
-}
-
-STRING 100
-{
-Arthas
-}
-
-STRING 101
-// Sound/Dialogue/HumanCampaign/Human02/H02Arthas09.flac
-{
-I won't fail you.
-}
-
-STRING 102
-{
-Uther
-}
-
-STRING 103
-// Sound/Dialogue/HumanCampaign/Human02/H02Uther10.flac
-{
-I know you won't, lad.
-}
-
-STRING 104
-{
-Rifleman
-}
-
-STRING 105
-// Sound/Dialogue/UndeadExpCamp/Undead06x/L06Rifleman21.flac
-{
-They don't pay us enough to put up with that asshole.
-}
-
-STRING 106
-{
-Muradin
-}
-
-STRING 107
-// Units/Human/Muradin/MuradinWhat1.flac
-{
-What's happening?
-}
-
 STRING 108
+// Units: h018 (Defender), Name (Name)
 {
 Defender
-}
-
-STRING 109
-// Sound/Dialogue/HumanCampaign/Human02/H02DwarfScout16.flac
-{
-We're hunting black drakes. It's said that drake's blood can bestow fiery enchantements upon weapons.
-}
-
-STRING 110
-{
-Rifleman
-}
-
-STRING 111
-// Units/Human/Rifleman/RiflemanWhat4.flac
-{
-What do you need?
-}
-
-STRING 112
-{
-Expedition Leader
-}
-
-STRING 113
-// Sound/Dialogue/HumanCampaign/Human07/H07Muradin15.flac
-{
-Just the same, lad. I could use your help. My mates and I were attacked, and we got separated. I'd appreciate any backup you could give me.
-}
-
-STRING 114
-{
-Muradin
-}
-
-STRING 115
-// Sound/Dialogue/HumanCampaign/Human09/H09Muradin06.flac
-{
-I have a bad feeling about this, lad. But I promised I'd see this through.
-}
-
-STRING 116
-{
-Muradin
-}
-
-STRING 117
-// Units/Human/Muradin/MuradinWhat4.flac
-{
-Let's get moving!
-}
-
-STRING 118
-{
-Rifleman
-}
-
-STRING 119
-// Units/Human/Rifleman/RiflemanWhat1.flac
-{
-Aye sir!
-}
-
-STRING 120
-{
-Muradin
-}
-
-STRING 121
-// Units/Human/Muradin/MuradinYesAttack1.flac
-{
-For Khaz Modan!
-}
-
-STRING 122
-{
-Defender
-}
-
-STRING 123
-// Sound/Dialogue/UndeadExpCamp/Undead07Ax/L07AAxeman19.flac
-{
-For Khaz Modan!
-}
-
-STRING 124
-{
-Jaina
-}
-
-STRING 125
-// Sound/Dialogue/HumanCampaign/Human02Interlude/H02Jaina34.flac
-{
-I've heard the rumors of the plague spreading throughout the northlands. Do you truly believe that the plague is magical in nature?
-}
-
-STRING 126
-{
-Antonidas
-}
-
-STRING 127
-// Sound/Dialogue/HumanCampaign/Human02Interlude/H02Antonidas35.flac
-{
-It's a strong possibility. That’s why I need you to travel there and investigate the matter. I’ve arranged for a special envoy to assist you.
-}
-
-STRING 128
-{
-Jaina
-}
-
-STRING 129
-// Sound/Dialogue/HumanCampaign/Human02Interlude/H02Jaina36.flac
-{
-Yes, master. I'll do my best
-}
-
-STRING 130
-{
-Jaina
-}
-
-STRING 131
-// Sound/Dialogue/HumanCampaign/Human03/H03Jaina09.flac
-{
-Our sources believe the plague originated in the region north of here. We should check out the villages along the King's Road.
-}
-
-STRING 132
-{
-Jaina
-}
-
-STRING 133
-// Sound/Dialogue/OrcExpCamp/OrcQuest13x/D13Jaina03.flac
-{
-Well. We won't find any answers waiting around here, let's move.
 }
 
 STRING 134
+// Units: h032 (Battlemage), Name (Name)
 {
 Battlemage
 }
 
-STRING 135
-// Units/Human/Priest/PriestYes3.flac
-{
-As you wish
-}
-
-STRING 136
-{
-Shadow Priest
-}
-
-STRING 137
-// Sound/Dialogue/OrcCampaign/Orc05/O05WitchDoctor19.flac
-{
-That be it, mon! The dark energies that I sense come from the pool!
-}
-
 STRING 138
+// Units: O00O (Chieftan of the Amani Tribe), Propernames (Proper Names)
 {
 Zul'jin
 }
 
-STRING 139
-// Sound/Dialogue/TutorialCampaign/Demo03/D03WitchDoctor12.flac
-{
-Yes! They hound us day and night! Their patrols be all over the place. It not be long 'til they find you too!
-}
-
-STRING 140
-{
-Forest Troll
-}
-
-STRING 141
-// Units/Creeps/ForestTroll/ForestTrollWhat1.flac
-{
-Washu wha?
-}
-
-STRING 142
-{
-Sylvanas
-}
-
-STRING 143
-// Sound/Dialogue/UndeadCampaign/Undead03A/U03ASylvanas12.flac
-{
-You are not welcome here. I am Sylvanas Windrunner, Ranger-General of Silvermoon. I advise you to turn back now.
-}
-
-STRING 144
-{
-Anasterian
-}
-
-STRING 145
-// war3mapImported/U03BPriest07XX.mp3
-{
-You will never enter Quel'Thalas. The woods themselves protect our borders, and the enchanted elfgates protect our capital.
-}
-
-STRING 146
-{
-Forest Troll
-}
-
-STRING 147
-// Units/Creeps/IceTroll/IceTrollWhat4.flac
-{
-Bring it on.
-}
-
-STRING 148
-{
-Sylvanas
-}
-
-STRING 149
-// Sound/Dialogue/UndeadCampaign/Undead03B/U03BSylvanas14.flac
-{
-Do your worst. The elfgate to the inner kingdom is protected by our most powerful enchantments. You shall not pass.
-}
-
-STRING 150
-{
-Forest Troll Trapper
-}
-
-STRING 151
-// Units/Creeps/ForestTroll/ForestTrollWarcry1.flac
-{
-I kill you!
-}
-
-STRING 152
-{
-Sylvanas
-}
-
-STRING 153
-// Sound/Dialogue/UndeadCampaign/Undead04A/U04ASylvanas03.flac
-{
-Fall back to the trees!
-}
-
-STRING 154
-{
-Forest Troll
-}
-
-STRING 155
-// Units/Creeps/ForestTroll/ForestTrollYesAttack2.flac
-{
-RAWR!
-}
-
-STRING 156
-{
-Sylvanas
-}
-
-STRING 157
-// Sound/Dialogue/UndeadCampaign/Undead04A/U04ASylvanas05.flac
-{
-You think that I'm running from you? Apparently you've never fought elves before.
-}
-
-STRING 158
-{
-Thrall
-}
-
-STRING 159
-// Sound/Dialogue/TutorialCampaign/Demo03/D03Thrall01.flac
-{
-It was lucky we happened onto this cove. I don't think our ships would have held out much longer in that storm.
-}
-
-STRING 160
-{
-Thrall
-}
-
-STRING 161
-// Sound/Dialogue/TutorialCampaign/Demo04/D04Thrall01.flac
-{
-I wonder what these strange fish-creatures want with us?
-}
-
 STRING 162
+// Units: Orkn (Chieftain of the Darkspear Tribe), Propernames (Proper Names)
 {
 Vol'jin
-}
-
-STRING 163
-// Sound/Dialogue/TutorialCampaign/Demo04/D04Troll02.flac
-{
-The murlocs used to be peaceful, but lately they been catchin' us and usin' us for sacrifices.
-}
-
-STRING 164
-{
-Thrall
-}
-
-STRING 165
-// Sound/Dialogue/TutorialCampaign/Demo04/D04Thrall03.flac
-{
-Sacrifices? To what?
-}
-
-STRING 166
-{
-Vol'jin
-}
-
-STRING 167
-// Sound/Dialogue/TutorialCampaign/Demo04/D04Troll04.flac
-{
-A long time ago they started worshipin' some witch. They say she lives under the ocean, and if they don't make the sacrifices, she'll destroy this island.
 }
 
 STRING 168
+// Units: O02L (Sea Witch), Name (Name)
 {
 Sea Witch
 }
 
-STRING 169
-// Sound/Dialogue/TutorialCampaign/Demo05/D05SeaWitch01.flac
-{
-Land-dwellers! You have slaughtered my minions and defiled my sanctuary! Now, you will be drowned by the wrath of the tides!
-}
-
-STRING 170
-{
-Thrall
-}
-
-STRING 171
-// Sound/Dialogue/TutorialCampaign/Demo05/D05Thrall02.flac
-{
-You'll have no more sacrifices today, witch! Go back to the depths where you belong!
-}
-
-STRING 172
-{
-Grunt
-}
-
-STRING 173
-// Sound/Dialogue/OrcCampaign/Orc01/O01Grunt01.flac
-{
-Warchief, our ship sustained heavy damage when we passed through the raging maelstrom. It's unsalvageable.
-}
-
-STRING 174
-{
-Grom
-}
-
-STRING 175
-// Sound/Dialogue/OrcCampaign/Orc04/O04Grom01.flac
-{
-Damn Thrall for sending us away! He chooses to use his greatest warriors for manual labor? He'll be lost without me.
-}
-
-STRING 176
-{
-Stupid Grunt
-}
-
-STRING 177
-// Sound/Dialogue/OrcCampaign/Orc01/O01Grunt05.flac
-{
-No, Warchief. Not since we got separated.
-}
-
-STRING 178
-{
-Grom
-}
-
-STRING 179
-// Sound/Dialogue/OrcCampaign/Orc04/O04Grom07.flac
-{
-Still your tongue and get to work! The warchief's new settlement will require a great deal of lumber. This section of forest must be cleared!
-}
-
-STRING 180
-{
-Grunt
-}
-
-STRING 181
-// Sound/Dialogue/OrcCampaign/Orc04/O04WarsongOrc02.flac
-{
-Chieftain, there's something strange about these woods. It's too... quiet. Almost like we're being watched.
-}
-
-STRING 182
-{
-Grom
-}
-
-STRING 183
-// Sound/Dialogue/OrcCampaign/Orc04/O04Grom03.flac
-{
-Are you all afraid of spirits now? There is nothing here but ancient trees and shadow.
-}
-
-STRING 184
-{
-Stupid Grunt
-}
-
-STRING 185
-// Sound/Dialogue/TutorialCampaign/Tutorial02/T02Grunt004.flac
-{
-Yes, Warchief.
-}
-
-STRING 186
-{
-Raider
-}
-
-STRING 187
-// Sound/Dialogue/HumanCampaign/Human01/H01Grunt21.flac
-{
-Move 'em out!
-}
-
-STRING 188
-{
-Shandris
-}
-
-STRING 189
-// Sound/Dialogue/NightElfCampaign/NightElf01/N01Shandris01.flac
-{
-Pardon, Priestess, but you've been staring out across Ashenvale for hours.
-}
-
-STRING 190
-{
-Tyrande
-}
-
-STRING 191
-// Sound/Dialogue/NightElfCampaign/NightElf01/N01Tyrande02.flac
-{
-I sense something dark stirring within the forests, Shandris. It feels as if it's heading this way.
-}
-
-STRING 192
-{
-Maiev
-}
-
-STRING 193
-// war3mapImported/S05Maiev24.mp3
-{
-Priestess Tyrande, I'm surprised you came in person.
-}
-
-STRING 194
-{
-Maiev
-}
-
-STRING 195
-// Sound/Dialogue/NightElfExpCamp/NightElf01x/S01Maiev04.flac
-{
-You Watchers split up into two parties. Scour the woods. Find what you can. We'll meet you further up the coast.
-}
-
-STRING 196
-{
-Archer
-}
-
-STRING 197
-// Sound/Dialogue/NightElfExpCamp/NightElf01x/S01WatcherOne05.flac
-{
-Yes, mistress.
-}
-
-STRING 198
-{
-Maiev
-}
-
-STRING 199
-// Sound/Dialogue/NightElfExpCamp/NightElf01x/S01Maiev07.flac
-{
-The rest of you, follow me.
-}
-
-STRING 200
-{
-Archer
-}
-
-STRING 201
-// Sound/Dialogue/NightElfExpCamp/NightElf01x/S01WatcherOne20.flac
-{
-Mistress Shadowsong! We're lucky to have found you!
-}
-
-STRING 202
-{
-Maiev
-}
-
-STRING 203
-// Sound/Dialogue/NightElfExpCamp/NightElf01x/S01Maiev21.flac
-{
-Report!
-}
-
-STRING 204
-{
-Huntress
-}
-
-STRING 205
-// war3mapImported/O04Huntress09.mp3
-{
-You were right, sisters. These green-skinned brutes have no respect for life! 
-}
-
-STRING 206
-{
-Maiev
-}
-
-STRING 207
-// Sound/Dialogue/NightElfExpCamp/NightElf04xInterlude/S04Tyrande31.flac
-{
-I will go. I will lead the Sentinels there myself.
-}
-
-STRING 208
-{
-Warlock
-}
-
-STRING 209
-// Sound/Dialogue/HumanCampaign/Human02/H02Warlock22.flac
-{
-The hour of doom approaches! Let this paltry sacrifice appease our demon masters!
-}
-
 STRING 210
+// Units: h05S (Brigadier), Name (Name)
 {
 Brigadier
 }
 
-STRING 211
-// Sound/Dialogue/HumanCampaign/Human02/H02Footman23.flac
-{
-You sick bastards! You'll never get away with--
-}
-
 STRING 212
+// Abilities: AEst (Scout), Tip (Tooltip - Normal)
 {
 Scout
-}
-
-STRING 213
-// Sound/Dialogue/OrcExpCamp/OrcQuest06Ax/D06AFootman06.flac
-{
-Look, more orcs! Our intelligence was right. We'd best head back to base and report!
-}
-
-STRING 214
-{
-Marshall
-}
-
-STRING 215
-// war3mapImported/H02Arthas26X.mp3
-{
-The orcs were sacrificing townsfolk. I think they were trying to summon demons.
-}
-
-STRING 216
-{
-Varian
-}
-
-STRING 217
-// war3mapImported/VarianWrynnDialogue01.mp3
-{
-Open your eyes! Look at what they have done to our kingdom!
-}
-
-STRING 218
-{
-Varian
-}
-
-STRING 219
-// war3mapImported/VarianWrynnDialogue02.mp3
-{
-How much longer will we allow these savages free reign in our world?
-}
-
-STRING 220
-{
-Varian
-}
-
-STRING 221
-// war3mapImported/VarianWrynnDialogue03.mp3
-{
-I have seen the Horde's world. I have been inside their cities. Inside their minds...
-}
-
-STRING 222
-{
-Varian
-}
-
-STRING 223
-// war3mapImported/VarianWrynnDialogue04.mp3
-{
-I know what evil lies in the hearts of orcs. It ends now.
-}
-
-STRING 224
-{
-Varian
-}
-
-STRING 225
-// war3mapImported/VarianWrynnDialogue05.mp3
-{
-FOR STORMWIND! FOR THE ALLIANCE!
-}
-
-STRING 226
-{
-Fandral
-}
-
-STRING 227
-// Sound/Dialogue/NightElfCampaign/NightElf04/N04Furion32.flac
-{
-Ishnu-alah, my brethren. Kalimdor has need of your powers once again, for the hour of doom is at hand.
-}
-
-STRING 228
-{
-Cenarius
-}
-
-STRING 229
-// Sound/Dialogue/OrcCampaign/Orc05/O05Cenarius01.flac
-{
-Who dares defile this ancient land? Who dares the wrath of Cenarius and the night elves?
-}
-
-STRING 230
-{
-Fandral
-}
-
-STRING 231
-// Sound/Dialogue/NightElfExpCamp/NightElf05x/S05Furion07.flac
-{
-I don't know, but these creatures feel familiar somehow.
-}
-
-STRING 232
-{
-Cenarius
-}
-
-STRING 233
-// Sound/Dialogue/OrcCampaign/Orc05/O05Cenarius03.flac
-{
-Let battle be joined!
-}
-
-STRING 234
-{
-Dryad
-}
-
-STRING 235
-// Sound/Dialogue/NightElfCampaign/NightElf04/N04Tyrande10.flac
-{
-No! The outpost has been corrupted, and the treants have been driven mad! They do not deserve this cruel fate!
-}
-
-STRING 236
-{
-Druid of the Branch
-}
-
-STRING 237
-// Sound/Dialogue/NightElfCampaign/NightElf05/N05Tyrande18.flac
-{
-What would you have us do
-}
-
-STRING 238
-{
-Dryad
-}
-
-STRING 239
-// war3mapImported/N03Tyrande01X.mp3
-{
-It falls to us to awaken the druids. We must recover the demigod's horn from the sacred Moonglade Isle. Only its clarion call can awaken the druids from their slumber
-}
-
-STRING 240
-{
-You are an observer, you can't chat but your commands will register.
-
-}
-
-STRING 241
-{
-You are an observer, you can't chat but your commands will register.
-
-}
-
-STRING 242
-{
-You are an observer, you can't chat but your commands will register.
-
 }
 
 STRING 243
@@ -2158,12 +954,6 @@ STRING 381
 // Units: owar (Bonebreaker), Hotkey (Hotkey)
 {
 W
-}
-
-STRING 382
-// Units: owar (Bonebreaker), Name (Name)
-{
-Bonebreaker
 }
 
 STRING 383
@@ -5172,12 +3962,6 @@ STRING 883
 Q
 }
 
-STRING 884
-// Units: nchg (Fel Grunt), Name (Name)
-{
-Fel Grunt
-}
-
 STRING 885
 // Units: nchg (Fel Grunt), Tip (Tooltip - Basic)
 {
@@ -7062,12 +5846,6 @@ STRING 1197
 Envoy of Archimonde
 }
 
-STRING 1198
-// Units: Ubal (Envoy of Archimonde), Propernames (Proper Names)
-{
-Anetheron
-}
-
 STRING 1199
 // Units: Uanb (King of Azjol-Nerub), EditorSuffix (Name - Editor Suffix)
 {
@@ -7210,12 +5988,6 @@ STRING 1222
 // Units: Orkn (Chieftain of the Darkspear Tribe), Name (Name)
 {
 Chieftain of the Darkspear Tribe
-}
-
-STRING 1223
-// Units: Orkn (Chieftain of the Darkspear Tribe), Propernames (Proper Names)
-{
-Vol'jin
 }
 
 STRING 1224
@@ -17289,7 +16061,7 @@ Q
 }
 
 STRING 2902
-// Units: h05S (Brigadier), Name (Name)
+// Units: h009 (Brigadier), Name (Name)
 {
 Brigadier
 }
@@ -17793,7 +16565,7 @@ Greymane's Gate
 }
 
 STRING 2986
-// Units: h050 (Horizontal Wooden Gate), Ubertip (Tooltip - Extended)
+// Units: h04R (Uldum Gate ), Ubertip (Tooltip - Extended)
 {
  
 }
@@ -17975,7 +16747,7 @@ Uldum Gate
 }
 
 STRING 3016
-// Units: h04R (Uldum Gate ), Ubertip (Tooltip - Extended)
+// Units: h04I (Orgrimmar Gate), Ubertip (Tooltip - Extended)
 {
  
 }
@@ -18155,7 +16927,7 @@ Horizontal Wooden Gate
 }
 
 STRING 3046
-// Units: h04I (Orgrimmar Gate), Ubertip (Tooltip - Extended)
+// Units: h04H (Orgrimmar Gate), Ubertip (Tooltip - Extended)
 {
  
 }
@@ -18179,7 +16951,7 @@ Horizontal Wooden Gate
 }
 
 STRING 3050
-// Units: h04H (Orgrimmar Gate), Ubertip (Tooltip - Extended)
+// Units: h02S (Gates of Ahn'Qiraj), Ubertip (Tooltip - Extended)
 {
  
 }
@@ -19302,12 +18074,6 @@ STRING 3236
 Q
 }
 
-STRING 3237
-// Units: h032 (Battlemage), Name (Name)
-{
-Battlemage
-}
-
 STRING 3238
 // Units: h032 (Battlemage), Tip (Tooltip - Basic)
 {
@@ -19501,7 +18267,7 @@ Horizontal Wooden Gate
 }
 
 STRING 3270
-// Units: h02S (Gates of Ahn'Qiraj), Ubertip (Tooltip - Extended)
+// Units: h02M (Greymane's Gate), Ubertip (Tooltip - Extended)
 {
  
 }
@@ -19651,7 +18417,7 @@ Greymane's Gate
 }
 
 STRING 3295
-// Units: h02M (Greymane's Gate), Ubertip (Tooltip - Extended)
+// Units: h02J (Stormwind Harbour Gate), Ubertip (Tooltip - Extended)
 {
  
 }
@@ -19711,7 +18477,7 @@ Horizontal Wooden Gate
 }
 
 STRING 3305
-// Units: h02J (Stormwind Harbour Gate), Ubertip (Tooltip - Extended)
+// Units: h02I (Stormwind Harbour Gate), Ubertip (Tooltip - Extended)
 {
  
 }
@@ -19735,7 +18501,7 @@ Horizontal Wooden Gate
 }
 
 STRING 3309
-// Units: h02I (Stormwind Harbour Gate), Ubertip (Tooltip - Extended)
+// Units: h00P (Vertical Wooden Gate), Ubertip (Tooltip - Extended)
 {
  
 }
@@ -20598,12 +19364,6 @@ STRING 3452
 E
 }
 
-STRING 3453
-// Units: h01B (Outrider), Name (Name)
-{
-Outrider
-}
-
 STRING 3454
 // Units: h01B (Outrider), Tip (Tooltip - Basic)
 {
@@ -20668,12 +19428,6 @@ STRING 3464
 // Units: h018 (Defender), Hotkey (Hotkey)
 {
 Q
-}
-
-STRING 3465
-// Units: h018 (Defender), Name (Name)
-{
-Defender
 }
 
 STRING 3466
@@ -20863,7 +19617,7 @@ Horizontal Wooden Gate
 }
 
 STRING 3497
-// Units: h00P (Vertical Wooden Gate), Ubertip (Tooltip - Extended)
+// Units: h00O (Vertical Wooden Gate), Ubertip (Tooltip - Extended)
 {
  
 }
@@ -20887,7 +19641,7 @@ Horizontal Wooden Gate
 }
 
 STRING 3501
-// Units: h00O (Vertical Wooden Gate), Ubertip (Tooltip - Extended)
+// Units: h00L (Horizontal Wooden Gate), Ubertip (Tooltip - Extended)
 {
  
 }
@@ -20947,7 +19701,7 @@ Horizontal Wooden Gate
 }
 
 STRING 3511
-// Units: h00L (Horizontal Wooden Gate), Ubertip (Tooltip - Extended)
+// Units: E00K (Archdruid of Darnassus), Tip (Tooltip - Basic)
 {
  
 }
@@ -21217,7 +19971,7 @@ Q
 }
 
 STRING 3556
-// Units: h009 (Brigadier), Name (Name)
+// Buffs/Effects: B040 (), Bufftip (Tooltip)
 {
 Brigadier
 }
@@ -22188,12 +20942,6 @@ STRING 3717
 Envoy of Archimonde
 }
 
-STRING 3718
-// Units: U00L (Envoy of Archimonde), Propernames (Proper Names)
-{
-Anetheron
-}
-
 STRING 3719
 // Units: U00C (The Creator), Awakentip (Tooltip - Awaken)
 {
@@ -22246,12 +20994,6 @@ STRING 3727
 // Units: U00A (Scourge Commander), Name (Name)
 {
 Scourge Commander
-}
-
-STRING 3728
-// Units: U00A (Scourge Commander), Propernames (Proper Names)
-{
-Baron Rivendare
 }
 
 STRING 3729
@@ -22366,12 +21108,6 @@ STRING 3747
 // Units: O02L (Sea Witch), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
-}
-
-STRING 3748
-// Units: O02L (Sea Witch), Name (Name)
-{
-Sea Witch
 }
 
 STRING 3749
@@ -22810,12 +21546,6 @@ STRING 3821
 // Units: O00O (Chieftan of the Amani Tribe), Name (Name)
 {
 Chieftan of the Amani Tribe
-}
-
-STRING 3822
-// Units: O00O (Chieftan of the Amani Tribe), Propernames (Proper Names)
-{
-Zul'jin
 }
 
 STRING 3823
@@ -23887,7 +22617,7 @@ Revive Archdruid
 }
 
 STRING 4002
-// Units: E00K (Archdruid of Darnassus), Tip (Tooltip - Basic)
+// Units: E002 (General of the Sentinel Army), Tip (Tooltip - Basic)
 {
  
 }
@@ -24055,7 +22785,7 @@ Revive Sentinel General
 }
 
 STRING 4030
-// Units: E002 (General of the Sentinel Army), Tip (Tooltip - Basic)
+// Units: E001 (Archdruid of Darnassus), Tip (Tooltip - Basic)
 {
  
 }
@@ -24097,13 +22827,13 @@ Revive Archdruid
 }
 
 STRING 4037
-// Units: E001 (Archdruid of Darnassus), Tip (Tooltip - Basic)
+// Units: E001 (Archdruid of Darnassus), Ubertip (Tooltip - Extended)
 {
  
 }
 
 STRING 4038
-// Units: E001 (Archdruid of Darnassus), Ubertip (Tooltip - Extended)
+// Abilities: A0R2 (Infiltration), Untip (Tooltip - Turn Off)
 {
  
 }
@@ -36474,12 +35204,6 @@ STRING 6104
 // Abilities: AEst (Scout), Researchubertip (Tooltip - Learn - Extended)
 {
 Temporarily summons an Owl Scout, which can be used to scout the map. |nCan see invisible units. |n|n|cffffcc00Level 1|r - Summons an Owl Scout for <AEst,Cost1> mana. |n|cffffcc00Level 2|r - Summons a better Owl Scout for <AEst,Cost2> mana. |n|cffffcc00Level 3|r - Summons a better Owl Scout for <AEst,Cost3> mana. |n|cffffcc00Level 4|r - Summons 2 of the best Owl Scout for <AEst,Cost4> mana. |n|cffffcc00Level 5|r - Summons 3 of the best Owl Scout for <AEst,Cost5> mana.
-}
-
-STRING 6105
-// Abilities: AEst (Scout), Tip (Tooltip - Normal)
-{
-Scout
 }
 
 STRING 6106
@@ -48857,12 +47581,6 @@ Q
 }
 
 STRING 8173
-// Abilities: A0R2 (Infiltration), Untip (Tooltip - Turn Off)
-{
- 
-}
-
-STRING 8174
 // Abilities: A0R2 (Infiltration), Unubertip (Tooltip - Turn Off - Extended)
 {
  
@@ -80615,12 +79333,6 @@ STRING 13473
 // Buffs/Effects: B041 (Molotov Cocktail), EditorSuffix (Editor Suffix)
 {
 (Dark Green - Saboteur)
-}
-
-STRING 13474
-// Buffs/Effects: B040 (), Bufftip (Tooltip)
-{
-Brigadier
 }
 
 STRING 13475

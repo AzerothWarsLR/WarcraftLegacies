@@ -107,11 +107,7 @@ public static class Cameras
 	public static readonly camerasetup Sent8 = CreateCameraSetup();
 	public static readonly camerasetup Sent9 = CreateCameraSetup();
 
-
-#pragma warning disable IDE0052 // Remove unread private members
-	private static readonly object initialiser = Initialise();
-#pragma warning restore IDE0052 // Remove unread private members
-	private static object Initialise()
+	static Cameras()
 	{
 		CameraSetupSetDestPosition(Dalaran_1, 9426.06f, 5152.28f, 0);
 		CameraSetupSetField(Dalaran_1, CAMERA_FIELD_ZOFFSET, 0f, 0);
@@ -1361,6 +1357,6 @@ public static class Cameras
 		CameraSetupSetField(Sent9, CAMERA_FIELD_LOCAL_PITCH, 0f, 0);
 		CameraSetupSetField(Sent9, CAMERA_FIELD_LOCAL_YAW, 0f, 0);
 		CameraSetupSetField(Sent9, CAMERA_FIELD_LOCAL_ROLL, 0f, 0);
-		return null;
+
 	}
 }
