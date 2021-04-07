@@ -4,7 +4,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
 {
   public static class Kultiras
   {
-    public static void Main()
+    public static void Setup()
     {
       //Abilities
       var summonSeaElemental = AbilityFactory.CreateSummonWaterElemental(

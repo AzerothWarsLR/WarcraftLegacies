@@ -11,10 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.Common", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.Generated", "src\AzerothWarsCSharp.Generated\AzerothWarsCSharp.Generated.csproj", "{3DE25822-0AB6-4F6B-B8E3-6353A4068171}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.Tests", "tests\AzerothWarsCSharp.Tests\AzerothWarsCSharp.Tests.csproj", "{AC91DCE4-ABE5-4EE2-94D4-5ED37DB7DD58}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzerothWarsCSharp.SanityChecker", "AzerothWarsCSharp.SanityChecker\AzerothWarsCSharp.SanityChecker.csproj", "{3A17761B-BCF3-4F38-A201-AC3C625EFFE0}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,14 +33,6 @@ Global
 		{3DE25822-0AB6-4F6B-B8E3-6353A4068171}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DE25822-0AB6-4F6B-B8E3-6353A4068171}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DE25822-0AB6-4F6B-B8E3-6353A4068171}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AC91DCE4-ABE5-4EE2-94D4-5ED37DB7DD58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AC91DCE4-ABE5-4EE2-94D4-5ED37DB7DD58}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AC91DCE4-ABE5-4EE2-94D4-5ED37DB7DD58}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AC91DCE4-ABE5-4EE2-94D4-5ED37DB7DD58}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3A17761B-BCF3-4F38-A201-AC3C625EFFE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A17761B-BCF3-4F38-A201-AC3C625EFFE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A17761B-BCF3-4F38-A201-AC3C625EFFE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A17761B-BCF3-4F38-A201-AC3C625EFFE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
