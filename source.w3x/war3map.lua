@@ -530,6 +530,7 @@ gg_snd_UndeadVictory = ""
 gg_snd_DaybreakRooster = nil
 gg_snd_ArthasTheme = ""
 gg_snd_HumanX1stormwind3 = ""
+gg_trg_Untitled_Trigger_001 = nil
 function InitGlobals()
 end
 
@@ -10045,6 +10046,20 @@ function CreateCameras()
     CameraSetupSetField(gg_cam_Sent9, CAMERA_FIELD_LOCAL_YAW, 0.0, 0.0)
     CameraSetupSetField(gg_cam_Sent9, CAMERA_FIELD_LOCAL_ROLL, 0.0, 0.0)
     CameraSetupSetDestPosition(gg_cam_Sent9, -17350.7, -13380.3, 0.0)
+end
+
+function Trig_Untitled_Trigger_001_Actions()
+    DisplayTextToForce(GetPlayersAll(), "TRIGSTR_010")
+end
+
+function InitTrig_Untitled_Trigger_001()
+    gg_trg_Untitled_Trigger_001 = CreateTrigger()
+    TriggerRegisterTimerEventSingle(gg_trg_Untitled_Trigger_001, 1.00)
+    TriggerAddAction(gg_trg_Untitled_Trigger_001, Trig_Untitled_Trigger_001_Actions)
+end
+
+function InitCustomTriggers()
+    InitTrig_Untitled_Trigger_001()
 end
 
 function InitUpgrades_Player0()
@@ -23587,6 +23602,7 @@ function main()
     CreateAllUnits()
     InitBlizzard()
     InitGlobals()
+    InitCustomTriggers()
 end
 
 function config()

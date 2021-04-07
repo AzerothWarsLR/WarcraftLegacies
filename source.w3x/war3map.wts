@@ -57,6 +57,11 @@ Edited by YakaryBovine, Lordebas, DaveRolf, and Richardik
 Discord link: https://discord.gg/4eGZnR5
 }
 
+STRING 10
+{
+GUI
+}
+
 STRING 26
 // Units: h050 (Horizontal Wooden Gate), Ubertip (Tooltip - Extended)
 {
