@@ -8,7 +8,7 @@
     <PackageReference Include="War3Api.Blizzard" Version="1.32.9" />
     <PackageReference Include="War3Api.Common" Version="1.32.9" />
     <PackageReference Include="WCSharp.Buffs" Version="2.0.1" />
-    <PackageReference Include="WCSharp.DateTime" Version="2.0.3" />
+    <PackageReference Include="WCSharp.DateTime" Version="2.0.5" />
     <PackageReference Include="WCSharp.Dummies" Version="2.0.0" />
     <PackageReference Include="WCSharp.Effects" Version="2.0.0" />
     <PackageReference Include="WCSharp.Events" Version="2.0.1" />

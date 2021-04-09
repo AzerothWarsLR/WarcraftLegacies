@@ -5,6 +5,32 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
 {
   public static class AbilityFactory
   {
+    public static Ability CreateRaiseDead(
+      string newRawcode, string iconName = "RaiseDead", Unit[] summonedUnit = null,
+      int levels = 1)
+    {
+      //Buff setup
+      var newBuff = new Buff(BuffType.RaiseDead)
+      {
+        ArtIcon = iconName,
+      };
+
+      //Ability setup
+      var newAbility = new War3Api.Object.Abilities.RaiseDeadCreep(newRawcode)
+      {
+        ArtIconNormal = iconName,
+        ArtIconResearch = iconName
+      };
+      for (var i = 0; i < levels; i++)
+      {
+        newAbility.DataUnitTypeOne[i] = summonedUnit[i];
+        newAbility.StatsBuffs[i] = new Buff[] { newBuff };
+        newAbility.TextTooltipNormal[i] = $"Summon {summonedUnit[i].TextName}";
+      }
+
+      return newAbility;
+    }
+
     public static Ability CreateCrushingWave(
       string newRawcode, char hotkey, float[] damage, float[] maxDamage, float[] distance, int levels, float[] startArea,
       float[] finalArea, float[] castRange, IEnumerable<Target>[] targetsAllowed, float[] cooldown, int[] manaCost,
