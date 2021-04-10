@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using static War3Api.Common;
 
@@ -8,18 +9,26 @@ namespace AzerothWarsCSharp.Source.Libraries
   {
     public delegate void OnCheatDelegate(player triggerPlayer, string[] arguments);
 
-    public static bool Active { get; set; }
+    public static bool Active { get; set; } = true;
 
     public static void Register(string activator, OnCheatDelegate onCommand)
     {
-      var trig = CreateTrigger();
-      for (var i = 0; i < 12; i++)
+      try
       {
-        TriggerRegisterPlayerChatEvent(trig, Player(i), "- " + activator, false);
+        var trig = CreateTrigger();
+        for (var i = 0; i < 12; i++)
+        {
+          TriggerRegisterPlayerChatEvent(trig, Player(i), "-" + activator, false);
+        }
+        TriggerAddAction(trig, OnAnyCheat);
+        _cheatsByActivator[activator] = onCommand;
       }
-      TriggerAddAction(trig, OnAnyCheat);
-      _cheatsByActivator[activator] = onCommand;
+      catch (Exception ex)
+      {
+        DisplayTextToPlayer(GetLocalPlayer(), 0, 0, ex.ToString());
+      }
     }
+
 
     public static void Display(player whichPlayer, string msg)
     {
@@ -35,13 +44,32 @@ namespace AzerothWarsCSharp.Source.Libraries
       return false;
     }
 
+    public static string[] GetChatStringCommandParameters(string chatString)
+    {
+      return chatString.Split(' ').Skip(1).ToArray();
+    }
+
+    public static string GetChatStringCommandActivator(string chatString)
+    {
+      var activatorPortion = chatString.Split(' ')[0];
+      return activatorPortion.Substring(1, activatorPortion.Length-1);
+    }
+
     private static void OnAnyCheat()
     {
-      if (CanPlayerUseCheats(GetTriggerPlayer())){
-        string chatString = GetEventPlayerChatString();
-        string activator = chatString.Split(' ')[0];
-        string[] arguments = chatString.Split(' ').Skip(1).ToArray();
-        _cheatsByActivator[activator]?.Invoke(GetTriggerPlayer(), arguments);
+      try
+      {
+        if (CanPlayerUseCheats(GetTriggerPlayer()))
+        {
+          string chatString = GetEventPlayerChatString();
+          string activator = GetChatStringCommandActivator(chatString);
+          string[] arguments = GetChatStringCommandParameters(chatString);
+          _cheatsByActivator[activator]?.Invoke(GetTriggerPlayer(), arguments);
+        }
+      }
+      catch (Exception ex)
+      {
+        DisplayTextToPlayer(GetLocalPlayer(), 0, 0, ex.ToString());
       }
     }
 
