@@ -1,4 +1,6 @@
 ﻿using AzerothWarsCSharp.Source.Commands;
+using AzerothWarsCSharp.Source.Libraries;
+using AzerothWarsCSharp.Source.Setup;
 using System;
 using static War3Api.Common;
 
@@ -21,27 +23,7 @@ namespace AzerothWarsCSharp.Source
 		{
 			try
 			{
-				CheatControl.Initialize();
-				CheatFaction.Initialize();
-				CheatFood.Initialize();
-				CheatGod.Initialize();
-				CheatGold.Initialize();
-				CheatHasResearch.Initialize();
-				CheatHP.Initialize();
-				CheatKick.Initialize();
-				CheatLevel.Initialize();
-				CheatLumber.Initialize();
-				CheatMP.Initialize();
-				CheatNoCD.Initialize();
-				CheatOwner.Initialize();
-				CheatRemove.Initialize();
-				CheatSkipCinematic.Initialize();
-				CheatSpawn.Initialize();
-				CheatTeam.Initialize();
-				CheatTele.Initialize();
-				CheatUncontrol.Initialize();
-				CheatUnlimitedMana.Initialize();
-				CheatVision.Initialize();
+				GameSetup.Initialize();
 				Console.WriteLine("Hello, Azeroth.");
 			}
 			catch (Exception ex)

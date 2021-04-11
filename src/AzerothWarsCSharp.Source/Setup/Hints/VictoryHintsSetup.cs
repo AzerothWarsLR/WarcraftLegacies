@@ -1,7 +1,7 @@
 ﻿using AzerothWarsCSharp.Source.GameLogic;
 using AzerothWarsCSharp.Source.Libraries;
 
-namespace AzerothWarsCSharp.Source.Setup.Hints
+namespace AzerothWarsCSharp.Source.Setup
 {
   public static class VictoryHintsSetup
   {
