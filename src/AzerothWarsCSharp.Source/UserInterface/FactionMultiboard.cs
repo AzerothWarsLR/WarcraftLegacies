@@ -19,14 +19,14 @@ namespace AzerothWarsCSharp.Source.UserInterface
     public static void Initialize()
     {
       _instance = new FactionMultiboard();
-      TriggerSleepAction(5);
-      RenderInstance();
+      TriggerSleepAction(2);
+      _instance.Render();
       Faction.FactionCreated += OnFactionCreated;
     }
 
     public FactionMultiboard()
     {
-      foreach (Faction faction in Faction.All)
+      foreach (Faction faction in Faction.GetAll())
       {
         AddRow(new MultiboardFactionRow(faction));
       }
@@ -35,11 +35,6 @@ namespace AzerothWarsCSharp.Source.UserInterface
         AddRow(new MultiboardTeamRow(team));
       }
       Render();
-    }
-
-    private static void RenderInstance()
-    {
-      _instance.Render();
     }
 
     private void AddRow(MultiboardRow row)
@@ -86,13 +81,18 @@ namespace AzerothWarsCSharp.Source.UserInterface
 
     private void Render()
     {
-      DestroyMultiboard(_blzMultiboard);
+      if (_blzMultiboard != null)
+      {
+        DestroyMultiboard(_blzMultiboard);
+      }
       _blzMultiboard = CreateMultiboardBJ(COLUMN_COUNT, 3, TITLE);
       MultiboardSetRowCount(_blzMultiboard, _rows.Count);
       var rowIndex = 0;
       foreach (MultiboardRow row in _rows)
       {
         RenderRow(row, rowIndex);
+        rowIndex++;
+        BJDebugMsg(rowIndex.ToString());
       }
     }
 

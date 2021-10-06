@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.GameLogic
 
     private static void OnIncomeTick()
     {
-      foreach (var faction in Faction.All)
+      foreach (var faction in Faction.GetAll())
       {
         faction.Gold += faction.Income / PERIOD;
       }

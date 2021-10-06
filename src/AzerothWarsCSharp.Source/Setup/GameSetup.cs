@@ -35,9 +35,10 @@ namespace AzerothWarsCSharp.Source.Setup
 			NormalHintsSetup.Initialize();
 			VictoryHintsSetup.Initialize();
 			TeamSetup.Initialize();
-      FactionSetup.Initialize();
+			FactionSetup.Initialize();
+			PlayerSetup.Initialize();
 			//User interface
-      FactionMultiboard.Initialize();
+			FactionMultiboard.Initialize();
     }
   }
 }

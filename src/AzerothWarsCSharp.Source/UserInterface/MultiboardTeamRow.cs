@@ -5,6 +5,7 @@ namespace AzerothWarsCSharp.Source.UserInterface
 {
   public sealed class MultiboardTeamRow : MultiboardRow
   {
+    private static readonly int COLUMN_COUNT = 1;
     private static readonly int COLUMN_TEAM = 0;
     private static readonly float WIDTH_TEAM = 0.12f;
 
@@ -12,6 +13,11 @@ namespace AzerothWarsCSharp.Source.UserInterface
     {
       Team = trackedTeam;
       trackedTeam.ChangesSize += OnTeamChangeSize;
+      for (int i = 0; i < COLUMN_COUNT; i++)
+      {
+        MultiboardItems.Add(new MultiboardItem());
+      }
+      SetValue(COLUMN_TEAM, $"----{trackedTeam.Name}----");
     }
 
     public Team Team { get; }

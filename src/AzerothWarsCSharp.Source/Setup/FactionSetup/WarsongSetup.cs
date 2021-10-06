@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Setup
 
     public static void Initialize()
     {
-      Warsong = new Faction("Scourge", PLAYER_COLOR_PURPLE, "|c00540081", "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp", 3);
+      Warsong = new Faction("Warsong", PLAYER_COLOR_ORANGE, "|c00ff8000", "ReplaceableTextures\\CommandButtons\\BTNHellScream.blp", 3);
     }
   }
 }

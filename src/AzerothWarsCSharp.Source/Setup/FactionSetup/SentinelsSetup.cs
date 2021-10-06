@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Setup
 
     public static void Initialize()
     {
-      Sentinels = new Faction("Scourge", PLAYER_COLOR_PURPLE, "|c00540081", "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp", 3);
+      Sentinels = new Faction("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80", "ReplaceableTextures\\CommandButtons\\BTNPriestessOfTheMoon.blp", 3);
     }
   }
 }

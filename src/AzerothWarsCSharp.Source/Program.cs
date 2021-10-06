@@ -1,6 +1,4 @@
-﻿using AzerothWarsCSharp.Source.Commands;
-using AzerothWarsCSharp.Source.Libraries;
-using AzerothWarsCSharp.Source.Setup;
+﻿using AzerothWarsCSharp.Source.Setup;
 using System;
 using static War3Api.Common;
 
@@ -28,7 +26,7 @@ namespace AzerothWarsCSharp.Source
 			}
 			catch (Exception ex)
 			{
-				DisplayTextToPlayer(GetLocalPlayer(), 0, 0, ex.Message);
+				DisplayTextToPlayer(GetLocalPlayer(), 0, 0, ex.ToString());
 			}
 		}
 	}

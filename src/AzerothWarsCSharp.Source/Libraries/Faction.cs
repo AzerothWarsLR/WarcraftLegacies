@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Libraries
 {
@@ -12,8 +13,6 @@ namespace AzerothWarsCSharp.Source.Libraries
   {
     public static int UNLIMITED { get; } = 200;
 
-    public static HashSet<Faction> All { get; } = new();
-
     public event EventHandler<FactionTeamChangedEventArgs> TeamChanged;
     public event EventHandler<FactionEventArgs> ChangesPerson;
     public event EventHandler<FactionEventArgs> ObjectLevelChanged;
@@ -24,15 +23,19 @@ namespace AzerothWarsCSharp.Source.Libraries
     public event EventHandler<FactionEventArgs> IconChanged;
     public static event EventHandler<FactionEventArgs> FactionCreated;
 
-    public Faction(string name, playercolor playercolor, string prefixColor, string icon, int weight)
+    public Faction(
+      string name, playercolor playercolor, string prefixColor, string icon, int weight,
+      Dictionary<int, int> objectLevels = null, Dictionary<int, int> objectLimits = null)
     {
       Name = name;
       PlayerColor = playercolor;
       PrefixColor = prefixColor;
       Icon = icon;
       Weight = weight;
+      _objectLimits = objectLimits ?? _objectLimits;
+      _objectLevels = objectLevels ?? _objectLevels;
+      _all.Add(this);
       FactionCreated?.Invoke(this, new FactionEventArgs(this));
-      All.Add(this);
     }
 
     /// <summary>
@@ -52,6 +55,15 @@ namespace AzerothWarsCSharp.Source.Libraries
     public static Faction ByName(string name)
     {
       throw new NotImplementedException();
+    }
+
+    /// <summary>
+    /// A list of all Factions in the game.
+    /// </summary>
+    /// <returns></returns>
+    public static List<Faction> GetAll()
+    {
+      return new List<Faction>(_all);
     }
 
     /// <summary>
@@ -200,28 +212,28 @@ namespace AzerothWarsCSharp.Source.Libraries
     {
       get
       {
-        throw new NotImplementedException();
+        return _player;
       }
       set
       {
-        throw new NotImplementedException();
+        //Unapply from previous player
+        if (_player != null)
+        {
+          foreach (KeyValuePair<int, int> entry in _objectLimits)
+          {
+            SetPlayerTechMaxAllowed(_player, entry.Key, 0);
+          }
+        }
+        _player = value;
+        //Apply to new player
+        SetPlayerColorBJ(value, PlayerColor, true);
+        foreach(KeyValuePair<int, int> entry in _objectLimits)
+        {
+          SetPlayerTechMaxAllowed(value, entry.Key, entry.Value);
+        }
       }
     }
-
-    /// <summary>
-    /// Person currently occupying this Faction.
-    /// </summary>
-    public Person Person
-    {
-      get
-      {
-        throw new NotImplementedException();
-      }
-      set
-      {
-        throw new NotImplementedException();
-      }
-    }
+    private player _player;
 
     /// <summary>
     /// Quest that pops up for this Faction early on as an introduction.
@@ -262,6 +274,7 @@ namespace AzerothWarsCSharp.Source.Libraries
         SetPlayerColor(Player, _playercolor);
       }
     }
+    private playercolor _playercolor;
 
     /// <summary>
     /// A list of all of the units, heroes, structures, and researches this faction can do.
@@ -273,9 +286,9 @@ namespace AzerothWarsCSharp.Source.Libraries
     /// </summary>
     /// <param name="factionObject"></param>
     /// <returns></returns>
-    public int GetObjectLimit(int factionObject)
+    public int GetObjectLimit(int id)
     {
-      throw new NotImplementedException();
+      return _objectLimits[id];
     }
 
     /// <summary>
@@ -283,9 +296,9 @@ namespace AzerothWarsCSharp.Source.Libraries
     /// </summary>
     /// <param name="obj"></param>
     /// <returns></returns>
-    public int GetObjectLevel(int obj)
+    public int GetObjectLevel(int id)
     {
-      throw new NotImplementedException();
+      return _objectLevels[id];
     }
 
     /// <summary>
@@ -293,7 +306,7 @@ namespace AzerothWarsCSharp.Source.Libraries
     /// </summary>
     public void SetObjectLevel(int obj, int level)
     {
-      throw new NotImplementedException();
+      _objectLevels[obj] = level;
     }
 
     /// <summary>
@@ -303,7 +316,7 @@ namespace AzerothWarsCSharp.Source.Libraries
     /// <param name="limit"></param>
     public void ModObjectLimit(int obj, int limit)
     {
-      throw new NotImplementedException();
+      _objectLimits[obj] = limit;
     }
 
     /// <summary>
@@ -328,6 +341,8 @@ namespace AzerothWarsCSharp.Source.Libraries
     private int _weight;
     private string _name;
     private string _icon;
-    private playercolor _playercolor;
+    private static readonly HashSet<Faction> _all = new();
+    private Dictionary<int, int> _objectLimits = new();
+    private Dictionary<int, int> _objectLevels = new();
   }
 }

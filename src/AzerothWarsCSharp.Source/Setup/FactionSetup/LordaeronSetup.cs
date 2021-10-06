@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Setup
 
     public static void Initialize()
     {
-      Lordaeron = new Faction("Scourge", PLAYER_COLOR_PURPLE, "|c00540081", "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp", 3);
+      Lordaeron = new Faction("Lordaeron", PLAYER_COLOR_BLUE, "|c000042ff", "ReplaceableTextures\\CommandButtons\\BTNArthas.blp", 2);
     }
   }
 }

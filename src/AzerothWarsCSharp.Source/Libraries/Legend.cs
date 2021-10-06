@@ -209,28 +209,6 @@ namespace AzerothWarsCSharp.Source.Libraries
     public bool Hivemind { get; set; }
 
     /// <summary>
-    /// The Faction of the Person that owns this Legend.
-    /// </summary>
-    public Faction OwningFaction
-    {
-      get
-      {
-        return OwningPerson.Faction;
-      }
-    }
-
-    /// <summary>
-    /// The Person that owns this Legend.
-    /// </summary>
-    public Person OwningPerson
-    {
-      get
-      {
-        return Person.ByPlayerHandle(OwningPlayer);
-      }
-    }
-
-    /// <summary>
     /// The player that owns this Legend.
     /// </summary>
     public player OwningPlayer

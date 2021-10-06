@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Setup
 
     public static void Initialize()
     {
-      FelHorde = new Faction("Scourge", PLAYER_COLOR_PURPLE, "|c00540081", "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp", 3);
+      FelHorde = new Faction("Fel Horde", PLAYER_COLOR_GREEN, "|c0020c000", "ReplaceableTextures\\CommandButtons\\BTNPitLord.blp", 6);
     }
   }
 }

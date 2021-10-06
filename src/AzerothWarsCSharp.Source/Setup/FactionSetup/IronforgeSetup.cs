@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Setup
 
     public static void Initialize()
     {
-      Ironforge = new Faction("Scourge", PLAYER_COLOR_PURPLE, "|c00540081", "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp", 3);
+      Ironforge = new Faction("Ironforge", PLAYER_COLOR_YELLOW, "|C00FFFC01", "ReplaceableTextures\\CommandButtons\\BTNHeroMountainKing.blp", 3);
     }
   }
 }

@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Setup
 
     public static void Initialize()
     {
-      Frostwolf = new Faction("Scourge", PLAYER_COLOR_PURPLE, "|c00540081", "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp", 3);
+      Frostwolf = new Faction("Frostwolf", PLAYER_COLOR_RED, "|c00ff0303", "ReplaceableTextures\\CommandButtons\\BTNThrall.blp", 3);
     }
   }
 }

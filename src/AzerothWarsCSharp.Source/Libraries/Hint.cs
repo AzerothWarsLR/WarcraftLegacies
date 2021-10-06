@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -34,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Libraries
     private static bool DisplayRandomHint() {
       if (_registered.Count > 0)
       {
-        var randomHint = _registered[_random.Next(_registered.Count)];
+        var randomHint = _registered[GetRandomInt(0, _registered.Count)];
         randomHint.Display();
         _registered.Remove(randomHint);
       }
@@ -42,7 +41,6 @@ namespace AzerothWarsCSharp.Source.Libraries
     }
 
     private static readonly List<Hint> _registered = new();
-    private static readonly Random _random = new();
     private static sound _sound;
 
     private readonly string _text;

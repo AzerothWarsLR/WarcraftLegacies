@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Setup
 
     public static void Initialize()
     {
-      Stormwind = new Faction("Scourge", PLAYER_COLOR_PURPLE, "|c00540081", "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp", 3);
+      Stormwind = new Faction("Stormwind", PLAYER_COLOR_AQUA, "|CFF106246", "ReplaceableTextures\\CommandButtons\\BTNKnight.blp", 3);
     }
   }
 }

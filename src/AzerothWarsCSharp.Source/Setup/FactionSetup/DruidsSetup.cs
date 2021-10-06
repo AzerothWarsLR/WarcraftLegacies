@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Setup
 
     public static void Initialize()
     {
-      Druids = new Faction("Scourge", PLAYER_COLOR_PURPLE, "|c00540081", "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp", 3);
+      Druids = new Faction("Druids", PLAYER_COLOR_BROWN, "|c004e2a04", "ReplaceableTextures\\CommandButtons\\BTNFurion.blp", 3);
     }
   }
 }

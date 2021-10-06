@@ -5,6 +5,7 @@ namespace AzerothWarsCSharp.Source.UserInterface
 {
   public sealed class MultiboardFactionRow : MultiboardRow
   {
+    private static readonly int COLUMN_COUNT = 3;
     private static readonly int COLUMN_FACTION = 0;
     private static readonly int COLUMN_CP = 1;
     private static readonly int COLUMN_INCOME = 2;
@@ -12,6 +13,10 @@ namespace AzerothWarsCSharp.Source.UserInterface
     public MultiboardFactionRow(Faction trackedFaction)
     {
       Faction = trackedFaction;
+      for (int i = 0; i < COLUMN_COUNT; i++)
+      {
+        MultiboardItems.Add(new MultiboardItem());
+      }
       SetValue(COLUMN_FACTION, trackedFaction.ColoredName);
       SetValue(COLUMN_CP, trackedFaction.Income.ToString());
       SetValue(COLUMN_INCOME, trackedFaction.ControlPoints.ToString());

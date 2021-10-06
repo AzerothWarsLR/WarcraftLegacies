@@ -42,7 +42,6 @@ namespace AzerothWarsCSharp.Source.Libraries
   {
     private ArtifactStatus _status;
     private string _description;
-    private readonly Person _owningPerson;
     private readonly item _item;
     private static readonly Dictionary<item, Artifact> _byItem = new();
 
@@ -127,21 +126,6 @@ namespace AzerothWarsCSharp.Source.Libraries
     public unit OwningUnit
     {
       get
-      {
-        throw new NotImplementedException();
-      }
-    }
-
-    /// <summary>
-    /// The Person owning the unit carrying the artifact.
-    /// </summary>
-    public Person OwningPerson
-    {
-      get
-      {
-        return _owningPerson;
-      }
-      set
       {
         throw new NotImplementedException();
       }

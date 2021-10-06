@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Commands
       CheatCommand.Register("faction", (player triggerPlayer, string[] arguments) =>
       {
         var newTeam = arguments[0];
-        Person.ByPlayerHandle(triggerPlayer).Faction.Team = Team.ByName(newTeam);
+        Faction.ByPlayerHandle(triggerPlayer).Team = Team.ByName(newTeam);
         CheatCommand.Display(triggerPlayer, "Changed faction to " + newTeam + ".");
       }
       );

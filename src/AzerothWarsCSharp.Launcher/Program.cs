@@ -8,6 +8,7 @@ using CSharpLua;
 using Microsoft.CodeAnalysis;
 using War3Net.Build;
 using War3Net.Build.Extensions;
+using War3Net.Build.Info;
 using War3Net.IO.Mpq;
 using WCSharp.ConstantGenerator;
 
