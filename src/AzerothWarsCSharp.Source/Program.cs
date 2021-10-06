@@ -21,6 +21,8 @@ namespace AzerothWarsCSharp.Source
 		{
 			try
 			{
+				CreateUnit(Player(0), FourCC("hfoo"), 0, 0, 0);
+				CreateUnit(Player(0), FourCC("ksum"), 0, 0, 0);
 				GameSetup.Initialize();
 				Console.WriteLine("Hello, Azeroth.");
 			}

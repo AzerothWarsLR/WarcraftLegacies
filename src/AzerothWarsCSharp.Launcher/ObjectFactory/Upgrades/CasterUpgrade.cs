@@ -3,9 +3,9 @@ using System.Drawing;
 using System.Linq;
 using War3Api.Object;
 
-namespace AzerothWarsCSharp.Launcher.ObjectFactory
+namespace AzerothWarsCSharp.Launcher.ObjectFactory.Upgrades
 {
-  public static class UpgradeFactory
+  class CasterUpgrade
   {
     private static readonly string CASTER_UPGRADE_ART = "Sorceress";
     private static readonly Dictionary<int, string> _casterNamesByLevel = new()
@@ -40,14 +40,14 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DataMod3 = 40,
       };
       //Level-based research data
-      for (var i = 0; i< casterUpgrade.StatsLevels; i++)
+      for (var i = 0; i < casterUpgrade.StatsLevels; i++)
       {
         casterUpgrade.TextName[i] = casterUpgrade.TextTooltip[i];
         casterUpgrade.TextTooltip[i] = $"{casterUnit.TextName} {_casterNamesByLevel[i]} Training";
         casterUpgrade.TextHotkey[i] = Utils.GetHotkeyByButtonPosition(new Point(0, casterUnit.ArtButtonPositionY));
-        casterUpgrade.ArtIcon[i] = casterAbilities[i+1].ArtIconNormal; //Research has the same icon as the ability it will unlock
+        casterUpgrade.ArtIcon[i] = casterAbilities[i + 1].ArtIconNormal; //Research has the same icon as the ability it will unlock
         casterUpgrade.TextTooltipExtended[i] = $"Increases {casterUnit.TextName}' mana capacity, mana regeneration rate, hit points," +
-          $" and gives them the ability to cast {casterAbilities[i+1]}.";
+          $" and gives them the ability to cast {casterAbilities[i + 1]}.";
       }
       //Caster ability modifications
       var j = 0;

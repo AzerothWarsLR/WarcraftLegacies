@@ -4,11 +4,13 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
+using AzerothWarsCSharp.Launcher.ObjectFactory;
 using CSharpLua;
 using Microsoft.CodeAnalysis;
+using War3Api.Object;
 using War3Net.Build;
 using War3Net.Build.Extensions;
-using War3Net.Build.Info;
+using War3Net.Build.Object;
 using War3Net.IO.Mpq;
 using WCSharp.ConstantGenerator;
 
@@ -23,6 +25,7 @@ namespace Launcher
 
     // Output
     private const string OUTPUT_FOLDER_PATH = @"..\..\..\..\artifacts";
+    private const string OUTPUT_OBJECT_FOLDER_PATH = @"objectData";
     private const string OUTPUT_SCRIPT_NAME = @"war3map.lua";
     private const string OUTPUT_MAP_NAME = @"target.w3x";
 
@@ -68,11 +71,12 @@ namespace Launcher
       }
     }
 
-    public static void Build(bool launch)
+    private static void Build(bool launch)
     {
       // Ensure these folders exist
       Directory.CreateDirectory(ASSETS_FOLDER_PATH);
       Directory.CreateDirectory(OUTPUT_FOLDER_PATH);
+      Directory.CreateDirectory(Path.Combine(OUTPUT_FOLDER_PATH, OUTPUT_OBJECT_FOLDER_PATH));
 
       // Load existing map data
       var map = Map.Open(BASE_MAP_PATH);
@@ -107,6 +111,11 @@ namespace Launcher
       // Update war3map.lua so you can inspect the generated Lua code easily
       File.WriteAllText(Path.Combine(OUTPUT_FOLDER_PATH, OUTPUT_SCRIPT_NAME), map.Script);
 
+      //Generate and write object data, then add it to the map
+      GenerateObjectData();
+      WriteObjectData(Path.Combine(OUTPUT_FOLDER_PATH, OUTPUT_OBJECT_FOLDER_PATH));
+      builder.AddFiles(Path.Combine(OUTPUT_FOLDER_PATH, OUTPUT_OBJECT_FOLDER_PATH), "*", SearchOption.AllDirectories);
+
       // Build w3x file
       var archiveCreateOptions = new MpqArchiveCreateOptions
       {
@@ -114,7 +123,6 @@ namespace Launcher
         AttributesCreateMode = MpqFileCreateMode.Prune,
         BlockSize = 3,
       };
-
       builder.Build(Path.Combine(OUTPUT_FOLDER_PATH, OUTPUT_MAP_NAME), archiveCreateOptions);
 
       // Launch if that option was selected
@@ -149,6 +157,65 @@ namespace Launcher
         {
           throw new Exception("Please set wc3exe in Launcher/app.config to the path of your Warcraft III executable.");
         }
+      }
+    }
+
+    private static void GenerateObjectData()
+    {
+      Kultiras.Setup();
+    }
+
+    private static void WriteObjectData(string outputFolderPath)
+    {
+      var objectData = ObjectDatabase.DefaultDatabase.GetAllData();
+
+      if (objectData.UnitData is not null)
+      {
+        using var stream = File.Create(Path.Combine(outputFolderPath, MapUnitObjectData.FileName));
+        using var writer = new BinaryWriter(stream);
+        writer.Write(objectData.UnitData);
+      }
+
+      if (objectData.ItemData is not null)
+      {
+        using var stream = File.Create(Path.Combine(outputFolderPath, MapItemObjectData.FileName));
+        using var writer = new BinaryWriter(stream);
+        writer.Write(objectData.ItemData);
+      }
+
+      if (objectData.DestructableData is not null)
+      {
+        using var stream = File.Create(Path.Combine(outputFolderPath, MapDestructableObjectData.FileName));
+        using var writer = new BinaryWriter(stream);
+        writer.Write(objectData.DestructableData);
+      }
+
+      if (objectData.DoodadData is not null)
+      {
+        using var stream = File.Create(Path.Combine(outputFolderPath, MapDoodadObjectData.FileName));
+        using var writer = new BinaryWriter(stream);
+        writer.Write(objectData.DoodadData);
+      }
+
+      if (objectData.AbilityData is not null)
+      {
+        using var stream = File.Create(Path.Combine(outputFolderPath, MapAbilityObjectData.FileName));
+        using var writer = new BinaryWriter(stream);
+        writer.Write(objectData.AbilityData);
+      }
+
+      if (objectData.BuffData is not null)
+      {
+        using var stream = File.Create(Path.Combine(outputFolderPath, MapBuffObjectData.FileName));
+        using var writer = new BinaryWriter(stream);
+        writer.Write(objectData.BuffData);
+      }
+
+      if (objectData.UpgradeData is not null)
+      {
+        using var stream = File.Create(Path.Combine(outputFolderPath, MapUpgradeObjectData.FileName));
+        using var writer = new BinaryWriter(stream);
+        writer.Write(objectData.UpgradeData);
       }
     }
   }

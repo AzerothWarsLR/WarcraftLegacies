@@ -2,9 +2,9 @@
 using System.Text;
 using War3Api.Object;
 
-namespace AzerothWarsCSharp.Launcher.ObjectFactory
+namespace AzerothWarsCSharp.Launcher.ObjectFactory.Buildings
 {
-  public static class BuildingFactory
+  class GenericBuilding
   {
     private static string GenerateExtendedTooltip(string flavourText, IEnumerable<Unit> unitsTrained = null, IEnumerable<Upgrade> upgradesResearched = null)
     {
