@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Upgrades
 {
-  class GenericUpgrade
+  class UpgradeFactory
   {
   }
 }

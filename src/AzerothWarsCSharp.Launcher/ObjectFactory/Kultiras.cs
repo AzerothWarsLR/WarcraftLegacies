@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       try
       {
         //Sea Elemental
-        var seaElemental = new GenericUnit(UnitType.Seaelemental, "ksea")
+        var seaElemental = new UnitFactory(UnitType.Seaelemental, "ksea")
         {
           TextName = "Sea Elemental",
           ArtIconGameInterface = @"ReplaceableTextures\CommandButtons\BTNSeaElemental.blp",
@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         }.Generate();
 
         //Summon Sea Elemental
-        var summonSeaElemental = new SummonWaterElemental("asea")
+        var summonSeaElemental = new SummonWaterElementalFactory("asea")
         {
           Levels = 1,
           SummonedUnit = new Unit[] { seaElemental },
@@ -35,7 +35,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         }.Generate();
 
         //Tidesqage
-        var tidesage = new GenericUnit(UnitType.Priest, "ktid")
+        var tidesage = new UnitFactory(UnitType.Priest, "ktid")
         {
           TextName = "Tidepriest",
           ArtModelFile = @"MageKulTirasV1.01.mdl",
@@ -49,7 +49,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         }.Generate();
 
         //Deckhand
-        var deckhand = new Worker(UnitType.Peasant, "kdec")
+        var deckhand = new WorkerFactory(UnitType.Peasant, "kdec")
         {
           TextName = "Deckhand",
           ArtModelFile = @"PeasantKulTirasV1.02.mdl",
@@ -64,7 +64,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         }.Generate();
 
         //Blacksmith
-        var blacksmith = new GenericUnit(UnitType.Blacksmith, "kbla")
+        var blacksmith = new UnitFactory(UnitType.Blacksmith, "kbla")
         {
           ArtModelFile = @"BlacksmithGilneasV1.01.mdl",
           ArtIconGameInterface = "ReplaceableTextures\\CommandButtons\\BTNGilneanBlacksmith.blp",

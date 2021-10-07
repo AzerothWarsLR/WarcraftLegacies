@@ -3,7 +3,7 @@ using War3Api.Object;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
 {
-  public class GenericBuilding : GenericUnit
+  public class BuildingFactory : UnitFactory
   {
     public IEnumerable<Unit> UnitsTrained
     {
@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       }
     }
 
-    public GenericBuilding(UnitType baseType, string newRawCode) : base(baseType, newRawCode)
+    public BuildingFactory(UnitType baseType, string newRawCode) : base(baseType, newRawCode)
     {
     }
   }

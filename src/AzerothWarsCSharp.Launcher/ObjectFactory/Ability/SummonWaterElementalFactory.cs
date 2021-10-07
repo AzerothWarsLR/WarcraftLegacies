@@ -3,7 +3,7 @@ using War3Api.Object.Abilities;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
-  public class SummonWaterElemental
+  public class SummonWaterElementalFactory
   {
     private readonly ArchMageWaterElemental _ability;
     private readonly Buff _buff;
@@ -98,7 +98,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       }
     }
 
-    public SummonWaterElemental(string newRawCode)
+    public SummonWaterElementalFactory(string newRawCode)
     {
       _ability = new ArchMageWaterElemental(newRawCode);
       _buff = new Buff(BuffType.WaterElemental);

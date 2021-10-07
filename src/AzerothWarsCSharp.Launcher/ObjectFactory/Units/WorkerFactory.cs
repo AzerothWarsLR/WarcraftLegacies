@@ -2,9 +2,9 @@
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
 {
-  public class Worker : GenericUnit
+  public class WorkerFactory : UnitFactory
   {
-    public Worker(UnitType baseType, string newRawCode) : base(baseType, newRawCode)
+    public WorkerFactory(UnitType baseType, string newRawCode) : base(baseType, newRawCode)
     {
       _unit.StatsUnitClassification = new UnitClassification[] { UnitClassification.Peon };
     }

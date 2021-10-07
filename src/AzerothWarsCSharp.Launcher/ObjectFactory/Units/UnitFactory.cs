@@ -5,7 +5,7 @@ using War3Api.Object;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
 {
-  public class GenericUnit
+  public class UnitFactory
   {
     protected readonly Unit _unit;
 
@@ -141,7 +141,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set { _unit.AbilitiesNormal = value; }
     }
 
-    public GenericUnit(UnitType baseType, string newRawCode)
+    public UnitFactory(UnitType baseType, string newRawCode)
     {
       _unit = new Unit(baseType, newRawCode);
       Flavour = "";

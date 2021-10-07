@@ -5,7 +5,7 @@ using War3Api.Object;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Upgrades
 {
-  class CasterUpgrade
+  class CasterUpgradeFactory
   {
     private static readonly string CASTER_UPGRADE_ART = "Sorceress";
     private static readonly Dictionary<int, string> _casterNamesByLevel = new()
