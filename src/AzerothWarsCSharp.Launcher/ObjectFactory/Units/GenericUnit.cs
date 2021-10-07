@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 using War3Api.Object;
 
@@ -30,6 +31,56 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     {
       GenerateTooltip();
       return _unit;
+    }
+
+    public IEnumerable<Unit> StructuresBuilt
+    {
+      set
+      {
+        _unit.TechtreeStructuresBuilt = value;
+      }
+    }
+
+    public int BuildTime
+    {
+      set
+      {
+        _unit.StatsBuildTime = value;
+      }
+    }
+
+    public float ScalingValue
+    {
+      set
+      {
+        _unit.ArtScalingValue = value;
+      }
+    }
+
+    public float SelectionScale
+    {
+      set
+      {
+        _unit.ArtSelectionScale = value;
+      }
+    }
+
+    public float CollisionSize
+    {
+      set
+      {
+        _unit.PathingCollisionSize = value;
+      }
+    }
+
+    public Point ButtonPosition
+    {
+      set
+      {
+        _unit.ArtButtonPositionX = value.X;
+        _unit.ArtButtonPositionY = value.Y;
+        _unit.TextHotkey = Utils.GetHotkeyByButtonPosition(value);
+      }
     }
 
     public string Flavour

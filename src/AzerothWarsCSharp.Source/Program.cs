@@ -24,7 +24,8 @@ namespace AzerothWarsCSharp.Source
 				CreateUnit(Player(0), FourCC("ksea"), 0, 0, 0);
 				CreateUnit(Player(0), FourCC("kdec"), 0, 0, 0);
 				CreateUnit(Player(0), FourCC("ktid"), 0, 0, 0);
-				GameSetup.Initialize();
+				CreateUnit(Player(0), FourCC("kbla"), 0, 0, 0);
+				//GameSetup.Initialize();
 				Console.WriteLine("Hello, Azeroth.");
 			}
 			catch (Exception ex)
