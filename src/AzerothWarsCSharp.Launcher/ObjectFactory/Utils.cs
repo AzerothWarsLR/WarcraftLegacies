@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory
@@ -23,7 +24,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
 
     public static char GetHotkeyByButtonPosition(Point buttonPosition)
     {
-      return _hotkeyByButtonPosition[buttonPosition];
+      throw new NotImplementedException();
     }
   }
 }
