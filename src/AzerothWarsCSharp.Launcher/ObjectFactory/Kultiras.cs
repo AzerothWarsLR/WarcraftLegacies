@@ -34,12 +34,10 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
           Duration = new int[] { 40 },
         }.Generate();
 
-        //Tidesqage
+        //Tidesage
         var tidesage = new UnitFactory(UnitType.Priest, "ktid")
         {
           TextName = "Tidepriest",
-          ArtModelFile = @"MageKulTirasV1.01.mdl",
-          ArtIconGameInterface = @"ReplaceableTextures\CommandButtons\BTNEmissary.blp",
           Flavour = "Spellcaster empowered with mystical control over the tides.",
           AbilitiesNormal = new Ability[] { summonSeaElemental },
           DamageBase = 4,
@@ -48,12 +46,23 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
           HitPoints = 600,
         }.Generate();
 
+        //Blacksmith
+        var blacksmith = new BuildingFactory(UnitType.Blacksmith, "kbla")
+        {
+          //ButtonPosition = new Point(2, 0),
+          ScalingValue = 0.85F,
+          SelectionScale = 3.00F,
+          HitPoints = 200,
+          UnitsTrained = System.Array.Empty<Unit>(),
+          ResearchesAvailable = System.Array.Empty<Upgrade>(),
+          Flavour = "Where the weapons and armor of Kul'tiras are forged.",
+          AbilitiesNormal = System.Array.Empty<Ability>()
+        }.Generate();
+
         //Deckhand
         var deckhand = new WorkerFactory(UnitType.Peasant, "kdec")
         {
           TextName = "Deckhand",
-          ArtModelFile = @"PeasantKulTirasV1.02.mdl",
-          ArtIconGameInterface = @"ReplaceableTextures\CommandButtons\BTNPeasant.blp",
           DamageBase = 4,
           DamageNumberOfDice = 1,
           DamageSidesPerDie = 2,
@@ -61,22 +70,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
           AbilitiesNormal = System.Array.Empty<Ability>(),
           StructuresBuilt = new Unit[] { },
           Flavour = "The backbone of Kul'tiran seafaring society."
-        }.Generate();
-
-        //Blacksmith
-        var blacksmith = new UnitFactory(UnitType.Blacksmith, "kbla")
-        {
-          ArtModelFile = @"BlacksmithGilneasV1.01.mdl",
-          ArtIconGameInterface = "ReplaceableTextures\\CommandButtons\\BTNGilneanBlacksmith.blp",
-          ButtonPosition = new Point(2, 0),
-          ScalingValue = 0.85F,
-          SelectionScale = 3.00F,
-          HitPoints = 1200,
-          DamageBase = 0,
-          DamageNumberOfDice = 0,
-          DamageSidesPerDie = 0,
-          AbilitiesNormal = System.Array.Empty<Ability>(),
-          Flavour = "Where the weapons and armor of Kul'tiras are forged."
         }.Generate();
       } catch
       {
