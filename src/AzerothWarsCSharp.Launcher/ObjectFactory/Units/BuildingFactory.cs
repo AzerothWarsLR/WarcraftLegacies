@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       tooltipBuilder.Append($"{Flavour}|n");
       tooltipBuilder.Append($"|n|c006969FFHit points|r: {_unit.StatsHitPointsMaximumBase}");
       //Trains
-      if (_unit.TechtreeUnitsTrained != null && _unit.TechtreeUnitsTrained.Count() > 0)
+      if (_unit.TechtreeUnitsTrained != null && _unit.TechtreeUnitsTrained.Any())
       {
         tooltipBuilder.Append($"|n|c006969FFTrains|r: ");
         foreach (var unitTrained in _unit.TechtreeUnitsTrained)
@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
         }
       }
       //Researches
-      if (_unit.TechtreeResearchesAvailable != null && _unit.TechtreeResearchesAvailable.Count() > 0)
+      if (_unit.TechtreeResearchesAvailable != null && _unit.TechtreeResearchesAvailable.Any())
       {
         tooltipBuilder.Append($"|n|c006969FFResearches|r: ");
         foreach (var research in _unit.TechtreeResearchesAvailable)
