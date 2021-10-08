@@ -7,143 +7,85 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
 {
   public class UnitFactory
   {
-    protected readonly Unit _unit;
-
-    private void GenerateTooltip()
+    private void GenerateTooltip(Unit unit)
     {
       var tooltipBuilder = new StringBuilder();
       tooltipBuilder.Append($"{Flavour}|n|n");
-      tooltipBuilder.Append($"|c006969FFHit points|r: {_unit.StatsHitPointsMaximumBase}|n");
-      tooltipBuilder.Append($"|c006969FFAttack damage|r: {_unit.DamageRangeString()}|n");
+      tooltipBuilder.Append($"|c006969FFHit points|r: {unit.StatsHitPointsMaximumBase}|n");
+      tooltipBuilder.Append($"|c006969FFAttack damage|r: {unit.DamageRangeString()}|n");
       tooltipBuilder.Append($"|c006969FFAbilities|r: ");
-      foreach (var ability in _unit.AbilitiesNormal)
+      foreach (var ability in unit.AbilitiesNormal)
       {
         tooltipBuilder.Append($"{ability.TextName}");
       }
-
-      _unit.TextTooltipExtended = tooltipBuilder.ToString();
+      unit.TextTooltipExtended = tooltipBuilder.ToString();
     }
 
     /// <summary>
-    /// Generate the unabstracted, serializable version of this unit.
+    /// Generate a unit instance.
     /// </summary>
     public Unit Generate()
     {
-      GenerateTooltip();
-      return _unit;
-    }
-
-    public IEnumerable<Unit> StructuresBuilt
-    {
-      set
+      var newUnit = new Unit(BaseType, NewRawCode)
       {
-        _unit.TechtreeStructuresBuilt = value;
-      }
+        TechtreeStructuresBuilt = StructuresBuilt,
+        StatsBuildTime = BuildTime,
+        ArtScalingValue = ScalingValue,
+        ArtSelectionScale = SelectionScale,
+        PathingCollisionSize = CollisionSize,
+        ArtButtonPositionX = ButtonPosition.X,
+        ArtButtonPositionY = ButtonPosition.Y,
+        CombatAttack1DamageBase = DamageBase,
+        CombatAttack1DamageNumberOfDice = DamageNumberOfDice,
+        CombatAttack1DamageSidesPerDie = DamageSidesPerDie,
+        StatsHitPointsMaximumBase = HitPoints,
+        TextName = TextName,
+        ArtModelFile = ArtModelFile,
+        ArtIconGameInterface = ArtIconGameInterface,
+        AbilitiesNormal = AbilitiesNormal
+      };
+      GenerateTooltip(newUnit);
+      return newUnit;
     }
 
-    public int BuildTime
-    {
-      set
-      {
-        _unit.StatsBuildTime = value;
-      }
-    }
+    public IEnumerable<Unit> StructuresBuilt { get; set; } = System.Array.Empty<Unit>();
 
-    public float ScalingValue
-    {
-      set
-      {
-        _unit.ArtScalingValue = value;
-      }
-    }
+    public int BuildTime { get; set; } = 60;
 
-    public float SelectionScale
-    {
-      set
-      {
-        _unit.ArtSelectionScale = value;
-      }
-    }
+    public float ScalingValue { get; set; } = 1;
 
-    public float CollisionSize
-    {
-      set
-      {
-        _unit.PathingCollisionSize = value;
-      }
-    }
+    public float SelectionScale { get; set; } = 2;
 
-    public Point ButtonPosition
-    {
-      set
-      {
-        _unit.ArtButtonPositionX = value.X;
-        _unit.ArtButtonPositionY = value.Y;
-        _unit.TextHotkey = Utils.GetHotkeyByButtonPosition(value);
-      }
-    }
+    public float CollisionSize { get; set; } = 1;
 
-    public string Flavour
-    {
-      get;
-      set;
-    }
+    public Point ButtonPosition { get; set; } = new Point(0, 0);
 
-    public int DamageBase
-    {
-      set
-      {
-        _unit.CombatAttack1DamageBase = value;
-      }
-    }
+    public string Flavour { get; set; } = "PLACEHOLDERFLAVOR";
 
-    public int DamageNumberOfDice
-    {
-      set
-      {
-        _unit.CombatAttack1DamageNumberOfDice = value;
-      }
-    }
+    public int DamageBase { get; set; } = 0;
 
-    public int DamageSidesPerDie
-    {
-      set
-      {
-        _unit.CombatAttack1DamageSidesPerDie = value;
-      }
-    }
+    public int DamageNumberOfDice { get; set; } = 0;
 
-    public int HitPoints
-    {
-      set
-      {
-        _unit.StatsHitPointsMaximumBase = value;
-      }
-    }
+    public int DamageSidesPerDie { get; set; } = 0;
 
-    public string TextName
-    {
-      set { _unit.TextName = value; }
-    }
+    public int HitPoints { get; set; } = 100;
 
-    public string ArtModelFile
-    {
-      set { _unit.ArtModelFile = value; }
-    }
+    public string TextName { get; set; } = "PLACEHOLDERNAME";
 
-    public string ArtIconGameInterface
-    {
-      set { _unit.ArtIconGameInterface = value; }
-    }
+    public string ArtModelFile { get; set; } = @"units\human\Peasant\Peasant";
 
-    public IEnumerable<Ability> AbilitiesNormal
-    {
-      set { _unit.AbilitiesNormal = value; }
-    }
+    public string ArtIconGameInterface { get; set; } = @"ReplaceableTextures\CommandButtons\BTNPeasant.blp";
+
+    public UnitType BaseType { get; set; }
+
+    public string NewRawCode { get; set; }
+
+    public IEnumerable<Ability> AbilitiesNormal { get; set; } = System.Array.Empty<Ability>();
 
     public UnitFactory(UnitType baseType, string newRawCode)
     {
-      _unit = new Unit(baseType, newRawCode);
+      BaseType = baseType;
+      NewRawCode = newRawCode;
       Flavour = "";
     }
   }
