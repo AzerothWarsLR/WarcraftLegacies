@@ -5,7 +5,7 @@ using War3Api.Object;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
 {
-  public class UnitFactory
+  public class UnitFactory : IObjectFactory<Unit>
   {
     private void GenerateTooltip(Unit unit)
     {
@@ -24,9 +24,9 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     /// <summary>
     /// Generate a unit instance.
     /// </summary>
-    public Unit Generate()
+    public Unit Generate(string newRawCode)
     {
-      var newUnit = new Unit(BaseType, NewRawCode)
+      var newUnit = new Unit(BaseType, newRawCode)
       {
         TechtreeStructuresBuilt = StructuresBuilt,
         StatsBuildTime = BuildTime,
@@ -78,14 +78,11 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
 
     public UnitType BaseType { get; set; }
 
-    public string NewRawCode { get; set; }
-
     public IEnumerable<Ability> AbilitiesNormal { get; set; } = System.Array.Empty<Ability>();
 
-    public UnitFactory(UnitType baseType, string newRawCode)
+    public UnitFactory(UnitType baseType)
     {
       BaseType = baseType;
-      NewRawCode = newRawCode;
       Flavour = "";
     }
   }

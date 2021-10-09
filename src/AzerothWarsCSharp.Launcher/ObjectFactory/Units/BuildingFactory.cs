@@ -36,9 +36,9 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     /// <summary>
     /// Generate a building instance.
     /// </summary>
-    public new Unit Generate()
+    public new Unit Generate(string newRawCode)
     {
-      var newUnit = new Unit(BaseType, NewRawCode)
+      var newUnit = new Unit(BaseType, newRawCode)
       {
         TechtreeStructuresBuilt = StructuresBuilt,
         StatsBuildTime = BuildTime,
@@ -78,7 +78,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
 
     public IEnumerable<PathingPrevent> PathingRequire { get; set; } = System.Array.Empty<PathingPrevent>();
 
-    public BuildingFactory(UnitType baseType, string newRawCode) : base(baseType, newRawCode)
+    public BuildingFactory(UnitType baseType) : base(baseType)
     {
     }
   }

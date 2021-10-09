@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
     public static void Setup()
     {
       //Sea Elemental
-      var seaElemental = new UnitFactory(UnitType.Seaelemental, "ksea")
+      var seaElemental = new UnitFactory(UnitType.Seaelemental)
       {
         TextName = "Sea Elemental",
         ArtIconGameInterface = @"ReplaceableTextures\CommandButtons\BTNSeaElemental.blp",
@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DamageSidesPerDie = 6,
         HitPoints = 600,
         Flavour = "Avatar of the sea's primordial force.",
-      }.Generate();
+      }.Generate("ksea");
 
       //Summon Sea Elemental
       var summonSeaElemental = new SummonWaterElementalFactory()
@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       }.Generate("asea");
 
       //Tidesage
-      new UnitFactory(UnitType.Priest, "ktid")
+      new UnitFactory(UnitType.Priest)
       {
         TextName = "Tidepriest",
         Flavour = "Spellcaster empowered with mystical control over the tides.",
@@ -42,10 +42,10 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DamageNumberOfDice = 2,
         DamageSidesPerDie = 7,
         HitPoints = 600,
-      }.Generate();
+      }.Generate("ktid");
 
       //Blacksmith
-      new BuildingFactory(UnitType.Blacksmith, "kbla")
+      new BuildingFactory(UnitType.Blacksmith)
       {
         //ButtonPosition = new Point(2, 0),
         ScalingValue = 0.85F,
@@ -55,10 +55,10 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         ResearchesAvailable = System.Array.Empty<Upgrade>(),
         Flavour = "Where the weapons and armor of Kul'tiras are forged.",
         AbilitiesNormal = System.Array.Empty<Ability>()
-      }.Generate();
+      }.Generate("kbla");
 
       //Deckhand
-      new WorkerFactory(UnitType.Peasant, "kdec")
+      new WorkerFactory(UnitType.Peasant)
       {
         TextName = "Deckhand",
         DamageBase = 4,
@@ -68,7 +68,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         AbilitiesNormal = System.Array.Empty<Ability>(),
         StructuresBuilt = new Unit[] { },
         Flavour = "The backbone of Kul'tiran seafaring society."
-      }.Generate();
+      }.Generate("kdec");
     }
   }
 }

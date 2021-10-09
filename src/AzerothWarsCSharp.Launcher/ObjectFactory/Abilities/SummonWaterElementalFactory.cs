@@ -42,7 +42,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       return newBuff;
     }
 
-    public Ability Generate(string newRawCode)
+    public override ArchMageWaterElemental Generate(string newRawCode)
     {
       var newAbility = new ArchMageWaterElemental(newRawCode);
       GenerateStats(newAbility);

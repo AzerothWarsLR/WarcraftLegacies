@@ -16,9 +16,9 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     /// <summary>
     /// Generate a worker unit instance.
     /// </summary>
-    public new Unit Generate()
+    public new Unit Generate(string newRawCode)
     {
-      var newUnit = new Unit(BaseType, NewRawCode)
+      var newUnit = new Unit(BaseType, newRawCode)
       {
         TechtreeStructuresBuilt = StructuresBuilt,
         StatsBuildTime = BuildTime,
@@ -40,7 +40,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       return newUnit;
     }
 
-    public WorkerFactory(UnitType baseType, string newRawCode) : base(baseType, newRawCode)
+    public WorkerFactory(UnitType baseType) : base(baseType)
     {
     }
   }
