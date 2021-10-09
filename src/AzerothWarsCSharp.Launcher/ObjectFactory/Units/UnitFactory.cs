@@ -42,7 +42,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
         TextName = TextName,
         ArtModelFile = ArtModelFile,
         ArtIconGameInterface = ArtIconGameInterface,
-        AbilitiesNormal = AbilitiesNormal
+        AbilitiesNormal = AbilitiesNormal,
+        //TextHotkey = Utils.GetHotkeyByButtonPosition(ButtonPosition)
       };
       GenerateTooltip(newUnit);
       return newUnit;

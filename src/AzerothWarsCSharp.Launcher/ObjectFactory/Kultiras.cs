@@ -45,9 +45,9 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       }.Generate("ktid");
 
       //Blacksmith
-      new BuildingFactory(UnitType.Blacksmith)
+      var blacksmith = new BuildingFactory(UnitType.Blacksmith)
       {
-        //ButtonPosition = new Point(2, 0),
+        ButtonPosition = new Point(2, 0),
         ScalingValue = 0.85F,
         SelectionScale = 3.00F,
         HitPoints = 200,
@@ -66,7 +66,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DamageSidesPerDie = 2,
         HitPoints = 230,
         AbilitiesNormal = System.Array.Empty<Ability>(),
-        StructuresBuilt = new Unit[] { },
+        StructuresBuilt = new Unit[] { blacksmith },
         Flavour = "The backbone of Kul'tiran seafaring society."
       }.Generate("kdec");
     }
