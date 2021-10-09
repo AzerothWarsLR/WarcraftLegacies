@@ -49,13 +49,41 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       {
         ButtonPosition = new Point(2, 0),
         ScalingValue = 0.85F,
-        SelectionScale = 3.00F,
         HitPoints = 200,
         UnitsTrained = System.Array.Empty<Unit>(),
         ResearchesAvailable = System.Array.Empty<Upgrade>(),
         Flavour = "Where the weapons and armor of Kul'tiras are forged.",
         AbilitiesNormal = System.Array.Empty<Ability>()
       }.Generate("kbla");
+
+      //Scout Tower
+      var scoutTowerFactory = new BuildingFactory(UnitType.Scouttower)
+      {
+        TextName = "Scout Tower",
+        HitPoints = 300,
+        ArtModelFile = @"buildings\human\HumanTower\HumanTower"
+      };
+      var scoutTower = scoutTowerFactory.Generate("ksco");
+
+      //Guard Tower
+      var guardTowerFactory = new BuildingFactory(UnitType.Scouttower)
+      {
+        TextName = "Guard Tower",
+        HitPoints = 500,
+        Parent = scoutTowerFactory,
+        RequiredAnimationNames = new string[] { "upgrade", "first" }
+      };
+      var guardTower = guardTowerFactory.Generate("kgua");
+
+      //Cannon Tower
+      var cannonTowerFactory = new BuildingFactory(UnitType.Scouttower)
+      {
+        TextName = "Cannon Tower",
+        HitPoints = 600,
+        Parent = scoutTowerFactory,
+        RequiredAnimationNames = new string[] { "upgrade", "second" }
+      };
+      var cannonTower = cannonTowerFactory.Generate("kcan");
 
       //Deckhand
       new WorkerFactory(UnitType.Peasant)
@@ -66,7 +94,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DamageSidesPerDie = 2,
         HitPoints = 230,
         AbilitiesNormal = System.Array.Empty<Ability>(),
-        StructuresBuilt = new Unit[] { blacksmith },
+        StructuresBuilt = new Unit[] { blacksmith, scoutTower, guardTower, cannonTower },
         Flavour = "The backbone of Kul'tiran seafaring society."
       }.Generate("kdec");
     }

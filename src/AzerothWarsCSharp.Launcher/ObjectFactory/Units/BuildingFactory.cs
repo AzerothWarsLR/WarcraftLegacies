@@ -43,7 +43,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
         TechtreeStructuresBuilt = StructuresBuilt,
         StatsBuildTime = BuildTime,
         ArtScalingValue = ScalingValue,
-        ArtSelectionScale = SelectionScale,
         PathingCollisionSize = CollisionSize,
         ArtButtonPositionX = ButtonPosition.X,
         ArtButtonPositionY = ButtonPosition.Y,
@@ -58,7 +57,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
         TechtreeUnitsTrained = UnitsTrained,
         TechtreeResearchesAvailable = ResearchesAvailable,
         PathingPlacementPreventedBy = PathingPrevent,
-        PathingPlacementRequires = PathingRequire
+        PathingPlacementRequires = PathingRequire,
+        ArtRequiredAnimationNames = RequiredAnimationNames
       };
       GenerateTooltip(newUnit);
       return newUnit;

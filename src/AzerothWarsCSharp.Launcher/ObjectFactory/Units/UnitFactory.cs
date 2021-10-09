@@ -31,7 +31,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
         TechtreeStructuresBuilt = StructuresBuilt,
         StatsBuildTime = BuildTime,
         ArtScalingValue = ScalingValue,
-        ArtSelectionScale = SelectionScale,
         PathingCollisionSize = CollisionSize,
         ArtButtonPositionX = ButtonPosition.X,
         ArtButtonPositionY = ButtonPosition.Y,
@@ -43,43 +42,222 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
         ArtModelFile = ArtModelFile,
         ArtIconGameInterface = ArtIconGameInterface,
         AbilitiesNormal = AbilitiesNormal,
-        //TextHotkey = Utils.GetHotkeyByButtonPosition(ButtonPosition)
+        ArtRequiredAnimationNames = RequiredAnimationNames
       };
       GenerateTooltip(newUnit);
       return newUnit;
     }
 
-    public IEnumerable<Unit> StructuresBuilt { get; set; } = System.Array.Empty<Unit>();
+    private IEnumerable<Unit> _structuresBuilt;
+    public IEnumerable<Unit> StructuresBuilt
+    {
+      get
+      {
+        return _structuresBuilt ?? Parent?.StructuresBuilt ?? System.Array.Empty<Unit>();
+      }
+      set
+      {
+        _structuresBuilt = value;
+      }
+    }
 
-    public int BuildTime { get; set; } = 60;
+    private int? _buildTime;
+    public int BuildTime
+    {
+      get
+      {
+        return _buildTime ?? Parent?.BuildTime ?? 5;
+      }
+      set
+      {
+        _buildTime = value;
+      }
+    }
 
-    public float ScalingValue { get; set; } = 1;
+    private float? _scalingValue;
+    public float ScalingValue
+    {
+      get
+      {
+        return _scalingValue ?? Parent?.ScalingValue ?? 1;
+      }
+      set
+      {
+        _scalingValue = value;
+      }
+    }
 
-    public float SelectionScale { get; set; } = 2;
+    private float? _collisionSize;
+    public float CollisionSize
+    {
+      get
+      {
+        return _collisionSize ?? Parent?.CollisionSize ?? 1;
+      }
+      set
+      {
+        _collisionSize = value;
+      }
+    }
 
-    public float CollisionSize { get; set; } = 1;
+    private Point? _buttonPosition;
+    public Point ButtonPosition
+    {
+      get
+      {
+        return _buttonPosition ?? Parent?.ButtonPosition ?? new Point(0, 0);
+      }
+      set
+      {
+        _buttonPosition = value;
+      }
+    }
 
-    public Point ButtonPosition { get; set; } = new Point(0, 0);
+    private string _flavour;
+    public string Flavour
+    {
+      get
+      {
+        return _flavour ?? Parent?.Flavour ?? "PLACEHOLDERFLAVOR";
+      }
+      set
+      {
+        _flavour = value;
+      }
+    }
 
-    public string Flavour { get; set; } = "PLACEHOLDERFLAVOR";
 
-    public int DamageBase { get; set; } = 0;
+    private int? _damageBase;
+    public int DamageBase
+    {
+      get
+      {
+        return _damageBase ?? Parent?.DamageBase ?? 0;
+      }
+      set
+      {
+        _damageBase = value;
+      }
+    }
 
-    public int DamageNumberOfDice { get; set; } = 0;
+    private int? _damageNumberOfDice;
+    public int DamageNumberOfDice
+    {
+      get
+      {
+        return _damageNumberOfDice ?? Parent?.DamageNumberOfDice ?? 0;
+      }
+      set
+      {
+        _damageNumberOfDice = value;
+      }
+    }
 
-    public int DamageSidesPerDie { get; set; } = 0;
+    private int? _damageSidesPerDie;
+    public int DamageSidesPerDie
+    {
+      get
+      {
+        return _damageSidesPerDie ?? Parent?.DamageSidesPerDie ?? 0;
+      }
+      set
+      {
+        _damageSidesPerDie = value;
+      }
+    }
 
-    public int HitPoints { get; set; } = 100;
+    private int? _hitPoints;
+    public int HitPoints
+    {
+      get
+      {
+        return _hitPoints ?? Parent?.HitPoints ?? 1;
+      }
+      set
+      {
+        _hitPoints = value;
+      }
+    }
 
-    public string TextName { get; set; } = "PLACEHOLDERNAME";
+    private string _textName;
+    public string TextName
+    {
+      get
+      {
+        return _textName ?? Parent?.TextName ?? "PLACEHOLDERNAME";
+      }
+      set
+      {
+        _textName = value;
+      }
+    }
 
-    public string ArtModelFile { get; set; } = @"units\human\Peasant\Peasant";
+    private string _artModelFile;
+    public string ArtModelFile
+    {
+      get
+      {
+        return _artModelFile ?? Parent?.ArtModelFile ?? @"units\human\Peasant\Peasant";
+      }
+      set
+      {
+        _artModelFile = value;
+      }
+    }
 
-    public string ArtIconGameInterface { get; set; } = @"ReplaceableTextures\CommandButtons\BTNPeasant.blp";
+    private string _artIconGameInterface;
+    public string ArtIconGameInterface
+    {
+      get
+      {
+        return _artIconGameInterface ?? Parent?.ArtIconGameInterface ?? @"ReplaceableTextures\CommandButtons\BTNPeasant.blp";
+      }
+      set
+      {
+        _artIconGameInterface = value;
+      }
+    }
 
-    public UnitType BaseType { get; set; }
+    private UnitType? _baseType;
+    public UnitType BaseType
+    {
+      get
+      {
+        return _baseType ?? Parent?.BaseType ?? UnitType.Peasant;
+      }
+      set
+      {
+        _baseType = value;
+      }
+    }
 
-    public IEnumerable<Ability> AbilitiesNormal { get; set; } = System.Array.Empty<Ability>();
+    private IEnumerable<Ability> _abilitiesNormal;
+    public IEnumerable<Ability> AbilitiesNormal
+    {
+      get
+      {
+        return _abilitiesNormal ?? Parent?.AbilitiesNormal ?? System.Array.Empty<Ability>();
+      }
+      set
+      {
+        _abilitiesNormal = value;
+      }
+    }
+
+    private IEnumerable<string> _requiredAnimationNames;
+    public IEnumerable<string> RequiredAnimationNames
+    {
+      get
+      {
+        return _requiredAnimationNames ?? Parent?.RequiredAnimationNames ?? System.Array.Empty<string>();
+      }
+      set
+      {
+        _requiredAnimationNames = value;
+      }
+    }
+
+    public UnitFactory Parent { get; set; }
 
     public UnitFactory(UnitType baseType)
     {

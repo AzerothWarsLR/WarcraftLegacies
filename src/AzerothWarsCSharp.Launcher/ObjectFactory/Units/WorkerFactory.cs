@@ -23,7 +23,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
         TechtreeStructuresBuilt = StructuresBuilt,
         StatsBuildTime = BuildTime,
         ArtScalingValue = ScalingValue,
-        ArtSelectionScale = SelectionScale,
         PathingCollisionSize = CollisionSize,
         ArtButtonPositionX = ButtonPosition.X,
         ArtButtonPositionY = ButtonPosition.Y,
