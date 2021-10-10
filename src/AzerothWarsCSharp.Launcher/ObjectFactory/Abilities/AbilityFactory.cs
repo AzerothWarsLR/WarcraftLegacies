@@ -66,7 +66,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     /// <summary>
     /// Name of the ability.
     /// </summary>
-    public string TextName { get; set; }
+    public string TextName { get; set; } = "PLACEHOLDERTEXTNAME";
 
     public Point ButtonPosition { get; set; }
   }

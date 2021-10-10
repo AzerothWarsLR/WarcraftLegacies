@@ -19,13 +19,14 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       }
     }
 
-    private void GenerateStats(Evasion ability)
+    private void GenerateCoreEvasion(Evasion ability)
     {
       for (var i = 0; i < Levels; i++)
       {
-        ability.ArtIconNormal = ArtIcon;
-        ability.ArtIconResearch = ArtIcon;
+        ability.DataChanceToEvade[i + 1] = ChanceToEvade[i];
       }
+      ability.ArtIconNormal = ArtIcon;
+      ability.ArtIconResearch = ArtIcon;
       ability.StatsLevels = Levels;
       ability.ArtButtonPositionNormalX = ButtonPosition.X;
       ability.ArtButtonPositionNormalY = ButtonPosition.Y;
@@ -34,7 +35,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     public override Evasion Generate(string newRawCode)
     {
       var newAbility = new Evasion(newRawCode);
-      GenerateStats(newAbility);
+      GenerateCoreEvasion(newAbility);
       GenerateTooltip(newAbility);
       return newAbility;
     }

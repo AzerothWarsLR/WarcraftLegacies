@@ -96,10 +96,22 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       };
       var evasion = evasionFactory.Generate("aaaa");
 
-      //Blademaster
-      new HeroFactory(UnitType.Blademaster)
+      //Immolation
+      var immolationFactory = new ImmolationFactory()
       {
-        AbilitiesHero = new Ability[] { evasion },
+        DamagePerSecond = new float[] { 10F, 20F, 30F, 40F },
+        ManaCost = new int[] { 5, 5, 5, 5 },
+        Levels = 4,
+        ArtIcon = @"ReplaceableTextures\CommandButtons\BTNImmolation.blp",
+        TextName = "Immolation",
+        ButtonPosition = new Point(1, 2)
+      };
+      var immolation = immolationFactory.Generate("imm1");
+
+      //Blademaster
+      new HeroFactory(UnitType.Demonhunter)
+      {
+        AbilitiesHero = new Ability[] { evasion, immolation },
         Strength = 100,
         Agility = 10,
         Intelligence = 5,
