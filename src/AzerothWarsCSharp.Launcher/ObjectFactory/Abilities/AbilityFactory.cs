@@ -2,7 +2,7 @@
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
-  public abstract class AbilityFactory<T> : IObjectFactory<T> where T : Ability, new()
+  public abstract class AbilityFactory<T> : IObjectFactory<T> where T : Ability
   {
     /// <summary>
     /// How many levels this ability has.

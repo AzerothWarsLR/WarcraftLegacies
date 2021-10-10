@@ -2,7 +2,7 @@
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
-  public abstract class ActiveAbilityFactory<T> : AbilityFactory<T> where T : Ability, new()
+  public abstract class ActiveAbilityFactory<T> : AbilityFactory<T> where T : Ability
   {
     /// <summary>
     /// How much mana the ability costs.
