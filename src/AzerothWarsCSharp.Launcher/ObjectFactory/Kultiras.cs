@@ -129,7 +129,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         ButtonPosition = new Point(3, 2),
         BonusHitPoints = { 200, 100, 6000 },
         AlternateForm = { scoutTower, cannonTower, guardTower },
-        NormalForm = { blacksmith },
+        NormalForm = { blacksmith, blacksmith, blacksmith },
         MorphFlags = { MorphFlags.Uninterruptable },
         Duration = { 60, 60, 120 },
         TransformTime = { 1, 1, 1}

@@ -25,6 +25,7 @@ namespace AzerothWarsCSharp.Source
 				CreateUnit(Player(0), FourCC("kdec"), 0, 0, 0);
 				CreateUnit(Player(0), FourCC("ktid"), 0, 0, 0);
 				CreateUnit(Player(0), FourCC("kbla"), 0, 0, 0);
+				CreateUnit(Player(0), FourCC("drag"), 0, 0, 0);
 
 				CreateUnit(Player(0), FourCC("ksco"), 100, 0, 0);
 				CreateUnit(Player(0), FourCC("kgua"), 100, 200, 0);

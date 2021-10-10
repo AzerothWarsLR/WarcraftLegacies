@@ -163,6 +163,7 @@ namespace Launcher
     private static void GenerateObjectData()
     {
       Kultiras.Setup();
+      Quelthalas.Setup();
     }
 
     private static void WriteObjectData(string outputFolderPath)
