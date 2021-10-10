@@ -8,6 +8,7 @@ namespace AzerothWarsCSharp.Launcher
   public class LeveledAbilityProperty<T> : IEnumerable<T> where T : struct
   {
     private readonly IList<T> _values = new List<T>();
+    private readonly string _name;
 
     public void Add(T value)
     {
@@ -24,9 +25,9 @@ namespace AzerothWarsCSharp.Launcher
       return GetEnumerator();
     }
 
-    private string NumberToString(T number, bool isPercentage = false)
+    private static string NumberToString(T number, bool isPercentage = false)
     {
-      var mult = isPercentage ? 100 : 0;
+      var mult = isPercentage ? 100 : 1;
       if (isPercentage)
       {
         if (number is int intNumber)
@@ -42,6 +43,21 @@ namespace AzerothWarsCSharp.Launcher
     }
 
     /// <summary>
+    /// Returns a formatted string conversion of the value at the specified index.
+    /// </summary>
+    /// <param name="index"></param>
+    /// <param name="isPercentage"></param>
+    /// <returns></returns>
+    public string ValueToString(int index = 0, bool isPercentage = true)
+    {
+      if (isPercentage)
+      {
+        return NumberToString(_values[index]);
+      }
+      return string.Empty;
+    }
+
+    /// <summary>
     /// Convert the values in this property to a string series, like 10/20/30/40.
     /// </summary>
     /// <param name="isPercentage"></param>
@@ -49,6 +65,7 @@ namespace AzerothWarsCSharp.Launcher
     public string ToConcatenatedString(bool isPercentage = false)
     {
       StringBuilder stringBuilder = new();
+      stringBuilder.Append($"|n|cffecce87{_name}|r: ");
       for (int i = 0; i < _values.Count; i++)
       {
         var number = _values[i];
@@ -78,6 +95,11 @@ namespace AzerothWarsCSharp.Launcher
     {
       get =>  key < _values.Count ? _values[key] : default;
       set => _values[key] = value;
+    }
+
+    public LeveledAbilityProperty(string name)
+    {
+      _name = name;
     }
   }
 }

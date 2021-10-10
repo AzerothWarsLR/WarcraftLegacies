@@ -99,8 +99,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       //Immolation
       var immolationFactory = new ImmolationFactory()
       {
-        DamagePerSecond = new float[] { 10F, 20F, 30F, 40F },
-        ManaCost = new int[] { 5, 5, 5, 5 },
+        DamagePerSecond = { 10F, 20F, 30F, 40F },
+        ManaCost = { 5, 5, 5, 5 },
         Levels = 4,
         ArtIcon = @"ReplaceableTextures\CommandButtons\BTNImmolation.blp",
         TextName = "Immolation",
