@@ -96,6 +96,17 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       };
       var evasion = evasionFactory.Generate("aaaa");
 
+      //Blademaster
+      new HeroFactory(UnitType.Blademaster)
+      {
+        AbilitiesHero = new Ability[] { evasion },
+        Strength = 100,
+        Agility = 10,
+        Intelligence = 5,
+        ProperName = "YakaryBovine",
+        TextName = "Blademaster",
+      }.Generate("Yakb");
+
       //Deckhand
       new WorkerFactory(UnitType.Peasant)
       {

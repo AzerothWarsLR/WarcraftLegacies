@@ -22,28 +22,35 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     }
 
     /// <summary>
+    /// Apply non-tooltip information from the factory to a unit being generated.
+    /// </summary>
+    /// <param name="unit"></param>
+    protected void GenerateCore(Unit unit)
+    {
+      unit.TechtreeStructuresBuilt = StructuresBuilt;
+      unit.StatsBuildTime = BuildTime;
+      unit.ArtScalingValue = ScalingValue;
+      unit.PathingCollisionSize = CollisionSize;
+      unit.ArtButtonPositionX = ButtonPosition.X;
+      unit.ArtButtonPositionY = ButtonPosition.Y;
+      unit.CombatAttack1DamageBase = DamageBase;
+      unit.CombatAttack1DamageNumberOfDice = DamageNumberOfDice;
+      unit.CombatAttack1DamageSidesPerDie = DamageSidesPerDie;
+      unit.StatsHitPointsMaximumBase = HitPoints;
+      unit.TextName = TextName;
+      unit.ArtModelFile = ArtModelFile;
+      unit.ArtIconGameInterface = ArtIconGameInterface;
+      unit.AbilitiesNormal = AbilitiesNormal;
+      unit.ArtRequiredAnimationNames = RequiredAnimationNames;
+    }
+
+    /// <summary>
     /// Generate a unit instance.
     /// </summary>
     public Unit Generate(string newRawCode)
     {
-      var newUnit = new Unit(BaseType, newRawCode)
-      {
-        TechtreeStructuresBuilt = StructuresBuilt,
-        StatsBuildTime = BuildTime,
-        ArtScalingValue = ScalingValue,
-        PathingCollisionSize = CollisionSize,
-        ArtButtonPositionX = ButtonPosition.X,
-        ArtButtonPositionY = ButtonPosition.Y,
-        CombatAttack1DamageBase = DamageBase,
-        CombatAttack1DamageNumberOfDice = DamageNumberOfDice,
-        CombatAttack1DamageSidesPerDie = DamageSidesPerDie,
-        StatsHitPointsMaximumBase = HitPoints,
-        TextName = TextName,
-        ArtModelFile = ArtModelFile,
-        ArtIconGameInterface = ArtIconGameInterface,
-        AbilitiesNormal = AbilitiesNormal,
-        ArtRequiredAnimationNames = RequiredAnimationNames
-      };
+      var newUnit = new Unit(BaseType, newRawCode);
+      GenerateCore(newUnit);
       GenerateTooltip(newUnit);
       return newUnit;
     }
