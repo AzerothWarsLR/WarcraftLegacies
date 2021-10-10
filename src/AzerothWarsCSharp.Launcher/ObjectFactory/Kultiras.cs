@@ -102,16 +102,28 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DamagePerSecond = { 10F, 20F, 30F, 40F },
         ManaCost = { 5, 5, 5, 5 },
         Levels = 4,
-        ArtIcon = @"ReplaceableTextures\CommandButtons\BTNImmolation.blp",
+        ArtIcon = @"ReplaceableTextures\CommandButtons\BTNImmolationOn.blp",
         TextName = "Immolation",
         ButtonPosition = new Point(1, 2)
       };
       var immolation = immolationFactory.Generate("imm1");
 
+      //Immolation
+      var manaburnfactory = new ManaBurnFactory()
+      {
+        MaxManaDrained = { 50, 100, 200, 250 },
+        CastRange = { 300 },
+        Levels = 4,
+        ArtIcon = @"ReplaceableTextures\CommandButtons\BTNManaBurn.blp",
+        TextName = "Mana Burn",
+        ButtonPosition = new Point(0, 2)
+      };
+      var manaburn = manaburnfactory.Generate("mbur");
+
       //Blademaster
       new HeroFactory(UnitType.Demonhunter)
       {
-        AbilitiesHero = new Ability[] { evasion, immolation },
+        AbilitiesHero = new Ability[] { evasion, immolation, manaburn },
         Strength = 100,
         Agility = 10,
         Intelligence = 5,
