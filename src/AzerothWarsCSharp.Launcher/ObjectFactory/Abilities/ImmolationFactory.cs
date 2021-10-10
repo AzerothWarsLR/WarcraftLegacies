@@ -34,15 +34,11 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     {
       for (var i = 0; i < Levels; i++)
       {
-        //ability.DataBufferManaRequired[i+1] = i < BufferManaRequired.Length ? BufferManaRequired[i] : 0;
-        //ability.DataDamagePerInterval[i+1] = i < DamagePerSecond.Length ? DamagePerSecond[i] : 0;
-        //ability.DataManaDrainedPerSecond[i+1] = i < ManaDrainedPerSecond.Length ? ManaDrainedPerSecond[i] : 0;
+        ability.DataBufferManaRequired[i+1] = BufferManaRequired[i];
+        ability.DataDamagePerInterval[i+1] = DamagePerSecond[i];
+        ability.DataManaDrainedPerSecond[i+1] = ManaDrainedPerSecond[i];
         ability.StatsDurationNormal[i + 1] = 1;
       }
-      ability.ArtButtonPositionNormalX = ButtonPosition.X;
-      ability.ArtButtonPositionNormalY = ButtonPosition.Y;
-      ability.ArtIconNormal = ArtIcon;
-      ability.ArtIconResearch = ArtIcon;
     }
 
     public override ImmolationCreep Generate(string newRawCode)

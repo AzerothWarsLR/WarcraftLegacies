@@ -26,12 +26,15 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 
     protected override void ApplyStats(DemonHunterMetamorphosis ability)
     {
-      //ability.DataAlternateFormHitPointBonus = BonusHitPoints;
-      //ability.DataAlternateFormUnit = AlternateForm;
-      //ability.DataMorphingFlags = MorphFlags;
-      //ability.DataNormalFormUnit = NormalForm;
-      //ability.StatsDurationNormal = Duration;
-      //ability.StatsDurationHero = TransformTime;
+      for (var i = 0; i < Levels; i++)
+      {
+        ability.DataAlternateFormHitPointBonus[i + 1] = BonusHitPoints[i];
+        ability.DataAlternateFormUnit[i + 1] = AlternateForm[i];
+        ability.DataMorphingFlags[i + 1] = MorphFlags[i];
+        ability.DataNormalFormUnit[i + 1] = NormalForm[i];
+        ability.StatsDurationNormal[i + 1] = Duration[i];
+        ability.StatsDurationHero[i + 1] = TransformTime[i];
+      }
     }
 
     public override DemonHunterMetamorphosis Generate(string newRawCode)

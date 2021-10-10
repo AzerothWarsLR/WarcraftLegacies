@@ -26,13 +26,10 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     {
       for (var i = 0; i < Levels; i++)
       {
-        //ability.DataBufferManaRequired[i+1] = i < BufferManaRequired.Length ? BufferManaRequired[i] : 0;
-        //ability.DataDamagePerInterval[i+1] = i < DamagePerSecond.Length ? DamagePerSecond[i] : 0;
-        //ability.DataManaDrainedPerSecond[i+1] = i < ManaDrainedPerSecond.Length ? ManaDrainedPerSecond[i] : 0;
+        ability.DataMaxManaDrained[i+1] = MaxManaDrained[i];
+        ability.StatsCastRange[i + 1] = CastRange[i];
         ability.StatsDurationNormal[i + 1] = 1;
       }
-      ability.ArtIconNormal = ArtIcon;
-      ability.ArtIconResearch = ArtIcon;
     }
 
     public override DemonHunterManaBurn Generate(string newRawCode)
