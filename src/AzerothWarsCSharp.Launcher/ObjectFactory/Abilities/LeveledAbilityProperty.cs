@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AzerothWarsCSharp.Launcher
 {
-  public class LeveledAbilityProperty<T> : IEnumerable<T> where T : struct
+  public class LeveledAbilityProperty<T> : IEnumerable<T>
   {
     private readonly IList<T> _values = new List<T>();
     private readonly string _name;

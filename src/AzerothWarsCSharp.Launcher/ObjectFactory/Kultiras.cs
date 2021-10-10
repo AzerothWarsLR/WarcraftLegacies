@@ -120,10 +120,26 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       };
       var manaburn = manaburnfactory.Generate("mbur");
 
+      //Metamorphosis
+      var metamorphosisFactory = new MetamorphosisFactory()
+      {
+        Levels = 3,
+        ArtIcon = @"ReplaceableTextures\CommandButtons\BTNMetamorphosis.blp",
+        TextName = "Metamorphosis",
+        ButtonPosition = new Point(3, 2),
+        BonusHitPoints = { 200, 100, 6000 },
+        AlternateForm = { scoutTower, cannonTower, guardTower },
+        NormalForm = { blacksmith },
+        MorphFlags = { MorphFlags.Uninterruptable },
+        Duration = { 60, 60, 120 },
+        TransformTime = { 1, 1, 1}
+      };
+      var metamorphosis = metamorphosisFactory.Generate("meta");
+
       //Blademaster
       new HeroFactory(UnitType.Demonhunter)
       {
-        AbilitiesHero = new Ability[] { evasion, immolation, manaburn },
+        AbilitiesHero = new Ability[] { evasion, immolation, manaburn, metamorphosis },
         Strength = 100,
         Agility = 10,
         Intelligence = 5,
