@@ -4,11 +4,11 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
   public class EvasionFactory : PassiveAbilityFactory<Evasion>
   {
-    public float[] ChanceToEvade { get; set; }
+    public LeveledAbilityProperty<float> ChanceToEvade { get; set; } = new();
 
     private void GenerateTooltip(Evasion ability)
     {
-      ability.TextTooltipLearnExtended = $"Gives a {ArrayToConcatenatedString(ChanceToEvade, true)} chance to avoid an attack.";
+      ability.TextTooltipLearnExtended = $"Gives a {ChanceToEvade.ToConcatenatedString(true)} chance to avoid an attack.";
       ability.TextTooltipLearn = $"Learn {TextName} - [|cffffcc00Level %d|r]";
       ability.TextName = TextName;
       for (var i = 0; i < Levels; i++)

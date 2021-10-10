@@ -88,7 +88,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       //Evasion
       var evasionFactory = new EvasionFactory()
       {
-        ChanceToEvade = new float[] { 0.1F, 0.2F, 0.3F, 0.4F },
+        ChanceToEvade = { 0.1F, 0.2F, 0.3F, 0.4F },
         Levels = 4,
         ArtIcon = @"ReplaceableTextures\PassiveButtons\PASBTNEvasion.blp",
         TextName = "Evasion",

@@ -6,46 +6,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
   public abstract class AbilityFactory<T> : IObjectFactory<T> where T : Ability
   {
-    public string NumberToString(float number, bool isPercentage = false)
-    {
-      if (isPercentage) {
-        return (number * 100).ToString("n0");
-      }
-      return number.ToString("n0");
-    }
-
-    public string ArrayToConcatenatedString(float[] array, bool isPercentage = false)
-    {
-      StringBuilder stringBuilder = new();
-      for (int i = 0; i < array.Length; i++)
-      {
-        var number = array[i];
-        if (isPercentage) {
-          stringBuilder.Append(NumberToString(number, true));
-          stringBuilder.Append('%');
-        } else
-        {
-          stringBuilder.Append(number);
-        }
-        if (i < array.Length - 1)
-        {
-          stringBuilder.Append('/');
-        }
-      }
-      return stringBuilder.ToString();
-    }
-
-    public string ArrayToConcatenatedString(int[] array)
-    {
-      StringBuilder stringBuilder = new();
-      foreach (var number in array)
-      {
-        stringBuilder.Append(number);
-        stringBuilder.Append('/');
-      }
-      return stringBuilder.ToString();
-    }
-
     /// <summary>
     /// How many levels this ability has.
     /// </summary>
