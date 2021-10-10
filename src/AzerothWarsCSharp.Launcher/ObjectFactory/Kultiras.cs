@@ -85,6 +85,17 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       };
       var cannonTower = cannonTowerFactory.Generate("kcan");
 
+      //Evasion
+      var evasionFactory = new EvasionFactory()
+      {
+        ChanceToEvade = new float[] { 0.1F, 0.2F, 0.3F, 0.4F },
+        Levels = 4,
+        ArtIcon = @"ReplaceableTextures\PassiveButtons\PASBTNEvasion.blp",
+        TextName = "Evasion",
+        ButtonPosition = new Point(2,2)
+      };
+      var evasion = evasionFactory.Generate("aaaa");
+
       //Deckhand
       new WorkerFactory(UnitType.Peasant)
       {
@@ -93,9 +104,9 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DamageNumberOfDice = 1,
         DamageSidesPerDie = 2,
         HitPoints = 230,
-        AbilitiesNormal = System.Array.Empty<Ability>(),
+        AbilitiesNormal = new Ability[] { evasion },
         StructuresBuilt = new Unit[] { blacksmith, scoutTower, guardTower, cannonTower },
-        Flavour = "The backbone of Kul'tiran seafaring society."
+        Flavour = "The backbone of Kul'tiran seafaring society.",
       }.Generate("kdec");
     }
   }

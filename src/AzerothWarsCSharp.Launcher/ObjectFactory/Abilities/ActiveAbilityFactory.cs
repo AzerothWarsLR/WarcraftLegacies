@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     /// How much mana the ability costs.
     /// </summary>
     public int ManaCost { get; set; } = 0;
-    
+
     /// <summary>
     /// The time the unit with the ability has to wait before using the ability again.
     /// </summary>

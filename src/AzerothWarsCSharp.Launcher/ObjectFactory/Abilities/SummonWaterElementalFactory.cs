@@ -64,10 +64,5 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     /// How many summons this ability makes, by level.
     /// </summary>
     public int[] SummonCount { get; set; }
-
-    /// <summary>
-    /// The icon for this ability and its associated buff.
-    /// </summary>
-    public string ArtIcon { get; set; }
   }
 }
