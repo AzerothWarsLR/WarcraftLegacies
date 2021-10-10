@@ -1,27 +1,6 @@
 function InitGlobals()
 end
 
-function CreateUnitsForPlayer0()
-    local p = Player(0)
-    local u
-    local unitID
-    local t
-    local life
-    u = BlzCreateUnitWithSkin(p, FourCC("Hblm"), -233.6, -62.2, 69.051, FourCC("Hblm"))
-end
-
-function CreatePlayerBuildings()
-end
-
-function CreatePlayerUnits()
-    CreateUnitsForPlayer0()
-end
-
-function CreateAllUnits()
-    CreatePlayerBuildings()
-    CreatePlayerUnits()
-end
-
 function InitCustomPlayerSlots()
     SetPlayerStartLocation(Player(0), 0)
     SetPlayerColor(Player(0), ConvertPlayerColor(0))
@@ -41,7 +20,6 @@ function main()
     SetAmbientDaySound("LordaeronSummerDay")
     SetAmbientNightSound("LordaeronSummerNight")
     SetMapMusic("Music", true, 0)
-    CreateAllUnits()
     InitBlizzard()
     InitGlobals()
 end
