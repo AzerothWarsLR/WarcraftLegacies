@@ -3,11 +3,11 @@ using War3Api.Object.Abilities;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
-  public class EvasionFactory : PassiveAbilityFactory<Evasion>
+  public sealed class EvasionFactory : PassiveAbilityFactory<Evasion>
   {
     public LeveledAbilityProperty<float> ChanceToEvade { get; set; } = new("Evasion chance");
 
-    private void GenerateTooltipLearnExtended(Evasion ability)
+    protected override void ApplyTooltipLearnExtended(Evasion ability)
     {
       var stringBuilder = new StringBuilder();
       stringBuilder.Append(@$"Gives a chance to evade incoming attacks.");
@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       ability.TextTooltipLearnExtended = stringBuilder.ToString();
     }
 
-    private void GenerateTooltip(Evasion ability)
+    protected override void ApplyTooltipNormalExtended(Evasion ability)
     {
       ability.TextTooltipLearn = $"Learn {TextName} - [|cffffcc00Level %d|r]";
       ability.TextName = TextName;
@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       }
     }
 
-    private void GenerateCoreEvasion(Evasion ability)
+    protected override void ApplyStats(Evasion ability)
     {
       for (var i = 0; i < Levels; i++)
       {
@@ -44,10 +44,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     public override Evasion Generate(string newRawCode)
     {
       var newAbility = new Evasion(newRawCode);
-      GenerateCoreEvasion(newAbility);
-      GenerateTooltipLearnExtended(newAbility);
-      GenerateTooltip(newAbility);
-      GenerateButtonPositions(newAbility);
+      Apply(newAbility);
       return newAbility;
     }
   }

@@ -4,9 +4,14 @@ using War3Api.Object.Abilities;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
-  public class MetamorphosisFactory : ActiveAbilityFactory<DemonHunterMetamorphosis>
+  public sealed class MetamorphosisFactory : ActiveAbilityFactory<DemonHunterMetamorphosis>
   {
-    private void GenerateTooltip(DemonHunterMetamorphosis ability)
+    protected override void ApplyTooltipNormalExtended(DemonHunterMetamorphosis ability)
+    {
+      
+    }
+
+    protected override void ApplyTooltipLearnExtended(DemonHunterMetamorphosis ability)
     {
       ability.TextName = TextName;
 
@@ -19,7 +24,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       ability.TextTooltipLearnExtended = stringBuilder.ToString();
     }
 
-    private void GenerateMetamorphosis(DemonHunterMetamorphosis ability)
+    protected override void ApplyStats(DemonHunterMetamorphosis ability)
     {
       //ability.DataAlternateFormHitPointBonus = BonusHitPoints;
       //ability.DataAlternateFormUnit = AlternateForm;
@@ -32,10 +37,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     public override DemonHunterMetamorphosis Generate(string newRawCode)
     {
       var newAbility = new DemonHunterMetamorphosis(newRawCode);
-      GenerateCore(newAbility);
-      GenerateMetamorphosis(newAbility);
-      GenerateTooltip(newAbility);
-      GenerateButtonPositions(newAbility);
+      Apply(newAbility);
       return newAbility;
     }
 

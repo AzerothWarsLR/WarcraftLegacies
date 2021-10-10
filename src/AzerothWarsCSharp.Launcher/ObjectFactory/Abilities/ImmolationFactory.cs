@@ -3,14 +3,14 @@ using War3Api.Object.Abilities;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
-  public class ImmolationFactory : ActiveAbilityFactory<ImmolationCreep>
+  public sealed class ImmolationFactory : ActiveAbilityFactory<ImmolationCreep>
   {
     public LeveledAbilityProperty<float> BufferManaRequired { get; set; } = new("Buffer mana required");
     public LeveledAbilityProperty<float> DamagePerSecond { get; set; } = new("Damage per second");
     public LeveledAbilityProperty<float> ManaDrainedPerSecond { get; set; } = new("Mana drained per second");
     public LeveledAbilityProperty<float> AreaOfEffect { get; set; } = new("Area of effect");
 
-    private void GenerateTooltip(ImmolationCreep ability)
+    protected override void ApplyTooltipLearnExtended(ImmolationCreep ability)
     {
       ability.TextName = TextName;
 
@@ -25,7 +25,12 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       ability.TextTooltipLearnExtended = stringBuilder.ToString();
     }
 
-    private void GenerateCoreImmolation(ImmolationCreep ability)
+    protected override void ApplyTooltipNormalExtended(ImmolationCreep ability)
+    {
+
+    }
+
+    protected override void ApplyStats(ImmolationCreep ability)
     {
       for (var i = 0; i < Levels; i++)
       {
@@ -43,10 +48,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     public override ImmolationCreep Generate(string newRawCode)
     {
       var newAbility = new ImmolationCreep(newRawCode);
-      GenerateCore(newAbility);
-      GenerateCoreImmolation(newAbility);
-      GenerateTooltip(newAbility);
-      GenerateButtonPositions(newAbility);
+      Apply(newAbility);
       return newAbility;
     }
 

@@ -4,9 +4,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
   public abstract class ActiveAbilityFactory<T> : AbilityFactory<T> where T : Ability
   {
-    protected void GenerateCore(T ability)
+    protected override void ApplyCore(T ability)
     {
-      ability.StatsLevels = Levels;
       for (var i = 0; i < Levels; i++)
       {
         //ability.StatsManaCost[i + 1] = i < ManaCost.Length ? ManaCost[i] : 0;

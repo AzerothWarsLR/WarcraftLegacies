@@ -3,9 +3,9 @@ using War3Api.Object.Abilities;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
-  public class ManaBurnFactory : ActiveAbilityFactory<DemonHunterManaBurn>
+  public sealed class ManaBurnFactory : ActiveAbilityFactory<DemonHunterManaBurn>
   {
-    private void GenerateTooltip(DemonHunterManaBurn ability)
+    protected override void ApplyTooltipLearnExtended(DemonHunterManaBurn ability)
     {
       ability.TextName = TextName;
 
@@ -17,7 +17,12 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       ability.TextTooltipLearnExtended = stringBuilder.ToString();
     }
 
-    private void GenerateCoreManaBurn(DemonHunterManaBurn ability)
+    protected override void ApplyTooltipNormalExtended(DemonHunterManaBurn ability)
+    {
+
+    }
+
+    protected override void ApplyStats(DemonHunterManaBurn ability)
     {
       for (var i = 0; i < Levels; i++)
       {
@@ -26,8 +31,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
         //ability.DataManaDrainedPerSecond[i+1] = i < ManaDrainedPerSecond.Length ? ManaDrainedPerSecond[i] : 0;
         ability.StatsDurationNormal[i + 1] = 1;
       }
-      ability.ArtButtonPositionNormalX = ButtonPosition.X;
-      ability.ArtButtonPositionNormalY = ButtonPosition.Y;
       ability.ArtIconNormal = ArtIcon;
       ability.ArtIconResearch = ArtIcon;
     }
@@ -35,10 +38,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     public override DemonHunterManaBurn Generate(string newRawCode)
     {
       var newAbility = new DemonHunterManaBurn(newRawCode);
-      GenerateCore(newAbility);
-      GenerateCoreManaBurn(newAbility);
-      GenerateTooltip(newAbility);
-      GenerateButtonPositions(newAbility);
+      Apply(newAbility);
       return newAbility;
     }
 

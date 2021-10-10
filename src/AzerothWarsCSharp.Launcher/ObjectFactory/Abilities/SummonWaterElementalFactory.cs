@@ -3,9 +3,14 @@ using War3Api.Object.Abilities;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
-  public class SummonWaterElementalFactory : ActiveAbilityFactory<ArchMageWaterElemental>
+  public sealed class SummonWaterElementalFactory : ActiveAbilityFactory<ArchMageWaterElemental>
   {
-    private void GenerateTooltip(ArchMageWaterElemental archMageWaterElemental)
+    protected override void ApplyTooltipLearnExtended(ArchMageWaterElemental archMageWaterElemental)
+    {
+
+    }
+
+    protected override void ApplyTooltipNormalExtended(ArchMageWaterElemental archMageWaterElemental)
     {
       for (var i = 0; i < Levels; i++)
       {
@@ -17,7 +22,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       }
     }
 
-    private void GenerateStats(ArchMageWaterElemental ability)
+    protected override void ApplyStats(ArchMageWaterElemental ability)
     {
       ability.TextName = $"Summon {SummonedUnit[0].TextName}";
       for (var i = 0; i < Levels; i++)
@@ -45,8 +50,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     public override ArchMageWaterElemental Generate(string newRawCode)
     {
       var newAbility = new ArchMageWaterElemental(newRawCode);
-      GenerateStats(newAbility);
-      GenerateTooltip(newAbility);
+      Apply(newAbility);
       return newAbility;
     }
 
