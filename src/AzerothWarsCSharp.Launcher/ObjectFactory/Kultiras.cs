@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       var seaElemental = new UnitFactory(UnitType.Seaelemental)
       {
         TextName = "Sea Elemental",
-        ArtIconGameInterface = @"ReplaceableTextures\CommandButtons\BTNSeaElemental.blp",
+        ArtIconGameInterface = "SeaElemental",
         AbilitiesNormal = System.Array.Empty<Ability>(),
         DamageBase = 10,
         DamageNumberOfDice = 2,
@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         Levels = 1,
         SummonedUnit = new Unit[] { seaElemental },
         SummonCount = new int[] { 1 },
-        ArtIcon = seaElemental.ArtIconGameInterface,
+        Icon = seaElemental.ArtIconGameInterface,
         Duration = new int[] { 40 },
       }.Generate("asea");
 
@@ -90,7 +90,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       {
         ChanceToEvade = { 0.1F, 0.2F, 0.3F, 0.4F },
         Levels = 4,
-        ArtIcon = @"ReplaceableTextures\PassiveButtons\PASBTNEvasion.blp",
+        Icon = "Evasion",
         TextName = "Evasion",
         ButtonPosition = new Point(2,2)
       };
@@ -102,7 +102,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DamagePerSecond = { 10F, 20F, 30F, 40F },
         ManaCost = { 5, 5, 5, 5 },
         Levels = 4,
-        ArtIcon = @"ReplaceableTextures\CommandButtons\BTNImmolationOn.blp",
+        Icon = "ImmolationOn",
         TextName = "Immolation",
         ButtonPosition = new Point(1, 2)
       };
@@ -114,7 +114,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         MaxManaDrained = { 50, 100, 200, 250 },
         CastRange = { 300 },
         Levels = 4,
-        ArtIcon = @"ReplaceableTextures\CommandButtons\BTNManaBurn.blp",
+        Icon = @"ManaBurn",
         TextName = "Mana Burn",
         ButtonPosition = new Point(0, 2)
       };
@@ -124,7 +124,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       var metamorphosisFactory = new MetamorphosisFactory()
       {
         Levels = 3,
-        ArtIcon = @"ReplaceableTextures\CommandButtons\BTNMetamorphosis.blp",
+        Icon = @"Metamorphosis",
         TextName = "Metamorphosis",
         ButtonPosition = new Point(3, 2),
         BonusHitPoints = { 200, 100, 6000 },

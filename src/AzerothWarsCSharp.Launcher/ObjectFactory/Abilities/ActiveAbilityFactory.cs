@@ -4,6 +4,12 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
   public abstract class ActiveAbilityFactory<T> : AbilityFactory<T> where T : Ability
   {
+    protected override void ApplyIcons(T ability)
+    {
+      ability.ArtIconNormal = @$"ReplaceableTextures\CommandButtons\BTN{Icon}.blp";
+      ability.ArtIconResearch = @$"ReplaceableTextures\CommandButtons\BTN{Icon}.blp";
+    }
+
     protected override void ApplyCore(T ability)
     {
       for (var i = 0; i < Levels; i++)

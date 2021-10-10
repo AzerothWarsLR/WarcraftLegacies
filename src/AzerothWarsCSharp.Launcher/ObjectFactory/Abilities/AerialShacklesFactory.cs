@@ -50,8 +50,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
         ability.StatsDurationHero[i + 1] = DurationUnit[i];
         ability.StatsDurationHero[i + 1] = DurationHero[i];
       }
-      ability.ArtIconNormal = ArtIcon;
-      ability.ArtIconResearch = ArtIcon;
       ability.StatsLevels = Levels;
       ability.ArtButtonPositionNormalX = ButtonPosition.X;
       ability.ArtButtonPositionNormalY = ButtonPosition.Y;

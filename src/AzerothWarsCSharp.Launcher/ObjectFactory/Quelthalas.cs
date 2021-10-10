@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DurationUnit = { 40 },
         CastRange = { 550 },
         Levels = 1,
-        ArtIcon = @"ReplaceableTextures\CommandButtons\BTNMagicLariet.blp",
+        Icon = "MagicLariet",
         TextName = "Aerial Shackles",
         ButtonPosition = new Point(0, 0),
         DamagePerSecond = { 8 },
@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       new UnitFactory(UnitType.Dragonhawk)
       {
         TextName = "Dragonhawk Rider",
-        ArtIconGameInterface = @"ReplaceableTextures\CommandButtons\BTNDragonHawk.blp",
+        ArtIconGameInterface = "DragonHawk",
         AbilitiesNormal = new Ability[] { aerialshackles },
         DamageBase = 10,
         DamageNumberOfDice = 2,

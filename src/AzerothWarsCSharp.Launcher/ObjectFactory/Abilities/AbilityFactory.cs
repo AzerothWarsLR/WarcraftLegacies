@@ -25,6 +25,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 
     protected abstract void ApplyTooltipNormalExtended(T ability);
 
+    protected abstract void ApplyIcons(T ability);
+
     /// <summary>
     /// Applies essential features like mana cost and cooldown.
     /// </summary>
@@ -38,6 +40,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       ApplyButtonPositions(ability);
       ApplyCore(ability);
       ApplyStats(ability);
+      ApplyIcons(ability);
       ApplyTooltipLearnExtended(ability);
       ApplyTooltipNormalExtended(ability);
     }
@@ -52,7 +55,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     /// <summary>
     /// The icon for the ability.
     /// </summary>
-    public string ArtIcon { get; set; }
+    public string Icon { get; set; }
 
     /// <summary>
     /// Name of the ability.

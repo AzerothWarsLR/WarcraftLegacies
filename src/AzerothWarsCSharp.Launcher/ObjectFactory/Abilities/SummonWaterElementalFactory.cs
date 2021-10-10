@@ -32,8 +32,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
         ability.TextTooltipNormal[i + 1] = $"Summon {SummonedUnit[i].TextName}";
         ability.TextTooltipNormal[i + 1] = $"Summon {SummonedUnit[i].TextName}";
         ability.DataSummonedUnitCount[i + 1] = SummonCount[i];
-        ability.ArtIconNormal = ArtIcon;
-        ability.ArtIconResearch = ArtIcon;
       }
     }
 
@@ -42,7 +40,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       var newBuff = new Buff(BuffType.WaterElemental, newRawCode)
       {
         TextTooltip = SummonedUnit[0].TextName,
-        ArtIcon = ArtIcon
+        ArtIcon = Icon
       };
       return newBuff;
     }

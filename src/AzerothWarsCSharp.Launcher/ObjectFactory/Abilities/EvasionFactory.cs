@@ -34,8 +34,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       {
         ability.DataChanceToEvade[i + 1] = ChanceToEvade[i];
       }
-      ability.ArtIconNormal = ArtIcon;
-      ability.ArtIconResearch = ArtIcon;
       ability.StatsLevels = Levels;
       ability.ArtButtonPositionNormalX = ButtonPosition.X;
       ability.ArtButtonPositionNormalY = ButtonPosition.Y;
