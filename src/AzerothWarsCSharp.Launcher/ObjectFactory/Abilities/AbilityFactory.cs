@@ -11,6 +11,14 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     /// </summary>
     public int Levels { get; set; }
 
+    public void GenerateButtonPositions(T ability)
+    {
+      ability.ArtButtonPositionNormalX = ButtonPosition.X;
+      ability.ArtButtonPositionNormalY = ButtonPosition.Y;
+      ability.ArtButtonPositionResearchX = ButtonPosition.X;
+      ability.ArtButtonPositionResearchY = 0;
+    }
+
     /// <summary>
     /// Generate a new ability instance.
     /// </summary>

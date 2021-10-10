@@ -46,6 +46,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       GenerateCore(newAbility);
       GenerateCoreImmolation(newAbility);
       GenerateTooltip(newAbility);
+      GenerateButtonPositions(newAbility);
       return newAbility;
     }
 

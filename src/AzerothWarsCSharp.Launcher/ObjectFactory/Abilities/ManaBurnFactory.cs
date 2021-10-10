@@ -38,6 +38,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       GenerateCore(newAbility);
       GenerateCoreManaBurn(newAbility);
       GenerateTooltip(newAbility);
+      GenerateButtonPositions(newAbility);
       return newAbility;
     }
 

@@ -47,6 +47,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       GenerateCoreEvasion(newAbility);
       GenerateTooltipLearnExtended(newAbility);
       GenerateTooltip(newAbility);
+      GenerateButtonPositions(newAbility);
       return newAbility;
     }
   }

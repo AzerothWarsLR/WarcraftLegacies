@@ -35,6 +35,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       GenerateCore(newAbility);
       GenerateMetamorphosis(newAbility);
       GenerateTooltip(newAbility);
+      GenerateButtonPositions(newAbility);
       return newAbility;
     }
 
