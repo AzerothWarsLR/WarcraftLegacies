@@ -11,6 +11,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     /// </summary>
     public int Levels { get; set; }
 
+    public bool IsHeroAbility { get; set; } = false;
+
     protected void ApplyButtonPositions(T ability)
     {
       ability.ArtButtonPositionNormalX = ButtonPosition.X;
@@ -37,12 +39,14 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     {
       ability.StatsLevels = Levels;
       ability.TextName = TextName;
-      ApplyButtonPositions(ability);
+      ability.TextEditorSuffix = EditorSuffix;
+      //ability.StatsHeroAbility = IsHeroAbility;
       ApplyCore(ability);
       ApplyStats(ability);
       ApplyIcons(ability);
       ApplyTooltipLearnExtended(ability);
       ApplyTooltipNormalExtended(ability);
+      ApplyButtonPositions(ability);
     }
 
     /// <summary>
@@ -50,7 +54,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     /// </summary>
     /// <param name="newRawCode"></param>
     /// <returns></returns>
-    public abstract T Generate(string newRawCode);
+    public abstract T Generate(string newRawCode, ObjectDatabase objectDatabase);
 
     /// <summary>
     /// The icon for the ability.
@@ -63,5 +67,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     public string TextName { get; set; } = "PLACEHOLDERTEXTNAME";
 
     public Point ButtonPosition { get; set; }
+
+    public string EditorSuffix { get; set; } = "";
   }
 }

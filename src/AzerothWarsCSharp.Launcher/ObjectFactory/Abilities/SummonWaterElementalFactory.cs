@@ -45,9 +45,9 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       return newBuff;
     }
 
-    public override ArchMageWaterElemental Generate(string newRawCode)
+    public override ArchMageWaterElemental Generate(string newRawCode, ObjectDatabase objectDatabase)
     {
-      var newAbility = new ArchMageWaterElemental(newRawCode);
+      var newAbility = new ArchMageWaterElemental(newRawCode, objectDatabase);
       Apply(newAbility);
       return newAbility;
     }

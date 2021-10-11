@@ -36,9 +36,9 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     /// <summary>
     /// Generate a building instance.
     /// </summary>
-    public new Unit Generate(string newRawCode)
+    public new Unit Generate(string newRawCode, ObjectDatabase objectDatabase)
     {
-      var newUnit = new Unit(BaseType, newRawCode)
+      var newUnit = new Unit(BaseType, newRawCode, objectDatabase)
       {
         TechtreeStructuresBuilt = StructuresBuilt,
         StatsBuildTime = BuildTime,

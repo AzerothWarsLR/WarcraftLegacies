@@ -55,9 +55,9 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       ability.ArtButtonPositionNormalY = ButtonPosition.Y;
     }
 
-    public override AerialShackles Generate(string newRawCode)
+    public override AerialShackles Generate(string newRawCode, ObjectDatabase objectDatabase)
     {
-      var newAbility = new AerialShackles(newRawCode);
+      var newAbility = new AerialShackles(newRawCode, objectDatabase);
       Apply(newAbility);
       return newAbility;
     }

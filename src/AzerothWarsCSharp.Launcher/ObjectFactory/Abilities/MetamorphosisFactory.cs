@@ -37,9 +37,9 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       }
     }
 
-    public override DemonHunterMetamorphosis Generate(string newRawCode)
+    public override DemonHunterMetamorphosis Generate(string newRawCode, ObjectDatabase objectDatabase)
     {
-      var newAbility = new DemonHunterMetamorphosis(newRawCode);
+      var newAbility = new DemonHunterMetamorphosis(newRawCode, objectDatabase);
       Apply(newAbility);
       return newAbility;
     }

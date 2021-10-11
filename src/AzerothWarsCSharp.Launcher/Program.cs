@@ -8,6 +8,7 @@ using AzerothWarsCSharp.Launcher.ObjectFactory;
 using CSharpLua;
 using Microsoft.CodeAnalysis;
 using War3Api.Object;
+using War3Api.Object.Abilities;
 using War3Net.Build;
 using War3Net.Build.Extensions;
 using War3Net.Build.Object;
@@ -25,7 +26,6 @@ namespace Launcher
 
     // Output
     private const string OUTPUT_FOLDER_PATH = @"..\..\..\..\artifacts";
-    private const string OUTPUT_OBJECT_FOLDER_PATH = @"objectData";
     private const string OUTPUT_SCRIPT_NAME = @"war3map.lua";
     private const string OUTPUT_MAP_NAME = @"target.w3x";
 
@@ -76,7 +76,6 @@ namespace Launcher
       // Ensure these folders exist
       Directory.CreateDirectory(ASSETS_FOLDER_PATH);
       Directory.CreateDirectory(OUTPUT_FOLDER_PATH);
-      Directory.CreateDirectory(Path.Combine(OUTPUT_FOLDER_PATH, OUTPUT_OBJECT_FOLDER_PATH));
 
       // Load existing map data
       var map = Map.Open(BASE_MAP_PATH);
@@ -111,10 +110,8 @@ namespace Launcher
       // Update war3map.lua so you can inspect the generated Lua code easily
       File.WriteAllText(Path.Combine(OUTPUT_FOLDER_PATH, OUTPUT_SCRIPT_NAME), map.Script);
 
-      //Generate and write object data, then add it to the map
-      GenerateObjectData();
-      WriteObjectData(Path.Combine(OUTPUT_FOLDER_PATH, OUTPUT_OBJECT_FOLDER_PATH));
-      builder.AddFiles(Path.Combine(OUTPUT_FOLDER_PATH, OUTPUT_OBJECT_FOLDER_PATH), "*", SearchOption.AllDirectories);
+      //Generate and write object data
+      WriteObjectData(map, GenerateObjectDatabase());
 
       // Build w3x file
       var archiveCreateOptions = new MpqArchiveCreateOptions
@@ -160,64 +157,23 @@ namespace Launcher
       }
     }
 
-    private static void GenerateObjectData()
+    private static ObjectDatabase GenerateObjectDatabase()
     {
-      Kultiras.Setup();
-      Quelthalas.Setup();
+      ObjectDatabase objectDatabase = new();
+      Kultiras.GenerateObjectData(objectDatabase);
+      return objectDatabase;
     }
 
-    private static void WriteObjectData(string outputFolderPath)
+    private static void WriteObjectData(Map map, ObjectDatabase objectDatabase)
     {
-      var objectData = ObjectDatabase.DefaultDatabase.GetAllData();
-
-      if (objectData.UnitData is not null)
-      {
-        using var stream = File.Create(Path.Combine(outputFolderPath, MapUnitObjectData.FileName));
-        using var writer = new BinaryWriter(stream);
-        writer.Write(objectData.UnitData);
-      }
-
-      if (objectData.ItemData is not null)
-      {
-        using var stream = File.Create(Path.Combine(outputFolderPath, MapItemObjectData.FileName));
-        using var writer = new BinaryWriter(stream);
-        writer.Write(objectData.ItemData);
-      }
-
-      if (objectData.DestructableData is not null)
-      {
-        using var stream = File.Create(Path.Combine(outputFolderPath, MapDestructableObjectData.FileName));
-        using var writer = new BinaryWriter(stream);
-        writer.Write(objectData.DestructableData);
-      }
-
-      if (objectData.DoodadData is not null)
-      {
-        using var stream = File.Create(Path.Combine(outputFolderPath, MapDoodadObjectData.FileName));
-        using var writer = new BinaryWriter(stream);
-        writer.Write(objectData.DoodadData);
-      }
-
-      if (objectData.AbilityData is not null)
-      {
-        using var stream = File.Create(Path.Combine(outputFolderPath, MapAbilityObjectData.FileName));
-        using var writer = new BinaryWriter(stream);
-        writer.Write(objectData.AbilityData);
-      }
-
-      if (objectData.BuffData is not null)
-      {
-        using var stream = File.Create(Path.Combine(outputFolderPath, MapBuffObjectData.FileName));
-        using var writer = new BinaryWriter(stream);
-        writer.Write(objectData.BuffData);
-      }
-
-      if (objectData.UpgradeData is not null)
-      {
-        using var stream = File.Create(Path.Combine(outputFolderPath, MapUpgradeObjectData.FileName));
-        using var writer = new BinaryWriter(stream);
-        writer.Write(objectData.UpgradeData);
-      }
+      var objectData = objectDatabase.GetAllData();
+      map.UnitObjectData = objectData.UnitData;
+      map.ItemObjectData = objectData.ItemData;
+      map.DestructableObjectData = objectData.DestructableData;
+      map.DoodadObjectData = objectData.DoodadData;
+      map.AbilityObjectData = objectData.AbilityData;
+      map.BuffObjectData = objectData.BuffData;
+      map.UpgradeObjectData = objectData.UpgradeData;
     }
   }
 }

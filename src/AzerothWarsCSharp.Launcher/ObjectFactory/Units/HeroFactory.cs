@@ -44,14 +44,14 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     /// <summary>
     /// Generate a unit instance.
     /// </summary>
-    public new Unit Generate(string newRawCode)
+    public new Unit Generate(string newRawCode, ObjectDatabase objectDatabase)
     {
       if (!char.IsUpper(newRawCode.First()))
       {
         throw new ArgumentException($"{newRawCode} must start with a capital letter.", nameof(newRawCode));
       }
 
-      var newUnit = new Unit(BaseType, newRawCode);
+      var newUnit = new Unit(BaseType, newRawCode, objectDatabase);
       GenerateCore(newUnit);
       GenerateCoreHero(newUnit);
       GenerateTooltip(newUnit);

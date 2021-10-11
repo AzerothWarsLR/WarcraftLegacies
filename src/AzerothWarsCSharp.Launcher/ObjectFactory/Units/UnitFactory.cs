@@ -47,9 +47,9 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     /// <summary>
     /// Generate a unit instance.
     /// </summary>
-    public Unit Generate(string newRawCode)
+    public Unit Generate(string newRawCode, ObjectDatabase objectDatabase)
     {
-      var newUnit = new Unit(BaseType, newRawCode);
+      var newUnit = new Unit(BaseType, newRawCode, objectDatabase);
       GenerateCore(newUnit);
       GenerateTooltip(newUnit);
       return newUnit;

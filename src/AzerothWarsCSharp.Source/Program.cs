@@ -32,6 +32,10 @@ namespace AzerothWarsCSharp.Source
 				CreateUnit(Player(0), FourCC("kcan"), 100, 400, 0);
 				unit blademaster = CreateUnit(Player(0), FourCC("Yakb"), 100, 400, 0);
 				SetHeroLevel(blademaster, 10, true);
+				unit kazzak = CreateUnit(Player(0), FourCC("Kazz"), 100, 400, 0);
+				SetHeroLevel(kazzak, 10, true);
+				unit arthas = CreateUnit(Player(0), FourCC("Bang"), 100, 400, 0);
+				SetHeroLevel(arthas, 10, true);
 				//GameSetup.Initialize();
 				Console.WriteLine("Hello, Azeroth.");
 			}

@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using War3Api.Object;
 using War3Api.Object.Abilities;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
@@ -32,7 +33,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       }
     }
 
-    public override DemonHunterManaBurn Generate(string newRawCode)
+    public override DemonHunterManaBurn Generate(string newRawCode, ObjectDatabase objectDatabase)
     {
       var newAbility = new DemonHunterManaBurn(newRawCode);
       Apply(newAbility);

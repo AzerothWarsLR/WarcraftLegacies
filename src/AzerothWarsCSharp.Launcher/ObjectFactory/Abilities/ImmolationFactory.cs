@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using War3Api.Object;
 using War3Api.Object.Abilities;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
@@ -41,9 +42,9 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       }
     }
 
-    public override ImmolationCreep Generate(string newRawCode)
+    public override ImmolationCreep Generate(string newRawCode, ObjectDatabase objectDatabase)
     {
-      var newAbility = new ImmolationCreep(newRawCode);
+      var newAbility = new ImmolationCreep(newRawCode, objectDatabase);
       Apply(newAbility);
       return newAbility;
     }
