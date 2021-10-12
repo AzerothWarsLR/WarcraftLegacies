@@ -10,81 +10,81 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
   {
     public static void GenerateObjectData(ObjectDatabase objectDatabase)
     {
-      ////Sea Elemental
-      //var seaElemental = new UnitFactory(UnitType.Seaelemental)
-      //{
-      //  TextName = "Sea Elemental",
-      //  ArtIconGameInterface = "SeaElemental",
-      //  AbilitiesNormal = System.Array.Empty<Ability>(),
-      //  DamageBase = 10,
-      //  DamageNumberOfDice = 2,
-      //  DamageSidesPerDie = 6,
-      //  HitPoints = 600,
-      //  Flavour = "Avatar of the sea's primordial force.",
-      //}.Generate("ksea", objectDatabase);
+      //Sea Elemental
+      var seaElemental = new UnitFactory(UnitType.Seaelemental)
+      {
+        TextName = "Sea Elemental",
+        ArtIconGameInterface = "SeaElemental",
+        AbilitiesNormal = System.Array.Empty<Ability>(),
+        DamageBase = 10,
+        DamageNumberOfDice = 2,
+        DamageSidesPerDie = 6,
+        HitPoints = 600,
+        Flavour = "Avatar of the sea's primordial force.",
+      }.Generate("ksea", objectDatabase);
 
-      ////Summon Sea Elemental
-      //var summonSeaElemental = new SummonWaterElementalFactory()
-      //{
-      //  Levels = 1,
-      //  SummonedUnit = new Unit[] { seaElemental },
-      //  SummonCount = new int[] { 1 },
-      //  Icon = seaElemental.ArtIconGameInterface,
-      //  Duration = new int[] { 40 },
-      //}.Generate("asea", objectDatabase);
+      //Summon Sea Elemental
+      var summonSeaElemental = new SummonWaterElementalFactory()
+      {
+        Levels = 1,
+        SummonedUnit = new Unit[] { seaElemental },
+        SummonCount = new int[] { 1 },
+        Icon = seaElemental.ArtIconGameInterface,
+        Duration = new int[] { 40 },
+      }.Generate("asea", objectDatabase);
 
-      ////Tidesage
-      //new UnitFactory(UnitType.Priest)
-      //{
-      //  TextName = "Tidepriest",
-      //  Flavour = "Spellcaster empowered with mystical control over the tides.",
-      //  AbilitiesNormal = new Ability[] { summonSeaElemental },
-      //  DamageBase = 4,
-      //  DamageNumberOfDice = 2,
-      //  DamageSidesPerDie = 7,
-      //  HitPoints = 600,
-      //}.Generate("ktid", objectDatabase);
+      //Tidesage
+      new UnitFactory(UnitType.Priest)
+      {
+        TextName = "Tidepriest",
+        Flavour = "Spellcaster empowered with mystical control over the tides.",
+        AbilitiesNormal = new Ability[] { summonSeaElemental },
+        DamageBase = 4,
+        DamageNumberOfDice = 2,
+        DamageSidesPerDie = 7,
+        HitPoints = 600,
+      }.Generate("ktid", objectDatabase);
 
-      ////Blacksmith
-      //var blacksmith = new BuildingFactory(UnitType.Blacksmith)
-      //{
-      //  ButtonPosition = new Point(2, 0),
-      //  ScalingValue = 0.85F,
-      //  HitPoints = 200,
-      //  UnitsTrained = System.Array.Empty<Unit>(),
-      //  ResearchesAvailable = System.Array.Empty<Upgrade>(),
-      //  Flavour = "Where the weapons and armor of Kul'tiras are forged.",
-      //  AbilitiesNormal = System.Array.Empty<Ability>()
-      //}.Generate("kbla", objectDatabase);
+      //Blacksmith
+      var blacksmith = new BuildingFactory(UnitType.Blacksmith)
+      {
+        ButtonPosition = new Point(2, 0),
+        ScalingValue = 0.85F,
+        HitPoints = 200,
+        UnitsTrained = System.Array.Empty<Unit>(),
+        ResearchesAvailable = System.Array.Empty<Upgrade>(),
+        Flavour = "Where the weapons and armor of Kul'tiras are forged.",
+        AbilitiesNormal = System.Array.Empty<Ability>()
+      }.Generate("kbla", objectDatabase);
 
-      ////Scout Tower
-      //var scoutTowerFactory = new BuildingFactory(UnitType.Scouttower)
-      //{
-      //  TextName = "Scout Tower",
-      //  HitPoints = 300,
-      //  ArtModelFile = @"buildings\human\HumanTower\HumanTower"
-      //};
-      //var scoutTower = scoutTowerFactory.Generate("ksco", objectDatabase);
+      //Scout Tower
+      var scoutTowerFactory = new BuildingFactory(UnitType.Scouttower)
+      {
+        TextName = "Scout Tower",
+        HitPoints = 300,
+        ArtModelFile = @"buildings\human\HumanTower\HumanTower"
+      };
+      var scoutTower = scoutTowerFactory.Generate("ksco", objectDatabase);
 
-      ////Guard Tower
-      //var guardTowerFactory = new BuildingFactory(UnitType.Scouttower)
-      //{
-      //  TextName = "Guard Tower",
-      //  HitPoints = 500,
-      //  Parent = scoutTowerFactory,
-      //  RequiredAnimationNames = new string[] { "upgrade", "first" }
-      //};
-      //var guardTower = guardTowerFactory.Generate("kgua", objectDatabase);
+      //Guard Tower
+      var guardTowerFactory = new BuildingFactory(UnitType.Scouttower)
+      {
+        TextName = "Guard Tower",
+        HitPoints = 500,
+        Parent = scoutTowerFactory,
+        RequiredAnimationNames = new string[] { "upgrade", "first" }
+      };
+      var guardTower = guardTowerFactory.Generate("kgua", objectDatabase);
 
-      ////Cannon Tower
-      //var cannonTowerFactory = new BuildingFactory(UnitType.Scouttower)
-      //{
-      //  TextName = "Cannon Tower",
-      //  HitPoints = 600,
-      //  Parent = scoutTowerFactory,
-      //  RequiredAnimationNames = new string[] { "upgrade", "second" }
-      //};
-      //var cannonTower = cannonTowerFactory.Generate("kcan", objectDatabase);
+      //Cannon Tower
+      var cannonTowerFactory = new BuildingFactory(UnitType.Scouttower)
+      {
+        TextName = "Cannon Tower",
+        HitPoints = 600,
+        Parent = scoutTowerFactory,
+        RequiredAnimationNames = new string[] { "upgrade", "second" }
+      };
+      var cannonTower = cannonTowerFactory.Generate("kcan", objectDatabase);
 
       //Evasion
       var evasionFactory = new EvasionFactory()
@@ -93,7 +93,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         Levels = 10,
         Icon = "Evasion",
         TextName = "EvasionAAAAA",
-        ButtonPosition = new Point(2,2),
+        ButtonPosition = new Point(2, 2),
         IsHeroAbility = true
       };
       var evasion = evasionFactory.Generate("Greb", objectDatabase);
@@ -136,7 +136,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       //  NormalForm = { blacksmith, blacksmith, blacksmith },
       //  MorphFlags = { MorphFlags.Uninterruptable },
       //  Duration = { 60, 60, 120 },
-      //  TransformTime = { 1, 1, 1},
+      //  TransformTime = { 1, 1, 1 },
       //  IsHeroAbility = true
       //};
       //var metamorphosis = metamorphosisFactory.Generate("meta", objectDatabase);
