@@ -7,31 +7,15 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
   public class MassSpellFactory : ActiveAbilityFactory<PitLordRainOfFire>
   {
-    protected override void ApplyTooltipLearnExtended(PitLordRainOfFire ability)
+    protected override string GenerateTooltipExtended(int level)
     {
-      ability.TextName = TextName;
-
       var stringBuilder = new StringBuilder();
       stringBuilder.Append(@$"Casts {Spell.TextName} on all units in the target area.");
       stringBuilder.Append("|n");
-      stringBuilder.Append(AreaOfEffect.ToConcatenatedString());
-      stringBuilder.Append(ManaCost.ToConcatenatedString());
-      stringBuilder.Append(CastRange.ToConcatenatedString());
-      ability.TextTooltipLearnExtended = stringBuilder.ToString();
-    }
-
-    protected override void ApplyTooltipNormalExtended(PitLordRainOfFire ability)
-    {
-      ability.TextName = TextName;
-
-      var stringBuilder = new StringBuilder();
-      stringBuilder.Append(@$"Casts {Spell.TextName} on all units in the target area.");
-      stringBuilder.Append("|n");
-      stringBuilder.Append(CastRange.ToConcatenatedString());
-      for (var i = 0; i < Levels; i++)
-      {
-        ability.TextTooltipNormalExtended[i] = stringBuilder.ToString();
-      }
+      stringBuilder.Append(AreaOfEffect.ToConcatenatedString(level));
+      stringBuilder.Append(ManaCost.ToConcatenatedString(level));
+      stringBuilder.Append(CastRange.ToConcatenatedString(level));
+      return stringBuilder.ToString();
     }
 
     protected override void ApplyStats(PitLordRainOfFire ability)

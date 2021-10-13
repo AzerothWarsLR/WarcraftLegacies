@@ -13,31 +13,19 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     public LeveledAbilityProperty<float> DurationUnit { get; set; } = new("Duration (unit)");
     public LeveledAbilityProperty<float> DurationHero { get; set; } = new("Duration (hero)");
 
-    protected override void ApplyTooltipLearnExtended(AerialShackles ability)
+    protected override string GenerateTooltipExtended(int level)
     {
       var stringBuilder = new StringBuilder();
       stringBuilder.Append(@$"Magically binds a target unit, so that it cannot move or attack and takes damage per second.");
       stringBuilder.Append("|n");
-      stringBuilder.Append(DamagePerSecond.ToConcatenatedString());
-      stringBuilder.Append(CastRange.ToConcatenatedString());
-      //stringBuilder.Append(TargetsAllowed.ToConcatenatedString());
-      stringBuilder.Append(DurationUnit.ToConcatenatedString());
-      stringBuilder.Append(DurationHero.ToConcatenatedString());
-      stringBuilder.Append(ManaCost.ToConcatenatedString());
-      stringBuilder.Append(Cooldown.ToConcatenatedString());
-      ability.TextTooltipLearnExtended = stringBuilder.ToString();
-    }
-
-    protected override void ApplyTooltipNormalExtended(AerialShackles ability)
-    {
-      ability.TextName = TextName;
-      for (var i = 0; i < Levels; i++)
-      {
-        ability.TextTooltipNormal[i + 1] = $"{TextName} - [|cffffcc00Level {i + 1}|r]";
-        ability.TextTooltipNormalExtended[i + 1] = $"Magically binds a target enemy air unit, so " +
-          $"that it cannot move or attack and takes {DamagePerSecond.ValueToString(i)} damage per second. " +
-          $"|nLasts {DurationUnit.ValueToString(i)} seconds.";
-      }
+      stringBuilder.Append(DamagePerSecond.ToConcatenatedString(level));
+      stringBuilder.Append(CastRange.ToConcatenatedString(level));
+      //stringBuilder.Append(TargetsAllowed.ToConcatenatedString(level));
+      stringBuilder.Append(DurationUnit.ToConcatenatedString(level));
+      stringBuilder.Append(DurationHero.ToConcatenatedString(level));
+      stringBuilder.Append(ManaCost.ToConcatenatedString(level));
+      stringBuilder.Append(Cooldown.ToConcatenatedString(level));
+      return stringBuilder.ToString();
     }
 
     protected override void ApplyStats(AerialShackles ability)

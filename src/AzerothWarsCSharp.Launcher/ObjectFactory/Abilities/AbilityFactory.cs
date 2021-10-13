@@ -23,11 +23,16 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 
     protected abstract void ApplyStats(T ability);
 
-    protected abstract void ApplyTooltipLearnExtended(T ability);
-
-    protected abstract void ApplyTooltipNormalExtended(T ability);
-
     protected abstract void ApplyIcons(T ability);
+
+    /// <summary>
+    /// Creates a string which instructs a reader as to how this ability functions.
+    /// If level is 0, return a Learn tooltip which contains all information. 
+    /// Otherwise, return a level-specific normal tooltip.
+    /// </summary>
+    /// <param name="level"></param>
+    /// <returns></returns>
+    protected abstract string GenerateTooltipExtended(int level = 0);
 
     /// <summary>
     /// Applies essential features like mana cost and cooldown.
@@ -40,12 +45,15 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       ability.StatsLevels = Levels;
       ability.TextName = TextName;
       ability.TextEditorSuffix = EditorSuffix;
+      ability.TextTooltipLearnExtended = GenerateTooltipExtended();
+      for (var i = 1; i < Levels+1; i++)
+      {
+        ability.TextTooltipNormalExtended[i] = GenerateTooltipExtended(i);
+      }
       //ability.StatsHeroAbility = IsHeroAbility;
       ApplyCore(ability);
       ApplyStats(ability);
       ApplyIcons(ability);
-      ApplyTooltipLearnExtended(ability);
-      ApplyTooltipNormalExtended(ability);
       ApplyButtonPositions(ability);
     }
 

@@ -58,29 +58,34 @@ namespace AzerothWarsCSharp.Launcher
     }
 
     /// <summary>
-    /// Convert the values in this property to a string series, like 10/20/30/40.
+    /// Renders this entire property as a string series, like "Mana Cost: 10/20/30/40".
+    /// If a level other than 0 is passed in, instead render one specific level's information, like "Mana Cost: 20".
     /// </summary>
+    /// <param name="level"></param>
     /// <param name="isPercentage"></param>
     /// <returns></returns>
-    public string ToConcatenatedString(bool isPercentage = false)
+    public string ToConcatenatedString(int level = 0, bool isPercentage = false)
     {
       StringBuilder stringBuilder = new();
       stringBuilder.Append($"|n|cffecce87{_name}|r: ");
       for (int i = 0; i < _values.Count; i++)
       {
-        var number = _values[i];
-        if (isPercentage)
+        if (i+1 == level || level == 0)
         {
-          stringBuilder.Append(NumberToString(number, true));
-          stringBuilder.Append('%');
-        }
-        else
-        {
-          stringBuilder.Append(number);
-        }
-        if (i < _values.Count - 1)
-        {
-          stringBuilder.Append('/');
+          var number = _values[i];
+          if (isPercentage)
+          {
+            stringBuilder.Append(NumberToString(number, true));
+            stringBuilder.Append('%');
+          }
+          else
+          {
+            stringBuilder.Append(number);
+          }
+          if (i < _values.Count - 1 && level == 0)
+          {
+            stringBuilder.Append('/');
+          }
         }
       }
       return stringBuilder.ToString();

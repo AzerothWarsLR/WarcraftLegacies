@@ -6,22 +6,15 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
   public sealed class MetamorphosisFactory : ActiveAbilityFactory<DemonHunterMetamorphosis>
   {
-    protected override void ApplyTooltipNormalExtended(DemonHunterMetamorphosis ability)
+    protected override string GenerateTooltipExtended(int level)
     {
-      
-    }
-
-    protected override void ApplyTooltipLearnExtended(DemonHunterMetamorphosis ability)
-    {
-      ability.TextName = TextName;
-
       var stringBuilder = new StringBuilder();
       stringBuilder.Append(@$"Transforms the caster into another unit.");
       stringBuilder.Append("|n");
-      stringBuilder.Append(BonusHitPoints.ToConcatenatedString());
-      stringBuilder.Append(Duration.ToConcatenatedString());
-      stringBuilder.Append(AlternateForm.ToConcatenatedString());
-      ability.TextTooltipLearnExtended = stringBuilder.ToString();
+      stringBuilder.Append(BonusHitPoints.ToConcatenatedString(level));
+      stringBuilder.Append(Duration.ToConcatenatedString(level));
+      stringBuilder.Append(AlternateForm.ToConcatenatedString(level));
+     return stringBuilder.ToString();
     }
 
     protected override void ApplyStats(DemonHunterMetamorphosis ability)

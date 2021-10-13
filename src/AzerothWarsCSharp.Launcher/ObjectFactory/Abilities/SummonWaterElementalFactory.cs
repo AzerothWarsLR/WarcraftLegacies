@@ -1,25 +1,20 @@
-﻿using War3Api.Object;
+﻿using System.Text;
+using War3Api.Object;
 using War3Api.Object.Abilities;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
   public sealed class SummonWaterElementalFactory : ActiveAbilityFactory<ArchMageWaterElemental>
   {
-    protected override void ApplyTooltipLearnExtended(ArchMageWaterElemental archMageWaterElemental)
+    protected override string GenerateTooltipExtended(int level)
     {
-
-    }
-
-    protected override void ApplyTooltipNormalExtended(ArchMageWaterElemental archMageWaterElemental)
-    {
-      for (var i = 0; i < Levels; i++)
-      {
-        var summonedUnit = SummonedUnit[i];
-        archMageWaterElemental.TextTooltipNormalExtended[i + 1] = $"Summons a {summonedUnit.TextName} to " +
-          $"attack the caster's enemies for {Duration[i]} seconds." +
-          $"|n|n|cffecce87{SummonedUnit[i].TextName}|r" +
-          $"|n{SummonedUnit[i].TextTooltipExtended}";
-      }
+      var stringBuilder = new StringBuilder();
+      stringBuilder.Append(@$"Summons a unit to attack the caster's enemies.");
+      stringBuilder.Append("|n");
+      stringBuilder.Append(SummonedUnit.ToConcatenatedString(level));
+      stringBuilder.Append(SummonCount.ToConcatenatedString(level));
+      stringBuilder.Append(Duration.ToConcatenatedString(level));
+      return stringBuilder.ToString();
     }
 
     protected override void ApplyStats(ArchMageWaterElemental ability)
@@ -55,16 +50,16 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     /// <summary>
     /// How long the summoned unit lasts before disappearing.
     /// </summary>
-    public int[] Duration { get; set; }
+    public LeveledAbilityProperty<float> Duration { get; set; }
 
     /// <summary>
     /// Which unit types this ability summons, by level.
     /// </summary>
-    public Unit[] SummonedUnit { get; set; }
+    public LeveledAbilityProperty<Unit> SummonedUnit { get; set; }
 
     /// <summary>
     /// How many summons this ability makes, by level.
     /// </summary>
-    public int[] SummonCount { get; set; }
+    public LeveledAbilityProperty<int> SummonCount { get; set; }
   }
 }

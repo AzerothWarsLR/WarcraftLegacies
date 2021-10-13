@@ -6,19 +6,12 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
   public sealed class HolyLightFactory : ActiveAbilityFactory<PaladinHolyLight>
   {
-    protected override void ApplyTooltipLearnExtended(PaladinHolyLight ability)
+    protected override string GenerateTooltipExtended(int level)
     {
-      ability.TextName = TextName;
-
       var stringBuilder = new StringBuilder();
       stringBuilder.Append(@$"very holy spell.");
       stringBuilder.Append("|n");
-      ability.TextTooltipLearnExtended = stringBuilder.ToString();
-    }
-
-    protected override void ApplyTooltipNormalExtended(PaladinHolyLight ability)
-    {
-
+      return stringBuilder.ToString();
     }
 
     protected override void ApplyStats(PaladinHolyLight ability)

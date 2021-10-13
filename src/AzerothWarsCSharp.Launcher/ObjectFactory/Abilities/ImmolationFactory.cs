@@ -11,24 +11,17 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     public LeveledAbilityProperty<float> ManaDrainedPerSecond { get; set; } = new("Mana drained per second");
     public LeveledAbilityProperty<float> AreaOfEffect { get; set; } = new("Area of effect");
 
-    protected override void ApplyTooltipLearnExtended(ImmolationCreep ability)
+    protected override string GenerateTooltipExtended(int level)
     {
-      ability.TextName = TextName;
-
       var stringBuilder = new StringBuilder();
       stringBuilder.Append(@$"Activate to engulf this unit in flames, dealing damage each second to nearby enemy land units.");
       stringBuilder.Append($"|nDrains mana until deactivated.");
       stringBuilder.Append("|n");
-      stringBuilder.Append(DamagePerSecond.ToConcatenatedString());
-      stringBuilder.Append(BufferManaRequired.ToConcatenatedString());
-      stringBuilder.Append(ManaDrainedPerSecond.ToConcatenatedString());
-      stringBuilder.Append(AreaOfEffect.ToConcatenatedString());
-      ability.TextTooltipLearnExtended = stringBuilder.ToString();
-    }
-
-    protected override void ApplyTooltipNormalExtended(ImmolationCreep ability)
-    {
-
+      stringBuilder.Append(DamagePerSecond.ToConcatenatedString(level));
+      stringBuilder.Append(BufferManaRequired.ToConcatenatedString(level));
+      stringBuilder.Append(ManaDrainedPerSecond.ToConcatenatedString(level));
+      stringBuilder.Append(AreaOfEffect.ToConcatenatedString(level));
+      return stringBuilder.ToString();
     }
 
     protected override void ApplyStats(ImmolationCreep ability)

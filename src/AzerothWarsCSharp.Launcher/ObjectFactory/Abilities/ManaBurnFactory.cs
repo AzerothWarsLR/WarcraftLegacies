@@ -6,21 +6,14 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
   public sealed class ManaBurnFactory : ActiveAbilityFactory<DemonHunterManaBurn>
   {
-    protected override void ApplyTooltipLearnExtended(DemonHunterManaBurn ability)
+    protected override string GenerateTooltipExtended(int level)
     {
-      ability.TextName = TextName;
-
       var stringBuilder = new StringBuilder();
       stringBuilder.Append(@$"Sends a bolt of negative energy that burns a target enemy unit's mana. Burned mana combusts, dealing damage to the target equal to the amount of mana burned.");
       stringBuilder.Append("|n");
-      stringBuilder.Append(MaxManaDrained.ToConcatenatedString());
-      stringBuilder.Append(CastRange.ToConcatenatedString());
-      ability.TextTooltipLearnExtended = stringBuilder.ToString();
-    }
-
-    protected override void ApplyTooltipNormalExtended(DemonHunterManaBurn ability)
-    {
-
+      stringBuilder.Append(MaxManaDrained.ToConcatenatedString(level));
+      stringBuilder.Append(CastRange.ToConcatenatedString(level));
+      return stringBuilder.ToString();
     }
 
     protected override void ApplyStats(DemonHunterManaBurn ability)
