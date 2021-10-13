@@ -10,93 +10,93 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
   {
     public static void GenerateObjectData(ObjectDatabase objectDatabase)
     {
-      //Sea Elemental
-      var seaElemental = new UnitFactory(UnitType.Seaelemental)
-      {
-        TextName = "Sea Elemental",
-        ArtIconGameInterface = "SeaElemental",
-        AbilitiesNormal = System.Array.Empty<Ability>(),
-        DamageBase = 10,
-        DamageNumberOfDice = 2,
-        DamageSidesPerDie = 6,
-        HitPoints = 600,
-        Flavour = "Avatar of the sea's primordial force.",
-      }.Generate("ksea", objectDatabase);
+      ////Sea Elemental
+      //var seaElemental = new UnitFactory(UnitType.Seaelemental)
+      //{
+      //  TextName = "Sea Elemental",
+      //  ArtIconGameInterface = "SeaElemental",
+      //  AbilitiesNormal = System.Array.Empty<Ability>(),
+      //  DamageBase = 10,
+      //  DamageNumberOfDice = 2,
+      //  DamageSidesPerDie = 6,
+      //  HitPoints = 600,
+      //  Flavour = "Avatar of the sea's primordial force.",
+      //}.Generate("ksea", objectDatabase);
 
-      //Summon Sea Elemental
-      var summonSeaElemental = new SummonWaterElementalFactory()
-      {
-        Levels = 1,
-        SummonedUnit = new Unit[] { seaElemental },
-        SummonCount = new int[] { 1 },
-        Icon = seaElemental.ArtIconGameInterface,
-        Duration = new int[] { 40 },
-      }.Generate("asea", objectDatabase);
+      ////Summon Sea Elemental
+      //var summonSeaElemental = new SummonWaterElementalFactory()
+      //{
+      //  Levels = 1,
+      //  SummonedUnit = new Unit[] { seaElemental },
+      //  SummonCount = new int[] { 1 },
+      //  Icon = seaElemental.ArtIconGameInterface,
+      //  Duration = new int[] { 40 },
+      //}.Generate("asea", objectDatabase);
 
-      //Tidesage
-      new UnitFactory(UnitType.Priest)
-      {
-        TextName = "Tidepriest",
-        Flavour = "Spellcaster empowered with mystical control over the tides.",
-        AbilitiesNormal = new Ability[] { summonSeaElemental },
-        DamageBase = 4,
-        DamageNumberOfDice = 2,
-        DamageSidesPerDie = 7,
-        HitPoints = 600,
-      }.Generate("ktid", objectDatabase);
+      ////Tidesage
+      //new UnitFactory(UnitType.Priest)
+      //{
+      //  TextName = "Tidepriest",
+      //  Flavour = "Spellcaster empowered with mystical control over the tides.",
+      //  AbilitiesNormal = new Ability[] { summonSeaElemental },
+      //  DamageBase = 4,
+      //  DamageNumberOfDice = 2,
+      //  DamageSidesPerDie = 7,
+      //  HitPoints = 600,
+      //}.Generate("ktid", objectDatabase);
 
-      //Blacksmith
-      var blacksmith = new BuildingFactory(UnitType.Blacksmith)
-      {
-        ButtonPosition = new Point(2, 0),
-        ScalingValue = 0.85F,
-        HitPoints = 200,
-        UnitsTrained = System.Array.Empty<Unit>(),
-        ResearchesAvailable = System.Array.Empty<Upgrade>(),
-        Flavour = "Where the weapons and armor of Kul'tiras are forged.",
-        AbilitiesNormal = System.Array.Empty<Ability>()
-      }.Generate("kbla", objectDatabase);
+      ////Blacksmith
+      //var blacksmith = new BuildingFactory(UnitType.Blacksmith)
+      //{
+      //  ButtonPosition = new Point(2, 0),
+      //  ScalingValue = 0.85F,
+      //  HitPoints = 200,
+      //  UnitsTrained = System.Array.Empty<Unit>(),
+      //  ResearchesAvailable = System.Array.Empty<Upgrade>(),
+      //  Flavour = "Where the weapons and armor of Kul'tiras are forged.",
+      //  AbilitiesNormal = System.Array.Empty<Ability>()
+      //}.Generate("kbla", objectDatabase);
 
-      //Scout Tower
-      var scoutTowerFactory = new BuildingFactory(UnitType.Scouttower)
-      {
-        TextName = "Scout Tower",
-        HitPoints = 300,
-        ArtModelFile = @"buildings\human\HumanTower\HumanTower"
-      };
-      var scoutTower = scoutTowerFactory.Generate("ksco", objectDatabase);
+      ////Scout Tower
+      //var scoutTowerFactory = new BuildingFactory(UnitType.Scouttower)
+      //{
+      //  TextName = "Scout Tower",
+      //  HitPoints = 300,
+      //  ArtModelFile = @"buildings\human\HumanTower\HumanTower"
+      //};
+      //var scoutTower = scoutTowerFactory.Generate("ksco", objectDatabase);
 
-      //Guard Tower
-      var guardTowerFactory = new BuildingFactory(UnitType.Scouttower)
-      {
-        TextName = "Guard Tower",
-        HitPoints = 500,
-        Parent = scoutTowerFactory,
-        RequiredAnimationNames = new string[] { "upgrade", "first" }
-      };
-      var guardTower = guardTowerFactory.Generate("kgua", objectDatabase);
+      ////Guard Tower
+      //var guardTowerFactory = new BuildingFactory(UnitType.Scouttower)
+      //{
+      //  TextName = "Guard Tower",
+      //  HitPoints = 500,
+      //  Parent = scoutTowerFactory,
+      //  RequiredAnimationNames = new string[] { "upgrade", "first" }
+      //};
+      //var guardTower = guardTowerFactory.Generate("kgua", objectDatabase);
 
-      //Cannon Tower
-      var cannonTowerFactory = new BuildingFactory(UnitType.Scouttower)
-      {
-        TextName = "Cannon Tower",
-        HitPoints = 600,
-        Parent = scoutTowerFactory,
-        RequiredAnimationNames = new string[] { "upgrade", "second" }
-      };
-      var cannonTower = cannonTowerFactory.Generate("kcan", objectDatabase);
+      ////Cannon Tower
+      //var cannonTowerFactory = new BuildingFactory(UnitType.Scouttower)
+      //{
+      //  TextName = "Cannon Tower",
+      //  HitPoints = 600,
+      //  Parent = scoutTowerFactory,
+      //  RequiredAnimationNames = new string[] { "upgrade", "second" }
+      //};
+      //var cannonTower = cannonTowerFactory.Generate("kcan", objectDatabase);
 
-      //Evasion
-      var evasionFactory = new EvasionFactory()
-      {
-        ChanceToEvade = { 10F, 0.2F, 0.3F, 0.4F, 0.5F, 0.6F, 0.7F, 0.8F, 0.9F, 1.0F },
-        Levels = 10,
-        Icon = "Evasion",
-        TextName = "EvasionAAAAA",
-        ButtonPosition = new Point(2, 2),
-        IsHeroAbility = true
-      };
-      var evasion = evasionFactory.Generate("Greb", objectDatabase);
+      ////Evasion
+      //var evasionFactory = new EvasionFactory()
+      //{
+      //  ChanceToEvade = { 10F, 0.2F, 0.3F, 0.4F, 0.5F, 0.6F, 0.7F, 0.8F, 0.9F, 1.0F },
+      //  Levels = 10,
+      //  Icon = "Evasion",
+      //  TextName = "EvasionAAAAA",
+      //  ButtonPosition = new Point(2, 2),
+      //  IsHeroAbility = true
+      //};
+      //var evasion = evasionFactory.Generate("Greb", objectDatabase);
 
       ////Immolation
       //var immolationFactory = new ImmolationFactory()
@@ -111,18 +111,18 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       //};
       //var immolation = immolationFactory.Generate("imm1", objectDatabase);
 
-      ////Immolation
-      //var manaburnfactory = new ManaBurnFactory()
-      //{
-      //  MaxManaDrained = { 50, 100, 200, 250 },
-      //  CastRange = { 300 },
-      //  Levels = 4,
-      //  Icon = @"ManaBurn",
-      //  TextName = "Mana Burn",
-      //  ButtonPosition = new Point(0, 2),
-      //  IsHeroAbility = true
-      //};
-      //var manaburn = manaburnfactory.Generate("mbur", objectDatabase);
+      //Immolation
+      var manaburnfactory = new ManaBurnFactory()
+      {
+        MaxManaDrained = { 50, 100, 200, 250 },
+        CastRange = { 300 },
+        Levels = 4,
+        Icon = @"ManaBurn",
+        TextName = "Mana Burn",
+        ButtonPosition = new Point(0, 2),
+        IsHeroAbility = true
+      };
+      var manaburn = manaburnfactory.Generate("mbur", objectDatabase);
 
       ////Metamorphosis
       //var metamorphosisFactory = new MetamorphosisFactory()
@@ -165,32 +165,32 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       //  Flavour = "The backbone of Kul'tiran seafaring society.",
       //}.Generate("kdec", objectDatabase);
 
-      ////Mass Mana Burn
-      //var massmanaburnfactory = new MassSpellFactory()
-      //{
-      //  CastRange = { 300, 300, 300, 300 },
-      //  ManaCost = { 50, 50, 50, 50 },
-      //  Cooldown = { 2, 2, 2, 2 },
-      //  AreaOfEffect = { 500, 500, 500, 500 },
-      //  Levels = 4,
-      //  Icon = @"ManaBurn",
-      //  TextName = "Mass Mana Burn",
-      //  Spell = manaburn,
-      //  ButtonPosition = new Point(0, 2),
-      //  IsHeroAbility = true
-      //};
-      //var massmanaburn = massmanaburnfactory.Generate("ydfg", objectDatabase);
+      //Mass Mana Burn
+      var massmanaburnfactory = new MassSpellFactory()
+      {
+        CastRange = { 300, 300, 300, 300 },
+        ManaCost = { 50, 50, 50, 50 },
+        Cooldown = { 2, 2, 2, 2 },
+        AreaOfEffect = { 500, 500, 500, 500 },
+        Levels = 4,
+        Icon = @"ManaBurn",
+        TextName = "Mass Mana Burn",
+        Spell = manaburn,
+        ButtonPosition = new Point(0, 2),
+        IsHeroAbility = true
+      };
+      var massmanaburn = massmanaburnfactory.Generate("ydfg", objectDatabase);
 
-      ////Kazzak
-      //new HeroFactory(UnitType.Doomguard)
-      //{
-      //  AbilitiesHero = new Ability[] { massmanaburn },
-      //  Strength = 100,
-      //  Agility = 10,
-      //  Intelligence = 5,
-      //  ProperName = "Kazzak",
-      //  TextName = "Doomlord",
-      //}.Generate("Kazz", objectDatabase);
+      //Kazzak
+      new HeroFactory(UnitType.Doomguard)
+      {
+        AbilitiesHero = new Ability[] { massmanaburn },
+        Strength = 100,
+        Agility = 10,
+        Intelligence = 5,
+        ProperName = "Kazzak",
+        TextName = "Doomlord",
+      }.Generate("Kazz", objectDatabase);
 
       ////Aerial Shackles
       //var aerialshacklesfactory = new AerialShacklesFactory()

@@ -49,6 +49,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       ApplyButtonPositions(ability);
     }
 
+    //CreateInstance abstract method
+
     /// <summary>
     /// Generate a new ability instance.
     /// </summary>

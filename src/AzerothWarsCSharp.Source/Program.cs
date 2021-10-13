@@ -1,4 +1,5 @@
 ﻿using AzerothWarsCSharp.Source.Setup;
+using AzerothWarsCSharp.Source.Spells;
 using System;
 using static War3Api.Common;
 
@@ -36,6 +37,7 @@ namespace AzerothWarsCSharp.Source
 				SetHeroLevel(kazzak, 10, true);
 				unit arthas = CreateUnit(Player(0), FourCC("Bang"), 100, 400, 0);
 				SetHeroLevel(arthas, 10, true);
+				MassAnySpell.Initialize();
 				//GameSetup.Initialize();
 				Console.WriteLine("Hello, Azeroth.");
 			}
