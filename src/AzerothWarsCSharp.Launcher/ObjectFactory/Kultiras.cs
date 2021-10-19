@@ -102,12 +102,13 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       var immolationFactory = new ImmolationFactory()
       {
         DamagePerSecond = { 10F, 20F, 30F, 40F },
-        ManaCost = { 5, 5, 5, 5 },
         Levels = 4,
         Icon = "ImmolationOn",
         TextName = "Immolation",
         ButtonPosition = new Point(1, 2),
         IsHeroAbility = true,
+        ManaCost = { 5 },
+        Cooldown = { 0 },
         Flavor = "Engulfs the caster in flames, causing damage to nearby enemy land units. " +
           "|nDrains mana until deactivated."
       };

@@ -1,5 +1,4 @@
 ﻿using AzerothWarsCSharp.Launcher.ObjectFactory.AbilityProperties;
-using System.Text;
 using War3Api.Object;
 using War3Api.Object.Abilities;
 
@@ -7,10 +6,10 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
   public sealed class ImmolationFactory : ActiveAbilityFactory<ImmolationCreep>
   {
-    public LeveledAbilityPropertyFloat BufferManaRequired { get; set; } = new("Buffer mana required");
+    public LeveledAbilityPropertyFloat BufferManaRequired { get; set; } = new("Buffer mana required", 10);
     public LeveledAbilityPropertyFloat DamagePerSecond { get; set; } = new("Damage per second");
-    public LeveledAbilityPropertyFloat ManaDrainedPerSecond { get; set; } = new("Mana drained per second");
-    public LeveledAbilityPropertyFloat AreaOfEffect { get; set; } = new("Area of effect");
+    public LeveledAbilityPropertyFloat ManaDrainedPerSecond { get; set; } = new("Mana drained per second", 7);
+    public LeveledAbilityPropertyFloat AreaOfEffect { get; set; } = new("Area of effect", 50);
 
     protected override void ApplyStats(ImmolationCreep ability)
     {
