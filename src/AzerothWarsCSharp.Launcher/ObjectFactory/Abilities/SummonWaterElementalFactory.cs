@@ -1,4 +1,4 @@
-﻿using System.Text;
+﻿using AzerothWarsCSharp.Launcher.ObjectFactory.AbilityProperties;
 using War3Api.Object;
 using War3Api.Object.Abilities;
 
@@ -6,16 +6,20 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
   public sealed class SummonWaterElementalFactory : ActiveAbilityFactory<ArchMageWaterElemental>
   {
-    protected override string GenerateTooltipExtended(int level)
-    {
-      var stringBuilder = new StringBuilder();
-      stringBuilder.Append(@$"Summons a unit to attack the caster's enemies.");
-      stringBuilder.Append("|n");
-      stringBuilder.Append(SummonedUnit.ToConcatenatedString(level));
-      stringBuilder.Append(SummonCount.ToConcatenatedString(level));
-      stringBuilder.Append(Duration.ToConcatenatedString(level));
-      return stringBuilder.ToString();
-    }
+    /// <summary>
+    /// How long the summoned unit lasts before disappearing.
+    /// </summary>
+    public LeveledAbilityPropertyInt Duration { get; set; }
+
+    /// <summary>
+    /// Which unit types this ability summons, by level.
+    /// </summary>
+    public LeveledAbilityPropertyUnit SummonedUnit { get; set; }
+
+    /// <summary>
+    /// How many summons this ability makes, by level.
+    /// </summary>
+    public LeveledAbilityPropertyInt SummonCount { get; set; }
 
     protected override void ApplyStats(ArchMageWaterElemental ability)
     {
@@ -47,19 +51,11 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       return newAbility;
     }
 
-    /// <summary>
-    /// How long the summoned unit lasts before disappearing.
-    /// </summary>
-    public LeveledAbilityProperty<float> Duration { get; set; }
-
-    /// <summary>
-    /// Which unit types this ability summons, by level.
-    /// </summary>
-    public LeveledAbilityProperty<Unit> SummonedUnit { get; set; }
-
-    /// <summary>
-    /// How many summons this ability makes, by level.
-    /// </summary>
-    public LeveledAbilityProperty<int> SummonCount { get; set; }
+    public SummonWaterElementalFactory() : base()
+    {
+      Properties.Add(Duration);
+      Properties.Add(SummonedUnit);
+      Properties.Add(SummonCount);
+    }
   }
 }

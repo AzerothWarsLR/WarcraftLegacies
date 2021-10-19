@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Text;
+﻿using AzerothWarsCSharp.Launcher.ObjectFactory.AbilityProperties;
+using System.Collections.Generic;
 using War3Api.Object;
 using War3Api.Object.Abilities;
 
@@ -7,26 +7,11 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
   public class ControlMagicFactory : ActiveAbilityFactory<ControlMagic>
   {
-    public LeveledAbilityProperty<float> ManaPerSummonedHitpoint { get; set; } = new("Mana cost per hit points of target summoned unit");
-    public LeveledAbilityProperty<IEnumerable<Target>> TargetsAllowed { get; set; } = new("Targets allowed");
-    public LeveledAbilityProperty<int> MaximumCreepLevel { get; set; } = new("Maximum creep level");
-    public LeveledAbilityProperty<float> CastRange { get; set; } = new("Cast range");
-    public LeveledAbilityProperty<float> Duration { get; set; } = new("Duration");
-
-    protected override string GenerateTooltipExtended(int level)
-    {
-      var stringBuilder = new StringBuilder();
-      stringBuilder.Append(@$"Takes control of an enemy summoned unit.");
-      stringBuilder.Append("|n");
-      stringBuilder.Append(CastRange.ToConcatenatedString(level));
-      stringBuilder.Append(TargetsAllowed.ToConcatenatedString(level));
-      stringBuilder.Append(ManaPerSummonedHitpoint.ToConcatenatedString(level));
-      stringBuilder.Append(Duration.ToConcatenatedString(level));
-      stringBuilder.Append(MaximumCreepLevel.ToConcatenatedString(level, true));
-      stringBuilder.Append(ManaCost.ToConcatenatedString(level));
-      stringBuilder.Append(Cooldown.ToConcatenatedString(level));
-      return stringBuilder.ToString();
-    }
+    public LeveledAbilityPropertyFloat ManaPerSummonedHitpoint { get; set; } = new("Mana cost per hit points of target summoned unit");
+    public LeveledAbilityPropertyTargets TargetsAllowed { get; set; } = new("Targets allowed");
+    public LeveledAbilityPropertyInt MaximumCreepLevel { get; set; } = new("Maximum creep level");
+    public LeveledAbilityPropertyFloat CastRange { get; set; } = new("Cast range");
+    public LeveledAbilityPropertyFloat Duration { get; set; } = new("Duration");
 
     protected override void ApplyStats(ControlMagic ability)
     {
@@ -46,6 +31,15 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       var newAbility = new ControlMagic(newRawCode, objectDatabase);
       Apply(newAbility);
       return newAbility;
+    }
+
+    public ControlMagicFactory() : base()
+    {
+      Properties.Add(ManaPerSummonedHitpoint);
+      Properties.Add(CastRange);
+      Properties.Add(TargetsAllowed);
+      Properties.Add(MaximumCreepLevel);
+      Properties.Add(Duration);
     }
   }
 }

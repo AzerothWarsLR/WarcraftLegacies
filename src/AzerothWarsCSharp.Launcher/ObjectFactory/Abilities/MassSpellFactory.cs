@@ -2,23 +2,18 @@
 using War3Api.Object;
 using War3Api.Object.Abilities;
 using AzerothWarsCSharp.Common;
+using AzerothWarsCSharp.Launcher.ObjectFactory.AbilityProperties;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
-  public class MassSpellFactory : ActiveAbilityFactory<PitLordRainOfFire>
+  public class MassSpellFactory : ActiveAbilityFactory<IllidanChannel>
   {
-    protected override string GenerateTooltipExtended(int level)
-    {
-      var stringBuilder = new StringBuilder();
-      stringBuilder.Append(@$"Casts {Spell.TextName} on all units in the target area.");
-      stringBuilder.Append("|n");
-      stringBuilder.Append(AreaOfEffect.ToConcatenatedString(level));
-      stringBuilder.Append(ManaCost.ToConcatenatedString(level));
-      stringBuilder.Append(CastRange.ToConcatenatedString(level));
-      return stringBuilder.ToString();
-    }
+    public string BaseOrderId { get; set; } = "channel";
+    public LeveledAbilityPropertyFloat AreaOfEffect { get; set; } = new("Area of effect");
+    public LeveledAbilityPropertyFloat CastRange { get; set; } = new("Cast range");
+    public Ability Spell { get; set; } = null;
 
-    protected override void ApplyStats(PitLordRainOfFire ability)
+    protected override void ApplyStats(IllidanChannel ability)
     {
       ability.ArtCaster = new string[] { "" };
       ability.ArtEffect = new string[] { "" };
@@ -26,20 +21,20 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 
       for (var i = 0; i < Levels; i++)
       {
-        //ability.DataArtDuration[i + 1] = 0.98f;
-        //ability.DataBaseOrderID[i + 1] = BaseOrderId;
-        //ability.DataDisableOtherAbilities[i + 1] = false;
-        //ability.DataFollowThroughTime[i + 1] = 1;
-        //ability.DataOptionsRaw[i + 1] = 1;
-        //ability.DataTargetType[i + 1] = ChannelType.InstantNoTarget;
+        ability.DataArtDuration[i + 1] = 0.98f;
+        ability.DataBaseOrderID[i + 1] = BaseOrderId;
+        ability.DataDisableOtherAbilities[i + 1] = false;
+        ability.DataFollowThroughTime[i + 1] = 1;
+        ability.DataOptionsRaw[i + 1] = 1;
+        ability.DataTargetType[i + 1] = ChannelType.InstantNoTarget;
         ability.StatsAreaOfEffect[i + 1] = AreaOfEffect[i];
         ability.StatsCastRange[i] = CastRange[i];
       }
     }
 
-    public override PitLordRainOfFire Generate(string newRawCode, ObjectDatabase objectDatabase)
+    public override IllidanChannel Generate(string newRawCode, ObjectDatabase objectDatabase)
     {
-      var newAbility = new PitLordRainOfFire(newRawCode, objectDatabase);
+      var newAbility = new IllidanChannel(newRawCode, objectDatabase);
       Apply(newAbility);
       var definition = new MassAnySpellEffectDefinition(newAbility.NewId)
       {
@@ -49,9 +44,10 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       return newAbility;
     }
 
-    public string BaseOrderId { get; set; } = "channel";
-    public LeveledAbilityProperty<float> AreaOfEffect { get; set; } = new("Area of effect");
-    public LeveledAbilityProperty<float> CastRange { get; set; } = new("Cast range");
-    public Ability Spell { get; set; } = null;
+    public MassSpellFactory() : base()
+    {
+      Properties.Add(AreaOfEffect);
+      Properties.Add(CastRange);
+    }
   }
 }

@@ -1,4 +1,4 @@
-﻿using System.Text;
+﻿using AzerothWarsCSharp.Launcher.ObjectFactory.AbilityProperties;
 using War3Api.Object;
 using War3Api.Object.Abilities;
 
@@ -6,16 +6,12 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
   public sealed class MetamorphosisFactory : ActiveAbilityFactory<DemonHunterMetamorphosis>
   {
-    protected override string GenerateTooltipExtended(int level)
-    {
-      var stringBuilder = new StringBuilder();
-      stringBuilder.Append(@$"Transforms the caster into another unit.");
-      stringBuilder.Append("|n");
-      stringBuilder.Append(BonusHitPoints.ToConcatenatedString(level));
-      stringBuilder.Append(Duration.ToConcatenatedString(level));
-      stringBuilder.Append(AlternateForm.ToConcatenatedString(level));
-     return stringBuilder.ToString();
-    }
+    public LeveledAbilityPropertyFloat BonusHitPoints { get; set; } = new("Bonus hit points");
+    public LeveledAbilityPropertyUnit AlternateForm { get; set; } = new("Alternate form");
+    public LeveledAbilityPropertyUnit NormalForm { get; set; } = new("Normal form");
+    public LeveledAbilityPropertyMorphFlags MorphFlags { get; set; } = new("Morph flags");
+    public LeveledAbilityPropertyFloat Duration { get; set; } = new("Duration");
+    public LeveledAbilityPropertyFloat TransformTime { get; set; } = new("Transform time");
 
     protected override void ApplyStats(DemonHunterMetamorphosis ability)
     {
@@ -37,11 +33,14 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       return newAbility;
     }
 
-    public LeveledAbilityProperty<float> BonusHitPoints { get; set; } = new("Bonus hit points");
-    public LeveledAbilityProperty<Unit> AlternateForm { get; set; } = new("Alternate form");
-    public LeveledAbilityProperty<Unit> NormalForm { get; set; } = new("Normal form");
-    public LeveledAbilityProperty<MorphFlags> MorphFlags { get; set; } = new("Morph flags");
-    public LeveledAbilityProperty<float> Duration { get; set; } = new("Duration");
-    public LeveledAbilityProperty<float> TransformTime { get; set; } = new("Transform time");
+    public MetamorphosisFactory() : base()
+    {
+      Properties.Add(BonusHitPoints);
+      Properties.Add(AlternateForm);
+      Properties.Add(NormalForm);
+      Properties.Add(MorphFlags);
+      Properties.Add(Duration);
+      Properties.Add(TransformTime);
+    }
   }
 }

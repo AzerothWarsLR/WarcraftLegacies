@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using AzerothWarsCSharp.Launcher.ObjectFactory.AbilityProperties;
+using System.Text;
 using War3Api.Object;
 using War3Api.Object.Abilities;
 
@@ -6,15 +7,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
   public sealed class ManaBurnFactory : ActiveAbilityFactory<DemonHunterManaBurn>
   {
-    protected override string GenerateTooltipExtended(int level)
-    {
-      var stringBuilder = new StringBuilder();
-      stringBuilder.Append(@$"Sends a bolt of negative energy that burns a target enemy unit's mana. Burned mana combusts, dealing damage to the target equal to the amount of mana burned.");
-      stringBuilder.Append("|n");
-      stringBuilder.Append(MaxManaDrained.ToConcatenatedString(level));
-      stringBuilder.Append(CastRange.ToConcatenatedString(level));
-      return stringBuilder.ToString();
-    }
+    public LeveledAbilityPropertyFloat MaxManaDrained = new("Mana drained");
+    public LeveledAbilityPropertyFloat CastRange = new("Range");
 
     protected override void ApplyStats(DemonHunterManaBurn ability)
     {
@@ -33,7 +27,10 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       return newAbility;
     }
 
-    public LeveledAbilityProperty<float> MaxManaDrained = new("Mana drained");
-    public LeveledAbilityProperty<float> CastRange = new("Range");
+    public ManaBurnFactory() : base()
+    {
+      Properties.Add(MaxManaDrained);
+      Properties.Add(CastRange);
+    }
   }
 }

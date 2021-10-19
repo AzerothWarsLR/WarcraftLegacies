@@ -98,18 +98,20 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       //};
       //var evasion = evasionFactory.Generate("Greb", objectDatabase);
 
-      ////Immolation
-      //var immolationFactory = new ImmolationFactory()
-      //{
-      //  DamagePerSecond = { 10F, 20F, 30F, 40F },
-      //  ManaCost = { 5, 5, 5, 5 },
-      //  Levels = 4,
-      //  Icon = "ImmolationOn",
-      //  TextName = "Immolation",
-      //  ButtonPosition = new Point(1, 2),
-      //  IsHeroAbility = true
-      //};
-      //var immolation = immolationFactory.Generate("imm1", objectDatabase);
+      //Immolation
+      var immolationFactory = new ImmolationFactory()
+      {
+        DamagePerSecond = { 10F, 20F, 30F, 40F },
+        ManaCost = { 5, 5, 5, 5 },
+        Levels = 4,
+        Icon = "ImmolationOn",
+        TextName = "Immolation",
+        ButtonPosition = new Point(1, 2),
+        IsHeroAbility = true,
+        Flavor = "Engulfs the caster in flames, causing damage to nearby enemy land units. " +
+          "|nDrains mana until deactivated."
+      };
+      var immolation = immolationFactory.Generate("imm1", objectDatabase);
 
       //Immolation
       var manaburnfactory = new ManaBurnFactory()
@@ -141,16 +143,16 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       //};
       //var metamorphosis = metamorphosisFactory.Generate("meta", objectDatabase);
 
-      ////Blademaster
-      //new HeroFactory(UnitType.Demonhunter)
-      //{
-      //  AbilitiesHero = new Ability[] { evasion, immolation, manaburn, metamorphosis },
-      //  Strength = 100,
-      //  Agility = 10,
-      //  Intelligence = 5,
-      //  ProperName = "YakaryBovine",
-      //  TextName = "Blademaster",
-      //}.Generate("Yakb", objectDatabase);
+      //Blademaster
+      new HeroFactory(UnitType.Demonhunter)
+      {
+        AbilitiesHero = new Ability[] {immolation, manaburn },
+        Strength = 100,
+        Agility = 10,
+        Intelligence = 5,
+        ProperName = "YakaryBovine",
+        TextName = "Blademaster",
+      }.Generate("Yakb", objectDatabase);
 
       ////Deckhand
       //new WorkerFactory(UnitType.Peasant)
@@ -192,59 +194,58 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         TextName = "Doomlord",
       }.Generate("Kazz", objectDatabase);
 
-      ////Aerial Shackles
-      //var aerialshacklesfactory = new AerialShacklesFactory()
-      //{
-      //  DurationUnit = { 40 },
-      //  CastRange = { 550 },
-      //  Levels = 1,
-      //  Icon = "MagicLariet",
-      //  TextName = "Aerial Shackles",
-      //  ButtonPosition = new Point(0, 0),
-      //  DamagePerSecond = { 8 },
-      //  DurationHero = { 4 },
-      //  Cooldown = { 0 }
-      //};
-      //var aerialshackles = aerialshacklesfactory.Generate("shac", objectDatabase);
+      //Aerial Shackles
+      var aerialshacklesfactory = new AerialShacklesFactory()
+      {
+        DurationUnit = { 40 },
+        CastRange = { 550 },
+        Levels = 1,
+        Icon = "MagicLariet",
+        TextName = "Aerial Shackles",
+        ButtonPosition = new Point(0, 0),
+        DamagePerSecond = { 8 },
+        DurationHero = { 4 },
+        Cooldown = { 0 }
+      };
+      var aerialshackles = aerialshacklesfactory.Generate("shac", objectDatabase);
 
-      ////Dragonhawk Rider
-      //new UnitFactory(UnitType.Dragonhawk)
-      //{
-      //  TextName = "Dragonhawk Rider",
-      //  ArtIconGameInterface = "DragonHawk",
-      //  AbilitiesNormal = new Ability[] { aerialshackles },
-      //  DamageBase = 10,
-      //  DamageNumberOfDice = 2,
-      //  DamageSidesPerDie = 6,
-      //  HitPoints = 600,
-      //  Flavour = "Swift dragonhawk mounted by an elven warrior.",
-      //}.Generate("drag", objectDatabase);
+      //Dragonhawk Rider
+      new UnitFactory(UnitType.Dragonhawk)
+      {
+        TextName = "Dragonhawk Rider",
+        ArtIconGameInterface = "DragonHawk",
+        AbilitiesNormal = new Ability[] { aerialshackles },
+        DamageBase = 10,
+        DamageNumberOfDice = 2,
+        DamageSidesPerDie = 6,
+        HitPoints = 600,
+        Flavour = "Swift dragonhawk mounted by an elven warrior.",
+      }.Generate("drag", objectDatabase);
 
-      ////Holy Light
-      //var holyLightFactory = new HolyLightFactory()
-      //{
-      //  AmountHealed = { 50, 100, 200, 250 },
-      //  CastRange = { 300 },
-      //  Levels = 4,
-      //  Icon = @"HolyBolt",
-      //  TextName = "Holy Light",
-      //  ButtonPosition = new Point(0, 2),
-      //  IsHeroAbility = false
-      //};
-      //var holyLight = holyLightFactory.Generate("keko", objectDatabase);
+      //Holy Light
+      var holyLightFactory = new HolyLightFactory()
+      {
+        AmountHealed = { 50, 100, 200, 250 },
+        CastRange = { 300 },
+        Levels = 4,
+        Icon = @"HolyBolt",
+        TextName = "Holy Light",
+        ButtonPosition = new Point(0, 2),
+        IsHeroAbility = false
+      };
+      var holyLight = holyLightFactory.Generate("keko", objectDatabase);
 
-      ////Arthas
-      //new HeroFactory(UnitType.Paladin)
-      //{
-      //  AbilitiesHero = new Ability[] { holyLight },
-      //  AbilitiesNormal = new Ability[] { holyLight },
-      //  Strength = 100,
-      //  Agility = 10,
-      //  Intelligence = 5,
-      //  ProperName = "Arthas",
-      //  TextName = "Prince",
-      //  ArtModelFile = @"units\human\Arthas\Arthas"
-      //}.Generate("Bang", objectDatabase);
+      //Arthas
+      new HeroFactory(UnitType.Paladin)
+      {
+        AbilitiesHero = new Ability[] { holyLight },
+        Strength = 100,
+        Agility = 10,
+        Intelligence = 5,
+        ProperName = "Arthas",
+        TextName = "Prince",
+        ArtModelFile = @"units\human\Arthas\Arthas"
+      }.Generate("Bang", objectDatabase);
     }
   }
 }

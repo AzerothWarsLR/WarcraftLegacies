@@ -1,4 +1,4 @@
-﻿using System.Text;
+﻿using AzerothWarsCSharp.Launcher.ObjectFactory.AbilityProperties;
 using War3Api.Object;
 using War3Api.Object.Abilities;
 
@@ -6,13 +6,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
   public sealed class HolyLightFactory : ActiveAbilityFactory<PaladinHolyLight>
   {
-    protected override string GenerateTooltipExtended(int level)
-    {
-      var stringBuilder = new StringBuilder();
-      stringBuilder.Append(@$"very holy spell.");
-      stringBuilder.Append("|n");
-      return stringBuilder.ToString();
-    }
+    public LeveledAbilityPropertyFloat AmountHealed = new("Amount healed");
+    public LeveledAbilityPropertyFloat CastRange = new("Range");
 
     protected override void ApplyStats(PaladinHolyLight ability)
     {
@@ -30,7 +25,10 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       return newAbility;
     }
 
-    public LeveledAbilityProperty<float> AmountHealed = new("Amount healed");
-    public LeveledAbilityProperty<float> CastRange = new("Range");
+    public HolyLightFactory() : base()
+    {
+      Properties.Add(AmountHealed);
+      Properties.Add(CastRange);
+    }
   }
 }

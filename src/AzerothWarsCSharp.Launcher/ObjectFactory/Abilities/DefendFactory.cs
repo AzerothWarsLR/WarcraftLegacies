@@ -1,4 +1,4 @@
-﻿using System.Text;
+﻿using AzerothWarsCSharp.Launcher.ObjectFactory.AbilityProperties;
 using War3Api.Object;
 using War3Api.Object.Abilities;
 
@@ -6,32 +6,14 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
   public class DefendFactory : ActiveAbilityFactory<Defend>
   {
-    public LeveledAbilityProperty<float> AttackSpeedFactor = new("Attack speed factor");
-    public LeveledAbilityProperty<float> ChanceToDeflect = new("Chance to deflect");
-    public LeveledAbilityProperty<float> DamageDealt = new("Damage dealt");
-    public LeveledAbilityProperty<float> DamageTaken = new("Damage taken");
-    public LeveledAbilityProperty<float> DeflectDamageTakenPiercing = new("Deflect damage taken (piercing)");
-    public LeveledAbilityProperty<float> DeflectDamageTakenSpells = new("Deflect damage taken (spells)");
-    public LeveledAbilityProperty<float> MagicDamageReduction = new("Magic damage reduction");
-    public LeveledAbilityProperty<float> MovementSpeedFactor = new("Movement speed factor");
-
-    protected override string GenerateTooltipExtended(int level)
-    {
-      var stringBuilder = new StringBuilder();
-      stringBuilder.Append(@$"Activate to have a chance to reflect Piercing attacks upon the source, 
-        and to take reduced the damage from attacks that are not reflected. 
-        While active, movement speed is reduced.");
-      stringBuilder.Append("|n");
-      stringBuilder.Append(AttackSpeedFactor.ToConcatenatedString(level, true));
-      stringBuilder.Append(ChanceToDeflect.ToConcatenatedString(level, true));
-      stringBuilder.Append(DamageDealt.ToConcatenatedString(level, true));
-      stringBuilder.Append(DamageTaken.ToConcatenatedString(level, true));
-      stringBuilder.Append(DeflectDamageTakenPiercing.ToConcatenatedString(level, true));
-      stringBuilder.Append(DeflectDamageTakenSpells.ToConcatenatedString(level, true));
-      stringBuilder.Append(MagicDamageReduction.ToConcatenatedString(level, true));
-      stringBuilder.Append(MovementSpeedFactor.ToConcatenatedString(level, true));
-      return stringBuilder.ToString();
-    }
+    public LeveledAbilityPropertyFloat AttackSpeedFactor = new("Attack speed factor");
+    public LeveledAbilityPropertyFloat ChanceToDeflect = new("Chance to deflect");
+    public LeveledAbilityPropertyFloat DamageDealt = new("Damage dealt");
+    public LeveledAbilityPropertyFloat DamageTaken = new("Damage taken");
+    public LeveledAbilityPropertyFloat DeflectDamageTakenPiercing = new("Deflect damage taken (piercing)");
+    public LeveledAbilityPropertyFloat DeflectDamageTakenSpells = new("Deflect damage taken (spells)");
+    public LeveledAbilityPropertyFloat MagicDamageReduction = new("Magic damage reduction");
+    public LeveledAbilityPropertyFloat MovementSpeedFactor = new("Movement speed factor");
 
     protected override void ApplyStats(Defend ability)
     {
@@ -53,6 +35,18 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       var newAbility = new Defend(newRawCode, objectDatabase);
       Apply(newAbility);
       return newAbility;
+    }
+
+    public DefendFactory() : base()
+    {
+      Properties.Add(AttackSpeedFactor);
+      Properties.Add(ChanceToDeflect);
+      Properties.Add(DamageDealt);
+      Properties.Add(DamageTaken);
+      Properties.Add(DeflectDamageTakenPiercing);
+      Properties.Add(DeflectDamageTakenSpells);
+      Properties.Add(MagicDamageReduction);
+      Properties.Add(MovementSpeedFactor);
     }
   }
 }

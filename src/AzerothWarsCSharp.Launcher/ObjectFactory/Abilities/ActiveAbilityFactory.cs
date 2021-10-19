@@ -1,4 +1,5 @@
-﻿using War3Api.Object;
+﻿using AzerothWarsCSharp.Launcher.ObjectFactory.AbilityProperties;
+using War3Api.Object;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
@@ -22,11 +23,16 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     /// <summary>
     /// How much mana the ability costs.
     /// </summary>
-    public LeveledAbilityProperty<int> ManaCost { get; set; } = new("Mana cost");
+    public LeveledAbilityPropertyInt ManaCost { get; set; } = new("Mana cost", 0);
 
     /// <summary>
     /// The time the unit with the ability has to wait before using the ability again.
     /// </summary>
-    public LeveledAbilityProperty<int> Cooldown { get; set; } = new("Cooldown");
+    public LeveledAbilityPropertyInt Cooldown { get; set; } = new("Cooldown", 0);
+
+    public ActiveAbilityFactory() : base() {
+      Properties.Add(ManaCost);
+      Properties.Add(Cooldown);
+    }
   }
 }

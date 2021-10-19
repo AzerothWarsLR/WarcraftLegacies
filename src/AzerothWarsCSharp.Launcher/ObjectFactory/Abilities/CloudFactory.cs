@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Text;
+﻿using AzerothWarsCSharp.Launcher.ObjectFactory.AbilityProperties;
+using System.Collections.Generic;
 using War3Api.Object;
 using War3Api.Object.Abilities;
 
@@ -7,28 +7,12 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
 {
   public class CloudOfFogFactory : ActiveAbilityFactory<CloudOfFog>
   {
-    public LeveledAbilityProperty<float> AttackSpeedModifier { get; set; } = new("Attack speed modifier");
-    public LeveledAbilityProperty<float> CastRange { get; set; } = new("Cast range");
-    public LeveledAbilityProperty<IEnumerable<Target>> TargetsAllowed { get; set; } = new("Targets allowed");
-    public LeveledAbilityProperty<SilenceFlags> AttacksPrevented { get; set; } = new("Attacks prevented");
-    public LeveledAbilityProperty<float> Duration { get; set; } = new("Duration");
-    public LeveledAbilityProperty<float> ChanceToMiss { get; set; } = new("Chance to miss");
-
-    protected override string GenerateTooltipExtended(int level)
-    {
-      var stringBuilder = new StringBuilder();
-      stringBuilder.Append(@$"Cast on enemy buildings with ranged attacks to stop the buildings from attacking.");
-      stringBuilder.Append("|n");
-      stringBuilder.Append(AttackSpeedModifier.ToConcatenatedString(level, true));
-      stringBuilder.Append(CastRange.ToConcatenatedString(level));
-      stringBuilder.Append(TargetsAllowed.ToConcatenatedString(level));
-      stringBuilder.Append(AttacksPrevented.ToConcatenatedString(level));
-      stringBuilder.Append(Duration.ToConcatenatedString(level));
-      stringBuilder.Append(ChanceToMiss.ToConcatenatedString(level, true));
-      stringBuilder.Append(ManaCost.ToConcatenatedString(level));
-      stringBuilder.Append(Cooldown.ToConcatenatedString(level));
-      return stringBuilder.ToString();
-    }
+    public LeveledAbilityPropertyFloat AttackSpeedModifier { get; set; } = new("Attack speed modifier");
+    public LeveledAbilityPropertyFloat CastRange { get; set; } = new("Cast range");
+    public LeveledAbilityPropertyTargets TargetsAllowed { get; set; } = new("Targets allowed");
+    public LeveledAbilityPropertySilenceFlags AttacksPrevented { get; set; } = new("Attacks prevented");
+    public LeveledAbilityPropertyFloat Duration { get; set; } = new("Duration");
+    public LeveledAbilityPropertyFloat ChanceToMiss { get; set; } = new("Chance to miss");
 
     protected override void ApplyStats(CloudOfFog ability)
     {
@@ -49,6 +33,16 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       var newAbility = new CloudOfFog(newRawCode, objectDatabase);
       Apply(newAbility);
       return newAbility;
+    }
+
+    public CloudOfFogFactory() : base()
+    {
+      Properties.Add(AttackSpeedModifier);
+      Properties.Add(CastRange);
+      Properties.Add(TargetsAllowed);
+      Properties.Add(AttacksPrevented);
+      Properties.Add(Duration);
+      Properties.Add(ChanceToMiss);
     }
   }
 }

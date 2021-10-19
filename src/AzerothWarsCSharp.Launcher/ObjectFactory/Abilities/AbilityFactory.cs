@@ -1,4 +1,6 @@
-﻿using System.Drawing;
+﻿using AzerothWarsCSharp.Launcher.ObjectFactory.AbilityProperties;
+using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 using War3Api.Object;
 
@@ -32,7 +34,17 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     /// </summary>
     /// <param name="level"></param>
     /// <returns></returns>
-    protected abstract string GenerateTooltipExtended(int level = 0);
+    protected string GenerateTooltipExtended(int level = 0)
+    {
+      var stringBuilder = new StringBuilder();
+      stringBuilder.Append(Flavor);
+      stringBuilder.Append("|n");
+      foreach (var property in Properties)
+      {
+        stringBuilder.Append(property.ToConcatenatedString(level));
+      }
+      return stringBuilder.ToString();
+    }
 
     /// <summary>
     /// Applies essential features like mana cost and cooldown.
@@ -46,7 +58,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       ability.TextName = TextName;
       ability.TextEditorSuffix = EditorSuffix;
       ability.TextTooltipLearnExtended = GenerateTooltipExtended();
-      for (var i = 1; i < Levels+1; i++)
+      for (var i = 1; i < Levels + 1; i++)
       {
         ability.TextTooltipNormalExtended[i] = GenerateTooltipExtended(i);
       }
@@ -79,5 +91,15 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     public Point ButtonPosition { get; set; }
 
     public string EditorSuffix { get; set; } = "";
+
+    /// <summary>
+    /// Ability propeties like damage and mana cost, which are used to determine the ability tooltip.
+    /// </summary>
+    public List<ILeveledAbilityPropertyReadable> Properties { get; } = new();
+
+    /// <summary>
+    /// Inserted at the top of the ability's tooltip.
+    /// </summary>
+    public string Flavor { get; set; } = "PLACEHOLDERFLAVORTEXT";
   }
 }
