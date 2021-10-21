@@ -15,8 +15,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     {
       for (var i = 0; i < Levels; i++)
       {
-        //ability.StatsManaCost[i + 1] = i < ManaCost.Length ? ManaCost[i] : 0;
-        //ability.StatsCooldown[i + 1] = i < Cooldown.Length ? Cooldown[i] : 0;
+        ability.StatsManaCost[i + 1] = ManaCost[i];
+        ability.StatsCooldown[i + 1] = Cooldown[i];
       }
     }
 

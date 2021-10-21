@@ -11,11 +11,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AzerothWarsCSharp.Common\AzerothWarsCSharp.Common.csproj" />
+    <ProjectReference Include="..\War3Api.Object\War3Api.Object.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0-rc.1.21451.13" />
-    <PackageReference Include="War3Api.Object" Version="1.31.1-rc9" />
     <PackageReference Include="War3Net.Build" Version="5.0.4" />
     <PackageReference Include="War3Net.CSharpLua.CoreSystem" Version="1.7.14" />
     <PackageReference Include="WCSharp.ConstantGenerator" Version="2.0.2" />

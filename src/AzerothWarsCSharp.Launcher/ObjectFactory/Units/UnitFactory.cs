@@ -230,7 +230,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     {
       get
       {
-        return _baseType ?? Parent?.BaseType ?? UnitType.Peasant;
+        return _baseType ?? Parent?.BaseType ?? UnitType.Peasant_hpea;
       }
       set
       {

@@ -114,7 +114,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       };
       var immolation = immolationFactory.Generate("imm1", objectDatabase);
 
-      //Immolation
+      //Mana Burn
       var manaburnfactory = new ManaBurnFactory()
       {
         MaxManaDrained = { 50, 100, 200, 250 },
@@ -144,16 +144,16 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       //};
       //var metamorphosis = metamorphosisFactory.Generate("meta", objectDatabase);
 
-      //Blademaster
-      new HeroFactory(UnitType.Demonhunter)
-      {
-        AbilitiesHero = new Ability[] {immolation, manaburn },
-        Strength = 100,
-        Agility = 10,
-        Intelligence = 5,
-        ProperName = "YakaryBovine",
-        TextName = "Blademaster",
-      }.Generate("Yakb", objectDatabase);
+      ////Blademaster
+      //new HeroFactory(UnitType.Demonhunter)
+      //{
+      //  AbilitiesHero = new Ability[] {immolation, manaburn },
+      //  Strength = 100,
+      //  Agility = 10,
+      //  Intelligence = 5,
+      //  ProperName = "YakaryBovine",
+      //  TextName = "Blademaster",
+      //}.Generate("Yakb", objectDatabase);
 
       ////Deckhand
       //new WorkerFactory(UnitType.Peasant)
@@ -187,7 +187,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       //Kazzak
       new HeroFactory(UnitType.Doomguard)
       {
-        AbilitiesHero = new Ability[] { massmanaburn },
+        AbilitiesHero = new Ability[] { massmanaburn, immolation },
         Strength = 100,
         Agility = 10,
         Intelligence = 5,
@@ -195,58 +195,58 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         TextName = "Doomlord",
       }.Generate("Kazz", objectDatabase);
 
-      //Aerial Shackles
-      var aerialshacklesfactory = new AerialShacklesFactory()
-      {
-        DurationUnit = { 40 },
-        CastRange = { 550 },
-        Levels = 1,
-        Icon = "MagicLariet",
-        TextName = "Aerial Shackles",
-        ButtonPosition = new Point(0, 0),
-        DamagePerSecond = { 8 },
-        DurationHero = { 4 },
-        Cooldown = { 0 }
-      };
-      var aerialshackles = aerialshacklesfactory.Generate("shac", objectDatabase);
+      ////Aerial Shackles
+      //var aerialshacklesfactory = new AerialShacklesFactory()
+      //{
+      //  DurationUnit = { 40 },
+      //  CastRange = { 550 },
+      //  Levels = 1,
+      //  Icon = "MagicLariet",
+      //  TextName = "Aerial Shackles",
+      //  ButtonPosition = new Point(0, 0),
+      //  DamagePerSecond = { 8 },
+      //  DurationHero = { 4 },
+      //  Cooldown = { 0 }
+      //};
+      //var aerialshackles = aerialshacklesfactory.Generate("shac", objectDatabase);
 
-      //Dragonhawk Rider
-      new UnitFactory(UnitType.Dragonhawk)
-      {
-        TextName = "Dragonhawk Rider",
-        ArtIconGameInterface = "DragonHawk",
-        AbilitiesNormal = new Ability[] { aerialshackles },
-        DamageBase = 10,
-        DamageNumberOfDice = 2,
-        DamageSidesPerDie = 6,
-        HitPoints = 600,
-        Flavour = "Swift dragonhawk mounted by an elven warrior.",
-      }.Generate("drag", objectDatabase);
+      ////Dragonhawk Rider
+      //new UnitFactory(UnitType.Dragonhawk)
+      //{
+      //  TextName = "Dragonhawk Rider",
+      //  ArtIconGameInterface = "DragonHawk",
+      //  AbilitiesNormal = new Ability[] { aerialshackles },
+      //  DamageBase = 10,
+      //  DamageNumberOfDice = 2,
+      //  DamageSidesPerDie = 6,
+      //  HitPoints = 600,
+      //  Flavour = "Swift dragonhawk mounted by an elven warrior.",
+      //}.Generate("drag", objectDatabase);
 
-      //Holy Light
-      var holyLightFactory = new HolyLightFactory()
-      {
-        AmountHealed = { 50, 100, 200, 250 },
-        CastRange = { 300 },
-        Levels = 4,
-        Icon = @"HolyBolt",
-        TextName = "Holy Light",
-        ButtonPosition = new Point(0, 2),
-        IsHeroAbility = false
-      };
-      var holyLight = holyLightFactory.Generate("keko", objectDatabase);
+      ////Holy Light
+      //var holyLightFactory = new HolyLightFactory()
+      //{
+      //  AmountHealed = { 50, 100, 200, 250 },
+      //  CastRange = { 300 },
+      //  Levels = 4,
+      //  Icon = @"HolyBolt",
+      //  TextName = "Holy Light",
+      //  ButtonPosition = new Point(0, 2),
+      //  IsHeroAbility = false
+      //};
+      //var holyLight = holyLightFactory.Generate("keko", objectDatabase);
 
-      //Arthas
-      new HeroFactory(UnitType.Paladin)
-      {
-        AbilitiesHero = new Ability[] { holyLight },
-        Strength = 100,
-        Agility = 10,
-        Intelligence = 5,
-        ProperName = "Arthas",
-        TextName = "Prince",
-        ArtModelFile = @"units\human\Arthas\Arthas"
-      }.Generate("Bang", objectDatabase);
+      ////Arthas
+      //new HeroFactory(UnitType.Paladin_Hpal)
+      //{
+      //  AbilitiesHero = new Ability[] { holyLight },
+      //  Strength = 100,
+      //  Agility = 10,
+      //  Intelligence = 5,
+      //  ProperName = "Arthas",
+      //  TextName = "Prince",
+      //  ArtModelFile = @"units\human\Arthas\Arthas"
+      //}.Generate("Bang", objectDatabase);
     }
   }
 }

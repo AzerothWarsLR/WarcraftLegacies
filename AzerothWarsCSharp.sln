@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.Common", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.Generated", "src\AzerothWarsCSharp.Generated\AzerothWarsCSharp.Generated.csproj", "{3DE25822-0AB6-4F6B-B8E3-6353A4068171}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzerothWarsCSharp.SourceTest", "AzerothWarsCSharp.SourceTest\AzerothWarsCSharp.SourceTest.csproj", "{F01F11A4-628D-4A4A-A2E4-469C52EE5D15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.SourceTest", "AzerothWarsCSharp.SourceTest\AzerothWarsCSharp.SourceTest.csproj", "{F01F11A4-628D-4A4A-A2E4-469C52EE5D15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "War3Api.Object", "src\War3Api.Object\War3Api.Object.csproj", "{156BCB9F-28DC-42D0-967C-D71CFB8E7AA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{F01F11A4-628D-4A4A-A2E4-469C52EE5D15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F01F11A4-628D-4A4A-A2E4-469C52EE5D15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F01F11A4-628D-4A4A-A2E4-469C52EE5D15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{156BCB9F-28DC-42D0-967C-D71CFB8E7AA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{156BCB9F-28DC-42D0-967C-D71CFB8E7AA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{156BCB9F-28DC-42D0-967C-D71CFB8E7AA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{156BCB9F-28DC-42D0-967C-D71CFB8E7AA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
