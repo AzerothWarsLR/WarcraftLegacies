@@ -160,7 +160,7 @@ namespace Launcher
     private static ObjectDatabase GenerateObjectDatabase()
     {
       ObjectDatabase objectDatabase = new();
-      Kultiras.GenerateObjectData(objectDatabase);
+      Human.GenerateObjectData(objectDatabase);
       return objectDatabase;
     }
 
