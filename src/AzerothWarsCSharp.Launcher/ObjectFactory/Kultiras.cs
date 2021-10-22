@@ -222,31 +222,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       //  HitPoints = 600,
       //  Flavour = "Swift dragonhawk mounted by an elven warrior.",
       //}.Generate("drag", objectDatabase);
-
-      ////Holy Light
-      //var holyLightFactory = new HolyLightFactory()
-      //{
-      //  AmountHealed = { 50, 100, 200, 250 },
-      //  CastRange = { 300 },
-      //  Levels = 4,
-      //  Icon = @"HolyBolt",
-      //  TextName = "Holy Light",
-      //  ButtonPosition = new Point(0, 2),
-      //  IsHeroAbility = false
-      //};
-      //var holyLight = holyLightFactory.Generate("keko", objectDatabase);
-
-      ////Arthas
-      //new HeroFactory(UnitType.Paladin_Hpal)
-      //{
-      //  AbilitiesHero = new Ability[] { holyLight },
-      //  Strength = 100,
-      //  Agility = 10,
-      //  Intelligence = 5,
-      //  ProperName = "Arthas",
-      //  TextName = "Prince",
-      //  ArtModelFile = @"units\human\Arthas\Arthas"
-      //}.Generate("Bang", objectDatabase);
     }
   }
 }

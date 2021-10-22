@@ -28,8 +28,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       {
         ability.StatsDurationNormal[i + 1] = Duration[i];
         ability.DataSummonedUnitType[i + 1] = SummonedUnit[i];
-        ability.TextTooltipNormal[i + 1] = $"Summon {SummonedUnit[i].TextName}";
-        ability.TextTooltipNormal[i + 1] = $"Summon {SummonedUnit[i].TextName}";
         ability.DataSummonedUnitCount[i + 1] = SummonCount[i];
       }
     }

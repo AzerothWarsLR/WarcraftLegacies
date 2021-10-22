@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.AbilityProperties
   /// <typeparam name="T"></typeparam>
   public abstract class LeveledAbilityProperty<T> : IEnumerable<T>, ILeveledAbilityPropertyReadable
   {
-    protected IList<T> Values { get; set; } = new List<T>();
+    protected List<T> Values { get; set; } = new List<T>();
     protected string Name { get; private set; }
     public T Default { get; }
 
@@ -64,7 +64,16 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.AbilityProperties
         }
         return Default;
       }
-      set => Values[key] = value;
+      set
+      {
+        if (key >= Values.Count)
+        {
+          Values.Add(value);
+        } else
+        {
+          Values[key] = value;
+        }
+      }
     }
 
     public LeveledAbilityProperty(string name, T defaultValue)

@@ -22,7 +22,10 @@ namespace AzerothWarsCSharp.Source
 		{
 			try
 			{
-				CreateUnit(Player(0), FourCC("zpea"), 0, 0, 0);
+				CreateUnit(Player(0), FourCC("zpea"), 0, 0, 0); //Peasant
+				CreateUnit(Player(0), FourCC("zfoo"), 0, 0, 0); //Footman
+				CreateUnit(Player(0), FourCC("zkni"), 0, 0, 0); //Knight
+				CreateUnit(Player(0), FourCC("Zart"), 0, 0, 0); //Arthas
 				//GameSetup.Initialize();
 				Console.WriteLine("Hello, Azeroth.");
 			}

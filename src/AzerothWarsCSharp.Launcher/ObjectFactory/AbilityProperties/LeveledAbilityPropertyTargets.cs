@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.AbilityProperties
       return "notImplemented";
     }
 
-    public LeveledAbilityPropertyTargets(string name, IEnumerable<Target> defaultValue = default) : base(name, defaultValue)
+    public LeveledAbilityPropertyTargets(string name, IEnumerable<Target> defaultValue) : base(name, defaultValue)
     {
 
     }

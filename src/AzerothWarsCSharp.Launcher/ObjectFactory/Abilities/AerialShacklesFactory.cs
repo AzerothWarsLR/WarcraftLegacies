@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
   {
     public LeveledAbilityPropertyFloat DamagePerSecond { get; set; } = new("Damage per second");
     public LeveledAbilityPropertyFloat CastRange { get; set; } = new("Cast range");
-    public LeveledAbilityPropertyTargets TargetsAllowed { get; set; } = new("Targets allowed");
+    public LeveledAbilityPropertyTargets TargetsAllowed { get; set; } = new("Targets allowed", new List<Target>());
     public LeveledAbilityPropertyFloat DurationUnit { get; set; } = new("Duration (unit)");
     public LeveledAbilityPropertyFloat DurationHero { get; set; } = new("Duration (hero)");
 

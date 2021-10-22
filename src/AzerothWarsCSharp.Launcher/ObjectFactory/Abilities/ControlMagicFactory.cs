@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
   public class ControlMagicFactory : ActiveAbilityFactory<ControlMagic>
   {
     public LeveledAbilityPropertyFloat ManaPerSummonedHitpoint { get; set; } = new("Mana cost per hit points of target summoned unit");
-    public LeveledAbilityPropertyTargets TargetsAllowed { get; set; } = new("Targets allowed");
+    public LeveledAbilityPropertyTargets TargetsAllowed { get; set; } = new("Targets allowed", new List<Target>());
     public LeveledAbilityPropertyInt MaximumCreepLevel { get; set; } = new("Maximum creep level");
     public LeveledAbilityPropertyFloat CastRange { get; set; } = new("Cast range");
     public LeveledAbilityPropertyFloat Duration { get; set; } = new("Duration");

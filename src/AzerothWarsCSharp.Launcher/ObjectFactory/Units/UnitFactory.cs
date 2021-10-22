@@ -42,6 +42,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.ArtIconGameInterface = ArtIconGameInterface;
       unit.AbilitiesNormal = AbilitiesNormal;
       unit.ArtRequiredAnimationNames = RequiredAnimationNames;
+      unit.CombatDefenseBase = Armor;
     }
 
     /// <summary>
@@ -262,6 +263,13 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       {
         _requiredAnimationNames = value;
       }
+    }
+
+    private int? _armor = 0;
+    public int Armor
+    {
+      get => _armor ?? Parent?.Armor ?? 0;
+      set => _armor = value;
     }
 
     public UnitFactory Parent { get; set; }

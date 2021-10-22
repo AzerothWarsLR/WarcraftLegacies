@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
   {
     public LeveledAbilityPropertyFloat AttackSpeedModifier { get; set; } = new("Attack speed modifier");
     public LeveledAbilityPropertyFloat CastRange { get; set; } = new("Cast range");
-    public LeveledAbilityPropertyTargets TargetsAllowed { get; set; } = new("Targets allowed");
+    public LeveledAbilityPropertyTargets TargetsAllowed { get; set; } = new("Targets allowed", new List<Target>());
     public LeveledAbilityPropertySilenceFlags AttacksPrevented { get; set; } = new("Attacks prevented");
     public LeveledAbilityPropertyFloat Duration { get; set; } = new("Duration");
     public LeveledAbilityPropertyFloat ChanceToMiss { get; set; } = new("Chance to miss");

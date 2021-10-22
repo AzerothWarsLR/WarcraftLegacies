@@ -1,6 +1,7 @@
 ﻿using War3Api.Object;
 using War3Api.Object.Abilities;
 using AzerothWarsCSharp.Launcher.ObjectFactory.AbilityProperties;
+using System.Collections.Generic;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities.Human
 {
@@ -11,7 +12,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities.Human
     public LeveledAbilityPropertyFloat RepairCostRatio = new("Repair cost ratio", 0.35f);
     public LeveledAbilityPropertyFloat RepairTimeRatio = new("Repair time ratio", 1.5f);
     public LeveledAbilityPropertyFloat CastRange = new("Cast range", 50);
-    public LeveledAbilityPropertyTargets TargetsAllowed = new("Targets allowed");
+    public LeveledAbilityPropertyTargets TargetsAllowed = new("Targets allowed", new List<Target>());
 
     protected override void ApplyStats(RepairHuman ability)
     {

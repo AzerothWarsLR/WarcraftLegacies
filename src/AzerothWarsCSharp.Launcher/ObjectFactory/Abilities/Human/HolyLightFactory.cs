@@ -2,7 +2,7 @@
 using War3Api.Object;
 using War3Api.Object.Abilities;
 
-namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
+namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities.Human
 {
   public sealed class HolyLightFactory : ActiveAbilityFactory<PaladinHolyLight>
   {
