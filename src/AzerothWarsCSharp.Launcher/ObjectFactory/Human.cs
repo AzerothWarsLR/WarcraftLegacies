@@ -139,6 +139,30 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         TextName = "Prince",
         ArtModelFile = @"units\human\Arthas\Arthas"
       }.Generate("Zart", objectDatabase);
+
+      //Sundering Blades
+      var flarefactory = new FlareFactory()
+      {
+        Icon = "Flare",
+        TextName = "Flare",
+        ButtonPosition = new Point(0, 2),
+        Flavor = "Reveals a target area.",
+      };
+      var flare = flarefactory.Generate("zfla", objectDatabase);
+
+      //Mortar Team
+      new UnitFactory(UnitType.Mortarteam)
+      {
+        TextName = "Mortar Team",
+        DamageBase = 28,
+        DamageNumberOfDice = 2,
+        DamageSidesPerDie = 5,
+        HitPoints = 885,
+        AbilitiesNormal = new Ability[] { flare },
+        Flavour = "Long-range siege weaponry. Exceptional damage versus buildings, but slow and vulnerable.",
+        Armor = 5,
+        ArtModelFile = @"units\human\MortarTeam\MortarTeam"
+      }.Generate("zmor", objectDatabase);
     }
   }
 }

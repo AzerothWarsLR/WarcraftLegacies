@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source
 				CreateUnit(Player(0), FourCC("zfoo"), 0, 0, 0); //Footman
 				CreateUnit(Player(0), FourCC("zkni"), 0, 0, 0); //Knight
 				CreateUnit(Player(0), FourCC("Zart"), 0, 0, 0); //Arthas
-				//GameSetup.Initialize();
+				CreateUnit(Player(0), FourCC("zmor"), 0, 0, 0); //Mortar Team
 				Console.WriteLine("Hello, Azeroth.");
 			}
 			catch (Exception ex)
