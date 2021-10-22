@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     /// <summary>
     /// How many levels this ability has.
     /// </summary>
-    public int Levels { get; set; }
+    public int Levels { get; set; } = 1;
 
     public bool IsHeroAbility { get; set; } = false;
 
@@ -52,10 +52,23 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
     /// <param name="ability"></param>
     protected abstract void ApplyCore(T ability);
 
+    /// <summary>
+    /// Applies the ability's name or names.
+    /// </summary>
+    /// <param name="ability"></param>
+    protected virtual void ApplyName(T ability)
+    {
+      ability.TextName = TextName;
+      ability.TextTooltipLearn = $"Learn {TextName} - [|cffffcc00Level %d|r]";
+      for (var i = 1; i < Levels + 1; i++)
+      {
+        ability.TextTooltipNormal[i] = $"{TextName} - [|cffffcc00Level {Levels}|r]";
+      }
+    }
+
     public void Apply(T ability)
     {
       ability.StatsLevels = Levels;
-      ability.TextName = TextName;
       ability.TextEditorSuffix = EditorSuffix;
       ability.TextTooltipLearnExtended = GenerateTooltipExtended();
       for (var i = 1; i < Levels + 1; i++)
@@ -67,6 +80,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
       ApplyStats(ability);
       ApplyIcons(ability);
       ApplyButtonPositions(ability);
+      ApplyName(ability);
     }
 
     //CreateInstance abstract method
