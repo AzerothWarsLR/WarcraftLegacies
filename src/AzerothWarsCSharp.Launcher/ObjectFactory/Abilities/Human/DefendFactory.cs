@@ -2,9 +2,9 @@
 using War3Api.Object;
 using War3Api.Object.Abilities;
 
-namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
+namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities.Human
 {
-  public class DefendFactory : ActiveAbilityFactory<Defend>
+  public class DefendFactory : ToggledAbilityFactory<Defend>
   {
     public LeveledAbilityPropertyFloat AttackSpeedFactor = new("Attack speed factor");
     public LeveledAbilityPropertyFloat ChanceToDeflect = new("Chance to deflect");
