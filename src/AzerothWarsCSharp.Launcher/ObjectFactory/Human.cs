@@ -218,6 +218,20 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         Armor = 5,
         ArtModelFile = @"units\human\Gyrocopter\Gyrocopter"
       }.Generate("zfly", objectDatabase);
+
+      //Gryphon Rider
+      new UnitFactory(UnitType.Gryphonrider)
+      {
+        TextName = "Gryphon Rider",
+        DamageBase = 28,
+        DamageNumberOfDice = 2,
+        DamageSidesPerDie = 5,
+        HitPoints = 885,
+        AbilitiesNormal = new Ability[] { },
+        Flavour = "Powerful flying creature, mounted by a Dwarven hammer-thrower.",
+        Armor = 5,
+        ArtModelFile = @"units\human\GryphonRider\GryphonRider"
+      }.Generate("zgry", objectDatabase);
     }
   }
 }
