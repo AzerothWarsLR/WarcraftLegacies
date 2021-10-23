@@ -140,7 +140,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         ArtModelFile = @"units\human\Arthas\Arthas"
       }.Generate("Zart", objectDatabase);
 
-      //Sundering Blades
+      //Flare
       var flarefactory = new FlareFactory()
       {
         Icon = "Flare",
@@ -150,6 +150,16 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       };
       var flare = flarefactory.Generate("zfla", objectDatabase);
 
+      //Fragmentation Shards
+      var fragmentationshardsfactory = new FragShardsFactory()
+      {
+        Icon = "FragmentationBombs",
+        TextName = "Fragmentation Shards",
+        ButtonPosition = new Point(1, 2),
+        Flavor = "Causes this unit to deal bonus splash damage to Unarmored and Medium armor units.",
+      };
+      var fragmentationshards = fragmentationshardsfactory.Generate("zfra", objectDatabase);
+
       //Mortar Team
       new UnitFactory(UnitType.Mortarteam)
       {
@@ -158,7 +168,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DamageNumberOfDice = 2,
         DamageSidesPerDie = 5,
         HitPoints = 885,
-        AbilitiesNormal = new Ability[] { flare },
+        AbilitiesNormal = new Ability[] { flare, fragmentationshards },
         Flavour = "Long-range siege weaponry. Exceptional damage versus buildings, but slow and vulnerable.",
         Armor = 5,
         ArtModelFile = @"units\human\MortarTeam\MortarTeam"
