@@ -1,4 +1,5 @@
-﻿using AzerothWarsCSharp.Launcher.ObjectFactory.Abilities.Human;
+﻿using AzerothWarsCSharp.Launcher.ObjectFactory.Abilities;
+using AzerothWarsCSharp.Launcher.ObjectFactory.Abilities.Human;
 using AzerothWarsCSharp.Launcher.ObjectFactory.Units;
 using System.Drawing;
 using War3Api.Object;
@@ -173,6 +174,50 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         Armor = 5,
         ArtModelFile = @"units\human\MortarTeam\MortarTeam"
       }.Generate("zmor", objectDatabase);
+
+      //True Sight
+      var truesightfactory = new TrueSightFactory()
+      {
+        Icon = "FlakCannons",
+        TextName = "Flak Cannons",
+        ButtonPosition = new Point(0, 2),
+        Flavor = "Reveals invisible units in a radius around this unit.",
+      };
+      var truesight = truesightfactory.Generate("ztru", objectDatabase);
+
+      //Flak cannons
+      var flakcannonsfactory = new FlakCannonFactory()
+      {
+        Icon = "FlyingMachineTrueSight",
+        TextName = "Flying Machine",
+        ButtonPosition = new Point(2, 2),
+        Flavor = "Causes this unit to deal bonus splash damage to attacked units.",
+      };
+      var flakcannons = flakcannonsfactory.Generate("zflc", objectDatabase);
+
+      //FlyingMachineBombs
+      var bombsfactory = new DummyPassiveFactory()
+      {
+        Icon = "HumanArtilleryUpOne",
+        TextName = "Flying Machine Bombs",
+        ButtonPosition = new Point(1, 2),
+        Flavor = "Allows this unit to attack land units.",
+      };
+      var flyingmachinebombs = bombsfactory.Generate("zbom", objectDatabase);
+
+      //Flying Machine
+      new UnitFactory(UnitType.Flyingmachine)
+      {
+        TextName = "Flying Machine",
+        DamageBase = 28,
+        DamageNumberOfDice = 2,
+        DamageSidesPerDie = 5,
+        HitPoints = 885,
+        AbilitiesNormal = new Ability[] { flakcannons, truesight, flyingmachinebombs },
+        Flavour = "Fast moving flying machine. Excellent at scouting, and effective against air units.",
+        Armor = 5,
+        ArtModelFile = @"units\human\Gyrocopter\Gyrocopter"
+      }.Generate("zfly", objectDatabase);
     }
   }
 }
