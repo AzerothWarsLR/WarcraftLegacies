@@ -97,7 +97,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         ButtonPosition = new Point(0, 2),
         Flavor = "Increases damage dealt to enemies with a particular armor type.",
         DamageBonusFlat = { 5 },
-        DamageBonusPercent = {0.1f},
+        DamageBonusPercent = { 0.1f },
         DefenseTypeAffected = { DefenseTypeInt.Divine }
       };
       var sunderingblades = sunderingbladesfactory.Generate("zsun", objectDatabase);
@@ -227,11 +227,36 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DamageNumberOfDice = 2,
         DamageSidesPerDie = 5,
         HitPoints = 885,
-        AbilitiesNormal = new Ability[] { },
+        AbilitiesNormal = System.Array.Empty<Ability>(),
         Flavour = "Powerful flying creature, mounted by a Dwarven hammer-thrower.",
         Armor = 5,
         ArtModelFile = @"units\human\GryphonRider\GryphonRider"
       }.Generate("zgry", objectDatabase);
+
+      //Heal
+      var healfactory = new HealFactory()
+      {
+        Icon = "Heal",
+        TextName = "Heal",
+        ButtonPosition = new Point(0, 2),
+        Flavor = "Heals a target unit.",
+      };
+      healfactory.Buffs[0] = new[] { healfactory.GenerateBuff("bhea", objectDatabase) };
+      var heal = healfactory.Generate("zhea", objectDatabase);
+
+      //Priest
+      new UnitFactory(UnitType.Priest)
+      {
+        TextName = "Priest",
+        DamageBase = 28,
+        DamageNumberOfDice = 2,
+        DamageSidesPerDie = 5,
+        HitPoints = 885,
+        AbilitiesNormal = new Ability[] { heal },
+        Flavour = "Supporting spellcaster.",
+        Armor = 5,
+        ArtModelFile = @"units\human\Priest\Priest"
+      }.Generate("zpri", objectDatabase);
     }
   }
 }

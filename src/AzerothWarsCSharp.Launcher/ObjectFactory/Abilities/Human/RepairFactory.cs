@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities.Human
 {
-  public class RepairFactory : ActiveAbilityFactory<RepairHuman>
+  public class RepairFactory : AutocastAbilityFactory<RepairHuman>
   {
     public LeveledAbilityPropertyFloat NavalRangeBonus = new("Naval range bonus", 75);
     public LeveledAbilityPropertyFloat PowerbuildCost = new("Powerbuild cost", 0.15f);

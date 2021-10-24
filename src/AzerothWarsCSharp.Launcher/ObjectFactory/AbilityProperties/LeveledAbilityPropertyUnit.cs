@@ -1,15 +1,16 @@
-﻿using War3Api.Object;
+﻿using System.Collections.Generic;
+using War3Api.Object;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.AbilityProperties
 {
-  public class LeveledAbilityPropertyUnit : LeveledAbilityProperty<Unit>
+  public class LeveledAbilityPropertyBuffs : LeveledAbilityProperty<IEnumerable<Buff>>
   {
-    protected override string ValueToString(Unit value)
+    protected override string ValueToString(IEnumerable<Buff> value)
     {
-      return value.TextName;
+      return value.ToString();
     }
 
-    public LeveledAbilityPropertyUnit(string name, Unit defaultValue = default) : base(name, defaultValue)
+    public LeveledAbilityPropertyBuffs(string name, IEnumerable<Buff> defaultValue = default) : base(name, defaultValue)
     {
 
     }

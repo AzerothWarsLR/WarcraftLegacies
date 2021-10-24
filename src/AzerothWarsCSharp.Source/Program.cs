@@ -29,6 +29,7 @@ namespace AzerothWarsCSharp.Source
 				CreateUnit(Player(0), FourCC("zmor"), 0, 0, 0); //Mortar Team
 				CreateUnit(Player(0), FourCC("zfly"), 0, 0, 0); //Flying Machine
 				CreateUnit(Player(0), FourCC("zgry"), 0, 0, 0); //Gryphon Rider
+				CreateUnit(Player(0), FourCC("zpri"), 0, 0, 0); //Priest
 				Console.WriteLine("Hello, Azeroth.");
 			}
 			catch (Exception ex)
