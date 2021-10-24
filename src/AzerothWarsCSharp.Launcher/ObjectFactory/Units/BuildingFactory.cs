@@ -52,7 +52,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
         StatsHitPointsMaximumBase = HitPoints,
         TextName = TextName,
         ArtModelFile = ArtModelFile,
-        ArtIconGameInterface = ArtIconGameInterface,
+        ArtIconGameInterface = Icon,
         AbilitiesNormal = AbilitiesNormal,
         TechtreeUnitsTrained = UnitsTrained,
         TechtreeResearchesAvailable = ResearchesAvailable,

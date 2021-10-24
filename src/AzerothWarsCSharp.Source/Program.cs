@@ -30,6 +30,7 @@ namespace AzerothWarsCSharp.Source
 				CreateUnit(Player(0), FourCC("zfly"), 0, 0, 0); //Flying Machine
 				CreateUnit(Player(0), FourCC("zgry"), 0, 0, 0); //Gryphon Rider
 				CreateUnit(Player(0), FourCC("zpri"), 0, 0, 0); //Priest
+				CreateUnit(Player(0), FourCC("zsor"), 0, 0, 0); //Sorceress
 				Console.WriteLine("Hello, Azeroth.");
 			}
 			catch (Exception ex)

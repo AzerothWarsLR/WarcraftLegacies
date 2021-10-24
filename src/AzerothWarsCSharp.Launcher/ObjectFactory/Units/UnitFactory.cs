@@ -39,7 +39,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.StatsHitPointsMaximumBase = HitPoints;
       unit.TextName = TextName;
       unit.ArtModelFile = ArtModelFile;
-      unit.ArtIconGameInterface = ArtIconGameInterface;
+      unit.ArtIconGameInterface = $@"ReplaceableTextures\CommandButtons\BTN{Icon}.blp";
       unit.AbilitiesNormal = AbilitiesNormal;
       unit.ArtRequiredAnimationNames = RequiredAnimationNames;
       unit.CombatDefenseBase = Armor;
@@ -213,16 +213,16 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       }
     }
 
-    private string _artIconGameInterface;
-    public string ArtIconGameInterface
+    private string _icon;
+    public string Icon
     {
       get
       {
-        return _artIconGameInterface ?? Parent?.ArtIconGameInterface ?? @"ReplaceableTextures\CommandButtons\BTNPeasant.blp";
+        return _icon ?? Parent?.Icon ?? @"Peasant";
       }
       set
       {
-        _artIconGameInterface = value;
+        _icon = value;
       }
     }
 

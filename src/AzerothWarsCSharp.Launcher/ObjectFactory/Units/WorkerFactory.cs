@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
         StatsHitPointsMaximumBase = HitPoints,
         TextName = TextName,
         ArtModelFile = ArtModelFile,
-        ArtIconGameInterface = ArtIconGameInterface,
+        ArtIconGameInterface = $@"ReplaceableTextures\CommandButtons\BTN{Icon}.blp",
         AbilitiesNormal = AbilitiesNormal,
       };
       GenerateTooltip(newUnit);

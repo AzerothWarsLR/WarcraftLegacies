@@ -18,7 +18,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DamageNumberOfDice = 1,
         DamageSidesPerDie = 2,
         HitPoints = 230,
-        Flavour = "Basic worker unit that has taken up arms."
+        Flavour = "Basic worker unit that has taken up arms.",
+        Icon = "Militia"
       };
       var militia = militiaFactory.Generate("zmil", objectDatabase);
 
@@ -35,7 +36,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       //Repair
       var repairfactory = new RepairFactory()
       {
-        Icon = @"RepairOn",
+        Icon = @"Repair",
         TextName = "Repair",
         ButtonPosition = new Point(1, 1),
         Flavor = "Repairs mechanical units and structures at the cost of resources."
@@ -63,6 +64,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         HitPoints = 230,
         AbilitiesNormal = new Ability[] { harvest, calltoarms, repair },
         Flavour = "Basic worker unit.",
+        Icon = "Peasant"
       }.Generate("zpea", objectDatabase);
 
       //Defend
@@ -86,7 +88,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         AbilitiesNormal = new Ability[] { defend },
         Flavour = "Versatile foot soldier.",
         Armor = 2,
-        ArtModelFile = @"units\human\Footman\Footman"
+        ArtModelFile = @"units\human\Footman\Footman",
+        Icon = "Footman",
       }.Generate("zfoo", objectDatabase);
 
       //Sundering Blades
@@ -113,7 +116,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         AbilitiesNormal = new Ability[] { sunderingblades },
         Flavour = "Powerful mounted warrior.",
         Armor = 5,
-        ArtModelFile = @"units\human\Knight\Knight"
+        ArtModelFile = @"units\human\Knight\Knight",
+        Icon = "Knight",
       }.Generate("zkni", objectDatabase);
 
       //Holy Light
@@ -138,7 +142,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         Intelligence = 5,
         ProperName = "Arthas",
         TextName = "Prince",
-        ArtModelFile = @"units\human\Arthas\Arthas"
+        ArtModelFile = @"units\human\Arthas\Arthas",
+        Icon = "Arthas",
       }.Generate("Zart", objectDatabase);
 
       //Flare
@@ -172,7 +177,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         AbilitiesNormal = new Ability[] { flare, fragmentationshards },
         Flavour = "Long-range siege weaponry. Exceptional damage versus buildings, but slow and vulnerable.",
         Armor = 5,
-        ArtModelFile = @"units\human\MortarTeam\MortarTeam"
+        ArtModelFile = @"units\human\MortarTeam\MortarTeam",
+        Icon = "MortarTeam",
       }.Generate("zmor", objectDatabase);
 
       //True Sight
@@ -216,7 +222,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         AbilitiesNormal = new Ability[] { flakcannons, truesight, flyingmachinebombs },
         Flavour = "Fast moving flying machine. Excellent at scouting, and effective against air units.",
         Armor = 5,
-        ArtModelFile = @"units\human\Gyrocopter\Gyrocopter"
+        ArtModelFile = @"units\human\Gyrocopter\Gyrocopter",
+        Icon = "Gyrocopter",
       }.Generate("zfly", objectDatabase);
 
       //Gryphon Rider
@@ -230,7 +237,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         AbilitiesNormal = System.Array.Empty<Ability>(),
         Flavour = "Powerful flying creature, mounted by a Dwarven hammer-thrower.",
         Armor = 5,
-        ArtModelFile = @"units\human\GryphonRider\GryphonRider"
+        ArtModelFile = @"units\human\GryphonRider\GryphonRider",
+        Icon = "GryphonRider"
       }.Generate("zgry", objectDatabase);
 
       //Heal
@@ -244,6 +252,27 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       healfactory.Buffs[0] = new[] { healfactory.GenerateBuff("bhea", objectDatabase) };
       var heal = healfactory.Generate("zhea", objectDatabase);
 
+      //Dispel Magic
+      var dispelmagicfactory = new DispelMagicFactory()
+      {
+        Icon = "DispelMagic",
+        TextName = "Dispel Magic",
+        ButtonPosition = new Point(1, 2),
+        Flavor = "Removes all buffs from units in a target area and deals damage to summoned units.",
+      };
+      var dispelmagic = dispelmagicfactory.Generate("zdis", objectDatabase);
+
+      //Inner Fire
+      var innerfirefactory = new InnerFireFactory()
+      {
+        Icon = "InnerFire",
+        TextName = "Inner Fire",
+        ButtonPosition = new Point(2, 2),
+        Flavor = "Increases a target unit's damage, armor, and hit point regeneration.",
+      };
+      innerfirefactory.Buffs[0] = new[] { healfactory.GenerateBuff("binn", objectDatabase) };
+      var innerfire = innerfirefactory.Generate("zinn", objectDatabase);
+
       //Priest
       new UnitFactory(UnitType.Priest)
       {
@@ -252,11 +281,38 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DamageNumberOfDice = 2,
         DamageSidesPerDie = 5,
         HitPoints = 885,
-        AbilitiesNormal = new Ability[] { heal },
+        AbilitiesNormal = new Ability[] { heal, dispelmagic, innerfire },
         Flavour = "Supporting spellcaster.",
         Armor = 5,
-        ArtModelFile = @"units\human\Priest\Priest"
+        ArtModelFile = @"units\human\Priest\Priest",
+        Icon = "Priest",
       }.Generate("zpri", objectDatabase);
+
+      //Slow
+      var slowfactory = new SlowFactory()
+      {
+        Icon = "Slow",
+        TextName = "Slow",
+        ButtonPosition = new Point(0, 2),
+        Flavor = "Slows a target unit.",
+      };
+      slowfactory.Buffs[0] = new[] { slowfactory.GenerateBuff("bslo", objectDatabase) };
+      var slow = slowfactory.Generate("zslo", objectDatabase);
+
+      //Sorceress
+      new UnitFactory(UnitType.Sorceress)
+      {
+        TextName = "Sorceress",
+        DamageBase = 28,
+        DamageNumberOfDice = 2,
+        DamageSidesPerDie = 5,
+        HitPoints = 885,
+        AbilitiesNormal = new Ability[] { slow },
+        Flavour = "Versatile spellcaster.",
+        Armor = 5,
+        ArtModelFile = @"units\human\Sorceress\Sorceress",
+        Icon = "Sorceress",
+      }.Generate("zsor", objectDatabase);
     }
   }
 }
