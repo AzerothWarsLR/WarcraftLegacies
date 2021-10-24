@@ -252,6 +252,13 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       }
     }
 
+    private IEnumerable<Tech> _researchesUsed;
+    public IEnumerable<Tech> ResearchesUsed
+    {
+      get => _researchesUsed ?? Parent?.ResearchesUsed ?? System.Array.Empty<Tech>();
+      set => _researchesUsed = value;
+    }
+
     private IEnumerable<string> _requiredAnimationNames;
     public IEnumerable<string> RequiredAnimationNames
     {
