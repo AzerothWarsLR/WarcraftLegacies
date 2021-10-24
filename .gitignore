@@ -340,4 +340,4 @@ ASALocalRun/
 healthchecksdb
 
 # Project specific
-src\AzerothWarsCSharp.Launcher\ObjectFactory\Generated.cs
+src/AzerothWarsCSharp.Launcher/ObjectFactory/Generated.cs
