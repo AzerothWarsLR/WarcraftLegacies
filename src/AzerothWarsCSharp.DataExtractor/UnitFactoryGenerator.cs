@@ -113,6 +113,37 @@ namespace AzerothWarsCSharp.DataExtractor
       { 1719037301, "MovementHeightMinimum" },
     };
 
+    private static string TechIdsToTechs(string techIds)
+    {
+      var stringBuilder = new StringBuilder();
+      var split = techIds.Split(",");
+      stringBuilder.Append($"new[] {{ ");
+      var i = 0;
+      foreach (var id in split)
+      {
+        i++;
+        stringBuilder.Append(@$"objectDatabase.TryGetTech(""{id}"")");
+        if (i < split.Length)
+        {
+          stringBuilder.Append(", ");
+        }
+      }
+      stringBuilder.Append($" }}");
+      return stringBuilder.ToString();
+    }
+
+    private static string GeneratePropertyAssignment(SimpleObjectDataModification mod)
+    {
+      string value = mod.Value.ToString();
+      switch (mod.Id)
+      {
+        case 1919381621:
+          value = TechIdsToTechs(mod.Value.ToString());
+          break;
+      }
+      return $"        {IdToPropertyName(mod.Id)} = {value},";
+    }
+
     private static string IdToPropertyName(int id)
     {
       if (_idToPropertyName.ContainsKey(id))
@@ -122,7 +153,7 @@ namespace AzerothWarsCSharp.DataExtractor
       return $"//{id}";
     }
 
-    private string Generate(SimpleObjectModification unit)
+    private static string Generate(SimpleObjectModification unit)
     {
       var stringBuilder = new StringBuilder();
       stringBuilder.AppendLine(@"      //UnitName");
@@ -132,7 +163,7 @@ namespace AzerothWarsCSharp.DataExtractor
       {
         if (!string.IsNullOrEmpty(mod.Value.ToString()))
         {
-          stringBuilder.AppendLine($"        {IdToPropertyName(mod.Id)} = {mod.Value},");
+          stringBuilder.AppendLine(GeneratePropertyAssignment(mod));
         }
       }
       stringBuilder.AppendLine($"      }}.Generate(\"UnitCode\", objectDatabase);");
