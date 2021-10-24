@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.DataExtractor
       { 1633907573, "ModelScale" },
       { 1832018293, "Missile2" },
       { 1885959285, "TooltipBasic" },
-      { 1919381621, "Upgrades" },
+      { 1919381621, "ResearchesUsed" },
       { 1953458293, "Hotkey" },
       { 1835098997, "Campaign" },
       { 1819239285, "CollisionSize" },
@@ -126,11 +126,14 @@ namespace AzerothWarsCSharp.DataExtractor
     {
       var stringBuilder = new StringBuilder();
       stringBuilder.AppendLine(@"      //UnitName");
-      stringBuilder.AppendLine(@"      new UnitFactory(UnitType.OriginUnit)");
+      stringBuilder.AppendLine(@"      new UnitFactory(UnitType.Peasant_hpea)");
       stringBuilder.AppendLine(@"      {");
       foreach (var mod in unit.Modifications)
       {
-        stringBuilder.AppendLine($"        {IdToPropertyName(mod.Id)} = {mod.Value},");
+        if (!string.IsNullOrEmpty(mod.Value.ToString()))
+        {
+          stringBuilder.AppendLine($"        {IdToPropertyName(mod.Id)} = {mod.Value},");
+        }
       }
       stringBuilder.AppendLine($"      }}.Generate(\"UnitCode\", objectDatabase);");
       stringBuilder.AppendLine();
