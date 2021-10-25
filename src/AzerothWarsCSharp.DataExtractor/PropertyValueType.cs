@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AzerothWarsCSharp.DataExtractor
 {
-  enum PropertyValueType
+  public enum PropertyValueType
   {
     @String,
     @Int,
