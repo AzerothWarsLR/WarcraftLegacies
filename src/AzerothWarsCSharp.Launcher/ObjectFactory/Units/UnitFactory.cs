@@ -379,6 +379,26 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _classificationRaw = value;
     }
 
+    private int? _foodCost = 0;
+    /// <summary>
+    /// How much food this unit occupies.
+    /// </summary>
+    public int FoodCost
+    {
+      get => _foodCost ?? Parent?.FoodCost ?? 0;
+      set => _foodCost = value;
+    }
+
+    private int? _damageBase1 = 0;
+    /// <summary>
+    /// The unit's base damage.
+    /// </summary>
+    public int DamageBase1
+    {
+      get => _damageBase1 ?? Parent?.DamageBase1 ?? 0;
+      set => _damageBase1 = value;
+    }
+
     public UnitFactory Parent { get; set; }
 
     public UnitFactory(UnitType baseType)
