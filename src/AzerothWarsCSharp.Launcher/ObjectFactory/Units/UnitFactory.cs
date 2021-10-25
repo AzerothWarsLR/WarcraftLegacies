@@ -342,6 +342,16 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _repairTime = value;
     }
 
+    private int? _level = 0;
+    /// <summary>
+    /// The unit's level. Affects experience gained and gold bounty.
+    /// </summary>
+    public int Level
+    {
+      get => _level ?? Parent?.Level ?? 0;
+      set => _level = value;
+    }
+
     public UnitFactory Parent { get; set; }
 
     public UnitFactory(UnitType baseType)
