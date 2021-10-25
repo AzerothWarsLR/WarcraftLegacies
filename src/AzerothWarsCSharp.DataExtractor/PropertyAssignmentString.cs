@@ -6,7 +6,7 @@
 
     public string ToCode()
     {
-      return @$"{PropertyName} = ""{Value}""";
+      return @$"{PropertyName} = @""{Value}""";
     }
   }
 }
