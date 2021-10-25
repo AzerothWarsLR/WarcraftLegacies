@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.DataExtractor
       { 1832018293, new PropertyMetadata("Missile2", PropertyValueType.String) },
       { 1885959285, new PropertyMetadata("TooltipBasic", PropertyValueType.String) },
       { 1919381621, new PropertyMetadata("ResearchesUsedRaw", PropertyValueType.String) },
-      { 1953458293, new PropertyMetadata("Hotkey", PropertyValueType.String) },
+      { 1953458293, new PropertyMetadata("Hotkey", PropertyValueType.String, false) },
       { 1835098997, new PropertyMetadata("Campaign", PropertyValueType.String) },
       { 1819239285, new PropertyMetadata("CollisionSize", PropertyValueType.Float) },
       { 1915838837, new PropertyMetadata("Range1", PropertyValueType.Float) },
@@ -120,24 +120,28 @@ namespace AzerothWarsCSharp.DataExtractor
       if (_idToPropertyMetadata.ContainsKey(mod.Id))
       {
         var propertyMetadata = _idToPropertyMetadata[mod.Id];
-        switch (propertyMetadata.Type)
+        if (propertyMetadata.Show)
         {
-          case PropertyValueType.Int:
-            _propertyAssignments.Add(new PropertyAssignmentInt()
-            {
-              Value = (int)mod.Value,
-              PropertyName = propertyMetadata.Name
-            });
-            break;
-          case PropertyValueType.String:
-            _propertyAssignments.Add(new PropertyAssignmentString()
-            {
-              Value = mod.Value.ToString(),
-              PropertyName = propertyMetadata.Name
-            });
-            break;
+          switch (propertyMetadata.Type)
+          {
+            case PropertyValueType.Int:
+              _propertyAssignments.Add(new PropertyAssignmentInt()
+              {
+                Value = (int)mod.Value,
+                PropertyName = propertyMetadata.Name
+              });
+              break;
+            case PropertyValueType.String:
+              _propertyAssignments.Add(new PropertyAssignmentString()
+              {
+                Value = mod.Value.ToString(),
+                PropertyName = propertyMetadata.Name
+              });
+              break;
+          }
         }
-      } else
+      }
+      else
       {
         _propertyAssignments.Add(new PropertyAssignmentString()
         {
