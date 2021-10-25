@@ -51,6 +51,11 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.TechtreeUpgradesUsed = ResearchesUsed;
       unit.StatsUnitClassification = Classification;
       unit.StatsUnitClassificationRaw = ClassificationRaw;
+      unit.StatsFoodCost = FoodCost;
+      unit.CombatAttack1DamageBase = DamageBase1;
+
+      unit.PathingPlacementPreventedBy = PlacementPreventedBy,
+      unit.PathingPlacementRequires = PlacementRequires,
 #pragma warning restore CS0618 // Type or member is obsolete
     }
 
@@ -397,6 +402,20 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     {
       get => _damageBase1 ?? Parent?.DamageBase1 ?? 0;
       set => _damageBase1 = value;
+    }
+
+    private IEnumerable<PathingPrevent> _placementRequires;
+    public IEnumerable<PathingPrevent> PlacementRequires
+    {
+      get => _placementRequires ?? Parent?.PlacementRequires ?? System.Array.Empty<PathingPrevent>();
+      set => _placementRequires = value;
+    }
+
+    private IEnumerable<PathingRequire> _placementPreventedBy;
+    public IEnumerable<PathingRequire> PlacementPreventedBy
+    {
+      get => _placementPreventedBy ?? Parent?.PlacementPreventedBy ?? System.Array.Empty<PathingRequire>();
+      set => _placementPreventedBy = value;
     }
 
     public UnitFactory Parent { get; set; }
