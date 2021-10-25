@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
 using War3Api.Object;
@@ -27,6 +28,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     /// <param name="unit"></param>
     protected void GenerateCore(Unit unit)
     {
+#pragma warning disable CS0618 // Type or member is obsolete
       unit.TechtreeStructuresBuilt = StructuresBuilt;
       unit.StatsBuildTime = BuildTime;
       unit.ArtScalingValue = ScalingValue;
@@ -47,6 +49,9 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.StatsFoodProduced = FoodProduced;
       unit.TechtreeUpgradesUsedRaw = ResearchesUsedRaw;
       unit.TechtreeUpgradesUsed = ResearchesUsed;
+      unit.StatsUnitClassification = Classification;
+      unit.StatsUnitClassificationRaw = ClassificationRaw;
+#pragma warning restore CS0618 // Type or member is obsolete
     }
 
     /// <summary>
@@ -264,6 +269,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     }
 
     private string _researchesUsedRaw;
+    [Obsolete("This property is obsolete. Use ResearchesUsed instead.", false)]
     public string ResearchesUsedRaw
     {
       get => _researchesUsedRaw ?? Parent?.ResearchesUsedRaw ?? "";
@@ -350,6 +356,27 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     {
       get => _level ?? Parent?.Level ?? 0;
       set => _level = value;
+    }
+
+    private IEnumerable<UnitClassification> _classification;
+    /// <summary>
+    /// Which unit classications the unit has; e.g. Ancient, Tauren.
+    /// </summary>
+    public IEnumerable<UnitClassification> Classification
+    {
+      get => _classification ?? Parent?.Classification ?? System.Array.Empty<UnitClassification>();
+      set => _classification = value;
+    }
+
+    private string _classificationRaw;
+    /// <summary>
+    /// Which unit classications the unit has; e.g. Ancient, Tauren. Expressed as a comma seperated string.
+    /// </summary>
+    [Obsolete("This property is obsolete. Use Classification instead.", false)]
+    public string ClassificationRaw
+    {
+      get => _classificationRaw ?? Parent?.ClassificationRaw ?? "";
+      set => _classificationRaw = value;
     }
 
     public UnitFactory Parent { get; set; }
