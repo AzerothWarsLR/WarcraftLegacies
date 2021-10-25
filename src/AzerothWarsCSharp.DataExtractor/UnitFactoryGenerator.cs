@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.DataExtractor
       { 1633907573, ("ModelScale", PropertyValueType.Float) },
       { 1832018293, ("Missile2", PropertyValueType.String) },
       { 1885959285, ("TooltipBasic", PropertyValueType.String) },
-      { 1919381621, ("ResearchesUsed", PropertyValueType.String) },
+      { 1919381621, ("ResearchesUsedRaw", PropertyValueType.String) },
       { 1953458293, ("Hotkey", PropertyValueType.String) },
       { 1835098997, ("Campaign", PropertyValueType.String) },
       { 1819239285, ("CollisionSize", PropertyValueType.Float) },

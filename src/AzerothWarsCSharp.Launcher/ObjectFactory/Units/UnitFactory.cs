@@ -45,6 +45,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.CombatDefenseBase = Armor;
       unit.StatsGoldCost = GoldCost;
       unit.StatsFoodProduced = FoodProduced;
+      unit.TechtreeUpgradesUsedRaw = ResearchesUsedRaw;
+      unit.TechtreeUpgradesUsed = ResearchesUsed;
     }
 
     /// <summary>
@@ -254,11 +256,18 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       }
     }
 
-    private IEnumerable<Tech> _researchesUsed;
-    public IEnumerable<Tech> ResearchesUsed
+    private IEnumerable<Upgrade> _researchesUsed;
+    public IEnumerable<Upgrade> ResearchesUsed
     {
-      get => _researchesUsed ?? Parent?.ResearchesUsed ?? System.Array.Empty<Tech>();
+      get => _researchesUsed ?? Parent?.ResearchesUsed ?? System.Array.Empty<Upgrade>();
       set => _researchesUsed = value;
+    }
+
+    private string _researchesUsedRaw;
+    public string ResearchesUsedRaw
+    {
+      get => _researchesUsedRaw ?? Parent?.ResearchesUsedRaw ?? "";
+      set => _researchesUsedRaw = value;
     }
 
     private IEnumerable<string> _requiredAnimationNames;
