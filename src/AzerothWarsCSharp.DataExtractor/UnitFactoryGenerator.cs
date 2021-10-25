@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.DataExtractor
       { 1835101813, new PropertyMetadata("Name", PropertyValueType.String) },
       { 1718840949, new PropertyMetadata("EditorSuffix", PropertyValueType.String) },
       { 1952542837, new PropertyMetadata("PathTexture", PropertyValueType.String) },
-      { 1885433973, new PropertyMetadata("PlacementRequires", PropertyValueType.String) },
+      { 1885433973, new PropertyMetadata("PlacementRequires", PropertyValueType.PathingPrevent) },
       { 1768055157, new PropertyMetadata("AbilitiesNormal", PropertyValueType.String) },
       { 1949458805, new PropertyMetadata("AttackType2", PropertyValueType.String) },
       { 1633907573, new PropertyMetadata("ModelScale", PropertyValueType.Float) },
@@ -133,6 +133,13 @@ namespace AzerothWarsCSharp.DataExtractor
               break;
             case PropertyValueType.String:
               _propertyAssignments.Add(new PropertyAssignmentString()
+              {
+                Value = mod.Value.ToString(),
+                PropertyName = propertyMetadata.Name
+              });
+              break;
+            case PropertyValueType.PathingPrevent:
+              _propertyAssignments.Add(new PropertyAssignmentPathingPrevent()
               {
                 Value = mod.Value.ToString(),
                 PropertyName = propertyMetadata.Name

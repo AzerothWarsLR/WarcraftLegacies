@@ -11,5 +11,6 @@ namespace AzerothWarsCSharp.DataExtractor
     @String,
     @Int,
     @Float,
+    PathingPrevent,
   }
 }
