@@ -43,6 +43,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.AbilitiesNormal = AbilitiesNormal;
       unit.ArtRequiredAnimationNames = RequiredAnimationNames;
       unit.CombatDefenseBase = Armor;
+      unit.StatsGoldCost = GoldCost;
+      unit.StatsFoodProduced = FoodProduced;
     }
 
     /// <summary>
@@ -277,6 +279,41 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     {
       get => _armor ?? Parent?.Armor ?? 0;
       set => _armor = value;
+    }
+
+    private int? _foodProduced = 0;
+    public int FoodProduced
+    {
+      get => _foodProduced ?? Parent?.FoodProduced ?? 0;
+      set => _foodProduced = value;
+    }
+
+    private int? _goldCost = 0;
+    public int GoldCost
+    {
+      get => _goldCost ?? Parent?.GoldCost ?? 0;
+      set => _goldCost = value;
+    }
+
+    private int? _repairGoldCost = 0;
+    public int RepairGoldCost
+    {
+      get => _repairGoldCost ?? Parent?.RepairGoldCost ?? 0;
+      set => _repairGoldCost = value;
+    }
+
+    private int? _lumberCost = 0;
+    public int LumberCost
+    {
+      get => _lumberCost ?? Parent?.LumberCost ?? 0;
+      set => _lumberCost = value;
+    }
+
+    private int? _repairLumberCost = 0;
+    public int LumberRepairCost
+    {
+      get => _repairLumberCost ?? Parent?.LumberRepairCost ?? 0;
+      set => _repairLumberCost = value;
     }
 
     public UnitFactory Parent { get; set; }
