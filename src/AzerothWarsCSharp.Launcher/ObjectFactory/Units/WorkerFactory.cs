@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
         CombatAttack1DamageNumberOfDice = DamageNumberOfDice,
         CombatAttack1DamageSidesPerDie = DamageSidesPerDie,
         StatsHitPointsMaximumBase = HitPoints,
-        TextName = TextName,
+        TextName = Name,
         ArtModelFile = ArtModelFile,
         ArtIconGameInterface = $@"ReplaceableTextures\CommandButtons\BTN{Icon}.blp",
         AbilitiesNormal = AbilitiesNormal,

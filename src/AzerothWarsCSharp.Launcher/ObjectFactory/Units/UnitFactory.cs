@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.CombatAttack1DamageNumberOfDice = DamageNumberOfDice;
       unit.CombatAttack1DamageSidesPerDie = DamageSidesPerDie;
       unit.StatsHitPointsMaximumBase = HitPoints;
-      unit.TextName = TextName;
+      unit.TextName = Name;
       unit.ArtModelFile = ArtModelFile;
       unit.ArtIconGameInterface = $@"ReplaceableTextures\CommandButtons\BTN{Icon}.blp";
       unit.AbilitiesNormal = AbilitiesNormal;
@@ -191,16 +191,16 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       }
     }
 
-    private string _textName;
-    public string TextName
+    private string _name;
+    public string Name
     {
       get
       {
-        return _textName ?? Parent?.TextName ?? "PLACEHOLDERNAME";
+        return _name ?? Parent?.Name ?? "PLACEHOLDERNAME";
       }
       set
       {
-        _textName = value;
+        _name = value;
       }
     }
 

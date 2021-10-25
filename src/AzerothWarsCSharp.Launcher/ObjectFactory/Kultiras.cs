@@ -192,7 +192,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         Agility = 10,
         Intelligence = 5,
         ProperName = "Kazzak",
-        TextName = "Doomlord",
+        Name = "Doomlord",
       }.Generate("Kazz", objectDatabase);
 
       ////Aerial Shackles

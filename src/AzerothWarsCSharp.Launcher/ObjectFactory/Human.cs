@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       //Militia
       var militiaFactory = new WorkerFactory(UnitType.Peasant_hpea)
       {
-        TextName = "Deckhand",
+        Name = "Deckhand",
         DamageBase = 11,
         DamageNumberOfDice = 1,
         DamageSidesPerDie = 2,
@@ -57,7 +57,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       //Peasant
       new WorkerFactory(UnitType.Peasant_hpea)
       {
-        TextName = "Deckhand",
+        Name = "Deckhand",
         DamageBase = 4,
         DamageNumberOfDice = 1,
         DamageSidesPerDie = 2,
@@ -80,7 +80,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       //Footman
       new UnitFactory(UnitType.Footman)
       {
-        TextName = "Footman",
+        Name = "Footman",
         DamageBase = 11,
         DamageNumberOfDice = 1,
         DamageSidesPerDie = 2,
@@ -108,7 +108,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       //Knight
       new UnitFactory(UnitType.Knight)
       {
-        TextName = "Knight",
+        Name = "Knight",
         DamageBase = 28,
         DamageNumberOfDice = 2,
         DamageSidesPerDie = 5,
@@ -141,7 +141,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         Agility = 10,
         Intelligence = 5,
         ProperName = "Arthas",
-        TextName = "Prince",
+        Name = "Prince",
         ArtModelFile = @"units\human\Arthas\Arthas",
         Icon = "Arthas",
       }.Generate("Zart", objectDatabase);
@@ -169,7 +169,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       //Mortar Team
       new UnitFactory(UnitType.Mortarteam)
       {
-        TextName = "Mortar Team",
+        Name = "Mortar Team",
         DamageBase = 28,
         DamageNumberOfDice = 2,
         DamageSidesPerDie = 5,
@@ -214,7 +214,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       //Flying Machine
       new UnitFactory(UnitType.Flyingmachine)
       {
-        TextName = "Flying Machine",
+        Name = "Flying Machine",
         DamageBase = 28,
         DamageNumberOfDice = 2,
         DamageSidesPerDie = 5,
@@ -229,7 +229,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       //Gryphon Rider
       new UnitFactory(UnitType.Gryphonrider)
       {
-        TextName = "Gryphon Rider",
+        Name = "Gryphon Rider",
         DamageBase = 28,
         DamageNumberOfDice = 2,
         DamageSidesPerDie = 5,
@@ -276,7 +276,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       //Priest
       new UnitFactory(UnitType.Priest)
       {
-        TextName = "Priest",
+        Name = "Priest",
         DamageBase = 28,
         DamageNumberOfDice = 2,
         DamageSidesPerDie = 5,
@@ -302,7 +302,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       //Sorceress
       new UnitFactory(UnitType.Sorceress)
       {
-        TextName = "Sorceress",
+        Name = "Sorceress",
         DamageBase = 28,
         DamageNumberOfDice = 2,
         DamageSidesPerDie = 5,
