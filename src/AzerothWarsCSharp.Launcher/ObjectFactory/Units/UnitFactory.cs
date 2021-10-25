@@ -332,6 +332,16 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _pathTexture = value;
     }
 
+    private int? _repairTime = 0;
+    /// <summary>
+    /// How long it takes to repair the unit.
+    /// </summary>
+    public int RepairTime
+    {
+      get => _repairTime ?? Parent?.RepairTime ?? 0;
+      set => _repairTime = value;
+    }
+
     public UnitFactory Parent { get; set; }
 
     public UnitFactory(UnitType baseType)

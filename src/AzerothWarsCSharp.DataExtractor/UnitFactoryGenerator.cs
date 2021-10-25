@@ -57,7 +57,7 @@ namespace AzerothWarsCSharp.DataExtractor
       { 1769107573, new PropertyMetadata("CollisionSize", PropertyValueType.Float) },
       { 1919970677, new PropertyMetadata("ManaRegeneration", PropertyValueType.Float) },
       { 1953654901, new PropertyMetadata("RegenType", PropertyValueType.String) },
-      { 1836348021, new PropertyMetadata("RepairTime", PropertyValueType.String) },
+      { 1836348021, new PropertyMetadata("RepairTime", PropertyValueType.Int) },
       { 1937141109, new PropertyMetadata("MovementSpeed", PropertyValueType.String) },
       { 1650550901, new PropertyMetadata("AbilitiesHero", PropertyValueType.String) },
       { 1869770869, new PropertyMetadata("ProperNames", PropertyValueType.String) },
