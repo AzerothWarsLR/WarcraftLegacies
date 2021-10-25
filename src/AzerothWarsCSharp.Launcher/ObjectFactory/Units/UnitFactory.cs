@@ -325,6 +325,13 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _repairLumberCost = value;
     }
 
+    private string _pathTexture;
+    public string PathTexture
+    {
+      get => _pathTexture ?? Parent?.PathTexture ?? "";
+      set => _pathTexture = value;
+    }
+
     public UnitFactory Parent { get; set; }
 
     public UnitFactory(UnitType baseType)
