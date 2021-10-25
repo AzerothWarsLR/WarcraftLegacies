@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.DataExtractor
       using var binaryReader = new BinaryReader(fileStream);
       var objectData = binaryReader.ReadObjectData(false);
       var stringBuilder = new StringBuilder();
-      stringBuilder.Append(new UnitFactoryGenerator().GenerateAll(objectData));
+      stringBuilder.Append(UnitFactoryGenerator.ToCodeAll(objectData));
       File.WriteAllText(TEST_OUTPUT_PATH, stringBuilder.ToString());
     }
   }
