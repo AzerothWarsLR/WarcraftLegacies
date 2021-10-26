@@ -54,8 +54,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.StatsFoodCost = FoodCost;
       unit.CombatAttack1DamageBase = DamageBase1;
 
-      unit.PathingPlacementPreventedBy = PlacementPreventedBy,
-      unit.PathingPlacementRequires = PlacementRequires,
+      unit.PathingPlacementPreventedBy = PlacementPreventedBy;
+      unit.PathingPlacementRequires = PlacementRequires;
 #pragma warning restore CS0618 // Type or member is obsolete
     }
 
@@ -266,6 +266,20 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       }
     }
 
+    private string _abilitiesNormalRaw;
+    [Obsolete("This property is obsolete. Use AbilitiesNormal instead.", false)]
+    public string AbilitiesNormalRaw
+    {
+      get
+      {
+        return _abilitiesNormalRaw ?? Parent?.AbilitiesNormalRaw ?? null;
+      }
+      set
+      {
+        _abilitiesNormalRaw = value;
+      }
+    }
+
     private IEnumerable<Upgrade> _researchesUsed;
     public IEnumerable<Upgrade> ResearchesUsed
     {
@@ -315,13 +329,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _goldCost = value;
     }
 
-    private int? _repairGoldCost = 0;
-    public int RepairGoldCost
-    {
-      get => _repairGoldCost ?? Parent?.RepairGoldCost ?? 0;
-      set => _repairGoldCost = value;
-    }
-
     private int? _lumberCost = 0;
     public int LumberCost
     {
@@ -329,28 +336,11 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _lumberCost = value;
     }
 
-    private int? _repairLumberCost = 0;
-    public int LumberRepairCost
-    {
-      get => _repairLumberCost ?? Parent?.LumberRepairCost ?? 0;
-      set => _repairLumberCost = value;
-    }
-
     private string _pathTexture;
     public string PathTexture
     {
       get => _pathTexture ?? Parent?.PathTexture ?? "";
       set => _pathTexture = value;
-    }
-
-    private int? _repairTime = 0;
-    /// <summary>
-    /// How long it takes to repair the unit.
-    /// </summary>
-    public int RepairTime
-    {
-      get => _repairTime ?? Parent?.RepairTime ?? 0;
-      set => _repairTime = value;
     }
 
     private int? _level = 0;

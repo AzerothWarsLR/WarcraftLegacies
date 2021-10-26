@@ -9,12 +9,12 @@ namespace AzerothWarsCSharp.DataExtractor
     private static readonly Dictionary<int, PropertyMetadata> _idToPropertyMetadata = new()
     {
       { 1651864693, new PropertyMetadata("Flavour", PropertyValueType.String) },
-      { 1868786037, new PropertyMetadata("Icon", PropertyValueType.String) },
+      { 1868786037, new PropertyMetadata("Icon", PropertyValueType.Icon) },
       { 1835101813, new PropertyMetadata("Name", PropertyValueType.String) },
       { 1718840949, new PropertyMetadata("EditorSuffix", PropertyValueType.String, false) },
       { 1952542837, new PropertyMetadata("PathTexture", PropertyValueType.String) },
       { 1885433973, new PropertyMetadata("PlacementRequires", PropertyValueType.PathingPrevent) },
-      { 1768055157, new PropertyMetadata("AbilitiesNormal", PropertyValueType.String) },
+      { 1768055157, new PropertyMetadata("AbilitiesNormalRaw", PropertyValueType.String) },
       { 1949458805, new PropertyMetadata("AttackType2", PropertyValueType.String) },
       { 1633907573, new PropertyMetadata("ModelScale", PropertyValueType.Float) },
       { 1832018293, new PropertyMetadata("Missile2", PropertyValueType.String) },
@@ -25,10 +25,10 @@ namespace AzerothWarsCSharp.DataExtractor
       { 1819239285, new PropertyMetadata("CollisionSize", PropertyValueType.Float) },
       { 1915838837, new PropertyMetadata("Range1", PropertyValueType.Float) },
       { 1915904373, new PropertyMetadata("Range2", PropertyValueType.Float) },
-      { 2037671029, new PropertyMetadata("DefenseType", PropertyValueType.String) },
-      { 1882284405, new PropertyMetadata("AreaOfEffectTargets", PropertyValueType.String) },
-      { 1731289461, new PropertyMetadata("Targets1", PropertyValueType.String) },
-      { 1731354997, new PropertyMetadata("Targets2", PropertyValueType.String) },
+      { 2037671029, new PropertyMetadata("DefenseType", PropertyValueType.DefenseType) },
+      { 1882284405, new PropertyMetadata("AreaOfEffectTargets", PropertyValueType.Targets) },
+      { 1731289461, new PropertyMetadata("Targets1", PropertyValueType.Targets) },
+      { 1731354997, new PropertyMetadata("Targets2", PropertyValueType.Targets) },
       { 1684824693, new PropertyMetadata("BuildTime", PropertyValueType.Int) },
       { 2020631157, new PropertyMetadata("ButtonPositionX", PropertyValueType.Int) },
       { 1717920885, new PropertyMetadata("Armor", PropertyValueType.Int) },
@@ -58,8 +58,8 @@ namespace AzerothWarsCSharp.DataExtractor
       { 1919970677, new PropertyMetadata("ManaRegeneration", PropertyValueType.Float) },
       { 1953654901, new PropertyMetadata("RegenType", PropertyValueType.String) },
       { 1836348021, new PropertyMetadata("RepairTime", PropertyValueType.Int, false) },
-      { 1937141109, new PropertyMetadata("MovementSpeed", PropertyValueType.String) },
-      { 1650550901, new PropertyMetadata("AbilitiesHero", PropertyValueType.String) },
+      { 1937141109, new PropertyMetadata("MovementSpeed", PropertyValueType.Float) },
+      { 1650550901, new PropertyMetadata("AbilitiesHeroRaw", PropertyValueType.String) },
       { 1869770869, new PropertyMetadata("ProperNames", PropertyValueType.String) },
       { 1684960117, new PropertyMetadata("SoundSet", PropertyValueType.String) },
       { 1853190773, new PropertyMetadata("AnimationRunSpeed", PropertyValueType.String) },
@@ -70,8 +70,8 @@ namespace AzerothWarsCSharp.DataExtractor
       { 1634889845, new PropertyMetadata("PrimaryAttribute", PropertyValueType.String) },
       { 1886284149, new PropertyMetadata("IntelligencePerLevel", PropertyValueType.Float) },
       { 1885823349, new PropertyMetadata("AgilityPerLevel", PropertyValueType.Float) },
-      { 1768382837, new PropertyMetadata("Agility", PropertyValueType.String) },
-      { 1953393013, new PropertyMetadata("Intelligence", PropertyValueType.String) },
+      { 1768382837, new PropertyMetadata("Agility", PropertyValueType.Int) },
+      { 1953393013, new PropertyMetadata("Intelligence", PropertyValueType.Int) },
       { 1769173877, new PropertyMetadata("ScoreScreenIcon", PropertyValueType.String) },
       { 2050056565, new PropertyMetadata("MissileSpeed", PropertyValueType.Float) },
       { 1634559605, new PropertyMetadata("FoodProduced", PropertyValueType.Int) },
@@ -107,8 +107,8 @@ namespace AzerothWarsCSharp.DataExtractor
       { 1920234357, new PropertyMetadata("Strength", PropertyValueType.Int) },
       { 829187189, new PropertyMetadata("DamageLossFactor", PropertyValueType.Float) },
       { 828468597, new PropertyMetadata("MissileArc", PropertyValueType.Float) },
-      { 828601461, new PropertyMetadata("MaximumAttackTargets1", PropertyValueType.String) },
-      { 1953918325, new PropertyMetadata("MovementType", PropertyValueType.String) },
+      { 828601461, new PropertyMetadata("MaximumAttackTargets1", PropertyValueType.Int) },
+      { 1953918325, new PropertyMetadata("MovementType", PropertyValueType.MovementType) },
       { 1752591733, new PropertyMetadata("MovementHeight", PropertyValueType.Float) },
       { 1719037301, new PropertyMetadata("MovementHeightMinimum", PropertyValueType.Float) },
     };
@@ -139,11 +139,13 @@ namespace AzerothWarsCSharp.DataExtractor
               });
               break;
             case PropertyValueType.PathingPrevent:
-              _propertyAssignments.Add(new PropertyAssignmentPathingPrevent()
-              {
-                Value = mod.Value.ToString(),
-                PropertyName = propertyMetadata.Name
-              });
+              _propertyAssignments.Add(new PropertyAssignmentList(mod.Value.ToString(), propertyMetadata.Name, "PathingPrevent"));
+              break;
+            case PropertyValueType.DefenseType:
+              _propertyAssignments.Add(new PropertyAssignmentList(mod.Value.ToString(), propertyMetadata.Name, "DefenseType"));
+              break;
+            case PropertyValueType.Targets:
+              _propertyAssignments.Add(new PropertyAssignmentList(mod.Value.ToString(), propertyMetadata.Name, "Target"));
               break;
           }
         }

@@ -2,9 +2,11 @@
 
 namespace AzerothWarsCSharp.DataExtractor
 {
-  public class PropertyAssignmentPathingPrevent : PropertyAssignment<string>, IPropertyAssignment
+  public class PropertyAssignmentList : IPropertyAssignment
   {
-    public override string Value { get; set; }
+    public readonly string _value;
+    private readonly string _propertyName;
+    public readonly string _methodName;
 
     private static string CapitalizeFirstLetter(string str)
     {
@@ -21,13 +23,13 @@ namespace AzerothWarsCSharp.DataExtractor
     public string ToCode()
     {
       var stringBuilder = new StringBuilder();
-      var split = Value.ToString().Split(",");
-      stringBuilder.Append($"{PropertyName} = new[] {{ ");
+      var split = _value.ToString().Split(",");
+      stringBuilder.Append($"{_propertyName} = new[] {{ ");
       var i = 0;
       foreach (var id in split)
       {
         i++;
-        stringBuilder.Append(@$"PathingPrevent.{CapitalizeFirstLetter(id)}");
+        stringBuilder.Append(@$"{_methodName}.{CapitalizeFirstLetter(id)}");
         if (i < split.Length)
         {
           stringBuilder.Append(", ");
@@ -35,6 +37,13 @@ namespace AzerothWarsCSharp.DataExtractor
       }
       stringBuilder.Append($" }}");
       return stringBuilder.ToString();
+    }
+
+    public PropertyAssignmentList(string value, string propertyName, string methodName)
+    {
+      _value = value;
+      _propertyName = propertyName;
+      _methodName = methodName;
     }
   }
 }
