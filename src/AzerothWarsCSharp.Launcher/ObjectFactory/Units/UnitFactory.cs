@@ -50,9 +50,14 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.TechtreeUpgradesUsedRaw = ResearchesUsedRaw;
       unit.TechtreeUpgradesUsed = ResearchesUsed;
       unit.StatsUnitClassification = Classification;
-      unit.StatsUnitClassificationRaw = ClassificationRaw;
       unit.StatsFoodCost = FoodCost;
       unit.CombatAttack1DamageBase = DamageBase1;
+      unit.CombatAttack1DamageSidesPerDie = DamageSidesPerDie1;
+      unit.StatsManaInitialAmount = StartingMana;
+      unit.StatsManaMaximum = Mana;
+
+      unit.StatsRepairGoldCost = GoldCost;
+      unit.StatsRepairLumberCost = LumberCost;
 
       unit.PathingPlacementPreventedBy = PlacementPreventedBy;
       unit.PathingPlacementRequires = PlacementRequires;
@@ -198,6 +203,38 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set
       {
         _hitPoints = value;
+      }
+    }
+
+    private int? _mana;
+    /// <summary>
+    /// How much maximum mana the unit has with which to cast abilities.
+    /// </summary>
+    public int Mana
+    {
+      get
+      {
+        return _mana ?? Parent?.Mana ?? 0;
+      }
+      set
+      {
+        _mana = value;
+      }
+    }
+
+    private int? _startingMana;
+    /// <summary>
+    /// How much mana the unit has when it enters the map.
+    /// </summary>
+    public int StartingMana
+    {
+      get
+      {
+        return _startingMana ?? Parent?.StartingMana ?? 0;
+      }
+      set
+      {
+        _startingMana = value;
       }
     }
 
@@ -363,17 +400,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _classification = value;
     }
 
-    private string _classificationRaw;
-    /// <summary>
-    /// Which unit classications the unit has; e.g. Ancient, Tauren. Expressed as a comma seperated string.
-    /// </summary>
-    [Obsolete("This property is obsolete. Use Classification instead.", false)]
-    public string ClassificationRaw
-    {
-      get => _classificationRaw ?? Parent?.ClassificationRaw ?? "";
-      set => _classificationRaw = value;
-    }
-
     private int? _foodCost = 0;
     /// <summary>
     /// How much food this unit occupies.
@@ -392,6 +418,13 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     {
       get => _damageBase1 ?? Parent?.DamageBase1 ?? 0;
       set => _damageBase1 = value;
+    }
+
+    private int? _damageSidesPerDie1 = 0;
+    public int DamageSidesPerDie1
+    {
+      get => _damageSidesPerDie1 ?? Parent?.DamageSidesPerDie1 ?? 0;
+      set => _damageSidesPerDie1 = value;
     }
 
     private IEnumerable<PathingPrevent> _placementRequires;

@@ -38,7 +38,7 @@ namespace AzerothWarsCSharp.DataExtractor
       { 1836412021, new PropertyMetadata("LumberCost", PropertyValueType.Int) },
       { 1936028277, new PropertyMetadata("Researches", PropertyValueType.String) },
       { 1634890869, new PropertyMetadata("Trains", PropertyValueType.String) },
-      { 1887007861, new PropertyMetadata("ClassificationRaw", PropertyValueType.String) },
+      { 1887007861, new PropertyMetadata("Classification", PropertyValueType.Classifications) },
       { 1902338421, new PropertyMetadata("AcquisitionRange", PropertyValueType.Float) },
       { 1668510581, new PropertyMetadata("SelectionScale", PropertyValueType.Float) },
       { 1949393269, new PropertyMetadata("DamageType1", PropertyValueType.String) },
@@ -146,6 +146,9 @@ namespace AzerothWarsCSharp.DataExtractor
               break;
             case PropertyValueType.Targets:
               _propertyAssignments.Add(new PropertyAssignmentList(mod.Value.ToString(), propertyMetadata.Name, "Target"));
+              break;
+            case PropertyValueType.Classifications:
+              _propertyAssignments.Add(new PropertyAssignmentList(mod.Value.ToString(), propertyMetadata.Name, "UnitClassification"));
               break;
           }
         }

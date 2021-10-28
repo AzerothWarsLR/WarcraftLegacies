@@ -9,6 +9,7 @@
     DefenseType,
     Icon,
     Targets,
-    MovementType
+    MovementType,
+    Classifications
   }
 }
