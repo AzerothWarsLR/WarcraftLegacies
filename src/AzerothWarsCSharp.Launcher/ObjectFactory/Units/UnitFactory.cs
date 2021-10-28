@@ -481,6 +481,20 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _targets2 = value;
     }
 
+    private AttackType? _attackType1;
+    public AttackType AttackType1
+    {
+      get => _attackType1 ?? Parent?.AttackType1 ?? AttackType.Normal;
+      set => _attackType1 = value;
+    }
+
+    private AttackType? _attackType2;
+    public AttackType AttackType2
+    {
+      get => _attackType2 ?? Parent?.AttackType2 ?? AttackType.Normal;
+      set => _attackType2 = value;
+    }
+
     public UnitFactory Parent { get; set; }
 
     public UnitFactory(UnitType baseType)
