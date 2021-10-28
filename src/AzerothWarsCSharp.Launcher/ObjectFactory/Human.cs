@@ -88,7 +88,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         AbilitiesNormal = new Ability[] { defend },
         Flavour = "Versatile foot soldier.",
         Armor = 2,
-        ArtModelFile = @"units\human\Footman\Footman",
+        Model = @"units\human\Footman\Footman",
         Icon = "Footman",
       }.Generate("zfoo", objectDatabase);
 
@@ -116,7 +116,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         AbilitiesNormal = new Ability[] { sunderingblades },
         Flavour = "Powerful mounted warrior.",
         Armor = 5,
-        ArtModelFile = @"units\human\Knight\Knight",
+        Model = @"units\human\Knight\Knight",
         Icon = "Knight",
       }.Generate("zkni", objectDatabase);
 
@@ -142,7 +142,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         Intelligence = 5,
         ProperName = "Arthas",
         Name = "Prince",
-        ArtModelFile = @"units\human\Arthas\Arthas",
+        Model = @"units\human\Arthas\Arthas",
         Icon = "Arthas",
       }.Generate("Zart", objectDatabase);
 
@@ -177,7 +177,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         AbilitiesNormal = new Ability[] { flare, fragmentationshards },
         Flavour = "Long-range siege weaponry. Exceptional damage versus buildings, but slow and vulnerable.",
         Armor = 5,
-        ArtModelFile = @"units\human\MortarTeam\MortarTeam",
+        Model = @"units\human\MortarTeam\MortarTeam",
         Icon = "MortarTeam",
       }.Generate("zmor", objectDatabase);
 
@@ -222,7 +222,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         AbilitiesNormal = new Ability[] { flakcannons, truesight, flyingmachinebombs },
         Flavour = "Fast moving flying machine. Excellent at scouting, and effective against air units.",
         Armor = 5,
-        ArtModelFile = @"units\human\Gyrocopter\Gyrocopter",
+        Model = @"units\human\Gyrocopter\Gyrocopter",
         Icon = "Gyrocopter",
       }.Generate("zfly", objectDatabase);
 
@@ -237,7 +237,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         AbilitiesNormal = System.Array.Empty<Ability>(),
         Flavour = "Powerful flying creature, mounted by a Dwarven hammer-thrower.",
         Armor = 5,
-        ArtModelFile = @"units\human\GryphonRider\GryphonRider",
+        Model = @"units\human\GryphonRider\GryphonRider",
         Icon = "GryphonRider"
       }.Generate("zgry", objectDatabase);
 
@@ -284,7 +284,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         AbilitiesNormal = new Ability[] { heal, dispelmagic, innerfire },
         Flavour = "Supporting spellcaster.",
         Armor = 5,
-        ArtModelFile = @"units\human\Priest\Priest",
+        Model = @"units\human\Priest\Priest",
         Icon = "Priest",
       }.Generate("zpri", objectDatabase);
 
@@ -310,7 +310,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         AbilitiesNormal = new Ability[] { slow },
         Flavour = "Versatile spellcaster.",
         Armor = 5,
-        ArtModelFile = @"units\human\Sorceress\Sorceress",
+        Model = @"units\human\Sorceress\Sorceress",
         Icon = "Sorceress",
       }.Generate("zsor", objectDatabase);
     }

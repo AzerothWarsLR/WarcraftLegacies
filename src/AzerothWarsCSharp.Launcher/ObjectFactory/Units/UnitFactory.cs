@@ -35,12 +35,13 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.PathingCollisionSize = CollisionSize;
       unit.ArtButtonPositionX = ButtonPosition.X;
       unit.ArtButtonPositionY = ButtonPosition.Y;
-      unit.CombatAttack1DamageBase = DamageBase;
-      unit.CombatAttack1DamageNumberOfDice = DamageNumberOfDice;
-      unit.CombatAttack1DamageSidesPerDie = DamageSidesPerDie;
+      unit.CombatAttack1DamageBase = DamageBase1;
+      unit.CombatAttack2DamageBase = DamageBase2;
+      unit.CombatAttack1DamageNumberOfDice = DamageNumberOfDice1;
+      unit.CombatAttack2DamageNumberOfDice = DamageNumberOfDice2;
       unit.StatsHitPointsMaximumBase = HitPoints;
       unit.TextName = Name;
-      unit.ArtModelFile = ArtModelFile;
+      unit.ArtModelFile = Model;
       unit.ArtIconGameInterface = $@"ReplaceableTextures\CommandButtons\BTN{Icon}.blp";
       unit.AbilitiesNormal = AbilitiesNormal;
       unit.ArtRequiredAnimationNames = RequiredAnimationNames;
@@ -53,11 +54,21 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.StatsFoodCost = FoodCost;
       unit.CombatAttack1DamageBase = DamageBase1;
       unit.CombatAttack1DamageSidesPerDie = DamageSidesPerDie1;
+      unit.CombatAttack2DamageSidesPerDie = DamageSidesPerDie2;
       unit.StatsManaInitialAmount = StartingMana;
       unit.StatsManaMaximum = Mana;
       unit.TechtreeRevivesDeadHeroes = RevivesDeadHeroes;
       unit.PathingPlacementPreventedBy = PlacementPreventedBy;
       unit.PathingPlacementRequires = PlacementRequires;
+      unit.ArtTintingColor1Red = TintRed;
+      unit.ArtTintingColor2Green = TintGreen;
+      unit.ArtTintingColor3Blue = TintBlue;
+      unit.CombatAttack1ProjectileSpeed = MissileSpeed1;
+      unit.CombatAttack2ProjectileSpeed = MissileSpeed2;
+      unit.AbilitiesDefaultActiveAbilityRaw = DefaultActiveAbilityRaw;
+      unit.StatsManaRegeneration = ManaRegeneration;
+      unit.CombatAttack1AnimationBackswingPoint = AnimationBackswingPoint1;
+      unit.CombatAttack2AnimationBackswingPoint = AnimationBackswingPoint2;
       //Calculated
       unit.StatsRepairGoldCost = GoldCost;
       unit.StatsRepairLumberCost = LumberCost;
@@ -115,6 +126,9 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     }
 
     private float? _collisionSize;
+    /// <summary>
+    /// How large the unit is in terms of pathing.
+    /// </summary>
     public float CollisionSize
     {
       get
@@ -167,29 +181,55 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       }
     }
 
-    private int? _damageNumberOfDice;
-    public int DamageNumberOfDice
+    private int? _damageNumberOfDice1;
+    public int DamageNumberOfDice1
     {
       get
       {
-        return _damageNumberOfDice ?? Parent?.DamageNumberOfDice ?? 0;
+        return _damageNumberOfDice1 ?? Parent?.DamageNumberOfDice1 ?? 0;
       }
       set
       {
-        _damageNumberOfDice = value;
+        _damageNumberOfDice1 = value;
       }
     }
 
-    private int? _damageSidesPerDie;
-    public int DamageSidesPerDie
+    private int? _damageNumberOfDice2;
+    public int DamageNumberOfDice2
     {
       get
       {
-        return _damageSidesPerDie ?? Parent?.DamageSidesPerDie ?? 0;
+        return _damageNumberOfDice2 ?? Parent?.DamageNumberOfDice2 ?? 0;
       }
       set
       {
-        _damageSidesPerDie = value;
+        _damageNumberOfDice2 = value;
+      }
+    }
+
+    private int? _damageSidesPerDie1;
+    public int DamageSidesPerDie1
+    {
+      get
+      {
+        return _damageSidesPerDie1 ?? Parent?.DamageSidesPerDie1 ?? 0;
+      }
+      set
+      {
+        _damageSidesPerDie1 = value;
+      }
+    }
+
+    private int? _damageSidesPerDie2;
+    public int DamageSidesPerDie2
+    {
+      get
+      {
+        return _damageSidesPerDie2 ?? Parent?.DamageSidesPerDie2 ?? 0;
+      }
+      set
+      {
+        _damageSidesPerDie2 = value;
       }
     }
 
@@ -251,16 +291,16 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       }
     }
 
-    private string _artModelFile;
-    public string ArtModelFile
+    private string _model;
+    public string Model
     {
       get
       {
-        return _artModelFile ?? Parent?.ArtModelFile ?? @"units\human\Peasant\Peasant";
+        return _model ?? Parent?.Model ?? @"units\human\Peasant\Peasant";
       }
       set
       {
-        _artModelFile = value;
+        _model = value;
       }
     }
 
@@ -317,6 +357,14 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       }
     }
 
+    private string _upgradesToRaw;
+    [Obsolete("This property is obsolete. Use UpgradesTo instead.", false)]
+    public string UpgradesToRaw
+    {
+      get => _upgradesToRaw ?? Parent?.UpgradesToRaw ?? null;
+      set => _upgradesToRaw = value;
+    }
+
     private IEnumerable<Upgrade> _researchesUsed;
     public IEnumerable<Upgrade> ResearchesUsed
     {
@@ -345,28 +393,28 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       }
     }
 
-    private int? _armor = 0;
+    private int? _armor;
     public int Armor
     {
       get => _armor ?? Parent?.Armor ?? 0;
       set => _armor = value;
     }
 
-    private int? _foodProduced = 0;
+    private int? _foodProduced;
     public int FoodProduced
     {
       get => _foodProduced ?? Parent?.FoodProduced ?? 0;
       set => _foodProduced = value;
     }
 
-    private int? _goldCost = 0;
+    private int? _goldCost;
     public int GoldCost
     {
       get => _goldCost ?? Parent?.GoldCost ?? 0;
       set => _goldCost = value;
     }
 
-    private int? _lumberCost = 0;
+    private int? _lumberCost;
     public int LumberCost
     {
       get => _lumberCost ?? Parent?.LumberCost ?? 0;
@@ -380,7 +428,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _pathTexture = value;
     }
 
-    private int? _level = 0;
+    private int? _level;
     /// <summary>
     /// The unit's level. Affects experience gained and gold bounty.
     /// </summary>
@@ -400,7 +448,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _classification = value;
     }
 
-    private int? _foodCost = 0;
+    private int? _foodCost;
     /// <summary>
     /// How much food this unit occupies.
     /// </summary>
@@ -410,9 +458,9 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _foodCost = value;
     }
 
-    private int? _damageBase1 = 0;
+    private int? _damageBase1;
     /// <summary>
-    /// The unit's base damage.
+    /// The base damage of the unit's first attack.
     /// </summary>
     public int DamageBase1
     {
@@ -420,11 +468,24 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _damageBase1 = value;
     }
 
-    private int? _damageSidesPerDie1 = 0;
-    public int DamageSidesPerDie1
+    private int? _damageBase2;
+    /// <summary>
+    /// The base damage of the unit's second attack.
+    /// </summary>
+    public int DamageBase2
     {
-      get => _damageSidesPerDie1 ?? Parent?.DamageSidesPerDie1 ?? 0;
-      set => _damageSidesPerDie1 = value;
+      get => _damageBase2 ?? Parent?.DamageBase2 ?? 0;
+      set => _damageBase2 = value;
+    }
+
+    private int? _cargoSize;
+    /// <summary>
+    /// How much space the unit takes when it gets into a unit that can transport other units.
+    /// </summary>
+    public int CargoSize
+    {
+      get => _cargoSize ?? Parent?.CargoSize ?? 1;
+      set => _cargoSize = value;
     }
 
     private IEnumerable<PathingPrevent> _placementRequires;
@@ -481,6 +542,20 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _targets2 = value;
     }
 
+    private IEnumerable<Target> _areaOfEffectTargets1;
+    public IEnumerable<Target> AreaOfEffectTargets1
+    {
+      get => _areaOfEffectTargets1 ?? Parent?.AreaOfEffectTargets1 ?? Array.Empty<Target>();
+      set => _areaOfEffectTargets1 = value;
+    }
+
+    private IEnumerable<Target> _areaOfEffectTargets2;
+    public IEnumerable<Target> AreaOfEffectTargets2
+    {
+      get => _areaOfEffectTargets2 ?? Parent?.AreaOfEffectTargets2 ?? Array.Empty<Target>();
+      set => _areaOfEffectTargets2 = value;
+    }
+
     private AttackType? _attackType1;
     public AttackType AttackType1
     {
@@ -493,6 +568,253 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     {
       get => _attackType2 ?? Parent?.AttackType2 ?? AttackType.Normal;
       set => _attackType2 = value;
+    }
+
+    private DefenseType? _defenseType;
+    public DefenseType DefenseType
+    {
+      get => _defenseType ?? Parent?.DefenseType ?? DefenseType.Normal;
+      set => _defenseType = value;
+    }
+
+    private string _defaultActiveAbilityRaw;
+    [Obsolete("This property is obsolete. Use DefaultActiveAbility instead.", false)]
+    public string DefaultActiveAbilityRaw
+    {
+      get => _defaultActiveAbilityRaw ?? Parent?.DefaultActiveAbilityRaw ?? "";
+      set => _defaultActiveAbilityRaw = value;
+    }
+
+    private int? _tintRed;
+    public int TintRed
+    {
+      get => _tintRed ?? Parent?.TintRed ?? 255;
+      set => _tintRed = value;
+    }
+
+    private int? _tintGreen;
+    public int TintGreen
+    {
+      get => _tintGreen ?? Parent?.TintGreen ?? 255;
+      set => _tintGreen = value;
+    }
+
+    private int? _tintBlue;
+    public int TintBlue
+    {
+      get => _tintBlue ?? Parent?.TintBlue ?? 255;
+      set => _tintBlue = value;
+    }
+
+    private int? _missileSpeed1;
+    public int MissileSpeed1
+    {
+      get => _missileSpeed1 ?? Parent?.MissileSpeed1 ?? 0;
+      set => _missileSpeed1 = value;
+    }
+
+    private int? _missileSpeed2;
+    public int MissileSpeed2
+    {
+      get => _missileSpeed2 ?? Parent?.MissileSpeed2 ?? 0;
+      set => _missileSpeed2 = value;
+    }
+
+    private float? _modelScale;
+    public float ModelScale
+    {
+      get => _modelScale ?? Parent?.ModelScale ?? 1;
+      set => _modelScale = value;
+    }
+
+    private float? _attackCooldown1;
+    public float AttackCooldown1
+    {
+      get => _attackCooldown1 ?? Parent?.AttackCooldown1 ?? 1;
+      set => _attackCooldown1 = value;
+    }
+
+    private float? _attackCooldown2;
+    public float AttackCooldown2
+    {
+      get => _attackCooldown2 ?? Parent?.AttackCooldown2 ?? 1;
+      set => _attackCooldown2 = value;
+    }
+
+    private float? _manaRegeneration;
+    /// <summary>
+    /// The amount of mana the unit regenerates per second.
+    /// </summary>
+    public float ManaRegeneration
+    {
+      get => _manaRegeneration ?? Parent?.ManaRegeneration ?? 0;
+      set => _manaRegeneration = value;
+    }
+
+    private float? _hitPointRegeneration;
+    /// <summary>
+    /// The amount of hit points the unit regenerates per second.
+    /// </summary>
+    public float HitPointRegeneration
+    {
+      get => _hitPointRegeneration ?? Parent?.HitPointRegeneration ?? 0;
+      set => _hitPointRegeneration = value;
+    }
+
+    private float? _animationBackswingPoint1;
+    public float AnimationBackswingPoint1
+    {
+      get => _animationBackswingPoint1 ?? Parent?.AnimationBackswingPoint1 ?? 0;
+      set => _animationBackswingPoint1 = value;
+    }
+
+    private float? _animationBackswingPoint2;
+    public float AnimationBackswingPoint2
+    {
+      get => _animationBackswingPoint2 ?? Parent?.AnimationBackswingPoint2 ?? 0;
+      set => _animationBackswingPoint2 = value;
+    }
+
+    private float? _movementSpeed;
+    /// <summary>
+    /// How fast the unit can move across the map.
+    /// </summary>
+    public float MovementSpeed
+    {
+      get => _movementSpeed ?? Parent?.MovementSpeed ?? 220;
+      set => _movementSpeed = value;
+    }
+
+    private float? _splashAreaFull1;
+    public float SplashAreaFull1
+    {
+      get => _splashAreaFull1 ?? Parent?.SplashAreaFull1 ?? 0;
+      set => _splashAreaFull1 = value;
+    }
+
+    private float? _splashAreaFull2;
+    public float SplashAreaFull2
+    {
+      get => _splashAreaFull2 ?? Parent?.SplashAreaFull2 ?? 0;
+      set => _splashAreaFull2 = value;
+    }
+
+    private string _missileArt1;
+    public string MissileArt1
+    {
+      get => _missileArt1 ?? Parent?.MissileArt1 ?? "";
+      set => _missileArt1 = value;
+    }
+
+    private string _missileArt2;
+    public string MissileArt2
+    {
+      get => _missileArt2 ?? Parent?.MissileArt2 ?? "";
+      set => _missileArt2 = value;
+    }
+
+    private float? _range1;
+    /// <summary>
+    /// How far the unit's first attack can reach.
+    /// </summary>
+    public float Range1
+    {
+      get => _range1 ?? Parent?.Range1 ?? 0;
+      set => _range1 = value;
+    }
+
+    private float? _range2;
+    /// <summary>
+    /// How far the unit's second attack can reach.
+    /// </summary>
+    public float Range2
+    {
+      get => _range2 ?? Parent?.Range2 ?? 0;
+      set => _range2 = value;
+    }
+
+    private IEnumerable<Upgrade> _researches;
+    /// <summary>
+    /// Which researches the unit can research.
+    /// </summary>
+    public IEnumerable<Upgrade> Researches
+    {
+      get => _researches ?? Parent?.Researches ?? Array.Empty<Upgrade>();
+      set => _researches = value;
+    }
+
+    private string _researchesRaw;
+    [Obsolete("This property is obsolete. Use Researches instead.", false)]
+    public string ResearchesRaw
+    {
+      get => _researchesRaw ?? Parent?.ResearchesRaw ?? "";
+      set => _researchesRaw = value;
+    }
+
+    private IEnumerable<Unit> _trains;
+    /// <summary>
+    /// Which units the unit can train.
+    /// </summary>
+    public IEnumerable<Unit> Trains
+    {
+      get => _trains ?? Parent?.Trains ?? Array.Empty<Unit>();
+      set => _trains = value;
+    }
+
+    private string _trainsRaw;
+    [Obsolete("This property is obsolete. Use Trains instead.", false)]
+    public string TrainsRaw
+    {
+      get => _trainsRaw ?? Parent?.TrainsRaw ?? "";
+      set => _trainsRaw = value;
+    }
+
+    private int? _stockMaximum;
+    /// <summary>
+    /// The maximum number of stock the unit can have when being sold as a mercenary at a shop.
+    /// </summary>
+    public int StockMaximum
+    {
+      get => _stockMaximum ?? Parent?.StockMaximum ?? 1;
+      set => _stockMaximum = value;
+    }
+
+    private int? _stockReplenishInterval;
+    /// <summary>
+    /// The time between when this unit restocks when sold at a shop.
+    /// </summary>
+    public int StockReplenishInterval
+    {
+      get => _stockReplenishInterval ?? Parent?.StockReplenishInterval ?? 1;
+      set => _stockReplenishInterval = value;
+    }
+
+    private WeaponType? _weaponType1;
+    public WeaponType WeaponType1
+    {
+      get => _weaponType1 ?? Parent?.WeaponType1 ?? WeaponType.Normal;
+      set => _weaponType1 = value;
+    }
+
+    private WeaponType? _weaponType2;
+    public WeaponType WeaponType2
+    {
+      get => _weaponType2 ?? Parent?.WeaponType2 ?? WeaponType.Normal;
+      set => _weaponType2 = value;
+    }
+
+    private float? _missileArc1;
+    public float MissileArc1
+    {
+      get => _missileArc1 ?? Parent?.MissileArc1 ?? 0;
+      set => _missileArc1 = value;
+    }
+
+    private float? _missileArc2;
+    public float MissileArc2
+    {
+      get => _missileArc2 ?? Parent?.MissileArc2 ?? 0;
+      set => _missileArc2 = value;
     }
 
     public UnitFactory Parent { get; set; }

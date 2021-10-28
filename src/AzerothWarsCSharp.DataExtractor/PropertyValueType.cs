@@ -13,6 +13,8 @@
     Classifications,
     Bool,
     RegenType,
-    AttackType
+    AttackType,
+    DamageType,
+    WeaponType
   }
 }
