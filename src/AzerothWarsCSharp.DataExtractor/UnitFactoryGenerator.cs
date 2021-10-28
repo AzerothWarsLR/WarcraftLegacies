@@ -125,18 +125,10 @@ namespace AzerothWarsCSharp.DataExtractor
           switch (propertyMetadata.Type)
           {
             case PropertyValueType.Int:
-              _propertyAssignments.Add(new PropertyAssignmentInt()
-              {
-                Value = (int)mod.Value,
-                PropertyName = propertyMetadata.Name
-              });
+              _propertyAssignments.Add(new PropertyAssignmentInt((int)mod.Value, propertyMetadata.Name));
               break;
             case PropertyValueType.String:
-              _propertyAssignments.Add(new PropertyAssignmentString()
-              {
-                Value = mod.Value.ToString(),
-                PropertyName = propertyMetadata.Name
-              });
+              _propertyAssignments.Add(new PropertyAssignmentString(mod.Value.ToString(), propertyMetadata.Name));
               break;
             case PropertyValueType.PathingPrevent:
               _propertyAssignments.Add(new PropertyAssignmentList(mod.Value.ToString(), propertyMetadata.Name, "PathingPrevent"));
@@ -155,11 +147,7 @@ namespace AzerothWarsCSharp.DataExtractor
       }
       else
       {
-        _propertyAssignments.Add(new PropertyAssignmentString()
-        {
-          Value = mod.Value.ToString(),
-          PropertyName = mod.Id.ToString()
-        });
+        _propertyAssignments.Add(new PropertyAssignmentString(mod.Value.ToString(), mod.Id.ToString()));
       }
     }
 

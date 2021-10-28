@@ -1,12 +1,19 @@
 ﻿namespace AzerothWarsCSharp.DataExtractor
 {
-  public class PropertyAssignmentString : PropertyAssignment<string>, IPropertyAssignment
+  public class PropertyAssignmentString : IPropertyAssignment
   {
-    public override string Value { get; set; }
+    private readonly string _value;
+    private readonly string _propertyName;
 
     public string ToCode()
     {
-      return @$"{PropertyName} = @""{Value}""";
+      return @$"{_propertyName} = @""{_value}""";
+    }
+
+    public PropertyAssignmentString(string value, string propertyName)
+    {
+      _value = value;
+      _propertyName = propertyName;
     }
   }
 }

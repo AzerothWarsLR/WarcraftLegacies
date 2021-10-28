@@ -1,12 +1,19 @@
 ﻿namespace AzerothWarsCSharp.DataExtractor
 {
-  public class PropertyAssignmentFloat : PropertyAssignment<float>, IPropertyAssignment
+  public class PropertyAssignmentFloat : IPropertyAssignment
   {
-    public override float Value { get; set; }
+    private readonly string _value;
+    private readonly string _propertyName;
 
     public string ToCode()
     {
-      return @$"{PropertyName} = {Value}";
+      return @$"{_propertyName} = {_value}";
+    }
+
+    public PropertyAssignmentFloat(string value, string propertyName)
+    {
+      _value = value;
+      _propertyName = propertyName;
     }
   }
 }

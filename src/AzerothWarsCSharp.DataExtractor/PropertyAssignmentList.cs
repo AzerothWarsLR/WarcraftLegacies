@@ -4,9 +4,9 @@ namespace AzerothWarsCSharp.DataExtractor
 {
   public class PropertyAssignmentList : IPropertyAssignment
   {
-    public readonly string _value;
+    private readonly string _value;
     private readonly string _propertyName;
-    public readonly string _methodName;
+    private readonly string _methodName;
 
     private static string CapitalizeFirstLetter(string str)
     {
