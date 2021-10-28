@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.DataExtractor
       { 1952542837, new PropertyMetadata("PathTexture", PropertyValueType.String) },
       { 1885433973, new PropertyMetadata("PlacementRequires", PropertyValueType.PathingPrevent) },
       { 1768055157, new PropertyMetadata("AbilitiesNormalRaw", PropertyValueType.String) },
-      { 1949458805, new PropertyMetadata("AttackType2", PropertyValueType.String) },
+      { 1949458805, new PropertyMetadata("AttackType2", PropertyValueType.AttackType) },
       { 1633907573, new PropertyMetadata("ModelScale", PropertyValueType.Float) },
       { 1832018293, new PropertyMetadata("Missile2", PropertyValueType.String) },
       { 1885959285, new PropertyMetadata("TooltipBasic", PropertyValueType.String, false) },
@@ -56,7 +56,7 @@ namespace AzerothWarsCSharp.DataExtractor
       { 829449333, new PropertyMetadata("AnimationDamagePoint", PropertyValueType.Float) },
       { 1769107573, new PropertyMetadata("CollisionSize", PropertyValueType.Float) },
       { 1919970677, new PropertyMetadata("ManaRegeneration", PropertyValueType.Float) },
-      { 1953654901, new PropertyMetadata("RegenType", PropertyValueType.String) },
+      { 1953654901, new PropertyMetadata("RegenType", PropertyValueType.RegenType) },
       { 1836348021, new PropertyMetadata("RepairTime", PropertyValueType.Int, false) },
       { 1937141109, new PropertyMetadata("MovementSpeed", PropertyValueType.Float) },
       { 1650550901, new PropertyMetadata("AbilitiesHeroRaw", PropertyValueType.String) },
@@ -80,7 +80,7 @@ namespace AzerothWarsCSharp.DataExtractor
       { 1919969397, new PropertyMetadata("HitPointRegeneration", PropertyValueType.Float) },
       { 1684632437, new PropertyMetadata("SightRadius", PropertyValueType.Int) },
       { 1667330677, new PropertyMetadata("Race", PropertyValueType.String, false) },
-      { 1936681077, new PropertyMetadata("Priority", PropertyValueType.Int) },
+      { 1936681077, new PropertyMetadata("Priority", PropertyValueType.Int, false) },
       { 1868720501, new PropertyMetadata("RevivesDeadHeroes", PropertyValueType.Bool) },
       { 1635083125, new PropertyMetadata("CasterUpgradeArt", PropertyValueType.String) },
       { 1853186933, new PropertyMetadata("CasterUpgradeNames", PropertyValueType.String, false) },
@@ -139,11 +139,17 @@ namespace AzerothWarsCSharp.DataExtractor
             case PropertyValueType.DefenseType:
               _propertyAssignments.Add(new PropertyAssignmentList(mod.Value.ToString(), propertyMetadata.Name, "DefenseType"));
               break;
+            case PropertyValueType.AttackType:
+              _propertyAssignments.Add(new PropertyAssignmentEnum(mod.Value.ToString(), propertyMetadata.Name, "AttackType"));
+              break;
             case PropertyValueType.Targets:
               _propertyAssignments.Add(new PropertyAssignmentList(mod.Value.ToString(), propertyMetadata.Name, "Target"));
               break;
             case PropertyValueType.Classifications:
               _propertyAssignments.Add(new PropertyAssignmentList(mod.Value.ToString(), propertyMetadata.Name, "UnitClassification"));
+              break;
+            case PropertyValueType.RegenType:
+              _propertyAssignments.Add(new PropertyAssignmentEnum(mod.Value.ToString(), propertyMetadata.Name, "RegenType"));
               break;
           }
         }

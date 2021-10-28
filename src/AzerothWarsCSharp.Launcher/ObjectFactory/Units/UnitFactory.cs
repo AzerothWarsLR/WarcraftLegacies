@@ -451,6 +451,16 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _revivesDeadHeroes = value;
     }
 
+    private RegenType? _regenType;
+    /// <summary>
+    /// In which circumstances the unit regenerates hit points.
+    /// </summary>
+    public RegenType RegenType
+    {
+      get => _regenType ?? Parent?.RegenType ?? RegenType.Always;
+      set => _regenType = value;
+    }
+
     public UnitFactory Parent { get; set; }
 
     public UnitFactory(UnitType baseType)

@@ -11,6 +11,8 @@
     Targets,
     MovementType,
     Classifications,
-    Bool
+    Bool,
+    RegenType,
+    AttackType
   }
 }
