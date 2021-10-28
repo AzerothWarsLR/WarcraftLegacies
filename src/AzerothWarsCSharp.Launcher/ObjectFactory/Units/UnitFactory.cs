@@ -461,6 +461,26 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _regenType = value;
     }
 
+    private IEnumerable<Target> _targets1;
+    /// <summary>
+    /// Which targets the units first attack can can be used against.
+    /// </summary>
+    public IEnumerable<Target> Targets1
+    {
+      get => _targets1 ?? Parent?.Targets1 ?? Array.Empty<Target>();
+      set => _targets1 = value;
+    }
+
+    private IEnumerable<Target> _targets2;
+    /// <summary>
+    /// Which targets the units second attack can can be used against.
+    /// </summary>
+    public IEnumerable<Target> Targets2
+    {
+      get => _targets2 ?? Parent?.Targets2 ?? Array.Empty<Target>();
+      set => _targets2 = value;
+    }
+
     public UnitFactory Parent { get; set; }
 
     public UnitFactory(UnitType baseType)

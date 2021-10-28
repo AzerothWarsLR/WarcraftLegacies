@@ -111,6 +111,11 @@ namespace AzerothWarsCSharp.DataExtractor
       { 1953918325, new PropertyMetadata("MovementType", PropertyValueType.MovementType) },
       { 1752591733, new PropertyMetadata("MovementHeight", PropertyValueType.Float) },
       { 1719037301, new PropertyMetadata("MovementHeightMinimum", PropertyValueType.Float) },
+
+
+      { 846422645, new PropertyMetadata("BackswingPoint2", PropertyValueType.Float) },
+      { 1647468917, new PropertyMetadata("DamageBase2", PropertyValueType.Float) },
+      { 2050122101, new PropertyMetadata("MissileSpeed", PropertyValueType.Float) },
     };
     private readonly List<IPropertyAssignment> _propertyAssignments = new();
     private readonly SimpleObjectModification _unit;
