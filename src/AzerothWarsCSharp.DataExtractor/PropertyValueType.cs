@@ -10,6 +10,7 @@
     Icon,
     Targets,
     MovementType,
-    Classifications
+    Classifications,
+    Bool
   }
 }

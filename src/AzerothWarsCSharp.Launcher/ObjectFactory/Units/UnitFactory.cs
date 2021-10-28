@@ -55,12 +55,12 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.CombatAttack1DamageSidesPerDie = DamageSidesPerDie1;
       unit.StatsManaInitialAmount = StartingMana;
       unit.StatsManaMaximum = Mana;
-
-      unit.StatsRepairGoldCost = GoldCost;
-      unit.StatsRepairLumberCost = LumberCost;
-
+      unit.TechtreeRevivesDeadHeroes = RevivesDeadHeroes;
       unit.PathingPlacementPreventedBy = PlacementPreventedBy;
       unit.PathingPlacementRequires = PlacementRequires;
+      //Calculated
+      unit.StatsRepairGoldCost = GoldCost;
+      unit.StatsRepairLumberCost = LumberCost;
 #pragma warning restore CS0618 // Type or member is obsolete
     }
 
@@ -439,6 +439,16 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     {
       get => _placementPreventedBy ?? Parent?.PlacementPreventedBy ?? System.Array.Empty<PathingRequire>();
       set => _placementPreventedBy = value;
+    }
+
+    private bool? _revivesDeadHeroes;
+    /// <summary>
+    /// Whether the unit can revive dead heroes.
+    /// </summary>
+    public bool RevivesDeadHeroes
+    {
+      get => _revivesDeadHeroes ?? Parent?.RevivesDeadHeroes ?? false;
+      set => _revivesDeadHeroes = value;
     }
 
     public UnitFactory Parent { get; set; }

@@ -81,7 +81,7 @@ namespace AzerothWarsCSharp.DataExtractor
       { 1684632437, new PropertyMetadata("SightRadius", PropertyValueType.Int) },
       { 1667330677, new PropertyMetadata("Race", PropertyValueType.String, false) },
       { 1936681077, new PropertyMetadata("Priority", PropertyValueType.Int) },
-      { 1868720501, new PropertyMetadata("RevivesDeadHeroes", PropertyValueType.Int) },
+      { 1868720501, new PropertyMetadata("RevivesDeadHeroes", PropertyValueType.Bool) },
       { 1635083125, new PropertyMetadata("CasterUpgradeArt", PropertyValueType.String) },
       { 1853186933, new PropertyMetadata("CasterUpgradeNames", PropertyValueType.String, false) },
       { 1953850229, new PropertyMetadata("CasterUpgradeTooltip", PropertyValueType.String, false) },
@@ -129,6 +129,9 @@ namespace AzerothWarsCSharp.DataExtractor
               break;
             case PropertyValueType.String:
               _propertyAssignments.Add(new PropertyAssignmentString(mod.Value.ToString(), propertyMetadata.Name));
+              break;
+            case PropertyValueType.Bool:
+              _propertyAssignments.Add(new PropertyAssignmentBool((int)mod.Value, propertyMetadata.Name));
               break;
             case PropertyValueType.PathingPrevent:
               _propertyAssignments.Add(new PropertyAssignmentList(mod.Value.ToString(), propertyMetadata.Name, "PathingPrevent"));
