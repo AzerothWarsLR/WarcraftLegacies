@@ -194,7 +194,7 @@ namespace AzerothWarsCSharp.DataExtractor
     {
       var stringBuilder = new StringBuilder();
       stringBuilder.AppendLine(@"      //UnitName");
-      stringBuilder.AppendLine(@"      new UnitFactory(UnitType.Peasant_hpea)");
+      stringBuilder.AppendLine($@"      new UnitFactory((UnitType){_unit.OldId})");
       stringBuilder.AppendLine(@"      {");
       foreach (var propertyAssignment in _propertyAssignments)
       {
