@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using War3Api.Object;
 using War3Net.Build.Object;
 
 namespace AzerothWarsCSharp.DataExtractor
@@ -123,7 +124,7 @@ namespace AzerothWarsCSharp.DataExtractor
       { 845312629, new PropertyMetadata("RangeMotionBuffer2", PropertyValueType.Float, false) },
     };
     private readonly List<IPropertyAssignment> _propertyAssignments = new();
-    private readonly SimpleObjectModification _unit;
+    private readonly Unit _unit;
 
     private void CreatePropertyAssignment(SimpleObjectDataModification mod)
     {
@@ -220,7 +221,7 @@ namespace AzerothWarsCSharp.DataExtractor
       stringBuilder.AppendLine("    {");
       foreach (var unit in objectData.GetAllUnits())
       {
-        var generator = new UnitFactoryGenerator(unit);
+        var generator = new UnitFactoryGenerator((Unit)unit);
         generator.Generate();
         stringBuilder.Append(generator.ToCode());
       }
@@ -230,7 +231,7 @@ namespace AzerothWarsCSharp.DataExtractor
       return stringBuilder.ToString();
     }
 
-    public UnitFactoryGenerator(SimpleObjectModification unit)
+    public UnitFactoryGenerator(Unit unit)
     {
       _unit = unit;
     }
