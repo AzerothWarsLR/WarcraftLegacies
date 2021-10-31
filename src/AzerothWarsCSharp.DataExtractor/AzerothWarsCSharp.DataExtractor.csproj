@@ -11,6 +11,7 @@
     <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.3" PrivateAssets="all" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0-rc.2.21480.5" />
     <PackageReference Include="War3Net.Build" Version="5.0.4" />
+    <PackageReference Include="War3Net.Common" Version="5.0.2" />
   </ItemGroup>
 
   <ItemGroup>
