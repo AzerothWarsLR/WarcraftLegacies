@@ -24,12 +24,30 @@ namespace AzerothWarsCSharp.DataExtractor
     };
     private static ObjectDatabase _objectDatabase;
 
-    private IEnumerable<PropertyInfo> GetProperties()
+    /// <summary>
+    /// Checks if the property has a value set.
+    /// </summary>
+    /// <param name="property"></param>
+    /// <returns></returns>
+    private bool PropertyIsModified(PropertyInfo property)
+    {
+      var checkProperty = typeof(Unit).GetProperty($"Is{property.Name}Modified");
+      return checkProperty != null && (bool)checkProperty.GetValue(_unit) == true;
+    }
+
+    /// <summary>
+    /// Returns all properties which have a setter, a value, and no corresponding raw version.
+    /// </summary>
+    /// <returns></returns>
+    private IEnumerable<PropertyInfo> GetValuedProperties()
     {
       var properties = typeof(Unit).GetProperties();
       foreach (var property in properties)
       {
-        if (property.SetMethod != null && property.SetMethod.IsPublic)
+        if (property.SetMethod != null 
+          && property.SetMethod.IsPublic 
+          && typeof(Unit).GetProperty($"{property.Name}Raw") == null
+          && PropertyIsModified(property))
         {
           yield return property;
         }
@@ -38,14 +56,14 @@ namespace AzerothWarsCSharp.DataExtractor
 
     private IEnumerable<AssignmentExpressionSyntax> GetAssignmentExpressions()
     {
-      foreach (var property in GetProperties())
+      foreach (var property in GetValuedProperties())
       {
         yield return SyntaxFactory.AssignmentExpression(
           SyntaxKind.SimpleAssignmentExpression,
           SyntaxFactory.IdentifierName(property.Name),
           SyntaxFactory.LiteralExpression(
             SyntaxKind.StringLiteralExpression,
-            SyntaxFactory.Literal("placeholdervalue")
+            SyntaxFactory.Literal(property.GetValue(_unit).ToString())
           )
         );
       }
