@@ -29,6 +29,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\War3Api\src\War3Api.Object\War3Api.Object.csproj" />
+    <ProjectReference Include="..\AzerothWarsCSharp.Common\AzerothWarsCSharp.Common.csproj" />
   </ItemGroup>
 
 </Project>

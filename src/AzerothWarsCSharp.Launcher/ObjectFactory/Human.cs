@@ -15,8 +15,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       {
         Name = "Deckhand",
         DamageBase = 11,
-        DamageNumberOfDice = 1,
-        DamageSidesPerDie = 2,
+        DamageNumberOfDice1 = 1,
+        DamageSidesPerDie1 = 2,
         HitPoints = 230,
         Flavour = "Basic worker unit that has taken up arms.",
         Icon = "Militia"
@@ -59,8 +59,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       {
         Name = "Deckhand",
         DamageBase = 4,
-        DamageNumberOfDice = 1,
-        DamageSidesPerDie = 2,
+        DamageNumberOfDice1 = 1,
+        DamageSidesPerDie1 = 2,
         HitPoints = 230,
         AbilitiesNormal = new Ability[] { harvest, calltoarms, repair },
         Flavour = "Basic worker unit.",
@@ -82,8 +82,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       {
         Name = "Footman",
         DamageBase = 11,
-        DamageNumberOfDice = 1,
-        DamageSidesPerDie = 2,
+        DamageNumberOfDice1 = 1,
+        DamageSidesPerDie1 = 2,
         HitPoints = 420,
         AbilitiesNormal = new Ability[] { defend },
         Flavour = "Versatile foot soldier.",
@@ -110,8 +110,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       {
         Name = "Knight",
         DamageBase = 28,
-        DamageNumberOfDice = 2,
-        DamageSidesPerDie = 5,
+        DamageNumberOfDice1 = 2,
+        DamageSidesPerDie1 = 5,
         HitPoints = 885,
         AbilitiesNormal = new Ability[] { sunderingblades },
         Flavour = "Powerful mounted warrior.",
@@ -171,8 +171,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       {
         Name = "Mortar Team",
         DamageBase = 28,
-        DamageNumberOfDice = 2,
-        DamageSidesPerDie = 5,
+        DamageNumberOfDice1 = 2,
+        DamageSidesPerDie1 = 5,
         HitPoints = 885,
         AbilitiesNormal = new Ability[] { flare, fragmentationshards },
         Flavour = "Long-range siege weaponry. Exceptional damage versus buildings, but slow and vulnerable.",
@@ -216,8 +216,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       {
         Name = "Flying Machine",
         DamageBase = 28,
-        DamageNumberOfDice = 2,
-        DamageSidesPerDie = 5,
+        DamageNumberOfDice1 = 2,
+        DamageSidesPerDie1 = 5,
         HitPoints = 885,
         AbilitiesNormal = new Ability[] { flakcannons, truesight, flyingmachinebombs },
         Flavour = "Fast moving flying machine. Excellent at scouting, and effective against air units.",
@@ -231,8 +231,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       {
         Name = "Gryphon Rider",
         DamageBase = 28,
-        DamageNumberOfDice = 2,
-        DamageSidesPerDie = 5,
+        DamageNumberOfDice1 = 2,
+        DamageSidesPerDie1 = 5,
         HitPoints = 885,
         AbilitiesNormal = System.Array.Empty<Ability>(),
         Flavour = "Powerful flying creature, mounted by a Dwarven hammer-thrower.",
@@ -278,8 +278,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       {
         Name = "Priest",
         DamageBase = 28,
-        DamageNumberOfDice = 2,
-        DamageSidesPerDie = 5,
+        DamageNumberOfDice1 = 2,
+        DamageSidesPerDie1 = 5,
         HitPoints = 885,
         AbilitiesNormal = new Ability[] { heal, dispelmagic, innerfire },
         Flavour = "Supporting spellcaster.",
@@ -304,8 +304,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
       {
         Name = "Sorceress",
         DamageBase = 28,
-        DamageNumberOfDice = 2,
-        DamageSidesPerDie = 5,
+        DamageNumberOfDice1 = 2,
+        DamageSidesPerDie1 = 5,
         HitPoints = 885,
         AbilitiesNormal = new Ability[] { slow },
         Flavour = "Versatile spellcaster.",
