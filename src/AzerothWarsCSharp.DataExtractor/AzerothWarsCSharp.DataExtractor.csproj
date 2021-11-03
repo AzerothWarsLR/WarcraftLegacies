@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\War3Api\src\War3Api.Object\War3Api.Object.csproj" />
+    <ProjectReference Include="..\..\War3Api.Object\War3Api.Object.csproj" />
   </ItemGroup>
 
 </Project>

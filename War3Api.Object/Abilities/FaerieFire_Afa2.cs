@@ -1,0 +1,98 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using War3Api.Object.Abilities;
+using War3Net.Build.Object;
+using War3Net.Common.Extensions;
+
+namespace War3Api.Object.Abilities
+{
+    public sealed class FaerieFire_Afa2 : Ability
+    {
+        private readonly Lazy<ObjectProperty<int>> _dataDefenseReduction;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDefenseReductionModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataAlwaysAutocast;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAlwaysAutocastModified;
+        public FaerieFire_Afa2(): base(845243969)
+        {
+            _dataDefenseReduction = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDefenseReduction, SetDataDefenseReduction));
+            _isDataDefenseReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDefenseReductionModified));
+            _dataAlwaysAutocast = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAlwaysAutocast, SetDataAlwaysAutocast));
+            _isDataAlwaysAutocastModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAlwaysAutocastModified));
+        }
+
+        public FaerieFire_Afa2(int newId): base(845243969, newId)
+        {
+            _dataDefenseReduction = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDefenseReduction, SetDataDefenseReduction));
+            _isDataDefenseReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDefenseReductionModified));
+            _dataAlwaysAutocast = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAlwaysAutocast, SetDataAlwaysAutocast));
+            _isDataAlwaysAutocastModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAlwaysAutocastModified));
+        }
+
+        public FaerieFire_Afa2(string newRawcode): base(845243969, newRawcode)
+        {
+            _dataDefenseReduction = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDefenseReduction, SetDataDefenseReduction));
+            _isDataDefenseReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDefenseReductionModified));
+            _dataAlwaysAutocast = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAlwaysAutocast, SetDataAlwaysAutocast));
+            _isDataAlwaysAutocastModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAlwaysAutocastModified));
+        }
+
+        public FaerieFire_Afa2(ObjectDatabase db): base(845243969, db)
+        {
+            _dataDefenseReduction = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDefenseReduction, SetDataDefenseReduction));
+            _isDataDefenseReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDefenseReductionModified));
+            _dataAlwaysAutocast = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAlwaysAutocast, SetDataAlwaysAutocast));
+            _isDataAlwaysAutocastModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAlwaysAutocastModified));
+        }
+
+        public FaerieFire_Afa2(int newId, ObjectDatabase db): base(845243969, newId, db)
+        {
+            _dataDefenseReduction = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDefenseReduction, SetDataDefenseReduction));
+            _isDataDefenseReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDefenseReductionModified));
+            _dataAlwaysAutocast = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAlwaysAutocast, SetDataAlwaysAutocast));
+            _isDataAlwaysAutocastModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAlwaysAutocastModified));
+        }
+
+        public FaerieFire_Afa2(string newRawcode, ObjectDatabase db): base(845243969, newRawcode, db)
+        {
+            _dataDefenseReduction = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDefenseReduction, SetDataDefenseReduction));
+            _isDataDefenseReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDefenseReductionModified));
+            _dataAlwaysAutocast = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAlwaysAutocast, SetDataAlwaysAutocast));
+            _isDataAlwaysAutocastModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAlwaysAutocastModified));
+        }
+
+        public ObjectProperty<int> DataDefenseReduction => _dataDefenseReduction.Value;
+        public ReadOnlyObjectProperty<bool> IsDataDefenseReductionModified => _isDataDefenseReductionModified.Value;
+        public ObjectProperty<bool> DataAlwaysAutocast => _dataAlwaysAutocast.Value;
+        public ReadOnlyObjectProperty<bool> IsDataAlwaysAutocastModified => _isDataAlwaysAutocastModified.Value;
+        private int GetDataDefenseReduction(int level)
+        {
+            return _modifications[828727622, level].ValueAsInt;
+        }
+
+        private void SetDataDefenseReduction(int level, int value)
+        {
+            _modifications[828727622, level] = new LevelObjectDataModification{Id = 828727622, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 1};
+        }
+
+        private bool GetIsDataDefenseReductionModified(int level)
+        {
+            return _modifications.ContainsKey(828727622, level);
+        }
+
+        private bool GetDataAlwaysAutocast(int level)
+        {
+            return _modifications[845504838, level].ValueAsBool;
+        }
+
+        private void SetDataAlwaysAutocast(int level, bool value)
+        {
+            _modifications[845504838, level] = new LevelObjectDataModification{Id = 845504838, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 2};
+        }
+
+        private bool GetIsDataAlwaysAutocastModified(int level)
+        {
+            return _modifications.ContainsKey(845504838, level);
+        }
+    }
+}
