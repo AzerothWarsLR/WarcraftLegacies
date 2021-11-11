@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -13,16 +14,18 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMovementSpeedFactorModified;
         private readonly Lazy<ObjectProperty<float>> _dataAttackSpeedFactor;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAttackSpeedFactorModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataAlwaysAutocast;
+        private readonly Lazy<ObjectProperty<int>> _dataAlwaysAutocastRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAlwaysAutocastModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataAlwaysAutocast;
         public SlowCreep(): base(2004042561)
         {
             _dataMovementSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedFactor, SetDataMovementSpeedFactor));
             _isDataMovementSpeedFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedFactorModified));
             _dataAttackSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedFactor, SetDataAttackSpeedFactor));
             _isDataAttackSpeedFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedFactorModified));
-            _dataAlwaysAutocast = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAlwaysAutocast, SetDataAlwaysAutocast));
+            _dataAlwaysAutocastRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAlwaysAutocastRaw, SetDataAlwaysAutocastRaw));
             _isDataAlwaysAutocastModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAlwaysAutocastModified));
+            _dataAlwaysAutocast = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAlwaysAutocast, SetDataAlwaysAutocast));
         }
 
         public SlowCreep(int newId): base(2004042561, newId)
@@ -31,8 +34,9 @@ namespace War3Api.Object.Abilities
             _isDataMovementSpeedFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedFactorModified));
             _dataAttackSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedFactor, SetDataAttackSpeedFactor));
             _isDataAttackSpeedFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedFactorModified));
-            _dataAlwaysAutocast = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAlwaysAutocast, SetDataAlwaysAutocast));
+            _dataAlwaysAutocastRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAlwaysAutocastRaw, SetDataAlwaysAutocastRaw));
             _isDataAlwaysAutocastModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAlwaysAutocastModified));
+            _dataAlwaysAutocast = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAlwaysAutocast, SetDataAlwaysAutocast));
         }
 
         public SlowCreep(string newRawcode): base(2004042561, newRawcode)
@@ -41,8 +45,9 @@ namespace War3Api.Object.Abilities
             _isDataMovementSpeedFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedFactorModified));
             _dataAttackSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedFactor, SetDataAttackSpeedFactor));
             _isDataAttackSpeedFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedFactorModified));
-            _dataAlwaysAutocast = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAlwaysAutocast, SetDataAlwaysAutocast));
+            _dataAlwaysAutocastRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAlwaysAutocastRaw, SetDataAlwaysAutocastRaw));
             _isDataAlwaysAutocastModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAlwaysAutocastModified));
+            _dataAlwaysAutocast = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAlwaysAutocast, SetDataAlwaysAutocast));
         }
 
         public SlowCreep(ObjectDatabase db): base(2004042561, db)
@@ -51,8 +56,9 @@ namespace War3Api.Object.Abilities
             _isDataMovementSpeedFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedFactorModified));
             _dataAttackSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedFactor, SetDataAttackSpeedFactor));
             _isDataAttackSpeedFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedFactorModified));
-            _dataAlwaysAutocast = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAlwaysAutocast, SetDataAlwaysAutocast));
+            _dataAlwaysAutocastRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAlwaysAutocastRaw, SetDataAlwaysAutocastRaw));
             _isDataAlwaysAutocastModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAlwaysAutocastModified));
+            _dataAlwaysAutocast = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAlwaysAutocast, SetDataAlwaysAutocast));
         }
 
         public SlowCreep(int newId, ObjectDatabase db): base(2004042561, newId, db)
@@ -61,8 +67,9 @@ namespace War3Api.Object.Abilities
             _isDataMovementSpeedFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedFactorModified));
             _dataAttackSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedFactor, SetDataAttackSpeedFactor));
             _isDataAttackSpeedFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedFactorModified));
-            _dataAlwaysAutocast = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAlwaysAutocast, SetDataAlwaysAutocast));
+            _dataAlwaysAutocastRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAlwaysAutocastRaw, SetDataAlwaysAutocastRaw));
             _isDataAlwaysAutocastModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAlwaysAutocastModified));
+            _dataAlwaysAutocast = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAlwaysAutocast, SetDataAlwaysAutocast));
         }
 
         public SlowCreep(string newRawcode, ObjectDatabase db): base(2004042561, newRawcode, db)
@@ -71,16 +78,18 @@ namespace War3Api.Object.Abilities
             _isDataMovementSpeedFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedFactorModified));
             _dataAttackSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedFactor, SetDataAttackSpeedFactor));
             _isDataAttackSpeedFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedFactorModified));
-            _dataAlwaysAutocast = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAlwaysAutocast, SetDataAlwaysAutocast));
+            _dataAlwaysAutocastRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAlwaysAutocastRaw, SetDataAlwaysAutocastRaw));
             _isDataAlwaysAutocastModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAlwaysAutocastModified));
+            _dataAlwaysAutocast = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAlwaysAutocast, SetDataAlwaysAutocast));
         }
 
         public ObjectProperty<float> DataMovementSpeedFactor => _dataMovementSpeedFactor.Value;
         public ReadOnlyObjectProperty<bool> IsDataMovementSpeedFactorModified => _isDataMovementSpeedFactorModified.Value;
         public ObjectProperty<float> DataAttackSpeedFactor => _dataAttackSpeedFactor.Value;
         public ReadOnlyObjectProperty<bool> IsDataAttackSpeedFactorModified => _isDataAttackSpeedFactorModified.Value;
-        public ObjectProperty<bool> DataAlwaysAutocast => _dataAlwaysAutocast.Value;
+        public ObjectProperty<int> DataAlwaysAutocastRaw => _dataAlwaysAutocastRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataAlwaysAutocastModified => _isDataAlwaysAutocastModified.Value;
+        public ObjectProperty<bool> DataAlwaysAutocast => _dataAlwaysAutocast.Value;
         private float GetDataMovementSpeedFactor(int level)
         {
             return _modifications[829385811, level].ValueAsFloat;
@@ -111,19 +120,29 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(846163027, level);
         }
 
-        private bool GetDataAlwaysAutocast(int level)
+        private int GetDataAlwaysAutocastRaw(int level)
         {
-            return _modifications[862940243, level].ValueAsBool;
+            return _modifications[862940243, level].ValueAsInt;
         }
 
-        private void SetDataAlwaysAutocast(int level, bool value)
+        private void SetDataAlwaysAutocastRaw(int level, int value)
         {
-            _modifications[862940243, level] = new LevelObjectDataModification{Id = 862940243, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 3};
+            _modifications[862940243, level] = new LevelObjectDataModification{Id = 862940243, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 3};
         }
 
         private bool GetIsDataAlwaysAutocastModified(int level)
         {
             return _modifications.ContainsKey(862940243, level);
+        }
+
+        private bool GetDataAlwaysAutocast(int level)
+        {
+            return GetDataAlwaysAutocastRaw(level).ToBool(this);
+        }
+
+        private void SetDataAlwaysAutocast(int level, bool value)
+        {
+            SetDataAlwaysAutocastRaw(level, value.ToRaw(0, 1));
         }
     }
 }

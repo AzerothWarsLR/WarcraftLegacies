@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -13,24 +14,28 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataTransitionTimeModified;
         private readonly Lazy<ObjectProperty<float>> _dataMovementSpeedIncrease;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMovementSpeedIncreaseModified;
-        private readonly Lazy<ObjectProperty<float>> _databackstabdamageOwk3;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isdatabackstabdamageOwk3modified;
-        private readonly Lazy<ObjectProperty<bool>> _databackstabdamageOwk4;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isdatabackstabdamageOwk4modified;
-        private readonly Lazy<ObjectProperty<bool>> _dataStartCooldownWhenDecloak;
+        private readonly Lazy<ObjectProperty<float>> _dataBackstabDamage_Owk3;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataBackstabDamage_Owk3Modified;
+        private readonly Lazy<ObjectProperty<int>> _dataBackstabDamage_Owk4Raw;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataBackstabDamage_Owk4Modified;
+        private readonly Lazy<ObjectProperty<bool>> _dataBackstabDamage_Owk4;
+        private readonly Lazy<ObjectProperty<int>> _dataStartCooldownWhenDecloakRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataStartCooldownWhenDecloakModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataStartCooldownWhenDecloak;
         public BladeMasterWindWalk(): base(1802981185)
         {
             _dataTransitionTime = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataTransitionTime, SetDataTransitionTime));
             _isDataTransitionTimeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTransitionTimeModified));
             _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
             _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
-            _databackstabdamageOwk3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBackstabDamage_Owk3, SetDataBackstabDamage_Owk3));
-            _isdatabackstabdamageOwk3modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk3Modified));
-            _databackstabdamageOwk4 = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataBackstabDamage_Owk4, SetDataBackstabDamage_Owk4));
-            _isdatabackstabdamageOwk4modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk4Modified));
-            _dataStartCooldownWhenDecloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataStartCooldownWhenDecloak, SetDataStartCooldownWhenDecloak));
+            _dataBackstabDamage_Owk3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBackstabDamage_Owk3, SetDataBackstabDamage_Owk3));
+            _isDataBackstabDamage_Owk3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk3Modified));
+            _dataBackstabDamage_Owk4Raw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataBackstabDamage_Owk4Raw, SetDataBackstabDamage_Owk4Raw));
+            _isDataBackstabDamage_Owk4Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk4Modified));
+            _dataBackstabDamage_Owk4 = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataBackstabDamage_Owk4, SetDataBackstabDamage_Owk4));
+            _dataStartCooldownWhenDecloakRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataStartCooldownWhenDecloakRaw, SetDataStartCooldownWhenDecloakRaw));
             _isDataStartCooldownWhenDecloakModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataStartCooldownWhenDecloakModified));
+            _dataStartCooldownWhenDecloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataStartCooldownWhenDecloak, SetDataStartCooldownWhenDecloak));
         }
 
         public BladeMasterWindWalk(int newId): base(1802981185, newId)
@@ -39,12 +44,14 @@ namespace War3Api.Object.Abilities
             _isDataTransitionTimeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTransitionTimeModified));
             _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
             _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
-            _databackstabdamageOwk3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBackstabDamage_Owk3, SetDataBackstabDamage_Owk3));
-            _isdatabackstabdamageOwk3modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk3Modified));
-            _databackstabdamageOwk4 = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataBackstabDamage_Owk4, SetDataBackstabDamage_Owk4));
-            _isdatabackstabdamageOwk4modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk4Modified));
-            _dataStartCooldownWhenDecloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataStartCooldownWhenDecloak, SetDataStartCooldownWhenDecloak));
+            _dataBackstabDamage_Owk3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBackstabDamage_Owk3, SetDataBackstabDamage_Owk3));
+            _isDataBackstabDamage_Owk3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk3Modified));
+            _dataBackstabDamage_Owk4Raw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataBackstabDamage_Owk4Raw, SetDataBackstabDamage_Owk4Raw));
+            _isDataBackstabDamage_Owk4Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk4Modified));
+            _dataBackstabDamage_Owk4 = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataBackstabDamage_Owk4, SetDataBackstabDamage_Owk4));
+            _dataStartCooldownWhenDecloakRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataStartCooldownWhenDecloakRaw, SetDataStartCooldownWhenDecloakRaw));
             _isDataStartCooldownWhenDecloakModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataStartCooldownWhenDecloakModified));
+            _dataStartCooldownWhenDecloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataStartCooldownWhenDecloak, SetDataStartCooldownWhenDecloak));
         }
 
         public BladeMasterWindWalk(string newRawcode): base(1802981185, newRawcode)
@@ -53,12 +60,14 @@ namespace War3Api.Object.Abilities
             _isDataTransitionTimeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTransitionTimeModified));
             _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
             _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
-            _databackstabdamageOwk3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBackstabDamage_Owk3, SetDataBackstabDamage_Owk3));
-            _isdatabackstabdamageOwk3modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk3Modified));
-            _databackstabdamageOwk4 = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataBackstabDamage_Owk4, SetDataBackstabDamage_Owk4));
-            _isdatabackstabdamageOwk4modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk4Modified));
-            _dataStartCooldownWhenDecloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataStartCooldownWhenDecloak, SetDataStartCooldownWhenDecloak));
+            _dataBackstabDamage_Owk3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBackstabDamage_Owk3, SetDataBackstabDamage_Owk3));
+            _isDataBackstabDamage_Owk3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk3Modified));
+            _dataBackstabDamage_Owk4Raw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataBackstabDamage_Owk4Raw, SetDataBackstabDamage_Owk4Raw));
+            _isDataBackstabDamage_Owk4Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk4Modified));
+            _dataBackstabDamage_Owk4 = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataBackstabDamage_Owk4, SetDataBackstabDamage_Owk4));
+            _dataStartCooldownWhenDecloakRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataStartCooldownWhenDecloakRaw, SetDataStartCooldownWhenDecloakRaw));
             _isDataStartCooldownWhenDecloakModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataStartCooldownWhenDecloakModified));
+            _dataStartCooldownWhenDecloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataStartCooldownWhenDecloak, SetDataStartCooldownWhenDecloak));
         }
 
         public BladeMasterWindWalk(ObjectDatabase db): base(1802981185, db)
@@ -67,12 +76,14 @@ namespace War3Api.Object.Abilities
             _isDataTransitionTimeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTransitionTimeModified));
             _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
             _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
-            _databackstabdamageOwk3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBackstabDamage_Owk3, SetDataBackstabDamage_Owk3));
-            _isdatabackstabdamageOwk3modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk3Modified));
-            _databackstabdamageOwk4 = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataBackstabDamage_Owk4, SetDataBackstabDamage_Owk4));
-            _isdatabackstabdamageOwk4modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk4Modified));
-            _dataStartCooldownWhenDecloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataStartCooldownWhenDecloak, SetDataStartCooldownWhenDecloak));
+            _dataBackstabDamage_Owk3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBackstabDamage_Owk3, SetDataBackstabDamage_Owk3));
+            _isDataBackstabDamage_Owk3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk3Modified));
+            _dataBackstabDamage_Owk4Raw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataBackstabDamage_Owk4Raw, SetDataBackstabDamage_Owk4Raw));
+            _isDataBackstabDamage_Owk4Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk4Modified));
+            _dataBackstabDamage_Owk4 = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataBackstabDamage_Owk4, SetDataBackstabDamage_Owk4));
+            _dataStartCooldownWhenDecloakRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataStartCooldownWhenDecloakRaw, SetDataStartCooldownWhenDecloakRaw));
             _isDataStartCooldownWhenDecloakModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataStartCooldownWhenDecloakModified));
+            _dataStartCooldownWhenDecloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataStartCooldownWhenDecloak, SetDataStartCooldownWhenDecloak));
         }
 
         public BladeMasterWindWalk(int newId, ObjectDatabase db): base(1802981185, newId, db)
@@ -81,12 +92,14 @@ namespace War3Api.Object.Abilities
             _isDataTransitionTimeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTransitionTimeModified));
             _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
             _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
-            _databackstabdamageOwk3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBackstabDamage_Owk3, SetDataBackstabDamage_Owk3));
-            _isdatabackstabdamageOwk3modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk3Modified));
-            _databackstabdamageOwk4 = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataBackstabDamage_Owk4, SetDataBackstabDamage_Owk4));
-            _isdatabackstabdamageOwk4modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk4Modified));
-            _dataStartCooldownWhenDecloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataStartCooldownWhenDecloak, SetDataStartCooldownWhenDecloak));
+            _dataBackstabDamage_Owk3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBackstabDamage_Owk3, SetDataBackstabDamage_Owk3));
+            _isDataBackstabDamage_Owk3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk3Modified));
+            _dataBackstabDamage_Owk4Raw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataBackstabDamage_Owk4Raw, SetDataBackstabDamage_Owk4Raw));
+            _isDataBackstabDamage_Owk4Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk4Modified));
+            _dataBackstabDamage_Owk4 = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataBackstabDamage_Owk4, SetDataBackstabDamage_Owk4));
+            _dataStartCooldownWhenDecloakRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataStartCooldownWhenDecloakRaw, SetDataStartCooldownWhenDecloakRaw));
             _isDataStartCooldownWhenDecloakModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataStartCooldownWhenDecloakModified));
+            _dataStartCooldownWhenDecloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataStartCooldownWhenDecloak, SetDataStartCooldownWhenDecloak));
         }
 
         public BladeMasterWindWalk(string newRawcode, ObjectDatabase db): base(1802981185, newRawcode, db)
@@ -95,24 +108,28 @@ namespace War3Api.Object.Abilities
             _isDataTransitionTimeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTransitionTimeModified));
             _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
             _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
-            _databackstabdamageOwk3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBackstabDamage_Owk3, SetDataBackstabDamage_Owk3));
-            _isdatabackstabdamageOwk3modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk3Modified));
-            _databackstabdamageOwk4 = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataBackstabDamage_Owk4, SetDataBackstabDamage_Owk4));
-            _isdatabackstabdamageOwk4modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk4Modified));
-            _dataStartCooldownWhenDecloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataStartCooldownWhenDecloak, SetDataStartCooldownWhenDecloak));
+            _dataBackstabDamage_Owk3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBackstabDamage_Owk3, SetDataBackstabDamage_Owk3));
+            _isDataBackstabDamage_Owk3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk3Modified));
+            _dataBackstabDamage_Owk4Raw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataBackstabDamage_Owk4Raw, SetDataBackstabDamage_Owk4Raw));
+            _isDataBackstabDamage_Owk4Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk4Modified));
+            _dataBackstabDamage_Owk4 = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataBackstabDamage_Owk4, SetDataBackstabDamage_Owk4));
+            _dataStartCooldownWhenDecloakRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataStartCooldownWhenDecloakRaw, SetDataStartCooldownWhenDecloakRaw));
             _isDataStartCooldownWhenDecloakModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataStartCooldownWhenDecloakModified));
+            _dataStartCooldownWhenDecloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataStartCooldownWhenDecloak, SetDataStartCooldownWhenDecloak));
         }
 
         public ObjectProperty<float> DataTransitionTime => _dataTransitionTime.Value;
         public ReadOnlyObjectProperty<bool> IsDataTransitionTimeModified => _isDataTransitionTimeModified.Value;
         public ObjectProperty<float> DataMovementSpeedIncrease => _dataMovementSpeedIncrease.Value;
         public ReadOnlyObjectProperty<bool> IsDataMovementSpeedIncreaseModified => _isDataMovementSpeedIncreaseModified.Value;
-        public ObjectProperty<float> DataBackstabDamage_Owk3 => _databackstabdamageOwk3.Value;
-        public ReadOnlyObjectProperty<bool> IsDataBackstabDamage_Owk3Modified => _isdatabackstabdamageOwk3modified.Value;
-        public ObjectProperty<bool> DataBackstabDamage_Owk4 => _databackstabdamageOwk4.Value;
-        public ReadOnlyObjectProperty<bool> IsDataBackstabDamage_Owk4Modified => _isdatabackstabdamageOwk4modified.Value;
-        public ObjectProperty<bool> DataStartCooldownWhenDecloak => _dataStartCooldownWhenDecloak.Value;
+        public ObjectProperty<float> DataBackstabDamage_Owk3 => _dataBackstabDamage_Owk3.Value;
+        public ReadOnlyObjectProperty<bool> IsDataBackstabDamage_Owk3Modified => _isDataBackstabDamage_Owk3Modified.Value;
+        public ObjectProperty<int> DataBackstabDamage_Owk4Raw => _dataBackstabDamage_Owk4Raw.Value;
+        public ReadOnlyObjectProperty<bool> IsDataBackstabDamage_Owk4Modified => _isDataBackstabDamage_Owk4Modified.Value;
+        public ObjectProperty<bool> DataBackstabDamage_Owk4 => _dataBackstabDamage_Owk4.Value;
+        public ObjectProperty<int> DataStartCooldownWhenDecloakRaw => _dataStartCooldownWhenDecloakRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataStartCooldownWhenDecloakModified => _isDataStartCooldownWhenDecloakModified.Value;
+        public ObjectProperty<bool> DataStartCooldownWhenDecloak => _dataStartCooldownWhenDecloak.Value;
         private float GetDataTransitionTime(int level)
         {
             return _modifications[829126479, level].ValueAsFloat;
@@ -158,14 +175,14 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(862680911, level);
         }
 
-        private bool GetDataBackstabDamage_Owk4(int level)
+        private int GetDataBackstabDamage_Owk4Raw(int level)
         {
-            return _modifications[879458127, level].ValueAsBool;
+            return _modifications[879458127, level].ValueAsInt;
         }
 
-        private void SetDataBackstabDamage_Owk4(int level, bool value)
+        private void SetDataBackstabDamage_Owk4Raw(int level, int value)
         {
-            _modifications[879458127, level] = new LevelObjectDataModification{Id = 879458127, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 4};
+            _modifications[879458127, level] = new LevelObjectDataModification{Id = 879458127, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 4};
         }
 
         private bool GetIsDataBackstabDamage_Owk4Modified(int level)
@@ -173,19 +190,39 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(879458127, level);
         }
 
-        private bool GetDataStartCooldownWhenDecloak(int level)
+        private bool GetDataBackstabDamage_Owk4(int level)
         {
-            return _modifications[896235343, level].ValueAsBool;
+            return GetDataBackstabDamage_Owk4Raw(level).ToBool(this);
         }
 
-        private void SetDataStartCooldownWhenDecloak(int level, bool value)
+        private void SetDataBackstabDamage_Owk4(int level, bool value)
         {
-            _modifications[896235343, level] = new LevelObjectDataModification{Id = 896235343, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 5};
+            SetDataBackstabDamage_Owk4Raw(level, value.ToRaw(0, 1));
+        }
+
+        private int GetDataStartCooldownWhenDecloakRaw(int level)
+        {
+            return _modifications[896235343, level].ValueAsInt;
+        }
+
+        private void SetDataStartCooldownWhenDecloakRaw(int level, int value)
+        {
+            _modifications[896235343, level] = new LevelObjectDataModification{Id = 896235343, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 5};
         }
 
         private bool GetIsDataStartCooldownWhenDecloakModified(int level)
         {
             return _modifications.ContainsKey(896235343, level);
+        }
+
+        private bool GetDataStartCooldownWhenDecloak(int level)
+        {
+            return GetDataStartCooldownWhenDecloakRaw(level).ToBool(this);
+        }
+
+        private void SetDataStartCooldownWhenDecloak(int level, bool value)
+        {
+            SetDataStartCooldownWhenDecloakRaw(level, value.ToRaw(0, 1));
         }
     }
 }

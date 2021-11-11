@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -13,16 +14,18 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataNumberOfUnitsTeleportedModified;
         private readonly Lazy<ObjectProperty<float>> _dataCastingDelay;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataCastingDelayModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataUseTeleportClustering;
+        private readonly Lazy<ObjectProperty<int>> _dataUseTeleportClusteringRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataUseTeleportClusteringModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataUseTeleportClustering;
         public ArchMageMassTeleport(): base(1953318977)
         {
             _dataNumberOfUnitsTeleported = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNumberOfUnitsTeleported, SetDataNumberOfUnitsTeleported));
             _isDataNumberOfUnitsTeleportedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfUnitsTeleportedModified));
             _dataCastingDelay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataCastingDelay, SetDataCastingDelay));
             _isDataCastingDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCastingDelayModified));
-            _dataUseTeleportClustering = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseTeleportClustering, SetDataUseTeleportClustering));
+            _dataUseTeleportClusteringRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUseTeleportClusteringRaw, SetDataUseTeleportClusteringRaw));
             _isDataUseTeleportClusteringModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUseTeleportClusteringModified));
+            _dataUseTeleportClustering = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseTeleportClustering, SetDataUseTeleportClustering));
         }
 
         public ArchMageMassTeleport(int newId): base(1953318977, newId)
@@ -31,8 +34,9 @@ namespace War3Api.Object.Abilities
             _isDataNumberOfUnitsTeleportedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfUnitsTeleportedModified));
             _dataCastingDelay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataCastingDelay, SetDataCastingDelay));
             _isDataCastingDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCastingDelayModified));
-            _dataUseTeleportClustering = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseTeleportClustering, SetDataUseTeleportClustering));
+            _dataUseTeleportClusteringRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUseTeleportClusteringRaw, SetDataUseTeleportClusteringRaw));
             _isDataUseTeleportClusteringModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUseTeleportClusteringModified));
+            _dataUseTeleportClustering = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseTeleportClustering, SetDataUseTeleportClustering));
         }
 
         public ArchMageMassTeleport(string newRawcode): base(1953318977, newRawcode)
@@ -41,8 +45,9 @@ namespace War3Api.Object.Abilities
             _isDataNumberOfUnitsTeleportedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfUnitsTeleportedModified));
             _dataCastingDelay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataCastingDelay, SetDataCastingDelay));
             _isDataCastingDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCastingDelayModified));
-            _dataUseTeleportClustering = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseTeleportClustering, SetDataUseTeleportClustering));
+            _dataUseTeleportClusteringRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUseTeleportClusteringRaw, SetDataUseTeleportClusteringRaw));
             _isDataUseTeleportClusteringModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUseTeleportClusteringModified));
+            _dataUseTeleportClustering = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseTeleportClustering, SetDataUseTeleportClustering));
         }
 
         public ArchMageMassTeleport(ObjectDatabase db): base(1953318977, db)
@@ -51,8 +56,9 @@ namespace War3Api.Object.Abilities
             _isDataNumberOfUnitsTeleportedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfUnitsTeleportedModified));
             _dataCastingDelay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataCastingDelay, SetDataCastingDelay));
             _isDataCastingDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCastingDelayModified));
-            _dataUseTeleportClustering = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseTeleportClustering, SetDataUseTeleportClustering));
+            _dataUseTeleportClusteringRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUseTeleportClusteringRaw, SetDataUseTeleportClusteringRaw));
             _isDataUseTeleportClusteringModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUseTeleportClusteringModified));
+            _dataUseTeleportClustering = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseTeleportClustering, SetDataUseTeleportClustering));
         }
 
         public ArchMageMassTeleport(int newId, ObjectDatabase db): base(1953318977, newId, db)
@@ -61,8 +67,9 @@ namespace War3Api.Object.Abilities
             _isDataNumberOfUnitsTeleportedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfUnitsTeleportedModified));
             _dataCastingDelay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataCastingDelay, SetDataCastingDelay));
             _isDataCastingDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCastingDelayModified));
-            _dataUseTeleportClustering = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseTeleportClustering, SetDataUseTeleportClustering));
+            _dataUseTeleportClusteringRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUseTeleportClusteringRaw, SetDataUseTeleportClusteringRaw));
             _isDataUseTeleportClusteringModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUseTeleportClusteringModified));
+            _dataUseTeleportClustering = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseTeleportClustering, SetDataUseTeleportClustering));
         }
 
         public ArchMageMassTeleport(string newRawcode, ObjectDatabase db): base(1953318977, newRawcode, db)
@@ -71,16 +78,18 @@ namespace War3Api.Object.Abilities
             _isDataNumberOfUnitsTeleportedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfUnitsTeleportedModified));
             _dataCastingDelay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataCastingDelay, SetDataCastingDelay));
             _isDataCastingDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCastingDelayModified));
-            _dataUseTeleportClustering = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseTeleportClustering, SetDataUseTeleportClustering));
+            _dataUseTeleportClusteringRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUseTeleportClusteringRaw, SetDataUseTeleportClusteringRaw));
             _isDataUseTeleportClusteringModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUseTeleportClusteringModified));
+            _dataUseTeleportClustering = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseTeleportClustering, SetDataUseTeleportClustering));
         }
 
         public ObjectProperty<int> DataNumberOfUnitsTeleported => _dataNumberOfUnitsTeleported.Value;
         public ReadOnlyObjectProperty<bool> IsDataNumberOfUnitsTeleportedModified => _isDataNumberOfUnitsTeleportedModified.Value;
         public ObjectProperty<float> DataCastingDelay => _dataCastingDelay.Value;
         public ReadOnlyObjectProperty<bool> IsDataCastingDelayModified => _isDataCastingDelayModified.Value;
-        public ObjectProperty<bool> DataUseTeleportClustering => _dataUseTeleportClustering.Value;
+        public ObjectProperty<int> DataUseTeleportClusteringRaw => _dataUseTeleportClusteringRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataUseTeleportClusteringModified => _isDataUseTeleportClusteringModified.Value;
+        public ObjectProperty<bool> DataUseTeleportClustering => _dataUseTeleportClustering.Value;
         private int GetDataNumberOfUnitsTeleported(int level)
         {
             return _modifications[829713736, level].ValueAsInt;
@@ -111,19 +120,29 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(846490952, level);
         }
 
-        private bool GetDataUseTeleportClustering(int level)
+        private int GetDataUseTeleportClusteringRaw(int level)
         {
-            return _modifications[863268168, level].ValueAsBool;
+            return _modifications[863268168, level].ValueAsInt;
         }
 
-        private void SetDataUseTeleportClustering(int level, bool value)
+        private void SetDataUseTeleportClusteringRaw(int level, int value)
         {
-            _modifications[863268168, level] = new LevelObjectDataModification{Id = 863268168, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 3};
+            _modifications[863268168, level] = new LevelObjectDataModification{Id = 863268168, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 3};
         }
 
         private bool GetIsDataUseTeleportClusteringModified(int level)
         {
             return _modifications.ContainsKey(863268168, level);
+        }
+
+        private bool GetDataUseTeleportClustering(int level)
+        {
+            return GetDataUseTeleportClusteringRaw(level).ToBool(this);
+        }
+
+        private void SetDataUseTeleportClustering(int level, bool value)
+        {
+            SetDataUseTeleportClusteringRaw(level, value.ToRaw(null, null));
         }
     }
 }

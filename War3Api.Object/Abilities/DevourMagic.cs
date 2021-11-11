@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -19,8 +20,9 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataManaPerBuffModified;
         private readonly Lazy<ObjectProperty<float>> _dataSummonedUnitDamage;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataSummonedUnitDamageModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataIgnoreFriendlyBuffs;
+        private readonly Lazy<ObjectProperty<int>> _dataIgnoreFriendlyBuffsRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataIgnoreFriendlyBuffsModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataIgnoreFriendlyBuffs;
         public DevourMagic(): base(1836475457)
         {
             _dataLifePerUnit = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifePerUnit, SetDataLifePerUnit));
@@ -33,8 +35,9 @@ namespace War3Api.Object.Abilities
             _isDataManaPerBuffModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataManaPerBuffModified));
             _dataSummonedUnitDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataSummonedUnitDamage, SetDataSummonedUnitDamage));
             _isDataSummonedUnitDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitDamageModified));
-            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
+            _dataIgnoreFriendlyBuffsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIgnoreFriendlyBuffsRaw, SetDataIgnoreFriendlyBuffsRaw));
             _isDataIgnoreFriendlyBuffsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIgnoreFriendlyBuffsModified));
+            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
         }
 
         public DevourMagic(int newId): base(1836475457, newId)
@@ -49,8 +52,9 @@ namespace War3Api.Object.Abilities
             _isDataManaPerBuffModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataManaPerBuffModified));
             _dataSummonedUnitDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataSummonedUnitDamage, SetDataSummonedUnitDamage));
             _isDataSummonedUnitDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitDamageModified));
-            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
+            _dataIgnoreFriendlyBuffsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIgnoreFriendlyBuffsRaw, SetDataIgnoreFriendlyBuffsRaw));
             _isDataIgnoreFriendlyBuffsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIgnoreFriendlyBuffsModified));
+            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
         }
 
         public DevourMagic(string newRawcode): base(1836475457, newRawcode)
@@ -65,8 +69,9 @@ namespace War3Api.Object.Abilities
             _isDataManaPerBuffModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataManaPerBuffModified));
             _dataSummonedUnitDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataSummonedUnitDamage, SetDataSummonedUnitDamage));
             _isDataSummonedUnitDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitDamageModified));
-            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
+            _dataIgnoreFriendlyBuffsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIgnoreFriendlyBuffsRaw, SetDataIgnoreFriendlyBuffsRaw));
             _isDataIgnoreFriendlyBuffsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIgnoreFriendlyBuffsModified));
+            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
         }
 
         public DevourMagic(ObjectDatabase db): base(1836475457, db)
@@ -81,8 +86,9 @@ namespace War3Api.Object.Abilities
             _isDataManaPerBuffModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataManaPerBuffModified));
             _dataSummonedUnitDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataSummonedUnitDamage, SetDataSummonedUnitDamage));
             _isDataSummonedUnitDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitDamageModified));
-            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
+            _dataIgnoreFriendlyBuffsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIgnoreFriendlyBuffsRaw, SetDataIgnoreFriendlyBuffsRaw));
             _isDataIgnoreFriendlyBuffsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIgnoreFriendlyBuffsModified));
+            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
         }
 
         public DevourMagic(int newId, ObjectDatabase db): base(1836475457, newId, db)
@@ -97,8 +103,9 @@ namespace War3Api.Object.Abilities
             _isDataManaPerBuffModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataManaPerBuffModified));
             _dataSummonedUnitDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataSummonedUnitDamage, SetDataSummonedUnitDamage));
             _isDataSummonedUnitDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitDamageModified));
-            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
+            _dataIgnoreFriendlyBuffsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIgnoreFriendlyBuffsRaw, SetDataIgnoreFriendlyBuffsRaw));
             _isDataIgnoreFriendlyBuffsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIgnoreFriendlyBuffsModified));
+            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
         }
 
         public DevourMagic(string newRawcode, ObjectDatabase db): base(1836475457, newRawcode, db)
@@ -113,8 +120,9 @@ namespace War3Api.Object.Abilities
             _isDataManaPerBuffModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataManaPerBuffModified));
             _dataSummonedUnitDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataSummonedUnitDamage, SetDataSummonedUnitDamage));
             _isDataSummonedUnitDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitDamageModified));
-            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
+            _dataIgnoreFriendlyBuffsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIgnoreFriendlyBuffsRaw, SetDataIgnoreFriendlyBuffsRaw));
             _isDataIgnoreFriendlyBuffsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIgnoreFriendlyBuffsModified));
+            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
         }
 
         public ObjectProperty<float> DataLifePerUnit => _dataLifePerUnit.Value;
@@ -127,8 +135,9 @@ namespace War3Api.Object.Abilities
         public ReadOnlyObjectProperty<bool> IsDataManaPerBuffModified => _isDataManaPerBuffModified.Value;
         public ObjectProperty<float> DataSummonedUnitDamage => _dataSummonedUnitDamage.Value;
         public ReadOnlyObjectProperty<bool> IsDataSummonedUnitDamageModified => _isDataSummonedUnitDamageModified.Value;
-        public ObjectProperty<bool> DataIgnoreFriendlyBuffs => _dataIgnoreFriendlyBuffs.Value;
+        public ObjectProperty<int> DataIgnoreFriendlyBuffsRaw => _dataIgnoreFriendlyBuffsRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataIgnoreFriendlyBuffsModified => _isDataIgnoreFriendlyBuffsModified.Value;
+        public ObjectProperty<bool> DataIgnoreFriendlyBuffs => _dataIgnoreFriendlyBuffs.Value;
         private float GetDataLifePerUnit(int level)
         {
             return _modifications[829257316, level].ValueAsFloat;
@@ -204,19 +213,29 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(896366180, level);
         }
 
-        private bool GetDataIgnoreFriendlyBuffs(int level)
+        private int GetDataIgnoreFriendlyBuffsRaw(int level)
         {
-            return _modifications[913143396, level].ValueAsBool;
+            return _modifications[913143396, level].ValueAsInt;
         }
 
-        private void SetDataIgnoreFriendlyBuffs(int level, bool value)
+        private void SetDataIgnoreFriendlyBuffsRaw(int level, int value)
         {
-            _modifications[913143396, level] = new LevelObjectDataModification{Id = 913143396, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 6};
+            _modifications[913143396, level] = new LevelObjectDataModification{Id = 913143396, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 6};
         }
 
         private bool GetIsDataIgnoreFriendlyBuffsModified(int level)
         {
             return _modifications.ContainsKey(913143396, level);
+        }
+
+        private bool GetDataIgnoreFriendlyBuffs(int level)
+        {
+            return GetDataIgnoreFriendlyBuffsRaw(level).ToBool(this);
+        }
+
+        private void SetDataIgnoreFriendlyBuffs(int level, bool value)
+        {
+            SetDataIgnoreFriendlyBuffsRaw(level, value.ToRaw(0, 99999));
         }
     }
 }

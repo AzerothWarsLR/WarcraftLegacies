@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -27,8 +28,9 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataBonusManaFactorModified;
         private readonly Lazy<ObjectProperty<float>> _dataBonusManaDecay;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataBonusManaDecayModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataUseBlackArrowEffect;
+        private readonly Lazy<ObjectProperty<int>> _dataUseBlackArrowEffectRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataUseBlackArrowEffectModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataUseBlackArrowEffect;
         public DarkRangerDrain(): base(1919176257)
         {
             _dataHitPointsDrained = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataHitPointsDrained, SetDataHitPointsDrained));
@@ -49,8 +51,9 @@ namespace War3Api.Object.Abilities
             _isDataBonusManaFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBonusManaFactorModified));
             _dataBonusManaDecay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBonusManaDecay, SetDataBonusManaDecay));
             _isDataBonusManaDecayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBonusManaDecayModified));
-            _dataUseBlackArrowEffect = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseBlackArrowEffect, SetDataUseBlackArrowEffect));
+            _dataUseBlackArrowEffectRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUseBlackArrowEffectRaw, SetDataUseBlackArrowEffectRaw));
             _isDataUseBlackArrowEffectModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUseBlackArrowEffectModified));
+            _dataUseBlackArrowEffect = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseBlackArrowEffect, SetDataUseBlackArrowEffect));
         }
 
         public DarkRangerDrain(int newId): base(1919176257, newId)
@@ -73,8 +76,9 @@ namespace War3Api.Object.Abilities
             _isDataBonusManaFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBonusManaFactorModified));
             _dataBonusManaDecay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBonusManaDecay, SetDataBonusManaDecay));
             _isDataBonusManaDecayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBonusManaDecayModified));
-            _dataUseBlackArrowEffect = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseBlackArrowEffect, SetDataUseBlackArrowEffect));
+            _dataUseBlackArrowEffectRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUseBlackArrowEffectRaw, SetDataUseBlackArrowEffectRaw));
             _isDataUseBlackArrowEffectModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUseBlackArrowEffectModified));
+            _dataUseBlackArrowEffect = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseBlackArrowEffect, SetDataUseBlackArrowEffect));
         }
 
         public DarkRangerDrain(string newRawcode): base(1919176257, newRawcode)
@@ -97,8 +101,9 @@ namespace War3Api.Object.Abilities
             _isDataBonusManaFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBonusManaFactorModified));
             _dataBonusManaDecay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBonusManaDecay, SetDataBonusManaDecay));
             _isDataBonusManaDecayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBonusManaDecayModified));
-            _dataUseBlackArrowEffect = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseBlackArrowEffect, SetDataUseBlackArrowEffect));
+            _dataUseBlackArrowEffectRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUseBlackArrowEffectRaw, SetDataUseBlackArrowEffectRaw));
             _isDataUseBlackArrowEffectModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUseBlackArrowEffectModified));
+            _dataUseBlackArrowEffect = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseBlackArrowEffect, SetDataUseBlackArrowEffect));
         }
 
         public DarkRangerDrain(ObjectDatabase db): base(1919176257, db)
@@ -121,8 +126,9 @@ namespace War3Api.Object.Abilities
             _isDataBonusManaFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBonusManaFactorModified));
             _dataBonusManaDecay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBonusManaDecay, SetDataBonusManaDecay));
             _isDataBonusManaDecayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBonusManaDecayModified));
-            _dataUseBlackArrowEffect = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseBlackArrowEffect, SetDataUseBlackArrowEffect));
+            _dataUseBlackArrowEffectRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUseBlackArrowEffectRaw, SetDataUseBlackArrowEffectRaw));
             _isDataUseBlackArrowEffectModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUseBlackArrowEffectModified));
+            _dataUseBlackArrowEffect = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseBlackArrowEffect, SetDataUseBlackArrowEffect));
         }
 
         public DarkRangerDrain(int newId, ObjectDatabase db): base(1919176257, newId, db)
@@ -145,8 +151,9 @@ namespace War3Api.Object.Abilities
             _isDataBonusManaFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBonusManaFactorModified));
             _dataBonusManaDecay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBonusManaDecay, SetDataBonusManaDecay));
             _isDataBonusManaDecayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBonusManaDecayModified));
-            _dataUseBlackArrowEffect = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseBlackArrowEffect, SetDataUseBlackArrowEffect));
+            _dataUseBlackArrowEffectRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUseBlackArrowEffectRaw, SetDataUseBlackArrowEffectRaw));
             _isDataUseBlackArrowEffectModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUseBlackArrowEffectModified));
+            _dataUseBlackArrowEffect = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseBlackArrowEffect, SetDataUseBlackArrowEffect));
         }
 
         public DarkRangerDrain(string newRawcode, ObjectDatabase db): base(1919176257, newRawcode, db)
@@ -169,8 +176,9 @@ namespace War3Api.Object.Abilities
             _isDataBonusManaFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBonusManaFactorModified));
             _dataBonusManaDecay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBonusManaDecay, SetDataBonusManaDecay));
             _isDataBonusManaDecayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBonusManaDecayModified));
-            _dataUseBlackArrowEffect = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseBlackArrowEffect, SetDataUseBlackArrowEffect));
+            _dataUseBlackArrowEffectRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUseBlackArrowEffectRaw, SetDataUseBlackArrowEffectRaw));
             _isDataUseBlackArrowEffectModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUseBlackArrowEffectModified));
+            _dataUseBlackArrowEffect = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseBlackArrowEffect, SetDataUseBlackArrowEffect));
         }
 
         public ObjectProperty<float> DataHitPointsDrained => _dataHitPointsDrained.Value;
@@ -191,8 +199,9 @@ namespace War3Api.Object.Abilities
         public ReadOnlyObjectProperty<bool> IsDataBonusManaFactorModified => _isDataBonusManaFactorModified.Value;
         public ObjectProperty<float> DataBonusManaDecay => _dataBonusManaDecay.Value;
         public ReadOnlyObjectProperty<bool> IsDataBonusManaDecayModified => _isDataBonusManaDecayModified.Value;
-        public ObjectProperty<bool> DataUseBlackArrowEffect => _dataUseBlackArrowEffect.Value;
+        public ObjectProperty<int> DataUseBlackArrowEffectRaw => _dataUseBlackArrowEffectRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataUseBlackArrowEffectModified => _isDataUseBlackArrowEffectModified.Value;
+        public ObjectProperty<bool> DataUseBlackArrowEffect => _dataUseBlackArrowEffect.Value;
         private float GetDataHitPointsDrained(int level)
         {
             return _modifications[829580366, level].ValueAsFloat;
@@ -328,19 +337,29 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(963798094, level);
         }
 
-        private bool GetDataUseBlackArrowEffect(int level)
+        private int GetDataUseBlackArrowEffectRaw(int level)
         {
-            return _modifications[1098015822, level].ValueAsBool;
+            return _modifications[1098015822, level].ValueAsInt;
         }
 
-        private void SetDataUseBlackArrowEffect(int level, bool value)
+        private void SetDataUseBlackArrowEffectRaw(int level, int value)
         {
-            _modifications[1098015822, level] = new LevelObjectDataModification{Id = 1098015822, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 10};
+            _modifications[1098015822, level] = new LevelObjectDataModification{Id = 1098015822, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 10};
         }
 
         private bool GetIsDataUseBlackArrowEffectModified(int level)
         {
             return _modifications.ContainsKey(1098015822, level);
+        }
+
+        private bool GetDataUseBlackArrowEffect(int level)
+        {
+            return GetDataUseBlackArrowEffectRaw(level).ToBool(this);
+        }
+
+        private void SetDataUseBlackArrowEffect(int level, bool value)
+        {
+            SetDataUseBlackArrowEffectRaw(level, value.ToRaw(null, null));
         }
     }
 }

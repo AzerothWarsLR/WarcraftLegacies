@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -17,10 +18,12 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamageBonusModified;
         private readonly Lazy<ObjectProperty<float>> _dataChanceToEvade;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataChanceToEvadeModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataNeverMiss;
+        private readonly Lazy<ObjectProperty<int>> _dataNeverMissRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataNeverMissModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataExcludeItemDamage;
+        private readonly Lazy<ObjectProperty<bool>> _dataNeverMiss;
+        private readonly Lazy<ObjectProperty<int>> _dataExcludeItemDamageRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataExcludeItemDamageModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataExcludeItemDamage;
         public CriticalStrikeCreep(): base(1952662337)
         {
             _dataChanceToCriticalStrike = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToCriticalStrike, SetDataChanceToCriticalStrike));
@@ -31,10 +34,12 @@ namespace War3Api.Object.Abilities
             _isDataDamageBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageBonusModified));
             _dataChanceToEvade = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToEvade, SetDataChanceToEvade));
             _isDataChanceToEvadeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToEvadeModified));
-            _dataNeverMiss = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNeverMiss, SetDataNeverMiss));
+            _dataNeverMissRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNeverMissRaw, SetDataNeverMissRaw));
             _isDataNeverMissModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNeverMissModified));
-            _dataExcludeItemDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExcludeItemDamage, SetDataExcludeItemDamage));
+            _dataNeverMiss = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNeverMiss, SetDataNeverMiss));
+            _dataExcludeItemDamageRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataExcludeItemDamageRaw, SetDataExcludeItemDamageRaw));
             _isDataExcludeItemDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataExcludeItemDamageModified));
+            _dataExcludeItemDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExcludeItemDamage, SetDataExcludeItemDamage));
         }
 
         public CriticalStrikeCreep(int newId): base(1952662337, newId)
@@ -47,10 +52,12 @@ namespace War3Api.Object.Abilities
             _isDataDamageBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageBonusModified));
             _dataChanceToEvade = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToEvade, SetDataChanceToEvade));
             _isDataChanceToEvadeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToEvadeModified));
-            _dataNeverMiss = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNeverMiss, SetDataNeverMiss));
+            _dataNeverMissRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNeverMissRaw, SetDataNeverMissRaw));
             _isDataNeverMissModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNeverMissModified));
-            _dataExcludeItemDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExcludeItemDamage, SetDataExcludeItemDamage));
+            _dataNeverMiss = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNeverMiss, SetDataNeverMiss));
+            _dataExcludeItemDamageRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataExcludeItemDamageRaw, SetDataExcludeItemDamageRaw));
             _isDataExcludeItemDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataExcludeItemDamageModified));
+            _dataExcludeItemDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExcludeItemDamage, SetDataExcludeItemDamage));
         }
 
         public CriticalStrikeCreep(string newRawcode): base(1952662337, newRawcode)
@@ -63,10 +70,12 @@ namespace War3Api.Object.Abilities
             _isDataDamageBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageBonusModified));
             _dataChanceToEvade = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToEvade, SetDataChanceToEvade));
             _isDataChanceToEvadeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToEvadeModified));
-            _dataNeverMiss = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNeverMiss, SetDataNeverMiss));
+            _dataNeverMissRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNeverMissRaw, SetDataNeverMissRaw));
             _isDataNeverMissModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNeverMissModified));
-            _dataExcludeItemDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExcludeItemDamage, SetDataExcludeItemDamage));
+            _dataNeverMiss = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNeverMiss, SetDataNeverMiss));
+            _dataExcludeItemDamageRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataExcludeItemDamageRaw, SetDataExcludeItemDamageRaw));
             _isDataExcludeItemDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataExcludeItemDamageModified));
+            _dataExcludeItemDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExcludeItemDamage, SetDataExcludeItemDamage));
         }
 
         public CriticalStrikeCreep(ObjectDatabase db): base(1952662337, db)
@@ -79,10 +88,12 @@ namespace War3Api.Object.Abilities
             _isDataDamageBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageBonusModified));
             _dataChanceToEvade = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToEvade, SetDataChanceToEvade));
             _isDataChanceToEvadeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToEvadeModified));
-            _dataNeverMiss = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNeverMiss, SetDataNeverMiss));
+            _dataNeverMissRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNeverMissRaw, SetDataNeverMissRaw));
             _isDataNeverMissModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNeverMissModified));
-            _dataExcludeItemDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExcludeItemDamage, SetDataExcludeItemDamage));
+            _dataNeverMiss = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNeverMiss, SetDataNeverMiss));
+            _dataExcludeItemDamageRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataExcludeItemDamageRaw, SetDataExcludeItemDamageRaw));
             _isDataExcludeItemDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataExcludeItemDamageModified));
+            _dataExcludeItemDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExcludeItemDamage, SetDataExcludeItemDamage));
         }
 
         public CriticalStrikeCreep(int newId, ObjectDatabase db): base(1952662337, newId, db)
@@ -95,10 +106,12 @@ namespace War3Api.Object.Abilities
             _isDataDamageBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageBonusModified));
             _dataChanceToEvade = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToEvade, SetDataChanceToEvade));
             _isDataChanceToEvadeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToEvadeModified));
-            _dataNeverMiss = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNeverMiss, SetDataNeverMiss));
+            _dataNeverMissRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNeverMissRaw, SetDataNeverMissRaw));
             _isDataNeverMissModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNeverMissModified));
-            _dataExcludeItemDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExcludeItemDamage, SetDataExcludeItemDamage));
+            _dataNeverMiss = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNeverMiss, SetDataNeverMiss));
+            _dataExcludeItemDamageRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataExcludeItemDamageRaw, SetDataExcludeItemDamageRaw));
             _isDataExcludeItemDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataExcludeItemDamageModified));
+            _dataExcludeItemDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExcludeItemDamage, SetDataExcludeItemDamage));
         }
 
         public CriticalStrikeCreep(string newRawcode, ObjectDatabase db): base(1952662337, newRawcode, db)
@@ -111,10 +124,12 @@ namespace War3Api.Object.Abilities
             _isDataDamageBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageBonusModified));
             _dataChanceToEvade = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToEvade, SetDataChanceToEvade));
             _isDataChanceToEvadeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToEvadeModified));
-            _dataNeverMiss = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNeverMiss, SetDataNeverMiss));
+            _dataNeverMissRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNeverMissRaw, SetDataNeverMissRaw));
             _isDataNeverMissModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNeverMissModified));
-            _dataExcludeItemDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExcludeItemDamage, SetDataExcludeItemDamage));
+            _dataNeverMiss = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNeverMiss, SetDataNeverMiss));
+            _dataExcludeItemDamageRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataExcludeItemDamageRaw, SetDataExcludeItemDamageRaw));
             _isDataExcludeItemDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataExcludeItemDamageModified));
+            _dataExcludeItemDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExcludeItemDamage, SetDataExcludeItemDamage));
         }
 
         public ObjectProperty<float> DataChanceToCriticalStrike => _dataChanceToCriticalStrike.Value;
@@ -125,10 +140,12 @@ namespace War3Api.Object.Abilities
         public ReadOnlyObjectProperty<bool> IsDataDamageBonusModified => _isDataDamageBonusModified.Value;
         public ObjectProperty<float> DataChanceToEvade => _dataChanceToEvade.Value;
         public ReadOnlyObjectProperty<bool> IsDataChanceToEvadeModified => _isDataChanceToEvadeModified.Value;
-        public ObjectProperty<bool> DataNeverMiss => _dataNeverMiss.Value;
+        public ObjectProperty<int> DataNeverMissRaw => _dataNeverMissRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataNeverMissModified => _isDataNeverMissModified.Value;
-        public ObjectProperty<bool> DataExcludeItemDamage => _dataExcludeItemDamage.Value;
+        public ObjectProperty<bool> DataNeverMiss => _dataNeverMiss.Value;
+        public ObjectProperty<int> DataExcludeItemDamageRaw => _dataExcludeItemDamageRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataExcludeItemDamageModified => _isDataExcludeItemDamageModified.Value;
+        public ObjectProperty<bool> DataExcludeItemDamage => _dataExcludeItemDamage.Value;
         private float GetDataChanceToCriticalStrike(int level)
         {
             return _modifications[829580111, level].ValueAsFloat;
@@ -189,14 +206,14 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(879911759, level);
         }
 
-        private bool GetDataNeverMiss(int level)
+        private int GetDataNeverMissRaw(int level)
         {
-            return _modifications[896688975, level].ValueAsBool;
+            return _modifications[896688975, level].ValueAsInt;
         }
 
-        private void SetDataNeverMiss(int level, bool value)
+        private void SetDataNeverMissRaw(int level, int value)
         {
-            _modifications[896688975, level] = new LevelObjectDataModification{Id = 896688975, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 5};
+            _modifications[896688975, level] = new LevelObjectDataModification{Id = 896688975, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 5};
         }
 
         private bool GetIsDataNeverMissModified(int level)
@@ -204,19 +221,39 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(896688975, level);
         }
 
-        private bool GetDataExcludeItemDamage(int level)
+        private bool GetDataNeverMiss(int level)
         {
-            return _modifications[913466191, level].ValueAsBool;
+            return GetDataNeverMissRaw(level).ToBool(this);
         }
 
-        private void SetDataExcludeItemDamage(int level, bool value)
+        private void SetDataNeverMiss(int level, bool value)
         {
-            _modifications[913466191, level] = new LevelObjectDataModification{Id = 913466191, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 6};
+            SetDataNeverMissRaw(level, value.ToRaw(0, 1));
+        }
+
+        private int GetDataExcludeItemDamageRaw(int level)
+        {
+            return _modifications[913466191, level].ValueAsInt;
+        }
+
+        private void SetDataExcludeItemDamageRaw(int level, int value)
+        {
+            _modifications[913466191, level] = new LevelObjectDataModification{Id = 913466191, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 6};
         }
 
         private bool GetIsDataExcludeItemDamageModified(int level)
         {
             return _modifications.ContainsKey(913466191, level);
+        }
+
+        private bool GetDataExcludeItemDamage(int level)
+        {
+            return GetDataExcludeItemDamageRaw(level).ToBool(this);
+        }
+
+        private void SetDataExcludeItemDamage(int level, bool value)
+        {
+            SetDataExcludeItemDamageRaw(level, value.ToRaw(0, 1));
         }
     }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -237,13 +238,19 @@ namespace War3Api.Object
         }
 
         public bool IsTextNameEditorSuffixModified => _modifications.ContainsKey(1718840949);
-        public char TextHotkey
+        public string TextHotkeyRaw
         {
-            get => _modifications[1953458293].ValueAsChar;
-            set => _modifications[1953458293] = new SimpleObjectDataModification{Id = 1953458293, Type = ObjectDataType.Char, Value = value};
+            get => _modifications[1953458293].ValueAsString;
+            set => _modifications[1953458293] = new SimpleObjectDataModification{Id = 1953458293, Type = ObjectDataType.String, Value = value};
         }
 
         public bool IsTextHotkeyModified => _modifications.ContainsKey(1953458293);
+        public char TextHotkey
+        {
+            get => TextHotkeyRaw.ToChar(this);
+            set => TextHotkeyRaw = value.ToRaw(null, null);
+        }
+
         public int SoundLoopingFadeInRate
         {
             get => _modifications[1768320117].ValueAsInt;
@@ -311,20 +318,32 @@ namespace War3Api.Object
             set => CombatAttack2ProjectileArtRaw = value.ToRaw(null, null);
         }
 
-        public bool CombatAttack1ProjectileHomingEnabled
+        public int CombatAttack1ProjectileHomingEnabledRaw
         {
-            get => _modifications[828927349].ValueAsBool;
-            set => _modifications[828927349] = new SimpleObjectDataModification{Id = 828927349, Type = ObjectDataType.Bool, Value = value};
+            get => _modifications[828927349].ValueAsInt;
+            set => _modifications[828927349] = new SimpleObjectDataModification{Id = 828927349, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsCombatAttack1ProjectileHomingEnabledModified => _modifications.ContainsKey(828927349);
-        public bool CombatAttack2ProjectileHomingEnabled
+        public bool CombatAttack1ProjectileHomingEnabled
         {
-            get => _modifications[845704565].ValueAsBool;
-            set => _modifications[845704565] = new SimpleObjectDataModification{Id = 845704565, Type = ObjectDataType.Bool, Value = value};
+            get => CombatAttack1ProjectileHomingEnabledRaw.ToBool(this);
+            set => CombatAttack1ProjectileHomingEnabledRaw = value.ToRaw(null, null);
+        }
+
+        public int CombatAttack2ProjectileHomingEnabledRaw
+        {
+            get => _modifications[845704565].ValueAsInt;
+            set => _modifications[845704565] = new SimpleObjectDataModification{Id = 845704565, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsCombatAttack2ProjectileHomingEnabledModified => _modifications.ContainsKey(845704565);
+        public bool CombatAttack2ProjectileHomingEnabled
+        {
+            get => CombatAttack2ProjectileHomingEnabledRaw.ToBool(this);
+            set => CombatAttack2ProjectileHomingEnabledRaw = value.ToRaw(null, null);
+        }
+
         public int CombatAttack1ProjectileSpeed
         {
             get => _modifications[2050056565].ValueAsInt;
@@ -535,13 +554,19 @@ namespace War3Api.Object
             set => TechtreeResearchesAvailableRaw = value.ToRaw(null, null);
         }
 
-        public bool TechtreeRevivesDeadHeroes
+        public int TechtreeRevivesDeadHeroesRaw
         {
-            get => _modifications[1986359925].ValueAsBool;
-            set => _modifications[1986359925] = new SimpleObjectDataModification{Id = 1986359925, Type = ObjectDataType.Bool, Value = value};
+            get => _modifications[1986359925].ValueAsInt;
+            set => _modifications[1986359925] = new SimpleObjectDataModification{Id = 1986359925, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsTechtreeRevivesDeadHeroesModified => _modifications.ContainsKey(1986359925);
+        public bool TechtreeRevivesDeadHeroes
+        {
+            get => TechtreeRevivesDeadHeroesRaw.ToBool(this);
+            set => TechtreeRevivesDeadHeroesRaw = value.ToRaw(null, null);
+        }
+
         public string TextTooltipRevive
         {
             get => _modifications[1919972469].ValueAsString;
@@ -852,13 +877,19 @@ namespace War3Api.Object
         }
 
         public bool IsStatsIntelligencePerLevelModified => _modifications.ContainsKey(1886284149);
-        public bool StatsIsABuilding
+        public int StatsIsABuildingRaw
         {
-            get => _modifications[1734632053].ValueAsBool;
-            set => _modifications[1734632053] = new SimpleObjectDataModification{Id = 1734632053, Type = ObjectDataType.Bool, Value = value};
+            get => _modifications[1734632053].ValueAsInt;
+            set => _modifications[1734632053] = new SimpleObjectDataModification{Id = 1734632053, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsStatsIsABuildingModified => _modifications.ContainsKey(1734632053);
+        public bool StatsIsABuilding
+        {
+            get => StatsIsABuildingRaw.ToBool(this);
+            set => StatsIsABuildingRaw = value.ToRaw(null, null);
+        }
+
         public int StatsLevel
         {
             get => _modifications[1986358389].ValueAsInt;
@@ -908,13 +939,19 @@ namespace War3Api.Object
         }
 
         public bool IsMovementSpeedMinimumModified => _modifications.ContainsKey(1936289141);
-        public bool StatsNeutralBuildingValidAsRandomBuilding
+        public int StatsNeutralBuildingValidAsRandomBuildingRaw
         {
-            get => _modifications[1919053429].ValueAsBool;
-            set => _modifications[1919053429] = new SimpleObjectDataModification{Id = 1919053429, Type = ObjectDataType.Bool, Value = value};
+            get => _modifications[1919053429].ValueAsInt;
+            set => _modifications[1919053429] = new SimpleObjectDataModification{Id = 1919053429, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsStatsNeutralBuildingValidAsRandomBuildingModified => _modifications.ContainsKey(1919053429);
+        public bool StatsNeutralBuildingValidAsRandomBuilding
+        {
+            get => StatsNeutralBuildingValidAsRandomBuildingRaw.ToBool(this);
+            set => StatsNeutralBuildingValidAsRandomBuildingRaw = value.ToRaw(null, null);
+        }
+
         public int StatsSightRadiusNight
         {
             get => _modifications[1852404597].ValueAsInt;
@@ -929,9 +966,9 @@ namespace War3Api.Object
         }
 
         public bool IsPathingPlacementRequiresModified => _modifications.ContainsKey(1885433973);
-        public IEnumerable<PathingPrevent> PathingPlacementRequires
+        public IEnumerable<PathingType> PathingPlacementRequires
         {
-            get => PathingPlacementRequiresRaw.ToIEnumerablePathingPrevent(this);
+            get => PathingPlacementRequiresRaw.ToIEnumerablePathingType(this);
             set => PathingPlacementRequiresRaw = value.ToRaw(null, null);
         }
 
@@ -982,13 +1019,19 @@ namespace War3Api.Object
         }
 
         public bool IsStatsRepairTimeModified => _modifications.ContainsKey(1836348021);
-        public bool MovementGroupSeparationEnabled
+        public int MovementGroupSeparationEnabledRaw
         {
-            get => _modifications[1869640309].ValueAsBool;
-            set => _modifications[1869640309] = new SimpleObjectDataModification{Id = 1869640309, Type = ObjectDataType.Bool, Value = value};
+            get => _modifications[1869640309].ValueAsInt;
+            set => _modifications[1869640309] = new SimpleObjectDataModification{Id = 1869640309, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsMovementGroupSeparationEnabledModified => _modifications.ContainsKey(1869640309);
+        public bool MovementGroupSeparationEnabled
+        {
+            get => MovementGroupSeparationEnabledRaw.ToBool(this);
+            set => MovementGroupSeparationEnabledRaw = value.ToRaw(null, null);
+        }
+
         public int MovementGroupSeparationGroupNumber
         {
             get => _modifications[1735422581].ValueAsInt;
@@ -1017,9 +1060,9 @@ namespace War3Api.Object
         }
 
         public bool IsPathingPlacementPreventedByModified => _modifications.ContainsKey(1918988405);
-        public IEnumerable<PathingRequire> PathingPlacementPreventedBy
+        public IEnumerable<PathingType> PathingPlacementPreventedBy
         {
-            get => PathingPlacementPreventedByRaw.ToIEnumerablePathingRequire(this);
+            get => PathingPlacementPreventedByRaw.ToIEnumerablePathingType(this);
             set => PathingPlacementPreventedByRaw = value.ToRaw(null, null);
         }
 
@@ -1138,27 +1181,45 @@ namespace War3Api.Object
             set => PathingAIPlacementTypeRaw = value.ToRaw(null, null);
         }
 
-        public bool StatsCanBuildOn
+        public int StatsCanBuildOnRaw
         {
-            get => _modifications[1868718965].ValueAsBool;
-            set => _modifications[1868718965] = new SimpleObjectDataModification{Id = 1868718965, Type = ObjectDataType.Bool, Value = value};
+            get => _modifications[1868718965].ValueAsInt;
+            set => _modifications[1868718965] = new SimpleObjectDataModification{Id = 1868718965, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsStatsCanBuildOnModified => _modifications.ContainsKey(1868718965);
-        public bool StatsCanFlee
+        public bool StatsCanBuildOn
         {
-            get => _modifications[1701602933].ValueAsBool;
-            set => _modifications[1701602933] = new SimpleObjectDataModification{Id = 1701602933, Type = ObjectDataType.Bool, Value = value};
+            get => StatsCanBuildOnRaw.ToBool(this);
+            set => StatsCanBuildOnRaw = value.ToRaw(null, null);
+        }
+
+        public int StatsCanFleeRaw
+        {
+            get => _modifications[1701602933].ValueAsInt;
+            set => _modifications[1701602933] = new SimpleObjectDataModification{Id = 1701602933, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsStatsCanFleeModified => _modifications.ContainsKey(1701602933);
-        public bool StatsSleeps
+        public bool StatsCanFlee
         {
-            get => _modifications[1701606261].ValueAsBool;
-            set => _modifications[1701606261] = new SimpleObjectDataModification{Id = 1701606261, Type = ObjectDataType.Bool, Value = value};
+            get => StatsCanFleeRaw.ToBool(this);
+            set => StatsCanFleeRaw = value.ToRaw(null, null);
+        }
+
+        public int StatsSleepsRaw
+        {
+            get => _modifications[1701606261].ValueAsInt;
+            set => _modifications[1701606261] = new SimpleObjectDataModification{Id = 1701606261, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsStatsSleepsModified => _modifications.ContainsKey(1701606261);
+        public bool StatsSleeps
+        {
+            get => StatsSleepsRaw.ToBool(this);
+            set => StatsSleepsRaw = value.ToRaw(null, null);
+        }
+
         public int StatsTransportedSize
         {
             get => _modifications[1918985077].ValueAsInt;
@@ -1186,13 +1247,19 @@ namespace War3Api.Object
             set => CombatDeathTypeRaw = value.ToRaw(null, null);
         }
 
-        public bool ArtUseExtendedLineOfSight
+        public int ArtUseExtendedLineOfSightRaw
         {
-            get => _modifications[1936682101].ValueAsBool;
-            set => _modifications[1936682101] = new SimpleObjectDataModification{Id = 1936682101, Type = ObjectDataType.Bool, Value = value};
+            get => _modifications[1936682101].ValueAsInt;
+            set => _modifications[1936682101] = new SimpleObjectDataModification{Id = 1936682101, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsArtUseExtendedLineOfSightModified => _modifications.ContainsKey(1936682101);
+        public bool ArtUseExtendedLineOfSight
+        {
+            get => ArtUseExtendedLineOfSightRaw.ToBool(this);
+            set => ArtUseExtendedLineOfSightRaw = value.ToRaw(null, null);
+        }
+
         public int StatsFormationRank
         {
             get => _modifications[1919903349].ValueAsInt;
@@ -1200,13 +1267,19 @@ namespace War3Api.Object
         }
 
         public bool IsStatsFormationRankModified => _modifications.ContainsKey(1919903349);
-        public bool StatsCanBeBuiltOn
+        public int StatsCanBeBuiltOnRaw
         {
-            get => _modifications[1868720501].ValueAsBool;
-            set => _modifications[1868720501] = new SimpleObjectDataModification{Id = 1868720501, Type = ObjectDataType.Bool, Value = value};
+            get => _modifications[1868720501].ValueAsInt;
+            set => _modifications[1868720501] = new SimpleObjectDataModification{Id = 1868720501, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsStatsCanBeBuiltOnModified => _modifications.ContainsKey(1868720501);
+        public bool StatsCanBeBuiltOn
+        {
+            get => StatsCanBeBuiltOnRaw.ToBool(this);
+            set => StatsCanBeBuiltOnRaw = value.ToRaw(null, null);
+        }
+
         public float MovementHeightMinimum
         {
             get => _modifications[1719037301].ValueAsFloat;
@@ -1362,27 +1435,45 @@ namespace War3Api.Object
             set => ArtShadowTextureBuildingRaw = value.ToRaw(null, null);
         }
 
-        public bool EditorCategorizationCampaign
+        public int EditorCategorizationCampaignRaw
         {
-            get => _modifications[1835098997].ValueAsBool;
-            set => _modifications[1835098997] = new SimpleObjectDataModification{Id = 1835098997, Type = ObjectDataType.Bool, Value = value};
+            get => _modifications[1835098997].ValueAsInt;
+            set => _modifications[1835098997] = new SimpleObjectDataModification{Id = 1835098997, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsEditorCategorizationCampaignModified => _modifications.ContainsKey(1835098997);
-        public bool ArtAllowCustomTeamColor
+        public bool EditorCategorizationCampaign
         {
-            get => _modifications[1667462261].ValueAsBool;
-            set => _modifications[1667462261] = new SimpleObjectDataModification{Id = 1667462261, Type = ObjectDataType.Bool, Value = value};
+            get => EditorCategorizationCampaignRaw.ToBool(this);
+            set => EditorCategorizationCampaignRaw = value.ToRaw(null, null);
+        }
+
+        public int ArtAllowCustomTeamColorRaw
+        {
+            get => _modifications[1667462261].ValueAsInt;
+            set => _modifications[1667462261] = new SimpleObjectDataModification{Id = 1667462261, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsArtAllowCustomTeamColorModified => _modifications.ContainsKey(1667462261);
-        public bool EditorCanDropItemsOnDeath
+        public bool ArtAllowCustomTeamColor
         {
-            get => _modifications[1869767797].ValueAsBool;
-            set => _modifications[1869767797] = new SimpleObjectDataModification{Id = 1869767797, Type = ObjectDataType.Bool, Value = value};
+            get => ArtAllowCustomTeamColorRaw.ToBool(this);
+            set => ArtAllowCustomTeamColorRaw = value.ToRaw(null, null);
+        }
+
+        public int EditorCanDropItemsOnDeathRaw
+        {
+            get => _modifications[1869767797].ValueAsInt;
+            set => _modifications[1869767797] = new SimpleObjectDataModification{Id = 1869767797, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsEditorCanDropItemsOnDeathModified => _modifications.ContainsKey(1869767797);
+        public bool EditorCanDropItemsOnDeath
+        {
+            get => EditorCanDropItemsOnDeathRaw.ToBool(this);
+            set => EditorCanDropItemsOnDeathRaw = value.ToRaw(null, null);
+        }
+
         public int ArtElevationSamplePoints
         {
             get => _modifications[1953523061].ValueAsInt;
@@ -1437,20 +1528,32 @@ namespace War3Api.Object
         }
 
         public bool IsArtTintingColor2GreenModified => _modifications.ContainsKey(1735156597);
-        public bool EditorDisplayAsNeutralHostile
+        public int EditorDisplayAsNeutralHostileRaw
         {
-            get => _modifications[1936681077].ValueAsBool;
-            set => _modifications[1936681077] = new SimpleObjectDataModification{Id = 1936681077, Type = ObjectDataType.Bool, Value = value};
+            get => _modifications[1936681077].ValueAsInt;
+            set => _modifications[1936681077] = new SimpleObjectDataModification{Id = 1936681077, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsEditorDisplayAsNeutralHostileModified => _modifications.ContainsKey(1936681077);
-        public bool EditorPlaceableInEditor
+        public bool EditorDisplayAsNeutralHostile
         {
-            get => _modifications[1701734773].ValueAsBool;
-            set => _modifications[1701734773] = new SimpleObjectDataModification{Id = 1701734773, Type = ObjectDataType.Bool, Value = value};
+            get => EditorDisplayAsNeutralHostileRaw.ToBool(this);
+            set => EditorDisplayAsNeutralHostileRaw = value.ToRaw(null, null);
+        }
+
+        public int EditorPlaceableInEditorRaw
+        {
+            get => _modifications[1701734773].ValueAsInt;
+            set => _modifications[1701734773] = new SimpleObjectDataModification{Id = 1701734773, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsEditorPlaceableInEditorModified => _modifications.ContainsKey(1701734773);
+        public bool EditorPlaceableInEditor
+        {
+            get => EditorPlaceableInEditorRaw.ToBool(this);
+            set => EditorPlaceableInEditorRaw = value.ToRaw(null, null);
+        }
+
         public float ArtMaximumPitchAngleDegrees
         {
             get => _modifications[1886940533].ValueAsFloat;
@@ -1472,41 +1575,71 @@ namespace War3Api.Object
         }
 
         public bool IsArtScalingValueModified => _modifications.ContainsKey(1633907573);
-        public bool StatsNeutralBuildingShowsMinimapIcon
+        public int StatsNeutralBuildingShowsMinimapIconRaw
         {
-            get => _modifications[1835167349].ValueAsBool;
-            set => _modifications[1835167349] = new SimpleObjectDataModification{Id = 1835167349, Type = ObjectDataType.Bool, Value = value};
+            get => _modifications[1835167349].ValueAsInt;
+            set => _modifications[1835167349] = new SimpleObjectDataModification{Id = 1835167349, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsStatsNeutralBuildingShowsMinimapIconModified => _modifications.ContainsKey(1835167349);
-        public bool StatsHeroHideHeroInterfaceIcon
+        public bool StatsNeutralBuildingShowsMinimapIcon
         {
-            get => _modifications[1651009653].ValueAsBool;
-            set => _modifications[1651009653] = new SimpleObjectDataModification{Id = 1651009653, Type = ObjectDataType.Bool, Value = value};
+            get => StatsNeutralBuildingShowsMinimapIconRaw.ToBool(this);
+            set => StatsNeutralBuildingShowsMinimapIconRaw = value.ToRaw(null, null);
+        }
+
+        public int StatsHeroHideHeroInterfaceIconRaw
+        {
+            get => _modifications[1651009653].ValueAsInt;
+            set => _modifications[1651009653] = new SimpleObjectDataModification{Id = 1651009653, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsStatsHeroHideHeroInterfaceIconModified => _modifications.ContainsKey(1651009653);
-        public bool StatsHeroHideHeroMinimapDisplay
+        public bool StatsHeroHideHeroInterfaceIcon
         {
-            get => _modifications[1835559029].ValueAsBool;
-            set => _modifications[1835559029] = new SimpleObjectDataModification{Id = 1835559029, Type = ObjectDataType.Bool, Value = value};
+            get => StatsHeroHideHeroInterfaceIconRaw.ToBool(this);
+            set => StatsHeroHideHeroInterfaceIconRaw = value.ToRaw(null, null);
+        }
+
+        public int StatsHeroHideHeroMinimapDisplayRaw
+        {
+            get => _modifications[1835559029].ValueAsInt;
+            set => _modifications[1835559029] = new SimpleObjectDataModification{Id = 1835559029, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsStatsHeroHideHeroMinimapDisplayModified => _modifications.ContainsKey(1835559029);
-        public bool StatsHeroHideHeroDeathMessage
+        public bool StatsHeroHideHeroMinimapDisplay
         {
-            get => _modifications[1684564085].ValueAsBool;
-            set => _modifications[1684564085] = new SimpleObjectDataModification{Id = 1684564085, Type = ObjectDataType.Bool, Value = value};
+            get => StatsHeroHideHeroMinimapDisplayRaw.ToBool(this);
+            set => StatsHeroHideHeroMinimapDisplayRaw = value.ToRaw(null, null);
+        }
+
+        public int StatsHeroHideHeroDeathMessageRaw
+        {
+            get => _modifications[1684564085].ValueAsInt;
+            set => _modifications[1684564085] = new SimpleObjectDataModification{Id = 1684564085, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsStatsHeroHideHeroDeathMessageModified => _modifications.ContainsKey(1684564085);
-        public bool StatsHideMinimapDisplay
+        public bool StatsHeroHideHeroDeathMessage
         {
-            get => _modifications[1836017781].ValueAsBool;
-            set => _modifications[1836017781] = new SimpleObjectDataModification{Id = 1836017781, Type = ObjectDataType.Bool, Value = value};
+            get => StatsHeroHideHeroDeathMessageRaw.ToBool(this);
+            set => StatsHeroHideHeroDeathMessageRaw = value.ToRaw(null, null);
+        }
+
+        public int StatsHideMinimapDisplayRaw
+        {
+            get => _modifications[1836017781].ValueAsInt;
+            set => _modifications[1836017781] = new SimpleObjectDataModification{Id = 1836017781, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsStatsHideMinimapDisplayModified => _modifications.ContainsKey(1836017781);
+        public bool StatsHideMinimapDisplay
+        {
+            get => StatsHideMinimapDisplayRaw.ToBool(this);
+            set => StatsHideMinimapDisplayRaw = value.ToRaw(null, null);
+        }
+
         public float ArtOccluderHeight
         {
             get => _modifications[1667460981].ValueAsFloat;
@@ -1535,20 +1668,32 @@ namespace War3Api.Object
         }
 
         public bool IsArtSelectionScaleModified => _modifications.ContainsKey(1668510581);
-        public bool ArtScaleProjectiles
+        public int ArtScaleProjectilesRaw
         {
-            get => _modifications[1650684789].ValueAsBool;
-            set => _modifications[1650684789] = new SimpleObjectDataModification{Id = 1650684789, Type = ObjectDataType.Bool, Value = value};
+            get => _modifications[1650684789].ValueAsInt;
+            set => _modifications[1650684789] = new SimpleObjectDataModification{Id = 1650684789, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsArtScaleProjectilesModified => _modifications.ContainsKey(1650684789);
-        public bool ArtSelectionCircleOnWater
+        public bool ArtScaleProjectiles
         {
-            get => _modifications[2003137397].ValueAsBool;
-            set => _modifications[2003137397] = new SimpleObjectDataModification{Id = 2003137397, Type = ObjectDataType.Bool, Value = value};
+            get => ArtScaleProjectilesRaw.ToBool(this);
+            set => ArtScaleProjectilesRaw = value.ToRaw(null, null);
+        }
+
+        public int ArtSelectionCircleOnWaterRaw
+        {
+            get => _modifications[2003137397].ValueAsInt;
+            set => _modifications[2003137397] = new SimpleObjectDataModification{Id = 2003137397, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsArtSelectionCircleOnWaterModified => _modifications.ContainsKey(2003137397);
+        public bool ArtSelectionCircleOnWater
+        {
+            get => ArtSelectionCircleOnWaterRaw.ToBool(this);
+            set => ArtSelectionCircleOnWaterRaw = value.ToRaw(null, null);
+        }
+
         public float ArtSelectionCircleHeight
         {
             get => _modifications[2053927797].ValueAsFloat;
@@ -1563,13 +1708,19 @@ namespace War3Api.Object
         }
 
         public bool IsArtShadowImageHeightModified => _modifications.ContainsKey(1751675765);
-        public bool ArtHasWaterShadow
+        public int ArtHasWaterShadowRaw
         {
-            get => _modifications[1919447925].ValueAsBool;
-            set => _modifications[1919447925] = new SimpleObjectDataModification{Id = 1919447925, Type = ObjectDataType.Bool, Value = value};
+            get => _modifications[1919447925].ValueAsInt;
+            set => _modifications[1919447925] = new SimpleObjectDataModification{Id = 1919447925, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsArtHasWaterShadowModified => _modifications.ContainsKey(1919447925);
+        public bool ArtHasWaterShadow
+        {
+            get => ArtHasWaterShadowRaw.ToBool(this);
+            set => ArtHasWaterShadowRaw = value.ToRaw(null, null);
+        }
+
         public float ArtShadowImageWidth
         {
             get => _modifications[2003334005].ValueAsFloat;
@@ -1591,13 +1742,19 @@ namespace War3Api.Object
         }
 
         public bool IsArtShadowImageCenterYModified => _modifications.ContainsKey(2036888437);
-        public bool EditorCategorizationSpecial
+        public int EditorCategorizationSpecialRaw
         {
-            get => _modifications[1701868405].ValueAsBool;
-            set => _modifications[1701868405] = new SimpleObjectDataModification{Id = 1701868405, Type = ObjectDataType.Bool, Value = value};
+            get => _modifications[1701868405].ValueAsInt;
+            set => _modifications[1701868405] = new SimpleObjectDataModification{Id = 1701868405, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsEditorCategorizationSpecialModified => _modifications.ContainsKey(1701868405);
+        public bool EditorCategorizationSpecial
+        {
+            get => EditorCategorizationSpecialRaw.ToBool(this);
+            set => EditorCategorizationSpecialRaw = value.ToRaw(null, null);
+        }
+
         public int ArtTeamColorRaw
         {
             get => _modifications[1868788853].ValueAsInt;
@@ -1611,13 +1768,19 @@ namespace War3Api.Object
             set => ArtTeamColorRaw = value.ToRaw(null, null);
         }
 
-        public bool EditorHasTilesetSpecificData
+        public int EditorHasTilesetSpecificDataRaw
         {
-            get => _modifications[1936946293].ValueAsBool;
-            set => _modifications[1936946293] = new SimpleObjectDataModification{Id = 1936946293, Type = ObjectDataType.Bool, Value = value};
+            get => _modifications[1936946293].ValueAsInt;
+            set => _modifications[1936946293] = new SimpleObjectDataModification{Id = 1936946293, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsEditorHasTilesetSpecificDataModified => _modifications.ContainsKey(1936946293);
+        public bool EditorHasTilesetSpecificData
+        {
+            get => EditorHasTilesetSpecificDataRaw.ToBool(this);
+            set => EditorHasTilesetSpecificDataRaw = value.ToRaw(null, null);
+        }
+
         public string ArtGroundTextureRaw
         {
             get => _modifications[1935832437].ValueAsString;
@@ -1657,13 +1820,19 @@ namespace War3Api.Object
             set => SoundUnitSoundSetRaw = value.ToRaw(null, null);
         }
 
-        public bool EditorUseClickHelper
+        public int EditorUseClickHelperRaw
         {
-            get => _modifications[1751348597].ValueAsBool;
-            set => _modifications[1751348597] = new SimpleObjectDataModification{Id = 1751348597, Type = ObjectDataType.Bool, Value = value};
+            get => _modifications[1751348597].ValueAsInt;
+            set => _modifications[1751348597] = new SimpleObjectDataModification{Id = 1751348597, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsEditorUseClickHelperModified => _modifications.ContainsKey(1751348597);
+        public bool EditorUseClickHelper
+        {
+            get => EditorUseClickHelperRaw.ToBool(this);
+            set => EditorUseClickHelperRaw = value.ToRaw(null, null);
+        }
+
         public float ArtAnimationWalkSpeed
         {
             get => _modifications[1818326901].ValueAsFloat;
@@ -1963,20 +2132,32 @@ namespace War3Api.Object
         }
 
         public bool IsCombatAttack2RangeMotionBufferModified => _modifications.ContainsKey(845312629);
-        public bool CombatAttack1ShowUI
+        public int CombatAttack1ShowUIRaw
         {
-            get => _modifications[829781877].ValueAsBool;
-            set => _modifications[829781877] = new SimpleObjectDataModification{Id = 829781877, Type = ObjectDataType.Bool, Value = value};
+            get => _modifications[829781877].ValueAsInt;
+            set => _modifications[829781877] = new SimpleObjectDataModification{Id = 829781877, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsCombatAttack1ShowUIModified => _modifications.ContainsKey(829781877);
-        public bool CombatAttack2ShowUI
+        public bool CombatAttack1ShowUI
         {
-            get => _modifications[846559093].ValueAsBool;
-            set => _modifications[846559093] = new SimpleObjectDataModification{Id = 846559093, Type = ObjectDataType.Bool, Value = value};
+            get => CombatAttack1ShowUIRaw.ToBool(this);
+            set => CombatAttack1ShowUIRaw = value.ToRaw(null, null);
+        }
+
+        public int CombatAttack2ShowUIRaw
+        {
+            get => _modifications[846559093].ValueAsInt;
+            set => _modifications[846559093] = new SimpleObjectDataModification{Id = 846559093, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsCombatAttack2ShowUIModified => _modifications.ContainsKey(846559093);
+        public bool CombatAttack2ShowUI
+        {
+            get => CombatAttack2ShowUIRaw.ToBool(this);
+            set => CombatAttack2ShowUIRaw = value.ToRaw(null, null);
+        }
+
         public int CombatAttack1DamageSidesPerDie
         {
             get => _modifications[1932616053].ValueAsInt;

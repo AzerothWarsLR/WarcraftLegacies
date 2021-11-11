@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -15,10 +16,12 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMinimumDamageModified;
         private readonly Lazy<ObjectProperty<float>> _dataIgnoredDamage;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataIgnoredDamageModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataIncludeRangedDamage;
+        private readonly Lazy<ObjectProperty<int>> _dataIncludeRangedDamageRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataIncludeRangedDamageModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataIncludeMeleeDamage;
+        private readonly Lazy<ObjectProperty<bool>> _dataIncludeRangedDamage;
+        private readonly Lazy<ObjectProperty<int>> _dataIncludeMeleeDamageRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataIncludeMeleeDamageModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataIncludeMeleeDamage;
         public HardenedSkin(): base(1802728257)
         {
             _dataChanceToReduceDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToReduceDamage, SetDataChanceToReduceDamage));
@@ -27,10 +30,12 @@ namespace War3Api.Object.Abilities
             _isDataMinimumDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMinimumDamageModified));
             _dataIgnoredDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataIgnoredDamage, SetDataIgnoredDamage));
             _isDataIgnoredDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIgnoredDamageModified));
-            _dataIncludeRangedDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeRangedDamage, SetDataIncludeRangedDamage));
+            _dataIncludeRangedDamageRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIncludeRangedDamageRaw, SetDataIncludeRangedDamageRaw));
             _isDataIncludeRangedDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIncludeRangedDamageModified));
-            _dataIncludeMeleeDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeMeleeDamage, SetDataIncludeMeleeDamage));
+            _dataIncludeRangedDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeRangedDamage, SetDataIncludeRangedDamage));
+            _dataIncludeMeleeDamageRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIncludeMeleeDamageRaw, SetDataIncludeMeleeDamageRaw));
             _isDataIncludeMeleeDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIncludeMeleeDamageModified));
+            _dataIncludeMeleeDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeMeleeDamage, SetDataIncludeMeleeDamage));
         }
 
         public HardenedSkin(int newId): base(1802728257, newId)
@@ -41,10 +46,12 @@ namespace War3Api.Object.Abilities
             _isDataMinimumDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMinimumDamageModified));
             _dataIgnoredDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataIgnoredDamage, SetDataIgnoredDamage));
             _isDataIgnoredDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIgnoredDamageModified));
-            _dataIncludeRangedDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeRangedDamage, SetDataIncludeRangedDamage));
+            _dataIncludeRangedDamageRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIncludeRangedDamageRaw, SetDataIncludeRangedDamageRaw));
             _isDataIncludeRangedDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIncludeRangedDamageModified));
-            _dataIncludeMeleeDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeMeleeDamage, SetDataIncludeMeleeDamage));
+            _dataIncludeRangedDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeRangedDamage, SetDataIncludeRangedDamage));
+            _dataIncludeMeleeDamageRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIncludeMeleeDamageRaw, SetDataIncludeMeleeDamageRaw));
             _isDataIncludeMeleeDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIncludeMeleeDamageModified));
+            _dataIncludeMeleeDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeMeleeDamage, SetDataIncludeMeleeDamage));
         }
 
         public HardenedSkin(string newRawcode): base(1802728257, newRawcode)
@@ -55,10 +62,12 @@ namespace War3Api.Object.Abilities
             _isDataMinimumDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMinimumDamageModified));
             _dataIgnoredDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataIgnoredDamage, SetDataIgnoredDamage));
             _isDataIgnoredDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIgnoredDamageModified));
-            _dataIncludeRangedDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeRangedDamage, SetDataIncludeRangedDamage));
+            _dataIncludeRangedDamageRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIncludeRangedDamageRaw, SetDataIncludeRangedDamageRaw));
             _isDataIncludeRangedDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIncludeRangedDamageModified));
-            _dataIncludeMeleeDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeMeleeDamage, SetDataIncludeMeleeDamage));
+            _dataIncludeRangedDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeRangedDamage, SetDataIncludeRangedDamage));
+            _dataIncludeMeleeDamageRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIncludeMeleeDamageRaw, SetDataIncludeMeleeDamageRaw));
             _isDataIncludeMeleeDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIncludeMeleeDamageModified));
+            _dataIncludeMeleeDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeMeleeDamage, SetDataIncludeMeleeDamage));
         }
 
         public HardenedSkin(ObjectDatabase db): base(1802728257, db)
@@ -69,10 +78,12 @@ namespace War3Api.Object.Abilities
             _isDataMinimumDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMinimumDamageModified));
             _dataIgnoredDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataIgnoredDamage, SetDataIgnoredDamage));
             _isDataIgnoredDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIgnoredDamageModified));
-            _dataIncludeRangedDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeRangedDamage, SetDataIncludeRangedDamage));
+            _dataIncludeRangedDamageRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIncludeRangedDamageRaw, SetDataIncludeRangedDamageRaw));
             _isDataIncludeRangedDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIncludeRangedDamageModified));
-            _dataIncludeMeleeDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeMeleeDamage, SetDataIncludeMeleeDamage));
+            _dataIncludeRangedDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeRangedDamage, SetDataIncludeRangedDamage));
+            _dataIncludeMeleeDamageRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIncludeMeleeDamageRaw, SetDataIncludeMeleeDamageRaw));
             _isDataIncludeMeleeDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIncludeMeleeDamageModified));
+            _dataIncludeMeleeDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeMeleeDamage, SetDataIncludeMeleeDamage));
         }
 
         public HardenedSkin(int newId, ObjectDatabase db): base(1802728257, newId, db)
@@ -83,10 +94,12 @@ namespace War3Api.Object.Abilities
             _isDataMinimumDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMinimumDamageModified));
             _dataIgnoredDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataIgnoredDamage, SetDataIgnoredDamage));
             _isDataIgnoredDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIgnoredDamageModified));
-            _dataIncludeRangedDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeRangedDamage, SetDataIncludeRangedDamage));
+            _dataIncludeRangedDamageRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIncludeRangedDamageRaw, SetDataIncludeRangedDamageRaw));
             _isDataIncludeRangedDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIncludeRangedDamageModified));
-            _dataIncludeMeleeDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeMeleeDamage, SetDataIncludeMeleeDamage));
+            _dataIncludeRangedDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeRangedDamage, SetDataIncludeRangedDamage));
+            _dataIncludeMeleeDamageRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIncludeMeleeDamageRaw, SetDataIncludeMeleeDamageRaw));
             _isDataIncludeMeleeDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIncludeMeleeDamageModified));
+            _dataIncludeMeleeDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeMeleeDamage, SetDataIncludeMeleeDamage));
         }
 
         public HardenedSkin(string newRawcode, ObjectDatabase db): base(1802728257, newRawcode, db)
@@ -97,10 +110,12 @@ namespace War3Api.Object.Abilities
             _isDataMinimumDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMinimumDamageModified));
             _dataIgnoredDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataIgnoredDamage, SetDataIgnoredDamage));
             _isDataIgnoredDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIgnoredDamageModified));
-            _dataIncludeRangedDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeRangedDamage, SetDataIncludeRangedDamage));
+            _dataIncludeRangedDamageRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIncludeRangedDamageRaw, SetDataIncludeRangedDamageRaw));
             _isDataIncludeRangedDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIncludeRangedDamageModified));
-            _dataIncludeMeleeDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeMeleeDamage, SetDataIncludeMeleeDamage));
+            _dataIncludeRangedDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeRangedDamage, SetDataIncludeRangedDamage));
+            _dataIncludeMeleeDamageRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIncludeMeleeDamageRaw, SetDataIncludeMeleeDamageRaw));
             _isDataIncludeMeleeDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIncludeMeleeDamageModified));
+            _dataIncludeMeleeDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeMeleeDamage, SetDataIncludeMeleeDamage));
         }
 
         public ObjectProperty<float> DataChanceToReduceDamage => _dataChanceToReduceDamage.Value;
@@ -109,10 +124,12 @@ namespace War3Api.Object.Abilities
         public ReadOnlyObjectProperty<bool> IsDataMinimumDamageModified => _isDataMinimumDamageModified.Value;
         public ObjectProperty<float> DataIgnoredDamage => _dataIgnoredDamage.Value;
         public ReadOnlyObjectProperty<bool> IsDataIgnoredDamageModified => _isDataIgnoredDamageModified.Value;
-        public ObjectProperty<bool> DataIncludeRangedDamage => _dataIncludeRangedDamage.Value;
+        public ObjectProperty<int> DataIncludeRangedDamageRaw => _dataIncludeRangedDamageRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataIncludeRangedDamageModified => _isDataIncludeRangedDamageModified.Value;
-        public ObjectProperty<bool> DataIncludeMeleeDamage => _dataIncludeMeleeDamage.Value;
+        public ObjectProperty<bool> DataIncludeRangedDamage => _dataIncludeRangedDamage.Value;
+        public ObjectProperty<int> DataIncludeMeleeDamageRaw => _dataIncludeMeleeDamageRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataIncludeMeleeDamageModified => _isDataIncludeMeleeDamageModified.Value;
+        public ObjectProperty<bool> DataIncludeMeleeDamage => _dataIncludeMeleeDamage.Value;
         private float GetDataChanceToReduceDamage(int level)
         {
             return _modifications[829125459, level].ValueAsFloat;
@@ -158,14 +175,14 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(862679891, level);
         }
 
-        private bool GetDataIncludeRangedDamage(int level)
+        private int GetDataIncludeRangedDamageRaw(int level)
         {
-            return _modifications[879457107, level].ValueAsBool;
+            return _modifications[879457107, level].ValueAsInt;
         }
 
-        private void SetDataIncludeRangedDamage(int level, bool value)
+        private void SetDataIncludeRangedDamageRaw(int level, int value)
         {
-            _modifications[879457107, level] = new LevelObjectDataModification{Id = 879457107, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 4};
+            _modifications[879457107, level] = new LevelObjectDataModification{Id = 879457107, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 4};
         }
 
         private bool GetIsDataIncludeRangedDamageModified(int level)
@@ -173,19 +190,39 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(879457107, level);
         }
 
-        private bool GetDataIncludeMeleeDamage(int level)
+        private bool GetDataIncludeRangedDamage(int level)
         {
-            return _modifications[896234323, level].ValueAsBool;
+            return GetDataIncludeRangedDamageRaw(level).ToBool(this);
         }
 
-        private void SetDataIncludeMeleeDamage(int level, bool value)
+        private void SetDataIncludeRangedDamage(int level, bool value)
         {
-            _modifications[896234323, level] = new LevelObjectDataModification{Id = 896234323, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 5};
+            SetDataIncludeRangedDamageRaw(level, value.ToRaw(null, null));
+        }
+
+        private int GetDataIncludeMeleeDamageRaw(int level)
+        {
+            return _modifications[896234323, level].ValueAsInt;
+        }
+
+        private void SetDataIncludeMeleeDamageRaw(int level, int value)
+        {
+            _modifications[896234323, level] = new LevelObjectDataModification{Id = 896234323, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 5};
         }
 
         private bool GetIsDataIncludeMeleeDamageModified(int level)
         {
             return _modifications.ContainsKey(896234323, level);
+        }
+
+        private bool GetDataIncludeMeleeDamage(int level)
+        {
+            return GetDataIncludeMeleeDamageRaw(level).ToBool(this);
+        }
+
+        private void SetDataIncludeMeleeDamage(int level, bool value)
+        {
+            SetDataIncludeMeleeDamageRaw(level, value.ToRaw(null, null));
         }
     }
 }

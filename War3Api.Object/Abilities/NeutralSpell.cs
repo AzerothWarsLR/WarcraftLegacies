@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -16,8 +17,9 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ObjectProperty<string>> _dataBaseOrderIDRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataBaseOrderIDModified;
         private readonly Lazy<ObjectProperty<string>> _dataBaseOrderID;
-        private readonly Lazy<ObjectProperty<bool>> _dataChargeOwningPlayer;
+        private readonly Lazy<ObjectProperty<int>> _dataChargeOwningPlayerRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataChargeOwningPlayerModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataChargeOwningPlayer;
         public NeutralSpell(): base(1936605505)
         {
             _dataGoldCost = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataGoldCost, SetDataGoldCost));
@@ -27,8 +29,9 @@ namespace War3Api.Object.Abilities
             _dataBaseOrderIDRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderIDRaw, SetDataBaseOrderIDRaw));
             _isDataBaseOrderIDModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBaseOrderIDModified));
             _dataBaseOrderID = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderID, SetDataBaseOrderID));
-            _dataChargeOwningPlayer = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataChargeOwningPlayer, SetDataChargeOwningPlayer));
+            _dataChargeOwningPlayerRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataChargeOwningPlayerRaw, SetDataChargeOwningPlayerRaw));
             _isDataChargeOwningPlayerModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChargeOwningPlayerModified));
+            _dataChargeOwningPlayer = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataChargeOwningPlayer, SetDataChargeOwningPlayer));
         }
 
         public NeutralSpell(int newId): base(1936605505, newId)
@@ -40,8 +43,9 @@ namespace War3Api.Object.Abilities
             _dataBaseOrderIDRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderIDRaw, SetDataBaseOrderIDRaw));
             _isDataBaseOrderIDModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBaseOrderIDModified));
             _dataBaseOrderID = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderID, SetDataBaseOrderID));
-            _dataChargeOwningPlayer = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataChargeOwningPlayer, SetDataChargeOwningPlayer));
+            _dataChargeOwningPlayerRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataChargeOwningPlayerRaw, SetDataChargeOwningPlayerRaw));
             _isDataChargeOwningPlayerModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChargeOwningPlayerModified));
+            _dataChargeOwningPlayer = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataChargeOwningPlayer, SetDataChargeOwningPlayer));
         }
 
         public NeutralSpell(string newRawcode): base(1936605505, newRawcode)
@@ -53,8 +57,9 @@ namespace War3Api.Object.Abilities
             _dataBaseOrderIDRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderIDRaw, SetDataBaseOrderIDRaw));
             _isDataBaseOrderIDModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBaseOrderIDModified));
             _dataBaseOrderID = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderID, SetDataBaseOrderID));
-            _dataChargeOwningPlayer = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataChargeOwningPlayer, SetDataChargeOwningPlayer));
+            _dataChargeOwningPlayerRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataChargeOwningPlayerRaw, SetDataChargeOwningPlayerRaw));
             _isDataChargeOwningPlayerModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChargeOwningPlayerModified));
+            _dataChargeOwningPlayer = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataChargeOwningPlayer, SetDataChargeOwningPlayer));
         }
 
         public NeutralSpell(ObjectDatabase db): base(1936605505, db)
@@ -66,8 +71,9 @@ namespace War3Api.Object.Abilities
             _dataBaseOrderIDRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderIDRaw, SetDataBaseOrderIDRaw));
             _isDataBaseOrderIDModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBaseOrderIDModified));
             _dataBaseOrderID = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderID, SetDataBaseOrderID));
-            _dataChargeOwningPlayer = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataChargeOwningPlayer, SetDataChargeOwningPlayer));
+            _dataChargeOwningPlayerRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataChargeOwningPlayerRaw, SetDataChargeOwningPlayerRaw));
             _isDataChargeOwningPlayerModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChargeOwningPlayerModified));
+            _dataChargeOwningPlayer = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataChargeOwningPlayer, SetDataChargeOwningPlayer));
         }
 
         public NeutralSpell(int newId, ObjectDatabase db): base(1936605505, newId, db)
@@ -79,8 +85,9 @@ namespace War3Api.Object.Abilities
             _dataBaseOrderIDRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderIDRaw, SetDataBaseOrderIDRaw));
             _isDataBaseOrderIDModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBaseOrderIDModified));
             _dataBaseOrderID = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderID, SetDataBaseOrderID));
-            _dataChargeOwningPlayer = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataChargeOwningPlayer, SetDataChargeOwningPlayer));
+            _dataChargeOwningPlayerRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataChargeOwningPlayerRaw, SetDataChargeOwningPlayerRaw));
             _isDataChargeOwningPlayerModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChargeOwningPlayerModified));
+            _dataChargeOwningPlayer = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataChargeOwningPlayer, SetDataChargeOwningPlayer));
         }
 
         public NeutralSpell(string newRawcode, ObjectDatabase db): base(1936605505, newRawcode, db)
@@ -92,8 +99,9 @@ namespace War3Api.Object.Abilities
             _dataBaseOrderIDRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderIDRaw, SetDataBaseOrderIDRaw));
             _isDataBaseOrderIDModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBaseOrderIDModified));
             _dataBaseOrderID = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderID, SetDataBaseOrderID));
-            _dataChargeOwningPlayer = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataChargeOwningPlayer, SetDataChargeOwningPlayer));
+            _dataChargeOwningPlayerRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataChargeOwningPlayerRaw, SetDataChargeOwningPlayerRaw));
             _isDataChargeOwningPlayerModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChargeOwningPlayerModified));
+            _dataChargeOwningPlayer = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataChargeOwningPlayer, SetDataChargeOwningPlayer));
         }
 
         public ObjectProperty<int> DataGoldCost => _dataGoldCost.Value;
@@ -103,8 +111,9 @@ namespace War3Api.Object.Abilities
         public ObjectProperty<string> DataBaseOrderIDRaw => _dataBaseOrderIDRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataBaseOrderIDModified => _isDataBaseOrderIDModified.Value;
         public ObjectProperty<string> DataBaseOrderID => _dataBaseOrderID.Value;
-        public ObjectProperty<bool> DataChargeOwningPlayer => _dataChargeOwningPlayer.Value;
+        public ObjectProperty<int> DataChargeOwningPlayerRaw => _dataChargeOwningPlayerRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataChargeOwningPlayerModified => _isDataChargeOwningPlayerModified.Value;
+        public ObjectProperty<bool> DataChargeOwningPlayer => _dataChargeOwningPlayer.Value;
         private int GetDataGoldCost(int level)
         {
             return _modifications[829711438, level].ValueAsInt;
@@ -160,19 +169,29 @@ namespace War3Api.Object.Abilities
             SetDataBaseOrderIDRaw(level, value.ToRaw(null, 32));
         }
 
-        private bool GetDataChargeOwningPlayer(int level)
+        private int GetDataChargeOwningPlayerRaw(int level)
         {
-            return _modifications[913534529, level].ValueAsBool;
+            return _modifications[913534529, level].ValueAsInt;
         }
 
-        private void SetDataChargeOwningPlayer(int level, bool value)
+        private void SetDataChargeOwningPlayerRaw(int level, int value)
         {
-            _modifications[913534529, level] = new LevelObjectDataModification{Id = 913534529, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 6};
+            _modifications[913534529, level] = new LevelObjectDataModification{Id = 913534529, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 6};
         }
 
         private bool GetIsDataChargeOwningPlayerModified(int level)
         {
             return _modifications.ContainsKey(913534529, level);
+        }
+
+        private bool GetDataChargeOwningPlayer(int level)
+        {
+            return GetDataChargeOwningPlayerRaw(level).ToBool(this);
+        }
+
+        private void SetDataChargeOwningPlayer(int level, bool value)
+        {
+            SetDataChargeOwningPlayerRaw(level, value.ToRaw(0, 1));
         }
     }
 }

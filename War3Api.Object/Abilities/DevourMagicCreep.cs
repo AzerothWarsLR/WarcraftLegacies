@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -9,59 +10,77 @@ namespace War3Api.Object.Abilities
 {
     public sealed class DevourMagicCreep : Ability
     {
-        private readonly Lazy<ObjectProperty<bool>> _dataIgnoreFriendlyBuffs;
+        private readonly Lazy<ObjectProperty<int>> _dataIgnoreFriendlyBuffsRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataIgnoreFriendlyBuffsModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataIgnoreFriendlyBuffs;
         public DevourMagicCreep(): base(1701069633)
         {
-            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
+            _dataIgnoreFriendlyBuffsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIgnoreFriendlyBuffsRaw, SetDataIgnoreFriendlyBuffsRaw));
             _isDataIgnoreFriendlyBuffsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIgnoreFriendlyBuffsModified));
+            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
         }
 
         public DevourMagicCreep(int newId): base(1701069633, newId)
         {
-            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
+            _dataIgnoreFriendlyBuffsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIgnoreFriendlyBuffsRaw, SetDataIgnoreFriendlyBuffsRaw));
             _isDataIgnoreFriendlyBuffsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIgnoreFriendlyBuffsModified));
+            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
         }
 
         public DevourMagicCreep(string newRawcode): base(1701069633, newRawcode)
         {
-            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
+            _dataIgnoreFriendlyBuffsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIgnoreFriendlyBuffsRaw, SetDataIgnoreFriendlyBuffsRaw));
             _isDataIgnoreFriendlyBuffsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIgnoreFriendlyBuffsModified));
+            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
         }
 
         public DevourMagicCreep(ObjectDatabase db): base(1701069633, db)
         {
-            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
+            _dataIgnoreFriendlyBuffsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIgnoreFriendlyBuffsRaw, SetDataIgnoreFriendlyBuffsRaw));
             _isDataIgnoreFriendlyBuffsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIgnoreFriendlyBuffsModified));
+            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
         }
 
         public DevourMagicCreep(int newId, ObjectDatabase db): base(1701069633, newId, db)
         {
-            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
+            _dataIgnoreFriendlyBuffsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIgnoreFriendlyBuffsRaw, SetDataIgnoreFriendlyBuffsRaw));
             _isDataIgnoreFriendlyBuffsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIgnoreFriendlyBuffsModified));
+            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
         }
 
         public DevourMagicCreep(string newRawcode, ObjectDatabase db): base(1701069633, newRawcode, db)
         {
-            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
+            _dataIgnoreFriendlyBuffsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataIgnoreFriendlyBuffsRaw, SetDataIgnoreFriendlyBuffsRaw));
             _isDataIgnoreFriendlyBuffsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataIgnoreFriendlyBuffsModified));
+            _dataIgnoreFriendlyBuffs = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIgnoreFriendlyBuffs, SetDataIgnoreFriendlyBuffs));
         }
 
-        public ObjectProperty<bool> DataIgnoreFriendlyBuffs => _dataIgnoreFriendlyBuffs.Value;
+        public ObjectProperty<int> DataIgnoreFriendlyBuffsRaw => _dataIgnoreFriendlyBuffsRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataIgnoreFriendlyBuffsModified => _isDataIgnoreFriendlyBuffsModified.Value;
-        private bool GetDataIgnoreFriendlyBuffs(int level)
+        public ObjectProperty<bool> DataIgnoreFriendlyBuffs => _dataIgnoreFriendlyBuffs.Value;
+        private int GetDataIgnoreFriendlyBuffsRaw(int level)
         {
-            return _modifications[913143396, level].ValueAsBool;
+            return _modifications[913143396, level].ValueAsInt;
         }
 
-        private void SetDataIgnoreFriendlyBuffs(int level, bool value)
+        private void SetDataIgnoreFriendlyBuffsRaw(int level, int value)
         {
-            _modifications[913143396, level] = new LevelObjectDataModification{Id = 913143396, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 6};
+            _modifications[913143396, level] = new LevelObjectDataModification{Id = 913143396, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 6};
         }
 
         private bool GetIsDataIgnoreFriendlyBuffsModified(int level)
         {
             return _modifications.ContainsKey(913143396, level);
+        }
+
+        private bool GetDataIgnoreFriendlyBuffs(int level)
+        {
+            return GetDataIgnoreFriendlyBuffsRaw(level).ToBool(this);
+        }
+
+        private void SetDataIgnoreFriendlyBuffs(int level, bool value)
+        {
+            SetDataIgnoreFriendlyBuffsRaw(level, value.ToRaw(0, 99999));
         }
     }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -15,8 +16,9 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDayNightDurationModified;
         private readonly Lazy<ObjectProperty<float>> _dataActionDuration;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataActionDurationModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataPermanentCloak;
+        private readonly Lazy<ObjectProperty<int>> _dataPermanentCloakRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataPermanentCloakModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataPermanentCloak;
         public ShadowMeld(): base(1835561793)
         {
             _dataFadeDuration = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataFadeDuration, SetDataFadeDuration));
@@ -25,8 +27,9 @@ namespace War3Api.Object.Abilities
             _isDataDayNightDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDayNightDurationModified));
             _dataActionDuration = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataActionDuration, SetDataActionDuration));
             _isDataActionDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataActionDurationModified));
-            _dataPermanentCloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPermanentCloak, SetDataPermanentCloak));
+            _dataPermanentCloakRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataPermanentCloakRaw, SetDataPermanentCloakRaw));
             _isDataPermanentCloakModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPermanentCloakModified));
+            _dataPermanentCloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPermanentCloak, SetDataPermanentCloak));
         }
 
         public ShadowMeld(int newId): base(1835561793, newId)
@@ -37,8 +40,9 @@ namespace War3Api.Object.Abilities
             _isDataDayNightDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDayNightDurationModified));
             _dataActionDuration = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataActionDuration, SetDataActionDuration));
             _isDataActionDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataActionDurationModified));
-            _dataPermanentCloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPermanentCloak, SetDataPermanentCloak));
+            _dataPermanentCloakRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataPermanentCloakRaw, SetDataPermanentCloakRaw));
             _isDataPermanentCloakModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPermanentCloakModified));
+            _dataPermanentCloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPermanentCloak, SetDataPermanentCloak));
         }
 
         public ShadowMeld(string newRawcode): base(1835561793, newRawcode)
@@ -49,8 +53,9 @@ namespace War3Api.Object.Abilities
             _isDataDayNightDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDayNightDurationModified));
             _dataActionDuration = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataActionDuration, SetDataActionDuration));
             _isDataActionDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataActionDurationModified));
-            _dataPermanentCloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPermanentCloak, SetDataPermanentCloak));
+            _dataPermanentCloakRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataPermanentCloakRaw, SetDataPermanentCloakRaw));
             _isDataPermanentCloakModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPermanentCloakModified));
+            _dataPermanentCloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPermanentCloak, SetDataPermanentCloak));
         }
 
         public ShadowMeld(ObjectDatabase db): base(1835561793, db)
@@ -61,8 +66,9 @@ namespace War3Api.Object.Abilities
             _isDataDayNightDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDayNightDurationModified));
             _dataActionDuration = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataActionDuration, SetDataActionDuration));
             _isDataActionDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataActionDurationModified));
-            _dataPermanentCloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPermanentCloak, SetDataPermanentCloak));
+            _dataPermanentCloakRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataPermanentCloakRaw, SetDataPermanentCloakRaw));
             _isDataPermanentCloakModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPermanentCloakModified));
+            _dataPermanentCloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPermanentCloak, SetDataPermanentCloak));
         }
 
         public ShadowMeld(int newId, ObjectDatabase db): base(1835561793, newId, db)
@@ -73,8 +79,9 @@ namespace War3Api.Object.Abilities
             _isDataDayNightDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDayNightDurationModified));
             _dataActionDuration = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataActionDuration, SetDataActionDuration));
             _isDataActionDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataActionDurationModified));
-            _dataPermanentCloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPermanentCloak, SetDataPermanentCloak));
+            _dataPermanentCloakRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataPermanentCloakRaw, SetDataPermanentCloakRaw));
             _isDataPermanentCloakModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPermanentCloakModified));
+            _dataPermanentCloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPermanentCloak, SetDataPermanentCloak));
         }
 
         public ShadowMeld(string newRawcode, ObjectDatabase db): base(1835561793, newRawcode, db)
@@ -85,8 +92,9 @@ namespace War3Api.Object.Abilities
             _isDataDayNightDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDayNightDurationModified));
             _dataActionDuration = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataActionDuration, SetDataActionDuration));
             _isDataActionDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataActionDurationModified));
-            _dataPermanentCloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPermanentCloak, SetDataPermanentCloak));
+            _dataPermanentCloakRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataPermanentCloakRaw, SetDataPermanentCloakRaw));
             _isDataPermanentCloakModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPermanentCloakModified));
+            _dataPermanentCloak = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPermanentCloak, SetDataPermanentCloak));
         }
 
         public ObjectProperty<float> DataFadeDuration => _dataFadeDuration.Value;
@@ -95,8 +103,9 @@ namespace War3Api.Object.Abilities
         public ReadOnlyObjectProperty<bool> IsDataDayNightDurationModified => _isDataDayNightDurationModified.Value;
         public ObjectProperty<float> DataActionDuration => _dataActionDuration.Value;
         public ReadOnlyObjectProperty<bool> IsDataActionDurationModified => _isDataActionDurationModified.Value;
-        public ObjectProperty<bool> DataPermanentCloak => _dataPermanentCloak.Value;
+        public ObjectProperty<int> DataPermanentCloakRaw => _dataPermanentCloakRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataPermanentCloakModified => _isDataPermanentCloakModified.Value;
+        public ObjectProperty<bool> DataPermanentCloak => _dataPermanentCloak.Value;
         private float GetDataFadeDuration(int level)
         {
             return _modifications[829253715, level].ValueAsFloat;
@@ -142,19 +151,29 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(862808147, level);
         }
 
-        private bool GetDataPermanentCloak(int level)
+        private int GetDataPermanentCloakRaw(int level)
         {
-            return _modifications[879585363, level].ValueAsBool;
+            return _modifications[879585363, level].ValueAsInt;
         }
 
-        private void SetDataPermanentCloak(int level, bool value)
+        private void SetDataPermanentCloakRaw(int level, int value)
         {
-            _modifications[879585363, level] = new LevelObjectDataModification{Id = 879585363, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 4};
+            _modifications[879585363, level] = new LevelObjectDataModification{Id = 879585363, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 4};
         }
 
         private bool GetIsDataPermanentCloakModified(int level)
         {
             return _modifications.ContainsKey(879585363, level);
+        }
+
+        private bool GetDataPermanentCloak(int level)
+        {
+            return GetDataPermanentCloakRaw(level).ToBool(this);
+        }
+
+        private void SetDataPermanentCloak(int level, bool value)
+        {
+            SetDataPermanentCloakRaw(level, value.ToRaw(0, 1));
         }
     }
 }

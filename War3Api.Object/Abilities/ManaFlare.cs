@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -19,8 +20,9 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataHeroMaximumDamageModified;
         private readonly Lazy<ObjectProperty<float>> _dataDamageCooldown;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamageCooldownModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataCasterOnlySplash;
+        private readonly Lazy<ObjectProperty<int>> _dataCasterOnlySplashRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataCasterOnlySplashModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataCasterOnlySplash;
         public ManaFlare(): base(1818651969)
         {
             _dataUnitDamagePerManaPoint = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataUnitDamagePerManaPoint, SetDataUnitDamagePerManaPoint));
@@ -33,8 +35,9 @@ namespace War3Api.Object.Abilities
             _isDataHeroMaximumDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataHeroMaximumDamageModified));
             _dataDamageCooldown = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageCooldown, SetDataDamageCooldown));
             _isDataDamageCooldownModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageCooldownModified));
-            _dataCasterOnlySplash = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataCasterOnlySplash, SetDataCasterOnlySplash));
+            _dataCasterOnlySplashRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataCasterOnlySplashRaw, SetDataCasterOnlySplashRaw));
             _isDataCasterOnlySplashModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCasterOnlySplashModified));
+            _dataCasterOnlySplash = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataCasterOnlySplash, SetDataCasterOnlySplash));
         }
 
         public ManaFlare(int newId): base(1818651969, newId)
@@ -49,8 +52,9 @@ namespace War3Api.Object.Abilities
             _isDataHeroMaximumDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataHeroMaximumDamageModified));
             _dataDamageCooldown = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageCooldown, SetDataDamageCooldown));
             _isDataDamageCooldownModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageCooldownModified));
-            _dataCasterOnlySplash = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataCasterOnlySplash, SetDataCasterOnlySplash));
+            _dataCasterOnlySplashRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataCasterOnlySplashRaw, SetDataCasterOnlySplashRaw));
             _isDataCasterOnlySplashModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCasterOnlySplashModified));
+            _dataCasterOnlySplash = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataCasterOnlySplash, SetDataCasterOnlySplash));
         }
 
         public ManaFlare(string newRawcode): base(1818651969, newRawcode)
@@ -65,8 +69,9 @@ namespace War3Api.Object.Abilities
             _isDataHeroMaximumDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataHeroMaximumDamageModified));
             _dataDamageCooldown = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageCooldown, SetDataDamageCooldown));
             _isDataDamageCooldownModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageCooldownModified));
-            _dataCasterOnlySplash = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataCasterOnlySplash, SetDataCasterOnlySplash));
+            _dataCasterOnlySplashRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataCasterOnlySplashRaw, SetDataCasterOnlySplashRaw));
             _isDataCasterOnlySplashModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCasterOnlySplashModified));
+            _dataCasterOnlySplash = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataCasterOnlySplash, SetDataCasterOnlySplash));
         }
 
         public ManaFlare(ObjectDatabase db): base(1818651969, db)
@@ -81,8 +86,9 @@ namespace War3Api.Object.Abilities
             _isDataHeroMaximumDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataHeroMaximumDamageModified));
             _dataDamageCooldown = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageCooldown, SetDataDamageCooldown));
             _isDataDamageCooldownModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageCooldownModified));
-            _dataCasterOnlySplash = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataCasterOnlySplash, SetDataCasterOnlySplash));
+            _dataCasterOnlySplashRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataCasterOnlySplashRaw, SetDataCasterOnlySplashRaw));
             _isDataCasterOnlySplashModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCasterOnlySplashModified));
+            _dataCasterOnlySplash = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataCasterOnlySplash, SetDataCasterOnlySplash));
         }
 
         public ManaFlare(int newId, ObjectDatabase db): base(1818651969, newId, db)
@@ -97,8 +103,9 @@ namespace War3Api.Object.Abilities
             _isDataHeroMaximumDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataHeroMaximumDamageModified));
             _dataDamageCooldown = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageCooldown, SetDataDamageCooldown));
             _isDataDamageCooldownModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageCooldownModified));
-            _dataCasterOnlySplash = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataCasterOnlySplash, SetDataCasterOnlySplash));
+            _dataCasterOnlySplashRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataCasterOnlySplashRaw, SetDataCasterOnlySplashRaw));
             _isDataCasterOnlySplashModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCasterOnlySplashModified));
+            _dataCasterOnlySplash = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataCasterOnlySplash, SetDataCasterOnlySplash));
         }
 
         public ManaFlare(string newRawcode, ObjectDatabase db): base(1818651969, newRawcode, db)
@@ -113,8 +120,9 @@ namespace War3Api.Object.Abilities
             _isDataHeroMaximumDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataHeroMaximumDamageModified));
             _dataDamageCooldown = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageCooldown, SetDataDamageCooldown));
             _isDataDamageCooldownModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageCooldownModified));
-            _dataCasterOnlySplash = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataCasterOnlySplash, SetDataCasterOnlySplash));
+            _dataCasterOnlySplashRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataCasterOnlySplashRaw, SetDataCasterOnlySplashRaw));
             _isDataCasterOnlySplashModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCasterOnlySplashModified));
+            _dataCasterOnlySplash = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataCasterOnlySplash, SetDataCasterOnlySplash));
         }
 
         public ObjectProperty<float> DataUnitDamagePerManaPoint => _dataUnitDamagePerManaPoint.Value;
@@ -127,8 +135,9 @@ namespace War3Api.Object.Abilities
         public ReadOnlyObjectProperty<bool> IsDataHeroMaximumDamageModified => _isDataHeroMaximumDamageModified.Value;
         public ObjectProperty<float> DataDamageCooldown => _dataDamageCooldown.Value;
         public ReadOnlyObjectProperty<bool> IsDataDamageCooldownModified => _isDataDamageCooldownModified.Value;
-        public ObjectProperty<bool> DataCasterOnlySplash => _dataCasterOnlySplash.Value;
+        public ObjectProperty<int> DataCasterOnlySplashRaw => _dataCasterOnlySplashRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataCasterOnlySplashModified => _isDataCasterOnlySplashModified.Value;
+        public ObjectProperty<bool> DataCasterOnlySplash => _dataCasterOnlySplash.Value;
         private float GetDataUnitDamagePerManaPoint(int level)
         {
             return _modifications[829187693, level].ValueAsFloat;
@@ -204,19 +213,29 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(896296557, level);
         }
 
-        private bool GetDataCasterOnlySplash(int level)
+        private int GetDataCasterOnlySplashRaw(int level)
         {
-            return _modifications[913073773, level].ValueAsBool;
+            return _modifications[913073773, level].ValueAsInt;
         }
 
-        private void SetDataCasterOnlySplash(int level, bool value)
+        private void SetDataCasterOnlySplashRaw(int level, int value)
         {
-            _modifications[913073773, level] = new LevelObjectDataModification{Id = 913073773, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 6};
+            _modifications[913073773, level] = new LevelObjectDataModification{Id = 913073773, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 6};
         }
 
         private bool GetIsDataCasterOnlySplashModified(int level)
         {
             return _modifications.ContainsKey(913073773, level);
+        }
+
+        private bool GetDataCasterOnlySplash(int level)
+        {
+            return GetDataCasterOnlySplashRaw(level).ToBool(this);
+        }
+
+        private void SetDataCasterOnlySplash(int level, bool value)
+        {
+            SetDataCasterOnlySplashRaw(level, value.ToRaw(0, 1));
         }
     }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -15,8 +16,9 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataLumberCostFactorModified;
         private readonly Lazy<ObjectProperty<int>> _dataMaxCreepLevel;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMaxCreepLevelModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataAllowBounty;
+        private readonly Lazy<ObjectProperty<int>> _dataAllowBountyRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAllowBountyModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataAllowBounty;
         public AlchemistTransmute(): base(1836338753)
         {
             _dataGoldCostFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataGoldCostFactor, SetDataGoldCostFactor));
@@ -25,8 +27,9 @@ namespace War3Api.Object.Abilities
             _isDataLumberCostFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLumberCostFactorModified));
             _dataMaxCreepLevel = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxCreepLevel, SetDataMaxCreepLevel));
             _isDataMaxCreepLevelModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxCreepLevelModified));
-            _dataAllowBounty = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAllowBounty, SetDataAllowBounty));
+            _dataAllowBountyRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAllowBountyRaw, SetDataAllowBountyRaw));
             _isDataAllowBountyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAllowBountyModified));
+            _dataAllowBounty = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAllowBounty, SetDataAllowBounty));
         }
 
         public AlchemistTransmute(int newId): base(1836338753, newId)
@@ -37,8 +40,9 @@ namespace War3Api.Object.Abilities
             _isDataLumberCostFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLumberCostFactorModified));
             _dataMaxCreepLevel = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxCreepLevel, SetDataMaxCreepLevel));
             _isDataMaxCreepLevelModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxCreepLevelModified));
-            _dataAllowBounty = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAllowBounty, SetDataAllowBounty));
+            _dataAllowBountyRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAllowBountyRaw, SetDataAllowBountyRaw));
             _isDataAllowBountyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAllowBountyModified));
+            _dataAllowBounty = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAllowBounty, SetDataAllowBounty));
         }
 
         public AlchemistTransmute(string newRawcode): base(1836338753, newRawcode)
@@ -49,8 +53,9 @@ namespace War3Api.Object.Abilities
             _isDataLumberCostFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLumberCostFactorModified));
             _dataMaxCreepLevel = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxCreepLevel, SetDataMaxCreepLevel));
             _isDataMaxCreepLevelModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxCreepLevelModified));
-            _dataAllowBounty = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAllowBounty, SetDataAllowBounty));
+            _dataAllowBountyRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAllowBountyRaw, SetDataAllowBountyRaw));
             _isDataAllowBountyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAllowBountyModified));
+            _dataAllowBounty = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAllowBounty, SetDataAllowBounty));
         }
 
         public AlchemistTransmute(ObjectDatabase db): base(1836338753, db)
@@ -61,8 +66,9 @@ namespace War3Api.Object.Abilities
             _isDataLumberCostFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLumberCostFactorModified));
             _dataMaxCreepLevel = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxCreepLevel, SetDataMaxCreepLevel));
             _isDataMaxCreepLevelModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxCreepLevelModified));
-            _dataAllowBounty = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAllowBounty, SetDataAllowBounty));
+            _dataAllowBountyRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAllowBountyRaw, SetDataAllowBountyRaw));
             _isDataAllowBountyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAllowBountyModified));
+            _dataAllowBounty = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAllowBounty, SetDataAllowBounty));
         }
 
         public AlchemistTransmute(int newId, ObjectDatabase db): base(1836338753, newId, db)
@@ -73,8 +79,9 @@ namespace War3Api.Object.Abilities
             _isDataLumberCostFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLumberCostFactorModified));
             _dataMaxCreepLevel = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxCreepLevel, SetDataMaxCreepLevel));
             _isDataMaxCreepLevelModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxCreepLevelModified));
-            _dataAllowBounty = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAllowBounty, SetDataAllowBounty));
+            _dataAllowBountyRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAllowBountyRaw, SetDataAllowBountyRaw));
             _isDataAllowBountyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAllowBountyModified));
+            _dataAllowBounty = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAllowBounty, SetDataAllowBounty));
         }
 
         public AlchemistTransmute(string newRawcode, ObjectDatabase db): base(1836338753, newRawcode, db)
@@ -85,8 +92,9 @@ namespace War3Api.Object.Abilities
             _isDataLumberCostFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLumberCostFactorModified));
             _dataMaxCreepLevel = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxCreepLevel, SetDataMaxCreepLevel));
             _isDataMaxCreepLevelModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxCreepLevelModified));
-            _dataAllowBounty = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAllowBounty, SetDataAllowBounty));
+            _dataAllowBountyRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAllowBountyRaw, SetDataAllowBountyRaw));
             _isDataAllowBountyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAllowBountyModified));
+            _dataAllowBounty = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAllowBounty, SetDataAllowBounty));
         }
 
         public ObjectProperty<float> DataGoldCostFactor => _dataGoldCostFactor.Value;
@@ -95,8 +103,9 @@ namespace War3Api.Object.Abilities
         public ReadOnlyObjectProperty<bool> IsDataLumberCostFactorModified => _isDataLumberCostFactorModified.Value;
         public ObjectProperty<int> DataMaxCreepLevel => _dataMaxCreepLevel.Value;
         public ReadOnlyObjectProperty<bool> IsDataMaxCreepLevelModified => _isDataMaxCreepLevelModified.Value;
-        public ObjectProperty<bool> DataAllowBounty => _dataAllowBounty.Value;
+        public ObjectProperty<int> DataAllowBountyRaw => _dataAllowBountyRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataAllowBountyModified => _isDataAllowBountyModified.Value;
+        public ObjectProperty<bool> DataAllowBounty => _dataAllowBounty.Value;
         private float GetDataGoldCostFactor(int level)
         {
             return _modifications[829256782, level].ValueAsFloat;
@@ -142,19 +151,29 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(862811214, level);
         }
 
-        private bool GetDataAllowBounty(int level)
+        private int GetDataAllowBountyRaw(int level)
         {
-            return _modifications[879588430, level].ValueAsBool;
+            return _modifications[879588430, level].ValueAsInt;
         }
 
-        private void SetDataAllowBounty(int level, bool value)
+        private void SetDataAllowBountyRaw(int level, int value)
         {
-            _modifications[879588430, level] = new LevelObjectDataModification{Id = 879588430, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 4};
+            _modifications[879588430, level] = new LevelObjectDataModification{Id = 879588430, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 4};
         }
 
         private bool GetIsDataAllowBountyModified(int level)
         {
             return _modifications.ContainsKey(879588430, level);
+        }
+
+        private bool GetDataAllowBounty(int level)
+        {
+            return GetDataAllowBountyRaw(level).ToBool(this);
+        }
+
+        private void SetDataAllowBounty(int level, bool value)
+        {
+            SetDataAllowBountyRaw(level, value.ToRaw(0, 1));
         }
     }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -17,8 +18,9 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAutocastRequirementModified;
         private readonly Lazy<ObjectProperty<float>> _dataWaterHeight;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataWaterHeightModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataRegenerateOnlyAtNight;
+        private readonly Lazy<ObjectProperty<int>> _dataRegenerateOnlyAtNightRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataRegenerateOnlyAtNightModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataRegenerateOnlyAtNight;
         public ManaBatteryObsidianStatue(): base(845311297)
         {
             _dataManaGained = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataManaGained, SetDataManaGained));
@@ -29,8 +31,9 @@ namespace War3Api.Object.Abilities
             _isDataAutocastRequirementModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAutocastRequirementModified));
             _dataWaterHeight = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaterHeight, SetDataWaterHeight));
             _isDataWaterHeightModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaterHeightModified));
-            _dataRegenerateOnlyAtNight = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRegenerateOnlyAtNight, SetDataRegenerateOnlyAtNight));
+            _dataRegenerateOnlyAtNightRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRegenerateOnlyAtNightRaw, SetDataRegenerateOnlyAtNightRaw));
             _isDataRegenerateOnlyAtNightModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRegenerateOnlyAtNightModified));
+            _dataRegenerateOnlyAtNight = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRegenerateOnlyAtNight, SetDataRegenerateOnlyAtNight));
         }
 
         public ManaBatteryObsidianStatue(int newId): base(845311297, newId)
@@ -43,8 +46,9 @@ namespace War3Api.Object.Abilities
             _isDataAutocastRequirementModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAutocastRequirementModified));
             _dataWaterHeight = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaterHeight, SetDataWaterHeight));
             _isDataWaterHeightModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaterHeightModified));
-            _dataRegenerateOnlyAtNight = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRegenerateOnlyAtNight, SetDataRegenerateOnlyAtNight));
+            _dataRegenerateOnlyAtNightRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRegenerateOnlyAtNightRaw, SetDataRegenerateOnlyAtNightRaw));
             _isDataRegenerateOnlyAtNightModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRegenerateOnlyAtNightModified));
+            _dataRegenerateOnlyAtNight = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRegenerateOnlyAtNight, SetDataRegenerateOnlyAtNight));
         }
 
         public ManaBatteryObsidianStatue(string newRawcode): base(845311297, newRawcode)
@@ -57,8 +61,9 @@ namespace War3Api.Object.Abilities
             _isDataAutocastRequirementModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAutocastRequirementModified));
             _dataWaterHeight = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaterHeight, SetDataWaterHeight));
             _isDataWaterHeightModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaterHeightModified));
-            _dataRegenerateOnlyAtNight = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRegenerateOnlyAtNight, SetDataRegenerateOnlyAtNight));
+            _dataRegenerateOnlyAtNightRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRegenerateOnlyAtNightRaw, SetDataRegenerateOnlyAtNightRaw));
             _isDataRegenerateOnlyAtNightModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRegenerateOnlyAtNightModified));
+            _dataRegenerateOnlyAtNight = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRegenerateOnlyAtNight, SetDataRegenerateOnlyAtNight));
         }
 
         public ManaBatteryObsidianStatue(ObjectDatabase db): base(845311297, db)
@@ -71,8 +76,9 @@ namespace War3Api.Object.Abilities
             _isDataAutocastRequirementModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAutocastRequirementModified));
             _dataWaterHeight = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaterHeight, SetDataWaterHeight));
             _isDataWaterHeightModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaterHeightModified));
-            _dataRegenerateOnlyAtNight = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRegenerateOnlyAtNight, SetDataRegenerateOnlyAtNight));
+            _dataRegenerateOnlyAtNightRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRegenerateOnlyAtNightRaw, SetDataRegenerateOnlyAtNightRaw));
             _isDataRegenerateOnlyAtNightModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRegenerateOnlyAtNightModified));
+            _dataRegenerateOnlyAtNight = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRegenerateOnlyAtNight, SetDataRegenerateOnlyAtNight));
         }
 
         public ManaBatteryObsidianStatue(int newId, ObjectDatabase db): base(845311297, newId, db)
@@ -85,8 +91,9 @@ namespace War3Api.Object.Abilities
             _isDataAutocastRequirementModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAutocastRequirementModified));
             _dataWaterHeight = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaterHeight, SetDataWaterHeight));
             _isDataWaterHeightModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaterHeightModified));
-            _dataRegenerateOnlyAtNight = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRegenerateOnlyAtNight, SetDataRegenerateOnlyAtNight));
+            _dataRegenerateOnlyAtNightRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRegenerateOnlyAtNightRaw, SetDataRegenerateOnlyAtNightRaw));
             _isDataRegenerateOnlyAtNightModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRegenerateOnlyAtNightModified));
+            _dataRegenerateOnlyAtNight = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRegenerateOnlyAtNight, SetDataRegenerateOnlyAtNight));
         }
 
         public ManaBatteryObsidianStatue(string newRawcode, ObjectDatabase db): base(845311297, newRawcode, db)
@@ -99,8 +106,9 @@ namespace War3Api.Object.Abilities
             _isDataAutocastRequirementModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAutocastRequirementModified));
             _dataWaterHeight = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaterHeight, SetDataWaterHeight));
             _isDataWaterHeightModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaterHeightModified));
-            _dataRegenerateOnlyAtNight = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRegenerateOnlyAtNight, SetDataRegenerateOnlyAtNight));
+            _dataRegenerateOnlyAtNightRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRegenerateOnlyAtNightRaw, SetDataRegenerateOnlyAtNightRaw));
             _isDataRegenerateOnlyAtNightModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRegenerateOnlyAtNightModified));
+            _dataRegenerateOnlyAtNight = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRegenerateOnlyAtNight, SetDataRegenerateOnlyAtNight));
         }
 
         public ObjectProperty<float> DataManaGained => _dataManaGained.Value;
@@ -111,8 +119,9 @@ namespace War3Api.Object.Abilities
         public ReadOnlyObjectProperty<bool> IsDataAutocastRequirementModified => _isDataAutocastRequirementModified.Value;
         public ObjectProperty<float> DataWaterHeight => _dataWaterHeight.Value;
         public ReadOnlyObjectProperty<bool> IsDataWaterHeightModified => _isDataWaterHeightModified.Value;
-        public ObjectProperty<bool> DataRegenerateOnlyAtNight => _dataRegenerateOnlyAtNight.Value;
+        public ObjectProperty<int> DataRegenerateOnlyAtNightRaw => _dataRegenerateOnlyAtNightRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataRegenerateOnlyAtNightModified => _isDataRegenerateOnlyAtNightModified.Value;
+        public ObjectProperty<bool> DataRegenerateOnlyAtNight => _dataRegenerateOnlyAtNight.Value;
         private float GetDataManaGained(int level)
         {
             return _modifications[829710925, level].ValueAsFloat;
@@ -173,19 +182,29 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(880042573, level);
         }
 
-        private bool GetDataRegenerateOnlyAtNight(int level)
+        private int GetDataRegenerateOnlyAtNightRaw(int level)
         {
-            return _modifications[896819789, level].ValueAsBool;
+            return _modifications[896819789, level].ValueAsInt;
         }
 
-        private void SetDataRegenerateOnlyAtNight(int level, bool value)
+        private void SetDataRegenerateOnlyAtNightRaw(int level, int value)
         {
-            _modifications[896819789, level] = new LevelObjectDataModification{Id = 896819789, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 5};
+            _modifications[896819789, level] = new LevelObjectDataModification{Id = 896819789, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 5};
         }
 
         private bool GetIsDataRegenerateOnlyAtNightModified(int level)
         {
             return _modifications.ContainsKey(896819789, level);
+        }
+
+        private bool GetDataRegenerateOnlyAtNight(int level)
+        {
+            return GetDataRegenerateOnlyAtNightRaw(level).ToBool(this);
+        }
+
+        private void SetDataRegenerateOnlyAtNight(int level, bool value)
+        {
+            SetDataRegenerateOnlyAtNightRaw(level, value.ToRaw(null, null));
         }
     }
 }

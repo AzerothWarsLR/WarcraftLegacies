@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -12,15 +13,17 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ObjectProperty<string>> _dataAllowedUnitTypeRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAllowedUnitTypeModified;
         private readonly Lazy<ObjectProperty<Unit>> _dataAllowedUnitType;
-        private readonly Lazy<ObjectProperty<bool>> _dataSummonBusyUnits;
+        private readonly Lazy<ObjectProperty<int>> _dataSummonBusyUnitsRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataSummonBusyUnitsModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataSummonBusyUnits;
         public BattlestationsChaos(): base(1819566675)
         {
             _dataAllowedUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataAllowedUnitTypeRaw, SetDataAllowedUnitTypeRaw));
             _isDataAllowedUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAllowedUnitTypeModified));
             _dataAllowedUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataAllowedUnitType, SetDataAllowedUnitType));
-            _dataSummonBusyUnits = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSummonBusyUnits, SetDataSummonBusyUnits));
+            _dataSummonBusyUnitsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataSummonBusyUnitsRaw, SetDataSummonBusyUnitsRaw));
             _isDataSummonBusyUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonBusyUnitsModified));
+            _dataSummonBusyUnits = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSummonBusyUnits, SetDataSummonBusyUnits));
         }
 
         public BattlestationsChaos(int newId): base(1819566675, newId)
@@ -28,8 +31,9 @@ namespace War3Api.Object.Abilities
             _dataAllowedUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataAllowedUnitTypeRaw, SetDataAllowedUnitTypeRaw));
             _isDataAllowedUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAllowedUnitTypeModified));
             _dataAllowedUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataAllowedUnitType, SetDataAllowedUnitType));
-            _dataSummonBusyUnits = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSummonBusyUnits, SetDataSummonBusyUnits));
+            _dataSummonBusyUnitsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataSummonBusyUnitsRaw, SetDataSummonBusyUnitsRaw));
             _isDataSummonBusyUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonBusyUnitsModified));
+            _dataSummonBusyUnits = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSummonBusyUnits, SetDataSummonBusyUnits));
         }
 
         public BattlestationsChaos(string newRawcode): base(1819566675, newRawcode)
@@ -37,8 +41,9 @@ namespace War3Api.Object.Abilities
             _dataAllowedUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataAllowedUnitTypeRaw, SetDataAllowedUnitTypeRaw));
             _isDataAllowedUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAllowedUnitTypeModified));
             _dataAllowedUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataAllowedUnitType, SetDataAllowedUnitType));
-            _dataSummonBusyUnits = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSummonBusyUnits, SetDataSummonBusyUnits));
+            _dataSummonBusyUnitsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataSummonBusyUnitsRaw, SetDataSummonBusyUnitsRaw));
             _isDataSummonBusyUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonBusyUnitsModified));
+            _dataSummonBusyUnits = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSummonBusyUnits, SetDataSummonBusyUnits));
         }
 
         public BattlestationsChaos(ObjectDatabase db): base(1819566675, db)
@@ -46,8 +51,9 @@ namespace War3Api.Object.Abilities
             _dataAllowedUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataAllowedUnitTypeRaw, SetDataAllowedUnitTypeRaw));
             _isDataAllowedUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAllowedUnitTypeModified));
             _dataAllowedUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataAllowedUnitType, SetDataAllowedUnitType));
-            _dataSummonBusyUnits = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSummonBusyUnits, SetDataSummonBusyUnits));
+            _dataSummonBusyUnitsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataSummonBusyUnitsRaw, SetDataSummonBusyUnitsRaw));
             _isDataSummonBusyUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonBusyUnitsModified));
+            _dataSummonBusyUnits = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSummonBusyUnits, SetDataSummonBusyUnits));
         }
 
         public BattlestationsChaos(int newId, ObjectDatabase db): base(1819566675, newId, db)
@@ -55,8 +61,9 @@ namespace War3Api.Object.Abilities
             _dataAllowedUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataAllowedUnitTypeRaw, SetDataAllowedUnitTypeRaw));
             _isDataAllowedUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAllowedUnitTypeModified));
             _dataAllowedUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataAllowedUnitType, SetDataAllowedUnitType));
-            _dataSummonBusyUnits = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSummonBusyUnits, SetDataSummonBusyUnits));
+            _dataSummonBusyUnitsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataSummonBusyUnitsRaw, SetDataSummonBusyUnitsRaw));
             _isDataSummonBusyUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonBusyUnitsModified));
+            _dataSummonBusyUnits = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSummonBusyUnits, SetDataSummonBusyUnits));
         }
 
         public BattlestationsChaos(string newRawcode, ObjectDatabase db): base(1819566675, newRawcode, db)
@@ -64,15 +71,17 @@ namespace War3Api.Object.Abilities
             _dataAllowedUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataAllowedUnitTypeRaw, SetDataAllowedUnitTypeRaw));
             _isDataAllowedUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAllowedUnitTypeModified));
             _dataAllowedUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataAllowedUnitType, SetDataAllowedUnitType));
-            _dataSummonBusyUnits = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSummonBusyUnits, SetDataSummonBusyUnits));
+            _dataSummonBusyUnitsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataSummonBusyUnitsRaw, SetDataSummonBusyUnitsRaw));
             _isDataSummonBusyUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonBusyUnitsModified));
+            _dataSummonBusyUnits = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSummonBusyUnits, SetDataSummonBusyUnits));
         }
 
         public ObjectProperty<string> DataAllowedUnitTypeRaw => _dataAllowedUnitTypeRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataAllowedUnitTypeModified => _isDataAllowedUnitTypeModified.Value;
         public ObjectProperty<Unit> DataAllowedUnitType => _dataAllowedUnitType.Value;
-        public ObjectProperty<bool> DataSummonBusyUnits => _dataSummonBusyUnits.Value;
+        public ObjectProperty<int> DataSummonBusyUnitsRaw => _dataSummonBusyUnitsRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataSummonBusyUnitsModified => _isDataSummonBusyUnitsModified.Value;
+        public ObjectProperty<bool> DataSummonBusyUnits => _dataSummonBusyUnits.Value;
         private string GetDataAllowedUnitTypeRaw(int level)
         {
             return _modifications[829191234, level].ValueAsString;
@@ -98,19 +107,29 @@ namespace War3Api.Object.Abilities
             SetDataAllowedUnitTypeRaw(level, value.ToRaw(null, null));
         }
 
-        private bool GetDataSummonBusyUnits(int level)
+        private int GetDataSummonBusyUnitsRaw(int level)
         {
-            return _modifications[845968450, level].ValueAsBool;
+            return _modifications[845968450, level].ValueAsInt;
         }
 
-        private void SetDataSummonBusyUnits(int level, bool value)
+        private void SetDataSummonBusyUnitsRaw(int level, int value)
         {
-            _modifications[845968450, level] = new LevelObjectDataModification{Id = 845968450, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 2};
+            _modifications[845968450, level] = new LevelObjectDataModification{Id = 845968450, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 2};
         }
 
         private bool GetIsDataSummonBusyUnitsModified(int level)
         {
             return _modifications.ContainsKey(845968450, level);
+        }
+
+        private bool GetDataSummonBusyUnits(int level)
+        {
+            return GetDataSummonBusyUnitsRaw(level).ToBool(this);
+        }
+
+        private void SetDataSummonBusyUnits(int level, bool value)
+        {
+            SetDataSummonBusyUnitsRaw(level, value.ToRaw(0, 1));
         }
     }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -13,20 +14,24 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMaximumCreepLevelModified;
         private readonly Lazy<ObjectProperty<float>> _dataDamageAmplification;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamageAmplificationModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataTargetIsInvulnerable;
+        private readonly Lazy<ObjectProperty<int>> _dataTargetIsInvulnerableRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataTargetIsInvulnerableModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataTargetIsMagicImmune;
+        private readonly Lazy<ObjectProperty<bool>> _dataTargetIsInvulnerable;
+        private readonly Lazy<ObjectProperty<int>> _dataTargetIsMagicImmuneRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataTargetIsMagicImmuneModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataTargetIsMagicImmune;
         public PossessionChanneling(): base(846426177)
         {
             _dataMaximumCreepLevel = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaximumCreepLevel, SetDataMaximumCreepLevel));
             _isDataMaximumCreepLevelModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaximumCreepLevelModified));
             _dataDamageAmplification = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageAmplification, SetDataDamageAmplification));
             _isDataDamageAmplificationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageAmplificationModified));
-            _dataTargetIsInvulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsInvulnerable, SetDataTargetIsInvulnerable));
+            _dataTargetIsInvulnerableRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTargetIsInvulnerableRaw, SetDataTargetIsInvulnerableRaw));
             _isDataTargetIsInvulnerableModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTargetIsInvulnerableModified));
-            _dataTargetIsMagicImmune = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsMagicImmune, SetDataTargetIsMagicImmune));
+            _dataTargetIsInvulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsInvulnerable, SetDataTargetIsInvulnerable));
+            _dataTargetIsMagicImmuneRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTargetIsMagicImmuneRaw, SetDataTargetIsMagicImmuneRaw));
             _isDataTargetIsMagicImmuneModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTargetIsMagicImmuneModified));
+            _dataTargetIsMagicImmune = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsMagicImmune, SetDataTargetIsMagicImmune));
         }
 
         public PossessionChanneling(int newId): base(846426177, newId)
@@ -35,10 +40,12 @@ namespace War3Api.Object.Abilities
             _isDataMaximumCreepLevelModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaximumCreepLevelModified));
             _dataDamageAmplification = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageAmplification, SetDataDamageAmplification));
             _isDataDamageAmplificationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageAmplificationModified));
-            _dataTargetIsInvulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsInvulnerable, SetDataTargetIsInvulnerable));
+            _dataTargetIsInvulnerableRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTargetIsInvulnerableRaw, SetDataTargetIsInvulnerableRaw));
             _isDataTargetIsInvulnerableModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTargetIsInvulnerableModified));
-            _dataTargetIsMagicImmune = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsMagicImmune, SetDataTargetIsMagicImmune));
+            _dataTargetIsInvulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsInvulnerable, SetDataTargetIsInvulnerable));
+            _dataTargetIsMagicImmuneRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTargetIsMagicImmuneRaw, SetDataTargetIsMagicImmuneRaw));
             _isDataTargetIsMagicImmuneModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTargetIsMagicImmuneModified));
+            _dataTargetIsMagicImmune = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsMagicImmune, SetDataTargetIsMagicImmune));
         }
 
         public PossessionChanneling(string newRawcode): base(846426177, newRawcode)
@@ -47,10 +54,12 @@ namespace War3Api.Object.Abilities
             _isDataMaximumCreepLevelModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaximumCreepLevelModified));
             _dataDamageAmplification = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageAmplification, SetDataDamageAmplification));
             _isDataDamageAmplificationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageAmplificationModified));
-            _dataTargetIsInvulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsInvulnerable, SetDataTargetIsInvulnerable));
+            _dataTargetIsInvulnerableRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTargetIsInvulnerableRaw, SetDataTargetIsInvulnerableRaw));
             _isDataTargetIsInvulnerableModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTargetIsInvulnerableModified));
-            _dataTargetIsMagicImmune = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsMagicImmune, SetDataTargetIsMagicImmune));
+            _dataTargetIsInvulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsInvulnerable, SetDataTargetIsInvulnerable));
+            _dataTargetIsMagicImmuneRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTargetIsMagicImmuneRaw, SetDataTargetIsMagicImmuneRaw));
             _isDataTargetIsMagicImmuneModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTargetIsMagicImmuneModified));
+            _dataTargetIsMagicImmune = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsMagicImmune, SetDataTargetIsMagicImmune));
         }
 
         public PossessionChanneling(ObjectDatabase db): base(846426177, db)
@@ -59,10 +68,12 @@ namespace War3Api.Object.Abilities
             _isDataMaximumCreepLevelModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaximumCreepLevelModified));
             _dataDamageAmplification = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageAmplification, SetDataDamageAmplification));
             _isDataDamageAmplificationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageAmplificationModified));
-            _dataTargetIsInvulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsInvulnerable, SetDataTargetIsInvulnerable));
+            _dataTargetIsInvulnerableRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTargetIsInvulnerableRaw, SetDataTargetIsInvulnerableRaw));
             _isDataTargetIsInvulnerableModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTargetIsInvulnerableModified));
-            _dataTargetIsMagicImmune = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsMagicImmune, SetDataTargetIsMagicImmune));
+            _dataTargetIsInvulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsInvulnerable, SetDataTargetIsInvulnerable));
+            _dataTargetIsMagicImmuneRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTargetIsMagicImmuneRaw, SetDataTargetIsMagicImmuneRaw));
             _isDataTargetIsMagicImmuneModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTargetIsMagicImmuneModified));
+            _dataTargetIsMagicImmune = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsMagicImmune, SetDataTargetIsMagicImmune));
         }
 
         public PossessionChanneling(int newId, ObjectDatabase db): base(846426177, newId, db)
@@ -71,10 +82,12 @@ namespace War3Api.Object.Abilities
             _isDataMaximumCreepLevelModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaximumCreepLevelModified));
             _dataDamageAmplification = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageAmplification, SetDataDamageAmplification));
             _isDataDamageAmplificationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageAmplificationModified));
-            _dataTargetIsInvulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsInvulnerable, SetDataTargetIsInvulnerable));
+            _dataTargetIsInvulnerableRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTargetIsInvulnerableRaw, SetDataTargetIsInvulnerableRaw));
             _isDataTargetIsInvulnerableModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTargetIsInvulnerableModified));
-            _dataTargetIsMagicImmune = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsMagicImmune, SetDataTargetIsMagicImmune));
+            _dataTargetIsInvulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsInvulnerable, SetDataTargetIsInvulnerable));
+            _dataTargetIsMagicImmuneRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTargetIsMagicImmuneRaw, SetDataTargetIsMagicImmuneRaw));
             _isDataTargetIsMagicImmuneModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTargetIsMagicImmuneModified));
+            _dataTargetIsMagicImmune = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsMagicImmune, SetDataTargetIsMagicImmune));
         }
 
         public PossessionChanneling(string newRawcode, ObjectDatabase db): base(846426177, newRawcode, db)
@@ -83,20 +96,24 @@ namespace War3Api.Object.Abilities
             _isDataMaximumCreepLevelModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaximumCreepLevelModified));
             _dataDamageAmplification = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageAmplification, SetDataDamageAmplification));
             _isDataDamageAmplificationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageAmplificationModified));
-            _dataTargetIsInvulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsInvulnerable, SetDataTargetIsInvulnerable));
+            _dataTargetIsInvulnerableRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTargetIsInvulnerableRaw, SetDataTargetIsInvulnerableRaw));
             _isDataTargetIsInvulnerableModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTargetIsInvulnerableModified));
-            _dataTargetIsMagicImmune = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsMagicImmune, SetDataTargetIsMagicImmune));
+            _dataTargetIsInvulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsInvulnerable, SetDataTargetIsInvulnerable));
+            _dataTargetIsMagicImmuneRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTargetIsMagicImmuneRaw, SetDataTargetIsMagicImmuneRaw));
             _isDataTargetIsMagicImmuneModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTargetIsMagicImmuneModified));
+            _dataTargetIsMagicImmune = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataTargetIsMagicImmune, SetDataTargetIsMagicImmune));
         }
 
         public ObjectProperty<int> DataMaximumCreepLevel => _dataMaximumCreepLevel.Value;
         public ReadOnlyObjectProperty<bool> IsDataMaximumCreepLevelModified => _isDataMaximumCreepLevelModified.Value;
         public ObjectProperty<float> DataDamageAmplification => _dataDamageAmplification.Value;
         public ReadOnlyObjectProperty<bool> IsDataDamageAmplificationModified => _isDataDamageAmplificationModified.Value;
-        public ObjectProperty<bool> DataTargetIsInvulnerable => _dataTargetIsInvulnerable.Value;
+        public ObjectProperty<int> DataTargetIsInvulnerableRaw => _dataTargetIsInvulnerableRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataTargetIsInvulnerableModified => _isDataTargetIsInvulnerableModified.Value;
-        public ObjectProperty<bool> DataTargetIsMagicImmune => _dataTargetIsMagicImmune.Value;
+        public ObjectProperty<bool> DataTargetIsInvulnerable => _dataTargetIsInvulnerable.Value;
+        public ObjectProperty<int> DataTargetIsMagicImmuneRaw => _dataTargetIsMagicImmuneRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataTargetIsMagicImmuneModified => _isDataTargetIsMagicImmuneModified.Value;
+        public ObjectProperty<bool> DataTargetIsMagicImmune => _dataTargetIsMagicImmune.Value;
         private int GetDataMaximumCreepLevel(int level)
         {
             return _modifications[829648720, level].ValueAsInt;
@@ -127,14 +144,14 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(846425936, level);
         }
 
-        private bool GetDataTargetIsInvulnerable(int level)
+        private int GetDataTargetIsInvulnerableRaw(int level)
         {
-            return _modifications[863203152, level].ValueAsBool;
+            return _modifications[863203152, level].ValueAsInt;
         }
 
-        private void SetDataTargetIsInvulnerable(int level, bool value)
+        private void SetDataTargetIsInvulnerableRaw(int level, int value)
         {
-            _modifications[863203152, level] = new LevelObjectDataModification{Id = 863203152, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 3};
+            _modifications[863203152, level] = new LevelObjectDataModification{Id = 863203152, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 3};
         }
 
         private bool GetIsDataTargetIsInvulnerableModified(int level)
@@ -142,19 +159,39 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(863203152, level);
         }
 
-        private bool GetDataTargetIsMagicImmune(int level)
+        private bool GetDataTargetIsInvulnerable(int level)
         {
-            return _modifications[879980368, level].ValueAsBool;
+            return GetDataTargetIsInvulnerableRaw(level).ToBool(this);
         }
 
-        private void SetDataTargetIsMagicImmune(int level, bool value)
+        private void SetDataTargetIsInvulnerable(int level, bool value)
         {
-            _modifications[879980368, level] = new LevelObjectDataModification{Id = 879980368, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 4};
+            SetDataTargetIsInvulnerableRaw(level, value.ToRaw(null, null));
+        }
+
+        private int GetDataTargetIsMagicImmuneRaw(int level)
+        {
+            return _modifications[879980368, level].ValueAsInt;
+        }
+
+        private void SetDataTargetIsMagicImmuneRaw(int level, int value)
+        {
+            _modifications[879980368, level] = new LevelObjectDataModification{Id = 879980368, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 4};
         }
 
         private bool GetIsDataTargetIsMagicImmuneModified(int level)
         {
             return _modifications.ContainsKey(879980368, level);
+        }
+
+        private bool GetDataTargetIsMagicImmune(int level)
+        {
+            return GetDataTargetIsMagicImmuneRaw(level).ToBool(this);
+        }
+
+        private void SetDataTargetIsMagicImmune(int level, bool value)
+        {
+            SetDataTargetIsMagicImmuneRaw(level, value.ToRaw(null, null));
         }
     }
 }

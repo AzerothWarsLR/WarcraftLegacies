@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -19,8 +20,9 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ObjectProperty<ChannelFlags>> _dataOptions;
         private readonly Lazy<ObjectProperty<float>> _dataArtDuration;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataArtDurationModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataDisableOtherAbilities;
+        private readonly Lazy<ObjectProperty<int>> _dataDisableOtherAbilitiesRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDisableOtherAbilitiesModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataDisableOtherAbilities;
         private readonly Lazy<ObjectProperty<string>> _dataBaseOrderIDRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataBaseOrderIDModified;
         private readonly Lazy<ObjectProperty<string>> _dataBaseOrderID;
@@ -36,8 +38,9 @@ namespace War3Api.Object.Abilities
             _dataOptions = new Lazy<ObjectProperty<ChannelFlags>>(() => new ObjectProperty<ChannelFlags>(GetDataOptions, SetDataOptions));
             _dataArtDuration = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataArtDuration, SetDataArtDuration));
             _isDataArtDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataArtDurationModified));
-            _dataDisableOtherAbilities = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDisableOtherAbilities, SetDataDisableOtherAbilities));
+            _dataDisableOtherAbilitiesRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDisableOtherAbilitiesRaw, SetDataDisableOtherAbilitiesRaw));
             _isDataDisableOtherAbilitiesModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDisableOtherAbilitiesModified));
+            _dataDisableOtherAbilities = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDisableOtherAbilities, SetDataDisableOtherAbilities));
             _dataBaseOrderIDRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderIDRaw, SetDataBaseOrderIDRaw));
             _isDataBaseOrderIDModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBaseOrderIDModified));
             _dataBaseOrderID = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderID, SetDataBaseOrderID));
@@ -55,8 +58,9 @@ namespace War3Api.Object.Abilities
             _dataOptions = new Lazy<ObjectProperty<ChannelFlags>>(() => new ObjectProperty<ChannelFlags>(GetDataOptions, SetDataOptions));
             _dataArtDuration = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataArtDuration, SetDataArtDuration));
             _isDataArtDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataArtDurationModified));
-            _dataDisableOtherAbilities = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDisableOtherAbilities, SetDataDisableOtherAbilities));
+            _dataDisableOtherAbilitiesRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDisableOtherAbilitiesRaw, SetDataDisableOtherAbilitiesRaw));
             _isDataDisableOtherAbilitiesModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDisableOtherAbilitiesModified));
+            _dataDisableOtherAbilities = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDisableOtherAbilities, SetDataDisableOtherAbilities));
             _dataBaseOrderIDRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderIDRaw, SetDataBaseOrderIDRaw));
             _isDataBaseOrderIDModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBaseOrderIDModified));
             _dataBaseOrderID = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderID, SetDataBaseOrderID));
@@ -74,8 +78,9 @@ namespace War3Api.Object.Abilities
             _dataOptions = new Lazy<ObjectProperty<ChannelFlags>>(() => new ObjectProperty<ChannelFlags>(GetDataOptions, SetDataOptions));
             _dataArtDuration = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataArtDuration, SetDataArtDuration));
             _isDataArtDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataArtDurationModified));
-            _dataDisableOtherAbilities = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDisableOtherAbilities, SetDataDisableOtherAbilities));
+            _dataDisableOtherAbilitiesRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDisableOtherAbilitiesRaw, SetDataDisableOtherAbilitiesRaw));
             _isDataDisableOtherAbilitiesModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDisableOtherAbilitiesModified));
+            _dataDisableOtherAbilities = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDisableOtherAbilities, SetDataDisableOtherAbilities));
             _dataBaseOrderIDRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderIDRaw, SetDataBaseOrderIDRaw));
             _isDataBaseOrderIDModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBaseOrderIDModified));
             _dataBaseOrderID = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderID, SetDataBaseOrderID));
@@ -93,8 +98,9 @@ namespace War3Api.Object.Abilities
             _dataOptions = new Lazy<ObjectProperty<ChannelFlags>>(() => new ObjectProperty<ChannelFlags>(GetDataOptions, SetDataOptions));
             _dataArtDuration = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataArtDuration, SetDataArtDuration));
             _isDataArtDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataArtDurationModified));
-            _dataDisableOtherAbilities = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDisableOtherAbilities, SetDataDisableOtherAbilities));
+            _dataDisableOtherAbilitiesRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDisableOtherAbilitiesRaw, SetDataDisableOtherAbilitiesRaw));
             _isDataDisableOtherAbilitiesModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDisableOtherAbilitiesModified));
+            _dataDisableOtherAbilities = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDisableOtherAbilities, SetDataDisableOtherAbilities));
             _dataBaseOrderIDRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderIDRaw, SetDataBaseOrderIDRaw));
             _isDataBaseOrderIDModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBaseOrderIDModified));
             _dataBaseOrderID = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderID, SetDataBaseOrderID));
@@ -112,8 +118,9 @@ namespace War3Api.Object.Abilities
             _dataOptions = new Lazy<ObjectProperty<ChannelFlags>>(() => new ObjectProperty<ChannelFlags>(GetDataOptions, SetDataOptions));
             _dataArtDuration = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataArtDuration, SetDataArtDuration));
             _isDataArtDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataArtDurationModified));
-            _dataDisableOtherAbilities = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDisableOtherAbilities, SetDataDisableOtherAbilities));
+            _dataDisableOtherAbilitiesRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDisableOtherAbilitiesRaw, SetDataDisableOtherAbilitiesRaw));
             _isDataDisableOtherAbilitiesModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDisableOtherAbilitiesModified));
+            _dataDisableOtherAbilities = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDisableOtherAbilities, SetDataDisableOtherAbilities));
             _dataBaseOrderIDRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderIDRaw, SetDataBaseOrderIDRaw));
             _isDataBaseOrderIDModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBaseOrderIDModified));
             _dataBaseOrderID = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderID, SetDataBaseOrderID));
@@ -131,8 +138,9 @@ namespace War3Api.Object.Abilities
             _dataOptions = new Lazy<ObjectProperty<ChannelFlags>>(() => new ObjectProperty<ChannelFlags>(GetDataOptions, SetDataOptions));
             _dataArtDuration = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataArtDuration, SetDataArtDuration));
             _isDataArtDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataArtDurationModified));
-            _dataDisableOtherAbilities = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDisableOtherAbilities, SetDataDisableOtherAbilities));
+            _dataDisableOtherAbilitiesRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDisableOtherAbilitiesRaw, SetDataDisableOtherAbilitiesRaw));
             _isDataDisableOtherAbilitiesModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDisableOtherAbilitiesModified));
+            _dataDisableOtherAbilities = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDisableOtherAbilities, SetDataDisableOtherAbilities));
             _dataBaseOrderIDRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderIDRaw, SetDataBaseOrderIDRaw));
             _isDataBaseOrderIDModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBaseOrderIDModified));
             _dataBaseOrderID = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataBaseOrderID, SetDataBaseOrderID));
@@ -148,8 +156,9 @@ namespace War3Api.Object.Abilities
         public ObjectProperty<ChannelFlags> DataOptions => _dataOptions.Value;
         public ObjectProperty<float> DataArtDuration => _dataArtDuration.Value;
         public ReadOnlyObjectProperty<bool> IsDataArtDurationModified => _isDataArtDurationModified.Value;
-        public ObjectProperty<bool> DataDisableOtherAbilities => _dataDisableOtherAbilities.Value;
+        public ObjectProperty<int> DataDisableOtherAbilitiesRaw => _dataDisableOtherAbilitiesRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataDisableOtherAbilitiesModified => _isDataDisableOtherAbilitiesModified.Value;
+        public ObjectProperty<bool> DataDisableOtherAbilities => _dataDisableOtherAbilities.Value;
         public ObjectProperty<string> DataBaseOrderIDRaw => _dataBaseOrderIDRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataBaseOrderIDModified => _isDataBaseOrderIDModified.Value;
         public ObjectProperty<string> DataBaseOrderID => _dataBaseOrderID.Value;
@@ -233,19 +242,29 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(879518542, level);
         }
 
-        private bool GetDataDisableOtherAbilities(int level)
+        private int GetDataDisableOtherAbilitiesRaw(int level)
         {
-            return _modifications[896295758, level].ValueAsBool;
+            return _modifications[896295758, level].ValueAsInt;
         }
 
-        private void SetDataDisableOtherAbilities(int level, bool value)
+        private void SetDataDisableOtherAbilitiesRaw(int level, int value)
         {
-            _modifications[896295758, level] = new LevelObjectDataModification{Id = 896295758, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 5};
+            _modifications[896295758, level] = new LevelObjectDataModification{Id = 896295758, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 5};
         }
 
         private bool GetIsDataDisableOtherAbilitiesModified(int level)
         {
             return _modifications.ContainsKey(896295758, level);
+        }
+
+        private bool GetDataDisableOtherAbilities(int level)
+        {
+            return GetDataDisableOtherAbilitiesRaw(level).ToBool(this);
+        }
+
+        private void SetDataDisableOtherAbilities(int level, bool value)
+        {
+            SetDataDisableOtherAbilitiesRaw(level, value.ToRaw(null, null));
         }
 
         private string GetDataBaseOrderIDRaw(int level)

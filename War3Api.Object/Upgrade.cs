@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -18,8 +19,9 @@ namespace War3Api.Object
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isTextTooltipModified;
         private readonly Lazy<ObjectProperty<string>> _textTooltipExtended;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isTextTooltipExtendedModified;
-        private readonly Lazy<ObjectProperty<char>> _textHotkey;
+        private readonly Lazy<ObjectProperty<string>> _textHotkeyRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isTextHotkeyModified;
+        private readonly Lazy<ObjectProperty<char>> _textHotkey;
         private readonly Lazy<ObjectProperty<string>> _artIconRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isArtIconModified;
         private readonly Lazy<ObjectProperty<string>> _artIcon;
@@ -63,8 +65,9 @@ namespace War3Api.Object
             _isTextTooltipModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsTextTooltipModified));
             _textTooltipExtended = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetTextTooltipExtended, SetTextTooltipExtended));
             _isTextTooltipExtendedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsTextTooltipExtendedModified));
-            _textHotkey = new Lazy<ObjectProperty<char>>(() => new ObjectProperty<char>(GetTextHotkey, SetTextHotkey));
+            _textHotkeyRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetTextHotkeyRaw, SetTextHotkeyRaw));
             _isTextHotkeyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsTextHotkeyModified));
+            _textHotkey = new Lazy<ObjectProperty<char>>(() => new ObjectProperty<char>(GetTextHotkey, SetTextHotkey));
             _artIconRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetArtIconRaw, SetArtIconRaw));
             _isArtIconModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsArtIconModified));
             _artIcon = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetArtIcon, SetArtIcon));
@@ -86,8 +89,9 @@ namespace War3Api.Object
             _isTextTooltipModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsTextTooltipModified));
             _textTooltipExtended = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetTextTooltipExtended, SetTextTooltipExtended));
             _isTextTooltipExtendedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsTextTooltipExtendedModified));
-            _textHotkey = new Lazy<ObjectProperty<char>>(() => new ObjectProperty<char>(GetTextHotkey, SetTextHotkey));
+            _textHotkeyRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetTextHotkeyRaw, SetTextHotkeyRaw));
             _isTextHotkeyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsTextHotkeyModified));
+            _textHotkey = new Lazy<ObjectProperty<char>>(() => new ObjectProperty<char>(GetTextHotkey, SetTextHotkey));
             _artIconRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetArtIconRaw, SetArtIconRaw));
             _isArtIconModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsArtIconModified));
             _artIcon = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetArtIcon, SetArtIcon));
@@ -109,8 +113,9 @@ namespace War3Api.Object
             _isTextTooltipModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsTextTooltipModified));
             _textTooltipExtended = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetTextTooltipExtended, SetTextTooltipExtended));
             _isTextTooltipExtendedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsTextTooltipExtendedModified));
-            _textHotkey = new Lazy<ObjectProperty<char>>(() => new ObjectProperty<char>(GetTextHotkey, SetTextHotkey));
+            _textHotkeyRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetTextHotkeyRaw, SetTextHotkeyRaw));
             _isTextHotkeyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsTextHotkeyModified));
+            _textHotkey = new Lazy<ObjectProperty<char>>(() => new ObjectProperty<char>(GetTextHotkey, SetTextHotkey));
             _artIconRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetArtIconRaw, SetArtIconRaw));
             _isArtIconModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsArtIconModified));
             _artIcon = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetArtIcon, SetArtIcon));
@@ -132,8 +137,9 @@ namespace War3Api.Object
             _isTextTooltipModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsTextTooltipModified));
             _textTooltipExtended = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetTextTooltipExtended, SetTextTooltipExtended));
             _isTextTooltipExtendedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsTextTooltipExtendedModified));
-            _textHotkey = new Lazy<ObjectProperty<char>>(() => new ObjectProperty<char>(GetTextHotkey, SetTextHotkey));
+            _textHotkeyRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetTextHotkeyRaw, SetTextHotkeyRaw));
             _isTextHotkeyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsTextHotkeyModified));
+            _textHotkey = new Lazy<ObjectProperty<char>>(() => new ObjectProperty<char>(GetTextHotkey, SetTextHotkey));
             _artIconRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetArtIconRaw, SetArtIconRaw));
             _isArtIconModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsArtIconModified));
             _artIcon = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetArtIcon, SetArtIcon));
@@ -155,8 +161,9 @@ namespace War3Api.Object
             _isTextTooltipModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsTextTooltipModified));
             _textTooltipExtended = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetTextTooltipExtended, SetTextTooltipExtended));
             _isTextTooltipExtendedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsTextTooltipExtendedModified));
-            _textHotkey = new Lazy<ObjectProperty<char>>(() => new ObjectProperty<char>(GetTextHotkey, SetTextHotkey));
+            _textHotkeyRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetTextHotkeyRaw, SetTextHotkeyRaw));
             _isTextHotkeyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsTextHotkeyModified));
+            _textHotkey = new Lazy<ObjectProperty<char>>(() => new ObjectProperty<char>(GetTextHotkey, SetTextHotkey));
             _artIconRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetArtIconRaw, SetArtIconRaw));
             _isArtIconModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsArtIconModified));
             _artIcon = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetArtIcon, SetArtIcon));
@@ -178,8 +185,9 @@ namespace War3Api.Object
             _isTextTooltipModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsTextTooltipModified));
             _textTooltipExtended = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetTextTooltipExtended, SetTextTooltipExtended));
             _isTextTooltipExtendedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsTextTooltipExtendedModified));
-            _textHotkey = new Lazy<ObjectProperty<char>>(() => new ObjectProperty<char>(GetTextHotkey, SetTextHotkey));
+            _textHotkeyRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetTextHotkeyRaw, SetTextHotkeyRaw));
             _isTextHotkeyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsTextHotkeyModified));
+            _textHotkey = new Lazy<ObjectProperty<char>>(() => new ObjectProperty<char>(GetTextHotkey, SetTextHotkey));
             _artIconRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetArtIconRaw, SetArtIconRaw));
             _isArtIconModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsArtIconModified));
             _artIcon = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetArtIcon, SetArtIcon));
@@ -213,8 +221,9 @@ namespace War3Api.Object
         public ReadOnlyObjectProperty<bool> IsTextTooltipModified => _isTextTooltipModified.Value;
         public ObjectProperty<string> TextTooltipExtended => _textTooltipExtended.Value;
         public ReadOnlyObjectProperty<bool> IsTextTooltipExtendedModified => _isTextTooltipExtendedModified.Value;
-        public ObjectProperty<char> TextHotkey => _textHotkey.Value;
+        public ObjectProperty<string> TextHotkeyRaw => _textHotkeyRaw.Value;
         public ReadOnlyObjectProperty<bool> IsTextHotkeyModified => _isTextHotkeyModified.Value;
+        public ObjectProperty<char> TextHotkey => _textHotkey.Value;
         public int ArtButtonPositionX
         {
             get => _modifications[2020631143].ValueAsInt;
@@ -430,26 +439,38 @@ namespace War3Api.Object
         }
 
         public bool IsDataCode4Modified => _modifications.ContainsKey(879715175);
-        public bool StatsTransferWithUnitOwnership
+        public int StatsTransferWithUnitOwnershipRaw
         {
-            get => _modifications[1752066407].ValueAsBool;
-            set => _modifications[1752066407] = new LevelObjectDataModification{Id = 1752066407, Type = ObjectDataType.Bool, Value = value, Level = 0};
+            get => _modifications[1752066407].ValueAsInt;
+            set => _modifications[1752066407] = new LevelObjectDataModification{Id = 1752066407, Type = ObjectDataType.Int, Value = value, Level = 0};
         }
 
         public bool IsStatsTransferWithUnitOwnershipModified => _modifications.ContainsKey(1752066407);
+        public bool StatsTransferWithUnitOwnership
+        {
+            get => StatsTransferWithUnitOwnershipRaw.ToBool(this);
+            set => StatsTransferWithUnitOwnershipRaw = value.ToRaw(null, null);
+        }
+
         public ObjectProperty<string> TechtreeRequirementsRaw => _techtreeRequirementsRaw.Value;
         public ReadOnlyObjectProperty<bool> IsTechtreeRequirementsModified => _isTechtreeRequirementsModified.Value;
         public ObjectProperty<IEnumerable<Tech>> TechtreeRequirements => _techtreeRequirements.Value;
         public ObjectProperty<string> TechtreeRequirementsLevelsRaw => _techtreeRequirementsLevelsRaw.Value;
         public ReadOnlyObjectProperty<bool> IsTechtreeRequirementsLevelsModified => _isTechtreeRequirementsLevelsModified.Value;
         public ObjectProperty<IEnumerable<int>> TechtreeRequirementsLevels => _techtreeRequirementsLevels.Value;
-        public bool StatsAppliesToAllUnits
+        public int StatsAppliesToAllUnitsRaw
         {
-            get => _modifications[1651469415].ValueAsBool;
-            set => _modifications[1651469415] = new LevelObjectDataModification{Id = 1651469415, Type = ObjectDataType.Bool, Value = value, Level = 0};
+            get => _modifications[1651469415].ValueAsInt;
+            set => _modifications[1651469415] = new LevelObjectDataModification{Id = 1651469415, Type = ObjectDataType.Int, Value = value, Level = 0};
         }
 
         public bool IsStatsAppliesToAllUnitsModified => _modifications.ContainsKey(1651469415);
+        public bool StatsAppliesToAllUnits
+        {
+            get => StatsAppliesToAllUnitsRaw.ToBool(this);
+            set => StatsAppliesToAllUnitsRaw = value.ToRaw(null, null);
+        }
+
         public static explicit operator LevelObjectModification(Upgrade upgrade) => new LevelObjectModification{OldId = upgrade.OldId, NewId = upgrade.NewId, Modifications = upgrade.Modifications.ToList()};
         public void AddModifications(List<LevelObjectDataModification> modifications)
         {
@@ -517,19 +538,29 @@ namespace War3Api.Object
             return _modifications.ContainsKey(828536167, level);
         }
 
-        private char GetTextHotkey(int level)
+        private string GetTextHotkeyRaw(int level)
         {
-            return _modifications[829122663, level].ValueAsChar;
+            return _modifications[829122663, level].ValueAsString;
         }
 
-        private void SetTextHotkey(int level, char value)
+        private void SetTextHotkeyRaw(int level, string value)
         {
-            _modifications[829122663, level] = new LevelObjectDataModification{Id = 829122663, Type = ObjectDataType.Char, Value = value, Level = level};
+            _modifications[829122663, level] = new LevelObjectDataModification{Id = 829122663, Type = ObjectDataType.String, Value = value, Level = level};
         }
 
         private bool GetIsTextHotkeyModified(int level)
         {
             return _modifications.ContainsKey(829122663, level);
+        }
+
+        private char GetTextHotkey(int level)
+        {
+            return GetTextHotkeyRaw(level).ToChar(this);
+        }
+
+        private void SetTextHotkey(int level, char value)
+        {
+            SetTextHotkeyRaw(level, value.ToRaw(null, null));
         }
 
         private string GetArtIconRaw(int level)

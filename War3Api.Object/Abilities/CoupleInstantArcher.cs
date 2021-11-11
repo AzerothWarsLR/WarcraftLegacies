@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -15,8 +16,9 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ObjectProperty<string>> _dataPartnerUnitTypeRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataPartnerUnitTypeModified;
         private readonly Lazy<ObjectProperty<Unit>> _dataPartnerUnitType;
-        private readonly Lazy<ObjectProperty<bool>> _dataMoveToPartner;
+        private readonly Lazy<ObjectProperty<int>> _dataMoveToPartnerRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMoveToPartnerModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataMoveToPartner;
         public CoupleInstantArcher(): base(846160705)
         {
             _dataResultingUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataResultingUnitTypeRaw, SetDataResultingUnitTypeRaw));
@@ -25,8 +27,9 @@ namespace War3Api.Object.Abilities
             _dataPartnerUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataPartnerUnitTypeRaw, SetDataPartnerUnitTypeRaw));
             _isDataPartnerUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPartnerUnitTypeModified));
             _dataPartnerUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataPartnerUnitType, SetDataPartnerUnitType));
-            _dataMoveToPartner = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataMoveToPartner, SetDataMoveToPartner));
+            _dataMoveToPartnerRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMoveToPartnerRaw, SetDataMoveToPartnerRaw));
             _isDataMoveToPartnerModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMoveToPartnerModified));
+            _dataMoveToPartner = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataMoveToPartner, SetDataMoveToPartner));
         }
 
         public CoupleInstantArcher(int newId): base(846160705, newId)
@@ -37,8 +40,9 @@ namespace War3Api.Object.Abilities
             _dataPartnerUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataPartnerUnitTypeRaw, SetDataPartnerUnitTypeRaw));
             _isDataPartnerUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPartnerUnitTypeModified));
             _dataPartnerUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataPartnerUnitType, SetDataPartnerUnitType));
-            _dataMoveToPartner = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataMoveToPartner, SetDataMoveToPartner));
+            _dataMoveToPartnerRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMoveToPartnerRaw, SetDataMoveToPartnerRaw));
             _isDataMoveToPartnerModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMoveToPartnerModified));
+            _dataMoveToPartner = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataMoveToPartner, SetDataMoveToPartner));
         }
 
         public CoupleInstantArcher(string newRawcode): base(846160705, newRawcode)
@@ -49,8 +53,9 @@ namespace War3Api.Object.Abilities
             _dataPartnerUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataPartnerUnitTypeRaw, SetDataPartnerUnitTypeRaw));
             _isDataPartnerUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPartnerUnitTypeModified));
             _dataPartnerUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataPartnerUnitType, SetDataPartnerUnitType));
-            _dataMoveToPartner = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataMoveToPartner, SetDataMoveToPartner));
+            _dataMoveToPartnerRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMoveToPartnerRaw, SetDataMoveToPartnerRaw));
             _isDataMoveToPartnerModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMoveToPartnerModified));
+            _dataMoveToPartner = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataMoveToPartner, SetDataMoveToPartner));
         }
 
         public CoupleInstantArcher(ObjectDatabase db): base(846160705, db)
@@ -61,8 +66,9 @@ namespace War3Api.Object.Abilities
             _dataPartnerUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataPartnerUnitTypeRaw, SetDataPartnerUnitTypeRaw));
             _isDataPartnerUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPartnerUnitTypeModified));
             _dataPartnerUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataPartnerUnitType, SetDataPartnerUnitType));
-            _dataMoveToPartner = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataMoveToPartner, SetDataMoveToPartner));
+            _dataMoveToPartnerRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMoveToPartnerRaw, SetDataMoveToPartnerRaw));
             _isDataMoveToPartnerModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMoveToPartnerModified));
+            _dataMoveToPartner = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataMoveToPartner, SetDataMoveToPartner));
         }
 
         public CoupleInstantArcher(int newId, ObjectDatabase db): base(846160705, newId, db)
@@ -73,8 +79,9 @@ namespace War3Api.Object.Abilities
             _dataPartnerUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataPartnerUnitTypeRaw, SetDataPartnerUnitTypeRaw));
             _isDataPartnerUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPartnerUnitTypeModified));
             _dataPartnerUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataPartnerUnitType, SetDataPartnerUnitType));
-            _dataMoveToPartner = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataMoveToPartner, SetDataMoveToPartner));
+            _dataMoveToPartnerRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMoveToPartnerRaw, SetDataMoveToPartnerRaw));
             _isDataMoveToPartnerModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMoveToPartnerModified));
+            _dataMoveToPartner = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataMoveToPartner, SetDataMoveToPartner));
         }
 
         public CoupleInstantArcher(string newRawcode, ObjectDatabase db): base(846160705, newRawcode, db)
@@ -85,8 +92,9 @@ namespace War3Api.Object.Abilities
             _dataPartnerUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataPartnerUnitTypeRaw, SetDataPartnerUnitTypeRaw));
             _isDataPartnerUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPartnerUnitTypeModified));
             _dataPartnerUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataPartnerUnitType, SetDataPartnerUnitType));
-            _dataMoveToPartner = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataMoveToPartner, SetDataMoveToPartner));
+            _dataMoveToPartnerRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMoveToPartnerRaw, SetDataMoveToPartnerRaw));
             _isDataMoveToPartnerModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMoveToPartnerModified));
+            _dataMoveToPartner = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataMoveToPartner, SetDataMoveToPartner));
         }
 
         public ObjectProperty<string> DataResultingUnitTypeRaw => _dataResultingUnitTypeRaw.Value;
@@ -95,8 +103,9 @@ namespace War3Api.Object.Abilities
         public ObjectProperty<string> DataPartnerUnitTypeRaw => _dataPartnerUnitTypeRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataPartnerUnitTypeModified => _isDataPartnerUnitTypeModified.Value;
         public ObjectProperty<Unit> DataPartnerUnitType => _dataPartnerUnitType.Value;
-        public ObjectProperty<bool> DataMoveToPartner => _dataMoveToPartner.Value;
+        public ObjectProperty<int> DataMoveToPartnerRaw => _dataMoveToPartnerRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataMoveToPartnerModified => _isDataMoveToPartnerModified.Value;
+        public ObjectProperty<bool> DataMoveToPartner => _dataMoveToPartner.Value;
         private string GetDataResultingUnitTypeRaw(int level)
         {
             return _modifications[1969319779, level].ValueAsString;
@@ -147,19 +156,29 @@ namespace War3Api.Object.Abilities
             SetDataPartnerUnitTypeRaw(level, value.ToRaw(null, null));
         }
 
-        private bool GetDataMoveToPartner(int level)
+        private int GetDataMoveToPartnerRaw(int level)
         {
-            return _modifications[845246307, level].ValueAsBool;
+            return _modifications[845246307, level].ValueAsInt;
         }
 
-        private void SetDataMoveToPartner(int level, bool value)
+        private void SetDataMoveToPartnerRaw(int level, int value)
         {
-            _modifications[845246307, level] = new LevelObjectDataModification{Id = 845246307, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 2};
+            _modifications[845246307, level] = new LevelObjectDataModification{Id = 845246307, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 2};
         }
 
         private bool GetIsDataMoveToPartnerModified(int level)
         {
             return _modifications.ContainsKey(845246307, level);
+        }
+
+        private bool GetDataMoveToPartner(int level)
+        {
+            return GetDataMoveToPartnerRaw(level).ToBool(this);
+        }
+
+        private void SetDataMoveToPartner(int level, bool value)
+        {
+            SetDataMoveToPartnerRaw(level, value.ToRaw(null, null));
         }
     }
 }

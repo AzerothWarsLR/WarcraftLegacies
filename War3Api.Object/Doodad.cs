@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -134,13 +135,19 @@ namespace War3Api.Object
             set => EditorTilesetsRaw = value.ToRaw(null, null);
         }
 
-        public bool EditorHasTilesetSpecificData
+        public int EditorHasTilesetSpecificDataRaw
         {
-            get => _modifications[1886614628].ValueAsBool;
-            set => _modifications[1886614628] = new VariationObjectDataModification{Id = 1886614628, Type = ObjectDataType.Bool, Value = value, Variation = 0};
+            get => _modifications[1886614628].ValueAsInt;
+            set => _modifications[1886614628] = new VariationObjectDataModification{Id = 1886614628, Type = ObjectDataType.Int, Value = value, Variation = 0};
         }
 
         public bool IsEditorHasTilesetSpecificDataModified => _modifications.ContainsKey(1886614628);
+        public bool EditorHasTilesetSpecificData
+        {
+            get => EditorHasTilesetSpecificDataRaw.ToBool(this);
+            set => EditorHasTilesetSpecificDataRaw = value.ToRaw(null, null);
+        }
+
         public string ArtModelFileRaw
         {
             get => _modifications[1818846820].ValueAsString;
@@ -195,27 +202,45 @@ namespace War3Api.Object
         }
 
         public bool IsEditorMaximumScaleModified => _modifications.ContainsKey(1935764836);
-        public bool EditorCanPlaceRandomScale
+        public int EditorCanPlaceRandomScaleRaw
         {
-            get => _modifications[1919968100].ValueAsBool;
-            set => _modifications[1919968100] = new VariationObjectDataModification{Id = 1919968100, Type = ObjectDataType.Bool, Value = value, Variation = 0};
+            get => _modifications[1919968100].ValueAsInt;
+            set => _modifications[1919968100] = new VariationObjectDataModification{Id = 1919968100, Type = ObjectDataType.Int, Value = value, Variation = 0};
         }
 
         public bool IsEditorCanPlaceRandomScaleModified => _modifications.ContainsKey(1919968100);
-        public bool EditorUseClickHelper
+        public bool EditorCanPlaceRandomScale
         {
-            get => _modifications[1751348580].ValueAsBool;
-            set => _modifications[1751348580] = new VariationObjectDataModification{Id = 1751348580, Type = ObjectDataType.Bool, Value = value, Variation = 0};
+            get => EditorCanPlaceRandomScaleRaw.ToBool(this);
+            set => EditorCanPlaceRandomScaleRaw = value.ToRaw(null, null);
+        }
+
+        public int EditorUseClickHelperRaw
+        {
+            get => _modifications[1751348580].ValueAsInt;
+            set => _modifications[1751348580] = new VariationObjectDataModification{Id = 1751348580, Type = ObjectDataType.Int, Value = value, Variation = 0};
         }
 
         public bool IsEditorUseClickHelperModified => _modifications.ContainsKey(1751348580);
-        public bool EditorIgnoreModelClicks
+        public bool EditorUseClickHelper
         {
-            get => _modifications[1668114788].ValueAsBool;
-            set => _modifications[1668114788] = new VariationObjectDataModification{Id = 1668114788, Type = ObjectDataType.Bool, Value = value, Variation = 0};
+            get => EditorUseClickHelperRaw.ToBool(this);
+            set => EditorUseClickHelperRaw = value.ToRaw(null, null);
+        }
+
+        public int EditorIgnoreModelClicksRaw
+        {
+            get => _modifications[1668114788].ValueAsInt;
+            set => _modifications[1668114788] = new VariationObjectDataModification{Id = 1668114788, Type = ObjectDataType.Int, Value = value, Variation = 0};
         }
 
         public bool IsEditorIgnoreModelClicksModified => _modifications.ContainsKey(1668114788);
+        public bool EditorIgnoreModelClicks
+        {
+            get => EditorIgnoreModelClicksRaw.ToBool(this);
+            set => EditorIgnoreModelClicksRaw = value.ToRaw(null, null);
+        }
+
         public float ArtMaximumPitchAngleDegrees
         {
             get => _modifications[1885433188].ValueAsFloat;
@@ -237,13 +262,19 @@ namespace War3Api.Object
         }
 
         public bool IsArtVisibilityRadiusModified => _modifications.ContainsKey(1936291428);
-        public bool PathingWalkable
+        public int PathingWalkableRaw
         {
-            get => _modifications[1802270564].ValueAsBool;
-            set => _modifications[1802270564] = new VariationObjectDataModification{Id = 1802270564, Type = ObjectDataType.Bool, Value = value, Variation = 0};
+            get => _modifications[1802270564].ValueAsInt;
+            set => _modifications[1802270564] = new VariationObjectDataModification{Id = 1802270564, Type = ObjectDataType.Int, Value = value, Variation = 0};
         }
 
         public bool IsPathingWalkableModified => _modifications.ContainsKey(1802270564);
+        public bool PathingWalkable
+        {
+            get => PathingWalkableRaw.ToBool(this);
+            set => PathingWalkableRaw = value.ToRaw(null, null);
+        }
+
         public int ArtVariations
         {
             get => _modifications[1918989924].ValueAsInt;
@@ -251,48 +282,84 @@ namespace War3Api.Object
         }
 
         public bool IsArtVariationsModified => _modifications.ContainsKey(1918989924);
-        public bool EditorPlaceableOnCliffs
+        public int EditorPlaceableOnCliffsRaw
         {
-            get => _modifications[1668181860].ValueAsBool;
-            set => _modifications[1668181860] = new VariationObjectDataModification{Id = 1668181860, Type = ObjectDataType.Bool, Value = value, Variation = 0};
+            get => _modifications[1668181860].ValueAsInt;
+            set => _modifications[1668181860] = new VariationObjectDataModification{Id = 1668181860, Type = ObjectDataType.Int, Value = value, Variation = 0};
         }
 
         public bool IsEditorPlaceableOnCliffsModified => _modifications.ContainsKey(1668181860);
-        public bool EditorPlaceableOnWater
+        public bool EditorPlaceableOnCliffs
         {
-            get => _modifications[2003726180].ValueAsBool;
-            set => _modifications[2003726180] = new VariationObjectDataModification{Id = 2003726180, Type = ObjectDataType.Bool, Value = value, Variation = 0};
+            get => EditorPlaceableOnCliffsRaw.ToBool(this);
+            set => EditorPlaceableOnCliffsRaw = value.ToRaw(null, null);
+        }
+
+        public int EditorPlaceableOnWaterRaw
+        {
+            get => _modifications[2003726180].ValueAsInt;
+            set => _modifications[2003726180] = new VariationObjectDataModification{Id = 2003726180, Type = ObjectDataType.Int, Value = value, Variation = 0};
         }
 
         public bool IsEditorPlaceableOnWaterModified => _modifications.ContainsKey(2003726180);
-        public bool ArtFloats
+        public bool EditorPlaceableOnWater
         {
-            get => _modifications[1953261156].ValueAsBool;
-            set => _modifications[1953261156] = new VariationObjectDataModification{Id = 1953261156, Type = ObjectDataType.Bool, Value = value, Variation = 0};
+            get => EditorPlaceableOnWaterRaw.ToBool(this);
+            set => EditorPlaceableOnWaterRaw = value.ToRaw(null, null);
+        }
+
+        public int ArtFloatsRaw
+        {
+            get => _modifications[1953261156].ValueAsInt;
+            set => _modifications[1953261156] = new VariationObjectDataModification{Id = 1953261156, Type = ObjectDataType.Int, Value = value, Variation = 0};
         }
 
         public bool IsArtFloatsModified => _modifications.ContainsKey(1953261156);
-        public bool ArtHasAShadow
+        public bool ArtFloats
         {
-            get => _modifications[1684566884].ValueAsBool;
-            set => _modifications[1684566884] = new VariationObjectDataModification{Id = 1684566884, Type = ObjectDataType.Bool, Value = value, Variation = 0};
+            get => ArtFloatsRaw.ToBool(this);
+            set => ArtFloatsRaw = value.ToRaw(null, null);
+        }
+
+        public int ArtHasAShadowRaw
+        {
+            get => _modifications[1684566884].ValueAsInt;
+            set => _modifications[1684566884] = new VariationObjectDataModification{Id = 1684566884, Type = ObjectDataType.Int, Value = value, Variation = 0};
         }
 
         public bool IsArtHasAShadowModified => _modifications.ContainsKey(1684566884);
-        public bool ArtShowInFog
+        public bool ArtHasAShadow
         {
-            get => _modifications[1718121316].ValueAsBool;
-            set => _modifications[1718121316] = new VariationObjectDataModification{Id = 1718121316, Type = ObjectDataType.Bool, Value = value, Variation = 0};
+            get => ArtHasAShadowRaw.ToBool(this);
+            set => ArtHasAShadowRaw = value.ToRaw(null, null);
+        }
+
+        public int ArtShowInFogRaw
+        {
+            get => _modifications[1718121316].ValueAsInt;
+            set => _modifications[1718121316] = new VariationObjectDataModification{Id = 1718121316, Type = ObjectDataType.Int, Value = value, Variation = 0};
         }
 
         public bool IsArtShowInFogModified => _modifications.ContainsKey(1718121316);
-        public bool ArtAnimateInFog
+        public bool ArtShowInFog
         {
-            get => _modifications[1718509924].ValueAsBool;
-            set => _modifications[1718509924] = new VariationObjectDataModification{Id = 1718509924, Type = ObjectDataType.Bool, Value = value, Variation = 0};
+            get => ArtShowInFogRaw.ToBool(this);
+            set => ArtShowInFogRaw = value.ToRaw(null, null);
+        }
+
+        public int ArtAnimateInFogRaw
+        {
+            get => _modifications[1718509924].ValueAsInt;
+            set => _modifications[1718509924] = new VariationObjectDataModification{Id = 1718509924, Type = ObjectDataType.Int, Value = value, Variation = 0};
         }
 
         public bool IsArtAnimateInFogModified => _modifications.ContainsKey(1718509924);
+        public bool ArtAnimateInFog
+        {
+            get => ArtAnimateInFogRaw.ToBool(this);
+            set => ArtAnimateInFogRaw = value.ToRaw(null, null);
+        }
+
         public float ArtFixedRotation
         {
             get => _modifications[1920493156].ValueAsFloat;
@@ -313,20 +380,32 @@ namespace War3Api.Object
             set => PathingPathingTextureRaw = value.ToRaw(null, null);
         }
 
-        public bool ArtMinimapShow
+        public int ArtMinimapShowRaw
         {
-            get => _modifications[1835889508].ValueAsBool;
-            set => _modifications[1835889508] = new VariationObjectDataModification{Id = 1835889508, Type = ObjectDataType.Bool, Value = value, Variation = 0};
+            get => _modifications[1835889508].ValueAsInt;
+            set => _modifications[1835889508] = new VariationObjectDataModification{Id = 1835889508, Type = ObjectDataType.Int, Value = value, Variation = 0};
         }
 
         public bool IsArtMinimapShowModified => _modifications.ContainsKey(1835889508);
-        public bool ArtMinimapUseCustomColor
+        public bool ArtMinimapShow
         {
-            get => _modifications[1668117860].ValueAsBool;
-            set => _modifications[1668117860] = new VariationObjectDataModification{Id = 1668117860, Type = ObjectDataType.Bool, Value = value, Variation = 0};
+            get => ArtMinimapShowRaw.ToBool(this);
+            set => ArtMinimapShowRaw = value.ToRaw(null, null);
+        }
+
+        public int ArtMinimapUseCustomColorRaw
+        {
+            get => _modifications[1668117860].ValueAsInt;
+            set => _modifications[1668117860] = new VariationObjectDataModification{Id = 1668117860, Type = ObjectDataType.Int, Value = value, Variation = 0};
         }
 
         public bool IsArtMinimapUseCustomColorModified => _modifications.ContainsKey(1668117860);
+        public bool ArtMinimapUseCustomColor
+        {
+            get => ArtMinimapUseCustomColorRaw.ToBool(this);
+            set => ArtMinimapUseCustomColorRaw = value.ToRaw(null, null);
+        }
+
         public int ArtMinimapColor1Red
         {
             get => _modifications[1919774052].ValueAsInt;
@@ -354,13 +433,19 @@ namespace War3Api.Object
         public ReadOnlyObjectProperty<bool> IsArtTintingColor2GreenModified => _isArtTintingColor2GreenModified.Value;
         public ObjectProperty<int> ArtTintingColor3Blue => _artTintingColor3Blue.Value;
         public ReadOnlyObjectProperty<bool> IsArtTintingColor3BlueModified => _isArtTintingColor3BlueModified.Value;
-        public bool EditorOnUserSpecifiedList
+        public int EditorOnUserSpecifiedListRaw
         {
-            get => _modifications[1920169316].ValueAsBool;
-            set => _modifications[1920169316] = new VariationObjectDataModification{Id = 1920169316, Type = ObjectDataType.Bool, Value = value, Variation = 0};
+            get => _modifications[1920169316].ValueAsInt;
+            set => _modifications[1920169316] = new VariationObjectDataModification{Id = 1920169316, Type = ObjectDataType.Int, Value = value, Variation = 0};
         }
 
         public bool IsEditorOnUserSpecifiedListModified => _modifications.ContainsKey(1920169316);
+        public bool EditorOnUserSpecifiedList
+        {
+            get => EditorOnUserSpecifiedListRaw.ToBool(this);
+            set => EditorOnUserSpecifiedListRaw = value.ToRaw(null, null);
+        }
+
         public static explicit operator VariationObjectModification(Doodad doodad) => new VariationObjectModification{OldId = doodad.OldId, NewId = doodad.NewId, Modifications = doodad.Modifications.ToList()};
         public void AddModifications(List<VariationObjectDataModification> modifications)
         {

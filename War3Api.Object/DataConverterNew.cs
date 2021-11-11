@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -329,22 +330,12 @@ namespace War3Api.Object
              return  value . ToString ( ) . ToLowerInvariant ( ) ;
         }
 
-        internal static PathingPrevent ToPathingPrevent(this string value, BaseObject baseObject)
+        internal static PathingType ToPathingType(this string value, BaseObject baseObject)
         {
-             return  ( PathingPrevent ) Enum . Parse ( typeof ( PathingPrevent ) ,  value ,  true ) ;
+             return  ( PathingType ) Enum . Parse ( typeof ( PathingType ) ,  value ,  true ) ;
         }
 
-        internal static string ToRaw(this PathingPrevent value, int? minValue, int? maxValue)
-        {
-             return  value . ToString ( ) . ToLowerInvariant ( ) ;
-        }
-
-        internal static PathingRequire ToPathingRequire(this string value, BaseObject baseObject)
-        {
-             return  ( PathingRequire ) Enum . Parse ( typeof ( PathingRequire ) ,  value ,  true ) ;
-        }
-
-        internal static string ToRaw(this PathingRequire value, int? minValue, int? maxValue)
+        internal static string ToRaw(this PathingType value, int? minValue, int? maxValue)
         {
              return  value . ToString ( ) . ToLowerInvariant ( ) ;
         }
@@ -499,22 +490,12 @@ namespace War3Api.Object
              return  ( ! maxValue . HasValue || list . Count ( ) <= maxValue . Value ) ? $"{string.Join(',', list.Select(value => value.ToRaw(null, null)))}" :  throw  new  ArgumentOutOfRangeException ( nameof ( list ) ) ;
         }
 
-        internal static IEnumerable<PathingPrevent> ToIEnumerablePathingPrevent(this string value, BaseObject baseObject)
+        internal static IEnumerable<PathingType> ToIEnumerablePathingType(this string value, BaseObject baseObject)
         {
-             return  string . IsNullOrEmpty ( value ) || string . Equals ( value ,  "_" ,  StringComparison . Ordinal ) ? Array . Empty < PathingPrevent > ( ) :  value . Split ( ',' ) . Select ( x  =>  x . ToPathingPrevent ( baseObject ) ) . ToArray ( ) ;
+             return  string . IsNullOrEmpty ( value ) || string . Equals ( value ,  "_" ,  StringComparison . Ordinal ) ? Array . Empty < PathingType > ( ) :  value . Split ( ',' ) . Select ( x  =>  x . ToPathingType ( baseObject ) ) . ToArray ( ) ;
         }
 
-        internal static string ToRaw(this IEnumerable<PathingPrevent> list, int? minValue, int? maxValue)
-        {
-             return  ( ! maxValue . HasValue || list . Count ( ) <= maxValue . Value ) ? $"{string.Join(',', list.Select(value => value.ToRaw(null, null)))}" :  throw  new  ArgumentOutOfRangeException ( nameof ( list ) ) ;
-        }
-
-        internal static IEnumerable<PathingRequire> ToIEnumerablePathingRequire(this string value, BaseObject baseObject)
-        {
-             return  string . IsNullOrEmpty ( value ) || string . Equals ( value ,  "_" ,  StringComparison . Ordinal ) ? Array . Empty < PathingRequire > ( ) :  value . Split ( ',' ) . Select ( x  =>  x . ToPathingRequire ( baseObject ) ) . ToArray ( ) ;
-        }
-
-        internal static string ToRaw(this IEnumerable<PathingRequire> list, int? minValue, int? maxValue)
+        internal static string ToRaw(this IEnumerable<PathingType> list, int? minValue, int? maxValue)
         {
              return  ( ! maxValue . HasValue || list . Count ( ) <= maxValue . Value ) ? $"{string.Join(',', list.Select(value => value.ToRaw(null, null)))}" :  throw  new  ArgumentOutOfRangeException ( nameof ( list ) ) ;
         }

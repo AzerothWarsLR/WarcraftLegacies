@@ -7,6 +7,9 @@ using Microsoft.CodeAnalysis;
 using System;
 using War3Net.Common.Extensions;
 using System.Reflection;
+using War3Api.Object.Enums;
+
+using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
 
 namespace AzerothWarsCSharp.DataExtractor
 {
@@ -14,7 +17,7 @@ namespace AzerothWarsCSharp.DataExtractor
   {
     private readonly Unit _unit;
 
-    private static string _namespace = "AzerothWarsCSharp.Launcher";
+    private static readonly string _namespace = "AzerothWarsCSharp.Launcher";
     private static readonly string[] _usings = new[] {
       "AzerothWarsCSharp.Launcher.ObjectFactory.Abilities",
       "AzerothWarsCSharp.Launcher.ObjectFactory.Abilities.Human",
@@ -58,57 +61,67 @@ namespace AzerothWarsCSharp.DataExtractor
     {
       foreach (var property in GetValuedProperties())
       {
-        yield return SyntaxFactory.AssignmentExpression(
+        yield return AssignmentExpression(
           SyntaxKind.SimpleAssignmentExpression,
-          SyntaxFactory.IdentifierName(property.Name),
-          SyntaxFactory.LiteralExpression(
+          IdentifierName(
+            Identifier(
+              $"{property.Name}"
+            )
+          ),
+          LiteralExpression(
             SyntaxKind.StringLiteralExpression,
-            SyntaxFactory.Literal(property.GetValue(_unit).ToString())
+            Literal(property.GetValue(_unit).ToString())
           )
         );
       }
     }
+    
+    private InitializerExpressionSyntax GetFactoryInitializer()
+    {
+      return InitializerExpression(
+        SyntaxKind.ObjectInitializerExpression,
+        SeparatedList<ExpressionSyntax>(
+          GetAssignmentExpressions()
+        )
+      );
+    }
 
+    private SeparatedSyntaxList<VariableDeclaratorSyntax> GetInitializerVariables()
+    {
+      return SingletonSeparatedList(
+        VariableDeclarator(
+          Identifier("militiaFactory"))
+            .WithInitializer(
+          EqualsValueClause(
+              ObjectCreationExpression(
+                IdentifierName("UnitFactory"))
+              .WithArgumentList(
+                  ArgumentList(
+                    SingletonSeparatedList(
+                      Argument(
+                          MemberAccessExpression(
+                            SyntaxKind.SimpleMemberAccessExpression,
+                            IdentifierName("UnitType"),
+                            IdentifierName($"{Enum.ToObject(typeof(UnitType), _unit.OldId)}"))))))
+              .WithInitializer(GetFactoryInitializer())
+          )
+      )
+    );
+    }
+    
     private StatementSyntax GetNewStatement()
     {
-      return SyntaxFactory.LocalDeclarationStatement(
-        SyntaxFactory.VariableDeclaration(
-          SyntaxFactory.IdentifierName(
-            SyntaxFactory.Identifier(
-              SyntaxFactory.TriviaList(
-                SyntaxFactory.Comment($"//{_unit.OldId.ToRawcode()}:{_unit.NewId.ToRawcode()}")),
+      return LocalDeclarationStatement(
+        VariableDeclaration(
+          IdentifierName(
+            Identifier(
+              TriviaList(
+                Comment($"//{_unit.OldId.ToRawcode()}:{_unit.NewId.ToRawcode()}")),
             SyntaxKind.VarKeyword,
             "var",
             "var",
-            SyntaxFactory.TriviaList())))
-    .WithVariables(
-            SyntaxFactory.SingletonSeparatedList(
-              SyntaxFactory.VariableDeclarator(
-                SyntaxFactory.Identifier("militiaFactory"))
-                  .WithInitializer(
-                SyntaxFactory.EqualsValueClause(
-                    SyntaxFactory.ObjectCreationExpression(
-                      SyntaxFactory.IdentifierName("UnitFactory"))
-                    .WithArgumentList(
-                        SyntaxFactory.ArgumentList(
-                          SyntaxFactory.SingletonSeparatedList(
-                            SyntaxFactory.Argument(
-                                SyntaxFactory.MemberAccessExpression(
-                                  SyntaxKind.SimpleMemberAccessExpression,
-                                  SyntaxFactory.IdentifierName("UnitType"),
-                                  SyntaxFactory.IdentifierName($"{Enum.ToObject(typeof(UnitType), _unit.OldId)}"))))))
-                    .WithInitializer(
-                      SyntaxFactory.InitializerExpression(
-                        SyntaxKind.ObjectInitializerExpression,
-                        SyntaxFactory.SeparatedList<ExpressionSyntax>(
-                          GetAssignmentExpressions()
-                        )
-                      )
-                    )
-                )
-            )
-          )
-        )
+            TriviaList())))
+    .WithVariables(GetInitializerVariables())
       );
     }
 
@@ -124,21 +137,21 @@ namespace AzerothWarsCSharp.DataExtractor
 
     private static IEnumerable<MethodDeclarationSyntax> GetMethods()
     {
-      yield return SyntaxFactory.MethodDeclaration(
-        SyntaxFactory.ParseTypeName("void"),
-        SyntaxFactory.Identifier("Generate"))
-          .AddModifiers(SyntaxFactory.Token(SyntaxKind.StaticKeyword))
-          .WithBody(SyntaxFactory.Block(GetAllStatements()));
+      yield return MethodDeclaration(
+        ParseTypeName("void"),
+        Identifier("Generate"))
+          .AddModifiers(Token(SyntaxKind.StaticKeyword))
+          .WithBody(Block(GetAllStatements()));
     }
 
     private static IEnumerable<MemberDeclarationSyntax> GetClasses()
     {
-      yield return SyntaxFactory.ClassDeclaration(
+      yield return ClassDeclaration(
         default,
         new SyntaxTokenList(
-            SyntaxFactory.Token(SyntaxKind.PublicKeyword),
-            SyntaxFactory.Token(SyntaxKind.StaticKeyword)),
-        SyntaxFactory.Identifier("Generated"),
+            Token(SyntaxKind.PublicKeyword),
+            Token(SyntaxKind.StaticKeyword)),
+        Identifier("Generated"),
         null,
         null,
         default,
@@ -150,14 +163,14 @@ namespace AzerothWarsCSharp.DataExtractor
     {
       foreach (var usingLabel in _usings)
       {
-        yield return SyntaxFactory.UsingDirective(SyntaxFactory.IdentifierName(usingLabel));
+        yield return UsingDirective(IdentifierName(usingLabel));
       }
     }
 
     private static NamespaceDeclarationSyntax GetNamespace(IEnumerable<MemberDeclarationSyntax> classes, IEnumerable<UsingDirectiveSyntax> usings)
     {
-      return SyntaxFactory.NamespaceDeclaration(
-        SyntaxFactory.IdentifierName(_namespace),
+      return NamespaceDeclaration(
+        IdentifierName(_namespace),
         new SyntaxList<ExternAliasDirectiveSyntax>(),
         new SyntaxList<UsingDirectiveSyntax>(usings),
         new SyntaxList<MemberDeclarationSyntax>(classes)
@@ -171,7 +184,9 @@ namespace AzerothWarsCSharp.DataExtractor
       _objectDatabase = objectDatabase;
 
       var nameSpace = GetNamespace(GetClasses(), GetUsingDirectives());
-      return nameSpace.NormalizeWhitespace().ToString();
+      return nameSpace
+        .NormalizeWhitespace()
+        .ToString();
     }
 
     public UnitFactoryGenerator(Unit unit)

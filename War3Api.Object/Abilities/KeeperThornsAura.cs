@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -11,60 +12,68 @@ namespace War3Api.Object.Abilities
     {
         private readonly Lazy<ObjectProperty<float>> _dataDamageDealtToAttackers;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamageDealtToAttackersModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataDamageIsPercentReceived;
+        private readonly Lazy<ObjectProperty<int>> _dataDamageIsPercentReceivedRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamageIsPercentReceivedModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataDamageIsPercentReceived;
         public KeeperThornsAura(): base(1751205185)
         {
             _dataDamageDealtToAttackers = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealtToAttackers, SetDataDamageDealtToAttackers));
             _isDataDamageDealtToAttackersModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtToAttackersModified));
-            _dataDamageIsPercentReceived = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDamageIsPercentReceived, SetDataDamageIsPercentReceived));
+            _dataDamageIsPercentReceivedRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDamageIsPercentReceivedRaw, SetDataDamageIsPercentReceivedRaw));
             _isDataDamageIsPercentReceivedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageIsPercentReceivedModified));
+            _dataDamageIsPercentReceived = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDamageIsPercentReceived, SetDataDamageIsPercentReceived));
         }
 
         public KeeperThornsAura(int newId): base(1751205185, newId)
         {
             _dataDamageDealtToAttackers = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealtToAttackers, SetDataDamageDealtToAttackers));
             _isDataDamageDealtToAttackersModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtToAttackersModified));
-            _dataDamageIsPercentReceived = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDamageIsPercentReceived, SetDataDamageIsPercentReceived));
+            _dataDamageIsPercentReceivedRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDamageIsPercentReceivedRaw, SetDataDamageIsPercentReceivedRaw));
             _isDataDamageIsPercentReceivedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageIsPercentReceivedModified));
+            _dataDamageIsPercentReceived = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDamageIsPercentReceived, SetDataDamageIsPercentReceived));
         }
 
         public KeeperThornsAura(string newRawcode): base(1751205185, newRawcode)
         {
             _dataDamageDealtToAttackers = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealtToAttackers, SetDataDamageDealtToAttackers));
             _isDataDamageDealtToAttackersModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtToAttackersModified));
-            _dataDamageIsPercentReceived = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDamageIsPercentReceived, SetDataDamageIsPercentReceived));
+            _dataDamageIsPercentReceivedRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDamageIsPercentReceivedRaw, SetDataDamageIsPercentReceivedRaw));
             _isDataDamageIsPercentReceivedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageIsPercentReceivedModified));
+            _dataDamageIsPercentReceived = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDamageIsPercentReceived, SetDataDamageIsPercentReceived));
         }
 
         public KeeperThornsAura(ObjectDatabase db): base(1751205185, db)
         {
             _dataDamageDealtToAttackers = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealtToAttackers, SetDataDamageDealtToAttackers));
             _isDataDamageDealtToAttackersModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtToAttackersModified));
-            _dataDamageIsPercentReceived = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDamageIsPercentReceived, SetDataDamageIsPercentReceived));
+            _dataDamageIsPercentReceivedRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDamageIsPercentReceivedRaw, SetDataDamageIsPercentReceivedRaw));
             _isDataDamageIsPercentReceivedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageIsPercentReceivedModified));
+            _dataDamageIsPercentReceived = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDamageIsPercentReceived, SetDataDamageIsPercentReceived));
         }
 
         public KeeperThornsAura(int newId, ObjectDatabase db): base(1751205185, newId, db)
         {
             _dataDamageDealtToAttackers = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealtToAttackers, SetDataDamageDealtToAttackers));
             _isDataDamageDealtToAttackersModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtToAttackersModified));
-            _dataDamageIsPercentReceived = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDamageIsPercentReceived, SetDataDamageIsPercentReceived));
+            _dataDamageIsPercentReceivedRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDamageIsPercentReceivedRaw, SetDataDamageIsPercentReceivedRaw));
             _isDataDamageIsPercentReceivedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageIsPercentReceivedModified));
+            _dataDamageIsPercentReceived = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDamageIsPercentReceived, SetDataDamageIsPercentReceived));
         }
 
         public KeeperThornsAura(string newRawcode, ObjectDatabase db): base(1751205185, newRawcode, db)
         {
             _dataDamageDealtToAttackers = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealtToAttackers, SetDataDamageDealtToAttackers));
             _isDataDamageDealtToAttackersModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtToAttackersModified));
-            _dataDamageIsPercentReceived = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDamageIsPercentReceived, SetDataDamageIsPercentReceived));
+            _dataDamageIsPercentReceivedRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDamageIsPercentReceivedRaw, SetDataDamageIsPercentReceivedRaw));
             _isDataDamageIsPercentReceivedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageIsPercentReceivedModified));
+            _dataDamageIsPercentReceived = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDamageIsPercentReceived, SetDataDamageIsPercentReceived));
         }
 
         public ObjectProperty<float> DataDamageDealtToAttackers => _dataDamageDealtToAttackers.Value;
         public ReadOnlyObjectProperty<bool> IsDataDamageDealtToAttackersModified => _isDataDamageDealtToAttackersModified.Value;
-        public ObjectProperty<bool> DataDamageIsPercentReceived => _dataDamageIsPercentReceived.Value;
+        public ObjectProperty<int> DataDamageIsPercentReceivedRaw => _dataDamageIsPercentReceivedRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataDamageIsPercentReceivedModified => _isDataDamageIsPercentReceivedModified.Value;
+        public ObjectProperty<bool> DataDamageIsPercentReceived => _dataDamageIsPercentReceived.Value;
         private float GetDataDamageDealtToAttackers(int level)
         {
             return _modifications[828924229, level].ValueAsFloat;
@@ -80,19 +89,29 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(828924229, level);
         }
 
-        private bool GetDataDamageIsPercentReceived(int level)
+        private int GetDataDamageIsPercentReceivedRaw(int level)
         {
-            return _modifications[845701445, level].ValueAsBool;
+            return _modifications[845701445, level].ValueAsInt;
         }
 
-        private void SetDataDamageIsPercentReceived(int level, bool value)
+        private void SetDataDamageIsPercentReceivedRaw(int level, int value)
         {
-            _modifications[845701445, level] = new LevelObjectDataModification{Id = 845701445, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 2};
+            _modifications[845701445, level] = new LevelObjectDataModification{Id = 845701445, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 2};
         }
 
         private bool GetIsDataDamageIsPercentReceivedModified(int level)
         {
             return _modifications.ContainsKey(845701445, level);
+        }
+
+        private bool GetDataDamageIsPercentReceived(int level)
+        {
+            return GetDataDamageIsPercentReceivedRaw(level).ToBool(this);
+        }
+
+        private void SetDataDamageIsPercentReceived(int level, bool value)
+        {
+            SetDataDamageIsPercentReceivedRaw(level, value.ToRaw(0, 1));
         }
     }
 }

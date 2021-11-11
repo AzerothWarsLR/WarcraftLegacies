@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -21,8 +22,9 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ObjectProperty<Unit>> _dataUnitTypeTwo;
         private readonly Lazy<ObjectProperty<int>> _dataMaxUnitsSummoned;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMaxUnitsSummonedModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataKillOnCasterDeath;
+        private readonly Lazy<ObjectProperty<int>> _dataKillOnCasterDeathRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataKillOnCasterDeathModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataKillOnCasterDeath;
         public CryptLordCarrionScarabs(): base(1650677057)
         {
             _dataUnitsSummonedTypeOne = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUnitsSummonedTypeOne, SetDataUnitsSummonedTypeOne));
@@ -37,8 +39,9 @@ namespace War3Api.Object.Abilities
             _dataUnitTypeTwo = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataUnitTypeTwo, SetDataUnitTypeTwo));
             _dataMaxUnitsSummoned = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxUnitsSummoned, SetDataMaxUnitsSummoned));
             _isDataMaxUnitsSummonedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxUnitsSummonedModified));
-            _dataKillOnCasterDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataKillOnCasterDeath, SetDataKillOnCasterDeath));
+            _dataKillOnCasterDeathRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataKillOnCasterDeathRaw, SetDataKillOnCasterDeathRaw));
             _isDataKillOnCasterDeathModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataKillOnCasterDeathModified));
+            _dataKillOnCasterDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataKillOnCasterDeath, SetDataKillOnCasterDeath));
         }
 
         public CryptLordCarrionScarabs(int newId): base(1650677057, newId)
@@ -55,8 +58,9 @@ namespace War3Api.Object.Abilities
             _dataUnitTypeTwo = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataUnitTypeTwo, SetDataUnitTypeTwo));
             _dataMaxUnitsSummoned = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxUnitsSummoned, SetDataMaxUnitsSummoned));
             _isDataMaxUnitsSummonedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxUnitsSummonedModified));
-            _dataKillOnCasterDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataKillOnCasterDeath, SetDataKillOnCasterDeath));
+            _dataKillOnCasterDeathRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataKillOnCasterDeathRaw, SetDataKillOnCasterDeathRaw));
             _isDataKillOnCasterDeathModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataKillOnCasterDeathModified));
+            _dataKillOnCasterDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataKillOnCasterDeath, SetDataKillOnCasterDeath));
         }
 
         public CryptLordCarrionScarabs(string newRawcode): base(1650677057, newRawcode)
@@ -73,8 +77,9 @@ namespace War3Api.Object.Abilities
             _dataUnitTypeTwo = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataUnitTypeTwo, SetDataUnitTypeTwo));
             _dataMaxUnitsSummoned = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxUnitsSummoned, SetDataMaxUnitsSummoned));
             _isDataMaxUnitsSummonedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxUnitsSummonedModified));
-            _dataKillOnCasterDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataKillOnCasterDeath, SetDataKillOnCasterDeath));
+            _dataKillOnCasterDeathRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataKillOnCasterDeathRaw, SetDataKillOnCasterDeathRaw));
             _isDataKillOnCasterDeathModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataKillOnCasterDeathModified));
+            _dataKillOnCasterDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataKillOnCasterDeath, SetDataKillOnCasterDeath));
         }
 
         public CryptLordCarrionScarabs(ObjectDatabase db): base(1650677057, db)
@@ -91,8 +96,9 @@ namespace War3Api.Object.Abilities
             _dataUnitTypeTwo = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataUnitTypeTwo, SetDataUnitTypeTwo));
             _dataMaxUnitsSummoned = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxUnitsSummoned, SetDataMaxUnitsSummoned));
             _isDataMaxUnitsSummonedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxUnitsSummonedModified));
-            _dataKillOnCasterDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataKillOnCasterDeath, SetDataKillOnCasterDeath));
+            _dataKillOnCasterDeathRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataKillOnCasterDeathRaw, SetDataKillOnCasterDeathRaw));
             _isDataKillOnCasterDeathModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataKillOnCasterDeathModified));
+            _dataKillOnCasterDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataKillOnCasterDeath, SetDataKillOnCasterDeath));
         }
 
         public CryptLordCarrionScarabs(int newId, ObjectDatabase db): base(1650677057, newId, db)
@@ -109,8 +115,9 @@ namespace War3Api.Object.Abilities
             _dataUnitTypeTwo = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataUnitTypeTwo, SetDataUnitTypeTwo));
             _dataMaxUnitsSummoned = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxUnitsSummoned, SetDataMaxUnitsSummoned));
             _isDataMaxUnitsSummonedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxUnitsSummonedModified));
-            _dataKillOnCasterDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataKillOnCasterDeath, SetDataKillOnCasterDeath));
+            _dataKillOnCasterDeathRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataKillOnCasterDeathRaw, SetDataKillOnCasterDeathRaw));
             _isDataKillOnCasterDeathModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataKillOnCasterDeathModified));
+            _dataKillOnCasterDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataKillOnCasterDeath, SetDataKillOnCasterDeath));
         }
 
         public CryptLordCarrionScarabs(string newRawcode, ObjectDatabase db): base(1650677057, newRawcode, db)
@@ -127,8 +134,9 @@ namespace War3Api.Object.Abilities
             _dataUnitTypeTwo = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataUnitTypeTwo, SetDataUnitTypeTwo));
             _dataMaxUnitsSummoned = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxUnitsSummoned, SetDataMaxUnitsSummoned));
             _isDataMaxUnitsSummonedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxUnitsSummonedModified));
-            _dataKillOnCasterDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataKillOnCasterDeath, SetDataKillOnCasterDeath));
+            _dataKillOnCasterDeathRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataKillOnCasterDeathRaw, SetDataKillOnCasterDeathRaw));
             _isDataKillOnCasterDeathModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataKillOnCasterDeathModified));
+            _dataKillOnCasterDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataKillOnCasterDeath, SetDataKillOnCasterDeath));
         }
 
         public ObjectProperty<int> DataUnitsSummonedTypeOne => _dataUnitsSummonedTypeOne.Value;
@@ -143,8 +151,9 @@ namespace War3Api.Object.Abilities
         public ObjectProperty<Unit> DataUnitTypeTwo => _dataUnitTypeTwo.Value;
         public ObjectProperty<int> DataMaxUnitsSummoned => _dataMaxUnitsSummoned.Value;
         public ReadOnlyObjectProperty<bool> IsDataMaxUnitsSummonedModified => _isDataMaxUnitsSummonedModified.Value;
-        public ObjectProperty<bool> DataKillOnCasterDeath => _dataKillOnCasterDeath.Value;
+        public ObjectProperty<int> DataKillOnCasterDeathRaw => _dataKillOnCasterDeathRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataKillOnCasterDeathModified => _isDataKillOnCasterDeathModified.Value;
+        public ObjectProperty<bool> DataKillOnCasterDeath => _dataKillOnCasterDeath.Value;
         private int GetDataUnitsSummonedTypeOne(int level)
         {
             return _modifications[828989778, level].ValueAsInt;
@@ -240,19 +249,29 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(895640405, level);
         }
 
-        private bool GetDataKillOnCasterDeath(int level)
+        private int GetDataKillOnCasterDeathRaw(int level)
         {
-            return _modifications[912417621, level].ValueAsBool;
+            return _modifications[912417621, level].ValueAsInt;
         }
 
-        private void SetDataKillOnCasterDeath(int level, bool value)
+        private void SetDataKillOnCasterDeathRaw(int level, int value)
         {
-            _modifications[912417621, level] = new LevelObjectDataModification{Id = 912417621, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 6};
+            _modifications[912417621, level] = new LevelObjectDataModification{Id = 912417621, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 6};
         }
 
         private bool GetIsDataKillOnCasterDeathModified(int level)
         {
             return _modifications.ContainsKey(912417621, level);
+        }
+
+        private bool GetDataKillOnCasterDeath(int level)
+        {
+            return GetDataKillOnCasterDeathRaw(level).ToBool(this);
+        }
+
+        private void SetDataKillOnCasterDeath(int level, bool value)
+        {
+            SetDataKillOnCasterDeathRaw(level, value.ToRaw(0, 1));
         }
     }
 }

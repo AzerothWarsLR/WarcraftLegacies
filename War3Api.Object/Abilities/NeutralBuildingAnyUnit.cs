@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -14,10 +15,12 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ObjectProperty<int>> _dataInteractionTypeRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataInteractionTypeModified;
         private readonly Lazy<ObjectProperty<InteractionFlags>> _dataInteractionType;
-        private readonly Lazy<ObjectProperty<bool>> _dataShowSelectUnitButton;
+        private readonly Lazy<ObjectProperty<int>> _dataShowSelectUnitButtonRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataShowSelectUnitButtonModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataShowUnitIndicator;
+        private readonly Lazy<ObjectProperty<bool>> _dataShowSelectUnitButton;
+        private readonly Lazy<ObjectProperty<int>> _dataShowUnitIndicatorRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataShowUnitIndicatorModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataShowUnitIndicator;
         public NeutralBuildingAnyUnit(): base(845508161)
         {
             _dataActivationRadius = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataActivationRadius, SetDataActivationRadius));
@@ -25,10 +28,12 @@ namespace War3Api.Object.Abilities
             _dataInteractionTypeRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataInteractionTypeRaw, SetDataInteractionTypeRaw));
             _isDataInteractionTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataInteractionTypeModified));
             _dataInteractionType = new Lazy<ObjectProperty<InteractionFlags>>(() => new ObjectProperty<InteractionFlags>(GetDataInteractionType, SetDataInteractionType));
-            _dataShowSelectUnitButton = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowSelectUnitButton, SetDataShowSelectUnitButton));
+            _dataShowSelectUnitButtonRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataShowSelectUnitButtonRaw, SetDataShowSelectUnitButtonRaw));
             _isDataShowSelectUnitButtonModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataShowSelectUnitButtonModified));
-            _dataShowUnitIndicator = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowUnitIndicator, SetDataShowUnitIndicator));
+            _dataShowSelectUnitButton = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowSelectUnitButton, SetDataShowSelectUnitButton));
+            _dataShowUnitIndicatorRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataShowUnitIndicatorRaw, SetDataShowUnitIndicatorRaw));
             _isDataShowUnitIndicatorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataShowUnitIndicatorModified));
+            _dataShowUnitIndicator = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowUnitIndicator, SetDataShowUnitIndicator));
         }
 
         public NeutralBuildingAnyUnit(int newId): base(845508161, newId)
@@ -38,10 +43,12 @@ namespace War3Api.Object.Abilities
             _dataInteractionTypeRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataInteractionTypeRaw, SetDataInteractionTypeRaw));
             _isDataInteractionTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataInteractionTypeModified));
             _dataInteractionType = new Lazy<ObjectProperty<InteractionFlags>>(() => new ObjectProperty<InteractionFlags>(GetDataInteractionType, SetDataInteractionType));
-            _dataShowSelectUnitButton = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowSelectUnitButton, SetDataShowSelectUnitButton));
+            _dataShowSelectUnitButtonRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataShowSelectUnitButtonRaw, SetDataShowSelectUnitButtonRaw));
             _isDataShowSelectUnitButtonModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataShowSelectUnitButtonModified));
-            _dataShowUnitIndicator = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowUnitIndicator, SetDataShowUnitIndicator));
+            _dataShowSelectUnitButton = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowSelectUnitButton, SetDataShowSelectUnitButton));
+            _dataShowUnitIndicatorRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataShowUnitIndicatorRaw, SetDataShowUnitIndicatorRaw));
             _isDataShowUnitIndicatorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataShowUnitIndicatorModified));
+            _dataShowUnitIndicator = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowUnitIndicator, SetDataShowUnitIndicator));
         }
 
         public NeutralBuildingAnyUnit(string newRawcode): base(845508161, newRawcode)
@@ -51,10 +58,12 @@ namespace War3Api.Object.Abilities
             _dataInteractionTypeRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataInteractionTypeRaw, SetDataInteractionTypeRaw));
             _isDataInteractionTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataInteractionTypeModified));
             _dataInteractionType = new Lazy<ObjectProperty<InteractionFlags>>(() => new ObjectProperty<InteractionFlags>(GetDataInteractionType, SetDataInteractionType));
-            _dataShowSelectUnitButton = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowSelectUnitButton, SetDataShowSelectUnitButton));
+            _dataShowSelectUnitButtonRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataShowSelectUnitButtonRaw, SetDataShowSelectUnitButtonRaw));
             _isDataShowSelectUnitButtonModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataShowSelectUnitButtonModified));
-            _dataShowUnitIndicator = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowUnitIndicator, SetDataShowUnitIndicator));
+            _dataShowSelectUnitButton = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowSelectUnitButton, SetDataShowSelectUnitButton));
+            _dataShowUnitIndicatorRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataShowUnitIndicatorRaw, SetDataShowUnitIndicatorRaw));
             _isDataShowUnitIndicatorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataShowUnitIndicatorModified));
+            _dataShowUnitIndicator = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowUnitIndicator, SetDataShowUnitIndicator));
         }
 
         public NeutralBuildingAnyUnit(ObjectDatabase db): base(845508161, db)
@@ -64,10 +73,12 @@ namespace War3Api.Object.Abilities
             _dataInteractionTypeRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataInteractionTypeRaw, SetDataInteractionTypeRaw));
             _isDataInteractionTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataInteractionTypeModified));
             _dataInteractionType = new Lazy<ObjectProperty<InteractionFlags>>(() => new ObjectProperty<InteractionFlags>(GetDataInteractionType, SetDataInteractionType));
-            _dataShowSelectUnitButton = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowSelectUnitButton, SetDataShowSelectUnitButton));
+            _dataShowSelectUnitButtonRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataShowSelectUnitButtonRaw, SetDataShowSelectUnitButtonRaw));
             _isDataShowSelectUnitButtonModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataShowSelectUnitButtonModified));
-            _dataShowUnitIndicator = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowUnitIndicator, SetDataShowUnitIndicator));
+            _dataShowSelectUnitButton = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowSelectUnitButton, SetDataShowSelectUnitButton));
+            _dataShowUnitIndicatorRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataShowUnitIndicatorRaw, SetDataShowUnitIndicatorRaw));
             _isDataShowUnitIndicatorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataShowUnitIndicatorModified));
+            _dataShowUnitIndicator = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowUnitIndicator, SetDataShowUnitIndicator));
         }
 
         public NeutralBuildingAnyUnit(int newId, ObjectDatabase db): base(845508161, newId, db)
@@ -77,10 +88,12 @@ namespace War3Api.Object.Abilities
             _dataInteractionTypeRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataInteractionTypeRaw, SetDataInteractionTypeRaw));
             _isDataInteractionTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataInteractionTypeModified));
             _dataInteractionType = new Lazy<ObjectProperty<InteractionFlags>>(() => new ObjectProperty<InteractionFlags>(GetDataInteractionType, SetDataInteractionType));
-            _dataShowSelectUnitButton = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowSelectUnitButton, SetDataShowSelectUnitButton));
+            _dataShowSelectUnitButtonRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataShowSelectUnitButtonRaw, SetDataShowSelectUnitButtonRaw));
             _isDataShowSelectUnitButtonModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataShowSelectUnitButtonModified));
-            _dataShowUnitIndicator = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowUnitIndicator, SetDataShowUnitIndicator));
+            _dataShowSelectUnitButton = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowSelectUnitButton, SetDataShowSelectUnitButton));
+            _dataShowUnitIndicatorRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataShowUnitIndicatorRaw, SetDataShowUnitIndicatorRaw));
             _isDataShowUnitIndicatorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataShowUnitIndicatorModified));
+            _dataShowUnitIndicator = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowUnitIndicator, SetDataShowUnitIndicator));
         }
 
         public NeutralBuildingAnyUnit(string newRawcode, ObjectDatabase db): base(845508161, newRawcode, db)
@@ -90,10 +103,12 @@ namespace War3Api.Object.Abilities
             _dataInteractionTypeRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataInteractionTypeRaw, SetDataInteractionTypeRaw));
             _isDataInteractionTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataInteractionTypeModified));
             _dataInteractionType = new Lazy<ObjectProperty<InteractionFlags>>(() => new ObjectProperty<InteractionFlags>(GetDataInteractionType, SetDataInteractionType));
-            _dataShowSelectUnitButton = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowSelectUnitButton, SetDataShowSelectUnitButton));
+            _dataShowSelectUnitButtonRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataShowSelectUnitButtonRaw, SetDataShowSelectUnitButtonRaw));
             _isDataShowSelectUnitButtonModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataShowSelectUnitButtonModified));
-            _dataShowUnitIndicator = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowUnitIndicator, SetDataShowUnitIndicator));
+            _dataShowSelectUnitButton = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowSelectUnitButton, SetDataShowSelectUnitButton));
+            _dataShowUnitIndicatorRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataShowUnitIndicatorRaw, SetDataShowUnitIndicatorRaw));
             _isDataShowUnitIndicatorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataShowUnitIndicatorModified));
+            _dataShowUnitIndicator = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataShowUnitIndicator, SetDataShowUnitIndicator));
         }
 
         public ObjectProperty<float> DataActivationRadius => _dataActivationRadius.Value;
@@ -101,10 +116,12 @@ namespace War3Api.Object.Abilities
         public ObjectProperty<int> DataInteractionTypeRaw => _dataInteractionTypeRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataInteractionTypeModified => _isDataInteractionTypeModified.Value;
         public ObjectProperty<InteractionFlags> DataInteractionType => _dataInteractionType.Value;
-        public ObjectProperty<bool> DataShowSelectUnitButton => _dataShowSelectUnitButton.Value;
+        public ObjectProperty<int> DataShowSelectUnitButtonRaw => _dataShowSelectUnitButtonRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataShowSelectUnitButtonModified => _isDataShowSelectUnitButtonModified.Value;
-        public ObjectProperty<bool> DataShowUnitIndicator => _dataShowUnitIndicator.Value;
+        public ObjectProperty<bool> DataShowSelectUnitButton => _dataShowSelectUnitButton.Value;
+        public ObjectProperty<int> DataShowUnitIndicatorRaw => _dataShowUnitIndicatorRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataShowUnitIndicatorModified => _isDataShowUnitIndicatorModified.Value;
+        public ObjectProperty<bool> DataShowUnitIndicator => _dataShowUnitIndicator.Value;
         private float GetDataActivationRadius(int level)
         {
             return _modifications[829777230, level].ValueAsFloat;
@@ -145,14 +162,14 @@ namespace War3Api.Object.Abilities
             SetDataInteractionTypeRaw(level, value.ToRaw(null, null));
         }
 
-        private bool GetDataShowSelectUnitButton(int level)
+        private int GetDataShowSelectUnitButtonRaw(int level)
         {
-            return _modifications[863331662, level].ValueAsBool;
+            return _modifications[863331662, level].ValueAsInt;
         }
 
-        private void SetDataShowSelectUnitButton(int level, bool value)
+        private void SetDataShowSelectUnitButtonRaw(int level, int value)
         {
-            _modifications[863331662, level] = new LevelObjectDataModification{Id = 863331662, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 3};
+            _modifications[863331662, level] = new LevelObjectDataModification{Id = 863331662, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 3};
         }
 
         private bool GetIsDataShowSelectUnitButtonModified(int level)
@@ -160,19 +177,39 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(863331662, level);
         }
 
-        private bool GetDataShowUnitIndicator(int level)
+        private bool GetDataShowSelectUnitButton(int level)
         {
-            return _modifications[880108878, level].ValueAsBool;
+            return GetDataShowSelectUnitButtonRaw(level).ToBool(this);
         }
 
-        private void SetDataShowUnitIndicator(int level, bool value)
+        private void SetDataShowSelectUnitButton(int level, bool value)
         {
-            _modifications[880108878, level] = new LevelObjectDataModification{Id = 880108878, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 4};
+            SetDataShowSelectUnitButtonRaw(level, value.ToRaw(null, null));
+        }
+
+        private int GetDataShowUnitIndicatorRaw(int level)
+        {
+            return _modifications[880108878, level].ValueAsInt;
+        }
+
+        private void SetDataShowUnitIndicatorRaw(int level, int value)
+        {
+            _modifications[880108878, level] = new LevelObjectDataModification{Id = 880108878, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 4};
         }
 
         private bool GetIsDataShowUnitIndicatorModified(int level)
         {
             return _modifications.ContainsKey(880108878, level);
+        }
+
+        private bool GetDataShowUnitIndicator(int level)
+        {
+            return GetDataShowUnitIndicatorRaw(level).ToBool(this);
+        }
+
+        private void SetDataShowUnitIndicator(int level, bool value)
+        {
+            SetDataShowUnitIndicatorRaw(level, value.ToRaw(null, null));
         }
     }
 }

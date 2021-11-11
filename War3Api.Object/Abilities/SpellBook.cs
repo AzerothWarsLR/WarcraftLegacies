@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -12,8 +13,9 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ObjectProperty<string>> _dataSpellListRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataSpellListModified;
         private readonly Lazy<ObjectProperty<IEnumerable<Ability>>> _dataSpellList;
-        private readonly Lazy<ObjectProperty<bool>> _dataSharedSpellCooldown;
+        private readonly Lazy<ObjectProperty<int>> _dataSharedSpellCooldownRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataSharedSpellCooldownModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataSharedSpellCooldown;
         private readonly Lazy<ObjectProperty<int>> _dataMinimumSpells;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMinimumSpellsModified;
         private readonly Lazy<ObjectProperty<int>> _dataMaximumSpells;
@@ -26,8 +28,9 @@ namespace War3Api.Object.Abilities
             _dataSpellListRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataSpellListRaw, SetDataSpellListRaw));
             _isDataSpellListModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSpellListModified));
             _dataSpellList = new Lazy<ObjectProperty<IEnumerable<Ability>>>(() => new ObjectProperty<IEnumerable<Ability>>(GetDataSpellList, SetDataSpellList));
-            _dataSharedSpellCooldown = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSharedSpellCooldown, SetDataSharedSpellCooldown));
+            _dataSharedSpellCooldownRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataSharedSpellCooldownRaw, SetDataSharedSpellCooldownRaw));
             _isDataSharedSpellCooldownModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSharedSpellCooldownModified));
+            _dataSharedSpellCooldown = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSharedSpellCooldown, SetDataSharedSpellCooldown));
             _dataMinimumSpells = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMinimumSpells, SetDataMinimumSpells));
             _isDataMinimumSpellsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMinimumSpellsModified));
             _dataMaximumSpells = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaximumSpells, SetDataMaximumSpells));
@@ -42,8 +45,9 @@ namespace War3Api.Object.Abilities
             _dataSpellListRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataSpellListRaw, SetDataSpellListRaw));
             _isDataSpellListModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSpellListModified));
             _dataSpellList = new Lazy<ObjectProperty<IEnumerable<Ability>>>(() => new ObjectProperty<IEnumerable<Ability>>(GetDataSpellList, SetDataSpellList));
-            _dataSharedSpellCooldown = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSharedSpellCooldown, SetDataSharedSpellCooldown));
+            _dataSharedSpellCooldownRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataSharedSpellCooldownRaw, SetDataSharedSpellCooldownRaw));
             _isDataSharedSpellCooldownModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSharedSpellCooldownModified));
+            _dataSharedSpellCooldown = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSharedSpellCooldown, SetDataSharedSpellCooldown));
             _dataMinimumSpells = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMinimumSpells, SetDataMinimumSpells));
             _isDataMinimumSpellsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMinimumSpellsModified));
             _dataMaximumSpells = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaximumSpells, SetDataMaximumSpells));
@@ -58,8 +62,9 @@ namespace War3Api.Object.Abilities
             _dataSpellListRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataSpellListRaw, SetDataSpellListRaw));
             _isDataSpellListModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSpellListModified));
             _dataSpellList = new Lazy<ObjectProperty<IEnumerable<Ability>>>(() => new ObjectProperty<IEnumerable<Ability>>(GetDataSpellList, SetDataSpellList));
-            _dataSharedSpellCooldown = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSharedSpellCooldown, SetDataSharedSpellCooldown));
+            _dataSharedSpellCooldownRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataSharedSpellCooldownRaw, SetDataSharedSpellCooldownRaw));
             _isDataSharedSpellCooldownModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSharedSpellCooldownModified));
+            _dataSharedSpellCooldown = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSharedSpellCooldown, SetDataSharedSpellCooldown));
             _dataMinimumSpells = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMinimumSpells, SetDataMinimumSpells));
             _isDataMinimumSpellsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMinimumSpellsModified));
             _dataMaximumSpells = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaximumSpells, SetDataMaximumSpells));
@@ -74,8 +79,9 @@ namespace War3Api.Object.Abilities
             _dataSpellListRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataSpellListRaw, SetDataSpellListRaw));
             _isDataSpellListModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSpellListModified));
             _dataSpellList = new Lazy<ObjectProperty<IEnumerable<Ability>>>(() => new ObjectProperty<IEnumerable<Ability>>(GetDataSpellList, SetDataSpellList));
-            _dataSharedSpellCooldown = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSharedSpellCooldown, SetDataSharedSpellCooldown));
+            _dataSharedSpellCooldownRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataSharedSpellCooldownRaw, SetDataSharedSpellCooldownRaw));
             _isDataSharedSpellCooldownModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSharedSpellCooldownModified));
+            _dataSharedSpellCooldown = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSharedSpellCooldown, SetDataSharedSpellCooldown));
             _dataMinimumSpells = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMinimumSpells, SetDataMinimumSpells));
             _isDataMinimumSpellsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMinimumSpellsModified));
             _dataMaximumSpells = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaximumSpells, SetDataMaximumSpells));
@@ -90,8 +96,9 @@ namespace War3Api.Object.Abilities
             _dataSpellListRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataSpellListRaw, SetDataSpellListRaw));
             _isDataSpellListModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSpellListModified));
             _dataSpellList = new Lazy<ObjectProperty<IEnumerable<Ability>>>(() => new ObjectProperty<IEnumerable<Ability>>(GetDataSpellList, SetDataSpellList));
-            _dataSharedSpellCooldown = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSharedSpellCooldown, SetDataSharedSpellCooldown));
+            _dataSharedSpellCooldownRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataSharedSpellCooldownRaw, SetDataSharedSpellCooldownRaw));
             _isDataSharedSpellCooldownModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSharedSpellCooldownModified));
+            _dataSharedSpellCooldown = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSharedSpellCooldown, SetDataSharedSpellCooldown));
             _dataMinimumSpells = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMinimumSpells, SetDataMinimumSpells));
             _isDataMinimumSpellsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMinimumSpellsModified));
             _dataMaximumSpells = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaximumSpells, SetDataMaximumSpells));
@@ -106,8 +113,9 @@ namespace War3Api.Object.Abilities
             _dataSpellListRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataSpellListRaw, SetDataSpellListRaw));
             _isDataSpellListModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSpellListModified));
             _dataSpellList = new Lazy<ObjectProperty<IEnumerable<Ability>>>(() => new ObjectProperty<IEnumerable<Ability>>(GetDataSpellList, SetDataSpellList));
-            _dataSharedSpellCooldown = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSharedSpellCooldown, SetDataSharedSpellCooldown));
+            _dataSharedSpellCooldownRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataSharedSpellCooldownRaw, SetDataSharedSpellCooldownRaw));
             _isDataSharedSpellCooldownModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSharedSpellCooldownModified));
+            _dataSharedSpellCooldown = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataSharedSpellCooldown, SetDataSharedSpellCooldown));
             _dataMinimumSpells = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMinimumSpells, SetDataMinimumSpells));
             _isDataMinimumSpellsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMinimumSpellsModified));
             _dataMaximumSpells = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaximumSpells, SetDataMaximumSpells));
@@ -120,8 +128,9 @@ namespace War3Api.Object.Abilities
         public ObjectProperty<string> DataSpellListRaw => _dataSpellListRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataSpellListModified => _isDataSpellListModified.Value;
         public ObjectProperty<IEnumerable<Ability>> DataSpellList => _dataSpellList.Value;
-        public ObjectProperty<bool> DataSharedSpellCooldown => _dataSharedSpellCooldown.Value;
+        public ObjectProperty<int> DataSharedSpellCooldownRaw => _dataSharedSpellCooldownRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataSharedSpellCooldownModified => _isDataSharedSpellCooldownModified.Value;
+        public ObjectProperty<bool> DataSharedSpellCooldown => _dataSharedSpellCooldown.Value;
         public ObjectProperty<int> DataMinimumSpells => _dataMinimumSpells.Value;
         public ReadOnlyObjectProperty<bool> IsDataMinimumSpellsModified => _isDataMinimumSpellsModified.Value;
         public ObjectProperty<int> DataMaximumSpells => _dataMaximumSpells.Value;
@@ -154,19 +163,29 @@ namespace War3Api.Object.Abilities
             SetDataSpellListRaw(level, value.ToRaw(null, null));
         }
 
-        private bool GetDataSharedSpellCooldown(int level)
+        private int GetDataSharedSpellCooldownRaw(int level)
         {
-            return _modifications[845312115, level].ValueAsBool;
+            return _modifications[845312115, level].ValueAsInt;
         }
 
-        private void SetDataSharedSpellCooldown(int level, bool value)
+        private void SetDataSharedSpellCooldownRaw(int level, int value)
         {
-            _modifications[845312115, level] = new LevelObjectDataModification{Id = 845312115, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 2};
+            _modifications[845312115, level] = new LevelObjectDataModification{Id = 845312115, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 2};
         }
 
         private bool GetIsDataSharedSpellCooldownModified(int level)
         {
             return _modifications.ContainsKey(845312115, level);
+        }
+
+        private bool GetDataSharedSpellCooldown(int level)
+        {
+            return GetDataSharedSpellCooldownRaw(level).ToBool(this);
+        }
+
+        private void SetDataSharedSpellCooldown(int level, bool value)
+        {
+            SetDataSharedSpellCooldownRaw(level, value.ToRaw(null, null));
         }
 
         private int GetDataMinimumSpells(int level)

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -266,20 +267,32 @@ namespace War3Api.Object
         }
 
         public bool IsTextEditorSuffixModified => _modifications.ContainsKey(1718840929);
-        public bool StatsHeroAbility
+        public int StatsHeroAbilityRaw
         {
-            get => _modifications[1919248481].ValueAsBool;
-            set => _modifications[1919248481] = new LevelObjectDataModification{Id = 1919248481, Type = ObjectDataType.Bool, Value = value, Level = 0};
+            get => _modifications[1919248481].ValueAsInt;
+            set => _modifications[1919248481] = new LevelObjectDataModification{Id = 1919248481, Type = ObjectDataType.Int, Value = value, Level = 0};
         }
 
         public bool IsStatsHeroAbilityModified => _modifications.ContainsKey(1919248481);
-        public bool StatsItemAbility
+        public bool StatsHeroAbility
         {
-            get => _modifications[1702127969].ValueAsBool;
-            set => _modifications[1702127969] = new LevelObjectDataModification{Id = 1702127969, Type = ObjectDataType.Bool, Value = value, Level = 0};
+            get => StatsHeroAbilityRaw.ToBool(this);
+            set => StatsHeroAbilityRaw = value.ToRaw(null, null);
+        }
+
+        public int StatsItemAbilityRaw
+        {
+            get => _modifications[1702127969].ValueAsInt;
+            set => _modifications[1702127969] = new LevelObjectDataModification{Id = 1702127969, Type = ObjectDataType.Int, Value = value, Level = 0};
         }
 
         public bool IsStatsItemAbilityModified => _modifications.ContainsKey(1702127969);
+        public bool StatsItemAbility
+        {
+            get => StatsItemAbilityRaw.ToBool(this);
+            set => StatsItemAbilityRaw = value.ToRaw(null, null);
+        }
+
         public string StatsRaceRaw
         {
             get => _modifications[1667330657].ValueAsString;
@@ -479,13 +492,19 @@ namespace War3Api.Object
         }
 
         public bool IsArtMissileArcModified => _modifications.ContainsKey(1667329377);
-        public bool ArtMissileHomingEnabled
+        public int ArtMissileHomingEnabledRaw
         {
-            get => _modifications[1869114721].ValueAsBool;
-            set => _modifications[1869114721] = new LevelObjectDataModification{Id = 1869114721, Type = ObjectDataType.Bool, Value = value, Level = 0};
+            get => _modifications[1869114721].ValueAsInt;
+            set => _modifications[1869114721] = new LevelObjectDataModification{Id = 1869114721, Type = ObjectDataType.Int, Value = value, Level = 0};
         }
 
         public bool IsArtMissileHomingEnabledModified => _modifications.ContainsKey(1869114721);
+        public bool ArtMissileHomingEnabled
+        {
+            get => ArtMissileHomingEnabledRaw.ToBool(this);
+            set => ArtMissileHomingEnabledRaw = value.ToRaw(null, null);
+        }
+
         public int ArtTargetAttachments
         {
             get => _modifications[1667331169].ValueAsInt;
@@ -652,27 +671,45 @@ namespace War3Api.Object
         }
 
         public bool IsTextTooltipLearnExtendedModified => _modifications.ContainsKey(1953854049);
-        public char TextHotkeyLearn
+        public string TextHotkeyLearnRaw
         {
-            get => _modifications[1802007137].ValueAsChar;
-            set => _modifications[1802007137] = new LevelObjectDataModification{Id = 1802007137, Type = ObjectDataType.Char, Value = value, Level = 0};
+            get => _modifications[1802007137].ValueAsString;
+            set => _modifications[1802007137] = new LevelObjectDataModification{Id = 1802007137, Type = ObjectDataType.String, Value = value, Level = 0};
         }
 
         public bool IsTextHotkeyLearnModified => _modifications.ContainsKey(1802007137);
-        public char TextHotkeyNormal
+        public char TextHotkeyLearn
         {
-            get => _modifications[2037082209].ValueAsChar;
-            set => _modifications[2037082209] = new LevelObjectDataModification{Id = 2037082209, Type = ObjectDataType.Char, Value = value, Level = 0};
+            get => TextHotkeyLearnRaw.ToChar(this);
+            set => TextHotkeyLearnRaw = value.ToRaw(null, null);
+        }
+
+        public string TextHotkeyNormalRaw
+        {
+            get => _modifications[2037082209].ValueAsString;
+            set => _modifications[2037082209] = new LevelObjectDataModification{Id = 2037082209, Type = ObjectDataType.String, Value = value, Level = 0};
         }
 
         public bool IsTextHotkeyNormalModified => _modifications.ContainsKey(2037082209);
-        public char TextHotkeyTurnOff
+        public char TextHotkeyNormal
         {
-            get => _modifications[1802007905].ValueAsChar;
-            set => _modifications[1802007905] = new LevelObjectDataModification{Id = 1802007905, Type = ObjectDataType.Char, Value = value, Level = 0};
+            get => TextHotkeyNormalRaw.ToChar(this);
+            set => TextHotkeyNormalRaw = value.ToRaw(null, null);
+        }
+
+        public string TextHotkeyTurnOffRaw
+        {
+            get => _modifications[1802007905].ValueAsString;
+            set => _modifications[1802007905] = new LevelObjectDataModification{Id = 1802007905, Type = ObjectDataType.String, Value = value, Level = 0};
         }
 
         public bool IsTextHotkeyTurnOffModified => _modifications.ContainsKey(1802007905);
+        public char TextHotkeyTurnOff
+        {
+            get => TextHotkeyTurnOffRaw.ToChar(this);
+            set => TextHotkeyTurnOffRaw = value.ToRaw(null, null);
+        }
+
         public string TechtreeRequirementsRaw
         {
             get => _modifications[1902473825].ValueAsString;
@@ -699,13 +736,19 @@ namespace War3Api.Object
             set => TechtreeRequirementsLevelsRaw = value.ToRaw(null, 100);
         }
 
-        public bool TechtreeCheckDependencies
+        public int TechtreeCheckDependenciesRaw
         {
-            get => _modifications[1684562785].ValueAsBool;
-            set => _modifications[1684562785] = new LevelObjectDataModification{Id = 1684562785, Type = ObjectDataType.Bool, Value = value, Level = 0};
+            get => _modifications[1684562785].ValueAsInt;
+            set => _modifications[1684562785] = new LevelObjectDataModification{Id = 1684562785, Type = ObjectDataType.Int, Value = value, Level = 0};
         }
 
         public bool IsTechtreeCheckDependenciesModified => _modifications.ContainsKey(1684562785);
+        public bool TechtreeCheckDependencies
+        {
+            get => TechtreeCheckDependenciesRaw.ToBool(this);
+            set => TechtreeCheckDependenciesRaw = value.ToRaw(null, null);
+        }
+
         public int StatsPriorityForSpellSteal
         {
             get => _modifications[1769107553].ValueAsInt;

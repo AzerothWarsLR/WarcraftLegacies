@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -15,8 +16,9 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMovementSpeedReductionModified;
         private readonly Lazy<ObjectProperty<float>> _dataAttackSpeedReduction;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAttackSpeedReductionModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataRepairsAllowed;
+        private readonly Lazy<ObjectProperty<int>> _dataRepairsAllowedRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataRepairsAllowedModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataRepairsAllowed;
         public LiquidFire(): base(1902734401)
         {
             _dataExtraDamagePerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataExtraDamagePerSecond, SetDataExtraDamagePerSecond));
@@ -25,8 +27,9 @@ namespace War3Api.Object.Abilities
             _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
             _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
             _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
-            _dataRepairsAllowed = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRepairsAllowed, SetDataRepairsAllowed));
+            _dataRepairsAllowedRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRepairsAllowedRaw, SetDataRepairsAllowedRaw));
             _isDataRepairsAllowedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRepairsAllowedModified));
+            _dataRepairsAllowed = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRepairsAllowed, SetDataRepairsAllowed));
         }
 
         public LiquidFire(int newId): base(1902734401, newId)
@@ -37,8 +40,9 @@ namespace War3Api.Object.Abilities
             _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
             _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
             _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
-            _dataRepairsAllowed = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRepairsAllowed, SetDataRepairsAllowed));
+            _dataRepairsAllowedRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRepairsAllowedRaw, SetDataRepairsAllowedRaw));
             _isDataRepairsAllowedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRepairsAllowedModified));
+            _dataRepairsAllowed = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRepairsAllowed, SetDataRepairsAllowed));
         }
 
         public LiquidFire(string newRawcode): base(1902734401, newRawcode)
@@ -49,8 +53,9 @@ namespace War3Api.Object.Abilities
             _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
             _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
             _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
-            _dataRepairsAllowed = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRepairsAllowed, SetDataRepairsAllowed));
+            _dataRepairsAllowedRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRepairsAllowedRaw, SetDataRepairsAllowedRaw));
             _isDataRepairsAllowedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRepairsAllowedModified));
+            _dataRepairsAllowed = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRepairsAllowed, SetDataRepairsAllowed));
         }
 
         public LiquidFire(ObjectDatabase db): base(1902734401, db)
@@ -61,8 +66,9 @@ namespace War3Api.Object.Abilities
             _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
             _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
             _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
-            _dataRepairsAllowed = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRepairsAllowed, SetDataRepairsAllowed));
+            _dataRepairsAllowedRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRepairsAllowedRaw, SetDataRepairsAllowedRaw));
             _isDataRepairsAllowedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRepairsAllowedModified));
+            _dataRepairsAllowed = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRepairsAllowed, SetDataRepairsAllowed));
         }
 
         public LiquidFire(int newId, ObjectDatabase db): base(1902734401, newId, db)
@@ -73,8 +79,9 @@ namespace War3Api.Object.Abilities
             _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
             _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
             _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
-            _dataRepairsAllowed = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRepairsAllowed, SetDataRepairsAllowed));
+            _dataRepairsAllowedRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRepairsAllowedRaw, SetDataRepairsAllowedRaw));
             _isDataRepairsAllowedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRepairsAllowedModified));
+            _dataRepairsAllowed = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRepairsAllowed, SetDataRepairsAllowed));
         }
 
         public LiquidFire(string newRawcode, ObjectDatabase db): base(1902734401, newRawcode, db)
@@ -85,8 +92,9 @@ namespace War3Api.Object.Abilities
             _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
             _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
             _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
-            _dataRepairsAllowed = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRepairsAllowed, SetDataRepairsAllowed));
+            _dataRepairsAllowedRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRepairsAllowedRaw, SetDataRepairsAllowedRaw));
             _isDataRepairsAllowedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRepairsAllowedModified));
+            _dataRepairsAllowed = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataRepairsAllowed, SetDataRepairsAllowed));
         }
 
         public ObjectProperty<float> DataExtraDamagePerSecond => _dataExtraDamagePerSecond.Value;
@@ -95,8 +103,9 @@ namespace War3Api.Object.Abilities
         public ReadOnlyObjectProperty<bool> IsDataMovementSpeedReductionModified => _isDataMovementSpeedReductionModified.Value;
         public ObjectProperty<float> DataAttackSpeedReduction => _dataAttackSpeedReduction.Value;
         public ReadOnlyObjectProperty<bool> IsDataAttackSpeedReductionModified => _isDataAttackSpeedReductionModified.Value;
-        public ObjectProperty<bool> DataRepairsAllowed => _dataRepairsAllowed.Value;
+        public ObjectProperty<int> DataRepairsAllowedRaw => _dataRepairsAllowedRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataRepairsAllowedModified => _isDataRepairsAllowedModified.Value;
+        public ObjectProperty<bool> DataRepairsAllowed => _dataRepairsAllowed.Value;
         private float GetDataExtraDamagePerSecond(int level)
         {
             return _modifications[829516140, level].ValueAsFloat;
@@ -142,19 +151,29 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(863070572, level);
         }
 
-        private bool GetDataRepairsAllowed(int level)
+        private int GetDataRepairsAllowedRaw(int level)
         {
-            return _modifications[879847788, level].ValueAsBool;
+            return _modifications[879847788, level].ValueAsInt;
         }
 
-        private void SetDataRepairsAllowed(int level, bool value)
+        private void SetDataRepairsAllowedRaw(int level, int value)
         {
-            _modifications[879847788, level] = new LevelObjectDataModification{Id = 879847788, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 4};
+            _modifications[879847788, level] = new LevelObjectDataModification{Id = 879847788, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 4};
         }
 
         private bool GetIsDataRepairsAllowedModified(int level)
         {
             return _modifications.ContainsKey(879847788, level);
+        }
+
+        private bool GetDataRepairsAllowed(int level)
+        {
+            return GetDataRepairsAllowedRaw(level).ToBool(this);
+        }
+
+        private void SetDataRepairsAllowed(int level, bool value)
+        {
+            SetDataRepairsAllowedRaw(level, value.ToRaw(null, null));
         }
     }
 }

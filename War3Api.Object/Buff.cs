@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -87,13 +88,19 @@ namespace War3Api.Object
         }
 
         public bool IsTextTooltipExtendedModified => _modifications.ContainsKey(1700951398);
-        public bool StatsIsAnEffect
+        public int StatsIsAnEffectRaw
         {
-            get => _modifications[1717986662].ValueAsBool;
-            set => _modifications[1717986662] = new SimpleObjectDataModification{Id = 1717986662, Type = ObjectDataType.Bool, Value = value};
+            get => _modifications[1717986662].ValueAsInt;
+            set => _modifications[1717986662] = new SimpleObjectDataModification{Id = 1717986662, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsStatsIsAnEffectModified => _modifications.ContainsKey(1717986662);
+        public bool StatsIsAnEffect
+        {
+            get => StatsIsAnEffectRaw.ToBool(this);
+            set => StatsIsAnEffectRaw = value.ToRaw(null, null);
+        }
+
         public string StatsRaceRaw
         {
             get => _modifications[1667330662].ValueAsString;
@@ -199,13 +206,19 @@ namespace War3Api.Object
         }
 
         public bool IsArtMissileArcModified => _modifications.ContainsKey(1667329382);
-        public bool ArtMissileHomingEnabled
+        public int ArtMissileHomingEnabledRaw
         {
-            get => _modifications[1869114726].ValueAsBool;
-            set => _modifications[1869114726] = new SimpleObjectDataModification{Id = 1869114726, Type = ObjectDataType.Bool, Value = value};
+            get => _modifications[1869114726].ValueAsInt;
+            set => _modifications[1869114726] = new SimpleObjectDataModification{Id = 1869114726, Type = ObjectDataType.Int, Value = value};
         }
 
         public bool IsArtMissileHomingEnabledModified => _modifications.ContainsKey(1869114726);
+        public bool ArtMissileHomingEnabled
+        {
+            get => ArtMissileHomingEnabledRaw.ToBool(this);
+            set => ArtMissileHomingEnabledRaw = value.ToRaw(null, null);
+        }
+
         public int ArtTargetAttachments
         {
             get => _modifications[1667331174].ValueAsInt;

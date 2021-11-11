@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -19,8 +20,9 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataPartialDamageAmountModified;
         private readonly Lazy<ObjectProperty<float>> _dataBuildingDamageFactor;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataBuildingDamageFactorModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataExplodesOnDeath;
+        private readonly Lazy<ObjectProperty<int>> _dataExplodesOnDeathRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataExplodesOnDeathModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataExplodesOnDeath;
         public SelfDestruct(): base(1935962945)
         {
             _dataFullDamageRadius = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataFullDamageRadius, SetDataFullDamageRadius));
@@ -33,8 +35,9 @@ namespace War3Api.Object.Abilities
             _isDataPartialDamageAmountModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPartialDamageAmountModified));
             _dataBuildingDamageFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBuildingDamageFactor, SetDataBuildingDamageFactor));
             _isDataBuildingDamageFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBuildingDamageFactorModified));
-            _dataExplodesOnDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExplodesOnDeath, SetDataExplodesOnDeath));
+            _dataExplodesOnDeathRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataExplodesOnDeathRaw, SetDataExplodesOnDeathRaw));
             _isDataExplodesOnDeathModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataExplodesOnDeathModified));
+            _dataExplodesOnDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExplodesOnDeath, SetDataExplodesOnDeath));
         }
 
         public SelfDestruct(int newId): base(1935962945, newId)
@@ -49,8 +52,9 @@ namespace War3Api.Object.Abilities
             _isDataPartialDamageAmountModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPartialDamageAmountModified));
             _dataBuildingDamageFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBuildingDamageFactor, SetDataBuildingDamageFactor));
             _isDataBuildingDamageFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBuildingDamageFactorModified));
-            _dataExplodesOnDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExplodesOnDeath, SetDataExplodesOnDeath));
+            _dataExplodesOnDeathRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataExplodesOnDeathRaw, SetDataExplodesOnDeathRaw));
             _isDataExplodesOnDeathModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataExplodesOnDeathModified));
+            _dataExplodesOnDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExplodesOnDeath, SetDataExplodesOnDeath));
         }
 
         public SelfDestruct(string newRawcode): base(1935962945, newRawcode)
@@ -65,8 +69,9 @@ namespace War3Api.Object.Abilities
             _isDataPartialDamageAmountModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPartialDamageAmountModified));
             _dataBuildingDamageFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBuildingDamageFactor, SetDataBuildingDamageFactor));
             _isDataBuildingDamageFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBuildingDamageFactorModified));
-            _dataExplodesOnDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExplodesOnDeath, SetDataExplodesOnDeath));
+            _dataExplodesOnDeathRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataExplodesOnDeathRaw, SetDataExplodesOnDeathRaw));
             _isDataExplodesOnDeathModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataExplodesOnDeathModified));
+            _dataExplodesOnDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExplodesOnDeath, SetDataExplodesOnDeath));
         }
 
         public SelfDestruct(ObjectDatabase db): base(1935962945, db)
@@ -81,8 +86,9 @@ namespace War3Api.Object.Abilities
             _isDataPartialDamageAmountModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPartialDamageAmountModified));
             _dataBuildingDamageFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBuildingDamageFactor, SetDataBuildingDamageFactor));
             _isDataBuildingDamageFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBuildingDamageFactorModified));
-            _dataExplodesOnDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExplodesOnDeath, SetDataExplodesOnDeath));
+            _dataExplodesOnDeathRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataExplodesOnDeathRaw, SetDataExplodesOnDeathRaw));
             _isDataExplodesOnDeathModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataExplodesOnDeathModified));
+            _dataExplodesOnDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExplodesOnDeath, SetDataExplodesOnDeath));
         }
 
         public SelfDestruct(int newId, ObjectDatabase db): base(1935962945, newId, db)
@@ -97,8 +103,9 @@ namespace War3Api.Object.Abilities
             _isDataPartialDamageAmountModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPartialDamageAmountModified));
             _dataBuildingDamageFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBuildingDamageFactor, SetDataBuildingDamageFactor));
             _isDataBuildingDamageFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBuildingDamageFactorModified));
-            _dataExplodesOnDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExplodesOnDeath, SetDataExplodesOnDeath));
+            _dataExplodesOnDeathRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataExplodesOnDeathRaw, SetDataExplodesOnDeathRaw));
             _isDataExplodesOnDeathModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataExplodesOnDeathModified));
+            _dataExplodesOnDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExplodesOnDeath, SetDataExplodesOnDeath));
         }
 
         public SelfDestruct(string newRawcode, ObjectDatabase db): base(1935962945, newRawcode, db)
@@ -113,8 +120,9 @@ namespace War3Api.Object.Abilities
             _isDataPartialDamageAmountModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPartialDamageAmountModified));
             _dataBuildingDamageFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBuildingDamageFactor, SetDataBuildingDamageFactor));
             _isDataBuildingDamageFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBuildingDamageFactorModified));
-            _dataExplodesOnDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExplodesOnDeath, SetDataExplodesOnDeath));
+            _dataExplodesOnDeathRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataExplodesOnDeathRaw, SetDataExplodesOnDeathRaw));
             _isDataExplodesOnDeathModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataExplodesOnDeathModified));
+            _dataExplodesOnDeath = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataExplodesOnDeath, SetDataExplodesOnDeath));
         }
 
         public ObjectProperty<float> DataFullDamageRadius => _dataFullDamageRadius.Value;
@@ -127,8 +135,9 @@ namespace War3Api.Object.Abilities
         public ReadOnlyObjectProperty<bool> IsDataPartialDamageAmountModified => _isDataPartialDamageAmountModified.Value;
         public ObjectProperty<float> DataBuildingDamageFactor => _dataBuildingDamageFactor.Value;
         public ReadOnlyObjectProperty<bool> IsDataBuildingDamageFactorModified => _isDataBuildingDamageFactorModified.Value;
-        public ObjectProperty<bool> DataExplodesOnDeath => _dataExplodesOnDeath.Value;
+        public ObjectProperty<int> DataExplodesOnDeathRaw => _dataExplodesOnDeathRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataExplodesOnDeathModified => _isDataExplodesOnDeathModified.Value;
+        public ObjectProperty<bool> DataExplodesOnDeath => _dataExplodesOnDeath.Value;
         private float GetDataFullDamageRadius(int level)
         {
             return _modifications[828466244, level].ValueAsFloat;
@@ -204,19 +213,29 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(829645907, level);
         }
 
-        private bool GetDataExplodesOnDeath(int level)
+        private int GetDataExplodesOnDeathRaw(int level)
         {
-            return _modifications[913531987, level].ValueAsBool;
+            return _modifications[913531987, level].ValueAsInt;
         }
 
-        private void SetDataExplodesOnDeath(int level, bool value)
+        private void SetDataExplodesOnDeathRaw(int level, int value)
         {
-            _modifications[913531987, level] = new LevelObjectDataModification{Id = 913531987, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 6};
+            _modifications[913531987, level] = new LevelObjectDataModification{Id = 913531987, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 6};
         }
 
         private bool GetIsDataExplodesOnDeathModified(int level)
         {
             return _modifications.ContainsKey(913531987, level);
+        }
+
+        private bool GetDataExplodesOnDeath(int level)
+        {
+            return GetDataExplodesOnDeathRaw(level).ToBool(this);
+        }
+
+        private void SetDataExplodesOnDeath(int level, bool value)
+        {
+            SetDataExplodesOnDeathRaw(level, value.ToRaw(0, 1));
         }
     }
 }

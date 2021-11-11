@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -16,8 +17,9 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ObjectProperty<int>> _dataAllowWhenFullRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAllowWhenFullModified;
         private readonly Lazy<ObjectProperty<FullFlags>> _dataAllowWhenFull;
-        private readonly Lazy<ObjectProperty<bool>> _dataNoTargetRequired;
+        private readonly Lazy<ObjectProperty<int>> _dataNoTargetRequiredRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataNoTargetRequiredModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataNoTargetRequired;
         public RejuvinationCreep(): base(1785873217)
         {
             _dataHitPointsGained = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataHitPointsGained, SetDataHitPointsGained));
@@ -27,8 +29,9 @@ namespace War3Api.Object.Abilities
             _dataAllowWhenFullRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAllowWhenFullRaw, SetDataAllowWhenFullRaw));
             _isDataAllowWhenFullModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAllowWhenFullModified));
             _dataAllowWhenFull = new Lazy<ObjectProperty<FullFlags>>(() => new ObjectProperty<FullFlags>(GetDataAllowWhenFull, SetDataAllowWhenFull));
-            _dataNoTargetRequired = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNoTargetRequired, SetDataNoTargetRequired));
+            _dataNoTargetRequiredRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNoTargetRequiredRaw, SetDataNoTargetRequiredRaw));
             _isDataNoTargetRequiredModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNoTargetRequiredModified));
+            _dataNoTargetRequired = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNoTargetRequired, SetDataNoTargetRequired));
         }
 
         public RejuvinationCreep(int newId): base(1785873217, newId)
@@ -40,8 +43,9 @@ namespace War3Api.Object.Abilities
             _dataAllowWhenFullRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAllowWhenFullRaw, SetDataAllowWhenFullRaw));
             _isDataAllowWhenFullModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAllowWhenFullModified));
             _dataAllowWhenFull = new Lazy<ObjectProperty<FullFlags>>(() => new ObjectProperty<FullFlags>(GetDataAllowWhenFull, SetDataAllowWhenFull));
-            _dataNoTargetRequired = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNoTargetRequired, SetDataNoTargetRequired));
+            _dataNoTargetRequiredRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNoTargetRequiredRaw, SetDataNoTargetRequiredRaw));
             _isDataNoTargetRequiredModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNoTargetRequiredModified));
+            _dataNoTargetRequired = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNoTargetRequired, SetDataNoTargetRequired));
         }
 
         public RejuvinationCreep(string newRawcode): base(1785873217, newRawcode)
@@ -53,8 +57,9 @@ namespace War3Api.Object.Abilities
             _dataAllowWhenFullRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAllowWhenFullRaw, SetDataAllowWhenFullRaw));
             _isDataAllowWhenFullModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAllowWhenFullModified));
             _dataAllowWhenFull = new Lazy<ObjectProperty<FullFlags>>(() => new ObjectProperty<FullFlags>(GetDataAllowWhenFull, SetDataAllowWhenFull));
-            _dataNoTargetRequired = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNoTargetRequired, SetDataNoTargetRequired));
+            _dataNoTargetRequiredRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNoTargetRequiredRaw, SetDataNoTargetRequiredRaw));
             _isDataNoTargetRequiredModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNoTargetRequiredModified));
+            _dataNoTargetRequired = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNoTargetRequired, SetDataNoTargetRequired));
         }
 
         public RejuvinationCreep(ObjectDatabase db): base(1785873217, db)
@@ -66,8 +71,9 @@ namespace War3Api.Object.Abilities
             _dataAllowWhenFullRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAllowWhenFullRaw, SetDataAllowWhenFullRaw));
             _isDataAllowWhenFullModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAllowWhenFullModified));
             _dataAllowWhenFull = new Lazy<ObjectProperty<FullFlags>>(() => new ObjectProperty<FullFlags>(GetDataAllowWhenFull, SetDataAllowWhenFull));
-            _dataNoTargetRequired = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNoTargetRequired, SetDataNoTargetRequired));
+            _dataNoTargetRequiredRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNoTargetRequiredRaw, SetDataNoTargetRequiredRaw));
             _isDataNoTargetRequiredModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNoTargetRequiredModified));
+            _dataNoTargetRequired = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNoTargetRequired, SetDataNoTargetRequired));
         }
 
         public RejuvinationCreep(int newId, ObjectDatabase db): base(1785873217, newId, db)
@@ -79,8 +85,9 @@ namespace War3Api.Object.Abilities
             _dataAllowWhenFullRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAllowWhenFullRaw, SetDataAllowWhenFullRaw));
             _isDataAllowWhenFullModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAllowWhenFullModified));
             _dataAllowWhenFull = new Lazy<ObjectProperty<FullFlags>>(() => new ObjectProperty<FullFlags>(GetDataAllowWhenFull, SetDataAllowWhenFull));
-            _dataNoTargetRequired = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNoTargetRequired, SetDataNoTargetRequired));
+            _dataNoTargetRequiredRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNoTargetRequiredRaw, SetDataNoTargetRequiredRaw));
             _isDataNoTargetRequiredModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNoTargetRequiredModified));
+            _dataNoTargetRequired = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNoTargetRequired, SetDataNoTargetRequired));
         }
 
         public RejuvinationCreep(string newRawcode, ObjectDatabase db): base(1785873217, newRawcode, db)
@@ -92,8 +99,9 @@ namespace War3Api.Object.Abilities
             _dataAllowWhenFullRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAllowWhenFullRaw, SetDataAllowWhenFullRaw));
             _isDataAllowWhenFullModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAllowWhenFullModified));
             _dataAllowWhenFull = new Lazy<ObjectProperty<FullFlags>>(() => new ObjectProperty<FullFlags>(GetDataAllowWhenFull, SetDataAllowWhenFull));
-            _dataNoTargetRequired = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNoTargetRequired, SetDataNoTargetRequired));
+            _dataNoTargetRequiredRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNoTargetRequiredRaw, SetDataNoTargetRequiredRaw));
             _isDataNoTargetRequiredModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNoTargetRequiredModified));
+            _dataNoTargetRequired = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataNoTargetRequired, SetDataNoTargetRequired));
         }
 
         public ObjectProperty<float> DataHitPointsGained => _dataHitPointsGained.Value;
@@ -103,8 +111,9 @@ namespace War3Api.Object.Abilities
         public ObjectProperty<int> DataAllowWhenFullRaw => _dataAllowWhenFullRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataAllowWhenFullModified => _isDataAllowWhenFullModified.Value;
         public ObjectProperty<FullFlags> DataAllowWhenFull => _dataAllowWhenFull.Value;
-        public ObjectProperty<bool> DataNoTargetRequired => _dataNoTargetRequired.Value;
+        public ObjectProperty<int> DataNoTargetRequiredRaw => _dataNoTargetRequiredRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataNoTargetRequiredModified => _isDataNoTargetRequiredModified.Value;
+        public ObjectProperty<bool> DataNoTargetRequired => _dataNoTargetRequired.Value;
         private float GetDataHitPointsGained(int level)
         {
             return _modifications[829056338, level].ValueAsFloat;
@@ -160,19 +169,29 @@ namespace War3Api.Object.Abilities
             SetDataAllowWhenFullRaw(level, value.ToRaw(null, null));
         }
 
-        private bool GetDataNoTargetRequired(int level)
+        private int GetDataNoTargetRequiredRaw(int level)
         {
-            return _modifications[879387986, level].ValueAsBool;
+            return _modifications[879387986, level].ValueAsInt;
         }
 
-        private void SetDataNoTargetRequired(int level, bool value)
+        private void SetDataNoTargetRequiredRaw(int level, int value)
         {
-            _modifications[879387986, level] = new LevelObjectDataModification{Id = 879387986, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 4};
+            _modifications[879387986, level] = new LevelObjectDataModification{Id = 879387986, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 4};
         }
 
         private bool GetIsDataNoTargetRequiredModified(int level)
         {
             return _modifications.ContainsKey(879387986, level);
+        }
+
+        private bool GetDataNoTargetRequired(int level)
+        {
+            return GetDataNoTargetRequiredRaw(level).ToBool(this);
+        }
+
+        private void SetDataNoTargetRequired(int level, bool value)
+        {
+            SetDataNoTargetRequiredRaw(level, value.ToRaw(null, null));
         }
     }
 }

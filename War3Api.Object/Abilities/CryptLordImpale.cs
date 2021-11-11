@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build.Object;
 using War3Net.Common.Extensions;
 
@@ -17,10 +18,12 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamageDealtModified;
         private readonly Lazy<ObjectProperty<float>> _dataAirTimeSeconds;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAirTimeSecondsModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataUninterruptible;
+        private readonly Lazy<ObjectProperty<int>> _dataUninterruptibleRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataUninterruptibleModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataAirborneTargetsVulnerable;
+        private readonly Lazy<ObjectProperty<bool>> _dataUninterruptible;
+        private readonly Lazy<ObjectProperty<int>> _dataAirborneTargetsVulnerableRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAirborneTargetsVulnerableModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataAirborneTargetsVulnerable;
         public CryptLordImpale(): base(1835619649)
         {
             _dataWaveDistance = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaveDistance, SetDataWaveDistance));
@@ -31,10 +34,12 @@ namespace War3Api.Object.Abilities
             _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
             _dataAirTimeSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAirTimeSeconds, SetDataAirTimeSeconds));
             _isDataAirTimeSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirTimeSecondsModified));
-            _dataUninterruptible = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUninterruptible, SetDataUninterruptible));
+            _dataUninterruptibleRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUninterruptibleRaw, SetDataUninterruptibleRaw));
             _isDataUninterruptibleModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUninterruptibleModified));
-            _dataAirborneTargetsVulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAirborneTargetsVulnerable, SetDataAirborneTargetsVulnerable));
+            _dataUninterruptible = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUninterruptible, SetDataUninterruptible));
+            _dataAirborneTargetsVulnerableRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAirborneTargetsVulnerableRaw, SetDataAirborneTargetsVulnerableRaw));
             _isDataAirborneTargetsVulnerableModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirborneTargetsVulnerableModified));
+            _dataAirborneTargetsVulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAirborneTargetsVulnerable, SetDataAirborneTargetsVulnerable));
         }
 
         public CryptLordImpale(int newId): base(1835619649, newId)
@@ -47,10 +52,12 @@ namespace War3Api.Object.Abilities
             _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
             _dataAirTimeSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAirTimeSeconds, SetDataAirTimeSeconds));
             _isDataAirTimeSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirTimeSecondsModified));
-            _dataUninterruptible = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUninterruptible, SetDataUninterruptible));
+            _dataUninterruptibleRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUninterruptibleRaw, SetDataUninterruptibleRaw));
             _isDataUninterruptibleModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUninterruptibleModified));
-            _dataAirborneTargetsVulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAirborneTargetsVulnerable, SetDataAirborneTargetsVulnerable));
+            _dataUninterruptible = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUninterruptible, SetDataUninterruptible));
+            _dataAirborneTargetsVulnerableRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAirborneTargetsVulnerableRaw, SetDataAirborneTargetsVulnerableRaw));
             _isDataAirborneTargetsVulnerableModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirborneTargetsVulnerableModified));
+            _dataAirborneTargetsVulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAirborneTargetsVulnerable, SetDataAirborneTargetsVulnerable));
         }
 
         public CryptLordImpale(string newRawcode): base(1835619649, newRawcode)
@@ -63,10 +70,12 @@ namespace War3Api.Object.Abilities
             _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
             _dataAirTimeSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAirTimeSeconds, SetDataAirTimeSeconds));
             _isDataAirTimeSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirTimeSecondsModified));
-            _dataUninterruptible = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUninterruptible, SetDataUninterruptible));
+            _dataUninterruptibleRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUninterruptibleRaw, SetDataUninterruptibleRaw));
             _isDataUninterruptibleModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUninterruptibleModified));
-            _dataAirborneTargetsVulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAirborneTargetsVulnerable, SetDataAirborneTargetsVulnerable));
+            _dataUninterruptible = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUninterruptible, SetDataUninterruptible));
+            _dataAirborneTargetsVulnerableRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAirborneTargetsVulnerableRaw, SetDataAirborneTargetsVulnerableRaw));
             _isDataAirborneTargetsVulnerableModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirborneTargetsVulnerableModified));
+            _dataAirborneTargetsVulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAirborneTargetsVulnerable, SetDataAirborneTargetsVulnerable));
         }
 
         public CryptLordImpale(ObjectDatabase db): base(1835619649, db)
@@ -79,10 +88,12 @@ namespace War3Api.Object.Abilities
             _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
             _dataAirTimeSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAirTimeSeconds, SetDataAirTimeSeconds));
             _isDataAirTimeSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirTimeSecondsModified));
-            _dataUninterruptible = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUninterruptible, SetDataUninterruptible));
+            _dataUninterruptibleRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUninterruptibleRaw, SetDataUninterruptibleRaw));
             _isDataUninterruptibleModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUninterruptibleModified));
-            _dataAirborneTargetsVulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAirborneTargetsVulnerable, SetDataAirborneTargetsVulnerable));
+            _dataUninterruptible = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUninterruptible, SetDataUninterruptible));
+            _dataAirborneTargetsVulnerableRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAirborneTargetsVulnerableRaw, SetDataAirborneTargetsVulnerableRaw));
             _isDataAirborneTargetsVulnerableModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirborneTargetsVulnerableModified));
+            _dataAirborneTargetsVulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAirborneTargetsVulnerable, SetDataAirborneTargetsVulnerable));
         }
 
         public CryptLordImpale(int newId, ObjectDatabase db): base(1835619649, newId, db)
@@ -95,10 +106,12 @@ namespace War3Api.Object.Abilities
             _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
             _dataAirTimeSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAirTimeSeconds, SetDataAirTimeSeconds));
             _isDataAirTimeSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirTimeSecondsModified));
-            _dataUninterruptible = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUninterruptible, SetDataUninterruptible));
+            _dataUninterruptibleRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUninterruptibleRaw, SetDataUninterruptibleRaw));
             _isDataUninterruptibleModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUninterruptibleModified));
-            _dataAirborneTargetsVulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAirborneTargetsVulnerable, SetDataAirborneTargetsVulnerable));
+            _dataUninterruptible = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUninterruptible, SetDataUninterruptible));
+            _dataAirborneTargetsVulnerableRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAirborneTargetsVulnerableRaw, SetDataAirborneTargetsVulnerableRaw));
             _isDataAirborneTargetsVulnerableModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirborneTargetsVulnerableModified));
+            _dataAirborneTargetsVulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAirborneTargetsVulnerable, SetDataAirborneTargetsVulnerable));
         }
 
         public CryptLordImpale(string newRawcode, ObjectDatabase db): base(1835619649, newRawcode, db)
@@ -111,10 +124,12 @@ namespace War3Api.Object.Abilities
             _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
             _dataAirTimeSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAirTimeSeconds, SetDataAirTimeSeconds));
             _isDataAirTimeSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirTimeSecondsModified));
-            _dataUninterruptible = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUninterruptible, SetDataUninterruptible));
+            _dataUninterruptibleRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUninterruptibleRaw, SetDataUninterruptibleRaw));
             _isDataUninterruptibleModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUninterruptibleModified));
-            _dataAirborneTargetsVulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAirborneTargetsVulnerable, SetDataAirborneTargetsVulnerable));
+            _dataUninterruptible = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUninterruptible, SetDataUninterruptible));
+            _dataAirborneTargetsVulnerableRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAirborneTargetsVulnerableRaw, SetDataAirborneTargetsVulnerableRaw));
             _isDataAirborneTargetsVulnerableModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirborneTargetsVulnerableModified));
+            _dataAirborneTargetsVulnerable = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAirborneTargetsVulnerable, SetDataAirborneTargetsVulnerable));
         }
 
         public ObjectProperty<float> DataWaveDistance => _dataWaveDistance.Value;
@@ -125,10 +140,12 @@ namespace War3Api.Object.Abilities
         public ReadOnlyObjectProperty<bool> IsDataDamageDealtModified => _isDataDamageDealtModified.Value;
         public ObjectProperty<float> DataAirTimeSeconds => _dataAirTimeSeconds.Value;
         public ReadOnlyObjectProperty<bool> IsDataAirTimeSecondsModified => _isDataAirTimeSecondsModified.Value;
-        public ObjectProperty<bool> DataUninterruptible => _dataUninterruptible.Value;
+        public ObjectProperty<int> DataUninterruptibleRaw => _dataUninterruptibleRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataUninterruptibleModified => _isDataUninterruptibleModified.Value;
-        public ObjectProperty<bool> DataAirborneTargetsVulnerable => _dataAirborneTargetsVulnerable.Value;
+        public ObjectProperty<bool> DataUninterruptible => _dataUninterruptible.Value;
+        public ObjectProperty<int> DataAirborneTargetsVulnerableRaw => _dataAirborneTargetsVulnerableRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataAirborneTargetsVulnerableModified => _isDataAirborneTargetsVulnerableModified.Value;
+        public ObjectProperty<bool> DataAirborneTargetsVulnerable => _dataAirborneTargetsVulnerable.Value;
         private float GetDataWaveDistance(int level)
         {
             return _modifications[829253973, level].ValueAsFloat;
@@ -189,14 +206,14 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(879585621, level);
         }
 
-        private bool GetDataUninterruptible(int level)
+        private int GetDataUninterruptibleRaw(int level)
         {
-            return _modifications[896362837, level].ValueAsBool;
+            return _modifications[896362837, level].ValueAsInt;
         }
 
-        private void SetDataUninterruptible(int level, bool value)
+        private void SetDataUninterruptibleRaw(int level, int value)
         {
-            _modifications[896362837, level] = new LevelObjectDataModification{Id = 896362837, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 5};
+            _modifications[896362837, level] = new LevelObjectDataModification{Id = 896362837, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 5};
         }
 
         private bool GetIsDataUninterruptibleModified(int level)
@@ -204,19 +221,39 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(896362837, level);
         }
 
-        private bool GetDataAirborneTargetsVulnerable(int level)
+        private bool GetDataUninterruptible(int level)
         {
-            return _modifications[913140053, level].ValueAsBool;
+            return GetDataUninterruptibleRaw(level).ToBool(this);
         }
 
-        private void SetDataAirborneTargetsVulnerable(int level, bool value)
+        private void SetDataUninterruptible(int level, bool value)
         {
-            _modifications[913140053, level] = new LevelObjectDataModification{Id = 913140053, Type = ObjectDataType.Bool, Value = value, Level = level, Pointer = 6};
+            SetDataUninterruptibleRaw(level, value.ToRaw(null, null));
+        }
+
+        private int GetDataAirborneTargetsVulnerableRaw(int level)
+        {
+            return _modifications[913140053, level].ValueAsInt;
+        }
+
+        private void SetDataAirborneTargetsVulnerableRaw(int level, int value)
+        {
+            _modifications[913140053, level] = new LevelObjectDataModification{Id = 913140053, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 6};
         }
 
         private bool GetIsDataAirborneTargetsVulnerableModified(int level)
         {
             return _modifications.ContainsKey(913140053, level);
+        }
+
+        private bool GetDataAirborneTargetsVulnerable(int level)
+        {
+            return GetDataAirborneTargetsVulnerableRaw(level).ToBool(this);
+        }
+
+        private void SetDataAirborneTargetsVulnerable(int level, bool value)
+        {
+            SetDataAirborneTargetsVulnerableRaw(level, value.ToRaw(null, null));
         }
     }
 }
