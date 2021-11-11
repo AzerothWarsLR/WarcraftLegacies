@@ -5,10 +5,16 @@
     public readonly string Name { get; }
     public readonly bool Show { get; }
 
-    public PropertyMetadata(string name, bool show = true)
+    public PropertyMetadata(bool show)
+    {
+      Name = null;
+      Show = show;
+    }
+
+    public PropertyMetadata(string name)
     {
       Name = name;
-      Show = show;
+      Show = true;
     }
   }
 }

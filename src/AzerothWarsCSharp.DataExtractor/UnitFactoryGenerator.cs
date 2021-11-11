@@ -13,9 +13,31 @@ using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
 
 namespace AzerothWarsCSharp.DataExtractor
 {
-  public class UnitFactoryGenerator
+  public class UnitFactoryGenerator : FactoryGenerator<Unit>
   {
     private readonly Unit _unit;
+    private static readonly Dictionary<string, PropertyMetadata> _propertyMetaDatas = new()
+    {
+      { "ArtIconGameInterface", new PropertyMetadata("Icon") },
+      { "ArtButtonPositionX", new PropertyMetadata(false) },
+      { "ArtButtonPositionY", new PropertyMetadata(false) },
+      { "TextTooltipExtended", new PropertyMetadata("Flavour") },
+      { "TextTooltipBasic", new PropertyMetadata(false) },
+      { "StatsRepairGoldCost", new PropertyMetadata(false) },
+      { "StatsRepairLumberCost", new PropertyMetadata(false) },
+      { "StatsRepairTime", new PropertyMetadata(false) },
+      { "StatsGoldBountyAwardedNumberOfDice", new PropertyMetadata(false) },
+      { "StatsGoldBountyAwardedBase", new PropertyMetadata(false) },
+      { "StatsGoldBountyAwardedSidesPerDie", new PropertyMetadata(false) },
+      { "TextTooltipAwaken", new PropertyMetadata(false) },
+      { "TextTooltipRevive", new PropertyMetadata(false) },
+      { "StatsBuildTime", new PropertyMetadata("BuildTime") },
+      { "CombatDefenseBase", new PropertyMetadata("Armour") },
+      { "StatsGoldCost", new PropertyMetadata("GoldCost") },
+      { "StatsLumberCost", new PropertyMetadata("LumberCost") },
+      { "ArtScalingValue", new PropertyMetadata("ScalingValue") },
+      { "StatsHitPointsMaximumBase", new PropertyMetadata("HitPoints") },
+    };
 
     private static readonly string _namespace = "AzerothWarsCSharp.Launcher";
     private static readonly string[] _usings = new[] {
@@ -26,6 +48,15 @@ namespace AzerothWarsCSharp.DataExtractor
       "War3Api.Object",
     };
     private static ObjectDatabase _objectDatabase;
+
+    public static string GetPropertyTranslatedName(PropertyInfo property)
+    {
+      if (_propertyMetaDatas.TryGetValue(property.Name, out PropertyMetadata metadata))
+      {
+        return metadata.Name;
+      }
+      return property.Name;
+    }
 
     /// <summary>
     /// Checks if the property has a value set.
@@ -50,7 +81,9 @@ namespace AzerothWarsCSharp.DataExtractor
         if (property.SetMethod != null 
           && property.SetMethod.IsPublic 
           && typeof(Unit).GetProperty($"{property.Name}Raw") == null
-          && PropertyIsModified(property))
+          && PropertyIsModified(property)
+          && (!_propertyMetaDatas.TryGetValue(property.Name, out var metadata) || metadata.Show == true)
+        )
         {
           yield return property;
         }
@@ -65,13 +98,10 @@ namespace AzerothWarsCSharp.DataExtractor
           SyntaxKind.SimpleAssignmentExpression,
           IdentifierName(
             Identifier(
-              $"{property.Name}"
+              $"{GetPropertyTranslatedName(property)}"
             )
           ),
-          LiteralExpression(
-            SyntaxKind.StringLiteralExpression,
-            Literal(property.GetValue(_unit).ToString())
-          )
+          GenerateLiteralExpression(_unit, property)
         );
       }
     }
