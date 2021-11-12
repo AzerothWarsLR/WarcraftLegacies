@@ -37,15 +37,19 @@ namespace AzerothWarsCSharp.DataExtractor
       { "StatsLumberCost", new PropertyMetadata("LumberCost") },
       { "ArtScalingValue", new PropertyMetadata("ScalingValue") },
       { "StatsHitPointsMaximumBase", new PropertyMetadata("HitPoints") },
+      { "MovementSpeedBase", new PropertyMetadata("MovementSpeed") },
+      { "ArtTintingColor3Blue", new PropertyMetadata("TintBlue") },
+      { "ArtTintingColor2Green", new PropertyMetadata("TintGreen") },
+      { "ArtTintingColor1Red", new PropertyMetadata("TintRed") },
+      { "StatsPriority", new PropertyMetadata(false) },
+      { "StatsManaInitialAmount", new PropertyMetadata("StartingMana") },
+      { "StatsHitPointsRegenerationRate", new PropertyMetadata("HitPointRegenerationRate") },
     };
 
     private static readonly string _namespace = "AzerothWarsCSharp.Launcher";
     private static readonly string[] _usings = new[] {
-      "AzerothWarsCSharp.Launcher.ObjectFactory.Abilities",
-      "AzerothWarsCSharp.Launcher.ObjectFactory.Abilities.Human",
       "AzerothWarsCSharp.Launcher.ObjectFactory.Units",
-      "System.Drawing",
-      "War3Api.Object",
+      "War3Api.Object.Enums"
     };
     private static ObjectDatabase _objectDatabase;
 
