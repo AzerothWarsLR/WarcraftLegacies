@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
 using War3Api.Object;
+using War3Api.Object.Enums;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
 {
@@ -11,7 +12,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     private void GenerateTooltip(Unit unit)
     {
       var tooltipBuilder = new StringBuilder();
-      tooltipBuilder.Append($"{Flavour}|n|n");
+      tooltipBuilder.Append($"{Flavor}|n|n");
       tooltipBuilder.Append($"|c006969FFHit points|r: {unit.StatsHitPointsMaximumBase}|n");
       tooltipBuilder.Append($"|c006969FFAttack damage|r: {unit.DamageRangeString()}|n");
       tooltipBuilder.Append($"|c006969FFAbilities|r: ");
@@ -154,19 +155,18 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       }
     }
 
-    private string _flavour;
-    public string Flavour
+    private string _flavor;
+    public string Flavor
     {
       get
       {
-        return _flavour ?? Parent?.Flavour ?? "PLACEHOLDERFLAVOR";
+        return _flavor ?? Parent?.Flavor ?? "PLACEHOLDERFLAVOR";
       }
       set
       {
-        _flavour = value;
+        _flavor = value;
       }
     }
-
 
     private int? _damageBase;
     public int DamageBase
@@ -488,17 +488,17 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _cargoSize = value;
     }
 
-    private IEnumerable<PathingPrevent> _placementRequires;
-    public IEnumerable<PathingPrevent> PlacementRequires
+    private IEnumerable<PathingType> _placementRequires;
+    public IEnumerable<PathingType> PlacementRequires
     {
-      get => _placementRequires ?? Parent?.PlacementRequires ?? System.Array.Empty<PathingPrevent>();
+      get => _placementRequires ?? Parent?.PlacementRequires ?? Array.Empty<PathingType>();
       set => _placementRequires = value;
     }
 
-    private IEnumerable<PathingRequire> _placementPreventedBy;
-    public IEnumerable<PathingRequire> PlacementPreventedBy
+    private IEnumerable<PathingType> _placementPreventedBy;
+    public IEnumerable<PathingType> PlacementPreventedBy
     {
-      get => _placementPreventedBy ?? Parent?.PlacementPreventedBy ?? System.Array.Empty<PathingRequire>();
+      get => _placementPreventedBy ?? Parent?.PlacementPreventedBy ?? Array.Empty<PathingType>();
       set => _placementPreventedBy = value;
     }
 
@@ -822,7 +822,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     public UnitFactory(UnitType baseType)
     {
       BaseType = baseType;
-      Flavour = "";
     }
   }
 }

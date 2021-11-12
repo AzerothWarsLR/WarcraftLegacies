@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using War3Api.Object;
+using War3Api.Object.Enums;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.AbilityProperties
 {

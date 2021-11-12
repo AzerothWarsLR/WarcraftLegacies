@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DamageNumberOfDice1 = 1,
         DamageSidesPerDie1 = 2,
         HitPoints = 230,
-        Flavour = "Basic worker unit that has taken up arms.",
+        Flavor = "Basic worker unit that has taken up arms.",
         Icon = "Militia"
       };
       var militia = militiaFactory.Generate("zmil", objectDatabase);
@@ -64,7 +64,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DamageSidesPerDie1 = 2,
         HitPoints = 230,
         AbilitiesNormal = new Ability[] { harvest, calltoarms, repair },
-        Flavour = "Basic worker unit.",
+        Flavor = "Basic worker unit.",
         Icon = "Peasant"
       }.Generate("zpea", objectDatabase);
 
@@ -87,7 +87,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DamageSidesPerDie1 = 2,
         HitPoints = 420,
         AbilitiesNormal = new Ability[] { defend },
-        Flavour = "Versatile foot soldier.",
+        Flavor = "Versatile foot soldier.",
         Armor = 2,
         Model = @"units\human\Footman\Footman",
         Icon = "Footman",
@@ -115,7 +115,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DamageSidesPerDie1 = 5,
         HitPoints = 885,
         AbilitiesNormal = new Ability[] { sunderingblades },
-        Flavour = "Powerful mounted warrior.",
+        Flavor = "Powerful mounted warrior.",
         Armor = 5,
         Model = @"units\human\Knight\Knight",
         Icon = "Knight",
@@ -176,7 +176,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DamageSidesPerDie1 = 5,
         HitPoints = 885,
         AbilitiesNormal = new Ability[] { flare, fragmentationshards },
-        Flavour = "Long-range siege weaponry. Exceptional damage versus buildings, but slow and vulnerable.",
+        Flavor = "Long-range siege weaponry. Exceptional damage versus buildings, but slow and vulnerable.",
         Armor = 5,
         Model = @"units\human\MortarTeam\MortarTeam",
         Icon = "MortarTeam",
@@ -221,7 +221,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DamageSidesPerDie1 = 5,
         HitPoints = 885,
         AbilitiesNormal = new Ability[] { flakcannons, truesight, flyingmachinebombs },
-        Flavour = "Fast moving flying machine. Excellent at scouting, and effective against air units.",
+        Flavor = "Fast moving flying machine. Excellent at scouting, and effective against air units.",
         Armor = 5,
         Model = @"units\human\Gyrocopter\Gyrocopter",
         Icon = "Gyrocopter",
@@ -236,7 +236,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DamageSidesPerDie1 = 5,
         HitPoints = 885,
         AbilitiesNormal = System.Array.Empty<Ability>(),
-        Flavour = "Powerful flying creature, mounted by a Dwarven hammer-thrower.",
+        Flavor = "Powerful flying creature, mounted by a Dwarven hammer-thrower.",
         Armor = 5,
         Model = @"units\human\GryphonRider\GryphonRider",
         Icon = "GryphonRider"
@@ -283,7 +283,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DamageSidesPerDie1 = 5,
         HitPoints = 885,
         AbilitiesNormal = new Ability[] { heal, dispelmagic, innerfire },
-        Flavour = "Supporting spellcaster.",
+        Flavor = "Supporting spellcaster.",
         Armor = 5,
         Model = @"units\human\Priest\Priest",
         Icon = "Priest",
@@ -309,7 +309,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
         DamageSidesPerDie1 = 5,
         HitPoints = 885,
         AbilitiesNormal = new Ability[] { slow },
-        Flavour = "Versatile spellcaster.",
+        Flavor = "Versatile spellcaster.",
         Armor = 5,
         Model = @"units\human\Sorceress\Sorceress",
         Icon = "Sorceress",

@@ -2,6 +2,8 @@
 using System.Linq;
 using System.Text;
 using War3Api.Object;
+using War3Api.Object.Enums;
+using System;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
 {
@@ -10,7 +12,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     private void GenerateTooltip(Unit unit)
     {
       var tooltipBuilder = new StringBuilder();
-      tooltipBuilder.Append($"{Flavour}|n");
+      tooltipBuilder.Append($"{Flavor}|n");
       tooltipBuilder.Append($"|n|c006969FFHit points|r: {unit.StatsHitPointsMaximumBase}");
       //Trains
       if (unit.TechtreeUnitsTrained != null && unit.TechtreeUnitsTrained.Any())
@@ -72,11 +74,11 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     /// <summary>
     /// Researches that can be researched by generated buildings.
     /// </summary>
-    public IEnumerable<Upgrade> ResearchesAvailable { get; set; } = System.Array.Empty<Upgrade>();
+    public IEnumerable<Upgrade> ResearchesAvailable { get; set; } = Array.Empty<Upgrade>();
 
-    public IEnumerable<PathingRequire> PathingPrevent { get; set; } = System.Array.Empty<PathingRequire>();
+    public IEnumerable<PathingType> PathingPrevent { get; set; } = Array.Empty<PathingType>();
 
-    public IEnumerable<PathingPrevent> PathingRequire { get; set; } = System.Array.Empty<PathingPrevent>();
+    public IEnumerable<PathingType> PathingRequire { get; set; } = Array.Empty<PathingType>();
 
     public BuildingFactory(UnitType baseType) : base(baseType)
     {

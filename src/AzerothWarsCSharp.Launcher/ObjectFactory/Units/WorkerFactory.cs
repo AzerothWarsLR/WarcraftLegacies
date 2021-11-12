@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using War3Api.Object;
+using War3Api.Object.Enums;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
 {
@@ -8,7 +9,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     private void GenerateTooltip(Unit unit)
     {
       var tooltipBuilder = new StringBuilder();
-      tooltipBuilder.Append($"{Flavour}|n");
+      tooltipBuilder.Append($"{Flavor}|n");
       tooltipBuilder.Append($"|n|c006969FFHit points|r: {unit.StatsHitPointsMaximumBase}");
       unit.TextTooltipExtended = tooltipBuilder.ToString();
     }
