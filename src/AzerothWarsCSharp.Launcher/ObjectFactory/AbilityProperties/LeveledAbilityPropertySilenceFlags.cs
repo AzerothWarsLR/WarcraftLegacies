@@ -1,4 +1,5 @@
 ﻿using War3Api.Object;
+using War3Api.Object.Enums;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.AbilityProperties
 {
