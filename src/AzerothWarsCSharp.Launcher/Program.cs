@@ -5,10 +5,12 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using AzerothWarsCSharp.Launcher.ObjectFactory;
+using AzerothWarsCSharp.Launcher.ObjectFactory.Units;
 using CSharpLua;
 using Microsoft.CodeAnalysis;
 using War3Api.Object;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using War3Net.Build;
 using War3Net.Build.Extensions;
 using War3Net.Build.Object;
@@ -23,6 +25,7 @@ namespace Launcher
     private const string SOURCE_CODE_PROJECT_FOLDER_PATH = @"..\..\..\..\AzerothWarsCSharp.Source";
     private const string ASSETS_FOLDER_PATH = @"..\..\..\..\Assets\";
     private const string BASE_MAP_PATH = @"..\..\..\..\..\testsource.w3x";
+    private const string BASE_OBJECT_PATH = @"..\..\..\..\..\source.w3o"; //These objects get added into the map
 
     // Output
     private const string OUTPUT_FOLDER_PATH = @"..\..\..\..\artifacts";
@@ -157,10 +160,44 @@ namespace Launcher
       }
     }
 
+    /// <summary>
+    /// Takes some ObjectData, process it a bit, then adds it to the given ObjectDatabase.
+    /// </summary>
+    /// <param name="objectDatabase"></param>
+    /// <param name="objectData"></param>
+    /// <returns></returns>
+    private static ObjectDatabase ProcessAdditionalObjectData(ObjectDatabase destinationObjectDatabase, ObjectData objectData)
+    {
+      var tempObjectDatabase = new ObjectDatabase();
+      tempObjectDatabase.AddObjects(objectData);
+      foreach (var unit in tempObjectDatabase.GetUnits())
+      {
+        var unitFactory = new UnitFactory(UnitType.Abomination);
+        unitFactory.Generate("aaaa", destinationObjectDatabase);
+      }
+      return destinationObjectDatabase;
+    }
+
+    /// <summary>
+    /// Take a file containing some object data, process it a bit, then add it to the ObjectDatabase.
+    /// </summary>
+    /// <param name="objectDatabase"></param>
+    /// <param name="objectDataPath"></param>
+    /// <returns></returns>
+    private static ObjectDatabase ProcessAdditionalObjectData(ObjectDatabase objectDatabase, string objectDataPath)
+    {
+      using var fileStream = File.OpenRead(objectDataPath);
+      using var binaryReader = new BinaryReader(fileStream);
+      var objectData = binaryReader.ReadObjectData(false);
+      ProcessAdditionalObjectData(objectDatabase, objectData);
+      return objectDatabase;
+    }
+
     private static ObjectDatabase GenerateObjectDatabase()
     {
       ObjectDatabase objectDatabase = new();
       Human.GenerateObjectData(objectDatabase);
+      ProcessAdditionalObjectData(objectDatabase, BASE_OBJECT_PATH);
       return objectDatabase;
     }
 
