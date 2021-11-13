@@ -2,6 +2,7 @@
 using War3Api.Object.Abilities;
 using AzerothWarsCSharp.Launcher.ObjectFactory.AbilityProperties;
 using System.Collections.Generic;
+using War3Api.Object.Enums;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities.Human
 {

@@ -1,13 +1,14 @@
 ﻿using AzerothWarsCSharp.Launcher.ObjectFactory.AbilityProperties;
 using War3Api.Object;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities.Human
 {
   public sealed class TrueSightFactory : PassiveAbilityFactory<DetectGeneral>
   {
     public LeveledAbilityPropertyFloat CastRange { get; set; } = new("Detection radius", 900);
-    public LeveledAbilityPropertyDetectionType DetectionType { get; set; } = new("Detection type", War3Api.Object.DetectionType.Both);
+    public LeveledAbilityPropertyDetectionType DetectionType { get; set; } = new("Detection type", War3Api.Object.Enums.DetectionType.Both);
     public LeveledAbilityPropertyTargets TargetsAllowed { get; set; } = new("Targets allowed", new Target[] { Target.Vulnerable, Target.Invulnerable });
 
     protected override void ApplyStats(DetectGeneral ability)

@@ -1,5 +1,6 @@
 ﻿using War3Api.Object;
 using War3Api.Object.Abilities;
+using War3Api.Object.Enums;
 using AzerothWarsCSharp.Launcher.ObjectFactory.AbilityProperties;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities.Human
@@ -7,7 +8,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities.Human
   public class FlareFactory : ActiveAbilityFactory<Flare>
   {
     public LeveledAbilityPropertyFloat EffectDelay = new("Effect delay", 0.8f);
-    public LeveledAbilityPropertyDetectionType DetectionType = new("Detection type", War3Api.Object.DetectionType.Both);
+    public LeveledAbilityPropertyDetectionType DetectionType = new("Detection type", War3Api.Object.Enums.DetectionType.Both);
     public LeveledAbilityPropertyFloat AreaOfEffect = new("Area of effect", 1800);
     public LeveledAbilityPropertyFloat CastRange = new("Cast range", 99999);
     public LeveledAbilityPropertyFloat Duration = new("Duration", 15);
