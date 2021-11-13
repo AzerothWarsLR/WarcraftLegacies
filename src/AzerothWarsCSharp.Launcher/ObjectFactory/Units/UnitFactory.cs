@@ -13,25 +13,11 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
   /// </summary>
   public class UnitFactory : IObjectFactory<Unit>
   {
-    private void GenerateTooltip(Unit unit)
-    {
-      var tooltipBuilder = new StringBuilder();
-      tooltipBuilder.Append($"{Flavor}|n|n");
-      tooltipBuilder.Append($"|c006969FFHit points|r: {unit.StatsHitPointsMaximumBase}|n");
-      tooltipBuilder.Append($"|c006969FFAttack damage|r: {unit.DamageRangeString()}|n");
-      tooltipBuilder.Append($"|c006969FFAbilities|r: ");
-      foreach (var ability in unit.AbilitiesNormal)
-      {
-        tooltipBuilder.Append($"{ability.TextName}");
-      }
-      unit.TextTooltipExtended = tooltipBuilder.ToString();
-    }
-
     /// <summary>
     /// Apply non-tooltip information from the factory to a unit being generated.
     /// </summary>
     /// <param name="unit"></param>
-    protected void GenerateCore(Unit unit)
+    protected void Assign(Unit unit)
     {
       //Abilities
       unit.AbilitiesDefaultActiveAbility = DefaultActiveAbility;
@@ -91,76 +77,18 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.ArtTintingColor3Blue = Model.Tint.Blue;
       unit.ArtUseExtendedLineOfSight = false;
       //Combat
+      AssignAttacksEnabled(unit);
+      AssignAttacks(unit);
+      AssignTargetedAs(unit);
       unit.CombatAcquisitionRange = Math.Min(600, Attack1.Range);
       unit.CombatArmorType = ArmorType;
-      unit.CombatAttacksEnabled = AttackBits.None; //Calculate this
       unit.CombatDeathType = DeathType;
       unit.CombatDefenseBase = Armor;
       unit.CombatDefenseType = DefenseType;
       unit.CombatDefenseUpgradeBonus = ArmorUpgradeBonus;
       unit.CombatMinimumAttackRange = MinimumAttackRange;
-      unit.CombatTargetedAs = TargetedAs; //Calculate this
-      //Attack 1
-      unit.CombatAttack1AnimationBackswingPoint = Attack1.AnimationBackswingPoint;
-      unit.CombatAttack1AnimationDamagePoint = Attack1.AnimationDamagePoint;
-      unit.CombatAttack1AreaOfEffectFullDamage = Attack1.AreaOfEffectFullDamage;
-      unit.CombatAttack1AreaOfEffectMediumDamage = Attack1.AreaOfEffectMediumDamage;
-      unit.CombatAttack1AreaOfEffectSmallDamage = Attack1.AreaOfEffectSmallDamage;
-      unit.CombatAttack1AreaOfEffectTargets = Attack1.AreaOfEffectTargets;
-      unit.CombatAttack1AttackType = Attack1.AttackType;
-      unit.CombatAttack1CooldownTime = Attack1.CooldownTime;
-      unit.CombatAttack1DamageBase = Attack1.DamageBase;
-      unit.CombatAttack1DamageFactorMedium = Attack1.DamageFactorMedium;
-      unit.CombatAttack1DamageFactorSmall = Attack1.DamageFactorSmall;
-      unit.CombatAttack1DamageLossFactor = Attack1.DamageLossFactor;
-      unit.CombatAttack1DamageNumberOfDice = Attack1.DamageNumberOfDice;
-      unit.CombatAttack1DamageSidesPerDie = Attack1.DamageSidesPerDie;
-      unit.CombatAttack1DamageSpillDistance = Attack1.DamageSpillDistance;
-      unit.CombatAttack1DamageSpillRadius = Attack1.DamageSpillRadius;
-      unit.CombatAttack1DamageUpgradeAmount = Attack1.DamageUpgradeAmount;
-      unit.CombatAttack1MaximumNumberOfTargets = Attack1.MaximumNumberOfTargets;
-      unit.CombatAttack1ProjectileArc = Attack1.ProjectileArc;
-      unit.CombatAttack1ProjectileArt = Attack1.ProjectileArt;
-      unit.CombatAttack1ProjectileHomingEnabled = Attack1.ProjectileHomingEnabled;
-      unit.CombatAttack1ProjectileSpeed = Attack1.ProjectileSpeed;
-      unit.CombatAttack1Range = Attack1.Range;
-      unit.CombatAttack1RangeMotionBuffer = Attack1.RangeMotionBuffer; //Calculate this maybe
-      unit.CombatAttack1ShowUI = Attack1.ShowUI; //Calculate this
-      unit.CombatAttack1TargetsAllowed = Attack1.TargetsAllowed;
-      unit.CombatAttack1WeaponSound = Attack1.Sound;
-      unit.CombatAttack1WeaponType = Attack1.ProjectileType; //Calculate this probably
-      //Attack 2
-      unit.CombatAttack2AnimationBackswingPoint = Attack2.AnimationBackswingPoint;
-      unit.CombatAttack2AnimationDamagePoint = Attack2.AnimationDamagePoint;
-      unit.CombatAttack2AreaOfEffectFullDamage = Attack2.AreaOfEffectFullDamage;
-      unit.CombatAttack2AreaOfEffectMediumDamage = Attack2.AreaOfEffectMediumDamage;
-      unit.CombatAttack2AreaOfEffectSmallDamage = Attack2.AreaOfEffectSmallDamage;
-      unit.CombatAttack2AreaOfEffectTargets = Attack2.AreaOfEffectTargets;
-      unit.CombatAttack2AttackType = Attack2.AttackType;
-      unit.CombatAttack2CooldownTime = Attack2.CooldownTime;
-      unit.CombatAttack2DamageBase = Attack2.DamageBase;
-      unit.CombatAttack2DamageFactorMedium = Attack2.DamageFactorMedium;
-      unit.CombatAttack2DamageFactorSmall = Attack2.DamageFactorSmall;
-      unit.CombatAttack2DamageLossFactor = Attack2.DamageLossFactor;
-      unit.CombatAttack2DamageNumberOfDice = Attack2.DamageNumberOfDice;
-      unit.CombatAttack2DamageSidesPerDie = Attack2.DamageSidesPerDie;
-      unit.CombatAttack2DamageSpillDistance = Attack2.DamageSpillDistance;
-      unit.CombatAttack2DamageSpillRadius = Attack2.DamageSpillRadius;
-      unit.CombatAttack2DamageUpgradeAmount = Attack2.DamageUpgradeAmount;
-      unit.CombatAttack2MaximumNumberOfTargets = Attack2.MaximumNumberOfTargets;
-      unit.CombatAttack2ProjectileArc = Attack2.ProjectileArc;
-      unit.CombatAttack2ProjectileArt = Attack2.ProjectileArt;
-      unit.CombatAttack2ProjectileHomingEnabled = Attack2.ProjectileHomingEnabled;
-      unit.CombatAttack2ProjectileSpeed = Attack2.ProjectileSpeed;
-      unit.CombatAttack2Range = Attack2.Range;
-      unit.CombatAttack2RangeMotionBuffer = Attack2.RangeMotionBuffer; //Calculate this maybe
-      unit.CombatAttack2ShowUI = Attack2.ShowUI; //Calculate this
-      unit.CombatAttack2TargetsAllowed = Attack2.TargetsAllowed;
-      unit.CombatAttack2WeaponSound = Attack2.Sound;
-      unit.CombatAttack2WeaponType = Attack2.ProjectileType; //Calculate this probably
       //Editor
       unit.EditorDisplayAsNeutralHostile = false;
-      unit.EditorCategorizationCampaign = false;
       unit.EditorCategorizationSpecial = false;
       unit.EditorDisplayAsNeutralHostile = false;
       unit.EditorHasTilesetSpecificData = false;
@@ -189,23 +117,21 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.SoundRandom = SoundRandom;
       unit.SoundUnitSoundSet = SoundSet;
       //Stats
-      unit.StatsAgilityPerLevel = AgilityPerLevel;
+      AssignSightRadius(unit);
+      AssignFoodCost(unit);
+      AssignFormationRank(unit);
+      AssignGoldBounty(unit);
+      AssignHeroStats(unit);
+      AssignPriority(unit);
+      AssignFaction(unit);
       unit.StatsBuildTime = BuildTime;
       unit.StatsCanFlee = true;
-      AssignFoodCost(unit);
       unit.StatsFoodProduced = 0;
-      unit.StatsFormationRank = 0; //Calculate this
-      unit.StatsGoldBountyAwardedBase = 0; //Calculate this
-      unit.StatsGoldBountyAwardedNumberOfDice = 0; //Calculate this
-      unit.StatsGoldBountyAwardedSidesPerDie = 0; //Calculate this
       unit.StatsGoldCost = GoldCost;
-      unit.StatsHeroHideHeroDeathMessage = false;
-      unit.StatsHeroHideHeroInterfaceIcon = false;
       unit.StatsHideMinimapDisplay = false;
       unit.StatsHitPointsMaximumBase = HitPoints;
       unit.StatsHitPointsRegenerationRate = HitPointRegeneration;
       unit.StatsHitPointsRegenerationType = HitPointRegenerationType;
-      unit.StatsIntelligencePerLevel = IntelligencePerLevel;
       unit.StatsIsABuilding = IsABuilding;
       unit.StatsLevel = Level;
       unit.StatsLumberBountyAwardedBase = 0;
@@ -215,23 +141,15 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.StatsManaInitialAmount = Mana / 2;
       unit.StatsManaMaximum = Mana;
       unit.StatsPointValue = 0;
-      unit.StatsPrimaryAttribute = PrimaryAttribute; //Only set if hero
-      unit.StatsPriority = 0; //Calculate this
-      unit.StatsRace = UnitRace.Human; //Calculate this
       unit.StatsRepairGoldCost = GoldCost;
       unit.StatsRepairLumberCost = LumberCost;
       unit.StatsRepairTime = BuildTime;
-      AssignSightRadius(unit);
       unit.StatsSleeps = false;
-      unit.StatsStartingAgility = Agility;
-      unit.StatsStartingIntelligence = Intelligence;
-      unit.StatsStartingStrength = Strength;
-      unit.StatsStockInitialAfterStartDelay = 0; //Calculate this
-      unit.StatsStockMaximum = 0; //Calculate this
-      unit.StatsStockStartDelay = 0; //Calculate this
-      unit.StatsStrengthPerLevel = StrengthPerLevel;
+      unit.StatsStockInitialAfterStartDelay = StockInitial;
+      unit.StatsStockMaximum = StockMaximum;
+      unit.StatsStockStartDelay = StockStartDelay;
       unit.StatsTransportedSize = TransportedSize ?? 1;
-      unit.StatsUnitClassification = default; //Calculate this
+      unit.StatsUnitClassification = Classification;
       //Techtree
       unit.TechtreeDependencyEquivalents = DependencyEquivalents;
       unit.TechtreeItemsSold = ItemsSold;
@@ -241,10 +159,10 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.TechtreeUnitsSold = UnitsSold;
       unit.TechtreeUpgradesUsed = UpgradesUsed;
       //Text
+      AssignTooltip(unit);
       unit.TextDescription = "PLACEHOLDER";
       unit.TextHotkey = 'A';
       unit.TextName = Name;
-      unit.TextNameEditorSuffix = "";
       unit.TextProperNames = new[] { "" };
       unit.TextProperNamesUsed = 1;
       unit.TextTooltipAwaken = "";
@@ -256,14 +174,181 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     }
 
     /// <summary>
-    /// Generate a unit instance.
+    /// Assigns formation rank based on unit classification and range.
     /// </summary>
-    public Unit Generate(string newRawCode, ObjectDatabase objectDatabase)
+    /// <param name="unit"></param>
+    private void AssignFormationRank(Unit unit)
     {
-      var newUnit = new Unit(BaseType, newRawCode, objectDatabase);
-      GenerateCore(newUnit);
-      GenerateTooltip(newUnit);
-      return newUnit;
+      if (Classification.Contains(UnitClassification.Peon))
+      {
+        unit.StatsFormationRank = 4;
+        return;
+      }
+      var range = unit.CombatAttack1Range;
+      if (range < 100)
+      {
+        unit.StatsFormationRank = 0;
+        return;
+      }
+      if (range < 400)
+      {
+        unit.StatsFormationRank = 1;
+        return;
+      }
+      if (range < 700)
+      {
+        unit.StatsFormationRank = 2;
+        return;
+      }
+      unit.StatsFormationRank = 3;
+      return;
+    }
+
+    private void AssignTargetedAs(Unit unit)
+    {
+      var targets = new List<Target>();
+      if (IsABuilding){
+        targets.Add(Target.Ground);
+      } else
+      {
+        if (MovementType != MoveType.Fly)
+        {
+          targets.Add(Target.Air);
+        }
+        else
+        {
+          targets.Add(Target.Ground);
+        }
+      }
+      if (IsKeyTarget)
+      {
+        targets.Add(Target.Ancient);
+      }
+      unit.CombatTargetedAs = targets;
+    }
+
+    private void AssignFaction(Unit unit)
+    {
+      unit.StatsRace = Faction.Race;
+      unit.TextNameEditorSuffix = Faction.Name;
+      unit.EditorCategorizationCampaign = Faction.IsCampaign;
+    }
+
+    private void AssignHeroStats(Unit unit)
+    {
+      if (IsHero)
+      {
+        unit.StatsPrimaryAttribute = PrimaryAttribute;
+        unit.StatsStartingAgility = Agility;
+        unit.StatsStartingIntelligence = Intelligence;
+        unit.StatsStartingStrength = Strength;
+        unit.StatsStrengthPerLevel = StrengthPerLevel;
+        unit.StatsAgilityPerLevel = AgilityPerLevel;
+        unit.StatsIntelligencePerLevel = IntelligencePerLevel;
+        unit.StatsHeroHideHeroDeathMessage = false;
+        unit.StatsHeroHideHeroInterfaceIcon = false;
+      }
+    }
+
+    private void AssignPriority(Unit unit)
+    {
+      if (IsHero)
+      {
+        unit.StatsPriority = 100;
+        return;
+      }
+      unit.StatsPriority = Level;
+    }
+
+    private void AssignGoldBounty(Unit unit)
+    {
+      unit.StatsGoldBountyAwardedBase = Level*4;
+      unit.StatsGoldBountyAwardedNumberOfDice = Level*2;
+      unit.StatsGoldBountyAwardedSidesPerDie = Level*2;
+    }
+
+    private void AssignAttacksEnabled(Unit unit)
+    {
+      if (Attack1 != null && Attack2 != null)
+      {
+        unit.CombatAttacksEnabled = AttackBits.Both;
+        return;
+      }
+      if (Attack1 != null)
+      {
+        unit.CombatAttacksEnabled = AttackBits.Attack1Only;
+      }
+      if (Attack2 != null)
+      {
+        unit.CombatAttacksEnabled = AttackBits.Attack2Only;
+      }
+      unit.CombatAttacksEnabled = AttackBits.None;
+    }
+
+    private void AssignAttacks(Unit unit)
+    {
+      if (Attack1 != null)
+      {
+        unit.CombatAttack1AnimationBackswingPoint = Attack1.AnimationBackswingPoint;
+        unit.CombatAttack1AnimationDamagePoint = Attack1.AnimationDamagePoint;
+        unit.CombatAttack1AreaOfEffectFullDamage = Attack1.AreaOfEffectFullDamage;
+        unit.CombatAttack1AreaOfEffectMediumDamage = Attack1.AreaOfEffectMediumDamage;
+        unit.CombatAttack1AreaOfEffectSmallDamage = Attack1.AreaOfEffectSmallDamage;
+        unit.CombatAttack1AreaOfEffectTargets = Attack1.AreaOfEffectTargets;
+        unit.CombatAttack1AttackType = Attack1.AttackType;
+        unit.CombatAttack1CooldownTime = Attack1.CooldownTime;
+        unit.CombatAttack1DamageBase = Attack1.DamageBase;
+        unit.CombatAttack1DamageFactorMedium = Attack1.DamageFactorMedium;
+        unit.CombatAttack1DamageFactorSmall = Attack1.DamageFactorSmall;
+        unit.CombatAttack1DamageLossFactor = Attack1.DamageLossFactor;
+        unit.CombatAttack1DamageNumberOfDice = Attack1.DamageNumberOfDice;
+        unit.CombatAttack1DamageSidesPerDie = Attack1.DamageSidesPerDie;
+        unit.CombatAttack1DamageSpillDistance = Attack1.DamageSpillDistance;
+        unit.CombatAttack1DamageSpillRadius = Attack1.DamageSpillRadius;
+        unit.CombatAttack1DamageUpgradeAmount = Attack1.DamageUpgradeAmount;
+        unit.CombatAttack1MaximumNumberOfTargets = Attack1.MaximumNumberOfTargets;
+        unit.CombatAttack1ProjectileArc = Attack1.ProjectileArc;
+        unit.CombatAttack1ProjectileArt = Attack1.ProjectileArt;
+        unit.CombatAttack1ProjectileHomingEnabled = Attack1.ProjectileHomingEnabled;
+        unit.CombatAttack1ProjectileSpeed = Attack1.ProjectileSpeed;
+        unit.CombatAttack1Range = Attack1.Range;
+        unit.CombatAttack1RangeMotionBuffer = 250;
+        unit.CombatAttack1ShowUI = true;
+        unit.CombatAttack1TargetsAllowed = Attack1.TargetsAllowed;
+        unit.CombatAttack1WeaponSound = Attack1.Sound;
+        unit.CombatAttack1WeaponType = Attack1.ProjectileType; //Calculate this probably
+      }
+      if (Attack2 != null)
+      {
+        unit.CombatAttack2AnimationBackswingPoint = Attack2.AnimationBackswingPoint;
+        unit.CombatAttack2AnimationDamagePoint = Attack2.AnimationDamagePoint;
+        unit.CombatAttack2AreaOfEffectFullDamage = Attack2.AreaOfEffectFullDamage;
+        unit.CombatAttack2AreaOfEffectMediumDamage = Attack2.AreaOfEffectMediumDamage;
+        unit.CombatAttack2AreaOfEffectSmallDamage = Attack2.AreaOfEffectSmallDamage;
+        unit.CombatAttack2AreaOfEffectTargets = Attack2.AreaOfEffectTargets;
+        unit.CombatAttack2AttackType = Attack2.AttackType;
+        unit.CombatAttack2CooldownTime = Attack2.CooldownTime;
+        unit.CombatAttack2DamageBase = Attack2.DamageBase;
+        unit.CombatAttack2DamageFactorMedium = Attack2.DamageFactorMedium;
+        unit.CombatAttack2DamageFactorSmall = Attack2.DamageFactorSmall;
+        unit.CombatAttack2DamageLossFactor = Attack2.DamageLossFactor;
+        unit.CombatAttack2DamageNumberOfDice = Attack2.DamageNumberOfDice;
+        unit.CombatAttack2DamageSidesPerDie = Attack2.DamageSidesPerDie;
+        unit.CombatAttack2DamageSpillDistance = Attack2.DamageSpillDistance;
+        unit.CombatAttack2DamageSpillRadius = Attack2.DamageSpillRadius;
+        unit.CombatAttack2DamageUpgradeAmount = Attack2.DamageUpgradeAmount;
+        unit.CombatAttack2MaximumNumberOfTargets = Attack2.MaximumNumberOfTargets;
+        unit.CombatAttack2ProjectileArc = Attack2.ProjectileArc;
+        unit.CombatAttack2ProjectileArt = Attack2.ProjectileArt;
+        unit.CombatAttack2ProjectileHomingEnabled = Attack2.ProjectileHomingEnabled;
+        unit.CombatAttack2ProjectileSpeed = Attack2.ProjectileSpeed;
+        unit.CombatAttack2Range = Attack2.Range;
+        unit.CombatAttack2RangeMotionBuffer = 250;
+        unit.CombatAttack2ShowUI = true;
+        unit.CombatAttack2TargetsAllowed = Attack2.TargetsAllowed;
+        unit.CombatAttack2WeaponSound = Attack2.Sound;
+        unit.CombatAttack2WeaponType = Attack2.ProjectileType;
+      }
     }
 
     private void AssignCasterDetails(Unit unit)
@@ -302,7 +387,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
         unit.StatsSightRadiusNight = 800;
         return;
       }
-      if (IsHero) //Is hero
+      if (IsHero)
       {
         unit.StatsSightRadiusDay = 1800;
         unit.StatsSightRadiusNight = 800;
@@ -310,6 +395,30 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       }
       unit.StatsSightRadiusDay = 1400;
       unit.StatsSightRadiusNight = 800;
+    }
+
+    private void AssignTooltip(Unit unit)
+    {
+      var tooltipBuilder = new StringBuilder();
+      tooltipBuilder.Append($"{Flavor}|n|n");
+      tooltipBuilder.Append($"|c006969FFHit points|r: {unit.StatsHitPointsMaximumBase}|n");
+      tooltipBuilder.Append($"|c006969FFAttack damage|r: {unit.DamageRangeString()}|n");
+      tooltipBuilder.Append($"|c006969FFAbilities|r: ");
+      foreach (var ability in unit.AbilitiesNormal)
+      {
+        tooltipBuilder.Append($"{ability.TextName}");
+      }
+      unit.TextTooltipExtended = tooltipBuilder.ToString();
+    }
+
+    /// <summary>
+    /// Generate a unit instance.
+    /// </summary>
+    public Unit Generate(string newRawCode, ObjectDatabase objectDatabase)
+    {
+      var newUnit = new Unit(BaseType, newRawCode, objectDatabase);
+      Assign(newUnit);
+      return newUnit;
     }
 
     public Ability DefaultActiveAbility { get; set; }
@@ -356,7 +465,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     public RegenType RegenType { get; set; }
     public AttackType AttackType1 { get; set; }
     public AttackType AttackType2 { get; set; }
-    private DefenseType DefenseType { get; set; } = DefenseType.Normal;
+    public DefenseType DefenseType { get; set; } = DefenseType.Normal;
     /// <summary>
     /// The amount of mana the unit regenerates per second.
     /// </summary>
@@ -407,7 +516,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     public IEnumerable<Item> ItemsSold { get; set; }
     public int? TransportedSize { get; set; }
     public IEnumerable<Unit> DependencyEquivalents { get; set; }
-    public IEnumerable<Target> TargetedAs { get; set; }
     public int MinimumAttackRange { get; set; }
     public MovementSoundDetails MovementSoundDetails { get; set; }
     public string SoundRandom { get; set; }
@@ -415,6 +523,13 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     public bool IsHero { get; set; }
     public bool IsABuilding { get; set; }
     public bool IsCaster { get; set; }
+    /// <summary>
+    /// Key targets are things like Control Points and capitals. They can't be targeted by air units and ships.
+    /// </summary>
+    public bool IsKeyTarget { get; set; }
+    public int StockInitial { get; set; }
+    public int StockStartDelay { get; set; }
+    public Faction Faction { get; set; }
 
     /// <summary>
     /// Reverse engineer a UnitFactory from a template Unit.
@@ -489,7 +604,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
         ProjectileSpeed = unit.CombatAttack1ProjectileSpeed,
         Range = unit.CombatAttack1Range,
         RangeMotionBuffer = unit.CombatAttack1RangeMotionBuffer,
-        ShowUI = unit.CombatAttack1ShowUI,
         TargetsAllowed = unit.CombatAttack1TargetsAllowed,
         Sound = unit.CombatAttack1WeaponSound,
         ProjectileType = unit.CombatAttack1WeaponType

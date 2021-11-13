@@ -32,7 +32,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
     public int ProjectileSpeed { get; set; }
     public int Range { get; set; }
     public float RangeMotionBuffer { get; set; }
-    public bool ShowUI { get; set; }
     public IEnumerable<Target> TargetsAllowed { get; set; }
     public CombatSound Sound { get; set; }
     public WeaponType ProjectileType { get; set; }
