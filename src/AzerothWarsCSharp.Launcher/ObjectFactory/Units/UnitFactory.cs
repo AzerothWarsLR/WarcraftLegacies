@@ -7,6 +7,9 @@ using War3Api.Object.Enums;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
 {
+  /// <summary>
+  /// A factory that can instantiate Units based on its properties.
+  /// </summary>
   public class UnitFactory : IObjectFactory<Unit>
   {
     private void GenerateTooltip(Unit unit)
@@ -29,32 +32,227 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     /// <param name="unit"></param>
     protected void GenerateCore(Unit unit)
     {
-      unit.TechtreeStructuresBuilt = StructuresBuilt;
-      unit.StatsBuildTime = BuildTime;
-      unit.PathingCollisionSize = CollisionSize;
+      //Abilities
+      unit.AbilitiesDefaultActiveAbility = DefaultActiveAbility;
+      unit.AbilitiesHeroSkin = null;
+      unit.AbilitiesNormal = AbilitiesNormal;
+      unit.AbilitiesNormalSkin = null;
+      //Art
+      unit.ArtAllowCustomTeamColor = AllowCustomTeamColor;
+      unit.ArtAnimationBlendTimeSeconds = Model.BlendTime;
+      unit.ArtAnimationCastBackswing = Model.CastBackswing;
+      unit.ArtAnimationCastPoint = Model.CastPoint;
+      unit.ArtAnimationRunSpeed = Model.RunSpeed;
+      unit.ArtAnimationWalkSpeed = Model.WalkSpeed;
       unit.ArtButtonPositionX = ButtonPosition.X;
       unit.ArtButtonPositionY = ButtonPosition.Y;
-      unit.StatsHitPointsMaximumBase = HitPoints;
-      unit.TextName = Name;
-      unit.ArtModelFile = Model.Path;
+      unit.ArtCasterUpgradeArt = CasterUpgradeArt;
+      unit.ArtDeathTimeSeconds = Model.DeathTime;
+      unit.ArtElevationSamplePoints = Model.ElevationSamplePoints;
+      unit.ArtElevationSampleRadius = Model.ElevationSampleRadius;
+      unit.ArtFogOfWarSampleRadius = Model.FogOfWarSampleRadius;
+      unit.ArtHasWaterShadow = Model.Shadow.ShowOnWater;
       unit.ArtIconGameInterface = $@"ReplaceableTextures\CommandButtons\BTN{Icon}.blp";
-      unit.AbilitiesNormal = AbilitiesNormal;
-      unit.ArtRequiredAnimationNames = RequiredAnimationNames;
+      unit.ArtIconScoreScreen = $@"ReplaceableTextures\CommandButtons\BTN{Icon}.blp";
+      unit.ArtMaximumPitchAngleDegrees = Model.MaximumPitchAngle;
+      unit.ArtMaximumRollAngleDegrees = Model.MaximumRollAngle;
+      unit.ArtModelFile = Model.Path;
+      unit.ArtModelFileExtraVersions = VersionFlags.TheFrozenThrone;
+      unit.ArtOccluderHeight = Model.OccluderHeight;
+      unit.ArtOrientationInterpolation = Model.OrientationInterpolation;
+      unit.ArtProjectileImpactZ = Model.ProjectileImpactZ;
+      unit.ArtProjectileImpactZSwimming = Model.ProjectileImpactZSwimming;
+      unit.ArtProjectileLaunchX = Model.ProjectileLaunchX;
+      unit.ArtProjectileLaunchY = Model.ProjectileLaunchY;
+      unit.ArtProjectileLaunchZ = Model.ProjectileLaunchZ;
+      unit.ArtProjectileLaunchZSwimming = Model.ProjectileLaunchZSwimming;
+      unit.ArtPropulsionWindowDegrees = Model.PropulsionWindow;
+      unit.ArtRequiredAnimationNames = Model.RequiredAnimationNames;
+      unit.ArtRequiredAnimationNamesAttachments = Model.RequiredAnimationNamesAttachments;
+      unit.ArtRequiredAttachmentLinkNames = Model.RequiredAttachmentLinkNames;
+      unit.ArtRequiredBoneNames = Model.RequiredBoneNames;
+      unit.ArtScaleProjectiles = Model.ScaleProjectiles;
+      unit.ArtScalingValue = Model.Scale;
+      unit.ArtSelectionCircleHeight = Model.SelectionCircleHeight;
+      unit.ArtSelectionCircleOnWater = Model.SelectionCircleOnWater;
+      unit.ArtSelectionScale = Model.SelectionScale;
+      unit.ArtShadowImageUnit = Model.Shadow.ShadowImage;
+      unit.ArtShadowImageCenterX = Model.Shadow.CenterX;
+      unit.ArtShadowImageCenterY = Model.Shadow.CenterY;
+      unit.ArtShadowImageHeight = Model.Shadow.Height;
+      unit.ArtShadowImageWidth = Model.Shadow.Width;
+      unit.ArtShadowTextureBuilding = Model.Shadow.TextureBuilding;
+      unit.ArtSpecial = Model.Special;
+      unit.ArtTarget = null;
+      unit.ArtTeamColor = Model.TeamColor;
+      unit.ArtTintingColor1Red = Model.Tint.Red;
+      unit.ArtTintingColor2Green = Model.Tint.Green;
+      unit.ArtTintingColor3Blue = Model.Tint.Blue;
+      unit.ArtUseExtendedLineOfSight = Model.UseExtendedLineOfSight;
+      //Combat
+      unit.CombatAcquisitionRange = AcquisitionRange;
+      unit.CombatArmorType = ArmorType;
+      unit.CombatAttacksEnabled = AttackBits.None; //Calculate this
+      unit.CombatDeathType = DeathType;
       unit.CombatDefenseBase = Armor;
+      unit.CombatDefenseType = ArmorType;
+      unit.CombatDefenseUpgradeBonus = ArmorUpgradeBonus;
+      unit.CombatMinimumAttackRange = MinimumAttackRange;
+      unit.CombatTargetedAs = TargetedAs; //Calculate this
+      //Attack 1
+      unit.CombatAttack1AnimationBackswingPoint = Attack1.AnimationBackswingPoint;
+      unit.CombatAttack1AnimationDamagePoint = Attack1.AnimationDamagePoint;
+      unit.CombatAttack1AreaOfEffectFullDamage = Attack1.AreaOfEffectFullDamage;
+      unit.CombatAttack1AreaOfEffectMediumDamage = Attack1.AreaOfEffectMediumDamage;
+      unit.CombatAttack1AreaOfEffectSmallDamage = Attack1.AreaOfEffectSmallDamage;
+      unit.CombatAttack1AreaOfEffectTargets = Attack1.AreaOfEffectTargets;
+      unit.CombatAttack1AttackType = Attack1.AttackType;
+      unit.CombatAttack1CooldownTime = Attack1.CooldownTime;
+      unit.CombatAttack1DamageBase = Attack1.DamageBase;
+      unit.CombatAttack1DamageFactorMedium = Attack1.DamageFactorMedium;
+      unit.CombatAttack1DamageFactorSmall = Attack1.DamageFactorSmall;
+      unit.CombatAttack1DamageLossFactor = Attack1.DamageLossFactor;
+      unit.CombatAttack1DamageNumberOfDice = Attack1.DamageNumberOfDice;
+      unit.CombatAttack1DamageSidesPerDie = Attack1.DamageSidesPerDie;
+      unit.CombatAttack1DamageSpillDistance = Attack1.DamageSpillDistance;
+      unit.CombatAttack1DamageSpillRadius = Attack1.DamageSpillRadius;
+      unit.CombatAttack1DamageUpgradeAmount = Attack1.DamageUpgradeAmount;
+      unit.CombatAttack1MaximumNumberOfTargets = Attack1.MaximumNumberOfTargets;
+      unit.CombatAttack1ProjectileArc = Attack1.ProjectileArc;
+      unit.CombatAttack1ProjectileArt = Attack1.ProjectileArt;
+      unit.CombatAttack1ProjectileHomingEnabled = Attack1.ProjectileHomingEnabled;
+      unit.CombatAttack1ProjectileSpeed = Attack1.ProjectileSpeed;
+      unit.CombatAttack1Range = Attack1.Range;
+      unit.CombatAttack1RangeMotionBuffer = Attack1.RangeMotionBuffer; //Calculate this maybe
+      unit.CombatAttack1ShowUI = Attack1.ShowUI; //Calculate this
+      unit.CombatAttack1TargetsAllowed = Attack1.TargetsAllowed;
+      unit.CombatAttack1WeaponSound = Attack1.Sound;
+      unit.CombatAttack1WeaponType = Attack1.ProjectileType; //Calculate this probably
+      //Attack 2
+      unit.CombatAttack2AnimationBackswingPoint = Attack2.AnimationBackswingPoint;
+      unit.CombatAttack2AnimationDamagePoint = Attack2.AnimationDamagePoint;
+      unit.CombatAttack2AreaOfEffectFullDamage = Attack2.AreaOfEffectFullDamage;
+      unit.CombatAttack2AreaOfEffectMediumDamage = Attack2.AreaOfEffectMediumDamage;
+      unit.CombatAttack2AreaOfEffectSmallDamage = Attack2.AreaOfEffectSmallDamage;
+      unit.CombatAttack2AreaOfEffectTargets = Attack2.AreaOfEffectTargets;
+      unit.CombatAttack2AttackType = Attack2.AttackType;
+      unit.CombatAttack2CooldownTime = Attack2.CooldownTime;
+      unit.CombatAttack2DamageBase = Attack2.DamageBase;
+      unit.CombatAttack2DamageFactorMedium = Attack2.DamageFactorMedium;
+      unit.CombatAttack2DamageFactorSmall = Attack2.DamageFactorSmall;
+      unit.CombatAttack2DamageLossFactor = Attack2.DamageLossFactor;
+      unit.CombatAttack2DamageNumberOfDice = Attack2.DamageNumberOfDice;
+      unit.CombatAttack2DamageSidesPerDie = Attack2.DamageSidesPerDie;
+      unit.CombatAttack2DamageSpillDistance = Attack2.DamageSpillDistance;
+      unit.CombatAttack2DamageSpillRadius = Attack2.DamageSpillRadius;
+      unit.CombatAttack2DamageUpgradeAmount = Attack2.DamageUpgradeAmount;
+      unit.CombatAttack2MaximumNumberOfTargets = Attack2.MaximumNumberOfTargets;
+      unit.CombatAttack2ProjectileArc = Attack2.ProjectileArc;
+      unit.CombatAttack2ProjectileArt = Attack2.ProjectileArt;
+      unit.CombatAttack2ProjectileHomingEnabled = Attack2.ProjectileHomingEnabled;
+      unit.CombatAttack2ProjectileSpeed = Attack2.ProjectileSpeed;
+      unit.CombatAttack2Range = Attack2.Range;
+      unit.CombatAttack2RangeMotionBuffer = Attack2.RangeMotionBuffer; //Calculate this maybe
+      unit.CombatAttack2ShowUI = Attack2.ShowUI; //Calculate this
+      unit.CombatAttack2TargetsAllowed = Attack2.TargetsAllowed;
+      unit.CombatAttack2WeaponSound = Attack2.Sound;
+      unit.CombatAttack2WeaponType = Attack2.ProjectileType; //Calculate this probably
+      //Editor
+      unit.EditorDisplayAsNeutralHostile = false;
+      unit.EditorCategorizationCampaign = false;
+      unit.EditorCategorizationSpecial = false;
+      unit.EditorDisplayAsNeutralHostile = false;
+      unit.EditorHasTilesetSpecificData = false;
+      unit.EditorPlaceableInEditor = true;
+      unit.EditorTilesets = new[] { Tileset.All };
+      unit.EditorUseClickHelper = false;
+      //Movement
+      unit.MovementGroupSeparationEnabled = false;
+      unit.MovementGroupSeparationGroupNumber = 0;
+      unit.MovementGroupSeparationParameter = 0;
+      unit.MovementGroupSeparationPriority = 0;
+      unit.MovementHeight = 0;
+      unit.MovementHeightMinimum = 0;
+      unit.MovementSpeedBase = MovementSpeed;
+      unit.MovementSpeedMaximum = 0;
+      unit.MovementSpeedMinimum = 0;
+      unit.MovementTurnRate = 0.6f;
+      unit.MovementType = Model.MovementType;
+      //Pathing
+      unit.PathingAIPlacementRadius = 0;
+      unit.PathingAIPlacementType = AiBuffer._;
+      //Sound
+      unit.SoundLoopingFadeInRate = LoopingFadeInRate;
+      unit.SoundLoopingFadeOutRate = LoopingFadeOutRate;
+      unit.SoundMovement = SoundMovement;
+      unit.SoundRandom = SoundRandom;
+      unit.SoundUnitSoundSet = SoundSet;
+      //Stats
+      unit.StatsAgilityPerLevel = AgilityPerLevel;
+      unit.StatsBuildTime = BuildTime;
+      unit.StatsCanFlee = CanFlee; //Calculate this
+      unit.StatsFoodCost = FoodCost; //Calculate this
+      unit.StatsFoodProduced = 0;
+      unit.StatsFormationRank = 0; //Calculate this
+      unit.StatsGoldBountyAwardedBase = 0; //Calculate this
+      unit.StatsGoldBountyAwardedNumberOfDice = 0; //Calculate this
+      unit.StatsGoldBountyAwardedSidesPerDie = 0; //Calculate this
       unit.StatsGoldCost = GoldCost;
-      unit.StatsFoodProduced = FoodProduced;
-      unit.TechtreeUpgradesUsed = ResearchesUsed;
-      unit.StatsUnitClassification = Classification;
-      unit.StatsFoodCost = FoodCost;
-      unit.StatsManaInitialAmount = StartingMana;
+      unit.StatsHeroHideHeroDeathMessage = false;
+      unit.StatsHeroHideHeroInterfaceIcon = false;
+      unit.StatsHideMinimapDisplay = false;
+      unit.StatsHitPointsMaximumBase = HitPoints;
+      unit.StatsHitPointsRegenerationRate = HitPointRegeneration;
+      unit.StatsHitPointsRegenerationType = HitPointRegenerationType;
+      unit.StatsIntelligencePerLevel = IntelligencePerLevel;
+      unit.StatsIsABuilding = IsABuilding;
+      unit.StatsLevel = Level;
+      unit.StatsLumberBountyAwardedBase = 0;
+      unit.StatsLumberBountyAwardedNumberOfDice = 0;
+      unit.StatsLumberBountyAwardedSidesPerDie = 0;
+      unit.StatsLumberCost = LumberCost;
+      unit.StatsManaInitialAmount = ManaInitialAmount;
       unit.StatsManaMaximum = Mana;
-      unit.TechtreeRevivesDeadHeroes = RevivesDeadHeroes;
-      unit.PathingPlacementPreventedBy = PlacementPreventedBy;
-      unit.PathingPlacementRequires = PlacementRequires;
-      unit.StatsManaRegeneration = ManaRegeneration;
-      //Calculated
+      unit.StatsPointValue = 0;
+      unit.StatsPrimaryAttribute = PrimaryAttribute; //Only set if hero
+      unit.StatsPriority = 0; //Calculate this
+      unit.StatsRace = UnitRace.Human; //Calculate this
       unit.StatsRepairGoldCost = GoldCost;
       unit.StatsRepairLumberCost = LumberCost;
+      unit.StatsRepairTime = BuildTime;
+      unit.StatsSightRadiusDay = SightRadiusDay;
+      unit.StatsSightRadiusNight = SightRadiusNight;
+      unit.StatsSleeps = false;
+      unit.StatsStartingAgility = Agility;
+      unit.StatsStartingIntelligence = Intelligence;
+      unit.StatsStartingStrength = Strength;
+      unit.StatsStockInitialAfterStartDelay = 0; //Calculate this
+      unit.StatsStockMaximum = 0; //Calculate this
+      unit.StatsStockStartDelay = 0; //Calculate this
+      unit.StatsStrengthPerLevel = StrengthPerLevel;
+      unit.StatsTransportedSize = TransportedSize;
+      unit.StatsUnitClassification = default; //Calculate this
+      //Techtree
+      unit.TechtreeDependencyEquivalents = DependencyEquivalents;
+      unit.TechtreeItemsSold = ItemsSold;
+      unit.TechtreeRequirements = Requirements;
+      unit.TechtreeRequirementsLevels = RequirementsLevels;
+      unit.TechtreeStructuresBuilt = StructuresBuilt;
+      unit.TechtreeUnitsSold = UnitsSold;
+      unit.TechtreeUpgradesUsed = UpgradesUsed;
+      //Text
+      unit.TextCasterUpgradeNames = CasterUpgradeNames;
+      unit.TextCasterUpgradeTips = CasterUpgradeTips;
+      unit.TextDescription = "PLACEHOLDER";
+      unit.TextHotkey = 'A';
+      unit.TextName = Name;
+      unit.TextNameEditorSuffix = "";
+      unit.TextProperNames = new[] { "" };
+      unit.TextProperNamesUsed = 1;
+      unit.TextTooltipAwaken = "";
+      unit.TextTooltipBasic = "";
+      unit.TextTooltipExtended = "";
+      unit.TextTooltipRevive = "";
     }
 
     /// <summary>
@@ -448,7 +646,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
         DeathTime = unit.ArtDeathTimeSeconds,
         ElevationSamplePoints = unit.ArtElevationSamplePoints,
         ElevationSampleRadius = unit.ArtElevationSampleRadius,
-        HasWaterShadow = unit.ArtHasWaterShadow,
         MaximumPitchAngle = unit.ArtMaximumPitchAngleDegrees,
         MaximumRollAngle = unit.ArtMaximumRollAngleDegrees,
         OccluderHeight = unit.ArtOccluderHeight,
@@ -462,12 +659,16 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
         ScaleProjectiles = unit.ArtScaleProjectiles,
         SelectionCircleHeight = unit.ArtSelectionCircleHeight,
         SelectionCircleOnWater = unit.ArtSelectionCircleOnWater,
-        ShadowImage = unit.ArtShadowImageUnit,
-        ShadowImageCenterX = unit.ArtShadowImageCenterX,
-        ShadowImageCenterY = unit.ArtShadowImageCenterY,
-        ShadowImageHeight = unit.ArtShadowImageHeight,
-        ShadowImageWidth = unit.ArtShadowImageWidth,
-        ShadowTextureBuilding = unit.ArtShadowTextureBuilding,
+        Shadow = new Shadow()
+        {
+          ShadowImage = unit.ArtShadowImageUnit,
+          CenterX = unit.ArtShadowImageCenterX,
+          CenterY = unit.ArtShadowImageCenterY,
+          Height = unit.ArtShadowImageHeight,
+          Width = unit.ArtShadowImageWidth,
+          TextureBuilding = unit.ArtShadowTextureBuilding,
+          ShowOnWater = unit.ArtHasWaterShadow
+        },
         Special = unit.ArtSpecial,
         ArmorType = unit.CombatArmorType,
         TurnRate = unit.MovementTurnRate,

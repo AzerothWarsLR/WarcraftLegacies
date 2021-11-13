@@ -28,12 +28,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
     public bool ScaleProjectiles { get; set; } = true;
     public float SelectionCircleHeight { get; set; } = 0;
     public bool SelectionCircleOnWater { get; set; } = false;
-    public ShadowImage ShadowImage { get; set; } = ShadowImage.Shadow;
-    public float ShadowImageCenterX { get; set; } = 0;
-    public float ShadowImageCenterY { get; set; } = 0;
-    public float ShadowImageHeight { get; set; } = 0;
-    public float ShadowImageWidth { get; set; } = 0;
-    public string ShadowTextureBuilding { get; set; } = "";
+    public Shadow Shadow { get; set; } = new();
     /// <summary>
     /// Blood particles.
     /// </summary>
