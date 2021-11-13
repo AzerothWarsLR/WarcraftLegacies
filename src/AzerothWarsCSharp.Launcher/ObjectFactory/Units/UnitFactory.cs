@@ -44,7 +44,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.CombatDefenseBase = Armor;
       unit.StatsGoldCost = GoldCost;
       unit.StatsFoodProduced = FoodProduced;
-      unit.TechtreeUpgradesUsedRaw = ResearchesUsedRaw;
       unit.TechtreeUpgradesUsed = ResearchesUsed;
       unit.StatsUnitClassification = Classification;
       unit.StatsFoodCost = FoodCost;
@@ -53,7 +52,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.TechtreeRevivesDeadHeroes = RevivesDeadHeroes;
       unit.PathingPlacementPreventedBy = PlacementPreventedBy;
       unit.PathingPlacementRequires = PlacementRequires;
-      unit.AbilitiesDefaultActiveAbilityRaw = DefaultActiveAbilityRaw;
       unit.StatsManaRegeneration = ManaRegeneration;
       //Calculated
       unit.StatsRepairGoldCost = GoldCost;
@@ -172,35 +170,11 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _abilitiesNormal = value;
     }
 
-    private string _abilitiesNormalRaw;
-    [Obsolete("This property is obsolete. Use AbilitiesNormal instead.", false)]
-    public string AbilitiesNormalRaw
-    {
-      get => _abilitiesNormalRaw ?? Parent?.AbilitiesNormalRaw ?? null;
-      set => _abilitiesNormalRaw = value;
-    }
-
-    private string _upgradesToRaw;
-    [Obsolete("This property is obsolete. Use UpgradesTo instead.", false)]
-    public string UpgradesToRaw
-    {
-      get => _upgradesToRaw ?? Parent?.UpgradesToRaw ?? null;
-      set => _upgradesToRaw = value;
-    }
-
     private IEnumerable<Upgrade> _researchesUsed;
     public IEnumerable<Upgrade> ResearchesUsed
     {
       get => _researchesUsed ?? Parent?.ResearchesUsed ?? System.Array.Empty<Upgrade>();
       set => _researchesUsed = value;
-    }
-
-    private string _researchesUsedRaw;
-    [Obsolete("This property is obsolete. Use ResearchesUsed instead.", false)]
-    public string ResearchesUsedRaw
-    {
-      get => _researchesUsedRaw ?? Parent?.ResearchesUsedRaw ?? "";
-      set => _researchesUsedRaw = value;
     }
 
     private IEnumerable<string> _requiredAnimationNames;
@@ -374,14 +348,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _defenseType = value;
     }
 
-    private string _defaultActiveAbilityRaw;
-    [Obsolete("This property is obsolete. Use DefaultActiveAbility instead.", false)]
-    public string DefaultActiveAbilityRaw
-    {
-      get => _defaultActiveAbilityRaw ?? Parent?.DefaultActiveAbilityRaw ?? "";
-      set => _defaultActiveAbilityRaw = value;
-    }
-
     private float? _manaRegeneration;
     /// <summary>
     /// The amount of mana the unit regenerates per second.
@@ -422,14 +388,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _researches = value;
     }
 
-    private string _researchesRaw;
-    [Obsolete("This property is obsolete. Use Researches instead.", false)]
-    public string ResearchesRaw
-    {
-      get => _researchesRaw ?? Parent?.ResearchesRaw ?? "";
-      set => _researchesRaw = value;
-    }
-
     private IEnumerable<Unit> _trains;
     /// <summary>
     /// Which units the unit can train.
@@ -438,14 +396,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     {
       get => _trains ?? Parent?.Trains ?? Array.Empty<Unit>();
       set => _trains = value;
-    }
-
-    private string _trainsRaw;
-    [Obsolete("This property is obsolete. Use Trains instead.", false)]
-    public string TrainsRaw
-    {
-      get => _trainsRaw ?? Parent?.TrainsRaw ?? "";
-      set => _trainsRaw = value;
     }
 
     private int? _stockMaximum;
