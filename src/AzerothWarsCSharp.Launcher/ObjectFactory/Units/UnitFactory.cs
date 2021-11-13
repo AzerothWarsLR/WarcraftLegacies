@@ -607,9 +607,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
         Special = unit.ArtSpecial,
         ArmorType = unit.CombatArmorType,
         TurnRate = unit.MovementTurnRate,
-        TintRed = unit.ArtTintingColor1Red,
-        TintGreen = unit.ArtTintingColor2Green,
-        TintBlue = unit.ArtTintingColor3Blue,
+        Tint = new Tint(unit.ArtTintingColor1Red, unit.ArtTintingColor2Green, unit.ArtTintingColor3Blue),
       };
       Attack1 = new Attack()
       {

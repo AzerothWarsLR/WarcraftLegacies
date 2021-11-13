@@ -42,8 +42,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
     public float AttackAnimationBackswingPoint { get; set; } = 0;
     public float AttackAnimationDamagePoint { get; set; } = 0;
     public float TurnRate { get; set; } = 0.6f;
-    public float TintRed { get; set; } = 225;
-    public float TintBlue { get; set; } = 225;
-    public float TintGreen { get; set; } = 225;
+    public Tint Tint { get; set; } = new Tint(255, 255, 255);
   }
 }
