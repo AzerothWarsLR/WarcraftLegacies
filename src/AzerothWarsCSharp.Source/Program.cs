@@ -1,6 +1,4 @@
-﻿using AzerothWarsCSharp.Source.Setup;
-using AzerothWarsCSharp.Source.Spells;
-using System;
+﻿using System;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source

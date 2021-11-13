@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
-namespace AzerothWarsCSharp.Source.UserInterface
-{
-  public static class ArtifactMenu
-  {
+//namespace AzerothWarsCSharp.Source.UserInterface
+//{
+//  public static class ArtifactMenu
+//  {
 
-  }
-}
+//  }
+//}
