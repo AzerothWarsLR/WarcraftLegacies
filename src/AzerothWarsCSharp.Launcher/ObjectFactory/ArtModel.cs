@@ -5,6 +5,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
 {
   public class ArtModel
   {
+    public float Scale { get; set; } = 1;
     public string Path { get; set; } = "";
     public float BlendTime { get; set; } = 0;
     public float CastBackswing { get; set; } = 0;
@@ -38,5 +39,13 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
     public float AttackAnimationDamagePoint { get; set; } = 0;
     public float TurnRate { get; set; } = 0.6f;
     public Tint Tint { get; set; } = new Tint(255, 255, 255);
+    public bool AllowCustomTeamColor { get; set; }
+    public int OrientationInterpolation { get; set; }
+    public IEnumerable<string> RequiredAnimationNames { get; set; }
+    public IEnumerable<string> RequiredAnimationNamesAttachments { get; set; }
+    public TeamColor TeamColor { get; set; }
+    public IEnumerable<string> RequiredAttachmentLinkNames { get; set;}
+    public IEnumerable<string> RequiredBoneNames { get; set; }
+    public float SelectionScale { get; set; }
   }
 }

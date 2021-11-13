@@ -10,26 +10,27 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
   {
     public float AnimationBackswingPoint { get; set; }
     public float AnimationDamagePoint { get; set; }
-    public float AreaOfEffectFullDamage { get; set; }
-    public float AreaOfEffectMediumDamage { get; set; }
+    public int AreaOfEffectFullDamage { get; set; }
+    public int AreaOfEffectMediumDamage { get; set; }
+    public int AreaOfEffectSmallDamage { get; set; }
     public IEnumerable<Target> AreaOfEffectTargets { get; set; }
     public AttackType AttackType { get; set; }
     public float CooldownTime { get; set; }
-    public float DamageBase { get; set; }
+    public int DamageBase { get; set; }
     public float DamageFactorMedium { get; set; }
     public float DamageFactorSmall { get; set; }
     public float DamageLossFactor { get; set; }
-    public float DamageNumberOfDice { get; set; }
-    public float DamageSidesPerDie { get; set; }
+    public int DamageNumberOfDice { get; set; }
+    public int DamageSidesPerDie { get; set; }
     public float DamageSpillDistance { get; set; }
     public float DamageSpillRadius { get; set; }
-    public float DamageUpgradeAmount { get; set; }
+    public int DamageUpgradeAmount { get; set; }
     public int MaximumNumberOfTargets { get; set; }
     public float ProjectileArc { get; set; }
     public string ProjectileArt { get; set; }
     public bool ProjectileHomingEnabled { get; set; }
-    public float ProjectileSpeed { get; set; }
-    public float Range { get; set; }
+    public int ProjectileSpeed { get; set; }
+    public int Range { get; set; }
     public float RangeMotionBuffer { get; set; }
     public bool ShowUI { get; set; }
     public IEnumerable<Target> TargetsAllowed { get; set; }

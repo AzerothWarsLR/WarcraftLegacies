@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using System.Text;
 using War3Api.Object;
 using War3Api.Object.Enums;
@@ -38,7 +39,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.AbilitiesNormal = AbilitiesNormal;
       unit.AbilitiesNormalSkin = null;
       //Art
-      unit.ArtAllowCustomTeamColor = AllowCustomTeamColor;
+      unit.ArtAllowCustomTeamColor = Model.AllowCustomTeamColor;
       unit.ArtAnimationBlendTimeSeconds = Model.BlendTime;
       unit.ArtAnimationCastBackswing = Model.CastBackswing;
       unit.ArtAnimationCastPoint = Model.CastPoint;
@@ -50,7 +51,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.ArtDeathTimeSeconds = Model.DeathTime;
       unit.ArtElevationSamplePoints = Model.ElevationSamplePoints;
       unit.ArtElevationSampleRadius = Model.ElevationSampleRadius;
-      unit.ArtFogOfWarSampleRadius = Model.FogOfWarSampleRadius;
+      unit.ArtFogOfWarSampleRadius = 0;
       unit.ArtHasWaterShadow = Model.Shadow.ShowOnWater;
       unit.ArtIconGameInterface = $@"ReplaceableTextures\CommandButtons\BTN{Icon}.blp";
       unit.ArtIconScoreScreen = $@"ReplaceableTextures\CommandButtons\BTN{Icon}.blp";
@@ -88,14 +89,14 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.ArtTintingColor1Red = Model.Tint.Red;
       unit.ArtTintingColor2Green = Model.Tint.Green;
       unit.ArtTintingColor3Blue = Model.Tint.Blue;
-      unit.ArtUseExtendedLineOfSight = Model.UseExtendedLineOfSight;
+      unit.ArtUseExtendedLineOfSight = false;
       //Combat
-      unit.CombatAcquisitionRange = AcquisitionRange;
+      unit.CombatAcquisitionRange = Math.Min(600, Attack1.Range);
       unit.CombatArmorType = ArmorType;
       unit.CombatAttacksEnabled = AttackBits.None; //Calculate this
       unit.CombatDeathType = DeathType;
       unit.CombatDefenseBase = Armor;
-      unit.CombatDefenseType = ArmorType;
+      unit.CombatDefenseType = DefenseType;
       unit.CombatDefenseUpgradeBonus = ArmorUpgradeBonus;
       unit.CombatMinimumAttackRange = MinimumAttackRange;
       unit.CombatTargetedAs = TargetedAs; //Calculate this
@@ -173,25 +174,25 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.MovementGroupSeparationPriority = 0;
       unit.MovementHeight = 0;
       unit.MovementHeightMinimum = 0;
-      unit.MovementSpeedBase = MovementSpeed;
+      unit.MovementSpeedBase = MovementSpeed ?? 220;
       unit.MovementSpeedMaximum = 0;
       unit.MovementSpeedMinimum = 0;
       unit.MovementTurnRate = 0.6f;
-      unit.MovementType = Model.MovementType;
+      unit.MovementType = MovementType;
       //Pathing
       unit.PathingAIPlacementRadius = 0;
       unit.PathingAIPlacementType = AiBuffer._;
       //Sound
-      unit.SoundLoopingFadeInRate = LoopingFadeInRate;
-      unit.SoundLoopingFadeOutRate = LoopingFadeOutRate;
-      unit.SoundMovement = SoundMovement;
+      unit.SoundLoopingFadeInRate = MovementSoundDetails.LoopingFadeInRate;
+      unit.SoundLoopingFadeOutRate = MovementSoundDetails.LoopingFadeOutRate;
+      unit.SoundMovement = MovementSoundDetails.Path;
       unit.SoundRandom = SoundRandom;
       unit.SoundUnitSoundSet = SoundSet;
       //Stats
       unit.StatsAgilityPerLevel = AgilityPerLevel;
       unit.StatsBuildTime = BuildTime;
-      unit.StatsCanFlee = CanFlee; //Calculate this
-      unit.StatsFoodCost = FoodCost; //Calculate this
+      unit.StatsCanFlee = true;
+      AssignFoodCost(unit);
       unit.StatsFoodProduced = 0;
       unit.StatsFormationRank = 0; //Calculate this
       unit.StatsGoldBountyAwardedBase = 0; //Calculate this
@@ -211,7 +212,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.StatsLumberBountyAwardedNumberOfDice = 0;
       unit.StatsLumberBountyAwardedSidesPerDie = 0;
       unit.StatsLumberCost = LumberCost;
-      unit.StatsManaInitialAmount = ManaInitialAmount;
+      unit.StatsManaInitialAmount = Mana / 2;
       unit.StatsManaMaximum = Mana;
       unit.StatsPointValue = 0;
       unit.StatsPrimaryAttribute = PrimaryAttribute; //Only set if hero
@@ -220,8 +221,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.StatsRepairGoldCost = GoldCost;
       unit.StatsRepairLumberCost = LumberCost;
       unit.StatsRepairTime = BuildTime;
-      unit.StatsSightRadiusDay = SightRadiusDay;
-      unit.StatsSightRadiusNight = SightRadiusNight;
+      AssignSightRadius(unit);
       unit.StatsSleeps = false;
       unit.StatsStartingAgility = Agility;
       unit.StatsStartingIntelligence = Intelligence;
@@ -230,7 +230,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.StatsStockMaximum = 0; //Calculate this
       unit.StatsStockStartDelay = 0; //Calculate this
       unit.StatsStrengthPerLevel = StrengthPerLevel;
-      unit.StatsTransportedSize = TransportedSize;
+      unit.StatsTransportedSize = TransportedSize ?? 1;
       unit.StatsUnitClassification = default; //Calculate this
       //Techtree
       unit.TechtreeDependencyEquivalents = DependencyEquivalents;
@@ -241,8 +241,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.TechtreeUnitsSold = UnitsSold;
       unit.TechtreeUpgradesUsed = UpgradesUsed;
       //Text
-      unit.TextCasterUpgradeNames = CasterUpgradeNames;
-      unit.TextCasterUpgradeTips = CasterUpgradeTips;
       unit.TextDescription = "PLACEHOLDER";
       unit.TextHotkey = 'A';
       unit.TextName = Name;
@@ -253,6 +251,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.TextTooltipBasic = "";
       unit.TextTooltipExtended = "";
       unit.TextTooltipRevive = "";
+      //Misc
+      AssignCasterDetails(unit);
     }
 
     /// <summary>
@@ -266,369 +266,155 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       return newUnit;
     }
 
-    private IEnumerable<Unit> _structuresBuilt;
-    public IEnumerable<Unit> StructuresBuilt
+    private void AssignCasterDetails(Unit unit)
     {
-      get => _structuresBuilt ?? Parent?.StructuresBuilt ?? System.Array.Empty<Unit>();
-      set => _structuresBuilt = value;
+      if (IsCaster)
+      {
+        var abilitiesList = AbilitiesNormal.ToList();
+        unit.TextCasterUpgradeNames = new[]{ "Apprentice", "Adept", "Master" };
+        unit.ArtCasterUpgradeArt = CasterUpgradeArt;
+        unit.TextCasterUpgradeNames = new[] { abilitiesList[0].ArtIconNormal, abilitiesList[1].ArtIconNormal, abilitiesList[2].ArtIconNormal };
+      }
     }
 
-    private int? _buildTime;
-    public int BuildTime
+    private void AssignFoodCost(Unit unit)
     {
-      get => _buildTime ?? Parent?.BuildTime ?? 5;
-      set => _buildTime = value;
+      if (IsABuilding)
+      {
+        unit.StatsFoodCost = 0;
+        return;
+      }
+      unit.StatsFoodCost = 1;
     }
 
-    private float? _collisionSize;
+    private void AssignSightRadius(Unit unit)
+    {
+      var classificationList = Classification.ToList();
+      if (classificationList.Contains(UnitClassification.Peon))
+      {
+        unit.StatsSightRadiusDay = 800;
+        unit.StatsSightRadiusNight = 600;
+        return;
+      }
+      if (MovementType == MoveType.Fly)
+      {
+        unit.StatsSightRadiusDay = 1800;
+        unit.StatsSightRadiusNight = 800;
+        return;
+      }
+      if (IsHero) //Is hero
+      {
+        unit.StatsSightRadiusDay = 1800;
+        unit.StatsSightRadiusNight = 800;
+        return;
+      }
+      unit.StatsSightRadiusDay = 1400;
+      unit.StatsSightRadiusNight = 800;
+    }
+
+    public Ability DefaultActiveAbility { get; set; }
+    public IEnumerable<Unit> StructuresBuilt { get; set; }
+    public int BuildTime { get; set; }
     /// <summary>
     /// How large the unit is in terms of pathing.
     /// </summary>
-    public float CollisionSize
-    {
-      get => _collisionSize ?? Parent?.CollisionSize ?? 1;
-      set => _collisionSize = value;
-    }
-
-    private Point? _buttonPosition;
-    public Point ButtonPosition
-    {
-      get => _buttonPosition ?? Parent?.ButtonPosition ?? new Point(0, 0);
-      set => _buttonPosition = value;
-    }
-
-    private string _flavor;
-    public string Flavor
-    {
-      get => _flavor ?? Parent?.Flavor ?? "PLACEHOLDERFLAVOR";
-      set => _flavor = value;
-    }
-
-    private int? _hitPoints;
-    public int HitPoints
-    {
-      get => _hitPoints ?? Parent?.HitPoints ?? 1;
-      set => _hitPoints = value;
-    }
-
-    private int? _mana;
-    /// <summary>
-    /// How much maximum mana the unit has with which to cast abilities.
-    /// </summary>
-    public int Mana
-    {
-      get => _mana ?? Parent?.Mana ?? 0;
-      set => _mana = value;
-    }
-
-    private int? _startingMana;
-    /// <summary>
-    /// How much mana the unit has when it enters the map.
-    /// </summary>
-    public int StartingMana
-    {
-      get => _startingMana ?? Parent?.StartingMana ?? 0;
-      set => _startingMana = value;
-    }
-
-    private string _name;
-    public string Name
-    {
-      get => _name ?? Parent?.Name ?? "PLACEHOLDERNAME";
-      set => _name = value;
-    }
-
-    private ArtModel _model;
-    public ArtModel Model
-    {
-      get => _model ?? Parent?.Model ?? new ArtModel();
-      set => _model = value;
-    }
-
-    private string _icon;
-    public string Icon
-    {
-      get => _icon ?? Parent?.Icon ?? @"Peasant";
-      set => _icon = value;
-    }
-
-    private UnitType? _baseType;
-    public UnitType BaseType
-    {
-      get => _baseType ?? Parent?.BaseType ?? UnitType.Peasant_hpea;
-      set => _baseType = value;
-    }
-
-    private IEnumerable<Ability> _abilitiesNormal;
-    public IEnumerable<Ability> AbilitiesNormal
-    {
-      get => _abilitiesNormal ?? Parent?.AbilitiesNormal ?? System.Array.Empty<Ability>();
-      set => _abilitiesNormal = value;
-    }
-
-    private IEnumerable<Upgrade> _researchesUsed;
-    public IEnumerable<Upgrade> ResearchesUsed
-    {
-      get => _researchesUsed ?? Parent?.ResearchesUsed ?? System.Array.Empty<Upgrade>();
-      set => _researchesUsed = value;
-    }
-
-    private IEnumerable<string> _requiredAnimationNames;
-    public IEnumerable<string> RequiredAnimationNames
-    {
-      get => _requiredAnimationNames ?? Parent?.RequiredAnimationNames ?? System.Array.Empty<string>();
-      set => _requiredAnimationNames = value;
-    }
-
-    private int? _armor;
-    public int Armor
-    {
-      get => _armor ?? Parent?.Armor ?? 0;
-      set => _armor = value;
-    }
-
-    private int? _foodProduced;
-    public int FoodProduced
-    {
-      get => _foodProduced ?? Parent?.FoodProduced ?? 0;
-      set => _foodProduced = value;
-    }
-
-    private int? _goldCost;
-    public int GoldCost
-    {
-      get => _goldCost ?? Parent?.GoldCost ?? 0;
-      set => _goldCost = value;
-    }
-
-    private int? _lumberCost;
-    public int LumberCost
-    {
-      get => _lumberCost ?? Parent?.LumberCost ?? 0;
-      set => _lumberCost = value;
-    }
-
-    private string _pathTexture;
-    public string PathTexture
-    {
-      get => _pathTexture ?? Parent?.PathTexture ?? "";
-      set => _pathTexture = value;
-    }
-
-    private int? _level;
-    /// <summary>
-    /// The unit's level. Affects experience gained and gold bounty.
-    /// </summary>
-    public int Level
-    {
-      get => _level ?? Parent?.Level ?? 0;
-      set => _level = value;
-    }
-
-    private IEnumerable<UnitClassification> _classification;
+    public float CollisionSize { get; set; }
+    public Point ButtonPosition { get; set; }
+    public string Flavor { get; set; }
+    public int HitPoints { get; set; }
+    public int Mana { get; set; }
+    public string Name { get; set; }
+    public ArtModel Model { get; set; }
+    public string Icon { get; set; }
+    public UnitType BaseType { get; set; }
+    public IEnumerable<Ability> AbilitiesNormal { get; set; }
+    public IEnumerable<Upgrade> ResearchesUsed { get; set; }
+    public IEnumerable<string> RequiredAnimationNames { get; set; }
+    public int Armor { get; set; }
+    public int FoodProduced { get; set; }
+    public int GoldCost { get; set; } = 0;
+    public int LumberCost { get; set; } = 0;
+    public string PathTexture { get; set; }
+    public int Level { get; set; }
     /// <summary>
     /// Which unit classications the unit has; e.g. Ancient, Tauren.
     /// </summary>
-    public IEnumerable<UnitClassification> Classification
-    {
-      get => _classification ?? Parent?.Classification ?? System.Array.Empty<UnitClassification>();
-      set => _classification = value;
-    }
-
-    private int? _foodCost;
-    /// <summary>
-    /// How much food this unit occupies.
-    /// </summary>
-    public int FoodCost
-    {
-      get => _foodCost ?? Parent?.FoodCost ?? 0;
-      set => _foodCost = value;
-    }
-
-    private int? _cargoSize;
+    public IEnumerable<UnitClassification> Classification { get; set; }
     /// <summary>
     /// How much space the unit takes when it gets into a unit that can transport other units.
     /// </summary>
-    public int CargoSize
-    {
-      get => _cargoSize ?? Parent?.CargoSize ?? 1;
-      set => _cargoSize = value;
-    }
-
-    private IEnumerable<PathingType> _placementRequires;
-    public IEnumerable<PathingType> PlacementRequires
-    {
-      get => _placementRequires ?? Parent?.PlacementRequires ?? Array.Empty<PathingType>();
-      set => _placementRequires = value;
-    }
-
-    private IEnumerable<PathingType> _placementPreventedBy;
-    public IEnumerable<PathingType> PlacementPreventedBy
-    {
-      get => _placementPreventedBy ?? Parent?.PlacementPreventedBy ?? Array.Empty<PathingType>();
-      set => _placementPreventedBy = value;
-    }
-
-    private bool? _revivesDeadHeroes;
+    public int CargoSize { get; set; } = 1;
+    public IEnumerable<PathingType> PlacementRequires { get; set; }
+    public IEnumerable<PathingType> PlacementPreventedBy { get; set; }
     /// <summary>
     /// Whether the unit can revive dead heroes.
     /// </summary>
-    public bool RevivesDeadHeroes
-    {
-      get => _revivesDeadHeroes ?? Parent?.RevivesDeadHeroes ?? false;
-      set => _revivesDeadHeroes = value;
-    }
-
-    private RegenType? _regenType;
+    public bool RevivesDeadHeroes { get; set; }
     /// <summary>
     /// In which circumstances the unit regenerates hit points.
     /// </summary>
-    public RegenType RegenType
-    {
-      get => _regenType ?? Parent?.RegenType ?? RegenType.Always;
-      set => _regenType = value;
-    }
-
-    private IEnumerable<Target> _targets1;
-    /// <summary>
-    /// Which targets the units first attack can can be used against.
-    /// </summary>
-    public IEnumerable<Target> Targets1
-    {
-      get => _targets1 ?? Parent?.Targets1 ?? Array.Empty<Target>();
-      set => _targets1 = value;
-    }
-
-    private IEnumerable<Target> _targets2;
-    /// <summary>
-    /// Which targets the units second attack can can be used against.
-    /// </summary>
-    public IEnumerable<Target> Targets2
-    {
-      get => _targets2 ?? Parent?.Targets2 ?? Array.Empty<Target>();
-      set => _targets2 = value;
-    }
-
-    private IEnumerable<Target> _areaOfEffectTargets1;
-    public IEnumerable<Target> AreaOfEffectTargets1
-    {
-      get => _areaOfEffectTargets1 ?? Parent?.AreaOfEffectTargets1 ?? Array.Empty<Target>();
-      set => _areaOfEffectTargets1 = value;
-    }
-
-    private IEnumerable<Target> _areaOfEffectTargets2;
-    public IEnumerable<Target> AreaOfEffectTargets2
-    {
-      get => _areaOfEffectTargets2 ?? Parent?.AreaOfEffectTargets2 ?? Array.Empty<Target>();
-      set => _areaOfEffectTargets2 = value;
-    }
-
-    private AttackType? _attackType1;
-    public AttackType AttackType1
-    {
-      get => _attackType1 ?? Parent?.AttackType1 ?? AttackType.Normal;
-      set => _attackType1 = value;
-    }
-
-    private AttackType? _attackType2;
-    public AttackType AttackType2
-    {
-      get => _attackType2 ?? Parent?.AttackType2 ?? AttackType.Normal;
-      set => _attackType2 = value;
-    }
-
-    private DefenseType? _defenseType;
-    public DefenseType DefenseType
-    {
-      get => _defenseType ?? Parent?.DefenseType ?? DefenseType.Normal;
-      set => _defenseType = value;
-    }
-
-    private float? _manaRegeneration;
+    public RegenType RegenType { get; set; }
+    public AttackType AttackType1 { get; set; }
+    public AttackType AttackType2 { get; set; }
+    private DefenseType DefenseType { get; set; } = DefenseType.Normal;
     /// <summary>
     /// The amount of mana the unit regenerates per second.
     /// </summary>
-    public float ManaRegeneration
-    {
-      get => _manaRegeneration ?? Parent?.ManaRegeneration ?? 0;
-      set => _manaRegeneration = value;
-    }
-
-    private float? _hitPointRegeneration;
+    public float ManaRegeneration { get; set; } = 0;
     /// <summary>
     /// The amount of hit points the unit regenerates per second.
     /// </summary>
-    public float HitPointRegeneration
-    {
-      get => _hitPointRegeneration ?? Parent?.HitPointRegeneration ?? 0;
-      set => _hitPointRegeneration = value;
-    }
-
-    private float? _movementSpeed;
+    public float HitPointRegeneration { get; set; } = 0;
     /// <summary>
     /// How fast the unit can move across the map.
     /// </summary>
-    public float MovementSpeed
-    {
-      get => _movementSpeed ?? Parent?.MovementSpeed ?? 220;
-      set => _movementSpeed = value;
-    }
-
-    private IEnumerable<Upgrade> _researches;
+    public int? MovementSpeed { get; set; }
     /// <summary>
     /// Which researches the unit can research.
     /// </summary>
-    public IEnumerable<Upgrade> Researches
-    {
-      get => _researches ?? Parent?.Researches ?? Array.Empty<Upgrade>();
-      set => _researches = value;
-    }
-
-    private IEnumerable<Unit> _trains;
+    public IEnumerable<Upgrade> Researches { get; set; }
     /// <summary>
     /// Which units the unit can train.
     /// </summary>
-    public IEnumerable<Unit> Trains
-    {
-      get => _trains ?? Parent?.Trains ?? Array.Empty<Unit>();
-      set => _trains = value;
-    }
-
-    private int? _stockMaximum;
+    public IEnumerable<Unit> Trains { get; set; }
     /// <summary>
     /// The maximum number of stock the unit can have when being sold as a mercenary at a shop.
     /// </summary>
-    public int StockMaximum
-    {
-      get => _stockMaximum ?? Parent?.StockMaximum ?? 1;
-      set => _stockMaximum = value;
-    }
-
-    private int? _stockReplenishInterval;
+    public int StockMaximum { get; set; }
     /// <summary>
     /// The time between when this unit restocks when sold at a shop.
     /// </summary>
-    public int StockReplenishInterval
-    {
-      get => _stockReplenishInterval ?? Parent?.StockReplenishInterval ?? 1;
-      set => _stockReplenishInterval = value;
-    }
-
-    private Attack _attack1;
-    public Attack Attack1
-    {
-      get => _attack1 ?? Parent?.Attack1 ?? new Attack();
-      set => _attack1 = value;
-    }
-
-    private Attack _attack2;
-    public Attack Attack2
-    {
-      get => _attack2 ?? Parent?.Attack2 ?? new Attack();
-      set => _attack2 = value;
-    }
-
-    public UnitFactory Parent { get; set; }
+    public int StockReplenishInterval { get; set; }
+    public ArmorType ArmorType { get; set; }
+    public Attack Attack1 { get; set; }
+    public Attack Attack2 { get; set; }
+    public DeathType DeathType { get; set; }
+    public int ArmorUpgradeBonus { get; set; }
+    public int Agility { get; set; }
+    public int AgilityPerLevel { get; set; }
+    public AttributeType PrimaryAttribute { get; set; }
+    public IEnumerable<Tech> Requirements { get; set; }
+    public IEnumerable<int> RequirementsLevels { get; set; }
+    public MoveType MovementType { get; set; }
+    public int Strength { get; set; }
+    public int StrengthPerLevel { get; set; }
+    public int Intelligence { get; set; }
+    public int IntelligencePerLevel { get; set; }
+    public IEnumerable<Unit> UnitsSold { get; set; }
+    public IEnumerable<Upgrade> UpgradesUsed { get; set; }
+    public string SoundSet { get; set; }
+    public RegenType HitPointRegenerationType { get; set; }
+    public IEnumerable<Item> ItemsSold { get; set; }
+    public int? TransportedSize { get; set; }
+    public IEnumerable<Unit> DependencyEquivalents { get; set; }
+    public IEnumerable<Target> TargetedAs { get; set; }
+    public int MinimumAttackRange { get; set; }
+    public MovementSoundDetails MovementSoundDetails { get; set; }
+    public string SoundRandom { get; set; }
+    public string CasterUpgradeArt { get; set; }
+    public bool IsHero { get; set; }
+    public bool IsABuilding { get; set; }
+    public bool IsCaster { get; set; }
 
     /// <summary>
     /// Reverse engineer a UnitFactory from a template Unit.
@@ -673,6 +459,10 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
         ArmorType = unit.CombatArmorType,
         TurnRate = unit.MovementTurnRate,
         Tint = new Tint(unit.ArtTintingColor1Red, unit.ArtTintingColor2Green, unit.ArtTintingColor3Blue),
+        AllowCustomTeamColor = unit.ArtAllowCustomTeamColor,
+        OrientationInterpolation = unit.ArtOrientationInterpolation,
+        RequiredAnimationNames = unit.ArtRequiredAnimationNames,
+        RequiredAnimationNamesAttachments = unit.ArtRequiredAnimationNamesAttachments
       };
       Attack1 = new Attack()
       {

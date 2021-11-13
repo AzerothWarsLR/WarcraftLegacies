@@ -2,9 +2,9 @@
 {
   public struct Tint
   {
-    public float Red { get; set; }
-    public float Green { get; set; }
-    public float Blue { get; set; }
+    public int Red { get; set; }
+    public int Green { get; set; }
+    public int Blue { get; set; }
 
     public Tint(int red = 255, int green = 255, int blue = 255)
     {
