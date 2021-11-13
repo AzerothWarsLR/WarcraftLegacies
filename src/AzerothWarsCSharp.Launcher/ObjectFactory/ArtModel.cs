@@ -1,4 +1,5 @@
-﻿using War3Api.Object.Enums;
+﻿using System.Collections.Generic;
+using War3Api.Object.Enums;
 
 namespace AzerothWarsCSharp.Launcher.ObjectFactory
 {
@@ -36,10 +37,13 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory
     /// <summary>
     /// Blood particles.
     /// </summary>
-    public string Special { get; set; }
+    public IEnumerable<string> Special { get; set; }
     public ArmorType ArmorType { get; set; } = ArmorType.Flesh;
     public float AttackAnimationBackswingPoint { get; set; } = 0;
     public float AttackAnimationDamagePoint { get; set; } = 0;
     public float TurnRate { get; set; } = 0.6f;
+    public float TintRed { get; set; } = 225;
+    public float TintBlue { get; set; } = 225;
+    public float TintGreen { get; set; } = 225;
   }
 }

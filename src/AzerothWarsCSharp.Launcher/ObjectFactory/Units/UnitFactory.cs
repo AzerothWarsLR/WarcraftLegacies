@@ -32,17 +32,12 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
 #pragma warning disable CS0618 // Type or member is obsolete
       unit.TechtreeStructuresBuilt = StructuresBuilt;
       unit.StatsBuildTime = BuildTime;
-      unit.ArtScalingValue = ScalingValue;
       unit.PathingCollisionSize = CollisionSize;
       unit.ArtButtonPositionX = ButtonPosition.X;
       unit.ArtButtonPositionY = ButtonPosition.Y;
-      unit.CombatAttack1DamageBase = DamageBase1;
-      unit.CombatAttack2DamageBase = DamageBase2;
-      unit.CombatAttack1DamageNumberOfDice = DamageNumberOfDice1;
-      unit.CombatAttack2DamageNumberOfDice = DamageNumberOfDice2;
       unit.StatsHitPointsMaximumBase = HitPoints;
       unit.TextName = Name;
-      unit.ArtModelFile = Model;
+      unit.ArtModelFile = Model.Path;
       unit.ArtIconGameInterface = $@"ReplaceableTextures\CommandButtons\BTN{Icon}.blp";
       unit.AbilitiesNormal = AbilitiesNormal;
       unit.ArtRequiredAnimationNames = RequiredAnimationNames;
@@ -53,23 +48,13 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.TechtreeUpgradesUsed = ResearchesUsed;
       unit.StatsUnitClassification = Classification;
       unit.StatsFoodCost = FoodCost;
-      unit.CombatAttack1DamageBase = DamageBase1;
-      unit.CombatAttack1DamageSidesPerDie = DamageSidesPerDie1;
-      unit.CombatAttack2DamageSidesPerDie = DamageSidesPerDie2;
       unit.StatsManaInitialAmount = StartingMana;
       unit.StatsManaMaximum = Mana;
       unit.TechtreeRevivesDeadHeroes = RevivesDeadHeroes;
       unit.PathingPlacementPreventedBy = PlacementPreventedBy;
       unit.PathingPlacementRequires = PlacementRequires;
-      unit.ArtTintingColor1Red = TintRed;
-      unit.ArtTintingColor2Green = TintGreen;
-      unit.ArtTintingColor3Blue = TintBlue;
-      unit.CombatAttack1ProjectileSpeed = MissileSpeed1;
-      unit.CombatAttack2ProjectileSpeed = MissileSpeed2;
       unit.AbilitiesDefaultActiveAbilityRaw = DefaultActiveAbilityRaw;
       unit.StatsManaRegeneration = ManaRegeneration;
-      unit.CombatAttack1AnimationBackswingPoint = AnimationBackswingPoint1;
-      unit.CombatAttack2AnimationBackswingPoint = AnimationBackswingPoint2;
       //Calculated
       unit.StatsRepairGoldCost = GoldCost;
       unit.StatsRepairLumberCost = LumberCost;
@@ -113,19 +98,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       }
     }
 
-    private float? _scalingValue;
-    public float ScalingValue
-    {
-      get
-      {
-        return _scalingValue ?? Parent?.ScalingValue ?? 1;
-      }
-      set
-      {
-        _scalingValue = value;
-      }
-    }
-
     private float? _collisionSize;
     /// <summary>
     /// How large the unit is in terms of pathing.
@@ -165,71 +137,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set
       {
         _flavor = value;
-      }
-    }
-
-    private int? _damageBase;
-    public int DamageBase
-    {
-      get
-      {
-        return _damageBase ?? Parent?.DamageBase ?? 0;
-      }
-      set
-      {
-        _damageBase = value;
-      }
-    }
-
-    private int? _damageNumberOfDice1;
-    public int DamageNumberOfDice1
-    {
-      get
-      {
-        return _damageNumberOfDice1 ?? Parent?.DamageNumberOfDice1 ?? 0;
-      }
-      set
-      {
-        _damageNumberOfDice1 = value;
-      }
-    }
-
-    private int? _damageNumberOfDice2;
-    public int DamageNumberOfDice2
-    {
-      get
-      {
-        return _damageNumberOfDice2 ?? Parent?.DamageNumberOfDice2 ?? 0;
-      }
-      set
-      {
-        _damageNumberOfDice2 = value;
-      }
-    }
-
-    private int? _damageSidesPerDie1;
-    public int DamageSidesPerDie1
-    {
-      get
-      {
-        return _damageSidesPerDie1 ?? Parent?.DamageSidesPerDie1 ?? 0;
-      }
-      set
-      {
-        _damageSidesPerDie1 = value;
-      }
-    }
-
-    private int? _damageSidesPerDie2;
-    public int DamageSidesPerDie2
-    {
-      get
-      {
-        return _damageSidesPerDie2 ?? Parent?.DamageSidesPerDie2 ?? 0;
-      }
-      set
-      {
-        _damageSidesPerDie2 = value;
       }
     }
 
@@ -291,17 +198,11 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       }
     }
 
-    private string _model;
-    public string Model
+    private ArtModel _model;
+    public ArtModel Model
     {
-      get
-      {
-        return _model ?? Parent?.Model ?? @"units\human\Peasant\Peasant";
-      }
-      set
-      {
-        _model = value;
-      }
+      get { return _model ?? Parent?.Model ?? new ArtModel(); }
+      set { _model = value; }
     }
 
     private string _icon;
@@ -458,26 +359,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _foodCost = value;
     }
 
-    private int? _damageBase1;
-    /// <summary>
-    /// The base damage of the unit's first attack.
-    /// </summary>
-    public int DamageBase1
-    {
-      get => _damageBase1 ?? Parent?.DamageBase1 ?? 0;
-      set => _damageBase1 = value;
-    }
-
-    private int? _damageBase2;
-    /// <summary>
-    /// The base damage of the unit's second attack.
-    /// </summary>
-    public int DamageBase2
-    {
-      get => _damageBase2 ?? Parent?.DamageBase2 ?? 0;
-      set => _damageBase2 = value;
-    }
-
     private int? _cargoSize;
     /// <summary>
     /// How much space the unit takes when it gets into a unit that can transport other units.
@@ -585,62 +466,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _defaultActiveAbilityRaw = value;
     }
 
-    private int? _tintRed;
-    public int TintRed
-    {
-      get => _tintRed ?? Parent?.TintRed ?? 255;
-      set => _tintRed = value;
-    }
-
-    private int? _tintGreen;
-    public int TintGreen
-    {
-      get => _tintGreen ?? Parent?.TintGreen ?? 255;
-      set => _tintGreen = value;
-    }
-
-    private int? _tintBlue;
-    public int TintBlue
-    {
-      get => _tintBlue ?? Parent?.TintBlue ?? 255;
-      set => _tintBlue = value;
-    }
-
-    private int? _missileSpeed1;
-    public int MissileSpeed1
-    {
-      get => _missileSpeed1 ?? Parent?.MissileSpeed1 ?? 0;
-      set => _missileSpeed1 = value;
-    }
-
-    private int? _missileSpeed2;
-    public int MissileSpeed2
-    {
-      get => _missileSpeed2 ?? Parent?.MissileSpeed2 ?? 0;
-      set => _missileSpeed2 = value;
-    }
-
-    private float? _modelScale;
-    public float ModelScale
-    {
-      get => _modelScale ?? Parent?.ModelScale ?? 1;
-      set => _modelScale = value;
-    }
-
-    private float? _attackCooldown1;
-    public float AttackCooldown1
-    {
-      get => _attackCooldown1 ?? Parent?.AttackCooldown1 ?? 1;
-      set => _attackCooldown1 = value;
-    }
-
-    private float? _attackCooldown2;
-    public float AttackCooldown2
-    {
-      get => _attackCooldown2 ?? Parent?.AttackCooldown2 ?? 1;
-      set => _attackCooldown2 = value;
-    }
-
     private float? _manaRegeneration;
     /// <summary>
     /// The amount of mana the unit regenerates per second.
@@ -661,20 +486,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _hitPointRegeneration = value;
     }
 
-    private float? _animationBackswingPoint1;
-    public float AnimationBackswingPoint1
-    {
-      get => _animationBackswingPoint1 ?? Parent?.AnimationBackswingPoint1 ?? 0;
-      set => _animationBackswingPoint1 = value;
-    }
-
-    private float? _animationBackswingPoint2;
-    public float AnimationBackswingPoint2
-    {
-      get => _animationBackswingPoint2 ?? Parent?.AnimationBackswingPoint2 ?? 0;
-      set => _animationBackswingPoint2 = value;
-    }
-
     private float? _movementSpeed;
     /// <summary>
     /// How fast the unit can move across the map.
@@ -683,54 +494,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     {
       get => _movementSpeed ?? Parent?.MovementSpeed ?? 220;
       set => _movementSpeed = value;
-    }
-
-    private float? _splashAreaFull1;
-    public float SplashAreaFull1
-    {
-      get => _splashAreaFull1 ?? Parent?.SplashAreaFull1 ?? 0;
-      set => _splashAreaFull1 = value;
-    }
-
-    private float? _splashAreaFull2;
-    public float SplashAreaFull2
-    {
-      get => _splashAreaFull2 ?? Parent?.SplashAreaFull2 ?? 0;
-      set => _splashAreaFull2 = value;
-    }
-
-    private string _missileArt1;
-    public string MissileArt1
-    {
-      get => _missileArt1 ?? Parent?.MissileArt1 ?? "";
-      set => _missileArt1 = value;
-    }
-
-    private string _missileArt2;
-    public string MissileArt2
-    {
-      get => _missileArt2 ?? Parent?.MissileArt2 ?? "";
-      set => _missileArt2 = value;
-    }
-
-    private float? _range1;
-    /// <summary>
-    /// How far the unit's first attack can reach.
-    /// </summary>
-    public float Range1
-    {
-      get => _range1 ?? Parent?.Range1 ?? 0;
-      set => _range1 = value;
-    }
-
-    private float? _range2;
-    /// <summary>
-    /// How far the unit's second attack can reach.
-    /// </summary>
-    public float Range2
-    {
-      get => _range2 ?? Parent?.Range2 ?? 0;
-      set => _range2 = value;
     }
 
     private IEnumerable<Upgrade> _researches;
@@ -789,35 +552,96 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       set => _stockReplenishInterval = value;
     }
 
-    private WeaponType? _weaponType1;
-    public WeaponType WeaponType1
+    private Attack _attack1;
+    public Attack Attack1
     {
-      get => _weaponType1 ?? Parent?.WeaponType1 ?? WeaponType.Normal;
-      set => _weaponType1 = value;
+      get => _attack1 ?? Parent?.Attack1 ?? new Attack();
+      set => _attack1 = value;
     }
 
-    private WeaponType? _weaponType2;
-    public WeaponType WeaponType2
+    private Attack _attack2;
+    public Attack Attack2
     {
-      get => _weaponType2 ?? Parent?.WeaponType2 ?? WeaponType.Normal;
-      set => _weaponType2 = value;
-    }
-
-    private float? _missileArc1;
-    public float MissileArc1
-    {
-      get => _missileArc1 ?? Parent?.MissileArc1 ?? 0;
-      set => _missileArc1 = value;
-    }
-
-    private float? _missileArc2;
-    public float MissileArc2
-    {
-      get => _missileArc2 ?? Parent?.MissileArc2 ?? 0;
-      set => _missileArc2 = value;
+      get => _attack2 ?? Parent?.Attack2 ?? new Attack();
+      set => _attack2 = value;
     }
 
     public UnitFactory Parent { get; set; }
+
+    /// <summary>
+    /// Reverse engineer a UnitFactory from a template Unit.
+    /// </summary>
+    public UnitFactory(Unit unit)
+    {
+      Model = new ArtModel()
+      {
+        Path = unit.ArtModelFile,
+        BlendTime = unit.ArtAnimationBlendTimeSeconds,
+        CastBackswing = unit.ArtAnimationCastBackswing,
+        CastPoint = unit.ArtAnimationCastPoint,
+        RunSpeed = unit.ArtAnimationRunSpeed,
+        WalkSpeed = unit.ArtAnimationWalkSpeed,
+        DeathTime = unit.ArtDeathTimeSeconds,
+        ElevationSamplePoints = unit.ArtElevationSamplePoints,
+        ElevationSampleRadius = unit.ArtElevationSampleRadius,
+        HasWaterShadow = unit.ArtHasWaterShadow,
+        MaximumPitchAngle = unit.ArtMaximumPitchAngleDegrees,
+        MaximumRollAngle = unit.ArtMaximumRollAngleDegrees,
+        OccluderHeight = unit.ArtOccluderHeight,
+        ProjectileImpactZ = unit.ArtProjectileImpactZ,
+        ProjectileImpactZSwimming = unit.ArtProjectileImpactZSwimming,
+        ProjectileLaunchX = unit.ArtProjectileLaunchX,
+        ProjectileLaunchY = unit.ArtProjectileLaunchY,
+        ProjectileLaunchZ = unit.ArtProjectileLaunchZ,
+        ProjectileLaunchZSwimming = unit.ArtProjectileLaunchZSwimming,
+        PropulsionWindow = unit.ArtPropulsionWindowDegrees,
+        ScaleProjectiles = unit.ArtScaleProjectiles,
+        SelectionCircleHeight = unit.ArtSelectionCircleHeight,
+        SelectionCircleOnWater = unit.ArtSelectionCircleOnWater,
+        ShadowImage = unit.ArtShadowImageUnit,
+        ShadowImageCenterX = unit.ArtShadowImageCenterX,
+        ShadowImageCenterY = unit.ArtShadowImageCenterY,
+        ShadowImageHeight = unit.ArtShadowImageHeight,
+        ShadowImageWidth = unit.ArtShadowImageWidth,
+        ShadowTextureBuilding = unit.ArtShadowTextureBuilding,
+        Special = unit.ArtSpecial,
+        ArmorType = unit.CombatArmorType,
+        TurnRate = unit.MovementTurnRate,
+        TintRed = unit.ArtTintingColor1Red,
+        TintGreen = unit.ArtTintingColor2Green,
+        TintBlue = unit.ArtTintingColor3Blue,
+      };
+      Attack1 = new Attack()
+      {
+        AnimationBackswingPoint = unit.CombatAttack1AnimationBackswingPoint,
+        AnimationDamagePoint = unit.CombatAttack1AnimationDamagePoint,
+        AreaOfEffectFullDamage = unit.CombatAttack1AreaOfEffectFullDamage,
+        AreaOfEffectMediumDamage = unit.CombatAttack1AreaOfEffectMediumDamage,
+        AreaOfEffectTargets = unit.CombatAttack1AreaOfEffectTargets,
+        AttackType = unit.CombatAttack1AttackType,
+        CooldownTime = unit.CombatAttack1CooldownTime,
+        DamageBase = unit.CombatAttack1DamageBase,
+        DamageFactorMedium = unit.CombatAttack1DamageFactorMedium,
+        DamageFactorSmall = unit.CombatAttack1DamageFactorSmall,
+        DamageLossFactor = unit.CombatAttack1DamageLossFactor,
+        DamageNumberOfDice = unit.CombatAttack1DamageNumberOfDice,
+        DamageSidesPerDie = unit.CombatAttack1DamageSidesPerDie,
+        DamageSpillDistance = unit.CombatAttack1DamageSpillDistance,
+        DamageSpillRadius = unit.CombatAttack1DamageSpillRadius,
+        DamageUpgradeAmount = unit.CombatAttack1DamageUpgradeAmount,
+        MaximumNumberOfTargets = unit.CombatAttack1MaximumNumberOfTargets,
+        ProjectileArc = unit.CombatAttack1ProjectileArc,
+        ProjectileArt = unit.CombatAttack1ProjectileArt,
+        ProjectileHomingEnabled = unit.CombatAttack1ProjectileHomingEnabled,
+        ProjectileSpeed = unit.CombatAttack1ProjectileSpeed,
+        Range = unit.CombatAttack1Range,
+        RangeMotionBuffer = unit.CombatAttack1RangeMotionBuffer,
+        ShowUI = unit.CombatAttack1ShowUI,
+        TargetsAllowed = unit.CombatAttack1TargetsAllowed,
+        Sound = unit.CombatAttack1WeaponSound,
+        ProjectileType = unit.CombatAttack1WeaponType
+      };
+    }
 
     public UnitFactory(UnitType baseType)
     {

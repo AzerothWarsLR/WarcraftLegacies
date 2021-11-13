@@ -9,7 +9,6 @@ using AzerothWarsCSharp.Launcher.ObjectFactory.Units;
 using CSharpLua;
 using Microsoft.CodeAnalysis;
 using War3Api.Object;
-using War3Api.Object.Abilities;
 using War3Api.Object.Enums;
 using War3Net.Build;
 using War3Net.Build.Extensions;
@@ -196,7 +195,7 @@ namespace Launcher
     private static ObjectDatabase GenerateObjectDatabase()
     {
       ObjectDatabase objectDatabase = new();
-      Human.GenerateObjectData(objectDatabase);
+      //Human.GenerateObjectData(objectDatabase);
       ProcessAdditionalObjectData(objectDatabase, BASE_OBJECT_PATH);
       return objectDatabase;
     }

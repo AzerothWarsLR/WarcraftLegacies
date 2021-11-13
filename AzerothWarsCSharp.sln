@@ -13,8 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.Generated
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.SourceTest", "AzerothWarsCSharp.SourceTest\AzerothWarsCSharp.SourceTest.csproj", "{F01F11A4-628D-4A4A-A2E4-469C52EE5D15}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.DataExtractor", "src\AzerothWarsCSharp.DataExtractor\AzerothWarsCSharp.DataExtractor.csproj", "{4C0999B6-52A0-4FCB-ABB4-ABBE46A0ED8D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "War3Api.Object", "War3Api.Object\War3Api.Object.csproj", "{CC747477-E330-4FA5-8832-1EDD6BA97241}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "War3Macro.Source", "..\War3Macro\War3Macro.Source\War3Macro.Source.csproj", "{A214E14E-1194-411A-9B57-57558548D8CD}"
@@ -45,10 +43,6 @@ Global
 		{F01F11A4-628D-4A4A-A2E4-469C52EE5D15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F01F11A4-628D-4A4A-A2E4-469C52EE5D15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F01F11A4-628D-4A4A-A2E4-469C52EE5D15}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4C0999B6-52A0-4FCB-ABB4-ABBE46A0ED8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4C0999B6-52A0-4FCB-ABB4-ABBE46A0ED8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4C0999B6-52A0-4FCB-ABB4-ABBE46A0ED8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4C0999B6-52A0-4FCB-ABB4-ABBE46A0ED8D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CC747477-E330-4FA5-8832-1EDD6BA97241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CC747477-E330-4FA5-8832-1EDD6BA97241}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC747477-E330-4FA5-8832-1EDD6BA97241}.Release|Any CPU.ActiveCfg = Release|Any CPU
