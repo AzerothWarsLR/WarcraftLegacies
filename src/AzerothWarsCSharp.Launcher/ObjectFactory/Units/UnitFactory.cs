@@ -29,7 +29,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     /// <param name="unit"></param>
     protected void GenerateCore(Unit unit)
     {
-#pragma warning disable CS0618 // Type or member is obsolete
       unit.TechtreeStructuresBuilt = StructuresBuilt;
       unit.StatsBuildTime = BuildTime;
       unit.PathingCollisionSize = CollisionSize;
@@ -56,7 +55,6 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       //Calculated
       unit.StatsRepairGoldCost = GoldCost;
       unit.StatsRepairLumberCost = LumberCost;
-#pragma warning restore CS0618 // Type or member is obsolete
     }
 
     /// <summary>
