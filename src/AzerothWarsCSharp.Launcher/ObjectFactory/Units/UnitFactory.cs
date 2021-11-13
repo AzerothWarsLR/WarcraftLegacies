@@ -75,27 +75,15 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     private IEnumerable<Unit> _structuresBuilt;
     public IEnumerable<Unit> StructuresBuilt
     {
-      get
-      {
-        return _structuresBuilt ?? Parent?.StructuresBuilt ?? System.Array.Empty<Unit>();
-      }
-      set
-      {
-        _structuresBuilt = value;
-      }
+      get => _structuresBuilt ?? Parent?.StructuresBuilt ?? System.Array.Empty<Unit>();
+      set => _structuresBuilt = value;
     }
 
     private int? _buildTime;
     public int BuildTime
     {
-      get
-      {
-        return _buildTime ?? Parent?.BuildTime ?? 5;
-      }
-      set
-      {
-        _buildTime = value;
-      }
+      get => _buildTime ?? Parent?.BuildTime ?? 5;
+      set => _buildTime = value;
     }
 
     private float? _collisionSize;
@@ -104,53 +92,29 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     /// </summary>
     public float CollisionSize
     {
-      get
-      {
-        return _collisionSize ?? Parent?.CollisionSize ?? 1;
-      }
-      set
-      {
-        _collisionSize = value;
-      }
+      get => _collisionSize ?? Parent?.CollisionSize ?? 1;
+      set => _collisionSize = value;
     }
 
     private Point? _buttonPosition;
     public Point ButtonPosition
     {
-      get
-      {
-        return _buttonPosition ?? Parent?.ButtonPosition ?? new Point(0, 0);
-      }
-      set
-      {
-        _buttonPosition = value;
-      }
+      get => _buttonPosition ?? Parent?.ButtonPosition ?? new Point(0, 0);
+      set => _buttonPosition = value;
     }
 
     private string _flavor;
     public string Flavor
     {
-      get
-      {
-        return _flavor ?? Parent?.Flavor ?? "PLACEHOLDERFLAVOR";
-      }
-      set
-      {
-        _flavor = value;
-      }
+      get => _flavor ?? Parent?.Flavor ?? "PLACEHOLDERFLAVOR";
+      set => _flavor = value;
     }
 
     private int? _hitPoints;
     public int HitPoints
     {
-      get
-      {
-        return _hitPoints ?? Parent?.HitPoints ?? 1;
-      }
-      set
-      {
-        _hitPoints = value;
-      }
+      get => _hitPoints ?? Parent?.HitPoints ?? 1;
+      set => _hitPoints = value;
     }
 
     private int? _mana;
@@ -159,14 +123,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     /// </summary>
     public int Mana
     {
-      get
-      {
-        return _mana ?? Parent?.Mana ?? 0;
-      }
-      set
-      {
-        _mana = value;
-      }
+      get => _mana ?? Parent?.Mana ?? 0;
+      set => _mana = value;
     }
 
     private int? _startingMana;
@@ -175,87 +133,51 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     /// </summary>
     public int StartingMana
     {
-      get
-      {
-        return _startingMana ?? Parent?.StartingMana ?? 0;
-      }
-      set
-      {
-        _startingMana = value;
-      }
+      get => _startingMana ?? Parent?.StartingMana ?? 0;
+      set => _startingMana = value;
     }
 
     private string _name;
     public string Name
     {
-      get
-      {
-        return _name ?? Parent?.Name ?? "PLACEHOLDERNAME";
-      }
-      set
-      {
-        _name = value;
-      }
+      get => _name ?? Parent?.Name ?? "PLACEHOLDERNAME";
+      set => _name = value;
     }
 
     private ArtModel _model;
     public ArtModel Model
     {
-      get { return _model ?? Parent?.Model ?? new ArtModel(); }
-      set { _model = value; }
+      get => _model ?? Parent?.Model ?? new ArtModel();
+      set => _model = value;
     }
 
     private string _icon;
     public string Icon
     {
-      get
-      {
-        return _icon ?? Parent?.Icon ?? @"Peasant";
-      }
-      set
-      {
-        _icon = value;
-      }
+      get => _icon ?? Parent?.Icon ?? @"Peasant";
+      set => _icon = value;
     }
 
     private UnitType? _baseType;
     public UnitType BaseType
     {
-      get
-      {
-        return _baseType ?? Parent?.BaseType ?? UnitType.Peasant_hpea;
-      }
-      set
-      {
-        _baseType = value;
-      }
+      get => _baseType ?? Parent?.BaseType ?? UnitType.Peasant_hpea;
+      set => _baseType = value;
     }
 
     private IEnumerable<Ability> _abilitiesNormal;
     public IEnumerable<Ability> AbilitiesNormal
     {
-      get
-      {
-        return _abilitiesNormal ?? Parent?.AbilitiesNormal ?? System.Array.Empty<Ability>();
-      }
-      set
-      {
-        _abilitiesNormal = value;
-      }
+      get => _abilitiesNormal ?? Parent?.AbilitiesNormal ?? System.Array.Empty<Ability>();
+      set => _abilitiesNormal = value;
     }
 
     private string _abilitiesNormalRaw;
     [Obsolete("This property is obsolete. Use AbilitiesNormal instead.", false)]
     public string AbilitiesNormalRaw
     {
-      get
-      {
-        return _abilitiesNormalRaw ?? Parent?.AbilitiesNormalRaw ?? null;
-      }
-      set
-      {
-        _abilitiesNormalRaw = value;
-      }
+      get => _abilitiesNormalRaw ?? Parent?.AbilitiesNormalRaw ?? null;
+      set => _abilitiesNormalRaw = value;
     }
 
     private string _upgradesToRaw;
@@ -284,14 +206,8 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
     private IEnumerable<string> _requiredAnimationNames;
     public IEnumerable<string> RequiredAnimationNames
     {
-      get
-      {
-        return _requiredAnimationNames ?? Parent?.RequiredAnimationNames ?? System.Array.Empty<string>();
-      }
-      set
-      {
-        _requiredAnimationNames = value;
-      }
+      get => _requiredAnimationNames ?? Parent?.RequiredAnimationNames ?? System.Array.Empty<string>();
+      set => _requiredAnimationNames = value;
     }
 
     private int? _armor;
