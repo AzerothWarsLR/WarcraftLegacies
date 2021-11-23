@@ -11,77 +11,77 @@ namespace War3Api.Object.Abilities
 {
     public sealed class PermanentInvisibility : Ability
     {
-        private readonly Lazy<ObjectProperty<int>> _dataAutoAcquireAttackTargetsRaw;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAutoAcquireAttackTargetsModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataAutoAcquireAttackTargets;
+        private readonly Lazy<ObjectProperty<int>> _dataautoAcquireAttackTargetsRaw;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataautoAcquireAttackTargetsModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataautoAcquireAttackTargets;
         public PermanentInvisibility(): base(1986621505)
         {
-            _dataAutoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAutoAcquireAttackTargetsRaw, SetDataAutoAcquireAttackTargetsRaw));
-            _isDataAutoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAutoAcquireAttackTargetsModified));
-            _dataAutoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAutoAcquireAttackTargets, SetDataAutoAcquireAttackTargets));
+            _dataautoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataautoAcquireAttackTargetsRaw, SetDataautoAcquireAttackTargetsRaw));
+            _isDataautoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataautoAcquireAttackTargetsModified));
+            _dataautoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataautoAcquireAttackTargets, SetDataautoAcquireAttackTargets));
         }
 
         public PermanentInvisibility(int newId): base(1986621505, newId)
         {
-            _dataAutoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAutoAcquireAttackTargetsRaw, SetDataAutoAcquireAttackTargetsRaw));
-            _isDataAutoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAutoAcquireAttackTargetsModified));
-            _dataAutoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAutoAcquireAttackTargets, SetDataAutoAcquireAttackTargets));
+            _dataautoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataautoAcquireAttackTargetsRaw, SetDataautoAcquireAttackTargetsRaw));
+            _isDataautoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataautoAcquireAttackTargetsModified));
+            _dataautoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataautoAcquireAttackTargets, SetDataautoAcquireAttackTargets));
         }
 
         public PermanentInvisibility(string newRawcode): base(1986621505, newRawcode)
         {
-            _dataAutoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAutoAcquireAttackTargetsRaw, SetDataAutoAcquireAttackTargetsRaw));
-            _isDataAutoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAutoAcquireAttackTargetsModified));
-            _dataAutoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAutoAcquireAttackTargets, SetDataAutoAcquireAttackTargets));
+            _dataautoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataautoAcquireAttackTargetsRaw, SetDataautoAcquireAttackTargetsRaw));
+            _isDataautoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataautoAcquireAttackTargetsModified));
+            _dataautoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataautoAcquireAttackTargets, SetDataautoAcquireAttackTargets));
         }
 
         public PermanentInvisibility(ObjectDatabaseBase db): base(1986621505, db)
         {
-            _dataAutoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAutoAcquireAttackTargetsRaw, SetDataAutoAcquireAttackTargetsRaw));
-            _isDataAutoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAutoAcquireAttackTargetsModified));
-            _dataAutoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAutoAcquireAttackTargets, SetDataAutoAcquireAttackTargets));
+            _dataautoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataautoAcquireAttackTargetsRaw, SetDataautoAcquireAttackTargetsRaw));
+            _isDataautoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataautoAcquireAttackTargetsModified));
+            _dataautoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataautoAcquireAttackTargets, SetDataautoAcquireAttackTargets));
         }
 
         public PermanentInvisibility(int newId, ObjectDatabaseBase db): base(1986621505, newId, db)
         {
-            _dataAutoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAutoAcquireAttackTargetsRaw, SetDataAutoAcquireAttackTargetsRaw));
-            _isDataAutoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAutoAcquireAttackTargetsModified));
-            _dataAutoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAutoAcquireAttackTargets, SetDataAutoAcquireAttackTargets));
+            _dataautoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataautoAcquireAttackTargetsRaw, SetDataautoAcquireAttackTargetsRaw));
+            _isDataautoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataautoAcquireAttackTargetsModified));
+            _dataautoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataautoAcquireAttackTargets, SetDataautoAcquireAttackTargets));
         }
 
         public PermanentInvisibility(string newRawcode, ObjectDatabaseBase db): base(1986621505, newRawcode, db)
         {
-            _dataAutoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAutoAcquireAttackTargetsRaw, SetDataAutoAcquireAttackTargetsRaw));
-            _isDataAutoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAutoAcquireAttackTargetsModified));
-            _dataAutoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAutoAcquireAttackTargets, SetDataAutoAcquireAttackTargets));
+            _dataautoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataautoAcquireAttackTargetsRaw, SetDataautoAcquireAttackTargetsRaw));
+            _isDataautoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataautoAcquireAttackTargetsModified));
+            _dataautoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataautoAcquireAttackTargets, SetDataautoAcquireAttackTargets));
         }
 
-        public ObjectProperty<int> DataAutoAcquireAttackTargetsRaw => _dataAutoAcquireAttackTargetsRaw.Value;
-        public ReadOnlyObjectProperty<bool> IsDataAutoAcquireAttackTargetsModified => _isDataAutoAcquireAttackTargetsModified.Value;
-        public ObjectProperty<bool> DataAutoAcquireAttackTargets => _dataAutoAcquireAttackTargets.Value;
-        private int GetDataAutoAcquireAttackTargetsRaw(int level)
+        public ObjectProperty<int> DataautoAcquireAttackTargetsRaw => _dataautoAcquireAttackTargetsRaw.Value;
+        public ReadOnlyObjectProperty<bool> IsDataautoAcquireAttackTargetsModified => _isDataautoAcquireAttackTargetsModified.Value;
+        public ObjectProperty<bool> DataautoAcquireAttackTargets => _dataautoAcquireAttackTargets.Value;
+        private int GetDataautoAcquireAttackTargetsRaw(int level)
         {
             return _modifications.GetModification(829384775, level).ValueAsInt;
         }
 
-        private void SetDataAutoAcquireAttackTargetsRaw(int level, int value)
+        private void SetDataautoAcquireAttackTargetsRaw(int level, int value)
         {
             _modifications[829384775, level] = new LevelObjectDataModification{Id = 829384775, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 1};
         }
 
-        private bool GetIsDataAutoAcquireAttackTargetsModified(int level)
+        private bool GetIsDataautoAcquireAttackTargetsModified(int level)
         {
             return _modifications.ContainsKey(829384775, level);
         }
 
-        private bool GetDataAutoAcquireAttackTargets(int level)
+        private bool GetDataautoAcquireAttackTargets(int level)
         {
-            return GetDataAutoAcquireAttackTargetsRaw(level).ToBool(this);
+            return GetDataautoAcquireAttackTargetsRaw(level).ToBool(this);
         }
 
-        private void SetDataAutoAcquireAttackTargets(int level, bool value)
+        private void SetDataautoAcquireAttackTargets(int level, bool value)
         {
-            SetDataAutoAcquireAttackTargetsRaw(level, value.ToRaw(null, null));
+            SetDataautoAcquireAttackTargetsRaw(level, value.ToRaw(null, null));
         }
     }
 }

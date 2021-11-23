@@ -11,10 +11,10 @@ namespace War3Api.Object.Abilities
 {
     public sealed class DefendItem : Ability
     {
-        private readonly Lazy<ObjectProperty<float>> _dataDamageTaken;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamageTakenModified;
-        private readonly Lazy<ObjectProperty<float>> _dataDamageDealt;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamageDealtModified;
+        private readonly Lazy<ObjectProperty<float>> _dataData_Def1;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataData_Def1Modified;
+        private readonly Lazy<ObjectProperty<float>> _dataData_Def2;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataData_Def2Modified;
         private readonly Lazy<ObjectProperty<float>> _dataMovementSpeedFactor;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMovementSpeedFactorModified;
         private readonly Lazy<ObjectProperty<float>> _dataAttackSpeedFactor;
@@ -29,10 +29,10 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDeflectDamageTakenSpellsModified;
         public DefendItem(): base(1684293953)
         {
-            _dataDamageTaken = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageTaken, SetDataDamageTaken));
-            _isDataDamageTakenModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageTakenModified));
-            _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
-            _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
+            _dataData_Def1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Def1, SetDataData_Def1));
+            _isDataData_Def1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Def1Modified));
+            _dataData_Def2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Def2, SetDataData_Def2));
+            _isDataData_Def2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Def2Modified));
             _dataMovementSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedFactor, SetDataMovementSpeedFactor));
             _isDataMovementSpeedFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedFactorModified));
             _dataAttackSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedFactor, SetDataAttackSpeedFactor));
@@ -49,10 +49,10 @@ namespace War3Api.Object.Abilities
 
         public DefendItem(int newId): base(1684293953, newId)
         {
-            _dataDamageTaken = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageTaken, SetDataDamageTaken));
-            _isDataDamageTakenModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageTakenModified));
-            _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
-            _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
+            _dataData_Def1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Def1, SetDataData_Def1));
+            _isDataData_Def1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Def1Modified));
+            _dataData_Def2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Def2, SetDataData_Def2));
+            _isDataData_Def2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Def2Modified));
             _dataMovementSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedFactor, SetDataMovementSpeedFactor));
             _isDataMovementSpeedFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedFactorModified));
             _dataAttackSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedFactor, SetDataAttackSpeedFactor));
@@ -69,10 +69,10 @@ namespace War3Api.Object.Abilities
 
         public DefendItem(string newRawcode): base(1684293953, newRawcode)
         {
-            _dataDamageTaken = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageTaken, SetDataDamageTaken));
-            _isDataDamageTakenModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageTakenModified));
-            _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
-            _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
+            _dataData_Def1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Def1, SetDataData_Def1));
+            _isDataData_Def1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Def1Modified));
+            _dataData_Def2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Def2, SetDataData_Def2));
+            _isDataData_Def2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Def2Modified));
             _dataMovementSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedFactor, SetDataMovementSpeedFactor));
             _isDataMovementSpeedFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedFactorModified));
             _dataAttackSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedFactor, SetDataAttackSpeedFactor));
@@ -89,10 +89,10 @@ namespace War3Api.Object.Abilities
 
         public DefendItem(ObjectDatabaseBase db): base(1684293953, db)
         {
-            _dataDamageTaken = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageTaken, SetDataDamageTaken));
-            _isDataDamageTakenModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageTakenModified));
-            _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
-            _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
+            _dataData_Def1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Def1, SetDataData_Def1));
+            _isDataData_Def1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Def1Modified));
+            _dataData_Def2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Def2, SetDataData_Def2));
+            _isDataData_Def2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Def2Modified));
             _dataMovementSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedFactor, SetDataMovementSpeedFactor));
             _isDataMovementSpeedFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedFactorModified));
             _dataAttackSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedFactor, SetDataAttackSpeedFactor));
@@ -109,10 +109,10 @@ namespace War3Api.Object.Abilities
 
         public DefendItem(int newId, ObjectDatabaseBase db): base(1684293953, newId, db)
         {
-            _dataDamageTaken = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageTaken, SetDataDamageTaken));
-            _isDataDamageTakenModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageTakenModified));
-            _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
-            _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
+            _dataData_Def1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Def1, SetDataData_Def1));
+            _isDataData_Def1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Def1Modified));
+            _dataData_Def2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Def2, SetDataData_Def2));
+            _isDataData_Def2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Def2Modified));
             _dataMovementSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedFactor, SetDataMovementSpeedFactor));
             _isDataMovementSpeedFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedFactorModified));
             _dataAttackSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedFactor, SetDataAttackSpeedFactor));
@@ -129,10 +129,10 @@ namespace War3Api.Object.Abilities
 
         public DefendItem(string newRawcode, ObjectDatabaseBase db): base(1684293953, newRawcode, db)
         {
-            _dataDamageTaken = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageTaken, SetDataDamageTaken));
-            _isDataDamageTakenModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageTakenModified));
-            _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
-            _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
+            _dataData_Def1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Def1, SetDataData_Def1));
+            _isDataData_Def1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Def1Modified));
+            _dataData_Def2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Def2, SetDataData_Def2));
+            _isDataData_Def2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Def2Modified));
             _dataMovementSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedFactor, SetDataMovementSpeedFactor));
             _isDataMovementSpeedFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedFactorModified));
             _dataAttackSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedFactor, SetDataAttackSpeedFactor));
@@ -147,10 +147,10 @@ namespace War3Api.Object.Abilities
             _isDataDeflectDamageTakenSpellsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDeflectDamageTakenSpellsModified));
         }
 
-        public ObjectProperty<float> DataDamageTaken => _dataDamageTaken.Value;
-        public ReadOnlyObjectProperty<bool> IsDataDamageTakenModified => _isDataDamageTakenModified.Value;
-        public ObjectProperty<float> DataDamageDealt => _dataDamageDealt.Value;
-        public ReadOnlyObjectProperty<bool> IsDataDamageDealtModified => _isDataDamageDealtModified.Value;
+        public ObjectProperty<float> DataData_Def1 => _dataData_Def1.Value;
+        public ReadOnlyObjectProperty<bool> IsDataData_Def1Modified => _isDataData_Def1Modified.Value;
+        public ObjectProperty<float> DataData_Def2 => _dataData_Def2.Value;
+        public ReadOnlyObjectProperty<bool> IsDataData_Def2Modified => _isDataData_Def2Modified.Value;
         public ObjectProperty<float> DataMovementSpeedFactor => _dataMovementSpeedFactor.Value;
         public ReadOnlyObjectProperty<bool> IsDataMovementSpeedFactorModified => _isDataMovementSpeedFactorModified.Value;
         public ObjectProperty<float> DataAttackSpeedFactor => _dataAttackSpeedFactor.Value;
@@ -163,32 +163,32 @@ namespace War3Api.Object.Abilities
         public ReadOnlyObjectProperty<bool> IsDataDeflectDamageTakenPiercingModified => _isDataDeflectDamageTakenPiercingModified.Value;
         public ObjectProperty<float> DataDeflectDamageTakenSpells => _dataDeflectDamageTakenSpells.Value;
         public ReadOnlyObjectProperty<bool> IsDataDeflectDamageTakenSpellsModified => _isDataDeflectDamageTakenSpellsModified.Value;
-        private float GetDataDamageTaken(int level)
+        private float GetDataData_Def1(int level)
         {
             return _modifications.GetModification(828794180, level).ValueAsFloat;
         }
 
-        private void SetDataDamageTaken(int level, float value)
+        private void SetDataData_Def1(int level, float value)
         {
             _modifications[828794180, level] = new LevelObjectDataModification{Id = 828794180, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 1};
         }
 
-        private bool GetIsDataDamageTakenModified(int level)
+        private bool GetIsDataData_Def1Modified(int level)
         {
             return _modifications.ContainsKey(828794180, level);
         }
 
-        private float GetDataDamageDealt(int level)
+        private float GetDataData_Def2(int level)
         {
             return _modifications.GetModification(845571396, level).ValueAsFloat;
         }
 
-        private void SetDataDamageDealt(int level, float value)
+        private void SetDataData_Def2(int level, float value)
         {
             _modifications[845571396, level] = new LevelObjectDataModification{Id = 845571396, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 2};
         }
 
-        private bool GetIsDataDamageDealtModified(int level)
+        private bool GetIsDataData_Def2Modified(int level)
         {
             return _modifications.ContainsKey(845571396, level);
         }

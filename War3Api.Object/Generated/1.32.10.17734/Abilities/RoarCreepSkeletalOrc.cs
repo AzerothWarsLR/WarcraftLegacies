@@ -11,8 +11,8 @@ namespace War3Api.Object.Abilities
 {
     public sealed class RoarCreepSkeletalOrc : Ability
     {
-        private readonly Lazy<ObjectProperty<float>> _dataDamageIncrease;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamageIncreaseModified;
+        private readonly Lazy<ObjectProperty<float>> _dataData;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDataModified;
         private readonly Lazy<ObjectProperty<int>> _dataDefenseIncrease;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDefenseIncreaseModified;
         private readonly Lazy<ObjectProperty<float>> _dataLifeRegenerationRate;
@@ -29,8 +29,8 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMaxUnitsModified;
         public RoarCreepSkeletalOrc(): base(829571905)
         {
-            _dataDamageIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageIncrease, SetDataDamageIncrease));
-            _isDataDamageIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageIncreaseModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataDefenseIncrease = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDefenseIncrease, SetDataDefenseIncrease));
             _isDataDefenseIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDefenseIncreaseModified));
             _dataLifeRegenerationRate = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationRate, SetDataLifeRegenerationRate));
@@ -49,8 +49,8 @@ namespace War3Api.Object.Abilities
 
         public RoarCreepSkeletalOrc(int newId): base(829571905, newId)
         {
-            _dataDamageIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageIncrease, SetDataDamageIncrease));
-            _isDataDamageIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageIncreaseModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataDefenseIncrease = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDefenseIncrease, SetDataDefenseIncrease));
             _isDataDefenseIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDefenseIncreaseModified));
             _dataLifeRegenerationRate = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationRate, SetDataLifeRegenerationRate));
@@ -69,8 +69,8 @@ namespace War3Api.Object.Abilities
 
         public RoarCreepSkeletalOrc(string newRawcode): base(829571905, newRawcode)
         {
-            _dataDamageIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageIncrease, SetDataDamageIncrease));
-            _isDataDamageIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageIncreaseModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataDefenseIncrease = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDefenseIncrease, SetDataDefenseIncrease));
             _isDataDefenseIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDefenseIncreaseModified));
             _dataLifeRegenerationRate = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationRate, SetDataLifeRegenerationRate));
@@ -89,8 +89,8 @@ namespace War3Api.Object.Abilities
 
         public RoarCreepSkeletalOrc(ObjectDatabaseBase db): base(829571905, db)
         {
-            _dataDamageIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageIncrease, SetDataDamageIncrease));
-            _isDataDamageIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageIncreaseModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataDefenseIncrease = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDefenseIncrease, SetDataDefenseIncrease));
             _isDataDefenseIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDefenseIncreaseModified));
             _dataLifeRegenerationRate = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationRate, SetDataLifeRegenerationRate));
@@ -109,8 +109,8 @@ namespace War3Api.Object.Abilities
 
         public RoarCreepSkeletalOrc(int newId, ObjectDatabaseBase db): base(829571905, newId, db)
         {
-            _dataDamageIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageIncrease, SetDataDamageIncrease));
-            _isDataDamageIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageIncreaseModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataDefenseIncrease = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDefenseIncrease, SetDataDefenseIncrease));
             _isDataDefenseIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDefenseIncreaseModified));
             _dataLifeRegenerationRate = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationRate, SetDataLifeRegenerationRate));
@@ -129,8 +129,8 @@ namespace War3Api.Object.Abilities
 
         public RoarCreepSkeletalOrc(string newRawcode, ObjectDatabaseBase db): base(829571905, newRawcode, db)
         {
-            _dataDamageIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageIncrease, SetDataDamageIncrease));
-            _isDataDamageIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageIncreaseModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataDefenseIncrease = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDefenseIncrease, SetDataDefenseIncrease));
             _isDataDefenseIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDefenseIncreaseModified));
             _dataLifeRegenerationRate = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationRate, SetDataLifeRegenerationRate));
@@ -147,8 +147,8 @@ namespace War3Api.Object.Abilities
             _isDataMaxUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxUnitsModified));
         }
 
-        public ObjectProperty<float> DataDamageIncrease => _dataDamageIncrease.Value;
-        public ReadOnlyObjectProperty<bool> IsDataDamageIncreaseModified => _isDataDamageIncreaseModified.Value;
+        public ObjectProperty<float> DataData => _dataData.Value;
+        public ReadOnlyObjectProperty<bool> IsDataDataModified => _isDataDataModified.Value;
         public ObjectProperty<int> DataDefenseIncrease => _dataDefenseIncrease.Value;
         public ReadOnlyObjectProperty<bool> IsDataDefenseIncreaseModified => _isDataDefenseIncreaseModified.Value;
         public ObjectProperty<float> DataLifeRegenerationRate => _dataLifeRegenerationRate.Value;
@@ -163,17 +163,17 @@ namespace War3Api.Object.Abilities
         public ObjectProperty<bool> DataPreferFriendlies => _dataPreferFriendlies.Value;
         public ObjectProperty<int> DataMaxUnits => _dataMaxUnits.Value;
         public ReadOnlyObjectProperty<bool> IsDataMaxUnitsModified => _isDataMaxUnitsModified.Value;
-        private float GetDataDamageIncrease(int level)
+        private float GetDataData(int level)
         {
             return _modifications.GetModification(828469074, level).ValueAsFloat;
         }
 
-        private void SetDataDamageIncrease(int level, float value)
+        private void SetDataData(int level, float value)
         {
             _modifications[828469074, level] = new LevelObjectDataModification{Id = 828469074, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 1};
         }
 
-        private bool GetIsDataDamageIncreaseModified(int level)
+        private bool GetIsDataDataModified(int level)
         {
             return _modifications.ContainsKey(828469074, level);
         }

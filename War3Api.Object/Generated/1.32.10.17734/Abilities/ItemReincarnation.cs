@@ -15,16 +15,16 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDelayAfterDeathSecondsModified;
         private readonly Lazy<ObjectProperty<int>> _dataRestoredLife;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataRestoredLifeModified;
-        private readonly Lazy<ObjectProperty<int>> _dataRestoredMana1ForCurrent;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataRestoredMana1ForCurrentModified;
+        private readonly Lazy<ObjectProperty<int>> _dataRestoredMana(1ForCurrent;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataRestoredMana(1ForCurrentModified;
         public ItemReincarnation(): base(1668434241)
         {
             _dataDelayAfterDeathSeconds = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataDelayAfterDeathSeconds, SetDataDelayAfterDeathSeconds));
             _isDataDelayAfterDeathSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDelayAfterDeathSecondsModified));
             _dataRestoredLife = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRestoredLife, SetDataRestoredLife));
             _isDataRestoredLifeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRestoredLifeModified));
-            _dataRestoredMana1ForCurrent = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRestoredMana1ForCurrent, SetDataRestoredMana1ForCurrent));
-            _isDataRestoredMana1ForCurrentModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRestoredMana1ForCurrentModified));
+            _dataRestoredMana(1F orCurrent = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRestoredMana(1F orCurrent, SetDataRestoredMana(1F orCurrent));
+            _isDataRestoredMana(1F orCurrentModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRestoredMana(1F orCurrentModified));
         }
 
         public ItemReincarnation(int newId): base(1668434241, newId)
@@ -33,8 +33,8 @@ namespace War3Api.Object.Abilities
             _isDataDelayAfterDeathSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDelayAfterDeathSecondsModified));
             _dataRestoredLife = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRestoredLife, SetDataRestoredLife));
             _isDataRestoredLifeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRestoredLifeModified));
-            _dataRestoredMana1ForCurrent = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRestoredMana1ForCurrent, SetDataRestoredMana1ForCurrent));
-            _isDataRestoredMana1ForCurrentModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRestoredMana1ForCurrentModified));
+            _dataRestoredMana(1F orCurrent = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRestoredMana(1F orCurrent, SetDataRestoredMana(1F orCurrent));
+            _isDataRestoredMana(1F orCurrentModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRestoredMana(1F orCurrentModified));
         }
 
         public ItemReincarnation(string newRawcode): base(1668434241, newRawcode)
@@ -43,8 +43,8 @@ namespace War3Api.Object.Abilities
             _isDataDelayAfterDeathSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDelayAfterDeathSecondsModified));
             _dataRestoredLife = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRestoredLife, SetDataRestoredLife));
             _isDataRestoredLifeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRestoredLifeModified));
-            _dataRestoredMana1ForCurrent = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRestoredMana1ForCurrent, SetDataRestoredMana1ForCurrent));
-            _isDataRestoredMana1ForCurrentModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRestoredMana1ForCurrentModified));
+            _dataRestoredMana(1F orCurrent = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRestoredMana(1F orCurrent, SetDataRestoredMana(1F orCurrent));
+            _isDataRestoredMana(1F orCurrentModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRestoredMana(1F orCurrentModified));
         }
 
         public ItemReincarnation(ObjectDatabaseBase db): base(1668434241, db)
@@ -53,8 +53,8 @@ namespace War3Api.Object.Abilities
             _isDataDelayAfterDeathSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDelayAfterDeathSecondsModified));
             _dataRestoredLife = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRestoredLife, SetDataRestoredLife));
             _isDataRestoredLifeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRestoredLifeModified));
-            _dataRestoredMana1ForCurrent = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRestoredMana1ForCurrent, SetDataRestoredMana1ForCurrent));
-            _isDataRestoredMana1ForCurrentModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRestoredMana1ForCurrentModified));
+            _dataRestoredMana(1F orCurrent = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRestoredMana(1F orCurrent, SetDataRestoredMana(1F orCurrent));
+            _isDataRestoredMana(1F orCurrentModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRestoredMana(1F orCurrentModified));
         }
 
         public ItemReincarnation(int newId, ObjectDatabaseBase db): base(1668434241, newId, db)
@@ -63,8 +63,8 @@ namespace War3Api.Object.Abilities
             _isDataDelayAfterDeathSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDelayAfterDeathSecondsModified));
             _dataRestoredLife = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRestoredLife, SetDataRestoredLife));
             _isDataRestoredLifeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRestoredLifeModified));
-            _dataRestoredMana1ForCurrent = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRestoredMana1ForCurrent, SetDataRestoredMana1ForCurrent));
-            _isDataRestoredMana1ForCurrentModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRestoredMana1ForCurrentModified));
+            _dataRestoredMana(1F orCurrent = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRestoredMana(1F orCurrent, SetDataRestoredMana(1F orCurrent));
+            _isDataRestoredMana(1F orCurrentModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRestoredMana(1F orCurrentModified));
         }
 
         public ItemReincarnation(string newRawcode, ObjectDatabaseBase db): base(1668434241, newRawcode, db)
@@ -73,16 +73,16 @@ namespace War3Api.Object.Abilities
             _isDataDelayAfterDeathSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDelayAfterDeathSecondsModified));
             _dataRestoredLife = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRestoredLife, SetDataRestoredLife));
             _isDataRestoredLifeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRestoredLifeModified));
-            _dataRestoredMana1ForCurrent = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRestoredMana1ForCurrent, SetDataRestoredMana1ForCurrent));
-            _isDataRestoredMana1ForCurrentModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRestoredMana1ForCurrentModified));
+            _dataRestoredMana(1F orCurrent = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRestoredMana(1F orCurrent, SetDataRestoredMana(1F orCurrent));
+            _isDataRestoredMana(1F orCurrentModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataRestoredMana(1F orCurrentModified));
         }
 
         public ObjectProperty<int> DataDelayAfterDeathSeconds => _dataDelayAfterDeathSeconds.Value;
         public ReadOnlyObjectProperty<bool> IsDataDelayAfterDeathSecondsModified => _isDataDelayAfterDeathSecondsModified.Value;
         public ObjectProperty<int> DataRestoredLife => _dataRestoredLife.Value;
         public ReadOnlyObjectProperty<bool> IsDataRestoredLifeModified => _isDataRestoredLifeModified.Value;
-        public ObjectProperty<int> DataRestoredMana1ForCurrent => _dataRestoredMana1ForCurrent.Value;
-        public ReadOnlyObjectProperty<bool> IsDataRestoredMana1ForCurrentModified => _isDataRestoredMana1ForCurrentModified.Value;
+        public ObjectProperty<int> DataRestoredMana(1ForCurrent => _dataRestoredMana(1F orCurrent.Value;
+        public ReadOnlyObjectProperty<bool> IsDataRestoredMana(1ForCurrentModified => _isDataRestoredMana(1F orCurrentModified.Value;
         private int GetDataDelayAfterDeathSeconds(int level)
         {
             return _modifications.GetModification(1684238921, level).ValueAsInt;
@@ -113,17 +113,17 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(845378153, level);
         }
 
-        private int GetDataRestoredMana1ForCurrent(int level)
+        private int GetDataRestoredMana(1ForCurrent(int level)
         {
             return _modifications.GetModification(862155369, level).ValueAsInt;
         }
 
-        private void SetDataRestoredMana1ForCurrent(int level, int value)
+        private void SetDataRestoredMana(1ForCurrent(int level, int value)
         {
             _modifications[862155369, level] = new LevelObjectDataModification{Id = 862155369, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 3};
         }
 
-        private bool GetIsDataRestoredMana1ForCurrentModified(int level)
+        private bool GetIsDataRestoredMana(1ForCurrentModified(int level)
         {
             return _modifications.ContainsKey(862155369, level);
         }

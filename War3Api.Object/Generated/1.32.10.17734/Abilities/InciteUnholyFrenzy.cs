@@ -19,8 +19,8 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ObjectProperty<bool>> _dataPreferFriendlies;
         private readonly Lazy<ObjectProperty<int>> _dataMaxUnits;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMaxUnitsModified;
-        private readonly Lazy<ObjectProperty<float>> _dataAttackSpeedBonus;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAttackSpeedBonusModified;
+        private readonly Lazy<ObjectProperty<float>> _dataData;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDataModified;
         private readonly Lazy<ObjectProperty<float>> _dataDamagePerSecond;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamagePerSecondModified;
         private readonly Lazy<ObjectProperty<int>> _dataRequiresUndeadTargetRaw;
@@ -42,8 +42,8 @@ namespace War3Api.Object.Abilities
             _dataPreferFriendlies = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPreferFriendlies, SetDataPreferFriendlies));
             _dataMaxUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxUnits, SetDataMaxUnits));
             _isDataMaxUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxUnitsModified));
-            _dataAttackSpeedBonus = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedBonus, SetDataAttackSpeedBonus));
-            _isDataAttackSpeedBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedBonusModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataDamagePerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamagePerSecond, SetDataDamagePerSecond));
             _isDataDamagePerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePerSecondModified));
             _dataRequiresUndeadTargetRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRequiresUndeadTargetRaw, SetDataRequiresUndeadTargetRaw));
@@ -67,8 +67,8 @@ namespace War3Api.Object.Abilities
             _dataPreferFriendlies = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPreferFriendlies, SetDataPreferFriendlies));
             _dataMaxUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxUnits, SetDataMaxUnits));
             _isDataMaxUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxUnitsModified));
-            _dataAttackSpeedBonus = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedBonus, SetDataAttackSpeedBonus));
-            _isDataAttackSpeedBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedBonusModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataDamagePerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamagePerSecond, SetDataDamagePerSecond));
             _isDataDamagePerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePerSecondModified));
             _dataRequiresUndeadTargetRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRequiresUndeadTargetRaw, SetDataRequiresUndeadTargetRaw));
@@ -92,8 +92,8 @@ namespace War3Api.Object.Abilities
             _dataPreferFriendlies = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPreferFriendlies, SetDataPreferFriendlies));
             _dataMaxUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxUnits, SetDataMaxUnits));
             _isDataMaxUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxUnitsModified));
-            _dataAttackSpeedBonus = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedBonus, SetDataAttackSpeedBonus));
-            _isDataAttackSpeedBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedBonusModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataDamagePerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamagePerSecond, SetDataDamagePerSecond));
             _isDataDamagePerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePerSecondModified));
             _dataRequiresUndeadTargetRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRequiresUndeadTargetRaw, SetDataRequiresUndeadTargetRaw));
@@ -117,8 +117,8 @@ namespace War3Api.Object.Abilities
             _dataPreferFriendlies = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPreferFriendlies, SetDataPreferFriendlies));
             _dataMaxUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxUnits, SetDataMaxUnits));
             _isDataMaxUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxUnitsModified));
-            _dataAttackSpeedBonus = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedBonus, SetDataAttackSpeedBonus));
-            _isDataAttackSpeedBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedBonusModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataDamagePerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamagePerSecond, SetDataDamagePerSecond));
             _isDataDamagePerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePerSecondModified));
             _dataRequiresUndeadTargetRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRequiresUndeadTargetRaw, SetDataRequiresUndeadTargetRaw));
@@ -142,8 +142,8 @@ namespace War3Api.Object.Abilities
             _dataPreferFriendlies = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPreferFriendlies, SetDataPreferFriendlies));
             _dataMaxUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxUnits, SetDataMaxUnits));
             _isDataMaxUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxUnitsModified));
-            _dataAttackSpeedBonus = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedBonus, SetDataAttackSpeedBonus));
-            _isDataAttackSpeedBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedBonusModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataDamagePerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamagePerSecond, SetDataDamagePerSecond));
             _isDataDamagePerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePerSecondModified));
             _dataRequiresUndeadTargetRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRequiresUndeadTargetRaw, SetDataRequiresUndeadTargetRaw));
@@ -167,8 +167,8 @@ namespace War3Api.Object.Abilities
             _dataPreferFriendlies = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPreferFriendlies, SetDataPreferFriendlies));
             _dataMaxUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxUnits, SetDataMaxUnits));
             _isDataMaxUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxUnitsModified));
-            _dataAttackSpeedBonus = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedBonus, SetDataAttackSpeedBonus));
-            _isDataAttackSpeedBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedBonusModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataDamagePerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamagePerSecond, SetDataDamagePerSecond));
             _isDataDamagePerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePerSecondModified));
             _dataRequiresUndeadTargetRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataRequiresUndeadTargetRaw, SetDataRequiresUndeadTargetRaw));
@@ -190,8 +190,8 @@ namespace War3Api.Object.Abilities
         public ObjectProperty<bool> DataPreferFriendlies => _dataPreferFriendlies.Value;
         public ObjectProperty<int> DataMaxUnits => _dataMaxUnits.Value;
         public ReadOnlyObjectProperty<bool> IsDataMaxUnitsModified => _isDataMaxUnitsModified.Value;
-        public ObjectProperty<float> DataAttackSpeedBonus => _dataAttackSpeedBonus.Value;
-        public ReadOnlyObjectProperty<bool> IsDataAttackSpeedBonusModified => _isDataAttackSpeedBonusModified.Value;
+        public ObjectProperty<float> DataData => _dataData.Value;
+        public ReadOnlyObjectProperty<bool> IsDataDataModified => _isDataDataModified.Value;
         public ObjectProperty<float> DataDamagePerSecond => _dataDamagePerSecond.Value;
         public ReadOnlyObjectProperty<bool> IsDataDamagePerSecondModified => _isDataDamagePerSecondModified.Value;
         public ObjectProperty<int> DataRequiresUndeadTargetRaw => _dataRequiresUndeadTargetRaw.Value;
@@ -268,17 +268,17 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(929132370, level);
         }
 
-        private float GetDataAttackSpeedBonus(int level)
+        private float GetDataData(int level)
         {
             return _modifications.GetModification(828794965, level).ValueAsFloat;
         }
 
-        private void SetDataAttackSpeedBonus(int level, float value)
+        private void SetDataData(int level, float value)
         {
             _modifications[828794965, level] = new LevelObjectDataModification{Id = 828794965, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 1};
         }
 
-        private bool GetIsDataAttackSpeedBonusModified(int level)
+        private bool GetIsDataDataModified(int level)
         {
             return _modifications.ContainsKey(828794965, level);
         }

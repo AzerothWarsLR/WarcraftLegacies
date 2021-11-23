@@ -11,19 +11,19 @@ namespace War3Api.Object.Abilities
 {
     public sealed class ItemAuraUnholy : Ability
     {
-        private readonly Lazy<ObjectProperty<float>> _dataMovementSpeedIncrease;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMovementSpeedIncreaseModified;
-        private readonly Lazy<ObjectProperty<float>> _dataLifeRegenerationIncrease;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataLifeRegenerationIncreaseModified;
+        private readonly Lazy<ObjectProperty<float>> _dataData_Uau1;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataData_Uau1Modified;
+        private readonly Lazy<ObjectProperty<float>> _dataData_Uau2;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataData_Uau2Modified;
         private readonly Lazy<ObjectProperty<int>> _dataPercentBonusRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataPercentBonusModified;
         private readonly Lazy<ObjectProperty<bool>> _dataPercentBonus;
         public ItemAuraUnholy(): base(1969310017)
         {
-            _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
-            _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
-            _dataLifeRegenerationIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationIncrease, SetDataLifeRegenerationIncrease));
-            _isDataLifeRegenerationIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeRegenerationIncreaseModified));
+            _dataData_Uau1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Uau1, SetDataData_Uau1));
+            _isDataData_Uau1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Uau1Modified));
+            _dataData_Uau2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Uau2, SetDataData_Uau2));
+            _isDataData_Uau2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Uau2Modified));
             _dataPercentBonusRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataPercentBonusRaw, SetDataPercentBonusRaw));
             _isDataPercentBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPercentBonusModified));
             _dataPercentBonus = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPercentBonus, SetDataPercentBonus));
@@ -31,10 +31,10 @@ namespace War3Api.Object.Abilities
 
         public ItemAuraUnholy(int newId): base(1969310017, newId)
         {
-            _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
-            _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
-            _dataLifeRegenerationIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationIncrease, SetDataLifeRegenerationIncrease));
-            _isDataLifeRegenerationIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeRegenerationIncreaseModified));
+            _dataData_Uau1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Uau1, SetDataData_Uau1));
+            _isDataData_Uau1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Uau1Modified));
+            _dataData_Uau2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Uau2, SetDataData_Uau2));
+            _isDataData_Uau2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Uau2Modified));
             _dataPercentBonusRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataPercentBonusRaw, SetDataPercentBonusRaw));
             _isDataPercentBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPercentBonusModified));
             _dataPercentBonus = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPercentBonus, SetDataPercentBonus));
@@ -42,10 +42,10 @@ namespace War3Api.Object.Abilities
 
         public ItemAuraUnholy(string newRawcode): base(1969310017, newRawcode)
         {
-            _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
-            _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
-            _dataLifeRegenerationIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationIncrease, SetDataLifeRegenerationIncrease));
-            _isDataLifeRegenerationIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeRegenerationIncreaseModified));
+            _dataData_Uau1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Uau1, SetDataData_Uau1));
+            _isDataData_Uau1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Uau1Modified));
+            _dataData_Uau2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Uau2, SetDataData_Uau2));
+            _isDataData_Uau2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Uau2Modified));
             _dataPercentBonusRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataPercentBonusRaw, SetDataPercentBonusRaw));
             _isDataPercentBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPercentBonusModified));
             _dataPercentBonus = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPercentBonus, SetDataPercentBonus));
@@ -53,10 +53,10 @@ namespace War3Api.Object.Abilities
 
         public ItemAuraUnholy(ObjectDatabaseBase db): base(1969310017, db)
         {
-            _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
-            _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
-            _dataLifeRegenerationIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationIncrease, SetDataLifeRegenerationIncrease));
-            _isDataLifeRegenerationIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeRegenerationIncreaseModified));
+            _dataData_Uau1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Uau1, SetDataData_Uau1));
+            _isDataData_Uau1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Uau1Modified));
+            _dataData_Uau2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Uau2, SetDataData_Uau2));
+            _isDataData_Uau2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Uau2Modified));
             _dataPercentBonusRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataPercentBonusRaw, SetDataPercentBonusRaw));
             _isDataPercentBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPercentBonusModified));
             _dataPercentBonus = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPercentBonus, SetDataPercentBonus));
@@ -64,10 +64,10 @@ namespace War3Api.Object.Abilities
 
         public ItemAuraUnholy(int newId, ObjectDatabaseBase db): base(1969310017, newId, db)
         {
-            _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
-            _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
-            _dataLifeRegenerationIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationIncrease, SetDataLifeRegenerationIncrease));
-            _isDataLifeRegenerationIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeRegenerationIncreaseModified));
+            _dataData_Uau1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Uau1, SetDataData_Uau1));
+            _isDataData_Uau1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Uau1Modified));
+            _dataData_Uau2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Uau2, SetDataData_Uau2));
+            _isDataData_Uau2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Uau2Modified));
             _dataPercentBonusRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataPercentBonusRaw, SetDataPercentBonusRaw));
             _isDataPercentBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPercentBonusModified));
             _dataPercentBonus = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPercentBonus, SetDataPercentBonus));
@@ -75,48 +75,48 @@ namespace War3Api.Object.Abilities
 
         public ItemAuraUnholy(string newRawcode, ObjectDatabaseBase db): base(1969310017, newRawcode, db)
         {
-            _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
-            _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
-            _dataLifeRegenerationIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationIncrease, SetDataLifeRegenerationIncrease));
-            _isDataLifeRegenerationIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeRegenerationIncreaseModified));
+            _dataData_Uau1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Uau1, SetDataData_Uau1));
+            _isDataData_Uau1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Uau1Modified));
+            _dataData_Uau2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Uau2, SetDataData_Uau2));
+            _isDataData_Uau2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Uau2Modified));
             _dataPercentBonusRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataPercentBonusRaw, SetDataPercentBonusRaw));
             _isDataPercentBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataPercentBonusModified));
             _dataPercentBonus = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataPercentBonus, SetDataPercentBonus));
         }
 
-        public ObjectProperty<float> DataMovementSpeedIncrease => _dataMovementSpeedIncrease.Value;
-        public ReadOnlyObjectProperty<bool> IsDataMovementSpeedIncreaseModified => _isDataMovementSpeedIncreaseModified.Value;
-        public ObjectProperty<float> DataLifeRegenerationIncrease => _dataLifeRegenerationIncrease.Value;
-        public ReadOnlyObjectProperty<bool> IsDataLifeRegenerationIncreaseModified => _isDataLifeRegenerationIncreaseModified.Value;
+        public ObjectProperty<float> DataData_Uau1 => _dataData_Uau1.Value;
+        public ReadOnlyObjectProperty<bool> IsDataData_Uau1Modified => _isDataData_Uau1Modified.Value;
+        public ObjectProperty<float> DataData_Uau2 => _dataData_Uau2.Value;
+        public ReadOnlyObjectProperty<bool> IsDataData_Uau2Modified => _isDataData_Uau2Modified.Value;
         public ObjectProperty<int> DataPercentBonusRaw => _dataPercentBonusRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataPercentBonusModified => _isDataPercentBonusModified.Value;
         public ObjectProperty<bool> DataPercentBonus => _dataPercentBonus.Value;
-        private float GetDataMovementSpeedIncrease(int level)
+        private float GetDataData_Uau1(int level)
         {
             return _modifications.GetModification(829776213, level).ValueAsFloat;
         }
 
-        private void SetDataMovementSpeedIncrease(int level, float value)
+        private void SetDataData_Uau1(int level, float value)
         {
             _modifications[829776213, level] = new LevelObjectDataModification{Id = 829776213, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 1};
         }
 
-        private bool GetIsDataMovementSpeedIncreaseModified(int level)
+        private bool GetIsDataData_Uau1Modified(int level)
         {
             return _modifications.ContainsKey(829776213, level);
         }
 
-        private float GetDataLifeRegenerationIncrease(int level)
+        private float GetDataData_Uau2(int level)
         {
             return _modifications.GetModification(846553429, level).ValueAsFloat;
         }
 
-        private void SetDataLifeRegenerationIncrease(int level, float value)
+        private void SetDataData_Uau2(int level, float value)
         {
             _modifications[846553429, level] = new LevelObjectDataModification{Id = 846553429, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 2};
         }
 
-        private bool GetIsDataLifeRegenerationIncreaseModified(int level)
+        private bool GetIsDataData_Uau2Modified(int level)
         {
             return _modifications.ContainsKey(846553429, level);
         }

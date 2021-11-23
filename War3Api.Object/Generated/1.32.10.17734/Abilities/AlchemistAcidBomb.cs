@@ -11,10 +11,10 @@ namespace War3Api.Object.Abilities
 {
     public sealed class AlchemistAcidBomb : Ability
     {
-        private readonly Lazy<ObjectProperty<float>> _dataMovementSpeedReduction;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMovementSpeedReductionModified;
-        private readonly Lazy<ObjectProperty<float>> _dataAttackSpeedReduction;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAttackSpeedReductionModified;
+        private readonly Lazy<ObjectProperty<float>> _dataData_Nab1;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataData_Nab1Modified;
+        private readonly Lazy<ObjectProperty<float>> _dataData_Nab2;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataData_Nab2Modified;
         private readonly Lazy<ObjectProperty<int>> _dataArmorPenalty;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataArmorPenaltyModified;
         private readonly Lazy<ObjectProperty<float>> _dataPrimaryDamage;
@@ -25,10 +25,10 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamageIntervalModified;
         public AlchemistAcidBomb(): base(1650544193)
         {
-            _dataMovementSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedReduction, SetDataMovementSpeedReduction));
-            _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
-            _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
-            _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
+            _dataData_Nab1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nab1, SetDataData_Nab1));
+            _isDataData_Nab1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nab1Modified));
+            _dataData_Nab2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nab2, SetDataData_Nab2));
+            _isDataData_Nab2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nab2Modified));
             _dataArmorPenalty = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataArmorPenalty, SetDataArmorPenalty));
             _isDataArmorPenaltyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataArmorPenaltyModified));
             _dataPrimaryDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataPrimaryDamage, SetDataPrimaryDamage));
@@ -41,10 +41,10 @@ namespace War3Api.Object.Abilities
 
         public AlchemistAcidBomb(int newId): base(1650544193, newId)
         {
-            _dataMovementSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedReduction, SetDataMovementSpeedReduction));
-            _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
-            _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
-            _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
+            _dataData_Nab1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nab1, SetDataData_Nab1));
+            _isDataData_Nab1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nab1Modified));
+            _dataData_Nab2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nab2, SetDataData_Nab2));
+            _isDataData_Nab2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nab2Modified));
             _dataArmorPenalty = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataArmorPenalty, SetDataArmorPenalty));
             _isDataArmorPenaltyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataArmorPenaltyModified));
             _dataPrimaryDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataPrimaryDamage, SetDataPrimaryDamage));
@@ -57,10 +57,10 @@ namespace War3Api.Object.Abilities
 
         public AlchemistAcidBomb(string newRawcode): base(1650544193, newRawcode)
         {
-            _dataMovementSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedReduction, SetDataMovementSpeedReduction));
-            _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
-            _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
-            _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
+            _dataData_Nab1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nab1, SetDataData_Nab1));
+            _isDataData_Nab1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nab1Modified));
+            _dataData_Nab2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nab2, SetDataData_Nab2));
+            _isDataData_Nab2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nab2Modified));
             _dataArmorPenalty = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataArmorPenalty, SetDataArmorPenalty));
             _isDataArmorPenaltyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataArmorPenaltyModified));
             _dataPrimaryDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataPrimaryDamage, SetDataPrimaryDamage));
@@ -73,10 +73,10 @@ namespace War3Api.Object.Abilities
 
         public AlchemistAcidBomb(ObjectDatabaseBase db): base(1650544193, db)
         {
-            _dataMovementSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedReduction, SetDataMovementSpeedReduction));
-            _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
-            _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
-            _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
+            _dataData_Nab1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nab1, SetDataData_Nab1));
+            _isDataData_Nab1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nab1Modified));
+            _dataData_Nab2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nab2, SetDataData_Nab2));
+            _isDataData_Nab2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nab2Modified));
             _dataArmorPenalty = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataArmorPenalty, SetDataArmorPenalty));
             _isDataArmorPenaltyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataArmorPenaltyModified));
             _dataPrimaryDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataPrimaryDamage, SetDataPrimaryDamage));
@@ -89,10 +89,10 @@ namespace War3Api.Object.Abilities
 
         public AlchemistAcidBomb(int newId, ObjectDatabaseBase db): base(1650544193, newId, db)
         {
-            _dataMovementSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedReduction, SetDataMovementSpeedReduction));
-            _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
-            _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
-            _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
+            _dataData_Nab1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nab1, SetDataData_Nab1));
+            _isDataData_Nab1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nab1Modified));
+            _dataData_Nab2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nab2, SetDataData_Nab2));
+            _isDataData_Nab2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nab2Modified));
             _dataArmorPenalty = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataArmorPenalty, SetDataArmorPenalty));
             _isDataArmorPenaltyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataArmorPenaltyModified));
             _dataPrimaryDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataPrimaryDamage, SetDataPrimaryDamage));
@@ -105,10 +105,10 @@ namespace War3Api.Object.Abilities
 
         public AlchemistAcidBomb(string newRawcode, ObjectDatabaseBase db): base(1650544193, newRawcode, db)
         {
-            _dataMovementSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedReduction, SetDataMovementSpeedReduction));
-            _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
-            _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
-            _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
+            _dataData_Nab1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nab1, SetDataData_Nab1));
+            _isDataData_Nab1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nab1Modified));
+            _dataData_Nab2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nab2, SetDataData_Nab2));
+            _isDataData_Nab2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nab2Modified));
             _dataArmorPenalty = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataArmorPenalty, SetDataArmorPenalty));
             _isDataArmorPenaltyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataArmorPenaltyModified));
             _dataPrimaryDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataPrimaryDamage, SetDataPrimaryDamage));
@@ -119,10 +119,10 @@ namespace War3Api.Object.Abilities
             _isDataDamageIntervalModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageIntervalModified));
         }
 
-        public ObjectProperty<float> DataMovementSpeedReduction => _dataMovementSpeedReduction.Value;
-        public ReadOnlyObjectProperty<bool> IsDataMovementSpeedReductionModified => _isDataMovementSpeedReductionModified.Value;
-        public ObjectProperty<float> DataAttackSpeedReduction => _dataAttackSpeedReduction.Value;
-        public ReadOnlyObjectProperty<bool> IsDataAttackSpeedReductionModified => _isDataAttackSpeedReductionModified.Value;
+        public ObjectProperty<float> DataData_Nab1 => _dataData_Nab1.Value;
+        public ReadOnlyObjectProperty<bool> IsDataData_Nab1Modified => _isDataData_Nab1Modified.Value;
+        public ObjectProperty<float> DataData_Nab2 => _dataData_Nab2.Value;
+        public ReadOnlyObjectProperty<bool> IsDataData_Nab2Modified => _isDataData_Nab2Modified.Value;
         public ObjectProperty<int> DataArmorPenalty => _dataArmorPenalty.Value;
         public ReadOnlyObjectProperty<bool> IsDataArmorPenaltyModified => _isDataArmorPenaltyModified.Value;
         public ObjectProperty<float> DataPrimaryDamage => _dataPrimaryDamage.Value;
@@ -131,32 +131,32 @@ namespace War3Api.Object.Abilities
         public ReadOnlyObjectProperty<bool> IsDataSecondaryDamageModified => _isDataSecondaryDamageModified.Value;
         public ObjectProperty<float> DataDamageInterval => _dataDamageInterval.Value;
         public ReadOnlyObjectProperty<bool> IsDataDamageIntervalModified => _isDataDamageIntervalModified.Value;
-        private float GetDataMovementSpeedReduction(int level)
+        private float GetDataData_Nab1(int level)
         {
             return _modifications.GetModification(828531022, level).ValueAsFloat;
         }
 
-        private void SetDataMovementSpeedReduction(int level, float value)
+        private void SetDataData_Nab1(int level, float value)
         {
             _modifications[828531022, level] = new LevelObjectDataModification{Id = 828531022, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 1};
         }
 
-        private bool GetIsDataMovementSpeedReductionModified(int level)
+        private bool GetIsDataData_Nab1Modified(int level)
         {
             return _modifications.ContainsKey(828531022, level);
         }
 
-        private float GetDataAttackSpeedReduction(int level)
+        private float GetDataData_Nab2(int level)
         {
             return _modifications.GetModification(845308238, level).ValueAsFloat;
         }
 
-        private void SetDataAttackSpeedReduction(int level, float value)
+        private void SetDataData_Nab2(int level, float value)
         {
             _modifications[845308238, level] = new LevelObjectDataModification{Id = 845308238, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 2};
         }
 
-        private bool GetIsDataAttackSpeedReductionModified(int level)
+        private bool GetIsDataData_Nab2Modified(int level)
         {
             return _modifications.ContainsKey(845308238, level);
         }

@@ -13,8 +13,8 @@ namespace War3Api.Object.Abilities
     {
         private readonly Lazy<ObjectProperty<float>> _dataTransitionTime;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataTransitionTimeModified;
-        private readonly Lazy<ObjectProperty<float>> _dataMovementSpeedIncrease;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMovementSpeedIncreaseModified;
+        private readonly Lazy<ObjectProperty<float>> _dataData;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDataModified;
         private readonly Lazy<ObjectProperty<float>> _dataBackstabDamage_Owk3;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataBackstabDamage_Owk3Modified;
         private readonly Lazy<ObjectProperty<int>> _dataBackstabDamage_Owk4Raw;
@@ -27,8 +27,8 @@ namespace War3Api.Object.Abilities
         {
             _dataTransitionTime = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataTransitionTime, SetDataTransitionTime));
             _isDataTransitionTimeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTransitionTimeModified));
-            _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
-            _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataBackstabDamage_Owk3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBackstabDamage_Owk3, SetDataBackstabDamage_Owk3));
             _isDataBackstabDamage_Owk3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk3Modified));
             _dataBackstabDamage_Owk4Raw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataBackstabDamage_Owk4Raw, SetDataBackstabDamage_Owk4Raw));
@@ -43,8 +43,8 @@ namespace War3Api.Object.Abilities
         {
             _dataTransitionTime = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataTransitionTime, SetDataTransitionTime));
             _isDataTransitionTimeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTransitionTimeModified));
-            _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
-            _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataBackstabDamage_Owk3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBackstabDamage_Owk3, SetDataBackstabDamage_Owk3));
             _isDataBackstabDamage_Owk3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk3Modified));
             _dataBackstabDamage_Owk4Raw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataBackstabDamage_Owk4Raw, SetDataBackstabDamage_Owk4Raw));
@@ -59,8 +59,8 @@ namespace War3Api.Object.Abilities
         {
             _dataTransitionTime = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataTransitionTime, SetDataTransitionTime));
             _isDataTransitionTimeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTransitionTimeModified));
-            _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
-            _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataBackstabDamage_Owk3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBackstabDamage_Owk3, SetDataBackstabDamage_Owk3));
             _isDataBackstabDamage_Owk3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk3Modified));
             _dataBackstabDamage_Owk4Raw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataBackstabDamage_Owk4Raw, SetDataBackstabDamage_Owk4Raw));
@@ -75,8 +75,8 @@ namespace War3Api.Object.Abilities
         {
             _dataTransitionTime = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataTransitionTime, SetDataTransitionTime));
             _isDataTransitionTimeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTransitionTimeModified));
-            _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
-            _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataBackstabDamage_Owk3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBackstabDamage_Owk3, SetDataBackstabDamage_Owk3));
             _isDataBackstabDamage_Owk3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk3Modified));
             _dataBackstabDamage_Owk4Raw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataBackstabDamage_Owk4Raw, SetDataBackstabDamage_Owk4Raw));
@@ -91,8 +91,8 @@ namespace War3Api.Object.Abilities
         {
             _dataTransitionTime = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataTransitionTime, SetDataTransitionTime));
             _isDataTransitionTimeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTransitionTimeModified));
-            _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
-            _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataBackstabDamage_Owk3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBackstabDamage_Owk3, SetDataBackstabDamage_Owk3));
             _isDataBackstabDamage_Owk3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk3Modified));
             _dataBackstabDamage_Owk4Raw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataBackstabDamage_Owk4Raw, SetDataBackstabDamage_Owk4Raw));
@@ -107,8 +107,8 @@ namespace War3Api.Object.Abilities
         {
             _dataTransitionTime = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataTransitionTime, SetDataTransitionTime));
             _isDataTransitionTimeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTransitionTimeModified));
-            _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
-            _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataBackstabDamage_Owk3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataBackstabDamage_Owk3, SetDataBackstabDamage_Owk3));
             _isDataBackstabDamage_Owk3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataBackstabDamage_Owk3Modified));
             _dataBackstabDamage_Owk4Raw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataBackstabDamage_Owk4Raw, SetDataBackstabDamage_Owk4Raw));
@@ -121,8 +121,8 @@ namespace War3Api.Object.Abilities
 
         public ObjectProperty<float> DataTransitionTime => _dataTransitionTime.Value;
         public ReadOnlyObjectProperty<bool> IsDataTransitionTimeModified => _isDataTransitionTimeModified.Value;
-        public ObjectProperty<float> DataMovementSpeedIncrease => _dataMovementSpeedIncrease.Value;
-        public ReadOnlyObjectProperty<bool> IsDataMovementSpeedIncreaseModified => _isDataMovementSpeedIncreaseModified.Value;
+        public ObjectProperty<float> DataData => _dataData.Value;
+        public ReadOnlyObjectProperty<bool> IsDataDataModified => _isDataDataModified.Value;
         public ObjectProperty<float> DataBackstabDamage_Owk3 => _dataBackstabDamage_Owk3.Value;
         public ReadOnlyObjectProperty<bool> IsDataBackstabDamage_Owk3Modified => _isDataBackstabDamage_Owk3Modified.Value;
         public ObjectProperty<int> DataBackstabDamage_Owk4Raw => _dataBackstabDamage_Owk4Raw.Value;
@@ -146,17 +146,17 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(829126479, level);
         }
 
-        private float GetDataMovementSpeedIncrease(int level)
+        private float GetDataData(int level)
         {
             return _modifications.GetModification(845903695, level).ValueAsFloat;
         }
 
-        private void SetDataMovementSpeedIncrease(int level, float value)
+        private void SetDataData(int level, float value)
         {
             _modifications[845903695, level] = new LevelObjectDataModification{Id = 845903695, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 2};
         }
 
-        private bool GetIsDataMovementSpeedIncreaseModified(int level)
+        private bool GetIsDataDataModified(int level)
         {
             return _modifications.ContainsKey(845903695, level);
         }

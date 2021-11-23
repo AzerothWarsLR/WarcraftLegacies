@@ -13,60 +13,60 @@ namespace War3Api.Object.Abilities
     {
         private readonly Lazy<ObjectProperty<float>> _dataManaPerHitPoint;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataManaPerHitPointModified;
-        private readonly Lazy<ObjectProperty<float>> _dataDamageAbsorbed;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamageAbsorbedModified;
+        private readonly Lazy<ObjectProperty<float>> _dataData;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDataModified;
         public SeaWitchManaShield(): base(1936543297)
         {
             _dataManaPerHitPoint = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataManaPerHitPoint, SetDataManaPerHitPoint));
             _isDataManaPerHitPointModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataManaPerHitPointModified));
-            _dataDamageAbsorbed = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageAbsorbed, SetDataDamageAbsorbed));
-            _isDataDamageAbsorbedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageAbsorbedModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
         }
 
         public SeaWitchManaShield(int newId): base(1936543297, newId)
         {
             _dataManaPerHitPoint = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataManaPerHitPoint, SetDataManaPerHitPoint));
             _isDataManaPerHitPointModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataManaPerHitPointModified));
-            _dataDamageAbsorbed = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageAbsorbed, SetDataDamageAbsorbed));
-            _isDataDamageAbsorbedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageAbsorbedModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
         }
 
         public SeaWitchManaShield(string newRawcode): base(1936543297, newRawcode)
         {
             _dataManaPerHitPoint = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataManaPerHitPoint, SetDataManaPerHitPoint));
             _isDataManaPerHitPointModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataManaPerHitPointModified));
-            _dataDamageAbsorbed = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageAbsorbed, SetDataDamageAbsorbed));
-            _isDataDamageAbsorbedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageAbsorbedModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
         }
 
         public SeaWitchManaShield(ObjectDatabaseBase db): base(1936543297, db)
         {
             _dataManaPerHitPoint = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataManaPerHitPoint, SetDataManaPerHitPoint));
             _isDataManaPerHitPointModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataManaPerHitPointModified));
-            _dataDamageAbsorbed = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageAbsorbed, SetDataDamageAbsorbed));
-            _isDataDamageAbsorbedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageAbsorbedModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
         }
 
         public SeaWitchManaShield(int newId, ObjectDatabaseBase db): base(1936543297, newId, db)
         {
             _dataManaPerHitPoint = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataManaPerHitPoint, SetDataManaPerHitPoint));
             _isDataManaPerHitPointModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataManaPerHitPointModified));
-            _dataDamageAbsorbed = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageAbsorbed, SetDataDamageAbsorbed));
-            _isDataDamageAbsorbedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageAbsorbedModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
         }
 
         public SeaWitchManaShield(string newRawcode, ObjectDatabaseBase db): base(1936543297, newRawcode, db)
         {
             _dataManaPerHitPoint = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataManaPerHitPoint, SetDataManaPerHitPoint));
             _isDataManaPerHitPointModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataManaPerHitPointModified));
-            _dataDamageAbsorbed = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageAbsorbed, SetDataDamageAbsorbed));
-            _isDataDamageAbsorbedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageAbsorbedModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
         }
 
         public ObjectProperty<float> DataManaPerHitPoint => _dataManaPerHitPoint.Value;
         public ReadOnlyObjectProperty<bool> IsDataManaPerHitPointModified => _isDataManaPerHitPointModified.Value;
-        public ObjectProperty<float> DataDamageAbsorbed => _dataDamageAbsorbed.Value;
-        public ReadOnlyObjectProperty<bool> IsDataDamageAbsorbedModified => _isDataDamageAbsorbedModified.Value;
+        public ObjectProperty<float> DataData => _dataData.Value;
+        public ReadOnlyObjectProperty<bool> IsDataDataModified => _isDataDataModified.Value;
         private float GetDataManaPerHitPoint(int level)
         {
             return _modifications.GetModification(829648206, level).ValueAsFloat;
@@ -82,17 +82,17 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(829648206, level);
         }
 
-        private float GetDataDamageAbsorbed(int level)
+        private float GetDataData(int level)
         {
             return _modifications.GetModification(846425422, level).ValueAsFloat;
         }
 
-        private void SetDataDamageAbsorbed(int level, float value)
+        private void SetDataData(int level, float value)
         {
             _modifications[846425422, level] = new LevelObjectDataModification{Id = 846425422, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 2};
         }
 
-        private bool GetIsDataDamageAbsorbedModified(int level)
+        private bool GetIsDataDataModified(int level)
         {
             return _modifications.ContainsKey(846425422, level);
         }

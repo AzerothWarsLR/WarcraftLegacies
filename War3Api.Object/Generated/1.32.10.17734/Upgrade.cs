@@ -323,27 +323,27 @@ namespace War3Api.Object
             set => DataEffect1Raw = value.ToRaw(null, null);
         }
 
-        public float DataBase1
+        public float Database1
         {
             get => _modifications.GetModification(828465767).ValueAsFloat;
             set => _modifications[828465767] = new LevelObjectDataModification{Id = 828465767, Type = ObjectDataType.Unreal, Value = value, Level = 0};
         }
 
-        public bool IsDataBase1Modified => _modifications.ContainsKey(828465767);
-        public float DataMod1
+        public bool IsDatabase1Modified => _modifications.ContainsKey(828465767);
+        public float Datamod1
         {
             get => _modifications.GetModification(829386087).ValueAsFloat;
             set => _modifications[829386087] = new LevelObjectDataModification{Id = 829386087, Type = ObjectDataType.Unreal, Value = value, Level = 0};
         }
 
-        public bool IsDataMod1Modified => _modifications.ContainsKey(829386087);
-        public string DataCode1
+        public bool IsDatamod1Modified => _modifications.ContainsKey(829386087);
+        public string Datacode1
         {
             get => _modifications.GetModification(829383527).ValueAsString;
             set => _modifications[829383527] = new LevelObjectDataModification{Id = 829383527, Type = ObjectDataType.String, Value = value, Level = 0};
         }
 
-        public bool IsDataCode1Modified => _modifications.ContainsKey(829383527);
+        public bool IsDatacode1Modified => _modifications.ContainsKey(829383527);
         public string DataEffect2Raw
         {
             get => _modifications.GetModification(845571431).ValueAsString;
@@ -357,27 +357,27 @@ namespace War3Api.Object
             set => DataEffect2Raw = value.ToRaw(null, null);
         }
 
-        public float DataBase2
+        public float Database2
         {
             get => _modifications.GetModification(845242983).ValueAsFloat;
             set => _modifications[845242983] = new LevelObjectDataModification{Id = 845242983, Type = ObjectDataType.Unreal, Value = value, Level = 0};
         }
 
-        public bool IsDataBase2Modified => _modifications.ContainsKey(845242983);
-        public float DataMod2
+        public bool IsDatabase2Modified => _modifications.ContainsKey(845242983);
+        public float Datamod2
         {
             get => _modifications.GetModification(846163303).ValueAsFloat;
             set => _modifications[846163303] = new LevelObjectDataModification{Id = 846163303, Type = ObjectDataType.Unreal, Value = value, Level = 0};
         }
 
-        public bool IsDataMod2Modified => _modifications.ContainsKey(846163303);
-        public string DataCode2
+        public bool IsDatamod2Modified => _modifications.ContainsKey(846163303);
+        public string Datacode2
         {
             get => _modifications.GetModification(846160743).ValueAsString;
             set => _modifications[846160743] = new LevelObjectDataModification{Id = 846160743, Type = ObjectDataType.String, Value = value, Level = 0};
         }
 
-        public bool IsDataCode2Modified => _modifications.ContainsKey(846160743);
+        public bool IsDatacode2Modified => _modifications.ContainsKey(846160743);
         public string DataEffect3Raw
         {
             get => _modifications.GetModification(862348647).ValueAsString;
@@ -391,27 +391,27 @@ namespace War3Api.Object
             set => DataEffect3Raw = value.ToRaw(null, null);
         }
 
-        public float DataBase3
+        public float Database3
         {
             get => _modifications.GetModification(862020199).ValueAsFloat;
             set => _modifications[862020199] = new LevelObjectDataModification{Id = 862020199, Type = ObjectDataType.Unreal, Value = value, Level = 0};
         }
 
-        public bool IsDataBase3Modified => _modifications.ContainsKey(862020199);
-        public float DataMod3
+        public bool IsDatabase3Modified => _modifications.ContainsKey(862020199);
+        public float Datamod3
         {
             get => _modifications.GetModification(862940519).ValueAsFloat;
             set => _modifications[862940519] = new LevelObjectDataModification{Id = 862940519, Type = ObjectDataType.Unreal, Value = value, Level = 0};
         }
 
-        public bool IsDataMod3Modified => _modifications.ContainsKey(862940519);
-        public string DataCode3
+        public bool IsDatamod3Modified => _modifications.ContainsKey(862940519);
+        public string Datacode3
         {
             get => _modifications.GetModification(862937959).ValueAsString;
             set => _modifications[862937959] = new LevelObjectDataModification{Id = 862937959, Type = ObjectDataType.String, Value = value, Level = 0};
         }
 
-        public bool IsDataCode3Modified => _modifications.ContainsKey(862937959);
+        public bool IsDatacode3Modified => _modifications.ContainsKey(862937959);
         public string DataEffect4Raw
         {
             get => _modifications.GetModification(879125863).ValueAsString;
@@ -425,27 +425,27 @@ namespace War3Api.Object
             set => DataEffect4Raw = value.ToRaw(null, null);
         }
 
-        public float DataBase4
+        public float Database4
         {
             get => _modifications.GetModification(878797415).ValueAsFloat;
             set => _modifications[878797415] = new LevelObjectDataModification{Id = 878797415, Type = ObjectDataType.Unreal, Value = value, Level = 0};
         }
 
-        public bool IsDataBase4Modified => _modifications.ContainsKey(878797415);
-        public float DataMod4
+        public bool IsDatabase4Modified => _modifications.ContainsKey(878797415);
+        public float Datamod4
         {
             get => _modifications.GetModification(879717735).ValueAsFloat;
             set => _modifications[879717735] = new LevelObjectDataModification{Id = 879717735, Type = ObjectDataType.Unreal, Value = value, Level = 0};
         }
 
-        public bool IsDataMod4Modified => _modifications.ContainsKey(879717735);
-        public string DataCode4
+        public bool IsDatamod4Modified => _modifications.ContainsKey(879717735);
+        public string Datacode4
         {
             get => _modifications.GetModification(879715175).ValueAsString;
             set => _modifications[879715175] = new LevelObjectDataModification{Id = 879715175, Type = ObjectDataType.String, Value = value, Level = 0};
         }
 
-        public bool IsDataCode4Modified => _modifications.ContainsKey(879715175);
+        public bool IsDatacode4Modified => _modifications.ContainsKey(879715175);
         public int StatsTransferWithUnitOwnershipRaw
         {
             get => _modifications.GetModification(1752066407).ValueAsInt;

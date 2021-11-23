@@ -15,8 +15,8 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataEffectDelayModified;
         private readonly Lazy<ObjectProperty<float>> _dataDamagePerSecondToBuildings;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamagePerSecondToBuildingsModified;
-        private readonly Lazy<ObjectProperty<float>> _dataUnitsSlowed;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataUnitsSlowedModified;
+        private readonly Lazy<ObjectProperty<float>> _dataData;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDataModified;
         private readonly Lazy<ObjectProperty<float>> _dataFinalArea;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataFinalAreaModified;
         public SuperEarthquake(): base(1902464595)
@@ -25,8 +25,8 @@ namespace War3Api.Object.Abilities
             _isDataEffectDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataEffectDelayModified));
             _dataDamagePerSecondToBuildings = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamagePerSecondToBuildings, SetDataDamagePerSecondToBuildings));
             _isDataDamagePerSecondToBuildingsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePerSecondToBuildingsModified));
-            _dataUnitsSlowed = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataUnitsSlowed, SetDataUnitsSlowed));
-            _isDataUnitsSlowedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUnitsSlowedModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataFinalArea = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataFinalArea, SetDataFinalArea));
             _isDataFinalAreaModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataFinalAreaModified));
         }
@@ -37,8 +37,8 @@ namespace War3Api.Object.Abilities
             _isDataEffectDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataEffectDelayModified));
             _dataDamagePerSecondToBuildings = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamagePerSecondToBuildings, SetDataDamagePerSecondToBuildings));
             _isDataDamagePerSecondToBuildingsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePerSecondToBuildingsModified));
-            _dataUnitsSlowed = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataUnitsSlowed, SetDataUnitsSlowed));
-            _isDataUnitsSlowedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUnitsSlowedModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataFinalArea = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataFinalArea, SetDataFinalArea));
             _isDataFinalAreaModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataFinalAreaModified));
         }
@@ -49,8 +49,8 @@ namespace War3Api.Object.Abilities
             _isDataEffectDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataEffectDelayModified));
             _dataDamagePerSecondToBuildings = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamagePerSecondToBuildings, SetDataDamagePerSecondToBuildings));
             _isDataDamagePerSecondToBuildingsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePerSecondToBuildingsModified));
-            _dataUnitsSlowed = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataUnitsSlowed, SetDataUnitsSlowed));
-            _isDataUnitsSlowedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUnitsSlowedModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataFinalArea = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataFinalArea, SetDataFinalArea));
             _isDataFinalAreaModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataFinalAreaModified));
         }
@@ -61,8 +61,8 @@ namespace War3Api.Object.Abilities
             _isDataEffectDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataEffectDelayModified));
             _dataDamagePerSecondToBuildings = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamagePerSecondToBuildings, SetDataDamagePerSecondToBuildings));
             _isDataDamagePerSecondToBuildingsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePerSecondToBuildingsModified));
-            _dataUnitsSlowed = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataUnitsSlowed, SetDataUnitsSlowed));
-            _isDataUnitsSlowedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUnitsSlowedModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataFinalArea = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataFinalArea, SetDataFinalArea));
             _isDataFinalAreaModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataFinalAreaModified));
         }
@@ -73,8 +73,8 @@ namespace War3Api.Object.Abilities
             _isDataEffectDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataEffectDelayModified));
             _dataDamagePerSecondToBuildings = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamagePerSecondToBuildings, SetDataDamagePerSecondToBuildings));
             _isDataDamagePerSecondToBuildingsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePerSecondToBuildingsModified));
-            _dataUnitsSlowed = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataUnitsSlowed, SetDataUnitsSlowed));
-            _isDataUnitsSlowedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUnitsSlowedModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataFinalArea = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataFinalArea, SetDataFinalArea));
             _isDataFinalAreaModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataFinalAreaModified));
         }
@@ -85,8 +85,8 @@ namespace War3Api.Object.Abilities
             _isDataEffectDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataEffectDelayModified));
             _dataDamagePerSecondToBuildings = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamagePerSecondToBuildings, SetDataDamagePerSecondToBuildings));
             _isDataDamagePerSecondToBuildingsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePerSecondToBuildingsModified));
-            _dataUnitsSlowed = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataUnitsSlowed, SetDataUnitsSlowed));
-            _isDataUnitsSlowedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUnitsSlowedModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataFinalArea = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataFinalArea, SetDataFinalArea));
             _isDataFinalAreaModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataFinalAreaModified));
         }
@@ -95,8 +95,8 @@ namespace War3Api.Object.Abilities
         public ReadOnlyObjectProperty<bool> IsDataEffectDelayModified => _isDataEffectDelayModified.Value;
         public ObjectProperty<float> DataDamagePerSecondToBuildings => _dataDamagePerSecondToBuildings.Value;
         public ReadOnlyObjectProperty<bool> IsDataDamagePerSecondToBuildingsModified => _isDataDamagePerSecondToBuildingsModified.Value;
-        public ObjectProperty<float> DataUnitsSlowed => _dataUnitsSlowed.Value;
-        public ReadOnlyObjectProperty<bool> IsDataUnitsSlowedModified => _isDataUnitsSlowedModified.Value;
+        public ObjectProperty<float> DataData => _dataData.Value;
+        public ReadOnlyObjectProperty<bool> IsDataDataModified => _isDataDataModified.Value;
         public ObjectProperty<float> DataFinalArea => _dataFinalArea.Value;
         public ReadOnlyObjectProperty<bool> IsDataFinalAreaModified => _isDataFinalAreaModified.Value;
         private float GetDataEffectDelay(int level)
@@ -129,17 +129,17 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(846292303, level);
         }
 
-        private float GetDataUnitsSlowed(int level)
+        private float GetDataData(int level)
         {
             return _modifications.GetModification(863069519, level).ValueAsFloat;
         }
 
-        private void SetDataUnitsSlowed(int level, float value)
+        private void SetDataData(int level, float value)
         {
             _modifications[863069519, level] = new LevelObjectDataModification{Id = 863069519, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 3};
         }
 
-        private bool GetIsDataUnitsSlowedModified(int level)
+        private bool GetIsDataDataModified(int level)
         {
             return _modifications.ContainsKey(863069519, level);
         }

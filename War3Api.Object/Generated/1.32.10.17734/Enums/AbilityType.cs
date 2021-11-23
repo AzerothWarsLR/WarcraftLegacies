@@ -1600,7 +1600,7 @@ namespace War3Api.Object.Enums
         /// <summary>Summon headhunter item ('AIsh').</summary>
         SummonHeadhunterItem = 1752385857,
         /// <summary>200 mana bonus ('AI2m').</summary>
-        ManaBonus = 1832012097,
+        _200ManaBonus = 1832012097,
         /// <summary>Aura regeneration item ('AIgx').</summary>
         AuraRegenerationItem = 2020034881,
         /// <summary>Holy light item ('AIhl').</summary>

@@ -11,104 +11,104 @@ namespace War3Api.Object.Abilities
 {
     public sealed class Frenzy : Ability
     {
-        private readonly Lazy<ObjectProperty<float>> _dataAttackSpeedIncrease;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAttackSpeedIncreaseModified;
-        private readonly Lazy<ObjectProperty<float>> _dataMovementSpeedIncrease;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMovementSpeedIncreaseModified;
+        private readonly Lazy<ObjectProperty<float>> _dataData_Blo1;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataData_Blo1Modified;
+        private readonly Lazy<ObjectProperty<float>> _dataData_Blo2;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataData_Blo2Modified;
         private readonly Lazy<ObjectProperty<float>> _dataScalingFactor;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataScalingFactorModified;
         public Frenzy(): base(2038064705)
         {
-            _dataAttackSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedIncrease, SetDataAttackSpeedIncrease));
-            _isDataAttackSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedIncreaseModified));
-            _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
-            _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
+            _dataData_Blo1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Blo1, SetDataData_Blo1));
+            _isDataData_Blo1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Blo1Modified));
+            _dataData_Blo2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Blo2, SetDataData_Blo2));
+            _isDataData_Blo2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Blo2Modified));
             _dataScalingFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataScalingFactor, SetDataScalingFactor));
             _isDataScalingFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataScalingFactorModified));
         }
 
         public Frenzy(int newId): base(2038064705, newId)
         {
-            _dataAttackSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedIncrease, SetDataAttackSpeedIncrease));
-            _isDataAttackSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedIncreaseModified));
-            _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
-            _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
+            _dataData_Blo1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Blo1, SetDataData_Blo1));
+            _isDataData_Blo1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Blo1Modified));
+            _dataData_Blo2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Blo2, SetDataData_Blo2));
+            _isDataData_Blo2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Blo2Modified));
             _dataScalingFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataScalingFactor, SetDataScalingFactor));
             _isDataScalingFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataScalingFactorModified));
         }
 
         public Frenzy(string newRawcode): base(2038064705, newRawcode)
         {
-            _dataAttackSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedIncrease, SetDataAttackSpeedIncrease));
-            _isDataAttackSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedIncreaseModified));
-            _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
-            _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
+            _dataData_Blo1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Blo1, SetDataData_Blo1));
+            _isDataData_Blo1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Blo1Modified));
+            _dataData_Blo2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Blo2, SetDataData_Blo2));
+            _isDataData_Blo2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Blo2Modified));
             _dataScalingFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataScalingFactor, SetDataScalingFactor));
             _isDataScalingFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataScalingFactorModified));
         }
 
         public Frenzy(ObjectDatabaseBase db): base(2038064705, db)
         {
-            _dataAttackSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedIncrease, SetDataAttackSpeedIncrease));
-            _isDataAttackSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedIncreaseModified));
-            _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
-            _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
+            _dataData_Blo1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Blo1, SetDataData_Blo1));
+            _isDataData_Blo1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Blo1Modified));
+            _dataData_Blo2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Blo2, SetDataData_Blo2));
+            _isDataData_Blo2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Blo2Modified));
             _dataScalingFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataScalingFactor, SetDataScalingFactor));
             _isDataScalingFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataScalingFactorModified));
         }
 
         public Frenzy(int newId, ObjectDatabaseBase db): base(2038064705, newId, db)
         {
-            _dataAttackSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedIncrease, SetDataAttackSpeedIncrease));
-            _isDataAttackSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedIncreaseModified));
-            _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
-            _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
+            _dataData_Blo1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Blo1, SetDataData_Blo1));
+            _isDataData_Blo1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Blo1Modified));
+            _dataData_Blo2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Blo2, SetDataData_Blo2));
+            _isDataData_Blo2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Blo2Modified));
             _dataScalingFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataScalingFactor, SetDataScalingFactor));
             _isDataScalingFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataScalingFactorModified));
         }
 
         public Frenzy(string newRawcode, ObjectDatabaseBase db): base(2038064705, newRawcode, db)
         {
-            _dataAttackSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedIncrease, SetDataAttackSpeedIncrease));
-            _isDataAttackSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedIncreaseModified));
-            _dataMovementSpeedIncrease = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedIncrease, SetDataMovementSpeedIncrease));
-            _isDataMovementSpeedIncreaseModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedIncreaseModified));
+            _dataData_Blo1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Blo1, SetDataData_Blo1));
+            _isDataData_Blo1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Blo1Modified));
+            _dataData_Blo2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Blo2, SetDataData_Blo2));
+            _isDataData_Blo2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Blo2Modified));
             _dataScalingFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataScalingFactor, SetDataScalingFactor));
             _isDataScalingFactorModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataScalingFactorModified));
         }
 
-        public ObjectProperty<float> DataAttackSpeedIncrease => _dataAttackSpeedIncrease.Value;
-        public ReadOnlyObjectProperty<bool> IsDataAttackSpeedIncreaseModified => _isDataAttackSpeedIncreaseModified.Value;
-        public ObjectProperty<float> DataMovementSpeedIncrease => _dataMovementSpeedIncrease.Value;
-        public ReadOnlyObjectProperty<bool> IsDataMovementSpeedIncreaseModified => _isDataMovementSpeedIncreaseModified.Value;
+        public ObjectProperty<float> DataData_Blo1 => _dataData_Blo1.Value;
+        public ReadOnlyObjectProperty<bool> IsDataData_Blo1Modified => _isDataData_Blo1Modified.Value;
+        public ObjectProperty<float> DataData_Blo2 => _dataData_Blo2.Value;
+        public ReadOnlyObjectProperty<bool> IsDataData_Blo2Modified => _isDataData_Blo2Modified.Value;
         public ObjectProperty<float> DataScalingFactor => _dataScalingFactor.Value;
         public ReadOnlyObjectProperty<bool> IsDataScalingFactorModified => _isDataScalingFactorModified.Value;
-        private float GetDataAttackSpeedIncrease(int level)
+        private float GetDataData_Blo1(int level)
         {
             return _modifications.GetModification(829385794, level).ValueAsFloat;
         }
 
-        private void SetDataAttackSpeedIncrease(int level, float value)
+        private void SetDataData_Blo1(int level, float value)
         {
             _modifications[829385794, level] = new LevelObjectDataModification{Id = 829385794, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 1};
         }
 
-        private bool GetIsDataAttackSpeedIncreaseModified(int level)
+        private bool GetIsDataData_Blo1Modified(int level)
         {
             return _modifications.ContainsKey(829385794, level);
         }
 
-        private float GetDataMovementSpeedIncrease(int level)
+        private float GetDataData_Blo2(int level)
         {
             return _modifications.GetModification(846163010, level).ValueAsFloat;
         }
 
-        private void SetDataMovementSpeedIncrease(int level, float value)
+        private void SetDataData_Blo2(int level, float value)
         {
             _modifications[846163010, level] = new LevelObjectDataModification{Id = 846163010, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 2};
         }
 
-        private bool GetIsDataMovementSpeedIncreaseModified(int level)
+        private bool GetIsDataData_Blo2Modified(int level)
         {
             return _modifications.ContainsKey(846163010, level);
         }

@@ -14,8 +14,8 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ObjectProperty<int>> _dataAttacksPreventedRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAttacksPreventedModified;
         private readonly Lazy<ObjectProperty<SilenceFlags>> _dataAttacksPrevented;
-        private readonly Lazy<ObjectProperty<float>> _dataChanceToMiss;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataChanceToMissModified;
+        private readonly Lazy<ObjectProperty<float>> _dataData;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDataModified;
         private readonly Lazy<ObjectProperty<float>> _dataMovementSpeedModifier;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMovementSpeedModifierModified;
         private readonly Lazy<ObjectProperty<float>> _dataAttackSpeedModifier;
@@ -25,8 +25,8 @@ namespace War3Api.Object.Abilities
             _dataAttacksPreventedRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAttacksPreventedRaw, SetDataAttacksPreventedRaw));
             _isDataAttacksPreventedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttacksPreventedModified));
             _dataAttacksPrevented = new Lazy<ObjectProperty<SilenceFlags>>(() => new ObjectProperty<SilenceFlags>(GetDataAttacksPrevented, SetDataAttacksPrevented));
-            _dataChanceToMiss = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToMiss, SetDataChanceToMiss));
-            _isDataChanceToMissModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToMissModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataMovementSpeedModifier = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedModifier, SetDataMovementSpeedModifier));
             _isDataMovementSpeedModifierModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedModifierModified));
             _dataAttackSpeedModifier = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedModifier, SetDataAttackSpeedModifier));
@@ -38,8 +38,8 @@ namespace War3Api.Object.Abilities
             _dataAttacksPreventedRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAttacksPreventedRaw, SetDataAttacksPreventedRaw));
             _isDataAttacksPreventedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttacksPreventedModified));
             _dataAttacksPrevented = new Lazy<ObjectProperty<SilenceFlags>>(() => new ObjectProperty<SilenceFlags>(GetDataAttacksPrevented, SetDataAttacksPrevented));
-            _dataChanceToMiss = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToMiss, SetDataChanceToMiss));
-            _isDataChanceToMissModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToMissModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataMovementSpeedModifier = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedModifier, SetDataMovementSpeedModifier));
             _isDataMovementSpeedModifierModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedModifierModified));
             _dataAttackSpeedModifier = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedModifier, SetDataAttackSpeedModifier));
@@ -51,8 +51,8 @@ namespace War3Api.Object.Abilities
             _dataAttacksPreventedRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAttacksPreventedRaw, SetDataAttacksPreventedRaw));
             _isDataAttacksPreventedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttacksPreventedModified));
             _dataAttacksPrevented = new Lazy<ObjectProperty<SilenceFlags>>(() => new ObjectProperty<SilenceFlags>(GetDataAttacksPrevented, SetDataAttacksPrevented));
-            _dataChanceToMiss = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToMiss, SetDataChanceToMiss));
-            _isDataChanceToMissModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToMissModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataMovementSpeedModifier = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedModifier, SetDataMovementSpeedModifier));
             _isDataMovementSpeedModifierModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedModifierModified));
             _dataAttackSpeedModifier = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedModifier, SetDataAttackSpeedModifier));
@@ -64,8 +64,8 @@ namespace War3Api.Object.Abilities
             _dataAttacksPreventedRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAttacksPreventedRaw, SetDataAttacksPreventedRaw));
             _isDataAttacksPreventedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttacksPreventedModified));
             _dataAttacksPrevented = new Lazy<ObjectProperty<SilenceFlags>>(() => new ObjectProperty<SilenceFlags>(GetDataAttacksPrevented, SetDataAttacksPrevented));
-            _dataChanceToMiss = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToMiss, SetDataChanceToMiss));
-            _isDataChanceToMissModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToMissModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataMovementSpeedModifier = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedModifier, SetDataMovementSpeedModifier));
             _isDataMovementSpeedModifierModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedModifierModified));
             _dataAttackSpeedModifier = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedModifier, SetDataAttackSpeedModifier));
@@ -77,8 +77,8 @@ namespace War3Api.Object.Abilities
             _dataAttacksPreventedRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAttacksPreventedRaw, SetDataAttacksPreventedRaw));
             _isDataAttacksPreventedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttacksPreventedModified));
             _dataAttacksPrevented = new Lazy<ObjectProperty<SilenceFlags>>(() => new ObjectProperty<SilenceFlags>(GetDataAttacksPrevented, SetDataAttacksPrevented));
-            _dataChanceToMiss = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToMiss, SetDataChanceToMiss));
-            _isDataChanceToMissModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToMissModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataMovementSpeedModifier = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedModifier, SetDataMovementSpeedModifier));
             _isDataMovementSpeedModifierModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedModifierModified));
             _dataAttackSpeedModifier = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedModifier, SetDataAttackSpeedModifier));
@@ -90,8 +90,8 @@ namespace War3Api.Object.Abilities
             _dataAttacksPreventedRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAttacksPreventedRaw, SetDataAttacksPreventedRaw));
             _isDataAttacksPreventedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttacksPreventedModified));
             _dataAttacksPrevented = new Lazy<ObjectProperty<SilenceFlags>>(() => new ObjectProperty<SilenceFlags>(GetDataAttacksPrevented, SetDataAttacksPrevented));
-            _dataChanceToMiss = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToMiss, SetDataChanceToMiss));
-            _isDataChanceToMissModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToMissModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
             _dataMovementSpeedModifier = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedModifier, SetDataMovementSpeedModifier));
             _isDataMovementSpeedModifierModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedModifierModified));
             _dataAttackSpeedModifier = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedModifier, SetDataAttackSpeedModifier));
@@ -101,8 +101,8 @@ namespace War3Api.Object.Abilities
         public ObjectProperty<int> DataAttacksPreventedRaw => _dataAttacksPreventedRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataAttacksPreventedModified => _isDataAttacksPreventedModified.Value;
         public ObjectProperty<SilenceFlags> DataAttacksPrevented => _dataAttacksPrevented.Value;
-        public ObjectProperty<float> DataChanceToMiss => _dataChanceToMiss.Value;
-        public ReadOnlyObjectProperty<bool> IsDataChanceToMissModified => _isDataChanceToMissModified.Value;
+        public ObjectProperty<float> DataData => _dataData.Value;
+        public ReadOnlyObjectProperty<bool> IsDataDataModified => _isDataDataModified.Value;
         public ObjectProperty<float> DataMovementSpeedModifier => _dataMovementSpeedModifier.Value;
         public ReadOnlyObjectProperty<bool> IsDataMovementSpeedModifierModified => _isDataMovementSpeedModifierModified.Value;
         public ObjectProperty<float> DataAttackSpeedModifier => _dataAttackSpeedModifier.Value;
@@ -132,17 +132,17 @@ namespace War3Api.Object.Abilities
             SetDataAttacksPreventedRaw(level, value.ToRaw(0, 15));
         }
 
-        private float GetDataChanceToMiss(int level)
+        private float GetDataData(int level)
         {
             return _modifications.GetModification(845771598, level).ValueAsFloat;
         }
 
-        private void SetDataChanceToMiss(int level, float value)
+        private void SetDataData(int level, float value)
         {
             _modifications[845771598, level] = new LevelObjectDataModification{Id = 845771598, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 2};
         }
 
-        private bool GetIsDataChanceToMissModified(int level)
+        private bool GetIsDataDataModified(int level)
         {
             return _modifications.ContainsKey(845771598, level);
         }

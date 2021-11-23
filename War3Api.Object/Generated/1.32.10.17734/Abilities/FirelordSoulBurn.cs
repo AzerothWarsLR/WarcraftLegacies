@@ -17,10 +17,10 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamagePeriodModified;
         private readonly Lazy<ObjectProperty<float>> _dataDamagePenalty;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamagePenaltyModified;
-        private readonly Lazy<ObjectProperty<float>> _dataMovementSpeedReduction;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMovementSpeedReductionModified;
-        private readonly Lazy<ObjectProperty<float>> _dataAttackSpeedReduction;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAttackSpeedReductionModified;
+        private readonly Lazy<ObjectProperty<float>> _dataData_Nso4;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataData_Nso4Modified;
+        private readonly Lazy<ObjectProperty<float>> _dataData_Nso5;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataData_Nso5Modified;
         public FirelordSoulBurn(): base(1869827649)
         {
             _dataDamageAmount = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageAmount, SetDataDamageAmount));
@@ -29,10 +29,10 @@ namespace War3Api.Object.Abilities
             _isDataDamagePeriodModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePeriodModified));
             _dataDamagePenalty = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamagePenalty, SetDataDamagePenalty));
             _isDataDamagePenaltyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePenaltyModified));
-            _dataMovementSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedReduction, SetDataMovementSpeedReduction));
-            _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
-            _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
-            _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
+            _dataData_Nso4 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nso4, SetDataData_Nso4));
+            _isDataData_Nso4Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nso4Modified));
+            _dataData_Nso5 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nso5, SetDataData_Nso5));
+            _isDataData_Nso5Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nso5Modified));
         }
 
         public FirelordSoulBurn(int newId): base(1869827649, newId)
@@ -43,10 +43,10 @@ namespace War3Api.Object.Abilities
             _isDataDamagePeriodModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePeriodModified));
             _dataDamagePenalty = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamagePenalty, SetDataDamagePenalty));
             _isDataDamagePenaltyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePenaltyModified));
-            _dataMovementSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedReduction, SetDataMovementSpeedReduction));
-            _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
-            _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
-            _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
+            _dataData_Nso4 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nso4, SetDataData_Nso4));
+            _isDataData_Nso4Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nso4Modified));
+            _dataData_Nso5 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nso5, SetDataData_Nso5));
+            _isDataData_Nso5Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nso5Modified));
         }
 
         public FirelordSoulBurn(string newRawcode): base(1869827649, newRawcode)
@@ -57,10 +57,10 @@ namespace War3Api.Object.Abilities
             _isDataDamagePeriodModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePeriodModified));
             _dataDamagePenalty = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamagePenalty, SetDataDamagePenalty));
             _isDataDamagePenaltyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePenaltyModified));
-            _dataMovementSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedReduction, SetDataMovementSpeedReduction));
-            _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
-            _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
-            _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
+            _dataData_Nso4 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nso4, SetDataData_Nso4));
+            _isDataData_Nso4Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nso4Modified));
+            _dataData_Nso5 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nso5, SetDataData_Nso5));
+            _isDataData_Nso5Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nso5Modified));
         }
 
         public FirelordSoulBurn(ObjectDatabaseBase db): base(1869827649, db)
@@ -71,10 +71,10 @@ namespace War3Api.Object.Abilities
             _isDataDamagePeriodModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePeriodModified));
             _dataDamagePenalty = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamagePenalty, SetDataDamagePenalty));
             _isDataDamagePenaltyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePenaltyModified));
-            _dataMovementSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedReduction, SetDataMovementSpeedReduction));
-            _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
-            _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
-            _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
+            _dataData_Nso4 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nso4, SetDataData_Nso4));
+            _isDataData_Nso4Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nso4Modified));
+            _dataData_Nso5 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nso5, SetDataData_Nso5));
+            _isDataData_Nso5Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nso5Modified));
         }
 
         public FirelordSoulBurn(int newId, ObjectDatabaseBase db): base(1869827649, newId, db)
@@ -85,10 +85,10 @@ namespace War3Api.Object.Abilities
             _isDataDamagePeriodModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePeriodModified));
             _dataDamagePenalty = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamagePenalty, SetDataDamagePenalty));
             _isDataDamagePenaltyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePenaltyModified));
-            _dataMovementSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedReduction, SetDataMovementSpeedReduction));
-            _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
-            _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
-            _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
+            _dataData_Nso4 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nso4, SetDataData_Nso4));
+            _isDataData_Nso4Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nso4Modified));
+            _dataData_Nso5 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nso5, SetDataData_Nso5));
+            _isDataData_Nso5Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nso5Modified));
         }
 
         public FirelordSoulBurn(string newRawcode, ObjectDatabaseBase db): base(1869827649, newRawcode, db)
@@ -99,10 +99,10 @@ namespace War3Api.Object.Abilities
             _isDataDamagePeriodModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePeriodModified));
             _dataDamagePenalty = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamagePenalty, SetDataDamagePenalty));
             _isDataDamagePenaltyModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePenaltyModified));
-            _dataMovementSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedReduction, SetDataMovementSpeedReduction));
-            _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
-            _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
-            _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
+            _dataData_Nso4 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nso4, SetDataData_Nso4));
+            _isDataData_Nso4Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nso4Modified));
+            _dataData_Nso5 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Nso5, SetDataData_Nso5));
+            _isDataData_Nso5Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Nso5Modified));
         }
 
         public ObjectProperty<float> DataDamageAmount => _dataDamageAmount.Value;
@@ -111,10 +111,10 @@ namespace War3Api.Object.Abilities
         public ReadOnlyObjectProperty<bool> IsDataDamagePeriodModified => _isDataDamagePeriodModified.Value;
         public ObjectProperty<float> DataDamagePenalty => _dataDamagePenalty.Value;
         public ReadOnlyObjectProperty<bool> IsDataDamagePenaltyModified => _isDataDamagePenaltyModified.Value;
-        public ObjectProperty<float> DataMovementSpeedReduction => _dataMovementSpeedReduction.Value;
-        public ReadOnlyObjectProperty<bool> IsDataMovementSpeedReductionModified => _isDataMovementSpeedReductionModified.Value;
-        public ObjectProperty<float> DataAttackSpeedReduction => _dataAttackSpeedReduction.Value;
-        public ReadOnlyObjectProperty<bool> IsDataAttackSpeedReductionModified => _isDataAttackSpeedReductionModified.Value;
+        public ObjectProperty<float> DataData_Nso4 => _dataData_Nso4.Value;
+        public ReadOnlyObjectProperty<bool> IsDataData_Nso4Modified => _isDataData_Nso4Modified.Value;
+        public ObjectProperty<float> DataData_Nso5 => _dataData_Nso5.Value;
+        public ReadOnlyObjectProperty<bool> IsDataData_Nso5Modified => _isDataData_Nso5Modified.Value;
         private float GetDataDamageAmount(int level)
         {
             return _modifications.GetModification(829387598, level).ValueAsFloat;
@@ -160,32 +160,32 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(862942030, level);
         }
 
-        private float GetDataMovementSpeedReduction(int level)
+        private float GetDataData_Nso4(int level)
         {
             return _modifications.GetModification(879719246, level).ValueAsFloat;
         }
 
-        private void SetDataMovementSpeedReduction(int level, float value)
+        private void SetDataData_Nso4(int level, float value)
         {
             _modifications[879719246, level] = new LevelObjectDataModification{Id = 879719246, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 4};
         }
 
-        private bool GetIsDataMovementSpeedReductionModified(int level)
+        private bool GetIsDataData_Nso4Modified(int level)
         {
             return _modifications.ContainsKey(879719246, level);
         }
 
-        private float GetDataAttackSpeedReduction(int level)
+        private float GetDataData_Nso5(int level)
         {
             return _modifications.GetModification(896496462, level).ValueAsFloat;
         }
 
-        private void SetDataAttackSpeedReduction(int level, float value)
+        private void SetDataData_Nso5(int level, float value)
         {
             _modifications[896496462, level] = new LevelObjectDataModification{Id = 896496462, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 5};
         }
 
-        private bool GetIsDataAttackSpeedReductionModified(int level)
+        private bool GetIsDataData_Nso5Modified(int level)
         {
             return _modifications.ContainsKey(896496462, level);
         }

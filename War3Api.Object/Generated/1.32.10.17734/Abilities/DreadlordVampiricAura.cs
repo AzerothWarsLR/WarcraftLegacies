@@ -11,57 +11,57 @@ namespace War3Api.Object.Abilities
 {
     public sealed class DreadlordVampiricAura : Ability
     {
-        private readonly Lazy<ObjectProperty<float>> _dataAttackDamageStolen;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAttackDamageStolenModified;
+        private readonly Lazy<ObjectProperty<float>> _dataData;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDataModified;
         public DreadlordVampiricAura(): base(1986090305)
         {
-            _dataAttackDamageStolen = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackDamageStolen, SetDataAttackDamageStolen));
-            _isDataAttackDamageStolenModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackDamageStolenModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
         }
 
         public DreadlordVampiricAura(int newId): base(1986090305, newId)
         {
-            _dataAttackDamageStolen = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackDamageStolen, SetDataAttackDamageStolen));
-            _isDataAttackDamageStolenModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackDamageStolenModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
         }
 
         public DreadlordVampiricAura(string newRawcode): base(1986090305, newRawcode)
         {
-            _dataAttackDamageStolen = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackDamageStolen, SetDataAttackDamageStolen));
-            _isDataAttackDamageStolenModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackDamageStolenModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
         }
 
         public DreadlordVampiricAura(ObjectDatabaseBase db): base(1986090305, db)
         {
-            _dataAttackDamageStolen = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackDamageStolen, SetDataAttackDamageStolen));
-            _isDataAttackDamageStolenModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackDamageStolenModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
         }
 
         public DreadlordVampiricAura(int newId, ObjectDatabaseBase db): base(1986090305, newId, db)
         {
-            _dataAttackDamageStolen = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackDamageStolen, SetDataAttackDamageStolen));
-            _isDataAttackDamageStolenModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackDamageStolenModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
         }
 
         public DreadlordVampiricAura(string newRawcode, ObjectDatabaseBase db): base(1986090305, newRawcode, db)
         {
-            _dataAttackDamageStolen = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackDamageStolen, SetDataAttackDamageStolen));
-            _isDataAttackDamageStolenModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackDamageStolenModified));
+            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
+            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
         }
 
-        public ObjectProperty<float> DataAttackDamageStolen => _dataAttackDamageStolen.Value;
-        public ReadOnlyObjectProperty<bool> IsDataAttackDamageStolenModified => _isDataAttackDamageStolenModified.Value;
-        private float GetDataAttackDamageStolen(int level)
+        public ObjectProperty<float> DataData => _dataData.Value;
+        public ReadOnlyObjectProperty<bool> IsDataDataModified => _isDataDataModified.Value;
+        private float GetDataData(int level)
         {
             return _modifications.GetModification(829841749, level).ValueAsFloat;
         }
 
-        private void SetDataAttackDamageStolen(int level, float value)
+        private void SetDataData(int level, float value)
         {
             _modifications[829841749, level] = new LevelObjectDataModification{Id = 829841749, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 1};
         }
 
-        private bool GetIsDataAttackDamageStolenModified(int level)
+        private bool GetIsDataDataModified(int level)
         {
             return _modifications.ContainsKey(829841749, level);
         }

@@ -15,12 +15,12 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamageBonusModified;
         private readonly Lazy<ObjectProperty<int>> _dataEnabledAttackIndex;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataEnabledAttackIndexModified;
-        private readonly Lazy<ObjectProperty<float>> _dataChanceToHitUnits;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataChanceToHitUnitsModified;
-        private readonly Lazy<ObjectProperty<float>> _dataChanceToHitHeros;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataChanceToHitHerosModified;
-        private readonly Lazy<ObjectProperty<float>> _dataChanceToHitSummons;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataChanceToHitSummonsModified;
+        private readonly Lazy<ObjectProperty<float>> _dataData_Iob2;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataData_Iob2Modified;
+        private readonly Lazy<ObjectProperty<float>> _dataData_Iob3;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataData_Iob3Modified;
+        private readonly Lazy<ObjectProperty<float>> _dataData_Iob4;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataData_Iob4Modified;
         private readonly Lazy<ObjectProperty<string>> _dataEffectAbilityRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataEffectAbilityModified;
         private readonly Lazy<ObjectProperty<Ability>> _dataEffectAbility;
@@ -30,12 +30,12 @@ namespace War3Api.Object.Abilities
             _isDataDamageBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageBonusModified));
             _dataEnabledAttackIndex = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataEnabledAttackIndex, SetDataEnabledAttackIndex));
             _isDataEnabledAttackIndexModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataEnabledAttackIndexModified));
-            _dataChanceToHitUnits = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToHitUnits, SetDataChanceToHitUnits));
-            _isDataChanceToHitUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToHitUnitsModified));
-            _dataChanceToHitHeros = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToHitHeros, SetDataChanceToHitHeros));
-            _isDataChanceToHitHerosModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToHitHerosModified));
-            _dataChanceToHitSummons = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToHitSummons, SetDataChanceToHitSummons));
-            _isDataChanceToHitSummonsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToHitSummonsModified));
+            _dataData_Iob2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Iob2, SetDataData_Iob2));
+            _isDataData_Iob2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Iob2Modified));
+            _dataData_Iob3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Iob3, SetDataData_Iob3));
+            _isDataData_Iob3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Iob3Modified));
+            _dataData_Iob4 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Iob4, SetDataData_Iob4));
+            _isDataData_Iob4Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Iob4Modified));
             _dataEffectAbilityRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataEffectAbilityRaw, SetDataEffectAbilityRaw));
             _isDataEffectAbilityModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataEffectAbilityModified));
             _dataEffectAbility = new Lazy<ObjectProperty<Ability>>(() => new ObjectProperty<Ability>(GetDataEffectAbility, SetDataEffectAbility));
@@ -47,12 +47,12 @@ namespace War3Api.Object.Abilities
             _isDataDamageBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageBonusModified));
             _dataEnabledAttackIndex = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataEnabledAttackIndex, SetDataEnabledAttackIndex));
             _isDataEnabledAttackIndexModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataEnabledAttackIndexModified));
-            _dataChanceToHitUnits = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToHitUnits, SetDataChanceToHitUnits));
-            _isDataChanceToHitUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToHitUnitsModified));
-            _dataChanceToHitHeros = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToHitHeros, SetDataChanceToHitHeros));
-            _isDataChanceToHitHerosModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToHitHerosModified));
-            _dataChanceToHitSummons = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToHitSummons, SetDataChanceToHitSummons));
-            _isDataChanceToHitSummonsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToHitSummonsModified));
+            _dataData_Iob2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Iob2, SetDataData_Iob2));
+            _isDataData_Iob2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Iob2Modified));
+            _dataData_Iob3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Iob3, SetDataData_Iob3));
+            _isDataData_Iob3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Iob3Modified));
+            _dataData_Iob4 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Iob4, SetDataData_Iob4));
+            _isDataData_Iob4Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Iob4Modified));
             _dataEffectAbilityRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataEffectAbilityRaw, SetDataEffectAbilityRaw));
             _isDataEffectAbilityModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataEffectAbilityModified));
             _dataEffectAbility = new Lazy<ObjectProperty<Ability>>(() => new ObjectProperty<Ability>(GetDataEffectAbility, SetDataEffectAbility));
@@ -64,12 +64,12 @@ namespace War3Api.Object.Abilities
             _isDataDamageBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageBonusModified));
             _dataEnabledAttackIndex = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataEnabledAttackIndex, SetDataEnabledAttackIndex));
             _isDataEnabledAttackIndexModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataEnabledAttackIndexModified));
-            _dataChanceToHitUnits = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToHitUnits, SetDataChanceToHitUnits));
-            _isDataChanceToHitUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToHitUnitsModified));
-            _dataChanceToHitHeros = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToHitHeros, SetDataChanceToHitHeros));
-            _isDataChanceToHitHerosModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToHitHerosModified));
-            _dataChanceToHitSummons = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToHitSummons, SetDataChanceToHitSummons));
-            _isDataChanceToHitSummonsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToHitSummonsModified));
+            _dataData_Iob2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Iob2, SetDataData_Iob2));
+            _isDataData_Iob2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Iob2Modified));
+            _dataData_Iob3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Iob3, SetDataData_Iob3));
+            _isDataData_Iob3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Iob3Modified));
+            _dataData_Iob4 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Iob4, SetDataData_Iob4));
+            _isDataData_Iob4Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Iob4Modified));
             _dataEffectAbilityRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataEffectAbilityRaw, SetDataEffectAbilityRaw));
             _isDataEffectAbilityModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataEffectAbilityModified));
             _dataEffectAbility = new Lazy<ObjectProperty<Ability>>(() => new ObjectProperty<Ability>(GetDataEffectAbility, SetDataEffectAbility));
@@ -81,12 +81,12 @@ namespace War3Api.Object.Abilities
             _isDataDamageBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageBonusModified));
             _dataEnabledAttackIndex = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataEnabledAttackIndex, SetDataEnabledAttackIndex));
             _isDataEnabledAttackIndexModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataEnabledAttackIndexModified));
-            _dataChanceToHitUnits = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToHitUnits, SetDataChanceToHitUnits));
-            _isDataChanceToHitUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToHitUnitsModified));
-            _dataChanceToHitHeros = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToHitHeros, SetDataChanceToHitHeros));
-            _isDataChanceToHitHerosModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToHitHerosModified));
-            _dataChanceToHitSummons = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToHitSummons, SetDataChanceToHitSummons));
-            _isDataChanceToHitSummonsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToHitSummonsModified));
+            _dataData_Iob2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Iob2, SetDataData_Iob2));
+            _isDataData_Iob2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Iob2Modified));
+            _dataData_Iob3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Iob3, SetDataData_Iob3));
+            _isDataData_Iob3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Iob3Modified));
+            _dataData_Iob4 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Iob4, SetDataData_Iob4));
+            _isDataData_Iob4Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Iob4Modified));
             _dataEffectAbilityRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataEffectAbilityRaw, SetDataEffectAbilityRaw));
             _isDataEffectAbilityModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataEffectAbilityModified));
             _dataEffectAbility = new Lazy<ObjectProperty<Ability>>(() => new ObjectProperty<Ability>(GetDataEffectAbility, SetDataEffectAbility));
@@ -98,12 +98,12 @@ namespace War3Api.Object.Abilities
             _isDataDamageBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageBonusModified));
             _dataEnabledAttackIndex = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataEnabledAttackIndex, SetDataEnabledAttackIndex));
             _isDataEnabledAttackIndexModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataEnabledAttackIndexModified));
-            _dataChanceToHitUnits = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToHitUnits, SetDataChanceToHitUnits));
-            _isDataChanceToHitUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToHitUnitsModified));
-            _dataChanceToHitHeros = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToHitHeros, SetDataChanceToHitHeros));
-            _isDataChanceToHitHerosModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToHitHerosModified));
-            _dataChanceToHitSummons = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToHitSummons, SetDataChanceToHitSummons));
-            _isDataChanceToHitSummonsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToHitSummonsModified));
+            _dataData_Iob2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Iob2, SetDataData_Iob2));
+            _isDataData_Iob2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Iob2Modified));
+            _dataData_Iob3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Iob3, SetDataData_Iob3));
+            _isDataData_Iob3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Iob3Modified));
+            _dataData_Iob4 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Iob4, SetDataData_Iob4));
+            _isDataData_Iob4Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Iob4Modified));
             _dataEffectAbilityRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataEffectAbilityRaw, SetDataEffectAbilityRaw));
             _isDataEffectAbilityModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataEffectAbilityModified));
             _dataEffectAbility = new Lazy<ObjectProperty<Ability>>(() => new ObjectProperty<Ability>(GetDataEffectAbility, SetDataEffectAbility));
@@ -115,12 +115,12 @@ namespace War3Api.Object.Abilities
             _isDataDamageBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageBonusModified));
             _dataEnabledAttackIndex = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataEnabledAttackIndex, SetDataEnabledAttackIndex));
             _isDataEnabledAttackIndexModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataEnabledAttackIndexModified));
-            _dataChanceToHitUnits = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToHitUnits, SetDataChanceToHitUnits));
-            _isDataChanceToHitUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToHitUnitsModified));
-            _dataChanceToHitHeros = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToHitHeros, SetDataChanceToHitHeros));
-            _isDataChanceToHitHerosModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToHitHerosModified));
-            _dataChanceToHitSummons = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToHitSummons, SetDataChanceToHitSummons));
-            _isDataChanceToHitSummonsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToHitSummonsModified));
+            _dataData_Iob2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Iob2, SetDataData_Iob2));
+            _isDataData_Iob2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Iob2Modified));
+            _dataData_Iob3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Iob3, SetDataData_Iob3));
+            _isDataData_Iob3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Iob3Modified));
+            _dataData_Iob4 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Iob4, SetDataData_Iob4));
+            _isDataData_Iob4Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Iob4Modified));
             _dataEffectAbilityRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataEffectAbilityRaw, SetDataEffectAbilityRaw));
             _isDataEffectAbilityModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataEffectAbilityModified));
             _dataEffectAbility = new Lazy<ObjectProperty<Ability>>(() => new ObjectProperty<Ability>(GetDataEffectAbility, SetDataEffectAbility));
@@ -130,12 +130,12 @@ namespace War3Api.Object.Abilities
         public ReadOnlyObjectProperty<bool> IsDataDamageBonusModified => _isDataDamageBonusModified.Value;
         public ObjectProperty<int> DataEnabledAttackIndex => _dataEnabledAttackIndex.Value;
         public ReadOnlyObjectProperty<bool> IsDataEnabledAttackIndexModified => _isDataEnabledAttackIndexModified.Value;
-        public ObjectProperty<float> DataChanceToHitUnits => _dataChanceToHitUnits.Value;
-        public ReadOnlyObjectProperty<bool> IsDataChanceToHitUnitsModified => _isDataChanceToHitUnitsModified.Value;
-        public ObjectProperty<float> DataChanceToHitHeros => _dataChanceToHitHeros.Value;
-        public ReadOnlyObjectProperty<bool> IsDataChanceToHitHerosModified => _isDataChanceToHitHerosModified.Value;
-        public ObjectProperty<float> DataChanceToHitSummons => _dataChanceToHitSummons.Value;
-        public ReadOnlyObjectProperty<bool> IsDataChanceToHitSummonsModified => _isDataChanceToHitSummonsModified.Value;
+        public ObjectProperty<float> DataData_Iob2 => _dataData_Iob2.Value;
+        public ReadOnlyObjectProperty<bool> IsDataData_Iob2Modified => _isDataData_Iob2Modified.Value;
+        public ObjectProperty<float> DataData_Iob3 => _dataData_Iob3.Value;
+        public ReadOnlyObjectProperty<bool> IsDataData_Iob3Modified => _isDataData_Iob3Modified.Value;
+        public ObjectProperty<float> DataData_Iob4 => _dataData_Iob4.Value;
+        public ReadOnlyObjectProperty<bool> IsDataData_Iob4Modified => _isDataData_Iob4Modified.Value;
         public ObjectProperty<string> DataEffectAbilityRaw => _dataEffectAbilityRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataEffectAbilityModified => _isDataEffectAbilityModified.Value;
         public ObjectProperty<Ability> DataEffectAbility => _dataEffectAbility.Value;
@@ -169,47 +169,47 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(895643465, level);
         }
 
-        private float GetDataChanceToHitUnits(int level)
+        private float GetDataData_Iob2(int level)
         {
             return _modifications.GetModification(845311817, level).ValueAsFloat;
         }
 
-        private void SetDataChanceToHitUnits(int level, float value)
+        private void SetDataData_Iob2(int level, float value)
         {
             _modifications[845311817, level] = new LevelObjectDataModification{Id = 845311817, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 2};
         }
 
-        private bool GetIsDataChanceToHitUnitsModified(int level)
+        private bool GetIsDataData_Iob2Modified(int level)
         {
             return _modifications.ContainsKey(845311817, level);
         }
 
-        private float GetDataChanceToHitHeros(int level)
+        private float GetDataData_Iob3(int level)
         {
             return _modifications.GetModification(862089033, level).ValueAsFloat;
         }
 
-        private void SetDataChanceToHitHeros(int level, float value)
+        private void SetDataData_Iob3(int level, float value)
         {
             _modifications[862089033, level] = new LevelObjectDataModification{Id = 862089033, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 3};
         }
 
-        private bool GetIsDataChanceToHitHerosModified(int level)
+        private bool GetIsDataData_Iob3Modified(int level)
         {
             return _modifications.ContainsKey(862089033, level);
         }
 
-        private float GetDataChanceToHitSummons(int level)
+        private float GetDataData_Iob4(int level)
         {
             return _modifications.GetModification(878866249, level).ValueAsFloat;
         }
 
-        private void SetDataChanceToHitSummons(int level, float value)
+        private void SetDataData_Iob4(int level, float value)
         {
             _modifications[878866249, level] = new LevelObjectDataModification{Id = 878866249, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 4};
         }
 
-        private bool GetIsDataChanceToHitSummonsModified(int level)
+        private bool GetIsDataData_Iob4Modified(int level)
         {
             return _modifications.ContainsKey(878866249, level);
         }

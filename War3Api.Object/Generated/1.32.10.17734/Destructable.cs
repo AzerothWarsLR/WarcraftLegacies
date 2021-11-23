@@ -298,13 +298,13 @@ namespace War3Api.Object
         }
 
         public bool IsArtOcclusionHeightModified => _modifications.ContainsKey(1751347042);
-        public float ArtFlyOverHeight
+        public float ArtflyOverHeight
         {
             get => _modifications.GetModification(1751934562).ValueAsFloat;
             set => _modifications[1751934562] = new SimpleObjectDataModification{Id = 1751934562, Type = ObjectDataType.Unreal, Value = value};
         }
 
-        public bool IsArtFlyOverHeightModified => _modifications.ContainsKey(1751934562);
+        public bool IsArtflyOverHeightModified => _modifications.ContainsKey(1751934562);
         public float ArtFixedRotation
         {
             get => _modifications.GetModification(1920493154).ValueAsFloat;
