@@ -15,16 +15,16 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamageModified;
         private readonly Lazy<ObjectProperty<float>> _dataTerrainDeformationAmplitude;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataTerrainDeformationAmplitudeModified;
-        private readonly Lazy<ObjectProperty<int>> _dataTerrainDeformationDurationMs;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataTerrainDeformationDurationMsModified;
+        private readonly Lazy<ObjectProperty<int>> _dataTerrainDeformationDurationms;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataTerrainDeformationDurationmsModified;
         public WarStompSeaGiant(): base(1735554881)
         {
             _dataDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamage, SetDataDamage));
             _isDataDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageModified));
             _dataTerrainDeformationAmplitude = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataTerrainDeformationAmplitude, SetDataTerrainDeformationAmplitude));
             _isDataTerrainDeformationAmplitudeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTerrainDeformationAmplitudeModified));
-            _dataTerrainDeformationDurationMs = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTerrainDeformationDurationMs, SetDataTerrainDeformationDurationMs));
-            _isDataTerrainDeformationDurationMsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTerrainDeformationDurationMsModified));
+            _dataTerrainDeformationDurationms = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTerrainDeformationDurationms, SetDataTerrainDeformationDurationms));
+            _isDataTerrainDeformationDurationmsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTerrainDeformationDurationmsModified));
         }
 
         public WarStompSeaGiant(int newId): base(1735554881, newId)
@@ -33,8 +33,8 @@ namespace War3Api.Object.Abilities
             _isDataDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageModified));
             _dataTerrainDeformationAmplitude = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataTerrainDeformationAmplitude, SetDataTerrainDeformationAmplitude));
             _isDataTerrainDeformationAmplitudeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTerrainDeformationAmplitudeModified));
-            _dataTerrainDeformationDurationMs = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTerrainDeformationDurationMs, SetDataTerrainDeformationDurationMs));
-            _isDataTerrainDeformationDurationMsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTerrainDeformationDurationMsModified));
+            _dataTerrainDeformationDurationms = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTerrainDeformationDurationms, SetDataTerrainDeformationDurationms));
+            _isDataTerrainDeformationDurationmsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTerrainDeformationDurationmsModified));
         }
 
         public WarStompSeaGiant(string newRawcode): base(1735554881, newRawcode)
@@ -43,8 +43,8 @@ namespace War3Api.Object.Abilities
             _isDataDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageModified));
             _dataTerrainDeformationAmplitude = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataTerrainDeformationAmplitude, SetDataTerrainDeformationAmplitude));
             _isDataTerrainDeformationAmplitudeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTerrainDeformationAmplitudeModified));
-            _dataTerrainDeformationDurationMs = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTerrainDeformationDurationMs, SetDataTerrainDeformationDurationMs));
-            _isDataTerrainDeformationDurationMsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTerrainDeformationDurationMsModified));
+            _dataTerrainDeformationDurationms = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTerrainDeformationDurationms, SetDataTerrainDeformationDurationms));
+            _isDataTerrainDeformationDurationmsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTerrainDeformationDurationmsModified));
         }
 
         public WarStompSeaGiant(ObjectDatabaseBase db): base(1735554881, db)
@@ -53,8 +53,8 @@ namespace War3Api.Object.Abilities
             _isDataDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageModified));
             _dataTerrainDeformationAmplitude = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataTerrainDeformationAmplitude, SetDataTerrainDeformationAmplitude));
             _isDataTerrainDeformationAmplitudeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTerrainDeformationAmplitudeModified));
-            _dataTerrainDeformationDurationMs = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTerrainDeformationDurationMs, SetDataTerrainDeformationDurationMs));
-            _isDataTerrainDeformationDurationMsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTerrainDeformationDurationMsModified));
+            _dataTerrainDeformationDurationms = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTerrainDeformationDurationms, SetDataTerrainDeformationDurationms));
+            _isDataTerrainDeformationDurationmsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTerrainDeformationDurationmsModified));
         }
 
         public WarStompSeaGiant(int newId, ObjectDatabaseBase db): base(1735554881, newId, db)
@@ -63,8 +63,8 @@ namespace War3Api.Object.Abilities
             _isDataDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageModified));
             _dataTerrainDeformationAmplitude = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataTerrainDeformationAmplitude, SetDataTerrainDeformationAmplitude));
             _isDataTerrainDeformationAmplitudeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTerrainDeformationAmplitudeModified));
-            _dataTerrainDeformationDurationMs = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTerrainDeformationDurationMs, SetDataTerrainDeformationDurationMs));
-            _isDataTerrainDeformationDurationMsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTerrainDeformationDurationMsModified));
+            _dataTerrainDeformationDurationms = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTerrainDeformationDurationms, SetDataTerrainDeformationDurationms));
+            _isDataTerrainDeformationDurationmsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTerrainDeformationDurationmsModified));
         }
 
         public WarStompSeaGiant(string newRawcode, ObjectDatabaseBase db): base(1735554881, newRawcode, db)
@@ -73,16 +73,16 @@ namespace War3Api.Object.Abilities
             _isDataDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageModified));
             _dataTerrainDeformationAmplitude = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataTerrainDeformationAmplitude, SetDataTerrainDeformationAmplitude));
             _isDataTerrainDeformationAmplitudeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTerrainDeformationAmplitudeModified));
-            _dataTerrainDeformationDurationMs = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTerrainDeformationDurationMs, SetDataTerrainDeformationDurationMs));
-            _isDataTerrainDeformationDurationMsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTerrainDeformationDurationMsModified));
+            _dataTerrainDeformationDurationms = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataTerrainDeformationDurationms, SetDataTerrainDeformationDurationms));
+            _isDataTerrainDeformationDurationmsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataTerrainDeformationDurationmsModified));
         }
 
         public ObjectProperty<float> DataDamage => _dataDamage.Value;
         public ReadOnlyObjectProperty<bool> IsDataDamageModified => _isDataDamageModified.Value;
         public ObjectProperty<float> DataTerrainDeformationAmplitude => _dataTerrainDeformationAmplitude.Value;
         public ReadOnlyObjectProperty<bool> IsDataTerrainDeformationAmplitudeModified => _isDataTerrainDeformationAmplitudeModified.Value;
-        public ObjectProperty<int> DataTerrainDeformationDurationMs => _dataTerrainDeformationDurationMs.Value;
-        public ReadOnlyObjectProperty<bool> IsDataTerrainDeformationDurationMsModified => _isDataTerrainDeformationDurationMsModified.Value;
+        public ObjectProperty<int> DataTerrainDeformationDurationms => _dataTerrainDeformationDurationms.Value;
+        public ReadOnlyObjectProperty<bool> IsDataTerrainDeformationDurationmsModified => _isDataTerrainDeformationDurationmsModified.Value;
         private float GetDataDamage(int level)
         {
             return _modifications.GetModification(829649495, level).ValueAsFloat;
@@ -113,17 +113,17 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(846426711, level);
         }
 
-        private int GetDataTerrainDeformationDurationMs(int level)
+        private int GetDataTerrainDeformationDurationms(int level)
         {
             return _modifications.GetModification(863203927, level).ValueAsInt;
         }
 
-        private void SetDataTerrainDeformationDurationMs(int level, int value)
+        private void SetDataTerrainDeformationDurationms(int level, int value)
         {
             _modifications[863203927, level] = new LevelObjectDataModification{Id = 863203927, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 3};
         }
 
-        private bool GetIsDataTerrainDeformationDurationMsModified(int level)
+        private bool GetIsDataTerrainDeformationDurationmsModified(int level)
         {
             return _modifications.ContainsKey(863203927, level);
         }

@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities.Human
       ability.StatsPriorityForSpellSteal = SpellStealPriority;
       for (var i = 0; i < Levels; i++)
       {
-        ability.DataDamageIncrease[i + 1] = DamageIncrease[i];
+        //ability.DataDamageIncrease[i + 1] = DamageIncrease[i];
         ability.StatsCastRange[i + 1] = DefenseIncrease[i];
         ability.DataLifeRegenRate[i + 1] = HitpointRegenRate[i];
         ability.StatsCastRange[i + 1] = CastRange[i];

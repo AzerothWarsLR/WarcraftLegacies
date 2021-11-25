@@ -14,7 +14,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadAshenvaleTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.AshenvaleTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_ASHENVALE_TREE_WALL";
+            destructable.TextName = "Ashenvale Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "A";
@@ -29,7 +29,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -52,7 +52,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadBarrensTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.BarrensTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_BARRENS_TREE_WALL";
+            destructable.TextName = "Barrens Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "B";
@@ -67,7 +67,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -90,7 +90,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadFelwoodTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.FelwoodTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_FELWOOD_TREE_WALL";
+            destructable.TextName = "Felwood Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "C";
@@ -105,7 +105,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -128,7 +128,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadFallTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.FallTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_FALL_TREE_WALL";
+            destructable.TextName = "Fall Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F,Q";
@@ -143,7 +143,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -166,7 +166,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadCage(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.Cage, db);
-            destructable.TextName = "WESTRING_DEST_CAGE";
+            destructable.TextName = "Cage";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
@@ -181,7 +181,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -204,7 +204,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadBarricade(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.Barricade, db);
-            destructable.TextName = "WESTRING_DOOD_LOBA";
+            destructable.TextName = "Barricade";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
@@ -219,7 +219,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -242,7 +242,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadCrates(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.Crates, db);
-            destructable.TextName = "WESTRING_DOOD_LOCS";
+            destructable.TextName = "Crates";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
@@ -257,7 +257,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 20f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -280,7 +280,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadBarrel_LTbr(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.Barrel_LTbr, db);
-            destructable.TextName = "WESTRING_DEST_BARREL";
+            destructable.TextName = "Barrel";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
@@ -295,7 +295,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 20f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -318,7 +318,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadBarrel_LTbx(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.Barrel_LTbx, db);
-            destructable.TextName = "WESTRING_DEST_BARREL";
+            destructable.TextName = "Barrel";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
@@ -333,7 +333,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 20f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -356,7 +356,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadBarrel_LTbs(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.Barrel_LTbs, db);
-            destructable.TextName = "WESTRING_DEST_BARREL";
+            destructable.TextName = "Barrel";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
@@ -371,7 +371,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 20f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -394,7 +394,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadBarrelOfExplosives(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.BarrelOfExplosives, db);
-            destructable.TextName = "WESTRING_DEST_BARREL_EXPLOSIVES";
+            destructable.TextName = "Barrel of Explosives";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
@@ -409,7 +409,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 20f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -432,8 +432,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadGate_LTg1(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.Gate_LTg1, db);
-            destructable.TextName = "WESTRING_DEST_GATE_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Gate";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -447,7 +447,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -470,8 +470,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadGate_LTg2(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.Gate_LTg2, db);
-            destructable.TextName = "WESTRING_DEST_GATE_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Gate";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -485,7 +485,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -508,8 +508,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadGate_LTg3(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.Gate_LTg3, db);
-            destructable.TextName = "WESTRING_DEST_GATE_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Gate";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -523,7 +523,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -546,8 +546,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadGate_LTg4(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.Gate_LTg4, db);
-            destructable.TextName = "WESTRING_DEST_GATE_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Gate";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -561,7 +561,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -584,8 +584,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadElvenGate_LTe1(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ElvenGate_LTe1, db);
-            destructable.TextName = "WESTRING_DEST_ELVEN_GATE_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Elven Gate";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -599,7 +599,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -622,8 +622,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadElvenGate_LTe2(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ElvenGate_LTe2, db);
-            destructable.TextName = "WESTRING_DEST_ELVEN_GATE_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Elven Gate";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -637,7 +637,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -660,8 +660,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadElvenGate_LTe3(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ElvenGate_LTe3, db);
-            destructable.TextName = "WESTRING_DEST_ELVEN_GATE_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Elven Gate";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -675,7 +675,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -698,8 +698,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadElvenGate_LTe4(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ElvenGate_LTe4, db);
-            destructable.TextName = "WESTRING_DEST_ELVEN_GATE_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Elven Gate";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -713,7 +713,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -736,8 +736,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadDemonicGate_ATg1(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.DemonicGate_ATg1, db);
-            destructable.TextName = "WESTRING_DEST_DEMON_GATE_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Demonic Gate";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -751,7 +751,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -774,8 +774,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadDemonicGate_ATg2(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.DemonicGate_ATg2, db);
-            destructable.TextName = "WESTRING_DEST_DEMON_GATE_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Demonic Gate";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -789,7 +789,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -812,8 +812,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadDemonicGate_ATg3(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.DemonicGate_ATg3, db);
-            destructable.TextName = "WESTRING_DEST_DEMON_GATE_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Demonic Gate";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -827,7 +827,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -850,8 +850,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadDemonicGate_ATg4(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.DemonicGate_ATg4, db);
-            destructable.TextName = "WESTRING_DEST_DEMON_GATE_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Demonic Gate";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -865,7 +865,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -888,8 +888,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadIronGate_DTg5(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IronGate_DTg5, db);
-            destructable.TextName = "WESTRING_DEST_IRON_GATE_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Iron Gate";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -903,7 +903,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -926,8 +926,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadIronGate_DTg6(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IronGate_DTg6, db);
-            destructable.TextName = "WESTRING_DEST_IRON_GATE_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Iron Gate";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -941,7 +941,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -964,8 +964,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadIronGate_DTg7(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IronGate_DTg7, db);
-            destructable.TextName = "WESTRING_DEST_IRON_GATE_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Iron Gate";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -979,7 +979,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -1002,8 +1002,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadIronGate_DTg8(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IronGate_DTg8, db);
-            destructable.TextName = "WESTRING_DEST_IRON_GATE_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Iron Gate";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -1017,7 +1017,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -1040,8 +1040,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadDungeonGate_DTg1(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.DungeonGate_DTg1, db);
-            destructable.TextName = "WESTRING_DEST_DTG1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Dungeon Gate";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G,Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -1055,7 +1055,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 100f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -1078,8 +1078,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadDungeonGate_DTg2(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.DungeonGate_DTg2, db);
-            destructable.TextName = "WESTRING_DEST_DTG2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Dungeon Gate";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G,Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -1093,7 +1093,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 100f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -1116,8 +1116,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadDungeonGate_DTg3(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.DungeonGate_DTg3, db);
-            destructable.TextName = "WESTRING_DEST_DTG3";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Dungeon Gate";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G,Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -1131,7 +1131,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 100f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -1154,8 +1154,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadDungeonGate_DTg4(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.DungeonGate_DTg4, db);
-            destructable.TextName = "WESTRING_DEST_DTG4";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Dungeon Gate";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G,Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -1169,7 +1169,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 100f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -1192,7 +1192,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadSummerTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.SummerTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_SUMMER_TREE_WALL";
+            destructable.TextName = "Summer Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L";
@@ -1207,7 +1207,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -1230,7 +1230,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadNorthrendTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.NorthrendTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_NORTHREND_TREE_WALL";
+            destructable.TextName = "Northrend Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "N";
@@ -1245,7 +1245,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -1268,7 +1268,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadWinterTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WinterTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_WINTER_TREE_WALL";
+            destructable.TextName = "Winter Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "W";
@@ -1283,7 +1283,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -1306,7 +1306,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadSnowyTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.SnowyTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_SNOWY_TREE_WALL";
+            destructable.TextName = "Snowy Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "W,N";
@@ -1321,7 +1321,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -1344,7 +1344,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadCityscapeSummerTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.CityscapeSummerTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_CITYSCAPE_SUMMER_TREE_WALL";
+            destructable.TextName = "Cityscape Summer Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Y,X";
@@ -1359,7 +1359,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -1382,7 +1382,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadCityscapeWinterTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.CityscapeWinterTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_CITYSCAPE_WINTER_TREE_WALL";
+            destructable.TextName = "Cityscape Winter Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Y,X";
@@ -1397,7 +1397,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -1420,7 +1420,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadCityscapeSnowyTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.CityscapeSnowyTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_CITYSCAPE_SNOWY_TREE_WALL";
+            destructable.TextName = "Cityscape Snowy Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Y,X";
@@ -1435,7 +1435,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -1458,7 +1458,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadCityscapeFallTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.CityscapeFallTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_CITYSCAPE_FALL_TREE_WALL";
+            destructable.TextName = "Cityscape Fall Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Y,X";
@@ -1473,7 +1473,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -1496,7 +1496,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadVillageTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.VillageTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_VILLAGE_TREE_WALL";
+            destructable.TextName = "Village Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "V";
@@ -1511,7 +1511,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -1534,8 +1534,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneWall_LTw0(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneWall_LTw0, db);
-            destructable.TextName = "WESTRING_DEST_STONE_WALL_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Stone Wall";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -1549,7 +1549,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "wall";
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -1572,8 +1572,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneWall_LTw1(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneWall_LTw1, db);
-            destructable.TextName = "WESTRING_DEST_STONE_WALL_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Stone Wall";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -1587,7 +1587,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "wall";
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -1610,8 +1610,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneWall_LTw2(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneWall_LTw2, db);
-            destructable.TextName = "WESTRING_DEST_STONE_WALL_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Stone Wall";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -1625,7 +1625,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "wall";
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -1648,8 +1648,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneWall_LTw3(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneWall_LTw3, db);
-            destructable.TextName = "WESTRING_DEST_STONE_WALL_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Stone Wall";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -1663,7 +1663,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "wall";
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -1686,8 +1686,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortNaturalBridge_YT00(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortNaturalBridge_YT00, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_NATURAL_CLIFF_0_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Short Natural Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -1701,7 +1701,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -1724,8 +1724,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortNaturalBridge_YT01(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortNaturalBridge_YT01, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_NATURAL_CLIFF_0_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Short Natural Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -1739,7 +1739,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -1762,8 +1762,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortNaturalBridge_YT02(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortNaturalBridge_YT02, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_NATURAL_CLIFF_0_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Short Natural Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -1777,7 +1777,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -1800,8 +1800,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortNaturalBridge_YT03(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortNaturalBridge_YT03, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_NATURAL_CLIFF_0_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Short Natural Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -1815,7 +1815,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -1838,8 +1838,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongNaturalBridge_YT04(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongNaturalBridge_YT04, db);
-            destructable.TextName = "WESTRING_DEST_LONG_NATURAL_CLIFF_0_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Long Natural Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -1853,7 +1853,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -1876,8 +1876,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongNaturalBridge_YT05(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongNaturalBridge_YT05, db);
-            destructable.TextName = "WESTRING_DEST_LONG_NATURAL_CLIFF_0_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Long Natural Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -1891,7 +1891,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -1914,8 +1914,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongNaturalBridge_YT06(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongNaturalBridge_YT06, db);
-            destructable.TextName = "WESTRING_DEST_LONG_NATURAL_CLIFF_0_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Long Natural Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -1929,7 +1929,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -1952,8 +1952,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongNaturalBridge_YT07(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongNaturalBridge_YT07, db);
-            destructable.TextName = "WESTRING_DEST_LONG_NATURAL_CLIFF_0_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Long Natural Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -1967,7 +1967,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -1990,8 +1990,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideNaturalBridge_YT08(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideNaturalBridge_YT08, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_NATURAL_CLIFF_0_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Wide Natural Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2005,7 +2005,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2028,8 +2028,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideNaturalBridge_YT09(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideNaturalBridge_YT09, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_NATURAL_CLIFF_0_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Wide Natural Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2043,7 +2043,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2066,8 +2066,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideNaturalBridge_YT10(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideNaturalBridge_YT10, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_NATURAL_CLIFF_0_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Wide Natural Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2081,7 +2081,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2104,8 +2104,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideNaturalBridge_YT11(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideNaturalBridge_YT11, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_NATURAL_CLIFF_0_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Wide Natural Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2119,7 +2119,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2142,8 +2142,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortStoneBridge_YT12(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortStoneBridge_YT12, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_STONE_CLIFF_1_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Short Stone Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2157,7 +2157,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2180,8 +2180,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortStoneBridge_YT13(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortStoneBridge_YT13, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_STONE_CLIFF_1_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Short Stone Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2195,7 +2195,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2218,8 +2218,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortStoneBridge_YT14(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortStoneBridge_YT14, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_STONE_CLIFF_1_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Short Stone Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2233,7 +2233,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2256,8 +2256,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortStoneBridge_YT15(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortStoneBridge_YT15, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_STONE_CLIFF_1_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Short Stone Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2271,7 +2271,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2294,8 +2294,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongStoneBridge_YT16(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongStoneBridge_YT16, db);
-            destructable.TextName = "WESTRING_DEST_LONG_STONE_CLIFF_1_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Long Stone Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2309,7 +2309,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2332,8 +2332,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongStoneBridge_YT17(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongStoneBridge_YT17, db);
-            destructable.TextName = "WESTRING_DEST_LONG_STONE_CLIFF_1_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Long Stone Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2347,7 +2347,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2370,8 +2370,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongStoneBridge_YT18(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongStoneBridge_YT18, db);
-            destructable.TextName = "WESTRING_DEST_LONG_STONE_CLIFF_1_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Long Stone Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2385,7 +2385,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2408,8 +2408,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongStoneBridge_YT19(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongStoneBridge_YT19, db);
-            destructable.TextName = "WESTRING_DEST_LONG_STONE_CLIFF_1_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Long Stone Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2423,7 +2423,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2446,8 +2446,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideStoneBridge_YT20(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideStoneBridge_YT20, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_STONE_CLIFF_1_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Wide Stone Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2461,7 +2461,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2484,8 +2484,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideStoneBridge_YT21(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideStoneBridge_YT21, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_STONE_CLIFF_1_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Wide Stone Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2499,7 +2499,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2522,8 +2522,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideStoneBridge_YT22(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideStoneBridge_YT22, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_STONE_CLIFF_1_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Wide Stone Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2537,7 +2537,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2560,8 +2560,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideStoneBridge_YT23(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideStoneBridge_YT23, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_STONE_CLIFF_1_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Wide Stone Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2575,7 +2575,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2598,8 +2598,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortWoodenBridge_LT00(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortWoodenBridge_LT00, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_BRIDGE_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Short Wooden Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2613,7 +2613,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2636,8 +2636,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortWoodenBridge_LT01(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortWoodenBridge_LT01, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_BRIDGE_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Short Wooden Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2651,7 +2651,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2674,8 +2674,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortWoodenBridge_LT02(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortWoodenBridge_LT02, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_BRIDGE_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Short Wooden Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2689,7 +2689,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2712,8 +2712,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortWoodenBridge_LT03(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortWoodenBridge_LT03, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_BRIDGE_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Short Wooden Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2727,7 +2727,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2750,8 +2750,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongWoodenBridge_LT04(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongWoodenBridge_LT04, db);
-            destructable.TextName = "WESTRING_DEST_LONG_BRIDGE_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Long Wooden Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2765,7 +2765,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2788,8 +2788,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongWoodenBridge_LT05(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongWoodenBridge_LT05, db);
-            destructable.TextName = "WESTRING_DEST_LONG_BRIDGE_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Long Wooden Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2803,7 +2803,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2826,8 +2826,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongWoodenBridge_LT06(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongWoodenBridge_LT06, db);
-            destructable.TextName = "WESTRING_DEST_LONG_BRIDGE_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Long Wooden Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2841,7 +2841,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2864,8 +2864,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongWoodenBridge_LT07(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongWoodenBridge_LT07, db);
-            destructable.TextName = "WESTRING_DEST_LONG_BRIDGE_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Long Wooden Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2879,7 +2879,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2902,8 +2902,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideWoodenBridge_LT08(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideWoodenBridge_LT08, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_BRIDGE_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Wide Wooden Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2917,7 +2917,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2940,8 +2940,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideWoodenBridge_LT09(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideWoodenBridge_LT09, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_BRIDGE_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Wide Wooden Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2955,7 +2955,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -2978,8 +2978,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideWoodenBridge_LT10(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideWoodenBridge_LT10, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_BRIDGE_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Wide Wooden Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -2993,7 +2993,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -3016,8 +3016,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideWoodenBridge_LT11(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideWoodenBridge_LT11, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_BRIDGE_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Wide Wooden Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -3031,7 +3031,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -3054,7 +3054,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadBuilding(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.Building, db);
-            destructable.TextName = "WESTRING_DEST_BUILDING";
+            destructable.TextName = "Building";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "X";
@@ -3069,7 +3069,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -3092,7 +3092,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadDalaranVioletCitadel(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.DalaranVioletCitadel, db);
-            destructable.TextName = "WESTRING_DEST_LARGE_BUILDING";
+            destructable.TextName = "Dalaran Violet Citadel";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "X";
@@ -3107,7 +3107,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -3130,8 +3130,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneRamp_LTr1(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneRamp_LTr1, db);
-            destructable.TextName = "WESTRING_DEST_STONE_RAMP_BOTTOM_LEFT";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_BOTTOMLEFT";
+            destructable.TextName = "Stone Ramp";
+            destructable.TextEditorSuffix = "(Bottom Left)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -3145,7 +3145,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 30f;
+            destructable.ArtFlyOverHeight = 30f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -3168,8 +3168,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneRamp_LTr2(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneRamp_LTr2, db);
-            destructable.TextName = "WESTRING_DEST_STONE_RAMP_TOP_LEFT";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_TOPLEFT";
+            destructable.TextName = "Stone Ramp";
+            destructable.TextEditorSuffix = "(Top Left)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -3183,7 +3183,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 30f;
+            destructable.ArtFlyOverHeight = 30f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -3206,8 +3206,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneRamp_LTr3(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneRamp_LTr3, db);
-            destructable.TextName = "WESTRING_DEST_STONE_RAMP_TOP_RIGHT";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_TOPRIGHT";
+            destructable.TextName = "Stone Ramp";
+            destructable.TextEditorSuffix = "(Top Right)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -3221,7 +3221,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 30f;
+            destructable.ArtFlyOverHeight = 30f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -3244,8 +3244,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneRamp_LTr4(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneRamp_LTr4, db);
-            destructable.TextName = "WESTRING_DEST_STONE_RAMP_BOTTOM_RIGHT";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_BOTTOMRIGHT";
+            destructable.TextName = "Stone Ramp";
+            destructable.TextEditorSuffix = "(Bottom Right)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -3259,7 +3259,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 30f;
+            destructable.ArtFlyOverHeight = 30f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -3282,8 +3282,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneRamp_LTr5(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneRamp_LTr5, db);
-            destructable.TextName = "WESTRING_DEST_STONE_RAMP_BOTTOM_LEFT_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_BOTTOMLEFT2";
+            destructable.TextName = "Stone Ramp";
+            destructable.TextEditorSuffix = "(Bottom Left 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -3297,7 +3297,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 30f;
+            destructable.ArtFlyOverHeight = 30f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -3320,8 +3320,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneRamp_LTr6(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneRamp_LTr6, db);
-            destructable.TextName = "WESTRING_DEST_STONE_RAMP_TOP_LEFT_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_TOPLEFT2";
+            destructable.TextName = "Stone Ramp";
+            destructable.TextEditorSuffix = "(Top Left 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -3335,7 +3335,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 30f;
+            destructable.ArtFlyOverHeight = 30f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -3358,8 +3358,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneRamp_LTr7(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneRamp_LTr7, db);
-            destructable.TextName = "WESTRING_DEST_STONE_RAMP_TOP_RIGHT_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_TOPRIGHT2";
+            destructable.TextName = "Stone Ramp";
+            destructable.TextEditorSuffix = "(Top Right 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -3373,7 +3373,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 30f;
+            destructable.ArtFlyOverHeight = 30f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -3396,8 +3396,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneRamp_LTr8(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneRamp_LTr8, db);
-            destructable.TextName = "WESTRING_DEST_STONE_RAMP_BOTTOM_RIGHT_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_BOTTOMRIGHT2";
+            destructable.TextName = "Stone Ramp";
+            destructable.TextEditorSuffix = "(Bottom Right 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -3411,7 +3411,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 30f;
+            destructable.ArtFlyOverHeight = 30f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -3434,7 +3434,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadShip(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.Ship, db);
-            destructable.TextName = "WESTRING_DOOD_NOSP";
+            destructable.TextName = "Ship";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "N";
@@ -3449,7 +3449,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 100f;
+            destructable.ArtFlyOverHeight = 100f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -3472,7 +3472,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadEggSack(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.EggSack, db);
-            destructable.TextName = "WESTRING_DEST_EGGSACK";
+            destructable.TextName = "Egg Sack";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G";
@@ -3487,7 +3487,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 15f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -3510,7 +3510,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadDungeonTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.DungeonTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_DUNGEON_TREE_WALL";
+            destructable.TextName = "Dungeon Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D";
@@ -3525,7 +3525,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -3548,7 +3548,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadBridgeDestroyed_YSdb(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.BridgeDestroyed_YSdb, db);
-            destructable.TextName = "WESTRING_DOOD_YSDB";
+            destructable.TextName = "Bridge Destroyed";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "Y";
@@ -3563,7 +3563,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -3586,7 +3586,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadBridgeDestroyed_YSdc(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.BridgeDestroyed_YSdc, db);
-            destructable.TextName = "WESTRING_DOOD_YSDC";
+            destructable.TextName = "Bridge Destroyed";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "Y";
@@ -3601,7 +3601,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -3624,7 +3624,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadKingSThrone(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.KingSThrone, db);
-            destructable.TextName = "WESTRING_DOOD_XOkt";
+            destructable.TextName = "King's Throne";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "X,Y";
@@ -3639,7 +3639,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -3662,7 +3662,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadKingSThroneDiagonal1_XOk1(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.KingSThroneDiagonal1_XOk1, db);
-            destructable.TextName = "WESTRING_DOOD_XOk1";
+            destructable.TextName = "King's Throne (Diagonal 1)";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "X";
@@ -3677,7 +3677,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -3700,7 +3700,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadKingSThroneDiagonal1_XOk2(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.KingSThroneDiagonal1_XOk2, db);
-            destructable.TextName = "WESTRING_DOOD_XOk2";
+            destructable.TextName = "King's Throne (Diagonal 1)";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "X";
@@ -3715,7 +3715,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -3738,8 +3738,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadCliffCaveGate_DTc1(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.CliffCaveGate_DTc1, db);
-            destructable.TextName = "WESTRING_DEST_DTC1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_ONE";
+            destructable.TextName = "Cliff Cave Gate";
+            destructable.TextEditorSuffix = "(1)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -3753,7 +3753,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -3776,8 +3776,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadCliffCaveGate_DTc2(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.CliffCaveGate_DTc2, db);
-            destructable.TextName = "WESTRING_DEST_DTC2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_TWO";
+            destructable.TextName = "Cliff Cave Gate";
+            destructable.TextEditorSuffix = "(2)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -3791,7 +3791,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -3814,7 +3814,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadDungeonSpikes(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.DungeonSpikes, db);
-            destructable.TextName = "WESTRING_DEST_SPIKES";
+            destructable.TextName = "Dungeon Spikes";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G";
@@ -3829,7 +3829,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -3852,7 +3852,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadRockChunks_DTrc(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RockChunks_DTrc, db);
-            destructable.TextName = "WESTRING_DEST_ROCK_CHUNKS";
+            destructable.TextName = "Rock Chunks";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G";
@@ -3867,7 +3867,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 100f;
+            destructable.ArtFlyOverHeight = 100f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -3890,8 +3890,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadForceBridge_DTs0(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ForceBridge_DTs0, db);
-            destructable.TextName = "WESTRING_DEST_FORCE_BRIDGE_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Force Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -3905,7 +3905,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -3928,8 +3928,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadForceBridge_DTs1(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ForceBridge_DTs1, db);
-            destructable.TextName = "WESTRING_DEST_FORCE_BRIDGE_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Force Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -3943,7 +3943,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -3966,8 +3966,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadForceBridge_DTs2(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ForceBridge_DTs2, db);
-            destructable.TextName = "WESTRING_DEST_FORCE_BRIDGE_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Force Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -3981,7 +3981,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4004,8 +4004,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadForceBridge_DTs3(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ForceBridge_DTs3, db);
-            destructable.TextName = "WESTRING_DEST_FORCE_BRIDGE_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Force Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4019,7 +4019,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4042,7 +4042,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadForceWall_Dofw(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ForceWall_Dofw, db);
-            destructable.TextName = "WESTRING_DEST_DOFW";
+            destructable.TextName = "ForceWall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G";
@@ -4057,7 +4057,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -4080,7 +4080,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadForceWall_Dofv(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ForceWall_Dofv, db);
-            destructable.TextName = "WESTRING_DEST_DOFV";
+            destructable.TextName = "ForceWall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G";
@@ -4095,7 +4095,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -4118,8 +4118,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortNaturalBridge_YT24(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortNaturalBridge_YT24, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_NATURAL_CLIFF_1_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Short Natural Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4133,7 +4133,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4156,8 +4156,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortNaturalBridge_YT25(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortNaturalBridge_YT25, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_NATURAL_CLIFF_1_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Short Natural Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4171,7 +4171,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4194,8 +4194,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortNaturalBridge_YT26(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortNaturalBridge_YT26, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_NATURAL_CLIFF_1_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Short Natural Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4209,7 +4209,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4232,8 +4232,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortNaturalBridge_YT27(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortNaturalBridge_YT27, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_NATURAL_CLIFF_1_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Short Natural Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4247,7 +4247,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4270,8 +4270,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongNaturalBridge_YT28(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongNaturalBridge_YT28, db);
-            destructable.TextName = "WESTRING_DEST_LONG_NATURAL_CLIFF_1_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Long Natural Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4285,7 +4285,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4308,8 +4308,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongNaturalBridge_YT29(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongNaturalBridge_YT29, db);
-            destructable.TextName = "WESTRING_DEST_LONG_NATURAL_CLIFF_1_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Long Natural Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4323,7 +4323,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4346,8 +4346,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongNaturalBridge_YT30(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongNaturalBridge_YT30, db);
-            destructable.TextName = "WESTRING_DEST_LONG_NATURAL_CLIFF_1_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Long Natural Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4361,7 +4361,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4384,8 +4384,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongNaturalBridge_YT31(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongNaturalBridge_YT31, db);
-            destructable.TextName = "WESTRING_DEST_LONG_NATURAL_CLIFF_1_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Long Natural Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4399,7 +4399,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4422,8 +4422,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideNaturalBridge_YT32(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideNaturalBridge_YT32, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_NATURAL_CLIFF_1_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Wide Natural Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4437,7 +4437,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4460,8 +4460,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideNaturalBridge_YT33(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideNaturalBridge_YT33, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_NATURAL_CLIFF_1_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Wide Natural Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4475,7 +4475,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4498,8 +4498,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideNaturalBridge_YT34(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideNaturalBridge_YT34, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_NATURAL_CLIFF_1_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Wide Natural Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4513,7 +4513,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4536,8 +4536,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideNaturalBridge_YT35(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideNaturalBridge_YT35, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_NATURAL_CLIFF_1_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Wide Natural Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4551,7 +4551,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4574,8 +4574,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortStoneBridge_YT36(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortStoneBridge_YT36, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_STONE_CLIFF_0_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Short Stone Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4589,7 +4589,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4612,8 +4612,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortStoneBridge_YT37(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortStoneBridge_YT37, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_STONE_CLIFF_0_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Short Stone Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4627,7 +4627,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4650,8 +4650,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortStoneBridge_YT38(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortStoneBridge_YT38, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_STONE_CLIFF_0_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Short Stone Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4665,7 +4665,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4688,8 +4688,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortStoneBridge_YT39(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortStoneBridge_YT39, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_STONE_CLIFF_0_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Short Stone Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4703,7 +4703,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4726,8 +4726,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongStoneBridge_YT40(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongStoneBridge_YT40, db);
-            destructable.TextName = "WESTRING_DEST_LONG_STONE_CLIFF_0_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Long Stone Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4741,7 +4741,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4764,8 +4764,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongStoneBridge_YT41(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongStoneBridge_YT41, db);
-            destructable.TextName = "WESTRING_DEST_LONG_STONE_CLIFF_0_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Long Stone Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4779,7 +4779,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4802,8 +4802,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongStoneBridge_YT42(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongStoneBridge_YT42, db);
-            destructable.TextName = "WESTRING_DEST_LONG_STONE_CLIFF_0_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Long Stone Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4817,7 +4817,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4840,8 +4840,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongStoneBridge_YT43(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongStoneBridge_YT43, db);
-            destructable.TextName = "WESTRING_DEST_LONG_STONE_CLIFF_0_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Long Stone Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4855,7 +4855,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4878,8 +4878,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideStoneBridge_YT44(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideStoneBridge_YT44, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_STONE_CLIFF_0_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Wide Stone Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4893,7 +4893,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4916,8 +4916,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideStoneBridge_YT45(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideStoneBridge_YT45, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_STONE_CLIFF_0_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Wide Stone Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4931,7 +4931,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4954,8 +4954,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideStoneBridge_YT46(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideStoneBridge_YT46, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_STONE_CLIFF_0_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Wide Stone Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -4969,7 +4969,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -4992,8 +4992,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideStoneBridge_YT47(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideStoneBridge_YT47, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_STONE_CLIFF_0_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Wide Stone Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -5007,7 +5007,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -5030,7 +5030,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadRampNagaSmallLeft(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RampNagaSmallLeft, db);
-            destructable.TextName = "WESTRING_DOOD_ZCR0";
+            destructable.TextName = "Ramp Naga Small (Left)";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "Z";
@@ -5045,7 +5045,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -5068,7 +5068,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadRampNagaSmallTop(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RampNagaSmallTop, db);
-            destructable.TextName = "WESTRING_DOOD_ZCR1";
+            destructable.TextName = "Ramp Naga Small (Top)";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "Z";
@@ -5083,7 +5083,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -5106,7 +5106,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadRampNagaSmallRight(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RampNagaSmallRight, db);
-            destructable.TextName = "WESTRING_DOOD_ZCR2";
+            destructable.TextName = "Ramp Naga Small (Right)";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "Z";
@@ -5121,7 +5121,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -5144,7 +5144,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadRampNagaSmallBottom(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RampNagaSmallBottom, db);
-            destructable.TextName = "WESTRING_DOOD_ZCR3";
+            destructable.TextName = "Ramp Naga Small (Bottom)";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "Z";
@@ -5159,7 +5159,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -5182,7 +5182,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadRuinsTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RuinsTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_RUINS_TREE_WALL";
+            destructable.TextName = "Ruins Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
@@ -5197,7 +5197,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -5220,8 +5220,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneWall_ZTw0(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneWall_ZTw0, db);
-            destructable.TextName = "WESTRING_DEST_STONE_WALL_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Stone Wall";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -5235,7 +5235,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "wall";
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -5258,8 +5258,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneWall_ZTw1(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneWall_ZTw1, db);
-            destructable.TextName = "WESTRING_DEST_STONE_WALL_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Stone Wall";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -5273,7 +5273,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "wall";
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -5296,8 +5296,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneWall_ZTw2(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneWall_ZTw2, db);
-            destructable.TextName = "WESTRING_DEST_STONE_WALL_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Stone Wall";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -5311,7 +5311,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "wall";
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -5334,8 +5334,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneWall_ZTw3(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneWall_ZTw3, db);
-            destructable.TextName = "WESTRING_DEST_STONE_WALL_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Stone Wall";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -5349,7 +5349,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "wall";
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -5372,8 +5372,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadRuinedGate_ZTg1(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RuinedGate_ZTg1, db);
-            destructable.TextName = "WESTRING_DEST_RUINS_GATE_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Ruined Gate";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -5387,7 +5387,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -5410,8 +5410,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadRuinedGate_ZTg2(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RuinedGate_ZTg2, db);
-            destructable.TextName = "WESTRING_DEST_RUINS_GATE_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Ruined Gate";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -5425,7 +5425,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -5448,8 +5448,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadRuinedGate_ZTg3(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RuinedGate_ZTg3, db);
-            destructable.TextName = "WESTRING_DEST_RUINS_GATE_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Ruined Gate";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -5463,7 +5463,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -5486,8 +5486,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadRuinedGate_ZTg4(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RuinedGate_ZTg4, db);
-            destructable.TextName = "WESTRING_DEST_RUINS_GATE_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Ruined Gate";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -5501,7 +5501,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -5524,7 +5524,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadIcecrownTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IcecrownTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_ICECROWN_TREE_WALL";
+            destructable.TextName = "Icecrown Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
@@ -5539,7 +5539,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -5562,8 +5562,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadRollingStoneDoor_ZTd1(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RollingStoneDoor_ZTd1, db);
-            destructable.TextName = "WESTRING_DEST_RUINS_ROUND_DOOR_HORIZONTAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL1";
+            destructable.TextName = "Rolling Stone Door";
+            destructable.TextEditorSuffix = "(Horizontal 1)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -5577,7 +5577,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -5600,8 +5600,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadRollingStoneDoor_ZTd2(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RollingStoneDoor_ZTd2, db);
-            destructable.TextName = "WESTRING_DEST_RUINS_ROUND_DOOR_VERTICAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL1";
+            destructable.TextName = "Rolling Stone Door";
+            destructable.TextEditorSuffix = "(Vertical 1)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -5615,7 +5615,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -5638,8 +5638,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadRollingStoneDoor_ZTd3(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RollingStoneDoor_ZTd3, db);
-            destructable.TextName = "WESTRING_DEST_RUINS_ROUND_DOOR_HORIZONTAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL2";
+            destructable.TextName = "Rolling Stone Door";
+            destructable.TextEditorSuffix = "(Horizontal 2)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -5653,7 +5653,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -5676,8 +5676,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadRollingStoneDoor_ZTd4(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RollingStoneDoor_ZTd4, db);
-            destructable.TextName = "WESTRING_DEST_RUINS_ROUND_DOOR_VERTICAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL2";
+            destructable.TextName = "Rolling Stone Door";
+            destructable.TextEditorSuffix = "(Vertical 2)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -5691,7 +5691,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -5714,8 +5714,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadRollingStoneDoor_ZTd5(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RollingStoneDoor_ZTd5, db);
-            destructable.TextName = "WESTRING_DEST_RUINS_ROUND_DOOR_HORIZONTAL_3";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL3";
+            destructable.TextName = "Rolling Stone Door";
+            destructable.TextEditorSuffix = "(Horizontal 3)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -5729,7 +5729,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -5752,8 +5752,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadRollingStoneDoor_ZTd6(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RollingStoneDoor_ZTd6, db);
-            destructable.TextName = "WESTRING_DEST_RUINS_ROUND_DOOR_VERTICAL_3";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL3";
+            destructable.TextName = "Rolling Stone Door";
+            destructable.TextEditorSuffix = "(Vertical 3)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -5767,7 +5767,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -5790,8 +5790,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadRollingStoneDoor_ZTd7(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RollingStoneDoor_ZTd7, db);
-            destructable.TextName = "WESTRING_DEST_RUINS_ROUND_DOOR_HORIZONTAL_4";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL4";
+            destructable.TextName = "Rolling Stone Door";
+            destructable.TextEditorSuffix = "(Horizontal 4)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -5805,7 +5805,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -5828,8 +5828,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadRollingStoneDoor_ZTd8(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RollingStoneDoor_ZTd8, db);
-            destructable.TextName = "WESTRING_DEST_RUINS_ROUND_DOOR_VERTICAL_4";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL4";
+            destructable.TextName = "Rolling Stone Door";
+            destructable.TextEditorSuffix = "(Vertical 4)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -5843,7 +5843,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -5866,8 +5866,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadIceBridge_ITib(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IceBridge_ITib, db);
-            destructable.TextName = "WESTRING_DEST_ICE_BRIDGE_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Ice Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "I,N";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -5881,7 +5881,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -5904,8 +5904,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadIceBridge_ITi2(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IceBridge_ITi2, db);
-            destructable.TextName = "WESTRING_DEST_ICE_BRIDGE_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Ice Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "I,N";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -5919,7 +5919,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -5942,8 +5942,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadIceBridge_ITi3(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IceBridge_ITi3, db);
-            destructable.TextName = "WESTRING_DEST_ICE_BRIDGE_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Ice Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "I,N";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -5957,7 +5957,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -5980,8 +5980,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadIceBridge_ITi4(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IceBridge_ITi4, db);
-            destructable.TextName = "WESTRING_DEST_ICE_BRIDGE_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Ice Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "I,N";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -5995,7 +5995,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6018,8 +6018,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadIcyGate_ITg1(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IcyGate_ITg1, db);
-            destructable.TextName = "WESTRING_DEST_ICECROWN_GATE_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Icy Gate";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -6033,7 +6033,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6056,8 +6056,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadIcyGate_ITg2(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IcyGate_ITg2, db);
-            destructable.TextName = "WESTRING_DEST_ICECROWN_GATE_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Icy Gate";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -6071,7 +6071,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6094,8 +6094,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadIcyGate_ITg3(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IcyGate_ITg3, db);
-            destructable.TextName = "WESTRING_DEST_ICECROWN_GATE_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Icy Gate";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -6109,7 +6109,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6132,8 +6132,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadIcyGate_ITg4(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IcyGate_ITg4, db);
-            destructable.TextName = "WESTRING_DEST_ICECROWN_GATE_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Icy Gate";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -6147,7 +6147,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6170,8 +6170,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneWall_ITw0(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneWall_ITw0, db);
-            destructable.TextName = "WESTRING_DEST_STONE_WALL_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Stone Wall";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -6185,7 +6185,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "wall";
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -6208,8 +6208,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneWall_ITw1(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneWall_ITw1, db);
-            destructable.TextName = "WESTRING_DEST_STONE_WALL_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Stone Wall";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -6223,7 +6223,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "wall";
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -6246,8 +6246,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneWall_ITw2(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneWall_ITw2, db);
-            destructable.TextName = "WESTRING_DEST_STONE_WALL_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Stone Wall";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -6261,7 +6261,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "wall";
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -6284,8 +6284,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneWall_ITw3(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneWall_ITw3, db);
-            destructable.TextName = "WESTRING_DEST_STONE_WALL_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Stone Wall";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -6299,7 +6299,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "wall";
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -6322,8 +6322,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadTreeBridge_LTt0(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.TreeBridge_LTt0, db);
-            destructable.TextName = "WESTRING_DEST_TREE_BRIDGE_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Tree Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "L";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -6337,7 +6337,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6360,8 +6360,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadTreeBridge_LTt1(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.TreeBridge_LTt1, db);
-            destructable.TextName = "WESTRING_DEST_TREE_BRIDGE_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Tree Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "L";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -6375,7 +6375,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6398,8 +6398,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadTreeBridge_LTt2(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.TreeBridge_LTt2, db);
-            destructable.TextName = "WESTRING_DEST_TREE_BRIDGE_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Tree Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "F,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -6413,7 +6413,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6436,8 +6436,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadTreeBridge_LTt3(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.TreeBridge_LTt3, db);
-            destructable.TextName = "WESTRING_DEST_TREE_BRIDGE_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Tree Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "F,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -6451,7 +6451,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6474,8 +6474,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadTreeBridge_LTt4(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.TreeBridge_LTt4, db);
-            destructable.TextName = "WESTRING_DEST_TREE_BRIDGE_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Tree Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "W,N,I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -6489,7 +6489,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6512,8 +6512,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadTreeBridge_ATt0(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.TreeBridge_ATt0, db);
-            destructable.TextName = "WESTRING_DEST_TREE_BRIDGE_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Tree Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "W,N,I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -6527,7 +6527,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6550,8 +6550,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadTreeBridge_ATt1(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.TreeBridge_ATt1, db);
-            destructable.TextName = "WESTRING_DEST_TREE_BRIDGE_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Tree Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -6565,7 +6565,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6588,8 +6588,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadTreeBridge_LTt5(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.TreeBridge_LTt5, db);
-            destructable.TextName = "WESTRING_DEST_TREE_BRIDGE_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Tree Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -6603,7 +6603,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6626,7 +6626,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadRuinsNagaCircle(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RuinsNagaCircle, db);
-            destructable.TextName = "WESTRING_DOOD_ZONC";
+            destructable.TextName = "Ruins Naga Circle";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
@@ -6641,7 +6641,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6664,7 +6664,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadIceFloe_ITf1(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IceFloe_ITf1, db);
-            destructable.TextName = "WESTRING_DOOD_NWF1";
+            destructable.TextName = "Ice Floe";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I,N";
@@ -6679,7 +6679,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6702,7 +6702,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadIceFloe_ITf2(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IceFloe_ITf2, db);
-            destructable.TextName = "WESTRING_DOOD_NWF1";
+            destructable.TextName = "Ice Floe";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I,N";
@@ -6717,7 +6717,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6740,7 +6740,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadIceFloe_ITf3(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IceFloe_ITf3, db);
-            destructable.TextName = "WESTRING_DOOD_NWF1";
+            destructable.TextName = "Ice Floe";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I,N";
@@ -6755,7 +6755,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6778,7 +6778,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadIceFloe_ITf4(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IceFloe_ITf4, db);
-            destructable.TextName = "WESTRING_DOOD_NWF1";
+            destructable.TextName = "Ice Floe";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I,N";
@@ -6793,7 +6793,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6816,8 +6816,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadIceRockGate_ITx1(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IceRockGate_ITx1, db);
-            destructable.TextName = "WESTRING_DEST_ICE_GATE_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Ice Rock Gate";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I,N";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -6831,7 +6831,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6854,8 +6854,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadIceRockGate_ITx2(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IceRockGate_ITx2, db);
-            destructable.TextName = "WESTRING_DEST_ICE_GATE_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Ice Rock Gate";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I,N";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -6869,7 +6869,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6892,8 +6892,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadIceRockGate_ITx3(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IceRockGate_ITx3, db);
-            destructable.TextName = "WESTRING_DEST_ICE_GATE_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Ice Rock Gate";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I,N";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -6907,7 +6907,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6930,8 +6930,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadIceRockGate_ITx4(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IceRockGate_ITx4, db);
-            destructable.TextName = "WESTRING_DEST_ICE_GATE_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Ice Rock Gate";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I,N";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -6945,7 +6945,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -6968,7 +6968,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadAshenvaleCanopyTree(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.AshenvaleCanopyTree, db);
-            destructable.TextName = "WESTRING_DOOD_APTC";
+            destructable.TextName = "Ashenvale Canopy Tree";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "A";
@@ -6983,7 +6983,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
-            destructable.ArtflyOverHeight = 435f;
+            destructable.ArtFlyOverHeight = 435f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -7006,7 +7006,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadOutlandTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.OutlandTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_OUTLAND_TREE_WALL";
+            destructable.TextName = "Outland Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "O";
@@ -7021,7 +7021,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -7044,7 +7044,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadBlackCitadelTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.BlackCitadelTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_BLACK_CITADEL_TREE_WALL";
+            destructable.TextName = "Black Citadel Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "K";
@@ -7059,7 +7059,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -7082,7 +7082,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadIgloo(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.Igloo, db);
-            destructable.TextName = "WESTRING_DOOD_ISIG";
+            destructable.TextName = "Igloo";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I,N";
@@ -7097,7 +7097,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 100f;
+            destructable.ArtFlyOverHeight = 100f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -7120,8 +7120,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadElevator_DTrf(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.Elevator_DTrf, db);
-            destructable.TextName = "WESTRING_DOOD_ZZEZ";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_ONE";
+            destructable.TextName = "Elevator";
+            destructable.TextEditorSuffix = "(1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -7135,7 +7135,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -7158,8 +7158,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadElevator_DTrx(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.Elevator_DTrx, db);
-            destructable.TextName = "WESTRING_DOOD_ZZEZ";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_TWO";
+            destructable.TextName = "Elevator";
+            destructable.TextEditorSuffix = "(2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -7173,7 +7173,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -7196,7 +7196,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadMagicalPen_XTmp(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.MagicalPen_XTmp, db);
-            destructable.TextName = "WESTRING_DEST_MAGICAL_PEN";
+            destructable.TextName = "Magical Pen";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "X";
@@ -7211,7 +7211,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -7234,8 +7234,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadMagicalPen_XTm5(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.MagicalPen_XTm5, db);
-            destructable.TextName = "WESTRING_DEST_ANGLED_MAGICAL_PEN";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_ANGLED";
+            destructable.TextName = "Magical Pen";
+            destructable.TextEditorSuffix = "(Angled)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -7249,7 +7249,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -7272,7 +7272,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadMagicalPenWall_XTmx(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.MagicalPenWall_XTmx, db);
-            destructable.TextName = "WESTRING_DEST_MAGICAL_PEN_WALL";
+            destructable.TextName = "Magical Pen Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "X";
@@ -7287,7 +7287,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -7310,8 +7310,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadMagicalPenWall_XTx5(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.MagicalPenWall_XTx5, db);
-            destructable.TextName = "WESTRING_DEST_ANGLED_MAGICAL_PEN_WALL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_ANGLED";
+            destructable.TextName = "Magical Pen Wall";
+            destructable.TextEditorSuffix = "(Angled)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -7325,7 +7325,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -7348,7 +7348,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadIceyRock(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IceyRock, db);
-            destructable.TextName = "WESTRING_DEST_ICEY_ROCK";
+            destructable.TextName = "Icey Rock";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
@@ -7363,7 +7363,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 100f;
+            destructable.ArtFlyOverHeight = 100f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -7386,7 +7386,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadElevatorWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ElevatorWall, db);
-            destructable.TextName = "WESTRING_DEST_ELEVATOR_PATHBLOCKER";
+            destructable.TextName = "Elevator Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
@@ -7401,7 +7401,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 9999f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -7424,7 +7424,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadWharf(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.Wharf, db);
-            destructable.TextName = "WESTRING_DEST_WHARF";
+            destructable.TextName = "Wharf";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A";
@@ -7439,7 +7439,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -7462,7 +7462,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadPathingBlockerBoth(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.PathingBlockerBoth, db);
-            destructable.TextName = "WESTRING_DEST_PATHBLOCKER_BOTH";
+            destructable.TextName = "Pathing Blocker (Both)";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "P";
             destructable.EditorTilesetsRaw = "*";
@@ -7477,7 +7477,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 9999f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -7500,7 +7500,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadPathingBlockerBothLarge(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.PathingBlockerBothLarge, db);
-            destructable.TextName = "WESTRING_DEST_PATHBLOCKER_LARGE_BOTH";
+            destructable.TextName = "Pathing Blocker (Both) (Large)";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "P";
             destructable.EditorTilesetsRaw = "*";
@@ -7515,7 +7515,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 9999f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -7538,7 +7538,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadLineOfSightBlocker(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LineOfSightBlocker, db);
-            destructable.TextName = "WESTRING_DEST_LOSBLOCKER";
+            destructable.TextName = "Line of Sight Blocker";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "P";
             destructable.EditorTilesetsRaw = "*";
@@ -7553,7 +7553,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 9999f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -7576,7 +7576,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadLineOfSightBlockerLarge(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LineOfSightBlockerLarge, db);
-            destructable.TextName = "WESTRING_DEST_LOSBLOCKER_LARGE";
+            destructable.TextName = "Line of Sight Blocker (Large)";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "P";
             destructable.EditorTilesetsRaw = "*";
@@ -7591,7 +7591,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 9999f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -7614,7 +7614,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadPathingBlockerGround(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.PathingBlockerGround, db);
-            destructable.TextName = "WESTRING_DEST_PATHBLOCKER";
+            destructable.TextName = "Pathing Blocker (Ground)";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "P";
             destructable.EditorTilesetsRaw = "*";
@@ -7629,7 +7629,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 9999f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -7652,7 +7652,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadPathingBlockerGroundLarge(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.PathingBlockerGroundLarge, db);
-            destructable.TextName = "WESTRING_DEST_PATHBLOCKER_LARGE";
+            destructable.TextName = "Pathing Blocker (Ground) (Large)";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "P";
             destructable.EditorTilesetsRaw = "*";
@@ -7667,7 +7667,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 9999f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -7690,7 +7690,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadPathingBlockerAir(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.PathingBlockerAir, db);
-            destructable.TextName = "WESTRING_DEST_PATHBLOCKER_FLIER";
+            destructable.TextName = "Pathing Blocker (Air)";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "P";
             destructable.EditorTilesetsRaw = "*";
@@ -7705,7 +7705,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 9999f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -7728,7 +7728,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadPathingBlockerAirLarge(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.PathingBlockerAirLarge, db);
-            destructable.TextName = "WESTRING_DEST_PATHBLOCKER_LARGE_FLIER";
+            destructable.TextName = "Pathing Blocker (Air) (Large)";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "P";
             destructable.EditorTilesetsRaw = "*";
@@ -7743,7 +7743,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 9999f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -7766,8 +7766,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadMassiveRuinedGate_ZTsg(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.MassiveRuinedGate_ZTsg, db);
-            destructable.TextName = "WESTRING_DEST_SARGERAS_GATE";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Massive Ruined Gate";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -7781,7 +7781,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -7804,8 +7804,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadMassiveRuinedGate_ZTsx(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.MassiveRuinedGate_ZTsx, db);
-            destructable.TextName = "WESTRING_DEST_SARGERAS_GATE";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Massive Ruined Gate";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -7819,7 +7819,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -7842,7 +7842,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadFootSwitch_DTfp(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.FootSwitch_DTfp, db);
-            destructable.TextName = "WESTRING_DEST_SMALL_ELEVATOR";
+            destructable.TextName = "Foot Switch";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
@@ -7857,7 +7857,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -7880,7 +7880,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadFootSwitch_DTfx(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.FootSwitch_DTfx, db);
-            destructable.TextName = "WESTRING_DEST_SMALL_ELEVATOR";
+            destructable.TextName = "Foot Switch";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
@@ -7895,7 +7895,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -7918,7 +7918,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadLever(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.Lever, db);
-            destructable.TextName = "WESTRING_DEST_LEVER";
+            destructable.TextName = "Lever";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G";
@@ -7933,7 +7933,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 5f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -7956,7 +7956,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadCityEntrance_YTce(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.CityEntrance_YTce, db);
-            destructable.TextName = "WESTRING_DEST_CITY_ENTRANCE";
+            destructable.TextName = "City Entrance";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Y,X";
@@ -7971,7 +7971,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -7994,7 +7994,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadCityEntrance_YTcx(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.CityEntrance_YTcx, db);
-            destructable.TextName = "WESTRING_DEST_CITY_ENTRANCE";
+            destructable.TextName = "City Entrance";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Y,X";
@@ -8009,7 +8009,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -8032,8 +8032,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLastHopeBridge_LTtc(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LastHopeBridge_LTtc, db);
-            destructable.TextName = "WESTRING_DEST_TYRANDE_BRIDGE_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Last Hope Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -8047,7 +8047,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -8070,8 +8070,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLastHopeBridge_LTtx(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LastHopeBridge_LTtx, db);
-            destructable.TextName = "WESTRING_DEST_TYRANDE_BRIDGE_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Last Hope Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -8085,7 +8085,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -8108,7 +8108,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadCityscapeRuinedTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.CityscapeRuinedTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_CITYSCAPE_RUINED_TREE_WALL";
+            destructable.TextName = "Cityscape Ruined Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "J";
@@ -8123,7 +8123,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -8146,7 +8146,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadDalaranRuinsTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.DalaranRuinsTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_DALARAN_RUINS_TREE_WALL";
+            destructable.TextName = "Dalaran Ruins Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "J";
@@ -8161,7 +8161,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -8184,7 +8184,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadFrozenThroneGate(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.FrozenThroneGate, db);
-            destructable.TextName = "WESTRING_DEST_FROZEN_THRONE_GATE";
+            destructable.TextName = "Frozen Throne Gate";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
@@ -8199,7 +8199,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -8222,7 +8222,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadUndergroundTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.UndergroundTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_UNDERGROUND_TREE_WALL";
+            destructable.TextName = "Underground Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "G";
@@ -8237,7 +8237,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -8260,7 +8260,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadResurrectionStone_BTrs(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ResurrectionStone_BTrs, db);
-            destructable.TextName = "WESTRING_DEST_RES_STONE";
+            destructable.TextName = "Resurrection Stone";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "B";
@@ -8275,7 +8275,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "wall";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -8298,7 +8298,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadResurrectionStone_BTrx(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ResurrectionStone_BTrx, db);
-            destructable.TextName = "WESTRING_DEST_RES_STONE";
+            destructable.TextName = "Resurrection Stone";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "B";
@@ -8313,7 +8313,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "wall";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -8336,7 +8336,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadShimmeringPortal(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShimmeringPortal, db);
-            destructable.TextName = "WESTRING_DOOD_OZSP";
+            destructable.TextName = "Shimmering Portal";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
@@ -8351,7 +8351,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -8374,7 +8374,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadInvisiblePlatform(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.InvisiblePlatform, db);
-            destructable.TextName = "WESTRING_DEST_INVISIBLE_PLATFORM";
+            destructable.TextName = "Invisible Platform";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
@@ -8389,7 +8389,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -8412,7 +8412,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadInvisiblePlatformSmall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.InvisiblePlatformSmall, db);
-            destructable.TextName = "WESTRING_DEST_INVISIBLE_PLATFORM_SMALL";
+            destructable.TextName = "Invisible Platform (small)";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
@@ -8427,7 +8427,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -8450,7 +8450,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadBarrensCanopyTree(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.BarrensCanopyTree, db);
-            destructable.TextName = "WESTRING_DOOD_BTTC";
+            destructable.TextName = "Barrens Canopy Tree";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "B";
@@ -8465,7 +8465,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
-            destructable.ArtflyOverHeight = 435f;
+            destructable.ArtFlyOverHeight = 435f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -8488,7 +8488,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadFelwoodCanopyTree(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.FelwoodCanopyTree, db);
-            destructable.TextName = "WESTRING_DOOD_CTTC";
+            destructable.TextName = "Felwood Canopy Tree";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "C";
@@ -8503,7 +8503,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
-            destructable.ArtflyOverHeight = 435f;
+            destructable.ArtFlyOverHeight = 435f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -8526,7 +8526,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadNorthrendCanopyTree(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.NorthrendCanopyTree, db);
-            destructable.TextName = "WESTRING_DOOD_NTTC";
+            destructable.TextName = "Northrend Canopy Tree";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
@@ -8541,7 +8541,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
-            destructable.ArtflyOverHeight = 435f;
+            destructable.ArtFlyOverHeight = 435f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -8564,7 +8564,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadRuinsCanopyTree(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RuinsCanopyTree, db);
-            destructable.TextName = "WESTRING_DOOD_ZTTC";
+            destructable.TextName = "Ruins Canopy Tree";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
@@ -8579,7 +8579,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
-            destructable.ArtflyOverHeight = 435f;
+            destructable.ArtFlyOverHeight = 435f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -8602,7 +8602,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadIcecrownCanopyTree(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IcecrownCanopyTree, db);
-            destructable.TextName = "WESTRING_DOOD_ITTC";
+            destructable.TextName = "Icecrown Canopy Tree";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
@@ -8617,7 +8617,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
-            destructable.ArtflyOverHeight = 435f;
+            destructable.ArtFlyOverHeight = 435f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -8640,7 +8640,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadIcecrownThrone(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IcecrownThrone, db);
-            destructable.TextName = "WESTRING_DOOD_IOT0";
+            destructable.TextName = "Icecrown Throne";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
@@ -8655,7 +8655,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -8678,7 +8678,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadIcecrownThroneDiagonal1_IOt1(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IcecrownThroneDiagonal1_IOt1, db);
-            destructable.TextName = "WESTRING_DOOD_IOT1";
+            destructable.TextName = "Icecrown Throne (Diagonal 1)";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
@@ -8693,7 +8693,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -8716,7 +8716,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadIcecrownThroneDiagonal1_IOt2(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IcecrownThroneDiagonal1_IOt2, db);
-            destructable.TextName = "WESTRING_DOOD_IOT2";
+            destructable.TextName = "Icecrown Throne (Diagonal 1)";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
@@ -8731,7 +8731,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -8754,7 +8754,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadRockChunks_LTrc(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RockChunks_LTrc, db);
-            destructable.TextName = "WESTRING_DEST_ROCK_CHUNKS";
+            destructable.TextName = "Rock Chunks";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,W,F,V,Q,X,Y,J";
@@ -8769,7 +8769,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 100f;
+            destructable.ArtFlyOverHeight = 100f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -8792,7 +8792,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadRockChunks_LTrt(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RockChunks_LTrt, db);
-            destructable.TextName = "WESTRING_DEST_ROCK_CHUNKS";
+            destructable.TextName = "Rock Chunks";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,W,F,V,Q,X,Y,J";
@@ -8807,7 +8807,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -8830,8 +8830,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadExtraWideNaturalBridge_YT48(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ExtraWideNaturalBridge_YT48, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_NATURAL_CLIFF_1_VERTICAL_EXTRA";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Extra Wide Natural Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -8845,7 +8845,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -8868,8 +8868,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadExtraWideNaturalBridge_YT49(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ExtraWideNaturalBridge_YT49, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_NATURAL_CLIFF_1_DIAGONAL_1_EXTRA";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Extra Wide Natural Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -8883,7 +8883,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -8906,8 +8906,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadExtraWideNaturalBridge_YT50(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ExtraWideNaturalBridge_YT50, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_NATURAL_CLIFF_1_HORIZONTAL_EXTRA";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Extra Wide Natural Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -8921,7 +8921,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -8944,8 +8944,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadExtraWideNaturalBridge_YT51(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ExtraWideNaturalBridge_YT51, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_NATURAL_CLIFF_1_DIAGONAL_2_EXTRA";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Extra Wide Natural Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -8959,7 +8959,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -8982,7 +8982,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadDemonStorm(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.DemonStorm, db);
-            destructable.TextName = "WESTRING_DOOD_OZDS";
+            destructable.TextName = "Demon Storm";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
@@ -8997,7 +8997,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -9020,7 +9020,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadRockinArthas(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RockinArthas, db);
-            destructable.TextName = "WESTRING_DEST_ROCKIN_ARTHAS";
+            destructable.TextName = "Rockin Arthas";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
@@ -9035,7 +9035,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -9058,7 +9058,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadSupportColumn(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.SupportColumn, db);
-            destructable.TextName = "WESTRING_DEST_SUPPORT_COLUMN";
+            destructable.TextName = "Support Column";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
@@ -9073,7 +9073,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "wall";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -9096,8 +9096,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneRamp_LTs1(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneRamp_LTs1, db);
-            destructable.TextName = "WESTRING_DEST_STONE_RAMP_BOTTOM_LEFT";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_BOTTOMLEFT";
+            destructable.TextName = "Stone Ramp";
+            destructable.TextEditorSuffix = "(Bottom Left)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -9111,7 +9111,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 30f;
+            destructable.ArtFlyOverHeight = 30f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -9134,8 +9134,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneRamp_LTs2(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneRamp_LTs2, db);
-            destructable.TextName = "WESTRING_DEST_STONE_RAMP_TOP_LEFT";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_TOPLEFT";
+            destructable.TextName = "Stone Ramp";
+            destructable.TextEditorSuffix = "(Top Left)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -9149,7 +9149,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 30f;
+            destructable.ArtFlyOverHeight = 30f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -9172,8 +9172,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneRamp_LTs3(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneRamp_LTs3, db);
-            destructable.TextName = "WESTRING_DEST_STONE_RAMP_TOP_RIGHT";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_TOPRIGHT";
+            destructable.TextName = "Stone Ramp";
+            destructable.TextEditorSuffix = "(Top Right)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -9187,7 +9187,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 30f;
+            destructable.ArtFlyOverHeight = 30f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -9210,8 +9210,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneRamp_LTs4(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneRamp_LTs4, db);
-            destructable.TextName = "WESTRING_DEST_STONE_RAMP_BOTTOM_RIGHT";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_BOTTOMRIGHT";
+            destructable.TextName = "Stone Ramp";
+            destructable.TextEditorSuffix = "(Bottom Right)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -9225,7 +9225,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 30f;
+            destructable.ArtFlyOverHeight = 30f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -9248,8 +9248,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneRamp_LTs5(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneRamp_LTs5, db);
-            destructable.TextName = "WESTRING_DEST_STONE_RAMP_BOTTOM_LEFT_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_BOTTOMLEFT2";
+            destructable.TextName = "Stone Ramp";
+            destructable.TextEditorSuffix = "(Bottom Left 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -9263,7 +9263,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 30f;
+            destructable.ArtFlyOverHeight = 30f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -9286,8 +9286,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneRamp_LTs6(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneRamp_LTs6, db);
-            destructable.TextName = "WESTRING_DEST_STONE_RAMP_TOP_LEFT_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_TOPLEFT2";
+            destructable.TextName = "Stone Ramp";
+            destructable.TextEditorSuffix = "(Top Left 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -9301,7 +9301,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 30f;
+            destructable.ArtFlyOverHeight = 30f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -9324,8 +9324,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneRamp_LTs7(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneRamp_LTs7, db);
-            destructable.TextName = "WESTRING_DEST_STONE_RAMP_TOP_RIGHT_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_TOPRIGHT2";
+            destructable.TextName = "Stone Ramp";
+            destructable.TextEditorSuffix = "(Top Right 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -9339,7 +9339,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 30f;
+            destructable.ArtFlyOverHeight = 30f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -9362,8 +9362,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadStoneRamp_LTs8(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.StoneRamp_LTs8, db);
-            destructable.TextName = "WESTRING_DEST_STONE_RAMP_BOTTOM_RIGHT_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_BOTTOMRIGHT2";
+            destructable.TextName = "Stone Ramp";
+            destructable.TextEditorSuffix = "(Bottom Right 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -9377,7 +9377,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 30f;
+            destructable.ArtFlyOverHeight = 30f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -9400,7 +9400,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadVolcano(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.Volcano, db);
-            destructable.TextName = "WESTRING_DEST_VOLCANO";
+            destructable.TextName = "Volcano";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
@@ -9415,7 +9415,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "decoration";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -9438,7 +9438,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadSilvermoonTree(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.SilvermoonTree, db);
-            destructable.TextName = "WESTRING_DEST_SILVER_MOON_TREE";
+            destructable.TextName = "Silvermoon Tree";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Y";
@@ -9453,7 +9453,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
-            destructable.ArtflyOverHeight = 256f;
+            destructable.ArtFlyOverHeight = 256f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -9476,7 +9476,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadIcecrownCitadelEntrance(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.IcecrownCitadelEntrance, db);
-            destructable.TextName = "WESTRING_DEST_ICECROWN_CITADEL_ENTRANCE";
+            destructable.TextName = "Icecrown Citadel Entrance";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
@@ -9491,7 +9491,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -9514,7 +9514,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadLordaeronCityMainGate(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LordaeronCityMainGate, db);
-            destructable.TextName = "WESTRING_DEST_LORDAERON_CITY_MAIN_GATE";
+            destructable.TextName = "Lordaeron City Main Gate";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
@@ -9529,7 +9529,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -9552,7 +9552,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadLordaeronCityMainGateColumn(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LordaeronCityMainGateColumn, db);
-            destructable.TextName = "WESTRING_DEST_LORDAERON_CITY_MAIN_GATE_COLUMN";
+            destructable.TextName = "Lordaeron City Main Gate Column";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
@@ -9567,7 +9567,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "wall";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -9590,7 +9590,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadLordaeronCityMainGateDestroyed(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LordaeronCityMainGateDestroyed, db);
-            destructable.TextName = "WESTRING_DEST_LORDAERON_CITY_MAIN_GATE_DESTROYED";
+            destructable.TextName = "Lordaeron City Main Gate Destroyed";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
@@ -9605,7 +9605,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -9628,7 +9628,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadLordaeronCityMainGateColumnDestroyed(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LordaeronCityMainGateColumnDestroyed, db);
-            destructable.TextName = "WESTRING_DEST_LORDAERON_CITY_MAIN_GATE_COLUMN_DESTROYED";
+            destructable.TextName = "Lordaeron City Main Gate Column Destroyed";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
@@ -9643,7 +9643,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "wall";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -9666,7 +9666,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadLionStatue(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LionStatue, db);
-            destructable.TextName = "WESTRING_DEST_LION_STATUE";
+            destructable.TextName = "Lion Statue";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
@@ -9681,7 +9681,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "wall";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -9704,7 +9704,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadLionStatueDestroyed(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LionStatueDestroyed, db);
-            destructable.TextName = "WESTRING_DEST_LION_STATUE_DESTROYED";
+            destructable.TextName = "Lion Statue Destroyed";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
@@ -9719,7 +9719,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "wall";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -9742,7 +9742,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadLordaeronCitySpire(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LordaeronCitySpire, db);
-            destructable.TextName = "WESTRING_DEST_LORDAERON_CITY_SPIRE";
+            destructable.TextName = "Lordaeron City Spire";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
@@ -9757,7 +9757,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "wall";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -9780,7 +9780,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadLordaeronCitySpireDestroyed(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LordaeronCitySpireDestroyed, db);
-            destructable.TextName = "WESTRING_DEST_LORDAERON_CITY_SPIRE_DESTROYED";
+            destructable.TextName = "Lordaeron City Spire Destroyed";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
@@ -9795,7 +9795,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "wall";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -9818,7 +9818,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadLordaeronCityDome(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LordaeronCityDome, db);
-            destructable.TextName = "WESTRING_DEST_LORDAERON_CITY_DOME";
+            destructable.TextName = "Lordaeron City Dome";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
@@ -9833,7 +9833,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -9856,7 +9856,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadLordaeronCityDomeDestroyed(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LordaeronCityDomeDestroyed, db);
-            destructable.TextName = "WESTRING_DEST_LORDAERON_CITY_DOME_DESTROYED";
+            destructable.TextName = "Lordaeron City Dome Destroyed";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
@@ -9871,7 +9871,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -9894,7 +9894,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadLordaeronCityMainBuilding(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LordaeronCityMainBuilding, db);
-            destructable.TextName = "WESTRING_DEST_LORDAERON_CITY_MAIN_BUILDING";
+            destructable.TextName = "Lordaeron City Main Building";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
@@ -9909,7 +9909,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -9932,7 +9932,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadLordaeronCityMainBuildingDestroyed(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LordaeronCityMainBuildingDestroyed, db);
-            destructable.TextName = "WESTRING_DEST_LORDAERON_CITY_MAIN_BUILDING_DESTROYED";
+            destructable.TextName = "Lordaeron City Main Building Destroyed";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
@@ -9947,7 +9947,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -9970,7 +9970,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadOrgrimmarWallSegmentUnderConstruction(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.OrgrimmarWallSegmentUnderConstruction, db);
-            destructable.TextName = "WESTRING_DEST_ORGRIMMAR_WALL_SEGMENT_UNDERCONSTRUCTION";
+            destructable.TextName = "Orgrimmar Wall Segment Under Construction";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "B";
@@ -9985,7 +9985,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -10008,7 +10008,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadOrgrimmarWallSegmentCompleted(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.OrgrimmarWallSegmentCompleted, db);
-            destructable.TextName = "WESTRING_DEST_ORGRIMMAR_WALL_SEGMENT_COMPLETED";
+            destructable.TextName = "Orgrimmar Wall Segment Completed";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "B";
@@ -10023,7 +10023,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -10046,7 +10046,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadOrgrimmarTowerUnderConstruction(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.OrgrimmarTowerUnderConstruction, db);
-            destructable.TextName = "WESTRING_DEST_ORGRIMMAR_TOWER_UNDERCONSTRUCTION";
+            destructable.TextName = "Orgrimmar Tower Under Construction";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "B";
@@ -10061,7 +10061,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -10084,7 +10084,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadOrgrimmarTowerCompleted(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.OrgrimmarTowerCompleted, db);
-            destructable.TextName = "WESTRING_DEST_ORGRIMMAR_TOWER_COMPLETED";
+            destructable.TextName = "Orgrimmar Tower Completed";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "B";
@@ -10099,7 +10099,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -10122,7 +10122,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadOrgrimmarGate(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.OrgrimmarGate, db);
-            destructable.TextName = "WESTRING_DEST_ORGRIMMAR_GATE";
+            destructable.TextName = "Orgrimmar Gate";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "B";
@@ -10137,7 +10137,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10160,7 +10160,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadSpecialIceBridge(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.SpecialIceBridge, db);
-            destructable.TextName = "WESTRING_DEST_SPECIAL_ICE_BRIDGE";
+            destructable.TextName = "Special Ice Bridge";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "Y";
@@ -10175,7 +10175,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10198,7 +10198,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadElvenBridge(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ElvenBridge, db);
-            destructable.TextName = "WESTRING_DEST_ELVEN_BRIDGE";
+            destructable.TextName = "Elven Bridge";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "Y";
@@ -10213,7 +10213,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10236,8 +10236,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortStratholmeBridge_YY12(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortStratholmeBridge_YY12, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_STRATHOLME_CLIFF_1_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Short Stratholme Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -10251,7 +10251,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10274,8 +10274,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortStratholmeBridge_YY13(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortStratholmeBridge_YY13, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_STRATHOLME_CLIFF_1_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Short Stratholme Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -10289,7 +10289,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10312,8 +10312,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortStratholmeBridge_YY14(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortStratholmeBridge_YY14, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_STRATHOLME_CLIFF_1_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Short Stratholme Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -10327,7 +10327,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10350,8 +10350,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortStratholmeBridge_YY15(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortStratholmeBridge_YY15, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_STRATHOLME_CLIFF_1_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Short Stratholme Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -10365,7 +10365,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10388,8 +10388,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongStratholmeBridge_YY16(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongStratholmeBridge_YY16, db);
-            destructable.TextName = "WESTRING_DEST_LONG_STRATHOLME_CLIFF_1_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Long Stratholme Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -10403,7 +10403,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10426,8 +10426,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongStratholmeBridge_YY17(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongStratholmeBridge_YY17, db);
-            destructable.TextName = "WESTRING_DEST_LONG_STRATHOLME_CLIFF_1_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Long Stratholme Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -10441,7 +10441,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10464,8 +10464,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongStratholmeBridge_YY18(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongStratholmeBridge_YY18, db);
-            destructable.TextName = "WESTRING_DEST_LONG_STRATHOLME_CLIFF_1_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Long Stratholme Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -10479,7 +10479,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10502,8 +10502,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongStratholmeBridge_YY19(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongStratholmeBridge_YY19, db);
-            destructable.TextName = "WESTRING_DEST_LONG_STRATHOLME_CLIFF_1_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Long Stratholme Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -10517,7 +10517,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10540,8 +10540,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideStratholmeBridge_YY20(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideStratholmeBridge_YY20, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_STRATHOLME_CLIFF_1_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Wide Stratholme Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -10555,7 +10555,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10578,8 +10578,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideStratholmeBridge_YY21(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideStratholmeBridge_YY21, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_STRATHOLME_CLIFF_1_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Wide Stratholme Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -10593,7 +10593,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10616,8 +10616,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideStratholmeBridge_YY22(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideStratholmeBridge_YY22, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_STRATHOLME_CLIFF_1_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Wide Stratholme Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -10631,7 +10631,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10654,8 +10654,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideStratholmeBridge_YY23(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideStratholmeBridge_YY23, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_STRATHOLME_CLIFF_1_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Wide Stratholme Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -10669,7 +10669,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10692,8 +10692,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortOvergrownBridge_OG00(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortOvergrownBridge_OG00, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_OVERGROWN_CLIFF_0_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Short Overgrown Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -10707,7 +10707,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10730,8 +10730,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortOvergrownBridge_OG01(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortOvergrownBridge_OG01, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_OVERGROWN_CLIFF_0_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Short Overgrown Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -10745,7 +10745,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10768,8 +10768,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortOvergrownBridge_OG02(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortOvergrownBridge_OG02, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_OVERGROWN_CLIFF_0_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Short Overgrown Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -10783,7 +10783,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10806,8 +10806,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortOvergrownBridge_OG03(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortOvergrownBridge_OG03, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_OVERGROWN_CLIFF_0_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Short Overgrown Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -10821,7 +10821,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10844,8 +10844,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongOvergrownBridge_OG04(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongOvergrownBridge_OG04, db);
-            destructable.TextName = "WESTRING_DEST_LONG_OVERGROWN_CLIFF_0_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Long Overgrown Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -10859,7 +10859,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10882,8 +10882,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongOvergrownBridge_OG05(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongOvergrownBridge_OG05, db);
-            destructable.TextName = "WESTRING_DEST_LONG_OVERGROWN_CLIFF_0_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Long Overgrown Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -10897,7 +10897,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10920,8 +10920,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongOvergrownBridge_OG06(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongOvergrownBridge_OG06, db);
-            destructable.TextName = "WESTRING_DEST_LONG_OVERGROWN_CLIFF_0_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Long Overgrown Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -10935,7 +10935,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10958,8 +10958,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongOvergrownBridge_OG07(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongOvergrownBridge_OG07, db);
-            destructable.TextName = "WESTRING_DEST_LONG_OVERGROWN_CLIFF_0_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Long Overgrown Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -10973,7 +10973,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -10996,8 +10996,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideOvergrownBridge_OG08(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideOvergrownBridge_OG08, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_OVERGROWN_CLIFF_0_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Wide Overgrown Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11011,7 +11011,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11034,8 +11034,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideOvergrownBridge_OG09(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideOvergrownBridge_OG09, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_OVERGROWN_CLIFF_0_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Wide Overgrown Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11049,7 +11049,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11072,8 +11072,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideOvergrownBridge_OG10(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideOvergrownBridge_OG10, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_OVERGROWN_CLIFF_0_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Wide Overgrown Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11087,7 +11087,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11110,8 +11110,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideOvergrownBridge_OG11(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideOvergrownBridge_OG11, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_OVERGROWN_CLIFF_0_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Wide Overgrown Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11125,7 +11125,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11148,8 +11148,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortRicketyWoodenBridge_RW00(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortRicketyWoodenBridge_RW00, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_RICKET_WOODEN_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Short Rickety Wooden Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11163,7 +11163,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11186,8 +11186,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortRicketyWoodenBridge_RW01(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortRicketyWoodenBridge_RW01, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_RICKET_WOODEN_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Short Rickety Wooden Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11201,7 +11201,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11224,8 +11224,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortRicketyWoodenBridge_RW02(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortRicketyWoodenBridge_RW02, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_RICKET_WOODEN_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Short Rickety Wooden Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11239,7 +11239,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11262,8 +11262,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortRicketyWoodenBridge_RW03(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortRicketyWoodenBridge_RW03, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_RICKET_WOODEN_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Short Rickety Wooden Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11277,7 +11277,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11300,8 +11300,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongRicketyWoodenBridge_RW04(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongRicketyWoodenBridge_RW04, db);
-            destructable.TextName = "WESTRING_DEST_LONG_RICKET_WOODEN_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Long Rickety Wooden Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11315,7 +11315,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11338,8 +11338,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongRicketyWoodenBridge_RW05(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongRicketyWoodenBridge_RW05, db);
-            destructable.TextName = "WESTRING_DEST_LONG_RICKET_WOODEN_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Long Rickety Wooden Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11353,7 +11353,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11376,8 +11376,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongRicketyWoodenBridge_RW06(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongRicketyWoodenBridge_RW06, db);
-            destructable.TextName = "WESTRING_DEST_LONG_RICKET_WOODEN_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Long Rickety Wooden Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11391,7 +11391,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11414,8 +11414,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongRicketyWoodenBridge_RW07(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongRicketyWoodenBridge_RW07, db);
-            destructable.TextName = "WESTRING_DEST_LONG_RICKET_WOODEN_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Long Rickety Wooden Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11429,7 +11429,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11452,8 +11452,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideRicketyWoodenBridge_RW08(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideRicketyWoodenBridge_RW08, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_RICKET_WOODEN_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Wide Rickety Wooden Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11467,7 +11467,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11490,8 +11490,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideRicketyWoodenBridge_RW09(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideRicketyWoodenBridge_RW09, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_RICKET_WOODEN_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Wide Rickety Wooden Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11505,7 +11505,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11528,8 +11528,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideRicketyWoodenBridge_RW10(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideRicketyWoodenBridge_RW10, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_RICKET_WOODEN_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Wide Rickety Wooden Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11543,7 +11543,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11566,8 +11566,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideRicketyWoodenBridge_RW11(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideRicketyWoodenBridge_RW11, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_RICKET_WOODEN_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Wide Rickety Wooden Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11581,7 +11581,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11604,8 +11604,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortElvenBridge_EB00(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortElvenBridge_EB00, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_ELVEN_BRIDGE_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Short Elven Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11619,7 +11619,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11642,8 +11642,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortElvenBridge_EB01(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortElvenBridge_EB01, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_ELVEN_BRIDGE_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Short Elven Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11657,7 +11657,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11680,8 +11680,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortElvenBridge_EB02(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortElvenBridge_EB02, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_ELVEN_BRIDGE_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Short Elven Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11695,7 +11695,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11718,8 +11718,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortElvenBridge_EB03(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortElvenBridge_EB03, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_ELVEN_BRIDGE_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Short Elven Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11733,7 +11733,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11756,8 +11756,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongElvenBridge_EB04(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongElvenBridge_EB04, db);
-            destructable.TextName = "WESTRING_DEST_LONG_ELVEN_BRIDGE_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Long Elven Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11771,7 +11771,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11794,8 +11794,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongElvenBridge_EB05(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongElvenBridge_EB05, db);
-            destructable.TextName = "WESTRING_DEST_LONG_ELVEN_BRIDGE_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Long Elven Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11809,7 +11809,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11832,8 +11832,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongElvenBridge_EB06(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongElvenBridge_EB06, db);
-            destructable.TextName = "WESTRING_DEST_LONG_ELVEN_BRIDGE_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Long Elven Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11847,7 +11847,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11870,8 +11870,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongElvenBridge_EB07(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongElvenBridge_EB07, db);
-            destructable.TextName = "WESTRING_DEST_LONG_ELVEN_BRIDGE_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Long Elven Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11885,7 +11885,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11908,8 +11908,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideElvenBridge_EB08(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideElvenBridge_EB08, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_ELVEN_BRIDGE_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Wide Elven Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11923,7 +11923,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11946,8 +11946,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideElvenBridge_EB09(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideElvenBridge_EB09, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_ELVEN_BRIDGE_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Wide Elven Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11961,7 +11961,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -11984,8 +11984,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideElvenBridge_EB10(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideElvenBridge_EB10, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_ELVEN_BRIDGE_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Wide Elven Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -11999,7 +11999,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -12022,8 +12022,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideElvenBridge_EB11(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideElvenBridge_EB11, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_ELVEN_BRIDGE_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Wide Elven Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -12037,7 +12037,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -12060,8 +12060,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortNightElvenWoodenBridge_NB00(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortNightElvenWoodenBridge_NB00, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_NIGHT_ELVEN_WOODEN_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Short Night Elven Wooden Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -12075,7 +12075,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -12098,8 +12098,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortNightElvenWoodenBridge_NB01(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortNightElvenWoodenBridge_NB01, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_NIGHT_ELVEN_WOODEN_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Short Night Elven Wooden Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -12113,7 +12113,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -12136,8 +12136,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortNightElvenWoodenBridge_NB02(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortNightElvenWoodenBridge_NB02, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_NIGHT_ELVEN_WOODEN_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Short Night Elven Wooden Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -12151,7 +12151,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -12174,8 +12174,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadShortNightElvenWoodenBridge_NB03(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ShortNightElvenWoodenBridge_NB03, db);
-            destructable.TextName = "WESTRING_DEST_SHORT_NIGHT_ELVEN_WOODEN_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Short Night Elven Wooden Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -12189,7 +12189,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -12212,8 +12212,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongNightElvenWoodenBridge_NB04(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongNightElvenWoodenBridge_NB04, db);
-            destructable.TextName = "WESTRING_DEST_LONG_NIGHT_ELVEN_WOODEN_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Long Night Elven Wooden Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -12227,7 +12227,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -12250,8 +12250,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongNightElvenWoodenBridge_NB05(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongNightElvenWoodenBridge_NB05, db);
-            destructable.TextName = "WESTRING_DEST_LONG_NIGHT_ELVEN_WOODEN_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Long Night Elven Wooden Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -12265,7 +12265,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -12288,8 +12288,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongNightElvenWoodenBridge_NB06(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongNightElvenWoodenBridge_NB06, db);
-            destructable.TextName = "WESTRING_DEST_LONG_NIGHT_ELVEN_WOODEN_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Long Night Elven Wooden Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -12303,7 +12303,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -12326,8 +12326,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadLongNightElvenWoodenBridge_NB07(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.LongNightElvenWoodenBridge_NB07, db);
-            destructable.TextName = "WESTRING_DEST_LONG_NIGHT_ELVEN_WOODEN_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Long Night Elven Wooden Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -12341,7 +12341,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -12364,8 +12364,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideNightElvenWoodenBridge_NB08(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideNightElvenWoodenBridge_NB08, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_NIGHT_ELVEN_WOODEN_VERTICAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL";
+            destructable.TextName = "Wide Night Elven Wooden Bridge";
+            destructable.TextEditorSuffix = "(Vertical)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -12379,7 +12379,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -12402,8 +12402,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideNightElvenWoodenBridge_NB09(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideNightElvenWoodenBridge_NB09, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_NIGHT_ELVEN_WOODEN_DIAGONAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL1";
+            destructable.TextName = "Wide Night Elven Wooden Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 1)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -12417,7 +12417,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -12440,8 +12440,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideNightElvenWoodenBridge_NB10(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideNightElvenWoodenBridge_NB10, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_NIGHT_ELVEN_WOODEN_HORIZONTAL";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL";
+            destructable.TextName = "Wide Night Elven Wooden Bridge";
+            destructable.TextEditorSuffix = "(Horizontal)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -12455,7 +12455,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -12478,8 +12478,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadWideNightElvenWoodenBridge_NB11(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WideNightElvenWoodenBridge_NB11, db);
-            destructable.TextName = "WESTRING_DEST_WIDE_NIGHT_ELVEN_WOODEN_DIAGONAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_DIAGONAL2";
+            destructable.TextName = "Wide Night Elven Wooden Bridge";
+            destructable.TextEditorSuffix = "(Diagonal 2)";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
@@ -12493,7 +12493,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -12516,7 +12516,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadScorchedTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.ScorchedTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_SCORCHED_TREE_WALL";
+            destructable.TextName = "Scorched Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Y,X";
@@ -12531,7 +12531,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -12554,8 +12554,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadRollingStoneDoor_ITd1(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RollingStoneDoor_ITd1, db);
-            destructable.TextName = "WESTRING_DEST_ICECROWN_ROUND_DOOR_HORIZONTAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL1";
+            destructable.TextName = "Rolling Stone Door";
+            destructable.TextEditorSuffix = "(Horizontal 1)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -12569,7 +12569,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -12592,8 +12592,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadRollingStoneDoor_ITd2(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RollingStoneDoor_ITd2, db);
-            destructable.TextName = "WESTRING_DEST_ICECROWN_ROUND_DOOR_VERTICAL_1";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL1";
+            destructable.TextName = "Rolling Stone Door";
+            destructable.TextEditorSuffix = "(Vertical 1)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -12607,7 +12607,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -12630,8 +12630,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadRollingStoneDoor_ITd3(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RollingStoneDoor_ITd3, db);
-            destructable.TextName = "WESTRING_DEST_ICECROWN_ROUND_DOOR_HORIZONTAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_HORIZONTAL2";
+            destructable.TextName = "Rolling Stone Door";
+            destructable.TextEditorSuffix = "(Horizontal 2)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -12645,7 +12645,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -12668,8 +12668,8 @@ namespace War3Api.Object
         protected virtual Destructable LoadRollingStoneDoor_ITd4(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.RollingStoneDoor_ITd4, db);
-            destructable.TextName = "WESTRING_DEST_ICECROWN_ROUND_DOOR_VERTICAL_2";
-            destructable.TextEditorSuffix = "WESTRING_EDITORSUFFIX_VERTICAL2";
+            destructable.TextName = "Rolling Stone Door";
+            destructable.TextEditorSuffix = "(Vertical 2)";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
@@ -12683,7 +12683,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "debris";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
-            destructable.ArtflyOverHeight = 0f;
+            destructable.ArtFlyOverHeight = 0f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
@@ -12706,7 +12706,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadWaygateRamp(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.WaygateRamp, db);
-            destructable.TextName = "WESTRING_DEST_WAYGATE_RAMP";
+            destructable.TextName = "Waygate Ramp";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
@@ -12721,7 +12721,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "bridge";
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
-            destructable.ArtflyOverHeight = 30f;
+            destructable.ArtFlyOverHeight = 30f;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
@@ -12744,7 +12744,7 @@ namespace War3Api.Object
         protected virtual Destructable LoadNorthrendIcyTreeWall(ObjectDatabaseBase db)
         {
             var destructable = new Destructable(DestructableType.NorthrendIcyTreeWall, db);
-            destructable.TextName = "WESTRING_DEST_ICY_TREE_WALL";
+            destructable.TextName = "Northrend Icy Tree Wall";
             destructable.TextEditorSuffix = "_";
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "N";
@@ -12759,7 +12759,7 @@ namespace War3Api.Object
             destructable.CombatTargetedAsRaw = "tree";
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
-            destructable.ArtflyOverHeight = 170f;
+            destructable.ArtFlyOverHeight = 170f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;

@@ -15,8 +15,8 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamagePerSecondModified;
         private readonly Lazy<ObjectProperty<int>> _dataNumberOfSummonedUnits;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataNumberOfSummonedUnitsModified;
-        private readonly Lazy<ObjectProperty<float>> _dataSummonedUnitDurationSeconds;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataSummonedUnitDurationSecondsModified;
+        private readonly Lazy<ObjectProperty<float>> _dataSummonedUnitDurationseconds;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataSummonedUnitDurationsecondsModified;
         private readonly Lazy<ObjectProperty<int>> _dataMaximumCreepLevel;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMaximumCreepLevelModified;
         private readonly Lazy<ObjectProperty<float>> _dataMovementSpeedFactor;
@@ -30,8 +30,8 @@ namespace War3Api.Object.Abilities
             _isDataDamagePerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePerSecondModified));
             _dataNumberOfSummonedUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNumberOfSummonedUnits, SetDataNumberOfSummonedUnits));
             _isDataNumberOfSummonedUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfSummonedUnitsModified));
-            _dataSummonedUnitDurationSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataSummonedUnitDurationSeconds, SetDataSummonedUnitDurationSeconds));
-            _isDataSummonedUnitDurationSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitDurationSecondsModified));
+            _dataSummonedUnitDurationseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataSummonedUnitDurationseconds, SetDataSummonedUnitDurationseconds));
+            _isDataSummonedUnitDurationsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitDurationsecondsModified));
             _dataMaximumCreepLevel = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaximumCreepLevel, SetDataMaximumCreepLevel));
             _isDataMaximumCreepLevelModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaximumCreepLevelModified));
             _dataMovementSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedFactor, SetDataMovementSpeedFactor));
@@ -47,8 +47,8 @@ namespace War3Api.Object.Abilities
             _isDataDamagePerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePerSecondModified));
             _dataNumberOfSummonedUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNumberOfSummonedUnits, SetDataNumberOfSummonedUnits));
             _isDataNumberOfSummonedUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfSummonedUnitsModified));
-            _dataSummonedUnitDurationSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataSummonedUnitDurationSeconds, SetDataSummonedUnitDurationSeconds));
-            _isDataSummonedUnitDurationSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitDurationSecondsModified));
+            _dataSummonedUnitDurationseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataSummonedUnitDurationseconds, SetDataSummonedUnitDurationseconds));
+            _isDataSummonedUnitDurationsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitDurationsecondsModified));
             _dataMaximumCreepLevel = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaximumCreepLevel, SetDataMaximumCreepLevel));
             _isDataMaximumCreepLevelModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaximumCreepLevelModified));
             _dataMovementSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedFactor, SetDataMovementSpeedFactor));
@@ -64,8 +64,8 @@ namespace War3Api.Object.Abilities
             _isDataDamagePerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePerSecondModified));
             _dataNumberOfSummonedUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNumberOfSummonedUnits, SetDataNumberOfSummonedUnits));
             _isDataNumberOfSummonedUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfSummonedUnitsModified));
-            _dataSummonedUnitDurationSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataSummonedUnitDurationSeconds, SetDataSummonedUnitDurationSeconds));
-            _isDataSummonedUnitDurationSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitDurationSecondsModified));
+            _dataSummonedUnitDurationseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataSummonedUnitDurationseconds, SetDataSummonedUnitDurationseconds));
+            _isDataSummonedUnitDurationsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitDurationsecondsModified));
             _dataMaximumCreepLevel = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaximumCreepLevel, SetDataMaximumCreepLevel));
             _isDataMaximumCreepLevelModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaximumCreepLevelModified));
             _dataMovementSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedFactor, SetDataMovementSpeedFactor));
@@ -81,8 +81,8 @@ namespace War3Api.Object.Abilities
             _isDataDamagePerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePerSecondModified));
             _dataNumberOfSummonedUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNumberOfSummonedUnits, SetDataNumberOfSummonedUnits));
             _isDataNumberOfSummonedUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfSummonedUnitsModified));
-            _dataSummonedUnitDurationSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataSummonedUnitDurationSeconds, SetDataSummonedUnitDurationSeconds));
-            _isDataSummonedUnitDurationSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitDurationSecondsModified));
+            _dataSummonedUnitDurationseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataSummonedUnitDurationseconds, SetDataSummonedUnitDurationseconds));
+            _isDataSummonedUnitDurationsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitDurationsecondsModified));
             _dataMaximumCreepLevel = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaximumCreepLevel, SetDataMaximumCreepLevel));
             _isDataMaximumCreepLevelModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaximumCreepLevelModified));
             _dataMovementSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedFactor, SetDataMovementSpeedFactor));
@@ -98,8 +98,8 @@ namespace War3Api.Object.Abilities
             _isDataDamagePerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePerSecondModified));
             _dataNumberOfSummonedUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNumberOfSummonedUnits, SetDataNumberOfSummonedUnits));
             _isDataNumberOfSummonedUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfSummonedUnitsModified));
-            _dataSummonedUnitDurationSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataSummonedUnitDurationSeconds, SetDataSummonedUnitDurationSeconds));
-            _isDataSummonedUnitDurationSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitDurationSecondsModified));
+            _dataSummonedUnitDurationseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataSummonedUnitDurationseconds, SetDataSummonedUnitDurationseconds));
+            _isDataSummonedUnitDurationsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitDurationsecondsModified));
             _dataMaximumCreepLevel = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaximumCreepLevel, SetDataMaximumCreepLevel));
             _isDataMaximumCreepLevelModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaximumCreepLevelModified));
             _dataMovementSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedFactor, SetDataMovementSpeedFactor));
@@ -115,8 +115,8 @@ namespace War3Api.Object.Abilities
             _isDataDamagePerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamagePerSecondModified));
             _dataNumberOfSummonedUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNumberOfSummonedUnits, SetDataNumberOfSummonedUnits));
             _isDataNumberOfSummonedUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfSummonedUnitsModified));
-            _dataSummonedUnitDurationSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataSummonedUnitDurationSeconds, SetDataSummonedUnitDurationSeconds));
-            _isDataSummonedUnitDurationSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitDurationSecondsModified));
+            _dataSummonedUnitDurationseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataSummonedUnitDurationseconds, SetDataSummonedUnitDurationseconds));
+            _isDataSummonedUnitDurationsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitDurationsecondsModified));
             _dataMaximumCreepLevel = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaximumCreepLevel, SetDataMaximumCreepLevel));
             _isDataMaximumCreepLevelModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaximumCreepLevelModified));
             _dataMovementSpeedFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedFactor, SetDataMovementSpeedFactor));
@@ -130,8 +130,8 @@ namespace War3Api.Object.Abilities
         public ReadOnlyObjectProperty<bool> IsDataDamagePerSecondModified => _isDataDamagePerSecondModified.Value;
         public ObjectProperty<int> DataNumberOfSummonedUnits => _dataNumberOfSummonedUnits.Value;
         public ReadOnlyObjectProperty<bool> IsDataNumberOfSummonedUnitsModified => _isDataNumberOfSummonedUnitsModified.Value;
-        public ObjectProperty<float> DataSummonedUnitDurationSeconds => _dataSummonedUnitDurationSeconds.Value;
-        public ReadOnlyObjectProperty<bool> IsDataSummonedUnitDurationSecondsModified => _isDataSummonedUnitDurationSecondsModified.Value;
+        public ObjectProperty<float> DataSummonedUnitDurationseconds => _dataSummonedUnitDurationseconds.Value;
+        public ReadOnlyObjectProperty<bool> IsDataSummonedUnitDurationsecondsModified => _isDataSummonedUnitDurationsecondsModified.Value;
         public ObjectProperty<int> DataMaximumCreepLevel => _dataMaximumCreepLevel.Value;
         public ReadOnlyObjectProperty<bool> IsDataMaximumCreepLevelModified => _isDataMaximumCreepLevelModified.Value;
         public ObjectProperty<float> DataMovementSpeedFactor => _dataMovementSpeedFactor.Value;
@@ -169,17 +169,17 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(846160974, level);
         }
 
-        private float GetDataSummonedUnitDurationSeconds(int level)
+        private float GetDataSummonedUnitDurationseconds(int level)
         {
             return _modifications.GetModification(862938190, level).ValueAsFloat;
         }
 
-        private void SetDataSummonedUnitDurationSeconds(int level, float value)
+        private void SetDataSummonedUnitDurationseconds(int level, float value)
         {
             _modifications[862938190, level] = new LevelObjectDataModification{Id = 862938190, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 3};
         }
 
-        private bool GetIsDataSummonedUnitDurationSecondsModified(int level)
+        private bool GetIsDataSummonedUnitDurationsecondsModified(int level)
         {
             return _modifications.ContainsKey(862938190, level);
         }

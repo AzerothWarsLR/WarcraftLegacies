@@ -760,21 +760,21 @@ namespace War3Api.Object.Enums
         /// <summary>Magma rock ('ORmk').</summary>
         MagmaRock = 1802326607,
         /// <summary>RuinedFloor2x2  ('YCx1').</summary>
-        Ruinedfloor2x2_YCx1 = 829965145,
+        RuinedFloor2x2_YCx1 = 829965145,
         /// <summary>RuinedFloor2x2  ('YCx2').</summary>
-        Ruinedfloor2x2_YCx2 = 846742361,
+        RuinedFloor2x2_YCx2 = 846742361,
         /// <summary>RuinedFloor2x2  ('YCx3').</summary>
-        Ruinedfloor2x2_YCx3 = 863519577,
+        RuinedFloor2x2_YCx3 = 863519577,
         /// <summary>RuinedFloor2x2  ('YCx4').</summary>
-        Ruinedfloor2x2_YCx4 = 880296793,
+        RuinedFloor2x2_YCx4 = 880296793,
         /// <summary>RuinedFloor4x4  ('YCx5').</summary>
-        Ruinedfloor4x4_YCx5 = 897074009,
+        RuinedFloor4x4_YCx5 = 897074009,
         /// <summary>RuinedFloor4x4  ('YCx6').</summary>
-        Ruinedfloor4x4_YCx6 = 913851225,
+        RuinedFloor4x4_YCx6 = 913851225,
         /// <summary>RuinedFloor4x2  ('YCx7').</summary>
-        Ruinedfloor4x2_YCx7 = 930628441,
+        RuinedFloor4x2_YCx7 = 930628441,
         /// <summary>RuinedFloor4x2  ('YCx8').</summary>
-        Ruinedfloor4x2_YCx8 = 947405657,
+        RuinedFloor4x2_YCx8 = 947405657,
         /// <summary>Rough cliff cave 1 ('YCr1').</summary>
         RoughCliffCave1 = 829571929,
         /// <summary>Rough cliff cave 2 ('YCr2').</summary>
@@ -1054,7 +1054,7 @@ namespace War3Api.Object.Enums
         /// <summary>Silvermoon wall straight long ('SWsl').</summary>
         SilvermoonWallStraightLong = 1819498323,
         /// <summary>SilvermoonWall T ('SWt0').</summary>
-        SilvermoonwallT = 812930899,
+        SilvermoonWallT = 812930899,
         /// <summary>Silvermoon wall straight door ('SWsd').</summary>
         SilvermoonWallStraightDoor = 1685280595,
         /// <summary>Silvermoon wall straight door short ('SWse').</summary>

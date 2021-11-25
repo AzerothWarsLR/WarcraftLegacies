@@ -1022,10 +1022,10 @@ namespace War3Api.Object
             ability.DataManaPointsDrained[2] = 30f;
             ability.DataManaPointsDrained[3] = 45f;
             ability.DataManaPointsDrained[4] = 55f;
-            ability.DataDrainIntervalSeconds[1] = 1f;
-            ability.DataDrainIntervalSeconds[2] = 1f;
-            ability.DataDrainIntervalSeconds[3] = 1f;
-            ability.DataDrainIntervalSeconds[4] = 1f;
+            ability.DataDrainIntervalseconds[1] = 1f;
+            ability.DataDrainIntervalseconds[2] = 1f;
+            ability.DataDrainIntervalseconds[3] = 1f;
+            ability.DataDrainIntervalseconds[4] = 1f;
             ability.DataLifeTransferredPerSecond[1] = 0f;
             ability.DataLifeTransferredPerSecond[2] = 0f;
             ability.DataLifeTransferredPerSecond[3] = 0f;
@@ -1248,18 +1248,18 @@ namespace War3Api.Object
             ability.DataWaveDistance[2] = 600f;
             ability.DataWaveDistance[3] = 600f;
             ability.DataWaveDistance[4] = 600f;
-            ability.DataWaveTimeSeconds[1] = 0.3f;
-            ability.DataWaveTimeSeconds[2] = 0.3f;
-            ability.DataWaveTimeSeconds[3] = 0.3f;
-            ability.DataWaveTimeSeconds[4] = 0.3f;
+            ability.DataWaveTimeseconds[1] = 0.3f;
+            ability.DataWaveTimeseconds[2] = 0.3f;
+            ability.DataWaveTimeseconds[3] = 0.3f;
+            ability.DataWaveTimeseconds[4] = 0.3f;
             ability.DataDamageDealt[1] = 60f;
             ability.DataDamageDealt[2] = 105f;
             ability.DataDamageDealt[3] = 150f;
             ability.DataDamageDealt[4] = 165f;
-            ability.DataAirTimeSeconds[1] = 1f;
-            ability.DataAirTimeSeconds[2] = 1f;
-            ability.DataAirTimeSeconds[3] = 1f;
-            ability.DataAirTimeSeconds[4] = 1f;
+            ability.DataAirTimeseconds[1] = 1f;
+            ability.DataAirTimeseconds[2] = 1f;
+            ability.DataAirTimeseconds[3] = 1f;
+            ability.DataAirTimeseconds[4] = 1f;
             ability.DataUninterruptibleRaw[1] = 1;
             ability.DataUninterruptibleRaw[2] = 1;
             ability.DataUninterruptibleRaw[3] = 1;
@@ -1326,10 +1326,10 @@ namespace War3Api.Object
             ability.DataNumberOfSwarmUnits[2] = 20;
             ability.DataNumberOfSwarmUnits[3] = 20;
             ability.DataNumberOfSwarmUnits[4] = 20;
-            ability.DataUnitReleaseIntervalSeconds[1] = 0.2f;
-            ability.DataUnitReleaseIntervalSeconds[2] = 0.2f;
-            ability.DataUnitReleaseIntervalSeconds[3] = 0.2f;
-            ability.DataUnitReleaseIntervalSeconds[4] = 0.2f;
+            ability.DataUnitReleaseIntervalseconds[1] = 0.2f;
+            ability.DataUnitReleaseIntervalseconds[2] = 0.2f;
+            ability.DataUnitReleaseIntervalseconds[3] = 0.2f;
+            ability.DataUnitReleaseIntervalseconds[4] = 0.2f;
             ability.DataMaxSwarmUnitsPerTarget[1] = 7;
             ability.DataMaxSwarmUnitsPerTarget[2] = 7;
             ability.DataMaxSwarmUnitsPerTarget[3] = 7;
@@ -1474,10 +1474,10 @@ namespace War3Api.Object
             ability.DataNumberOfSummonedUnits[2] = 1;
             ability.DataNumberOfSummonedUnits[3] = 1;
             ability.DataNumberOfSummonedUnits[4] = 1;
-            ability.DataSummonedUnitDurationSeconds[1] = 80f;
-            ability.DataSummonedUnitDurationSeconds[2] = 80f;
-            ability.DataSummonedUnitDurationSeconds[3] = 80f;
-            ability.DataSummonedUnitDurationSeconds[4] = 80f;
+            ability.DataSummonedUnitDurationseconds[1] = 80f;
+            ability.DataSummonedUnitDurationseconds[2] = 80f;
+            ability.DataSummonedUnitDurationseconds[3] = 80f;
+            ability.DataSummonedUnitDurationseconds[4] = 80f;
             ability.DataSummonedUnitTypeRaw[1] = "ndr1";
             ability.DataSummonedUnitTypeRaw[2] = "ndr2";
             ability.DataSummonedUnitTypeRaw[3] = "ndr3";
@@ -1602,10 +1602,10 @@ namespace War3Api.Object
             ability.DataManaPointsDrained[2] = 0f;
             ability.DataManaPointsDrained[3] = 0f;
             ability.DataManaPointsDrained[4] = 0f;
-            ability.DataDrainIntervalSeconds[1] = 1f;
-            ability.DataDrainIntervalSeconds[2] = 1f;
-            ability.DataDrainIntervalSeconds[3] = 1f;
-            ability.DataDrainIntervalSeconds[4] = 1f;
+            ability.DataDrainIntervalseconds[1] = 1f;
+            ability.DataDrainIntervalseconds[2] = 1f;
+            ability.DataDrainIntervalseconds[3] = 1f;
+            ability.DataDrainIntervalseconds[4] = 1f;
             ability.DataLifeTransferredPerSecond[1] = 0f;
             ability.DataLifeTransferredPerSecond[2] = 0f;
             ability.DataLifeTransferredPerSecond[3] = 0f;
@@ -4444,10 +4444,10 @@ namespace War3Api.Object
             ability.DataNumberOfSummonedUnits[2] = 1;
             ability.DataNumberOfSummonedUnits[3] = 1;
             ability.DataNumberOfSummonedUnits[4] = 1;
-            ability.DataSummonedUnitDurationSeconds[1] = 120f;
-            ability.DataSummonedUnitDurationSeconds[2] = 80f;
-            ability.DataSummonedUnitDurationSeconds[3] = 80f;
-            ability.DataSummonedUnitDurationSeconds[4] = 80f;
+            ability.DataSummonedUnitDurationseconds[1] = 120f;
+            ability.DataSummonedUnitDurationseconds[2] = 80f;
+            ability.DataSummonedUnitDurationseconds[3] = 80f;
+            ability.DataSummonedUnitDurationseconds[4] = 80f;
             ability.DataMaximumCreepLevel[1] = 5;
             ability.DataMaximumCreepLevel[2] = 0;
             ability.DataMaximumCreepLevel[3] = 0;
@@ -12054,10 +12054,10 @@ namespace War3Api.Object
             ability.DataLandingDelayTime[2] = 0f;
             ability.DataLandingDelayTime[3] = 0f;
             ability.DataLandingDelayTime[4] = 0f;
-            ability.DataLifeRegenerationRatePerSecond[1] = 8f;
-            ability.DataLifeRegenerationRatePerSecond[2] = 0f;
-            ability.DataLifeRegenerationRatePerSecond[3] = 0f;
-            ability.DataLifeRegenerationRatePerSecond[4] = 0f;
+            ability.DataLifeRegenerationRateperSecond[1] = 8f;
+            ability.DataLifeRegenerationRateperSecond[2] = 0f;
+            ability.DataLifeRegenerationRateperSecond[3] = 0f;
+            ability.DataLifeRegenerationRateperSecond[4] = 0f;
             ability.DataAlternateFormUnitRaw[1] = "ubsp";
             ability.DataAlternateFormUnitRaw[2] = null;
             ability.DataAlternateFormUnitRaw[3] = null;
@@ -13384,14 +13384,10 @@ namespace War3Api.Object
             ability.StatsEffectsRaw[2] = null;
             ability.StatsEffectsRaw[3] = null;
             ability.StatsEffectsRaw[4] = null;
-            ability.DataData_Blo1[1] = 0.4f;
-            ability.DataData_Blo1[2] = 0f;
-            ability.DataData_Blo1[3] = 0f;
-            ability.DataData_Blo1[4] = 0f;
-            ability.DataData_Blo2[1] = 0.25f;
-            ability.DataData_Blo2[2] = 0f;
-            ability.DataData_Blo2[3] = 0f;
-            ability.DataData_Blo2[4] = 0f;
+            ability.DataData[1] = 0.4f;
+            ability.DataData[2] = 0f;
+            ability.DataData[3] = 0f;
+            ability.DataData[4] = 0f;
             ability.DataScalingFactor[1] = 0.3f;
             ability.DataScalingFactor[2] = 0f;
             ability.DataScalingFactor[3] = 0f;
@@ -17882,10 +17878,10 @@ namespace War3Api.Object
             ability.StatsEffectsRaw[2] = null;
             ability.StatsEffectsRaw[3] = null;
             ability.StatsEffectsRaw[4] = null;
-            ability.DataManaLossPerUnit[1] = 40f;
-            ability.DataManaLossPerUnit[2] = 0f;
-            ability.DataManaLossPerUnit[3] = 0f;
-            ability.DataManaLossPerUnit[4] = 0f;
+            ability.DataManaLossperUnit[1] = 40f;
+            ability.DataManaLossperUnit[2] = 0f;
+            ability.DataManaLossperUnit[3] = 0f;
+            ability.DataManaLossperUnit[4] = 0f;
             ability.DataDamageToSummonedUnits[1] = 225f;
             ability.DataDamageToSummonedUnits[2] = 0f;
             ability.DataDamageToSummonedUnits[3] = 0f;
@@ -21004,14 +21000,10 @@ namespace War3Api.Object
             ability.StatsEffectsRaw[2] = null;
             ability.StatsEffectsRaw[3] = null;
             ability.StatsEffectsRaw[4] = null;
-            ability.DataData_Blo1[1] = 0.4f;
-            ability.DataData_Blo1[2] = 0f;
-            ability.DataData_Blo1[3] = 0f;
-            ability.DataData_Blo1[4] = 0f;
-            ability.DataData_Blo2[1] = 0.25f;
-            ability.DataData_Blo2[2] = 0f;
-            ability.DataData_Blo2[3] = 0f;
-            ability.DataData_Blo2[4] = 0f;
+            ability.DataData[1] = 0.4f;
+            ability.DataData[2] = 0f;
+            ability.DataData[3] = 0f;
+            ability.DataData[4] = 0f;
             ability.DataScalingFactor[1] = 0.3f;
             ability.DataScalingFactor[2] = 0f;
             ability.DataScalingFactor[3] = 0f;
@@ -21580,10 +21572,10 @@ namespace War3Api.Object
             ability.StatsEffectsRaw[2] = null;
             ability.StatsEffectsRaw[3] = null;
             ability.StatsEffectsRaw[4] = null;
-            ability.DataautoAcquireAttackTargetsRaw[1] = 1;
-            ability.DataautoAcquireAttackTargetsRaw[2] = 0;
-            ability.DataautoAcquireAttackTargetsRaw[3] = 0;
-            ability.DataautoAcquireAttackTargetsRaw[4] = 0;
+            ability.DataAutoAcquireAttackTargetsRaw[1] = 1;
+            ability.DataAutoAcquireAttackTargetsRaw[2] = 0;
+            ability.DataAutoAcquireAttackTargetsRaw[3] = 0;
+            ability.DataAutoAcquireAttackTargetsRaw[4] = 0;
             ability.DataImmuneToMorphEffectsRaw[1] = 1;
             ability.DataImmuneToMorphEffectsRaw[2] = 0;
             ability.DataImmuneToMorphEffectsRaw[3] = 0;
@@ -23142,18 +23134,18 @@ namespace War3Api.Object
             ability.DataWaveDistance[2] = 0f;
             ability.DataWaveDistance[3] = 0f;
             ability.DataWaveDistance[4] = 0f;
-            ability.DataWaveTimeSeconds[1] = 0.3f;
-            ability.DataWaveTimeSeconds[2] = 0f;
-            ability.DataWaveTimeSeconds[3] = 0f;
-            ability.DataWaveTimeSeconds[4] = 0f;
+            ability.DataWaveTimeseconds[1] = 0.3f;
+            ability.DataWaveTimeseconds[2] = 0f;
+            ability.DataWaveTimeseconds[3] = 0f;
+            ability.DataWaveTimeseconds[4] = 0f;
             ability.DataDamageDealt[1] = 50f;
             ability.DataDamageDealt[2] = 0f;
             ability.DataDamageDealt[3] = 0f;
             ability.DataDamageDealt[4] = 0f;
-            ability.DataAirTimeSeconds[1] = 1f;
-            ability.DataAirTimeSeconds[2] = 0f;
-            ability.DataAirTimeSeconds[3] = 0f;
-            ability.DataAirTimeSeconds[4] = 0f;
+            ability.DataAirTimeseconds[1] = 1f;
+            ability.DataAirTimeseconds[2] = 0f;
+            ability.DataAirTimeseconds[3] = 0f;
+            ability.DataAirTimeseconds[4] = 0f;
             ability.DataUninterruptibleRaw[1] = 0;
             ability.DataUninterruptibleRaw[2] = 0;
             ability.DataUninterruptibleRaw[3] = 0;
@@ -23410,10 +23402,10 @@ namespace War3Api.Object
             ability.StatsEffectsRaw[2] = null;
             ability.StatsEffectsRaw[3] = null;
             ability.StatsEffectsRaw[4] = null;
-            ability.DataTransitionTimeSeconds[1] = 0f;
-            ability.DataTransitionTimeSeconds[2] = 0f;
-            ability.DataTransitionTimeSeconds[3] = 0f;
-            ability.DataTransitionTimeSeconds[4] = 0f;
+            ability.DataTransitionTimeseconds[1] = 0f;
+            ability.DataTransitionTimeseconds[2] = 0f;
+            ability.DataTransitionTimeseconds[3] = 0f;
+            ability.DataTransitionTimeseconds[4] = 0f;
             return ability;
         }
 
@@ -27114,10 +27106,10 @@ namespace War3Api.Object
             ability.StatsEffectsRaw[2] = null;
             ability.StatsEffectsRaw[3] = null;
             ability.StatsEffectsRaw[4] = null;
-            ability.DataautoAcquireAttackTargetsRaw[1] = 1;
-            ability.DataautoAcquireAttackTargetsRaw[2] = 0;
-            ability.DataautoAcquireAttackTargetsRaw[3] = 0;
-            ability.DataautoAcquireAttackTargetsRaw[4] = 0;
+            ability.DataAutoAcquireAttackTargetsRaw[1] = 1;
+            ability.DataAutoAcquireAttackTargetsRaw[2] = 0;
+            ability.DataAutoAcquireAttackTargetsRaw[3] = 0;
+            ability.DataAutoAcquireAttackTargetsRaw[4] = 0;
             return ability;
         }
 
@@ -33570,10 +33562,10 @@ namespace War3Api.Object
             ability.DataLandingDelayTime[2] = 0f;
             ability.DataLandingDelayTime[3] = 0f;
             ability.DataLandingDelayTime[4] = 0f;
-            ability.DataLifeRegenerationRatePerSecond[1] = 8f;
-            ability.DataLifeRegenerationRatePerSecond[2] = 0f;
-            ability.DataLifeRegenerationRatePerSecond[3] = 0f;
-            ability.DataLifeRegenerationRatePerSecond[4] = 0f;
+            ability.DataLifeRegenerationRateperSecond[1] = 8f;
+            ability.DataLifeRegenerationRateperSecond[2] = 0f;
+            ability.DataLifeRegenerationRateperSecond[3] = 0f;
+            ability.DataLifeRegenerationRateperSecond[4] = 0f;
             ability.DataAlternateFormUnitRaw[1] = "ugrm";
             ability.DataAlternateFormUnitRaw[2] = null;
             ability.DataAlternateFormUnitRaw[3] = null;
@@ -34718,14 +34710,14 @@ namespace War3Api.Object
             ability.StatsEffectsRaw[2] = null;
             ability.StatsEffectsRaw[3] = null;
             ability.StatsEffectsRaw[4] = null;
-            ability.DataAirTimeSeconds[1] = 22f;
-            ability.DataAirTimeSeconds[2] = 0f;
-            ability.DataAirTimeSeconds[3] = 0f;
-            ability.DataAirTimeSeconds[4] = 0f;
-            ability.DataMinimumHitIntervalSeconds[1] = 3f;
-            ability.DataMinimumHitIntervalSeconds[2] = 0f;
-            ability.DataMinimumHitIntervalSeconds[3] = 0f;
-            ability.DataMinimumHitIntervalSeconds[4] = 0f;
+            ability.DataAirTimeseconds[1] = 22f;
+            ability.DataAirTimeseconds[2] = 0f;
+            ability.DataAirTimeseconds[3] = 0f;
+            ability.DataAirTimeseconds[4] = 0f;
+            ability.DataMinimumHitIntervalseconds[1] = 3f;
+            ability.DataMinimumHitIntervalseconds[2] = 0f;
+            ability.DataMinimumHitIntervalseconds[3] = 0f;
+            ability.DataMinimumHitIntervalseconds[4] = 0f;
             return ability;
         }
 
@@ -35680,10 +35672,10 @@ namespace War3Api.Object
             ability.DataTerrainDeformationAmplitude[2] = 0f;
             ability.DataTerrainDeformationAmplitude[3] = 0f;
             ability.DataTerrainDeformationAmplitude[4] = 0f;
-            ability.DataTerrainDeformationDurationMs[1] = 300;
-            ability.DataTerrainDeformationDurationMs[2] = 0;
-            ability.DataTerrainDeformationDurationMs[3] = 0;
-            ability.DataTerrainDeformationDurationMs[4] = 0;
+            ability.DataTerrainDeformationDurationms[1] = 300;
+            ability.DataTerrainDeformationDurationms[2] = 0;
+            ability.DataTerrainDeformationDurationms[3] = 0;
+            ability.DataTerrainDeformationDurationms[4] = 0;
             return ability;
         }
 
@@ -35746,10 +35738,10 @@ namespace War3Api.Object
             ability.DataTerrainDeformationAmplitude[2] = 0f;
             ability.DataTerrainDeformationAmplitude[3] = 0f;
             ability.DataTerrainDeformationAmplitude[4] = 0f;
-            ability.DataTerrainDeformationDurationMs[1] = 300;
-            ability.DataTerrainDeformationDurationMs[2] = 0;
-            ability.DataTerrainDeformationDurationMs[3] = 0;
-            ability.DataTerrainDeformationDurationMs[4] = 0;
+            ability.DataTerrainDeformationDurationms[1] = 300;
+            ability.DataTerrainDeformationDurationms[2] = 0;
+            ability.DataTerrainDeformationDurationms[3] = 0;
+            ability.DataTerrainDeformationDurationms[4] = 0;
             return ability;
         }
 
@@ -35812,10 +35804,10 @@ namespace War3Api.Object
             ability.DataTerrainDeformationAmplitude[2] = 0f;
             ability.DataTerrainDeformationAmplitude[3] = 0f;
             ability.DataTerrainDeformationAmplitude[4] = 0f;
-            ability.DataTerrainDeformationDurationMs[1] = 300;
-            ability.DataTerrainDeformationDurationMs[2] = 0;
-            ability.DataTerrainDeformationDurationMs[3] = 0;
-            ability.DataTerrainDeformationDurationMs[4] = 0;
+            ability.DataTerrainDeformationDurationms[1] = 300;
+            ability.DataTerrainDeformationDurationms[2] = 0;
+            ability.DataTerrainDeformationDurationms[3] = 0;
+            ability.DataTerrainDeformationDurationms[4] = 0;
             return ability;
         }
 
@@ -39014,10 +39006,10 @@ namespace War3Api.Object
             ability.StatsEffectsRaw[2] = null;
             ability.StatsEffectsRaw[3] = null;
             ability.StatsEffectsRaw[4] = null;
-            ability.DataUnitCreatedPerPlayerRaceRaw[1] = "hcas,ofrt,unp2,etoe";
-            ability.DataUnitCreatedPerPlayerRaceRaw[2] = null;
-            ability.DataUnitCreatedPerPlayerRaceRaw[3] = null;
-            ability.DataUnitCreatedPerPlayerRaceRaw[4] = null;
+            ability.DataUnitCreatedperPlayerRaceRaw[1] = "hcas,ofrt,unp2,etoe";
+            ability.DataUnitCreatedperPlayerRaceRaw[2] = null;
+            ability.DataUnitCreatedperPlayerRaceRaw[3] = null;
+            ability.DataUnitCreatedperPlayerRaceRaw[4] = null;
             return ability;
         }
 
@@ -39072,10 +39064,10 @@ namespace War3Api.Object
             ability.StatsEffectsRaw[2] = null;
             ability.StatsEffectsRaw[3] = null;
             ability.StatsEffectsRaw[4] = null;
-            ability.DataUnitCreatedPerPlayerRaceRaw[1] = "htow,ogre,unpl,etol";
-            ability.DataUnitCreatedPerPlayerRaceRaw[2] = null;
-            ability.DataUnitCreatedPerPlayerRaceRaw[3] = null;
-            ability.DataUnitCreatedPerPlayerRaceRaw[4] = null;
+            ability.DataUnitCreatedperPlayerRaceRaw[1] = "htow,ogre,unpl,etol";
+            ability.DataUnitCreatedperPlayerRaceRaw[2] = null;
+            ability.DataUnitCreatedperPlayerRaceRaw[3] = null;
+            ability.DataUnitCreatedperPlayerRaceRaw[4] = null;
             return ability;
         }
 
@@ -39130,10 +39122,10 @@ namespace War3Api.Object
             ability.StatsEffectsRaw[2] = null;
             ability.StatsEffectsRaw[3] = null;
             ability.StatsEffectsRaw[4] = null;
-            ability.DataUnitCreatedPerPlayerRaceRaw[1] = "hwtw,hwtw,hwtw,hwtw";
-            ability.DataUnitCreatedPerPlayerRaceRaw[2] = null;
-            ability.DataUnitCreatedPerPlayerRaceRaw[3] = null;
-            ability.DataUnitCreatedPerPlayerRaceRaw[4] = null;
+            ability.DataUnitCreatedperPlayerRaceRaw[1] = "hwtw,hwtw,hwtw,hwtw";
+            ability.DataUnitCreatedperPlayerRaceRaw[2] = null;
+            ability.DataUnitCreatedperPlayerRaceRaw[3] = null;
+            ability.DataUnitCreatedperPlayerRaceRaw[4] = null;
             return ability;
         }
 
@@ -41438,10 +41430,10 @@ namespace War3Api.Object
             ability.DataNumberOfSummonedUnits[2] = 0;
             ability.DataNumberOfSummonedUnits[3] = 0;
             ability.DataNumberOfSummonedUnits[4] = 0;
-            ability.DataSummonedUnitDurationSeconds[1] = 80f;
-            ability.DataSummonedUnitDurationSeconds[2] = 0f;
-            ability.DataSummonedUnitDurationSeconds[3] = 0f;
-            ability.DataSummonedUnitDurationSeconds[4] = 0f;
+            ability.DataSummonedUnitDurationseconds[1] = 80f;
+            ability.DataSummonedUnitDurationseconds[2] = 0f;
+            ability.DataSummonedUnitDurationseconds[3] = 0f;
+            ability.DataSummonedUnitDurationseconds[4] = 0f;
             ability.DataSummonedUnitTypeRaw[1] = "ndr1";
             ability.DataSummonedUnitTypeRaw[2] = "-";
             ability.DataSummonedUnitTypeRaw[3] = null;
@@ -44554,10 +44546,10 @@ namespace War3Api.Object
             ability.StatsEffectsRaw[2] = null;
             ability.StatsEffectsRaw[3] = null;
             ability.StatsEffectsRaw[4] = null;
-            ability.DataManaRegenerationBonusAsFractionOfNormal[1] = 0.5f;
-            ability.DataManaRegenerationBonusAsFractionOfNormal[2] = 0f;
-            ability.DataManaRegenerationBonusAsFractionOfNormal[3] = 0f;
-            ability.DataManaRegenerationBonusAsFractionOfNormal[4] = 0f;
+            ability.DataManaRegenerationBonusasFractionOfNormal[1] = 0.5f;
+            ability.DataManaRegenerationBonusasFractionOfNormal[2] = 0f;
+            ability.DataManaRegenerationBonusasFractionOfNormal[3] = 0f;
+            ability.DataManaRegenerationBonusasFractionOfNormal[4] = 0f;
             return ability;
         }
 
@@ -44612,10 +44604,10 @@ namespace War3Api.Object
             ability.StatsEffectsRaw[2] = null;
             ability.StatsEffectsRaw[3] = null;
             ability.StatsEffectsRaw[4] = null;
-            ability.DataManaRegenerationBonusAsFractionOfNormal[1] = 0.25f;
-            ability.DataManaRegenerationBonusAsFractionOfNormal[2] = 0f;
-            ability.DataManaRegenerationBonusAsFractionOfNormal[3] = 0f;
-            ability.DataManaRegenerationBonusAsFractionOfNormal[4] = 0f;
+            ability.DataManaRegenerationBonusasFractionOfNormal[1] = 0.25f;
+            ability.DataManaRegenerationBonusasFractionOfNormal[2] = 0f;
+            ability.DataManaRegenerationBonusasFractionOfNormal[3] = 0f;
+            ability.DataManaRegenerationBonusasFractionOfNormal[4] = 0f;
             return ability;
         }
 
@@ -44670,18 +44662,18 @@ namespace War3Api.Object
             ability.StatsEffectsRaw[2] = null;
             ability.StatsEffectsRaw[3] = null;
             ability.StatsEffectsRaw[4] = null;
-            ability.DataDelayAfterDeathSeconds[1] = 7;
-            ability.DataDelayAfterDeathSeconds[2] = 0;
-            ability.DataDelayAfterDeathSeconds[3] = 0;
-            ability.DataDelayAfterDeathSeconds[4] = 0;
+            ability.DataDelayAfterDeathseconds[1] = 7;
+            ability.DataDelayAfterDeathseconds[2] = 0;
+            ability.DataDelayAfterDeathseconds[3] = 0;
+            ability.DataDelayAfterDeathseconds[4] = 0;
             ability.DataRestoredLife[1] = 500;
             ability.DataRestoredLife[2] = 0;
             ability.DataRestoredLife[3] = 0;
             ability.DataRestoredLife[4] = 0;
-            ability.DataRestoredMana(1F orCurrent[1] = -1;
-            ability.DataRestoredMana(1F orCurrent[2] = 0;
-            ability.DataRestoredMana(1F orCurrent[3] = 0;
-            ability.DataRestoredMana(1F orCurrent[4] = 0;
+            ability.DataRestoredMana1ForCurrent[1] = -1;
+            ability.DataRestoredMana1ForCurrent[2] = 0;
+            ability.DataRestoredMana1ForCurrent[3] = 0;
+            ability.DataRestoredMana1ForCurrent[4] = 0;
             return ability;
         }
 
@@ -47502,10 +47494,10 @@ namespace War3Api.Object
             ability.DataActivationDelay[2] = 0f;
             ability.DataActivationDelay[3] = 0f;
             ability.DataActivationDelay[4] = 0f;
-            ability.DataLureIntervalSeconds[1] = 2f;
-            ability.DataLureIntervalSeconds[2] = 0f;
-            ability.DataLureIntervalSeconds[3] = 0f;
-            ability.DataLureIntervalSeconds[4] = 0f;
+            ability.DataLureIntervalseconds[1] = 2f;
+            ability.DataLureIntervalseconds[2] = 0f;
+            ability.DataLureIntervalseconds[3] = 0f;
+            ability.DataLureIntervalseconds[4] = 0f;
             ability.DataLureUnitTypeRaw[1] = "nlur";
             ability.DataLureUnitTypeRaw[2] = null;
             ability.DataLureUnitTypeRaw[3] = null;
@@ -49188,10 +49180,10 @@ namespace War3Api.Object
             ability.DataMaximumUnits[2] = 0;
             ability.DataMaximumUnits[3] = 0;
             ability.DataMaximumUnits[4] = 0;
-            ability.DataCastingDelaySeconds[1] = 1f;
-            ability.DataCastingDelaySeconds[2] = 0f;
-            ability.DataCastingDelaySeconds[3] = 0f;
-            ability.DataCastingDelaySeconds[4] = 0f;
+            ability.DataCastingDelayseconds[1] = 1f;
+            ability.DataCastingDelayseconds[2] = 0f;
+            ability.DataCastingDelayseconds[3] = 0f;
+            ability.DataCastingDelayseconds[4] = 0f;
             return ability;
         }
 

@@ -11,9 +11,9 @@ namespace War3Api.Object.Abilities
 {
     public sealed class Ghost : Ability
     {
-        private readonly Lazy<ObjectProperty<int>> _dataautoAcquireAttackTargetsRaw;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataautoAcquireAttackTargetsModified;
-        private readonly Lazy<ObjectProperty<bool>> _dataautoAcquireAttackTargets;
+        private readonly Lazy<ObjectProperty<int>> _dataAutoAcquireAttackTargetsRaw;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAutoAcquireAttackTargetsModified;
+        private readonly Lazy<ObjectProperty<bool>> _dataAutoAcquireAttackTargets;
         private readonly Lazy<ObjectProperty<int>> _dataImmuneToMorphEffectsRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataImmuneToMorphEffectsModified;
         private readonly Lazy<ObjectProperty<bool>> _dataImmuneToMorphEffects;
@@ -22,9 +22,9 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ObjectProperty<bool>> _dataDoesNotBlockBuildings;
         public Ghost(): base(1869113153)
         {
-            _dataautoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataautoAcquireAttackTargetsRaw, SetDataautoAcquireAttackTargetsRaw));
-            _isDataautoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataautoAcquireAttackTargetsModified));
-            _dataautoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataautoAcquireAttackTargets, SetDataautoAcquireAttackTargets));
+            _dataAutoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAutoAcquireAttackTargetsRaw, SetDataAutoAcquireAttackTargetsRaw));
+            _isDataAutoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAutoAcquireAttackTargetsModified));
+            _dataAutoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAutoAcquireAttackTargets, SetDataAutoAcquireAttackTargets));
             _dataImmuneToMorphEffectsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataImmuneToMorphEffectsRaw, SetDataImmuneToMorphEffectsRaw));
             _isDataImmuneToMorphEffectsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataImmuneToMorphEffectsModified));
             _dataImmuneToMorphEffects = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataImmuneToMorphEffects, SetDataImmuneToMorphEffects));
@@ -35,9 +35,9 @@ namespace War3Api.Object.Abilities
 
         public Ghost(int newId): base(1869113153, newId)
         {
-            _dataautoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataautoAcquireAttackTargetsRaw, SetDataautoAcquireAttackTargetsRaw));
-            _isDataautoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataautoAcquireAttackTargetsModified));
-            _dataautoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataautoAcquireAttackTargets, SetDataautoAcquireAttackTargets));
+            _dataAutoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAutoAcquireAttackTargetsRaw, SetDataAutoAcquireAttackTargetsRaw));
+            _isDataAutoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAutoAcquireAttackTargetsModified));
+            _dataAutoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAutoAcquireAttackTargets, SetDataAutoAcquireAttackTargets));
             _dataImmuneToMorphEffectsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataImmuneToMorphEffectsRaw, SetDataImmuneToMorphEffectsRaw));
             _isDataImmuneToMorphEffectsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataImmuneToMorphEffectsModified));
             _dataImmuneToMorphEffects = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataImmuneToMorphEffects, SetDataImmuneToMorphEffects));
@@ -48,9 +48,9 @@ namespace War3Api.Object.Abilities
 
         public Ghost(string newRawcode): base(1869113153, newRawcode)
         {
-            _dataautoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataautoAcquireAttackTargetsRaw, SetDataautoAcquireAttackTargetsRaw));
-            _isDataautoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataautoAcquireAttackTargetsModified));
-            _dataautoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataautoAcquireAttackTargets, SetDataautoAcquireAttackTargets));
+            _dataAutoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAutoAcquireAttackTargetsRaw, SetDataAutoAcquireAttackTargetsRaw));
+            _isDataAutoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAutoAcquireAttackTargetsModified));
+            _dataAutoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAutoAcquireAttackTargets, SetDataAutoAcquireAttackTargets));
             _dataImmuneToMorphEffectsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataImmuneToMorphEffectsRaw, SetDataImmuneToMorphEffectsRaw));
             _isDataImmuneToMorphEffectsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataImmuneToMorphEffectsModified));
             _dataImmuneToMorphEffects = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataImmuneToMorphEffects, SetDataImmuneToMorphEffects));
@@ -61,9 +61,9 @@ namespace War3Api.Object.Abilities
 
         public Ghost(ObjectDatabaseBase db): base(1869113153, db)
         {
-            _dataautoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataautoAcquireAttackTargetsRaw, SetDataautoAcquireAttackTargetsRaw));
-            _isDataautoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataautoAcquireAttackTargetsModified));
-            _dataautoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataautoAcquireAttackTargets, SetDataautoAcquireAttackTargets));
+            _dataAutoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAutoAcquireAttackTargetsRaw, SetDataAutoAcquireAttackTargetsRaw));
+            _isDataAutoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAutoAcquireAttackTargetsModified));
+            _dataAutoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAutoAcquireAttackTargets, SetDataAutoAcquireAttackTargets));
             _dataImmuneToMorphEffectsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataImmuneToMorphEffectsRaw, SetDataImmuneToMorphEffectsRaw));
             _isDataImmuneToMorphEffectsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataImmuneToMorphEffectsModified));
             _dataImmuneToMorphEffects = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataImmuneToMorphEffects, SetDataImmuneToMorphEffects));
@@ -74,9 +74,9 @@ namespace War3Api.Object.Abilities
 
         public Ghost(int newId, ObjectDatabaseBase db): base(1869113153, newId, db)
         {
-            _dataautoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataautoAcquireAttackTargetsRaw, SetDataautoAcquireAttackTargetsRaw));
-            _isDataautoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataautoAcquireAttackTargetsModified));
-            _dataautoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataautoAcquireAttackTargets, SetDataautoAcquireAttackTargets));
+            _dataAutoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAutoAcquireAttackTargetsRaw, SetDataAutoAcquireAttackTargetsRaw));
+            _isDataAutoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAutoAcquireAttackTargetsModified));
+            _dataAutoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAutoAcquireAttackTargets, SetDataAutoAcquireAttackTargets));
             _dataImmuneToMorphEffectsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataImmuneToMorphEffectsRaw, SetDataImmuneToMorphEffectsRaw));
             _isDataImmuneToMorphEffectsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataImmuneToMorphEffectsModified));
             _dataImmuneToMorphEffects = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataImmuneToMorphEffects, SetDataImmuneToMorphEffects));
@@ -87,9 +87,9 @@ namespace War3Api.Object.Abilities
 
         public Ghost(string newRawcode, ObjectDatabaseBase db): base(1869113153, newRawcode, db)
         {
-            _dataautoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataautoAcquireAttackTargetsRaw, SetDataautoAcquireAttackTargetsRaw));
-            _isDataautoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataautoAcquireAttackTargetsModified));
-            _dataautoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataautoAcquireAttackTargets, SetDataautoAcquireAttackTargets));
+            _dataAutoAcquireAttackTargetsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataAutoAcquireAttackTargetsRaw, SetDataAutoAcquireAttackTargetsRaw));
+            _isDataAutoAcquireAttackTargetsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAutoAcquireAttackTargetsModified));
+            _dataAutoAcquireAttackTargets = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataAutoAcquireAttackTargets, SetDataAutoAcquireAttackTargets));
             _dataImmuneToMorphEffectsRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataImmuneToMorphEffectsRaw, SetDataImmuneToMorphEffectsRaw));
             _isDataImmuneToMorphEffectsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataImmuneToMorphEffectsModified));
             _dataImmuneToMorphEffects = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataImmuneToMorphEffects, SetDataImmuneToMorphEffects));
@@ -98,38 +98,38 @@ namespace War3Api.Object.Abilities
             _dataDoesNotBlockBuildings = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataDoesNotBlockBuildings, SetDataDoesNotBlockBuildings));
         }
 
-        public ObjectProperty<int> DataautoAcquireAttackTargetsRaw => _dataautoAcquireAttackTargetsRaw.Value;
-        public ReadOnlyObjectProperty<bool> IsDataautoAcquireAttackTargetsModified => _isDataautoAcquireAttackTargetsModified.Value;
-        public ObjectProperty<bool> DataautoAcquireAttackTargets => _dataautoAcquireAttackTargets.Value;
+        public ObjectProperty<int> DataAutoAcquireAttackTargetsRaw => _dataAutoAcquireAttackTargetsRaw.Value;
+        public ReadOnlyObjectProperty<bool> IsDataAutoAcquireAttackTargetsModified => _isDataAutoAcquireAttackTargetsModified.Value;
+        public ObjectProperty<bool> DataAutoAcquireAttackTargets => _dataAutoAcquireAttackTargets.Value;
         public ObjectProperty<int> DataImmuneToMorphEffectsRaw => _dataImmuneToMorphEffectsRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataImmuneToMorphEffectsModified => _isDataImmuneToMorphEffectsModified.Value;
         public ObjectProperty<bool> DataImmuneToMorphEffects => _dataImmuneToMorphEffects.Value;
         public ObjectProperty<int> DataDoesNotBlockBuildingsRaw => _dataDoesNotBlockBuildingsRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataDoesNotBlockBuildingsModified => _isDataDoesNotBlockBuildingsModified.Value;
         public ObjectProperty<bool> DataDoesNotBlockBuildings => _dataDoesNotBlockBuildings.Value;
-        private int GetDataautoAcquireAttackTargetsRaw(int level)
+        private int GetDataAutoAcquireAttackTargetsRaw(int level)
         {
             return _modifications.GetModification(829384775, level).ValueAsInt;
         }
 
-        private void SetDataautoAcquireAttackTargetsRaw(int level, int value)
+        private void SetDataAutoAcquireAttackTargetsRaw(int level, int value)
         {
             _modifications[829384775, level] = new LevelObjectDataModification{Id = 829384775, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 1};
         }
 
-        private bool GetIsDataautoAcquireAttackTargetsModified(int level)
+        private bool GetIsDataAutoAcquireAttackTargetsModified(int level)
         {
             return _modifications.ContainsKey(829384775, level);
         }
 
-        private bool GetDataautoAcquireAttackTargets(int level)
+        private bool GetDataAutoAcquireAttackTargets(int level)
         {
-            return GetDataautoAcquireAttackTargetsRaw(level).ToBool(this);
+            return GetDataAutoAcquireAttackTargetsRaw(level).ToBool(this);
         }
 
-        private void SetDataautoAcquireAttackTargets(int level, bool value)
+        private void SetDataAutoAcquireAttackTargets(int level, bool value)
         {
-            SetDataautoAcquireAttackTargetsRaw(level, value.ToRaw(null, null));
+            SetDataAutoAcquireAttackTargetsRaw(level, value.ToRaw(null, null));
         }
 
         private int GetDataImmuneToMorphEffectsRaw(int level)

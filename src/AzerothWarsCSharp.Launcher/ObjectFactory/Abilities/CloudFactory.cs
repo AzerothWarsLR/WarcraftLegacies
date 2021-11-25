@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Abilities
         ability.StatsDurationHero[i + 1] = Duration[i];
         ability.DataAttacksPrevented[i + 1] = AttacksPrevented[i];
         ability.DataAttackSpeedModifier[i + 1] = AttackSpeedModifier[i];
-        ability.DataChanceToMiss[i + 1] = ChanceToMiss[i];
+        //ability.DataChanceToMiss[i + 1] = ChanceToMiss[i];
       }
     }
 

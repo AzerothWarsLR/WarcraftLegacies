@@ -13,12 +13,12 @@ namespace War3Api.Object.Abilities
     {
         private readonly Lazy<ObjectProperty<float>> _dataWaveDistance;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataWaveDistanceModified;
-        private readonly Lazy<ObjectProperty<float>> _dataWaveTimeSeconds;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataWaveTimeSecondsModified;
+        private readonly Lazy<ObjectProperty<float>> _dataWaveTimeseconds;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataWaveTimesecondsModified;
         private readonly Lazy<ObjectProperty<float>> _dataDamageDealt;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamageDealtModified;
-        private readonly Lazy<ObjectProperty<float>> _dataAirTimeSeconds;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAirTimeSecondsModified;
+        private readonly Lazy<ObjectProperty<float>> _dataAirTimeseconds;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAirTimesecondsModified;
         private readonly Lazy<ObjectProperty<int>> _dataUninterruptibleRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataUninterruptibleModified;
         private readonly Lazy<ObjectProperty<bool>> _dataUninterruptible;
@@ -29,12 +29,12 @@ namespace War3Api.Object.Abilities
         {
             _dataWaveDistance = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaveDistance, SetDataWaveDistance));
             _isDataWaveDistanceModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaveDistanceModified));
-            _dataWaveTimeSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaveTimeSeconds, SetDataWaveTimeSeconds));
-            _isDataWaveTimeSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaveTimeSecondsModified));
+            _dataWaveTimeseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaveTimeseconds, SetDataWaveTimeseconds));
+            _isDataWaveTimesecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaveTimesecondsModified));
             _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
             _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
-            _dataAirTimeSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAirTimeSeconds, SetDataAirTimeSeconds));
-            _isDataAirTimeSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirTimeSecondsModified));
+            _dataAirTimeseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAirTimeseconds, SetDataAirTimeseconds));
+            _isDataAirTimesecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirTimesecondsModified));
             _dataUninterruptibleRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUninterruptibleRaw, SetDataUninterruptibleRaw));
             _isDataUninterruptibleModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUninterruptibleModified));
             _dataUninterruptible = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUninterruptible, SetDataUninterruptible));
@@ -47,12 +47,12 @@ namespace War3Api.Object.Abilities
         {
             _dataWaveDistance = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaveDistance, SetDataWaveDistance));
             _isDataWaveDistanceModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaveDistanceModified));
-            _dataWaveTimeSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaveTimeSeconds, SetDataWaveTimeSeconds));
-            _isDataWaveTimeSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaveTimeSecondsModified));
+            _dataWaveTimeseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaveTimeseconds, SetDataWaveTimeseconds));
+            _isDataWaveTimesecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaveTimesecondsModified));
             _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
             _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
-            _dataAirTimeSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAirTimeSeconds, SetDataAirTimeSeconds));
-            _isDataAirTimeSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirTimeSecondsModified));
+            _dataAirTimeseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAirTimeseconds, SetDataAirTimeseconds));
+            _isDataAirTimesecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirTimesecondsModified));
             _dataUninterruptibleRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUninterruptibleRaw, SetDataUninterruptibleRaw));
             _isDataUninterruptibleModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUninterruptibleModified));
             _dataUninterruptible = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUninterruptible, SetDataUninterruptible));
@@ -65,12 +65,12 @@ namespace War3Api.Object.Abilities
         {
             _dataWaveDistance = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaveDistance, SetDataWaveDistance));
             _isDataWaveDistanceModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaveDistanceModified));
-            _dataWaveTimeSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaveTimeSeconds, SetDataWaveTimeSeconds));
-            _isDataWaveTimeSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaveTimeSecondsModified));
+            _dataWaveTimeseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaveTimeseconds, SetDataWaveTimeseconds));
+            _isDataWaveTimesecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaveTimesecondsModified));
             _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
             _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
-            _dataAirTimeSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAirTimeSeconds, SetDataAirTimeSeconds));
-            _isDataAirTimeSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirTimeSecondsModified));
+            _dataAirTimeseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAirTimeseconds, SetDataAirTimeseconds));
+            _isDataAirTimesecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirTimesecondsModified));
             _dataUninterruptibleRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUninterruptibleRaw, SetDataUninterruptibleRaw));
             _isDataUninterruptibleModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUninterruptibleModified));
             _dataUninterruptible = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUninterruptible, SetDataUninterruptible));
@@ -83,12 +83,12 @@ namespace War3Api.Object.Abilities
         {
             _dataWaveDistance = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaveDistance, SetDataWaveDistance));
             _isDataWaveDistanceModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaveDistanceModified));
-            _dataWaveTimeSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaveTimeSeconds, SetDataWaveTimeSeconds));
-            _isDataWaveTimeSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaveTimeSecondsModified));
+            _dataWaveTimeseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaveTimeseconds, SetDataWaveTimeseconds));
+            _isDataWaveTimesecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaveTimesecondsModified));
             _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
             _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
-            _dataAirTimeSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAirTimeSeconds, SetDataAirTimeSeconds));
-            _isDataAirTimeSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirTimeSecondsModified));
+            _dataAirTimeseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAirTimeseconds, SetDataAirTimeseconds));
+            _isDataAirTimesecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirTimesecondsModified));
             _dataUninterruptibleRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUninterruptibleRaw, SetDataUninterruptibleRaw));
             _isDataUninterruptibleModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUninterruptibleModified));
             _dataUninterruptible = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUninterruptible, SetDataUninterruptible));
@@ -101,12 +101,12 @@ namespace War3Api.Object.Abilities
         {
             _dataWaveDistance = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaveDistance, SetDataWaveDistance));
             _isDataWaveDistanceModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaveDistanceModified));
-            _dataWaveTimeSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaveTimeSeconds, SetDataWaveTimeSeconds));
-            _isDataWaveTimeSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaveTimeSecondsModified));
+            _dataWaveTimeseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaveTimeseconds, SetDataWaveTimeseconds));
+            _isDataWaveTimesecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaveTimesecondsModified));
             _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
             _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
-            _dataAirTimeSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAirTimeSeconds, SetDataAirTimeSeconds));
-            _isDataAirTimeSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirTimeSecondsModified));
+            _dataAirTimeseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAirTimeseconds, SetDataAirTimeseconds));
+            _isDataAirTimesecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirTimesecondsModified));
             _dataUninterruptibleRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUninterruptibleRaw, SetDataUninterruptibleRaw));
             _isDataUninterruptibleModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUninterruptibleModified));
             _dataUninterruptible = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUninterruptible, SetDataUninterruptible));
@@ -119,12 +119,12 @@ namespace War3Api.Object.Abilities
         {
             _dataWaveDistance = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaveDistance, SetDataWaveDistance));
             _isDataWaveDistanceModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaveDistanceModified));
-            _dataWaveTimeSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaveTimeSeconds, SetDataWaveTimeSeconds));
-            _isDataWaveTimeSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaveTimeSecondsModified));
+            _dataWaveTimeseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataWaveTimeseconds, SetDataWaveTimeseconds));
+            _isDataWaveTimesecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataWaveTimesecondsModified));
             _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
             _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
-            _dataAirTimeSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAirTimeSeconds, SetDataAirTimeSeconds));
-            _isDataAirTimeSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirTimeSecondsModified));
+            _dataAirTimeseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAirTimeseconds, SetDataAirTimeseconds));
+            _isDataAirTimesecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAirTimesecondsModified));
             _dataUninterruptibleRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUninterruptibleRaw, SetDataUninterruptibleRaw));
             _isDataUninterruptibleModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUninterruptibleModified));
             _dataUninterruptible = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUninterruptible, SetDataUninterruptible));
@@ -135,12 +135,12 @@ namespace War3Api.Object.Abilities
 
         public ObjectProperty<float> DataWaveDistance => _dataWaveDistance.Value;
         public ReadOnlyObjectProperty<bool> IsDataWaveDistanceModified => _isDataWaveDistanceModified.Value;
-        public ObjectProperty<float> DataWaveTimeSeconds => _dataWaveTimeSeconds.Value;
-        public ReadOnlyObjectProperty<bool> IsDataWaveTimeSecondsModified => _isDataWaveTimeSecondsModified.Value;
+        public ObjectProperty<float> DataWaveTimeseconds => _dataWaveTimeseconds.Value;
+        public ReadOnlyObjectProperty<bool> IsDataWaveTimesecondsModified => _isDataWaveTimesecondsModified.Value;
         public ObjectProperty<float> DataDamageDealt => _dataDamageDealt.Value;
         public ReadOnlyObjectProperty<bool> IsDataDamageDealtModified => _isDataDamageDealtModified.Value;
-        public ObjectProperty<float> DataAirTimeSeconds => _dataAirTimeSeconds.Value;
-        public ReadOnlyObjectProperty<bool> IsDataAirTimeSecondsModified => _isDataAirTimeSecondsModified.Value;
+        public ObjectProperty<float> DataAirTimeseconds => _dataAirTimeseconds.Value;
+        public ReadOnlyObjectProperty<bool> IsDataAirTimesecondsModified => _isDataAirTimesecondsModified.Value;
         public ObjectProperty<int> DataUninterruptibleRaw => _dataUninterruptibleRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataUninterruptibleModified => _isDataUninterruptibleModified.Value;
         public ObjectProperty<bool> DataUninterruptible => _dataUninterruptible.Value;
@@ -162,17 +162,17 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(829253973, level);
         }
 
-        private float GetDataWaveTimeSeconds(int level)
+        private float GetDataWaveTimeseconds(int level)
         {
             return _modifications.GetModification(846031189, level).ValueAsFloat;
         }
 
-        private void SetDataWaveTimeSeconds(int level, float value)
+        private void SetDataWaveTimeseconds(int level, float value)
         {
             _modifications[846031189, level] = new LevelObjectDataModification{Id = 846031189, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 2};
         }
 
-        private bool GetIsDataWaveTimeSecondsModified(int level)
+        private bool GetIsDataWaveTimesecondsModified(int level)
         {
             return _modifications.ContainsKey(846031189, level);
         }
@@ -192,17 +192,17 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(862808405, level);
         }
 
-        private float GetDataAirTimeSeconds(int level)
+        private float GetDataAirTimeseconds(int level)
         {
             return _modifications.GetModification(879585621, level).ValueAsFloat;
         }
 
-        private void SetDataAirTimeSeconds(int level, float value)
+        private void SetDataAirTimeseconds(int level, float value)
         {
             _modifications[879585621, level] = new LevelObjectDataModification{Id = 879585621, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 4};
         }
 
-        private bool GetIsDataAirTimeSecondsModified(int level)
+        private bool GetIsDataAirTimesecondsModified(int level)
         {
             return _modifications.ContainsKey(879585621, level);
         }

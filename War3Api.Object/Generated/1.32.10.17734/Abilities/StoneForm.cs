@@ -21,8 +21,8 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAltitudeAdjustmentDurationModified;
         private readonly Lazy<ObjectProperty<float>> _dataLandingDelayTime;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataLandingDelayTimeModified;
-        private readonly Lazy<ObjectProperty<float>> _dataLifeRegenerationRatePerSecond;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataLifeRegenerationRatePerSecondModified;
+        private readonly Lazy<ObjectProperty<float>> _dataLifeRegenerationRateperSecond;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataLifeRegenerationRateperSecondModified;
         private readonly Lazy<ObjectProperty<string>> _dataAlternateFormUnitRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAlternateFormUnitModified;
         private readonly Lazy<ObjectProperty<Unit>> _dataAlternateFormUnit;
@@ -38,8 +38,8 @@ namespace War3Api.Object.Abilities
             _isDataAltitudeAdjustmentDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAltitudeAdjustmentDurationModified));
             _dataLandingDelayTime = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLandingDelayTime, SetDataLandingDelayTime));
             _isDataLandingDelayTimeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLandingDelayTimeModified));
-            _dataLifeRegenerationRatePerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationRatePerSecond, SetDataLifeRegenerationRatePerSecond));
-            _isDataLifeRegenerationRatePerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeRegenerationRatePerSecondModified));
+            _dataLifeRegenerationRateperSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationRateperSecond, SetDataLifeRegenerationRateperSecond));
+            _isDataLifeRegenerationRateperSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeRegenerationRateperSecondModified));
             _dataAlternateFormUnitRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataAlternateFormUnitRaw, SetDataAlternateFormUnitRaw));
             _isDataAlternateFormUnitModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAlternateFormUnitModified));
             _dataAlternateFormUnit = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataAlternateFormUnit, SetDataAlternateFormUnit));
@@ -57,8 +57,8 @@ namespace War3Api.Object.Abilities
             _isDataAltitudeAdjustmentDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAltitudeAdjustmentDurationModified));
             _dataLandingDelayTime = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLandingDelayTime, SetDataLandingDelayTime));
             _isDataLandingDelayTimeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLandingDelayTimeModified));
-            _dataLifeRegenerationRatePerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationRatePerSecond, SetDataLifeRegenerationRatePerSecond));
-            _isDataLifeRegenerationRatePerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeRegenerationRatePerSecondModified));
+            _dataLifeRegenerationRateperSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationRateperSecond, SetDataLifeRegenerationRateperSecond));
+            _isDataLifeRegenerationRateperSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeRegenerationRateperSecondModified));
             _dataAlternateFormUnitRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataAlternateFormUnitRaw, SetDataAlternateFormUnitRaw));
             _isDataAlternateFormUnitModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAlternateFormUnitModified));
             _dataAlternateFormUnit = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataAlternateFormUnit, SetDataAlternateFormUnit));
@@ -76,8 +76,8 @@ namespace War3Api.Object.Abilities
             _isDataAltitudeAdjustmentDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAltitudeAdjustmentDurationModified));
             _dataLandingDelayTime = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLandingDelayTime, SetDataLandingDelayTime));
             _isDataLandingDelayTimeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLandingDelayTimeModified));
-            _dataLifeRegenerationRatePerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationRatePerSecond, SetDataLifeRegenerationRatePerSecond));
-            _isDataLifeRegenerationRatePerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeRegenerationRatePerSecondModified));
+            _dataLifeRegenerationRateperSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationRateperSecond, SetDataLifeRegenerationRateperSecond));
+            _isDataLifeRegenerationRateperSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeRegenerationRateperSecondModified));
             _dataAlternateFormUnitRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataAlternateFormUnitRaw, SetDataAlternateFormUnitRaw));
             _isDataAlternateFormUnitModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAlternateFormUnitModified));
             _dataAlternateFormUnit = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataAlternateFormUnit, SetDataAlternateFormUnit));
@@ -95,8 +95,8 @@ namespace War3Api.Object.Abilities
             _isDataAltitudeAdjustmentDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAltitudeAdjustmentDurationModified));
             _dataLandingDelayTime = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLandingDelayTime, SetDataLandingDelayTime));
             _isDataLandingDelayTimeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLandingDelayTimeModified));
-            _dataLifeRegenerationRatePerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationRatePerSecond, SetDataLifeRegenerationRatePerSecond));
-            _isDataLifeRegenerationRatePerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeRegenerationRatePerSecondModified));
+            _dataLifeRegenerationRateperSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationRateperSecond, SetDataLifeRegenerationRateperSecond));
+            _isDataLifeRegenerationRateperSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeRegenerationRateperSecondModified));
             _dataAlternateFormUnitRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataAlternateFormUnitRaw, SetDataAlternateFormUnitRaw));
             _isDataAlternateFormUnitModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAlternateFormUnitModified));
             _dataAlternateFormUnit = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataAlternateFormUnit, SetDataAlternateFormUnit));
@@ -114,8 +114,8 @@ namespace War3Api.Object.Abilities
             _isDataAltitudeAdjustmentDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAltitudeAdjustmentDurationModified));
             _dataLandingDelayTime = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLandingDelayTime, SetDataLandingDelayTime));
             _isDataLandingDelayTimeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLandingDelayTimeModified));
-            _dataLifeRegenerationRatePerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationRatePerSecond, SetDataLifeRegenerationRatePerSecond));
-            _isDataLifeRegenerationRatePerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeRegenerationRatePerSecondModified));
+            _dataLifeRegenerationRateperSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationRateperSecond, SetDataLifeRegenerationRateperSecond));
+            _isDataLifeRegenerationRateperSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeRegenerationRateperSecondModified));
             _dataAlternateFormUnitRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataAlternateFormUnitRaw, SetDataAlternateFormUnitRaw));
             _isDataAlternateFormUnitModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAlternateFormUnitModified));
             _dataAlternateFormUnit = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataAlternateFormUnit, SetDataAlternateFormUnit));
@@ -133,8 +133,8 @@ namespace War3Api.Object.Abilities
             _isDataAltitudeAdjustmentDurationModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAltitudeAdjustmentDurationModified));
             _dataLandingDelayTime = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLandingDelayTime, SetDataLandingDelayTime));
             _isDataLandingDelayTimeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLandingDelayTimeModified));
-            _dataLifeRegenerationRatePerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationRatePerSecond, SetDataLifeRegenerationRatePerSecond));
-            _isDataLifeRegenerationRatePerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeRegenerationRatePerSecondModified));
+            _dataLifeRegenerationRateperSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeRegenerationRateperSecond, SetDataLifeRegenerationRateperSecond));
+            _isDataLifeRegenerationRateperSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeRegenerationRateperSecondModified));
             _dataAlternateFormUnitRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataAlternateFormUnitRaw, SetDataAlternateFormUnitRaw));
             _isDataAlternateFormUnitModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAlternateFormUnitModified));
             _dataAlternateFormUnit = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataAlternateFormUnit, SetDataAlternateFormUnit));
@@ -150,8 +150,8 @@ namespace War3Api.Object.Abilities
         public ReadOnlyObjectProperty<bool> IsDataAltitudeAdjustmentDurationModified => _isDataAltitudeAdjustmentDurationModified.Value;
         public ObjectProperty<float> DataLandingDelayTime => _dataLandingDelayTime.Value;
         public ReadOnlyObjectProperty<bool> IsDataLandingDelayTimeModified => _isDataLandingDelayTimeModified.Value;
-        public ObjectProperty<float> DataLifeRegenerationRatePerSecond => _dataLifeRegenerationRatePerSecond.Value;
-        public ReadOnlyObjectProperty<bool> IsDataLifeRegenerationRatePerSecondModified => _isDataLifeRegenerationRatePerSecondModified.Value;
+        public ObjectProperty<float> DataLifeRegenerationRateperSecond => _dataLifeRegenerationRateperSecond.Value;
+        public ReadOnlyObjectProperty<bool> IsDataLifeRegenerationRateperSecondModified => _isDataLifeRegenerationRateperSecondModified.Value;
         public ObjectProperty<string> DataAlternateFormUnitRaw => _dataAlternateFormUnitRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataAlternateFormUnitModified => _isDataAlternateFormUnitModified.Value;
         public ObjectProperty<Unit> DataAlternateFormUnit => _dataAlternateFormUnit.Value;
@@ -235,17 +235,17 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(879062341, level);
         }
 
-        private float GetDataLifeRegenerationRatePerSecond(int level)
+        private float GetDataLifeRegenerationRateperSecond(int level)
         {
             return _modifications.GetModification(895841889, level).ValueAsFloat;
         }
 
-        private void SetDataLifeRegenerationRatePerSecond(int level, float value)
+        private void SetDataLifeRegenerationRateperSecond(int level, float value)
         {
             _modifications[895841889, level] = new LevelObjectDataModification{Id = 895841889, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 5};
         }
 
-        private bool GetIsDataLifeRegenerationRatePerSecondModified(int level)
+        private bool GetIsDataLifeRegenerationRateperSecondModified(int level)
         {
             return _modifications.ContainsKey(895841889, level);
         }

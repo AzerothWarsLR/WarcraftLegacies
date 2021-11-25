@@ -15,8 +15,8 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataHitPointsDrainedModified;
         private readonly Lazy<ObjectProperty<float>> _dataManaPointsDrained;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataManaPointsDrainedModified;
-        private readonly Lazy<ObjectProperty<float>> _dataDrainIntervalSeconds;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDrainIntervalSecondsModified;
+        private readonly Lazy<ObjectProperty<float>> _dataDrainIntervalseconds;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDrainIntervalsecondsModified;
         private readonly Lazy<ObjectProperty<float>> _dataLifeTransferredPerSecond;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataLifeTransferredPerSecondModified;
         private readonly Lazy<ObjectProperty<float>> _dataManaTransferredPerSecond;
@@ -38,8 +38,8 @@ namespace War3Api.Object.Abilities
             _isDataHitPointsDrainedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataHitPointsDrainedModified));
             _dataManaPointsDrained = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataManaPointsDrained, SetDataManaPointsDrained));
             _isDataManaPointsDrainedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataManaPointsDrainedModified));
-            _dataDrainIntervalSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDrainIntervalSeconds, SetDataDrainIntervalSeconds));
-            _isDataDrainIntervalSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDrainIntervalSecondsModified));
+            _dataDrainIntervalseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDrainIntervalseconds, SetDataDrainIntervalseconds));
+            _isDataDrainIntervalsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDrainIntervalsecondsModified));
             _dataLifeTransferredPerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeTransferredPerSecond, SetDataLifeTransferredPerSecond));
             _isDataLifeTransferredPerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeTransferredPerSecondModified));
             _dataManaTransferredPerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataManaTransferredPerSecond, SetDataManaTransferredPerSecond));
@@ -63,8 +63,8 @@ namespace War3Api.Object.Abilities
             _isDataHitPointsDrainedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataHitPointsDrainedModified));
             _dataManaPointsDrained = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataManaPointsDrained, SetDataManaPointsDrained));
             _isDataManaPointsDrainedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataManaPointsDrainedModified));
-            _dataDrainIntervalSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDrainIntervalSeconds, SetDataDrainIntervalSeconds));
-            _isDataDrainIntervalSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDrainIntervalSecondsModified));
+            _dataDrainIntervalseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDrainIntervalseconds, SetDataDrainIntervalseconds));
+            _isDataDrainIntervalsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDrainIntervalsecondsModified));
             _dataLifeTransferredPerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeTransferredPerSecond, SetDataLifeTransferredPerSecond));
             _isDataLifeTransferredPerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeTransferredPerSecondModified));
             _dataManaTransferredPerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataManaTransferredPerSecond, SetDataManaTransferredPerSecond));
@@ -88,8 +88,8 @@ namespace War3Api.Object.Abilities
             _isDataHitPointsDrainedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataHitPointsDrainedModified));
             _dataManaPointsDrained = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataManaPointsDrained, SetDataManaPointsDrained));
             _isDataManaPointsDrainedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataManaPointsDrainedModified));
-            _dataDrainIntervalSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDrainIntervalSeconds, SetDataDrainIntervalSeconds));
-            _isDataDrainIntervalSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDrainIntervalSecondsModified));
+            _dataDrainIntervalseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDrainIntervalseconds, SetDataDrainIntervalseconds));
+            _isDataDrainIntervalsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDrainIntervalsecondsModified));
             _dataLifeTransferredPerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeTransferredPerSecond, SetDataLifeTransferredPerSecond));
             _isDataLifeTransferredPerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeTransferredPerSecondModified));
             _dataManaTransferredPerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataManaTransferredPerSecond, SetDataManaTransferredPerSecond));
@@ -113,8 +113,8 @@ namespace War3Api.Object.Abilities
             _isDataHitPointsDrainedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataHitPointsDrainedModified));
             _dataManaPointsDrained = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataManaPointsDrained, SetDataManaPointsDrained));
             _isDataManaPointsDrainedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataManaPointsDrainedModified));
-            _dataDrainIntervalSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDrainIntervalSeconds, SetDataDrainIntervalSeconds));
-            _isDataDrainIntervalSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDrainIntervalSecondsModified));
+            _dataDrainIntervalseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDrainIntervalseconds, SetDataDrainIntervalseconds));
+            _isDataDrainIntervalsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDrainIntervalsecondsModified));
             _dataLifeTransferredPerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeTransferredPerSecond, SetDataLifeTransferredPerSecond));
             _isDataLifeTransferredPerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeTransferredPerSecondModified));
             _dataManaTransferredPerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataManaTransferredPerSecond, SetDataManaTransferredPerSecond));
@@ -138,8 +138,8 @@ namespace War3Api.Object.Abilities
             _isDataHitPointsDrainedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataHitPointsDrainedModified));
             _dataManaPointsDrained = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataManaPointsDrained, SetDataManaPointsDrained));
             _isDataManaPointsDrainedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataManaPointsDrainedModified));
-            _dataDrainIntervalSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDrainIntervalSeconds, SetDataDrainIntervalSeconds));
-            _isDataDrainIntervalSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDrainIntervalSecondsModified));
+            _dataDrainIntervalseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDrainIntervalseconds, SetDataDrainIntervalseconds));
+            _isDataDrainIntervalsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDrainIntervalsecondsModified));
             _dataLifeTransferredPerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeTransferredPerSecond, SetDataLifeTransferredPerSecond));
             _isDataLifeTransferredPerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeTransferredPerSecondModified));
             _dataManaTransferredPerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataManaTransferredPerSecond, SetDataManaTransferredPerSecond));
@@ -163,8 +163,8 @@ namespace War3Api.Object.Abilities
             _isDataHitPointsDrainedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataHitPointsDrainedModified));
             _dataManaPointsDrained = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataManaPointsDrained, SetDataManaPointsDrained));
             _isDataManaPointsDrainedModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataManaPointsDrainedModified));
-            _dataDrainIntervalSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDrainIntervalSeconds, SetDataDrainIntervalSeconds));
-            _isDataDrainIntervalSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDrainIntervalSecondsModified));
+            _dataDrainIntervalseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDrainIntervalseconds, SetDataDrainIntervalseconds));
+            _isDataDrainIntervalsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDrainIntervalsecondsModified));
             _dataLifeTransferredPerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLifeTransferredPerSecond, SetDataLifeTransferredPerSecond));
             _isDataLifeTransferredPerSecondModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLifeTransferredPerSecondModified));
             _dataManaTransferredPerSecond = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataManaTransferredPerSecond, SetDataManaTransferredPerSecond));
@@ -186,8 +186,8 @@ namespace War3Api.Object.Abilities
         public ReadOnlyObjectProperty<bool> IsDataHitPointsDrainedModified => _isDataHitPointsDrainedModified.Value;
         public ObjectProperty<float> DataManaPointsDrained => _dataManaPointsDrained.Value;
         public ReadOnlyObjectProperty<bool> IsDataManaPointsDrainedModified => _isDataManaPointsDrainedModified.Value;
-        public ObjectProperty<float> DataDrainIntervalSeconds => _dataDrainIntervalSeconds.Value;
-        public ReadOnlyObjectProperty<bool> IsDataDrainIntervalSecondsModified => _isDataDrainIntervalSecondsModified.Value;
+        public ObjectProperty<float> DataDrainIntervalseconds => _dataDrainIntervalseconds.Value;
+        public ReadOnlyObjectProperty<bool> IsDataDrainIntervalsecondsModified => _isDataDrainIntervalsecondsModified.Value;
         public ObjectProperty<float> DataLifeTransferredPerSecond => _dataLifeTransferredPerSecond.Value;
         public ReadOnlyObjectProperty<bool> IsDataLifeTransferredPerSecondModified => _isDataLifeTransferredPerSecondModified.Value;
         public ObjectProperty<float> DataManaTransferredPerSecond => _dataManaTransferredPerSecond.Value;
@@ -233,17 +233,17 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(846357582, level);
         }
 
-        private float GetDataDrainIntervalSeconds(int level)
+        private float GetDataDrainIntervalseconds(int level)
         {
             return _modifications.GetModification(863134798, level).ValueAsFloat;
         }
 
-        private void SetDataDrainIntervalSeconds(int level, float value)
+        private void SetDataDrainIntervalseconds(int level, float value)
         {
             _modifications[863134798, level] = new LevelObjectDataModification{Id = 863134798, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 3};
         }
 
-        private bool GetIsDataDrainIntervalSecondsModified(int level)
+        private bool GetIsDataDrainIntervalsecondsModified(int level)
         {
             return _modifications.ContainsKey(863134798, level);
         }

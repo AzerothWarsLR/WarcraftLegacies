@@ -248,20 +248,20 @@ namespace War3Api.Object
             set => EditorIgnoreModelClicksRaw = value.ToRaw(null, null);
         }
 
-        public float ArtMaximumPitchAngleDegrees
+        public float ArtMaximumPitchAngledegrees
         {
             get => _modifications.GetModification(1885433188).ValueAsFloat;
             set => _modifications[1885433188] = new VariationObjectDataModification{Id = 1885433188, Type = ObjectDataType.Unreal, Value = value, Variation = 0};
         }
 
-        public bool IsArtMaximumPitchAngleDegreesModified => _modifications.ContainsKey(1885433188);
-        public float ArtMaxRollAngleDegrees
+        public bool IsArtMaximumPitchAngledegreesModified => _modifications.ContainsKey(1885433188);
+        public float ArtMaxRollAngledegrees
         {
             get => _modifications.GetModification(1918987620).ValueAsFloat;
             set => _modifications[1918987620] = new VariationObjectDataModification{Id = 1918987620, Type = ObjectDataType.Unreal, Value = value, Variation = 0};
         }
 
-        public bool IsArtMaxRollAngleDegreesModified => _modifications.ContainsKey(1918987620);
+        public bool IsArtMaxRollAngledegreesModified => _modifications.ContainsKey(1918987620);
         public float ArtVisibilityRadius
         {
             get => _modifications.GetModification(1936291428).ValueAsFloat;

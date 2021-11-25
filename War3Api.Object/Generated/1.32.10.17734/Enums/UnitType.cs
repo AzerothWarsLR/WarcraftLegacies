@@ -63,12 +63,6 @@ namespace War3Api.Object.Enums
         Waterelemental2 = 846493544,
         /// <summary>Waterelemental 3 ('hwt3').</summary>
         Waterelemental3 = 863270760,
-        /// <summary>Lavaspawn ('nlv1').</summary>
-        Lavaspawn = 829844590,
-        /// <summary>Lavaspawn 2 ('nlv2').</summary>
-        Lavaspawn2 = 846621806,
-        /// <summary>Lavaspawn 3 ('nlv3').</summary>
-        Lavaspawn3 = 863399022,
         /// <summary>Altarofkings ('halt').</summary>
         Altarofkings = 1953259880,
         /// <summary>Workshop ('harm').</summary>
@@ -111,14 +105,6 @@ namespace War3Api.Object.Enums
         Shadowhunter = 1684566863,
         /// <summary>Taurenchieftain ('Otch').</summary>
         Taurenchieftain = 1751348303,
-        /// <summary>Demolisherdraenei ('ncat').</summary>
-        Demolisherdraenei = 1952539502,
-        /// <summary>Spiritbeast ('nsw1').</summary>
-        Spiritbeast = 829911918,
-        /// <summary>Spiritbeast 2 ('nsw2').</summary>
-        Spiritbeast2 = 846689134,
-        /// <summary>Spiritbeast 3 ('nsw3').</summary>
-        Spiritbeast3 = 863466350,
         /// <summary>Watcherward ('nwad').</summary>
         Watcherward = 1684109166,
         /// <summary>Orcishtransportship ('obot').</summary>
@@ -363,62 +349,70 @@ namespace War3Api.Object.Enums
         Frosttower = 845642357,
         /// <summary>Ziggurat ('uzig').</summary>
         Ziggurat = 1734965877,
-        /// <summary>Alchemistmorph 2 ('Nal2').</summary>
-        Alchemistmorph2 = 845963598,
-        /// <summary>Alchemistmorph 3 ('Nal3').</summary>
-        Alchemistmorph3 = 862740814,
-        /// <summary>Alchemist ('Nalc').</summary>
-        Alchemist = 1668047182,
-        /// <summary>Alchemistmorph ('Nalm').</summary>
-        Alchemistmorph = 1835819342,
         /// <summary>Darkranger ('Nbrn').</summary>
         Darkranger = 1852990030,
         /// <summary>Beastmaster ('Nbst').</summary>
         Beastmaster = 1953718862,
-        /// <summary>Firelord ('Nfir').</summary>
-        Firelord = 1919510094,
         /// <summary>Seawitch ('Nngs').</summary>
         Seawitch = 1936158286,
         /// <summary>Pandarenbrewmaster ('Npbm').</summary>
         Pandarenbrewmaster = 1835167822,
-        /// <summary>Pitlord ('Nplh').</summary>
-        Pitlord = 1751937102,
-        /// <summary>Robogoblintinker ('Nrob').</summary>
-        Robogoblintinker = 1651470926,
+        /// <summary>Alchemist ('Nalc').</summary>
+        Alchemist = 1668047182,
+        /// <summary>Alchemistmorph ('Nalm').</summary>
+        Alchemistmorph = 1835819342,
+        /// <summary>Alchemistmorph 2 ('Nal2').</summary>
+        Alchemistmorph2 = 845963598,
+        /// <summary>Alchemistmorph 3 ('Nal3').</summary>
+        Alchemistmorph3 = 862740814,
         /// <summary>Tinker ('Ntin').</summary>
         Tinker = 1852404814,
+        /// <summary>Robogoblintinker ('Nrob').</summary>
+        Robogoblintinker = 1651470926,
+        /// <summary>Clockwerkgoblin 1 ('ncgb').</summary>
+        Clockwerkgoblin1 = 1650942830,
         /// <summary>Clockwerkgoblin 2 ('ncg1').</summary>
         Clockwerkgoblin2 = 828859246,
         /// <summary>Clockwerkgoblin 3 ('ncg2').</summary>
         Clockwerkgoblin3 = 845636462,
         /// <summary>Clockwerkgoblin 4 ('ncg3').</summary>
         Clockwerkgoblin4 = 862413678,
-        /// <summary>Clockwerkgoblin 1 ('ncgb').</summary>
-        Clockwerkgoblin1 = 1650942830,
+        /// <summary>Pocketfactory ('nfac').</summary>
+        Pocketfactory = 1667327598,
+        /// <summary>Pocketfactory 2 ('nfa1').</summary>
+        Pocketfactory2 = 828466798,
+        /// <summary>Pocketfactory 3 ('nfa2').</summary>
+        Pocketfactory3 = 845244014,
+        /// <summary>Pitlord ('Nplh').</summary>
+        Pitlord = 1751937102,
+        /// <summary>Firelord ('Nfir').</summary>
+        Firelord = 1919510094,
+        /// <summary>Lavaspawn ('nlv1').</summary>
+        Lavaspawn = 829844590,
+        /// <summary>Lavaspawn 2 ('nlv2').</summary>
+        Lavaspawn2 = 846621806,
+        /// <summary>Lavaspawn 3 ('nlv3').</summary>
+        Lavaspawn3 = 863399022,
         /// <summary>Darkminion 1 ('ndr1').</summary>
         Darkminion1 = 829580398,
         /// <summary>Darkminion 2 ('ndr2').</summary>
         Darkminion2 = 846357614,
         /// <summary>Darkminion 3 ('ndr3').</summary>
         Darkminion3 = 863134830,
-        /// <summary>Pocketfactory 2 ('nfa1').</summary>
-        Pocketfactory2 = 828466798,
-        /// <summary>Pocketfactory 3 ('nfa2').</summary>
-        Pocketfactory3 = 845244014,
-        /// <summary>Pocketfactory ('nfac').</summary>
-        Pocketfactory = 1667327598,
         /// <summary>Grizzlybear 1 ('ngz1').</summary>
         Grizzlybear1 = 830105454,
         /// <summary>Grizzlybear 2 ('ngz2').</summary>
         Grizzlybear2 = 846882670,
         /// <summary>Grizzlybear 3 ('ngz3').</summary>
         Grizzlybear3 = 863659886,
-        /// <summary>Misha 4 ('ngz4').</summary>
-        Misha4 = 880437102,
         /// <summary>Misha 1 ('ngzc').</summary>
         Misha1 = 1668966254,
         /// <summary>Misha 2 ('ngzd').</summary>
         Misha2 = 1685743470,
+        /// <summary>Misha 3 ('ngza').</summary>
+        Misha3 = 1635411822,
+        /// <summary>Misha 4 ('ngz4').</summary>
+        Misha4 = 880437102,
         /// <summary>Panda 1 ('npn1').</summary>
         Panda1 = 829321326,
         /// <summary>Panda 2 ('npn2').</summary>
@@ -455,12 +449,12 @@ namespace War3Api.Object.Enums
         Ancienthydra = 2036883822,
         /// <summary>Barbedarachnathid ('nanb').</summary>
         Barbedarachnathid = 1651401070,
+        /// <summary>Barbedarachnathidmerc ('nanm').</summary>
+        Barbedarachnathidmerc = 1835950446,
         /// <summary>Crystalarachnathid ('nanc').</summary>
         Crystalarachnathid = 1668178286,
         /// <summary>Earthborerarachnathid ('nane').</summary>
         Earthborerarachnathid = 1701732718,
-        /// <summary>Barbedarachnathidmerc ('nanm').</summary>
-        Barbedarachnathidmerc = 1835950446,
         /// <summary>Overlordarachnathid ('nano').</summary>
         Overlordarachnathid = 1869504878,
         /// <summary>Warriorarachnathid ('nanw').</summary>
@@ -469,10 +463,10 @@ namespace War3Api.Object.Enums
         Battlegolem = 1735549294,
         /// <summary>Assassin ('nass').</summary>
         Assassin = 1936941422,
-        /// <summary>Doomguardsummoned ('nba2').</summary>
-        Doomguardsummoned = 845242990,
         /// <summary>Doomguard ('nbal').</summary>
         Doomguard = 1818321518,
+        /// <summary>Doomguardsummoned ('nba2').</summary>
+        Doomguardsummoned = 845242990,
         /// <summary>Bandit ('nban').</summary>
         Bandit = 1851875950,
         /// <summary>Bluedragonspawnapprentice ('nbda').</summary>
@@ -513,8 +507,6 @@ namespace War3Api.Object.Enums
         Centaurdrudge = 1919247214,
         /// <summary>Wateryminioncliffrunner ('ncfs').</summary>
         Wateryminioncliffrunner = 1936089966,
-        /// <summary>Chaplain ('nchp').</summary>
-        Chaplain = 1885889390,
         /// <summary>Centaurimpaler ('ncim').</summary>
         Centaurimpaler = 1835623278,
         /// <summary>Centaursorceror ('ncks').</summary>
@@ -655,8 +647,6 @@ namespace War3Api.Object.Enums
         Goblinsapper = 1886611310,
         /// <summary>Rockgolem ('ngst').</summary>
         Rockgolem_ngst = 1953720174,
-        /// <summary>Misha 3 ('ngza').</summary>
-        Misha3 = 1635411822,
         /// <summary>Harpyscout ('nhar').</summary>
         Harpyscout = 1918986350,
         /// <summary>Deceiver ('nhdc').</summary>
@@ -679,8 +669,6 @@ namespace War3Api.Object.Enums
         Hydra = 1685678190,
         /// <summary>Hydrahatchling ('nhyh').</summary>
         Hydrahatchling = 1752787054,
-        /// <summary>Hydromancer ('nhym').</summary>
-        Hydromancer = 1836673134,
         /// <summary>Infernaljuggernaut ('nina').</summary>
         Infernaljuggernaut = 1634625902,
         /// <summary>Infernalcontraption ('ninc').</summary>
@@ -701,12 +689,12 @@ namespace War3Api.Object.Enums
         Icetrolltrapper = 1953786222,
         /// <summary>Icetrollwarlord ('nitw').</summary>
         Icetrollwarlord = 2004117870,
-        /// <summary>Junglestalker ('njg1').</summary>
-        Junglestalker = 828861038,
-        /// <summary>Elderjunglestalker ('njga').</summary>
-        Elderjunglestalker = 1634167406,
         /// <summary>Enrangedjunglestalker ('njgb').</summary>
         Enrangedjunglestalker = 1650944622,
+        /// <summary>Elderjunglestalker ('njga').</summary>
+        Elderjunglestalker = 1634167406,
+        /// <summary>Junglestalker ('njg1').</summary>
+        Junglestalker = 828861038,
         /// <summary>Kobold ('nkob').</summary>
         Kobold = 1651469166,
         /// <summary>Koboldgeomancer ('nkog').</summary>
@@ -871,12 +859,8 @@ namespace War3Api.Object.Enums
         Spidercrab2 = 845378414,
         /// <summary>Spidercrab 3 ('nsc3').</summary>
         Spidercrab3 = 862155630,
-        /// <summary>Skeletalarchersummoned ('nsca').</summary>
-        Skeletalarchersummoned = 1633907566,
         /// <summary>Spidercrab ('nscb').</summary>
         Spidercrab = 1650684782,
-        /// <summary>Skeletonsummoned ('nsce').</summary>
-        Skeletonsummoned = 1701016430,
         /// <summary>Seaelemental ('nsel').</summary>
         Seaelemental = 1818588014,
         /// <summary>Seagiantbehemoth ('nsgb').</summary>
@@ -893,6 +877,10 @@ namespace War3Api.Object.Enums
         Skeletalarcher = 1634431854,
         /// <summary>Skeleton ('nske').</summary>
         Skeleton = 1701540718,
+        /// <summary>Skeletalarchersummoned ('nsca').</summary>
+        Skeletalarchersummoned = 1633907566,
+        /// <summary>Skeletonsummoned ('nsce').</summary>
+        Skeletonsummoned = 1701016430,
         /// <summary>Burningarcher ('nskf').</summary>
         Burningarcher = 1718317934,
         /// <summary>Giantskeleton ('nskg').</summary>
@@ -1049,8 +1037,20 @@ namespace War3Api.Object.Enums
         Zombie = 1836022382,
         /// <summary>Zombiefemale ('nzof').</summary>
         Zombiefemale = 1718581870,
+        /// <summary>Chaplain ('nchp').</summary>
+        Chaplain = 1885889390,
+        /// <summary>Hydromancer ('nhym').</summary>
+        Hydromancer = 1836673134,
         /// <summary>Albatross ('nalb').</summary>
         Albatross = 1651269998,
+        /// <summary>Frog ('nfro').</summary>
+        Frog = 1869768302,
+        /// <summary>Chicken ('nech').</summary>
+        Chicken = 1751344494,
+        /// <summary>Rabbit ('necr').</summary>
+        Rabbit = 1919116654,
+        /// <summary>Raccoon ('nrac').</summary>
+        Raccoon = 1667330670,
         /// <summary>Crab ('ncrb').</summary>
         Crab = 1651663726,
         /// <summary>Deer ('nder').</summary>
@@ -1059,14 +1059,8 @@ namespace War3Api.Object.Enums
         Dog_ndog = 1735353454,
         /// <summary>Duneworm ('ndwm').</summary>
         Duneworm = 1836541038,
-        /// <summary>Chicken ('nech').</summary>
-        Chicken = 1751344494,
-        /// <summary>Rabbit ('necr').</summary>
-        Rabbit = 1919116654,
         /// <summary>Felboar ('nfbr').</summary>
         Felboar = 1919051374,
-        /// <summary>Frog ('nfro').</summary>
-        Frog = 1869768302,
         /// <summary>Hermitcrab ('nhmc').</summary>
         Hermitcrab = 1668114542,
         /// <summary>Owl 2 ('now2').</summary>
@@ -1081,8 +1075,6 @@ namespace War3Api.Object.Enums
         Penguin = 1735290990,
         /// <summary>Waterpenguin ('npnw').</summary>
         Waterpenguin = 2003726446,
-        /// <summary>Raccoon ('nrac').</summary>
-        Raccoon = 1667330670,
         /// <summary>Rat ('nrat').</summary>
         Rat = 1952543342,
         /// <summary>Seal ('nsea').</summary>
@@ -1303,8 +1295,6 @@ namespace War3Api.Object.Enums
         Arthas = 1953653064,
         /// <summary>Dagren ('Hdgo').</summary>
         Dagren = 1869046856,
-        /// <summary>Ghostlyarchmage ('Hgam').</summary>
-        Ghostlyarchmage = 1835099976,
         /// <summary>Halahk ('Hhkl').</summary>
         Halahk = 1818978376,
         /// <summary>Jaina ('Hjai').</summary>
@@ -1327,14 +1317,12 @@ namespace War3Api.Object.Enums
         Ladyvashj = 1752397384,
         /// <summary>Sylvanuswindrunner ('Hvwd').</summary>
         Sylvanuswindrunner_Hvwd = 1685550664,
-        /// <summary>Akama ('Naka').</summary>
-        Akama = 1634427214,
         /// <summary>Blackrockblademaster ('Nbbc').</summary>
         Blackrockblademaster = 1667392078,
-        /// <summary>Kiljaedencinematic ('Nkjx').</summary>
-        Kiljaedencinematic = 2020240206,
         /// <summary>Kiljaeden ('Nklj').</summary>
         Kiljaeden = 1785490254,
+        /// <summary>Kiljaedencinematic ('Nkjx').</summary>
+        Kiljaedencinematic = 2020240206,
         /// <summary>Magtheridon ('Nmag').</summary>
         Magtheridon = 1734438222,
         /// <summary>Mannoroth ('Nman').</summary>
@@ -1343,10 +1331,10 @@ namespace War3Api.Object.Enums
         Oldpitlord = 1684828238,
         /// <summary>Sinjostormstout ('Nsjs').</summary>
         Sinjostormstout = 1936356174,
-        /// <summary>Cairnebloodhoofexp ('Ocb2').</summary>
-        Cairnebloodhoofexp = 845308751,
         /// <summary>Cairnebloodhoof ('Ocbh').</summary>
         Cairnebloodhoof = 1751278415,
+        /// <summary>Cairnebloodhoofexp ('Ocb2').</summary>
+        Cairnebloodhoofexp = 845308751,
         /// <summary>Drekthar ('Odrt').</summary>
         Drekthar = 1953653839,
         /// <summary>Guldan ('Ogld').</summary>
@@ -1391,6 +1379,8 @@ namespace War3Api.Object.Enums
         Vengyr = 1735292501,
         /// <summary>Archimonde ('Uwar').</summary>
         Archimonde = 1918990165,
+        /// <summary>Ghostlyarchmage ('Hgam').</summary>
+        Ghostlyarchmage = 1835099976,
         /// <summary>Illidanwagon ('eilw').</summary>
         Illidanwagon = 2003593573,
         /// <summary>Nightelfrunner ('enec').</summary>
@@ -1409,10 +1399,18 @@ namespace War3Api.Object.Enums
         Riderlesshorse = 1818519656,
         /// <summary>Highelvenswordsman ('hhes').</summary>
         Highelvenswordsman = 1936025704,
-        /// <summary>Shimmeringportal ('hprt').</summary>
-        Shimmeringportal = 1953656936,
         /// <summary>Packhorse ('hrdh').</summary>
         Packhorse = 1751413352,
+        /// <summary>Akama ('Naka').</summary>
+        Akama = 1634427214,
+        /// <summary>Spiritbeast ('nsw1').</summary>
+        Spiritbeast = 829911918,
+        /// <summary>Spiritbeast 2 ('nsw2').</summary>
+        Spiritbeast2 = 846689134,
+        /// <summary>Spiritbeast 3 ('nsw3').</summary>
+        Spiritbeast3 = 863466350,
+        /// <summary>Demolisherdraenei ('ncat').</summary>
+        Demolisherdraenei = 1952539502,
         /// <summary>Bloodelfengineer ('nbee').</summary>
         Bloodelfengineer = 1701143150,
         /// <summary>Bloodelflieutenant ('nbel').</summary>
@@ -1433,26 +1431,26 @@ namespace War3Api.Object.Enums
         Dalaranmutant = 1970103406,
         /// <summary>Draeneidarkslayer ('ndrd').</summary>
         Draeneidarkslayer = 1685218414,
+        /// <summary>Draeneivindicator ('ndrn').</summary>
+        Draeneivindicator = 1852990574,
+        /// <summary>Draeneistalker ('ndrt').</summary>
+        Draeneistalker = 1953653870,
         /// <summary>Draeneiguardian ('ndrf').</summary>
         Draeneiguardian = 1718772846,
         /// <summary>Draeneiharbinger ('ndrh').</summary>
         Draeneiharbinger = 1752327278,
         /// <summary>Dalaranreject ('ndrj').</summary>
         Dalaranreject = 1785881710,
-        /// <summary>Draeneilaborer ('ndrl').</summary>
-        Draeneilaborer = 1819436142,
         /// <summary>Draeneidisciple ('ndrm').</summary>
         Draeneidisciple = 1836213358,
-        /// <summary>Draeneivindicator ('ndrn').</summary>
-        Draeneivindicator = 1852990574,
         /// <summary>Draeneiprotector ('ndrp').</summary>
         Draeneiprotector = 1886545006,
         /// <summary>Draeneiseer ('ndrs').</summary>
         Draeneiseer = 1936876654,
-        /// <summary>Draeneistalker ('ndrt').</summary>
-        Draeneistalker = 1953653870,
         /// <summary>Draeneiwatcher ('ndrw').</summary>
         Draeneiwatcher = 2003985518,
+        /// <summary>Draeneilaborer ('ndrl').</summary>
+        Draeneilaborer = 1819436142,
         /// <summary>Draeneisalamander ('ndsa').</summary>
         Draeneisalamander = 1634952302,
         /// <summary>Engineergazlowe ('negz').</summary>
@@ -1493,8 +1491,6 @@ namespace War3Api.Object.Enums
         War2warlock = 1999796078,
         /// <summary>Watcher ('nwat').</summary>
         Watcher = 1952544622,
-        /// <summary>Lichking ('nzlc').</summary>
-        Lichking = 1668053614,
         /// <summary>Drakthul ('odkt').</summary>
         Drakthul = 1953195119,
         /// <summary>Garthok ('ogrk').</summary>
@@ -1533,16 +1529,14 @@ namespace War3Api.Object.Enums
         Kelthuzadnecro = 1853123445,
         /// <summary>Sylvanusbanshee ('uswb').</summary>
         Sylvanusbanshee = 1651995509,
+        /// <summary>Shimmeringportal ('hprt').</summary>
+        Shimmeringportal = 1953656936,
         /// <summary>Arcaneobservatory ('haro').</summary>
         Arcaneobservatory = 1869767016,
         /// <summary>Bloodfountain ('nbfl').</summary>
         Bloodfountain = 1818649198,
-        /// <summary>Bindstonese ('nbse').</summary>
-        Bindstonese = 1702060654,
         /// <summary>Bookofsummoning ('nbsm').</summary>
         Bookofsummoning = 1836278382,
-        /// <summary>Bindstonesw ('nbsw').</summary>
-        Bindstonesw = 2004050542,
         /// <summary>Bouldertower ('nbt1').</summary>
         Bouldertower = 829710958,
         /// <summary>Bouldertowerupgrade ('nbt2').</summary>
@@ -1673,10 +1667,14 @@ namespace War3Api.Object.Enums
         Wyverncage3 = 862156654,
         /// <summary>Wyverncage 4 ('nwc4').</summary>
         Wyverncage4 = 878933870,
-        /// <summary>Zoneindicator ('nzin').</summary>
-        Zoneindicator = 1852406382,
         /// <summary>Chaosorcburrow ('ocbw').</summary>
         Chaosorcburrow = 2002936687,
+        /// <summary>Zoneindicator ('nzin').</summary>
+        Zoneindicator = 1852406382,
+        /// <summary>Bindstonese ('nbse').</summary>
+        Bindstonese = 1702060654,
+        /// <summary>Bindstonesw ('nbsw').</summary>
+        Bindstonesw = 2004050542,
         /// <summary>Chaosspaceorc ('zcso').</summary>
         Chaosspaceorc = 1869833082,
         /// <summary>Hydralisk ('zhyd').</summary>
@@ -1691,6 +1689,8 @@ namespace War3Api.Object.Enums
         Sammycube = 1668117370,
         /// <summary>Zergling ('zzrg').</summary>
         Zergling = 1735555706,
+        /// <summary>Lichking ('nzlc').</summary>
+        Lichking = 1668053614,
         /// <summary>Murlocsorcerer ('Nmsr').</summary>
         Murlocsorcerer = 1920167246,
         /// <summary>Seawitch 2 ('Nswt').</summary>
@@ -1738,6 +1738,8 @@ namespace War3Api.Object.Enums
         /// <summary>Thaloriendawnseeker ('Hddt').</summary>
         Thaloriendawnseeker = 1952736328,
         /// <summary>Wolfrider ('owad').</summary>
-        Wolfrider_owad = 1684109167
+        Wolfrider_owad = 1684109167,
+        /// <summary>Mercenary camp K ('nrmf').</summary>
+        MercenaryCampK = 1718448750
     }
 }

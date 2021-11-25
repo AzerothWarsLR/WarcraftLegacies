@@ -15,8 +15,8 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataNumberOfLuresModified;
         private readonly Lazy<ObjectProperty<float>> _dataActivationDelay;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataActivationDelayModified;
-        private readonly Lazy<ObjectProperty<float>> _dataLureIntervalSeconds;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataLureIntervalSecondsModified;
+        private readonly Lazy<ObjectProperty<float>> _dataLureIntervalseconds;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataLureIntervalsecondsModified;
         private readonly Lazy<ObjectProperty<string>> _dataLureUnitTypeRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataLureUnitTypeModified;
         private readonly Lazy<ObjectProperty<Unit>> _dataLureUnitType;
@@ -26,8 +26,8 @@ namespace War3Api.Object.Abilities
             _isDataNumberOfLuresModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfLuresModified));
             _dataActivationDelay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataActivationDelay, SetDataActivationDelay));
             _isDataActivationDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataActivationDelayModified));
-            _dataLureIntervalSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLureIntervalSeconds, SetDataLureIntervalSeconds));
-            _isDataLureIntervalSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLureIntervalSecondsModified));
+            _dataLureIntervalseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLureIntervalseconds, SetDataLureIntervalseconds));
+            _isDataLureIntervalsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLureIntervalsecondsModified));
             _dataLureUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataLureUnitTypeRaw, SetDataLureUnitTypeRaw));
             _isDataLureUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLureUnitTypeModified));
             _dataLureUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataLureUnitType, SetDataLureUnitType));
@@ -39,8 +39,8 @@ namespace War3Api.Object.Abilities
             _isDataNumberOfLuresModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfLuresModified));
             _dataActivationDelay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataActivationDelay, SetDataActivationDelay));
             _isDataActivationDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataActivationDelayModified));
-            _dataLureIntervalSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLureIntervalSeconds, SetDataLureIntervalSeconds));
-            _isDataLureIntervalSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLureIntervalSecondsModified));
+            _dataLureIntervalseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLureIntervalseconds, SetDataLureIntervalseconds));
+            _isDataLureIntervalsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLureIntervalsecondsModified));
             _dataLureUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataLureUnitTypeRaw, SetDataLureUnitTypeRaw));
             _isDataLureUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLureUnitTypeModified));
             _dataLureUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataLureUnitType, SetDataLureUnitType));
@@ -52,8 +52,8 @@ namespace War3Api.Object.Abilities
             _isDataNumberOfLuresModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfLuresModified));
             _dataActivationDelay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataActivationDelay, SetDataActivationDelay));
             _isDataActivationDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataActivationDelayModified));
-            _dataLureIntervalSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLureIntervalSeconds, SetDataLureIntervalSeconds));
-            _isDataLureIntervalSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLureIntervalSecondsModified));
+            _dataLureIntervalseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLureIntervalseconds, SetDataLureIntervalseconds));
+            _isDataLureIntervalsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLureIntervalsecondsModified));
             _dataLureUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataLureUnitTypeRaw, SetDataLureUnitTypeRaw));
             _isDataLureUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLureUnitTypeModified));
             _dataLureUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataLureUnitType, SetDataLureUnitType));
@@ -65,8 +65,8 @@ namespace War3Api.Object.Abilities
             _isDataNumberOfLuresModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfLuresModified));
             _dataActivationDelay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataActivationDelay, SetDataActivationDelay));
             _isDataActivationDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataActivationDelayModified));
-            _dataLureIntervalSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLureIntervalSeconds, SetDataLureIntervalSeconds));
-            _isDataLureIntervalSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLureIntervalSecondsModified));
+            _dataLureIntervalseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLureIntervalseconds, SetDataLureIntervalseconds));
+            _isDataLureIntervalsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLureIntervalsecondsModified));
             _dataLureUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataLureUnitTypeRaw, SetDataLureUnitTypeRaw));
             _isDataLureUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLureUnitTypeModified));
             _dataLureUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataLureUnitType, SetDataLureUnitType));
@@ -78,8 +78,8 @@ namespace War3Api.Object.Abilities
             _isDataNumberOfLuresModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfLuresModified));
             _dataActivationDelay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataActivationDelay, SetDataActivationDelay));
             _isDataActivationDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataActivationDelayModified));
-            _dataLureIntervalSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLureIntervalSeconds, SetDataLureIntervalSeconds));
-            _isDataLureIntervalSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLureIntervalSecondsModified));
+            _dataLureIntervalseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLureIntervalseconds, SetDataLureIntervalseconds));
+            _isDataLureIntervalsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLureIntervalsecondsModified));
             _dataLureUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataLureUnitTypeRaw, SetDataLureUnitTypeRaw));
             _isDataLureUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLureUnitTypeModified));
             _dataLureUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataLureUnitType, SetDataLureUnitType));
@@ -91,8 +91,8 @@ namespace War3Api.Object.Abilities
             _isDataNumberOfLuresModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfLuresModified));
             _dataActivationDelay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataActivationDelay, SetDataActivationDelay));
             _isDataActivationDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataActivationDelayModified));
-            _dataLureIntervalSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLureIntervalSeconds, SetDataLureIntervalSeconds));
-            _isDataLureIntervalSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLureIntervalSecondsModified));
+            _dataLureIntervalseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataLureIntervalseconds, SetDataLureIntervalseconds));
+            _isDataLureIntervalsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLureIntervalsecondsModified));
             _dataLureUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataLureUnitTypeRaw, SetDataLureUnitTypeRaw));
             _isDataLureUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataLureUnitTypeModified));
             _dataLureUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataLureUnitType, SetDataLureUnitType));
@@ -102,8 +102,8 @@ namespace War3Api.Object.Abilities
         public ReadOnlyObjectProperty<bool> IsDataNumberOfLuresModified => _isDataNumberOfLuresModified.Value;
         public ObjectProperty<float> DataActivationDelay => _dataActivationDelay.Value;
         public ReadOnlyObjectProperty<bool> IsDataActivationDelayModified => _isDataActivationDelayModified.Value;
-        public ObjectProperty<float> DataLureIntervalSeconds => _dataLureIntervalSeconds.Value;
-        public ReadOnlyObjectProperty<bool> IsDataLureIntervalSecondsModified => _isDataLureIntervalSecondsModified.Value;
+        public ObjectProperty<float> DataLureIntervalseconds => _dataLureIntervalseconds.Value;
+        public ReadOnlyObjectProperty<bool> IsDataLureIntervalsecondsModified => _isDataLureIntervalsecondsModified.Value;
         public ObjectProperty<string> DataLureUnitTypeRaw => _dataLureUnitTypeRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataLureUnitTypeModified => _isDataLureUnitTypeModified.Value;
         public ObjectProperty<Unit> DataLureUnitType => _dataLureUnitType.Value;
@@ -137,17 +137,17 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(846163305, level);
         }
 
-        private float GetDataLureIntervalSeconds(int level)
+        private float GetDataLureIntervalseconds(int level)
         {
             return _modifications.GetModification(862940521, level).ValueAsFloat;
         }
 
-        private void SetDataLureIntervalSeconds(int level, float value)
+        private void SetDataLureIntervalseconds(int level, float value)
         {
             _modifications[862940521, level] = new LevelObjectDataModification{Id = 862940521, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 3};
         }
 
-        private bool GetIsDataLureIntervalSecondsModified(int level)
+        private bool GetIsDataLureIntervalsecondsModified(int level)
         {
             return _modifications.ContainsKey(862940521, level);
         }

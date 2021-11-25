@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.AbilitiesNormalSkin = null;
       //Art
       unit.ArtAllowCustomTeamColor = Model.AllowCustomTeamColor;
-      unit.ArtAnimationBlendTimeSeconds = Model.BlendTime;
+      unit.ArtAnimationBlendTimeseconds = Model.BlendTime;
       unit.ArtAnimationCastBackswing = Model.CastBackswing;
       unit.ArtAnimationCastPoint = Model.CastPoint;
       unit.ArtAnimationRunSpeed = Model.RunSpeed;
@@ -34,15 +34,15 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.ArtButtonPositionX = ButtonPosition.X;
       unit.ArtButtonPositionY = ButtonPosition.Y;
       unit.ArtCasterUpgradeArt = CasterUpgradeArt;
-      unit.ArtDeathTimeSeconds = Model.DeathTime;
+      unit.ArtDeathTimeseconds = Model.DeathTime;
       unit.ArtElevationSamplePoints = Model.ElevationSamplePoints;
       unit.ArtElevationSampleRadius = Model.ElevationSampleRadius;
       unit.ArtFogOfWarSampleRadius = 0;
       unit.ArtHasWaterShadow = Model.Shadow.ShowOnWater;
       unit.ArtIconGameInterface = $@"ReplaceableTextures\CommandButtons\BTN{Icon}.blp";
       unit.ArtIconScoreScreen = $@"ReplaceableTextures\CommandButtons\BTN{Icon}.blp";
-      unit.ArtMaximumPitchAngleDegrees = Model.MaximumPitchAngle;
-      unit.ArtMaximumRollAngleDegrees = Model.MaximumRollAngle;
+      unit.ArtMaximumPitchAngledegrees = Model.MaximumPitchAngle;
+      unit.ArtMaximumRollAngledegrees = Model.MaximumRollAngle;
       unit.ArtModelFile = Model.Path;
       unit.ArtModelFileExtraVersions = VersionFlags.TheFrozenThrone;
       unit.ArtOccluderHeight = Model.OccluderHeight;
@@ -53,7 +53,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       unit.ArtProjectileLaunchY = Model.ProjectileLaunchY;
       unit.ArtProjectileLaunchZ = Model.ProjectileLaunchZ;
       unit.ArtProjectileLaunchZSwimming = Model.ProjectileLaunchZSwimming;
-      unit.ArtPropulsionWindowDegrees = Model.PropulsionWindow;
+      unit.ArtPropulsionWindowdegrees = Model.PropulsionWindow;
       unit.ArtRequiredAnimationNames = Model.RequiredAnimationNames;
       unit.ArtRequiredAnimationNamesAttachments = Model.RequiredAnimationNamesAttachments;
       unit.ArtRequiredAttachmentLinkNames = Model.RequiredAttachmentLinkNames;
@@ -539,16 +539,16 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       Model = new ArtModel()
       {
         Path = unit.ArtModelFile,
-        BlendTime = unit.ArtAnimationBlendTimeSeconds,
+        BlendTime = unit.ArtAnimationBlendTimeseconds,
         CastBackswing = unit.ArtAnimationCastBackswing,
         CastPoint = unit.ArtAnimationCastPoint,
         RunSpeed = unit.ArtAnimationRunSpeed,
         WalkSpeed = unit.ArtAnimationWalkSpeed,
-        DeathTime = unit.ArtDeathTimeSeconds,
+        DeathTime = unit.ArtDeathTimeseconds,
         ElevationSamplePoints = unit.ArtElevationSamplePoints,
         ElevationSampleRadius = unit.ArtElevationSampleRadius,
-        MaximumPitchAngle = unit.ArtMaximumPitchAngleDegrees,
-        MaximumRollAngle = unit.ArtMaximumRollAngleDegrees,
+        MaximumPitchAngle = unit.ArtMaximumPitchAngledegrees,
+        MaximumRollAngle = unit.ArtMaximumRollAngledegrees,
         OccluderHeight = unit.ArtOccluderHeight,
         ProjectileImpactZ = unit.ArtProjectileImpactZ,
         ProjectileImpactZSwimming = unit.ArtProjectileImpactZSwimming,
@@ -556,7 +556,7 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
         ProjectileLaunchY = unit.ArtProjectileLaunchY,
         ProjectileLaunchZ = unit.ArtProjectileLaunchZ,
         ProjectileLaunchZSwimming = unit.ArtProjectileLaunchZSwimming,
-        PropulsionWindow = unit.ArtPropulsionWindowDegrees,
+        PropulsionWindow = unit.ArtPropulsionWindowdegrees,
         ScaleProjectiles = unit.ArtScaleProjectiles,
         SelectionCircleHeight = unit.ArtSelectionCircleHeight,
         SelectionCircleOnWater = unit.ArtSelectionCircleOnWater,

@@ -1234,13 +1234,13 @@ namespace War3Api.Object
         }
 
         public bool IsStatsTransportedSizeModified => _modifications.ContainsKey(1918985077);
-        public float ArtDeathTimeSeconds
+        public float ArtDeathTimeseconds
         {
             get => _modifications.GetModification(1836344437).ValueAsFloat;
             set => _modifications[1836344437] = new SimpleObjectDataModification{Id = 1836344437, Type = ObjectDataType.Unreal, Value = value};
         }
 
-        public bool IsArtDeathTimeSecondsModified => _modifications.ContainsKey(1836344437);
+        public bool IsArtDeathTimesecondsModified => _modifications.ContainsKey(1836344437);
         public int CombatDeathTypeRaw
         {
             get => _modifications.GetModification(1634034805).ValueAsInt;
@@ -1355,13 +1355,13 @@ namespace War3Api.Object
         }
 
         public bool IsStatsPriorityModified => _modifications.ContainsKey(1769107573);
-        public float ArtPropulsionWindowDegrees
+        public float ArtPropulsionWindowdegrees
         {
             get => _modifications.GetModification(2003988597).ValueAsFloat;
             set => _modifications[2003988597] = new SimpleObjectDataModification{Id = 2003988597, Type = ObjectDataType.Unreal, Value = value};
         }
 
-        public bool IsArtPropulsionWindowDegreesModified => _modifications.ContainsKey(2003988597);
+        public bool IsArtPropulsionWindowdegreesModified => _modifications.ContainsKey(2003988597);
         public string StatsRaceRaw
         {
             get => _modifications.GetModification(1667330677).ValueAsString;
@@ -1415,13 +1415,13 @@ namespace War3Api.Object
             set => CombatArmorTypeRaw = value.ToRaw(null, null);
         }
 
-        public float ArtAnimationBlendTimeSeconds
+        public float ArtAnimationBlendTimeseconds
         {
             get => _modifications.GetModification(1701601909).ValueAsFloat;
             set => _modifications[1701601909] = new SimpleObjectDataModification{Id = 1701601909, Type = ObjectDataType.Real, Value = value};
         }
 
-        public bool IsArtAnimationBlendTimeSecondsModified => _modifications.ContainsKey(1701601909);
+        public bool IsArtAnimationBlendTimesecondsModified => _modifications.ContainsKey(1701601909);
         public int ArtTintingColor3Blue
         {
             get => _modifications.GetModification(1651270517).ValueAsInt;
@@ -1561,20 +1561,20 @@ namespace War3Api.Object
             set => EditorPlaceableInEditorRaw = value.ToRaw(null, null);
         }
 
-        public float ArtMaximumPitchAngleDegrees
+        public float ArtMaximumPitchAngledegrees
         {
             get => _modifications.GetModification(1886940533).ValueAsFloat;
             set => _modifications[1886940533] = new SimpleObjectDataModification{Id = 1886940533, Type = ObjectDataType.Real, Value = value};
         }
 
-        public bool IsArtMaximumPitchAngleDegreesModified => _modifications.ContainsKey(1886940533);
-        public float ArtMaximumRollAngleDegrees
+        public bool IsArtMaximumPitchAngledegreesModified => _modifications.ContainsKey(1886940533);
+        public float ArtMaximumRollAngledegrees
         {
             get => _modifications.GetModification(1920494965).ValueAsFloat;
             set => _modifications[1920494965] = new SimpleObjectDataModification{Id = 1920494965, Type = ObjectDataType.Real, Value = value};
         }
 
-        public bool IsArtMaximumRollAngleDegreesModified => _modifications.ContainsKey(1920494965);
+        public bool IsArtMaximumRollAngledegreesModified => _modifications.ContainsKey(1920494965);
         public float ArtScalingValue
         {
             get => _modifications.GetModification(1633907573).ValueAsFloat;

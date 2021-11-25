@@ -16,8 +16,8 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ObjectProperty<bool>> _dataUseTeleportClustering;
         private readonly Lazy<ObjectProperty<int>> _dataMaximumUnits;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMaximumUnitsModified;
-        private readonly Lazy<ObjectProperty<float>> _dataCastingDelaySeconds;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataCastingDelaySecondsModified;
+        private readonly Lazy<ObjectProperty<float>> _dataCastingDelayseconds;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataCastingDelaysecondsModified;
         public DarkSummoning(): base(1935955265)
         {
             _dataUseTeleportClusteringRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataUseTeleportClusteringRaw, SetDataUseTeleportClusteringRaw));
@@ -25,8 +25,8 @@ namespace War3Api.Object.Abilities
             _dataUseTeleportClustering = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseTeleportClustering, SetDataUseTeleportClustering));
             _dataMaximumUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaximumUnits, SetDataMaximumUnits));
             _isDataMaximumUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaximumUnitsModified));
-            _dataCastingDelaySeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataCastingDelaySeconds, SetDataCastingDelaySeconds));
-            _isDataCastingDelaySecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCastingDelaySecondsModified));
+            _dataCastingDelayseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataCastingDelayseconds, SetDataCastingDelayseconds));
+            _isDataCastingDelaysecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCastingDelaysecondsModified));
         }
 
         public DarkSummoning(int newId): base(1935955265, newId)
@@ -36,8 +36,8 @@ namespace War3Api.Object.Abilities
             _dataUseTeleportClustering = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseTeleportClustering, SetDataUseTeleportClustering));
             _dataMaximumUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaximumUnits, SetDataMaximumUnits));
             _isDataMaximumUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaximumUnitsModified));
-            _dataCastingDelaySeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataCastingDelaySeconds, SetDataCastingDelaySeconds));
-            _isDataCastingDelaySecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCastingDelaySecondsModified));
+            _dataCastingDelayseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataCastingDelayseconds, SetDataCastingDelayseconds));
+            _isDataCastingDelaysecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCastingDelaysecondsModified));
         }
 
         public DarkSummoning(string newRawcode): base(1935955265, newRawcode)
@@ -47,8 +47,8 @@ namespace War3Api.Object.Abilities
             _dataUseTeleportClustering = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseTeleportClustering, SetDataUseTeleportClustering));
             _dataMaximumUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaximumUnits, SetDataMaximumUnits));
             _isDataMaximumUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaximumUnitsModified));
-            _dataCastingDelaySeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataCastingDelaySeconds, SetDataCastingDelaySeconds));
-            _isDataCastingDelaySecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCastingDelaySecondsModified));
+            _dataCastingDelayseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataCastingDelayseconds, SetDataCastingDelayseconds));
+            _isDataCastingDelaysecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCastingDelaysecondsModified));
         }
 
         public DarkSummoning(ObjectDatabaseBase db): base(1935955265, db)
@@ -58,8 +58,8 @@ namespace War3Api.Object.Abilities
             _dataUseTeleportClustering = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseTeleportClustering, SetDataUseTeleportClustering));
             _dataMaximumUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaximumUnits, SetDataMaximumUnits));
             _isDataMaximumUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaximumUnitsModified));
-            _dataCastingDelaySeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataCastingDelaySeconds, SetDataCastingDelaySeconds));
-            _isDataCastingDelaySecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCastingDelaySecondsModified));
+            _dataCastingDelayseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataCastingDelayseconds, SetDataCastingDelayseconds));
+            _isDataCastingDelaysecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCastingDelaysecondsModified));
         }
 
         public DarkSummoning(int newId, ObjectDatabaseBase db): base(1935955265, newId, db)
@@ -69,8 +69,8 @@ namespace War3Api.Object.Abilities
             _dataUseTeleportClustering = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseTeleportClustering, SetDataUseTeleportClustering));
             _dataMaximumUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaximumUnits, SetDataMaximumUnits));
             _isDataMaximumUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaximumUnitsModified));
-            _dataCastingDelaySeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataCastingDelaySeconds, SetDataCastingDelaySeconds));
-            _isDataCastingDelaySecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCastingDelaySecondsModified));
+            _dataCastingDelayseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataCastingDelayseconds, SetDataCastingDelayseconds));
+            _isDataCastingDelaysecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCastingDelaysecondsModified));
         }
 
         public DarkSummoning(string newRawcode, ObjectDatabaseBase db): base(1935955265, newRawcode, db)
@@ -80,8 +80,8 @@ namespace War3Api.Object.Abilities
             _dataUseTeleportClustering = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataUseTeleportClustering, SetDataUseTeleportClustering));
             _dataMaximumUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaximumUnits, SetDataMaximumUnits));
             _isDataMaximumUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaximumUnitsModified));
-            _dataCastingDelaySeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataCastingDelaySeconds, SetDataCastingDelaySeconds));
-            _isDataCastingDelaySecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCastingDelaySecondsModified));
+            _dataCastingDelayseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataCastingDelayseconds, SetDataCastingDelayseconds));
+            _isDataCastingDelaysecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataCastingDelaysecondsModified));
         }
 
         public ObjectProperty<int> DataUseTeleportClusteringRaw => _dataUseTeleportClusteringRaw.Value;
@@ -89,8 +89,8 @@ namespace War3Api.Object.Abilities
         public ObjectProperty<bool> DataUseTeleportClustering => _dataUseTeleportClustering.Value;
         public ObjectProperty<int> DataMaximumUnits => _dataMaximumUnits.Value;
         public ReadOnlyObjectProperty<bool> IsDataMaximumUnitsModified => _isDataMaximumUnitsModified.Value;
-        public ObjectProperty<float> DataCastingDelaySeconds => _dataCastingDelaySeconds.Value;
-        public ReadOnlyObjectProperty<bool> IsDataCastingDelaySecondsModified => _isDataCastingDelaySecondsModified.Value;
+        public ObjectProperty<float> DataCastingDelayseconds => _dataCastingDelayseconds.Value;
+        public ReadOnlyObjectProperty<bool> IsDataCastingDelaysecondsModified => _isDataCastingDelaysecondsModified.Value;
         private int GetDataUseTeleportClusteringRaw(int level)
         {
             return _modifications.GetModification(863268168, level).ValueAsInt;
@@ -131,17 +131,17 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(829645909, level);
         }
 
-        private float GetDataCastingDelaySeconds(int level)
+        private float GetDataCastingDelayseconds(int level)
         {
             return _modifications.GetModification(846423125, level).ValueAsFloat;
         }
 
-        private void SetDataCastingDelaySeconds(int level, float value)
+        private void SetDataCastingDelayseconds(int level, float value)
         {
             _modifications[846423125, level] = new LevelObjectDataModification{Id = 846423125, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 2};
         }
 
-        private bool GetIsDataCastingDelaySecondsModified(int level)
+        private bool GetIsDataCastingDelaysecondsModified(int level)
         {
             return _modifications.ContainsKey(846423125, level);
         }

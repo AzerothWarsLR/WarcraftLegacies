@@ -298,13 +298,13 @@ namespace War3Api.Object
         }
 
         public bool IsArtOcclusionHeightModified => _modifications.ContainsKey(1751347042);
-        public float ArtflyOverHeight
+        public float ArtFlyOverHeight
         {
             get => _modifications.GetModification(1751934562).ValueAsFloat;
             set => _modifications[1751934562] = new SimpleObjectDataModification{Id = 1751934562, Type = ObjectDataType.Unreal, Value = value};
         }
 
-        public bool IsArtflyOverHeightModified => _modifications.ContainsKey(1751934562);
+        public bool IsArtFlyOverHeightModified => _modifications.ContainsKey(1751934562);
         public float ArtFixedRotation
         {
             get => _modifications.GetModification(1920493154).ValueAsFloat;
@@ -346,20 +346,20 @@ namespace War3Api.Object
             set => EditorCanPlaceRandomScaleRaw = value.ToRaw(null, null);
         }
 
-        public float ArtMaximumPitchAngleDegrees
+        public float ArtMaximumPitchAngledegrees
         {
             get => _modifications.GetModification(1885433186).ValueAsFloat;
             set => _modifications[1885433186] = new SimpleObjectDataModification{Id = 1885433186, Type = ObjectDataType.Unreal, Value = value};
         }
 
-        public bool IsArtMaximumPitchAngleDegreesModified => _modifications.ContainsKey(1885433186);
-        public float ArtMaxRollAngleDegrees
+        public bool IsArtMaximumPitchAngledegreesModified => _modifications.ContainsKey(1885433186);
+        public float ArtMaxRollAngledegrees
         {
             get => _modifications.GetModification(1918987618).ValueAsFloat;
             set => _modifications[1918987618] = new SimpleObjectDataModification{Id = 1918987618, Type = ObjectDataType.Unreal, Value = value};
         }
 
-        public bool IsArtMaxRollAngleDegreesModified => _modifications.ContainsKey(1918987618);
+        public bool IsArtMaxRollAngledegreesModified => _modifications.ContainsKey(1918987618);
         public float ArtElevationSampleRadius
         {
             get => _modifications.GetModification(1684107874).ValueAsFloat;

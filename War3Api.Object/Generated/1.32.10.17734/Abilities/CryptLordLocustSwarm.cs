@@ -13,8 +13,8 @@ namespace War3Api.Object.Abilities
     {
         private readonly Lazy<ObjectProperty<int>> _dataNumberOfSwarmUnits;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataNumberOfSwarmUnitsModified;
-        private readonly Lazy<ObjectProperty<float>> _dataUnitReleaseIntervalSeconds;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataUnitReleaseIntervalSecondsModified;
+        private readonly Lazy<ObjectProperty<float>> _dataUnitReleaseIntervalseconds;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataUnitReleaseIntervalsecondsModified;
         private readonly Lazy<ObjectProperty<int>> _dataMaxSwarmUnitsPerTarget;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMaxSwarmUnitsPerTargetModified;
         private readonly Lazy<ObjectProperty<float>> _dataDamageReturnFactor;
@@ -28,8 +28,8 @@ namespace War3Api.Object.Abilities
         {
             _dataNumberOfSwarmUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNumberOfSwarmUnits, SetDataNumberOfSwarmUnits));
             _isDataNumberOfSwarmUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfSwarmUnitsModified));
-            _dataUnitReleaseIntervalSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataUnitReleaseIntervalSeconds, SetDataUnitReleaseIntervalSeconds));
-            _isDataUnitReleaseIntervalSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUnitReleaseIntervalSecondsModified));
+            _dataUnitReleaseIntervalseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataUnitReleaseIntervalseconds, SetDataUnitReleaseIntervalseconds));
+            _isDataUnitReleaseIntervalsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUnitReleaseIntervalsecondsModified));
             _dataMaxSwarmUnitsPerTarget = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxSwarmUnitsPerTarget, SetDataMaxSwarmUnitsPerTarget));
             _isDataMaxSwarmUnitsPerTargetModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxSwarmUnitsPerTargetModified));
             _dataDamageReturnFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageReturnFactor, SetDataDamageReturnFactor));
@@ -45,8 +45,8 @@ namespace War3Api.Object.Abilities
         {
             _dataNumberOfSwarmUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNumberOfSwarmUnits, SetDataNumberOfSwarmUnits));
             _isDataNumberOfSwarmUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfSwarmUnitsModified));
-            _dataUnitReleaseIntervalSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataUnitReleaseIntervalSeconds, SetDataUnitReleaseIntervalSeconds));
-            _isDataUnitReleaseIntervalSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUnitReleaseIntervalSecondsModified));
+            _dataUnitReleaseIntervalseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataUnitReleaseIntervalseconds, SetDataUnitReleaseIntervalseconds));
+            _isDataUnitReleaseIntervalsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUnitReleaseIntervalsecondsModified));
             _dataMaxSwarmUnitsPerTarget = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxSwarmUnitsPerTarget, SetDataMaxSwarmUnitsPerTarget));
             _isDataMaxSwarmUnitsPerTargetModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxSwarmUnitsPerTargetModified));
             _dataDamageReturnFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageReturnFactor, SetDataDamageReturnFactor));
@@ -62,8 +62,8 @@ namespace War3Api.Object.Abilities
         {
             _dataNumberOfSwarmUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNumberOfSwarmUnits, SetDataNumberOfSwarmUnits));
             _isDataNumberOfSwarmUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfSwarmUnitsModified));
-            _dataUnitReleaseIntervalSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataUnitReleaseIntervalSeconds, SetDataUnitReleaseIntervalSeconds));
-            _isDataUnitReleaseIntervalSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUnitReleaseIntervalSecondsModified));
+            _dataUnitReleaseIntervalseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataUnitReleaseIntervalseconds, SetDataUnitReleaseIntervalseconds));
+            _isDataUnitReleaseIntervalsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUnitReleaseIntervalsecondsModified));
             _dataMaxSwarmUnitsPerTarget = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxSwarmUnitsPerTarget, SetDataMaxSwarmUnitsPerTarget));
             _isDataMaxSwarmUnitsPerTargetModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxSwarmUnitsPerTargetModified));
             _dataDamageReturnFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageReturnFactor, SetDataDamageReturnFactor));
@@ -79,8 +79,8 @@ namespace War3Api.Object.Abilities
         {
             _dataNumberOfSwarmUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNumberOfSwarmUnits, SetDataNumberOfSwarmUnits));
             _isDataNumberOfSwarmUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfSwarmUnitsModified));
-            _dataUnitReleaseIntervalSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataUnitReleaseIntervalSeconds, SetDataUnitReleaseIntervalSeconds));
-            _isDataUnitReleaseIntervalSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUnitReleaseIntervalSecondsModified));
+            _dataUnitReleaseIntervalseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataUnitReleaseIntervalseconds, SetDataUnitReleaseIntervalseconds));
+            _isDataUnitReleaseIntervalsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUnitReleaseIntervalsecondsModified));
             _dataMaxSwarmUnitsPerTarget = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxSwarmUnitsPerTarget, SetDataMaxSwarmUnitsPerTarget));
             _isDataMaxSwarmUnitsPerTargetModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxSwarmUnitsPerTargetModified));
             _dataDamageReturnFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageReturnFactor, SetDataDamageReturnFactor));
@@ -96,8 +96,8 @@ namespace War3Api.Object.Abilities
         {
             _dataNumberOfSwarmUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNumberOfSwarmUnits, SetDataNumberOfSwarmUnits));
             _isDataNumberOfSwarmUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfSwarmUnitsModified));
-            _dataUnitReleaseIntervalSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataUnitReleaseIntervalSeconds, SetDataUnitReleaseIntervalSeconds));
-            _isDataUnitReleaseIntervalSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUnitReleaseIntervalSecondsModified));
+            _dataUnitReleaseIntervalseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataUnitReleaseIntervalseconds, SetDataUnitReleaseIntervalseconds));
+            _isDataUnitReleaseIntervalsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUnitReleaseIntervalsecondsModified));
             _dataMaxSwarmUnitsPerTarget = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxSwarmUnitsPerTarget, SetDataMaxSwarmUnitsPerTarget));
             _isDataMaxSwarmUnitsPerTargetModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxSwarmUnitsPerTargetModified));
             _dataDamageReturnFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageReturnFactor, SetDataDamageReturnFactor));
@@ -113,8 +113,8 @@ namespace War3Api.Object.Abilities
         {
             _dataNumberOfSwarmUnits = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNumberOfSwarmUnits, SetDataNumberOfSwarmUnits));
             _isDataNumberOfSwarmUnitsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfSwarmUnitsModified));
-            _dataUnitReleaseIntervalSeconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataUnitReleaseIntervalSeconds, SetDataUnitReleaseIntervalSeconds));
-            _isDataUnitReleaseIntervalSecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUnitReleaseIntervalSecondsModified));
+            _dataUnitReleaseIntervalseconds = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataUnitReleaseIntervalseconds, SetDataUnitReleaseIntervalseconds));
+            _isDataUnitReleaseIntervalsecondsModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataUnitReleaseIntervalsecondsModified));
             _dataMaxSwarmUnitsPerTarget = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMaxSwarmUnitsPerTarget, SetDataMaxSwarmUnitsPerTarget));
             _isDataMaxSwarmUnitsPerTargetModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMaxSwarmUnitsPerTargetModified));
             _dataDamageReturnFactor = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageReturnFactor, SetDataDamageReturnFactor));
@@ -128,8 +128,8 @@ namespace War3Api.Object.Abilities
 
         public ObjectProperty<int> DataNumberOfSwarmUnits => _dataNumberOfSwarmUnits.Value;
         public ReadOnlyObjectProperty<bool> IsDataNumberOfSwarmUnitsModified => _isDataNumberOfSwarmUnitsModified.Value;
-        public ObjectProperty<float> DataUnitReleaseIntervalSeconds => _dataUnitReleaseIntervalSeconds.Value;
-        public ReadOnlyObjectProperty<bool> IsDataUnitReleaseIntervalSecondsModified => _isDataUnitReleaseIntervalSecondsModified.Value;
+        public ObjectProperty<float> DataUnitReleaseIntervalseconds => _dataUnitReleaseIntervalseconds.Value;
+        public ReadOnlyObjectProperty<bool> IsDataUnitReleaseIntervalsecondsModified => _isDataUnitReleaseIntervalsecondsModified.Value;
         public ObjectProperty<int> DataMaxSwarmUnitsPerTarget => _dataMaxSwarmUnitsPerTarget.Value;
         public ReadOnlyObjectProperty<bool> IsDataMaxSwarmUnitsPerTargetModified => _isDataMaxSwarmUnitsPerTargetModified.Value;
         public ObjectProperty<float> DataDamageReturnFactor => _dataDamageReturnFactor.Value;
@@ -154,17 +154,17 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(829647957, level);
         }
 
-        private float GetDataUnitReleaseIntervalSeconds(int level)
+        private float GetDataUnitReleaseIntervalseconds(int level)
         {
             return _modifications.GetModification(846425173, level).ValueAsFloat;
         }
 
-        private void SetDataUnitReleaseIntervalSeconds(int level, float value)
+        private void SetDataUnitReleaseIntervalseconds(int level, float value)
         {
             _modifications[846425173, level] = new LevelObjectDataModification{Id = 846425173, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 2};
         }
 
-        private bool GetIsDataUnitReleaseIntervalSecondsModified(int level)
+        private bool GetIsDataUnitReleaseIntervalsecondsModified(int level)
         {
             return _modifications.ContainsKey(846425173, level);
         }

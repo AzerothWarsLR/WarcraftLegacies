@@ -466,29 +466,29 @@ namespace War3Api.Object.Enums
         /// <summary>EFFECT HERODISSIPATE ('Xdis').</summary>
         EFFECTHERODISSIPATE = 1936286808,
         /// <summary>EFFECT OnFireHumanSml ('Xfhs').</summary>
-        EFFECTOnfirehumansml = 1936221784,
+        EFFECTOnFireHumanSml = 1936221784,
         /// <summary>EFFECT OnFireHumanMed ('Xfhm').</summary>
-        EFFECTOnfirehumanmed = 1835558488,
+        EFFECTOnFireHumanMed = 1835558488,
         /// <summary>EFFECT OnFireHumanLrg ('Xfhl').</summary>
-        EFFECTOnfirehumanlrg = 1818781272,
+        EFFECTOnFireHumanLrg = 1818781272,
         /// <summary>EFFECT OnFireOrcSml ('Xfos').</summary>
-        EFFECTOnfireorcsml = 1936680536,
+        EFFECTOnFireOrcSml = 1936680536,
         /// <summary>EFFECT OnFireOrcMed ('Xfom').</summary>
-        EFFECTOnfireorcmed = 1836017240,
+        EFFECTOnFireOrcMed = 1836017240,
         /// <summary>EFFECT OnFireOrcLrg ('Xfol').</summary>
-        EFFECTOnfireorclrg = 1819240024,
+        EFFECTOnFireOrcLrg = 1819240024,
         /// <summary>EFFECT OnFireNightElfSml ('Xfns').</summary>
-        EFFECTOnfirenightelfsml = 1936615000,
+        EFFECTOnFireNightElfSml = 1936615000,
         /// <summary>EFFECT OnFireNightElfMed ('Xfnm').</summary>
-        EFFECTOnfirenightelfmed = 1835951704,
+        EFFECTOnFireNightElfMed = 1835951704,
         /// <summary>EFFECT OnFireNightElfLrg ('Xfnl').</summary>
-        EFFECTOnfirenightelflrg = 1819174488,
+        EFFECTOnFireNightElfLrg = 1819174488,
         /// <summary>EFFECT OnFireUndeadSml ('Xfus').</summary>
-        EFFECTOnfireundeadsml = 1937073752,
+        EFFECTOnFireUndeadSml = 1937073752,
         /// <summary>EFFECT OnFireUndeadMed ('Xfum').</summary>
-        EFFECTOnfireundeadmed = 1836410456,
+        EFFECTOnFireUndeadMed = 1836410456,
         /// <summary>EFFECT OnFireUndeadLrg ('Xful').</summary>
-        EFFECTOnfireundeadlrg = 1819633240,
+        EFFECTOnFireUndeadLrg = 1819633240,
         /// <summary>Heal multiplier ('BIhm').</summary>
         HealMultiplier = 1835551042
     }
