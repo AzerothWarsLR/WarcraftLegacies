@@ -171,8 +171,8 @@ namespace Launcher
       tempObjectDatabase.AddObjects(objectData);
       foreach (var unit in tempObjectDatabase.GetUnits())
       {
-        var unitFactory = new UnitFactory(UnitType.Abomination);
-        unitFactory.Generate("aaaa", destinationObjectDatabase);
+        var unitFactory = new UnitFactory(unit);
+        unitFactory.Generate(unit.NewId, destinationObjectDatabase);
       }
       return destinationObjectDatabase;
     }

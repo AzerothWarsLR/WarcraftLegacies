@@ -421,6 +421,13 @@ namespace AzerothWarsCSharp.Launcher.ObjectFactory.Units
       return newUnit;
     }
 
+    public Unit Generate(int id, ObjectDatabase objectDatabase)
+    {
+      var newUnit = new Unit(BaseType, id, objectDatabase);
+      Assign(newUnit);
+      return newUnit;
+    }
+
     public Ability DefaultActiveAbility { get; set; }
     public IEnumerable<Unit> StructuresBuilt { get; set; }
     public int BuildTime { get; set; }
