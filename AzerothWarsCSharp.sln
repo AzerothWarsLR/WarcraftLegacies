@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.Common", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.Generated", "src\AzerothWarsCSharp.Generated\AzerothWarsCSharp.Generated.csproj", "{3DE25822-0AB6-4F6B-B8E3-6353A4068171}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.SourceTest", "AzerothWarsCSharp.SourceTest\AzerothWarsCSharp.SourceTest.csproj", "{F01F11A4-628D-4A4A-A2E4-469C52EE5D15}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "War3Api.Object", "War3Api.Object\War3Api.Object.csproj", "{CC747477-E330-4FA5-8832-1EDD6BA97241}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzerothWarsCSharp.ObjectFactory", "AzerothWarsCSharp.ObjectFactory\AzerothWarsCSharp.ObjectFactory.csproj", "{60FA4F2C-D3F6-4861-9B9B-02657030B811}"
