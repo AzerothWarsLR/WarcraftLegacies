@@ -24,10 +24,10 @@
 
   <ItemGroup>
     <Folder Include="Assets\" />
-    <Folder Include="ObjectFactory\Buildings\" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\AzerothWarsCSharp.ObjectFactory\AzerothWarsCSharp.ObjectFactory.csproj" />
     <ProjectReference Include="..\..\War3Api.Object\War3Api.Object.csproj" />
     <ProjectReference Include="..\AzerothWarsCSharp.Common\AzerothWarsCSharp.Common.csproj" />
   </ItemGroup>

@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.SourceTes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "War3Api.Object", "War3Api.Object\War3Api.Object.csproj", "{CC747477-E330-4FA5-8832-1EDD6BA97241}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzerothWarsCSharp.ObjectFactory", "AzerothWarsCSharp.ObjectFactory\AzerothWarsCSharp.ObjectFactory.csproj", "{60FA4F2C-D3F6-4861-9B9B-02657030B811}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{CC747477-E330-4FA5-8832-1EDD6BA97241}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC747477-E330-4FA5-8832-1EDD6BA97241}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC747477-E330-4FA5-8832-1EDD6BA97241}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60FA4F2C-D3F6-4861-9B9B-02657030B811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60FA4F2C-D3F6-4861-9B9B-02657030B811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60FA4F2C-D3F6-4861-9B9B-02657030B811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60FA4F2C-D3F6-4861-9B9B-02657030B811}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

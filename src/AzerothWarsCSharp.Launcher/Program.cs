@@ -4,19 +4,17 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
-using AzerothWarsCSharp.Launcher.ObjectFactory;
-using AzerothWarsCSharp.Launcher.ObjectFactory.Units;
+using AzerothWarsCSharp.ObjectFactory.Units;
 using CSharpLua;
 using Microsoft.CodeAnalysis;
 using War3Api.Object;
-using War3Api.Object.Enums;
 using War3Net.Build;
 using War3Net.Build.Extensions;
 using War3Net.Build.Object;
 using War3Net.IO.Mpq;
 using WCSharp.ConstantGenerator;
 
-namespace Launcher
+namespace AzerothWarsCSharp.Launcher
 {
   internal static class Program
   {
