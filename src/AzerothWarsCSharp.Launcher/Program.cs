@@ -4,7 +4,6 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
-using AzerothWarsCSharp.ObjectFactory.Units;
 using CSharpLua;
 using Microsoft.CodeAnalysis;
 using War3Api.Object;
@@ -13,6 +12,7 @@ using War3Net.Build.Extensions;
 using War3Net.Build.Object;
 using War3Net.IO.Mpq;
 using WCSharp.ConstantGenerator;
+using AzerothWarsCSharp.ObjectFactory.Units;
 
 namespace AzerothWarsCSharp.Launcher
 {

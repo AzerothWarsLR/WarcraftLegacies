@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzerothWarsCSharp.Generated
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "War3Api.Object", "War3Api.Object\War3Api.Object.csproj", "{CC747477-E330-4FA5-8832-1EDD6BA97241}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzerothWarsCSharp.ObjectFactory", "AzerothWarsCSharp.ObjectFactory\AzerothWarsCSharp.ObjectFactory.csproj", "{60FA4F2C-D3F6-4861-9B9B-02657030B811}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzerothWarsCSharp.ObjectFactory", "src\AzerothWarsCSharp.ObjectFactory\AzerothWarsCSharp.ObjectFactory.csproj", "{60FA4F2C-D3F6-4861-9B9B-02657030B811}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
