@@ -310,142 +310,142 @@ namespace War3Api.Object
         }
 
         public bool IsStatsTimeIncrementModified => _modifications.ContainsKey(1835627623);
-        public string DataEffect1Raw
+        public string DataEffect1_gef1Raw
         {
             get => _modifications.GetModification(828794215).ValueAsString;
             set => _modifications[828794215] = new LevelObjectDataModification{Id = 828794215, Type = ObjectDataType.String, Value = value, Level = 0};
         }
 
-        public bool IsDataEffect1Modified => _modifications.ContainsKey(828794215);
-        public UpgradeEffect DataEffect1
+        public bool IsDataEffect1_gef1Modified => _modifications.ContainsKey(828794215);
+        public UpgradeEffect DataEffect1_gef1
         {
-            get => DataEffect1Raw.ToUpgradeEffect(this);
-            set => DataEffect1Raw = value.ToRaw(null, null);
+            get => DataEffect1_gef1Raw.ToUpgradeEffect(this);
+            set => DataEffect1_gef1Raw = value.ToRaw(null, null);
         }
 
-        public float Database1
+        public float DataEffect1_gba1
         {
             get => _modifications.GetModification(828465767).ValueAsFloat;
             set => _modifications[828465767] = new LevelObjectDataModification{Id = 828465767, Type = ObjectDataType.Unreal, Value = value, Level = 0};
         }
 
-        public bool IsDatabase1Modified => _modifications.ContainsKey(828465767);
-        public float Datamod1
+        public bool IsDataEffect1_gba1Modified => _modifications.ContainsKey(828465767);
+        public float DataEffect1_gmo1
         {
             get => _modifications.GetModification(829386087).ValueAsFloat;
             set => _modifications[829386087] = new LevelObjectDataModification{Id = 829386087, Type = ObjectDataType.Unreal, Value = value, Level = 0};
         }
 
-        public bool IsDatamod1Modified => _modifications.ContainsKey(829386087);
-        public string Datacode1
+        public bool IsDataEffect1_gmo1Modified => _modifications.ContainsKey(829386087);
+        public string DataEffect1_gco1
         {
             get => _modifications.GetModification(829383527).ValueAsString;
             set => _modifications[829383527] = new LevelObjectDataModification{Id = 829383527, Type = ObjectDataType.String, Value = value, Level = 0};
         }
 
-        public bool IsDatacode1Modified => _modifications.ContainsKey(829383527);
-        public string DataEffect2Raw
+        public bool IsDataEffect1_gco1Modified => _modifications.ContainsKey(829383527);
+        public string DataEffect2_gef2Raw
         {
             get => _modifications.GetModification(845571431).ValueAsString;
             set => _modifications[845571431] = new LevelObjectDataModification{Id = 845571431, Type = ObjectDataType.String, Value = value, Level = 0};
         }
 
-        public bool IsDataEffect2Modified => _modifications.ContainsKey(845571431);
-        public UpgradeEffect DataEffect2
+        public bool IsDataEffect2_gef2Modified => _modifications.ContainsKey(845571431);
+        public UpgradeEffect DataEffect2_gef2
         {
-            get => DataEffect2Raw.ToUpgradeEffect(this);
-            set => DataEffect2Raw = value.ToRaw(null, null);
+            get => DataEffect2_gef2Raw.ToUpgradeEffect(this);
+            set => DataEffect2_gef2Raw = value.ToRaw(null, null);
         }
 
-        public float Database2
+        public float DataEffect2_gba2
         {
             get => _modifications.GetModification(845242983).ValueAsFloat;
             set => _modifications[845242983] = new LevelObjectDataModification{Id = 845242983, Type = ObjectDataType.Unreal, Value = value, Level = 0};
         }
 
-        public bool IsDatabase2Modified => _modifications.ContainsKey(845242983);
-        public float Datamod2
+        public bool IsDataEffect2_gba2Modified => _modifications.ContainsKey(845242983);
+        public float DataEffect2_gmo2
         {
             get => _modifications.GetModification(846163303).ValueAsFloat;
             set => _modifications[846163303] = new LevelObjectDataModification{Id = 846163303, Type = ObjectDataType.Unreal, Value = value, Level = 0};
         }
 
-        public bool IsDatamod2Modified => _modifications.ContainsKey(846163303);
-        public string Datacode2
+        public bool IsDataEffect2_gmo2Modified => _modifications.ContainsKey(846163303);
+        public string DataEffect2_gco2
         {
             get => _modifications.GetModification(846160743).ValueAsString;
             set => _modifications[846160743] = new LevelObjectDataModification{Id = 846160743, Type = ObjectDataType.String, Value = value, Level = 0};
         }
 
-        public bool IsDatacode2Modified => _modifications.ContainsKey(846160743);
-        public string DataEffect3Raw
+        public bool IsDataEffect2_gco2Modified => _modifications.ContainsKey(846160743);
+        public string DataEffect3_gef3Raw
         {
             get => _modifications.GetModification(862348647).ValueAsString;
             set => _modifications[862348647] = new LevelObjectDataModification{Id = 862348647, Type = ObjectDataType.String, Value = value, Level = 0};
         }
 
-        public bool IsDataEffect3Modified => _modifications.ContainsKey(862348647);
-        public UpgradeEffect DataEffect3
+        public bool IsDataEffect3_gef3Modified => _modifications.ContainsKey(862348647);
+        public UpgradeEffect DataEffect3_gef3
         {
-            get => DataEffect3Raw.ToUpgradeEffect(this);
-            set => DataEffect3Raw = value.ToRaw(null, null);
+            get => DataEffect3_gef3Raw.ToUpgradeEffect(this);
+            set => DataEffect3_gef3Raw = value.ToRaw(null, null);
         }
 
-        public float Database3
+        public float DataEffect3_gba3
         {
             get => _modifications.GetModification(862020199).ValueAsFloat;
             set => _modifications[862020199] = new LevelObjectDataModification{Id = 862020199, Type = ObjectDataType.Unreal, Value = value, Level = 0};
         }
 
-        public bool IsDatabase3Modified => _modifications.ContainsKey(862020199);
-        public float Datamod3
+        public bool IsDataEffect3_gba3Modified => _modifications.ContainsKey(862020199);
+        public float DataEffect3_gmo3
         {
             get => _modifications.GetModification(862940519).ValueAsFloat;
             set => _modifications[862940519] = new LevelObjectDataModification{Id = 862940519, Type = ObjectDataType.Unreal, Value = value, Level = 0};
         }
 
-        public bool IsDatamod3Modified => _modifications.ContainsKey(862940519);
-        public string Datacode3
+        public bool IsDataEffect3_gmo3Modified => _modifications.ContainsKey(862940519);
+        public string DataEffect3_gco3
         {
             get => _modifications.GetModification(862937959).ValueAsString;
             set => _modifications[862937959] = new LevelObjectDataModification{Id = 862937959, Type = ObjectDataType.String, Value = value, Level = 0};
         }
 
-        public bool IsDatacode3Modified => _modifications.ContainsKey(862937959);
-        public string DataEffect4Raw
+        public bool IsDataEffect3_gco3Modified => _modifications.ContainsKey(862937959);
+        public string DataEffect4_gef4Raw
         {
             get => _modifications.GetModification(879125863).ValueAsString;
             set => _modifications[879125863] = new LevelObjectDataModification{Id = 879125863, Type = ObjectDataType.String, Value = value, Level = 0};
         }
 
-        public bool IsDataEffect4Modified => _modifications.ContainsKey(879125863);
-        public UpgradeEffect DataEffect4
+        public bool IsDataEffect4_gef4Modified => _modifications.ContainsKey(879125863);
+        public UpgradeEffect DataEffect4_gef4
         {
-            get => DataEffect4Raw.ToUpgradeEffect(this);
-            set => DataEffect4Raw = value.ToRaw(null, null);
+            get => DataEffect4_gef4Raw.ToUpgradeEffect(this);
+            set => DataEffect4_gef4Raw = value.ToRaw(null, null);
         }
 
-        public float Database4
+        public float DataEffect4_gba4
         {
             get => _modifications.GetModification(878797415).ValueAsFloat;
             set => _modifications[878797415] = new LevelObjectDataModification{Id = 878797415, Type = ObjectDataType.Unreal, Value = value, Level = 0};
         }
 
-        public bool IsDatabase4Modified => _modifications.ContainsKey(878797415);
-        public float Datamod4
+        public bool IsDataEffect4_gba4Modified => _modifications.ContainsKey(878797415);
+        public float DataEffect4_gmo4
         {
             get => _modifications.GetModification(879717735).ValueAsFloat;
             set => _modifications[879717735] = new LevelObjectDataModification{Id = 879717735, Type = ObjectDataType.Unreal, Value = value, Level = 0};
         }
 
-        public bool IsDatamod4Modified => _modifications.ContainsKey(879717735);
-        public string Datacode4
+        public bool IsDataEffect4_gmo4Modified => _modifications.ContainsKey(879717735);
+        public string DataEffect4_gco4
         {
             get => _modifications.GetModification(879715175).ValueAsString;
             set => _modifications[879715175] = new LevelObjectDataModification{Id = 879715175, Type = ObjectDataType.String, Value = value, Level = 0};
         }
 
-        public bool IsDatacode4Modified => _modifications.ContainsKey(879715175);
+        public bool IsDataEffect4_gco4Modified => _modifications.ContainsKey(879715175);
         public int StatsTransferWithUnitOwnershipRaw
         {
             get => _modifications.GetModification(1752066407).ValueAsInt;

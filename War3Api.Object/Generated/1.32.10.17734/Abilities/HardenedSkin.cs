@@ -11,8 +11,8 @@ namespace War3Api.Object.Abilities
 {
     public sealed class HardenedSkin : Ability
     {
-        private readonly Lazy<ObjectProperty<float>> _dataData;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDataModified;
+        private readonly Lazy<ObjectProperty<float>> _dataChanceToReduceDamage;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataChanceToReduceDamageModified;
         private readonly Lazy<ObjectProperty<float>> _dataMinimumDamage;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMinimumDamageModified;
         private readonly Lazy<ObjectProperty<float>> _dataIgnoredDamage;
@@ -25,8 +25,8 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ObjectProperty<bool>> _dataIncludeMeleeDamage;
         public HardenedSkin(): base(1802728257)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataChanceToReduceDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToReduceDamage, SetDataChanceToReduceDamage));
+            _isDataChanceToReduceDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToReduceDamageModified));
             _dataMinimumDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMinimumDamage, SetDataMinimumDamage));
             _isDataMinimumDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMinimumDamageModified));
             _dataIgnoredDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataIgnoredDamage, SetDataIgnoredDamage));
@@ -41,8 +41,8 @@ namespace War3Api.Object.Abilities
 
         public HardenedSkin(int newId): base(1802728257, newId)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataChanceToReduceDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToReduceDamage, SetDataChanceToReduceDamage));
+            _isDataChanceToReduceDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToReduceDamageModified));
             _dataMinimumDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMinimumDamage, SetDataMinimumDamage));
             _isDataMinimumDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMinimumDamageModified));
             _dataIgnoredDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataIgnoredDamage, SetDataIgnoredDamage));
@@ -57,8 +57,8 @@ namespace War3Api.Object.Abilities
 
         public HardenedSkin(string newRawcode): base(1802728257, newRawcode)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataChanceToReduceDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToReduceDamage, SetDataChanceToReduceDamage));
+            _isDataChanceToReduceDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToReduceDamageModified));
             _dataMinimumDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMinimumDamage, SetDataMinimumDamage));
             _isDataMinimumDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMinimumDamageModified));
             _dataIgnoredDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataIgnoredDamage, SetDataIgnoredDamage));
@@ -73,8 +73,8 @@ namespace War3Api.Object.Abilities
 
         public HardenedSkin(ObjectDatabaseBase db): base(1802728257, db)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataChanceToReduceDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToReduceDamage, SetDataChanceToReduceDamage));
+            _isDataChanceToReduceDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToReduceDamageModified));
             _dataMinimumDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMinimumDamage, SetDataMinimumDamage));
             _isDataMinimumDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMinimumDamageModified));
             _dataIgnoredDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataIgnoredDamage, SetDataIgnoredDamage));
@@ -89,8 +89,8 @@ namespace War3Api.Object.Abilities
 
         public HardenedSkin(int newId, ObjectDatabaseBase db): base(1802728257, newId, db)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataChanceToReduceDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToReduceDamage, SetDataChanceToReduceDamage));
+            _isDataChanceToReduceDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToReduceDamageModified));
             _dataMinimumDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMinimumDamage, SetDataMinimumDamage));
             _isDataMinimumDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMinimumDamageModified));
             _dataIgnoredDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataIgnoredDamage, SetDataIgnoredDamage));
@@ -105,8 +105,8 @@ namespace War3Api.Object.Abilities
 
         public HardenedSkin(string newRawcode, ObjectDatabaseBase db): base(1802728257, newRawcode, db)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataChanceToReduceDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToReduceDamage, SetDataChanceToReduceDamage));
+            _isDataChanceToReduceDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToReduceDamageModified));
             _dataMinimumDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMinimumDamage, SetDataMinimumDamage));
             _isDataMinimumDamageModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMinimumDamageModified));
             _dataIgnoredDamage = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataIgnoredDamage, SetDataIgnoredDamage));
@@ -119,8 +119,8 @@ namespace War3Api.Object.Abilities
             _dataIncludeMeleeDamage = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataIncludeMeleeDamage, SetDataIncludeMeleeDamage));
         }
 
-        public ObjectProperty<float> DataData => _dataData.Value;
-        public ReadOnlyObjectProperty<bool> IsDataDataModified => _isDataDataModified.Value;
+        public ObjectProperty<float> DataChanceToReduceDamage => _dataChanceToReduceDamage.Value;
+        public ReadOnlyObjectProperty<bool> IsDataChanceToReduceDamageModified => _isDataChanceToReduceDamageModified.Value;
         public ObjectProperty<float> DataMinimumDamage => _dataMinimumDamage.Value;
         public ReadOnlyObjectProperty<bool> IsDataMinimumDamageModified => _isDataMinimumDamageModified.Value;
         public ObjectProperty<float> DataIgnoredDamage => _dataIgnoredDamage.Value;
@@ -131,17 +131,17 @@ namespace War3Api.Object.Abilities
         public ObjectProperty<int> DataIncludeMeleeDamageRaw => _dataIncludeMeleeDamageRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataIncludeMeleeDamageModified => _isDataIncludeMeleeDamageModified.Value;
         public ObjectProperty<bool> DataIncludeMeleeDamage => _dataIncludeMeleeDamage.Value;
-        private float GetDataData(int level)
+        private float GetDataChanceToReduceDamage(int level)
         {
             return _modifications.GetModification(829125459, level).ValueAsFloat;
         }
 
-        private void SetDataData(int level, float value)
+        private void SetDataChanceToReduceDamage(int level, float value)
         {
             _modifications[829125459, level] = new LevelObjectDataModification{Id = 829125459, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 1};
         }
 
-        private bool GetIsDataDataModified(int level)
+        private bool GetIsDataChanceToReduceDamageModified(int level)
         {
             return _modifications.ContainsKey(829125459, level);
         }

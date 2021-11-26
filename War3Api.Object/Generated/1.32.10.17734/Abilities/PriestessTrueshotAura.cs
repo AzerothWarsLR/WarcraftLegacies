@@ -11,8 +11,8 @@ namespace War3Api.Object.Abilities
 {
     public sealed class PriestessTrueshotAura : Ability
     {
-        private readonly Lazy<ObjectProperty<float>> _dataData;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDataModified;
+        private readonly Lazy<ObjectProperty<float>> _dataDamageBonus;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamageBonusModified;
         private readonly Lazy<ObjectProperty<int>> _dataMeleeBonusRaw;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMeleeBonusModified;
         private readonly Lazy<ObjectProperty<bool>> _dataMeleeBonus;
@@ -24,8 +24,8 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ObjectProperty<bool>> _dataFlatBonus;
         public PriestessTrueshotAura(): base(1918977345)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataDamageBonus = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageBonus, SetDataDamageBonus));
+            _isDataDamageBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageBonusModified));
             _dataMeleeBonusRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMeleeBonusRaw, SetDataMeleeBonusRaw));
             _isDataMeleeBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMeleeBonusModified));
             _dataMeleeBonus = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataMeleeBonus, SetDataMeleeBonus));
@@ -39,8 +39,8 @@ namespace War3Api.Object.Abilities
 
         public PriestessTrueshotAura(int newId): base(1918977345, newId)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataDamageBonus = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageBonus, SetDataDamageBonus));
+            _isDataDamageBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageBonusModified));
             _dataMeleeBonusRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMeleeBonusRaw, SetDataMeleeBonusRaw));
             _isDataMeleeBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMeleeBonusModified));
             _dataMeleeBonus = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataMeleeBonus, SetDataMeleeBonus));
@@ -54,8 +54,8 @@ namespace War3Api.Object.Abilities
 
         public PriestessTrueshotAura(string newRawcode): base(1918977345, newRawcode)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataDamageBonus = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageBonus, SetDataDamageBonus));
+            _isDataDamageBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageBonusModified));
             _dataMeleeBonusRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMeleeBonusRaw, SetDataMeleeBonusRaw));
             _isDataMeleeBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMeleeBonusModified));
             _dataMeleeBonus = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataMeleeBonus, SetDataMeleeBonus));
@@ -69,8 +69,8 @@ namespace War3Api.Object.Abilities
 
         public PriestessTrueshotAura(ObjectDatabaseBase db): base(1918977345, db)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataDamageBonus = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageBonus, SetDataDamageBonus));
+            _isDataDamageBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageBonusModified));
             _dataMeleeBonusRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMeleeBonusRaw, SetDataMeleeBonusRaw));
             _isDataMeleeBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMeleeBonusModified));
             _dataMeleeBonus = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataMeleeBonus, SetDataMeleeBonus));
@@ -84,8 +84,8 @@ namespace War3Api.Object.Abilities
 
         public PriestessTrueshotAura(int newId, ObjectDatabaseBase db): base(1918977345, newId, db)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataDamageBonus = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageBonus, SetDataDamageBonus));
+            _isDataDamageBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageBonusModified));
             _dataMeleeBonusRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMeleeBonusRaw, SetDataMeleeBonusRaw));
             _isDataMeleeBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMeleeBonusModified));
             _dataMeleeBonus = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataMeleeBonus, SetDataMeleeBonus));
@@ -99,8 +99,8 @@ namespace War3Api.Object.Abilities
 
         public PriestessTrueshotAura(string newRawcode, ObjectDatabaseBase db): base(1918977345, newRawcode, db)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataDamageBonus = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageBonus, SetDataDamageBonus));
+            _isDataDamageBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageBonusModified));
             _dataMeleeBonusRaw = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataMeleeBonusRaw, SetDataMeleeBonusRaw));
             _isDataMeleeBonusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMeleeBonusModified));
             _dataMeleeBonus = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataMeleeBonus, SetDataMeleeBonus));
@@ -112,8 +112,8 @@ namespace War3Api.Object.Abilities
             _dataFlatBonus = new Lazy<ObjectProperty<bool>>(() => new ObjectProperty<bool>(GetDataFlatBonus, SetDataFlatBonus));
         }
 
-        public ObjectProperty<float> DataData => _dataData.Value;
-        public ReadOnlyObjectProperty<bool> IsDataDataModified => _isDataDataModified.Value;
+        public ObjectProperty<float> DataDamageBonus => _dataDamageBonus.Value;
+        public ReadOnlyObjectProperty<bool> IsDataDamageBonusModified => _isDataDamageBonusModified.Value;
         public ObjectProperty<int> DataMeleeBonusRaw => _dataMeleeBonusRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataMeleeBonusModified => _isDataMeleeBonusModified.Value;
         public ObjectProperty<bool> DataMeleeBonus => _dataMeleeBonus.Value;
@@ -123,17 +123,17 @@ namespace War3Api.Object.Abilities
         public ObjectProperty<int> DataFlatBonusRaw => _dataFlatBonusRaw.Value;
         public ReadOnlyObjectProperty<bool> IsDataFlatBonusModified => _isDataFlatBonusModified.Value;
         public ObjectProperty<bool> DataFlatBonus => _dataFlatBonus.Value;
-        private float GetDataData(int level)
+        private float GetDataDamageBonus(int level)
         {
             return _modifications.GetModification(829579589, level).ValueAsFloat;
         }
 
-        private void SetDataData(int level, float value)
+        private void SetDataDamageBonus(int level, float value)
         {
             _modifications[829579589, level] = new LevelObjectDataModification{Id = 829579589, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 1};
         }
 
-        private bool GetIsDataDataModified(int level)
+        private bool GetIsDataDamageBonusModified(int level)
         {
             return _modifications.ContainsKey(829579589, level);
         }

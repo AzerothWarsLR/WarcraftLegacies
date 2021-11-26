@@ -11,8 +11,8 @@ namespace War3Api.Object.Abilities
 {
     public sealed class Pulverize : Ability
     {
-        private readonly Lazy<ObjectProperty<float>> _dataData;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDataModified;
+        private readonly Lazy<ObjectProperty<float>> _dataChanceToStomp;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataChanceToStompModified;
         private readonly Lazy<ObjectProperty<float>> _dataDamageDealt;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamageDealtModified;
         private readonly Lazy<ObjectProperty<float>> _dataFullDamageRadius;
@@ -21,8 +21,8 @@ namespace War3Api.Object.Abilities
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataHalfDamageRadiusModified;
         public Pulverize(): base(1918990145)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataChanceToStomp = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToStomp, SetDataChanceToStomp));
+            _isDataChanceToStompModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToStompModified));
             _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
             _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
             _dataFullDamageRadius = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataFullDamageRadius, SetDataFullDamageRadius));
@@ -33,8 +33,8 @@ namespace War3Api.Object.Abilities
 
         public Pulverize(int newId): base(1918990145, newId)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataChanceToStomp = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToStomp, SetDataChanceToStomp));
+            _isDataChanceToStompModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToStompModified));
             _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
             _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
             _dataFullDamageRadius = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataFullDamageRadius, SetDataFullDamageRadius));
@@ -45,8 +45,8 @@ namespace War3Api.Object.Abilities
 
         public Pulverize(string newRawcode): base(1918990145, newRawcode)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataChanceToStomp = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToStomp, SetDataChanceToStomp));
+            _isDataChanceToStompModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToStompModified));
             _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
             _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
             _dataFullDamageRadius = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataFullDamageRadius, SetDataFullDamageRadius));
@@ -57,8 +57,8 @@ namespace War3Api.Object.Abilities
 
         public Pulverize(ObjectDatabaseBase db): base(1918990145, db)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataChanceToStomp = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToStomp, SetDataChanceToStomp));
+            _isDataChanceToStompModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToStompModified));
             _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
             _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
             _dataFullDamageRadius = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataFullDamageRadius, SetDataFullDamageRadius));
@@ -69,8 +69,8 @@ namespace War3Api.Object.Abilities
 
         public Pulverize(int newId, ObjectDatabaseBase db): base(1918990145, newId, db)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataChanceToStomp = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToStomp, SetDataChanceToStomp));
+            _isDataChanceToStompModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToStompModified));
             _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
             _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
             _dataFullDamageRadius = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataFullDamageRadius, SetDataFullDamageRadius));
@@ -81,8 +81,8 @@ namespace War3Api.Object.Abilities
 
         public Pulverize(string newRawcode, ObjectDatabaseBase db): base(1918990145, newRawcode, db)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataChanceToStomp = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataChanceToStomp, SetDataChanceToStomp));
+            _isDataChanceToStompModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataChanceToStompModified));
             _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
             _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
             _dataFullDamageRadius = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataFullDamageRadius, SetDataFullDamageRadius));
@@ -91,25 +91,25 @@ namespace War3Api.Object.Abilities
             _isDataHalfDamageRadiusModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataHalfDamageRadiusModified));
         }
 
-        public ObjectProperty<float> DataData => _dataData.Value;
-        public ReadOnlyObjectProperty<bool> IsDataDataModified => _isDataDataModified.Value;
+        public ObjectProperty<float> DataChanceToStomp => _dataChanceToStomp.Value;
+        public ReadOnlyObjectProperty<bool> IsDataChanceToStompModified => _isDataChanceToStompModified.Value;
         public ObjectProperty<float> DataDamageDealt => _dataDamageDealt.Value;
         public ReadOnlyObjectProperty<bool> IsDataDamageDealtModified => _isDataDamageDealtModified.Value;
         public ObjectProperty<float> DataFullDamageRadius => _dataFullDamageRadius.Value;
         public ReadOnlyObjectProperty<bool> IsDataFullDamageRadiusModified => _isDataFullDamageRadiusModified.Value;
         public ObjectProperty<float> DataHalfDamageRadius => _dataHalfDamageRadius.Value;
         public ReadOnlyObjectProperty<bool> IsDataHalfDamageRadiusModified => _isDataHalfDamageRadiusModified.Value;
-        private float GetDataData(int level)
+        private float GetDataChanceToStomp(int level)
         {
             return _modifications.GetModification(829579607, level).ValueAsFloat;
         }
 
-        private void SetDataData(int level, float value)
+        private void SetDataChanceToStomp(int level, float value)
         {
             _modifications[829579607, level] = new LevelObjectDataModification{Id = 829579607, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 1};
         }
 
-        private bool GetIsDataDataModified(int level)
+        private bool GetIsDataChanceToStompModified(int level)
         {
             return _modifications.ContainsKey(829579607, level);
         }

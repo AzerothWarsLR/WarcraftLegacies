@@ -11,73 +11,73 @@ namespace War3Api.Object.Abilities
 {
     public sealed class ItemIllusion : Ability
     {
-        private readonly Lazy<ObjectProperty<float>> _dataData;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDataModified;
+        private readonly Lazy<ObjectProperty<float>> _dataDamageDealtOfNormal;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamageDealtOfNormalModified;
         private readonly Lazy<ObjectProperty<float>> _dataDamageReceivedMultiplier;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamageReceivedMultiplierModified;
         public ItemIllusion(): base(1818839361)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataDamageDealtOfNormal = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealtOfNormal, SetDataDamageDealtOfNormal));
+            _isDataDamageDealtOfNormalModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtOfNormalModified));
             _dataDamageReceivedMultiplier = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageReceivedMultiplier, SetDataDamageReceivedMultiplier));
             _isDataDamageReceivedMultiplierModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageReceivedMultiplierModified));
         }
 
         public ItemIllusion(int newId): base(1818839361, newId)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataDamageDealtOfNormal = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealtOfNormal, SetDataDamageDealtOfNormal));
+            _isDataDamageDealtOfNormalModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtOfNormalModified));
             _dataDamageReceivedMultiplier = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageReceivedMultiplier, SetDataDamageReceivedMultiplier));
             _isDataDamageReceivedMultiplierModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageReceivedMultiplierModified));
         }
 
         public ItemIllusion(string newRawcode): base(1818839361, newRawcode)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataDamageDealtOfNormal = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealtOfNormal, SetDataDamageDealtOfNormal));
+            _isDataDamageDealtOfNormalModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtOfNormalModified));
             _dataDamageReceivedMultiplier = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageReceivedMultiplier, SetDataDamageReceivedMultiplier));
             _isDataDamageReceivedMultiplierModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageReceivedMultiplierModified));
         }
 
         public ItemIllusion(ObjectDatabaseBase db): base(1818839361, db)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataDamageDealtOfNormal = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealtOfNormal, SetDataDamageDealtOfNormal));
+            _isDataDamageDealtOfNormalModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtOfNormalModified));
             _dataDamageReceivedMultiplier = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageReceivedMultiplier, SetDataDamageReceivedMultiplier));
             _isDataDamageReceivedMultiplierModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageReceivedMultiplierModified));
         }
 
         public ItemIllusion(int newId, ObjectDatabaseBase db): base(1818839361, newId, db)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataDamageDealtOfNormal = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealtOfNormal, SetDataDamageDealtOfNormal));
+            _isDataDamageDealtOfNormalModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtOfNormalModified));
             _dataDamageReceivedMultiplier = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageReceivedMultiplier, SetDataDamageReceivedMultiplier));
             _isDataDamageReceivedMultiplierModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageReceivedMultiplierModified));
         }
 
         public ItemIllusion(string newRawcode, ObjectDatabaseBase db): base(1818839361, newRawcode, db)
         {
-            _dataData = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData, SetDataData));
-            _isDataDataModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDataModified));
+            _dataDamageDealtOfNormal = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealtOfNormal, SetDataDamageDealtOfNormal));
+            _isDataDamageDealtOfNormalModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtOfNormalModified));
             _dataDamageReceivedMultiplier = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageReceivedMultiplier, SetDataDamageReceivedMultiplier));
             _isDataDamageReceivedMultiplierModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageReceivedMultiplierModified));
         }
 
-        public ObjectProperty<float> DataData => _dataData.Value;
-        public ReadOnlyObjectProperty<bool> IsDataDataModified => _isDataDataModified.Value;
+        public ObjectProperty<float> DataDamageDealtOfNormal => _dataDamageDealtOfNormal.Value;
+        public ReadOnlyObjectProperty<bool> IsDataDamageDealtOfNormalModified => _isDataDamageDealtOfNormalModified.Value;
         public ObjectProperty<float> DataDamageReceivedMultiplier => _dataDamageReceivedMultiplier.Value;
         public ReadOnlyObjectProperty<bool> IsDataDamageReceivedMultiplierModified => _isDataDamageReceivedMultiplierModified.Value;
-        private float GetDataData(int level)
+        private float GetDataDamageDealtOfNormal(int level)
         {
             return _modifications.GetModification(1684826441, level).ValueAsFloat;
         }
 
-        private void SetDataData(int level, float value)
+        private void SetDataDamageDealtOfNormal(int level, float value)
         {
             _modifications[1684826441, level] = new LevelObjectDataModification{Id = 1684826441, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 1};
         }
 
-        private bool GetIsDataDataModified(int level)
+        private bool GetIsDataDamageDealtOfNormalModified(int level)
         {
             return _modifications.ContainsKey(1684826441, level);
         }

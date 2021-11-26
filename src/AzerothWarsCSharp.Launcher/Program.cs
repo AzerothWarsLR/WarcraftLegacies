@@ -13,6 +13,8 @@ using War3Net.Build.Object;
 using War3Net.IO.Mpq;
 using WCSharp.ConstantGenerator;
 using AzerothWarsCSharp.ObjectFactory.Units;
+using War3Net.CodeAnalysis.Jass;
+using War3Net.CodeAnalysis.Transpilers;
 
 namespace AzerothWarsCSharp.Launcher
 {
@@ -149,6 +151,31 @@ namespace AzerothWarsCSharp.Launcher
       }
     }
 
+    // /// <summary>
+    // /// Transpiles the contents of a JASS-based map into a Lua file.
+    // /// </summary>
+    // private static void TranspileJassToLua(string jassFilePath, string commonJPath, string blizzardJPath, string outputPath, Map map)
+    // {
+    //   var transpiler = new JassToLuaTranspiler();
+    //   transpiler.RegisterJassFile(JassSyntaxFactory.ParseCompilationUnit(File.ReadAllText(commonJPath)));
+    //   transpiler.RegisterJassFile(JassSyntaxFactory.ParseCompilationUnit(File.ReadAllText(blizzardJPath)));
+    //   
+    //   var mapScriptBuilder = new MapScriptBuilder();
+    //   var compilationUnit = mapScriptBuilder.Build(map);
+    //   
+    //   var luaCompilationUnit = transpiler.Transpile();
+    //
+    //   using var fileStream = File.Create(outputPath);
+    //   using var writer = new StreamWriter(fileStream);
+    //   var luaRendererOptions = new LuaSyntaxGenerator.SettingInfo
+    //   {
+    //     Indent = 2,
+    //   };
+    //                 
+    //   var luaRenderer = new LuaRenderer(luaRendererOptions, writer);
+    //   luaRenderer.RenderCompilationUnit(luaCompilationUnit);
+    // }
+    
     /// <summary>
     /// Takes some ObjectData, process it a bit, then adds it to the given ObjectDatabase.
     /// </summary>

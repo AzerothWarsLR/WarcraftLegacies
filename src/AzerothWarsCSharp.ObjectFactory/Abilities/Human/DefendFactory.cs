@@ -21,8 +21,8 @@ namespace AzerothWarsCSharp.ObjectFactory.Abilities.Human
       {
         ability.DataAttackSpeedFactor[i+1] = AttackSpeedFactor[i];
         ability.DataChanceToDeflect[i + 1] = ChanceToDeflect[i];
-        //ability.DataDamageDealt[i + 1] = DamageDealt[i];
-        //ability.DataDamageTaken[i + 1] = DamageTaken[i];
+        ability.DataDamageDealt[i + 1] = DamageDealt[i];
+        ability.DataDamageTaken[i + 1] = DamageTaken[i];
         ability.DataDeflectDamageTakenPiercing[i + 1] = DeflectDamageTakenPiercing[i];
         ability.DataDeflectDamageTakenSpells[i + 1] = DeflectDamageTakenSpells[i];
         ability.DataMagicDamageReduction[i + 1] = MagicDamageReduction[i];

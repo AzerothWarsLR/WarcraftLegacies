@@ -13,20 +13,20 @@ namespace War3Api.Object.Abilities
     {
         private readonly Lazy<ObjectProperty<int>> _dataNumberOfImages;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataNumberOfImagesModified;
-        private readonly Lazy<ObjectProperty<float>> _dataData_Omi2;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataData_Omi2Modified;
-        private readonly Lazy<ObjectProperty<float>> _dataData_Omi3;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataData_Omi3Modified;
+        private readonly Lazy<ObjectProperty<float>> _dataDamageDealt;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamageDealtModified;
+        private readonly Lazy<ObjectProperty<float>> _dataDamageTaken;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamageTakenModified;
         private readonly Lazy<ObjectProperty<float>> _dataAnimationDelay;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAnimationDelayModified;
         public BladeMasterMirrorImage(): base(1768771393)
         {
             _dataNumberOfImages = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNumberOfImages, SetDataNumberOfImages));
             _isDataNumberOfImagesModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfImagesModified));
-            _dataData_Omi2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Omi2, SetDataData_Omi2));
-            _isDataData_Omi2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Omi2Modified));
-            _dataData_Omi3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Omi3, SetDataData_Omi3));
-            _isDataData_Omi3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Omi3Modified));
+            _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
+            _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
+            _dataDamageTaken = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageTaken, SetDataDamageTaken));
+            _isDataDamageTakenModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageTakenModified));
             _dataAnimationDelay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAnimationDelay, SetDataAnimationDelay));
             _isDataAnimationDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAnimationDelayModified));
         }
@@ -35,10 +35,10 @@ namespace War3Api.Object.Abilities
         {
             _dataNumberOfImages = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNumberOfImages, SetDataNumberOfImages));
             _isDataNumberOfImagesModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfImagesModified));
-            _dataData_Omi2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Omi2, SetDataData_Omi2));
-            _isDataData_Omi2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Omi2Modified));
-            _dataData_Omi3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Omi3, SetDataData_Omi3));
-            _isDataData_Omi3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Omi3Modified));
+            _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
+            _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
+            _dataDamageTaken = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageTaken, SetDataDamageTaken));
+            _isDataDamageTakenModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageTakenModified));
             _dataAnimationDelay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAnimationDelay, SetDataAnimationDelay));
             _isDataAnimationDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAnimationDelayModified));
         }
@@ -47,10 +47,10 @@ namespace War3Api.Object.Abilities
         {
             _dataNumberOfImages = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNumberOfImages, SetDataNumberOfImages));
             _isDataNumberOfImagesModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfImagesModified));
-            _dataData_Omi2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Omi2, SetDataData_Omi2));
-            _isDataData_Omi2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Omi2Modified));
-            _dataData_Omi3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Omi3, SetDataData_Omi3));
-            _isDataData_Omi3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Omi3Modified));
+            _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
+            _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
+            _dataDamageTaken = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageTaken, SetDataDamageTaken));
+            _isDataDamageTakenModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageTakenModified));
             _dataAnimationDelay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAnimationDelay, SetDataAnimationDelay));
             _isDataAnimationDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAnimationDelayModified));
         }
@@ -59,10 +59,10 @@ namespace War3Api.Object.Abilities
         {
             _dataNumberOfImages = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNumberOfImages, SetDataNumberOfImages));
             _isDataNumberOfImagesModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfImagesModified));
-            _dataData_Omi2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Omi2, SetDataData_Omi2));
-            _isDataData_Omi2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Omi2Modified));
-            _dataData_Omi3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Omi3, SetDataData_Omi3));
-            _isDataData_Omi3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Omi3Modified));
+            _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
+            _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
+            _dataDamageTaken = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageTaken, SetDataDamageTaken));
+            _isDataDamageTakenModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageTakenModified));
             _dataAnimationDelay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAnimationDelay, SetDataAnimationDelay));
             _isDataAnimationDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAnimationDelayModified));
         }
@@ -71,10 +71,10 @@ namespace War3Api.Object.Abilities
         {
             _dataNumberOfImages = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNumberOfImages, SetDataNumberOfImages));
             _isDataNumberOfImagesModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfImagesModified));
-            _dataData_Omi2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Omi2, SetDataData_Omi2));
-            _isDataData_Omi2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Omi2Modified));
-            _dataData_Omi3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Omi3, SetDataData_Omi3));
-            _isDataData_Omi3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Omi3Modified));
+            _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
+            _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
+            _dataDamageTaken = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageTaken, SetDataDamageTaken));
+            _isDataDamageTakenModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageTakenModified));
             _dataAnimationDelay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAnimationDelay, SetDataAnimationDelay));
             _isDataAnimationDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAnimationDelayModified));
         }
@@ -83,20 +83,20 @@ namespace War3Api.Object.Abilities
         {
             _dataNumberOfImages = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataNumberOfImages, SetDataNumberOfImages));
             _isDataNumberOfImagesModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataNumberOfImagesModified));
-            _dataData_Omi2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Omi2, SetDataData_Omi2));
-            _isDataData_Omi2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Omi2Modified));
-            _dataData_Omi3 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Omi3, SetDataData_Omi3));
-            _isDataData_Omi3Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Omi3Modified));
+            _dataDamageDealt = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageDealt, SetDataDamageDealt));
+            _isDataDamageDealtModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageDealtModified));
+            _dataDamageTaken = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageTaken, SetDataDamageTaken));
+            _isDataDamageTakenModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageTakenModified));
             _dataAnimationDelay = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAnimationDelay, SetDataAnimationDelay));
             _isDataAnimationDelayModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAnimationDelayModified));
         }
 
         public ObjectProperty<int> DataNumberOfImages => _dataNumberOfImages.Value;
         public ReadOnlyObjectProperty<bool> IsDataNumberOfImagesModified => _isDataNumberOfImagesModified.Value;
-        public ObjectProperty<float> DataData_Omi2 => _dataData_Omi2.Value;
-        public ReadOnlyObjectProperty<bool> IsDataData_Omi2Modified => _isDataData_Omi2Modified.Value;
-        public ObjectProperty<float> DataData_Omi3 => _dataData_Omi3.Value;
-        public ReadOnlyObjectProperty<bool> IsDataData_Omi3Modified => _isDataData_Omi3Modified.Value;
+        public ObjectProperty<float> DataDamageDealt => _dataDamageDealt.Value;
+        public ReadOnlyObjectProperty<bool> IsDataDamageDealtModified => _isDataDamageDealtModified.Value;
+        public ObjectProperty<float> DataDamageTaken => _dataDamageTaken.Value;
+        public ReadOnlyObjectProperty<bool> IsDataDamageTakenModified => _isDataDamageTakenModified.Value;
         public ObjectProperty<float> DataAnimationDelay => _dataAnimationDelay.Value;
         public ReadOnlyObjectProperty<bool> IsDataAnimationDelayModified => _isDataAnimationDelayModified.Value;
         private int GetDataNumberOfImages(int level)
@@ -114,32 +114,32 @@ namespace War3Api.Object.Abilities
             return _modifications.ContainsKey(828992847, level);
         }
 
-        private float GetDataData_Omi2(int level)
+        private float GetDataDamageDealt(int level)
         {
             return _modifications.GetModification(845770063, level).ValueAsFloat;
         }
 
-        private void SetDataData_Omi2(int level, float value)
+        private void SetDataDamageDealt(int level, float value)
         {
             _modifications[845770063, level] = new LevelObjectDataModification{Id = 845770063, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 2};
         }
 
-        private bool GetIsDataData_Omi2Modified(int level)
+        private bool GetIsDataDamageDealtModified(int level)
         {
             return _modifications.ContainsKey(845770063, level);
         }
 
-        private float GetDataData_Omi3(int level)
+        private float GetDataDamageTaken(int level)
         {
             return _modifications.GetModification(862547279, level).ValueAsFloat;
         }
 
-        private void SetDataData_Omi3(int level, float value)
+        private void SetDataDamageTaken(int level, float value)
         {
             _modifications[862547279, level] = new LevelObjectDataModification{Id = 862547279, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 3};
         }
 
-        private bool GetIsDataData_Omi3Modified(int level)
+        private bool GetIsDataDamageTakenModified(int level)
         {
             return _modifications.ContainsKey(862547279, level);
         }

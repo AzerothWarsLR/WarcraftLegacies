@@ -11,104 +11,104 @@ namespace War3Api.Object.Abilities
 {
     public sealed class CrippleCreep : Ability
     {
-        private readonly Lazy<ObjectProperty<float>> _dataData_Cri1;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataData_Cri1Modified;
-        private readonly Lazy<ObjectProperty<float>> _dataData_Cri2;
-        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataData_Cri2Modified;
+        private readonly Lazy<ObjectProperty<float>> _dataMovementSpeedReduction;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataMovementSpeedReductionModified;
+        private readonly Lazy<ObjectProperty<float>> _dataAttackSpeedReduction;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataAttackSpeedReductionModified;
         private readonly Lazy<ObjectProperty<float>> _dataDamageReduction;
         private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataDamageReductionModified;
         public CrippleCreep(): base(1919107905)
         {
-            _dataData_Cri1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Cri1, SetDataData_Cri1));
-            _isDataData_Cri1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Cri1Modified));
-            _dataData_Cri2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Cri2, SetDataData_Cri2));
-            _isDataData_Cri2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Cri2Modified));
+            _dataMovementSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedReduction, SetDataMovementSpeedReduction));
+            _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
+            _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
+            _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
             _dataDamageReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageReduction, SetDataDamageReduction));
             _isDataDamageReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageReductionModified));
         }
 
         public CrippleCreep(int newId): base(1919107905, newId)
         {
-            _dataData_Cri1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Cri1, SetDataData_Cri1));
-            _isDataData_Cri1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Cri1Modified));
-            _dataData_Cri2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Cri2, SetDataData_Cri2));
-            _isDataData_Cri2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Cri2Modified));
+            _dataMovementSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedReduction, SetDataMovementSpeedReduction));
+            _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
+            _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
+            _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
             _dataDamageReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageReduction, SetDataDamageReduction));
             _isDataDamageReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageReductionModified));
         }
 
         public CrippleCreep(string newRawcode): base(1919107905, newRawcode)
         {
-            _dataData_Cri1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Cri1, SetDataData_Cri1));
-            _isDataData_Cri1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Cri1Modified));
-            _dataData_Cri2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Cri2, SetDataData_Cri2));
-            _isDataData_Cri2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Cri2Modified));
+            _dataMovementSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedReduction, SetDataMovementSpeedReduction));
+            _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
+            _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
+            _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
             _dataDamageReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageReduction, SetDataDamageReduction));
             _isDataDamageReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageReductionModified));
         }
 
         public CrippleCreep(ObjectDatabaseBase db): base(1919107905, db)
         {
-            _dataData_Cri1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Cri1, SetDataData_Cri1));
-            _isDataData_Cri1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Cri1Modified));
-            _dataData_Cri2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Cri2, SetDataData_Cri2));
-            _isDataData_Cri2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Cri2Modified));
+            _dataMovementSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedReduction, SetDataMovementSpeedReduction));
+            _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
+            _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
+            _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
             _dataDamageReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageReduction, SetDataDamageReduction));
             _isDataDamageReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageReductionModified));
         }
 
         public CrippleCreep(int newId, ObjectDatabaseBase db): base(1919107905, newId, db)
         {
-            _dataData_Cri1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Cri1, SetDataData_Cri1));
-            _isDataData_Cri1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Cri1Modified));
-            _dataData_Cri2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Cri2, SetDataData_Cri2));
-            _isDataData_Cri2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Cri2Modified));
+            _dataMovementSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedReduction, SetDataMovementSpeedReduction));
+            _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
+            _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
+            _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
             _dataDamageReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageReduction, SetDataDamageReduction));
             _isDataDamageReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageReductionModified));
         }
 
         public CrippleCreep(string newRawcode, ObjectDatabaseBase db): base(1919107905, newRawcode, db)
         {
-            _dataData_Cri1 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Cri1, SetDataData_Cri1));
-            _isDataData_Cri1Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Cri1Modified));
-            _dataData_Cri2 = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataData_Cri2, SetDataData_Cri2));
-            _isDataData_Cri2Modified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataData_Cri2Modified));
+            _dataMovementSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataMovementSpeedReduction, SetDataMovementSpeedReduction));
+            _isDataMovementSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataMovementSpeedReductionModified));
+            _dataAttackSpeedReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataAttackSpeedReduction, SetDataAttackSpeedReduction));
+            _isDataAttackSpeedReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataAttackSpeedReductionModified));
             _dataDamageReduction = new Lazy<ObjectProperty<float>>(() => new ObjectProperty<float>(GetDataDamageReduction, SetDataDamageReduction));
             _isDataDamageReductionModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataDamageReductionModified));
         }
 
-        public ObjectProperty<float> DataData_Cri1 => _dataData_Cri1.Value;
-        public ReadOnlyObjectProperty<bool> IsDataData_Cri1Modified => _isDataData_Cri1Modified.Value;
-        public ObjectProperty<float> DataData_Cri2 => _dataData_Cri2.Value;
-        public ReadOnlyObjectProperty<bool> IsDataData_Cri2Modified => _isDataData_Cri2Modified.Value;
+        public ObjectProperty<float> DataMovementSpeedReduction => _dataMovementSpeedReduction.Value;
+        public ReadOnlyObjectProperty<bool> IsDataMovementSpeedReductionModified => _isDataMovementSpeedReductionModified.Value;
+        public ObjectProperty<float> DataAttackSpeedReduction => _dataAttackSpeedReduction.Value;
+        public ReadOnlyObjectProperty<bool> IsDataAttackSpeedReductionModified => _isDataAttackSpeedReductionModified.Value;
         public ObjectProperty<float> DataDamageReduction => _dataDamageReduction.Value;
         public ReadOnlyObjectProperty<bool> IsDataDamageReductionModified => _isDataDamageReductionModified.Value;
-        private float GetDataData_Cri1(int level)
+        private float GetDataMovementSpeedReduction(int level)
         {
             return _modifications.GetModification(828994115, level).ValueAsFloat;
         }
 
-        private void SetDataData_Cri1(int level, float value)
+        private void SetDataMovementSpeedReduction(int level, float value)
         {
             _modifications[828994115, level] = new LevelObjectDataModification{Id = 828994115, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 1};
         }
 
-        private bool GetIsDataData_Cri1Modified(int level)
+        private bool GetIsDataMovementSpeedReductionModified(int level)
         {
             return _modifications.ContainsKey(828994115, level);
         }
 
-        private float GetDataData_Cri2(int level)
+        private float GetDataAttackSpeedReduction(int level)
         {
             return _modifications.GetModification(845771331, level).ValueAsFloat;
         }
 
-        private void SetDataData_Cri2(int level, float value)
+        private void SetDataAttackSpeedReduction(int level, float value)
         {
             _modifications[845771331, level] = new LevelObjectDataModification{Id = 845771331, Type = ObjectDataType.Unreal, Value = value, Level = level, Pointer = 2};
         }
 
-        private bool GetIsDataData_Cri2Modified(int level)
+        private bool GetIsDataAttackSpeedReductionModified(int level)
         {
             return _modifications.ContainsKey(845771331, level);
         }
