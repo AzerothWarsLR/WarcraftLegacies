@@ -19,23 +19,22 @@ namespace AzerothWarsCSharp.Launcher
   internal static class Program
   {
     // Input
-    private const string SOURCE_CODE_PROJECT_FOLDER_PATH = @"..\..\..\..\AzerothWarsCSharp.Source";
-    private const string ASSETS_FOLDER_PATH = @"..\..\..\..\Assets\";
-    private const string BASE_MAP_PATH = @"..\..\..\..\..\testsource.w3x";
-    private const string BASE_OBJECT_PATH = @"..\..\..\..\..\source.w3o"; //These objects get added into the map
+    private const string SourceCodeProjectFolderPath = @"..\..\..\..\AzerothWarsCSharp.Source";
+    private const string AssetsFolderPath = @"..\..\..\..\Assets\";
+    private const string BaseMapPath = @"..\..\..\..\..\testsource.w3x";
+    private const string BaseObjectPath = @"..\..\..\..\..\source.w3o"; //These objects get added into the map
 
     // Output
-    private const string OUTPUT_FOLDER_PATH = @"..\..\..\..\artifacts";
-    private const string OUTPUT_SCRIPT_NAME = @"war3map.lua";
-    private const string OUTPUT_MAP_NAME = @"target.w3x";
+    private const string OutputFolderPath = @"..\..\..\..\artifacts";
+    private const string OutputScriptName = @"war3map.lua";
+    private const string OutputMapName = @"target.w3x";
 
     // Warcraft III
-    private const string GRAPHICS_API = "Direct3D9";
-    private const bool PAUSE_GAME_ON_LOSE_FOCUS = false;
+    private const string GraphicsApi = "Direct3D9";
 #if DEBUG
-    private const bool DEBUG = true;
+    private const bool Debug = true;
 #else
-		private const bool DEBUG = false;
+		private const bool Debug = false;
 #endif
 
     private static void Main()
@@ -53,7 +52,7 @@ namespace AzerothWarsCSharp.Launcher
       switch (Console.ReadKey().Key)
       {
         case ConsoleKey.D1:
-          ConstantGenerator.Run(BASE_MAP_PATH, SOURCE_CODE_PROJECT_FOLDER_PATH, new ConstantGeneratorOptions
+          ConstantGenerator.Run(BaseMapPath, SourceCodeProjectFolderPath, new ConstantGeneratorOptions
           {
             IncludeCode = false
           });
@@ -74,25 +73,25 @@ namespace AzerothWarsCSharp.Launcher
     private static void Build(bool launch)
     {
       // Ensure these folders exist
-      Directory.CreateDirectory(ASSETS_FOLDER_PATH);
-      Directory.CreateDirectory(OUTPUT_FOLDER_PATH);
+      Directory.CreateDirectory(AssetsFolderPath);
+      Directory.CreateDirectory(OutputFolderPath);
 
       // Load existing map data
-      var map = Map.Open(BASE_MAP_PATH);
+      var map = Map.Open(BaseMapPath);
       var builder = new MapBuilder(map);
-      builder.AddFiles(BASE_MAP_PATH, "*", SearchOption.AllDirectories);
-      builder.AddFiles(ASSETS_FOLDER_PATH, "*", SearchOption.AllDirectories);
+      builder.AddFiles(BaseMapPath, "*", SearchOption.AllDirectories);
+      builder.AddFiles(AssetsFolderPath, "*", SearchOption.AllDirectories);
 
       // Set debug options if necessary, configure compiler
-      var csc = DEBUG ? "-debug -define:DEBUG" : null;
-      var csproj = Directory.EnumerateFiles(SOURCE_CODE_PROJECT_FOLDER_PATH, "*.csproj", SearchOption.TopDirectoryOnly).Single();
-      var compiler = new Compiler(csproj, OUTPUT_FOLDER_PATH, string.Empty, null, "War3Api.*;WCSharp.*", "", csc, false, null, string.Empty)
+      const string csc = Debug ? "-debug -define:DEBUG" : null;
+      var csproj = Directory.EnumerateFiles(SourceCodeProjectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
+      var compiler = new Compiler(csproj, OutputFolderPath, string.Empty, null!, "War3Api.*;WCSharp.*", "", csc, false, null, string.Empty)
       {
         IsExportMetadata = true,
         IsModule = false,
         IsInlineSimpleProperty = false,
         IsPreventDebugObject = true,
-        IsCommentsDisabled = !DEBUG
+        IsCommentsDisabled = !Debug
       };
 
       // Collect required paths and compile
@@ -108,7 +107,7 @@ namespace AzerothWarsCSharp.Launcher
       }
 
       // Update war3map.lua so you can inspect the generated Lua code easily
-      File.WriteAllText(Path.Combine(OUTPUT_FOLDER_PATH, OUTPUT_SCRIPT_NAME), map.Script);
+      File.WriteAllText(Path.Combine(OutputFolderPath, OutputScriptName), map.Script);
 
       //Generate and write object data
       WriteObjectData(map, GenerateObjectDatabase());
@@ -120,35 +119,28 @@ namespace AzerothWarsCSharp.Launcher
         AttributesCreateMode = MpqFileCreateMode.Prune,
         BlockSize = 3,
       };
-      builder.Build(Path.Combine(OUTPUT_FOLDER_PATH, OUTPUT_MAP_NAME), archiveCreateOptions);
+      builder.Build(Path.Combine(OutputFolderPath, OutputMapName), archiveCreateOptions);
 
       // Launch if that option was selected
       if (launch)
       {
-        var wc3exe = ConfigurationManager.AppSettings["wc3exe"];
-        if (File.Exists(wc3exe))
+        var wc3Exe = ConfigurationManager.AppSettings["wc3exe"];
+        if (File.Exists(wc3Exe))
         {
           var commandLineArgs = new StringBuilder();
-          var isReforged = Version.Parse(FileVersionInfo.GetVersionInfo(wc3exe).FileVersion) >= new Version(1, 32);
+          var isReforged = Version.Parse(FileVersionInfo.GetVersionInfo(wc3Exe).FileVersion) >= new Version(1, 32);
           if (isReforged)
           {
             commandLineArgs.Append(" -launch");
           }
-          else if (GRAPHICS_API != null)
-          {
-            commandLineArgs.Append($" -graphicsapi {GRAPHICS_API}");
-          }
+          commandLineArgs.Append($" -graphicsapi {GraphicsApi}");
+          commandLineArgs.Append(" -nowfpause");
 
-          if (!PAUSE_GAME_ON_LOSE_FOCUS)
-          {
-            commandLineArgs.Append(" -nowfpause");
-          }
-
-          var mapPath = Path.Combine(OUTPUT_FOLDER_PATH, OUTPUT_MAP_NAME);
+            var mapPath = Path.Combine(OutputFolderPath, OutputMapName);
           var absoluteMapPath = new FileInfo(mapPath).FullName;
           commandLineArgs.Append($" -loadfile \"{absoluteMapPath}\"");
 
-          Process.Start(wc3exe, commandLineArgs.ToString());
+          Process.Start(wc3Exe, commandLineArgs.ToString());
         }
         else
         {
@@ -160,9 +152,6 @@ namespace AzerothWarsCSharp.Launcher
     /// <summary>
     /// Takes some ObjectData, process it a bit, then adds it to the given ObjectDatabase.
     /// </summary>
-    /// <param name="objectDatabase"></param>
-    /// <param name="objectData"></param>
-    /// <returns></returns>
     private static ObjectDatabase ProcessAdditionalObjectData(ObjectDatabase destinationObjectDatabase, ObjectData objectData)
     {
       var tempObjectDatabase = new ObjectDatabase();
@@ -178,9 +167,6 @@ namespace AzerothWarsCSharp.Launcher
     /// <summary>
     /// Take a file containing some object data, process it a bit, then add it to the ObjectDatabase.
     /// </summary>
-    /// <param name="objectDatabase"></param>
-    /// <param name="objectDataPath"></param>
-    /// <returns></returns>
     private static ObjectDatabase ProcessAdditionalObjectData(ObjectDatabase objectDatabase, string objectDataPath)
     {
       using var fileStream = File.OpenRead(objectDataPath);
@@ -194,7 +180,7 @@ namespace AzerothWarsCSharp.Launcher
     {
       ObjectDatabase objectDatabase = new();
       //Human.GenerateObjectData(objectDatabase);
-      ProcessAdditionalObjectData(objectDatabase, BASE_OBJECT_PATH);
+      ProcessAdditionalObjectData(objectDatabase, BaseObjectPath);
       return objectDatabase;
     }
 
