@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Diagnostics;
 using System.IO;
 using System.Text;
+using AzerothWarsCSharp.IntegrityChecker;
 using AzerothWarsCSharp.ObjectFactory.Units;
 using War3Api.Object;
 using War3Net.Build;
@@ -52,6 +54,7 @@ namespace AzerothWarsCSharp.Launcher
       Console.WriteLine("1. Generate constants");
       Console.WriteLine("2. Compile map");
       Console.WriteLine("3. Compile and run map");
+      Console.WriteLine("4. Find unused models");
       MakeDecision();
     }
 
@@ -75,6 +78,9 @@ namespace AzerothWarsCSharp.Launcher
         case ConsoleKey.D3:
           Build(true);
           break;
+        case ConsoleKey.D4:
+          DisplayUnusedModels();
+          break;
         default:
           Console.WriteLine($"{Environment.NewLine}Invalid input. Please choose again.");
           MakeDecision();
@@ -82,6 +88,35 @@ namespace AzerothWarsCSharp.Launcher
       }
     }
 
+    private static void DisplayUnusedModels()
+    {
+      //List directories which may have models in them
+      var modelFolderPaths = new List<string>()
+      {
+        Path.Combine(BaseMapPath, "war3mapImported"),
+        BaseMapPath
+      };
+      
+      //Get all models in relevant directories
+      var modelFilePaths = new List<string>();
+      foreach (var path in modelFolderPaths)
+      {
+        modelFilePaths.AddRange(Directory.EnumerateFiles(path, "*.mdx"));
+      }
+
+      //Get object data
+      using var fileStream = File.OpenRead(BaseObjectPath);
+      using var binaryReader = new BinaryReader(fileStream);
+      var objectData = binaryReader.ReadObjectData(false);
+      
+      //Get and display unused models
+      var unusedModels = MapIntegrityChecker.FindUnusedModels(objectData, modelFilePaths, BaseMapPath);
+      foreach (var unusedModel in unusedModels)
+      {
+        Console.WriteLine(unusedModel.RelativePathMdx);
+      }
+    }
+    
     /// <summary>
     ///   Builds the Warcraft 3 map.
     /// </summary>

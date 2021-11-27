@@ -17,14 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Assets\**">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\AzerothWarsCSharp.ObjectFactory\AzerothWarsCSharp.ObjectFactory.csproj" />
     <ProjectReference Include="..\AzerothWarsCSharp.Common\AzerothWarsCSharp.Common.csproj" />
+    <ProjectReference Include="..\AzerothWarsCSharp.IntegrityChecker\AzerothWarsCSharp.IntegrityChecker.csproj" />
     <ProjectReference Include="..\AzerothWarsCSharp.ObjectFactory\AzerothWarsCSharp.ObjectFactory.csproj" />
     <ProjectReference Include="..\War3Api.Object\War3Api.Object.csproj" />
   </ItemGroup>

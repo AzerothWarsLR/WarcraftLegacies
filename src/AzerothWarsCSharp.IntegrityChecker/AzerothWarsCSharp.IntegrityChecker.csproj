@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <GenerateProgramFile>false</GenerateProgramFile>
+    </PropertyGroup>
+    
+    <ItemGroup>
+      <PackageReference Include="War3Net.Build.Core" Version="5.2.2" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\War3Api.Object\War3Api.Object.csproj" />
+    </ItemGroup>
+
+</Project>
