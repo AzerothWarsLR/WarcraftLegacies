@@ -2,19 +2,15 @@
 using System.Configuration;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Text;
+using AzerothWarsCSharp.ObjectFactory.Units;
 using CSharpLua;
-using Microsoft.CodeAnalysis;
 using War3Api.Object;
 using War3Net.Build;
 using War3Net.Build.Extensions;
 using War3Net.Build.Object;
 using War3Net.IO.Mpq;
 using WCSharp.ConstantGenerator;
-using AzerothWarsCSharp.ObjectFactory.Units;
-using War3Net.CodeAnalysis.Jass;
-using War3Net.CodeAnalysis.Transpilers;
 
 namespace AzerothWarsCSharp.Launcher
 {
@@ -22,13 +18,22 @@ namespace AzerothWarsCSharp.Launcher
   {
     // Input
     private const string SourceCodeProjectFolderPath = @"..\..\..\..\AzerothWarsCSharp.Source";
-    private const string AssetsFolderPath = @"..\..\..\..\Assets\";
-    private const string BaseMapPath = @"..\..\..\..\..\testsource.w3x";
-    private const string BaseObjectPath = @"..\..\..\..\..\source.w3o"; //These objects get added into the map
+    private const string JassHelperPath = @"..\..\..\..\..\build\JassHelper\jasshelper.exe";
+
+    /// <summary>
+    ///   Folder containing loose JASS files that will be added to the final result.
+    /// </summary>
+    private const string JassFolderPath = @"..\..\..\..\..\jass\";
+    private const string BaseMapPath = @"..\..\..\..\..\maps\source.w3x";
+
+    /// <summary>
+    ///   File containing Warcraft 3 objects that will be added to the final result.
+    /// </summary>
+    private const string BaseObjectPath = @"..\..\..\..\..\source.w3o";
 
     // Output
-    private const string OutputFolderPath = @"..\..\..\..\artifacts";
-    private const string OutputScriptName = @"war3map.lua";
+    private const string OutputFolderPath = @"..\..\..\..\..\artifacts";
+    private const string CompiledJassFolderPath = @"..\..\..\..\artifacts\compiledJass\";
     private const string OutputMapName = @"target.w3x";
 
     // Warcraft III
@@ -39,6 +44,9 @@ namespace AzerothWarsCSharp.Launcher
 		private const bool Debug = false;
 #endif
 
+    /// <summary>
+    ///   Entry point for the program.
+    /// </summary>
     private static void Main()
     {
       Console.WriteLine("The following actions are available:");
@@ -48,6 +56,9 @@ namespace AzerothWarsCSharp.Launcher
       MakeDecision();
     }
 
+    /// <summary>
+    ///   Prompts the user for some build options.
+    /// </summary>
     private static void MakeDecision()
     {
       Console.Write("Please type the number of your desired action: ");
@@ -72,114 +83,76 @@ namespace AzerothWarsCSharp.Launcher
       }
     }
 
+    /// <summary>
+    ///   Builds the Warcraft 3 map.
+    /// </summary>
     private static void Build(bool launch)
     {
       // Ensure these folders exist
-      Directory.CreateDirectory(AssetsFolderPath);
       Directory.CreateDirectory(OutputFolderPath);
+      Directory.CreateDirectory(CompiledJassFolderPath);
+
+      //Collect required paths
+      var blizzardJ = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
+        "Warcraft III/JassHelper/Blizzard.j");
+      var commonJ = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
+        "Warcraft III/JassHelper/common.j");
+
+      //Load loose JASS code into temporary map file
+      var jassHelper = new JassHelper(JassHelperPath, commonJ, blizzardJ, OutputFolderPath);
+      var mergedJassFilePath = Path.Combine(CompiledJassFolderPath, "war3map.j");
+      jassHelper.CombineVJassWithJass(Path.Combine(BaseMapPath, "war3map.j"), new[] {JassFolderPath}, mergedJassFilePath);
 
       // Load existing map data
       var map = Map.Open(BaseMapPath);
       var builder = new MapBuilder(map);
       builder.AddFiles(BaseMapPath, "*", SearchOption.AllDirectories);
-      builder.AddFiles(AssetsFolderPath, "*", SearchOption.AllDirectories);
-
-      // Set debug options if necessary, configure compiler
-      const string csc = Debug ? "-debug -define:DEBUG" : null;
-      var csproj = Directory.EnumerateFiles(SourceCodeProjectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
-      var compiler = new Compiler(csproj, OutputFolderPath, string.Empty, null!, "War3Api.*;WCSharp.*", "", csc, false, null, string.Empty)
-      {
-        IsExportMetadata = true,
-        IsModule = false,
-        IsInlineSimpleProperty = false,
-        IsPreventDebugObject = true,
-        IsCommentsDisabled = !Debug
-      };
-
-      // Collect required paths and compile
-      var coreSystemFiles = CSharpLua.CoreSystem.CoreSystemProvider.GetCoreSystemFiles();
-      var blizzardJ = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Warcraft III/JassHelper/Blizzard.j");
-      var commonJ = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Warcraft III/JassHelper/common.j");
-      var compileResult = map.CompileScript(compiler, coreSystemFiles, blizzardJ, commonJ);
-
-      // If compilation failed, output an error
-      if (!compileResult.Success)
-      {
-        throw new Exception(compileResult.Diagnostics.First(x => x.Severity == DiagnosticSeverity.Error).GetMessage());
-      }
-
-      // Update war3map.lua so you can inspect the generated Lua code easily
-      File.WriteAllText(Path.Combine(OutputFolderPath, OutputScriptName), map.Script);
-
-      //Generate and write object data
-      WriteObjectData(map, GenerateObjectDatabase());
+      builder.AddFiles(CompiledJassFolderPath);
 
       // Build w3x file
       var archiveCreateOptions = new MpqArchiveCreateOptions
       {
         ListFileCreateMode = MpqFileCreateMode.Overwrite,
         AttributesCreateMode = MpqFileCreateMode.Prune,
-        BlockSize = 3,
+        BlockSize = 3
       };
       builder.Build(Path.Combine(OutputFolderPath, OutputMapName), archiveCreateOptions);
 
       // Launch if that option was selected
-      if (launch)
+      if (launch) LaunchGame();
+    }
+
+    /// <summary>
+    /// Launches Warcraft 3.
+    /// </summary>
+    private static void LaunchGame()
+    {
+      var wc3Exe = ConfigurationManager.AppSettings["wc3exe"];
+      if (File.Exists(wc3Exe))
       {
-        var wc3Exe = ConfigurationManager.AppSettings["wc3exe"];
-        if (File.Exists(wc3Exe))
-        {
-          var commandLineArgs = new StringBuilder();
-          var isReforged = Version.Parse(FileVersionInfo.GetVersionInfo(wc3Exe).FileVersion) >= new Version(1, 32);
-          if (isReforged)
-          {
-            commandLineArgs.Append(" -launch");
-          }
-          commandLineArgs.Append($" -graphicsapi {GraphicsApi}");
-          commandLineArgs.Append(" -nowfpause");
+        var commandLineArgs = new StringBuilder();
+        var isReforged = Version.Parse(FileVersionInfo.GetVersionInfo(wc3Exe).FileVersion) >= new Version(1, 32);
+        if (isReforged) commandLineArgs.Append(" -launch");
+        commandLineArgs.Append($" -graphicsapi {GraphicsApi}");
+        commandLineArgs.Append(" -nowfpause");
 
-            var mapPath = Path.Combine(OutputFolderPath, OutputMapName);
-          var absoluteMapPath = new FileInfo(mapPath).FullName;
-          commandLineArgs.Append($" -loadfile \"{absoluteMapPath}\"");
+        var mapPath = Path.Combine(OutputFolderPath, OutputMapName);
+        var absoluteMapPath = new FileInfo(mapPath).FullName;
+        commandLineArgs.Append($" -loadfile \"{absoluteMapPath}\"");
 
-          Process.Start(wc3Exe, commandLineArgs.ToString());
-        }
-        else
-        {
-          throw new Exception("Please set wc3exe in Launcher/app.config to the path of your Warcraft III executable.");
-        }
+        Process.Start(wc3Exe, commandLineArgs.ToString());
+      }
+      else
+      {
+        throw new Exception("Please set wc3exe in Launcher/app.config to the path of your Warcraft III executable.");
       }
     }
 
-    // /// <summary>
-    // /// Transpiles the contents of a JASS-based map into a Lua file.
-    // /// </summary>
-    // private static void TranspileJassToLua(string jassFilePath, string commonJPath, string blizzardJPath, string outputPath, Map map)
-    // {
-    //   var transpiler = new JassToLuaTranspiler();
-    //   transpiler.RegisterJassFile(JassSyntaxFactory.ParseCompilationUnit(File.ReadAllText(commonJPath)));
-    //   transpiler.RegisterJassFile(JassSyntaxFactory.ParseCompilationUnit(File.ReadAllText(blizzardJPath)));
-    //   
-    //   var mapScriptBuilder = new MapScriptBuilder();
-    //   var compilationUnit = mapScriptBuilder.Build(map);
-    //   
-    //   var luaCompilationUnit = transpiler.Transpile();
-    //
-    //   using var fileStream = File.Create(outputPath);
-    //   using var writer = new StreamWriter(fileStream);
-    //   var luaRendererOptions = new LuaSyntaxGenerator.SettingInfo
-    //   {
-    //     Indent = 2,
-    //   };
-    //                 
-    //   var luaRenderer = new LuaRenderer(luaRendererOptions, writer);
-    //   luaRenderer.RenderCompilationUnit(luaCompilationUnit);
-    // }
-    
     /// <summary>
-    /// Takes some ObjectData, process it a bit, then adds it to the given ObjectDatabase.
+    ///   Takes some ObjectData, process it a bit, then adds it to the given ObjectDatabase.
     /// </summary>
-    private static ObjectDatabase ProcessAdditionalObjectData(ObjectDatabase destinationObjectDatabase, ObjectData objectData)
+    private static ObjectDatabase ProcessAdditionalObjectData(ObjectDatabase destinationObjectDatabase,
+      ObjectData objectData)
     {
       var tempObjectDatabase = new ObjectDatabase();
       tempObjectDatabase.AddObjects(objectData);
@@ -188,6 +161,7 @@ namespace AzerothWarsCSharp.Launcher
         var unitFactory = new UnitFactory(unit);
         unitFactory.Generate(unit.NewId, destinationObjectDatabase);
       }
+
       return destinationObjectDatabase;
     }
 
