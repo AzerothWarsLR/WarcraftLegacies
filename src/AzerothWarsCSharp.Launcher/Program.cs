@@ -4,7 +4,6 @@ using System.Diagnostics;
 using System.IO;
 using System.Text;
 using AzerothWarsCSharp.ObjectFactory.Units;
-using CSharpLua;
 using War3Api.Object;
 using War3Net.Build;
 using War3Net.Build.Extensions;
