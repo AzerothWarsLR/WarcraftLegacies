@@ -119,10 +119,10 @@ namespace War3Api.Object
             //    AddObjects(objectData.DestructableData);
             //}
 
-            //if (objectData.DoodadData is not null)
-            //{
-            //    AddObjects(objectData.DoodadData);
-            //}
+            if (objectData.DoodadData is not null)
+            {
+                AddObjects(objectData.DoodadData);
+            }
 
             if (objectData.AbilityData is not null)
             {
