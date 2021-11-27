@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.Launcher
 
     // Output
     private const string OutputFolderPath = @"..\..\..\..\..\artifacts";
-    private const string CompiledJassFolderPath = @"..\..\..\..\artifacts\compiledJass\";
+    private const string CompiledJassFolderPath = @"..\..\..\..\..\artifacts\compiledJass\";
     private const string OutputMapName = @"target.w3x";
 
     // Warcraft III
