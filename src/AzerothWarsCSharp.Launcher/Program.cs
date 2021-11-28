@@ -9,6 +9,7 @@ using AzerothWarsCSharp.ObjectFactory.Units;
 using War3Api.Object;
 using War3Net.Build;
 using War3Net.Build.Extensions;
+using War3Net.Build.Info;
 using War3Net.Build.Object;
 using War3Net.IO.Mpq;
 using WCSharp.ConstantGenerator;
@@ -39,11 +40,6 @@ namespace AzerothWarsCSharp.Launcher
 
     // Warcraft III
     private const string GraphicsApi = "Direct3D9";
-#if DEBUG
-    private const bool Debug = true;
-#else
-		private const bool Debug = false;
-#endif
 
     /// <summary>
     ///   Entry point for the program.
@@ -141,8 +137,11 @@ namespace AzerothWarsCSharp.Launcher
       var map = Map.Open(BaseMapPath);
       var builder = new MapBuilder(map);
       builder.AddFiles(BaseMapPath, "*", SearchOption.AllDirectories);
-      builder.AddFiles(CompiledJassFolderPath);
-
+      
+      //Transpile the JASS file to a Lua file
+      map.Info.ScriptLanguage = ScriptLanguage.Lua;
+      map.Script = ScriptTranspiler.JassToLua(File.ReadAllText(mergedJassFilePath));
+      
       // Build w3x file
       var archiveCreateOptions = new MpqArchiveCreateOptions
       {

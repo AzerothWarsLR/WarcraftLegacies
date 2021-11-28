@@ -68,8 +68,7 @@ globals
 endglobals
 
 private function filt takes nothing returns boolean
-return GetDestructableMaxLife(GetFilterDestructable()) == 1
-return true
+    return GetDestructableMaxLife(GetFilterDestructable()) == 1
 endfunction
 
 public function register takes destructable d returns nothing
