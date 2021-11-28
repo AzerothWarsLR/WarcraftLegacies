@@ -2,10 +2,17 @@
 
 namespace AzerothWarsCSharp.IntegrityChecker
 {
-  public class ModelData
+  public readonly struct ModelData
   {
     private readonly string _fullPath;
     private readonly string _rootMapFolderPath;
+
+    public bool IsPortrait { get; }
+
+    public string RelativePathWithoutPortraitSuffixMdl => 
+      Path.GetRelativePath(_rootMapFolderPath, Path.ChangeExtension(_fullPath, ".mdl")
+      .Replace("_portrait", string.Empty)
+      .Replace("_Portrait", string.Empty));
 
     public string RelativePathMdx => Path.GetRelativePath(_rootMapFolderPath, _fullPath);
 
@@ -15,6 +22,7 @@ namespace AzerothWarsCSharp.IntegrityChecker
     {
       _fullPath = fullPath;
       _rootMapFolderPath = rootMapFolderPath;
+      IsPortrait = fullPath.ToLower().Contains("_portrait");
     }
   }
 }

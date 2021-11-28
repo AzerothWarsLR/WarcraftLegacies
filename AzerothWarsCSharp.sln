@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzerothWarsCSharp.ObjectFac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzerothWarsCSharp.IntegrityChecker", "src\AzerothWarsCSharp.IntegrityChecker\AzerothWarsCSharp.IntegrityChecker.csproj", "{9FF7537B-5417-4622-A21A-644D0DB6A49F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzerothWarsCSharp.IntegrityChecker.Tests", "tests\AzerothWarsCSharp.IntegrityChecker.Tests\AzerothWarsCSharp.IntegrityChecker.Tests.csproj", "{EF0F235A-C8CB-4C51-88AE-4B40479A87D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{9FF7537B-5417-4622-A21A-644D0DB6A49F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FF7537B-5417-4622-A21A-644D0DB6A49F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FF7537B-5417-4622-A21A-644D0DB6A49F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF0F235A-C8CB-4C51-88AE-4B40479A87D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF0F235A-C8CB-4C51-88AE-4B40479A87D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF0F235A-C8CB-4C51-88AE-4B40479A87D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF0F235A-C8CB-4C51-88AE-4B40479A87D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
