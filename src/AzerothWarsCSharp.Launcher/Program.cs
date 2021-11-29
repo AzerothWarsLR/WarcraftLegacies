@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Text;
 using AzerothWarsCSharp.IntegrityChecker;
 using AzerothWarsCSharp.ObjectFactory.Units;
+using Cake.Core;
+using CSharpLua;
+using Microsoft.CodeAnalysis;
 using War3Api.Object;
 using War3Net.Build;
 using War3Net.Build.Extensions;
@@ -26,7 +30,7 @@ namespace AzerothWarsCSharp.Launcher
     ///   Folder containing loose JASS files that will be added to the final result.
     /// </summary>
     private const string JassFolderPath = @"..\..\..\..\..\jass\";
-    private const string BaseMapPath = @"..\..\..\..\..\maps\source.w3x";
+    private const string BaseMapPath = @"..\..\..\..\..\maps\source2.w3x";
 
     /// <summary>
     ///   File containing Warcraft 3 objects that will be added to the final result.
@@ -35,6 +39,7 @@ namespace AzerothWarsCSharp.Launcher
 
     // Output
     private const string OutputFolderPath = @"..\..\..\..\..\artifacts";
+    private const string OutputScriptName = @"war3map.lua";
     private const string CompiledJassFolderPath = @"..\..\..\..\..\artifacts\compiledJass\";
     private const string OutputMapName = @"target.w3x";
 
@@ -128,19 +133,45 @@ namespace AzerothWarsCSharp.Launcher
       var commonJ = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
         "Warcraft III/JassHelper/common.j");
 
-      //Load loose JASS code into temporary map file
-      var jassHelper = new JassHelper(JassHelperPath, commonJ, blizzardJ, OutputFolderPath);
-      var mergedJassFilePath = Path.Combine(CompiledJassFolderPath, "war3map.j");
-      jassHelper.CombineVJassWithJass(Path.Combine(BaseMapPath, "war3map.j"), new[] {JassFolderPath}, mergedJassFilePath);
-
       // Load existing map data
       var map = Map.Open(BaseMapPath);
       var builder = new MapBuilder(map);
       builder.AddFiles(BaseMapPath, "*", SearchOption.AllDirectories);
-      
-      //Transpile the JASS file to a Lua file
       map.Info.ScriptLanguage = ScriptLanguage.Lua;
-      map.Script = ScriptTranspiler.JassToLua(File.ReadAllText(mergedJassFilePath));
+      
+      // Set debug options if necessary, configure compiler
+      const string csc = "-debug -define:DEBUG";
+      var csproj = Directory.EnumerateFiles(SourceCodeProjectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
+      var compiler = new Compiler(csproj, OutputFolderPath, string.Empty, null!, "War3Api.*;WCSharp.*", "", csc, false, null, string.Empty)
+      {
+        IsExportMetadata = true,
+        IsModule = false,
+        IsInlineSimpleProperty = false,
+        IsPreventDebugObject = true,
+        IsCommentsDisabled = false
+      };
+
+      // Get core system files and compile
+      var coreSystemFiles = CSharpLua.CoreSystem.CoreSystemProvider.GetCoreSystemFiles();
+      var compileResult = map.CompileScript(compiler, coreSystemFiles, blizzardJ, commonJ);
+
+      // If compilation failed, output an error
+      if (!compileResult.Success)
+      {
+        throw new Exception(compileResult.Diagnostics.First(x => x.Severity == DiagnosticSeverity.Error).GetMessage());
+      }
+      
+      //Load loose JASS code into temporary map file
+      var jassHelper = new JassHelper(JassHelperPath, commonJ, blizzardJ, OutputFolderPath);
+      var mergedJassFilePath = Path.Combine(CompiledJassFolderPath, "war3map.j");
+      jassHelper.CombineVJassWithJass(Path.Combine(BaseMapPath, "war3map.j"), new[] {JassFolderPath}, mergedJassFilePath);
+      
+      //Combine transpiled vJASS with transpiled Lua
+      var jassToLuaScript = ScriptTranspiler.JassToLua(File.ReadAllText(mergedJassFilePath));
+      //map.Script += jassToLuaScript;
+
+      // Update war3map.lua so you can inspect the generated Lua code easily
+      File.WriteAllText(Path.Combine(OutputFolderPath, OutputScriptName), map.Script);
       
       // Build w3x file
       var archiveCreateOptions = new MpqArchiveCreateOptions
