@@ -323,13 +323,10 @@ group udg_NyalothaGroup3= null
     // Generated
 rect gg_rct_Solliden_Farmstead= null
 rect gg_rct_Arathi_Ships= null
-rect gg_rct_Auberdine_Ships= null
-rect gg_rct_Auberdine_Ships_2= null
 rect gg_rct_AzjolNerubDragonblight_Exit= null
 rect gg_rct_Blasted_Lands_Weather= null
 rect gg_rct_Barren_Excavation= null
 rect gg_rct_Blackrock_Entrance= null
-rect gg_rct_Blackrock_Exit= null
 rect gg_rct_Book_of_Mediv_Chaos= null
 rect gg_rct_Borean_Tundra= null
 rect gg_rct_Brill= null
@@ -418,7 +415,6 @@ rect gg_rct_ScarletMonastery= null
 rect gg_rct_Scholomance_Entrance= null
 rect gg_rct_Scholomance_Exit= null
 rect gg_rct_Shadowforge_City= null
-rect gg_rct_Shadowforge_gate= null
 rect gg_rct_Shadowmoon_Excavation= null
 rect gg_rct_Siphon_Cast_Zone= null
 rect gg_rct_South_EK_Ships= null
@@ -466,6 +462,8 @@ rect gg_rct_Sunwell_region= null
 rect gg_rct_RiseSpawn2= null
 rect gg_rct_AzjolNerub_South_Entrance= null
 rect gg_rct_AzjolNerub_North_Exit= null
+rect gg_rct_Auberdine_Ships_2= null
+rect gg_rct_Auberdine_Ships= null
 rect gg_rct_AzjolNerubNorth_entrance= null
 rect gg_rct_Alterac_Exca= null
 rect gg_rct_Andorhal= null
@@ -475,7 +473,6 @@ rect gg_rct_Sunwell= null
 rect gg_rct_InstanceBarrowDeeps= null
 rect gg_rct_InstanceDireMaul= null
 rect gg_rct_InstanceScholomance= null
-rect gg_rct_InstanceBlackrock= null
 rect gg_rct_InstanceSargerasTomb= null
 rect gg_rct_InstanceAzjolNerub= null
 rect gg_rct_InstanceOutland= null
@@ -549,9 +546,6 @@ rect gg_rct_Scourge4= null
 rect gg_rct_Stormwind1= null
 rect gg_rct_Stormwind2= null
 rect gg_rct_Stormwind3= null
-rect gg_rct_Fel1= null
-rect gg_rct_Fel2= null
-rect gg_rct_Fel3= null
 rect gg_rct_Fel4= null
 rect gg_rct_Fel5= null
 rect gg_rct_Fel6= null
@@ -655,7 +649,6 @@ rect gg_rct_WetlandAmbient1= null
 rect gg_rct_WetlandAmbient2= null
 rect gg_rct_GrimBatolAmbient1= null
 rect gg_rct_GrimBatolAmbient2= null
-rect gg_rct_Region_BS= null
 rect gg_rct_Region_IC= null
 rect gg_rct_Region_DB= null
 rect gg_rct_Region_AE= null
@@ -741,7 +734,6 @@ rect gg_rct_GilneasEntrance1= null
 rect gg_rct_GilneasEntrance2= null
 rect gg_rct_GilneasEntrance3= null
 rect gg_rct_Checkpoint1Gilneas= null
-rect gg_rct_BlackrockUnlock= null
 rect gg_rct_Scarlet_Monastery_Interior= null
 rect gg_rct_Undercity_Interior_1= null
 rect gg_rct_Undercity_Interior_2= null
@@ -1754,6 +1746,14 @@ destructable gg_dest_OTsp_35732= null
 destructable gg_dest_OTsp_19293= null
 destructable gg_dest_OTsp_35727= null
 destructable gg_dest_ATg3_35869= null
+rect gg_rct_Blackrock_Exit= null
+rect gg_rct_Shadowforge_gate= null
+rect gg_rct_InstanceBlackrock= null
+rect gg_rct_Fel1= null
+rect gg_rct_Fel2= null
+rect gg_rct_Fel3= null
+rect gg_rct_Region_BS= null
+rect gg_rct_BlackrockUnlock= null
 boolean AreAllianceActive= false
 
 
@@ -9451,8 +9451,6 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h03J', 19680.0, 19168.0, 270.000, 'h03J')
     set u=BlzCreateUnitWithSkin(p, 'nef1', 19136.0, 17600.0, 270.000, 'nef1')
     set u=BlzCreateUnitWithSkin(p, 'n033', 12768.0, - 10656.0, 270.000, 'n033')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Blackrock_Exit), GetRectCenterY(gg_rct_Blackrock_Exit))
-    call WaygateActivate(u, true)
     set u=BlzCreateUnitWithSkin(p, 'o033', 22464.0, - 31104.0, 270.000, 'o033')
     set u=BlzCreateUnitWithSkin(p, 'o033', 22464.0, - 31552.0, 270.000, 'o033')
     set u=BlzCreateUnitWithSkin(p, 'n06J', - 5088.0, - 27360.0, 270.000, 'n06J')
@@ -11461,13 +11459,10 @@ function CreateRegions takes nothing returns nothing
 
     set gg_rct_Solliden_Farmstead=Rect(6400.0, 8992.0, 7808.0, 10592.0)
     set gg_rct_Arathi_Ships=Rect(16256.0, 768.0, 17024.0, 1632.0)
-    set gg_rct_Auberdine_Ships=Rect(- 18272.0, 2848.0, - 15936.0, 5312.0)
-    set gg_rct_Auberdine_Ships_2=Rect(- 16640.0, 7424.0, - 9504.0, 11072.0)
     set gg_rct_AzjolNerubDragonblight_Exit=Rect(- 12992.0, - 26944.0, - 12544.0, - 26720.0)
     set gg_rct_Blasted_Lands_Weather=Rect(14944.0, - 21344.0, 18592.0, - 17984.0)
     set gg_rct_Barren_Excavation=Rect(- 10656.0, - 15392.0, - 10592.0, - 15328.0)
     set gg_rct_Blackrock_Entrance=Rect(12576.0, - 10784.0, 12960.0, - 10656.0)
-    set gg_rct_Blackrock_Exit=Rect(19808.0, - 30048.0, 20320.0, - 29888.0)
     set gg_rct_Book_of_Mediv_Chaos=Rect(2336.0, 18176.0, 2496.0, 18304.0)
     set gg_rct_Borean_Tundra=Rect(- 9152.0, 13664.0, - 4768.0, 19008.0)
     set gg_rct_Brill=Rect(8064.0, 10144.0, 9792.0, 11648.0)
@@ -11566,7 +11561,6 @@ function CreateRegions takes nothing returns nothing
     set gg_rct_Scholomance_Entrance=Rect(14560.0, 7552.0, 14912.0, 7872.0)
     set gg_rct_Scholomance_Exit=Rect(- 21120.0, 17440.0, - 20736.0, 17792.0)
     set gg_rct_Shadowforge_City=Rect(16704.0, - 31744.0, 18272.0, - 30560.0)
-    set gg_rct_Shadowforge_gate=Rect(17952.0, - 31712.0, 18336.0, - 30912.0)
     set gg_rct_Shadowmoon_Excavation=Rect(2528.0, - 31072.0, 2592.0, - 31008.0)
     set gg_rct_Siphon_Cast_Zone=Rect(- 11744.0, 7424.0, - 11488.0, 7648.0)
     set gg_rct_South_EK_Ships=Rect(7872.0, - 18240.0, 18880.0, - 12288.0)
@@ -11632,7 +11626,6 @@ function CreateRegions takes nothing returns nothing
     set gg_rct_InstanceBarrowDeeps=Rect(15712.0, - 32128.0, 15840.0, - 31904.0)
     set gg_rct_InstanceDireMaul=Rect(- 18784.0, 20800.0, - 16352.0, 24544.0)
     set gg_rct_InstanceScholomance=Rect(- 21216.0, 17344.0, - 19136.0, 19808.0)
-    set gg_rct_InstanceBlackrock=Rect(16416.0, - 32032.0, 22592.0, - 28544.0)
     set gg_rct_InstanceSargerasTomb=Rect(- 10752.0, - 25760.0, - 8032.0, - 22816.0)
     set gg_rct_InstanceAzjolNerub=Rect(- 14496.0, - 31200.0, - 7872.0, - 26560.0)
     set gg_rct_InstanceOutland=Rect(- 6432.0, - 32224.0, 6688.0, - 18176.0)
@@ -11708,9 +11701,6 @@ function CreateRegions takes nothing returns nothing
     set gg_rct_Stormwind1=Rect(14304.0, - 13216.0, 14368.0, - 13152.0)
     set gg_rct_Stormwind2=Rect(9888.0, - 10912.0, 9952.0, - 10848.0)
     set gg_rct_Stormwind3=Rect(9920.0, - 11456.0, 9984.0, - 11392.0)
-    set gg_rct_Fel1=Rect(21824.0, - 29536.0, 21888.0, - 29472.0)
-    set gg_rct_Fel2=Rect(20032.0, - 30016.0, 20096.0, - 29952.0)
-    set gg_rct_Fel3=Rect(20032.0, - 29984.0, 20096.0, - 29920.0)
     set gg_rct_Fel4=Rect(12736.0, - 10880.0, 12800.0, - 10816.0)
     set gg_rct_Fel5=Rect(17504.0, - 17696.0, 17568.0, - 17632.0)
     set gg_rct_Fel6=Rect(17600.0, - 17632.0, 17664.0, - 17568.0)
@@ -11815,7 +11805,6 @@ function CreateRegions takes nothing returns nothing
     set gg_rct_WetlandAmbient2=Rect(11296.0, - 3808.0, 12576.0, - 2272.0)
     set gg_rct_GrimBatolAmbient1=Rect(14720.0, - 4032.0, 17920.0, - 256.0)
     set gg_rct_GrimBatolAmbient2=Rect(17952.0, - 7200.0, 22080.0, 736.0)
-    set gg_rct_Region_BS=Rect(19776.0, - 29792.0, 19840.0, - 29728.0)
     set gg_rct_Region_IC=Rect(- 12928.0, - 26848.0, - 12864.0, - 26784.0)
     set gg_rct_Region_DB=Rect(- 8832.0, - 28992.0, - 8768.0, - 28928.0)
     set gg_rct_Region_AE=Rect(- 17312.0, - 8448.0, - 17248.0, - 8384.0)
@@ -11901,7 +11890,6 @@ function CreateRegions takes nothing returns nothing
     set gg_rct_GilneasEntrance2=Rect(8288.0, 1472.0, 8512.0, 1856.0)
     set gg_rct_GilneasEntrance3=Rect(5376.0, - 1248.0, 5600.0, - 864.0)
     set gg_rct_Checkpoint1Gilneas=Rect(- 23680.0, - 27648.0, - 23648.0, - 27616.0)
-    set gg_rct_BlackrockUnlock=Rect(20448.0, - 31968.0, 22560.0, - 28512.0)
     set gg_rct_Scarlet_Monastery_Interior=Rect(- 24864.0, 15360.0, - 24512.0, 15744.0)
     set gg_rct_Undercity_Interior_1=Rect(- 26720.0, 14464.0, - 26368.0, 14848.0)
     set gg_rct_Undercity_Interior_2=Rect(- 28128.0, 17344.0, - 27776.0, 17728.0)
@@ -12006,6 +11994,16 @@ function CreateRegions takes nothing returns nothing
     set gg_rct_DarnassusWorgen=Rect(- 18048.0, 13504.0, - 16768.0, 15968.0)
     set gg_rct_KaelSunwellChannel=Rect(18496.0, 21568.0, 18624.0, 21696.0)
     set gg_rct_JainaChannel=Rect(- 9888.0, 17632.0, - 9792.0, 17728.0)
+    set gg_rct_Auberdine_Ships_2=Rect(- 16640.0, 7424.0, - 9504.0, 11072.0)
+    set gg_rct_Fel2=Rect(20032.0, - 30016.0, 20096.0, - 29952.0)
+    set gg_rct_Blackrock_Exit=Rect(19808.0, - 30048.0, 20320.0, - 29888.0)
+    set gg_rct_Shadowforge_gate=Rect(17952.0, - 31712.0, 18336.0, - 30912.0)
+    set gg_rct_InstanceBlackrock=Rect(16416.0, - 32032.0, 22592.0, - 28544.0)
+    set gg_rct_Fel1=Rect(21824.0, - 29536.0, 21888.0, - 29472.0)
+    set gg_rct_Fel2=Rect(20032.0, - 30016.0, 20096.0, - 29952.0)
+    set gg_rct_Fel3=Rect(20032.0, - 29984.0, 20096.0, - 29920.0)
+    set gg_rct_Region_BS=Rect(19776.0, - 29792.0, 19840.0, - 29728.0)
+    set gg_rct_BlackrockUnlock=Rect(20448.0, - 31968.0, 22560.0, - 28512.0)
 endfunction
 
 //***************************************************************************
@@ -16224,9 +16222,6 @@ function Trig_Shipyard_Cancellation_Rects_Func002C takes nothing returns boolean
     if ( ( RectContainsUnit(gg_rct_Arathi_Ships, GetConstructedStructure()) == true ) ) then
         return true
     endif
-    if ( ( RectContainsUnit(gg_rct_Auberdine_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
     if ( ( RectContainsUnit(gg_rct_Kali_Ships, GetConstructedStructure()) == true ) ) then
         return true
     endif
@@ -16688,9 +16683,6 @@ function Trig_Cancel_Shipyards_Func003C takes nothing returns boolean
         return true
     endif
     if ( ( RectContainsUnit(gg_rct_Arathi_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Auberdine_Ships, GetConstructedStructure()) == true ) ) then
         return true
     endif
     if ( ( RectContainsUnit(gg_rct_Kali_Ships, GetConstructedStructure()) == true ) ) then
