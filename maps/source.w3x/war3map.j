@@ -321,517 +321,6 @@ group udg_NyalothaGroup2= null
 group udg_NyalothaGroup3= null
 
     // Generated
-rect gg_rct_Solliden_Farmstead= null
-rect gg_rct_Arathi_Ships= null
-rect gg_rct_AzjolNerubDragonblight_Exit= null
-rect gg_rct_Blasted_Lands_Weather= null
-rect gg_rct_Barren_Excavation= null
-rect gg_rct_Blackrock_Entrance= null
-rect gg_rct_Book_of_Mediv_Chaos= null
-rect gg_rct_Borean_Tundra= null
-rect gg_rct_Brill= null
-rect gg_rct_Broken_Isles= null
-rect gg_rct_CaerDarrowShipyard= null
-rect gg_rct_Cathedral_of_Light= null
-rect gg_rct_Central_Northrend= null
-rect gg_rct_Chaosmod1= null
-rect gg_rct_Coldarra= null
-rect gg_rct_Construction_Site_2= null
-rect gg_rct_Corins_Crossing= null
-rect gg_rct_Crossroads= null
-rect gg_rct_Dalaran= null
-rect gg_rct_DalaranDungeon= null
-rect gg_rct_Dalaran_Dungeons_Entrance= null
-rect gg_rct_Dalaran_Dungeons_Exit= null
-rect gg_rct_DalaranExit2= null
-rect gg_rct_Dark_Portal_Entrance_1= null
-rect gg_rct_Dark_Portal_Exit_1= null
-rect gg_rct_Darkspear_Island= null
-rect gg_rct_Darrowshire= null
-rect gg_rct_Demongate_1= null
-rect gg_rct_Demongate_2= null
-rect gg_rct_DemonGate3= null
-rect gg_rct_Desolace_Ships= null
-rect gg_rct_Dire_Maul_Entrance= null
-rect gg_rct_Dire_Maul_Exit= null
-rect gg_rct_Dun_Morogh_Excavation= null
-rect gg_rct_Dun_Morogh_Ships= null
-rect gg_rct_Dustwallow_Ships= null
-rect gg_rct_East_Thandol= null
-rect gg_rct_Eastern_Northrend= null
-rect gg_rct_EssenceSpawn= null
-rect gg_rct_Far_Eastern_Northrend= null
-rect gg_rct_Felwood_Vision= null
-rect gg_rct_Fenris_ships= null
-rect gg_rct_Fjord= null
-rect gg_rct_Gilneas= null
-rect gg_rct_Gilneas_Canals= null
-rect gg_rct_Gnomergan= null
-rect gg_rct_Greymane= null
-rect gg_rct_Grim_Batol= null
-rect gg_rct_Grim_Batol_Tunnel_Entrance= null
-rect gg_rct_Grim_Batol_Tunnel_Top= null
-rect gg_rct_Havenshire= null
-rect gg_rct_Hearthglen= null
-rect gg_rct_HeroOrItemWaitRect= null
-rect gg_rct_HonorHold= null
-rect gg_rct_Howling_Fjord= null
-rect gg_rct_Ice_Crown= null
-rect gg_rct_IcecrownShipyard= null
-rect gg_rct_IllidanSpawn= null
-rect gg_rct_Ironforge= null
-rect gg_rct_Jaina_soul_gem= null
-rect gg_rct_Kali_Ships= null
-rect gg_rct_Kultiras= null
-rect gg_rct_LichKing= null
-rect gg_rct_Loch_Modan_Ships= null
-rect gg_rct_Lordaeron_East= null
-rect gg_rct_Lordaeron_West= null
-rect gg_rct_Moonglade= null
-rect gg_rct_Murloc_Attack= null
-rect gg_rct_Murloc_Spawn_1= null
-rect gg_rct_Murloc_Spawn_2= null
-rect gg_rct_InstanceNazjatar= null
-rect gg_rct_Nether_Exit= null
-rect gg_rct_Northern_Kali_Ships= null
-rect gg_rct_Northrend_ships= null
-rect gg_rct_OrgGate= null
-rect gg_rct_Orgrimmar= null
-rect gg_rct_Outland_Ships= null
-rect gg_rct_Plague_1= null
-rect gg_rct_Plague_2= null
-rect gg_rct_Plague_3= null
-rect gg_rct_Plague_4= null
-rect gg_rct_Plague_5= null
-rect gg_rct_Plague_6= null
-rect gg_rct_Plague_7= null
-rect gg_rct_Quel_Ships_1= null
-rect gg_rct_Quel_Ships_2= null
-rect gg_rct_Quel_Ships_3= null
-rect gg_rct_Quelthalas= null
-rect gg_rct_Sargeras_Entrance= null
-rect gg_rct_Sargeras_Exit= null
-rect gg_rct_ScarletMonastery= null
-rect gg_rct_Scholomance_Entrance= null
-rect gg_rct_Scholomance_Exit= null
-rect gg_rct_Shadowforge_City= null
-rect gg_rct_Shadowmoon_Excavation= null
-rect gg_rct_Siphon_Cast_Zone= null
-rect gg_rct_South_EK_Ships= null
-rect gg_rct_StonemaulKeep= null
-rect gg_rct_Storm_Peaks= null
-rect gg_rct_Stormwind= null
-rect gg_rct_Stratholme_Platform_entrance= null
-rect gg_rct_Stratholme_platform_exit= null
-rect gg_rct_StratholmeShipyard= null
-rect gg_rct_Stromgarde= null
-rect gg_rct_Stromwind_antiship= null
-rect gg_rct_STV_Ships= null
-rect gg_rct_Terenas= null
-rect gg_rct_The_Basin= null
-rect gg_rct_Thrall_2= null
-rect gg_rct_Thrall_3= null
-rect gg_rct_Thrall_4= null
-rect gg_rct_Thrall_5= null
-rect gg_rct_Thrall_6= null
-rect gg_rct_Thrall_Landing1= null
-rect gg_rct_Thrall_Ship_1= null
-rect gg_rct_Thrall_Ship_2= null
-rect gg_rct_Tomb_Of_Sargeras_Ships= null
-rect gg_rct_TwistingNether= null
-rect gg_rct_Vandermar_Village= null
-rect gg_rct_WarsongCamp= null
-rect gg_rct_West_Thandol= null
-rect gg_rct_Winterpspring_Excavation= null
-rect gg_rct_ZF_Spawn_1= null
-rect gg_rct_ZF_Spawn_2= null
-rect gg_rct_Zulfarrak= null
-rect gg_rct_East_of_Azeroth= null
-rect gg_rct_West_of_Kalimdor= null
-rect gg_rct_Silvermon_Palace_trolls= null
-rect gg_rct_BloodpactFountain= null
-rect gg_rct_FTSummon= null
-rect gg_rct_Book_Retrieval= null
-rect gg_rct_King_Arthas_crown= null
-rect gg_rct_Drekthars_Spellbook= null
-rect gg_rct_Masteries= null
-rect gg_rct_Cthun_prevent_1= null
-rect gg_rct_AhnQiraj= null
-rect gg_rct_Cthun_position= null
-rect gg_rct_Sunwell_region= null
-rect gg_rct_RiseSpawn2= null
-rect gg_rct_AzjolNerub_South_Entrance= null
-rect gg_rct_AzjolNerub_North_Exit= null
-rect gg_rct_Auberdine_Ships_2= null
-rect gg_rct_Auberdine_Ships= null
-rect gg_rct_AzjolNerubNorth_entrance= null
-rect gg_rct_Alterac_Exca= null
-rect gg_rct_Andorhal= null
-rect gg_rct_Aerie_Peak= null
-rect gg_rct_TempestKeep= null
-rect gg_rct_Sunwell= null
-rect gg_rct_InstanceBarrowDeeps= null
-rect gg_rct_InstanceDireMaul= null
-rect gg_rct_InstanceScholomance= null
-rect gg_rct_InstanceSargerasTomb= null
-rect gg_rct_InstanceAzjolNerub= null
-rect gg_rct_InstanceOutland= null
-rect gg_rct_DalaranEntrance2= null
-rect gg_rct_InstanceDalaranDungeon1= null
-rect gg_rct_InstanceDalaranDungeon2= null
-rect gg_rct_InstanceDalaranDungeon3= null
-rect gg_rct_Tempest_Keep_Evacuate= null
-rect gg_rct_Gazlower= null
-rect gg_rct_Varok= null
-rect gg_rct_Region_077= null
-rect gg_rct_NyHighland= null
-rect gg_rct_Mannoroth= null
-rect gg_rct_Jergosh= null
-rect gg_rct_Dark_Portal_Exit_2= null
-rect gg_rct_Dark_Portal_Exit_3= null
-rect gg_rct_Dark_Portal_Entrance_2= null
-rect gg_rct_Dark_Portal_Entrance_3= null
-rect gg_rct_Chen= null
-rect gg_rct_QuelDanil_Lodge= null
-rect gg_rct_HighBourne= null
-rect gg_rct_Andrassil= null
-rect gg_rct_EvilIllidanSpawn= null
-rect gg_rct_VaultoftheWardens= null
-rect gg_rct_Theramore= null
-rect gg_rct_Terrordale= null
-rect gg_rct_Dreadscar_1= null
-rect gg_rct_Deemspring= null
-rect gg_rct_Dreadscar_3= null
-rect gg_rct_Scholo_Ships= null
-rect gg_rct_DalaCutscene1= null
-rect gg_rct_Dreadscar_2= null
-rect gg_rct_DalaCutscene2= null
-rect gg_rct_DalaCutscene3= null
-rect gg_rct_DalaCutscene4= null
-rect gg_rct_DalaCutscene4_Copy= null
-rect gg_rct_DalaCutscene4_Copy_2= null
-rect gg_rct_Lord1= null
-rect gg_rct_Lord2= null
-rect gg_rct_Lord3= null
-rect gg_rct_Lord4= null
-rect gg_rct_Lord5= null
-rect gg_rct_Lord6= null
-rect gg_rct_Dwarf1= null
-rect gg_rct_Dwarf2= null
-rect gg_rct_Dwarf3= null
-rect gg_rct_Dwarf4= null
-rect gg_rct_Legion1= null
-rect gg_rct_Legion00= null
-rect gg_rct_Legion2= null
-rect gg_rct_Legion3= null
-rect gg_rct_Frostwolf1= null
-rect gg_rct_Warsong1= null
-rect gg_rct_Sent1= null
-rect gg_rct_Sent2= null
-rect gg_rct_Sent3= null
-rect gg_rct_Sent4= null
-rect gg_rct_Sent5= null
-rect gg_rct_Sent_6= null
-rect gg_rct_Sent_7= null
-rect gg_rct_Sent8= null
-rect gg_rct_Sent9= null
-rect gg_rct_Sent10= null
-rect gg_rct_Druid1= null
-rect gg_rct_Druid2= null
-rect gg_rct_Druid3= null
-rect gg_rct_Scourge1= null
-rect gg_rct_Scourge2= null
-rect gg_rct_Scourge3= null
-rect gg_rct_Scourge4= null
-rect gg_rct_Stormwind1= null
-rect gg_rct_Stormwind2= null
-rect gg_rct_Stormwind3= null
-rect gg_rct_Fel4= null
-rect gg_rct_Fel5= null
-rect gg_rct_Fel6= null
-rect gg_rct_Fel7= null
-rect gg_rct_Fel8= null
-rect gg_rct_Quel1= null
-rect gg_rct_Quel5= null
-rect gg_rct_Quel2= null
-rect gg_rct_Quel3= null
-rect gg_rct_Quel4= null
-rect gg_rct_NazjatarExit3= null
-rect gg_rct_DagranSpawn= null
-rect gg_rct_Guldan= null
-rect gg_rct_Gazlowe= null
-rect gg_rct_Anetheron= null
-rect gg_rct_Khadgar= null
-rect gg_rct_Cenarius= null
-rect gg_rct_Ursoc= null
-rect gg_rct_Kiljaeden= null
-rect gg_rct_ThunderBluff= null
-rect gg_rct_ThrallLanding= null
-rect gg_rct_CairneStart= null
-rect gg_rct_Druid4= null
-rect gg_rct_Druid5= null
-rect gg_rct_Sent11= null
-rect gg_rct_Sent_12= null
-rect gg_rct_Dwarf_group_1= null
-rect gg_rct_GrizzlyHills= null
-rect gg_rct_Northrend_Ambiance= null
-rect gg_rct_TeldrassilAmbient= null
-rect gg_rct_MoongladeVillage= null
-rect gg_rct_AzuremystAmbient= null
-rect gg_rct_AshenvaleAmbient= null
-rect gg_rct_BarrenAmbient1= null
-rect gg_rct_BarrenAmbient2= null
-rect gg_rct_BarrenAmbient3= null
-rect gg_rct_BarrenAmbient4= null
-rect gg_rct_BarrenAmbient5= null
-rect gg_rct_SilithusAmbient= null
-rect gg_rct_UngoroAmbient= null
-rect gg_rct_FeralasAmbient1= null
-rect gg_rct_FeralasAmbient2= null
-rect gg_rct_AszharaAmbient1= null
-rect gg_rct_AzsharaAmbient2= null
-rect gg_rct_DusthallowAmbient= null
-rect gg_rct_EchoIsleAmbient= null
-rect gg_rct_ZulfarrakAmbient= null
-rect gg_rct_KezanAmbient= null
-rect gg_rct_AshenvaleAmbient2= null
-rect gg_rct_WinterspringAmbient1= null
-rect gg_rct_WinterspringAmbient2= null
-rect gg_rct_AshenvaleAmbient3= null
-rect gg_rct_RanazjarAmbient= null
-rect gg_rct_AshenvaleAmbient4= null
-rect gg_rct_Queltalas_2= null
-rect gg_rct_StratholmeAmbient= null
-rect gg_rct_LordaeronAmbient1= null
-rect gg_rct_TyrHandAmbient= null
-rect gg_rct_LordaeronAmbient2= null
-rect gg_rct_LordaeronAmbient3= null
-rect gg_rct_ZulAman_trolls= null
-rect gg_rct_LordaeronAmbient4= null
-rect gg_rct_LordaeronAmbient5= null
-rect gg_rct_QuelthalasAmbient= null
-rect gg_rct_SunwellAmbient= null
-rect gg_rct_ShadowfangAmbient= null
-rect gg_rct_LordamereLakeAmbient= null
-rect gg_rct_SouthshoreAmbient= null
-rect gg_rct_AlteracAmbient= null
-rect gg_rct_ScholomanceAmbient2= null
-rect gg_rct_ScholomanceAmbient1= null
-rect gg_rct_SouthshoreAmbient2= null
-rect gg_rct_SouthshoreAmbient3= null
-rect gg_rct_SouthshoreAmbient4= null
-rect gg_rct_SouthshoreAmbient5= null
-rect gg_rct_BridgeAmbient= null
-rect gg_rct_ScholomanceAmbient3= null
-rect gg_rct_HinterlandAmbient1= null
-rect gg_rct_HinterlandAmbient2= null
-rect gg_rct_TolbaradAmbient= null
-rect gg_rct_BalorAmbient= null
-rect gg_rct_StormwindAmbient2= null
-rect gg_rct_SentinelTowerAmbient= null
-rect gg_rct_StranglethornAmbient1= null
-rect gg_rct_StranglethornAmbient2= null
-rect gg_rct_StranglethornAmbient3= null
-rect gg_rct_ElwinForestAmbient= null
-rect gg_rct_DarkshireAmbient1= null
-rect gg_rct_DarkshireAmbient2= null
-rect gg_rct_DarkshireAmbient3= null
-rect gg_rct_BlastedlandAmbient= null
-rect gg_rct_SwampofSorrowsAmbient= null
-rect gg_rct_BurningSteppesAmbient= null
-rect gg_rct_BurningSteppeAmbient2= null
-rect gg_rct_IronforgeAmbient= null
-rect gg_rct_DunmoroghAmbient1= null
-rect gg_rct_DunmoroghAmbient2= null
-rect gg_rct_DunmoroghAmbient3= null
-rect gg_rct_LochModanAmbient= null
-rect gg_rct_WetlandAmbient1= null
-rect gg_rct_WetlandAmbient2= null
-rect gg_rct_GrimBatolAmbient1= null
-rect gg_rct_GrimBatolAmbient2= null
-rect gg_rct_Region_IC= null
-rect gg_rct_Region_DB= null
-rect gg_rct_Region_AE= null
-rect gg_rct_Region_AZ_1= null
-rect gg_rct_Region_AZ_2= null
-rect gg_rct_Region_BM= null
-rect gg_rct_Region_ToS= null
-rect gg_rct_Region_SC= null
-rect gg_rct_IllidanWeather= null
-rect gg_rct_IllidanMovement1= null
-rect gg_rct_IllidanMovement2= null
-rect gg_rct_IllidanAmbiance2= null
-rect gg_rct_LightningBolt2= null
-rect gg_rct_LightningBolt3= null
-rect gg_rct_WaveCrash= null
-rect gg_rct_BloodElfSecondChanceSpawn= null
-rect gg_rct_AethneumTombExit= null
-rect gg_rct_AethneumLibraryEntrance= null
-rect gg_rct_IllidanMoveAethneum= null
-rect gg_rct_ImmolFight= null
-rect gg_rct_AethneumCatacombs= null
-rect gg_rct_AethneumRemove= null
-rect gg_rct_AetheneumTombExit2= null
-rect gg_rct_NazjatarEntrance2= null
-rect gg_rct_NazjatarEntrance1= null
-rect gg_rct_NazjatarExit1= null
-rect gg_rct_NazjatarExit2= null
-rect gg_rct_AetheneumTombEntrance2= null
-rect gg_rct_IllidanBoat1= null
-rect gg_rct_IllidanBoat2= null
-rect gg_rct_IllidanBoat3= null
-rect gg_rct_IllidanBoat4= null
-rect gg_rct_IllidanExit2= null
-rect gg_rct_IllidanCameraExit= null
-rect gg_rct_IllidanExitText1= null
-rect gg_rct_SkullOfGuldan= null
-rect gg_rct_IllidanDala1= null
-rect gg_rct_IllidanDala2= null
-rect gg_rct_IllidanDalaranInstance= null
-rect gg_rct_StartQuest2= null
-rect gg_rct_IllidanDala4= null
-rect gg_rct_IllidanDala5= null
-rect gg_rct_IllidanDala6= null
-rect gg_rct_IllidanDala7= null
-rect gg_rct_IllidanDala8= null
-rect gg_rct_IllidanElementalSentry= null
-rect gg_rct_StartQuest3= null
-rect gg_rct_IllidanDalaExit= null
-rect gg_rct_UnlockIllidanSwitch= null
-rect gg_rct_IllidanLook= null
-rect gg_rct_IllidanLast= null
-rect gg_rct_AetheneumtoNazjatar= null
-rect gg_rct_IllidanNaga1= null
-rect gg_rct_IllidanNaga2= null
-rect gg_rct_IllidanNaga3= null
-rect gg_rct_MaelstromAmbient= null
-rect gg_rct_Chapter2Map= null
-rect gg_rct_Chapter3= null
-rect gg_rct_WerewolfSpawn1= null
-rect gg_rct_WerewolfSpawn2= null
-rect gg_rct_WerewolfSpawn3= null
-rect gg_rct_Attack_Commands= null
-rect gg_rct_AttackPoint= null
-rect gg_rct_GilneasMovement1= null
-rect gg_rct_GilneasMovement2= null
-rect gg_rct_GilneasMovement3= null
-rect gg_rct_GilneasMovement4= null
-rect gg_rct_GilneasMovement5= null
-rect gg_rct_Innerfight1= null
-rect gg_rct_InnerFightStart= null
-rect gg_rct_Innerfight2= null
-rect gg_rct_GilneasMovement2_Copy= null
-rect gg_rct_GilneasMovement2_Copy_2= null
-rect gg_rct_GilneasMovement2_Copy_2_Copy= null
-rect gg_rct_Chapter2Start= null
-rect gg_rct_Chapter2TeleStart= null
-rect gg_rct_WerewolfSpawn4= null
-rect gg_rct_AttackPoint_Copy= null
-rect gg_rct_GilneasExit3= null
-rect gg_rct_GilneasExit1= null
-rect gg_rct_GilneasExit2= null
-rect gg_rct_GilneasEntrance1= null
-rect gg_rct_GilneasEntrance2= null
-rect gg_rct_GilneasEntrance3= null
-rect gg_rct_Checkpoint1Gilneas= null
-rect gg_rct_Scarlet_Monastery_Interior= null
-rect gg_rct_Undercity_Interior_1= null
-rect gg_rct_Undercity_Interior_2= null
-rect gg_rct_Undercity_Exterior_1= null
-rect gg_rct_Undercity_Exterior_2= null
-rect gg_rct_Scarlet_Monastery_Exterior= null
-rect gg_rct_Undercity_Escape= null
-rect gg_rct_DarkshireUnlock= null
-rect gg_rct_StormwindUnlock= null
-rect gg_rct_LakeshireUnlock= null
-rect gg_rct_NethergardeUnlock= null
-rect gg_rct_StratholmeUnlock= null
-rect gg_rct_TyrUnlock= null
-rect gg_rct_ShadowfangUnlock= null
-rect gg_rct_TrollAttackSpawn= null
-rect gg_rct_TrollTarget= null
-rect gg_rct_KilsorrowUnlock= null
-rect gg_rct_HellfireUnlock= null
-rect gg_rct_ScarletAmbient= null
-rect gg_rct_ThelUnlock= null
-rect gg_rct_KulAttack= null
-rect gg_rct_KulTarget= null
-rect gg_rct_BlademasterUnlock= null
-rect gg_rct_ZandalarUnlock= null
-rect gg_rct_UndercityUnlock= null
-rect gg_rct_NaxxramasInside= null
-rect gg_rct_NaxAmbient= null
-rect gg_rct_NaxUnlock= null
-rect gg_rct_TwilightAmbient= null
-rect gg_rct_TwilightInside= null
-rect gg_rct_TwilightOutside= null
-rect gg_rct_ShipInside= null
-rect gg_rct_ShipAmbient= null
-rect gg_rct_ShipTarget= null
-rect gg_rct_NagaUnlock2= null
-rect gg_rct_NagaUnlock1= null
-rect gg_rct_NazjatarHidden= null
-rect gg_rct_IllidanOutlandEntrance= null
-rect gg_rct_Kalimdor= null
-rect gg_rct_FeathermoonUnlock= null
-rect gg_rct_AstranaarUnlock= null
-rect gg_rct_AshenvaleUnlock= null
-rect gg_rct_DrownedTemple= null
-rect gg_rct_NzothIni= null
-rect gg_rct_DragonmawUnlock= null
-rect gg_rct_SouthshoreUnlock= null
-rect gg_rct_GilneasMovement2_Copy_2_Copy_Copy= null
-rect gg_rct_MaievStartUnlock= null
-rect gg_rct_Silithus_Bug_Interior= null
-rect gg_rct_Silithus_Stone_Interior= null
-rect gg_rct_Silithus_Stone_Exterior= null
-rect gg_rct_Silithus_Bug_Exterior= null
-rect gg_rct_EchoUnlock= null
-rect gg_rct_StrahnbradUnlock= null
-rect gg_rct_TunnelUnlock= null
-rect gg_rct_AhnqirajInstance= null
-rect gg_rct_CthunSummon= null
-rect gg_rct_ZeppelinReturn= null
-rect gg_rct_Trade1= null
-rect gg_rct_Trade2= null
-rect gg_rct_Trade3= null
-rect gg_rct_Trade4= null
-rect gg_rct_Trader1= null
-rect gg_rct_Trader2= null
-rect gg_rct_Trader3= null
-rect gg_rct_GadgetUnlock= null
-rect gg_rct_OilRig1= null
-rect gg_rct_OilRig2= null
-rect gg_rct_OilRig3= null
-rect gg_rct_OilRig4= null
-rect gg_rct_OilRig5= null
-rect gg_rct_OilRig6= null
-rect gg_rct_Ny_Ulduar_Interior= null
-rect gg_rct_Ny_Twilight_Highlands_Interior= null
-rect gg_rct_Ny_Nazjatar_Interior= null
-rect gg_rct_Ny_Silithus_Interior= null
-rect gg_rct_ScarletExit= null
-rect gg_rct_TempestKeepSpawn= null
-rect gg_rct_SummonObeliskTarget= null
-rect gg_rct_NyalothaInstance= null
-rect gg_rct_NyTanaris= null
-rect gg_rct_NyNorth= null
-rect gg_rct_UldumAmbiance= null
-rect gg_rct_NyalothaUnlock1= null
-rect gg_rct_NyalothaUnlock2= null
-rect gg_rct_NyalothaUnlock3= null
-rect gg_rct_ScarletHarbor= null
-rect gg_rct_KaliRock1= null
-rect gg_rct_KaliRock2= null
-rect gg_rct_KaliRock3= null
-rect gg_rct_KaliRock4= null
-rect gg_rct_GoldrinnDuskwood= null
-rect gg_rct_GoldrinnHyjal= null
-rect gg_rct_TeldrassilUnlock1= null
-rect gg_rct_TeldrassilUnlock2= null
-rect gg_rct_DarnassusWorgen= null
-rect gg_rct_KaelSunwellChannel= null
-rect gg_rct_JainaChannel= null
 camerasetup gg_cam_Dalaran_1= null
 camerasetup gg_cam_Dalaran_2= null
 camerasetup gg_cam_Dalaran_3= null
@@ -1746,11 +1235,530 @@ destructable gg_dest_OTsp_35732= null
 destructable gg_dest_OTsp_19293= null
 destructable gg_dest_OTsp_35727= null
 destructable gg_dest_ATg3_35869= null
+rect gg_rct_Solliden_Farmstead= null
+rect gg_rct_Arathi_Ships= null
+rect gg_rct_AzjolNerubDragonblight_Exit= null
+rect gg_rct_Blasted_Lands_Weather= null
+rect gg_rct_Barren_Excavation= null
+rect gg_rct_Blackrock_Entrance= null
+rect gg_rct_Book_of_Mediv_Chaos= null
+rect gg_rct_Borean_Tundra= null
+rect gg_rct_Brill= null
+rect gg_rct_Broken_Isles= null
+rect gg_rct_CaerDarrowShipyard= null
+rect gg_rct_Cathedral_of_Light= null
+rect gg_rct_Central_Northrend= null
+rect gg_rct_Chaosmod1= null
+rect gg_rct_Coldarra= null
+rect gg_rct_Construction_Site_2= null
+rect gg_rct_Corins_Crossing= null
+rect gg_rct_Crossroads= null
+rect gg_rct_Dalaran= null
+rect gg_rct_DalaranDungeon= null
+rect gg_rct_Dalaran_Dungeons_Entrance= null
+rect gg_rct_Dalaran_Dungeons_Exit= null
+rect gg_rct_DalaranExit2= null
+rect gg_rct_Dark_Portal_Entrance_1= null
+rect gg_rct_Dark_Portal_Exit_1= null
+rect gg_rct_Darkspear_Island= null
+rect gg_rct_Darrowshire= null
+rect gg_rct_Demongate_1= null
+rect gg_rct_Demongate_2= null
+rect gg_rct_DemonGate3= null
+rect gg_rct_Desolace_Ships= null
+rect gg_rct_Dire_Maul_Entrance= null
+rect gg_rct_Dire_Maul_Exit= null
+rect gg_rct_Dun_Morogh_Excavation= null
+rect gg_rct_Dun_Morogh_Ships= null
+rect gg_rct_Dustwallow_Ships= null
+rect gg_rct_East_Thandol= null
+rect gg_rct_Eastern_Northrend= null
+rect gg_rct_EssenceSpawn= null
+rect gg_rct_Far_Eastern_Northrend= null
+rect gg_rct_Felwood_Vision= null
+rect gg_rct_Fenris_ships= null
+rect gg_rct_Fjord= null
+rect gg_rct_Gilneas= null
+rect gg_rct_Gilneas_Canals= null
+rect gg_rct_Gnomergan= null
+rect gg_rct_Greymane= null
+rect gg_rct_Grim_Batol= null
+rect gg_rct_Grim_Batol_Tunnel_Entrance= null
+rect gg_rct_Grim_Batol_Tunnel_Top= null
+rect gg_rct_Havenshire= null
+rect gg_rct_Hearthglen= null
+rect gg_rct_HeroOrItemWaitRect= null
+rect gg_rct_HonorHold= null
+rect gg_rct_Howling_Fjord= null
+rect gg_rct_Ice_Crown= null
+rect gg_rct_IcecrownShipyard= null
+rect gg_rct_IllidanSpawn= null
+rect gg_rct_Ironforge= null
+rect gg_rct_Jaina_soul_gem= null
+rect gg_rct_Kali_Ships= null
+rect gg_rct_Kultiras= null
+rect gg_rct_LichKing= null
+rect gg_rct_Loch_Modan_Ships= null
+rect gg_rct_Lordaeron_East= null
+rect gg_rct_Lordaeron_West= null
+rect gg_rct_Moonglade= null
+rect gg_rct_Murloc_Attack= null
+rect gg_rct_Murloc_Spawn_1= null
+rect gg_rct_Murloc_Spawn_2= null
+rect gg_rct_InstanceNazjatar= null
+rect gg_rct_Nether_Exit= null
+rect gg_rct_Northern_Kali_Ships= null
+rect gg_rct_Northrend_ships= null
+rect gg_rct_OrgGate= null
+rect gg_rct_Orgrimmar= null
+rect gg_rct_Outland_Ships= null
+rect gg_rct_Plague_1= null
+rect gg_rct_Plague_2= null
+rect gg_rct_Plague_3= null
+rect gg_rct_Plague_4= null
+rect gg_rct_Plague_5= null
+rect gg_rct_Plague_6= null
+rect gg_rct_Plague_7= null
+rect gg_rct_Quel_Ships_1= null
+rect gg_rct_Quel_Ships_2= null
+rect gg_rct_Quel_Ships_3= null
+rect gg_rct_Quelthalas= null
+rect gg_rct_Sargeras_Entrance= null
+rect gg_rct_Sargeras_Exit= null
+rect gg_rct_ScarletMonastery= null
+rect gg_rct_Scholomance_Entrance= null
+rect gg_rct_Scholomance_Exit= null
+rect gg_rct_Shadowforge_City= null
+rect gg_rct_Shadowmoon_Excavation= null
+rect gg_rct_Siphon_Cast_Zone= null
+rect gg_rct_South_EK_Ships= null
+rect gg_rct_StonemaulKeep= null
+rect gg_rct_Storm_Peaks= null
+rect gg_rct_Stormwind= null
+rect gg_rct_Stratholme_Platform_entrance= null
+rect gg_rct_Stratholme_platform_exit= null
+rect gg_rct_StratholmeShipyard= null
+rect gg_rct_Stromgarde= null
+rect gg_rct_Stromwind_antiship= null
+rect gg_rct_STV_Ships= null
+rect gg_rct_Terenas= null
+rect gg_rct_The_Basin= null
+rect gg_rct_Thrall_2= null
+rect gg_rct_Thrall_3= null
+rect gg_rct_Thrall_4= null
+rect gg_rct_Thrall_5= null
+rect gg_rct_Thrall_6= null
+rect gg_rct_Thrall_Landing1= null
+rect gg_rct_Thrall_Ship_1= null
+rect gg_rct_Thrall_Ship_2= null
+rect gg_rct_Tomb_Of_Sargeras_Ships= null
+rect gg_rct_TwistingNether= null
+rect gg_rct_Vandermar_Village= null
+rect gg_rct_WarsongCamp= null
+rect gg_rct_West_Thandol= null
+rect gg_rct_Winterpspring_Excavation= null
+rect gg_rct_ZF_Spawn_1= null
+rect gg_rct_ZF_Spawn_2= null
+rect gg_rct_Zulfarrak= null
+rect gg_rct_East_of_Azeroth= null
+rect gg_rct_West_of_Kalimdor= null
+rect gg_rct_Silvermon_Palace_trolls= null
+rect gg_rct_BloodpactFountain= null
+rect gg_rct_FTSummon= null
+rect gg_rct_Book_Retrieval= null
+rect gg_rct_King_Arthas_crown= null
+rect gg_rct_Drekthars_Spellbook= null
+rect gg_rct_Masteries= null
+rect gg_rct_Cthun_prevent_1= null
+rect gg_rct_AhnQiraj= null
+rect gg_rct_Cthun_position= null
+rect gg_rct_Sunwell_region= null
+rect gg_rct_RiseSpawn2= null
+rect gg_rct_AzjolNerub_South_Entrance= null
+rect gg_rct_AzjolNerub_North_Exit= null
+rect gg_rct_Auberdine_Ships_2= null
+rect gg_rct_Auberdine_Ships= null
+rect gg_rct_AzjolNerubNorth_entrance= null
+rect gg_rct_Auberdine_Ships_2_Copy= null
+rect gg_rct_Auberdine_Ships_Copy= null
+rect gg_rct_Arathi_Ships_Copy= null
+rect gg_rct_Alterac_Exca= null
+rect gg_rct_Arathi_Ships_Copy_2= null
+rect gg_rct_Andorhal= null
+rect gg_rct_Aerie_Peak= null
+rect gg_rct_Arathi_Ships_Copy_3= null
+rect gg_rct_TempestKeep= null
+rect gg_rct_Sunwell= null
+rect gg_rct_InstanceBarrowDeeps= null
+rect gg_rct_InstanceDireMaul= null
+rect gg_rct_InstanceScholomance= null
+rect gg_rct_InstanceSargerasTomb= null
+rect gg_rct_InstanceAzjolNerub= null
+rect gg_rct_InstanceOutland= null
+rect gg_rct_DalaranEntrance2= null
+rect gg_rct_InstanceDalaranDungeon1= null
+rect gg_rct_InstanceDalaranDungeon2= null
+rect gg_rct_InstanceDalaranDungeon3= null
+rect gg_rct_Tempest_Keep_Evacuate= null
+rect gg_rct_Gazlower= null
+rect gg_rct_Varok= null
+rect gg_rct_Region_077= null
+rect gg_rct_NyHighland= null
+rect gg_rct_Mannoroth= null
+rect gg_rct_Jergosh= null
+rect gg_rct_Dark_Portal_Exit_2= null
+rect gg_rct_Dark_Portal_Exit_3= null
+rect gg_rct_Dark_Portal_Entrance_2= null
+rect gg_rct_Dark_Portal_Entrance_3= null
+rect gg_rct_Chen= null
+rect gg_rct_QuelDanil_Lodge= null
+rect gg_rct_HighBourne= null
+rect gg_rct_Andrassil= null
+rect gg_rct_EvilIllidanSpawn= null
+rect gg_rct_VaultoftheWardens= null
+rect gg_rct_Theramore= null
+rect gg_rct_Terrordale= null
+rect gg_rct_Dreadscar_1= null
+rect gg_rct_Deemspring= null
+rect gg_rct_Dreadscar_3= null
+rect gg_rct_Scholo_Ships= null
+rect gg_rct_DalaCutscene1= null
+rect gg_rct_Dreadscar_2= null
+rect gg_rct_DalaCutscene2= null
+rect gg_rct_DalaCutscene3= null
+rect gg_rct_DalaCutscene4= null
+rect gg_rct_DalaCutscene4_Copy= null
+rect gg_rct_DalaCutscene4_Copy_2= null
+rect gg_rct_Lord1= null
+rect gg_rct_Lord2= null
+rect gg_rct_Lord3= null
+rect gg_rct_Lord4= null
+rect gg_rct_Lord5= null
+rect gg_rct_Lord6= null
+rect gg_rct_Dwarf1= null
+rect gg_rct_Dwarf2= null
+rect gg_rct_Dwarf3= null
+rect gg_rct_Dwarf4= null
+rect gg_rct_Legion1= null
+rect gg_rct_Legion00= null
+rect gg_rct_Legion2= null
+rect gg_rct_Legion3= null
+rect gg_rct_Frostwolf1= null
+rect gg_rct_Warsong1= null
+rect gg_rct_Sent1= null
+rect gg_rct_Sent2= null
+rect gg_rct_Sent3= null
+rect gg_rct_Sent4= null
+rect gg_rct_Sent5= null
+rect gg_rct_Sent_6= null
+rect gg_rct_Sent_7= null
+rect gg_rct_Sent8= null
+rect gg_rct_Sent9= null
+rect gg_rct_Sent10= null
+rect gg_rct_Druid1= null
+rect gg_rct_Druid2= null
+rect gg_rct_Druid3= null
+rect gg_rct_Scourge1= null
+rect gg_rct_Scourge2= null
+rect gg_rct_Scourge3= null
+rect gg_rct_Scourge4= null
+rect gg_rct_Stormwind1= null
+rect gg_rct_Stormwind2= null
+rect gg_rct_Stormwind3= null
+rect gg_rct_Fel4= null
+rect gg_rct_Fel5= null
+rect gg_rct_Fel6= null
+rect gg_rct_Fel7= null
+rect gg_rct_Fel8= null
+rect gg_rct_Quel1= null
+rect gg_rct_Quel5= null
+rect gg_rct_Quel2= null
+rect gg_rct_Quel3= null
+rect gg_rct_Quel4= null
+rect gg_rct_NazjatarExit3= null
+rect gg_rct_DagranSpawn= null
+rect gg_rct_Guldan= null
+rect gg_rct_Gazlowe= null
+rect gg_rct_Anetheron= null
+rect gg_rct_Khadgar= null
+rect gg_rct_Cenarius= null
+rect gg_rct_Ursoc= null
+rect gg_rct_Kiljaeden= null
+rect gg_rct_ThunderBluff= null
+rect gg_rct_ThrallLanding= null
+rect gg_rct_CairneStart= null
+rect gg_rct_Druid4= null
+rect gg_rct_Druid5= null
+rect gg_rct_Sent11= null
+rect gg_rct_Sent_12= null
+rect gg_rct_Dwarf_group_1= null
+rect gg_rct_GrizzlyHills= null
+rect gg_rct_Northrend_Ambiance= null
+rect gg_rct_TeldrassilAmbient= null
+rect gg_rct_MoongladeVillage= null
+rect gg_rct_AzuremystAmbient= null
+rect gg_rct_AshenvaleAmbient= null
+rect gg_rct_BarrenAmbient1= null
+rect gg_rct_BarrenAmbient2= null
+rect gg_rct_BarrenAmbient3= null
+rect gg_rct_BarrenAmbient4= null
+rect gg_rct_BarrenAmbient5= null
+rect gg_rct_SilithusAmbient= null
+rect gg_rct_UngoroAmbient= null
+rect gg_rct_FeralasAmbient1= null
+rect gg_rct_FeralasAmbient2= null
+rect gg_rct_AszharaAmbient1= null
+rect gg_rct_AzsharaAmbient2= null
+rect gg_rct_DusthallowAmbient= null
+rect gg_rct_EchoIsleAmbient= null
+rect gg_rct_ZulfarrakAmbient= null
+rect gg_rct_KezanAmbient= null
+rect gg_rct_AshenvaleAmbient2= null
+rect gg_rct_WinterspringAmbient1= null
+rect gg_rct_WinterspringAmbient2= null
+rect gg_rct_AshenvaleAmbient3= null
+rect gg_rct_RanazjarAmbient= null
+rect gg_rct_AshenvaleAmbient4= null
+rect gg_rct_Queltalas_2= null
+rect gg_rct_StratholmeAmbient= null
+rect gg_rct_LordaeronAmbient1= null
+rect gg_rct_TyrHandAmbient= null
+rect gg_rct_LordaeronAmbient2= null
+rect gg_rct_LordaeronAmbient3= null
+rect gg_rct_ZulAman_trolls= null
+rect gg_rct_LordaeronAmbient4= null
+rect gg_rct_LordaeronAmbient5= null
+rect gg_rct_QuelthalasAmbient= null
+rect gg_rct_SunwellAmbient= null
+rect gg_rct_ShadowfangAmbient= null
+rect gg_rct_LordamereLakeAmbient= null
+rect gg_rct_SouthshoreAmbient= null
+rect gg_rct_AlteracAmbient= null
+rect gg_rct_ScholomanceAmbient2= null
+rect gg_rct_ScholomanceAmbient1= null
+rect gg_rct_SouthshoreAmbient2= null
+rect gg_rct_SouthshoreAmbient3= null
+rect gg_rct_SouthshoreAmbient4= null
+rect gg_rct_SouthshoreAmbient5= null
+rect gg_rct_BridgeAmbient= null
+rect gg_rct_ScholomanceAmbient3= null
+rect gg_rct_HinterlandAmbient1= null
+rect gg_rct_HinterlandAmbient2= null
+rect gg_rct_Aerie_Peak_Copy= null
+rect gg_rct_TolbaradAmbient= null
+rect gg_rct_BalorAmbient= null
+rect gg_rct_StormwindAmbient2= null
+rect gg_rct_SentinelTowerAmbient= null
+rect gg_rct_StranglethornAmbient1= null
+rect gg_rct_StranglethornAmbient2= null
+rect gg_rct_StranglethornAmbient3= null
+rect gg_rct_ElwinForestAmbient= null
+rect gg_rct_DarkshireAmbient1= null
+rect gg_rct_DarkshireAmbient2= null
+rect gg_rct_DarkshireAmbient3= null
+rect gg_rct_BlastedlandAmbient= null
+rect gg_rct_SwampofSorrowsAmbient= null
+rect gg_rct_BurningSteppesAmbient= null
+rect gg_rct_BurningSteppeAmbient2= null
+rect gg_rct_IronforgeAmbient= null
+rect gg_rct_DunmoroghAmbient1= null
+rect gg_rct_DunmoroghAmbient2= null
+rect gg_rct_DunmoroghAmbient3= null
+rect gg_rct_LochModanAmbient= null
+rect gg_rct_WetlandAmbient1= null
+rect gg_rct_WetlandAmbient2= null
+rect gg_rct_GrimBatolAmbient1= null
+rect gg_rct_GrimBatolAmbient2= null
+rect gg_rct_Region_IC= null
+rect gg_rct_Region_DB= null
+rect gg_rct_Region_AE= null
+rect gg_rct_Region_AZ_1= null
+rect gg_rct_Region_AZ_2= null
+rect gg_rct_Region_BM= null
+rect gg_rct_Region_ToS= null
+rect gg_rct_Region_SC= null
+rect gg_rct_IllidanWeather= null
+rect gg_rct_IllidanMovement1= null
+rect gg_rct_IllidanMovement2= null
+rect gg_rct_IllidanAmbiance2= null
+rect gg_rct_LightningBolt2= null
+rect gg_rct_LightningBolt3= null
+rect gg_rct_WaveCrash= null
+rect gg_rct_BloodElfSecondChanceSpawn= null
+rect gg_rct_AethneumTombExit= null
+rect gg_rct_AethneumLibraryEntrance= null
+rect gg_rct_IllidanMoveAethneum= null
+rect gg_rct_ImmolFight= null
+rect gg_rct_AethneumCatacombs= null
+rect gg_rct_AethneumRemove= null
+rect gg_rct_AetheneumTombExit2= null
+rect gg_rct_NazjatarEntrance2= null
+rect gg_rct_NazjatarEntrance1= null
+rect gg_rct_NazjatarExit1= null
+rect gg_rct_NazjatarExit2= null
+rect gg_rct_AetheneumTombEntrance2= null
+rect gg_rct_IllidanBoat1= null
+rect gg_rct_IllidanBoat2= null
+rect gg_rct_IllidanBoat3= null
+rect gg_rct_IllidanBoat4= null
+rect gg_rct_IllidanExit2= null
+rect gg_rct_IllidanCameraExit= null
+rect gg_rct_IllidanExitText1= null
+rect gg_rct_SkullOfGuldan= null
+rect gg_rct_IllidanDala1= null
+rect gg_rct_IllidanDala2= null
+rect gg_rct_IllidanDalaranInstance= null
+rect gg_rct_StartQuest2= null
+rect gg_rct_IllidanDala4= null
+rect gg_rct_IllidanDala5= null
+rect gg_rct_IllidanDala6= null
+rect gg_rct_IllidanDala7= null
+rect gg_rct_IllidanDala8= null
+rect gg_rct_IllidanElementalSentry= null
+rect gg_rct_StartQuest3= null
+rect gg_rct_IllidanDalaExit= null
+rect gg_rct_UnlockIllidanSwitch= null
+rect gg_rct_IllidanLook= null
+rect gg_rct_IllidanLast= null
+rect gg_rct_AetheneumtoNazjatar= null
+rect gg_rct_IllidanNaga1= null
+rect gg_rct_IllidanNaga2= null
+rect gg_rct_IllidanNaga3= null
+rect gg_rct_MaelstromAmbient= null
+rect gg_rct_Chapter2Map= null
+rect gg_rct_Chapter3= null
+rect gg_rct_WerewolfSpawn1= null
+rect gg_rct_WerewolfSpawn2= null
+rect gg_rct_WerewolfSpawn3= null
+rect gg_rct_Attack_Commands= null
+rect gg_rct_AttackPoint= null
+rect gg_rct_GilneasMovement1= null
+rect gg_rct_GilneasMovement2= null
+rect gg_rct_GilneasMovement3= null
+rect gg_rct_GilneasMovement4= null
+rect gg_rct_GilneasMovement5= null
+rect gg_rct_Innerfight1= null
+rect gg_rct_InnerFightStart= null
+rect gg_rct_Innerfight2= null
+rect gg_rct_GilneasMovement2_Copy= null
+rect gg_rct_GilneasMovement2_Copy_2= null
+rect gg_rct_GilneasMovement2_Copy_2_Copy= null
+rect gg_rct_Chapter2Start= null
+rect gg_rct_Chapter2TeleStart= null
+rect gg_rct_WerewolfSpawn4= null
+rect gg_rct_AttackPoint_Copy= null
+rect gg_rct_GilneasExit3= null
+rect gg_rct_GilneasExit1= null
+rect gg_rct_GilneasExit2= null
+rect gg_rct_GilneasEntrance1= null
+rect gg_rct_GilneasEntrance2= null
+rect gg_rct_GilneasEntrance3= null
+rect gg_rct_Checkpoint1Gilneas= null
+rect gg_rct_Scarlet_Monastery_Interior= null
+rect gg_rct_Undercity_Interior_1= null
+rect gg_rct_Undercity_Interior_2= null
+rect gg_rct_Undercity_Exterior_1= null
+rect gg_rct_Undercity_Exterior_2= null
+rect gg_rct_Scarlet_Monastery_Exterior= null
+rect gg_rct_Undercity_Escape= null
+rect gg_rct_DarkshireUnlock= null
+rect gg_rct_StormwindUnlock= null
+rect gg_rct_LakeshireUnlock= null
+rect gg_rct_NethergardeUnlock= null
+rect gg_rct_StratholmeUnlock= null
+rect gg_rct_TyrUnlock= null
+rect gg_rct_ShadowfangUnlock= null
+rect gg_rct_TrollAttackSpawn= null
+rect gg_rct_TrollTarget= null
+rect gg_rct_KilsorrowUnlock= null
+rect gg_rct_HellfireUnlock= null
+rect gg_rct_ScarletAmbient= null
+rect gg_rct_ThelUnlock= null
+rect gg_rct_KulAttack= null
+rect gg_rct_KulTarget= null
+rect gg_rct_BlademasterUnlock= null
+rect gg_rct_ZandalarUnlock= null
+rect gg_rct_UndercityUnlock= null
+rect gg_rct_NaxxramasInside= null
+rect gg_rct_NaxAmbient= null
+rect gg_rct_NaxUnlock= null
+rect gg_rct_TwilightAmbient= null
+rect gg_rct_TwilightInside= null
+rect gg_rct_TwilightOutside= null
+rect gg_rct_ShipInside= null
+rect gg_rct_ShipAmbient= null
+rect gg_rct_ShipTarget= null
+rect gg_rct_NagaUnlock2= null
+rect gg_rct_NagaUnlock1= null
+rect gg_rct_NazjatarHidden= null
+rect gg_rct_IllidanOutlandEntrance= null
+rect gg_rct_Kalimdor= null
+rect gg_rct_FeathermoonUnlock= null
+rect gg_rct_AstranaarUnlock= null
+rect gg_rct_AshenvaleUnlock= null
+rect gg_rct_DrownedTemple= null
+rect gg_rct_NzothIni= null
+rect gg_rct_DragonmawUnlock= null
+rect gg_rct_SouthshoreUnlock= null
+rect gg_rct_GilneasMovement2_Copy_2_Copy_Copy= null
+rect gg_rct_MaievStartUnlock= null
+rect gg_rct_Silithus_Bug_Interior= null
+rect gg_rct_Silithus_Stone_Interior= null
+rect gg_rct_Silithus_Stone_Exterior= null
+rect gg_rct_Silithus_Bug_Exterior= null
+rect gg_rct_EchoUnlock= null
+rect gg_rct_StrahnbradUnlock= null
+rect gg_rct_TunnelUnlock= null
+rect gg_rct_AhnqirajInstance= null
+rect gg_rct_CthunSummon= null
+rect gg_rct_ZeppelinReturn= null
+rect gg_rct_Trade1= null
+rect gg_rct_Trade2= null
+rect gg_rct_Trade3= null
+rect gg_rct_Trade4= null
+rect gg_rct_Trader1= null
+rect gg_rct_Trader2= null
+rect gg_rct_Trader3= null
+rect gg_rct_GadgetUnlock= null
+rect gg_rct_OilRig1= null
+rect gg_rct_OilRig2= null
+rect gg_rct_OilRig3= null
+rect gg_rct_OilRig4= null
+rect gg_rct_OilRig5= null
+rect gg_rct_OilRig6= null
+rect gg_rct_Ny_Ulduar_Interior= null
+rect gg_rct_Ny_Twilight_Highlands_Interior= null
+rect gg_rct_Ny_Nazjatar_Interior= null
+rect gg_rct_Ny_Silithus_Interior= null
+rect gg_rct_ScarletExit= null
+rect gg_rct_TempestKeepSpawn= null
+rect gg_rct_SummonObeliskTarget= null
+rect gg_rct_NyalothaInstance= null
+rect gg_rct_NyTanaris= null
+rect gg_rct_NyNorth= null
+rect gg_rct_UldumAmbiance= null
+rect gg_rct_NyalothaUnlock1= null
+rect gg_rct_NyalothaUnlock2= null
+rect gg_rct_NyalothaUnlock3= null
+rect gg_rct_ScarletHarbor= null
+rect gg_rct_KaliRock1= null
+rect gg_rct_KaliRock2= null
+rect gg_rct_KaliRock3= null
+rect gg_rct_KaliRock4= null
+rect gg_rct_GoldrinnDuskwood= null
+rect gg_rct_GoldrinnHyjal= null
+rect gg_rct_TeldrassilUnlock1= null
+rect gg_rct_TeldrassilUnlock2= null
+rect gg_rct_DarnassusWorgen= null
+rect gg_rct_KaelSunwellChannel= null
+rect gg_rct_JainaChannel= null
+rect gg_rct_Auberdine_Ships_2_Copy_2= null
+rect gg_rct_Fel2= null
 rect gg_rct_Blackrock_Exit= null
 rect gg_rct_Shadowforge_gate= null
 rect gg_rct_InstanceBlackrock= null
 rect gg_rct_Fel1= null
-rect gg_rct_Fel2= null
+rect gg_rct_Fel2_Copy= null
 rect gg_rct_Fel3= null
 rect gg_rct_Region_BS= null
 rect gg_rct_BlackrockUnlock= null
@@ -1764,7 +1772,7 @@ endglobals
 
 //library GUIUnitReferences:
 
-function GUIUnitReferences___GUIUnitReferences takes nothing returns nothing
+function GUIUnitReferences__GUIUnitReferences takes nothing returns nothing
  
 call KillUnit(gg_unit_hhou_0341)
 call KillUnit(gg_unit_h000_0406)
@@ -6148,8 +6156,8 @@ function CreateUnitsForPlayer21 takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'O038', - 25291.5, - 22229.2, 236.270, 'O038')
     call SetHeroLevel(u, 11, false)
     call SetUnitAcquireRange(u, 200.0)
-    set gg_unit_o02J_3931=BlzCreateUnitWithSkin(p, 'o02J', - 27352.6, - 22254.1, 91.310, 'o02J')
-    call SetUnitAcquireRange(gg_unit_o02J_3931, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'o02J', - 27352.6, - 22254.1, 91.310, 'o02J')
+    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nwlg', - 26014.6, - 24071.2, 117.645, 'nwlg')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nwlg', - 25964.4, - 24306.1, 25.258, 'nwlg')
@@ -6268,8 +6276,6 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'n09C', - 5696.0, - 7104.0, 270.000, 'n09C')
     set u=BlzCreateUnitWithSkin(p, 'n02Z', - 20672.0, 8192.0, 270.000, 'n02Z')
     set u=BlzCreateUnitWithSkin(p, 'n03A', 9920.0, 5376.0, 270.000, 'n03A')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_DalaranEntrance2), GetRectCenterY(gg_rct_DalaranEntrance2))
-    call WaygateActivate(u, true)
     set u=BlzCreateUnitWithSkin(p, 'n00F', - 7616.0, 20736.0, 270.000, 'n00F')
     set gg_unit_h03V_0257=BlzCreateUnitWithSkin(p, 'h03V', - 26208.0, - 1952.0, 270.000, 'h03V')
     call SetUnitAcquireRange(gg_unit_h03V_0257, 200.0)
@@ -6304,8 +6310,6 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set gg_unit_h03V_0591=BlzCreateUnitWithSkin(p, 'h03V', - 18656.0, - 18272.0, 270.000, 'h03V')
     call SetUnitAcquireRange(gg_unit_h03V_0591, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'h03V', - 27680.0, - 15136.0, 270.000, 'h03V')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Silithus_Bug_Exterior), GetRectCenterY(gg_rct_Silithus_Bug_Exterior))
-    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'n01T', - 11840.0, - 2176.0, 270.000, 'n01T')
     set u=BlzCreateUnitWithSkin(p, 'n02A', - 13248.0, - 7232.0, 270.000, 'n02A')
@@ -6335,11 +6339,7 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'n02S', 3456.0, 22976.0, 270.000, 'n02S')
     set u=BlzCreateUnitWithSkin(p, 'nfr1', 4672.0, 18496.0, 87.282, 'nfr1')
     set u=BlzCreateUnitWithSkin(p, 'n032', - 10208.0, - 25504.0, 270.000, 'n032')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Sargeras_Entrance), GetRectCenterY(gg_rct_Sargeras_Entrance))
-    call WaygateActivate(u, true)
     set gg_unit_n036_0778=BlzCreateUnitWithSkin(p, 'n036', 4576.0, - 24736.0, 270.000, 'n036')
-    call WaygateSetDestination(gg_unit_n036_0778, GetRectCenterX(gg_rct_Dark_Portal_Entrance_3), GetRectCenterY(gg_rct_Dark_Portal_Entrance_3))
-    call WaygateActivate(gg_unit_n036_0778, true)
     set u=BlzCreateUnitWithSkin(p, 'n07L', 5376.0, - 12416.0, 270.000, 'n07L')
     set u=BlzCreateUnitWithSkin(p, 'n05Y', - 1664.0, 7616.0, 270.000, 'n05Y')
     set u=BlzCreateUnitWithSkin(p, 'n0AJ', 10752.0, - 22720.0, 270.000, 'n0AJ')
@@ -6352,8 +6352,6 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nfh1', 21504.0, 12416.0, 270.000, 'nfh1')
     set u=BlzCreateUnitWithSkin(p, 'nfh1', 21760.0, 11904.0, 122.269, 'nfh1')
     set gg_unit_n036_1065=BlzCreateUnitWithSkin(p, 'n036', 15584.0, - 19552.0, 270.000, 'n036')
-    call WaygateSetDestination(gg_unit_n036_1065, GetRectCenterX(gg_rct_Dark_Portal_Exit_2), GetRectCenterY(gg_rct_Dark_Portal_Exit_2))
-    call WaygateActivate(gg_unit_n036_1065, true)
     call SetUnitAcquireRange(gg_unit_n036_1065, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nct2', - 12512.0, - 4256.0, 270.000, 'nct2')
     set u=BlzCreateUnitWithSkin(p, 'nct1', - 13024.0, - 4256.0, 270.000, 'nct1')
@@ -6366,8 +6364,6 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'n0AF', - 9152.0, - 7296.0, 270.000, 'n0AF')
     set gg_unit_h026_1207=BlzCreateUnitWithSkin(p, 'h026', - 256.0, - 31616.0, 270.000, 'h026')
     set u=BlzCreateUnitWithSkin(p, 'h03V', - 24928.0, - 12192.0, 270.000, 'h03V')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Silithus_Stone_Exterior), GetRectCenterY(gg_rct_Silithus_Stone_Exterior))
-    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set gg_unit_n035_1269=BlzCreateUnitWithSkin(p, 'n035', 14656.0, 7744.0, 347.332, 'n035')
     set u=BlzCreateUnitWithSkin(p, 'h024', 2752.0, 15744.0, 270.000, 'h024')
@@ -6376,8 +6372,6 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'ncnt', - 20000.0, - 4448.0, 270.000, 'ncnt')
     set u=BlzCreateUnitWithSkin(p, 'h006', 13312.0, 3840.0, 270.000, 'h006')
     set u=BlzCreateUnitWithSkin(p, 'h03V', - 24800.0, 15392.0, 270.000, 'h03V')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Scarlet_Monastery_Exterior), GetRectCenterY(gg_rct_Scarlet_Monastery_Exterior))
-    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'n09X', - 1344.0, - 28672.0, 270.000, 'n09X')
     set u=BlzCreateUnitWithSkin(p, 'n02M', 16960.0, - 9216.0, 270.000, 'n02M')
@@ -6402,8 +6396,6 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'obar', 5184.0, - 10624.0, 270.000, 'obar')
     set u=BlzCreateUnitWithSkin(p, 'otrb', 5120.0, - 10944.0, 270.000, 'otrb')
     set u=BlzCreateUnitWithSkin(p, 'h03V', - 16096.0, - 17312.0, 270.000, 'h03V')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Silithus_Bug_Interior), GetRectCenterY(gg_rct_Silithus_Bug_Interior))
-    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'n01C', 12928.0, 5440.0, 270.000, 'n01C')
     set u=BlzCreateUnitWithSkin(p, 'h024', 4992.0, 2432.0, 270.000, 'h024')
@@ -6414,8 +6406,6 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'n09K', 2688.0, - 512.0, 270.000, 'n09K')
     set u=BlzCreateUnitWithSkin(p, 'n01D', 7552.0, 4160.0, 270.000, 'n01D')
     set u=BlzCreateUnitWithSkin(p, 'n03A', 8640.0, 4800.0, 270.000, 'n03A')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Dalaran_Dungeons_Exit), GetRectCenterY(gg_rct_Dalaran_Dungeons_Exit))
-    call WaygateActivate(u, true)
     set u=BlzCreateUnitWithSkin(p, 'nhns', - 18944.0, - 320.0, 270.000, 'nhns')
     set u=BlzCreateUnitWithSkin(p, 'nfh1', 20480.0, 11328.0, 119.763, 'nfh1')
     call SetUnitAcquireRange(u, 200.0)
@@ -6425,16 +6415,10 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nfr1', - 10368.0, 11264.0, 270.000, 'nfr1')
     set u=BlzCreateUnitWithSkin(p, 'nct1', - 9504.0, - 3040.0, 270.000, 'nct1')
     set u=BlzCreateUnitWithSkin(p, 'h03V', - 28448.0, 14944.0, 270.000, 'h03V')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Undercity_Escape), GetRectCenterY(gg_rct_Undercity_Escape))
-    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'h03V', - 26528.0, 14432.0, 270.000, 'h03V')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Undercity_Exterior_1), GetRectCenterY(gg_rct_Undercity_Exterior_1))
-    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'h03V', - 27936.0, 17632.0, 270.000, 'h03V')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Undercity_Exterior_2), GetRectCenterY(gg_rct_Undercity_Exterior_2))
-    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nnzg', - 13472.0, - 28832.0, 270.000, 'nnzg')
     set u=BlzCreateUnitWithSkin(p, 'o002', 14336.0, - 18816.0, 270.000, 'o002')
@@ -6481,17 +6465,11 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'o034', 704.0, - 25600.0, 270.000, 'o034')
     set u=BlzCreateUnitWithSkin(p, 'n02O', 3008.0, - 20416.0, 270.000, 'n02O')
     set gg_unit_n036_2719=BlzCreateUnitWithSkin(p, 'n036', 17440.0, - 19232.0, 270.000, 'n036')
-    call WaygateSetDestination(gg_unit_n036_2719, GetRectCenterX(gg_rct_Dark_Portal_Exit_3), GetRectCenterY(gg_rct_Dark_Portal_Exit_3))
-    call WaygateActivate(gg_unit_n036_2719, true)
     call SetUnitAcquireRange(gg_unit_n036_2719, 200.0)
     set gg_unit_n036_2720=BlzCreateUnitWithSkin(p, 'n036', 16544.0, - 19168.0, 270.000, 'n036')
-    call WaygateSetDestination(gg_unit_n036_2720, GetRectCenterX(gg_rct_Dark_Portal_Exit_1), GetRectCenterY(gg_rct_Dark_Portal_Exit_1))
-    call WaygateActivate(gg_unit_n036_2720, true)
     call SetUnitAcquireRange(gg_unit_n036_2720, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'owtw', 20992.0, 15232.0, 270.000, 'owtw')
     set u=BlzCreateUnitWithSkin(p, 'h03V', - 23968.0, 17248.0, 270.000, 'h03V')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_ScarletExit), GetRectCenterY(gg_rct_ScarletExit))
-    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'o02X', 1472.0, - 26688.0, 270.000, 'o02X')
     set u=BlzCreateUnitWithSkin(p, 'n01Q', - 14912.0, 4352.0, 270.000, 'n01Q')
@@ -6519,11 +6497,7 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nct2', - 14560.0, - 2272.0, 270.000, 'nct2')
     set u=BlzCreateUnitWithSkin(p, 'n0AA', 18560.0, - 30336.0, 270.000, 'n0AA')
     set gg_unit_n036_3291=BlzCreateUnitWithSkin(p, 'n036', 4704.0, - 25376.0, 270.000, 'n036')
-    call WaygateSetDestination(gg_unit_n036_3291, GetRectCenterX(gg_rct_Dark_Portal_Entrance_1), GetRectCenterY(gg_rct_Dark_Portal_Entrance_1))
-    call WaygateActivate(gg_unit_n036_3291, true)
     set gg_unit_n036_3292=BlzCreateUnitWithSkin(p, 'n036', 5216.0, - 25760.0, 270.000, 'n036')
-    call WaygateSetDestination(gg_unit_n036_3292, GetRectCenterX(gg_rct_Dark_Portal_Entrance_2), GetRectCenterY(gg_rct_Dark_Portal_Entrance_2))
-    call WaygateActivate(gg_unit_n036_3292, true)
     set u=BlzCreateUnitWithSkin(p, 'h004', - 11264.0, - 12480.0, 270.000, 'h004')
     set u=BlzCreateUnitWithSkin(p, 'n00J', - 8896.0, - 24896.0, 270.000, 'n00J')
     set gg_unit_n05J_3370=BlzCreateUnitWithSkin(p, 'n05J', 17408.0, - 17920.0, 270.000, 'n05J')
@@ -6542,29 +6516,17 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'n05N', - 16320.0, - 1152.0, 270.000, 'n05N')
     set u=BlzCreateUnitWithSkin(p, 'n06V', - 20672.0, - 28736.0, 270.000, 'n06V')
     set gg_unit_h03V_3785=BlzCreateUnitWithSkin(p, 'h03V', 5664.0, - 992.0, 270.000, 'h03V')
-    call WaygateSetDestination(gg_unit_h03V_3785, GetRectCenterX(gg_rct_GilneasExit3), GetRectCenterY(gg_rct_GilneasExit3))
-    call WaygateActivate(gg_unit_h03V_3785, true)
     set gg_unit_h03V_3800=BlzCreateUnitWithSkin(p, 'h03V', 8288.0, 1696.0, 270.000, 'h03V')
-    call WaygateSetDestination(gg_unit_h03V_3800, GetRectCenterX(gg_rct_GilneasExit2), GetRectCenterY(gg_rct_GilneasExit2))
-    call WaygateActivate(gg_unit_h03V_3800, true)
     call SetUnitAcquireRange(gg_unit_h03V_3800, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'n084', - 22016.0, - 22016.0, 270.000, 'n084')
     set gg_unit_h03V_3812=BlzCreateUnitWithSkin(p, 'h03V', 6944.0, 2592.0, 270.000, 'h03V')
-    call WaygateSetDestination(gg_unit_h03V_3812, GetRectCenterX(gg_rct_GilneasExit1), GetRectCenterY(gg_rct_GilneasExit1))
-    call WaygateActivate(gg_unit_h03V_3812, true)
     set u=BlzCreateUnitWithSkin(p, 'n06R', - 24000.0, - 21760.0, 270.000, 'n06R')
     set u=BlzCreateUnitWithSkin(p, 'n092', - 11504.8, - 12850.8, 270.000, 'n092')
     set u=BlzCreateUnitWithSkin(p, 'n09G', - 15488.0, - 6144.0, 270.000, 'n09G')
     set u=BlzCreateUnitWithSkin(p, 'n0A9', 15488.0, - 18176.0, 270.000, 'n0A9')
     set gg_unit_h03V_3969=BlzCreateUnitWithSkin(p, 'h03V', - 24352.0, - 18080.0, 270.000, 'h03V')
-    call WaygateSetDestination(gg_unit_h03V_3969, GetRectCenterX(gg_rct_GilneasEntrance1), GetRectCenterY(gg_rct_GilneasEntrance1))
-    call WaygateActivate(gg_unit_h03V_3969, true)
     set gg_unit_h03V_3970=BlzCreateUnitWithSkin(p, 'h03V', - 20512.0, - 23648.0, 270.000, 'h03V')
-    call WaygateSetDestination(gg_unit_h03V_3970, GetRectCenterX(gg_rct_GilneasEntrance2), GetRectCenterY(gg_rct_GilneasEntrance2))
-    call WaygateActivate(gg_unit_h03V_3970, true)
     set gg_unit_h03V_3971=BlzCreateUnitWithSkin(p, 'h03V', - 28448.0, - 20640.0, 270.000, 'h03V')
-    call WaygateSetDestination(gg_unit_h03V_3971, GetRectCenterX(gg_rct_GilneasEntrance3), GetRectCenterY(gg_rct_GilneasEntrance3))
-    call WaygateActivate(gg_unit_h03V_3971, true)
     set u=BlzCreateUnitWithSkin(p, 'h016', 13824.0, 2880.0, 270.000, 'h016')
     set u=BlzCreateUnitWithSkin(p, 'hhou', 16224.0, 1760.0, 170.300, 'hhou')
 endfunction
@@ -9462,8 +9424,6 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'ngme', 11456.0, 9728.0, 270.000, 'ngme')
     set u=BlzCreateUnitWithSkin(p, 'h01S', 10624.0, - 5760.0, 310.000, 'h01S')
     set u=BlzCreateUnitWithSkin(p, 'n033', 20064.0, - 29856.0, 270.000, 'n033')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Blackrock_Entrance), GetRectCenterY(gg_rct_Blackrock_Entrance))
-    call WaygateActivate(u, true)
     set gg_unit_h00L_0132=BlzCreateUnitWithSkin(p, 'h00L', - 8832.0, - 1344.0, 270.000, 'h00L')
     set u=BlzCreateUnitWithSkin(p, 'n02V', - 7424.0, - 5376.0, 270.000, 'n02V')
     set gg_unit_h00L_0135=BlzCreateUnitWithSkin(p, 'h00L', - 8384.0, 1024.0, 270.000, 'h00L')
@@ -9526,14 +9486,10 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h02N', 6112.0, 3936.0, 270.000, 'h02N')
     set u=BlzCreateUnitWithSkin(p, 'h067', 8768.0, 5120.0, 270.000, 'h067')
     set u=BlzCreateUnitWithSkin(p, 'n03H', - 11648.0, 22976.0, 270.000, 'n03H')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_DalaranExit2), GetRectCenterY(gg_rct_DalaranExit2))
-    call WaygateActivate(u, true)
     set u=BlzCreateUnitWithSkin(p, 'h097', 21696.0, 8192.0, 270.000, 'h097')
     set u=BlzCreateUnitWithSkin(p, 'o028', - 8640.0, - 512.0, 270.000, 'o028')
     set gg_unit_o02D_0254=BlzCreateUnitWithSkin(p, 'o02D', - 7168.0, - 5120.0, 270.000, 'o02D')
     set u=BlzCreateUnitWithSkin(p, 'n03S', 14976.0, 320.0, 270.000, 'n03S')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_East_Thandol), GetRectCenterY(gg_rct_East_Thandol))
-    call WaygateActivate(u, true)
     set u=BlzCreateUnitWithSkin(p, 'o020', - 7360.0, 192.0, 270.000, 'o020')
     set u=BlzCreateUnitWithSkin(p, 'ngad', - 10432.0, 10176.0, 270.000, 'ngad')
     set u=BlzCreateUnitWithSkin(p, 'edob', - 20736.0, - 9920.0, 270.000, 'edob')
@@ -9600,8 +9556,6 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'o01S', - 12224.0, - 2368.0, 270.000, 'o01S')
     set u=BlzCreateUnitWithSkin(p, 'n03E', - 11712.0, - 2496.0, 270.000, 'n03E')
     set gg_unit_h01A_0402=BlzCreateUnitWithSkin(p, 'h01A', 672.0, 2976.0, 270.000, 'h01A')
-    call WaygateSetDestination(gg_unit_h01A_0402, GetRectCenterX(gg_rct_NazjatarExit1), GetRectCenterY(gg_rct_NazjatarExit1))
-    call WaygateActivate(gg_unit_h01A_0402, true)
     set u=BlzCreateUnitWithSkin(p, 'o028', - 11584.0, - 2496.0, 270.000, 'o028')
     set u=BlzCreateUnitWithSkin(p, 'o028', - 11520.0, - 2368.0, 270.000, 'o028')
     set gg_unit_h000_0406=BlzCreateUnitWithSkin(p, 'h000', 9088.0, 8000.0, 270.000, 'h000')
@@ -9784,8 +9738,6 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h007', 13824.0, 12928.0, 270.000, 'h007')
     set u=BlzCreateUnitWithSkin(p, 'h04V', 19008.0, 18688.0, 270.000, 'h04V')
     set gg_unit_n07E_0958=BlzCreateUnitWithSkin(p, 'n07E', 14673.3, - 27376.2, 270.000, 'n07E')
-    call WaygateSetDestination(gg_unit_n07E_0958, GetRectCenterX(gg_rct_AetheneumtoNazjatar), GetRectCenterY(gg_rct_AetheneumtoNazjatar))
-    call WaygateActivate(gg_unit_n07E_0958, true)
     set u=BlzCreateUnitWithSkin(p, 'nef5', 19456.0, 18496.0, 270.000, 'nef5')
     set u=BlzCreateUnitWithSkin(p, 'nef2', 17216.0, 18176.0, 17.357, 'nef2')
     set u=BlzCreateUnitWithSkin(p, 'nef0', 19264.0, 17600.0, 270.000, 'nef0')
@@ -9855,8 +9807,6 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h05E', 17856.0, - 17920.0, 125.000, 'h05E')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
     set u=BlzCreateUnitWithSkin(p, 'n03I', - 18144.0, 20896.0, 270.000, 'n03I')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Dire_Maul_Entrance), GetRectCenterY(gg_rct_Dire_Maul_Entrance))
-    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'h06F', 11808.0, - 13728.0, 270.000, 'h06F')
     set u=BlzCreateUnitWithSkin(p, 'h04G', - 25024.0, - 31424.0, 270.000, 'h04G')
@@ -9887,16 +9837,12 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h09D', - 15232.0, - 22528.0, 270.000, 'h09D')
     set u=BlzCreateUnitWithSkin(p, 'npgf', 22080.0, - 29568.0, 270.000, 'npgf')
     set gg_unit_n07E_1154=BlzCreateUnitWithSkin(p, 'n07E', - 27334.7, 19215.8, 0.000, 'n07E')
-    call WaygateSetDestination(gg_unit_n07E_1154, GetRectCenterX(gg_rct_NazjatarExit3), GetRectCenterY(gg_rct_NazjatarExit3))
-    call WaygateActivate(gg_unit_n07E_1154, true)
     set u=BlzCreateUnitWithSkin(p, 'npgf', 22208.0, - 29568.0, 270.000, 'npgf')
     set u=BlzCreateUnitWithSkin(p, 'npgf', 22144.0, - 29440.0, 270.000, 'npgf')
     set u=BlzCreateUnitWithSkin(p, 'ovln', - 9632.0, - 9760.0, 270.000, 'ovln')
     set u=BlzCreateUnitWithSkin(p, 'u01W', - 26048.0, 16384.0, 270.000, 'u01W')
     set u=BlzCreateUnitWithSkin(p, 'h04G', - 24384.0, - 31232.0, 270.000, 'h04G')
     set u=BlzCreateUnitWithSkin(p, 'n03H', - 14208.0, 20736.0, 270.000, 'n03H')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Dalaran_Dungeons_Entrance), GetRectCenterY(gg_rct_Dalaran_Dungeons_Entrance))
-    call WaygateActivate(u, true)
     set u=BlzCreateUnitWithSkin(p, 'h044', - 11680.0, 20832.0, 270.000, 'h044')
     set u=BlzCreateUnitWithSkin(p, 'h079', - 12992.0, 21696.0, 270.000, 'h079')
     set u=BlzCreateUnitWithSkin(p, 'hvlt', - 12544.0, 21056.0, 270.000, 'hvlt')
@@ -9927,8 +9873,6 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'ncb3', 8960.0, - 11840.0, 270.000, 'ncb3')
     set u=BlzCreateUnitWithSkin(p, 'n03N', 18560.0, 21248.0, 270.000, 'n03N')
     set gg_unit_n03S_1348=BlzCreateUnitWithSkin(p, 'n03S', 21632.0, - 8256.0, 270.000, 'n03S')
-    call WaygateSetDestination(gg_unit_n03S_1348, GetRectCenterX(gg_rct_West_of_Kalimdor), GetRectCenterY(gg_rct_West_of_Kalimdor))
-    call WaygateActivate(gg_unit_n03S_1348, true)
     set u=BlzCreateUnitWithSkin(p, 'n02Y', - 18432.0, 15168.0, 270.000, 'n02Y')
     set u=BlzCreateUnitWithSkin(p, 'h082', - 24640.0, 17024.0, 270.000, 'h082')
     set u=BlzCreateUnitWithSkin(p, 'owtw', - 11008.0, - 8128.0, 270.000, 'owtw')
@@ -9967,8 +9911,6 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     call SetUnitColor(u, ConvertPlayerColor(21))
     set u=BlzCreateUnitWithSkin(p, 'nfh1', 13824.0, - 20288.0, 160.217, 'nfh1')
     set gg_unit_n07E_1491=BlzCreateUnitWithSkin(p, 'n07E', - 2286.7, - 20080.2, 270.000, 'n07E')
-    call WaygateSetDestination(gg_unit_n07E_1491, GetRectCenterX(gg_rct_AetheneumtoNazjatar), GetRectCenterY(gg_rct_AetheneumtoNazjatar))
-    call WaygateActivate(gg_unit_n07E_1491, true)
     set gg_unit_n05X_1493=BlzCreateUnitWithSkin(p, 'n05X', 4416.0, - 21696.0, 270.000, 'n05X')
     set gg_unit_o00J_1495=BlzCreateUnitWithSkin(p, 'o00J', - 15552.0, - 3968.0, 220.000, 'o00J')
     set u=BlzCreateUnitWithSkin(p, 'h04G', - 26432.0, - 30336.0, 270.000, 'h04G')
@@ -10139,8 +10081,6 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h07N', 4608.0, - 5632.0, 270.000, 'h07N')
     set u=BlzCreateUnitWithSkin(p, 'h07Q', 2848.0, - 3488.0, 270.000, 'h07Q')
     set u=BlzCreateUnitWithSkin(p, 'n03Q', 17216.0, 384.0, 270.000, 'n03Q')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_West_Thandol), GetRectCenterY(gg_rct_West_Thandol))
-    call WaygateActivate(u, true)
     set u=BlzCreateUnitWithSkin(p, 'n055', 14656.0, - 28992.0, 270.000, 'n055')
     set u=BlzCreateUnitWithSkin(p, 'n06J', - 15328.0, 2336.0, 270.000, 'n06J')
     set u=BlzCreateUnitWithSkin(p, 'h03O', - 23392.0, - 27936.0, 270.000, 'h03O')
@@ -10157,8 +10097,6 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'ngol', - 27392.0, - 4480.0, 270.000, 'ngol')
     call SetResourceAmount(u, 800)
     set gg_unit_h03V_2232=BlzCreateUnitWithSkin(p, 'h03V', 4576.0, - 10592.0, 270.000, 'h03V')
-    call WaygateSetDestination(gg_unit_h03V_2232, GetRectCenterX(gg_rct_ShipInside), GetRectCenterY(gg_rct_ShipInside))
-    call WaygateActivate(gg_unit_h03V_2232, true)
     set u=BlzCreateUnitWithSkin(p, 'h02H', 6912.0, - 9728.0, 0.000, 'h02H')
     set u=BlzCreateUnitWithSkin(p, 'h02F', - 23680.0, - 28544.0, 270.000, 'h02F')
     set u=BlzCreateUnitWithSkin(p, 'e00L', - 15808.0, 2368.0, 270.000, 'e00L')
@@ -10365,8 +10303,6 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h04H', - 23232.0, - 31232.0, 270.000, 'h04H')
     set u=BlzCreateUnitWithSkin(p, 'h04G', - 23040.0, - 30144.0, 270.000, 'h04G')
     set u=BlzCreateUnitWithSkin(p, 'n03I', - 16992.0, - 8480.0, 270.000, 'n03I')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Dire_Maul_Exit), GetRectCenterY(gg_rct_Dire_Maul_Exit))
-    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'o048', - 2560.0, - 15168.0, 270.000, 'o048')
     set u=BlzCreateUnitWithSkin(p, 'h03A', - 23680.0, - 29504.0, 270.000, 'h03A')
@@ -10507,26 +10443,12 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set gg_unit_n052_3374=BlzCreateUnitWithSkin(p, 'n052', 20915.5, - 25302.1, 270.000, 'n052')
     set gg_unit_n045_3377=BlzCreateUnitWithSkin(p, 'n045', 8448.0, - 30976.0, 270.000, 'n045')
     set gg_unit_h01D_3378=BlzCreateUnitWithSkin(p, 'h01D', - 668.7, 1193.4, 270.000, 'h01D')
-    call WaygateSetDestination(gg_unit_h01D_3378, GetRectCenterX(gg_rct_NazjatarExit2), GetRectCenterY(gg_rct_NazjatarExit2))
-    call WaygateActivate(gg_unit_h01D_3378, true)
     set gg_unit_h01D_3379=BlzCreateUnitWithSkin(p, 'h01D', - 27808.0, 23584.0, 180.000, 'h01D')
-    call WaygateSetDestination(gg_unit_h01D_3379, GetRectCenterX(gg_rct_AethneumLibraryEntrance), GetRectCenterY(gg_rct_AethneumLibraryEntrance))
-    call WaygateActivate(gg_unit_h01D_3379, true)
     set gg_unit_h01D_3380=BlzCreateUnitWithSkin(p, 'h01D', - 23840.0, 21024.0, 180.000, 'h01D')
-    call WaygateSetDestination(gg_unit_h01D_3380, GetRectCenterX(gg_rct_AetheneumTombEntrance2), GetRectCenterY(gg_rct_AetheneumTombEntrance2))
-    call WaygateActivate(gg_unit_h01D_3380, true)
     set gg_unit_h01D_3381=BlzCreateUnitWithSkin(p, 'h01D', 12231.1, - 27480.6, 270.000, 'h01D')
-    call WaygateSetDestination(gg_unit_h01D_3381, GetRectCenterX(gg_rct_NazjatarEntrance1), GetRectCenterY(gg_rct_NazjatarEntrance1))
-    call WaygateActivate(gg_unit_h01D_3381, true)
     set gg_unit_h01D_3384=BlzCreateUnitWithSkin(p, 'h01D', 12664.7, - 29661.8, 130.510, 'h01D')
-    call WaygateSetDestination(gg_unit_h01D_3384, GetRectCenterX(gg_rct_NazjatarEntrance2), GetRectCenterY(gg_rct_NazjatarEntrance2))
-    call WaygateActivate(gg_unit_h01D_3384, true)
     set gg_unit_h01D_3385=BlzCreateUnitWithSkin(p, 'h01D', - 18004.9, 24158.5, 270.000, 'h01D')
-    call WaygateSetDestination(gg_unit_h01D_3385, GetRectCenterX(gg_rct_AethneumTombExit), GetRectCenterY(gg_rct_AethneumTombExit))
-    call WaygateActivate(gg_unit_h01D_3385, true)
     set gg_unit_h01D_3387=BlzCreateUnitWithSkin(p, 'h01D', - 17701.3, - 7273.3, 130.000, 'h01D')
-    call WaygateSetDestination(gg_unit_h01D_3387, GetRectCenterX(gg_rct_AetheneumTombExit2), GetRectCenterY(gg_rct_AetheneumTombExit2))
-    call WaygateActivate(gg_unit_h01D_3387, true)
     set u=BlzCreateUnitWithSkin(p, 'nnsg', 11136.0, - 29952.0, 270.000, 'nnsg')
     set u=BlzCreateUnitWithSkin(p, 'nnsg', 9728.0, - 27712.0, 270.000, 'nnsg')
     set u=BlzCreateUnitWithSkin(p, 'nnsg', 8384.0, - 27584.0, 270.000, 'nnsg')
@@ -10580,8 +10502,6 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h056', 10112.0, - 6144.0, 270.000, 'h056')
     set u=BlzCreateUnitWithSkin(p, 'n05W', 15168.0, - 28288.0, 270.000, 'n05W')
     set gg_unit_n03Q_3666=BlzCreateUnitWithSkin(p, 'n03Q', - 20800.0, 4864.0, 270.000, 'n03Q')
-    call WaygateSetDestination(gg_unit_n03Q_3666, GetRectCenterX(gg_rct_East_of_Azeroth), GetRectCenterY(gg_rct_East_of_Azeroth))
-    call WaygateActivate(gg_unit_n03Q_3666, true)
     set u=BlzCreateUnitWithSkin(p, 'n005', - 24256.0, 20416.0, 270.000, 'n005')
     set u=BlzCreateUnitWithSkin(p, 'n005', - 26048.0, 22656.0, 270.000, 'n005')
     set u=BlzCreateUnitWithSkin(p, 'n005', - 24896.0, 22592.0, 270.000, 'n005')
@@ -10760,8 +10680,6 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h00J', 12431.6, - 15923.5, 23.270, 'h00J')
     set u=BlzCreateUnitWithSkin(p, 'o02M', - 7424.8, - 225.2, 37.904, 'o02M')
     set u=BlzCreateUnitWithSkin(p, 'n038', - 3296.0, 17856.0, 270.000, 'n038')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_AzjolNerubDragonblight_Exit), GetRectCenterY(gg_rct_AzjolNerubDragonblight_Exit))
-    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'h01I', 9698.2, 5295.2, 7.364, 'h01I')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
@@ -10976,8 +10894,6 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'hspt', - 11205.7, 22241.3, 215.491, 'hspt')
     set u=BlzCreateUnitWithSkin(p, 'hmpr', - 11185.0, 21946.5, 187.569, 'hmpr')
     set u=BlzCreateUnitWithSkin(p, 'n038', - 12768.0, - 26720.0, 270.000, 'n038')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_AzjolNerub_South_Entrance), GetRectCenterY(gg_rct_AzjolNerub_South_Entrance))
-    call WaygateActivate(u, true)
     set u=BlzCreateUnitWithSkin(p, 'n04H', - 20899.1, 22719.9, 305.737, 'n04H')
     set u=BlzCreateUnitWithSkin(p, 'n03K', 15775.9, 12207.6, 196.497, 'n03K')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
@@ -11116,11 +11032,7 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nvil', 15111.3, 12044.2, 347.398, 'nvil')
     set u=BlzCreateUnitWithSkin(p, 'nvl2', 14050.0, 11795.8, 303.631, 'nvl2')
     set gg_unit_n08R_2209=BlzCreateUnitWithSkin(p, 'n08R', 16568.8, - 2772.2, 315.280, 'n08R')
-    call WaygateSetDestination(gg_unit_n08R_2209, GetRectCenterX(gg_rct_Grim_Batol_Tunnel_Top), GetRectCenterY(gg_rct_Grim_Batol_Tunnel_Top))
-    call WaygateActivate(gg_unit_n08R_2209, true)
     set gg_unit_n08R_2214=BlzCreateUnitWithSkin(p, 'n08R', 16760.8, - 2484.2, 116.560, 'n08R')
-    call WaygateSetDestination(gg_unit_n08R_2214, GetRectCenterX(gg_rct_Grim_Batol_Tunnel_Entrance), GetRectCenterY(gg_rct_Grim_Batol_Tunnel_Entrance))
-    call WaygateActivate(gg_unit_n08R_2214, true)
     set u=BlzCreateUnitWithSkin(p, 'nvlw', 12365.8, 2024.0, 4.182, 'nvlw')
     set u=BlzCreateUnitWithSkin(p, 'nvl2', 10435.9, 2512.6, 331.200, 'nvl2')
     set u=BlzCreateUnitWithSkin(p, 'nvlw', 10514.6, 2572.3, 329.120, 'nvlw')
@@ -11146,12 +11058,12 @@ function CreateNeutralPassive takes nothing returns nothing
     call SetUnitColor(gg_unit_Uwar_2344, ConvertPlayerColor(1))
     set u=BlzCreateUnitWithSkin(p, 'h03L', - 27239.5, - 25883.9, 18.925, 'h03L')
     set u=BlzCreateUnitWithSkin(p, 'h03L', - 27065.5, - 25871.5, 18.925, 'h03L')
-    set gg_unit_nmyr_2375=BlzCreateUnitWithSkin(p, 'nmyr', 14375.8, - 28378.0, 148.692, 'nmyr')
+    set u=BlzCreateUnitWithSkin(p, 'nmyr', 14375.8, - 28378.0, 148.692, 'nmyr')
     set u=BlzCreateUnitWithSkin(p, 'h04M', - 27217.3, - 26088.9, 285.137, 'h04M')
     set u=BlzCreateUnitWithSkin(p, 'h04M', - 27093.3, - 26090.2, 285.137, 'h04M')
     set u=BlzCreateUnitWithSkin(p, 'h04M', - 26788.0, - 26058.1, 285.137, 'h04M')
     set u=BlzCreateUnitWithSkin(p, 'n04U', - 21396.1, 21541.6, 243.981, 'n04U')
-    set gg_unit_nmyr_2386=BlzCreateUnitWithSkin(p, 'nmyr', 14314.1, - 28809.7, 123.492, 'nmyr')
+    set u=BlzCreateUnitWithSkin(p, 'nmyr', 14314.1, - 28809.7, 123.492, 'nmyr')
     set u=BlzCreateUnitWithSkin(p, 'ninf', - 21075.5, 21721.0, 142.354, 'ninf')
     set u=BlzCreateUnitWithSkin(p, 'nchw', - 3166.7, - 31745.9, 326.357, 'nchw')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
@@ -11213,13 +11125,9 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'ebsh', - 21009.5, - 8174.1, 149.989, 'ebsh')
     set u=BlzCreateUnitWithSkin(p, 'nmyr', 11607.3, - 29707.0, 148.111, 'nmyr')
     set u=BlzCreateUnitWithSkin(p, 'n038', - 8608.0, - 28896.0, 270.000, 'n038')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_AzjolNerubNorth_entrance), GetRectCenterY(gg_rct_AzjolNerubNorth_entrance))
-    call WaygateActivate(u, true)
     set u=BlzCreateUnitWithSkin(p, 'nmyr', 9516.1, - 27667.3, 207.670, 'nmyr')
     set u=BlzCreateUnitWithSkin(p, 'nsnp', 11713.4, - 30449.0, 120.381, 'nsnp')
     set u=BlzCreateUnitWithSkin(p, 'n038', - 5534.6, 23981.1, 269.000, 'n038')
-    call WaygateSetDestination(u, GetRectCenterX(gg_rct_AzjolNerub_North_Exit), GetRectCenterY(gg_rct_AzjolNerub_North_Exit))
-    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nsnp', 11960.4, - 30178.6, 179.061, 'nsnp')
     set u=BlzCreateUnitWithSkin(p, 'nsnp', 8897.2, - 27615.7, 250.815, 'nsnp')
@@ -11457,553 +11365,553 @@ endfunction
 function CreateRegions takes nothing returns nothing
     local weathereffect we
 
-    set gg_rct_Solliden_Farmstead=Rect(6400.0, 8992.0, 7808.0, 10592.0)
-    set gg_rct_Arathi_Ships=Rect(16256.0, 768.0, 17024.0, 1632.0)
-    set gg_rct_AzjolNerubDragonblight_Exit=Rect(- 12992.0, - 26944.0, - 12544.0, - 26720.0)
-    set gg_rct_Blasted_Lands_Weather=Rect(14944.0, - 21344.0, 18592.0, - 17984.0)
-    set gg_rct_Barren_Excavation=Rect(- 10656.0, - 15392.0, - 10592.0, - 15328.0)
-    set gg_rct_Blackrock_Entrance=Rect(12576.0, - 10784.0, 12960.0, - 10656.0)
-    set gg_rct_Book_of_Mediv_Chaos=Rect(2336.0, 18176.0, 2496.0, 18304.0)
-    set gg_rct_Borean_Tundra=Rect(- 9152.0, 13664.0, - 4768.0, 19008.0)
-    set gg_rct_Brill=Rect(8064.0, 10144.0, 9792.0, 11648.0)
-    set gg_rct_Broken_Isles=Rect(- 2848.0, 5568.0, 1920.0, 9472.0)
-    set gg_rct_CaerDarrowShipyard=Rect(8608.0, 2016.0, 18496.0, 11424.0)
-    set gg_rct_Cathedral_of_Light=Rect(8320.0, - 11872.0, 8800.0, - 11456.0)
-    set gg_rct_Central_Northrend=Rect(- 4160.0, 15104.0, 1952.0, 20320.0)
+    set gg_rct_Solliden_Farmstead=Rect(8128.0, 8992.0, 9536.0, 10592.0)
+    set gg_rct_Arathi_Ships=Rect(17984.0, 768.0, 18752.0, 1632.0)
+    set gg_rct_AzjolNerubDragonblight_Exit=Rect(- 11264.0, - 26944.0, - 10816.0, - 26720.0)
+    set gg_rct_Blasted_Lands_Weather=Rect(16672.0, - 21344.0, 20320.0, - 17984.0)
+    set gg_rct_Barren_Excavation=Rect(- 8928.0, - 15392.0, - 8864.0, - 15328.0)
+    set gg_rct_Blackrock_Entrance=Rect(14304.0, - 10784.0, 14688.0, - 10656.0)
+    set gg_rct_Book_of_Mediv_Chaos=Rect(4064.0, 18176.0, 4224.0, 18304.0)
+    set gg_rct_Borean_Tundra=Rect(- 7424.0, 13664.0, - 3040.0, 19008.0)
+    set gg_rct_Brill=Rect(9792.0, 10144.0, 11520.0, 11648.0)
+    set gg_rct_Broken_Isles=Rect(- 1120.0, 5568.0, 3648.0, 9472.0)
+    set gg_rct_CaerDarrowShipyard=Rect(10336.0, 2016.0, 20224.0, 11424.0)
+    set gg_rct_Cathedral_of_Light=Rect(10048.0, - 11872.0, 10528.0, - 11456.0)
+    set gg_rct_Central_Northrend=Rect(- 2432.0, 15104.0, 3680.0, 20320.0)
     set we=AddWeatherEffect(gg_rct_Central_Northrend, 'SNls')
     call EnableWeatherEffect(we, true)
-    set gg_rct_Chaosmod1=Rect(11904.0, - 12192.0, 14016.0, - 10528.0)
-    set gg_rct_Coldarra=Rect(- 10656.0, 16896.0, - 8704.0, 18272.0)
+    set gg_rct_Chaosmod1=Rect(13632.0, - 12192.0, 15744.0, - 10528.0)
+    set gg_rct_Coldarra=Rect(- 8928.0, 16896.0, - 6976.0, 18272.0)
     set we=AddWeatherEffect(gg_rct_Coldarra, 'SNls')
     call EnableWeatherEffect(we, true)
-    set gg_rct_Construction_Site_2=Rect(10752.0, - 12160.0, 11360.0, - 11488.0)
-    set gg_rct_Corins_Crossing=Rect(16192.0, 8896.0, 18080.0, 10944.0)
-    set gg_rct_Crossroads=Rect(- 12480.0, - 2592.0, - 11424.0, - 1568.0)
-    set gg_rct_Dalaran=Rect(8448.0, 3904.0, 10336.0, 5760.0)
-    set gg_rct_DalaranDungeon=Rect(- 14016.0, 20224.0, - 10752.0, 22848.0)
-    set gg_rct_Dalaran_Dungeons_Entrance=Rect(8544.0, 4576.0, 8928.0, 4928.0)
-    set gg_rct_Dalaran_Dungeons_Exit=Rect(- 14336.0, 20576.0, - 13888.0, 20832.0)
-    set gg_rct_DalaranExit2=Rect(9696.0, 5152.0, 9984.0, 5440.0)
-    set gg_rct_Dark_Portal_Entrance_1=Rect(16288.0, - 19008.0, 16704.0, - 18688.0)
-    set gg_rct_Dark_Portal_Exit_1=Rect(4224.0, - 25792.0, 4576.0, - 25344.0)
-    set gg_rct_Darkspear_Island=Rect(- 4384.0, - 3680.0, - 1120.0, - 352.0)
-    set gg_rct_Darrowshire=Rect(16096.0, 7168.0, 17600.0, 8480.0)
-    set gg_rct_Demongate_1=Rect(- 1248.0, - 22400.0, - 864.0, - 22016.0)
-    set gg_rct_Demongate_2=Rect(5152.0, - 29152.0, 5504.0, - 28800.0)
-    set gg_rct_DemonGate3=Rect(352.0, - 25472.0, 864.0, - 25024.0)
-    set gg_rct_Desolace_Ships=Rect(- 18720.0, - 7584.0, - 16192.0, - 3488.0)
-    set gg_rct_Dire_Maul_Entrance=Rect(- 17184.0, - 8736.0, - 16864.0, - 8576.0)
-    set gg_rct_Dire_Maul_Exit=Rect(- 18272.0, 20960.0, - 18016.0, 21088.0)
-    set gg_rct_Dun_Morogh_Excavation=Rect(10592.0, - 7328.0, 10656.0, - 7264.0)
-    set gg_rct_Dun_Morogh_Ships=Rect(7296.0, - 7872.0, 14240.0, - 4992.0)
-    set gg_rct_Dustwallow_Ships=Rect(- 12416.0, - 8736.0, - 8768.0, - 6144.0)
-    set gg_rct_East_Thandol=Rect(17120.0, 288.0, 17312.0, 448.0)
-    set gg_rct_Eastern_Northrend=Rect(- 1152.0, 20320.0, 4608.0, 21408.0)
-    set gg_rct_EssenceSpawn=Rect(- 12160.0, 6240.0, - 11968.0, 6400.0)
-    set gg_rct_Far_Eastern_Northrend=Rect(4608.0, 20064.0, 7328.0, 22944.0)
+    set gg_rct_Construction_Site_2=Rect(12480.0, - 12160.0, 13088.0, - 11488.0)
+    set gg_rct_Corins_Crossing=Rect(17920.0, 8896.0, 19808.0, 10944.0)
+    set gg_rct_Crossroads=Rect(- 10752.0, - 2592.0, - 9696.0, - 1568.0)
+    set gg_rct_Dalaran=Rect(10176.0, 3904.0, 12064.0, 5760.0)
+    set gg_rct_DalaranDungeon=Rect(- 12288.0, 20224.0, - 9024.0, 22848.0)
+    set gg_rct_Dalaran_Dungeons_Entrance=Rect(10272.0, 4576.0, 10656.0, 4928.0)
+    set gg_rct_Dalaran_Dungeons_Exit=Rect(- 12608.0, 20576.0, - 12160.0, 20832.0)
+    set gg_rct_DalaranExit2=Rect(11424.0, 5152.0, 11712.0, 5440.0)
+    set gg_rct_Dark_Portal_Entrance_1=Rect(18016.0, - 19008.0, 18432.0, - 18688.0)
+    set gg_rct_Dark_Portal_Exit_1=Rect(5952.0, - 25792.0, 6304.0, - 25344.0)
+    set gg_rct_Darkspear_Island=Rect(- 2656.0, - 3680.0, 608.0, - 352.0)
+    set gg_rct_Darrowshire=Rect(17824.0, 7168.0, 19328.0, 8480.0)
+    set gg_rct_Demongate_1=Rect(480.0, - 22400.0, 864.0, - 22016.0)
+    set gg_rct_Demongate_2=Rect(6880.0, - 29152.0, 7232.0, - 28800.0)
+    set gg_rct_DemonGate3=Rect(2080.0, - 25472.0, 2592.0, - 25024.0)
+    set gg_rct_Desolace_Ships=Rect(- 16992.0, - 7584.0, - 14464.0, - 3488.0)
+    set gg_rct_Dire_Maul_Entrance=Rect(- 15456.0, - 8736.0, - 15136.0, - 8576.0)
+    set gg_rct_Dire_Maul_Exit=Rect(- 16544.0, 20960.0, - 16288.0, 21088.0)
+    set gg_rct_Dun_Morogh_Excavation=Rect(12320.0, - 7328.0, 12384.0, - 7264.0)
+    set gg_rct_Dun_Morogh_Ships=Rect(9024.0, - 7872.0, 15968.0, - 4992.0)
+    set gg_rct_Dustwallow_Ships=Rect(- 10688.0, - 8736.0, - 7040.0, - 6144.0)
+    set gg_rct_East_Thandol=Rect(18848.0, 288.0, 19040.0, 448.0)
+    set gg_rct_Eastern_Northrend=Rect(576.0, 20320.0, 6336.0, 21408.0)
+    set gg_rct_EssenceSpawn=Rect(- 10432.0, 6240.0, - 10240.0, 6400.0)
+    set gg_rct_Far_Eastern_Northrend=Rect(6336.0, 20064.0, 9056.0, 22944.0)
     set we=AddWeatherEffect(gg_rct_Far_Eastern_Northrend, 'SNhs')
     call EnableWeatherEffect(we, true)
-    set gg_rct_Felwood_Vision=Rect(- 16224.0, 5888.0, - 14560.0, 7776.0)
-    set gg_rct_Fenris_ships=Rect(5760.0, 4960.0, 13024.0, 8128.0)
-    set gg_rct_Fjord=Rect(1568.0, 13408.0, 8192.0, 20096.0)
-    set gg_rct_Gilneas=Rect(4096.0, - 2624.0, 9440.0, 2336.0)
-    set gg_rct_Gilneas_Canals=Rect(5888.0, - 1344.0, 8640.0, 2624.0)
-    set gg_rct_Gnomergan=Rect(7296.0, - 6528.0, 8672.0, - 4960.0)
-    set gg_rct_Greymane=Rect(7072.0, 352.0, 7328.0, 544.0)
-    set gg_rct_Grim_Batol=Rect(16000.0, - 4192.0, 17952.0, - 2048.0)
-    set gg_rct_Grim_Batol_Tunnel_Entrance=Rect(16480.0, - 2944.0, 16672.0, - 2784.0)
-    set gg_rct_Grim_Batol_Tunnel_Top=Rect(16608.0, - 2496.0, 16832.0, - 2400.0)
-    set gg_rct_Havenshire=Rect(20128.0, 7040.0, 22112.0, 9472.0)
-    set gg_rct_Hearthglen=Rect(10624.0, 10176.0, 13312.0, 11744.0)
-    set gg_rct_HeroOrItemWaitRect=Rect(20640.0, 24256.0, 21184.0, 24512.0)
-    set gg_rct_HonorHold=Rect(2208.0, - 27360.0, 3936.0, - 26016.0)
-    set gg_rct_Howling_Fjord=Rect(5408.0, 15328.0, 5472.0, 15392.0)
-    set gg_rct_Ice_Crown=Rect(- 4384.0, 19616.0, - 2272.0, 24736.0)
+    set gg_rct_Felwood_Vision=Rect(- 14496.0, 5888.0, - 12832.0, 7776.0)
+    set gg_rct_Fenris_ships=Rect(7488.0, 4960.0, 14752.0, 8128.0)
+    set gg_rct_Fjord=Rect(3296.0, 13408.0, 9920.0, 20096.0)
+    set gg_rct_Gilneas=Rect(5824.0, - 2624.0, 11168.0, 2336.0)
+    set gg_rct_Gilneas_Canals=Rect(7616.0, - 1344.0, 10368.0, 2624.0)
+    set gg_rct_Gnomergan=Rect(9024.0, - 6528.0, 10400.0, - 4960.0)
+    set gg_rct_Greymane=Rect(8800.0, 352.0, 9056.0, 544.0)
+    set gg_rct_Grim_Batol=Rect(17728.0, - 4192.0, 19680.0, - 2048.0)
+    set gg_rct_Grim_Batol_Tunnel_Entrance=Rect(18208.0, - 2944.0, 18400.0, - 2784.0)
+    set gg_rct_Grim_Batol_Tunnel_Top=Rect(18336.0, - 2496.0, 18560.0, - 2400.0)
+    set gg_rct_Havenshire=Rect(21856.0, 7040.0, 23840.0, 9472.0)
+    set gg_rct_Hearthglen=Rect(12352.0, 10176.0, 15040.0, 11744.0)
+    set gg_rct_HeroOrItemWaitRect=Rect(22368.0, 24256.0, 22912.0, 24512.0)
+    set gg_rct_HonorHold=Rect(3936.0, - 27360.0, 5664.0, - 26016.0)
+    set gg_rct_Howling_Fjord=Rect(7136.0, 15328.0, 7200.0, 15392.0)
+    set gg_rct_Ice_Crown=Rect(- 2656.0, 19616.0, - 544.0, 24736.0)
     set we=AddWeatherEffect(gg_rct_Ice_Crown, 'SNls')
     call EnableWeatherEffect(we, true)
-    set gg_rct_IcecrownShipyard=Rect(- 6976.0, 22304.0, - 1248.0, 24992.0)
+    set gg_rct_IcecrownShipyard=Rect(- 5248.0, 22304.0, 480.0, 24992.0)
     set we=AddWeatherEffect(gg_rct_IcecrownShipyard, 'SNls')
     call EnableWeatherEffect(we, true)
-    set gg_rct_IllidanSpawn=Rect(- 12960.0, 6080.0, - 12896.0, 6144.0)
-    set gg_rct_Ironforge=Rect(9792.0, - 5728.0, 10016.0, - 5536.0)
-    set gg_rct_Jaina_soul_gem=Rect(- 21184.0, 17440.0, - 19168.0, 19808.0)
-    set gg_rct_Kali_Ships=Rect(- 17600.0, - 15296.0, - 10816.0, 5600.0)
-    set gg_rct_Kultiras=Rect(2208.0, - 6592.0, 5024.0, - 2624.0)
-    set gg_rct_LichKing=Rect(- 3520.0, 20224.0, - 3136.0, 20704.0)
-    set gg_rct_Loch_Modan_Ships=Rect(14720.0, - 7552.0, 17952.0, - 1536.0)
-    set gg_rct_Lordaeron_East=Rect(12896.0, 7456.0, 18240.0, 13984.0)
-    set gg_rct_Lordaeron_West=Rect(3584.0, 7200.0, 13792.0, 13024.0)
-    set gg_rct_Moonglade=Rect(- 12992.0, 10176.0, - 12416.0, 10656.0)
-    set gg_rct_Murloc_Attack=Rect(- 3456.0, - 2368.0, - 3296.0, - 2176.0)
-    set gg_rct_Murloc_Spawn_1=Rect(- 3680.0, - 3584.0, - 3136.0, - 3296.0)
-    set gg_rct_Murloc_Spawn_2=Rect(- 4608.0, - 3040.0, - 4416.0, - 2592.0)
-    set gg_rct_InstanceNazjatar=Rect(7872.0, - 31584.0, 15552.0, - 26624.0)
-    set gg_rct_Nether_Exit=Rect(- 21504.0, 20736.0, - 19616.0, 21504.0)
-    set gg_rct_Northern_Kali_Ships=Rect(- 17344.0, - 1376.0, - 8704.0, 8800.0)
-    set gg_rct_Northrend_ships=Rect(- 9216.0, 19680.0, 6048.0, 24992.0)
-    set gg_rct_OrgGate=Rect(- 9280.0, - 1344.0, - 9088.0, - 1248.0)
-    set gg_rct_Orgrimmar=Rect(- 9824.0, - 2080.0, - 6976.0, 1248.0)
-    set gg_rct_Outland_Ships=Rect(- 6432.0, - 32224.0, 6688.0, - 18176.0)
-    set gg_rct_Plague_1=Rect(6368.0, 6848.0, 7840.0, 10816.0)
-    set gg_rct_Plague_2=Rect(11392.0, 8736.0, 13952.0, 9888.0)
-    set gg_rct_Plague_3=Rect(15968.0, 7744.0, 18656.0, 8960.0)
-    set gg_rct_Plague_4=Rect(15328.0, 8896.0, 18496.0, 10944.0)
-    set gg_rct_Plague_5=Rect(7136.0, 10272.0, 9280.0, 11840.0)
-    set gg_rct_Plague_6=Rect(6560.0, 3104.0, 7872.0, 5568.0)
-    set gg_rct_Plague_7=Rect(9216.0, 2048.0, 12736.0, 3424.0)
-    set gg_rct_Quel_Ships_1=Rect(16384.0, 16608.0, 20096.0, 17568.0)
-    set gg_rct_Quel_Ships_2=Rect(17216.0, 13984.0, 20512.0, 17568.0)
-    set gg_rct_Quel_Ships_3=Rect(16288.0, 11744.0, 21920.0, 15584.0)
-    set gg_rct_Quelthalas=Rect(15136.0, 13536.0, 21408.0, 23168.0)
-    set gg_rct_Sargeras_Entrance=Rect(- 1024.0, 8096.0, - 448.0, 8576.0)
-    set gg_rct_Sargeras_Exit=Rect(- 10336.0, - 25376.0, - 10016.0, - 25056.0)
-    set gg_rct_ScarletMonastery=Rect(11072.0, 11168.0, 11520.0, 11840.0)
-    set gg_rct_Scholomance_Entrance=Rect(14560.0, 7552.0, 14912.0, 7872.0)
-    set gg_rct_Scholomance_Exit=Rect(- 21120.0, 17440.0, - 20736.0, 17792.0)
-    set gg_rct_Shadowforge_City=Rect(16704.0, - 31744.0, 18272.0, - 30560.0)
-    set gg_rct_Shadowmoon_Excavation=Rect(2528.0, - 31072.0, 2592.0, - 31008.0)
-    set gg_rct_Siphon_Cast_Zone=Rect(- 11744.0, 7424.0, - 11488.0, 7648.0)
-    set gg_rct_South_EK_Ships=Rect(7872.0, - 18240.0, 18880.0, - 12288.0)
-    set gg_rct_StonemaulKeep=Rect(- 12192.0, - 10112.0, - 9408.0, - 7904.0)
-    set gg_rct_Storm_Peaks=Rect(- 1088.0, 21088.0, 4640.0, 25088.0)
+    set gg_rct_IllidanSpawn=Rect(- 11232.0, 6080.0, - 11168.0, 6144.0)
+    set gg_rct_Ironforge=Rect(11520.0, - 5728.0, 11744.0, - 5536.0)
+    set gg_rct_Jaina_soul_gem=Rect(- 19456.0, 17440.0, - 17440.0, 19808.0)
+    set gg_rct_Kali_Ships=Rect(- 15872.0, - 15296.0, - 9088.0, 5600.0)
+    set gg_rct_Kultiras=Rect(3936.0, - 6592.0, 6752.0, - 2624.0)
+    set gg_rct_LichKing=Rect(- 1792.0, 20224.0, - 1408.0, 20704.0)
+    set gg_rct_Loch_Modan_Ships=Rect(16448.0, - 7552.0, 19680.0, - 1536.0)
+    set gg_rct_Lordaeron_East=Rect(14624.0, 7456.0, 19968.0, 13984.0)
+    set gg_rct_Lordaeron_West=Rect(5312.0, 7200.0, 15520.0, 13024.0)
+    set gg_rct_Moonglade=Rect(- 11264.0, 10176.0, - 10688.0, 10656.0)
+    set gg_rct_Murloc_Attack=Rect(- 1728.0, - 2368.0, - 1568.0, - 2176.0)
+    set gg_rct_Murloc_Spawn_1=Rect(- 1952.0, - 3584.0, - 1408.0, - 3296.0)
+    set gg_rct_Murloc_Spawn_2=Rect(- 2880.0, - 3040.0, - 2688.0, - 2592.0)
+    set gg_rct_InstanceNazjatar=Rect(9600.0, - 31584.0, 17280.0, - 26624.0)
+    set gg_rct_Nether_Exit=Rect(- 19776.0, 20736.0, - 17888.0, 21504.0)
+    set gg_rct_Northern_Kali_Ships=Rect(- 15616.0, - 1376.0, - 6976.0, 8800.0)
+    set gg_rct_Northrend_ships=Rect(- 7488.0, 19680.0, 7776.0, 24992.0)
+    set gg_rct_OrgGate=Rect(- 7552.0, - 1344.0, - 7360.0, - 1248.0)
+    set gg_rct_Orgrimmar=Rect(- 8096.0, - 2080.0, - 5248.0, 1248.0)
+    set gg_rct_Outland_Ships=Rect(- 4704.0, - 32224.0, 8416.0, - 18176.0)
+    set gg_rct_Plague_1=Rect(8096.0, 6848.0, 9568.0, 10816.0)
+    set gg_rct_Plague_2=Rect(13120.0, 8736.0, 15680.0, 9888.0)
+    set gg_rct_Plague_3=Rect(17696.0, 7744.0, 20384.0, 8960.0)
+    set gg_rct_Plague_4=Rect(17056.0, 8896.0, 20224.0, 10944.0)
+    set gg_rct_Plague_5=Rect(8864.0, 10272.0, 11008.0, 11840.0)
+    set gg_rct_Plague_6=Rect(8288.0, 3104.0, 9600.0, 5568.0)
+    set gg_rct_Plague_7=Rect(10944.0, 2048.0, 14464.0, 3424.0)
+    set gg_rct_Quel_Ships_1=Rect(18112.0, 16608.0, 21824.0, 17568.0)
+    set gg_rct_Quel_Ships_2=Rect(18944.0, 13984.0, 22240.0, 17568.0)
+    set gg_rct_Quel_Ships_3=Rect(18016.0, 11744.0, 23648.0, 15584.0)
+    set gg_rct_Quelthalas=Rect(16864.0, 13536.0, 23136.0, 23168.0)
+    set gg_rct_Sargeras_Entrance=Rect(704.0, 8096.0, 1280.0, 8576.0)
+    set gg_rct_Sargeras_Exit=Rect(- 8608.0, - 25376.0, - 8288.0, - 25056.0)
+    set gg_rct_ScarletMonastery=Rect(12800.0, 11168.0, 13248.0, 11840.0)
+    set gg_rct_Scholomance_Entrance=Rect(16288.0, 7552.0, 16640.0, 7872.0)
+    set gg_rct_Scholomance_Exit=Rect(- 19392.0, 17440.0, - 19008.0, 17792.0)
+    set gg_rct_Shadowforge_City=Rect(18432.0, - 31744.0, 20000.0, - 30560.0)
+    set gg_rct_Shadowmoon_Excavation=Rect(4256.0, - 31072.0, 4320.0, - 31008.0)
+    set gg_rct_Siphon_Cast_Zone=Rect(- 10016.0, 7424.0, - 9760.0, 7648.0)
+    set gg_rct_South_EK_Ships=Rect(9600.0, - 18240.0, 20608.0, - 12288.0)
+    set gg_rct_StonemaulKeep=Rect(- 10464.0, - 10112.0, - 7680.0, - 7904.0)
+    set gg_rct_Storm_Peaks=Rect(640.0, 21088.0, 6368.0, 25088.0)
     set we=AddWeatherEffect(gg_rct_Storm_Peaks, 'SNhs')
     call EnableWeatherEffect(we, true)
-    set gg_rct_Stormwind=Rect(10880.0, - 10176.0, 11040.0, - 10016.0)
-    set gg_rct_Stratholme_Platform_entrance=Rect(14560.0, 12320.0, 14592.0, 12384.0)
-    set gg_rct_Stratholme_platform_exit=Rect(14720.0, 12320.0, 14784.0, 12416.0)
-    set gg_rct_StratholmeShipyard=Rect(13696.0, 7232.0, 20128.0, 11712.0)
-    set gg_rct_Stromgarde=Rect(12896.0, 448.0, 15264.0, 2048.0)
-    set gg_rct_Stromwind_antiship=Rect(7968.0, - 12768.0, 11680.0, - 9216.0)
-    set gg_rct_STV_Ships=Rect(10112.0, - 20032.0, 14048.0, - 17600.0)
-    set gg_rct_Terenas=Rect(8096.0, 7648.0, 10048.0, 9536.0)
-    set gg_rct_The_Basin=Rect(- 8288.0, 16256.0, - 4096.0, 22336.0)
-    set gg_rct_Thrall_2=Rect(- 2912.0, - 2880.0, - 2496.0, - 2528.0)
-    set gg_rct_Thrall_3=Rect(- 2656.0, - 1888.0, - 2048.0, - 1504.0)
-    set gg_rct_Thrall_4=Rect(- 2464.0, - 1568.0, - 2336.0, - 1376.0)
-    set gg_rct_Thrall_5=Rect(- 2272.0, - 1568.0, - 2144.0, - 1344.0)
-    set gg_rct_Thrall_6=Rect(- 2656.0, - 1856.0, - 1920.0, - 960.0)
-    set gg_rct_Thrall_Landing1=Rect(- 4096.0, - 3328.0, - 3264.0, - 2656.0)
-    set gg_rct_Thrall_Ship_1=Rect(- 1184.0, - 1824.0, - 1088.0, - 1728.0)
-    set gg_rct_Thrall_Ship_2=Rect(- 1184.0, - 2336.0, - 1088.0, - 2240.0)
-    set gg_rct_Tomb_Of_Sargeras_Ships=Rect(- 10752.0, - 25760.0, - 8032.0, - 22816.0)
-    set gg_rct_TwistingNether=Rect(- 21504.0, 20736.0, - 19552.0, 23744.0)
-    set gg_rct_Vandermar_Village=Rect(6592.0, 6656.0, 7840.0, 8864.0)
-    set gg_rct_WarsongCamp=Rect(- 11072.0, 832.0, - 9632.0, 2688.0)
-    set gg_rct_West_Thandol=Rect(14880.0, 192.0, 15072.0, 416.0)
-    set gg_rct_Winterpspring_Excavation=Rect(- 9952.0, 9632.0, - 9888.0, 9696.0)
-    set gg_rct_ZF_Spawn_1=Rect(- 11968.0, - 12928.0, - 11616.0, - 12768.0)
-    set gg_rct_ZF_Spawn_2=Rect(- 11456.0, - 12800.0, - 11200.0, - 12544.0)
-    set gg_rct_Zulfarrak=Rect(- 12352.0, - 14272.0, - 10592.0, - 12064.0)
-    set gg_rct_East_of_Azeroth=Rect(21664.0, - 8544.0, 22112.0, - 8032.0)
-    set gg_rct_West_of_Kalimdor=Rect(- 20864.0, 4576.0, - 20256.0, 5216.0)
-    set gg_rct_Silvermon_Palace_trolls=Rect(20416.0, 18880.0, 20640.0, 19168.0)
-    set gg_rct_BloodpactFountain=Rect(- 11552.0, 3072.0, - 11200.0, 3328.0)
-    set gg_rct_FTSummon=Rect(- 3392.0, 20384.0, - 3232.0, 20512.0)
-    set gg_rct_Book_Retrieval=Rect(- 12000.0, 23616.0, - 11616.0, 24064.0)
-    set gg_rct_King_Arthas_crown=Rect(8896.0, 8320.0, 9280.0, 8512.0)
-    set gg_rct_Drekthars_Spellbook=Rect(- 12256.0, 6368.0, - 10880.0, 7712.0)
-    set gg_rct_Masteries=Rect(21536.0, 23968.0, 22432.0, 24640.0)
-    set gg_rct_Cthun_prevent_1=Rect(19968.0, 23296.0, 22560.0, 24736.0)
-    set gg_rct_AhnQiraj=Rect(- 19808.0, - 18880.0, - 15776.0, - 15072.0)
-    set gg_rct_Cthun_position=Rect(- 17504.0, - 18240.0, - 17472.0, - 18208.0)
-    set gg_rct_Sunwell_region=Rect(15456.0, 18816.0, 20768.0, 23168.0)
-    set gg_rct_RiseSpawn2=Rect(12704.0, 17376.0, 14080.0, 18816.0)
-    set gg_rct_AzjolNerub_South_Entrance=Rect(- 3456.0, 17696.0, - 3136.0, 17856.0)
-    set gg_rct_AzjolNerub_North_Exit=Rect(- 8832.0, - 28992.0, - 8352.0, - 28864.0)
-    set gg_rct_Auberdine_Ships_2=Rect(- 16640.0, 7424.0, - 9504.0, 11072.0)
-    set gg_rct_Auberdine_Ships=Rect(- 18272.0, 2848.0, - 15936.0, 5312.0)
-    set gg_rct_AzjolNerubNorth_entrance=Rect(- 5760.0, 23808.0, - 5312.0, 24000.0)
-    set gg_rct_Auberdine_Ships_2=Rect(- 16640.0, 7424.0, - 9504.0, 11072.0)
-    set gg_rct_Auberdine_Ships=Rect(- 18272.0, 2848.0, - 15936.0, 5312.0)
-    set gg_rct_Arathi_Ships=Rect(16256.0, 768.0, 17024.0, 1632.0)
-    set gg_rct_Alterac_Exca=Rect(11104.0, 5856.0, 11168.0, 5920.0)
-    set gg_rct_Arathi_Ships=Rect(16256.0, 768.0, 17024.0, 1632.0)
-    set gg_rct_Andorhal=Rect(11136.0, 7104.0, 13696.0, 8512.0)
-    set gg_rct_Aerie_Peak=Rect(13600.0, 4096.0, 14752.0, 5184.0)
-    set gg_rct_Arathi_Ships=Rect(16256.0, 768.0, 17024.0, 1632.0)
-    set gg_rct_TempestKeep=Rect(1440.0, - 23040.0, 5024.0, - 17952.0)
-    set gg_rct_Sunwell=Rect(18144.0, 21248.0, 18976.0, 22048.0)
-    set gg_rct_InstanceBarrowDeeps=Rect(15712.0, - 32128.0, 15840.0, - 31904.0)
-    set gg_rct_InstanceDireMaul=Rect(- 18784.0, 20800.0, - 16352.0, 24544.0)
-    set gg_rct_InstanceScholomance=Rect(- 21216.0, 17344.0, - 19136.0, 19808.0)
-    set gg_rct_InstanceSargerasTomb=Rect(- 10752.0, - 25760.0, - 8032.0, - 22816.0)
-    set gg_rct_InstanceAzjolNerub=Rect(- 14496.0, - 31200.0, - 7872.0, - 26560.0)
-    set gg_rct_InstanceOutland=Rect(- 6432.0, - 32224.0, 6688.0, - 18176.0)
-    set gg_rct_DalaranEntrance2=Rect(- 11968.0, 22880.0, - 11616.0, 23104.0)
-    set gg_rct_InstanceDalaranDungeon1=Rect(- 14016.0, 20224.0, - 10944.0, 24096.0)
-    set gg_rct_InstanceDalaranDungeon2=Rect(- 14176.0, 20192.0, - 13792.0, 22176.0)
-    set gg_rct_InstanceDalaranDungeon3=Rect(- 14432.0, 20544.0, - 14112.0, 20928.0)
-    set gg_rct_Tempest_Keep_Evacuate=Rect(- 3200.0, - 21888.0, - 2336.0, - 21024.0)
-    set gg_rct_Gazlower=Rect(- 8032.0, - 4672.0, - 7968.0, - 4576.0)
-    set gg_rct_Varok=Rect(- 8064.0, 96.0, - 7968.0, 224.0)
-    set gg_rct_Region_077=Rect(4640.0, 16832.0, 7200.0, 17504.0)
+    set gg_rct_Stormwind=Rect(12608.0, - 10176.0, 12768.0, - 10016.0)
+    set gg_rct_Stratholme_Platform_entrance=Rect(16288.0, 12320.0, 16320.0, 12384.0)
+    set gg_rct_Stratholme_platform_exit=Rect(16448.0, 12320.0, 16512.0, 12416.0)
+    set gg_rct_StratholmeShipyard=Rect(15424.0, 7232.0, 21856.0, 11712.0)
+    set gg_rct_Stromgarde=Rect(14624.0, 448.0, 16992.0, 2048.0)
+    set gg_rct_Stromwind_antiship=Rect(9696.0, - 12768.0, 13408.0, - 9216.0)
+    set gg_rct_STV_Ships=Rect(11840.0, - 20032.0, 15776.0, - 17600.0)
+    set gg_rct_Terenas=Rect(9824.0, 7648.0, 11776.0, 9536.0)
+    set gg_rct_The_Basin=Rect(- 6560.0, 16256.0, - 2368.0, 22336.0)
+    set gg_rct_Thrall_2=Rect(- 1184.0, - 2880.0, - 768.0, - 2528.0)
+    set gg_rct_Thrall_3=Rect(- 928.0, - 1888.0, - 320.0, - 1504.0)
+    set gg_rct_Thrall_4=Rect(- 736.0, - 1568.0, - 608.0, - 1376.0)
+    set gg_rct_Thrall_5=Rect(- 544.0, - 1568.0, - 416.0, - 1344.0)
+    set gg_rct_Thrall_6=Rect(- 928.0, - 1856.0, - 192.0, - 960.0)
+    set gg_rct_Thrall_Landing1=Rect(- 2368.0, - 3328.0, - 1536.0, - 2656.0)
+    set gg_rct_Thrall_Ship_1=Rect(544.0, - 1824.0, 640.0, - 1728.0)
+    set gg_rct_Thrall_Ship_2=Rect(544.0, - 2336.0, 640.0, - 2240.0)
+    set gg_rct_Tomb_Of_Sargeras_Ships=Rect(- 9024.0, - 25760.0, - 6304.0, - 22816.0)
+    set gg_rct_TwistingNether=Rect(- 19776.0, 20736.0, - 17824.0, 23744.0)
+    set gg_rct_Vandermar_Village=Rect(8320.0, 6656.0, 9568.0, 8864.0)
+    set gg_rct_WarsongCamp=Rect(- 9344.0, 832.0, - 7904.0, 2688.0)
+    set gg_rct_West_Thandol=Rect(16608.0, 192.0, 16800.0, 416.0)
+    set gg_rct_Winterpspring_Excavation=Rect(- 8224.0, 9632.0, - 8160.0, 9696.0)
+    set gg_rct_ZF_Spawn_1=Rect(- 10240.0, - 12928.0, - 9888.0, - 12768.0)
+    set gg_rct_ZF_Spawn_2=Rect(- 9728.0, - 12800.0, - 9472.0, - 12544.0)
+    set gg_rct_Zulfarrak=Rect(- 10624.0, - 14272.0, - 8864.0, - 12064.0)
+    set gg_rct_East_of_Azeroth=Rect(23392.0, - 8544.0, 23840.0, - 8032.0)
+    set gg_rct_West_of_Kalimdor=Rect(- 19136.0, 4576.0, - 18528.0, 5216.0)
+    set gg_rct_Silvermon_Palace_trolls=Rect(22144.0, 18880.0, 22368.0, 19168.0)
+    set gg_rct_BloodpactFountain=Rect(- 9824.0, 3072.0, - 9472.0, 3328.0)
+    set gg_rct_FTSummon=Rect(- 1664.0, 20384.0, - 1504.0, 20512.0)
+    set gg_rct_Book_Retrieval=Rect(- 10272.0, 23616.0, - 9888.0, 24064.0)
+    set gg_rct_King_Arthas_crown=Rect(10624.0, 8320.0, 11008.0, 8512.0)
+    set gg_rct_Drekthars_Spellbook=Rect(- 10528.0, 6368.0, - 9152.0, 7712.0)
+    set gg_rct_Masteries=Rect(23264.0, 23968.0, 24160.0, 24640.0)
+    set gg_rct_Cthun_prevent_1=Rect(21696.0, 23296.0, 24288.0, 24736.0)
+    set gg_rct_AhnQiraj=Rect(- 18080.0, - 18880.0, - 14048.0, - 15072.0)
+    set gg_rct_Cthun_position=Rect(- 15776.0, - 18240.0, - 15744.0, - 18208.0)
+    set gg_rct_Sunwell_region=Rect(17184.0, 18816.0, 22496.0, 23168.0)
+    set gg_rct_RiseSpawn2=Rect(14432.0, 17376.0, 15808.0, 18816.0)
+    set gg_rct_AzjolNerub_South_Entrance=Rect(- 1728.0, 17696.0, - 1408.0, 17856.0)
+    set gg_rct_AzjolNerub_North_Exit=Rect(- 7104.0, - 28992.0, - 6624.0, - 28864.0)
+    set gg_rct_Auberdine_Ships_2=Rect(- 14912.0, 7424.0, - 7776.0, 11072.0)
+    set gg_rct_Auberdine_Ships=Rect(- 16544.0, 2848.0, - 14208.0, 5312.0)
+    set gg_rct_AzjolNerubNorth_entrance=Rect(- 4032.0, 23808.0, - 3584.0, 24000.0)
+    set gg_rct_Auberdine_Ships_2_Copy=Rect(- 14912.0, 7424.0, - 7776.0, 11072.0)
+    set gg_rct_Auberdine_Ships_Copy=Rect(- 16544.0, 2848.0, - 14208.0, 5312.0)
+    set gg_rct_Arathi_Ships_Copy=Rect(17984.0, 768.0, 18752.0, 1632.0)
+    set gg_rct_Alterac_Exca=Rect(12832.0, 5856.0, 12896.0, 5920.0)
+    set gg_rct_Arathi_Ships_Copy_2=Rect(17984.0, 768.0, 18752.0, 1632.0)
+    set gg_rct_Andorhal=Rect(12864.0, 7104.0, 15424.0, 8512.0)
+    set gg_rct_Aerie_Peak=Rect(15328.0, 4096.0, 16480.0, 5184.0)
+    set gg_rct_Arathi_Ships_Copy_3=Rect(17984.0, 768.0, 18752.0, 1632.0)
+    set gg_rct_TempestKeep=Rect(3168.0, - 23040.0, 6752.0, - 17952.0)
+    set gg_rct_Sunwell=Rect(19872.0, 21248.0, 20704.0, 22048.0)
+    set gg_rct_InstanceBarrowDeeps=Rect(17440.0, - 32128.0, 17568.0, - 31904.0)
+    set gg_rct_InstanceDireMaul=Rect(- 17056.0, 20800.0, - 14624.0, 24544.0)
+    set gg_rct_InstanceScholomance=Rect(- 19488.0, 17344.0, - 17408.0, 19808.0)
+    set gg_rct_InstanceSargerasTomb=Rect(- 9024.0, - 25760.0, - 6304.0, - 22816.0)
+    set gg_rct_InstanceAzjolNerub=Rect(- 12768.0, - 31200.0, - 6144.0, - 26560.0)
+    set gg_rct_InstanceOutland=Rect(- 4704.0, - 32224.0, 8416.0, - 18176.0)
+    set gg_rct_DalaranEntrance2=Rect(- 10240.0, 22880.0, - 9888.0, 23104.0)
+    set gg_rct_InstanceDalaranDungeon1=Rect(- 12288.0, 20224.0, - 9216.0, 24096.0)
+    set gg_rct_InstanceDalaranDungeon2=Rect(- 12448.0, 20192.0, - 12064.0, 22176.0)
+    set gg_rct_InstanceDalaranDungeon3=Rect(- 12704.0, 20544.0, - 12384.0, 20928.0)
+    set gg_rct_Tempest_Keep_Evacuate=Rect(- 1472.0, - 21888.0, - 608.0, - 21024.0)
+    set gg_rct_Gazlower=Rect(- 6304.0, - 4672.0, - 6240.0, - 4576.0)
+    set gg_rct_Varok=Rect(- 6336.0, 96.0, - 6240.0, 224.0)
+    set gg_rct_Region_077=Rect(6368.0, 16832.0, 8928.0, 17504.0)
     set we=AddWeatherEffect(gg_rct_Region_077, 'SNls')
     call EnableWeatherEffect(we, true)
-    set gg_rct_NyHighland=Rect(19200.0, - 512.0, 19520.0, - 160.0)
-    set gg_rct_Mannoroth=Rect(- 10592.0, - 9472.0, - 10176.0, - 9024.0)
-    set gg_rct_Jergosh=Rect(- 11360.0, - 9024.0, - 11200.0, - 8864.0)
-    set gg_rct_Dark_Portal_Exit_2=Rect(4032.0, - 25088.0, 4416.0, - 24704.0)
-    set gg_rct_Dark_Portal_Exit_3=Rect(4864.0, - 26304.0, 5248.0, - 25920.0)
-    set gg_rct_Dark_Portal_Entrance_2=Rect(17600.0, - 19232.0, 18016.0, - 18912.0)
-    set gg_rct_Dark_Portal_Entrance_3=Rect(15232.0, - 19392.0, 15648.0, - 19072.0)
-    set gg_rct_Chen=Rect(- 9536.0, - 2848.0, - 9088.0, - 2176.0)
-    set gg_rct_QuelDanil_Lodge=Rect(15360.0, 4352.0, 16160.0, 5152.0)
-    set gg_rct_HighBourne=Rect(- 17536.0, 22272.0, - 16448.0, 23584.0)
-    set gg_rct_Andrassil=Rect(4992.0, 18400.0, 5440.0, 18816.0)
-    set gg_rct_EvilIllidanSpawn=Rect(2816.0, - 20480.0, 3072.0, - 20224.0)
-    set gg_rct_VaultoftheWardens=Rect(- 1152.0, 6784.0, - 832.0, 7104.0)
-    set gg_rct_Theramore=Rect(- 8480.0, - 10304.0, - 6016.0, - 7776.0)
-    set gg_rct_Terrordale=Rect(14656.0, 10336.0, 15968.0, 10880.0)
-    set gg_rct_Dreadscar_1=Rect(18080.0, 12256.0, 18784.0, 14688.0)
-    set gg_rct_Deemspring=Rect(17408.0, 18016.0, 17536.0, 18144.0)
-    set gg_rct_Dreadscar_3=Rect(18304.0, 19424.0, 18816.0, 21408.0)
-    set gg_rct_Scholo_Ships=Rect(- 21344.0, 17280.0, - 18976.0, 20032.0)
-    set gg_rct_DalaCutscene1=Rect(9600.0, 3488.0, 9664.0, 3552.0)
-    set gg_rct_Dreadscar_2=Rect(17856.0, 15392.0, 19008.0, 17376.0)
-    set gg_rct_DalaCutscene2=Rect(9664.0, 3232.0, 9728.0, 3296.0)
-    set gg_rct_DalaCutscene3=Rect(9760.0, 3328.0, 9824.0, 3392.0)
-    set gg_rct_DalaCutscene4=Rect(9504.0, 3072.0, 9568.0, 3136.0)
-    set gg_rct_DalaCutscene4_Copy=Rect(9376.0, 3072.0, 9440.0, 3136.0)
-    set gg_rct_DalaCutscene4_Copy_2=Rect(9472.0, 2976.0, 9536.0, 3040.0)
-    set gg_rct_Lord1=Rect(12064.0, 8672.0, 12128.0, 8736.0)
-    set gg_rct_Lord2=Rect(11328.0, 6016.0, 11456.0, 6144.0)
-    set gg_rct_Lord3=Rect(12608.0, 8608.0, 12672.0, 8672.0)
-    set gg_rct_Lord4=Rect(12224.0, 8480.0, 12288.0, 8544.0)
-    set gg_rct_Lord5=Rect(12064.0, 8480.0, 12128.0, 8544.0)
-    set gg_rct_Lord6=Rect(12672.0, 8128.0, 12736.0, 8192.0)
-    set gg_rct_Dwarf1=Rect(12352.0, - 3232.0, 12416.0, - 3168.0)
-    set gg_rct_Dwarf2=Rect(12416.0, - 3360.0, 12480.0, - 3296.0)
-    set gg_rct_Dwarf3=Rect(12288.0, - 3328.0, 12352.0, - 3264.0)
-    set gg_rct_Dwarf4=Rect(12608.0, - 3136.0, 12672.0, - 3072.0)
-    set gg_rct_Legion1=Rect(- 20032.0, 21664.0, - 19968.0, 21728.0)
-    set gg_rct_Legion00=Rect(2112.0, 20256.0, 2176.0, 20320.0)
-    set gg_rct_Legion2=Rect(- 19744.0, 21856.0, - 19680.0, 21920.0)
-    set gg_rct_Legion3=Rect(11104.0, 5664.0, 11168.0, 5728.0)
-    set gg_rct_Frostwolf1=Rect(- 1920.0, - 2080.0, - 1856.0, - 2016.0)
-    set gg_rct_Warsong1=Rect(- 10816.0, - 5024.0, - 10752.0, - 4960.0)
-    set gg_rct_Sent1=Rect(- 13888.0, 6720.0, - 13824.0, 6784.0)
-    set gg_rct_Sent2=Rect(- 16896.0, 10432.0, - 16832.0, 10496.0)
-    set gg_rct_Sent3=Rect(- 16768.0, 9856.0, - 16704.0, 9920.0)
-    set gg_rct_Sent4=Rect(- 17152.0, 9440.0, - 17088.0, 9504.0)
-    set gg_rct_Sent5=Rect(- 17344.0, 8448.0, - 17280.0, 8512.0)
-    set gg_rct_Sent_6=Rect(- 17184.0, 8960.0, - 17120.0, 9024.0)
-    set gg_rct_Sent_7=Rect(- 17088.0, 8928.0, - 17024.0, 8992.0)
-    set gg_rct_Sent8=Rect(- 20448.0, - 8704.0, - 20384.0, - 8640.0)
-    set gg_rct_Sent9=Rect(- 16928.0, 9504.0, - 16864.0, 9568.0)
-    set gg_rct_Sent10=Rect(- 20192.0, - 8928.0, - 20128.0, - 8864.0)
-    set gg_rct_Druid1=Rect(- 13280.0, 3776.0, - 13216.0, 3840.0)
-    set gg_rct_Druid2=Rect(- 14176.0, 6656.0, - 14112.0, 6720.0)
-    set gg_rct_Druid3=Rect(- 15648.0, 1984.0, - 15584.0, 2048.0)
-    set gg_rct_Scourge1=Rect(- 20416.0, 19424.0, - 20352.0, 19488.0)
-    set gg_rct_Scourge2=Rect(- 20832.0, 19168.0, - 20768.0, 19232.0)
-    set gg_rct_Scourge3=Rect(15008.0, 7360.0, 15072.0, 7424.0)
-    set gg_rct_Scourge4=Rect(14848.0, 7424.0, 14912.0, 7488.0)
-    set gg_rct_Stormwind1=Rect(14304.0, - 13216.0, 14368.0, - 13152.0)
-    set gg_rct_Stormwind2=Rect(9888.0, - 10912.0, 9952.0, - 10848.0)
-    set gg_rct_Stormwind3=Rect(9920.0, - 11456.0, 9984.0, - 11392.0)
-    set gg_rct_Fel4=Rect(12736.0, - 10880.0, 12800.0, - 10816.0)
-    set gg_rct_Fel5=Rect(17504.0, - 17696.0, 17568.0, - 17632.0)
-    set gg_rct_Fel6=Rect(17600.0, - 17632.0, 17664.0, - 17568.0)
-    set gg_rct_Fel7=Rect(17600.0, - 17760.0, 17664.0, - 17696.0)
-    set gg_rct_Fel8=Rect(5088.0, - 30080.0, 5152.0, - 30016.0)
-    set gg_rct_Quel1=Rect(20000.0, 12480.0, 20064.0, 12544.0)
-    set gg_rct_Quel5=Rect(19424.0, 12704.0, 19488.0, 12768.0)
-    set gg_rct_Quel2=Rect(20384.0, 15904.0, 20448.0, 15968.0)
-    set gg_rct_Quel3=Rect(20416.0, 16032.0, 20480.0, 16096.0)
-    set gg_rct_Quel4=Rect(20544.0, 16000.0, 20608.0, 16064.0)
-    set gg_rct_NazjatarExit3=Rect(14336.0, - 27872.0, 14976.0, - 27392.0)
-    set gg_rct_DagranSpawn=Rect(17120.0, - 31264.0, 17216.0, - 31200.0)
-    set gg_rct_Guldan=Rect(- 9984.0, - 24736.0, - 9728.0, - 24480.0)
-    set gg_rct_Gazlowe=Rect(- 7936.0, - 288.0, - 7808.0, - 160.0)
-    set gg_rct_Anetheron=Rect(2240.0, 20000.0, 2368.0, 20128.0)
-    set gg_rct_Khadgar=Rect(8768.0, - 11616.0, 8896.0, - 11488.0)
-    set gg_rct_Cenarius=Rect(- 11744.0, 6816.0, - 11648.0, 6944.0)
-    set gg_rct_Ursoc=Rect(- 11616.0, 6816.0, - 11520.0, 6944.0)
-    set gg_rct_Kiljaeden=Rect(- 20160.0, 23168.0, - 20032.0, 23296.0)
-    set gg_rct_ThunderBluff=Rect(- 16544.0, - 7808.0, - 14240.0, - 3072.0)
-    set gg_rct_ThrallLanding=Rect(- 9120.0, - 11040.0, - 8576.0, - 10752.0)
-    set gg_rct_CairneStart=Rect(- 10496.0, - 11616.0, - 8928.0, - 10688.0)
-    set gg_rct_Druid4=Rect(- 13088.0, 3264.0, - 13024.0, 3328.0)
-    set gg_rct_Druid5=Rect(- 13824.0, 3872.0, - 13760.0, 3936.0)
-    set gg_rct_Sent11=Rect(- 17664.0, - 13408.0, - 17600.0, - 13344.0)
-    set gg_rct_Sent_12=Rect(- 17120.0, 9120.0, - 17056.0, 9184.0)
-    set gg_rct_Dwarf_group_1=Rect(11712.0, - 3520.0, 12096.0, - 2912.0)
-    set gg_rct_GrizzlyHills=Rect(3456.0, 17184.0, 5952.0, 19232.0)
-    set gg_rct_Northrend_Ambiance=Rect(- 9216.0, 13248.0, 8608.0, 24736.0)
-    set gg_rct_TeldrassilAmbient=Rect(- 20576.0, 12160.0, - 16000.0, 16544.0)
-    set gg_rct_MoongladeVillage=Rect(- 14592.0, 10048.0, - 12288.0, 12192.0)
-    set gg_rct_AzuremystAmbient=Rect(- 21472.0, 7104.0, - 18976.0, 11072.0)
-    set gg_rct_AshenvaleAmbient=Rect(- 17856.0, 384.0, - 9856.0, 9152.0)
-    set gg_rct_BarrenAmbient1=Rect(- 19424.0, - 5632.0, - 9856.0, 384.0)
-    set gg_rct_BarrenAmbient2=Rect(- 16448.0, - 7776.0, - 12352.0, - 5472.0)
-    set gg_rct_BarrenAmbient3=Rect(- 14208.0, - 10272.0, - 12480.0, - 7840.0)
-    set gg_rct_BarrenAmbient4=Rect(- 14272.0, - 11616.0, - 8768.0, - 10048.0)
-    set gg_rct_BarrenAmbient5=Rect(- 12480.0, - 16544.0, - 7680.0, - 11712.0)
-    set gg_rct_SilithusAmbient=Rect(- 20768.0, - 18848.0, - 15744.0, - 11744.0)
-    set gg_rct_UngoroAmbient=Rect(- 15616.0, - 15200.0, - 12608.0, - 11680.0)
-    set gg_rct_FeralasAmbient1=Rect(- 17408.0, - 11552.0, - 14336.0, - 7904.0)
-    set gg_rct_FeralasAmbient2=Rect(- 21504.0, - 11744.0, - 17248.0, - 5536.0)
-    set gg_rct_AszharaAmbient1=Rect(- 9824.0, - 3872.0, - 7360.0, 3488.0)
-    set gg_rct_AzsharaAmbient2=Rect(- 8704.0, 832.0, - 4352.0, 6176.0)
-    set gg_rct_DusthallowAmbient=Rect(- 12256.0, - 9920.0, - 8640.0, - 5728.0)
-    set gg_rct_EchoIsleAmbient=Rect(- 8576.0, - 10208.0, - 5056.0, - 4064.0)
-    set gg_rct_ZulfarrakAmbient=Rect(- 5952.0, - 17216.0, - 960.0, - 11264.0)
-    set gg_rct_KezanAmbient=Rect(- 3104.0, - 9920.0, 736.0, - 5184.0)
-    set gg_rct_AshenvaleAmbient2=Rect(- 17760.0, 9152.0, - 11968.0, 12704.0)
-    set gg_rct_WinterspringAmbient1=Rect(- 11904.0, 9152.0, - 8480.0, 12032.0)
-    set gg_rct_WinterspringAmbient2=Rect(- 9792.0, 5792.0, - 8416.0, 9088.0)
-    set gg_rct_AshenvaleAmbient3=Rect(- 19424.0, 512.0, - 17344.0, 2080.0)
-    set gg_rct_RanazjarAmbient=Rect(- 21344.0, - 3040.0, - 19488.0, - 1248.0)
-    set gg_rct_AshenvaleAmbient4=Rect(- 19072.0, 2080.0, - 17856.0, 7584.0)
-    set gg_rct_Queltalas_2=Rect(16256.0, 11936.0, 20224.0, 14016.0)
-    set gg_rct_StratholmeAmbient=Rect(13056.0, 11136.0, 16288.0, 13888.0)
-    set gg_rct_LordaeronAmbient1=Rect(15968.0, 7264.0, 19008.0, 11712.0)
-    set gg_rct_TyrHandAmbient=Rect(19008.0, 6592.0, 22048.0, 9952.0)
-    set gg_rct_LordaeronAmbient2=Rect(12928.0, 8448.0, 16128.0, 11040.0)
-    set gg_rct_LordaeronAmbient3=Rect(9792.0, 7872.0, 13696.0, 12192.0)
-    set gg_rct_ZulAman_trolls=Rect(20256.0, 10176.0, 22848.0, 17440.0)
-    set gg_rct_LordaeronAmbient4=Rect(6848.0, 9472.0, 9824.0, 12224.0)
-    set gg_rct_LordaeronAmbient5=Rect(4544.0, 8128.0, 8032.0, 10688.0)
-    set gg_rct_QuelthalasAmbient=Rect(16224.0, 11776.0, 20224.0, 17440.0)
-    set gg_rct_SunwellAmbient=Rect(15168.0, 17440.0, 21376.0, 23104.0)
-    set gg_rct_ShadowfangAmbient=Rect(5344.0, 2624.0, 8576.0, 8160.0)
-    set gg_rct_LordamereLakeAmbient=Rect(8320.0, 5824.0, 10368.0, 7680.0)
-    set gg_rct_SouthshoreAmbient=Rect(8576.0, 1600.0, 13536.0, 3904.0)
-    set gg_rct_AlteracAmbient=Rect(10432.0, 4608.0, 12160.0, 7104.0)
-    set gg_rct_ScholomanceAmbient2=Rect(12128.0, 5440.0, 16224.0, 7072.0)
-    set gg_rct_ScholomanceAmbient1=Rect(13728.0, 7072.0, 16096.0, 8416.0)
-    set gg_rct_SouthshoreAmbient2=Rect(10336.0, 3936.0, 13568.0, 4608.0)
-    set gg_rct_SouthshoreAmbient3=Rect(12128.0, 4608.0, 13600.0, 5472.0)
-    set gg_rct_SouthshoreAmbient4=Rect(13504.0, 1920.0, 18336.0, 2976.0)
-    set gg_rct_SouthshoreAmbient5=Rect(15296.0, 736.0, 17856.0, 1920.0)
-    set gg_rct_BridgeAmbient=Rect(15232.0, - 288.0, 17504.0, 736.0)
-    set gg_rct_ScholomanceAmbient3=Rect(11200.0, 7072.0, 13728.0, 7840.0)
-    set gg_rct_HinterlandAmbient1=Rect(13600.0, 3040.0, 19136.0, 5408.0)
-    set gg_rct_HinterlandAmbient2=Rect(16256.0, 5408.0, 19072.0, 7040.0)
-    set gg_rct_Aerie_Peak=Rect(13600.0, 4096.0, 14752.0, 5184.0)
-    set gg_rct_TolbaradAmbient=Rect(10400.0, - 2176.0, 12416.0, 544.0)
-    set gg_rct_BalorAmbient=Rect(3104.0, - 14400.0, 6656.0, - 10112.0)
-    set gg_rct_StormwindAmbient2=Rect(6624.0, - 10528.0, 8160.0, - 8544.0)
-    set gg_rct_SentinelTowerAmbient=Rect(5696.0, - 17664.0, 8672.0, - 14304.0)
-    set gg_rct_StranglethornAmbient1=Rect(7680.0, - 19136.0, 13536.0, - 17472.0)
-    set gg_rct_StranglethornAmbient2=Rect(11808.0, - 22016.0, 14880.0, - 18272.0)
-    set gg_rct_StranglethornAmbient3=Rect(8768.0, - 23808.0, 12736.0, - 19168.0)
-    set gg_rct_ElwinForestAmbient=Rect(8704.0, - 14816.0, 13376.0, - 12704.0)
-    set gg_rct_DarkshireAmbient1=Rect(8672.0, - 17440.0, 13600.0, - 14816.0)
-    set gg_rct_DarkshireAmbient2=Rect(13600.0, - 18208.0, 14912.0, - 14720.0)
-    set gg_rct_DarkshireAmbient3=Rect(13408.0, - 14752.0, 17952.0, - 12672.0)
-    set gg_rct_BlastedlandAmbient=Rect(14912.0, - 21760.0, 19200.0, - 16896.0)
-    set gg_rct_SwampofSorrowsAmbient=Rect(14944.0, - 16896.0, 19424.0, - 14784.0)
-    set gg_rct_BurningSteppesAmbient=Rect(11712.0, - 12704.0, 17984.0, - 7552.0)
-    set gg_rct_BurningSteppeAmbient2=Rect(17952.0, - 14720.0, 19872.0, - 9504.0)
-    set gg_rct_IronforgeAmbient=Rect(9504.0, - 6656.0, 11712.0, - 4160.0)
-    set gg_rct_DunmoroghAmbient1=Rect(6688.0, - 8416.0, 9536.0, - 4096.0)
-    set gg_rct_DunmoroghAmbient2=Rect(8320.0, - 9216.0, 11712.0, - 6656.0)
-    set gg_rct_DunmoroghAmbient3=Rect(11680.0, - 7552.0, 14656.0, - 4032.0)
-    set gg_rct_LochModanAmbient=Rect(14624.0, - 7552.0, 17888.0, - 4032.0)
-    set gg_rct_WetlandAmbient1=Rect(12544.0, - 4032.0, 14720.0, - 416.0)
-    set gg_rct_WetlandAmbient2=Rect(11296.0, - 3808.0, 12576.0, - 2272.0)
-    set gg_rct_GrimBatolAmbient1=Rect(14720.0, - 4032.0, 17920.0, - 256.0)
-    set gg_rct_GrimBatolAmbient2=Rect(17952.0, - 7200.0, 22080.0, 736.0)
-    set gg_rct_Region_IC=Rect(- 12928.0, - 26848.0, - 12864.0, - 26784.0)
-    set gg_rct_Region_DB=Rect(- 8832.0, - 28992.0, - 8768.0, - 28928.0)
-    set gg_rct_Region_AE=Rect(- 17312.0, - 8448.0, - 17248.0, - 8384.0)
-    set gg_rct_Region_AZ_1=Rect(- 3488.0, 17888.0, - 3424.0, 17952.0)
-    set gg_rct_Region_AZ_2=Rect(- 5760.0, 23968.0, - 5696.0, 24032.0)
-    set gg_rct_Region_BM=Rect(12576.0, - 10592.0, 12640.0, - 10528.0)
-    set gg_rct_Region_ToS=Rect(- 960.0, 8576.0, - 896.0, 8640.0)
-    set gg_rct_Region_SC=Rect(14464.0, 7616.0, 14528.0, 7680.0)
-    set gg_rct_IllidanWeather=Rect(- 19456.0, 2624.0, - 17632.0, 4640.0)
-    set gg_rct_IllidanMovement1=Rect(- 18816.0, 4032.0, - 18784.0, 4064.0)
-    set gg_rct_IllidanMovement2=Rect(- 18816.0, 3968.0, - 18784.0, 4000.0)
-    set gg_rct_IllidanAmbiance2=Rect(- 1984.0, 8128.0, 608.0, 10432.0)
-    set gg_rct_LightningBolt2=Rect(- 18528.0, 3488.0, - 18496.0, 3520.0)
-    set gg_rct_LightningBolt3=Rect(- 18784.0, 3584.0, - 18752.0, 3616.0)
-    set gg_rct_WaveCrash=Rect(- 18912.0, 3872.0, - 18880.0, 3904.0)
-    set gg_rct_BloodElfSecondChanceSpawn=Rect(- 11744.0, 21504.0, - 11040.0, 22304.0)
-    set gg_rct_AethneumTombExit=Rect(- 27840.0, 23232.0, - 27712.0, 23840.0)
-    set gg_rct_AethneumLibraryEntrance=Rect(- 18272.0, 23904.0, - 17664.0, 24160.0)
-    set gg_rct_IllidanMoveAethneum=Rect(- 26144.0, 21856.0, - 26112.0, 21888.0)
-    set gg_rct_ImmolFight=Rect(- 27456.0, 18496.0, - 26240.0, 19936.0)
-    set gg_rct_AethneumCatacombs=Rect(- 28160.0, 17952.0, - 23072.0, 24544.0)
-    set gg_rct_AethneumRemove=Rect(- 25728.0, 22624.0, - 25184.0, 22912.0)
-    set gg_rct_AetheneumTombExit2=Rect(- 24064.0, 20832.0, - 23872.0, 21216.0)
-    set gg_rct_NazjatarEntrance2=Rect(- 896.0, 992.0, - 416.0, 1184.0)
-    set gg_rct_NazjatarEntrance1=Rect(384.0, 2752.0, 864.0, 2944.0)
-    set gg_rct_NazjatarExit1=Rect(12000.0, - 27712.0, 12480.0, - 27520.0)
-    set gg_rct_NazjatarExit2=Rect(12416.0, - 29728.0, 12800.0, - 29408.0)
-    set gg_rct_AetheneumTombEntrance2=Rect(- 18016.0, - 7200.0, - 17664.0, - 6912.0)
-    set gg_rct_IllidanBoat1=Rect(- 6880.0, 4064.0, - 6560.0, 4512.0)
-    set gg_rct_IllidanBoat2=Rect(3616.0, 7456.0, 3744.0, 7616.0)
-    set gg_rct_IllidanBoat3=Rect(4416.0, 7072.0, 4480.0, 7136.0)
-    set gg_rct_IllidanBoat4=Rect(- 5280.0, 3168.0, - 5248.0, 3200.0)
-    set gg_rct_IllidanExit2=Rect(- 15584.0, - 8256.0, - 15328.0, - 8032.0)
-    set gg_rct_IllidanCameraExit=Rect(- 19840.0, - 10400.0, - 15072.0, - 6112.0)
-    set gg_rct_IllidanExitText1=Rect(- 16928.0, - 7808.0, - 16896.0, - 7776.0)
-    set gg_rct_SkullOfGuldan=Rect(- 13824.0, 23232.0, - 13408.0, 23488.0)
-    set gg_rct_IllidanDala1=Rect(17440.0, - 25024.0, 17696.0, - 24928.0)
-    set gg_rct_IllidanDala2=Rect(17568.0, - 25792.0, 17600.0, - 25760.0)
-    set gg_rct_IllidanDalaranInstance=Rect(16768.0, - 27584.0, 22528.0, - 24384.0)
-    set gg_rct_StartQuest2=Rect(- 13152.0, - 24384.0, - 12992.0, - 24224.0)
-    set gg_rct_IllidanDala4=Rect(18688.0, - 26208.0, 18720.0, - 26176.0)
-    set gg_rct_IllidanDala5=Rect(20256.0, - 26144.0, 20288.0, - 26112.0)
-    set gg_rct_IllidanDala6=Rect(19296.0, - 25088.0, 19328.0, - 25056.0)
-    set gg_rct_IllidanDala7=Rect(19008.0, - 25088.0, 19040.0, - 25056.0)
-    set gg_rct_IllidanDala8=Rect(18048.0, - 26144.0, 18080.0, - 26112.0)
-    set gg_rct_IllidanElementalSentry=Rect(20192.0, - 26176.0, 20768.0, - 25440.0)
-    set gg_rct_StartQuest3=Rect(- 12480.0, - 24416.0, - 12320.0, - 24256.0)
-    set gg_rct_IllidanDalaExit=Rect(8736.0, 6432.0, 8896.0, 6624.0)
-    set gg_rct_UnlockIllidanSwitch=Rect(21472.0, - 25472.0, 22304.0, - 25344.0)
-    set gg_rct_IllidanLook=Rect(21888.0, - 26208.0, 21920.0, - 26176.0)
-    set gg_rct_IllidanLast=Rect(- 18720.0, 3712.0, - 18688.0, 3744.0)
-    set gg_rct_AetheneumtoNazjatar=Rect(- 27200.0, 19008.0, - 26880.0, 19392.0)
-    set gg_rct_IllidanNaga1=Rect(13312.0, - 28000.0, 13344.0, - 27968.0)
-    set gg_rct_IllidanNaga2=Rect(14272.0, - 28672.0, 14304.0, - 28640.0)
-    set gg_rct_IllidanNaga3=Rect(13248.0, - 28064.0, 13280.0, - 28032.0)
-    set gg_rct_MaelstromAmbient=Rect(- 1888.0, 224.0, 1568.0, 3552.0)
-    set gg_rct_Chapter2Map=Rect(- 28672.0, - 32256.0, - 21888.0, - 24960.0)
-    set gg_rct_Chapter3=Rect(- 28672.0, - 32224.0, - 18208.0, - 19744.0)
-    set gg_rct_WerewolfSpawn1=Rect(- 22592.0, - 31456.0, - 21984.0, - 30816.0)
-    set gg_rct_WerewolfSpawn2=Rect(- 22400.0, - 26752.0, - 21792.0, - 26112.0)
-    set gg_rct_WerewolfSpawn3=Rect(- 27904.0, - 25440.0, - 27296.0, - 24928.0)
-    set gg_rct_Attack_Commands=Rect(- 28672.0, - 32256.0, - 20640.0, - 24448.0)
-    set gg_rct_AttackPoint=Rect(- 25664.0, - 29792.0, - 25152.0, - 29344.0)
-    set gg_rct_GilneasMovement1=Rect(- 27392.0, - 21536.0, - 27360.0, - 21504.0)
-    set gg_rct_GilneasMovement2=Rect(- 27360.0, - 17952.0, - 27328.0, - 17920.0)
-    set gg_rct_GilneasMovement3=Rect(- 26816.0, - 17440.0, - 26784.0, - 17408.0)
-    set gg_rct_GilneasMovement4=Rect(- 27328.0, - 17632.0, - 27296.0, - 17600.0)
-    set gg_rct_GilneasMovement5=Rect(- 27328.0, - 17504.0, - 27296.0, - 17472.0)
-    set gg_rct_Innerfight1=Rect(- 26208.0, - 24448.0, - 25824.0, - 23904.0)
-    set gg_rct_InnerFightStart=Rect(- 27808.0, - 23040.0, - 25632.0, - 22880.0)
-    set gg_rct_Innerfight2=Rect(- 27936.0, - 24768.0, - 25824.0, - 23296.0)
-    set gg_rct_GilneasMovement2_Copy=Rect(- 27456.0, - 17824.0, - 27424.0, - 17792.0)
-    set gg_rct_GilneasMovement2_Copy_2=Rect(- 27264.0, - 17824.0, - 27232.0, - 17792.0)
-    set gg_rct_GilneasMovement2_Copy_2_Copy=Rect(- 27360.0, - 17728.0, - 27328.0, - 17696.0)
-    set gg_rct_Chapter2Start=Rect(- 28128.0, - 30880.0, - 27648.0, - 30624.0)
-    set gg_rct_Chapter2TeleStart=Rect(- 28128.0, - 30208.0, - 27648.0, - 29952.0)
-    set gg_rct_WerewolfSpawn4=Rect(- 27104.0, - 25408.0, - 26464.0, - 24992.0)
-    set gg_rct_AttackPoint_Copy=Rect(- 26368.0, - 29088.0, - 25856.0, - 28640.0)
-    set gg_rct_GilneasExit3=Rect(- 28416.0, - 21088.0, - 28160.0, - 20640.0)
-    set gg_rct_GilneasExit1=Rect(- 24672.0, - 18272.0, - 24096.0, - 18080.0)
-    set gg_rct_GilneasExit2=Rect(- 20736.0, - 23872.0, - 20512.0, - 23328.0)
-    set gg_rct_GilneasEntrance1=Rect(6720.0, 2720.0, 7200.0, 2912.0)
-    set gg_rct_GilneasEntrance2=Rect(8288.0, 1472.0, 8512.0, 1856.0)
-    set gg_rct_GilneasEntrance3=Rect(5376.0, - 1248.0, 5600.0, - 864.0)
-    set gg_rct_Checkpoint1Gilneas=Rect(- 23680.0, - 27648.0, - 23648.0, - 27616.0)
-    set gg_rct_Scarlet_Monastery_Interior=Rect(- 24864.0, 15360.0, - 24512.0, 15744.0)
-    set gg_rct_Undercity_Interior_1=Rect(- 26720.0, 14464.0, - 26368.0, 14848.0)
-    set gg_rct_Undercity_Interior_2=Rect(- 28128.0, 17344.0, - 27776.0, 17728.0)
-    set gg_rct_Undercity_Exterior_1=Rect(9248.0, 7808.0, 9600.0, 8192.0)
-    set gg_rct_Undercity_Exterior_2=Rect(8576.0, 7808.0, 8928.0, 8192.0)
-    set gg_rct_Scarlet_Monastery_Exterior=Rect(10976.0, 10912.0, 11328.0, 11296.0)
-    set gg_rct_Undercity_Escape=Rect(6048.0, 8288.0, 6400.0, 8672.0)
-    set gg_rct_DarkshireUnlock=Rect(11904.0, - 16320.0, 13408.0, - 15072.0)
-    set gg_rct_StormwindUnlock=Rect(6816.0, - 12704.0, 11680.0, - 8544.0)
-    set gg_rct_LakeshireUnlock=Rect(13568.0, - 13696.0, 15456.0, - 12864.0)
-    set gg_rct_NethergardeUnlock=Rect(17472.0, - 18400.0, 18880.0, - 16960.0)
-    set gg_rct_StratholmeUnlock=Rect(13248.0, 11168.0, 16224.0, 13952.0)
-    set gg_rct_TyrUnlock=Rect(18912.0, 6560.0, 22592.0, 9696.0)
-    set gg_rct_ShadowfangUnlock=Rect(5472.0, 3104.0, 6592.0, 4768.0)
-    set gg_rct_TrollAttackSpawn=Rect(20928.0, 12224.0, 21248.0, 12480.0)
-    set gg_rct_TrollTarget=Rect(17088.0, 12480.0, 17120.0, 12512.0)
-    set gg_rct_KilsorrowUnlock=Rect(- 4224.0, - 31904.0, - 2752.0, - 30752.0)
-    set gg_rct_HellfireUnlock=Rect(- 128.0, - 27200.0, 1984.0, - 25312.0)
-    set gg_rct_ScarletAmbient=Rect(- 25152.0, 15072.0, - 22592.0, 17696.0)
-    set gg_rct_ThelUnlock=Rect(14688.0, - 6752.0, 15648.0, - 4768.0)
-    set gg_rct_KulAttack=Rect(3776.0, - 11136.0, 4096.0, - 10912.0)
-    set gg_rct_KulTarget=Rect(3904.0, - 13440.0, 3936.0, - 13408.0)
-    set gg_rct_BlademasterUnlock=Rect(4352.0, - 10496.0, 5024.0, - 10112.0)
-    set gg_rct_ZandalarUnlock=Rect(- 5440.0, - 17088.0, - 2400.0, - 14656.0)
-    set gg_rct_UndercityUnlock=Rect(- 28672.0, 14176.0, - 25728.0, 17888.0)
-    set gg_rct_NaxxramasInside=Rect(- 23744.0, 14080.0, - 23232.0, 14368.0)
-    set gg_rct_NaxAmbient=Rect(- 24928.0, 11520.0, - 22016.0, 14528.0)
-    set gg_rct_NaxUnlock=Rect(128.0, 18464.0, 256.0, 18592.0)
-    set gg_rct_TwilightAmbient=Rect(- 27904.0, 10368.0, - 25728.0, 13792.0)
-    set gg_rct_TwilightInside=Rect(- 27072.0, 13248.0, - 26528.0, 13504.0)
-    set gg_rct_TwilightOutside=Rect(19232.0, - 5632.0, 19808.0, - 5344.0)
-    set gg_rct_ShipInside=Rect(- 15552.0, - 24608.0, - 15008.0, - 24160.0)
-    set gg_rct_ShipAmbient=Rect(- 15840.0, - 24736.0, - 14656.0, - 22112.0)
-    set gg_rct_ShipTarget=Rect(4608.0, - 10528.0, 4640.0, - 10496.0)
-    set gg_rct_NagaUnlock2=Rect(7904.0, - 31616.0, 12416.0, - 26304.0)
-    set gg_rct_NagaUnlock1=Rect(13824.0, - 29376.0, 15552.0, - 27424.0)
-    set gg_rct_NazjatarHidden=Rect(- 12480.0, - 24032.0, - 12320.0, - 23872.0)
-    set gg_rct_IllidanOutlandEntrance=Rect(- 2496.0, - 20512.0, - 2080.0, - 20064.0)
-    set gg_rct_Kalimdor=Rect(- 21280.0, - 18816.0, - 5664.0, 12000.0)
-    set gg_rct_FeathermoonUnlock=Rect(- 21376.0, - 10272.0, - 19776.0, - 7840.0)
-    set gg_rct_AstranaarUnlock=Rect(- 16832.0, 1344.0, - 15168.0, 2496.0)
-    set gg_rct_AshenvaleUnlock=Rect(- 15552.0, 2464.0, - 13088.0, 4576.0)
-    set gg_rct_DrownedTemple=Rect(17248.0, - 15936.0, 17696.0, - 15520.0)
-    set gg_rct_NzothIni=Rect(- 13056.0, - 25216.0, - 12928.0, - 25088.0)
-    set gg_rct_DragonmawUnlock=Rect(20864.0, - 4416.0, 22240.0, - 3488.0)
-    set gg_rct_SouthshoreUnlock=Rect(10784.0, 1632.0, 12096.0, 2656.0)
-    set gg_rct_GilneasMovement2_Copy_2_Copy_Copy=Rect(- 27424.0, - 17664.0, - 27392.0, - 17632.0)
-    set gg_rct_MaievStartUnlock=Rect(- 6016.0, - 28416.0, - 4896.0, - 27104.0)
-    set gg_rct_Silithus_Bug_Interior=Rect(- 27872.0, - 15424.0, - 27392.0, - 14912.0)
-    set gg_rct_Silithus_Stone_Interior=Rect(- 25152.0, - 12448.0, - 24864.0, - 11936.0)
-    set gg_rct_Silithus_Stone_Exterior=Rect(- 18816.0, - 18464.0, - 18496.0, - 18048.0)
-    set gg_rct_Silithus_Bug_Exterior=Rect(- 16352.0, - 17504.0, - 16096.0, - 17120.0)
-    set gg_rct_EchoUnlock=Rect(- 8608.0, - 6816.0, - 6208.0, - 3968.0)
-    set gg_rct_StrahnbradUnlock=Rect(12544.0, 4992.0, 13408.0, 5824.0)
-    set gg_rct_TunnelUnlock=Rect(- 26240.0, - 11712.0, - 24576.0, - 8480.0)
-    set gg_rct_AhnqirajInstance=Rect(- 28480.0, - 16416.0, - 23872.0, - 8000.0)
-    set gg_rct_CthunSummon=Rect(- 27552.0, - 9312.0, - 27424.0, - 9184.0)
-    set gg_rct_ZeppelinReturn=Rect(- 960.0, - 5856.0, - 352.0, - 5216.0)
-    set gg_rct_Trade1=Rect(10240.0, - 23200.0, 10624.0, - 22816.0)
-    set gg_rct_Trade2=Rect(- 10432.0, 9856.0, - 10048.0, 10240.0)
-    set gg_rct_Trade3=Rect(- 11008.0, - 3808.0, - 10592.0, - 3392.0)
-    set gg_rct_Trade4=Rect(18816.0, - 9984.0, 19200.0, - 9600.0)
-    set gg_rct_Trader1=Rect(2144.0, 15456.0, 2560.0, 15776.0)
-    set gg_rct_Trader2=Rect(- 7840.0, - 13344.0, - 7456.0, - 13024.0)
-    set gg_rct_Trader3=Rect(9344.0, - 22752.0, 9664.0, - 22464.0)
-    set gg_rct_GadgetUnlock=Rect(- 9248.0, - 13984.0, - 8320.0, - 12896.0)
-    set gg_rct_OilRig1=Rect(- 192.0, - 4608.0, 992.0, - 3648.0)
-    set gg_rct_OilRig2=Rect(- 32.0, - 14688.0, 2336.0, - 11808.0)
-    set gg_rct_OilRig3=Rect(224.0, - 16704.0, 3520.0, - 14816.0)
-    set gg_rct_OilRig4=Rect(- 6432.0, 7648.0, - 4064.0, 11200.0)
-    set gg_rct_OilRig5=Rect(- 3936.0, 10976.0, 1120.0, 13824.0)
-    set gg_rct_OilRig6=Rect(- 11008.0, - 20608.0, - 8192.0, - 18592.0)
-    set gg_rct_Ny_Ulduar_Interior=Rect(- 28160.0, 768.0, - 27776.0, 1184.0)
+    set gg_rct_NyHighland=Rect(20928.0, - 512.0, 21248.0, - 160.0)
+    set gg_rct_Mannoroth=Rect(- 8864.0, - 9472.0, - 8448.0, - 9024.0)
+    set gg_rct_Jergosh=Rect(- 9632.0, - 9024.0, - 9472.0, - 8864.0)
+    set gg_rct_Dark_Portal_Exit_2=Rect(5760.0, - 25088.0, 6144.0, - 24704.0)
+    set gg_rct_Dark_Portal_Exit_3=Rect(6592.0, - 26304.0, 6976.0, - 25920.0)
+    set gg_rct_Dark_Portal_Entrance_2=Rect(19328.0, - 19232.0, 19744.0, - 18912.0)
+    set gg_rct_Dark_Portal_Entrance_3=Rect(16960.0, - 19392.0, 17376.0, - 19072.0)
+    set gg_rct_Chen=Rect(- 7808.0, - 2848.0, - 7360.0, - 2176.0)
+    set gg_rct_QuelDanil_Lodge=Rect(17088.0, 4352.0, 17888.0, 5152.0)
+    set gg_rct_HighBourne=Rect(- 15808.0, 22272.0, - 14720.0, 23584.0)
+    set gg_rct_Andrassil=Rect(6720.0, 18400.0, 7168.0, 18816.0)
+    set gg_rct_EvilIllidanSpawn=Rect(4544.0, - 20480.0, 4800.0, - 20224.0)
+    set gg_rct_VaultoftheWardens=Rect(576.0, 6784.0, 896.0, 7104.0)
+    set gg_rct_Theramore=Rect(- 6752.0, - 10304.0, - 4288.0, - 7776.0)
+    set gg_rct_Terrordale=Rect(16384.0, 10336.0, 17696.0, 10880.0)
+    set gg_rct_Dreadscar_1=Rect(19808.0, 12256.0, 20512.0, 14688.0)
+    set gg_rct_Deemspring=Rect(19136.0, 18016.0, 19264.0, 18144.0)
+    set gg_rct_Dreadscar_3=Rect(20032.0, 19424.0, 20544.0, 21408.0)
+    set gg_rct_Scholo_Ships=Rect(- 19616.0, 17280.0, - 17248.0, 20032.0)
+    set gg_rct_DalaCutscene1=Rect(11328.0, 3488.0, 11392.0, 3552.0)
+    set gg_rct_Dreadscar_2=Rect(19584.0, 15392.0, 20736.0, 17376.0)
+    set gg_rct_DalaCutscene2=Rect(11392.0, 3232.0, 11456.0, 3296.0)
+    set gg_rct_DalaCutscene3=Rect(11488.0, 3328.0, 11552.0, 3392.0)
+    set gg_rct_DalaCutscene4=Rect(11232.0, 3072.0, 11296.0, 3136.0)
+    set gg_rct_DalaCutscene4_Copy=Rect(11104.0, 3072.0, 11168.0, 3136.0)
+    set gg_rct_DalaCutscene4_Copy_2=Rect(11200.0, 2976.0, 11264.0, 3040.0)
+    set gg_rct_Lord1=Rect(13792.0, 8672.0, 13856.0, 8736.0)
+    set gg_rct_Lord2=Rect(13056.0, 6016.0, 13184.0, 6144.0)
+    set gg_rct_Lord3=Rect(14336.0, 8608.0, 14400.0, 8672.0)
+    set gg_rct_Lord4=Rect(13952.0, 8480.0, 14016.0, 8544.0)
+    set gg_rct_Lord5=Rect(13792.0, 8480.0, 13856.0, 8544.0)
+    set gg_rct_Lord6=Rect(14400.0, 8128.0, 14464.0, 8192.0)
+    set gg_rct_Dwarf1=Rect(14080.0, - 3232.0, 14144.0, - 3168.0)
+    set gg_rct_Dwarf2=Rect(14144.0, - 3360.0, 14208.0, - 3296.0)
+    set gg_rct_Dwarf3=Rect(14016.0, - 3328.0, 14080.0, - 3264.0)
+    set gg_rct_Dwarf4=Rect(14336.0, - 3136.0, 14400.0, - 3072.0)
+    set gg_rct_Legion1=Rect(- 18304.0, 21664.0, - 18240.0, 21728.0)
+    set gg_rct_Legion00=Rect(3840.0, 20256.0, 3904.0, 20320.0)
+    set gg_rct_Legion2=Rect(- 18016.0, 21856.0, - 17952.0, 21920.0)
+    set gg_rct_Legion3=Rect(12832.0, 5664.0, 12896.0, 5728.0)
+    set gg_rct_Frostwolf1=Rect(- 192.0, - 2080.0, - 128.0, - 2016.0)
+    set gg_rct_Warsong1=Rect(- 9088.0, - 5024.0, - 9024.0, - 4960.0)
+    set gg_rct_Sent1=Rect(- 12160.0, 6720.0, - 12096.0, 6784.0)
+    set gg_rct_Sent2=Rect(- 15168.0, 10432.0, - 15104.0, 10496.0)
+    set gg_rct_Sent3=Rect(- 15040.0, 9856.0, - 14976.0, 9920.0)
+    set gg_rct_Sent4=Rect(- 15424.0, 9440.0, - 15360.0, 9504.0)
+    set gg_rct_Sent5=Rect(- 15616.0, 8448.0, - 15552.0, 8512.0)
+    set gg_rct_Sent_6=Rect(- 15456.0, 8960.0, - 15392.0, 9024.0)
+    set gg_rct_Sent_7=Rect(- 15360.0, 8928.0, - 15296.0, 8992.0)
+    set gg_rct_Sent8=Rect(- 18720.0, - 8704.0, - 18656.0, - 8640.0)
+    set gg_rct_Sent9=Rect(- 15200.0, 9504.0, - 15136.0, 9568.0)
+    set gg_rct_Sent10=Rect(- 18464.0, - 8928.0, - 18400.0, - 8864.0)
+    set gg_rct_Druid1=Rect(- 11552.0, 3776.0, - 11488.0, 3840.0)
+    set gg_rct_Druid2=Rect(- 12448.0, 6656.0, - 12384.0, 6720.0)
+    set gg_rct_Druid3=Rect(- 13920.0, 1984.0, - 13856.0, 2048.0)
+    set gg_rct_Scourge1=Rect(- 18688.0, 19424.0, - 18624.0, 19488.0)
+    set gg_rct_Scourge2=Rect(- 19104.0, 19168.0, - 19040.0, 19232.0)
+    set gg_rct_Scourge3=Rect(16736.0, 7360.0, 16800.0, 7424.0)
+    set gg_rct_Scourge4=Rect(16576.0, 7424.0, 16640.0, 7488.0)
+    set gg_rct_Stormwind1=Rect(16032.0, - 13216.0, 16096.0, - 13152.0)
+    set gg_rct_Stormwind2=Rect(11616.0, - 10912.0, 11680.0, - 10848.0)
+    set gg_rct_Stormwind3=Rect(11648.0, - 11456.0, 11712.0, - 11392.0)
+    set gg_rct_Fel4=Rect(14464.0, - 10880.0, 14528.0, - 10816.0)
+    set gg_rct_Fel5=Rect(19232.0, - 17696.0, 19296.0, - 17632.0)
+    set gg_rct_Fel6=Rect(19328.0, - 17632.0, 19392.0, - 17568.0)
+    set gg_rct_Fel7=Rect(19328.0, - 17760.0, 19392.0, - 17696.0)
+    set gg_rct_Fel8=Rect(6816.0, - 30080.0, 6880.0, - 30016.0)
+    set gg_rct_Quel1=Rect(21728.0, 12480.0, 21792.0, 12544.0)
+    set gg_rct_Quel5=Rect(21152.0, 12704.0, 21216.0, 12768.0)
+    set gg_rct_Quel2=Rect(22112.0, 15904.0, 22176.0, 15968.0)
+    set gg_rct_Quel3=Rect(22144.0, 16032.0, 22208.0, 16096.0)
+    set gg_rct_Quel4=Rect(22272.0, 16000.0, 22336.0, 16064.0)
+    set gg_rct_NazjatarExit3=Rect(16064.0, - 27872.0, 16704.0, - 27392.0)
+    set gg_rct_DagranSpawn=Rect(18848.0, - 31264.0, 18944.0, - 31200.0)
+    set gg_rct_Guldan=Rect(- 8256.0, - 24736.0, - 8000.0, - 24480.0)
+    set gg_rct_Gazlowe=Rect(- 6208.0, - 288.0, - 6080.0, - 160.0)
+    set gg_rct_Anetheron=Rect(3968.0, 20000.0, 4096.0, 20128.0)
+    set gg_rct_Khadgar=Rect(10496.0, - 11616.0, 10624.0, - 11488.0)
+    set gg_rct_Cenarius=Rect(- 10016.0, 6816.0, - 9920.0, 6944.0)
+    set gg_rct_Ursoc=Rect(- 9888.0, 6816.0, - 9792.0, 6944.0)
+    set gg_rct_Kiljaeden=Rect(- 18432.0, 23168.0, - 18304.0, 23296.0)
+    set gg_rct_ThunderBluff=Rect(- 14816.0, - 7808.0, - 12512.0, - 3072.0)
+    set gg_rct_ThrallLanding=Rect(- 7392.0, - 11040.0, - 6848.0, - 10752.0)
+    set gg_rct_CairneStart=Rect(- 8768.0, - 11616.0, - 7200.0, - 10688.0)
+    set gg_rct_Druid4=Rect(- 11360.0, 3264.0, - 11296.0, 3328.0)
+    set gg_rct_Druid5=Rect(- 12096.0, 3872.0, - 12032.0, 3936.0)
+    set gg_rct_Sent11=Rect(- 15936.0, - 13408.0, - 15872.0, - 13344.0)
+    set gg_rct_Sent_12=Rect(- 15392.0, 9120.0, - 15328.0, 9184.0)
+    set gg_rct_Dwarf_group_1=Rect(13440.0, - 3520.0, 13824.0, - 2912.0)
+    set gg_rct_GrizzlyHills=Rect(5184.0, 17184.0, 7680.0, 19232.0)
+    set gg_rct_Northrend_Ambiance=Rect(- 7488.0, 13248.0, 10336.0, 24736.0)
+    set gg_rct_TeldrassilAmbient=Rect(- 18848.0, 12160.0, - 14272.0, 16544.0)
+    set gg_rct_MoongladeVillage=Rect(- 12864.0, 10048.0, - 10560.0, 12192.0)
+    set gg_rct_AzuremystAmbient=Rect(- 19744.0, 7104.0, - 17248.0, 11072.0)
+    set gg_rct_AshenvaleAmbient=Rect(- 16128.0, 384.0, - 8128.0, 9152.0)
+    set gg_rct_BarrenAmbient1=Rect(- 17696.0, - 5632.0, - 8128.0, 384.0)
+    set gg_rct_BarrenAmbient2=Rect(- 14720.0, - 7776.0, - 10624.0, - 5472.0)
+    set gg_rct_BarrenAmbient3=Rect(- 12480.0, - 10272.0, - 10752.0, - 7840.0)
+    set gg_rct_BarrenAmbient4=Rect(- 12544.0, - 11616.0, - 7040.0, - 10048.0)
+    set gg_rct_BarrenAmbient5=Rect(- 10752.0, - 16544.0, - 5952.0, - 11712.0)
+    set gg_rct_SilithusAmbient=Rect(- 19040.0, - 18848.0, - 14016.0, - 11744.0)
+    set gg_rct_UngoroAmbient=Rect(- 13888.0, - 15200.0, - 10880.0, - 11680.0)
+    set gg_rct_FeralasAmbient1=Rect(- 15680.0, - 11552.0, - 12608.0, - 7904.0)
+    set gg_rct_FeralasAmbient2=Rect(- 19776.0, - 11744.0, - 15520.0, - 5536.0)
+    set gg_rct_AszharaAmbient1=Rect(- 8096.0, - 3872.0, - 5632.0, 3488.0)
+    set gg_rct_AzsharaAmbient2=Rect(- 6976.0, 832.0, - 2624.0, 6176.0)
+    set gg_rct_DusthallowAmbient=Rect(- 10528.0, - 9920.0, - 6912.0, - 5728.0)
+    set gg_rct_EchoIsleAmbient=Rect(- 6848.0, - 10208.0, - 3328.0, - 4064.0)
+    set gg_rct_ZulfarrakAmbient=Rect(- 4224.0, - 17216.0, 768.0, - 11264.0)
+    set gg_rct_KezanAmbient=Rect(- 1376.0, - 9920.0, 2464.0, - 5184.0)
+    set gg_rct_AshenvaleAmbient2=Rect(- 16032.0, 9152.0, - 10240.0, 12704.0)
+    set gg_rct_WinterspringAmbient1=Rect(- 10176.0, 9152.0, - 6752.0, 12032.0)
+    set gg_rct_WinterspringAmbient2=Rect(- 8064.0, 5792.0, - 6688.0, 9088.0)
+    set gg_rct_AshenvaleAmbient3=Rect(- 17696.0, 512.0, - 15616.0, 2080.0)
+    set gg_rct_RanazjarAmbient=Rect(- 19616.0, - 3040.0, - 17760.0, - 1248.0)
+    set gg_rct_AshenvaleAmbient4=Rect(- 17344.0, 2080.0, - 16128.0, 7584.0)
+    set gg_rct_Queltalas_2=Rect(17984.0, 11936.0, 21952.0, 14016.0)
+    set gg_rct_StratholmeAmbient=Rect(14784.0, 11136.0, 18016.0, 13888.0)
+    set gg_rct_LordaeronAmbient1=Rect(17696.0, 7264.0, 20736.0, 11712.0)
+    set gg_rct_TyrHandAmbient=Rect(20736.0, 6592.0, 23776.0, 9952.0)
+    set gg_rct_LordaeronAmbient2=Rect(14656.0, 8448.0, 17856.0, 11040.0)
+    set gg_rct_LordaeronAmbient3=Rect(11520.0, 7872.0, 15424.0, 12192.0)
+    set gg_rct_ZulAman_trolls=Rect(21984.0, 10176.0, 24576.0, 17440.0)
+    set gg_rct_LordaeronAmbient4=Rect(8576.0, 9472.0, 11552.0, 12224.0)
+    set gg_rct_LordaeronAmbient5=Rect(6272.0, 8128.0, 9760.0, 10688.0)
+    set gg_rct_QuelthalasAmbient=Rect(17952.0, 11776.0, 21952.0, 17440.0)
+    set gg_rct_SunwellAmbient=Rect(16896.0, 17440.0, 23104.0, 23104.0)
+    set gg_rct_ShadowfangAmbient=Rect(7072.0, 2624.0, 10304.0, 8160.0)
+    set gg_rct_LordamereLakeAmbient=Rect(10048.0, 5824.0, 12096.0, 7680.0)
+    set gg_rct_SouthshoreAmbient=Rect(10304.0, 1600.0, 15264.0, 3904.0)
+    set gg_rct_AlteracAmbient=Rect(12160.0, 4608.0, 13888.0, 7104.0)
+    set gg_rct_ScholomanceAmbient2=Rect(13856.0, 5440.0, 17952.0, 7072.0)
+    set gg_rct_ScholomanceAmbient1=Rect(15456.0, 7072.0, 17824.0, 8416.0)
+    set gg_rct_SouthshoreAmbient2=Rect(12064.0, 3936.0, 15296.0, 4608.0)
+    set gg_rct_SouthshoreAmbient3=Rect(13856.0, 4608.0, 15328.0, 5472.0)
+    set gg_rct_SouthshoreAmbient4=Rect(15232.0, 1920.0, 20064.0, 2976.0)
+    set gg_rct_SouthshoreAmbient5=Rect(17024.0, 736.0, 19584.0, 1920.0)
+    set gg_rct_BridgeAmbient=Rect(16960.0, - 288.0, 19232.0, 736.0)
+    set gg_rct_ScholomanceAmbient3=Rect(12928.0, 7072.0, 15456.0, 7840.0)
+    set gg_rct_HinterlandAmbient1=Rect(15328.0, 3040.0, 20864.0, 5408.0)
+    set gg_rct_HinterlandAmbient2=Rect(17984.0, 5408.0, 20800.0, 7040.0)
+    set gg_rct_Aerie_Peak_Copy=Rect(15328.0, 4096.0, 16480.0, 5184.0)
+    set gg_rct_TolbaradAmbient=Rect(12128.0, - 2176.0, 14144.0, 544.0)
+    set gg_rct_BalorAmbient=Rect(4832.0, - 14400.0, 8384.0, - 10112.0)
+    set gg_rct_StormwindAmbient2=Rect(8352.0, - 10528.0, 9888.0, - 8544.0)
+    set gg_rct_SentinelTowerAmbient=Rect(7424.0, - 17664.0, 10400.0, - 14304.0)
+    set gg_rct_StranglethornAmbient1=Rect(9408.0, - 19136.0, 15264.0, - 17472.0)
+    set gg_rct_StranglethornAmbient2=Rect(13536.0, - 22016.0, 16608.0, - 18272.0)
+    set gg_rct_StranglethornAmbient3=Rect(10496.0, - 23808.0, 14464.0, - 19168.0)
+    set gg_rct_ElwinForestAmbient=Rect(10432.0, - 14816.0, 15104.0, - 12704.0)
+    set gg_rct_DarkshireAmbient1=Rect(10400.0, - 17440.0, 15328.0, - 14816.0)
+    set gg_rct_DarkshireAmbient2=Rect(15328.0, - 18208.0, 16640.0, - 14720.0)
+    set gg_rct_DarkshireAmbient3=Rect(15136.0, - 14752.0, 19680.0, - 12672.0)
+    set gg_rct_BlastedlandAmbient=Rect(16640.0, - 21760.0, 20928.0, - 16896.0)
+    set gg_rct_SwampofSorrowsAmbient=Rect(16672.0, - 16896.0, 21152.0, - 14784.0)
+    set gg_rct_BurningSteppesAmbient=Rect(13440.0, - 12704.0, 19712.0, - 7552.0)
+    set gg_rct_BurningSteppeAmbient2=Rect(19680.0, - 14720.0, 21600.0, - 9504.0)
+    set gg_rct_IronforgeAmbient=Rect(11232.0, - 6656.0, 13440.0, - 4160.0)
+    set gg_rct_DunmoroghAmbient1=Rect(8416.0, - 8416.0, 11264.0, - 4096.0)
+    set gg_rct_DunmoroghAmbient2=Rect(10048.0, - 9216.0, 13440.0, - 6656.0)
+    set gg_rct_DunmoroghAmbient3=Rect(13408.0, - 7552.0, 16384.0, - 4032.0)
+    set gg_rct_LochModanAmbient=Rect(16352.0, - 7552.0, 19616.0, - 4032.0)
+    set gg_rct_WetlandAmbient1=Rect(14272.0, - 4032.0, 16448.0, - 416.0)
+    set gg_rct_WetlandAmbient2=Rect(13024.0, - 3808.0, 14304.0, - 2272.0)
+    set gg_rct_GrimBatolAmbient1=Rect(16448.0, - 4032.0, 19648.0, - 256.0)
+    set gg_rct_GrimBatolAmbient2=Rect(19680.0, - 7200.0, 23808.0, 736.0)
+    set gg_rct_Region_IC=Rect(- 11200.0, - 26848.0, - 11136.0, - 26784.0)
+    set gg_rct_Region_DB=Rect(- 7104.0, - 28992.0, - 7040.0, - 28928.0)
+    set gg_rct_Region_AE=Rect(- 15584.0, - 8448.0, - 15520.0, - 8384.0)
+    set gg_rct_Region_AZ_1=Rect(- 1760.0, 17888.0, - 1696.0, 17952.0)
+    set gg_rct_Region_AZ_2=Rect(- 4032.0, 23968.0, - 3968.0, 24032.0)
+    set gg_rct_Region_BM=Rect(14304.0, - 10592.0, 14368.0, - 10528.0)
+    set gg_rct_Region_ToS=Rect(768.0, 8576.0, 832.0, 8640.0)
+    set gg_rct_Region_SC=Rect(16192.0, 7616.0, 16256.0, 7680.0)
+    set gg_rct_IllidanWeather=Rect(- 17728.0, 2624.0, - 15904.0, 4640.0)
+    set gg_rct_IllidanMovement1=Rect(- 17088.0, 4032.0, - 17056.0, 4064.0)
+    set gg_rct_IllidanMovement2=Rect(- 17088.0, 3968.0, - 17056.0, 4000.0)
+    set gg_rct_IllidanAmbiance2=Rect(- 256.0, 8128.0, 2336.0, 10432.0)
+    set gg_rct_LightningBolt2=Rect(- 16800.0, 3488.0, - 16768.0, 3520.0)
+    set gg_rct_LightningBolt3=Rect(- 17056.0, 3584.0, - 17024.0, 3616.0)
+    set gg_rct_WaveCrash=Rect(- 17184.0, 3872.0, - 17152.0, 3904.0)
+    set gg_rct_BloodElfSecondChanceSpawn=Rect(- 10016.0, 21504.0, - 9312.0, 22304.0)
+    set gg_rct_AethneumTombExit=Rect(- 26112.0, 23232.0, - 25984.0, 23840.0)
+    set gg_rct_AethneumLibraryEntrance=Rect(- 16544.0, 23904.0, - 15936.0, 24160.0)
+    set gg_rct_IllidanMoveAethneum=Rect(- 24416.0, 21856.0, - 24384.0, 21888.0)
+    set gg_rct_ImmolFight=Rect(- 25728.0, 18496.0, - 24512.0, 19936.0)
+    set gg_rct_AethneumCatacombs=Rect(- 26432.0, 17952.0, - 21344.0, 24544.0)
+    set gg_rct_AethneumRemove=Rect(- 24000.0, 22624.0, - 23456.0, 22912.0)
+    set gg_rct_AetheneumTombExit2=Rect(- 22336.0, 20832.0, - 22144.0, 21216.0)
+    set gg_rct_NazjatarEntrance2=Rect(832.0, 992.0, 1312.0, 1184.0)
+    set gg_rct_NazjatarEntrance1=Rect(2112.0, 2752.0, 2592.0, 2944.0)
+    set gg_rct_NazjatarExit1=Rect(13728.0, - 27712.0, 14208.0, - 27520.0)
+    set gg_rct_NazjatarExit2=Rect(14144.0, - 29728.0, 14528.0, - 29408.0)
+    set gg_rct_AetheneumTombEntrance2=Rect(- 16288.0, - 7200.0, - 15936.0, - 6912.0)
+    set gg_rct_IllidanBoat1=Rect(- 5152.0, 4064.0, - 4832.0, 4512.0)
+    set gg_rct_IllidanBoat2=Rect(5344.0, 7456.0, 5472.0, 7616.0)
+    set gg_rct_IllidanBoat3=Rect(6144.0, 7072.0, 6208.0, 7136.0)
+    set gg_rct_IllidanBoat4=Rect(- 3552.0, 3168.0, - 3520.0, 3200.0)
+    set gg_rct_IllidanExit2=Rect(- 13856.0, - 8256.0, - 13600.0, - 8032.0)
+    set gg_rct_IllidanCameraExit=Rect(- 18112.0, - 10400.0, - 13344.0, - 6112.0)
+    set gg_rct_IllidanExitText1=Rect(- 15200.0, - 7808.0, - 15168.0, - 7776.0)
+    set gg_rct_SkullOfGuldan=Rect(- 12096.0, 23232.0, - 11680.0, 23488.0)
+    set gg_rct_IllidanDala1=Rect(19168.0, - 25024.0, 19424.0, - 24928.0)
+    set gg_rct_IllidanDala2=Rect(19296.0, - 25792.0, 19328.0, - 25760.0)
+    set gg_rct_IllidanDalaranInstance=Rect(18496.0, - 27584.0, 24256.0, - 24384.0)
+    set gg_rct_StartQuest2=Rect(- 11424.0, - 24384.0, - 11264.0, - 24224.0)
+    set gg_rct_IllidanDala4=Rect(20416.0, - 26208.0, 20448.0, - 26176.0)
+    set gg_rct_IllidanDala5=Rect(21984.0, - 26144.0, 22016.0, - 26112.0)
+    set gg_rct_IllidanDala6=Rect(21024.0, - 25088.0, 21056.0, - 25056.0)
+    set gg_rct_IllidanDala7=Rect(20736.0, - 25088.0, 20768.0, - 25056.0)
+    set gg_rct_IllidanDala8=Rect(19776.0, - 26144.0, 19808.0, - 26112.0)
+    set gg_rct_IllidanElementalSentry=Rect(21920.0, - 26176.0, 22496.0, - 25440.0)
+    set gg_rct_StartQuest3=Rect(- 10752.0, - 24416.0, - 10592.0, - 24256.0)
+    set gg_rct_IllidanDalaExit=Rect(10464.0, 6432.0, 10624.0, 6624.0)
+    set gg_rct_UnlockIllidanSwitch=Rect(23200.0, - 25472.0, 24032.0, - 25344.0)
+    set gg_rct_IllidanLook=Rect(23616.0, - 26208.0, 23648.0, - 26176.0)
+    set gg_rct_IllidanLast=Rect(- 16992.0, 3712.0, - 16960.0, 3744.0)
+    set gg_rct_AetheneumtoNazjatar=Rect(- 25472.0, 19008.0, - 25152.0, 19392.0)
+    set gg_rct_IllidanNaga1=Rect(15040.0, - 28000.0, 15072.0, - 27968.0)
+    set gg_rct_IllidanNaga2=Rect(16000.0, - 28672.0, 16032.0, - 28640.0)
+    set gg_rct_IllidanNaga3=Rect(14976.0, - 28064.0, 15008.0, - 28032.0)
+    set gg_rct_MaelstromAmbient=Rect(- 160.0, 224.0, 3296.0, 3552.0)
+    set gg_rct_Chapter2Map=Rect(- 26944.0, - 32256.0, - 20160.0, - 24960.0)
+    set gg_rct_Chapter3=Rect(- 26944.0, - 32224.0, - 16480.0, - 19744.0)
+    set gg_rct_WerewolfSpawn1=Rect(- 20864.0, - 31456.0, - 20256.0, - 30816.0)
+    set gg_rct_WerewolfSpawn2=Rect(- 20672.0, - 26752.0, - 20064.0, - 26112.0)
+    set gg_rct_WerewolfSpawn3=Rect(- 26176.0, - 25440.0, - 25568.0, - 24928.0)
+    set gg_rct_Attack_Commands=Rect(- 26944.0, - 32256.0, - 18912.0, - 24448.0)
+    set gg_rct_AttackPoint=Rect(- 23936.0, - 29792.0, - 23424.0, - 29344.0)
+    set gg_rct_GilneasMovement1=Rect(- 25664.0, - 21536.0, - 25632.0, - 21504.0)
+    set gg_rct_GilneasMovement2=Rect(- 25632.0, - 17952.0, - 25600.0, - 17920.0)
+    set gg_rct_GilneasMovement3=Rect(- 25088.0, - 17440.0, - 25056.0, - 17408.0)
+    set gg_rct_GilneasMovement4=Rect(- 25600.0, - 17632.0, - 25568.0, - 17600.0)
+    set gg_rct_GilneasMovement5=Rect(- 25600.0, - 17504.0, - 25568.0, - 17472.0)
+    set gg_rct_Innerfight1=Rect(- 24480.0, - 24448.0, - 24096.0, - 23904.0)
+    set gg_rct_InnerFightStart=Rect(- 26080.0, - 23040.0, - 23904.0, - 22880.0)
+    set gg_rct_Innerfight2=Rect(- 26208.0, - 24768.0, - 24096.0, - 23296.0)
+    set gg_rct_GilneasMovement2_Copy=Rect(- 25728.0, - 17824.0, - 25696.0, - 17792.0)
+    set gg_rct_GilneasMovement2_Copy_2=Rect(- 25536.0, - 17824.0, - 25504.0, - 17792.0)
+    set gg_rct_GilneasMovement2_Copy_2_Copy=Rect(- 25632.0, - 17728.0, - 25600.0, - 17696.0)
+    set gg_rct_Chapter2Start=Rect(- 26400.0, - 30880.0, - 25920.0, - 30624.0)
+    set gg_rct_Chapter2TeleStart=Rect(- 26400.0, - 30208.0, - 25920.0, - 29952.0)
+    set gg_rct_WerewolfSpawn4=Rect(- 25376.0, - 25408.0, - 24736.0, - 24992.0)
+    set gg_rct_AttackPoint_Copy=Rect(- 24640.0, - 29088.0, - 24128.0, - 28640.0)
+    set gg_rct_GilneasExit3=Rect(- 26688.0, - 21088.0, - 26432.0, - 20640.0)
+    set gg_rct_GilneasExit1=Rect(- 22944.0, - 18272.0, - 22368.0, - 18080.0)
+    set gg_rct_GilneasExit2=Rect(- 19008.0, - 23872.0, - 18784.0, - 23328.0)
+    set gg_rct_GilneasEntrance1=Rect(8448.0, 2720.0, 8928.0, 2912.0)
+    set gg_rct_GilneasEntrance2=Rect(10016.0, 1472.0, 10240.0, 1856.0)
+    set gg_rct_GilneasEntrance3=Rect(7104.0, - 1248.0, 7328.0, - 864.0)
+    set gg_rct_Checkpoint1Gilneas=Rect(- 21952.0, - 27648.0, - 21920.0, - 27616.0)
+    set gg_rct_Scarlet_Monastery_Interior=Rect(- 23136.0, 15360.0, - 22784.0, 15744.0)
+    set gg_rct_Undercity_Interior_1=Rect(- 24992.0, 14464.0, - 24640.0, 14848.0)
+    set gg_rct_Undercity_Interior_2=Rect(- 26400.0, 17344.0, - 26048.0, 17728.0)
+    set gg_rct_Undercity_Exterior_1=Rect(10976.0, 7808.0, 11328.0, 8192.0)
+    set gg_rct_Undercity_Exterior_2=Rect(10304.0, 7808.0, 10656.0, 8192.0)
+    set gg_rct_Scarlet_Monastery_Exterior=Rect(12704.0, 10912.0, 13056.0, 11296.0)
+    set gg_rct_Undercity_Escape=Rect(7776.0, 8288.0, 8128.0, 8672.0)
+    set gg_rct_DarkshireUnlock=Rect(13632.0, - 16320.0, 15136.0, - 15072.0)
+    set gg_rct_StormwindUnlock=Rect(8544.0, - 12704.0, 13408.0, - 8544.0)
+    set gg_rct_LakeshireUnlock=Rect(15296.0, - 13696.0, 17184.0, - 12864.0)
+    set gg_rct_NethergardeUnlock=Rect(19200.0, - 18400.0, 20608.0, - 16960.0)
+    set gg_rct_StratholmeUnlock=Rect(14976.0, 11168.0, 17952.0, 13952.0)
+    set gg_rct_TyrUnlock=Rect(20640.0, 6560.0, 24320.0, 9696.0)
+    set gg_rct_ShadowfangUnlock=Rect(7200.0, 3104.0, 8320.0, 4768.0)
+    set gg_rct_TrollAttackSpawn=Rect(22656.0, 12224.0, 22976.0, 12480.0)
+    set gg_rct_TrollTarget=Rect(18816.0, 12480.0, 18848.0, 12512.0)
+    set gg_rct_KilsorrowUnlock=Rect(- 2496.0, - 31904.0, - 1024.0, - 30752.0)
+    set gg_rct_HellfireUnlock=Rect(1600.0, - 27200.0, 3712.0, - 25312.0)
+    set gg_rct_ScarletAmbient=Rect(- 23424.0, 15072.0, - 20864.0, 17696.0)
+    set gg_rct_ThelUnlock=Rect(16416.0, - 6752.0, 17376.0, - 4768.0)
+    set gg_rct_KulAttack=Rect(5504.0, - 11136.0, 5824.0, - 10912.0)
+    set gg_rct_KulTarget=Rect(5632.0, - 13440.0, 5664.0, - 13408.0)
+    set gg_rct_BlademasterUnlock=Rect(6080.0, - 10496.0, 6752.0, - 10112.0)
+    set gg_rct_ZandalarUnlock=Rect(- 3712.0, - 17088.0, - 672.0, - 14656.0)
+    set gg_rct_UndercityUnlock=Rect(- 26944.0, 14176.0, - 24000.0, 17888.0)
+    set gg_rct_NaxxramasInside=Rect(- 22016.0, 14080.0, - 21504.0, 14368.0)
+    set gg_rct_NaxAmbient=Rect(- 23200.0, 11520.0, - 20288.0, 14528.0)
+    set gg_rct_NaxUnlock=Rect(1856.0, 18464.0, 1984.0, 18592.0)
+    set gg_rct_TwilightAmbient=Rect(- 26176.0, 10368.0, - 24000.0, 13792.0)
+    set gg_rct_TwilightInside=Rect(- 25344.0, 13248.0, - 24800.0, 13504.0)
+    set gg_rct_TwilightOutside=Rect(20960.0, - 5632.0, 21536.0, - 5344.0)
+    set gg_rct_ShipInside=Rect(- 13824.0, - 24608.0, - 13280.0, - 24160.0)
+    set gg_rct_ShipAmbient=Rect(- 14112.0, - 24736.0, - 12928.0, - 22112.0)
+    set gg_rct_ShipTarget=Rect(6336.0, - 10528.0, 6368.0, - 10496.0)
+    set gg_rct_NagaUnlock2=Rect(9632.0, - 31616.0, 14144.0, - 26304.0)
+    set gg_rct_NagaUnlock1=Rect(15552.0, - 29376.0, 17280.0, - 27424.0)
+    set gg_rct_NazjatarHidden=Rect(- 10752.0, - 24032.0, - 10592.0, - 23872.0)
+    set gg_rct_IllidanOutlandEntrance=Rect(- 768.0, - 20512.0, - 352.0, - 20064.0)
+    set gg_rct_Kalimdor=Rect(- 19552.0, - 18816.0, - 3936.0, 12000.0)
+    set gg_rct_FeathermoonUnlock=Rect(- 19648.0, - 10272.0, - 18048.0, - 7840.0)
+    set gg_rct_AstranaarUnlock=Rect(- 15104.0, 1344.0, - 13440.0, 2496.0)
+    set gg_rct_AshenvaleUnlock=Rect(- 13824.0, 2464.0, - 11360.0, 4576.0)
+    set gg_rct_DrownedTemple=Rect(18976.0, - 15936.0, 19424.0, - 15520.0)
+    set gg_rct_NzothIni=Rect(- 11328.0, - 25216.0, - 11200.0, - 25088.0)
+    set gg_rct_DragonmawUnlock=Rect(22592.0, - 4416.0, 23968.0, - 3488.0)
+    set gg_rct_SouthshoreUnlock=Rect(12512.0, 1632.0, 13824.0, 2656.0)
+    set gg_rct_GilneasMovement2_Copy_2_Copy_Copy=Rect(- 25696.0, - 17664.0, - 25664.0, - 17632.0)
+    set gg_rct_MaievStartUnlock=Rect(- 4288.0, - 28416.0, - 3168.0, - 27104.0)
+    set gg_rct_Silithus_Bug_Interior=Rect(- 26144.0, - 15424.0, - 25664.0, - 14912.0)
+    set gg_rct_Silithus_Stone_Interior=Rect(- 23424.0, - 12448.0, - 23136.0, - 11936.0)
+    set gg_rct_Silithus_Stone_Exterior=Rect(- 17088.0, - 18464.0, - 16768.0, - 18048.0)
+    set gg_rct_Silithus_Bug_Exterior=Rect(- 14624.0, - 17504.0, - 14368.0, - 17120.0)
+    set gg_rct_EchoUnlock=Rect(- 6880.0, - 6816.0, - 4480.0, - 3968.0)
+    set gg_rct_StrahnbradUnlock=Rect(14272.0, 4992.0, 15136.0, 5824.0)
+    set gg_rct_TunnelUnlock=Rect(- 24512.0, - 11712.0, - 22848.0, - 8480.0)
+    set gg_rct_AhnqirajInstance=Rect(- 26752.0, - 16416.0, - 22144.0, - 8000.0)
+    set gg_rct_CthunSummon=Rect(- 25824.0, - 9312.0, - 25696.0, - 9184.0)
+    set gg_rct_ZeppelinReturn=Rect(768.0, - 5856.0, 1376.0, - 5216.0)
+    set gg_rct_Trade1=Rect(11968.0, - 23200.0, 12352.0, - 22816.0)
+    set gg_rct_Trade2=Rect(- 8704.0, 9856.0, - 8320.0, 10240.0)
+    set gg_rct_Trade3=Rect(- 9280.0, - 3808.0, - 8864.0, - 3392.0)
+    set gg_rct_Trade4=Rect(20544.0, - 9984.0, 20928.0, - 9600.0)
+    set gg_rct_Trader1=Rect(3872.0, 15456.0, 4288.0, 15776.0)
+    set gg_rct_Trader2=Rect(- 6112.0, - 13344.0, - 5728.0, - 13024.0)
+    set gg_rct_Trader3=Rect(11072.0, - 22752.0, 11392.0, - 22464.0)
+    set gg_rct_GadgetUnlock=Rect(- 7520.0, - 13984.0, - 6592.0, - 12896.0)
+    set gg_rct_OilRig1=Rect(1536.0, - 4608.0, 2720.0, - 3648.0)
+    set gg_rct_OilRig2=Rect(1696.0, - 14688.0, 4064.0, - 11808.0)
+    set gg_rct_OilRig3=Rect(1952.0, - 16704.0, 5248.0, - 14816.0)
+    set gg_rct_OilRig4=Rect(- 4704.0, 7648.0, - 2336.0, 11200.0)
+    set gg_rct_OilRig5=Rect(- 2208.0, 10976.0, 2848.0, 13824.0)
+    set gg_rct_OilRig6=Rect(- 9280.0, - 20608.0, - 6464.0, - 18592.0)
+    set gg_rct_Ny_Ulduar_Interior=Rect(- 26432.0, 768.0, - 26048.0, 1184.0)
     set we=AddWeatherEffect(gg_rct_Ny_Ulduar_Interior, 'SNls')
     call EnableWeatherEffect(we, true)
-    set gg_rct_Ny_Twilight_Highlands_Interior=Rect(- 23328.0, 768.0, - 22976.0, 1152.0)
-    set gg_rct_Ny_Nazjatar_Interior=Rect(- 23648.0, - 7232.0, - 23168.0, - 6720.0)
+    set gg_rct_Ny_Twilight_Highlands_Interior=Rect(- 21600.0, 768.0, - 21248.0, 1152.0)
+    set gg_rct_Ny_Nazjatar_Interior=Rect(- 21920.0, - 7232.0, - 21440.0, - 6720.0)
     set we=AddWeatherEffect(gg_rct_Ny_Nazjatar_Interior, 'RAhr')
     call EnableWeatherEffect(we, true)
-    set gg_rct_Ny_Silithus_Interior=Rect(- 28416.0, - 7200.0, - 28064.0, - 6816.0)
+    set gg_rct_Ny_Silithus_Interior=Rect(- 26688.0, - 7200.0, - 26336.0, - 6816.0)
     set we=AddWeatherEffect(gg_rct_Ny_Silithus_Interior, 'WOlw')
     call EnableWeatherEffect(we, true)
-    set gg_rct_ScarletExit=Rect(10336.0, 11712.0, 10784.0, 12096.0)
-    set gg_rct_TempestKeepSpawn=Rect(3808.0, - 21856.0, 4224.0, - 21504.0)
-    set gg_rct_SummonObeliskTarget=Rect(3232.0, 22752.0, 3648.0, 23168.0)
-    set gg_rct_NyalothaInstance=Rect(- 28672.0, - 7264.0, - 22656.0, 1536.0)
-    set gg_rct_NyTanaris=Rect(- 15008.0, - 17888.0, - 14528.0, - 17376.0)
-    set gg_rct_NyNorth=Rect(3808.0, 23072.0, 4160.0, 23520.0)
-    set gg_rct_UldumAmbiance=Rect(- 15712.0, - 20320.0, - 11616.0, - 15232.0)
-    set gg_rct_NyalothaUnlock1=Rect(- 28640.0, - 1152.0, - 22304.0, 1504.0)
-    set gg_rct_NyalothaUnlock2=Rect(- 25504.0, - 7552.0, - 22528.0, - 2464.0)
-    set gg_rct_NyalothaUnlock3=Rect(- 28640.0, - 7520.0, - 25472.0, - 4032.0)
-    set gg_rct_ScarletHarbor=Rect(- 9728.0, 21984.0, - 7872.0, 23648.0)
-    set gg_rct_KaliRock1=Rect(- 16864.0, - 2336.0, - 15456.0, - 1280.0)
-    set gg_rct_KaliRock2=Rect(- 12480.0, - 8512.0, - 12032.0, - 7776.0)
-    set gg_rct_KaliRock3=Rect(- 14368.0, - 12032.0, - 13504.0, - 11616.0)
-    set gg_rct_KaliRock4=Rect(- 10304.0, - 12960.0, - 9408.0, - 12384.0)
-    set gg_rct_GoldrinnDuskwood=Rect(10976.0, - 16000.0, 11456.0, - 15520.0)
-    set gg_rct_GoldrinnHyjal=Rect(- 11040.0, 5216.0, - 10496.0, 5760.0)
-    set gg_rct_TeldrassilUnlock1=Rect(- 20032.0, 14368.0, - 18048.0, 16480.0)
-    set gg_rct_TeldrassilUnlock2=Rect(- 20640.0, 12160.0, - 18912.0, 13312.0)
-    set gg_rct_DarnassusWorgen=Rect(- 18048.0, 13504.0, - 16768.0, 15968.0)
-    set gg_rct_KaelSunwellChannel=Rect(18496.0, 21568.0, 18624.0, 21696.0)
-    set gg_rct_JainaChannel=Rect(- 9888.0, 17632.0, - 9792.0, 17728.0)
-    set gg_rct_Auberdine_Ships_2=Rect(- 16640.0, 7424.0, - 9504.0, 11072.0)
-    set gg_rct_Fel2=Rect(20032.0, - 30016.0, 20096.0, - 29952.0)
-    set gg_rct_Blackrock_Exit=Rect(19808.0, - 30048.0, 20320.0, - 29888.0)
-    set gg_rct_Shadowforge_gate=Rect(17952.0, - 31712.0, 18336.0, - 30912.0)
-    set gg_rct_InstanceBlackrock=Rect(16416.0, - 32032.0, 22592.0, - 28544.0)
-    set gg_rct_Fel1=Rect(21824.0, - 29536.0, 21888.0, - 29472.0)
-    set gg_rct_Fel2=Rect(20032.0, - 30016.0, 20096.0, - 29952.0)
-    set gg_rct_Fel3=Rect(20032.0, - 29984.0, 20096.0, - 29920.0)
-    set gg_rct_Region_BS=Rect(19776.0, - 29792.0, 19840.0, - 29728.0)
-    set gg_rct_BlackrockUnlock=Rect(20448.0, - 31968.0, 22560.0, - 28512.0)
+    set gg_rct_ScarletExit=Rect(12064.0, 11712.0, 12512.0, 12096.0)
+    set gg_rct_TempestKeepSpawn=Rect(5536.0, - 21856.0, 5952.0, - 21504.0)
+    set gg_rct_SummonObeliskTarget=Rect(4960.0, 22752.0, 5376.0, 23168.0)
+    set gg_rct_NyalothaInstance=Rect(- 26944.0, - 7264.0, - 20928.0, 1536.0)
+    set gg_rct_NyTanaris=Rect(- 13280.0, - 17888.0, - 12800.0, - 17376.0)
+    set gg_rct_NyNorth=Rect(5536.0, 23072.0, 5888.0, 23520.0)
+    set gg_rct_UldumAmbiance=Rect(- 13984.0, - 20320.0, - 9888.0, - 15232.0)
+    set gg_rct_NyalothaUnlock1=Rect(- 26912.0, - 1152.0, - 20576.0, 1504.0)
+    set gg_rct_NyalothaUnlock2=Rect(- 23776.0, - 7552.0, - 20800.0, - 2464.0)
+    set gg_rct_NyalothaUnlock3=Rect(- 26912.0, - 7520.0, - 23744.0, - 4032.0)
+    set gg_rct_ScarletHarbor=Rect(- 8000.0, 21984.0, - 6144.0, 23648.0)
+    set gg_rct_KaliRock1=Rect(- 15136.0, - 2336.0, - 13728.0, - 1280.0)
+    set gg_rct_KaliRock2=Rect(- 10752.0, - 8512.0, - 10304.0, - 7776.0)
+    set gg_rct_KaliRock3=Rect(- 12640.0, - 12032.0, - 11776.0, - 11616.0)
+    set gg_rct_KaliRock4=Rect(- 8576.0, - 12960.0, - 7680.0, - 12384.0)
+    set gg_rct_GoldrinnDuskwood=Rect(12704.0, - 16000.0, 13184.0, - 15520.0)
+    set gg_rct_GoldrinnHyjal=Rect(- 9312.0, 5216.0, - 8768.0, 5760.0)
+    set gg_rct_TeldrassilUnlock1=Rect(- 18304.0, 14368.0, - 16320.0, 16480.0)
+    set gg_rct_TeldrassilUnlock2=Rect(- 18912.0, 12160.0, - 17184.0, 13312.0)
+    set gg_rct_DarnassusWorgen=Rect(- 16320.0, 13504.0, - 15040.0, 15968.0)
+    set gg_rct_KaelSunwellChannel=Rect(20224.0, 21568.0, 20352.0, 21696.0)
+    set gg_rct_JainaChannel=Rect(- 8160.0, 17632.0, - 8064.0, 17728.0)
+    set gg_rct_Auberdine_Ships_2_Copy_2=Rect(- 14912.0, 7424.0, - 7776.0, 11072.0)
+    set gg_rct_Fel2=Rect(21760.0, - 30016.0, 21824.0, - 29952.0)
+    set gg_rct_Blackrock_Exit=Rect(21536.0, - 30048.0, 22048.0, - 29888.0)
+    set gg_rct_Shadowforge_gate=Rect(19680.0, - 31712.0, 20064.0, - 30912.0)
+    set gg_rct_InstanceBlackrock=Rect(18144.0, - 32032.0, 24320.0, - 28544.0)
+    set gg_rct_Fel1=Rect(23552.0, - 29536.0, 23616.0, - 29472.0)
+    set gg_rct_Fel2_Copy=Rect(21760.0, - 30016.0, 21824.0, - 29952.0)
+    set gg_rct_Fel3=Rect(21760.0, - 29984.0, 21824.0, - 29920.0)
+    set gg_rct_Region_BS=Rect(21504.0, - 29792.0, 21568.0, - 29728.0)
+    set gg_rct_BlackrockUnlock=Rect(22176.0, - 31968.0, 24288.0, - 28512.0)
 endfunction
 
 //***************************************************************************
@@ -14341,76 +14249,10 @@ endfunction
 //===========================================================================
 // Trigger: Terrain Initialization
 //===========================================================================
-function Trig_Terrain_Initialization_Func001Func001C takes nothing returns boolean
-    if ( not ( GetDestructableTypeId(GetEnumDestructable()) == 'LTrc' ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_Terrain_Initialization_Func001A takes nothing returns nothing
-    if ( Trig_Terrain_Initialization_Func001Func001C() ) then
-        call SetDestructableInvulnerableBJ(GetEnumDestructable(), true)
-    else
-    endif
-endfunction
-
-function Trig_Terrain_Initialization_Func002Func001C takes nothing returns boolean
-    if ( not ( GetDestructableTypeId(GetEnumDestructable()) == 'LTrc' ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_Terrain_Initialization_Func002A takes nothing returns nothing
-    if ( Trig_Terrain_Initialization_Func002Func001C() ) then
-        call SetDestructableInvulnerableBJ(GetEnumDestructable(), true)
-    else
-    endif
-endfunction
-
-function Trig_Terrain_Initialization_Func003Func001C takes nothing returns boolean
-    if ( not ( GetDestructableTypeId(GetEnumDestructable()) == 'LTrc' ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_Terrain_Initialization_Func003A takes nothing returns nothing
-    if ( Trig_Terrain_Initialization_Func003Func001C() ) then
-        call SetDestructableInvulnerableBJ(GetEnumDestructable(), true)
-    else
-    endif
-endfunction
-
-function Trig_Terrain_Initialization_Func004Func001C takes nothing returns boolean
-    if ( not ( GetDestructableTypeId(GetEnumDestructable()) == 'LTrc' ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_Terrain_Initialization_Func004A takes nothing returns nothing
-    if ( Trig_Terrain_Initialization_Func004Func001C() ) then
-        call SetDestructableInvulnerableBJ(GetEnumDestructable(), true)
-    else
-    endif
-endfunction
-
-function Trig_Terrain_Initialization_Func006002 takes nothing returns nothing
-    call SetDestAnimationSpeedPercent(GetEnumDestructable(), 0.00)
-endfunction
-
 function Trig_Terrain_Initialization_Actions takes nothing returns nothing
-    call EnumDestructablesInRectAll(gg_rct_KaliRock1, function Trig_Terrain_Initialization_Func001A)
-    call EnumDestructablesInRectAll(gg_rct_KaliRock2, function Trig_Terrain_Initialization_Func002A)
-    call EnumDestructablesInRectAll(gg_rct_KaliRock3, function Trig_Terrain_Initialization_Func003A)
-    call EnumDestructablesInRectAll(gg_rct_KaliRock4, function Trig_Terrain_Initialization_Func004A)
-    call EnumDestructablesInRectAll(gg_rct_AhnQiraj, function Trig_Terrain_Initialization_Func006002)
     // Thandol Span Bridge
     call SetDestructableInvulnerableBJ(gg_dest_LT08_0837, true)
     // Dalaran Shield
-    call AddWeatherEffectSaveLast(gg_rct_Dalaran, 'MEds')
     set udg_DalaranAura=GetLastCreatedWeatherEffect()
     call DestroyTrigger(GetTriggeringTrigger())
 endfunction
@@ -14764,8 +14606,6 @@ endfunction
 // Trigger: Floating text
 //===========================================================================
 function Trig_Floating_text_Actions takes nothing returns nothing
-    call CreateTextTagLocBJ("TRIGSTR_027", GetRectCenter(gg_rct_East_of_Azeroth), 0, 10, 100, 100, 100, 0)
-    call CreateTextTagLocBJ("TRIGSTR_028", GetRectCenter(gg_rct_West_of_Kalimdor), 0, 10, 100, 100, 100, 0)
     call DestroyTrigger(GetTriggeringTrigger())
 endfunction
 
@@ -14780,30 +14620,7 @@ endfunction
 // Trigger: Hidden Object and hastable INI
 //===========================================================================
 function Trig_Hidden_Object_and_hastable_INI_Actions takes nothing returns nothing
-    call SetDoodadAnimationRectBJ("hide", 'YScd', gg_rct_Stromgarde)
-    call SetDoodadAnimationRectBJ("hide", 'ZPfw', gg_rct_Cathedral_of_Light)
-    call SetDoodadAnimationRectBJ("hide", 'YPbs', gg_rct_Construction_Site_2)
-    call SetDoodadAnimationRectBJ("hide", 'LOwp', gg_rct_Construction_Site_2)
-    call SetDoodadAnimationRectBJ("hide", 'LOh1', gg_rct_Construction_Site_2)
-    call SetDoodadAnimationRectBJ("hide", 'CPbs', gg_rct_Construction_Site_2)
-    call SetDoodadAnimationRectBJ("hide", 'YOst', gg_rct_Construction_Site_2)
-    call SetDoodadAnimationRectBJ("hide", 'LOam', gg_rct_Construction_Site_2)
-    call SetDoodadAnimationRectBJ("hide", 'D02V', gg_rct_Construction_Site_2)
-    call SetDoodadAnimationRectBJ("hide", 'YPfs', gg_rct_Cathedral_of_Light)
-    call SetDoodadAnimationRectBJ("hide", 'LOar', gg_rct_Construction_Site_2)
     call PolledWait(0.50)
-    call SetDoodadAnimationRectBJ("hide", 'LOhp', gg_rct_Construction_Site_2)
-    call SetDoodadAnimationRectBJ("hide", 'YPpp', gg_rct_Cathedral_of_Light)
-    call SetDoodadAnimationRectBJ("hide", 'YOlp', gg_rct_Cathedral_of_Light)
-    call SetDoodadAnimationRectBJ("hide", 'XOmr', gg_rct_Stromwind_antiship)
-    call SetDoodadAnimationRectBJ("hide", 'YScd', gg_rct_HonorHold)
-    call SetDoodadAnimationRectBJ("hide", 'YScd', gg_rct_Stromwind_antiship)
-    call SetDoodadAnimationRectBJ("hide", 'ZCv2', gg_rct_Stromwind_antiship)
-    call SetDoodadAnimationRectBJ("hide", 'JOgr', gg_rct_Stromwind_antiship)
-    call SetDoodadAnimationRectBJ("hide", 'ZCv1', gg_rct_Stromwind_antiship)
-    call SetDoodadAnimationRectBJ("hide", 'D02N', gg_rct_Stromwind_antiship)
-    call SetDoodadAnimationRectBJ("hide", 'CSra', gg_rct_HonorHold)
-    call SetDoodadAnimationRectBJ("hide", 'YScr', gg_rct_Terenas)
     call DisableTrigger(GetTriggeringTrigger())
     call DestroyTrigger(GetTriggeringTrigger())
 endfunction
@@ -14830,7 +14647,6 @@ function Trig_ScourgeLegion_Actions takes nothing returns nothing
     call SetPlayerAbilityAvailableBJ(false, 'A0K2', udg_ScourgePlayer)
     call SetPlayerAbilityAvailableBJ(false, 'A09N', udg_ScourgePlayer)
     // Unit Invulnerable
-    set udg_IcecrownGroup=GetUnitsInRectOfPlayer(gg_rct_Ice_Crown, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_IcecrownGroup, function Trig_ScourgeLegion_Func010002)
     call DestroyGroup(udg_IcecrownGroup)
     call SetUnitInvulnerable(gg_unit_u000_0649, true)
@@ -14858,10 +14674,8 @@ endfunction
 function Trig_Teal_Actions takes nothing returns nothing
     call SetPlayerAbilityAvailableBJ(false, 'A0MZ', udg_FelPlayer)
     call SetPlayerAbilityAvailableBJ(false, 'A0GM', udg_FelPlayer)
-    set udg_HellfireGroup=GetUnitsInRectOfPlayer(gg_rct_KilsorrowUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_HellfireGroup, function Trig_Teal_Func005002)
     call DestroyGroup(udg_HellfireGroup)
-    set udg_HellfireGroup=GetUnitsInRectOfPlayer(gg_rct_BlackrockUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_HellfireGroup, function Trig_Teal_Func008002)
     call DestroyGroup(udg_HellfireGroup)
     call DisableTrigger(GetTriggeringTrigger())
@@ -14906,13 +14720,10 @@ function Trig_Purple_Actions takes nothing returns nothing
     call SetUnitInvulnerable(gg_unit_h006_0416, true)
     call SetUnitInvulnerable(gg_unit_h006_0411, true)
     call SetUnitInvulnerable(gg_unit_h000_0406, true)
-    set udg_LordaeronGroup=GetUnitsInRectOfPlayer(gg_rct_Terenas, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_LordaeronGroup, function Trig_Purple_Func019002)
     call DestroyGroup(udg_LordaeronGroup)
-    set udg_LordaeronGroup=GetUnitsInRectOfPlayer(gg_rct_StratholmeUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_LordaeronGroup, function Trig_Purple_Func022002)
     call DestroyGroup(udg_LordaeronGroup)
-    set udg_LordaeronGroup=GetUnitsInRectOfPlayer(gg_rct_TyrUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_LordaeronGroup, function Trig_Purple_Func025002)
     call DestroyGroup(udg_LordaeronGroup)
     call DisableTrigger(GetTriggeringTrigger())
@@ -14950,16 +14761,11 @@ endfunction
 
 function Trig_Yellow_Actions takes nothing returns nothing
     // ------------------------- Yellow ------------------------- 
-    set udg_Aeriepeak=GetUnitsInRectOfPlayer(gg_rct_Aerie_Peak, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Aeriepeak, function Trig_Yellow_Func003002)
     call DestroyGroup(udg_Aeriepeak)
-    set udg_DarkIrons=GetUnitsInRectOfPlayer(gg_rct_Shadowforge_City, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_DarkIrons, function Trig_Yellow_Func006002)
-    set udg_DarkIrons=GetUnitsInRectOfPlayer(gg_rct_IronforgeAmbient, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_DarkIrons, function Trig_Yellow_Func008002)
-    set udg_DarkIrons=GetUnitsInRectOfPlayer(gg_rct_ThelUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_DarkIrons, function Trig_Yellow_Func010002)
-    set udg_DarkIrons=GetUnitsInRectOfPlayer(gg_rct_DunmoroghAmbient2, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_DarkIrons, function Trig_Yellow_Func012002)
     call DestroyGroup(udg_DarkIrons)
     // Disables and Limits
@@ -15023,21 +14829,15 @@ function Trig_DalaKultiras_Actions takes nothing returns nothing
     call SetUnitInvulnerable(gg_unit_h002_0230, true)
     // Groups
     // ------------------------- Orange ------------------------- 
-    set udg_Theramore=GetUnitsInRectOfPlayer(gg_rct_Theramore, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Theramore, function Trig_DalaKultiras_Func018002)
-    set udg_Theramore=GetUnitsInRectOfPlayer(gg_rct_SouthshoreUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Theramore, function Trig_DalaKultiras_Func020002)
     call DestroyGroup(udg_Theramore)
-    set udg_Kultiras=GetUnitsInRectOfPlayer(gg_rct_Kultiras, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Kultiras, function Trig_DalaKultiras_Func023002)
     call DestroyGroup(udg_Kultiras)
-    set udg_Kultiras=GetUnitsInRectOfPlayer(gg_rct_Dalaran, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Kultiras, function Trig_DalaKultiras_Func026002)
     call DestroyGroup(udg_Kultiras)
-    set udg_Kultiras=GetUnitsInRectOfPlayer(gg_rct_DalaranDungeon, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Kultiras, function Trig_DalaKultiras_Func029002)
     call DestroyGroup(udg_Kultiras)
-    set udg_Kultiras=GetUnitsInRectOfPlayer(gg_rct_BlademasterUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Kultiras, function Trig_DalaKultiras_Func032002)
     call DestroyGroup(udg_Kultiras)
     call DisableTrigger(GetTriggeringTrigger())
@@ -15077,11 +14877,8 @@ function Trig_Green_Actions takes nothing returns nothing
     call SetUnitInvulnerable(gg_unit_n001_0165, true)
     // Groups
     // ------------------------- Green ------------------------- 
-    set udg_QuelDanilLodge=GetUnitsInRectOfPlayer(gg_rct_SunwellAmbient, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_QuelDanilLodge, function Trig_Green_Func010002)
-    set udg_QuelDanilLodge=GetUnitsInRectOfPlayer(gg_rct_QuelDanil_Lodge, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_QuelDanilLodge, function Trig_Green_Func012002)
-    set udg_TempestKeep=GetUnitsInRectOfPlayer(gg_rct_TempestKeep, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_TempestKeep, function Trig_Green_Func014002)
     call ForGroupBJ(udg_TempestKeep, function Trig_Green_Func015002)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -15184,26 +14981,19 @@ function Trig_Dark_Green_Actions takes nothing returns nothing
     call SetUnitInvulnerable(gg_unit_hbla_3319, true)
     call SetUnitInvulnerable(gg_unit_h05Z_3325, true)
     call SetUnitInvulnerable(gg_unit_h03W_1656, true)
-    set udg_HonorHold=GetUnitsInRectOfPlayer(gg_rct_HonorHold, udg_StormwindPlayer)
     call ForGroupBJ(udg_HonorHold, function Trig_Dark_Green_Func019002)
     call ForGroupBJ(udg_HonorHold, function Trig_Dark_Green_Func020002)
     call DestroyGroup(udg_HonorHold)
-    set udg_HonorHold=GetUnitsInRectOfPlayer(gg_rct_HonorHold, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_HonorHold, function Trig_Dark_Green_Func023002)
     call DestroyGroup(udg_HonorHold)
-    set udg_Stromgarde=GetUnitsInRectOfPlayer(gg_rct_Stromgarde, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Stromgarde, function Trig_Dark_Green_Func026002)
     call DestroyGroup(udg_Stromgarde)
-    set udg_Stromgarde=GetUnitsInRectOfPlayer(gg_rct_DarkshireUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Stromgarde, function Trig_Dark_Green_Func029002)
     call DestroyGroup(udg_Stromgarde)
-    set udg_Stromgarde=GetUnitsInRectOfPlayer(gg_rct_LakeshireUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Stromgarde, function Trig_Dark_Green_Func032002)
     call DestroyGroup(udg_Stromgarde)
-    set udg_Stromgarde=GetUnitsInRectOfPlayer(gg_rct_StormwindUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Stromgarde, function Trig_Dark_Green_Func035002)
     call DestroyGroup(udg_Stromgarde)
-    set udg_Stromgarde=GetUnitsInRectOfPlayer(gg_rct_NethergardeUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Stromgarde, function Trig_Dark_Green_Func038002)
     call DestroyGroup(udg_Stromgarde)
     call DisableTrigger(GetTriggeringTrigger())
@@ -15242,13 +15032,9 @@ endfunction
 function Trig_SentinelDruid_Actions takes nothing returns nothing
     call SetPlayerStateBJ(Player(11), PLAYER_STATE_FOOD_CAP_CEILING, 300)
     call SetPlayerStateBJ(Player(18), PLAYER_STATE_FOOD_CAP_CEILING, 300)
-    set udg_FeathermoonGroup=GetUnitsInRectOfPlayer(gg_rct_AstranaarUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_FeathermoonGroup, function Trig_SentinelDruid_Func004002)
-    set udg_FeathermoonGroup=GetUnitsInRectOfPlayer(gg_rct_FeathermoonUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_FeathermoonGroup, function Trig_SentinelDruid_Func006002)
-    set udg_FeathermoonGroup=GetUnitsInRectOfPlayer(gg_rct_MoongladeVillage, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_FeathermoonGroup, function Trig_SentinelDruid_Func008002)
-    set udg_MaievUnlockOutland=GetUnitsInRectOfPlayer(gg_rct_MaievStartUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_MaievUnlockOutland, function Trig_SentinelDruid_Func010002)
     call ForGroupBJ(udg_MaievUnlockOutland, function Trig_SentinelDruid_Func011002)
     call SetPlayerTechResearchedSwap('Rews', 1, udg_DruidPlayer)
@@ -15309,31 +15095,21 @@ endfunction
 
 function Trig_Group_Hiding_and_Invuln_Actions takes nothing returns nothing
     // ------------------------- Pink ------------------------- 
-    set udg_ZulFurrak=GetUnitsInRectOfPlayer(gg_rct_Zulfarrak, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_ZulFurrak, function Trig_Group_Hiding_and_Invuln_Func004002)
-    set udg_ZulFurrak=GetUnitsInRectOfPlayer(gg_rct_EchoIsleAmbient, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_ZulFurrak, function Trig_Group_Hiding_and_Invuln_Func006002)
-    set udg_ZulFurrak=GetUnitsInRectOfPlayer(gg_rct_StonemaulKeep, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_ZulFurrak, function Trig_Group_Hiding_and_Invuln_Func008002)
-    set udg_Orgrimmar=GetUnitsInRectOfPlayer(gg_rct_Orgrimmar, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Orgrimmar, function Trig_Group_Hiding_and_Invuln_Func010002)
     call DestroyGroup(udg_Orgrimmar)
-    set udg_DarkspearIsland=GetUnitsInRectOfPlayer(gg_rct_Darkspear_Island, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_DarkspearIsland, function Trig_Group_Hiding_and_Invuln_Func013002)
     call DestroyGroup(udg_DarkspearIsland)
-    set udg_Crossroad=GetUnitsInRectOfPlayer(gg_rct_Crossroads, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Crossroad, function Trig_Group_Hiding_and_Invuln_Func016002)
     call ForGroupBJ(udg_Crossroad, function Trig_Group_Hiding_and_Invuln_Func017002)
-    set udg_Thrallislandgroup=GetUnitsInRectOfPlayer(gg_rct_Thrall_6, Player(PLAYER_NEUTRAL_AGGRESSIVE))
     // ------------------------- Grey ------------------------- 
-    set udg_WarsongLumberCamp=GetUnitsInRectOfPlayer(gg_rct_WarsongCamp, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_WarsongLumberCamp, function Trig_Group_Hiding_and_Invuln_Func021002)
     call DestroyGroup(udg_WarsongLumberCamp)
-    set udg_Chen=GetUnitsInRectOfPlayer(gg_rct_Chen, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Chen, function Trig_Group_Hiding_and_Invuln_Func024002)
     call DestroyGroup(udg_Chen)
     // ------------------------- Hostile/Creeps ------------------------- 
-    set udg_Gilneas=GetUnitsInRectOfPlayer(gg_rct_Gilneas, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Gilneas, function Trig_Group_Hiding_and_Invuln_Func028002)
     call DestroyGroup(udg_Gilneas)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -15349,64 +15125,6 @@ endfunction
 // Trigger: AmbianceEK
 //===========================================================================
 function Trig_AmbianceEK_Actions takes nothing returns nothing
-    call SetStackedSoundBJ(true, gg_snd_LordaeronSummerDay, gg_rct_QuelthalasAmbient)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronSummerDay, gg_rct_LordaeronAmbient1)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronSummerDay, gg_rct_LordaeronAmbient2)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronSummerDay, gg_rct_LordaeronAmbient3)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronSummerDay, gg_rct_LordaeronAmbient4)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronSummerDay, gg_rct_LordaeronAmbient5)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronSummerDay, gg_rct_ElwinForestAmbient)
-    call SetStackedSoundBJ(true, gg_snd_CityScapeDay, gg_rct_SunwellAmbient)
-    call SetStackedSoundBJ(true, gg_snd_CityScapeDay, gg_rct_StratholmeAmbient)
-    call SetStackedSoundBJ(true, gg_snd_CityScapeDay, gg_rct_Terenas)
-    call SetStackedSoundBJ(true, gg_snd_CityScapeDay, gg_rct_TyrHandAmbient)
-    call SetStackedSoundBJ(true, gg_snd_CityScapeDay, gg_rct_Dalaran)
-    call SetStackedSoundBJ(true, gg_snd_CityScapeDay, gg_rct_Stromgarde)
-    call SetStackedSoundBJ(true, gg_snd_CityScapeDay, gg_rct_StormwindAmbient2)
-    call SetStackedSoundBJ(true, gg_snd_CityScapeDay, gg_rct_Stromwind_antiship)
-    call SetStackedSoundBJ(true, gg_snd_CityScapeDay, gg_rct_ScarletAmbient)
-    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsDay, gg_rct_Gilneas)
-    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsDay, gg_rct_Chapter3)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronSummerNight, gg_rct_ShadowfangAmbient)
-    call SetStackedSoundBJ(true, gg_snd_IceCrownDay, gg_rct_LordamereLakeAmbient)
-    call SetStackedSoundBJ(true, gg_snd_IceCrownDay, gg_rct_BridgeAmbient)
-    call SetStackedSoundBJ(true, gg_snd_IceCrownDay, gg_rct_Aerie_Peak)
-    call SetStackedSoundBJ(true, gg_snd_IceCrownDay, gg_rct_DunmoroghAmbient1)
-    call SetStackedSoundBJ(true, gg_snd_IceCrownDay, gg_rct_DunmoroghAmbient2)
-    call SetStackedSoundBJ(true, gg_snd_IceCrownDay, gg_rct_DunmoroghAmbient3)
-    call SetStackedSoundBJ(true, gg_snd_IceCrownNight, gg_rct_IronforgeAmbient)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_SouthshoreAmbient)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_SouthshoreAmbient2)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_SouthshoreAmbient3)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_SouthshoreAmbient4)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_SouthshoreAmbient5)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_ScholomanceAmbient1)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_ScholomanceAmbient2)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_ScholomanceAmbient3)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_Kultiras)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_SentinelTowerAmbient)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_GrimBatolAmbient1)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_GrimBatolAmbient2)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronFallNight, gg_rct_ZulAman_trolls)
-    call SetStackedSoundBJ(true, gg_snd_NorthrendDay, gg_rct_AlteracAmbient)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronWinterNight, gg_rct_HinterlandAmbient1)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronWinterNight, gg_rct_HinterlandAmbient2)
-    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsDay, gg_rct_TolbaradAmbient)
-    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsDay, gg_rct_UndercityUnlock)
-    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsDay, gg_rct_DarkshireAmbient1)
-    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsDay, gg_rct_DarkshireAmbient2)
-    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsDay, gg_rct_DarkshireAmbient3)
-    call SetStackedSoundBJ(true, gg_snd_WetlandsNight, gg_rct_BalorAmbient)
-    call SetStackedSoundBJ(true, gg_snd_WetlandsNight, gg_rct_StranglethornAmbient1)
-    call SetStackedSoundBJ(true, gg_snd_WetlandsNight, gg_rct_StranglethornAmbient2)
-    call SetStackedSoundBJ(true, gg_snd_WetlandsNight, gg_rct_StranglethornAmbient3)
-    call SetStackedSoundBJ(true, gg_snd_BlackCitadel_OutlandNight, gg_rct_BlastedlandAmbient)
-    call SetStackedSoundBJ(true, gg_snd_AshenvaleNight, gg_rct_SwampofSorrowsAmbient)
-    call SetStackedSoundBJ(true, gg_snd_AshenvaleNight, gg_rct_WetlandAmbient1)
-    call SetStackedSoundBJ(true, gg_snd_AshenvaleNight, gg_rct_WetlandAmbient2)
-    call SetStackedSoundBJ(true, gg_snd_BarrensDay, gg_rct_BurningSteppesAmbient)
-    call SetStackedSoundBJ(true, gg_snd_BarrensDay, gg_rct_BurningSteppeAmbient2)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronWinterDay, gg_rct_LochModanAmbient)
 endfunction
 
 //===========================================================================
@@ -15420,46 +15138,6 @@ endfunction
 // Trigger: Ambiance
 //===========================================================================
 function Trig_Ambiance_Actions takes nothing returns nothing
-    call SetStackedSoundBJ(true, gg_snd_NorthrendNight, gg_rct_Northrend_Ambiance)
-    call SetStackedSoundBJ(true, gg_snd_NorthrendNight, gg_rct_Coldarra)
-    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsNight, gg_rct_InstanceDalaranDungeon1)
-    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsNight, gg_rct_InstanceScholomance)
-    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsNight, gg_rct_IllidanDalaranInstance)
-    call SetStackedSoundBJ(true, gg_snd_BlackCitadel_OutlandNight, gg_rct_InstanceDireMaul)
-    call SetStackedSoundBJ(true, gg_snd_BlackCitadel_OutlandNight, gg_rct_AethneumCatacombs)
-    call SetStackedSoundBJ(true, gg_snd_BlackCitadel_OutlandNight, gg_rct_InstanceSargerasTomb)
-    call SetStackedSoundBJ(true, gg_snd_BlackCitadel_OutlandDay, gg_rct_InstanceOutland)
-    call SetStackedSoundBJ(true, gg_snd_BlackCitadel_OutlandDay, gg_rct_InstanceBlackrock)
-    call SetStackedSoundBJ(true, gg_snd_BlackCitadel_OutlandDay, gg_rct_TwistingNether)
-    call SetStackedSoundBJ(true, gg_snd_IceCrownNight, gg_rct_InstanceAzjolNerub)
-    call SetStackedSoundBJ(true, gg_snd_AshenvaleNight, gg_rct_TeldrassilAmbient)
-    call SetStackedSoundBJ(true, gg_snd_AshenvaleNight, gg_rct_FeralasAmbient1)
-    call SetStackedSoundBJ(true, gg_snd_AshenvaleNight, gg_rct_FeralasAmbient2)
-    call SetStackedSoundBJ(true, gg_snd_AshenvaleNight, gg_rct_RanazjarAmbient)
-    call SetStackedSoundBJ(true, gg_snd_AshenvaleNight, gg_rct_DusthallowAmbient)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_AzuremystAmbient)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_AszharaAmbient1)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_AzsharaAmbient2)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_EchoIsleAmbient)
-    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_MaelstromAmbient)
-    call SetStackedSoundBJ(true, gg_snd_AshenvaleDay, gg_rct_AshenvaleAmbient)
-    call SetStackedSoundBJ(true, gg_snd_AshenvaleDay, gg_rct_AshenvaleAmbient2)
-    call SetStackedSoundBJ(true, gg_snd_AshenvaleDay, gg_rct_AshenvaleAmbient3)
-    call SetStackedSoundBJ(true, gg_snd_AshenvaleDay, gg_rct_AshenvaleAmbient4)
-    call SetStackedSoundBJ(true, gg_snd_BarrensDay, gg_rct_BarrenAmbient1)
-    call SetStackedSoundBJ(true, gg_snd_BarrensDay, gg_rct_BarrenAmbient2)
-    call SetStackedSoundBJ(true, gg_snd_BarrensDay, gg_rct_BarrenAmbient3)
-    call SetStackedSoundBJ(true, gg_snd_BarrensDay, gg_rct_BarrenAmbient4)
-    call SetStackedSoundBJ(true, gg_snd_BarrensDay, gg_rct_BarrenAmbient5)
-    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsDay, gg_rct_SilithusAmbient)
-    call SetStackedSoundBJ(true, gg_snd_WetlandsNight, gg_rct_UngoroAmbient)
-    call SetStackedSoundBJ(true, gg_snd_WetlandsNight, gg_rct_UldumAmbiance)
-    call SetStackedSoundBJ(true, gg_snd_Wetlandsday, gg_rct_ZulfarrakAmbient)
-    call SetStackedSoundBJ(true, gg_snd_Wetlandsday, gg_rct_KezanAmbient)
-    call SetStackedSoundBJ(true, gg_snd_Wetlandsday, gg_rct_Darkspear_Island)
-    call SetStackedSoundBJ(true, gg_snd_Wetlandsday, gg_rct_Broken_Isles)
-    call SetStackedSoundBJ(true, gg_snd_IceCrownDay, gg_rct_WinterspringAmbient1)
-    call SetStackedSoundBJ(true, gg_snd_IceCrownDay, gg_rct_WinterspringAmbient2)
 endfunction
 
 //===========================================================================
@@ -16213,87 +15891,6 @@ function Trig_Shipyard_Cancellation_Rects_Func001C takes nothing returns boolean
 endfunction
 
 function Trig_Shipyard_Cancellation_Rects_Func002C takes nothing returns boolean
-    if ( ( RectContainsUnit(gg_rct_CaerDarrowShipyard, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_InstanceNazjatar, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Arathi_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Kali_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Dustwallow_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_STV_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Fenris_ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Auberdine_Ships_2, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Outland_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Northern_Kali_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Scholo_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_DalaranDungeon, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Stromwind_antiship, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_StratholmeShipyard, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Gilneas_Canals, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_TwistingNether, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Dun_Morogh_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Northrend_ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Desolace_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_South_EK_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_IcecrownShipyard, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Loch_Modan_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Tomb_Of_Sargeras_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Quel_Ships_1, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Quel_Ships_2, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Quel_Ships_3, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Chapter3, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
     return false
 endfunction
 
@@ -16301,7 +15898,7 @@ function Trig_Shipyard_Cancellation_Rects_Conditions takes nothing returns boole
     if ( not Trig_Shipyard_Cancellation_Rects_Func001C() ) then
         return false
     endif
-    if ( not Trig_Shipyard_Cancellation_Rects_Func002C() ) then
+    if ( not (false) ) then // INLINED!!
         return false
     endif
     return true
@@ -16676,87 +16273,6 @@ function Trig_Cancel_Shipyards_Func002C takes nothing returns boolean
 endfunction
 
 function Trig_Cancel_Shipyards_Func003C takes nothing returns boolean
-    if ( ( RectContainsUnit(gg_rct_CaerDarrowShipyard, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_InstanceNazjatar, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Arathi_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Kali_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Dustwallow_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_STV_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Fenris_ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Auberdine_Ships_2, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Outland_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Northern_Kali_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Scholo_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_DalaranDungeon, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Stromwind_antiship, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_StratholmeShipyard, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Gilneas_Canals, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_TwistingNether, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Dun_Morogh_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Northrend_ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Desolace_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_South_EK_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_IcecrownShipyard, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Loch_Modan_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Tomb_Of_Sargeras_Ships, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Quel_Ships_1, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Quel_Ships_2, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Quel_Ships_3, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
-    if ( ( RectContainsUnit(gg_rct_Chapter3, GetConstructedStructure()) == true ) ) then
-        return true
-    endif
     return false
 endfunction
 
@@ -16764,7 +16280,7 @@ function Trig_Cancel_Shipyards_Conditions takes nothing returns boolean
     if ( not Trig_Cancel_Shipyards_Func002C() ) then
         return false
     endif
-    if ( not Trig_Cancel_Shipyards_Func003C() ) then
+    if ( not (false) ) then // INLINED!!
         return false
     endif
     return true
@@ -16870,12 +16386,10 @@ function Trig_High_Elves_Protection_2_Conditions takes nothing returns boolean
 endfunction
 
 function Trig_High_Elves_Protection_2_Func005A takes nothing returns nothing
-    call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_Silvermon_Palace_trolls))
     call DestroyGroup(udg_TempGroup)
 endfunction
 
 function Trig_High_Elves_Protection_2_Actions takes nothing returns nothing
-    set udg_TempGroup=GetUnitsInRectOfPlayer(gg_rct_Quelthalas, Player(22))
     call ForGroupBJ(udg_TempGroup, function Trig_High_Elves_Protection_2_Func005A)
     call SetUnitInvulnerable(gg_unit_h003_0418, false)
     call DisplayTextToForce(GetPlayersAll(), "TRIGSTR_017")
@@ -16911,7 +16425,6 @@ endfunction
 //===========================================================================
 function InitTrig_Capital_antisuicide takes nothing returns nothing
     set gg_trg_Capital_antisuicide=CreateTrigger()
-    call TriggerRegisterEnterRectSimple(gg_trg_Capital_antisuicide, gg_rct_Terenas)
     call TriggerAddCondition(gg_trg_Capital_antisuicide, Condition(function Trig_Capital_antisuicide_Conditions))
     call TriggerAddAction(gg_trg_Capital_antisuicide, function Trig_Capital_antisuicide_Actions)
 endfunction
@@ -17138,67 +16651,7 @@ endfunction
 //===========================================================================
 // Trigger: RemoveKalimRocks
 //===========================================================================
-function Trig_RemoveKalimRocks_Func001Func001C takes nothing returns boolean
-    if ( not ( GetDestructableTypeId(GetEnumDestructable()) == 'LTrc' ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_RemoveKalimRocks_Func001A takes nothing returns nothing
-    if ( Trig_RemoveKalimRocks_Func001Func001C() ) then
-        call RemoveDestructable(GetEnumDestructable())
-    else
-    endif
-endfunction
-
-function Trig_RemoveKalimRocks_Func002Func001C takes nothing returns boolean
-    if ( not ( GetDestructableTypeId(GetEnumDestructable()) == 'LTrc' ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_RemoveKalimRocks_Func002A takes nothing returns nothing
-    if ( Trig_RemoveKalimRocks_Func002Func001C() ) then
-        call RemoveDestructable(GetEnumDestructable())
-    else
-    endif
-endfunction
-
-function Trig_RemoveKalimRocks_Func003Func001C takes nothing returns boolean
-    if ( not ( GetDestructableTypeId(GetEnumDestructable()) == 'LTrc' ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_RemoveKalimRocks_Func003A takes nothing returns nothing
-    if ( Trig_RemoveKalimRocks_Func003Func001C() ) then
-        call RemoveDestructable(GetEnumDestructable())
-    else
-    endif
-endfunction
-
-function Trig_RemoveKalimRocks_Func004Func001C takes nothing returns boolean
-    if ( not ( GetDestructableTypeId(GetEnumDestructable()) == 'LTrc' ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_RemoveKalimRocks_Func004A takes nothing returns nothing
-    if ( Trig_RemoveKalimRocks_Func004Func001C() ) then
-        call RemoveDestructable(GetEnumDestructable())
-    else
-    endif
-endfunction
-
 function Trig_RemoveKalimRocks_Actions takes nothing returns nothing
-    call EnumDestructablesInRectAll(gg_rct_KaliRock1, function Trig_RemoveKalimRocks_Func001A)
-    call EnumDestructablesInRectAll(gg_rct_KaliRock2, function Trig_RemoveKalimRocks_Func002A)
-    call EnumDestructablesInRectAll(gg_rct_KaliRock3, function Trig_RemoveKalimRocks_Func003A)
-    call EnumDestructablesInRectAll(gg_rct_KaliRock4, function Trig_RemoveKalimRocks_Func004A)
 endfunction
 
 //===========================================================================
@@ -17234,7 +16687,6 @@ endfunction
 //===========================================================================
 function InitTrig_Book_of_Medivh_retrieval takes nothing returns nothing
     set gg_trg_Book_of_Medivh_retrieval=CreateTrigger()
-    call TriggerRegisterEnterRectSimple(gg_trg_Book_of_Medivh_retrieval, gg_rct_Book_Retrieval)
     call TriggerAddCondition(gg_trg_Book_of_Medivh_retrieval, Condition(function Trig_Book_of_Medivh_retrieval_Conditions))
     call TriggerAddAction(gg_trg_Book_of_Medivh_retrieval, function Trig_Book_of_Medivh_retrieval_Actions)
 endfunction
@@ -17267,7 +16719,6 @@ endfunction
 //===========================================================================
 function InitTrig_Book_of_Medivh_retrieval_blue_and_red takes nothing returns nothing
     set gg_trg_Book_of_Medivh_retrieval_blue_and_red=CreateTrigger()
-    call TriggerRegisterEnterRectSimple(gg_trg_Book_of_Medivh_retrieval_blue_and_red, gg_rct_Book_Retrieval)
     call TriggerAddCondition(gg_trg_Book_of_Medivh_retrieval_blue_and_red, Condition(function Trig_Book_of_Medivh_retrieval_blue_and_red_Conditions))
     call TriggerAddAction(gg_trg_Book_of_Medivh_retrieval_blue_and_red, function Trig_Book_of_Medivh_retrieval_blue_and_red_Actions)
 endfunction
@@ -17294,7 +16745,6 @@ endfunction
 
 function Trig_Tomb_of_Sargeras_Open_Actions takes nothing returns nothing
     call WaygateActivateBJ(true, gg_unit_n032_0769)
-    call WaygateSetDestinationLocBJ(gg_unit_n032_0769, GetRectCenter(gg_rct_Sargeras_Exit))
     set udg_IllidanTomb=true
     call SetUnitAnimation(gg_unit_o01U_1388, "decay flesh")
     call DisplayTextToForce(GetPlayersAll(), "TRIGSTR_032")
@@ -17306,7 +16756,6 @@ endfunction
 function InitTrig_Tomb_of_Sargeras_Open takes nothing returns nothing
     set gg_trg_Tomb_of_Sargeras_Open=CreateTrigger()
     call DisableTrigger(gg_trg_Tomb_of_Sargeras_Open)
-    call TriggerRegisterEnterRectSimple(gg_trg_Tomb_of_Sargeras_Open, gg_rct_Sargeras_Entrance)
     call TriggerAddCondition(gg_trg_Tomb_of_Sargeras_Open, Condition(function Trig_Tomb_of_Sargeras_Open_Conditions))
     call TriggerAddAction(gg_trg_Tomb_of_Sargeras_Open, function Trig_Tomb_of_Sargeras_Open_Actions)
 endfunction
@@ -17389,16 +16838,12 @@ function Trig_Intros_Cinematic_Actions takes nothing returns nothing
     call CameraSetupApplyForPlayer(true, gg_cam_Forsaken1, Player(9), 0.00)
     call SetCameraFieldForPlayer(Player(19), CAMERA_FIELD_TARGET_DISTANCE, 2400.00, 1.00)
     call SetCameraFieldForPlayer(Player(8), CAMERA_FIELD_TARGET_DISTANCE, 2400.00, 1.00)
-    call AddWeatherEffectSaveLast(gg_rct_IllidanWeather, 'RAhr')
     call EnableWeatherEffect(GetLastCreatedWeatherEffect(), true)
     set udg_IllidanRain=GetLastCreatedWeatherEffect()
-    call AddWeatherEffectSaveLast(gg_rct_IllidanWeather, 'WNcw')
     call EnableWeatherEffect(GetLastCreatedWeatherEffect(), true)
     set udg_IllidanWind=GetLastCreatedWeatherEffect()
-    call AddWeatherEffectSaveLast(gg_rct_IllidanAmbiance2, 'RAhr')
     call EnableWeatherEffect(GetLastCreatedWeatherEffect(), true)
     set udg_IllidanRain2=GetLastCreatedWeatherEffect()
-    call AddWeatherEffectSaveLast(gg_rct_IllidanAmbiance2, 'WNcw')
     call EnableWeatherEffect(GetLastCreatedWeatherEffect(), true)
     set udg_IllidanWind3=GetLastCreatedWeatherEffect()
     call VolumeGroupSetVolumeBJ(SOUND_VOLUMEGROUP_MUSIC, 45.00)
@@ -17500,28 +16945,11 @@ function Trig_GilneasCinematic_Actions takes nothing returns nothing
     set udg_GilneasReal=0.00
     endif
     call CameraSetupApplyForPlayer(true, gg_cam_Gilneas2, udg_GilneasPlayer, 10.00)
-    call IssuePointOrderLocBJ(gg_unit_hbot_3795, "move", GetRectCenter(gg_rct_GilneasMovement5))
     call TriggerSleepAction(6.00)
-    call PlaySoundAtPointBJ(gg_snd_Loading, 100, GetRectCenter(gg_rct_GilneasMovement4), 0)
-    call SetUnitPositionLoc(gg_unit_Ewar_0424, GetRectCenter(gg_rct_GilneasMovement4))
-    call IssuePointOrderLocBJ(gg_unit_Ewar_0424, "move", GetRectCenter(gg_rct_GilneasMovement2))
     call TriggerSleepAction(1.00)
-    call PlaySoundAtPointBJ(gg_snd_Loading, 100, GetRectCenter(gg_rct_GilneasMovement4), 0)
-    call SetUnitPositionLoc(gg_unit_h04E_3953, GetRectCenter(gg_rct_GilneasMovement4))
-    call IssuePointOrderLocBJ(gg_unit_h04E_3953, "move", GetRectCenter(gg_rct_GilneasMovement2_Copy_2))
     call TriggerSleepAction(1.00)
-    call PlaySoundAtPointBJ(gg_snd_Loading, 100, GetRectCenter(gg_rct_GilneasMovement4), 0)
-    call SetUnitPositionLoc(gg_unit_h04E_3954, GetRectCenter(gg_rct_GilneasMovement4))
-    call IssuePointOrderLocBJ(gg_unit_h04E_3954, "move", GetRectCenter(gg_rct_GilneasMovement2_Copy))
     call TriggerSleepAction(1.00)
-    call PlaySoundAtPointBJ(gg_snd_Loading, 100, GetRectCenter(gg_rct_GilneasMovement4), 0)
-    call SetUnitPositionLoc(gg_unit_h04M_3955, GetRectCenter(gg_rct_GilneasMovement4))
-    call IssuePointOrderLocBJ(gg_unit_h04M_3955, "move", GetRectCenter(gg_rct_GilneasMovement2_Copy_2_Copy))
     call TriggerSleepAction(1.00)
-    call PlaySoundAtPointBJ(gg_snd_Loading, 100, GetRectCenter(gg_rct_GilneasMovement4), 0)
-    call SetUnitPositionLoc(gg_unit_h04E_2478, GetRectCenter(gg_rct_GilneasMovement4))
-    call IssuePointOrderLocBJ(gg_unit_h04E_2478, "move", GetRectCenter(gg_rct_GilneasMovement2_Copy_2_Copy_Copy))
-    call IssuePointOrderLocBJ(gg_unit_hbot_3795, "move", GetRectCenter(gg_rct_GilneasMovement3))
     call SetUnitOwner(gg_unit_u00W_2892, Player(PLAYER_NEUTRAL_AGGRESSIVE), true)
     call TriggerSleepAction(3.00)
     call RemoveUnit(gg_unit_hbot_3795)
@@ -17533,7 +16961,6 @@ function Trig_GilneasCinematic_Actions takes nothing returns nothing
     call TriggerSleepAction(7.00)
     call TransmissionFromUnitWithNameBJ(udg_GilneasGroup, gg_unit_Ewar_0424, "TRIGSTR_3194", null, "TRIGSTR_3203", bj_TIMETYPE_ADD, 0, false)
     call TriggerSleepAction(3.00)
-    call IssuePointOrderLocBJ(gg_unit_o02J_3931, "move", GetRectCenter(gg_rct_GilneasMovement1))
     call TriggerSleepAction(10.00)
     call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 3.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_GilneasReal)
     call CameraSetupApplyForPlayer(true, gg_cam_Gilneas5, udg_GilneasPlayer, 0.00)
@@ -17589,14 +17016,12 @@ function Trig_NagaCinematic_Actions takes nothing returns nothing
     call TriggerSleepAction(1.40)
     call TransmissionFromUnitWithNameBJ(udg_NagaGroup, gg_unit_Eill_0748, "TRIGSTR_16168", null, "TRIGSTR_16169", bj_TIMETYPE_ADD, 3.00, false)
     call SetUnitAnimationByIndex(udg_IllidanAnimation, 0)
-    call IssuePointOrderLocBJ(gg_unit_Eill_0748, "move", GetRectCenter(gg_rct_IllidanMovement1))
     call TriggerSleepAction(4.20)
     call SetUnitTimeScalePercent(gg_unit_Eill_0748, 15.00)
     call SetUnitAnimationByIndex(udg_IllidanAnimation, 1)
     call TriggerSleepAction(4.90)
     call TransmissionFromUnitWithNameBJ(udg_NagaGroup, gg_unit_Eill_0748, "TRIGSTR_16170", null, "TRIGSTR_16171", bj_TIMETYPE_ADD, 0, false)
     call TriggerSleepAction(6.00)
-    call CreateNUnitsAtLoc(1, 'h03C', Player(PLAYER_NEUTRAL_PASSIVE), GetRectCenter(gg_rct_LightningBolt2), bj_UNIT_FACING)
     set udg_LightningBoltAnim=GetLastCreatedUnit()
     call TriggerSleepAction(0.85)
     call KillUnit(udg_LightningBoltAnim)
@@ -17609,23 +17034,19 @@ function Trig_NagaCinematic_Actions takes nothing returns nothing
     call CameraSetupApplyForPlayer(true, gg_cam_Naga6, udg_NagaPlayer, 0.00)
     call CameraSetupApplyForPlayer(true, gg_cam_Naga7, udg_NagaPlayer, 20.00)
     call TriggerSleepAction(2.00)
-    call IssuePointOrderLocBJ(gg_unit_Eill_0748, "move", GetRectCenter(gg_rct_IllidanMovement2))
     call TriggerSleepAction(0.50)
     call SetUnitTimeScalePercent(gg_unit_Eill_0748, 40.00)
     call SetUnitAnimationByIndex(udg_IllidanAnimation, 2)
     call TriggerSleepAction(3.70)
-    call CreateNUnitsAtLoc(1, 'h03C', Player(PLAYER_NEUTRAL_PASSIVE), GetRectCenter(gg_rct_LightningBolt3), bj_UNIT_FACING)
     set udg_LightningBoltAnim=GetLastCreatedUnit()
     call TriggerSleepAction(0.65)
     call KillUnit(udg_LightningBoltAnim)
     call TriggerSleepAction(2.30)
-    call CreateNUnitsAtLoc(1, 'h043', Player(PLAYER_NEUTRAL_PASSIVE), GetRectCenter(gg_rct_WaveCrash), 136.00)
     set udg_LightningBoltAnim=GetLastCreatedUnit()
     call TriggerSleepAction(1.50)
     call SetUnitTimeScalePercent(gg_unit_Eill_0748, 50.00)
     call SetUnitAnimationByIndex(udg_IllidanAnimation, 0)
     call TriggerSleepAction(6.00)
-    call IssuePointOrderLocBJ(gg_unit_Eill_0748, "move", GetRectCenter(gg_rct_IllidanLast))
     call SetUnitTimeScalePercent(gg_unit_Eill_0748, 100.00)
     call KillUnit(udg_LightningBoltAnim)
 endfunction
@@ -17802,7 +17223,6 @@ function Trig_InnerFight_Conditions takes nothing returns boolean
 endfunction
 
 function Trig_InnerFight_Func004A takes nothing returns nothing
-    call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_Innerfight2))
 endfunction
 
 function Trig_InnerFight_Func009Func001C takes nothing returns boolean
@@ -17814,14 +17234,11 @@ endfunction
 
 function Trig_InnerFight_Func009A takes nothing returns nothing
     if ( Trig_InnerFight_Func009Func001C() ) then
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint_Copy))
     else
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint))
     endif
 endfunction
 
 function Trig_InnerFight_Actions takes nothing returns nothing
-    set udg_WerewolfGroup=GetUnitsInRectOfPlayer(gg_rct_Innerfight1, Player(21))
     call ForGroupBJ(udg_WerewolfGroup, function Trig_InnerFight_Func004A)
     call TriggerSleepAction(2)
     if GetLocalPlayer() == udg_GilneasPlayer then
@@ -17834,7 +17251,6 @@ endfunction
 //===========================================================================
 function InitTrig_InnerFight takes nothing returns nothing
     set gg_trg_InnerFight=CreateTrigger()
-    call TriggerRegisterEnterRectSimple(gg_trg_InnerFight, gg_rct_InnerFightStart)
     call TriggerAddCondition(gg_trg_InnerFight, Condition(function Trig_InnerFight_Conditions))
     call TriggerAddAction(gg_trg_InnerFight, function Trig_InnerFight_Actions)
 endfunction
@@ -17858,9 +17274,7 @@ endfunction
 
 function Trig_NightAttack1_Func014A takes nothing returns nothing
     if ( Trig_NightAttack1_Func014Func001C() ) then
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint_Copy))
     else
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint))
     endif
 endfunction
 
@@ -17873,9 +17287,7 @@ endfunction
 
 function Trig_NightAttack1_Func031A takes nothing returns nothing
     if ( Trig_NightAttack1_Func031Func001C() ) then
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint_Copy))
     else
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint))
     endif
 endfunction
 
@@ -17888,9 +17300,7 @@ endfunction
 
 function Trig_NightAttack1_Func047A takes nothing returns nothing
     if ( Trig_NightAttack1_Func047Func001C() ) then
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint_Copy))
     else
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint))
     endif
 endfunction
 
@@ -17898,48 +17308,21 @@ function Trig_NightAttack1_Actions takes nothing returns nothing
     if GetLocalPlayer() == udg_GilneasPlayer then
     call PlaySoundBJ(gg_snd_WolfHowl)
     endif
-    call CreateNUnitsAtLoc(10, 'nwlt', Player(21), GetRectCenter(gg_rct_WerewolfSpawn1), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(10, 'nwlt', Player(21), GetRectCenter(gg_rct_WerewolfSpawn2), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(8, 'nwlt', Player(21), GetRectCenter(gg_rct_WerewolfSpawn3), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(10, 'nwlt', Player(21), GetRectCenter(gg_rct_WerewolfSpawn4), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'o02F', Player(21), GetRectCenter(gg_rct_WerewolfSpawn3), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'o02F', Player(21), GetRectCenter(gg_rct_WerewolfSpawn1), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'o02F', Player(21), GetRectCenter(gg_rct_WerewolfSpawn2), bj_UNIT_FACING)
     call TriggerSleepAction(1.00)
-    set udg_WerewolfGroup=GetUnitsInRectOfPlayer(gg_rct_Attack_Commands, Player(21))
     call ForGroupBJ(udg_WerewolfGroup, function Trig_NightAttack1_Func014A)
     call DestroyGroup(udg_WerewolfGroup)
     call TriggerSleepAction(59.00)
     if GetLocalPlayer() == udg_GilneasPlayer then
     call PlaySoundBJ(gg_snd_WolfHowl)
     endif
-    call CreateNUnitsAtLoc(8, 'nwlt', Player(21), GetRectCenter(gg_rct_WerewolfSpawn1), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(5, 'nwlg', Player(21), GetRectCenter(gg_rct_WerewolfSpawn2), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'o02J', Player(21), GetRectCenter(gg_rct_WerewolfSpawn2), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(2, 'nwlg', Player(21), GetRectCenter(gg_rct_WerewolfSpawn1), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(3, 'nwlg', Player(21), GetRectCenter(gg_rct_WerewolfSpawn4), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(10, 'nwlt', Player(21), GetRectCenter(gg_rct_WerewolfSpawn3), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'o02F', Player(21), GetRectCenter(gg_rct_WerewolfSpawn3), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'o02F', Player(21), GetRectCenter(gg_rct_WerewolfSpawn1), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'o02F', Player(21), GetRectCenter(gg_rct_WerewolfSpawn2), bj_UNIT_FACING)
     call TriggerSleepAction(1.00)
-    set udg_WerewolfGroup=GetUnitsInRectOfPlayer(gg_rct_Attack_Commands, Player(21))
     call ForGroupBJ(udg_WerewolfGroup, function Trig_NightAttack1_Func031A)
     call DestroyGroup(udg_WerewolfGroup)
     call TriggerSleepAction(59.00)
     if GetLocalPlayer() == udg_GilneasPlayer then
     call PlaySoundBJ(gg_snd_WolfHowl)
     endif
-    call CreateNUnitsAtLoc(8, 'nwlt', Player(21), GetRectCenter(gg_rct_WerewolfSpawn1), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'nwld', Player(21), GetRectCenter(gg_rct_WerewolfSpawn1), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(10, 'nwlt', Player(21), GetRectCenter(gg_rct_WerewolfSpawn2), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(4, 'nwlg', Player(21), GetRectCenter(gg_rct_WerewolfSpawn3), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(2, 'o02J', Player(21), GetRectCenter(gg_rct_WerewolfSpawn4), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'o02F', Player(21), GetRectCenter(gg_rct_WerewolfSpawn3), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'o02F', Player(21), GetRectCenter(gg_rct_WerewolfSpawn1), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'o02F', Player(21), GetRectCenter(gg_rct_WerewolfSpawn2), bj_UNIT_FACING)
     call TriggerSleepAction(1.00)
-    set udg_WerewolfGroup=GetUnitsInRectOfPlayer(gg_rct_Attack_Commands, Player(21))
     call ForGroupBJ(udg_WerewolfGroup, function Trig_NightAttack1_Func047A)
     call DestroyGroup(udg_WerewolfGroup)
 endfunction
@@ -17971,9 +17354,7 @@ endfunction
 
 function Trig_NightAttack2_Func016A takes nothing returns nothing
     if ( Trig_NightAttack2_Func016Func001C() ) then
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint_Copy))
     else
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint))
     endif
 endfunction
 
@@ -17986,9 +17367,7 @@ endfunction
 
 function Trig_NightAttack2_Func020A takes nothing returns nothing
     if ( Trig_NightAttack2_Func020Func001C() ) then
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint_Copy))
     else
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint))
     endif
 endfunction
 
@@ -18001,9 +17380,7 @@ endfunction
 
 function Trig_NightAttack2_Func035A takes nothing returns nothing
     if ( Trig_NightAttack2_Func035Func001C() ) then
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint_Copy))
     else
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint))
     endif
 endfunction
 
@@ -18016,9 +17393,7 @@ endfunction
 
 function Trig_NightAttack2_Func039A takes nothing returns nothing
     if ( Trig_NightAttack2_Func039Func001C() ) then
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint_Copy))
     else
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint))
     endif
 endfunction
 
@@ -18031,9 +17406,7 @@ endfunction
 
 function Trig_NightAttack2_Func060A takes nothing returns nothing
     if ( Trig_NightAttack2_Func060Func001C() ) then
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint_Copy))
     else
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint))
     endif
 endfunction
 
@@ -18046,9 +17419,7 @@ endfunction
 
 function Trig_NightAttack2_Func064A takes nothing returns nothing
     if ( Trig_NightAttack2_Func064Func001C() ) then
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint_Copy))
     else
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint))
     endif
 endfunction
 
@@ -18056,65 +17427,30 @@ function Trig_NightAttack2_Actions takes nothing returns nothing
     if GetLocalPlayer() == udg_GilneasPlayer then
     call PlaySoundBJ(gg_snd_WolfHowl)
     endif
-    call CreateNUnitsAtLoc(8, 'nwlg', Player(21), GetRectCenter(gg_rct_WerewolfSpawn1), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'o02J', Player(21), GetRectCenter(gg_rct_WerewolfSpawn2), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(10, 'nwlt', Player(21), GetRectCenter(gg_rct_WerewolfSpawn2), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(2, 'o02J', Player(21), GetRectCenter(gg_rct_WerewolfSpawn3), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(8, 'nwlt', Player(21), GetRectCenter(gg_rct_WerewolfSpawn4), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'o02F', Player(21), GetRectCenter(gg_rct_WerewolfSpawn3), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'o02F', Player(21), GetRectCenter(gg_rct_WerewolfSpawn1), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'o02F', Player(21), GetRectCenter(gg_rct_WerewolfSpawn2), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'o02F', Player(21), GetRectCenter(gg_rct_WerewolfSpawn4), bj_UNIT_FACING)
     call TriggerSleepAction(1.00)
-    set udg_WerewolfGroup=GetUnitsInRectOfPlayer(gg_rct_Attack_Commands, Player(21))
     call ForGroupBJ(udg_WerewolfGroup, function Trig_NightAttack2_Func016A)
     call DestroyGroup(udg_WerewolfGroup)
     call TriggerSleepAction(10.00)
-    set udg_WerewolfGroup=GetUnitsInRectOfPlayer(gg_rct_Attack_Commands, Player(21))
     call ForGroupBJ(udg_WerewolfGroup, function Trig_NightAttack2_Func020A)
     call DestroyGroup(udg_WerewolfGroup)
     call TriggerSleepAction(49.00)
     if GetLocalPlayer() == udg_GilneasPlayer then
     call PlaySoundBJ(gg_snd_WolfHowl)
     endif
-    call CreateNUnitsAtLoc(8, 'nwlg', Player(21), GetRectCenter(gg_rct_WerewolfSpawn3), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(2, 'nwld', Player(21), GetRectCenter(gg_rct_WerewolfSpawn2), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(2, 'o02J', Player(21), GetRectCenter(gg_rct_WerewolfSpawn2), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'o02F', Player(21), GetRectCenter(gg_rct_WerewolfSpawn2), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(14, 'nwlt', Player(21), GetRectCenter(gg_rct_WerewolfSpawn1), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'o02F', Player(21), GetRectCenter(gg_rct_WerewolfSpawn1), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'nwld', Player(21), GetRectCenter(gg_rct_WerewolfSpawn4), bj_UNIT_FACING)
     call TriggerSleepAction(1.00)
-    set udg_WerewolfGroup=GetUnitsInRectOfPlayer(gg_rct_Attack_Commands, Player(21))
     call ForGroupBJ(udg_WerewolfGroup, function Trig_NightAttack2_Func035A)
     call DestroyGroup(udg_WerewolfGroup)
     call TriggerSleepAction(10.00)
-    set udg_WerewolfGroup=GetUnitsInRectOfPlayer(gg_rct_Attack_Commands, Player(21))
     call ForGroupBJ(udg_WerewolfGroup, function Trig_NightAttack2_Func039A)
     call DestroyGroup(udg_WerewolfGroup)
     call TriggerSleepAction(49.00)
     if GetLocalPlayer() == udg_GilneasPlayer then
     call PlaySoundBJ(gg_snd_WolfHowl)
     endif
-    call CreateNUnitsAtLoc(1, 'nwld', Player(21), GetRectCenter(gg_rct_WerewolfSpawn3), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(8, 'nwlg', Player(21), GetRectCenter(gg_rct_WerewolfSpawn2), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(2, 'nwld', Player(21), GetRectCenter(gg_rct_WerewolfSpawn2), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'o02J', Player(21), GetRectCenter(gg_rct_WerewolfSpawn3), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'o02J', Player(21), GetRectCenter(gg_rct_WerewolfSpawn2), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'o02J', Player(21), GetRectCenter(gg_rct_WerewolfSpawn1), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(12, 'nwlt', Player(21), GetRectCenter(gg_rct_WerewolfSpawn1), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'o02J', Player(21), GetRectCenter(gg_rct_WerewolfSpawn4), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'O038', Player(21), GetRectCenter(gg_rct_WerewolfSpawn3), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'O038', Player(21), GetRectCenter(gg_rct_WerewolfSpawn2), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(3, 'o02F', Player(21), GetRectCenter(gg_rct_WerewolfSpawn1), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(4, 'o02F', Player(21), GetRectCenter(gg_rct_WerewolfSpawn3), bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(3, 'o02F', Player(21), GetRectCenter(gg_rct_WerewolfSpawn2), bj_UNIT_FACING)
     call TriggerSleepAction(1.00)
-    set udg_WerewolfGroup=GetUnitsInRectOfPlayer(gg_rct_Attack_Commands, Player(21))
     call ForGroupBJ(udg_WerewolfGroup, function Trig_NightAttack2_Func060A)
     call DestroyGroup(udg_WerewolfGroup)
     call TriggerSleepAction(10.00)
-    set udg_WerewolfGroup=GetUnitsInRectOfPlayer(gg_rct_Attack_Commands, Player(21))
     call ForGroupBJ(udg_WerewolfGroup, function Trig_NightAttack2_Func064A)
     call DestroyGroup(udg_WerewolfGroup)
 endfunction
@@ -18169,9 +17505,7 @@ endfunction
 
 function Trig_Citizen_spawns_Copy_Func009A takes nothing returns nothing
     if ( Trig_Citizen_spawns_Copy_Func009Func001C() ) then
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint_Copy))
     else
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint))
     endif
 endfunction
 
@@ -18181,7 +17515,6 @@ function Trig_Citizen_spawns_Copy_Actions takes nothing returns nothing
     call CreateNUnitsAtLoc(1, 'nvlw', Player(PLAYER_NEUTRAL_PASSIVE), udg_CityBuildingPos, bj_UNIT_FACING)
     call RemoveLocation(udg_CityBuildingPos)
     call TriggerSleepAction(8.00)
-    set udg_WerewolfGroup=GetUnitsInRectOfPlayer(gg_rct_Attack_Commands, Player(21))
     call ForGroupBJ(udg_WerewolfGroup, function Trig_Citizen_spawns_Copy_Func009A)
     call DestroyGroup(udg_WerewolfGroup)
 endfunction
@@ -18204,10 +17537,6 @@ function Trig_Chapter2_Conditions takes nothing returns boolean
     return true
 endfunction
 
-function Trig_Chapter2_Func002002 takes nothing returns nothing
-    call SetUnitOwner(GetEnumUnit(), Player(20), true)
-endfunction
-
 function Trig_Chapter2_Func013A takes nothing returns nothing
     call KillUnit(GetEnumUnit())
 endfunction
@@ -18221,47 +17550,29 @@ endfunction
 
 function Trig_Chapter2_Func015A takes nothing returns nothing
     if ( Trig_Chapter2_Func015Func001C() ) then
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint_Copy))
     else
-        call IssuePointOrderLocBJ(GetEnumUnit(), "attack", GetRectCenter(gg_rct_AttackPoint))
     endif
-endfunction
-
-function Trig_Chapter2_Func019002 takes nothing returns nothing
-    call SetUnitPositionLoc(GetEnumUnit(), GetRectCenter(gg_rct_GilneasMovement4))
-endfunction
-
-function Trig_Chapter2_Func021002 takes nothing returns nothing
-    call SetUnitPositionLoc(GetEnumUnit(), GetRectCenter(gg_rct_Chapter2TeleStart))
 endfunction
 
 function Trig_Chapter2_Actions takes nothing returns nothing
     call DestroyTrigger(GetTriggeringTrigger())
-    call ForGroupBJ(GetUnitsInRectOfPlayer(gg_rct_Chapter2Map, Player(PLAYER_NEUTRAL_PASSIVE)), function Trig_Chapter2_Func002002)
     set udg_TessPoint=GetUnitLoc(gg_unit_Ewar_0424)
     if GetLocalPlayer() == udg_GilneasPlayer then
     call PlayThematicMusicBJ("PursuitTheme")
     endif
-    call CreateFogModifierRectBJ(true, udg_GilneasPlayer, FOG_OF_WAR_VISIBLE, gg_rct_Chapter3)
     set udg_GilneasVision=GetLastCreatedFogModifier()
     call SetUserControlForceOff(udg_GilneasGroup)
     call ForceCinematicSubtitlesBJ(true)
     call ShowInterfaceForceOff(udg_GilneasGroup, 0.50)
-    set udg_WerewolfGroup=GetUnitsInRectOfPlayer(gg_rct_Innerfight2, Player(19))
     call ForGroupBJ(udg_WerewolfGroup, function Trig_Chapter2_Func013A)
-    set udg_WerewolfGroup=GetUnitsInRectOfPlayer(gg_rct_Innerfight2, Player(18))
     call ForGroupBJ(udg_WerewolfGroup, function Trig_Chapter2_Func015A)
     call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 3.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_GilneasReal)
     call CameraSetupApplyForPlayer(true, gg_cam_GilneasChapter2Cam1, udg_GilneasPlayer, 0.00)
     call CameraSetupApplyForPlayer(true, gg_cam_GilneasChapter2Cam2, udg_GilneasPlayer, 6.00)
-    call ForGroupBJ(udg_TessGroup, function Trig_Chapter2_Func019002)
     call TriggerSleepAction(12.00)
-    call ForGroupBJ(udg_TessGroup, function Trig_Chapter2_Func021002)
-    call GroupPointOrderLocBJ(udg_TessGroup, "move", GetRectCenter(gg_rct_Chapter2Start))
     call CameraSetupApplyForPlayer(true, gg_cam_GilneasChapter2Cam3, udg_GilneasPlayer, 0.00)
     call CameraSetupApplyForPlayer(true, gg_cam_GilneasChapter2Cam4, udg_GilneasPlayer, 8.00)
     call TriggerSleepAction(8.00)
-    call SetCameraBoundsToRectForPlayerBJ(Player(20), gg_rct_Chapter2Map)
     if GetLocalPlayer() == udg_GilneasPlayer then
     call BlzChangeMinimapTerrainTex("war3mapImported\\Map_Gilneas2.blp")
     endif
@@ -18275,7 +17586,6 @@ endfunction
 //===========================================================================
 function InitTrig_Chapter2 takes nothing returns nothing
     set gg_trg_Chapter2=CreateTrigger()
-    call TriggerRegisterEnterRectSimple(gg_trg_Chapter2, gg_rct_Chapter2Map)
     call TriggerAddCondition(gg_trg_Chapter2, Condition(function Trig_Chapter2_Conditions))
     call TriggerAddAction(gg_trg_Chapter2, function Trig_Chapter2_Actions)
 endfunction
@@ -18283,22 +17593,14 @@ endfunction
 //===========================================================================
 // Trigger: Chapter 3
 //===========================================================================
-function Trig_Chapter_3_Func003002 takes nothing returns nothing
-    call SetUnitOwner(GetEnumUnit(), Player(PLAYER_NEUTRAL_AGGRESSIVE), true)
-endfunction
-
 function Trig_Chapter_3_Actions takes nothing returns nothing
     call SetUnitInvulnerable(gg_unit_h00L_3084, false)
     call SetUnitInvulnerable(gg_unit_h02K_3968, false)
-    call ForGroupBJ(GetUnitsInRectOfPlayer(gg_rct_Chapter2Map, Player(PLAYER_NEUTRAL_PASSIVE)), function Trig_Chapter_3_Func003002)
     set udg_GilneasPlayer=Player(20)
     if GetLocalPlayer() == udg_GilneasPlayer then
     call BlzChangeMinimapTerrainTex("war3mapImported\\Map_Gilneas3.blp")
     endif
-    call SetCameraBoundsToRectForPlayerBJ(Player(20), gg_rct_Chapter3)
-    call ReviveHeroLoc(gg_unit_Ewar_0424, GetRectCenter(gg_rct_Chapter2Start), false)
     set udg_TessPoint=GetUnitLoc(gg_unit_Ewar_0424)
-    call SetUnitPositionLoc(gg_unit_Ewar_0424, GetRectCenter(gg_rct_StartQuest3))
     call SetUnitPositionLoc(gg_unit_Ewar_0424, udg_TessPoint)
     call TriggerSleepAction(20.00)
     call PingMinimapLocForForce(bj_FORCE_PLAYER[20], GetUnitLoc(gg_unit_Hhkl_1500), 1)
@@ -18322,15 +17624,9 @@ function Trig_GilneasCampaignVictory_Conditions takes nothing returns boolean
     return true
 endfunction
 
-function Trig_GilneasCampaignVictory_Func004002 takes nothing returns nothing
-    call SetUnitOwner(GetEnumUnit(), Player(20), true)
-endfunction
-
 function Trig_GilneasCampaignVictory_Actions takes nothing returns nothing
     set udg_TessPoint=GetUnitLoc(gg_unit_Ewar_0424)
-    call SetUnitPositionLoc(gg_unit_Ewar_0424, GetRectCenter(gg_rct_StartQuest3))
     call SetUnitPositionLoc(gg_unit_Ewar_0424, udg_TessPoint)
-    call ForGroupBJ(GetUnitsInRectOfPlayer(gg_rct_Chapter2Map, Player(14)), function Trig_GilneasCampaignVictory_Func004002)
     call RemoveUnit(gg_unit_u00W_2892)
     call SetUnitOwner(gg_unit_Hhkl_1500, Player(20), true)
     call SetUnitOwner(gg_unit_h02K_3968, Player(20), true)
@@ -18412,11 +17708,9 @@ function Trig_IllidariINI_Actions takes nothing returns nothing
     call KillDestructable(gg_dest_YT24_0267)
     call ForGroupBJ(udg_AetheneumPortals, function Trig_IllidariINI_Func022002)
     call ForGroupBJ(udg_AetheneumPortals, function Trig_IllidariINI_Func023A)
-    set udg_AethneumBaseUnits=GetUnitsInRectOfPlayer(gg_rct_AethneumCatacombs, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_AethneumBaseUnits, function Trig_IllidariINI_Func025002)
     call ForGroupBJ(udg_AethneumBaseUnits, function Trig_IllidariINI_Func026A)
     // Nazjatar
-    set udg_NazjatarBaseUnit=GetUnitsInRectOfPlayer(gg_rct_InstanceNazjatar, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_NazjatarBaseUnit, function Trig_IllidariINI_Func029002)
     call ForGroupBJ(udg_NagaPortals, function Trig_IllidariINI_Func030002)
     call ForGroupBJ(udg_NagaPortals, function Trig_IllidariINI_Func031A)
@@ -18451,7 +17745,6 @@ endfunction
 //===========================================================================
 function InitTrig_ReachDiremaul takes nothing returns nothing
     set gg_trg_ReachDiremaul=CreateTrigger()
-    call TriggerRegisterEnterRectSimple(gg_trg_ReachDiremaul, gg_rct_FeralasAmbient1)
     call TriggerAddCondition(gg_trg_ReachDiremaul, Condition(function Trig_ReachDiremaul_Conditions))
     call TriggerAddAction(gg_trg_ReachDiremaul, function Trig_ReachDiremaul_Actions)
 endfunction
@@ -18468,7 +17761,6 @@ endfunction
 
 function Trig_Enter_Aetheneum_Actions takes nothing returns nothing
     call SetPlayerTechResearchedSwap('R05J', 1, Player(15))
-    call CreateFogModifierRectBJ(true, Player(15), FOG_OF_WAR_VISIBLE, gg_rct_AethneumCatacombs)
     set udg_IllidanVision=GetLastCreatedFogModifier()
     call SetUserControlForceOff(bj_FORCE_PLAYER[15])
     call ShowInterfaceForceOff(bj_FORCE_PLAYER[15], 0.50)
@@ -18479,13 +17771,10 @@ function Trig_Enter_Aetheneum_Actions takes nothing returns nothing
     if GetLocalPlayer() == udg_NagaPlayer then
     call PlaySoundBJ(gg_snd_QuestLog)
     endif
-    call SetCameraBoundsToRectForPlayerBJ(Player(15), gg_rct_AethneumCatacombs)
     if GetLocalPlayer() == udg_NagaPlayer then
     call BlzChangeMinimapTerrainTex("war3mapImported\\Minimap4.blp")
     endif
     call DisplayTextToForce(bj_FORCE_PLAYER[15], "TRIGSTR_242")
-    call SetUnitPositionLoc(GetTriggerUnit(), GetRectCenter(gg_rct_AethneumTombExit))
-    call IssuePointOrderLocBJ(gg_unit_Eill_0748, "move", GetRectCenter(gg_rct_IllidanMoveAethneum))
     call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 3.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_NagaReal)
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanAetheneum1, Player(15), 0)
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanAetheneum2, Player(15), 4.00)
@@ -18504,7 +17793,6 @@ endfunction
 //===========================================================================
 function InitTrig_Enter_Aetheneum takes nothing returns nothing
     set gg_trg_Enter_Aetheneum=CreateTrigger()
-    call TriggerRegisterEnterRectSimple(gg_trg_Enter_Aetheneum, gg_rct_AethneumLibraryEntrance)
     call TriggerAddCondition(gg_trg_Enter_Aetheneum, Condition(function Trig_Enter_Aetheneum_Conditions))
     call TriggerAddAction(gg_trg_Enter_Aetheneum, function Trig_Enter_Aetheneum_Actions)
 endfunction
@@ -18542,7 +17830,6 @@ endfunction
 //===========================================================================
 function InitTrig_ImmoltharIni takes nothing returns nothing
     set gg_trg_ImmoltharIni=CreateTrigger()
-    call TriggerRegisterEnterRectSimple(gg_trg_ImmoltharIni, gg_rct_ImmolFight)
     call TriggerAddAction(gg_trg_ImmoltharIni, function Trig_ImmoltharIni_Actions)
 endfunction
 
@@ -18591,33 +17878,14 @@ endfunction
 //===========================================================================
 // Trigger: ImmolDie
 //===========================================================================
-function Trig_ImmolDie_Func001002 takes nothing returns nothing
-    call RemoveDestructable(GetEnumDestructable())
-endfunction
-
-function Trig_ImmolDie_Func004001002 takes nothing returns boolean
-    return ( GetOwningPlayer(GetFilterUnit()) == Player(PLAYER_NEUTRAL_AGGRESSIVE) )
-endfunction
-
-function Trig_ImmolDie_Func004002 takes nothing returns nothing
-    call UnitDamageTargetBJ(gg_unit_h01A_0402, GetEnumUnit(), 88888.00, ATTACK_TYPE_CHAOS, DAMAGE_TYPE_NORMAL)
-endfunction
-
-function Trig_ImmolDie_Func006002 takes nothing returns nothing
-    call RemoveItem(GetEnumItem())
-endfunction
-
 function Trig_ImmolDie_Func034002 takes nothing returns nothing
     call ShowUnitShow(GetEnumUnit())
 endfunction
 
 function Trig_ImmolDie_Actions takes nothing returns nothing
-    call EnumDestructablesInRectAll(gg_rct_AethneumRemove, function Trig_ImmolDie_Func001002)
     call EnableTrigger(gg_trg_BoatEscape1)
     call TriggerSleepAction(6.00)
-    call ForGroupBJ(GetUnitsInRectMatching(gg_rct_AethneumCatacombs, Condition(function Trig_ImmolDie_Func004001002)), function Trig_ImmolDie_Func004002)
     call TriggerSleepAction(4.00)
-    call EnumItemsInRectBJ(gg_rct_AethneumCatacombs, function Trig_ImmolDie_Func006002)
     call TriggerSleepAction(4.00)
     if GetLocalPlayer() == udg_NagaPlayer then
     call BlzChangeMinimapTerrainTex("war3mapMap.blp")
@@ -18626,12 +17894,10 @@ function Trig_ImmolDie_Actions takes nothing returns nothing
     call ShowUnitShow(gg_unit_ncp2_3614)
     call SetUserControlForceOff(bj_FORCE_PLAYER[15])
     call ShowInterfaceForceOff(bj_FORCE_PLAYER[15], 0.50)
-    call SetCameraBoundsToRectForPlayerBJ(Player(15), gg_rct_IllidanCameraExit)
     call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 3.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_NagaReal)
     call PanCameraToTimedLocForPlayer(Player(15), CameraSetupGetDestPositionLoc(gg_cam_IllidanExit1), 0)
     call CreateFogModifierRectBJ(true, Player(15), FOG_OF_WAR_VISIBLE, GetCurrentCameraBoundsMapRectBJ())
     set udg_IllidanVision=GetLastCreatedFogModifier()
-    call CreateTextTagLocBJ("TRIGSTR_6019", GetRectCenter(gg_rct_IllidanExitText1), 0, 10, 100, 100, 100, 0)
     call ShowTextTagForceBJ(false, GetLastCreatedTextTag(), GetPlayersAll())
     call ShowTextTagForceBJ(true, GetLastCreatedTextTag(), bj_FORCE_PLAYER[15])
     set udg_IllidanFloatingText1=GetLastCreatedTextTag()
@@ -18646,7 +17912,6 @@ function Trig_ImmolDie_Actions takes nothing returns nothing
     call EnableTrigger(gg_trg_EscapeClick)
     call TriggerSleepAction(8.00)
     call ForGroupBJ(udg_AethneumBaseUnits, function Trig_ImmolDie_Func034002)
-    call SetUnitPositionLoc(gg_unit_Eill_0748, GetRectCenter(gg_rct_StartQuest2))
     call ShowInterfaceForceOn(bj_FORCE_PLAYER[15], 0.00)
     call SetUserControlForceOn(bj_FORCE_PLAYER[15])
     call DestroyTrigger(GetTriggeringTrigger())
@@ -18690,13 +17955,11 @@ function Trig_EscapeClick_Actions takes nothing returns nothing
     call DestroyTextTagBJ(udg_IllidanFloatingText3)
     call SetCameraBoundsToRectForPlayerBJ(Player(15), GetEntireMapRect())
     if ( Trig_EscapeClick_Func007C() ) then
-        call SetUnitPositionLoc(gg_unit_Eill_0748, GetRectCenter(gg_rct_AetheneumTombEntrance2))
         call PanCameraToTimedLocForPlayer(Player(15), CameraSetupGetDestPositionLoc(gg_cam_IllidanExit2), 0)
         call SetCameraFieldForPlayer(Player(15), CAMERA_FIELD_TARGET_DISTANCE, 2400.00, 0.00)
     else
     endif
     if ( Trig_EscapeClick_Func008C() ) then
-        call SetUnitPositionLoc(gg_unit_Eill_0748, GetRectCenter(gg_rct_IllidanExit2))
         call PanCameraToTimedLocForPlayer(Player(15), CameraSetupGetDestPositionLoc(gg_cam_IllidanExit3), 0)
         call SetCameraFieldForPlayer(Player(15), CAMERA_FIELD_TARGET_DISTANCE, 2400.00, 0.00)
     else
@@ -18707,9 +17970,7 @@ function Trig_EscapeClick_Actions takes nothing returns nothing
     call PlayThematicMusicBJ("IllidansTheme")
     endif
     call TriggerSleepAction(2)
-    call CreateFogModifierRectBJ(true, Player(15), FOG_OF_WAR_VISIBLE, gg_rct_IllidanDalaranInstance)
     set udg_IllidanVision=GetLastCreatedFogModifier()
-    call PingMinimapLocForForce(bj_FORCE_PLAYER[15], GetRectCenter(gg_rct_IllidanBoat1), 15.00)
     call DestroyTrigger(GetTriggeringTrigger())
 endfunction
 
@@ -18742,18 +18003,10 @@ function Trig_BoatEscape1_Actions takes nothing returns nothing
     endif
     call SetUnitOwner(udg_IllidanBoat, Player(15), true)
     call ShowUnitHide(gg_unit_Eill_0748)
-    call SetUnitPositionLoc(gg_unit_Eill_0748, GetRectCenter(gg_rct_IllidanBoat3))
     call IssueImmediateOrderBJ(gg_unit_Eill_0748, "stop")
-    call PanCameraToTimedLocForPlayer(Player(15), GetRectCenter(gg_rct_IllidanBoat1), 2.00)
     call TriggerSleepAction(1.00)
-    call PanCameraToTimedLocForPlayer(Player(15), GetRectCenter(gg_rct_IllidanBoat4), 10.00)
-    call IssuePointOrderLocBJ(udg_IllidanBoat, "move", GetRectCenter(gg_rct_IllidanBoat4))
     call TriggerSleepAction(5.00)
     call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 5.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_NagaReal)
-    call PanCameraToTimedLocForPlayer(Player(15), GetRectCenter(gg_rct_IllidanBoat2), 0)
-    call PanCameraToTimedLocForPlayer(Player(15), GetRectCenter(gg_rct_IllidanBoat3), 4.00)
-    call SetUnitPositionLoc(udg_IllidanBoat, GetRectCenter(gg_rct_IllidanBoat2))
-    call IssuePointOrderLocBJ(udg_IllidanBoat, "move", GetRectCenter(gg_rct_IllidanBoat3))
     call TriggerSleepAction(3.00)
     call KillUnit(udg_IllidanBoat)
     call TriggerSleepAction(1.50)
@@ -18767,7 +18020,6 @@ function Trig_BoatEscape1_Actions takes nothing returns nothing
     call PlaySoundBJ(gg_snd_QuestLog)
     endif
     call DisplayTextToForce(bj_FORCE_PLAYER[15], "TRIGSTR_5677")
-    call PingMinimapLocForForce(bj_FORCE_PLAYER[15], GetRectCenter(gg_rct_DalaranExit2), 15.00)
     call EnableTrigger(gg_trg_DalaranDungeonsIllidan)
     call DestroyTrigger(GetTriggeringTrigger())
 endfunction
@@ -18776,7 +18028,6 @@ endfunction
 function InitTrig_BoatEscape1 takes nothing returns nothing
     set gg_trg_BoatEscape1=CreateTrigger()
     call DisableTrigger(gg_trg_BoatEscape1)
-    call TriggerRegisterEnterRectSimple(gg_trg_BoatEscape1, gg_rct_IllidanBoat1)
     call TriggerAddCondition(gg_trg_BoatEscape1, Condition(function Trig_BoatEscape1_Conditions))
     call TriggerAddAction(gg_trg_BoatEscape1, function Trig_BoatEscape1_Actions)
 endfunction
@@ -18796,7 +18047,6 @@ function Trig_DalaranDungeonsIllidan_Actions takes nothing returns nothing
     call SetDestructableInvulnerableBJ(gg_dest_ATg1_11032, true)
     call SetDestructableInvulnerableBJ(gg_dest_DTg7_11246, true)
     call UnitRemoveAbilityBJ('A0LW', gg_unit_Eill_0748)
-    call CreateFogModifierRectBJ(true, Player(15), FOG_OF_WAR_VISIBLE, gg_rct_IllidanDalaranInstance)
     set udg_IllidanVision=GetLastCreatedFogModifier()
     call SetUserControlForceOff(bj_FORCE_PLAYER[15])
     call ShowInterfaceForceOff(bj_FORCE_PLAYER[15], 0.50)
@@ -18807,8 +18057,6 @@ function Trig_DalaranDungeonsIllidan_Actions takes nothing returns nothing
     if GetLocalPlayer() == udg_NagaPlayer then
     call BlzChangeMinimapTerrainTex("war3mapImported\\Minimap5.blp")
     endif
-    call SetUnitPositionLoc(GetTriggerUnit(), GetRectCenter(gg_rct_IllidanDala1))
-    call IssuePointOrderLocBJ(gg_unit_Eill_0748, "move", GetRectCenter(gg_rct_IllidanDala2))
     call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 3.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_NagaReal)
     call PanCameraToTimedLocForPlayer(GetOwningPlayer(GetTriggerUnit()), CameraSetupGetDestPositionLoc(gg_cam_IllidanDalaran1), 0)
     call PanCameraToTimedLocForPlayer(Player(15), CameraSetupGetDestPositionLoc(gg_cam_IllidanDalaran2), 5.00)
@@ -18817,24 +18065,18 @@ function Trig_DalaranDungeonsIllidan_Actions takes nothing returns nothing
     call TransmissionFromUnitWithNameBJ(bj_FORCE_PLAYER[15], gg_unit_Eill_0748, "TRIGSTR_5599", gg_snd_Cinematic5Illidan, "TRIGSTR_6018", bj_TIMETYPE_ADD, 0, false)
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanDala8, Player(15), 0)
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanDala9, Player(15), 3.00)
-    call SetCameraBoundsToRectForPlayerBJ(Player(15), gg_rct_IllidanDalaranInstance)
     call TriggerSleepAction(3.00)
     call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 3.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_NagaReal)
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanDalaran3, Player(15), 0)
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanDalaran4, Player(15), 15.00)
-    call IssuePointOrderLocBJ(gg_unit_Hamg_3616, "move", GetRectCenter(gg_rct_IllidanDala4))
     call TriggerSleepAction(3.00)
     call TransmissionFromUnitWithNameBJ(bj_FORCE_PLAYER[15], gg_unit_Hamg_3616, "TRIGSTR_6859", gg_snd_Archamge1, "TRIGSTR_6861", bj_TIMETYPE_ADD, 0, false)
-    call IssuePointOrderLocBJ(gg_unit_Eill_0748, "move", GetRectCenter(gg_rct_IllidanDala8))
     call TriggerSleepAction(2.20)
     call TransmissionFromUnitWithNameBJ(bj_FORCE_PLAYER[15], gg_unit_Eill_0748, "TRIGSTR_6021", gg_snd_IllidanWarcry1, "TRIGSTR_6857", bj_TIMETYPE_ADD, 0, false)
     call TriggerSleepAction(2.20)
-    call IssuePointOrderLocBJ(gg_unit_Hamg_3616, "move", GetRectCenter(gg_rct_IllidanDala5))
     call TransmissionFromUnitWithNameBJ(bj_FORCE_PLAYER[15], gg_unit_Hamg_3616, "TRIGSTR_6862", gg_snd_Archmage2, "TRIGSTR_6863", bj_TIMETYPE_ADD, 0, false)
     call TriggerSleepAction(3.50)
     call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 3.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_NagaReal)
-    call SetUnitPositionLoc(gg_unit_Hamg_3616, GetRectCenter(gg_rct_IllidanDala6))
-    call IssuePointOrderLocBJ(gg_unit_Hamg_3616, "move", GetRectCenter(gg_rct_IllidanDala7))
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanDala5, Player(15), 0)
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanDala6, Player(15), 3.00)
     call TriggerSleepAction(1.50)
@@ -18854,7 +18096,6 @@ function Trig_DalaranDungeonsIllidan_Actions takes nothing returns nothing
     endif
     call DisplayTextToForce(bj_FORCE_PLAYER[15], "TRIGSTR_6017")
     call TriggerSleepAction(3.00)
-    call CreateFogModifierRectBJ(true, Player(15), FOG_OF_WAR_VISIBLE, gg_rct_IllidanElementalSentry)
     set udg_IllidanVision=GetLastCreatedFogModifier()
     call SetUnitTimeScalePercent(gg_unit_n057_3617, 20.00)
     call EnableTrigger(gg_trg_DefenseFires)
@@ -18869,7 +18110,6 @@ endfunction
 function InitTrig_DalaranDungeonsIllidan takes nothing returns nothing
     set gg_trg_DalaranDungeonsIllidan=CreateTrigger()
     call DisableTrigger(gg_trg_DalaranDungeonsIllidan)
-    call TriggerRegisterEnterRectSimple(gg_trg_DalaranDungeonsIllidan, gg_rct_SkullOfGuldan)
     call TriggerAddCondition(gg_trg_DalaranDungeonsIllidan, Condition(function Trig_DalaranDungeonsIllidan_Conditions))
     call TriggerAddAction(gg_trg_DalaranDungeonsIllidan, function Trig_DalaranDungeonsIllidan_Actions)
 endfunction
@@ -18962,12 +18202,10 @@ function Trig_AcquiringtheSkull_Actions takes nothing returns nothing
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanDala9, Player(15), 7.00)
     call TriggerSleepAction(0.50)
     call SetUnitColor(udg_IllidanAnimation, PLAYER_COLOR_PURPLE)
-    call SetUnitFacingToFaceLocTimed(udg_IllidanAnimation, GetRectCenter(gg_rct_IllidanLook), 0)
     call TransmissionFromUnitWithNameBJ(bj_FORCE_PLAYER[15], udg_IllidanAnimation, "TRIGSTR_8882", gg_snd_N06Illidan17, "TRIGSTR_14591", bj_TIMETYPE_ADD, 0, false)
     call TriggerSleepAction(1.20)
     call IssueImmediateOrderBJ(udg_IllidanAnimation, "metamorphosis")
     call TriggerSleepAction(5.30)
-    call CreateFogModifierRectBJ(true, Player(15), FOG_OF_WAR_VISIBLE, gg_rct_InstanceNazjatar)
     set udg_IllidanVision=GetLastCreatedFogModifier()
     call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 3.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_NagaReal)
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanNazjatar1, Player(15), 0)
@@ -18976,19 +18214,15 @@ function Trig_AcquiringtheSkull_Actions takes nothing returns nothing
     call TransmissionFromUnitWithNameBJ(bj_FORCE_PLAYER[15], udg_IllidanAnimation, "TRIGSTR_15734", gg_snd_DemonHunterMorphedReady1, "TRIGSTR_15749", bj_TIMETYPE_ADD, 0, false)
     call TriggerSleepAction(5.00)
     call DestroyFogModifier(udg_IllidanVision)
-    call CreateFogModifierRectBJ(true, Player(15), FOG_OF_WAR_VISIBLE, gg_rct_LordamereLakeAmbient)
     set udg_IllidanVision=GetLastCreatedFogModifier()
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanDalaExit1, Player(15), 0)
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanDalaExit2, Player(15), 4.00)
-    call SetUnitPositionLoc(udg_IllidanAnimation, GetRectCenter(gg_rct_StartQuest3))
     call TriggerSleepAction(1.00)
-    call SetUnitPositionLoc(udg_IllidanAnimation, GetRectCenter(gg_rct_IllidanDalaExit))
     call TriggerSleepAction(2.00)
     call ShowInterfaceForceOn(bj_FORCE_PLAYER[15], 0.00)
     call ForceCinematicSubtitlesBJ(false)
     call SetUserControlForceOn(bj_FORCE_PLAYER[15])
     call SetCameraFieldForPlayer(Player(15), CAMERA_FIELD_TARGET_DISTANCE, 2400.00, 0.00)
-    call PingMinimapLocForForce(bj_FORCE_PLAYER[15], GetRectCenter(gg_rct_MaelstromAmbient), 15.00)
     call DestroyFogModifier(udg_IllidanVision)
     call EnableTrigger(gg_trg_GetToMaelstrom)
     if GetLocalPlayer() == udg_NagaPlayer then
@@ -19024,7 +18258,6 @@ endfunction
 //===========================================================================
 function InitTrig_UnlockIllidanChange takes nothing returns nothing
     set gg_trg_UnlockIllidanChange=CreateTrigger()
-    call TriggerRegisterEnterRectSimple(gg_trg_UnlockIllidanChange, gg_rct_UnlockIllidanSwitch)
     call TriggerAddCondition(gg_trg_UnlockIllidanChange, Condition(function Trig_UnlockIllidanChange_Conditions))
     call TriggerAddAction(gg_trg_UnlockIllidanChange, function Trig_UnlockIllidanChange_Actions)
 endfunction
@@ -19048,7 +18281,6 @@ endfunction
 function InitTrig_IllidanChange takes nothing returns nothing
     set gg_trg_IllidanChange=CreateTrigger()
     call DisableTrigger(gg_trg_IllidanChange)
-    call TriggerRegisterEnterRectSimple(gg_trg_IllidanChange, gg_rct_IllidanDalaranInstance)
     call TriggerAddCondition(gg_trg_IllidanChange, Condition(function Trig_IllidanChange_Conditions))
     call TriggerAddAction(gg_trg_IllidanChange, function Trig_IllidanChange_Actions)
 endfunction
@@ -19086,7 +18318,6 @@ endfunction
 function InitTrig_GetToMaelstrom takes nothing returns nothing
     set gg_trg_GetToMaelstrom=CreateTrigger()
     call DisableTrigger(gg_trg_GetToMaelstrom)
-    call TriggerRegisterEnterRectSimple(gg_trg_GetToMaelstrom, gg_rct_MaelstromAmbient)
     call TriggerAddCondition(gg_trg_GetToMaelstrom, Condition(function Trig_GetToMaelstrom_Conditions))
     call TriggerAddAction(gg_trg_GetToMaelstrom, function Trig_GetToMaelstrom_Actions)
 endfunction
@@ -19157,19 +18388,14 @@ function Trig_NagaBaseUnlock_Actions takes nothing returns nothing
     if GetLocalPlayer() == udg_NagaPlayer then
     call PlayThematicMusicBJ("war3mapImported\\IllidanCinematicEnd.mp3")
     endif
-    call CreateFogModifierRectBJ(true, Player(15), FOG_OF_WAR_VISIBLE, gg_rct_InstanceNazjatar)
     set udg_IllidanVision=GetLastCreatedFogModifier()
     call SetUserControlForceOff(bj_FORCE_PLAYER[15])
     call ShowInterfaceForceOff(bj_FORCE_PLAYER[15], 0.50)
     call ForceCinematicSubtitlesBJ(true)
-    call SetUnitPositionLoc(udg_IllidanAnimation, GetRectCenter(gg_rct_IllidanNaga1))
     call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 3.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_NagaReal)
-    call IssuePointOrderLocBJ(udg_IllidanAnimation, "move", GetRectCenter(gg_rct_IllidanNaga2))
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanNaga1, Player(15), 0)
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanNaga2, Player(15), 9.00)
     call TriggerSleepAction(3.00)
-    call IssuePointOrderLocBJ(gg_unit_nmyr_2375, "move", GetRectCenter(gg_rct_IllidanNaga1))
-    call IssuePointOrderLocBJ(gg_unit_nmyr_2386, "move", GetRectCenter(gg_rct_IllidanNaga3))
     call TransmissionFromUnitWithNameBJ(udg_NagaGroup, udg_IllidanAnimation, "TRIGSTR_8830", null, "TRIGSTR_8832", bj_TIMETYPE_ADD, 0, false)
     call TriggerSleepAction(5.50)
     call TransmissionFromUnitWithNameBJ(udg_NagaGroup, udg_IllidanAnimation, "TRIGSTR_8833", null, "TRIGSTR_8834", bj_TIMETYPE_ADD, 0, false)
@@ -19177,7 +18403,6 @@ function Trig_NagaBaseUnlock_Actions takes nothing returns nothing
     call SetUnitAnimationByIndex(udg_IllidanAnimation, 1)
     call TriggerSleepAction(6.10)
     call SetUnitAnimationByIndex(udg_IllidanAnimation, 0)
-    call SetUnitFacingToFaceLocTimed(udg_IllidanAnimation, GetRectCenter(gg_rct_IllidanNaga1), 3.00)
     call TransmissionFromUnitWithNameBJ(udg_NagaGroup, udg_IllidanAnimation, "TRIGSTR_8835", null, "TRIGSTR_10106", bj_TIMETYPE_ADD, 0, false)
     call TriggerSleepAction(8.50)
     call ShowInterfaceForceOn(bj_FORCE_PLAYER[15], 0.00)
@@ -19191,8 +18416,6 @@ function Trig_NagaBaseUnlock_Actions takes nothing returns nothing
     endif
     call UnitRemoveAbilityBJ('A0KY', udg_IllidanAnimation)
     call TriggerSleepAction(1.00)
-    call SetUnitPositionLoc(udg_IllidanAnimation, GetRectCenter(gg_rct_NazjatarHidden))
-    call SetUnitPositionLoc(udg_IllidanAnimation, GetRectCenter(gg_rct_IllidanNaga1))
     call DestroyTrigger(GetTriggeringTrigger())
 endfunction
 
@@ -19535,7 +18758,6 @@ function Trig_MonasteryCollapse_Func002A takes nothing returns nothing
 endfunction
 
 function Trig_MonasteryCollapse_Actions takes nothing returns nothing
-    set udg_TempGroup=GetUnitsInRectAll(gg_rct_ScarletAmbient)
     call ForGroupBJ(udg_TempGroup, function Trig_MonasteryCollapse_Func002A)
     call DestroyGroup(udg_TempGroup)
 endfunction
@@ -19671,13 +18893,10 @@ function Trig_TraderTrain_Actions takes nothing returns nothing
     call GroupAddUnitSimple(GetTrainedUnit(), udg_TradersGroup)
     set udg_TraderRandomInt=GetRandomInt(1, 3)
     if ( Trig_TraderTrain_Func005C() ) then
-        call IssuePointOrderLocBJ(GetTrainedUnit(), "patrol", GetRectCenter(gg_rct_Trader1))
     else
         if ( Trig_TraderTrain_Func005Func002C() ) then
-            call IssuePointOrderLocBJ(GetTrainedUnit(), "patrol", GetRectCenter(gg_rct_Trader2))
         else
             if ( Trig_TraderTrain_Func005Func002Func002C() ) then
-                call IssuePointOrderLocBJ(GetTrainedUnit(), "patrol", GetRectCenter(gg_rct_Trader3))
             else
             endif
         endif
@@ -19720,7 +18939,6 @@ endfunction
 //===========================================================================
 function InitTrig_TraderRessourceGain takes nothing returns nothing
     set gg_trg_TraderRessourceGain=CreateTrigger()
-    call TriggerRegisterEnterRectSimple(gg_trg_TraderRessourceGain, gg_rct_ZeppelinReturn)
     call TriggerAddCondition(gg_trg_TraderRessourceGain, Condition(function Trig_TraderRessourceGain_Conditions))
     call TriggerAddAction(gg_trg_TraderRessourceGain, function Trig_TraderRessourceGain_Actions)
 endfunction
@@ -19767,16 +18985,12 @@ function Trig_ZeppelinTrain_Actions takes nothing returns nothing
     call GroupAddUnitSimple(GetTrainedUnit(), udg_TradersGroup)
     set udg_ZeppelinRandomInt=GetRandomInt(1, 4)
     if ( Trig_ZeppelinTrain_Func004C() ) then
-        call IssuePointOrderLocBJ(GetTrainedUnit(), "patrol", GetRectCenter(gg_rct_Trade1))
     else
         if ( Trig_ZeppelinTrain_Func004Func002C() ) then
-            call IssuePointOrderLocBJ(GetTrainedUnit(), "patrol", GetRectCenter(gg_rct_Trade2))
         else
             if ( Trig_ZeppelinTrain_Func004Func002Func002C() ) then
-                call IssuePointOrderLocBJ(GetTrainedUnit(), "patrol", GetRectCenter(gg_rct_Trade3))
             else
                 if ( Trig_ZeppelinTrain_Func004Func002Func002Func002C() ) then
-                    call IssuePointOrderLocBJ(GetTrainedUnit(), "patrol", GetRectCenter(gg_rct_Trade4))
                 else
                 endif
             endif
@@ -19820,7 +19034,6 @@ endfunction
 //===========================================================================
 function InitTrig_ZeppelinLumberTrade takes nothing returns nothing
     set gg_trg_ZeppelinLumberTrade=CreateTrigger()
-    call TriggerRegisterEnterRectSimple(gg_trg_ZeppelinLumberTrade, gg_rct_ZeppelinReturn)
     call TriggerAddCondition(gg_trg_ZeppelinLumberTrade, Condition(function Trig_ZeppelinLumberTrade_Conditions))
     call TriggerAddAction(gg_trg_ZeppelinLumberTrade, function Trig_ZeppelinLumberTrade_Actions)
 endfunction
@@ -19925,7 +19138,6 @@ function Trig_DiscoveringOil_Actions takes nothing returns nothing
     if ( Trig_DiscoveringOil_Func001C() ) then
         call GroupAddUnitSimple(GetTrainedUnit(), udg_OilDummyGroup)
         set udg_FirstOilRig=true
-        set udg_OilRigPoint=GetRandomLocInRect(gg_rct_OilRig1)
         call PingMinimapLocForForce(bj_FORCE_PLAYER[8], udg_OilRigPoint, 20.00)
         call TriggerSleepAction(GetRandomReal(20.00, 40.00))
         call CreateNUnitsAtLoc(1, 'o04R', Player(8), udg_OilRigPoint, bj_UNIT_FACING)
@@ -19934,19 +19146,14 @@ function Trig_DiscoveringOil_Actions takes nothing returns nothing
     else
         set udg_OilRandomInt=GetRandomInt(1, 5)
         if ( Trig_DiscoveringOil_Func001Func003C() ) then
-            set udg_OilRandomRegion=gg_rct_OilRig2
         else
             if ( Trig_DiscoveringOil_Func001Func003Func001C() ) then
-                set udg_OilRandomRegion=gg_rct_OilRig3
             else
                 if ( Trig_DiscoveringOil_Func001Func003Func001Func001C() ) then
-                    set udg_OilRandomRegion=gg_rct_OilRig4
                 else
                     if ( Trig_DiscoveringOil_Func001Func003Func001Func001Func001C() ) then
-                        set udg_OilRandomRegion=gg_rct_OilRig5
                     else
                         if ( Trig_DiscoveringOil_Func001Func003Func001Func001Func001Func001C() ) then
-                            set udg_OilRandomRegion=gg_rct_OilRig6
                         else
                         endif
                     endif
@@ -20012,16 +19219,10 @@ function Trig_ShipDie_Func002A takes nothing returns nothing
     call KillUnit(GetEnumUnit())
 endfunction
 
-function Trig_ShipDie_Func005A takes nothing returns nothing
-    call SetItemPositionLoc(GetEnumItem(), GetRectCenter(gg_rct_MaelstromAmbient))
-endfunction
-
 function Trig_ShipDie_Actions takes nothing returns nothing
-    set udg_TempGroup=GetUnitsInRectAll(gg_rct_ShipAmbient)
     call ForGroupBJ(udg_TempGroup, function Trig_ShipDie_Func002A)
     call DestroyGroup(udg_TempGroup)
     call TriggerSleepAction(2)
-    call EnumItemsInRectBJ(gg_rct_ShipAmbient, function Trig_ShipDie_Func005A)
 endfunction
 
 //===========================================================================
@@ -20078,7 +19279,6 @@ endfunction
 
 function Trig_ShipOpen_Actions takes nothing returns nothing
     set udg_ShipPoint1=GetSpellTargetLoc()
-    set udg_ShipPoint2=GetRectCenter(gg_rct_ShipInside)
     call CreateNUnitsAtLoc(1, 'h05T', Player(PLAYER_NEUTRAL_PASSIVE), udg_ShipPoint1, bj_UNIT_FACING)
     set udg_ShipGate1=GetLastCreatedUnit()
     call WaygateActivateBJ(true, udg_ShipGate1)
@@ -20193,7 +19393,6 @@ function Trig_Cataclysm_Actions takes nothing returns nothing
     call UnitRemoveAbilityBJ('A0OJ', gg_unit_h01Z_0618)
     call UnitAddAbilityBJ('A0OI', gg_unit_h01Z_0618)
     call IssueImmediateOrderBJ(gg_unit_h01Z_0618, "berserk")
-    call SetUnitPositionLoc(gg_unit_u01Y_0071, GetRectCenter(gg_rct_TwilightOutside))
     call SetUnitOwner(gg_unit_u01Y_0071, Player(19), true)
     call SetPlayerAllianceStateBJ(Player(0), Player(19), bj_ALLIANCE_UNALLIED)
     call SetPlayerAllianceStateBJ(Player(1), Player(19), bj_ALLIANCE_UNALLIED)
@@ -20476,28 +19675,21 @@ function Trig_Sea_Witch_1_Func005002 takes nothing returns nothing
 endfunction
 
 function Trig_Sea_Witch_1_Actions takes nothing returns nothing
-    set udg_TempGroup=GetUnitsInRectOfPlayer(gg_rct_Thrall_Landing1, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_TempGroup, function Trig_Sea_Witch_1_Func004002)
     call ForGroupBJ(udg_TempGroup, function Trig_Sea_Witch_1_Func005002)
     call DestroyGroup(udg_TempGroup)
     call SetUnitInvulnerable(gg_unit_ohun_3197, false)
-    set udg_TempPoint=GetRectCenter(gg_rct_Murloc_Spawn_1)
     call CreateNUnitsAtLoc(1, 'nmsn', Player(PLAYER_NEUTRAL_AGGRESSIVE), udg_TempPoint, bj_UNIT_FACING)
     call CreateNUnitsAtLoc(1, 'nmrv', Player(PLAYER_NEUTRAL_AGGRESSIVE), udg_TempPoint, bj_UNIT_FACING)
     call CreateNUnitsAtLoc(1, 'nmcf', Player(PLAYER_NEUTRAL_AGGRESSIVE), udg_TempPoint, bj_UNIT_FACING)
     call CreateNUnitsAtLoc(1, 'nmbg', Player(PLAYER_NEUTRAL_AGGRESSIVE), udg_TempPoint, bj_UNIT_FACING)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRectCenter(gg_rct_Murloc_Spawn_2)
     call CreateNUnitsAtLoc(1, 'nmbg', Player(PLAYER_NEUTRAL_AGGRESSIVE), udg_TempPoint, bj_UNIT_FACING)
     call CreateNUnitsAtLoc(1, 'nmtw', Player(PLAYER_NEUTRAL_AGGRESSIVE), udg_TempPoint, bj_UNIT_FACING)
     call CreateNUnitsAtLoc(1, 'nmcf', Player(PLAYER_NEUTRAL_AGGRESSIVE), udg_TempPoint, bj_UNIT_FACING)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempGroup=GetUnitsInRectOfPlayer(gg_rct_Murloc_Spawn_1, Player(PLAYER_NEUTRAL_AGGRESSIVE))
-    set udg_TempPoint=GetRectCenter(gg_rct_Murloc_Attack)
     call GroupPointOrderLocBJ(udg_TempGroup, "attack", udg_TempPoint)
     call DestroyGroup(udg_TempGroup)
-    set udg_TempGroup=GetUnitsInRectOfPlayer(gg_rct_Murloc_Spawn_2, Player(PLAYER_NEUTRAL_AGGRESSIVE))
-    call GroupPointOrderLocBJ(GetUnitsInRectOfPlayer(gg_rct_Murloc_Spawn_2, Player(PLAYER_NEUTRAL_AGGRESSIVE)), "attack", udg_TempPoint)
     call DestroyGroup(udg_TempGroup)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -20506,7 +19698,6 @@ endfunction
 //===========================================================================
 function InitTrig_Sea_Witch_1 takes nothing returns nothing
     set gg_trg_Sea_Witch_1=CreateTrigger()
-    call TriggerRegisterEnterRectSimple(gg_trg_Sea_Witch_1, gg_rct_Thrall_Landing1)
     call TriggerAddCondition(gg_trg_Sea_Witch_1, Condition(function Trig_Sea_Witch_1_Conditions))
     call TriggerAddAction(gg_trg_Sea_Witch_1, function Trig_Sea_Witch_1_Actions)
 endfunction
@@ -20628,12 +19819,10 @@ function Trig_Legion_No_Book_Finish_Copy_Actions takes nothing returns nothing
     call SetPlayerTechResearchedSwap('R04B', 1, udg_LegionPlayer)
     call DestroyTimerDialogBJ(udg_Legion_Copy)
     call ForForce(GetPlayersAll(), function Trig_Legion_No_Book_Finish_Copy_Func005A)
-    set udg_TwistingNether=GetUnitsInRectOfPlayer(gg_rct_TwistingNether, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_TwistingNether, function Trig_Legion_No_Book_Finish_Copy_Func007002)
     call DestroyGroup(udg_TwistingNether)
     call SetUnitOwner(gg_unit_n03C_0000, Player(PLAYER_NEUTRAL_AGGRESSIVE), true)
     set udg_Portalposition=GetUnitLoc(GetTriggerUnit())
-    set udg_NetherExit=GetRectCenter(gg_rct_Nether_Exit)
     call CreateNUnitsAtLoc(1, 'n037', udg_LegionPlayer, udg_Portalposition, bj_UNIT_FACING)
     set udg_RegionPosition=GetUnitLoc(GetLastCreatedUnit())
     call WaygateSetDestinationLocBJ(GetLastCreatedUnit(), udg_NetherExit)
@@ -20682,11 +19871,9 @@ endfunction
 //===========================================================================
 function Trig_Lordaeron_West_Actions takes nothing returns nothing
     call KillUnit(gg_unit_nemi_0019)
-    call SetItemPositionLoc(GetLastRemovedItem(), GetRectCenter(gg_rct_King_Arthas_crown))
     call SetDoodadAnimationBJ("hide", 'YSaw', 200.00, GetUnitLoc(gg_unit_h000_0406))
     call SetDoodadAnimationBJ("hide", 'D044', 200.00, GetUnitLoc(gg_unit_h000_0406))
     call SetDoodadAnimationBJ("hide", 'YObb', 200.00, GetUnitLoc(gg_unit_h000_0406))
-    call SetDoodadAnimationRectBJ("show", 'YScr', gg_rct_Terenas)
     call DestroyTrigger(GetTriggeringTrigger())
 endfunction
 
@@ -20701,15 +19888,6 @@ endfunction
 // Trigger: Scarlet Monastery Dies
 //===========================================================================
 function Trig_Scarlet_Monastery_Dies_Actions takes nothing returns nothing
-    call SetDoodadAnimationRectBJ("hide", 'YOlp', gg_rct_ScarletMonastery)
-    call SetDoodadAnimationRectBJ("hide", 'YOsw', gg_rct_ScarletMonastery)
-    call SetDoodadAnimationRectBJ("hide", 'YSaw', gg_rct_ScarletMonastery)
-    call SetDoodadAnimationRectBJ("hide", 'ZCv2', gg_rct_ScarletMonastery)
-    call SetDoodadAnimationRectBJ("hide", 'ZCv1', gg_rct_ScarletMonastery)
-    call SetDoodadAnimationRectBJ("hide", 'YOst', gg_rct_ScarletMonastery)
-    call SetDoodadAnimationRectBJ("hide", 'YObb', gg_rct_ScarletMonastery)
-    call SetDoodadAnimationRectBJ("show", 'YScr', gg_rct_ScarletMonastery)
-    call SetDoodadAnimationRectBJ("show", 'LOsm', gg_rct_ScarletMonastery)
     call DestroyTrigger(GetTriggeringTrigger())
 endfunction
 
@@ -20770,7 +19948,6 @@ function Trig_NaxDie_Func002A takes nothing returns nothing
 endfunction
 
 function Trig_NaxDie_Actions takes nothing returns nothing
-    set udg_TempGroup=GetUnitsInRectAll(gg_rct_NaxAmbient)
     call ForGroupBJ(udg_TempGroup, function Trig_NaxDie_Func002A)
     call DestroyGroup(udg_TempGroup)
 endfunction
@@ -20829,7 +20006,6 @@ endfunction
 
 function Trig_NaxxramasOpen_Actions takes nothing returns nothing
     set udg_NaxPoint=OffsetLocation(GetUnitLoc(gg_unit_e013_1815), - 100.00, - 100.00)
-    set udg_NaxPointIn=GetRectCenter(gg_rct_NaxxramasInside)
     call CreateNUnitsAtLoc(1, 'h05T', Player(PLAYER_NEUTRAL_PASSIVE), udg_NaxPoint, bj_UNIT_FACING)
     set udg_NaxGate1=GetLastCreatedUnit()
     call WaygateActivateBJ(true, udg_NaxGate1)
@@ -20975,12 +20151,9 @@ function Trig_Plague_Actions_Actions takes nothing returns nothing
     endif
     call DisableTrigger(gg_trg_Gold_Farm_Loop)
     call WaygateActivateBJ(true, gg_unit_n04B_1155)
-    call WaygateSetDestinationLocBJ(gg_unit_n04B_1155, GetRectCenter(gg_rct_Scholomance_Entrance))
     call WaygateActivateBJ(true, gg_unit_n035_1269)
-    call WaygateSetDestinationLocBJ(gg_unit_n035_1269, GetRectCenter(gg_rct_Scholomance_Exit))
     call EnableTrigger(gg_trg_Plague_Cauldrons)
     // ==============
-    set udg_PlagueRandomPoint=GetRandomLocInRect(gg_rct_Plague_5)
     call CreateNUnitsAtLoc(1, 'h02W', udg_PlaguePlayer, udg_PlagueRandomPoint, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueRandomPoint)
     set udg_PlagueCauldronPos=GetUnitLoc(GetLastCreatedUnit())
@@ -20991,7 +20164,6 @@ function Trig_Plague_Actions_Actions takes nothing returns nothing
     call CreateNUnitsAtLoc(2, 'n07S', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call CreateNUnitsAtLoc(4, 'h08O', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueCauldronPos)
-    set udg_PlagueRandomPoint=GetRandomLocInRect(gg_rct_Plague_1)
     call CreateNUnitsAtLoc(1, 'h02W', udg_ScourgePlayer, udg_PlagueRandomPoint, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueRandomPoint)
     set udg_PlagueCauldronPos=GetUnitLoc(GetLastCreatedUnit())
@@ -21002,7 +20174,6 @@ function Trig_Plague_Actions_Actions takes nothing returns nothing
     call CreateNUnitsAtLoc(2, 'n07S', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call CreateNUnitsAtLoc(4, 'h08O', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueCauldronPos)
-    set udg_PlagueRandomPoint=GetRandomLocInRect(gg_rct_Plague_3)
     call CreateNUnitsAtLoc(1, 'h02W', udg_PlaguePlayer, udg_PlagueRandomPoint, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueRandomPoint)
     set udg_PlagueCauldronPos=GetUnitLoc(GetLastCreatedUnit())
@@ -21013,7 +20184,6 @@ function Trig_Plague_Actions_Actions takes nothing returns nothing
     call CreateNUnitsAtLoc(2, 'n07S', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call CreateNUnitsAtLoc(4, 'h08O', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueCauldronPos)
-    set udg_PlagueRandomPoint=GetRandomLocInRect(gg_rct_Plague_2)
     call CreateNUnitsAtLoc(1, 'h02W', udg_PlaguePlayer, udg_PlagueRandomPoint, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueRandomPoint)
     set udg_PlagueCauldronPos=GetUnitLoc(GetLastCreatedUnit())
@@ -21024,7 +20194,6 @@ function Trig_Plague_Actions_Actions takes nothing returns nothing
     call CreateNUnitsAtLoc(2, 'n07S', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call CreateNUnitsAtLoc(4, 'h08O', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueCauldronPos)
-    set udg_PlagueRandomPoint=GetRandomLocInRect(gg_rct_Plague_4)
     call CreateNUnitsAtLoc(1, 'h02W', udg_PlaguePlayer, udg_PlagueRandomPoint, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueRandomPoint)
     set udg_PlagueCauldronPos=GetUnitLoc(GetLastCreatedUnit())
@@ -21035,7 +20204,6 @@ function Trig_Plague_Actions_Actions takes nothing returns nothing
     call CreateNUnitsAtLoc(2, 'n07S', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call CreateNUnitsAtLoc(4, 'h08O', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueCauldronPos)
-    set udg_PlagueRandomPoint=GetRandomLocInRect(gg_rct_Plague_6)
     call CreateNUnitsAtLoc(1, 'h02W', udg_PlaguePlayer, udg_PlagueRandomPoint, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueRandomPoint)
     set udg_PlagueCauldronPos=GetUnitLoc(GetLastCreatedUnit())
@@ -21046,7 +20214,6 @@ function Trig_Plague_Actions_Actions takes nothing returns nothing
     call CreateNUnitsAtLoc(2, 'n07S', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call CreateNUnitsAtLoc(4, 'h08O', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueCauldronPos)
-    set udg_PlagueRandomPoint=GetRandomLocInRect(gg_rct_Plague_7)
     call CreateNUnitsAtLoc(1, 'h02W', udg_PlaguePlayer, udg_PlagueRandomPoint, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueRandomPoint)
     set udg_PlagueCauldronPos=GetUnitLoc(GetLastCreatedUnit())
@@ -21392,9 +20559,6 @@ function Trig_Citizen_spawns_Func002Func003002 takes nothing returns boolean
 endfunction
 
 function Trig_Citizen_spawns_Func002C takes nothing returns boolean
-    if ( not ( RectContainsUnit(gg_rct_Stromwind_antiship, GetTriggerUnit()) == false ) ) then
-        return false
-    endif
     if ( not ( GetOwningPlayer(GetTriggerUnit()) != udg_DwarfPlayer ) ) then
         return false
     endif
@@ -21507,22 +20671,16 @@ function Trig_AndorhalKill_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 512.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Andorhal)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Andorhal)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Andorhal)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Andorhal)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Andorhal)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Andorhal)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -21558,22 +20716,16 @@ function Trig_HavenshireKill_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 512.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Havenshire)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Havenshire)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Havenshire)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Havenshire)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Havenshire)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Havenshire)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -21609,22 +20761,16 @@ function Trig_Hearthglen_Kill_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 512.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Hearthglen)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Hearthglen)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Hearthglen)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Hearthglen)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Hearthglen)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Hearthglen)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -21660,10 +20806,8 @@ function Trig_DarrowshireKill_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 512.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Darrowshire)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Darrowshire)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -21699,13 +20843,10 @@ function Trig_Terrordale_Kill_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 300.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Terrordale)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Terrordale)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Terrordale)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -21741,22 +20882,16 @@ function Trig_Corins_Crossing_Kill_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 512.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Corins_Crossing)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Corins_Crossing)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Corins_Crossing)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Corins_Crossing)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Corins_Crossing)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Corins_Crossing)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -21792,16 +20927,12 @@ function Trig_BrillKill_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 512.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Brill)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Brill)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Brill)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Brill)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -21837,22 +20968,16 @@ function Trig_Vandermar_Village_Kill_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 512.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Vandermar_Village)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Vandermar_Village)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Vandermar_Village)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Vandermar_Village)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Vandermar_Village)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Vandermar_Village)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -21888,16 +21013,12 @@ function Trig_Solliden_Farmstead_Kill_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 512.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Solliden_Farmstead)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Solliden_Farmstead)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Solliden_Farmstead)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Solliden_Farmstead)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -22263,28 +21384,20 @@ function Trig_Dreadscar_1_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_1)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_1)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_1)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_1)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_1)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_1)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_1)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_1)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -22320,31 +21433,22 @@ function Trig_Dreadscar_2_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_2)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_2)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_2)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_2)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_2)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_2)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_2)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_2)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_2)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -22377,46 +21481,32 @@ function Trig_Dreadscar_3_Conditions takes nothing returns boolean
 endfunction
 
 function Trig_Dreadscar_3_Actions takes nothing returns nothing
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
-    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -22442,9 +21532,7 @@ endfunction
 
 function Trig_ScholoOpen_Actions takes nothing returns nothing
     call WaygateActivateBJ(true, gg_unit_n04B_1155)
-    call WaygateSetDestinationLocBJ(gg_unit_n04B_1155, GetRectCenter(gg_rct_Scholomance_Entrance))
     call WaygateActivateBJ(true, gg_unit_n035_1269)
-    call WaygateSetDestinationLocBJ(gg_unit_n035_1269, GetRectCenter(gg_rct_Scholomance_Exit))
 endfunction
 
 //===========================================================================
@@ -22601,10 +21689,6 @@ function Trig_Dark_Green_Caster_Building_Construction_Actions takes nothing retu
     call CreateNUnitsAtLocFacingLocBJ(1, 'h05A', udg_StormwindPlayer, udg_TempPoint, Location(9108.00, - 11165.00))
     set udg_SanctumORCathedral=GetLastCreatedUnit()
     call RemoveLocation(udg_TempPoint)
-    call SetDoodadAnimationRectBJ("show", 'D02N', gg_rct_Stromwind_antiship)
-    call SetDoodadAnimationRectBJ("show", 'JOgr', gg_rct_Stromwind_antiship)
-    call SetDoodadAnimationRectBJ("show", 'ZCv2', gg_rct_Cathedral_of_Light)
-    call SetDoodadAnimationRectBJ("show", 'XOmr', gg_rct_Stromwind_antiship)
     call EnableTrigger(gg_trg_Mana_Syphon)
 endfunction
 
@@ -22633,11 +21717,6 @@ function Trig_Dark_Green_Melee_Building_Construction_Actions takes nothing retur
     call CreateNUnitsAtLocFacingLocBJ(1, 'h05J', udg_StormwindPlayer, udg_TempPoint, Location(10390.00, - 12100.00))
     set udg_HeadquartersORHall=GetLastCreatedUnit()
     call RemoveLocation(udg_TempPoint)
-    call SetDoodadAnimationRectBJ("show", 'LOar', gg_rct_Construction_Site_2)
-    call SetDoodadAnimationRectBJ("show", 'YOst', gg_rct_Construction_Site_2)
-    call SetDoodadAnimationRectBJ("show", 'LOwp', gg_rct_Construction_Site_2)
-    call SetDoodadAnimationRectBJ("show", 'LOh1', gg_rct_Construction_Site_2)
-    call SetDoodadAnimationRectBJ("show", 'LOam', gg_rct_Construction_Site_2)
     call SetPlayerAbilityAvailableBJ(true, 'ACav', udg_StormwindPlayer)
 endfunction
 
@@ -22670,42 +21749,6 @@ endfunction
 //===========================================================================
 // Trigger: BlackEmpireIni
 //===========================================================================
-function Trig_BlackEmpireIni_Func011002002001 takes nothing returns boolean
-    return ( GetOwningPlayer(GetFilterUnit()) == Player(PLAYER_NEUTRAL_PASSIVE) )
-endfunction
-
-function Trig_BlackEmpireIni_Func011002002002 takes nothing returns boolean
-    return ( GetUnitFoodUsed(GetFilterUnit()) != 10 )
-endfunction
-
-function Trig_BlackEmpireIni_Func011002002 takes nothing returns boolean
-    return GetBooleanAnd((GetOwningPlayer(GetFilterUnit()) == Player(PLAYER_NEUTRAL_PASSIVE)), (GetUnitFoodUsed(GetFilterUnit()) != 10)) // INLINED!!
-endfunction
-
-function Trig_BlackEmpireIni_Func012002002001 takes nothing returns boolean
-    return ( GetOwningPlayer(GetFilterUnit()) == Player(PLAYER_NEUTRAL_PASSIVE) )
-endfunction
-
-function Trig_BlackEmpireIni_Func012002002002 takes nothing returns boolean
-    return ( GetUnitFoodUsed(GetFilterUnit()) != 10 )
-endfunction
-
-function Trig_BlackEmpireIni_Func012002002 takes nothing returns boolean
-    return GetBooleanAnd((GetOwningPlayer(GetFilterUnit()) == Player(PLAYER_NEUTRAL_PASSIVE)), (GetUnitFoodUsed(GetFilterUnit()) != 10)) // INLINED!!
-endfunction
-
-function Trig_BlackEmpireIni_Func013002002001 takes nothing returns boolean
-    return ( GetOwningPlayer(GetFilterUnit()) == Player(PLAYER_NEUTRAL_PASSIVE) )
-endfunction
-
-function Trig_BlackEmpireIni_Func013002002002 takes nothing returns boolean
-    return ( GetUnitFoodUsed(GetFilterUnit()) != 10 )
-endfunction
-
-function Trig_BlackEmpireIni_Func013002002 takes nothing returns boolean
-    return GetBooleanAnd((GetOwningPlayer(GetFilterUnit()) == Player(PLAYER_NEUTRAL_PASSIVE)), (GetUnitFoodUsed(GetFilterUnit()) != 10)) // INLINED!!
-endfunction
-
 function Trig_BlackEmpireIni_Func014002 takes nothing returns nothing
     call SetUnitInvulnerable(GetEnumUnit(), true)
 endfunction
@@ -22734,16 +21777,12 @@ function Trig_BlackEmpireIni_Actions takes nothing returns nothing
     call GroupAddUnitSimple(gg_unit_h03V_0257, udg_BlackEmpirePortals)
     call GroupAddUnitSimple(gg_unit_h03V_1110, udg_BlackEmpirePortals)
     call GroupAddUnitSimple(gg_unit_h03V_0396, udg_BlackEmpirePortals)
-    call CreateFogModifierRectBJ(true, Player(14), FOG_OF_WAR_VISIBLE, gg_rct_NyalothaInstance)
     call SetDestructableInvulnerableBJ(gg_dest_ATg2_35871, true)
     call SetDestructableInvulnerableBJ(gg_dest_ATg1_35873, true)
     call SetDestructableInvulnerableBJ(gg_dest_ATg3_35869, true)
     call SetDestructableInvulnerableBJ(gg_dest_ATg3_35872, true)
     call SetUnitOwner(gg_unit_U02C_2829, Player(PLAYER_NEUTRAL_PASSIVE), true)
     call SetUnitInvulnerable(gg_unit_U02C_2829, true)
-    set udg_NyalothaGroup1=GetUnitsInRectMatching(gg_rct_NyalothaUnlock1, Condition(function Trig_BlackEmpireIni_Func011002002))
-    set udg_NyalothaGroup2=GetUnitsInRectMatching(gg_rct_NyalothaUnlock2, Condition(function Trig_BlackEmpireIni_Func012002002))
-    set udg_NyalothaGroup3=GetUnitsInRectMatching(gg_rct_NyalothaUnlock3, Condition(function Trig_BlackEmpireIni_Func013002002))
     call ForGroupBJ(udg_NyalothaGroup1, function Trig_BlackEmpireIni_Func014002)
     call ForGroupBJ(udg_NyalothaGroup1, function Trig_BlackEmpireIni_Func015002)
     call ForGroupBJ(udg_NyalothaGroup2, function Trig_BlackEmpireIni_Func016002)
@@ -22763,7 +21802,6 @@ endfunction
 // Trigger: Region Atheneum
 //===========================================================================
 function Trig_Region_Atheneum_Actions takes nothing returns nothing
-    call CreateTextTagLocBJ("TRIGSTR_237", GetRectCenter(gg_rct_Region_AE), 225.00, 20.00, 100, 100, 100, 0)
 endfunction
 
 //===========================================================================
@@ -22777,7 +21815,6 @@ endfunction
 // Trigger: Region Azjol Nerub 1
 //===========================================================================
 function Trig_Region_Azjol_Nerub_1_Actions takes nothing returns nothing
-    call CreateTextTagLocBJ("TRIGSTR_1294", GetRectCenter(gg_rct_Region_AZ_1), 350.00, 15.00, 100, 100, 100, 0)
 endfunction
 
 //===========================================================================
@@ -22791,7 +21828,6 @@ endfunction
 // Trigger: Region Azjol Nerub 2
 //===========================================================================
 function Trig_Region_Azjol_Nerub_2_Actions takes nothing returns nothing
-    call CreateTextTagLocBJ("TRIGSTR_3818", GetRectCenter(gg_rct_Region_AZ_2), 350.00, 20.00, 100, 100, 100, 0)
 endfunction
 
 //===========================================================================
@@ -22805,7 +21841,6 @@ endfunction
 // Trigger: Region Blackrock Mountain
 //===========================================================================
 function Trig_Region_Blackrock_Mountain_Actions takes nothing returns nothing
-    call CreateTextTagLocBJ("TRIGSTR_3928", GetRectCenter(gg_rct_Region_BM), 200.00, 20.00, 100, 100, 100, 0)
 endfunction
 
 //===========================================================================
@@ -22819,7 +21854,6 @@ endfunction
 // Trigger: Region Burning Steppes
 //===========================================================================
 function Trig_Region_Burning_Steppes_Actions takes nothing returns nothing
-    call CreateTextTagLocBJ("TRIGSTR_261", GetRectCenter(gg_rct_Region_BS), 200.00, 20.00, 100, 100, 100, 0)
 endfunction
 
 //===========================================================================
@@ -22833,7 +21867,6 @@ endfunction
 // Trigger: Region Icecrown
 //===========================================================================
 function Trig_Region_Icecrown_Actions takes nothing returns nothing
-    call CreateTextTagLocBJ("TRIGSTR_1194", GetRectCenter(gg_rct_Region_DB), 275.00, 15.00, 100, 100, 100, 0)
 endfunction
 
 //===========================================================================
@@ -22847,7 +21880,6 @@ endfunction
 // Trigger: Region Dragonblight
 //===========================================================================
 function Trig_Region_Dragonblight_Actions takes nothing returns nothing
-    call CreateTextTagLocBJ("TRIGSTR_801", GetRectCenter(gg_rct_Region_IC), 275.00, 15.00, 100, 100, 100, 0)
 endfunction
 
 //===========================================================================
@@ -22861,7 +21893,6 @@ endfunction
 // Trigger: Region Scholomance
 //===========================================================================
 function Trig_Region_Scholomance_Actions takes nothing returns nothing
-    call CreateTextTagLocBJ("TRIGSTR_15412", GetRectCenter(gg_rct_Region_SC), 200.00, 15.00, 100, 100, 100, 0)
 endfunction
 
 //===========================================================================
@@ -22875,7 +21906,6 @@ endfunction
 // Trigger: Region Tomb of Sargeras
 //===========================================================================
 function Trig_Region_Tomb_of_Sargeras_Actions takes nothing returns nothing
-    call CreateTextTagLocBJ("TRIGSTR_6655", GetRectCenter(gg_rct_Region_ToS), 250.00, 12.00, 100, 100, 100, 0)
 endfunction
 
 //===========================================================================
@@ -23108,7 +22138,6 @@ function Trig_Recall_FT_Copy_Conditions takes nothing returns boolean
 endfunction
 
 function Trig_Recall_FT_Copy_Actions takes nothing returns nothing
-    set udg_FTSummon=GetRectCenter(gg_rct_FTSummon)
     call SetUnitPositionLoc(GetSpellTargetUnit(), udg_FTSummon)
     call RemoveLocation(udg_FTSummon)
 endfunction
