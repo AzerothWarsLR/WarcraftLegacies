@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Spells
       tempGroup.EnumUnitsInRange(GetUnitX(caster), GetUnitY(caster), Radius);
       foreach (var target in tempGroup.ToList())
       {
-        if (Filters.IsTargetEnemyAndAlive(caster, target))
+        if (CastFilters.IsTargetEnemyAndAlive(caster, target))
         {
           DamageUnit(caster, target);
           StunUnit(caster, target);

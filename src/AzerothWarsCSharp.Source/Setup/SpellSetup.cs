@@ -1,4 +1,5 @@
-﻿using AzerothWarsCSharp.Source.Libraries.SpellSystem;
+﻿using AzerothWarsCSharp.Source.Libraries;
+using AzerothWarsCSharp.Source.Libraries.SpellSystem;
 using AzerothWarsCSharp.Source.Spells;
 using static War3Api.Common;
 
@@ -39,6 +40,33 @@ namespace AzerothWarsCSharp.Source.Setup
         StunOrderString = "thunderbolt"
       };
       SpellSystem.Register(warStompKazzak);
+
+      var massAntiMagicShell = new MassAnySpell(FourCC("A099"))
+      {
+        DummyAbilityId = FourCC("A0JN"),
+        DummyAbilityOrderString = "antimagicshell",
+        Radius = 200,
+        CastFilter = CastFilters.IsTargetAllyAndAlive
+      };
+      SpellSystem.Register(massAntiMagicShell);
+      
+      var massEnrage = new MassAnySpell(FourCC("A0QK"))
+      {
+        DummyAbilityId = FourCC("ACuf"),
+        DummyAbilityOrderString = "unholyfrenzy",
+        Radius = 200,
+        CastFilter = CastFilters.IsTargetEnemyAndAlive
+      };
+      SpellSystem.Register(massEnrage);
+      
+      var massFrostArmor = new MassAnySpell(FourCC("A0H3"))
+      {
+        DummyAbilityId = FourCC("A0H6"),
+        DummyAbilityOrderString = "frostarmor",
+        Radius = 200,
+        CastFilter = CastFilters.IsTargetAllyAndAlive
+      };
+      SpellSystem.Register(massFrostArmor);
     }
   }
 }

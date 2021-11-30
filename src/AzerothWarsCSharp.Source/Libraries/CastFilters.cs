@@ -2,8 +2,16 @@
 
 namespace AzerothWarsCSharp.Source.Libraries
 {
-  public static class Filters
+  public static class CastFilters
   {
+    public static bool IsTargetAllyAndAlive(unit caster, unit target)
+    {
+      var casterPlayer = GetOwningPlayer(caster);
+      return caster != target &&
+             (IsUnitAlly(target, casterPlayer) || GetOwningPlayer(target) == Player(PLAYER_NEUTRAL_PASSIVE)) &&
+             UnitAlive(target) && BlzIsUnitInvulnerable(target) == false;
+    }
+    
     public static bool IsTargetEnemyAndAlive(unit caster, unit target)
     {
       var casterPlayer = GetOwningPlayer(caster);
