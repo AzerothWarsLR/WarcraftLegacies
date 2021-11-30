@@ -67,6 +67,24 @@ namespace AzerothWarsCSharp.Source.Setup
         CastFilter = CastFilters.IsTargetAllyAndAlive
       };
       SpellSystem.Register(massFrostArmor);
+
+      var scattershot = new MassAnySpell(FourCC("A0GP"))
+      {
+        DummyAbilityId = FourCC("A0GL"),
+        DummyAbilityOrderString = "thunderbolt",
+        Radius = 250,
+        CastFilter = CastFilters.IsTargetEnemyAndAlive
+      };
+      SpellSystem.Register(scattershot);
+
+      var massBanish = new MassAnySpell(FourCC("A0FD"))
+      {
+        DummyAbilityId = FourCC("A0FE"),
+        DummyAbilityOrderString = "banish",
+        Radius = 250,
+        CastFilter = CastFilters.IsTargetOrganicAndAlive
+      };
+      SpellSystem.Register(massBanish);
     }
   }
 }

@@ -4,6 +4,12 @@ namespace AzerothWarsCSharp.Source.Libraries
 {
   public static class CastFilters
   {
+    public static bool IsTargetOrganicAndAlive(unit caster, unit target)
+    {
+      return !IsUnitType(target, UNIT_TYPE_STRUCTURE) && !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
+             !IsUnitType(target, UNIT_TYPE_MECHANICAL) && UnitAlive(target);
+    }
+    
     public static bool IsTargetAllyAndAlive(unit caster, unit target)
     {
       var casterPlayer = GetOwningPlayer(caster);
