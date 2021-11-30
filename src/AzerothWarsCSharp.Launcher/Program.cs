@@ -168,7 +168,7 @@ namespace AzerothWarsCSharp.Launcher
       
       //Combine transpiled vJASS with transpiled Lua
       var jassToLuaScript = ScriptTranspiler.JassToLua(File.ReadAllText(mergedJassFilePath));
-      //map.Script += jassToLuaScript;
+      map.Script = LuaScriptMerger.Merge(map.Script, jassToLuaScript);
 
       // Update war3map.lua so you can inspect the generated Lua code easily
       File.WriteAllText(Path.Combine(OutputFolderPath, OutputScriptName), map.Script);
