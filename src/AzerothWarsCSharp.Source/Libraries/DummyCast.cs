@@ -7,6 +7,14 @@ namespace AzerothWarsCSharp.Source.Libraries
   {
     public delegate bool CastFilter(unit caster, unit target);
 
+    public static void ChannelOnPoint(unit caster, int abilityId, string orderId, int level, float x, float y, float duration)
+    {
+      var u = CreateUnit(GetOwningPlayer(caster), DummyCaster.UnitTypeId, x, y, 0);
+      UnitAddAbility(u, abilityId);
+      IssueImmediateOrder(u, orderId);
+      UnitApplyTimedLife(u, FourCC("BLTF"), duration);
+    }
+    
     public static void CastOnUnitsInRadius(unit caster, int abilityId, string orderId, int level, float x, float y, float radius, CastFilter castFilter)
     {
       var group = new GroupEx();

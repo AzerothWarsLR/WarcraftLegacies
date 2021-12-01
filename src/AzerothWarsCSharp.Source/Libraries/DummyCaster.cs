@@ -11,10 +11,12 @@ namespace AzerothWarsCSharp.Source.Libraries
     {
       if (!_initialized)
       {
-        _dummyUnit = CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), FourCC("u00X"), 0, 0, 0);
+        _dummyUnit = CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), UnitTypeId, 0, 0, 0);
         _initialized = true;
       }
     }
+
+    public static int UnitTypeId { get; } = FourCC("u00X");
     
     public static unit DummyUnit
     {

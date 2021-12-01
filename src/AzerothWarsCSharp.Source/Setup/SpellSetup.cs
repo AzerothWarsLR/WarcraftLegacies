@@ -144,6 +144,13 @@ namespace AzerothWarsCSharp.Source.Setup
         DamageBonusLevel = 0.2f,
       };
       SpellSystem.Register(massSimulacrum);
+
+      var bombingRun = new ChannelAnySpell(FourCC("A0S5"))
+      {
+        DummyAbilityId = FourCC("A0S1"),
+        DummyAbilityOrderString = "locustswarm"
+      };
+      SpellSystem.Register(bombingRun);
     }
   }
 }
