@@ -50,6 +50,16 @@ namespace AzerothWarsCSharp.Source.Setup
         StunOrderString = "cripple"
       };
       SpellSystem.Register(thunderClap);
+
+      var consecration = new Stomp(FourCC("A0WE"))
+      {
+        Radius = 225,
+        DamageBase = 0,
+        DamageLevel = 60,
+        DurationBase = 1,
+        StunAbilityId = FourCC("S00H"),
+        StunOrderString = "cripple"
+      };
       
       var massAntiMagicShell = new MassAnySpell(FourCC("A099"))
       {
