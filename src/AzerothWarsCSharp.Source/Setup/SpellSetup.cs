@@ -92,6 +92,15 @@ namespace AzerothWarsCSharp.Source.Setup
         DummyOrderString = "forkedlightning",
         ProcChance = 0.15f
       };
+
+      var seismicShard = new MassAnySpell(FourCC("A0OD"))
+      {
+        DummyAbilityId = FourCC("A0OE"),
+        DummyAbilityOrderString = "thunderbolt",
+        Radius = 250,
+        CastFilter = CastFilters.IsTargetEnemyAndAlive
+      };
+      SpellSystem.Register(seismicShard);
     }
   }
 }
