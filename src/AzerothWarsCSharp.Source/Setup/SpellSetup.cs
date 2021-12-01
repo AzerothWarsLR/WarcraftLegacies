@@ -60,6 +60,7 @@ namespace AzerothWarsCSharp.Source.Setup
         StunAbilityId = FourCC("S00H"),
         StunOrderString = "cripple"
       };
+      SpellSystem.Register(consecration);
       
       var massAntiMagicShell = new MassAnySpell(FourCC("A099"))
       {
