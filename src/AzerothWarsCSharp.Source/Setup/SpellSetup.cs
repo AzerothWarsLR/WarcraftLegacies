@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Setup
   {
     public static void Setup()
     {
-      var warStompCairne = new WarStomp(FourCC("A0WM"))
+      var warStompCairne = new Stomp(FourCC("A0WM"))
       {
         Radius = 300,
         DamageBase = 20,
@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(warStompCairne);
 
-      var warStompImmoltar = new WarStomp(FourCC("A0LU"))
+      var warStompImmoltar = new Stomp(FourCC("A0LU"))
       {
         Radius = 200,
         DamageBase = 9000,
@@ -31,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(warStompImmoltar);
       
-      var warStompKazzak = new WarStomp(FourCC("A0AW"))
+      var warStompKazzak = new Stomp(FourCC("A0AW"))
       {
         Radius = 300,
         DamageBase = 25,
@@ -41,6 +41,16 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(warStompKazzak);
 
+      var thunderClap = new Stomp(FourCC("A0QC"))
+      {
+        Radius = 225,
+        DamageBase = 65,
+        DurationBase = 1,
+        StunAbilityId = FourCC("S00H"),
+        StunOrderString = "cripple"
+      };
+      SpellSystem.Register(thunderClap);
+      
       var massAntiMagicShell = new MassAnySpell(FourCC("A099"))
       {
         DummyAbilityId = FourCC("A0JN"),

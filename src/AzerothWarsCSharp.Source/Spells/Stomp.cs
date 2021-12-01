@@ -4,7 +4,7 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Spells
 {
-  public class WarStomp : Spell
+  public class Stomp : Spell
   {
     public float DamageBase { get; init; } = 20;
     public float DamageLevel { get; init; } = 30;
@@ -46,7 +46,7 @@ namespace AzerothWarsCSharp.Source.Spells
         GetUnitY(caster)));
     }
 
-    public WarStomp(int id) : base(id)
+    public Stomp(int id) : base(id)
     {
       
     }
