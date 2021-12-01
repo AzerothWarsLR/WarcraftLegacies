@@ -161,6 +161,19 @@ namespace AzerothWarsCSharp.Source.Setup
         DummyAbilityOrderString = "locustswarm"
       };
       SpellSystem.Register(bombingRun);
+
+      var inspireMadness = new InspireMadness(FourCC("A10M"))
+      {
+        Radius = 400,
+        CountBase = 2,
+        CountLevel = 4,
+        Duration = 16,
+        Effect = @"war3mapImported\Call of Dread Purple.mdx",
+        EffectScale = 1.1f,
+        EffectTarget = @"Abilities\Spells\Other\Charm\CharmTarget.mdl",
+        EffectScaleTarget = 0.5f
+      };
+      SpellSystem.Register(inspireMadness);
     }
   }
 }
