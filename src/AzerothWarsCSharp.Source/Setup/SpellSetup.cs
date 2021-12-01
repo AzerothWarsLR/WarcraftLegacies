@@ -174,6 +174,17 @@ namespace AzerothWarsCSharp.Source.Setup
         EffectScaleTarget = 0.5f
       };
       SpellSystem.Register(inspireMadness);
+
+      var summonGraniteGolems = new SummonUnits(FourCC("A0EP"))
+      {
+        SummonUnitTypeId = FourCC("nggr"),
+        SummonCount = 4,
+        Duration = 60,
+        Radius = 400,
+        AngleOffset = 45,
+        Effect = @"war3mapImported\Earth NovaTarget.mdx"
+      };
+      SpellSystem.Register(summonGraniteGolems);
     }
   }
 }
