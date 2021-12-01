@@ -46,7 +46,8 @@ namespace AzerothWarsCSharp.Source.Setup
         DummyAbilityId = FourCC("A0JN"),
         DummyAbilityOrderString = "antimagicshell",
         Radius = 200,
-        CastFilter = CastFilters.IsTargetAllyAndAlive
+        CastFilter = CastFilters.IsTargetAllyAndAlive,
+        TargetType = SpellTargetType.Point
       };
       SpellSystem.Register(massAntiMagicShell);
       
@@ -55,7 +56,8 @@ namespace AzerothWarsCSharp.Source.Setup
         DummyAbilityId = FourCC("ACuf"),
         DummyAbilityOrderString = "unholyfrenzy",
         Radius = 200,
-        CastFilter = CastFilters.IsTargetEnemyAndAlive
+        CastFilter = CastFilters.IsTargetEnemyAndAlive,
+        TargetType = SpellTargetType.Point
       };
       SpellSystem.Register(massEnrage);
       
@@ -64,7 +66,8 @@ namespace AzerothWarsCSharp.Source.Setup
         DummyAbilityId = FourCC("A0H6"),
         DummyAbilityOrderString = "frostarmor",
         Radius = 200,
-        CastFilter = CastFilters.IsTargetAllyAndAlive
+        CastFilter = CastFilters.IsTargetAllyAndAlive,
+        TargetType = SpellTargetType.Point
       };
       SpellSystem.Register(massFrostArmor);
 
@@ -73,7 +76,8 @@ namespace AzerothWarsCSharp.Source.Setup
         DummyAbilityId = FourCC("A0GL"),
         DummyAbilityOrderString = "thunderbolt",
         Radius = 250,
-        CastFilter = CastFilters.IsTargetEnemyAndAlive
+        CastFilter = CastFilters.IsTargetEnemyAndAlive,
+        TargetType = SpellTargetType.Point
       };
       SpellSystem.Register(scattershot);
 
@@ -82,7 +86,8 @@ namespace AzerothWarsCSharp.Source.Setup
         DummyAbilityId = FourCC("A0FE"),
         DummyAbilityOrderString = "banish",
         Radius = 250,
-        CastFilter = CastFilters.IsTargetOrganicAndAlive
+        CastFilter = CastFilters.IsTargetOrganicAndAlive,
+        TargetType = SpellTargetType.Point
       };
       SpellSystem.Register(massBanish);
 
@@ -98,7 +103,8 @@ namespace AzerothWarsCSharp.Source.Setup
         DummyAbilityId = FourCC("A0OE"),
         DummyAbilityOrderString = "thunderbolt",
         Radius = 250,
-        CastFilter = CastFilters.IsTargetEnemyAndAlive
+        CastFilter = CastFilters.IsTargetEnemyAndAlive,
+        TargetType = SpellTargetType.Point
       };
       SpellSystem.Register(seismicShard);
 
@@ -107,7 +113,8 @@ namespace AzerothWarsCSharp.Source.Setup
         DummyAbilityId = FourCC("A0VY"),
         DummyAbilityOrderString = "invisibility",
         Radius = 350,
-        CastFilter = CastFilters.IsTargetOrganicAndAlive
+        CastFilter = CastFilters.IsTargetOrganicAndAlive,
+        TargetType = SpellTargetType.Point
       };
       SpellSystem.Register(elunesGaze);
 

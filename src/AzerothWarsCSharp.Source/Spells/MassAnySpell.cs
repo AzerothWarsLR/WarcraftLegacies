@@ -10,6 +10,7 @@ namespace AzerothWarsCSharp.Source.Spells
     public string DummyAbilityOrderString { get; init; }
     public float Radius { get; init; }
     public DummyCast.CastFilter CastFilter { get; init; }
+    public SpellTargetType TargetType { get; init; } = SpellTargetType.None;
 
     public MassAnySpell(int id) : base(id)
     {
@@ -17,8 +18,15 @@ namespace AzerothWarsCSharp.Source.Spells
 
     public override void OnCast(unit caster, widget target, float targetX, float targetY)
     {
+      var x = targetX;
+      var y = targetY;
+      if (TargetType == SpellTargetType.None)
+      {
+        x = GetUnitX(caster);
+        y = GetUnitY(caster);
+      }
       DummyCast.CastOnUnitsInRadius(caster, DummyAbilityId, DummyAbilityOrderString, GetAbilityLevel(caster),
-        GetUnitX(caster), GetUnitY(caster), Radius, CastFilter);
+        x, y, Radius, CastFilter);
     }
   }
 }
