@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Spells
     {
     }
 
-    public override void OnCast(unit caster)
+    public override void OnCast(unit caster, widget target, float targetX, float targetY)
     {
       DummyCast.CastOnUnitsInRadius(caster, DummyAbilityId, DummyAbilityOrderString, GetAbilityLevel(caster),
         GetUnitX(caster), GetUnitY(caster), Radius, CastFilter);

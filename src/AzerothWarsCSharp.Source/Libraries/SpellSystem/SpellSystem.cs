@@ -52,7 +52,7 @@ namespace AzerothWarsCSharp.Source.Libraries.SpellSystem
     
     private static void OnCast()
     {
-      SpellsByAbilityId[GetSpellAbilityId()].OnCast(GetTriggerUnit());
+      SpellsByAbilityId[GetSpellAbilityId()].OnCast(GetTriggerUnit(), GetSpellTargetUnit(), GetSpellTargetX(), GetSpellTargetY());
     }
     
     /// <summary>

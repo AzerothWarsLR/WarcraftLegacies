@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Spells
       }
     }
     
-    public override void OnCast(unit caster)
+    public override void OnCast(unit caster, widget target, float targetX, float targetY)
     {
       throw new System.NotImplementedException();
     }

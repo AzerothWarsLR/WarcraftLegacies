@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Libraries.SpellSystem
   {
     public int Id { get; }
 
-    public abstract void OnCast(unit caster);
+    public abstract void OnCast(unit caster, widget target, float targetX, float targetY);
     
     protected int GetAbilityLevel(unit whichUnit)
     {

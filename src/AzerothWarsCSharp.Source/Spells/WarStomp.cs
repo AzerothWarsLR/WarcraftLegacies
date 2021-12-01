@@ -30,16 +30,16 @@ namespace AzerothWarsCSharp.Source.Spells
       DummyCast.CastOnUnit(caster, StunAbilityId, StunOrderString, duration, target);
     }
 
-    public override void OnCast(unit caster)
+    public override void OnCast(unit caster, widget target, float targetX, float targetY)
     {
       using var tempGroup = new GroupEx();
       tempGroup.EnumUnitsInRange(GetUnitX(caster), GetUnitY(caster), Radius);
-      foreach (var target in tempGroup.ToList())
+      foreach (var enumUnit in tempGroup.ToList())
       {
-        if (CastFilters.IsTargetEnemyAndAlive(caster, target))
+        if (CastFilters.IsTargetEnemyAndAlive(caster, enumUnit))
         {
-          DamageUnit(caster, target);
-          StunUnit(caster, target);
+          DamageUnit(caster, enumUnit);
+          StunUnit(caster, enumUnit);
         }
       }
       DestroyEffect(AddSpecialEffect(@"Abilities\\Spells\\Orc\\Warstomp\\WarStompCaster.mdl", GetUnitX(caster),
