@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Spells
       {
         return;
       }
-      DummyCast.CastOnUnit(GetOwningPlayer(caster), StunAbilityId, StunOrderString, duration, target);
+      DummyCast.CastOnUnit(caster, StunAbilityId, StunOrderString, duration, target);
     }
 
     public override void OnCast(unit caster)

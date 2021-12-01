@@ -85,6 +85,13 @@ namespace AzerothWarsCSharp.Source.Setup
         CastFilter = CastFilters.IsTargetOrganicAndAlive
       };
       SpellSystem.Register(massBanish);
+
+      var thunderFists = new SpellOnAttack(FourCC("A0LN"))
+      {
+        DummyAbilityId = FourCC("A0LN"),
+        DummyOrderString = "forkedlightning",
+        ProcChance = 0.15f
+      };
     }
   }
 }

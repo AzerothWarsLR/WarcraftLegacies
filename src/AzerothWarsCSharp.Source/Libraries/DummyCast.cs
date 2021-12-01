@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Libraries
   public static class DummyCast
   {
     public delegate bool CastFilter(unit caster, unit target);
-    
+
     public static void CastOnUnitsInRadius(unit caster, int abilityId, string orderId, int level, float x, float y, float radius, CastFilter castFilter)
     {
       var group = new GroupEx();
@@ -15,17 +15,17 @@ namespace AzerothWarsCSharp.Source.Libraries
       {
         if (castFilter(caster, target))
         {
-          CastOnUnit(GetOwningPlayer(caster), abilityId, orderId, level, target);
+          CastOnUnit(caster, abilityId, orderId, level, target);
         }
       }
     }
     
-    public static void CastOnUnit(player whichPlayer, int abilityId, string orderId, int level, unit target)
+    public static void CastOnUnit(unit caster, int abilityId, string orderId, int level, unit target)
     {
       var dummy = DummyCaster.DummyUnit;
-      SetUnitOwner(dummy, whichPlayer, false);
-      SetUnitX(dummy, GetUnitX(target));
-      SetUnitY(dummy, GetUnitY(target));
+      SetUnitOwner(dummy, GetOwningPlayer(caster), false);
+      SetUnitX(dummy, GetUnitX(caster));
+      SetUnitY(dummy, GetUnitY(caster));
       UnitAddAbility(dummy, abilityId);
       SetUnitAbilityLevel(dummy, abilityId, level);
       IssueTargetOrder(dummy, orderId, target);
