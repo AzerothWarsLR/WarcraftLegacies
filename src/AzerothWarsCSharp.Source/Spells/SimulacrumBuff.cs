@@ -1,5 +1,4 @@
-﻿using System.IO;
-using AzerothWarsCSharp.Source.Libraries;
+﻿using AzerothWarsCSharp.Source.Libraries;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
@@ -7,11 +6,11 @@ namespace AzerothWarsCSharp.Source.Spells
 {
   public class SimulacrumBuff : PassiveBuff
   {
-    private float _damageScale;
-    private float _hitpointScale;
-    private float _timedLifeDuration;
-    private string _effectTarget;
-    private float _effectScaleTarget;
+    private readonly float _damageScale;
+    private readonly float _hitpointScale;
+    private readonly float _timedLifeDuration;
+    private readonly string _effectTarget;
+    private readonly float _effectScaleTarget;
     
     public override void OnDeath(bool killingBlow)
     {
