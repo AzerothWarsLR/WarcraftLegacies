@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Launcher
     ///   Folder containing loose JASS files that will be added to the final result.
     /// </summary>
     private const string JassFolderPath = @"..\..\..\..\..\jass\";
-    private const string BaseMapPath = @"..\..\..\..\..\maps\source2.w3x";
+    private const string BaseMapPath = @"..\..\..\..\..\maps\source.w3x";
 
     /// <summary>
     ///   File containing Warcraft 3 objects that will be added to the final result.
