@@ -101,6 +101,15 @@ namespace AzerothWarsCSharp.Source.Setup
         CastFilter = CastFilters.IsTargetEnemyAndAlive
       };
       SpellSystem.Register(seismicShard);
+
+      var elunesGaze = new MassAnySpell(FourCC("A0VX"))
+      {
+        DummyAbilityId = FourCC("A0VY"),
+        DummyAbilityOrderString = "invisibility",
+        Radius = 350,
+        CastFilter = CastFilters.IsTargetOrganicAndAlive
+      };
+      SpellSystem.Register(elunesGaze);
     }
   }
 }
