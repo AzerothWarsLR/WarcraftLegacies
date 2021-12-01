@@ -1,4 +1,5 @@
-﻿using AzerothWarsCSharp.Source.Libraries.SpellSystem;
+﻿using System.Linq;
+using AzerothWarsCSharp.Source.Libraries.SpellSystem;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
@@ -46,9 +47,8 @@ namespace AzerothWarsCSharp.Source.Spells
     {
       var group = new GroupEx();
       group.EnumUnitsInRange(targetX, targetY, Radius);
-      var maxSimulacrums = CountBase * CountLevel * GetAbilityLevel(caster);
-      var shuffledList = group.ToList().Shuffled().Take(maxSimulacrums);
-      foreach (var unit in shuffledList)
+      var maxTargets = CountBase * CountLevel * GetAbilityLevel(caster);
+      foreach (var unit in group.ToList().Take(maxTargets))
       {
         if (IsValidTarget(caster, unit))
         {

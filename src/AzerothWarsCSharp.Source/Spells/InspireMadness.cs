@@ -1,4 +1,5 @@
-﻿using AzerothWarsCSharp.Source.Libraries.SpellSystem;
+﻿using System.Linq;
+using AzerothWarsCSharp.Source.Libraries.SpellSystem;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Spells
@@ -23,8 +24,7 @@ namespace AzerothWarsCSharp.Source.Spells
       var group = new GroupEx();
       group.EnumUnitsInRange(targetX, targetY, Radius);
       var maxTargets = CountBase * CountLevel * GetAbilityLevel(caster);
-      var shuffledList = group.ToList().Shuffled().Take(maxTargets);
-      foreach (var unit in shuffledList)
+      foreach (var unit in group.ToList().Take(maxTargets))
         if (IsValidTarget(caster, unit))
           ConvertUnit(caster, unit);
       var tempEffect = AddSpecialEffect(Effect, GetSpellTargetX(), GetSpellTargetY());
