@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MedallionRandom" Version="1.1.0" />
     <PackageReference Include="War3Api.Blizzard" Version="1.32.9" />
     <PackageReference Include="War3Api.Common" Version="1.32.9" />
     <PackageReference Include="WCSharp.Buffs" Version="2.0.5" />

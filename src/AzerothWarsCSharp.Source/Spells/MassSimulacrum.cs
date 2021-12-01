@@ -1,6 +1,4 @@
-﻿using System.Linq;
-using AzerothWarsCSharp.Source.Libraries.SpellSystem;
-using Medallion;
+﻿using AzerothWarsCSharp.Source.Libraries.SpellSystem;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
