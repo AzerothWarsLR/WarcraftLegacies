@@ -7,6 +7,7 @@ namespace AzerothWarsCSharp.Source.Setup
     public static void Setup()
     {
       SpellSetup.Setup();
+      TeamSetup.Setup();
       FactionSetup.Setup();
       FactionMultiboard.Initialize();
     }

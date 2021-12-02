@@ -9,6 +9,12 @@ namespace AzerothWarsCSharp.Source.Libraries.MacroSystem
     private static readonly List<Faction> AllFactions = new();
     private static readonly List<Team> AllTeams = new();
 
+    public static void FactionSetTeam(Faction faction, Team team)
+    {
+      faction.Team = team;
+      team.AddFaction(faction);
+    }
+    
     public static List<Faction> GetAllFactions()
     {
       return AllFactions.ToList();

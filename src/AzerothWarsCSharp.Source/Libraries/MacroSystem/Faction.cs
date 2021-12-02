@@ -9,6 +9,7 @@ namespace AzerothWarsCSharp.Source.Libraries.MacroSystem
     public int Income { get; set; } = 0;
     public string Name { get; }
     public string PrefixColor { get; }
+    internal Team Team { get; set; }
     
     public Faction(string name, playercolor playerColor, string prefixColor, string iconName)
     {

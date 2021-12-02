@@ -61,7 +61,7 @@ namespace AzerothWarsCSharp.Source.UserInterface
     {
       MultiboardRows.Add(row);
       RowCount++;
-      for (var i = 0; i < ColumnCount; i++)
+      for (var i = 0; i < ColumnCount && i < row.Width; i++)
       {
         var multiboardItemData = row.Items[i];
         var multiboardItem = MultiboardGetItem(_multiboard, RowCount-1, i);
@@ -81,7 +81,8 @@ namespace AzerothWarsCSharp.Source.UserInterface
 
     protected MultiboardEx()
     {
-      
+      MultiboardSetItemsStyle(_multiboard, false, false);
+      MultiboardSetItemsWidth(_multiboard, 0f);
     }
 
     ~MultiboardEx()

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using AzerothWarsCSharp.Source.Libraries.MacroSystem;
 using static War3Api.Common;
 
@@ -8,21 +9,27 @@ namespace AzerothWarsCSharp.Source.UserInterface
   {
     private static FactionMultiboard _instance;
 
+    private FactionMultiboard(IEnumerable<Team> teams) : base()
+    {
+      Title = "Factions";
+      ColumnCount = 3;
+      Display = true;
+      Minimized = false;
+      foreach (var team in teams)
+      {
+        AddRow(new MultiboardTeamRow(team));
+        foreach (var faction in team.GetFactions())
+        { 
+          AddRow(new MultiboardFactionRow(faction));
+        }
+      }
+    }
+
     private static void CreateInstance()
     {
       try
       {
-        _instance = new FactionMultiboard
-        {
-          Title = "Factions",
-          ColumnCount = 3,
-          Display = true,
-          Minimized = false
-        };
-        foreach (var faction in FactionSystem.GetAllFactions())
-        {
-          _instance.AddRow(new MultiboardFactionRow(faction));
-        }
+        _instance = new FactionMultiboard(FactionSystem.GetAllTeams());
       }
       catch (Exception e)
       {
