@@ -1,7 +1,4 @@
-﻿using System.Drawing;
-using static War3Api.Common;
-
-namespace AzerothWarsCSharp.Source.UserInterface
+﻿namespace AzerothWarsCSharp.Source.UserInterface
 {
   public class MultiboardItemData
   {
@@ -11,7 +8,7 @@ namespace AzerothWarsCSharp.Source.UserInterface
 
     public string Icon { get; set; }
 
-    public Color Color { get; set; }
+    public Color Color { get; set; } = new Color(255, 255, 255, 255);
 
     public bool ShowValue { get; set; }
     
