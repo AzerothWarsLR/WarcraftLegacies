@@ -166,9 +166,9 @@ namespace AzerothWarsCSharp.Launcher
         throw new Exception(compileResult.Diagnostics.First(x => x.Severity == DiagnosticSeverity.Error).GetMessage());
       }
       
-      //Load loose JASS code into temporary map file
       if (jassFolderPath != null)
       {
+        //Load loose JASS code into temporary map file
         var jassHelper = new JassHelper(JassHelperPath, commonJ, blizzardJ, OutputFolderPath);
         var mergedJassFilePath = Path.Combine(CompiledJassFolderPath, "war3map.j");
         jassHelper.CombineVJassWithJass(Path.Combine(baseMapPath, "war3map.j"), new[] {JassFolderPath}, mergedJassFilePath);
