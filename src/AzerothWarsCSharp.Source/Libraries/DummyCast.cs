@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Libraries
     {
       var group = new GroupEx();
       group.EnumUnitsInRange(x, y, radius);
-      foreach (var target in group.ToList())
+      foreach (var target in group.EmptyToList())
       {
         if (castFilter(caster, target))
         {

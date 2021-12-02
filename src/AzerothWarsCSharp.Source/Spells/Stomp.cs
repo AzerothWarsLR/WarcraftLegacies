@@ -32,9 +32,9 @@ namespace AzerothWarsCSharp.Source.Spells
 
     public override void OnCast(unit caster, widget target, float targetX, float targetY)
     {
-      using var tempGroup = new GroupEx();
+      var tempGroup = new GroupEx();
       tempGroup.EnumUnitsInRange(GetUnitX(caster), GetUnitY(caster), Radius);
-      foreach (var enumUnit in tempGroup.ToList())
+      foreach (var enumUnit in tempGroup.EmptyToList())
       {
         if (CastFilters.IsTargetEnemyAndAlive(caster, enumUnit))
         {

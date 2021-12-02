@@ -9,18 +9,16 @@ namespace AzerothWarsCSharp.Source
   /// Manages the creation and destruction of the internal group automatically,
   /// preventing memory leak issues.
   /// </summary>
-  public class GroupEx : IDisposable
+  public class GroupEx
   {
-    private group _group;
+    private readonly group _group;
     
-    public List<unit> ToList()
+    /// <summary>
+    /// Empties the units in this group into a C# List.
+    /// </summary>
+    public List<unit> EmptyToList()
     {
       var list = new List<unit>();
-      if (_group == null)
-      {
-        throw new NullReferenceException(nameof(_group));
-      }
-
       var firstOfGroup = FirstOfGroup(_group);
       while (firstOfGroup != null)
       {
@@ -28,21 +26,20 @@ namespace AzerothWarsCSharp.Source
         GroupRemoveUnit(_group, firstOfGroup);
         firstOfGroup = FirstOfGroup(_group);
       }
-      
       return list;
     }
     
-    public void EnumUnitsInRange(float x, float y, float radius)
+    public GroupEx EnumUnitsInRange(float x, float y, float radius)
     {
       GroupEnumUnitsInRange(_group, x, y, radius, null);
+      return this;
     }
 
-    public void Dispose()
+    ~GroupEx()
     {
       DestroyGroup(_group);
-      GC.SuppressFinalize(this);
     }
-
+    
     public GroupEx()
     {
       _group = CreateGroup();

@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Spells
       var group = new GroupEx();
       group.EnumUnitsInRange(targetX, targetY, Radius);
       var maxTargets = CountBase * CountLevel * GetAbilityLevel(caster);
-      foreach (var unit in group.ToList().Take(maxTargets))
+      foreach (var unit in group.EmptyToList().Take(maxTargets))
         if (IsValidTarget(caster, unit))
           ConvertUnit(caster, unit);
       var tempEffect = AddSpecialEffect(Effect, GetSpellTargetX(), GetSpellTargetY());
