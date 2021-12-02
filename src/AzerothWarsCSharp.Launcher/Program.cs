@@ -31,6 +31,7 @@ namespace AzerothWarsCSharp.Launcher
     /// </summary>
     private const string JassFolderPath = @"..\..\..\..\..\jass\";
     private const string BaseMapPath = @"..\..\..\..\..\maps\source.w3x";
+    private const string TestMapPath = @"..\..\..\..\..\maps\testsource.w3x";
 
     /// <summary>
     ///   File containing Warcraft 3 objects that will be added to the final result.
@@ -56,6 +57,7 @@ namespace AzerothWarsCSharp.Launcher
       Console.WriteLine("2. Compile map");
       Console.WriteLine("3. Compile and run map");
       Console.WriteLine("4. Find unused models");
+      Console.WriteLine("5. Compile and run test map");
       MakeDecision();
     }
 
@@ -74,13 +76,16 @@ namespace AzerothWarsCSharp.Launcher
           });
           break;
         case ConsoleKey.D2:
-          Build(false);
+          Build(BaseMapPath, false, JassFolderPath);
           break;
         case ConsoleKey.D3:
-          Build(true);
+          Build(BaseMapPath, true, JassFolderPath);
           break;
         case ConsoleKey.D4:
           DisplayUnusedModels();
+          break;
+        case ConsoleKey.D5:
+          Build(TestMapPath, true);
           break;
         default:
           Console.WriteLine($"{Environment.NewLine}Invalid input. Please choose again.");
@@ -121,7 +126,7 @@ namespace AzerothWarsCSharp.Launcher
     /// <summary>
     ///   Builds the Warcraft 3 map.
     /// </summary>
-    private static void Build(bool launch)
+    private static void Build(string baseMapPath, bool launch, string jassFolderPath = null)
     {
       // Ensure these folders exist
       Directory.CreateDirectory(OutputFolderPath);
@@ -134,9 +139,9 @@ namespace AzerothWarsCSharp.Launcher
         "Warcraft III/JassHelper/common.j");
 
       // Load existing map data
-      var map = Map.Open(BaseMapPath);
+      var map = Map.Open(baseMapPath);
       var builder = new MapBuilder(map);
-      builder.AddFiles(BaseMapPath, "*", SearchOption.AllDirectories);
+      builder.AddFiles(baseMapPath, "*", SearchOption.AllDirectories);
       map.Info.ScriptLanguage = ScriptLanguage.Lua;
       
       // Set debug options if necessary, configure compiler
@@ -162,14 +167,17 @@ namespace AzerothWarsCSharp.Launcher
       }
       
       //Load loose JASS code into temporary map file
-      var jassHelper = new JassHelper(JassHelperPath, commonJ, blizzardJ, OutputFolderPath);
-      var mergedJassFilePath = Path.Combine(CompiledJassFolderPath, "war3map.j");
-      jassHelper.CombineVJassWithJass(Path.Combine(BaseMapPath, "war3map.j"), new[] {JassFolderPath}, mergedJassFilePath);
+      if (jassFolderPath != null)
+      {
+        var jassHelper = new JassHelper(JassHelperPath, commonJ, blizzardJ, OutputFolderPath);
+        var mergedJassFilePath = Path.Combine(CompiledJassFolderPath, "war3map.j");
+        jassHelper.CombineVJassWithJass(Path.Combine(baseMapPath, "war3map.j"), new[] {JassFolderPath}, mergedJassFilePath);
+        
+        //Combine transpiled vJASS with transpiled Lua
+        var jassToLuaScript = ScriptTranspiler.JassToLua(File.ReadAllText(mergedJassFilePath));
+        map.Script = LuaScriptMerger.Merge(map.Script, jassToLuaScript);
+      }
       
-      //Combine transpiled vJASS with transpiled Lua
-      var jassToLuaScript = ScriptTranspiler.JassToLua(File.ReadAllText(mergedJassFilePath));
-      map.Script = LuaScriptMerger.Merge(map.Script, jassToLuaScript);
-
       // Update war3map.lua so you can inspect the generated Lua code easily
       File.WriteAllText(Path.Combine(OutputFolderPath, OutputScriptName), map.Script);
       
