@@ -1,4 +1,4 @@
-library ArtifactSetup requires Artifact, ArtifactMenu
+library ArtifactSetup requires Artifact
 
   globals
     private constant real DUMMY_X = 20195
