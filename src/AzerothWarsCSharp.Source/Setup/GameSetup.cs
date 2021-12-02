@@ -9,6 +9,7 @@ namespace AzerothWarsCSharp.Source.Setup
       SpellSetup.Setup();
       TeamSetup.Setup();
       FactionMultiboard.Initialize();
+      CheatSetup.Setup();
     }
   }
 }
