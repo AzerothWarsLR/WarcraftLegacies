@@ -23,7 +23,9 @@ namespace AzerothWarsCSharp.Source
 		{
 			try
 			{
+				Console.WriteLine("Starting setup.");
 				GameSetup.Setup();
+				Console.WriteLine("Setup finished.");
 			}
 			catch (Exception ex)
 			{

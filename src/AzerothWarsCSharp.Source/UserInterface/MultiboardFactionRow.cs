@@ -13,20 +13,15 @@ namespace AzerothWarsCSharp.Source.UserInterface
       var nameAndIcon = new MultiboardItemData
       {
         Icon = faction.Icon,
-        Value = faction.Name,
+        Value = faction.PrefixColor + faction.Name,
         Width = 0.08f,
-        ShowValue = true,
-        ShowIcon = true,
       };
       Items.Add(nameAndIcon);
 
       var controlPointCount = new MultiboardItemData()
       {
-        Icon = faction.Icon,
         Value = faction.ControlPointCount.ToString(),
         Width = 0.02f,
-        ShowValue = true,
-        ShowIcon = false,
       };
       Items.Add(controlPointCount);
 
@@ -34,8 +29,6 @@ namespace AzerothWarsCSharp.Source.UserInterface
       {
         Value = faction.Income.ToString(),
         Width = 0.02f,
-        ShowValue = true,
-        ShowIcon = false,
       };
       Items.Add(incomeCount);
     }

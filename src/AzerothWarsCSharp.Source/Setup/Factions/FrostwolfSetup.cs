@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Setup.Factions
 
     public static void Initialize()
     {
-      Frostwolf = new Faction("Frostwolf", PLAYER_COLOR_RED, "|c00ff0303", "Thrall.blp");
+      Frostwolf = new Faction("Frostwolf", PLAYER_COLOR_RED, "|c00ff0303", "Thrall");
       FactionSystem.Add(Frostwolf);
     }
   }

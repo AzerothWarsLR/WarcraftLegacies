@@ -16,14 +16,13 @@ namespace AzerothWarsCSharp.Source.UserInterface
         {
           Title = "Factions",
           ColumnCount = 3,
-          RowCount = FactionSystem.GetAllFactions().Count,
           Display = true,
           Minimized = false
         };
-        // foreach (var faction in FactionSystem.GetAllFactions())
-        // {
-        //   _instance.AddRow(new MultiboardFactionRow(faction));
-        // }
+        foreach (var faction in FactionSystem.GetAllFactions())
+        {
+          _instance.AddRow(new MultiboardFactionRow(faction));
+        }
       }
       catch (Exception e)
       {

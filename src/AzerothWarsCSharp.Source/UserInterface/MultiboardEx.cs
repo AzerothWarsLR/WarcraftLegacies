@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using static War3Api.Common;
 
@@ -36,7 +37,7 @@ namespace AzerothWarsCSharp.Source.UserInterface
     public int RowCount
     {
       get => MultiboardGetRowCount(_multiboard);
-      set => MultiboardSetRowCount(_multiboard, value);
+      private set => MultiboardSetRowCount(_multiboard, value);
     }
 
     public int ColumnCount
@@ -63,13 +64,18 @@ namespace AzerothWarsCSharp.Source.UserInterface
       for (var i = 0; i < ColumnCount; i++)
       {
         var multiboardItemData = row.Items[i];
-        var multiboardItem = MultiboardGetItem(_multiboard, RowCount, i);
-        MultiboardSetItemStyle(multiboardItem, multiboardItemData.ShowValue, multiboardItemData.ShowIcon);
+        var multiboardItem = MultiboardGetItem(_multiboard, RowCount-1, i);
         MultiboardSetItemValue(multiboardItem, multiboardItemData.Value);
         MultiboardSetItemValueColor(multiboardItem, multiboardItemData.Color.R, multiboardItemData.Color.G,
           multiboardItemData.Color.B, multiboardItemData.Color.A);
         MultiboardSetItemWidth(multiboardItem, multiboardItemData.Width);
-        MultiboardSetItemIcon(multiboardItem, multiboardItemData.Icon);
+        var showIcon = multiboardItemData.Icon != null;
+        var showValue = multiboardItemData.Value != null;
+        MultiboardSetItemStyle(multiboardItem, showValue, showIcon);
+        if (showIcon)
+        {
+          MultiboardSetItemIcon(multiboardItem, @$"ReplaceableTextures\CommandButtons\BTN{multiboardItemData.Icon}.blp");
+        }
       }
     }
 
