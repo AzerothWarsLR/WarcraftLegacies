@@ -7,6 +7,9 @@ namespace AzerothWarsCSharp.Source.Setup
     public static void Setup()
     {
       CheatGold.Setup();
+      CheatControl.Setup();
+      CheatFood.Setup();
+      CheatHp.Setup();
     }
   }
 }
