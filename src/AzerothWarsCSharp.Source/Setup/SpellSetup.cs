@@ -186,6 +186,21 @@ namespace AzerothWarsCSharp.Source.Setup
         Effect = @"war3mapImported\Earth NovaTarget.mdx"
       };
       SpellSystem.Register(summonGraniteGolems);
+
+      var solarJudgement = new SolarJudgementSpell(FourCC("A01F"))
+      {
+        DamageBase = 20,
+        DamageLevel = 20,
+        Duration = 14,
+        Period = 0.25f,
+        HealMultiplier = 1.5f,
+        UndeadDamageMultiplier = 1.1f,
+        Radius = 250,
+        BoltRadius = 125,
+        EffectPath = "Shining Flare.mdx",
+        EffectHealPath = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
+      };
+      SpellSystem.Register(solarJudgement);
     }
   }
 }
