@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools
@@ -8,7 +9,7 @@ namespace AzerothWarsCSharp.MacroTools
   {
     public string Name { get; internal set; }
     public string Icon { get; internal set; }
-    public Faction? Faction { get; internal set; }
+    public Faction? ParentFaction { get; internal set; }
 
     private QuestProgress _progress;
     public QuestProgress Progress
@@ -64,6 +65,7 @@ namespace AzerothWarsCSharp.MacroTools
       var questItem = QuestCreateItem(_quest);
       _questItemsByObjective.Add(objective, questItem);
       QuestItemSetDescription(questItem, objective.Description);
+      objective.ParentQuest = this;
       objective.ProgressChanged += OnObjectiveProgressChanged;
     }
     
@@ -77,7 +79,7 @@ namespace AzerothWarsCSharp.MacroTools
       QuestSetRequired(_quest, false);
       QuestSetEnabled(_quest, false);
     }
-
+    
     private void RecalculateProgress()
     {
       var allComplete = true;
@@ -90,9 +92,11 @@ namespace AzerothWarsCSharp.MacroTools
         {
           case QuestProgress.Failed:
             anyFailed = true;
+            allComplete = false;
             break;
           case QuestProgress.Undiscovered:
             anyUndiscovered = true;
+            allComplete = false;
             break;
           case QuestProgress.Incomplete:
             allComplete = false;
@@ -100,7 +104,7 @@ namespace AzerothWarsCSharp.MacroTools
           case QuestProgress.Complete:
             break;
           default:
-            throw new ArgumentOutOfRangeException();
+            throw new InvalidEnumArgumentException();
         }
       }
       //If anything is undiscovered, the quest is undiscovered
@@ -142,7 +146,7 @@ namespace AzerothWarsCSharp.MacroTools
           QuestItemSetCompleted(questItem, false);
           break;
         default:
-          throw new ArgumentOutOfRangeException(nameof(args));
+          throw new InvalidEnumArgumentException();
       }
       Console.WriteLine("Quest responded to event");
       RecalculateProgress();

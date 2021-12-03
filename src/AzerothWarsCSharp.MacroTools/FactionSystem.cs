@@ -21,13 +21,13 @@ namespace AzerothWarsCSharp.MacroTools
     public static void FactionRemoveQuest(Faction faction, Quest quest)
     {
       faction.RemoveQuest(quest);
-      quest.Faction = null;
+      quest.ParentFaction = null;
     }
     
     public static void FactionAddQuest(Faction faction, Quest quest)
     {
       faction.AddQuest(quest);
-      quest.Faction = faction;
+      quest.ParentFaction = faction;
 
       if (faction.Player != null)
       {
