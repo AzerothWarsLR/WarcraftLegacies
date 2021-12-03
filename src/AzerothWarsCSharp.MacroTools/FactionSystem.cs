@@ -2,7 +2,7 @@
 using System.Linq;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.Libraries.MacroSystem
+namespace AzerothWarsCSharp.MacroTools
 {
   public static class FactionSystem
   {

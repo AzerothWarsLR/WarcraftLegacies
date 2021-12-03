@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.Libraries.MacroSystem
+namespace AzerothWarsCSharp.MacroTools
 {
   public class Faction
   {

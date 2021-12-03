@@ -1,4 +1,4 @@
-﻿using AzerothWarsCSharp.Source.Libraries.MacroSystem;
+﻿using AzerothWarsCSharp.MacroTools;
 
 namespace AzerothWarsCSharp.Source.UserInterface
 {

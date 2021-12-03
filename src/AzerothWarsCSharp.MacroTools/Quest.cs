@@ -1,4 +1,4 @@
-﻿namespace AzerothWarsCSharp.Source.Libraries.MacroSystem
+﻿namespace AzerothWarsCSharp.MacroTools
 {
   public class Quest
   {
