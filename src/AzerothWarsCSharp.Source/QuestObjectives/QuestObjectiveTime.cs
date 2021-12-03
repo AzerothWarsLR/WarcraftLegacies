@@ -11,7 +11,6 @@ namespace AzerothWarsCSharp.Source.QuestObjectives
     private void OnTimerExpired()
     {
       Progress = QuestProgress.Complete;
-      Console.WriteLine("Time objective completed");
     }
     
     public QuestObjectiveTime(int duration)

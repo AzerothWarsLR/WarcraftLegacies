@@ -42,7 +42,6 @@ namespace AzerothWarsCSharp.MacroTools
       {
         _progress = value;
         ProgressChanged?.Invoke(this, new QuestObjectiveEventArgs(this));
-        Console.WriteLine("Quest objective changed progress");
       }
       get => _progress;
     }
