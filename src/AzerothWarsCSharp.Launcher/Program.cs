@@ -24,6 +24,7 @@ namespace AzerothWarsCSharp.Launcher
   {
     // Input
     private const string SourceCodeProjectFolderPath = @"..\..\..\..\AzerothWarsCSharp.Source";
+    private const string SourceCodeProjectFolderPath2 = @"..\..\..\..\AzerothWarsCSharp.MacroTools";
     private const string JassHelperPath = @"..\..\..\..\..\build\JassHelper\jasshelper.exe";
 
     /// <summary>
@@ -147,7 +148,7 @@ namespace AzerothWarsCSharp.Launcher
       // Set debug options if necessary, configure compiler
       const string csc = "-debug -define:DEBUG";
       var csproj = Directory.EnumerateFiles(SourceCodeProjectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
-      var compiler = new Compiler(csproj, OutputFolderPath, string.Empty, null!, "War3Api.*;WCSharp.*", "", csc, false, null, string.Empty)
+      var compiler = new Compiler(csproj, OutputFolderPath, string.Empty, null!, "War3Api.*;WCSharp.*;AzerothWarsCSharp.MacroTools.*", "", csc, false, null, string.Empty)
       {
         IsExportMetadata = true,
         IsModule = false,
