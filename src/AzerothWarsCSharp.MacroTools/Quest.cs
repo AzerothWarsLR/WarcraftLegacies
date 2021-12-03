@@ -2,21 +2,48 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.MacroTools
 {
   public class Quest
   {
-    public string Name { get; private init; }
-    public string Icon { get; private init; }
-    public string Flavour { get; private init; }
-    public Faction? ParentFaction { get; internal set; }
+    private readonly quest _quest;
+
+    private readonly Dictionary<QuestObjective, questitem> _questItemsByObjective = new();
 
     private QuestProgress _progress;
+
+    public Quest(string name, string icon)
+    {
+      Name = name;
+      Icon = icon;
+      _quest = CreateQuest();
+      QuestSetTitle(_quest, name);
+      QuestSetIconPath(_quest, $@"ReplaceableTextures\CommandButtons\BTN{icon}.blp");
+      QuestSetRequired(_quest, false);
+      QuestSetEnabled(_quest, false);
+    }
+
+    public string Name { get; }
+    
+    public string Icon { get; }
+    
+    public string Flavour
+    {
+      init => QuestSetDescription(_quest, value);
+    }
+    
+    public string CompletionPopupText { get; init; } = "DefaultCompletionPopupText";
+    
+    public string FailurePopupText { get; init; } = "DefaultFailurePopupText";
+    
+    public Faction? ParentFaction { get; internal set; }
+
     public QuestProgress Progress
     {
       get => _progress;
-      set
+      private set
       {
         _progress = value;
         switch (_progress)
@@ -30,11 +57,13 @@ namespace AzerothWarsCSharp.MacroTools
             QuestSetCompleted(_quest, false);
             QuestSetFailed(_quest, true);
             QuestSetDiscovered(_quest, true);
+            DisplayFailed();
             break;
           case QuestProgress.Complete:
             QuestSetCompleted(_quest, true);
             QuestSetFailed(_quest, false);
             QuestSetDiscovered(_quest, true);
+            DisplayCompleted();
             break;
           case QuestProgress.Undiscovered:
             QuestSetCompleted(_quest, false);
@@ -47,24 +76,41 @@ namespace AzerothWarsCSharp.MacroTools
       }
     }
 
-    private readonly Dictionary<QuestObjective, questitem> _questItemsByObjective = new();
-    private readonly quest _quest;
+    /// <summary>
+    /// Notifies the quest holder that this quest was failed.
+    /// </summary>
+    private void DisplayFailed()
+    {
+      if (GetLocalPlayer() == ParentFaction?.Player)
+      {
+        var displayText = $"\n|cffffcc00QUEST FAILED - {Name}|r\n{FailurePopupText}\n";
+        DisplayTextToPlayer(GetLocalPlayer(), 0, 0, displayText);
+        StartSound(bj_questFailedSound);
+      }
+    }
+    
+    /// <summary>
+    ///   Notifies the quest holder that this quest was completed.
+    /// </summary>
+    private void DisplayCompleted()
+    {
+      if (GetLocalPlayer() == ParentFaction?.Player)
+      {
+        var displayText = $"\n|cffffcc00QUEST COMPLETED - {Name}|r\n{CompletionPopupText}\n";
+        DisplayTextToPlayer(GetLocalPlayer(), 0, 0, displayText);
+        StartSound(bj_questCompletedSound);
+      }
+    }
 
     /// <summary>
-    /// Makes this Quest visible to the specified player.
-    /// It will appear in their Quest (F9) menu.
+    ///   Makes this Quest visible to the specified player.
+    ///   It will appear in their Quest (F9) menu.
     /// </summary>
     /// <param name="player"></param>
     internal void Render(player player)
     {
-      if (GetLocalPlayer() == player)
-      {
-        QuestSetEnabled(_quest, true);
-      }
-      foreach (var objective in _questItemsByObjective.Keys)
-      {
-        objective.Render();
-      }
+      if (GetLocalPlayer() == player) QuestSetEnabled(_quest, true);
+      foreach (var objective in _questItemsByObjective.Keys) objective.Render();
     }
 
     public void AddObjective(QuestObjective objective)
@@ -75,20 +121,7 @@ namespace AzerothWarsCSharp.MacroTools
       objective.ParentQuest = this;
       objective.ProgressChanged += OnObjectiveProgressChanged;
     }
-    
-    public Quest(string name, string icon, string flavour)
-    {
-      Name = name;
-      Icon = icon;
-      Flavour = flavour;
-      _quest = CreateQuest();
-      QuestSetTitle(_quest, name);
-      QuestSetIconPath(_quest, $@"ReplaceableTextures\CommandButtons\BTN{icon}.blp");
-      QuestSetRequired(_quest, false);
-      QuestSetEnabled(_quest, false);
-      QuestSetDescription(_quest, flavour);
-    }
-    
+
     private void RecalculateProgress()
     {
       var allComplete = true;
@@ -116,27 +149,20 @@ namespace AzerothWarsCSharp.MacroTools
             throw new InvalidEnumArgumentException();
         }
       }
+
       //If anything is undiscovered, the quest is undiscovered
       if (anyUndiscovered)
-      {
         Progress = QuestProgress.Undiscovered;
-      }
       //If everything is complete, the quest is completed
       else if (allComplete)
-      {
         Progress = QuestProgress.Complete;
-      }
       //If anything is failed, the quest is failed
       else if (anyFailed)
-      {
         Progress = QuestProgress.Failed;
-      }
       else
-      {
         Progress = QuestProgress.Incomplete;
-      }
     }
-    
+
     private void OnObjectiveProgressChanged(object? sender, QuestObjectiveEventArgs args)
     {
       var questItem = _questItemsByObjective[args.Objective];
@@ -157,10 +183,11 @@ namespace AzerothWarsCSharp.MacroTools
         default:
           throw new InvalidEnumArgumentException();
       }
+
       Console.WriteLine("Quest responded to event");
       RecalculateProgress();
     }
-    
+
     ~Quest()
     {
       DestroyQuest(_quest);
