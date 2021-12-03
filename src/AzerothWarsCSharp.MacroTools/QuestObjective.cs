@@ -5,17 +5,36 @@ namespace AzerothWarsCSharp.MacroTools
 {
   public abstract class QuestObjective
   {
+    private effect? _overheadEffect;
     private minimapicon? _minimapIcon;
     
     public event EventHandler<QuestObjectiveEventArgs>? ProgressChanged;
     
+    /// <summary>
+    /// A description of how to complete the Objective.
+    /// </summary>
     public string Description { get; protected init; } = "DefaultObjectiveText";
     
-    public float X { get; protected init; }
+    /// <summary>
+    /// The X location of this Objective in the world.
+    /// </summary>
+    protected float X { get; init; }
     
-    public float Y { get; protected init; }
+    /// <summary>
+    /// The Y location of this Objective in the world.
+    /// </summary>
+    protected float Y { get; init; }
     
-    public bool HasLocation { get; protected init; }
+    /// <summary>
+    /// Whether or not this Objective is situated somewhere specific in the world.
+    /// </summary>
+    protected bool HasLocation { get; init; }
+    
+    /// <summary>
+    /// The target of this Objective.
+    /// Objectives with targets display an exclamation mark or question mark above the target's head.
+    /// </summary>
+    public widget? Target { get; protected init; }
     
     internal Quest? ParentQuest { get; set; }
     
@@ -23,16 +42,44 @@ namespace AzerothWarsCSharp.MacroTools
 
     private QuestProgress _progress;
 
-    internal void Render(player player)
+    internal void Unrender()
     {
-      if (ParentQuest == null)
+      if (_minimapIcon != null)
       {
-        throw new NullReferenceException(nameof(ParentQuest));
+        DestroyMinimapIcon(_minimapIcon);
+        _minimapIcon = null;
       }
-      if (GetLocalPlayer() == player && Progress == QuestProgress.Incomplete && ParentQuest.Progress == QuestProgress.Incomplete && HasLocation)
+      if (_overheadEffect != null)
       {
-        _minimapIcon ??= CreateMinimapIcon(X, Y, 255, 255, 0, SkinManagerGetLocalPath("MinimapQuestObjectivePrimary"), FOG_OF_WAR_MASKED);
+        DestroyEffect(_overheadEffect);
+        _overheadEffect = null;
+      }
+    }
+
+    /// <summary>
+    /// Displays the Objective for a particular player.
+    /// Displayed Objectives might have a map marker, an exclamation mark above a target's head, or nothing.
+    /// </summary>
+    internal void Render()
+    {
+      var player = ParentQuest?.ParentFaction?.Player;
+      //Render the map marker.
+      if (player != null && ParentQuest != null && GetLocalPlayer() == player && Progress == QuestProgress.Incomplete &&
+          ParentQuest.Progress == QuestProgress.Incomplete && HasLocation)
+      {
+        _minimapIcon ??= CreateMinimapIcon(X, Y, 255, 255, 0, SkinManagerGetLocalPath("MinimapQuestObjectivePrimary"),
+          FOG_OF_WAR_MASKED);
         SetMinimapIconVisible(_minimapIcon, true);
+      }
+      //Render an effect above the target's head.
+      var overheadEffectPath = "";
+      if (Target != null && _overheadEffect == null)
+      {
+        if (GetLocalPlayer() == player)
+        {
+          overheadEffectPath = @"Abilities\Spells\Other\TalkToMe\TalkToMe";
+        }
+        _overheadEffect = AddSpecialEffectTarget(overheadEffectPath, Target, "overhead");
       }
     }
     
@@ -41,6 +88,23 @@ namespace AzerothWarsCSharp.MacroTools
       protected set
       {
         _progress = value;
+        switch (value)
+        {
+          case QuestProgress.Incomplete:
+            Render();
+            break;
+          case QuestProgress.Failed:
+            Unrender();
+            break;
+          case QuestProgress.Complete:
+            Unrender();
+            break;
+          case QuestProgress.Undiscovered:
+            Unrender();
+            break;
+          default:
+            throw new ArgumentOutOfRangeException(nameof(value), value, null);
+        }
         ProgressChanged?.Invoke(this, new QuestObjectiveEventArgs(this));
       }
       get => _progress;
@@ -49,6 +113,7 @@ namespace AzerothWarsCSharp.MacroTools
     ~QuestObjective()
     {
       DestroyMinimapIcon(_minimapIcon);
+      DestroyEffect(_overheadEffect);
     }
   }
 }

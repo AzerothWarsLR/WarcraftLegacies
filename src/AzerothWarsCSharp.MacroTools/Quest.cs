@@ -40,6 +40,8 @@ namespace AzerothWarsCSharp.MacroTools
             QuestSetFailed(_quest, false);
             QuestSetDiscovered(_quest, false);
             break;
+          default:
+            throw new InvalidEnumArgumentException();
         }
       }
     }
@@ -60,7 +62,7 @@ namespace AzerothWarsCSharp.MacroTools
       }
       foreach (var objective in _questItemsByObjective.Keys)
       {
-        objective.Render(player);
+        objective.Render();
       }
     }
 
