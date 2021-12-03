@@ -19,6 +19,7 @@ namespace AzerothWarsCSharp.Source.QuestObjectives
       _trigger = CreateTrigger();
       TriggerRegisterUnitEvent(_trigger, target, EVENT_UNIT_DEATH);
       TriggerAddAction(_trigger, OnUnitKilled);
+      Description = $"Kill {GetUnitName(target)}";
     }
 
     ~QuestObjectiveKillUnit()
