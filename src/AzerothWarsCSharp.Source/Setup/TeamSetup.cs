@@ -1,4 +1,5 @@
 ﻿using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.Source.QuestObjectives;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup
@@ -32,6 +33,7 @@ namespace AzerothWarsCSharp.Source.Setup
       var frostwolf = new Faction("Frostwolf", PLAYER_COLOR_RED, "|c00ff0303", "Thrall");
       FactionSystem.PlayerSetFaction(Player(0), frostwolf);
       var drektharsSpellBookQuest = new Quest("Drekthar's Spellbook", "SorceressMaster");
+      drektharsSpellBookQuest.AddObjective(new QuestObjectiveTime(5));
       FactionSystem.FactionAddQuest(frostwolf, drektharsSpellBookQuest);
       var warsong = new Faction("Warsong", PLAYER_COLOR_ORANGE, "|c00ff8000", "HellScream");
       var horde = new Team("Horde", "DarkVictory");

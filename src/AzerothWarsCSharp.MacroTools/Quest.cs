@@ -1,4 +1,5 @@
-﻿using static War3Api.Common;
+﻿using System.Collections.Generic;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools
 {
@@ -7,6 +8,7 @@ namespace AzerothWarsCSharp.MacroTools
     public string Name { get; internal set; }
     public string Icon { get; internal set; }
     public Faction? Faction { get; internal set; }
+    private readonly Dictionary<QuestObjective, questitem> _questItemsByObjective = new();
 
     private readonly quest _quest;
 
@@ -21,6 +23,13 @@ namespace AzerothWarsCSharp.MacroTools
       {
         QuestSetEnabled(_quest, true);
       }
+    }
+
+    public void AddObjective(QuestObjective objective)
+    {
+      var questItem = QuestCreateItem(_quest);
+      _questItemsByObjective.Add(objective, questItem);
+      QuestItemSetDescription(questItem, objective.Description);
     }
     
     public Quest(string name, string icon)
