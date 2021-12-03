@@ -1,4 +1,5 @@
-﻿using AzerothWarsCSharp.MacroTools;
+﻿using System;
+using AzerothWarsCSharp.MacroTools;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.QuestObjectives
@@ -10,6 +11,7 @@ namespace AzerothWarsCSharp.Source.QuestObjectives
     private void OnTimerExpired()
     {
       Progress = QuestProgress.Complete;
+      Console.WriteLine("Time objective completed");
     }
     
     public QuestObjectiveTime(int duration)
