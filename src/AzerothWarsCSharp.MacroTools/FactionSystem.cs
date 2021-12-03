@@ -12,6 +12,10 @@ namespace AzerothWarsCSharp.MacroTools
     public static void PlayerSetFaction(player player, Faction faction)
     {
       faction.Player = player;
+      foreach (var quest in faction.GetQuests())
+      {
+        quest.Render(player);
+      }
     }
     
     public static void FactionRemoveQuest(Faction faction, Quest quest)
@@ -24,9 +28,14 @@ namespace AzerothWarsCSharp.MacroTools
     {
       faction.AddQuest(quest);
       quest.Faction = faction;
+
+      if (faction.Player != null)
+      {
+        quest.Render(faction.Player);
+      }
     }
     
-    public static void FactionSetTeam(Faction faction, Team team)
+    public static void FactionSetTeam(Faction faction, Team? team)
     {
       faction.Team = team;
       team.AddFaction(faction);

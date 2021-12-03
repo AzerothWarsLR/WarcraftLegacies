@@ -30,6 +30,9 @@ namespace AzerothWarsCSharp.Source.Setup
       FactionSystem.Add(legionTeam);
       
       var frostwolf = new Faction("Frostwolf", PLAYER_COLOR_RED, "|c00ff0303", "Thrall");
+      FactionSystem.PlayerSetFaction(Player(0), frostwolf);
+      var drektharsSpellBookQuest = new Quest("Drekthar's Spellbook", "SorceressMaster");
+      FactionSystem.FactionAddQuest(frostwolf, drektharsSpellBookQuest);
       var warsong = new Faction("Warsong", PLAYER_COLOR_ORANGE, "|c00ff8000", "HellScream");
       var horde = new Team("Horde", "DarkVictory");
       var zandalar = new Faction("Zandalar", PLAYER_COLOR_PEACH, "|cffff8c6c","HeadHunterBerserker");
