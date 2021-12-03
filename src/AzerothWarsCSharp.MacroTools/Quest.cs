@@ -7,8 +7,9 @@ namespace AzerothWarsCSharp.MacroTools
 {
   public class Quest
   {
-    public string Name { get; internal set; }
-    public string Icon { get; internal set; }
+    public string Name { get; private init; }
+    public string Icon { get; private init; }
+    public string Flavour { get; private init; }
     public Faction? ParentFaction { get; internal set; }
 
     private QuestProgress _progress;
@@ -75,15 +76,17 @@ namespace AzerothWarsCSharp.MacroTools
       objective.ProgressChanged += OnObjectiveProgressChanged;
     }
     
-    public Quest(string name, string icon)
+    public Quest(string name, string icon, string flavour)
     {
       Name = name;
       Icon = icon;
+      Flavour = flavour;
       _quest = CreateQuest();
       QuestSetTitle(_quest, name);
       QuestSetIconPath(_quest, $@"ReplaceableTextures\CommandButtons\BTN{icon}.blp");
       QuestSetRequired(_quest, false);
       QuestSetEnabled(_quest, false);
+      QuestSetDescription(_quest, flavour);
     }
     
     private void RecalculateProgress()

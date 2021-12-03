@@ -32,7 +32,8 @@ namespace AzerothWarsCSharp.Source.Setup
       
       var frostwolf = new Faction("Frostwolf", PLAYER_COLOR_RED, "|c00ff0303", "Thrall");
       FactionSystem.PlayerSetFaction(Player(0), frostwolf);
-      var drektharsSpellBookQuest = new Quest("Drekthar's Spellbook", "SorceressMaster");
+      var drektharsSpellBookQuest = new Quest("Drekthar's Spellbook", "SorceressMaster",
+        "The savage Night Elves threaten the safety of the entire Horde. Capture their World Tree and bring Thrall to its roots.");
       drektharsSpellBookQuest.AddObjective(new QuestObjectiveTime(5));
       drektharsSpellBookQuest.AddObjective(new QuestObjectiveKillUnit(CreateUnit(Player(0), FourCC("hfoo"), 0, 0, 0)));
       drektharsSpellBookQuest.AddObjective(new QuestObjectiveReachRect(Rect(-100, -100, 700, 700), "the tavern at the end of time"));
