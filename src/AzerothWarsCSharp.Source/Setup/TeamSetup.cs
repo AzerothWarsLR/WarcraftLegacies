@@ -35,6 +35,7 @@ namespace AzerothWarsCSharp.Source.Setup
       var drektharsSpellBookQuest = new Quest("Drekthar's Spellbook", "SorceressMaster");
       drektharsSpellBookQuest.AddObjective(new QuestObjectiveTime(5));
       drektharsSpellBookQuest.AddObjective(new QuestObjectiveKillUnit(CreateUnit(Player(0), FourCC("hfoo"), 0, 0, 0)));
+      drektharsSpellBookQuest.AddObjective(new QuestObjectiveReachRect(Rect(-100, -100, 700, 700), "the tavern at the end of time"));
       FactionSystem.FactionAddQuest(frostwolf, drektharsSpellBookQuest);
       var warsong = new Faction("Warsong", PLAYER_COLOR_ORANGE, "|c00ff8000", "HellScream");
       var horde = new Team("Horde", "DarkVictory");

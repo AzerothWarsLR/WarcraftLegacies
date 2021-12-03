@@ -58,6 +58,10 @@ namespace AzerothWarsCSharp.MacroTools
       {
         QuestSetEnabled(_quest, true);
       }
+      foreach (var objective in _questItemsByObjective.Keys)
+      {
+        objective.Render(player);
+      }
     }
 
     public void AddObjective(QuestObjective objective)
