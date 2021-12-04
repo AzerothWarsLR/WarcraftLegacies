@@ -4,33 +4,59 @@ namespace AzerothWarsCSharp.Source.UserInterface
 {
   public sealed class MultiboardFactionRow : MultiboardRowData
   {
-    public Faction Faction { get; }
+    private readonly MultiboardItemData _controlPointCount;
+    private readonly MultiboardItemData _incomeCount;
+    private readonly MultiboardItemData _nameAndIcon;
 
     public MultiboardFactionRow(Faction faction)
     {
-      Faction = faction;
-
-      var nameAndIcon = new MultiboardItemData
+      _nameAndIcon = new MultiboardItemData
       {
         Icon = faction.Icon,
         Value = faction.PrefixColor + faction.Name,
-        Width = 0.08f,
+        Width = 0.08f
       };
-      Items.Add(nameAndIcon);
+      AddItem(_nameAndIcon);
 
-      var controlPointCount = new MultiboardItemData()
+      _controlPointCount = new MultiboardItemData
       {
         Value = faction.ControlPointCount.ToString(),
-        Width = 0.02f,
+        Width = 0.02f
       };
-      Items.Add(controlPointCount);
+      AddItem(_controlPointCount);
 
-      var incomeCount = new MultiboardItemData()
+      _incomeCount = new MultiboardItemData
       {
         Value = faction.Income.ToString(),
-        Width = 0.02f,
+        Width = 0.02f
       };
-      Items.Add(incomeCount);
+      AddItem(_incomeCount);
+
+      faction.NameChanged += OnFactionNameChanged;
+      faction.ControlPointCountChanged += OnFactionControlPointChanged;
+      faction.IncomeChanged += OnFactionControlPointChanged;
+      faction.IconChanged += OnFactionIconChanged;
+      faction.PrefixColorChanged += OnFactionNameChanged;
+    }
+
+    private void OnFactionIconChanged(object sender, FactionEventArgs args)
+    {
+      _nameAndIcon.Icon = args.Faction.Icon;
+    }
+    
+    private void OnFactionNameChanged(object sender, FactionEventArgs args)
+    {
+      _nameAndIcon.Value = args.Faction.PrefixColor + args.Faction.Name;
+    }
+
+    private void OnFactionControlPointChanged(object sender, FactionEventArgs args)
+    {
+      _controlPointCount.Value = args.Faction.ControlPointCount.ToString();
+    }
+
+    private void OnFactionIncomeChanged(object sender, FactionEventArgs args)
+    {
+      _incomeCount.Value = args.Faction.Income.ToString();
     }
   }
 }

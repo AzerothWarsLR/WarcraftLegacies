@@ -1,13 +1,57 @@
-﻿namespace AzerothWarsCSharp.Source.UserInterface
+﻿using System;
+
+namespace AzerothWarsCSharp.Source.UserInterface
 {
   public class MultiboardItemData
   {
-    public string Value { get; init; }
+    private Color _color = new(255, 255, 255, 255);
 
-    public float Width { get; init; }
+    private string _icon;
 
-    public string Icon { get; init; }
+    private string _value;
 
-    public Color Color { get; init; } = new Color(255, 255, 255, 255);
+    private float _width;
+
+    public string Value
+    {
+      get => _value;
+      set
+      {
+        _value = value;
+        PropertyChanged?.Invoke(this, new MultiboardItemDataEventArgs(this));
+      }
+    }
+
+    public float Width
+    {
+      get => _width;
+      set
+      {
+        _width = value;
+        PropertyChanged?.Invoke(this, new MultiboardItemDataEventArgs(this));
+      }
+    }
+
+    public string Icon
+    {
+      get => _icon;
+      set
+      {
+        _icon = value;
+        PropertyChanged?.Invoke(this, new MultiboardItemDataEventArgs(this));
+      }
+    }
+
+    public Color Color
+    {
+      get => _color;
+      set
+      {
+        _color = value;
+        PropertyChanged?.Invoke(this, new MultiboardItemDataEventArgs(this));
+      }
+    }
+
+    public event EventHandler<MultiboardItemDataEventArgs> PropertyChanged;
   }
 }

@@ -4,7 +4,7 @@ namespace AzerothWarsCSharp.Source.UserInterface
 {
   public sealed class MultiboardTeamRow : MultiboardRowData
   {
-    public Team Team { get; set; }
+    private Team Team { get; set; }
     
     public MultiboardTeamRow(Team team)
     {
@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.UserInterface
         Value = $"---------{team.Name}--------",
         Width = 0.12f,
       };
-      Items.Add(item);
+      AddItem(item);
     }
   }
 }

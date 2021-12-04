@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.UserInterface
   {
     private readonly multiboard _multiboard = CreateMultiboard();
 
-    protected readonly List<MultiboardRowData> MultiboardRows = new();
+    private readonly List<MultiboardRowData> _multiboardRows = new();
     
     public bool Display
     {
@@ -48,23 +48,33 @@ namespace AzerothWarsCSharp.Source.UserInterface
 
     public List<MultiboardRowData> GetRows()
     {
-      return MultiboardRows.ToList();
+      return _multiboardRows.ToList();
     }
     
     public void Clear()
     {
-      MultiboardRows.Clear();
+      _multiboardRows.Clear();
       MultiboardClear(_multiboard);
     }
 
     protected void AddRow(MultiboardRowData row)
     {
-      MultiboardRows.Add(row);
+      _multiboardRows.Add(row);
       RowCount++;
+      RenderRow(row, RowCount-1);
+      row.ChildItemChanged += OnChildRowChanged;
+    }
+
+    /// <summary>
+    /// Takes data from a <see cref="MultiboardRowData"/> and renders it in the visible Multiboard.
+    /// Can also be used to re-render an existing row.
+    /// </summary>
+    private void RenderRow(MultiboardRowData row, int rowIndex)
+    {
       for (var i = 0; i < ColumnCount && i < row.Width; i++)
       {
-        var multiboardItemData = row.Items[i];
-        var multiboardItem = MultiboardGetItem(_multiboard, RowCount-1, i);
+        var multiboardItemData = row[i];
+        var multiboardItem = MultiboardGetItem(_multiboard, rowIndex, i);
         MultiboardSetItemValue(multiboardItem, multiboardItemData.Value);
         MultiboardSetItemValueColor(multiboardItem, multiboardItemData.Color.R, multiboardItemData.Color.G,
           multiboardItemData.Color.B, multiboardItemData.Color.A);
@@ -78,7 +88,13 @@ namespace AzerothWarsCSharp.Source.UserInterface
         }
       }
     }
-
+    
+    private void OnChildRowChanged(object sender, MultiboardRowDataEventArgs args)
+    {
+      var index = _multiboardRows.FindIndex(a => a == args.MultiboardRowData);
+      RenderRow(args.MultiboardRowData, index);
+    }
+    
     protected MultiboardEx()
     {
       MultiboardSetItemsStyle(_multiboard, false, false);
