@@ -1,6 +1,7 @@
 ﻿using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.Source.QuestObjectives;
 using AzerothWarsCSharp.Source.QuestOutcomes;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup
@@ -31,6 +32,11 @@ namespace AzerothWarsCSharp.Source.Setup
       FactionSystem.FactionSetTeam(legion, legionTeam);
       FactionSystem.Add(legionTeam);
 
+      var thrall = new Legend(FourCC("Othr"))
+      {
+        Name = "Thrall"
+      };
+      
       var frostwolf = new Faction("Frostwolf", PLAYER_COLOR_RED, "|c00ff0303", "Thrall");
       FactionSystem.PlayerSetFaction(Player(0), frostwolf);
       var drektharsSpellBookQuest = new Quest("Drekthar's Spellbook", "SorceressMaster")
@@ -43,7 +49,17 @@ namespace AzerothWarsCSharp.Source.Setup
       drektharsSpellBookQuest.AddObjective(new QuestObjectiveTime(5));
       drektharsSpellBookQuest.AddObjective(new QuestObjectiveKillUnit(CreateUnit(Player(0), FourCC("hfoo"), 0, 0, 0)));
       drektharsSpellBookQuest.AddOutcome(new QuestOutcomeChangeFactionName("Boopboop"));
+      drektharsSpellBookQuest.AddOutcome(new QuestOutcomeSpawnLegend(thrall, new Point(0, 0), "my house", 5));
       FactionSystem.FactionAddQuest(frostwolf, drektharsSpellBookQuest);
+      
+      var testQuest = new Quest("Fat Dab", "Archimonde")
+      {
+        Flavour = "Sometimes you have to do a fully sick dab.",
+        CompletionFlavour = "You did it! The first ever fully sick dab."
+      };
+      testQuest.AddObjective(new QuestObjectiveControlLegend(thrall));
+      FactionSystem.FactionAddQuest(frostwolf, testQuest);
+      
       var warsong = new Faction("Warsong", PLAYER_COLOR_ORANGE, "|c00ff8000", "HellScream");
       var horde = new Team("Horde", "DarkVictory");
       var zandalar = new Faction("Zandalar", PLAYER_COLOR_PEACH, "|cffff8c6c", "HeadHunterBerserker");

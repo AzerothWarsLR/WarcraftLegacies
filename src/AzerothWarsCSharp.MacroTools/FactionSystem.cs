@@ -8,6 +8,7 @@ namespace AzerothWarsCSharp.MacroTools
   {
     private static readonly List<Faction> AllFactions = new();
     private static readonly List<Team> AllTeams = new();
+    private static readonly List<Legend> AllLegends = new();
 
     public static void PlayerSetFaction(player player, Faction faction)
     {
@@ -49,6 +50,11 @@ namespace AzerothWarsCSharp.MacroTools
     public static List<Team> GetAllTeams()
     {
       return AllTeams.ToList();
+    }
+
+    public static void AddLegend(Legend legend)
+    {
+      AllLegends.Add(legend);
     }
     
     public static void Add(Team team)
