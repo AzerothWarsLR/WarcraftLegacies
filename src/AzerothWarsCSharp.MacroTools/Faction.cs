@@ -103,10 +103,10 @@ namespace AzerothWarsCSharp.MacroTools
     
     public Faction(string name, playercolor playerColor, string prefixColor, string iconName)
     {
-      Name = name;
-      PlayerColor = playerColor;
-      Icon = iconName;
-      PrefixColor = prefixColor;
+      _name = name;
+      _playerColor = playerColor;
+      _icon = iconName;
+      _prefixColor = prefixColor;
     }
   }
 }
