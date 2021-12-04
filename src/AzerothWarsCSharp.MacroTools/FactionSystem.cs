@@ -13,35 +13,29 @@ namespace AzerothWarsCSharp.MacroTools
     public static void PlayerSetFaction(player player, Faction faction)
     {
       faction.Player = player;
-      foreach (var quest in faction.GetQuests())
-      {
-        quest.Render(player);
-      }
+      foreach (var quest in faction.GetQuests()) quest.Render(player);
     }
-    
+
     public static void FactionRemoveQuest(Faction faction, Quest quest)
     {
       faction.RemoveQuest(quest);
       quest.ParentFaction = null;
     }
-    
+
     public static void FactionAddQuest(Faction faction, Quest quest)
     {
       faction.AddQuest(quest);
       quest.ParentFaction = faction;
 
-      if (faction.Player != null)
-      {
-        quest.Render(faction.Player);
-      }
+      if (faction.Player != null) quest.Render(faction.Player);
     }
-    
+
     public static void FactionSetTeam(Faction faction, Team? team)
     {
       faction.Team = team;
       team.AddFaction(faction);
     }
-    
+
     public static List<Faction> GetAllFactions()
     {
       return AllFactions.ToList();
@@ -56,7 +50,7 @@ namespace AzerothWarsCSharp.MacroTools
     {
       AllLegends.Add(legend);
     }
-    
+
     public static void Add(Team team)
     {
       AllTeams.Add(team);

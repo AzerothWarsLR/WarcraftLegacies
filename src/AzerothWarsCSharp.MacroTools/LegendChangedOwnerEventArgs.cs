@@ -5,13 +5,13 @@ namespace AzerothWarsCSharp.MacroTools
 {
   public class LegendChangedOwnerEventArgs : EventArgs
   {
-    public Legend Legend { get; }
-    private player? PreviousOwner { get; }
-    
     public LegendChangedOwnerEventArgs(Legend legend, player? previousOwner)
     {
       Legend = legend;
       PreviousOwner = previousOwner;
     }
+
+    public Legend Legend { get; }
+    private player? PreviousOwner { get; }
   }
 }

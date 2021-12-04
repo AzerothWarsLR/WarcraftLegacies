@@ -7,14 +7,28 @@ namespace AzerothWarsCSharp.MacroTools
 {
   public class Faction
   {
-    public event EventHandler<FactionEventArgs>? NameChanged;
-    public event EventHandler<FactionEventArgs>? IconChanged;
-    public event EventHandler<FactionEventArgs>? PlayerColorChanged;
-    public event EventHandler<FactionEventArgs>? ControlPointCountChanged;
-    public event EventHandler<FactionEventArgs>? IncomeChanged;
-    public event EventHandler<FactionEventArgs>? PrefixColorChanged;
+    private readonly List<Quest> _quests = new();
+
+    private int _controlPointCount;
 
     private string _icon;
+
+    private int _income;
+
+    private string _name;
+
+    private playercolor _playerColor;
+
+    private string _prefixColor;
+
+    public Faction(string name, playercolor playerColor, string prefixColor, string iconName)
+    {
+      _name = name;
+      _playerColor = playerColor;
+      _icon = iconName;
+      _prefixColor = prefixColor;
+    }
+
     public string Icon
     {
       get => _icon;
@@ -24,8 +38,6 @@ namespace AzerothWarsCSharp.MacroTools
         IconChanged?.Invoke(this, new FactionEventArgs(this));
       }
     }
-
-    private playercolor _playerColor;
 
     public playercolor PlayerColor
     {
@@ -37,7 +49,6 @@ namespace AzerothWarsCSharp.MacroTools
       }
     }
 
-    private int _controlPointCount = 0;
     public int ControlPointCount
     {
       get => _controlPointCount;
@@ -48,7 +59,6 @@ namespace AzerothWarsCSharp.MacroTools
       }
     }
 
-    private int _income = 0;
     public int Income
     {
       get => _income;
@@ -59,7 +69,6 @@ namespace AzerothWarsCSharp.MacroTools
       }
     }
 
-    private string _name;
     public string Name
     {
       get => _name;
@@ -70,7 +79,6 @@ namespace AzerothWarsCSharp.MacroTools
       }
     }
 
-    private string _prefixColor;
     public string PrefixColor
     {
       get => _prefixColor;
@@ -80,17 +88,22 @@ namespace AzerothWarsCSharp.MacroTools
         PrefixColorChanged?.Invoke(this, new FactionEventArgs(this));
       }
     }
-    
+
     internal Team? Team { get; set; }
-    
+
     public player? Player { get; internal set; }
-    private readonly List<Quest> _quests = new();
+    public event EventHandler<FactionEventArgs>? NameChanged;
+    public event EventHandler<FactionEventArgs>? IconChanged;
+    public event EventHandler<FactionEventArgs>? PlayerColorChanged;
+    public event EventHandler<FactionEventArgs>? ControlPointCountChanged;
+    public event EventHandler<FactionEventArgs>? IncomeChanged;
+    public event EventHandler<FactionEventArgs>? PrefixColorChanged;
 
     public List<Quest> GetQuests()
     {
       return _quests.ToList();
     }
-    
+
     internal void AddQuest(Quest quest)
     {
       _quests.Add(quest);
@@ -99,14 +112,6 @@ namespace AzerothWarsCSharp.MacroTools
     internal void RemoveQuest(Quest quest)
     {
       _quests.Remove(quest);
-    }
-    
-    public Faction(string name, playercolor playerColor, string prefixColor, string iconName)
-    {
-      _name = name;
-      _playerColor = playerColor;
-      _icon = iconName;
-      _prefixColor = prefixColor;
     }
   }
 }
