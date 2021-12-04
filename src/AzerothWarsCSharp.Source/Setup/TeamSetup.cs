@@ -1,5 +1,6 @@
 ﻿using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.Source.QuestObjectives;
+using AzerothWarsCSharp.Source.QuestOutcomes;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup
@@ -36,11 +37,12 @@ namespace AzerothWarsCSharp.Source.Setup
       {
         Flavour =
           "The savage Night Elves threaten the safety of the entire Horde. Capture their World Tree and bring Thrall to its roots.",
-        CompletionPopupText =
+        CompletionFlavour =
           "The World Tree, Nordrassil, has been captured by the forces of the Horde. Drek'thar has gifted Warchief Thrall his magical spellbook for this achievement."
       };
       drektharsSpellBookQuest.AddObjective(new QuestObjectiveTime(5));
       drektharsSpellBookQuest.AddObjective(new QuestObjectiveKillUnit(CreateUnit(Player(0), FourCC("hfoo"), 0, 0, 0)));
+      drektharsSpellBookQuest.AddOutcome(new QuestOutcomeChangeFactionName("Boopboop"));
       FactionSystem.FactionAddQuest(frostwolf, drektharsSpellBookQuest);
       var warsong = new Faction("Warsong", PLAYER_COLOR_ORANGE, "|c00ff8000", "HellScream");
       var horde = new Team("Horde", "DarkVictory");

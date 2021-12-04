@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Text;
 using static War3Api.Common;
 using static War3Api.Blizzard;
 
@@ -9,9 +10,8 @@ namespace AzerothWarsCSharp.MacroTools
   public class Quest
   {
     private readonly quest _quest;
-
+    private readonly List<QuestOutcome> _questOutcomes = new();
     private readonly Dictionary<QuestObjective, questitem> _questItemsByObjective = new();
-
     private QuestProgress _progress;
 
     public Quest(string name, string icon)
@@ -28,15 +28,21 @@ namespace AzerothWarsCSharp.MacroTools
     public string Name { get; }
     
     public string Icon { get; }
-    
+
+    private string _flavour = "DefaultFlavourText";
     public string Flavour
     {
-      init => QuestSetDescription(_quest, value);
+      get => _flavour;
+      set
+      {
+        _flavour = value;
+        RecalculateDescription();
+      }
     }
     
-    public string CompletionPopupText { get; init; } = "DefaultCompletionPopupText";
+    public string CompletionFlavour { get; init; } = "DefaultCompletionFlavour";
     
-    public string FailurePopupText { get; init; } = "DefaultFailurePopupText";
+    public string FailureFlavour { get; init; } = "DefaultFailureFlavour";
     
     public Faction? ParentFaction { get; internal set; }
 
@@ -64,6 +70,10 @@ namespace AzerothWarsCSharp.MacroTools
             QuestSetFailed(_quest, false);
             QuestSetDiscovered(_quest, true);
             DisplayCompleted();
+            foreach (var outcome in _questOutcomes)
+            {
+              outcome.Fire();
+            }
             break;
           case QuestProgress.Undiscovered:
             QuestSetCompleted(_quest, false);
@@ -83,7 +93,7 @@ namespace AzerothWarsCSharp.MacroTools
     {
       if (GetLocalPlayer() == ParentFaction?.Player)
       {
-        var displayText = $"\n|cffffcc00QUEST FAILED - {Name}|r\n{FailurePopupText}\n";
+        var displayText = $"\n|cffffcc00QUEST FAILED - {Name}|r\n{FailureFlavour}\n";
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, displayText);
         StartSound(bj_questFailedSound);
       }
@@ -96,12 +106,24 @@ namespace AzerothWarsCSharp.MacroTools
     {
       if (GetLocalPlayer() == ParentFaction?.Player)
       {
-        var displayText = $"\n|cffffcc00QUEST COMPLETED - {Name}|r\n{CompletionPopupText}\n";
+        var displayText = $"\n|cffffcc00QUEST COMPLETED - {Name}|r\n{CompletionFlavour}\n";
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, displayText);
         StartSound(bj_questCompletedSound);
       }
     }
 
+    private void RecalculateDescription()
+    {
+      var stringBuilder = new StringBuilder(Flavour);
+      stringBuilder.AppendLine("\n|cffffcc00On completion:|r ");
+      foreach (var reward in _questOutcomes)
+      {
+        stringBuilder.AppendLine($" - {reward.Description}");
+      }
+      stringBuilder.AppendLine("\n|cffffcc00On failure:|r ");
+      QuestSetDescription(_quest, stringBuilder.ToString());
+    }
+    
     /// <summary>
     ///   Makes this Quest visible to the specified player.
     ///   It will appear in their Quest (F9) menu.
@@ -113,6 +135,13 @@ namespace AzerothWarsCSharp.MacroTools
       foreach (var objective in _questItemsByObjective.Keys) objective.Render();
     }
 
+    public void AddOutcome(QuestOutcome outcome)
+    {
+      _questOutcomes.Add(outcome);
+      outcome.ParentQuest = this;
+      RecalculateDescription();
+    }
+    
     public void AddObjective(QuestObjective objective)
     {
       var questItem = QuestCreateItem(_quest);
