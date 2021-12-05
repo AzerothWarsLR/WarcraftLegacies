@@ -1,7 +1,6 @@
-library QuestSetup requires DalaranQuestSetup, DruidsQuestSetup, FelHordeQuestSetup, FrostwolfQuestSetup, IronforgeQuestSetup, LegionQuestSetup, LordaeronQuestSetup, QuelthalasQuestSetup, ScourgeQuestSetup, SentinelsQuestSetup, StormwindQuestSetup, WarsongQuestSetup, NagaQuestSetup, BlackEmpireQuestSetup
+library QuestSetup requires DruidsQuestSetup, FelHordeQuestSetup, FrostwolfQuestSetup, IronforgeQuestSetup, LegionQuestSetup, LordaeronQuestSetup, QuelthalasQuestSetup, ScourgeQuestSetup, SentinelsQuestSetup, StormwindQuestSetup, WarsongQuestSetup, NagaQuestSetup, BlackEmpireQuestSetup
 
   public function OnInit takes nothing returns nothing
-    call DalaranQuestSetup_OnInit()
     call DruidsQuestSetup_OnInit()
     call FelHordeQuestSetup_OnInit()
     call FrostwolfQuestSetup_OnInit()
