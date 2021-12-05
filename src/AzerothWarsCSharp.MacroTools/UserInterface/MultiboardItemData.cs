@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AzerothWarsCSharp.Source.UserInterface
+namespace AzerothWarsCSharp.MacroTools.UserInterface
 {
   public class MultiboardItemData
   {

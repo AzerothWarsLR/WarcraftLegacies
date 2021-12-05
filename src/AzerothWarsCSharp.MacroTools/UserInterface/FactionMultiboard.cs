@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using AzerothWarsCSharp.MacroTools;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.UserInterface
+namespace AzerothWarsCSharp.MacroTools.UserInterface
 {
   public class FactionMultiboard : MultiboardEx
   {

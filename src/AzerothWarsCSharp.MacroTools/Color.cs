@@ -1,4 +1,4 @@
-﻿namespace AzerothWarsCSharp.Source
+﻿namespace AzerothWarsCSharp.MacroTools
 {
   public struct Color
   {

@@ -1,6 +1,4 @@
-﻿using AzerothWarsCSharp.MacroTools;
-
-namespace AzerothWarsCSharp.Source.UserInterface
+﻿namespace AzerothWarsCSharp.MacroTools.UserInterface
 {
   public sealed class MultiboardTeamRow : MultiboardRowData
   {
