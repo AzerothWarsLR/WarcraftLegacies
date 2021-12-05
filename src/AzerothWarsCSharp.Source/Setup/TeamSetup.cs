@@ -12,6 +12,7 @@ namespace AzerothWarsCSharp.Source.Setup
     {
       var northAlliance = new Team("Alliance", "HeroicVictory");
       var dalaran = new Faction("Dalaran", PLAYER_COLOR_PINK, "|c00e55bb0", "Jaina");
+
       var kultiras = new Faction("Kul'tiras", PLAYER_COLOR_EMERALD, "|cff00781e", "Proudmoore");
       var lordaeron = new Faction("Lordaeron", PLAYER_COLOR_BLUE, "|c000042ff", "Arthas");
       var ironforge = new Faction("Ironforge", PLAYER_COLOR_YELLOW, "|C00FFFC01", "HeroMountainKing");
@@ -51,6 +52,14 @@ namespace AzerothWarsCSharp.Source.Setup
       drektharsSpellBookQuest.AddOutcome(new QuestOutcomeChangeFactionName("Boopboop"));
       drektharsSpellBookQuest.AddOutcome(new QuestOutcomeSpawnLegend(thrall, new Point(0, 0), "my house", 5));
       FactionSystem.FactionAddQuest(frostwolf, drektharsSpellBookQuest);
+      
+      var questBlueDragons = new Quest("The Blue Dragonflight", "AzureDragon")
+      {
+        CompletionFlavour = "The Nexus has been captured. The Blue Dragonflight fights for Dalaran.",
+        Flavour = "The Blue Dragons of Northrend are the wardens of magic on Azeroth. They might be convinced to willingly join the mages of Dalaran."
+      };
+      questBlueDragons.AddOutcome(new QuestOutcomeUnlockUnitType(FourCC("n0AC"), new[]{FourCC("hbar")}, FourCC("R00U")));
+      FactionSystem.FactionAddQuest(frostwolf, questBlueDragons);
       
       var testQuest = new Quest("Fat Dab", "Archimonde")
       {
