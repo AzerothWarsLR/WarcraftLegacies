@@ -15,6 +15,7 @@ namespace AzerothWarsCSharp.Source.Setup
       });
       FactionMultiboard.Initialize();
       CheatSetup.Setup();
+      QuestMenuSetup.Setup();
     }
   }
 }
