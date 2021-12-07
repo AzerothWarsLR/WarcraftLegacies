@@ -63,12 +63,17 @@ namespace AzerothWarsCSharp.MacroTools.Frames
       BlzFrameSetPoint(_handle, point, relativeTo.Handle, relativePoint, x, y);
     }
 
-    public Frame(string name, framehandle parent, int priority = 0, int createContext = 0)
+    public void ClearAllPoints()
+    {
+      BlzFrameClearAllPoints(_handle);
+    }
+
+    public Frame(string name, framehandle parent, int priority, int createContext)
     {
       _handle = BlzCreateFrame(name, parent, priority, createContext);
     }
 
-    public Frame(string name, Frame parent, int priority = 0, int createContext = 0)
+    public Frame(string name, Frame parent, int priority, int createContext)
     {
       _handle = BlzCreateFrame(name, parent.Handle, priority, createContext);
     }
@@ -78,7 +83,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
       _handle = BlzCreateSimpleFrame(name, parent.Handle, createContext);
     }
 
-    public Frame(string typeName, string name, Frame parent, string inherits = null, int createContext = 0)
+    public Frame(string typeName, string name, Frame parent, string inherits = "", int createContext = 0)
     {
       _handle = BlzCreateFrameByType(typeName, name, parent._handle, inherits, createContext);
     }

@@ -1,4 +1,5 @@
-﻿using AzerothWarsCSharp.MacroTools.UserInterface;
+﻿using AzerothWarsCSharp.MacroTools.Frames;
+using AzerothWarsCSharp.MacroTools.UserInterface;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup
@@ -16,6 +17,10 @@ namespace AzerothWarsCSharp.Source.Setup
       FactionMultiboard.Initialize();
       CheatSetup.Setup();
       QuestMenuSetup.Setup();
+      ArtifactSetup.KillmaimSetup();
+      ArtifactSetup.DrektharsSpellbookSetup();
+      ArtifactSetup.FillerArtifactSetup();
+      ArtifactMenu.Initialize();
     }
   }
 }

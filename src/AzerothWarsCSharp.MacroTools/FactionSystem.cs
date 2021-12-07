@@ -9,6 +9,7 @@ namespace AzerothWarsCSharp.MacroTools
     private static readonly List<Faction> AllFactions = new();
     private static readonly List<Team> AllTeams = new();
     private static readonly List<Legend> AllLegends = new();
+    private static readonly List<Artifact> AllArtifacts = new();
 
     public static void PlayerSetFaction(player player, Faction faction)
     {
@@ -36,6 +37,11 @@ namespace AzerothWarsCSharp.MacroTools
       team.AddFaction(faction);
     }
 
+    public static IEnumerable<Artifact> GetAllArtifacts()
+    {
+      return AllArtifacts.ToList();
+    }
+    
     public static List<Faction> GetAllFactions()
     {
       return AllFactions.ToList();
@@ -51,6 +57,11 @@ namespace AzerothWarsCSharp.MacroTools
       AllLegends.Add(legend);
     }
 
+    public static void Add(Artifact artifact)
+    {
+      AllArtifacts.Add(artifact);
+    }
+    
     public static void Add(Team team)
     {
       AllTeams.Add(team);

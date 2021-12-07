@@ -69,6 +69,8 @@ namespace AzerothWarsCSharp.MacroTools
       }
     }
 
+    public string ColoredName => _prefixColor + _name + "|r";
+
     public string Name
     {
       get => _name;
