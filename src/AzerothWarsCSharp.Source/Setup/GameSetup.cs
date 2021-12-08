@@ -17,7 +17,6 @@ namespace AzerothWarsCSharp.Source.Setup
       FactionMultiboard.Initialize();
       CheatSetup.Setup();
       QuestMenuSetup.Setup();
-      ArtifactSetup.KillmaimSetup();
       ArtifactSetup.DrektharsSpellbookSetup();
       ArtifactSetup.FillerArtifactSetup();
       ArtifactMenu.Initialize();

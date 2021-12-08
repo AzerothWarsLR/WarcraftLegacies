@@ -6,11 +6,13 @@ namespace AzerothWarsCSharp.MacroTools
   /// <summary>
   ///   A unique item. Artifacts appear in the Artifact Menu and can be targets of Quest Objectives.
   /// </summary>
-  public class Artifact
+  public sealed class Artifact : IDisposable
   {
     private const float PingDuration = 3;
     private readonly item _item;
 
+    public event EventHandler<ArtifactEventArgs>? Disposed;
+    
     public Artifact(item item)
     {
       _item = item;
@@ -56,9 +58,10 @@ namespace AzerothWarsCSharp.MacroTools
 
     public event EventHandler<ArtifactEventArgs>? StatusChanged;
 
-    ~Artifact()
+    public void Dispose()
     {
       RemoveItem(_item);
+      Disposed?.Invoke(this, new ArtifactEventArgs(this));
     }
   }
 }

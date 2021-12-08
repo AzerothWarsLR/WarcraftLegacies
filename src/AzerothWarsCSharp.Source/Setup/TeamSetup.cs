@@ -36,6 +36,7 @@ namespace AzerothWarsCSharp.Source.Setup
       drektharsSpellBookQuest.AddOutcome(new QuestOutcomeChangeFactionName("Boopboop"));
       drektharsSpellBookQuest.AddOutcome(new QuestOutcomeSpawnLegend(thrall, new Point(0, 0), "my house", 5));
       drektharsSpellBookQuest.AddOutcome(new QuestOutcomeCreateArtifactAtRect(FourCC("odef"), new Rectangle(10, 10, -10, -10), "banantown"));
+      drektharsSpellBookQuest.AddOutcome(new QuestOutcomeRemoveArtifact(ArtifactSetup.KillmaimSetup()));
       FactionSystem.FactionAddQuest(frostwolf, drektharsSpellBookQuest);
 
       var testQuest = new Quest("Fat Dab", "Archimonde")
