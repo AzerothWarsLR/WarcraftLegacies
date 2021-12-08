@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Setup
       QuestMenuSetup.Setup();
       ArtifactSetup.DrektharsSpellbookSetup();
       ArtifactSetup.FillerArtifactSetup();
-      ArtifactMenu.Initialize();
+      ArtifactBook.Initialize();
     }
   }
 }

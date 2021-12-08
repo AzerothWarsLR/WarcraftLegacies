@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
   /// <summary>
   ///   Represents a limited number of Artifacts in a rectangular grid.
   /// </summary>
-  public class ArtifactMenuPage : Frame
+  public class ArtifactBookPage : Frame
   {
     private const float BackdropWidth = 0.7f;
     private const float BackdropHeight = 0.37f;
@@ -21,10 +21,10 @@ namespace AzerothWarsCSharp.MacroTools.Frames
     private readonly List<Frame> _artifactCards = new();
     private readonly Button _nextButton;
     private readonly Button _previousButton;
-    private ArtifactMenuPage? _next;
-    private ArtifactMenuPage? _previous;
+    private ArtifactBookPage? _next;
+    private ArtifactBookPage? _previous;
 
-    public ArtifactMenuPage(int pageNumber) : base("ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0),
+    public ArtifactBookPage(int pageNumber) : base("ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0),
       0, 0)
     {
       Width = BackdropWidth;
@@ -85,7 +85,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
       Visible = false;
     }
 
-    public ArtifactMenuPage? Next
+    public ArtifactBookPage? Next
     {
       get => _next;
       set
@@ -95,7 +95,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
       }
     }
 
-    public ArtifactMenuPage? Previous
+    public ArtifactBookPage? Previous
     {
       get => _previous;
       set
@@ -121,7 +121,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
     public void AddArtifact(Artifact artifact)
     {
       if (CardCount >= CardLimit)
-        throw new Exception($"ArtifactMenuPage is already at the card limit of {CardLimit} cards.");
+        throw new Exception($"ArtifactBookPage is already at the card limit of {CardLimit} cards.");
       var artifactCard = new ArtifactCard(artifact, this);
       PositionFrameAtIndex(artifactCard, _artifactCards.Count);
       artifactCard.Disposed += OnArtifactCardDisposed;
@@ -161,7 +161,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
     {
       try
       {
-        if (Next == null) throw new Exception("ArtifactMenuPage has no next page.");
+        if (Next == null) throw new Exception("ArtifactBookPage has no next page.");
         Visible = false;
         Next.Visible = true;
       }
@@ -175,7 +175,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
     {
       try
       {
-        if (Previous == null) throw new Exception("ArtifactMenuPage has no previous page.");
+        if (Previous == null) throw new Exception("ArtifactBookPage has no previous page.");
         Visible = false;
         Previous.Visible = true;
       }

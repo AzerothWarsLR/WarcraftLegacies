@@ -8,17 +8,17 @@ namespace AzerothWarsCSharp.MacroTools.Frames
   /// Displays all Artifacts in the game.
   /// The Menu is split up into multiples Pages that can be clicked through to.
   /// </summary>
-  public static class ArtifactMenu
+  public static class ArtifactBook
   {
     private static bool _initialized;
     private static Button? _launcher;
-    private static readonly LinkedList<ArtifactMenuPage?> Pages = new();
+    private static readonly LinkedList<ArtifactBookPage?> Pages = new();
 
     private static void AddArtifact(Artifact artifact)
     {
       if (LastPage!.CardCount >= LastPage.CardLimit)
       {
-        var newPage = new ArtifactMenuPage(1);
+        var newPage = new ArtifactBookPage(1);
         LastPage.Next = newPage;
         newPage.Previous = LastPage;
         Pages.AddLast(newPage);
@@ -59,9 +59,9 @@ namespace AzerothWarsCSharp.MacroTools.Frames
       _launcher.SetAbsPoint(FRAMEPOINT_CENTER, 0, 0.56f);
     }
 
-    private static ArtifactMenuPage? FirstPage => Pages.First?.Value;
+    private static ArtifactBookPage? FirstPage => Pages.First?.Value;
 
-    private static ArtifactMenuPage? LastPage => Pages.Last?.Value;
+    private static ArtifactBookPage? LastPage => Pages.Last?.Value;
 
     private static void OnArtifactCreated(object? sender, ArtifactEventArgs args)
     {
@@ -80,7 +80,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
         _initialized = true;
         LoadToc(@"war3mapImported\ArtifactSystem.toc");
         LoadToc(@"ui\framedef\framedef.toc");
-        Pages.AddFirst(new ArtifactMenuPage(0));
+        Pages.AddFirst(new ArtifactBookPage(0));
         CreateLauncher();
         AddAllArtifacts();
         RegisterEvents();
