@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
     private const float YOffsetTop = 0.025f; //How much space to push the artifact representations in from the top
     private const float YOffsetBot = 0.05f; ////How much space to push the artifact representations in from the bottom
 
-    private readonly List<ArtifactCard> _artifactCards = new();
+    private readonly List<Frame> _artifactCards = new();
     private readonly Button _nextButton;
     private readonly Button _previousButton;
     private ArtifactMenuPage? _next;
@@ -124,13 +124,25 @@ namespace AzerothWarsCSharp.MacroTools.Frames
         throw new Exception($"ArtifactMenuPage is already at the card limit of {CardLimit} cards.");
       var artifactCard = new ArtifactCard(artifact, this);
       PositionFrameAtIndex(artifactCard, _artifactCards.Count);
+      artifactCard.Disposed += OnArtifactCardDisposed;
       _artifactCards.Add(artifactCard);
       AddFrame(artifactCard);
+    }
+
+    private void PositionAllCards()
+    {
+      var i = 0;
+      foreach (var card in _artifactCards)
+      {
+        Console.WriteLine(i);
+        PositionFrameAtIndex(card, i);
+        i++;
+      }
     }
     
     private void PositionFrameAtIndex(Frame card, int index)
     {
-      var cardGridX = _artifactCards.Count % Columns; //Horizontal index of the card
+      var cardGridX = index % Columns; //Horizontal index of the card
       var cardGridY = index / Columns;
       var boxSpacingX = (Width - card.Width * Columns) / (Columns + 1);
       var boxSpacingY = (Height - YOffsetTop - YOffsetBot - card.Height * Rows) / (Rows + 1);
@@ -139,6 +151,12 @@ namespace AzerothWarsCSharp.MacroTools.Frames
       card.SetPoint(FRAMEPOINT_TOPLEFT, this, FRAMEPOINT_TOPLEFT, cardPosX, cardPosY);
     }
 
+    private void OnArtifactCardDisposed(object? sender, FrameEventArgs args)
+    {
+      _artifactCards.Remove(args.Frame);
+      PositionAllCards();
+    }
+    
     private void OnClickNext()
     {
       try
@@ -164,6 +182,16 @@ namespace AzerothWarsCSharp.MacroTools.Frames
       catch (Exception ex)
       {
         Console.WriteLine(ex);
+      }
+    }
+
+    public new void Dispose()
+    {
+      BlzDestroyFrame(_handle);
+      Disposed?.Invoke(this, new FrameEventArgs(this));
+      foreach (var artifactCard in _artifactCards)
+      {
+        artifactCard.Disposed -= OnArtifactCardDisposed;
       }
     }
   }
