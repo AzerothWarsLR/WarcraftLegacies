@@ -9,24 +9,18 @@ namespace AzerothWarsCSharp.MacroTools.Frames
   /// </summary>
   public class ArtifactBookPage : Frame
   {
-    private const float BackdropWidth = 0.7f;
-    private const float BackdropHeight = 0.37f;
-    private const float BottomButtonYOffset = 0.015f;
-    private const float BottomButtonXOffset = 0.02f;
     private const int Rows = 3; //How many Artifact Cards fit horizontally on a page
     private const int Columns = 4; //How many Artifact cards fit vertically on a page
     private const float YOffsetTop = 0.025f; //How much space to push the artifact representations in from the top
     private const float YOffsetBot = 0.05f; ////How much space to push the artifact representations in from the bottom
 
     private readonly List<Frame> _artifactCards = new();
-    private readonly Button _nextButton;
-    private readonly Button _previousButton;
 
-    public ArtifactBookPage(int pageNumber) : base("ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0),
-      0, 0)
+    public ArtifactBookPage(int pageNumber, Frame parent) : base("ArtifactMenuBackdrop", parent, 0, 0)
     {
-      Width = BackdropWidth;
-      Height = BackdropHeight;
+      Width = parent.Width;
+      Height = parent.Height;
+      Texture = @"UI/Widgets/EscMenu/Human/blank-background.blp";
       SetAbsPoint(FRAMEPOINT_CENTER, 0.4f, 0.38f);
 
       var title = new TextFrame("ArtifactMenuTitle", this, 0, 0)
@@ -42,43 +36,6 @@ namespace AzerothWarsCSharp.MacroTools.Frames
       };
       pageNumberFrame.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOPRIGHT, -0.05f, -0.025f);
       AddFrame(pageNumberFrame);
-
-      //Exit button
-      var exitbutton = new Button("ScriptDialogButton", this, 0, 0)
-      {
-        Width = 0.09f,
-        Height = 0.037f,
-        Text = "Exit",
-        OnClick = (player whichPlayer) => Visible = false
-      };
-      exitbutton.SetPoint(FRAMEPOINT_BOTTOM, this, FRAMEPOINT_BOTTOM, 0, BottomButtonYOffset);
-      AddFrame(exitbutton);
-
-      //Next button
-      _nextButton = new Button("ScriptDialogButton", this, 0, 0)
-      {
-        Width = 0.09f,
-        Height = 0.037f,
-        Text = "Next",
-        // OnClick = OnClickNext,
-        Visible = false
-      };
-      _nextButton.SetPoint(FRAMEPOINT_BOTTOMRIGHT, this, FRAMEPOINT_BOTTOMRIGHT, -BottomButtonXOffset,
-        BottomButtonYOffset);
-      AddFrame(_nextButton);
-
-      //Next button
-      _previousButton = new Button("ScriptDialogButton", this, 0, 0)
-      {
-        Width = 0.09f,
-        Height = 0.037f,
-        Text = "Previous",
-        // OnClick = OnClickPrevious,
-        Visible = false
-      };
-      _previousButton.SetPoint(FRAMEPOINT_BOTTOMLEFT, this, FRAMEPOINT_BOTTOMLEFT, BottomButtonXOffset,
-        BottomButtonYOffset);
-      AddFrame(_previousButton);
 
       Visible = false;
     }
@@ -134,30 +91,6 @@ namespace AzerothWarsCSharp.MacroTools.Frames
       _artifactCards.Remove(args.Frame);
       PositionAllCards();
     }
-    
-    // private void OnClickNext()
-    // {
-    //   try
-    //   {
-    //     ClickedNext?.Invoke(this, new ButtonClickedEventArgs(this, GetTriggerPlayer()));
-    //   }
-    //   catch (Exception ex)
-    //   {
-    //     Console.WriteLine(ex);
-    //   }
-    // }
-    //
-    // private void OnClickPrevious()
-    // {
-    //   try
-    //   {
-    //     ClickedPrevious?.Invoke(this, new ButtonClickedEventArgs(this, GetTriggerPlayer()));
-    //   }
-    //   catch (Exception ex)
-    //   {
-    //     Console.WriteLine(ex);
-    //   }
-    // }
 
     public new void Dispose()
     {

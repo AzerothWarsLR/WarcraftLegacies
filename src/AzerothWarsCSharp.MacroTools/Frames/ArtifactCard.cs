@@ -3,6 +3,9 @@ using System.ComponentModel;
 
 namespace AzerothWarsCSharp.MacroTools.Frames
 {
+  /// <summary>
+  /// Represents a single Artifact in a black rectangle.
+  /// </summary>
   public sealed class ArtifactCard : Frame
   {
     private const float BoxWidth = 0.13f;
