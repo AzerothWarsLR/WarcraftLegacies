@@ -1,6 +1,6 @@
 ﻿using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.Source.QuestObjectives;
-using AzerothWarsCSharp.Source.QuestOutcomes;
+using AzerothWarsCSharp.MacroTools.QuestObjectives;
+using AzerothWarsCSharp.MacroTools.QuestOutcomes;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 

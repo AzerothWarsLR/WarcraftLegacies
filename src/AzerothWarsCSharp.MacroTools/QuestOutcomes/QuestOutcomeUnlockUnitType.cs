@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
-using AzerothWarsCSharp.MacroTools;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.QuestOutcomes
+namespace AzerothWarsCSharp.MacroTools.QuestOutcomes
 {
   /// <summary>
   /// Grants a player a research. The research is expected to unlock training of a particular unit.

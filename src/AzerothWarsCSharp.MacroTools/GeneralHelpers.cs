@@ -1,7 +1,7 @@
 ﻿using static War3Api.Common;
 using static War3Api.Blizzard;
 
-namespace AzerothWarsCSharp.Source.Libraries
+namespace AzerothWarsCSharp.MacroTools
 {
   public static class GeneralHelpers
   {

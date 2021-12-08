@@ -1,7 +1,6 @@
-﻿using AzerothWarsCSharp.MacroTools;
-using WCSharp.Shared.Data;
+﻿using WCSharp.Shared.Data;
 
-namespace AzerothWarsCSharp.Source.QuestObjectives
+namespace AzerothWarsCSharp.MacroTools.QuestObjectives
 {
   public class QuestObjectiveLegendInRect : QuestObjective
   {

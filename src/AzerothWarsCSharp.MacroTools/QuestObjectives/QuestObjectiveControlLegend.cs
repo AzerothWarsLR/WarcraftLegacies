@@ -1,7 +1,6 @@
 ﻿using System;
-using AzerothWarsCSharp.MacroTools;
 
-namespace AzerothWarsCSharp.Source.QuestObjectives
+namespace AzerothWarsCSharp.MacroTools.QuestObjectives
 {
   public class QuestObjectiveControlLegend : QuestObjective
   {

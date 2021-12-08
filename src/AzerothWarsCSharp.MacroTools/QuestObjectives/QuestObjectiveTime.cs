@@ -1,8 +1,6 @@
-﻿using System;
-using AzerothWarsCSharp.MacroTools;
-using static War3Api.Common;
+﻿using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.QuestObjectives
+namespace AzerothWarsCSharp.MacroTools.QuestObjectives
 {
   public class QuestObjectiveTime : QuestObjective
   {

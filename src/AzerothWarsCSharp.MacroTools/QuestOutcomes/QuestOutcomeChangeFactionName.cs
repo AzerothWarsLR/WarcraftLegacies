@@ -1,6 +1,4 @@
-﻿using AzerothWarsCSharp.MacroTools;
-
-namespace AzerothWarsCSharp.Source.QuestOutcomes
+﻿namespace AzerothWarsCSharp.MacroTools.QuestOutcomes
 {
   public class QuestOutcomeChangeFactionName : QuestOutcome
   {

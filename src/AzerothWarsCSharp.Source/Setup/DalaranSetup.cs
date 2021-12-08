@@ -1,5 +1,5 @@
 ﻿using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.Source.QuestOutcomes;
+using AzerothWarsCSharp.MacroTools.QuestOutcomes;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup
