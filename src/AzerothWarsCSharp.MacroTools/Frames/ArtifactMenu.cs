@@ -63,6 +63,16 @@ namespace AzerothWarsCSharp.MacroTools.Frames
 
     private static ArtifactMenuPage? LastPage => Pages.Last?.Value;
 
+    private static void OnArtifactCreated(object? sender, ArtifactEventArgs args)
+    {
+      AddArtifact(args.Artifact);
+    }
+    
+    private static void RegisterEvents()
+    {
+      FactionSystem.ArtifactAdded += OnArtifactCreated;
+    }
+    
     public static void Initialize()
     {
       if (!_initialized)
@@ -73,6 +83,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
         Pages.AddFirst(new ArtifactMenuPage(0));
         CreateLauncher();
         AddAllArtifacts();
+        RegisterEvents();
       }
     }
   }

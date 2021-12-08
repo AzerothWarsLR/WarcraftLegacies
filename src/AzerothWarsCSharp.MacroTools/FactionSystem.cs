@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using static War3Api.Common;
 
@@ -11,6 +12,8 @@ namespace AzerothWarsCSharp.MacroTools
     private static readonly List<Legend> AllLegends = new();
     private static readonly List<Artifact> AllArtifacts = new();
 
+    public static event EventHandler<ArtifactEventArgs>? ArtifactAdded;
+    
     public static void PlayerSetFaction(player player, Faction faction)
     {
       faction.Player = player;
@@ -60,6 +63,7 @@ namespace AzerothWarsCSharp.MacroTools
     public static void Add(Artifact artifact)
     {
       AllArtifacts.Add(artifact);
+      ArtifactAdded?.Invoke(null, new ArtifactEventArgs(artifact));
     }
     
     public static void Add(Team team)
