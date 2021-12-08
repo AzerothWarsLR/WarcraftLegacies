@@ -42,7 +42,20 @@ namespace AzerothWarsCSharp.MacroTools.Frames
         _pages[_activePageIndex].Visible = false;
         _activePageIndex = value;
         _pages[_activePageIndex].Visible = true;
+        RefreshNavigationButtonVisiblity();
       }
+    }
+
+    /// <summary>
+    /// Makes the Previous button visible if there are any pages to navigate back to,
+    /// and makes the Next button visible if there are any pages to navigate forward to.
+    /// </summary>
+    private void RefreshNavigationButtonVisiblity()
+    {
+      var pageCount = _pages.Count;
+      
+      _nextButton.Visible = pageCount > ActivePageIndex+1;
+      _previousButton.Visible = ActivePageIndex > 0;
     }
     
     private ArtifactBook() : base("ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0),
@@ -88,7 +101,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
         BottomButtonYOffset);
       AddFrame(_nextButton);
 
-      //Next button
+      //Previous button
       _previousButton = new Button("ScriptDialogButton", this, 0, 0)
       {
         Width = 0.09f,
@@ -152,6 +165,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
     {
       var newPage = new ArtifactBookPage(_pages.Count, this);
       _pages.Add(newPage);
+      RefreshNavigationButtonVisiblity();
     }
 
     private void AddAllArtifacts()
@@ -165,7 +179,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
       {
         Visible = true;
         _launcher.Visible = false;
-      };
+      }
     }
 
     private static void LoadToc(string tocFilePath)
