@@ -1,13 +1,16 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Frames
 {
-  public class Frame
+  public class Frame : IDisposable
   {
     private protected readonly framehandle _handle;
     private readonly List<Frame> _children = new();
 
+    public EventHandler<FrameEventArgs>? Disposed;
+    
     public void AddFrame(Frame frame)
     {
       _children.Add(frame);
@@ -88,9 +91,10 @@ namespace AzerothWarsCSharp.MacroTools.Frames
       _handle = BlzCreateFrameByType(typeName, name, parent._handle, inherits, createContext);
     }
 
-    ~Frame()
+    public void Dispose()
     {
       BlzDestroyFrame(_handle);
+      Disposed?.Invoke(this, new FrameEventArgs(this));
     }
   }
 }

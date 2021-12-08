@@ -115,17 +115,6 @@ namespace AzerothWarsCSharp.MacroTools.Frames
     /// </summary>
     public int CardCount => _artifactCards.Count;
 
-    private void PositionFrameAtIndex(Frame card, int index)
-    {
-      var cardGridX = _artifactCards.Count % Columns; //Horizontal index of the card
-      var cardGridY = index / Columns;
-      var boxSpacingX = (Width - card.Width * Columns) / (Columns + 1);
-      var boxSpacingY = (Height - YOffsetTop - YOffsetBot - card.Height * Rows) / (Rows + 1);
-      var cardPosX = card.Width * cardGridX + boxSpacingX * (cardGridX + 1);
-      var cardPosY = -(YOffsetTop + (card.Height * cardGridY + boxSpacingY * (cardGridY + 1)));
-      card.SetPoint(FRAMEPOINT_TOPLEFT, this, FRAMEPOINT_TOPLEFT, cardPosX, cardPosY);
-    }
-
     /// <summary>
     ///   Renders an Artifact on this MenuPage as an ArtifactCard.
     /// </summary>
@@ -137,6 +126,17 @@ namespace AzerothWarsCSharp.MacroTools.Frames
       PositionFrameAtIndex(artifactCard, _artifactCards.Count);
       _artifactCards.Add(artifactCard);
       AddFrame(artifactCard);
+    }
+    
+    private void PositionFrameAtIndex(Frame card, int index)
+    {
+      var cardGridX = _artifactCards.Count % Columns; //Horizontal index of the card
+      var cardGridY = index / Columns;
+      var boxSpacingX = (Width - card.Width * Columns) / (Columns + 1);
+      var boxSpacingY = (Height - YOffsetTop - YOffsetBot - card.Height * Rows) / (Rows + 1);
+      var cardPosX = card.Width * cardGridX + boxSpacingX * (cardGridX + 1);
+      var cardPosY = -(YOffsetTop + (card.Height * cardGridY + boxSpacingY * (cardGridY + 1)));
+      card.SetPoint(FRAMEPOINT_TOPLEFT, this, FRAMEPOINT_TOPLEFT, cardPosX, cardPosY);
     }
 
     private void OnClickNext()
