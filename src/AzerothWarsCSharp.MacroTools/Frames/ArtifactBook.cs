@@ -19,8 +19,6 @@ namespace AzerothWarsCSharp.MacroTools.Frames
       if (LastPage!.CardCount >= LastPage.CardLimit)
       {
         var newPage = new ArtifactBookPage(1);
-        LastPage.Next = newPage;
-        newPage.Previous = LastPage;
         Pages.AddLast(newPage);
       }
       LastPage.AddArtifact(artifact);
@@ -34,9 +32,12 @@ namespace AzerothWarsCSharp.MacroTools.Frames
       }
     }
     
-    private static void OpenFirstPage()
+    private static void OpenFirstPage(player whichPlayer)
     {
-      Pages.First!.Value!.Visible = !Pages.First.Value.Visible;
+      if (whichPlayer == GetLocalPlayer())
+      {
+        Pages.First!.Value!.Visible = !Pages.First.Value.Visible;
+      }
     }
     
     private static void LoadToc(string tocFilePath)

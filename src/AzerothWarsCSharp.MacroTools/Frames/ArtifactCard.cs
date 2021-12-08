@@ -88,7 +88,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
         Height = 0.027f,
         Text = "Ping",
         Visible = false,
-        OnClick = () => artifact.Ping(GetTriggerPlayer())
+        OnClick = artifact.Ping
       };
       _pingButton.SetPoint(FRAMEPOINT_LEFT, this, FRAMEPOINT_LEFT, 0.057f, -0.009f);
       AddFrame(_pingButton);

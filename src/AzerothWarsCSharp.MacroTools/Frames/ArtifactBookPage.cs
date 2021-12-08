@@ -21,8 +21,6 @@ namespace AzerothWarsCSharp.MacroTools.Frames
     private readonly List<Frame> _artifactCards = new();
     private readonly Button _nextButton;
     private readonly Button _previousButton;
-    private ArtifactBookPage? _next;
-    private ArtifactBookPage? _previous;
 
     public ArtifactBookPage(int pageNumber) : base("ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0),
       0, 0)
@@ -51,7 +49,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
         Width = 0.09f,
         Height = 0.037f,
         Text = "Exit",
-        OnClick = () => Visible = false
+        OnClick = (player whichPlayer) => Visible = false
       };
       exitbutton.SetPoint(FRAMEPOINT_BOTTOM, this, FRAMEPOINT_BOTTOM, 0, BottomButtonYOffset);
       AddFrame(exitbutton);
@@ -62,7 +60,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
         Width = 0.09f,
         Height = 0.037f,
         Text = "Next",
-        OnClick = OnClickNext,
+        // OnClick = OnClickNext,
         Visible = false
       };
       _nextButton.SetPoint(FRAMEPOINT_BOTTOMRIGHT, this, FRAMEPOINT_BOTTOMRIGHT, -BottomButtonXOffset,
@@ -75,7 +73,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
         Width = 0.09f,
         Height = 0.037f,
         Text = "Previous",
-        OnClick = OnClickPrevious,
+        // OnClick = OnClickPrevious,
         Visible = false
       };
       _previousButton.SetPoint(FRAMEPOINT_BOTTOMLEFT, this, FRAMEPOINT_BOTTOMLEFT, BottomButtonXOffset,
@@ -83,26 +81,6 @@ namespace AzerothWarsCSharp.MacroTools.Frames
       AddFrame(_previousButton);
 
       Visible = false;
-    }
-
-    public ArtifactBookPage? Next
-    {
-      get => _next;
-      set
-      {
-        _next = value;
-        _nextButton.Visible = value != null;
-      }
-    }
-
-    public ArtifactBookPage? Previous
-    {
-      get => _previous;
-      set
-      {
-        _previous = value;
-        _previousButton.Visible = value != null;
-      }
     }
 
     /// <summary>
@@ -157,33 +135,29 @@ namespace AzerothWarsCSharp.MacroTools.Frames
       PositionAllCards();
     }
     
-    private void OnClickNext()
-    {
-      try
-      {
-        if (Next == null) throw new Exception("ArtifactBookPage has no next page.");
-        Visible = false;
-        Next.Visible = true;
-      }
-      catch (Exception ex)
-      {
-        Console.WriteLine(ex);
-      }
-    }
-
-    private void OnClickPrevious()
-    {
-      try
-      {
-        if (Previous == null) throw new Exception("ArtifactBookPage has no previous page.");
-        Visible = false;
-        Previous.Visible = true;
-      }
-      catch (Exception ex)
-      {
-        Console.WriteLine(ex);
-      }
-    }
+    // private void OnClickNext()
+    // {
+    //   try
+    //   {
+    //     ClickedNext?.Invoke(this, new ButtonClickedEventArgs(this, GetTriggerPlayer()));
+    //   }
+    //   catch (Exception ex)
+    //   {
+    //     Console.WriteLine(ex);
+    //   }
+    // }
+    //
+    // private void OnClickPrevious()
+    // {
+    //   try
+    //   {
+    //     ClickedPrevious?.Invoke(this, new ButtonClickedEventArgs(this, GetTriggerPlayer()));
+    //   }
+    //   catch (Exception ex)
+    //   {
+    //     Console.WriteLine(ex);
+    //   }
+    // }
 
     public new void Dispose()
     {

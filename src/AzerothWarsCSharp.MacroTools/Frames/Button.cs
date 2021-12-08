@@ -3,17 +3,19 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Frames
 {
+  public delegate void OnClickAction(player triggerPlayer);
+  
   public sealed class Button : Frame
   {
     private readonly trigger _onClickTrigger;
     
-    public Action OnClick
+    public OnClickAction OnClick
     {
       init
       {
         _onClickTrigger = CreateTrigger();
         BlzTriggerRegisterFrameEvent(_onClickTrigger, _handle, FRAMEEVENT_MOUSE_UP);
-        TriggerAddAction(_onClickTrigger, value);
+        TriggerAddAction(_onClickTrigger, () => value(GetTriggerPlayer()));
       }
     }
 
