@@ -92,10 +92,8 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
       PositionAllCards();
     }
 
-    public new void Dispose()
+    protected override void DisposeEvents()
     {
-      BlzDestroyFrame(_handle);
-      Disposed?.Invoke(this, new FrameEventArgs(this));
       foreach (var artifactCard in _artifactCards)
       {
         artifactCard.Disposed -= OnArtifactCardDisposed;

@@ -101,13 +101,11 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
       artifact.Disposed += OnArtifactDisposed;
     }
 
-    private new void Dispose()
+    protected override void DisposeEvents()
     {
       _artifact.OwnerChanged -= OnArtifactOwnerChanged;
       _artifact.StatusChanged -= OnArtifactStatusChanged;
       _artifact.Disposed -= OnArtifactDisposed;
-      BlzDestroyFrame(_handle);
-      Disposed?.Invoke(this, new FrameEventArgs(this));
     }
   }
 }

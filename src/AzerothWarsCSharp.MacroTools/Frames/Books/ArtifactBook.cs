@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
     private readonly Button _nextButton;
     private readonly Button _previousButton;
 
-    private int _activePageIndex = 0;
+    private int _activePageIndex;
     private int ActivePageIndex
     {
       get => _activePageIndex;
@@ -202,11 +202,9 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
         _initialized = true;
       }
     }
-
-    public new void Dispose()
+    
+    protected override void DisposeEvents()
     {
-      BlzDestroyFrame(_handle);
-      Disposed?.Invoke(this, new FrameEventArgs(this));
       FactionSystem.ArtifactAdded -= OnArtifactCreated;
     }
   }

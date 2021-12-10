@@ -6,8 +6,8 @@ namespace AzerothWarsCSharp.MacroTools.Frames
   {
     public string Text
     {
-      get => BlzFrameGetText(_handle);
-      set => BlzFrameSetText(_handle, value);
+      get => BlzFrameGetText(Handle);
+      set => BlzFrameSetText(Handle, value);
     }
 
     public TextFrame(string name, Frame parent, int priority, int createContext) : base(name, parent, priority, createContext)
