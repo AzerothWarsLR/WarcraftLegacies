@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
   /// <summary>
   /// Represents a single Artifact in a black rectangle.
   /// </summary>
-  public sealed class ArtifactCard : Frame
+  public sealed class ArtifactCard : Card
   {
     private const float BoxWidth = 0.13f;
     private const float BoxHeight = 0.086f;
@@ -49,18 +49,10 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
       }
     }
 
-    private void OnArtifactDisposed(object? sender, ArtifactEventArgs args)
-    {
-      Dispose();
-    }
-    
-    public ArtifactCard(Artifact artifact, Frame parent) : base("ArtifactItemBox", parent, 0, 0)
+    public ArtifactCard(Artifact artifact, Frame parent) : base(parent, BoxWidth, BoxHeight)
     {
       _artifact = artifact;
       
-      Width = BoxWidth;
-      Height = BoxHeight;
-
       var icon = new Frame("BACKDROP", "ArtifactIcon", this)
       {
         Width = 0.04f,
@@ -98,14 +90,12 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
       
       artifact.OwnerChanged += OnArtifactOwnerChanged;
       artifact.StatusChanged += OnArtifactStatusChanged;
-      artifact.Disposed += OnArtifactDisposed;
     }
 
     protected override void DisposeEvents()
     {
       _artifact.OwnerChanged -= OnArtifactOwnerChanged;
       _artifact.StatusChanged -= OnArtifactStatusChanged;
-      _artifact.Disposed -= OnArtifactDisposed;
     }
   }
 }

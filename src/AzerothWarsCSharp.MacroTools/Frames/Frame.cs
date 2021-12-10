@@ -7,40 +7,41 @@ namespace AzerothWarsCSharp.MacroTools.Frames
   public class Frame : IDisposable
   {
     private readonly List<Frame> _children = new();
-    private bool _disposed = false;
+    private bool _disposed;
+    private readonly float _height;
+    private readonly float _width;
 
-    public framehandle Handle { get; private init; }
-    
-    public EventHandler<FrameEventArgs>? Disposed;
+    protected framehandle Handle { get; }
+
+    public Frame Parent
+    {
+      init => BlzFrameSetParent(Handle, value.Handle);
+    }
 
     public void AddFrame(Frame frame)
     {
       _children.Add(frame);
     }
 
-    public void RemoveFrame(Frame frame)
+    private void RemoveFrame(Frame frame)
     {
       _children.Remove(frame);
     }
 
-    private float _height;
-
     public float Height
     {
       get => _height;
-      set
+      init
       {
         _height = value;
         BlzFrameSetSize(Handle, _width, _height);
       }
     }
-
-    private float _width;
-
+    
     public float Width
     {
       get => _width;
-      set
+      init
       {
         _width = value;
         BlzFrameSetSize(Handle, _width, _height);
@@ -112,7 +113,6 @@ namespace AzerothWarsCSharp.MacroTools.Frames
         if (disposing)
         {
           DisposeEvents();
-          Disposed?.Invoke(this, new FrameEventArgs(this));
           foreach (var childFrame in _children)
           {
             RemoveFrame(childFrame);
