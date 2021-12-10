@@ -1,7 +1,7 @@
-﻿using static War3Api.Common;
-using System.ComponentModel;
+﻿using System.ComponentModel;
+using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.Frames
+namespace AzerothWarsCSharp.MacroTools.Frames.Books
 {
   /// <summary>
   /// Represents a single Artifact in a black rectangle.

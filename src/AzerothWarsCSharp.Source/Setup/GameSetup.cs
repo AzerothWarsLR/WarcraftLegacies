@@ -1,4 +1,5 @@
 ﻿using AzerothWarsCSharp.MacroTools.Frames;
+using AzerothWarsCSharp.MacroTools.Frames.Books;
 using AzerothWarsCSharp.MacroTools.UserInterface;
 using static War3Api.Common;
 

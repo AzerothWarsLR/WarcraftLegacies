@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.Frames
+namespace AzerothWarsCSharp.MacroTools.Frames.Books
 {
   /// <summary>
   ///   Represents a limited number of Artifacts in a rectangular grid.

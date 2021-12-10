@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.Frames
+namespace AzerothWarsCSharp.MacroTools.Frames.Books
 {
   /// <summary>
   ///   Displays all Artifacts in the game.
