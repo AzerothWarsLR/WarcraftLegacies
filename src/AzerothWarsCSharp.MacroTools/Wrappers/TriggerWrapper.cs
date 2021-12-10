@@ -1,4 +1,5 @@
-﻿using static War3Api.Common;
+﻿using System;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Wrappers
 {
@@ -10,6 +11,16 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
     }
 
     public trigger Trigger { get; }
+
+    public void RegisterFrameEvent(framehandle frame, frameeventtype frameeventtype)
+    {
+      BlzTriggerRegisterFrameEvent(Trigger, frame, frameeventtype);
+    }
+
+    public void AddAction(Action actionFunc)
+    {
+      TriggerAddAction(Trigger, actionFunc);
+    }
 
     ~TriggerWrapper()
     {
