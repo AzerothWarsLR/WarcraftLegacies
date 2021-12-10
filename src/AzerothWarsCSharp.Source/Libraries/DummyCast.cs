@@ -1,4 +1,5 @@
 ﻿using System;
+using AzerothWarsCSharp.MacroTools.Wrappers;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Libraries
@@ -17,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Libraries
     
     public static void CastOnUnitsInRadius(unit caster, int abilityId, string orderId, int level, float x, float y, float radius, CastFilter castFilter)
     {
-      var group = new GroupEx();
+      var group = new GroupWrapper();
       group.EnumUnitsInRange(x, y, radius);
       foreach (var target in group.EmptyToList())
       {

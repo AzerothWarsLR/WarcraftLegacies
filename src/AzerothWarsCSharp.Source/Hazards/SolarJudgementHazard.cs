@@ -1,4 +1,5 @@
-﻿using AzerothWarsCSharp.Source.Libraries;
+﻿using AzerothWarsCSharp.MacroTools.Wrappers;
+using AzerothWarsCSharp.Source.Libraries;
 using AzerothWarsCSharp.Source.Libraries.HazardSystem;
 using static War3Api.Common;
 using static War3Api.Blizzard;
@@ -18,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Hazards
     private void DoBolt(float x, float y)
     {
       DestroyEffect(AddSpecialEffect(EffectPath, x, y));
-      var unitsInRange = new GroupEx().EnumUnitsInRange(x, y, BoltRadius).EmptyToList();
+      var unitsInRange = new GroupWrapper().EnumUnitsInRange(x, y, BoltRadius).EmptyToList();
       foreach (var target in unitsInRange)
       {
         if (CastFilters.IsTargetEnemyAndAlive(Caster, target))

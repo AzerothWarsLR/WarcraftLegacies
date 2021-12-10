@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Libraries.SpellSystem;
 using WCSharp.Buffs;
 using static War3Api.Common;
@@ -45,7 +46,7 @@ namespace AzerothWarsCSharp.Source.Spells
 
     public override void OnCast(unit caster, widget target, float targetX, float targetY)
     {
-      var group = new GroupEx();
+      var group = new GroupWrapper();
       group.EnumUnitsInRange(targetX, targetY, Radius);
       var maxTargets = CountBase * CountLevel * GetAbilityLevel(caster);
       foreach (var unit in group.EmptyToList().Take(maxTargets))

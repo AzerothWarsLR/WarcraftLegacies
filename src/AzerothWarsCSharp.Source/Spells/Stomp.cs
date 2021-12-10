@@ -1,4 +1,5 @@
-﻿using AzerothWarsCSharp.Source.Libraries;
+﻿using AzerothWarsCSharp.MacroTools.Wrappers;
+using AzerothWarsCSharp.Source.Libraries;
 using AzerothWarsCSharp.Source.Libraries.SpellSystem;
 using static War3Api.Common;
 
@@ -32,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Spells
 
     public override void OnCast(unit caster, widget target, float targetX, float targetY)
     {
-      var tempGroup = new GroupEx();
+      var tempGroup = new GroupWrapper();
       tempGroup.EnumUnitsInRange(GetUnitX(caster), GetUnitY(caster), Radius);
       foreach (var enumUnit in tempGroup.EmptyToList())
       {
