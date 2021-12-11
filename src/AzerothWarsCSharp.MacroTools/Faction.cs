@@ -115,5 +115,10 @@ namespace AzerothWarsCSharp.MacroTools
     {
       _quests.Remove(quest);
     }
+
+    public void FactionAddPower()
+    {
+      throw new NotImplementedException();
+    }
   }
 }

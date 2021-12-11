@@ -10,9 +10,11 @@ namespace AzerothWarsCSharp.MacroTools
     private static readonly List<Faction> AllFactions = new();
     private static readonly List<Team> AllTeams = new();
     private static readonly List<Legend> AllLegends = new();
+    private static readonly List<Power> AllPowers = new();
     private static readonly List<Artifact> AllArtifacts = new();
 
     public static event EventHandler<ArtifactEventArgs>? ArtifactAdded;
+    public static event EventHandler<PowerEventArgs>? PowerAdded;
     
     public static void PlayerSetFaction(player player, Faction faction)
     {
@@ -40,6 +42,12 @@ namespace AzerothWarsCSharp.MacroTools
       team.AddFaction(faction);
     }
 
+    public static void FactionAddPower(Faction faction, Power power)
+    {
+      AllPowers.Add(power);
+      PowerAdded?.Invoke(null, new PowerEventArgs(power));
+    }
+    
     public static IEnumerable<Artifact> GetAllArtifacts()
     {
       return AllArtifacts.ToList();
@@ -53,6 +61,11 @@ namespace AzerothWarsCSharp.MacroTools
     public static List<Team> GetAllTeams()
     {
       return AllTeams.ToList();
+    }
+
+    public static List<Power> GetAllPowers()
+    {
+      return AllPowers.ToList();
     }
 
     public static void AddLegend(Legend legend)

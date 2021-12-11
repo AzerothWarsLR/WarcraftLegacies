@@ -1,5 +1,5 @@
-﻿using AzerothWarsCSharp.MacroTools.Frames;
-using AzerothWarsCSharp.MacroTools.Frames.Books;
+﻿using AzerothWarsCSharp.MacroTools.Frames.Books.Artifacts;
+using AzerothWarsCSharp.MacroTools.Frames.Books.Powers;
 using AzerothWarsCSharp.MacroTools.UserInterface;
 using static War3Api.Common;
 
@@ -21,6 +21,7 @@ namespace AzerothWarsCSharp.Source.Setup
       ArtifactSetup.DrektharsSpellbookSetup();
       ArtifactSetup.FillerArtifactSetup();
       ArtifactBook.Initialize();
+      PowerBook.Initialize();
     }
   }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Frames.Books
@@ -14,6 +15,27 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
 
     private int _activePageIndex;
 
+    /// <summary>
+    /// The name of the Book's launcher Button.
+    /// </summary>
+    protected string LauncherName
+    {
+      init => _launcher.Text = value;
+    }
+
+    /// <summary>
+    /// The position of the Book's launcher Button.
+    /// </summary>
+    protected Point LauncherPosition
+    {
+      init => _launcher.SetAbsPoint(FRAMEPOINT_CENTER, value.X, value.Y);
+    }
+
+    protected Point Position
+    {
+      init => SetAbsPoint(FRAMEPOINT_CENTER, value.X, value.Y);
+    }
+
     protected Book(float width, float height, float bottomButtonXOffset, float bottomButtonYOffset) : base(
       "ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0),
       0, 0)
@@ -22,17 +44,13 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
       Height = height;
       Visible = false;
 
-      SetAbsPoint(FRAMEPOINT_CENTER, 0.4f, 0.38f);
-
       //Launcher button
       _launcher = new Button("ScriptDialogButton", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0))
       {
         Width = 0.2f,
         Height = 0.025f,
-        Text = "Artifacts",
         OnClick = OpenFirstPage
       };
-      _launcher.SetAbsPoint(FRAMEPOINT_CENTER, 0, 0.56f);
 
       //Exit button
       var exitButton = new Button("ScriptDialogButton", this, 0, 0)
@@ -137,9 +155,11 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
       {
         Width = Width,
         Height = Height,
-        Parent = this,
-        PageNumber = Pages.Count + 1
+        PageNumber = Pages.Count + 1,
+        Parent = this
       };
+      newPage.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_CENTER, 0, 0);
+      
       Pages.Add(newPage);
       RefreshNavigationButtonVisiblity();
       return newPage;

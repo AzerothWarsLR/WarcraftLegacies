@@ -1,33 +1,34 @@
 ﻿using System;
 using System.Linq;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.Frames.Books
+namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
 {
-  /// <summary>
-  ///   Displays all Artifacts in the game.
-  /// </summary>
-  public sealed class ArtifactBook : Book<ArtifactPage>
+  public sealed class PowerBook : Book<PowerPage>
   {
     private const float BottomButtonYOffset = 0.015f;
     private const float BottomButtonXOffset = 0.02f;
-    private const float BookWidth = 0.7f;
-    private const float BookHeight = 0.37f;
+    private const float BookWidth = 0.25f;
+    private const float BookHeight = 0.3f;
 
     // ReSharper disable once NotAccessedField.Local
-    private static ArtifactBook? _instance;
+    private static PowerBook? _instance;
     private static bool _initialized;
 
-    private ArtifactBook(float width, float height, float bottomButtonXOffset, float bottomButtonYOffset) : base(width,
+    private PowerBook(float width, float height, float bottomButtonXOffset, float bottomButtonYOffset) : base(width,
       height, bottomButtonXOffset, bottomButtonYOffset)
     {
-      FactionSystem.ArtifactAdded += OnArtifactCreated;
+      FactionSystem.PowerAdded += OnFactionSystemPowerAdded;
       var firstPage = AddPage();
       firstPage.Visible = true;
-      AddAllArtifacts();
+      AddAllPowers();
+      LauncherName = "Powers";
+      LauncherPosition = new Point(0.05f, 0.56f);
+      Position = new Point(0.2f, 0.38f);
     }
 
-    private void AddArtifact(Artifact artifact)
+    private void AddPower(Power power)
     {
       var lastPage = Pages.Last();
       if (lastPage.CardCount >= lastPage.CardLimit)
@@ -35,12 +36,12 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
         AddPage();
         lastPage = Pages.Last();
       }
-      lastPage.AddArtifact(artifact);
+      lastPage.AddPower(power);
     }
 
-    private void AddAllArtifacts()
+    private void AddAllPowers()
     {
-      foreach (var artifact in FactionSystem.GetAllArtifacts()) AddArtifact(artifact);
+      foreach (var power in FactionSystem.GetAllPowers()) AddPower(power);
     }
 
     private static void LoadToc(string tocFilePath)
@@ -48,9 +49,9 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
       if (!BlzLoadTOCFile(tocFilePath)) throw new Exception($"Failed to load TOC {tocFilePath}");
     }
 
-    private void OnArtifactCreated(object? sender, ArtifactEventArgs args)
+    private void OnFactionSystemPowerAdded(object? sender, PowerEventArgs args)
     {
-      AddArtifact(args.Artifact);
+      AddPower(args.Power);
     }
 
     public static void Initialize()
@@ -59,14 +60,14 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
       {
         LoadToc(@"war3mapImported\ArtifactSystem.toc");
         LoadToc(@"ui\framedef\framedef.toc");
-        _instance = new ArtifactBook(BookWidth, BookHeight, BottomButtonXOffset, BottomButtonYOffset);
+        _instance = new PowerBook(BookWidth, BookHeight, BottomButtonXOffset, BottomButtonYOffset);
         _initialized = true;
       }
     }
 
     protected override void DisposeEvents()
     {
-      FactionSystem.ArtifactAdded -= OnArtifactCreated;
+      FactionSystem.PowerAdded -= OnFactionSystemPowerAdded;
     }
   }
 }

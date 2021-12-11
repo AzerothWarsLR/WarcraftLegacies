@@ -1,5 +1,6 @@
 ﻿using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestOutcomes;
+using AzerothWarsCSharp.Source.Powers;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup
@@ -116,6 +117,13 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       return quest;
     }
+
+    private static Power SetupWaygatePower()
+    {
+      var power = new DummyPower("Waygates",
+        "Allows you to construct 2 Waygates, which enable teleportation between them.", "Waygate");
+      return power;
+    }
     
     public static Faction Setup(player whichPlayer)
     {
@@ -131,6 +139,7 @@ namespace AzerothWarsCSharp.Source.Setup
       FactionSystem.FactionAddQuest(dalaran, SetupSouthshore());
       FactionSystem.FactionAddQuest(dalaran, SetupNexus());
       FactionSystem.FactionAddQuest(dalaran, SetupTheramore());
+      FactionSystem.FactionAddPower(dalaran, SetupWaygatePower());
       FactionSystem.Add(dalaran);
       FactionSystem.PlayerSetFaction(whichPlayer, dalaran);
       return dalaran;

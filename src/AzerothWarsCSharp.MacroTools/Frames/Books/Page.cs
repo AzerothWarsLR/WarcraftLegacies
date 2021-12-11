@@ -13,10 +13,11 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
     {
       set => _pageNumberFrame.Text = $"Page {value.ToString()}";
     }
-    public int Rows { get; set; }
-    public int Columns { get; set; }
-    public float YOffsetTop { get; init; }
-    public float YOffsetBot { get; init; }
+
+    protected int Rows { get; set; }
+    protected int Columns { get; set; }
+    protected float YOffsetTop { get; init; }
+    protected float YOffsetBot { get; init; }
 
     protected Page() : base("ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0, 0)
     {

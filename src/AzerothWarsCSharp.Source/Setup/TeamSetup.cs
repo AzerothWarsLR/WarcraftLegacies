@@ -1,6 +1,7 @@
 ﻿using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestObjectives;
 using AzerothWarsCSharp.MacroTools.QuestOutcomes;
+using AzerothWarsCSharp.Source.Powers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -37,6 +38,11 @@ namespace AzerothWarsCSharp.Source.Setup
       drektharsSpellBookQuest.AddOutcome(new QuestOutcomeSpawnLegend(thrall, new Point(0, 0), "my house", 5));
       //drektharsSpellBookQuest.AddOutcome(new QuestOutcomeCreateArtifactAtRect(FourCC("odef"), new Rectangle(10, 10, -10, -10), "banantown"));
       drektharsSpellBookQuest.AddOutcome(new QuestOutcomeRemoveArtifact(ArtifactSetup.KillmaimSetup()));
+
+      var frostwolfpower = new DummyPower("Big Wolves",
+        "The Frostwolves are some of the coolest guys and can do things with wolves.", "SpiritWolf");
+      FactionSystem.FactionAddPower(frostwolf, frostwolfpower);
+
       FactionSystem.FactionAddQuest(frostwolf, drektharsSpellBookQuest);
 
       var testQuest = new Quest("Fat Dab", "Archimonde")
