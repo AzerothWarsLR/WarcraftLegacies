@@ -124,6 +124,20 @@ namespace AzerothWarsCSharp.Source.Setup
         "Allows you to construct 2 Waygates, which enable teleportation between them.", "Waygate");
       return power;
     }
+
+    private static Power SetupHeroismPower()
+    {
+      var power = new DummyPower("Heroism",
+        "Units you train have a 25% chance to become Demiheroes, gaining increased stats, Hero damage, and Hero armour.", "Resurrection");
+      return power;
+    }
+    
+    private static Power SetupMetamorphosisPower()
+    {
+      var power = new DummyPower("Metamorphosis",
+        "Units you control gain 5% hit points and attack damage for every 5 minutes they are alive, up to a maximum of 20%.", "ForgottenOne");
+      return power;
+    }
     
     public static Faction Setup(player whichPlayer)
     {
@@ -140,6 +154,8 @@ namespace AzerothWarsCSharp.Source.Setup
       FactionSystem.FactionAddQuest(dalaran, SetupNexus());
       FactionSystem.FactionAddQuest(dalaran, SetupTheramore());
       FactionSystem.FactionAddPower(dalaran, SetupWaygatePower());
+      FactionSystem.FactionAddPower(dalaran, SetupHeroismPower());
+      FactionSystem.FactionAddPower(dalaran, SetupMetamorphosisPower());
       FactionSystem.Add(dalaran);
       FactionSystem.PlayerSetFaction(whichPlayer, dalaran);
       return dalaran;
