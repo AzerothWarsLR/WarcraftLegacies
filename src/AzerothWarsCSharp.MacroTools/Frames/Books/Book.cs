@@ -9,6 +9,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
   {
     private readonly Button _launcher;
     private readonly Button _nextButton;
+    private readonly TextFrame _title;
 
     protected readonly List<T> Pages = new();
     private readonly Button _previousButton;
@@ -18,9 +19,13 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
     /// <summary>
     /// The name of the Book's launcher Button.
     /// </summary>
-    protected string LauncherName
+    protected string BookTitle
     {
-      init => _launcher.Text = value;
+      init
+      {
+        _launcher.Text = value;
+        _title.Text = value;
+      }
     }
 
     /// <summary>
@@ -47,7 +52,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
       //Launcher button
       _launcher = new Button("ScriptDialogButton", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0))
       {
-        Width = 0.2f,
+        Width = 0.09f,
         Height = 0.025f,
         OnClick = OpenFirstPage
       };
@@ -55,12 +60,12 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
       //Exit button
       var exitButton = new Button("ScriptDialogButton", this, 0, 0)
       {
-        Width = 0.09f,
-        Height = 0.037f,
-        Text = "Exit",
+        Width = 0.03f,
+        Height = 0.03f,
+        Text = "x",
         OnClick = OnClickExitButton
       };
-      exitButton.SetPoint(FRAMEPOINT_BOTTOM, this, FRAMEPOINT_BOTTOM, 0, bottomButtonYOffset);
+      exitButton.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOPRIGHT, -0.015f, -0.015f);
       AddFrame(exitButton);
 
       //Next button
@@ -88,6 +93,14 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
       _previousButton.SetPoint(FRAMEPOINT_BOTTOMLEFT, this, FRAMEPOINT_BOTTOMLEFT, bottomButtonXOffset,
         bottomButtonYOffset);
       AddFrame(_previousButton);
+      
+      //Title
+      _title = new TextFrame("ArtifactMenuTitle", this, 0, 0)
+      {
+        Text = "Artifacts"
+      };
+      _title.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOP, 0, -0.025f);
+      AddFrame(_title);
     }
 
     private int ActivePageIndex

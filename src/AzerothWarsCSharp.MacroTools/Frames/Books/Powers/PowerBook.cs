@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
     private const float BottomButtonYOffset = 0.015f;
     private const float BottomButtonXOffset = 0.02f;
     private const float BookWidth = 0.25f;
-    private const float BookHeight = 0.3f;
+    private const float BookHeight = 0.39f;
 
     // ReSharper disable once NotAccessedField.Local
     private static PowerBook? _instance;
@@ -23,9 +23,9 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
       var firstPage = AddPage();
       firstPage.Visible = true;
       AddAllPowers();
-      LauncherName = "Powers";
-      LauncherPosition = new Point(0.05f, 0.56f);
-      Position = new Point(0.2f, 0.38f);
+      BookTitle = "Powers";
+      LauncherPosition = new Point(0.15f, 0.56f);
+      Position = new Point(0.4f, 0.36f);
     }
 
     private void AddPower(Power power)

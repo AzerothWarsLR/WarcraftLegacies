@@ -4,8 +4,8 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
 {
   public class PowerCard : Card
   {
-    private const float BoxWidth = 0.20f;
-    private const float BoxHeight = 0.086f;
+    private const float BoxWidth = 0.23f;
+    private const float BoxHeight = 0.092f;
     
     public PowerCard(Power power, Frame parent) : base(parent, BoxWidth, BoxHeight)
     {

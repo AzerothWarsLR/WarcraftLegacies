@@ -24,13 +24,6 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
       Texture = @"UI/Widgets/EscMenu/Human/blank-background.blp";
       SetAbsPoint(FRAMEPOINT_CENTER, 0.4f, 0.38f);
 
-      var title = new TextFrame("ArtifactMenuTitle", this, 0, 0)
-      {
-        Text = "Artifacts"
-      };
-      title.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOP, 0, -0.025f);
-      AddFrame(title);
-
       _pageNumberFrame = new TextFrame("ArtifactMenuTitle", this, 0, 0)
       {
         Text = "Page DEFAULT"
