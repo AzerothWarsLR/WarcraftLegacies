@@ -1,4 +1,5 @@
-﻿using AzerothWarsCSharp.MacroTools.Frames.Books.Artifacts;
+﻿using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.Frames.Books.Artifacts;
 using AzerothWarsCSharp.MacroTools.Frames.Books.Powers;
 using AzerothWarsCSharp.MacroTools.UserInterface;
 using static War3Api.Common;
@@ -9,6 +10,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
   {
     public static void Setup()
     {
+      PreplacedUnitSystem.Initialize();
       SpellSetup.Setup();
       TeamSetup.Setup();
       NorthAllianceSetup.Setup(new[]
@@ -22,6 +24,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
       ArtifactSetup.FillerArtifactSetup();
       ArtifactBook.Initialize();
       PowerBook.Initialize();
+      PreplacedUnitSystem.Shutdown();
     }
   }
 }
