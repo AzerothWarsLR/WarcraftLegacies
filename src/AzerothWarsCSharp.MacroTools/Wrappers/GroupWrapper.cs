@@ -34,6 +34,12 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
       return list;
     }
 
+    public GroupWrapper EnumUnitsInRect(rect rect)
+    {
+      GroupEnumUnitsInRect(_group, rect, null);
+      return this;
+    }
+    
     public GroupWrapper EnumUnitsInRange(float x, float y, float radius)
     {
       GroupEnumUnitsInRange(_group, x, y, radius, null);
