@@ -3,7 +3,7 @@ using AzerothWarsCSharp.MacroTools.Spells;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.Setup
+namespace AzerothWarsCSharp.TestSource.Setup
 {
   public static class SpellSetup
   {

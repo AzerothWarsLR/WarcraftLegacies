@@ -1,6 +1,6 @@
 ﻿using AzerothWarsCSharp.MacroTools.Cheats;
 
-namespace AzerothWarsCSharp.Source.Setup
+namespace AzerothWarsCSharp.TestSource.Setup
 {
   public static class CheatSetup
   {

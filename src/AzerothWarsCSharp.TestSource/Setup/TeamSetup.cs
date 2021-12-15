@@ -5,7 +5,7 @@ using AzerothWarsCSharp.MacroTools.QuestOutcomes;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.Setup
+namespace AzerothWarsCSharp.TestSource.Setup
 {
   public static class TeamSetup
   {

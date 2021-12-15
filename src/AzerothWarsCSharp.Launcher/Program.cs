@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Launcher
   {
     // Input
     private const string SourceCodeProjectFolderPath = @"..\..\..\..\AzerothWarsCSharp.Source";
-    private const string SourceCodeProjectFolderPath2 = @"..\..\..\..\AzerothWarsCSharp.MacroTools";
+    private const string TestSourceCodeProjectFolderPath = @"..\..\..\..\AzerothWarsCSharp.TestSource";
     private const string JassHelperPath = @"..\..\..\..\..\build\JassHelper\jasshelper.exe";
 
     /// <summary>
@@ -77,16 +77,16 @@ namespace AzerothWarsCSharp.Launcher
           });
           break;
         case ConsoleKey.D2:
-          Build(BaseMapPath, false, JassFolderPath);
+          Build(BaseMapPath, TestSourceCodeProjectFolderPath, false, JassFolderPath);
           break;
         case ConsoleKey.D3:
-          Build(BaseMapPath, true, JassFolderPath);
+          Build(BaseMapPath,TestSourceCodeProjectFolderPath, true, JassFolderPath);
           break;
         case ConsoleKey.D4:
           DisplayUnusedModels();
           break;
         case ConsoleKey.D5:
-          Build(TestMapPath, true);
+          Build(TestMapPath, TestSourceCodeProjectFolderPath, true);
           break;
         default:
           Console.WriteLine($"{Environment.NewLine}Invalid input. Please choose again.");
@@ -127,7 +127,7 @@ namespace AzerothWarsCSharp.Launcher
     /// <summary>
     ///   Builds the Warcraft 3 map.
     /// </summary>
-    private static void Build(string baseMapPath, bool launch, string jassFolderPath = null)
+    private static void Build(string baseMapPath, string projectFolderPath, bool launch, string jassFolderPath = null)
     {
       // Ensure these folders exist
       Directory.CreateDirectory(OutputFolderPath);
@@ -147,7 +147,7 @@ namespace AzerothWarsCSharp.Launcher
       
       // Set debug options if necessary, configure compiler
       const string csc = "-debug -define:DEBUG";
-      var csproj = Directory.EnumerateFiles(SourceCodeProjectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
+      var csproj = Directory.EnumerateFiles(projectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
       var compiler = new Compiler(csproj, OutputFolderPath, string.Empty, null!, "War3Api.*;WCSharp.*;AzerothWarsCSharp.MacroTools.*", "", csc, false, null, string.Empty)
       {
         IsExportMetadata = true,

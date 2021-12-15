@@ -27,4 +27,8 @@
     <ProjectReference Include="..\AzerothWarsCSharp.MacroTools\AzerothWarsCSharp.MacroTools.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Powers" />
+  </ItemGroup>
+
 </Project>

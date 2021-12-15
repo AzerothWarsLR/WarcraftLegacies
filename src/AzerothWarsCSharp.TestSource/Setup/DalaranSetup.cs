@@ -3,7 +3,7 @@ using AzerothWarsCSharp.MacroTools.Powers;
 using AzerothWarsCSharp.MacroTools.QuestOutcomes;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.Setup
+namespace AzerothWarsCSharp.TestSource.Setup
 {
   public static class DalaranSetup
   {
