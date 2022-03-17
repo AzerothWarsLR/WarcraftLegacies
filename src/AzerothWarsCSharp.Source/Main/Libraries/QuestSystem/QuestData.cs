@@ -1,4 +1,8 @@
-public class QuestData{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
+{
+  public class QuestData{
 
   
     const int QUEST_PROGRESS_UNDISCOVERED = 0;
@@ -9,9 +13,9 @@ public class QuestData{
     Event QuestProgressChanged
   
 
-  static QuestData GetTriggerQuest( ){
-    return QuestData.triggerQuest;
-  }
+    static QuestData GetTriggerQuest( ){
+      return QuestData.triggerQuest;
+    }
 
 
     private string title = "DEFAULTTITLE";
@@ -360,10 +364,10 @@ public class QuestData{
       //If anything is undiscovered, the quest is undiscovered
       if (anyUndiscovered == true && this.Progress != QUEST_PROGRESS_UNDISCOVERED){
         this.Progress = QUEST_PROGRESS_UNDISCOVERED;
-      //If everything is complete, the quest is completed
+        //If everything is complete, the quest is completed
       }else if (allComplete == true && this.Progress != QUEST_PROGRESS_COMPLETE){
         this.Progress = QUEST_PROGRESS_COMPLETE;
-      //If anything is failed, the quest is failed
+        //If anything is failed, the quest is failed
       }else if (anyFailed == true && this.Progress != QUEST_PROGRESS_FAILED){
         this.Progress = QUEST_PROGRESS_FAILED;
       }else {
@@ -392,7 +396,7 @@ public class QuestData{
 
     }
 
-     thistype (string title, string desc, string icon ){
+    thistype (string title, string desc, string icon ){
 
       this.quest = CreateQuest();
       this.description = desc;
@@ -411,8 +415,9 @@ public class QuestData{
     }
 
 
-  private static void OnInit( ){
-    QuestProgressChanged = Event.create();
-  }
+    private static void OnInit( ){
+      QuestProgressChanged = Event.create();
+    }
 
+  }
 }

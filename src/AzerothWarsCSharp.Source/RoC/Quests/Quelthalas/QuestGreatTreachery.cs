@@ -1,5 +1,9 @@
 
-public class QuestGreatTreachery{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
+{
+  public class QuestGreatTreachery{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R075)   ;//This research is given when the quest is completed
@@ -37,4 +41,5 @@ public class QuestGreatTreachery{
     }
 
 
+  }
 }

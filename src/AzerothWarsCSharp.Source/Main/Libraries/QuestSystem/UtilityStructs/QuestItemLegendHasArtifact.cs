@@ -1,4 +1,8 @@
-public class QuestItemLegendHasArtifact{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemLegendHasArtifact{
 
 
     private static int count = 0;
@@ -33,7 +37,7 @@ public class QuestItemLegendHasArtifact{
       }
     }
 
-     thistype (Legend targetLegend, Artifact targetArtifact ){
+    thistype (Legend targetLegend, Artifact targetArtifact ){
 
       this.Description = targetLegend.Name + " has " + GetItemName(targetArtifact.item);
       this.targetLegend = targetLegend;
@@ -44,10 +48,11 @@ public class QuestItemLegendHasArtifact{
     }
 
 
-  private static void OnInit( ){
-    trigger trig = CreateTrigger();
-    OnArtifactOwnerChange.register(trig);
-    TriggerAddAction(trig,  QuestItemLegendHasArtifact.OnAnyArtifactAcquired);
-  }
+    private static void OnInit( ){
+      trigger trig = CreateTrigger();
+      OnArtifactOwnerChange.register(trig);
+      TriggerAddAction(trig,  QuestItemLegendHasArtifact.OnAnyArtifactAcquired);
+    }
 
+  }
 }

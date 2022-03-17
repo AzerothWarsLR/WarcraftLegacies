@@ -1,4 +1,6 @@
-public class ControlPoint{
+namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
+{
+  public class ControlPoint{
 
   
     group ControlPoints = CreateGroup();
@@ -86,7 +88,7 @@ public class ControlPoint{
       int i = 0;
       ControlPoint highestValueCP = 0;
       while(true){
-      if ( i == thistype.count){ break; }
+        if ( i == thistype.count){ break; }
         if (thistype.byIndex[i].OwningPerson == person && thistype.byIndex[i].value > highestValueCP.value){
           highestValueCP = thistype.byIndex[i];
         }
@@ -95,7 +97,7 @@ public class ControlPoint{
       return highestValueCP;
     }
 
-     ControlPoint (unit u, float value ){
+    ControlPoint (unit u, float value ){
 
       Person person = Person.ByHandle(GetOwningPlayer(u));
 
@@ -138,38 +140,39 @@ public class ControlPoint{
     }
 
 
-  static player GetControlPointPreviousOwner( ){
-    return ControlPoint.controlPointFormerOwner;
-  }
-
-  static ControlPoint GetTriggerControlPoint( ){
-    return ControlPoint.triggerControlPoint;
-  }
-
-
-  private static void CPChangesOwner( ){
-    unit u = GetTriggerUnit();
-    int ui = GetUnitUserData(u);
-    player p = GetTriggerPlayer();
-
-    if (CPData[ui] != 0){
-      CPData[ui].changeOwner(p);
+    static player GetControlPointPreviousOwner( ){
+      return ControlPoint.controlPointFormerOwner;
     }
 
-    u = null;
-    p = null;
+    static ControlPoint GetTriggerControlPoint( ){
+      return ControlPoint.triggerControlPoint;
+    }
+
+
+    private static void CPChangesOwner( ){
+      unit u = GetTriggerUnit();
+      int ui = GetUnitUserData(u);
+      player p = GetTriggerPlayer();
+
+      if (CPData[ui] != 0){
+        CPData[ui].changeOwner(p);
+      }
+
+      u = null;
+      p = null;
+    }
+
+    //Note that the Init function currently enumerates across every single unit on the map, then checks them for a Control Point buff before initializing them as a CP
+    //This is not a good way to do this, considering that we know which units are CPs before the map is even compiled
+    private static void OnInit( ){
+      group g;
+      trigger trig = CreateTrigger();
+
+      PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_CHANGE_OWNER,  CPChangesOwner) ;//TODO: use filtered events
+
+      OnControlPointLoss = Event.create();
+      OnControlPointOwnerChange = Event.create();
+    }
+
   }
-
-  //Note that the Init function currently enumerates across every single unit on the map, then checks them for a Control Point buff before initializing them as a CP
-  //This is not a good way to do this, considering that we know which units are CPs before the map is even compiled
-  private static void OnInit( ){
-    group g;
-    trigger trig = CreateTrigger();
-
-    PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_CHANGE_OWNER,  CPChangesOwner) ;//TODO: use filtered events
-
-    OnControlPointLoss = Event.create();
-    OnControlPointOwnerChange = Event.create();
-  }
-
 }

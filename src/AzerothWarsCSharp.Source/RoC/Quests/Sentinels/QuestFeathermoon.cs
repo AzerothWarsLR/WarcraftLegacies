@@ -1,4 +1,9 @@
-public class QuestFeathermoon{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Sentinels
+{
+  public class QuestFeathermoon{
 
   
     private const int RESEARCH_ID = FourCC(R06M)   ;//This research is given when the quest is completed
@@ -21,7 +26,7 @@ public class QuestFeathermoon{
       GroupEnumUnitsInRect(tempGroup, gg_rct_FeathermoonUnlock, null);
       u = FirstOfGroup(tempGroup);
       while(true){
-      if ( u == null){ break; }
+        if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
           UnitRescue(u, whichPlayer);
         }
@@ -57,4 +62,5 @@ public class QuestFeathermoon{
     }
 
 
+  }
 }

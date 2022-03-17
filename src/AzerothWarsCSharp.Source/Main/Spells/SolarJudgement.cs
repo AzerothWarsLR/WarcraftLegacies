@@ -1,4 +1,6 @@
-public class SolarJudgement{
+namespace AzerothWarsCSharp.Source.Main.Spells
+{
+  public class SolarJudgement{
 
   
     private const int ABIL_ID = FourCC(A01F);
@@ -93,7 +95,7 @@ public class SolarJudgement{
 
 
 
-     thistype (unit caster, float x, float y, float damage, float duration ){
+    thistype (unit caster, float x, float y, float damage, float duration ){
 
       this.duration = duration;
       this.caster = caster;
@@ -107,12 +109,13 @@ public class SolarJudgement{
     }
 
 
-  private static void Cast( ){
-    SolarJudgement.create(GetTriggerUnit(), GetSpellTargetX(), GetSpellTargetY(), DAMAGE_BASE + DAMAGE_LEVEL*GetUnitAbilityLevel(GetTriggerUnit(), ABIL_ID), DURATION);
-  }
+    private static void Cast( ){
+      SolarJudgement.create(GetTriggerUnit(), GetSpellTargetX(), GetSpellTargetY(), DAMAGE_BASE + DAMAGE_LEVEL*GetUnitAbilityLevel(GetTriggerUnit(), ABIL_ID), DURATION);
+    }
 
-  private static void OnInit( ){
-    RegisterSpellEffectAction(ABIL_ID,  Cast);
-  }
+    private static void OnInit( ){
+      RegisterSpellEffectAction(ABIL_ID,  Cast);
+    }
 
+  }
 }

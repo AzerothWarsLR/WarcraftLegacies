@@ -1,4 +1,9 @@
-public class QuestBrokenOne{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Draenei
+{
+  public class QuestBrokenOne{
 
   
     private const int QUESTRESEARCH_ID = FourCC(R083)   ;//This research is given when the quest is completed
@@ -23,4 +28,5 @@ public class QuestBrokenOne{
     }
 
 
+  }
 }

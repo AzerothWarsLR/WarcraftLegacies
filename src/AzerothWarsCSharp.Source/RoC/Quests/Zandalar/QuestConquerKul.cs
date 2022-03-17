@@ -1,4 +1,8 @@
-public class QuestConquerKul{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Zandalar
+{
+  public class QuestConquerKul{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R08D)   ;//This research is given when the quest is completed
@@ -28,7 +32,7 @@ public class QuestConquerKul{
       GroupEnumUnitsInRect(tempGroup, gg_rct_Zulfarrak, null);
       u = FirstOfGroup(tempGroup);
       while(true){
-      if ( u == null){ break; }
+        if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE) || GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_AGGRESSIVE)){
           if (IsUnitType(u, UNIT_TYPE_HERO) == true){
             KillUnit(u);
@@ -51,4 +55,5 @@ public class QuestConquerKul{
     }
 
 
+  }
 }

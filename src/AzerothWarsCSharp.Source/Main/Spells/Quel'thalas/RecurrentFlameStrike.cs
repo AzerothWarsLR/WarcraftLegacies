@@ -1,5 +1,7 @@
 //Casts Flame Strike at itself every few seconds.
-public class RecurrentFlameStrike{
+namespace AzerothWarsCSharp.Source.Main.Spells.Quel_thalas
+{
+  public class RecurrentFlameStrike{
 
   
     private const int ABIL_ID = FourCC(A04H);
@@ -41,7 +43,7 @@ public class RecurrentFlameStrike{
 
 
 
-     thistype (unit caster, float x, float y, int level ){
+    thistype (unit caster, float x, float y, int level ){
 
       this.caster = caster;
       this.duration = DURATION;
@@ -55,12 +57,13 @@ public class RecurrentFlameStrike{
     }
 
 
-  private static void Cast( ){
-    RecurrentFlameStrike.create(GetTriggerUnit(), GetSpellTargetX(), GetSpellTargetY(), GetUnitAbilityLevel(GetTriggerUnit(), ABIL_ID));
-  }
+    private static void Cast( ){
+      RecurrentFlameStrike.create(GetTriggerUnit(), GetSpellTargetX(), GetSpellTargetY(), GetUnitAbilityLevel(GetTriggerUnit(), ABIL_ID));
+    }
 
-  private static void OnInit( ){
-    RegisterSpellEffectAction(ABIL_ID,  Cast);
-  }
+    private static void OnInit( ){
+      RegisterSpellEffectAction(ABIL_ID,  Cast);
+    }
 
+  }
 }

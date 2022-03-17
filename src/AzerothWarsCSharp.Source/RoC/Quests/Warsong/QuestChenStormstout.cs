@@ -1,5 +1,10 @@
 //Chen Stormstout joins the Warsong when a Warsong unit approaches him.
-public class QuestChenStormstout{
+
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
+{
+  public class QuestChenStormstout{
 
   
     private const int CHEN_RESEARCH = FourCC(R037);
@@ -38,4 +43,5 @@ public class QuestChenStormstout{
     }
 
 
+  }
 }

@@ -1,4 +1,8 @@
-public class QuestZulfarrak{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Zandalar
+{
+  public class QuestZulfarrak{
 
   
     private const int GAHZRILLA_RESEARCH = FourCC(R02F);
@@ -21,7 +25,7 @@ public class QuestZulfarrak{
       GroupEnumUnitsInRect(tempGroup, gg_rct_Zulfarrak, null);
       u = FirstOfGroup(tempGroup);
       while(true){
-      if ( u == null){ break; }
+        if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE) || GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_AGGRESSIVE)){
           if (IsUnitType(u, UNIT_TYPE_HERO) == true){
             KillUnit(u);
@@ -50,4 +54,5 @@ public class QuestZulfarrak{
     }
 
 
+  }
 }

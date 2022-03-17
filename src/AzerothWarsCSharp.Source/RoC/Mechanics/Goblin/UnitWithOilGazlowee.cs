@@ -1,4 +1,6 @@
-public class UnitWithFuelGazlowee{
+namespace AzerothWarsCSharp.Source.RoC.Mechanics.Goblin
+{
+  public class UnitWithFuelGazlowee{
 
   
     private const int UNIT_TYPE = FourCC(Ntin);
@@ -51,4 +53,5 @@ public class UnitWithFuelGazlowee{
 
 
 
+  }
 }

@@ -1,4 +1,6 @@
-public class TestInvite{
+namespace AzerothWarsCSharp.Source.RoC.Tests
+{
+  public class TestInvite{
 
 
     void Run( ){
@@ -11,4 +13,5 @@ public class TestInvite{
     }
 
 
+  }
 }

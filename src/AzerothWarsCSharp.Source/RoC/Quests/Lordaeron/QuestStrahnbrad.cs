@@ -1,4 +1,9 @@
-public class QuestStrahnbrad{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
+{
+  public class QuestStrahnbrad{
 
 
 
@@ -27,4 +32,5 @@ public class QuestStrahnbrad{
     }
 
 
+  }
 }

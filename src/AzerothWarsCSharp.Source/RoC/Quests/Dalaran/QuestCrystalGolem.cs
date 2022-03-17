@@ -1,4 +1,9 @@
-public class QuestCrystalGolem{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
+{
+  public class QuestCrystalGolem{
 
   
     private const int RESEARCH_ID = FourCC(R045);
@@ -32,4 +37,5 @@ public class QuestCrystalGolem{
     }
 
 
+  }
 }

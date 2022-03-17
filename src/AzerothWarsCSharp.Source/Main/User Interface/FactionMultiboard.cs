@@ -1,4 +1,9 @@
-public class FactionMultiboard{
+using AzerothWarsCSharp.Source.Main.Libraries;
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
+namespace AzerothWarsCSharp.Source.Main.User_Interface
+{
+  public class FactionMultiboard{
 
   
     private const int COLUMN_COUNT   = 3;
@@ -97,7 +102,7 @@ public class FactionMultiboard{
           row = row + 1;
           j = 0;
           while(true){
-          if ( j == loopTeam.FactionCount){ break; }
+            if ( j == loopTeam.FactionCount){ break; }
             loopFaction = loopTeam.GetFactionByIndex(j);
             if (loopFaction.Person != 0 && loopFaction.ScoreStatus != SCORESTATUS_DEFEATED){
               this.rowsByFaction[loopFaction] = row;
@@ -159,4 +164,5 @@ public class FactionMultiboard{
 
 
 
+  }
 }

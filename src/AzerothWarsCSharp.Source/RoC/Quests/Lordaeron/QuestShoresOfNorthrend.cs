@@ -1,4 +1,8 @@
-public class QuestShoresOfNorthrend{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
+{
+  public class QuestShoresOfNorthrend{
 
   
     private const int RESEARCH_ID = FourCC(R06F);
@@ -65,4 +69,5 @@ public class QuestShoresOfNorthrend{
     }
 
 
+  }
 }

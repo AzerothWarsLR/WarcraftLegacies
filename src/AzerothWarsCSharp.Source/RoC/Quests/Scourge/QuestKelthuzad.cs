@@ -1,4 +1,8 @@
-public class QuestKelthuzad{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
+{
+  public class QuestKelthuzad{
 
 
     private string operator CompletionPopup( ){
@@ -30,4 +34,5 @@ public class QuestKelthuzad{
     }
 
 
+  }
 }

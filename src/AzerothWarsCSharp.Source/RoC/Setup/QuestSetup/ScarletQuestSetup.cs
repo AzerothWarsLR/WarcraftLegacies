@@ -1,14 +1,19 @@
-public class ScarletQuestSetup{
+using AzerothWarsCSharp.Source.RoC.Quests.Scarlet;
 
-  public static void OnInit( ){
-    //Early duel
-    FACTION_SCARLET.StartingQuest = FACTION_SCARLET.AddQuest(QuestTownWatch.create());
-    FACTION_SCARLET.AddQuest(QuestMonastery.create());
-    FACTION_SCARLET.AddQuest(QuestArgentDawn.create());
-    FACTION_SCARLET.AddQuest(QuestArathiVolunteers.create());
-    FACTION_SCARLET.AddQuest(QuestTyr.create());
-    FACTION_SCARLET.AddQuest(QuestLiberateLordaeron.create());
+namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
+{
+  public class ScarletQuestSetup{
+
+    public static void OnInit( ){
+      //Early duel
+      FACTION_SCARLET.StartingQuest = FACTION_SCARLET.AddQuest(QuestTownWatch.create());
+      FACTION_SCARLET.AddQuest(QuestMonastery.create());
+      FACTION_SCARLET.AddQuest(QuestArgentDawn.create());
+      FACTION_SCARLET.AddQuest(QuestArathiVolunteers.create());
+      FACTION_SCARLET.AddQuest(QuestTyr.create());
+      FACTION_SCARLET.AddQuest(QuestLiberateLordaeron.create());
+    }
+
+
   }
-
-
 }

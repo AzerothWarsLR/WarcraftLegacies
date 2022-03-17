@@ -1,5 +1,10 @@
 //Escapes Kalimdor, Find the Skull of Guldan
-public class QuestIllidanChapterThree{
+
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
+{
+  public class QuestIllidanChapterThree{
 
    
     private const int RITUAL_ID = FourCC(A0KY);
@@ -42,4 +47,5 @@ public class QuestIllidanChapterThree{
     }
 
 
+  }
 }

@@ -1,5 +1,9 @@
 
-public class QuestLivingShadow{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
+{
+  public class QuestLivingShadow{
 
 
     private string operator CompletionPopup( ){
@@ -24,4 +28,5 @@ public class QuestLivingShadow{
     }
 
 
+  }
 }

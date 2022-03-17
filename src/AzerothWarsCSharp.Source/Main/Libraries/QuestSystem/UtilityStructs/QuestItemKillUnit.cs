@@ -1,4 +1,6 @@
-public class QuestItemKillUnit{
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemKillUnit{
 
 
     private static group targets = CreateGroup();
@@ -53,7 +55,7 @@ public class QuestItemKillUnit{
       }
     }
 
-     thistype (unit unitToKill ){
+    thistype (unit unitToKill ){
 
       trigger trig = CreateTrigger();
       TriggerRegisterUnitEvent(trig, unitToKill, EVENT_UNIT_DEATH);
@@ -69,4 +71,5 @@ public class QuestItemKillUnit{
 
 
 
+  }
 }

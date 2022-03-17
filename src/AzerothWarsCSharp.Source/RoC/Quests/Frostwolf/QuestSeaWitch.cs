@@ -1,6 +1,11 @@
 //Frostwolf kills the Sea Witch. Thrall gets some boats to leave the Darkspear Isles.
 //Presently this ONLY deals with the final component of the event. The rest is done in GUI.
-public class QuestSeaWitch{
+
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Frostwolf
+{
+  public class QuestSeaWitch{
 
   
     private weathereffect Storm;
@@ -62,4 +67,5 @@ public class QuestSeaWitch{
     }
 
 
+  }
 }

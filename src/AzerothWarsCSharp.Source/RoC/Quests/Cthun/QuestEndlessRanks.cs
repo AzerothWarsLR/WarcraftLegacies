@@ -1,4 +1,8 @@
-public class QuestEndlessRanks{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Cthun
+{
+  public class QuestEndlessRanks{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R07D)   ;//This research is given when the quest is completed
@@ -27,4 +31,5 @@ public class QuestEndlessRanks{
     }
 
 
+  }
 }

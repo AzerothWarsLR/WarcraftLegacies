@@ -1,6 +1,11 @@
 //Like vanilla Life Drain & Siphon Mana, but it applies to a group of units.
 //Only drains if the caster needs the health and mana OR the target is an enemy.
-public class SiphoningRitual{
+
+using AzerothWarsCSharp.Source.Main.Libraries;
+
+namespace AzerothWarsCSharp.Source.Main.Spells.Quel_thalas
+{
+  public class SiphoningRitual{
 
   
     private const int ABIL_ID = FourCC(A0FA);
@@ -14,7 +19,7 @@ public class SiphoningRitual{
     private const float PERIOD = 01;
   
 
-  //A single beam connecting the caster to the victim, draining its life.
+    //A single beam connecting the caster to the victim, draining its life.
 
     private unit caster = null;
     private unit target = null;
@@ -58,7 +63,7 @@ public class SiphoningRitual{
 
 
 
-     thistype (unit caster, unit target, float lifedrain, float manadrain ){
+    thistype (unit caster, unit target, float lifedrain, float manadrain ){
 
       this.caster = caster;
       this.target = target;
@@ -71,7 +76,7 @@ public class SiphoningRitual{
     }
 
 
-  //A group of SiphoningBeams.
+    //A group of SiphoningBeams.
 
     public static thistype[] ByUnit;
     private Set siphoningBeams = 0;
@@ -102,7 +107,7 @@ public class SiphoningRitual{
 
 
 
-     thistype (unit caster, float x, float y, float radius, float lifedrain, float manadrain ){
+    thistype (unit caster, float x, float y, float radius, float lifedrain, float manadrain ){
 
       group tempGroup = CreateGroup();
       int i = 0;
@@ -114,7 +119,7 @@ public class SiphoningRitual{
 
       GroupEnumUnitsInRange(tempGroup, x, y, radius, null);
       while(true){
-      if ( BlzGroupGetSize(tempGroup) == 0 || i == COUNT_BASE){ break; }
+        if ( BlzGroupGetSize(tempGroup) == 0 || i == COUNT_BASE){ break; }
         u = BlzGroupUnitAt(tempGroup, GetRandomInt( 0, BlzGroupGetSize(tempGroup) - 1) );
         if (caster != u && !IsUnitType(u, UNIT_TYPE_STRUCTURE) && !IsUnitType(u, UNIT_TYPE_ANCIENT) && !IsUnitType(u, UNIT_TYPE_MECHANICAL) && IsUnitAliveBJ(u)){
           this.siphoningBeams.add(SiphoningBeam.create(this.caster, u, lifedrain, manadrain));
@@ -131,18 +136,19 @@ public class SiphoningRitual{
     }
 
 
-  private static void StopChannel( ){
-    SiphoningRitual.ByUnit[GetUnitId(GetTriggerUnit())].destroy();
-  }
+    private static void StopChannel( ){
+      SiphoningRitual.ByUnit[GetUnitId(GetTriggerUnit())].destroy();
+    }
 
-  private static void StartChannel( ){
-    unit u = GetTriggerUnit();
-    SiphoningRitual.ByUnit[GetUnitId(u)] = SiphoningRitual.create(u, GetSpellTargetX(), GetSpellTargetY(), RADIUS, LIFEDRAIN_BASE+GetUnitAbilityLevel(u, ABIL_ID)*LIFEDRAIN_LEVEL, MANADRAIN_BASE+GetUnitAbilityLevel(u, ABIL_ID)*MANADRAIN_LEVEL);
-  }
+    private static void StartChannel( ){
+      unit u = GetTriggerUnit();
+      SiphoningRitual.ByUnit[GetUnitId(u)] = SiphoningRitual.create(u, GetSpellTargetX(), GetSpellTargetY(), RADIUS, LIFEDRAIN_BASE+GetUnitAbilityLevel(u, ABIL_ID)*LIFEDRAIN_LEVEL, MANADRAIN_BASE+GetUnitAbilityLevel(u, ABIL_ID)*MANADRAIN_LEVEL);
+    }
 
-  private static void OnInit( ){
-    RegisterSpellChannelAction(ABIL_ID,  StartChannel);
-    RegisterSpellEndcastAction(ABIL_ID,  StopChannel);
-  }
+    private static void OnInit( ){
+      RegisterSpellChannelAction(ABIL_ID,  StartChannel);
+      RegisterSpellEndcastAction(ABIL_ID,  StopChannel);
+    }
 
+  }
 }

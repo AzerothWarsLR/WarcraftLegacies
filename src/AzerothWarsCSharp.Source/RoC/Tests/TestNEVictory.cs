@@ -1,4 +1,6 @@
-public class TestNightElfVictory{
+namespace AzerothWarsCSharp.Source.RoC.Tests
+{
+  public class TestNightElfVictory{
 
 
     void Run( ){
@@ -19,4 +21,5 @@ public class TestNightElfVictory{
     }
 
 
+  }
 }

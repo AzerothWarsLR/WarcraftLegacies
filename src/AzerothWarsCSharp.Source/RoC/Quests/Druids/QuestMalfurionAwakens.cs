@@ -1,6 +1,11 @@
 //Anyone on the Night Elves team approaches Moonglade with a unit with the Horn of Cenarius,
 //Causing Malfurion to spawn.
-public class QuestMalfurionAwakens{
+
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Druids
+{
+  public class QuestMalfurionAwakens{
 
   
     private group MoongladeUnits;
@@ -26,7 +31,7 @@ public class QuestMalfurionAwakens{
       GroupEnumUnitsInRect(tempGroup, gg_rct_MoongladeVillage, null);
       u = FirstOfGroup(tempGroup);
       while(true){
-      if ( u == null){ break; }
+        if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
           UnitRescue(u, whichPlayer);
         }
@@ -64,26 +69,27 @@ public class QuestMalfurionAwakens{
     }
 
 
-  private static void OnInit( ){
-    //Setup initially invulnerable and hidden group at Moonglade
-    group tempGroup = CreateGroup();
-    unit u;
-    int i = 0;
-    MoongladeUnits = CreateGroup();
-    GroupEnumUnitsInRect(tempGroup, gg_rct_MoongladeVillage, null);
-    while(true){
-      u = FirstOfGroup(tempGroup);
-      if ( u == null){ break; }
-      if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-        SetUnitInvulnerable(u, true);
-        GroupAddUnit(MoongladeUnits, u);
+    private static void OnInit( ){
+      //Setup initially invulnerable and hidden group at Moonglade
+      group tempGroup = CreateGroup();
+      unit u;
+      int i = 0;
+      MoongladeUnits = CreateGroup();
+      GroupEnumUnitsInRect(tempGroup, gg_rct_MoongladeVillage, null);
+      while(true){
+        u = FirstOfGroup(tempGroup);
+        if ( u == null){ break; }
+        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
+          SetUnitInvulnerable(u, true);
+          GroupAddUnit(MoongladeUnits, u);
+        }
+        GroupRemoveUnit(tempGroup, u);
+        i = i + 1;
       }
-      GroupRemoveUnit(tempGroup, u);
-      i = i + 1;
+      DestroyGroup(tempGroup);
+      tempGroup = null;
+      //Add quest
     }
-    DestroyGroup(tempGroup);
-    tempGroup = null;
-    //Add quest
-  }
 
+  }
 }

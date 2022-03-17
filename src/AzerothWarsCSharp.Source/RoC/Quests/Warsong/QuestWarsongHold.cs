@@ -1,4 +1,9 @@
-public class QuestWarsongHold{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
+{
+  public class QuestWarsongHold{
 
   
     private const int RESEARCH_ID = FourCC(R06G);
@@ -62,4 +67,5 @@ public class QuestWarsongHold{
     }
 
 
+  }
 }

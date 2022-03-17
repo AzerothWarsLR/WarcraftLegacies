@@ -1,4 +1,6 @@
-public class Test{
+namespace AzerothWarsCSharp.Source.Main.Tests
+{
+  public class Test{
 
   
     private const string COMMAND = "-test ";
@@ -27,7 +29,7 @@ public class Test{
       Test(thistype.byName[parameter]).Run();
     }
 
-     thistype (string name ){
+    thistype (string name ){
 
       trigger trig;
       int i = 0;
@@ -35,7 +37,7 @@ public class Test{
 
       trig = CreateTrigger();
       while(true){
-      if ( i > MAX_PLAYERS){ break; }
+        if ( i > MAX_PLAYERS){ break; }
         TriggerRegisterPlayerChatEvent( trig, Player(i), COMMAND + this.name, false );
         i = i + 1;
       }
@@ -50,4 +52,5 @@ public class Test{
     }
 
 
+  }
 }

@@ -1,4 +1,8 @@
-public class QuestArgentDawn{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Scarlet
+{
+  public class QuestArgentDawn{
 
   
     private const int RESEARCH_ID = FourCC(R088)         ;//This research is required to complete the quest
@@ -49,4 +53,5 @@ public class QuestArgentDawn{
     }
 
 
+  }
 }

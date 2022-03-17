@@ -1,4 +1,8 @@
-public class QuestFrozenThrone{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
+{
+  public class QuestFrozenThrone{
 
 
 
@@ -38,4 +42,5 @@ public class QuestFrozenThrone{
     }
 
 
+  }
 }

@@ -1,3 +1,5 @@
+  using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
+
   library GlobalQuest requires QuestData
 
   

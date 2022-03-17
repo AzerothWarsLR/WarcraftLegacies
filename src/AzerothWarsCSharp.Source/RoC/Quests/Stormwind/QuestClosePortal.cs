@@ -1,4 +1,8 @@
-public class QuestClosePortal{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
+{
+  public class QuestClosePortal{
 
 
 
@@ -34,4 +38,5 @@ public class QuestClosePortal{
     }
 
 
+  }
 }

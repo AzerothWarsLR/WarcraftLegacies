@@ -1,4 +1,8 @@
-public class QuestAshbringer{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
+{
+  public class QuestAshbringer{
 
   
     private const float DUMMY_X = 22700;
@@ -38,4 +42,5 @@ public class QuestAshbringer{
     }
 
 
+  }
 }

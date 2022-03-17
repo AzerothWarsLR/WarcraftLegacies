@@ -1,4 +1,8 @@
-public class QuestLegionKillLordaeron{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
+{
+  public class QuestLegionKillLordaeron{
 
 
     private string operator CompletionPopup( ){
@@ -23,4 +27,5 @@ public class QuestLegionKillLordaeron{
     }
 
 
+  }
 }

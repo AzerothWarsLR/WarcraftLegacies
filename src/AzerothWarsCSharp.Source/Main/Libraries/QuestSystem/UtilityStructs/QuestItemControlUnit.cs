@@ -1,4 +1,6 @@
-public class QuestItemControlUnit{
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemControlUnit{
 
 
     private static thistype[] byHandleId;
@@ -22,7 +24,7 @@ public class QuestItemControlUnit{
       thistype.byHandleId[GetHandleId(GetTriggerUnit())].OnUnitChangeOwner();
     }
 
-     thistype (unit target ){
+    thistype (unit target ){
 
       trigger trig = CreateTrigger();
       TriggerRegisterUnitEvent(trig, target, EVENT_UNIT_CHANGE_OWNER);
@@ -36,4 +38,5 @@ public class QuestItemControlUnit{
 
 
 
+  }
 }

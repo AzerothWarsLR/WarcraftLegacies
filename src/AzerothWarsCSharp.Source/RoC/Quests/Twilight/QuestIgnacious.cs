@@ -1,4 +1,9 @@
-public class QuestIgnacious{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Twilight
+{
+  public class QuestIgnacious{
 
   
     private const int RESEARCH_ID = FourCC(R07Q);
@@ -23,4 +28,5 @@ public class QuestIgnacious{
     }
 
 
+  }
 }

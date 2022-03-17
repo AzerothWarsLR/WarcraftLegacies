@@ -1,4 +1,8 @@
-public class QuestGnomeregan{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Ironforge
+{
+  public class QuestGnomeregan{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R05Q);
@@ -21,7 +25,7 @@ public class QuestGnomeregan{
       GroupEnumUnitsInRect(tempGroup, gg_rct_Gnomergan, null);
       u = FirstOfGroup(tempGroup);
       while(true){
-      if ( u == null){ break; }
+        if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
           UnitRescue(u, whichPlayer);
         }
@@ -53,4 +57,5 @@ public class QuestGnomeregan{
     }
 
 
+  }
 }

@@ -1,6 +1,12 @@
 //Anyone on the Night Elves team approaches Moonglade with a unit with the Horn of Cenarius,
 //Causing Malfurion to spawn.
-public class QuestHakkar{
+
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Zandalar
+{
+  public class QuestHakkar{
 
 
 
@@ -31,4 +37,5 @@ public class QuestHakkar{
     }
 
 
+  }
 }

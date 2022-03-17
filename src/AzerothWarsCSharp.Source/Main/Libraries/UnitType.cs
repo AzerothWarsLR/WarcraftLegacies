@@ -1,4 +1,6 @@
-public class UnitType{
+namespace AzerothWarsCSharp.Source.Main.Libraries
+{
+  public class UnitType{
 
   
 
@@ -22,7 +24,7 @@ public class UnitType{
     int UNITCATEGORY_UPGRADEDTOWER2_B = 14 ;//Tower that)s been upgraded twice
   
 
-  //Stores extra data about UnitTypeIds.
+    //Stores extra data about UnitTypeIds.
 
     private static Table byId;
     readonly int unitId = 0;
@@ -78,7 +80,7 @@ public class UnitType{
       ;type.byId[id];
     }
 
-     UnitType (int unitId ){
+    UnitType (int unitId ){
 
       this.unitId = unitId;
       thistype.byId[unitId] = this;
@@ -90,4 +92,5 @@ public class UnitType{
     }
 
 
+  }
 }

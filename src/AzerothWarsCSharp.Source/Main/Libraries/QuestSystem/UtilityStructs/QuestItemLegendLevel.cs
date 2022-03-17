@@ -1,4 +1,8 @@
-public class QuestItemLegendLevel{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemLegendLevel{
 
 
     private Legend target = 0;
@@ -6,7 +10,7 @@ public class QuestItemLegendLevel{
     private static int count = 0;
     private static thistype[] byIndex;
 
-     thistype (Legend target, int level ){
+    thistype (Legend target, int level ){
 
       this.Description = target.Name + " is level " + I2S(level);
       this.target = target;
@@ -41,4 +45,5 @@ public class QuestItemLegendLevel{
     }
 
 
+  }
 }

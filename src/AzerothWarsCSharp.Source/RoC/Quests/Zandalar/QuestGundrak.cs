@@ -1,4 +1,8 @@
-public class QuestGundrak{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Zandalar
+{
+  public class QuestGundrak{
 
   
     private const int GUNDRAK_RESEARCH = FourCC(R02Q);
@@ -31,4 +35,5 @@ public class QuestGundrak{
     }
 
 
+  }
 }

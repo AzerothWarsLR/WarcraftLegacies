@@ -1,4 +1,6 @@
-public class DivineJustice{
+namespace AzerothWarsCSharp.Source.Main.Spells
+{
+  public class DivineJustice{
 
   
     private const int    ABIL_ID                        = FourCC(A097);
@@ -124,7 +126,7 @@ public class DivineJustice{
 
 
 
-     thistype (unit cast, float x, float y, float damage, float radius, float duration ){
+    thistype (unit cast, float x, float y, float damage, float radius, float duration ){
 
       int i = 0;
       boolean b = false;
@@ -164,34 +166,35 @@ public class DivineJustice{
     }
 
 
-  private static void OnDamageB( ){
-    ConsecrationsByUnit[GetUnitId(GetEnumUnit())].protect(TempUnit);
-  }
-
-  private static void OnDamage( ){
-    TempUnit = GetTriggerUnit()     ;//This gets used in the .protect() method of Consecration
-    if (BlzGroupGetSize(UnitsWithConsecration) > 0){
-      ForGroup(UnitsWithConsecration,  OnDamageB);
+    private static void OnDamageB( ){
+      ConsecrationsByUnit[GetUnitId(GetEnumUnit())].protect(TempUnit);
     }
-    TempUnit = null;
+
+    private static void OnDamage( ){
+      TempUnit = GetTriggerUnit()     ;//This gets used in the .protect() method of Consecration
+      if (BlzGroupGetSize(UnitsWithConsecration) > 0){
+        ForGroup(UnitsWithConsecration,  OnDamageB);
+      }
+      TempUnit = null;
+    }
+
+    private static void StopChannel( ){
+      ConsecrationsByUnit[GetUnitId(GetTriggerUnit())].end();
+    }
+
+    private static void StartChannel( ){
+      unit u = GetTriggerUnit();
+      int i = 0;
+      boolean b = false;
+
+      ConsecrationsByUnit[GetUnitId(u)] = Consecration.create(u, GetUnitX(u), GetUnitY(u), CONSECRATION_DAMAGE_BASE+GetUnitAbilityLevel(u, ABIL_ID)*CONSECRATION_DAMAGE_LEVEL, CONSECRATION_RADIUS, DURATION);
+    }
+
+    private static void OnInit( ){
+      RegisterSpellChannelAction(ABIL_ID,  StartChannel);
+      RegisterSpellEndcastAction(ABIL_ID,  StopChannel);
+      PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_DAMAGED,  OnDamage);
+    }
+
   }
-
-  private static void StopChannel( ){
-    ConsecrationsByUnit[GetUnitId(GetTriggerUnit())].end();
-  }
-
-  private static void StartChannel( ){
-    unit u = GetTriggerUnit();
-    int i = 0;
-    boolean b = false;
-
-    ConsecrationsByUnit[GetUnitId(u)] = Consecration.create(u, GetUnitX(u), GetUnitY(u), CONSECRATION_DAMAGE_BASE+GetUnitAbilityLevel(u, ABIL_ID)*CONSECRATION_DAMAGE_LEVEL, CONSECRATION_RADIUS, DURATION);
-  }
-
-  private static void OnInit( ){
-    RegisterSpellChannelAction(ABIL_ID,  StartChannel);
-    RegisterSpellEndcastAction(ABIL_ID,  StopChannel);
-    PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_DAMAGED,  OnDamage);
-  }
-
 }

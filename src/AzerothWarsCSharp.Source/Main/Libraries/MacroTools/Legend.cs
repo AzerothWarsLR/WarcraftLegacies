@@ -2,7 +2,9 @@
 //A Legend might have other units it relies on to survive. If so, when it dies, it gets removed if those units are not under control.
 //There is a dummy ability to represent this.
 
-public class Legend{
+namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
+{
+  public class Legend{
 
   
     private const int DUMMY_DIESWITHOUT = FourCC(LEgn);
@@ -453,7 +455,7 @@ public class Legend{
       OnLegendPrePermaDeath = Event.create();
     }
 
-     thistype ( ){
+    thistype ( ){
 
       unit = null;
       this.deathSfx = "Abilities\\Spells\\Demon\\DarkPortal\\DarkPortalTarget.mdl";
@@ -463,18 +465,19 @@ public class Legend{
     }
 
 
-  static player GetLegendPreviousOwner( ){
-    return LegendPreviousOwner;
-  }
+    static player GetLegendPreviousOwner( ){
+      return LegendPreviousOwner;
+    }
 
-  //This is unbelievably stupid but it is also the only way I can see to support recursion of event parameters
-  //This needs to be set at the end of functions which both respond to Legend events AND may modify TriggerLegend through their actions
-  static void SetTriggerLegend(Legend value ){
-    TriggerLegend = value;
-  }
+    //This is unbelievably stupid but it is also the only way I can see to support recursion of event parameters
+    //This needs to be set at the end of functions which both respond to Legend events AND may modify TriggerLegend through their actions
+    static void SetTriggerLegend(Legend value ){
+      TriggerLegend = value;
+    }
 
-  static Legend GetTriggerLegend( ){
-    return TriggerLegend;
-  }
+    static Legend GetTriggerLegend( ){
+      return TriggerLegend;
+    }
 
+  }
 }

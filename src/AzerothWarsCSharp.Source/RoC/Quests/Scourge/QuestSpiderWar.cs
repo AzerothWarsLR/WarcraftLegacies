@@ -1,4 +1,9 @@
-public class QuestSpiderWar{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
+{
+  public class QuestSpiderWar{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R03A);
@@ -42,4 +47,5 @@ public class QuestSpiderWar{
     }
 
 
+  }
 }

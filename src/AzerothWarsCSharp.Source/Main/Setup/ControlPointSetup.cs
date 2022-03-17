@@ -1,4 +1,8 @@
-public class ControlPointSetup{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
+namespace AzerothWarsCSharp.Source.Main.Setup
+{
+  public class ControlPointSetup{
 
   
     private const int    CP_BUFF_A = FourCC(B025);
@@ -19,38 +23,39 @@ public class ControlPointSetup{
     private float[] cpValues[6];
   
 
-  private static void InitializeCP( ){
-    unit u = GetEnumUnit();
-    int i = 0;
-    while(true){
-    if ( i > 5){ break; }
-      if (GetUnitAbilityLevel(GetEnumUnit(), cpBuffs[i]) > 0){
-        ControlPoint.create(GetEnumUnit(), cpValues[i]);
+    private static void InitializeCP( ){
+      unit u = GetEnumUnit();
+      int i = 0;
+      while(true){
+        if ( i > 5){ break; }
+        if (GetUnitAbilityLevel(GetEnumUnit(), cpBuffs[i]) > 0){
+          ControlPoint.create(GetEnumUnit(), cpValues[i]);
+        }
+        i = i + 1;
       }
-    i = i + 1;
     }
+
+    public static void OnInit( ){
+      group g;
+
+      cpBuffs[0] = CP_BUFF_A;
+      cpBuffs[1] = CP_BUFF_B;
+      cpBuffs[2] = CP_BUFF_C;
+      cpBuffs[3] = CP_BUFF_D;
+      cpBuffs[4] = CP_BUFF_E;
+      cpBuffs[5] = CP_BUFF_F;
+
+      cpValues[0] = CP_VALUE_A;
+      cpValues[1] = CP_VALUE_B;
+      cpValues[2] = CP_VALUE_C;
+      cpValues[3] = CP_VALUE_D;
+      cpValues[4] = CP_VALUE_E;
+      cpValues[5] = CP_VALUE_F;
+
+      g = CreateGroup();
+      GroupEnumUnitsInRect(g, bj_mapInitialPlayableArea, null);
+      ForGroup(g,  InitializeCP);
+    }
+
   }
-
-  public static void OnInit( ){
-    group g;
-
-    cpBuffs[0] = CP_BUFF_A;
-    cpBuffs[1] = CP_BUFF_B;
-    cpBuffs[2] = CP_BUFF_C;
-    cpBuffs[3] = CP_BUFF_D;
-    cpBuffs[4] = CP_BUFF_E;
-    cpBuffs[5] = CP_BUFF_F;
-
-    cpValues[0] = CP_VALUE_A;
-    cpValues[1] = CP_VALUE_B;
-    cpValues[2] = CP_VALUE_C;
-    cpValues[3] = CP_VALUE_D;
-    cpValues[4] = CP_VALUE_E;
-    cpValues[5] = CP_VALUE_F;
-
-    g = CreateGroup();
-    GroupEnumUnitsInRect(g, bj_mapInitialPlayableArea, null);
-    ForGroup(g,  InitializeCP);
-  }
-
 }

@@ -1,4 +1,9 @@
-public class QuestAstranaar{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Sentinels
+{
+  public class QuestAstranaar{
 
 
     private string operator CompletionPopup( ){
@@ -33,4 +38,5 @@ public class QuestAstranaar{
     }
 
 
+  }
 }

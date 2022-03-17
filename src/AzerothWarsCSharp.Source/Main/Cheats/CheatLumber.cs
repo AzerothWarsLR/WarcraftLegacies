@@ -1,9 +1,11 @@
 
-public class CheatLumber{
+namespace AzerothWarsCSharp.Source.Main.Cheats
+{
+  public class CheatLumber{
 
     //**CONFIG
     
-        private const string COMMAND     = "-lumber ";
+    private const string COMMAND     = "-lumber ";
     
     //*ENDCONFIG
 
@@ -23,7 +25,7 @@ public class CheatLumber{
       int i = 0;
 
       while(true){
-      if ( i > MAX_PLAYERS){ break; }
+        if ( i > MAX_PLAYERS){ break; }
         TriggerRegisterPlayerChatEvent( trig, Player(i), COMMAND, false );
         i = i + 1;
       }
@@ -31,4 +33,5 @@ public class CheatLumber{
       TriggerAddAction( trig,  Actions );
     }
 
+  }
 }

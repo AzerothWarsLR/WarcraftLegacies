@@ -1,4 +1,9 @@
-public class QuestTriumvirate{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Draenei
+{
+  public class QuestTriumvirate{
 
 
     private boolean operator Global( ){
@@ -28,4 +33,5 @@ public class QuestTriumvirate{
     }
 
 
+  }
 }

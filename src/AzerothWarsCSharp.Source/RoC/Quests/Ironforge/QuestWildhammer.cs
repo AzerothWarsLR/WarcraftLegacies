@@ -1,4 +1,8 @@
-public class QuestWildhammer{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Ironforge
+{
+  public class QuestWildhammer{
 
   
     private const int HERO_ID = FourCC(H028);
@@ -52,4 +56,5 @@ public class QuestWildhammer{
     }
 
 
+  }
 }

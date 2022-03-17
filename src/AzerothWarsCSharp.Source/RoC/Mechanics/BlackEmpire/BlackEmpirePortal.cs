@@ -1,4 +1,8 @@
-public class BlackEmpirePortal{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
+namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
+{
+  public class BlackEmpirePortal{
 
   
     const int BLACKEMPIREPORTALSTATE_CLOSED = 0;
@@ -89,20 +93,21 @@ public class BlackEmpirePortal{
 
 
 
-      this.interiorWaygate = interiorWaygate;
-      this.interiorDestinationX = interiorDestinationX;
-      this.interiorDestinationY = interiorDestinationY;
-      this.exteriorWaygate = exteriorWaygate;
-      this.interiorPortal = interiorPortal;
-      this.name = name;
-      this.SetupWaygateDestinations();
-      thistype.byIndex[thistype.count] = this;
-      thistype.count = thistype.count + 1;
+    this.interiorWaygate = interiorWaygate;
+    this.interiorDestinationX = interiorDestinationX;
+    this.interiorDestinationY = interiorDestinationY;
+    this.exteriorWaygate = exteriorWaygate;
+    this.interiorPortal = interiorPortal;
+    this.name = name;
+    this.SetupWaygateDestinations();
+    thistype.byIndex[thistype.count] = this;
+    thistype.count = thistype.count + 1;
 
-      FogModifierStart(CreateFogModifierRadius(Player(14), FOG_OF_WAR_VISIBLE, GetUnitX(exteriorWaygate), GetUnitY(exteriorWaygate), 700, true, true));
+    FogModifierStart(CreateFogModifierRadius(Player(14), FOG_OF_WAR_VISIBLE, GetUnitX(exteriorWaygate), GetUnitY(exteriorWaygate), 700, true, true));
       this.PortalState = BLACKEMPIREPORTALSTATE_CLOSED;
-      ;;
-    }
+    ;;
+  }
+}
 
 
 }

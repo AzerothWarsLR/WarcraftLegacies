@@ -1,4 +1,9 @@
-public class QuestKingdomOfManLordaeron{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
+{
+  public class QuestKingdomOfManLordaeron{
 
   
     private const int RESEARCH_ID = FourCC(R01N);
@@ -51,4 +56,5 @@ public class QuestKingdomOfManLordaeron{
     }
 
 
+  }
 }

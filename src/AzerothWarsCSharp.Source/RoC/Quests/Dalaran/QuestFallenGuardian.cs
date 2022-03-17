@@ -1,4 +1,9 @@
-public class QuestFallenGuardian{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
+{
+  public class QuestFallenGuardian{
 
   
     private const int RESEARCH_ID = FourCC(R04K);
@@ -28,4 +33,5 @@ public class QuestFallenGuardian{
     }
 
 
+  }
 }

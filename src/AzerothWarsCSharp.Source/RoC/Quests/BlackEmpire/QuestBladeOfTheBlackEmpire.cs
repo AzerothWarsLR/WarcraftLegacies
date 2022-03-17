@@ -1,5 +1,9 @@
 
-public class QuestBladeOfTheBlackEmpire{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.BlackEmpire
+{
+  public class QuestBladeOfTheBlackEmpire{
 
 
     private string operator CompletionPopup( ){
@@ -24,4 +28,5 @@ public class QuestBladeOfTheBlackEmpire{
     }
 
 
+  }
 }

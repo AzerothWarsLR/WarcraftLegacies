@@ -1,4 +1,9 @@
-public class QuestKilsorrow{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
+{
+  public class QuestKilsorrow{
 
 
     private string operator CompletionPopup( ){
@@ -30,4 +35,5 @@ public class QuestKilsorrow{
     }
 
 
+  }
 }

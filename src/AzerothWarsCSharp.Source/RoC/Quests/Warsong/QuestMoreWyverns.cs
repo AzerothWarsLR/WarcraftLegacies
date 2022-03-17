@@ -1,4 +1,8 @@
-public class QuestMoreWyverns{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
+{
+  public class QuestMoreWyverns{
 
   
     private const int UNITTYPE_ID = FourCC(owyv);
@@ -27,4 +31,5 @@ public class QuestMoreWyverns{
     }
 
 
+  }
 }

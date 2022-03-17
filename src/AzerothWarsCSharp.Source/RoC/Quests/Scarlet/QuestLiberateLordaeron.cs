@@ -1,4 +1,9 @@
-public class QuestLiberateLordaeron{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Scarlet
+{
+  public class QuestLiberateLordaeron{
 
   
     private const int QUESTRESEARCH_ID = FourCC(R07P)   ;//This research is given when the quest is completed
@@ -59,4 +64,5 @@ public class QuestLiberateLordaeron{
     }
 
 
+  }
 }

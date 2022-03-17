@@ -1,4 +1,8 @@
-public class QuestTortolla{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Druids
+{
+  public class QuestTortolla{
 
   
     private const int HERO_ID = FourCC(H04U);
@@ -36,11 +40,12 @@ public class QuestTortolla{
     }
 
 
-  private static void OnInit( ){
-    QuestTortolla.sleepingTortolla = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), HERO_ID, -12827, 5729, 333);
-    SetUnitInvulnerable(QuestTortolla.sleepingTortolla, true);
-    AddSpecialEffectTarget("Abilities\\Spells\\Undead\\Sleep\\SleepTarget.mdl", QuestTortolla.sleepingTortolla, "overhead");
-    SetHeroXP(QuestTortolla.sleepingTortolla, LEGEND_TORTOLLA.StartingXP, false);
-  }
+    private static void OnInit( ){
+      QuestTortolla.sleepingTortolla = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), HERO_ID, -12827, 5729, 333);
+      SetUnitInvulnerable(QuestTortolla.sleepingTortolla, true);
+      AddSpecialEffectTarget("Abilities\\Spells\\Undead\\Sleep\\SleepTarget.mdl", QuestTortolla.sleepingTortolla, "overhead");
+      SetHeroXP(QuestTortolla.sleepingTortolla, LEGEND_TORTOLLA.StartingXP, false);
+    }
 
+  }
 }

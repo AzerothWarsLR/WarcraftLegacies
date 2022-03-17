@@ -1,6 +1,11 @@
 //If Quel)thalas destroys the Legion Nexus, they can train GARITHOS)thas and Blood Mages.
 //If they instead lose the Sunwell, they lose everything. If that doesn)t defeat them, they get GARITHOS)thalas, Lorthemar, and some free units at Dalaran Dungeons.
-public class QuestGarithosCrusade{
+
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
+{
+  public class QuestGarithosCrusade{
 
 
 
@@ -53,4 +58,5 @@ public class QuestGarithosCrusade{
     }
 
 
+  }
 }

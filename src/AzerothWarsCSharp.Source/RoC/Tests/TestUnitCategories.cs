@@ -1,4 +1,8 @@
-public class TestUnitCategories{
+using AzerothWarsCSharp.Source.Main.Libraries;
+
+namespace AzerothWarsCSharp.Source.RoC.Tests
+{
+  public class TestUnitCategories{
 
 
     void Run( ){
@@ -26,4 +30,5 @@ public class TestUnitCategories{
     }
 
 
+  }
 }

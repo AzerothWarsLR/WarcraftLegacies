@@ -1,4 +1,9 @@
-public class QuestDunMorogh{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Ironforge
+{
+  public class QuestDunMorogh{
 
 
     private string operator CompletionPopup( ){
@@ -17,7 +22,7 @@ public class QuestDunMorogh{
       GroupEnumUnitsInRect(tempGroup, gg_rct_DunmoroghAmbient2, null);
       u = FirstOfGroup(tempGroup);
       while(true){
-      if ( u == null){ break; }
+        if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
           UnitRescue(u, whichPlayer);
         }
@@ -47,4 +52,5 @@ public class QuestDunMorogh{
     }
 
 
+  }
 }

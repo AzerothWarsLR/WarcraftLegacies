@@ -1,4 +1,8 @@
-public class QuestCorruptArthas{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
+{
+  public class QuestCorruptArthas{
 
   
     private const int HERO_ID = FourCC(Uear);
@@ -39,4 +43,5 @@ public class QuestCorruptArthas{
     }
 
 
+  }
 }

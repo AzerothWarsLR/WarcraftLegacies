@@ -1,4 +1,8 @@
-public class TeamSetup{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
+namespace AzerothWarsCSharp.Source.RoC.Setup
+{
+  public class TeamSetup{
 
   
     Team TEAM_LEGION
@@ -13,39 +17,40 @@ public class TeamSetup{
     Team TEAM_SCOURGE
   
 
-  public static void OnInit( ){
-    //Starting teams
-    Team t = 0;
+    public static void OnInit( ){
+      //Starting teams
+      Team t = 0;
 
-    TEAM_ALLIANCE = Team.create("Alliance");
-    TEAM_ALLIANCE.VictoryMusic = "HeroicVictory";
+      TEAM_ALLIANCE = Team.create("Alliance");
+      TEAM_ALLIANCE.VictoryMusic = "HeroicVictory";
 
-    TEAM_LEGION = Team.create("Burning Legion");
-    TEAM_LEGION.VictoryMusic = "DarkVictory";
+      TEAM_LEGION = Team.create("Burning Legion");
+      TEAM_LEGION.VictoryMusic = "DarkVictory";
 
-    TEAM_HORDE = Team.create("Horde");
-    TEAM_HORDE.VictoryMusic = "DarkVictory";
+      TEAM_HORDE = Team.create("Horde");
+      TEAM_HORDE.VictoryMusic = "DarkVictory";
 
-    TEAM_NIGHT_ELVES = Team.create("Night Elves");
-    TEAM_NIGHT_ELVES.VictoryMusic = "HeroicVictory";
+      TEAM_NIGHT_ELVES = Team.create("Night Elves");
+      TEAM_NIGHT_ELVES.VictoryMusic = "HeroicVictory";
 
-    TEAM_OLDGOD = Team.create("Old Gods");
-    TEAM_OLDGOD.VictoryMusic = "DarkVictory";
+      TEAM_OLDGOD = Team.create("Old Gods");
+      TEAM_OLDGOD.VictoryMusic = "DarkVictory";
 
-    TEAM_NAGA = Team.create("Illidari");
-    TEAM_NAGA.VictoryMusic = "DarkVictory";
+      TEAM_NAGA = Team.create("Illidari");
+      TEAM_NAGA.VictoryMusic = "DarkVictory";
 
-    TEAM_GILNEAS = Team.create("Gilneas");
-    TEAM_GILNEAS.VictoryMusic = "HeroicVictory";
+      TEAM_GILNEAS = Team.create("Gilneas");
+      TEAM_GILNEAS.VictoryMusic = "HeroicVictory";
 
-    TEAM_SCARLET = Team.create("Scarlet Crusade");
-    TEAM_SCARLET.VictoryMusic = "DarkVictory";
+      TEAM_SCARLET = Team.create("Scarlet Crusade");
+      TEAM_SCARLET.VictoryMusic = "DarkVictory";
 
-    TEAM_FORSAKEN = Team.create("Forsaken");
-    TEAM_FORSAKEN.VictoryMusic = "DarkVictory";
+      TEAM_FORSAKEN = Team.create("Forsaken");
+      TEAM_FORSAKEN.VictoryMusic = "DarkVictory";
 
-    TEAM_SCOURGE = Team.create("Northrend");
-    TEAM_SCOURGE.VictoryMusic = "DarkVictory";
+      TEAM_SCOURGE = Team.create("Northrend");
+      TEAM_SCOURGE.VictoryMusic = "DarkVictory";
+    }
+
   }
-
 }

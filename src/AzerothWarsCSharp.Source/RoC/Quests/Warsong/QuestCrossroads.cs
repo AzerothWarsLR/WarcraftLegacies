@@ -1,6 +1,11 @@
 //If any Horde unit enters the Crossroads area, OR a time elapses, OR someone becomes a solo Horde Path, give the Crossroads to a Horde player.
 
-public class QuestCrossroads{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
+{
+  public class QuestCrossroads{
 
 
 
@@ -18,7 +23,7 @@ public class QuestCrossroads{
       //Transfer all Neutral Passive units in Crossroads to one of the above factions
       u = FirstOfGroup(udg_Crossroad);
       while(true){
-      if ( u == null){ break; }
+        if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
           UnitRescue(u, whichPlayer);
         }
@@ -36,7 +41,7 @@ public class QuestCrossroads{
     }
 
     private void OnFail( ){
-        this.GiveCrossroads(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      this.GiveCrossroads(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnComplete( ){
@@ -53,4 +58,5 @@ public class QuestCrossroads{
     }
 
 
+  }
 }

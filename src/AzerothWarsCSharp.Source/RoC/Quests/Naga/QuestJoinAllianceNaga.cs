@@ -1,4 +1,8 @@
-public class QuestJoinAllianceNaga{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
+{
+  public class QuestJoinAllianceNaga{
 
 
 
@@ -24,4 +28,5 @@ public class QuestJoinAllianceNaga{
     }
 
 
+  }
 }

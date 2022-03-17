@@ -1,4 +1,8 @@
-public class QuestSurvivorsShattrah{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Draenei
+{
+  public class QuestSurvivorsShattrah{
 
   
     private const int QUESTRESEARCH_ID = FourCC(R082)   ;//This research is given when the quest is completed
@@ -24,4 +28,5 @@ public class QuestSurvivorsShattrah{
     }
 
 
+  }
 }

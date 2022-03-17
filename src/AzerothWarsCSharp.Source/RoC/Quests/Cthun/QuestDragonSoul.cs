@@ -1,4 +1,8 @@
-public class QuestDragonSoul{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Cthun
+{
+  public class QuestDragonSoul{
 
 
     private string operator CompletionPopup( ){
@@ -20,4 +24,5 @@ public class QuestDragonSoul{
     }
 
 
+  }
 }

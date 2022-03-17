@@ -1,4 +1,8 @@
-public class QuestWarMachine{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
+{
+  public class QuestWarMachine{
 
 
     private string operator CompletionPopup( ){
@@ -38,4 +42,5 @@ public class QuestWarMachine{
     }
 
 
+  }
 }

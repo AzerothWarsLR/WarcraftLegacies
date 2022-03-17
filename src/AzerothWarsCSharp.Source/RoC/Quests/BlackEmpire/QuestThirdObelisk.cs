@@ -1,4 +1,10 @@
-public class QuestThirdObelisk{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.BlackEmpire
+{
+  public class QuestThirdObelisk{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R07K)   ;//This research is given when the quest is completed
@@ -54,4 +60,5 @@ public class QuestThirdObelisk{
     }
 
 
+  }
 }

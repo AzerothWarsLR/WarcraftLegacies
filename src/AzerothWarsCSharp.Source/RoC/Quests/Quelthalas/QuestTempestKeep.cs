@@ -1,4 +1,8 @@
-public class QuestTempestKeep{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
+{
+  public class QuestTempestKeep{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R073)   ;//This research is given when the quest is completed
@@ -51,8 +55,8 @@ public class QuestTempestKeep{
       this.Holder.Name = "Blood Elves";
       this.Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNBloodMage2blp";
       if (GetLocalPlayer() == this.Holder.Player){
-          SetCameraPosition(GetRectCenterX(gg_rct_TempestKeepSpawn), GetRectCenterY(gg_rct_TempestKeepSpawn));
-        }
+        SetCameraPosition(GetRectCenterX(gg_rct_TempestKeepSpawn), GetRectCenterY(gg_rct_TempestKeepSpawn));
+      }
     }
 
     public  thistype ( ){
@@ -64,4 +68,5 @@ public class QuestTempestKeep{
     }
 
 
+  }
 }

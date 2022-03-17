@@ -1,5 +1,11 @@
 //Illidan Goes to Aetheneum, Finds Immoltar and kills him
-public class QuestIllidanChapterOne{
+
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
+{
+  public class QuestIllidanChapterOne{
 
 
 
@@ -14,7 +20,7 @@ public class QuestIllidanChapterOne{
     }
 
     private void OnComplete( ){
-    questToDiscover.Progress = QUEST_PROGRESS_INCOMPLETE;
+      questToDiscover.Progress = QUEST_PROGRESS_INCOMPLETE;
     }
 
     public  thistype (QuestData questToDiscover ){
@@ -28,4 +34,5 @@ public class QuestIllidanChapterOne{
     }
 
 
+  }
 }

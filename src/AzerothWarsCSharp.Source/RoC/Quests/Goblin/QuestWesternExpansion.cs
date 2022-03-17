@@ -1,4 +1,8 @@
-public class QuestWesternExpansion{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Goblin
+{
+  public class QuestWesternExpansion{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R07Y);
@@ -22,4 +26,5 @@ public class QuestWesternExpansion{
     }
 
 
+  }
 }

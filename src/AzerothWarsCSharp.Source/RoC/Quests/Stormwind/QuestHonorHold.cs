@@ -1,6 +1,11 @@
 //When Hellfire Citadel is destroyed, give Honor Hold to Stormwind if they are in the game, and modify doodads for visuals.
 //If Stormwind is not in the game, do nothing.
-public class QuestHonorHold{
+
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
+{
+  public class QuestHonorHold{
 
 
     private string operator CompletionPopup( ){
@@ -36,4 +41,5 @@ public class QuestHonorHold{
     }
 
 
+  }
 }

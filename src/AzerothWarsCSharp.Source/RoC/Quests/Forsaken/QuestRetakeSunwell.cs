@@ -1,4 +1,8 @@
-public class QuestRetakeSunwell{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Forsaken
+{
+  public class QuestRetakeSunwell{
 
 
     private string operator CompletionPopup( ){
@@ -21,4 +25,5 @@ public class QuestRetakeSunwell{
     }
 
 
+  }
 }

@@ -1,4 +1,8 @@
-public class QuestCataclysm{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Twilight
+{
+  public class QuestCataclysm{
 
   
     private const int CATACLYSM_RESEARCH = FourCC(R05E);
@@ -36,4 +40,5 @@ public class QuestCataclysm{
     }
 
 
+  }
 }

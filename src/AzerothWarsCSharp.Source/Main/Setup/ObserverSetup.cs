@@ -1,6 +1,9 @@
-public class ObserverSetup{
+namespace AzerothWarsCSharp.Source.Main.Setup
+{
+  public class ObserverSetup{
 
-  public static void OnInit( ){
+    public static void OnInit( ){
+    }
+
   }
-
 }

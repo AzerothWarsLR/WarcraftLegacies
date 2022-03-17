@@ -1,10 +1,12 @@
-public class QuestItemAnyUnitInRect{
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemAnyUnitInRect{
 
-  private static region RectToRegion(rect whichRect ){
-    region rectRegion = CreateRegion();
-    RegionAddRect(rectRegion, whichRect);
-    return rectRegion;
-  }
+    private static region RectToRegion(rect whichRect ){
+      region rectRegion = CreateRegion();
+      RegionAddRect(rectRegion, whichRect);
+      return rectRegion;
+    }
 
 
     private region target;
@@ -89,7 +91,7 @@ public class QuestItemAnyUnitInRect{
       }
     }
 
-     thistype (rect targetRect, string rectName, boolean heroOnly ){
+    thistype (rect targetRect, string rectName, boolean heroOnly ){
 
       trigger trig = CreateTrigger();
       if (heroOnly){
@@ -114,4 +116,5 @@ public class QuestItemAnyUnitInRect{
 
 
 
+  }
 }

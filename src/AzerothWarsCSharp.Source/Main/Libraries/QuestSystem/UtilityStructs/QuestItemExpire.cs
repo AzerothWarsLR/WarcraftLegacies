@@ -1,4 +1,6 @@
-public class QuestItemExpire{
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemExpire{
 
 
     private timer timer;
@@ -22,7 +24,7 @@ public class QuestItemExpire{
       }
     }
 
-     thistype (int duration ){
+    thistype (int duration ){
 
       this.Description = " Complete this quest before " + I2S(duration) + " seconds have elapsed";
       this.timer = CreateTimer();
@@ -38,4 +40,5 @@ public class QuestItemExpire{
     }
 
 
+  }
 }

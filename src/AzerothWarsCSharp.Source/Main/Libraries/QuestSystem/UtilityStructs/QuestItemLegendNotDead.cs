@@ -1,4 +1,8 @@
-public class QuestItemLegendNotDead{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemLegendNotDead{
 
 
     private Legend target = 0;
@@ -57,7 +61,7 @@ public class QuestItemLegendNotDead{
       }
     }
 
-     thistype (Legend target ){
+    thistype (Legend target ){
 
       this.target = target;
       if (IsUnitType(target.Unit, UNIT_TYPE_STRUCTURE)){
@@ -79,4 +83,5 @@ public class QuestItemLegendNotDead{
     }
 
 
+  }
 }

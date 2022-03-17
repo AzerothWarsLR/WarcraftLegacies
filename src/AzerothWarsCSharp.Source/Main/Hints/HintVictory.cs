@@ -1,7 +1,12 @@
-public class HintVictory{
+using AzerothWarsCSharp.Source.Main.Libraries;
 
-  private static void OnInit( ){
-    Hint.create("Win the game by capturing " + I2S(GetControlPointsRequiredVictory()) + " Control Points.");
+namespace AzerothWarsCSharp.Source.Main.Hints
+{
+  public class HintVictory{
+
+    private static void OnInit( ){
+      Hint.create("Win the game by capturing " + I2S(GetControlPointsRequiredVictory()) + " Control Points.");
+    }
+
   }
-
 }

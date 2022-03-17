@@ -1,4 +1,8 @@
-public class QuestSentinelsKillWarsong{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Sentinels
+{
+  public class QuestSentinelsKillWarsong{
 
   
     private const int RESEARCH_ID = FourCC(R007);
@@ -28,4 +32,5 @@ public class QuestSentinelsKillWarsong{
     }
 
 
+  }
 }

@@ -1,4 +1,8 @@
-public class QuestMonastery{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Scarlet
+{
+  public class QuestMonastery{
 
   
     private const int RESEARCH_ID = FourCC(R03P)         ;//This research is required to complete the quest
@@ -50,4 +54,5 @@ public class QuestMonastery{
     }
 
 
+  }
 }

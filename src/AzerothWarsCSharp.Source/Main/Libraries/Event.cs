@@ -33,25 +33,27 @@
 //         - Azlier for inspiring this by ripping off my dodgier code.
 //
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-public class Event{
-    ///////////////
-    // EventRegs //
-    ////////////////////////////////////////////////////////////////////////////
-    // For reading this far, you can learn one thing more.
-    // Unlike normal Warcraft III events, you can attach to Event registries.
-    //
-    // Event Registries are registrations of one trigger on one event.
-    // These cannot be created or destroyed, just attached to.
-    //
-    // It is VERY efficient for loading and saving data.
-    //
-    //  Functions:
-    //         - set eventReg.data = someStruct --> Store data.
-    //         - eventReg.data                  --> Retreive data.
-    //         - Event.getTriggeringEventReg()  --> Get the triggering EventReg.
-    //         - eventReg.destroy()             --> Undo this registration.
-    //
-    private keyword destroyNode;
+namespace AzerothWarsCSharp.Source.Main.Libraries
+{
+    public class Event{
+        ///////////////
+        // EventRegs //
+        ////////////////////////////////////////////////////////////////////////////
+        // For reading this far, you can learn one thing more.
+        // Unlike normal Warcraft III events, you can attach to Event registries.
+        //
+        // Event Registries are registrations of one trigger on one event.
+        // These cannot be created or destroyed, just attached to.
+        //
+        // It is VERY efficient for loading and saving data.
+        //
+        //  Functions:
+        //         - set eventReg.data = someStruct --> Store data.
+        //         - eventReg.data                  --> Retreive data.
+        //         - Event.getTriggeringEventReg()  --> Get the triggering EventReg.
+        //         - eventReg.destroy()             --> Undo this registration.
+        //
+        private keyword destroyNode;
 
         int data
         void clear( ){
@@ -62,7 +64,7 @@ public class Event{
         }
 
 
-    private module Stack;
+        private module Stack;
         static thistype top=0
         static void increment( ){
             thistype.top=thistype(thistype.top+1)
@@ -70,11 +72,11 @@ public class Event{
         static void decrement( ){
             thistype.top=thistype(thistype.top-1)
         }
-    endmodule
+        endmodule
 
 
 
-        Event current
+            Event current
 
 
 
@@ -86,11 +88,11 @@ public class Event{
             return EventStack.top.current;
         }
 
-         Event ( ){
+        Event ( ){
 
             this.next=this
             this.prev=this
-            ;;
+                ;;
         }
 
         private static trigger currentTrigger;
@@ -131,7 +133,7 @@ public class Event{
             EventReg(new).clear();
             return new;
         }
-         destroyNode( ){// called on EventReg
+        destroyNode( ){// called on EventReg
             this.prev.next=this.next
             this.next.prev=this.prev
             this.deallocate();
@@ -163,32 +165,33 @@ public class Event{
         }
 
 
-    /////////////////////////////////////////////////////
-    // Demonstration Functions & Alternative Interface //
-    ////////////////////////////////////////////////////////////////////////////
-    // What this would look like in normal WC3 style JASS (should all inline).
-    //
-    static Event CreateEvent( ){
-        return Event.create();
-    }
-    static void DestroyEvent(Event whichEvent ){
-        whichEvent.chainDestroy();
-    }
-    static void FireEvent(Event whichEvent ){
-        whichEvent.fire();
-    }
-    static EventReg TriggerRegisterEvent(trigger whichTrigger, Event whichEvent ){
-        return whichEvent.register(whichTrigger);
-    }
+        /////////////////////////////////////////////////////
+        // Demonstration Functions & Alternative Interface //
+        ////////////////////////////////////////////////////////////////////////////
+        // What this would look like in normal WC3 style JASS (should all inline).
+        //
+        static Event CreateEvent( ){
+            return Event.create();
+        }
+        static void DestroyEvent(Event whichEvent ){
+            whichEvent.chainDestroy();
+        }
+        static void FireEvent(Event whichEvent ){
+            whichEvent.fire();
+        }
+        static EventReg TriggerRegisterEvent(trigger whichTrigger, Event whichEvent ){
+            return whichEvent.register(whichTrigger);
+        }
 
-    // And for EventRegs...
-    static void SetEventRegData(EventReg whichEventReg, int data ){
-        whichEventReg.data=data
-    }
-    static integer GetEventRegData(EventReg whichEventReg ){
-        return whichEventReg.data;
-    }
-    static integer GetTriggeringEventReg( ){
-        return Event.getTriggeringEventReg();
+        // And for EventRegs...
+        static void SetEventRegData(EventReg whichEventReg, int data ){
+            whichEventReg.data=data
+        }
+        static integer GetEventRegData(EventReg whichEventReg ){
+            return whichEventReg.data;
+        }
+        static integer GetTriggeringEventReg( ){
+            return Event.getTriggeringEventReg();
+        }
     }
 }

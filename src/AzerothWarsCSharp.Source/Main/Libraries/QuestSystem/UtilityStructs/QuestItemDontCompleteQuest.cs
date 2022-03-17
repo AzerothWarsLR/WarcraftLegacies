@@ -1,4 +1,6 @@
-public class QuestItemDontCompleteQuest{
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemDontCompleteQuest{
 
 
     private QuestData target = 0;
@@ -28,7 +30,7 @@ public class QuestItemDontCompleteQuest{
       }
     }
 
-     thistype (QuestData target ){
+    thistype (QuestData target ){
 
 
       if (target == 0){
@@ -44,10 +46,11 @@ public class QuestItemDontCompleteQuest{
 
 
 
-  private static void OnInit( ){
-    trigger trig = CreateTrigger();
-    QuestProgressChanged.register(trig);
-    TriggerAddAction(trig,  QuestItemDontCompleteQuest.OnAnyQuestProgressChanged);
-  }
+    private static void OnInit( ){
+      trigger trig = CreateTrigger();
+      QuestProgressChanged.register(trig);
+      TriggerAddAction(trig,  QuestItemDontCompleteQuest.OnAnyQuestProgressChanged);
+    }
 
+  }
 }

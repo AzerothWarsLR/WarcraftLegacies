@@ -1,4 +1,9 @@
-public class QuestThunderEagle{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
+{
+  public class QuestThunderEagle{
 
   
     private const int RESEARCH_ID = FourCC(R04L);
@@ -27,4 +32,5 @@ public class QuestThunderEagle{
     }
 
 
+  }
 }

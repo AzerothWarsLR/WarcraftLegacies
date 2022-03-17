@@ -1,4 +1,9 @@
-public class QuestArathiVolunteers{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Scarlet
+{
+  public class QuestArathiVolunteers{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R089);
@@ -24,4 +29,5 @@ public class QuestArathiVolunteers{
     }
 
 
+  }
 }

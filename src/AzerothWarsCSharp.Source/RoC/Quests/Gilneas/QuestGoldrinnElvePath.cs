@@ -1,4 +1,8 @@
-public class QuestGoldrinnElvePath{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Gilneas
+{
+  public class QuestGoldrinnElvePath{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R07U)   ;//This research is given when the quest is completed
@@ -27,4 +31,5 @@ public class QuestGoldrinnElvePath{
     }
 
 
+  }
 }

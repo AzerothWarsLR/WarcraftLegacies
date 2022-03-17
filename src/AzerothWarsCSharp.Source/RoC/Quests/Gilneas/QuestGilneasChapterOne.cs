@@ -1,5 +1,10 @@
 //Reach Gilneas City
-public class QuestGilneasChapterOne{
+
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Gilneas
+{
+  public class QuestGilneasChapterOne{
 
 
 
@@ -22,4 +27,5 @@ public class QuestGilneasChapterOne{
     }
 
 
+  }
 }

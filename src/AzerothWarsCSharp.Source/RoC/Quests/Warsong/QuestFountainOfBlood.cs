@@ -1,4 +1,8 @@
-public class QuestFountainOfBlood{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
+{
+  public class QuestFountainOfBlood{
 
   
     private const int RESEARCH_ID = FourCC(R00X);
@@ -28,4 +32,5 @@ public class QuestFountainOfBlood{
     }
 
 
+  }
 }

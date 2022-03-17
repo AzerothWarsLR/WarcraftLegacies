@@ -134,34 +134,37 @@
 //          - To use this like PUI (if you don)t like spamming indices) simply
 //            make the AIDS filter return false, and use GetUnitIndex.
 //
-public class AIDS{
-    //==============================================================================
-    // Configurables
-    //
+
+namespace AzerothWarsCSharp.Source.Main.Libraries
+{
+    public class AIDS{
+        //==============================================================================
+        // Configurables
+        //
     
         private const boolean USE_PERIODIC_RECYCLER = false;
         private const float PERIOD = 003125 ;// Recycles 32 units/second max.
-                                               // Lower to be able to recycle faster.
-                                               // Only used if USE_PERIODIC_RECYCLER
-                                               // is set to true.
+        // Lower to be able to recycle faster.
+        // Only used if USE_PERIODIC_RECYCLER
+        // is set to true.
 
         private const int LEAVE_DETECTION_ABILITY = FourCC(A0WI);
     
 
-    private static boolean UnitIndexingFilter(unit u ){
-        return true;
-    }
+        private static boolean UnitIndexingFilter(unit u ){
+            return true;
+        }
 
-    //==============================================================================
-    // System code
-    //
+        //==============================================================================
+        // System code
+        //
     
         // The unit stored at an index.
         private unit[] IndexUnit;
         private int[] LockLevel;
     
 
-    //==============================================================================
+        //==============================================================================
     
         // Recycle stack
         private int[] RecycledIndex;
@@ -171,7 +174,7 @@ public class AIDS{
         private int MaxIndex = 0;
     
 
-    //==============================================================================
+        //==============================================================================
     
         private int[] DecayingIndex;
         private int MaxDecayingIndex=0;
@@ -188,7 +191,7 @@ public class AIDS{
         private int UndefendExpiringIndexLevel=0;
     
 
-    //==============================================================================
+        //==============================================================================
     
         // The Add/Remove stack (or assign/recycle stack).
         //
@@ -203,49 +206,49 @@ public class AIDS{
         // used for deallocation. The alternative used works fine...
     
 
-    public const static unit GetEnteringIndexUnit( ){
-        return ARStackUnit[ARStackLevel];
-    }
+        public const static unit GetEnteringIndexUnit( ){
+            return ARStackUnit[ARStackLevel];
+        }
 
-    public static integer GetIndexOfEnteringUnit( ){
+        public static integer GetIndexOfEnteringUnit( ){
 
 
-        if (ARStackIndex[ARStackLevel]==0){
-            // Get new index, from recycler first, else new.
-            // Store the current index on the (new) top level of the AR stack.
-            if (MaxRecycledIndex==0){ // Get new.
-                MaxIndex=MaxIndex+1
-                ARStackIndex[ARStackLevel]=MaxIndex
-            }else { // Get from recycle stack.
-                ARStackIndex[ARStackLevel]=RecycledIndex[MaxRecycledIndex]
-                MaxRecycledIndex=MaxRecycledIndex-1
+            if (ARStackIndex[ARStackLevel]==0){
+                // Get new index, from recycler first, else new.
+                // Store the current index on the (new) top level of the AR stack.
+                if (MaxRecycledIndex==0){ // Get new.
+                    MaxIndex=MaxIndex+1
+                    ARStackIndex[ARStackLevel]=MaxIndex
+                }else { // Get from recycle stack.
+                    ARStackIndex[ARStackLevel]=RecycledIndex[MaxRecycledIndex]
+                    MaxRecycledIndex=MaxRecycledIndex-1
+                }
+
+                // Store index on unit.
+                SetUnitUserData(ARStackUnit[ARStackLevel],ARStackIndex[ARStackLevel]);
+                IndexUnit[ARStackIndex[ARStackLevel]]=ARStackUnit[ARStackLevel]
+
+                // Add index to recycle list.
+                MaxDecayingIndex=MaxDecayingIndex+1
+                DecayingIndex[MaxDecayingIndex]=ARStackIndex[ARStackLevel]
             }
 
-            // Store index on unit.
-            SetUnitUserData(ARStackUnit[ARStackLevel],ARStackIndex[ARStackLevel]);
-            IndexUnit[ARStackIndex[ARStackLevel]]=ARStackUnit[ARStackLevel]
-
-            // Add index to recycle list.
-            MaxDecayingIndex=MaxDecayingIndex+1
-            DecayingIndex[MaxDecayingIndex]=ARStackIndex[ARStackLevel]
+            return ARStackIndex[ARStackLevel];
         }
 
-        return ARStackIndex[ARStackLevel];
-    }
+        public const static integer GetIndexOfEnteringUnitAllocated( ){
 
-    public const static integer GetIndexOfEnteringUnitAllocated( ){
-
-        return ARStackIndex[ARStackLevel];
-    }
-    public const static integer GetDecayingIndex( ){
-        static if (USE_PERIODIC_RECYCLER){
-            return DecayingIndex[DecayChecker];
-        }else {
-            return UndefendExpiringIndex[UndefendExpiringIndexLevel];
+            return ARStackIndex[ARStackLevel];
         }
-    }
+        public const static integer GetDecayingIndex( ){
+            static if (USE_PERIODIC_RECYCLER){
+                return DecayingIndex[DecayChecker];
+            }else {
+                return UndefendExpiringIndex[UndefendExpiringIndexLevel];
+            }
+        }
 
-    //==============================================================================
+        //==============================================================================
     
 
         private trigger OnEnter=CreateTrigger();
@@ -255,180 +258,180 @@ public class AIDS{
         private trigger OnDeallocate=CreateTrigger();
     
 
-    public static triggercondition RegisterOnEnter(boolexpr b ){
-        return TriggerAddCondition(OnEnter,b);
-    }
-    public static triggercondition RegisterOnEnterAllocated(boolexpr b ){
-        return TriggerAddCondition(OnEnterAllocated,b);
-    }
-    public static triggercondition RegisterOnDeallocate(boolexpr b ){
-        return TriggerAddCondition(OnDeallocate,b);
-    }
-
-    //==============================================================================
-    static unit GetIndexUnit(int index ){
-        debug if (index==0){
-        debug   BJDebugMsg("|cFFFF0000Error using AIDS:|r Trying to get the unit of index 0");
-        debug }else if (IndexUnit[index]==null){
-        debug   BJDebugMsg("|cFFFF0000Error using AIDS:|r Trying to get the unit of unassigned index.");
-        debug }
-
-        return IndexUnit[index];
-    }
-
-    static integer GetUnitId(unit u ){
-        debug if (u==null){
-        debug   BJDebugMsg("|cFFFF0000Error using AIDS:|r Trying to get the id (inlines) of null unit.");
-        debug }else if (GetUnitUserData(u)==0){
-        debug   BJDebugMsg("|cFFFF0000Error using AIDS:|r Trying to use GetUnitId (inlines) when you should be using GetUnitIndex (unit didnFourCC(t pass filter).");
-        debug }
-
-        return GetUnitUserData(u);
-    }
-
-    //locals
-        private int getindex;
-    
-    static  GetUnitIndex(unit u ){// Cannot be recursive.
-        debug if (u==null){
-        debug   BJDebugMsg("|cFFFF0000Error using AIDS:|r Trying to get the index of null unit.");
-        debug }
-
-        getindex=GetUnitUserData(u)
-
-        if (getindex==0){
-            // Get new index, from recycler first, else new.
-            // Store the current index in getindex.
-            if (MaxRecycledIndex==0){ // Get new.
-                MaxIndex=MaxIndex+1
-                getindex=MaxIndex
-            }else { // Get from recycle stack.
-                getindex=RecycledIndex[MaxRecycledIndex]
-                MaxRecycledIndex=MaxRecycledIndex-1
-            }
-
-            // Store index on unit.
-            SetUnitUserData(u,getindex);
-            IndexUnit[getindex]=u
-
-            static if (USE_PERIODIC_RECYCLER){
-
-                // Add index to recycle list.
-                MaxDecayingIndex=MaxDecayingIndex+1
-                DecayingIndex[MaxDecayingIndex]=getindex
-
-            }else {
-
-                // Add leave detection ability.
-                UnitAddAbility(ARStackUnit[ARStackLevel],LEAVE_DETECTION_ABILITY);
-                UnitMakeAbilityPermanent(ARStackUnit[ARStackLevel],true,LEAVE_DETECTION_ABILITY);
-
-            }
-
-
+        public static triggercondition RegisterOnEnter(boolexpr b ){
+            return TriggerAddCondition(OnEnter,b);
+        }
+        public static triggercondition RegisterOnEnterAllocated(boolexpr b ){
+            return TriggerAddCondition(OnEnterAllocated,b);
+        }
+        public static triggercondition RegisterOnDeallocate(boolexpr b ){
+            return TriggerAddCondition(OnDeallocate,b);
         }
 
-        return getindex;
-    }
+        //==============================================================================
+        static unit GetIndexUnit(int index ){
+            debug if (index==0){
+                debug   BJDebugMsg("|cFFFF0000Error using AIDS:|r Trying to get the unit of index 0");
+                debug }else if (IndexUnit[index]==null){
+                debug   BJDebugMsg("|cFFFF0000Error using AIDS:|r Trying to get the unit of unassigned index.");
+                debug }
 
-    //==============================================================================
-    public static void AddLock(int index ){
-        LockLevel[index]=LockLevel[index]+1
-    }
-    public static void RemoveLock(int index ){
-        LockLevel[index]=LockLevel[index]-1
-
-        static if (!USE_PERIODIC_RECYCLER){
-            if (GetUnitUserData(IndexUnit[index])==0 && LockLevel[index]==0){
-
-                // Increment stack for recursion.
-                UndefendExpiringIndexLevel=UndefendExpiringIndexLevel+1
-                UndefendExpiringIndex[UndefendExpiringIndexLevel]=index
-
-                // Fire things.
-                TriggerEvaluate(OnDeallocate);
-
-                // Decrement stack for recursion.
-                UndefendExpiringIndexLevel=UndefendExpiringIndexLevel-1
-
-                // Add the index to the recycler stack.
-                MaxRecycledIndex=MaxRecycledIndex+1
-                RecycledIndex[MaxRecycledIndex]=index
-
-                // Null the unit.
-                IndexUnit[index]=null
-
-            }
-        }
-    }
-
-    //==============================================================================
-    static if (USE_PERIODIC_RECYCLER){
-
-        private static void PeriodicRecycler( ){
-            if (MaxDecayingIndex>0){
-                DecayChecker=DecayChecker+1
-                if (DecayChecker>MaxDecayingIndex){
-                    DecayChecker=1
-                }
-                if (GetUnitUserData(IndexUnit[DecayingIndex[DecayChecker]])==0){
-                if (LockLevel[DecayingIndex[DecayChecker]]==0){
-
-                    // Fire things.
-                    TriggerEvaluate(OnDeallocate);
-
-                    // Add the index to the recycler stack.
-                    MaxRecycledIndex=MaxRecycledIndex+1
-                    RecycledIndex[MaxRecycledIndex]=DecayingIndex[DecayChecker]
-
-                    // Null the unit.
-                    IndexUnit[DecayingIndex[DecayChecker]]=null
-
-                    // Remove index from decay list.
-                    DecayingIndex[DecayChecker]=DecayingIndex[MaxDecayingIndex]
-                    MaxDecayingIndex=MaxDecayingIndex-1
-
-                }
-                }
-            }
+            return IndexUnit[index];
         }
 
-    }else {
+        static integer GetUnitId(unit u ){
+            debug if (u==null){
+                debug   BJDebugMsg("|cFFFF0000Error using AIDS:|r Trying to get the id (inlines) of null unit.");
+                debug }else if (GetUnitUserData(u)==0){
+                debug   BJDebugMsg("|cFFFF0000Error using AIDS:|r Trying to use GetUnitId (inlines) when you should be using GetUnitIndex (unit didnFourCC(t pass filter).");
+                debug }
 
-        private static boolean UndefendFilter( ){
-            return IsUnitType(GetFilterUnit(),UNIT_TYPE_DEAD);
-        }
-
-        private static void OnUndefendTimer( ){
-            while(true){
-                if ( UndefendStackIndex==0){ break; }
-
-                UndefendStackIndex=UndefendStackIndex-1
-                UndefendExpiringIndex[0]=UndefendIndex[UndefendStackIndex]
-
-                if (IndexUnit[UndefendExpiringIndex[0]]!=null){
-                if (GetUnitUserData(IndexUnit[UndefendExpiringIndex[0]])==0){
-                if (LockLevel[UndefendExpiringIndex[0]]==0){
-
-                    // Fire things.
-                    TriggerEvaluate(OnDeallocate);
-
-                    // Add the index to the recycler stack.
-                    MaxRecycledIndex=MaxRecycledIndex+1
-                    RecycledIndex[MaxRecycledIndex]=UndefendExpiringIndex[0]
-
-                    // Null the unit.
-                    IndexUnit[UndefendExpiringIndex[0]]=null
-
-                }
-                }
-                }
-
-            }
+            return GetUnitUserData(u);
         }
 
         //locals
-            private int UndefendFilterIndex;
+        private int getindex;
+    
+        static  GetUnitIndex(unit u ){// Cannot be recursive.
+            debug if (u==null){
+                debug   BJDebugMsg("|cFFFF0000Error using AIDS:|r Trying to get the index of null unit.");
+                debug }
+
+            getindex=GetUnitUserData(u)
+
+            if (getindex==0){
+                // Get new index, from recycler first, else new.
+                // Store the current index in getindex.
+                if (MaxRecycledIndex==0){ // Get new.
+                    MaxIndex=MaxIndex+1
+                    getindex=MaxIndex
+                }else { // Get from recycle stack.
+                    getindex=RecycledIndex[MaxRecycledIndex]
+                    MaxRecycledIndex=MaxRecycledIndex-1
+                }
+
+                // Store index on unit.
+                SetUnitUserData(u,getindex);
+                IndexUnit[getindex]=u
+
+                static if (USE_PERIODIC_RECYCLER){
+
+                    // Add index to recycle list.
+                    MaxDecayingIndex=MaxDecayingIndex+1
+                    DecayingIndex[MaxDecayingIndex]=getindex
+
+                }else {
+
+                    // Add leave detection ability.
+                    UnitAddAbility(ARStackUnit[ARStackLevel],LEAVE_DETECTION_ABILITY);
+                    UnitMakeAbilityPermanent(ARStackUnit[ARStackLevel],true,LEAVE_DETECTION_ABILITY);
+
+                }
+
+
+            }
+
+            return getindex;
+        }
+
+        //==============================================================================
+        public static void AddLock(int index ){
+            LockLevel[index]=LockLevel[index]+1
+        }
+        public static void RemoveLock(int index ){
+            LockLevel[index]=LockLevel[index]-1
+
+            static if (!USE_PERIODIC_RECYCLER){
+                if (GetUnitUserData(IndexUnit[index])==0 && LockLevel[index]==0){
+
+                    // Increment stack for recursion.
+                    UndefendExpiringIndexLevel=UndefendExpiringIndexLevel+1
+                    UndefendExpiringIndex[UndefendExpiringIndexLevel]=index
+
+                    // Fire things.
+                    TriggerEvaluate(OnDeallocate);
+
+                    // Decrement stack for recursion.
+                    UndefendExpiringIndexLevel=UndefendExpiringIndexLevel-1
+
+                    // Add the index to the recycler stack.
+                    MaxRecycledIndex=MaxRecycledIndex+1
+                    RecycledIndex[MaxRecycledIndex]=index
+
+                    // Null the unit.
+                    IndexUnit[index]=null
+
+                }
+            }
+        }
+
+        //==============================================================================
+        static if (USE_PERIODIC_RECYCLER){
+
+            private static void PeriodicRecycler( ){
+                if (MaxDecayingIndex>0){
+                    DecayChecker=DecayChecker+1
+                    if (DecayChecker>MaxDecayingIndex){
+                        DecayChecker=1
+                    }
+                    if (GetUnitUserData(IndexUnit[DecayingIndex[DecayChecker]])==0){
+                        if (LockLevel[DecayingIndex[DecayChecker]]==0){
+
+                            // Fire things.
+                            TriggerEvaluate(OnDeallocate);
+
+                            // Add the index to the recycler stack.
+                            MaxRecycledIndex=MaxRecycledIndex+1
+                            RecycledIndex[MaxRecycledIndex]=DecayingIndex[DecayChecker]
+
+                            // Null the unit.
+                            IndexUnit[DecayingIndex[DecayChecker]]=null
+
+                            // Remove index from decay list.
+                            DecayingIndex[DecayChecker]=DecayingIndex[MaxDecayingIndex]
+                            MaxDecayingIndex=MaxDecayingIndex-1
+
+                        }
+                    }
+                }
+            }
+
+        }else {
+
+            private static boolean UndefendFilter( ){
+                return IsUnitType(GetFilterUnit(),UNIT_TYPE_DEAD);
+            }
+
+            private static void OnUndefendTimer( ){
+                while(true){
+                    if ( UndefendStackIndex==0){ break; }
+
+                    UndefendStackIndex=UndefendStackIndex-1
+                    UndefendExpiringIndex[0]=UndefendIndex[UndefendStackIndex]
+
+                    if (IndexUnit[UndefendExpiringIndex[0]]!=null){
+                        if (GetUnitUserData(IndexUnit[UndefendExpiringIndex[0]])==0){
+                            if (LockLevel[UndefendExpiringIndex[0]]==0){
+
+                                // Fire things.
+                                TriggerEvaluate(OnDeallocate);
+
+                                // Add the index to the recycler stack.
+                                MaxRecycledIndex=MaxRecycledIndex+1
+                                RecycledIndex[MaxRecycledIndex]=UndefendExpiringIndex[0]
+
+                                // Null the unit.
+                                IndexUnit[UndefendExpiringIndex[0]]=null
+
+                            }
+                        }
+                    }
+
+                }
+            }
+
+        //locals
+        private int UndefendFilterIndex;
         
         private static boolean OnUndefend( ){
             if (GetIssuedOrderId()==852056){ // If undefend then...
@@ -558,17 +561,17 @@ public class AIDS{
 
     //==============================================================================
 
-        void AIDS_onCreate( ){
-        }
-        void AIDS_onDestroy( ){
-        }
+    void AIDS_onCreate( ){
+    }
+    void AIDS_onDestroy( ){
+    }
 
-        static boolean AIDS_filter(unit u ){
-            return UnitIndexingFilter(u);
-        }
+    static boolean AIDS_filter(unit u ){
+        return UnitIndexingFilter(u);
+    }
 
-        static void AIDS_onInit( ){
-        }
+    static void AIDS_onInit( ){
+    }
 
 
     //===========================================================================
@@ -576,86 +579,86 @@ public class AIDS{
     //  Also, do not initialise members except by using the AIDS_onCreate method.
     //===========================================================================
     //! textmacro AIDS
-        // This magic line makes default methods get called which do nothing
-        // if the methods are otherwise undefined.
-        private static delegate AIDS_DEFAULT AIDS_DELEGATE=0;
+    // This magic line makes default methods get called which do nothing
+    // if the methods are otherwise undefined.
+    private static delegate AIDS_DEFAULT AIDS_DELEGATE=0;
 
-        //-----------------------------------------------------------------------
-        // Gotta know whether or not to destroy on deallocation...
-        private boolean AIDS_instanciated;
+    //-----------------------------------------------------------------------
+    // Gotta know whether or not to destroy on deallocation...
+    private boolean AIDS_instanciated;
 
-        //-----------------------------------------------------------------------
-        static thistype operator[](unit whichUnit ){
-            return GetUnitId(whichUnit);
+    //-----------------------------------------------------------------------
+    static thistype operator[](unit whichUnit ){
+        return GetUnitId(whichUnit);
+    }
+
+    unit operator unit( ){
+
+        return GetIndexUnit(this);
+    }
+
+    //-----------------------------------------------------------------------
+    void AIDS_addLock( ){
+        AIDS_AddLock(this);
+    }
+    void AIDS_removeLock( ){
+        AIDS_RemoveLock(this);
+    }
+
+    //-----------------------------------------------------------------------
+    private static boolean AIDS_onEnter( ){
+        // At this point, the unit might not have been assigned an index.
+        if (thistype.AIDS_filter(AIDS_GetEnteringIndexUnit())){
+
+            thistype(AIDS_GetIndexOfEnteringUnit()).AIDS_instanciated=true
+            // Can use inlining "Assigned" function now, as it must be assigned.
+            thistype(AIDS_GetIndexOfEnteringUnitAllocated()).AIDS_onCreate();
         }
 
-        unit operator unit( ){
+        return false;
+    }
 
-            return GetIndexUnit(this);
+    private static boolean AIDS_onEnterAllocated( ){
+        // At this point, the unit must have been assigned an index.
+        if (thistype.AIDS_filter(AIDS_GetEnteringIndexUnit())){
+
+            thistype(AIDS_GetIndexOfEnteringUnitAllocated()).AIDS_instanciated=true
+            // Can use inlining "Assigned" function now, as it must be assigned.
+            thistype(AIDS_GetIndexOfEnteringUnitAllocated()).AIDS_onCreate();
         }
 
-        //-----------------------------------------------------------------------
-        void AIDS_addLock( ){
-            AIDS_AddLock(this);
-        }
-        void AIDS_removeLock( ){
-            AIDS_RemoveLock(this);
-        }
+        return false;
+    }
 
-        //-----------------------------------------------------------------------
-        private static boolean AIDS_onEnter( ){
-            // At this point, the unit might not have been assigned an index.
-            if (thistype.AIDS_filter(AIDS_GetEnteringIndexUnit())){
+    private static boolean AIDS_onDeallocate( ){
+        if (thistype(AIDS_GetDecayingIndex()).AIDS_instanciated){
+            thistype(AIDS_GetDecayingIndex()).AIDS_onDestroy();
 
-                thistype(AIDS_GetIndexOfEnteringUnit()).AIDS_instanciated=true
-                // Can use inlining "Assigned" function now, as it must be assigned.
-                thistype(AIDS_GetIndexOfEnteringUnitAllocated()).AIDS_onCreate();
-            }
-
-            return false;
+            thistype(AIDS_GetDecayingIndex()).AIDS_instanciated=false
         }
 
-        private static boolean AIDS_onEnterAllocated( ){
-            // At this point, the unit must have been assigned an index.
-            if (thistype.AIDS_filter(AIDS_GetEnteringIndexUnit())){
+        return false;
+    }
 
-                thistype(AIDS_GetIndexOfEnteringUnitAllocated()).AIDS_instanciated=true
-                // Can use inlining "Assigned" function now, as it must be assigned.
-                thistype(AIDS_GetIndexOfEnteringUnitAllocated()).AIDS_onCreate();
-            }
-
-            return false;
-        }
-
-        private static boolean AIDS_onDeallocate( ){
-            if (thistype(AIDS_GetDecayingIndex()).AIDS_instanciated){
-                thistype(AIDS_GetDecayingIndex()).AIDS_onDestroy();
-
-                thistype(AIDS_GetDecayingIndex()).AIDS_instanciated=false
-            }
-
-            return false;
-        }
-
-        //-----------------------------------------------------------------------
-        private static void onInit( ){
-            AIDS_RegisterOnEnter(Filter(function thistype.AIDS_onEnter));
-            AIDS_RegisterOnEnterAllocated(Filter(function thistype.AIDS_onEnterAllocated));
-            AIDS_RegisterOnDeallocate(Filter(function thistype.AIDS_onDeallocate));
+    //-----------------------------------------------------------------------
+    private static void onInit( ){
+        AIDS_RegisterOnEnter(Filter(function thistype.AIDS_onEnter));
+        AIDS_RegisterOnEnterAllocated(Filter(function thistype.AIDS_onEnterAllocated));
+        AIDS_RegisterOnDeallocate(Filter(function thistype.AIDS_onDeallocate));
 
 
-            thistype.AIDS_onInit();
-        }
+        thistype.AIDS_onInit();
+    }
     //! endtextmacro
-}
+    }
 
-public class PUI{
-    //===========================================================================
-    //  Allowed PUI_PROPERTY TYPES are: unit, integer, real, boolean, string
-    //  Do NOT put handles that need to be destroyed here (timer, trigger, ...)
+    public class PUI{
+        //===========================================================================
+        //  Allowed PUI_PROPERTY TYPES are: unit, integer, real, boolean, string
+        //  Do NOT put handles that need to be destroyed here (timer, trigger, ...)
 
-    //===========================================================================
-    //! textmacro PUI_PROPERTY takes VISIBILITY, TYPE, NAME, DEFAULT
+        //===========================================================================
+        //! textmacro PUI_PROPERTY takes VISIBILITY, TYPE, NAME, DEFAULT
 
         private static unit  [] pui_unit;
         private static $TYPE$[] pui_data;
@@ -667,7 +670,7 @@ public class PUI{
             int pui = GetUnitId(whichUnit) ;// Changed from GetUnitIndex.
             if (.pui_unit[pui] != whichUnit){
                 .pui_unit[pui] = whichUnit;
-                .pui_data[pui] = $DEFAULT$;
+                    .pui_data[pui] = $DEFAULT$;
             }
             return .pui_data[pui];
         }
@@ -675,17 +678,17 @@ public class PUI{
         //-----------------------------------------------------------------------
         static void operator[]=(unit whichUnit, $TYPE$ whichData ){
             int pui = GetUnitIndex(whichUnit);
-            .pui_unit[pui] = whichUnit;
-            .pui_data[pui] = whichData;
+                .pui_unit[pui] = whichUnit;
+                .pui_data[pui] = whichData;
         }
 
-    //! endtextmacro
+        //! endtextmacro
 
-    //===========================================================================
+        //===========================================================================
 
-    //  Use .release() instead, will call .destroy()
-    //===========================================================================
-    //! textmacro PUI
+        //  Use .release() instead, will call .destroy()
+        //===========================================================================
+        //! textmacro PUI
         private static unit   [] pui_unit;
         private static int[] pui_data;
         private static int[] pui_id;
@@ -701,7 +704,7 @@ public class PUI{
                     // recycled index detected
                     .destroy(.pui_data[pui]);
                     .pui_unit[pui] = null;
-                    .pui_data[pui] = 0;
+                        .pui_data[pui] = 0;
                 }
             }
             return .pui_data[pui];
@@ -716,8 +719,8 @@ public class PUI{
                 .destroy(.pui_data[pui]);
             }
             .pui_unit[pui] = whichUnit;
-            .pui_data[pui] = whichData;
-            .pui_id[whichData] = pui;
+                .pui_data[pui] = whichData;
+                .pui_id[whichData] = pui;
         }
 
         //-----------------------------------------------------------------------
@@ -725,15 +728,15 @@ public class PUI{
         //-----------------------------------------------------------------------
         void release( ){
             int pui= .pui_id[integer(this)];
-            .destroy();
-            .pui_unit[pui] = null;
-            .pui_data[pui] = 0;
+                .destroy();
+                .pui_unit[pui] = null;
+                .pui_data[pui] = 0;
         }
-    //! endtextmacro
-}
+        //! endtextmacro
+    }
 
-public class AutoIndex{
-    module AutoData
+    public class AutoIndex{
+        module AutoData
         private static thistype[] data;
 
         // Fixed up the below to use thsitype instead of integer.
@@ -744,5 +747,6 @@ public class AutoIndex{
         static thistype operator [](unit u ){
 
         }
-    endmodule
+        endmodule
+    }
 }

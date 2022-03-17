@@ -1,4 +1,8 @@
-public class QuestRedemptionPath{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
+{
+  public class QuestRedemptionPath{
 
   
     private const int RESEARCH_ID = FourCC(R062)         ;//This research is required to complete the quest
@@ -72,4 +76,5 @@ public class QuestRedemptionPath{
     }
 
 
+  }
 }

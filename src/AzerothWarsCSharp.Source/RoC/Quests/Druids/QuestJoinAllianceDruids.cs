@@ -1,4 +1,8 @@
-public class QuestJoinAllianceDruid{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Druids
+{
+  public class QuestJoinAllianceDruid{
 
 
 
@@ -23,4 +27,5 @@ public class QuestJoinAllianceDruid{
     }
 
 
+  }
 }

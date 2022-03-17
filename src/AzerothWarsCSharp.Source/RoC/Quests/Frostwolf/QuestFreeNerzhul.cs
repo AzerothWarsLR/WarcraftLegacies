@@ -1,4 +1,8 @@
-public class QuestFreeNerzhul{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Frostwolf
+{
+  public class QuestFreeNerzhul{
 
 
     private string operator CompletionPopup( ){
@@ -20,4 +24,5 @@ public class QuestFreeNerzhul{
     }
 
 
+  }
 }

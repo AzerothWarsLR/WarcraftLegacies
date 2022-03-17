@@ -1,4 +1,9 @@
-public class QuestStratholme{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
+{
+  public class QuestStratholme{
 
 
 
@@ -32,4 +37,5 @@ public class QuestStratholme{
     }
 
 
+  }
 }

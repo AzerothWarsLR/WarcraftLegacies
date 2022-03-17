@@ -1,4 +1,8 @@
-public class Faction{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
+
+namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
+{
+  public class Faction{
 
   
     Event OnFactionCreate = 0;
@@ -107,7 +111,7 @@ public class Faction{
         RemovePlayer(this.Player, PLAYER_GAME_RESULT_DEFEAT);
         SetPlayerState(this.Player, PLAYER_STATE_OBSERVER, 1);
         this.Leave();
-       // call CreateFogModifierRectBJ( true, this.Player, FOG_OF_WAR_VISIBLE, GetPlayableMapRect() )
+        // call CreateFogModifierRectBJ( true, this.Player, FOG_OF_WAR_VISIBLE, GetPlayableMapRect() )
       }else if (value == SCORESTATUS_VICTORIOUS && this.Player != null){
         RemovePlayer(this.Player, PLAYER_GAME_RESULT_VICTORY);
       }
@@ -224,7 +228,7 @@ public class Faction{
       //Levels
       i = 0;
       while(true){
-      if ( i == this.objectLevelCount){ break; }
+        if ( i == this.objectLevelCount){ break; }
         this.Person.SetObjectLevel(this.objectLevelList[i], this.objectLevels[this.objectLevelList[i]]);
         i = i + 1;
       }
@@ -236,14 +240,14 @@ public class Faction{
       int i = 0;
       //Limits
       while(true){
-      if ( i == this.objectCount){ break; }
+        if ( i == this.objectCount){ break; }
         this.Person.ModObjectLimit(this.objectList[i], -this.objectLimits[this.objectList[i]]);
         i = i + 1;
       }
       //Levels
       i = 0;
       while(true){
-      if ( i == this.objectLevelCount){ break; }
+        if ( i == this.objectLevelCount){ break; }
         this.Person.SetObjectLevel(this.objectLevelList[i], 0);
         i = i + 1;
       }
@@ -360,7 +364,7 @@ public class Faction{
       if (this.undefeatedResearch == 0){
         this.undefeatedResearch = research;
         while(true){
-        if ( i > MAX_PLAYERS){ break; }
+          if ( i > MAX_PLAYERS){ break; }
           SetPlayerTechResearched(Player(i), this.undefeatedResearch, 1);
           i = i + 1;
         }
@@ -378,7 +382,7 @@ public class Faction{
       if (this.defeatedResearch == 0){
         this.defeatedResearch = research;
         while(true){
-        if ( i > MAX_PLAYERS){ break; }
+          if ( i > MAX_PLAYERS){ break; }
           SetPlayerTechResearched(Player(i), this.defeatedResearch, 0);
           i = i + 1;
         }
@@ -483,13 +487,13 @@ public class Faction{
           }
           UnitDropAllItems(u);
           RemoveUnit(u);
-        //Refund gold and lumber of refundable units
+          //Refund gold and lumber of refundable units
         }else if (UnitType.ByHandle(u).Refund == true){
           this.Gold = this.Gold + loopUnitType.GoldCost * REFUND_PERCENT;
           this.Lumber = this.Lumber + loopUnitType.LumberCost * REFUND_PERCENT;
           UnitDropAllItems(u);
           RemoveUnit(u);
-        //Transfer the ownership of everything else
+          //Transfer the ownership of everything else
         }else if (UnitType.ByHandle(u).Meta == false){
           if (this.Team.PlayerCount > 1){
             SetUnitOwner(u, ForcePickRandomPlayer(eligiblePlayers), false);
@@ -518,16 +522,16 @@ public class Faction{
     //This should get used any time a player exits the game without being defeated; IE they left, went afk, became an observer, or triggered an event that causes this
     private void Leave( ){
       OnPreLeave();
-    if (team.PlayerCount > 1 && team.ScoreStatus == SCORESTATUS_NORMAL && GetGameTime() > 60){
-      distributeUnits();
-      distributeResources();
-      distributeExperience();
-     }else {
-      obliterate();
-    }
-    thistype.triggerFaction = this;
-    OnFactionGameLeave.fire();
-    OnLeave();
+      if (team.PlayerCount > 1 && team.ScoreStatus == SCORESTATUS_NORMAL && GetGameTime() > 60){
+        distributeUnits();
+        distributeResources();
+        distributeExperience();
+      }else {
+        obliterate();
+      }
+      thistype.triggerFaction = this;
+      OnFactionGameLeave.fire();
+      OnLeave();
     }
 
     static thistype ByHandle(player whichPlayer ){
@@ -538,7 +542,7 @@ public class Faction{
       ;type.factionsByName[s];
     }
 
-     Faction (string name, playercolor playCol, string prefixCol, string icon ){
+    Faction (string name, playercolor playCol, string prefixCol, string icon ){
 
 
       this.name = name;
@@ -583,16 +587,17 @@ public class Faction{
     }
 
 
-  static Faction GetTriggerFaction( ){
-    return Faction.triggerFaction;
-  }
+    static Faction GetTriggerFaction( ){
+      return Faction.triggerFaction;
+    }
 
-  static Team GetTriggerFactionPrevTeam( ){
-    return Faction.triggerFactionPrevTeam;
-  }
+    static Team GetTriggerFactionPrevTeam( ){
+      return Faction.triggerFactionPrevTeam;
+    }
 
-  private static void OnInit( ){
-    OnFactionCreate = Event.create();
-  }
+    private static void OnInit( ){
+      OnFactionCreate = Event.create();
+    }
 
+  }
 }

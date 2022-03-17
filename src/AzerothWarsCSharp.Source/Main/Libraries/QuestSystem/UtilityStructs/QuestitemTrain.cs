@@ -1,4 +1,6 @@
-public class QuestItemTrain{
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemTrain{
 
 
     private static int count = 0;
@@ -13,7 +15,7 @@ public class QuestItemTrain{
       this.Description = "Train " + GetObjectName(objectId) + "s from the " + GetObjectName(trainFromId) + " (" + I2S(currentTrainCount) + "/" + I2S(targetTrainCount) + ")";
     }
 
-     thistype (int objectId, int trainFromId, int targetTrainCount ){
+    thistype (int objectId, int trainFromId, int targetTrainCount ){
 
       this.objectId = objectId;
       this.trainFromId = trainFromId;
@@ -46,4 +48,5 @@ public class QuestItemTrain{
     }
 
 
+  }
 }

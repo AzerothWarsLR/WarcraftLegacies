@@ -1,4 +1,8 @@
-public class QuestUnlockShip{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.KulTiras
+{
+  public class QuestUnlockShip{
 
 
     private string operator CompletionPopup( ){
@@ -45,4 +49,5 @@ public class QuestUnlockShip{
     }
 
 
+  }
 }

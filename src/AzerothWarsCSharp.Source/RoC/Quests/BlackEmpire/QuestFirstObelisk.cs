@@ -1,4 +1,9 @@
-public class QuestFirstObelisk{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.BlackEmpire
+{
+  public class QuestFirstObelisk{
 
 
     private string operator CompletionPopup( ){
@@ -24,4 +29,5 @@ public class QuestFirstObelisk{
     }
 
 
+  }
 }

@@ -1,17 +1,20 @@
-public class StormwindDies{
+namespace AzerothWarsCSharp.Source.RoC.Mechanics.Stormwind
+{
+  public class StormwindDies{
 
-  private static void Dies( ){
-    KillUnit( gg_unit_h055_0035 );
-    KillUnit( gg_unit_h053_1121 );
-    KillUnit( udg_HeadquartersORHall );
-    KillUnit( udg_SanctumORCathedral );
-    DestroyTrigger(GetTriggeringTrigger());
+    private static void Dies( ){
+      KillUnit( gg_unit_h055_0035 );
+      KillUnit( gg_unit_h053_1121 );
+      KillUnit( udg_HeadquartersORHall );
+      KillUnit( udg_SanctumORCathedral );
+      DestroyTrigger(GetTriggeringTrigger());
+    }
+
+    private static void OnInit( ){
+      trigger trig = CreateTrigger();
+      TriggerRegisterUnitEvent(trig, gg_unit_h00X_0007, EVENT_UNIT_DEATH);
+      TriggerAddCondition(trig, ( Dies));
+    }
+
   }
-
-  private static void OnInit( ){
-    trigger trig = CreateTrigger();
-    TriggerRegisterUnitEvent(trig, gg_unit_h00X_0007, EVENT_UNIT_DEATH);
-    TriggerAddCondition(trig, ( Dies));
-  }
-
 }

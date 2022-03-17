@@ -1,4 +1,8 @@
-public class QuestFelHordeKillIronforge{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
+{
+  public class QuestFelHordeKillIronforge{
 
   
     private const int RESEARCH_ID = FourCC(R011);
@@ -32,4 +36,5 @@ public class QuestFelHordeKillIronforge{
     }
 
 
+  }
 }

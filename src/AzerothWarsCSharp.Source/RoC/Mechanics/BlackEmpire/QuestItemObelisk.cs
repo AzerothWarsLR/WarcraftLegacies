@@ -1,6 +1,10 @@
-public class QuestItemObelisk{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
-  //An objective in which the player has to summon a Black Empire Obelisk on a specific Control Point.
+namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
+{
+  public class QuestItemObelisk{
+
+    //An objective in which the player has to summon a Black Empire Obelisk on a specific Control Point.
 
     private static int count = 0;
     private static thistype[] byIndex;
@@ -14,7 +18,7 @@ public class QuestItemObelisk{
       return GetUnitY(target.Unit);
     }
 
-     thistype (ControlPoint target ){
+    thistype (ControlPoint target ){
 
       this.Description = "Summon a NyaFourCC(lothan Obelisk on " + GetUnitName(target.u);
       this.target = target;
@@ -37,10 +41,11 @@ public class QuestItemObelisk{
     }
 
 
-  private static void OnInit( ){
-    trigger trig = CreateTrigger();
-    BlackEmpireObeliskSummoned.register(trig);
-    TriggerAddAction(trig,  QuestItemObelisk.OnAnyBlackEmpireObeliskSummoned);
-  }
+    private static void OnInit( ){
+      trigger trig = CreateTrigger();
+      BlackEmpireObeliskSummoned.register(trig);
+      TriggerAddAction(trig,  QuestItemObelisk.OnAnyBlackEmpireObeliskSummoned);
+    }
 
+  }
 }

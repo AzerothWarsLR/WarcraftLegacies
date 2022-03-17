@@ -1,4 +1,8 @@
-public class QuestGuldansLegacy{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
+{
+  public class QuestGuldansLegacy{
 
   
     private int RESEARCH_ID = FourCC(R041);
@@ -29,4 +33,5 @@ public class QuestGuldansLegacy{
     }
 
 
+  }
 }

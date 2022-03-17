@@ -1,11 +1,13 @@
 
 
-public class CheatMana{
+namespace AzerothWarsCSharp.Source.Main.Cheats
+{
+  public class CheatMana{
 
     //**CONFIG
     
-      private const string COMMAND     = "-mana ";
-      private boolean[] Toggle;
+    private const string COMMAND     = "-mana ";
+    private boolean[] Toggle;
     
     //*ENDCONFIG
 
@@ -36,7 +38,7 @@ public class CheatMana{
       int i = 0;
 
       while(true){
-      if ( i > MAX_PLAYERS){ break; }
+        if ( i > MAX_PLAYERS){ break; }
         TriggerRegisterPlayerChatEvent( trig, Player(i), COMMAND, false );
         i = i + 1;
       }
@@ -46,4 +48,5 @@ public class CheatMana{
       PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_SPELL_ENDCAST,  Spell);
     }
 
+  }
 }

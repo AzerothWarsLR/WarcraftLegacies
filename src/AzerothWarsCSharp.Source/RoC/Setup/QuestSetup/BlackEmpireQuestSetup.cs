@@ -1,13 +1,18 @@
-public class BlackEmpireQuestSetup{
+using AzerothWarsCSharp.Source.RoC.Quests.BlackEmpire;
 
-  public static void OnInit( ){
-    FACTION_BLACKEMPIRE.StartingQuest = FACTION_BLACKEMPIRE.AddQuest(QuestFirstObelisk.create());
-    FACTION_BLACKEMPIRE.AddQuest(QuestSecondObelisk.create());
-    FACTION_BLACKEMPIRE.AddQuest(QuestThirdObelisk.create());
-    FACTION_BLACKEMPIRE.AddQuest(QuestYoggSaron.create());
-    FACTION_BLACKEMPIRE.AddQuest(QuestBladeOfTheBlackEmpire.create());
+namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
+{
+  public class BlackEmpireQuestSetup{
 
-    TOMB_OF_TYR = QuestIntoTheVoid.create();
+    public static void OnInit( ){
+      FACTION_BLACKEMPIRE.StartingQuest = FACTION_BLACKEMPIRE.AddQuest(QuestFirstObelisk.create());
+      FACTION_BLACKEMPIRE.AddQuest(QuestSecondObelisk.create());
+      FACTION_BLACKEMPIRE.AddQuest(QuestThirdObelisk.create());
+      FACTION_BLACKEMPIRE.AddQuest(QuestYoggSaron.create());
+      FACTION_BLACKEMPIRE.AddQuest(QuestBladeOfTheBlackEmpire.create());
+
+      TOMB_OF_TYR = QuestIntoTheVoid.create();
+    }
+
   }
-
 }

@@ -1,4 +1,8 @@
-public class QuestKarazhan{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
+{
+  public class QuestKarazhan{
 
 
     private string operator CompletionPopup( ){
@@ -22,4 +26,5 @@ public class QuestKarazhan{
     }
 
 
+  }
 }

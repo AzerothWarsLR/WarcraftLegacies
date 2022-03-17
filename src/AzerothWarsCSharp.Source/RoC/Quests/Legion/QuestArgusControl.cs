@@ -1,4 +1,9 @@
-public class QuestArgusControl{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
+{
+  public class QuestArgusControl{
 
   
     private const int QUESTRESEARCH_ID = FourCC(R055)   ;//This research is given when the quest is completed
@@ -30,4 +35,5 @@ public class QuestArgusControl{
     }
 
 
+  }
 }

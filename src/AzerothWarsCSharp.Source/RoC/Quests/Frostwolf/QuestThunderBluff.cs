@@ -1,5 +1,10 @@
 //If the Centaur Khan dies, OR a time elapses, give Thunder Bluff to a Horde player.
-public class QuestThunderBluff{
+
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Frostwolf
+{
+  public class QuestThunderBluff{
 
   
     private group ThunderBluffUnits;
@@ -17,7 +22,7 @@ public class QuestThunderBluff{
     }
 
     private void OnFail( ){
-        RescueNeutralUnitsInRect(gg_rct_ThunderBluff, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      RescueNeutralUnitsInRect(gg_rct_ThunderBluff, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnComplete( ){
@@ -38,26 +43,27 @@ public class QuestThunderBluff{
     }
 
 
-  private static void OnInit( ){
-    //Setup initially invulnerable and hidden group at Thunder Bluff
-    group tempGroup = CreateGroup();
-    unit u;
-    int i = 0;
-    ThunderBluffUnits = CreateGroup();
-    GroupEnumUnitsInRect(tempGroup, gg_rct_ThunderBluff, null);
-    while(true){
-      u = FirstOfGroup(tempGroup);
-      if ( u == null){ break; }
-      if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-        SetUnitInvulnerable(u, true);
-        GroupAddUnit(ThunderBluffUnits, u);
+    private static void OnInit( ){
+      //Setup initially invulnerable and hidden group at Thunder Bluff
+      group tempGroup = CreateGroup();
+      unit u;
+      int i = 0;
+      ThunderBluffUnits = CreateGroup();
+      GroupEnumUnitsInRect(tempGroup, gg_rct_ThunderBluff, null);
+      while(true){
+        u = FirstOfGroup(tempGroup);
+        if ( u == null){ break; }
+        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
+          SetUnitInvulnerable(u, true);
+          GroupAddUnit(ThunderBluffUnits, u);
+        }
+        GroupRemoveUnit(tempGroup, u);
+        i = i + 1;
       }
-      GroupRemoveUnit(tempGroup, u);
-      i = i + 1;
+      DestroyGroup(tempGroup);
+      tempGroup = null;
+
     }
-    DestroyGroup(tempGroup);
-    tempGroup = null;
 
   }
-
 }

@@ -1,4 +1,8 @@
-public class QuestBoralus{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.KulTiras
+{
+  public class QuestBoralus{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R00L)   ;//This research is given when the quest is completed
@@ -39,4 +43,5 @@ public class QuestBoralus{
     }
 
 
+  }
 }

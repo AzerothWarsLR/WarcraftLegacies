@@ -1,6 +1,12 @@
 //If Quel)thalas destroys the Legion Nexus, they can train Kael)thas and Blood Mages.
 //If they instead lose the Sunwell, they lose everything. If that doesn)t defeat them, they get Kael)thalas, Lorthemar, and some free units at Dalaran Dungeons.
-public class QuestTheBloodElves{
+
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
+{
+  public class QuestTheBloodElves{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R04Q);
@@ -94,4 +100,5 @@ public class QuestTheBloodElves{
     }
 
 
+  }
 }

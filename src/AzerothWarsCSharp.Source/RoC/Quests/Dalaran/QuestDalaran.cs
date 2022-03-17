@@ -1,4 +1,9 @@
-public class QuestDalaran{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
+{
+  public class QuestDalaran{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R038);
@@ -21,7 +26,7 @@ public class QuestDalaran{
       GroupEnumUnitsInRect(tempGroup, gg_rct_Dalaran, null);
       u = FirstOfGroup(tempGroup);
       while(true){
-      if ( u == null){ break; }
+        if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
           UnitRescue(u, whichPlayer);
         }
@@ -31,7 +36,7 @@ public class QuestDalaran{
       GroupEnumUnitsInRect(tempGroup, gg_rct_DalaranDungeon, null);
       u = FirstOfGroup(tempGroup);
       while(true){
-      if ( u == null){ break; }
+        if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
           UnitRescue(u, whichPlayer);
         }
@@ -71,4 +76,5 @@ public class QuestDalaran{
     }
 
 
+  }
 }

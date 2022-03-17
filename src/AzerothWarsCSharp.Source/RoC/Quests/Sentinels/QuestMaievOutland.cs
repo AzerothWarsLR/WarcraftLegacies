@@ -1,4 +1,8 @@
-public class QuestMaievOutland{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Sentinels
+{
+  public class QuestMaievOutland{
 
 
 
@@ -24,4 +28,5 @@ public class QuestMaievOutland{
     }
 
 
+  }
 }

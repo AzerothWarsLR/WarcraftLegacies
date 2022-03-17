@@ -1,4 +1,6 @@
-public class QuestItemUpgrade{
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemUpgrade{
 
 
     private static int count = 0;
@@ -10,7 +12,7 @@ public class QuestItemUpgrade{
       ;.triggerUnit;
     }
 
-     thistype (int objectId, int upgradeFromId ){
+    thistype (int objectId, int upgradeFromId ){
 
       this.Description = "Upgrade your " + GetObjectName(upgradeFromId) + " to a " + GetObjectName(objectId);
       this.objectId = objectId;
@@ -39,4 +41,5 @@ public class QuestItemUpgrade{
     }
 
 
+  }
 }

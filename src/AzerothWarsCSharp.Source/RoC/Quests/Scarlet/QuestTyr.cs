@@ -1,4 +1,8 @@
-public class QuestTyr{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Scarlet
+{
+  public class QuestTyr{
 
  
     private const int RESEARCH_ID = FourCC(R03R)   ;//This research is given when the quest is completed
@@ -34,4 +38,5 @@ public class QuestTyr{
     }
 
 
+  }
 }

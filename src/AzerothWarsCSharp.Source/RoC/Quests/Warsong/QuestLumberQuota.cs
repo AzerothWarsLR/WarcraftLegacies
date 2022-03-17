@@ -1,4 +1,8 @@
-public class QuestLumberQuota{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
+{
+  public class QuestLumberQuota{
 
   
     private const int RESEARCH_ID = FourCC(R05O)         ;//This research is required to complete the quest
@@ -39,4 +43,5 @@ public class QuestLumberQuota{
     }
 
 
+  }
 }

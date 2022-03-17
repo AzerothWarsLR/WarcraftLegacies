@@ -1,4 +1,6 @@
-public class ElectricStrike{
+namespace AzerothWarsCSharp.Source.Main.Spells
+{
+  public class ElectricStrike{
 
   
     private const int ABIL_ID        = FourCC(A0RC);
@@ -12,25 +14,26 @@ public class ElectricStrike{
     private group TempGroup = CreateGroup();
   
 
-  private static void Cast( ){
-    unit u;
-    unit caster;
-    caster = GetTriggerUnit();
-    P = GetOwningPlayer(caster);
-    GroupEnumUnitsInRange(TempGroup, GetSpellTargetX(), GetSpellTargetY(), RADIUS, null);
-    while(true){
-      u = FirstOfGroup(TempGroup);
-      if ( u == null){ break; }
-      if (IsUnitType(u, UNIT_TYPE_STRUCTURE) == false && UnitAlive(u) == true){
-        DummyCastUnit(GetOwningPlayer(caster), STUN_ID, STUN_ORDER, 1, u);
-        DummyCastUnit(GetOwningPlayer(caster), PURGE_ID, PURGE_ORDER, 1, u);
+    private static void Cast( ){
+      unit u;
+      unit caster;
+      caster = GetTriggerUnit();
+      P = GetOwningPlayer(caster);
+      GroupEnumUnitsInRange(TempGroup, GetSpellTargetX(), GetSpellTargetY(), RADIUS, null);
+      while(true){
+        u = FirstOfGroup(TempGroup);
+        if ( u == null){ break; }
+        if (IsUnitType(u, UNIT_TYPE_STRUCTURE) == false && UnitAlive(u) == true){
+          DummyCastUnit(GetOwningPlayer(caster), STUN_ID, STUN_ORDER, 1, u);
+          DummyCastUnit(GetOwningPlayer(caster), PURGE_ID, PURGE_ORDER, 1, u);
+        }
+        GroupRemoveUnit(TempGroup,u);
       }
-      GroupRemoveUnit(TempGroup,u);
     }
-  }
 
-  private static void OnInit( ){
-    RegisterSpellEffectAction(ABIL_ID,  Cast);
-  }
+    private static void OnInit( ){
+      RegisterSpellEffectAction(ABIL_ID,  Cast);
+    }
 
+  }
 }

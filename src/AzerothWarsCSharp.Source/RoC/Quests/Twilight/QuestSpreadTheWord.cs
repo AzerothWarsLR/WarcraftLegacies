@@ -1,4 +1,8 @@
-public class QuestSpreadTheWord{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Twilight
+{
+  public class QuestSpreadTheWord{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R05F)   ;//This research is given when the quest is completed
@@ -29,4 +33,5 @@ public class QuestSpreadTheWord{
     }
 
 
+  }
 }

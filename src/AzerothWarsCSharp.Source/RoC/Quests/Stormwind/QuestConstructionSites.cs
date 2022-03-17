@@ -2,6 +2,8 @@
 
 
   
+    using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
     private const int RESEARCH_ID = FourCC(R022);
   
 

@@ -1,4 +1,6 @@
-public class QuestItemKillXUnit{
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemKillXUnit{
 
 
     private static int count = 0;
@@ -12,7 +14,7 @@ public class QuestItemKillXUnit{
       this.Description = "Kill " + GetObjectName(objectId) + "s (" + I2S(currentKillXUnitCount) + "/" + I2S(targetKillXUnitCount) + ")";
     }
 
-     thistype (int objectId, int targetKillXUnitCount ){
+    thistype (int objectId, int targetKillXUnitCount ){
 
       this.objectId = objectId;
       thistype.byIndex[thistype.count] = this;
@@ -44,4 +46,5 @@ public class QuestItemKillXUnit{
     }
 
 
+  }
 }

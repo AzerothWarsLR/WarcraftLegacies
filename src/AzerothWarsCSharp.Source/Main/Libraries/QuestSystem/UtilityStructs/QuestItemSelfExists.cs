@@ -1,4 +1,8 @@
-public class QuestItemSelfExists{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemSelfExists{
 
 
     private static int count = 0;
@@ -26,7 +30,7 @@ public class QuestItemSelfExists{
       }
     }
 
-     thistype ( ){
+    thistype ( ){
 
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
@@ -35,10 +39,11 @@ public class QuestItemSelfExists{
     }
 
 
-  private static void OnInit( ){
-    trigger trig = CreateTrigger();
-    FactionScoreStatusChanged.register(trig);
-    TriggerAddAction(trig,  QuestItemSelfExists.OnAnyFactionScoreStatusChanged);
-  }
+    private static void OnInit( ){
+      trigger trig = CreateTrigger();
+      FactionScoreStatusChanged.register(trig);
+      TriggerAddAction(trig,  QuestItemSelfExists.OnAnyFactionScoreStatusChanged);
+    }
 
+  }
 }

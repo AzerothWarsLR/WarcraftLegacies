@@ -1,5 +1,9 @@
 
-public class StructurePacking{
+using AzerothWarsCSharp.Source.Main.Libraries;
+
+namespace AzerothWarsCSharp.Source.RoC.Mechanics.Frostwolf
+{
+  public class StructurePacking{
 
   
     private const int KODO_ID = FourCC(oosc);
@@ -41,9 +45,10 @@ public class StructurePacking{
 
 
 
-      this.buildAbility = buildAbility;
-      ;;
-    }
+    this.buildAbility = buildAbility;
+    ;;
+  }
+}
 
 
 

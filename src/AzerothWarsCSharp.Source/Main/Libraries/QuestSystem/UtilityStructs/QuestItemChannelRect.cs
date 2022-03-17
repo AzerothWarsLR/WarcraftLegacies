@@ -1,4 +1,8 @@
-public class QuestItemChannelRect{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemChannelRect{
 
   
     private const string TARGET_EFFECT = "war3mapImported\\Fortitude Rune Aura.mdx" ;//Make it so this renders in the world on the target location
@@ -8,13 +12,13 @@ public class QuestItemChannelRect{
     private const float PROGRESS_HEIGHT = 285;
   
 
-  private static region RectToRegion(rect whichRect ){
-    region rectRegion = CreateRegion();
-    RegionAddRect(rectRegion, whichRect);
-    return rectRegion;
-  }
+    private static region RectToRegion(rect whichRect ){
+      region rectRegion = CreateRegion();
+      RegionAddRect(rectRegion, whichRect);
+      return rectRegion;
+    }
 
-  //The channel animation and duration tracker.
+    //The channel animation and duration tracker.
 
     private unit caster;
     private float tick = 0;
@@ -67,7 +71,7 @@ public class QuestItemChannelRect{
 
 
 
-     thistype (unit caster, float duration, float facing, QuestItemChannelRect questItemChannelRect ){
+    thistype (unit caster, float duration, float facing, QuestItemChannelRect questItemChannelRect ){
 
       this.caster = caster;
       this.questItemChannelRect = questItemChannelRect;
@@ -99,7 +103,7 @@ public class QuestItemChannelRect{
     }
 
 
-  //Bring a unit to a location, where they will channel for some period of time. When it)s over, the QuestItem is completed.
+    //Bring a unit to a location, where they will channel for some period of time. When it)s over, the QuestItem is completed.
 
     private region target;
     private rect targetRect;
@@ -157,7 +161,7 @@ public class QuestItemChannelRect{
       }
     }
 
-     thistype (rect targetRect, string rectName, Legend whichLegend, float duration, float facing ){
+    thistype (rect targetRect, string rectName, Legend whichLegend, float duration, float facing ){
 
       trigger trig = CreateTrigger();
       this.target = RectToRegion(targetRect);
@@ -179,4 +183,5 @@ public class QuestItemChannelRect{
 
 
 
+  }
 }

@@ -1,4 +1,8 @@
-public class QuestDemonGateMonastery{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
+{
+  public class QuestDemonGateMonastery{
 
   
     private const int DEMONGATE_ID = FourCC(n081);
@@ -34,4 +38,5 @@ public class QuestDemonGateMonastery{
     }
 
 
+  }
 }

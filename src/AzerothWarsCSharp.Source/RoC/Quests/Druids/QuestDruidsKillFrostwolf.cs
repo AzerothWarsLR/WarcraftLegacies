@@ -1,4 +1,8 @@
-public class QuestDruidsKillFrostwolf{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Druids
+{
+  public class QuestDruidsKillFrostwolf{
 
   
     private const int RESEARCH_ID = FourCC(R044);
@@ -31,4 +35,5 @@ public class QuestDruidsKillFrostwolf{
     }
 
 
+  }
 }

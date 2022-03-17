@@ -1,4 +1,8 @@
-public class QuestMadnessPath{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
+{
+  public class QuestMadnessPath{
 
   
     private const int RESEARCH_ID = FourCC(R065)         ;//This research is required to complete the quest
@@ -80,4 +84,5 @@ public class QuestMadnessPath{
     }
 
 
+  }
 }

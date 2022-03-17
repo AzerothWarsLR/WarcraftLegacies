@@ -1,4 +1,9 @@
-public class QuestStonemaul{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Frostwolf
+{
+  public class QuestStonemaul{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R03S)   ;//This research is given when the quest is completed
@@ -21,7 +26,7 @@ public class QuestStonemaul{
       GroupEnumUnitsInRect(tempGroup, gg_rct_StonemaulKeep, null);
       u = FirstOfGroup(tempGroup);
       while(true){
-      if ( u == null){ break; }
+        if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
           UnitRescue(u, whichPlayer);
         }
@@ -55,4 +60,5 @@ public class QuestStonemaul{
     }
 
 
+  }
 }

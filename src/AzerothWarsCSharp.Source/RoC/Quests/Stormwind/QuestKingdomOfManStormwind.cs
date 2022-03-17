@@ -1,4 +1,9 @@
-public class QuestKingdomOfManStormwind{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
+{
+  public class QuestKingdomOfManStormwind{
 
   
     private const int RESEARCH_ID = FourCC(R01N);
@@ -52,4 +57,5 @@ public class QuestKingdomOfManStormwind{
     }
 
 
+  }
 }

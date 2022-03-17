@@ -1,4 +1,8 @@
-public class QuestJinthaAlor{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Zandalar
+{
+  public class QuestJinthaAlor{
 
   
     private const int JINTHAALOR_RESEARCH = FourCC(R02N);
@@ -31,4 +35,5 @@ public class QuestJinthaAlor{
     }
 
 
+  }
 }

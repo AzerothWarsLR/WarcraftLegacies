@@ -1,4 +1,8 @@
-public class QuestCivilWar{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
+{
+  public class QuestCivilWar{
 
 
     private boolean Global( ){
@@ -14,7 +18,7 @@ public class QuestCivilWar{
     }
 
     private void OnComplete( ){
-    this.Holder.Team = TEAM_SCOURGE;
+      this.Holder.Team = TEAM_SCOURGE;
     }
 
     public  thistype ( ){
@@ -26,4 +30,5 @@ public class QuestCivilWar{
     }
 
 
+  }
 }

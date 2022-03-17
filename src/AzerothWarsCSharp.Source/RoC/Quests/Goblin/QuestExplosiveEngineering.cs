@@ -1,4 +1,8 @@
-public class QuestExplosiveEngineering{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Goblin
+{
+  public class QuestExplosiveEngineering{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R01F)   ;//This research is given when the quest is completed
@@ -24,4 +28,5 @@ public class QuestExplosiveEngineering{
     }
 
 
+  }
 }

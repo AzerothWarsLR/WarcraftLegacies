@@ -1,4 +1,8 @@
-public class QuestScepterOfTheQueen{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests
+{
+  public class QuestScepterOfTheQueen{
 
 
     private string operator CompletionPopup( ){
@@ -57,19 +61,20 @@ public class QuestScepterOfTheQueen{
     }
 
 
-  private static void OnInit( ){
-    //Make the Shen)dralar starting units invulnerable
-    group tempGroup = CreateGroup();
-    unit u;
-    GroupEnumUnitsInRect(tempGroup, gg_rct_HighBourne, null);
-    while(true){
-      u = FirstOfGroup(tempGroup);
-      if ( u == null){ break; }
-      if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-        SetUnitInvulnerable(u, true);
+    private static void OnInit( ){
+      //Make the Shen)dralar starting units invulnerable
+      group tempGroup = CreateGroup();
+      unit u;
+      GroupEnumUnitsInRect(tempGroup, gg_rct_HighBourne, null);
+      while(true){
+        u = FirstOfGroup(tempGroup);
+        if ( u == null){ break; }
+        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
+          SetUnitInvulnerable(u, true);
+        }
+        GroupRemoveUnit(tempGroup, u);
       }
-      GroupRemoveUnit(tempGroup, u);
     }
-  }
 
+  }
 }

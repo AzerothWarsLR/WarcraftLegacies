@@ -1,4 +1,9 @@
-public class QuestHellfire{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
+{
+  public class QuestHellfire{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R00P);
@@ -21,7 +26,7 @@ public class QuestHellfire{
       GroupEnumUnitsInRect(tempGroup, gg_rct_HellfireUnlock, null);
       u = FirstOfGroup(tempGroup);
       while(true){
-      if ( u == null){ break; }
+        if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_AGGRESSIVE)){
           UnitRescue(u, whichPlayer);
         }
@@ -62,4 +67,5 @@ public class QuestHellfire{
     }
 
 
+  }
 }

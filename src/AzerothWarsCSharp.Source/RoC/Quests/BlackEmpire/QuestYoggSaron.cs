@@ -1,4 +1,9 @@
-public class QuestYoggSaron{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.BlackEmpire
+{
+  public class QuestYoggSaron{
 
   
     private const int RESEARCH_ID = FourCC(R07R);
@@ -27,4 +32,5 @@ public class QuestYoggSaron{
     }
 
 
+  }
 }

@@ -1,4 +1,8 @@
-public class QuestQueldanil{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
+{
+  public class QuestQueldanil{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R074)   ;//This research is given when the quest is completed
@@ -33,4 +37,5 @@ public class QuestQueldanil{
     }
 
 
+  }
 }

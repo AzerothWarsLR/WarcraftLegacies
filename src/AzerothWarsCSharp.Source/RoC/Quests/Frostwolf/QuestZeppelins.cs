@@ -1,4 +1,8 @@
-public class QuestZeppelins{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Frostwolf
+{
+  public class QuestZeppelins{
 
   
     private const int RESEARCH_ID = FourCC(R058);
@@ -33,4 +37,5 @@ public class QuestZeppelins{
     }
 
 
+  }
 }

@@ -1,4 +1,9 @@
-public class QuestCapitalCity{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
+{
+  public class QuestCapitalCity{
 
   
     private const int RESEARCH_ID = FourCC(R04Y)   ;//This research is given when the quest is completed
@@ -41,4 +46,5 @@ public class QuestCapitalCity{
     }
 
 
+  }
 }

@@ -1,4 +1,9 @@
-public class QuestFeludius{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Twilight
+{
+  public class QuestFeludius{
 
   
     private const int RESEARCH_ID = FourCC(R07T);
@@ -23,4 +28,5 @@ public class QuestFeludius{
     }
 
 
+  }
 }

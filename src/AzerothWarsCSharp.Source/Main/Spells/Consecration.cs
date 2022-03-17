@@ -1,4 +1,6 @@
-public class Consecration{
+namespace AzerothWarsCSharp.Source.Main.Spells
+{
+  public class Consecration{
 
   
     private const int ABIL_ID        = FourCC(A0WE);
@@ -11,26 +13,27 @@ public class Consecration{
     private group     TempGroup = CreateGroup();
   
 
-  private static void Cast( ){
-    unit u;
-    unit caster;
-    int level;
-    caster = GetTriggerUnit();
-    level = GetUnitAbilityLevel(caster, ABIL_ID);
-    P = GetOwningPlayer(caster);
-    GroupEnumUnitsInRange(TempGroup,GetUnitX(caster),GetUnitY(caster),RADIUS,( EnemyAliveFilter));
-    while(true){
-      u = FirstOfGroup(TempGroup);
-      if ( u == null){ break; }
-      UnitDamageTarget(caster, u, DAMAGE_BASE+DAMAGE_LEVEL*level, false, false, ATTACK_TYPE_NORMAL, DAMAGE_TYPE_MAGIC, WEAPON_TYPE_WHOKNOWS);
-      DummyCastUnit(GetOwningPlayer(caster), DUMMY_ID, DUMMY_ORDER, 1, u);
-      GroupRemoveUnit(TempGroup,u);
+    private static void Cast( ){
+      unit u;
+      unit caster;
+      int level;
+      caster = GetTriggerUnit();
+      level = GetUnitAbilityLevel(caster, ABIL_ID);
+      P = GetOwningPlayer(caster);
+      GroupEnumUnitsInRange(TempGroup,GetUnitX(caster),GetUnitY(caster),RADIUS,( EnemyAliveFilter));
+      while(true){
+        u = FirstOfGroup(TempGroup);
+        if ( u == null){ break; }
+        UnitDamageTarget(caster, u, DAMAGE_BASE+DAMAGE_LEVEL*level, false, false, ATTACK_TYPE_NORMAL, DAMAGE_TYPE_MAGIC, WEAPON_TYPE_WHOKNOWS);
+        DummyCastUnit(GetOwningPlayer(caster), DUMMY_ID, DUMMY_ORDER, 1, u);
+        GroupRemoveUnit(TempGroup,u);
+      }
+      DestroyEffect(AddSpecialEffect(EFFECT,GetUnitX(caster),GetUnitY(caster)));
     }
-    DestroyEffect(AddSpecialEffect(EFFECT,GetUnitX(caster),GetUnitY(caster)));
-  }
 
-  private static void OnInit( ){
-    RegisterSpellEffectAction(ABIL_ID,  Cast);
-  }
+    private static void OnInit( ){
+      RegisterSpellEffectAction(ABIL_ID,  Cast);
+    }
 
+  }
 }

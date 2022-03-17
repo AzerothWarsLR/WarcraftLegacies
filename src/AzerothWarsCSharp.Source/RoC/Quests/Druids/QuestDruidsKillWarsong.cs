@@ -1,4 +1,8 @@
-public class QuestDruidsKillWarsong{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Druids
+{
+  public class QuestDruidsKillWarsong{
 
   
     private const int UNITTYPE_ID = FourCC(e012) ;//Siege Ancient
@@ -30,4 +34,5 @@ public class QuestDruidsKillWarsong{
     }
 
 
+  }
 }

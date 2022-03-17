@@ -1,4 +1,8 @@
-public class QuestUndercity{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Forsaken
+{
+  public class QuestUndercity{
 
   
     private const int RESEARCH_ID = FourCC(R050)         ;//This research is required to complete the quest
@@ -55,4 +59,5 @@ public class QuestUndercity{
     }
 
 
+  }
 }

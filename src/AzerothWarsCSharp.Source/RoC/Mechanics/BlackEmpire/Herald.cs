@@ -1,4 +1,6 @@
-public class Herald{
+namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
+{
+  public class Herald{
 
   
     private const int HERALD_ID = FourCC(u02E);
@@ -53,13 +55,14 @@ public class Herald{
     }
 
 
-  private static void OnHeraldDeath( ){
-    DestroyEffect(AddSpecialEffect(DEATH_EFFECT, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit())));
-    RemoveUnit(GetTriggerUnit());
-  }
+    private static void OnHeraldDeath( ){
+      DestroyEffect(AddSpecialEffect(DEATH_EFFECT, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit())));
+      RemoveUnit(GetTriggerUnit());
+    }
 
-  private static void OnInit( ){
-    RegisterUnitTypeDiesAction(HERALD_ID,  OnHeraldDeath);
-  }
+    private static void OnInit( ){
+      RegisterUnitTypeDiesAction(HERALD_ID,  OnHeraldDeath);
+    }
 
+  }
 }

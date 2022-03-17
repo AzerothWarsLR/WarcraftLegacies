@@ -1,5 +1,10 @@
 //Destroy the Frozen Throne to unlock Mograine.
-public class QuestMograine{
+
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
+{
+  public class QuestMograine{
 
   
     private const int ALTAR_ID = FourCC(halt);
@@ -27,4 +32,5 @@ public class QuestMograine{
     }
 
 
+  }
 }

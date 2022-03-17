@@ -1,4 +1,6 @@
-public class UnitWithFuelZeppelin{
+namespace AzerothWarsCSharp.Source.RoC.Mechanics.Goblin
+{
+  public class UnitWithFuelZeppelin{
 
   
     private const int UNIT_TYPE = FourCC(h091);
@@ -35,7 +37,7 @@ public class UnitWithFuelZeppelin{
       KillUnit(this.unit);
     }
 
-  private void periodic( ){
+    private void periodic( ){
       tick = tick + 1;
       if (tick == TICK_RATE * T32_FPS){
         if (GetUnitState(this.unit, UNIT_STATE_MANA) < 1){
@@ -50,4 +52,5 @@ public class UnitWithFuelZeppelin{
 
 
 
+  }
 }

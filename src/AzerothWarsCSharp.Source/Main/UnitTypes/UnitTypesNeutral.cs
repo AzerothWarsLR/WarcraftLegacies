@@ -1,13 +1,18 @@
-public class UnitTypesNeutral{
+using AzerothWarsCSharp.Source.Main.Libraries;
 
-  private static void OnInit( ){
-    UnitType unitType = 0;
+namespace AzerothWarsCSharp.Source.Main.UnitTypes
+{
+  public class UnitTypesNeutral{
 
-    unitType = UnitType.create(FourCC(h059))      ;//Gilneas City Building
-    unitType.UnitCategory = UNITCATEGORY_FARM;
+    private static void OnInit( ){
+      UnitType unitType = 0;
 
-    unitType = UnitType.create(FourCC(h00I))      ;//Windmill
-    unitType.UnitCategory = UNITCATEGORY_FARM;
+      unitType = UnitType.create(FourCC(h059))      ;//Gilneas City Building
+      unitType.UnitCategory = UNITCATEGORY_FARM;
+
+      unitType = UnitType.create(FourCC(h00I))      ;//Windmill
+      unitType.UnitCategory = UNITCATEGORY_FARM;
+    }
+
   }
-
 }

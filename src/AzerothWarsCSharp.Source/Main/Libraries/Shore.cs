@@ -1,6 +1,8 @@
 //Just records a bunch of locations that are considered "shores" for the purposes of determing where the nearest shore is.
 
-public class Shore{
+namespace AzerothWarsCSharp.Source.Main.Libraries
+{
+  public class Shore{
 
 
     readonly static thistype[] shoresByIndex;
@@ -17,7 +19,7 @@ public class Shore{
       ;type.shoresByIndex[i];
     }
 
-     thistype (float x, float y ){
+    thistype (float x, float y ){
 
 
       this.x = x;
@@ -29,21 +31,22 @@ public class Shore{
     }
 
 
-  static Shore GetNearestShore(float x, float y ){
-    int i = 0;
-    Shore nearestShore = 0;
-    float nearestDistance = 1000000;
-    float tempDistance = 0;
-    while(true){
-    if ( i == Shore.shoreCount){ break; }
-      tempDistance = GetDistanceBetweenPointsEx(x, y, Shore.shoresByIndex[i].x, Shore.shoresByIndex[i].y);
-      if (tempDistance < nearestDistance){
-        nearestDistance = tempDistance;
-        nearestShore = Shore.shoresByIndex[i];
+    static Shore GetNearestShore(float x, float y ){
+      int i = 0;
+      Shore nearestShore = 0;
+      float nearestDistance = 1000000;
+      float tempDistance = 0;
+      while(true){
+        if ( i == Shore.shoreCount){ break; }
+        tempDistance = GetDistanceBetweenPointsEx(x, y, Shore.shoresByIndex[i].x, Shore.shoresByIndex[i].y);
+        if (tempDistance < nearestDistance){
+          nearestDistance = tempDistance;
+          nearestShore = Shore.shoresByIndex[i];
+        }
+        i = i + 1;
       }
-      i = i + 1;
+      return nearestShore;
     }
-    return nearestShore;
-  }
 
+  }
 }

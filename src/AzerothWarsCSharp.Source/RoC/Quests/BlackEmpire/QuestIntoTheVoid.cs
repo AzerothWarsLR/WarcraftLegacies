@@ -1,4 +1,8 @@
-public class QuestIntoTheVoid{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.BlackEmpire
+{
+  public class QuestIntoTheVoid{
 
   
     private const int QUESTRESEARCH_ID = FourCC(R084)   ;//This research is given when the quest is completed
@@ -28,4 +32,5 @@ public class QuestIntoTheVoid{
     }
 
 
+  }
 }

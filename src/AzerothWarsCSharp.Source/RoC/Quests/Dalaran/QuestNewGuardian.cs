@@ -1,4 +1,8 @@
-public class QuestNewGuardian{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
+{
+  public class QuestNewGuardian{
 
 
     private string operator CompletionPopup( ){
@@ -29,4 +33,5 @@ public class QuestNewGuardian{
     }
 
 
+  }
 }

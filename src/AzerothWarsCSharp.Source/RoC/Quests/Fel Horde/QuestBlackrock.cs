@@ -1,4 +1,9 @@
-public class QuestBlackrock{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
+{
+  public class QuestBlackrock{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R03C);
@@ -21,7 +26,7 @@ public class QuestBlackrock{
       GroupEnumUnitsInRect(tempGroup, gg_rct_BlackrockUnlock, null);
       u = FirstOfGroup(tempGroup);
       while(true){
-      if ( u == null){ break; }
+        if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
           UnitRescue(u, whichPlayer);
         }
@@ -56,4 +61,5 @@ public class QuestBlackrock{
     }
 
 
+  }
 }

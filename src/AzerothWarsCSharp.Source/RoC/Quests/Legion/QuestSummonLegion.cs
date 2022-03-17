@@ -1,4 +1,8 @@
-public class QuestSummonLegion{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
+{
+  public class QuestSummonLegion{
 
   
     private const int RITUAL_ID = FourCC(A00J);
@@ -31,4 +35,5 @@ public class QuestSummonLegion{
     }
 
 
+  }
 }

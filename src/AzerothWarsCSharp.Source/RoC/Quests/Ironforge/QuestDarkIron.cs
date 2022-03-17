@@ -1,4 +1,8 @@
-public class QuestDarkIron{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Ironforge
+{
+  public class QuestDarkIron{
 
   
     private const int HERO_ID = FourCC(H03G);
@@ -21,7 +25,7 @@ public class QuestDarkIron{
       GroupEnumUnitsInRect(tempGroup, gg_rct_Shadowforge_City, null);
       u = FirstOfGroup(tempGroup);
       while(true){
-      if ( u == null){ break; }
+        if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
           UnitRescue(u, this.Holder.Player);
         }
@@ -45,4 +49,5 @@ public class QuestDarkIron{
     }
 
 
+  }
 }

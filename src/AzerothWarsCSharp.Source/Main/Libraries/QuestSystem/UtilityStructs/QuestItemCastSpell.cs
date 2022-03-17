@@ -1,4 +1,6 @@
-public class QuestItemCastSpell{
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemCastSpell{
 
 
     private unit caster;
@@ -33,7 +35,7 @@ public class QuestItemCastSpell{
       }
     }
 
-     thistype (int spellId, boolean holderOnly ){
+    thistype (int spellId, boolean holderOnly ){
 
       PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_SPELL_FINISH,  thistype.OnAnyUnitFinishesSpell) ;//TODO: use filtered events
       if (holderOnly){
@@ -49,4 +51,5 @@ public class QuestItemCastSpell{
     }
 
 
+  }
 }

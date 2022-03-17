@@ -1,4 +1,8 @@
-public class QuestStromgarde{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
+{
+  public class QuestStromgarde{
 
   
     private const int HERO_ID = FourCC(H00Z);
@@ -60,4 +64,5 @@ public class QuestStromgarde{
     }
 
 
+  }
 }

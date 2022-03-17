@@ -1,5 +1,11 @@
 //Escapes Kalimdor, Find the Skull of Guldan
-public class QuestIllidanChapterTwo{
+
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
+{
+  public class QuestIllidanChapterTwo{
 
 
 
@@ -29,4 +35,5 @@ public class QuestIllidanChapterTwo{
     }
 
 
+  }
 }

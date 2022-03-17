@@ -1,4 +1,8 @@
-public class QuestLegionCaptureSunwell{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
+{
+  public class QuestLegionCaptureSunwell{
 
   
     private const int RESEARCH_ID = FourCC(R054);
@@ -29,4 +33,5 @@ public class QuestLegionCaptureSunwell{
     }
 
 
+  }
 }

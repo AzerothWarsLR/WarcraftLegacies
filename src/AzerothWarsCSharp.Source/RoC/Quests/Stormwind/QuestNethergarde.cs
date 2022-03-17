@@ -1,4 +1,8 @@
-public class QuestNethergarde{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
+{
+  public class QuestNethergarde{
 
 
     private string operator CompletionPopup( ){
@@ -17,7 +21,7 @@ public class QuestNethergarde{
       GroupEnumUnitsInRect(tempGroup, gg_rct_NethergardeUnlock, null);
       u = FirstOfGroup(tempGroup);
       while(true){
-      if ( u == null){ break; }
+        if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
           UnitRescue(u, whichPlayer);
         }
@@ -49,4 +53,5 @@ public class QuestNethergarde{
     }
 
 
+  }
 }

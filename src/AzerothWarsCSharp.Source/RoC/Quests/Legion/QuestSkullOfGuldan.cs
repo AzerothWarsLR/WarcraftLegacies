@@ -1,4 +1,8 @@
-public class QuestSkullOfGuldan{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
+{
+  public class QuestSkullOfGuldan{
 
 
     private QuestItemAnyUnitInRect questItemAnyUnitInRect;
@@ -30,4 +34,5 @@ public class QuestSkullOfGuldan{
     }
 
 
+  }
 }

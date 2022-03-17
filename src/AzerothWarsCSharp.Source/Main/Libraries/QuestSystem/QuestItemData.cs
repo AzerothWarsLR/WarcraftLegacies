@@ -1,4 +1,8 @@
-public class QuestItemData{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
+{
+  public class QuestItemData{
 
 
     private QuestData parentQuest;
@@ -213,7 +217,7 @@ public class QuestItemData{
 
     }
 
-     thistype ( ){
+    thistype ( ){
 
       this.overheadEffectPath = "Abilities\\Spells\\Other\\TalkToMe\\TalkToMe";
       ;;
@@ -224,4 +228,5 @@ public class QuestItemData{
     }
 
 
+  }
 }

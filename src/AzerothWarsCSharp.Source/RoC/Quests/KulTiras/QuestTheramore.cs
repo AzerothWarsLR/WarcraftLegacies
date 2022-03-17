@@ -1,4 +1,8 @@
-public class QuestTheramore{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.KulTiras
+{
+  public class QuestTheramore{
 
   
     private const int RESEARCH_ID = FourCC(R06K);
@@ -67,4 +71,5 @@ public class QuestTheramore{
     }
 
 
+  }
 }

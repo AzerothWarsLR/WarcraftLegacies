@@ -1,4 +1,9 @@
-public class QuestThePlaguelands{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Forsaken
+{
+  public class QuestThePlaguelands{
 
 
     private string operator CompletionPopup( ){
@@ -10,8 +15,8 @@ public class QuestThePlaguelands{
     }
 
     private void OnComplete( ){
-    FACTION_FORSAKEN.ModObjectLimit(FourCC(u01V), 2)           ;//Valyr
-    AdjustPlayerStateBJ( 500, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
+      FACTION_FORSAKEN.ModObjectLimit(FourCC(u01V), 2)           ;//Valyr
+      AdjustPlayerStateBJ( 500, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
     }
 
 
@@ -28,4 +33,5 @@ public class QuestThePlaguelands{
     }
 
 
+  }
 }

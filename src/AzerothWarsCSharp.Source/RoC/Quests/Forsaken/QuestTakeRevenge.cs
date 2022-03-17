@@ -1,4 +1,9 @@
-public class QuestTakeRevenge{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Forsaken
+{
+  public class QuestTakeRevenge{
 
 
     private string operator CompletionPopup( ){
@@ -27,4 +32,5 @@ public class QuestTakeRevenge{
     }
 
 
+  }
 }

@@ -1,10 +1,14 @@
-public class QuestItemArtifactInRect{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
-  private static region RectToRegion(rect whichRect ){
-    region rectRegion = CreateRegion();
-    RegionAddRect(rectRegion, whichRect);
-    return rectRegion;
-  }
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemArtifactInRect{
+
+    private static region RectToRegion(rect whichRect ){
+      region rectRegion = CreateRegion();
+      RegionAddRect(rectRegion, whichRect);
+      return rectRegion;
+    }
 
 
     private Artifact targetArtifact;
@@ -75,7 +79,7 @@ public class QuestItemArtifactInRect{
       }
     }
 
-     thistype (Artifact targetArtifact, rect targetRect, string rectName ){
+    thistype (Artifact targetArtifact, rect targetRect, string rectName ){
 
       this.targetArtifact = targetArtifact;
       this.targetRect = targetRect;
@@ -95,4 +99,5 @@ public class QuestItemArtifactInRect{
 
 
 
+  }
 }

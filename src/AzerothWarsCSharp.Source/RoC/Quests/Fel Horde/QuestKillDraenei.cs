@@ -1,4 +1,9 @@
-public class QuestKillDraenei{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
+{
+  public class QuestKillDraenei{
 
 
     private string operator CompletionPopup( ){
@@ -19,7 +24,7 @@ public class QuestKillDraenei{
       GroupEnumUnitsInRect(tempGroup, gg_rct_InstanceOutland, null);
       u = FirstOfGroup(tempGroup);
       while(true){
-      if ( u == null){ break; }
+        if ( u == null){ break; }
         if (GetOwningPlayer(u) == FACTION_DRAENEI.Player){
           if (IsUnitType(u, UNIT_TYPE_STRUCTURE) && !IsUnitType(u, UNIT_TYPE_ANCIENT)){
             KillUnit(u);
@@ -41,4 +46,5 @@ public class QuestKillDraenei{
     }
 
 
+  }
 }

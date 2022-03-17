@@ -1,4 +1,8 @@
-public class QuestItemAcquireArtifact{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemAcquireArtifact{
 
 
     private static int count = 0;
@@ -32,7 +36,7 @@ public class QuestItemAcquireArtifact{
       }
     }
 
-     thistype (Artifact target ){
+    thistype (Artifact target ){
 
       this.Description = "Acquire " + GetItemName(target.item);
       this.target = target;
@@ -42,10 +46,11 @@ public class QuestItemAcquireArtifact{
     }
 
 
-  private static void OnInit( ){
-    trigger trig = CreateTrigger();
-    OnArtifactOwnerChange.register(trig);
-    TriggerAddAction(trig,  QuestItemAcquireArtifact.OnAnyArtifactAcquired);
-  }
+    private static void OnInit( ){
+      trigger trig = CreateTrigger();
+      OnArtifactOwnerChange.register(trig);
+      TriggerAddAction(trig,  QuestItemAcquireArtifact.OnAnyArtifactAcquired);
+    }
 
+  }
 }

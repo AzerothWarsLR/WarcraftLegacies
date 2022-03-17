@@ -1,4 +1,9 @@
-public class QuestShadowfang{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
+{
+  public class QuestShadowfang{
 
 
 
@@ -31,4 +36,5 @@ public class QuestShadowfang{
     }
 
 
+  }
 }

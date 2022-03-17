@@ -1,4 +1,8 @@
-public class QuestScholomanceBuild{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Forsaken
+{
+  public class QuestScholomanceBuild{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R04Z)   ;//This research is given when the quest is completed
@@ -32,4 +36,5 @@ public class QuestScholomanceBuild{
     }
 
 
+  }
 }

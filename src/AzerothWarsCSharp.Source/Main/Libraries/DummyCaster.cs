@@ -58,33 +58,36 @@
 //     ¯¯¯¯¯¯¯¯¯
 //          - Viikuna for demonstrating how to make dummy casters cast instantaneously.
 //
-public class DummyCaster{
+namespace AzerothWarsCSharp.Source.Main.Libraries
+{
+  public class DummyCaster{
     // If you)re looking for where the )dumy) type is declared, it is declared
     // in the object merger line at the end of "How to implement?" in the above
     // documentation.
     
-        // If this is changed, the object merger line must also be changed
-        // before the second implementation step is followed.
-        const int DUMMY_TYPE=FourCC(u00X)
+    // If this is changed, the object merger line must also be changed
+    // before the second implementation step is followed.
+    const int DUMMY_TYPE=FourCC(u00X)
 
-        // This shouldn)t be changed, but in some maps perhaps it is necessary.
-        const player DUMMY_OWNER=Player(PLAYER_NEUTRAL_AGGRESSIVE)
+    // This shouldn)t be changed, but in some maps perhaps it is necessary.
+    const player DUMMY_OWNER=Player(PLAYER_NEUTRAL_AGGRESSIVE)
 
-        // Just because these belong here:
-        private const float CREATED_AT_X=00;
-        private const float CREATED_AT_Y=00;
+    // Just because these belong here:
+    private const float CREATED_AT_X=00;
+    private const float CREATED_AT_Y=00;
 
 //=====================================================================================
-        unit DUMMY=null
+    unit DUMMY=null
     
 
 
-                                             // create/destoy methods.
+    // create/destoy methods.
 
-        // called before library initialisers, making this important for adding
-        // abilities on map initialisation.
-        private static void onInit( ){
-            DUMMY=CreateUnit(DUMMY_OWNER,DUMMY_TYPE,CREATED_AT_X,CREATED_AT_Y,0)
-        }
+    // called before library initialisers, making this important for adding
+    // abilities on map initialisation.
+    private static void onInit( ){
+      DUMMY=CreateUnit(DUMMY_OWNER,DUMMY_TYPE,CREATED_AT_X,CREATED_AT_Y,0)
+    }
 
+  }
 }

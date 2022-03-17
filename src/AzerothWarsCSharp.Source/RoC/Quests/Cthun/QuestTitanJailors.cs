@@ -1,4 +1,9 @@
-public class QuestTitanJailors{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Cthun
+{
+  public class QuestTitanJailors{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R07B)   ;//This research is given when the quest is completed
@@ -37,4 +42,5 @@ public class QuestTitanJailors{
     }
 
 
+  }
 }

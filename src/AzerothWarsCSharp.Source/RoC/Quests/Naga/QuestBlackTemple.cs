@@ -1,4 +1,9 @@
-public class QuestBlackTemple{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
+{
+  public class QuestBlackTemple{
 
 
 
@@ -31,4 +36,5 @@ public class QuestBlackTemple{
     }
 
 
+  }
 }

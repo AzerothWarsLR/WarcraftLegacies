@@ -1,5 +1,10 @@
 //Kill Arugal
-public class QuestGilneasChapterThree{
+
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Gilneas
+{
+  public class QuestGilneasChapterThree{
 
    
     private const int RESEARCH_ID = FourCC(R02R);
@@ -37,4 +42,5 @@ public class QuestGilneasChapterThree{
     }
 
 
+  }
 }

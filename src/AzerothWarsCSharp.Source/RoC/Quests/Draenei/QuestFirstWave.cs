@@ -1,4 +1,8 @@
-public class QuestFirstWave{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Draenei
+{
+  public class QuestFirstWave{
 
 
 
@@ -26,4 +30,5 @@ public class QuestFirstWave{
     }
 
 
+  }
 }

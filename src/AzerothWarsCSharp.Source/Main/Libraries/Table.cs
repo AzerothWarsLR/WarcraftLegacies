@@ -1,5 +1,7 @@
 
-public class Table{
+namespace AzerothWarsCSharp.Source.Main.Libraries
+{
+    public class Table{
 //***************************************************************
 //* Table object 31
 //* ------------
@@ -39,7 +41,7 @@ public class Table{
         //Feel free to change max instances if necessary, it will only affect allocation
         //speed which shouldn)t matter that much.
 
-    //=========================================================
+        //=========================================================
         private hashtable ht = InitHashtable();
     
 
@@ -55,8 +57,8 @@ public class Table{
 
 
 
-    //Hey: Don)t instanciate other people)s textmacros that you are not supposed to, thanks.
-    //! textmacro Table__make takes name, type, key
+        //Hey: Don)t instanciate other people)s textmacros that you are not supposed to, thanks.
+        //! textmacro Table__make takes name, type, key
 
 
         integer operator []($type$ key ){
@@ -84,10 +86,11 @@ public class Table{
         }
 
 
-    //! endtextmacro
+        //! endtextmacro
 
-    //! runtextmacro Table__make("Table","integer","key" )
-    //! runtextmacro Table__make("StringTable","string", "StringHash(key)" )
-    //! runtextmacro Table__make("HandleTable","handle","GetHandleId(key)" )
+        //! runtextmacro Table__make("Table","integer","key" )
+        //! runtextmacro Table__make("StringTable","string", "StringHash(key)" )
+        //! runtextmacro Table__make("HandleTable","handle","GetHandleId(key)" )
 
+    }
 }

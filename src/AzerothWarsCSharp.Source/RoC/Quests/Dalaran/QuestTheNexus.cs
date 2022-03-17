@@ -1,4 +1,8 @@
-public class QuestTheNexus{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
+{
+  public class QuestTheNexus{
 
 
 
@@ -62,4 +66,5 @@ public class QuestTheNexus{
     }
 
 
+  }
 }

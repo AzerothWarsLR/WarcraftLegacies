@@ -1,4 +1,8 @@
-public class QuestConsumeTree{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
+{
+  public class QuestConsumeTree{
 
 
 
@@ -30,4 +34,5 @@ public class QuestConsumeTree{
     }
 
 
+  }
 }

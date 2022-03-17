@@ -1,4 +1,8 @@
-public class QuestItemControlPoint{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemControlPoint{
 
 
     private static trigger unitDies = CreateTrigger();
@@ -57,7 +61,7 @@ public class QuestItemControlPoint{
       }
     }
 
-     thistype (ControlPoint target ){
+    thistype (ControlPoint target ){
 
       this.target = target;
       this.Description = "Your team controls " + target.Name;
@@ -68,13 +72,14 @@ public class QuestItemControlPoint{
     }
 
 
-  private static void OnInit( ){
-    trigger trigOwnerChange = CreateTrigger();
-    trigger trigFaction = CreateTrigger();
-    OnControlPointOwnerChange.register(trigOwnerChange);
-    OnFactionTeamJoin.register(trigFaction);
-    TriggerAddAction(trigOwnerChange,  QuestItemControlPoint.OnAnyControlPointChangeOwner);
-    TriggerAddAction(trigFaction,  QuestItemControlPoint.OnFactionTeamJoin);
-  }
+    private static void OnInit( ){
+      trigger trigOwnerChange = CreateTrigger();
+      trigger trigFaction = CreateTrigger();
+      OnControlPointOwnerChange.register(trigOwnerChange);
+      OnFactionTeamJoin.register(trigFaction);
+      TriggerAddAction(trigOwnerChange,  QuestItemControlPoint.OnAnyControlPointChangeOwner);
+      TriggerAddAction(trigFaction,  QuestItemControlPoint.OnFactionTeamJoin);
+    }
 
+  }
 }

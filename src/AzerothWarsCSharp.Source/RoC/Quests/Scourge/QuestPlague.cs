@@ -1,4 +1,8 @@
-public class QuestPlague{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
+{
+  public class QuestPlague{
 
   
     private const int RESEARCH_ID = FourCC(R06I);
@@ -34,4 +38,5 @@ public class QuestPlague{
     }
 
 
+  }
 }

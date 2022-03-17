@@ -1,29 +1,31 @@
 //An instance is a region that is physically seperate from all other instances irrespective of its actual geographical location on the Warcraft map.
 
-public class Instance{
+namespace AzerothWarsCSharp.Source.Main.Libraries
+{
+  public class Instance{
 
 
-      readonly float interiorX = 0;
-      readonly float interiorY = 0;
-      readonly float exteriorX = 0;
-      readonly float exteriorY = 0;
+    readonly float interiorX = 0;
+    readonly float interiorY = 0;
+    readonly float exteriorX = 0;
+    readonly float exteriorY = 0;
 
-       thistype (float interiorX, float interiorY, float exteriorX, float exteriorY ){
+    thistype (float interiorX, float interiorY, float exteriorX, float exteriorY ){
 
 
-        this.interiorX = interiorX;
-        this.interiorY = interiorY;
-        this.exteriorX = exteriorX;
-        this.exteriorY = exteriorY;
+      this.interiorX = interiorX;
+      this.interiorY = interiorY;
+      this.exteriorX = exteriorX;
+      this.exteriorY = exteriorY;
 
-        ;;
-      }
+      ;;
+    }
 
 
     static Instance GetPointInstance(float x, float y ){
       int i = 0;
       while(true){
-      if ( i == Instance.instanceCount-1){ break; }
+        if ( i == Instance.instanceCount-1){ break; }
         if (IsPointInRegion(Instance.instancesByIndex[i].whichRegion, x, y)){
           return Instance.instancesByIndex[i];
         }
@@ -33,56 +35,56 @@ public class Instance{
     }
 
 
-      readonly static thistype[] instancesByIndex;
-      readonly static int instanceCount = 0;
-      readonly region whichRegion;
-      readonly int gateCount = 0;
-      readonly Gate[] gatesByIndex[10];
-      private string name = null;
+    readonly static thistype[] instancesByIndex;
+    readonly static int instanceCount = 0;
+    readonly region whichRegion;
+    readonly int gateCount = 0;
+    readonly Gate[] gatesByIndex[10];
+    private string name = null;
 
-      string operator Name( ){
-        ;.name;
-      }
+    string operator Name( ){
+      ;.name;
+    }
 
-      void operator Name=(string value ){
-        this.name = value;
-      }
+    void operator Name=(string value ){
+      this.name = value;
+    }
 
-      Gate getNearestGate(float x1, float y2 ){
-        int i = 0;
-        float distanceToNearestGate = 0;
-        float tempReal = 0;
-        Gate nearestGate = 0;
-        while(true){
+    Gate getNearestGate(float x1, float y2 ){
+      int i = 0;
+      float distanceToNearestGate = 0;
+      float tempReal = 0;
+      Gate nearestGate = 0;
+      while(true){
         if ( i == this.gateCount){ break; }
-          tempReal = GetDistanceBetweenPoints(x1, y2, this.gatesByIndex[i].interiorX, this.gatesByIndex[i].interiorY);
-          if (tempReal > distanceToNearestGate){
-            nearestGate = this.gatesByIndex[i];
-            distanceToNearestGate = tempReal;
-          }
-          i = i + 1;
+        tempReal = GetDistanceBetweenPoints(x1, y2, this.gatesByIndex[i].interiorX, this.gatesByIndex[i].interiorY);
+        if (tempReal > distanceToNearestGate){
+          nearestGate = this.gatesByIndex[i];
+          distanceToNearestGate = tempReal;
         }
-        return nearestGate;
+        i = i + 1;
       }
+      return nearestGate;
+    }
 
-      void addGate(float x1, float y1, float x2, float y2 ){
-        this.gatesByIndex[gateCount] = Gate.create(x1, y1, x2, y2);
-        this.gateCount = this.gateCount + 1;
-      }
+    void addGate(float x1, float y1, float x2, float y2 ){
+      this.gatesByIndex[gateCount] = Gate.create(x1, y1, x2, y2);
+      this.gateCount = this.gateCount + 1;
+    }
 
-      void addRect(rect whichRect ){
-        RegionAddRect(this.whichRegion, whichRect);
-      }
+    void addRect(rect whichRect ){
+      RegionAddRect(this.whichRegion, whichRect);
+    }
 
-       thistype ( ){
+    thistype ( ){
 
 
-        this.whichRegion = CreateRegion();
-        thistype.instancesByIndex[thistype.instanceCount] = this;
-        thistype.instanceCount = thistype.instanceCount + 1;
+      this.whichRegion = CreateRegion();
+      thistype.instancesByIndex[thistype.instanceCount] = this;
+      thistype.instanceCount = thistype.instanceCount + 1;
 
-        ;;
-      }
+      ;;
+    }
 
 
     //Determines the virtual distance between two points which may or may not be in seperate Instances
@@ -112,4 +114,5 @@ public class Instance{
       return sumDistance;
     }
 
+  }
 }

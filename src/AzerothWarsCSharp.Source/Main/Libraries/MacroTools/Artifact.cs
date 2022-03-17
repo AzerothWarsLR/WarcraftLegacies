@@ -1,4 +1,6 @@
-public class Artifact{
+namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
+{
+  public class Artifact{
 
   
     Event OnArtifactCreate
@@ -19,7 +21,7 @@ public class Artifact{
     const int ARTIFACT_HOLDER_ABIL_ID = FourCC(A01Y);
   
 
-  //A node in an ArtifactGroup
+    //A node in an ArtifactGroup
 
     thistype next = 0;
     thistype prev = 0;
@@ -33,7 +35,7 @@ public class Artifact{
       return false;
     }
 
-     thistype (Artifact whichArtifact ){
+    thistype (Artifact whichArtifact ){
 
 
       this.whichArtifact = whichArtifact;
@@ -42,7 +44,7 @@ public class Artifact{
     }
 
 
-  //A linkedlist of Artifacts for iteration
+    //A linkedlist of Artifacts for iteration
 
     static thistype[] artifactGroupsByPlayerId      //A list of ArtifactGroups indexed by player ID, automatically populated by the system
     static Table artifactGroupsByOwningUnit             //A list of ArtifactGroups indexed by the handle ID of the owning unit
@@ -53,7 +55,7 @@ public class Artifact{
     void setOwningPersons(Person p ){
       ArtifactNode tempArtifactNode = this.first;
       while(true){
-      if ( tempArtifactNode == 0){ break; }
+        if ( tempArtifactNode == 0){ break; }
         tempArtifactNode.whichArtifact.setOwningPerson(p);
         tempArtifactNode = tempArtifactNode.next;
       }
@@ -62,7 +64,7 @@ public class Artifact{
     void updateFactions( ){
       ArtifactNode tempArtifactNode = this.first;
       while(true){
-      if ( tempArtifactNode == 0){ break; }
+        if ( tempArtifactNode == 0){ break; }
         tempArtifactNode.whichArtifact.updateFaction();
         tempArtifactNode = tempArtifactNode.next;
       }
@@ -77,7 +79,7 @@ public class Artifact{
     void clear( ){
       ArtifactNode tempArtifactNode = 0;
       while(true){
-      if ( this.last == 0){ break; }
+        if ( this.last == 0){ break; }
         tempArtifactNode = this.last;
         this.last = this.last.prev;
         tempArtifactNode.destroy();
@@ -117,7 +119,7 @@ public class Artifact{
       this.artifactNodesByArtifact[whichArtifact] = newArtifactNode;
     }
 
-     thistype ( ){
+    thistype ( ){
 
 
       this.artifactNodesByArtifact = Table.create();
@@ -128,7 +130,7 @@ public class Artifact{
     static void onInit( ){
       int i = 0;
       while(true){
-      if ( i > MAX_PLAYERS){ break; }
+        if ( i > MAX_PLAYERS){ break; }
         thistype.artifactGroupsByPlayerId[i] = thistype.create()    ;//These should really get destroyed at some point if the Person gets destroyed
         i = i + 1;
       }
@@ -292,7 +294,7 @@ public class Artifact{
       this.deallocate();
     }
 
-     Artifact (item whichItem ){
+    Artifact (item whichItem ){
 
       if (thistype.artifactsByType[GetItemTypeId(whichItem)] == null){
         thistype.artifactsByType[GetItemTypeId(whichItem)] = this;
@@ -313,60 +315,61 @@ public class Artifact{
     }
 
 
-  static Artifact GetTriggerArtifact( ){
-    return Artifact.triggerArtifact;
-  }
-
-  private static void ItemPickup( ){
-    Artifact tempArtifact = Artifact.artifactsByType[GetItemTypeId(GetManipulatedItem())];
-    if (tempArtifact != 0){
-      tempArtifact.pickedUp();
+    static Artifact GetTriggerArtifact( ){
+      return Artifact.triggerArtifact;
     }
-  }
 
-  private static void ItemDrop( ){
-    Artifact tempArtifact = 0;
-    if (!IsUnitIllusion(GetTriggerUnit())){
-      tempArtifact = Artifact.artifactsByType[GetItemTypeId(GetManipulatedItem())];
+    private static void ItemPickup( ){
+      Artifact tempArtifact = Artifact.artifactsByType[GetItemTypeId(GetManipulatedItem())];
       if (tempArtifact != 0){
-        tempArtifact.dropped();
+        tempArtifact.pickedUp();
       }
     }
-  }
 
-  private static void OnPersonFactionChanged( ){
-    ArtifactGroup.artifactGroupsByPlayerId[GetPlayerId(GetTriggerPerson().Player)].updateFactions();
-  }
-
-  private static void UnitChangeOwner( ){
-    ArtifactGroup tempArtifactGroup = ArtifactGroup.artifactGroupsByOwningUnit[GetHandleId(GetTriggerUnit())];
-    if (tempArtifactGroup != 0){
-      if (GetTriggerUnit() != null){
-        tempArtifactGroup.setOwningPersons(Person.ByHandle(GetOwningPlayer(GetTriggerUnit())));
-      }else {
-        tempArtifactGroup.setOwningPersons(0);
+    private static void ItemDrop( ){
+      Artifact tempArtifact = 0;
+      if (!IsUnitIllusion(GetTriggerUnit())){
+        tempArtifact = Artifact.artifactsByType[GetItemTypeId(GetManipulatedItem())];
+        if (tempArtifact != 0){
+          tempArtifact.dropped();
+        }
       }
     }
+
+    private static void OnPersonFactionChanged( ){
+      ArtifactGroup.artifactGroupsByPlayerId[GetPlayerId(GetTriggerPerson().Player)].updateFactions();
+    }
+
+    private static void UnitChangeOwner( ){
+      ArtifactGroup tempArtifactGroup = ArtifactGroup.artifactGroupsByOwningUnit[GetHandleId(GetTriggerUnit())];
+      if (tempArtifactGroup != 0){
+        if (GetTriggerUnit() != null){
+          tempArtifactGroup.setOwningPersons(Person.ByHandle(GetOwningPlayer(GetTriggerUnit())));
+        }else {
+          tempArtifactGroup.setOwningPersons(0);
+        }
+      }
+    }
+
+    private static void OnInit( ){
+      trigger trig = CreateTrigger();
+      OnPersonFactionChange.register(trig);
+      TriggerAddAction(trig,  OnPersonFactionChanged);
+
+      PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_PICKUP_ITEM,  ItemPickup) ;//TODO: use filtered events
+      PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_DROP_ITEM,  ItemDrop) ;//TODO: use filtered events
+      PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_CHANGE_OWNER,  UnitChangeOwner) ;//TODO: use filtered events
+
+      OnArtifactCreate = Event.create();
+      OnArtifactAcquire = Event.create();
+      OnArtifactDrop = Event.create();
+      OnArtifactDestroy = Event.create();
+      OnArtifactOwnerChange = Event.create();
+      OnArtifactStatusChange = Event.create();
+      OnArtifactFactionChange = Event.create();
+      OnArtifactCarrierOwnerChange = Event.create();
+      OnArtifactDescriptionChange = Event.create();
+    }
+
   }
-
-  private static void OnInit( ){
-    trigger trig = CreateTrigger();
-    OnPersonFactionChange.register(trig);
-    TriggerAddAction(trig,  OnPersonFactionChanged);
-
-    PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_PICKUP_ITEM,  ItemPickup) ;//TODO: use filtered events
-    PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_DROP_ITEM,  ItemDrop) ;//TODO: use filtered events
-    PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_CHANGE_OWNER,  UnitChangeOwner) ;//TODO: use filtered events
-
-    OnArtifactCreate = Event.create();
-    OnArtifactAcquire = Event.create();
-    OnArtifactDrop = Event.create();
-    OnArtifactDestroy = Event.create();
-    OnArtifactOwnerChange = Event.create();
-    OnArtifactStatusChange = Event.create();
-    OnArtifactFactionChange = Event.create();
-    OnArtifactCarrierOwnerChange = Event.create();
-    OnArtifactDescriptionChange = Event.create();
-  }
-
 }

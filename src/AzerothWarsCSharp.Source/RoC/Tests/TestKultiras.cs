@@ -1,4 +1,6 @@
-public class TestKultiras{
+namespace AzerothWarsCSharp.Source.RoC.Tests
+{
+  public class TestKultiras{
 
 
     void Run( ){
@@ -11,4 +13,5 @@ public class TestKultiras{
     }
 
 
+  }
 }

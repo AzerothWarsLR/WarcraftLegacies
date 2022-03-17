@@ -1,4 +1,9 @@
-public class QuestSafeSea{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.KulTiras
+{
+  public class QuestSafeSea{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R06T)   ;//This research is given when the quest is completed
@@ -30,4 +35,5 @@ public class QuestSafeSea{
     }
 
 
+  }
 }

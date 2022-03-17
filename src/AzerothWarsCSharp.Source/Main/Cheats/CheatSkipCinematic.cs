@@ -1,4 +1,6 @@
-public class CheatSkipCinematic{
+namespace AzerothWarsCSharp.Source.Main.Cheats
+{
+  public class CheatSkipCinematic{
 
     private static void Actions( ){
       CinematicModeBJ(false, GetPlayersAll());
@@ -9,7 +11,7 @@ public class CheatSkipCinematic{
       trigger trig = CreateTrigger(  );
       int i = 0;
       while(true){
-      if ( i > MAX_PLAYERS){ break; }
+        if ( i > MAX_PLAYERS){ break; }
         TriggerRegisterPlayerEventEndCinematic(trig, Player(i));
         i = i + 1;
       }
@@ -17,4 +19,5 @@ public class CheatSkipCinematic{
       TriggerAddAction( trig,  Actions );
     }
 
+  }
 }

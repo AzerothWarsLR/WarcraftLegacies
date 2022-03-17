@@ -1,4 +1,8 @@
-public class QuestExilePath{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
+{
+  public class QuestExilePath{
 
   
     private const int RESEARCH_ID = FourCC(R063)         ;//This research is required to complete the quest
@@ -15,7 +19,7 @@ public class QuestExilePath{
       GroupEnumUnitsInRect(tempGroup, gg_rct_AkamaUnlock, null);
       u = FirstOfGroup(tempGroup);
       while(true){
-      if ( u == null){ break; }
+        if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
           UnitRescue(u, whichPlayer);
         }
@@ -81,4 +85,5 @@ public class QuestExilePath{
     }
 
 
+  }
 }

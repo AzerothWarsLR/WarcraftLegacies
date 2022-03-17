@@ -1,4 +1,6 @@
-public class QuestItemBuild{
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemBuild{
 
 
     private static int count = 0;
@@ -12,7 +14,7 @@ public class QuestItemBuild{
       this.Description = "Build " + GetObjectName(objectId) + "s (" + I2S(currentBuildCount) + "/" + I2S(targetBuildCount) + ")";
     }
 
-     thistype (int objectId, int targetBuildCount ){
+    thistype (int objectId, int targetBuildCount ){
 
       this.objectId = objectId;
       thistype.byIndex[thistype.count] = this;
@@ -30,14 +32,15 @@ public class QuestItemBuild{
         if ( i == thistype.count){ break; }
         loopQuestItem = thistype.byIndex[i];
 
-          loopQuestItem.CurrentBuildCount = loopQuestItem.currentBuildCount + 1;
-          if (loopQuestItem.currentBuildCount == loopQuestItem.targetBuildCount){
-            loopQuestItem.Progress = QUEST_PROGRESS_COMPLETE;
-          }
+        loopQuestItem.CurrentBuildCount = loopQuestItem.currentBuildCount + 1;
+        if (loopQuestItem.currentBuildCount == loopQuestItem.targetBuildCount){
+          loopQuestItem.Progress = QUEST_PROGRESS_COMPLETE;
         }
-        i = i + 1;
       }
+      i = i + 1;
     }
+  }
+}
 
     private static void onInit( ){
       PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_CONSTRUCT_FINISH,  thistype.OnAnyBuild) ;//TODO: use filtered events

@@ -1,4 +1,9 @@
-public class QuestDrakUnlock{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
+{
+  public class QuestDrakUnlock{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R08J);
@@ -33,4 +38,5 @@ public class QuestDrakUnlock{
     }
 
 
+  }
 }

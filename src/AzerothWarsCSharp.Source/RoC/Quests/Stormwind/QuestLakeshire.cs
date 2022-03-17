@@ -1,4 +1,9 @@
-public class QuestLakeshire{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
+{
+  public class QuestLakeshire{
 
 
     private string operator CompletionPopup( ){
@@ -17,7 +22,7 @@ public class QuestLakeshire{
       GroupEnumUnitsInRect(tempGroup, gg_rct_LakeshireUnlock, null);
       u = FirstOfGroup(tempGroup);
       while(true){
-      if ( u == null){ break; }
+        if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
           UnitRescue(u, whichPlayer);
         }
@@ -49,4 +54,5 @@ public class QuestLakeshire{
     }
 
 
+  }
 }

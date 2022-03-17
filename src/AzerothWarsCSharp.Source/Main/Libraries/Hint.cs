@@ -1,4 +1,6 @@
-public class Hint{
+namespace AzerothWarsCSharp.Source.Main.Libraries
+{
+  public class Hint{
 
   
     private const float HINT_INTERVAL = 180;
@@ -20,7 +22,7 @@ public class Hint{
       }
     }
 
-     thistype (string msg ){
+    thistype (string msg ){
 
       this.msg = msg;
       all.add(this);
@@ -35,21 +37,22 @@ public class Hint{
 
 
 
-  private static void DisplayRandomHints( ){
-    int i = 0;
-    while(true){
-      if ( i == MAX_PLAYERS){ break; }
-      if (GetLocalPlayer() == Player(i)){
-        Hint.displayRandom();
+    private static void DisplayRandomHints( ){
+      int i = 0;
+      while(true){
+        if ( i == MAX_PLAYERS){ break; }
+        if (GetLocalPlayer() == Player(i)){
+          Hint.displayRandom();
+        }
+        i = i + 1;
       }
-      i = i + 1;
     }
-  }
 
-  private static void OnInit( ){
-    trigger trig = CreateTrigger();
-    TriggerRegisterTimerEventPeriodic(trig, HINT_INTERVAL);
-    TriggerAddAction(trig,  DisplayRandomHints);
-  }
+    private static void OnInit( ){
+      trigger trig = CreateTrigger();
+      TriggerRegisterTimerEventPeriodic(trig, HINT_INTERVAL);
+      TriggerAddAction(trig,  DisplayRandomHints);
+    }
 
+  }
 }

@@ -1,4 +1,8 @@
-public class QuestBusinessExpansion{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Goblin
+{
+  public class QuestBusinessExpansion{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R07G)   ;//This research is given when the quest is completed
@@ -13,7 +17,7 @@ public class QuestBusinessExpansion{
       return "The shipyard will be buildable";
     }
 
-     private void GrantGadetzan(player whichPlayer ){
+    private void GrantGadetzan(player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
 
@@ -21,7 +25,7 @@ public class QuestBusinessExpansion{
       GroupEnumUnitsInRect(tempGroup, gg_rct_GadgetUnlock, null);
       u = FirstOfGroup(tempGroup);
       while(true){
-      if ( u == null){ break; }
+        if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
           UnitRescue(u, whichPlayer);
         }
@@ -52,4 +56,5 @@ public class QuestBusinessExpansion{
     }
 
 
+  }
 }

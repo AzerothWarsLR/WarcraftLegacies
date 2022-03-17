@@ -1,10 +1,14 @@
-public class QuestItemLegendInRect{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
-  private static region RectToRegion(rect whichRect ){
-    region rectRegion = CreateRegion();
-    RegionAddRect(rectRegion, whichRect);
-    return rectRegion;
-  }
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemLegendInRect{
+
+    private static region RectToRegion(rect whichRect ){
+      region rectRegion = CreateRegion();
+      RegionAddRect(rectRegion, whichRect);
+      return rectRegion;
+    }
 
 
     private Legend legend;
@@ -64,7 +68,7 @@ public class QuestItemLegendInRect{
       }
     }
 
-     thistype (Legend legend, rect targetRect, string rectName ){
+    thistype (Legend legend, rect targetRect, string rectName ){
 
       this.target = RectToRegion(targetRect);
       this.targetRect = targetRect;
@@ -83,4 +87,5 @@ public class QuestItemLegendInRect{
     }
 
 
+  }
 }

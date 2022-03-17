@@ -1,4 +1,6 @@
-public class Persons{
+namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
+{
+  public class Persons{
 
   
     force Observers
@@ -122,7 +124,7 @@ public class Persons{
       this.partialGold = this.partialGold + remainderGold;
 
       while(true){
-      if ( this.partialGold < 1){ break; }
+        if ( this.partialGold < 1){ break; }
         this.partialGold = this.partialGold - 1;
         SetPlayerState(p, PLAYER_STATE_RESOURCE_GOLD, GetPlayerState(p, PLAYER_STATE_RESOURCE_GOLD) + 1);
       }
@@ -150,7 +152,7 @@ public class Persons{
       ;type.byId[GetPlayerId(whichPlayer)];
     }
 
-     Person (player p ){
+    Person (player p ){
 
 
       this.p = p;
@@ -164,17 +166,18 @@ public class Persons{
 
 
 
-  static Faction GetChangingPersonPrevFaction( ){
-    return Person.prevFaction;
-  }
+    static Faction GetChangingPersonPrevFaction( ){
+      return Person.prevFaction;
+    }
 
-  static Person GetTriggerPerson( ){
-    return Person.triggerPerson;
-  }
+    static Person GetTriggerPerson( ){
+      return Person.triggerPerson;
+    }
 
-  private static void OnInit( ){
-    Observers = CreateForce();
-    OnPersonFactionChange = Event.create();
-  }
+    private static void OnInit( ){
+      Observers = CreateForce();
+      OnPersonFactionChange = Event.create();
+    }
 
+  }
 }

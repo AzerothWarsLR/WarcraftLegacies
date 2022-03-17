@@ -1,7 +1,11 @@
 //When Maiev dies, she becomes an illusory assassin with additional damage.
 //If she hits at least x times before it expires, she revives. Lasts y seconds.
 
-public class TakeVengeance{
+using AzerothWarsCSharp.Source.Main.Libraries;
+
+namespace AzerothWarsCSharp.Source.Main.Spells
+{
+  public class TakeVengeance{
 
   
     private const int HERO_ID = FourCC(Ewrd) ;//The hero that can use Take Vengeance
@@ -75,7 +79,7 @@ public class TakeVengeance{
       vengeanceByUnit = Table.create();
     }
 
-     thistype (unit caster, int damageBonus, float heal, float duration ){
+    thistype (unit caster, int damageBonus, float heal, float duration ){
 
       SetUnitState(caster, UNIT_STATE_LIFE, heal);
       vengeanceByUnit[GetHandleId(caster)] = this;
@@ -93,31 +97,32 @@ public class TakeVengeance{
     }
 
 
-  //When Maiev deals damage, check if she has Vengeance and act
-  private static void OnInflictsDamage( ){
-    Vengeance tempVengeance = Vengeance.vengeanceByUnit[GetHandleId(GetEventDamageSource())];
+    //When Maiev deals damage, check if she has Vengeance and act
+    private static void OnInflictsDamage( ){
+      Vengeance tempVengeance = Vengeance.vengeanceByUnit[GetHandleId(GetEventDamageSource())];
       if (tempVengeance != 0 && BlzGetEventIsAttack() == true){
         tempVengeance.onAttack();
       }
-  }
-
-  //Unit is damaged; check if it has this ability and it would take the damage. If so, trigger this ability
-  private static void OnTakesDamage( ){
-    unit triggerUnit = GetTriggerUnit();
-    int abilityLevel = 0;
-    if (GetUnitAbilityLevel(triggerUnit, ABIL_ID) > 0){
-      abilityLevel = GetUnitAbilityLevel(triggerUnit, ABIL_ID);
-      if (BlzGetUnitSkin(triggerUnit) != ALTERNATE_FORM_ID && GetEventDamage() >= GetUnitState(triggerUnit, UNIT_STATE_LIFE) && GetUnitState(triggerUnit, UNIT_STATE_MANA) >= BlzGetUnitAbilityManaCost(triggerUnit, ABIL_ID, abilityLevel)){
-        BlzSetEventDamage(0);
-        Vengeance.create(triggerUnit, DAMAGE_BASE + DAMAGE_LEVEL*abilityLevel, HEAL_BASE + HEAL_LEVEL*abilityLevel, DURATION);
-      }
     }
-    triggerUnit = null;
-  }
 
-  private static void OnInit( ){
-    RegisterUnitTypeTakesDamageAction(HERO_ID,  OnTakesDamage);
-    RegisterUnitTypeInflictsDamageAction(HERO_ID,  OnInflictsDamage);
-  }
+    //Unit is damaged; check if it has this ability and it would take the damage. If so, trigger this ability
+    private static void OnTakesDamage( ){
+      unit triggerUnit = GetTriggerUnit();
+      int abilityLevel = 0;
+      if (GetUnitAbilityLevel(triggerUnit, ABIL_ID) > 0){
+        abilityLevel = GetUnitAbilityLevel(triggerUnit, ABIL_ID);
+        if (BlzGetUnitSkin(triggerUnit) != ALTERNATE_FORM_ID && GetEventDamage() >= GetUnitState(triggerUnit, UNIT_STATE_LIFE) && GetUnitState(triggerUnit, UNIT_STATE_MANA) >= BlzGetUnitAbilityManaCost(triggerUnit, ABIL_ID, abilityLevel)){
+          BlzSetEventDamage(0);
+          Vengeance.create(triggerUnit, DAMAGE_BASE + DAMAGE_LEVEL*abilityLevel, HEAL_BASE + HEAL_LEVEL*abilityLevel, DURATION);
+        }
+      }
+      triggerUnit = null;
+    }
 
+    private static void OnInit( ){
+      RegisterUnitTypeTakesDamageAction(HERO_ID,  OnTakesDamage);
+      RegisterUnitTypeInflictsDamageAction(HERO_ID,  OnInflictsDamage);
+    }
+
+  }
 }

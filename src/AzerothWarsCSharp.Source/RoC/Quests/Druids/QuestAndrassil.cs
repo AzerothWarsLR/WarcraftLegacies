@@ -1,4 +1,9 @@
-public class QuestAndrassil{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Druids
+{
+  public class QuestAndrassil{
 
   
     private const int RESEARCH_ID = FourCC(R002);
@@ -35,4 +40,5 @@ public class QuestAndrassil{
     }
 
 
+  }
 }

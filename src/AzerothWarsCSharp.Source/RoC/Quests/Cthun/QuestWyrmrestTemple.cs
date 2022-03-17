@@ -1,4 +1,8 @@
-public class QuestWyrmrestTemple{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Cthun
+{
+  public class QuestWyrmrestTemple{
 
   
     private const int RESEARCH_ID = FourCC(R07S);
@@ -27,4 +31,5 @@ public class QuestWyrmrestTemple{
     }
 
 
+  }
 }

@@ -1,4 +1,8 @@
-public class QuestJoinAllianceSentinel{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Sentinels
+{
+  public class QuestJoinAllianceSentinel{
 
 
 
@@ -24,4 +28,5 @@ public class QuestJoinAllianceSentinel{
     }
 
 
+  }
 }

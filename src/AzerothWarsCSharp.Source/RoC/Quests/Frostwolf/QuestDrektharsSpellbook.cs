@@ -1,4 +1,8 @@
-public class QuestDrektharsSpellbook{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Frostwolf
+{
+  public class QuestDrektharsSpellbook{
 
 
     private string operator CompletionPopup( ){
@@ -22,4 +26,5 @@ public class QuestDrektharsSpellbook{
     }
 
 
+  }
 }

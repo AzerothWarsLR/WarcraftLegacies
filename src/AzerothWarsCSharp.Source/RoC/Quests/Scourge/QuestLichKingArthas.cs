@@ -1,4 +1,8 @@
-public class QuestLichKingArthas{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
+{
+  public class QuestLichKingArthas{
 
 
     boolean operator Global( ){
@@ -46,4 +50,5 @@ public class QuestLichKingArthas{
     }
 
 
+  }
 }

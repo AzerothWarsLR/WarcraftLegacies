@@ -1,4 +1,9 @@
-public class QuestGazlowe{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Frostwolf
+{
+  public class QuestGazlowe{
 
   
     private const int RESEARCH_ID = FourCC(R01F);
@@ -31,4 +36,5 @@ public class QuestGazlowe{
     }
 
 
+  }
 }

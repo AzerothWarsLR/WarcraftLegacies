@@ -1,13 +1,18 @@
-public class CthunQuestSetup{
+using AzerothWarsCSharp.Source.RoC.Quests.Cthun;
 
-  public static void OnInit( ){
+namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
+{
+  public class CthunQuestSetup{
 
-    FACTION_CTHUN.StartingQuest = FACTION_CTHUN.AddQuest(QuestTitanJailors.create());
-    FACTION_CTHUN.AddQuest(QuestAwakenCthun.create());
-    FACTION_CTHUN.AddQuest(QuestEndlessRanks.create());
-    FACTION_CTHUN.AddQuest(QuestGatesofAhnqiraj.create());
-    FACTION_CTHUN.AddQuest(QuestDragonSoul.create());
-    FACTION_CTHUN.AddQuest(QuestWyrmrestTemple.create());
+    public static void OnInit( ){
+
+      FACTION_CTHUN.StartingQuest = FACTION_CTHUN.AddQuest(QuestTitanJailors.create());
+      FACTION_CTHUN.AddQuest(QuestAwakenCthun.create());
+      FACTION_CTHUN.AddQuest(QuestEndlessRanks.create());
+      FACTION_CTHUN.AddQuest(QuestGatesofAhnqiraj.create());
+      FACTION_CTHUN.AddQuest(QuestDragonSoul.create());
+      FACTION_CTHUN.AddQuest(QuestWyrmrestTemple.create());
+    }
+
   }
-
 }

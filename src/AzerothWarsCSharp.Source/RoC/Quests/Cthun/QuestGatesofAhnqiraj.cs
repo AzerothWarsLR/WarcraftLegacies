@@ -1,4 +1,8 @@
-public class QuestGatesofAhnqiraj{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Cthun
+{
+  public class QuestGatesofAhnqiraj{
 
 
 
@@ -32,4 +36,5 @@ public class QuestGatesofAhnqiraj{
     }
 
 
+  }
 }

@@ -1,4 +1,8 @@
-public class QuestTownWatch{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Scarlet
+{
+  public class QuestTownWatch{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R077)   ;//This research is given when the quest is completed
@@ -14,8 +18,8 @@ public class QuestTownWatch{
     }
 
     private void OnComplete( ){
-    AdjustPlayerStateBJ( 500, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
-    AdjustPlayerStateBJ( 4000, this.Holder.Player, PLAYER_STATE_RESOURCE_LUMBER );
+      AdjustPlayerStateBJ( 500, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
+      AdjustPlayerStateBJ( 4000, this.Holder.Player, PLAYER_STATE_RESOURCE_LUMBER );
     }
 
     private void OnAdd( ){
@@ -31,4 +35,5 @@ public class QuestTownWatch{
     }
 
 
+  }
 }

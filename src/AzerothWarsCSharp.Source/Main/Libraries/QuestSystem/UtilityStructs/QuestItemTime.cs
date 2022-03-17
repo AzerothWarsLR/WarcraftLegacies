@@ -1,4 +1,6 @@
-public class QuestItemTime{
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemTime{
 
 
     private timer timer;
@@ -18,7 +20,7 @@ public class QuestItemTime{
       }
     }
 
-     thistype (int duration ){
+    thistype (int duration ){
 
       this.Description = I2S(duration) + " seconds have elapsed";
       this.timer = CreateTimer();
@@ -34,4 +36,5 @@ public class QuestItemTime{
     }
 
 
+  }
 }

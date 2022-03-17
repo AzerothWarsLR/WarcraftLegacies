@@ -1,4 +1,8 @@
-public class QuestSentinelsKillFrostwolf{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Sentinels
+{
+  public class QuestSentinelsKillFrostwolf{
 
   
     private const int RESEARCH_ID = FourCC(R052);
@@ -31,4 +35,5 @@ public class QuestSentinelsKillFrostwolf{
     }
 
 
+  }
 }

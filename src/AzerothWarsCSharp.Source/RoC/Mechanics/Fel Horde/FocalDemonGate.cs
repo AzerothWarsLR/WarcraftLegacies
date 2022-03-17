@@ -1,5 +1,7 @@
 //Units spawned at Demon Gates spawn at the Focal Demon Gate instead, if one exists.
-public class FocalDemonGate{
+namespace AzerothWarsCSharp.Source.RoC.Mechanics.Fel_Horde
+{
+  public class FocalDemonGate{
 
   
     private const int GATE_UNITTYPE = FourCC(n0AP);
@@ -46,9 +48,10 @@ public class FocalDemonGate{
 
 
 
-      KillUnit(thistype.instance.unit);
-      thistype.instance = this;
-    }
+    KillUnit(thistype.instance.unit);
+    thistype.instance = this;
+  }
+}
 
     private static boolean AIDS_filter(unit u ){
       if (GetUnitTypeId(u) == GATE_UNITTYPE){

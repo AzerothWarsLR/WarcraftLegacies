@@ -1,4 +1,9 @@
-public class QuestThunderfury{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Twilight
+{
+  public class QuestThunderfury{
 
 
     private string operator CompletionPopup( ){
@@ -21,4 +26,5 @@ public class QuestThunderfury{
     }
 
 
+  }
 }

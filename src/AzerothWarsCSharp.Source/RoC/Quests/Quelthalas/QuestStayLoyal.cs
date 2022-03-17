@@ -1,5 +1,9 @@
 
-public class QuestStayLoyal{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
+{
+  public class QuestStayLoyal{
 
 
     private boolean operator Global( ){
@@ -29,4 +33,5 @@ public class QuestStayLoyal{
     }
 
 
+  }
 }

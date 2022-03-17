@@ -1,4 +1,6 @@
-public class Team{
+namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
+{
+  public class Team{
   
     Event OnTeamCreate = 0;
     Event OnTeamSizeChange = 0;
@@ -161,7 +163,7 @@ public class Team{
     void DisplayText(string text ){
       int i = 0;
       while(true){
-      if ( i == factions.size){ break; }
+        if ( i == factions.size){ break; }
         DisplayTextToPlayer(Faction(this.factions[i]).Player, 0, 0, text);
         i = i + 1;
       }
@@ -189,7 +191,7 @@ public class Team{
     boolean ContainsPlayer(player whichPlayer ){
       int i = 0;
       while(true){
-      if ( i == factions.size){ break; }
+        if ( i == factions.size){ break; }
         if (Faction(this.factions[i]).Player == whichPlayer){
           return true;
         }
@@ -214,7 +216,7 @@ public class Team{
       ;type.teamsByIndex[index];
     }
 
-     Team (string name ){
+    Team (string name ){
 
 
       this.name = name;
@@ -242,14 +244,15 @@ public class Team{
     }
 
 
-  static Team GetTriggerTeam( ){
-    return Team.triggerTeam;
-  }
+    static Team GetTriggerTeam( ){
+      return Team.triggerTeam;
+    }
 
-  private static void OnInit( ){
-    OnTeamCreate = Event.create();
-    OnTeamSizeChange = Event.create();
-    TeamScoreStatusChanged = Event.create();
-  }
+    private static void OnInit( ){
+      OnTeamCreate = Event.create();
+      OnTeamSizeChange = Event.create();
+      TeamScoreStatusChanged = Event.create();
+    }
 
+  }
 }

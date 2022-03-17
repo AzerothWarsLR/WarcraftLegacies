@@ -1,4 +1,8 @@
-public class QuestZandalar{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Zandalar
+{
+  public class QuestZandalar{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R04W)   ;//This research is given when the quest is completed
@@ -39,4 +43,5 @@ public class QuestZandalar{
     }
 
 
+  }
 }

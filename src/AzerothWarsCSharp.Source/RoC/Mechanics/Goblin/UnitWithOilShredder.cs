@@ -1,4 +1,6 @@
-public class UnitWithFuelShredder{
+namespace AzerothWarsCSharp.Source.RoC.Mechanics.Goblin
+{
+  public class UnitWithFuelShredder{
 
   
     private const int UNIT_TYPE = FourCC(n062);
@@ -51,4 +53,5 @@ public class UnitWithFuelShredder{
 
 
 
+  }
 }

@@ -1,4 +1,6 @@
-public class ThunderFists{
+namespace AzerothWarsCSharp.Source.Main.Spells.Fel_Horde
+{
+  public class ThunderFists{
 
   
     private const int UNITTYPE_ID = FourCC(O01P);
@@ -9,15 +11,16 @@ public class ThunderFists{
     private const float CHANCE = 015;
   
 
-  private static void Damaging( ){
-    int level = GetUnitAbilityLevel(GetEventDamageSource(), ABIL_ID);
-    if (level > 0 && BlzGetEventIsAttack() == true && GetRandomReal(0,1) <= CHANCE){
-      DummyCastUnitFromPoint(GetOwningPlayer(GetEventDamageSource()), DUMMY_ABIL_ID, DUMMY_ORDER_ID, level, GetTriggerUnit(), GetUnitX(GetEventDamageSource()), GetUnitY(GetEventDamageSource()));
+    private static void Damaging( ){
+      int level = GetUnitAbilityLevel(GetEventDamageSource(), ABIL_ID);
+      if (level > 0 && BlzGetEventIsAttack() == true && GetRandomReal(0,1) <= CHANCE){
+        DummyCastUnitFromPoint(GetOwningPlayer(GetEventDamageSource()), DUMMY_ABIL_ID, DUMMY_ORDER_ID, level, GetTriggerUnit(), GetUnitX(GetEventDamageSource()), GetUnitY(GetEventDamageSource()));
+      }
     }
-  }
 
-  private static void OnInit( ){
-    RegisterUnitTypeInflictsDamageAction(UNITTYPE_ID,  Damaging);
-  }
+    private static void OnInit( ){
+      RegisterUnitTypeInflictsDamageAction(UNITTYPE_ID,  Damaging);
+    }
 
+  }
 }

@@ -1,6 +1,8 @@
 //A traversable, unordered collection of integer.
 //.list and .size can be used to traverse the Set.
-public class Set{
+namespace AzerothWarsCSharp.Source.Main.Libraries
+{
+  public class Set{
 
 
     private Table index ;//Index location for each integer in the set
@@ -78,7 +80,7 @@ public class Set{
       }
     }
 
-     thistype (string name ){
+    thistype (string name ){
 
       size = 0;
       index = Table.create();
@@ -88,4 +90,5 @@ public class Set{
     }
 
 
+  }
 }

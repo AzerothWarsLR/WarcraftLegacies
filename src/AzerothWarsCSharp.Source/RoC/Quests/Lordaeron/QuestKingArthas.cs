@@ -1,5 +1,10 @@
 //Prince Arthas goes to the Frozen Throne after it)s destroyed. He becomes King Arthas, gets the Crown of Lordaeron, and Terenas dies.
-public class QuestKingArthas{
+
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
+{
+  public class QuestKingArthas{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R08A)   ;//This research is given when the quest is completed
@@ -34,4 +39,5 @@ public class QuestKingArthas{
     }
 
 
+  }
 }

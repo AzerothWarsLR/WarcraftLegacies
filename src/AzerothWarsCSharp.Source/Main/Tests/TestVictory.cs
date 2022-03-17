@@ -1,4 +1,6 @@
-public class TestVictory{
+namespace AzerothWarsCSharp.Source.Main.Tests
+{
+  public class TestVictory{
 
 
     void Run( ){
@@ -19,4 +21,5 @@ public class TestVictory{
     }
 
 
+  }
 }

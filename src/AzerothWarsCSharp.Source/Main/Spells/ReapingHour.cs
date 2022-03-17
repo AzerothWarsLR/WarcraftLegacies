@@ -1,4 +1,8 @@
-public class ReapingHour{
+using AzerothWarsCSharp.Source.Main.Libraries;
+
+namespace AzerothWarsCSharp.Source.Main.Spells
+{
+  public class ReapingHour{
 
   
     private const int ABIL_ID = FourCC(A10N);
@@ -69,7 +73,7 @@ public class ReapingHour{
       BlzSetSpecialEffectAlpha(sfx, i);
     }
 
-     thistype (float x, float y, float face ){
+    thistype (float x, float y, float face ){
 
       effect tempSfx = AddSpecialEffect(EFFECT_SPAWN, x, y);
       DestroyEffect(tempSfx);
@@ -86,7 +90,7 @@ public class ReapingHour{
     }
 
 
-  //Responsible for handling the movement, damage and expiry of its child ReapProjectiles
+    //Responsible for handling the movement, damage and expiry of its child ReapProjectiles
 
     private Set reapProjectiles;
     private unit caster = null;
@@ -160,7 +164,7 @@ public class ReapingHour{
 
 
 
-     thistype (unit caster, float x, float y, float face, float damage, float maxDist ){
+    thistype (unit caster, float x, float y, float face, float damage, float maxDist ){
 
       int i = 0;
       float offsetAngle;
@@ -195,28 +199,29 @@ public class ReapingHour{
     }
 
 
-  private static void Cast( ){
-    ability triggerAbility = null;
-    unit triggerUnit = null;
-    float triggerX = 0;
-    float triggerY = 0;
-    float triggerFace = 0;
-    int i = 0;
-    float offsetAngle = 0;
-    float offsetDist = 0;
-    int middle = 0;
-    int level = 0;
-    triggerUnit = GetTriggerUnit();
-    triggerX = GetUnitX(triggerUnit);
-    triggerY = GetUnitY(triggerUnit);
-    triggerFace = GetUnitFacing(triggerUnit);
-    level = GetUnitAbilityLevel(triggerUnit, ABIL_ID);
-    ReapingHour.create(triggerUnit, triggerX, triggerY, triggerFace, DAMAGE_BASE + DAMAGE_LEVEL*level, RANGE);
-    triggerUnit = null;
-  }
+    private static void Cast( ){
+      ability triggerAbility = null;
+      unit triggerUnit = null;
+      float triggerX = 0;
+      float triggerY = 0;
+      float triggerFace = 0;
+      int i = 0;
+      float offsetAngle = 0;
+      float offsetDist = 0;
+      int middle = 0;
+      int level = 0;
+      triggerUnit = GetTriggerUnit();
+      triggerX = GetUnitX(triggerUnit);
+      triggerY = GetUnitY(triggerUnit);
+      triggerFace = GetUnitFacing(triggerUnit);
+      level = GetUnitAbilityLevel(triggerUnit, ABIL_ID);
+      ReapingHour.create(triggerUnit, triggerX, triggerY, triggerFace, DAMAGE_BASE + DAMAGE_LEVEL*level, RANGE);
+      triggerUnit = null;
+    }
 
-  private static void OnInit( ){
-    RegisterSpellEffectAction(ABIL_ID,  Cast);
-  }
+    private static void OnInit( ){
+      RegisterSpellEffectAction(ABIL_ID,  Cast);
+    }
 
+  }
 }

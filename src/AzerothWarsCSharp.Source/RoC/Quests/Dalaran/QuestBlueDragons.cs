@@ -1,4 +1,8 @@
-public class QuestBlueDragons{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
+{
+  public class QuestBlueDragons{
 
   
     private const int RESEARCH_ID = FourCC(R00U);
@@ -32,4 +36,5 @@ public class QuestBlueDragons{
     }
 
 
+  }
 }

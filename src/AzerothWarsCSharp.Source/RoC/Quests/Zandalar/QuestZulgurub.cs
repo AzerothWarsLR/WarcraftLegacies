@@ -1,4 +1,8 @@
-public class QuestZulgurub{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Zandalar
+{
+  public class QuestZulgurub{
 
   
     private const int ZULGURUB_RESEARCH = FourCC(R02M);
@@ -31,4 +35,5 @@ public class QuestZulgurub{
     }
 
 
+  }
 }

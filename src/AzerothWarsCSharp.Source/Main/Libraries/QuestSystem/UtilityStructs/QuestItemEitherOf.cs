@@ -1,4 +1,6 @@
-public class QuestItemEitherOf{
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemEitherOf{
 
 
     private static int count = 0;
@@ -15,7 +17,7 @@ public class QuestItemEitherOf{
       return questItemA.Y;
     }
 
-     thistype (QuestItemData questItemA, QuestItemData questItemB ){
+    thistype (QuestItemData questItemA, QuestItemData questItemB ){
 
       this.questItemA = questItemA;
       this.questItemB = questItemB;
@@ -57,10 +59,11 @@ public class QuestItemEitherOf{
     }
 
 
-  private static void OnInit( ){
-    trigger trig = CreateTrigger();
-    QuestItemData.ProgressChanged.register(trig);
-    TriggerAddAction(trig,  QuestItemEitherOf.OnAnyQuestItemProgressChanged);
-  }
+    private static void OnInit( ){
+      trigger trig = CreateTrigger();
+      QuestItemData.ProgressChanged.register(trig);
+      TriggerAddAction(trig,  QuestItemEitherOf.OnAnyQuestItemProgressChanged);
+    }
 
+  }
 }

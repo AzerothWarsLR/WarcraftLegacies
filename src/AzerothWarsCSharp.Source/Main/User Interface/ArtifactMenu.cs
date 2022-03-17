@@ -1,3 +1,6 @@
+ using AzerothWarsCSharp.Source.Main.Libraries;
+ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
  library ArtifactMenu initializer OnInit requires Artifact, Persons, Faction
 
   

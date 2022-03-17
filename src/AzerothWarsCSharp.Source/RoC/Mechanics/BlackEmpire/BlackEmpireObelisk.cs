@@ -1,4 +1,9 @@
-public class BlackEmpireObelisk{
+using AzerothWarsCSharp.Source.Main.Libraries;
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
+namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
+{
+  public class BlackEmpireObelisk{
 
   
     private const int ABIL_ID = FourCC(A06Z);
@@ -68,7 +73,7 @@ public class BlackEmpireObelisk{
 
 
 
-     thistype (unit caster, ControlPoint controlPoint, float duration ){
+    thistype (unit caster, ControlPoint controlPoint, float duration ){
 
       this.caster = caster;
       this.controlPoint = controlPoint;
@@ -87,14 +92,15 @@ public class BlackEmpireObelisk{
     }
 
 
-  static BlackEmpireObelisk GetTriggerBlackEmpireObelisk( ){
-    return BlackEmpireObelisk.triggerObelisk;
-  }
+    static BlackEmpireObelisk GetTriggerBlackEmpireObelisk( ){
+      return BlackEmpireObelisk.triggerObelisk;
+    }
 
-  private static void OnInit( ){
-    RegisterSpellChannelAction(ABIL_ID,  BlackEmpireObelisk.OnAnyStartChannel);
-    RegisterSpellEndcastAction(ABIL_ID,  BlackEmpireObelisk.OnAnyStopChannel);
-    BlackEmpireObeliskSummoned = Event.create();
-  }
+    private static void OnInit( ){
+      RegisterSpellChannelAction(ABIL_ID,  BlackEmpireObelisk.OnAnyStartChannel);
+      RegisterSpellEndcastAction(ABIL_ID,  BlackEmpireObelisk.OnAnyStopChannel);
+      BlackEmpireObeliskSummoned = Event.create();
+    }
 
+  }
 }

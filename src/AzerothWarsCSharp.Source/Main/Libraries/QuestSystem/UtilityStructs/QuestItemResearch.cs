@@ -1,4 +1,6 @@
-public class QuestItemResearch{
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemResearch{
 
 
     private static int count = 0;
@@ -9,10 +11,11 @@ public class QuestItemResearch{
 
 
       this.researchId = researchId;
-      thistype.byIndex[thistype.count] = this;
-      thistype.count = thistype.count + 1;
-      ;;
-    }
+    thistype.byIndex[thistype.count] = this;
+    thistype.count = thistype.count + 1;
+    ;;
+  }
+}
 
     private static void OnAnyResearch( ){
       int i = 0;

@@ -1,4 +1,8 @@
-public class QuestItemControlLegend{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemControlLegend{
 
 
     private Legend target = 0;
@@ -65,7 +69,7 @@ public class QuestItemControlLegend{
       }
     }
 
-     thistype (Legend target, boolean canFail ){
+    thistype (Legend target, boolean canFail ){
 
       this.target = target;
       this.Description = "Your team controls " + target.Name;
@@ -78,14 +82,15 @@ public class QuestItemControlLegend{
 
 
 
-  private static void OnInit( ){
-    trigger trig = CreateTrigger();
-    OnLegendChangeOwner.register(trig);
-    TriggerAddAction(trig,  QuestItemControlLegend.OnAnyLegendChangeOwner);
+    private static void OnInit( ){
+      trigger trig = CreateTrigger();
+      OnLegendChangeOwner.register(trig);
+      TriggerAddAction(trig,  QuestItemControlLegend.OnAnyLegendChangeOwner);
 
-    trig = CreateTrigger();
-    OnLegendPermaDeath.register(trig);
-    TriggerAddAction(trig,  QuestItemControlLegend.OnAnyUnitDeath);
+      trig = CreateTrigger();
+      OnLegendPermaDeath.register(trig);
+      TriggerAddAction(trig,  QuestItemControlLegend.OnAnyUnitDeath);
+    }
+
   }
-
 }

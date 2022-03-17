@@ -1,5 +1,10 @@
 //Jaina goes to Scholomance while Scholomance building is destroyed and retrieves the Soul Gem
-public class QuestJainaSoulGem{
+
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
+{
+  public class QuestJainaSoulGem{
 
 
     private string operator CompletionPopup( ){
@@ -22,4 +27,5 @@ public class QuestJainaSoulGem{
     }
 
 
+  }
 }

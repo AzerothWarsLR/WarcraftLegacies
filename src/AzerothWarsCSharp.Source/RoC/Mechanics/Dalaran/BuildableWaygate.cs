@@ -1,5 +1,7 @@
 //Allows exactly two Waygates to be built on the map. These Waygates can teleport units between themselves.
-public class BuildableWaygate{
+namespace AzerothWarsCSharp.Source.RoC.Mechanics.Dalaran
+{
+  public class BuildableWaygate{
 
   
     private const int WAYGATE_UNITTYPE = FourCC(n0AO);
@@ -14,8 +16,9 @@ public class BuildableWaygate{
 
 
 
-        thistype.LinkWaygates();
-      }
+    thistype.LinkWaygates();
+  }
+}
     }
 
     private static void UnlinkWaygates( ){

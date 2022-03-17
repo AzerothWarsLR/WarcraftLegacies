@@ -1,4 +1,9 @@
-public class QuestGadgetzan{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Goblin
+{
+  public class QuestGadgetzan{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R07E)   ;//This research is given when the quest is completed
@@ -21,7 +26,7 @@ public class QuestGadgetzan{
       GroupEnumUnitsInRect(tempGroup, gg_rct_GadgetUnlock, null);
       u = FirstOfGroup(tempGroup);
       while(true){
-      if ( u == null){ break; }
+        if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
           UnitRescue(u, whichPlayer);
         }
@@ -53,4 +58,5 @@ public class QuestGadgetzan{
     }
 
 
+  }
 }

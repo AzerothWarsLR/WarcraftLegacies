@@ -1,4 +1,6 @@
-public class WarStompKazzak{
+namespace AzerothWarsCSharp.Source.Main.Spells
+{
+  public class WarStompKazzak{
 
   
     private const int ABIL_ID        = FourCC(A0AW);
@@ -11,24 +13,25 @@ public class WarStompKazzak{
     private group     TempGroup = CreateGroup();
   
 
-  private static void Cast( ){
-    unit u;
-    unit caster;
-    caster = GetTriggerUnit();
-    P = GetOwningPlayer(caster);
-    GroupEnumUnitsInRange(TempGroup,GetUnitX(caster),GetUnitY(caster),RADIUS,( EnemyAliveFilter));
-    while(true){
-      u = FirstOfGroup(TempGroup);
-      if ( u == null){ break; }
+    private static void Cast( ){
+      unit u;
+      unit caster;
+      caster = GetTriggerUnit();
+      P = GetOwningPlayer(caster);
+      GroupEnumUnitsInRange(TempGroup,GetUnitX(caster),GetUnitY(caster),RADIUS,( EnemyAliveFilter));
+      while(true){
+        u = FirstOfGroup(TempGroup);
+        if ( u == null){ break; }
         UnitDamageTarget(caster, u, DAMAGE, false, false, ATTACK_TYPE_NORMAL, DAMAGE_TYPE_MAGIC, WEAPON_TYPE_WHOKNOWS);
-      DummyCastUnit(GetOwningPlayer(caster), STUN_ID, STUN_ORDER, DURATION, u);
-      GroupRemoveUnit(TempGroup,u);
+        DummyCastUnit(GetOwningPlayer(caster), STUN_ID, STUN_ORDER, DURATION, u);
+        GroupRemoveUnit(TempGroup,u);
+      }
+      DestroyEffect(AddSpecialEffect(EFFECT,GetUnitX(caster),GetUnitY(caster)));
     }
-    DestroyEffect(AddSpecialEffect(EFFECT,GetUnitX(caster),GetUnitY(caster)));
-  }
 
-  private static void OnInit( ){
-    RegisterSpellEffectAction(ABIL_ID,  Cast);
-  }
+    private static void OnInit( ){
+      RegisterSpellEffectAction(ABIL_ID,  Cast);
+    }
 
+  }
 }

@@ -1,4 +1,6 @@
-public class UnitWithFuelArtillery{
+namespace AzerothWarsCSharp.Source.RoC.Mechanics.Goblin
+{
+  public class UnitWithFuelArtillery{
 
   
     private const int UNIT_TYPE = FourCC(n062);
@@ -51,4 +53,5 @@ public class UnitWithFuelArtillery{
 
 
 
+  }
 }

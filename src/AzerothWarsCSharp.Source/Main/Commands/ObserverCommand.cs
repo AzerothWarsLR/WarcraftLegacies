@@ -1,34 +1,37 @@
-public class ObserverCommand{
+namespace AzerothWarsCSharp.Source.Main.Commands
+{
+  public class ObserverCommand{
 
-  //**CONFIG
+    //**CONFIG
   
-      private const string COMMAND     = "-obs";
+    private const string COMMAND     = "-obs";
   
-  //*ENDCONFIG
+    //*ENDCONFIG
 
-  private static void Actions( ){
-    Person triggerPerson = Person.ByHandle(GetTriggerPlayer());
-    group tempGroup = CreateGroup();
-    fogmodifier = ObsFogModifier;
+    private static void Actions( ){
+      Person triggerPerson = Person.ByHandle(GetTriggerPlayer());
+      group tempGroup = CreateGroup();
+      fogmodifier = ObsFogModifier;
 
-    if (triggerPerson != 0){
-      triggerPerson.Faction.ScoreStatus = SCORESTATUS_DEFEATED;
-      ObsFogModifier = CreateFogModifierRect(GetTriggerPlayer(), FOG_OF_WAR_VISIBLE, GetPlayableMapRect(), false, false);
-      FogModifierStart(ObsFogModifier);
-    }
-  }
-
-  private static void OnInit( ){
-    trigger trig = CreateTrigger(  );
-    int i = 0;
-
-    while(true){
-    if ( i > MAX_PLAYERS){ break; }
-      TriggerRegisterPlayerChatEvent( trig, Player(i), COMMAND, true );
-      i = i + 1;
+      if (triggerPerson != 0){
+        triggerPerson.Faction.ScoreStatus = SCORESTATUS_DEFEATED;
+        ObsFogModifier = CreateFogModifierRect(GetTriggerPlayer(), FOG_OF_WAR_VISIBLE, GetPlayableMapRect(), false, false);
+        FogModifierStart(ObsFogModifier);
+      }
     }
 
-    TriggerAddCondition( trig, ( Actions) );
-  }
+    private static void OnInit( ){
+      trigger trig = CreateTrigger(  );
+      int i = 0;
 
+      while(true){
+        if ( i > MAX_PLAYERS){ break; }
+        TriggerRegisterPlayerChatEvent( trig, Player(i), COMMAND, true );
+        i = i + 1;
+      }
+
+      TriggerAddCondition( trig, ( Actions) );
+    }
+
+  }
 }

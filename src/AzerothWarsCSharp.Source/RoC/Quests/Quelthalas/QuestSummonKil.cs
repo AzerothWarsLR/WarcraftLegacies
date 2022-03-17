@@ -1,4 +1,8 @@
-public class QuestSummonKil{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
+{
+  public class QuestSummonKil{
 
   
     private const int RITUAL_ID = FourCC(A0R7);
@@ -29,4 +33,5 @@ public class QuestSummonKil{
     }
 
 
+  }
 }

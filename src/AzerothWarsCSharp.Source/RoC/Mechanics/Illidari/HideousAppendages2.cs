@@ -1,5 +1,9 @@
 
-public class SpawnTentacle2{
+using AzerothWarsCSharp.Source.Main.Libraries;
+
+namespace AzerothWarsCSharp.Source.RoC.Mechanics.Illidari
+{
+    public class SpawnTentacle2{
 
     
         private const int UNIT_ID2 = FourCC(U01Z);
@@ -25,7 +29,7 @@ public class SpawnTentacle2{
         void kill( ){
             int i = 0;
             while(true){
-            if ( i > this.TentacleCount){ break; }
+                if ( i > this.TentacleCount){ break; }
                 KillUnit(this.TentaclesByIndex[i]);
                 this.TentaclesByIndex[i] = null;
                 i = i + 1;
@@ -49,7 +53,7 @@ public class SpawnTentacle2{
             float offsetY = 0;
             this.TentacleCount = TENTACLE_COUNT_BASE;
             while(true){
-            if ( i == this.TentacleCount){ break; }
+                if ( i == this.TentacleCount){ break; }
                 offsetAngle = ((bj_PI*2)/this.TentacleCount)*i;
                 offsetX = GetUnitX(caster) + RADIUS_OFFSET*Cos(offsetAngle);
                 offsetY = GetUnitY(caster) + RADIUS_OFFSET*Sin(offsetAngle);
@@ -86,7 +90,7 @@ public class SpawnTentacle2{
             thistype.tentacleSetsByCasterHandleId = Table.create();
         }
 
-         thistype (unit caster ){
+        thistype (unit caster ){
 
             this.caster = caster;
             thistype.tentacleSetsByCasterHandleId[GetHandleId(this.caster)] = this;
@@ -95,24 +99,25 @@ public class SpawnTentacle2{
         }
 
 
-    private static void Built( ){
-        tentacleAppendageSet2 temptentacleAppendageSet2 = 0;
-        unit triggerUnit = null;
-        int triggerUnitHandleId = 0;
-        triggerUnit = gg_unit_U01Z_1237;
-        triggerUnitHandleId = UNIT_ID2;
-        temptentacleAppendageSet2 = tentacleAppendageSet2tentacleSetsByCasterHandleId[triggerUnitHandleId];
-        if (temptentacleAppendageSet2 == 0){
-            temptentacleAppendageSet2 = tentacleAppendageSet2create(triggerUnit);
-            tentacleAppendageSet2tentacleSetsByCasterHandleId[triggerUnitHandleId] = temptentacleAppendageSet2;
+        private static void Built( ){
+            tentacleAppendageSet2 temptentacleAppendageSet2 = 0;
+            unit triggerUnit = null;
+            int triggerUnitHandleId = 0;
+            triggerUnit = gg_unit_U01Z_1237;
+            triggerUnitHandleId = UNIT_ID2;
+            temptentacleAppendageSet2 = tentacleAppendageSet2tentacleSetsByCasterHandleId[triggerUnitHandleId];
+            if (temptentacleAppendageSet2 == 0){
+                temptentacleAppendageSet2 = tentacleAppendageSet2create(triggerUnit);
+                tentacleAppendageSet2tentacleSetsByCasterHandleId[triggerUnitHandleId] = temptentacleAppendageSet2;
+            }
+            triggerUnit = null;
         }
-        triggerUnit = null;
-    }
 
-    private static void OnInit( ){
-        trigger trig = CreateTrigger();
-        TriggerRegisterEnterRectSimple( trig, gg_rct_NzothIni);
-        TriggerAddCondition( trig, ( Built));
-    }
+        private static void OnInit( ){
+            trigger trig = CreateTrigger();
+            TriggerRegisterEnterRectSimple( trig, gg_rct_NzothIni);
+            TriggerAddCondition( trig, ( Built));
+        }
 
+    }
 }

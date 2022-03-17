@@ -1,4 +1,8 @@
-public class QuestSapphiron{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
+{
+  public class QuestSapphiron{
 
   
     private const int SAPPHIRON_ID = FourCC(ubdd);
@@ -31,4 +35,5 @@ public class QuestSapphiron{
     }
 
 
+  }
 }

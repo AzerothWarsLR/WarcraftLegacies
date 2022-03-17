@@ -55,7 +55,9 @@
 //           system operation (when in debug mode).
 //
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-public class T32{
+namespace AzerothWarsCSharp.Source.Main.Libraries
+{
+    public class T32{
     
         public const float PERIOD= 003125;
         public const int FPS=R2I(100/PERIOD);
@@ -65,10 +67,10 @@ public class T32{
         private trigger Trig=CreateTrigger();
     
 
-    //==============================================================================
-    // The standard T32 module, T32x.
-    //
-    module T32x
+        //==============================================================================
+        // The standard T32 module, T32x.
+        //
+        module T32x
         private thistype next;
         private thistype prev;
 
@@ -84,8 +86,8 @@ public class T32{
 
         void startPeriodic( ){
             debug if (this.prev!=0 || thistype(0).next==this){
-            debug   BJDebugMsg("T32 ERROR: Struct #"+I2S(this)+" had startPeriodic called while already running!");
-            debug }
+                debug   BJDebugMsg("T32 ERROR: Struct #"+I2S(this)+" had startPeriodic called while already running!");
+                debug }
             thistype(0).next.prev=this
             this.next=thistype(0).next
             thistype(0).next=this
@@ -94,8 +96,8 @@ public class T32{
 
         void stopPeriodic( ){
             debug if (this.prev==0 && thistype(0).next!=this){
-            debug   BJDebugMsg("T32 ERROR: Struct #"+I2S(this)+" had stopPeriodic called while !running!");
-            debug }
+                debug   BJDebugMsg("T32 ERROR: Struct #"+I2S(this)+" had stopPeriodic called while !running!");
+                debug }
             // This is some real magic.
             this.prev.next=this.next
             this.next.prev=this.prev
@@ -106,13 +108,13 @@ public class T32{
         private static void onInit( ){
             TriggerAddCondition(Trig,( thistype.PeriodicLoop));
         }
-    endmodule
+        endmodule
 
-    //==============================================================================
-    // The standard T32 module with added safety checks on .startPeriodic() and
-    // .stopPeriodic(), T32xs.
-    //
-    module T32xs
+            //==============================================================================
+            // The standard T32 module with added safety checks on .startPeriodic() and
+            // .stopPeriodic(), T32xs.
+            //
+            module T32xs
         private thistype next;
         private thistype prev;
         private boolean runningPeriodic;
@@ -152,12 +154,12 @@ public class T32{
         private static void onInit( ){
             TriggerAddCondition(Trig,( thistype.PeriodicLoop));
         }
-    endmodule
+        endmodule
 
-    //==============================================================================
-    // The original T32 module, for backwards compatability only.
-    //
-    module T32 // deprecated.
+            //==============================================================================
+            // The original T32 module, for backwards compatability only.
+            //
+            module T32 // deprecated.
         private thistype next;
         private thistype prev;
 
@@ -179,8 +181,8 @@ public class T32{
 
         void startPeriodic( ){
             debug if (this.prev!=0 || thistype(0).next==this){
-            debug   BJDebugMsg("T32 ERROR: Struct #"+I2S(this)+" had startPeriodic called while already running!");
-            debug }
+                debug   BJDebugMsg("T32 ERROR: Struct #"+I2S(this)+" had startPeriodic called while already running!");
+                debug }
             thistype(0).next.prev=this
             this.next=thistype(0).next
             thistype(0).next=this
@@ -190,17 +192,18 @@ public class T32{
         private static void onInit( ){
             TriggerAddCondition(Trig,( thistype.PeriodicLoop));
         }
-    endmodule
+        endmodule
 
-    //==============================================================================
-    // System Core.
-    //
-    private static void OnExpire( ){
-        Tick=Tick+1
-        TriggerEvaluate(Trig);
-    }
+        //==============================================================================
+        // System Core.
+        //
+        private static void OnExpire( ){
+            Tick=Tick+1
+            TriggerEvaluate(Trig);
+        }
 
-    private static void OnInit( ){
-        TimerStart(CreateTimer(),PERIOD,true,function OnExpire);
+        private static void OnInit( ){
+            TimerStart(CreateTimer(),PERIOD,true,function OnExpire);
+        }
     }
 }

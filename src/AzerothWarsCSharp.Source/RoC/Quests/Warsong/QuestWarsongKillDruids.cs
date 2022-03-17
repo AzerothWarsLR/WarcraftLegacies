@@ -1,4 +1,8 @@
-public class QuestWarsongKillDruids{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
+{
+  public class QuestWarsongKillDruids{
 
 
     private static int EXPERIENCE_REWARD = 10000;
@@ -23,4 +27,5 @@ public class QuestWarsongKillDruids{
     }
 
 
+  }
 }

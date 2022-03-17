@@ -1,4 +1,8 @@
-public class QuestBeyondPortal{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.KulTiras
+{
+  public class QuestBeyondPortal{
 
  
     private const int QUEST_RESEARCH_ID = FourCC(R085)   ;//This research is given when the quest is completed
@@ -24,4 +28,5 @@ public class QuestBeyondPortal{
     }
 
 
+  }
 }

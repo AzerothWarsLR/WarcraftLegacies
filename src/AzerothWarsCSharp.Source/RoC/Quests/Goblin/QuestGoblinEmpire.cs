@@ -1,4 +1,9 @@
-public class QuestGoblinEmpire{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Goblin
+{
+  public class QuestGoblinEmpire{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R07F)   ;//This research is given when the quest is completed
@@ -30,4 +35,5 @@ public class QuestGoblinEmpire{
     }
 
 
+  }
 }

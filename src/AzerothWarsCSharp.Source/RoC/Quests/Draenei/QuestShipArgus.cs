@@ -1,4 +1,8 @@
-public class QuestShipArgus{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Draenei
+{
+  public class QuestShipArgus{
 
 
 
@@ -30,4 +34,5 @@ public class QuestShipArgus{
     }
 
 
+  }
 }

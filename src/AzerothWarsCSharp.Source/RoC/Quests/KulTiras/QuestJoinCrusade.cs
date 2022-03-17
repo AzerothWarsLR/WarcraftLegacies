@@ -1,5 +1,9 @@
 
-public class QuestJoinCrusade{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.KulTiras
+{
+  public class QuestJoinCrusade{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R06U)   ;//This research is given when the quest is completed
@@ -28,4 +32,5 @@ public class QuestJoinCrusade{
     }
 
 
+  }
 }

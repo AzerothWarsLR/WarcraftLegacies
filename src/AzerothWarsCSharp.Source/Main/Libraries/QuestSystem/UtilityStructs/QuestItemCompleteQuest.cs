@@ -1,4 +1,6 @@
-public class QuestItemCompleteQuest{
+namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
+{
+  public class QuestItemCompleteQuest{
 
 
     private QuestData target = 0;
@@ -26,7 +28,7 @@ public class QuestItemCompleteQuest{
       }
     }
 
-     thistype (QuestData target ){
+    thistype (QuestData target ){
 
 
       if (target == 0){
@@ -42,10 +44,11 @@ public class QuestItemCompleteQuest{
 
 
 
-  private static void OnInit( ){
-    trigger trig = CreateTrigger();
-    QuestProgressChanged.register(trig);
-    TriggerAddAction(trig,  QuestItemCompleteQuest.OnAnyQuestProgressChanged);
-  }
+    private static void OnInit( ){
+      trigger trig = CreateTrigger();
+      QuestProgressChanged.register(trig);
+      TriggerAddAction(trig,  QuestItemCompleteQuest.OnAnyQuestProgressChanged);
+    }
 
+  }
 }

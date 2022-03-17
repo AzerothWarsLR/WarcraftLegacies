@@ -1,4 +1,8 @@
-public class DemonGate{
+using AzerothWarsCSharp.Source.Main.Libraries;
+
+namespace AzerothWarsCSharp.Source.RoC.Mechanics.Fel_Horde
+{
+  public class DemonGate{
 
   
     private const float TICK_RATE = 1;
@@ -29,7 +33,7 @@ public class DemonGate{
       return spawnUnitType;
     }
 
-     thistype (int gateUnitType, int spawnUnitType, int interval, int count ){
+    thistype (int gateUnitType, int spawnUnitType, int interval, int count ){
 
       this.unitType = gateUnitType;
       this.interval = interval;
@@ -93,7 +97,7 @@ public class DemonGate{
       return x;
     }
 
-     private float operator RallyY( ){
+    private float operator RallyY( ){
       location rally;
       float y;
       if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(this.u) == FACTION_FEL_HORDE.Player){
@@ -180,7 +184,7 @@ public class DemonGate{
 
 
 
-     thistype (unit u ){
+    thistype (unit u ){
 
       this.u = u;
       this.tick = 0;
@@ -199,17 +203,18 @@ public class DemonGate{
       //Unit was already a Demon Gate
       if (byHandle[GetHandleId(GetTriggerUnit())] != 0){
         thistype(byHandle[GetHandleId(GetTriggerUnit())]).onUpgrade();
-      //Unit was not a Demon Gate
+        //Unit was not a Demon Gate
       }else if (DemonGateType.byUnitType[GetUnitTypeId(GetTriggerUnit())] != 0){
         DemonGate.create(GetTriggerUnit());
       }
     }
 
 
-      if (DemonGateType.byUnitType[GetUnitTypeId(GetTriggerUnit())] != 0){
-        DemonGate.create(GetTriggerUnit());
-      }
+    if (DemonGateType.byUnitType[GetUnitTypeId(GetTriggerUnit())] != 0){
+      DemonGate.create(GetTriggerUnit());
     }
+  }
+}
 
     private static void onInit( ){
 

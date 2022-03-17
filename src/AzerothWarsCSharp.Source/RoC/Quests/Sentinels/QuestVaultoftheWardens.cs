@@ -1,4 +1,9 @@
-public class QuestVaultoftheWardens{
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Sentinels
+{
+  public class QuestVaultoftheWardens{
 
   
     private const int RESEARCH_ID = FourCC(R06H);
@@ -34,4 +39,5 @@ public class QuestVaultoftheWardens{
     }
 
 
+  }
 }

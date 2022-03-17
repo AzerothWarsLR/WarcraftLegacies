@@ -1,4 +1,8 @@
-public class QuestReanimateSylvanas{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Forsaken
+{
+  public class QuestReanimateSylvanas{
 
   
     private const int SYLVANAS_ID = FourCC(Usyl);
@@ -27,4 +31,5 @@ public class QuestReanimateSylvanas{
     }
 
 
+  }
 }

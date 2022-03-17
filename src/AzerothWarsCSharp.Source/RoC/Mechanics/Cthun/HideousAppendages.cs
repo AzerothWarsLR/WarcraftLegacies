@@ -1,5 +1,9 @@
 
-public class SpawnTentacle{
+using AzerothWarsCSharp.Source.Main.Libraries;
+
+namespace AzerothWarsCSharp.Source.RoC.Mechanics.Cthun
+{
+    public class SpawnTentacle{
 
     
         private const int UNIT_ID = FourCC(U00R);
@@ -25,7 +29,7 @@ public class SpawnTentacle{
         void kill( ){
             int i = 0;
             while(true){
-            if ( i > this.TentacleCount){ break; }
+                if ( i > this.TentacleCount){ break; }
                 KillUnit(this.TentaclesByIndex[i]);
                 this.TentaclesByIndex[i] = null;
                 i = i + 1;
@@ -49,7 +53,7 @@ public class SpawnTentacle{
             float offsetY = 0;
             this.TentacleCount = TENTACLE_COUNT_BASE;
             while(true){
-            if ( i == this.TentacleCount){ break; }
+                if ( i == this.TentacleCount){ break; }
                 offsetAngle = ((bj_PI*2)/this.TentacleCount)*i;
                 offsetX = GetUnitX(caster) + RADIUS_OFFSET*Cos(offsetAngle);
                 offsetY = GetUnitY(caster) + RADIUS_OFFSET*Sin(offsetAngle);
@@ -86,7 +90,7 @@ public class SpawnTentacle{
             thistype.tentacleSetsByCasterHandleId = Table.create();
         }
 
-         thistype (unit caster ){
+        thistype (unit caster ){
 
             this.caster = caster;
             thistype.tentacleSetsByCasterHandleId[GetHandleId(this.caster)] = this;
@@ -95,10 +99,10 @@ public class SpawnTentacle{
         }
 
 
-    private static void Built( ){
-        tentacleAppendageSet temptentacleAppendageSet = 0;
-        unit triggerUnit = null;
-        int triggerUnitHandleId = 0;
+        private static void Built( ){
+            tentacleAppendageSet temptentacleAppendageSet = 0;
+            unit triggerUnit = null;
+            int triggerUnitHandleId = 0;
             triggerUnit = gg_unit_U00R_0609;
             triggerUnitHandleId = UNIT_ID;
             temptentacleAppendageSet = tentacleAppendageSet.tentacleSetsByCasterHandleId[triggerUnitHandleId];
@@ -107,12 +111,13 @@ public class SpawnTentacle{
                 tentacleAppendageSet.tentacleSetsByCasterHandleId[triggerUnitHandleId] = temptentacleAppendageSet;
             }
             triggerUnit = null;
-    }
+        }
 
-    private static void OnInit( ){
-        trigger trig = CreateTrigger();
-        TriggerRegisterTimerEventSingle( trig, 5 );
-        TriggerAddCondition( trig, ( Built));
-    }
+        private static void OnInit( ){
+            trigger trig = CreateTrigger();
+            TriggerRegisterTimerEventSingle( trig, 5 );
+            TriggerAddCondition( trig, ( Built));
+        }
 
+    }
 }

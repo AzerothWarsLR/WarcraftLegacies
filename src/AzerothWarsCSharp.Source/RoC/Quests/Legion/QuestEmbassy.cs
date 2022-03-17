@@ -1,4 +1,8 @@
-public class QuestEmbassy{
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
+{
+  public class QuestEmbassy{
 
   
     private const int HERO_ID = FourCC(U00L);
@@ -25,4 +29,5 @@ public class QuestEmbassy{
     }
 
 
+  }
 }

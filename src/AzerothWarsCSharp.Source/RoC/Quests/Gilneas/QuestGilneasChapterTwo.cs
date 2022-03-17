@@ -1,5 +1,10 @@
 //Survive and defend the city
-public class QuestGilneasChapterTwo{
+
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+
+namespace AzerothWarsCSharp.Source.RoC.Quests.Gilneas
+{
+  public class QuestGilneasChapterTwo{
 
 
 
@@ -20,10 +25,11 @@ public class QuestGilneasChapterTwo{
 
     public  thistype ( ){
       thistype this = thistype.allocate("Chapter Two: The Defense of Gilneas", "Defend the city until a cure for the curse of worgen is found. Do !let the Cathedral && Castle be destroyed", "ReplaceableTextures\\CommandButtons\\BTNGilneanCastle.blp");
-     this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_TESS, gg_rct_Chapter2Start, "Base camp"));
-     this.AddQuestItem(QuestItemTime.create(940));
+      this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_TESS, gg_rct_Chapter2Start, "Base camp"));
+      this.AddQuestItem(QuestItemTime.create(940));
       ;;
     }
 
 
+  }
 }
