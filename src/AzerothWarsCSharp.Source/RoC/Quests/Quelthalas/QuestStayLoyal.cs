@@ -1,0 +1,32 @@
+
+public class QuestStayLoyal{
+
+
+    private boolean operator Global( ){
+      return true;
+    }
+
+    private string operator CompletionPopup( ){
+      return "The Blood Elves stay loyal to Illidan";
+    }
+
+    private string operator CompletionDescription( ){
+      return "Stay allied to Illidan";
+    }
+
+    private void OnComplete( ){
+      GREAT_TREACHERY.Progress = QUEST_PROGRESS_FAILED;
+      SUMMON_KIL.Progress = QUEST_PROGRESS_FAILED;
+      UnitRemoveAbilityBJ( FourCC(A0IK), LEGEND_KAEL.Unit);
+      UnitRemoveAbilityBJ( FourCC(A0IF), LEGEND_KAEL.Unit);
+    }
+
+    public  thistype ( ){
+      thistype this = thistype.allocate("Refuse KilFourCC(Jaeden)s Offer", "Kil)jaeden has approached Kael with an offer of power && salvation. He should refuse it && resist the temptation of Fel power.", "ReplaceableTextures\\CommandButtons\\BTNDemonHunter2blp");
+      this.AddQuestItem(QuestItemCastSpell.create(FourCC(A0IK), true));
+      this.AddQuestItem(QuestItemLegendLevel.create(LEGEND_KAEL, 6));
+      ;;
+    }
+
+
+}

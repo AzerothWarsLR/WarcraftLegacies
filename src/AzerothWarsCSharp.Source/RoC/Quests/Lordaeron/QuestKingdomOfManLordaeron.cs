@@ -1,0 +1,54 @@
+public class QuestKingdomOfManLordaeron{
+
+  
+    private const int RESEARCH_ID = FourCC(R01N);
+  
+
+
+    private boolean operator Global( ){
+      return true;
+    }
+
+    private string operator CompletionPopup( ){
+      return "The people of the Eastern Kingdoms have been united under the banner of Lordaeron. Long live High King Arthas Menethil!";
+    }
+
+    private string operator CompletionDescription( ){
+      return "You gain a research improving all of your units, the Crowns of Lordaeron && Stormwind are merged, && Arthas becomes High King";
+    }
+
+    private void OnComplete( ){
+      //Artifact
+      unit crownHolder = ARTIFACT_CROWNSTORMWIND.OwningUnit;
+      RemoveItem(ARTIFACT_CROWNLORDAERON.item);
+      RemoveItem(ARTIFACT_CROWNSTORMWIND.item);
+      UnitAddItemSafe(crownHolder, ARTIFACT_CROWNEASTERNKINGDOMS.item);
+      ARTIFACT_CROWNLORDAERON.setStatus(ARTIFACT_STATUS_HIDDEN);
+      ARTIFACT_CROWNLORDAERON.setDescription("Melted down");
+      ARTIFACT_CROWNSTORMWIND.setStatus(ARTIFACT_STATUS_HIDDEN);
+      ARTIFACT_CROWNSTORMWIND.setDescription("Melted down");
+      //Research
+      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
+      DisplayResearchAcquired(Holder.Player, RESEARCH_ID, 1);
+      //High King Arthas
+      LEGEND_ARTHAS.UnitType = FourCC(Harf);
+      LEGEND_ARTHAS.ClearUnitDependencies();
+    }
+
+    private void OnAdd( ){
+      Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
+    }
+
+    public  thistype ( ){
+      thistype this = thistype.allocate("Kingdom of Man", "Before the First War, all of humanity was united under the banner of the Arathorian Empire. Reclaim its greatness by uniting mankind once again.", "ReplaceableTextures\\CommandButtons\\BTNFireKingCrown.blp");
+      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_ARTHAS, true));
+      this.AddQuestItem(QuestItemAcquireArtifact.create(ARTIFACT_CROWNLORDAERON));
+      this.AddQuestItem(QuestItemAcquireArtifact.create(ARTIFACT_CROWNSTORMWIND));
+      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_LICHKING));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n010))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n01G))));
+      ;;
+    }
+
+
+}
