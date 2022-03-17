@@ -1,15 +1,13 @@
 namespace AzerothWarsCSharp.Source.Main.Libraries
 {
   public class GeneralHelpers{
-
-  
     private const float HERO_DROP_DIST = 50     ;//The radius in which heroes spread out items when they drop them
-    private force DestForce = null;
-    private group TempGroup = CreateGroup();
-    private rect TempRect = Rect(0, 0, 0, 0);
+    private static force DestForce = null;
+    private static group TempGroup = CreateGroup();
+    private static rect TempRect = Rect(0, 0, 0, 0);
   
 
-    static integer GetUnitAverageDamage(unit whichUnit, int weaponIndex ){
+    public static int GetUnitAverageDamage(unit whichUnit, int weaponIndex ){
       float baseDamage = BlzGetUnitBaseDamage(whichUnit, weaponIndex);
       float numberOfDice = BlzGetUnitDiceNumber(whichUnit, weaponIndex);
       float sidesPerDie = BlzGetUnitDiceSides(whichUnit, weaponIndex);
@@ -17,12 +15,12 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
     }
 
     //Returns as percentage.
-    static float GetUnitDamageReduction(unit whichUnit ){
+    public static float GetUnitDamageReduction(unit whichUnit ){
       float armor = BlzGetUnitArmor(whichUnit);
       return (armor*006) / ((1+006)*armor);
     }
 
-    static void KillNeutralHostileUnitsInRadius(float x, float y, float radius ){
+    public static void KillNeutralHostileUnitsInRadius(float x, float y, float radius ){
       unit u;
       GroupEnumUnitsInRange(TempGroup, x, y, radius, null);
       while(true){
@@ -35,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
       }
     }
 
-    static unit CreateStructureForced(player whichPlayer, int unitId, float x, float y, float face, float size ){
+    public static unit CreateStructureForced(player whichPlayer, int unitId, float x, float y, float face, float size ){
       unit u = null;
       SetRect(TempRect, x - size/2, y - size/2, x + size/2, y + size/2);
       GroupEnumUnitsInRect(TempGroup, TempRect, null);
@@ -52,14 +50,14 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
       return CreateUnit(whichPlayer, unitId, x, y, face);
     }
 
-    static void PlayDialogue(player whichPlayer, sound whichSound, string speakerName, string caption ){
+    public static void PlayDialogue(player whichPlayer, sound whichSound, string speakerName, string caption ){
       if (GetLocalPlayer() == whichPlayer){
         StartSound(whichSound);
         DisplayTimedTextToPlayer(whichPlayer, 0, 0, GetSoundDuration(whichSound) / 1000, "\n|cffffcc00" + speakerName + ":|r " + caption);
       }
     }
 
-    static void CreateUnits(player whichPlayer, int unitId, float x, float y, float face, int count ){
+    public static void CreateUnits(player whichPlayer, int unitId, float x, float y, float face, int count ){
       int i = 0;
       while(true){
         if ( i == count){ break; }
@@ -68,11 +66,11 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
       }
     }
 
-    static float GetRectRandomY(rect whichRect ){
+    public static float GetRectRandomY(rect whichRect ){
       return GetRandomReal(GetRectMinY(whichRect), GetRectMaxY(whichRect));
     }
 
-    static float GetRectRandomX(rect whichRect ){
+    public static float GetRectRandomX(rect whichRect ){
       return GetRandomReal(GetRectMinX(whichRect), GetRectMaxX(whichRect));
     }
 
@@ -80,22 +78,22 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
       ForceAddPlayer(DestForce, GetEnumPlayer());
     }
 
-    static void ForceAddForce(force sourceForce, force destForce ){
+    public static void ForceAddForce(force sourceForce, force destForce ){
       DestForce = destForce;
       ForForce(sourceForce,  ForceAddForceEnum);
     }
 
-    static void AddHeroAttributes(unit whichUnit, int str, int agi, int int ){
+    public static void AddHeroAttributes(unit whichUnit, int str, int agi, int intelligence){
       string sfx = "";
       SetHeroStr(whichUnit, GetHeroStr(whichUnit, false) + str, true);
       SetHeroAgi(whichUnit, GetHeroAgi(whichUnit, false) + agi, true);
-      SetHeroInt(whichUnit, GetHeroInt(whichUnit, false) + int, true);
+      SetHeroInt(whichUnit, GetHeroInt(whichUnit, false) + intelligence, true);
 
-      if (str > 0 && agi == 0 && int == 0){
+      if (str > 0 && agi == 0 && intelligence == 0){
         sfx = "Abilities\\Spells\\Items\\AIsm\\AIsmTarget.mdl";
-      }else if (str == 0 && agi > 0 && int == 0){
+      }else if (str == 0 && agi > 0 && intelligence == 0){
         sfx = "Abilities\\Spells\\Items\\AIam\\AIamTarget.mdl";
-      }else if (str == 0 && agi == 0 && int > 0){
+      }else if (str == 0 && agi == 0 && intelligence > 0){
         sfx = "Abilities\\Spells\\Items\\AIim\\AIimTarget.mdl";
       }else {
         sfx = "Abilities\\Spells\\Items\\AIlm\\AIlmTarget.mdl";
@@ -103,7 +101,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
       DestroyEffect(AddSpecialEffect(sfx, GetUnitX(whichUnit), GetUnitY(whichUnit)));
     }
 
-    static void UnitRescue(unit whichUnit, player whichPlayer ){
+    public static void UnitRescue(unit whichUnit, player whichPlayer ){
       //If the unit costs 10 food, that means it should be owned by neutral passive instead of the rescuing player.
       if (GetUnitFoodUsed(whichUnit) == 10){
         SetUnitOwner(whichUnit, Player(PLAYER_NEUTRAL_PASSIVE), true);
@@ -114,7 +112,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
       SetUnitInvulnerable(whichUnit, false);
     }
 
-    static void RescueUnitsInGroup(group whichGroup, player whichPlayer ){
+    public static void RescueUnitsInGroup(group whichGroup, player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
       BlzGroupAddGroupFast(whichGroup, tempGroup);
@@ -127,7 +125,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
       DestroyGroup(tempGroup);
     }
 
-    static void RescueHostileUnitsInRect(rect whichRect, player whichPlayer ){
+    public static void RescueHostileUnitsInRect(rect whichRect, player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
       GroupEnumUnitsInRect(tempGroup, whichRect, null);
@@ -142,7 +140,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
       DestroyGroup(tempGroup);
     }
 
-    static void RescueNeutralUnitsInRect(rect whichRect, player whichPlayer ){
+    public static void RescueNeutralUnitsInRect(rect whichRect, player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
       GroupEnumUnitsInRect(tempGroup, whichRect, null);
@@ -157,7 +155,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
       DestroyGroup(tempGroup);
     }
 
-    static void UnitDropAllItems(unit u ){
+    public static void UnitDropAllItems(unit u ){
       int i = 0;
       item dropItem = null;
       float unitX = GetUnitX(u);
@@ -179,7 +177,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
       }
     }
 
-    static void UnitTransferItems(unit sender, unit receiver ){
+    public static void UnitTransferItems(unit sender, unit receiver ){
       int i = 0;
       while(true){
         if ( i > 6){ break; }
@@ -189,7 +187,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
     }
 
     //Add an item to a unit. If the unit)s inventory is full, drop it on the ground near them instead.
-    static void UnitAddItemSafe(unit whichUnit, item whichItem ){
+    public static void UnitAddItemSafe(unit whichUnit, item whichItem ){
       SetItemPosition(whichItem, GetUnitX(whichUnit), GetUnitY(whichUnit));
       UnitAddItem(whichUnit, whichItem);
     }
