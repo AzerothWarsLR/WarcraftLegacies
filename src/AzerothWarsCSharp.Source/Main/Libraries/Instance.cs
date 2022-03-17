@@ -88,7 +88,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
 
 
     //Determines the virtual distance between two points which may or may not be in seperate Instances
-    static float GetDistanceBetweenPointsEx(float x1, float y1, float x2, float y2 ){
+    public static float GetDistanceBetweenPointsEx(float x1, float y1, float x2, float y2 ){
       float sumDistance = 0;
       Instance instance1 = GetPointInstance(x1, y1);
       Instance instance2 = GetPointInstance(x2, y2);

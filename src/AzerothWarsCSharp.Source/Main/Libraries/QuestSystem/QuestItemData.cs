@@ -1,15 +1,16 @@
+using System;
 using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
 {
-  public class QuestItemData{
-
-
+  public class QuestItemData
+  {
+    public static event EventHandler<QuestItemData> ProgressChanged;
+    
     private QuestData parentQuest;
     private QuestItemData parentQuestItem;
     private int progress = QUEST_PROGRESS_INCOMPLETE;
     private string description = "";
-    private questitem questItem;
     private minimapicon minimapIcon = null;
 
     private effect mapEffect = null ;//The visual effect that appears on the map, usually a Circle of Power
@@ -52,26 +53,18 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
       this.parentQuestItem = value;
     }
 
-    QuestData operator ParentQuest( ){
-      ;.parentQuest;
+    public QuestData ParentQuest
+    {
+      get => parentQuest;
+      set => parentQuest = value;
     }
 
-    void operator ParentQuest=(QuestData value ){
-      this.parentQuest = value;
-    }
+    public questitem QuestItem { get; set; }
 
-    questitem operator QuestItem( ){
-      ;.questItem;
-    }
-
-    void operator QuestItem=(questitem value ){
-      this.questItem = value;
-    }
-
-    //Whether or not this can be seen as a bullet point in the quest log
-    stub boolean operator ShowsInQuestLog( ){
-      return true;
-    }
+    /// <summary>
+    /// Whether or not this can be seen as a bullet point in the quest log.
+    /// </summary>
+    public bool ShowsInQuestLog => true;
 
     stub float operator X( ){
       return 0;
@@ -103,8 +96,12 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
       }
     }
 
-    stub integer operator Progress( ){
-      ;.progress;
+    public int Progress
+    {
+      get
+      {
+        return progress;
+      }
     }
 
     void operator Progress=(int value ){
@@ -114,35 +111,43 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
       this.progress = value;
       if (this.ShowsInQuestLog){
         if (value == QUEST_PROGRESS_INCOMPLETE){
-          QuestItemSetCompleted(this.questItem, false);
+          QuestItemSetCompleted(this.QuestItem, false);
           if (GetLocalPlayer() == this.Holder.Player){
             this.ShowLocal();
           }
           this.ShowSync();
         }else if (value == QUEST_PROGRESS_COMPLETE){
-          QuestItemSetCompleted(this.questItem, true);
+          QuestItemSetCompleted(this.QuestItem, true);
           if (GetLocalPlayer() == this.Holder.Player){
             this.HideLocal();
           }
           this.HideSync();
         }else if (value == QUEST_PROGRESS_UNDISCOVERED){
-          QuestItemSetCompleted(this.questItem, false);
+          QuestItemSetCompleted(this.QuestItem, false);
         }else if (value == QUEST_PROGRESS_FAILED){
-          QuestItemSetCompleted(this.questItem, false);
+          QuestItemSetCompleted(this.QuestItem, false);
         }
       }
       thistype.triggerQuestItemData = this;
       thistype.progressChanged.fire();
     }
 
+    public string Description
+    {
+      get
+      {
+        return description;
+      }
+    }
+    
     stub string operator Description( ){
       ;.description;
     }
 
     stub void operator Description=(string value ){
       this.description = value;
-      if (this.questItem != null){
-        QuestItemSetDescription(this.questItem, this.description);
+      if (this.QuestItem != null){
+        QuestItemSetDescription(this.QuestItem, this.description);
       }
     }
 
@@ -151,12 +156,12 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
     }
 
     //Run when added to a Quest
-    stub void OnAdd( ){
+    public void OnAdd( ){
 
     }
 
     //Shows the local aspects of this QuestItem, namely the minimap icon.
-    void ShowLocal( ){
+    public void ShowLocal( ){
       int i = 0;
       if (this.Progress == QUEST_PROGRESS_INCOMPLETE && this.ParentQuest.Progress == QUEST_PROGRESS_INCOMPLETE){
         if (this.minimapIcon == null && this.X != 0 && this.Y != 0){
@@ -168,7 +173,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
     }
 
     //Shows the synchronous aspects of this QuestItem, namely the visible target circle.
-    void ShowSync( ){
+    public void ShowSync( ){
       string effectPath;
       if (this.Progress == QUEST_PROGRESS_INCOMPLETE && this.ParentQuest.Progress == QUEST_PROGRESS_INCOMPLETE){
         if (this.mapEffectPath != null && this.mapEffect == null){
@@ -194,7 +199,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
     }
 
     //Hides the synchronous aspects of this QuestItem, namely the minimap icon.
-    void HideLocal( ){
+    public void HideLocal( ){
       int i = 0;
       if (this.minimapIcon != null){
         SetMinimapIconVisible(this.minimapIcon, false);
@@ -202,7 +207,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
     }
 
     //Hides the synchronous aspects of this QuestItem, namely the minimap icon.
-    void HideSync( ){
+    public void HideSync( ){
       if (this.mapEffect != null){
         DestroyEffect(this.mapEffect);
         this.mapEffect = null;

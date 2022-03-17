@@ -1,93 +1,85 @@
+using System.Collections.Generic;
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
 namespace AzerothWarsCSharp.Source.Main.Libraries
 {
+  /// <summary>
+  /// An IncompatibleResearchSet is a list of Researchs which are mutually exclusive with each other.
+  /// This means that if one of these Researchs is started, the other 2 are disabled
+  /// and only re-enabled if the first research is cancelled.
+  /// </summary>
   public class IncompatibleResearchSet{
+    private const int BIG_NUMBER = 5000; //This is here to disable and enable techs via addition and subtraction
+    private static readonly List<IncompatibleResearchSet> IncompatibleResearchSets = new();
 
-    //An IncompatibleResearchSet is a list of Researchs which are mutually exclusive with each other
-    //This means that if one of these Researchs is started, the other 2 are disabled
-    //and only re-enabled if the first research is cancelled
+    private readonly List<int> _researches = new();
 
-  
-    private const int BIG_NUMBER = 5000  ;//This is here to disable and enable techs via addition and subtraction
-  
-
-
-    private static IncompatibleResearchSet[] setList;
-    private static int setCount = 0;
-
-    private int[] researches[10];
-    private int researchCount;
-
-    void add(int researchId ){
-      this.researches[researchCount] = researchId;
-      this.researchCount = this.researchCount + 1;
+    public void Add(int researchId){
+      _researches.Add(researchId);
     }
 
-    void disableResearches( ){
-      int i = 0;
-      Person p = Person.ByHandle(GetTriggerPlayer());
+    private void DisableResearches( ){
+      var i = 0;
+      var p = Person.ByHandle(GetTriggerPlayer());
       while(true){
-        if ( this.researches[i] == 0){ break; }
-        if (this.researches[i] != GetResearched()){
-          p.ModObjectLimit(this.researches[i], -BIG_NUMBER);
+        if (_researches[i] == 0){ break; }
+        if (_researches[i] != GetResearched()){
+          p.ModObjectLimit(this._researches[i], -BIG_NUMBER);
         }
-        i = i + 1;
+        i += 1;
       }
     }
 
-    void enableResearches( ){
-      int i = 0;
-      Person p = Person.ByHandle(GetTriggerPlayer());
+    private void EnableResearches( ){
+      var i = 0;
+      var p = Person.ByHandle(GetTriggerPlayer());
       while(true){
-        if ( this.researches[i] == 0){ break; }
-        if (this.researches[i] != GetResearched()){
-          p.ModObjectLimit(this.researches[i], BIG_NUMBER);
+        if (_researches[i] == 0){ break; }
+        if (_researches[i] != GetResearched()){
+          p.ModObjectLimit(_researches[i], BIG_NUMBER);
         }
-        i = i + 1;
+        i += 1;
       }
     }
 
     //Flag is true for START, and false for CANCEL
-    static void doResearch(boolean flag ){
-      int i = 0;
-      int j = 0;
-      int research = GetResearched();
-      while(true){
-        if ( thistype.setList[i] == 0){ break; }
-        j = 0;
-        while(true){
-          if ( thistype.setList[i].researches[j] == 0){ break; }
-          if (thistype.setList[i].researches[j] == research){
-            if (flag == true){
-              thistype.setList[i].disableResearches();
-            }else {
-              thistype.setList[i].enableResearches();
+    private static void DoResearch(bool flag ){
+      foreach (var incompatibleResearchSet in IncompatibleResearchSets)
+      {
+        foreach (var research in incompatibleResearchSet._researches)
+        {
+          if (research == GetResearched())
+          {
+            if (flag)
+            {
+              incompatibleResearchSet.DisableResearches();
+              return;
             }
+            incompatibleResearchSet.EnableResearches();
+            return;
           }
-          j = j + 1;
         }
-        i = i + 1;
       }
     }
 
-    IncompatibleResearchSet ( ){
+    private IncompatibleResearchSet ( ){ }
 
-      thistype.setList[thistype.setCount] = this;
-      thistype.setCount = thistype.setCount + 1;
-      ;;
+    public static void Create()
+    {
+      IncompatibleResearchSets.Add(new IncompatibleResearchSet());
     }
-
-
+    
     private static void ResearchStart( ){
-      IncompatibleResearchSet.doResearch(true);
+      DoResearch(true);
     }
 
     private static void ResearchCancel( ){
-      IncompatibleResearchSet.doResearch(false);
+      DoResearch(false);
     }
 
     private static void OnInit( ){
-      PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_RESEARCH_START,  ResearchStart) ;//TODO: use filtered events
-      PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_RESEARCH_CANCEL,  ResearchCancel) ;//TODO: use filtered events
+      PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_RESEARCH_START,  ResearchStart);
+      PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_RESEARCH_CANCEL,  ResearchCancel);
     }
 
   }

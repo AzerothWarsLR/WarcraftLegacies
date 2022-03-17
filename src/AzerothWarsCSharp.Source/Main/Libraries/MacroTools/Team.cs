@@ -200,7 +200,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       return false;
     }
 
-    boolean ContainsFaction(Faction faction ){
+    public bool ContainsFaction(Faction faction ){
       ;.factions.contains(faction);
     }
 

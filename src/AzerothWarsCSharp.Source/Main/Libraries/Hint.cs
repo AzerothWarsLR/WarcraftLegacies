@@ -1,58 +1,61 @@
+using System.Collections.Generic;
+using System.Linq;
+
 namespace AzerothWarsCSharp.Source.Main.Libraries
 {
-  public class Hint{
-
-  
+  public class Hint
+  {
     private const float HINT_INTERVAL = 180;
-  
 
+    private static readonly HashSet<Hint> All = new();
+    private static readonly HashSet<Hint> Unread = new();
+    private readonly string _msg;
 
-    private static Set all;
-    private static Set unread;
-    private string msg;
-
-    void display( ){
-      DisplayHint(GetLocalPlayer(), msg);
-      unread.remove(this);
+    private void Display()
+    {
+      Libraries.Display.DisplayHint(GetLocalPlayer(), _msg);
+      Unread.Remove(this);
     }
 
-    static void displayRandom( ){
-      if (unread.size > 0){
-        thistype(unread[GetRandomInt(0, unread.size-1)]).display();
+    private static void DisplayRandom()
+    {
+      if (Unread.Count > 0)
+      {
+        Unread.ElementAt(GetRandomInt(0, Unread.Count - 1)).Display();
       }
     }
 
-    thistype (string msg ){
-
-      this.msg = msg;
-      all.add(this);
-      unread.add(this);
-      ;;
+    private Hint(string msg)
+    {
+      _msg = msg;
+      All.Add(this);
+      Unread.Add(this);
     }
 
-    static void onInit( ){
-      all = Set.create("Hint all");
-      unread = Set.create("Hint unread");
-    }
-
-
-
-    private static void DisplayRandomHints( ){
-      int i = 0;
-      while(true){
-        if ( i == MAX_PLAYERS){ break; }
-        if (GetLocalPlayer() == Player(i)){
-          Hint.displayRandom();
+    private static void DisplayRandomHints()
+    {
+      var i = 0;
+      while (true)
+      {
+        if (i == Environment.MAX_PLAYERS)
+        {
+          break;
         }
-        i = i + 1;
+
+        if (GetLocalPlayer() == Player(i))
+        {
+          DisplayRandom();
+        }
+
+        i += 1;
       }
     }
 
-    private static void OnInit( ){
-      trigger trig = CreateTrigger();
+    public static void Setup()
+    {
+      var trig = CreateTrigger();
       TriggerRegisterTimerEventPeriodic(trig, HINT_INTERVAL);
-      TriggerAddAction(trig,  DisplayRandomHints);
+      TriggerAddAction(trig, DisplayRandomHints);
     }
-
   }
 }

@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using AzerothWarsCSharp.Source.RoC.Setup;
-using AzerothWarsCSharp.Source.Setup;
-using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source
 {

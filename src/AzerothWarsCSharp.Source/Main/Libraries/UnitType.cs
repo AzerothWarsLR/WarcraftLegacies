@@ -1,9 +1,8 @@
+using System.Collections.Generic;
+
 namespace AzerothWarsCSharp.Source.Main.Libraries
 {
   public class UnitType{
-
-  
-
     int UNITCATEGORY_TOWNHALL = 1;
     int UNITCATEGORY_KEEP = 2;
     int UNITCATEGORY_CASTLE = 3;
@@ -22,75 +21,51 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
     int UNITCATEGORY_SPECIAL = 16 ;//Lumber Mill, for instance
     int UNITCATEGORY_UPGRADEDTOWER2_A = 13 ;//Tower that)s been upgraded twice
     int UNITCATEGORY_UPGRADEDTOWER2_B = 14 ;//Tower that)s been upgraded twice
-  
-
     //Stores extra data about UnitTypeIds.
 
-    private static Table byId;
-    readonly int unitId = 0;
-    readonly boolean refund = false      ;//When the player leaves this unit gets deleted, cost refunded, and given to allies
-    readonly boolean meta = false        ;//When the player leaves this unit is exempted from being affected
-    readonly string iconPath = null;
-    private int unitCategory = 0;
+    private static readonly Dictionary<int, UnitType> byId = new();
+    private readonly int unitId;
+    private bool _refund = false; //When the player leaves this unit gets deleted, cost refunded, and given to allies
+    private int _unitCategory;
+    
+    /// <summary>
+    /// How much gold the UnitType costs to train or build.
+    /// </summary>
+    public int GoldCost => GetUnitGoldCost(unitId);
 
-    //How much gold the UnitType costs to train or build.
-    integer operator GoldCost( ){
-      return GetUnitGoldCost(unitId);
-    }
+    /// <summary>
+    /// How much lumber the UnitType costs to train or build.
+    /// </summary>
+    public int LumberCost => GetUnitWoodCost(unitId);
 
-    //How much lumber the UnitType costs to train or build.
-    integer operator LumberCost( ){
-      return GetUnitWoodCost(unitId);
-    }
+    /// <summary>
+    /// Whether or not the unit should be deleted without refund when the player leaves.
+    /// </summary>
+    public bool Meta { get; set; }
 
-    //Whether or not the unit should be deleted without refund when the player leaves.
-    boolean operator Meta( ){
-      return meta;
-    }
+    /// <summary>
+    /// Whether or not the unit should be refunded when the player leaves.
+    /// </summary>
+    public bool Refund { get; set; }
 
-    void operator Meta=(boolean b ){
-      meta = b;
-    }
-
-    //Whether or not the unit should be refunded when the player leaves.
-    boolean operator Refund( ){
-      return refund;
-    }
-
-    void operator Refund=(boolean b ){
-      refund = b;
-    }
-
-    //An arbitrary category, like "Shipyard" or "Shop".
-    integer operator UnitCategory( ){
-      return unitCategory;
-    }
-
-    void operator UnitCategory=(int unitCategory ){
-      this.unitCategory = unitCategory;
-    }
+    /// <summary>
+    /// An arbitrary category, like "Shipyard" or "Shop".
+    /// </summary>
+    public int UnitCategory { get; set; }
 
     //Returns the UnitType representation of a unit on the map.
-    static thistype ByHandle(unit whichUnit ){
-      ;type.byId[GetUnitTypeId(whichUnit)];
+    public static UnitType GetFromHandle(unit whichUnit ){
+      return byId[GetUnitTypeId(whichUnit)];
     }
 
     //Returns the UnitType representation of a particular UnitTypeId.
-    static thistype ById(int id ){
-      ;type.byId[id];
+    static UnitType GetFromId(int id ){
+      return UnitType.byId[id];
     }
 
-    UnitType (int unitId ){
-
+    public UnitType(int unitId ){
       this.unitId = unitId;
-      thistype.byId[unitId] = this;
-      ;;
+      byId[unitId] = this;
     }
-
-    private static void onInit( ){
-      thistype.byId = Table.create();
-    }
-
-
   }
 }

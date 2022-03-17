@@ -3,23 +3,19 @@ using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
 namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 {
   public class Faction{
-
-  
     Event OnFactionCreate = 0;
-    Event OnFactionTeamLeave
-    Event OnFactionTeamJoin
-    Event OnFactionGameLeave
-    Event FactionNameChanged
-    Event FactionIconChanged
-    Event FactionScoreStatusChanged
+    private Event OnFactionTeamLeave;
+    private Event OnFactionTeamJoin;
+    private Event OnFactionGameLeave;
+    private Event FactionNameChanged;
+    private Event FactionIconChanged;
+    private Event FactionScoreStatusChanged;
 
     const int UNLIMITED = 200    ;//This is used in Persons and Faction for effectively unlimited unit production
     const int HERO_COST = 100    ;//For refunding
     private const float REFUND_PERCENT = 100          ;//How much gold and lumber is refunded from units that get refunded on leave
     private const float XP_TRANSFER_PERCENT = 100     ;//How much experience is transferred from heroes that leave the game)
-  
-
-
+    
     readonly static StringTable factionsByName;
     readonly static thistype triggerFaction = 0;
     readonly static thistype triggerFactionPrevTeam = 0;
@@ -55,6 +51,11 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     public int StartingGold = 0;
     public int StartingLumber = 0;
 
+    public int GetObjectLimit(int whichObject)
+    {
+      return this.objectLimits[whichObject];
+    }
+    
     integer operator StoredExperience( ){
       ;.storedExperience;
     }
@@ -83,8 +84,12 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       SetPlayerState(this.Player, PLAYER_STATE_RESOURCE_LUMBER, R2I(value));
     }
 
-    Team operator Team( ){
-      ;.team;
+    public Team Team
+    {
+      get
+      {
+        return this.team;
+      }
     }
 
     private stub void OnTeamChange( ){
@@ -146,12 +151,16 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       ;.Person.ControlPointValue;
     }
 
-    string operator ColoredName( ){
-      ;.prefixCol + this.name + "|r";
-    }
-
-    string operator Name( ){
-      ;.name;
+    public string ColoredName => prefixCol + name + "|r";
+    
+    public string PrefixCol => prefixCol;
+    
+    public string Name
+    {
+      get
+      {
+        return name;
+      }
     }
 
     void operator Name=(string value ){
@@ -172,13 +181,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       FactionIconChanged.fire();
     }
 
-    player operator Player( ){
-      ;.Person.Player;
-    }
-
-    Person operator Person( ){
-      ;.person;
-    }
+    public player Player => person.Player;
 
     stub void OnPersonChange( ){
 
@@ -329,7 +332,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       this.OnSetObjectLevel(object, level);
     }
 
-    void ModObjectLimit(int id, int limit ){
+    public void ModObjectLimit(int id, int limit ){
       Person affectedPerson = 0;
 
       if (this.objectLimits.exists(id)){

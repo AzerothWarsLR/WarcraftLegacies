@@ -4,263 +4,427 @@ namespace AzerothWarsCSharp.Source.Main.UnitTypes
 {
   public class UnitTypeConfig{
 
-    private static void OnInit( ){
-      UnitType unitType = 0;
-
-      unitType = UnitType.create(FourCC(n063))      ;//High Elven Magus
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(n086))      ;//Death Knight (Fel Horde)
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h00H))      ;//Death Knight (Scourge)
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(u01A))      ;//Dreadlord Insurgent
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(u007))      ;//Dreadlord
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(n04O))      ;//Doom Guard
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(o01H))      ;//Burning Bladelord
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(o00H))      ;//Burning Blademaster
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(o01L))      ;//Shattered Hand Executioner
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h00F))      ;//Lordaeron Paladin
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h06B))      ;//Grand Crusader
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h06D))      ;//Silver Hand Veteran Paladin
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(n00A))      ;//Farstrider
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(n048))      ;//Blood Mage
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(n007))      ;//Kirin Tor
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(e00O))      ;//Shadowleaf Sentinel
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(e00N))      ;//Keeper of the Grove
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(n09E))      ;//Orc Champion (Bloodpact)
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(noga))      ;//Orc Champion
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(o00A))      ;//Far Seer
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(o024))      ;//Stormreaver Warlock
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h05F))      ;//Stormwind Champion
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h01L))      ;//Thane
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(nnrg))      ;//Royal Guard
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h05V))      ;//Thane
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(nsgb))      ;//Sea Giant Behemoth
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(nahy))      ;//Ancient Hydra
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h01H))      ;//Fleet Commander
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(nfgl))      ;//Ancient Hydra
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(n09T))      ;//Steel Titan
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(n09S))      ;//Stone Titan
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(n04N))      ;//Lady Deathwhisper
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(uswb))      ;//Sylvanas (Ghost)
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(o00B))      ;//Jubei)thos
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(o02N))      ;//Bloodgrin
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(o02I))      ;//Bonethirst
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(n064))      ;//War Master Voone
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(n05T))      ;//Kazzak the Supreme
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h012))      ;//Captain Falric
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h04J))      ;//Darius Crowley (Undead)
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h04J))      ;//Darius Crowley
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(n075))      ;//Vereesa Windrunner
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(njks))      ;//Jailor Kassan
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h01M))      ;//Baelgun
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h03W))      ;//Danath Trollbane
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h05W))      ;//Archbishop Benedictus
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h05X))      ;//High Sorcerer Andromath
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(n065))      ;//Katrana Prestor
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h03F))      ;//Reginald Windsor
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h05Y))      ;//Bolvar Fordragon
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h03W))      ;//Danath Trollbane
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h05X))      ;//High Sorcerer Andromath
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(n065))      ;//Draz)Zilb
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(o025))      ;//Nazgrel (Bloodpact)
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(o01R))      ;//Nazgrel
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h04E))      ;//Chen Stormstout
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h00C))      ;//Drek)thar
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h02F))      ;//Moon Priestess Amara
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(ensh))      ;//Naisha
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(e015))      ;//Broll Bearmantle
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h052))      ;//Dar)Khan Drathir
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(n03F))      ;//Ogre Lord
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(ubdd))      ;//Sapphiron
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(u008))      ;//Peasant converter
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(o01C))      ;//Throne of Kil)jaeden
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(uktg))      ;//Kel)thuzad (Ghost)
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(ncop))      ;//Tavern selector
-      unitType.Meta = true;
-
-      unitType = UnitType.create(FourCC(opeo))      ;//Workers
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(hpea))      ;//Workers
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(nbee))      ;//Workers
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(uaco))      ;//Workers
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h019))      ;//Workers
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(o04L))      ;//Workers
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(ncpn))      ;//Workers
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h022))      ;//Workers
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(o02I))      ;//Workers
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(u01K))      ;//Workers
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(ewsp))      ;//Workers
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(nmpe))      ;//Workers
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(u019))      ;//Workers
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(o04A))      ;//Workers
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(o04B))      ;//Workers
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(h01E))      ;//Workers
-      unitType.Refund = true;
-
-      unitType = UnitType.create(FourCC(u00D))      ;//Workers
-      unitType.Refund = true;
-
-
-
+    public static void Setup( )
+    {
+      new UnitType(FourCC("n063"))
+      {
+        Refund = true
+      };//High Elven Magus
+
+      new UnitType(FourCC("n086"))
+      {
+        Refund = true
+      };//Death Knight (Fel Horde)
+
+      new UnitType(FourCC("h00H"))
+      {
+        Refund = true
+      };//Death Knight (Scourge)
+
+      new UnitType(FourCC("u01A"))
+      {
+        Refund = true
+      };//Dreadlord Insurgent
+
+      new UnitType(FourCC("u007"))
+      {
+        Refund = true
+      };//Dreadlord
+
+      new UnitType(FourCC("n04O"))
+      {
+        Refund = true
+      };//Doom Guard
+
+      new UnitType(FourCC("o01H"))
+      {
+        Refund = true
+      };//Burning Bladelord
+
+      new UnitType(FourCC("o00H"))
+      {
+        Refund = true
+      };//Burning Blademaster
+
+      new UnitType(FourCC("o01L"))
+      {
+        Refund = true
+      };//Shattered Hand Executioner
+
+      new UnitType(FourCC("h00F"))
+      {
+        Refund = true
+      };//Lordaeron Paladin
+
+      new UnitType(FourCC("h06B"))
+      {
+        Refund = true
+      };//Grand Crusader
+
+      new UnitType(FourCC("h06D"))
+      {
+        Refund = true
+      };//Silver Hand Veteran Paladin
+
+      new UnitType(FourCC("n00A"))
+      {
+        Refund = true
+      };//Farstrider
+
+      new UnitType(FourCC("n048"))
+      {
+        Refund = true
+      };//Blood Mage
+
+      new UnitType(FourCC("n007"))
+      {
+        Refund = true
+      };//Kirin Tor
+
+      new UnitType(FourCC("e00O"))
+      {
+        Refund = true
+      };//Shadowleaf Sentinel
+
+      new UnitType(FourCC("e00N"))
+      {
+        Refund = true
+      };//Keeper of the Grove
+
+      new UnitType(FourCC("n09E"))
+      {
+        Refund = true
+      };//Orc Champion (Bloodpact)
+
+      new UnitType(FourCC("noga"))
+      {
+        Refund = true
+      };//Orc Champion
+
+      new UnitType(FourCC("o00A"))
+      {
+        Refund = true
+      };//Far Seer
+
+      new UnitType(FourCC("o024"))
+      {
+        Refund = true
+      };//Stormreaver Warlock
+
+      new UnitType(FourCC("h05F"))
+      {
+        Refund = true
+      };//Stormwind Champion
+
+      new UnitType(FourCC("h01L"))
+      {
+        Refund = true
+      };//Thane
+
+      new UnitType(FourCC("nnrg"))
+      {
+        Refund = true
+      };//Royal Guard
+
+      new UnitType(FourCC("h05V"))
+      {
+        Refund = true
+      };//Thane
+
+      new UnitType(FourCC("nsgb"))
+      {
+        Refund = true
+      };//Sea Giant Behemoth
+
+      new UnitType(FourCC("nahy"))
+      {
+        Refund = true
+      };//Ancient Hydra
+
+      new UnitType(FourCC("h01H"))
+      {
+        Refund = true
+      };//Fleet Commander
+
+      new UnitType(FourCC("nfgl"))
+      {
+        Refund = true
+      };//Ancient Hydra
+
+      new UnitType(FourCC("n09T"))
+      {
+        Refund = true
+      };//Steel Titan
+
+      new UnitType(FourCC("n09S"))
+      {
+        Refund = true
+      };//Stone Titan
+
+      new UnitType(FourCC("n04N"))
+      {
+        Refund = true
+      };//Lady Deathwhisper
+
+      new UnitType(FourCC("uswb"))
+      {
+        Refund = true
+      };//Sylvanas (Ghost)
+
+      new UnitType(FourCC("o00B"))
+      {
+        Refund = true
+      };//Jubei)thos
+
+      new UnitType(FourCC("o02N"))
+      {
+        Refund = true
+      };//Bloodgrin
+
+      new UnitType(FourCC("o02I"))
+      {
+        Refund = true
+      };//Bonethirst
+
+      new UnitType(FourCC("n064"))
+      {
+        Refund = true
+      };//War Master Voone
+
+      new UnitType(FourCC("n05T"))
+      {
+        Refund = true
+      };//Kazzak the Supreme
+
+      new UnitType(FourCC("h012"))
+      {
+        Refund = true
+      };//Captain Falric
+
+      new UnitType(FourCC("h04J"))
+      {
+        Refund = true
+      };//Darius Crowley (Undead)
+
+      new UnitType(FourCC("h04J"))
+      {
+        Refund = true
+      };//Darius Crowley
+
+      new UnitType(FourCC("n075"))
+      {
+        Refund = true
+      };//Vereesa Windrunner
+
+      new UnitType(FourCC("njks"))
+      {
+        Refund = true
+      };//Jailor Kassan
+
+      new UnitType(FourCC("h01M"))
+      {
+        Refund = true
+      };//Baelgun
+
+      new UnitType(FourCC("h03W"))
+      {
+        Refund = true
+      };//Danath Trollbane
+
+      new UnitType(FourCC("h05W"))
+      {
+        Refund = true
+      };//Archbishop Benedictus
+
+      new UnitType(FourCC("h05X"))
+      {
+        Refund = true
+      };//High Sorcerer Andromath
+
+      new UnitType(FourCC("n065"))
+      {
+        Refund = true
+      };//Katrana Prestor
+
+      new UnitType(FourCC("h03F"))
+      {
+        Refund = true
+      };//Reginald Windsor
+
+      new UnitType(FourCC("h05Y"))
+      {
+        Refund = true
+      };//Bolvar Fordragon
+
+      new UnitType(FourCC("h03W"))
+      {
+        Refund = true
+      };//Danath Trollbane
+
+      new UnitType(FourCC("h05X"))
+      {
+        Refund = true
+      };//High Sorcerer Andromath
+
+      new UnitType(FourCC("n065"))
+      {
+        Refund = true
+      };//Draz)Zilb
+
+      new UnitType(FourCC("o025"))
+      {
+        Refund = true
+      };//Nazgrel (Bloodpact)
+
+      new UnitType(FourCC("o01R"))
+      {
+        Refund = true
+      };//Nazgrel
+
+      new UnitType(FourCC("h04E"))
+      {
+        Refund = true
+      };//Chen Stormstout
+
+      new UnitType(FourCC("h00C"))
+      {
+        Refund = true
+      };//Drek)thar
+
+      new UnitType(FourCC("h02F"))
+      {
+        Refund = true
+      };//Moon Priestess Amara
+
+      new UnitType(FourCC("ensh"))
+      {
+        Refund = true
+      };//Naisha
+
+      new UnitType(FourCC("e015"))
+      {
+        Refund = true
+      };//Broll Bearmantle
+
+      new UnitType(FourCC("h052"))
+      {
+        Refund = true
+      };//Dar)Khan Drathir
+
+      new UnitType(FourCC("n03F"))
+      {
+        Refund = true
+      };//Ogre Lord
+
+      new UnitType(FourCC("ubdd"))
+      {
+        Refund = true
+      };//Sapphiron
+
+      new UnitType(FourCC("u008"))
+      {
+        Refund = true
+      };//Peasant converter
+
+      new UnitType(FourCC("o01C"))
+      {
+        Refund = true
+      };//Throne of Kil)jaeden
+
+      new UnitType(FourCC("uktg"))
+      {
+        Refund = true
+      };//Kel)thuzad (Ghost)
+
+      new UnitType(FourCC("ncop"))
+      {
+        Meta = true
+      };//Tavern selector
+
+      new UnitType(FourCC("opeo"))
+      {
+        Refund = true
+      };//Workers
+
+      new UnitType(FourCC("hpea"))
+      {
+        Refund = true
+      };//Workers
+
+      new UnitType(FourCC("nbee"))
+      {
+        Refund = true
+      };//Workers
+
+      new UnitType(FourCC("uaco"))
+      {
+        Refund = true
+      };//Workers
+
+      new UnitType(FourCC("h019"))
+      {
+        Refund = true
+      };//Workers
+
+      new UnitType(FourCC("o04L"))
+      {
+        Refund = true
+      };//Workers
+
+      new UnitType(FourCC("ncpn"))
+      {
+        Refund = true
+      };//Workers
+
+      new UnitType(FourCC("h022"))
+      {
+        Refund = true
+      };//Workers
+
+      new UnitType(FourCC("o02I"))
+      {
+        Refund = true
+      };//Workers
+
+      new UnitType(FourCC("u01K"))
+      {
+        Refund = true
+      };//Workers
+
+      new UnitType(FourCC("ewsp"))
+      {
+        Refund = true
+      };//Workers
+
+      new UnitType(FourCC("nmpe"))
+      {
+        Refund = true
+      };//Workers
+
+      new UnitType(FourCC("u019"))
+      {
+        Refund = true
+      };//Workers
+
+      new UnitType(FourCC("o04A"))
+      {
+        Refund = true
+      };//Workers
+
+      new UnitType(FourCC("o04B"))
+      {
+        Refund = true
+      };//Workers
+
+      new UnitType(FourCC("h01E"))
+      {
+        Refund = true
+      };//Workers
+
+      new UnitType(FourCC("u00D"))
+      {
+        Refund = true
+      };//Workers
     }
 
   }

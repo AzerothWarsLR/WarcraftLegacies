@@ -1,306 +1,186 @@
+using System;
+using System.Collections.Generic;
+
 namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 {
-  public class Artifact{
-
-  
-    Event OnArtifactCreate
-    Event OnArtifactAcquire
-    Event OnArtifactDrop
-    Event OnArtifactDestroy
-    Event OnArtifactOwnerChange                     //The owner of this Artifact changes
-    Event OnArtifactStatusChange                    //An Artifact changes status
-    Event OnArtifactFactionChange                   //The owner of this Artifact changes factions
-    Event OnArtifactCarrierOwnerChange              //The unit carrying an Artifact changes player ownership
-    Event OnArtifactDescriptionChange               //The Artifact has its description changed. This is just text and is not represented anywhere by the Artifact itself
+  public class Artifact
+  {
+    public event EventHandler<Artifact> OnArtifactCreate;
+    public event EventHandler<Artifact> OnArtifactAcquire;
+    public event EventHandler<Artifact> OnArtifactDrop;
+    public event EventHandler<Artifact> OnArtifactDestroy;
+    public event EventHandler<Artifact> OnArtifactOwnerChange; //The owner of this Artifact changes
+    public event EventHandler<Artifact> OnArtifactStatusChange; //An Artifact changes status
+    public event EventHandler<Artifact> OnArtifactFactionChange; //The owner of this Artifact changes factions
+    public event EventHandler<Artifact> OnArtifactCarrierOwnerChange; //The unit carrying an Artifact changes player ownership
+    public event EventHandler<Artifact> OnArtifactDescriptionChange; //The Artifact has its description changed. This is just text and is not represented anywhere by the Artifact itself
 
     const int ARTIFACT_STATUS_GROUND = 0     ;//Artifact is on the ground
     const int ARTIFACT_STATUS_UNIT = 1       ;//Artifact is held by a unit
     const int ARTIFACT_STATUS_SPECIAL = 2    ;//Artifact is nowhere, but artifically has a location
     const int ARTIFACT_STATUS_HIDDEN = 3     ;//Artifact does not allow pinging, and only displays text (which is not set automatically)
 
-    const int ARTIFACT_HOLDER_ABIL_ID = FourCC(A01Y);
-  
+    int ARTIFACT_HOLDER_ABIL_ID = FourCC("A01Y");
 
-    //A node in an ArtifactGroup
-
-    thistype next = 0;
-    thistype prev = 0;
-
-    readonly Artifact whichArtifact;
-
-    boolean hasNext( ){
-      if (this.next != 0){
-        return true;
-      }
-      return false;
-    }
-
-    thistype (Artifact whichArtifact ){
-
-
-      this.whichArtifact = whichArtifact;
-
-      ;;
-    }
-
-
-    //A linkedlist of Artifacts for iteration
-
-    static thistype[] artifactGroupsByPlayerId      //A list of ArtifactGroups indexed by player ID, automatically populated by the system
-    static Table artifactGroupsByOwningUnit             //A list of ArtifactGroups indexed by the handle ID of the owning unit
-    private Table artifactNodesByArtifact               ;//A list of Artifact nodes as indexed by their Artifact ID
-    ArtifactNode first
-    ArtifactNode last
-
-    void setOwningPersons(Person p ){
-      ArtifactNode tempArtifactNode = this.first;
-      while(true){
-        if ( tempArtifactNode == 0){ break; }
-        tempArtifactNode.whichArtifact.setOwningPerson(p);
-        tempArtifactNode = tempArtifactNode.next;
-      }
-    }
-
-    void updateFactions( ){
-      ArtifactNode tempArtifactNode = this.first;
-      while(true){
-        if ( tempArtifactNode == 0){ break; }
-        tempArtifactNode.whichArtifact.updateFaction();
-        tempArtifactNode = tempArtifactNode.next;
-      }
-    }
-
-    void destroy( ){
-      this.clear();
-      this.artifactNodesByArtifact.destroy();
-      this.deallocate();
-    }
-
-    void clear( ){
-      ArtifactNode tempArtifactNode = 0;
-      while(true){
-        if ( this.last == 0){ break; }
-        tempArtifactNode = this.last;
-        this.last = this.last.prev;
-        tempArtifactNode.destroy();
-      }
-    }
-
-    void remove(Artifact whichArtifact ){
-      ArtifactNode tempArtifactNode = this.artifactNodesByArtifact[whichArtifact];
-
-      tempArtifactNode.prev.next = tempArtifactNode.next;
-      tempArtifactNode.next.prev = tempArtifactNode.prev;
-
-      if (this.first == tempArtifactNode){
-        this.first = tempArtifactNode.next;
-      }
-
-      if (this.last == tempArtifactNode){
-        this.last = tempArtifactNode.prev;
-      }
-
-      this.artifactNodesByArtifact[whichArtifact] = 0;
-
-      tempArtifactNode.destroy();
-    }
-
-    void add(Artifact whichArtifact ){
-      ArtifactNode newArtifactNode = ArtifactNode.create(whichArtifact);
-
-      this.last.next = newArtifactNode;
-      newArtifactNode.prev = this.last;
-      this.last = newArtifactNode;
-
-      if (this.first == 0){
-        this.first = newArtifactNode;
-      }
-
-      this.artifactNodesByArtifact[whichArtifact] = newArtifactNode;
-    }
-
-    thistype ( ){
-
-
-      this.artifactNodesByArtifact = Table.create();
-
-      ;;
-    }
-
-    static void onInit( ){
-      int i = 0;
-      while(true){
-        if ( i > MAX_PLAYERS){ break; }
-        thistype.artifactGroupsByPlayerId[i] = thistype.create()    ;//These should really get destroyed at some point if the Person gets destroyed
-        i = i + 1;
-      }
-      thistype.artifactGroupsByOwningUnit = Table.create();
-    }
-
-
-
-    static Table artifactsByType
-    readonly static Artifact triggerArtifact = 0;
-    readonly item item = null;
-    readonly Person owningPerson = 0;
-    private unit owningUnit = null;
-    readonly int status = 0;
-    readonly string description = null                  ;//More like a situation describer; eg "Owned by xx..." or "Unknown location"
-    private boolean titanforged = false;
-    private int titanforgedAbility = FourCC(A0VJ)         ;//The extra ability the Artifact gains when it)s Titanforged
+    private static Dictionary<int, Artifact> _artifactsByType = new();
+    readonly item _item;
+    readonly Person _owningPerson;
+    private unit _owningUnit;
+    private int _status;
+    private string _description; //More like a situation describer; eg "Owned by xx..." or "Unknown location"
+    private bool _titanforged;
+    private int _titanforgedAbility = FourCC("A0VJ")         ;//The extra ability the Artifact gains when it)s Titanforged
 
     float falseX = 0                                     ;//Where the map should ping this artifact when it is in SPECIAL status mode
     float falseY = 0                                     ;//^
 
-    public void operator TitanforgedAbility=(int value ){
-      this.titanforgedAbility = value;
+    public int TitanforgedAbility
+    {
+      set => _titanforgedAbility = value;
     }
 
-    public boolean operator Titanforged( ){
-      ;.titanforged;
-    }
+    public bool Titanforged => _titanforged;
 
     //Grant the Artifact an additional, predefined ability.
     public void Titanforge( ){
-      if (this.titanforged == false){
-        this.titanforged = true;
-        BlzItemAddAbility(this.item, this.titanforgedAbility);
-        BlzSetItemExtendedTooltip(this.item, BlzGetItemExtendedTooltip(this.item) + "|n|n|cff800000Titanforged|r|n" + BlzGetAbilityExtendedTooltip(this.titanforgedAbility, 0));
-        BlzSetItemDescription(this.item, BlzGetItemDescription(this.item) + "|n|cff800000Titanforged|r");
+      if (this._titanforged == false){
+        this._titanforged = true;
+        BlzItemAddAbility(this._item, this._titanforgedAbility);
+        BlzSetItemExtendedTooltip(this._item, BlzGetItemExtendedTooltip(this._item) + "|n|n|cff800000Titanforged|r|n" + BlzGetAbilityExtendedTooltip(this._titanforgedAbility, 0));
+        BlzSetItemDescription(this._item, BlzGetItemDescription(this._item) + "|n|cff800000Titanforged|r");
       }
     }
 
-    void updateFaction( ){
-      thistype.triggerArtifact = this;
-      OnArtifactFactionChange.fire();
+    private void UpdateFaction( ){
+      OnArtifactFactionChange?.Invoke(this, this);
     }
 
-    void setStatus(int i ){
-      if (this.status != i){
-        this.status = i;
-        thistype.triggerArtifact = this;
-        OnArtifactStatusChange.fire();
+    public int Status
+    {
+      set
+      {
+        _status = value;
+        OnArtifactStatusChange?.Invoke(this, this);
       }
     }
 
-    unit operator OwningUnit( ){
-      ;.owningUnit;
-    }
-
-    void setOwningUnit(unit u ){
-      ArtifactGroup tempArtifactGroup = 0;
-      //Remove this Artifact from the ArtifactGroup belonging to the former owning unit, destroying if it is now empty
-      tempArtifactGroup = ArtifactGroup.artifactGroupsByOwningUnit[GetHandleId(this.owningUnit)];
-      if (tempArtifactGroup != 0){
-        tempArtifactGroup.remove(this);
-        if (tempArtifactGroup.first == 0){
-          tempArtifactGroup.destroy();
+    public unit OwningUnit
+    {
+      get => _owningUnit;
+      set
+      {
+        ArtifactGroup tempArtifactGroup;
+        //Remove this Artifact from the ArtifactGroup belonging to the former owning unit, destroying if it is now empty
+        tempArtifactGroup = ArtifactGroup.artifactGroupsByOwningUnit[GetHandleId(this._owningUnit)];
+        if (tempArtifactGroup != 0){
+          tempArtifactGroup.remove(this);
+          if (tempArtifactGroup.first == 0){
+            tempArtifactGroup.destroy();
+          }
         }
-      }
 
-      //Transfer ownership
-      this.owningUnit = u;
+        //Transfer ownership
+        this._owningUnit = u;
 
-      //Add this Artifact to the ArtifactGroup belonging to this particular unit, first creating it if it doesn)t exist
-      if (this.owningUnit != null){
-        tempArtifactGroup = ArtifactGroup.artifactGroupsByOwningUnit[GetHandleId(u)];
-        if (tempArtifactGroup == 0){
-          ArtifactGroup.artifactGroupsByOwningUnit[GetHandleId(u)] = ArtifactGroup.create();
+        //Add this Artifact to the ArtifactGroup belonging to this particular unit, first creating it if it doesn)t exist
+        if (this._owningUnit != null){
           tempArtifactGroup = ArtifactGroup.artifactGroupsByOwningUnit[GetHandleId(u)];
+          if (tempArtifactGroup == 0){
+            ArtifactGroup.artifactGroupsByOwningUnit[GetHandleId(u)] = ArtifactGroup.create();
+            tempArtifactGroup = ArtifactGroup.artifactGroupsByOwningUnit[GetHandleId(u)];
+          }
+          tempArtifactGroup.add(this);
         }
-        tempArtifactGroup.add(this);
-      }
 
-      //Change the owner Person if needed
-      if (this.owningPerson != Person.ByHandle(GetOwningPlayer(u))){
-        if (u != null){
-          this.setOwningPerson(Person.ByHandle(GetOwningPlayer(u)));
-        }else {
-          this.setOwningPerson(0);
+        //Change the owner Person if needed
+        if (this._owningPerson != Person.ByHandle(GetOwningPlayer(u))){
+          if (u != null){
+            this.setOwningPerson(Person.ByHandle(GetOwningPlayer(u)));
+          }else {
+            this.setOwningPerson(0);
+          }
         }
       }
     }
 
-    void setOwningPerson(Person p ){
-      if (this.owningPerson != 0){
-        ArtifactGroup.artifactGroupsByPlayerId[GetPlayerId(this.owningPerson.Player)].remove(this) ;//Remove this from the old owner)s Artifact group
+    private void SetOwningPerson(Person p)
+    {
+      if (this._owningPerson != 0){
+        ArtifactGroup.artifactGroupsByPlayerId[GetPlayerId(this._owningPerson.Player)].remove(this) ;//Remove this from the old owner)s Artifact group
       }
 
       if (p != 0){
         ArtifactGroup.artifactGroupsByPlayerId[GetPlayerId(p.Player)].add(this) ;//Add this to the new owner)s Artifact Group
       }
 
-      this.owningPerson = p;
-      thistype.triggerArtifact = this;
-      OnArtifactOwnerChange.fire();
+      this._owningPerson = p;
+      OnArtifactOwnerChange?.Invoke(this, this);
 
-      if (this.owningPerson != 0){
+      if (this._owningPerson != 0){
         this.setStatus(ARTIFACT_STATUS_UNIT);
-      }else {
+      } else {
         this.setStatus(ARTIFACT_STATUS_GROUND);
       }
     }
 
-    void setDescription(string s ){
-      this.description = s;
-      thistype.triggerArtifact = this;
-      OnArtifactDescriptionChange.fire();
+    public string Description
+    {
+      set
+      {
+        _description = value;
+        OnArtifactDescriptionChange?.Invoke(this, this);
+      }
     }
 
-    void pickedUp( ){
-      Artifact.triggerArtifact = this;
+    private void PickedUp( ){
       this.setOwningUnit(GetTriggerUnit());
-      OnArtifactAcquire.fire();
+      OnArtifactAcquire?.Invoke(this, this);
     }
 
     void dropped( ){
       Shore tempShore = 0;
-      Artifact.triggerArtifact = this;
+      Artifact.TriggerArtifact = this;
 
-      if (!IsTerrainPathable(GetUnitX(this.owningUnit), GetUnitY(this.owningUnit), PATHING_TYPE_FLOATABILITY) && IsTerrainPathable(GetUnitX(this.owningUnit), GetUnitY(this.owningUnit), PATHING_TYPE_WALKABILITY)){
-        if (!UnitAlive(this.owningUnit)){
-          tempShore = GetNearestShore(GetUnitX(this.owningUnit), GetUnitY(this.owningUnit));
-          this.item = CreateItem(GetItemTypeId(this.item), tempShore.x, tempShore.y);
+      if (!IsTerrainPathable(GetUnitX(this._owningUnit), GetUnitY(this._owningUnit), PATHING_TYPE_FLOATABILITY) && IsTerrainPathable(GetUnitX(this._owningUnit), GetUnitY(this._owningUnit), PATHING_TYPE_WALKABILITY)){
+        if (!UnitAlive(this._owningUnit)){
+          tempShore = GetNearestShore(GetUnitX(this._owningUnit), GetUnitY(this._owningUnit));
+          this._item = CreateItem(GetItemTypeId(this._item), tempShore.x, tempShore.y);
         }
       }
 
       //Remove dummy Artifact holding ability if the dropping unit had one
-      if (GetUnitAbilityLevel(this.owningUnit, ARTIFACT_HOLDER_ABIL_ID) > 0){
-        UnitRemoveAbility(this.owningUnit, ARTIFACT_HOLDER_ABIL_ID);
+      if (GetUnitAbilityLevel(this._owningUnit, ARTIFACT_HOLDER_ABIL_ID) > 0){
+        UnitRemoveAbility(this._owningUnit, ARTIFACT_HOLDER_ABIL_ID);
       }
 
-      this.setOwningPerson(0);
-      this.setOwningUnit(null);
-      OnArtifactDrop.fire();
+      SetOwningPerson(null);
+      OwningUnit = null;
+      OnArtifactDrop.Invoke(this, this);
     }
 
     void ping(player p ){
       if (GetLocalPlayer() == p){
-        if (this.status == ARTIFACT_STATUS_SPECIAL){
+        if (this._status == ARTIFACT_STATUS_SPECIAL){
           PingMinimap(this.falseX, this.falseY, 3);
-        }else if (this.owningUnit != null){
-          PingMinimap(GetUnitX(this.owningUnit), GetUnitY(this.owningUnit), 3);
+        }else if (this._owningUnit != null){
+          PingMinimap(GetUnitX(this._owningUnit), GetUnitY(this._owningUnit), 3);
         }else {
-          PingMinimap(GetItemX(this.item), GetItemY(this.item), 3);
+          PingMinimap(GetItemX(this._item), GetItemY(this._item), 3);
         }
       }
     }
 
-    void destroy( ){
-      thistype.triggerArtifact = this;
-      OnArtifactDestroy.fire();
-      RemoveItem(this.item);
-      this.item = null;
-      this.deallocate();
+    public void Destroy( ){
+      OnArtifactDestroy?.Invoke(this, this);
+      RemoveItem(_item);
     }
 
-    Artifact (item whichItem ){
-
+    Artifact(item whichItem){
       if (thistype.artifactsByType[GetItemTypeId(whichItem)] == null){
         thistype.artifactsByType[GetItemTypeId(whichItem)] = this;
         thistype.triggerArtifact = this     ;//For event response
-        this.item = whichItem;
-        this.status = 0;
+        this._item = whichItem;
+        this._status = 0;
         this.setOwningPerson(0);
         OnArtifactCreate.fire();
         ;;
@@ -310,26 +190,14 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       }
     }
 
-    private static void onInit( ){
-      thistype.artifactsByType = Table.create();
-    }
-
-
-    static Artifact GetTriggerArtifact( ){
-      return Artifact.triggerArtifact;
-    }
-
     private static void ItemPickup( ){
-      Artifact tempArtifact = Artifact.artifactsByType[GetItemTypeId(GetManipulatedItem())];
-      if (tempArtifact != 0){
-        tempArtifact.pickedUp();
-      }
+      _artifactsByType[GetItemTypeId(GetManipulatedItem())]?.PickedUp();
     }
 
     private static void ItemDrop( ){
       Artifact tempArtifact = 0;
       if (!IsUnitIllusion(GetTriggerUnit())){
-        tempArtifact = Artifact.artifactsByType[GetItemTypeId(GetManipulatedItem())];
+        tempArtifact = Artifact._artifactsByType[GetItemTypeId(GetManipulatedItem())];
         if (tempArtifact != 0){
           tempArtifact.dropped();
         }
@@ -351,24 +219,14 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       }
     }
 
-    private static void OnInit( ){
-      trigger trig = CreateTrigger();
+    public static void Setup( ){
+      var trig = CreateTrigger();
       OnPersonFactionChange.register(trig);
-      TriggerAddAction(trig,  OnPersonFactionChanged);
+      TriggerAddAction(trig, OnPersonFactionChanged);
 
       PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_PICKUP_ITEM,  ItemPickup) ;//TODO: use filtered events
       PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_DROP_ITEM,  ItemDrop) ;//TODO: use filtered events
       PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_CHANGE_OWNER,  UnitChangeOwner) ;//TODO: use filtered events
-
-      OnArtifactCreate = Event.create();
-      OnArtifactAcquire = Event.create();
-      OnArtifactDrop = Event.create();
-      OnArtifactDestroy = Event.create();
-      OnArtifactOwnerChange = Event.create();
-      OnArtifactStatusChange = Event.create();
-      OnArtifactFactionChange = Event.create();
-      OnArtifactCarrierOwnerChange = Event.create();
-      OnArtifactDescriptionChange = Event.create();
     }
 
   }

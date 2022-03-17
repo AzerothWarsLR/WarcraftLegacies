@@ -1,44 +1,35 @@
 //Just records a bunch of locations that are considered "shores" for the purposes of determing where the nearest shore is.
 
+using System.Collections.Generic;
+
 namespace AzerothWarsCSharp.Source.Main.Libraries
 {
   public class Shore{
+    private static List<Shore> shoresByIndex = new();
 
+    readonly float x;
+    readonly float y;
 
-    readonly static thistype[] shoresByIndex;
-    readonly static int shoreCount = 0;
+    public static int Count => shoresByIndex.Count;
 
-    readonly float x = 0;
-    readonly float y = 0;
-
-    static integer Count( ){
-      ;type.shoreCount;
+    public static Shore ByIndex(int i )
+    {
+      return shoresByIndex[i];
     }
 
-    static thistype ByIndex(int i ){
-      ;type.shoresByIndex[i];
-    }
-
-    thistype (float x, float y ){
-
-
+    public Shore(float x, float y ){
       this.x = x;
       this.y = y;
-      thistype.shoresByIndex[shoreCount] = this;
-      thistype.shoreCount = thistype.shoreCount + 1;
-
-      ;;
+      shoresByIndex.Add(this);
     }
-
-
-    static Shore GetNearestShore(float x, float y ){
-      int i = 0;
-      Shore nearestShore = 0;
+    
+    public static Shore GetNearestShore(float x, float y ){
+      var i = 0;
+      Shore nearestShore = null;
       float nearestDistance = 1000000;
-      float tempDistance = 0;
       while(true){
-        if ( i == Shore.shoreCount){ break; }
-        tempDistance = GetDistanceBetweenPointsEx(x, y, Shore.shoresByIndex[i].x, Shore.shoresByIndex[i].y);
+        if ( i == Count){ break; }
+        var tempDistance = Instance.GetDistanceBetweenPointsEx(x, y, Shore.shoresByIndex[i].x, Shore.shoresByIndex[i].y);
         if (tempDistance < nearestDistance){
           nearestDistance = tempDistance;
           nearestShore = Shore.shoresByIndex[i];

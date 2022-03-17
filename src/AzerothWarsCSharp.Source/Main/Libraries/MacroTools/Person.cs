@@ -1,14 +1,9 @@
 namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 {
-  public class Persons{
-
-  
-    force Observers
-
-    Event OnPersonFactionChange
-  
-
-
+  public class Person
+  {
+    private force Observers;
+    private Event OnPersonFactionChange;
     private static thistype[] byId;
     readonly static thistype triggerPerson = 0         ;//Used in event response triggers
     readonly static Faction prevFaction = 0            ;//Used in OnPersonFactionChange event response for the previous faction
@@ -24,13 +19,9 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     private Table objectLimits;
     private Table objectLevels;
 
-    player operator Player( ){
-      ;.p;
-    }
+    public player Player => this.Player;
 
-    Faction operator Faction( ){
-      ;.faction;
-    }
+    public Faction Faction => this.faction;
 
     void operator Faction=(Faction newFaction ){
       int i = 0;
@@ -112,7 +103,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       }
     }
 
-    void ModObjectLimit(int id, int limit ){
+    public void ModObjectLimit(int id, int limit ){
       this.SetObjectLimit(id, this.objectLimits[id] + limit);
     }
 
@@ -148,7 +139,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       ;type.byId[id];
     }
 
-    static thistype ByHandle(player whichPlayer ){
+    public static Person ByHandle(player whichPlayer ){
       ;type.byId[GetPlayerId(whichPlayer)];
     }
 

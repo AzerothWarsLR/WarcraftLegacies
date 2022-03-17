@@ -1,423 +1,461 @@
+using System;
+using System.Collections.Generic;
 using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
 {
-  public class QuestData{
+  public class QuestData
+  {
+    private const int QUEST_PROGRESS_UNDISCOVERED = 0;
+    private const int QUEST_PROGRESS_INCOMPLETE = 1;
+    private const int QUEST_PROGRESS_COMPLETE = 2;
+    private const int QUEST_PROGRESS_FAILED = 3;
 
-  
-    const int QUEST_PROGRESS_UNDISCOVERED = 0;
-    const int QUEST_PROGRESS_INCOMPLETE = 1;
-    const int QUEST_PROGRESS_COMPLETE = 2;
-    const int QUEST_PROGRESS_FAILED = 3;
+    public event EventHandler<QuestData> QuestProgressChanged;
 
-    Event QuestProgressChanged
-  
+    private readonly string _title;
+    private readonly string _description;
+    private int _progress = QUEST_PROGRESS_INCOMPLETE;
+    private Faction _holder;
+    private readonly quest _quest;
+    private bool _muted = true; //Doesn't display text when updated if true
+    private int _researchId;
+    private readonly List<QuestItemData> _questItems = new();
 
-    static QuestData GetTriggerQuest( ){
-      return QuestData.triggerQuest;
+    public string Title => _title;
+
+
+    public bool Global
+    {
+      get { return false; }
     }
 
-
-    private string title = "DEFAULTTITLE";
-    private string description = "DEFAULTDESC";
-    private int progress = QUEST_PROGRESS_INCOMPLETE;
-    private Faction holder;
-    private quest quest;
-    private boolean muted = true ;//Doesn)t display text when updated if true
-    private int researchId;
-
-    private QuestItemData[] questItems[10];
-    private int questItemCount = 0;
-
-    readonly static thistype triggerQuest = 0;
-
-    stub string operator Title( ){
-      ;.title;
+    /// <summary>
+    /// Describes to the player what will happen when the quest is completed.
+    /// </summary>
+    public string CompletionDescription
+    {
+      get { return null; }
     }
 
-    stub boolean operator Global( ){
-      return false;
+    /// <summary>
+    /// Describes to the player what will happen when the quest is failed.
+    /// </summary>
+    public string FailureDescription
+    {
+      get { return null; }
     }
 
-    //Describes to the player what will happen when the quest is completed
-    stub string operator CompletionDescription( ){
-      return null;
+    /// <summary>
+    /// Displayed to the player when the quest is completed.
+    /// </summary>
+    public string CompletionPopup
+    {
+      get { return null; }
     }
 
-    //Describes to the player what will happen when the quest is failed
-    stub string operator FailureDescription( ){
-      return null;
+    /// <summary>
+    /// Displayed to the player when the quest is failed.
+    /// </summary>
+    public string FailurePopup => null;
+
+    /// <summary>
+    /// Describes the background and flavour of this quest.
+    /// </summary>
+    public string Description => _description;
+
+    /// <summary>
+    /// The research given to the faction when it completes its quest.
+    /// </summary>
+    public int ResearchId
+    {
+      get => _researchId;
+      set => _researchId = value;
     }
 
-    //Displayed to the player when the quest is completed
-    stub string operator CompletionPopup( ){
-      return null;
+    public quest Quest => _quest;
+
+    public bool ProgressLocked => _progress is QUEST_PROGRESS_COMPLETE or QUEST_PROGRESS_FAILED;
+
+    public void OnComplete()
+    {
+      
     }
 
-    //Displayed to the player when the quest is failed
-    stub string operator FailurePopup( ){
-      return null;
+    public void OnFail()
+    {
+      
     }
+    
+    public int Progress
+    {
+      get => _progress;
+      set
+      {
+        var formerProgress = _progress;
+        _progress = value;
+        switch (value)
+        {
+          case QUEST_PROGRESS_COMPLETE:
+          {
+            QuestSetCompleted(_quest, true);
+            QuestSetFailed(_quest, false);
+            QuestSetDiscovered(_quest, true);
+            if (!_muted)
+            {
+              DisplayCompleted();
+              if (Global)
+              {
+                DisplayCompletedGlobal();
+              }
+            }
+            if (_researchId != 0)
+            {
+              SetPlayerTechResearched(Holder.Player, _researchId, 1);
+            }
+            OnComplete();
+            break;
+          }
+          case QUEST_PROGRESS_FAILED:
+          {
+            QuestSetCompleted(_quest, false);
+            QuestSetFailed(_quest, true);
+            QuestSetDiscovered(_quest, true);
+            if (!_muted)
+            {
+              DisplayFailed();
+            }
+            OnFail();
+            break;
+          }
+          case QUEST_PROGRESS_INCOMPLETE:
+          {
+            if (!_muted)
+            {
+              if (formerProgress == QUEST_PROGRESS_UNDISCOVERED)
+              {
+                DisplayDiscovered();
+              }
+            }
+            QuestSetCompleted(_quest, false);
+            QuestSetFailed(_quest, false);
+            QuestSetDiscovered(_quest, true);
+            break;
+          }
+          case QUEST_PROGRESS_UNDISCOVERED:
+            QuestSetCompleted(_quest, false);
+            QuestSetFailed(_quest, false);
+            QuestSetDiscovered(_quest, false);
+            break;
+        }
 
-    //Describes the background and flavour of this quest
-    stub string operator Description( ){
-      ;.description;
-    }
-
-    //The research given to the faction when it completes its quest
-    integer operator ResearchId( ){
-      ;.researchId;
-    }
-
-    void operator ResearchId=(int value ){
-      this.researchId = value;
-    }
-
-    quest operator Quest( ){
-      ;.quest;
-    }
-
-    boolean operator ProgressLocked( ){
-      ;.progress == QUEST_PROGRESS_COMPLETE || this.progress == QUEST_PROGRESS_FAILED;
-    }
-
-    integer operator Progress( ){
-      ;.progress;
-    }
-
-    void operator Progress=(int value ){
-      int i = 0;
-      int formerProgress = this.progress;
-      this.progress = value;
-      if (value == QUEST_PROGRESS_COMPLETE){
-        QuestSetCompleted(this.quest, true);
-        QuestSetFailed(this.quest, false);
-        QuestSetDiscovered(this.quest, true);
-        if (!this.muted){
-          this.DisplayCompleted();
-          if (this.Global){
-            this.DisplayCompletedGlobal();
+        //If the quest is incomplete, show its markers. Otherwise, hide them.
+        if (Progress != QUEST_PROGRESS_INCOMPLETE)
+        {
+          foreach (var questItem in _questItems)
+          {
+            if (GetLocalPlayer() == Holder.Player)
+            {
+              questItem.HideLocal();
+            }
+            questItem.HideSync();
           }
         }
-        if (this.researchId != 0){
-          SetPlayerTechResearched(this.Holder.Player, this.researchId, 1);
-        }
-        OnComplete();
-      }else if (value == QUEST_PROGRESS_FAILED){
-        QuestSetCompleted(this.quest, false);
-        QuestSetFailed(this.quest, true);
-        QuestSetDiscovered(this.quest, true);
-        if (!this.muted){
-          this.DisplayFailed();
-        }
-        OnFail();
-      }else if (value == QUEST_PROGRESS_INCOMPLETE){
-        if (!this.muted){
-          if (formerProgress == QUEST_PROGRESS_UNDISCOVERED){
-            this.DisplayDiscovered();
+        else
+        {
+          foreach (var questItem in _questItems)
+          {
+            if (GetLocalPlayer() == Holder.Player)
+            {
+              questItem.ShowLocal();
+            }
+            questItem.ShowSync();
           }
         }
-        QuestSetCompleted(this.quest, false);
-        QuestSetFailed(this.quest, false);
-        QuestSetDiscovered(this.quest, true);
-      }else if (value == QUEST_PROGRESS_UNDISCOVERED){
-        QuestSetCompleted(this.quest, false);
-        QuestSetFailed(this.quest, false);
-        QuestSetDiscovered(this.quest, false);
+        QuestProgressChanged?.Invoke(this, this);
       }
+    }
 
-      //If the quest is incomplete, show its markers. Otherwise, hide them.
-      if (this.Progress != QUEST_PROGRESS_INCOMPLETE){
-        while(true){
-          if ( i == this.questItemCount){ break; }
-          if (GetLocalPlayer() == this.Holder.Player){
-            questItems[i].HideLocal();
-          }
-          questItems[i].HideSync();
-          i = i + 1;
+    /// <summary>
+    /// The Faction that can complete the quest.
+    /// </summary>
+    public Faction Holder
+    {
+      get => _holder;
+      set
+      {
+        if (_holder != null)
+        {
+          BJDebugMsg("Attempted to Holder of quest " + _title + " to " + value.Name + " but it is already to " + _holder.Name);
+          return;
         }
-      }else {
-        while(true){
-          if ( i == this.questItemCount){ break; }
-          if (GetLocalPlayer() == this.Holder.Player){
-            questItems[i].ShowLocal();
-          }
-          questItems[i].ShowSync();
-          i = i + 1;
+
+        _holder = value;
+        if (_researchId != 0)
+        {
+          Holder.ModObjectLimit(_researchId, 1);
         }
-      }
 
-      thistype.triggerQuest = this;
-      QuestProgressChanged.fire();
-    }
+        OnAdd();
+        if (FailurePopup != null)
+        {
+          QuestSetDescription(_quest,
+            _description + "\n|cffffcc00On completion:|r " + CompletionDescription +
+            "\n|cffffcc00On failure:|r " + FailureDescription);
+        }
+        else
+        {
+          QuestSetDescription(_quest,
+            _description + "\n|cffffcc00On completion:|r " + CompletionDescription);
+        }
 
-    //The faction that can complete this quest
-    Faction operator Holder( ){
-      ;.holder;
-    }
-
-    void operator Holder=(Faction value ){
-      int i = 0;
-      if (this.holder != 0){
-        BJDebugMsg("Attempted to Holder of quest " + this.title + " to " + value.name + " but it is already to " + this.holder.name);
-        return;
-      }
-      this.holder = value;
-      if (this.researchId != 0){
-        Holder.ModObjectLimit(this.researchId, 1);
-      }
-      this.OnAdd();
-      if (this.FailurePopup != null){
-        QuestSetDescription(this.quest, this.description + "\n|cffffcc00On completion:|r " + this.CompletionDescription + "\n|cffffcc00On failure:|r " + this.FailureDescription);
-      }else {
-        QuestSetDescription(this.quest, this.description + "\n|cffffcc00On completion:|r " + this.CompletionDescription);
-      }
-      while(true){
-        if ( i == this.questItemCount){ break; }
-        this.questItems[i].OnAdd();
-        i = i + 1;
-      }
-      this.muted = false;
-    }
-
-    stub void OnAdd( ){
-
-    }
-
-    stub void OnComplete( ){
-
-    }
-
-    stub void OnFail( ){
-
-    }
-
-    //Enables the local aspects of all child QuestItems.
-    void ShowLocal( ){
-      int i = 0;
-      QuestSetEnabled(this.quest, true);
-      while(true){
-        if ( i == this.questItemCount){ break; }
-        questItems[i].ShowLocal();
-        i = i + 1;
+        foreach (var questItem in _questItems)
+        {
+          questItem.OnAdd();
+        }
+        _muted = false;
       }
     }
 
-    //Enables the synchronous aspects of all child QuestItems.
-    void ShowSync( ){
-      int i = 0;
-      while(true){
-        if ( i == this.questItemCount){ break; }
-        questItems[i].ShowSync();
-        i = i + 1;
+    public void OnAdd()
+    {
+      
+    }
+
+    /// <summary>
+    /// Enables the local aspects of all child QuestItems.
+    /// </summary>
+    void ShowLocal()
+    {
+      QuestSetEnabled(_quest, true);
+      foreach (var questItem in _questItems)
+      {
+        questItem.ShowLocal();
       }
     }
 
-    //Disables the local aspects of all child QuestItems.
-    void HideLocal( ){
-      int i = 0;
-      QuestSetEnabled(this.quest, false);
-      while(true){
-        if ( i == this.questItemCount){ break; }
-        questItems[i].HideLocal();
-        i = i + 1;
+    /// <summary>
+    /// Enables the synchronous aspects of all child QuestItems.
+    /// </summary>
+    void ShowSync()
+    {
+      foreach (var questItem in _questItems)
+      {
+        questItem.ShowSync();
       }
     }
 
-    //Disables the synchronous aspects of all child QuestItems.
-    void HideSync( ){
-      int i = 0;
-      while(true){
-        if ( i == this.questItemCount){ break; }
-        questItems[i].HideSync();
-        i = i + 1;
+    /// <summary>
+    /// Disables the local aspects of all child QuestItems.
+    /// </summary>
+    void HideLocal()
+    {
+      QuestSetEnabled(_quest, false);
+      foreach (var questItem in _questItems)
+      {
+        questItem.HideLocal();
+      }
+    }
+
+    /// <summary>
+    /// Disables the synchronous aspects of all child QuestItems.
+    /// </summary>
+    void HideSync()
+    {
+      foreach (var questItem in _questItems)
+      {
+        questItem.HideSync();
       }
     }
 
     //Display a warning message to everyone EXCEPT the player that completed the quest
-    private void DisplayCompletedGlobal( ){
-      string display = "";
-      if (GetLocalPlayer() != this.Holder.Player){
-        display = display + "\n|cffffcc00MAJOR EVENT - " + this.Holder.prefixCol + this.Title + "|r\n" + this.CompletionPopup + "\n";
+    private void DisplayCompletedGlobal()
+    {
+      var display = "";
+      if (GetLocalPlayer() != Holder.Player)
+      {
+        display = display + "\n|cffffcc00MAJOR EVENT - " + Holder.PrefixCol + Title + "|r\n" +
+                  CompletionPopup + "\n";
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
-        if (Person.ByHandle(GetLocalPlayer()).Faction.Team.ContainsFaction(this.Holder)){
-          StartSound(bj_questCompletedSound);
-        }else {
-          StartSound(bj_questWarningSound);
-        }
+        StartSound(Person.ByHandle(GetLocalPlayer()).Faction.Team.ContainsFaction(Holder)
+          ? bj_questCompletedSound
+          : bj_questWarningSound);
       }
     }
 
-    private void DisplayUpdated( ){
-      int i = 0;
-      QuestItemData tempQuestItemData;
-      string display = "";
-      if (GetLocalPlayer() == this.Holder.Player){
-        display = display + "\n|cffffcc00QUEST UPDATED - " + this.Title + "|r\n" + this.Description + "\n";
-        while(true){
-          if ( i == this.questItemCount){ break; }
-          tempQuestItemData = questItems[i];
-          if (tempQuestItemData.ShowsInQuestLog){
-            if (tempQuestItemData.Progress == QUEST_PROGRESS_COMPLETE){
-              display = display + " - |cff808080" + tempQuestItemData.Description + " (Completed)|r\n";
-            }else {
-              display = display + " - " + tempQuestItemData.Description + "\n";
+    private void DisplayUpdated()
+    {
+      var display = "";
+      if (GetLocalPlayer() == Holder.Player)
+      {
+        display = display + "\n|cffffcc00QUEST UPDATED - " + Title + "|r\n" + Description + "\n";
+        foreach (var questItem in _questItems)
+        {
+          if (questItem.ShowsInQuestLog)
+          {
+            if (questItem.Progress == QUEST_PROGRESS_COMPLETE)
+            {
+              display = display + " - |cff808080" + questItem.Description + " (Completed)|r\n";
+            }
+            else
+            {
+              display = display + " - " + questItem.Description + "\n";
             }
           }
-          i = i + 1;
         }
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
         StartSound(bj_questUpdatedSound);
       }
     }
 
-    private void DisplayFailed( ){
-      int i = 0;
-      QuestItemData tempQuestItemData;
-      string display = "";
-      if (GetLocalPlayer() == this.Holder.Player){
-        if (this.FailurePopup != null){
-          display = display + "\n|cffffcc00QUEST FAILED - " + this.Title + "|r\n" + this.FailurePopup + "\n";
-        }else {
-          display = display + "\n|cffffcc00QUEST FAILED - " + this.Title + "|r\n" + this.Description + "\n";
+    private void DisplayFailed()
+    {
+      var display = "";
+      if (GetLocalPlayer() == Holder.Player)
+      {
+        if (FailurePopup != null)
+        {
+          display = display + "\n|cffffcc00QUEST FAILED - " + Title + "|r\n" + FailurePopup + "\n";
         }
-        while(true){
-          if ( i == this.questItemCount){ break; }
-          tempQuestItemData = this.questItems[i];
-          if (tempQuestItemData.ShowsInQuestLog){
-            if (tempQuestItemData.Progress == QUEST_PROGRESS_COMPLETE){
-              display = display + " - |cff808080" + tempQuestItemData.Description + " (Completed)|r\n";
-            }else if (tempQuestItemData.Progress == QUEST_PROGRESS_FAILED){
-              display = display + " - |cffCD5C5C" + tempQuestItemData.Description + " (Failed)|r\n";
-            }else {
-              display = display + " - " + tempQuestItemData.Description + "\n";
-            }
+        else
+        {
+          display = display + "\n|cffffcc00QUEST FAILED - " + Title + "|r\n" + Description + "\n";
+        }
+        foreach (var questItem in _questItems)
+        {
+          if (questItem.ShowsInQuestLog)
+          {
+            display = questItem.Progress switch
+            {
+              QUEST_PROGRESS_COMPLETE => display + " - |cff808080" + questItem.Description + " (Completed)|r\n",
+              QUEST_PROGRESS_FAILED => display + " - |cffCD5C5C" + questItem.Description + " (Failed)|r\n",
+              _ => display + " - " + questItem.Description + "\n"
+            };
           }
-          i = i + 1;
         }
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
         StartSound(bj_questFailedSound);
       }
     }
 
-    private void DisplayCompleted( ){
-      int i = 0;
-      QuestItemData tempQuestItemData;
-      string display = "";
-      if (GetLocalPlayer() == this.Holder.Player){
-        display = display + "\n|cffffcc00QUEST COMPLETED - " + this.Title + "|r\n" + this.CompletionPopup + "\n";
-        while(true){
-          if ( i == this.questItemCount){ break; }
-          tempQuestItemData = this.questItems[i];
-          if (tempQuestItemData.ShowsInQuestLog){
-            display = display + " - |cff808080" + tempQuestItemData.Description + " (Completed)|r\n";
+    private void DisplayCompleted()
+    {
+      var display = "";
+      if (GetLocalPlayer() == Holder.Player)
+      {
+        display = display + "\n|cffffcc00QUEST COMPLETED - " + Title + "|r\n" + CompletionPopup + "\n";
+        foreach (var questItem in _questItems)
+        {
+          if (questItem.ShowsInQuestLog)
+          {
+            display = display + " - |cff808080" + questItem.Description + " (Completed)|r\n";
           }
-          i = i + 1;
         }
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
         StartSound(bj_questCompletedSound);
       }
     }
 
-    void DisplayDiscovered( ){
-      int i = 0;
-      QuestItemData tempQuestItemData;
-      string display = "";
-      if (GetLocalPlayer() == this.Holder.Player){
-        display = display + "\n|cffffcc00QUEST DISCOVERED - " + this.Title + "|r\n" + this.Description + "\n";
-        while(true){
-          if ( i == this.questItemCount){ break; }
-          tempQuestItemData = questItems[i];
-          if (tempQuestItemData.ShowsInQuestLog){
-            if (tempQuestItemData.Progress == QUEST_PROGRESS_COMPLETE){
-              display = display + " - |cff808080" + tempQuestItemData.Description + " (Completed)|r\n";
-            }else {
-              display = display + " - " + tempQuestItemData.Description + "\n";
+    void DisplayDiscovered()
+    {
+      var display = "";
+      if (GetLocalPlayer() == Holder.Player)
+      {
+        display = display + "\n|cffffcc00QUEST DISCOVERED - " + Title + "|r\n" + Description + "\n";
+        foreach (var questItem in _questItems)
+        {
+          if (questItem.ShowsInQuestLog)
+          {
+            if (questItem.Progress == QUEST_PROGRESS_COMPLETE)
+            {
+              display = display + " - |cff808080" + questItem.Description + " (Completed)|r\n";
+            }
+            else
+            {
+              display = display + " - " + questItem.Description + "\n";
             }
           }
-          i = i + 1;
         }
+
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
         StartSound(bj_questDiscoveredSound);
       }
     }
 
-    private void OnQuestItemProgressChanged( ){
-      int i = 0;
-      boolean allComplete = true;
-      boolean anyFailed = false;
-      boolean anyUndiscovered = false;
-      QuestItemData loopQuestItem;
-      while(true){
-        if ( i == this.questItemCount){ break; }
-        loopQuestItem = this.questItems[i];
-        if (loopQuestItem.Progress != QUEST_PROGRESS_COMPLETE){
+    private void OnQuestItemProgressChanged()
+    {
+      var allComplete = true;
+      var anyFailed = false;
+      var anyUndiscovered = false;
+      
+      foreach (var questItem in _questItems)
+      {
+        if (questItem.Progress != QUEST_PROGRESS_COMPLETE)
+        {
           allComplete = false;
-          if (loopQuestItem.Progress == QUEST_PROGRESS_FAILED){
-            anyFailed = true;
-          }else if (loopQuestItem.Progress == QUEST_PROGRESS_UNDISCOVERED){
-            anyUndiscovered = true;
+          switch (questItem.Progress)
+          {
+            case QUEST_PROGRESS_FAILED:
+              anyFailed = true;
+              break;
+            case QUEST_PROGRESS_UNDISCOVERED:
+              anyUndiscovered = true;
+              break;
           }
         }
-        i = i + 1;
       }
       //If anything is undiscovered, the quest is undiscovered
-      if (anyUndiscovered == true && this.Progress != QUEST_PROGRESS_UNDISCOVERED){
-        this.Progress = QUEST_PROGRESS_UNDISCOVERED;
+      if (anyUndiscovered && Progress != QUEST_PROGRESS_UNDISCOVERED)
+      {
+        Progress = QUEST_PROGRESS_UNDISCOVERED;
         //If everything is complete, the quest is completed
-      }else if (allComplete == true && this.Progress != QUEST_PROGRESS_COMPLETE){
-        this.Progress = QUEST_PROGRESS_COMPLETE;
+      }
+      else if (allComplete && Progress != QUEST_PROGRESS_COMPLETE)
+      {
+        Progress = QUEST_PROGRESS_COMPLETE;
         //If anything is failed, the quest is failed
-      }else if (anyFailed == true && this.Progress != QUEST_PROGRESS_FAILED){
-        this.Progress = QUEST_PROGRESS_FAILED;
-      }else {
-        this.Progress = QUEST_PROGRESS_INCOMPLETE;
+      }
+      else if (anyFailed && Progress != QUEST_PROGRESS_FAILED)
+      {
+        Progress = QUEST_PROGRESS_FAILED;
+      }
+      else
+      {
+        Progress = QUEST_PROGRESS_INCOMPLETE;
       }
     }
 
-    QuestItemData AddQuestItem(QuestItemData value ){
-      this.questItems[this.questItemCount] = value;
-      this.questItemCount = this.questItemCount + 1;
-      if (value.ShowsInQuestLog){
-        value.QuestItem = QuestCreateItem(this.quest);
+    public QuestItemData AddQuestItem(QuestItemData value)
+    {
+      _questItems.Add(value);
+      if (value.ShowsInQuestLog)
+      {
+        value.QuestItem = QuestCreateItem(_quest);
         QuestItemSetDescription(value.QuestItem, value.Description);
       }
       value.ParentQuest = this;
       return value;
     }
 
-    private static void OnAnyQuestItemProgressChanged( ){
-      if (QuestItemData.TriggerQuestItemData.ParentQuest != 0){
-        QuestItemData.TriggerQuestItemData.ParentQuest.OnQuestItemProgressChanged();
-      }
+    private static void OnAnyQuestItemProgressChanged(object sender, QuestItemData e)
+    {
+      e.ParentQuest.OnQuestItemProgressChanged();
     }
 
-    private void destroy( ){
-
+    public QuestData(string title, string desc, string icon)
+    {
+      _quest = CreateQuest();
+      _description = desc;
+      _title = title;
+      QuestSetTitle(_quest, title);
+      QuestSetIconPath(_quest, icon);
+      QuestSetRequired(_quest, false);
+      QuestSetEnabled(_quest, false);
     }
 
-    thistype (string title, string desc, string icon ){
-
-      this.quest = CreateQuest();
-      this.description = desc;
-      this.title = title;
-      QuestSetTitle(this.quest, title);
-      QuestSetIconPath(this.quest, icon);
-      QuestSetRequired(this.quest, false);
-      QuestSetEnabled(this.quest, false);
-      ;;
+    public static void Setup()
+    {
+      QuestItemData.ProgressChanged += OnAnyQuestItemProgressChanged;
     }
-
-    private static void onInit( ){
-      trigger trig = CreateTrigger();
-      QuestItemData.ProgressChanged.register(trig);
-      TriggerAddAction(trig,  thistype.OnAnyQuestItemProgressChanged);
-    }
-
-
-    private static void OnInit( ){
-      QuestProgressChanged = Event.create();
-    }
-
   }
 }

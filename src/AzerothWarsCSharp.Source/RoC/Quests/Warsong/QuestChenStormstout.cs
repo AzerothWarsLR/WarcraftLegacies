@@ -5,13 +5,9 @@ using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
 namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
 {
   public class QuestChenStormstout{
-
-  
     private const int CHEN_RESEARCH = FourCC(R037);
     private const int CHEN_ID = FourCC(Nsjs);
-  
-
-
+    
     private string operator CompletionPopup( ){
       return "Chen Stormstout has joined the " + this.Holder.Team.Name + ".";
     }
