@@ -3,7 +3,7 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
 {
-  public class QuestItemData
+  public abstract class QuestItemData
   {
     public static event EventHandler<QuestItemData> ProgressChanged;
 

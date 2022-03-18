@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 {
   public class Team{
@@ -5,10 +8,8 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     Event OnTeamCreate = 0;
     Event OnTeamSizeChange = 0;
     Event TeamScoreStatusChanged
-  
-
-
-    readonly static StringTable teamsByName;
+    
+    private static Dictionary<string, Team> teamsByName;
     private static thistype[] teamsByIndex;
     private static int teamCount = 0;
     readonly static thistype triggerTeam = 0;
@@ -18,6 +19,29 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     private int scoreStatus;
     private string victoryMusic;
 
+    public static Team Register(Team team)
+    {
+      throw new NotImplementedException();
+    }
+    
+    public static bool TeamWithNameExists(string teamName)
+    {
+      return teamsByName.ContainsKey(teamName);
+    }
+
+    public static Team GetTeamByName(string teamName)
+    {
+      return teamsByName[teamName];
+    }
+
+    public IEnumerable<Faction> GetAllFactions()
+    {
+      foreach (var faction in factions)
+      {
+        yield return faction;
+      }
+    }
+    
     void operator VictoryMusic=(string whichMusic ){
       victoryMusic = whichMusic;
     }
@@ -65,26 +89,38 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     }
 
     //Only includes filled Factions
-    integer operator PlayerCount( ){
-      var i = 0;
-      var total = 0;
-      Faction loopFaction;
-      while(true){
-        if ( i == factions.size){ break; }
-        loopFaction = factions[i];
-        if (loopFaction.Person != 0 && loopFaction.ScoreStatus != SCORESTATUS_DEFEATED){
-          total = total + 1;
+    public int PlayerCount
+    {
+      get
+      {
+        var i = 0;
+        var total = 0;
+        Faction loopFaction;
+        while (true)
+        {
+          if (i == factions.size)
+          {
+            break;
+          }
+
+          loopFaction = factions[i];
+          if (loopFaction.Person != 0 && loopFaction.ScoreStatus != SCORESTATUS_DEFEATED)
+          {
+            total = total + 1;
+          }
+
+          i = i + 1;
         }
-        i = i + 1;
+
+        return total;
       }
-      return total;
     }
 
     Faction GetFactionByIndex(int index ){
       ;.factions[index];
     }
 
-    void RemoveFaction(Faction faction ){
+    public void RemoveFaction(Faction faction ){
       var i = 0;
       if (!factions.contains(faction)){
         BJDebugMsg("Attempted to remove non-present faction " + faction.Name + " from team " + Name);
@@ -99,7 +135,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       OnTeamSizeChange.fire();
     }
 
-    void AddFaction(Faction faction ){
+    public void AddFaction(Faction faction ){
       var i = 0;
       if (factions.contains(faction)){
         BJDebugMsg("Attempted to add already present faction " + faction.Name + " to team " + Name);
@@ -114,7 +150,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       OnTeamSizeChange.fire();
     }
 
-    void AllyPlayer(player whichPlayer ){
+    public void AllyPlayer(player whichPlayer ){
       var i = 0;
       while(true){
         if ( i == this.FactionCount){ break; }
@@ -125,7 +161,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       thistype.triggerTeam = this;
     }
 
-    void UnallyPlayer(player whichPlayer ){
+    public void UnallyPlayer(player whichPlayer ){
       var i = 0;
       while(true){
         if ( i == this.FactionCount){ break; }
@@ -166,7 +202,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       }
     }
 
-    force CreateForceFromPlayers( ){
+    public force CreateForceFromPlayers( ){
       var i = 0;
       force newForce = CreateForce();
       Faction loopFaction;
@@ -213,9 +249,8 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       ;type.teamsByIndex[index];
     }
 
-    Team (string name ){
-
-
+    public Team(string name)
+    {
       Name = name;
       factions = Set.create("factions in " + name);
       invitees = Set.create("invitees of " + name);
@@ -232,10 +267,8 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 
       thistype.triggerTeam = this;
       OnTeamCreate.fire();
-
-      ;;
     }
-
+    
     private static void onInit( ){
       thistype.teamsByName = StringTable.create();
     }

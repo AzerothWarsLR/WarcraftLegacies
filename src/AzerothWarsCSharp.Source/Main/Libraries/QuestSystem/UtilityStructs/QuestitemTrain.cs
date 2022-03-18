@@ -1,52 +1,55 @@
+using System.Collections.Generic;
+using WCSharp.Events;
+
 namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 {
-  public class QuestItemTrain{
+  public sealed class QuestItemTrain : QuestItemData
+  {
+    private static readonly List<QuestItemTrain> ByIndex = new();
+    private readonly int _objectId;
+    private readonly int _trainFromId;
+    private int _currentTrainCount;
+    private readonly int _targetTrainCount;
 
-
-    private static int count = 0;
-    private static thistype[] byIndex;
-    private int objectId;
-    private int trainFromId;
-    private int currentTrainCount;
-    private int targetTrainCount;
-
-    private void operator CurrentTrainCount=(int value ){
-      currentTrainCount = value;
-      this.Description = "Train " + GetObjectName(objectId) + "s from the " + GetObjectName(trainFromId) + " (" + I2S(currentTrainCount) + "/" + I2S(targetTrainCount) + ")";
-    }
-
-    thistype (int objectId, int trainFromId, int targetTrainCount ){
-
-      this.objectId = objectId;
-      this.trainFromId = trainFromId;
-      thistype.byIndex[thistype.count] = this;
-      thistype.count = thistype.count + 1;
-      this.targetTrainCount = targetTrainCount;
-      this.CurrentTrainCount = 0;
-      ;;
-    }
-
-    private static void OnAnyTrain( ){
-      var i = 0;
-      thistype loopQuestItem;
-      unit triggerUnit = GetTrainedUnit();
-      while(true){
-        if ( i == thistype.count){ break; }
-        loopQuestItem = thistype.byIndex[i];
-        if (!loopQuestItem.ProgressLocked && loopQuestItem.objectId == GetUnitTypeId(triggerUnit) && loopQuestItem.Holder.Player == GetOwningPlayer(GetTrainedUnit())){
-          loopQuestItem.CurrentTrainCount = loopQuestItem.currentTrainCount + 1;
-          if (loopQuestItem.currentTrainCount == loopQuestItem.targetTrainCount){
-            loopQuestItem.Progress = QUEST_PROGRESS_COMPLETE;
-          }
-        }
-        i = i + 1;
+    private int CurrentTrainCount
+    {
+      set
+      {
+        _currentTrainCount = value;
+        Description = "Train " + GetObjectName(_objectId) + "s from the " + GetObjectName(_trainFromId) + " (" +
+                      I2S(_currentTrainCount) + "/" + I2S(_targetTrainCount) + ")";
       }
     }
 
-    private static void onInit( ){
-      PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_TRAIN_FINISH,  thistype.OnAnyTrain) ;//TODO: use filtered events
+    public QuestItemTrain(int objectId, int trainFromId, int targetTrainCount)
+    {
+      _objectId = objectId;
+      _trainFromId = trainFromId;
+      ByIndex.Add(this);
+      _targetTrainCount = targetTrainCount;
+      CurrentTrainCount = 0;
     }
 
+    private static void OnAnyTrain()
+    {
+      unit triggerUnit = GetTrainedUnit();
+      foreach (var item in ByIndex)
+      {
+        if (!item.ProgressLocked && item._objectId == GetUnitTypeId(triggerUnit) &&
+            item.Holder.Player == GetOwningPlayer(GetTrainedUnit()))
+        {
+          item.CurrentTrainCount = item._currentTrainCount + 1;
+          if (item._currentTrainCount == item._targetTrainCount)
+          {
+            item.Progress = QuestData.QUEST_PROGRESS_COMPLETE;
+          }
+        }
+      }
+    }
 
+    public static void Setup()
+    {
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, OnAnyTrain);
+    }
   }
 }

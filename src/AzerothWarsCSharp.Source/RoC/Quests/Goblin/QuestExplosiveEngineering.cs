@@ -1,32 +1,20 @@
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
 using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.RoC.Quests.Goblin
 {
-  public class QuestExplosiveEngineering{
+  public sealed class QuestExplosiveEngineering : QuestData
+  {
+    protected override string CompletionPopup => "Gazlowee is now trainable";
 
-  
-    private const int QUEST_RESEARCH_ID = FourCC(R01F)   ;//This research is given when the quest is completed
-  
+    protected override string CompletionDescription => "Gazlowee is trainable at the altar";
 
-
-    private string operator CompletionPopup( ){
-      return "Gazlowee is now trainable";
+    public QuestExplosiveEngineering() : base("Explosive Engineering",
+      "The Goblin chief engineer, Gazlowee, is overseeing the construction of the overseas oil platforms.",
+      "ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp")
+    {
+      AddQuestItem(new QuestItemTrain(FourCC("n0AQ"), FourCC("h04Z"), 4));
+      ResearchId = FourCC("R01F");
     }
-
-    private string operator CompletionDescription( ){
-      return "Gazlowee is trainable at the altar";
-    }
-
-    private void OnComplete( ){
-    }
-
-    public  thistype ( ){
-
-      this.AddQuestItem(QuestItemTrain.create(FourCC(n0AQ),)h04Z), 4));
-      this.ResearchId = QUEST_RESEARCH_ID;
-      ;;
-    }
-
-
   }
 }

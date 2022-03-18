@@ -4,7 +4,7 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
 {
-  public class QuestData
+  public abstract class QuestData
   {
     public const int QUEST_PROGRESS_UNDISCOVERED = 0;
     public const int QUEST_PROGRESS_INCOMPLETE = 1;
@@ -24,37 +24,22 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
 
     public string Title => _title;
 
-
-    public bool Global
-    {
-      get { return false; }
-    }
+    public bool Global { get; init; }
 
     /// <summary>
     /// Describes to the player what will happen when the quest is completed.
     /// </summary>
-    public Func<string> CompletionDescription
-    {
-      private get;
-      init;
-    }
+    protected abstract string CompletionDescription { get; }
 
     /// <summary>
     /// Describes to the player what will happen when the quest is failed.
     /// </summary>
-    public string FailureDescription
-    {
-      get { return null; }
-    }
+    protected string FailureDescription => "DEFAULTFAILUREDESCRIPTION";
 
     /// <summary>
     /// Displayed to the player when the quest is completed.
     /// </summary>
-    public Func<string> CompletionPopup
-    {
-      private get;
-      init;
-    }
+    protected abstract string CompletionPopup { get; }
 
     /// <summary>
     /// Displayed to the player when the quest is failed.
@@ -79,18 +64,22 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
 
     public bool ProgressLocked => _progress is QUEST_PROGRESS_COMPLETE or QUEST_PROGRESS_FAILED;
 
-    public Action OnComplete
+    /// <summary>
+    /// Fired when the Quest is completed.
+    /// </summary>
+    protected virtual void OnComplete()
     {
-      private get;
-      init;
+      
     }
 
-    public Action OnFail
+    /// <summary>
+    /// Fired when the Quest is failed.
+    /// </summary>
+    protected virtual void OnFail()
     {
-      private get;
-      init;
+      
     }
-    
+
     public int Progress
     {
       get => _progress;
@@ -113,10 +102,12 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
                 DisplayCompletedGlobal();
               }
             }
+
             if (_researchId != 0)
             {
               SetPlayerTechResearched(Holder.Player, _researchId, 1);
             }
+
             OnComplete();
             break;
           }
@@ -129,6 +120,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
             {
               DisplayFailed();
             }
+
             OnFail();
             break;
           }
@@ -141,6 +133,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
                 DisplayDiscovered();
               }
             }
+
             QuestSetCompleted(_quest, false);
             QuestSetFailed(_quest, false);
             QuestSetDiscovered(_quest, true);
@@ -162,6 +155,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
             {
               questItem.HideLocal();
             }
+
             questItem.HideSync();
           }
         }
@@ -173,9 +167,11 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
             {
               questItem.ShowLocal();
             }
+
             questItem.ShowSync();
           }
         }
+
         QuestProgressChanged?.Invoke(this, this);
       }
     }
@@ -190,7 +186,8 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
       {
         if (_holder != null)
         {
-          BJDebugMsg("Attempted to Holder of quest " + _title + " to " + value.Name + " but it is already to " + _holder.Name);
+          BJDebugMsg("Attempted to Holder of quest " + _title + " to " + value.Name + " but it is already to " +
+                     _holder.Name);
           return;
         }
 
@@ -217,20 +214,17 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
         {
           questItem.OnAdd();
         }
+
         _muted = false;
       }
     }
 
-    protected Action OnAdd
-    {
-      get;
-      init;
-    }
+    protected Action OnAdd { get; init; }
 
     /// <summary>
     /// Enables the local aspects of all child QuestItems.
     /// </summary>
-    void ShowLocal()
+    public void ShowLocal()
     {
       QuestSetEnabled(_quest, true);
       foreach (var questItem in _questItems)
@@ -242,7 +236,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
     /// <summary>
     /// Enables the synchronous aspects of all child QuestItems.
     /// </summary>
-    void ShowSync()
+    public void ShowSync()
     {
       foreach (var questItem in _questItems)
       {
@@ -253,7 +247,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
     /// <summary>
     /// Disables the local aspects of all child QuestItems.
     /// </summary>
-    void HideLocal()
+    public void HideLocal()
     {
       QuestSetEnabled(_quest, false);
       foreach (var questItem in _questItems)
@@ -265,7 +259,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
     /// <summary>
     /// Disables the synchronous aspects of all child QuestItems.
     /// </summary>
-    void HideSync()
+    public void HideSync()
     {
       foreach (var questItem in _questItems)
       {
@@ -308,6 +302,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
             }
           }
         }
+
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
         StartSound(bj_questUpdatedSound);
       }
@@ -326,6 +321,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
         {
           display = display + "\n|cffffcc00QUEST FAILED - " + Title + "|r\n" + Description + "\n";
         }
+
         foreach (var questItem in _questItems)
         {
           if (questItem.ShowsInQuestLog)
@@ -338,6 +334,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
             };
           }
         }
+
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
         StartSound(bj_questFailedSound);
       }
@@ -356,6 +353,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
             display = display + " - |cff808080" + questItem.Description + " (Completed)|r\n";
           }
         }
+
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
         StartSound(bj_questCompletedSound);
       }
@@ -392,7 +390,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
       var allComplete = true;
       var anyFailed = false;
       var anyUndiscovered = false;
-      
+
       foreach (var questItem in _questItems)
       {
         if (questItem.Progress != QUEST_PROGRESS_COMPLETE)
@@ -409,6 +407,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
           }
         }
       }
+
       //If anything is undiscovered, the quest is undiscovered
       if (anyUndiscovered && Progress != QUEST_PROGRESS_UNDISCOVERED)
       {
@@ -438,6 +437,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
         value.QuestItem = QuestCreateItem(_quest);
         QuestItemSetDescription(value.QuestItem, value.Description);
       }
+
       value.ParentQuest = this;
       return value;
     }

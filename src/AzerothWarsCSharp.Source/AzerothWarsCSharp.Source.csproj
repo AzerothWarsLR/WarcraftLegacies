@@ -25,6 +25,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AzerothWarsCSharp.Common\AzerothWarsCSharp.Common.csproj" />
     <ProjectReference Include="..\AzerothWarsCSharp.Generated\AzerothWarsCSharp.Generated.csproj" />
+    <ProjectReference Include="..\AzerothWarsCSharp.MacroTools\AzerothWarsCSharp.MacroTools.csproj" />
   </ItemGroup>
 
 </Project>

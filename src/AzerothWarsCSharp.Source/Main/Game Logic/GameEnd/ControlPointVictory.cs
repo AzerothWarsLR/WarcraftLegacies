@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.Source.Main.Game_Logic.GameEnd
       return CPS_WARNING;
     }
 
-    public static int GetTeamControlPoints(Team whichTeam)
+    public static int GetTeamControlPoints(Team? whichTeam)
     {
       var total = 0;
       var i = 0;
@@ -56,7 +56,7 @@ namespace AzerothWarsCSharp.Source.Main.Game_Logic.GameEnd
       return total;
     }
 
-    private static void TeamWarning(Team whichTeam, int controlPoints)
+    private static void TeamWarning(Team? whichTeam, int controlPoints)
     {
       DisplayTextToPlayer(GetLocalPlayer(), 0, 0,
         "\n" + VICTORY_COLOR + "TEAM VICTORY IMMINENT|r\n" + whichTeam.Name + " has captured " + I2S(controlPoints) +
@@ -65,7 +65,7 @@ namespace AzerothWarsCSharp.Source.Main.Game_Logic.GameEnd
 
     private static void ControlPointOwnerChanges()
     {
-      Team team;
+      Team? team;
       int teamControlPoints;
 
       if (!GameWon)

@@ -2,7 +2,7 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 {
-  public class QuestItemSelfExists{
+  public class QuestItemSelfExists : QuestItemData{
 
 
     private static int count = 0;
@@ -30,14 +30,13 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
       }
     }
 
-    thistype ( ){
-
+    public QuestItemSelfExists()
+    {
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
       this.Progress = QUEST_PROGRESS_COMPLETE;
       ;;
     }
-
 
     public static void Setup( ){
       trigger trig = CreateTrigger();

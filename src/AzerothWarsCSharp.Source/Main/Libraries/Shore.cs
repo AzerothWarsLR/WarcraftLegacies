@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
           nearestDistance = tempDistance;
           nearestShore = shoresByIndex[i];
         }
-        i = i + 1;
+        i += 1;
       }
       return nearestShore;
     }

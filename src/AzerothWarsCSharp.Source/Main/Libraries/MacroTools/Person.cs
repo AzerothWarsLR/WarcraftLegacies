@@ -1,3 +1,5 @@
+using System;
+
 namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 {
   public class Person
@@ -21,50 +23,58 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 
     public player Player => Player;
 
-    public Faction Faction => faction;
-
-    void operator Faction=(Faction newFaction ){
-      var i = 0;
-      Faction prevFaction;
-
-      this.prevFaction = faction;
-      thistype.prevFaction = faction;
-
-      //Unapply old faction
-      if (faction != 0){
-        faction = 0;
-        if (this.prevFaction != 0){
-          this.prevFaction.Person = 0 ;//Referential integrity
-        }
+    public Faction Faction
+    {
+      get
+      {
+        return faction;
       }
+      public set
+      {
+        var i = 0;
+        Faction prevFaction;
 
-      //Apply new faction
-      if (newFaction != 0){
-        if (newFaction.Person == 0){
-          SetPlayerColorBJ(this.p, newFaction.playCol, true);
-          faction = newFaction;
-          //Enforce referential integrity
-          if (newFaction.Person != this){
-            newFaction.Person = this;
+        this.prevFaction = faction;
+        thistype.prevFaction = faction;
+
+        //Unapply old faction
+        if (faction != 0){
+          faction = 0;
+          if (this.prevFaction != 0){
+            this.prevFaction.Person = 0 ;//Referential integrity
           }
-        }else {
-          BJDebugMsg("Error: attempted to Person " + GetPlayerName(this.p) + " to already occupied faction with name " + newFaction.name);
         }
-      }
 
-      thistype.triggerPerson = this;
-      OnPersonFactionChange.fire();
+        //Apply new faction
+        if (newFaction != 0){
+          if (newFaction.Person == 0){
+            SetPlayerColorBJ(this.p, newFaction.playCol, true);
+            faction = newFaction;
+            //Enforce referential integrity
+            if (newFaction.Person != this){
+              newFaction.Person = this;
+            }
+          } else {
+            BJDebugMsg("Error: attempted to Person " + GetPlayerName(this.p) + " to already occupied faction with name " + newFaction.name);
+          }
+        }
+
+        thistype.triggerPerson = this;
+        OnPersonFactionChange.fire();
+      }
     }
 
-    float operator ControlPointValue( ){
-      ;.controlPointValue;
-    }
-
-    void operator ControlPointValue=(float value ){
-      if ((value < 0)){
-        BJDebugMsg("ERROR: Tried to assign a negative ControlPointValue value to " + GetPlayerName(this.p));
+    public float ControlPointValue
+    {
+      get => controlPointValue;
+      set
+      {
+        if (value < 0)
+        {
+          throw new ArgumentOutOfRangeException($"Tried to assign a negative ControlPointValue value to + {GetPlayerName(this.p)}");
+        }
+        controlPointValue = value;
       }
-      controlPointValue = value;
     }
 
     integer operator ControlPointCount( ){
@@ -82,9 +92,9 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       ;.objectLevels[object];
     }
 
-    void SetObjectLevel(int object, int level ){
-      objectLevels[object] = level;
-      SetPlayerTechResearched(Player, object, level);
+    public void SetObjectLevel(int obj, int level){
+      objectLevels[obj] = level;
+      SetPlayerTechResearched(Player, obj, level);
     }
 
     public int GetObjectLimit(int id ){

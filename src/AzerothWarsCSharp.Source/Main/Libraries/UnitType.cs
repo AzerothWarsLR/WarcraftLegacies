@@ -2,6 +2,9 @@ using System.Collections.Generic;
 
 namespace AzerothWarsCSharp.Source.Main.Libraries
 {
+  /// <summary>
+  /// Contains extra Azeroth Wars specific information about Warcraft 3 unit types.
+  /// </summary>
   public class UnitType{
     int UNITCATEGORY_TOWNHALL = 1;
     int UNITCATEGORY_KEEP = 2;
@@ -18,25 +21,22 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
     int UNITCATEGORY_UPGRADEDTOWER_A = 13;
     int UNITCATEGORY_UPGRADEDTOWER_B = 14;
     int UNITCATEGORY_BLACKSMITH = 15;
-    int UNITCATEGORY_SPECIAL = 16 ;//Lumber Mill, for instance
-    int UNITCATEGORY_UPGRADEDTOWER2_A = 13 ;//Tower that)s been upgraded twice
-    int UNITCATEGORY_UPGRADEDTOWER2_B = 14 ;//Tower that)s been upgraded twice
-    //Stores extra data about UnitTypeIds.
+    int UNITCATEGORY_SPECIAL = 16; //Lumber Mill, for instance
+    int UNITCATEGORY_UPGRADEDTOWER2_A = 13; //Tower that)s been upgraded twice
+    int UNITCATEGORY_UPGRADEDTOWER2_B = 14; //Tower that)s been upgraded twice
 
-    private static readonly Dictionary<int, UnitType> byId = new();
-    private readonly int unitId;
-    private bool _refund = false; //When the player leaves this unit gets deleted, cost refunded, and given to allies
-    private int _unitCategory;
-    
+    private static readonly Dictionary<int, UnitType> ById = new();
+    private readonly int _unitId;
+
     /// <summary>
     /// How much gold the UnitType costs to train or build.
     /// </summary>
-    public int GoldCost => GetUnitGoldCost(unitId);
+    public int GoldCost => GetUnitGoldCost(_unitId);
 
     /// <summary>
     /// How much lumber the UnitType costs to train or build.
     /// </summary>
-    public int LumberCost => GetUnitWoodCost(unitId);
+    public int LumberCost => GetUnitWoodCost(_unitId);
 
     /// <summary>
     /// Whether or not the unit should be deleted without refund when the player leaves.
@@ -53,19 +53,23 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
     /// </summary>
     public int UnitCategory { get; set; }
 
-    //Returns the UnitType representation of a unit on the map.
+    /// <summary>
+    /// Returns the UnitType representation of a unit on the map.
+    /// </summary>
     public static UnitType GetFromHandle(unit whichUnit ){
-      return byId[GetUnitTypeId(whichUnit)];
+      return ById[GetUnitTypeId(whichUnit)];
     }
 
-    //Returns the UnitType representation of a particular UnitTypeId.
-    static UnitType GetFromId(int id ){
-      return byId[id];
+    /// <summary>
+    /// Returns the UnitType representation of a particular UnitTypeId.
+    /// </summary>
+    public static UnitType GetFromId(int id){
+      return ById[id];
     }
 
     public UnitType(int unitId ){
-      this.unitId = unitId;
-      byId[unitId] = this;
+      this._unitId = unitId;
+      ById[unitId] = this;
     }
   }
 }

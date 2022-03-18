@@ -1,6 +1,6 @@
 namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 {
-  public class QuestItemTime{
+  public class QuestItemTime : QuestItemData {
 
 
     private timer timer;

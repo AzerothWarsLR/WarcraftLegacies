@@ -1,7 +1,7 @@
 ﻿using System;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.Wrappers
+namespace AzerothWarsCSharp.Source.Main.Libraries.Wrappers
 {
   public class TriggerWrapper
   {

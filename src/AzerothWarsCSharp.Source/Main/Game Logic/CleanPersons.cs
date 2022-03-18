@@ -23,9 +23,9 @@ namespace AzerothWarsCSharp.Source.Main.Game_Logic
         {
           var person = Person.ByHandle(player);
           if (person != null && GetPlayerSlotState(player) != PLAYER_SLOT_STATE_PLAYING &&
-              person.Faction.ScoreStatus == ScoreStatus.SCORESTATUS_NORMAL)
+              person.Faction.ScoreStatus == ScoreStatus.ScorestatusNormal)
           {
-            person.Faction.ScoreStatus = ScoreStatus.SCORESTATUS_DEFEATED;
+            person.Faction.ScoreStatus = ScoreStatus.ScorestatusDefeated;
           }
         }
       });

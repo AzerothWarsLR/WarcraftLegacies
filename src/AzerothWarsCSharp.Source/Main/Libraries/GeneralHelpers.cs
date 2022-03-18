@@ -4,9 +4,9 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
 {
   public static class GeneralHelpers{
     private const float HERO_DROP_DIST = 50     ;//The radius in which heroes spread out items when they drop them
-    private static force DestForce;
-    private static group TempGroup = CreateGroup();
-    private static rect TempRect = Rect(0, 0, 0, 0);
+    private static force _destForce;
+    private static readonly group TempGroup = CreateGroup();
+    private static readonly rect TempRect = Rect(0, 0, 0, 0);
 
     public static IEnumerable<player> GetAllPlayers()
     {
@@ -82,11 +82,11 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
     }
 
     private static void ForceAddForceEnum( ){
-      ForceAddPlayer(DestForce, GetEnumPlayer());
+      ForceAddPlayer(_destForce, GetEnumPlayer());
     }
 
     public static void ForceAddForce(force sourceForce, force destForce ){
-      DestForce = destForce;
+      _destForce = destForce;
       ForForce(sourceForce,  ForceAddForceEnum);
     }
 

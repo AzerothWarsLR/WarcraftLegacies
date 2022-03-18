@@ -1,14 +1,14 @@
 ﻿using System.Collections.Generic;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.Wrappers
+namespace AzerothWarsCSharp.Source.Main.Libraries.Wrappers
 {
   /// <summary>
   ///   A wrapper for a Warcraft 3 unit group.
   ///   Manages the creation and destruction of the internal group automatically,
   ///   preventing memory leak issues.
   /// </summary>
-  public class GroupWrapper
+  public sealed class GroupWrapper
   {
     private readonly group _group;
 
@@ -34,6 +34,12 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
       return list;
     }
 
+    public GroupWrapper EnumUnitsOfPlayer(player player)
+    {
+      GroupEnumUnitsOfPlayer(_group, player, null);
+      return this;
+    }
+    
     public GroupWrapper EnumUnitsInRect(rect rect)
     {
       GroupEnumUnitsInRect(_group, rect, null);

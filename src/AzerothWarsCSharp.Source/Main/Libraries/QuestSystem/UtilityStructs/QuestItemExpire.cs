@@ -1,6 +1,6 @@
 namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 {
-  public class QuestItemExpire{
+  public class QuestItemExpire : QuestItemData{
 
 
     private timer timer;
@@ -24,15 +24,14 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
       }
     }
 
-    thistype (int duration ){
-
-      this.Description = " Complete this quest before " + I2S(duration) + " seconds have elapsed";
+    public QuestItemExpire(int duration)
+    {
+      Description = "Complete this quest before " + I2S(duration) + " seconds have elapsed";
       timer = CreateTimer();
       TimerStart(timer, duration, false,  thistype.OnAnyTimerExpires);
       thistype.byTimer[GetHandleId(timer)] = this;
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
-      ;;
     }
 
     private static void onInit( ){

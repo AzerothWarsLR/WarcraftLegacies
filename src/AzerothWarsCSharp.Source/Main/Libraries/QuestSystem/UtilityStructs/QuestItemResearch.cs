@@ -1,6 +1,6 @@
 namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 {
-  public class QuestItemResearch{
+  public class QuestItemResearch : QuestItemData{
 
 
     private static int count = 0;
