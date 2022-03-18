@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Fel_Horde
     //DemonGateType parameters are: gate unit type, demon unit type, time between spawns
     //You must create DemonGateTypes before specifying which units are DemonGates
 
-    private static void OnInit( ){
+    public static void Setup( ){
       DemonGateType.create(FourCC(n000), )n059), 80,  2)  ;//T1 Hounds
       DemonGateType.create(FourCC(n04I), )ndqn), 90,  1)  ;//T1 succ
       DemonGateType.create(FourCC(n05F), )nvdl), 60,  1)  ;//T1 void

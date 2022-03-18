@@ -43,7 +43,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
     }
 
     private void OnComplete( ){
-      this.GrantAkama(this.Holder.Player);
+      GrantAkama(this.Holder.Player);
       FACTION_NAGA.ModObjectLimit(FourCC(n08W), UNLIMITED)   ;//Lost One Den
       FACTION_NAGA.ModObjectLimit(FourCC(ndrn), UNLIMITED)   ;//Vindicator
       FACTION_NAGA.ModObjectLimit(FourCC(ndrs), 6)   ;//Seer

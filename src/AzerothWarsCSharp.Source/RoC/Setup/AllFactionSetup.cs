@@ -1,6 +1,6 @@
 namespace AzerothWarsCSharp.Source.RoC.Setup
 {
-  public class FactionSetup{
+  public class AllFactionSetup{
 
     public static void OnInit( ){
       ScourgeSetup_OnInit();

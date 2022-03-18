@@ -39,14 +39,14 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
     }
 
     private void OnFail( ){
-      this.GiveStromgarde(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GiveStromgarde(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       SetItemPosition(ARTIFACT_TROLKALAR.item, 140889, 12363);
       ARTIFACT_TROLKALAR.setStatus(ARTIFACT_STATUS_GROUND);
     }
 
     private void OnComplete( ){
-      this.GiveStromgarde(this.Holder.Player);
-      UnitAddItemSafe(this.questItemAnyUnitInRect.TriggerUnit, ARTIFACT_TROLKALAR.item);
+      GiveStromgarde(this.Holder.Player);
+      UnitAddItemSafe(questItemAnyUnitInRect.TriggerUnit, ARTIFACT_TROLKALAR.item);
       SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);
     }
 
@@ -57,8 +57,8 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
 
     public  thistype ( ){
       thistype this = thistype.allocate("Stromgarde", "Although StromgardeFourCC(s strength has dwindled since the days of the Arathorian Empire, it remains a significant bastion of humanity. They could be convinced to mobilize their forces for Stormwind.", "ReplaceableTextures\\CommandButtons\\BTNTheCaptain.blp");
-      this.questItemAnyUnitInRect = QuestItemAnyUnitInRect.create(gg_rct_Stromgarde, "Stromgarde", true);
-      this.AddQuestItem(this.questItemAnyUnitInRect);
+      questItemAnyUnitInRect = QuestItemAnyUnitInRect.create(gg_rct_Stromgarde, "Stromgarde", true);
+      this.AddQuestItem(questItemAnyUnitInRect);
       this.AddQuestItem(QuestItemSelfExists.create());
       ;;
     }

@@ -38,12 +38,12 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
     }
 
     private void OnFail( ){
-      this.GrantBlackrock(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GrantBlackrock(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnComplete( ){
       SetPlayerTechResearched(Holder.Player, FourCC(R03C), 1);
-      this.GrantBlackrock(this.Holder.Player);
+      GrantBlackrock(this.Holder.Player);
     }
 
     private void OnAdd( ){

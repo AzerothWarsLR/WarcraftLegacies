@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
     private float x;
     private float y;
     private float damage;
-    private float tick = 0;
+    private float tick;
     private float duration;
 
     private void destroy( ){
@@ -48,7 +48,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       while(true){
         u = FirstOfGroup(TempGroup);
         if ( u == null){ break; }
-        if (IsUnitType(u, UNIT_TYPE_UNDEAD) == true){
+        if (IsUnitType(u, UNIT_TYPE_UNDEAD)){
           damageMult = EVIL_MULT;
         }else {
           damageMult = 1;
@@ -76,8 +76,8 @@ namespace AzerothWarsCSharp.Source.Main.Spells
     }
 
     private void randomBolt( ){
-      float randomAngle = GetRandomReal(0, 2*bj_PI);
-      float randomRadius = GetRandomReal(0, RADIUS);
+      var randomAngle = GetRandomReal(0, 2*bj_PI);
+      var randomRadius = GetRandomReal(0, RADIUS);
       bolt(x + randomRadius * Cos(randomAngle), y + randomRadius * Sin(randomAngle));
     }
 
@@ -103,7 +103,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       this.damage = damage;
       this.x = x;
       this.y = y;
-      this.tick = 0;
+      tick = 0;
       startPeriodic();
       ;;
     }
@@ -113,7 +113,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       SolarJudgement.create(GetTriggerUnit(), GetSpellTargetX(), GetSpellTargetY(), DAMAGE_BASE + DAMAGE_LEVEL*GetUnitAbilityLevel(GetTriggerUnit(), ABIL_ID), DURATION);
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterSpellEffectAction(ABIL_ID,  Cast);
     }
 

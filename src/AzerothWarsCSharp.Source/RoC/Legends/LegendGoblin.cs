@@ -2,27 +2,27 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.RoC.Legends
 {
-  public class LegendGoblin{
+  public static class LegendGoblin{
 
   
-    Legend LEGEND_GALLYWIX
-    Legend LEGEND_NOGGENFOGGER
-    Legend LEGEND_GAZLOWE
+    public static Legend LEGEND_GALLYWIX
+    public static Legend LEGEND_NOGGENFOGGER
+    public static Legend LEGEND_GAZLOWE
 
   
 
-    private static void OnInit( ){
+    public static void Setup( ){
 
-      LEGEND_GALLYWIX = Legend.create();
+      LEGEND_GALLYWIX = new Legend();
       LEGEND_GALLYWIX.UnitType = FourCC(O04N);
 
-      LEGEND_NOGGENFOGGER = Legend.create();
+      LEGEND_NOGGENFOGGER = new Legend();
       LEGEND_NOGGENFOGGER.UnitType = FourCC(Nalc);
-      LEGEND_NOGGENFOGGER.StartingXP = 800;
+      LEGEND_NOGGENFOGGER.StartingXp = 800;
 
-      LEGEND_GAZLOWE = Legend.create();
+      LEGEND_GAZLOWE = new Legend();
       LEGEND_GAZLOWE.UnitType = FourCC(Ntin);
-      LEGEND_GAZLOWE.StartingXP = 1800;
+      LEGEND_GAZLOWE.StartingXp = 1800;
 
     }
 

@@ -43,11 +43,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.BlackEmpire
 
     private void OnComplete( ){
       PlayThematicMusicBJ("war3mapImported\\BlackEmpireTheme.mp3");
-      this.OpenPortals();
+      OpenPortals();
     }
 
     private void OnFail( ){
-      this.OpenPortals();
+      OpenPortals();
     }
 
     public  thistype ( ){

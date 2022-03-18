@@ -2,7 +2,7 @@
 
 namespace AzerothWarsCSharp.MacroTools
 {
-  public class LegendEventArgs : EventArgs
+  public static class LegendEventArgs : EventArgs
   {
     public LegendEventArgs(Legend legend)
     {

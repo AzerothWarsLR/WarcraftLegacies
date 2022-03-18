@@ -4,7 +4,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 
 
     private static thistype[] byHandleId;
-    private unit target = null;
+    private unit target;
 
     float operator X( ){
       return GetUnitX(target);
@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     private void OnUnitChangeOwner( ){
-      if (this.Holder.Team.ContainsFaction(Person.ByHandle(GetOwningPlayer(this.target)))){
+      if (this.Holder.Team.ContainsFaction(Person.ByHandle(GetOwningPlayer(target)))){
         this.Progress = QUEST_PROGRESS_COMPLETE;
       }
     }

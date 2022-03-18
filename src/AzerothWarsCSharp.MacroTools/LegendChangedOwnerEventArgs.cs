@@ -3,7 +3,7 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools
 {
-  public class LegendChangedOwnerEventArgs : EventArgs
+  public static class LegendChangedOwnerEventArgs : EventArgs
   {
     public LegendChangedOwnerEventArgs(Legend legend, player? previousOwner)
     {

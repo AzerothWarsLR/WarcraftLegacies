@@ -57,11 +57,11 @@
     //==== END OF CONFIGURABLES ====
 
     private hashtable hash = InitHashtable();
-    private int columns = 0;
-    private int rows = 0;
-    private int lastrow = 0;
-    private int lastcolumn = 0;
-    private int lastid = 0;
+    private var columns = 0;
+    private var rows = 0;
+    private var lastrow = 0;
+    private var lastcolumn = 0;
+    private var lastid = 0;
     private float mapMinX = 0;
     private float mapMinY = 0;
     private const int TILESIZE = DRAW_DISTANCE/TILE_RESOLUTION;
@@ -74,7 +74,7 @@ return true;
 
 
 
-    int count = LoadInteger(hash, id, 0)+1;
+    var count = LoadInteger(hash, id, 0)+1;
     SaveInteger(hash, id, 0, count);
 
 
@@ -101,7 +101,7 @@ return true;
 private static void autoregister( ){
 
 
-    int count = LoadInteger(hash, id, 0)+1;
+    var count = LoadInteger(hash, id, 0)+1;
     SaveInteger(hash, id, 0, count);
 
 
@@ -110,7 +110,7 @@ private static void autoregister( ){
 }
 
 private static void EnumGrid(int x1, int x2, int y1, int y2, boolean show ){
-    int a = x1;
+    var a = x1;
     int b;
     int j;
     int id;
@@ -136,14 +136,14 @@ private static void EnumGrid(int x1, int x2, int y1, int y2, boolean show ){
 }
 
 private static void ChangeTiles(int r, int c, int lr, int lc ){
-    int AminX = c-TILE_RESOLUTION;
-    int AmaxX = c+TILE_RESOLUTION;
-    int AminY = r-TILE_RESOLUTION;
-    int AmaxY = r+TILE_RESOLUTION;
-    int BminX = lc-TILE_RESOLUTION;
-    int BmaxX = lc+TILE_RESOLUTION;
-    int BminY = lr-TILE_RESOLUTION;
-    int BmaxY = lr+TILE_RESOLUTION;
+    var AminX = c-TILE_RESOLUTION;
+    var AmaxX = c+TILE_RESOLUTION;
+    var AminY = r-TILE_RESOLUTION;
+    var AmaxY = r+TILE_RESOLUTION;
+    var BminX = lc-TILE_RESOLUTION;
+    var BmaxX = lc+TILE_RESOLUTION;
+    var BminY = lr-TILE_RESOLUTION;
+    var BmaxY = lr+TILE_RESOLUTION;
     //border safety:
     if (AminX < 0){
         AminX = 0;
@@ -201,9 +201,9 @@ private static void ChangeTiles(int r, int c, int lr, int lc ){
 }
 
 private static void periodic( ){
-    int row = R2I((GetCameraTargetPositionY()-mapMinY)/TILESIZE);
-    int column = R2I((GetCameraTargetPositionX()-mapMinX)/TILESIZE);
-    int id = row*columns + column;
+    var row = R2I((GetCameraTargetPositionY()-mapMinY)/TILESIZE);
+    var column = R2I((GetCameraTargetPositionX()-mapMinX)/TILESIZE);
+    var id = row*columns + column;
     if (id == lastid){ //only check for tiles if the camera has left the last tile
         return;
     }

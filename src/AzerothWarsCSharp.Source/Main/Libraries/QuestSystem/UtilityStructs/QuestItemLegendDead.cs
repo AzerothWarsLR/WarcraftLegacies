@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     private static void OnAnyUnitDeath( ){
-      int i = 0;
+      var i = 0;
       thistype loopItem;
       Legend triggerLegend = GetTriggerLegend();
       while(true){

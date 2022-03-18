@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     public static void OnFactionTeamJoin( ){
-      int i = 0;
+      var i = 0;
       thistype loopItem;
       Team loopItemHolderTeam;
       while(true){
@@ -49,7 +49,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     public static void OnAnyControlPointChangeOwner( ){
-      int i = 0;
+      var i = 0;
       thistype loopItem;
       while(true){
         if ( i == thistype.count){ break; }
@@ -72,13 +72,13 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
 
-    private static void OnInit( ){
+    public static void Setup( ){
       trigger trigOwnerChange = CreateTrigger();
       trigger trigFaction = CreateTrigger();
       OnControlPointOwnerChange.register(trigOwnerChange);
       OnFactionTeamJoin.register(trigFaction);
-      TriggerAddAction(trigOwnerChange,  QuestItemControlPoint.OnAnyControlPointChangeOwner);
-      TriggerAddAction(trigFaction,  QuestItemControlPoint.OnFactionTeamJoin);
+      TriggerAddAction(trigOwnerChange,  OnAnyControlPointChangeOwner);
+      TriggerAddAction(trigFaction,  OnFactionTeamJoin);
     }
 
   }

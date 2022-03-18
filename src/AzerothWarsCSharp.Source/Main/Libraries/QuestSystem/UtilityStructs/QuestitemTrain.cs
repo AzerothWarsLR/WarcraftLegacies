@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     private int targetTrainCount;
 
     private void operator CurrentTrainCount=(int value ){
-      this.currentTrainCount = value;
+      currentTrainCount = value;
       this.Description = "Train " + GetObjectName(objectId) + "s from the " + GetObjectName(trainFromId) + " (" + I2S(currentTrainCount) + "/" + I2S(targetTrainCount) + ")";
     }
 
@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     private static void OnAnyTrain( ){
-      int i = 0;
+      var i = 0;
       thistype loopQuestItem;
       unit triggerUnit = GetTrainedUnit();
       while(true){

@@ -18,10 +18,14 @@ namespace AzerothWarsCSharp.Source.Main.Cheats
     }
 
     private static void Actions( ){
-      int i = 0;
+      if (!TestSafety.CheatCondition())
+      {
+        return;
+      }
+      var i = 0;
       string enteredString = GetEventPlayerChatString();
       player p = GetTriggerPlayer();
-      int pId = GetPlayerId(p);
+      var pId = GetPlayerId(p);
       string parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
 
       if (parameter == "on"){
@@ -33,17 +37,13 @@ namespace AzerothWarsCSharp.Source.Main.Cheats
       }
     }
 
-    private static void OnInit( ){
-      trigger trig = CreateTrigger(  );
-      int i = 0;
-
-      while(true){
-        if ( i > MAX_PLAYERS){ break; }
-        TriggerRegisterPlayerChatEvent( trig, Player(i), COMMAND, false );
-        i = i + 1;
+    public static void Setup( ){
+      trigger trig = CreateTrigger();
+      foreach (var player in GeneralHelpers.GetAllPlayers())
+      {
+        TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
       }
-      TriggerAddCondition(trig, ( CheatCondition));
-      TriggerAddAction(trig,  Actions);
+      TriggerAddAction(trig, Actions);
 
       PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_ISSUED_POINT_ORDER,  Patrol);
     }

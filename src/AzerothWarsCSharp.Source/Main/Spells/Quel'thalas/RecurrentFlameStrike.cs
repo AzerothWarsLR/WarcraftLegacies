@@ -12,12 +12,12 @@ namespace AzerothWarsCSharp.Source.Main.Spells.Quel_thalas
   
 
 
-    private unit caster = null;
-    private float x = 0;
-    private float y = 0;
-    private float tick = 0;
-    private float duration = 0;
-    private int level = 0;
+    private unit caster;
+    private float x;
+    private float y;
+    private float tick;
+    private float duration;
+    private int level;
 
     private void destroy( ){
       stopPeriodic();
@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells.Quel_thalas
     }
 
     private void Cast( ){
-      DummyCastPoint(GetOwningPlayer(this.caster), DUMMY_SPELL_ID, DUMMY_SPELL_ORDER, this.level, this.x, this.y);
+      DummyCastPoint(GetOwningPlayer(caster), DUMMY_SPELL_ID, DUMMY_SPELL_ORDER, level, x, y);
     }
 
     private void periodic( ){
@@ -46,11 +46,11 @@ namespace AzerothWarsCSharp.Source.Main.Spells.Quel_thalas
     thistype (unit caster, float x, float y, int level ){
 
       this.caster = caster;
-      this.duration = DURATION;
+      duration = DURATION;
       this.x = x;
       this.y = y;
       this.level = level;
-      this.tick = 0;
+      tick = 0;
       startPeriodic();
       Cast();
       ;;
@@ -61,7 +61,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells.Quel_thalas
       RecurrentFlameStrike.create(GetTriggerUnit(), GetSpellTargetX(), GetSpellTargetY(), GetUnitAbilityLevel(GetTriggerUnit(), ABIL_ID));
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterSpellEffectAction(ABIL_ID,  Cast);
     }
 

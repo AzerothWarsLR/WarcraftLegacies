@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.RoC.Researches.Stormwind
       FACTION_STORMWIND.ModObjectLimit(FourCC(R03W), UNLIMITED)       ;//Honor Hold
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterResearchFinishedAction(FourCC(R03U),  Research);
     }
 

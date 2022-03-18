@@ -2,25 +2,25 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.RoC.Legends
 {
-  public class LegendTroll{
+  public static class LegendTroll{
 
   
-    Legend LEGEND_PRIEST
-    Legend LEGEND_RASTAKHAN
-    Legend LEGEND_HAKKAR
+    public static Legend LEGEND_PRIEST
+    public static Legend LEGEND_RASTAKHAN
+    public static Legend LEGEND_HAKKAR
   
 
-    private static void OnInit( ){
-      LEGEND_PRIEST = Legend.create();
+    public static void Setup( ){
+      LEGEND_PRIEST = new Legend();
       LEGEND_PRIEST.UnitType = FourCC(O01J);
       LEGEND_PRIEST.Essential = true;
 
-      LEGEND_HAKKAR = Legend.create();
+      LEGEND_HAKKAR = new Legend();
       LEGEND_HAKKAR.UnitType = FourCC(U023);
 
-      LEGEND_RASTAKHAN = Legend.create();
+      LEGEND_RASTAKHAN = new Legend();
       LEGEND_RASTAKHAN.UnitType = FourCC(O026);
-      LEGEND_RASTAKHAN.StartingXP = 2800;
+      LEGEND_RASTAKHAN.StartingXp = 2800;
 
     }
 

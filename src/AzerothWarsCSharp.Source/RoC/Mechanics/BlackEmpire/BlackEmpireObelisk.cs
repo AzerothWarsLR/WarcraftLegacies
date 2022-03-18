@@ -1,4 +1,3 @@
-using AzerothWarsCSharp.Source.Main.Libraries;
 using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
@@ -19,19 +18,19 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
 
     private static thistype[] byCaster;
     private unit caster;
-    private float tick = 0;
-    private float maxDuration = 0;
-    private float elapsedDuration = 0;
+    private float tick;
+    private float maxDuration;
+    private float elapsedDuration;
     private ControlPoint controlPoint;
     private unit obeliskUnit;
-    private effect sfxProgress = null;
+    private effect sfxProgress;
     static thistype triggerObelisk
 
     private void destroy( ){
-      BlzSetSpecialEffectPosition(this.sfxProgress, -100000, -100000, 0)    ;//Has no death animation so needs to be moved off the map
-      DestroyEffect(this.sfxProgress);
-      this.obeliskUnit = null;
-      this.sfxProgress = null;
+      BlzSetSpecialEffectPosition(sfxProgress, -100000, -100000, 0)    ;//Has no death animation so needs to be moved off the map
+      DestroyEffect(sfxProgress);
+      obeliskUnit = null;
+      sfxProgress = null;
       this.stopPeriodic();
       this.deallocate();
     }
@@ -41,13 +40,13 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
     }
 
     private void End(boolean finished ){
-      if (this.elapsedDuration >= this.maxDuration){
+      if (elapsedDuration >= maxDuration){
         thistype.triggerObelisk = this;
         BlackEmpireObeliskSummoned.fire();
       }else {
-        RemoveUnit(this.obeliskUnit);
+        RemoveUnit(obeliskUnit);
       }
-      this.destroy();
+      destroy();
     }
 
     public static void OnAnyStopChannel( ){
@@ -67,8 +66,8 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
     }
 
     private void periodic( ){
-      this.tick = this.tick+1;
-      this.elapsedDuration = this.elapsedDuration + 1/T32_FPS;
+      tick = tick+1;
+      elapsedDuration = elapsedDuration + 1/T32_FPS;
     }
 
 
@@ -77,13 +76,13 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
 
       this.caster = caster;
       this.controlPoint = controlPoint;
-      this.elapsedDuration = 0;
-      this.maxDuration = duration;
-      this.obeliskUnit = CreateUnit(GetOwningPlayer(caster), OBELISK_ID, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit), 270);
+      elapsedDuration = 0;
+      maxDuration = duration;
+      obeliskUnit = CreateUnit(GetOwningPlayer(caster), OBELISK_ID, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit), 270);
 
-      this.sfxProgress = AddSpecialEffect(PROGRESS_EFFECT, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit));
-      BlzSetSpecialEffectTimeScale(this.sfxProgress, 10/duration);
-      BlzSetSpecialEffectColorByPlayer(this.sfxProgress, GetOwningPlayer(caster));
+      sfxProgress = AddSpecialEffect(PROGRESS_EFFECT, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit));
+      BlzSetSpecialEffectTimeScale(sfxProgress, 10/duration);
+      BlzSetSpecialEffectColorByPlayer(sfxProgress, GetOwningPlayer(caster));
       BlzSetSpecialEffectScale(sfxProgress, PROGRESS_SCALE);
       BlzSetSpecialEffectHeight(sfxProgress, PROGRESS_HEIGHT + GetPositionZ(GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit)));
 
@@ -96,7 +95,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
       return BlackEmpireObelisk.triggerObelisk;
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterSpellChannelAction(ABIL_ID,  BlackEmpireObelisk.OnAnyStartChannel);
       RegisterSpellEndcastAction(ABIL_ID,  BlackEmpireObelisk.OnAnyStopChannel);
       BlackEmpireObeliskSummoned = Event.create();

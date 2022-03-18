@@ -26,101 +26,101 @@ namespace AzerothWarsCSharp.Source.Main.Spells
     private keyword Consecration;
     private Consecration[] ConsecrationsByUnit      ;//For attaching to channeler unit
     private group UnitsWithConsecration = CreateGroup();
-    private unit TempUnit = null;
+    private unit TempUnit;
     private group TempGroup = CreateGroup();
   
 
 
-    unit       cas = null;
-    float       tick = 0;
-    float       duration = 0;
-    float       fullDuration = 0;
+    unit       cas;
+    float       tick;
+    float       duration;
+    float       fullDuration;
 
-    effect     sfxSparkle = null;
-    effect     sfxRing = null;
-    effect     sfxProgress = null;
+    effect     sfxSparkle;
+    effect     sfxRing;
+    effect     sfxProgress;
 
-    float       sfxRingAlpha    = 0;
+    float       sfxRingAlpha;
     float       sfxSparkleAlpha = 255;
 
-    float       x  = 0;
-    float       y  = 0;
-    float       z  = 0;
-    float       radius = 0;
-    float       damage = 0;
-    float       fullDamage = 0;
+    float       x;
+    float       y;
+    float       z;
+    float       radius;
+    float       damage;
+    float       fullDamage;
 
     private boolean    ended = false;
 
     private void destroy( ){
-      BlzSetSpecialEffectTimeScale(this.sfxRing,1);
-      BlzSetSpecialEffectPosition(this.sfxSparkle, -100000, -100000, 0)    ;//Has no death animation so needs to be moved off the map
-      BlzSetSpecialEffectPosition(this.sfxProgress, -100000, -100000, 0)    ;//Has no death animation so needs to be moved off the map
-      DestroyEffect(this.sfxSparkle);
-      DestroyEffect(this.sfxRing);
-      DestroyEffect(this.sfxProgress);
+      BlzSetSpecialEffectTimeScale(sfxRing,1);
+      BlzSetSpecialEffectPosition(sfxSparkle, -100000, -100000, 0)    ;//Has no death animation so needs to be moved off the map
+      BlzSetSpecialEffectPosition(sfxProgress, -100000, -100000, 0)    ;//Has no death animation so needs to be moved off the map
+      DestroyEffect(sfxSparkle);
+      DestroyEffect(sfxRing);
+      DestroyEffect(sfxProgress);
 
-      GroupRemoveUnit(UnitsWithConsecration, this.cas);
-      SetUnitInvulnerable(this.cas, false);
+      GroupRemoveUnit(UnitsWithConsecration, cas);
+      SetUnitInvulnerable(cas, false);
 
-      this.cas = null;
-      this.sfxSparkle = null;
-      this.sfxRing = null;
-      this.sfxProgress = null;
+      cas = null;
+      sfxSparkle = null;
+      sfxRing = null;
+      sfxProgress = null;
 
       this.stopPeriodic();
       this.deallocate();
     }
 
     void end( ){
-      this.ended = true;
+      ended = true;
     }
 
     void protect(unit u ){
-      if (GetDistanceBetweenPoints(this.x, this.y, GetUnitX(u), GetUnitY(u)) <= this.radius && IsUnitAlly(u, GetOwningPlayer(this.cas))){
+      if (GetDistanceBetweenPoints(x, y, GetUnitX(u), GetUnitY(u)) <= radius && IsUnitAlly(u, GetOwningPlayer(cas))){
         BlzSetEventDamage(0);
       }
     }
 
     private void explode( ){
-      effect explodeEffect = AddSpecialEffect(EXPLODE_EFFECT, this.x, this.y);
+      effect explodeEffect = AddSpecialEffect(EXPLODE_EFFECT, x, y);
       unit u = null;
       BlzSetSpecialEffectScale(explodeEffect, EXPLODE_SCALE);
       DestroyEffect(explodeEffect);
 
-      P = GetOwningPlayer(this.cas);
-      GroupEnumUnitsInRange(TempGroup,this.x,this.y,this.radius,( EnemyAliveFilter));
+      P = GetOwningPlayer(cas);
+      GroupEnumUnitsInRange(TempGroup,x,y,radius,( EnemyAliveFilter));
       while(true){
         u = FirstOfGroup(TempGroup);
         if ( u == null){ break; }
-        UnitDamageTarget(this.cas, u, this.damage, false, false, ATTACK_TYPE_NORMAL, DAMAGE_TYPE_NORMAL, WEAPON_TYPE_WHOKNOWS);
+        UnitDamageTarget(cas, u, damage, false, false, ATTACK_TYPE_NORMAL, DAMAGE_TYPE_NORMAL, WEAPON_TYPE_WHOKNOWS);
         GroupRemoveUnit(TempGroup,u);
       }
     }
 
     private void periodic( ){
-      this.tick = this.tick+1;
-      this.duration = this.duration - 1/T32_FPS;
+      tick = tick+1;
+      duration = duration - 1/T32_FPS;
 
-      if (this.ended == true && this.duration > 0){
-        this.duration = 0;
+      if (ended == true && duration > 0){
+        duration = 0;
       }
 
-      if (this.duration >= 0){
+      if (duration >= 0){
         //Scale up the damage
-        if (this.damage < this.fullDamage){
-          this.damage = this.damage + this.fullDamage/(this.fullDuration*T32_FPS);
+        if (damage < fullDamage){
+          damage = damage + fullDamage/(fullDuration*T32_FPS);
         }
         //Fade in the ring
-        if (this.sfxRingAlpha < CONSECRATION_ALPHA_RING){
-          this.sfxRingAlpha = this.sfxRingAlpha + (CONSECRATION_ALPHA_RING / (CONSECRATION_ALPHA_FADE*T32_FPS));
-          BlzSetSpecialEffectAlpha(this.sfxRing, R2I(this.sfxRingAlpha));
+        if (sfxRingAlpha < CONSECRATION_ALPHA_RING){
+          sfxRingAlpha = sfxRingAlpha + (CONSECRATION_ALPHA_RING / (CONSECRATION_ALPHA_FADE*T32_FPS));
+          BlzSetSpecialEffectAlpha(sfxRing, R2I(sfxRingAlpha));
         }
       }
 
-      if (this.duration == 0){
-        this.explode();
-        this.destroy();
+      if (duration == 0){
+        explode();
+        destroy();
       }
     }
 
@@ -128,37 +128,37 @@ namespace AzerothWarsCSharp.Source.Main.Spells
 
     thistype (unit cast, float x, float y, float damage, float radius, float duration ){
 
-      int i = 0;
+      var i = 0;
       boolean b = false;
 
-      this.cas = cast;
+      cas = cast;
 
       this.x  = x;
       this.y  = y;
-      this.z  = 2000 + GetPositionZ(x,y);
-      this.fullDamage = damage;
+      z  = 2000 + GetPositionZ(x,y);
+      fullDamage = damage;
       this.radius = radius;
-      this.fullDuration = duration;
+      fullDuration = duration;
       this.duration = duration;
 
-      this.sfxSparkle = AddSpecialEffect(CONSECRATION_EFFECT_SPARKLE,x,y);
-      BlzSetSpecialEffectScale(this.sfxSparkle,CONSECRATION_SCALE);
-      BlzSetSpecialEffectColor(this.sfxSparkle, 255, 255, 0);
+      sfxSparkle = AddSpecialEffect(CONSECRATION_EFFECT_SPARKLE,x,y);
+      BlzSetSpecialEffectScale(sfxSparkle,CONSECRATION_SCALE);
+      BlzSetSpecialEffectColor(sfxSparkle, 255, 255, 0);
 
-      this.sfxRing = AddSpecialEffect(CONSECRATION_EFFECT_RING,x,y);
-      BlzSetSpecialEffectTimeScale(this.sfxRing, 0);
-      BlzSetSpecialEffectColor(this.sfxRing, 235, 235, 50);
-      BlzSetSpecialEffectAlpha(this.sfxRing, 0);
-      BlzSetSpecialEffectScale(this.sfxRing,CONSECRATION_SCALE_RING);
+      sfxRing = AddSpecialEffect(CONSECRATION_EFFECT_RING,x,y);
+      BlzSetSpecialEffectTimeScale(sfxRing, 0);
+      BlzSetSpecialEffectColor(sfxRing, 235, 235, 50);
+      BlzSetSpecialEffectAlpha(sfxRing, 0);
+      BlzSetSpecialEffectScale(sfxRing,CONSECRATION_SCALE_RING);
 
-      this.sfxProgress = AddSpecialEffect(PROGRESS_EFFECT,x,y);
-      BlzSetSpecialEffectTimeScale(this.sfxProgress, 1/DURATION);
-      BlzSetSpecialEffectColorByPlayer(this.sfxProgress, Player(4));
+      sfxProgress = AddSpecialEffect(PROGRESS_EFFECT,x,y);
+      BlzSetSpecialEffectTimeScale(sfxProgress, 1/DURATION);
+      BlzSetSpecialEffectColorByPlayer(sfxProgress, Player(4));
       BlzSetSpecialEffectScale(sfxProgress,PROGRESS_SCALE);
       BlzSetSpecialEffectHeight(sfxProgress, PROGRESS_HEIGHT);
 
       GroupAddUnit(UnitsWithConsecration, cast);
-      SetUnitInvulnerable(this.cas, true);
+      SetUnitInvulnerable(cas, true);
 
       this.startPeriodic();
 
@@ -184,13 +184,13 @@ namespace AzerothWarsCSharp.Source.Main.Spells
 
     private static void StartChannel( ){
       unit u = GetTriggerUnit();
-      int i = 0;
+      var i = 0;
       boolean b = false;
 
       ConsecrationsByUnit[GetUnitId(u)] = Consecration.create(u, GetUnitX(u), GetUnitY(u), CONSECRATION_DAMAGE_BASE+GetUnitAbilityLevel(u, ABIL_ID)*CONSECRATION_DAMAGE_LEVEL, CONSECRATION_RADIUS, DURATION);
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterSpellChannelAction(ABIL_ID,  StartChannel);
       RegisterSpellEndcastAction(ABIL_ID,  StopChannel);
       PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_DAMAGED,  OnDamage);

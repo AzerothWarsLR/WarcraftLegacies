@@ -1,28 +1,25 @@
 //Displays each Faction)s starting quest after the cinematic phase ends
+
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
 namespace AzerothWarsCSharp.Source.Main.Game_Logic
 {
-  public class StartingQuestPopup{
-
-    private static void Actions( ){
-      int i = 0;
-      Person loopPerson;
-      while(true){
-        if ( i > MAX_PLAYERS){ break; }
-        loopPerson = Person.ById(i);
-        if (loopPerson.Faction.StartingQuest != 0){
-          if (GetLocalPlayer() == loopPerson.Player){
-            loopPerson.Faction.StartingQuest.DisplayDiscovered();
-          }
-        }
-        i = i + 1;
-      }
-    }
-
-    private static void OnInit( ){
+  public static class StartingQuestPopup
+  {
+    public static void Setup()
+    {
       trigger trig = CreateTrigger();
       TriggerRegisterTimerEvent(trig, 63, false);
-      TriggerAddCondition(trig, ( Actions));
+      TriggerAddAction(trig, () =>
+      {
+        foreach (var player in GetAllPlayers())
+        {
+          if (Person.ByHandle(player)?.Faction.StartingQuest != null && GetLocalPlayer() == player)
+          {
+            Person.ByHandle(player)?.Faction.StartingQuest.DisplayDiscovered();
+          }
+        }
+      });
     }
-
   }
 }

@@ -10,13 +10,13 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     private Artifact target;
 
     private void OnAdd( ){
-      if (this.target.owningPerson == this.Holder.Person){
+      if (target.owningPerson == this.Holder.Person){
         this.Progress = QUEST_PROGRESS_COMPLETE;
       }
     }
 
     private void OnAcquired( ){
-      if (this.target.owningPerson == this.Holder.Person){
+      if (target.owningPerson == this.Holder.Person){
         this.Progress = QUEST_PROGRESS_COMPLETE;
       }else {
         this.Progress = QUEST_PROGRESS_INCOMPLETE;
@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     static void OnAnyArtifactAcquired( ){
-      int i = 0;
+      var i = 0;
       thistype loopItem;
       while(true){
         if ( i == thistype.count){ break; }
@@ -46,10 +46,10 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
 
-    private static void OnInit( ){
+    public static void Setup( ){
       trigger trig = CreateTrigger();
       OnArtifactOwnerChange.register(trig);
-      TriggerAddAction(trig,  QuestItemAcquireArtifact.OnAnyArtifactAcquired);
+      TriggerAddAction(trig,  OnAnyArtifactAcquired);
     }
 
   }

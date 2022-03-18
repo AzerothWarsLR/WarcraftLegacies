@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Main.Game_Logic.GameEnd
   
 
     static void TeamVictory(Team whichTeam ){
-      int i = 0;
+      var i = 0;
       Team loopTeam;
 
       ClearTextMessages();

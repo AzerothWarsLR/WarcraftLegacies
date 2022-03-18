@@ -34,11 +34,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
     }
 
     private void OnFail( ){
-      this.GrantGoldshire(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GrantGoldshire(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnComplete( ){
-      this.GrantGoldshire(this.Holder.Player);
+      GrantGoldshire(this.Holder.Player);
     }
 
 

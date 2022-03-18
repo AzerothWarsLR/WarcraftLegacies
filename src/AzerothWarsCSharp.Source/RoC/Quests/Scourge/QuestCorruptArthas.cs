@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
       RemoveUnit(LEGEND_ARTHAS.Unit);
       LEGEND_ARTHAS.Unit = null;
       LEGEND_ARTHAS.PlayerColor = PLAYER_COLOR_PURPLE;
-      LEGEND_ARTHAS.StartingXP = 7000;
+      LEGEND_ARTHAS.StartingXp = 7000;
       LEGEND_ARTHAS.UnitType = FourCC(Uear);
       LEGEND_ARTHAS.ClearUnitDependencies();
       SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);

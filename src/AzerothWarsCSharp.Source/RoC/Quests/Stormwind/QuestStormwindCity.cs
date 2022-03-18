@@ -38,12 +38,12 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
     }
 
     private void OnFail( ){
-      this.GrantStormwind(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GrantStormwind(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnComplete( ){
       SetPlayerTechResearched(Holder.Player, FourCC(R02S), 1);
-      this.GrantStormwind(this.Holder.Player);
+      GrantStormwind(this.Holder.Player);
       if (GetLocalPlayer() == this.Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\StormwindTheme.mp3" );
       }

@@ -1,6 +1,4 @@
 
-using AzerothWarsCSharp.Source.Main.Libraries;
-
 namespace AzerothWarsCSharp.Source.RoC.Mechanics.Cthun
 {
     public class SpawnTentacle3{
@@ -14,54 +12,54 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Cthun
 
 
         readonly static Table tentacleSetsByCasterHandleId;
-        readonly unit caster = null;
+        readonly unit caster;
         readonly unit[] TentaclesByIndex[30];
-        readonly int TentacleCount = 0;
-        private int tick = 0;
+        readonly int TentacleCount;
+        private int tick;
 
         void destroy( ){
-            thistype.tentacleSetsByCasterHandleId[GetHandleId(this.caster)] = 0;
+            thistype.tentacleSetsByCasterHandleId[GetHandleId(caster)] = 0;
             this.stopPeriodic();
-            this.kill();
+            kill();
             this.deallocate();
         }
 
         void kill( ){
-            int i = 0;
+            var i = 0;
             while(true){
-                if ( i > this.TentacleCount){ break; }
-                KillUnit(this.TentaclesByIndex[i]);
-                this.TentaclesByIndex[i] = null;
+                if ( i > TentacleCount){ break; }
+                KillUnit(TentaclesByIndex[i]);
+                TentaclesByIndex[i] = null;
                 i = i + 1;
             }
         }
 
         void spawnTentacle(float x, float y, int index ){
-            unit tempUnit = CreateUnit(GetOwningPlayer(this.caster), TENTACLE3_ID, x, y, 0);
+            unit tempUnit = CreateUnit(GetOwningPlayer(caster), TENTACLE3_ID, x, y, 0);
             SetUnitAnimation(tempUnit, "birth");
             QueueUnitAnimation(tempUnit, "stand");
             SetUnitVertexColor(tempUnit, 255, 255, 255, 255);
             UnitAddAbility(tempUnit, FourCC(Aloc));
             SetUnitPathing(tempUnit, false);
-            this.TentaclesByIndex[index] = tempUnit;
+            TentaclesByIndex[index] = tempUnit;
         }
 
         void reposition( ){
-            int i = 0;
+            var i = 0;
             float offsetAngle = 0;
             float offsetX = 0;
             float offsetY = 0;
-            this.TentacleCount = TENTACLE_COUNT_BASE;
+            TentacleCount = TENTACLE_COUNT_BASE;
             while(true){
-                if ( i == this.TentacleCount){ break; }
-                offsetAngle = ((bj_PI*2)/this.TentacleCount)*i;
+                if ( i == TentacleCount){ break; }
+                offsetAngle = ((bj_PI*2)/TentacleCount)*i;
                 offsetX = GetUnitX(caster) + RADIUS_OFFSET*Cos(offsetAngle);
                 offsetY = GetUnitY(caster) + RADIUS_OFFSET*Sin(offsetAngle);
-                if (GetDistanceBetweenPoints(GetUnitX(this.TentaclesByIndex[i]), GetUnitY(this.TentaclesByIndex[i]), offsetX, offsetY) > 0){
-                    if (this.TentaclesByIndex[i] != null){
-                        SetUnitPosition(this.TentaclesByIndex[i], offsetX, offsetY);
+                if (GetDistanceBetweenPoints(GetUnitX(TentaclesByIndex[i]), GetUnitY(TentaclesByIndex[i]), offsetX, offsetY) > 0){
+                    if (TentaclesByIndex[i] != null){
+                        SetUnitPosition(TentaclesByIndex[i], offsetX, offsetY);
                     }else {
-                        this.spawnTentacle(offsetX, offsetY, i);
+                        spawnTentacle(offsetX, offsetY, i);
                     }
                 }
                 i = i + 1;
@@ -69,18 +67,18 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Cthun
         }
 
         void periodic( ){
-            if (this.caster == null){
-                this.destroy();
+            if (caster == null){
+                destroy();
                 return;
             }
-            if (!IsUnitAliveBJ(this.caster)){
-                this.kill();
+            if (!IsUnitAliveBJ(caster)){
+                kill();
                 return;
             }
-            this.reposition();
-            this.tick = this.tick + 1;
-            if (this.tick/T32_FPS == 1){
-                this.tick = 0;
+            reposition();
+            tick = tick + 1;
+            if (tick/T32_FPS == 1){
+                tick = 0;
             }
         }
 
@@ -102,7 +100,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Cthun
         private static void Built( ){
             tentacleAppendageSet3 temptentacleAppendageSet3 = 0;
             unit triggerUnit = null;
-            int triggerUnitHandleId = 0;
+            var triggerUnitHandleId = 0;
             triggerUnit = gg_unit_U02C_2829;
             triggerUnitHandleId = UNIT3_ID;
             temptentacleAppendageSet3 = tentacleAppendageSet3tentacleSetsByCasterHandleId[triggerUnitHandleId];
@@ -113,7 +111,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Cthun
             triggerUnit = null;
         }
 
-        private static void OnInit( ){
+        public static void Setup( ){
             trigger trig = CreateTrigger();
             TriggerRegisterTimerEventSingle( trig, 5 );
             TriggerAddCondition( trig, ( Built));

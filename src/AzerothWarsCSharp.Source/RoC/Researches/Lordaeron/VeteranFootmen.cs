@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.RoC.Researches.Lordaeron
       FACTION_LORDAERON.ModObjectLimit(FourCC(h029), UNLIMITED)   ;//Veteran Footman
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterResearchFinishedAction(RESEARCH_ID,  Research);
     }
 

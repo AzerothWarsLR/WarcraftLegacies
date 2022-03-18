@@ -2,29 +2,29 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.RoC.Legends
 {
-  public class LegendForsaken{
+  public static class LegendForsaken{
 
   
-    Legend LEGEND_SYLVANASV
-    Legend LEGEND_SCHOLOMANCE
-    Legend LEGEND_VARIMATHRAS
-    Legend LEGEND_NATHANOS
+    public static Legend LEGEND_SYLVANASV
+    public static Legend LEGEND_SCHOLOMANCE
+    public static Legend LEGEND_VARIMATHRAS
+    public static Legend LEGEND_NATHANOS
   
 
-    private static void OnInit( ){
-      LEGEND_SYLVANASV = Legend.create();
+    public static void Setup( ){
+      LEGEND_SYLVANASV = new Legend();
       LEGEND_SYLVANASV.UnitType = FourCC(Usyl);
-      LEGEND_SYLVANASV.StartingXP = 15400;
+      LEGEND_SYLVANASV.StartingXp = 15400;
 
-      LEGEND_NATHANOS = Legend.create();
+      LEGEND_NATHANOS = new Legend();
       LEGEND_NATHANOS.UnitType = FourCC(H049);
-      LEGEND_NATHANOS.StartingXP = 4000;
+      LEGEND_NATHANOS.StartingXp = 4000;
 
-      LEGEND_VARIMATHRAS = Legend.create();
+      LEGEND_VARIMATHRAS = new Legend();
       LEGEND_VARIMATHRAS.UnitType = FourCC(Uvar);
       LEGEND_VARIMATHRAS.PlayerColor = PLAYER_COLOR_RED;
 
-      LEGEND_SCHOLOMANCE = Legend.create();
+      LEGEND_SCHOLOMANCE = new Legend();
       LEGEND_SCHOLOMANCE.Unit = gg_unit_u012_1149;
       LEGEND_SCHOLOMANCE.DeathMessage = "Scholomance, the center of the ScourgeFourCC(s operations in Lordaeron, has been destroyed.";
     }

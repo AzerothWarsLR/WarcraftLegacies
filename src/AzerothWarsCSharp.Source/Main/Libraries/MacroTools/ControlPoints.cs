@@ -1,9 +1,9 @@
 namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 {
-  public class ControlPoint{
+  public static class ControlPoint{
 
   
-    group ControlPoints = CreateGroup();
+    public static group ControlPoints = CreateGroup();
     ControlPoint[] CPData
     Event OnControlPointLoss
     Event OnControlPointOwnerChange
@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 
     float x
     float y
-    float value = 0;
+    float value;
     unit u
     player owner
 
@@ -85,7 +85,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     }
 
     static thistype GetHighestValueCP(Person person ){
-      int i = 0;
+      var i = 0;
       ControlPoint highestValueCP = 0;
       while(true){
         if ( i == thistype.count){ break; }
@@ -134,24 +134,24 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 
     void destroy( ){
       RemoveUnit(this.u);
-      OwningPerson.ControlPointValue = OwningPerson.ControlPointValue - this.value*-1;
+      OwningPerson.ControlPointValue = OwningPerson.ControlPointValue - value*-1;
       OwningPerson.ControlPointCount = OwningPerson.ControlPointCount - 1;
       this.deallocate();
     }
 
 
     static player GetControlPointPreviousOwner( ){
-      return ControlPoint.controlPointFormerOwner;
+      return controlPointFormerOwner;
     }
 
     static ControlPoint GetTriggerControlPoint( ){
-      return ControlPoint.triggerControlPoint;
+      return triggerControlPoint;
     }
 
 
     private static void CPChangesOwner( ){
       unit u = GetTriggerUnit();
-      int ui = GetUnitUserData(u);
+      var ui = GetUnitUserData(u);
       player p = GetTriggerPlayer();
 
       if (CPData[ui] != 0){
@@ -164,7 +164,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 
     //Note that the Init function currently enumerates across every single unit on the map, then checks them for a Control Point buff before initializing them as a CP
     //This is not a good way to do this, considering that we know which units are CPs before the map is even compiled
-    private static void OnInit( ){
+    public static void Setup( ){
       group g;
       trigger trig = CreateTrigger();
 

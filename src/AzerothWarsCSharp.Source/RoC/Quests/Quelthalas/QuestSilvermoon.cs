@@ -38,13 +38,13 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
     }
 
     private void OnFail( ){
-      this.GrantSilvermoon(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GrantSilvermoon(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnComplete( ){
       SetPlayerTechResearched(Holder.Player, FourCC(R02U), 1);
-      this.GrantSilvermoon(this.Holder.Player);
-      if (UnitAlive(gg_unit_h00D_2122) == true){
+      GrantSilvermoon(this.Holder.Player);
+      if (UnitAlive(gg_unit_h00D_2122)){
         SetUnitInvulnerable(LEGEND_SILVERMOON.Unit, true );
       }
       SetUnitInvulnerable(LEGEND_SUNWELL.Unit, true );

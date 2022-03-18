@@ -19,9 +19,9 @@ namespace AzerothWarsCSharp.Source.Main.Commands
 			// endif
 		}
 
-		private static void OnInit( ){
+		public static void Setup( ){
 			trigger trig = CreateTrigger(  );
-			int i = 0;
+			var i = 0;
 
 			while(true){
 				if ( i > MAX_PLAYERS){ break; }

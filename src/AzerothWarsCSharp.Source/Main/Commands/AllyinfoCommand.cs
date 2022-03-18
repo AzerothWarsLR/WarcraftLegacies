@@ -1,32 +1,39 @@
- library AllyinfoCommand initializer OnInit requires Income
+using AzerothWarsCSharp.Source.Main.Libraries;
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
-  
-    private const string COMMAND = "-ally";
-    private const string INFO_COLOR = "|c00add8e6";
-  
+public static class AllyInfoCommand
+{
+  private const string COMMAND = "-ally";
+  private const string INFO_COLOR = "|c00add8e6";
 
-  private static void Actions( ){
+
+  private static void Actions()
+  {
     Person whichPerson = Person.ByHandle(GetTriggerPlayer());
 
-    DisplayTextToPlayer(whichPerson.Player, 0, 0, "The ally command have changed, they are now:;
+    DisplayTextToPlayer(whichPerson.Player, 0, 0, @"The ally command have changed, they are now:
 -invite (faction name)
 -join (team name)
 -uninvite (faction name)
--unally")
-
+-unally");
   }
 
-  private static void OnInit( ){
-    trigger trig = CreateTrigger(  );
-    int i = 0;
+  public static void Setup()
+  {
+    trigger trig = CreateTrigger();
+    var i = 0;
 
-    while(true){
-    if ( i > MAX_PLAYERS){ break; }
-      TriggerRegisterPlayerChatEvent( trig, Player(i), COMMAND, false );
+    while (true)
+    {
+      if (i > Environment.MAX_PLAYERS)
+      {
+        break;
+      }
+
+      TriggerRegisterPlayerChatEvent(trig, Player(i), COMMAND, false);
       i = i + 1;
     }
 
-    TriggerAddCondition( trig, ( Actions) );
+    TriggerAddAction(trig, Actions);
   }
-
 }

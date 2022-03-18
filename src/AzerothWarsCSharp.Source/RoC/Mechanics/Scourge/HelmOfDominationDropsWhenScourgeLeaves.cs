@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Scourge
       }
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       trigger trig = CreateTrigger();
       OnFactionGameLeave.register(trig);
       TriggerAddAction(trig,  Actions);

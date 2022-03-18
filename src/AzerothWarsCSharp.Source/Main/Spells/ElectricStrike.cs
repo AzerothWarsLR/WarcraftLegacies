@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
           break;
         }
 
-        if (IsUnitType(u, UNIT_TYPE_STRUCTURE) == false && UnitAlive(u) == true)
+        if (IsUnitType(u, UNIT_TYPE_STRUCTURE) == false && UnitAlive(u))
         {
           DummyCast.DummyCastUnit(GetOwningPlayer(caster), StunId, STUN_ORDER, 1, u);
           DummyCast.DummyCastUnit(GetOwningPlayer(caster), PurgeId, PURGE_ORDER, 1, u);
@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       }
     }
 
-    private static void OnInit()
+    public static void Setup()
     {
       RegisterSpellEffectAction(AbilId, Cast);
     }

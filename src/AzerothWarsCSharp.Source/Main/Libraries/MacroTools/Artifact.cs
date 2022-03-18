@@ -15,15 +15,14 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     public event EventHandler<Artifact> OnArtifactCarrierOwnerChange; //The unit carrying an Artifact changes player ownership
     public event EventHandler<Artifact> OnArtifactDescriptionChange; //The Artifact has its description changed. This is just text and is not represented anywhere by the Artifact itself
 
-    const int ARTIFACT_STATUS_GROUND = 0     ;//Artifact is on the ground
-    const int ARTIFACT_STATUS_UNIT = 1       ;//Artifact is held by a unit
-    const int ARTIFACT_STATUS_SPECIAL = 2    ;//Artifact is nowhere, but artifically has a location
-    const int ARTIFACT_STATUS_HIDDEN = 3     ;//Artifact does not allow pinging, and only displays text (which is not set automatically)
+    public const int ARTIFACT_STATUS_GROUND = 0     ;//Artifact is on the ground
+    public const int ARTIFACT_STATUS_UNIT = 1       ;//Artifact is held by a unit
+    public const int ARTIFACT_STATUS_SPECIAL = 2    ;//Artifact is nowhere, but artifically has a location
+    public const int ARTIFACT_STATUS_HIDDEN = 3     ;//Artifact does not allow pinging, and only displays text (which is not set automatically)
 
     int ARTIFACT_HOLDER_ABIL_ID = FourCC("A01Y");
 
     private static Dictionary<int, Artifact> _artifactsByType = new();
-    readonly item _item;
     readonly Person _owningPerson;
     private unit _owningUnit;
     private int _status;
@@ -34,6 +33,8 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     float falseX = 0                                     ;//Where the map should ping this artifact when it is in SPECIAL status mode
     float falseY = 0                                     ;//^
 
+    public item Item { get; private init; }
+    
     public int TitanforgedAbility
     {
       set => _titanforgedAbility = value;
@@ -43,11 +44,11 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 
     //Grant the Artifact an additional, predefined ability.
     public void Titanforge( ){
-      if (this._titanforged == false){
-        this._titanforged = true;
-        BlzItemAddAbility(this._item, this._titanforgedAbility);
-        BlzSetItemExtendedTooltip(this._item, BlzGetItemExtendedTooltip(this._item) + "|n|n|cff800000Titanforged|r|n" + BlzGetAbilityExtendedTooltip(this._titanforgedAbility, 0));
-        BlzSetItemDescription(this._item, BlzGetItemDescription(this._item) + "|n|cff800000Titanforged|r");
+      if (_titanforged == false){
+        _titanforged = true;
+        BlzItemAddAbility(_item, _titanforgedAbility);
+        BlzSetItemExtendedTooltip(_item, BlzGetItemExtendedTooltip(_item) + "|n|n|cff800000Titanforged|r|n" + BlzGetAbilityExtendedTooltip(_titanforgedAbility, 0));
+        BlzSetItemDescription(_item, BlzGetItemDescription(_item) + "|n|cff800000Titanforged|r");
       }
     }
 
@@ -71,7 +72,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       {
         ArtifactGroup tempArtifactGroup;
         //Remove this Artifact from the ArtifactGroup belonging to the former owning unit, destroying if it is now empty
-        tempArtifactGroup = ArtifactGroup.artifactGroupsByOwningUnit[GetHandleId(this._owningUnit)];
+        tempArtifactGroup = ArtifactGroup.artifactGroupsByOwningUnit[GetHandleId(_owningUnit)];
         if (tempArtifactGroup != 0){
           tempArtifactGroup.remove(this);
           if (tempArtifactGroup.first == 0){
@@ -80,10 +81,10 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
         }
 
         //Transfer ownership
-        this._owningUnit = u;
+        _owningUnit = u;
 
         //Add this Artifact to the ArtifactGroup belonging to this particular unit, first creating it if it doesn)t exist
-        if (this._owningUnit != null){
+        if (_owningUnit != null){
           tempArtifactGroup = ArtifactGroup.artifactGroupsByOwningUnit[GetHandleId(u)];
           if (tempArtifactGroup == 0){
             ArtifactGroup.artifactGroupsByOwningUnit[GetHandleId(u)] = ArtifactGroup.create();
@@ -93,7 +94,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
         }
 
         //Change the owner Person if needed
-        if (this._owningPerson != Person.ByHandle(GetOwningPlayer(u))){
+        if (_owningPerson != Person.ByHandle(GetOwningPlayer(u))){
           if (u != null){
             this.setOwningPerson(Person.ByHandle(GetOwningPlayer(u)));
           }else {
@@ -105,18 +106,18 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 
     private void SetOwningPerson(Person p)
     {
-      if (this._owningPerson != 0){
-        ArtifactGroup.artifactGroupsByPlayerId[GetPlayerId(this._owningPerson.Player)].remove(this) ;//Remove this from the old owner)s Artifact group
+      if (_owningPerson != 0){
+        ArtifactGroup.artifactGroupsByPlayerId[GetPlayerId(_owningPerson.Player)].remove(this) ;//Remove this from the old owner)s Artifact group
       }
 
       if (p != 0){
         ArtifactGroup.artifactGroupsByPlayerId[GetPlayerId(p.Player)].add(this) ;//Add this to the new owner)s Artifact Group
       }
 
-      this._owningPerson = p;
+      _owningPerson = p;
       OnArtifactOwnerChange?.Invoke(this, this);
 
-      if (this._owningPerson != 0){
+      if (_owningPerson != 0){
         this.setStatus(ARTIFACT_STATUS_UNIT);
       } else {
         this.setStatus(ARTIFACT_STATUS_GROUND);
@@ -132,6 +133,11 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       }
     }
 
+    public static Artifact GetFromTypeId(int typeId)
+    {
+      throw new NotImplementedException();
+    }
+
     private void PickedUp( ){
       this.setOwningUnit(GetTriggerUnit());
       OnArtifactAcquire?.Invoke(this, this);
@@ -141,16 +147,16 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       Shore tempShore = 0;
       Artifact.TriggerArtifact = this;
 
-      if (!IsTerrainPathable(GetUnitX(this._owningUnit), GetUnitY(this._owningUnit), PATHING_TYPE_FLOATABILITY) && IsTerrainPathable(GetUnitX(this._owningUnit), GetUnitY(this._owningUnit), PATHING_TYPE_WALKABILITY)){
-        if (!UnitAlive(this._owningUnit)){
-          tempShore = GetNearestShore(GetUnitX(this._owningUnit), GetUnitY(this._owningUnit));
-          this._item = CreateItem(GetItemTypeId(this._item), tempShore.x, tempShore.y);
+      if (!IsTerrainPathable(GetUnitX(_owningUnit), GetUnitY(_owningUnit), PATHING_TYPE_FLOATABILITY) && IsTerrainPathable(GetUnitX(_owningUnit), GetUnitY(_owningUnit), PATHING_TYPE_WALKABILITY)){
+        if (!UnitAlive(_owningUnit)){
+          tempShore = GetNearestShore(GetUnitX(_owningUnit), GetUnitY(_owningUnit));
+          _item = CreateItem(GetItemTypeId(_item), tempShore.x, tempShore.y);
         }
       }
 
       //Remove dummy Artifact holding ability if the dropping unit had one
-      if (GetUnitAbilityLevel(this._owningUnit, ARTIFACT_HOLDER_ABIL_ID) > 0){
-        UnitRemoveAbility(this._owningUnit, ARTIFACT_HOLDER_ABIL_ID);
+      if (GetUnitAbilityLevel(_owningUnit, ARTIFACT_HOLDER_ABIL_ID) > 0){
+        UnitRemoveAbility(_owningUnit, ARTIFACT_HOLDER_ABIL_ID);
       }
 
       SetOwningPerson(null);
@@ -160,12 +166,12 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 
     void ping(player p ){
       if (GetLocalPlayer() == p){
-        if (this._status == ARTIFACT_STATUS_SPECIAL){
-          PingMinimap(this.falseX, this.falseY, 3);
-        }else if (this._owningUnit != null){
-          PingMinimap(GetUnitX(this._owningUnit), GetUnitY(this._owningUnit), 3);
+        if (_status == ARTIFACT_STATUS_SPECIAL){
+          PingMinimap(falseX, falseY, 3);
+        }else if (_owningUnit != null){
+          PingMinimap(GetUnitX(_owningUnit), GetUnitY(_owningUnit), 3);
         }else {
-          PingMinimap(GetItemX(this._item), GetItemY(this._item), 3);
+          PingMinimap(GetItemX(_item), GetItemY(_item), 3);
         }
       }
     }
@@ -179,8 +185,8 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       if (thistype.artifactsByType[GetItemTypeId(whichItem)] == null){
         thistype.artifactsByType[GetItemTypeId(whichItem)] = this;
         thistype.triggerArtifact = this     ;//For event response
-        this._item = whichItem;
-        this._status = 0;
+        _item = whichItem;
+        _status = 0;
         this.setOwningPerson(0);
         OnArtifactCreate.fire();
         ;;
@@ -197,7 +203,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     private static void ItemDrop( ){
       Artifact tempArtifact = 0;
       if (!IsUnitIllusion(GetTriggerUnit())){
-        tempArtifact = Artifact._artifactsByType[GetItemTypeId(GetManipulatedItem())];
+        tempArtifact = _artifactsByType[GetItemTypeId(GetManipulatedItem())];
         if (tempArtifact != 0){
           tempArtifact.dropped();
         }

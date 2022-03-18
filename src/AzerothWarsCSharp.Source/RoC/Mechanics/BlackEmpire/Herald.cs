@@ -17,15 +17,15 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
     }
 
     private void UnlinkToPortal( ){
-      if (this.linkedPortal.PortalState == BLACKEMPIREPORTALSTATE_EXITONLY){
-        this.linkedPortal.PortalState = BLACKEMPIREPORTALSTATE_CLOSED;
+      if (linkedPortal.PortalState == BLACKEMPIREPORTALSTATE_EXITONLY){
+        linkedPortal.PortalState = BLACKEMPIREPORTALSTATE_CLOSED;
       }
-      this.linkedPortal = 0;
+      linkedPortal = 0;
     }
 
     private void LinkToPortal(BlackEmpirePortal whichPortal ){
-      this.linkedPortal = whichPortal;
-      this.linkedPortal.PortalState = BLACKEMPIREPORTALSTATE_EXITONLY;
+      linkedPortal = whichPortal;
+      linkedPortal.PortalState = BLACKEMPIREPORTALSTATE_EXITONLY;
     }
 
     private void AIDS_onCreate( ){
@@ -35,14 +35,14 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
         BJDebugMsg("ERROR: there can only be one " + GetObjectName(HERALD_ID));
         return;
       }
-      this.LinkToPortal(BlackEmpirePortal.Objective);
-      BlzSetUnitName(this.unit, "Herald of " + this.linkedPortal.Name);
+      LinkToPortal(BlackEmpirePortal.Objective);
+      BlzSetUnitName(this.unit, "Herald of " + linkedPortal.Name);
     }
 
     private void AIDS_onDestroy( ){
       if (this == instance){
         ReturnToNyalotha();
-        this.UnlinkToPortal();
+        UnlinkToPortal();
         instance = 0;
       }
     }
@@ -60,7 +60,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
       RemoveUnit(GetTriggerUnit());
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterUnitTypeDiesAction(HERALD_ID,  OnHeraldDeath);
     }
 

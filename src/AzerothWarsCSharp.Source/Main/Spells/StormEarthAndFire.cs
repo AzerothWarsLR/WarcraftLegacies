@@ -55,7 +55,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       SummonPanda(triggerPlayer, UNIT_TYPE_3, x, y, GetUnitFacing(caster), DAMAGE_BONUS_BASE + DAMAGE_BONUS_LEVEL*level, HEALTH_BONUS_BASE + HEALTH_BONUS_LEVEL*level, DURATION);
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterSpellEffectAction(ABIL_ID,  Cast);
     }
 

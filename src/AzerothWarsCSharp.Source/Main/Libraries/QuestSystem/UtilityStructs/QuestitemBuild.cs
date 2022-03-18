@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     private int targetBuildCount;
 
     private void operator CurrentBuildCount=(int value ){
-      this.currentBuildCount = value;
+      currentBuildCount = value;
       this.Description = "Build " + GetObjectName(objectId) + "s (" + I2S(currentBuildCount) + "/" + I2S(targetBuildCount) + ")";
     }
 
@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     private static void OnAnyBuild( ){
-      int i = 0;
+      var i = 0;
       thistype loopQuestItem;
 
       while(true){

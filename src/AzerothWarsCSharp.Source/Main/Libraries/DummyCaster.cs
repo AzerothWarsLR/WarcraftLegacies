@@ -77,8 +77,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
     private const float CREATED_AT_Y=00;
 
 //=====================================================================================
-    unit DUMMY=null
-    
+    unit DUMMY 
 
 
     // create/destoy methods.

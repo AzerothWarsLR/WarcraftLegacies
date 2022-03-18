@@ -1,21 +1,20 @@
 using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using WCSharp.Events;
 
 namespace AzerothWarsCSharp.Source.Main.Game_Logic
 {
-  public class HeroGlowFix{
-
-    private static void Revived( ){
-      Legend revivedLegend = Legend.ByHandle(GetTriggerUnit());
-      if (revivedLegend.HasCustomColor){
-        SetUnitColor(GetTriggerUnit(), revivedLegend.PlayerColor);
-      }else {
-        SetUnitColor(GetTriggerUnit(), Person.ByHandle(GetTriggerPlayer()).Faction.playCol);
-      }
+  public static class HeroGlowFix
+  {
+    public static void Setup()
+    {
+      PlayerUnitEvents.Register(PlayerUnitEvent.HeroTypeFinishesRevive, () =>
+      {
+        var revivedLegend = Legend.GetFromUnit(GetTriggerUnit());
+        SetUnitColor(GetTriggerUnit(),
+          revivedLegend is {HasCustomColor: true}
+            ? revivedLegend.PlayerColor
+            : Person.ByHandle(GetTriggerPlayer())?.Faction.PlayerColor);
+      });
     }
-
-    private static void OnInit( ){
-      PlayerUnitEventAddAction(EVENT_PLAYER_HERO_REVIVE_FINISH,  Revived);
-    }
-
   }
 }

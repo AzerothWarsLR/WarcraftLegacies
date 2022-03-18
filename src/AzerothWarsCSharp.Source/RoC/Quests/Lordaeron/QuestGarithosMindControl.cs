@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
       this.Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNGarithos.blp";
       SetPlayerColor(this.Holder.Player, PLAYER_COLOR_LIGHT_BLUE );
 
-      LEGEND_GARITHOS.StartingXP = GetHeroXP(LEGEND_ARTHAS.Unit);
+      LEGEND_GARITHOS.StartingXp = GetHeroXP(LEGEND_ARTHAS.Unit);
       this.Holder.obliterate();
       LEGEND_GARITHOS.Spawn(this.Holder.Player, 9090, 8743, 110);
       LEGEND_NATHANOS.Spawn(this.Holder.Player, 9090, 8743, 110);

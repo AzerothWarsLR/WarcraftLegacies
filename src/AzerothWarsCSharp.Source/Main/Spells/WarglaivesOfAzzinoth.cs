@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       group tempGroup = CreateGroup();
       unit u = null;
       unit caster = GetEventDamageSource();
-      int level = GetUnitAbilityLevel(GetEventDamageSource(), ABIL_ID);
+      var level = GetUnitAbilityLevel(GetEventDamageSource(), ABIL_ID);
       effect tempSfx = AddSpecialEffect(EFFECT, GetUnitX(caster), GetUnitY(caster));
       float damage = 0;
       BlzSetSpecialEffectScale(tempSfx, EFFECT_SCALE);
@@ -43,13 +43,13 @@ namespace AzerothWarsCSharp.Source.Main.Spells
     }
 
     private static void Damaging( ){
-      int level = GetUnitAbilityLevel(GetEventDamageSource(), ABIL_ID);
-      if (level > 0 && BlzGetEventIsAttack() == true){
+      var level = GetUnitAbilityLevel(GetEventDamageSource(), ABIL_ID);
+      if (level > 0 && BlzGetEventIsAttack()){
         DoGlaive();
       }
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterUnitTypeInflictsDamageAction(FourCC(Eill),  Damaging);
       RegisterUnitTypeInflictsDamageAction(FourCC(Eidm),  Damaging);
       RegisterUnitTypeInflictsDamageAction(FourCC(Eevm),  Damaging);

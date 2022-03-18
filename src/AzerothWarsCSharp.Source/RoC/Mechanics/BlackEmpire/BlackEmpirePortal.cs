@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
     }
 
     public void operator NearbyControlPoint=(ControlPoint value ){
-      this.nearbyControlPoint = value;
+      nearbyControlPoint = value;
     }
 
     public string operator Name( ){
@@ -42,30 +42,30 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
     }
 
     public void operator PortalState=(int value ){
-      this.portalState = value;
+      portalState = value;
 
-      if (this.portalState == BLACKEMPIREPORTALSTATE_CLOSED){
+      if (portalState == BLACKEMPIREPORTALSTATE_CLOSED){
         WaygateActivate(interiorWaygate, false);
         WaygateActivate(exteriorWaygate, false);
 
-        SetUnitAnimation(this.exteriorWaygate, "death");
-        SetUnitVertexColor(this.interiorWaygate, 255, 50, 50, 255);
+        SetUnitAnimation(exteriorWaygate, "death");
+        SetUnitVertexColor(interiorWaygate, 255, 50, 50, 255);
       }
 
-      if (this.portalState == BLACKEMPIREPORTALSTATE_EXITONLY){
+      if (portalState == BLACKEMPIREPORTALSTATE_EXITONLY){
         WaygateActivate(interiorWaygate, true);
         WaygateActivate(exteriorWaygate, false);
 
-        SetUnitAnimation(this.exteriorWaygate, "death");
-        SetUnitVertexColor(this.interiorWaygate, 150, 150, 255, 230);
+        SetUnitAnimation(exteriorWaygate, "death");
+        SetUnitVertexColor(interiorWaygate, 150, 150, 255, 230);
       }
 
-      if (this.portalState == BLACKEMPIREPORTALSTATE_OPEN){
+      if (portalState == BLACKEMPIREPORTALSTATE_OPEN){
         WaygateActivate(interiorWaygate, true);
         WaygateActivate(exteriorWaygate, true);
 
-        SetUnitAnimation(this.exteriorWaygate, "birth");
-        SetUnitVertexColor(this.interiorWaygate, 255, 255, 255, 255);
+        SetUnitAnimation(exteriorWaygate, "birth");
+        SetUnitVertexColor(interiorWaygate, 255, 255, 255, 255);
       }
     }
 
@@ -75,7 +75,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
     }
 
     public void operator Next=(BlackEmpirePortal value ){
-      this.next = value;
+      next = value;
     }
 
     //Progresses the current Portal objective to the next one.

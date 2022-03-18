@@ -1,20 +1,24 @@
+using AzerothWarsCSharp.Source.Main.Game_Logic.GameEnd;
+
 namespace AzerothWarsCSharp.Source.Main.Commands
 {
-  public class AllianceActive{
+  public class AllianceActive
+  {
+    public const bool ARE_ALLIANCE_ACTIVE = true;
 
-    private static void Actions( ){
-      int victoryCpCount;
-
-      if (AreAllianceActive == true){
-        SetCpsVictory(120);
+    private static void Actions()
+    {
+      if (ARE_ALLIANCE_ACTIVE)
+      {
+        ControlPointVictory.SetCpsVictory(120);
       }
     }
 
-    private static void OnInit( ){
-      trigger trig = CreateTrigger(  );
-      TriggerRegisterTimerEventSingle( trig, 8000 );
-      TriggerAddAction( trig,  Actions );
+    public static void Setup()
+    {
+      trigger trig = CreateTrigger();
+      TriggerRegisterTimerEventSingle(trig, 8000);
+      TriggerAddAction(trig, Actions);
     }
-
   }
 }

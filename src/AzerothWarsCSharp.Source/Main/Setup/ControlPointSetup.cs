@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Main.Setup
 
     private static void InitializeCP( ){
       unit u = GetEnumUnit();
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i > 5){ break; }
         if (GetUnitAbilityLevel(GetEnumUnit(), cpBuffs[i]) > 0){

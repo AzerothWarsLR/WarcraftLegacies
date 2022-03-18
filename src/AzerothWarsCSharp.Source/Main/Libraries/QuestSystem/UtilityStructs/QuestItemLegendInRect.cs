@@ -21,11 +21,11 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     private static thistype[] byIndex;
 
     float operator X( ){
-      return GetRectCenterX(this.targetRect);
+      return GetRectCenterX(targetRect);
     }
 
     float operator Y( ){
-      return GetRectCenterY(this.targetRect);
+      return GetRectCenterY(targetRect);
     }
 
     string operator PingPath( ){
@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     private void OnRegionExit( ){
-      if (UnitAlive(this.legend.Unit) == true && IsUnitInRegion(this.target, this.legend.Unit)){
+      if (UnitAlive(legend.Unit) && IsUnitInRegion(target, legend.Unit)){
         this.Progress = QUEST_PROGRESS_COMPLETE;
       }else {
         this.Progress = QUEST_PROGRESS_INCOMPLETE;
@@ -41,13 +41,13 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     private void OnRegionEnter(unit whichUnit ){
-      if (UnitAlive(this.legend.Unit) == true && GetTriggerUnit() == this.legend.Unit){
+      if (UnitAlive(legend.Unit) && GetTriggerUnit() == legend.Unit){
         this.Progress = QUEST_PROGRESS_COMPLETE;
       }
     }
 
     private static void OnAnyRegionExit( ){
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i == thistype.count){ break; }
         if (GetTriggeringRegion() == thistype.byIndex[i].target){
@@ -58,7 +58,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     private static void OnAnyRegionEnter( ){
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i == thistype.count){ break; }
         if (GetTriggeringRegion() == thistype.byIndex[i].target){
@@ -70,20 +70,20 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 
     thistype (Legend legend, rect targetRect, string rectName ){
 
-      this.target = RectToRegion(targetRect);
+      target = RectToRegion(targetRect);
       this.targetRect = targetRect;
       this.legend = legend;
       this.Description = legend.Name + " is at " + rectName;
-      TriggerRegisterEnterRegion(thistype.entersRectTrig, this.target, null);
-      TriggerRegisterLeaveRegion(thistype.exitsRectTrig, this.target, null);
+      TriggerRegisterEnterRegion(thistype.entersRectTrig, target, null);
+      TriggerRegisterLeaveRegion(thistype.exitsRectTrig, target, null);
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
       ;;
     }
 
     private static void onInit( ){
-      TriggerAddAction(thistype.entersRectTrig,  QuestItemLegendInRect.OnAnyRegionEnter);
-      TriggerAddAction(thistype.exitsRectTrig,  QuestItemLegendInRect.OnAnyRegionExit);
+      TriggerAddAction(thistype.entersRectTrig,  OnAnyRegionEnter);
+      TriggerAddAction(thistype.exitsRectTrig,  OnAnyRegionExit);
     }
 
 

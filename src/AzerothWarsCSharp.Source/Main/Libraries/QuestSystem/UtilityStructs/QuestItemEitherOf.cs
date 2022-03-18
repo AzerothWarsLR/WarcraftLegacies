@@ -30,25 +30,24 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     void OnAdd( ){
-      this.questItemA.OnAdd();
-      this.questItemB.OnAdd();
+      questItemA.OnAdd();
+      questItemB.OnAdd();
       CheckChildStatus();
     }
 
     private void CheckChildStatus( ){
-      if (this.questItemA.Progress == QUEST_PROGRESS_COMPLETE || this.questItemB.Progress == QUEST_PROGRESS_COMPLETE){
+      if (questItemA.Progress == QUEST_PROGRESS_COMPLETE || questItemB.Progress == QUEST_PROGRESS_COMPLETE){
         this.Progress = QUEST_PROGRESS_COMPLETE;
         return;
       }
-      if (this.questItemA.Progress == QUEST_PROGRESS_FAILED && this.questItemB.Progress == QUEST_PROGRESS_FAILED){
+      if (questItemA.Progress == QUEST_PROGRESS_FAILED && questItemB.Progress == QUEST_PROGRESS_FAILED){
         this.Progress = QUEST_PROGRESS_FAILED;
-        return;
       }
     }
 
     public static void OnAnyQuestItemProgressChanged( ){
       QuestItemData triggerQuestItemData = QuestItemData.TriggerQuestItemData;
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i == thistype.count){ break; }
         if (triggerQuestItemData == thistype.byIndex[i].questItemA || triggerQuestItemData == thistype.byIndex[i].questItemB){
@@ -59,10 +58,10 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
 
-    private static void OnInit( ){
+    public static void Setup( ){
       trigger trig = CreateTrigger();
       QuestItemData.ProgressChanged.register(trig);
-      TriggerAddAction(trig,  QuestItemEitherOf.OnAnyQuestItemProgressChanged);
+      TriggerAddAction(trig,  OnAnyQuestItemProgressChanged);
     }
 
   }

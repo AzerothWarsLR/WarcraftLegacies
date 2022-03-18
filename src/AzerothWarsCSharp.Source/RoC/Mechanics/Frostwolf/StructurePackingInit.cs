@@ -11,10 +11,10 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Frostwolf
       PackableStructure.ByStructureId(Buildings[index]).SetupKodo(whichUnit);
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       group tempGroup = CreateGroup();
       unit u;
-      int i = 0;
+      var i = 0;
 
       Buildings[0] = FourCC(ogre);
       Buildings[1] = FourCC(ofor);

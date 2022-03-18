@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     static void OnAnyFactionScoreStatusChanged( ){
-      int i = 0;
+      var i = 0;
       Faction triggerFaction = GetTriggerFaction();
       if (triggerFaction != 0 && triggerFaction.ScoreStatus == SCORESTATUS_DEFEATED){
         while(true){
@@ -39,10 +39,10 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
 
-    private static void OnInit( ){
+    public static void Setup( ){
       trigger trig = CreateTrigger();
       FactionScoreStatusChanged.register(trig);
-      TriggerAddAction(trig,  QuestItemSelfExists.OnAnyFactionScoreStatusChanged);
+      TriggerAddAction(trig,  OnAnyFactionScoreStatusChanged);
     }
 
   }

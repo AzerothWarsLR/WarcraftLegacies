@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Fel_Horde
 
     float operator RallyX( ){
       location rally = GetUnitRallyPoint(this.unit);
-      float x = GetLocationX(rally);
+      var x = GetLocationX(rally);
       RemoveLocation(rally);
       rally = null;
       return x;
@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Fel_Horde
 
     float operator RallyY( ){
       location rally = GetUnitRallyPoint(this.unit);
-      float y = GetLocationY(rally);
+      var y = GetLocationY(rally);
       RemoveLocation(rally);
       rally = null;
       return y;
@@ -76,7 +76,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Fel_Horde
 
   }
 
-  private static void OnInit( ){
+  public static void Setup( ){
 
   }
 

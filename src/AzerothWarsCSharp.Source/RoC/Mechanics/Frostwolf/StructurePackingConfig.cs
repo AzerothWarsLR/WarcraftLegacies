@@ -2,7 +2,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Frostwolf
 {
   public class StructurePackingConfig{
 
-    private static void OnInit( ){
+    public static void Setup( ){
       PackableStructure.create(FourCC(ogre), "buildings\\Orc\\GreatHall\\GreatHall.mdx", )A00O));
       PackableStructure.create(FourCC(ostr), "buildings\\Orc\\GreatHall\\GreatHall.mdx", )A0EU));
       PackableStructure.create(FourCC(ofrt), "buildings\\Orc\\GreatHall\\GreatHall.mdx", )A0ET));

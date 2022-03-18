@@ -1,6 +1,6 @@
 namespace AzerothWarsCSharp.Source.Main.Libraries
 {
-  public class SpellHelpers
+  public static class SpellHelpers
   {
     public static void StartUnitAbilityCooldownFull(unit whichUnit, int abilCode)
     {

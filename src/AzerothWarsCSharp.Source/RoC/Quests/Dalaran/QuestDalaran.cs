@@ -48,12 +48,12 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
     }
 
     private void OnFail( ){
-      this.GrantDalaran(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GrantDalaran(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnComplete( ){
       SetPlayerTechResearched(Holder.Player, FourCC(R038), 1);
-      this.GrantDalaran(this.Holder.Player);
+      GrantDalaran(this.Holder.Player);
       if (GetLocalPlayer() == this.Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\DalaranTheme.mp3" );
       }

@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       DummyCastOnUnitsInCircle(GetTriggerUnit(), DUMMY_ABIL_ID, DUMMY_ORDER_STRING, GetUnitAbilityLevel(GetTriggerUnit(), ABIL_ID), GetSpellTargetX(), GetSpellTargetY(), (RADIUS*level)+100, CastFilter.EnrageFilter);
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterSpellEffectAction(ABIL_ID,  Cast);
     }
 

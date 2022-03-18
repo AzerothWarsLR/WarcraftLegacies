@@ -38,11 +38,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Ironforge
     }
 
     private void OnFail( ){
-      this.GrantDominion(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GrantDominion(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnComplete( ){
-      this.GrantDominion(this.Holder.Player);
+      GrantDominion(this.Holder.Player);
       if (GetLocalPlayer() == this.Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\DwarfTheme.mp3" );
       }

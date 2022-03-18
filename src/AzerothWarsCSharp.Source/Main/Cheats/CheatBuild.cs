@@ -1,52 +1,50 @@
+using AzerothWarsCSharp.Source.Main.Libraries;
+using WCSharp.Events;
 
 namespace AzerothWarsCSharp.Source.Main.Cheats
 {
-  public class CheatBuild{
+  public class CheatBuild
+  {
+    private const string COMMAND = "-build ";
+    private static readonly bool[] BuildToggle = new bool[Environment.MAX_PLAYERS];
 
-    //**CONFIG
-  
-    private const string COMMAND     = "-build ";
-    private boolean[] BuildToggle;
-  
-    //*ENDCONFIG
-
-    private static void Build( ){
-      if (GetIssuedOrderId() == 851976 && BuildToggle[GetPlayerId(GetTriggerPlayer())]){
-
+    private static void Build()
+    {
+      if (GetIssuedOrderId() == 851976 && BuildToggle[GetPlayerId(GetTriggerPlayer())])
+      {
         UnitSetUpgradeProgress(GetTriggerUnit(), 100);
       }
     }
 
-    private static void Actions( ){
-      int i = 0;
-      string enteredString = GetEventPlayerChatString();
-      player p = GetTriggerPlayer();
-      int pId = GetPlayerId(p);
-      string parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
-
-      if (parameter == "on"){
-        BuildToggle[pId] = true;
-
-      }else if (parameter == "off"){
-        BuildToggle[pId] = false;
-
+    private static void Actions()
+    {
+      if (!TestSafety.CheatCondition())
+      {
+        return;
       }
+      var enteredString = GetEventPlayerChatString();
+      var p = GetTriggerPlayer();
+      var pId = GetPlayerId(p);
+      var parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
+
+      BuildToggle[pId] = parameter switch
+      {
+        "on" => true,
+        "off" => false,
+        _ => BuildToggle[pId]
+      };
     }
 
-    private static void OnInit( ){
-      trigger trig = CreateTrigger(  );
-      int i = 0;
-
-      while(true){
-        if ( i > MAX_PLAYERS){ break; }
-        TriggerRegisterPlayerChatEvent( trig, Player(i), COMMAND, false );
-        i = i + 1;
+    public static void Setup()
+    {
+      trigger trig = CreateTrigger();
+      foreach (var player in GeneralHelpers.GetAllPlayers())
+      {
+        TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
       }
-      TriggerAddCondition(trig, ( CheatCondition));
-      TriggerAddAction(trig,  Actions);
+      TriggerAddAction(trig, Actions);
 
-      PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_ISSUED_ORDER,  Build);
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeReceivesOrder, Build);
     }
-
   }
 }

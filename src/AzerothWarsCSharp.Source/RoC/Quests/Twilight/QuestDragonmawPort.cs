@@ -34,11 +34,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Twilight
     }
 
     private void OnFail( ){
-      this.GrantDragonmawPort(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GrantDragonmawPort(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnComplete( ){
-      this.GrantDragonmawPort(this.Holder.Player);
+      GrantDragonmawPort(this.Holder.Player);
     }
 
     private void OnAdd( ){

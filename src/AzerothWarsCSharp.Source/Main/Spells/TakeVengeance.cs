@@ -1,8 +1,6 @@
 //When Maiev dies, she becomes an illusory assassin with additional damage.
 //If she hits at least x times before it expires, she revives. Lasts y seconds.
 
-using AzerothWarsCSharp.Source.Main.Libraries;
-
 namespace AzerothWarsCSharp.Source.Main.Spells
 {
   public class TakeVengeance{
@@ -86,7 +84,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       tick = 0;
       this.caster = caster;
       this.duration = duration;
-      this.maxDuration = duration;
+      maxDuration = duration;
       originalFormId = BlzGetUnitSkin(caster);
       DamageBonus = damageBonus;
       hitsDone = 0;
@@ -100,7 +98,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
     //When Maiev deals damage, check if she has Vengeance and act
     private static void OnInflictsDamage( ){
       Vengeance tempVengeance = Vengeance.vengeanceByUnit[GetHandleId(GetEventDamageSource())];
-      if (tempVengeance != 0 && BlzGetEventIsAttack() == true){
+      if (tempVengeance != 0 && BlzGetEventIsAttack()){
         tempVengeance.onAttack();
       }
     }
@@ -108,7 +106,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
     //Unit is damaged; check if it has this ability and it would take the damage. If so, trigger this ability
     private static void OnTakesDamage( ){
       unit triggerUnit = GetTriggerUnit();
-      int abilityLevel = 0;
+      var abilityLevel = 0;
       if (GetUnitAbilityLevel(triggerUnit, ABIL_ID) > 0){
         abilityLevel = GetUnitAbilityLevel(triggerUnit, ABIL_ID);
         if (BlzGetUnitSkin(triggerUnit) != ALTERNATE_FORM_ID && GetEventDamage() >= GetUnitState(triggerUnit, UNIT_STATE_LIFE) && GetUnitState(triggerUnit, UNIT_STATE_MANA) >= BlzGetUnitAbilityManaCost(triggerUnit, ABIL_ID, abilityLevel)){
@@ -119,7 +117,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       triggerUnit = null;
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterUnitTypeTakesDamageAction(HERO_ID,  OnTakesDamage);
       RegisterUnitTypeInflictsDamageAction(HERO_ID,  OnInflictsDamage);
     }

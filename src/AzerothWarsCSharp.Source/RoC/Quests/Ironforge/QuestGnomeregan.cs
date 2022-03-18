@@ -37,12 +37,12 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Ironforge
     }
 
     private void OnFail( ){
-      this.GrantGnomeregan(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GrantGnomeregan(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnComplete( ){
       SetPlayerTechResearched(Holder.Player, FourCC(R05Q), 1);
-      this.GrantGnomeregan(this.Holder.Player);
+      GrantGnomeregan(this.Holder.Player);
     }
 
     private void OnAdd( ){

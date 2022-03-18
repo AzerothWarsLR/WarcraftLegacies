@@ -22,18 +22,18 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     private static group tempGroup = CreateGroup();
 
     float operator X( ){
-      return GetRectCenterX(this.targetRect);
+      return GetRectCenterX(targetRect);
     }
 
     float operator Y( ){
-      return GetRectCenterY(this.targetRect);
+      return GetRectCenterY(targetRect);
     }
 
     private boolean IsArtifactInRect( ){
-      if (targetArtifact.OwningUnit != null && RectContainsCoords(this.targetRect, GetUnitX(this.targetArtifact.OwningUnit), GetUnitY(this.targetArtifact.OwningUnit))){
+      if (targetArtifact.OwningUnit != null && RectContainsCoords(targetRect, GetUnitX(targetArtifact.OwningUnit), GetUnitY(targetArtifact.OwningUnit))){
         return true;
       }
-      if (targetArtifact.OwningUnit == null && RectContainsCoords(this.targetRect, GetItemX(this.targetArtifact.item), GetItemY(this.targetArtifact.item))){
+      if (targetArtifact.OwningUnit == null && RectContainsCoords(targetRect, GetItemX(targetArtifact.item), GetItemY(targetArtifact.item))){
         return true;
       }
       return false;
@@ -58,7 +58,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     private static void OnAnyRegionExit( ){
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i == thistype.count){ break; }
         if (GetTriggeringRegion() == thistype.byIndex[i].targetRegion){
@@ -69,7 +69,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     private static void OnAnyRegionEnter( ){
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i == thistype.count){ break; }
         if (GetTriggeringRegion() == thistype.byIndex[i].targetRegion){
@@ -83,10 +83,10 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 
       this.targetArtifact = targetArtifact;
       this.targetRect = targetRect;
-      this.targetRegion = RectToRegion(targetRect);
+      targetRegion = RectToRegion(targetRect);
       this.Description = "Bring " + GetItemName(targetArtifact.item) + " to " + rectName;
-      TriggerRegisterEnterRegion(thistype.entersRectTrig, this.targetRegion, null);
-      TriggerRegisterLeaveRegion(thistype.exitsRectTrig, this.targetRegion, null);
+      TriggerRegisterEnterRegion(thistype.entersRectTrig, targetRegion, null);
+      TriggerRegisterLeaveRegion(thistype.exitsRectTrig, targetRegion, null);
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
       ;;

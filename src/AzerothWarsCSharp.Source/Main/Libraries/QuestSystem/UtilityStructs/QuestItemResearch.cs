@@ -18,9 +18,9 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 }
 
     private static void OnAnyResearch( ){
-      int i = 0;
+      var i = 0;
       thistype loopQuestItem;
-      int researched = GetResearched();
+      var researched = GetResearched();
       while(true){
         if ( i == thistype.count){ break; }
         loopQuestItem = thistype.byIndex[i];

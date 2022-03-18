@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       unit caster = null;
       int level;
       group tempGroup;
-      int i = 0 ;//Tracks number of units charmed
+      var i = 0 ;//Tracks number of units charmed
       unit u = null;
       player triggerPlayer = null;
       effect tempEffect = null;
@@ -40,7 +40,6 @@ namespace AzerothWarsCSharp.Source.Main.Spells
           BlzSetSpecialEffectScale(tempEffect, EFFECT_SCALE_TARGET);
           DestroyEffect(tempEffect);
           i = i + 1;
-        }else {
         }
         GroupRemoveUnit(tempGroup, u);
       }
@@ -55,7 +54,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       u = null;
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterSpellEffectAction(ABIL_ID,  Cast);
     }
 

@@ -4,7 +4,7 @@ namespace AzerothWarsCSharp.Source.Main.UnitTypes
 {
   public class UnitTypesScourge{
 
-    private static void OnInit( ){
+    public static void Setup( ){
       UnitType unitType = 0;
 
       unitType = UnitType.create(FourCC(unpl))      ;//Necropolis

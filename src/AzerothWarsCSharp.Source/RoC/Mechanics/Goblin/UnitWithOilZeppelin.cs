@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Goblin
     }
 
     private void AIDS_onDestroy( ){
-      this.tick = 0;
+      tick = 0;
       this.stopPeriodic();
     }
 
@@ -41,9 +41,9 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Goblin
       tick = tick + 1;
       if (tick == TICK_RATE * T32_FPS){
         if (GetUnitState(this.unit, UNIT_STATE_MANA) < 1){
-          this.freeze();
+          freeze();
         }else if (GetUnitState(this.unit, UNIT_STATE_MANA) > 50 || !UnitAlive(this.unit)){
-          this.unfreeze();
+          unfreeze();
         }
         tick = 0;
       }

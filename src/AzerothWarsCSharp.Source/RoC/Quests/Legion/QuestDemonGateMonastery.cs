@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
     }
 
     private void OnComplete( ){
-      CreateUnit(Holder.Player, DEMONGATE_ID, GetUnitX(this.questItemKillMonastery.Target), GetUnitY(this.questItemKillMonastery.Target), 270);
+      CreateUnit(Holder.Player, DEMONGATE_ID, GetUnitX(questItemKillMonastery.Target), GetUnitY(questItemKillMonastery.Target), 270);
       SetDoodadAnimationRectBJ( "hide", FourCC(YObb), gg_rct_ScarletMonastery );
       SetDoodadAnimationRectBJ( "hide", FourCC(ZSab), gg_rct_ScarletMonastery );
       SetDoodadAnimationRectBJ( "hide", FourCC(YOsw), gg_rct_ScarletMonastery );
@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
 
     public  thistype ( ){
       thistype this = thistype.allocate("A Scarlet Rift", "The energies surrounding the Scarlet Monastery are extraordinary. Destroy this bastion of light to fabricate a Demon Gate in its place.", "ReplaceableTextures\\CommandButtons\\BTNMaskOfDeath.blp");
-      this.questItemKillMonastery = this.AddQuestItem(QuestItemKillUnit.create(gg_unit_h00T_0786));
+      questItemKillMonastery = this.AddQuestItem(QuestItemKillUnit.create(gg_unit_h00T_0786));
       ;;
     }
 

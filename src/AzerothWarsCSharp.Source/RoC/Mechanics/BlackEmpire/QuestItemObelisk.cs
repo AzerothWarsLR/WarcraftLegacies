@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
     }
 
     static void OnAnyBlackEmpireObeliskSummoned( ){
-      int i = 0;
+      var i = 0;
       thistype loopItem;
       while(true){
         if ( i == thistype.count){ break; }
@@ -41,10 +41,10 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
     }
 
 
-    private static void OnInit( ){
+    public static void Setup( ){
       trigger trig = CreateTrigger();
       BlackEmpireObeliskSummoned.register(trig);
-      TriggerAddAction(trig,  QuestItemObelisk.OnAnyBlackEmpireObeliskSummoned);
+      TriggerAddAction(trig,  OnAnyBlackEmpireObeliskSummoned);
     }
 
   }

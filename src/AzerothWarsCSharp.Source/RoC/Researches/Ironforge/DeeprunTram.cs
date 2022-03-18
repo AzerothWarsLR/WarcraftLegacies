@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.RoC.Researches.Ironforge
     }
 
     private static void ResearchStart( ){
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i > MAX_PLAYERS){ break; }
         Person.ById(i).SetObjectLimit(RESEARCH_ID, 0);
@@ -42,7 +42,7 @@ namespace AzerothWarsCSharp.Source.RoC.Researches.Ironforge
     }
 
     private static void ResearchCancel( ){
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i > MAX_PLAYERS){ break; }
         Person.ById(i).SetObjectLimit(RESEARCH_ID, 1);
@@ -50,7 +50,7 @@ namespace AzerothWarsCSharp.Source.RoC.Researches.Ironforge
       }
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterResearchFinishedAction(RESEARCH_ID,  Transfer);
       RegisterResearchStartedAction(RESEARCH_ID,  ResearchStart);
       RegisterResearchCancelledAction(RESEARCH_ID,  ResearchCancel);

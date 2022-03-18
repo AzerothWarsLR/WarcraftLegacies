@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Quelthalas
         }
 
         private static void SpawnAndAttackMultipleUnits(int unitTypeToSpawn, int unitCount ){
-            int i = 0;
+            var i = 0;
             while(true){
                 if ( i == unitCount){ break; }
                 SpawnAndAttack(unitTypeToSpawn);
@@ -49,7 +49,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Quelthalas
             DestroyTimer(GetExpiredTimer());
         }
 
-        private static void OnInit( ){
+        public static void Setup( ){
             ZulDiesTrigger = CreateTrigger();
             TriggerRegisterUnitEvent(ZulDiesTrigger, gg_unit_O00O_1933, EVENT_UNIT_DEATH);
             TriggerAddAction(ZulDiesTrigger,  OnZulDies);

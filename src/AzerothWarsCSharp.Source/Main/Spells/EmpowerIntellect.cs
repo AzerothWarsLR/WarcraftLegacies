@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       }
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_SPELL_EFFECT,  Cast);
     }
 

@@ -1,6 +1,4 @@
 
-using AzerothWarsCSharp.Source.Main.Libraries;
-
 namespace AzerothWarsCSharp.Source.RoC.Mechanics.Frostwolf
 {
   public class StructurePacking{
@@ -37,7 +35,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Frostwolf
       BlzSetSpecialEffectScale(e, 025);
       BlzSetSpecialEffectTime(e, 100);
       PackKodo(GetUnitId(whichUnit)).PackedBuildingEffect = e;
-      UnitAddAbility(whichUnit, this.buildAbility);
+      UnitAddAbility(whichUnit, buildAbility);
       e = null;
     }
 

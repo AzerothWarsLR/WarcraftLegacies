@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.RoC.Researches.Stormwind
       FACTION_STORMWIND.ModObjectLimit(FourCC(h054), UNLIMITED)       ;//Stormwind Knight
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterResearchFinishedAction(FourCC(R030),  Research);
     }
 

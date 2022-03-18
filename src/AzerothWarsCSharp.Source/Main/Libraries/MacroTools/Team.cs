@@ -13,14 +13,13 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     private static int teamCount = 0;
     readonly static thistype triggerTeam = 0;
 
-    private string name = null;
     private Set invitees ;//Factions invited to join this Team
     private Set factions;
     private int scoreStatus;
     private string victoryMusic;
 
     void operator VictoryMusic=(string whichMusic ){
-      this.victoryMusic = whichMusic;
+      victoryMusic = whichMusic;
     }
 
     string operator VictoryMusic( ){
@@ -32,8 +31,8 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     }
 
     integer operator CapitalCount( ){
-      int total = 0;
-      int i = 0;
+      var total = 0;
+      var i = 0;
       Legend loopLegend;
       while(true){
         if ( i == Legend.Count){ break; }
@@ -47,21 +46,19 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     }
 
     integer operator ControlPointCount( ){
-      int total = 0;
-      int i = 0;
+      var total = 0;
+      var i = 0;
       while(true){
         if ( i == this.FactionCount){ break; }
-        if (this.GetFactionByIndex(i).Person != 0){
-          total = total + this.GetFactionByIndex(i).Person.ControlPointCount;
+        if (GetFactionByIndex(i).Person != 0){
+          total = total + GetFactionByIndex(i).Person.ControlPointCount;
         }
         i = i + 1;
       }
       return total;
     }
 
-    string operator Name( ){
-      ;.name;
-    }
+    public string Name { get; }
 
     integer operator FactionCount( ){
       ;.factions.size;
@@ -69,8 +66,8 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 
     //Only includes filled Factions
     integer operator PlayerCount( ){
-      int i = 0;
-      int total = 0;
+      var i = 0;
+      var total = 0;
       Faction loopFaction;
       while(true){
         if ( i == factions.size){ break; }
@@ -88,14 +85,14 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     }
 
     void RemoveFaction(Faction faction ){
-      int i = 0;
-      if (!this.factions.contains(faction)){
-        BJDebugMsg("Attempted to remove non-present faction " + faction.Name + " from team " + this.name);
+      var i = 0;
+      if (!factions.contains(faction)){
+        BJDebugMsg("Attempted to remove non-present faction " + faction.Name + " from team " + Name);
       }
-      this.factions.remove(faction);
+      factions.remove(faction);
       //Make all present factions ally the new faction and visa-versa
       if (faction.Person != 0){
-        this.UnallyPlayer(faction.Player);
+        UnallyPlayer(faction.Player);
       }
       //
       thistype.triggerTeam = this;
@@ -103,14 +100,14 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     }
 
     void AddFaction(Faction faction ){
-      int i = 0;
-      if (this.factions.contains(faction)){
-        BJDebugMsg("Attempted to add already present faction " + faction.Name + " to team " + this.name);
+      var i = 0;
+      if (factions.contains(faction)){
+        BJDebugMsg("Attempted to add already present faction " + faction.Name + " to team " + Name);
       }
-      this.factions.add(faction);
+      factions.add(faction);
       //Make all present factions ally the new faction and visa-versa
       if (faction.Person != 0){
-        this.AllyPlayer(faction.Player);
+        AllyPlayer(faction.Player);
       }
       //
       thistype.triggerTeam = this;
@@ -118,22 +115,22 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     }
 
     void AllyPlayer(player whichPlayer ){
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i == this.FactionCount){ break; }
-        SetPlayerAllianceStateBJ(whichPlayer, this.GetFactionByIndex(i).Player, bj_ALLIANCE_ALLIED_VISION);
-        SetPlayerAllianceStateBJ(this.GetFactionByIndex(i).Player, whichPlayer, bj_ALLIANCE_ALLIED_VISION);
+        SetPlayerAllianceStateBJ(whichPlayer, GetFactionByIndex(i).Player, bj_ALLIANCE_ALLIED_VISION);
+        SetPlayerAllianceStateBJ(GetFactionByIndex(i).Player, whichPlayer, bj_ALLIANCE_ALLIED_VISION);
         i = i + 1;
       }
       thistype.triggerTeam = this;
     }
 
     void UnallyPlayer(player whichPlayer ){
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i == this.FactionCount){ break; }
-        SetPlayerAllianceStateBJ(whichPlayer, this.GetFactionByIndex(i).Player, bj_ALLIANCE_UNALLIED);
-        SetPlayerAllianceStateBJ(this.GetFactionByIndex(i).Player, whichPlayer, bj_ALLIANCE_UNALLIED);
+        SetPlayerAllianceStateBJ(whichPlayer, GetFactionByIndex(i).Player, bj_ALLIANCE_UNALLIED);
+        SetPlayerAllianceStateBJ(GetFactionByIndex(i).Player, whichPlayer, bj_ALLIANCE_UNALLIED);
         i = i + 1;
       }
       thistype.triggerTeam = this;
@@ -141,36 +138,36 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 
     //Revokes an invite sent to a player
     void Uninvite(Faction whichFaction ){
-      if (this.invitees.contains(whichFaction)){
-        this.DisplayText(whichFaction.prefixCol + whichFaction.name + "|r is no longer invited to join the " + this.name + ".");
-        DisplayTextToPlayer(whichFaction.Player, 0, 0, "You are no longer invited to join the " + this.name + ".");
-        this.invitees.remove(whichFaction);
+      if (invitees.contains(whichFaction)){
+        DisplayText(whichFaction.prefixCol + whichFaction.name + "|r is no longer invited to join the " + Name + ".");
+        DisplayTextToPlayer(whichFaction.Player, 0, 0, "You are no longer invited to join the " + Name + ".");
+        invitees.remove(whichFaction);
       }
     }
 
     //Sends an invite to this team to a player, which they can choose to accept at a later date
     void Invite(Faction whichFaction ){
-      if (!this.factions.contains(whichFaction) && !this.invitees.contains(whichFaction) && whichFaction.CanBeInvited == true){
-        if (GetLocalPlayer() == whichFaction.Player || this.factions.contains(Person.ByHandle(GetLocalPlayer()))){
+      if (!factions.contains(whichFaction) && !invitees.contains(whichFaction) && whichFaction.CanBeInvited == true){
+        if (GetLocalPlayer() == whichFaction.Player || factions.contains(Person.ByHandle(GetLocalPlayer()))){
           StartSound(gg_snd_ArrangedTeamInvitation);
         }
-        this.DisplayText(whichFaction.prefixCol + whichFaction.name + "|r has been invited to join the " + this.name + ".");
-        DisplayTextToPlayer(whichFaction.Player, 0, 0, "You have been invited to join the " + this.name + ". Type -join " + this.name + " to accept.");
-        this.invitees.add(whichFaction);
+        DisplayText(whichFaction.prefixCol + whichFaction.name + "|r has been invited to join the " + Name + ".");
+        DisplayTextToPlayer(whichFaction.Player, 0, 0, "You have been invited to join the " + Name + ". Type -join " + Name + " to accept.");
+        invitees.add(whichFaction);
       }
     }
 
     void DisplayText(string text ){
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i == factions.size){ break; }
-        DisplayTextToPlayer(Faction(this.factions[i]).Player, 0, 0, text);
+        DisplayTextToPlayer(Faction(factions[i]).Player, 0, 0, text);
         i = i + 1;
       }
     }
 
     force CreateForceFromPlayers( ){
-      int i = 0;
+      var i = 0;
       force newForce = CreateForce();
       Faction loopFaction;
       while(true){
@@ -189,10 +186,10 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     }
 
     boolean ContainsPlayer(player whichPlayer ){
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i == factions.size){ break; }
-        if (Faction(this.factions[i]).Player == whichPlayer){
+        if (Faction(factions[i]).Player == whichPlayer){
           return true;
         }
         i = i + 1;
@@ -219,9 +216,9 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     Team (string name ){
 
 
-      this.name = name;
-      this.factions = Set.create("factions in " + name);
-      this.invitees = Set.create("invitees of " + name);
+      Name = name;
+      factions = Set.create("factions in " + name);
+      invitees = Set.create("invitees of " + name);
 
       if (thistype.teamsByName[StringCase(name, false)] == 0){
         thistype.teamsByName[StringCase(name, false)] = this;
@@ -245,10 +242,10 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 
 
     static Team GetTriggerTeam( ){
-      return Team.triggerTeam;
+      return triggerTeam;
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       OnTeamCreate = Event.create();
       OnTeamSizeChange = Event.create();
       TeamScoreStatusChanged = Event.create();

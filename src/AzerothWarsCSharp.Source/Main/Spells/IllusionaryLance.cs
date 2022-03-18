@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
   
 
     private static void Damaging( ){
-      int level = GetUnitAbilityLevel(GetEventDamageSource(), ABIL_ID);
+      var level = GetUnitAbilityLevel(GetEventDamageSource(), ABIL_ID);
       float chance;
       if (level > 0 && BlzGetEventIsAttack()){
         if (IsUnitIllusion(GetEventDamageSource())){
@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       }
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterUnitTypeInflictsDamageAction(UNITTYPE_ID,  Damaging);
     }
 

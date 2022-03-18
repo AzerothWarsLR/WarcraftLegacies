@@ -69,7 +69,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Draenei
       group tempGroup = CreateGroup();
       unit u;
 
-      this.GrantExiled(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GrantExiled(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       KillUnit(gg_unit_o02P_2291);
       KillUnit(gg_unit_o02P_2291);
       KillUnit(LEGEND_VELEN.Unit );
@@ -97,8 +97,8 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Draenei
       FACTION_DRAENEI.AddQuest(SHIP_ARGUS);
       SHIP_ARGUS.Progress = QUEST_PROGRESS_INCOMPLETE;
       UnitRemoveAbilityBJ( FourCC(ACm2), LEGEND_VELEN.Unit);
-      this.GrantExiled(this.Holder.Player);
-      this.EscapeOutland(this.Holder.Player);
+      GrantExiled(this.Holder.Player);
+      EscapeOutland(this.Holder.Player);
       RemoveUnit(gg_unit_h09W_3303);
       KillUnit(gg_unit_o02P_2291);
       if (GetLocalPlayer() == this.Holder.Player){

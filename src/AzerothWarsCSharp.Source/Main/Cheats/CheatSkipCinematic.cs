@@ -3,19 +3,22 @@ namespace AzerothWarsCSharp.Source.Main.Cheats
   public class CheatSkipCinematic{
 
     private static void Actions( ){
+      if (!TestSafety.CheatCondition())
+      {
+        return;
+      }
       CinematicModeBJ(false, GetPlayersAll());
       DestroyTrigger(GetTriggeringTrigger());
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       trigger trig = CreateTrigger(  );
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i > MAX_PLAYERS){ break; }
         TriggerRegisterPlayerEventEndCinematic(trig, Player(i));
         i = i + 1;
       }
-      TriggerAddCondition(trig, ( CheatCondition));
       TriggerAddAction( trig,  Actions );
     }
 

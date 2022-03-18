@@ -1,5 +1,3 @@
-using static War3Api.Common;
-
 namespace AzerothWarsCSharp.Source
 {
 	public static class Cameras

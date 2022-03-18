@@ -1,12 +1,21 @@
+using System.Collections.Generic;
+
 namespace AzerothWarsCSharp.Source.Main.Libraries
 {
-  public class GeneralHelpers{
+  public static class GeneralHelpers{
     private const float HERO_DROP_DIST = 50     ;//The radius in which heroes spread out items when they drop them
-    private static force DestForce = null;
+    private static force DestForce;
     private static group TempGroup = CreateGroup();
     private static rect TempRect = Rect(0, 0, 0, 0);
-  
 
+    public static IEnumerable<player> GetAllPlayers()
+    {
+      for (var i = 0; i < Environment.MAX_PLAYERS; i++)
+      {
+        yield return Player(i);
+      }
+    }
+    
     public static int GetUnitAverageDamage(unit whichUnit, int weaponIndex ){
       float baseDamage = BlzGetUnitBaseDamage(whichUnit, weaponIndex);
       float numberOfDice = BlzGetUnitDiceNumber(whichUnit, weaponIndex);
@@ -16,15 +25,14 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
 
     //Returns as percentage.
     public static float GetUnitDamageReduction(unit whichUnit ){
-      float armor = BlzGetUnitArmor(whichUnit);
-      return (armor*006) / ((1+006)*armor);
+      var armor = BlzGetUnitArmor(whichUnit);
+      return armor*006 / ((1+006)*armor);
     }
 
     public static void KillNeutralHostileUnitsInRadius(float x, float y, float radius ){
-      unit u;
       GroupEnumUnitsInRange(TempGroup, x, y, radius, null);
       while(true){
-        u = FirstOfGroup(TempGroup);
+        unit u = FirstOfGroup(TempGroup);
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !IsUnitType(u, UNIT_TYPE_SAPPER) && !IsUnitType(u, UNIT_TYPE_STRUCTURE)){
           KillUnit(u);
@@ -34,11 +42,10 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
     }
 
     public static unit CreateStructureForced(player whichPlayer, int unitId, float x, float y, float face, float size ){
-      unit u = null;
       SetRect(TempRect, x - size/2, y - size/2, x + size/2, y + size/2);
       GroupEnumUnitsInRect(TempGroup, TempRect, null);
       while(true){
-        u = FirstOfGroup(TempGroup);
+        unit u = FirstOfGroup(TempGroup);
         if ( u == null){ break; }
         if (IsUnitType(u, UNIT_TYPE_STRUCTURE)){
           AdjustPlayerStateBJ(GetUnitGoldCost(GetUnitTypeId(u)), GetOwningPlayer(u), PLAYER_STATE_RESOURCE_GOLD);
@@ -58,7 +65,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
     }
 
     public static void CreateUnits(player whichPlayer, int unitId, float x, float y, float face, int count ){
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i == count){ break; }
         CreateUnit(whichPlayer, unitId, x, y, face);
@@ -156,10 +163,10 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
     }
 
     public static void UnitDropAllItems(unit u ){
-      int i = 0;
+      var i = 0;
       item dropItem = null;
-      float unitX = GetUnitX(u);
-      float unitY = GetUnitY(u);
+      var unitX = GetUnitX(u);
+      var unitY = GetUnitY(u);
       float x = 0;
       float y = 0;
       float ang = 0  ;//Radians
@@ -178,7 +185,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
     }
 
     public static void UnitTransferItems(unit sender, unit receiver ){
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i > 6){ break; }
         UnitAddItem(receiver, UnitItemInSlot(sender, i));

@@ -2,37 +2,37 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 {
   public class Person
   {
-    private force Observers;
+    public static force Observers;
     private Event OnPersonFactionChange;
     private static thistype[] byId;
     readonly static thistype triggerPerson = 0         ;//Used in event response triggers
     readonly static Faction prevFaction = 0            ;//Used in OnPersonFactionChange event response for the previous faction
 
     private Faction faction                  ;//Controls name, available objects, color, and icon
-    private int controlPointCount = 0;
-    private float controlPointValue = 0        ;//Gold per minute
+    private int controlPointCount;
+    private float controlPointValue;//Gold per minute
 
 
-    private float partialGold = 0              ;//Just used for income calculations
+    private float partialGold;//Just used for income calculations
     readonly group cpGroup                    ;//Group of control point units this person owns
 
     private Table objectLimits;
     private Table objectLevels;
 
-    public player Player => this.Player;
+    public player Player => Player;
 
-    public Faction Faction => this.faction;
+    public Faction Faction => faction;
 
     void operator Faction=(Faction newFaction ){
-      int i = 0;
+      var i = 0;
       Faction prevFaction;
 
-      this.prevFaction = this.faction;
-      thistype.prevFaction = this.faction;
+      this.prevFaction = faction;
+      thistype.prevFaction = faction;
 
       //Unapply old faction
-      if (this.faction != 0){
-        this.faction = 0;
+      if (faction != 0){
+        faction = 0;
         if (this.prevFaction != 0){
           this.prevFaction.Person = 0 ;//Referential integrity
         }
@@ -42,7 +42,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       if (newFaction != 0){
         if (newFaction.Person == 0){
           SetPlayerColorBJ(this.p, newFaction.playCol, true);
-          this.faction = newFaction;
+          faction = newFaction;
           //Enforce referential integrity
           if (newFaction.Person != this){
             newFaction.Person = this;
@@ -64,7 +64,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       if ((value < 0)){
         BJDebugMsg("ERROR: Tried to assign a negative ControlPointValue value to " + GetPlayerName(this.p));
       }
-      this.controlPointValue = value;
+      controlPointValue = value;
     }
 
     integer operator ControlPointCount( ){
@@ -75,7 +75,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       if ((value < 0)){
         BJDebugMsg("ERROR: Tried to assign a negative ControlPoint counter to " + GetPlayerName(this.p));
       }
-      this.controlPointCount = value;
+      controlPointCount = value;
     }
 
     integer GetObjectLevel(int object ){
@@ -83,40 +83,40 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     }
 
     void SetObjectLevel(int object, int level ){
-      this.objectLevels[object] = level;
-      SetPlayerTechResearched(this.Player, object, level);
+      objectLevels[object] = level;
+      SetPlayerTechResearched(Player, object, level);
     }
 
-    integer GetObjectLimit(int id ){
+    public int GetObjectLimit(int id ){
       ;.objectLimits[id];
     }
 
     void SetObjectLimit(int id, int limit ){
-      this.objectLimits[id] = limit;
-      this.SetObjectLevel(id, IMinBJ(GetPlayerTechCount(this.Player, id, true), limit));
+      objectLimits[id] = limit;
+      this.SetObjectLevel(id, IMinBJ(GetPlayerTechCount(Player, id, true), limit));
       if (limit >= UNLIMITED){
-        SetPlayerTechMaxAllowed(this.Player, id, -1);
+        SetPlayerTechMaxAllowed(Player, id, -1);
       }else if (limit <= 0){
-        SetPlayerTechMaxAllowed(this.Player, id, 0);
+        SetPlayerTechMaxAllowed(Player, id, 0);
       }else {
-        SetPlayerTechMaxAllowed(this.Player, id, limit);
+        SetPlayerTechMaxAllowed(Player, id, limit);
       }
     }
 
     public void ModObjectLimit(int id, int limit ){
-      this.SetObjectLimit(id, this.objectLimits[id] + limit);
+      SetObjectLimit(id, objectLimits[id] + limit);
     }
 
-    void addGold(float x ){
+    public void AddGold(float x ){
       float fullGold = floor(x);
-      float remainderGold = x - fullGold;
+      var remainderGold = x - fullGold;
 
       SetPlayerState(p, PLAYER_STATE_RESOURCE_GOLD, GetPlayerState(p, PLAYER_STATE_RESOURCE_GOLD) + R2I(fullGold));
-      this.partialGold = this.partialGold + remainderGold;
+      partialGold = partialGold + remainderGold;
 
       while(true){
-        if ( this.partialGold < 1){ break; }
-        this.partialGold = this.partialGold - 1;
+        if ( partialGold < 1){ break; }
+        partialGold = partialGold - 1;
         SetPlayerState(p, PLAYER_STATE_RESOURCE_GOLD, GetPlayerState(p, PLAYER_STATE_RESOURCE_GOLD) + 1);
       }
     }
@@ -126,11 +126,11 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     }
 
     void destroy( ){
-      DestroyGroup(this.cpGroup);
+      DestroyGroup(cpGroup);
 
       thistype.byId[GetPlayerId(this.p)] = 0;
       this.p = null;
-      this.cpGroup = null;
+      cpGroup = null;
 
       this.deallocate();
     }
@@ -139,7 +139,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       ;type.byId[id];
     }
 
-    public static Person ByHandle(player whichPlayer ){
+    public static Person? ByHandle(player whichPlayer ){
       ;type.byId[GetPlayerId(whichPlayer)];
     }
 
@@ -147,10 +147,10 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 
 
       this.p = p;
-      this.cpGroup = CreateGroup();
+      cpGroup = CreateGroup();
       thistype.byId[GetPlayerId(p)] = this;
-      this.objectLimits = Table.create();
-      this.objectLevels = Table.create();
+      objectLimits = Table.create();
+      objectLevels = Table.create();
 
       ;;
     }
@@ -158,14 +158,14 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 
 
     static Faction GetChangingPersonPrevFaction( ){
-      return Person.prevFaction;
+      return prevFaction;
     }
 
     static Person GetTriggerPerson( ){
-      return Person.triggerPerson;
+      return triggerPerson;
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       Observers = CreateForce();
       OnPersonFactionChange = Event.create();
     }

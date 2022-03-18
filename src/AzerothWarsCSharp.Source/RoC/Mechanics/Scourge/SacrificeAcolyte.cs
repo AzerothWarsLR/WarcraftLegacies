@@ -1,22 +1,24 @@
+using WCSharp.Events;
+
 namespace AzerothWarsCSharp.Source.RoC.Mechanics.Scourge
 {
-  public class SacrificeAcolyte{
-
-  
-    private const int ACOLYTE_ID = FourCC(uaco);
-  
-
-    private static void OnSell( ){
+  public static class SacrificeAcolyte
+  {
+    private static readonly int AcolyteId = FourCC("uaco");
+    
+    private static void OnSell()
+    {
       KillUnit(GetTriggerUnit());
       BlzSetUnitFacingEx(GetSoldUnit(), GetUnitFacing(GetTriggerUnit()));
-      if (GetLocalPlayer() == GetOwningPlayer(GetSoldUnit())){
+      if (GetLocalPlayer() == GetOwningPlayer(GetSoldUnit()))
+      {
         SelectUnit(GetSoldUnit(), true);
       }
     }
 
-    private static void OnInit( ){
-      RegisterUnitTypeSoldUnitAction(ACOLYTE_ID,  OnSell);
+    public static void Setup()
+    {
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeSellsUnit, OnSell, AcolyteId);
     }
-
   }
 }

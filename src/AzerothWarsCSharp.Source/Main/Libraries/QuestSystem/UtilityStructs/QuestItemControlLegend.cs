@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
       if (this.Holder.Team.ContainsPlayer(GetOwningPlayer(target.Unit))){
         this.Progress = QUEST_PROGRESS_COMPLETE;
       }else {
-        if (this.canFail){
+        if (canFail){
           this.Progress = QUEST_PROGRESS_FAILED;
         }else {
           this.Progress = QUEST_PROGRESS_INCOMPLETE;
@@ -43,7 +43,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     public static void OnAnyUnitDeath( ){
-      int i = 0;
+      var i = 0;
       thistype loopItem;
       Legend triggerLegend = GetTriggerLegend();
       while(true){
@@ -57,7 +57,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     public static void OnAnyLegendChangeOwner( ){
-      int i = 0;
+      var i = 0;
       thistype loopItem;
       while(true){
         if ( i == thistype.count){ break; }
@@ -82,14 +82,14 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 
 
 
-    private static void OnInit( ){
+    public static void Setup( ){
       trigger trig = CreateTrigger();
       OnLegendChangeOwner.register(trig);
-      TriggerAddAction(trig,  QuestItemControlLegend.OnAnyLegendChangeOwner);
+      TriggerAddAction(trig,  OnAnyLegendChangeOwner);
 
       trig = CreateTrigger();
       OnLegendPermaDeath.register(trig);
-      TriggerAddAction(trig,  QuestItemControlLegend.OnAnyUnitDeath);
+      TriggerAddAction(trig,  OnAnyUnitDeath);
     }
 
   }

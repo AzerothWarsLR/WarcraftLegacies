@@ -61,7 +61,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests
     }
 
 
-    private static void OnInit( ){
+    public static void Setup( ){
       //Make the Shen)dralar starting units invulnerable
       group tempGroup = CreateGroup();
       unit u;

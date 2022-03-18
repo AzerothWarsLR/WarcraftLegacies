@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     private void OnExpire( ){
-      DestroyTimer(this.timer);
+      DestroyTimer(timer);
       this.Progress = QUEST_PROGRESS_FAILED;
     }
 
@@ -27,9 +27,9 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     thistype (int duration ){
 
       this.Description = " Complete this quest before " + I2S(duration) + " seconds have elapsed";
-      this.timer = CreateTimer();
-      TimerStart(this.timer, duration, false,  thistype.OnAnyTimerExpires);
-      thistype.byTimer[GetHandleId(this.timer)] = this;
+      timer = CreateTimer();
+      TimerStart(timer, duration, false,  thistype.OnAnyTimerExpires);
+      thistype.byTimer[GetHandleId(timer)] = this;
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
       ;;

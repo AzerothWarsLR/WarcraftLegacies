@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     private Faction target = 0;
 
     static void OnAnyFactionScoreStatusChanged( ){
-      int i = 0;
+      var i = 0;
       Faction triggerFaction = GetTriggerFaction();
       if (triggerFaction.ScoreStatus == SCORESTATUS_DEFEATED){
         while(true){
@@ -27,16 +27,16 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
-      this.target = whichFaction;
+      target = whichFaction;
       this.Description = whichFaction.Name + " has been defeated";
       ;;
     }
 
 
-    private static void OnInit( ){
+    public static void Setup( ){
       trigger trig = CreateTrigger();
       FactionScoreStatusChanged.register(trig);
-      TriggerAddAction(trig,  QuestItemFactionDefeated.OnAnyFactionScoreStatusChanged);
+      TriggerAddAction(trig,  OnAnyFactionScoreStatusChanged);
     }
 
   }

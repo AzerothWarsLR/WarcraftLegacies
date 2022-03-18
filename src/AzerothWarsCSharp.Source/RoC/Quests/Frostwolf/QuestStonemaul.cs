@@ -38,11 +38,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Frostwolf
     }
 
     private void OnFail( ){
-      this.GrantStonemaul(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GrantStonemaul(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnComplete( ){
-      this.GrantStonemaul(this.Holder.Player);
+      GrantStonemaul(this.Holder.Player);
       AdjustPlayerStateBJ(3000, FACTION_FROSTWOLF.Player, PLAYER_STATE_RESOURCE_LUMBER);
     }
 

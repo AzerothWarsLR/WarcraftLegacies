@@ -1,5 +1,3 @@
-using AzerothWarsCSharp.Source.Main.Libraries;
-
 namespace AzerothWarsCSharp.Source.RoC.Mechanics.Fel_Horde
 {
   public class DemonGate{
@@ -35,7 +33,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Fel_Horde
 
     thistype (int gateUnitType, int spawnUnitType, int interval, int count ){
 
-      this.unitType = gateUnitType;
+      unitType = gateUnitType;
       this.interval = interval;
       this.spawnUnitType = spawnUnitType;
       this.count = count;
@@ -87,7 +85,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Fel_Horde
     private float operator RallyX( ){
       location rally;
       float x;
-      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(this.u) == FACTION_FEL_HORDE.Player){
+      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(u) == FACTION_FEL_HORDE.Player){
         return FocalDemonGate.Instance.RallyX;
       }
       rally = GetUnitRallyPoint(u);
@@ -100,7 +98,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Fel_Horde
     private float operator RallyY( ){
       location rally;
       float y;
-      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(this.u) == FACTION_FEL_HORDE.Player){
+      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(u) == FACTION_FEL_HORDE.Player){
         return FocalDemonGate.Instance.RallyY;
       }
       rally = GetUnitRallyPoint(u);
@@ -111,14 +109,14 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Fel_Horde
     }
 
     private float operator SpawnX( ){
-      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(this.u) == FACTION_FEL_HORDE.Player){
+      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(u) == FACTION_FEL_HORDE.Player){
         return FocalDemonGate.Instance.SpawnX;
       }
       return GetPolarOffsetX(X, SPAWN_DISTANCE, Facing);
     }
 
     private float operator SpawnY( ){
-      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(this.u) == FACTION_FEL_HORDE.Player){
+      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(u) == FACTION_FEL_HORDE.Player){
         return FocalDemonGate.Instance.SpawnY;
       }
       return GetPolarOffsetY(Y, SPAWN_DISTANCE, Facing);
@@ -142,12 +140,12 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Fel_Horde
         return;
       }
       MaxMana = gateType.Interval;
-      this.gateType = gateType;
+      gateType = gateType;
     }
 
     private void spawnUnit( ){
       unit newUnit;
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i == gateType.Count){ break; }
         newUnit = CreateUnit(Owner, gateType.SpawnUnitType, SpawnX, SpawnY, Facing);
@@ -187,8 +185,8 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Fel_Horde
     thistype (unit u ){
 
       this.u = u;
-      this.tick = 0;
-      this.enabled = true;
+      tick = 0;
+      enabled = true;
       spawnedDemons = CreateGroup();
       byHandle[GetHandleId(u)] = this;
       this.GateType = DemonGateType.byUnitType[GetUnitTypeId(u)];

@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.RoC.Researches.Stormwind
       FACTION_STORMWIND.ModObjectLimit(FourCC(R02Z), UNLIMITED)       ;//Reflective Plating
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterResearchFinishedAction(FourCC(R02Y),  Research);
     }
 

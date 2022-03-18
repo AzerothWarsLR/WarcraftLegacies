@@ -51,16 +51,16 @@ namespace AzerothWarsCSharp.Source.Main.Commands
         }
 
         if (targetFaction.Person != 0){
-          targetFaction.obliterate();
+          targetFaction.Obliterate();
           targetFaction.Person.Faction = 0;
         }
 
       }
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       trigger trig = CreateTrigger(  );
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i > MAX_PLAYERS){ break; }
         TriggerRegisterPlayerChatEvent( trig, Player(i), COMMAND, false );

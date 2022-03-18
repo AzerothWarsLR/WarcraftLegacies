@@ -52,13 +52,13 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
     }
 
     private void OnComplete( ){
-      this.GrantNazjatar();
-      this.AdjustTechtree();
-      this.FailQuests();
-      this.TransferHeroes();
+      GrantNazjatar();
+      AdjustTechtree();
+      FailQuests();
+      TransferHeroes();
       FACTION_NAGA.ModObjectLimit(FourCC(Eevi), -UNLIMITED)  	    ;//Illidan
       BLACKEMPIREPORTAL_ILLIDAN.PortalState = BLACKEMPIREPORTALSTATE_OPEN;
-      this.RenameIllidanFaction();
+      RenameIllidanFaction();
       WaygateActivateBJ( true, gg_unit_h01D_3378 );
       ShowUnitShow( gg_unit_h01D_3378 );
       WaygateSetDestinationLocBJ( gg_unit_h01D_3378, GetRectCenter(gg_rct_NazjatarExit2) );

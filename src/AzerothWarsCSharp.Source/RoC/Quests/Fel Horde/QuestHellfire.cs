@@ -41,14 +41,14 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
       UnitRescue(gg_unit_n081_0882, FACTION_FEL_HORDE.Player);
       UnitRescue(gg_unit_n081_0717, FACTION_FEL_HORDE.Player);
       SetPlayerTechResearched(Holder.Player, FourCC(R00P), 1);
-      this.GrantHellfire(this.Holder.Player);
+      GrantHellfire(this.Holder.Player);
       if (GetLocalPlayer() == this.Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\FelTheme.mp3" );
       }
     }
 
     private void OnFail( ){
-      this.GrantHellfire(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GrantHellfire(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnAdd( ){

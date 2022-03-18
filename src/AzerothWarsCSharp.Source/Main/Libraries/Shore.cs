@@ -29,10 +29,10 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
       float nearestDistance = 1000000;
       while(true){
         if ( i == Count){ break; }
-        var tempDistance = Instance.GetDistanceBetweenPointsEx(x, y, Shore.shoresByIndex[i].x, Shore.shoresByIndex[i].y);
+        var tempDistance = Instance.GetDistanceBetweenPointsEx(x, y, shoresByIndex[i].x, shoresByIndex[i].y);
         if (tempDistance < nearestDistance){
           nearestDistance = tempDistance;
-          nearestShore = Shore.shoresByIndex[i];
+          nearestShore = shoresByIndex[i];
         }
         i = i + 1;
       }

@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
     }
 
     private void OnComplete( ){
-      this.GrantNaxxramas(this.Holder.Player);
+      GrantNaxxramas(this.Holder.Player);
       SetUnitOwner( gg_unit_e013_1815, this.Holder.Player, true );
       SetUnitInvulnerable( gg_unit_e013_1815, false );
       SetPlayerAbilityAvailableBJ( false, FourCC(A0O2), this.Holder.Player);

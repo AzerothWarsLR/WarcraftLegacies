@@ -45,11 +45,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Druids
     }
 
     private void OnFail( ){
-      this.GiveMoonglade(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GiveMoonglade(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnComplete( ){
-      this.GiveMoonglade(this.Holder.Player);
+      GiveMoonglade(this.Holder.Player);
       if (LEGEND_MALFURION.Unit == null){
         LEGEND_MALFURION.Spawn(Holder.Player, GetRectCenterX(gg_rct_Moonglade), GetRectCenterY(gg_rct_Moonglade), 270);
         SetHeroLevel(LEGEND_MALFURION.Unit, 3, false);
@@ -69,11 +69,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Druids
     }
 
 
-    private static void OnInit( ){
+    public static void Setup( ){
       //Setup initially invulnerable and hidden group at Moonglade
       group tempGroup = CreateGroup();
       unit u;
-      int i = 0;
+      var i = 0;
       MoongladeUnits = CreateGroup();
       GroupEnumUnitsInRect(tempGroup, gg_rct_MoongladeVillage, null);
       while(true){

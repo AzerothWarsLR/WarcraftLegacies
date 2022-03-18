@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.RoC.Researches.Stormwind
       EnablePortals();
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterResearchFinishedAction(FourCC(R03W),  Research);
     }
 

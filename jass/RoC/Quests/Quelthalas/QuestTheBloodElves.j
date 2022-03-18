@@ -37,7 +37,7 @@ library QuestTheBloodElves requires QuelthalasSetup, LegendLegion, LegendQueltha
       local unit u
       local player holderPlayer = this.Holder.Person.Player
       local Legend triggerLegend = GetTriggerLegend()
-      set LEGEND_KAEL.StartingXP = GetHeroXP(LEGEND_ANASTERIAN.Unit)
+      set LEGEND_KAEL.StartingXp = GetHeroXP(LEGEND_ANASTERIAN.Unit)
       call this.Holder.obliterate()
       if this.Holder.ScoreStatus != SCORESTATUS_DEFEATED then
         loop

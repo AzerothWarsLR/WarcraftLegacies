@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       triggerUnit = null;
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterUnitTypeInflictsDamageAction(UNITTYPE_ID,  OnDamage);
     }
 

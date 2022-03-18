@@ -38,11 +38,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Sentinels
     }
 
     private void OnFail( ){
-      this.GrantFeathermoon(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GrantFeathermoon(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnComplete( ){
-      this.GrantFeathermoon(this.Holder.Player);
+      GrantFeathermoon(this.Holder.Player);
       AdjustPlayerStateBJ( 300, this.Holder.Player, PLAYER_STATE_RESOURCE_LUMBER );
       AdjustPlayerStateBJ( 300, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
       if (GetLocalPlayer() == this.Holder.Player){

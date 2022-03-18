@@ -11,13 +11,13 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     private Legend targetLegend;
 
     private void OnAdd( ){
-      if (this.targetArtifact.OwningUnit == this.targetLegend.Unit){
+      if (targetArtifact.OwningUnit == targetLegend.Unit){
         this.Progress = QUEST_PROGRESS_COMPLETE;
       }
     }
 
     private void OnAcquired( ){
-      if (this.targetArtifact.OwningUnit == this.targetLegend.Unit){
+      if (targetArtifact.OwningUnit == targetLegend.Unit){
         this.Progress = QUEST_PROGRESS_COMPLETE;
       }else {
         this.Progress = QUEST_PROGRESS_INCOMPLETE;
@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     static void OnAnyArtifactAcquired( ){
-      int i = 0;
+      var i = 0;
       thistype loopItem;
       while(true){
         if ( i == thistype.count){ break; }
@@ -48,10 +48,10 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
 
-    private static void OnInit( ){
+    public static void Setup( ){
       trigger trig = CreateTrigger();
       OnArtifactOwnerChange.register(trig);
-      TriggerAddAction(trig,  QuestItemLegendHasArtifact.OnAnyArtifactAcquired);
+      TriggerAddAction(trig,  OnAnyArtifactAcquired);
     }
 
   }

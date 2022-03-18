@@ -6,10 +6,10 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
 {
   public class QuestData
   {
-    private const int QUEST_PROGRESS_UNDISCOVERED = 0;
-    private const int QUEST_PROGRESS_INCOMPLETE = 1;
-    private const int QUEST_PROGRESS_COMPLETE = 2;
-    private const int QUEST_PROGRESS_FAILED = 3;
+    public const int QUEST_PROGRESS_UNDISCOVERED = 0;
+    public const int QUEST_PROGRESS_INCOMPLETE = 1;
+    public const int QUEST_PROGRESS_COMPLETE = 2;
+    public const int QUEST_PROGRESS_FAILED = 3;
 
     public event EventHandler<QuestData> QuestProgressChanged;
 
@@ -33,9 +33,10 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
     /// <summary>
     /// Describes to the player what will happen when the quest is completed.
     /// </summary>
-    public string CompletionDescription
+    public Func<string> CompletionDescription
     {
-      get { return null; }
+      private get;
+      init;
     }
 
     /// <summary>
@@ -49,9 +50,10 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
     /// <summary>
     /// Displayed to the player when the quest is completed.
     /// </summary>
-    public string CompletionPopup
+    public Func<string> CompletionPopup
     {
-      get { return null; }
+      private get;
+      init;
     }
 
     /// <summary>
@@ -77,14 +79,16 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
 
     public bool ProgressLocked => _progress is QUEST_PROGRESS_COMPLETE or QUEST_PROGRESS_FAILED;
 
-    public void OnComplete()
+    public Action OnComplete
     {
-      
+      private get;
+      init;
     }
 
-    public void OnFail()
+    public Action OnFail
     {
-      
+      private get;
+      init;
     }
     
     public int Progress
@@ -217,9 +221,10 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
       }
     }
 
-    public void OnAdd()
+    protected Action OnAdd
     {
-      
+      get;
+      init;
     }
 
     /// <summary>
@@ -356,7 +361,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem
       }
     }
 
-    void DisplayDiscovered()
+    public void DisplayDiscovered()
     {
       var display = "";
       if (GetLocalPlayer() == Holder.Player)

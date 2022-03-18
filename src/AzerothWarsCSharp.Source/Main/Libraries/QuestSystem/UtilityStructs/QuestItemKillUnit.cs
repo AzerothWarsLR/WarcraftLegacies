@@ -4,7 +4,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 
 
     private static group targets = CreateGroup();
-    private unit target = null;
+    private unit target;
     private static int count = 0;
     private static thistype[] byIndex;
 
@@ -35,15 +35,15 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     private void InitializeDescription( ){
-      if (IsUnitType(this.target, UNIT_TYPE_STRUCTURE) || IsUnitType(this.target, UNIT_TYPE_ANCIENT)){
-        this.Description = "Destroy " + GetUnitName(this.target);
+      if (IsUnitType(target, UNIT_TYPE_STRUCTURE) || IsUnitType(target, UNIT_TYPE_ANCIENT)){
+        this.Description = "Destroy " + GetUnitName(target);
         return;
       }
-      this.Description = "Kill " + GetUnitName(this.target);
+      this.Description = "Kill " + GetUnitName(target);
     }
 
     private static void OnAnyUnitDeath( ){
-      int i = 0;
+      var i = 0;
       thistype loopItem;
       while(true){
         if ( i == thistype.count){ break; }
@@ -60,7 +60,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
       trigger trig = CreateTrigger();
       TriggerRegisterUnitEvent(trig, unitToKill, EVENT_UNIT_DEATH);
       TriggerAddAction(trig,  thistype.OnAnyUnitDeath);
-      this.target = unitToKill;
+      target = unitToKill;
       InitializeDescription();
       GroupAddUnit(thistype.targets, unitToKill);
       this.targetWidget = unitToKill;

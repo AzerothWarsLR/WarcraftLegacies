@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     private static void OnAnyUnitDeath( ){
-      int i = 0;
+      var i = 0;
       thistype loopItem;
       Legend triggerLegend = GetTriggerLegend();
       while(true){
@@ -27,8 +27,8 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
       }
     }
 
-    private static  OnAnyUnitTrain( ){//this will fuck up if a legend is already alive or another one is trained
-      int i = 0;
+    static  OnAnyUnitTrain( ){//this will fuck up if a legend is already alive or another one is trained
+      var i = 0;
       thistype loopQuestItem;
       unit triggerUnit = GetTrainedUnit();
       while(true){
@@ -41,8 +41,8 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
       }
     }
 
-    private static  OnAnyUnitRevive( ){//this will fuck up if a legend is already alive or another one is trained
-      int i = 0;
+    static  OnAnyUnitRevive( ){//this will fuck up if a legend is already alive or another one is trained
+      var i = 0;
       thistype loopQuestItem;
       unit triggerUnit = GetRevivingUnit();
       while(true){
@@ -56,7 +56,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     void OnAdd( ){
-      if (UnitAlive(this.target.Unit)){
+      if (UnitAlive(target.Unit)){
         this.Progress = QUEST_PROGRESS_COMPLETE;
       }
     }

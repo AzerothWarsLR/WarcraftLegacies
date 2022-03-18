@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     private region target;
     private rect targetRect;
     private boolean heroOnly = false;
-    private unit triggerUnit = null;
+    private unit triggerUnit;
 
     private static trigger entersRectTrig = CreateTrigger();
     private static trigger exitsRectTrig = CreateTrigger();
@@ -21,11 +21,11 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     private static group tempGroup = CreateGroup();
 
     float operator X( ){
-      return GetRectCenterX(this.targetRect);
+      return GetRectCenterX(targetRect);
     }
 
     float operator Y( ){
-      return GetRectCenterY(this.targetRect);
+      return GetRectCenterY(targetRect);
     }
 
     string operator PingPath( ){
@@ -40,11 +40,11 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
       unit u;
       player holderPlayer = this.Holder.Player;
       GroupClear(thistype.tempGroup);
-      GroupEnumUnitsInRect(thistype.tempGroup, this.targetRect, null);
+      GroupEnumUnitsInRect(thistype.tempGroup, targetRect, null);
       while(true){
         u = FirstOfGroup(thistype.tempGroup);
         if ( u == null){ break; }
-        if (GetOwningPlayer(u) == this.Holder.Player && UnitAlive(u) && (IsUnitType(u, UNIT_TYPE_HERO) || !this.heroOnly)){
+        if (GetOwningPlayer(u) == this.Holder.Player && UnitAlive(u) && (IsUnitType(u, UNIT_TYPE_HERO) || !heroOnly)){
           return true;
         }
         GroupRemoveUnit(thistype.tempGroup, u);
@@ -53,8 +53,8 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     private void OnRegionEnter(unit whichUnit ){
-      if ((GetOwningPlayer(whichUnit) == this.Holder.Player && UnitAlive(whichUnit) && (IsUnitType(whichUnit, UNIT_TYPE_HERO) || !this.heroOnly)) || IsValidUnitInRect()){
-        this.triggerUnit = whichUnit;
+      if ((GetOwningPlayer(whichUnit) == this.Holder.Player && UnitAlive(whichUnit) && (IsUnitType(whichUnit, UNIT_TYPE_HERO) || !heroOnly)) || IsValidUnitInRect()){
+        triggerUnit = whichUnit;
         this.Progress = QUEST_PROGRESS_COMPLETE;
       }else {
         this.Progress = QUEST_PROGRESS_INCOMPLETE;
@@ -70,7 +70,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     private static void OnAnyRegionExit( ){
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i == thistype.count){ break; }
         if (GetTriggeringRegion() == thistype.byIndex[i].target){
@@ -81,7 +81,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     private static void OnAnyRegionEnter( ){
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i == thistype.count){ break; }
         if (GetTriggeringRegion() == thistype.byIndex[i].target){
@@ -99,11 +99,11 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
       }else {
         this.Description = "You have a unit at " + rectName;
       }
-      this.target = RectToRegion(targetRect);
+      target = RectToRegion(targetRect);
       this.targetRect = targetRect;
       this.heroOnly = heroOnly;
-      TriggerRegisterEnterRegion(thistype.entersRectTrig, this.target, null);
-      TriggerRegisterLeaveRegion(thistype.exitsRectTrig, this.target, null);
+      TriggerRegisterEnterRegion(thistype.entersRectTrig, target, null);
+      TriggerRegisterLeaveRegion(thistype.exitsRectTrig, target, null);
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
       ;;

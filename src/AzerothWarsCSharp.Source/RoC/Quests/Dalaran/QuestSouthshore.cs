@@ -34,11 +34,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
     }
 
     private void OnFail( ){
-      this.GrantSouthshore(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GrantSouthshore(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnComplete( ){
-      this.GrantSouthshore(this.Holder.Player);
+      GrantSouthshore(this.Holder.Player);
     }
 
 

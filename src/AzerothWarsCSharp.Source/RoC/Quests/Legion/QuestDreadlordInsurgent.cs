@@ -32,8 +32,8 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
       this.Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNHeroDreadLord.blp";
       SetPlayerColor(this.Holder.Player, PLAYER_COLOR_LIGHT_BLUE );
 
-      LEGEND_VARIMATHRAS.StartingXP = GetHeroXP(LEGEND_TICHONDRIUS.Unit);
-      LEGEND_LILIAN.StartingXP = GetHeroXP(LEGEND_MALGANIS.Unit);
+      LEGEND_VARIMATHRAS.StartingXp = GetHeroXP(LEGEND_TICHONDRIUS.Unit);
+      LEGEND_LILIAN.StartingXp = GetHeroXP(LEGEND_MALGANIS.Unit);
       this.Holder.obliterate();
       LEGEND_LILIAN.Spawn(this.Holder.Player, 7254, 7833, 110);
       LEGEND_VARIMATHRAS.Spawn(this.Holder.Player, 7254, 7833, 110);

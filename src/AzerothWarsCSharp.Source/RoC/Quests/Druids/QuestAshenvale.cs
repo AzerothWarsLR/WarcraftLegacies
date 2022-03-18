@@ -38,11 +38,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Druids
     }
 
     private void OnFail( ){
-      this.GrantAshenvale(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GrantAshenvale(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnComplete( ){
-      this.GrantAshenvale(this.Holder.Player);
+      GrantAshenvale(this.Holder.Player);
       if (GetLocalPlayer() == this.Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\DruidTheme.mp3" );
       }

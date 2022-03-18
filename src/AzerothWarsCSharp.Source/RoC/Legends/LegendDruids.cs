@@ -2,50 +2,60 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.RoC.Legends
 {
-  public class LegendDruids{
+  public static class LegendDruids
+  {
+    public static Legend LEGEND_CENARIUS;
+    public static Legend LEGEND_MALFURION;
+    public static Legend LEGEND_FANDRAL;
+    public static Legend LEGEND_URSOC;
+    public static Legend LEGEND_TORTOLLA;
+    public static Legend LEGEND_NORDRASSIL;
 
-  
-    Legend LEGEND_CENARIUS
-    Legend LEGEND_MALFURION
-    Legend LEGEND_FANDRAL
-    Legend LEGEND_URSOC
-    Legend LEGEND_TORTOLLA
+    public static int UNITTYPE_CENARIUS_ALIVE = FourCC("Ecen");
+    public static int UNITTYPE_CENARIUS_GHOST = FourCC("E00H");
+    
+    public static void Setup()
+    {
+      Legend.Register(LEGEND_CENARIUS = new Legend
+      {
+        UnitType = FourCC("Ecen"),
+        PermaDies = true,
+        DeathMessage =
+          "The Lord of the Forest, Cenarius, has fallen. The druids of the Kaldorei have lost their greatest mentor.",
+        DeathSfx = "Objects\\Spawnmodels\\NightElf\\EntBirthTarget\\EntBirthTarget.mdl",
+        PlayerColor = PLAYER_COLOR_CYAN,
+        StartingXp = 1000
+      });
 
-    Legend LEGEND_NORDRASSIL
+      Legend.Register(LEGEND_MALFURION = new Legend
+      {
+        UnitType = FourCC(Efur),
+        Essential = true
+      });
 
-    const int UNITTYPE_CENARIUS_ALIVE = FourCC(Ecen);
-    const int UNITTYPE_CENARIUS_GHOST = FourCC(E00H);
-  
+      Legend.Register( LEGEND_FANDRAL = new Legend
+      {
+        UnitType = FourCC(E00K)
+      });
 
-    private static void OnInit( ){
-      LEGEND_CENARIUS = Legend.create();
-      LEGEND_CENARIUS.UnitType = FourCC(Ecen);
-      LEGEND_CENARIUS.PermaDies = true;
-      LEGEND_CENARIUS.DeathMessage = "The Lord of the Forest, Cenarius, has fallen. The druids of the Kaldorei have lost their greatest mentor.";
-      LEGEND_CENARIUS.DeathSfx = "Objects\\Spawnmodels\\NightElf\\EntBirthTarget\\EntBirthTarget.mdl";
-      LEGEND_CENARIUS.PlayerColor = PLAYER_COLOR_CYAN;
-      LEGEND_CENARIUS.StartingXP = 1000;
+      Legend.Register(LEGEND_URSOC = new Legend
+      {
+        UnitType = FourCC(E00A),
+        StartingXp = 7000
+      });
 
-      LEGEND_MALFURION = Legend.create();
-      LEGEND_MALFURION.UnitType = FourCC(Efur);
-      LEGEND_MALFURION.Essential = true;
+      Legend.Register(LEGEND_NORDRASSIL = new Legend
+      {
+        Unit = gg_unit_n002_0130,
+        Capturable = true,
+        IsCapital = true
+      });
 
-      LEGEND_FANDRAL = Legend.create();
-      LEGEND_FANDRAL.UnitType = FourCC(E00K);
-
-      LEGEND_URSOC = Legend.create();
-      LEGEND_URSOC.UnitType = FourCC(E00A);
-      LEGEND_URSOC.StartingXP = 7000;
-
-      LEGEND_NORDRASSIL = Legend.create();
-      LEGEND_NORDRASSIL.Unit = gg_unit_n002_0130;
-      LEGEND_NORDRASSIL.Capturable = true;
-      LEGEND_NORDRASSIL.IsCapital = true;
-
-      LEGEND_TORTOLLA = Legend.create();
-      LEGEND_TORTOLLA.UnitType = FourCC(H04U);
-      LEGEND_TORTOLLA.StartingXP = 1800;
+      Legend.Register(LEGEND_TORTOLLA = new Legend
+      {
+        UnitType = FourCC(H04U),
+        StartingXp = 1800
+      });
     }
-
   }
 }

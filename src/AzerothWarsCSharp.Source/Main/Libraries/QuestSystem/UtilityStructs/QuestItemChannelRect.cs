@@ -21,19 +21,19 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     //The channel animation and duration tracker.
 
     private unit caster;
-    private float tick = 0;
-    private float maxDuration = 0;
-    private float elapsedDuration = 0;
-    private effect sfxProgress = null;
-    private effect sfx = null;
+    private float tick;
+    private float maxDuration;
+    private float elapsedDuration;
+    private effect sfxProgress;
+    private effect sfx;
     private QuestItemChannelRect questItemChannelRect;
     private timer channelingTimer;
     private timerdialog channelingDialog;
 
     private void destroy( ){
-      BlzSetSpecialEffectPosition(this.sfxProgress, -100000, -100000, 0)    ;//Has no death animation so needs to be moved off the map
-      DestroyEffect(this.sfxProgress);
-      DestroyEffect(this.sfx);
+      BlzSetSpecialEffectPosition(sfxProgress, -100000, -100000, 0)    ;//Has no death animation so needs to be moved off the map
+      DestroyEffect(sfxProgress);
+      DestroyEffect(sfx);
       DestroyTimer(channelingTimer);
       DestroyTimerDialog(channelingDialog);
       this.stopPeriodic();
@@ -46,25 +46,25 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
       if (finished){
         SetUnitAnimation(caster, "spell");
       }
-      if (UnitAlive(this.caster)){
+      if (UnitAlive(caster)){
         QueueUnitAnimation(caster, "stand");
       }
       questItemChannelRect.OnChannelEnd(this, finished);
-      this.destroy();
+      destroy();
     }
 
     private void periodic( ){
-      this.tick = this.tick+1;
+      tick = tick+1;
 
-      if (this.tick > T32_FPS){
-        this.tick = 0;
-        if (this.caster == null || !UnitAlive(this.caster) || GetDistanceBetweenPoints(GetUnitX(caster), GetUnitY(caster), this.questItemChannelRect.X, this.questItemChannelRect.Y) > 100){
+      if (tick > T32_FPS){
+        tick = 0;
+        if (caster == null || !UnitAlive(caster) || GetDistanceBetweenPoints(GetUnitX(caster), GetUnitY(caster), questItemChannelRect.X, questItemChannelRect.Y) > 100){
           this.End(false);
         }
       }
 
-      this.elapsedDuration = this.elapsedDuration + 1/T32_FPS;
-      if (this.elapsedDuration >= this.maxDuration){
+      elapsedDuration = elapsedDuration + 1/T32_FPS;
+      if (elapsedDuration >= maxDuration){
         this.End(true);
       }
     }
@@ -75,27 +75,27 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 
       this.caster = caster;
       this.questItemChannelRect = questItemChannelRect;
-      this.elapsedDuration = 0;
-      this.maxDuration = duration;
+      elapsedDuration = 0;
+      maxDuration = duration;
 
       SetUnitX(caster, questItemChannelRect.X);
       SetUnitY(caster, questItemChannelRect.Y);
-      this.sfxProgress = AddSpecialEffect(PROGRESS_EFFECT, GetUnitX(caster), GetUnitY(caster));
-      BlzSetSpecialEffectTimeScale(this.sfxProgress, 10/duration);
-      BlzSetSpecialEffectColorByPlayer(this.sfxProgress, GetOwningPlayer(caster));
+      sfxProgress = AddSpecialEffect(PROGRESS_EFFECT, GetUnitX(caster), GetUnitY(caster));
+      BlzSetSpecialEffectTimeScale(sfxProgress, 10/duration);
+      BlzSetSpecialEffectColorByPlayer(sfxProgress, GetOwningPlayer(caster));
       BlzSetSpecialEffectScale(sfxProgress, PROGRESS_SCALE);
       BlzSetSpecialEffectHeight(sfxProgress, PROGRESS_HEIGHT + GetPositionZ(questItemChannelRect.X, questItemChannelRect.Y));
-      this.sfx = AddSpecialEffect(EFFECT, GetUnitX(caster), GetUnitY(caster));
+      sfx = AddSpecialEffect(EFFECT, GetUnitX(caster), GetUnitY(caster));
       PauseUnit(caster, true);
       SetUnitAnimation(caster, "channel");
       BlzSetUnitFacingEx(caster, facing);
 
       if (this.questItemChannelRect.ParentQuest.Global == true){
-        this.channelingTimer = CreateTimer();
-        TimerStart(this.channelingTimer, maxDuration, false, null);
-        this.channelingDialog = CreateTimerDialog(this.channelingTimer);
-        TimerDialogSetTitle(this.channelingDialog, this.questItemChannelRect.ParentQuest.Title);
-        TimerDialogDisplay(this.channelingDialog, true);
+        channelingTimer = CreateTimer();
+        TimerStart(channelingTimer, maxDuration, false, null);
+        channelingDialog = CreateTimerDialog(channelingTimer);
+        TimerDialogSetTitle(channelingDialog, this.questItemChannelRect.ParentQuest.Title);
+        TimerDialogDisplay(channelingDialog, true);
       }
 
       this.startPeriodic();
@@ -111,7 +111,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     private Legend targetLegend;
     private Channel channel = 0;
     private float facing ;//Which way the unit faces while it is channeling
-    private int requiredUnitTypeId = 0;
+    private int requiredUnitTypeId;
 
     private static trigger entersRectTrig = CreateTrigger();
     private static int count = 0;
@@ -119,22 +119,22 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     private static group tempGroup = CreateGroup();
 
     float operator X( ){
-      return GetRectCenterX(this.targetRect);
+      return GetRectCenterX(targetRect);
     }
 
     float operator Y( ){
-      return GetRectCenterY(this.targetRect);
+      return GetRectCenterY(targetRect);
     }
 
     //The Unit Type ID the entering unit must have to start channeling
     void operator RequiredUnitTypeId=(int value ){
-      this.requiredUnitTypeId = value;
+      requiredUnitTypeId = value;
     }
 
     private void OnRegionEnter(unit whichUnit ){
-      if (GetOwningPlayer(whichUnit) == this.Holder.Player && UnitAlive(whichUnit) && Legend.ByHandle(GetTriggerUnit()) == this.targetLegend && this.channel == 0 && this.Progress == QUEST_PROGRESS_INCOMPLETE){
-        if (this.requiredUnitTypeId == 0 || this.requiredUnitTypeId == GetUnitTypeId(GetTriggerUnit())){
-          this.channel = Channel.create(whichUnit, this.duration, this.facing, this);
+      if (GetOwningPlayer(whichUnit) == this.Holder.Player && UnitAlive(whichUnit) && Legend.ByHandle(GetTriggerUnit()) == targetLegend && channel == 0 && this.Progress == QUEST_PROGRESS_INCOMPLETE){
+        if (requiredUnitTypeId == 0 || requiredUnitTypeId == GetUnitTypeId(GetTriggerUnit())){
+          channel = Channel.create(whichUnit, duration, facing, this);
         }
       }
     }
@@ -142,16 +142,16 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     //Called by a Channel object to let the QuestItemChannelRect know it has ended.
     //Finished is true if the channel ended successfully, and false if it was interrupted.
     void OnChannelEnd(Channel whichChannel, boolean finished ){
-      if (whichChannel == this.channel){
+      if (whichChannel == channel){
         if (finished){
           this.Progress = QUEST_PROGRESS_COMPLETE;
         }
-        this.channel = 0;
+        channel = 0;
       }
     }
 
     private static void OnAnyRegionEnter( ){
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i == thistype.count){ break; }
         if (GetTriggeringRegion() == thistype.byIndex[i].target){
@@ -164,13 +164,13 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     thistype (rect targetRect, string rectName, Legend whichLegend, float duration, float facing ){
 
       trigger trig = CreateTrigger();
-      this.target = RectToRegion(targetRect);
+      target = RectToRegion(targetRect);
       this.targetRect = targetRect;
-      this.targetLegend = whichLegend;
+      targetLegend = whichLegend;
       this.duration = duration;
       this.Description = "Have " + whichLegend.Name + " channel at " + rectName + " for " + I2S(R2I(duration)) + " seconds";
       this.facing = facing;
-      TriggerRegisterEnterRegion(thistype.entersRectTrig, this.target, null);
+      TriggerRegisterEnterRegion(thistype.entersRectTrig, target, null);
       this.MapEffectPath = TARGET_EFFECT;
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;

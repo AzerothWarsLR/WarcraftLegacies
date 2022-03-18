@@ -37,11 +37,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Goblin
     }
 
     private void OnFail( ){
-      this.GrantGadetzan(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GrantGadetzan(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnComplete( ){
-      this.GrantGadetzan(this.Holder.Player);
+      GrantGadetzan(this.Holder.Player);
       if (GetLocalPlayer() == this.Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\GoblinTheme.mp3" );
       }

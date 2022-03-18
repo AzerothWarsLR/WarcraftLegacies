@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Main.Cheats
   
 
     private static integer Char2Id(string c ){
-      int i = 0;
+      var i = 0;
       string abc = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
       string t;
 
@@ -18,7 +18,8 @@ namespace AzerothWarsCSharp.Source.Main.Cheats
       }
       if (i < 10){
         return i + 48;
-      }else if (i < 36){
+      }
+      if (i < 36){
         return i + 65 - 10;
       }
       return i + 97 - 36;
@@ -34,23 +35,23 @@ namespace AzerothWarsCSharp.Source.Main.Cheats
     }
 
     private static void Actions( ){
-      int i = 0;
+      if (!TestSafety.CheatCondition())
+      {
+        return;
+      }
+      var i = 0;
       string enteredString = GetEventPlayerChatString();
       string parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
       CheckResearch(GetTriggerPlayer(), parameter);
     }
 
-    private static void OnInit( ){
-      trigger trig = CreateTrigger(  );
-      int i = 0;
-
-      while(true){
-        if ( i > MAX_PLAYERS){ break; }
-        TriggerRegisterPlayerChatEvent( trig, Player(i), COMMAND, false );
-        i = i + 1;
+    public static void Setup( ){
+      trigger trig = CreateTrigger();
+      foreach (var player in GeneralHelpers.GetAllPlayers())
+      {
+        TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
       }
-      TriggerAddCondition(trig, ( CheatCondition));
-      TriggerAddAction( trig,  Actions );
+      TriggerAddAction(trig, Actions);
     }
 
   }

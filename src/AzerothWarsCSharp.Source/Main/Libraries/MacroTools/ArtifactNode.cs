@@ -10,7 +10,7 @@
     readonly Artifact whichArtifact;
 
     boolean hasNext( ){
-      if (this.next != 0){
+      if (next != 0){
         return true;
       }
       return false;

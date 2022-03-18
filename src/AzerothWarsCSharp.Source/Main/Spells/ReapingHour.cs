@@ -1,5 +1,3 @@
-using AzerothWarsCSharp.Source.Main.Libraries;
-
 namespace AzerothWarsCSharp.Source.Main.Spells
 {
   public class ReapingHour{
@@ -29,14 +27,14 @@ namespace AzerothWarsCSharp.Source.Main.Spells
   
 
 
-    private effect sfx = null;
-    private float x = 0;
-    private float y = 0;
-    private float face = 0;
+    private effect sfx;
+    private float x;
+    private float y;
+    private float face;
 
     void destroy( ){
-      DestroyEffect(this.sfx);
-      this.sfx = null;
+      DestroyEffect(sfx);
+      sfx = null;
       this.deallocate();
     }
 
@@ -79,12 +77,12 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       DestroyEffect(tempSfx);
       BlzSetSpecialEffectScale(tempSfx, EFFECT_SCALE_SPAWN);
 
-      this.sfx = AddSpecialEffect(EFFECT_PROJ, x, y);
+      sfx = AddSpecialEffect(EFFECT_PROJ, x, y);
       X = x;
       Y = y;
       Face = face;
-      BlzPlaySpecialEffect(this.sfx, ANIM_TYPE_WALK);
-      BlzSetSpecialEffectScale(this.sfx, EFFECT_SCALE_PROJ);
+      BlzPlaySpecialEffect(sfx, ANIM_TYPE_WALK);
+      BlzSetSpecialEffectScale(sfx, EFFECT_SCALE_PROJ);
 
       ;;
     }
@@ -93,14 +91,14 @@ namespace AzerothWarsCSharp.Source.Main.Spells
     //Responsible for handling the movement, damage and expiry of its child ReapProjectiles
 
     private Set reapProjectiles;
-    private unit caster = null;
-    private float curDist = 0;
-    private float maxDist = 0;
-    private float damage = 0;
-    private group hitGroup = null   ;//Units already hit by this ReapingHour
+    private unit caster;
+    private float curDist;
+    private float maxDist;
+    private float damage;
+    private group hitGroup;//Units already hit by this ReapingHour
 
     void destroy( ){
-      int i = 0;
+      var i = 0;
       ReapProjectile reapProjectile;
       DestroyGroup(hitGroup);
       hitGroup = null;
@@ -116,7 +114,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
     }
 
     void hit(ReapProjectile reapProjectile ){
-      int i = 0;
+      var i = 0;
       unit u = null;
       effect tempEffect = null;
       float damageMult = 0;
@@ -124,14 +122,14 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       while(true){
         u = FirstOfGroup(TempGroup);
         if ( u == null){ break; }
-        if (!IsUnitInGroup(u, this.hitGroup) && !IsUnitAlly(u, GetOwningPlayer(this.caster)) && IsUnitAlive(u) && !BlzIsUnitInvulnerable(u) && !IsUnitType(u, UNIT_TYPE_STRUCTURE) && !IsUnitType(u, UNIT_TYPE_ANCIENT)){
+        if (!IsUnitInGroup(u, hitGroup) && !IsUnitAlly(u, GetOwningPlayer(caster)) && IsUnitAlive(u) && !BlzIsUnitInvulnerable(u) && !IsUnitType(u, UNIT_TYPE_STRUCTURE) && !IsUnitType(u, UNIT_TYPE_ANCIENT)){
           damageMult = 1 + ((GetUnitState(u, UNIT_STATE_MAX_LIFE) - GetUnitState(u, UNIT_STATE_LIFE))/GetUnitState(u, UNIT_STATE_MAX_LIFE))*EXECUTE_PERC;
-          UnitDamageTarget(this.caster, u, this.damage*damageMult, false, false, ATTACK_TYPE_NORMAL, DAMAGE_TYPE_MAGIC, WEAPON_TYPE_WHOKNOWS);
+          UnitDamageTarget(caster, u, damage*damageMult, false, false, ATTACK_TYPE_NORMAL, DAMAGE_TYPE_MAGIC, WEAPON_TYPE_WHOKNOWS);
           tempEffect = AddSpecialEffect(EFFECT_HIT, GetUnitX(u), GetUnitY(u));
           BlzSetSpecialEffectScale(tempEffect, EFFECT_SCALE_HIT);
           DestroyEffect(tempEffect);
           tempEffect = null;
-          GroupAddUnit(this.hitGroup, u);
+          GroupAddUnit(hitGroup, u);
         }
         GroupRemoveUnit(TempGroup, u);
       }
@@ -139,7 +137,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
     }
 
     void periodic( ){
-      int i = 0;
+      var i = 0;
       ReapProjectile reapProjectile;
       while(true){
         if ( i == reapProjectiles.size){ break; }
@@ -148,34 +146,34 @@ namespace AzerothWarsCSharp.Source.Main.Spells
         reapProjectile.Y = GetPolarOffsetY(reapProjectile.Y, VELOCITY/T32_FPS, reapProjectile.Face);
         hit(reapProjectile);
         //Begin fadeout near the end of the path
-        if (this.curDist > (this.maxDist - DIST_FADE_START)){
-          reapProjectile.Alpha = R2I(255*( 1 - ( ( this.curDist / this.maxDist ) ) ) );
+        if (curDist > (maxDist - DIST_FADE_START)){
+          reapProjectile.Alpha = R2I(255*( 1 - ( ( curDist / maxDist ) ) ) );
         }
         i = i + 1;
       }
 
       //Ended path
-      if (this.curDist >= this.maxDist){
+      if (curDist >= maxDist){
         this.destroy();
       }
 
-      this.curDist = this.curDist + VELOCITY/T32_FPS;
+      curDist = curDist + VELOCITY/T32_FPS;
     }
 
 
 
     thistype (unit caster, float x, float y, float face, float damage, float maxDist ){
 
-      int i = 0;
+      var i = 0;
       float offsetAngle;
       float offsetDist;
-      int middle = (HORSEMEN_COUNT-1)/2;
+      var middle = (HORSEMEN_COUNT-1)/2;
 
       this.caster = caster;
       this.maxDist = maxDist;
       this.damage = damage;
-      this.hitGroup = CreateGroup();
-      this.reapProjectiles = Set.create("reaping hour");
+      hitGroup = CreateGroup();
+      reapProjectiles = Set.create("reaping hour");
 
       while(true){
         if ( i == HORSEMEN_COUNT){ break; }
@@ -205,11 +203,11 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       float triggerX = 0;
       float triggerY = 0;
       float triggerFace = 0;
-      int i = 0;
+      var i = 0;
       float offsetAngle = 0;
       float offsetDist = 0;
-      int middle = 0;
-      int level = 0;
+      var middle = 0;
+      var level = 0;
       triggerUnit = GetTriggerUnit();
       triggerX = GetUnitX(triggerUnit);
       triggerY = GetUnitY(triggerUnit);
@@ -219,7 +217,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       triggerUnit = null;
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterSpellEffectAction(ABIL_ID,  Cast);
     }
 

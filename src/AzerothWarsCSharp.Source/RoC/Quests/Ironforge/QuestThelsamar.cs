@@ -33,11 +33,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Ironforge
     }
 
     private void OnFail( ){
-      this.GrantThelsamar(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GrantThelsamar(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnComplete( ){
-      this.GrantThelsamar(this.Holder.Player);
+      GrantThelsamar(this.Holder.Player);
     }
 
 

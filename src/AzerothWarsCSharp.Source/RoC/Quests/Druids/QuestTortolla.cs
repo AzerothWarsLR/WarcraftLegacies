@@ -40,7 +40,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Druids
     }
 
 
-    private static void OnInit( ){
+    public static void Setup( ){
       QuestTortolla.sleepingTortolla = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), HERO_ID, -12827, 5729, 333);
       SetUnitInvulnerable(QuestTortolla.sleepingTortolla, true);
       AddSpecialEffectTarget("Abilities\\Spells\\Undead\\Sleep\\SleepTarget.mdl", QuestTortolla.sleepingTortolla, "overhead");

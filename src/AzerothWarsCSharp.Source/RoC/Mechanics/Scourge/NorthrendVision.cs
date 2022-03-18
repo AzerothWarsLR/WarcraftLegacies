@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Scourge
 
     private static void Enable( ){
       player whichPlayer = FACTION_SCOURGE.Player;
-      int i = 0;
+      var i = 0;
       ScourgeFogModifiers[0] = CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, gg_rct_Storm_Peaks, true, true);
       ScourgeFogModifiers[1] = CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, gg_rct_Central_Northrend, true, true);
       ScourgeFogModifiers[2] = CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, gg_rct_The_Basin, true, true);
@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Scourge
     }
 
     private static void Disable( ){
-      int i = 0;
+      var i = 0;
       while(true){
         if ( ScourgeFogModifiers[i] == null){ break; }
         DestroyFogModifier(ScourgeFogModifiers[i]);
@@ -40,7 +40,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Scourge
 
     private static void PersonChangesFaction( ){
       player triggerPlayer;
-      int i = 0;
+      var i = 0;
       if (GetTriggerPerson().Faction == FACTION_SCOURGE){
         Enable();
       }else if (GetChangingPersonPrevFaction() == FACTION_SCOURGE){
@@ -48,7 +48,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Scourge
       }
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       trigger trig = CreateTrigger();
       OnPersonFactionChange.register(trig);
       TriggerAddCondition(trig, ( PersonChangesFaction));

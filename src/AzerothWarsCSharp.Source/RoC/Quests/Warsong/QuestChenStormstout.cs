@@ -5,8 +5,8 @@ using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
 namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
 {
   public class QuestChenStormstout{
-    private const int CHEN_RESEARCH = FourCC(R037);
-    private const int CHEN_ID = FourCC(Nsjs);
+    private readonly int _chenResearch = FourCC("R037");
+    private readonly int _chenId = FourCC("Nsjs");
     
     private string operator CompletionPopup( ){
       return "Chen Stormstout has joined the " + this.Holder.Team.Name + ".";
@@ -22,12 +22,12 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
 
     private void OnComplete( ){
       RemoveUnit(gg_unit_Nsjs_1887);
-      SetPlayerTechResearched(Holder.Player, CHEN_RESEARCH, 1);
+      SetPlayerTechResearched(Holder.Player, _chenResearch, 1);
     }
 
     private void OnAdd( ){
-      this.Holder.ModObjectLimit(CHEN_RESEARCH, UNLIMITED);
-      this.Holder.ModObjectLimit(CHEN_ID, 1);
+      this.Holder.ModObjectLimit(_chenResearch, UNLIMITED);
+      this.Holder.ModObjectLimit(_chenId, 1);
       SetUnitInvulnerable(gg_unit_Nsjs_1887, true);
     }
 

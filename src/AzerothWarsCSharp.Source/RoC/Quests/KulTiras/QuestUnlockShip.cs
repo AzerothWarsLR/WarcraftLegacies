@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.KulTiras
     private void OnFail( ){
       unit u;
       player holderPlayer = this.Holder.Person.Player;
-      LEGEND_KATHERINE.StartingXP = GetHeroXP(LEGEND_KATHERINE.Unit);
+      LEGEND_KATHERINE.StartingXp = GetHeroXP(LEGEND_KATHERINE.Unit);
       this.Holder.obliterate();
       LEGEND_KATHERINE.Spawn(this.Holder.Player, -15223, -22856, 110);
       UnitAddItem(LEGEND_KATHERINE.Unit, CreateItem(FourCC(I00M), GetUnitX(LEGEND_KATHERINE.Unit), GetUnitY(LEGEND_KATHERINE.Unit)));

@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Zandalar
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE) || GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_AGGRESSIVE)){
-          if (IsUnitType(u, UNIT_TYPE_HERO) == true){
+          if (IsUnitType(u, UNIT_TYPE_HERO)){
             KillUnit(u);
           }else {
             UnitRescue(u, this.Holder.Player);

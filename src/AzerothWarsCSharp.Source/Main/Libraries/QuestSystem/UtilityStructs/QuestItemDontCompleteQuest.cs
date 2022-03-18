@@ -12,13 +12,13 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     public void OnQuestProgressChanged( ){
-      if (this.target.Progress == QUEST_PROGRESS_COMPLETE){
+      if (target.Progress == QUEST_PROGRESS_COMPLETE){
         this.Progress = QUEST_PROGRESS_FAILED;
       }
     }
 
     public static void OnAnyQuestProgressChanged( ){
-      int i = 0;
+      var i = 0;
       thistype loopItem;
       while(true){
         if ( i == thistype.count){ break; }
@@ -46,10 +46,10 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 
 
 
-    private static void OnInit( ){
+    public static void Setup( ){
       trigger trig = CreateTrigger();
       QuestProgressChanged.register(trig);
-      TriggerAddAction(trig,  QuestItemDontCompleteQuest.OnAnyQuestProgressChanged);
+      TriggerAddAction(trig,  OnAnyQuestProgressChanged);
     }
 
   }

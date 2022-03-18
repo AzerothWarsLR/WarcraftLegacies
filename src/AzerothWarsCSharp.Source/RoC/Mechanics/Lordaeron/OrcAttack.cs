@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Lordaeron
         }
 
         private static void SpawnAndAttackMultipleUnits(int unitTypeToSpawn, int unitCount ){
-            int i = 0;
+            var i = 0;
             while(true){
                 if ( i == unitCount){ break; }
                 SpawnAndAttack(unitTypeToSpawn);
@@ -48,7 +48,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Lordaeron
             DestroyTimer(GetExpiredTimer());
         }
 
-        private static void OnInit( ){
+        public static void Setup( ){
             JubeiDiesTrigger = CreateTrigger();
             TriggerRegisterUnitEvent(JubeiDiesTrigger, gg_unit_o00B_1316, EVENT_UNIT_DEATH);
             TriggerAddAction(JubeiDiesTrigger,  OnJubeiDies);

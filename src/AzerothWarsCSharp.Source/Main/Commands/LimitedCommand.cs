@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Main.Commands
       Person triggerPerson = Person.ByHandle(GetTriggerPlayer());
       Faction triggerFaction = triggerPerson.Faction;
       group tempGroup = CreateGroup();
-      int i = 0;
+      var i = 0;
       unit u;
       GroupEnumUnitsOfPlayer(tempGroup, triggerPerson.Player, null);
 
@@ -36,9 +36,9 @@ namespace AzerothWarsCSharp.Source.Main.Commands
       tempGroup = null;
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       trigger trig = CreateTrigger(  );
-      int i = 0;
+      var i = 0;
 
       while(true){
         if ( i > MAX_PLAYERS){ break; }

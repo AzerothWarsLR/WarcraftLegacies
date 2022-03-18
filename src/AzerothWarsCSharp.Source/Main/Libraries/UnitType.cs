@@ -60,7 +60,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
 
     //Returns the UnitType representation of a particular UnitTypeId.
     static UnitType GetFromId(int id ){
-      return UnitType.byId[id];
+      return byId[id];
     }
 
     public UnitType(int unitId ){

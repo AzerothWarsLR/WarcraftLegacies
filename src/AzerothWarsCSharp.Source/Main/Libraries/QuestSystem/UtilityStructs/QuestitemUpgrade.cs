@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     private static void OnAnyUpgrade( ){
-      int i = 0;
+      var i = 0;
       thistype loopQuestItem;
       unit triggerUnit = GetTriggerUnit();
       while(true){

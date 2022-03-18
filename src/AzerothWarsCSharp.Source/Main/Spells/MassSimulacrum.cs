@@ -52,7 +52,6 @@ namespace AzerothWarsCSharp.Source.Main.Spells
           DestroyEffect(tempEffect);
           GroupAddUnit(Simulacrums, newUnit);
           newUnit = null;
-        }else {
         }
         GroupRemoveUnit(tempGroup, u);
       }
@@ -77,7 +76,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       u = null;
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_DEATH,  Death);
       RegisterSpellEffectAction(ABIL_ID,  Cast);
 

@@ -1,39 +1,31 @@
-//If a unit with a tech limit of 0 is trained or revived, delete and refund it instantly.
-
-using AzerothWarsCSharp.Source.Main.Libraries;
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using WCSharp.Events;
 
 namespace AzerothWarsCSharp.Source.Main.Game_Logic
 {
-  public class RefundZeroLimitUnits{
-
-    private static void VerifyUnitIntegrity(unit u ){
-      player p = GetOwningPlayer(u);
-      Person tempPerson = Person.ByHandle(p);
-      UnitType tempUnitType = 0;
-      if (tempPerson.GetObjectLimit(GetUnitTypeId(u)) == 0){
-        tempUnitType = UnitType.ByHandle(u);
-        if (tempUnitType != 0){
-          AdjustPlayerStateSimpleBJ(p, PLAYER_STATE_RESOURCE_GOLD, tempUnitType.GoldCost);
-          AdjustPlayerStateSimpleBJ(p, PLAYER_STATE_RESOURCE_LUMBER, tempUnitType.LumberCost);
-        }
-        RemoveUnit(u);
+  /// <summary>
+  /// If a unit with a tech limit of 0 is trained or revived, delete and refund it instantly.
+  /// </summary>
+  public static class RefundZeroLimitUnits
+  {
+    private static void VerifyUnitIntegrity(unit whichUnit)
+    {
+      var player = GetOwningPlayer(whichUnit);
+      var tempPerson = Person.ByHandle(player);
+      if (tempPerson != null && tempPerson.GetObjectLimit(GetUnitTypeId(whichUnit)) == 0)
+      {
+        AdjustPlayerStateSimpleBJ(player, PLAYER_STATE_RESOURCE_GOLD, GetUnitGoldCost(GetUnitTypeId(whichUnit)));
+        AdjustPlayerStateSimpleBJ(player, PLAYER_STATE_RESOURCE_LUMBER, GetUnitWoodCost(GetUnitTypeId(whichUnit)));
+        RemoveUnit(whichUnit);
       }
-      u = null;
-      p = null;
     }
 
-    private static void OnAnyUnitTrained( ){
-      VerifyUnitIntegrity(GetTrainedUnit());
+    public static void Setup()
+    {
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining,
+        () => { VerifyUnitIntegrity(GetTrainedUnit()); });
+      PlayerUnitEvents.Register(PlayerUnitEvent.HeroTypeFinishesRevive,
+        () => { VerifyUnitIntegrity(GetRevivingUnit()); });
     }
-
-    private static void OnAnyUnitRevived( ){
-      VerifyUnitIntegrity(GetRevivingUnit());
-    }
-
-    private static void OnInit( ){
-      PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_TRAIN_FINISH,  OnAnyUnitTrained);
-      PlayerUnitEventAddAction(EVENT_PLAYER_HERO_REVIVE_FINISH,  OnAnyUnitRevived);
-    }
-
   }
 }

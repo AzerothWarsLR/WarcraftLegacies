@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     private int targetKillXUnitCount;
 
     private void operator CurrentKillXUnitCount=(int value ){
-      this.currentKillXUnitCount = value;
+      currentKillXUnitCount = value;
       this.Description = "Kill " + GetObjectName(objectId) + "s (" + I2S(currentKillXUnitCount) + "/" + I2S(targetKillXUnitCount) + ")";
     }
 
@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     private static void OnAnyKillXUnit( ){
-      int i = 0;
+      var i = 0;
       thistype loopQuestItem;
       unit triggerUnit = GetDyingUnit();
       while(true){

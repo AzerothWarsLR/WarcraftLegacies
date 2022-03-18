@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Main.Tests
 
     void Assert(boolean bool, string errormsg ){
       if (!bool){
-        BJDebugMsg("Test" + this.name + " failed. " + errormsg);
+        BJDebugMsg("Test" + name + " failed. " + errormsg);
       }
     }
 
@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.Source.Main.Tests
     thistype (string name ){
 
       trigger trig;
-      int i = 0;
+      var i = 0;
       this.name = name;
 
       trig = CreateTrigger();

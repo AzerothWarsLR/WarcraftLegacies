@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
     BlackEmpirePortal BLACKEMPIREPORTAL_ILLIDAN
   
 
-    private static void OnInit( ){
+    public static void Setup( ){
 
       BLACKEMPIREPORTAL_TWILIGHTHIGHLANDS = BlackEmpirePortal.create(gg_unit_h03V_0396, gg_dest_OTsp_19293, GetRectCenterX(gg_rct_Ny_Twilight_Highlands_Interior), GetRectCenterY(gg_rct_Ny_Twilight_Highlands_Interior), gg_unit_n07F_1069, "Twilight");
       BLACKEMPIREPORTAL_TWILIGHTHIGHLANDS.NearbyControlPoint = ControlPoint.ByUnitType(FourCC(n04V));

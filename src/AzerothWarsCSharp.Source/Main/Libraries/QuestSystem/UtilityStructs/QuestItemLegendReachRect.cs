@@ -20,11 +20,11 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     private static thistype[] byIndex;
 
     float operator X( ){
-      return GetRectCenterX(this.targetRect);
+      return GetRectCenterX(targetRect);
     }
 
     float operator Y( ){
-      return GetRectCenterY(this.targetRect);
+      return GetRectCenterY(targetRect);
     }
 
     string operator PingPath( ){
@@ -32,13 +32,13 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     private void OnRegionEnter(unit whichUnit ){
-      if (UnitAlive(this.legend.Unit) == true && GetTriggerUnit() == this.legend.Unit){
+      if (UnitAlive(legend.Unit) && GetTriggerUnit() == legend.Unit){
         this.Progress = QUEST_PROGRESS_COMPLETE;
       }
     }
 
     private static void OnAnyRegionEnter( ){
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i == thistype.count){ break; }
         if (GetTriggeringRegion() == thistype.byIndex[i].target){
@@ -50,18 +50,18 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 
     thistype (Legend legend, rect targetRect, string rectName ){
 
-      this.target = RectToRegion(targetRect);
+      target = RectToRegion(targetRect);
       this.targetRect = targetRect;
       this.legend = legend;
       this.Description = legend.Name + " reaches " + rectName;
-      TriggerRegisterEnterRegion(thistype.entersRectTrig, this.target, null);
+      TriggerRegisterEnterRegion(thistype.entersRectTrig, target, null);
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
       ;;
     }
 
     private static void onInit( ){
-      TriggerAddAction(thistype.entersRectTrig,  QuestItemLegendReachRect.OnAnyRegionEnter);
+      TriggerAddAction(thistype.entersRectTrig,  OnAnyRegionEnter);
     }
 
 

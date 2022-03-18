@@ -1,30 +1,34 @@
+using AzerothWarsCSharp.Source.Main.Cheats;
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
 namespace AzerothWarsCSharp.Source.Main.Game_Logic
 {
-  public class CleanPersons{
-
-    //Removes players from the game if their slot is unoccupied
-
-    private static void Actions( ){
-      int i = 0;
-      Person loopPerson = 0;
-
-      if (!AreCheatsActive){
-        while(true){
-          if ( i > MAX_PLAYERS){ break; }
-          loopPerson = Person.ById(i);
-          if (loopPerson != 0 && GetPlayerSlotState(Player(i)) != PLAYER_SLOT_STATE_PLAYING && loopPerson.Faction.ScoreStatus == SCORESTATUS_NORMAL){
-            loopPerson.Faction.ScoreStatus = SCORESTATUS_DEFEATED;
-          }
-          i = i + 1;
-        }
-      }
-    }
-
-    private static void OnInit( ){
+  /// <summary>
+  /// Removes players from the game if their slot is unoccupied.
+  /// </summary>
+  public static class CleanPersons
+  {
+    public static void Setup()
+    {
       trigger trig = CreateTrigger();
       TriggerRegisterTimerEvent(trig, 2, false);
-      TriggerAddCondition(trig, ( Actions));
-    }
+      TriggerAddAction(trig, () =>
+      {
+        if (TestSafety.AreCheatsActive)
+        {
+          return;
+        }
 
+        foreach (var player in GetAllPlayers())
+        {
+          var person = Person.ByHandle(player);
+          if (person != null && GetPlayerSlotState(player) != PLAYER_SLOT_STATE_PLAYING &&
+              person.Faction.ScoreStatus == ScoreStatus.SCORESTATUS_NORMAL)
+          {
+            person.Faction.ScoreStatus = ScoreStatus.SCORESTATUS_DEFEATED;
+          }
+        }
+      });
+    }
   }
 }

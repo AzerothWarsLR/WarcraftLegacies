@@ -43,11 +43,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Frostwolf
     }
 
 
-    private static void OnInit( ){
+    public static void Setup( ){
       //Setup initially invulnerable and hidden group at Thunder Bluff
       group tempGroup = CreateGroup();
       unit u;
-      int i = 0;
+      var i = 0;
       ThunderBluffUnits = CreateGroup();
       GroupEnumUnitsInRect(tempGroup, gg_rct_ThunderBluff, null);
       while(true){

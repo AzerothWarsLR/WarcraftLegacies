@@ -4,7 +4,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 
 
     private unit caster;
-    private int spellId = 0;
+    private int spellId;
     private boolean holderOnly = false;
 
     private static int count = 0;
@@ -22,9 +22,9 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     private static void OnAnyUnitFinishesSpell( ){
-      int i = 0;
+      var i = 0;
       thistype loopItem;
-      int spellAbilityId = GetSpellAbilityId();
+      var spellAbilityId = GetSpellAbilityId();
       while(true){
         if ( i == thistype.count){ break; }
         loopItem = thistype.byIndex[i];

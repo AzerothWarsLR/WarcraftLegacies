@@ -41,11 +41,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
     }
 
     private void OnFail( ){
-      this.GiveCrossroads(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GiveCrossroads(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnComplete( ){
-      this.GiveCrossroads(this.Holder.Player);
+      GiveCrossroads(this.Holder.Player);
     }
 
     public  thistype ( ){

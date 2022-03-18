@@ -2,22 +2,22 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.RoC.Legends
 {
-  public class LegendScarlet{
+  public static class LegendScarlet{
 
   
-    Legend LEGEND_BRIGITTE
-    Legend LEGEND_TIRION
+    public static Legend LEGEND_BRIGITTE
+    public static Legend LEGEND_TIRION
   
 
-    private static void OnInit( ){
+    public static void Setup( ){
 
-      LEGEND_BRIGITTE = Legend.create();
+      LEGEND_BRIGITTE = new Legend();
       LEGEND_BRIGITTE.UnitType = FourCC(H00Y);
-      LEGEND_BRIGITTE.StartingXP = 7000;
+      LEGEND_BRIGITTE.StartingXp = 7000;
 
-      LEGEND_TIRION = Legend.create();
+      LEGEND_TIRION = new Legend();
       LEGEND_TIRION.UnitType = FourCC(H09Z);
-      LEGEND_TIRION.StartingXP = 7000;
+      LEGEND_TIRION.StartingXp = 7000;
 
     }
 

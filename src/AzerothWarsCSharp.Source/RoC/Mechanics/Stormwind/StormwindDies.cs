@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Stormwind
       DestroyTrigger(GetTriggeringTrigger());
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       trigger trig = CreateTrigger();
       TriggerRegisterUnitEvent(trig, gg_unit_h00X_0007, EVENT_UNIT_DEATH);
       TriggerAddCondition(trig, ( Dies));

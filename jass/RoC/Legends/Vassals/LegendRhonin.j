@@ -1,11 +1,11 @@
 library LegendRhonin initializer OnInit requires Legend
 
   globals
-    Legend LEGEND_RHONIN
+    public static Legend LEGEND_RHONIN
   endglobals
 
   private function OnInit takes nothing returns nothing
-    set LEGEND_RHONIN = Legend.create()
+    set LEGEND_RHONIN = new Legend()
     set LEGEND_RHONIN.UnitType = 'H04K'
   endfunction
 

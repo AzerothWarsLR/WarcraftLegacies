@@ -33,11 +33,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
     }
 
     private void OnFail( ){
-      this.GrantNethergarde(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GrantNethergarde(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnComplete( ){
-      this.GrantNethergarde(this.Holder.Player);
+      GrantNethergarde(this.Holder.Player);
       FACTION_STORMWIND.ModObjectLimit(FourCC(h03F),1)               ;//Reginald windsor
     }
 

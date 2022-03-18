@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       DummyChannelInstantFromPoint(GetOwningPlayer(GetTriggerUnit()), LOCUSTSWARM_ID, "locustswarm", 1, GetSpellTargetX(), GetSpellTargetY(), 15);
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterSpellEffectAction(ABIL_ID,  Cast);
     }
 

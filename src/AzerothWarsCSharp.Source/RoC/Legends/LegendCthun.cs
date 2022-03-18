@@ -2,36 +2,38 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.RoC.Legends
 {
-  public class LegendCthun{
+  public static class LegendCthun
+  {
+    public static Legend LEGEND_SKERAM;
+    public static Legend LEGEND_GATESAHNQIRAJ;
+    public static Legend LEGEND_CTHUN;
+    public static Legend LEGEND_YOR;
 
-  
-    Legend LEGEND_SKERAM
-    Legend LEGEND_GATESAHNQIRAJ
-    Legend LEGEND_CTHUN
-    Legend LEGEND_YOR
+    public static void Setup()
+    {
+      LEGEND_CTHUN = new Legend
+      {
+        Unit = gg_unit_U00R_0609,
+        PermaDies = true,
+        DeathMessage = "C'thun, God of the Qiraji, was once defeated by the Titans, and again by the combined Dragonflights. " +
+                       "Today he experiences his third defeat his first true death."
+      };
 
-  
+      LEGEND_SKERAM = new Legend
+      {
+        UnitType = FourCC("E005"),
+        PlayerColor = PLAYER_COLOR_RED,
+        Name = "Prophet Skeram"
+      };
 
-    private static void OnInit( ){
+      LEGEND_GATESAHNQIRAJ = new Legend
+      {
+        Unit = gg_unit_h02U_2413
+      };
 
-      LEGEND_CTHUN = Legend.create();
-      LEGEND_CTHUN.Unit = gg_unit_U00R_0609;
-      LEGEND_CTHUN.PermaDies = true;
-      LEGEND_CTHUN.DeathMessage = "CFourCC(thun, God of the Qiraji, was once defeated by the Titans, and){ again by the combined Dragonflights. Today he experiences his third defeat && his first true death.";
-
-      LEGEND_SKERAM = Legend.create();
-      LEGEND_SKERAM.UnitType = FourCC(E005);
-      LEGEND_SKERAM.PlayerColor = PLAYER_COLOR_RED;
-      LEGEND_SKERAM.Name = "Prophet Skeram";
-
-      LEGEND_GATESAHNQIRAJ = Legend.create();
-      LEGEND_GATESAHNQIRAJ.Unit = gg_unit_h02U_2413;
-
-      LEGEND_YOR = Legend.create();
+      LEGEND_YOR = new Legend();
       LEGEND_YOR.UnitType = FourCC(U02A);
-      LEGEND_YOR.StartingXP = 8800;
-
+      LEGEND_YOR.StartingXp = 8800;
     }
-
   }
 }

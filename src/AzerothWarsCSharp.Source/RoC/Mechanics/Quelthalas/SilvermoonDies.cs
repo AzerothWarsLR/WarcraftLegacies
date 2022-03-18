@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Quelthalas
       SetUnitInvulnerable(LEGEND_SUNWELL.Unit, false);
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       trigger trig = CreateTrigger();
       TriggerRegisterUnitEvent(trig, LEGEND_SILVERMOON.Unit, EVENT_UNIT_DEATH);
       TriggerAddCondition(trig, ( Dies));

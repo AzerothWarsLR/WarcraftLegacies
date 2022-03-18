@@ -34,11 +34,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Ironforge
     }
 
     private void OnFail( ){
-      this.GrantDunMorogh(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GrantDunMorogh(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnComplete( ){
-      this.GrantDunMorogh(this.Holder.Player);
+      GrantDunMorogh(this.Holder.Player);
     }
 
 

@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
       while(true){
         if (_researches[i] == 0){ break; }
         if (_researches[i] != GetResearched()){
-          p.ModObjectLimit(this._researches[i], -BIG_NUMBER);
+          p.ModObjectLimit(_researches[i], -BIG_NUMBER);
         }
         i += 1;
       }
@@ -77,7 +77,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
       DoResearch(false);
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_RESEARCH_START,  ResearchStart);
       PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_RESEARCH_CANCEL,  ResearchCancel);
     }

@@ -34,11 +34,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
     }
 
     private void OnFail( ){
-      this.GrantLakeshire(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GrantLakeshire(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnComplete( ){
-      this.GrantLakeshire(this.Holder.Player);
+      GrantLakeshire(this.Holder.Player);
     }
 
     private void OnAdd( ){

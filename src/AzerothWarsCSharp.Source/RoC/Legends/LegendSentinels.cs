@@ -2,42 +2,42 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.RoC.Legends
 {
-  public class LegendSentinels{
+  public static class LegendSentinels{
 
   
-    Legend LEGEND_MAIEV
-    Legend LEGEND_TYRANDE
-    Legend LEGEND_SHANDRIS
-    Legend LEGEND_JAROD
+    public static Legend LEGEND_MAIEV
+    public static Legend LEGEND_TYRANDE
+    public static Legend LEGEND_SHANDRIS
+    public static Legend LEGEND_JAROD
 
-    Legend LEGEND_AUBERDINE
-    Legend LEGEND_FEATHERMOON
+    public static Legend LEGEND_AUBERDINE
+    public static Legend LEGEND_FEATHERMOON
   
 
-    private static void OnInit( ){
-      LEGEND_MAIEV = Legend.create();
+    public static void Setup( ){
+      LEGEND_MAIEV = new Legend();
       LEGEND_MAIEV.UnitType = FourCC(Ewrd);
 
-      LEGEND_AUBERDINE = Legend.create();
+      LEGEND_AUBERDINE = new Legend();
       LEGEND_AUBERDINE.Unit = gg_unit_e00J_0320;
       LEGEND_AUBERDINE.IsCapital = true;
 
-      LEGEND_FEATHERMOON = Legend.create();
+      LEGEND_FEATHERMOON = new Legend();
       LEGEND_FEATHERMOON.Unit = gg_unit_e00M_2545;
       LEGEND_FEATHERMOON.IsCapital = true;
 
-      LEGEND_TYRANDE = Legend.create();
+      LEGEND_TYRANDE = new Legend();
       LEGEND_TYRANDE.UnitType = FourCC(Etyr);
       LEGEND_TYRANDE.PlayerColor = PLAYER_COLOR_CYAN;
       LEGEND_TYRANDE.Essential = true;
 
-      LEGEND_SHANDRIS = Legend.create();
+      LEGEND_SHANDRIS = new Legend();
       LEGEND_SHANDRIS.UnitType = FourCC(E002);
-      LEGEND_SHANDRIS.StartingXP = 1000;
+      LEGEND_SHANDRIS.StartingXp = 1000;
 
-      LEGEND_JAROD = Legend.create();
+      LEGEND_JAROD = new Legend();
       LEGEND_JAROD.UnitType = FourCC(O02E);
-      LEGEND_JAROD.StartingXP = 4000;
+      LEGEND_JAROD.StartingXp = 4000;
     }
 
   }

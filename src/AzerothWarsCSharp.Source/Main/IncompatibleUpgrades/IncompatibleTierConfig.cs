@@ -4,7 +4,7 @@ namespace AzerothWarsCSharp.Source.Main.IncompatibleUpgrades
 {
   public class IncompatibleTierConfig{
 
-    private static void OnInit( ){
+    public static void Setup( ){
       IncompatibleResearchSet researchSet = 0;
 
 

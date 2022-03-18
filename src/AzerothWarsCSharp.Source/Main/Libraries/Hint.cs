@@ -11,6 +11,17 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
     private static readonly HashSet<Hint> Unread = new();
     private readonly string _msg;
 
+    public Hint(string msg)
+    {
+      _msg = msg;
+    }
+    
+    public static void Register(Hint hint)
+    {
+      All.Add(hint);
+      Unread.Add(hint);
+    }
+    
     private void Display()
     {
       Libraries.Display.DisplayHint(GetLocalPlayer(), _msg);
@@ -23,13 +34,6 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
       {
         Unread.ElementAt(GetRandomInt(0, Unread.Count - 1)).Display();
       }
-    }
-
-    private Hint(string msg)
-    {
-      _msg = msg;
-      All.Add(this);
-      Unread.Add(this);
     }
 
     private static void DisplayRandomHints()

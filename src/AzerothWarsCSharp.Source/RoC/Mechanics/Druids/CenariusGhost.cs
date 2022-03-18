@@ -1,23 +1,28 @@
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.RoC.Legends;
+using AzerothWarsCSharp.Source.RoC.Setup.FactionSetup;
+
 namespace AzerothWarsCSharp.Source.RoC.Mechanics.Druids
 {
-  public class CenariusGhost{
-
-    private static void Dies( ){
-      if (LEGEND_CENARIUS == GetTriggerLegend() && GetTriggerLegend().UnitType == UNITTYPE_CENARIUS_ALIVE){
-        LEGEND_CENARIUS.UnitType = UNITTYPE_CENARIUS_GHOST;
-        LEGEND_CENARIUS.PermaDies = false;
-        LEGEND_CENARIUS.ClearUnitDependencies();
-        LEGEND_CENARIUS.Spawn(FACTION_DRUIDS.Player, GetRectCenterX(gg_rct_Cenarius), GetRectCenterY(gg_rct_Cenarius), 270);
-        DestroyTrigger(GetTriggeringTrigger());
+  public static class CenariusGhost
+  {
+    private static void Dies(object? sender, Legend legend)
+    {
+      var cenarius = LegendDruids.LEGEND_CENARIUS;
+      if (cenarius == legend && legend.UnitType == LegendDruids.UNITTYPE_CENARIUS_ALIVE)
+      {
+        cenarius.UnitType = LegendDruids.UNITTYPE_CENARIUS_GHOST;
+        cenarius.PermaDies = false;
+        cenarius.ClearUnitDependencies();
+        cenarius.Spawn(DruidsSetup.FACTION_DRUIDS.Player, Regions.Cenarius.Center.X, Regions.Cenarius.Center.Y, 270);
       }
     }
 
-    private static void OnInit( ){
-      trigger trig = CreateTrigger();
-      OnLegendPermaDeath.register(trig);
-      TriggerAddCondition(trig, ( Dies));
-      LEGEND_CENARIUS.DeathMessage = "Cenarius, Demigod of the Night Elves, has fallen. His spirit lives on, a mere echo of his former self.";
+    public static void Setup()
+    {
+      Legend.OnLegendPermaDeath += Dies;
+      LegendDruids.LEGEND_CENARIUS.DeathMessage =
+        "Cenarius, Demigod of the Night Elves, has fallen. His spirit lives on, a mere echo of his former self.";
     }
-
   }
 }

@@ -13,8 +13,8 @@ namespace AzerothWarsCSharp.Source.Main.Spells
   
 
     private static void Cast( ){
-      int i = 0;
-      float angle = ANGLE_OFFSET;
+      var i = 0;
+      var angle = ANGLE_OFFSET;
       unit summonedUnit;
       float x;
       float y;
@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       }
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterSpellEffectAction(ABIL_ID,  Cast);
     }
 

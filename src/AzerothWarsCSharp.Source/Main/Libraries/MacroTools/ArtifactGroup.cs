@@ -29,15 +29,15 @@
     }
 
     void destroy( ){
-      this.clear();
-      this.artifactNodesByArtifact.destroy();
+      clear();
+      artifactNodesByArtifact.destroy();
       this.deallocate();
     }
 
     void clear( ){
       ArtifactNode tempArtifactNode = 0;
       while(true){
-        if ( this.last == 0){ break; }
+        if ( last == 0){ break; }
         tempArtifactNode = this.last;
         this.last = this.last.prev;
         tempArtifactNode.destroy();
@@ -45,20 +45,20 @@
     }
 
     void remove(Artifact whichArtifact ){
-      ArtifactNode tempArtifactNode = this.artifactNodesByArtifact[whichArtifact];
+      ArtifactNode tempArtifactNode = artifactNodesByArtifact[whichArtifact];
 
       tempArtifactNode.prev.next = tempArtifactNode.next;
       tempArtifactNode.next.prev = tempArtifactNode.prev;
 
-      if (this.first == tempArtifactNode){
+      if (first == tempArtifactNode){
         this.first = tempArtifactNode.next;
       }
 
-      if (this.last == tempArtifactNode){
+      if (last == tempArtifactNode){
         this.last = tempArtifactNode.prev;
       }
 
-      this.artifactNodesByArtifact[whichArtifact] = 0;
+      artifactNodesByArtifact[whichArtifact] = 0;
 
       tempArtifactNode.destroy();
     }
@@ -70,23 +70,23 @@
       newArtifactNode.prev = this.last;
       this.last = newArtifactNode;
 
-      if (this.first == 0){
+      if (first == 0){
         this.first = newArtifactNode;
       }
 
-      this.artifactNodesByArtifact[whichArtifact] = newArtifactNode;
+      artifactNodesByArtifact[whichArtifact] = newArtifactNode;
     }
 
     thistype ( ){
 
 
-      this.artifactNodesByArtifact = Table.create();
+      artifactNodesByArtifact = Table.create();
 
       ;;
     }
 
     static void onInit( ){
-      int i = 0;
+      var i = 0;
       while(true){
         if ( i > MAX_PLAYERS){ break; }
         thistype.artifactGroupsByPlayerId[i] = thistype.create()    ;//These should really get destroyed at some point if the Person gets destroyed

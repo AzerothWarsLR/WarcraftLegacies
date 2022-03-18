@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       DummyCastOnUnitsInCircle(GetTriggerUnit(), INVIS_ID, "invisibility", 1, GetSpellTargetX(), GetSpellTargetY(), RADIUS, CastFilter.ElunesGazeFilter);
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterSpellEffectAction(ABIL_ID,  Cast);
     }
 

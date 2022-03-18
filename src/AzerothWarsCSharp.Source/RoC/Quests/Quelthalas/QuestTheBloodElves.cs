@@ -43,7 +43,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
       unit u;
       player holderPlayer = this.Holder.Person.Player;
       Legend triggerLegend = GetTriggerLegend();
-      LEGEND_KAEL.StartingXP = GetHeroXP(LEGEND_ANASTERIAN.Unit);
+      LEGEND_KAEL.StartingXp = GetHeroXP(LEGEND_ANASTERIAN.Unit);
       this.Holder.obliterate();
       if (this.Holder.ScoreStatus != SCORESTATUS_DEFEATED){
         while(true){
@@ -73,7 +73,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
       //Setup initially invulnerable and hidden group at Dalaran Dungeons
       group tempGroup = CreateGroup();
       unit u;
-      int i = 0;
+      var i = 0;
       thistype.SecondChanceUnits = CreateGroup();
       GroupEnumUnitsInRect(tempGroup, gg_rct_BloodElfSecondChanceSpawn, null);
       while(true){

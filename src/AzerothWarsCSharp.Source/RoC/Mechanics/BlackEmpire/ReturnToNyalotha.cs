@@ -7,8 +7,8 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
   
 
     private static void ReturnUnitToNyalotha(unit whichUnit ){
-      float angle = GetRandomReal(0, 360);
-      float distance = GetRandomReal(100, 400);
+      var angle = GetRandomReal(0, 360);
+      var distance = GetRandomReal(100, 400);
       float x = GetPolarOffsetX(-25543, distance, angle);
       float y = GetPolarOffsetY(-1962, distance, angle);
 

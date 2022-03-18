@@ -8,9 +8,9 @@ namespace AzerothWarsCSharp.Source.Main.Game_Logic.GameEnd
 
     private static void OnTeamScoreStatusChanged( ){
       Team loopTeam;
-      int i = 0;
+      var i = 0;
       Team victoriousTeam = 0;
-      int total = 0;
+      var total = 0;
       if (!GameWon && GetTriggerTeam().ScoreStatus == SCORESTATUS_DEFEATED){
         while(true){
           if ( i == Team.Count || total > 1){ break; }
@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Main.Game_Logic.GameEnd
       }
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       trigger trig = CreateTrigger();
       TeamScoreStatusChanged.register(trig);
       TriggerAddAction(trig,  OnTeamScoreStatusChanged);

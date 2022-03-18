@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
       DestroyEffect(AddSpecialEffect(EFFECT,GetUnitX(caster),GetUnitY(caster)));
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       RegisterSpellEffectAction(ABIL_ID,  Cast);
     }
 

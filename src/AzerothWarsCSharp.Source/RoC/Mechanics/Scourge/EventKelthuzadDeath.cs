@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Scourge
     //This experience is given to Kel)thuzad (Lich) in QuestKelthuzadLich
 
   
-    int KelthuzadExp = 0;
+    int KelthuzadExp;
     private const int GHOST_ID = FourCC(uktg);
   
 
@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Scourge
       }
     }
 
-    private static void OnInit( ){
+    public static void Setup( ){
       trigger trig = CreateTrigger();
       OnLegendPermaDeath.register(trig);
       TriggerAddCondition(trig, ( Dies));

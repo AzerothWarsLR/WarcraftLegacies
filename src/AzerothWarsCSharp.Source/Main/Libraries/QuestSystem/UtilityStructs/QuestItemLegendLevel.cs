@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 
 
     private Legend target = 0;
-    private int level = 0;
+    private int level;
     private static int count = 0;
     private static thistype[] byIndex;
 
@@ -21,13 +21,13 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     private void OnLevel( ){
-      if (GetHeroLevel(this.target.Unit) >= this.level){
+      if (GetHeroLevel(target.Unit) >= level){
         this.Progress = QUEST_PROGRESS_COMPLETE;
       }
     }
 
     private static void OnAnyLevel( ){
-      int i = 0;
+      var i = 0;
       thistype loopItem;
       Legend triggerLegend = Legend.ByHandle(GetTriggerUnit());
       while(true){
