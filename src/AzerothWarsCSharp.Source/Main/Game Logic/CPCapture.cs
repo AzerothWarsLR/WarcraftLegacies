@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Main.Game_Logic
       unit attacker = GetEventDamageSource();
       unit attacked = GetTriggerUnit();
 
-      if (IsUnitInGroup(GetTriggerUnit(), ControlPoint.ControlPoints))
+      if (IsUnitInGroup(GetTriggerUnit(), ControlPoint.AllControlPointUnits))
       {
         var hp = (GetUnitState(attacked, UNIT_STATE_LIFE) - GetEventDamage()) /
                  GetUnitState(attacked, UNIT_STATE_MAX_LIFE);

@@ -35,7 +35,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.BlackEmpire
         SetUnitInvulnerable(unit, true);
         _rescueUnits.Add(unit);
       }
-      AddQuestItem(new QuestItemObelisk(ControlPoint.ByUnitType(FourCC("n02S"))));
+      AddQuestItem(new QuestItemObelisk(ControlPoint.GetFromUnitType(FourCC("n02S"))));
     }
   }
 }

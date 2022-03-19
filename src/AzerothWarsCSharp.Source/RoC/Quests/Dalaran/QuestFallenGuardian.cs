@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
     public  thistype ( ){
       thistype this = thistype.allocate("The Fallen Guardian", "MedivhFourCC(s body was corrupted by Sargeras at conception. Now that he is dead, the secrets of the Tomb of Sargeras && Sargeras combined might allow the mages of Dalaran to cleanse his spirit.", "ReplaceableTextures\\CommandButtons\\BTNMedivh.blp");
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_KARAZHAN, false));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n00J))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n00J))));
       this.ResearchId = FourCC(R04K);
       ;;
     }

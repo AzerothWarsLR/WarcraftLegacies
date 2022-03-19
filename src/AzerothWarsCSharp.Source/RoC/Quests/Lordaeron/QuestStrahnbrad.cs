@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Defense of Strahnbrad", "The Strahnbrad is under attack by some brigands, clear them out", "ReplaceableTextures\\CommandButtons\\BTNFarm.blp");
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n01C))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01C))));
       this.AddQuestItem(QuestItemExpire.create(1170));
       this.AddQuestItem(QuestItemSelfExists.create());
       ;;

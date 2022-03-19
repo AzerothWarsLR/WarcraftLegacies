@@ -52,9 +52,9 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
 
     public  thistype ( ){
       thistype this = thistype.allocate("Blackrock Unification", "Make contact with the Blackrock clan && convince them to join Magtheridon", "ReplaceableTextures\\CommandButtons\\BTNBlackhand.blp");
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n00S))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n09Y))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n0A9))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n00S))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n09Y))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n0A9))));
       this.AddQuestItem(QuestItemExpire.create(1451));
       this.AddQuestItem(QuestItemSelfExists.create());
       ;;

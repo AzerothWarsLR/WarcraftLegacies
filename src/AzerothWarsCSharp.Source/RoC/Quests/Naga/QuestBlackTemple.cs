@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
     public  thistype ( ){
       thistype this = thistype.allocate("The Lord of Outland", "The Fel Horde is weak && complacent. The Illidari will easily subjugate them into IllidanFourCC(s service.", "ReplaceableTextures\\CommandButtons\\BTNMetamorphosis.blp");
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_BLACKTEMPLE, false));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n00R))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n00R))));
       this.AddQuestItem(QuestItemResearch.create(FourCC(R063), )n055)));
       ;;
     }

@@ -77,15 +77,19 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       }
     }
 
-    integer operator ControlPointCount( ){
-      ;.controlPointCount;
-    }
-
-    void operator ControlPointCount=(int value ){
-      if ((value < 0)){
-        BJDebugMsg("ERROR: Tried to assign a negative ControlPoint counter to " + GetPlayerName(this.p));
+    public int ControlPointCount
+    {
+      get
+      {
+        return this.controlPointCount;
       }
-      controlPointCount = value;
+      set
+      {
+        if ((value < 0)){
+          BJDebugMsg("ERROR: Tried to assign a negative ControlPoint counter to " + GetPlayerName(this.p));
+        }
+        controlPointCount = value;
+      }
     }
 
     integer GetObjectLevel(int object ){
@@ -149,7 +153,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       ;type.byId[id];
     }
 
-    public static Person? ByHandle(player whichPlayer ){
+    public static Person ByHandle(player whichPlayer ){
       ;type.byId[GetPlayerId(whichPlayer)];
     }
 

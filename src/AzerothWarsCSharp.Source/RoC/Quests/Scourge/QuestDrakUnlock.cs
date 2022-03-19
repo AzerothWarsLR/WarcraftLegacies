@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
 
     public  thistype ( ){
       thistype this = thistype.allocate("DrakFourCC(taron Keep", "Drak)taron)s Keep will be the place for an outpost by the sea.", "ReplaceableTextures\\CommandButtons\\BTNUndeadShipyard.blp");
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n030))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n030))));
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_DRAKTHARONKEEP, false));
       this.AddQuestItem(QuestItemExpire.create(1140));
       this.AddQuestItem(QuestItemSelfExists.create());

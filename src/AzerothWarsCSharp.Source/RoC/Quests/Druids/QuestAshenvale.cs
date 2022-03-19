@@ -51,9 +51,9 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Druids
     public  thistype ( ){
       thistype this = thistype.allocate("The Spirits of Ashenvale", "The forest needs healing. Regain control of it to summon itFourCC(s Guardian, the Demigod Cenarius", "ReplaceableTextures\\CommandButtons\\BTNKeeperC.blp");
       this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_MALFURION, gg_rct_AshenvaleUnlock, "Ashenvale"));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n07C))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n01Q))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n08U))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n07C))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01Q))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n08U))));
       this.AddQuestItem(QuestItemUpgrade.create(FourCC(etoa), )etol)));
       this.AddQuestItem(QuestItemExpire.create(1440));
       this.AddQuestItem(QuestItemSelfExists.create());

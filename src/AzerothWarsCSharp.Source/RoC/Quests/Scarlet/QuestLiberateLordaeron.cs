@@ -54,10 +54,10 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scarlet
     public  thistype ( ){
       thistype this = thistype.allocate("Liberation of Lordaeron", "The lands of Lordaeron are overrun by corruption. Everything must be purged!", "ReplaceableTextures\\CommandButtons\\BTNNorthrendCastle.blp");
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_BRIGITTE, false));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n01F))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n03P))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n01H))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n01M))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01F))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n03P))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01H))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01M))));
       this.AddQuestItem(QuestItemSelfExists.create());
       this.ResearchId = QUESTRESEARCH_ID;
       ;;

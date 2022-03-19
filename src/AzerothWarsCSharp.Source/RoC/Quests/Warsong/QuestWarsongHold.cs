@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
     }
 
     protected override void OnComplete(){
-      unit boreanTundra = ControlPoint.ByUnitType(FourCC(n00G)).Unit;
+      unit boreanTundra = ControlPoint.GetFromUnitType(FourCC(n00G)).Unit;
       unit warsongHold;
       KillNeutralHostileUnitsInRadius(GetUnitX(boreanTundra), GetUnitY(boreanTundra), 2300);
       //Spawn the base

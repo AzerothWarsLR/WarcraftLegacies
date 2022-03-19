@@ -58,8 +58,8 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
     public  thistype ( ){
       thistype this = thistype.allocate("The Citadel", "The clans holding Hellfire Citadel do !respect Kargath authority yet, destroy Murmur to finally establish Magtheridon as the undisputable king of Outland", "ReplaceableTextures\\CommandButtons\\BTNFelOrcFortress.blp");
       this.AddQuestItem(QuestItemLegendDead.create(LEGEND_EXODARSHIP));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n01J))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n02N))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01J))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n02N))));
       this.AddQuestItem(QuestItemUpgrade.create(FourCC(o030), )o02Y)));
       this.AddQuestItem(QuestItemExpire.create(1450));
       this.AddQuestItem(QuestItemSelfExists.create());

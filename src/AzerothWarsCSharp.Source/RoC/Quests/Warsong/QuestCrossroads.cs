@@ -51,7 +51,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
     public  thistype ( ){
       thistype this = thistype.allocate("The Crossroads", "The Horde still needs to establish a strong strategic foothold into Kalimdor. There is an opportune crossroads nearby.", "ReplaceableTextures\\CommandButtons\\BTNBarracks.blp");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_nrzm_0113)) ;//Razorman Medicine Man
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n01T))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01T))));
       this.AddQuestItem(QuestItemExpire.create(1460));
       this.AddQuestItem(QuestItemSelfExists.create());
       ;;

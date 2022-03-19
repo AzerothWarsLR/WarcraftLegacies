@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Zandalar
       thistype this = thistype.allocate("The Binding of the Soulflayer", "Hakkar is the most dangerous && powerful of the Troll gods. Only by fusing the Demon Soul would the Zandalari be able to control Hakkar && bind him to their will.", "ReplaceableTextures\\CommandButtons\\BTNWindSerpent2blp");
       this.AddQuestItem(QuestItemAcquireArtifact.create(ARTIFACT_ZINROKH));
       this.AddQuestItem(QuestItemArtifactInRect.create(ARTIFACT_ZINROKH, gg_rct_DrownedTemple, "The Drowned Temple"));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n00U))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n00U))));
       ;;
     }
 

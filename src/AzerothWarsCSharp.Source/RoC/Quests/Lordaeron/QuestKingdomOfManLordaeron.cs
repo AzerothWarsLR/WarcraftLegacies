@@ -50,8 +50,8 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
       this.AddQuestItem(QuestItemAcquireArtifact.create(ARTIFACT_CROWNLORDAERON));
       this.AddQuestItem(QuestItemAcquireArtifact.create(ARTIFACT_CROWNSTORMWIND));
       this.AddQuestItem(QuestItemLegendDead.create(LEGEND_LICHKING));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n010))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n01G))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n010))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01G))));
       ;;
     }
 

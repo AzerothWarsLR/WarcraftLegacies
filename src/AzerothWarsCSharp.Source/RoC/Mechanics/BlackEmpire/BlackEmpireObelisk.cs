@@ -55,7 +55,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
 
     public static void OnAnyStartChannel( ){
       unit caster = GetTriggerUnit();
-      ControlPoint controlPoint = ControlPoint.ByHandle(GetSpellTargetUnit());
+      ControlPoint controlPoint = ControlPoint.GetFromUnit(GetSpellTargetUnit());
       if (controlPoint != 0 && controlPoint == BlackEmpirePortal.Objective.NearbyControlPoint){
         thistype.byCaster[GetUnitId(caster)] = thistype.create(caster, controlPoint, DURATION);
         SetUnitInvulnerable(caster, false);

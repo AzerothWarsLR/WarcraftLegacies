@@ -53,9 +53,9 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.BlackEmpire
 
     public  thistype ( ){
       thistype this = thistype.allocate("Merging of Realities", "Reality frays at the seams as madness threatents to overtake it. Once an Obelisk has been established in the Twilight Highlands, the mirror worlds of Azeroth && NyFourCC(alotha will finally be one, && the Black Empire will be unleashed.", "ReplaceableTextures\\CommandButtons\\BTNHorrorSoul.blp");
-      this.AddQuestItem(QuestItemObelisk.create(ControlPoint.ByUnitType(FourCC(n02S))));
-      this.AddQuestItem(QuestItemObelisk.create(ControlPoint.ByUnitType(FourCC(n04V))));
-      this.AddQuestItem(QuestItemObelisk.create(ControlPoint.ByUnitType(FourCC(n0BD))));
+      this.AddQuestItem(QuestItemObelisk.create(ControlPoint.GetFromUnitType(FourCC(n02S))));
+      this.AddQuestItem(QuestItemObelisk.create(ControlPoint.GetFromUnitType(FourCC(n04V))));
+      this.AddQuestItem(QuestItemObelisk.create(ControlPoint.GetFromUnitType(FourCC(n0BD))));
       this.AddQuestItem(QuestItemExpire.create(1800));
       ;;
     }

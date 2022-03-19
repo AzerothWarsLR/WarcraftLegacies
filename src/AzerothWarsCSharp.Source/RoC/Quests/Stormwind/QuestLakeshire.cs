@@ -47,7 +47,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
     public  thistype ( ){
       thistype this = thistype.allocate("Marauding Ogres", "The town of Lakeshire is invaded by Ogres, wipe them out!", "ReplaceableTextures\\CommandButtons\\BTNOgreLord.blp");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_nogl_0621)) ;//Ogre Lord
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n011))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n011))));
       this.AddQuestItem(QuestItemExpire.create(1427));
       this.AddQuestItem(QuestItemSelfExists.create());
       ;;

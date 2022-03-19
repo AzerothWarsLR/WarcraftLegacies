@@ -31,7 +31,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
 
     public  thistype ( ){
 
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n02R))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n02R))));
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_DRAKTHARONKEEP, false));
       ;;
     }

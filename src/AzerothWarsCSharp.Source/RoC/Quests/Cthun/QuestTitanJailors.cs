@@ -33,8 +33,8 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Cthun
     public  thistype ( ){
       thistype this = thistype.allocate("Jailors of the Old God", "The Old God CFourCC(thun is imprisoned deep within the temple of Ahn)qiraj, defended by mechanical wardens left behind by the Titans.", "ReplaceableTextures\\CommandButtons\\BTNArmorGolem.blp");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_nsgg_1490)) ;//Golem
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n02K))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n078))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n02K))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n078))));
       this.AddQuestItem(QuestItemExpire.create(1428));
       this.AddQuestItem(QuestItemSelfExists.create());
       this.ResearchId = QUEST_RESEARCH_ID;

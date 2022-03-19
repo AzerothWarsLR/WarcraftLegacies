@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.BlackEmpire
 
     public  thistype ( ){
       thistype this = thistype.allocate("Second Obelisk", "The convergence of floatities grows ever closer. An Obelisk must be established in Uldum.", "ReplaceableTextures\\CommandButtons\\BTNIceCrownObelisk.blp");
-      this.AddQuestItem(QuestItemObelisk.create(ControlPoint.ByUnitType(FourCC(n0BD))));
+      this.AddQuestItem(QuestItemObelisk.create(ControlPoint.GetFromUnitType(FourCC(n0BD))));
       ;;
     }
 

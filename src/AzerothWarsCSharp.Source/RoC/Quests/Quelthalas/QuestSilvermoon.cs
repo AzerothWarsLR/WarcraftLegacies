@@ -60,8 +60,8 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
     public  thistype ( ){
       thistype this = thistype.allocate("The Siege of Silvermoon", "Silvermoon has been besieged by Trolls. Clear them out && destroy their city of ZulFourCC(aman.", "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_O00O_1933)) ;//Zul)jin
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n01V))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n01L))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01V))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01L))));
       this.AddQuestItem(QuestItemUpgrade.create(FourCC(h03T), )h033)));
       this.AddQuestItem(QuestItemExpire.create(1480));
       this.AddQuestItem(QuestItemSelfExists.create());

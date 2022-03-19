@@ -26,9 +26,9 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
     public  thistype ( ){
       thistype this = thistype.allocate("Argus Incursion", "The planet of Argus is !fully under the control of the Legion. Bring it under control!", "ReplaceableTextures\\CommandButtons\\BTNMastersLodge.blp");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_h09U_3138)) ;//Knight
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n0BF))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n0BH))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n0BG))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n0BF))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n0BH))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n0BG))));
       this.AddQuestItem(QuestItemSelfExists.create());
       this.ResearchId = QUESTRESEARCH_ID;
       ;;

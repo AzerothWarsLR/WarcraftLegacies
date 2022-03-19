@@ -22,8 +22,8 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scarlet
     public  thistype ( ){
       //Todo: what fight, flavour wise? Is it the Third War?
       thistype this = thistype.allocate("Arathi Volunteers", "The men of Stromgrade should join us in the fight.", "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionCastle.blp");
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n01K))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n01Z))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01K))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01Z))));
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

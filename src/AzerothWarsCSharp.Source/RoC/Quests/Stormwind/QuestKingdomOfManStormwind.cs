@@ -51,8 +51,8 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
       this.AddQuestItem(QuestItemAcquireArtifact.create(ARTIFACT_CROWNLORDAERON));
       this.AddQuestItem(QuestItemAcquireArtifact.create(ARTIFACT_CROWNSTORMWIND));
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_BLACKTEMPLE, false));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n010))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n01G))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n010))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01G))));
       ;;
     }
 

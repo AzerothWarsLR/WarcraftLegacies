@@ -36,9 +36,9 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
 
     public  thistype ( ){
       thistype this = thistype.allocate("War of the Spider", "The proud Nerubians have declared war on the newly formed Lich King, destroy them to secure the continent of Northrend.", "ReplaceableTextures\\CommandButtons\\BTNNerubianQueen.blp");
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n00I))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n08D))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n00G))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n00I))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n08D))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n00G))));
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_n074_1565)) ;//Nezar)azret
       this.AddQuestItem(QuestItemUpgrade.create(FourCC(unp2), )unpl)));
       this.AddQuestItem(QuestItemExpire.create(1480));
