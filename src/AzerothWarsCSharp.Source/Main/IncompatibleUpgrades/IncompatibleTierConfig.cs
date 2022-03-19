@@ -6,8 +6,7 @@ namespace AzerothWarsCSharp.Source.Main.IncompatibleUpgrades
 
     public static void Setup( ){
       IncompatibleResearchSet researchSet = 0;
-
-
+      
       //Stormwind Tier 1 (Champion Hall)
       researchSet = IncompatibleResearchSet.create();
       researchSet.Add(FourCC(R02Y))    ;//Battle Tactics

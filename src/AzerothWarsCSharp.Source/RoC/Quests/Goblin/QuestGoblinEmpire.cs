@@ -1,39 +1,27 @@
 using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
 using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.RoC.Quests.Goblin
 {
-  public class QuestGoblinEmpire{
+  public sealed class QuestGoblinEmpire : QuestData
+  {
+    protected override string CompletionPopup => "With all the Goblin towns united, a new empire rises!";
 
-  
-    private const int QUEST_RESEARCH_ID = FourCC(R07F)   ;//This research is given when the quest is completed
-  
+    protected override string CompletionDescription => "Unlock the Intercontinental Artillery";
 
-
-    private string operator CompletionPopup( ){
-      return "With all the Goblin towns united, a new empire rises!";
+    public QuestGoblinEmpire() : base("Goblin Empire",
+      "All the Goblin syndicatesFourCC( towns must be reunited under one banner.",
+      "ReplaceableTextures\\CommandButtons\\BTNGoblinWarZeppelin.blp")
+    {
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.ByUnitType(FourCC("n01X"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.ByUnitType(FourCC("n00L"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.ByUnitType(FourCC("n07Y"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.ByUnitType(FourCC("n01E"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.ByUnitType(FourCC("n04Z"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.ByUnitType(FourCC("n05C"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.ByUnitType(FourCC("n0A6"))));
+      ResearchId = FourCC("R07F");
     }
-
-    private string operator CompletionDescription( ){
-      return "Unlock the Intercontinental Artillery";
-    }
-
-    private void OnComplete( ){
-    }
-
-    public  thistype ( ){
-      thistype this = thistype.allocate("Goblin Empire", "All the Goblin syndicatesFourCC( towns must be reunited under one banner.", "ReplaceableTextures\\CommandButtons\\BTNGoblinWarZeppelin.blp");
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n01X))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n00L))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n07Y))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n01E))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n04Z))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n05C))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.ByUnitType(FourCC(n0A6))));
-      this.ResearchId = QUEST_RESEARCH_ID;
-      ;;
-    }
-
-
   }
 }

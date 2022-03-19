@@ -1,8 +1,11 @@
+using AzerothWarsCSharp.Source.RoC.Setup.FactionSetup;
+
 namespace AzerothWarsCSharp.Source.RoC.Setup
 {
-  public class AllFactionSetup{
-
-    public static void OnInit( ){
+  public static class AllFactionSetup
+  {
+    public static void Setup()
+    {
       ScourgeSetup_OnInit();
       LegionSetup_OnInit();
       LordaeronSetup_OnInit();
@@ -19,7 +22,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup
       NagaSetup_OnInit();
       GilneasSetup_OnInit();
       TrollSetup_OnInit();
-      GoblinSetup_OnInit();
+      GoblinSetup.Setup();
       TwilightSetup_OnInit();
       ScarletSetup_OnInit();
       CthunSetup_OnInit();
@@ -27,6 +30,5 @@ namespace AzerothWarsCSharp.Source.RoC.Setup
       BlackEmpireSetup_OnInit();
       DraeneiSetup_OnInit();
     }
-
   }
 }

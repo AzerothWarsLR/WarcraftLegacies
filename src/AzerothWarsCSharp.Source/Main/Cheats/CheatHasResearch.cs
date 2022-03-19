@@ -47,7 +47,7 @@ namespace AzerothWarsCSharp.Source.Main.Cheats
 
     public static void Setup( ){
       trigger trig = CreateTrigger();
-      foreach (var player in GeneralHelpers.GetAllPlayers())
+      foreach (var player in GetAllPlayers())
       {
         TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
       }

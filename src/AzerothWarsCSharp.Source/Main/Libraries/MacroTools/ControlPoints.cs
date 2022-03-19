@@ -80,7 +80,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       ;type.byHandle[GetHandleId(whichUnit)];
     }
 
-    static thistype ByUnitType(int unitType ){
+    public static ControlPoint ByUnitType(int unitType ){
       ;type.byUnitType[unitType];
     }
 

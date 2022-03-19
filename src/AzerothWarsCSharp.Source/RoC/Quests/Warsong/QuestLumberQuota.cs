@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
       CompletionDescription = () => "Control of all units in Orgrimmar, able to train Varok";
       OnComplete = () =>
       {
-        GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_Orgrimmar, Holder.Player);
+        RescueNeutralUnitsInRect(gg_rct_Orgrimmar, Holder.Player);
         if (GetLocalPlayer() == Holder.Player)
         {
           PlayThematicMusicBJ("war3mapImported\\OrgrimmarTheme.mp3");
@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
       };
       OnFail = () =>
       {
-        GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_Orgrimmar, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+        RescueNeutralUnitsInRect(gg_rct_Orgrimmar, Player(PLAYER_NEUTRAL_AGGRESSIVE));
       };
       OnAdd = () =>
       {

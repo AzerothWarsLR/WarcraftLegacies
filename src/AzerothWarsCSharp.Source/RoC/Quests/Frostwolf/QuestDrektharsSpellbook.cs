@@ -1,30 +1,35 @@
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
 using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.RoC.Legends;
+using AzerothWarsCSharp.Source.RoC.Setup;
 
 namespace AzerothWarsCSharp.Source.RoC.Quests.Frostwolf
 {
-  public class QuestDrektharsSpellbook{
+  public sealed class QuestDrektharsSpellbook : QuestData
+  {
+    protected override string CompletionPopup =>
+      "The World Tree, Nordrassil, has been captured by the forces of the Horde. Drek'thar has gifted Warchief Thrall his magical spellbook for this achievement.";
 
+    protected override string CompletionDescription => "Drek'thar's Spellbook";
 
-    private string operator CompletionPopup( ){
-      return "The World Tree, Nordrassil, has been captured by the forces of the Horde. DrekFourCC(thar has gifted Warchief Thrall his magical spellbook for this achievement.";
+    protected override void OnComplete()
+    {
+      var drektharsSpellbook = ArtifactSetup.artifactDrektharsspellbook;
+      if (drektharsSpellbook != null && LegendFrostwolf.legendThrall?.Unit != null)
+      {
+        drektharsSpellbook.Status = Artifact.ARTIFACT_STATUS_GROUND;
+        UnitAddItemSafe(LegendFrostwolf.legendThrall.Unit, drektharsSpellbook.Item);
+      }
     }
 
-    private string operator CompletionDescription( ){
-      return "DrekFourCC(thar)s Spellbook";
+    public QuestDrektharsSpellbook() : base("Drekthar's Spellbook",
+      "The savage Night Elves threaten the safety of the entire Horde. Capture their World Tree and bring Thrall to its roots.",
+      "ReplaceableTextures\\CommandButtons\\BTNSorceressMaster.blp")
+    {
+      AddQuestItem(new QuestItemControlLegend(LegendDruids.LEGEND_NORDRASSIL, false));
+      AddQuestItem(new QuestItemLegendInRect(LegendFrostwolf.legendThrall, Regions.Drekthars_Spellbook.Rect,
+        "Nordrassil"));
     }
-
-    private void OnComplete( ){
-      ARTIFACT_DREKTHARSSPELLBOOK.setStatus(ARTIFACT_STATUS_GROUND);
-      UnitAddItemSafe(LEGEND_THRALL.Unit, ARTIFACT_DREKTHARSSPELLBOOK.item);
-    }
-
-    public  thistype ( ){
-      thistype this = thistype.allocate("DrektharFourCC(s Spellbook", "The savage Night Elves threaten the safety of the entire Horde. Capture their World Tree && bring Thrall to its roots.", "ReplaceableTextures\\CommandButtons\\BTNSorceressMaster.blp");
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_NORDRASSIL, false));
-      this.AddQuestItem(QuestItemLegendInRect.create(LEGEND_THRALL, gg_rct_Drekthars_Spellbook, "Nordrassil"));
-      ;;
-    }
-
-
   }
 }

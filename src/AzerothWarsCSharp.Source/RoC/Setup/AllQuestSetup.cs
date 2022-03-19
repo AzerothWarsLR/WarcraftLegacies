@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.Source.RoC.Setup.QuestSetup;
+
 namespace AzerothWarsCSharp.Source.RoC.Setup
 {
-  public class QuestSetup{
-
-    public static void OnInit( ){
+  public static class AllQuestSetup{
+    public static void Setup( ){
       DalaranQuestSetup_OnInit();
       DruidsQuestSetup_OnInit();
       FelHordeQuestSetup_OnInit();
@@ -23,7 +24,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup
       ForsakenQuestSetup_OnInit();
       TwilightQuestSetup_OnInit();
       CthunQuestSetup_OnInit();
-      GoblinQuestSetup_OnInit();
+      GoblinQuestSetup.Setup();
       BlackEmpireQuestSetup_OnInit();
       DraeneiQuestSetup_OnInit();
     }

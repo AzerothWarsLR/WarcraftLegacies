@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 {
-  public class Artifact
+  public sealed class Artifact
   {
     public event EventHandler<Artifact> OnArtifactCreate;
     public event EventHandler<Artifact> OnArtifactAcquire;

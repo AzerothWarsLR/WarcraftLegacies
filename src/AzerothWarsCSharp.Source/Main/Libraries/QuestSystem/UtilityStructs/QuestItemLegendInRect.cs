@@ -2,7 +2,7 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 {
-  public class QuestItemLegendInRect{
+  public class QuestItemLegendInRect : QuestItemData{
 
     private static region RectToRegion(rect whichRect ){
       region rectRegion = CreateRegion();
@@ -68,7 +68,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
       }
     }
 
-    thistype (Legend legend, rect targetRect, string rectName ){
+    public QuestItemLegendInRect(Legend legend, rect targetRect, string rectName ){
 
       target = RectToRegion(targetRect);
       this.targetRect = targetRect;

@@ -2,7 +2,7 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 {
-  public class QuestItemLegendDead{
+  public class QuestItemLegendDead : QuestItemData{
 
 
     private Legend target = 0;
@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
       }
     }
 
-    thistype (Legend target ){
+    public QuestItemLegendDead(Legend target ){
 
       this.target = target;
       this.targetWidget = target.Unit;

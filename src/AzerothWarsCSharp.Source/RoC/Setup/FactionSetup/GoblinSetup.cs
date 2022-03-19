@@ -2,13 +2,11 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.RoC.Setup.FactionSetup
 {
-  public class GoblinSetup{
-
-  
-    Faction FACTION_GOBLIN
-  
-
-    public static void OnInit( ){
+  public static class GoblinSetup
+  {
+    public static Faction FACTION_GOBLIN;
+    
+    public static void Setup( ){
       Faction f;
       FACTION_GOBLIN = Faction.create("Bilgewater", PLAYER_COLOR_LIGHT_GRAY, "|cff808080","ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp");
       f = FACTION_GOBLIN;

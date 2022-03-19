@@ -1,30 +1,23 @@
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
 using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.RoC.Legends;
 
 namespace AzerothWarsCSharp.Source.RoC.Quests.Goblin
 {
-  public class QuestWesternExpansion{
+  public sealed class QuestWesternExpansion : QuestData
+  {
+    protected override string CompletionPopup =>
+      "The western shores are now clear of pesky elves, our business expansion can continue && our Zeppelins can fly safe.";
 
-  
-    private const int QUEST_RESEARCH_ID = FourCC(R07Y);
-  
+    protected override string CompletionDescription => "Learn to train " + GetObjectName(FourCC("h091")) + "s";
 
-
-    private string operator CompletionPopup( ){
-      return "The western shores are now clear of pesky elves, our business expansion can continue && our Zeppelins can fly safe.";
+    public QuestWesternExpansion() : base("Western Expansion",
+      "Feathermoon Stronghold && Auberdine give the Elves a grip on the western shore of Kalimdor. We need to destroy them to clear a way for our business expansion west!",
+      "ReplaceableTextures\\CommandButtons\\BTNNightElfShipyard.blp")
+    {
+      AddQuestItem(new QuestItemLegendDead(LegendSentinels.LEGEND_FEATHERMOON));
+      AddQuestItem(new QuestItemLegendDead(LegendSentinels.LEGEND_AUBERDINE));
+      ResearchId = FourCC("R07Y");
     }
-
-    private string operator CompletionDescription( ){
-      return "Learn to train " + GetObjectName(FourCC(h091)) + "s";
-    }
-
-    public  thistype ( ){
-      thistype this = thistype.allocate("Western Expansion", "Feathermoon Stronghold && Auberdine give the Elves a grip on the western shore of Kalimdor. We need to destroy them to clear a way for our business expansion west!", "ReplaceableTextures\\CommandButtons\\BTNNightElfShipyard.blp");
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_FEATHERMOON));
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_AUBERDINE));
-      this.ResearchId = QUEST_RESEARCH_ID;
-      ;;
-    }
-
-
   }
 }

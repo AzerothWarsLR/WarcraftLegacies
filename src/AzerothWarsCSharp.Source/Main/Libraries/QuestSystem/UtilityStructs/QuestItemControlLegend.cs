@@ -2,7 +2,7 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 {
-  public class QuestItemControlLegend{
+  public class QuestItemControlLegend : QuestItemData{
 
 
     private Legend target = 0;
@@ -69,7 +69,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
       }
     }
 
-    thistype (Legend target, boolean canFail ){
+    public QuestItemControlLegend(Legend target, bool canFail ){
 
       this.target = target;
       this.Description = "Your team controls " + target.Name;

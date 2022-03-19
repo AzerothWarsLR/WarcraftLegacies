@@ -2,16 +2,17 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.RoC.Legends
 {
-  public static class LegendSentinels{
+  public static class LegendSentinels
+  {
 
-  
-    public static Legend LEGEND_MAIEV
-    public static Legend LEGEND_TYRANDE
-    public static Legend LEGEND_SHANDRIS
-    public static Legend LEGEND_JAROD
 
-    public static Legend LEGEND_AUBERDINE
-    public static Legend LEGEND_FEATHERMOON
+    public static Legend LEGEND_MAIEV;
+    public static Legend LEGEND_TYRANDE;
+    public static Legend LEGEND_SHANDRIS;
+    public static Legend LEGEND_JAROD;
+
+    public static Legend LEGEND_AUBERDINE;
+    public static Legend LEGEND_FEATHERMOON;
   
 
     public static void Setup( ){

@@ -14,12 +14,12 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
   public sealed class Faction
   {
     public static event EventHandler<Faction>? OnFactionCreate;
-    public static EventHandler<FactionChangeTeamEventArgs>? OnFactionTeamLeave;
-    public static EventHandler<Faction>? OnFactionTeamJoin;
-    public static EventHandler<Faction>? OnFactionGameLeave;
-    public static EventHandler<Faction>? FactionNameChanged;
-    public static EventHandler<Faction>? FactionIconChanged;
-    public static EventHandler<Faction>? FactionScoreStatusChanged;
+    public static event EventHandler<FactionChangeTeamEventArgs>? OnFactionTeamLeave;
+    public static event EventHandler<Faction>? OnFactionTeamJoin;
+    public static event EventHandler<Faction>? OnFactionGameLeave;
+    public static event EventHandler<Faction>? FactionNameChanged;
+    public static event EventHandler<Faction>? FactionIconChanged;
+    public static event EventHandler<Faction>? FactionScoreStatusChanged;
 
     private const int UNLIMITED = 200; //This is used in Persons and Faction for effectively unlimited unit production
     private const int HERO_COST = 100; //For refunding
@@ -29,9 +29,9 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 
     private const float XP_TRANSFER_PERCENT = 100; //How much experience is transferred from heroes that leave the game)
 
-    private static readonly Dictionary<string, Faction> FactionsByName = new();
+    private static readonly Dictionary<string?, Faction> FactionsByName = new();
 
-    private string _name;
+    private string? _name;
     private string _prefixCol;
     private string _icon;
     private ScoreStatus _scoreStatus = ScoreStatus.ScorestatusNormal;
@@ -147,7 +147,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 
     public string PrefixCol => _prefixCol;
 
-    public string Name
+    public string? Name
     {
       get => _name;
       set
@@ -524,7 +524,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       return Person.ByHandle(whichPlayer)?.Faction;
     }
 
-    public static Faction GetFromName(string s)
+    public static Faction GetFromName(string? s)
     { 
       return FactionsByName[s];
     }
@@ -542,7 +542,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       OnFactionCreate?.Invoke(faction, faction);
     }
     
-    public Faction(string name, playercolor playerColor, string prefixCol, string icon)
+    public Faction(string? name, playercolor playerColor, string prefixCol, string icon)
     {
       _name = name;
       PlayerColor = playerColor;

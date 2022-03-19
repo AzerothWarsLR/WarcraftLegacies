@@ -1,34 +1,27 @@
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
 using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.RoC.Legends;
 
 namespace AzerothWarsCSharp.Source.RoC.Quests.Goblin
 {
-  public class QuestLumberMarket{
+  public sealed class QuestLumberMarket : QuestData
+  {
+    protected override string CompletionPopup => "The World Tree is ours, our lumber supplies will never run out!";
 
-  
-    private const int QUEST_RESEARCH_ID = FourCC(R07Z)   ;//This research is given when the quest is completed
-  
+    protected override string CompletionDescription =>
+      "Shredders will gain cleaving attack && 500 hit points. You will gain 30000 lumber.";
 
-
-
-    private string operator CompletionPopup( ){
-      return "The World Tree is ours, our lumber supplies will never run out!";
+    protected override void OnComplete()
+    {
+      AdjustPlayerStateBJ(30000, Holder.Player, PLAYER_STATE_RESOURCE_LUMBER);
     }
 
-    private string operator CompletionDescription( ){
-      return "Shredders will gain cleaving attack && 500 hit points. You will gain 30000 lumber.";
+    public QuestLumberMarket() : base("Lumber Market Krash",
+      "The World Tree would provide enough lumber to completely crash the lumber market, forcing our Shredders to specialise more on war.",
+      "ReplaceableTextures\\CommandButtons\\BTNJunkGolem.blp")
+    {
+      AddQuestItem(new QuestItemControlLegend(LegendDruids.LEGEND_NORDRASSIL, false));
+      ResearchId = FourCC("R07Z");
     }
-
-    private void OnComplete( ){
-      AdjustPlayerStateBJ( 30000, this.Holder.Player, PLAYER_STATE_RESOURCE_LUMBER );
-    }
-
-    public  thistype ( ){
-      thistype this = thistype.allocate("Lumber Market Krash", "The World Tree would provide enough lumber to completely crash the lumber market, forcing our Shredders to specialise more on war.", "ReplaceableTextures\\CommandButtons\\BTNJunkGolem.blp");
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_NORDRASSIL, false));
-      this.ResearchId = QUEST_RESEARCH_ID;
-      ;;
-    }
-
-
   }
 }

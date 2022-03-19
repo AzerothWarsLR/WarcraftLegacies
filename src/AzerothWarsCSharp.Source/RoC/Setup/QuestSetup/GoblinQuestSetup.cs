@@ -2,18 +2,17 @@ using AzerothWarsCSharp.Source.RoC.Quests.Goblin;
 
 namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
-  public class GoblinQuestSetup{
-
-    public static void OnInit( ){
-
-      FACTION_GOBLIN.StartingQuest = FACTION_GOBLIN.AddQuest(QuestBusinessExpansion.create());
-      FACTION_GOBLIN.AddQuest(QuestGadgetzan.create());
-      FACTION_GOBLIN.AddQuest(QuestExplosiveEngineering.create());
-      FACTION_GOBLIN.AddQuest(QuestWesternExpansion.create());
-      FACTION_GOBLIN.AddQuest(QuestLumberMarket.create());
-      FACTION_GOBLIN.AddQuest(QuestGoblinEmpire.create());
-
+  public static class GoblinQuestSetup
+  {
+    public static void Setup()
+    {
+      var goblin = FactionSetup.GoblinSetup.FACTION_GOBLIN;
+      goblin.StartingQuest = goblin.AddQuest(new QuestBusinessExpansion());
+      goblin.AddQuest(new QuestGadgetzan());
+      goblin.AddQuest(new QuestExplosiveEngineering());
+      goblin.AddQuest(new QuestWesternExpansion());
+      goblin.AddQuest(new QuestLumberMarket());
+      goblin.AddQuest(new QuestGoblinEmpire());
     }
-
   }
 }

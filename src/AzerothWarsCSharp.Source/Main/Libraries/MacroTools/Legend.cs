@@ -131,7 +131,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
         if (Unit != null)
         {
           ByUnit.Remove(Unit);
-          GeneralHelpers.UnitDropAllItems(Unit);
+          UnitDropAllItems(Unit);
           RemoveUnit(_unit);
         }
 
@@ -212,7 +212,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
           SetUnitState(newUnit, UNIT_STATE_LIFE, GetUnitState(_unit, UNIT_STATE_LIFE));
           SetUnitState(newUnit, UNIT_STATE_MANA, GetUnitState(_unit, UNIT_STATE_MANA));
           SetHeroXP(newUnit, GetHeroXP(_unit), false);
-          GeneralHelpers.UnitTransferItems(_unit, newUnit);
+          UnitTransferItems(_unit, newUnit);
           var oldX = GetUnitX(_unit);
           var oldY = GetUnitY(_unit);
           RemoveUnit(_unit);
@@ -316,7 +316,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
         DestroyEffect(tempEffect);
         if (_unit != null)
         {
-          GeneralHelpers.UnitDropAllItems(_unit);
+          UnitDropAllItems(_unit);
           RemoveUnit(_unit);
         }
       }

@@ -2,7 +2,7 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 {
-  public class QuestItemControlPoint{
+  public class QuestItemControlPoint : QuestItemData{
 
 
     private static trigger unitDies = CreateTrigger();
@@ -61,7 +61,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
       }
     }
 
-    thistype (ControlPoint target ){
+    public QuestItemControlPoint(ControlPoint target){
 
       this.target = target;
       this.Description = "Your team controls " + target.Name;
