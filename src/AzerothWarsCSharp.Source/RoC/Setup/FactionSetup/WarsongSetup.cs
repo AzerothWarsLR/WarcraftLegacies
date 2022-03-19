@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.FactionSetup
     Faction FACTION_WARSONG
   
 
-    public static void OnInit( ){
+    public static void Setup( ){
       Faction f;
 
       FACTION_WARSONG = Faction.create("Warsong", PLAYER_COLOR_ORANGE, "|c00ff8000","ReplaceableTextures\\CommandButtons\\BTNHellScream.blp");

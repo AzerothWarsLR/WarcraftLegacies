@@ -4,7 +4,7 @@ namespace AzerothWarsCSharp.Source.Main.Setup
 {
   public class ShoreSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
       Shore.create(-19986, 12602)    ;//Darnassus
       Shore.create(-20649, 9363)     ;//Azuremyst Isle
       Shore.create(-17053, 10271)    ;//Darkshore

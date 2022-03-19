@@ -10,15 +10,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Forsaken
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "QuelFourCC(thalas has fallen to the Scourge)s onslaught. The Sunwell itself has been corrupted, cutting the quel)dorei off from the source of their longevity. Sylvanas is denied a clean death following her tenacious defense, && she becomes the first of the High Elven Banshees.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "You can summon Sylvanas from the " + GetObjectName(ALTAR_ID);
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetUnitAnimation(LEGEND_SUNWELL.Unit, "stand second");
       SetUnitAnimation(LEGEND_SUNWELL.Unit, "stand third");
     }

@@ -9,15 +9,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Twilight
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The high priestess Azil is now trainable";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "The high priestess Azil is trainable at the altar";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
     }
 
     private void OnAdd( ){

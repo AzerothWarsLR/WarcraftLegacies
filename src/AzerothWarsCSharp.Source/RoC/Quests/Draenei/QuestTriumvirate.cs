@@ -10,15 +10,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Draenei
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Velen has liberated Argus && re-assembled the Crown of Triumvirate";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "You gain the powerful item, the Crown of the Triumvirate";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       UnitAddItemSafe(LEGEND_VELEN.Unit, ARTIFACT_CROWNTRIUMVIRATE.item);
     }
 

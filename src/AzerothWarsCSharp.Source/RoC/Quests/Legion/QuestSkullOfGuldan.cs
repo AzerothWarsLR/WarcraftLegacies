@@ -7,15 +7,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
 
     private QuestItemAnyUnitInRect questItemAnyUnitInRect;
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Skull of GulFourCC(dan has been retrieved by " + GetHeroProperName(questItemAnyUnitInRect.TriggerUnit) + ". Its nefarious energies will fuel the Legion)s operations on Azeroth.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "The Skull of GulFourCC(dan";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       ARTIFACT_SKULLOFGULDAN.setStatus(ARTIFACT_STATUS_GROUND);
       UnitAddItemSafe(questItemAnyUnitInRect.TriggerUnit, ARTIFACT_SKULLOFGULDAN.item);
     }

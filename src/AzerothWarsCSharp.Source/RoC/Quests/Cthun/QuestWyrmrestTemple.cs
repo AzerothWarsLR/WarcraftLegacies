@@ -9,11 +9,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Cthun
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "YorFourCC(sahj can now be trained at the altar";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "The hero YorFourCC(sahj will join Ahn)Qiraj";
     }
 

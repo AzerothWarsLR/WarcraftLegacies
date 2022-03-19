@@ -15,15 +15,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The people of the Eastern Kingdoms have been united under the banner of Stormwind. Long live High King Varian Wrynn!";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "You gain a research improving all of your units, the Crowns of Lordaeron && Stormwind are merged, && Varian gains " + I2S(EXPERIENCE_REWARD) + ".";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       //Artifact
       unit crownHolder = ARTIFACT_CROWNSTORMWIND.OwningUnit;
       RemoveItem(ARTIFACT_CROWNLORDAERON.item);

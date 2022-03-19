@@ -9,15 +9,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "GulFourCC(dan)s remains have been located within the Tomb of Sargeras. His eldritch knowledge may now be put to purpose.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
 
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
 
       SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
     }

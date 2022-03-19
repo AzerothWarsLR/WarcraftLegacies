@@ -11,15 +11,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "With the Lich King eliminated, the Kingdom of Lordaeron is free of its greatest threat. King Terenas Menethil proudly abdicates in favor of his son.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Arthas gains 2000 experience && the Crown of Lordaeron, && he can no longer permanently die";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       BlzSetUnitName(LEGEND_ARTHAS.Unit, "King of Lordaeron");
       BlzSetUnitName(gg_unit_nemi_0019, "King Emeritus Terenas Menethil");
       RemoveUnit(gg_unit_nemi_0019);

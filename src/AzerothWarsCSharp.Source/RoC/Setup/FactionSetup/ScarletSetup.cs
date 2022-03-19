@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.FactionSetup
     Faction FACTION_SCARLET
   
 
-    public static void OnInit( ){
+    public static void Setup( ){
       Faction f;
       FACTION_SCARLET = Faction.create("Militia", PLAYER_COLOR_MAROON, "|cff800000","ReplaceableTextures\\CommandButtons\\BTNPeasant.blp");
       f = FACTION_SCARLET;

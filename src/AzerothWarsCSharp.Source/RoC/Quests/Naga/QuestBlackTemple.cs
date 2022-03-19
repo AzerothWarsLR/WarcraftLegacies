@@ -11,15 +11,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Illidan has killed Magtheridon && subjugated the Fel Horde, the Illidari grow strong.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "The Fel Horde will join us && Magtheridon will die";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       if (FACTION_NAGA.Team == TEAM_NAGA){
         FACTION_FEL_HORDE.Team = TEAM_NAGA;
       }

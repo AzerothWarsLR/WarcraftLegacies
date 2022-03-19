@@ -11,15 +11,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Zandalar
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "JinthaFourCC(Alor has fallen. The Vilebranch trolls lend their might to the " + this.Holder.Team.Name + ".";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of JinthaFourCC(Alor, 300 gold tribute && the ability to train " + GetObjectName(BEAR_RIDER_ID) + "s from the " + GetObjectName(TROLL_SHRINE_ID);
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, JINTHAALOR_RESEARCH, 1);
       AdjustPlayerStateBJ( 300, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
     }

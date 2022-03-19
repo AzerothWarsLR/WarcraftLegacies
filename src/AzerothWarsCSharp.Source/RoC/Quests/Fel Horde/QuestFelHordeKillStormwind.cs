@@ -12,15 +12,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "StormwindFourCC(s annihilation has left behind the corpses of thousands of elite knights. As occurred during the Second War, these corpses have been filled with the souls of slain Shadow Council members, recreating the indominatable order of Death Knights.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Teron Gorefiend can be trained at the altar && learn to train " + I2S(UNIT_LIMIT) + " " + GetObjectName(UNITTYPE_ID) + "s from the " + GetObjectName(BUILDING_ID);
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
     }
 

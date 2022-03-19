@@ -11,11 +11,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "MedivhFourCC(s spirit has been cleansed of Sargeras) influence, allowing him to return to Azeroth for a time.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "You can summon Medivh from the Altar of Knowledge";
     }
 

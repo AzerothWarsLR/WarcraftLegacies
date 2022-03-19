@@ -13,15 +13,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The plague has been unleashed! The citizens of Lordaeron are quickly transforming into mindless zombies.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "A plague is unleashed upon the lands of Lordaeron";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       this.Holder.ModObjectLimit(RESEARCH_ID, -UNLIMITED);
       TriggerExecute( gg_trg_Plague_Actions );
     }

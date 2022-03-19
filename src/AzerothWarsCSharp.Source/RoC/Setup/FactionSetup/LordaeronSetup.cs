@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.FactionSetup
     Faction FACTION_LORDAERON
   
 
-    public static void OnInit( ){
+    public static void Setup( ){
       Faction f;
       FACTION_LORDAERON = Faction.create("Lordaeron", PLAYER_COLOR_BLUE, "|c000042ff","ReplaceableTextures\\CommandButtons\\BTNArthas.blp");
       f = FACTION_LORDAERON;

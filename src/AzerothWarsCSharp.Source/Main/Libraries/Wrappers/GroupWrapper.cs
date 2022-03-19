@@ -34,6 +34,11 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.Wrappers
       return list;
     }
 
+    public void Add(unit unit)
+    {
+      GroupAddUnit(_group, unit);
+    }
+    
     public GroupWrapper EnumUnitsOfPlayer(player player)
     {
       GroupEnumUnitsOfPlayer(_group, player, null);

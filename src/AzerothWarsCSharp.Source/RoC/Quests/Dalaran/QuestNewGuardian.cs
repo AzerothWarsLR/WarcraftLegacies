@@ -5,15 +5,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
   public class QuestNewGuardian{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Dalaran has empowered Jaina to be the new Guardian of Tirisfal, endowing her with a portion of the Council of TirisfalFourCC(s power.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Grant Jaina Chaos Damage, 20 additional Intelligence, Teleport, && Mana Shield";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       unit whichUnit = LEGEND_JAINA.Unit;
       UnitRemoveAbilityBJ( FourCC(A0RB), LEGEND_JAINA.Unit);
       AddSpecialEffectTarget("war3mapImported\\Soul Armor Cosmic.mdx", whichUnit, "chest");

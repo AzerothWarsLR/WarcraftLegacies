@@ -5,15 +5,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests
   public class QuestScepterOfTheQueen{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Highborne are no longer implicitly defended by the Night Elven presence at Feathermoon Stronghold. The Horde unleashes their full might against these Night Elven arcanists.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Gain the Scepter of the Queen && turn all units in Dire Maul hostile";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetItemPosition(ARTIFACT_SCEPTEROFTHEQUEEN.item, GetRectCenterX(gg_rct_HighBourne), GetRectCenterY(gg_rct_HighBourne));
       RescueNeutralUnitsInRect(gg_rct_HighBourne, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
@@ -30,11 +30,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests
 
     private static int researchId = FourCC(R02O);
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The ShenFourCC(dralar, the Highborne survivors of the Sundering, swear allegiance to their fellow Night Elves. As a sign of their loyalty, they offer up an artifact they have guarded for thousands of years: the Scepter of the Queen.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Gain the Scepter of the Queen && control of all units in Dire Maul";
     }
 
@@ -42,7 +42,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests
       this.Holder.ModObjectLimit(thistype.researchId, -UNLIMITED);
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetItemPosition(ARTIFACT_SCEPTEROFTHEQUEEN.item, GetRectCenterX(gg_rct_HighBourne), GetRectCenterY(gg_rct_HighBourne));
       RescueNeutralUnitsInRect(gg_rct_HighBourne, this.Holder.Player);
       SetPlayerTechResearched(this.Holder.Player, thistype.researchId, 1);

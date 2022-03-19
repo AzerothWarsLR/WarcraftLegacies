@@ -1,34 +1,32 @@
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
 using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.RoC.Legends;
 
 namespace AzerothWarsCSharp.Source.RoC.Quests.Cthun
 {
-  public class QuestAwakenCthun{
+  public sealed class QuestAwakenCthun : QuestData
+  {
+    private readonly unit _cthun;
+    
+    protected override string CompletionPopup =>
+      "C'thun, Old God of madness && chaos, has awakened from his slumber. Azeroth itself shrinks back in fear as this unfathomably evil entity unleashes its singular gaze for the first time in millenia.";
+    
+    protected override string CompletionDescription =>
+      "Gain control of C'thun and the ability to train Wasps"; //Todo: from where?
 
-  
-    private const int QUEST_RESEARCH_ID = FourCC(R06A)   ;//This research is given when the quest is completed
-  
-
-
-    private string operator CompletionPopup( ){
-      return "CFourCC(thun, Old God of madness && chaos, has awakened from his slumber. Azeroth itself shrinks back in fear as this unfathomably evil entity unleashes its singular gaze for the first time in millenia.";
+    protected override void OnComplete()
+    {
+      SetUnitInvulnerable(_cthun, false);
+      PauseUnit(_cthun, false);
     }
-
-    private string operator CompletionDescription( ){
-      return "Gain control of CFourCC(thun && the ability to train Wasps" ;//Todo: from where?
+    
+    public QuestAwakenCthun(unit cthun) : base("The Awakening of C'thun",
+      "The Old God C'thun slumbers beneath the ruins of Ahn'qiraj. Skeram will need to awaken him with an unholy ritual.",
+      "ReplaceableTextures\\CommandButtons\\BTNCthunIcon.blp")
+    {
+      _cthun = cthun;
+      AddQuestItem(new QuestItemChannelRect(Regions.CthunSummon.Rect, "C'thun", LegendCthun.LEGEND_SKERAM, 420, 270));
+      ResearchId = FourCC("R06A");
     }
-
-    private void OnComplete( ){
-      SetUnitInvulnerable(gg_unit_U00R_0609, false);
-      PauseUnitBJ(false, gg_unit_U00R_0609) ;//Todo: no point using the BJ
-    }
-
-    public  thistype ( ){
-      thistype this = thistype.allocate("The Awakening of CFourCC(thun", "The Old God C)thun slumbers beneath the ruins of Ahn)qiraj. Skeram will need to awaken him with an unholy ritual.", "ReplaceableTextures\\CommandButtons\\BTNCthunIcon.blp");
-      this.AddQuestItem(QuestItemChannelRect.create(gg_rct_CthunSummon, "CFourCC(thun", LEGEND_SKERAM, 420, 270));
-      this.ResearchId = QUEST_RESEARCH_ID;
-      ;;
-    }
-
-
   }
 }

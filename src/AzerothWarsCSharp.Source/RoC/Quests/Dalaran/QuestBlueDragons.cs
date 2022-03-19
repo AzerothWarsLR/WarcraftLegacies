@@ -11,15 +11,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Nexus has been captured. The Blue Dragonflight fights for " + this.Holder.Name + ".";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Learn to train Blue Dragons";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
       DisplayUnitTypeAcquired(Holder.Player, DRAGON_ID, "You can now train Blue Dragons from Military Quarters && the Nexus.");
     }

@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup
     Team TEAM_SCOURGE
   
 
-    public static void OnInit( ){
+    public static void Setup( ){
       //Starting teams
       Team t = 0;
 

@@ -5,11 +5,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.KulTiras
   public class QuestUnlockShip{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Proudmoore capital ship is now ready to sails!";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Unpause the Proudmoore capital ship && unlocks the buildings inside.";
     }
 
@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.KulTiras
       return "You lose everything you control, but you gain Katherine at the capital ship.";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       RescueNeutralUnitsInRect(gg_rct_ShipAmbient, this.Holder.Player);
       PauseUnitBJ( false, gg_unit_h08T_0260 );
     }

@@ -6,15 +6,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Forsaken
   public class QuestTakeRevenge{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "With the Lich King eliminated, Sylvanas vengeance is finally complete. She has absorbed his power && has become the Banshee Queen";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Sylvanas gains 20 intelligence, 20 strength && Chaos damage";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       unit whichUnit = LEGEND_SYLVANASV.Unit;
       BlzSetUnitName(whichUnit, "Banshee Queen");
       AddSpecialEffectTarget("war3mapImported\\SoulArmor.mdx", whichUnit, "chest");

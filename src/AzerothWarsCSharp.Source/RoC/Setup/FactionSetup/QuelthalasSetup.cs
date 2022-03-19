@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.FactionSetup
     Faction FACTION_QUELTHALAS
   
 
-    public static void OnInit( ){
+    public static void Setup( ){
       Faction f;
       FACTION_QUELTHALAS = Faction.create("QuelFourCC(thalas", PLAYER_COLOR_CYAN, "|C0000FFFF","ReplaceableTextures\\CommandButtons\\BTNSylvanusWindrunner.blp");
       f = FACTION_QUELTHALAS;

@@ -8,15 +8,15 @@
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
 
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
 
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       if (GetLocalPlayer() == this.Holder.Player){
         PingMinimap(GetUnitX(gg_unit_h053_1121), GetUnitY(gg_unit_h053_1121), 5);
         PingMinimap(GetUnitX(gg_unit_h055_0035), GetUnitY(gg_unit_h055_0035), 5);

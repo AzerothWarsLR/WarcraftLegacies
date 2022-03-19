@@ -10,15 +10,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Ironforge
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The peace talk were succesful, The Dark Iron will join the Dwarven Empire.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "You gain control of Shadowforge City && can train the hero Dagran Thaurassian from the Altar of Fortitude";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       group tempGroup = CreateGroup();
       unit u;
       //Transfer all Neutral Passive units in region to Ironforge

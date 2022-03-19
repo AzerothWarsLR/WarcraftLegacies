@@ -15,11 +15,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Druids
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Malfurion has emerged from his deep slumber in the Barrow Den.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Gain the hero Malfurion && the artifact GFourCC(hanir";
     }
 
@@ -48,7 +48,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Druids
       GiveMoonglade(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       GiveMoonglade(this.Holder.Player);
       if (LEGEND_MALFURION.Unit == null){
         LEGEND_MALFURION.Spawn(Holder.Player, GetRectCenterX(gg_rct_Moonglade), GetRectCenterY(gg_rct_Moonglade), 270);

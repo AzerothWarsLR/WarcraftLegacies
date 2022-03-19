@@ -10,11 +10,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Druids
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Ashenvale is under control && Cenarius can now be awaken";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in Ashenvale && make Cenarius trainable at the Altar";
     }
 
@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Druids
       GrantAshenvale(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       GrantAshenvale(this.Holder.Player);
       if (GetLocalPlayer() == this.Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\DruidTheme.mp3" );

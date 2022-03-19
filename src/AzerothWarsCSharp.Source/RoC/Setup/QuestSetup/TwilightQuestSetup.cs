@@ -4,7 +4,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
   public class TwilightQuestSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
 
       FACTION_TWILIGHT.StartingQuest = FACTION_TWILIGHT.AddQuest(QuestDragonmawPort.create());
       FACTION_TWILIGHT.AddQuest(QuestGrimBatol.create());

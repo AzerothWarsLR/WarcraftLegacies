@@ -4,7 +4,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
   public class ScarletQuestSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
       //Early duel
       FACTION_SCARLET.StartingQuest = FACTION_SCARLET.AddQuest(QuestTownWatch.create());
       FACTION_SCARLET.AddQuest(QuestMonastery.create());

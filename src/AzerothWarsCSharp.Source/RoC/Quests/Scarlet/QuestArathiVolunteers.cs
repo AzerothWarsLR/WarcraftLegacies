@@ -10,12 +10,12 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scarlet
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       //Todo: what fight, flavour wise? Is it the Third War?
       return "The Arathi have been convinced to join the fight.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Enable to train Mounted Archers";
     }
 

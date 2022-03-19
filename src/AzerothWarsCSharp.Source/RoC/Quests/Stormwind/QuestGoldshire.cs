@@ -6,11 +6,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
   public class QuestGoldshire{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Gnolls have been defeated, Goldshire is safe.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in Goldshire";
     }
 
@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
       GrantGoldshire(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       GrantGoldshire(this.Holder.Player);
     }
 

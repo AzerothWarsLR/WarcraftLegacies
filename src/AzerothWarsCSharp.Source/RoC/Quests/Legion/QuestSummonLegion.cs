@@ -13,11 +13,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Tremble, mortals, && despair. Doom has come to this world.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "The hero Archimonde, control of all units in the Twisting Nether, && learn to train Greater Demons";
     }
 

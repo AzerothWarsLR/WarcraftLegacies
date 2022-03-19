@@ -10,11 +10,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Capital City has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in Capital City";
     }
 
@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
       RescueNeutralUnitsInRect(gg_rct_Terenas, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       RescueNeutralUnitsInRect(gg_rct_Terenas, this.Holder.Player);
       SetUnitInvulnerable(gg_unit_nemi_0019, true);
       if (GetLocalPlayer() == this.Holder.Player){

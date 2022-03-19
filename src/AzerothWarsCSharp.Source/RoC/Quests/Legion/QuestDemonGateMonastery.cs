@@ -11,15 +11,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
 
     private QuestItemKillUnit questItemKillMonastery;
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The great Scarlet Monastery has fallen, && from its ashes rises an even greater Demon Gate.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "A new Demon Gate at the MonasteryFourCC(s location";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       CreateUnit(Holder.Player, DEMONGATE_ID, GetUnitX(questItemKillMonastery.Target), GetUnitY(questItemKillMonastery.Target), 270);
       SetDoodadAnimationRectBJ( "hide", FourCC(YObb), gg_rct_ScarletMonastery );
       SetDoodadAnimationRectBJ( "hide", FourCC(ZSab), gg_rct_ScarletMonastery );

@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
   public class IronforgeQuestSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
       //Setup
       QuestData newQuest = FACTION_IRONFORGE.AddQuest(QuestThelsamar.create());
       FACTION_IRONFORGE.StartingQuest = newQuest;

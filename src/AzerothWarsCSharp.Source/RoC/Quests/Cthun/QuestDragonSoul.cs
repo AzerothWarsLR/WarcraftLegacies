@@ -1,28 +1,27 @@
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
 using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.RoC.Legends;
+using AzerothWarsCSharp.Source.RoC.Setup;
 
 namespace AzerothWarsCSharp.Source.RoC.Quests.Cthun
 {
-  public class QuestDragonSoul{
+  public sealed class QuestDragonSoul : QuestData
+  {
+    protected override string CompletionPopup => "Skeram will be granted the Dragon Soul";
 
+    protected override string CompletionDescription => "The Dragon Soul will be granted to Skeram";
 
-    private string operator CompletionPopup( ){
-      return "Skeram will be granted the Dragon Soul";
+    protected override void OnComplete()
+    {
+      UnitAddItemSafe(LegendCthun.LEGEND_SKERAM.Unit, ArtifactSetup.artifactDemonsoul.Item);
     }
 
-    private string operator CompletionDescription( ){
-      return "The Dragon Soul will be granted to Skeram";
+    public QuestDragonSoul() : base("The Dragon Soul",
+      "The Dragon Soul was lost in the Blackrock Mountain long ago. Skeram might be powerful enough to restore it.",
+      "ReplaceableTextures\\CommandButtons\\BTNBrokenAmulet.blp")
+    {
+      AddQuestItem(new QuestItemChannelRect(Regions.DragonSoulChannel, "Burning Steppe", LegendCthun.LEGEND_SKERAM, 240,
+        160));
     }
-
-    private void OnComplete( ){
-      UnitAddItemSafe(LEGEND_SKERAM.Unit, ARTIFACT_DEMONSOUL.item);
-    }
-
-    public  thistype ( ){
-      thistype this = thistype.allocate("The Dragon Soul", "The Dragon Soul was lost in the Blackrock Mountain long ago. Skeram might be powerful enough to restore it.", "ReplaceableTextures\\CommandButtons\\BTNBrokenAmulet.blp");
-      this.AddQuestItem(QuestItemChannelRect.create(gg_rct_DragonSoulChannel, "Burning Steppe", LEGEND_SKERAM, 240, 160));
-      ;;
-    }
-
-
   }
 }

@@ -9,11 +9,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
 
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
 
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of the Crossroads";
     }
 
@@ -44,7 +44,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
       GiveCrossroads(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       GiveCrossroads(this.Holder.Player);
     }
 

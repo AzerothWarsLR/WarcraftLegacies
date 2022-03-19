@@ -7,11 +7,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
 
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Strahnbrad has been liberated.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all buildings in Strahnbrad";
     }
 
@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
       RescueNeutralUnitsInRect(gg_rct_StrahnbradUnlock, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       RescueNeutralUnitsInRect(gg_rct_StrahnbradUnlock, this.Holder.Player);
     }
 

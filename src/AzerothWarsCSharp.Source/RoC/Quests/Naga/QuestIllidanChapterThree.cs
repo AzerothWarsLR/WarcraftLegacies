@@ -12,15 +12,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
 
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Illidan must awaken the Naga from the depth of the ocean";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Nazjatar && the NagaFourCC(s loyalty";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       RescueNeutralUnitsInRect(gg_rct_NagaUnlock2, this.Holder.Player);
       RescueNeutralUnitsInRect(gg_rct_NagaUnlock1, this.Holder.Player);
       FACTION_NAGA.AddQuest(REDEMPTION_PATH);

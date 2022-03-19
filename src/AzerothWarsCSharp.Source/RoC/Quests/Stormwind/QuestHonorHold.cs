@@ -8,15 +8,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
   public class QuestHonorHold{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Honor Hold is now free from the const looming threat of Hellfire Citadel. Danath Trollbane && his people elect to rejoin the Alliance.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "The demihero Danath Trollbane, && control of all units at Honor Hold";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       group tempGroup = CreateGroup();
       //Transfer all Neutral Passive units in HonorHold to one of the above factions
       UnitRescue(gg_unit_h05Z_3325, this.Holder.Player)  ;//Honor Hold

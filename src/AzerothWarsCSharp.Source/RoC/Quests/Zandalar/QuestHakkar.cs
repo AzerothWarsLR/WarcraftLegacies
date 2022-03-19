@@ -15,15 +15,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Zandalar
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Hakkar has emerged from the Drowned Temple";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Gain the demigod hero Hakkar";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       LEGEND_HAKKAR.Spawn(Holder.Player, GetRectCenterX(gg_rct_DrownedTemple), GetRectCenterY(gg_rct_DrownedTemple), 270);
       SetHeroLevel(LEGEND_HAKKAR.Unit, 12, false);
     }

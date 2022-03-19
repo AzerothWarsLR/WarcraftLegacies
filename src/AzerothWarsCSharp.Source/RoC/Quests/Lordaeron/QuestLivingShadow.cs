@@ -6,15 +6,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
   public class QuestLivingShadow{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Uther has discovered the Living Embodiment of Shadow in the ruins of the Twilight Citadel";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "The Living Shadow && the Ashbringer Quest discovery";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       UnitAddItemSafe(LEGEND_UTHER.Unit, ARTIFACT_LIVINGSHADOW.item);
       FACTION_LORDAERON.AddQuest(THE_ASHBRINGER);
       THE_ASHBRINGER.Progress = QUEST_PROGRESS_INCOMPLETE;

@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
   public class GilneasQuestSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
       //Early duel
       QuestData ChapterOne = FACTION_GILNEAS.AddQuest(QuestGilneasChapterOne.create());
       QuestData ChapterTwo = FACTION_GILNEAS.AddQuest(QuestGilneasChapterTwo.create());

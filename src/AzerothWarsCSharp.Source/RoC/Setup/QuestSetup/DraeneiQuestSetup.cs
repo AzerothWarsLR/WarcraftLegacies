@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
   public class DraeneiQuestSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
       //Setup
       QuestData newQuest = FACTION_DRAENEI.AddQuest(QuestExiled.create());
       FACTION_DRAENEI.StartingQuest = newQuest;

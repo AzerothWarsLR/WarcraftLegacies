@@ -5,11 +5,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
   public class QuestKarazhan{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Karazhan has been captured. " + this.Holder.Name + "FourCC(s  archivists scour its halls for arcane resources.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Learn to research three powerful upgrades at Karazhan.";
     }
 

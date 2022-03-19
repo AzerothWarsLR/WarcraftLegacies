@@ -9,11 +9,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scarlet
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "TyrFourCC(s Hand has joined the war && its military is now free to assist the " + this.Holder.Team.Name + ".";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in TyrFourCC(s Hand";
     }
 
@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scarlet
       RescueNeutralUnitsInRect(gg_rct_TyrUnlock, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       RescueNeutralUnitsInRect(gg_rct_TyrUnlock, this.Holder.Player);
     }
 

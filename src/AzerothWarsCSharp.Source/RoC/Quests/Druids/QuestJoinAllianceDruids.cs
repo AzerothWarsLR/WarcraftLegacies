@@ -6,16 +6,16 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Druids
 
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Druids have joined the Alliance";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Join the Alliance team";
     }
 
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       UnitRemoveAbilityBJ( FourCC(A0IG), LEGEND_MALFURION.Unit);
       this.Holder.Team = TEAM_ALLIANCE;
     }

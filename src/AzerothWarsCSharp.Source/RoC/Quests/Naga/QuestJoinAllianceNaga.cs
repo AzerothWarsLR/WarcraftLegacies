@@ -6,15 +6,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
 
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Illidari have joined the Alliance";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Join the Alliance team";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       UnitRemoveAbilityBJ( FourCC(A0IG), LEGEND_ALTRUIS.Unit);
       this.Holder.Team = TEAM_ALLIANCE;
     }

@@ -11,15 +11,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Sentinels
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "With the Broken Isles && the Tomb of Sargeras secured, work has begun on a maximum security prison named the Vault of the Wardens.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "The Vault of the Wardens && 4 free Wardens appear at the Broken Isles, && you learn to train Wardens";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       CreateUnit(this.Holder.Player, FourCC(n04G), GetRectCenterX(gg_rct_VaultoftheWardens), GetRectCenterY(gg_rct_VaultoftheWardens), 220);
       CreateUnits(this.Holder.Player, WARDEN_ID, GetRectCenterX(gg_rct_VaultoftheWardens), GetRectCenterY(gg_rct_VaultoftheWardens), 270, 4);
       SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);

@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
   public class StormwindQuestSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
       //Setup
       QuestData newQuest = FACTION_STORMWIND.AddQuest(QuestDarkshire.create());
       FACTION_STORMWIND.StartingQuest = newQuest;

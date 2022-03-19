@@ -9,15 +9,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scarlet
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Cultists have been eliminated. Our towns are now safe.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Gain 4000 lumber && 500 gold";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       AdjustPlayerStateBJ( 500, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
       AdjustPlayerStateBJ( 4000, this.Holder.Player, PLAYER_STATE_RESOURCE_LUMBER );
     }

@@ -2,40 +2,41 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.RoC.Legends
 {
-  public static class LegendNeutral{
+  public static class LegendNeutral
+  {
 
-  
-    public static Legend LEGEND_RAGNAROS
-    public static Legend LEGEND_SEAWITCH
 
-    public static Legend LEGEND_AUCHINDOUN
-    public static Legend LEGEND_DRAKTHARONKEEP
-    public static Legend LEGEND_OSHUGUN
-    public static Legend LEGEND_JINTHAALOR
-    public static Legend LEGEND_SHRINEOFULATEK
-    public static Legend LEGEND_SERADANE
-    public static Legend LEGEND_ZULGURUB
-    public static Legend LEGEND_DAZARALOR
-    public static Legend LEGEND_GUNDRAK
-    public static Legend LEGEND_DUSKWOODGRAVEYARD
-    public static Legend LEGEND_GRIMBATOL
-    public static Legend LEGEND_ETHELRETHOR
-    public static Legend LEGEND_NEXUS
-    public static Legend LEGEND_KARAZHAN
-    public static Legend LEGEND_ZULFARRAK
-    public static Legend LEGEND_FOUNTAINOFHEALTH
-    public static Legend LEGEND_FOUNTAINOFHEALTH_WETLANDS
-    public static Legend LEGEND_FOUNTAINOFHEALTH_FERALAS
-    public static Legend LEGEND_FOUNTAINOFHEALTH_TOMB
-    public static Legend LEGEND_FOUNTAINOFHEALTH_DALARAN
-    public static Legend LEGEND_FOUNTAINOFBLOOD
-    public static Legend LEGEND_CENTAURKHAN
-    public static Legend LEGEND_IMMOLTHAR
-    public static Legend LEGEND_ARUGAL
-    public static Legend LEGEND_VAELASTRASZ
-    public static Legend LEGEND_OCCULUS
-    public static Legend LEGEND_SARAGOSA
-    public static Legend LEGEND_CAERDARROW
+    public static Legend LEGEND_RAGNAROS;
+    public static Legend LEGEND_SEAWITCH;
+
+    public static Legend LEGEND_AUCHINDOUN;
+    public static Legend LEGEND_DRAKTHARONKEEP;
+    public static Legend LEGEND_OSHUGUN;
+    public static Legend LEGEND_JINTHAALOR;
+    public static Legend LEGEND_SHRINEOFULATEK;
+    public static Legend LEGEND_SERADANE;
+    public static Legend LEGEND_ZULGURUB;
+    public static Legend LEGEND_DAZARALOR;
+    public static Legend LEGEND_GUNDRAK;
+    public static Legend LEGEND_DUSKWOODGRAVEYARD;
+    public static Legend LEGEND_GRIMBATOL;
+    public static Legend LEGEND_ETHELRETHOR;
+    public static Legend LEGEND_NEXUS;
+    public static Legend LEGEND_KARAZHAN;
+    public static Legend LEGEND_ZULFARRAK;
+    public static Legend LEGEND_FOUNTAINOFHEALTH;
+    public static Legend LEGEND_FOUNTAINOFHEALTH_WETLANDS;
+    public static Legend LEGEND_FOUNTAINOFHEALTH_FERALAS;
+    public static Legend LEGEND_FOUNTAINOFHEALTH_TOMB;
+    public static Legend LEGEND_FOUNTAINOFHEALTH_DALARAN;
+    public static Legend LEGEND_FOUNTAINOFBLOOD;
+    public static Legend LEGEND_CENTAURKHAN;
+    public static Legend LEGEND_IMMOLTHAR;
+    public static Legend LEGEND_ARUGAL;
+    public static Legend LEGEND_VAELASTRASZ;
+    public static Legend LEGEND_OCCULUS;
+    public static Legend LEGEND_SARAGOSA;
+    public static Legend LEGEND_CAERDARROW;
   
 
     public static void Setup( ){

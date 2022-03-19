@@ -6,11 +6,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Twilight
   public class QuestDragonmawPort{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Dragonmaw Port has fallen under our control && its military is now free to assist the " + this.Holder.Team.Name + ".";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all buildings in Dragonmaw Port";
     }
 
@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Twilight
       GrantDragonmawPort(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       GrantDragonmawPort(this.Holder.Player);
     }
 

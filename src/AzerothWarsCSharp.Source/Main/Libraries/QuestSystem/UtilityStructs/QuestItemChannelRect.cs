@@ -2,7 +2,7 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 {
-  public class QuestItemChannelRect{
+  public class QuestItemChannelRect : QuestItemData{
 
   
     private const string TARGET_EFFECT = "war3mapImported\\Fortitude Rune Aura.mdx" ;//Make it so this renders in the world on the target location
@@ -71,7 +71,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 
 
 
-    thistype (unit caster, float duration, float facing, QuestItemChannelRect questItemChannelRect ){
+    public QuestItemChannelRect(unit caster, float duration, float facing, QuestItemChannelRect questItemChannelRect ){
 
       this.caster = caster;
       this.questItemChannelRect = questItemChannelRect;
@@ -161,8 +161,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
       }
     }
 
-    thistype (rect targetRect, string rectName, Legend whichLegend, float duration, float facing ){
-
+    public QuestItemChannelRect(rect targetRect, string rectName, Legend whichLegend, float duration, float facing ){
       trigger trig = CreateTrigger();
       target = RectToRegion(targetRect);
       this.targetRect = targetRect;

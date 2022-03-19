@@ -4,7 +4,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
   public class KultirasQuestSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
 
       FACTION_KULTIRAS.StartingQuest = FACTION_KULTIRAS.AddQuest(QuestBoralus.create());
       FACTION_KULTIRAS.AddQuest(QuestUnlockShip.create());

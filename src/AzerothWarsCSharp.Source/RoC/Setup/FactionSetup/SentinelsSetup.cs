@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.FactionSetup
     Faction FACTION_SENTINELS
   
 
-    public static void OnInit( ){
+    public static void Setup( ){
       Faction f;
 
       FACTION_SENTINELS = Faction.create("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80","ReplaceableTextures\\CommandButtons\\BTNPriestessOfTheMoon.blp");

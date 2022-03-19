@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.FactionSetup
     Faction FACTION_TROLL
   
 
-    public static void OnInit( ){
+    public static void Setup( ){
       Faction f;
       FACTION_TROLL = Faction.create("Zandalar", PLAYER_COLOR_PEACH, "|cffff8c6c","ReplaceableTextures\\CommandButtons\\BTNHeadHunterBerserker.blp");
       f = FACTION_TROLL;

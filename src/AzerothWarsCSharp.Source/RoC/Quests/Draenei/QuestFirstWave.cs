@@ -6,11 +6,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Draenei
 
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Draenei have holded long enough && most of their civilisation had time to join the Exodar";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "The Divine Citadel, Teleporter, Astral Sanctum && Crystal Spire will !be deleted from Azuremyst";
     }
 

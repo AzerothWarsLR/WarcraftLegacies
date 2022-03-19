@@ -10,11 +10,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Stormwind has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in Stormwind && enable Varian to be trained at the altar";
     }
 
@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
       GrantStormwind(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, FourCC(R02S), 1);
       GrantStormwind(this.Holder.Player);
       if (GetLocalPlayer() == this.Holder.Player){

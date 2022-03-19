@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.FactionSetup
   {
     public static Faction FACTION_DRUIDS;
     
-    public static void OnInit()
+    public static void Setup()
     {
       Faction f;
 

@@ -10,15 +10,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Khadgar has closed the Dark Portal definately";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Close the Dark Portal from both sides";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       RemoveUnit(gg_unit_n036_2719);
       RemoveUnit(gg_unit_n036_2720);
       RemoveUnit(gg_unit_n036_1065);

@@ -7,15 +7,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
 
     private static int EXPERIENCE_REWARD = 10000;
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Nordrassil has been captured. The Warsong is supreme!";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Grom Hellscream gains " + I2S(EXPERIENCE_REWARD) + " experience";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       AddHeroXP(LEGEND_GROM.Unit, EXPERIENCE_REWARD, true);
     }
 

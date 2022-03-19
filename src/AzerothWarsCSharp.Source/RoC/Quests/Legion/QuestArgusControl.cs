@@ -10,15 +10,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Enable to research Astral Walk && build a shop" ;//Todo: where is Astral Walk researched? What is the shop called?
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Enable to research Astral Walk && build a shop";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       UnitRescue(gg_unit_n0BE_3261, FACTION_LEGION.Player);
       UnitRescue(gg_unit_n0BE_3262, FACTION_LEGION.Player);
     }

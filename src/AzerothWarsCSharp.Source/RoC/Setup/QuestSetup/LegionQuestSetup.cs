@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
   public class LegionQuestSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
       //Early duel
       QuestData newQuest = FACTION_LEGION.AddQuest(QuestArgusControl.create());
       FACTION_LEGION.StartingQuest = newQuest;

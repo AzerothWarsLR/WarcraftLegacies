@@ -35,7 +35,7 @@ namespace AzerothWarsCSharp.Source.Main.Setup
       }
     }
 
-    public static void OnInit( ){
+    public static void Setup( ){
       group g;
 
       cpBuffs[0] = CP_BUFF_A;

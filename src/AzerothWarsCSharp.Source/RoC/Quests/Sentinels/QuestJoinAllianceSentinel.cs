@@ -6,16 +6,16 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Sentinels
 
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Sentinels have joined the Alliance";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Join the Alliance team";
     }
 
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       UnitRemoveAbilityBJ( FourCC(A0IG), LEGEND_TYRANDE.Unit);
       this.Holder.Team = TEAM_ALLIANCE;
     }

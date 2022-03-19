@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.FactionSetup
     Faction FACTION_TWILIGHT
   
 
-    public static void OnInit( ){
+    public static void Setup( ){
       Faction f;
 
       FACTION_TWILIGHT = Faction.create("Twilight", PLAYER_COLOR_LAVENDER, "|cff9178a8","ReplaceableTextures\\CommandButtons\\BTNChogall.blp");

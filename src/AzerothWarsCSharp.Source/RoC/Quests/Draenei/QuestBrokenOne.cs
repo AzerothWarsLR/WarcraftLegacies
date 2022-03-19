@@ -11,11 +11,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Draenei
 
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The hero Nobundo is now trainable at the Altar";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Nobundo will join the survivors on the Exodar";
     }
 

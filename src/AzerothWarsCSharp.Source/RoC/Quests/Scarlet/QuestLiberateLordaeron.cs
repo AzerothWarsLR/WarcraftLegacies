@@ -10,15 +10,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scarlet
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The lands of Lordaeron have been purged from Undeath && Corruption";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Enable to train Commander Goodchild && Isilien, Unlock New Hearthglen in Northrend && the Scarlet Harbor";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
 
       RescueNeutralUnitsInRect(gg_rct_ScarletHarbor, this.Holder.Player);
       KillNeutralHostileUnitsInRadius(4152, 16521, 2300);

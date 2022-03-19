@@ -10,11 +10,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Frostwolf
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Stonemaul has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in Stonemaul && 3000 lumber";
     }
 
@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Frostwolf
       GrantStonemaul(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       GrantStonemaul(this.Holder.Player);
       AdjustPlayerStateBJ(3000, FACTION_FROSTWOLF.Player, PLAYER_STATE_RESOURCE_LUMBER);
     }

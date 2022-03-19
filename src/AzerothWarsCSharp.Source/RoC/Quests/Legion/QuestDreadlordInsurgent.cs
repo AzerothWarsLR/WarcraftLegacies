@@ -9,15 +9,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
 
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Dreadlord has quickly fallen to Sylvanas && forced to join the Forsaken ";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "You lose everything, but will spawn with a small army, Varimathras && Lilian Voss near Capital City";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       player holderPlayer = this.Holder.Person.Player;
 
       FACTION_LEGION.ModObjectLimit(FourCC(Utic), -UNLIMITED)           ;//Tichondrius

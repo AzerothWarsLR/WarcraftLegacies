@@ -9,11 +9,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Crown Prince Arthas, && what remains of his forces, have landed on the shores of Northrend && established a base camp.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "A new base near Dragonblight in Northrend, && Arthas revives there";
     }
 
@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
       this.Holder.ModObjectLimit(RESEARCH_ID, -UNLIMITED);
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       KillNeutralHostileUnitsInRadius(4152, 16521, 2300);
       KillNeutralHostileUnitsInRadius(-2190, 16803, 700);
       if (GetOwningPlayer(LEGEND_ARTHAS.Unit) == this.Holder.Player){

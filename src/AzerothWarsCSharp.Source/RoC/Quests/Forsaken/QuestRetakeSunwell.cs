@@ -5,15 +5,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Forsaken
   public class QuestRetakeSunwell{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Sylvanas && all the Banshee Hall units gain 500 bonus hit points";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Sylvanas && her Banshees will be empowered with 500 additional hitpoints each";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, FourCC(R07V), 1);
     }
 

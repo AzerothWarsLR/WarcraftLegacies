@@ -5,11 +5,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
   public class QuestWarMachine{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The massive exploitation of Ashenvale has bolstered the entire HordeFourCC(s weapons, armour && defenses.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "You && all of your allies gain the researches " + GetObjectName(FourCC(Rhme)) + ", " + GetObjectName()Rhar)) + ", " + GetObjectName()Rorb)) + ", && " + GetObjectName()Rosp));
     }
 
@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
       SetPlayerTechResearched(whichPlayer, FourCC(Rosp), 3);
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       var i = 0;
       while(true){
         if ( i == MAX_PLAYERS){ break; }

@@ -12,15 +12,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Great Forge has been annihilated. The Fel HordeFourCC(s peons immediately salvage its intact refineries && put them to purpose in the creation of Felsteel.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Learn to train " + I2S(UNIT_LIMIT) + " " + GetObjectName(UNITTYPE_ID) + "s from the " + GetObjectName(BUILDING_ID) + " && acquire Felsteel Plating";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
     }
 

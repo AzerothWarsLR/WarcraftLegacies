@@ -10,15 +10,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Archimonde has now consummed the World Tree && is now nigh unstoppable";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "By consuming the World Tree, Archimonde will obtain immense power. +80 to all stats. Additionally, the Druids faction will be eliminated.";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       unit whichUnit = LEGEND_ARCHIMONDE.Unit;
       FACTION_DRUIDS.obliterate();
       BlzSetUnitName(whichUnit, "Devourer of Worlds");

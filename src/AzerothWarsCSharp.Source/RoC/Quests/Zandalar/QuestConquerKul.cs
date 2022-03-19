@@ -9,11 +9,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Zandalar
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Before setting sails we need to conquer KulFourCC(tiras";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Unlock shipyards";
     }
 

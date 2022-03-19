@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.FactionSetup
     Faction FACTION_FROSTWOLF
   
 
-    public static void OnInit( ){
+    public static void Setup( ){
       Faction f;
       FACTION_FROSTWOLF = Faction.create("Frostwolf", PLAYER_COLOR_RED, "|c00ff0303","ReplaceableTextures\\CommandButtons\\BTNThrall.blp");
       f = FACTION_FROSTWOLF;

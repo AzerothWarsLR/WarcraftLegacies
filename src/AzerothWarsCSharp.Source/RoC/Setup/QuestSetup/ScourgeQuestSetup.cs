@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
   public class ScourgeQuestSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
       QuestSpiderWar questSpiderWar = QuestSpiderWar.create();
       QuestKelthuzad questKelthuzad = QuestKelthuzad.create();
       QuestDrakUnlock questDrakUnlock = QuestDrakUnlock.create();

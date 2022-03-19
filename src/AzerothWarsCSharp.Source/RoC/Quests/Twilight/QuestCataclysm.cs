@@ -14,15 +14,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Twilight
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Deathwing is here, Doomsday is at hand, the Cataclysm as begun!";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Cultists all over the world join your cause actively, Deathwing as a super demihero && the 2 elemental ascendant heroes.";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetPlayerTechResearched(this.Holder.Player, CATACLYSM_RESEARCH, 1);
       PlayThematicMusicBJ( "war3mapImported\\TwilightTheme.mp3" );
       SetPlayerTechResearched(FACTION_CTHUN.Player, FourCC(R07D), 1);

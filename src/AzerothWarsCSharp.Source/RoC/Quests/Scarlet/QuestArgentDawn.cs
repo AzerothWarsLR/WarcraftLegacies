@@ -15,15 +15,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scarlet
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Argent Dawn has been declared && ready to join the " + this.Holder.Team.Name + ".";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Unlock your elites, Crusader units && Tirion Fordring";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       this.Holder.Name = "Argent";
       this.Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNTirionPaladin.blp";
       SetPlayerTechResearched(FACTION_SCARLET.Player, FourCC(R086), 1);

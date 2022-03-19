@@ -14,11 +14,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Nazjatar is now under the influence of the Old Gods && the portal is opened to NyFourCC(alotha.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "A portal is opened to NyFourCC(alotha, Illidan turns Hostile, Aszhara appears && you join the Old Gods team";
     }
 
@@ -51,7 +51,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
       FACTION_NAGA.ModObjectLimit(FourCC(H08U), 1) ;//Azshara
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       GrantNazjatar();
       AdjustTechtree();
       FailQuests();

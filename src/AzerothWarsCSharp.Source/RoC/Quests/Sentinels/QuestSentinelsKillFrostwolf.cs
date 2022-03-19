@@ -10,15 +10,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Sentinels
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Frostwolves have been ousted from Kalimdor, along with their Tauren allies. They will !be missed.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "The demihero Amara && the hero Jarod";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);
       DisplayUnitTypeAcquired(this.Holder.Player, AMARA_ID, "You can now revive Amara from the Altar of Elders.");
     }

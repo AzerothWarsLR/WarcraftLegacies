@@ -15,11 +15,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Forsaken
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Undercity is now under the " + this.Holder.Team.Name + " && they have declared independance.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in Undercity, unlock Nathanos && unally the Legion team";
     }
 
@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Forsaken
       RescueNeutralUnitsInRect(gg_rct_UndercityUnlock, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       RescueNeutralUnitsInRect(gg_rct_UndercityUnlock, this.Holder.Player);
       SetPlayerTechResearched(FACTION_LORDAERON.Player, FourCC(R08G), 1);
       SetPlayerTechResearched(FACTION_LEGION.Player, FourCC(R08G), 1);

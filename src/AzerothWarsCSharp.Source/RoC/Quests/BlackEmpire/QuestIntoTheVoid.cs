@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
 using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.RoC.Quests.BlackEmpire
 {
-  public class QuestIntoTheVoid{
+  public class QuestIntoTheVoid : QuestData{
 
   
     private const int QUESTRESEARCH_ID = FourCC(R084)   ;//This research is given when the quest is completed
@@ -14,11 +15,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.BlackEmpire
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Zakajz the Corruptor has been awakened from the Tomb of Tyr && has rejoined his master YoggFourCC(Saron";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Gain the hero Zakajz the Corruptor";
     }
 

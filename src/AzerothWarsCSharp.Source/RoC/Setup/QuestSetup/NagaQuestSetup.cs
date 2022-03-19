@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
   public class NagaQuestSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
       //Early duel
 
       QuestData chapterThree = QuestIllidanChapterThree.create();

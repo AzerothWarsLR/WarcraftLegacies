@@ -7,15 +7,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
   public class QuestJainaSoulGem{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Jaina Proudmoore has discovered the Soul Gem within the ruined vaults at Scholomance.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "The Soul Gem";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       UnitAddItemSafe(LEGEND_JAINA.Unit, ARTIFACT_SOULGEM.item);
     }
 

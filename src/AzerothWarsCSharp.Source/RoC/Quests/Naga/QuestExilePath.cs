@@ -34,15 +34,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Illidan has invaded Outland && has allied himself with the Draenei Broken Ones.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Open a portal to Outland, grants you the Draenei village near it, enables you to train Akama, Najentus && Draenei units, grants you 300 food limit && grants you 800 gold";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       GrantAkama(this.Holder.Player);
       FACTION_NAGA.ModObjectLimit(FourCC(n08W), UNLIMITED)   ;//Lost One Den
       FACTION_NAGA.ModObjectLimit(FourCC(ndrn), UNLIMITED)   ;//Vindicator

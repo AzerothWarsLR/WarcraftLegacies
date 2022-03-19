@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.FactionSetup
     Faction FACTION_DRAENEI
   
 
-    public static void OnInit( ){
+    public static void Setup( ){
       Faction f;
 
       FACTION_DRAENEI = Faction.create("The Exodar", PLAYER_COLOR_NAVY, "|cff000080","ReplaceableTextures\\CommandButtons\\BTNBOSSVelen.blp");

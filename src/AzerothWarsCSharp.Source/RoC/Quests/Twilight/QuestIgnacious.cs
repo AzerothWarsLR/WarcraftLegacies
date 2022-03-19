@@ -10,11 +10,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Twilight
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The great Ragnaros has ascended one of our shamans.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "You can summon Ignacious from the Altar";
     }
 

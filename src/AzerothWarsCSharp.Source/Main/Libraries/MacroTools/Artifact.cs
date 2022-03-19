@@ -1,62 +1,138 @@
 using System;
 using System.Collections.Generic;
+using WCSharp.Events;
+using WCSharp.Shared.Data;
 
 namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 {
   public sealed class Artifact
   {
-    public event EventHandler<Artifact> OnArtifactCreate;
-    public event EventHandler<Artifact> OnArtifactAcquire;
-    public event EventHandler<Artifact> OnArtifactDrop;
-    public event EventHandler<Artifact> OnArtifactDestroy;
-    public event EventHandler<Artifact> OnArtifactOwnerChange; //The owner of this Artifact changes
-    public event EventHandler<Artifact> OnArtifactStatusChange; //An Artifact changes status
-    public event EventHandler<Artifact> OnArtifactFactionChange; //The owner of this Artifact changes factions
+    private static readonly Dictionary<int, Artifact> ArtifactsByType = new();
+    private static readonly List<Artifact> AllArtifacts = new();
 
-    public event EventHandler<Artifact>
-      OnArtifactCarrierOwnerChange; //The unit carrying an Artifact changes player ownership
+    private readonly int _artifactHolderAbilId = FourCC("A01Y");
+    private Person? _owningPerson;
+    private unit? _owningUnit;
+    private ArtifactStatus _status;
+    private int _titanforgedAbility = FourCC("A0VJ");
+    private string? _description;
 
-    public event EventHandler<Artifact>
-      OnArtifactDescriptionChange; //The Artifact has its description changed. This is just text and is not represented anywhere by the Artifact itself
+    public Artifact(item whichItem)
+    {
+      Item = whichItem;
+      _status = ArtifactStatus.Ground;
+      SetOwningPerson(null);
+    }
 
-    public const int ARTIFACT_STATUS_GROUND = 0; //Artifact is on the ground
-    public const int ARTIFACT_STATUS_UNIT = 1; //Artifact is held by a unit
-    public const int ARTIFACT_STATUS_SPECIAL = 2; //Artifact is nowhere, but artifically has a location
+    /// <summary>
+    /// Registers an <see cref="Artifact"/> to the Artifact System.
+    /// </summary>
+    public static void Register(Artifact artifact)
+    {
+      if (!ArtifactsByType.ContainsKey(GetItemTypeId(artifact.Item)))
+      {
+        ArtifactsByType[GetItemTypeId(artifact.Item)] = artifact;
+        OnArtifactCreate?.Invoke(artifact, artifact);
+        AllArtifacts.Add(artifact);
+      }
+      else
+      {
+        throw new Exception($"Attempted to create already existing Artifact from {GetItemName(artifact.Item)}.");
+      }
+    }
 
-    public const int
-      ARTIFACT_STATUS_HIDDEN =
-        3; //Artifact does not allow pinging, and only displays text (which is not set automatically)
+    public item Item { get; private set; }
 
-    int ARTIFACT_HOLDER_ABIL_ID = FourCC("A01Y");
+    /// <summary>
+    ///   A pretend-position. The player can ping this position instead of the item's real position if
+    ///   <see cref="ArtifactStatus" /> is set to <see cref="ArtifactStatus.Special" />.
+    /// </summary>
+    public Point FalsePosition { get; set; } = new(0, 0);
 
-    private static Dictionary<int, Artifact> _artifactsByType = new();
-    readonly Person _owningPerson;
-    private unit _owningUnit;
-    private int _status;
-    private string _description; //More like a situation describer; eg "Owned by xx..." or "Unknown location"
-    private bool _titanforged;
-    private int _titanforgedAbility = FourCC("A0VJ"); //The extra ability the Artifact gains when it)s Titanforged
-
-    float falseX = 0; //Where the map should ping this artifact when it is in SPECIAL status mode
-    float falseY = 0; //^
-
-    public item Item { get; private init; }
-
+    /// <summary>
+    ///   The extra ability the Artifact gains when it's Titanforged.
+    /// </summary>
     public int TitanforgedAbility
     {
       set => _titanforgedAbility = value;
     }
 
-    public bool Titanforged => _titanforged;
+    /// <summary>
+    ///   Whether or not the Artifact has gained its bonus ability.
+    /// </summary>
+    public bool Titanforged { get; private set; }
+
+    public ArtifactStatus Status
+    {
+      set
+      {
+        _status = value;
+        OnArtifactStatusChange?.Invoke(this, this);
+      }
+    }
 
     /// <summary>
-    /// Grant the Artifact an additional, predefined ability.
+    ///   The <see cref="unit" /> carrying this <see cref="Artifact" />, if any.
+    /// </summary>
+    public unit? OwningUnit
+    {
+      get => _owningUnit;
+      private set
+      {
+        if (_owningPerson != Person.ByHandle(GetOwningPlayer(value)))
+          SetOwningPerson(value != null ? Person.ByHandle(GetOwningPlayer(value)) : null);
+      }
+    }
+
+    public string Description
+    {
+      set
+      {
+        _description = value;
+        OnArtifactDescriptionChange?.Invoke(this, this);
+      }
+    }
+
+    public static event EventHandler<Artifact>? OnArtifactCreate;
+    public static event EventHandler<Artifact>? OnArtifactAcquire;
+    public static event EventHandler<Artifact>? OnArtifactDrop;
+    public static event EventHandler<Artifact>? OnArtifactDestroy;
+
+    /// <summary>
+    ///   The owner of this <see cref="Artifact" /> changes.
+    /// </summary>
+    public event EventHandler<Artifact>? OnArtifactOwnerChange;
+
+    /// <summary>
+    ///   Any Artifact changes its <see cref="ArtifactStatus" />.
+    /// </summary>
+    public event EventHandler<Artifact>? OnArtifactStatusChange;
+
+    /// <summary>
+    ///   Any <see cref="Artifact" /> changes Faction.
+    /// </summary>
+    public event EventHandler<Artifact>? OnArtifactFactionChange;
+
+    /// <summary>
+    /// Any unit carrying an Artifact has its owner changed.
+    /// </summary>
+    public event EventHandler<Artifact>?
+      OnArtifactCarrierOwnerChange;
+
+    /// <summary>
+    /// Any <see cref="Artifact"/> has its description changed.
+    /// </summary>
+    public event EventHandler<Artifact>?
+      OnArtifactDescriptionChange;
+
+    /// <summary>
+    ///   Grant the Artifact a predefined bonus ability.
     /// </summary>
     public void Titanforge()
     {
-      if (_titanforged == false)
+      if (Titanforged == false)
       {
-        _titanforged = true;
+        Titanforged = true;
         BlzItemAddAbility(Item, _titanforgedAbility);
         BlzSetItemExtendedTooltip(Item,
           BlzGetItemExtendedTooltip(Item) + "|n|n|cff800000Titanforged|r|n" +
@@ -70,200 +146,104 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       OnArtifactFactionChange?.Invoke(this, this);
     }
 
-    public int Status
+    private void SetOwningPerson(Person? p)
     {
-      set
-      {
-        _status = value;
-        OnArtifactStatusChange?.Invoke(this, this);
-      }
-    }
-
-    public unit OwningUnit
-    {
-      get => _owningUnit;
-      set
-      {
-        if (_owningPerson != Person.ByHandle(GetOwningPlayer(value)))
-        {
-          if (value != null)
-          {
-            this.SetOwningPerson(Person.ByHandle(GetOwningPlayer(value)));
-          }
-          else
-          {
-            this.SetOwningPerson(null);
-          }
-        }
-      }
-    }
-
-    private void SetOwningPerson(Person p)
-    {
-      if (_owningPerson != 0)
-      {
-        ArtifactGroup.artifactGroupsByPlayerId[GetPlayerId(_owningPerson.Player)]
-          .remove(this); //Remove this from the old owner)s Artifact group
-      }
-
-      if (p != 0)
-      {
-        ArtifactGroup.artifactGroupsByPlayerId[GetPlayerId(p.Player)]
-          .add(this); //Add this to the new owner)s Artifact Group
-      }
-
       _owningPerson = p;
       OnArtifactOwnerChange?.Invoke(this, this);
 
-      if (_owningPerson != 0)
-      {
-        this.setStatus(ARTIFACT_STATUS_UNIT);
-      }
-      else
-      {
-        this.setStatus(ARTIFACT_STATUS_GROUND);
-      }
-    }
-
-    public string Description
-    {
-      set
-      {
-        _description = value;
-        OnArtifactDescriptionChange?.Invoke(this, this);
-      }
+      Status = _owningPerson != null ? ArtifactStatus.Unit : ArtifactStatus.Ground;
     }
 
     public static Artifact GetFromTypeId(int typeId)
     {
-      throw new NotImplementedException();
+      return ArtifactsByType[typeId];
     }
 
     private void PickedUp()
     {
-      this.setOwningUnit(GetTriggerUnit());
+      OwningUnit = GetTriggerUnit();
       OnArtifactAcquire?.Invoke(this, this);
     }
 
-    void dropped()
+    private void Dropped()
     {
-      Shore tempShore = 0;
-      Artifact.TriggerArtifact = this;
-
       if (!IsTerrainPathable(GetUnitX(_owningUnit), GetUnitY(_owningUnit), PATHING_TYPE_FLOATABILITY) &&
           IsTerrainPathable(GetUnitX(_owningUnit), GetUnitY(_owningUnit), PATHING_TYPE_WALKABILITY))
-      {
         if (!UnitAlive(_owningUnit))
         {
-          tempShore = GetNearestShore(GetUnitX(_owningUnit), GetUnitY(_owningUnit));
-          _item = CreateItem(GetItemTypeId(_item), tempShore.x, tempShore.y);
+          Shore tempShore = Shore.GetNearestShore(GetUnitX(_owningUnit), GetUnitY(_owningUnit));
+          Item = CreateItem(GetItemTypeId(Item), tempShore.Position.X, tempShore.Position.Y);
         }
-      }
 
       //Remove dummy Artifact holding ability if the dropping unit had one
-      if (GetUnitAbilityLevel(_owningUnit, ARTIFACT_HOLDER_ABIL_ID) > 0)
-      {
-        UnitRemoveAbility(_owningUnit, ARTIFACT_HOLDER_ABIL_ID);
-      }
+      if (GetUnitAbilityLevel(_owningUnit, _artifactHolderAbilId) > 0)
+        UnitRemoveAbility(_owningUnit, _artifactHolderAbilId);
 
       SetOwningPerson(null);
       OwningUnit = null;
-      OnArtifactDrop.Invoke(this, this);
+      OnArtifactDrop?.Invoke(this, this);
     }
 
-    void ping(player p)
+    private void Ping(player p)
     {
       if (GetLocalPlayer() == p)
       {
-        if (_status == ARTIFACT_STATUS_SPECIAL)
-        {
-          PingMinimap(falseX, falseY, 3);
-        }
+        if (_status == ArtifactStatus.Special)
+          PingMinimap(FalsePosition.X, FalsePosition.Y, 3);
         else if (_owningUnit != null)
-        {
           PingMinimap(GetUnitX(_owningUnit), GetUnitY(_owningUnit), 3);
-        }
         else
-        {
-          PingMinimap(GetItemX(_item), GetItemY(_item), 3);
-        }
+          PingMinimap(GetItemX(Item), GetItemY(Item), 3);
       }
     }
 
     public void Destroy()
     {
       OnArtifactDestroy?.Invoke(this, this);
-      RemoveItem(_item);
-    }
-
-    Artifact(item whichItem)
-    {
-      if (thistype.artifactsByType[GetItemTypeId(whichItem)] == null)
-      {
-        thistype.artifactsByType[GetItemTypeId(whichItem)] = this;
-        thistype.triggerArtifact = this; //For event response
-        _item = whichItem;
-        _status = 0;
-        this.setOwningPerson(0);
-        OnArtifactCreate.fire();
-        ;
-        ;
-      }
-      else
-      {
-        BJDebugMsg("ERROR: Attempted to create already existing Artifact from " + GetItemName(whichItem));
-        return 0;
-      }
+      RemoveItem(Item);
     }
 
     private static void ItemPickup()
     {
-      _artifactsByType[GetItemTypeId(GetManipulatedItem())]?.PickedUp();
+      ArtifactsByType[GetItemTypeId(GetManipulatedItem())]?.PickedUp();
     }
 
     private static void ItemDrop()
     {
-      Artifact tempArtifact = 0;
       if (!IsUnitIllusion(GetTriggerUnit()))
       {
-        tempArtifact = _artifactsByType[GetItemTypeId(GetManipulatedItem())];
-        if (tempArtifact != 0)
-        {
-          tempArtifact.dropped();
-        }
+        Artifact tempArtifact = ArtifactsByType[GetItemTypeId(GetManipulatedItem())];
+        if (tempArtifact != null) tempArtifact.Dropped();
       }
     }
 
-    private static void OnPersonFactionChanged()
+    private static void OnPersonFactionChanged(object? sender, Person person)
     {
-      ArtifactGroup.artifactGroupsByPlayerId[GetPlayerId(GetTriggerPerson().Player)].updateFactions();
     }
 
+    private static IEnumerable<Artifact> GetAllArtifacts()
+    {
+      foreach (var artifact in AllArtifacts) yield return artifact;
+    }
+
+    /// <summary>
+    ///   When a unit carrying an <see cref="Artifact" /> changes owner, update their <see cref="Artifact" />s owner
+    ///   information.
+    /// </summary>
     private static void UnitChangeOwner()
     {
-      ArtifactGroup tempArtifactGroup = ArtifactGroup.artifactGroupsByOwningUnit[GetHandleId(GetTriggerUnit())];
-      if (tempArtifactGroup != 0)
-      {
-        if (GetTriggerUnit() != null)
-        {
-          tempArtifactGroup.setOwningPersons(Person.ByHandle(GetOwningPlayer(GetTriggerUnit())));
-        }
-        else
-        {
-          tempArtifactGroup.setOwningPersons(0);
-        }
-      }
+      if (GetTriggerUnit() != null)
+        foreach (var artifact in GetAllArtifacts())
+          if (artifact.OwningUnit == GetTriggerUnit())
+            artifact.SetOwningPerson(Person.ByHandle(GetOwningPlayer(GetTriggerUnit())));
     }
 
     public static void Setup()
     {
-      var trig = CreateTrigger();
-      OnPersonFactionChange.register(trig);
-      TriggerAddAction(trig, OnPersonFactionChanged);
-
-      PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_PICKUP_ITEM, ItemPickup); //TODO: use filtered events
-      PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_DROP_ITEM, ItemDrop); //TODO: use filtered events
-      PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_CHANGE_OWNER, UnitChangeOwner); //TODO: use filtered events
+      Person.OnPersonFactionChange += OnPersonFactionChanged;
+      PlayerUnitEvents.Register(PlayerUnitEvent.ItemTypeIsPickedUp, ItemPickup);
+      PlayerUnitEvents.Register(PlayerUnitEvent.ItemTypeIsDropped, ItemDrop);
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeChangesOwner, UnitChangeOwner);
     }
   }
 }

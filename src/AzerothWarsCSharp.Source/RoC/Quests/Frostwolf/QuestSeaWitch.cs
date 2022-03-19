@@ -13,11 +13,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Frostwolf
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The sea witch ZarFourCC(jira has been slain. Thrall && Vol)jin can now sail.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Gain control of all neutral units on the Darkspear Isles && teleport to shore";
     }
 
@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Frostwolf
       RescueNeutralUnitsInRect(gg_rct_EchoUnlock, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       Person killingPerson = Person.ByHandle(GetOwningPlayer(GetKillingUnit()));
       group tempGroup = CreateGroup();
       unit u;

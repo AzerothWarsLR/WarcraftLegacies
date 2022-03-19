@@ -10,15 +10,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Sapphiron has been slain, && has been reanimated as a mighty Frost Wyrm under the command of the Scourge.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "The demihero Sapphiron";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       CreateUnit(this.Holder.Player, SAPPHIRON_ID, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()), GetUnitFacing(GetTriggerUnit()));
       SetPlayerTechResearched(this.Holder.Player, SAPPHIRON_RESEARCH, 1);
     }

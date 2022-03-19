@@ -10,11 +10,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Dalaran outskirs are now secure, the mages will join " + this.Holder.Team.Name + ".";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in Dalaran && enables Antonidas to be trained at the Altar";
     }
 
@@ -51,7 +51,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
       GrantDalaran(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, FourCC(R038), 1);
       GrantDalaran(this.Holder.Player);
       if (GetLocalPlayer() == this.Holder.Player){

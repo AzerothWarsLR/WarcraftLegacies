@@ -5,11 +5,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
   public class QuestNethergarde{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Varian has come to relieve the Nethergarde garrison.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "You gain control of the Nethergarde base";
     }
 
@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
       GrantNethergarde(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       GrantNethergarde(this.Holder.Player);
       FACTION_STORMWIND.ModObjectLimit(FourCC(h03F),1)               ;//Reginald windsor
     }

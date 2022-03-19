@@ -11,15 +11,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Warsong Clan has sail for the icy shores of Northrend && up a formidable encampment at Borean Tundra.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "A new base at Borean Tundra in Northrend";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       unit boreanTundra = ControlPoint.ByUnitType(FourCC(n00G)).Unit;
       unit warsongHold;
       KillNeutralHostileUnitsInRadius(GetUnitX(boreanTundra), GetUnitY(boreanTundra), 2300);

@@ -12,11 +12,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
 
     private QuestItemAnyUnitInRect questItemAnyUnitInRect = 0;
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Galen Trollbane has pledged his forces to StormwindFourCC(s cause.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units at Stromgarde, the artifact TrolFourCC(kalar, && you can summon the hero Galen Trollbane from the Altar of Kings";
     }
 
@@ -44,7 +44,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
       ARTIFACT_TROLKALAR.setStatus(ARTIFACT_STATUS_GROUND);
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       GiveStromgarde(this.Holder.Player);
       UnitAddItemSafe(questItemAnyUnitInRect.TriggerUnit, ARTIFACT_TROLKALAR.item);
       SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);

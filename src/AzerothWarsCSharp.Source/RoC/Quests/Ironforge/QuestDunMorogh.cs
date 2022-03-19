@@ -6,11 +6,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Ironforge
   public class QuestDunMorogh{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Trolls have been defeated, Dun Morogh will join your cause.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in Dun Morogh";
     }
 
@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Ironforge
       GrantDunMorogh(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       GrantDunMorogh(this.Holder.Player);
     }
 

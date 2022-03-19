@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
   public class FrostwolfQuestSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
       //Setup
       QuestData newQuest = FACTION_FROSTWOLF.AddQuest(QuestSeaWitch.create());
       FACTION_FROSTWOLF.StartingQuest = newQuest;

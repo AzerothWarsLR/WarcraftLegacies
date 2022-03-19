@@ -4,7 +4,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup
 {
   public class InstanceSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
       Instance tempInstance = 0;
 
       tempInstance = Instance.create();

@@ -14,15 +14,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Blood Elves have joined the Burning Legion";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Unlock the summon KilFourCC(jaeden quest && join the Burning Legion team";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       STAY_LOYAL.Progress = QUEST_PROGRESS_FAILED;
       UnitRemoveAbilityBJ( FourCC(A0IF), LEGEND_KAEL.Unit);
       UnitRemoveAbilityBJ( FourCC(A0IK), LEGEND_KAEL.Unit);

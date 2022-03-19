@@ -10,15 +10,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Blood Elves stay loyal to Illidan";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Stay allied to Illidan";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       GREAT_TREACHERY.Progress = QUEST_PROGRESS_FAILED;
       SUMMON_KIL.Progress = QUEST_PROGRESS_FAILED;
       UnitRemoveAbilityBJ( FourCC(A0IK), LEGEND_KAEL.Unit);

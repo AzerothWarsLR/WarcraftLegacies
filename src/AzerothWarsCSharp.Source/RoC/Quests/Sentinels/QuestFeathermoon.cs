@@ -10,11 +10,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Sentinels
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Feathermoon Stronghold has been relieved && has joined the Sentinels in their war effort";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in Feathermoon Stronghold && make Shandris && Maiev trainable at the Altar";
     }
 
@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Sentinels
       GrantFeathermoon(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       GrantFeathermoon(this.Holder.Player);
       AdjustPlayerStateBJ( 300, this.Holder.Player, PLAYER_STATE_RESOURCE_LUMBER );
       AdjustPlayerStateBJ( 300, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD );

@@ -6,11 +6,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Sentinels
   public class QuestAstranaar{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Astranaar has been relieved && has joined the Sentinels in their war effort";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in Astranaar Outpost && Darnassus";
     }
 
@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Sentinels
       RescueNeutralUnitsInRect(gg_rct_TeldrassilUnlock2, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       RescueNeutralUnitsInRect(gg_rct_AstranaarUnlock, this.Holder.Player);
       RescueNeutralUnitsInRect(gg_rct_TeldrassilUnlock1, this.Holder.Player);
       RescueNeutralUnitsInRect(gg_rct_TeldrassilUnlock2, this.Holder.Player);

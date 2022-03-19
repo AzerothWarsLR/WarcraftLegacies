@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
   public class QuelthalasQuestSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
       //Setup
       QuestData newQuest = FACTION_QUELTHALAS.AddQuest(QuestSilvermoon.create());
       QuestData tempestKeep = QuestTempestKeep.create();

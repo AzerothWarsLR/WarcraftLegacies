@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.FactionSetup
     Faction FACTION_NAGA
   
 
-    public static void OnInit( ){
+    public static void Setup( ){
       Faction f;
 
       FACTION_NAGA = Faction.create("Illidan", PLAYER_COLOR_VIOLET, "|cffff00ff","ReplaceableTextures\\CommandButtons\\BTNEvilIllidan.blp");

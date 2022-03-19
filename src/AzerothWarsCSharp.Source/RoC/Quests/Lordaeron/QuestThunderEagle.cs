@@ -11,15 +11,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Thunder Eagles, now in safe hands " + this.Holder.Name + ".";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Learn to train " + GetObjectName(THUNDER_EAGLE_ID) + "s";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);
       DisplayUnitTypeAcquired(this.Holder.Player, THUNDER_EAGLE_ID, "You can now train Thunder Eagles from upgraded Town Halls && from your capitals.");
     }

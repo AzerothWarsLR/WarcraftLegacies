@@ -2,7 +2,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup
 {
   public class PersonSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
       Person p;
 
       p = Person.create(Player(0));

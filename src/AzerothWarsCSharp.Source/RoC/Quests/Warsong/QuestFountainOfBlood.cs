@@ -9,15 +9,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Fountain of Blood is under Warsong control. As the orcs drink from it, they feel a a familiar fury awake within them.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Allows Orcish units to increase their attack rate && movement speed temporarily";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);
     }
 

@@ -8,11 +8,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
     private readonly int _chenResearch = FourCC("R037");
     private readonly int _chenId = FourCC("Nsjs");
     
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Chen Stormstout has joined the " + this.Holder.Team.Name + ".";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "The hero Chen Stormstout";
     }
 
@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Warsong
       RemoveUnit(gg_unit_Nsjs_1887);
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       RemoveUnit(gg_unit_Nsjs_1887);
       SetPlayerTechResearched(Holder.Player, _chenResearch, 1);
     }

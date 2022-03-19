@@ -5,11 +5,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Ironforge
   public class QuestThelsamar{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Murlocs have been defeated, Thelsamar will join your cause.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in Thelsamar";
     }
 
@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Ironforge
       GrantThelsamar(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       GrantThelsamar(this.Holder.Player);
     }
 

@@ -15,11 +15,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scarlet
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Scarlet Monastery Hand is complete && ready to join the " + this.Holder.Team.Name + ".";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in the Scarlet Monastery && you will unally the alliance";
     }
 
@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scarlet
       RescueNeutralUnitsInRect(gg_rct_ScarletAmbient, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetPlayerTechResearched(FACTION_KULTIRAS.Player, FourCC(R06V), 1);
       SetPlayerTechResearched(FACTION_LORDAERON.Player, FourCC(R06V), 1);
       SetPlayerTechResearched(FACTION_SCARLET.Player, FourCC(R086), 1);

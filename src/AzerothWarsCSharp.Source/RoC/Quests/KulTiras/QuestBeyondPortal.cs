@@ -9,11 +9,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.KulTiras
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The orcs are no more && we can now train Fusillier.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "You will be able to train Fusillier from the Barrack";
     }
 

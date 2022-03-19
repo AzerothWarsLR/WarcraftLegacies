@@ -10,12 +10,12 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Cthun
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "THe titan jailors guarding CFourCC(thun)s resting place have been destroyed. Now nothing stands between the Qiraji && their master.";
     }
 
-    private string operator CompletionDescription( ){
-      return "Gain control of all units in AhnFourCC(qiraj)s inner temple && unlock the awakening spell for C)thun";
+    protected override string CompletionDescription => 
+      return "Gain control of all units in Ahn'qiraj)s inner temple && unlock the awakening spell for C'thunn";
     }
 
     private void OnFail( ){
@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Cthun
       WaygateSetDestinationLocBJ( gg_unit_h03V_0591, GetRectCenter(gg_rct_Silithus_Stone_Interior) );
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       WaygateActivateBJ( true, gg_unit_h03V_0591 );
       WaygateSetDestinationLocBJ( gg_unit_h03V_0591, GetRectCenter(gg_rct_Silithus_Stone_Interior) );
       RescueNeutralUnitsInRect(gg_rct_TunnelUnlock, this.Holder.Player);

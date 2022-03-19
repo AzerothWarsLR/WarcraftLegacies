@@ -10,11 +10,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Legion has secured a foothold on Azeroth.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "You can build the Infernal Machine Factory && summon Anetheron from the " + GetObjectName(ALTAR_ID);
     }
 

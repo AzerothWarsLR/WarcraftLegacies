@@ -10,15 +10,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Ironforge
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Magni has spoken with Falstad Wildhammer && secured an alliance with the Wildhammer Clan.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "You gain control of Aerie Peak && you can train the hero Falstad Wildhammer from the Altar of Fortitude";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       group tempGroup = CreateGroup();
       unit u;
 

@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
   public class QuestKelthuzad{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       string completionPopup = "KelFourCC(thuzad has been reanimated && empowered through the unlimited magical energies of the Sunwell.";
       if (FACTION_LEGION != 0){
         completionPopup = completionPopup + " He now has the ability to summon the Burning Legion.";
@@ -13,11 +13,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
       return completionPopup;
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "KelFourCC(thuzad becomes a Lich";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       LEGEND_KELTHUZAD.UnitType = UNITTYPE_KELTHUZAD_LICH;
       LEGEND_KELTHUZAD.PermaDies = false;
       SetUnitState(LEGEND_KELTHUZAD.Unit, UNIT_STATE_LIFE, GetUnitState(LEGEND_KELTHUZAD.Unit, UNIT_STATE_MAX_LIFE));

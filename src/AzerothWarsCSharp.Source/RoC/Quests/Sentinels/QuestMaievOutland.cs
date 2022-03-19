@@ -6,15 +6,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Sentinels
 
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
 
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of MaievFourCC(s Outland outpost && moves Maiev to Outland";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetUnitPosition(LEGEND_MAIEV.Unit, -5252, -27597);
       UnitRemoveAbilityBJ( FourCC(A0J5), LEGEND_MAIEV.Unit);
       RescueUnitsInGroup(udg_MaievUnlockOutland, this.Holder.Player);

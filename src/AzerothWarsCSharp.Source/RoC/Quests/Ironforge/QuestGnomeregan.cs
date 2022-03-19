@@ -9,11 +9,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Ironforge
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Gnomeregan has been literated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in Gnomeregan";
     }
 
@@ -40,7 +40,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Ironforge
       GrantGnomeregan(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, FourCC(R05Q), 1);
       GrantGnomeregan(this.Holder.Player);
     }

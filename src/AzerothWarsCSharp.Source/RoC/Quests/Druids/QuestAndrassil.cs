@@ -12,15 +12,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Druids
 
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "With Northrend finally free of the Lich KingFourCC(s influence, the time is ripe to regrow Andrassil in the hope that it can help reclaim this barren land.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "A new capital at Grizzly Hills that can research a powerful upgrade for your Druids of the Claw, && you can train the hero Ursoc from the Altar of Elders";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
       CreateUnit(Holder.Player, FourCC(n04F), GetRectCenterX(gg_rct_Andrassil), GetRectCenterY(gg_rct_Andrassil), 0);
     }

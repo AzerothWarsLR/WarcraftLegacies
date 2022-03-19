@@ -4,7 +4,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
   public class TrollQuestSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
 
       FACTION_TROLL.StartingQuest = FACTION_TROLL.AddQuest(QuestZandalar.create());
       //call FACTION_TROLL.AddQuest(QuestGoldenFleet.create())

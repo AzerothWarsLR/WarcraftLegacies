@@ -13,11 +13,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Frostwolf
 
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
 
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of Thunder Bluff";
     }
 
@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Frostwolf
       RescueNeutralUnitsInRect(gg_rct_ThunderBluff, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       RescueNeutralUnitsInRect(gg_rct_ThunderBluff, this.Holder.Player);
       if (GetLocalPlayer() == this.Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\TaurenTheme.mp3" );

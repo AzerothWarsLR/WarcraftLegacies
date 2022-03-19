@@ -6,15 +6,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Twilight
   public class QuestThunderfury{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "ChoFourCC(gall has found the legendary sword, Thunderfury";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "The legendary sword Thunderfury";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       UnitAddItemSafe(LEGEND_CHOGALL.Unit, ARTIFACT_THUNDERFURY.item);
     }
 

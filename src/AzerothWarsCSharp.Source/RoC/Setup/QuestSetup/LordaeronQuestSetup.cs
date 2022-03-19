@@ -4,7 +4,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
   public class LordaeronQuestSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
       //Early duel
       FACTION_LORDAERON.StartingQuest = FACTION_LORDAERON.AddQuest(QuestStratholme.create());
       FACTION_LORDAERON.AddQuest(QuestStrahnbrad.create());

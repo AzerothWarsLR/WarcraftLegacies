@@ -6,11 +6,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
   public class QuestLakeshire{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Lakeshire has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in Lakeshire";
     }
 
@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
       GrantLakeshire(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       GrantLakeshire(this.Holder.Player);
     }
 

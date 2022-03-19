@@ -9,15 +9,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Sunwell has been captured by the Scourge. It now writhes with necromantic energy.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "A research improving your Dreadlords";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);
       DisplayResearchAcquired(this.Holder.Player, RESEARCH_ID, 1);
     }

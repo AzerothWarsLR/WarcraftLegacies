@@ -11,15 +11,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
 
     private QuestData questToDiscover;
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Illidan has learned of the existence of the Skull of GulFourCC(dan, hidden in Dalaran";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Chapter Three: Dwellers from the Deep";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       LEGEND_ILLIDAN.UnitType = FourCC(Eevi);
       questToDiscover.Progress = QUEST_PROGRESS_INCOMPLETE;
     }

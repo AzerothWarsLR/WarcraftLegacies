@@ -13,15 +13,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The greater demon KilFourCC(jaeden has been summoned to Azeroth";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "The hero KilFourCC(jaeden";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       UnitRemoveAbilityBJ( FourCC(A0R7), LEGEND_KAEL.Unit);
       LEGEND_KILJAEDEN.Spawn(FACTION_QUELTHALAS.Player, GetRectCenterX(gg_rct_Sunwell), GetRectCenterY(gg_rct_Sunwell), 244);
     }

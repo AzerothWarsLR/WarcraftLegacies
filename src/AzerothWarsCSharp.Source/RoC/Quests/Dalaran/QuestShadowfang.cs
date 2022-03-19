@@ -7,11 +7,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
 
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Shadowfang has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in Shadowfang";
     }
 
@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
       RescueNeutralUnitsInRect(gg_rct_ShadowfangUnlock, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       RescueNeutralUnitsInRect(gg_rct_ShadowfangUnlock, this.Holder.Player);
     }
 

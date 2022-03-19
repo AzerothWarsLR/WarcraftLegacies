@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
   public class Person
   {
     public static force Observers;
-    private Event OnPersonFactionChange;
+    public static event EventHandler<Person>? OnPersonFactionChange;
     private static thistype[] byId;
     readonly static thistype triggerPerson = 0         ;//Used in event response triggers
     readonly static Faction prevFaction = 0            ;//Used in OnPersonFactionChange event response for the previous faction

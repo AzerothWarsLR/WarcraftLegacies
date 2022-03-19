@@ -10,11 +10,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Northrend && the Icecrown Citadel is now under full control of the Lich King && the " + this.Holder.Team.Name + ".";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Access to the Plague Research at the Frozen Throne, KelFourCC(tuzad && Rivendare trainable && a base in Icecrown";
     }
 
@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
       RescueNeutralUnitsInRect(gg_rct_Ice_Crown, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       RescueNeutralUnitsInRect(gg_rct_Ice_Crown, this.Holder.Player);
       SetPlayerTechResearched(Holder.Player, FourCC(R03A), 1);
       if (GetLocalPlayer() == this.Holder.Player){

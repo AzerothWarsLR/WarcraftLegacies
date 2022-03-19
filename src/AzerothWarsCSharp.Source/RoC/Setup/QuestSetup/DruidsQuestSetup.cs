@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
   public class DruidsQuestSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
       //Setup
       QuestData newQuest = FACTION_DRUIDS.AddQuest(QuestMalfurionAwakens.create());
       FACTION_DRUIDS.StartingQuest = newQuest;

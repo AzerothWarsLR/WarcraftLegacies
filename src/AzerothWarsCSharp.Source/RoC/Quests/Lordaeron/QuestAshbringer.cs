@@ -15,15 +15,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Ashbringer has been forged && Mograine has returned from exile to wield it";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Gain the hero Mograine && the artifact Ashbringer";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       LEGEND_MOGRAINE.Spawn(Holder.Player, GetRectCenterX(gg_rct_AshbringerForge), GetRectCenterY(gg_rct_AshbringerForge), 270);
       SetHeroLevel(LEGEND_MOGRAINE.Unit, 10, false);
       UnitAddItemSafe(LEGEND_MOGRAINE.Unit, ARTIFACT_ASHBRINGER.item);

@@ -11,11 +11,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Khadgar has been freed from his confines under the Black Temple, && he is now free to serve the Kingdom of Stormwind.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "You can summon Khadgar from the Altar of Kings";
     }
 

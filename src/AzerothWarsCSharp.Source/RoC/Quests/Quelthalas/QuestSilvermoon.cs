@@ -10,11 +10,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Silvermoon siege has been lifted, && its military is now free to assist the " + this.Holder.Team.Name + ".";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in Silvermoon && enable Anasterian to be trained at the Altar";
     }
 
@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
       GrantSilvermoon(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, FourCC(R02U), 1);
       GrantSilvermoon(this.Holder.Player);
       if (UnitAlive(gg_unit_h00D_2122)){

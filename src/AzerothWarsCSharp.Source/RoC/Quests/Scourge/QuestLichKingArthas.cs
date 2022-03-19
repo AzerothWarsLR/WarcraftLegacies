@@ -9,15 +9,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Arthas has ascended the Frozen Throne itself && shattered NerFourCC(zhul)s frozen prison. Ner)zhul && Arthas are now joined, body && soul, into one being: the god-like Lich King.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Arthas becomes the Lich King, but the Frozen Throne loses its abilities";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       PlayThematicMusicBJ( "Sound\\Music\\mp3Music\\LichKingTheme.mp3" );
       LEGEND_LICHKING.DeathMessage = "Icecrown Citadel been razed. Unfortunately, the Lich King has already vacated his unholy throne.";
       LEGEND_LICHKING.PermaDies = false;

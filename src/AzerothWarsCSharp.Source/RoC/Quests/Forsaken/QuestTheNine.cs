@@ -6,15 +6,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Forsaken
   public class QuestTheNine{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Enable up to 9 ValFourCC(kyr join their ranks.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Enable 9 ValFourCC(kyr to be raised";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       FACTION_FORSAKEN.ModObjectLimit(FourCC(u01V), 5)           ;//Valyr
     }
 

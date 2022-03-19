@@ -2,7 +2,7 @@ namespace AzerothWarsCSharp.Source.Main.Setup
 {
   public class ObserverSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
     }
 
   }

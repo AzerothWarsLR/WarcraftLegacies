@@ -11,15 +11,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Druids
 
     static unit sleepingTortolla
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Tortolla has finally awoken from his ancient slumber.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "You can summon Tortolla from the Altar of Elders";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       RemoveUnit(thistype.sleepingTortolla);
     }
 

@@ -10,11 +10,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Twilight
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The great AlFourCC(akir has joined us!";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "You can summon Al-akir from the Altar";
     }
 

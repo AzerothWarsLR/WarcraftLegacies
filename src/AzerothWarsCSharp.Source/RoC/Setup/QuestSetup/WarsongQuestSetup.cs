@@ -4,7 +4,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
   public class WarsongQuestSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
       //Setup
       FACTION_WARSONG.StartingQuest = FACTION_WARSONG.AddQuest(QuestLumberQuota.create());
       FACTION_WARSONG.AddQuest(QuestCrossroads.create());

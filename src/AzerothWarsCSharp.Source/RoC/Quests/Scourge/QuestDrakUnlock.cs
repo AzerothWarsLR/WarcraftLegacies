@@ -11,11 +11,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
 
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "DrakFourCC(taron Keep is now under the control of the Scourge.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all buildings in DrakFourCC(taron Keep)";
     }
 
@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
       RescueNeutralUnitsInRect(gg_rct_DrakUnlock, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       RescueNeutralUnitsInRect(gg_rct_DrakUnlock, this.Holder.Player);
     }
 

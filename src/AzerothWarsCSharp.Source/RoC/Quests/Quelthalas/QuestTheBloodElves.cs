@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
 
     private static group SecondChanceUnits;
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Legion Nexus has been obliterated. A group of ambitious mages seize the opportunity to study the demonsFourCC( magic, becoming the first Blood Mages.";
     }
 
@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
       return "The Sunwell has fallen. The survivors escape to Dalaran && name themselves the Blood Elves in remembrance of their fallen people.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Learn to train " + GetObjectName(UNITTYPE_ID) + "s from the Consortium, && you can summon Prince KaelFourCC(thas from the Altar of Prowess";
     }
 
@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
       return "You lose everything you control, but you gain Prince KaelFourCC(thas at the Dalaran Dungeons, && you can train " + GetObjectName(UNITTYPE_ID) + "s from the Consortium";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, QUEST_RESEARCH_ID, 1);
       DisplayUnitTypeAcquired(Holder.Player, UNITTYPE_ID, "You can now train " + GetObjectName(UNITTYPE_ID) + "s from the " + GetObjectName(BUILDING_ID) + ".");
     }

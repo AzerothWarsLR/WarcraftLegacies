@@ -10,15 +10,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       ;.Holder.Name + "FourCC(s Earth Golems have been infused with living crystal.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Transform your Earth Golems into Crystal Golems";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
       DisplayResearchAcquired(Holder.Player, RESEARCH_ID, 1);
       Holder.ModObjectLimit(FourCC(n096), -6);

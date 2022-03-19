@@ -531,6 +531,6 @@ namespace AzerothWarsCSharp.Source
 		public static Rectangle Fel3 { get; set; } = new Rectangle(21760f, -29984f, 21824f, -29920f);
 		public static Rectangle Region_BS { get; set; } = new Rectangle(21504f, -29792f, 21568f, -29728f);
 		public static Rectangle BlackrockUnlock { get; set; } = new Rectangle(22176f, -31968f, 24288f, -28512f);
-
+		public static Rectangle DuskwoodCrypt { get; set; }
 	}
 }

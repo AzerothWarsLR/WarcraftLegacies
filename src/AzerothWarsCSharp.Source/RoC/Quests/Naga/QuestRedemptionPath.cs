@@ -15,15 +15,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Nazjatar && the Aetheneum is now under the influence of the Night Elves.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in the Aetheneum. Join the Night Elves && enable to train Altruis.";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       FACTION_NAGA.ModObjectLimit(FourCC(n08H), UNLIMITED)   ;//Demon Hunter grounds
       FACTION_NAGA.ModObjectLimit(FourCC(e00S), UNLIMITED)   ;//Glaive Warrior
       FACTION_NAGA.ModObjectLimit(FourCC(h08W), 6)   ;//Demon Hunter

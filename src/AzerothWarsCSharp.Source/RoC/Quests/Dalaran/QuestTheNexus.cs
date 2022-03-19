@@ -10,15 +10,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Nexus powers have been absorbed by Jaina && she joins the Lich King in the eternal ice of Northrend.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "You become the Nexus faction, allied with the Scourge && enemy with everyone else. Jaina becomes much more powerful";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       FACTION_DALARAN.ModObjectLimit(FourCC(h069),-UNLIMITED)       ;//Military Quarters
       FACTION_DALARAN.ModObjectLimit(FourCC(h067),-UNLIMITED)       ;//Laboratory
       FACTION_DALARAN.ModObjectLimit(FourCC(n096),-UNLIMITED)       ;//Golem

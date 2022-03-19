@@ -8,16 +8,16 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.FactionSetup
     Faction FACTION_CTHUN
     
 
-    public static void OnInit( ){
+    public static void Setup( ){
       Faction f;
-      FACTION_CTHUN = Faction.create("AhnFourCC(qiraj", PLAYER_COLOR_WHEAT, "|cFFFFDF80","ReplaceableTextures\\CommandButtons\\BTNCthunIcon.blp");
+      FACTION_CTHUN = Faction.create("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cFFFFDF80","ReplaceableTextures\\CommandButtons\\BTNCthunIcon.blp");
       f = FACTION_CTHUN;
       f.Team = TEAM_OLDGOD;
       f.StartingGold = 150;
       f.StartingLumber = 500;
 
       //Units
-      f.ModObjectLimit(FourCC(n071), UNLIMITED)   ;//Pillars of C)thun
+      f.ModObjectLimit(FourCC(n071), UNLIMITED)   ;//Pillars of C'thunn
       f.ModObjectLimit(FourCC(o00R), UNLIMITED)   ;//Black Pyramid
       f.ModObjectLimit(FourCC(ushp), UNLIMITED)   ;//Undead Shipyard
       f.ModObjectLimit(FourCC(o00D), UNLIMITED)   ;//Ancient Tomb

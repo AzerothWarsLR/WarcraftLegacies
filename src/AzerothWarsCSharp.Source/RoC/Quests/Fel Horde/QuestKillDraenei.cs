@@ -6,15 +6,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
   public class QuestKillDraenei{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Draenei have been eliminated from Outland && their gold mine is ours.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "The Draenei rich gold mine in Tempest Keep, the faster we destroy them, the more gold will be left";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       group tempGroup = CreateGroup();
       unit u;
 

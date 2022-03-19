@@ -5,11 +5,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
   public class QuestNaxxramas{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Naxxramas has now been raised && under the control of the " + this.Holder.Team.Name + ".";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in Naxxramas";
     }
 
@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
       tempGroup = null;
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       GrantNaxxramas(this.Holder.Player);
       SetUnitOwner( gg_unit_e013_1815, this.Holder.Player, true );
       SetUnitInvulnerable( gg_unit_e013_1815, false );

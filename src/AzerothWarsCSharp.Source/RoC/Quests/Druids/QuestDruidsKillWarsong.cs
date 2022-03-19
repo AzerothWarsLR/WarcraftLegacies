@@ -10,15 +10,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Druids
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Warsong presence on Kalimdor has been eliminated. The sacred lands are safe from their hatchets.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Learn to train " + GetObjectName(UNITTYPE_ID) + "s";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);
       DisplayUnitTypeAcquired(this.Holder.Player, UNITTYPE_ID, "You can now train Siege Ancients at the Ancient of War.");
     }

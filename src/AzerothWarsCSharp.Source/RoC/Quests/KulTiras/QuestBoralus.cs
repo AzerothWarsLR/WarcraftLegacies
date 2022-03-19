@@ -9,11 +9,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.KulTiras
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "KulFourCC(Tiras has joined the war && its military is now free to assist the " + this.Holder.Team.Name + ".";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in KulFourCC(Tiras && enables Katherine Proodmoure to be trained at the altar";
     }
 
@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.KulTiras
       RescueNeutralUnitsInRect(gg_rct_Kultiras, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       RescueNeutralUnitsInRect(gg_rct_Kultiras, this.Holder.Player);
       if (GetLocalPlayer() == this.Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\KultirasTheme.mp3" );

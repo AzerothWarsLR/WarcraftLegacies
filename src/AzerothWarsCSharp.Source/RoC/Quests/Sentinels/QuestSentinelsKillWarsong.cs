@@ -9,15 +9,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Sentinels
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Warsong presence on Kalimdor has been eliminated. The land has been protected from their misbegotten race.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Enable the Watcher Bastion to be built";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
     }
 

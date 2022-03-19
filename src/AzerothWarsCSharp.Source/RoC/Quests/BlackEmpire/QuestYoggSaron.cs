@@ -1,24 +1,25 @@
 using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
 using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.RoC.Quests.BlackEmpire
 {
-  public class QuestYoggSaron{
+  public class QuestYoggSaron : QuestData{
 
   
     private const int RESEARCH_ID = FourCC(R07R);
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Yogg-Saron has been awoken";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "The old god Yogg-Saron will join the Black Empire && enable to train Forgotten ones";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       UnitRescue(gg_unit_U02C_2829, this.Holder.Player)  ;//Yogg
     }
 

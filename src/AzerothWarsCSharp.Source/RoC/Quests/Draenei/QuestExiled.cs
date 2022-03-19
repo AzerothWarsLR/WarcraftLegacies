@@ -15,11 +15,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Draenei
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Draenei have landed on Azuremyst after escaping Outland";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in Azuremyst, gain 200 gold, 500 lumber && teleports all your units away from Outland";
     }
 
@@ -90,7 +90,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Draenei
       tempGroup = null;
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       AdjustPlayerStateBJ( 200, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
       AdjustPlayerStateBJ( ( 2000 - GetResourceAmount(gg_unit_ngol_3272) ), Player(13), PLAYER_STATE_RESOURCE_GOLD );
       AdjustPlayerStateBJ( 500, this.Holder.Player, PLAYER_STATE_RESOURCE_LUMBER );

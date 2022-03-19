@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
   public class DalaranQuestSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
       QuestNewGuardian newGuardian = QuestNewGuardian.create();
       QuestTheNexus theNexus = QuestTheNexus.create();
       QuestCrystalGolem crystalGolem = QuestCrystalGolem.create();

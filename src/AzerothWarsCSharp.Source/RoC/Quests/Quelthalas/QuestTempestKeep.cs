@@ -10,15 +10,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
 
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
 
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of the TempestKeep";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetUnitOwner(LEGEND_KAEL.Unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
       this.Holder.obliterate();
       SetUnitOwner(LEGEND_KAEL.Unit, this.Holder.Player, true);

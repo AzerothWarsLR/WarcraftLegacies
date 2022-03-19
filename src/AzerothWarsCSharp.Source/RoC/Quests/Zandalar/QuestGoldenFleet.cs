@@ -9,15 +9,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Zandalar
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Rastakhan is now trainable && Direhorn are available";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Rastakhan is trainable at the altar && Direhorns are trainable";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
     }
 
     private void OnAdd( ){

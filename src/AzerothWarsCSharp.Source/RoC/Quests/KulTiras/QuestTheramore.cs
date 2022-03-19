@@ -11,11 +11,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.KulTiras
 
     private static group theramoreUnits = CreateGroup();
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "A sizeable isle off the coast of Dustwallow Marsh has been colonized && dubbed Theramore, marking the first human settlement to be established on Kalimdor.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units at Theramore";
     }
 
@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.KulTiras
       this.Holder.ModObjectLimit(RESEARCH_ID, -UNLIMITED);
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       thistype.GrantToPlayer(this.Holder.Player);
       this.Holder.ModObjectLimit(RESEARCH_ID, -UNLIMITED);
     }

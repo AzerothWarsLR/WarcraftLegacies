@@ -9,15 +9,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
 
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Garithos has always had a disliking for the other races. His pride && desire for power has led the remnants of the Lordaeron forces to join the crusade";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "You lose everything, but will spawn with Garithos && a small army in Tyr Hand";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       player holderPlayer = this.Holder.Person.Player;
       FACTION_LORDAERON.ModObjectLimit(FourCC(h00F), -UNLIMITED)           ;//Paladin
       FACTION_LORDAERON.ModObjectLimit(FourCC(R06Q), -UNLIMITED)   ;//Paladin Adept Training

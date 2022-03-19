@@ -9,15 +9,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "QuelFourCC(thalas has finally reunited with its lost rangers in the Hinterlands.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of QuelFourCC(danil Lodge";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       unit u;
       while(true){
         u = FirstOfGroup(udg_QuelDanilLodge);

@@ -5,15 +5,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
   public class QuestLegionKillLordaeron{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Kingdom of Lordaeron has fallen, eliminating AzerothFourCC(s vanguard against the Legion.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Tichondrius gains 15 Strength, Agility && Intelligence";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       DisplayHeroReward(LEGEND_TICHONDRIUS.Unit, 15, 15, 15, 0);
       AddHeroAttributes(LEGEND_TICHONDRIUS.Unit, 15, 15, 15);
     }

@@ -6,11 +6,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
   public class QuestDarkshire{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Darkshire has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in Darkshire";
     }
 
@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
       GrantDarkshire(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       GrantDarkshire(this.Holder.Player);
     }
 

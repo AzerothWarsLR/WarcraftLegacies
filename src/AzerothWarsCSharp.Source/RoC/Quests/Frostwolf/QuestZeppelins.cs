@@ -11,11 +11,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Frostwolf
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Sentinels have been slain. With their Hippogryphs no longer terrorizing the skies, the Horde can field its refurbished Zeppelins.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Learn to train " + GetObjectName(UNITTYPE_ID) + "s";
     }
 
@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Frostwolf
       this.Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);
       DisplayUnitTypeAcquired(this.Holder.Player, UNITTYPE_ID, "You can now train Zeppelins from the Goblin Laboratory.");
     }

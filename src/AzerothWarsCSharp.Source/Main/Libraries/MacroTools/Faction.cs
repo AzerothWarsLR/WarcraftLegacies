@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using AzerothWarsCSharp.Source.Main.Game_Logic;
 using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
 using AzerothWarsCSharp.Source.Main.Libraries.Wrappers;
+using AzerothWarsCSharp.Source.RoC.Quests.BlackEmpire;
 using WCSharp.Events;
 
 namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools

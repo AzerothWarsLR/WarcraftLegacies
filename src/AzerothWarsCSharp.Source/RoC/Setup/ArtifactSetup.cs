@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup
     public static Artifact? artifactXalatath;
     public static Artifact? artifactZinrokh;
 
-    public static void OnInit()
+    public static void Setup()
     {
       Artifact tempArtifact = 0;
 
@@ -173,7 +173,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup
 
       artifactDemonsoul = Artifact.create(CreateItem(FourCC(I01A), DUMMY_X, DUMMY_Y));
       artifactDemonsoul.setStatus(ARTIFACT_STATUS_HIDDEN);
-      artifactDemonsoul.setDescription("AhnFourCC(Qiraj)s Quest");
+      artifactDemonsoul.setDescription("Ahn'qiraj)s Quest");
       artifactDemonsoul.falseX = 12508;
       artifactDemonsoul.falseY = -11437;
     }

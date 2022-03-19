@@ -6,11 +6,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
   public class QuestSouthshore{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The Murlocs have been defeated, Southshore is safe.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in Southshore";
     }
 
@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Dalaran
       GrantSouthshore(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       GrantSouthshore(this.Holder.Player);
     }
 

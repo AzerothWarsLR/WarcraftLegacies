@@ -6,15 +6,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Forsaken
   public class QuestThePlaguelands{
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "The ravaged lands of Lordaeron are now under the control of the Forsaken && able to train up to 4 ValFourCC(kyr join their ranks. 500 gold was plundered.";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Enable 4 ValFourCC(kyr to be raised && grants 500 gold";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       FACTION_FORSAKEN.ModObjectLimit(FourCC(u01V), 2)           ;//Valyr
       AdjustPlayerStateBJ( 500, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
     }

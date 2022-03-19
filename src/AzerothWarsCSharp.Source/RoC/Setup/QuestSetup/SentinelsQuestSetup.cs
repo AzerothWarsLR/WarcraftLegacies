@@ -4,7 +4,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
   public class SentinelsQuestSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
       //Early duel
       FACTION_SENTINELS.StartingQuest = FACTION_SENTINELS.AddQuest(QuestAstranaar.create());
       FACTION_SENTINELS.AddQuest(QuestFeathermoon.create());

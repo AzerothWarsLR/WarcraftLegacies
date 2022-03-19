@@ -9,15 +9,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
 
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Garithos weak mind is an easy pray to Sylvanas mind control, ";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "You lose everything, but will spawn with Garithos && a small army in Capital City";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       player holderPlayer = this.Holder.Person.Player;
       FACTION_LORDAERON.ModObjectLimit(FourCC(h00F), -UNLIMITED)           ;//Paladin
       FACTION_LORDAERON.ModObjectLimit(FourCC(R06Q), -UNLIMITED)   ;//Paladin Adept Training

@@ -4,7 +4,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
   public class ForsakenQuestSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
 
       FACTION_FORSAKEN.StartingQuest = FACTION_FORSAKEN.AddQuest(QuestScholomanceBuild.create());
       FACTION_FORSAKEN.AddQuest(QuestReanimateSylvanas.create());

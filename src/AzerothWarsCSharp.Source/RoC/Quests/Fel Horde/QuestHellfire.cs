@@ -10,11 +10,11 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
   
 
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Hellfire Citadel has been subjugated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Control of all units in Hellfire Citadel && enable Kargath to be trained at the altar";
     }
 
@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
       tempGroup = null;
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       UnitRescue(gg_unit_n081_0882, FACTION_FEL_HORDE.Player);
       UnitRescue(gg_unit_n081_0717, FACTION_FEL_HORDE.Player);
       SetPlayerTechResearched(Holder.Player, FourCC(R00P), 1);

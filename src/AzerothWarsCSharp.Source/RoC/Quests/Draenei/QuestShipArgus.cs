@@ -10,15 +10,15 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Draenei
       return true;
     }
 
-    private string operator CompletionPopup( ){
+    protected override string CompletionPopup => 
       return "Velen has opened the portal to Argus";
     }
 
-    private string operator CompletionDescription( ){
+    protected override string CompletionDescription => 
       return "Open a Portal between Tempest Keep && Argus";
     }
 
-    private void OnComplete( ){
+    protected override void OnComplete(){
       WaygateActivateBJ( true, gg_unit_h03V_3538 );
       ShowUnitShow( gg_unit_h03V_3538 );
       WaygateSetDestinationLocBJ( gg_unit_h03V_3538, GetRectCenter(gg_rct_OutlandToArgus) );

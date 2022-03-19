@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
   public class FelHordeQuestSetup{
 
-    public static void OnInit( ){
+    public static void Setup( ){
       //Early duel
       QuestData newQuest = FACTION_FEL_HORDE.AddQuest(QuestKillDraenei.create());
       FACTION_FEL_HORDE.StartingQuest = newQuest;
