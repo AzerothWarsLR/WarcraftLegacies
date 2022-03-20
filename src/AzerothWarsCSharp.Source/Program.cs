@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
-using AzerothWarsCSharp.Source.RoC.Setup;
+using AzerothWarsCSharp.Source.Setup;
 
 namespace AzerothWarsCSharp.Source
 {
