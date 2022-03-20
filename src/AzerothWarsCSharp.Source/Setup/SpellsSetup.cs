@@ -205,6 +205,13 @@ namespace AzerothWarsCSharp.Source.Setup
         EffectHealPath = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
       };
       SpellSystem.Register(solarJudgement);
+
+      var resurgentFlameStrike = new ResurgentSpell(FourCC("A04H"), FourCC("A0F9"), "flamestrike")
+      {
+        Duration = 14,
+        Interval = 7,
+      };
+      SpellSystem.Register(resurgentFlameStrike);
     }
   }
 }

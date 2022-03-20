@@ -35,7 +35,7 @@ namespace AzerothWarsCSharp.MacroTools.Spells
         Interval = Period,
         Duration = Duration,
       };
-      HazardSystem.HazardSystem.Add(hazard);
+      SpellSystem.HazardSystem.Add(hazard);
     }
   }
 }

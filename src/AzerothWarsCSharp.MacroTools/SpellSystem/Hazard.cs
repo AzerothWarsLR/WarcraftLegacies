@@ -1,8 +1,7 @@
 ﻿using System;
 using WCSharp.Events;
-using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.HazardSystem
+namespace AzerothWarsCSharp.MacroTools.SpellSystem
 {
   /// <summary>
   ///   A visible but unselectabe effect on the map that causes some periodic effect around it,
@@ -23,14 +22,15 @@ namespace AzerothWarsCSharp.MacroTools.HazardSystem
     protected unit Caster { get; }
     private effect Effect { get; }
 
-    private float _interval;
+    private readonly float _interval;
+
     /// <summary>
     ///   The interval at which the missile will call <see cref="OnPeriodic" />. Leave at default (0) to disable.
     /// </summary>
     public float Interval
     {
       get => _interval;
-      set
+      init
       {
         _interval = value;
         _intervalLeft = Math.Max(_interval, _intervalLeft);
@@ -65,6 +65,13 @@ namespace AzerothWarsCSharp.MacroTools.HazardSystem
     public abstract bool Active { get; set; }
 
     /// <summary>
+    /// Fired when the <see cref="Hazard"/> is initially registered.
+    /// </summary>
+    public virtual void OnCreate()
+    {
+    }
+
+    /// <summary>
     ///   <para>Override this method if your Hazard has a periodic effect.</para>
     ///   <para>For this to be active, <see cref="Interval" /> must be greater than 0.</para>
     /// </summary>
@@ -89,7 +96,7 @@ namespace AzerothWarsCSharp.MacroTools.HazardSystem
       RemoveLocation(loc);
       return z;
     }
-    
+
     /// <summary>
     ///   Runs the Interval related code. Do not call if <see cref="Interval" /> is 0.
     /// </summary>

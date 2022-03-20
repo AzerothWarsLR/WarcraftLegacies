@@ -1,6 +1,6 @@
 ﻿using WCSharp.Events;
 
-namespace AzerothWarsCSharp.MacroTools.HazardSystem
+namespace AzerothWarsCSharp.MacroTools.SpellSystem
 {
   public static class HazardSystem
   {
@@ -9,6 +9,7 @@ namespace AzerothWarsCSharp.MacroTools.HazardSystem
     public static void Add(Hazard hazard)
     {
       PeriodicTrigger.Add(hazard);
+      hazard.OnCreate();
     }
   }
 }
