@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells.Kul_tiras
     private const float RADIUS = 250;
   
 
-    private static boolean ScattershotFilter(unit caster, unit target ){
+    private static bool ScattershotFilter(unit caster, unit target ){
       if (!IsUnitAlly(target, GetOwningPlayer(caster)) && !IsUnitType(target, UNIT_TYPE_STRUCTURE) && !IsUnitType(target, UNIT_TYPE_ANCIENT) && !IsUnitType(target, UNIT_TYPE_MECHANICAL) && IsUnitAliveBJ(target)){
         return true;
       }

@@ -1,35 +1,44 @@
+using AzerothWarsCSharp.Source.Main.Libraries;
+using WCSharp.Events;
+
 namespace AzerothWarsCSharp.Source.Main.Spells
 {
-  public class IllusionaryLance{
-
-  
-    private const int UNITTYPE_ID = FourCC(U02A);
-    private const int ABIL_ID = FourCC(A0SF);
-    private const int DUMMY_ABIL_ID = FourCC(A0SI);
+  public static class IllusionaryLance
+  {
+    private static readonly int UnittypeId = FourCC("U02A");
+    private static readonly int AbilId = FourCC("A0SF");
+    private static readonly int DummyAbilId = FourCC("A0SI");
     private const int DUMMY_ORDER_ID = 852274;
 
     private const float ILLUSIONCHANCE_HERO = 01;
     private const float ILLUSIONCHANCE_ILLUSION = 001;
-  
-
-    private static void Damaging( ){
-      var level = GetUnitAbilityLevel(GetEventDamageSource(), ABIL_ID);
-      float chance;
-      if (level > 0 && BlzGetEventIsAttack()){
-        if (IsUnitIllusion(GetEventDamageSource())){
+    
+    private static void Damaging()
+    {
+      var level = GetUnitAbilityLevel(GetEventDamageSource(), AbilId);
+      if (level > 0 && BlzGetEventIsAttack())
+      {
+        float chance;
+        if (IsUnitIllusion(GetEventDamageSource()))
+        {
           chance = level * ILLUSIONCHANCE_ILLUSION;
-        }else {
+        }
+        else
+        {
           chance = level * ILLUSIONCHANCE_HERO;
         }
-        if (GetRandomReal(0,1) <= chance){
-          DummyCastUnitId(GetOwningPlayer(GetEventDamageSource()), DUMMY_ABIL_ID, DUMMY_ORDER_ID, 1, GetEventDamageSource());
+
+        if (GetRandomReal(0, 1) <= chance)
+        {
+          DummyCast.DummyCastUnitId(GetOwningPlayer(GetEventDamageSource()), DummyAbilId, DUMMY_ORDER_ID, 1,
+            GetEventDamageSource());
         }
       }
     }
 
-    public static void Setup( ){
-      RegisterUnitTypeInflictsDamageAction(UNITTYPE_ID,  Damaging);
+    public static void Setup()
+    {
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, Damaging, UnittypeId);
     }
-
   }
 }

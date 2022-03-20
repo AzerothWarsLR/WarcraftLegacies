@@ -14,6 +14,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup
       AllQuestSetup.Setup();
       ResearchSetup_OnInit();
       ObserverSetup_OnInit();
+      SpellsSetup.Setup();
     }
   }
 }

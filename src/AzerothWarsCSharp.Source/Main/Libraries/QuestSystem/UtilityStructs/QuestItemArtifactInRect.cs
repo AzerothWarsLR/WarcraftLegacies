@@ -2,7 +2,7 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 {
-  public class QuestItemArtifactInRect{
+  public class QuestItemArtifactInRect : QuestItemData{
 
     private static region RectToRegion(rect whichRect ){
       region rectRegion = CreateRegion();
@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
       return GetRectCenterY(targetRect);
     }
 
-    private boolean IsArtifactInRect( ){
+    private bool IsArtifactInRect( ){
       if (targetArtifact.OwningUnit != null && RectContainsCoords(targetRect, GetUnitX(targetArtifact.OwningUnit), GetUnitY(targetArtifact.OwningUnit))){
         return true;
       }
@@ -79,7 +79,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
       }
     }
 
-    thistype (Artifact targetArtifact, rect targetRect, string rectName ){
+    public QuestItemArtifactInRect (Artifact targetArtifact, rect targetRect, string rectName ){
 
       this.targetArtifact = targetArtifact;
       this.targetRect = targetRect;

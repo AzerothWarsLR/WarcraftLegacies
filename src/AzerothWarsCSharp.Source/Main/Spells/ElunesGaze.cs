@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
     private const float RADIUS = 3500;
   
 
-    private static boolean ElunesGazeFilter(unit caster, unit target ){
+    private static bool ElunesGazeFilter(unit caster, unit target ){
       if (IsUnitAlly(target, GetOwningPlayer(caster)) && !IsUnitType(target, UNIT_TYPE_STRUCTURE) && !IsUnitType(target, UNIT_TYPE_ANCIENT) && UnitAlive(target)){
         return true;
       }

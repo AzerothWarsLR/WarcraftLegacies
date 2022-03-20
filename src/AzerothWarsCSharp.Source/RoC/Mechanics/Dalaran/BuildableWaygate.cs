@@ -34,7 +34,7 @@ public sealed class BuildableWaygate
     WaygateActivate(waygateB.unit, true);
   }
 
-  private static boolean AIDS_filter(unit u)
+  private static bool AIDS_filter(unit u)
   {
     if (GetUnitTypeId(u) == WAYGATE_UNITTYPE)
     {

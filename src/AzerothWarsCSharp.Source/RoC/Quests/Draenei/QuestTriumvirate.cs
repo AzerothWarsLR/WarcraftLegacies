@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Draenei
   public class QuestTriumvirate{
 
 
-    private boolean operator Global( ){
+    private bool operator Global( ){
       return true;
     }
 

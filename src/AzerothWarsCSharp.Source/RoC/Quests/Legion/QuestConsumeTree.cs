@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
 
 
 
-    boolean operator Global( ){
+    bool operator Global( ){
       return true;
     }
 

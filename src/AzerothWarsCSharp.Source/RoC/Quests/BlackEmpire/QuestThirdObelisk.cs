@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.BlackEmpire
   
 
 
-    boolean operator Global( ){
+    bool operator Global( ){
       return true;
     }
 

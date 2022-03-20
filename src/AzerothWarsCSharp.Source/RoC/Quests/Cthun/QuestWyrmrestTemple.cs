@@ -1,35 +1,26 @@
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
 using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.RoC.Legends;
+using AzerothWarsCSharp.Source.RoC.Setup;
 
 namespace AzerothWarsCSharp.Source.RoC.Quests.Cthun
 {
-  public class QuestWyrmrestTemple{
+  public sealed class QuestWyrmrestTemple : QuestData
+  {
+    protected override string CompletionPopup => "Yor'sahj can now be trained at the altar";
 
-  
-    private const int RESEARCH_ID = FourCC(R07S);
-  
-
-
-    protected override string CompletionPopup => 
-      return "YorFourCC(sahj can now be trained at the altar";
+    protected override string CompletionDescription => "The hero Yor'sahj will join Ahn'Qiraj";
+    
+    public QuestWyrmrestTemple() : base("The Siege of Wyrmrest Temple",
+      "Yor'sahj the Unsleeping)s mission is to destroy the Wyrmrest temple, assist him && he will join the Black Empire",
+      "ReplaceableTextures\\CommandButtons\\BTNHeroMastermind.blp")
+    {
+      AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.artifactDemonsoul));
+      AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.artifactDemonsoul, Regions.WyrmrestTemple.Rect, "Wyrmrest Temple"));
+      AddQuestItem(new QuestItemLegendDead(LegendNeutral.LEGEND_SARAGOSA));
+      AddQuestItem(new QuestItemLegendDead(LegendNeutral.LEGEND_VAELASTRASZ));
+      AddQuestItem(new QuestItemLegendDead(LegendNeutral.LEGEND_OCCULUS));
+      ResearchId = FourCC("R07S");
     }
-
-    protected override string CompletionDescription => 
-      return "The hero YorFourCC(sahj will join Ahn)Qiraj";
-    }
-
-    public  thistype ( ){
-      //Todo: the flavour of this doesn)t add up. The description implies you need to do something to Wyrmrest Temple,
-      //but actually you need to take the Demon Soul there and kill 3 dragons. What)s the connection to the Demon Soul in particular?
-      thistype this = thistype.allocate("The Siege of Wyrmrest Temple", "YorFourCC(sahj the Unsleeping)s mission is to destroy the Wyrmrest temple, assist him && he will join the Black Empire", "ReplaceableTextures\\CommandButtons\\BTNHeroMastermind.blp");
-      this.AddQuestItem(QuestItemAcquireArtifact.create(ARTIFACT_DEMONSOUL));
-      this.AddQuestItem(QuestItemArtifactInRect.create(ARTIFACT_DEMONSOUL, gg_rct_WyrmrestTemple, "Wyrmrest Temple"));
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_SARAGOSA));
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_VAELASTRASZ));
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_OCCULUS));
-      this.ResearchId = RESEARCH_ID;
-      ;;
-    }
-
-
   }
 }

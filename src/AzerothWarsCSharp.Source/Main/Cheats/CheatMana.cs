@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Main.Cheats
     //**CONFIG
     
     private const string COMMAND     = "-mana ";
-    private boolean[] Toggle;
+    private bool[] Toggle;
     
     //*ENDCONFIG
 

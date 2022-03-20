@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     private static int count = 0;
     private static thistype[] byIndex;
 
-    boolean operator ShowsInQuestLog( ){
+    bool operator ShowsInQuestLog( ){
       return false;
     }
 

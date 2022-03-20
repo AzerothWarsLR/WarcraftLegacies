@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Twilight
 
 
 
-    boolean operator Global( ){
+    bool operator Global( ){
       return true;
     }
 

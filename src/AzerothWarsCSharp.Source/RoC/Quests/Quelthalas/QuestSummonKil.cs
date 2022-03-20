@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
   
 
 
-    private boolean operator Global( ){
+    private bool operator Global( ){
       return true;
     }
 

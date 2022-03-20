@@ -50,7 +50,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
     float       damage;
     float       fullDamage;
 
-    private boolean    ended = false;
+    private bool    ended = false;
 
     private void destroy( ){
       BlzSetSpecialEffectTimeScale(sfxRing,1);
@@ -129,7 +129,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
     thistype (unit cast, float x, float y, float damage, float radius, float duration ){
 
       var i = 0;
-      boolean b = false;
+      bool b = false;
 
       cas = cast;
 
@@ -185,7 +185,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
     private static void StartChannel( ){
       unit u = GetTriggerUnit();
       var i = 0;
-      boolean b = false;
+      bool b = false;
 
       ConsecrationsByUnit[GetUnitId(u)] = Consecration.create(u, GetUnitX(u), GetUnitY(u), CONSECRATION_DAMAGE_BASE+GetUnitAbilityLevel(u, ABIL_ID)*CONSECRATION_DAMAGE_LEVEL, CONSECRATION_RADIUS, DURATION);
     }

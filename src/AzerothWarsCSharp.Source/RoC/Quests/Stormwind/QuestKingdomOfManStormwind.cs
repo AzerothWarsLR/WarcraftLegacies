@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Stormwind
   
 
 
-    private boolean operator Global( ){
+    private bool operator Global( ){
       return true;
     }
 

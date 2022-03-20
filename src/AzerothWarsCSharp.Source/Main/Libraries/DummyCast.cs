@@ -1,9 +1,13 @@
+using AzerothWarsCSharp.Source.Main.Libraries.Wrappers;
+
 namespace AzerothWarsCSharp.Source.Main.Libraries
 {
   public static class DummyCast
   {
     private group TempGroup = CreateGroup();
 
+    public delegate bool CastFilter(unit caster, unit target);
+    
     public static void DummyChannelInstantFromPoint(player whichPlayer, int abilId, string orderId, int level,
       float x, float y, float duration)
     {
@@ -94,22 +98,9 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
     public static void DummyCastOnUnitsInCircle(unit caster, int abilId, string orderId, int level, float x, float y,
       float radius, CastFilter castFilter)
     {
-      unit u;
-      GroupEnumUnitsInRange(TempGroup, x, y, radius, null);
-      while (true)
+      foreach (var target in new GroupWrapper().EnumUnitsInRange(x, y, radius).EmptyToList().FindAll(unit => castFilter(caster, unit)))
       {
-        u = FirstOfGroup(TempGroup);
-        if (u == null)
-        {
-          break;
-        }
-
-        if (castFilter.evaluate(caster, u))
-        {
-          DummyCastUnit(GetOwningPlayer(caster), abilId, orderId, level, u);
-        }
-
-        GroupRemoveUnit(TempGroup, u);
+        DummyCastUnit(GetOwningPlayer(caster), abilId, orderId, level, target);
       }
     }
   }

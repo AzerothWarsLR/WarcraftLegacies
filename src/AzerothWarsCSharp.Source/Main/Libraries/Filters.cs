@@ -9,24 +9,24 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
       return IsUnitType(GetFilterUnit(), UNIT_TYPE_HERO);
     }
 
-    static boolean EnemyAliveFilter()
+    static bool EnemyAliveFilter()
     {
       unit u = GetFilterUnit();
-      boolean b = (IsUnitEnemy(u, P) || GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) && IsUnitAlive(u) &&
+      bool b = (IsUnitEnemy(u, P) || GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) && IsUnitAlive(u) &&
                   BlzIsUnitInvulnerable(u) == false;
       return b;
     }
 
-    static boolean UnitEnemyAliveFilter()
+    static bool UnitEnemyAliveFilter()
     {
       unit u = GetFilterUnit();
-      boolean b = (IsUnitEnemy(u, P) || GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) && IsUnitAlive(u) &&
+      bool b = (IsUnitEnemy(u, P) || GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) && IsUnitAlive(u) &&
                   BlzIsUnitInvulnerable(u) == false && !IsUnitType(u, UNIT_TYPE_STRUCTURE) &&
                   !IsUnitType(u, UNIT_TYPE_ANCIENT);
       return b;
     }
 
-    static boolean AllyAliveFilter()
+    static bool AllyAliveFilter()
     {
       unit u = GetFilterUnit();
       return (IsUnitAlly(u, P) || GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) && IsUnitAlive(u) &&

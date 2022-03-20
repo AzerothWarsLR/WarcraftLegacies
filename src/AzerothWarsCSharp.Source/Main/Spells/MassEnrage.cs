@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
     private const float RADIUS = 50;
   
 
-    private static boolean EnrageFilter(unit caster, unit target ){
+    private static bool EnrageFilter(unit caster, unit target ){
       if (IsUnitAlly(target, GetOwningPlayer(caster)) && !IsUnitType(target, UNIT_TYPE_STRUCTURE) && !IsUnitType(target, UNIT_TYPE_ANCIENT) && !IsUnitType(target, UNIT_TYPE_MECHANICAL) && IsUnitAliveBJ(target)){
         return true;
       }

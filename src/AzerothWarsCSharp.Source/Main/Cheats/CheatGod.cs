@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.Main.Cheats
 
   
     private const string COMMAND     = "-god ";
-    private boolean[] Toggle;
+    private bool[] Toggle;
   
 
     private static void Damage( ){

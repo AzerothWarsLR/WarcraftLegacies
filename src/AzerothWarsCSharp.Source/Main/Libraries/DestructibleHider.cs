@@ -22,11 +22,11 @@
 
             API:
 
-                private static boolean filt ){
+                private static bool filt ){
 
 
                     - example:
-                        private static boolean filt ){
+                        private static bool filt ){
 
                         }
 
@@ -67,7 +67,7 @@
     private const int TILESIZE = DRAW_DISTANCE/TILE_RESOLUTION;
 
 
-private static boolean filt( ){
+private static bool filt( ){
 
 return true;
 }
@@ -109,7 +109,7 @@ private static void autoregister( ){
     d = null;
 }
 
-private static void EnumGrid(int x1, int x2, int y1, int y2, boolean show ){
+private static void EnumGrid(int x1, int x2, int y1, int y2, bool show ){
     var a = x1;
     int b;
     int j;
@@ -121,7 +121,7 @@ private static void EnumGrid(int x1, int x2, int y1, int y2, boolean show ){
         while(true){
             if ( b > y2){ break; }
             id = b*columns+a;
-            SaveBoolean(hash, id, -1, show);
+            Savebool(hash, id, -1, show);
             count = LoadInteger(hash, id, 0);
             j = 0;
             while(true){

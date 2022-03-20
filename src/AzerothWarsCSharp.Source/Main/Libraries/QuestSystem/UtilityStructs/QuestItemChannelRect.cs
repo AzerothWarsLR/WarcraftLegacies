@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     }
 
     //Finished is true if the channel ended successfully, and false if it was interrupted.
-    private void End(boolean finished ){
+    private void End(bool finished ){
       PauseUnit(caster, false);
       if (finished){
         SetUnitAnimation(caster, "spell");
@@ -141,7 +141,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 
     //Called by a Channel object to let the QuestItemChannelRect know it has ended.
     //Finished is true if the channel ended successfully, and false if it was interrupted.
-    void OnChannelEnd(Channel whichChannel, boolean finished ){
+    void OnChannelEnd(Channel whichChannel, bool finished ){
       if (whichChannel == channel){
         if (finished){
           this.Progress = QUEST_PROGRESS_COMPLETE;

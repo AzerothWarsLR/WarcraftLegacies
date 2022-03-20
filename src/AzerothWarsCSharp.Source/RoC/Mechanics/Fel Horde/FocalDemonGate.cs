@@ -38,7 +38,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Fel_Horde
       return GetPolarOffsetY(GetUnitY(this.unit), SPAWN_DISTANCE, GetUnitFacing(this.unit) + FACING_OFFSET);
     }
 
-    boolean operator Alive( ){
+    bool operator Alive( ){
       return UnitAlive(this.unit);
     }
 
@@ -53,7 +53,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Fel_Horde
   }
 }
 
-    private static boolean AIDS_filter(unit u ){
+    private static bool AIDS_filter(unit u ){
       if (GetUnitTypeId(u) == GATE_UNITTYPE){
         return true;
       }

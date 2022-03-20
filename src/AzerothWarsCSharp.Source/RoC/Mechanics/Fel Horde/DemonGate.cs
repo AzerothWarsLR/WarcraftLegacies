@@ -50,7 +50,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Fel_Horde
     private static Table byHandle;
 
     private unit u;
-    private boolean enabled;
+    private bool enabled;
     private int tick;
     private group spawnedDemons;
     private DemonGateType gateType;

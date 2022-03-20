@@ -176,7 +176,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
         y = unitY + HERO_DROP_DIST * Sin(ang);
         ang = ang + (360*bj_DEGTORAD)/6;
         dropItem = UnitItemInSlot(u, i);
-        if (BlzGetItemBooleanField(dropItem, ITEM_BF_DROPPED_WHEN_CARRIER_DIES) || BlzGetItemBooleanField(dropItem, ITEM_BF_CAN_BE_DROPPED)){
+        if (BlzGetItemboolField(dropItem, ITEM_BF_DROPPED_WHEN_CARRIER_DIES) || BlzGetItemboolField(dropItem, ITEM_BF_CAN_BE_DROPPED)){
           UnitRemoveItem(u, dropItem);
           SetItemPosition(dropItem, x, y);
         }

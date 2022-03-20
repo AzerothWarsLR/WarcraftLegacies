@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
 
 
 
-    boolean operator Global( ){
+    bool operator Global( ){
       return true;
     }
 

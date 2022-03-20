@@ -39,7 +39,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
       ;.controlPoint;
     }
 
-    private void End(boolean finished ){
+    private void End(bool finished ){
       if (elapsedDuration >= maxDuration){
         thistype.triggerObelisk = this;
         BlackEmpireObeliskSummoned.fire();

@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scarlet
 
 
 
-    boolean operator Global( ){
+    bool operator Global( ){
       return true;
     }
 

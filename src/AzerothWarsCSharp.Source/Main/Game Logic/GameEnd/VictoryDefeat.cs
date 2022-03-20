@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Main.Game_Logic.GameEnd
   
     string VICTORY_COLOR = "|cff911499";
     string DEFEAT_COLOR = "|cff911499";
-    boolean GameWon = false;
+    bool GameWon = false;
   
 
     static void TeamVictory(Team whichTeam ){

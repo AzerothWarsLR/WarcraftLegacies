@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Naga
       tempGroup = null;
     }
 
-    boolean operator Global( ){
+    bool operator Global( ){
       return true;
     }
 

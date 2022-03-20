@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.Frostwolf
     //! runtextmacro AIDS()
     effect PackedBuildingEffect
 
-    private static boolean AIDS_filter(unit u ){
+    private static bool AIDS_filter(unit u ){
       if (GetUnitTypeId(u) == KODO_ID){
         return true;
       }

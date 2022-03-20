@@ -173,7 +173,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup
 
       artifactDemonsoul = Artifact.create(CreateItem(FourCC(I01A), DUMMY_X, DUMMY_Y));
       artifactDemonsoul.setStatus(ARTIFACT_STATUS_HIDDEN);
-      artifactDemonsoul.setDescription("Ahn'qiraj)s Quest");
+      artifactDemonsoul.setDescription("Ahn'qiraj's Quest");
       artifactDemonsoul.falseX = 12508;
       artifactDemonsoul.falseY = -11437;
     }

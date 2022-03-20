@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells
     private const float RADIUS = 250;
   
 
-    private static boolean SeismicFilter(unit caster, unit target ){
+    private static bool SeismicFilter(unit caster, unit target ){
       if (!IsUnitAlly(target, GetOwningPlayer(caster)) && !IsUnitType(target, UNIT_TYPE_STRUCTURE) && !IsUnitType(target, UNIT_TYPE_ANCIENT) && !IsUnitType(target, UNIT_TYPE_MECHANICAL) && IsUnitAliveBJ(target)){
         return true;
       }

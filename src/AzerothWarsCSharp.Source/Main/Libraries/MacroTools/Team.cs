@@ -221,11 +221,11 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       return newForce;
     }
 
-    boolean IsFactionInvited(Faction whichFaction ){
+    bool IsFactionInvited(Faction whichFaction ){
       ;.invitees.contains(whichFaction);
     }
 
-    boolean ContainsPlayer(player whichPlayer ){
+    bool ContainsPlayer(player whichPlayer ){
       var i = 0;
       while(true){
         if ( i == factions.size){ break; }

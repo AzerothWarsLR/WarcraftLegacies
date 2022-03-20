@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Lordaeron
   
 
 
-    private boolean operator Global( ){
+    private bool operator Global( ){
       return true;
     }
 

@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Quelthalas
   public class QuestStayLoyal{
 
 
-    private boolean operator Global( ){
+    private bool operator Global( ){
       return true;
     }
 

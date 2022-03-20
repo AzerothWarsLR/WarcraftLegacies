@@ -47,7 +47,7 @@ namespace AzerothWarsCSharp.Source.RoC.Mechanics.BlackEmpire
       }
     }
 
-    private static boolean AIDS_filter(unit u ){
+    private static bool AIDS_filter(unit u ){
       if (GetUnitTypeId(u) == HERALD_ID){
         return true;
       }

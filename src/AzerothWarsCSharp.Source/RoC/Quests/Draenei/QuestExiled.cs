@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Draenei
 
 
 
-    private boolean Global( ){
+    private bool Global( ){
       return true;
     }
 

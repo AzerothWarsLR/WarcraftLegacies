@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 
     private region target;
     private rect targetRect;
-    private boolean heroOnly = false;
+    private bool heroOnly = false;
     private unit triggerUnit;
 
     private static trigger entersRectTrig = CreateTrigger();
@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
       ;.triggerUnit;
     }
 
-    private boolean IsValidUnitInRect( ){
+    private bool IsValidUnitInRect( ){
       unit u;
       player holderPlayer = this.Holder.Player;
       GroupClear(thistype.tempGroup);
@@ -91,7 +91,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
       }
     }
 
-    thistype (rect targetRect, string rectName, boolean heroOnly ){
+    thistype (rect targetRect, string rectName, bool heroOnly ){
 
       trigger trig = CreateTrigger();
       if (heroOnly){

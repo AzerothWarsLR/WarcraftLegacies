@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
   
 
 
-    private boolean Global( ){
+    private bool Global( ){
       return true;
     }
 

@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Legion
   
 
 
-    private boolean operator Global( ){
+    private bool operator Global( ){
       return true;
     }
 

@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     private Legend target = 0;
     private static int count = 0;
     private static thistype[] byIndex;
-    private boolean canFail;
+    private bool canFail;
 
     float operator X( ){
       if (IsUnitType(target.Unit, UNIT_TYPE_STRUCTURE) || IsPlayerNeutralHostile(GetOwningPlayer(target.Unit))){

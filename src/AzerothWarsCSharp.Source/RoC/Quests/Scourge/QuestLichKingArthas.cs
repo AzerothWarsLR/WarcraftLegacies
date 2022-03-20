@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Scourge
   public class QuestLichKingArthas{
 
 
-    boolean operator Global( ){
+    bool operator Global( ){
       return true;
     }
 

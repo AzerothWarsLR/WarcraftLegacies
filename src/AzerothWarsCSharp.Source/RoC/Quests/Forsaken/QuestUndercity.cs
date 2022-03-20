@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Forsaken
 
 
 
-    boolean operator Global( ){
+    bool operator Global( ){
       return true;
     }
 

@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Main.Spells.Quel_thalas
     private const float RADIUS = 250;
   
 
-    private static boolean BanishFilter(unit caster, unit target ){
+    private static bool BanishFilter(unit caster, unit target ){
       if (!IsUnitType(target, UNIT_TYPE_STRUCTURE) && !IsUnitType(target, UNIT_TYPE_ANCIENT) && !IsUnitType(target, UNIT_TYPE_MECHANICAL) && IsUnitAliveBJ(target)){
         return true;
       }

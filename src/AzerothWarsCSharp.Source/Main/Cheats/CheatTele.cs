@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Main.Cheats
     //**CONFIG
   
     private const string COMMAND     = "-tele ";
-    private boolean[] TeleToggle;
+    private bool[] TeleToggle;
   
     //*ENDCONFIG
 

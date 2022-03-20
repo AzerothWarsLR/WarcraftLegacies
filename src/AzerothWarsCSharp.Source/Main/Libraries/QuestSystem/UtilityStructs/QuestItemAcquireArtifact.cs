@@ -2,7 +2,7 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 {
-  public class QuestItemAcquireArtifact{
+  public class QuestItemAcquireArtifact : QuestItemData{
 
 
     private static int count = 0;
@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
       }
     }
 
-    thistype (Artifact target ){
+    public QuestItemAcquireArtifact (Artifact target ){
 
       this.Description = "Acquire " + GetItemName(target.item);
       this.target = target;
