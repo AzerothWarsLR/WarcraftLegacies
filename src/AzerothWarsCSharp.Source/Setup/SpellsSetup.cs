@@ -212,6 +212,12 @@ namespace AzerothWarsCSharp.Source.Setup
         Interval = 7,
       };
       SpellSystem.Register(resurgentFlameStrike);
+
+      var executeWarsong = new Execute(FourCC("o021"));
+      SpellSystem.Register(executeWarsong);
+
+      var executeBlackEmpire = new Execute(FourCC("n0B4"));
+      SpellSystem.Register(executeBlackEmpire);
     }
   }
 }

@@ -1,18 +1,13 @@
-using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.Source.Libraries;
-using WCSharp.Events;
+﻿using AzerothWarsCSharp.MacroTools.SpellSystem;
 
-namespace AzerothWarsCSharp.Source.Spells.Warsong
+namespace AzerothWarsCSharp.MacroTools.Spells
 {
-  /// <summary>
-  /// When a Ravager reduces an enemy units hit points such that it ends up with less than 500% of the Ravager's damage, it dies instantly.
-  /// </summary>
-  public static class Execute
+  public sealed class Execute : AttackEffect
   {
     private const string EFFECT = "Objects\\Spawnmodels\\Human\\HumanLargeDeathExplode\\HumanLargeDeathExplode.mdl";
     private const int DAMAGE_MULT = 5;
-    
-    private static void OnDamage()
+
+    public override void OnDealsDamage()
     {
       unit triggerUnit = GetTriggerUnit();
       if (BlzGetEventIsAttack() && GetUnitState(triggerUnit, UNIT_STATE_LIFE) <
@@ -22,10 +17,9 @@ namespace AzerothWarsCSharp.Source.Spells.Warsong
         DestroyEffect(AddSpecialEffectTarget(EFFECT, triggerUnit, "origin"));
       }
     }
-
-    public static void Setup()
+    
+    public Execute(int attackerUnitTypeId) : base(attackerUnitTypeId)
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, OnDamage, FourCC("o021"));
     }
   }
 }
