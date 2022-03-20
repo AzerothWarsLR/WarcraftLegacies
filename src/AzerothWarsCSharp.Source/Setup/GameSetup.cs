@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Setup
       AllFactionSetup.Setup();
       PersonSetup_OnInit();
       ArtifactSetup_OnInit();
-      ControlPointSetup_OnInit();
+      ControlPointSetup.Setup();
       AllQuestSetup.Setup();
       ResearchSetup_OnInit();
       ObserverSetup_OnInit();
