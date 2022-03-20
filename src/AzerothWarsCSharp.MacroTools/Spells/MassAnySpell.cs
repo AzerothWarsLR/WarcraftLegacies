@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.MacroTools.Spells
         x = GetUnitX(caster);
         y = GetUnitY(caster);
       }
-      DummyCast.CastOnUnitsInRadius(caster, DummyAbilityId, DummyAbilityOrderString, GetAbilityLevel(caster),
+      DummyCast.DummyCastOnUnitsInCircle(caster, DummyAbilityId, DummyAbilityOrderString, GetAbilityLevel(caster),
         x, y, Radius, CastFilter);
     }
   }

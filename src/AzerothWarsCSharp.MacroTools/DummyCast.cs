@@ -4,62 +4,82 @@ namespace AzerothWarsCSharp.MacroTools
 {
   public static class DummyCast
   {
-    private group TempGroup = CreateGroup();
+    private static group TempGroup = CreateGroup();
 
     public delegate bool CastFilter(unit caster, unit target);
+    
+    public static void CastOnUnit(unit caster, int abilityId, string orderId, int level, unit target)
+    {
+      var dummy = DummyCaster.DummyUnit;
+      SetUnitOwner(dummy, GetOwningPlayer(caster), false);
+      SetUnitX(dummy, GetUnitX(caster));
+      SetUnitY(dummy, GetUnitY(caster));
+      UnitAddAbility(dummy, abilityId);
+      SetUnitAbilityLevel(dummy, abilityId, level);
+      IssueTargetOrder(dummy, orderId, target);
+      UnitRemoveAbility(dummy, abilityId);
+    }
+    
+    public static void ChannelOnPoint(unit caster, int abilityId, string orderId, int level, float x, float y, float duration)
+    {
+      var u = CreateUnit(GetOwningPlayer(caster), DummyCaster.UnitTypeId, x, y, 0);
+      UnitAddAbility(u, abilityId);
+      IssueImmediateOrder(u, orderId);
+      UnitApplyTimedLife(u, FourCC("BLTF"), duration);
+    }
     
     public static void DummyChannelInstantFromPoint(player whichPlayer, int abilId, string orderId, int level,
       float x, float y, float duration)
     {
-      unit u = CreateUnit(whichPlayer, DUMMY_TYPE, x, y, 0);
+      unit u = CreateUnit(whichPlayer, DummyCaster.UnitTypeId, x, y, 0);
       UnitAddAbility(u, abilId);
       IssueImmediateOrder(u, orderId);
-      UnitApplyTimedLife(u, FourCC(BTLF), duration);
+      UnitApplyTimedLife(u, FourCC("BTLF"), duration);
     }
 
     public static void DummyCastUnit(player whichPlayer, int abilId, string orderId, int level, unit u)
     {
-      SetUnitOwner(DUMMY, whichPlayer, false);
-      SetUnitX(DUMMY, GetUnitX(u));
-      SetUnitY(DUMMY, GetUnitY(u));
-      UnitAddAbility(DUMMY, abilId);
-      SetUnitAbilityLevel(DUMMY, abilId, level);
-      IssueTargetOrder(DUMMY, orderId, u);
-      UnitRemoveAbility(DUMMY, abilId);
+      SetUnitOwner(DummyCaster.DummyUnit, whichPlayer, false);
+      SetUnitX(DummyCaster.DummyUnit, GetUnitX(u));
+      SetUnitY(DummyCaster.DummyUnit, GetUnitY(u));
+      UnitAddAbility(DummyCaster.DummyUnit, abilId);
+      SetUnitAbilityLevel(DummyCaster.DummyUnit, abilId, level);
+      IssueTargetOrder(DummyCaster.DummyUnit, orderId, u);
+      UnitRemoveAbility(DummyCaster.DummyUnit, abilId);
     }
 
     public static void DummyCastPoint(player whichPlayer, int abilId, string orderId, int level, float x, float y)
     {
-      SetUnitOwner(DUMMY, whichPlayer, false);
-      SetUnitX(DUMMY, x);
-      SetUnitY(DUMMY, y);
-      UnitAddAbility(DUMMY, abilId);
-      SetUnitAbilityLevel(DUMMY, abilId, level);
-      IssuePointOrder(DUMMY, orderId, x, y);
-      UnitRemoveAbility(DUMMY, abilId);
+      SetUnitOwner(DummyCaster.DummyUnit, whichPlayer, false);
+      SetUnitX(DummyCaster.DummyUnit, x);
+      SetUnitY(DummyCaster.DummyUnit, y);
+      UnitAddAbility(DummyCaster.DummyUnit, abilId);
+      SetUnitAbilityLevel(DummyCaster.DummyUnit, abilId, level);
+      IssuePointOrder(DummyCaster.DummyUnit, orderId, x, y);
+      UnitRemoveAbility(DummyCaster.DummyUnit, abilId);
     }
 
     public static void DummyCastInstant(player whichPlayer, int abilId, string orderId, int level, float x, float y)
     {
-      SetUnitOwner(DUMMY, whichPlayer, false);
-      SetUnitX(DUMMY, x);
-      SetUnitY(DUMMY, y);
-      UnitAddAbility(DUMMY, abilId);
-      SetUnitAbilityLevel(DUMMY, abilId, level);
-      IssueImmediateOrder(DUMMY, orderId);
-      UnitRemoveAbility(DUMMY, abilId);
+      SetUnitOwner(DummyCaster.DummyUnit, whichPlayer, false);
+      SetUnitX(DummyCaster.DummyUnit, x);
+      SetUnitY(DummyCaster.DummyUnit, y);
+      UnitAddAbility(DummyCaster.DummyUnit, abilId);
+      SetUnitAbilityLevel(DummyCaster.DummyUnit, abilId, level);
+      IssueImmediateOrder(DummyCaster.DummyUnit, orderId);
+      UnitRemoveAbility(DummyCaster.DummyUnit, abilId);
     }
 
     public static void DummyCastUnitFromPoint(player whichPlayer, int abilId, string orderId, int level, unit u,
       float originX, float originY)
     {
-      SetUnitOwner(DUMMY, whichPlayer, false);
-      SetUnitX(DUMMY, originX);
-      SetUnitY(DUMMY, originY);
-      UnitAddAbility(DUMMY, abilId);
-      SetUnitAbilityLevel(DUMMY, abilId, level);
-      IssueTargetOrder(DUMMY, orderId, u);
-      UnitRemoveAbility(DUMMY, abilId);
+      SetUnitOwner(DummyCaster.DummyUnit, whichPlayer, false);
+      SetUnitX(DummyCaster.DummyUnit, originX);
+      SetUnitY(DummyCaster.DummyUnit, originY);
+      UnitAddAbility(DummyCaster.DummyUnit, abilId);
+      SetUnitAbilityLevel(DummyCaster.DummyUnit, abilId, level);
+      IssueTargetOrder(DummyCaster.DummyUnit, orderId, u);
+      UnitRemoveAbility(DummyCaster.DummyUnit, abilId);
     }
 
     public static void DummyCastFromPointOnUnitsInCircle(unit caster, int abilId, string orderId, int level,
@@ -75,7 +95,7 @@ namespace AzerothWarsCSharp.MacroTools
           break;
         }
 
-        if (castFilter.evaluate(caster, u))
+        if (castFilter(caster, u))
         {
           DummyCastUnitFromPoint(GetOwningPlayer(caster), abilId, orderId, level, u, originX, originY);
         }
@@ -86,13 +106,13 @@ namespace AzerothWarsCSharp.MacroTools
 
     public static void DummyCastUnitId(player whichPlayer, int abilId, int orderId, int level, unit u)
     {
-      SetUnitOwner(DUMMY, whichPlayer, false);
-      SetUnitX(DUMMY, GetUnitX(u));
-      SetUnitY(DUMMY, GetUnitY(u));
-      UnitAddAbility(DUMMY, abilId);
-      SetUnitAbilityLevel(DUMMY, abilId, level);
-      IssueTargetOrderById(DUMMY, orderId, u);
-      UnitRemoveAbility(DUMMY, abilId);
+      SetUnitOwner(DummyCaster.DummyUnit, whichPlayer, false);
+      SetUnitX(DummyCaster.DummyUnit, GetUnitX(u));
+      SetUnitY(DummyCaster.DummyUnit, GetUnitY(u));
+      UnitAddAbility(DummyCaster.DummyUnit, abilId);
+      SetUnitAbilityLevel(DummyCaster.DummyUnit, abilId, level);
+      IssueTargetOrderById(DummyCaster.DummyUnit, orderId, u);
+      UnitRemoveAbility(DummyCaster.DummyUnit, abilId);
     }
 
     public static void DummyCastOnUnitsInCircle(unit caster, int abilId, string orderId, int level, float x, float y,
