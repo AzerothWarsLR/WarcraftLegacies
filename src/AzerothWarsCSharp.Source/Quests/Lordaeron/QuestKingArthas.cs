@@ -1,5 +1,6 @@
 //Prince Arthas goes to the Frozen Throne after it)s destroyed. He becomes King Arthas, gets the Crown of Lordaeron, and Terenas dies.
 
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.Source.Libraries;
 using AzerothWarsCSharp.Source.Libraries.QuestSystem.UtilityStructs;
 

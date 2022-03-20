@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace AzerothWarsCSharp.Source.Libraries.Wrappers
+namespace AzerothWarsCSharp.MacroTools.Wrappers
 {
   /// <summary>
   ///   A wrapper for a Warcraft 3 unit group.

@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.Source.Legends;
 using AzerothWarsCSharp.Source.Libraries;
 using AzerothWarsCSharp.Source.Libraries.QuestSystem;

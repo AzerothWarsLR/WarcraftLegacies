@@ -1,5 +1,6 @@
 //Displays each Faction)s starting quest after the cinematic phase ends
 
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.Source.Libraries;
 using AzerothWarsCSharp.Source.Libraries.MacroTools;
 

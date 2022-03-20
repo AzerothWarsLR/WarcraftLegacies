@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace AzerothWarsCSharp.Source.Libraries
+namespace AzerothWarsCSharp.MacroTools
 {
   /// <summary>
   /// Contains extra Azeroth Wars specific information about Warcraft 3 unit types.

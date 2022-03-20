@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.Source.Libraries.QuestSystem;
 using WCSharp.Events;
 

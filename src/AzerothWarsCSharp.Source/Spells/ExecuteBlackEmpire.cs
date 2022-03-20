@@ -1,5 +1,6 @@
 //When a Ravager reduces an enemy units hit points such that it ends up with less than 500% of the Ravager)s damage, it dies instantly.
 
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Spells

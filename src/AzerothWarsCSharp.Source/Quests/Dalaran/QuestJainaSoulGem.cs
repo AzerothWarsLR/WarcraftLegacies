@@ -1,5 +1,6 @@
 //Jaina goes to Scholomance while Scholomance building is destroyed and retrieves the Soul Gem
 
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.Source.Libraries;
 using AzerothWarsCSharp.Source.Libraries.QuestSystem.UtilityStructs;
 

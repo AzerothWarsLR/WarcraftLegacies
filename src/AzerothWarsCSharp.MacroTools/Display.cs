@@ -1,6 +1,4 @@
-using AzerothWarsCSharp.Source.Libraries.MacroTools;
-
-namespace AzerothWarsCSharp.Source.Libraries
+namespace AzerothWarsCSharp.MacroTools
 {
   public static class Display{
 

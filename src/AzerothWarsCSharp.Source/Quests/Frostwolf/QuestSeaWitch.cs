@@ -1,6 +1,7 @@
 //Frostwolf kills the Sea Witch. Thrall gets some boats to leave the Darkspear Isles.
 //Presently this ONLY deals with the final component of the event. The rest is done in GUI.
 
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.Source.Libraries;
 using AzerothWarsCSharp.Source.Libraries.MacroTools;
 using AzerothWarsCSharp.Source.Libraries.QuestSystem.UtilityStructs;

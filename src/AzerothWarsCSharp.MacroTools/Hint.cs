@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace AzerothWarsCSharp.Source.Libraries
+namespace AzerothWarsCSharp.MacroTools
 {
-  public class Hint
+  public sealed class Hint
   {
     private const float HINT_INTERVAL = 180;
 
@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Libraries
     
     private void Display()
     {
-      Libraries.Display.DisplayHint(GetLocalPlayer(), _msg);
+      MacroTools.Display.DisplayHint(GetLocalPlayer(), _msg);
       Unread.Remove(this);
     }
 

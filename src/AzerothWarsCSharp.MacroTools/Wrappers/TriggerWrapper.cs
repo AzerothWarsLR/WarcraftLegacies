@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AzerothWarsCSharp.Source.Libraries.Wrappers
+namespace AzerothWarsCSharp.MacroTools.Wrappers
 {
   public class TriggerWrapper
   {

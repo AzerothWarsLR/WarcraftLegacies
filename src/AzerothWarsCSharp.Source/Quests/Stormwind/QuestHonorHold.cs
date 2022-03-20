@@ -1,6 +1,7 @@
 //When Hellfire Citadel is destroyed, give Honor Hold to Stormwind if they are in the game, and modify doodads for visuals.
 //If Stormwind is not in the game, do nothing.
 
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.Source.Libraries;
 using AzerothWarsCSharp.Source.Libraries.QuestSystem.UtilityStructs;
 

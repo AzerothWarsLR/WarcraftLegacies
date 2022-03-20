@@ -2,7 +2,7 @@ using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.Source.Libraries.MacroTools;
 using AzerothWarsCSharp.Source.Libraries.QuestSystem;
 using AzerothWarsCSharp.Source.Libraries.QuestSystem.UtilityStructs;
-using GeneralHelpers = AzerothWarsCSharp.Source.Libraries.GeneralHelpers;
+using GeneralHelpers = AzerothWarsCSharp.MacroTools.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Cthun
 {

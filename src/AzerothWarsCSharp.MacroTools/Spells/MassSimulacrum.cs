@@ -2,7 +2,6 @@
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Buffs;
-using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Spells
 {

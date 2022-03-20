@@ -1,4 +1,4 @@
-namespace AzerothWarsCSharp.Source.Libraries
+namespace AzerothWarsCSharp.MacroTools
 {
   public static class SpellHelpers
   {

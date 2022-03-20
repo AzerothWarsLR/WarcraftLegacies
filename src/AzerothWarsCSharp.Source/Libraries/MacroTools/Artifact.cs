@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 

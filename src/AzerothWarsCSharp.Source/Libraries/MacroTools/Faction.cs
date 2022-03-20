@@ -1,8 +1,9 @@
 using System;
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Game_Logic;
 using AzerothWarsCSharp.Source.Libraries.QuestSystem;
-using AzerothWarsCSharp.Source.Libraries.Wrappers;
 using WCSharp.Events;
 
 namespace AzerothWarsCSharp.Source.Libraries.MacroTools

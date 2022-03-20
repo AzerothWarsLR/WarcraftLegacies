@@ -1,5 +1,6 @@
 //Escapes Kalimdor, Find the Skull of Guldan
 
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.Source.Libraries;
 using AzerothWarsCSharp.Source.Libraries.QuestSystem.UtilityStructs;
 
