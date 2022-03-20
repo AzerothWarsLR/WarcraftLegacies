@@ -7,15 +7,13 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
     private static thistype[] byIndex;
     private int researchId;
 
-
-
-
+    public QuestItemResearch(int researchId, int structureId)
+    {
+      Description = "Research " + GetObjectName(researchId) + " from the " + GetObjectName(structureId);
       this.researchId = researchId;
-    thistype.byIndex[thistype.count] = this;
-    thistype.count = thistype.count + 1;
-    ;;
-  }
-}
+      thistype.byIndex[thistype.count] = this;
+      thistype.count = thistype.count + 1;
+    }
 
     private static void OnAnyResearch( ){
       var i = 0;

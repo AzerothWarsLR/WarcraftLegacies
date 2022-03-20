@@ -1,3 +1,4 @@
+using System.Text;
 using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.RoC.Setup.FactionSetup
@@ -5,7 +6,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup.FactionSetup
   public class ScourgeSetup{
 
   
-    Faction FACTION_SCOURGE
+    public static Faction FACTION_SCOURGE { get; private set; }
   
 
     public static void Setup( ){

@@ -1,5 +1,7 @@
 //A command that causes a player to leave their Team and be given a solo Team with their Faction as the name.
 
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
 namespace AzerothWarsCSharp.Source.Main.Commands
 {
 	public class Unally{

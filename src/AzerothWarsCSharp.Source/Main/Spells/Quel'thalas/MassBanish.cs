@@ -1,28 +1,31 @@
+using AzerothWarsCSharp.Source.Main.Libraries;
+using WCSharp.Events;
+
 namespace AzerothWarsCSharp.Source.Main.Spells.Quel_thalas
 {
-  public class MassBanish{
-
-  
-    private const int ABIL_ID = FourCC(A0FD);
-    private const int DUMMY_ABIL_ID = FourCC(A0FE);
+  public static class MassBanish
+  {
+    private static readonly int AbilId = FourCC("A0FD");
+    private static readonly int DummyAbilId = FourCC("A0FE");
     private const string DUMMY_ORDER_STRING = "banish";
     private const float RADIUS = 250;
-  
-
-    private static bool BanishFilter(unit caster, unit target ){
-      if (!IsUnitType(target, UNIT_TYPE_STRUCTURE) && !IsUnitType(target, UNIT_TYPE_ANCIENT) && !IsUnitType(target, UNIT_TYPE_MECHANICAL) && IsUnitAliveBJ(target)){
-        return true;
-      }
-      return false;
+    
+    private static bool BanishFilter(unit caster, unit target)
+    {
+      return !IsUnitType(target, UNIT_TYPE_STRUCTURE) && !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
+             !IsUnitType(target, UNIT_TYPE_MECHANICAL) && IsUnitAliveBJ(target);
     }
 
-    private static void Cast( ){
-      DummyCastOnUnitsInCircle(GetTriggerUnit(), DUMMY_ABIL_ID, DUMMY_ORDER_STRING, GetUnitAbilityLevel(GetTriggerUnit(), ABIL_ID), GetSpellTargetX(), GetSpellTargetY(), RADIUS, CastFilter.BanishFilter);
+    private static void Cast()
+    {
+      DummyCast.DummyCastOnUnitsInCircle(GetTriggerUnit(), DummyAbilId, DUMMY_ORDER_STRING,
+        GetUnitAbilityLevel(GetTriggerUnit(), AbilId), GetSpellTargetX(), GetSpellTargetY(), RADIUS,
+        BanishFilter);
     }
 
-    public static void Setup( ){
-      RegisterSpellEffectAction(ABIL_ID,  Cast);
+    public static void Setup()
+    {
+      PlayerUnitEvents.Register(PlayerUnitEvent.SpellEffect, Cast, AbilId);
     }
-
   }
 }

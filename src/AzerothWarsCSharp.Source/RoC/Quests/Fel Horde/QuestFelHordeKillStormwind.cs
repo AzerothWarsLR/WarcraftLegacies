@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
 using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
 {
-  public class QuestFelHordeKillStormwind{
+  public class QuestFelHordeKillStormwind : QuestData{
 
   
     private const int RESEARCH_ID = FourCC(R05Z);

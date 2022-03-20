@@ -13,6 +13,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup
       BombingRun.Setup();
       IllusionaryLance.Setup();
       ThunderFists.Setup();
+      InspireMadness.Setup();
     }
   }
 }

@@ -1,9 +1,10 @@
 using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
 using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
 {
-  public class QuestBlackrock{
+  public class QuestBlackrock : QuestData{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R03C);
@@ -56,7 +57,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
       this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n09Y))));
       this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n0A9))));
       this.AddQuestItem(QuestItemExpire.create(1451));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(QuestItemSelfExists);
       ;;
     }
 

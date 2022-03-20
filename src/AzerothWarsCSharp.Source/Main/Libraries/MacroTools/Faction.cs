@@ -22,7 +22,10 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     public static event EventHandler<Faction>? IconChanged;
     public static event EventHandler<Faction>? StatusChanged;
 
-    private const int UNLIMITED = 200; //This is used in Persons and Faction for effectively unlimited unit production
+    /// <summary>
+    /// Signifies unlimited unit production.
+    /// </summary>
+    public const int UNLIMITED = 200;
     private const int HERO_COST = 100; //For refunding
 
     private const float

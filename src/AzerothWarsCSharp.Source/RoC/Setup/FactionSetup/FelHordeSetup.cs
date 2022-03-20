@@ -2,10 +2,10 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.RoC.Setup.FactionSetup
 {
-  public class FelHordeSetup{
+  public static class FelHordeSetup{
 
   
-    Faction FACTION_FEL_HORDE
+    public static Faction FACTION_FEL_HORDE { get; private set; }
   
 
     public static void Setup( ){

@@ -1,22 +1,23 @@
 using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
 using AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde;
+using static AzerothWarsCSharp.Source.RoC.Setup.FactionSetup.FelHordeSetup;
 
 namespace AzerothWarsCSharp.Source.RoC.Setup.QuestSetup
 {
-  public class FelHordeQuestSetup{
-
-    public static void Setup( ){
+  public static class FelHordeQuestSetup
+  {
+    public static void Setup()
+    {
       //Early duel
-      QuestData newQuest = FACTION_FEL_HORDE.AddQuest(QuestKillDraenei.create());
+      QuestData newQuest = FACTION_FEL_HORDE.AddQuest(new QuestKillDraenei());
       FACTION_FEL_HORDE.StartingQuest = newQuest;
-      FACTION_FEL_HORDE.AddQuest(QuestKilsorrow.create());
-      FACTION_FEL_HORDE.AddQuest(QuestHellfire.create());
-      FACTION_FEL_HORDE.AddQuest(QuestBlackrock.create());
-      FACTION_FEL_HORDE.AddQuest(QuestFelHordeKillIronforge.create());
-      FACTION_FEL_HORDE.AddQuest(QuestFelHordeKillStormwind.create());
+      FACTION_FEL_HORDE.AddQuest(new QuestKilsorrow());
+      FACTION_FEL_HORDE.AddQuest(new QuestHellfire());
+      FACTION_FEL_HORDE.AddQuest(new QuestBlackrock());
+      FACTION_FEL_HORDE.AddQuest(new QuestFelHordeKillIronforge());
+      FACTION_FEL_HORDE.AddQuest(new QuestFelHordeKillStormwind());
       //Misc
-      FACTION_FEL_HORDE.AddQuest(QuestGuldansLegacy.create());
+      FACTION_FEL_HORDE.AddQuest(new QuestGuldansLegacy());
     }
-
   }
 }

@@ -18,9 +18,9 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 
     private static readonly Dictionary<int, ControlPoint> _byUnitType = new();
     private static readonly Dictionary<unit, ControlPoint> _byUnit = new();
-    private player owner;
 
     private readonly float value;
+    private player owner;
 
     public ControlPoint(unit u, float value)
     {
@@ -39,6 +39,17 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     public unit Unit { get; }
 
     public Person OwningPerson => Person.ByHandle(owner);
+
+    /// <summary>
+    ///   Whether or not the given unit is a <see cref="ControlPoint" />.
+    /// </summary>
+    /// <param name="unit"></param>
+    /// <returns></returns>
+    public static bool UnitIsControlPoint(unit unit)
+    {
+      return _byUnit.ContainsKey(unit);
+    }
+
     public static event EventHandler<ControlPoint>? OnControlPointLoss;
     public static event EventHandler<ControlPointOwnerChangeEventArgs>? OnControlPointOwnerChange;
 

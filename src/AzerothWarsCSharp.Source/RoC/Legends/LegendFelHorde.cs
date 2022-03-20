@@ -5,17 +5,17 @@ namespace AzerothWarsCSharp.Source.RoC.Legends
   public static class LegendFelHorde{
 
   
-    public static Legend LEGEND_MAGTHERIDON
-    public static Legend LEGEND_ZULUHED
-    public static Legend LEGEND_CHOGALL
-    public static Legend LEGEND_NEKROSH
-    public static Legend LEGEND_REND
-    public static Legend LEGEND_TERON
-    public static Legend LEGEND_KARGATH
+    public static Legend LEGEND_MAGTHERIDON { get; private set; }
+    public static Legend LEGEND_ZULUHED { get; private set; }
+    public static Legend LEGEND_CHOGALL { get; private set; }
+    public static Legend LEGEND_NEKROSH { get; private set; }
+    public static Legend LEGEND_REND { get; private set; }
+    public static Legend LEGEND_TERON { get; private set; }
+    public static Legend LEGEND_KARGATH { get; private set; }
 
-    public static Legend LEGEND_BLACKROCKSPIRE
-    public static Legend LEGEND_BLACKTEMPLE
-    public static Legend LEGEND_HELLFIRECITADEL
+    public static Legend LEGEND_BLACKROCKSPIRE { get; private set; }
+    public static Legend LEGEND_BLACKTEMPLE { get; private set; }
+    public static Legend LEGEND_HELLFIRECITADEL { get; private set; }
   
 
     public static void Setup( ){

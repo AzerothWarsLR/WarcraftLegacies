@@ -1,9 +1,10 @@
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
 using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
 {
-  public class QuestFelHordeKillIronforge{
-
+  public class QuestFelHordeKillIronforge : QuestData{
+ 
   
     private const int RESEARCH_ID = FourCC(R011);
     private const int UNITTYPE_ID = FourCC(nina);

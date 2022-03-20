@@ -1,9 +1,10 @@
 using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
 using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
 {
-  public class QuestHellfire{
+  public class QuestHellfire : QuestData{
 
   
     private const int QUEST_RESEARCH_ID = FourCC(R00P);
@@ -62,7 +63,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
       this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n02N))));
       this.AddQuestItem(QuestItemUpgrade.create(FourCC(o030), )o02Y)));
       this.AddQuestItem(QuestItemExpire.create(1450));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(QuestItemSelfExists);
       ;;
     }
 

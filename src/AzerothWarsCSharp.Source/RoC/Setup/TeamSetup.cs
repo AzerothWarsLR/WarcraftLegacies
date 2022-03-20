@@ -5,16 +5,16 @@ namespace AzerothWarsCSharp.Source.RoC.Setup
   public class TeamSetup{
 
   
-    Team TEAM_LEGION
-    Team TEAM_ALLIANCE
-    Team TEAM_HORDE
-    Team TEAM_NIGHT_ELVES
-    Team TEAM_NAGA
-    Team TEAM_GILNEAS
-    Team TEAM_SCARLET
-    Team TEAM_FORSAKEN
-    Team TEAM_OLDGOD
-    Team TEAM_SCOURGE
+    public static Team TEAM_LEGION { get; private set; }
+    public static Team TEAM_ALLIANCE { get; private set; }
+    public static Team TEAM_HORDE { get; private set; }
+    public static Team TEAM_NIGHT_ELVES { get; private set; }
+    public static Team TEAM_NAGA { get; private set; }
+    public static Team TEAM_GILNEAS { get; private set; }
+    public static Team TEAM_SCARLET { get; private set; }
+    public static Team TEAM_FORSAKEN { get; private set; }
+    public static Team TEAM_OLDGOD { get; private set; }
+    public static Team TEAM_SCOURGE { get; private set; }
   
 
     public static void Setup( ){

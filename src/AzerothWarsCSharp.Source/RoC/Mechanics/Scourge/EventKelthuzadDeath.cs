@@ -1,31 +1,35 @@
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.RoC.Legends;
+using AzerothWarsCSharp.Source.RoC.Setup.FactionSetup;
+
 namespace AzerothWarsCSharp.Source.RoC.Mechanics.Scourge
 {
-  public class EventKelthuzadDeath{
+  /// <summary>
+  /// When Kel'thuzad (Necromancer) is permanently killed, record his experience, and create Kel'thuzad (Ghost) as a replacement.
+  /// This experience is given to Kel'thuzad (Lich) in <see cref="QuestKelthuzadLich"/>.
+  /// </summary>
+  public static class EventKelthuzadDeath
+  {
+    public static int KelthuzadExp { get; private set; }
+    private static readonly int GhostId = FourCC("uktg");
 
-    //When Kel)thuzad (Necromancer) is permanently killed
-    //Record his experience, and create Kel)thuzad (Ghost) as a replacement
-    //This experience is given to Kel)thuzad (Lich) in QuestKelthuzadLich
-
-  
-    int KelthuzadExp;
-    private const int GHOST_ID = FourCC(uktg);
-  
-
-    private static void Dies( ){
-      if (LEGEND_KELTHUZAD == GetTriggerLegend() && GetTriggerLegend().UnitType == UNITTYPE_KELTHUZAD_NECROMANCER){
-        KelthuzadExp = GetHeroXP(LEGEND_KELTHUZAD.Unit);
-        LEGEND_KELTHUZAD.UnitType = UNITTYPE_KELTHUZAD_GHOST;
-        LEGEND_KELTHUZAD.PermaDies = false;
-        LEGEND_KELTHUZAD.Spawn(FACTION_SCOURGE.Player, GetRectCenterX(gg_rct_FTSummon), GetRectCenterY(gg_rct_FTSummon), 270);
+    private static void Dies(object? sender, Legend legend)
+    {
+      var kelthuzad = LegendScourge.LegendKelthuzad;
+      if (legend == LegendScourge.LegendKelthuzad && legend.UnitType == LegendScourge.UnittypeKelthuzadNecromancer)
+      {
+        KelthuzadExp = GetHeroXP(legend.Unit);
+        legend.UnitType = LegendScourge.UnittypeKelthuzadGhost;
+        legend.PermaDies = false;
+        legend.Spawn(ScourgeSetup.FACTION_SCOURGE.Player, Regions.FTSummon.Center.X, Regions.FTSummon.Center.Y,
+          270);
         DestroyTrigger(GetTriggeringTrigger());
       }
     }
 
-    public static void Setup( ){
-      trigger trig = CreateTrigger();
-      OnLegendPermaDeath.register(trig);
-      TriggerAddCondition(trig, ( Dies));
+    public static void Setup()
+    {
+      Legend.OnLegendPermaDeath += Dies;
     }
-
   }
 }

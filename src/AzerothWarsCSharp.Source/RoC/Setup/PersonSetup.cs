@@ -1,3 +1,5 @@
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
 namespace AzerothWarsCSharp.Source.RoC.Setup
 {
   public class PersonSetup{

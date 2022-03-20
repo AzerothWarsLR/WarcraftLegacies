@@ -1,3 +1,5 @@
+using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+
 namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs
 {
   public class QuestItemControlUnit{

@@ -2,9 +2,9 @@ using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.RoC.Setup.FactionSetup
 {
-  public class NagaSetup{
+  public static class NagaSetup{
   
-    Faction FACTION_NAGA
+    public static Faction FACTION_NAGA { get; private set; }
   
 
     public static void Setup( ){

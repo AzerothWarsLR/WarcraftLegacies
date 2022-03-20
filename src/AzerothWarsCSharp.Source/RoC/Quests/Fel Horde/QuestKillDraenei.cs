@@ -1,9 +1,10 @@
 using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
 using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
 {
-  public class QuestKillDraenei{
+  public class QuestKillDraenei : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -41,7 +42,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
       thistype this = thistype.allocate("The Shattrah Massacre", "The Draenei race existence insults the Fel Horde demon masters, slaughter them all ", "ReplaceableTextures\\CommandButtons\\BTNChaosWolfRider.blp");
       this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n09X))));
       this.AddQuestItem(QuestItemLegendDead.create(LEGEND_EXODARSHIP));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(QuestItemSelfExists);
       ;;
     }
 

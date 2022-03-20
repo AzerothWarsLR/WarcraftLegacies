@@ -1,9 +1,10 @@
 using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
+using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem;
 using AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
 {
-  public class QuestKilsorrow{
+  public class QuestKilsorrow : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -30,7 +31,7 @@ namespace AzerothWarsCSharp.Source.RoC.Quests.Fel_Horde
       thistype this = thistype.allocate("KilFourCC(sorrow Fortress", "This sinister fortress will serve the Fel Horde well, clear the surrounding lands to establish it", "ReplaceableTextures\\CommandButtons\\BTNFelOrcWatchTower.blp");
       this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n09X))));
       this.AddQuestItem(QuestItemExpire.create(1452));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(QuestItemSelfExists);
       ;;
     }
 

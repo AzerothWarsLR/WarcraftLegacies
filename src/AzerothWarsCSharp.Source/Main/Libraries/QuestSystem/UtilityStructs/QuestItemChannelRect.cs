@@ -1,3 +1,4 @@
+using System.Threading.Channels;
 using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.Main.Libraries.QuestSystem.UtilityStructs

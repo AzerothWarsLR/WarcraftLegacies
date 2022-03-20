@@ -1,3 +1,5 @@
+using AzerothWarsCSharp.Source.Main.Game_Logic;
+
 namespace AzerothWarsCSharp.Source.RoC.Setup
 {
   public static class GameSetup
@@ -15,6 +17,7 @@ namespace AzerothWarsCSharp.Source.RoC.Setup
       ResearchSetup_OnInit();
       ObserverSetup_OnInit();
       SpellsSetup.Setup();
+      CpCapture.Setup();
     }
   }
 }
