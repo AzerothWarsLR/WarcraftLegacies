@@ -26,13 +26,14 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
       ShoresByIndex.Add(this);
     }
     
-    public static Shore GetNearestShore(float x, float y ){
+    public static Shore? GetNearestShore(float x, float y ){
       var i = 0;
-      Shore nearestShore = null;
+      Shore? nearestShore = null;
       float nearestDistance = 1000000;
       while(true){
         if ( i == Count){ break; }
-        var tempDistance = Instance.GetDistanceBetweenPointsEx(x, y, ShoresByIndex[i].x, ShoresByIndex[i].y);
+        var tempDistance = Instance.GetDistanceBetweenPointsEx(x, y, ShoresByIndex[i]
+          .Position.X, ShoresByIndex[i].Position.Y);
         if (tempDistance < nearestDistance){
           nearestDistance = tempDistance;
           nearestShore = ShoresByIndex[i];
@@ -41,6 +42,5 @@ namespace AzerothWarsCSharp.Source.Main.Libraries
       }
       return nearestShore;
     }
-
   }
 }

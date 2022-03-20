@@ -240,7 +240,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
 
     public static void Setup()
     {
-      Person.OnPersonFactionChange += OnPersonFactionChanged;
+      Person.FactionChange += OnPersonFactionChanged;
       PlayerUnitEvents.Register(PlayerUnitEvent.ItemTypeIsPickedUp, ItemPickup);
       PlayerUnitEvents.Register(PlayerUnitEvent.ItemTypeIsDropped, ItemDrop);
       PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeChangesOwner, UnitChangeOwner);

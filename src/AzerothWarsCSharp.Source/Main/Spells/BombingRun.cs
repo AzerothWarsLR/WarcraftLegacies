@@ -1,19 +1,22 @@
+using AzerothWarsCSharp.Source.Main.Libraries;
+using WCSharp.Events;
+
 namespace AzerothWarsCSharp.Source.Main.Spells
 {
-  public class BombingRun{
-
-  
-    private const int ABIL_ID = FourCC(A0S5);
-    private const int LOCUSTSWARM_ID = FourCC(A0S1);
-  
-
-    private static void Cast( ){
-      DummyChannelInstantFromPoint(GetOwningPlayer(GetTriggerUnit()), LOCUSTSWARM_ID, "locustswarm", 1, GetSpellTargetX(), GetSpellTargetY(), 15);
+  public static class BombingRun
+  {
+    private static readonly int AbilId = FourCC("A0S5");
+    private static readonly int LocustSwarmId = FourCC("A0S1");
+    
+    private static void Cast()
+    {
+      DummyCast.DummyChannelInstantFromPoint(GetOwningPlayer(GetTriggerUnit()), LocustSwarmId, "locustswarm", 1,
+        GetSpellTargetX(), GetSpellTargetY(), 15);
     }
 
-    public static void Setup( ){
-      RegisterSpellEffectAction(ABIL_ID,  Cast);
+    public static void Setup()
+    {
+      PlayerUnitEvents.Register(PlayerUnitEvent.SpellEffect, Cast, AbilId);
     }
-
   }
 }

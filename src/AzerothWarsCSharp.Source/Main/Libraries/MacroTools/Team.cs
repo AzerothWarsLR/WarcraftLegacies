@@ -7,8 +7,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
   
     Event OnTeamCreate = 0;
     Event OnTeamSizeChange = 0;
-    Event TeamScoreStatusChanged
-    
+
     private static Dictionary<string, Team> teamsByName;
     private static thistype[] teamsByIndex;
     private static int teamCount = 0;
@@ -19,6 +18,11 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     private int scoreStatus;
     private string victoryMusic;
 
+    public static IEnumerable<Team> GetAllTeams()
+    {
+      
+    }
+    
     public static Team Register(Team team)
     {
       throw new NotImplementedException();

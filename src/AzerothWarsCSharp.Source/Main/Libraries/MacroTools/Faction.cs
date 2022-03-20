@@ -14,13 +14,13 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
   /// </summary>
   public sealed class Faction
   {
-    public static event EventHandler<Faction>? OnFactionCreate;
-    public static event EventHandler<FactionChangeTeamEventArgs>? OnFactionTeamLeave;
-    public static event EventHandler<Faction>? OnFactionTeamJoin;
-    public static event EventHandler<Faction>? OnFactionGameLeave;
-    public static event EventHandler<Faction>? FactionNameChanged;
-    public static event EventHandler<Faction>? FactionIconChanged;
-    public static event EventHandler<Faction>? FactionScoreStatusChanged;
+    public static event EventHandler<Faction>? Registered;
+    public static event EventHandler<FactionChangeTeamEventArgs>? TeamLeft;
+    public static event EventHandler<Faction>? TeamJoin;
+    public static event EventHandler<Faction>? GameLeave;
+    public static event EventHandler<Faction>? NameChanged;
+    public static event EventHandler<Faction>? IconChanged;
+    public static event EventHandler<Faction>? StatusChanged;
 
     private const int UNLIMITED = 200; //This is used in Persons and Faction for effectively unlimited unit production
     private const int HERO_COST = 100; //For refunding
@@ -35,7 +35,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
     private string? _name;
     private string _prefixCol;
     private string _icon;
-    private ScoreStatus _scoreStatus = ScoreStatus.ScorestatusNormal;
+    private ScoreStatus _scoreStatus = ScoreStatus.Undefeated;
 
     private Person? _person;
     private Team? _team;
@@ -86,7 +86,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       {
         var i = 0;
         //Change defeated/undefeated researches
-        if (value == ScoreStatus.ScorestatusDefeated)
+        if (value == ScoreStatus.Defeated)
         {
           while (true)
           {
@@ -102,7 +102,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
         }
 
         //Remove player from game if necessary
-        if (value == ScoreStatus.ScorestatusDefeated && Player != null)
+        if (value == ScoreStatus.Defeated && Player != null)
         {
           RemovePlayer(Player, PLAYER_GAME_RESULT_DEFEAT);
           SetPlayerState(Player, PLAYER_STATE_OBSERVER, 1);
@@ -110,7 +110,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
         }
 
         _scoreStatus = value;
-        FactionScoreStatusChanged?.Invoke(this, this);
+        StatusChanged?.Invoke(this, this);
       }
     }
 
@@ -127,14 +127,14 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
           var previousTeam = _team;
           _team.RemoveFaction(this);
           _team = null;
-          OnFactionTeamLeave?.Invoke(this, new FactionChangeTeamEventArgs(this, previousTeam));
+          TeamLeft?.Invoke(this, new FactionChangeTeamEventArgs(this, previousTeam));
         }
 
         if (value != null)
         {
           value.AddFaction(this);
           _team = value;
-          OnFactionTeamJoin?.Invoke(this, this);
+          TeamJoin?.Invoke(this, this);
         }
       }
     }
@@ -156,7 +156,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
         FactionsByName.Remove(_name);
         _name = value;
         FactionsByName[value.ToLower()] = this;
-        FactionNameChanged?.Invoke(this, this);
+        NameChanged?.Invoke(this, this);
       }
     }
 
@@ -166,7 +166,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       set
       {
         _icon = value;
-        FactionIconChanged?.Invoke(this, this);
+        IconChanged?.Invoke(this, this);
       }
     }
 
@@ -517,7 +517,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       {
         Obliterate();
       }
-      OnFactionGameLeave?.Invoke(this, this);
+      GameLeave?.Invoke(this, this);
     }
 
     public static Faction? GetFromPlayer(player whichPlayer)
@@ -540,7 +540,7 @@ namespace AzerothWarsCSharp.Source.Main.Libraries.MacroTools
       {
         throw new Exception($"Attempted to register faction that already exists with name {faction}.");
       }
-      OnFactionCreate?.Invoke(faction, faction);
+      Registered?.Invoke(faction, faction);
     }
     
     public Faction(string? name, playercolor playerColor, string prefixCol, string icon)

@@ -1,46 +1,45 @@
-using AzerothWarsCSharp.Source.Main.Libraries;
+using System.Collections.Generic;
 using AzerothWarsCSharp.Source.Main.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.Main.User_Interface
 {
-  public class FactionMultiboard
+  public sealed class FactionMultiboard
   {
     private const int COLUMN_COUNT = 3;
     private const string TITLE = "Scoreboard";
-    private const int HEADER_SIZE = 1;
 
-    const int COLUMN_FACTION = 0;
-    const int COLUMN_CP = 1;
-    const int COLUMN_INCOME = 2;
-    const int COLUMN_TEAM = 0;
+    private const int COLUMN_FACTION = 0;
+    private const int COLUMN_CP = 1;
+    private const int COLUMN_INCOME = 2;
+    private const int COLUMN_TEAM = 0;
 
-    const float WIDTH_FACTION = 008;
-    const float WIDTH_CP = 002;
-    const float WIDTH_INCOME = 002;
-    const float WIDTH_TEAM = WIDTH_FACTION + WIDTH_CP + WIDTH_INCOME;
+    private const float WIDTH_FACTION = 008;
+    private const float WIDTH_CP = 002;
+    private const float WIDTH_INCOME = 002;
+    private const float WIDTH_TEAM = WIDTH_FACTION + WIDTH_CP + WIDTH_INCOME;
+    private readonly Dictionary<Faction, int> _rowsByFaction = new();
+    private readonly Dictionary<Team, int> _rowsByTeam = new();
 
+    private multiboard _multiboard;
 
-    private static thistype instance;
-    private multiboard multiboard;
-    private int[] rowsByFaction[20];
-    private int[] rowsByTeam[20];
-
-    public static thistype operator Instance()
+    private FactionMultiboard(int columnCount, int rowCount, string title)
     {
-      ;
-      type.instance;
+      _multiboard = CreateMultiboardBJ(columnCount, rowCount, title);
+      Render();
     }
 
+    private static FactionMultiboard? Instance { get; set; }
+
     //Run when a detail about a Faction has changed
-    void UpdateFactionRow(Faction faction)
+    private void UpdateFactionRow(Faction faction)
     {
-      int row = rowsByFaction[faction];
-      multiboarditem factionMbi = MultiboardGetItem(multiboard, row, COLUMN_FACTION);
-      multiboarditem cpMbi = MultiboardGetItem(multiboard, row, COLUMN_CP);
-      multiboarditem incomeMbi = MultiboardGetItem(multiboard, row, COLUMN_INCOME);
-      MultiboardSetItemValue(factionMbi, faction.prefixCol + faction.Name);
-      MultiboardSetItemIcon(factionMbi, faction.icon);
-      MultiboardSetItemValue(cpMbi, faction.ControlPointCountAsString);
+      var row = _rowsByFaction[faction];
+      multiboarditem factionMbi = MultiboardGetItem(_multiboard, row, COLUMN_FACTION);
+      multiboarditem cpMbi = MultiboardGetItem(_multiboard, row, COLUMN_CP);
+      multiboarditem incomeMbi = MultiboardGetItem(_multiboard, row, COLUMN_INCOME);
+      MultiboardSetItemValue(factionMbi, faction.ColoredName);
+      MultiboardSetItemIcon(factionMbi, faction.Icon);
+      MultiboardSetItemValue(cpMbi, faction.Person?.ControlPointCount.ToString());
       MultiboardSetItemValue(incomeMbi, I2S(R2I(faction.Income)));
       MultiboardSetItemWidth(factionMbi, WIDTH_FACTION);
       MultiboardSetItemWidth(cpMbi, WIDTH_CP);
@@ -48,30 +47,26 @@ namespace AzerothWarsCSharp.Source.Main.User_Interface
       MultiboardSetItemStyle(factionMbi, true, true);
       MultiboardSetItemStyle(cpMbi, true, false);
       MultiboardSetItemStyle(incomeMbi, true, false);
-      factionMbi = null;
-      cpMbi = null;
-      incomeMbi = null;
     }
 
     //Run when a detail about a Team has changed
-    void UpdateTeamRow(Team team)
+    private void UpdateTeamRow(Team team)
     {
-      int row = rowsByTeam[team];
-      multiboarditem mbi = MultiboardGetItem(multiboard, row, COLUMN_TEAM);
+      var row = _rowsByTeam[team];
+      multiboarditem mbi = MultiboardGetItem(_multiboard, row, COLUMN_TEAM);
       MultiboardSetItemValue(mbi,
         "-----" + team.Name + SubString("-----------------------------------------", 0, 19 - StringLength(team.Name)));
       MultiboardSetItemWidth(mbi, WIDTH_TEAM);
       MultiboardSetItemStyle(mbi, true, false);
-      MultiboardSetItemStyle(MultiboardGetItem(multiboard, row, COLUMN_CP), false, false);
-      MultiboardSetItemStyle(MultiboardGetItem(multiboard, row, COLUMN_INCOME), false, false);
-      mbi = null;
+      MultiboardSetItemStyle(MultiboardGetItem(_multiboard, row, COLUMN_CP), false, false);
+      MultiboardSetItemStyle(MultiboardGetItem(_multiboard, row, COLUMN_INCOME), false, false);
     }
 
-    void UpdateHeaderRow()
+    private void UpdateHeaderRow()
     {
-      multiboarditem factionMbi = MultiboardGetItem(multiboard, 0, COLUMN_FACTION);
-      multiboarditem cpMbi = MultiboardGetItem(multiboard, 0, COLUMN_CP);
-      multiboarditem incomeMbi = MultiboardGetItem(multiboard, 0, COLUMN_INCOME);
+      multiboarditem factionMbi = MultiboardGetItem(_multiboard, 0, COLUMN_FACTION);
+      multiboarditem cpMbi = MultiboardGetItem(_multiboard, 0, COLUMN_CP);
+      multiboarditem incomeMbi = MultiboardGetItem(_multiboard, 0, COLUMN_INCOME);
       MultiboardSetItemStyle(factionMbi, false, false);
       MultiboardSetItemStyle(cpMbi, false, true);
       MultiboardSetItemStyle(incomeMbi, false, true);
@@ -83,106 +78,88 @@ namespace AzerothWarsCSharp.Source.Main.User_Interface
     }
 
     //Run when the number of Teams or Factions have changed, or a Faction has changed its Team
-    void Render()
+    private void Render()
     {
-      var i = 0;
-      var j = 0;
       var row = 0;
-      Faction loopFaction = 0;
-      Team loopTeam = 0;
-      DestroyMultiboard(multiboard);
-      multiboard = CreateMultiboardBJ(COLUMN_COUNT, 3, TITLE);
-      MultiboardSetRowCount(multiboard, 30);
+      DestroyMultiboard(_multiboard);
+      _multiboard = CreateMultiboardBJ(COLUMN_COUNT, 3, TITLE);
+      MultiboardSetRowCount(_multiboard, 30);
       UpdateHeaderRow();
-      row = row + 1;
-      while (true)
-      {
-        if (i == Team.Count)
+      row += 1;
+      foreach (var team in Team.GetAllTeams())
+        if (team.PlayerCount > 0)
         {
-          break;
+          _rowsByTeam[team] = row;
+          UpdateTeamRow(team);
+          row += 1;
+          foreach (var faction in team.GetAllFactions())
+            if (faction.Person != null && faction.ScoreStatus != ScoreStatus.Defeated)
+            {
+              _rowsByFaction[faction] = row;
+              UpdateFactionRow(faction);
+              row += 1;
+            }
         }
 
-        loopTeam = Team.ByIndex(i);
-        if (loopTeam.PlayerCount > 0 && loopTeam.ScoreStatus != SCORESTATUS_DEFEATED)
-        {
-          rowsByTeam[loopTeam] = row;
-          UpdateTeamRow(loopTeam);
-          row = row + 1;
-          j = 0;
-          while (true)
-          {
-            if (j == loopTeam.FactionCount)
-            {
-              break;
-            }
-
-            loopFaction = loopTeam.GetFactionByIndex(j);
-            if (loopFaction.Person != 0 && loopFaction.ScoreStatus != SCORESTATUS_DEFEATED)
-            {
-              rowsByFaction[loopFaction] = row;
-              UpdateFactionRow(loopFaction);
-              row = row + 1;
-            }
-
-            j = j + 1;
-          }
-        }
-
-        i = i + 1;
-      }
-
-      MultiboardSetRowCount(multiboard, row);
+      MultiboardSetRowCount(_multiboard, row);
     }
 
     private static void RenderInstance()
     {
-      thistype.Instance.Render();
+      Instance?.Render();
     }
 
-    private thistype(int columnCount, int rowCount, string title)
+    private static void OnFactionNameChanged(object? sender, Faction faction)
     {
-      multiboard = CreateMultiboardBJ(columnCount, 3, title);
-      Render();
-      ;
-      ;
+      Instance?.UpdateFactionRow(faction);
     }
 
-    private static void ControlPointOwnerChanged()
+    private static void OnPersonFactionChange(object? sender, Person person)
     {
-      if (Person.ByHandle(GetTriggerControlPoint().owner).Faction != 0)
-      {
-        Instance.UpdateFactionRow(Person.ByHandle(GetTriggerControlPoint().owner).Faction);
-      }
+      RenderInstance();
     }
 
-    private static void OnFactionNameChanged()
+    private static void OnFactionTeamJoin(object? sender, Faction faction)
     {
-      Instance.UpdateFactionRow(GetTriggerFaction());
+      RenderInstance();
     }
 
-    private static void onInit()
+    private static void OnFactionTeamLeft(object? sender, FactionChangeTeamEventArgs factionChangeTeamEventArgs)
     {
-      trigger trig;
+      RenderInstance();
+    }
+
+    private static void OnFactionStatusChanged(object? sender, Faction faction)
+    {
+      RenderInstance();
+    }
+
+    private static void OnControlPointLost(object? sender, ControlPoint controlPoint)
+    {
+      if (controlPoint.OwningPerson.Faction != null) Instance?.UpdateFactionRow(controlPoint.OwningPerson.Faction);
+    }
+
+    private static void OnControlPointOwnerChanged(object? sender, ControlPointOwnerChangeEventArgs args)
+    {
+      if (args.ControlPoint.OwningPerson.Faction != null)
+        Instance?.UpdateFactionRow(args.ControlPoint.OwningPerson.Faction);
+    }
+
+    public static void Setup()
+    {
       TriggerSleepAction(1);
-      thistype.instance = thistype.create(COLUMN_COUNT, 3, TITLE);
+      Instance = new FactionMultiboard(COLUMN_COUNT, 3, TITLE);
 
-      trig = CreateTrigger();
-      OnPersonFactionChange.register(trig);
-      OnFactionTeamJoin.register(trig);
-      OnFactionTeamLeave.register(trig);
-      TeamScoreStatusChanged.register(trig);
-      FactionScoreStatusChanged.register(trig);
-      TriggerAddAction(trig, thistype.RenderInstance);
+      Person.FactionChange += OnPersonFactionChange;
+      Faction.TeamJoin += OnFactionTeamJoin;
+      Faction.TeamLeft += OnFactionTeamLeft;
+      Faction.StatusChanged += OnFactionStatusChanged;
 
-      trig = CreateTrigger();
-      FactionNameChanged.register(trig);
-      FactionIconChanged.register(trig);
-      TriggerAddAction(trig, thistype.OnFactionNameChanged);
+      Faction.NameChanged += OnFactionNameChanged;
+      Faction.IconChanged += OnFactionNameChanged;
 
-      trig = CreateTrigger();
-      OnControlPointLoss.register(trig);
-      OnControlPointOwnerChange.register(trig);
-      TriggerAddAction(trig, thistype.ControlPointOwnerChanged);
+      ControlPoint.OnControlPointLoss += OnControlPointLost;
+      ControlPoint.OnControlPointOwnerChange += OnControlPointOwnerChanged;
     }
   }
 }

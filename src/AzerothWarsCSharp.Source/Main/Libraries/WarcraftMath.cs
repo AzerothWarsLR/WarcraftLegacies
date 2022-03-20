@@ -1,6 +1,6 @@
 namespace AzerothWarsCSharp.Source.Main.Libraries
 {
-	public static class Math{
+	public static class WarcraftMath{
 
 		public static float GetDistanceBetweenPoints(float xa, float ya, float xb, float yb ){
 			var dx = xb - xa;

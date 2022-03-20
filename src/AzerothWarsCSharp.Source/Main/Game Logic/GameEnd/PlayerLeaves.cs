@@ -16,8 +16,8 @@ namespace AzerothWarsCSharp.Source.Main.Game_Logic.GameEnd
       }
 
       //Defeat the player
-      if (triggerPerson?.Faction != null && triggerPerson.Faction.ScoreStatus != ScoreStatus.ScorestatusDefeated){
-        triggerPerson.Faction.ScoreStatus = ScoreStatus.ScorestatusDefeated;
+      if (triggerPerson?.Faction != null && triggerPerson.Faction.ScoreStatus != ScoreStatus.Defeated){
+        triggerPerson.Faction.ScoreStatus = ScoreStatus.Defeated;
       }
     }
 
