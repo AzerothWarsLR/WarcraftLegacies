@@ -1,7 +1,7 @@
 //When a Team gets a certain number of Control Points they win.
 //This ends the game.
 
-using AzerothWarsCSharp.Source.Libraries.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Game_Logic.GameEnd
 {

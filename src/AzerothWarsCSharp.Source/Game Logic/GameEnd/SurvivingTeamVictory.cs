@@ -1,6 +1,6 @@
 //When there is only one team left in the game that hasn)t been defeated, that team wins.
 
-using AzerothWarsCSharp.Source.Libraries.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Game_Logic.GameEnd
 {

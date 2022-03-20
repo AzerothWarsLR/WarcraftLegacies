@@ -1,5 +1,5 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.Source.Libraries;
-using AzerothWarsCSharp.Source.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.Commands
 {

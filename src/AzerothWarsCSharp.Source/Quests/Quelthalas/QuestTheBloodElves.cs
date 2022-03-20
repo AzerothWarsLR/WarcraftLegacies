@@ -2,9 +2,9 @@
 //If they instead lose the Sunwell, they lose everything. If that doesn)t defeat them, they get Kael)thalas, Lorthemar, and some free units at Dalaran Dungeons.
 
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
-using AzerothWarsCSharp.Source.Libraries.MacroTools;
-using AzerothWarsCSharp.Source.Libraries.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {

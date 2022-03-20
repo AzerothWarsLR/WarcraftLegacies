@@ -1,6 +1,6 @@
 //Destroy the Frozen Throne to unlock Mograine.
 
-using AzerothWarsCSharp.Source.Libraries.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {

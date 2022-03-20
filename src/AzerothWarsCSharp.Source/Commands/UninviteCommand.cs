@@ -1,6 +1,6 @@
 //Revokes an invitation sent to a player from the sending player)s Team.
 
-using AzerothWarsCSharp.Source.Libraries.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Commands
 {

@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.Source.Libraries.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Zandalar
 {

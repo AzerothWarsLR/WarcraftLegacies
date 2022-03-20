@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using AzerothWarsCSharp.Source.Libraries.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.User_Interface
 {

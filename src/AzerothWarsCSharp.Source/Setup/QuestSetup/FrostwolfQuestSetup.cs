@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.Source.Libraries.QuestSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.Source.Quests.Frostwolf;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup

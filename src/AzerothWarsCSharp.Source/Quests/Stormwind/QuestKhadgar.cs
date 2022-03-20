@@ -1,6 +1,6 @@
 //When Black Temple is destroyed, Stormwind can train Khadgar.
 
-using AzerothWarsCSharp.Source.Libraries.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Stormwind
 {

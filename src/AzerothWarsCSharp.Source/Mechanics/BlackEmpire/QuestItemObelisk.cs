@@ -1,5 +1,5 @@
-using AzerothWarsCSharp.Source.Libraries.MacroTools;
-using AzerothWarsCSharp.Source.Libraries.QuestSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 
 namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
 {

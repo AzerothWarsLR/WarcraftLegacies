@@ -1,8 +1,8 @@
 //If the Centaur Khan dies, OR a time elapses, give Thunder Bluff to a Horde player.
 
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
-using AzerothWarsCSharp.Source.Libraries.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 {

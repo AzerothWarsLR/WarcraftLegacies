@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.Source.Libraries.QuestSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {

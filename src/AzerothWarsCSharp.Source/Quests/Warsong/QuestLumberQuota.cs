@@ -1,7 +1,7 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
-using AzerothWarsCSharp.Source.Libraries.QuestSystem;
-using AzerothWarsCSharp.Source.Libraries.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Warsong
 {

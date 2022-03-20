@@ -1,8 +1,8 @@
 //Anyone on the Night Elves team approaches Moonglade with a unit with the Horn of Cenarius,
 //Causing Malfurion to spawn.
 
-using AzerothWarsCSharp.Source.Libraries.MacroTools;
-using AzerothWarsCSharp.Source.Libraries.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Zandalar
 {

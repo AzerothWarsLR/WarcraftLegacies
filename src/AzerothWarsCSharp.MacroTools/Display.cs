@@ -1,3 +1,5 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
+
 namespace AzerothWarsCSharp.MacroTools
 {
   public static class Display{

@@ -1,6 +1,6 @@
 //A command that pings all units belonging to the user that have a limit on how many of them can be made.
 
-using AzerothWarsCSharp.Source.Libraries.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Commands
 {

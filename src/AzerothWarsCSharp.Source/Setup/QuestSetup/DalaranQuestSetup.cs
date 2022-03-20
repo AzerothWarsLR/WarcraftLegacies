@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.Source.Libraries.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Quests.Dalaran;
 using AzerothWarsCSharp.Source.Quests.KulTiras;
 

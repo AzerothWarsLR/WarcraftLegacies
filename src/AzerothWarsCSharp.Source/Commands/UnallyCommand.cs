@@ -1,6 +1,6 @@
 //A command that causes a player to leave their Team and be given a solo Team with their Faction as the name.
 
-using AzerothWarsCSharp.Source.Libraries.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Commands
 {

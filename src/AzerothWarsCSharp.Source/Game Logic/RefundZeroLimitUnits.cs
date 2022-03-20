@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.Source.Libraries.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using WCSharp.Events;
 
 namespace AzerothWarsCSharp.Source.Game_Logic

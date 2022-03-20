@@ -15,13 +15,13 @@ namespace AzerothWarsCSharp.MacroTools
     {
       _msg = msg;
     }
-    
+
     public static void Register(Hint hint)
     {
       All.Add(hint);
       Unread.Add(hint);
     }
-    
+
     private void Display()
     {
       MacroTools.Display.DisplayHint(GetLocalPlayer(), _msg);
@@ -38,20 +38,12 @@ namespace AzerothWarsCSharp.MacroTools
 
     private static void DisplayRandomHints()
     {
-      var i = 0;
-      while (true)
+      foreach (var player in GetAllPlayers())
       {
-        if (i == Environment.MAX_PLAYERS)
-        {
-          break;
-        }
-
-        if (GetLocalPlayer() == Player(i))
+        if (GetLocalPlayer() == player)
         {
           DisplayRandom();
         }
-
-        i += 1;
       }
     }
 

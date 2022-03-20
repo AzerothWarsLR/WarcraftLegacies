@@ -1,5 +1,3 @@
-//Just records a bunch of locations that are considered "shores" for the purposes of determing where the nearest shore is.
-
 using System.Collections.Generic;
 using WCSharp.Shared.Data;
 

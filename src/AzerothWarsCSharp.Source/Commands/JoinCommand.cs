@@ -1,6 +1,6 @@
 //Joins the specified Team. Only works if an Invite has first been extended.
 
-using AzerothWarsCSharp.Source.Libraries.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Commands
 {

@@ -1,7 +1,7 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.Source.Cheats;
 using AzerothWarsCSharp.Source.Libraries;
-using AzerothWarsCSharp.Source.Libraries.MacroTools;
 
 namespace AzerothWarsCSharp.Source.Game_Logic
 {
