@@ -1,239 +1,222 @@
-
-
-    /*
-        by Zwiebelchen      v13
-
-
-
-
-
-
-
-
-
-
-            However, there are some rules you need to consider, in order to make your map work without desyncs in multiplayer:
-
-
-
-
-
-
-
-            API:
-
-                private static bool filt ){
-
-
-                    - example:
-                        private static bool filt ){
-
-                        }
-
-
-
-            Optional:
-
-
-
-
-
-
-
-
-    */
-
-
+namespace AzerothWarsCSharp.MacroTools
+{
+  public static class DestructibleHider
+  {
     //==== CONFIGURABLES ====
-    private const float INTERVAL = 010 ;//Update interval in seconds.
-                                         //[in multiplayer, the camera positions will only get updated every 005-01 seconds, so setting it to a lower value than 005 makes no sense]
-                                         //[update frequency can be much higher in single player mode!]
-    private const int DRAW_DISTANCE = 3072 ;//the radius around the camera target in which the tiles are considered visible; should be about the same as sight radius (not diameter) of the camera; for 3d cams, use the FarZ value
-                                                 //Use multiples of 1024 for maximum efficiency on square division. Recommended value: 5120
-    private const int TILE_RESOLUTION = 12 ;//amount of tiles spread over DRAW_DISTANCE
+    private const float INTERVAL = 0.10f; //Update interval in seconds.
+
+    //[in multiplayer, the camera positions will only get updated every 005-01 seconds, so setting it to a lower value than 005 makes no sense]
+    //[update frequency can be much higher in single player mode!]
+    private const int
+      DRAW_DISTANCE =
+        3072; //the radius around the camera target in which the tiles are considered visible; should be about the same as sight radius (not diameter) of the camera; for 3d cams, use the FarZ value
+
+    //Use multiples of 1024 for maximum efficiency on square division. Recommended value: 5120
+    private const int TILE_RESOLUTION = 12; //amount of tiles spread over DRAW_DISTANCE
+    private const int TILESIZE = DRAW_DISTANCE / TILE_RESOLUTION;
 
 
-                                        //-> Recommended value: 8-12
+    //-> Recommended value: 8-12
     //==== END OF CONFIGURABLES ====
 
-    private hashtable hash = InitHashtable();
-    private var columns = 0;
-    private var rows = 0;
-    private var lastrow = 0;
-    private var lastcolumn = 0;
-    private var lastid = 0;
-    private float mapMinX = 0;
-    private float mapMinY = 0;
-    private const int TILESIZE = DRAW_DISTANCE/TILE_RESOLUTION;
+    private static readonly hashtable Hash = InitHashtable();
+    private static int _columns;
+    private static int _rows;
+    private static int _lastrow;
+    private static int _lastcolumn;
+    private static int _lastid;
+    private static float _mapMinX;
+    private static float _mapMinY;
 
 
-private static bool filt( ){
-
-return true;
-}
-
-
-
-    var count = LoadInteger(hash, id, 0)+1;
-    SaveInteger(hash, id, 0, count);
-
-
-    SaveInteger(hash, GetHandleId(d), 0, count) ;//store the list position for fast lookup
-}
-
-
-
-    int count = LoadInteger(hash, id, 0);
-    int a = LoadInteger(hash, GetHandleId(d), 0);
-
-    if (a < count){ //move the last in list up to this slot
-
-
-        SaveInteger(hash, GetHandleId(temp), 0, a) ;//update list position
-        temp = null;
+    private static bool Filt()
+    {
+      return true;
     }
-    RemoveSavedHandle(hash, id, count) ;//clean up the deserted slot
-    SaveInteger(hash, id, 0, count-1);
-    FlushChildHashtable(hash, GetHandleId(d)) ;//clean up list position
 
-}
+    public static void Register(destructable d)
+    {
+      var id = R2I((GetDestructableY(d) - _mapMinY) / TILESIZE) * _columns +
+               R2I((GetDestructableX(d) - _mapMinX) / TILESIZE);
+      var count = LoadInteger(Hash, id, 0) + 1;
+      SaveInteger(Hash, id, 0, count);
+      SaveDestructableHandle(Hash, id, count, d);
+      ShowDestructable(d, LoadBoolean(Hash, id, -1)); //match visibility state
+      SaveInteger(Hash, GetHandleId(d), 0, count); //store the list position for fast lookup
+    }
 
-private static void autoregister( ){
+    public static void Unregister(destructable d)
+    {
+      var id = R2I((GetDestructableY(d) - _mapMinY) / TILESIZE) * _columns +
+               R2I((GetDestructableX(d) - _mapMinX) / TILESIZE);
+      var count = LoadInteger(Hash, id, 0);
+      var a = LoadInteger(Hash, GetHandleId(d), 0);
 
+      if (a < count)
+      {
+        destructable temp = LoadDestructableHandle(Hash, id, count);
+        SaveDestructableHandle(Hash, id, a, temp);
+        SaveInteger(Hash, GetHandleId(temp), 0, a); //update list position
+      }
 
-    var count = LoadInteger(hash, id, 0)+1;
-    SaveInteger(hash, id, 0, count);
+      RemoveSavedHandle(Hash, id, count); //clean up the deserted slot
+      SaveInteger(Hash, id, 0, count - 1);
+      FlushChildHashtable(Hash, GetHandleId(d)); //clean up list position
+      ShowDestructable(d, true); //make sure its shown again in case it was hidden
+    }
 
+    private static void Autoregister()
+    {
+      destructable d = GetEnumDestructable();
+      var id = R2I((GetDestructableY(d) - _mapMinY) / TILESIZE) * _columns +
+               R2I((GetDestructableX(d) - _mapMinX) / TILESIZE);
+      var count = LoadInteger(Hash, id, 0) + 1;
+      SaveInteger(Hash, id, 0, count);
+      SaveDestructableHandle(Hash, id, count, d);
+      ShowDestructable(d, false); //initially hide everything
+      SaveInteger(Hash, GetHandleId(d), 0, count); //store the list position for fast lookup
+    }
 
-    SaveInteger(hash, GetHandleId(d), 0, count) ;//store the list position for fast lookup
-    d = null;
-}
+    private static void EnumGrid(int x1, int x2, int y1, int y2, bool show)
+    {
+      var a = x1;
+      while (true)
+      {
+        var b = y1;
+        if (a > x2) break;
 
-private static void EnumGrid(int x1, int x2, int y1, int y2, bool show ){
-    var a = x1;
-    int b;
-    int j;
-    int id;
-    int count;
-    while(true){
-        b = y1;
-        if ( a > x2){ break; }
-        while(true){
-            if ( b > y2){ break; }
-            id = b*columns+a;
-            Savebool(hash, id, -1, show);
-            count = LoadInteger(hash, id, 0);
-            j = 0;
-            while(true){
-                if ( j >= count){ break; }
-                j = j + 1;
+        while (true)
+        {
+          if (b > y2) break;
 
-            }
-            b = b + 1;
+          var id = b * _columns + a;
+          SaveBoolean(Hash, id, -1, show);
+          var count = LoadInteger(Hash, id, 0);
+          var j = 0;
+          while (true)
+          {
+            if (j >= count) break;
+
+            j = j + 1;
+          }
+
+          b = b + 1;
         }
+
         a = a + 1;
-    }
-}
-
-private static void ChangeTiles(int r, int c, int lr, int lc ){
-    var AminX = c-TILE_RESOLUTION;
-    var AmaxX = c+TILE_RESOLUTION;
-    var AminY = r-TILE_RESOLUTION;
-    var AmaxY = r+TILE_RESOLUTION;
-    var BminX = lc-TILE_RESOLUTION;
-    var BmaxX = lc+TILE_RESOLUTION;
-    var BminY = lr-TILE_RESOLUTION;
-    var BmaxY = lr+TILE_RESOLUTION;
-    //border safety:
-    if (AminX < 0){
-        AminX = 0;
-    }
-    if (AminY < 0){
-        AminY = 0;
-    }
-    if (BminX < 0){
-        BminX = 0;
-    }
-    if (BminY < 0){
-        BminY = 0;
-    }
-    if (AmaxX >= columns){
-        AmaxX = columns-1;
-    }
-    if (AmaxY >= rows){
-        AmaxX = rows-1;
-    }
-    if (BmaxX >= columns){
-        BmaxX = columns-1;
-    }
-    if (BmaxY >= rows){
-        BmaxX = rows-1;
+      }
     }
 
-    if (BmaxX < AminX || AmaxX < BminX || BmaxY < AminY || AmaxY < BminY){
-        EnumGrid(AminX, AmaxX, AminY, AmaxY, true);
-        EnumGrid(BminX, BmaxX, BminY, BmaxY, false);
-    }else {
-        if (c >= lc){
-            if (c != lc){
-                EnumGrid(BmaxX+1, AmaxX, AminY, AmaxY, true);
-                EnumGrid(BminX, AminX-1, BminY, BmaxY, false);
-            }
-            if (AminY < BminY){
-                EnumGrid(AminX, BmaxX, AmaxY+1, BmaxY, false);
-                EnumGrid(AminX, BmaxX, AminY, BminY-1, true);
-            }else if (BminY < AminY){
-                EnumGrid(AminX, BmaxX, BmaxY+1, AmaxY, true);
-                EnumGrid(AminX, BmaxX, BminY, AminY-1, false);
-            }
-        }else {
-            EnumGrid(AminX, BminX-1, AminY, AmaxY, true);
-            EnumGrid(AmaxX+1, BmaxX, BminY, BmaxY, false);
-            if (AminY < BminY){
-                EnumGrid(BminX, AmaxX, AminY, BminY-1, true);
-                EnumGrid(BminX, AmaxX, AmaxY+1, BmaxY, false);
-            }else if (BminY < AminY){
-                EnumGrid(BminX, AmaxX, BminY, AminY-1, false);
-                EnumGrid(BminX, AmaxX, BmaxY+1, AmaxY, true);
-            }
+    private static void ChangeTiles(int r, int c, int lr, int lc)
+    {
+      var aminX = c - TILE_RESOLUTION;
+      var amaxX = c + TILE_RESOLUTION;
+      var aminY = r - TILE_RESOLUTION;
+      var amaxY = r + TILE_RESOLUTION;
+      var bminX = lc - TILE_RESOLUTION;
+      var bmaxX = lc + TILE_RESOLUTION;
+      var bminY = lr - TILE_RESOLUTION;
+      var bmaxY = lr + TILE_RESOLUTION;
+      //border safety:
+      if (aminX < 0) aminX = 0;
+
+      if (aminY < 0) aminY = 0;
+
+      if (bminX < 0) bminX = 0;
+
+      if (bminY < 0) bminY = 0;
+
+      if (amaxX >= _columns) amaxX = _columns - 1;
+
+      if (amaxY >= _rows) amaxX = _rows - 1;
+
+      if (bmaxX >= _columns) bmaxX = _columns - 1;
+
+      if (bmaxY >= _rows) bmaxX = _rows - 1;
+
+      if (bmaxX < aminX || amaxX < bminX || bmaxY < aminY || amaxY < bminY)
+      {
+        EnumGrid(aminX, amaxX, aminY, amaxY, true);
+        EnumGrid(bminX, bmaxX, bminY, bmaxY, false);
+      }
+      else
+      {
+        if (c >= lc)
+        {
+          if (c != lc)
+          {
+            EnumGrid(bmaxX + 1, amaxX, aminY, amaxY, true);
+            EnumGrid(bminX, aminX - 1, bminY, bmaxY, false);
+          }
+
+          if (aminY < bminY)
+          {
+            EnumGrid(aminX, bmaxX, amaxY + 1, bmaxY, false);
+            EnumGrid(aminX, bmaxX, aminY, bminY - 1, true);
+          }
+          else if (bminY < aminY)
+          {
+            EnumGrid(aminX, bmaxX, bmaxY + 1, amaxY, true);
+            EnumGrid(aminX, bmaxX, bminY, aminY - 1, false);
+          }
         }
+        else
+        {
+          EnumGrid(aminX, bminX - 1, aminY, amaxY, true);
+          EnumGrid(amaxX + 1, bmaxX, bminY, bmaxY, false);
+          if (aminY < bminY)
+          {
+            EnumGrid(bminX, amaxX, aminY, bminY - 1, true);
+            EnumGrid(bminX, amaxX, amaxY + 1, bmaxY, false);
+          }
+          else if (bminY < aminY)
+          {
+            EnumGrid(bminX, amaxX, bminY, aminY - 1, false);
+            EnumGrid(bminX, amaxX, bmaxY + 1, amaxY, true);
+          }
+        }
+      }
     }
-}
 
-private static void periodic( ){
-    var row = R2I((GetCameraTargetPositionY()-mapMinY)/TILESIZE);
-    var column = R2I((GetCameraTargetPositionX()-mapMinX)/TILESIZE);
-    var id = row*columns + column;
-    if (id == lastid){ //only check for tiles if the camera has left the last tile
+    private static void Periodic()
+    {
+      var row = R2I((GetCameraTargetPositionY() - _mapMinY) / TILESIZE);
+      var column = R2I((GetCameraTargetPositionX() - _mapMinX) / TILESIZE);
+      var id = row * _columns + column;
+      if (id == _lastid)
+        //only check for tiles if the camera has left the last tile
         return;
+
+      ChangeTiles(row, column, _lastrow, _lastcolumn);
+      _lastrow = row;
+      _lastcolumn = column;
+      _lastid = id;
     }
-    ChangeTiles(row, column, lastrow, lastcolumn);
-    lastrow = row;
-    lastcolumn = column;
-    lastid = id;
-}
 
-private static void init( ){
-    mapMinX = GetRectMinX(bj_mapInitialPlayableArea);
-    mapMinY = GetRectMinY(bj_mapInitialPlayableArea);
-    lastrow = R2I((GetCameraTargetPositionY()-mapMinY)/TILESIZE);
-    lastcolumn = R2I((GetCameraTargetPositionX()-mapMinX)/TILESIZE);
-    rows = R2I((GetRectMaxY(bj_mapInitialPlayableArea)-mapMinY)/TILESIZE)+1;
-    columns = R2I((GetRectMaxX(bj_mapInitialPlayableArea)-mapMinX)/TILESIZE)+1;
+    public static void Setup()
+    {
+      _mapMinX = GetRectMinX(bj_mapInitialPlayableArea);
+      _mapMinY = GetRectMinY(bj_mapInitialPlayableArea);
+      _lastrow = R2I((GetCameraTargetPositionY() - _mapMinY) / TILESIZE);
+      _lastcolumn = R2I((GetCameraTargetPositionX() - _mapMinX) / TILESIZE);
+      _rows = R2I((GetRectMaxY(bj_mapInitialPlayableArea) - _mapMinY) / TILESIZE) + 1;
+      _columns = R2I((GetRectMaxX(bj_mapInitialPlayableArea) - _mapMinX) / TILESIZE) + 1;
+      if (
+        _lastcolumn <=
+        _columns / 2) //to make sure the game starts with a full make-visible enum of all destructables on screen
+        _lastcolumn = _columns - 1;
+      else
+        _lastcolumn = 0;
 
-        lastcolumn = columns-1;
-    }else {
-        lastcolumn = 0;
+      if (_lastrow <= _rows / 2)
+        _lastrow = _rows - 1;
+      else
+        _lastrow = 0;
+
+      _lastid = _lastrow * _columns + _lastcolumn;
+      EnumDestructablesInRect(bj_mapInitialPlayableArea, Filter(Filt), Autoregister);
+      TimerStart(CreateTimer(), INTERVAL, true, Periodic);
+      Periodic(); //to make sure the destructables on screen after the map loading process finishes are initially shown
     }
-    if (lastrow <= rows/2){
-        lastrow = rows-1;
-    }else {
-        lastrow = 0;
-    }
-    lastid = lastrow*columns + lastcolumn;
-
-    TimerStart(CreateTimer(), INTERVAL, true,  periodic);
-
-}
-
+  }
 }

@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.Source.Game_Logic;
 
 namespace AzerothWarsCSharp.Source.Setup
@@ -18,6 +19,7 @@ namespace AzerothWarsCSharp.Source.Setup
       ObserverSetup_OnInit();
       SpellsSetup.Setup();
       CpCapture.Setup();
+      DestructibleHider.Setup();
     }
   }
 }
