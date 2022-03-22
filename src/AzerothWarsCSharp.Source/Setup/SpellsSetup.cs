@@ -122,6 +122,7 @@ namespace AzerothWarsCSharp.Source.Setup
         DummyOrderString = "forkedlightning",
         ProcChance = 0.15f
       };
+      SpellSystem.Register(thunderFists);
 
       var seismicShard = new MassAnySpell(FourCC("A0OD"))
       {
