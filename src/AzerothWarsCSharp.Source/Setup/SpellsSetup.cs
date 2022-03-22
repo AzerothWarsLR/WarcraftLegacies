@@ -218,6 +218,32 @@ namespace AzerothWarsCSharp.Source.Setup
 
       var executeBlackEmpire = new Execute(FourCC("n0B4"));
       SpellSystem.Register(executeBlackEmpire);
+
+      var maievVengeance = new Vengeance(FourCC("Ewrd"), FourCC("A017"))
+      {
+        AlternateFormId = FourCC("espv"),
+        HitsReviveThreshold = 5,
+        HealBase = 900,
+        HealLevel = 300,
+        BonusDamageBase = 20,
+        BonusDamageLevel = 20,
+        Duration = 20,
+        ReviveEffect = "Heal Blue.mdx"
+      };
+      SpellSystem.Register(maievVengeance);
+      
+      var burningVengeance = new Vengeance(FourCC("O04H"), FourCC("A0OO"))
+      {
+        AlternateFormId = FourCC("e01A"),
+        HitsReviveThreshold = 5,
+        HealBase = 900,
+        HealLevel = 300,
+        BonusDamageBase = 20,
+        BonusDamageLevel = 20,
+        Duration = 20,
+        ReviveEffect = "Heal Blue.mdx"
+      };
+      SpellSystem.Register(burningVengeance);
     }
   }
 }

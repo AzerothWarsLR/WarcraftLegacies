@@ -23,6 +23,11 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
       SpellsByAbilityId[GetSpellAbilityId()].OnCast(GetTriggerUnit(), GetSpellTargetUnit(), GetSpellTargetX(), GetSpellTargetY());
     }
 
+    public static void Register(TakeDamageEffect takeDamageEffect)
+    {
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, takeDamageEffect.OnTakesDamage, takeDamageEffect.DamagedUnitTypeId);
+    }
+    
     /// <summary>
     /// Registers an <see cref="AttackEffect"/> to the <see cref="SpellSystem"/>.
     /// </summary>
