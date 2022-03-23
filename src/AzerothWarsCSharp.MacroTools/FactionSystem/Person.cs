@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       set;
     }
 
-    public Faction? Faction
+    public Faction Faction
     {
       get => _faction;
       set

@@ -1,68 +1,68 @@
-//Invites the specified faction)s player to the sender)s Team.
-
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.Source.Game_Logic;
 
 namespace AzerothWarsCSharp.Source.Commands
 {
-  public class InviteCommand{
-
-	
+  /// <summary>
+  /// Invites the specified <see cref="Faction"/>'s <see cref="player"/> to the sender's <see cref="Team"/>.
+  /// </summary>
+  public static class InviteCommand
+  {
     private const string COMMAND = "-invite ";
-  
-
-    private static void Actions( ){
+    
+    private static void Actions()
+    {
       string enteredString = GetEventPlayerChatString();
-      string content = null;
-      Faction targetFaction = 0;
       Person senderPerson = Person.ByHandle(GetTriggerPlayer());
 
-      if (AreAllianceActive == true){
-        if (SubString( enteredString, 0, StringLength(COMMAND) ) == COMMAND){
-          content = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
+      if (OpenAllianceVote.AreAlliancesOpen)
+      {
+        if (SubString(enteredString, 0, StringLength(COMMAND)) == COMMAND)
+        {
+          string content = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
           content = StringCase(content, false);
-          targetFaction = Faction.factionsByName[content];
 
-          if (targetFaction == 0){
-            DisplayTextToPlayer(senderPerson.Player, 0, 0, "There is no Faction with the name " + content + ".");
+          if (!Faction.FactionWithNameExists(content))
+          {
+            DisplayTextToPlayer(senderPerson.Player, 0, 0, $"There is no Faction with the name {content}.");
             return;
           }
 
-          if (targetFaction.CanBeInvited == false){
-            DisplayTextToPlayer(senderPerson.Player, 0, 0, targetFaction.prefixCol + targetFaction.Name + " canFourCC(t voluntarily change teams.");
-          }
+          var targetFaction = Faction.GetFromName(content);
 
-          if (senderPerson.Faction == targetFaction){
-            DisplayTextToPlayer(senderPerson.Player, 0, 0, "You can!invite yourself to your own team.");
+          if (senderPerson.Faction == targetFaction)
+          {
+            DisplayTextToPlayer(senderPerson.Player, 0, 0, "You can'invite yourself to your own team.");
             return;
           }
 
-          if (targetFaction.Person == 0){
-            DisplayTextToPlayer(senderPerson.Player, 0, 0, "There is no player with the Faction " + targetFaction.prefixCol + targetFaction.Name + "|r.");
+          if (targetFaction.Person == null)
+          {
+            DisplayTextToPlayer(senderPerson.Player, 0, 0,
+              $"There is no player with the Faction {targetFaction.PrefixCol} {targetFaction.Name}|r.");
             return;
           }
 
-          if (targetFaction.Person != 0){
-            senderPerson.Faction.Team.Invite(targetFaction);
+          if (targetFaction.Person != null)
+          {
+            senderPerson.Faction?.Team?.Invite(targetFaction);
           }
-
         }
-      }else {
+      }
+      else
+      {
         DisplayTextToPlayer(senderPerson.Player, 0, 0, "You can!ally yet");
       }
     }
 
-    public static void Setup( ){
-      trigger trig = CreateTrigger(  );
-      var i = 0;
-
-      while(true){
-        if ( i > MAX_PLAYERS){ break; }
-        TriggerRegisterPlayerChatEvent( trig, Player(i), COMMAND, false );
-        i = i + 1;
+    public static void Setup()
+    {
+      trigger trig = CreateTrigger();
+      foreach (var player in GetAllPlayers())
+      {
+        TriggerRegisterPlayerChatEvent( trig, player, COMMAND, false);
       }
-
       TriggerAddAction(trig,  Actions);
     }
-
   }
 }

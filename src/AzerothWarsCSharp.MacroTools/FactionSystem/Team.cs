@@ -177,7 +177,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     }
 
     //Revokes an invite sent to a player
-    void Uninvite(Faction whichFaction ){
+    public void Uninvite(Faction whichFaction ){
       if (invitees.contains(whichFaction)){
         DisplayText(whichFaction.prefixCol + whichFaction.name + "|r is no longer invited to join the " + Name + ".");
         DisplayTextToPlayer(whichFaction.Player, 0, 0, "You are no longer invited to join the " + Name + ".");
@@ -186,7 +186,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     }
 
     //Sends an invite to this team to a player, which they can choose to accept at a later date
-    void Invite(Faction whichFaction ){
+    public void Invite(Faction whichFaction ){
       if (!factions.contains(whichFaction) && !invitees.contains(whichFaction) && whichFaction.CanBeInvited == true){
         if (GetLocalPlayer() == whichFaction.Player || factions.contains(Person.ByHandle(GetLocalPlayer()))){
           StartSound(gg_snd_ArrangedTeamInvitation);
@@ -197,7 +197,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
     }
 
-    void DisplayText(string text ){
+    public void DisplayText(string text ){
       var i = 0;
       while(true){
         if ( i == factions.size){ break; }
@@ -221,7 +221,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       return newForce;
     }
 
-    bool IsFactionInvited(Faction whichFaction ){
+    public bool IsFactionInvited(Faction whichFaction ){
       ;.invitees.contains(whichFaction);
     }
 

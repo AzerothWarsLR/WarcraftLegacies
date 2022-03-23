@@ -24,6 +24,8 @@ namespace AzerothWarsCSharp.Source.Setup
       DestructibleHider.Setup();
       CheatSetup.Setup();
 
+      CommandSetup.Setup();
+
       SilvermoonDies.Setup();
       ZinrokhAssembly.Setup();
     }

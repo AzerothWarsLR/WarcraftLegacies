@@ -1,55 +1,53 @@
-//Joins the specified Team. Only works if an Invite has first been extended.
-
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Commands
 {
-  public class JoinCommand{
-
-	
+  /// <summary>
+  /// Joins the specified <see cref="Team"/>. Only works if an invite has first been extended.
+  /// </summary>
+  public static class JoinCommand
+  {
     private const string COMMAND = "-join ";
-  
-
-    private static void Actions( ){
+    
+    private static void Actions()
+    {
       string enteredString = GetEventPlayerChatString();
-      string content = null;
-      Team targetTeam = 0;
       Person triggerPerson = Person.ByHandle(GetTriggerPlayer());
 
-      if (triggerPerson.Faction.CanBeInvited == false){
-        DisplayTextToPlayer(triggerPerson.Player, 0, 0, "You canFourCC(t voluntarily change teams.");
-      }
-
-      if (SubString( enteredString, 0, StringLength(COMMAND) ) == COMMAND){
-        content = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
+      if (SubString(enteredString, 0, StringLength(COMMAND)) == COMMAND)
+      {
+        string content = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
         content = StringCase(content, false);
-        targetTeam = Team.teamsByName[content];
-        if (targetTeam != 0){
-          if (targetTeam.IsFactionInvited(triggerPerson.Faction)){
+        
+        if (Team.TeamWithNameExists(content))
+        {
+          Team targetTeam = Team.GetTeamByName(content);
+          if (targetTeam.IsFactionInvited(triggerPerson.Faction))
+          {
             triggerPerson.Faction.Team = targetTeam;
-            DisplayTextToPlayer(triggerPerson.Player, 0, 0, "You have joined " + targetTeam.Name + ".");
-            targetTeam.DisplayText(triggerPerson.Faction.prefixCol + triggerPerson.Faction.Name + "|r has joined the " + targetTeam.Name + ".");
-          }else {
+            DisplayTextToPlayer(triggerPerson.Player, 0, 0, $"You have joined {targetTeam.Name}.");
+            targetTeam.DisplayText($"{triggerPerson.Faction.ColoredName} has joined the {targetTeam.Name}.");
+          }
+          else
+          {
             DisplayTextToPlayer(triggerPerson.Player, 0, 0, "You have !been invited to join " + targetTeam.Name + ".");
           }
-        }else {
-          DisplayTextToPlayer(triggerPerson.Player, 0, 0, "There is no Team with the name " + targetTeam.Name + ".");
+        }
+        else
+        {
+          DisplayTextToPlayer(triggerPerson.Player, 0, 0, "There is no Team with the name " + content + ".");
         }
       }
     }
 
-    public static void Setup( ){
-      trigger trig = CreateTrigger(  );
-      var i = 0;
-
-      while(true){
-        if ( i > MAX_PLAYERS){ break; }
-        TriggerRegisterPlayerChatEvent( trig, Player(i), COMMAND, false );
-        i = i + 1;
+    public static void Setup()
+    {
+      trigger trig = CreateTrigger();
+      foreach (var player in GetAllPlayers())
+      {
+        TriggerRegisterPlayerChatEvent( trig, player, COMMAND, false);
       }
-
       TriggerAddAction(trig,  Actions);
     }
-
   }
 }

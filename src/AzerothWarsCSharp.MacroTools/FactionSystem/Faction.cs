@@ -70,6 +70,14 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       get => I2R(GetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER));
       set => SetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER, R2I(value));
     }
+
+    /// <summary>
+    /// Returns all unit types which this <see cref="Faction"/> can only train a limited number of.
+    /// </summary>
+    public IEnumerable<int> GetLimitedObjects()
+    {
+      return _objectLimits.Keys;
+    }
     
     /// <summary>
     /// Returns the maximum number of times the Faction can train a unit, build a building, or research a research.
@@ -526,9 +534,14 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       return Person.ByHandle(whichPlayer)?.Faction;
     }
 
-    public static Faction GetFromName(string? s)
+    public static bool FactionWithNameExists(string name)
+    {
+      return FactionsByName.ContainsKey(name);
+    }
+    
+    public static Faction GetFromName(string name)
     { 
-      return FactionsByName[s];
+      return FactionsByName[name];
     }
 
     public static void Register(Faction faction)

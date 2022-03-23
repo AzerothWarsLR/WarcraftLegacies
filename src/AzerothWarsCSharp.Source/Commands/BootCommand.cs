@@ -1,72 +1,67 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.Source.Game_Logic;
+using AzerothWarsCSharp.Source.Setup;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Commands
 {
-  public class BootCommand{
-
-  
+  public static class BootCommand{
     private const string COMMAND     = "-boot ";
-    private string parameter = null;
-  
-
+    
     private static void Actions( ){
       string enteredString = GetEventPlayerChatString();
-      string content = null;
-      Faction targetFaction = 0;
       Person senderPerson = Person.ByHandle(GetTriggerPlayer());
 
       if (SubString( enteredString, 0, StringLength(COMMAND) ) == COMMAND){
-        content = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
+        string content = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
         content = StringCase(content, false);
-        targetFaction = Faction.factionsByName[content];
+        Faction targetFaction = Faction.GetFromName(content);
 
-        if (senderPerson.Faction != FACTION_NAGA){
+        if (senderPerson.Faction != NagaSetup.FACTION_NAGA){
           DisplayTextToPlayer(senderPerson.Player, 0, 0, "This command can only be used by liege factions.");
           return;
         }
 
-        if (AreAllianceActive == true){
+        if (OpenAllianceVote.AreAlliancesOpen){
           DisplayTextToPlayer(senderPerson.Player, 0, 0, "Alliances are open");
           return;
         }
 
-        if (targetFaction == 0){
+        if (targetFaction == null){
           DisplayTextToPlayer(senderPerson.Player, 0, 0, "There is no Faction with the name " + content + ".");
           return;
         }
 
         if (senderPerson.Faction == targetFaction){
-          DisplayTextToPlayer(senderPerson.Player, 0, 0, "You can!boot yourself from the game.");
+          DisplayTextToPlayer(senderPerson.Player, 0, 0, "You can'boot yourself from the game.");
           return;
         }
 
-        if (targetFaction.Person == 0){
+        if (targetFaction.Person == null){
           DisplayTextToPlayer(senderPerson.Player, 0, 0, "There is no player with the Faction " + targetFaction.ColoredName + ".");
           return;
         }
 
-        if (FACTION_FEL_HORDE.Team != TEAM_NAGA){
-          DisplayTextToPlayer(senderPerson.Player, 0, 0, " " + targetFaction.ColoredName + " is !your vassal.");
+        if (FelHordeSetup.FACTION_FEL_HORDE.Team != TeamSetup.TEAM_NAGA){
+          DisplayTextToPlayer(senderPerson.Player, 0, 0, $"{targetFaction.ColoredName} isn't your vassal.");
           return;
         }
 
-        if (targetFaction.Person != 0){
+        if (targetFaction.Person != null){
           targetFaction.Obliterate();
-          targetFaction.Person.Faction = 0;
+          targetFaction.Person.Faction = null;
         }
 
       }
     }
 
     public static void Setup( ){
-      trigger trig = CreateTrigger(  );
-      var i = 0;
-      while(true){
-        if ( i > MAX_PLAYERS){ break; }
-        TriggerRegisterPlayerChatEvent( trig, Player(i), COMMAND, false );
-        i = i + 1;
+      trigger trig = CreateTrigger();
+      foreach (var player in GetAllPlayers())
+      {
+        TriggerRegisterPlayerChatEvent( trig, player, COMMAND, false);
       }
-      TriggerAddAction( trig,  Actions );
+      TriggerAddAction(trig,  Actions);
     }
 
   }
