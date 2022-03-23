@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     protected override string CompletionDescription => "You can summon Medivh from the Altar of Knowledge";
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(ResearchId, UNLIMITED);
       Holder.ModObjectLimit(MedivhId, 1);
     }

@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       TriggerExecute( gg_trg_Plague_Actions );
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }
 

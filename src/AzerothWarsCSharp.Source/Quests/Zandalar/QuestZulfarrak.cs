@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       SetUnitOwner(LEGEND_ZULFARRAK.Unit, Holder.Player, true);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(GahzrillaResearch, UNLIMITED);
       Holder.ModObjectLimit(GahzrillaId, 1);
     }

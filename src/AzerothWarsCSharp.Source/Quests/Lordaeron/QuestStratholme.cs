@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       RescueNeutralUnitsInRect(Regions.StratholmeUnlock.Rect, Holder.Player);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
     }
 
     public  thistype ( ){

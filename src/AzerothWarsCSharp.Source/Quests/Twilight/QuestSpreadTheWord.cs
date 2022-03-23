@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
     protected override void OnComplete(){
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
     }
 

@@ -43,7 +43,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       PlayThematicMusicBJ( "war3mapImported\\ForsakenTheme.mp3" );
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
     }
 

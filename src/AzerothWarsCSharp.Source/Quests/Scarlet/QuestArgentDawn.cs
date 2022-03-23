@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       FACTION_SCARLET.ModObjectLimit(FourCC("h09J"), UNLIMITED)                 ;//Lilian
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(RESEARCH_ID, 1);
     }
 

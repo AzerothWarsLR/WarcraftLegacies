@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       SetPlayerTechResearched(Holder.Player, _chenResearch, 1);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(_chenResearch, UNLIMITED);
       Holder.ModObjectLimit(_chenId, 1);
       SetUnitInvulnerable(gg_unit_Nsjs_1887, true);

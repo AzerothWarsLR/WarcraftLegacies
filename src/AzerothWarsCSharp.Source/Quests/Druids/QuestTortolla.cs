@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       RemoveUnit(thistype.sleepingTortolla);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(HeroId, 1);
     }
 

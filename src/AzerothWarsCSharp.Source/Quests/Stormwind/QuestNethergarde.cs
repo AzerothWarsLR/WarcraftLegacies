@@ -40,7 +40,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       FACTION_STORMWIND.ModObjectLimit(FourCC("h03F"),1)               ;//Reginald windsor
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
     }
 
     public  thistype ( ){

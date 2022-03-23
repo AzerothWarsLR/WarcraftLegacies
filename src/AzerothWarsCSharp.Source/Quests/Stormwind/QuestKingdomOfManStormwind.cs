@@ -40,7 +40,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       AddHeroXP(LEGEND_VARIAN.Unit, EXPERIENCE_REWARD, true);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }
 

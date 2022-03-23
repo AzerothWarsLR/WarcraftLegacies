@@ -49,7 +49,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       RescueNeutralUnitsInRect(Regions.EchoUnlock.Rect, Holder.Player);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(QuestResearchId, 1);
     }
 

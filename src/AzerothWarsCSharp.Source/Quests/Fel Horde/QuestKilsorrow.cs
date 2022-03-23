@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       UnitRescue(gg_unit_n081_4142, FACTION_FEL_HORDE.Player);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
     }
 
     public  thistype ( ){

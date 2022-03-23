@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       DisplayResearchAcquired(Holder.Player, ResearchId, 1);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }
 

@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       SetPlayerTechResearched(Holder.Player, ResearchId, 1);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }
 

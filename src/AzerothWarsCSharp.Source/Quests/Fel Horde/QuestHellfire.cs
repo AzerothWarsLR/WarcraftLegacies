@@ -50,7 +50,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       GrantHellfire(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(QuestResearchId, 1);
     }
 

@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
     protected override string CompletionDescription => "The hero Archimonde, control of all units in the Twisting Nether, && learn to train Greater Demons";
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       if (Holder.UndefeatedResearch == 0){
         BJDebugMsg("ERROR: " + Holder.Name + " has no presence research. QuestSummonLegion wonFourCC("t work"");
       }

@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       return "You can summon Alexandros Mograine from the " + GetObjectName(ALTAR_ID);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       this.Holder.ModObjectLimit(HERO_ID, 1);
     }
 

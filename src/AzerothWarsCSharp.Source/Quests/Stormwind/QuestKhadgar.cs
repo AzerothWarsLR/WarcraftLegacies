@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     protected override string CompletionDescription => "You can summon Khadgar from the Altar of Kings";
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(HeroId, 1);
     }
 

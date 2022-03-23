@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       }
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(RESEARCH_ID, 1);
     }
 

@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       DisplayUnitTypeAcquired(Holder.Player, WardenId, "You can now train Wardens from the Vault of the Wardens, Sentinel Enclaves, && your capitals.");
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(WardenId, 8);
       Holder.ModObjectLimit(ResearchId, 1);
     }

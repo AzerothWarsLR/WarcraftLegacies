@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       RescueNeutralUnitsInRect(Regions.TyrUnlock.Rect, Holder.Player);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(RESEARCH_ID, 1);
     }
 

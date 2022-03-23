@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       DisplayUnitTypeAcquired(Holder.Player, DRAGON_ID, "You can now train Blue Dragons from Military Quarters && the Nexus.");
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(DRAGON_ID, 6);
       Holder.ModObjectLimit(MANADAM_ID, UNLIMITED);
     }

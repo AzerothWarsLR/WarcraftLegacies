@@ -55,7 +55,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       Holder.ModObjectLimit(ResearchId, -UNLIMITED);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }
 

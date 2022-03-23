@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       }
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       this.Holder.ModObjectLimit(FourCC("R021"), UNLIMITED);
     }
 

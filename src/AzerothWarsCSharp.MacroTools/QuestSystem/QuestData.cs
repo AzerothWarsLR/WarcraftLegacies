@@ -80,6 +80,14 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       
     }
 
+    /// <summary>
+    /// Fired when the <see cref="QuestData"/> is added to a <see cref="Faction"/>.
+    /// </summary>
+    protected virtual void OnAdd()
+    {
+      
+    }
+
     public int Progress
     {
       get => _progress;
@@ -218,8 +226,6 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         _muted = false;
       }
     }
-
-    protected Action OnAdd { get; init; }
 
     /// <summary>
     /// Enables the local aspects of all child QuestItems.

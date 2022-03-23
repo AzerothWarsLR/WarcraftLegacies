@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       CreateUnit(Holder.Player, FourCC("n04F"), GetRectCenterX(Regions.Andrassil), GetRectCenterY(gg_rct_Andrassil).Rect, 0);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(FourCC("R05X"), UNLIMITED);
       Holder.ModObjectLimit(UrsocId, 1);
       Holder.ModObjectLimit(ResearchId, UNLIMITED);

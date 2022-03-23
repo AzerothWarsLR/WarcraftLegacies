@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       IssueImmediateOrderBJ( gg_unit_h02U_2413, "unrobogoblin" );
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(CataclysmResearch, UNLIMITED);
     }
 

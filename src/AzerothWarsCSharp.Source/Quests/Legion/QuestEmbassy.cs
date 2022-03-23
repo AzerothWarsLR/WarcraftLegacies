@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       return "You can build the Infernal Machine Factory && summon Anetheron from the " + GetObjectName(ALTAR_ID);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
     }
 
     public  thistype ( ){

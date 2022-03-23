@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       RescueNeutralUnitsInRect(Regions.GrimBatol.Rect, Holder.Player);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
     }
 
     public  thistype ( ){

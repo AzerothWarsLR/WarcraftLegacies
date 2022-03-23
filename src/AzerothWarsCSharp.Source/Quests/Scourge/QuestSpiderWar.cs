@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       }
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(QuestResearchId, 1);
     }
 

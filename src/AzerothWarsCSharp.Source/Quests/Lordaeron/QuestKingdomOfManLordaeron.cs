@@ -39,7 +39,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       LEGEND_ARTHAS.ClearUnitDependencies();
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }
 

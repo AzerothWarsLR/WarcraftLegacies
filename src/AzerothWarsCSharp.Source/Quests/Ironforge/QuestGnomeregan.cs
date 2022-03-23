@@ -44,7 +44,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       GrantGnomeregan(Holder.Player);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(QuestResearchId, 1);
     }
 

@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       SetPlayerTechResearched(Holder.Player, ResearchId, 1);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }
 

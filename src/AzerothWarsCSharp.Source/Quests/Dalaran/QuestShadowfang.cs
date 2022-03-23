@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       RescueNeutralUnitsInRect(Regions.ShadowfangUnlock.Rect, Holder.Player);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
     }
 
     public  thistype ( ){

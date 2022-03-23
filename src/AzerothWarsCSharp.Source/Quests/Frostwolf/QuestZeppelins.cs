@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
     protected override string CompletionDescription => "Learn to train " + GetObjectName(UnittypeId) + "s";
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(UnittypeId, LIMIT_CHANGE);
       Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }

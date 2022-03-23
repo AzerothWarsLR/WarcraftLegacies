@@ -43,7 +43,7 @@ namespace AzerothWarsCSharp.Source.Quests
       SetPlayerTechResearched(Holder.Player, thistype.researchId, 1);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(thistype.researchId, UNLIMITED);
     }
 

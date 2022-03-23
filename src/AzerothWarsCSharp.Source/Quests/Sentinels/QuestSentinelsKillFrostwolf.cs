@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       DisplayUnitTypeAcquired(Holder.Player, AmaraId, "You can now revive Amara from the Altar of Elders.");
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(AmaraId, 1);
       Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }

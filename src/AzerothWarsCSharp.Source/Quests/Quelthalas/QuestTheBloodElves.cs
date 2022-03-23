@@ -62,7 +62,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       SetTriggerLegend(triggerLegend);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(QuestResearchId, UNLIMITED);
       Holder.ModObjectLimit(UnittypeId, 6);
       Holder.ModObjectLimit(HeroId, 1);

@@ -48,7 +48,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       }
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(QuestResearchId, 1);
     }
 

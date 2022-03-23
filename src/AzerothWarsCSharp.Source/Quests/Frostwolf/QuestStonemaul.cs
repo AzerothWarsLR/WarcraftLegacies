@@ -45,7 +45,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       AdjustPlayerStateBJ(3000, FACTION_FROSTWOLF.Player, PLAYER_STATE_RESOURCE_LUMBER);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
     }
 
     public  thistype ( ){

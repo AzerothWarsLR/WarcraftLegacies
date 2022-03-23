@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       SetPlayerTechResearched(Holder.Player, ResearchId, 1);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(HeroId, 1);
       Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }

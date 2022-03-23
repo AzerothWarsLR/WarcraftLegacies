@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       DisplayUnitTypeAcquired(Holder.Player, UNITTYPE_ID, "You can now train Siege Ancients at the Ancient of War.");
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(UNITTYPE_ID, 6) ;//Siege Ancient
     }
 

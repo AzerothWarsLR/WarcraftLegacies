@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       }
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
     }
 

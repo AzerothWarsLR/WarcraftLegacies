@@ -40,7 +40,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       SetPlayerStateBJ( Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300 );
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(RESEARCH_ID, 1);
     }
 

@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     protected override string CompletionDescription => "Learn to research three powerful upgrades at Karazhan.";
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(FourCC("R020"), UNLIMITED)   ;//Rain: An Amalgam
       Holder.ModObjectLimit(FourCC("R03M"), UNLIMITED)   ;//Methods of Control
       Holder.ModObjectLimit(FourCC("R01B"), UNLIMITED)   ;//A Treatise on Barriers

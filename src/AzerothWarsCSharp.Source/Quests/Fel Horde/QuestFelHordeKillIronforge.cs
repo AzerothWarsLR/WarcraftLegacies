@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       SetPlayerTechResearched(Holder.Player, ResearchId, 1);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(ResearchId, UNLIMITED);
       Holder.ModObjectLimit(UnittypeId, UNIT_LIMIT);
     }

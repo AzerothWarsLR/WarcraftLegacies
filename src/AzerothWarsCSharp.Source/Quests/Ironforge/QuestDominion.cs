@@ -47,7 +47,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       }
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(RESEARCH_ID, 1);
     }
 

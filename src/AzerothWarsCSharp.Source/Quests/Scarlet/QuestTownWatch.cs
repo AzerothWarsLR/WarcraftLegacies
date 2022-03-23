@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       AdjustPlayerStateBJ( 4000, Holder.Player, PLAYER_STATE_RESOURCE_LUMBER );
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
     }
 
     public  thistype ( ){

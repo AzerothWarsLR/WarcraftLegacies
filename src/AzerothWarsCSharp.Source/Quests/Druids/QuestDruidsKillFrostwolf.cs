@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       DisplayUnitTypeAcquired(this.Holder.Player, ELEMENTAL_GUARDIAN_ID, "You can now train the Elemental Guardian from the Altar of Elders.");
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       this.Holder.ModObjectLimit(ELEMENTAL_GUARDIAN_ID, 1);
       this.Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
     }

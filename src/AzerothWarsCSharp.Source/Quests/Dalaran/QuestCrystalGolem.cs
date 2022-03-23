@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       Holder.ModObjectLimit(FourCC("n0AD"), 6);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
     }
 

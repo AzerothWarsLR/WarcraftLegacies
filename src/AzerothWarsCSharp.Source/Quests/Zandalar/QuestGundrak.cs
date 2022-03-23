@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       AdjustPlayerStateBJ( 300, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       this.Holder.ModObjectLimit(GUNDRAK_RESEARCH, UNLIMITED);
     }
 

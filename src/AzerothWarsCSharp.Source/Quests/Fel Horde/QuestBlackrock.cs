@@ -45,7 +45,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       GrantBlackrock(Holder.Player);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(QuestResearchId, 1);
     }
 

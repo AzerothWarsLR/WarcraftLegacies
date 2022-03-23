@@ -24,7 +24,7 @@
       SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       this.Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
     }
 

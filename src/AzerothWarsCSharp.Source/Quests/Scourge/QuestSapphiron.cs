@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       SetPlayerTechResearched(Holder.Player, SapphironResearch, 1);
     }
 
-    private void OnAdd( ){
+    protected override void OnAdd( ){
       Holder.ModObjectLimit(SapphironResearch, UNLIMITED);
     }
 
