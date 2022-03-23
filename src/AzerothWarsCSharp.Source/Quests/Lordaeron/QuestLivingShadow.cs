@@ -1,31 +1,31 @@
-
-using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {
-  public sealed class QuestLivingShadow : QuestData{
+  public sealed class QuestLivingShadow : QuestData
+  {
+    public QuestLivingShadow() : base("The Living Embodiment of Shadow",
+      "The Dark Fortress looming over the Twilight Highlands is a beacon of darkness. Destroy it && clear the surrounding lands of evil.",
+      "ReplaceableTextures\\CommandButtons\\BTNShadow Orb.blp")
+    {
+      AddQuestItem(new QuestItemLegendInRect(LEGEND_UTHER, Regions.TwilightOutside.Rect, "Twilight Citadel"));
+      AddQuestItem(new QuestItemLegendDead(LEGEND_TWILIGHTCITADEL));
+      ;
+      ;
+    }
 
 
-    protected override string CompletionPopup => "Uther has discovered the Living Embodiment of Shadow in the ruins of the Twilight Citadel";
+    protected override string CompletionPopup =>
+      "Uther has discovered the Living Embodiment of Shadow in the ruins of the Twilight Citadel";
 
     protected override string CompletionDescription => "The Living Shadow && the Ashbringer Quest discovery";
 
-    protected override void OnComplete(){
+    protected override void OnComplete()
+    {
       UnitAddItemSafe(LEGEND_UTHER.Unit, ARTIFACT_LIVINGSHADOW.item);
       FACTION_LORDAERON.AddQuest(THE_ASHBRINGER);
       THE_ASHBRINGER.Progress = QUEST_PROGRESS_INCOMPLETE;
     }
-
-    public  QuestLivingShadow ( ){
-      thistype this = thistype.allocate("The Living Embodiment of Shadow", "The Dark Fortress looming over the Twilight Highlands is a beacon of darkness. Destroy it && clear the surrounding lands of evil.", "ReplaceableTextures\\CommandButtons\\BTNShadow Orb.blp");
-      AddQuestItem(new QuestItemLegendInRect(LEGEND_UTHER, Regions.TwilightOutside.Rect, "Twilight Citadel"));
-      AddQuestItem(new QuestItemLegendDead(LEGEND_TWILIGHTCITADEL));
-      ;;
-    }
-
-
   }
 }

@@ -3,83 +3,94 @@ using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Naga
 {
-  public sealed class QuestMadnessPath : QuestData{
+  public sealed class QuestMadnessPath : QuestData
+  {
+    private const int RESEARCH_ID = FourCC("R065"); //This research is required to complete the quest
+    private const int QUEST_RESEARCH_ID = FourCC("R033"); //This research is given when the quest is completed
 
-  
-    private const int RESEARCH_ID = FourCC("R065")         ;//This research is required to complete the quest
-    private const int QUEST_RESEARCH_ID = FourCC("R033")   ;//This research is given when the quest is completed
-  
-
-
-    bool operator Global( ){
+    private Global()
+    {
       return true;
     }
 
-    protected override string CompletionPopup => "Nazjatar is now under the influence of the Old Gods && the portal is opened to NyFourCC(alotha.";
-
-    protected override string CompletionDescription => "A portal is opened to NyFourCC(alotha, Illidan turns Hostile, Aszhara appears && you join the Old Gods team";
-
-    private void GrantNazjatar( ){
-      SetUnitOwner(gg_unit_n07E_0958, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
-      ShowUnit(gg_unit_n07E_0958, true);
-    }
-
-    private void RenameIllidanFaction( ){
-      Holder.Team = TEAM_OLDGOD;
-      Holder.Name = "Nazjatar";
-      Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNNagaSummoner.blp";
-    }
-
-    private void FailQuests( ){
-      REDEMPTION_PATH.Progress = QUEST_PROGRESS_FAILED;
-      EXILE_PATH.Progress = QUEST_PROGRESS_FAILED;
-    }
-
-    private void TransferHeroes( ){
-      SetUnitOwner(LEGEND_NZOTH.Unit, Holder.Player, true);
-      LEGEND_AZSHARA.Spawn(Holder.Player, GetRectCenterX(Regions.InstanceNazjatar), GetRectCenterY(gg_rct_InstanceNazjatar).Rect, 270);
-      SetHeroLevel(LEGEND_AZSHARA.Unit, 7, false);
-      SetUnitOwner(LEGEND_ILLIDAN.Unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
-    }
-
-    private void AdjustTechtree( ){
-      FACTION_NAGA.ModObjectLimit(FourCC("n08V"), UNLIMITED) ;//Depth Void Portal
-      FACTION_NAGA.ModObjectLimit(FourCC("h01Q"), 4) ;//Immortal Guardian
-      FACTION_NAGA.ModObjectLimit(FourCC("H08U"), 1) ;//Azshara
-    }
-
-    protected override void OnComplete(){
-      GrantNazjatar();
-      AdjustTechtree();
-      FailQuests();
-      TransferHeroes();
-      FACTION_NAGA.ModObjectLimit(FourCC("Eevi"), -UNLIMITED)  	    ;//Illidan
-      BLACKEMPIREPORTAL_ILLIDAN.PortalState = BLACKEMPIREPORTALSTATE_OPEN;
-      RenameIllidanFaction();
-      WaygateActivateBJ( true, gg_unit_h01D_3378 );
-      ShowUnitShow( gg_unit_h01D_3378 );
-      WaygateSetDestinationLocBJ( gg_unit_h01D_3378, GetRectCenter(gg_rct_NazjatarExit2) );
-      WaygateActivateBJ( true, gg_unit_h01A_0402 );
-      ShowUnitShow( gg_unit_h01A_0402 );
-      WaygateSetDestinationLocBJ( gg_unit_h01A_0402, GetRectCenter(gg_rct_NazjatarExit1) );
-      WaygateActivateBJ( true, gg_unit_h01D_3381 );
-      ShowUnitShow( gg_unit_h01D_3381 );
-      WaygateSetDestinationLocBJ( gg_unit_h01D_3381, GetRectCenter(gg_rct_NazjatarEntrance1) );
-      WaygateActivateBJ( true, gg_unit_h01D_3384 );
-      ShowUnitShow( gg_unit_h01D_3384 );
-      WaygateSetDestinationLocBJ( gg_unit_h01D_3384, GetRectCenter(gg_rct_NazjatarEntrance2) );
-    }
-
-    public  QuestMadnessPath ( ){
-      thistype this = thistype.allocate("Voices in the Void", "Azshara takes command of the Naga in the name of NFourCC("zoth. Illidan")s reign is no more.", "ReplaceableTextures\\CommandButtons\\BTNGuardianofTheSea.blp");
+    public QuestMadnessPath() : base("Voices in the Void",
+      "Azshara takes command of the Naga in the name of NFourCC("zoth.Illidan")s reign is no more.",
+      "ReplaceableTextures\\CommandButtons\\BTNGuardianofTheSea.blp")
+    {
       AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("n055")));
       this.AddQuestItem(new QuestItemLegendNotDead(LEGEND_ILLIDAN));
       AddQuestItem(new QuestItemSelfExists());
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.NazjatarHidden.Rect, "Nazjatar"));
       ResearchId = QUEST_RESEARCH_ID;
-      ;;
+      ;
+      ;
     }
 
+    protected override string CompletionPopup =>
+      "Nazjatar is now under the influence of the Old Gods && the portal is opened to NyFourCC(alotha.";
 
+    protected override string CompletionDescription =>
+      "A portal is opened to NyFourCC(alotha, Illidan turns Hostile, Aszhara appears && you join the Old Gods team";
+
+
+    bool operator
+
+    private void GrantNazjatar()
+    {
+      SetUnitOwner(gg_unit_n07E_0958, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
+      ShowUnit(gg_unit_n07E_0958, true);
+    }
+
+    private void RenameIllidanFaction()
+    {
+      Holder.Team = TEAM_OLDGOD;
+      Holder.Name = "Nazjatar";
+      Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNNagaSummoner.blp";
+    }
+
+    private void FailQuests()
+    {
+      REDEMPTION_PATH.Progress = QUEST_PROGRESS_FAILED;
+      EXILE_PATH.Progress = QUEST_PROGRESS_FAILED;
+    }
+
+    private void TransferHeroes()
+    {
+      SetUnitOwner(LEGEND_NZOTH.Unit, Holder.Player, true);
+      LEGEND_AZSHARA.Spawn(Holder.Player, GetRectCenterX(Regions.InstanceNazjatar),
+        GetRectCenterY(gg_rct_InstanceNazjatar).Rect, 270);
+      SetHeroLevel(LEGEND_AZSHARA.Unit, 7, false);
+      SetUnitOwner(LEGEND_ILLIDAN.Unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
+    }
+
+    private void AdjustTechtree()
+    {
+      FACTION_NAGA.ModObjectLimit(FourCC("n08V"), UNLIMITED); //Depth Void Portal
+      FACTION_NAGA.ModObjectLimit(FourCC("h01Q"), 4); //Immortal Guardian
+      FACTION_NAGA.ModObjectLimit(FourCC("H08U"), 1); //Azshara
+    }
+
+    protected override void OnComplete()
+    {
+      GrantNazjatar();
+      AdjustTechtree();
+      FailQuests();
+      TransferHeroes();
+      FACTION_NAGA.ModObjectLimit(FourCC("Eevi"), -UNLIMITED); //Illidan
+      BLACKEMPIREPORTAL_ILLIDAN.PortalState = BLACKEMPIREPORTALSTATE_OPEN;
+      RenameIllidanFaction();
+      WaygateActivateBJ(true, gg_unit_h01D_3378);
+      ShowUnitShow(gg_unit_h01D_3378);
+      WaygateSetDestinationLocBJ(gg_unit_h01D_3378, GetRectCenter(gg_rct_NazjatarExit2));
+      WaygateActivateBJ(true, gg_unit_h01A_0402);
+      ShowUnitShow(gg_unit_h01A_0402);
+      WaygateSetDestinationLocBJ(gg_unit_h01A_0402, GetRectCenter(gg_rct_NazjatarExit1));
+      WaygateActivateBJ(true, gg_unit_h01D_3381);
+      ShowUnitShow(gg_unit_h01D_3381);
+      WaygateSetDestinationLocBJ(gg_unit_h01D_3381, GetRectCenter(gg_rct_NazjatarEntrance1));
+      WaygateActivateBJ(true, gg_unit_h01D_3384);
+      ShowUnitShow(gg_unit_h01D_3384);
+      WaygateSetDestinationLocBJ(gg_unit_h01D_3384, GetRectCenter(gg_rct_NazjatarEntrance2));
+    }
   }
 }

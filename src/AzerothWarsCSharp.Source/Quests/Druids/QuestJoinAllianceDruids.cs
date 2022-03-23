@@ -3,8 +3,16 @@ using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Druids
 {
-  public sealed class QuestJoinAllianceDruid : QuestData{
-
+  public sealed class QuestJoinAllianceDruid : QuestData
+  {
+    public QuestJoinAllianceDruid() : base("Join the Alliance",
+      "With a world ending threat happening, the Alliance has reached to the Night Elves to join them",
+      "ReplaceableTextures\\CommandButtons\\BTNalliance.blp")
+    {
+      AddQuestItem(new QuestItemCastSpell(FourCC("A0IG"), true));
+      ;
+      ;
+    }
 
 
     protected override string CompletionPopup => "The Druids have joined the Alliance";
@@ -12,17 +20,10 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
     protected override string CompletionDescription => "Join the Alliance team";
 
 
-    protected override void OnComplete(){
-      UnitRemoveAbilityBJ( FourCC("A0IG"), LEGEND_MALFURION.Unit);
+    protected override void OnComplete()
+    {
+      UnitRemoveAbilityBJ(FourCC("A0IG"), LEGEND_MALFURION.Unit);
       Holder.Team = TEAM_ALLIANCE;
     }
-
-    public  QuestJoinAllianceDruid ( ){
-      thistype this = thistype.allocate("Join the Alliance", "With a world ending threat happening, the Alliance has reached to the Night Elves to join them", "ReplaceableTextures\\CommandButtons\\BTNalliance.blp");
-      AddQuestItem(new QuestItemCastSpell(FourCC("A0IG"), true));
-      ;;
-    }
-
-
   }
 }

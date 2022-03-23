@@ -1,28 +1,47 @@
-using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Stormwind
 {
-  public sealed class QuestKingdomOfManStormwind : QuestData{
-
-  
-    private static readonly int ResearchId = FourCC("R01N");
+  public sealed class QuestKingdomOfManStormwind : QuestData
+  {
     private const int EXPERIENCE_REWARD = 6000;
-  
 
 
-    private bool operator Global( ){
+    private static readonly int ResearchId = FourCC("R01N");
+
+    private Global()
+    {
       return true;
     }
 
-    protected override string CompletionPopup => "The people of the Eastern Kingdoms have been united under the banner of Stormwind. Long live High King Varian Wrynn!";
+    public QuestKingdomOfManStormwind() : base("Kingdom of Man",
+      "Before the First War, all of humanity was united under the banner of the Arathorian Empire. Reclaim its greatness by uniting mankind once again.",
+      "ReplaceableTextures\\CommandButtons\\BTNFireKingCrown.blp")
+    {
+      this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_VARIAN));
+      AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_CROWNLORDAERON));
+      AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_CROWNSTORMWIND));
+      AddQuestItem(new QuestItemControlLegend(LEGEND_BLACKTEMPLE, false));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n010"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01G"))));
+      ;
+      ;
+    }
 
-    protected override string CompletionDescription => "You gain a research improving all of your units, the Crowns of Lordaeron && Stormwind are merged, && Varian gains " + I2S(EXPERIENCE_REWARD) + ".";
+    protected override string CompletionPopup =>
+      "The people of the Eastern Kingdoms have been united under the banner of Stormwind. Long live High King Varian Wrynn!";
 
-    protected override void OnComplete(){
+    protected override string CompletionDescription =>
+      "You gain a research improving all of your units, the Crowns of Lordaeron && Stormwind are merged, && Varian gains " +
+      I2S(EXPERIENCE_REWARD) + ".";
+
+
+    private bool operator
+
+    protected override void OnComplete()
+    {
       //Artifact
       unit crownHolder = ARTIFACT_CROWNSTORMWIND.OwningUnit;
       RemoveItem(ARTIFACT_CROWNLORDAERON.item);
@@ -40,21 +59,9 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       AddHeroXP(LEGEND_VARIAN.Unit, EXPERIENCE_REWARD, true);
     }
 
-    protected override void OnAdd( ){
+    protected override void OnAdd()
+    {
       Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }
-
-    public  QuestKingdomOfManStormwind ( ){
-      thistype this = thistype.allocate("Kingdom of Man", "Before the First War, all of humanity was united under the banner of the Arathorian Empire. Reclaim its greatness by uniting mankind once again.", "ReplaceableTextures\\CommandButtons\\BTNFireKingCrown.blp");
-      this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_VARIAN));
-      AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_CROWNLORDAERON));
-      AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_CROWNSTORMWIND));
-      AddQuestItem(new QuestItemControlLegend(LEGEND_BLACKTEMPLE, false));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n010"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01G"))));
-      ;;
-    }
-
-
   }
 }
