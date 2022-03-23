@@ -2,24 +2,24 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
 {
-  public static class LegendQuelthalas{
+  public static class LegendQuelthalas
+  {
+    public static Legend LEGEND_ANASTERIAN;
+    public static Legend LEGEND_ROMMATH;
+    public static Legend LEGEND_JENNALLA;
+    public static Legend LEGEND_SYLVANAS;
+    public static Legend LEGEND_KORIALSTRASZ;
+    public static Legend LEGEND_KAEL;
+    public static Legend LEGEND_LORTHEMAR;
+    public static Legend LEGEND_KILJAEDEN;
+    public static Legend LEGEND_PATHALEON;
 
-  
-    public static Legend LEGEND_ANASTERIAN
-    public static Legend LEGEND_ROMMATH
-    public static Legend LEGEND_JENNALLA
-    public static Legend LEGEND_SYLVANAS
-    public static Legend LEGEND_KORIALSTRASZ
-    public static Legend LEGEND_KAEL
-    public static Legend LEGEND_LORTHEMAR
-    public static Legend LEGEND_KILJAEDEN
-    public static Legend LEGEND_PATHALEON
+    public static Legend LEGEND_SILVERMOON;
+    public static Legend LEGEND_SUNWELL;
 
-    public static Legend LEGEND_SILVERMOON
-    public static Legend LEGEND_SUNWELL
-  
 
-    public static void Setup( ){
+    public static void Setup()
+    {
       LEGEND_SILVERMOON = new Legend();
       LEGEND_SILVERMOON.Unit = gg_unit_h003_0418;
       LEGEND_SILVERMOON.DeathMessage = "The grand city of the high elves, Silvermoon, has been crushed by her enemies.";
@@ -65,8 +65,8 @@ namespace AzerothWarsCSharp.Source.Legends
       LEGEND_KILJAEDEN.UnitType = FourCC(U004);
       LEGEND_KILJAEDEN.PermaDies = true;
       LEGEND_KILJAEDEN.StartingXp = 10800;
-      LEGEND_KILJAEDEN.DeathMessage = "KilFourCC(jaeden the Deceiver has been annihilated, but it is too late for the Blood Elves, who will continue to live && die with demonic taint coursing through their veins.";
+      LEGEND_KILJAEDEN.DeathMessage =
+        "KilFourCC(jaeden the Deceiver has been annihilated, but it is too late for the Blood Elves, who will continue to live && die with demonic taint coursing through their veins.";
     }
-
   }
 }

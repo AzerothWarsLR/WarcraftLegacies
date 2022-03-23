@@ -1,42 +1,36 @@
-using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
-using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Cheats
 {
-  public class CheatKick{
+  public static class CheatKick
+  {
+    private const string COMMAND = "-kick ";
+    private static string? _parameter;
 
-  
-    private const string COMMAND     = "-kick ";
-    private string parameter;
-  
+    private static void Actions()
+    {
+      if (!TestSafety.CheatCondition()) return;
 
-    private static void Actions( ){
-      if (!TestSafety.CheatCondition())
-      {
-        return;
-      }
-      var i = 0;
       string enteredString = GetEventPlayerChatString();
       player p = GetTriggerPlayer();
-      var pId = GetPlayerId(p);
       var kickId = 0;
 
-      parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
-      kickId = (S2I(parameter));
+      _parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
+      kickId = S2I(_parameter);
 
-      Person.ById(kickId).Faction.ScoreStatus = SCORESTATUS_DEFEATED;
-      DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Attempted to kick player " + GetPlayerName(Player(kickId)) + ".");
+      var faction = Person.ByHandle(Player(kickId)).Faction;
+      if (faction != null)
+        faction.ScoreStatus = ScoreStatus.Defeated;
+      DisplayTextToPlayer(p, 0, 0,
+        "|cffD27575CHEAT:|r Attempted to kick player " + GetPlayerName(Player(kickId)) + ".");
     }
 
-    public static void Setup( ){
+    public static void Setup()
+    {
       trigger trig = CreateTrigger();
-      foreach (var player in GeneralHelpers.GetAllPlayers())
-      {
-        TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
-      }
+      foreach (var player in GetAllPlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
+
       TriggerAddAction(trig, Actions);
     }
-
   }
 }

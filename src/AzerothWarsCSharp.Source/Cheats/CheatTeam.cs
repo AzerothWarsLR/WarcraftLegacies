@@ -1,41 +1,32 @@
-using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
-using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Cheats
 {
-  public class CheatTeam{
+  public static class CheatTeam
+  {
+    private const string COMMAND = "-team ";
+    private static string? _parameter;
 
-  
-    private const string COMMAND     = "-team ";
-    private string parameter;
-  
 
-    private static void Actions( ){
-      if (!TestSafety.CheatCondition())
-      {
-        return;
-      }
-      var i = 0;
+    private static void Actions()
+    {
+      if (!TestSafety.CheatCondition()) return;
+
       string enteredString = GetEventPlayerChatString();
       player p = GetTriggerPlayer();
-      var pId = GetPlayerId(p);
-      Team t;
-      parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
-      t = Team.teamsByName[parameter];
-      Person.ById(pId).Faction.Team = t;
+      _parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
+      Team t = Team.GetTeamByName(_parameter);
+      var faction = Person.ByHandle(p).Faction;
+      if (faction != null) faction.Team = t;
       DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Attempted to team to " + t.Name + ".");
     }
 
-    //===========================================================================
-    public static void Setup( ){
+    public static void Setup()
+    {
       trigger trig = CreateTrigger();
-      foreach (var player in GeneralHelpers.GetAllPlayers())
-      {
-        TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
-      }
+      foreach (var player in GetAllPlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
+
       TriggerAddAction(trig, Actions);
     }
-
   }
 }

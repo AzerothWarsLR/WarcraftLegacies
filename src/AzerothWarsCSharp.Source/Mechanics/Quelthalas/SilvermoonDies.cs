@@ -1,16 +1,19 @@
+using AzerothWarsCSharp.Source.Legends;
+
 namespace AzerothWarsCSharp.Source.Mechanics.Quelthalas
 {
-  public class SilvermoonDies{
-
-    private static void Dies( ){
-      SetUnitInvulnerable(LEGEND_SUNWELL.Unit, false);
+  public static class SilvermoonDies
+  {
+    private static void Dies()
+    {
+      SetUnitInvulnerable(LegendQuelthalas.LEGEND_SUNWELL.Unit, false);
     }
 
-    public static void Setup( ){
+    public static void Setup()
+    {
       trigger trig = CreateTrigger();
-      TriggerRegisterUnitEvent(trig, LEGEND_SILVERMOON.Unit, EVENT_UNIT_DEATH);
-      TriggerAddCondition(trig, ( Dies));
+      TriggerRegisterUnitEvent(trig, LegendQuelthalas.LEGEND_SUNWELL.Unit, EVENT_UNIT_DEATH);
+      TriggerAddAction(trig, Dies);
     }
-
   }
 }

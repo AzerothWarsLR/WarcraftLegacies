@@ -1,52 +1,46 @@
-
-using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.Source.Libraries;
-
 namespace AzerothWarsCSharp.Source.Cheats
 {
-  public class CheatUncontrol{
-
-    //**CONFIG
-  
+  public static class CheatUncontrol
+  {
     private const string COMMAND = "-uncontrol ";
-  
-    //*ENDCONFIG
 
-    private static void Actions( ){
-      if (!TestSafety.CheatCondition())
-      {
-        return;
-      }
-      var i = 0;
+    private static void Actions()
+    {
+      if (!TestSafety.CheatCondition()) return;
+
       string enteredString = GetEventPlayerChatString();
       player p = GetTriggerPlayer();
-      var pId = GetPlayerId(p);
       string parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
 
-      if (parameter == "all"){
-        i = 0;
-        while(true){
-          if ( i > MAX_PLAYERS){ break; }
+      if (parameter == "all")
+      {
+        var i = 0;
+        while (true)
+        {
+          if (i > bj_MAX_PLAYERS) break;
+
           SetPlayerAlliance(Player(i), GetTriggerPlayer(), ALLIANCE_SHARED_CONTROL, false);
           SetPlayerAlliance(Player(i), GetTriggerPlayer(), ALLIANCE_SHARED_ADVANCED_CONTROL, false);
-          i = i + 1;
+          i += 1;
         }
+
         DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Revoked control of all players.");
-      }else {
+      }
+      else
+      {
         SetPlayerAlliance(Player(S2I(parameter)), GetTriggerPlayer(), ALLIANCE_SHARED_CONTROL, false);
         SetPlayerAlliance(Player(S2I(parameter)), GetTriggerPlayer(), ALLIANCE_SHARED_ADVANCED_CONTROL, false);
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Revoked control of player " + GetPlayerName(Player(S2I(parameter))) + ".");
+        DisplayTextToPlayer(p, 0, 0,
+          "|cffD27575CHEAT:|r Revoked control of player " + GetPlayerName(Player(S2I(parameter))) + ".");
       }
     }
 
-    public static void Setup( ){
+    public static void Setup()
+    {
       trigger trig = CreateTrigger();
-      foreach (var player in GeneralHelpers.GetAllPlayers())
-      {
-        TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
-      }
+      foreach (var player in GetAllPlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
+
       TriggerAddAction(trig, Actions);
     }
-
   }
 }

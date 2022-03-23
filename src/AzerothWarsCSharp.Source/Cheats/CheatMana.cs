@@ -1,55 +1,45 @@
-
-
-using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.Source.Libraries;
+using System.Collections.Generic;
+using WCSharp.Events;
 
 namespace AzerothWarsCSharp.Source.Cheats
 {
-  public class CheatMana{
+  public static class CheatMana
+  {
+    private const string COMMAND = "-mana ";
+    private static readonly Dictionary<player, bool> Toggle = new();
 
-    //**CONFIG
-    
-    private const string COMMAND     = "-mana ";
-    private bool[] Toggle;
-    
-    //*ENDCONFIG
-
-    private static void Spell( ){
-      if (Toggle[GetPlayerId(GetTriggerPlayer())]){
-        SetUnitManaPercentBJ(GetTriggerUnit(), 100);
-      }
+    private static void Spell()
+    {
+      if (Toggle[GetTriggerPlayer()]) SetUnitManaPercentBJ(GetTriggerUnit(), 100);
     }
 
-    private static void Actions( ){
-      if (!TestSafety.CheatCondition())
-      {
-        return;
-      }
-      var i = 0;
+    private static void Actions()
+    {
+      if (!TestSafety.CheatCondition()) return;
       string enteredString = GetEventPlayerChatString();
       player p = GetTriggerPlayer();
-      var pId = GetPlayerId(p);
       string parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
 
-      if (parameter == "on"){
-        Toggle[pId] = true;
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Infinite mana activated.");
-      }else if (parameter == "off"){
-        Toggle[pId] = false;
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Infinite mana deactivated.");
+      switch (parameter)
+      {
+        case "on":
+          Toggle[p] = true;
+          DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Infinite mana activated.");
+          break;
+        case "off":
+          Toggle[p] = false;
+          DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Infinite mana deactivated.");
+          break;
       }
     }
 
-    public static void Setup( ){
+    public static void Setup()
+    {
       trigger trig = CreateTrigger();
-      foreach (var player in GeneralHelpers.GetAllPlayers())
-      {
-        TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
-      }
+      foreach (var player in GetAllPlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
       TriggerAddAction(trig, Actions);
 
-      PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_SPELL_ENDCAST,  Spell);
+      PlayerUnitEvents.Register(PlayerUnitEvent.SpellEndCast, Spell);
     }
-
   }
 }
