@@ -64,7 +64,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_HORNOFCENARIUS, Regions.Moonglade.Rect, "The Barrow Den"));
       AddQuestItem(new QuestItemExpire(1440));
       AddQuestItem(new QuestItemSelfExists());
-      
+      ;;
     }
 
 

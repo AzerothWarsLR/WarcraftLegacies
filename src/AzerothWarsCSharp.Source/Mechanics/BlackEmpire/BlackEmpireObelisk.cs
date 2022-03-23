@@ -87,7 +87,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
       BlzSetSpecialEffectHeight(_sfxProgress, PROGRESS_HEIGHT + GetPositionZ(GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit)));
 
       this.startPeriodic();
-      
+      ;;
     }
 
 

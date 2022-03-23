@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       this.AddQuestItem(new QuestItemBuild(FourCC("o03C"), 1));
       this.AddQuestItem(new QuestItemTrain(FourCC("obot"),)o03I), 3));
       ResearchId = QUEST_RESEARCH_ID;
-      
+      ;;
     }
 
 

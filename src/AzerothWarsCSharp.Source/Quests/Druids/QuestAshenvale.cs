@@ -57,7 +57,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       AddQuestItem(new QuestItemExpire(1440));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = RESEARCH_ID;
-      
+      ;;
     }
 
 

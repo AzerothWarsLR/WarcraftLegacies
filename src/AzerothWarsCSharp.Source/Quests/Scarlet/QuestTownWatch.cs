@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       this.AddQuestItem(new QuestItemBuild(FourCC("h084"), 8));
       this.AddQuestItem(new QuestItemKillXUnit(FourCC("u01U"), 3));
       ResearchId = QUEST_RESEARCH_ID;
-      
+      ;;
     }
 
 

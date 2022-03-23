@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       AddQuestItem(new QuestItemLegendDead(LEGEND_LICHKING));
       AddQuestItem(new QuestItemLegendInRect(LEGEND_ARTHAS, Regions.KingArthasCrown.Rect, "King Terenas"));
       ResearchId = QUEST_RESEARCH_ID;
-      
+      ;;
     }
 
 

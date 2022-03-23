@@ -58,7 +58,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       AddQuestItem(new QuestItemKillUnit(LEGEND_SEAWITCH.Unit));
       AddQuestItem(new QuestItemExpire(600));
       ResearchId = QuestResearchId;
-      
+      ;;
     }
 
     private static void OnInit( ){

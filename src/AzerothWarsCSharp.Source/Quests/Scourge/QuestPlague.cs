@@ -31,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       thistype this = thistype.allocate("Plague of Undeath", "You can unleash a devastating zombifying plague across the lands of Lordaeron. Once itFourCC("s started, you can type -off to deactivate Cauldron Zombie spawns. Type -end to stop citizens from turning into zombies.", "ReplaceableTextures\\CommandButtons\\BTNPlagueBarrel.blp"");
       this.AddQuestItem(new QuestItemEitherOf.create(QuestItemResearch.create(ResearchId, FourCC("u000")), QuestItemTime(960)));
       AddQuestItem(new QuestItemTime(660));
-      
+      ;;
     }
 
 

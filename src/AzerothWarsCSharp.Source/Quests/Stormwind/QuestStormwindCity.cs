@@ -60,7 +60,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       this.AddQuestItem(new QuestItemUpgrade(FourCC("h06N"), )h06K)));
       AddQuestItem(new QuestItemExpire(1020));
       AddQuestItem(new QuestItemSelfExists());
-      
+      ;;
     }
 
 

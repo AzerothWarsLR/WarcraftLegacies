@@ -60,7 +60,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       AddQuestItem(new QuestItemExpire(1462));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = RESEARCH_ID;
-      
+      ;;
     }
 
 

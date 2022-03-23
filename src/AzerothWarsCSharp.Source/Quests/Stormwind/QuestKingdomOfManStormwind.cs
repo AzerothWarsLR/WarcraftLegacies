@@ -52,7 +52,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       AddQuestItem(new QuestItemControlLegend(LEGEND_BLACKTEMPLE, false));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n010"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01G"))));
-      
+      ;;
     }
 
 

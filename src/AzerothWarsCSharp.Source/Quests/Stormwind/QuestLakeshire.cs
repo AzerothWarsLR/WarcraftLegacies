@@ -49,7 +49,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n011"))));
       AddQuestItem(new QuestItemExpire(1427));
       AddQuestItem(new QuestItemSelfExists());
-      
+      ;;
     }
 
 

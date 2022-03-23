@@ -80,7 +80,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       AddQuestItem(new QuestItemSelfExists());
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.NazjatarHidden.Rect, "Nazjatar"));
       ResearchId = QUEST_RESEARCH_ID;
-      
+      ;;
     }
 
 

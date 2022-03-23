@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       this.AddQuestItem(new QuestItemAnyUnitInRect(Regions.QuelDanilLodge, "QuelFourCC("danil Lodge".Rect, true"));
       AddQuestItem(new QuestItemTime(1200));
       ResearchId = QUEST_RESEARCH_ID;
-      
+      ;;
     }
 
 

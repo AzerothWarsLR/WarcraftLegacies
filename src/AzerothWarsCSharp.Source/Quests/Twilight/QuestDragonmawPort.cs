@@ -48,7 +48,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08T"))));
       AddQuestItem(new QuestItemExpire(1227));
       AddQuestItem(new QuestItemSelfExists());
-      
+      ;;
     }
 
 

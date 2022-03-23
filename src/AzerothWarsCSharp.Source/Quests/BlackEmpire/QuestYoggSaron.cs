@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00I"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02S"))));
       base.ResearchId = ResearchId;
-      
+      ;;
     }
 
 

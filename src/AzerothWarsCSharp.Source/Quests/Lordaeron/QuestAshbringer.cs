@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_GREATFORGE));
       AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_LIVINGSHADOW, Regions.AshbringerForge.Rect, "The Great Forge"));
       AddQuestItem(new QuestItemChannelRect(Regions.AshbringerForge, "The Great Forge", LEGEND_UTHER, 60.Rect, 340));
-      
+      ;;
     }
 
 

@@ -111,7 +111,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_EXODARSHIP));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = QuestResearchId;
-      
+      ;;
     }
 
 

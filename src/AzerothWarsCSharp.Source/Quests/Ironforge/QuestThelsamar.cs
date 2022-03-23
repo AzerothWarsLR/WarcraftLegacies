@@ -45,7 +45,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       AddQuestItem(QuestItemKillUnit.create(gg_unit_N089_1494)) ;//Murloc
       AddQuestItem(new QuestItemExpire(1435));
       AddQuestItem(new QuestItemSelfExists());
-      
+      ;;
     }
 
 

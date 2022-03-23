@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       AddQuestItem(new QuestItemTime(1000));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = RESEARCH_ID;
-      
+      ;;
     }
 
 

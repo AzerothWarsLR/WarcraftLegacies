@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       thistype this = thistype.allocate("Join the Crusade", "Daelin Proudmoore sees the plight of the Scarlet Crusade. As fellow human survivors of horrible war, they should join forces with KulFourCC("tiras.", "ReplaceableTextures\\CommandButtons\\BTNDivine_Reckoning_Icon.blp"");
       AddQuestItem(new QuestItemCastSpell(FourCC("A0JB"), true));
       ResearchId = QUEST_RESEARCH_ID;
-      
+      ;;
     }
 
 

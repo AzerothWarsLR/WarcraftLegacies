@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       AddQuestItem(new QuestItemExpire(1428));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = QUEST_RESEARCH_ID;
-      
+      ;;
     }
 
 

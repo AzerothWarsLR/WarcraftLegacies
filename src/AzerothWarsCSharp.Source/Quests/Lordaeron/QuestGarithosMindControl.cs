@@ -53,7 +53,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     public  thistype ( ){
       thistype this = thistype.allocate("GarithosFourCC(" Mind-Control", "Garithos has always had a distrust of other races, he might be tempted to join the Scarlet MindControl.", "ReplaceableTextures\\CommandButtons\\BTNGarithos.blp"");
       this.AddQuestItem(new QuestItemResearch(FourCC("R08F"), )hbla)));
-      
+      ;;
     }
 
 

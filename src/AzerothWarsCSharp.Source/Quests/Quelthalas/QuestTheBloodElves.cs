@@ -95,7 +95,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       AddQuestItem(new QuestItemControlLegend(LEGEND_DRAKTHARONKEEP, false));
       AddQuestItem(new QuestItemControlLegend(LEGEND_ANASTERIAN, true));
       AddQuestItem(new QuestItemControlLegend(LEGEND_SUNWELL, true));
-      
+      ;;
     }
 
 

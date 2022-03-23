@@ -70,7 +70,7 @@ namespace AzerothWarsCSharp.Source.Spells.Quel_thalas
       _lightning = AddLightning("DRAB", true, GetUnitX(this.caster), GetUnitY(this.caster), GetUnitX(this._target), GetUnitY(this._target));
       this.effect = AddSpecialEffectTarget("Abilities\\Spells\\Other\\Drain\\DrainTarget.mdl", this._target, "chest");
       startPeriodic();
-      
+      ;;
     }
 
 
@@ -129,7 +129,7 @@ namespace AzerothWarsCSharp.Source.Spells.Quel_thalas
       DestroyGroup(tempGroup);
       tempGroup = null;
       startPeriodic();
-      
+      ;;
     }
 
 

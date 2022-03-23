@@ -38,7 +38,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Fel_Horde
       this._spawnUnitType = spawnUnitType;
       this._count = count;
       ByUnitType[_unitType] = this;
-      
+      ;;
     }
 
     private static void OnInit( ){
@@ -194,7 +194,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Fel_Horde
       startPeriodic();
       UnitAddAbility(u, TOGGLE_ABILITY);
       IssueImmediateOrder(u, "immolation");
-      
+      ;;
     }
 
     private static void OnUnitUpgraded( ){

@@ -53,7 +53,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       AddQuestItem(new QuestItemObelisk(ControlPoint.GetFromUnitType(FourCC("n04V"))));
       AddQuestItem(new QuestItemObelisk(ControlPoint.GetFromUnitType(FourCC("n0BD"))));
       AddQuestItem(new QuestItemExpire(1800));
-      
+      ;;
     }
 
 

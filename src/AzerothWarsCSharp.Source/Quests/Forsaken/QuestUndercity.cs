@@ -54,7 +54,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       AddQuestItem(new QuestItemLegendDead(LEGEND_CAPITALPALACE));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = QUEST_RESEARCH_ID;
-      
+      ;;
     }
 
 

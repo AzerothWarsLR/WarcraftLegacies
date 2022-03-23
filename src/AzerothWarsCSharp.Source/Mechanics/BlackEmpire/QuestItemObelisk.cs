@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
       this._target = target;
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
-      
+      ;;
     }
 
     static void OnAnyBlackEmpireObeliskSummoned( ){

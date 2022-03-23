@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       this.AddQuestItem(new QuestItemUpgrade(FourCC("hcas"), )htow)));
       AddQuestItem(new QuestItemExpire(1470));
       AddQuestItem(new QuestItemSelfExists());
-      
+      ;;
     }
 
 

@@ -48,7 +48,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       AddQuestItem(new QuestItemLegendInRect(LEGEND_VARIAN, Regions.NethergardeUnlock.Rect, "Nethergarde"));
       AddQuestItem(new QuestItemExpire(1440));
       AddQuestItem(new QuestItemSelfExists());
-      
+      ;;
     }
 
 

@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       AddQuestItem(new QuestItemTime(720));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02O"))));
       ResearchId = QuestResearchId;
-      
+      ;;
     }
 
 

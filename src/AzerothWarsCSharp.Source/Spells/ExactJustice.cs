@@ -162,7 +162,7 @@ namespace AzerothWarsCSharp.Source.Spells
 
       this.startPeriodic();
 
-      
+      ;;
     }
 
 

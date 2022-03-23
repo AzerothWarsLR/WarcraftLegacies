@@ -52,7 +52,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       thistype this = thistype.allocate("The City of Invention", "The people of Gnomeregan have long been unable to assist the Alliance in its wars due an infestation of troggs && Ice Trolls. Resolve their conflicts for them to gain their services.", "ReplaceableTextures\\CommandButtons\\BTNFlyingMachine.blp");
       AddQuestItem(QuestItemKillUnit.create(gg_unit_nitw_1513)) ;//Ice Troll Warlord
       AddQuestItem(new QuestItemSelfExists());
-      
+      ;;
     }
 
 

@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_XALATATH, Regions.TyrsFall.Rect, "TyrFourCC("s Fall""));
       AddQuestItem(new QuestItemChannelRect(Regions.TyrsFall, "The Tomb of Tyr", LEGEND_VOLAZJ, 120.Rect, 170));
       ResearchId = QuestResearchId;
-      
+      ;;
     }
 
 

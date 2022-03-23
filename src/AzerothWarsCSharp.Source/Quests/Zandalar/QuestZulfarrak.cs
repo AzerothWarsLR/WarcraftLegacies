@@ -49,7 +49,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
     public  thistype ( ){
       thistype this = thistype.allocate("Fury of the Sands", "The Sandfury Trolls of ZulFourCC("farrak are openly hostile to visitors, but they share a common heritage with the Zandalari Trolls. An adequate display of force could bring them around.", "ReplaceableTextures\\CommandButtons\\BTNDarkTroll.blp"");
       AddQuestItem(new QuestItemControlLegend(LEGEND_ZULFARRAK, false));
-      
+      ;;
     }
 
 

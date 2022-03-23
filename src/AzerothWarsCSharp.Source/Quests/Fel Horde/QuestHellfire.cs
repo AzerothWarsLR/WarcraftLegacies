@@ -62,7 +62,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       this.AddQuestItem(new QuestItemUpgrade(FourCC("o030"), )o02Y)));
       AddQuestItem(new QuestItemExpire(1450));
       AddQuestItem(QuestItemSelfExists);
-      
+      ;;
     }
 
 
