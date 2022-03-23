@@ -50,7 +50,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       AddQuestItem(new QuestItemControlLegend(LEGEND_DAZARALOR, true));
       AddQuestItem(new QuestItemLegendDead(LEGEND_BORALUS));
       ResearchId = QUEST_RESEARCH_ID;
-      ;;
+      
     }
 
 

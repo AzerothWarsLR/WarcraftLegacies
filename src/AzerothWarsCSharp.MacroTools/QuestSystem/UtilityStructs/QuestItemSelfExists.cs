@@ -35,7 +35,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
       this.Progress = QUEST_PROGRESS_COMPLETE;
-      ;;
+      
     }
 
     public static void Setup( ){

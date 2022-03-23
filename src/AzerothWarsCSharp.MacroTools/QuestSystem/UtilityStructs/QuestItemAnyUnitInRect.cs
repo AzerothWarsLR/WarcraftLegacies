@@ -106,7 +106,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       TriggerRegisterLeaveRegion(thistype.exitsRectTrig, target, null);
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
-      ;;
+      
     }
 
     private static void onInit( ){

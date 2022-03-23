@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 
       this.AddQuestItem(new QuestItemTrain(FourCC("o04W"),)o049), 5));
       ResearchId = QUEST_RESEARCH_ID;
-      ;;
+      
     }
 
 

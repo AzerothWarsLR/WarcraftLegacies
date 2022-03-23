@@ -38,7 +38,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
   internal AddQuestItem(
 
   internal new QuestItemLegendDead(LEGEND_STORMWINDKEEP));
-    ;;
+    
   }
 }
 

@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       thistype.count = thistype.count + 1;
       this.targetKillXUnitCount = targetKillXUnitCount;
       this.CurrentKillXUnitCount = 0;
-      ;;
+      
     }
 
     private static void OnAnyKillXUnit( ){

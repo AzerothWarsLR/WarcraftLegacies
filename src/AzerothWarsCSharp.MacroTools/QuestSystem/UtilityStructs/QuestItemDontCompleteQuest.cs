@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       this.Description = "Do !complete the quest " + target.Title;
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
-      ;;
+      
     }
 
 

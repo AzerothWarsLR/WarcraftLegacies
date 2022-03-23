@@ -53,7 +53,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     public  QuestGarithosCrusade ( ){
       thistype this = thistype.allocate("GarithosFourCC(" Crusade", "Garithos has always had a distrust of other races, he might be tempted to join the Scarlet Crusade.", "ReplaceableTextures\\CommandButtons\\BTNGarithos.blp"");
       this.AddQuestItem(new QuestItemResearch(FourCC("R08E"), )hbla)));
-      ;;
+      
     }
 
 

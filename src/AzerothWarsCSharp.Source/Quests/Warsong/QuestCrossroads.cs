@@ -65,7 +65,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
   internal AddQuestItem(
 
   internal new QuestItemSelfExists());
-    ;;
+    
   }
 }
 

@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
   internal AddQuestItem(
 
   internal new QuestItemControlLegend(LEGEND_MAIEV, true));
-    ;;
+    
   }
 }
 

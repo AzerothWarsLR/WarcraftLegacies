@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08Q"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n09K"))));
       ResearchId = QUEST_RESEARCH_ID;
-      ;;
+      
     }
 
 

@@ -62,7 +62,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
     public  QuestWarsongHold ( ){
       thistype this = thistype.allocate("Warsong Hold", "The far-off land of Northrend is the new home of the traitor shaman NerFourCC("zhul. The Warsong must land its forces on its shores in order to end the existential threat he now represents.", "ReplaceableTextures\\CommandButtons\\BTNTuskaarBrown.blp"");
       AddQuestItem(new QuestItemResearch(ResearchId, FourCC("o02T")));
-      ;;
+      
     }
 
 

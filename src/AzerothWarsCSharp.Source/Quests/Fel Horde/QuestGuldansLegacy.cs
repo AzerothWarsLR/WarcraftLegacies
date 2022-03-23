@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
   this.
   internal AddQuestItem(
   internal new QuestItemAnyUnitInRect(Regions.Guldan, "GulFourCC("dan")s corpse in the Tomb of Sargeras".Rect, true));
-  ;;
+  
   }
 }
 

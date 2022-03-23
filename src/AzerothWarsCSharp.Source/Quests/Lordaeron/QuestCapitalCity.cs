@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       AddQuestItem(new QuestItemExpire(1472));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = RESEARCH_ID;
-      ;;
+      
     }
 
 

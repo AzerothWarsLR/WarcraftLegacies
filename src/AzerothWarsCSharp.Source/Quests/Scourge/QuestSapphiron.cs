@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       thistype this = thistype.allocate("Sapphiron", "Kill Sapphiron the Blue Dragon to have KelFourCC("Tuzad reanimate her as a Frost Wyrm. Sapphiron can be found in Northrend.", "ReplaceableTextures\\CommandButtons\\BTNFrostWyrm.blp"");
       AddQuestItem(new QuestItemKillUnit(gg_unit_ubdr_0668));
       AddQuestItem(new QuestItemControlLegend(LEGEND_KELTHUZAD, false));
-      ;;
+      
     }
 
 

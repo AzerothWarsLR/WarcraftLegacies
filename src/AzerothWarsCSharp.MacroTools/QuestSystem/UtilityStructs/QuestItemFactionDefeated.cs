@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       thistype.count = thistype.count + 1;
       target = whichFaction;
       this.Description = whichFaction.Name + " has been defeated";
-      ;;
+      
     }
 
 

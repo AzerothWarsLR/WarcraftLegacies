@@ -57,7 +57,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       TriggerRegisterEnterRegion(thistype.entersRectTrig, target, null);
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
-      ;;
+      
     }
 
     private static void onInit( ){

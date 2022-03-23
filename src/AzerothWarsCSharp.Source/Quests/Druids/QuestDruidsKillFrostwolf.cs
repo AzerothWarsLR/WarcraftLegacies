@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
   internal AddQuestItem(
 
   internal new QuestItemLegendDead(LEGEND_THUNDERBLUFF));
-    ;;
+    
   }
 }
 

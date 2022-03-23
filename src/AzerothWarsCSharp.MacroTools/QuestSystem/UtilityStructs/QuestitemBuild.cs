@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       thistype.count = thistype.count + 1;
       this.targetBuildCount = targetBuildCount;
       this.CurrentBuildCount = 0;
-      ;;
+      
     }
 
     private static void OnAnyBuild( ){

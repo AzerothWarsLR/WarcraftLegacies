@@ -1,3 +1,5 @@
+using System;
+
 namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
 {
   public class Herald{
@@ -12,9 +14,9 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
     private static thistype _instance = 0 ;//There can only be one Herald.
     private BlackEmpirePortal _linkedPortal ;//Each Herald keeps a BlackEmpirePortal active, but only while alive.
 
-    public static thistype operator Instance( ){
-      ;type.instance;
-    }
+    public unit Unit;
+    
+    public static Herald Instance => throw new NotImplementedException();
 
     private void UnlinkToPortal( ){
       if (_linkedPortal.PortalState == BLACKEMPIREPORTALSTATE_EXITONLY){

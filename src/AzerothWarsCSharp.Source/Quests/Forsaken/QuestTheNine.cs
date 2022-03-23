@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n03U"))));
       AddQuestItem(new QuestItemLegendDead(LEGEND_LICHKING));
       AddQuestItem(new QuestItemSelfExists());
-      ;;
+      
     }
 
 

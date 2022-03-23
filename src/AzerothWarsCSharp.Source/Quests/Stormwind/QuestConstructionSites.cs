@@ -31,7 +31,7 @@
     public  thistype ( ){
 
       this.AddQuestItem(new QuestItemTime(360));
-      ;;
+      
     }
 
 

@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       this.level = level;
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
-      ;;
+      
     }
 
     private void OnLevel( ){

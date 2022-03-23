@@ -45,7 +45,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
   this.
   internal AddQuestItem(
   internal new QuestItemResearch(FourCC("R021"), )o01I)));
-  ;;
+  
   }
 }
 

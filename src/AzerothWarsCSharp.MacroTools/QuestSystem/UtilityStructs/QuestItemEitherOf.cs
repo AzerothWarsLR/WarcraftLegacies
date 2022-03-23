@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       this.Description = questItemA.Description + " || " + questItemB.Description;
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
-      ;;
+      
     }
 
     void OnAdd( ){

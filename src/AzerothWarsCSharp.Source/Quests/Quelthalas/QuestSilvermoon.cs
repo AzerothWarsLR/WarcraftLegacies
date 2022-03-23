@@ -64,7 +64,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       this.AddQuestItem(new QuestItemUpgrade(FourCC("h03T"), )h033)));
       AddQuestItem(new QuestItemExpire(1480));
       AddQuestItem(new QuestItemSelfExists());
-      ;;
+      
     }
 
 

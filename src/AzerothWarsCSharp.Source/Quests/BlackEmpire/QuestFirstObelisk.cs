@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       {
         UnitRescue(unit, Holder.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
-      RemoveUnit(Herald.Instance.unit);
+      RemoveUnit(Herald.Instance.Unit);
       BlackEmpirePortal.GoToNext();
     }
 
@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
         SetUnitInvulnerable(unit, true);
         _rescueUnits.Add(unit);
       }
-      AddQuestItem(new QuestItemObelisk(ControlPoint.GetFromUnitType(FourCC(""n02S""))));
+      AddQuestItem(new QuestItemObelisk(ControlPoint.GetFromUnitType(FourCC("n02S"))));
     }
   }
 }

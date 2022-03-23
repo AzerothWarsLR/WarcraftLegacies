@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
       this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02R"))));
       this.AddQuestItem(new QuestItemControlLegend(LEGEND_DRAKTHARONKEEP, false));
-      ;;
+      
     }
 
 

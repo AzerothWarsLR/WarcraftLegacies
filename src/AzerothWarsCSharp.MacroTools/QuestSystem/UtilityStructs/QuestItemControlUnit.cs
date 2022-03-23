@@ -35,7 +35,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       this.target = target;
       this.targetWidget = target;
       thistype.byHandleId[GetHandleId(target)] = this;
-      ;;
+      
     }
 
 

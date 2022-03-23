@@ -105,7 +105,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
 
     FogModifierStart(CreateFogModifierRadius(Player(14), FOG_OF_WAR_VISIBLE, GetUnitX(exteriorWaygate), GetUnitY(exteriorWaygate), 700, true, true));
       this.PortalState = BLACKEMPIREPORTALSTATE_CLOSED;
-    ;;
+    
   }
 }
 

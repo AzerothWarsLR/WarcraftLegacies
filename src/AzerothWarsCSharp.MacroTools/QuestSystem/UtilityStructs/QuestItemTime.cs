@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       thistype.byTimer[GetHandleId(timer)] = this;
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
-      ;;
+      
     }
 
     private static void onInit( ){

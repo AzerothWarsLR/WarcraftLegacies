@@ -71,7 +71,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       }
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
-      ;;
+      
     }
 
     private static void onInit( ){

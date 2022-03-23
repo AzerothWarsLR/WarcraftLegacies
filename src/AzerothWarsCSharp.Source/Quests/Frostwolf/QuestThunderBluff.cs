@@ -50,7 +50,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
   internal new QuestItemSelfExists());
     this.ResearchId = QUEST_RESEARCH_ID;
-  ;;
+  
   }
 
 

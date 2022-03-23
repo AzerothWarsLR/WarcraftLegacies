@@ -42,7 +42,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       thistype this = thistype.allocate("The Dread Citadel", "This fallen necropolis can be transformed into a potent war machine by the Lich KelFourCC("tuzad", "ReplaceableTextures\\CommandButtons\\BTNBlackCitadel.blp"");
       QuestItemChannelRect questItemChannelRect = AddQuestItem(new QuestItemChannelRect(Regions.NaxUnlock, "Naxxramas", LEGEND_KELTHUZAD, 60.Rect, 270));
       questItemChannelRect.RequiredUnitTypeId = UNITTYPE_KELTHUZAD_LICH;
-      ;;
+      
     }
 
 

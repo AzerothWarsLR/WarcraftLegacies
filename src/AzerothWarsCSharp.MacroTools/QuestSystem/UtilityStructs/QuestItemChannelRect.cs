@@ -100,7 +100,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       }
 
       this.startPeriodic();
-      ;;
+      
     }
 
 
@@ -174,7 +174,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       this.MapEffectPath = TARGET_EFFECT;
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
-      ;;
+      
     }
 
     private static void onInit( ){

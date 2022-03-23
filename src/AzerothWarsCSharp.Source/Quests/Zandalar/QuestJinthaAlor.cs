@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
   internal AddQuestItem(
 
   internal new QuestItemControlLegend(LEGEND_JINTHAALOR, false));
-    ;;
+    
   }
 }
 

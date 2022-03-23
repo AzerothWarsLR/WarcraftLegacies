@@ -44,7 +44,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Frostwolf
 
 
     this.buildAbility = buildAbility;
-    ;;
+    
   }
 }
 

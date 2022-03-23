@@ -42,7 +42,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
   internal AddQuestItem(
   internal new QuestItemSelfExists());
   ResearchId = QuestResearchId;
-  ;;
+  
   }
 }
 
