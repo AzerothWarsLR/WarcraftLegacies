@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Ironforge
 {
-  public class QuestGnomeregan{
+  public sealed class QuestGnomeregan : QuestData{
 
   
     private const int QUEST_RESEARCH_ID = FourCC("R05Q");
@@ -54,7 +55,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
     public  thistype ( ){
       thistype this = thistype.allocate("The City of Invention", "The people of Gnomeregan have long been unable to assist the Alliance in its wars due an infestation of troggs && Ice Trolls. Resolve their conflicts for them to gain their services.", "ReplaceableTextures\\CommandButtons\\BTNFlyingMachine.blp");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_nitw_1513)) ;//Ice Troll Warlord
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

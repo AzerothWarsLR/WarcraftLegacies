@@ -3,12 +3,13 @@
 
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {
-  public class QuestTheBloodElves{
+  public sealed class QuestTheBloodElves : QuestData{
 
   
     private const int QUEST_RESEARCH_ID = FourCC("R04Q");
@@ -95,9 +96,9 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Blood Elves", "The Elves of QuelFourCC("thalas have a deep reliance on the Sunwell")s magic. Without it, they would have to turn to darker magicks to sate themselves.", "ReplaceableTextures\\CommandButtons\\BTNHeroBloodElfPrince.blp");
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_DRAKTHARONKEEP, false));
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_ANASTERIAN, true));
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_SUNWELL, true));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_DRAKTHARONKEEP, false));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_ANASTERIAN, true));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_SUNWELL, true));
       ;;
     }
 

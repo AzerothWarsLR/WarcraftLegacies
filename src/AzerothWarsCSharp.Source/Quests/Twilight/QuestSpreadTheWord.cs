@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Twilight
 {
-  public class QuestSpreadTheWord{
+  public sealed class QuestSpreadTheWord : QuestData{
 
   
     private const int QUEST_RESEARCH_ID = FourCC("R05F")   ;//This research is given when the quest is completed
@@ -26,8 +27,8 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
 
     public  thistype ( ){
       thistype this = thistype.allocate("Spread the Whispers of the Old God", "The world shall hear the whispers of the Old God. Spread the visions of the end", "ReplaceableTextures\\CommandButtons\\BTNOldGodWhispers.blp");
-      this.AddQuestItem(QuestItemBuild.create(FourCC("o03C"), 1));
-      this.AddQuestItem(QuestItemTrain.create(FourCC("obot"),)o03I), 3));
+      this.AddQuestItem(new QuestItemBuild(FourCC("o03C"), 1));
+      this.AddQuestItem(new QuestItemTrain(FourCC("obot"),)o03I), 3));
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

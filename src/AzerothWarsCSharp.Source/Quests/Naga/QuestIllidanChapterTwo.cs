@@ -5,7 +5,7 @@ using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Naga
 {
-  public class QuestIllidanChapterTwo{
+  public sealed class QuestIllidanChapterTwo : QuestData{
 
 
 
@@ -26,9 +26,9 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     public  thistype (QuestData questToDiscover ){
       thistype this = thistype.allocate("Chapter Two: The Skull of GulFourCC("dan", "The mages of Dalaran are hiding a powerful artifact that will grant Illidan unlimited power: the Skull of Gul")dan.", "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp");
-      this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_ILLIDAN, gg_rct_IllidanBoat1, "the escape boat"));
-      this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_ILLIDAN, gg_rct_SkullOfGuldan, "the dungeons of Dalaran"));
-      this.AddQuestItem(QuestItemLegendHasArtifact.create(LEGEND_ILLIDAN, ARTIFACT_SKULLOFGULDAN));
+      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, gg_rct_IllidanBoat1, "the escape boat"));
+      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, gg_rct_SkullOfGuldan, "the dungeons of Dalaran"));
+      this.AddQuestItem(new QuestItemLegendHasArtifact(LEGEND_ILLIDAN, ARTIFACT_SKULLOFGULDAN));
       this.questToDiscover = questToDiscover;
 
       ;;

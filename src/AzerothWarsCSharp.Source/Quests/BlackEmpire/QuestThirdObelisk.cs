@@ -5,7 +5,7 @@ using AzerothWarsCSharp.Source.Mechanics.BlackEmpire;
 
 namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 {
-  public class QuestThirdObelisk : QuestData{
+  public sealed class QuestThirdObelisk : QuestData : QuestData{
 
   
     private const int QUEST_RESEARCH_ID = FourCC("R07K")   ;//This research is given when the quest is completed
@@ -53,10 +53,10 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 
     public  thistype ( ){
       thistype this = thistype.allocate("Merging of Realities", "Reality frays at the seams as madness threatents to overtake it. Once an Obelisk has been established in the Twilight Highlands, the mirror worlds of Azeroth && NyFourCC("alotha will finally be one, && the Black Empire will be unleashed.", "ReplaceableTextures\\CommandButtons\\BTNHorrorSoul.blp"");
-      this.AddQuestItem(QuestItemObelisk.create(ControlPoint.GetFromUnitType(FourCC("n02S"))));
-      this.AddQuestItem(QuestItemObelisk.create(ControlPoint.GetFromUnitType(FourCC("n04V"))));
-      this.AddQuestItem(QuestItemObelisk.create(ControlPoint.GetFromUnitType(FourCC("n0BD"))));
-      this.AddQuestItem(QuestItemExpire.create(1800));
+      this.AddQuestItem(new QuestItemObelisk(ControlPoint.GetFromUnitType(FourCC("n02S"))));
+      this.AddQuestItem(new QuestItemObelisk(ControlPoint.GetFromUnitType(FourCC("n04V"))));
+      this.AddQuestItem(new QuestItemObelisk(ControlPoint.GetFromUnitType(FourCC("n0BD"))));
+      this.AddQuestItem(new QuestItemExpire(1800));
       ;;
     }
 

@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Draenei
 {
-  public class QuestShipArgus{
+  public sealed class QuestShipArgus : QuestData{
 
 
 
@@ -29,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
 
     public  thistype ( ){
       thistype this = thistype.allocate("Reconquering Tempest Keep", "Tempest Keep still has the power to open a portal Argus, but Velen needs to channel it", "ReplaceableTextures\\CommandButtons\\BTNArcaneCastle.blp");
-      this.AddQuestItem(QuestItemChannelRect.create(gg_rct_TempestKeepSpawn, "Tempest Keep", LEGEND_VELEN, 180, 0));
+      this.AddQuestItem(new QuestItemChannelRect(gg_rct_TempestKeepSpawn, "Tempest Keep", LEGEND_VELEN, 180, 0));
       ;;
     }
 

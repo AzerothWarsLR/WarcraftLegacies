@@ -6,7 +6,7 @@ using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 {
-  public class QuestYoggSaron : QuestData{
+  public sealed class QuestYoggSaron : QuestData : QuestData{
 
   
     private const int RESEARCH_ID = FourCC("R07R");
@@ -27,9 +27,9 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 
     public  thistype ( ){
       thistype this = thistype.allocate("Fiend of a Thousand Faces", "Yogg-Saron was imprisoned beneath Northrend by the Titans countless millenia ago. ", "ReplaceableTextures\\CommandButtons\\BTNYogg-saronIcon.blp");
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n053"))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n00I"))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n02S"))));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n053"))));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00I"))));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02S"))));
       this.ResearchId = RESEARCH_ID;
       ;;
     }

@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {
-  public class QuestSummonKil{
+  public sealed class QuestSummonKil : QuestData{
 
   
     private const int RITUAL_ID = FourCC("A0R7");
@@ -28,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Great Deceiver", "The greater demon KilFourCC("jaeden has been scheming for aeons. Will Kael finally be the one to summon him && consume Azeroth?", "ReplaceableTextures\\CommandButtons\\BTNKiljaedin.blp"");
-      this.AddQuestItem(QuestItemChannelRect.create(gg_rct_KaelSunwellChannel, "The Sunwell", LEGEND_KAEL, 180, 270));
+      this.AddQuestItem(new QuestItemChannelRect(gg_rct_KaelSunwellChannel, "The Sunwell", LEGEND_KAEL, 180, 270));
       ;;
     }
 

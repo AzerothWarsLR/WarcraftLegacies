@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.KulTiras
 {
-  public class QuestTheramore{
+  public sealed class QuestTheramore : QuestData{
 
   
     private const int RESEARCH_ID = FourCC("R06K");
@@ -50,8 +51,8 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 
     public  thistype ( ){
       thistype this = thistype.allocate("Theramore", "The distant lands of Kalimdor remain untouched by human civilization. If the Third War proceeds poorly, it may become necessary to establish a forward base there.", "ReplaceableTextures\\CommandButtons\\BTNHumanArcaneTower.blp");
-      this.AddQuestItem(QuestItemResearch.create(RESEARCH_ID, FourCC("h076")));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("h076")));
+      this.AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

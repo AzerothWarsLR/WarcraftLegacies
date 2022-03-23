@@ -2,12 +2,13 @@
 //If they instead lose the Sunwell, they lose everything. If that doesn)t defeat them, they get GARITHOS)thalas, Lorthemar, and some free units at Dalaran Dungeons.
 
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {
-  public class QuestGarithosMindControl{
+  public sealed class QuestGarithosMindControl : QuestData{
 
 
 
@@ -55,7 +56,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     public  thistype ( ){
       thistype this = thistype.allocate("GarithosFourCC(" Mind-Control", "Garithos has always had a distrust of other races, he might be tempted to join the Scarlet MindControl.", "ReplaceableTextures\\CommandButtons\\BTNGarithos.blp"");
-      this.AddQuestItem(QuestItemResearch.create(FourCC("R08F"), )hbla)));
+      this.AddQuestItem(new QuestItemResearch(FourCC("R08F"), )hbla)));
       ;;
     }
 

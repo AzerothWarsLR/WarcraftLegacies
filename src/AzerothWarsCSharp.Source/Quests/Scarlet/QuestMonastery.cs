@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Scarlet
 {
-  public class QuestMonastery{
+  public sealed class QuestMonastery : QuestData{
 
   
     private const int RESEARCH_ID = FourCC("R03P")         ;//This research is required to complete the quest
@@ -49,8 +50,8 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Secret Cloister", "The Scarlet Monastery is the perfect place for the secret base of the Scarlet Crusade.", "ReplaceableTextures\\CommandButtons\\BTNDivine_Reckoning_Icon.blp");
-      this.AddQuestItem(QuestItemResearch.create(RESEARCH_ID, FourCC("h00T")));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("h00T")));
+      this.AddQuestItem(new QuestItemSelfExists());
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

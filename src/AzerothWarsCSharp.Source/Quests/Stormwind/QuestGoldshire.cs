@@ -1,11 +1,12 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Stormwind
 {
-  public class QuestGoldshire{
+  public sealed class QuestGoldshire : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -47,9 +48,9 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     public  thistype ( ){
       thistype this = thistype.allocate("The Scourge of Elwynn", "Hogger && his pack have taken over Goldshire, clear them out!", "ReplaceableTextures\\CommandButtons\\BTNGnoll.blp");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_n021_2624)) ;//Hogger
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n00Z"))));
-      this.AddQuestItem(QuestItemExpire.create(1335));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00Z"))));
+      this.AddQuestItem(new QuestItemExpire(1335));
+      this.AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

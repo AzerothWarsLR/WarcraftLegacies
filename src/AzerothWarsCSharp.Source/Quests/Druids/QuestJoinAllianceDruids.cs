@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Druids
 {
-  public class QuestJoinAllianceDruid{
+  public sealed class QuestJoinAllianceDruid : QuestData{
 
 
 
@@ -22,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 
     public  thistype ( ){
       thistype this = thistype.allocate("Join the Alliance", "With a world ending threat happening, the Alliance has reached to the Night Elves to join them", "ReplaceableTextures\\CommandButtons\\BTNalliance.blp");
-      this.AddQuestItem(QuestItemCastSpell.create(FourCC("A0IG"), true));
+      this.AddQuestItem(new QuestItemCastSpell(FourCC("A0IG"), true));
       ;;
     }
 

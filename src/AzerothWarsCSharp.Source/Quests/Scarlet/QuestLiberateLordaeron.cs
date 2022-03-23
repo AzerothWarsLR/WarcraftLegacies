@@ -1,11 +1,12 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Scarlet
 {
-  public class QuestLiberateLordaeron{
+  public sealed class QuestLiberateLordaeron : QuestData{
 
   
     private const int QUESTRESEARCH_ID = FourCC("R07P")   ;//This research is given when the quest is completed
@@ -55,12 +56,12 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
 
     public  thistype ( ){
       thistype this = thistype.allocate("Liberation of Lordaeron", "The lands of Lordaeron are overrun by corruption. Everything must be purged!", "ReplaceableTextures\\CommandButtons\\BTNNorthrendCastle.blp");
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_BRIGITTE, false));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01F"))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n03P"))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01H"))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01M"))));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_BRIGITTE, false));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01F"))));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n03P"))));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01H"))));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01M"))));
+      this.AddQuestItem(new QuestItemSelfExists());
       this.ResearchId = QUESTRESEARCH_ID;
       ;;
     }

@@ -1,9 +1,10 @@
 
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {
-  public class QuestGreatTreachery{
+  public sealed class QuestGreatTreachery : QuestData{
 
   
     private const int QUEST_RESEARCH_ID = FourCC("R075")   ;//This research is given when the quest is completed
@@ -34,8 +35,8 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Great Treachery", "KilFourCC("jaeden has approached Kael with an offer of power && salvation for his people. Only by accepting will his hunger for magic by satiated.", "ReplaceableTextures\\CommandButtons\\BTNFelKaelthas.blp"");
-      this.AddQuestItem(QuestItemCastSpell.create(FourCC("A0IF"), true));
-      this.AddQuestItem(QuestItemLegendLevel.create(LEGEND_KAEL, 6));
+      this.AddQuestItem(new QuestItemCastSpell(FourCC("A0IF"), true));
+      this.AddQuestItem(new QuestItemLegendLevel(LEGEND_KAEL, 6));
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

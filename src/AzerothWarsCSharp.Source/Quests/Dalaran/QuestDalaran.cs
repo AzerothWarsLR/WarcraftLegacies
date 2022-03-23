@@ -1,11 +1,12 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {
-  public class QuestDalaran{
+  public sealed class QuestDalaran : QuestData{
 
   
     private const int QUEST_RESEARCH_ID = FourCC("R038");
@@ -67,13 +68,13 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     public  thistype ( ){
       thistype this = thistype.allocate("Outskirts", "The territories of Dalaran are fragmented, secure the lands && protect Dalaran citizens .", "ReplaceableTextures\\CommandButtons\\BTNArcaneCastle.blp");
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01D"))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n08M"))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n018"))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01I"))));
-      this.AddQuestItem(QuestItemUpgrade.create(FourCC("h068"), )h065)));
-      this.AddQuestItem(QuestItemExpire.create(1445));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01D"))));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08M"))));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n018"))));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01I"))));
+      this.AddQuestItem(new QuestItemUpgrade(FourCC("h068"), )h065)));
+      this.AddQuestItem(new QuestItemExpire(1445));
+      this.AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

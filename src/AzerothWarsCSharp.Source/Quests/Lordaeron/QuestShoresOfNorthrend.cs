@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {
-  public class QuestShoresOfNorthrend{
+  public sealed class QuestShoresOfNorthrend : QuestData{
 
   
     private const int RESEARCH_ID = FourCC("R06F");
@@ -64,9 +65,9 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     public  thistype ( ){
       thistype this = thistype.allocate("Shores of Northrend", "MalFourCC("ganis") citadel lies somewhere within the arctic wastes of the north. In order to assault the Dreadlord, Arthas must first establish a base camp at the shores of Northrend.", "ReplaceableTextures\\CommandButtons\\BTNHumanTransport.blp");
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_ARTHAS, true));
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_SCHOLOMANCE));
-      this.AddQuestItem(QuestItemResearch.create(RESEARCH_ID, FourCC("hshy")));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_ARTHAS, true));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_SCHOLOMANCE));
+      this.AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("hshy")));
       ;;
     }
 

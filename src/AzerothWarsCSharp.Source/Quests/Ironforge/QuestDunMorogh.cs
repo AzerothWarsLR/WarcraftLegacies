@@ -1,11 +1,12 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Ironforge
 {
-  public class QuestDunMorogh{
+  public sealed class QuestDunMorogh : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -47,9 +48,9 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
     public  thistype ( ){
       thistype this = thistype.allocate("Mountain Village", "A small troll skirmish is attacking Dun Morogh. Push them back!", "ReplaceableTextures\\CommandButtons\\BTNIceTrollShadowPriest.blp");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_nith_1625)) ;//Troll
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n014"))));
-      this.AddQuestItem(QuestItemExpire.create(1435));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n014"))));
+      this.AddQuestItem(new QuestItemExpire(1435));
+      this.AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

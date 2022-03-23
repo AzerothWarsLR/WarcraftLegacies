@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Legion
 {
-  public class QuestSkullOfGuldan{
+  public sealed class QuestSkullOfGuldan : QuestData{
 
 
     private QuestItemAnyUnitInRect questItemAnyUnitInRect;
@@ -29,9 +30,9 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Skull of GulFourCC("dan", "The Skull of the master warlock Gul")dan is protected by the Mages of Dalaran. It rightfully belongs to the Legion.", "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp");
-      questItemAnyUnitInRect = this.AddQuestItem(QuestItemAnyUnitInRect.create(gg_rct_DalaranDungeon, "Dalaran Dungeons", true));
-      this.AddQuestItem(QuestItemEitherOf.create(QuestItemLegendDead.create(LEGEND_ILLIDAN), QuestItemFactionDefeated.create(FACTION_NAGA)));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      questItemAnyUnitInRect = this.AddQuestItem(new QuestItemAnyUnitInRect(gg_rct_DalaranDungeon, "Dalaran Dungeons", true));
+      this.AddQuestItem(new QuestItemEitherOf.create(QuestItemLegendDead.create(LEGEND_ILLIDAN), QuestItemFactionDefeated(FACTION_NAGA)));
+      this.AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

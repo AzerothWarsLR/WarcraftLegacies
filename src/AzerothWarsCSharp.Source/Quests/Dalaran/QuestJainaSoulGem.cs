@@ -1,12 +1,13 @@
 //Jaina goes to Scholomance while Scholomance building is destroyed and retrieves the Soul Gem
 
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {
-  public class QuestJainaSoulGem{
+  public sealed class QuestJainaSoulGem : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -23,8 +24,8 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Soul Gem", "Scholomance is home to a wide variety of profane artifacts. Bring Jaina there to see what might be discovered.", "ReplaceableTextures\\CommandButtons\\BTNSoulGem.blp");
-      this.AddQuestItem(QuestItemLegendInRect.create(LEGEND_JAINA, gg_rct_Jaina_soul_gem, "Scholomance"));
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_SCHOLOMANCE));
+      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_JAINA, gg_rct_Jaina_soul_gem, "Scholomance"));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_SCHOLOMANCE));
       ;;
     }
 

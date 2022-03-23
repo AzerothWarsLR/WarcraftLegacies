@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Forsaken
 {
-  public class QuestRetakeSunwell{
+  public sealed class QuestRetakeSunwell : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -19,8 +20,8 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     public  thistype ( ){
       thistype this = thistype.allocate("Retaking the Sunwell", "Even in undeath, the SunwellFourCC("s energy to the Forsaken banshees. Reclaim it to bolster their vitality", "ReplaceableTextures\\CommandButtons\\BTNGhost.blp"");
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_SUNWELL, false));
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_NATHANOS, false));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_SUNWELL, false));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_NATHANOS, false));
       ;;
     }
 

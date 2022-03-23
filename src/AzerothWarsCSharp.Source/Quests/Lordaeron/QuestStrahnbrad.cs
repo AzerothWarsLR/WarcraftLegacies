@@ -1,11 +1,12 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {
-  public class QuestStrahnbrad{
+  public sealed class QuestStrahnbrad : QuestData{
 
 
 
@@ -27,9 +28,9 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Defense of Strahnbrad", "The Strahnbrad is under attack by some brigands, clear them out", "ReplaceableTextures\\CommandButtons\\BTNFarm.blp");
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01C"))));
-      this.AddQuestItem(QuestItemExpire.create(1170));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01C"))));
+      this.AddQuestItem(new QuestItemExpire(1170));
+      this.AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

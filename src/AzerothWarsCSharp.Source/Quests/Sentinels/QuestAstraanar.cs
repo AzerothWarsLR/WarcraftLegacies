@@ -1,11 +1,12 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Sentinels
 {
-  public class QuestAstranaar{
+  public sealed class QuestAstranaar : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -32,10 +33,10 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
 
     public  thistype ( ){
       thistype this = thistype.allocate("Astranaar Stronghold", "Darkshore is under attack by some Murloc. We should deal with them swiftly and){ make for the Astranaar Outpost. Clearing the Murlocs will also reestablish communication with Darnassus.", "ReplaceableTextures\\CommandButtons\\BTNMurloc.blp");
-      this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_TYRANDE, gg_rct_AstranaarUnlock, "Astranaar Outpost"));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n02U"))));
-      this.AddQuestItem(QuestItemExpire.create(1430));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_TYRANDE, gg_rct_AstranaarUnlock, "Astranaar Outpost"));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02U"))));
+      this.AddQuestItem(new QuestItemExpire(1430));
+      this.AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.KulTiras
 {
-  public class QuestBoralus{
+  public sealed class QuestBoralus : QuestData{
 
   
     private const int QUEST_RESEARCH_ID = FourCC("R00L")   ;//This research is given when the quest is completed
@@ -36,10 +37,10 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 
     public  thistype ( ){
       thistype this = thistype.allocate("The City at Sea", "Proudmoore is stranded at sea. Rejoin Boralus to take control of the city.", "ReplaceableTextures\\CommandButtons\\BTNHumanShipyard.blp");
-      this.AddQuestItem(QuestItemResearch.create(FourCC("R04R"), )h06I)));
-      this.AddQuestItem(QuestItemUpgrade.create(FourCC("h06I"), )h062)));
-      this.AddQuestItem(QuestItemExpire.create(900));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemResearch(FourCC("R04R"), )h06I)));
+      this.AddQuestItem(new QuestItemUpgrade(FourCC("h06I"), )h062)));
+      this.AddQuestItem(new QuestItemExpire(900));
+      this.AddQuestItem(new QuestItemSelfExists());
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

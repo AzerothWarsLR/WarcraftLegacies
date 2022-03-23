@@ -1,10 +1,11 @@
 //Chen Stormstout joins the Warsong when a Warsong unit approaches him.
 
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Warsong
 {
-  public class QuestChenStormstout{
+  public sealed class QuestChenStormstout : QuestData{
     private readonly int _chenResearch = FourCC(""R037"");
     private readonly int _chenId = FourCC(""Nsjs"");
     
@@ -33,8 +34,8 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Wandering Brewmaster", "Rumours tell of a strange white-furred creature from a foreign land. Perhaps it could be convinced to join the Horde.", "ReplaceableTextures\\CommandButtons\\BTNPandarenBrewmaster.blp");
-      this.AddQuestItem(QuestItemAnyUnitInRect.create(gg_rct_Chen, "Chen Stormstout", false));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemAnyUnitInRect(gg_rct_Chen, "Chen Stormstout", false));
+      this.AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {
-  public class QuestTheNexus{
+  public sealed class QuestTheNexus : QuestData{
 
 
 
@@ -59,9 +60,9 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Nexus", "The new Lich King calls for Jaina, tempts her with power. The Nexus needs a master, && Jaina is perfect for it.", "ReplaceableTextures\\CommandButtons\\BTNBlueDragonNexus.blp");
-      this.AddQuestItem(QuestItemChannelRect.create(gg_rct_JainaChannel, "The Nexus", LEGEND_JAINA, 60, 270));
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_JAINA, true));
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_NEXUS, false));
+      this.AddQuestItem(new QuestItemChannelRect(gg_rct_JainaChannel, "The Nexus", LEGEND_JAINA, 60, 270));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_JAINA, true));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_NEXUS, false));
       ;;
     }
 

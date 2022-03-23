@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Zandalar
 {
-  public class QuestZulfarrak{
+  public sealed class QuestZulfarrak : QuestData{
 
   
     private const int GAHZRILLA_RESEARCH = FourCC("R02F");
@@ -51,7 +52,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 
     public  thistype ( ){
       thistype this = thistype.allocate("Fury of the Sands", "The Sandfury Trolls of ZulFourCC("farrak are openly hostile to visitors, but they share a common heritage with the Zandalari Trolls. An adequate display of force could bring them around.", "ReplaceableTextures\\CommandButtons\\BTNDarkTroll.blp"");
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_ZULFARRAK, false));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_ZULFARRAK, false));
       ;;
     }
 

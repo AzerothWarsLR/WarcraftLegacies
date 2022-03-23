@@ -1,11 +1,12 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Druids
 {
-  public class QuestAshenvale{
+  public sealed class QuestAshenvale : QuestData{
 
   
     private const int RESEARCH_ID = FourCC("R06R")   ;//This research is given when the quest is completed
@@ -52,13 +53,13 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Spirits of Ashenvale", "The forest needs healing. Regain control of it to summon itFourCC("s Guardian, the Demigod Cenarius", "ReplaceableTextures\\CommandButtons\\BTNKeeperC.blp"");
-      this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_MALFURION, gg_rct_AshenvaleUnlock, "Ashenvale"));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n07C"))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01Q"))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n08U"))));
-      this.AddQuestItem(QuestItemUpgrade.create(FourCC("etoa"), )etol)));
-      this.AddQuestItem(QuestItemExpire.create(1440));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_MALFURION, gg_rct_AshenvaleUnlock, "Ashenvale"));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n07C"))));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01Q"))));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08U"))));
+      this.AddQuestItem(new QuestItemUpgrade(FourCC("etoa"), )etol)));
+      this.AddQuestItem(new QuestItemExpire(1440));
+      this.AddQuestItem(new QuestItemSelfExists());
       this.ResearchId = RESEARCH_ID;
       ;;
     }

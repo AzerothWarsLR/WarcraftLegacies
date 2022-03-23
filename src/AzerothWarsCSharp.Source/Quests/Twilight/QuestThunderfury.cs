@@ -1,11 +1,12 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Twilight
 {
-  public class QuestThunderfury{
+  public sealed class QuestThunderfury : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -22,8 +23,8 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
 
     public  thistype ( ){
       thistype this = thistype.allocate("Blessed Blade of the Windseeker", "The legendary sword, Thunderfury, has been lost somewhere in the Broken Isles, ChoFourCC("gall has seen it in a vision. It will be a great asto the Old Gods", "ReplaceableTextures\\CommandButtons\\BTNThunderfury2blp"");
-      this.AddQuestItem(QuestItemLegendInRect.create(LEGEND_CHOGALL, gg_rct_Broken_Isles, "The Broken Isles"));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n05Y"))));
+      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_CHOGALL, gg_rct_Broken_Isles, "The Broken Isles"));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n05Y"))));
       ;;
     }
 

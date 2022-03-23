@@ -1,9 +1,10 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Forsaken
 {
-  public class QuestTheNine{
+  public sealed class QuestTheNine : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -21,11 +22,11 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Nine", "Most of the ValFourCC("kyr are still in Northrend, under the influence of the Lich King, they need to join the Forsaken cause", "ReplaceableTextures\\CommandButtons\\BTNPaleValkyr.blp"");
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_SYLVANASV, false));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n02J"))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n03U"))));
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_LICHKING));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_SYLVANASV, false));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02J"))));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n03U"))));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_LICHKING));
+      this.AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

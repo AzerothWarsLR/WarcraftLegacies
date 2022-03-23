@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Legion
 {
-  public class QuestLegionKillLordaeron{
+  public sealed class QuestLegionKillLordaeron : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -22,9 +23,9 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
     public  thistype ( ){
       thistype this = thistype.allocate("Token Resistance", "The Kingdom of Lordaeron must be eliminated to pave the way for the LegionFourCC("s arrival.", "ReplaceableTextures\\CommandButtons\\BTNTichondrius.blp"");
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_CAPITALPALACE));
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_STRATHOLME));
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_TYRSHAND));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_CAPITALPALACE));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_STRATHOLME));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_TYRSHAND));
       ;;
     }
 

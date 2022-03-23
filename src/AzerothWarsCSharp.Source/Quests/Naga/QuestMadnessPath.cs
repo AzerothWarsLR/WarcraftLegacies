@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Naga
 {
-  public class QuestMadnessPath{
+  public sealed class QuestMadnessPath : QuestData{
 
   
     private const int RESEARCH_ID = FourCC("R065")         ;//This research is required to complete the quest
@@ -75,10 +76,10 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     public  thistype ( ){
       thistype this = thistype.allocate("Voices in the Void", "Azshara takes command of the Naga in the name of NFourCC("zoth. Illidan")s reign is no more.", "ReplaceableTextures\\CommandButtons\\BTNGuardianofTheSea.blp");
-      this.AddQuestItem(QuestItemResearch.create(RESEARCH_ID, FourCC("n055")));
-      this.AddQuestItem(QuestItemLegendNotDead.create(LEGEND_ILLIDAN));
-      this.AddQuestItem(QuestItemSelfExists.create());
-      this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_ILLIDAN, gg_rct_NazjatarHidden, "Nazjatar"));
+      this.AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("n055")));
+      this.AddQuestItem(new QuestItemLegendNotDead(LEGEND_ILLIDAN));
+      this.AddQuestItem(new QuestItemSelfExists());
+      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, gg_rct_NazjatarHidden, "Nazjatar"));
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

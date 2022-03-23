@@ -1,11 +1,12 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {
-  public class QuestSilvermoon{
+  public sealed class QuestSilvermoon : QuestData{
 
   
     private const int QUEST_RESEARCH_ID = FourCC("R02U");
@@ -62,11 +63,11 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     public  thistype ( ){
       thistype this = thistype.allocate("The Siege of Silvermoon", "Silvermoon has been besieged by Trolls. Clear them out && destroy their city of ZulFourCC("aman.", "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp"");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_O00O_1933)) ;//Zul)jin
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01V"))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01L"))));
-      this.AddQuestItem(QuestItemUpgrade.create(FourCC("h03T"), )h033)));
-      this.AddQuestItem(QuestItemExpire.create(1480));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01V"))));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01L"))));
+      this.AddQuestItem(new QuestItemUpgrade(FourCC("h03T"), )h033)));
+      this.AddQuestItem(new QuestItemExpire(1480));
+      this.AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

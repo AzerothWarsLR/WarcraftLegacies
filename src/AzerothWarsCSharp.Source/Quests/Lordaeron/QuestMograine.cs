@@ -1,10 +1,11 @@
 //Destroy the Frozen Throne to unlock Mograine.
 
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {
-  public class QuestMograine{
+  public sealed class QuestMograine : QuestData{
 
   
     private const int ALTAR_ID = FourCC("halt");
@@ -26,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Exile", "The Lich King, looming over Northrend from IcecrownFourCC("s peak, is the greatest threat Lordaeron has ever faced. He must be destroyed.", "ReplaceableTextures\\CommandButtons\\BTNAlexandros.blp"");
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_LICHKING));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_LICHKING));
       this.ResearchId = FourCC("R06P");
       ;;
     }

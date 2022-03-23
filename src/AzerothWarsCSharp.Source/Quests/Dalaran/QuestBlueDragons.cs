@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {
-  public class QuestBlueDragons{
+  public sealed class QuestBlueDragons : QuestData{
 
   
     private const int RESEARCH_ID = FourCC("R00U");
@@ -31,7 +32,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Blue Dragonflight", "The Blue Dragons of Northrend are the wardens of magic on Azeroth. They might be convinced to willingly join the mages of Dalaran.", "ReplaceableTextures\\CommandButtons\\BTNAzureDragon.blp");
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_NEXUS, false));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_NEXUS, false));
       ;;
     }
 

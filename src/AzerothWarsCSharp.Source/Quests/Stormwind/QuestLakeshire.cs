@@ -1,11 +1,12 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Stormwind
 {
-  public class QuestLakeshire{
+  public sealed class QuestLakeshire : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -49,9 +50,9 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     public  thistype ( ){
       thistype this = thistype.allocate("Marauding Ogres", "The town of Lakeshire is invaded by Ogres, wipe them out!", "ReplaceableTextures\\CommandButtons\\BTNOgreLord.blp");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_nogl_0621)) ;//Ogre Lord
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n011"))));
-      this.AddQuestItem(QuestItemExpire.create(1427));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n011"))));
+      this.AddQuestItem(new QuestItemExpire(1427));
+      this.AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

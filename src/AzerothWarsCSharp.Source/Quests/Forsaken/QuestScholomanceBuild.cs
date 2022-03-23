@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Forsaken
 {
-  public class QuestScholomanceBuild{
+  public sealed class QuestScholomanceBuild : QuestData{
 
   
     private const int QUEST_RESEARCH_ID = FourCC("R04Z")   ;//This research is given when the quest is completed
@@ -26,11 +27,11 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     public  thistype ( ){
 
-      this.AddQuestItem(QuestItemBuild.create(FourCC("u011"), 2));
-      this.AddQuestItem(QuestItemBuild.create(FourCC("h08C"), 20));
-      this.AddQuestItem(QuestItemBuild.create(FourCC("u014"), 1));
-      this.AddQuestItem(QuestItemBuild.create(FourCC("u01J"), 2));
-      this.AddQuestItem(QuestItemUpgrade.create(FourCC("h08B"), )h089)));
+      this.AddQuestItem(new QuestItemBuild(FourCC("u011"), 2));
+      this.AddQuestItem(new QuestItemBuild(FourCC("h08C"), 20));
+      this.AddQuestItem(new QuestItemBuild(FourCC("u014"), 1));
+      this.AddQuestItem(new QuestItemBuild(FourCC("u01J"), 2));
+      this.AddQuestItem(new QuestItemUpgrade(FourCC("h08B"), )h089)));
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

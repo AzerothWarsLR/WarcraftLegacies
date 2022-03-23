@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Sentinels
 {
-  public class QuestMaievOutland{
+  public sealed class QuestMaievOutland : QuestData{
 
 
 
@@ -24,8 +25,8 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
 
     public  thistype ( ){
       thistype this = thistype.allocate("Driven by Vengeance", "Maiev drive for vengeance leads her to chase Illidan all the way to other worlds.", "ReplaceableTextures\\CommandButtons\\BTNMaievArmor.blp");
-      this.AddQuestItem(QuestItemCastSpell.create(FourCC("A0J5"), true));
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_MAIEV, true));
+      this.AddQuestItem(new QuestItemCastSpell(FourCC("A0J5"), true));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_MAIEV, true));
       ;;
     }
 

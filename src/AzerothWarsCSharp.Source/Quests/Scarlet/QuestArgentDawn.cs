@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Scarlet
 {
-  public class QuestArgentDawn{
+  public sealed class QuestArgentDawn : QuestData{
 
   
     private const int RESEARCH_ID = FourCC("R088")         ;//This research is required to complete the quest
@@ -46,8 +47,8 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Argent Dawn", "The Militia of Lordaeron has been solidified into the Argent Dawn, a strong military force lead by Tirion Fording.", "ReplaceableTextures\\CommandButtons\\BTNResurrection.blp");
-      this.AddQuestItem(QuestItemResearch.create(RESEARCH_ID, FourCC("h00T")));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("h00T")));
+      this.AddQuestItem(new QuestItemSelfExists());
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

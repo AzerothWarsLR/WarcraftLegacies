@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Scourge
 {
-  public class QuestCorruptArthas{
+  public sealed class QuestCorruptArthas : QuestData{
 
   
     private const int HERO_ID = FourCC("Uear");
@@ -38,9 +39,9 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Culling", "When the city of Stratholme, Prince Arthas will abandon his people && join the Scourge as their champion.", "ReplaceableTextures\\CommandButtons\\BTNHeroDeathKnight.blp");
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_STRATHOLME));
-      this.AddQuestItem(QuestItemEitherOf.create(QuestItemLegendDead.create(LEGEND_ARTHAS), QuestItemFactionDefeated.create(FACTION_LORDAERON)));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_STRATHOLME));
+      this.AddQuestItem(new QuestItemEitherOf.create(QuestItemLegendDead.create(LEGEND_ARTHAS), QuestItemFactionDefeated(FACTION_LORDAERON)));
+      this.AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

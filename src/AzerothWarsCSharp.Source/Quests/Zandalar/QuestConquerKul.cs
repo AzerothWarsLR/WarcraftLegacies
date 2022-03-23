@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Zandalar
 {
-  public class QuestConquerKul{
+  public sealed class QuestConquerKul : QuestData{
 
   
     private const int QUEST_RESEARCH_ID = FourCC("R08D")   ;//This research is given when the quest is completed
@@ -50,8 +51,8 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 
     public  thistype ( ){
       thistype this = thistype.allocate("Conquer Boralus", "The KulFourCC("tiran people && their fleet have been a threat to the Zandalari Empire for ages, it is time to put them to rest. ", "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp"");
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_DAZARALOR, true));
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_BORALUS));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_DAZARALOR, true));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_BORALUS));
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

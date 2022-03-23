@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Zandalar
 {
-  public class QuestZulgurub{
+  public sealed class QuestZulgurub : QuestData{
 
   
     private const int ZULGURUB_RESEARCH = FourCC("R02M");
@@ -30,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 
     public  thistype ( ){
       thistype this = thistype.allocate("Heart of Hakkar", "The Gurubashi trolls of ZulFourCC("Gurub follow the sacred Heart of Hakkar, hidden within their shrine. Capture it to gain their loyalty.", "ReplaceableTextures\\CommandButtons\\BTNTrollRavager.blp"");
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_ZULGURUB, false));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_ZULGURUB, false));
       ;;
     }
 

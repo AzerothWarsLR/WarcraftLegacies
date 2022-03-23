@@ -1,11 +1,12 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Stormwind
 {
-  public class QuestDarkshire{
+  public sealed class QuestDarkshire : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -49,9 +50,9 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     public  thistype ( ){
       thistype this = thistype.allocate("Gnoll troubles", "The town of Darkshire is under attack by GnollFourCC("s, clear them out!", "ReplaceableTextures\\CommandButtons\\BTNGnollArcher.blp"");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_ngnv_0586)) ;//Gnoll Overseer
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n00V"))));
-      this.AddQuestItem(QuestItemExpire.create(1425));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00V"))));
+      this.AddQuestItem(new QuestItemExpire(1425));
+      this.AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

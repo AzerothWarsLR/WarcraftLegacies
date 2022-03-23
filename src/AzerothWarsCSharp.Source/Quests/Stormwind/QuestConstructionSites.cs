@@ -30,7 +30,7 @@
 
     public  thistype ( ){
 
-      this.AddQuestItem(QuestItemTime.create(360));
+      this.AddQuestItem(new QuestItemTime(360));
       ;;
     }
 

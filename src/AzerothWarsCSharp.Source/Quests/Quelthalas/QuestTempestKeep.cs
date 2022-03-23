@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {
-  public class QuestTempestKeep{
+  public sealed class QuestTempestKeep : QuestData{
 
   
     private const int QUEST_RESEARCH_ID = FourCC("R073")   ;//This research is given when the quest is completed
@@ -63,8 +64,8 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     public  thistype ( ){
       thistype this = thistype.allocate("In Search of Masters", "The Blood Elves are starved for magic; they need to search for more powerful sources of it. Maybe Outland is the answer to their plight.", "ReplaceableTextures\\CommandButtons\\BTNBloodelvenWarrior.blp");
-      this.AddQuestItem(QuestItemCastSpell.create(FourCC("A0IP"), true));
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_KAEL, true));
+      this.AddQuestItem(new QuestItemCastSpell(FourCC("A0IP"), true));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_KAEL, true));
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

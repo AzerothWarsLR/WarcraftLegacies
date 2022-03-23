@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.KulTiras
 {
-  public class QuestBeyondPortal{
+  public sealed class QuestBeyondPortal : QuestData{
 
  
     private const int QUEST_RESEARCH_ID = FourCC("R085")   ;//This research is given when the quest is completed
@@ -19,10 +20,10 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 
     public  thistype ( ){
       thistype this = thistype.allocate("Beyond the Dark Portal", "The Orc threat from Draenor still looms over all. Eliminate every trace of the Orcs && their bases.", "ReplaceableTextures\\CommandButtons\\BTNDarkPortal.blp");
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_BLACKTEMPLE, false));
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_HELLFIRECITADEL));
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_BLACKROCKSPIRE));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_BLACKTEMPLE, false));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_HELLFIRECITADEL));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_BLACKROCKSPIRE));
+      this.AddQuestItem(new QuestItemSelfExists());
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

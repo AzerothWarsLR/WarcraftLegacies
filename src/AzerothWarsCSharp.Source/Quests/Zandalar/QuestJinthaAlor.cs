@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Zandalar
 {
-  public class QuestJinthaAlor{
+  public sealed class QuestJinthaAlor : QuestData{
 
   
     private const int JINTHAALOR_RESEARCH = FourCC("R02N");
@@ -30,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Ancient Egg", "The Vilebranch trolls of JinthaFourCC("Alor are controlled by their fear of the Soulflayer")s egg, hidden within their shrine. Smash it to gain their loyalty.", "ReplaceableTextures\\CommandButtons\\BTNForestTrollShadowPriest.blp");
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_JINTHAALOR, false));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_JINTHAALOR, false));
       ;;
     }
 

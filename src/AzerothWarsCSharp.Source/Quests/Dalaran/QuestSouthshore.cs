@@ -1,11 +1,12 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {
-  public class QuestSouthshore{
+  public sealed class QuestSouthshore : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -47,9 +48,9 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     public  thistype ( ){
       thistype this = thistype.allocate("Murloc Troubles", "A small murloc skirmish is attacking Southshore, push them back", "ReplaceableTextures\\CommandButtons\\BTNMurloc.blp");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_nmrm_0204)) ;//Murloc
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n08M"))));
-      this.AddQuestItem(QuestItemExpire.create(1135));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08M"))));
+      this.AddQuestItem(new QuestItemExpire(1135));
+      this.AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

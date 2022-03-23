@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests
 {
-  public class QuestScepterOfTheQueen{
+  public sealed class QuestScepterOfTheQueen : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -22,9 +23,9 @@ namespace AzerothWarsCSharp.Source.Quests
 
     public  thistype ( ){
       thistype this = thistype.allocate("Royal Plunder", "Remnants of the ancient Highborne survive within the ruins of Dire Maul. If Feathermoon Stronghold falls, it would become a simple matter to slaughter the Highborne && plunder their artifacts.", "ReplaceableTextures\\CommandButtons\\BTNNagaWeaponUp2blp");
-      this.AddQuestItem(QuestItemLegendNotPermanentlyDead.create(LEGEND_STONEMAUL));
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_FEATHERMOON));
-      this.AddQuestItem(QuestItemAnyUnitInRect.create(gg_rct_HighBourne, "Dire Maul", true));
+      this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_STONEMAUL));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_FEATHERMOON));
+      this.AddQuestItem(new QuestItemAnyUnitInRect(gg_rct_HighBourne, "Dire Maul", true));
       ;;
     }
 
@@ -56,9 +57,9 @@ namespace AzerothWarsCSharp.Source.Quests
 
     public  thistype ( ){
       thistype this = thistype.allocate("Return to the Fold", "Remnants of the ancient Highborne survive within the ruins of Dire Maul. If Stonemaul falls, it would be safe for them to come out.", "ReplaceableTextures\\CommandButtons\\BTNNagaWeaponUp2blp");
-      this.AddQuestItem(QuestItemLegendNotPermanentlyDead.create(LEGEND_FEATHERMOON));
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_STONEMAUL));
-      this.AddQuestItem(QuestItemAnyUnitInRect.create(gg_rct_HighBourne, "Dire Maul", true));
+      this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_FEATHERMOON));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_STONEMAUL));
+      this.AddQuestItem(new QuestItemAnyUnitInRect(gg_rct_HighBourne, "Dire Maul", true));
       ;;
     }
 

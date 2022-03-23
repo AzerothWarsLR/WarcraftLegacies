@@ -5,7 +5,7 @@ using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Warsong
 {
-  public class QuestLumberQuota : QuestData {
+  public sealed class QuestLumberQuota : QuestData  : QuestData{
     private readonly int _researchId = FourCC(""R05O""); //This research is required to complete the quest
     private readonly int _questResearchId = FourCC(""R05R""); //This research is given when the quest is completed
 

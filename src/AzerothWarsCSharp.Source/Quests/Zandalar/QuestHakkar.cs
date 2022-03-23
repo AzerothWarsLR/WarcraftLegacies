@@ -2,11 +2,12 @@
 //Causing Malfurion to spawn.
 
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Zandalar
 {
-  public class QuestHakkar{
+  public sealed class QuestHakkar : QuestData{
 
 
 
@@ -30,9 +31,9 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Binding of the Soulflayer", "Hakkar is the most dangerous && powerful of the Troll gods. Only by fusing the Demon Soul would the Zandalari be able to control Hakkar && bind him to their will.", "ReplaceableTextures\\CommandButtons\\BTNWindSerpent2blp");
-      this.AddQuestItem(QuestItemAcquireArtifact.create(ARTIFACT_ZINROKH));
-      this.AddQuestItem(QuestItemArtifactInRect.create(ARTIFACT_ZINROKH, gg_rct_DrownedTemple, "The Drowned Temple"));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n00U"))));
+      this.AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_ZINROKH));
+      this.AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_ZINROKH, gg_rct_DrownedTemple, "The Drowned Temple"));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00U"))));
       ;;
     }
 

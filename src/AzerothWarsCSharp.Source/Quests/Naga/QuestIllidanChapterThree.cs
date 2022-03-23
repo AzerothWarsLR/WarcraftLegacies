@@ -1,12 +1,13 @@
 //Escapes Kalimdor, Find the Skull of Guldan
 
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Naga
 {
-  public class QuestIllidanChapterThree{
+  public sealed class QuestIllidanChapterThree : QuestData{
 
    
     private const int RITUAL_ID = FourCC("A0KY");
@@ -42,9 +43,9 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     public  thistype ( ){
       thistype this = thistype.allocate("Chapter Three: Dwellers from the Deep", "Awakening the Naga will give Illidan the army he needs to achieve his goals.", "ReplaceableTextures\\CommandButtons\\BTNNagaMyrmidon.blp");
-      this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_ILLIDAN, gg_rct_StartQuest3, "the exit"));
-      this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_ILLIDAN, gg_rct_MaelstromAmbient, "the Maelstrom"));
-      this.AddQuestItem(QuestItemCastSpell.create(RITUAL_ID, true));
+      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, gg_rct_StartQuest3, "the exit"));
+      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, gg_rct_MaelstromAmbient, "the Maelstrom"));
+      this.AddQuestItem(new QuestItemCastSpell(RITUAL_ID, true));
       ;;
     }
 

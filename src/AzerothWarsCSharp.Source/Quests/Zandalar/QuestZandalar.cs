@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Zandalar
 {
-  public class QuestZandalar{
+  public sealed class QuestZandalar : QuestData{
 
   
     private const int QUEST_RESEARCH_ID = FourCC("R04W")   ;//This research is given when the quest is completed
@@ -36,10 +37,10 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 
     public  thistype ( ){
       thistype this = thistype.allocate("City of Gold", "We need to regain control of our land.", "ReplaceableTextures\\CommandButtons\\BTNBloodTrollMage.blp");
-      this.AddQuestItem(QuestItemResearch.create(FourCC("R04R"), )o03Z)));
-      this.AddQuestItem(QuestItemUpgrade.create(FourCC("o03Z"), )o03Y)));
-      this.AddQuestItem(QuestItemExpire.create(900));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemResearch(FourCC("R04R"), )o03Z)));
+      this.AddQuestItem(new QuestItemUpgrade(FourCC("o03Z"), )o03Y)));
+      this.AddQuestItem(new QuestItemExpire(900));
+      this.AddQuestItem(new QuestItemSelfExists());
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

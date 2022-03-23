@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Sentinels
 {
-  public class QuestSentinelsKillWarsong{
+  public sealed class QuestSentinelsKillWarsong : QuestData{
 
   
     private const int RESEARCH_ID = FourCC("R007");
@@ -27,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
 
     public  thistype ( ){
       thistype this = thistype.allocate("Green-skinned Brutes", "The Warsong Clan has arrived near Ashenvale && begun threatening the wilds. These invaders must be repelled.", "ReplaceableTextures\\CommandButtons\\BTNRaider.blp");
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_STONEMAUL));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_STONEMAUL));
       ;;
     }
 

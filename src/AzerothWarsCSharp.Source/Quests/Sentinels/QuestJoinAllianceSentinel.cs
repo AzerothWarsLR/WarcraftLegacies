@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Sentinels
 {
-  public class QuestJoinAllianceSentinel{
+  public sealed class QuestJoinAllianceSentinel : QuestData{
 
 
 
@@ -22,8 +23,8 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
 
     public  thistype ( ){
       thistype this = thistype.allocate("Join the Alliance", "With a world ending threat happening, the Alliance has reached to the Night Elves to join them", "ReplaceableTextures\\CommandButtons\\BTNalliance.blp");
-      this.AddQuestItem(QuestItemCastSpell.create(FourCC("A0IG"), true));
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_TYRANDE, true));
+      this.AddQuestItem(new QuestItemCastSpell(FourCC("A0IG"), true));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_TYRANDE, true));
       ;;
     }
 

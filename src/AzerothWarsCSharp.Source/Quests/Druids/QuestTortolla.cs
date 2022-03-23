@@ -1,9 +1,10 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Quests.Druids;
 
 namespace AzerothWarsCSharp.Source.Quests.Druids
 {
-  public class QuestTortolla{
+  public sealed class QuestTortolla : QuestData{
 
   
     private const int HERO_ID = FourCC("H04U");
@@ -34,7 +35,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Turtle Demigod", "Tortolla was badly wounded during the War of the Ancients, && has been resting ever since.", "ReplaceableTextures\\CommandButtons\\BTNSeaTurtleGreen.blp");
-      this.AddQuestItem(QuestItemTime.create(1200));
+      this.AddQuestItem(new QuestItemTime(1200));
       this.AddQuestItem(QuestItemSelfExists);
       this.ResearchId = FourCC("R049");
       ;;

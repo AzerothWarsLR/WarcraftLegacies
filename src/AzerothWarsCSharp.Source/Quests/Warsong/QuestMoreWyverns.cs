@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Warsong
 {
-  public class QuestMoreWyverns{
+  public sealed class QuestMoreWyverns : QuestData{
 
   
     private const int UNITTYPE_ID = FourCC("owyv");
@@ -25,8 +26,8 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
 
     public  thistype ( ){
       thistype this = thistype.allocate("Perfect Warriors", "The prowess && savagery of the Sentinels is to be respected - && feared. They must be eliminated.", "ReplaceableTextures\\CommandButtons\\BTNArcher.blp");
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_FEATHERMOON));
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_AUBERDINE));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_FEATHERMOON));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_AUBERDINE));
       ;;
     }
 

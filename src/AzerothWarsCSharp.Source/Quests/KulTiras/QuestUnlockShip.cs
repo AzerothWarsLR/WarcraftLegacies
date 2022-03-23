@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.KulTiras
 {
-  public class QuestUnlockShip{
+  public sealed class QuestUnlockShip : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -45,8 +46,8 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Zandalar Menace", "The Troll Empire of Zandalar is a danger to the safety of KulFourCC("tiras && the Alliance. Before setting sail, we must eliminate them.", "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp"");
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_DAZARALOR, false));
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_BORALUS, true));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_DAZARALOR, false));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_BORALUS, true));
       ;;
     }
 

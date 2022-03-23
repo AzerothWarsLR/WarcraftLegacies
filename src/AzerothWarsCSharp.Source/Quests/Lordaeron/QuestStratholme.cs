@@ -1,11 +1,12 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {
-  public class QuestStratholme{
+  public sealed class QuestStratholme : QuestData{
 
 
 
@@ -31,10 +32,10 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     public  thistype ( ){
       thistype this = thistype.allocate("Blackrock && Roll", "The Blackrock clan has taken over Alterac, they must be eliminated for the safety of Lordaeron", "ReplaceableTextures\\CommandButtons\\BTNChaosBlademaster.blp");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_o00B_1316)) ;//Jubei
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n019"))));
-      this.AddQuestItem(QuestItemUpgrade.create(FourCC("hcas"), )htow)));
-      this.AddQuestItem(QuestItemExpire.create(1470));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n019"))));
+      this.AddQuestItem(new QuestItemUpgrade(FourCC("hcas"), )htow)));
+      this.AddQuestItem(new QuestItemExpire(1470));
+      this.AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

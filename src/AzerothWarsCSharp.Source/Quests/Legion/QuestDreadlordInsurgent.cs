@@ -2,12 +2,13 @@
 //If they instead lose the Sunwell, they lose everything. If that doesn)t defeat them, they get GARITHOS)thalas, Lorthemar, and some free units at Dalaran Dungeons.
 
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Legion
 {
-  public class QuestDreadlordInsurgent{
+  public sealed class QuestDreadlordInsurgent : QuestData{
 
 
 
@@ -52,7 +53,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
     public  thistype ( ){
       thistype this = thistype.allocate("Dreadlord Insurgent", "Varimathras has branched out && tried to take control of the Plaguelands, Sylvanas will try && make him join her cause", "ReplaceableTextures\\CommandButtons\\BTNHeroDreadLord.blp");
-      this.AddQuestItem(QuestItemResearch.create(FourCC("R08H"), )n040)));
+      this.AddQuestItem(new QuestItemResearch(FourCC("R08H"), )n040)));
       ;;
     }
 

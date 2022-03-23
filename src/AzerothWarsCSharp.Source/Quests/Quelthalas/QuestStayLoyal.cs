@@ -1,9 +1,10 @@
 
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {
-  public class QuestStayLoyal{
+  public sealed class QuestStayLoyal : QuestData{
 
 
     private bool operator Global( ){
@@ -27,8 +28,8 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     public  thistype ( ){
       thistype this = thistype.allocate("Refuse KilFourCC("Jaeden")s Offer", "Kil)jaeden has approached Kael with an offer of power && salvation. He should refuse it && resist the temptation of Fel power.", "ReplaceableTextures\\CommandButtons\\BTNDemonHunter2blp");
-      this.AddQuestItem(QuestItemCastSpell.create(FourCC("A0IK"), true));
-      this.AddQuestItem(QuestItemLegendLevel.create(LEGEND_KAEL, 6));
+      this.AddQuestItem(new QuestItemCastSpell(FourCC("A0IK"), true));
+      this.AddQuestItem(new QuestItemLegendLevel(LEGEND_KAEL, 6));
       ;;
     }
 

@@ -1,9 +1,10 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Twilight
 {
-  public class QuestIgnacious{
+  public sealed class QuestIgnacious : QuestData{
 
   
     private const int RESEARCH_ID = FourCC("R07Q");
@@ -21,8 +22,8 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
 
     public  thistype ( ){
       thistype this = thistype.allocate("Gift of the Firelord", "Destroying the Dwarf great forge will please the Great Elemental Lord, Ragnaros.", "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp");
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_GREATFORGE));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n0AA"))));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_GREATFORGE));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0AA"))));
       this.ResearchId = RESEARCH_ID;
       ;;
     }

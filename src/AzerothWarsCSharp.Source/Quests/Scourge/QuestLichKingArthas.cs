@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Scourge
 {
-  public class QuestLichKingArthas{
+  public sealed class QuestLichKingArthas : QuestData{
 
 
     bool operator Global( ){
@@ -44,10 +45,10 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Ascension", "From within the depths of the Frozen Throne, the Lich King NerFourCC("zhul cries out for his champion. Release the Helm of Domination from its confines && merge its power with that of the Scourge")s greatest Death Knight.", "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp");
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_ARTHAS, false));
-      this.AddQuestItem(QuestItemLegendLevel.create(LEGEND_ARTHAS, 12));
-      this.AddQuestItem(QuestItemResearch.create(FourCC("R07X"), )u000)));
-      this.AddQuestItem(QuestItemLegendInRect.create(LEGEND_ARTHAS, gg_rct_LichKing, "Icecrown Citadel"));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_ARTHAS, false));
+      this.AddQuestItem(new QuestItemLegendLevel(LEGEND_ARTHAS, 12));
+      this.AddQuestItem(new QuestItemResearch(FourCC("R07X"), )u000)));
+      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_ARTHAS, gg_rct_LichKing, "Icecrown Citadel"));
       ;;
     }
 

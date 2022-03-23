@@ -1,12 +1,13 @@
 //If the Centaur Khan dies, OR a time elapses, give Thunder Bluff to a Horde player.
 
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 {
-  public class QuestThunderBluff{
+  public sealed class QuestThunderBluff : QuestData{
 
   
     private group ThunderBluffUnits;
@@ -36,10 +37,10 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Long March", "The Tauren have been wandering for too long. The plains of Mulgore would offer respite from this endless journey.", "ReplaceableTextures\\CommandButtons\\BTNCentaurKhan.blp");
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_CENTAURKHAN));
-      this.AddQuestItem(QuestItemAnyUnitInRect.create(gg_rct_ThunderBluff, "Thunder Bluff", true));
-      this.AddQuestItem(QuestItemExpire.create(1455));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_CENTAURKHAN));
+      this.AddQuestItem(new QuestItemAnyUnitInRect(gg_rct_ThunderBluff, "Thunder Bluff", true));
+      this.AddQuestItem(new QuestItemExpire(1455));
+      this.AddQuestItem(new QuestItemSelfExists());
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Legion
 {
-  public class QuestEmbassy{
+  public sealed class QuestEmbassy : QuestData{
 
   
     private const int HERO_ID = FourCC("U00L");
@@ -23,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
     public  thistype ( ){
       thistype this = thistype.allocate("Infernal Foothold", "A stronger foothold in this world will be required to field the Burning LegionFourCC("s war machines && to in more of its lieutenants.", "ReplaceableTextures\\CommandButtons\\BTNDemonBlackCitadel.blp"");
-      this.AddQuestItem(QuestItemUpgrade.create(FourCC("e01H"), )e01F)));
+      this.AddQuestItem(new QuestItemUpgrade(FourCC("e01H"), )e01F)));
       this.ResearchId = FourCC("R042");
       ;;
     }

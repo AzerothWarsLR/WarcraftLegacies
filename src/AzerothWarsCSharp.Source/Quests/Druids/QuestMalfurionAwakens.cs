@@ -2,12 +2,13 @@
 //Causing Malfurion to spawn.
 
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Druids
 {
-  public class QuestMalfurionAwakens{
+  public sealed class QuestMalfurionAwakens : QuestData{
 
   
     private group MoongladeUnits;
@@ -63,10 +64,10 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 
     public  thistype ( ){
       thistype this = thistype.allocate("Awakening of Stormrage", "Ever since the War of the Ancients ten thousand years ago, Malfurion Stormrage && his druids have slumbered within the Barrow Den. Now, their help is required once again.", "ReplaceableTextures\\CommandButtons\\BTNFurion.blp");
-      this.AddQuestItem(QuestItemAcquireArtifact.create(ARTIFACT_HORNOFCENARIUS));
-      this.AddQuestItem(QuestItemArtifactInRect.create(ARTIFACT_HORNOFCENARIUS, gg_rct_Moonglade, "The Barrow Den"));
-      this.AddQuestItem(QuestItemExpire.create(1440));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_HORNOFCENARIUS));
+      this.AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_HORNOFCENARIUS, gg_rct_Moonglade, "The Barrow Den"));
+      this.AddQuestItem(new QuestItemExpire(1440));
+      this.AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

@@ -6,7 +6,7 @@ using AzerothWarsCSharp.Source.Mechanics.BlackEmpire;
 
 namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 {
-  public class QuestSecondObelisk : QuestData{
+  public sealed class QuestSecondObelisk : QuestData : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 
     public  thistype ( ){
       thistype this = thistype.allocate("Second Obelisk", "The convergence of floatities grows ever closer. An Obelisk must be established in Uldum.", "ReplaceableTextures\\CommandButtons\\BTNIceCrownObelisk.blp");
-      this.AddQuestItem(QuestItemObelisk.create(ControlPoint.GetFromUnitType(FourCC("n0BD"))));
+      this.AddQuestItem(new QuestItemObelisk(ControlPoint.GetFromUnitType(FourCC("n0BD"))));
       ;;
     }
 

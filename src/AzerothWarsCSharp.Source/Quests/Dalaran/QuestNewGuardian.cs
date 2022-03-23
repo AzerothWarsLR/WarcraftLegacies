@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {
-  public class QuestNewGuardian{
+  public sealed class QuestNewGuardian : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -29,8 +30,8 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     public  thistype ( ){
       thistype this = thistype.allocate("Guardian of Tirisfal", "MedivhFourCC("s death left Azeroth without a Guardian. The spell book he left behind could be used to empower a new one.", "ReplaceableTextures\\CommandButtons\\BTNAstral Blessing.blp"");
-      this.AddQuestItem(QuestItemLegendLevel.create(LEGEND_JAINA, 15));
-      this.AddQuestItem(QuestItemLegendHasArtifact.create(LEGEND_JAINA, ARTIFACT_BOOKOFMEDIVH));
+      this.AddQuestItem(new QuestItemLegendLevel(LEGEND_JAINA, 15));
+      this.AddQuestItem(new QuestItemLegendHasArtifact(LEGEND_JAINA, ARTIFACT_BOOKOFMEDIVH));
       ;;
     }
 

@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Ironforge
 {
-  public class QuestThelsamar{
+  public sealed class QuestThelsamar : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -46,8 +47,8 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
     public  thistype ( ){
       thistype this = thistype.allocate("Murloc Menace", "A vile group of Murloc is terrorizing Thelsamar. Destroy them!", "ReplaceableTextures\\CommandButtons\\BTNMurlocNightCrawler.blp");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_N089_1494)) ;//Murloc
-      this.AddQuestItem(QuestItemExpire.create(1435));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemExpire(1435));
+      this.AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

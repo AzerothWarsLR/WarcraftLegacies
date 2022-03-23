@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Forsaken
 {
-  public class QuestUndercity{
+  public sealed class QuestUndercity : QuestData{
 
   
     private const int RESEARCH_ID = FourCC("R050")         ;//This research is required to complete the quest
@@ -52,10 +53,10 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     public  thistype ( ){
       thistype this = thistype.allocate("Forsaken Independance", "The Forsaken had enough of living under the tyranny of the Lich King. Sylvanas has vowed to give them their freedom back && a home", "ReplaceableTextures\\CommandButtons\\BTNForsakenArrows.blp");
-      this.AddQuestItem(QuestItemResearch.create(RESEARCH_ID, FourCC("h08B")));
-      this.AddQuestItem(QuestItemLegendInRect.create(LEGEND_SYLVANASV, gg_rct_Terenas, "Capital City"));
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_CAPITALPALACE));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("h08B")));
+      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_SYLVANASV, gg_rct_Terenas, "Capital City"));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_CAPITALPALACE));
+      this.AddQuestItem(new QuestItemSelfExists());
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

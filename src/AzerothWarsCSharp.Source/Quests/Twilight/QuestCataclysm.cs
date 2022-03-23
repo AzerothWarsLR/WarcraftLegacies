@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Twilight
 {
-  public class QuestCataclysm{
+  public sealed class QuestCataclysm : QuestData{
 
   
     private const int CATACLYSM_RESEARCH = FourCC("R05E");
@@ -35,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Cataclysm", "The Old GodFourCC("s will is finnicky, you are !privy to when their plan will be in motion, but when it is, your cult will be ready to welcome it.", "ReplaceableTextures\\CommandButtons\\BTNDeathwing.blp"");
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_DEATHWING, false));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_DEATHWING, false));
       ;;
     }
 

@@ -1,11 +1,12 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Legion
 {
-  public class QuestArgusControl{
+  public sealed class QuestArgusControl : QuestData{
 
   
     private const int QUESTRESEARCH_ID = FourCC("R055")   ;//This research is given when the quest is completed
@@ -28,10 +29,10 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
     public  thistype ( ){
       thistype this = thistype.allocate("Argus Incursion", "The planet of Argus is !fully under the control of the Legion. Bring it under control!", "ReplaceableTextures\\CommandButtons\\BTNMastersLodge.blp");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_h09U_3138)) ;//Knight
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n0BF"))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n0BH"))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n0BG"))));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BF"))));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BH"))));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BG"))));
+      this.AddQuestItem(new QuestItemSelfExists());
       this.ResearchId = QUESTRESEARCH_ID;
       ;;
     }

@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Naga
 {
-  public class QuestJoinAllianceNaga{
+  public sealed class QuestJoinAllianceNaga : QuestData{
 
 
 
@@ -21,9 +22,9 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     public  thistype ( ){
       thistype this = thistype.allocate("Join the Alliance", "The Alliance has invited the Night Elves to join them in the face of a looming world threat.", "ReplaceableTextures\\CommandButtons\\BTNalliance.blp");
-      this.AddQuestItem(QuestItemCastSpell.create(FourCC("A0IG"), true));
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_ALTRUIS, true));
-      this.AddQuestItem(QuestItemResearch.create(FourCC("R062"), )n055)));
+      this.AddQuestItem(new QuestItemCastSpell(FourCC("A0IG"), true));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_ALTRUIS, true));
+      this.AddQuestItem(new QuestItemResearch(FourCC("R062"), )n055)));
       ;;
     }
 

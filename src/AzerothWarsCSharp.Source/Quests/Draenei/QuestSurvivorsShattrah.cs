@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Draenei
 {
-  public class QuestSurvivorsShattrah{
+  public sealed class QuestSurvivorsShattrah : QuestData{
 
   
     private const int QUESTRESEARCH_ID = FourCC("R082")   ;//This research is given when the quest is completed
@@ -20,9 +21,9 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Survivors of Shattrah", "The Shattrah massacre was swift && brutal, if (the Draenei hold long enough in Outland, they might regroup with some of the survivors.", "ReplaceableTextures\\CommandButtons\\BTNGlazeroth.blp");
-      this.AddQuestItem(QuestItemTime.create(480));
-      this.AddQuestItem(QuestItemLegendNotPermanentlyDead.create(LEGEND_EXODARSHIP));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemTime(480));
+      this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_EXODARSHIP));
+      this.AddQuestItem(new QuestItemSelfExists());
       this.ResearchId = QUESTRESEARCH_ID;
       ;;
     }

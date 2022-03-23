@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Sentinels
 {
-  public class QuestSentinelsKillFrostwolf{
+  public sealed class QuestSentinelsKillFrostwolf : QuestData{
 
   
     private const int RESEARCH_ID = FourCC("R052");
@@ -30,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
 
     public  thistype ( ){
       thistype this = thistype.allocate("Drive Them Back", "The Frostwolf Clan is beginning to seize a firm foothold within the Barrens && on the plains of Mulgore. They must be driven back.", "ReplaceableTextures\\CommandButtons\\BTNThrall.blp");
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_THUNDERBLUFF));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_THUNDERBLUFF));
       ;;
     }
 

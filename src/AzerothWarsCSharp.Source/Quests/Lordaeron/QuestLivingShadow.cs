@@ -1,11 +1,12 @@
 
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {
-  public class QuestLivingShadow{
+  public sealed class QuestLivingShadow : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -24,8 +25,8 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Living Embodiment of Shadow", "The Dark Fortress looming over the Twilight Highlands is a beacon of darkness. Destroy it && clear the surrounding lands of evil.", "ReplaceableTextures\\CommandButtons\\BTNShadow Orb.blp");
-      this.AddQuestItem(QuestItemLegendInRect.create(LEGEND_UTHER, gg_rct_TwilightOutside, "Twilight Citadel"));
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_TWILIGHTCITADEL));
+      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_UTHER, gg_rct_TwilightOutside, "Twilight Citadel"));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_TWILIGHTCITADEL));
       ;;
     }
 

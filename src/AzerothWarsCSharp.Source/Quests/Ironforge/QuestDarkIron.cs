@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Ironforge
 {
-  public class QuestDarkIron{
+  public sealed class QuestDarkIron : QuestData{
 
   
     private const int HERO_ID = FourCC("H03G");
@@ -46,7 +47,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
 
     public  thistype ( ){
       thistype this = thistype.allocate("Dark Iron Alliance", "The Dark Iron dwarves are renegades. Bring Magni to their capital to open negotiations for an alliance.", "ReplaceableTextures\\CommandButtons\\BTNRPGDarkIron.blp");
-      this.AddQuestItem(QuestItemLegendInRect.create(LEGEND_MAGNI, gg_rct_Shadowforge_gate, "Shadowforge"));
+      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_MAGNI, gg_rct_Shadowforge_gate, "Shadowforge"));
       ;;
     }
 

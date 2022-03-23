@@ -5,7 +5,7 @@ using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Naga
 {
-  public class QuestIllidanChapterOne{
+  public sealed class QuestIllidanChapterOne : QuestData{
 
 
 
@@ -25,10 +25,10 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     public  thistype (QuestData questToDiscover ){
       thistype this = thistype.allocate("Chapter One: The Aetheneum Secrets", "In order to gain the power he craves, Illidan must plunder the hidden Aetheneum library for its secrets.", "ReplaceableTextures\\CommandButtons\\BTNDoomlord.blp");
-      this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_ILLIDAN, gg_rct_Dire_Maul_Entrance, "Feralas"));
-      this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_ILLIDAN, gg_rct_AethneumLibraryEntrance, "the Aetheneum Library"));
-      this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_ILLIDAN, gg_rct_ImmolFight, "ImmolFourCC("thar")s Lair"));
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_IMMOLTHAR));
+      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, gg_rct_Dire_Maul_Entrance, "Feralas"));
+      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, gg_rct_AethneumLibraryEntrance, "the Aetheneum Library"));
+      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, gg_rct_ImmolFight, "ImmolFourCC("thar")s Lair"));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_IMMOLTHAR));
       this.questToDiscover = questToDiscover;
       ;;
     }

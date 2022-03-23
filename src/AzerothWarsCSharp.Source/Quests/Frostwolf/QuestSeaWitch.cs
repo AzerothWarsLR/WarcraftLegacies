@@ -3,12 +3,13 @@
 
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 {
-  public class QuestSeaWitch{
+  public sealed class QuestSeaWitch : QuestData{
 
   
     private weathereffect Storm;
@@ -58,8 +59,8 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
     public  thistype ( ){
       thistype this = thistype.allocate("Riders on the Storm", "Warchief Thrall && his forces have been shipwrecked on the Darkspear Isles. Kill the Sea Witch there to give them a chance to rebuild their fleet && escape.", "ReplaceableTextures\\CommandButtons\\BTNGhost.blp");
-      this.AddQuestItem(QuestItemKillUnit.create(LEGEND_SEAWITCH.Unit));
-      this.AddQuestItem(QuestItemExpire.create(600));
+      this.AddQuestItem(new QuestItemKillUnit(LEGEND_SEAWITCH.Unit));
+      this.AddQuestItem(new QuestItemExpire(600));
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

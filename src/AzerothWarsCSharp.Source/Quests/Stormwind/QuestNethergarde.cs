@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Stormwind
 {
-  public class QuestNethergarde{
+  public sealed class QuestNethergarde : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -48,9 +49,9 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     public  thistype ( ){
       thistype this = thistype.allocate("Nethergarde relief", "The nethergarde fort is holding down the Dark Portal, they will need to be reinforced soon!", "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionBarracks.blp");
-      this.AddQuestItem(QuestItemLegendInRect.create(LEGEND_VARIAN, gg_rct_NethergardeUnlock, "Nethergarde"));
-      this.AddQuestItem(QuestItemExpire.create(1440));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_VARIAN, gg_rct_NethergardeUnlock, "Nethergarde"));
+      this.AddQuestItem(new QuestItemExpire(1440));
+      this.AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Scarlet
 {
-  public class QuestTyr{
+  public sealed class QuestTyr : QuestData{
 
  
     private const int RESEARCH_ID = FourCC("R03R")   ;//This research is given when the quest is completed
@@ -33,8 +34,8 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Scarlet Enclave", "The legions at TyrFourCC("s Hand remain neutral for the moment, but when the time is right, they will align themselves with the Scarlet Crusade.", "ReplaceableTextures\\CommandButtons\\BTNCastle.blp"");
-      this.AddQuestItem(QuestItemTime.create(1000));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemTime(1000));
+      this.AddQuestItem(new QuestItemSelfExists());
       this.ResearchId = RESEARCH_ID;
       ;;
     }

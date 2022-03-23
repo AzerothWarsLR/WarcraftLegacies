@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {
-  public class QuestAshbringer{
+  public sealed class QuestAshbringer : QuestData{
 
   
     private const float DUMMY_X = 22700;
@@ -36,10 +37,10 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Ashbringer", "The Living Shadow must be purged, with enough Holy Magic && the craftiness of the Dwarves, it could be reforged into the strongest weapon of the Light", "ReplaceableTextures\\CommandButtons\\BTNAshbringer2blp");
-      this.AddQuestItem(QuestItemAcquireArtifact.create(ARTIFACT_LIVINGSHADOW));
-      this.AddQuestItem(QuestItemLegendNotPermanentlyDead.create(LEGEND_GREATFORGE));
-      this.AddQuestItem(QuestItemArtifactInRect.create(ARTIFACT_LIVINGSHADOW, gg_rct_AshbringerForge, "The Great Forge"));
-      this.AddQuestItem(QuestItemChannelRect.create(gg_rct_AshbringerForge, "The Great Forge", LEGEND_UTHER, 60, 340));
+      this.AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_LIVINGSHADOW));
+      this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_GREATFORGE));
+      this.AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_LIVINGSHADOW, gg_rct_AshbringerForge, "The Great Forge"));
+      this.AddQuestItem(new QuestItemChannelRect(gg_rct_AshbringerForge, "The Great Forge", LEGEND_UTHER, 60, 340));
       ;;
     }
 

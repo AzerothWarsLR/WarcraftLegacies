@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Druids
 {
-  public class QuestDruidsKillWarsong{
+  public sealed class QuestDruidsKillWarsong : QuestData{
 
   
     private const int UNITTYPE_ID = FourCC("e012") ;//Siege Ancient
@@ -29,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 
     public  thistype ( ){
       thistype this = thistype.allocate("Enemies at the Gate", "Arriving from another planet && across the seas of Azeroth, the Orcs of the Warsong Clan have arrived to ravage the wilderness && consume its bounty. They must be stopped.", "ReplaceableTextures\\CommandButtons\\BTNHellScream.blp");
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_STONEMAUL));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_STONEMAUL));
       ;;
     }
 

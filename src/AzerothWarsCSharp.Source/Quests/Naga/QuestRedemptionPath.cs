@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Naga
 {
-  public class QuestRedemptionPath{
+  public sealed class QuestRedemptionPath : QuestData{
 
   
     private const int RESEARCH_ID = FourCC("R062")         ;//This research is required to complete the quest
@@ -69,10 +70,10 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Brothers Stormrage", "Illidan follows his heart && seeks forgivness from Malfurion. United by their brotherly bond && their desire to protect Tyrande, they decide to unite their forces once again.", "ReplaceableTextures\\CommandButtons\\BTNDemonHunter2blp");
-      this.AddQuestItem(QuestItemResearch.create(RESEARCH_ID, FourCC("n055")));
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_ILLIDAN, true));
-      this.AddQuestItem(QuestItemSelfExists.create());
-      this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_ILLIDAN, gg_rct_NazjatarHidden, "Nazjatar"));
+      this.AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("n055")));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_ILLIDAN, true));
+      this.AddQuestItem(new QuestItemSelfExists());
+      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, gg_rct_NazjatarHidden, "Nazjatar"));
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

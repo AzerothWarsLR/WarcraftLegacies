@@ -2,12 +2,13 @@
 
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Warsong
 {
-  public class QuestCrossroads{
+  public sealed class QuestCrossroads : QuestData{
 
 
 
@@ -53,9 +54,9 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
     public  thistype ( ){
       thistype this = thistype.allocate("The Crossroads", "The Horde still needs to establish a strong strategic foothold into Kalimdor. There is an opportune crossroads nearby.", "ReplaceableTextures\\CommandButtons\\BTNBarracks.blp");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_nrzm_0113)) ;//Razorman Medicine Man
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01T"))));
-      this.AddQuestItem(QuestItemExpire.create(1460));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01T"))));
+      this.AddQuestItem(new QuestItemExpire(1460));
+      this.AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

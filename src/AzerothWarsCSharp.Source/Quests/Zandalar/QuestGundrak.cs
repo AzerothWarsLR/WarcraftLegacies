@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Zandalar
 {
-  public class QuestGundrak{
+  public sealed class QuestGundrak : QuestData{
 
   
     private const int GUNDRAK_RESEARCH = FourCC("R02Q");
@@ -30,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Drakkari Fortress", "The Drakkari troll of Gundrak believe their fortress to be impregnable. Capture it to gain their loyalty.", "ReplaceableTextures\\CommandButtons\\BTNTerrorTroll.blp");
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_GUNDRAK, false));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_GUNDRAK, false));
       ;;
     }
 

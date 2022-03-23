@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Forsaken
 {
-  public class QuestReanimateSylvanas{
+  public sealed class QuestReanimateSylvanas : QuestData{
 
   
     private const int SYLVANAS_ID = FourCC("Usyl");
@@ -25,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     public  thistype ( ){
       thistype this = thistype.allocate("The First Banshee", "Sylvanas, the Ranger-General of Silvermoon, stands between the legions of the Scourge && the Sunwell. Destroy her people, && her soul will be transformed into a tormented Banshee under the ScourgeFourCC("s control.", "ReplaceableTextures\\CommandButtons\\BTNBansheeRanger.blp"");
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_SUNWELL, false));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_SUNWELL, false));
       this.ResearchId = FourCC("R02D");
       ;;
     }

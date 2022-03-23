@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {
-  public class QuestKarazhan{
+  public sealed class QuestKarazhan : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -21,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     public  thistype ( ){
       thistype this = thistype.allocate("Secrets of Karazhan", "The spire of Medivh stands mysteriously idle. Dalaran could make use of its grand magicks.", "ReplaceableTextures\\CommandButtons\\BTNTomeBrown.blp");
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_KARAZHAN, false));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_KARAZHAN, false));
       ;;
     }
 

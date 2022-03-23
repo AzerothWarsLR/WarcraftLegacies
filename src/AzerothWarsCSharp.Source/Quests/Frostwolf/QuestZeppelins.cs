@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 {
-  public class QuestZeppelins{
+  public sealed class QuestZeppelins : QuestData{
 
   
     private const int RESEARCH_ID = FourCC("R058");
@@ -31,8 +32,8 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Spirits of Ashenvale", "The Sentinels have laid claim over Kalimdor. As long as they survive, the Orcs will never be safe.", "ReplaceableTextures\\CommandButtons\\BTNGoblinZeppelin.blp");
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_AUBERDINE));
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_FEATHERMOON));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_AUBERDINE));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_FEATHERMOON));
       ;;
     }
 

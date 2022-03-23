@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {
-  public class QuestQueldanil{
+  public sealed class QuestQueldanil : QuestData{
 
   
     private const int QUEST_RESEARCH_ID = FourCC("R074")   ;//This research is given when the quest is completed
@@ -32,8 +33,8 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     public  thistype ( ){
       thistype this = thistype.allocate("QuelFourCC("danil Lodge", "Quel")danil Lodge is a High Elven outpost situated in the Hinterlands. It)s been some time since the rangers there have been in contact with Quel)thalas.", "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp");
-      this.AddQuestItem(QuestItemAnyUnitInRect.create(gg_rct_QuelDanil_Lodge, "QuelFourCC("danil Lodge", true"));
-      this.AddQuestItem(QuestItemTime.create(1200));
+      this.AddQuestItem(new QuestItemAnyUnitInRect(gg_rct_QuelDanil_Lodge, "QuelFourCC("danil Lodge", true"));
+      this.AddQuestItem(new QuestItemTime(1200));
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

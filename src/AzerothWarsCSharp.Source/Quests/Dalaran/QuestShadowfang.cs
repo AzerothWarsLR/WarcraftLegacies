@@ -1,11 +1,12 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {
-  public class QuestShadowfang{
+  public sealed class QuestShadowfang : QuestData{
 
 
 
@@ -31,9 +32,9 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     public  thistype ( ){
       thistype this = thistype.allocate("Shadows of Silverspine Forest", "The woods of Silverspine are unsafe for travellers, they need to be investigated", "ReplaceableTextures\\CommandButtons\\BTNworgen.blp");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_o02J_0984)) ;//Worgen
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01D"))));
-      this.AddQuestItem(QuestItemExpire.create(1444));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01D"))));
+      this.AddQuestItem(new QuestItemExpire(1444));
+      this.AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

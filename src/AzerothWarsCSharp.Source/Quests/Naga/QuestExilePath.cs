@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Naga
 {
-  public class QuestExilePath{
+  public sealed class QuestExilePath : QuestData{
 
   
     private const int RESEARCH_ID = FourCC("R063")         ;//This research is required to complete the quest
@@ -78,10 +79,10 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     public  thistype ( ){
       thistype this = thistype.allocate("A Parting of Ways", "Illidan must go his own way to find power, && Outland is the perfect place to acquire it.", "ReplaceableTextures\\CommandButtons\\BTNIllidanDemonicPower.blp");
-      this.AddQuestItem(QuestItemResearch.create(RESEARCH_ID, FourCC("n055")));
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_ILLIDAN, true));
-      this.AddQuestItem(QuestItemSelfExists.create());
-      this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_ILLIDAN, gg_rct_NazjatarHidden, "Nazjatar"));
+      this.AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("n055")));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_ILLIDAN, true));
+      this.AddQuestItem(new QuestItemSelfExists());
+      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, gg_rct_NazjatarHidden, "Nazjatar"));
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

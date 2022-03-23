@@ -1,11 +1,12 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 {
-  public class QuestStonemaul{
+  public sealed class QuestStonemaul : QuestData{
 
   
     private const int QUEST_RESEARCH_ID = FourCC("R03S")   ;//This research is given when the quest is completed
@@ -54,9 +55,9 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     public  thistype ( ){
       thistype this = thistype.allocate("The ChieftainFourCC("s Challenge", "The Ogres of Stonemaul follow the strongest, slay the Chieftain to gain control of the base.", "ReplaceableTextures\\CommandButtons\\BTNOneHeadedOgre.blp"");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_noga_1228)) ;//Korgall
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n022"))));
-      this.AddQuestItem(QuestItemExpire.create(1505));
-      this.AddQuestItem(QuestItemSelfExists.create());
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n022"))));
+      this.AddQuestItem(new QuestItemExpire(1505));
+      this.AddQuestItem(new QuestItemSelfExists());
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

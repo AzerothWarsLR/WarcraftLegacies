@@ -1,11 +1,12 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Forsaken
 {
-  public class QuestTakeRevenge{
+  public sealed class QuestTakeRevenge : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -27,9 +28,9 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     public  thistype ( ){
       thistype this = thistype.allocate("Cold-Hearted Revenge", "Sylvanas longs to take revenge on the Lich King. Killing him && absorbing his power would maybe satisfy the emptiness inside her", "ReplaceableTextures\\CommandButtons\\BTNHelmofdomination.blp");
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n0BC"))));
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_SYLVANASV, true));
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_LICHKING));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BC"))));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_SYLVANASV, true));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_LICHKING));
       ;;
     }
 

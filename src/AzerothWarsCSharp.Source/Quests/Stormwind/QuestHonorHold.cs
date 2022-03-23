@@ -2,12 +2,13 @@
 //If Stormwind is not in the game, do nothing.
 
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Stormwind
 {
-  public class QuestHonorHold{
+  public sealed class QuestHonorHold : QuestData{
 
 
     protected override string CompletionPopup => 
@@ -38,7 +39,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     public  thistype ( ){
       thistype this = thistype.allocate("Honor Hold", "Despite OutlandFourCC("s incredibly harsh climate, some Alliance forces have managed to make a home there - a town called Honor Hold", "ReplaceableTextures\\CommandButtons\\BTNHumanBarracks.blp"");
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_HELLFIRECITADEL));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_HELLFIRECITADEL));
       ;;
     }
 

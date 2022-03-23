@@ -1,9 +1,10 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {
-  public class QuestFallenGuardian{
+  public sealed class QuestFallenGuardian : QuestData{
 
   
     private const int RESEARCH_ID = FourCC("R04K");
@@ -26,8 +27,8 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Fallen Guardian", "MedivhFourCC("s body was corrupted by Sargeras at conception. Now that he is dead, the secrets of the Tomb of Sargeras && Sargeras combined might allow the mages of Dalaran to cleanse his spirit.", "ReplaceableTextures\\CommandButtons\\BTNMedivh.blp"");
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_KARAZHAN, false));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n00J"))));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_KARAZHAN, false));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00J"))));
       this.ResearchId = FourCC("R04K");
       ;;
     }

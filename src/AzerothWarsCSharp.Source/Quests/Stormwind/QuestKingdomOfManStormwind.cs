@@ -1,11 +1,12 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Stormwind
 {
-  public class QuestKingdomOfManStormwind{
+  public sealed class QuestKingdomOfManStormwind : QuestData{
 
   
     private const int RESEARCH_ID = FourCC("R01N");
@@ -49,12 +50,12 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     public  thistype ( ){
       thistype this = thistype.allocate("Kingdom of Man", "Before the First War, all of humanity was united under the banner of the Arathorian Empire. Reclaim its greatness by uniting mankind once again.", "ReplaceableTextures\\CommandButtons\\BTNFireKingCrown.blp");
-      this.AddQuestItem(QuestItemLegendNotPermanentlyDead.create(LEGEND_VARIAN));
-      this.AddQuestItem(QuestItemAcquireArtifact.create(ARTIFACT_CROWNLORDAERON));
-      this.AddQuestItem(QuestItemAcquireArtifact.create(ARTIFACT_CROWNSTORMWIND));
-      this.AddQuestItem(QuestItemControlLegend.create(LEGEND_BLACKTEMPLE, false));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n010"))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01G"))));
+      this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_VARIAN));
+      this.AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_CROWNLORDAERON));
+      this.AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_CROWNSTORMWIND));
+      this.AddQuestItem(new QuestItemControlLegend(LEGEND_BLACKTEMPLE, false));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n010"))));
+      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01G"))));
       ;;
     }
 

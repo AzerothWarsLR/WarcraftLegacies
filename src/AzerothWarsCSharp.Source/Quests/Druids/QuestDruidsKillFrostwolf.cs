@@ -1,8 +1,9 @@
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Druids
 {
-  public class QuestDruidsKillFrostwolf{
+  public sealed class QuestDruidsKillFrostwolf : QuestData{
 
   
     private const int RESEARCH_ID = FourCC("R044");
@@ -30,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 
     public  thistype ( ){
       thistype this = thistype.allocate("Natural Contest", "The Frostwolf Clan has arrived on the shores of Kalimdor. Though their respect of the wild spirits is to be admired, their presence can!be tolerated.", "ReplaceableTextures\\CommandButtons\\BTNHeroTaurenChieftain.blp");
-      this.AddQuestItem(QuestItemLegendDead.create(LEGEND_THUNDERBLUFF));
+      this.AddQuestItem(new QuestItemLegendDead(LEGEND_THUNDERBLUFF));
       ;;
     }
 
