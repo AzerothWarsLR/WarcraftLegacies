@@ -19,40 +19,40 @@ namespace AzerothWarsCSharp.Source.Spells.Quel_thalas
 
     //A single beam connecting the caster to the victim, draining its life.
 
-    private unit caster;
-    private unit target;
-    private lightning lightning;
-    private float tick;
-    private float lifedrain;
-    private float manadrain;
-    private effect effect;
+    private unit _caster;
+    private unit _target;
+    private lightning _lightning;
+    private float _tick;
+    private float _lifedrain;
+    private float _manadrain;
+    private effect _effect;
 
-    void destroy( ){
-      DestroyLightning(lightning);
-      lightning = null;
+    void Destroy( ){
+      DestroyLightning(_lightning);
+      _lightning = null;
       this.caster = null;
-      target = null;
+      _target = null;
       DestroyEffect(this.effect);
       stopPeriodic();
     }
 
-    private void drain( ){
-      if (GetUnitState(caster, UNIT_STATE_LIFE) < GetUnitState(caster, UNIT_STATE_MAX_LIFE) || !IsUnitAlly(target, GetOwningPlayer(caster))){
-        UnitDamageTarget(caster, target, lifedrain * PERIOD, false, false, ATTACK_TYPE_NORMAL, DAMAGE_TYPE_MAGIC, WEAPON_TYPE_WHOKNOWS);
-        UnitHeal(caster, caster, RMinBJ(lifedrain * PERIOD, GetUnitState(target, UNIT_STATE_LIFE)));
+    private void Drain( ){
+      if (GetUnitState(caster, UNIT_STATE_LIFE) < GetUnitState(caster, UNIT_STATE_MAX_LIFE) || !IsUnitAlly(_target, GetOwningPlayer(caster))){
+        UnitDamageTarget(caster, _target, _lifedrain * PERIOD, false, false, ATTACK_TYPE_NORMAL, DAMAGE_TYPE_MAGIC, WEAPON_TYPE_WHOKNOWS);
+        UnitHeal(caster, caster, RMinBJ(_lifedrain * PERIOD, GetUnitState(_target, UNIT_STATE_LIFE)));
       }
-      if (GetUnitState(caster, UNIT_STATE_MANA) < GetUnitState(caster, UNIT_STATE_MAX_MANA) || !IsUnitAlly(target, GetOwningPlayer(caster))){
-        UnitRestoreMana(caster, caster, RMinBJ(manadrain * PERIOD, GetUnitState(target, UNIT_STATE_MANA)));
-        UnitReduceMana(caster, target, manadrain * PERIOD);
+      if (GetUnitState(caster, UNIT_STATE_MANA) < GetUnitState(caster, UNIT_STATE_MAX_MANA) || !IsUnitAlly(_target, GetOwningPlayer(caster))){
+        UnitRestoreMana(caster, caster, RMinBJ(_manadrain * PERIOD, GetUnitState(_target, UNIT_STATE_MANA)));
+        UnitReduceMana(caster, _target, _manadrain * PERIOD);
       }
     }
 
-    private void periodic( ){
+    private void Periodic( ){
       tick = tick + 1;
       if (tick >= PERIOD * T32_FPS){
-        drain();
-        MoveLightning(lightning, true, GetUnitX(this.caster), GetUnitY(this.caster), GetUnitX(target), GetUnitY(target));
-        if (GetDistanceBetweenPoints(GetUnitX(this.caster), GetUnitY(this.caster), GetUnitX(target), GetUnitY(target)) > RANGE + RADIUS / 2 || !UnitAlive(target) || IsUnitType(target, UNIT_TYPE_MAGIC_IMMUNE)){
+        Drain();
+        MoveLightning(_lightning, true, GetUnitX(this.caster), GetUnitY(this.caster), GetUnitX(_target), GetUnitY(_target));
+        if (GetDistanceBetweenPoints(GetUnitX(this.caster), GetUnitY(this.caster), GetUnitX(_target), GetUnitY(_target)) > RANGE + RADIUS / 2 || !UnitAlive(_target) || IsUnitType(_target, UNIT_TYPE_MAGIC_IMMUNE)){
           this.destroy();
         }
         tick = tick - PERIOD * T32_FPS;
@@ -64,11 +64,11 @@ namespace AzerothWarsCSharp.Source.Spells.Quel_thalas
     thistype (unit caster, unit target, float lifedrain, float manadrain ){
 
       this.caster = caster;
-      this.target = target;
-      this.lifedrain = lifedrain;
-      this.manadrain = manadrain;
-      lightning = AddLightning("DRAB", true, GetUnitX(this.caster), GetUnitY(this.caster), GetUnitX(this.target), GetUnitY(this.target));
-      this.effect = AddSpecialEffectTarget("Abilities\\Spells\\Other\\Drain\\DrainTarget.mdl", this.target, "chest");
+      this._target = target;
+      this._lifedrain = lifedrain;
+      this._manadrain = manadrain;
+      _lightning = AddLightning("DRAB", true, GetUnitX(this.caster), GetUnitY(this.caster), GetUnitX(this._target), GetUnitY(this._target));
+      this.effect = AddSpecialEffectTarget("Abilities\\Spells\\Other\\Drain\\DrainTarget.mdl", this._target, "chest");
       startPeriodic();
       ;;
     }
@@ -77,26 +77,26 @@ namespace AzerothWarsCSharp.Source.Spells.Quel_thalas
     //A group of SiphoningBeams.
 
     public static thistype[] ByUnit;
-    private Set siphoningBeams = 0;
-    private unit caster;
-    private float tick;
-    private effect effect;
+    private Set _siphoningBeams = 0;
+    private unit _caster;
+    private float _tick;
+    private effect _effect;
 
-    void destroy( ){
+    void Destroy( ){
       var i = 0;
       caster = null;
       while(true){
-        if ( i == siphoningBeams.size){ break; }
-        SiphoningBeam(siphoningBeams[i]).destroy();
+        if ( i == _siphoningBeams.size){ break; }
+        SiphoningBeam(_siphoningBeams[i]).destroy();
         i = i + 1;
       }
       DestroyEffect(this.effect);
-      siphoningBeams.destroy();
+      _siphoningBeams.destroy();
       stopPeriodic();
       deallocate();
     }
 
-    private void periodic( ){
+    private void Periodic( ){
       tick = tick + 1;
       if (tick >= PERIOD * T32_FPS){
         tick = tick - PERIOD * T32_FPS;
@@ -112,7 +112,7 @@ namespace AzerothWarsCSharp.Source.Spells.Quel_thalas
       unit u = null;
       this.caster = caster;
       this.tick = 0;
-      siphoningBeams = Set.create("siphoning Beams");
+      _siphoningBeams = Set.create("siphoning Beams");
       this.effect = AddSpecialEffectTarget("Abilities\\Spells\\Other\\Drain\\DrainCaster.mdl", this.caster, "chest");
 
       GroupEnumUnitsInRange(tempGroup, x, y, radius, null);
@@ -120,7 +120,7 @@ namespace AzerothWarsCSharp.Source.Spells.Quel_thalas
         if ( BlzGroupGetSize(tempGroup) == 0 || i == COUNT_BASE){ break; }
         u = BlzGroupUnitAt(tempGroup, GetRandomInt( 0, BlzGroupGetSize(tempGroup) - 1) );
         if (caster != u && !IsUnitType(u, UNIT_TYPE_STRUCTURE) && !IsUnitType(u, UNIT_TYPE_ANCIENT) && !IsUnitType(u, UNIT_TYPE_MECHANICAL) && IsUnitAliveBJ(u)){
-          siphoningBeams.add(SiphoningBeam.create(this.caster, u, lifedrain, manadrain));
+          _siphoningBeams.add(SiphoningBeam.create(this.caster, u, lifedrain, manadrain));
           i = i + 1;
         }
         GroupRemoveUnit(tempGroup, u);

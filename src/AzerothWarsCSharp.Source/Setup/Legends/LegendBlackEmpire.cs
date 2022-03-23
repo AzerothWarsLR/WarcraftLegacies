@@ -4,13 +4,13 @@ namespace AzerothWarsCSharp.Source.Legends
 {
   public static class LegendBlackEmpire
   {
-    public static Legend LEGEND_YOGG;
-    public static Legend LEGEND_VOLAZJ;
-    public static Legend LEGEND_ZAKAJZ;
+    public static Legend legendYogg;
+    public static Legend legendVolazj;
+    public static Legend legendZakajz;
 
     public static void Setup()
     {
-      Legend.Register(LEGEND_YOGG = new Legend
+      Legend.Register(legendYogg = new Legend
       {
         Unit = gg_unit_U02C_2829,
         PermaDies = true,
@@ -18,12 +18,12 @@ namespace AzerothWarsCSharp.Source.Legends
           "Yogg-Saron, the Fiend of a Thousand Faces, has been vanquished. The countless souls consigned to his maw have finally been avenged."
       });
       
-      Legend.Register(LEGEND_VOLAZJ = new Legend
+      Legend.Register(legendVolazj = new Legend
       {
         UnitType = FourCC(""E01D"")
       });
 
-      Legend.Register(LEGEND_ZAKAJZ = new Legend
+      Legend.Register(legendZakajz = new Legend
       {
         UnitType = FourCC(""U00P""),
         StartingXp = 8800

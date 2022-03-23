@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
   public sealed class QuestGnomeregan : QuestData{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC("R05Q");
+    private static readonly int QuestResearchId = FourCC("R05Q");
   
 
 
@@ -45,7 +45,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
+      Holder.ModObjectLimit(QuestResearchId, 1);
     }
 
     public  thistype ( ){

@@ -14,15 +14,15 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
     protected override string CompletionDescription => "The Fel Horde will join us && Magtheridon will die";
 
     protected override void OnComplete(){
-      if (NagaSetup.FACTION_NAGA.Team == TeamSetup.TEAM_NAGA){
-        FelHordeSetup.FACTION_FEL_HORDE.Team = TeamSetup.TEAM_NAGA;
+      if (NagaSetup.FactionNaga.Team == TeamSetup.TeamNaga){
+        FelHordeSetup.FactionFelHorde.Team = TeamSetup.TeamNaga;
       }
-      RemoveUnit(LegendFelHorde.LEGEND_MAGTHERIDON.Unit);
-      FelHordeSetup.FACTION_FEL_HORDE.ModObjectLimit(LegendFelHorde.LEGEND_MAGTHERIDON.UnitType, -Faction.UNLIMITED);
+      RemoveUnit(LegendFelHorde.LegendMagtheridon.Unit);
+      FelHordeSetup.FactionFelHorde.ModObjectLimit(LegendFelHorde.LegendMagtheridon.UnitType, -Faction.UNLIMITED);
     }
 
     public QuestBlackTemple ( ) : base("The Lord of Outland", "The Fel Horde is weak && complacent. The Illidari will easily subjugate them into IllidanFourCC("s service.", "ReplaceableTextures\\CommandButtons\\BTNMetamorphosis.blp""){
-      AddQuestItem(new QuestItemControlLegend(LegendFelHorde.LEGEND_BLACKTEMPLE, false));
+      AddQuestItem(new QuestItemControlLegend(LegendFelHorde.LegendBlacktemple, false));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC(""n00R""))));
       AddQuestItem(new QuestItemResearch(FourCC(""R063""), FourCC(""n055"")));
       Global = true;

@@ -6,8 +6,8 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
   public sealed class QuestSapphiron : QuestData{
 
   
-    private const int SAPPHIRON_ID = FourCC("ubdd");
-    private const int SAPPHIRON_RESEARCH = FourCC("R025");
+    private static readonly int SapphironId = FourCC("ubdd");
+    private static readonly int SapphironResearch = FourCC("R025");
   
 
 
@@ -16,12 +16,12 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     protected override string CompletionDescription => "The demihero Sapphiron";
 
     protected override void OnComplete(){
-      CreateUnit(Holder.Player, SAPPHIRON_ID, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()), GetUnitFacing(GetTriggerUnit()));
-      SetPlayerTechResearched(Holder.Player, SAPPHIRON_RESEARCH, 1);
+      CreateUnit(Holder.Player, SapphironId, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()), GetUnitFacing(GetTriggerUnit()));
+      SetPlayerTechResearched(Holder.Player, SapphironResearch, 1);
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(SAPPHIRON_RESEARCH, UNLIMITED);
+      Holder.ModObjectLimit(SapphironResearch, UNLIMITED);
     }
 
     public  thistype ( ){

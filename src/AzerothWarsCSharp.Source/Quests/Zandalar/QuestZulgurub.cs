@@ -6,16 +6,16 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
   public sealed class QuestZulgurub : QuestData{
 
   
-    private const int ZULGURUB_RESEARCH = FourCC("R02M");
-    private const int TROLL_SHRINE_ID = FourCC("o04X");
-    private const int RAVAGER_ID = FourCC("o021");
+    private static readonly int ZulgurubResearch = FourCC("R02M");
+    private static readonly int TrollShrineId = FourCC("o04X");
+    private static readonly int RavagerId = FourCC("o021");
   
 
 
     protected override string CompletionPopup => "ZulFourCC(Gurub has fallen. The Gurubashi trolls lend their might to the " + Holder.Team.Name  + ".";
 
     protected override string CompletionDescription => 
-      return "Control of ZulFourCC("Gurub, 300 gold tribute && the ability to train " + GetObjectName(RAVAGER_ID") + "s from the " + GetObjectName(TROLL_SHRINE_ID);
+      return "Control of ZulFourCC("Gurub, 300 gold Tribute && the Ability to Train " + GetObjectName(RAVAGER_ID") + "s from the " + GetObjectName(TROLL_SHRINE_ID);
     }
 
     protected override void OnComplete(){

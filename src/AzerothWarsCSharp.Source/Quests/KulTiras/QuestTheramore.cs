@@ -8,11 +8,11 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
   public sealed class QuestTheramore : QuestData{
 
   
-    private const int RESEARCH_ID = FourCC("R06K");
+    private static readonly int ResearchId = FourCC("R06K");
   
 
 
-    private static group theramoreUnits = CreateGroup();
+    private static group _theramoreUnits = CreateGroup();
 
     protected override string CompletionPopup => "A sizeable isle off the coast of Dustwallow Marsh has been colonized && dubbed Theramore, marking the first human settlement to be established on Kalimdor.";
 
@@ -21,49 +21,49 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
     private static void GrantToPlayer(player whichPlayer ){
       unit u;
       while(true){
-        u = FirstOfGroup(theramoreUnits);
+        u = FirstOfGroup(_theramoreUnits);
         if ( u == null){ break; }
         UnitRescue(u, whichPlayer);
-        GroupRemoveUnit(theramoreUnits, u);
+        GroupRemoveUnit(_theramoreUnits, u);
       }
-      DestroyGroup(theramoreUnits);
+      DestroyGroup(_theramoreUnits);
       u = null;
-      theramoreUnits = null;
+      _theramoreUnits = null;
     }
 
     private void OnFail( ){
       thistype.GrantToPlayer(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      Holder.ModObjectLimit(RESEARCH_ID, -UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, -UNLIMITED);
     }
 
     protected override void OnComplete(){
       thistype.GrantToPlayer(Holder.Player);
-      Holder.ModObjectLimit(RESEARCH_ID, -UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, -UNLIMITED);
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Theramore", "The distant lands of Kalimdor remain untouched by human civilization. If the Third War proceeds poorly, it may become necessary to establish a forward base there.", "ReplaceableTextures\\CommandButtons\\BTNHumanArcaneTower.blp");
-      AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("h076")));
+      AddQuestItem(new QuestItemResearch(ResearchId, FourCC("h076")));
       AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 
-    private static void onInit( ){
+    private static void OnInit( ){
       group tempGroup;
       unit u;
       tempGroup = CreateGroup();
-      theramoreUnits = CreateGroup();
+      _theramoreUnits = CreateGroup();
       GroupEnumUnitsInRect(tempGroup, Regions.Theramore.Rect, null);
       while(true){
         u = FirstOfGroup(tempGroup);
         if ( u == null){ break; }
         SetUnitInvulnerable(u, true);
         SetUnitOwner(u, Player(PLAYER_NEUTRAL_PASSIVE), true);
-        GroupAddUnit(theramoreUnits, u);
+        GroupAddUnit(_theramoreUnits, u);
         GroupRemoveUnit(tempGroup, u);
       }
       DestroyGroup(tempGroup);

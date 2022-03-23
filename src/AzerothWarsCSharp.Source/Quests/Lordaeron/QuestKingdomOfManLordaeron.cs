@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
   public sealed class QuestKingdomOfManLordaeron : QuestData{
 
   
-    private const int RESEARCH_ID = FourCC("R01N");
+    private static readonly int ResearchId = FourCC("R01N");
   
 
 
@@ -32,15 +32,15 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       ARTIFACT_CROWNSTORMWIND.setStatus(ARTIFACT_STATUS_HIDDEN);
       ARTIFACT_CROWNSTORMWIND.setDescription("Melted down");
       //Research
-      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
-      DisplayResearchAcquired(Holder.Player, RESEARCH_ID, 1);
+      SetPlayerTechResearched(Holder.Player, ResearchId, 1);
+      DisplayResearchAcquired(Holder.Player, ResearchId, 1);
       //High King Arthas
       LEGEND_ARTHAS.UnitType = FourCC("Harf");
       LEGEND_ARTHAS.ClearUnitDependencies();
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }
 
     public  thistype ( ){

@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
   public sealed class QuestIllidanChapterThree : QuestData{
 
    
-    private const int RITUAL_ID = FourCC("A0KY");
+    private static readonly int RitualId = FourCC("A0KY");
   
 
 
@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       thistype this = thistype.allocate("Chapter Three: Dwellers from the Deep", "Awakening the Naga will give Illidan the army he needs to achieve his goals.", "ReplaceableTextures\\CommandButtons\\BTNNagaMyrmidon.blp");
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.StartQuest3.Rect, "the exit"));
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.MaelstromAmbient.Rect, "the Maelstrom"));
-      AddQuestItem(new QuestItemCastSpell(RITUAL_ID, true));
+      AddQuestItem(new QuestItemCastSpell(RitualId, true));
       ;;
     }
 

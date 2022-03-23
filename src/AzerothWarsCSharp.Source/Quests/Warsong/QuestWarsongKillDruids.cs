@@ -6,14 +6,14 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
   public sealed class QuestWarsongKillDruids : QuestData{
 
 
-    private static int EXPERIENCE_REWARD = 10000;
+    private static int _experienceReward = 10000;
 
     protected override string CompletionPopup => "Nordrassil has been captured. The Warsong is supreme!";
 
-    protected override string CompletionDescription => "Grom Hellscream gains " + I2S(EXPERIENCE_REWARD) + " experience";
+    protected override string CompletionDescription => "Grom Hellscream gains " + I2S(_experienceReward) + " experience";
 
     protected override void OnComplete(){
-      AddHeroXP(LEGEND_GROM.Unit, EXPERIENCE_REWARD, true);
+      AddHeroXP(LEGEND_GROM.Unit, _experienceReward, true);
     }
 
     public  thistype ( ){

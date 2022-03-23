@@ -4,14 +4,14 @@ namespace AzerothWarsCSharp.Source.Legends
 {
   public static class LegendCthun
   {
-    public static Legend LEGEND_SKERAM;
-    public static Legend LEGEND_GATESAHNQIRAJ;
-    public static Legend LEGEND_CTHUN;
-    public static Legend LEGEND_YOR;
+    public static Legend legendSkeram;
+    public static Legend legendGatesahnqiraj;
+    public static Legend legendCthun;
+    public static Legend legendYor;
 
     public static void Setup()
     {
-      LEGEND_CTHUN = new Legend
+      legendCthun = new Legend
       {
         Unit = gg_unit_U00R_0609,
         PermaDies = true,
@@ -19,21 +19,21 @@ namespace AzerothWarsCSharp.Source.Legends
                        "Today he experiences his third defeat his first true death."
       };
 
-      LEGEND_SKERAM = new Legend
+      legendSkeram = new Legend
       {
         UnitType = FourCC(""E005""),
         PlayerColor = PLAYER_COLOR_RED,
         Name = "Prophet Skeram"
       };
 
-      LEGEND_GATESAHNQIRAJ = new Legend
+      legendGatesahnqiraj = new Legend
       {
         Unit = gg_unit_h02U_2413
       };
 
-      LEGEND_YOR = new Legend();
-      LEGEND_YOR.UnitType = FourCC("U02A");
-      LEGEND_YOR.StartingXp = 8800;
+      legendYor = new Legend();
+      legendYor.UnitType = FourCC("U02A");
+      legendYor.StartingXp = 8800;
     }
   }
 }

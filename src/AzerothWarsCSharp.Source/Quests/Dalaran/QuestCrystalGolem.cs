@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
   public sealed class QuestCrystalGolem : QuestData{
 
   
-    private const int RESEARCH_ID = FourCC("R045");
+    private static readonly int ResearchId = FourCC("R045");
   
 
 

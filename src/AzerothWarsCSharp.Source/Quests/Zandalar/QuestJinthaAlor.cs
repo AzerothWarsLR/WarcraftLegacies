@@ -6,16 +6,16 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
   public sealed class QuestJinthaAlor : QuestData{
 
   
-    private const int JINTHAALOR_RESEARCH = FourCC("R02N");
-    private const int BEAR_RIDER_ID = FourCC("o02K");
-    private const int TROLL_SHRINE_ID = FourCC("o04X");
+    private static readonly int JinthaalorResearch = FourCC("R02N");
+    private static readonly int BearRiderId = FourCC("o02K");
+    private static readonly int TrollShrineId = FourCC("o04X");
   
 
 
     protected override string CompletionPopup => "JinthaFourCC(Alor has fallen. The Vilebranch trolls lend their might to the " + Holder.Team.Name + ".";
 
     protected override string CompletionDescription => 
-      return "Control of JinthaFourCC("Alor, 300 gold tribute && the ability to train " + GetObjectName(BEAR_RIDER_ID") + "s from the " + GetObjectName(TROLL_SHRINE_ID);
+      return "Control of JinthaFourCC("Alor, 300 gold Tribute && the Ability to Train " + GetObjectName(BEAR_RIDER_ID") + "s from the " + GetObjectName(TROLL_SHRINE_ID);
     }
 
     protected override void OnComplete(){

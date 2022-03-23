@@ -15,9 +15,9 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       "ReplaceableTextures\\CommandButtons\\BTNmidnightGS.blp")
     {
       _sequel = sequel;
-      AddQuestItem(new QuestItemLegendInRect(LegendBlackEmpire.LEGEND_VOLAZJ, Regions.DuskwoodCrypt.Rect,
+      AddQuestItem(new QuestItemLegendInRect(LegendBlackEmpire.legendVolazj, Regions.DuskwoodCrypt.Rect,
         "Duskwood Graveyard Crypt"));
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LEGEND_DUSKWOODGRAVEYARD, false));
+      AddQuestItem(new QuestItemControlLegend(LegendNeutral.legendDuskwoodgraveyard, false));
     }
 
     protected override string CompletionPopup => "Herald Volazj has found the Black Blade, Xal'alath.";
@@ -27,9 +27,9 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 
     protected override void OnComplete()
     {
-      if (LegendBlackEmpire.LEGEND_VOLAZJ.Unit != null && ArtifactSetup.ArtifactXalatath != null)
-        UnitAddItemSafe(LegendBlackEmpire.LEGEND_VOLAZJ.Unit, ArtifactSetup.ArtifactXalatath.Item);
-      BlackEmpireSetup.FACTION_BLACKEMPIRE.AddQuest(_sequel);
+      if (LegendBlackEmpire.legendVolazj.Unit != null && ArtifactSetup.ArtifactXalatath != null)
+        UnitAddItemSafe(LegendBlackEmpire.legendVolazj.Unit, ArtifactSetup.ArtifactXalatath.Item);
+      BlackEmpireSetup.factionBlackempire.AddQuest(_sequel);
       _sequel.Progress = QUEST_PROGRESS_INCOMPLETE;
     }
   }

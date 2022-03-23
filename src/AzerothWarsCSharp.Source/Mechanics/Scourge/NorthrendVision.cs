@@ -6,38 +6,38 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge
 {
   public static class NorthrendVision
   {
-    private static fogmodifier[] ScourgeFogModifiers;
+    private static fogmodifier[] _scourgeFogModifiers;
 
     private static void Enable()
     {
-      player whichPlayer = ScourgeSetup.FACTION_SCOURGE.Player;
+      player whichPlayer = ScourgeSetup.FactionScourge.Player;
       var i = 0;
-      ScourgeFogModifiers[0] =
-        CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, Regions.Storm_Peaks.Rect, true, true);
-      ScourgeFogModifiers[1] =
-        CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, Regions.Central_Northrend.Rect, true, true);
-      ScourgeFogModifiers[2] =
-        CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, Regions.The_Basin.Rect, true, true);
-      ScourgeFogModifiers[3] =
-        CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, Regions.Ice_Crown.Rect, true, true);
-      ScourgeFogModifiers[4] = CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, Regions.Fjord.Rect, true, true);
-      ScourgeFogModifiers[5] =
-        CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, Regions.Eastern_Northrend.Rect, true, true);
-      ScourgeFogModifiers[6] =
-        CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, Regions.Far_Eastern_Northrend.Rect, true, true);
-      ScourgeFogModifiers[7] =
+      _scourgeFogModifiers[0] =
+        CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, Regions.StormPeaks.Rect, true, true);
+      _scourgeFogModifiers[1] =
+        CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, Regions.CentralNorthrend.Rect, true, true);
+      _scourgeFogModifiers[2] =
+        CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, Regions.TheBasin.Rect, true, true);
+      _scourgeFogModifiers[3] =
+        CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, Regions.IceCrown.Rect, true, true);
+      _scourgeFogModifiers[4] = CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, Regions.Fjord.Rect, true, true);
+      _scourgeFogModifiers[5] =
+        CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, Regions.EasternNorthrend.Rect, true, true);
+      _scourgeFogModifiers[6] =
+        CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, Regions.FarEasternNorthrend.Rect, true, true);
+      _scourgeFogModifiers[7] =
         CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, Regions.Coldarra.Rect, true, true);
-      ScourgeFogModifiers[8] =
-        CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, Regions.Borean_Tundra.Rect, true, true);
-      ScourgeFogModifiers[9] =
+      _scourgeFogModifiers[8] =
+        CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, Regions.BoreanTundra.Rect, true, true);
+      _scourgeFogModifiers[9] =
         CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, Regions.IcecrownShipyard.Rect, true, true);
 
-      foreach (var modifier in ScourgeFogModifiers) FogModifierStart(modifier);
+      foreach (var modifier in _scourgeFogModifiers) FogModifierStart(modifier);
     }
 
     private static void Disable()
     {
-      foreach (var modifier in ScourgeFogModifiers) DestroyFogModifier(modifier);
+      foreach (var modifier in _scourgeFogModifiers) DestroyFogModifier(modifier);
     }
 
     private static void PersonChangesFaction()

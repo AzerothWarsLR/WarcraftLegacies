@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
 
 
-    private QuestData questToDiscover;
+    private QuestData _questToDiscover;
 
     protected override string CompletionPopup => "Illidan has learned of the existence of the Skull of GulFourCC(dan, hidden in Dalaran";
 
@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     protected override void OnComplete(){
       LEGEND_ILLIDAN.UnitType = FourCC("Eevi");
-      questToDiscover.Progress = QUEST_PROGRESS_INCOMPLETE;
+      _questToDiscover.Progress = QUEST_PROGRESS_INCOMPLETE;
     }
 
     public  thistype (QuestData questToDiscover ){
@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.IllidanBoat1.Rect, "the escape boat"));
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.SkullOfGuldan.Rect, "the dungeons of Dalaran"));
       this.AddQuestItem(new QuestItemLegendHasArtifact(LEGEND_ILLIDAN, ARTIFACT_SKULLOFGULDAN));
-      this.questToDiscover = questToDiscover;
+      this._questToDiscover = questToDiscover;
 
       ;;
     }

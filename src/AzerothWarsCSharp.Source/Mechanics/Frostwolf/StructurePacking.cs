@@ -25,9 +25,9 @@ namespace AzerothWarsCSharp.Source.Mechanics.Frostwolf
 
 
 
-    private static Table byStructureId;
+    private static Table _byStructureId;
 
-    private int buildAbility;
+    private int _buildAbility;
 
 
     void SetupKodo(unit whichUnit ){
@@ -35,7 +35,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Frostwolf
       BlzSetSpecialEffectScale(e, 025);
       BlzSetSpecialEffectTime(e, 100);
       PackKodo(GetUnitId(whichUnit)).PackedBuildingEffect = e;
-      UnitAddAbility(whichUnit, buildAbility);
+      UnitAddAbility(whichUnit, _buildAbility);
       e = null;
     }
 
@@ -52,7 +52,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Frostwolf
 
     }
 
-    private static void packBuilding(unit building, unit kodo ){
+    private static void PackBuilding(unit building, unit kodo ){
       if (thistype.byStructureId[GetUnitTypeId(building)] == 0){
         BJDebugMsg("ERROR: there is no PackableStructure setup for building "+ GetUnitName(building));
         return;
@@ -75,7 +75,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Frostwolf
       }
     }
 
-    private static void onInit( ){
+    private static void OnInit( ){
       trigger trig = CreateTrigger();
       TriggerRegisterAnyUnitEventBJ( trig, EVENT_PLAYER_UNIT_TRAIN_FINISH );
       TriggerAddAction( trig,  thistype.OnTrainAnyUnit);

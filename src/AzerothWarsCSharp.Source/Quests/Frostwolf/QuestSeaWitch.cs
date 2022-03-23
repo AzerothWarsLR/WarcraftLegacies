@@ -12,12 +12,12 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
   public sealed class QuestSeaWitch : QuestData{
 
   
-    private weathereffect Storm;
-    private const int QUEST_RESEARCH_ID = FourCC("R05H");
+    private weathereffect _storm;
+    private static readonly int QuestResearchId = FourCC("R05H");
   
 
 
-    protected override string CompletionPopup => "The sea witch ZarFourCC("jira has been slain. Thrall && Vol")jin can now sail.";
+    protected override string CompletionPopup => "The sea witch ZarFourCC("jira Has been slain. Thrall && Vol")jin can now sail.";
 
     protected override string CompletionDescription => "Gain control of all neutral units on the Darkspear Isles && teleport to shore";
 
@@ -31,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       unit u;
       //Transfer control of all passive units on island and teleport all Frostwolf units to shore
       RescueNeutralUnitsInRect(Regions.CairneStart.Rect, Holder.Player);
-      GroupEnumUnitsInRect(tempGroup, Regions.Darkspear_Island.Rect, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.DarkspearIsland.Rect, null);
       while(true){
         u = FirstOfGroup(tempGroup);
         if ( u == null){ break; }
@@ -44,26 +44,26 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
         GroupRemoveUnit(tempGroup, u);
       }
       DestroyGroup(tempGroup);
-      RemoveWeatherEffectBJ(Storm);
+      RemoveWeatherEffectBJ(_storm);
       CreateUnits(Holder.Player, FourCC("opeo"), -1818, -2070, 270, 3);
       RescueNeutralUnitsInRect(Regions.EchoUnlock.Rect, Holder.Player);
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
+      Holder.ModObjectLimit(QuestResearchId, 1);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Riders on the Storm", "Warchief Thrall && his forces have been shipwrecked on the Darkspear Isles. Kill the Sea Witch there to give them a chance to rebuild their fleet && escape.", "ReplaceableTextures\\CommandButtons\\BTNGhost.blp");
       AddQuestItem(new QuestItemKillUnit(LEGEND_SEAWITCH.Unit));
       AddQuestItem(new QuestItemExpire(600));
-      ResearchId = QUEST_RESEARCH_ID;
+      ResearchId = QuestResearchId;
       ;;
     }
 
-    private static void onInit( ){
-      Storm = AddWeatherEffect(Regions.Darkspear_Island.Rect, FourCC("RAhr"));
-      EnableWeatherEffect(Storm, true);
+    private static void OnInit( ){
+      _storm = AddWeatherEffect(Regions.DarkspearIsland.Rect, FourCC("RAhr"));
+      EnableWeatherEffect(_storm, true);
     }
 
 

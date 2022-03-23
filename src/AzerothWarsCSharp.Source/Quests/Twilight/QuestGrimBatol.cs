@@ -18,14 +18,14 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
     protected override string CompletionDescription => "Control of all units in Grim Batol && able to train Orcish Death Knights";
 
     private void OnFail( ){
-      RescueNeutralUnitsInRect(Regions.Grim_Batol.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      RescueNeutralUnitsInRect(Regions.GrimBatol.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete(){
       SetUnitOwner(gg_unit_h01Z_0618, Holder.Player, true);
       WaygateActivateBJ( true, gg_unit_n08R_2209 );
       WaygateActivateBJ( true, gg_unit_n08R_2214 );
-      RescueNeutralUnitsInRect(Regions.Grim_Batol.Rect, Holder.Player);
+      RescueNeutralUnitsInRect(Regions.GrimBatol.Rect, Holder.Player);
     }
 
     private void OnAdd( ){

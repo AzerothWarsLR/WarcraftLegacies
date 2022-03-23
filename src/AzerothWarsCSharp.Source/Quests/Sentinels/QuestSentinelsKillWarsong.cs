@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
   public sealed class QuestSentinelsKillWarsong : QuestData{
 
   
-    private const int RESEARCH_ID = FourCC("R007");
+    private static readonly int ResearchId = FourCC("R007");
   
 
 
@@ -15,11 +15,11 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
     protected override string CompletionDescription => "Enable the Watcher Bastion to be built";
 
     protected override void OnComplete(){
-      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
+      SetPlayerTechResearched(Holder.Player, ResearchId, 1);
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }
 
     public  thistype ( ){

@@ -12,14 +12,14 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
   public sealed class QuestTheBloodElves : QuestData{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC("R04Q");
-    private const int UNITTYPE_ID = FourCC("n048");
-    private const int BUILDING_ID = FourCC("n0A2");
-    private const int HERO_ID = FourCC("Hkal");
+    private static readonly int QuestResearchId = FourCC("R04Q");
+    private static readonly int UnittypeId = FourCC("n048");
+    private static readonly int BuildingId = FourCC("n0A2");
+    private static readonly int HeroId = FourCC("Hkal");
   
 
 
-    private static group SecondChanceUnits;
+    private static group _secondChanceUnits;
 
     protected override string CompletionPopup => "The Legion Nexus has been obliterated. A group of ambitious mages seize the opportunity to study the demonsFourCC( magic, becoming the first Blood Mages.";
 
@@ -27,15 +27,15 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       return "The Sunwell has fallen. The survivors escape to Dalaran && name themselves the Blood Elves in remembrance of their fallen people.";
     }
 
-    protected override string CompletionDescription => "Learn to train " + GetObjectName(UNITTYPE_ID) + "s from the Consortium, && you can summon Prince KaelFourCC(thas from the Altar of Prowess";
+    protected override string CompletionDescription => "Learn to train " + GetObjectName(UnittypeId) + "s from the Consortium, && you can summon Prince KaelFourCC(thas from the Altar of Prowess";
 
     private string operator FailureDescription( ){
-      return "You lose everything you control, but you gain Prince KaelFourCC("thas at the Dalaran Dungeons, && you can train " + GetObjectName(UNITTYPE_ID") + "s from the Consortium";
+      return "You lose everything you control, but you gain Prince KaelFourCC("thas at the Dalaran dungeons, && you can train " + GetObjectName(UNITTYPE_ID") + "s from the Consortium";
     }
 
     protected override void OnComplete(){
-      SetPlayerTechResearched(Holder.Player, QUEST_RESEARCH_ID, 1);
-      DisplayUnitTypeAcquired(Holder.Player, UNITTYPE_ID, "You can now train " + GetObjectName(UNITTYPE_ID) + "s from the " + GetObjectName(BUILDING_ID) + ".");
+      SetPlayerTechResearched(Holder.Player, QuestResearchId, 1);
+      DisplayUnitTypeAcquired(Holder.Player, UnittypeId, "You can now train " + GetObjectName(UnittypeId) + "s from the " + GetObjectName(BuildingId) + ".");
     }
 
     private void OnFail( ){
@@ -52,7 +52,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
           GroupRemoveUnit(thistype.SecondChanceUnits, u);
         }
         DestroyGroup(thistype.SecondChanceUnits);
-        SetPlayerTechResearched(Holder.Player, QUEST_RESEARCH_ID, 1);
+        SetPlayerTechResearched(Holder.Player, QuestResearchId, 1);
         LEGEND_KAEL.Spawn(Holder.Player, -11410, 21975, 110);
         UnitAddItem(LEGEND_KAEL.Unit, CreateItem(FourCC("I00M"), GetUnitX(LEGEND_KAEL.Unit), GetUnitY(LEGEND_KAEL.Unit)));
         if (GetLocalPlayer() == Holder.Player){
@@ -63,12 +63,12 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(QUEST_RESEARCH_ID, UNLIMITED);
-      Holder.ModObjectLimit(UNITTYPE_ID, 6);
-      Holder.ModObjectLimit(HERO_ID, 1);
+      Holder.ModObjectLimit(QuestResearchId, UNLIMITED);
+      Holder.ModObjectLimit(UnittypeId, 6);
+      Holder.ModObjectLimit(HeroId, 1);
     }
 
-    private static void onInit( ){
+    private static void OnInit( ){
       //Setup initially invulnerable and hidden group at Dalaran Dungeons
       group tempGroup = CreateGroup();
       unit u;

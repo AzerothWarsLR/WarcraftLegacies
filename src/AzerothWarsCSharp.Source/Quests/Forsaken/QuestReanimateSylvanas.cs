@@ -6,12 +6,12 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
   public sealed class QuestReanimateSylvanas : QuestData{
 
   
-    private const int SYLVANAS_ID = FourCC("Usyl");
-    private const int ALTAR_ID = FourCC("uaod");
+    private static readonly int SylvanasId = FourCC("Usyl");
+    private static readonly int AltarId = FourCC("uaod");
   
 
 
-    protected override string CompletionPopup => "QuelFourCC("thalas has fallen to the Scourge")s onslaught. The Sunwell itself has been corrupted, cutting the quel)dorei off from the source of their longevity. Sylvanas is denied a clean death following her tenacious defense, && she becomes the first of the High Elven Banshees.";
+    protected override string CompletionPopup => "QuelFourCC("thalas Has fallen To the Scourge")s onslaught. The Sunwell itself has been corrupted, cutting the quel)dorei off from the source of their longevity. Sylvanas is denied a clean death following her tenacious defense, && she becomes the first of the High Elven Banshees.";
 
     protected override string CompletionDescription => 
       return "You can summon Sylvanas from the " + GetObjectName(ALTAR_ID);

@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Fel_Horde
 
 
     //! runtextmacro AIDS()
-    private static thistype instance = 0;
+    private static thistype _instance = 0;
 
 
     float operator RallyX( ){
@@ -53,19 +53,19 @@ namespace AzerothWarsCSharp.Source.Mechanics.Fel_Horde
   }
 }
 
-    private static bool AIDS_filter(unit u ){
+    private static bool AidsFilter(unit u ){
       if (GetUnitTypeId(u) == GATE_UNITTYPE){
         return true;
       }
       return false;
     }
 
-    private void AIDS_onCreate( ){
+    private void AidsOnCreate( ){
 
       IssuePointOrder(this.unit, "setrally", this.SpawnX, this.SpawnY);
     }
 
-    private void AIDS_onDestroy( ){
+    private void AidsOnDestroy( ){
       if (thistype.instance == this){
         thistype.instance = 0;
       }

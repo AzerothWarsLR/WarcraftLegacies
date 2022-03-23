@@ -7,8 +7,8 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
   public sealed class QuestGazlowe : QuestData{
 
   
-    private const int RESEARCH_ID = FourCC("R01F");
-    private const int HERO_ID = FourCC("Ntin");
+    private static readonly int ResearchId = FourCC("R01F");
+    private static readonly int HeroId = FourCC("Ntin");
   
 
 
@@ -18,12 +18,12 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     protected override string CompletionDescription => "You can summon Gazlowe from the Altar of Storms, && Shredders learn to cast Pocket Factory, Saw Bombardment, && Emergency Repairs";
 
     protected override void OnComplete(){
-      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
+      SetPlayerTechResearched(Holder.Player, ResearchId, 1);
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(HERO_ID, 1);
-      Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
+      Holder.ModObjectLimit(HeroId, 1);
+      Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }
 
     public  thistype ( ){

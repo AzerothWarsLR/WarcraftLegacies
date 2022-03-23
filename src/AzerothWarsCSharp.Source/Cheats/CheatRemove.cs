@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Cheats
 
   
     private const string COMMAND     = "-remove";
-    private string parameter = null;
+    private string _parameter = null;
   
 
     private static void Remove( ){

@@ -4,15 +4,15 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
   public class CthunSetup
   {
-    public static Faction FACTION_CTHUN;
+    public static Faction factionCthun;
 
 
     public static void Setup()
     {
       Faction f;
-      FACTION_CTHUN = Faction.create("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cFFFFDF80",
+      factionCthun = Faction.create("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cFFFFDF80",
         "ReplaceableTextures\\CommandButtons\\BTNCthunIcon.blp");
-      f = FACTION_CTHUN;
+      f = factionCthun;
       f.Team = TEAM_OLDGOD;
       f.StartingGold = 150;
       f.StartingLumber = 500;

@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
   {
     public static void Setup()
     {
-      var goblin = FactionSetup.GoblinSetup.FACTION_GOBLIN;
+      var goblin = FactionSetup.GoblinSetup.factionGoblin;
       goblin.StartingQuest = goblin.AddQuest(new QuestBusinessExpansion());
       goblin.AddQuest(new QuestGadgetzan());
       goblin.AddQuest(new QuestExplosiveEngineering());

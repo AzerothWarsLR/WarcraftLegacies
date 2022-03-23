@@ -9,41 +9,41 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
 
 
     //! runtextmacro AIDS()
-    private static thistype instance = 0 ;//There can only be one Herald.
-    private BlackEmpirePortal linkedPortal ;//Each Herald keeps a BlackEmpirePortal active, but only while alive.
+    private static thistype _instance = 0 ;//There can only be one Herald.
+    private BlackEmpirePortal _linkedPortal ;//Each Herald keeps a BlackEmpirePortal active, but only while alive.
 
     public static thistype operator Instance( ){
       ;type.instance;
     }
 
     private void UnlinkToPortal( ){
-      if (linkedPortal.PortalState == BLACKEMPIREPORTALSTATE_EXITONLY){
-        linkedPortal.PortalState = BLACKEMPIREPORTALSTATE_CLOSED;
+      if (_linkedPortal.PortalState == BLACKEMPIREPORTALSTATE_EXITONLY){
+        _linkedPortal.PortalState = BLACKEMPIREPORTALSTATE_CLOSED;
       }
-      linkedPortal = 0;
+      _linkedPortal = 0;
     }
 
     private void LinkToPortal(BlackEmpirePortal whichPortal ){
-      linkedPortal = whichPortal;
-      linkedPortal.PortalState = BLACKEMPIREPORTALSTATE_EXITONLY;
+      _linkedPortal = whichPortal;
+      _linkedPortal.PortalState = BLACKEMPIREPORTALSTATE_EXITONLY;
     }
 
     private void AIDS_onCreate( ){
-      if (instance == 0){
-        instance = this;
+      if (_instance == 0){
+        _instance = this;
       }else {
         BJDebugMsg("ERROR: there can only be one " + GetObjectName(HERALD_ID));
         return;
       }
       LinkToPortal(BlackEmpirePortal.Objective);
-      BlzSetUnitName(this.unit, "Herald of " + linkedPortal.Name);
+      BlzSetUnitName(this.unit, "Herald of " + _linkedPortal.Name);
     }
 
     private void AIDS_onDestroy( ){
-      if (this == instance){
+      if (this == _instance){
         ReturnToNyalotha();
         UnlinkToPortal();
-        instance = 0;
+        _instance = 0;
       }
     }
 

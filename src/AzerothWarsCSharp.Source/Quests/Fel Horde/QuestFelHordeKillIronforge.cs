@@ -6,24 +6,24 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
   public sealed class QuestFelHordeKillIronforge : QuestData{
  
   
-    private const int RESEARCH_ID = FourCC("R011");
-    private const int UNITTYPE_ID = FourCC("nina");
-    private const int BUILDING_ID = FourCC("o030");
+    private static readonly int ResearchId = FourCC("R011");
+    private static readonly int UnittypeId = FourCC("nina");
+    private static readonly int BuildingId = FourCC("o030");
     private const int UNIT_LIMIT = 4;
   
 
 
     protected override string CompletionPopup => "The Great Forge has been annihilated. The Fel HordeFourCC(s peons immediately salvage its intact refineries && put them to purpose in the creation of Felsteel.";
 
-    protected override string CompletionDescription => "Learn to train " + I2S(UNIT_LIMIT) + " " + GetObjectName(UNITTYPE_ID) + "s from the " + GetObjectName(BUILDING_ID) + " && acquire Felsteel Plating";
+    protected override string CompletionDescription => "Learn to train " + I2S(UNIT_LIMIT) + " " + GetObjectName(UnittypeId) + "s from the " + GetObjectName(BuildingId) + " && acquire Felsteel Plating";
 
     protected override void OnComplete(){
-      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
+      SetPlayerTechResearched(Holder.Player, ResearchId, 1);
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
-      Holder.ModObjectLimit(UNITTYPE_ID, UNIT_LIMIT);
+      Holder.ModObjectLimit(ResearchId, UNLIMITED);
+      Holder.ModObjectLimit(UnittypeId, UNIT_LIMIT);
     }
 
     public  thistype ( ){

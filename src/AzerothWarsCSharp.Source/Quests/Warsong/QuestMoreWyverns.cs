@@ -6,18 +6,18 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
   public sealed class QuestMoreWyverns : QuestData{
 
   
-    private const int UNITTYPE_ID = FourCC("owyv");
+    private static readonly int UnittypeId = FourCC("owyv");
     private const int LIMIT_CHANGE = 2;
   
 
 
     protected override string CompletionPopup => "The Sentinels have been eliminated. Warchief Thrall breathes a sigh of relief, knowing that his people are safe - for now.";
 
-    protected override string CompletionDescription => "Learn to train " + I2S(LIMIT_CHANGE) + " additional " + GetObjectName(UNITTYPE_ID) + "s";
+    protected override string CompletionDescription => "Learn to train " + I2S(LIMIT_CHANGE) + " additional " + GetObjectName(UnittypeId) + "s";
 
     protected override void OnComplete(){
-      Holder.ModObjectLimit(UNITTYPE_ID, LIMIT_CHANGE);
-      DisplayUnitLimit(Holder, UNITTYPE_ID);
+      Holder.ModObjectLimit(UnittypeId, LIMIT_CHANGE);
+      DisplayUnitLimit(Holder, UnittypeId);
     }
 
     public  thistype ( ){

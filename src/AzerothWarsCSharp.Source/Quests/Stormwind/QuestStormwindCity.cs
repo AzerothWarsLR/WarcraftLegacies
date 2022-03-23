@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
   public sealed class QuestStormwindCity : QuestData{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC("R02S");
+    private static readonly int QuestResearchId = FourCC("R02S");
   
 
 
@@ -49,7 +49,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
+      Holder.ModObjectLimit(QuestResearchId, 1);
     }
 
     public  thistype ( ){

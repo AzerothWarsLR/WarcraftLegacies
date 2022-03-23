@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
       "The Dragon Soul was lost in the Blackrock Mountain long ago. Skeram might be powerful enough to restore it.",
       "ReplaceableTextures\\CommandButtons\\BTNBrokenAmulet.blp")
     {
-      AddQuestItem(new QuestItemChannelRect(Regions.DragonSoulChannel, "Burning Steppe", LegendCthun.LEGEND_SKERAM, 240,
+      AddQuestItem(new QuestItemChannelRect(Regions.DragonSoulChannel, "Burning Steppe", LegendCthun.legendSkeram, 240,
         160));
     }
 
@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
 
     protected override void OnComplete()
     {
-      UnitAddItemSafe(LegendCthun.LEGEND_SKERAM.Unit, ArtifactSetup.ArtifactDemonsoul.Item);
+      UnitAddItemSafe(LegendCthun.legendSkeram.Unit, ArtifactSetup.ArtifactDemonsoul.Item);
     }
   }
 }

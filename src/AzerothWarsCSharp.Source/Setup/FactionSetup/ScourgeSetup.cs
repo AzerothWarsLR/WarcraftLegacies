@@ -6,14 +6,14 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
   public class ScourgeSetup{
 
   
-    public static Faction FACTION_SCOURGE { get; private set; }
+    public static Faction FactionScourge { get; private set; }
   
 
     public static void Setup( ){
       Faction f;
 
-      FACTION_SCOURGE = Faction.create("Scourge", PLAYER_COLOR_PURPLE, "|c00540081","ReplaceableTextures\\CommandButtons\\BTNRevenant.blp");
-      f = FACTION_SCOURGE;
+      FactionScourge = Faction.create("Scourge", PLAYER_COLOR_PURPLE, "|c00540081","ReplaceableTextures\\CommandButtons\\BTNRevenant.blp");
+      f = FactionScourge;
       f.Team = TEAM_LEGION;
       f.UndefeatedResearch = FourCC("R05K");
       f.StartingGold = 150;

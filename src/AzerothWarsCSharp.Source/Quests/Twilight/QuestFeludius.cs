@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
   public sealed class QuestFeludius : QuestData{
 
   
-    private const int RESEARCH_ID = FourCC("R07T");
+    private static readonly int ResearchId = FourCC("R07T");
   
 
 
@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       thistype this = thistype.allocate("Gift of the Windlord", "Bringing the Legendary Sword, Thunderfury, to Uldum will grant us the favors of AlFourCC("akir, the great Wind Elemental Lord", "ReplaceableTextures\\CommandButtons\\BTNfuryoftheair.blp"");
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BD"))));
       AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_THUNDERFURY, Regions.UldumAmbiance.Rect, "Uldum"));
-      ResearchId = RESEARCH_ID;
+      base.ResearchId = ResearchId;
       ;;
     }
 

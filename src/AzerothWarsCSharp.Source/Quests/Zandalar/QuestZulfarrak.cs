@@ -8,14 +8,14 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
   public sealed class QuestZulfarrak : QuestData{
 
   
-    private const int GAHZRILLA_RESEARCH = FourCC("R02F");
-    private const int GAHZRILLA_ID = FourCC("H06Q");
+    private static readonly int GahzrillaResearch = FourCC("R02F");
+    private static readonly int GahzrillaId = FourCC("H06Q");
   
 
 
-    protected override string CompletionPopup => "ZulFourCC("farrak has fallen. The Sandfury trolls lend their might to the " + this.Holder.Team.Name + ", you can train Storm Wyrms && Gahz")rilla awakens from its slumber.";
+    protected override string CompletionPopup => "ZulFourCC("farrak Has fallen. The Sandfury trolls Lend their Might to The " + this.Holder.Team.Name + ", you Can train Storm Wyrms && Gahz")rilla awakens from its slumber.";
 
-    protected override string CompletionDescription => "Control of ZulFourCC("farrak, 300 gold tribute, enable to train Storm Wyrm && you can summon the hero Gahz")rilla from the Altar of Conquerors";
+    protected override string CompletionDescription => "Control of ZulFourCC("farrak, 300 gold _tribute, _enable to Train Storm Wyrm && you Can summon The hero Gahz")rilla from the Altar of Conquerors";
 
     protected override void OnComplete(){
       unit u;
@@ -36,14 +36,14 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
         u = FirstOfGroup(tempGroup);
       }
       DestroyGroup(tempGroup);
-      SetPlayerTechResearched(Holder.Player, GAHZRILLA_RESEARCH, 1);
+      SetPlayerTechResearched(Holder.Player, GahzrillaResearch, 1);
       AdjustPlayerStateBJ( 300, Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
       SetUnitOwner(LEGEND_ZULFARRAK.Unit, Holder.Player, true);
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(GAHZRILLA_RESEARCH, UNLIMITED);
-      Holder.ModObjectLimit(GAHZRILLA_ID, 1);
+      Holder.ModObjectLimit(GahzrillaResearch, UNLIMITED);
+      Holder.ModObjectLimit(GahzrillaId, 1);
     }
 
     public  thistype ( ){

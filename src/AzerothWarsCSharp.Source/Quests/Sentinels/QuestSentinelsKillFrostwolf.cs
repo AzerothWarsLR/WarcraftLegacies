@@ -6,8 +6,8 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
   public sealed class QuestSentinelsKillFrostwolf : QuestData{
 
   
-    private const int RESEARCH_ID = FourCC("R052");
-    private const int AMARA_ID = FourCC("h03I");
+    private static readonly int ResearchId = FourCC("R052");
+    private static readonly int AmaraId = FourCC("h03I");
   
 
 
@@ -16,13 +16,13 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
     protected override string CompletionDescription => "The demihero Amara && the hero Jarod";
 
     protected override void OnComplete(){
-      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
-      DisplayUnitTypeAcquired(Holder.Player, AMARA_ID, "You can now revive Amara from the Altar of Elders.");
+      SetPlayerTechResearched(Holder.Player, ResearchId, 1);
+      DisplayUnitTypeAcquired(Holder.Player, AmaraId, "You can now revive Amara from the Altar of Elders.");
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(AMARA_ID, 1);
-      Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
+      Holder.ModObjectLimit(AmaraId, 1);
+      Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }
 
     public  thistype ( ){

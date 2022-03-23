@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests
 
 
 
-    private static int researchId = FourCC("R02O");
+    private static int _researchId = FourCC("R02O");
 
     protected override string CompletionPopup => "The ShenFourCC(dralar, the Highborne survivors of the Sundering, swear allegiance to their fellow Night Elves. As a sign of their loyalty, they offer up an artifact they have guarded for thousands of years: the Scepter of the Queen.";
 

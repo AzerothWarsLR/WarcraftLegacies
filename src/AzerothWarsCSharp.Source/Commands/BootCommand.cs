@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Commands
         content = StringCase(content, false);
         Faction targetFaction = Faction.GetFromName(content);
 
-        if (senderPerson.Faction != NagaSetup.FACTION_NAGA){
+        if (senderPerson.Faction != NagaSetup.FactionNaga){
           DisplayTextToPlayer(senderPerson.Player, 0, 0, "This command can only be used by liege factions.");
           return;
         }
@@ -42,7 +42,7 @@ namespace AzerothWarsCSharp.Source.Commands
           return;
         }
 
-        if (FelHordeSetup.FACTION_FEL_HORDE.Team != TeamSetup.TEAM_NAGA){
+        if (FelHordeSetup.FactionFelHorde.Team != TeamSetup.TeamNaga){
           DisplayTextToPlayer(senderPerson.Player, 0, 0, $"{targetFaction.ColoredName} isn't your vassal.");
           return;
         }

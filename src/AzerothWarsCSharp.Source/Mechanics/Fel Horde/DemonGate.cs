@@ -12,83 +12,83 @@ namespace AzerothWarsCSharp.Source.Mechanics.Fel_Horde
   
 
 
-    readonly static Table byUnitType;
+    readonly static Table ByUnitType;
 
-    private int spawnUnitType;
-    private int interval;
-    private int unitType;
-    private int count;
+    private int _spawnUnitType;
+    private int _interval;
+    private int _unitType;
+    private int _count;
 
     public integer operator Count( ){
-      return count;
+      return _count;
     }
 
     public integer operator Interval( ){
-      return interval;
+      return _interval;
     }
 
     public integer operator SpawnUnitType( ){
-      return spawnUnitType;
+      return _spawnUnitType;
     }
 
     thistype (int gateUnitType, int spawnUnitType, int interval, int count ){
 
-      unitType = gateUnitType;
-      this.interval = interval;
-      this.spawnUnitType = spawnUnitType;
-      this.count = count;
-      byUnitType[unitType] = this;
+      _unitType = gateUnitType;
+      this._interval = interval;
+      this._spawnUnitType = spawnUnitType;
+      this._count = count;
+      ByUnitType[_unitType] = this;
       ;;
     }
 
-    private static void onInit( ){
-      byUnitType = Table.create();
+    private static void OnInit( ){
+      ByUnitType = Table.create();
     }
 
 
 
-    private static Table byHandle;
+    private static Table _byHandle;
 
-    private unit u;
-    private bool enabled;
-    private int tick;
-    private group spawnedDemons;
-    private DemonGateType gateType;
+    private unit _u;
+    private bool _enabled;
+    private int _tick;
+    private group _spawnedDemons;
+    private DemonGateType _gateType;
 
-    private void destroy( ){
-      byHandle[GetHandleId(u)] = 0;
-      u = null;
-      DestroyGroup(spawnedDemons);
+    private void Destroy( ){
+      _byHandle[GetHandleId(_u)] = 0;
+      _u = null;
+      DestroyGroup(_spawnedDemons);
       stopPeriodic();
     }
 
     private void operator MaxMana=(int i ){
-      BlzSetUnitMaxMana(u, i);
+      BlzSetUnitMaxMana(_u, i);
     }
 
     private integer operator MaxMana( ){
-      return BlzGetUnitMaxMana(u);
+      return BlzGetUnitMaxMana(_u);
     }
 
     private float operator Mana( ){
-      return GetUnitState(u, UNIT_STATE_MANA);
+      return GetUnitState(_u, UNIT_STATE_MANA);
     }
 
     private void operator Mana=(float r ){
-      SetUnitState(u, UNIT_STATE_MANA, r);
+      SetUnitState(_u, UNIT_STATE_MANA, r);
     }
 
     private player operator Owner( ){
-      return GetOwningPlayer(u);
+      return GetOwningPlayer(_u);
     }
 
     private float operator RallyX( ){
       location rally;
       float x;
-      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(u) == FACTION_FEL_HORDE.Player){
+      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(_u) == FACTION_FEL_HORDE.Player){
         return FocalDemonGate.Instance.RallyX;
       }
-      rally = GetUnitRallyPoint(u);
+      rally = GetUnitRallyPoint(_u);
       x = GetLocationX(rally);
       RemoveLocation(rally);
       rally = null;
@@ -98,10 +98,10 @@ namespace AzerothWarsCSharp.Source.Mechanics.Fel_Horde
     private float operator RallyY( ){
       location rally;
       float y;
-      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(u) == FACTION_FEL_HORDE.Player){
+      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(_u) == FACTION_FEL_HORDE.Player){
         return FocalDemonGate.Instance.RallyY;
       }
-      rally = GetUnitRallyPoint(u);
+      rally = GetUnitRallyPoint(_u);
       y = GetLocationY(rally);
       RemoveLocation(rally);
       rally = null;
@@ -109,47 +109,47 @@ namespace AzerothWarsCSharp.Source.Mechanics.Fel_Horde
     }
 
     private float operator SpawnX( ){
-      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(u) == FACTION_FEL_HORDE.Player){
+      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(_u) == FACTION_FEL_HORDE.Player){
         return FocalDemonGate.Instance.SpawnX;
       }
       return GetPolarOffsetX(X, SPAWN_DISTANCE, Facing);
     }
 
     private float operator SpawnY( ){
-      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(u) == FACTION_FEL_HORDE.Player){
+      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(_u) == FACTION_FEL_HORDE.Player){
         return FocalDemonGate.Instance.SpawnY;
       }
       return GetPolarOffsetY(Y, SPAWN_DISTANCE, Facing);
     }
 
     private float operator X( ){
-      return GetUnitX(u);
+      return GetUnitX(_u);
     }
 
     private float operator Y( ){
-      return GetUnitY(u);
+      return GetUnitY(_u);
     }
 
     private float operator Facing( ){
-      return GetUnitFacing(u) + FACING_OFFSET;
+      return GetUnitFacing(_u) + FACING_OFFSET;
     }
 
     private void operator GateType=(DemonGateType gateType ){
-      if (gateType == 0){
+      if (_gateType == 0){
         BJDebugMsg("ERROR: invalid DemonGateType supplied to DemonGate " + I2S(this));
         return;
       }
-      MaxMana = gateType.Interval;
-      gateType = gateType;
+      MaxMana = _gateType.Interval;
+      _gateType = _gateType;
     }
 
-    private void spawnUnit( ){
+    private void SpawnUnit( ){
       unit newUnit;
       var i = 0;
       while(true){
-        if ( i == gateType.Count){ break; }
-        newUnit = CreateUnit(Owner, gateType.SpawnUnitType, SpawnX, SpawnY, Facing);
-        GroupAddUnit(spawnedDemons, newUnit);
+        if ( i == _gateType.Count){ break; }
+        newUnit = CreateUnit(Owner, _gateType.SpawnUnitType, SpawnX, SpawnY, Facing);
+        GroupAddUnit(_spawnedDemons, newUnit);
         IssuePointOrder(newUnit, "attack", this.RallyX, this.RallyY);
         i = i + 1;
       }
@@ -157,26 +157,26 @@ namespace AzerothWarsCSharp.Source.Mechanics.Fel_Horde
       DestroyEffect(AddSpecialEffect("Abilities\\Spells\\Demon\\DarkPortal\\DarkPortalTarget.mdl", SpawnX, SpawnY));
     }
 
-    private void onUpgrade( ){
+    private void OnUpgrade( ){
       GateType = DemonGateType.byUnitType[GetUnitTypeId(GetTriggerUnit())];
-      UnitAddAbility(u, TOGGLE_ABILITY);
-      IssueImmediateOrder(u, "immolation");
+      UnitAddAbility(_u, TOGGLE_ABILITY);
+      IssueImmediateOrder(_u, "immolation");
     }
 
-    private void periodic( ){
-      tick = tick + 1;
-      if (tick == TICK_RATE * T32_FPS){
+    private void Periodic( ){
+      _tick = _tick + 1;
+      if (_tick == TICK_RATE * T32_FPS){
         Mana = Mana + 1*TICK_RATE;
         if (Mana == MaxMana){
-          if (GetPlayerState(Owner, PLAYER_STATE_RESOURCE_FOOD_USED) < GetPlayerState(Owner, PLAYER_STATE_RESOURCE_FOOD_CAP) && GetPlayerState(Owner, PLAYER_STATE_RESOURCE_FOOD_USED) < GetPlayerState(Owner, PLAYER_STATE_FOOD_CAP_CEILING) && GetUnitAbilityLevel(u, TOGGLE_BUFF) > 0){
+          if (GetPlayerState(Owner, PLAYER_STATE_RESOURCE_FOOD_USED) < GetPlayerState(Owner, PLAYER_STATE_RESOURCE_FOOD_CAP) && GetPlayerState(Owner, PLAYER_STATE_RESOURCE_FOOD_USED) < GetPlayerState(Owner, PLAYER_STATE_FOOD_CAP_CEILING) && GetUnitAbilityLevel(_u, TOGGLE_BUFF) > 0){
             Mana = 0;
-            spawnUnit();
+            SpawnUnit();
           }
         }
-        if (!UnitAlive(u) || GetOwningPlayer(u) == Player(bj_PLAYER_NEUTRAL_VICTIM)){
-          destroy();
+        if (!UnitAlive(_u) || GetOwningPlayer(_u) == Player(bj_PLAYER_NEUTRAL_VICTIM)){
+          Destroy();
         }
-        tick = 0;
+        _tick = 0;
       }
     }
 
@@ -184,11 +184,11 @@ namespace AzerothWarsCSharp.Source.Mechanics.Fel_Horde
 
     thistype (unit u ){
 
-      this.u = u;
-      tick = 0;
-      enabled = true;
-      spawnedDemons = CreateGroup();
-      byHandle[GetHandleId(u)] = this;
+      this._u = u;
+      _tick = 0;
+      _enabled = true;
+      _spawnedDemons = CreateGroup();
+      _byHandle[GetHandleId(u)] = this;
       this.GateType = DemonGateType.byUnitType[GetUnitTypeId(u)];
       IssuePointOrder(u, "setrally", this.SpawnX, this.SpawnY);
       startPeriodic();
@@ -197,10 +197,10 @@ namespace AzerothWarsCSharp.Source.Mechanics.Fel_Horde
       ;;
     }
 
-    private static void onUnitUpgraded( ){
+    private static void OnUnitUpgraded( ){
       //Unit was already a Demon Gate
-      if (byHandle[GetHandleId(GetTriggerUnit())] != 0){
-        thistype(byHandle[GetHandleId(GetTriggerUnit())]).onUpgrade();
+      if (_byHandle[GetHandleId(GetTriggerUnit())] != 0){
+        thistype(_byHandle[GetHandleId(GetTriggerUnit())]).onUpgrade();
         //Unit was not a Demon Gate
       }else if (DemonGateType.byUnitType[GetUnitTypeId(GetTriggerUnit())] != 0){
         DemonGate.create(GetTriggerUnit());
@@ -214,7 +214,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Fel_Horde
   }
 }
 
-    private static void onInit( ){
+    private static void OnInit( ){
 
       //Should ideally only listen for buildings which are registered as Demon Gate types.
       PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_UPGRADE_FINISH,  thistype.onUnitUpgraded);

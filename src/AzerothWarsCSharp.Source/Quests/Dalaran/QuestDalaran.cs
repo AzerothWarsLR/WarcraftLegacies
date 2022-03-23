@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
   public sealed class QuestDalaran : QuestData{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC("R038");
+    private static readonly int QuestResearchId = FourCC("R038");
   
 
 
@@ -59,7 +59,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
+      Holder.ModObjectLimit(QuestResearchId, 1);
     }
 
     public  thistype ( ){

@@ -6,39 +6,39 @@ namespace AzerothWarsCSharp.Source.Legends
   {
 
 
-    public static Legend LEGEND_MAIEV;
-    public static Legend LEGEND_TYRANDE;
-    public static Legend LEGEND_SHANDRIS;
-    public static Legend LEGEND_JAROD;
+    public static Legend legendMaiev;
+    public static Legend legendTyrande;
+    public static Legend legendShandris;
+    public static Legend legendJarod;
 
-    public static Legend LEGEND_AUBERDINE;
-    public static Legend LEGEND_FEATHERMOON;
+    public static Legend legendAuberdine;
+    public static Legend legendFeathermoon;
   
 
     public static void Setup( ){
-      LEGEND_MAIEV = new Legend();
-      LEGEND_MAIEV.UnitType = FourCC("Ewrd");
+      legendMaiev = new Legend();
+      legendMaiev.UnitType = FourCC("Ewrd");
 
-      LEGEND_AUBERDINE = new Legend();
-      LEGEND_AUBERDINE.Unit = gg_unit_e00J_0320;
-      LEGEND_AUBERDINE.IsCapital = true;
+      legendAuberdine = new Legend();
+      legendAuberdine.Unit = gg_unit_e00J_0320;
+      legendAuberdine.IsCapital = true;
 
-      LEGEND_FEATHERMOON = new Legend();
-      LEGEND_FEATHERMOON.Unit = gg_unit_e00M_2545;
-      LEGEND_FEATHERMOON.IsCapital = true;
+      legendFeathermoon = new Legend();
+      legendFeathermoon.Unit = gg_unit_e00M_2545;
+      legendFeathermoon.IsCapital = true;
 
-      LEGEND_TYRANDE = new Legend();
-      LEGEND_TYRANDE.UnitType = FourCC("Etyr");
-      LEGEND_TYRANDE.PlayerColor = PLAYER_COLOR_CYAN;
-      LEGEND_TYRANDE.Essential = true;
+      legendTyrande = new Legend();
+      legendTyrande.UnitType = FourCC("Etyr");
+      legendTyrande.PlayerColor = PLAYER_COLOR_CYAN;
+      legendTyrande.Essential = true;
 
-      LEGEND_SHANDRIS = new Legend();
-      LEGEND_SHANDRIS.UnitType = FourCC("E002");
-      LEGEND_SHANDRIS.StartingXp = 1000;
+      legendShandris = new Legend();
+      legendShandris.UnitType = FourCC("E002");
+      legendShandris.StartingXp = 1000;
 
-      LEGEND_JAROD = new Legend();
-      LEGEND_JAROD.UnitType = FourCC("O02E");
-      LEGEND_JAROD.StartingXp = 4000;
+      legendJarod = new Legend();
+      legendJarod.UnitType = FourCC("O02E");
+      legendJarod.StartingXp = 4000;
     }
 
   }

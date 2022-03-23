@@ -36,14 +36,14 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       Holder.obliterate();
       LEGEND_LILIAN.Spawn(Holder.Player, 7254, 7833, 110);
       LEGEND_VARIMATHRAS.Spawn(Holder.Player, 7254, 7833, 110);
-      CreateUnits(Holder.Player, FourCC("n04J"), GetRectCenterX(Regions.Vandermar_Village), GetRectCenterY(gg_rct_Vandermar_Village), 270.Rect, 12);
-      CreateUnits(Holder.Player, FourCC("u00D"), GetRectCenterX(Regions.Vandermar_Village), GetRectCenterY(gg_rct_Vandermar_Village), 270.Rect, 6);
-      CreateUnits(Holder.Player, FourCC("ninc"), GetRectCenterX(Regions.Vandermar_Village), GetRectCenterY(gg_rct_Vandermar_Village), 270.Rect, 12);
-      CreateUnits(Holder.Player, FourCC("u007"), GetRectCenterX(Regions.Vandermar_Village), GetRectCenterY(gg_rct_Vandermar_Village), 270.Rect, 2);
+      CreateUnits(Holder.Player, FourCC("n04J"), GetRectCenterX(Regions.VandermarVillage), GetRectCenterY(gg_rct_Vandermar_Village), 270.Rect, 12);
+      CreateUnits(Holder.Player, FourCC("u00D"), GetRectCenterX(Regions.VandermarVillage), GetRectCenterY(gg_rct_Vandermar_Village), 270.Rect, 6);
+      CreateUnits(Holder.Player, FourCC("ninc"), GetRectCenterX(Regions.VandermarVillage), GetRectCenterY(gg_rct_Vandermar_Village), 270.Rect, 12);
+      CreateUnits(Holder.Player, FourCC("u007"), GetRectCenterX(Regions.VandermarVillage), GetRectCenterY(gg_rct_Vandermar_Village), 270.Rect, 2);
       AdjustPlayerStateBJ( 2000, Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
       AdjustPlayerStateBJ( 900, Holder.Player, PLAYER_STATE_RESOURCE_LUMBER );
       if (GetLocalPlayer() == Holder.Player){
-        SetCameraPosition(GetRectCenterX(Regions.Vandermar_Village).Rect, GetRectCenterY(gg_rct_Vandermar_Village));
+        SetCameraPosition(GetRectCenterX(Regions.VandermarVillage).Rect, GetRectCenterY(gg_rct_Vandermar_Village));
       }
     }
 

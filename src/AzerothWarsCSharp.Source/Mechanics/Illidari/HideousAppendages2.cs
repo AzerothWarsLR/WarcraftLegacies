@@ -11,87 +11,87 @@ namespace AzerothWarsCSharp.Source.Mechanics.Illidari
     
 
 
-        readonly static Table tentacleSetsByCasterHandleId;
-        readonly unit caster;
-        readonly unit[] TentaclesByIndex[30];
-        readonly int TentacleCount;
-        private int tick;
+        readonly static Table TentacleSetsByCasterHandleId;
+        readonly unit _caster;
+        readonly unit[] _tentaclesByIndex[30];
+        readonly int _tentacleCount;
+        private int _tick;
 
-        void destroy( ){
-            thistype.tentacleSetsByCasterHandleId[GetHandleId(caster)] = 0;
+        void Destroy( ){
+            thistype.tentacleSetsByCasterHandleId[GetHandleId(_caster)] = 0;
             this.stopPeriodic();
-            kill();
+            Kill();
             this.deallocate();
         }
 
-        void kill( ){
+        void Kill( ){
             var i = 0;
             while(true){
-                if ( i > TentacleCount){ break; }
-                KillUnit(TentaclesByIndex[i]);
-                TentaclesByIndex[i] = null;
+                if ( i > _tentacleCount){ break; }
+                KillUnit(_tentaclesByIndex[i]);
+                _tentaclesByIndex[i] = null;
                 i = i + 1;
             }
         }
 
-        void spawnTentacle(float x, float y, int index ){
-            unit tempUnit = CreateUnit(GetOwningPlayer(caster), TENTACLE2_ID, x, y, 0);
+        void SpawnTentacle(float x, float y, int index ){
+            unit tempUnit = CreateUnit(GetOwningPlayer(_caster), TENTACLE2_ID, x, y, 0);
             SetUnitAnimation(tempUnit, "birth");
             QueueUnitAnimation(tempUnit, "stand");
             SetUnitVertexColor(tempUnit, 255, 255, 255, 255);
             UnitAddAbility(tempUnit, FourCC(Aloc));
             SetUnitPathing(tempUnit, false);
-            TentaclesByIndex[index] = tempUnit;
+            _tentaclesByIndex[index] = tempUnit;
         }
 
-        void reposition( ){
+        void Reposition( ){
             var i = 0;
             float offsetAngle = 0;
             float offsetX = 0;
             float offsetY = 0;
-            TentacleCount = TENTACLE_COUNT_BASE;
+            _tentacleCount = TENTACLE_COUNT_BASE;
             while(true){
-                if ( i == TentacleCount){ break; }
-                offsetAngle = ((bj_PI*2)/TentacleCount)*i;
-                offsetX = GetUnitX(caster) + RADIUS_OFFSET*Cos(offsetAngle);
-                offsetY = GetUnitY(caster) + RADIUS_OFFSET*Sin(offsetAngle);
-                if (GetDistanceBetweenPoints(GetUnitX(TentaclesByIndex[i]), GetUnitY(TentaclesByIndex[i]), offsetX, offsetY) > 0){
-                    if (TentaclesByIndex[i] != null){
-                        SetUnitPosition(TentaclesByIndex[i], offsetX, offsetY);
+                if ( i == _tentacleCount){ break; }
+                offsetAngle = ((bj_PI*2)/_tentacleCount)*i;
+                offsetX = GetUnitX(_caster) + RADIUS_OFFSET*Cos(offsetAngle);
+                offsetY = GetUnitY(_caster) + RADIUS_OFFSET*Sin(offsetAngle);
+                if (GetDistanceBetweenPoints(GetUnitX(_tentaclesByIndex[i]), GetUnitY(_tentaclesByIndex[i]), offsetX, offsetY) > 0){
+                    if (_tentaclesByIndex[i] != null){
+                        SetUnitPosition(_tentaclesByIndex[i], offsetX, offsetY);
                     }else {
-                        spawnTentacle(offsetX, offsetY, i);
+                        SpawnTentacle(offsetX, offsetY, i);
                     }
                 }
                 i = i + 1;
             }
         }
 
-        void periodic( ){
-            if (caster == null){
-                destroy();
+        void Periodic( ){
+            if (_caster == null){
+                Destroy();
                 return;
             }
-            if (!IsUnitAliveBJ(caster)){
-                kill();
+            if (!IsUnitAliveBJ(_caster)){
+                Kill();
                 return;
             }
-            reposition();
-            tick = tick + 1;
-            if (tick/T32_FPS == 1){
-                tick = 0;
+            Reposition();
+            _tick = _tick + 1;
+            if (_tick/T32_FPS == 1){
+                _tick = 0;
             }
         }
 
 
 
-        static void onInit( ){
+        static void OnInit( ){
             thistype.tentacleSetsByCasterHandleId = Table.create();
         }
 
         thistype (unit caster ){
 
-            this.caster = caster;
-            thistype.tentacleSetsByCasterHandleId[GetHandleId(this.caster)] = this;
+            this._caster = caster;
+            thistype.tentacleSetsByCasterHandleId[GetHandleId(this._caster)] = this;
             this.startPeriodic();
             ;;
         }

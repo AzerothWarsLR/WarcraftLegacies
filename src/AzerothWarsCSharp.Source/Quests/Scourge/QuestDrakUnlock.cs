@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
   public sealed class QuestDrakUnlock : QuestData{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC("R08J");
+    private static readonly int QuestResearchId = FourCC("R08J");
   
 
 
@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       AddQuestItem(new QuestItemControlLegend(LEGEND_DRAKTHARONKEEP, false));
       AddQuestItem(new QuestItemExpire(1140));
       AddQuestItem(new QuestItemSelfExists());
-      ResearchId = QUEST_RESEARCH_ID;
+      ResearchId = QuestResearchId;
       ;;
     }
 

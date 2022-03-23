@@ -6,8 +6,8 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
   public sealed class QuestEmbassy : QuestData{
 
   
-    private const int HERO_ID = FourCC("U00L");
-    private const int ALTAR_ID = FourCC("u01N");
+    private static readonly int HeroId = FourCC("U00L");
+    private static readonly int AltarId = FourCC("u01N");
   
 
 

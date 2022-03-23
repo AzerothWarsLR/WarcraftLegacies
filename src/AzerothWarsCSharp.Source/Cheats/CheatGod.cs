@@ -5,14 +5,14 @@ namespace AzerothWarsCSharp.Source.Cheats
   public class CheatGod
   {
     private const string COMMAND = "-god ";
-    private static bool[] Toggle;
+    private static bool[] _toggle;
 
 
     private static void Damage()
     {
-      if (Toggle[GetPlayerId(GetTriggerPlayer())])
+      if (_toggle[GetPlayerId(GetTriggerPlayer())])
         BlzSetEventDamage(0);
-      else if (Toggle[GetPlayerId(GetOwningPlayer(GetEventDamageSource()))]) BlzSetEventDamage(GetEventDamage() * 100);
+      else if (_toggle[GetPlayerId(GetOwningPlayer(GetEventDamageSource()))]) BlzSetEventDamage(GetEventDamage() * 100);
     }
 
     private static void Actions()
@@ -27,12 +27,12 @@ namespace AzerothWarsCSharp.Source.Cheats
       switch (parameter)
       {
         case "on":
-          Toggle[pId] = true;
+          _toggle[pId] = true;
           DisplayTextToPlayer(p, 0, 0,
             "|cffD27575CHEAT:|r God mod activated. Your units will deal 100x damage && take no damage.");
           break;
         case "off":
-          Toggle[pId] = false;
+          _toggle[pId] = false;
           DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r God mode deactivated.");
           break;
       }

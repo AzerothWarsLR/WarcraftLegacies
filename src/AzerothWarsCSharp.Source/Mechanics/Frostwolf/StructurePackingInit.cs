@@ -4,11 +4,11 @@ namespace AzerothWarsCSharp.Source.Mechanics.Frostwolf
 
   
     private const int KODO_ID = FourCC(oosc);
-    private const int[] Buildings;
+    private const int[] BUILDINGS;
   
 
     private static void InitKodo(unit whichUnit, int index ){
-      PackableStructure.ByStructureId(Buildings[index]).SetupKodo(whichUnit);
+      PackableStructure.ByStructureId(BUILDINGS[index]).SetupKodo(whichUnit);
     }
 
     public static void Setup( ){
@@ -16,10 +16,10 @@ namespace AzerothWarsCSharp.Source.Mechanics.Frostwolf
       unit u;
       var i = 0;
 
-      Buildings[0] = FourCC(ogre);
-      Buildings[1] = FourCC(ofor);
-      Buildings[2] = FourCC(oalt);
-      Buildings[3] = FourCC(obar);
+      BUILDINGS[0] = FourCC(ogre);
+      BUILDINGS[1] = FourCC(ofor);
+      BUILDINGS[2] = FourCC(oalt);
+      BUILDINGS[3] = FourCC(obar);
 
       GroupEnumUnitsInRect(tempGroup, gg_rct_CairneStart, null);
       while(true){

@@ -4,15 +4,15 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
   public static class DruidsSetup
   {
-    public static Faction FACTION_DRUIDS;
+    public static Faction factionDruids;
     
     public static void Setup()
     {
       Faction f;
 
-      FACTION_DRUIDS = Faction.create("Druids", PLAYER_COLOR_BROWN, "|c004e2a04",
+      factionDruids = Faction.create("Druids", PLAYER_COLOR_BROWN, "|c004e2a04",
         "ReplaceableTextures\\CommandButtons\\BTNFurion.blp");
-      f = FACTION_DRUIDS;
+      f = factionDruids;
       f.Team = TEAM_NIGHT_ELVES;
       f.UndefeatedResearch = FourCC("R06E");
       f.StartingGold = 150;

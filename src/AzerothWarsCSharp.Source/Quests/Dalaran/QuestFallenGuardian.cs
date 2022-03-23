@@ -7,8 +7,8 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
   public sealed class QuestFallenGuardian : QuestData{
 
   
-    private const int RESEARCH_ID = FourCC("R04K");
-    private const int MEDIVH_ID = FourCC("Haah");
+    private static readonly int ResearchId = FourCC("R04K");
+    private static readonly int MedivhId = FourCC("Haah");
   
 
 
@@ -17,15 +17,15 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     protected override string CompletionDescription => "You can summon Medivh from the Altar of Knowledge";
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
-      Holder.ModObjectLimit(MEDIVH_ID, 1);
+      Holder.ModObjectLimit(ResearchId, UNLIMITED);
+      Holder.ModObjectLimit(MedivhId, 1);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Fallen Guardian", "Medivh's body was corrupted by Sargeras at conception. Now that he is dead, the secrets of the Tomb of Sargeras and Karazhan combined might allow the mages of Dalaran to cleanse his spirit.", "ReplaceableTextures\\CommandButtons\\BTNMedivh.blp");
       AddQuestItem(new QuestItemControlLegend(LEGEND_KARAZHAN, false));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00J"))));
-      ResearchId = FourCC("R04K");
+      base.ResearchId = FourCC("R04K");
       ;;
     }
 

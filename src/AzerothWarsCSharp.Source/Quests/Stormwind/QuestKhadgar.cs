@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
   public sealed class QuestKhadgar : QuestData{
 
   
-    private const int HERO_ID = FourCC("H05Y");
+    private static readonly int HeroId = FourCC("H05Y");
   
 
 
@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     protected override string CompletionDescription => "You can summon Khadgar from the Altar of Kings";
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(HERO_ID, 1);
+      Holder.ModObjectLimit(HeroId, 1);
     }
 
     public  thistype ( ){

@@ -5,8 +5,8 @@ namespace AzerothWarsCSharp.Source.Mechanics.Dalaran
   public sealed class BuildableWaygate
   {
     private const int WAYGATE_UNITTYPE = FourCC(n0AO);
-    private static thistype waygateA = 0;
-    private static thistype waygateB = 0;
+    private static thistype _waygateA = 0;
+    private static thistype _waygateB = 0;
     private bool _constructed;
 
     private bool Constructed
@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Dalaran
       set
       {
         _constructed = value;
-        if (waygateA.Constructed && waygateB.Constructed)
+        if (_waygateA.Constructed && _waygateB.Constructed)
         {
           LinkWaygates();
         }
@@ -24,16 +24,16 @@ namespace AzerothWarsCSharp.Source.Mechanics.Dalaran
 
     private static void UnlinkWaygates()
     {
-      WaygateActivate(waygateA.unit, false);
-      WaygateActivate(waygateB.unit, false);
+      WaygateActivate(_waygateA.unit, false);
+      WaygateActivate(_waygateB.unit, false);
     }
 
     private static void LinkWaygates()
     {
-      WaygateSetDestination(waygateA.unit, GetUnitX(waygateB.unit), GetUnitY(waygateB.unit));
-      WaygateSetDestination(waygateB.unit, GetUnitX(waygateA.unit), GetUnitY(waygateA.unit));
-      WaygateActivate(waygateA.unit, true);
-      WaygateActivate(waygateB.unit, true);
+      WaygateSetDestination(_waygateA.unit, GetUnitX(_waygateB.unit), GetUnitY(_waygateB.unit));
+      WaygateSetDestination(_waygateB.unit, GetUnitX(_waygateA.unit), GetUnitY(_waygateA.unit));
+      WaygateActivate(_waygateA.unit, true);
+      WaygateActivate(_waygateB.unit, true);
     }
 
     private static bool AIDS_filter(unit u)
@@ -48,13 +48,13 @@ namespace AzerothWarsCSharp.Source.Mechanics.Dalaran
 
     private void AIDS_onCreate()
     {
-      if (waygateA == 0)
+      if (_waygateA == 0)
       {
-        waygateA = this;
+        _waygateA = this;
       }
-      else if (waygateB == 0)
+      else if (_waygateB == 0)
       {
-        waygateB = this;
+        _waygateB = this;
       }
       else
       {
@@ -64,13 +64,13 @@ namespace AzerothWarsCSharp.Source.Mechanics.Dalaran
 
     private void AIDS_onDestroy()
     {
-      if (this == waygateA)
+      if (this == _waygateA)
       {
-        waygateA = 0;
+        _waygateA = 0;
       }
-      else if (this == waygateB)
+      else if (this == _waygateB)
       {
-        waygateB = 0;
+        _waygateB = 0;
       }
 
       public void UnlinkWaygates()

@@ -4,20 +4,20 @@ namespace AzerothWarsCSharp.Source.User_Interface
 {
   public class ArtifactMenu
   {
-    private float BACKDROP_WIDTH = 07;
-    private float BACKDROP_HEIGHT = 037;
-    private float Y_OFFSET_TOP = 0025; //How much space to push the artifact representations in from the top
-    private float Y_OFFSET_BOT = 005; //How much space to push the artifact representations in from the bottom
-    private float BOTTOM_BUTTON_X_OFFSET = 002;
-    private float BOTTOM_BUTTON_Y_OFFSET = 0015;
-    private float TOOLTIP_WIDTH = 025;
-    private float TOOLTIP_HEIGHT = 01;
+    private float _backdropWidth = 07;
+    private float _backdropHeight = 037;
+    private float _yOffsetTop = 0025; //How much space to push the artifact representations in from the top
+    private float _yOffsetBot = 005; //How much space to push the artifact representations in from the bottom
+    private float _bottomButtonXOffset = 002;
+    private float _bottomButtonYOffset = 0015;
+    private float _tooltipWidth = 025;
+    private float _tooltipHeight = 01;
 
-    private var COLUMN_COUNT = 5;
-    private var ROW_COUNT = 3;
+    private var _columnCount = 5;
+    private var _rowCount = 3;
 
-    private float BOX_WIDTH = 013;
-    private float BOX_HEIGHT = 0086;
+    private float _boxWidth = 013;
+    private float _boxHeight = 0086;
 
     framehandle ArtifactMenuLauncher
     framehandle ArtifactMenuBackdrop
@@ -33,21 +33,21 @@ namespace AzerothWarsCSharp.Source.User_Interface
     }
 
 
-    static thistype[] pageArray
-    static int[] activePageId //-1 means no page is active. Indexed per player
-    int id
+    static thistype[] PageArray
+    static int[] ActivePageId //-1 means no page is active. Indexed per player
+    int Id
 
-    framehandle backdrop
-    framehandle title
-    framehandle pageNumber
-    framehandle exitButton
-    framehandle nextButton
-    framehandle prevButton
-    trigger nextTrigger = null;
-    trigger prevTrigger = null;
-    trigger exitTrigger = null;
+    framehandle Backdrop
+    framehandle Title
+    framehandle PageNumber
+    framehandle ExitButton
+    framehandle NextButton
+    framehandle PrevButton
+    trigger _nextTrigger = null;
+    trigger _prevTrigger = null;
+    trigger _exitTrigger = null;
 
-    static void exitButtonClick()
+    static void ExitButtonClick()
     {
       var pId = GetPlayerId(GetTriggerPlayer());
       if (thistype.activePageId[pId] > -1)
@@ -61,7 +61,7 @@ namespace AzerothWarsCSharp.Source.User_Interface
       }
     }
 
-    static void nextButtonClick()
+    static void NextButtonClick()
     {
       var pId = GetPlayerId(GetTriggerPlayer());
       if (thistype.activePageId[pId] > -1 && thistype.pageArray[thistype.activePageId[pId] + 1] != 0)
@@ -76,7 +76,7 @@ namespace AzerothWarsCSharp.Source.User_Interface
       }
     }
 
-    static void prevButtonClick()
+    static void PrevButtonClick()
     {
       var pId = GetPlayerId(GetTriggerPlayer());
       if (thistype.activePageId[pId] > -1 && thistype.pageArray[thistype.activePageId[pId] - 1] != 0)
@@ -91,108 +91,108 @@ namespace AzerothWarsCSharp.Source.User_Interface
       thistype.activePageId[pId] = thistype.activePageId[pId] - 1
     }
 
-    void destroy()
+    void Destroy()
     {
-      DestroyTrigger(nextTrigger);
-      DestroyTrigger(prevTrigger);
-      DestroyTrigger(exitTrigger);
+      DestroyTrigger(_nextTrigger);
+      DestroyTrigger(_prevTrigger);
+      DestroyTrigger(_exitTrigger);
 
-      BlzDestroyFrame(this.prevButton);
-      BlzDestroyFrame(this.nextButton);
-      BlzDestroyFrame(this.exitButton);
+      BlzDestroyFrame(this.PrevButton);
+      BlzDestroyFrame(this.NextButton);
+      BlzDestroyFrame(this.ExitButton);
       BlzDestroyFrame(this.title);
-      BlzDestroyFrame(this.pageNumber);
-      BlzDestroyFrame(this.backdrop);
+      BlzDestroyFrame(this.PageNumber);
+      BlzDestroyFrame(this.Backdrop);
 
       this.deallocate();
     }
 
-    void destroyNextButton()
+    void DestroyNextButton()
     {
-      BlzDestroyFrame(this.nextButton);
-      this.nextButton = null;
+      BlzDestroyFrame(this.NextButton);
+      this.NextButton = null;
     }
 
-    void destroyPrevButton()
+    void DestroyPrevButton()
     {
-      BlzDestroyFrame(this.prevButton);
-      this.prevButton = null;
+      BlzDestroyFrame(this.PrevButton);
+      this.PrevButton = null;
     }
 
-    void createNextButton()
+    void CreateNextButton()
     {
-      this.nextButton = BlzCreateFrame("ScriptDialogButton", this.backdrop, 0, 0);
-      BlzFrameSetPoint(this.nextButton, FRAMEPOINT_BOTTOMRIGHT, this.backdrop, FRAMEPOINT_BOTTOMRIGHT,
-        -BOTTOM_BUTTON_X_OFFSET, BOTTOM_BUTTON_Y_OFFSET);
-      BlzFrameSetSize(this.nextButton, 009, 0037);
-      BlzFrameSetText(this.nextButton, "Next");
+      this.NextButton = BlzCreateFrame("ScriptDialogButton", this.Backdrop, 0, 0);
+      BlzFrameSetPoint(this.NextButton, FRAMEPOINT_BOTTOMRIGHT, this.Backdrop, FRAMEPOINT_BOTTOMRIGHT,
+        -_bottomButtonXOffset, _bottomButtonYOffset);
+      BlzFrameSetSize(this.NextButton, 009, 0037);
+      BlzFrameSetText(this.NextButton, "Next");
 
-      nextTrigger = CreateTrigger();
-      BlzTriggerRegisterFrameEvent(nextTrigger, this.nextButton, FRAMEEVENT_CONTROL_CLICK);
-      TriggerAddAction(nextTrigger, thistype.nextButtonClick);
+      _nextTrigger = CreateTrigger();
+      BlzTriggerRegisterFrameEvent(_nextTrigger, this.NextButton, FRAMEEVENT_CONTROL_CLICK);
+      TriggerAddAction(_nextTrigger, thistype.nextButtonClick);
     }
 
-    void createPrevButton()
+    void CreatePrevButton()
     {
-      this.prevButton = BlzCreateFrame("ScriptDialogButton", this.backdrop, 0, 0);
-      BlzFrameSetPoint(this.prevButton, FRAMEPOINT_BOTTOMLEFT, this.backdrop, FRAMEPOINT_BOTTOMLEFT,
-        BOTTOM_BUTTON_X_OFFSET, BOTTOM_BUTTON_Y_OFFSET);
-      BlzFrameSetSize(this.prevButton, 009, 0037);
-      BlzFrameSetText(this.prevButton, "Previous");
+      this.PrevButton = BlzCreateFrame("ScriptDialogButton", this.Backdrop, 0, 0);
+      BlzFrameSetPoint(this.PrevButton, FRAMEPOINT_BOTTOMLEFT, this.Backdrop, FRAMEPOINT_BOTTOMLEFT,
+        _bottomButtonXOffset, _bottomButtonYOffset);
+      BlzFrameSetSize(this.PrevButton, 009, 0037);
+      BlzFrameSetText(this.PrevButton, "Previous");
 
-      prevTrigger = CreateTrigger();
-      BlzTriggerRegisterFrameEvent(prevTrigger, this.prevButton, FRAMEEVENT_CONTROL_CLICK);
-      TriggerAddAction(prevTrigger, thistype.prevButtonClick);
+      _prevTrigger = CreateTrigger();
+      BlzTriggerRegisterFrameEvent(_prevTrigger, this.PrevButton, FRAMEEVENT_CONTROL_CLICK);
+      TriggerAddAction(_prevTrigger, thistype.prevButtonClick);
     }
 
     ArtifactMenuPage(int id)
     {
       //Allocate ID
       thistype.pageArray[id] = this;
-      this.id = id;
+      this.Id = id;
 
       //Create the backdrop window on the main UI
-      this.backdrop = BlzCreateFrame("ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0, 0);
-      BlzFrameSetSize(this.backdrop, BACKDROP_WIDTH, BACKDROP_HEIGHT);
-      BlzFrameSetAbsPoint(this.backdrop, FRAMEPOINT_CENTER, 04, 038);
-      BlzFrameSetVisible(this.backdrop, false);
+      this.Backdrop = BlzCreateFrame("ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0, 0);
+      BlzFrameSetSize(this.Backdrop, _backdropWidth, _backdropHeight);
+      BlzFrameSetAbsPoint(this.Backdrop, FRAMEPOINT_CENTER, 04, 038);
+      BlzFrameSetVisible(this.Backdrop, false);
 
       //Create title for this page
-      this.title = BlzCreateFrame("ArtifactMenuTitle", this.backdrop, 0, 0);
-      BlzFrameSetPoint(this.title, FRAMEPOINT_CENTER, this.backdrop, FRAMEPOINT_TOP, 00, -0025);
+      this.title = BlzCreateFrame("ArtifactMenuTitle", this.Backdrop, 0, 0);
+      BlzFrameSetPoint(this.title, FRAMEPOINT_CENTER, this.Backdrop, FRAMEPOINT_TOP, 00, -0025);
       BlzFrameSetText(this.title, "Artifacts");
 
       //Create page number for this page
-      this.pageNumber = BlzCreateFrame("ArtifactMenuTitle", this.backdrop, 0, 0);
-      BlzFrameSetPoint(this.pageNumber, FRAMEPOINT_CENTER, this.backdrop, FRAMEPOINT_TOPRIGHT, -005, -0025);
-      BlzFrameSetText(this.pageNumber, "Page " + I2S(this.id + 1));
+      this.PageNumber = BlzCreateFrame("ArtifactMenuTitle", this.Backdrop, 0, 0);
+      BlzFrameSetPoint(this.PageNumber, FRAMEPOINT_CENTER, this.Backdrop, FRAMEPOINT_TOPRIGHT, -005, -0025);
+      BlzFrameSetText(this.PageNumber, "Page " + I2S(this.Id + 1));
 
       //Create exit button for this page
-      this.exitButton = BlzCreateFrame("ScriptDialogButton", this.backdrop, 0, 0);
-      BlzFrameSetPoint(this.exitButton, FRAMEPOINT_BOTTOM, this.backdrop, FRAMEPOINT_BOTTOM, 00, BOTTOM_BUTTON_Y_OFFSET);
-      BlzFrameSetSize(this.exitButton, 009, 0037);
-      BlzFrameSetText(this.exitButton, "Exit");
-      exitTrigger = CreateTrigger();
-      BlzTriggerRegisterFrameEvent(exitTrigger, this.exitButton, FRAMEEVENT_CONTROL_CLICK);
-      TriggerAddAction(exitTrigger, thistype.exitButtonClick);
+      this.ExitButton = BlzCreateFrame("ScriptDialogButton", this.Backdrop, 0, 0);
+      BlzFrameSetPoint(this.ExitButton, FRAMEPOINT_BOTTOM, this.Backdrop, FRAMEPOINT_BOTTOM, 00, _bottomButtonYOffset);
+      BlzFrameSetSize(this.ExitButton, 009, 0037);
+      BlzFrameSetText(this.ExitButton, "Exit");
+      _exitTrigger = CreateTrigger();
+      BlzTriggerRegisterFrameEvent(_exitTrigger, this.ExitButton, FRAMEEVENT_CONTROL_CLICK);
+      TriggerAddAction(_exitTrigger, thistype.exitButtonClick);
 
       //Add previous and next buttons
-      if (thistype.pageArray[this.id - 1] != 0)
+      if (thistype.pageArray[this.Id - 1] != 0)
       {
-        createPrevButton();
-        thistype.pageArray[this.id - 1].createNextButton();
+        CreatePrevButton();
+        thistype.pageArray[this.Id - 1].createNextButton();
       }
 
-      if (thistype.pageArray[this.id + 1] != 0)
+      if (thistype.pageArray[this.Id + 1] != 0)
       {
-        createNextButton();
+        CreateNextButton();
       }
 
       ;
       ;
     }
 
-    static void onInit()
+    static void OnInit()
     {
       var i = 0;
       while (true)
@@ -208,75 +208,75 @@ namespace AzerothWarsCSharp.Source.User_Interface
     }
 
 
-    static thistype[] repsById
+    static thistype[] RepsById
 
-    static Table repsByPingButton //ArtifactRepresentations indexed by handle IDs of ping button frames
-    Artifact whichArtifact
-    var id = 0;
-    var x = 0;
-    var y = 0;
-    var z = 0; //Position referring to page placement
-    int artifactStatus //Refer to Artifact.j for possible values
-    framehandle box
-    framehandle icon
-    framehandle title
-    framehandle text
-    framehandle pingButton
-    trigger pingTrigger
-    ArtifactMenuPage parentPage = 0;
+    static Table RepsByPingButton //ArtifactRepresentations indexed by handle IDs of ping button frames
+    Artifact WhichArtifact
+    var _id = 0;
+    var _x = 0;
+    var _y = 0;
+    var _z = 0; //Position referring to page placement
+    int ArtifactStatus //Refer to Artifact.j for possible values
+    framehandle Box
+    framehandle Icon
+    framehandle Title
+    framehandle Text
+    framehandle PingButton
+    trigger PingTrigger
+    ArtifactMenuPage _parentPage = 0;
 
-    void setText(string s)
+    void SetText(string s)
     {
-      BlzFrameSetText(this.text, s);
+      BlzFrameSetText(this.Text, s);
     }
 
-    void setOwner(Person p)
+    void SetOwner(Person p)
     {
       if (p != 0)
       {
-        setText("Owned by|n" + p.Faction.prefixCol + p.Faction.Name + "|r");
+        SetText("Owned by|n" + p.Faction.prefixCol + p.Faction.Name + "|r");
       }
     }
 
-    void setArtifactStatus(int i)
+    void SetArtifactStatus(int i)
     {
       if (i == ARTIFACT_STATUS_UNIT)
       {
-        BlzFrameSetVisible(this.text, true);
-        BlzFrameSetVisible(this.pingButton, false);
+        BlzFrameSetVisible(this.Text, true);
+        BlzFrameSetVisible(this.PingButton, false);
       }
       else if (i == ARTIFACT_STATUS_GROUND)
       {
-        BlzFrameSetVisible(this.text, false);
-        BlzFrameSetVisible(this.pingButton, true);
+        BlzFrameSetVisible(this.Text, false);
+        BlzFrameSetVisible(this.PingButton, true);
       }
       else if (i == ARTIFACT_STATUS_SPECIAL)
       {
-        BlzFrameSetVisible(this.text, false);
-        BlzFrameSetVisible(this.pingButton, true);
+        BlzFrameSetVisible(this.Text, false);
+        BlzFrameSetVisible(this.PingButton, true);
       }
       else if (i == ARTIFACT_STATUS_HIDDEN)
       {
-        BlzFrameSetVisible(this.text, true);
-        BlzFrameSetVisible(this.pingButton, false);
+        BlzFrameSetVisible(this.Text, true);
+        BlzFrameSetVisible(this.PingButton, false);
       }
     }
 
-    void destroy()
+    void Destroy()
     {
-      BlzDestroyFrame(this.text);
-      BlzDestroyFrame(this.pingButton);
-      BlzDestroyFrame(this.icon);
+      BlzDestroyFrame(this.Text);
+      BlzDestroyFrame(this.PingButton);
+      BlzDestroyFrame(this.Icon);
       BlzDestroyFrame(this.title);
-      BlzDestroyFrame(this.box);
-      thistype.repsByPingButton[GetHandleId(this.pingButton)] = 0;
+      BlzDestroyFrame(this.Box);
+      thistype.repsByPingButton[GetHandleId(this.PingButton)] = 0;
 
-      DestroyTrigger(this.pingTrigger);
+      DestroyTrigger(this.PingTrigger);
 
       this.deallocate();
     }
 
-    static void pingButtonClick()
+    static void PingButtonClick()
     {
       ArtifactRepresentation whichArtifactRep = thistype.repsByPingButton[GetHandleId(BlzGetTriggerFrame())];
 
@@ -291,13 +291,13 @@ namespace AzerothWarsCSharp.Source.User_Interface
       var i = 0;
       var idMod = 0; //Used in xyz calculation
       float boxSpacingX =
-        (BACKDROP_WIDTH - BOX_WIDTH * COLUMN_COUNT) /
-        (COLUMN_COUNT + 1); //How much horizontal space to leave between every box
+        (_backdropWidth - _boxWidth * _columnCount) /
+        (_columnCount + 1); //How much horizontal space to leave between every box
       float boxSpacingY =
-        (BACKDROP_HEIGHT - Y_OFFSET_TOP - Y_OFFSET_BOT - BOX_HEIGHT * ROW_COUNT) /
-        (ROW_COUNT + 1); //How much vertical space to leave between every box
+        (_backdropHeight - _yOffsetTop - _yOffsetBot - _boxHeight * _rowCount) /
+        (_rowCount + 1); //How much vertical space to leave between every box
 
-      this.whichArtifact = whichArtifact;
+      this.WhichArtifact = whichArtifact;
 
       while (true)
       {
@@ -311,65 +311,65 @@ namespace AzerothWarsCSharp.Source.User_Interface
 
       thistype.repsById[i] = this;
       thistype.repsByArtifact[whichArtifact] = this;
-      this.id = i;
+      this.Id = i;
 
       //Determine x, y and z positions based on id
-      z = this.id / (COLUMN_COUNT * ROW_COUNT);
-      idMod = this.id - (z * COLUMN_COUNT * ROW_COUNT);
-      y = idMod / COLUMN_COUNT;
-      x = ModuloInteger(this.id, COLUMN_COUNT);
+      _z = this.Id / (_columnCount * _rowCount);
+      idMod = this.Id - (_z * _columnCount * _rowCount);
+      _y = idMod / _columnCount;
+      _x = ModuloInteger(this.Id, _columnCount);
 
       //Determine which page to place on based on z value, and create it if it does not exist
-      if (ArtifactMenuPage.pageArray[z] == 0)
+      if (ArtifactMenuPage.pageArray[_z] == 0)
       {
-        parentPage = ArtifactMenuPage.create(z);
+        _parentPage = ArtifactMenuPage.create(_z);
       }
       else
       {
-        parentPage = ArtifactMenuPage.pageArray[this.id];
+        _parentPage = ArtifactMenuPage.pageArray[this.Id];
       }
 
       //Create black box encompassing the representation
-      this.box = BlzCreateFrame("ArtifactItemBox", ArtifactMenuPage.pageArray[z].backdrop, 0, 0);
-      BlzFrameSetSize(this.box, BOX_WIDTH, BOX_HEIGHT);
-      BlzFrameSetPoint(this.box, FRAMEPOINT_TOPLEFT, ArtifactMenuPage.pageArray[z].backdrop, FRAMEPOINT_TOPLEFT,
-        BOX_WIDTH * x + boxSpacingX * (x + 1),
-        -(Y_OFFSET_TOP + (BOX_HEIGHT * y + boxSpacingY * (y + 1))));
+      this.Box = BlzCreateFrame("ArtifactItemBox", ArtifactMenuPage.pageArray[_z].backdrop, 0, 0);
+      BlzFrameSetSize(this.Box, _boxWidth, _boxHeight);
+      BlzFrameSetPoint(this.Box, FRAMEPOINT_TOPLEFT, ArtifactMenuPage.pageArray[_z].backdrop, FRAMEPOINT_TOPLEFT,
+        _boxWidth * _x + boxSpacingX * (_x + 1),
+        -(_yOffsetTop + (_boxHeight * _y + boxSpacingY * (_y + 1))));
 
       //Create icon in the box
-      this.icon = BlzCreateFrameByType("BACKDROP", "ArtifactIcon", this.box, "", 0);
-      BlzFrameSetSize(this.icon, 004, 004);
-      BlzFrameSetPoint(this.icon, FRAMEPOINT_LEFT, this.box, FRAMEPOINT_LEFT, 0015, -00090);
-      BlzFrameSetTexture(this.icon, BlzGetItemIconPath(whichArtifact.item), 0, true);
+      this.Icon = BlzCreateFrameByType("BACKDROP", "ArtifactIcon", this.Box, "", 0);
+      BlzFrameSetSize(this.Icon, 004, 004);
+      BlzFrameSetPoint(this.Icon, FRAMEPOINT_LEFT, this.Box, FRAMEPOINT_LEFT, 0015, -00090);
+      BlzFrameSetTexture(this.Icon, BlzGetItemIconPath(whichArtifact.item), 0, true);
 
       //Create title of artifact at top of box
-      this.title = BlzCreateFrame("ArtifactItemTitle", this.box, 0, 0);
+      this.title = BlzCreateFrame("ArtifactItemTitle", this.Box, 0, 0);
       BlzFrameSetText(this.title, GetItemName(whichArtifact.item));
-      BlzFrameSetPoint(this.title, FRAMEPOINT_CENTER, this.box, FRAMEPOINT_CENTER, 00, 00255);
-      BlzFrameSetSize(this.title, BOX_WIDTH - 004, 00);
+      BlzFrameSetPoint(this.title, FRAMEPOINT_CENTER, this.Box, FRAMEPOINT_CENTER, 00, 00255);
+      BlzFrameSetSize(this.title, _boxWidth - 004, 00);
 
       //Create description text of artifact
-      this.text = BlzCreateFrame("ArtifactItemOwnerText", this.box, 0, 0);
-      BlzFrameSetPoint(this.text, FRAMEPOINT_TOPLEFT, this.icon, FRAMEPOINT_TOPRIGHT, 0007, 0);
-      BlzFrameSetPoint(this.text, FRAMEPOINT_BOTTOMLEFT, this.icon, FRAMEPOINT_BOTTOMRIGHT, 0007, 0);
-      BlzFrameSetPoint(this.text, FRAMEPOINT_RIGHT, this.box, FRAMEPOINT_RIGHT, -0007, 0);
+      this.Text = BlzCreateFrame("ArtifactItemOwnerText", this.Box, 0, 0);
+      BlzFrameSetPoint(this.Text, FRAMEPOINT_TOPLEFT, this.Icon, FRAMEPOINT_TOPRIGHT, 0007, 0);
+      BlzFrameSetPoint(this.Text, FRAMEPOINT_BOTTOMLEFT, this.Icon, FRAMEPOINT_BOTTOMRIGHT, 0007, 0);
+      BlzFrameSetPoint(this.Text, FRAMEPOINT_RIGHT, this.Box, FRAMEPOINT_RIGHT, -0007, 0);
 
       //Create ping button of artifact
-      this.pingButton = BlzCreateFrame("ScriptDialogButton", this.box, 0, 0);
-      BlzFrameSetSize(this.pingButton, 0062, 0027);
-      BlzFrameSetPoint(this.pingButton, FRAMEPOINT_LEFT, this.box, FRAMEPOINT_LEFT, 0057, -00090);
-      BlzFrameSetText(this.pingButton, "Ping");
-      BlzFrameSetVisible(this.pingButton, false);
-      this.pingTrigger = CreateTrigger();
-      BlzTriggerRegisterFrameEvent(this.pingTrigger, this.pingButton, FRAMEEVENT_CONTROL_CLICK);
-      TriggerAddAction(this.pingTrigger, thistype.pingButtonClick);
-      thistype.repsByPingButton[GetHandleId(this.pingButton)] = this;
+      this.PingButton = BlzCreateFrame("ScriptDialogButton", this.Box, 0, 0);
+      BlzFrameSetSize(this.PingButton, 0062, 0027);
+      BlzFrameSetPoint(this.PingButton, FRAMEPOINT_LEFT, this.Box, FRAMEPOINT_LEFT, 0057, -00090);
+      BlzFrameSetText(this.PingButton, "Ping");
+      BlzFrameSetVisible(this.PingButton, false);
+      this.PingTrigger = CreateTrigger();
+      BlzTriggerRegisterFrameEvent(this.PingTrigger, this.PingButton, FRAMEEVENT_CONTROL_CLICK);
+      TriggerAddAction(this.PingTrigger, thistype.pingButtonClick);
+      thistype.repsByPingButton[GetHandleId(this.PingButton)] = this;
 
       ;
       ;
     }
 
-    static void onInit()
+    static void OnInit()
     {
       thistype.repsByPingButton = Table.create();
     }

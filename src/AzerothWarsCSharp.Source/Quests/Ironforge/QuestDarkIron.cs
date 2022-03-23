@@ -8,8 +8,8 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
   public sealed class QuestDarkIron : QuestData{
 
   
-    private const int HERO_ID = FourCC("H03G");
-    private const int RESEARCH_ID = FourCC("R01A");
+    private static readonly int HeroId = FourCC("H03G");
+    private static readonly int ResearchId = FourCC("R01A");
   
 
 
@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       group tempGroup = CreateGroup();
       unit u;
       //Transfer all Neutral Passive units in region to Ironforge
-      GroupEnumUnitsInRect(tempGroup, Regions.Shadowforge_City.Rect, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.ShadowforgeCity.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }
@@ -33,17 +33,17 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       }
       DestroyGroup(tempGroup);
       tempGroup = null;
-      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
+      SetPlayerTechResearched(Holder.Player, ResearchId, 1);
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
-      Holder.ModObjectLimit(HERO_ID, 1);
+      Holder.ModObjectLimit(ResearchId, UNLIMITED);
+      Holder.ModObjectLimit(HeroId, 1);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Dark Iron Alliance", "The Dark Iron dwarves are renegades. Bring Magni to their capital to open negotiations for an alliance.", "ReplaceableTextures\\CommandButtons\\BTNRPGDarkIron.blp");
-      AddQuestItem(new QuestItemLegendInRect(LEGEND_MAGNI, Regions.Shadowforge_gate.Rect, "Shadowforge"));
+      AddQuestItem(new QuestItemLegendInRect(LEGEND_MAGNI, Regions.ShadowforgeGate.Rect, "Shadowforge"));
       ;;
     }
 

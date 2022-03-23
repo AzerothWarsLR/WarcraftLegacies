@@ -11,71 +11,71 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
   
 
 
-    private static thistype[] byIndex;
-    private static int count = 0;
-    private static thistype objective ;//The portal that needs to be opened now
+    private static thistype[] _byIndex;
+    private static int _count = 0;
+    private static thistype _objective ;//The portal that needs to be opened now
 
-    private unit interiorWaygate;
-    private float interiorDestinationX;
-    private float interiorDestinationY;
-    private unit exteriorWaygate;
+    private unit _interiorWaygate;
+    private float _interiorDestinationX;
+    private float _interiorDestinationY;
+    private unit _exteriorWaygate;
 
-    private ControlPoint nearbyControlPoint ;//This Control Point is the closest one to the exterior Waygate
-    private BlackEmpirePortal next ;//The portal that needs to be opened after this one.
-    private string name;
-    private int portalState;
+    private ControlPoint _nearbyControlPoint ;//This Control Point is the closest one to the exterior Waygate
+    private BlackEmpirePortal _next ;//The portal that needs to be opened after this one.
+    private string _name;
+    private int _portalState;
 
     public ControlPoint operator NearbyControlPoint( ){
-      ;.nearbyControlPoint;
+      ;._nearbyControlPoint;
     }
 
     public void operator NearbyControlPoint=(ControlPoint value ){
-      nearbyControlPoint = value;
+      _nearbyControlPoint = value;
     }
 
     public string operator Name( ){
-      ;.name;
+      ;._name;
     }
 
     public integer operator PortalState( ){
-      ;.portalState;
+      ;._portalState;
     }
 
     public void operator PortalState=(int value ){
-      portalState = value;
+      _portalState = value;
 
-      if (portalState == BLACKEMPIREPORTALSTATE_CLOSED){
-        WaygateActivate(interiorWaygate, false);
-        WaygateActivate(exteriorWaygate, false);
+      if (_portalState == BLACKEMPIREPORTALSTATE_CLOSED){
+        WaygateActivate(_interiorWaygate, false);
+        WaygateActivate(_exteriorWaygate, false);
 
-        SetUnitAnimation(exteriorWaygate, "death");
-        SetUnitVertexColor(interiorWaygate, 255, 50, 50, 255);
+        SetUnitAnimation(_exteriorWaygate, "death");
+        SetUnitVertexColor(_interiorWaygate, 255, 50, 50, 255);
       }
 
-      if (portalState == BLACKEMPIREPORTALSTATE_EXITONLY){
-        WaygateActivate(interiorWaygate, true);
-        WaygateActivate(exteriorWaygate, false);
+      if (_portalState == BLACKEMPIREPORTALSTATE_EXITONLY){
+        WaygateActivate(_interiorWaygate, true);
+        WaygateActivate(_exteriorWaygate, false);
 
-        SetUnitAnimation(exteriorWaygate, "death");
-        SetUnitVertexColor(interiorWaygate, 150, 150, 255, 230);
+        SetUnitAnimation(_exteriorWaygate, "death");
+        SetUnitVertexColor(_interiorWaygate, 150, 150, 255, 230);
       }
 
-      if (portalState == BLACKEMPIREPORTALSTATE_OPEN){
-        WaygateActivate(interiorWaygate, true);
-        WaygateActivate(exteriorWaygate, true);
+      if (_portalState == BLACKEMPIREPORTALSTATE_OPEN){
+        WaygateActivate(_interiorWaygate, true);
+        WaygateActivate(_exteriorWaygate, true);
 
-        SetUnitAnimation(exteriorWaygate, "birth");
-        SetUnitVertexColor(interiorWaygate, 255, 255, 255, 255);
+        SetUnitAnimation(_exteriorWaygate, "birth");
+        SetUnitVertexColor(_interiorWaygate, 255, 255, 255, 255);
       }
     }
 
     private void SetupWaygateDestinations( ){
-      WaygateSetDestination(interiorWaygate, GetUnitX(exteriorWaygate), GetUnitY(exteriorWaygate));
-      WaygateSetDestination(exteriorWaygate, interiorDestinationX, interiorDestinationY);
+      WaygateSetDestination(_interiorWaygate, GetUnitX(_exteriorWaygate), GetUnitY(_exteriorWaygate));
+      WaygateSetDestination(_exteriorWaygate, _interiorDestinationX, _interiorDestinationY);
     }
 
     public void operator Next=(BlackEmpirePortal value ){
-      next = value;
+      _next = value;
     }
 
     //Progresses the current Portal objective to the next one.

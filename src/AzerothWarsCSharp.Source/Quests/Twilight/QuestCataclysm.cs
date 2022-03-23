@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
   public sealed class QuestCataclysm : QuestData{
 
   
-    private const int CATACLYSM_RESEARCH = FourCC("R05E");
+    private static readonly int CataclysmResearch = FourCC("R05E");
   
 
 
@@ -20,14 +20,14 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
     protected override string CompletionDescription => "Cultists all over the world join your cause actively, Deathwing as a super demihero && the 2 elemental ascendant heroes.";
 
     protected override void OnComplete(){
-      SetPlayerTechResearched(Holder.Player, CATACLYSM_RESEARCH, 1);
+      SetPlayerTechResearched(Holder.Player, CataclysmResearch, 1);
       PlayThematicMusicBJ( "war3mapImported\\TwilightTheme.mp3" );
       SetPlayerTechResearched(FACTION_CTHUN.Player, FourCC("R07D"), 1);
       IssueImmediateOrderBJ( gg_unit_h02U_2413, "unrobogoblin" );
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(CATACLYSM_RESEARCH, UNLIMITED);
+      Holder.ModObjectLimit(CataclysmResearch, UNLIMITED);
     }
 
     public  thistype ( ){

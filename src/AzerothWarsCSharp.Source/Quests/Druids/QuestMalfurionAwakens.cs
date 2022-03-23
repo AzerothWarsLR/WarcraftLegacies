@@ -11,10 +11,10 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
   public sealed class QuestMalfurionAwakens : QuestData{
 
   
-    private group MoongladeUnits;
+    private group _moongladeUnits;
 
-    private const int HORN_OF_CENARIUS = FourCC("cnhn");
-    private const int GHANIR = FourCC("I00C");
+    private static readonly int HornOfCenarius = FourCC("cnhn");
+    private static readonly int Ghanir = FourCC("I00C");
   
 
 
@@ -73,14 +73,14 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       group tempGroup = CreateGroup();
       unit u;
       var i = 0;
-      MoongladeUnits = CreateGroup();
+      _moongladeUnits = CreateGroup();
       GroupEnumUnitsInRect(tempGroup, Regions.MoongladeVillage.Rect, null);
       while(true){
         u = FirstOfGroup(tempGroup);
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
           SetUnitInvulnerable(u, true);
-          GroupAddUnit(MoongladeUnits, u);
+          GroupAddUnit(_moongladeUnits, u);
         }
         GroupRemoveUnit(tempGroup, u);
         i = i + 1;

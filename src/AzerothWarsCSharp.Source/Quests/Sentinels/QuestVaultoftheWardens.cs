@@ -9,8 +9,8 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
   public sealed class QuestVaultoftheWardens : QuestData{
 
   
-    private const int RESEARCH_ID = FourCC("R06H");
-    private const int WARDEN_ID = FourCC("h045");
+    private static readonly int ResearchId = FourCC("R06H");
+    private static readonly int WardenId = FourCC("h045");
   
 
 
@@ -20,14 +20,14 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
 
     protected override void OnComplete(){
       CreateUnit(Holder.Player, FourCC("n04G"), GetRectCenterX(Regions.VaultoftheWardens), GetRectCenterY(gg_rct_VaultoftheWardens).Rect, 220);
-      CreateUnits(Holder.Player, WARDEN_ID, GetRectCenterX(Regions.VaultoftheWardens), GetRectCenterY(gg_rct_VaultoftheWardens), 270.Rect, 4);
-      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
-      DisplayUnitTypeAcquired(Holder.Player, WARDEN_ID, "You can now train Wardens from the Vault of the Wardens, Sentinel Enclaves, && your capitals.");
+      CreateUnits(Holder.Player, WardenId, GetRectCenterX(Regions.VaultoftheWardens), GetRectCenterY(gg_rct_VaultoftheWardens), 270.Rect, 4);
+      SetPlayerTechResearched(Holder.Player, ResearchId, 1);
+      DisplayUnitTypeAcquired(Holder.Player, WardenId, "You can now train Wardens from the Vault of the Wardens, Sentinel Enclaves, && your capitals.");
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(WARDEN_ID, 8);
-      Holder.ModObjectLimit(RESEARCH_ID, 1);
+      Holder.ModObjectLimit(WardenId, 8);
+      Holder.ModObjectLimit(ResearchId, 1);
     }
 
     public  thistype ( ){

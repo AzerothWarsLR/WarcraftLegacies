@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
   public sealed class QuestFountainOfBlood : QuestData{
 
   
-    private const int RESEARCH_ID = FourCC("R00X");
+    private static readonly int ResearchId = FourCC("R00X");
   
 
 
@@ -15,11 +15,11 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
     protected override string CompletionDescription => "Allows Orcish units to increase their attack rate && movement speed temporarily";
 
     protected override void OnComplete(){
-      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
+      SetPlayerTechResearched(Holder.Player, ResearchId, 1);
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }
 
     public  thistype ( ){

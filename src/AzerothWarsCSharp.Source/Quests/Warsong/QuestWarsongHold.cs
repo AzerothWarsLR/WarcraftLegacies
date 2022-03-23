@@ -9,8 +9,8 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
   public sealed class QuestWarsongHold : QuestData{
 
   
-    private const int RESEARCH_ID = FourCC("R06G");
-    private const int ABILITY_ID = FourCC("A0DZ");
+    private static readonly int ResearchId = FourCC("R06G");
+    private static readonly int AbilityId = FourCC("A0DZ");
   
 
 
@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       BlzSetUnitName(warsongHold, "Warsong Hold");
       BlzSetUnitMaxHP(warsongHold, 4000);
       SetUnitLifePercentBJ(warsongHold, 100);
-      UnitAddAbility(warsongHold, ABILITY_ID);
+      UnitAddAbility(warsongHold, AbilityId);
       CreateStructureForced(Holder.Player, FourCC("n03E"), -7296, 15680, 4712389*bj_RADTODEG, 128);
       CreateStructureForced(Holder.Player, FourCC("o01T"), -7456, 15008, 4712389*bj_RADTODEG, 128);
       CreateStructureForced(Holder.Player, FourCC("o028"), -7808, 16512, 4712389*bj_RADTODEG, 128);
@@ -52,16 +52,16 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       CreateStructureForced(Holder.Player, FourCC("n03E"), -7808, 16128, 4712389*bj_RADTODEG, 128);
       CreateStructureForced(Holder.Player, FourCC("orai"), -7319426, 1513472, 0467489*bj_RADTODEG, 128);
       CreateStructureForced(Holder.Player, FourCC("o02T"), -8672, 15328, 4712389*bj_RADTODEG, 128);
-      Holder.ModObjectLimit(RESEARCH_ID, -UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, -UNLIMITED);
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Warsong Hold", "The far-off land of Northrend is the new home of the traitor shaman NerFourCC("zhul. The Warsong must land its forces on its shores in order to end the existential threat he now represents.", "ReplaceableTextures\\CommandButtons\\BTNTuskaarBrown.blp"");
-      AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("o02T")));
+      AddQuestItem(new QuestItemResearch(ResearchId, FourCC("o02T")));
       ;;
     }
 

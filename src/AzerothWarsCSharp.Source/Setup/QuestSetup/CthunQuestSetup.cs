@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
   {
     public static void Setup()
     {
-      var cthun = CthunSetup.FACTION_CTHUN;
+      var cthun = CthunSetup.factionCthun;
       cthun.StartingQuest = cthun.AddQuest(new QuestTitanJailors());
       cthun.AddQuest(new QuestAwakenCthun(PreplacedUnitSystem.GetUnitByUnitType(FourCC("U00R"))));
       cthun.AddQuest(new QuestEndlessRanks());

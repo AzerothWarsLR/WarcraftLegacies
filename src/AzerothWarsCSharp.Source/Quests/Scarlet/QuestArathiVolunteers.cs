@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
   public sealed class QuestArathiVolunteers : QuestData{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC("R089");
+    private static readonly int QuestResearchId = FourCC("R089");
   
 
 

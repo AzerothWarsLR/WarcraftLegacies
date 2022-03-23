@@ -4,15 +4,15 @@
   
     using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
-    private const int RESEARCH_ID = FourCC("R022");
+    private static readonly int researchId = FourCC("R022");
   
 
 
-    protected override string CompletionPopup => 
+    protected override string completionPopup => 
 
     }
 
-    protected override string CompletionDescription => 
+    protected override string completionDescription => 
 
     }
 

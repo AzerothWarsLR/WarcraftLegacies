@@ -7,11 +7,11 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
   public sealed class QuestTortolla : QuestData{
 
   
-    private const int HERO_ID = FourCC("H04U");
+    private static readonly int HeroId = FourCC("H04U");
   
 
 
-    static unit sleepingTortolla
+    static unit SleepingTortolla
 
     protected override string CompletionPopup => "Tortolla has finally awoken from his ancient slumber.";
 
@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(HERO_ID, 1);
+      Holder.ModObjectLimit(HeroId, 1);
     }
 
     public  thistype ( ){
@@ -39,10 +39,10 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 
 
     public static void Setup( ){
-      QuestTortolla.sleepingTortolla = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), HERO_ID, -12827, 5729, 333);
-      SetUnitInvulnerable(QuestTortolla.sleepingTortolla, true);
-      AddSpecialEffectTarget("Abilities\\Spells\\Undead\\Sleep\\SleepTarget.mdl", QuestTortolla.sleepingTortolla, "overhead");
-      SetHeroXP(QuestTortolla.sleepingTortolla, LEGEND_TORTOLLA.StartingXP, false);
+      QuestTortolla.SleepingTortolla = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), HeroId, -12827, 5729, 333);
+      SetUnitInvulnerable(QuestTortolla.SleepingTortolla, true);
+      AddSpecialEffectTarget("Abilities\\Spells\\Undead\\Sleep\\SleepTarget.mdl", QuestTortolla.SleepingTortolla, "overhead");
+      SetHeroXP(QuestTortolla.SleepingTortolla, LEGEND_TORTOLLA.StartingXP, false);
     }
 
   }

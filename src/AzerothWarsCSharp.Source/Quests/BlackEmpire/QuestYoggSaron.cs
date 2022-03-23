@@ -9,11 +9,11 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
   public sealed class QuestYoggSaron : QuestData{
 
   
-    private const int RESEARCH_ID = FourCC("R07R");
+    private static readonly int ResearchId = FourCC("R07R");
   
 
 
-    protected override CompletionPopup => Yogg-Saron has been awoken;
+    protected override CompletionPopup => Yogg-Saron Has been _awoken;
 
     protected override string CompletionDescription => "The old god Yogg-Saron will join the Black Empire && enable to train Forgotten ones";
 
@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n053"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00I"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02S"))));
-      ResearchId = RESEARCH_ID;
+      base.ResearchId = ResearchId;
       ;;
     }
 

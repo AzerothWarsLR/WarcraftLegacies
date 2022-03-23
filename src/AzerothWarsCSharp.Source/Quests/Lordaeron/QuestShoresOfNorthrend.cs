@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
   public sealed class QuestShoresOfNorthrend : QuestData{
 
   
-    private const int RESEARCH_ID = FourCC("R06F");
+    private static readonly int ResearchId = FourCC("R06F");
   
 
 
@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     protected override string CompletionDescription => "A new base near Dragonblight in Northrend, && Arthas revives there";
 
     private void OnFail( ){
-      Holder.ModObjectLimit(RESEARCH_ID, -UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, -UNLIMITED);
     }
 
     protected override void OnComplete(){
@@ -52,18 +52,18 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       CreateStructureForced(Holder.Player, FourCC("hgtw"), 1472, 16384, 4712389*bj_RADTODEG, 256);
       CreateStructureForced(Holder.Player, FourCC("hkni"), 8933604, 1617558, 4130178*bj_RADTODEG, 256);
       CreateStructureForced(Holder.Player, FourCC("nchp"), -9312155, 1655475, 5458206*bj_RADTODEG, 256);
-      Holder.ModObjectLimit(RESEARCH_ID, -UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, -UNLIMITED);
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Shores of Northrend", "MalFourCC("ganis") citadel lies somewhere within the arctic wastes of the north. In order to assault the Dreadlord, Arthas must first establish a base camp at the shores of Northrend.", "ReplaceableTextures\\CommandButtons\\BTNHumanTransport.blp");
       AddQuestItem(new QuestItemControlLegend(LEGEND_ARTHAS, true));
       AddQuestItem(new QuestItemLegendDead(LEGEND_SCHOLOMANCE));
-      AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("hshy")));
+      AddQuestItem(new QuestItemResearch(ResearchId, FourCC("hshy")));
       ;;
     }
 

@@ -5,51 +5,51 @@ namespace AzerothWarsCSharp.Source.Setup
   public class TeamSetup{
 
   
-    public static Team TEAM_LEGION { get; private set; }
-    public static Team TEAM_ALLIANCE { get; private set; }
-    public static Team TEAM_HORDE { get; private set; }
-    public static Team TEAM_NIGHT_ELVES { get; private set; }
-    public static Team TEAM_NAGA { get; private set; }
-    public static Team TEAM_GILNEAS { get; private set; }
-    public static Team TEAM_SCARLET { get; private set; }
-    public static Team TEAM_FORSAKEN { get; private set; }
-    public static Team TEAM_OLDGOD { get; private set; }
-    public static Team TEAM_SCOURGE { get; private set; }
+    public static Team TeamLegion { get; private set; }
+    public static Team TeamAlliance { get; private set; }
+    public static Team TeamHorde { get; private set; }
+    public static Team TeamNightElves { get; private set; }
+    public static Team TeamNaga { get; private set; }
+    public static Team TeamGilneas { get; private set; }
+    public static Team TeamScarlet { get; private set; }
+    public static Team TeamForsaken { get; private set; }
+    public static Team TeamOldgod { get; private set; }
+    public static Team TeamScourge { get; private set; }
   
 
     public static void Setup( ){
       //Starting teams
       Team t = 0;
 
-      TEAM_ALLIANCE = Team.create("Alliance");
-      TEAM_ALLIANCE.VictoryMusic = "HeroicVictory";
+      TeamAlliance = Team.create("Alliance");
+      TeamAlliance.VictoryMusic = "HeroicVictory";
 
-      TEAM_LEGION = Team.create("Burning Legion");
-      TEAM_LEGION.VictoryMusic = "DarkVictory";
+      TeamLegion = Team.create("Burning Legion");
+      TeamLegion.VictoryMusic = "DarkVictory";
 
-      TEAM_HORDE = Team.create("Horde");
-      TEAM_HORDE.VictoryMusic = "DarkVictory";
+      TeamHorde = Team.create("Horde");
+      TeamHorde.VictoryMusic = "DarkVictory";
 
-      TEAM_NIGHT_ELVES = Team.create("Night Elves");
-      TEAM_NIGHT_ELVES.VictoryMusic = "HeroicVictory";
+      TeamNightElves = Team.create("Night Elves");
+      TeamNightElves.VictoryMusic = "HeroicVictory";
 
-      TEAM_OLDGOD = Team.create("Old Gods");
-      TEAM_OLDGOD.VictoryMusic = "DarkVictory";
+      TeamOldgod = Team.create("Old Gods");
+      TeamOldgod.VictoryMusic = "DarkVictory";
 
-      TEAM_NAGA = Team.create("Illidari");
-      TEAM_NAGA.VictoryMusic = "DarkVictory";
+      TeamNaga = Team.create("Illidari");
+      TeamNaga.VictoryMusic = "DarkVictory";
 
-      TEAM_GILNEAS = Team.create("Gilneas");
-      TEAM_GILNEAS.VictoryMusic = "HeroicVictory";
+      TeamGilneas = Team.create("Gilneas");
+      TeamGilneas.VictoryMusic = "HeroicVictory";
 
-      TEAM_SCARLET = Team.create("Scarlet Crusade");
-      TEAM_SCARLET.VictoryMusic = "DarkVictory";
+      TeamScarlet = Team.create("Scarlet Crusade");
+      TeamScarlet.VictoryMusic = "DarkVictory";
 
-      TEAM_FORSAKEN = Team.create("Forsaken");
-      TEAM_FORSAKEN.VictoryMusic = "DarkVictory";
+      TeamForsaken = Team.create("Forsaken");
+      TeamForsaken.VictoryMusic = "DarkVictory";
 
-      TEAM_SCOURGE = Team.create("Northrend");
-      TEAM_SCOURGE.VictoryMusic = "DarkVictory";
+      TeamScourge = Team.create("Northrend");
+      TeamScourge.VictoryMusic = "DarkVictory";
     }
 
   }

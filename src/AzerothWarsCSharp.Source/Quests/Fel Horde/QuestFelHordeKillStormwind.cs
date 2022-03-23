@@ -6,9 +6,9 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
   public sealed class QuestFelHordeKillStormwind : QuestData{
 
   
-    private const int RESEARCH_ID = FourCC("R05Z");
-    private const int UNITTYPE_ID = FourCC("n086");
-    private const int BUILDING_ID = FourCC("o030");
+    private static readonly int ResearchId = FourCC("R05Z");
+    private static readonly int UnittypeId = FourCC("n086");
+    private static readonly int BuildingId = FourCC("o030");
     private const int UNIT_LIMIT = 6;
   
 

@@ -6,18 +6,18 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
   public sealed class QuestDemonGateMonastery : QuestData{
 
   
-    private const int DEMONGATE_ID = FourCC("n081");
+    private static readonly int DemongateId = FourCC("n081");
   
 
 
-    private QuestItemKillUnit questItemKillMonastery;
+    private QuestItemKillUnit _questItemKillMonastery;
 
     protected override string CompletionPopup => "The great Scarlet Monastery has fallen, && from its ashes rises an even greater Demon Gate.";
 
     protected override string CompletionDescription => "A new Demon Gate at the MonasteryFourCC(s location";
 
     protected override void OnComplete(){
-      CreateUnit(Holder.Player, DEMONGATE_ID, GetUnitX(questItemKillMonastery.Target), GetUnitY(questItemKillMonastery.Target), 270);
+      CreateUnit(Holder.Player, DemongateId, GetUnitX(_questItemKillMonastery.Target), GetUnitY(_questItemKillMonastery.Target), 270);
       SetDoodadAnimationRectBJ( "hide", FourCC("YObb"), gg_rct_ScarletMonastery );
       SetDoodadAnimationRectBJ( "hide", FourCC("ZSab"), gg_rct_ScarletMonastery );
       SetDoodadAnimationRectBJ( "hide", FourCC("YOsw"), gg_rct_ScarletMonastery );
@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
     public  thistype ( ){
       thistype this = thistype.allocate("A Scarlet Rift", "The energies surrounding the Scarlet Monastery are extraordinary. Destroy this bastion of light to fabricate a Demon Gate in its place.", "ReplaceableTextures\\CommandButtons\\BTNMaskOfDeath.blp");
-      questItemKillMonastery = AddQuestItem(new QuestItemKillUnit(gg_unit_h00T_0786));
+      _questItemKillMonastery = AddQuestItem(new QuestItemKillUnit(gg_unit_h00T_0786));
       ;;
     }
 

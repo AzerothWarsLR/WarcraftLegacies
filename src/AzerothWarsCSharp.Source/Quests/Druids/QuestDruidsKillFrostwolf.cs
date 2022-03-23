@@ -6,8 +6,8 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
   public sealed class QuestDruidsKillFrostwolf : QuestData{
 
   
-    private const int RESEARCH_ID = FourCC("R044");
-    private const int ELEMENTAL_GUARDIAN_ID = FourCC("e00X");
+    private static readonly int ResearchId = FourCC("R044");
+    private static readonly int ElementalGuardianId = FourCC("e00X");
   
 
 

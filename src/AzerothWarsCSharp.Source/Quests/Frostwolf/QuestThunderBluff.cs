@@ -10,8 +10,8 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
   public sealed class QuestThunderBluff : QuestData{
 
   
-    private group ThunderBluffUnits;
-    private const int QUEST_RESEARCH_ID = FourCC("R05I");
+    private group _thunderBluffUnits;
+    private static readonly int QuestResearchId = FourCC("R05I");
   
 
 

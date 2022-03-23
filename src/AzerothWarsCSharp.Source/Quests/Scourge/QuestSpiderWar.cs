@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
   public sealed class QuestSpiderWar : QuestData{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC("R03A");
+    private static readonly int QuestResearchId = FourCC("R03A");
   
 
 
@@ -18,11 +18,11 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     protected override string CompletionDescription => "Access to the Plague Research at the Frozen Throne, KelFourCC(tuzad && Rivendare trainable && a base in Icecrown";
 
     private void OnFail( ){
-      RescueNeutralUnitsInRect(Regions.Ice_Crown.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      RescueNeutralUnitsInRect(Regions.IceCrown.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete(){
-      RescueNeutralUnitsInRect(Regions.Ice_Crown.Rect, Holder.Player);
+      RescueNeutralUnitsInRect(Regions.IceCrown.Rect, Holder.Player);
       SetPlayerTechResearched(Holder.Player, FourCC("R03A"), 1);
       if (GetLocalPlayer() == Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\ScourgeTheme.mp3" );
@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
+      Holder.ModObjectLimit(QuestResearchId, 1);
     }
 
     public  thistype ( ){

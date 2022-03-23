@@ -8,8 +8,8 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
   public sealed class QuestWildhammer : QuestData{
 
   
-    private const int HERO_ID = FourCC("H028");
-    private const int RESEARCH_ID = FourCC("R01C");
+    private static readonly int HeroId = FourCC("H028");
+    private static readonly int ResearchId = FourCC("R01C");
   
 
 
@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
 
 
       //Transfer all Neutral Passive units in region to Ironforge
-      GroupEnumUnitsInRect(tempGroup, Regions.Aerie_Peak.Rect, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.AeriePeak.Rect, null);
 
       while(true){
         u = FirstOfGroup(tempGroup);
@@ -40,17 +40,17 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       }
       DestroyGroup(tempGroup);
       tempGroup = null;
-      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
+      SetPlayerTechResearched(Holder.Player, ResearchId, 1);
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
-      Holder.ModObjectLimit(HERO_ID, 1);
+      Holder.ModObjectLimit(ResearchId, UNLIMITED);
+      Holder.ModObjectLimit(HeroId, 1);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Wildhammer Alliance", "The Wildhammer dwarves roam freely over the peaks of the Hinterlands. An audience with Magni himself might earn their cooperation.", "ReplaceableTextures\\CommandButtons\\BTNHeroGriffonWarrior.blp");
-      AddQuestItem(new QuestItemLegendInRect(LEGEND_MAGNI, Regions.Aerie_Peak.Rect, "Aerie Peak"));
+      AddQuestItem(new QuestItemLegendInRect(LEGEND_MAGNI, Regions.AeriePeak.Rect, "Aerie Peak"));
       ;;
     }
 

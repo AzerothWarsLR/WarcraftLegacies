@@ -1,17 +1,20 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Quests.Scourge
 {
   public sealed class QuestKelthuzad : QuestData{
-
-
-    protected override string CompletionPopup => 
-      string completionPopup = "KelFourCC(thuzad has been reanimated && empowered through the unlimited magical energies of the Sunwell.";
-      if (FACTION_LEGION != 0){
-        completionPopup = completionPopup + " He now has the ability to summon the Burning Legion.";
+    
+    protected override string CompletionPopup {
+      get
+      {
+        string completionPopup = "KelFourCC(thuzad has been reanimated && empowered through the unlimited magical energies of the Sunwell.";
+        if (LegionSetup.FACTION_LEGION != null){
+          completionPopup += " He now has the ability to summon the Burning Legion.";
+        }
+        return completionPopup;
       }
-      return completionPopup;
     }
 
     protected override string CompletionDescription => "KelFourCC(thuzad becomes a Lich";

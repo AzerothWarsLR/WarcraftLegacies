@@ -7,22 +7,22 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
 
     //An objective in which the player has to summon a Black Empire Obelisk on a specific Control Point.
 
-    private static int count = 0;
-    private static thistype[] byIndex;
-    private ControlPoint target;
+    private static int _count = 0;
+    private static thistype[] _byIndex;
+    private ControlPoint _target;
 
     float operator X( ){
-      return GetUnitX(target.Unit);
+      return GetUnitX(_target.Unit);
     }
 
     float operator Y( ){
-      return GetUnitY(target.Unit);
+      return GetUnitY(_target.Unit);
     }
 
     public QuestItemObelisk(ControlPoint target ){
 
       Description = "Summon a NyaFourCC(lothan Obelisk on " + GetUnitName(target.u);
-      this.target = target;
+      this._target = target;
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
       ;;

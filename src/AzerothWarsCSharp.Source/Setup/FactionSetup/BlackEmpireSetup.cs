@@ -4,14 +4,14 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
   public class BlackEmpireSetup
   {
-    public static Faction FACTION_BLACKEMPIRE;
+    public static Faction factionBlackempire;
     
     public static void Setup()
     {
       Faction f;
-      FACTION_BLACKEMPIRE = Faction.create("Black Empire", PLAYER_COLOR_TURQUOISE, "|cff008080",
+      factionBlackempire = Faction.create("Black Empire", PLAYER_COLOR_TURQUOISE, "|cff008080",
         "ReplaceableTextures\\CommandButtons\\BTNYogg-saronIcon.blp");
-      f = FACTION_BLACKEMPIRE;
+      f = factionBlackempire;
       f.Team = TEAM_OLDGOD;
       f.StartingGold = 150;
       f.StartingLumber = 500;

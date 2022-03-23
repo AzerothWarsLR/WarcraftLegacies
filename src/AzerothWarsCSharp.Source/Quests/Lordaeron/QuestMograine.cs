@@ -8,8 +8,8 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
   public sealed class QuestMograine : QuestData{
 
   
-    private const int ALTAR_ID = FourCC("halt");
-    private const int HERO_ID = FourCC("H01J");
+    private static readonly int AltarId = FourCC("halt");
+    private static readonly int HeroId = FourCC("H01J");
   
 
 

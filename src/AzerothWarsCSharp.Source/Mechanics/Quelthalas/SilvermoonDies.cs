@@ -6,13 +6,13 @@ namespace AzerothWarsCSharp.Source.Mechanics.Quelthalas
   {
     private static void Dies()
     {
-      SetUnitInvulnerable(LegendQuelthalas.LEGEND_SUNWELL.Unit, false);
+      SetUnitInvulnerable(LegendQuelthalas.legendSunwell.Unit, false);
     }
 
     public static void Setup()
     {
       trigger trig = CreateTrigger();
-      TriggerRegisterUnitEvent(trig, LegendQuelthalas.LEGEND_SUNWELL.Unit, EVENT_UNIT_DEATH);
+      TriggerRegisterUnitEvent(trig, LegendQuelthalas.legendSunwell.Unit, EVENT_UNIT_DEATH);
       TriggerAddAction(trig, Dies);
     }
   }

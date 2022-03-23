@@ -9,15 +9,15 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
     public static void Setup()
     {
       //Early duel
-      QuestData newQuest = FACTION_FEL_HORDE.AddQuest(new QuestKillDraenei());
-      FACTION_FEL_HORDE.StartingQuest = newQuest;
-      FACTION_FEL_HORDE.AddQuest(new QuestKilsorrow());
-      FACTION_FEL_HORDE.AddQuest(new QuestHellfire());
-      FACTION_FEL_HORDE.AddQuest(new QuestBlackrock());
-      FACTION_FEL_HORDE.AddQuest(new QuestFelHordeKillIronforge());
-      FACTION_FEL_HORDE.AddQuest(new QuestFelHordeKillStormwind());
+      QuestData newQuest = FactionFelHorde.AddQuest(new QuestKillDraenei());
+      FactionFelHorde.StartingQuest = newQuest;
+      FactionFelHorde.AddQuest(new QuestKilsorrow());
+      FactionFelHorde.AddQuest(new QuestHellfire());
+      FactionFelHorde.AddQuest(new QuestBlackrock());
+      FactionFelHorde.AddQuest(new QuestFelHordeKillIronforge());
+      FactionFelHorde.AddQuest(new QuestFelHordeKillStormwind());
       //Misc
-      FACTION_FEL_HORDE.AddQuest(new QuestGuldansLegacy());
+      FactionFelHorde.AddQuest(new QuestGuldansLegacy());
     }
   }
 }

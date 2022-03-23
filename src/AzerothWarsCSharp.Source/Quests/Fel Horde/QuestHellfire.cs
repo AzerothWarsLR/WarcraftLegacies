@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
   public sealed class QuestHellfire : QuestData{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC("R00P");
+    private static readonly int QuestResearchId = FourCC("R00P");
   
 
 
@@ -51,7 +51,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
+      Holder.ModObjectLimit(QuestResearchId, 1);
     }
 
     public  thistype ( ){

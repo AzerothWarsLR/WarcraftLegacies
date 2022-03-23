@@ -5,14 +5,14 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
   public static class FelHordeSetup{
 
   
-    public static Faction FACTION_FEL_HORDE { get; private set; }
+    public static Faction FactionFelHorde { get; private set; }
   
 
     public static void Setup( ){
       Faction f;
 
-      FACTION_FEL_HORDE = Faction.create("Fel Horde", PLAYER_COLOR_GREEN, "|c0020c000","ReplaceableTextures\\CommandButtons\\BTNPitLord.blp");
-      f = FACTION_FEL_HORDE;
+      FactionFelHorde = Faction.create("Fel Horde", PLAYER_COLOR_GREEN, "|c0020c000","ReplaceableTextures\\CommandButtons\\BTNPitLord.blp");
+      f = FactionFelHorde;
       f.Team = TEAM_LEGION;
       f.UndefeatedResearch = FourCC("R05L");
       f.StartingGold = 300;

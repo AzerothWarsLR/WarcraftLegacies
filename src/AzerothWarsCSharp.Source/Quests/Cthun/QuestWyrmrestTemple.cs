@@ -14,9 +14,9 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
       AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactDemonsoul));
       AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.ArtifactDemonsoul, Regions.WyrmrestTemple.Rect,
         "Wyrmrest Temple"));
-      AddQuestItem(new QuestItemLegendDead(LegendNeutral.LEGEND_SARAGOSA));
-      AddQuestItem(new QuestItemLegendDead(LegendNeutral.LEGEND_VAELASTRASZ));
-      AddQuestItem(new QuestItemLegendDead(LegendNeutral.LEGEND_OCCULUS));
+      AddQuestItem(new QuestItemLegendDead(LegendNeutral.legendSaragosa));
+      AddQuestItem(new QuestItemLegendDead(LegendNeutral.legendVaelastrasz));
+      AddQuestItem(new QuestItemLegendDead(LegendNeutral.legendOcculus));
       ResearchId = FourCC(""R07S"");
     }
 

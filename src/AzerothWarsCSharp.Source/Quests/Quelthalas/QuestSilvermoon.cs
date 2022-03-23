@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
   public sealed class QuestSilvermoon : QuestData{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC("R02U");
+    private static readonly int QuestResearchId = FourCC("R02U");
   
 
 
@@ -53,7 +53,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
+      Holder.ModObjectLimit(QuestResearchId, 1);
     }
 
     public  thistype ( ){

@@ -4,14 +4,14 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
   public static class NagaSetup{
   
-    public static Faction FACTION_NAGA { get; private set; }
+    public static Faction FactionNaga { get; private set; }
   
 
     public static void Setup( ){
       Faction f;
 
-      FACTION_NAGA = Faction.create("Illidan", PLAYER_COLOR_VIOLET, "|cffff00ff","ReplaceableTextures\\CommandButtons\\BTNEvilIllidan.blp");
-      f = FACTION_NAGA;
+      FactionNaga = Faction.create("Illidan", PLAYER_COLOR_VIOLET, "|cffff00ff","ReplaceableTextures\\CommandButtons\\BTNEvilIllidan.blp");
+      f = FactionNaga;
       f.Team = TEAM_NAGA;
       f.UndefeatedResearch = FourCC("R02L");
       f.StartingGold = 0;

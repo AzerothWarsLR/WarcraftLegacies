@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
   public sealed class QuestKingdomOfManStormwind : QuestData{
 
   
-    private const int RESEARCH_ID = FourCC("R01N");
+    private static readonly int ResearchId = FourCC("R01N");
     private const int EXPERIENCE_REWARD = 6000;
   
 
@@ -33,15 +33,15 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       ARTIFACT_CROWNSTORMWIND.setStatus(ARTIFACT_STATUS_HIDDEN);
       ARTIFACT_CROWNSTORMWIND.setDescription("Melted down");
       //Research
-      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
-      DisplayResearchAcquired(Holder.Player, RESEARCH_ID, 1);
+      SetPlayerTechResearched(Holder.Player, ResearchId, 1);
+      DisplayResearchAcquired(Holder.Player, ResearchId, 1);
       //High King Arthas
       BlzSetUnitName(LEGEND_VARIAN.Unit, "High King");
       AddHeroXP(LEGEND_VARIAN.Unit, EXPERIENCE_REWARD, true);
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }
 
     public  thistype ( ){

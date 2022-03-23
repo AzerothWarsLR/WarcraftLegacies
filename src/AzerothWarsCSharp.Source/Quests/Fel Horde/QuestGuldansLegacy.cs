@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
   public sealed class QuestGuldansLegacy : QuestData{
 
   
-    private int RESEARCH_ID = FourCC(""R041"");
+    private int _researchId = FourCC(""R041"");
   
 
 

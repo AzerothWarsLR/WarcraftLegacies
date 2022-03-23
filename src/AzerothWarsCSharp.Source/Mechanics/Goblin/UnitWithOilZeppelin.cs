@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Goblin
 
 
     //! runtextmacro AIDS()
-    private float tick;
+    private float _tick;
 
     private static bool AIDS_filter(unit u ){
       if (GetUnitTypeId(u) == UNIT_TYPE){
@@ -19,33 +19,33 @@ namespace AzerothWarsCSharp.Source.Mechanics.Goblin
     }
 
     private void AIDS_onCreate( ){
-      tick = 0;
+      _tick = 0;
       this.startPeriodic();
     }
 
     private void AIDS_onDestroy( ){
-      tick = 0;
+      _tick = 0;
       this.stopPeriodic();
     }
 
-    private void unfreeze( ){
+    private void Unfreeze( ){
       PauseUnit(this.unit, false);
       SetUnitTimeScalePercent( this.unit, 10000 );
     }
 
-    private void freeze( ){
+    private void Freeze( ){
       KillUnit(this.unit);
     }
 
-    private void periodic( ){
-      tick = tick + 1;
-      if (tick == TICK_RATE * T32_FPS){
+    private void Periodic( ){
+      _tick = _tick + 1;
+      if (_tick == TICK_RATE * T32_FPS){
         if (GetUnitState(this.unit, UNIT_STATE_MANA) < 1){
-          freeze();
+          Freeze();
         }else if (GetUnitState(this.unit, UNIT_STATE_MANA) > 50 || !UnitAlive(this.unit)){
-          unfreeze();
+          Unfreeze();
         }
-        tick = 0;
+        _tick = 0;
       }
     }
 

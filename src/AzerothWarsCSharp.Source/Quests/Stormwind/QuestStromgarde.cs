@@ -8,12 +8,12 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
   public sealed class QuestStromgarde : QuestData{
 
   
-    private const int HERO_ID = FourCC("H00Z");
-    private const int RESEARCH_ID = FourCC("R01M");
+    private static readonly int HeroId = FourCC("H00Z");
+    private static readonly int ResearchId = FourCC("R01M");
   
 
 
-    private QuestItemAnyUnitInRect questItemAnyUnitInRect = 0;
+    private QuestItemAnyUnitInRect _questItemAnyUnitInRect = 0;
 
     protected override string CompletionPopup => "Galen Trollbane has pledged his forces to StormwindFourCC(s cause.";
 
@@ -45,19 +45,19 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     protected override void OnComplete(){
       GiveStromgarde(Holder.Player);
-      UnitAddItemSafe(questItemAnyUnitInRect.TriggerUnit, ARTIFACT_TROLKALAR.item);
-      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
+      UnitAddItemSafe(_questItemAnyUnitInRect.TriggerUnit, ARTIFACT_TROLKALAR.item);
+      SetPlayerTechResearched(Holder.Player, ResearchId, 1);
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
-      Holder.ModObjectLimit(HERO_ID, 1);
+      Holder.ModObjectLimit(ResearchId, UNLIMITED);
+      Holder.ModObjectLimit(HeroId, 1);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Stromgarde", "Although StromgardeFourCC("s strength has dwindled since the days of the Arathorian Empire, it remains a significant bastion of humanity. They could be convinced to mobilize their forces for Stormwind.", "ReplaceableTextures\\CommandButtons\\BTNTheCaptain.blp"");
-      questItemAnyUnitInRect = QuestItemAnyUnitInRect.create(Regions.Stromgarde, "Stromgarde".Rect, true);
-      this.AddQuestItem(questItemAnyUnitInRect);
+      _questItemAnyUnitInRect = QuestItemAnyUnitInRect.create(Regions.Stromgarde, "Stromgarde".Rect, true);
+      this.AddQuestItem(_questItemAnyUnitInRect);
       AddQuestItem(new QuestItemSelfExists());
       ;;
     }
