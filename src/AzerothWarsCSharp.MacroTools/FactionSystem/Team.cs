@@ -13,20 +13,17 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     private Set invitees; //Factions invited to join this Team
 
-    private Event OnTeamCreate = 0;
-    private Event OnTeamSizeChange = 0;
-    private int scoreStatus;
+    public static event EventHandler<Team> TeamCreate;
+    
+    public static event EventHandler<Team> TeamSizeChange;
+
+    public static event EventHandler<Team> TeamScoreStatusChanged;
+    
     private string victoryMusic;
 
-    private VictoryMusic()
-    {
-      ;.victoryMusic;
-    }
-
-    private ScoreStatus()
-    {
-      ;.scoreStatus;
-    }
+    public ScoreStatus ScoreStatus { get; } = ScoreStatus.Undefeated;
+    
+    public string VictoryMusic { get; init; }
 
     private CapitalCount()
     {
@@ -90,7 +87,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       thistype.teamCount = thistype.teamCount + 1;
 
       thistype.triggerTeam = this;
-      OnTeamCreate.fire();
+      TeamCreate.fire();
     }
 
     public string Name { get; }
@@ -317,7 +314,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     public static void Setup()
     {
-      OnTeamCreate = Event.create();
+      TeamCreate = Event.create();
       OnTeamSizeChange = Event.create();
       TeamScoreStatusChanged = Event.create();
     }

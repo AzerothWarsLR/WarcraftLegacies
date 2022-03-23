@@ -28,6 +28,7 @@ namespace AzerothWarsCSharp.Source.Setup
       ControlPointVictory.Setup();
       SilvermoonDies.Setup();
       ZinrokhAssembly.Setup();
+      SurvivingTeamVictory.Setup();
     }
   }
 }
