@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
   
 
 
-    protected override string CompletionPopup => "Stormwind has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
+    protected override string CompletionPopup => "Stormwind has been liberated, && its military is now free to assist the " + Holder.Team.Name + ".";
 
     protected override string CompletionDescription => "Control of all units in Stormwind && enable Varian to be trained at the altar";
 
@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
@@ -42,24 +42,24 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, FourCC("R02S"), 1);
-      GrantStormwind(this.Holder.Player);
-      if (GetLocalPlayer() == this.Holder.Player){
+      GrantStormwind(Holder.Player);
+      if (GetLocalPlayer() == Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\StormwindTheme.mp3" );
       }
     }
 
     private void OnAdd( ){
-      this.Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
+      Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Clear the Outskirts", "The outskirts of Stormwind are infested by evil creatures. Kill their leaders && regain control of the Towns.", "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionCastle.blp");
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00V"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00Z"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n011"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00V"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00Z"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n011"))));
       this.AddQuestItem(new QuestItemUpgrade(FourCC("h06N"), )h06K)));
-      this.AddQuestItem(new QuestItemExpire(1020));
-      this.AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new QuestItemExpire(1020));
+      AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

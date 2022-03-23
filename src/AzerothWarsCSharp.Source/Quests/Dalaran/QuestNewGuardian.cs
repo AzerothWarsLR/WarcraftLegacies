@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       BlzSetUnitName(whichUnit, "Guardian of Tirisfal");
       UnitAddAbility(whichUnit, FourCC("A0BX")) ;//Guardian of Tirisfal Spellbook
       BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0, 5) ;//Chaos
-      GeneralHelpers.AddHeroAttributes(whichUnit, 0, 0, 20);
+      AddHeroAttributes(whichUnit, 0, 0, 20);
       LEGEND_JAINA.ClearUnitDependencies();
       LEGEND_JAINA.PermaDies = false;
     }

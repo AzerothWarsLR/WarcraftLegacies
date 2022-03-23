@@ -15,16 +15,16 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
     protected override string CompletionDescription => "Allows Orcish units to increase their attack rate && movement speed temporarily";
 
     protected override void OnComplete(){
-      SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);
+      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
     }
 
     private void OnAdd( ){
-      this.Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
+      Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Blood of Mannoroth", "Long ago, the orcs drank the blood of Mannoroth && were infused with demonic fury. A mere taste of his blood would reignite those powers.", "ReplaceableTextures\\CommandButtons\\BTNFountainOfLifeBlood.blp");
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_FOUNTAINOFBLOOD, false));
+      AddQuestItem(new QuestItemControlLegend(LEGEND_FOUNTAINOFBLOOD, false));
       ;;
     }
 

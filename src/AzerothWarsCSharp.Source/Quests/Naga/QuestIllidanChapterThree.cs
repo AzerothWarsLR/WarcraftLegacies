@@ -20,8 +20,8 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
     protected override string CompletionDescription => "Nazjatar && the NagaFourCC(s loyalty";
 
     protected override void OnComplete(){
-      GeneralHelpers.RescueNeutralUnitsInRect(Regions.NagaUnlock2.Rect, this.Holder.Player);
-      GeneralHelpers.RescueNeutralUnitsInRect(Regions.NagaUnlock1.Rect, this.Holder.Player);
+      RescueNeutralUnitsInRect(Regions.NagaUnlock2.Rect, Holder.Player);
+      RescueNeutralUnitsInRect(Regions.NagaUnlock1.Rect, Holder.Player);
       FACTION_NAGA.AddQuest(REDEMPTION_PATH);
       REDEMPTION_PATH.Progress = QUEST_PROGRESS_UNDISCOVERED;
       FACTION_NAGA.AddQuest(EXILE_PATH);
@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       thistype this = thistype.allocate("Chapter Three: Dwellers from the Deep", "Awakening the Naga will give Illidan the army he needs to achieve his goals.", "ReplaceableTextures\\CommandButtons\\BTNNagaMyrmidon.blp");
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.StartQuest3.Rect, "the exit"));
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.MaelstromAmbient.Rect, "the Maelstrom"));
-      this.AddQuestItem(new QuestItemCastSpell(RITUAL_ID, true));
+      AddQuestItem(new QuestItemCastSpell(RITUAL_ID, true));
       ;;
     }
 

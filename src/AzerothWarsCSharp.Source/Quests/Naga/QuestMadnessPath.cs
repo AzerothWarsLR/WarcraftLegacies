@@ -25,9 +25,9 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
     }
 
     private void RenameIllidanFaction( ){
-      this.Holder.Team = TEAM_OLDGOD;
-      this.Holder.Name = "Nazjatar";
-      this.Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNNagaSummoner.blp";
+      Holder.Team = TEAM_OLDGOD;
+      Holder.Name = "Nazjatar";
+      Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNNagaSummoner.blp";
     }
 
     private void FailQuests( ){
@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
     }
 
     private void TransferHeroes( ){
-      SetUnitOwner(LEGEND_NZOTH.Unit, this.Holder.Player, true);
+      SetUnitOwner(LEGEND_NZOTH.Unit, Holder.Player, true);
       LEGEND_AZSHARA.Spawn(Holder.Player, GetRectCenterX(Regions.InstanceNazjatar), GetRectCenterY(gg_rct_InstanceNazjatar).Rect, 270);
       SetHeroLevel(LEGEND_AZSHARA.Unit, 7, false);
       SetUnitOwner(LEGEND_ILLIDAN.Unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
@@ -72,11 +72,11 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     public  thistype ( ){
       thistype this = thistype.allocate("Voices in the Void", "Azshara takes command of the Naga in the name of NFourCC("zoth. Illidan")s reign is no more.", "ReplaceableTextures\\CommandButtons\\BTNGuardianofTheSea.blp");
-      this.AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("n055")));
+      AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("n055")));
       this.AddQuestItem(new QuestItemLegendNotDead(LEGEND_ILLIDAN));
-      this.AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new QuestItemSelfExists());
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.NazjatarHidden.Rect, "Nazjatar"));
-      this.ResearchId = QUEST_RESEARCH_ID;
+      ResearchId = QUEST_RESEARCH_ID;
       ;;
     }
 

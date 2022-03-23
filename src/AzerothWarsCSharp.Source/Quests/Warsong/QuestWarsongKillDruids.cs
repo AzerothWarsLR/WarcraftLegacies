@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
 
     public  thistype ( ){
       thistype this = thistype.allocate("Tear It Down", "The World Tree, Nordrassil, is the Night ElvesFourCC(" source of immortality. Capture it to cripple them permanently.","ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp"");
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_NORDRASSIL, false));
+      AddQuestItem(new QuestItemControlLegend(LEGEND_NORDRASSIL, false));
       this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_GROM));
       ;;
     }

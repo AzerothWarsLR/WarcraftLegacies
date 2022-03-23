@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       SetUnitOwner(LEGEND_NZOTH.Unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
       EXILE_PATH.Progress = QUEST_PROGRESS_FAILED;
       MADNESS_PATH.Progress = QUEST_PROGRESS_FAILED;
-      GeneralHelpers.RescueNeutralUnitsInRect(Regions.AethneumCatacombs.Rect, this.Holder.Player);
+      RescueNeutralUnitsInRect(Regions.AethneumCatacombs.Rect, Holder.Player);
       WaygateActivateBJ( true, gg_unit_h01D_3387 );
       WaygateActivateBJ( true, gg_unit_h01D_3385 );
       WaygateActivateBJ( true, gg_unit_h01D_3379 );
@@ -48,7 +48,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       WaygateActivateBJ( true, gg_unit_n07E_1154 );
       ShowUnitShow( gg_unit_n07E_1154  );
       WaygateSetDestinationLocBJ( gg_unit_n07E_1154, GetRectCenter(gg_rct_NazjatarExit3) );
-      this.Holder.Team = TEAM_NIGHT_ELVES;
+      Holder.Team = TEAM_NIGHT_ELVES;
 
       WaygateActivateBJ( true, gg_unit_h01D_3378 );
       ShowUnitShow( gg_unit_h01D_3378 );
@@ -66,11 +66,11 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Brothers Stormrage", "Illidan follows his heart && seeks forgivness from Malfurion. United by their brotherly bond && their desire to protect Tyrande, they decide to unite their forces once again.", "ReplaceableTextures\\CommandButtons\\BTNDemonHunter2blp");
-      this.AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("n055")));
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_ILLIDAN, true));
-      this.AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("n055")));
+      AddQuestItem(new QuestItemControlLegend(LEGEND_ILLIDAN, true));
+      AddQuestItem(new QuestItemSelfExists());
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.NazjatarHidden.Rect, "Nazjatar"));
-      this.ResearchId = QUEST_RESEARCH_ID;
+      ResearchId = QUEST_RESEARCH_ID;
       ;;
     }
 

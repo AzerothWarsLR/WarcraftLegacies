@@ -26,14 +26,14 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, this.Holder.Player);
+          UnitRescue(u, Holder.Player);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
       }
       DestroyGroup(tempGroup);
       tempGroup = null;
-      SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);
+      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
     }
 
     private void OnAdd( ){
@@ -43,7 +43,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
 
     public  thistype ( ){
       thistype this = thistype.allocate("Dark Iron Alliance", "The Dark Iron dwarves are renegades. Bring Magni to their capital to open negotiations for an alliance.", "ReplaceableTextures\\CommandButtons\\BTNRPGDarkIron.blp");
-      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_MAGNI, Regions.Shadowforge_gate.Rect, "Shadowforge"));
+      AddQuestItem(new QuestItemLegendInRect(LEGEND_MAGNI, Regions.Shadowforge_gate.Rect, "Shadowforge"));
       ;;
     }
 

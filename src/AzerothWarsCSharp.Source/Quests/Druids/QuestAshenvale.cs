@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
@@ -41,8 +41,8 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
     }
 
     protected override void OnComplete(){
-      GrantAshenvale(this.Holder.Player);
-      if (GetLocalPlayer() == this.Holder.Player){
+      GrantAshenvale(Holder.Player);
+      if (GetLocalPlayer() == Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\DruidTheme.mp3" );
       }
     }
@@ -50,13 +50,13 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
     public  thistype ( ){
       thistype this = thistype.allocate("The Spirits of Ashenvale", "The forest needs healing. Regain control of it to summon itFourCC("s Guardian, the Demigod Cenarius", "ReplaceableTextures\\CommandButtons\\BTNKeeperC.blp"");
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_MALFURION, Regions.AshenvaleUnlock.Rect, "Ashenvale"));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n07C"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01Q"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08U"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n07C"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01Q"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08U"))));
       this.AddQuestItem(new QuestItemUpgrade(FourCC("etoa"), )etol)));
-      this.AddQuestItem(new QuestItemExpire(1440));
-      this.AddQuestItem(new QuestItemSelfExists());
-      this.ResearchId = RESEARCH_ID;
+      AddQuestItem(new QuestItemExpire(1440));
+      AddQuestItem(new QuestItemSelfExists());
+      ResearchId = RESEARCH_ID;
       ;;
     }
 

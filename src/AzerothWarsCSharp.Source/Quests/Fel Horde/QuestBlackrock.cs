@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
   
 
 
-    protected override string CompletionPopup => "Blackrock Citadel has been subjugated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
+    protected override string CompletionPopup => "Blackrock Citadel has been subjugated, && its military is now free to assist the " + Holder.Team.Name + ".";
 
     protected override string CompletionDescription => "Control of all units in Blackrock Citadel && enable DalFourCC(rend Blackhand to be trained at the altar";
 
@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
@@ -42,20 +42,20 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 
     protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, FourCC("R03C"), 1);
-      GrantBlackrock(this.Holder.Player);
+      GrantBlackrock(Holder.Player);
     }
 
     private void OnAdd( ){
-      this.Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
+      Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Blackrock Unification", "Make contact with the Blackrock clan && convince them to join Magtheridon", "ReplaceableTextures\\CommandButtons\\BTNBlackhand.blp");
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00S"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n09Y"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0A9"))));
-      this.AddQuestItem(new QuestItemExpire(1451));
-      this.AddQuestItem(QuestItemSelfExists);
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00S"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n09Y"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0A9"))));
+      AddQuestItem(new QuestItemExpire(1451));
+      AddQuestItem(QuestItemSelfExists);
       ;;
     }
 

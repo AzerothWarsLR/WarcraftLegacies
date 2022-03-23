@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
   public sealed class QuestLakeshire : QuestData{
 
 
-    protected override string CompletionPopup => "Lakeshire has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
+    protected override string CompletionPopup => "Lakeshire has been liberated, && its military is now free to assist the " + Holder.Team.Name + ".";
 
     protected override string CompletionDescription => "Control of all units in Lakeshire";
 
@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     }
 
     protected override void OnComplete(){
-      GrantLakeshire(this.Holder.Player);
+      GrantLakeshire(Holder.Player);
     }
 
     private void OnAdd( ){
@@ -45,10 +45,10 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     public  thistype ( ){
       thistype this = thistype.allocate("Marauding Ogres", "The town of Lakeshire is invaded by Ogres, wipe them out!", "ReplaceableTextures\\CommandButtons\\BTNOgreLord.blp");
-      this.AddQuestItem(QuestItemKillUnit.create(gg_unit_nogl_0621)) ;//Ogre Lord
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n011"))));
-      this.AddQuestItem(new QuestItemExpire(1427));
-      this.AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(QuestItemKillUnit.create(gg_unit_nogl_0621)) ;//Ogre Lord
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n011"))));
+      AddQuestItem(new QuestItemExpire(1427));
+      AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

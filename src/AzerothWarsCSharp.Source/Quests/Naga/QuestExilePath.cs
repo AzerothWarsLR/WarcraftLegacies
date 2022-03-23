@@ -42,7 +42,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
     protected override string CompletionDescription => "Open a portal to Outland, grants you the Draenei village near it, enables you to train Akama, Najentus && Draenei units, grants you 300 food limit && grants you 800 gold";
 
     protected override void OnComplete(){
-      GrantAkama(this.Holder.Player);
+      GrantAkama(Holder.Player);
       FACTION_NAGA.ModObjectLimit(FourCC("n08W"), UNLIMITED)   ;//Lost One Den
       FACTION_NAGA.ModObjectLimit(FourCC("ndrn"), UNLIMITED)   ;//Vindicator
       FACTION_NAGA.ModObjectLimit(FourCC("ndrs"), 6)   ;//Seer
@@ -56,7 +56,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       WaygateSetDestinationLocBJ( gg_unit_n07E_1491, GetRectCenter(gg_rct_NazjatarExit3) );
       WaygateSetDestinationLocBJ( gg_unit_n07E_0958 , GetRectCenter(gg_rct_IllidanOutlandEntrance) );
       SetPlayerTechResearched(FACTION_SENTINELS.Player, FourCC("R06D"), 1);
-      this.Holder.Name = "Illidari";
+      Holder.Name = "Illidari";
       WaygateActivateBJ( true, gg_unit_h01D_3378 );
       ShowUnitShow( gg_unit_h01D_3378 );
       WaygateSetDestinationLocBJ( gg_unit_h01D_3378, GetRectCenter(gg_rct_NazjatarExit2) );
@@ -69,17 +69,17 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       WaygateActivateBJ( true, gg_unit_h01D_3384 );
       ShowUnitShow( gg_unit_h01D_3384 );
       WaygateSetDestinationLocBJ( gg_unit_h01D_3384, GetRectCenter(gg_rct_NazjatarEntrance2) );
-      SetPlayerStateBJ( this.Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300 );
-      AdjustPlayerStateBJ( 800, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
+      SetPlayerStateBJ( Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300 );
+      AdjustPlayerStateBJ( 800, Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("A Parting of Ways", "Illidan must go his own way to find power, && Outland is the perfect place to acquire it.", "ReplaceableTextures\\CommandButtons\\BTNIllidanDemonicPower.blp");
-      this.AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("n055")));
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_ILLIDAN, true));
-      this.AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("n055")));
+      AddQuestItem(new QuestItemControlLegend(LEGEND_ILLIDAN, true));
+      AddQuestItem(new QuestItemSelfExists());
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.NazjatarHidden.Rect, "Nazjatar"));
-      this.ResearchId = QUEST_RESEARCH_ID;
+      ResearchId = QUEST_RESEARCH_ID;
       ;;
     }
 

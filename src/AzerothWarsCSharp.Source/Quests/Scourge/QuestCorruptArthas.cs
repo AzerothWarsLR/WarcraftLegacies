@@ -18,14 +18,14 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     protected override string CompletionDescription => "You can train Arthas Menethil from the Altar of Darkness";
 
     protected override void OnComplete(){
-      GeneralHelpers.UnitDropAllItems(LEGEND_ARTHAS.Unit);
+      UnitDropAllItems(LEGEND_ARTHAS.Unit);
       RemoveUnit(LEGEND_ARTHAS.Unit);
       LEGEND_ARTHAS.Unit = null;
       LEGEND_ARTHAS.PlayerColor = PLAYER_COLOR_PURPLE;
       LEGEND_ARTHAS.StartingXp = 7000;
       LEGEND_ARTHAS.UnitType = FourCC("Uear");
       LEGEND_ARTHAS.ClearUnitDependencies();
-      SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);
+      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
     }
 
     private void OnAdd( ){
@@ -35,9 +35,9 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Culling", "When the city of Stratholme, Prince Arthas will abandon his people && join the Scourge as their champion.", "ReplaceableTextures\\CommandButtons\\BTNHeroDeathKnight.blp");
-      this.AddQuestItem(new QuestItemLegendDead(LEGEND_STRATHOLME));
+      AddQuestItem(new QuestItemLegendDead(LEGEND_STRATHOLME));
       this.AddQuestItem(new QuestItemEitherOf.create(QuestItemLegendDead.create(LEGEND_ARTHAS), QuestItemFactionDefeated(FACTION_LORDAERON)));
-      this.AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

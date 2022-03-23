@@ -34,13 +34,13 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
         u = FirstOfGroup(tempGroup);
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, this.Holder.Player);
+          UnitRescue(u, Holder.Player);
         }
         GroupRemoveUnit(tempGroup, u);
       }
       DestroyGroup(tempGroup);
       tempGroup = null;
-      SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);
+      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
     }
 
     private void OnAdd( ){
@@ -50,7 +50,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
 
     public  thistype ( ){
       thistype this = thistype.allocate("Wildhammer Alliance", "The Wildhammer dwarves roam freely over the peaks of the Hinterlands. An audience with Magni himself might earn their cooperation.", "ReplaceableTextures\\CommandButtons\\BTNHeroGriffonWarrior.blp");
-      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_MAGNI, Regions.Aerie_Peak.Rect, "Aerie Peak"));
+      AddQuestItem(new QuestItemLegendInRect(LEGEND_MAGNI, Regions.Aerie_Peak.Rect, "Aerie Peak"));
       ;;
     }
 

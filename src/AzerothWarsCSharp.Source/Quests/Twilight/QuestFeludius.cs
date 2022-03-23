@@ -18,9 +18,9 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
 
     public  thistype ( ){
       thistype this = thistype.allocate("Gift of the Windlord", "Bringing the Legendary Sword, Thunderfury, to Uldum will grant us the favors of AlFourCC("akir, the great Wind Elemental Lord", "ReplaceableTextures\\CommandButtons\\BTNfuryoftheair.blp"");
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BD"))));
-      this.AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_THUNDERFURY, Regions.UldumAmbiance.Rect, "Uldum"));
-      this.ResearchId = RESEARCH_ID;
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BD"))));
+      AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_THUNDERFURY, Regions.UldumAmbiance.Rect, "Uldum"));
+      ResearchId = RESEARCH_ID;
       ;;
     }
 

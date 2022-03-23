@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
@@ -37,16 +37,16 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     }
 
     protected override void OnComplete(){
-      GrantSouthshore(this.Holder.Player);
+      GrantSouthshore(Holder.Player);
     }
 
 
     public  thistype ( ){
       thistype this = thistype.allocate("Murloc Troubles", "A small murloc skirmish is attacking Southshore, push them back", "ReplaceableTextures\\CommandButtons\\BTNMurloc.blp");
-      this.AddQuestItem(QuestItemKillUnit.create(gg_unit_nmrm_0204)) ;//Murloc
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08M"))));
-      this.AddQuestItem(new QuestItemExpire(1135));
-      this.AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(QuestItemKillUnit.create(gg_unit_nmrm_0204)) ;//Murloc
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08M"))));
+      AddQuestItem(new QuestItemExpire(1135));
+      AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

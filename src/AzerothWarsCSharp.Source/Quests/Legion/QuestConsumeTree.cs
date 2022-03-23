@@ -23,12 +23,12 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       BlzSetUnitName(whichUnit, "Devourer of Worlds");
       AddSpecialEffectTarget("Abilities\\Weapons\\GreenDragonMissile\\GreenDragonMissile.mdl", whichUnit, "hand, right");
       AddSpecialEffectTarget("Abilities\\Weapons\\GreenDragonMissile\\GreenDragonMissile.mdl", whichUnit, "hand, left");
-      GeneralHelpers.AddHeroAttributes(whichUnit, 80, 80, 80);
+      AddHeroAttributes(whichUnit, 80, 80, 80);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Twilight of the Gods", "Consuming the World Tree will grant Archimonde immeasurable power && eliminate his mortal enemies, the Druids of Kalimdor, forever.", "ReplaceableTextures\\CommandButtons\\BTNGlazeroth.blp");
-      this.AddQuestItem(new QuestItemChannelRect(Regions.ArchimondeChannel, "The World Tree", LEGEND_ARCHIMONDE, 420.Rect, 90));
+      AddQuestItem(new QuestItemChannelRect(Regions.ArchimondeChannel, "The World Tree", LEGEND_ARCHIMONDE, 420.Rect, 90));
       ;;
     }
 

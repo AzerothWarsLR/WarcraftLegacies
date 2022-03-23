@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
           if (IsUnitType(u, UNIT_TYPE_HERO)){
             KillUnit(u);
           }else {
-            GeneralHelpers.UnitRescue(u, this.Holder.Player);
+            UnitRescue(u, Holder.Player);
           }
         }
         GroupRemoveUnit(tempGroup, u);
@@ -47,9 +47,9 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 
     public  thistype ( ){
       thistype this = thistype.allocate("Conquer Boralus", "The KulFourCC("tiran people && their fleet have been a threat to the Zandalari Empire for ages, it is time to put them to rest. ", "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp"");
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_DAZARALOR, true));
-      this.AddQuestItem(new QuestItemLegendDead(LEGEND_BORALUS));
-      this.ResearchId = QUEST_RESEARCH_ID;
+      AddQuestItem(new QuestItemControlLegend(LEGEND_DAZARALOR, true));
+      AddQuestItem(new QuestItemLegendDead(LEGEND_BORALUS));
+      ResearchId = QUEST_RESEARCH_ID;
       ;;
     }
 

@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
   public sealed class QuestNaxxramas : QuestData{
 
 
-    protected override string CompletionPopup => "The Naxxramas has now been raised && under the control of the " + this.Holder.Team.Name + ".";
+    protected override string CompletionPopup => "The Naxxramas has now been raised && under the control of the " + Holder.Team.Name + ".";
 
     protected override string CompletionDescription => "Control of all units in Naxxramas";
 
@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
@@ -32,15 +32,15 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     }
 
     protected override void OnComplete(){
-      GrantNaxxramas(this.Holder.Player);
-      SetUnitOwner( gg_unit_e013_1815, this.Holder.Player, true );
+      GrantNaxxramas(Holder.Player);
+      SetUnitOwner( gg_unit_e013_1815, Holder.Player, true );
       SetUnitInvulnerable( gg_unit_e013_1815, false );
-      SetPlayerAbilityAvailableBJ( false, FourCC("A0O2"), this.Holder.Player);
+      SetPlayerAbilityAvailableBJ( false, FourCC("A0O2"), Holder.Player);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Dread Citadel", "This fallen necropolis can be transformed into a potent war machine by the Lich KelFourCC("tuzad", "ReplaceableTextures\\CommandButtons\\BTNBlackCitadel.blp"");
-      QuestItemChannelRect questItemChannelRect = this.AddQuestItem(new QuestItemChannelRect(Regions.NaxUnlock, "Naxxramas", LEGEND_KELTHUZAD, 60.Rect, 270));
+      QuestItemChannelRect questItemChannelRect = AddQuestItem(new QuestItemChannelRect(Regions.NaxUnlock, "Naxxramas", LEGEND_KELTHUZAD, 60.Rect, 270));
       questItemChannelRect.RequiredUnitTypeId = UNITTYPE_KELTHUZAD_LICH;
       ;;
     }

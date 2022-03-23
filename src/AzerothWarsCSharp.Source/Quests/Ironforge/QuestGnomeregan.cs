@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
   
 
 
-    protected override string CompletionPopup => "Gnomeregan has been literated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
+    protected override string CompletionPopup => "Gnomeregan has been literated, && its military is now free to assist the " + Holder.Team.Name + ".";
 
     protected override string CompletionDescription => "Control of all units in Gnomeregan";
 
@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
@@ -41,17 +41,17 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
 
     protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, FourCC("R05Q"), 1);
-      GrantGnomeregan(this.Holder.Player);
+      GrantGnomeregan(Holder.Player);
     }
 
     private void OnAdd( ){
-      this.Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
+      Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("The City of Invention", "The people of Gnomeregan have long been unable to assist the Alliance in its wars due an infestation of troggs && Ice Trolls. Resolve their conflicts for them to gain their services.", "ReplaceableTextures\\CommandButtons\\BTNFlyingMachine.blp");
-      this.AddQuestItem(QuestItemKillUnit.create(gg_unit_nitw_1513)) ;//Ice Troll Warlord
-      this.AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(QuestItemKillUnit.create(gg_unit_nitw_1513)) ;//Ice Troll Warlord
+      AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

@@ -18,13 +18,13 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
     }
 
     private void OnAdd( ){
-      this.Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
+      Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
     }
 
     public  thistype ( ){
 
       this.AddQuestItem(new QuestItemTrain(FourCC("o04W"),)o049), 5));
-      this.ResearchId = QUEST_RESEARCH_ID;
+      ResearchId = QUEST_RESEARCH_ID;
       ;;
     }
 

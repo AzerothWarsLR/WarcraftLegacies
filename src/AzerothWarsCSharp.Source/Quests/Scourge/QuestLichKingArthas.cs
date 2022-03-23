@@ -33,18 +33,18 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       LEGEND_ARTHAS.DeathMessage = "The great Lich King has been destroyed. With no central mind to command them, the forces of the Undead have gone rogue.";
       SetUnitState(LEGEND_ARTHAS.Unit, UNIT_STATE_LIFE, GetUnitState(LEGEND_ARTHAS.Unit, UNIT_STATE_MAX_LIFE));
       SetUnitState(LEGEND_ARTHAS.Unit, UNIT_STATE_MANA, GetUnitState(LEGEND_ARTHAS.Unit, UNIT_STATE_MAX_MANA));
-      GeneralHelpers.UnitAddItemSafe(LEGEND_ARTHAS.Unit, ARTIFACT_HELMOFDOMINATION.item);
-      this.Holder.Team = TEAM_SCOURGE;
-      GeneralHelpers.UnitRescue(gg_unit_h00O_2516, FACTION_SCOURGE.Player);
-      SetPlayerStateBJ( this.Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300 );
+      UnitAddItemSafe(LEGEND_ARTHAS.Unit, ARTIFACT_HELMOFDOMINATION.item);
+      Holder.Team = TEAM_SCOURGE;
+      UnitRescue(gg_unit_h00O_2516, FACTION_SCOURGE.Player);
+      SetPlayerStateBJ( Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300 );
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Ascension", "From within the depths of the Frozen Throne, the Lich King NerFourCC("zhul cries out for his champion. Release the Helm of Domination from its confines && merge its power with that of the Scourge")s greatest Death Knight.", "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp");
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_ARTHAS, false));
+      AddQuestItem(new QuestItemControlLegend(LEGEND_ARTHAS, false));
       this.AddQuestItem(new QuestItemLegendLevel(LEGEND_ARTHAS, 12));
       this.AddQuestItem(new QuestItemResearch(FourCC("R07X"), )u000)));
-      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_ARTHAS, Regions.LichKing.Rect, "Icecrown Citadel"));
+      AddQuestItem(new QuestItemLegendInRect(LEGEND_ARTHAS, Regions.LichKing.Rect, "Icecrown Citadel"));
       ;;
     }
 

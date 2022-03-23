@@ -16,14 +16,14 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
     protected override string CompletionDescription => "Learn to train " + I2S(LIMIT_CHANGE) + " additional " + GetObjectName(UNITTYPE_ID) + "s";
 
     protected override void OnComplete(){
-      this.Holder.ModObjectLimit(UNITTYPE_ID, LIMIT_CHANGE);
-      DisplayUnitLimit(this.Holder, UNITTYPE_ID);
+      Holder.ModObjectLimit(UNITTYPE_ID, LIMIT_CHANGE);
+      DisplayUnitLimit(Holder, UNITTYPE_ID);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Perfect Warriors", "The prowess && savagery of the Sentinels is to be respected - && feared. They must be eliminated.", "ReplaceableTextures\\CommandButtons\\BTNArcher.blp");
-      this.AddQuestItem(new QuestItemLegendDead(LEGEND_FEATHERMOON));
-      this.AddQuestItem(new QuestItemLegendDead(LEGEND_AUBERDINE));
+      AddQuestItem(new QuestItemLegendDead(LEGEND_FEATHERMOON));
+      AddQuestItem(new QuestItemLegendDead(LEGEND_AUBERDINE));
       ;;
     }
 

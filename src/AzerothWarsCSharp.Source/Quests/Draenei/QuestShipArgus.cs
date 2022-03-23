@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
 
     public  thistype ( ){
       thistype this = thistype.allocate("Reconquering Tempest Keep", "Tempest Keep still has the power to open a portal Argus, but Velen needs to channel it", "ReplaceableTextures\\CommandButtons\\BTNArcaneCastle.blp");
-      this.AddQuestItem(new QuestItemChannelRect(Regions.TempestKeepSpawn, "Tempest Keep", LEGEND_VELEN, 180.Rect, 0));
+      AddQuestItem(new QuestItemChannelRect(Regions.TempestKeepSpawn, "Tempest Keep", LEGEND_VELEN, 180.Rect, 0));
       ;;
     }
 

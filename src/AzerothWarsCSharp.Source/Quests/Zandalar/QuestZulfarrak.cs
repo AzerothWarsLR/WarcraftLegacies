@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
           if (IsUnitType(u, UNIT_TYPE_HERO)){
             KillUnit(u);
           }else {
-            GeneralHelpers.UnitRescue(u, this.Holder.Player);
+            UnitRescue(u, Holder.Player);
           }
         }
         GroupRemoveUnit(tempGroup, u);
@@ -37,18 +37,18 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       }
       DestroyGroup(tempGroup);
       SetPlayerTechResearched(Holder.Player, GAHZRILLA_RESEARCH, 1);
-      AdjustPlayerStateBJ( 300, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
-      SetUnitOwner(LEGEND_ZULFARRAK.Unit, this.Holder.Player, true);
+      AdjustPlayerStateBJ( 300, Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
+      SetUnitOwner(LEGEND_ZULFARRAK.Unit, Holder.Player, true);
     }
 
     private void OnAdd( ){
-      this.Holder.ModObjectLimit(GAHZRILLA_RESEARCH, UNLIMITED);
-      this.Holder.ModObjectLimit(GAHZRILLA_ID, 1);
+      Holder.ModObjectLimit(GAHZRILLA_RESEARCH, UNLIMITED);
+      Holder.ModObjectLimit(GAHZRILLA_ID, 1);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Fury of the Sands", "The Sandfury Trolls of ZulFourCC("farrak are openly hostile to visitors, but they share a common heritage with the Zandalari Trolls. An adequate display of force could bring them around.", "ReplaceableTextures\\CommandButtons\\BTNDarkTroll.blp"");
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_ZULFARRAK, false));
+      AddQuestItem(new QuestItemControlLegend(LEGEND_ZULFARRAK, false));
       ;;
     }
 

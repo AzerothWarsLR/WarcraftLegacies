@@ -18,15 +18,15 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       BlzSetUnitName(whichUnit, "Banshee Queen");
       AddSpecialEffectTarget("war3mapImported\\SoulArmor.mdx", whichUnit, "chest");
       BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0, 5) ;//Chaos
-      GeneralHelpers.AddHeroAttributes(whichUnit, 20, 0, 20);
+      AddHeroAttributes(whichUnit, 20, 0, 20);
       LEGEND_SYLVANASV.ClearUnitDependencies();
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Cold-Hearted Revenge", "Sylvanas longs to take revenge on the Lich King. Killing him && absorbing his power would maybe satisfy the emptiness inside her", "ReplaceableTextures\\CommandButtons\\BTNHelmofdomination.blp");
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BC"))));
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_SYLVANASV, true));
-      this.AddQuestItem(new QuestItemLegendDead(LEGEND_LICHKING));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BC"))));
+      AddQuestItem(new QuestItemControlLegend(LEGEND_SYLVANASV, true));
+      AddQuestItem(new QuestItemLegendDead(LEGEND_LICHKING));
       ;;
     }
 

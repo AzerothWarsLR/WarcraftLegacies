@@ -14,14 +14,14 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
     protected override void OnComplete(){
       DisplayHeroReward(LEGEND_TICHONDRIUS.Unit, 15, 15, 15, 0);
-      GeneralHelpers.AddHeroAttributes(LEGEND_TICHONDRIUS.Unit, 15, 15, 15);
+      AddHeroAttributes(LEGEND_TICHONDRIUS.Unit, 15, 15, 15);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Token Resistance", "The Kingdom of Lordaeron must be eliminated to pave the way for the LegionFourCC("s arrival.", "ReplaceableTextures\\CommandButtons\\BTNTichondrius.blp"");
-      this.AddQuestItem(new QuestItemLegendDead(LEGEND_CAPITALPALACE));
-      this.AddQuestItem(new QuestItemLegendDead(LEGEND_STRATHOLME));
-      this.AddQuestItem(new QuestItemLegendDead(LEGEND_TYRSHAND));
+      AddQuestItem(new QuestItemLegendDead(LEGEND_CAPITALPALACE));
+      AddQuestItem(new QuestItemLegendDead(LEGEND_STRATHOLME));
+      AddQuestItem(new QuestItemLegendDead(LEGEND_TYRSHAND));
       ;;
     }
 

@@ -48,17 +48,17 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       LEGEND_JAINA.UnitType = FourCC("H04A");
 
       UnitRemoveAbilityBJ( FourCC("A0RB"), LEGEND_JAINA.Unit);
-      this.Holder.Team = TEAM_SCOURGE;
-      this.Holder.Name = "The Nexus";
-      this.Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNJaina_Archmage.blp";
-      SetPlayerStateBJ( this.Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300 );
+      Holder.Team = TEAM_SCOURGE;
+      Holder.Name = "The Nexus";
+      Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNJaina_Archmage.blp";
+      SetPlayerStateBJ( Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300 );
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Nexus", "The new Lich King calls for Jaina, tempts her with power. The Nexus needs a master, && Jaina is perfect for it.", "ReplaceableTextures\\CommandButtons\\BTNBlueDragonNexus.blp");
-      this.AddQuestItem(new QuestItemChannelRect(Regions.JainaChannel, "The Nexus", LEGEND_JAINA, 60.Rect, 270));
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_JAINA, true));
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_NEXUS, false));
+      AddQuestItem(new QuestItemChannelRect(Regions.JainaChannel, "The Nexus", LEGEND_JAINA, 60.Rect, 270));
+      AddQuestItem(new QuestItemControlLegend(LEGEND_JAINA, true));
+      AddQuestItem(new QuestItemControlLegend(LEGEND_NEXUS, false));
       ;;
     }
 

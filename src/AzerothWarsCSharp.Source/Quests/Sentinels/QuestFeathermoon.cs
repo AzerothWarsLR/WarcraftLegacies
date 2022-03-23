@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
@@ -41,10 +41,10 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
     }
 
     protected override void OnComplete(){
-      GrantFeathermoon(this.Holder.Player);
-      AdjustPlayerStateBJ( 300, this.Holder.Player, PLAYER_STATE_RESOURCE_LUMBER );
-      AdjustPlayerStateBJ( 300, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
-      if (GetLocalPlayer() == this.Holder.Player){
+      GrantFeathermoon(Holder.Player);
+      AdjustPlayerStateBJ( 300, Holder.Player, PLAYER_STATE_RESOURCE_LUMBER );
+      AdjustPlayerStateBJ( 300, Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
+      if (GetLocalPlayer() == Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\SentinelTheme.mp3" );
       }
     }
@@ -52,11 +52,11 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
     public  thistype ( ){
       thistype this = thistype.allocate("Feathermoon Stronghold", "Feathermoon Stronghold stood guard for ten thousand years, it is time to relieve the guards from their duty.", "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp");
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_TYRANDE, Regions.FeathermoonUnlock.Rect, "Feathermoon Stronghold"));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01R"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01R"))));
       this.AddQuestItem(new QuestItemUpgrade(FourCC("n06P"), )n06J)));
-      this.AddQuestItem(new QuestItemExpire(1485));
-      this.AddQuestItem(new QuestItemSelfExists());
-      this.ResearchId = RESEARCH_ID;
+      AddQuestItem(new QuestItemExpire(1485));
+      AddQuestItem(new QuestItemSelfExists());
+      ResearchId = RESEARCH_ID;
       ;;
     }
 

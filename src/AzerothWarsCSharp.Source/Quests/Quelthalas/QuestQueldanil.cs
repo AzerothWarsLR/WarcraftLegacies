@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       while(true){
         u = FirstOfGroup(udg_QuelDanilLodge);
         if ( u == null){ break; }
-        GeneralHelpers.UnitRescue(u, this.Holder.Player);
+        UnitRescue(u, Holder.Player);
         GroupRemoveUnit(udg_QuelDanilLodge, u);
       }
       DestroyGroup(udg_QuelDanilLodge);
@@ -30,8 +30,8 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     public  thistype ( ){
       thistype this = thistype.allocate("QuelFourCC("danil Lodge", "Quel")danil Lodge is a High Elven outpost situated in the Hinterlands. It)s been some time since the rangers there have been in contact with Quel)thalas.", "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp");
       this.AddQuestItem(new QuestItemAnyUnitInRect(Regions.QuelDanil_Lodge, "QuelFourCC("danil Lodge".Rect, true"));
-      this.AddQuestItem(new QuestItemTime(1200));
-      this.ResearchId = QUEST_RESEARCH_ID;
+      AddQuestItem(new QuestItemTime(1200));
+      ResearchId = QUEST_RESEARCH_ID;
       ;;
     }
 

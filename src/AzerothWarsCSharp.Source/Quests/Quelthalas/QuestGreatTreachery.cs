@@ -25,15 +25,15 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       UnitRemoveAbilityBJ( FourCC("A0IK"), LEGEND_KAEL.Unit);
       RemoveUnit(LEGEND_LORTHEMAR.Unit);
       FACTION_QUELTHALAS.ModObjectLimit(FourCC("H02E"),-UNLIMITED)       ;//Lorthemar
-      this.Holder.Team = TEAM_LEGION;
+      Holder.Team = TEAM_LEGION;
       SUMMON_KIL.Progress = QUEST_PROGRESS_INCOMPLETE;
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Great Treachery", "KilFourCC("jaeden has approached Kael with an offer of power && salvation for his people. Only by accepting will his hunger for magic by satiated.", "ReplaceableTextures\\CommandButtons\\BTNFelKaelthas.blp"");
-      this.AddQuestItem(new QuestItemCastSpell(FourCC("A0IF"), true));
+      AddQuestItem(new QuestItemCastSpell(FourCC("A0IF"), true));
       this.AddQuestItem(new QuestItemLegendLevel(LEGEND_KAEL, 6));
-      this.ResearchId = QUEST_RESEARCH_ID;
+      ResearchId = QUEST_RESEARCH_ID;
       ;;
     }
 

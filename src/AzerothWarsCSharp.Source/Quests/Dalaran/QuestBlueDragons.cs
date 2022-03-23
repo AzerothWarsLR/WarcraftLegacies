@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
   
 
 
-    protected override string CompletionPopup => "The Nexus has been captured. The Blue Dragonflight fights for " + this.Holder.Name + ".";
+    protected override string CompletionPopup => "The Nexus has been captured. The Blue Dragonflight fights for " + Holder.Name + ".";
 
     protected override string CompletionDescription => "Learn to train Blue Dragons";
 
@@ -22,13 +22,13 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     }
 
     private void OnAdd( ){
-      this.Holder.ModObjectLimit(DRAGON_ID, 6);
-      this.Holder.ModObjectLimit(MANADAM_ID, UNLIMITED);
+      Holder.ModObjectLimit(DRAGON_ID, 6);
+      Holder.ModObjectLimit(MANADAM_ID, UNLIMITED);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Blue Dragonflight", "The Blue Dragons of Northrend are the wardens of magic on Azeroth. They might be convinced to willingly join the mages of Dalaran.", "ReplaceableTextures\\CommandButtons\\BTNAzureDragon.blp");
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_NEXUS, false));
+      AddQuestItem(new QuestItemControlLegend(LEGEND_NEXUS, false));
       ;;
     }
 

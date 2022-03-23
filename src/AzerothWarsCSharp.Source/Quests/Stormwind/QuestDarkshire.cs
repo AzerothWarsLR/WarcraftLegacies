@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
   public sealed class QuestDarkshire : QuestData{
 
 
-    protected override string CompletionPopup => "Darkshire has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
+    protected override string CompletionPopup => "Darkshire has been liberated, && its military is now free to assist the " + Holder.Team.Name + ".";
 
     protected override string CompletionDescription => "Control of all units in Darkshire";
 
@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     }
 
     protected override void OnComplete(){
-      GrantDarkshire(this.Holder.Player);
+      GrantDarkshire(Holder.Player);
     }
 
     private void OnAdd( ){
@@ -45,10 +45,10 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     public  thistype ( ){
       thistype this = thistype.allocate("Gnoll troubles", "The town of Darkshire is under attack by GnollFourCC("s, clear them out!", "ReplaceableTextures\\CommandButtons\\BTNGnollArcher.blp"");
-      this.AddQuestItem(QuestItemKillUnit.create(gg_unit_ngnv_0586)) ;//Gnoll Overseer
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00V"))));
-      this.AddQuestItem(new QuestItemExpire(1425));
-      this.AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(QuestItemKillUnit.create(gg_unit_ngnv_0586)) ;//Gnoll Overseer
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00V"))));
+      AddQuestItem(new QuestItemExpire(1425));
+      AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

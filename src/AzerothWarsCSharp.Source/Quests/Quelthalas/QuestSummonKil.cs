@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Great Deceiver", "The greater demon KilFourCC("jaeden has been scheming for aeons. Will Kael finally be the one to summon him && consume Azeroth?", "ReplaceableTextures\\CommandButtons\\BTNKiljaedin.blp"");
-      this.AddQuestItem(new QuestItemChannelRect(Regions.KaelSunwellChannel, "The Sunwell", LEGEND_KAEL, 180.Rect, 270));
+      AddQuestItem(new QuestItemChannelRect(Regions.KaelSunwellChannel, "The Sunwell", LEGEND_KAEL, 180.Rect, 270));
       ;;
     }
 

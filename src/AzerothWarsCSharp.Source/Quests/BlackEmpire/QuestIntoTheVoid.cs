@@ -21,9 +21,9 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Tomb of Tyr", "Long ago, Zakajz the Corruptor was killed by the Keeper Tyr && entombed with him. Only XalFourCC("atath, the Black Blade, is powerful enough to summon him.", "ReplaceableTextures\\CommandButtons\\BTNGeneralVezax.blp"");
-      this.AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_XALATATH));
-      this.AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_XALATATH, Regions.TyrsFall.Rect, "TyrFourCC("s Fall""));
-      this.AddQuestItem(new QuestItemChannelRect(Regions.TyrsFall, "The Tomb of Tyr", LEGEND_VOLAZJ, 120.Rect, 170));
+      AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_XALATATH));
+      AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_XALATATH, Regions.TyrsFall.Rect, "TyrFourCC("s Fall""));
+      AddQuestItem(new QuestItemChannelRect(Regions.TyrsFall, "The Tomb of Tyr", LEGEND_VOLAZJ, 120.Rect, 170));
       ResearchId = QuestResearchId;
       ;;
     }

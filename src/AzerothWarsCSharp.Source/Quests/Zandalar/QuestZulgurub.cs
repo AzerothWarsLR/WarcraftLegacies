@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
   
 
 
-    protected override string CompletionPopup => "ZulFourCC(Gurub has fallen. The Gurubashi trolls lend their might to the " + this.Holder.Team.Name  + ".";
+    protected override string CompletionPopup => "ZulFourCC(Gurub has fallen. The Gurubashi trolls lend their might to the " + Holder.Team.Name  + ".";
 
     protected override string CompletionDescription => 
       return "Control of ZulFourCC("Gurub, 300 gold tribute && the ability to train " + GetObjectName(RAVAGER_ID") + "s from the " + GetObjectName(TROLL_SHRINE_ID);

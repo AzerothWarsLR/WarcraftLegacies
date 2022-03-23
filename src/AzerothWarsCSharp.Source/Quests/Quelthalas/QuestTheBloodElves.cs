@@ -40,22 +40,22 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     private void OnFail( ){
       unit u;
-      player holderPlayer = this.Holder.Person.Player;
+      player holderPlayer = Holder.Person.Player;
       Legend triggerLegend = GetTriggerLegend();
       LEGEND_KAEL.StartingXp = GetHeroXP(LEGEND_ANASTERIAN.Unit);
-      this.Holder.obliterate();
-      if (this.Holder.ScoreStatus != SCORESTATUS_DEFEATED){
+      Holder.obliterate();
+      if (Holder.ScoreStatus != SCORESTATUS_DEFEATED){
         while(true){
           u = FirstOfGroup(thistype.SecondChanceUnits);
           if ( u == null){ break; }
-          GeneralHelpers.UnitRescue(u, holderPlayer);
+          UnitRescue(u, holderPlayer);
           GroupRemoveUnit(thistype.SecondChanceUnits, u);
         }
         DestroyGroup(thistype.SecondChanceUnits);
         SetPlayerTechResearched(Holder.Player, QUEST_RESEARCH_ID, 1);
-        LEGEND_KAEL.Spawn(this.Holder.Player, -11410, 21975, 110);
+        LEGEND_KAEL.Spawn(Holder.Player, -11410, 21975, 110);
         UnitAddItem(LEGEND_KAEL.Unit, CreateItem(FourCC("I00M"), GetUnitX(LEGEND_KAEL.Unit), GetUnitY(LEGEND_KAEL.Unit)));
-        if (GetLocalPlayer() == this.Holder.Player){
+        if (GetLocalPlayer() == Holder.Player){
           SetCameraPosition(GetRectCenterX(Regions.BloodElfSecondChanceSpawn).Rect, GetRectCenterY(gg_rct_BloodElfSecondChanceSpawn));
         }
       }
@@ -92,9 +92,9 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Blood Elves", "The Elves of QuelFourCC("thalas have a deep reliance on the Sunwell")s magic. Without it, they would have to turn to darker magicks to sate themselves.", "ReplaceableTextures\\CommandButtons\\BTNHeroBloodElfPrince.blp");
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_DRAKTHARONKEEP, false));
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_ANASTERIAN, true));
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_SUNWELL, true));
+      AddQuestItem(new QuestItemControlLegend(LEGEND_DRAKTHARONKEEP, false));
+      AddQuestItem(new QuestItemControlLegend(LEGEND_ANASTERIAN, true));
+      AddQuestItem(new QuestItemControlLegend(LEGEND_SUNWELL, true));
       ;;
     }
 

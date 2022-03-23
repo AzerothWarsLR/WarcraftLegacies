@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
@@ -48,11 +48,11 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
     }
 
     protected override void OnComplete(){
-      GiveMoonglade(this.Holder.Player);
+      GiveMoonglade(Holder.Player);
       if (LEGEND_MALFURION.Unit == null){
         LEGEND_MALFURION.Spawn(Holder.Player, GetRectCenterX(Regions.Moonglade), GetRectCenterY(gg_rct_Moonglade).Rect, 270);
         SetHeroLevel(LEGEND_MALFURION.Unit, 3, false);
-        GeneralHelpers.UnitAddItemSafe(LEGEND_MALFURION.Unit, ARTIFACT_GHANIR.item);
+        UnitAddItemSafe(LEGEND_MALFURION.Unit, ARTIFACT_GHANIR.item);
       }else {
         SetItemPosition(ARTIFACT_GHANIR.item, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()));
       }
@@ -60,10 +60,10 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 
     public  thistype ( ){
       thistype this = thistype.allocate("Awakening of Stormrage", "Ever since the War of the Ancients ten thousand years ago, Malfurion Stormrage && his druids have slumbered within the Barrow Den. Now, their help is required once again.", "ReplaceableTextures\\CommandButtons\\BTNFurion.blp");
-      this.AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_HORNOFCENARIUS));
-      this.AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_HORNOFCENARIUS, Regions.Moonglade.Rect, "The Barrow Den"));
-      this.AddQuestItem(new QuestItemExpire(1440));
-      this.AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_HORNOFCENARIUS));
+      AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_HORNOFCENARIUS, Regions.Moonglade.Rect, "The Barrow Den"));
+      AddQuestItem(new QuestItemExpire(1440));
+      AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

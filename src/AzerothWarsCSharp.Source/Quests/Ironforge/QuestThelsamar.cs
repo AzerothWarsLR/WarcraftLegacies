@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
@@ -36,15 +36,15 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
     }
 
     protected override void OnComplete(){
-      GrantThelsamar(this.Holder.Player);
+      GrantThelsamar(Holder.Player);
     }
 
 
     public  thistype ( ){
       thistype this = thistype.allocate("Murloc Menace", "A vile group of Murloc is terrorizing Thelsamar. Destroy them!", "ReplaceableTextures\\CommandButtons\\BTNMurlocNightCrawler.blp");
-      this.AddQuestItem(QuestItemKillUnit.create(gg_unit_N089_1494)) ;//Murloc
-      this.AddQuestItem(new QuestItemExpire(1435));
-      this.AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(QuestItemKillUnit.create(gg_unit_N089_1494)) ;//Murloc
+      AddQuestItem(new QuestItemExpire(1435));
+      AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

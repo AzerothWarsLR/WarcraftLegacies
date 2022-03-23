@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     }
 
     protected override void OnComplete(){
-      GrantNethergarde(this.Holder.Player);
+      GrantNethergarde(Holder.Player);
       FACTION_STORMWIND.ModObjectLimit(FourCC("h03F"),1)               ;//Reginald windsor
     }
 
@@ -45,9 +45,9 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     public  thistype ( ){
       thistype this = thistype.allocate("Nethergarde relief", "The nethergarde fort is holding down the Dark Portal, they will need to be reinforced soon!", "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionBarracks.blp");
-      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_VARIAN, Regions.NethergardeUnlock.Rect, "Nethergarde"));
-      this.AddQuestItem(new QuestItemExpire(1440));
-      this.AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new QuestItemLegendInRect(LEGEND_VARIAN, Regions.NethergardeUnlock.Rect, "Nethergarde"));
+      AddQuestItem(new QuestItemExpire(1440));
+      AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

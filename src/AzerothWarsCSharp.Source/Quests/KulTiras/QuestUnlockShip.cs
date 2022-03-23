@@ -21,29 +21,29 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
     }
 
     protected override void OnComplete(){
-      GeneralHelpers.RescueNeutralUnitsInRect(Regions.ShipAmbient.Rect, this.Holder.Player);
+      RescueNeutralUnitsInRect(Regions.ShipAmbient.Rect, Holder.Player);
       PauseUnitBJ( false, gg_unit_h08T_0260 );
     }
 
     private void OnFail( ){
       unit u;
-      player holderPlayer = this.Holder.Person.Player;
+      player holderPlayer = Holder.Person.Player;
       LEGEND_KATHERINE.StartingXp = GetHeroXP(LEGEND_KATHERINE.Unit);
-      this.Holder.obliterate();
-      LEGEND_KATHERINE.Spawn(this.Holder.Player, -15223, -22856, 110);
+      Holder.obliterate();
+      LEGEND_KATHERINE.Spawn(Holder.Player, -15223, -22856, 110);
       UnitAddItem(LEGEND_KATHERINE.Unit, CreateItem(FourCC("I00M"), GetUnitX(LEGEND_KATHERINE.Unit), GetUnitY(LEGEND_KATHERINE.Unit)));
-      if (GetLocalPlayer() == this.Holder.Player){
+      if (GetLocalPlayer() == Holder.Player){
         SetCameraPosition(GetRectCenterX(Regions.ShipAmbient).Rect, GetRectCenterY(gg_rct_ShipAmbient));
       }
-      GeneralHelpers.RescueNeutralUnitsInRect(Regions.ShipAmbient.Rect, this.Holder.Player);
+      RescueNeutralUnitsInRect(Regions.ShipAmbient.Rect, Holder.Player);
       PauseUnitBJ( false, gg_unit_h08T_0260 );
-      SetUnitOwner(gg_unit_h08T_0260, this.Holder.Player, true);
+      SetUnitOwner(gg_unit_h08T_0260, Holder.Player, true);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Zandalar Menace", "The Troll Empire of Zandalar is a danger to the safety of KulFourCC("tiras && the Alliance. Before setting sail, we must eliminate them.", "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp"");
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_DAZARALOR, false));
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_BORALUS, true));
+      AddQuestItem(new QuestItemControlLegend(LEGEND_DAZARALOR, false));
+      AddQuestItem(new QuestItemControlLegend(LEGEND_BORALUS, true));
       ;;
     }
 

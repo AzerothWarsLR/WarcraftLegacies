@@ -23,11 +23,11 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       thistype this = thistype.allocate("Safe Sea Decree", "The seas must be secured && the KulFourCC("tiras navy must be returned to its former glory!", "ReplaceableTextures\\CommandButtons\\BTNKulTirasDreadnought.blp"");
       this.AddQuestItem(new QuestItemTrain(FourCC("hdes"),)hshy), 2));
       this.AddQuestItem(new QuestItemTrain(FourCC("h04J"),)hshy), 1));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01W"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n07L"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08Q"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n09K"))));
-      this.ResearchId = QUEST_RESEARCH_ID;
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01W"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n07L"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08Q"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n09K"))));
+      ResearchId = QUEST_RESEARCH_ID;
       ;;
     }
 

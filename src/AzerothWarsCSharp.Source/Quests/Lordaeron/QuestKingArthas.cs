@@ -23,17 +23,17 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       BlzSetUnitName(gg_unit_nemi_0019, "King Emeritus Terenas Menethil");
       RemoveUnit(gg_unit_nemi_0019);
       AddHeroXP(LEGEND_ARTHAS.Unit, 2000, true);
-      GeneralHelpers.UnitAddItemSafe(LEGEND_ARTHAS.Unit, ARTIFACT_CROWNLORDAERON.item);
+      UnitAddItemSafe(LEGEND_ARTHAS.Unit, ARTIFACT_CROWNLORDAERON.item);
       LEGEND_ARTHAS.ClearUnitDependencies();
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Line of Succession", "Arthas Menethil is the one true heir of the Kingdom of Lordaeron. The only thing standing in the way of his coronation is the world-ending threat of the Scourge.", "ReplaceableTextures\\CommandButtons\\BTNArthas.blp");
       this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_CAPITALPALACE));
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_ARTHAS, true));
-      this.AddQuestItem(new QuestItemLegendDead(LEGEND_LICHKING));
-      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_ARTHAS, Regions.King_Arthas_crown.Rect, "King Terenas"));
-      this.ResearchId = QUEST_RESEARCH_ID;
+      AddQuestItem(new QuestItemControlLegend(LEGEND_ARTHAS, true));
+      AddQuestItem(new QuestItemLegendDead(LEGEND_LICHKING));
+      AddQuestItem(new QuestItemLegendInRect(LEGEND_ARTHAS, Regions.King_Arthas_crown.Rect, "King Terenas"));
+      ResearchId = QUEST_RESEARCH_ID;
       ;;
     }
 

@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
   
 
 
-    protected override string CompletionPopup => "Stonemaul has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
+    protected override string CompletionPopup => "Stonemaul has been liberated, && its military is now free to assist the " + Holder.Team.Name + ".";
 
     protected override string CompletionDescription => "Control of all units in Stonemaul && 3000 lumber";
 
@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     }
 
     protected override void OnComplete(){
-      GrantStonemaul(this.Holder.Player);
+      GrantStonemaul(Holder.Player);
       AdjustPlayerStateBJ(3000, FACTION_FROSTWOLF.Player, PLAYER_STATE_RESOURCE_LUMBER);
     }
 
@@ -50,11 +50,11 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
     public  thistype ( ){
       thistype this = thistype.allocate("The ChieftainFourCC("s Challenge", "The Ogres of Stonemaul follow the strongest, slay the Chieftain to gain control of the base.", "ReplaceableTextures\\CommandButtons\\BTNOneHeadedOgre.blp"");
-      this.AddQuestItem(QuestItemKillUnit.create(gg_unit_noga_1228)) ;//Korgall
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n022"))));
-      this.AddQuestItem(new QuestItemExpire(1505));
-      this.AddQuestItem(new QuestItemSelfExists());
-      this.ResearchId = QUEST_RESEARCH_ID;
+      AddQuestItem(QuestItemKillUnit.create(gg_unit_noga_1228)) ;//Korgall
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n022"))));
+      AddQuestItem(new QuestItemExpire(1505));
+      AddQuestItem(new QuestItemSelfExists());
+      ResearchId = QUEST_RESEARCH_ID;
       ;;
     }
 

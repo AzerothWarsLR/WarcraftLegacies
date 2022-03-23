@@ -30,8 +30,8 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 
     public  thistype ( ){
       thistype this = thistype.allocate("Crown of the Snow", "Long ago, Fandral Staghelm cut a sapling from Nordrassil && used it to grow Andrassil in Northrend. Without the blessing of the Aspects, it fell to the Old GodsFourCC(" corruption. If Northrend were to be reclaimed, Andrassil")s growth could begin anew.", "ReplaceableTextures\\CommandButtons\\BTNTreant.blp");
-      this.AddQuestItem(new QuestItemLegendDead(LEGEND_LICHKING));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n03U"))));
+      AddQuestItem(new QuestItemLegendDead(LEGEND_LICHKING));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n03U"))));
       this.AddQuestItem(new QuestItemAnyUnitInRect(Regions.GrizzlyHills, "Grizzly Hills".Rect, true));
       ;;
     }

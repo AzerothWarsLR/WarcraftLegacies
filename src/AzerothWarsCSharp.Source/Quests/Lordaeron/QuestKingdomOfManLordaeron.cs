@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       unit crownHolder = ARTIFACT_CROWNSTORMWIND.OwningUnit;
       RemoveItem(ARTIFACT_CROWNLORDAERON.item);
       RemoveItem(ARTIFACT_CROWNSTORMWIND.item);
-      GeneralHelpers.UnitAddItemSafe(crownHolder, ARTIFACT_CROWNEASTERNKINGDOMS.item);
+      UnitAddItemSafe(crownHolder, ARTIFACT_CROWNEASTERNKINGDOMS.item);
       ARTIFACT_CROWNLORDAERON.setStatus(ARTIFACT_STATUS_HIDDEN);
       ARTIFACT_CROWNLORDAERON.setDescription("Melted down");
       ARTIFACT_CROWNSTORMWIND.setStatus(ARTIFACT_STATUS_HIDDEN);
@@ -45,12 +45,12 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     public  thistype ( ){
       thistype this = thistype.allocate("Kingdom of Man", "Before the First War, all of humanity was united under the banner of the Arathorian Empire. Reclaim its greatness by uniting mankind once again.", "ReplaceableTextures\\CommandButtons\\BTNFireKingCrown.blp");
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_ARTHAS, true));
-      this.AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_CROWNLORDAERON));
-      this.AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_CROWNSTORMWIND));
-      this.AddQuestItem(new QuestItemLegendDead(LEGEND_LICHKING));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n010"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01G"))));
+      AddQuestItem(new QuestItemControlLegend(LEGEND_ARTHAS, true));
+      AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_CROWNLORDAERON));
+      AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_CROWNSTORMWIND));
+      AddQuestItem(new QuestItemLegendDead(LEGEND_LICHKING));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n010"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01G"))));
       ;;
     }
 

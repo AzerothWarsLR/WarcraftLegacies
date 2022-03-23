@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     protected override string CompletionDescription => "Gain control of all neutral units on the Darkspear Isles && teleport to shore";
 
     private void OnFail( ){
-      GeneralHelpers.RescueNeutralUnitsInRect(Regions.EchoUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      RescueNeutralUnitsInRect(Regions.EchoUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete(){
@@ -30,13 +30,13 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       group tempGroup = CreateGroup();
       unit u;
       //Transfer control of all passive units on island and teleport all Frostwolf units to shore
-      GeneralHelpers.RescueNeutralUnitsInRect(Regions.CairneStart.Rect, this.Holder.Player);
+      RescueNeutralUnitsInRect(Regions.CairneStart.Rect, Holder.Player);
       GroupEnumUnitsInRect(tempGroup, Regions.Darkspear_Island.Rect, null);
       while(true){
         u = FirstOfGroup(tempGroup);
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, this.Holder.Player);
+          UnitRescue(u, Holder.Player);
         }
         if (GetOwningPlayer(u) == FACTION_FROSTWOLF.Player && IsUnitType(u, UNIT_TYPE_STRUCTURE) == false){
           SetUnitPosition(u, GetRandomReal(GetRectMinX(Regions.ThrallLanding), GetRectMaxX(gg_rct_ThrallLanding)), GetRandomReal(GetRectMinY(gg_rct_ThrallLanding).Rect, GetRectMaxY(gg_rct_ThrallLanding)));
@@ -45,19 +45,19 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       }
       DestroyGroup(tempGroup);
       RemoveWeatherEffectBJ(Storm);
-      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("opeo"), -1818, -2070, 270, 3);
-      GeneralHelpers.RescueNeutralUnitsInRect(Regions.EchoUnlock.Rect, this.Holder.Player);
+      CreateUnits(Holder.Player, FourCC("opeo"), -1818, -2070, 270, 3);
+      RescueNeutralUnitsInRect(Regions.EchoUnlock.Rect, Holder.Player);
     }
 
     private void OnAdd( ){
-      this.Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
+      Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Riders on the Storm", "Warchief Thrall && his forces have been shipwrecked on the Darkspear Isles. Kill the Sea Witch there to give them a chance to rebuild their fleet && escape.", "ReplaceableTextures\\CommandButtons\\BTNGhost.blp");
-      this.AddQuestItem(new QuestItemKillUnit(LEGEND_SEAWITCH.Unit));
-      this.AddQuestItem(new QuestItemExpire(600));
-      this.ResearchId = QUEST_RESEARCH_ID;
+      AddQuestItem(new QuestItemKillUnit(LEGEND_SEAWITCH.Unit));
+      AddQuestItem(new QuestItemExpire(600));
+      ResearchId = QUEST_RESEARCH_ID;
       ;;
     }
 

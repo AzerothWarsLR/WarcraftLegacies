@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
   
 
 
-    protected override string CompletionPopup => "Dalaran outskirs are now secure, the mages will join " + this.Holder.Team.Name + ".";
+    protected override string CompletionPopup => "Dalaran outskirs are now secure, the mages will join " + Holder.Team.Name + ".";
 
     protected override string CompletionDescription => "Control of all units in Dalaran && enables Antonidas to be trained at the Altar";
 
@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
@@ -52,25 +52,25 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, FourCC("R038"), 1);
-      GrantDalaran(this.Holder.Player);
-      if (GetLocalPlayer() == this.Holder.Player){
+      GrantDalaran(Holder.Player);
+      if (GetLocalPlayer() == Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\DalaranTheme.mp3" );
       }
     }
 
     private void OnAdd( ){
-      this.Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
+      Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Outskirts", "The territories of Dalaran are fragmented, secure the lands && protect Dalaran citizens .", "ReplaceableTextures\\CommandButtons\\BTNArcaneCastle.blp");
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01D"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08M"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n018"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01I"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01D"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08M"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n018"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01I"))));
       this.AddQuestItem(new QuestItemUpgrade(FourCC("h068"), )h065)));
-      this.AddQuestItem(new QuestItemExpire(1445));
-      this.AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new QuestItemExpire(1445));
+      AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

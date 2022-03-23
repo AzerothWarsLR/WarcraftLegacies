@@ -13,12 +13,12 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     protected override string CompletionDescription => "Thrall gains 10 Strength, 10 Agility && 10 Intelligence";
 
     protected override void OnComplete(){
-      GeneralHelpers.AddHeroAttributes(LEGEND_THRALL.Unit, 10, 10, 10);
+      AddHeroAttributes(LEGEND_THRALL.Unit, 10, 10, 10);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Jailor of the Damned", "Before he became the Lich King, NerFourCC("zhul was the chieftain && elder shaman of the Shadowmoon Clan. Perhaps something of his former self still survives within the Frozen Throne.", "ReplaceableTextures\\CommandButtons\\BTNShaman.blp"");
-      this.AddQuestItem(new QuestItemKillUnit(LEGEND_LICHKING.Unit));
+      AddQuestItem(new QuestItemKillUnit(LEGEND_LICHKING.Unit));
       ;;
     }
 

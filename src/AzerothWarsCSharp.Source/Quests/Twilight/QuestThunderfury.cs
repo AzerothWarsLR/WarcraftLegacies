@@ -14,13 +14,13 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
     protected override string CompletionDescription => "The legendary sword Thunderfury";
 
     protected override void OnComplete(){
-      GeneralHelpers.UnitAddItemSafe(LEGEND_CHOGALL.Unit, ARTIFACT_THUNDERFURY.item);
+      UnitAddItemSafe(LEGEND_CHOGALL.Unit, ARTIFACT_THUNDERFURY.item);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Blessed Blade of the Windseeker", "The legendary sword, Thunderfury, has been lost somewhere in the Broken Isles, ChoFourCC("gall has seen it in a vision. It will be a great asto the Old Gods", "ReplaceableTextures\\CommandButtons\\BTNThunderfury2blp"");
-      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_CHOGALL, Regions.Broken_Isles.Rect, "The Broken Isles"));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n05Y"))));
+      AddQuestItem(new QuestItemLegendInRect(LEGEND_CHOGALL, Regions.Broken_Isles.Rect, "The Broken Isles"));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n05Y"))));
       ;;
     }
 

@@ -15,8 +15,8 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       group tempGroup = CreateGroup();
       unit u;
 
-      AdjustPlayerStateBJ( 500, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
-      AdjustPlayerStateBJ( 500, this.Holder.Player, PLAYER_STATE_RESOURCE_LUMBER );
+      AdjustPlayerStateBJ( 500, Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
+      AdjustPlayerStateBJ( 500, Holder.Player, PLAYER_STATE_RESOURCE_LUMBER );
 
       GroupEnumUnitsInRect(tempGroup, Regions.InstanceOutland.Rect, null);
       u = FirstOfGroup(tempGroup);
@@ -36,9 +36,9 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Shattrah Massacre", "The Draenei race existence insults the Fel Horde demon masters, slaughter them all ", "ReplaceableTextures\\CommandButtons\\BTNChaosWolfRider.blp");
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n09X"))));
-      this.AddQuestItem(new QuestItemLegendDead(LEGEND_EXODARSHIP));
-      this.AddQuestItem(QuestItemSelfExists);
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n09X"))));
+      AddQuestItem(new QuestItemLegendDead(LEGEND_EXODARSHIP));
+      AddQuestItem(QuestItemSelfExists);
       ;;
     }
 

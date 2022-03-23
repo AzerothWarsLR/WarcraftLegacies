@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
   
 
 
-    protected override string CompletionPopup => "Silvermoon siege has been lifted, && its military is now free to assist the " + this.Holder.Team.Name + ".";
+    protected override string CompletionPopup => "Silvermoon siege has been lifted, && its military is now free to assist the " + Holder.Team.Name + ".";
 
     protected override string CompletionDescription => "Control of all units in Silvermoon && enable Anasterian to be trained at the Altar";
 
@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
@@ -42,28 +42,28 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, FourCC("R02U"), 1);
-      GrantSilvermoon(this.Holder.Player);
+      GrantSilvermoon(Holder.Player);
       if (UnitAlive(gg_unit_h00D_2122)){
         SetUnitInvulnerable(LEGEND_SILVERMOON.Unit, true );
       }
       SetUnitInvulnerable(LEGEND_SUNWELL.Unit, true );
-      if (GetLocalPlayer() == this.Holder.Player){
+      if (GetLocalPlayer() == Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\SilvermoonTheme.mp3" );
       }
     }
 
     private void OnAdd( ){
-      this.Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
+      Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Siege of Silvermoon", "Silvermoon has been besieged by Trolls. Clear them out && destroy their city of ZulFourCC("aman.", "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp"");
-      this.AddQuestItem(QuestItemKillUnit.create(gg_unit_O00O_1933)) ;//Zul)jin
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01V"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01L"))));
+      AddQuestItem(QuestItemKillUnit.create(gg_unit_O00O_1933)) ;//Zul)jin
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01V"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01L"))));
       this.AddQuestItem(new QuestItemUpgrade(FourCC("h03T"), )h033)));
-      this.AddQuestItem(new QuestItemExpire(1480));
-      this.AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new QuestItemExpire(1480));
+      AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

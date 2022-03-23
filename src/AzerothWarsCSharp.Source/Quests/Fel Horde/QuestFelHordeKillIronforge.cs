@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 
     public  thistype ( ){
       thistype this = thistype.allocate("Felsteel Refining", "The smiths of Ironforge have long been put to use crafting goods && war machinery. In the hands of the Fel Horde, they could be used to smelt && refine the ultimate metal: Felsteel.", "ReplaceableTextures\\CommandButtons\\BTNInfernalFlameCannon.blp");
-      this.AddQuestItem(new QuestItemLegendDead(LEGEND_GREATFORGE));
+      AddQuestItem(new QuestItemLegendDead(LEGEND_GREATFORGE));
       ;;
     }
 

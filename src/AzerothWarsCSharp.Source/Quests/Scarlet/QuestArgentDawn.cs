@@ -16,16 +16,16 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       return true;
     }
 
-    protected override string CompletionPopup => "The Argent Dawn has been declared && ready to join the " + this.Holder.Team.Name + ".";
+    protected override string CompletionPopup => "The Argent Dawn has been declared && ready to join the " + Holder.Team.Name + ".";
 
     protected override string CompletionDescription => "Unlock your elites, Crusader units && Tirion Fordring";
 
     protected override void OnComplete(){
-      this.Holder.Name = "Argent";
-      this.Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNTirionPaladin.blp";
+      Holder.Name = "Argent";
+      Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNTirionPaladin.blp";
       SetPlayerTechResearched(FACTION_SCARLET.Player, FourCC("R086"), 1);
       PlayThematicMusicBJ( "war3mapImported\\ScarletTheme.mp3" );
-      SetPlayerColor(this.Holder.Player, PLAYER_COLOR_SNOW );
+      SetPlayerColor(Holder.Player, PLAYER_COLOR_SNOW );
 
       FACTION_SCARLET.ModObjectLimit(FourCC("h08I"), -UNLIMITED)           ;//Crusader
       FACTION_SCARLET.ModObjectLimit(FourCC("h09I"), UNLIMITED)                 ;//Argent Crusader
@@ -38,14 +38,14 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
     }
 
     private void OnAdd( ){
-      this.Holder.ModObjectLimit(RESEARCH_ID, 1);
+      Holder.ModObjectLimit(RESEARCH_ID, 1);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Argent Dawn", "The Militia of Lordaeron has been solidified into the Argent Dawn, a strong military force lead by Tirion Fording.", "ReplaceableTextures\\CommandButtons\\BTNResurrection.blp");
-      this.AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("h00T")));
-      this.AddQuestItem(new QuestItemSelfExists());
-      this.ResearchId = QUEST_RESEARCH_ID;
+      AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("h00T")));
+      AddQuestItem(new QuestItemSelfExists());
+      ResearchId = QUEST_RESEARCH_ID;
       ;;
     }
 

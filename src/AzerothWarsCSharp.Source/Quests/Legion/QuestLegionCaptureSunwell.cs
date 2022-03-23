@@ -15,17 +15,17 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
     protected override string CompletionDescription => "A research improving your Dreadlords";
 
     protected override void OnComplete(){
-      SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);
-      DisplayResearchAcquired(this.Holder.Player, RESEARCH_ID, 1);
+      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
+      DisplayResearchAcquired(Holder.Player, RESEARCH_ID, 1);
     }
 
     private void OnAdd( ){
-      this.Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
+      Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Fall of Silvermoon", "The Sunwell is the source of the High ElvesFourCC(" immortality && magical prowess. Under control of the Scourge, it would be the source of immense necromantic power.", "ReplaceableTextures\\CommandButtons\\BTNOrbOfCorruption.blp"");
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_SUNWELL, false));
+      AddQuestItem(new QuestItemControlLegend(LEGEND_SUNWELL, false));
       ;;
     }
 

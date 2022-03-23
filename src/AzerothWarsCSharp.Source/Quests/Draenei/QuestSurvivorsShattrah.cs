@@ -17,9 +17,9 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Survivors of Shattrah", "The Shattrah massacre was swift && brutal, if (the Draenei hold long enough in Outland, they might regroup with some of the survivors.", "ReplaceableTextures\\CommandButtons\\BTNGlazeroth.blp");
-      this.AddQuestItem(new QuestItemTime(480));
+      AddQuestItem(new QuestItemTime(480));
       this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_EXODARSHIP));
-      this.AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new QuestItemSelfExists());
       ResearchId = QuestResearchId;
       ;;
     }

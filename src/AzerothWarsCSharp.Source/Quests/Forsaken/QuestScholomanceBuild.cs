@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
     }
 
     private void OnAdd( ){
-      this.Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
+      Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
     }
 
     public  thistype ( ){
@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       this.AddQuestItem(new QuestItemBuild(FourCC("u014"), 1));
       this.AddQuestItem(new QuestItemBuild(FourCC("u01J"), 2));
       this.AddQuestItem(new QuestItemUpgrade(FourCC("h08B"), )h089)));
-      this.ResearchId = QUEST_RESEARCH_ID;
+      ResearchId = QUEST_RESEARCH_ID;
       ;;
     }
 

@@ -18,8 +18,8 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Broken One", "The great shaman Nobundo is fighting to enable Velen && most of the Draenei to escape. If the Draenei hold out long enough, he might have time to join the survivors aboard the Exodar", "ReplaceableTextures\\CommandButtons\\BTNAkamanew.blp");
-      this.AddQuestItem(new QuestItemTime(720));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02O"))));
+      AddQuestItem(new QuestItemTime(720));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02O"))));
       ResearchId = QuestResearchId;
       ;;
     }

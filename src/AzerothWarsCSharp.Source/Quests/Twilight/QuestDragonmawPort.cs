@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
   public sealed class QuestDragonmawPort : QuestData{
 
 
-    protected override string CompletionPopup => "Dragonmaw Port has fallen under our control && its military is now free to assist the " + this.Holder.Team.Name + ".";
+    protected override string CompletionPopup => "Dragonmaw Port has fallen under our control && its military is now free to assist the " + Holder.Team.Name + ".";
 
     protected override string CompletionDescription => "Control of all buildings in Dragonmaw Port";
 
@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
     }
 
     protected override void OnComplete(){
-      GrantDragonmawPort(this.Holder.Player);
+      GrantDragonmawPort(Holder.Player);
     }
 
     private void OnAdd( ){
@@ -45,9 +45,9 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
 
     public  thistype ( ){
       thistype this = thistype.allocate("Dragonmaw Port", "The Dragonmaw Port will be the perfect staging ground of the invasion of Azeroth", "ReplaceableTextures\\CommandButtons\\BTNIronHordeSummoningCircle.blp");
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08T"))));
-      this.AddQuestItem(new QuestItemExpire(1227));
-      this.AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08T"))));
+      AddQuestItem(new QuestItemExpire(1227));
+      AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

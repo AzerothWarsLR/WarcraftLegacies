@@ -18,11 +18,11 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Nine", "Most of the ValFourCC("kyr are still in Northrend, under the influence of the Lich King, they need to join the Forsaken cause", "ReplaceableTextures\\CommandButtons\\BTNPaleValkyr.blp"");
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_SYLVANASV, false));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02J"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n03U"))));
-      this.AddQuestItem(new QuestItemLegendDead(LEGEND_LICHKING));
-      this.AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new QuestItemControlLegend(LEGEND_SYLVANASV, false));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02J"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n03U"))));
+      AddQuestItem(new QuestItemLegendDead(LEGEND_LICHKING));
+      AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

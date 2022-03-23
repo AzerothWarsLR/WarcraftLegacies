@@ -12,27 +12,27 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
   
 
 
-    protected override string CompletionPopup => "TyrFourCC(s Hand has joined the war && its military is now free to assist the " + this.Holder.Team.Name + ".";
+    protected override string CompletionPopup => "TyrFourCC(s Hand has joined the war && its military is now free to assist the " + Holder.Team.Name + ".";
 
     protected override string CompletionDescription => "Control of all units in TyrFourCC(s Hand";
 
     private void OnFail( ){
-      GeneralHelpers.RescueNeutralUnitsInRect(Regions.TyrUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      RescueNeutralUnitsInRect(Regions.TyrUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete(){
-      GeneralHelpers.RescueNeutralUnitsInRect(Regions.TyrUnlock.Rect, this.Holder.Player);
+      RescueNeutralUnitsInRect(Regions.TyrUnlock.Rect, Holder.Player);
     }
 
     private void OnAdd( ){
-      this.Holder.ModObjectLimit(RESEARCH_ID, 1);
+      Holder.ModObjectLimit(RESEARCH_ID, 1);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Scarlet Enclave", "The legions at TyrFourCC("s Hand remain neutral for the moment, but when the time is right, they will align themselves with the Scarlet Crusade.", "ReplaceableTextures\\CommandButtons\\BTNCastle.blp"");
-      this.AddQuestItem(new QuestItemTime(1000));
-      this.AddQuestItem(new QuestItemSelfExists());
-      this.ResearchId = RESEARCH_ID;
+      AddQuestItem(new QuestItemTime(1000));
+      AddQuestItem(new QuestItemSelfExists());
+      ResearchId = RESEARCH_ID;
       ;;
     }
 

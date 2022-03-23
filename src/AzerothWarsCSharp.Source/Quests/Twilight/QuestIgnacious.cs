@@ -18,9 +18,9 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
 
     public  thistype ( ){
       thistype this = thistype.allocate("Gift of the Firelord", "Destroying the Dwarf great forge will please the Great Elemental Lord, Ragnaros.", "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp");
-      this.AddQuestItem(new QuestItemLegendDead(LEGEND_GREATFORGE));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0AA"))));
-      this.ResearchId = RESEARCH_ID;
+      AddQuestItem(new QuestItemLegendDead(LEGEND_GREATFORGE));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0AA"))));
+      ResearchId = RESEARCH_ID;
       ;;
     }
 

@@ -14,8 +14,8 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
     protected override string CompletionDescription => "Unlock the southern zone of NyaFourCC(lotha, && the next Herald you train will open a temporary portal to the Twilight Highlands.";
 
     protected override void OnComplete(){
-      GeneralHelpers.RescueUnitsInGroup(udg_NyalothaGroup2, this.Holder.Player);
-      GeneralHelpers.RescueUnitsInGroup(udg_NyalothaGroup3, this.Holder.Player);
+      RescueUnitsInGroup(udg_NyalothaGroup2, Holder.Player);
+      RescueUnitsInGroup(udg_NyalothaGroup3, Holder.Player);
 
 
       RemoveUnit(Herald.Instance.unit);
@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 
     public  thistype ( ){
       thistype this = thistype.allocate("Second Obelisk", "The convergence of floatities grows ever closer. An Obelisk must be established in Uldum.", "ReplaceableTextures\\CommandButtons\\BTNIceCrownObelisk.blp");
-      this.AddQuestItem(new QuestItemObelisk(ControlPoint.GetFromUnitType(FourCC("n0BD"))));
+      AddQuestItem(new QuestItemObelisk(ControlPoint.GetFromUnitType(FourCC("n0BD"))));
       ;;
     }
 

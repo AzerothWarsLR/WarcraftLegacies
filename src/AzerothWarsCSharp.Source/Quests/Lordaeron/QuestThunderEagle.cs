@@ -12,19 +12,19 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
   
 
 
-    protected override string CompletionPopup => "The Thunder Eagles, now in safe hands " + this.Holder.Name + ".";
+    protected override string CompletionPopup => "The Thunder Eagles, now in safe hands " + Holder.Name + ".";
 
     protected override string CompletionDescription => "Learn to train " + GetObjectName(THUNDER_EAGLE_ID) + "s";
 
     protected override void OnComplete(){
-      SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);
-      DisplayUnitTypeAcquired(this.Holder.Player, THUNDER_EAGLE_ID, "You can now train Thunder Eagles from upgraded Town Halls && from your capitals.");
+      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
+      DisplayUnitTypeAcquired(Holder.Player, THUNDER_EAGLE_ID, "You can now train Thunder Eagles from upgraded Town Halls && from your capitals.");
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("To the Skies!", "The Thunder Eagles of the Storm Peaks live in fear of the Legion. Wipe out the Legion Nexus to bring these great birds out into the open.", "ReplaceableTextures\\CommandButtons\\BTNWarEagle.blp");
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_DRAKTHARONKEEP, false));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02S"))));
+      AddQuestItem(new QuestItemControlLegend(LEGEND_DRAKTHARONKEEP, false));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02S"))));
       ;;
     }
 

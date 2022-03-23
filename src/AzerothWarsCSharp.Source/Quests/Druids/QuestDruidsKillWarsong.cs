@@ -16,17 +16,17 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
     protected override string CompletionDescription => "Learn to train " + GetObjectName(UNITTYPE_ID) + "s";
 
     protected override void OnComplete(){
-      SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);
-      DisplayUnitTypeAcquired(this.Holder.Player, UNITTYPE_ID, "You can now train Siege Ancients at the Ancient of War.");
+      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
+      DisplayUnitTypeAcquired(Holder.Player, UNITTYPE_ID, "You can now train Siege Ancients at the Ancient of War.");
     }
 
     private void OnAdd( ){
-      this.Holder.ModObjectLimit(UNITTYPE_ID, 6) ;//Siege Ancient
+      Holder.ModObjectLimit(UNITTYPE_ID, 6) ;//Siege Ancient
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Enemies at the Gate", "Arriving from another planet && across the seas of Azeroth, the Orcs of the Warsong Clan have arrived to ravage the wilderness && consume its bounty. They must be stopped.", "ReplaceableTextures\\CommandButtons\\BTNHellScream.blp");
-      this.AddQuestItem(new QuestItemLegendDead(LEGEND_STONEMAUL));
+      AddQuestItem(new QuestItemLegendDead(LEGEND_STONEMAUL));
       ;;
     }
 

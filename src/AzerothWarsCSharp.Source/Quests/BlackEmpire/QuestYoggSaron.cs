@@ -18,15 +18,15 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
     protected override string CompletionDescription => "The old god Yogg-Saron will join the Black Empire && enable to train Forgotten ones";
 
     protected override void OnComplete(){
-      GeneralHelpers.UnitRescue(gg_unit_U02C_2829, this.Holder.Player)  ;//Yogg
+      UnitRescue(gg_unit_U02C_2829, Holder.Player)  ;//Yogg
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Fiend of a Thousand Faces", "Yogg-Saron was imprisoned beneath Northrend by the Titans countless millenia ago. ", "ReplaceableTextures\\CommandButtons\\BTNYogg-saronIcon.blp");
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n053"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00I"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02S"))));
-      this.ResearchId = RESEARCH_ID;
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n053"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00I"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02S"))));
+      ResearchId = RESEARCH_ID;
       ;;
     }
 

@@ -13,19 +13,19 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     protected override void OnComplete(){
       FACTION_FORSAKEN.ModObjectLimit(FourCC("u01V"), 2)           ;//Valyr
-      AdjustPlayerStateBJ( 500, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
+      AdjustPlayerStateBJ( 500, Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
     }
 
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Plaguelands", "The ravaged lands of Lordaeron must be conquered by the Forsaken, their survival depends on it", "ReplaceableTextures\\CommandButtons\\BTNNathanosBlightcaller.blp");
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_NATHANOS, false));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01F"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n044"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01H"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n03P"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01M"))));
-      this.AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new QuestItemControlLegend(LEGEND_NATHANOS, false));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01F"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n044"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01H"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n03P"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01M"))));
+      AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

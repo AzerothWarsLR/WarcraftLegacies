@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
@@ -50,7 +50,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }
-        if (GetOwningPlayer(u) == this.Holder.Player){
+        if (GetOwningPlayer(u) == Holder.Player){
           if (IsUnitType(u, UNIT_TYPE_STRUCTURE) && !IsUnitType(u, UNIT_TYPE_ANCIENT)){
             KillUnit(u);
           }else if (!IsUnitType(u, UNIT_TYPE_ANCIENT)){
@@ -90,17 +90,17 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
     }
 
     protected override void OnComplete(){
-      AdjustPlayerStateBJ( 200, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
+      AdjustPlayerStateBJ( 200, Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
       AdjustPlayerStateBJ( ( 2000 - GetResourceAmount(gg_unit_ngol_3272) ), Player(13), PLAYER_STATE_RESOURCE_GOLD );
-      AdjustPlayerStateBJ( 500, this.Holder.Player, PLAYER_STATE_RESOURCE_LUMBER );
+      AdjustPlayerStateBJ( 500, Holder.Player, PLAYER_STATE_RESOURCE_LUMBER );
       FACTION_DRAENEI.AddQuest(SHIP_ARGUS);
       SHIP_ARGUS.Progress = QUEST_PROGRESS_INCOMPLETE;
       UnitRemoveAbilityBJ( FourCC("ACm2"), LEGEND_VELEN.Unit);
-      GrantExiled(this.Holder.Player);
-      EscapeOutland(this.Holder.Player);
+      GrantExiled(Holder.Player);
+      EscapeOutland(Holder.Player);
       RemoveUnit(gg_unit_h09W_3303);
       KillUnit(gg_unit_o02P_2291);
-      if (GetLocalPlayer() == this.Holder.Player){
+      if (GetLocalPlayer() == Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\DraeneiTheme.mp3" );
       }
     }
@@ -109,7 +109,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       thistype this = thistype.allocate("The Exile from Outland", "The Draenei need to escape Outland through the Exodar ship. We will need to power it up with a Divine Citadel first. The longer you hold out, the better the rewards will be", "ReplaceableTextures\\CommandButtons\\BTNUndeadAirBarge.blp");
       this.AddQuestItem(new QuestItemEitherOf.create(QuestItemResearch.create(RESEARCH_ID, FourCC("h09W")), QuestItemTime(782)));
       this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_EXODARSHIP));
-      this.AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new QuestItemSelfExists());
       ResearchId = QuestResearchId;
       ;;
     }

@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
@@ -37,16 +37,16 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
     }
 
     protected override void OnComplete(){
-      GrantDunMorogh(this.Holder.Player);
+      GrantDunMorogh(Holder.Player);
     }
 
 
     public  thistype ( ){
       thistype this = thistype.allocate("Mountain Village", "A small troll skirmish is attacking Dun Morogh. Push them back!", "ReplaceableTextures\\CommandButtons\\BTNIceTrollShadowPriest.blp");
-      this.AddQuestItem(QuestItemKillUnit.create(gg_unit_nith_1625)) ;//Troll
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n014"))));
-      this.AddQuestItem(new QuestItemExpire(1435));
-      this.AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(QuestItemKillUnit.create(gg_unit_nith_1625)) ;//Troll
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n014"))));
+      AddQuestItem(new QuestItemExpire(1435));
+      AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

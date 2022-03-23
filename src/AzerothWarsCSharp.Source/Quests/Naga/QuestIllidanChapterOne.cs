@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.Dire_Maul_Entrance.Rect, "Feralas"));
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.AethneumLibraryEntrance.Rect, "the Aetheneum Library"));
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.ImmolFight.Rect, "ImmolFourCC("thar")s Lair"));
-      this.AddQuestItem(new QuestItemLegendDead(LEGEND_IMMOLTHAR));
+      AddQuestItem(new QuestItemLegendDead(LEGEND_IMMOLTHAR));
       this.questToDiscover = questToDiscover;
       ;;
     }

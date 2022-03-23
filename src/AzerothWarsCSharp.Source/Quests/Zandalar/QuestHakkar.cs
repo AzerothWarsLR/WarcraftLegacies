@@ -27,9 +27,9 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Binding of the Soulflayer", "Hakkar is the most dangerous && powerful of the Troll gods. Only by fusing the Demon Soul would the Zandalari be able to control Hakkar && bind him to their will.", "ReplaceableTextures\\CommandButtons\\BTNWindSerpent2blp");
-      this.AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_ZINROKH));
-      this.AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_ZINROKH, Regions.DrownedTemple.Rect, "The Drowned Temple"));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00U"))));
+      AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_ZINROKH));
+      AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_ZINROKH, Regions.DrownedTemple.Rect, "The Drowned Temple"));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00U"))));
       ;;
     }
 

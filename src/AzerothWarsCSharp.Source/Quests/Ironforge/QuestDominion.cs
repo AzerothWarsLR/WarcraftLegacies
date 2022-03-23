@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
@@ -41,25 +41,25 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
     }
 
     protected override void OnComplete(){
-      GrantDominion(this.Holder.Player);
-      if (GetLocalPlayer() == this.Holder.Player){
+      GrantDominion(Holder.Player);
+      if (GetLocalPlayer() == Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\DwarfTheme.mp3" );
       }
     }
 
     private void OnAdd( ){
-      this.Holder.ModObjectLimit(RESEARCH_ID, 1);
+      Holder.ModObjectLimit(RESEARCH_ID, 1);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Dwarven Dominion", "The Dwarven Dominion must be established before Ironforge can join the war.", "ReplaceableTextures\\CommandButtons\\BTNNorthrendCastle.blp");
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n017"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n014"))));
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n013"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n017"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n014"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n013"))));
       this.AddQuestItem(new QuestItemUpgrade(FourCC("h07G"), )h07E)));
-      this.AddQuestItem(new QuestItemExpire(1462));
-      this.AddQuestItem(new QuestItemSelfExists());
-      this.ResearchId = RESEARCH_ID;
+      AddQuestItem(new QuestItemExpire(1462));
+      AddQuestItem(new QuestItemSelfExists());
+      ResearchId = RESEARCH_ID;
       ;;
     }
 

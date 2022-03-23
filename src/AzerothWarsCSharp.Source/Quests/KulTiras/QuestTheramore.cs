@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       while(true){
         u = FirstOfGroup(theramoreUnits);
         if ( u == null){ break; }
-        GeneralHelpers.UnitRescue(u, whichPlayer);
+        UnitRescue(u, whichPlayer);
         GroupRemoveUnit(theramoreUnits, u);
       }
       DestroyGroup(theramoreUnits);
@@ -33,22 +33,22 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 
     private void OnFail( ){
       thistype.GrantToPlayer(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      this.Holder.ModObjectLimit(RESEARCH_ID, -UNLIMITED);
+      Holder.ModObjectLimit(RESEARCH_ID, -UNLIMITED);
     }
 
     protected override void OnComplete(){
-      thistype.GrantToPlayer(this.Holder.Player);
-      this.Holder.ModObjectLimit(RESEARCH_ID, -UNLIMITED);
+      thistype.GrantToPlayer(Holder.Player);
+      Holder.ModObjectLimit(RESEARCH_ID, -UNLIMITED);
     }
 
     private void OnAdd( ){
-      this.Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
+      Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Theramore", "The distant lands of Kalimdor remain untouched by human civilization. If the Third War proceeds poorly, it may become necessary to establish a forward base there.", "ReplaceableTextures\\CommandButtons\\BTNHumanArcaneTower.blp");
-      this.AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("h076")));
-      this.AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("h076")));
+      AddQuestItem(new QuestItemSelfExists());
       ;;
     }
 

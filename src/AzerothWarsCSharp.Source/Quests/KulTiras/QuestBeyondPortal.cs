@@ -16,11 +16,11 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 
     public  thistype ( ){
       thistype this = thistype.allocate("Beyond the Dark Portal", "The Orc threat from Draenor still looms over all. Eliminate every trace of the Orcs && their bases.", "ReplaceableTextures\\CommandButtons\\BTNDarkPortal.blp");
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_BLACKTEMPLE, false));
-      this.AddQuestItem(new QuestItemLegendDead(LEGEND_HELLFIRECITADEL));
-      this.AddQuestItem(new QuestItemLegendDead(LEGEND_BLACKROCKSPIRE));
-      this.AddQuestItem(new QuestItemSelfExists());
-      this.ResearchId = QUEST_RESEARCH_ID;
+      AddQuestItem(new QuestItemControlLegend(LEGEND_BLACKTEMPLE, false));
+      AddQuestItem(new QuestItemLegendDead(LEGEND_HELLFIRECITADEL));
+      AddQuestItem(new QuestItemLegendDead(LEGEND_BLACKROCKSPIRE));
+      AddQuestItem(new QuestItemSelfExists());
+      ResearchId = QUEST_RESEARCH_ID;
       ;;
     }
 

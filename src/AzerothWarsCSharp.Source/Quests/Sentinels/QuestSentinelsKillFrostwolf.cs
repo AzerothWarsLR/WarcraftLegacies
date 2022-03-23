@@ -16,18 +16,18 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
     protected override string CompletionDescription => "The demihero Amara && the hero Jarod";
 
     protected override void OnComplete(){
-      SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);
-      DisplayUnitTypeAcquired(this.Holder.Player, AMARA_ID, "You can now revive Amara from the Altar of Elders.");
+      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
+      DisplayUnitTypeAcquired(Holder.Player, AMARA_ID, "You can now revive Amara from the Altar of Elders.");
     }
 
     private void OnAdd( ){
-      this.Holder.ModObjectLimit(AMARA_ID, 1);
-      this.Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
+      Holder.ModObjectLimit(AMARA_ID, 1);
+      Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("Drive Them Back", "The Frostwolf Clan is beginning to seize a firm foothold within the Barrens && on the plains of Mulgore. They must be driven back.", "ReplaceableTextures\\CommandButtons\\BTNThrall.blp");
-      this.AddQuestItem(new QuestItemLegendDead(LEGEND_THUNDERBLUFF));
+      AddQuestItem(new QuestItemLegendDead(LEGEND_THUNDERBLUFF));
       ;;
     }
 
