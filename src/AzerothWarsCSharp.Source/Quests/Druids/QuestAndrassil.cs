@@ -1,6 +1,7 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Druids
 {
@@ -10,15 +11,12 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
     private static readonly int UrsocId = FourCC("E00A");
 
     public QuestAndrassil() : base("Crown of the Snow",
-      "Long ago, Fandral Staghelm cut a sapling from Nordrassil && used it to grow Andrassil in Northrend. Without the blessing of the Aspects, it fell to the Old GodsFourCC(" corruption
-        .If Northrend were to be reclaimed, Andrassil")s growth could begin anew.",
+      "Long ago, Fandral Staghelm cut a sapling from Nordrassil && used it to grow Andrassil in Northrend. Without the blessing of the Aspects, it fell to the Old Gods' corruption. If Northrend were to be reclaimed, Andrassil's growth could begin anew.",
       "ReplaceableTextures\\CommandButtons\\BTNTreant.blp")
     {
-      AddQuestItem(new QuestItemLegendDead(LEGEND_LICHKING));
+      AddQuestItem(new QuestItemLegendDead(LegendScourge.LegendLichking));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n03U"))));
-      this.AddQuestItem(new QuestItemAnyUnitInRect(Regions.GrizzlyHills, "Grizzly Hills".Rect, true));
-      ;
-      ;
+      this.AddQuestItem(new QuestItemAnyUnitInRect(Regions.GrizzlyHills.Rect, "Grizzly Hills", true));
     }
 
 
@@ -31,15 +29,15 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
     protected override void OnComplete()
     {
       SetPlayerTechResearched(Holder.Player, ResearchId, 1);
-      CreateUnit(Holder.Player, FourCC("n04F"), GetRectCenterX(Regions.Andrassil),
-        GetRectCenterY(gg_rct_Andrassil).Rect, 0);
+      CreateUnit(Holder.Player, FourCC("n04F"), GetRectCenterX(Regions.Andrassil.Rect),
+        GetRectCenterY(Regions.Andrassil.Rect), 0);
     }
 
     protected override void OnAdd()
     {
-      Holder.ModObjectLimit(FourCC("R05X"), UNLIMITED);
+      Holder.ModObjectLimit(FourCC("R05X"), Faction.UNLIMITED);
       Holder.ModObjectLimit(UrsocId, 1);
-      Holder.ModObjectLimit(ResearchId, UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
     }
   }
 }

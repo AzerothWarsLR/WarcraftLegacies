@@ -1,6 +1,6 @@
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemAnyUnitInRect{
+  public class QuestItemAnyUnitInRect : QuestItemData{
 
     private static region RectToRegion(rect whichRect ){
       region rectRegion = CreateRegion();
@@ -91,7 +91,8 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       }
     }
 
-    thistype (rect targetRect, string rectName, bool heroOnly ){
+    public QuestItemAnyUnitInRect (rect targetRect, string rectName, bool heroOnly )
+    {
 
       trigger trig = CreateTrigger();
       if (heroOnly){
