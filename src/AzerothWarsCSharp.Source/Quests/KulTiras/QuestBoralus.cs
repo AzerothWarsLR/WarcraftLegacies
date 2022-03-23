@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 
     protected override string CompletionDescription => "Control of all units in KulFourCC(Tiras && enables Katherine Proodmoure to be trained at the altar";
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       RescueNeutralUnitsInRect(Regions.Kultiras.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       tempGroup = null;
     }
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       GiveStromgarde(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       SetItemPosition(ARTIFACT_TROLKALAR.item, 140889, 12363);
       ARTIFACT_TROLKALAR.setStatus(ARTIFACT_STATUS_GROUND);

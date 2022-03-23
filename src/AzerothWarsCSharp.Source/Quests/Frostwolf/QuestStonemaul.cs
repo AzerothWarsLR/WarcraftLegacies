@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       tempGroup = null;
     }
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       GrantStonemaul(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

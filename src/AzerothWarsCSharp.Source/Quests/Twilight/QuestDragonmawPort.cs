@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       tempGroup = null;
     }
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       GrantDragonmawPort(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       PauseUnitBJ( false, gg_unit_h08T_0260 );
     }
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       unit u;
       player holderPlayer = Holder.Person.Player;
       LEGEND_KATHERINE.StartingXp = GetHeroXP(LEGEND_KATHERINE.Unit);

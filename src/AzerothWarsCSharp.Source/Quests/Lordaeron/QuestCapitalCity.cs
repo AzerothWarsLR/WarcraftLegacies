@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     protected override string CompletionDescription => "Control of all units in Capital City";
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       RescueNeutralUnitsInRect(Regions.Terenas.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

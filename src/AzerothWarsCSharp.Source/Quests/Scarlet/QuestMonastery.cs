@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
 
     protected override string CompletionDescription => "Control of all units in the Scarlet Monastery && you will unally the alliance";
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       RescueNeutralUnitsInRect(Regions.ScarletAmbient.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

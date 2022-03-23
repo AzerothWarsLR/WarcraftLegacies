@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
 
     protected override string CompletionDescription => "Control of all units in TyrFourCC(s Hand";
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       RescueNeutralUnitsInRect(Regions.TyrUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

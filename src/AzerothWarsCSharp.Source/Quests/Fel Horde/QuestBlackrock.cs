@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       tempGroup = null;
     }
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       GrantBlackrock(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

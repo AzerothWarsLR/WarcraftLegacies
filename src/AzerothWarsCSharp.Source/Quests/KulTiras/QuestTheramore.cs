@@ -31,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       _theramoreUnits = null;
     }
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       thistype.GrantToPlayer(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       Holder.ModObjectLimit(ResearchId, -UNLIMITED);
     }

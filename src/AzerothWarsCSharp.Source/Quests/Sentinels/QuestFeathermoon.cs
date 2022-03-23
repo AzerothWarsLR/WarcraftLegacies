@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       tempGroup = null;
     }
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       GrantFeathermoon(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

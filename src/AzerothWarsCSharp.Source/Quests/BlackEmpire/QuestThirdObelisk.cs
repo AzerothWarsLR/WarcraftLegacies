@@ -43,7 +43,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       OpenPortals();
     }
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       OpenPortals();
     }
 

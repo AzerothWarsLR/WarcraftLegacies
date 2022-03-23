@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     protected override string CompletionDescription => "Control of all units in Shadowfang";
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       RescueNeutralUnitsInRect(Regions.ShadowfangUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

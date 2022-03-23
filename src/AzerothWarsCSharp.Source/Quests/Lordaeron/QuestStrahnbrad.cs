@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     protected override string CompletionDescription => "Control of all buildings in Strahnbrad";
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       RescueNeutralUnitsInRect(Regions.StrahnbradUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

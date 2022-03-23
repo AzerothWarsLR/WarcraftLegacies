@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
     protected override string CompletionDescription => "Gain control of all neutral units on the Darkspear Isles && teleport to shore";
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       RescueNeutralUnitsInRect(Regions.EchoUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
 
     protected override string CompletionDescription => "Control of all units in Grim Batol && able to train Orcish Death Knights";
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       RescueNeutralUnitsInRect(Regions.GrimBatol.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       tempGroup = null;
     }
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       GrantAshenvale(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

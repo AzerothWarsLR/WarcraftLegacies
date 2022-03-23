@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     protected override string CompletionDescription => "A new base near Dragonblight in Northrend, && Arthas revives there";
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       Holder.ModObjectLimit(ResearchId, -UNLIMITED);
     }
 

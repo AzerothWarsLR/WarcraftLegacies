@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       RemoveUnit(thistype.sleepingTortolla);
     }
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       RemoveUnit(thistype.sleepingTortolla);
     }
 

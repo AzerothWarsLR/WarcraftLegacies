@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
 
     protected override string CompletionDescription => "The Divine Citadel, Teleporter, Astral Sanctum && Crystal Spire will !be deleted from Azuremyst";
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       KillUnit(gg_unit_o051_3356);
       KillUnit(gg_unit_o055_3337);
       KillUnit(gg_unit_o054_3338);

@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override string CompletionDescription => "Access to the Plague Research at the Frozen Throne, KelFourCC(tuzad && Rivendare trainable && a base in Icecrown";
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       RescueNeutralUnitsInRect(Regions.IceCrown.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

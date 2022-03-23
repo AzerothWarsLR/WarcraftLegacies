@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     protected override string CompletionDescription => "Control of all units in Undercity, unlock Nathanos && unally the Legion team";
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       RescueNeutralUnitsInRect(Regions.UndercityUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

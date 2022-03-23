@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 
     protected override string CompletionDescription => "Control of all units in Zandalar && enables the Golden Fleet to be built";
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       RescueNeutralUnitsInRect(Regions.ZandalarUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

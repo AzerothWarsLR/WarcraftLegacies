@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override string CompletionDescription => "Control of all buildings in DrakFourCC("taron Keep")";
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       RescueNeutralUnitsInRect(Regions.DrakUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

@@ -64,7 +64,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       tempGroup = null;
     }
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       group tempGroup = CreateGroup();
       unit u;
 

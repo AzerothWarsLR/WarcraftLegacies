@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     protected override string CompletionDescription => "Control of all units in Stratholme";
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       RescueNeutralUnitsInRect(Regions.StratholmeUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

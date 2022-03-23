@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
 
     protected override string CompletionDescription => "Control of all units in Astranaar Outpost && Darnassus";
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       RescueNeutralUnitsInRect(Regions.AstranaarUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
       RescueNeutralUnitsInRect(Regions.TeldrassilUnlock1.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
       RescueNeutralUnitsInRect(Regions.TeldrassilUnlock2.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));

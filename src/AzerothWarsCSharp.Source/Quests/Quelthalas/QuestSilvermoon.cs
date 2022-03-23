@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       tempGroup = null;
     }
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       GrantSilvermoon(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

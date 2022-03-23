@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       UnitAddItemSafe(_questItemAnyUnitInRect.TriggerUnit, ARTIFACT_SKULLOFGULDAN.item);
     }
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       SetItemPosition(ARTIFACT_SKULLOFGULDAN.item, -11867, 222165);
       ARTIFACT_SKULLOFGULDAN.setStatus(ARTIFACT_STATUS_GROUND);
     }

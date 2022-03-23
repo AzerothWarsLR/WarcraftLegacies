@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       AdjustPlayerStateBJ( 2000, this.Holder.Player, PLAYER_STATE_RESOURCE_LUMBER );
     }
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       GiveCrossroads(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

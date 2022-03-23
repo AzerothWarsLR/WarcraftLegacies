@@ -31,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       tempGroup = null;
     }
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       GrantNethergarde(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

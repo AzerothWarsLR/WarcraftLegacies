@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
     protected override string CompletionDescription => "Control of Thunder Bluff";
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       GeneralHelpers.RescueNeutralUnitsInRect(Regions.ThunderBluff.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

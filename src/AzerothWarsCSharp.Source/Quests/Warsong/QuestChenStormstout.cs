@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
 
     protected override string CompletionDescription => "The hero Chen Stormstout";
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       RemoveUnit(gg_unit_Nsjs_1887);
     }
 

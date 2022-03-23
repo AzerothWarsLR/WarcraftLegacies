@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Quests
 
     protected override string CompletionDescription => "Gain the Scepter of the Queen && control of all units in Dire Maul";
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       Holder.ModObjectLimit(thistype.researchId, -UNLIMITED);
     }
 

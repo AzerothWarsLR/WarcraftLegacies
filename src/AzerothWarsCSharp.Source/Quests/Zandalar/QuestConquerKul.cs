@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       return "You can no longer build shipyards, but you unlock Zulfarrak";
     }
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       unit u;
       group tempGroup;
       tempGroup = CreateGroup();

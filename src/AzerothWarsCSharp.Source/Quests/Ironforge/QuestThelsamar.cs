@@ -31,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       tempGroup = null;
     }
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       GrantThelsamar(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

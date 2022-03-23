@@ -46,7 +46,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       }
     }
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       GrantHellfire(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

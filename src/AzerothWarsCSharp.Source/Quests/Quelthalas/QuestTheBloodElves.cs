@@ -38,7 +38,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       DisplayUnitTypeAcquired(Holder.Player, UnittypeId, "You can now train " + GetObjectName(UnittypeId) + "s from the " + GetObjectName(BuildingId) + ".");
     }
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       unit u;
       player holderPlayer = Holder.Person.Player;
       Legend triggerLegend = GetTriggerLegend();

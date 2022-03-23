@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       tempGroup = null;
     }
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       GrantSouthshore(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 

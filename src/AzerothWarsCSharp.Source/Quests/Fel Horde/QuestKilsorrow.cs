@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 
     protected override string CompletionDescription => "Control of all units in KilFourCC(sorrow && 3 new Demon Gates";
 
-    private void OnFail( ){
+    protected override void OnFail( ){
       RescueNeutralUnitsInRect(Regions.KilsorrowUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
