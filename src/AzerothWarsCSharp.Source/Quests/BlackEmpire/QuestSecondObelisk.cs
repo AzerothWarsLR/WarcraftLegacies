@@ -6,16 +6,12 @@ using AzerothWarsCSharp.Source.Mechanics.BlackEmpire;
 
 namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 {
-  public sealed class QuestSecondObelisk : QuestData : QuestData{
+  public sealed class QuestSecondObelisk : QuestData{
 
 
-    protected override string CompletionPopup => 
-      return "The second Obelisk has been set. NyFourCC("alotha")s connection to Azeroth grows stronger.";
-    }
+    protected override string CompletionPopup => "The second Obelisk has been set. NyFourCC("alotha")s connection to Azeroth grows stronger.";
 
-    protected override string CompletionDescription => 
-      return "Unlock the southern zone of NyaFourCC(lotha, && the next Herald you train will open a temporary portal to the Twilight Highlands.";
-    }
+    protected override string CompletionDescription => "Unlock the southern zone of NyaFourCC(lotha, && the next Herald you train will open a temporary portal to the Twilight Highlands.";
 
     protected override void OnComplete(){
       GeneralHelpers.RescueUnitsInGroup(udg_NyalothaGroup2, this.Holder.Player);

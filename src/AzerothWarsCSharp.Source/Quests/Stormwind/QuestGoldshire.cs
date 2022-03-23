@@ -9,20 +9,16 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
   public sealed class QuestGoldshire : QuestData{
 
 
-    protected override string CompletionPopup => 
-      return "The Gnolls have been defeated, Goldshire is safe.";
-    }
+    protected override string CompletionPopup => "The Gnolls have been defeated, Goldshire is safe.";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Goldshire";
-    }
+    protected override string CompletionDescription => "Control of all units in Goldshire";
 
     private void GrantGoldshire(player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
 
       //Transfer all Neutral Passive units in Goldshire
-      GroupEnumUnitsInRect(tempGroup, gg_rct_ElwinForestAmbient, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.ElwinForestAmbient.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }

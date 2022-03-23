@@ -14,22 +14,18 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       return true;
     }
 
-    protected override string CompletionPopup => 
-      return "The greater demon KilFourCC(jaeden has been summoned to Azeroth";
-    }
+    protected override string CompletionPopup => "The greater demon KilFourCC(jaeden has been summoned to Azeroth";
 
-    protected override string CompletionDescription => 
-      return "The hero KilFourCC(jaeden";
-    }
+    protected override string CompletionDescription => "The hero KilFourCC(jaeden";
 
     protected override void OnComplete(){
       UnitRemoveAbilityBJ( FourCC("A0R7"), LEGEND_KAEL.Unit);
-      LEGEND_KILJAEDEN.Spawn(FACTION_QUELTHALAS.Player, GetRectCenterX(gg_rct_Sunwell), GetRectCenterY(gg_rct_Sunwell), 244);
+      LEGEND_KILJAEDEN.Spawn(FACTION_QUELTHALAS.Player, GetRectCenterX(Regions.Sunwell), GetRectCenterY(gg_rct_Sunwell).Rect, 244);
     }
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Great Deceiver", "The greater demon KilFourCC("jaeden has been scheming for aeons. Will Kael finally be the one to summon him && consume Azeroth?", "ReplaceableTextures\\CommandButtons\\BTNKiljaedin.blp"");
-      this.AddQuestItem(new QuestItemChannelRect(gg_rct_KaelSunwellChannel, "The Sunwell", LEGEND_KAEL, 180, 270));
+      this.AddQuestItem(new QuestItemChannelRect(Regions.KaelSunwellChannel, "The Sunwell", LEGEND_KAEL, 180.Rect, 270));
       ;;
     }
 

@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       unit u;
 
       //Transfer all Neutral Passive units in Exiled
-      GroupEnumUnitsInRect(tempGroup, gg_rct_AkamaUnlock, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.AkamaUnlock.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }
@@ -37,13 +37,9 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       return true;
     }
 
-    protected override string CompletionPopup => 
-      return "Illidan has invaded Outland && has allied himself with the Draenei Broken Ones.";
-    }
+    protected override string CompletionPopup => "Illidan has invaded Outland && has allied himself with the Draenei Broken Ones.";
 
-    protected override string CompletionDescription => 
-      return "Open a portal to Outland, grants you the Draenei village near it, enables you to train Akama, Najentus && Draenei units, grants you 300 food limit && grants you 800 gold";
-    }
+    protected override string CompletionDescription => "Open a portal to Outland, grants you the Draenei village near it, enables you to train Akama, Najentus && Draenei units, grants you 300 food limit && grants you 800 gold";
 
     protected override void OnComplete(){
       GrantAkama(this.Holder.Player);
@@ -82,7 +78,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       this.AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("n055")));
       this.AddQuestItem(new QuestItemControlLegend(LEGEND_ILLIDAN, true));
       this.AddQuestItem(new QuestItemSelfExists());
-      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, gg_rct_NazjatarHidden, "Nazjatar"));
+      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.NazjatarHidden.Rect, "Nazjatar"));
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

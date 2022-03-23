@@ -12,13 +12,9 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 
 
 
-    protected override string CompletionPopup => 
-      return "Kul Tiras has joined the Scarlet Crusade";
-    }
+    protected override string CompletionPopup => "Kul Tiras has joined the Scarlet Crusade";
 
-    protected override string CompletionDescription => 
-      return "Unlock Order Inquisitor && join the Scarlet Crusade";
-    }
+    protected override string CompletionDescription => "Unlock Order Inquisitor && join the Scarlet Crusade";
 
     protected override void OnComplete(){
       UnitRemoveAbilityBJ( FourCC("A0JB"), LEGEND_ADMIRAL.Unit);

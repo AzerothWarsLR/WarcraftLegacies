@@ -13,13 +13,9 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
 
 
-    protected override string CompletionPopup => 
-      return "With the Goblin homeland of Kezan now under " + this.Holder.Name + " control, the goblin Gazlowe offers his services as an expert engineer, upgrading your Shredders with new weaponry.";
-    }
+    protected override string CompletionPopup => "With the Goblin homeland of Kezan now under " + this.Holder.Name + " control, the goblin Gazlowe offers his services as an expert engineer, upgrading your Shredders with new weaponry.";
 
-    protected override string CompletionDescription => 
-      return "You can summon Gazlowe from the Altar of Storms, && Shredders learn to cast Pocket Factory, Saw Bombardment, && Emergency Repairs";
-    }
+    protected override string CompletionDescription => "You can summon Gazlowe from the Altar of Storms, && Shredders learn to cast Pocket Factory, Saw Bombardment, && Emergency Repairs";
 
     protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);

@@ -14,17 +14,13 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
   
 
 
-    protected override string CompletionPopup => 
-      return "With the Broken Isles && the Tomb of Sargeras secured, work has begun on a maximum security prison named the Vault of the Wardens.";
-    }
+    protected override string CompletionPopup => "With the Broken Isles && the Tomb of Sargeras secured, work has begun on a maximum security prison named the Vault of the Wardens.";
 
-    protected override string CompletionDescription => 
-      return "The Vault of the Wardens && 4 free Wardens appear at the Broken Isles, && you learn to train Wardens";
-    }
+    protected override string CompletionDescription => "The Vault of the Wardens && 4 free Wardens appear at the Broken Isles, && you learn to train Wardens";
 
     protected override void OnComplete(){
-      CreateUnit(this.Holder.Player, FourCC("n04G"), GetRectCenterX(gg_rct_VaultoftheWardens), GetRectCenterY(gg_rct_VaultoftheWardens), 220);
-      GeneralHelpers.CreateUnits(this.Holder.Player, WARDEN_ID, GetRectCenterX(gg_rct_VaultoftheWardens), GetRectCenterY(gg_rct_VaultoftheWardens), 270, 4);
+      CreateUnit(this.Holder.Player, FourCC("n04G"), GetRectCenterX(Regions.VaultoftheWardens), GetRectCenterY(gg_rct_VaultoftheWardens).Rect, 220);
+      GeneralHelpers.CreateUnits(this.Holder.Player, WARDEN_ID, GetRectCenterX(Regions.VaultoftheWardens), GetRectCenterY(gg_rct_VaultoftheWardens), 270.Rect, 4);
       SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
       DisplayUnitTypeAcquired(Holder.Player, WARDEN_ID, "You can now train Wardens from the Vault of the Wardens, Sentinel Enclaves, && your capitals.");
     }

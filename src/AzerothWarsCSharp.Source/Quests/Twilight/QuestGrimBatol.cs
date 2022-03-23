@@ -13,23 +13,19 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
   
 
 
-    protected override string CompletionPopup => 
-      return "Grim Batol is now under our control, && its military is now free to assist the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "Grim Batol is now under our control, && its military is now free to assist the " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Grim Batol && able to train Orcish Death Knights";
-    }
+    protected override string CompletionDescription => "Control of all units in Grim Batol && able to train Orcish Death Knights";
 
     private void OnFail( ){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_Grim_Batol, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.Grim_Batol.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete(){
       SetUnitOwner(gg_unit_h01Z_0618, this.Holder.Player, true);
       WaygateActivateBJ( true, gg_unit_n08R_2209 );
       WaygateActivateBJ( true, gg_unit_n08R_2214 );
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_Grim_Batol, this.Holder.Player);
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.Grim_Batol.Rect, this.Holder.Player);
     }
 
     private void OnAdd( ){

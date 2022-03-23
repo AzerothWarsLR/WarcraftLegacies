@@ -8,20 +8,16 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
   public sealed class QuestThelsamar : QuestData{
 
 
-    protected override string CompletionPopup => 
-      return "The Murlocs have been defeated, Thelsamar will join your cause.";
-    }
+    protected override string CompletionPopup => "The Murlocs have been defeated, Thelsamar will join your cause.";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Thelsamar";
-    }
+    protected override string CompletionDescription => "Control of all units in Thelsamar";
 
     private void GrantThelsamar(player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
 
       //Transfer all Neutral Passive units in Thelsamar
-      GroupEnumUnitsInRect(tempGroup, gg_rct_ThelUnlock, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.ThelUnlock.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }

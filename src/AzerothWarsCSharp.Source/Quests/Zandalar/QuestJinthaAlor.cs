@@ -12,9 +12,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
   
 
 
-    protected override string CompletionPopup => 
-      return "JinthaFourCC(Alor has fallen. The Vilebranch trolls lend their might to the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "JinthaFourCC(Alor has fallen. The Vilebranch trolls lend their might to the " + this.Holder.Team.Name + ".";
 
     protected override string CompletionDescription => 
       return "Control of JinthaFourCC("Alor, 300 gold tribute && the ability to train " + GetObjectName(BEAR_RIDER_ID") + "s from the " + GetObjectName(TROLL_SHRINE_ID);

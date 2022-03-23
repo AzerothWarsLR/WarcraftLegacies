@@ -14,20 +14,16 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
 
 
-    protected override string CompletionPopup => 
-      return "DrakFourCC(taron Keep is now under the control of the Scourge.";
-    }
+    protected override string CompletionPopup => "DrakFourCC(taron Keep is now under the control of the Scourge.";
 
-    protected override string CompletionDescription => 
-      return "Control of all buildings in DrakFourCC("taron Keep")";
-    }
+    protected override string CompletionDescription => "Control of all buildings in DrakFourCC("taron Keep")";
 
     private void OnFail( ){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_DrakUnlock, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.DrakUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete(){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_DrakUnlock, this.Holder.Player);
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.DrakUnlock.Rect, this.Holder.Player);
     }
 
     public  thistype ( ){

@@ -16,13 +16,9 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       return true;
     }
 
-    protected override string CompletionPopup => 
-      return "The Argent Dawn has been declared && ready to join the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "The Argent Dawn has been declared && ready to join the " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Unlock your elites, Crusader units && Tirion Fordring";
-    }
+    protected override string CompletionDescription => "Unlock your elites, Crusader units && Tirion Fordring";
 
     protected override void OnComplete(){
       this.Holder.Name = "Argent";

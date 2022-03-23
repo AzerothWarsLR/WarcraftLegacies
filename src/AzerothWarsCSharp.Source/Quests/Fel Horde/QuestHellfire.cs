@@ -6,27 +6,23 @@ using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 {
-  public sealed class QuestHellfire : QuestData : QuestData{
+  public sealed class QuestHellfire : QuestData{
 
   
     private const int QUEST_RESEARCH_ID = FourCC("R00P");
   
 
 
-    protected override string CompletionPopup => 
-      return "Hellfire Citadel has been subjugated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "Hellfire Citadel has been subjugated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Hellfire Citadel && enable Kargath to be trained at the altar";
-    }
+    protected override string CompletionDescription => "Control of all units in Hellfire Citadel && enable Kargath to be trained at the altar";
 
     private void GrantHellfire(player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
 
       //Transfer all Neutral Passive units in Hellfire Citadel
-      GroupEnumUnitsInRect(tempGroup, gg_rct_HellfireUnlock, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.HellfireUnlock.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }

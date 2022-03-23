@@ -9,20 +9,16 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
   public sealed class QuestLakeshire : QuestData{
 
 
-    protected override string CompletionPopup => 
-      return "Lakeshire has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "Lakeshire has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Lakeshire";
-    }
+    protected override string CompletionDescription => "Control of all units in Lakeshire";
 
     private void GrantLakeshire(player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
 
       //Transfer all Neutral Passive units in Lakeshire
-      GroupEnumUnitsInRect(tempGroup, gg_rct_LakeshireUnlock, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.LakeshireUnlock.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }

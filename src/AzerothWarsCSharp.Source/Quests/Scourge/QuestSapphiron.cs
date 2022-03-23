@@ -11,13 +11,9 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
   
 
 
-    protected override string CompletionPopup => 
-      return "Sapphiron has been slain, && has been reanimated as a mighty Frost Wyrm under the command of the Scourge.";
-    }
+    protected override string CompletionPopup => "Sapphiron has been slain, && has been reanimated as a mighty Frost Wyrm under the command of the Scourge.";
 
-    protected override string CompletionDescription => 
-      return "The demihero Sapphiron";
-    }
+    protected override string CompletionDescription => "The demihero Sapphiron";
 
     protected override void OnComplete(){
       CreateUnit(this.Holder.Player, SAPPHIRON_ID, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()), GetUnitFacing(GetTriggerUnit()));

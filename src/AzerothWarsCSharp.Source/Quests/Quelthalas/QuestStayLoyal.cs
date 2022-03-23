@@ -11,13 +11,9 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       return true;
     }
 
-    protected override string CompletionPopup => 
-      return "The Blood Elves stay loyal to Illidan";
-    }
+    protected override string CompletionPopup => "The Blood Elves stay loyal to Illidan";
 
-    protected override string CompletionDescription => 
-      return "Stay allied to Illidan";
-    }
+    protected override string CompletionDescription => "Stay allied to Illidan";
 
     protected override void OnComplete(){
       GREAT_TREACHERY.Progress = QUEST_PROGRESS_FAILED;

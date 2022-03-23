@@ -10,13 +10,9 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
     bool operator Global( ){
       return true;
     }
-    protected override string CompletionPopup => 
-      return "As a reward for his mission, Illidan && his followers have been welcomed into the ranks of the Burning Legion";
-    }
+    protected override string CompletionPopup => "As a reward for his mission, Illidan && his followers have been welcomed into the ranks of the Burning Legion";
 
-    protected override string CompletionDescription => 
-      return "The Illidari team will join the Burning Legion in their team";
-    }
+    protected override string CompletionDescription => "The Illidari team will join the Burning Legion in their team";
 
     protected override void OnComplete(){
       if (FACTION_QUELTHALAS.Team == TEAM_NAGA){

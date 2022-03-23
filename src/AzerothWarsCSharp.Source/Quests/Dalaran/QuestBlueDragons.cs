@@ -12,13 +12,9 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
   
 
 
-    protected override string CompletionPopup => 
-      return "The Nexus has been captured. The Blue Dragonflight fights for " + this.Holder.Name + ".";
-    }
+    protected override string CompletionPopup => "The Nexus has been captured. The Blue Dragonflight fights for " + this.Holder.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Learn to train Blue Dragons";
-    }
+    protected override string CompletionDescription => "Learn to train Blue Dragons";
 
     protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);

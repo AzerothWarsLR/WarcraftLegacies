@@ -13,19 +13,15 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
   
 
 
-    protected override string CompletionPopup => 
-      return "ZulFourCC("farrak has fallen. The Sandfury trolls lend their might to the " + this.Holder.Team.Name + ", you can train Storm Wyrms && Gahz")rilla awakens from its slumber.";
-    }
+    protected override string CompletionPopup => "ZulFourCC("farrak has fallen. The Sandfury trolls lend their might to the " + this.Holder.Team.Name + ", you can train Storm Wyrms && Gahz")rilla awakens from its slumber.";
 
-    protected override string CompletionDescription => 
-      return "Control of ZulFourCC("farrak, 300 gold tribute, enable to train Storm Wyrm && you can summon the hero Gahz")rilla from the Altar of Conquerors";
-    }
+    protected override string CompletionDescription => "Control of ZulFourCC("farrak, 300 gold tribute, enable to train Storm Wyrm && you can summon the hero Gahz")rilla from the Altar of Conquerors";
 
     protected override void OnComplete(){
       unit u;
       group tempGroup;
       tempGroup = CreateGroup();
-      GroupEnumUnitsInRect(tempGroup, gg_rct_Zulfarrak, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.Zulfarrak.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }

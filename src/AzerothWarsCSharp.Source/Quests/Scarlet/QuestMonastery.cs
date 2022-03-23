@@ -18,23 +18,19 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       return true;
     }
 
-    protected override string CompletionPopup => 
-      return "The Scarlet Monastery Hand is complete && ready to join the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "The Scarlet Monastery Hand is complete && ready to join the " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in the Scarlet Monastery && you will unally the alliance";
-    }
+    protected override string CompletionDescription => "Control of all units in the Scarlet Monastery && you will unally the alliance";
 
     private void OnFail( ){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_ScarletAmbient, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.ScarletAmbient.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete(){
       SetPlayerTechResearched(FACTION_KULTIRAS.Player, FourCC("R06V"), 1);
       SetPlayerTechResearched(FACTION_LORDAERON.Player, FourCC("R06V"), 1);
       SetPlayerTechResearched(FACTION_SCARLET.Player, FourCC("R086"), 1);
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_ScarletAmbient, this.Holder.Player);
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.ScarletAmbient.Rect, this.Holder.Player);
       WaygateActivateBJ( true, gg_unit_h00T_0786 );
       WaygateSetDestinationLocBJ( gg_unit_h00T_0786, GetRectCenter(gg_rct_Scarlet_Monastery_Interior) );
       this.Holder.Team = TEAM_SCARLET;

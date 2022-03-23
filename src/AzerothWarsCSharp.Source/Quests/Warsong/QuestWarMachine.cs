@@ -6,9 +6,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
   public sealed class QuestWarMachine : QuestData{
 
 
-    protected override string CompletionPopup => 
-      return "The massive exploitation of Ashenvale has bolstered the entire HordeFourCC(s weapons, armour && defenses.";
-    }
+    protected override string CompletionPopup => "The massive exploitation of Ashenvale has bolstered the entire HordeFourCC(s weapons, armour && defenses.";
 
     protected override string CompletionDescription => 
       return "You && all of your allies gain the researches " + GetObjectName(FourCC("Rhme")) + ", " + GetObjectName()Rhar)) + ", " + GetObjectName()Rorb)) + ", && " + GetObjectName()Rosp));

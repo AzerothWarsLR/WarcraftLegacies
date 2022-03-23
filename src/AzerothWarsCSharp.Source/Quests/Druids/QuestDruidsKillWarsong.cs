@@ -11,13 +11,9 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
   
 
 
-    protected override string CompletionPopup => 
-      return "The Warsong presence on Kalimdor has been eliminated. The sacred lands are safe from their hatchets.";
-    }
+    protected override string CompletionPopup => "The Warsong presence on Kalimdor has been eliminated. The sacred lands are safe from their hatchets.";
 
-    protected override string CompletionDescription => 
-      return "Learn to train " + GetObjectName(UNITTYPE_ID) + "s";
-    }
+    protected override string CompletionDescription => "Learn to train " + GetObjectName(UNITTYPE_ID) + "s";
 
     protected override void OnComplete(){
       SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);

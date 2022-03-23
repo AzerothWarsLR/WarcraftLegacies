@@ -6,23 +6,19 @@ using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 {
-  public sealed class QuestKilsorrow : QuestData : QuestData{
+  public sealed class QuestKilsorrow : QuestData{
 
 
-    protected override string CompletionPopup => 
-      return "KilFourCC(sorrow is now established, && its military is now free to assist the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "KilFourCC(sorrow is now established, && its military is now free to assist the " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in KilFourCC(sorrow && 3 new Demon Gates";
-    }
+    protected override string CompletionDescription => "Control of all units in KilFourCC(sorrow && 3 new Demon Gates";
 
     private void OnFail( ){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_KilsorrowUnlock, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.KilsorrowUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete(){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_KilsorrowUnlock, this.Holder.Player);
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.KilsorrowUnlock.Rect, this.Holder.Player);
       GeneralHelpers.UnitRescue(gg_unit_n081_4142, FACTION_FEL_HORDE.Player);
     }
 

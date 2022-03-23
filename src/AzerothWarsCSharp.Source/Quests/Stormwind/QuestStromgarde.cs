@@ -15,19 +15,15 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     private QuestItemAnyUnitInRect questItemAnyUnitInRect = 0;
 
-    protected override string CompletionPopup => 
-      return "Galen Trollbane has pledged his forces to StormwindFourCC(s cause.";
-    }
+    protected override string CompletionPopup => "Galen Trollbane has pledged his forces to StormwindFourCC(s cause.";
 
-    protected override string CompletionDescription => 
-      return "Control of all units at Stromgarde, the artifact TrolFourCC(kalar, && you can summon the hero Galen Trollbane from the Altar of Kings";
-    }
+    protected override string CompletionDescription => "Control of all units at Stromgarde, the artifact TrolFourCC(kalar, && you can summon the hero Galen Trollbane from the Altar of Kings";
 
     private void GiveStromgarde(player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
       //Transfer all Neutral Passive units in Stromgarde
-      GroupEnumUnitsInRect(tempGroup, gg_rct_Stromgarde, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.Stromgarde.Rect, null);
       while(true){
         u = FirstOfGroup(tempGroup);
         if ( u == null){ break; }
@@ -60,7 +56,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     public  thistype ( ){
       thistype this = thistype.allocate("Stromgarde", "Although StromgardeFourCC("s strength has dwindled since the days of the Arathorian Empire, it remains a significant bastion of humanity. They could be convinced to mobilize their forces for Stormwind.", "ReplaceableTextures\\CommandButtons\\BTNTheCaptain.blp"");
-      questItemAnyUnitInRect = QuestItemAnyUnitInRect.create(gg_rct_Stromgarde, "Stromgarde", true);
+      questItemAnyUnitInRect = QuestItemAnyUnitInRect.create(Regions.Stromgarde, "Stromgarde".Rect, true);
       this.AddQuestItem(questItemAnyUnitInRect);
       this.AddQuestItem(new QuestItemSelfExists());
       ;;

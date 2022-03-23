@@ -11,13 +11,9 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
   public sealed class QuestHonorHold : QuestData{
 
 
-    protected override string CompletionPopup => 
-      return "Honor Hold is now free from the const looming threat of Hellfire Citadel. Danath Trollbane && his people elect to rejoin the Alliance.";
-    }
+    protected override string CompletionPopup => "Honor Hold is now free from the const looming threat of Hellfire Citadel. Danath Trollbane && his people elect to rejoin the Alliance.";
 
-    protected override string CompletionDescription => 
-      return "The demihero Danath Trollbane, && control of all units at Honor Hold";
-    }
+    protected override string CompletionDescription => "The demihero Danath Trollbane, && control of all units at Honor Hold";
 
     protected override void OnComplete(){
       group tempGroup = CreateGroup();

@@ -8,13 +8,9 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
   public sealed class QuestNewGuardian : QuestData{
 
 
-    protected override string CompletionPopup => 
-      return "Dalaran has empowered Jaina to be the new Guardian of Tirisfal, endowing her with a portion of the Council of TirisfalFourCC(s power.";
-    }
+    protected override string CompletionPopup => "Dalaran has empowered Jaina to be the new Guardian of Tirisfal, endowing her with a portion of the Council of TirisfalFourCC(s power.";
 
-    protected override string CompletionDescription => 
-      return "Grant Jaina Chaos Damage, 20 additional Intelligence, Teleport, && Mana Shield";
-    }
+    protected override string CompletionDescription => "Grant Jaina Chaos Damage, 20 additional Intelligence, Teleport, && Mana Shield";
 
     protected override void OnComplete(){
       unit whichUnit = LEGEND_JAINA.Unit;
@@ -29,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     }
 
     public  thistype ( ){
-      thistype this = thistype.allocate("Guardian of Tirisfal", "MedivhFourCC("s death left Azeroth without a Guardian. The spell book he left behind could be used to empower a new one.", "ReplaceableTextures\\CommandButtons\\BTNAstral Blessing.blp"");
+      thistype this = thistype.allocate("Guardian of Tirisfal", "Medivh's death left Azeroth without a Guardian. The spell book he left behind could be used to empower a new one.", "ReplaceableTextures\\CommandButtons\\BTNAstral Blessing.blp"");
       this.AddQuestItem(new QuestItemLegendLevel(LEGEND_JAINA, 15));
       this.AddQuestItem(new QuestItemLegendHasArtifact(LEGEND_JAINA, ARTIFACT_BOOKOFMEDIVH));
       ;;

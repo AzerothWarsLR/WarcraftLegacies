@@ -13,9 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
 
     }
 
-    protected override string CompletionDescription => 
-      return "Control of MaievFourCC(s Outland outpost && moves Maiev to Outland";
-    }
+    protected override string CompletionDescription => "Control of MaievFourCC(s Outland outpost && moves Maiev to Outland";
 
     protected override void OnComplete(){
       SetUnitPosition(LEGEND_MAIEV.Unit, -5252, -27597);

@@ -9,20 +9,16 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
   public sealed class QuestDunMorogh : QuestData{
 
 
-    protected override string CompletionPopup => 
-      return "The Trolls have been defeated, Dun Morogh will join your cause.";
-    }
+    protected override string CompletionPopup => "The Trolls have been defeated, Dun Morogh will join your cause.";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Dun Morogh";
-    }
+    protected override string CompletionDescription => "Control of all units in Dun Morogh";
 
     private void GrantDunMorogh(player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
 
       //Transfer all Neutral Passive units in DunMorogh
-      GroupEnumUnitsInRect(tempGroup, gg_rct_DunmoroghAmbient2, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.DunmoroghAmbient2.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }

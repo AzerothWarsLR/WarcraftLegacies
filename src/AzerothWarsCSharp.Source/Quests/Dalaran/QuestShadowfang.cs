@@ -10,20 +10,16 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
 
 
-    protected override string CompletionPopup => 
-      return "Shadowfang has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "Shadowfang has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Shadowfang";
-    }
+    protected override string CompletionDescription => "Control of all units in Shadowfang";
 
     private void OnFail( ){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_ShadowfangUnlock, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.ShadowfangUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete(){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_ShadowfangUnlock, this.Holder.Player);
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.ShadowfangUnlock.Rect, this.Holder.Player);
     }
 
     private void OnAdd( ){

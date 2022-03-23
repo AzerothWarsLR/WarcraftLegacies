@@ -12,20 +12,16 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
   
 
 
-    protected override string CompletionPopup => 
-      return "Gnomeregan has been literated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "Gnomeregan has been literated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Gnomeregan";
-    }
+    protected override string CompletionDescription => "Control of all units in Gnomeregan";
 
     private void GrantGnomeregan(player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
 
       //Transfer all Neutral Passive units in Gnomeregan
-      GroupEnumUnitsInRect(tempGroup, gg_rct_Gnomergan, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.Gnomergan.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }

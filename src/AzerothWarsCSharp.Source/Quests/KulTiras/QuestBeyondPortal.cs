@@ -10,13 +10,9 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
   
 
 
-    protected override string CompletionPopup => 
-      return "The orcs are no more && we can now train Fusillier.";
-    }
+    protected override string CompletionPopup => "The orcs are no more && we can now train Fusillier.";
 
-    protected override string CompletionDescription => 
-      return "You will be able to train Fusillier from the Barrack";
-    }
+    protected override string CompletionDescription => "You will be able to train Fusillier from the Barrack";
 
     public  thistype ( ){
       thistype this = thistype.allocate("Beyond the Dark Portal", "The Orc threat from Draenor still looms over all. Eliminate every trace of the Orcs && their bases.", "ReplaceableTextures\\CommandButtons\\BTNDarkPortal.blp");

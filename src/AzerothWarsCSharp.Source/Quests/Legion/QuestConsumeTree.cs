@@ -13,13 +13,9 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       return true;
     }
 
-    protected override string CompletionPopup => 
-      return "Archimonde has now consummed the World Tree && is now nigh unstoppable";
-    }
+    protected override string CompletionPopup => "Archimonde has now consummed the World Tree && is now nigh unstoppable";
 
-    protected override string CompletionDescription => 
-      return "By consuming the World Tree, Archimonde will obtain immense power. +80 to all stats. Additionally, the Druids faction will be eliminated.";
-    }
+    protected override string CompletionDescription => "By consuming the World Tree, Archimonde will obtain immense power. +80 to all stats. Additionally, the Druids faction will be eliminated.";
 
     protected override void OnComplete(){
       unit whichUnit = LEGEND_ARCHIMONDE.Unit;
@@ -32,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
     public  thistype ( ){
       thistype this = thistype.allocate("Twilight of the Gods", "Consuming the World Tree will grant Archimonde immeasurable power && eliminate his mortal enemies, the Druids of Kalimdor, forever.", "ReplaceableTextures\\CommandButtons\\BTNGlazeroth.blp");
-      this.AddQuestItem(new QuestItemChannelRect(gg_rct_ArchimondeChannel, "The World Tree", LEGEND_ARCHIMONDE, 420, 90));
+      this.AddQuestItem(new QuestItemChannelRect(Regions.ArchimondeChannel, "The World Tree", LEGEND_ARCHIMONDE, 420.Rect, 90));
       ;;
     }
 

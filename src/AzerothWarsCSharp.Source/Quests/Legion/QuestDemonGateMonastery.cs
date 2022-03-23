@@ -12,13 +12,9 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
     private QuestItemKillUnit questItemKillMonastery;
 
-    protected override string CompletionPopup => 
-      return "The great Scarlet Monastery has fallen, && from its ashes rises an even greater Demon Gate.";
-    }
+    protected override string CompletionPopup => "The great Scarlet Monastery has fallen, && from its ashes rises an even greater Demon Gate.";
 
-    protected override string CompletionDescription => 
-      return "A new Demon Gate at the MonasteryFourCC(s location";
-    }
+    protected override string CompletionDescription => "A new Demon Gate at the MonasteryFourCC(s location";
 
     protected override void OnComplete(){
       CreateUnit(Holder.Player, DEMONGATE_ID, GetUnitX(questItemKillMonastery.Target), GetUnitY(questItemKillMonastery.Target), 270);

@@ -15,13 +15,9 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       return true;
     }
 
-    protected override string CompletionPopup => 
-      return "The Blood Elves have joined the Burning Legion";
-    }
+    protected override string CompletionPopup => "The Blood Elves have joined the Burning Legion";
 
-    protected override string CompletionDescription => 
-      return "Unlock the summon KilFourCC(jaeden quest && join the Burning Legion team";
-    }
+    protected override string CompletionDescription => "Unlock the summon KilFourCC(jaeden quest && join the Burning Legion team";
 
     protected override void OnComplete(){
       STAY_LOYAL.Progress = QUEST_PROGRESS_FAILED;

@@ -12,13 +12,9 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
   
 
 
-    protected override string CompletionPopup => 
-      return "Crown Prince Arthas, && what remains of his forces, have landed on the shores of Northrend && established a base camp.";
-    }
+    protected override string CompletionPopup => "Crown Prince Arthas, && what remains of his forces, have landed on the shores of Northrend && established a base camp.";
 
-    protected override string CompletionDescription => 
-      return "A new base near Dragonblight in Northrend, && Arthas revives there";
-    }
+    protected override string CompletionDescription => "A new base near Dragonblight in Northrend, && Arthas revives there";
 
     private void OnFail( ){
       this.Holder.ModObjectLimit(RESEARCH_ID, -UNLIMITED);

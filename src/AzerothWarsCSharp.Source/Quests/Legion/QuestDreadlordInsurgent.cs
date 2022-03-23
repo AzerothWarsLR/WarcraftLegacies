@@ -12,13 +12,9 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
 
 
-    protected override string CompletionPopup => 
-      return "The Dreadlord has quickly fallen to Sylvanas && forced to join the Forsaken ";
-    }
+    protected override string CompletionPopup => "The Dreadlord has quickly fallen to Sylvanas && forced to join the Forsaken ";
 
-    protected override string CompletionDescription => 
-      return "You lose everything, but will spawn with a small army, Varimathras && Lilian Voss near Capital City";
-    }
+    protected override string CompletionDescription => "You lose everything, but will spawn with a small army, Varimathras && Lilian Voss near Capital City";
 
     protected override void OnComplete(){
       player holderPlayer = this.Holder.Person.Player;
@@ -40,14 +36,14 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       this.Holder.obliterate();
       LEGEND_LILIAN.Spawn(this.Holder.Player, 7254, 7833, 110);
       LEGEND_VARIMATHRAS.Spawn(this.Holder.Player, 7254, 7833, 110);
-      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("n04J"), GetRectCenterX(gg_rct_Vandermar_Village), GetRectCenterY(gg_rct_Vandermar_Village), 270, 12);
-      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("u00D"), GetRectCenterX(gg_rct_Vandermar_Village), GetRectCenterY(gg_rct_Vandermar_Village), 270, 6);
-      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("ninc"), GetRectCenterX(gg_rct_Vandermar_Village), GetRectCenterY(gg_rct_Vandermar_Village), 270, 12);
-      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("u007"), GetRectCenterX(gg_rct_Vandermar_Village), GetRectCenterY(gg_rct_Vandermar_Village), 270, 2);
+      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("n04J"), GetRectCenterX(Regions.Vandermar_Village), GetRectCenterY(gg_rct_Vandermar_Village), 270.Rect, 12);
+      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("u00D"), GetRectCenterX(Regions.Vandermar_Village), GetRectCenterY(gg_rct_Vandermar_Village), 270.Rect, 6);
+      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("ninc"), GetRectCenterX(Regions.Vandermar_Village), GetRectCenterY(gg_rct_Vandermar_Village), 270.Rect, 12);
+      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("u007"), GetRectCenterX(Regions.Vandermar_Village), GetRectCenterY(gg_rct_Vandermar_Village), 270.Rect, 2);
       AdjustPlayerStateBJ( 2000, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
       AdjustPlayerStateBJ( 900, this.Holder.Player, PLAYER_STATE_RESOURCE_LUMBER );
       if (GetLocalPlayer() == this.Holder.Player){
-        SetCameraPosition(GetRectCenterX(gg_rct_Vandermar_Village), GetRectCenterY(gg_rct_Vandermar_Village));
+        SetCameraPosition(GetRectCenterX(Regions.Vandermar_Village).Rect, GetRectCenterY(gg_rct_Vandermar_Village));
       }
     }
 

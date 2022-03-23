@@ -14,13 +14,9 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       return true;
     }
 
-    protected override string CompletionPopup => 
-      return "Tremble, mortals, && despair. Doom has come to this world.";
-    }
+    protected override string CompletionPopup => "Tremble, mortals, && despair. Doom has come to this world.";
 
-    protected override string CompletionDescription => 
-      return "The hero Archimonde, control of all units in the Twisting Nether, && learn to train Greater Demons";
-    }
+    protected override string CompletionDescription => "The hero Archimonde, control of all units in the Twisting Nether, && learn to train Greater Demons";
 
     private void OnAdd( ){
       if (Holder.UndefeatedResearch == 0){

@@ -18,13 +18,9 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       return true;
     }
 
-    protected override string CompletionPopup => 
-      return "Nazjatar && the Aetheneum is now under the influence of the Night Elves.";
-    }
+    protected override string CompletionPopup => "Nazjatar && the Aetheneum is now under the influence of the Night Elves.";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in the Aetheneum. Join the Night Elves && enable to train Altruis.";
-    }
+    protected override string CompletionDescription => "Control of all units in the Aetheneum. Join the Night Elves && enable to train Altruis.";
 
     protected override void OnComplete(){
       FACTION_NAGA.ModObjectLimit(FourCC("n08H"), UNLIMITED)   ;//Demon Hunter grounds
@@ -33,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       SetUnitOwner(LEGEND_NZOTH.Unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
       EXILE_PATH.Progress = QUEST_PROGRESS_FAILED;
       MADNESS_PATH.Progress = QUEST_PROGRESS_FAILED;
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_AethneumCatacombs, this.Holder.Player);
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.AethneumCatacombs.Rect, this.Holder.Player);
       WaygateActivateBJ( true, gg_unit_h01D_3387 );
       WaygateActivateBJ( true, gg_unit_h01D_3385 );
       WaygateActivateBJ( true, gg_unit_h01D_3379 );
@@ -73,7 +69,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       this.AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("n055")));
       this.AddQuestItem(new QuestItemControlLegend(LEGEND_ILLIDAN, true));
       this.AddQuestItem(new QuestItemSelfExists());
-      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, gg_rct_NazjatarHidden, "Nazjatar"));
+      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.NazjatarHidden.Rect, "Nazjatar"));
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

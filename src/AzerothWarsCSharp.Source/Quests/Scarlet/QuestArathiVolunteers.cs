@@ -15,9 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
     return "The Arathi have been convinced to join the fight.";
     }
 
-    protected override string CompletionDescription => 
-      return "Enable to train Mounted Archers";
-    }
+    protected override string CompletionDescription => "Enable to train Mounted Archers";
 
     public  thistype ( ){
       thistype this = thistype.allocate("Arathi Volunteers", "The men of Stromgrade should join us in the fight.", "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionCastle.blp");

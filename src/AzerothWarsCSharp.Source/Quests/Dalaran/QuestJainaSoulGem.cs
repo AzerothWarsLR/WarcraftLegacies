@@ -10,13 +10,9 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
   public sealed class QuestJainaSoulGem : QuestData{
 
 
-    protected override string CompletionPopup => 
-      return "Jaina Proudmoore has discovered the Soul Gem within the ruined vaults at Scholomance.";
-    }
+    protected override string CompletionPopup => "Jaina Proudmoore has discovered the Soul Gem within the ruined vaults at Scholomance.";
 
-    protected override string CompletionDescription => 
-      return "The Soul Gem";
-    }
+    protected override string CompletionDescription => "The Soul Gem";
 
     protected override void OnComplete(){
       GeneralHelpers.UnitAddItemSafe(LEGEND_JAINA.Unit, ARTIFACT_SOULGEM.item);
@@ -24,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Soul Gem", "Scholomance is home to a wide variety of profane artifacts. Bring Jaina there to see what might be discovered.", "ReplaceableTextures\\CommandButtons\\BTNSoulGem.blp");
-      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_JAINA, gg_rct_Jaina_soul_gem, "Scholomance"));
+      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_JAINA, Regions.Jaina_soul_gem.Rect, "Scholomance"));
       this.AddQuestItem(new QuestItemLegendDead(LEGEND_SCHOLOMANCE));
       ;;
     }

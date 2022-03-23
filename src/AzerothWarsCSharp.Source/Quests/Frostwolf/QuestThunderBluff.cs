@@ -20,16 +20,14 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
     }
 
-    protected override string CompletionDescription => 
-      return "Control of Thunder Bluff";
-    }
+    protected override string CompletionDescription => "Control of Thunder Bluff";
 
     private void OnFail( ){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_ThunderBluff, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.ThunderBluff.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete(){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_ThunderBluff, this.Holder.Player);
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.ThunderBluff.Rect, this.Holder.Player);
       if (GetLocalPlayer() == this.Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\TaurenTheme.mp3" );
       }
@@ -38,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     public  thistype ( ){
       thistype this = thistype.allocate("The Long March", "The Tauren have been wandering for too long. The plains of Mulgore would offer respite from this endless journey.", "ReplaceableTextures\\CommandButtons\\BTNCentaurKhan.blp");
       this.AddQuestItem(new QuestItemLegendDead(LEGEND_CENTAURKHAN));
-      this.AddQuestItem(new QuestItemAnyUnitInRect(gg_rct_ThunderBluff, "Thunder Bluff", true));
+      this.AddQuestItem(new QuestItemAnyUnitInRect(Regions.ThunderBluff, "Thunder Bluff".Rect, true));
       this.AddQuestItem(new QuestItemExpire(1455));
       this.AddQuestItem(new QuestItemSelfExists());
       this.ResearchId = QUEST_RESEARCH_ID;
@@ -52,7 +50,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       unit u;
       var i = 0;
       ThunderBluffUnits = CreateGroup();
-      GroupEnumUnitsInRect(tempGroup, gg_rct_ThunderBluff, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.ThunderBluff.Rect, null);
       while(true){
         u = FirstOfGroup(tempGroup);
         if ( u == null){ break; }

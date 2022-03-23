@@ -7,13 +7,9 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
 
 
-    protected override string CompletionPopup => 
-      return "The Illidari have joined the Alliance";
-    }
+    protected override string CompletionPopup => "The Illidari have joined the Alliance";
 
-    protected override string CompletionDescription => 
-      return "Join the Alliance team";
-    }
+    protected override string CompletionDescription => "Join the Alliance team";
 
     protected override void OnComplete(){
       UnitRemoveAbilityBJ( FourCC("A0IG"), LEGEND_ALTRUIS.Unit);

@@ -15,13 +15,9 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       return true;
     }
 
-    protected override string CompletionPopup => 
-      return "Deathwing is here, Doomsday is at hand, the Cataclysm as begun!";
-    }
+    protected override string CompletionPopup => "Deathwing is here, Doomsday is at hand, the Cataclysm as begun!";
 
-    protected override string CompletionDescription => 
-      return "Cultists all over the world join your cause actively, Deathwing as a super demihero && the 2 elemental ascendant heroes.";
-    }
+    protected override string CompletionDescription => "Cultists all over the world join your cause actively, Deathwing as a super demihero && the 2 elemental ascendant heroes.";
 
     protected override void OnComplete(){
       SetPlayerTechResearched(this.Holder.Player, CATACLYSM_RESEARCH, 1);

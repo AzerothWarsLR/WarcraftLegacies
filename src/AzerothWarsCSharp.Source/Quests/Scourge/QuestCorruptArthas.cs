@@ -13,13 +13,9 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
   
 
 
-    protected override string CompletionPopup => 
-      return "Having failed to protect his people, Arthas seizes the cursed runeblade Frostmourne as the instrument of his vengeance. The malevolence of the blade overwhelms him. Arthas is now a loyal Death Knight of the Scourge, && will soon become its greatest champion.";
-    }
+    protected override string CompletionPopup => "Having failed to protect his people, Arthas seizes the cursed runeblade Frostmourne as the instrument of his vengeance. The malevolence of the blade overwhelms him. Arthas is now a loyal Death Knight of the Scourge, && will soon become its greatest champion.";
 
-    protected override string CompletionDescription => 
-      return "You can train Arthas Menethil from the Altar of Darkness";
-    }
+    protected override string CompletionDescription => "You can train Arthas Menethil from the Altar of Darkness";
 
     protected override void OnComplete(){
       GeneralHelpers.UnitDropAllItems(LEGEND_ARTHAS.Unit);

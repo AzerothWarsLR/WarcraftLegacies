@@ -12,20 +12,16 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
   
 
 
-    protected override string CompletionPopup => 
-      return "TyrFourCC(s Hand has joined the war && its military is now free to assist the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "TyrFourCC(s Hand has joined the war && its military is now free to assist the " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in TyrFourCC(s Hand";
-    }
+    protected override string CompletionDescription => "Control of all units in TyrFourCC(s Hand";
 
     private void OnFail( ){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_TyrUnlock, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.TyrUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete(){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_TyrUnlock, this.Holder.Player);
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.TyrUnlock.Rect, this.Holder.Player);
     }
 
     private void OnAdd( ){

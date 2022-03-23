@@ -17,9 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     }
 
-    protected override string CompletionDescription => 
-      return "Control of the TempestKeep";
-    }
+    protected override string CompletionDescription => "Control of the TempestKeep";
 
     protected override void OnComplete(){
       SetUnitOwner(LEGEND_KAEL.Unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
@@ -58,7 +56,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       this.Holder.Name = "Blood Elves";
       this.Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNBloodMage2blp";
       if (GetLocalPlayer() == this.Holder.Player){
-        SetCameraPosition(GetRectCenterX(gg_rct_TempestKeepSpawn), GetRectCenterY(gg_rct_TempestKeepSpawn));
+        SetCameraPosition(GetRectCenterX(Regions.TempestKeepSpawn).Rect, GetRectCenterY(gg_rct_TempestKeepSpawn));
       }
     }
 

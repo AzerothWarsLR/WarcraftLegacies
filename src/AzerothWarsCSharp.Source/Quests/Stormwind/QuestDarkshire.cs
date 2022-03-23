@@ -9,20 +9,16 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
   public sealed class QuestDarkshire : QuestData{
 
 
-    protected override string CompletionPopup => 
-      return "Darkshire has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "Darkshire has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Darkshire";
-    }
+    protected override string CompletionDescription => "Control of all units in Darkshire";
 
     private void GrantDarkshire(player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
 
       //Transfer all Neutral Passive units in Darkshire
-      GroupEnumUnitsInRect(tempGroup, gg_rct_DarkshireUnlock, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.DarkshireUnlock.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }

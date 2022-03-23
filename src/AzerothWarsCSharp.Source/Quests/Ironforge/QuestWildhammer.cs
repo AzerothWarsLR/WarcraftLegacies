@@ -13,13 +13,9 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
   
 
 
-    protected override string CompletionPopup => 
-      return "Magni has spoken with Falstad Wildhammer && secured an alliance with the Wildhammer Clan.";
-    }
+    protected override string CompletionPopup => "Magni has spoken with Falstad Wildhammer && secured an alliance with the Wildhammer Clan.";
 
-    protected override string CompletionDescription => 
-      return "You gain control of Aerie Peak && you can train the hero Falstad Wildhammer from the Altar of Fortitude";
-    }
+    protected override string CompletionDescription => "You gain control of Aerie Peak && you can train the hero Falstad Wildhammer from the Altar of Fortitude";
 
     protected override void OnComplete(){
       group tempGroup = CreateGroup();
@@ -32,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
 
 
       //Transfer all Neutral Passive units in region to Ironforge
-      GroupEnumUnitsInRect(tempGroup, gg_rct_Aerie_Peak, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.Aerie_Peak.Rect, null);
 
       while(true){
         u = FirstOfGroup(tempGroup);
@@ -54,7 +50,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
 
     public  thistype ( ){
       thistype this = thistype.allocate("Wildhammer Alliance", "The Wildhammer dwarves roam freely over the peaks of the Hinterlands. An audience with Magni himself might earn their cooperation.", "ReplaceableTextures\\CommandButtons\\BTNHeroGriffonWarrior.blp");
-      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_MAGNI, gg_rct_Aerie_Peak, "Aerie Peak"));
+      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_MAGNI, Regions.Aerie_Peak.Rect, "Aerie Peak"));
       ;;
     }
 

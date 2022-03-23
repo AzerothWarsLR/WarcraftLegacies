@@ -12,13 +12,9 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
 
 
-    protected override string CompletionPopup => 
-      return "Garithos has always had a disliking for the other races. His pride && desire for power has led the remnants of the Lordaeron forces to join the crusade";
-    }
+    protected override string CompletionPopup => "Garithos has always had a disliking for the other races. His pride && desire for power has led the remnants of the Lordaeron forces to join the crusade";
 
-    protected override string CompletionDescription => 
-      return "You lose everything, but will spawn with Garithos && a small army in Tyr Hand";
-    }
+    protected override string CompletionDescription => "You lose everything, but will spawn with Garithos && a small army in Tyr Hand";
 
     protected override void OnComplete(){
       player holderPlayer = this.Holder.Person.Player;
@@ -43,14 +39,14 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       this.Holder.obliterate();
       LEGEND_GARITHOS.Spawn(this.Holder.Player, 19410, 7975, 110);
       LEGEND_GOODCHILD.Spawn(this.Holder.Player, 19410, 7975, 110);
-      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("hkni"), GetRectCenterX(gg_rct_GarithosCrusadeSpawn), GetRectCenterY(gg_rct_GarithosCrusadeSpawn), 270, 12);
-      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("hpea"), GetRectCenterX(gg_rct_GarithosCrusadeSpawn), GetRectCenterY(gg_rct_GarithosCrusadeSpawn), 270, 6);
-      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("hfoo"), GetRectCenterX(gg_rct_GarithosCrusadeSpawn), GetRectCenterY(gg_rct_GarithosCrusadeSpawn), 270, 12);
-      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("h009"), GetRectCenterX(gg_rct_GarithosCrusadeSpawn), GetRectCenterY(gg_rct_GarithosCrusadeSpawn), 270, 2);
+      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("hkni"), GetRectCenterX(Regions.GarithosCrusadeSpawn), GetRectCenterY(gg_rct_GarithosCrusadeSpawn), 270.Rect, 12);
+      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("hpea"), GetRectCenterX(Regions.GarithosCrusadeSpawn), GetRectCenterY(gg_rct_GarithosCrusadeSpawn), 270.Rect, 6);
+      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("hfoo"), GetRectCenterX(Regions.GarithosCrusadeSpawn), GetRectCenterY(gg_rct_GarithosCrusadeSpawn), 270.Rect, 12);
+      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("h009"), GetRectCenterX(Regions.GarithosCrusadeSpawn), GetRectCenterY(gg_rct_GarithosCrusadeSpawn), 270.Rect, 2);
       AdjustPlayerStateBJ( 2000, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
       AdjustPlayerStateBJ( 900, this.Holder.Player, PLAYER_STATE_RESOURCE_LUMBER );
       if (GetLocalPlayer() == this.Holder.Player){
-        SetCameraPosition(GetRectCenterX(gg_rct_GarithosCrusadeSpawn), GetRectCenterY(gg_rct_GarithosCrusadeSpawn));
+        SetCameraPosition(GetRectCenterX(Regions.GarithosCrusadeSpawn).Rect, GetRectCenterY(gg_rct_GarithosCrusadeSpawn));
       }
     }
 

@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
   public sealed class QuestArgusControl : QuestData{
 
   
-    private const int QUESTRESEARCH_ID = FourCC("R055")   ;//This research is given when the quest is completed
+    private static readonly int QuestResearchId = FourCC("R055")   ;//This research is given when the quest is completed
   
 
 
@@ -17,9 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       return "Enable to research Astral Walk && build a shop" ;//Todo: where is Astral Walk researched? What is the shop called?
     }
 
-    protected override string CompletionDescription => 
-      return "Enable to research Astral Walk && build a shop";
-    }
+    protected override string CompletionDescription => "Enable to research Astral Walk && build a shop";
 
     protected override void OnComplete(){
       GeneralHelpers.UnitRescue(gg_unit_n0BE_3261, FACTION_LEGION.Player);
@@ -33,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BH"))));
       this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BG"))));
       this.AddQuestItem(new QuestItemSelfExists());
-      this.ResearchId = QUESTRESEARCH_ID;
+      ResearchId = QuestResearchId;
       ;;
     }
 

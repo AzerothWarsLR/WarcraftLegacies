@@ -15,13 +15,9 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       return true;
     }
 
-    protected override string CompletionPopup => 
-      return "Nazjatar is now under the influence of the Old Gods && the portal is opened to NyFourCC(alotha.";
-    }
+    protected override string CompletionPopup => "Nazjatar is now under the influence of the Old Gods && the portal is opened to NyFourCC(alotha.";
 
-    protected override string CompletionDescription => 
-      return "A portal is opened to NyFourCC(alotha, Illidan turns Hostile, Aszhara appears && you join the Old Gods team";
-    }
+    protected override string CompletionDescription => "A portal is opened to NyFourCC(alotha, Illidan turns Hostile, Aszhara appears && you join the Old Gods team";
 
     private void GrantNazjatar( ){
       SetUnitOwner(gg_unit_n07E_0958, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
@@ -41,7 +37,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     private void TransferHeroes( ){
       SetUnitOwner(LEGEND_NZOTH.Unit, this.Holder.Player, true);
-      LEGEND_AZSHARA.Spawn(Holder.Player, GetRectCenterX(gg_rct_InstanceNazjatar), GetRectCenterY(gg_rct_InstanceNazjatar), 270);
+      LEGEND_AZSHARA.Spawn(Holder.Player, GetRectCenterX(Regions.InstanceNazjatar), GetRectCenterY(gg_rct_InstanceNazjatar).Rect, 270);
       SetHeroLevel(LEGEND_AZSHARA.Unit, 7, false);
       SetUnitOwner(LEGEND_ILLIDAN.Unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
     }
@@ -79,7 +75,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       this.AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("n055")));
       this.AddQuestItem(new QuestItemLegendNotDead(LEGEND_ILLIDAN));
       this.AddQuestItem(new QuestItemSelfExists());
-      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, gg_rct_NazjatarHidden, "Nazjatar"));
+      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.NazjatarHidden.Rect, "Nazjatar"));
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

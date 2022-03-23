@@ -11,13 +11,9 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       return true;
     }
 
-    protected override string CompletionPopup => 
-      return "Velen has opened the portal to Argus";
-    }
+    protected override string CompletionPopup => "Velen has opened the portal to Argus";
 
-    protected override string CompletionDescription => 
-      return "Open a Portal between Tempest Keep && Argus";
-    }
+    protected override string CompletionDescription => "Open a Portal between Tempest Keep && Argus";
 
     protected override void OnComplete(){
       WaygateActivateBJ( true, gg_unit_h03V_3538 );
@@ -30,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
 
     public  thistype ( ){
       thistype this = thistype.allocate("Reconquering Tempest Keep", "Tempest Keep still has the power to open a portal Argus, but Velen needs to channel it", "ReplaceableTextures\\CommandButtons\\BTNArcaneCastle.blp");
-      this.AddQuestItem(new QuestItemChannelRect(gg_rct_TempestKeepSpawn, "Tempest Keep", LEGEND_VELEN, 180, 0));
+      this.AddQuestItem(new QuestItemChannelRect(Regions.TempestKeepSpawn, "Tempest Keep", LEGEND_VELEN, 180.Rect, 0));
       ;;
     }
 

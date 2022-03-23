@@ -13,20 +13,16 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
   
 
 
-    protected override string CompletionPopup => 
-      return "Feathermoon Stronghold has been relieved && has joined the Sentinels in their war effort";
-    }
+    protected override string CompletionPopup => "Feathermoon Stronghold has been relieved && has joined the Sentinels in their war effort";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Feathermoon Stronghold && make Shandris && Maiev trainable at the Altar";
-    }
+    protected override string CompletionDescription => "Control of all units in Feathermoon Stronghold && make Shandris && Maiev trainable at the Altar";
 
     private void GrantFeathermoon(player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
 
       //Transfer all Neutral Passive units in Feathermoon
-      GroupEnumUnitsInRect(tempGroup, gg_rct_FeathermoonUnlock, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.FeathermoonUnlock.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }
@@ -55,7 +51,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
 
     public  thistype ( ){
       thistype this = thistype.allocate("Feathermoon Stronghold", "Feathermoon Stronghold stood guard for ten thousand years, it is time to relieve the guards from their duty.", "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp");
-      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_TYRANDE, gg_rct_FeathermoonUnlock, "Feathermoon Stronghold"));
+      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_TYRANDE, Regions.FeathermoonUnlock.Rect, "Feathermoon Stronghold"));
       this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01R"))));
       this.AddQuestItem(new QuestItemUpgrade(FourCC("n06P"), )n06J)));
       this.AddQuestItem(new QuestItemExpire(1485));

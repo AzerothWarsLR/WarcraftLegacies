@@ -14,9 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       return completionPopup;
     }
 
-    protected override string CompletionDescription => 
-      return "KelFourCC(thuzad becomes a Lich";
-    }
+    protected override string CompletionDescription => "KelFourCC(thuzad becomes a Lich";
 
     protected override void OnComplete(){
       LEGEND_KELTHUZAD.UnitType = UNITTYPE_KELTHUZAD_LICH;
@@ -30,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     public  thistype ( ){
       thistype this = thistype.allocate("Life Beyond Death", "KelFourCC("thuzad is the leader of the Cult of the Damned && an extraordinarily powerful necromancer. If he were to be brought to the Sunwell && submerged in its waters, he would be reanimated as an immortal Lich.", "ReplaceableTextures\\CommandButtons\\BTNLichVersion2blp"");
       this.AddQuestItem(new QuestItemControlLegend(LEGEND_SUNWELL, false));
-      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_KELTHUZAD, gg_rct_Sunwell, "The Sunwell"));
+      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_KELTHUZAD, Regions.Sunwell.Rect, "The Sunwell"));
       ;;
     }
 

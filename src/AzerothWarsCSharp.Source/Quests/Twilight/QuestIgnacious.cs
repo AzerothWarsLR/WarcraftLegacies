@@ -11,13 +11,9 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
   
 
 
-    protected override string CompletionPopup => 
-      return "The great Ragnaros has ascended one of our shamans.";
-    }
+    protected override string CompletionPopup => "The great Ragnaros has ascended one of our shamans.";
 
-    protected override string CompletionDescription => 
-      return "You can summon Ignacious from the Altar";
-    }
+    protected override string CompletionDescription => "You can summon Ignacious from the Altar";
 
 
     public  thistype ( ){

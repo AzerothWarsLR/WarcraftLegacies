@@ -13,19 +13,15 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
   
 
 
-    protected override string CompletionPopup => 
-      return "The peace talk were succesful, The Dark Iron will join the Dwarven Empire.";
-    }
+    protected override string CompletionPopup => "The peace talk were succesful, The Dark Iron will join the Dwarven Empire.";
 
-    protected override string CompletionDescription => 
-      return "You gain control of Shadowforge City && can train the hero Dagran Thaurassian from the Altar of Fortitude";
-    }
+    protected override string CompletionDescription => "You gain control of Shadowforge City && can train the hero Dagran Thaurassian from the Altar of Fortitude";
 
     protected override void OnComplete(){
       group tempGroup = CreateGroup();
       unit u;
       //Transfer all Neutral Passive units in region to Ironforge
-      GroupEnumUnitsInRect(tempGroup, gg_rct_Shadowforge_City, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.Shadowforge_City.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }
@@ -47,7 +43,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
 
     public  thistype ( ){
       thistype this = thistype.allocate("Dark Iron Alliance", "The Dark Iron dwarves are renegades. Bring Magni to their capital to open negotiations for an alliance.", "ReplaceableTextures\\CommandButtons\\BTNRPGDarkIron.blp");
-      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_MAGNI, gg_rct_Shadowforge_gate, "Shadowforge"));
+      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_MAGNI, Regions.Shadowforge_gate.Rect, "Shadowforge"));
       ;;
     }
 

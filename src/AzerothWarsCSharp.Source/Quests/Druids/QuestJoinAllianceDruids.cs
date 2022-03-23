@@ -7,13 +7,9 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 
 
 
-    protected override string CompletionPopup => 
-      return "The Druids have joined the Alliance";
-    }
+    protected override string CompletionPopup => "The Druids have joined the Alliance";
 
-    protected override string CompletionDescription => 
-      return "Join the Alliance team";
-    }
+    protected override string CompletionDescription => "Join the Alliance team";
 
 
     protected override void OnComplete(){

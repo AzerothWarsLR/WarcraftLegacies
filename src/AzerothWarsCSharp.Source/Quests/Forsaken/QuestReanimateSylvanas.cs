@@ -11,9 +11,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
   
 
 
-    protected override string CompletionPopup => 
-      return "QuelFourCC("thalas has fallen to the Scourge")s onslaught. The Sunwell itself has been corrupted, cutting the quel)dorei off from the source of their longevity. Sylvanas is denied a clean death following her tenacious defense, && she becomes the first of the High Elven Banshees.";
-    }
+    protected override string CompletionPopup => "QuelFourCC("thalas has fallen to the Scourge")s onslaught. The Sunwell itself has been corrupted, cutting the quel)dorei off from the source of their longevity. Sylvanas is denied a clean death following her tenacious defense, && she becomes the first of the High Elven Banshees.";
 
     protected override string CompletionDescription => 
       return "You can summon Sylvanas from the " + GetObjectName(ALTAR_ID);

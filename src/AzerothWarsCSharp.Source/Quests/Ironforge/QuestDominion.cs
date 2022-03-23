@@ -13,20 +13,16 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
   
 
 
-    protected override string CompletionPopup => 
-      return "The Dwarven Empire is re-united again, Ironforge is ready for war again.";
-    }
+    protected override string CompletionPopup => "The Dwarven Empire is re-united again, Ironforge is ready for war again.";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Ironforge";
-    }
+    protected override string CompletionDescription => "Control of all units in Ironforge";
 
     private void GrantDominion(player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
 
       //Transfer all Neutral Passive units in Dominion
-      GroupEnumUnitsInRect(tempGroup, gg_rct_IronforgeAmbient, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.IronforgeAmbient.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }

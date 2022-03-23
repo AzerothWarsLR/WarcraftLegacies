@@ -3,7 +3,7 @@ using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 {
-  public sealed class QuestFelHordeKillIronforge : QuestData : QuestData{
+  public sealed class QuestFelHordeKillIronforge : QuestData{
  
   
     private const int RESEARCH_ID = FourCC("R011");
@@ -13,13 +13,9 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
   
 
 
-    protected override string CompletionPopup => 
-      return "The Great Forge has been annihilated. The Fel HordeFourCC(s peons immediately salvage its intact refineries && put them to purpose in the creation of Felsteel.";
-    }
+    protected override string CompletionPopup => "The Great Forge has been annihilated. The Fel HordeFourCC(s peons immediately salvage its intact refineries && put them to purpose in the creation of Felsteel.";
 
-    protected override string CompletionDescription => 
-      return "Learn to train " + I2S(UNIT_LIMIT) + " " + GetObjectName(UNITTYPE_ID) + "s from the " + GetObjectName(BUILDING_ID) + " && acquire Felsteel Plating";
-    }
+    protected override string CompletionDescription => "Learn to train " + I2S(UNIT_LIMIT) + " " + GetObjectName(UNITTYPE_ID) + "s from the " + GetObjectName(BUILDING_ID) + " && acquire Felsteel Plating";
 
     protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);

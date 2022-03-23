@@ -12,13 +12,9 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
   
 
 
-    protected override string CompletionPopup => 
-      return "Before setting sails we need to conquer KulFourCC(tiras";
-    }
+    protected override string CompletionPopup => "Before setting sails we need to conquer KulFourCC(tiras";
 
-    protected override string CompletionDescription => 
-      return "Unlock shipyards";
-    }
+    protected override string CompletionDescription => "Unlock shipyards";
 
     private string operator FailurePopup( ){
       return "Zandalar has fallen";
@@ -32,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       unit u;
       group tempGroup;
       tempGroup = CreateGroup();
-      GroupEnumUnitsInRect(tempGroup, gg_rct_Zulfarrak, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.Zulfarrak.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }

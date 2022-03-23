@@ -12,13 +12,9 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
   
 
 
-    protected override string CompletionPopup => 
-      return "The Thunder Eagles, now in safe hands " + this.Holder.Name + ".";
-    }
+    protected override string CompletionPopup => "The Thunder Eagles, now in safe hands " + this.Holder.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Learn to train " + GetObjectName(THUNDER_EAGLE_ID) + "s";
-    }
+    protected override string CompletionDescription => "Learn to train " + GetObjectName(THUNDER_EAGLE_ID) + "s";
 
     protected override void OnComplete(){
       SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);

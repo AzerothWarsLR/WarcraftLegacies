@@ -11,13 +11,9 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       return true;
     }
 
-    protected override string CompletionPopup => 
-      return "Khadgar has closed the Dark Portal definately";
-    }
+    protected override string CompletionPopup => "Khadgar has closed the Dark Portal definately";
 
-    protected override string CompletionDescription => 
-      return "Close the Dark Portal from both sides";
-    }
+    protected override string CompletionDescription => "Close the Dark Portal from both sides";
 
     protected override void OnComplete(){
       RemoveUnit(gg_unit_n036_2719);
@@ -34,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     public  thistype ( ){
       thistype this = thistype.allocate("Seal the Dark Portal", "The Dark Portal has been a menace to the Kingdom of Stormwind for decades, it is time to end the menace once && for all.", "ReplaceableTextures\\CommandButtons\\BTNDarkPortal.blp");
-      this.AddQuestItem(new QuestItemChannelRect(gg_rct_ClosePortal, "The Dark Portal", LEGEND_KHADGAR, 480, 270));
+      this.AddQuestItem(new QuestItemChannelRect(Regions.ClosePortal, "The Dark Portal", LEGEND_KHADGAR, 480.Rect, 270));
       ;;
     }
 

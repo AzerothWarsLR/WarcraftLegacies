@@ -13,20 +13,16 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
   
 
 
-    protected override string CompletionPopup => 
-      return "Ashenvale is under control && Cenarius can now be awaken";
-    }
+    protected override string CompletionPopup => "Ashenvale is under control && Cenarius can now be awaken";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Ashenvale && make Cenarius trainable at the Altar";
-    }
+    protected override string CompletionDescription => "Control of all units in Ashenvale && make Cenarius trainable at the Altar";
 
     private void GrantAshenvale(player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
 
       //Transfer all Neutral Passive units in Ashenvale
-      GroupEnumUnitsInRect(tempGroup, gg_rct_AshenvaleUnlock, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.AshenvaleUnlock.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }
@@ -53,7 +49,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Spirits of Ashenvale", "The forest needs healing. Regain control of it to summon itFourCC("s Guardian, the Demigod Cenarius", "ReplaceableTextures\\CommandButtons\\BTNKeeperC.blp"");
-      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_MALFURION, gg_rct_AshenvaleUnlock, "Ashenvale"));
+      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_MALFURION, Regions.AshenvaleUnlock.Rect, "Ashenvale"));
       this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n07C"))));
       this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01Q"))));
       this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08U"))));

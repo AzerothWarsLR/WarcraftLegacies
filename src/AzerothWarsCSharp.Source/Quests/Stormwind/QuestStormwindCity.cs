@@ -13,20 +13,16 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
   
 
 
-    protected override string CompletionPopup => 
-      return "Stormwind has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "Stormwind has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Stormwind && enable Varian to be trained at the altar";
-    }
+    protected override string CompletionDescription => "Control of all units in Stormwind && enable Varian to be trained at the altar";
 
     private void GrantStormwind(player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
 
       //Transfer all Neutral Passive units in Stormwind
-      GroupEnumUnitsInRect(tempGroup, gg_rct_StormwindUnlock, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.StormwindUnlock.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }

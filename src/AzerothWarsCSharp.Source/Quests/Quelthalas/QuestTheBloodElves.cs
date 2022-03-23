@@ -21,17 +21,13 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     private static group SecondChanceUnits;
 
-    protected override string CompletionPopup => 
-      return "The Legion Nexus has been obliterated. A group of ambitious mages seize the opportunity to study the demonsFourCC( magic, becoming the first Blood Mages.";
-    }
+    protected override string CompletionPopup => "The Legion Nexus has been obliterated. A group of ambitious mages seize the opportunity to study the demonsFourCC( magic, becoming the first Blood Mages.";
 
     private string operator FailurePopup( ){
       return "The Sunwell has fallen. The survivors escape to Dalaran && name themselves the Blood Elves in remembrance of their fallen people.";
     }
 
-    protected override string CompletionDescription => 
-      return "Learn to train " + GetObjectName(UNITTYPE_ID) + "s from the Consortium, && you can summon Prince KaelFourCC(thas from the Altar of Prowess";
-    }
+    protected override string CompletionDescription => "Learn to train " + GetObjectName(UNITTYPE_ID) + "s from the Consortium, && you can summon Prince KaelFourCC(thas from the Altar of Prowess";
 
     private string operator FailureDescription( ){
       return "You lose everything you control, but you gain Prince KaelFourCC("thas at the Dalaran Dungeons, && you can train " + GetObjectName(UNITTYPE_ID") + "s from the Consortium";
@@ -60,7 +56,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
         LEGEND_KAEL.Spawn(this.Holder.Player, -11410, 21975, 110);
         UnitAddItem(LEGEND_KAEL.Unit, CreateItem(FourCC("I00M"), GetUnitX(LEGEND_KAEL.Unit), GetUnitY(LEGEND_KAEL.Unit)));
         if (GetLocalPlayer() == this.Holder.Player){
-          SetCameraPosition(GetRectCenterX(gg_rct_BloodElfSecondChanceSpawn), GetRectCenterY(gg_rct_BloodElfSecondChanceSpawn));
+          SetCameraPosition(GetRectCenterX(Regions.BloodElfSecondChanceSpawn).Rect, GetRectCenterY(gg_rct_BloodElfSecondChanceSpawn));
         }
       }
       SetTriggerLegend(triggerLegend);
@@ -78,7 +74,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       unit u;
       var i = 0;
       thistype.SecondChanceUnits = CreateGroup();
-      GroupEnumUnitsInRect(tempGroup, gg_rct_BloodElfSecondChanceSpawn, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.BloodElfSecondChanceSpawn.Rect, null);
       while(true){
         u = FirstOfGroup(tempGroup);
         if ( u == null){ break; }

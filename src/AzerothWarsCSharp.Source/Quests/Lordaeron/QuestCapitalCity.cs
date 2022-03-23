@@ -13,20 +13,16 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
   
 
 
-    protected override string CompletionPopup => 
-      return "Capital City has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "Capital City has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Capital City";
-    }
+    protected override string CompletionDescription => "Control of all units in Capital City";
 
     private void OnFail( ){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_Terenas, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.Terenas.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete(){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_Terenas, this.Holder.Player);
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.Terenas.Rect, this.Holder.Player);
       SetUnitInvulnerable(gg_unit_nemi_0019, true);
       if (GetLocalPlayer() == this.Holder.Player){
         PlayThematicMusicBJ("war3mapImported\\CapitalCity.mp3");

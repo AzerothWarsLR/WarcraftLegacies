@@ -11,13 +11,9 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       return true;
     }
 
-    protected override string CompletionPopup => 
-      return "The Nexus powers have been absorbed by Jaina && she joins the Lich King in the eternal ice of Northrend.";
-    }
+    protected override string CompletionPopup => "The Nexus powers have been absorbed by Jaina && she joins the Lich King in the eternal ice of Northrend.";
 
-    protected override string CompletionDescription => 
-      return "You become the Nexus faction, allied with the Scourge && enemy with everyone else. Jaina becomes much more powerful";
-    }
+    protected override string CompletionDescription => "You become the Nexus faction, allied with the Scourge && enemy with everyone else. Jaina becomes much more powerful";
 
     protected override void OnComplete(){
       FACTION_DALARAN.ModObjectLimit(FourCC("h069"),-UNLIMITED)       ;//Military Quarters
@@ -60,7 +56,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Nexus", "The new Lich King calls for Jaina, tempts her with power. The Nexus needs a master, && Jaina is perfect for it.", "ReplaceableTextures\\CommandButtons\\BTNBlueDragonNexus.blp");
-      this.AddQuestItem(new QuestItemChannelRect(gg_rct_JainaChannel, "The Nexus", LEGEND_JAINA, 60, 270));
+      this.AddQuestItem(new QuestItemChannelRect(Regions.JainaChannel, "The Nexus", LEGEND_JAINA, 60.Rect, 270));
       this.AddQuestItem(new QuestItemControlLegend(LEGEND_JAINA, true));
       this.AddQuestItem(new QuestItemControlLegend(LEGEND_NEXUS, false));
       ;;

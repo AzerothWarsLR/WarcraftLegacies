@@ -5,7 +5,7 @@ using AzerothWarsCSharp.Source.Mechanics.BlackEmpire;
 
 namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 {
-  public sealed class QuestThirdObelisk : QuestData : QuestData{
+  public sealed class QuestThirdObelisk : QuestData{
 
   
     private const int QUEST_RESEARCH_ID = FourCC("R07K")   ;//This research is given when the quest is completed
@@ -16,13 +16,9 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       return true;
     }
 
-    protected override string CompletionPopup => 
-      return "The Merging of Realities has come to pass. The NyaFourCC(lothan portals to Storm Peaks, Northern Highlands, && Tanaris have been permanently opened.";
-    }
+    protected override string CompletionPopup => "The Merging of Realities has come to pass. The NyaFourCC(lothan portals to Storm Peaks, Northern Highlands, && Tanaris have been permanently opened.";
 
-    protected override string CompletionDescription => 
-      return "The NyaFourCC(lothan portals to Storm Peaks, Northern Highlands, && Tanaris will be permanently opened";
-    }
+    protected override string CompletionDescription => "The NyaFourCC(lothan portals to Storm Peaks, Northern Highlands, && Tanaris will be permanently opened";
 
     //Opens the central portals in Nyalotha permanently.
     private void OpenPortals( ){

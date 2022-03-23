@@ -12,13 +12,9 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
   
 
 
-    protected override string CompletionPopup => 
-      return "QuelFourCC(thalas has finally reunited with its lost rangers in the Hinterlands.";
-    }
+    protected override string CompletionPopup => "QuelFourCC(thalas has finally reunited with its lost rangers in the Hinterlands.";
 
-    protected override string CompletionDescription => 
-      return "Control of QuelFourCC(danil Lodge";
-    }
+    protected override string CompletionDescription => "Control of QuelFourCC(danil Lodge";
 
     protected override void OnComplete(){
       unit u;
@@ -33,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     public  thistype ( ){
       thistype this = thistype.allocate("QuelFourCC("danil Lodge", "Quel")danil Lodge is a High Elven outpost situated in the Hinterlands. It)s been some time since the rangers there have been in contact with Quel)thalas.", "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp");
-      this.AddQuestItem(new QuestItemAnyUnitInRect(gg_rct_QuelDanil_Lodge, "QuelFourCC("danil Lodge", true"));
+      this.AddQuestItem(new QuestItemAnyUnitInRect(Regions.QuelDanil_Lodge, "QuelFourCC("danil Lodge".Rect, true"));
       this.AddQuestItem(new QuestItemTime(1200));
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;

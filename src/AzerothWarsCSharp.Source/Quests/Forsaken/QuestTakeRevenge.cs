@@ -9,13 +9,9 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
   public sealed class QuestTakeRevenge : QuestData{
 
 
-    protected override string CompletionPopup => 
-      return "With the Lich King eliminated, Sylvanas vengeance is finally complete. She has absorbed his power && has become the Banshee Queen";
-    }
+    protected override string CompletionPopup => "With the Lich King eliminated, Sylvanas vengeance is finally complete. She has absorbed his power && has become the Banshee Queen";
 
-    protected override string CompletionDescription => 
-      return "Sylvanas gains 20 intelligence, 20 strength && Chaos damage";
-    }
+    protected override string CompletionDescription => "Sylvanas gains 20 intelligence, 20 strength && Chaos damage";
 
     protected override void OnComplete(){
       unit whichUnit = LEGEND_SYLVANASV.Unit;

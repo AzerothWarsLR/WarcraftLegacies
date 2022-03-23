@@ -13,20 +13,16 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
   
 
 
-    protected override string CompletionPopup => 
-      return "Dalaran outskirs are now secure, the mages will join " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "Dalaran outskirs are now secure, the mages will join " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Dalaran && enables Antonidas to be trained at the Altar";
-    }
+    protected override string CompletionDescription => "Control of all units in Dalaran && enables Antonidas to be trained at the Altar";
 
     private void GrantDalaran(player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
 
       //Transfer all Neutral Passive units in Dalaran
-      GroupEnumUnitsInRect(tempGroup, gg_rct_Dalaran, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.Dalaran.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }
@@ -36,7 +32,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
       }
-      GroupEnumUnitsInRect(tempGroup, gg_rct_DalaranDungeon, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.DalaranDungeon.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }

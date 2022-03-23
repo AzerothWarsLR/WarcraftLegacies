@@ -14,13 +14,9 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       return true;
     }
 
-    protected override string CompletionPopup => 
-      return "The plague has been unleashed! The citizens of Lordaeron are quickly transforming into mindless zombies.";
-    }
+    protected override string CompletionPopup => "The plague has been unleashed! The citizens of Lordaeron are quickly transforming into mindless zombies.";
 
-    protected override string CompletionDescription => 
-      return "A plague is unleashed upon the lands of Lordaeron";
-    }
+    protected override string CompletionDescription => "A plague is unleashed upon the lands of Lordaeron";
 
     protected override void OnComplete(){
       this.Holder.ModObjectLimit(RESEARCH_ID, -UNLIMITED);

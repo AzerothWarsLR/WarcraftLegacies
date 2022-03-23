@@ -12,13 +12,9 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
   
 
 
-    protected override string CompletionPopup => 
-      return "MedivhFourCC("s spirit has been cleansed of Sargeras") influence, allowing him to return to Azeroth for a time.";
-    }
+    protected override string CompletionPopup => "Medivh's spirit has been cleansed of Sargeras' influence, allowing him to return to Azeroth for a time.";
 
-    protected override string CompletionDescription => 
-      return "You can summon Medivh from the Altar of Knowledge";
-    }
+    protected override string CompletionDescription => "You can summon Medivh from the Altar of Knowledge";
 
     private void OnAdd( ){
       Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
@@ -26,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     }
 
     public  thistype ( ){
-      thistype this = thistype.allocate("The Fallen Guardian", "MedivhFourCC("s body was corrupted by Sargeras at conception. Now that he is dead, the secrets of the Tomb of Sargeras && Sargeras combined might allow the mages of Dalaran to cleanse his spirit.", "ReplaceableTextures\\CommandButtons\\BTNMedivh.blp"");
+      thistype this = thistype.allocate("The Fallen Guardian", "Medivh's body was corrupted by Sargeras at conception. Now that he is dead, the secrets of the Tomb of Sargeras and Karazhan combined might allow the mages of Dalaran to cleanse his spirit.", "ReplaceableTextures\\CommandButtons\\BTNMedivh.blp");
       this.AddQuestItem(new QuestItemControlLegend(LEGEND_KARAZHAN, false));
       this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00J"))));
       this.ResearchId = FourCC("R04K");

@@ -12,13 +12,9 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
   
 
 
-    protected override string CompletionPopup => 
-      return "The Sentinels have been slain. With their Hippogryphs no longer terrorizing the skies, the Horde can field its refurbished Zeppelins.";
-    }
+    protected override string CompletionPopup => "The Sentinels have been slain. With their Hippogryphs no longer terrorizing the skies, the Horde can field its refurbished Zeppelins.";
 
-    protected override string CompletionDescription => 
-      return "Learn to train " + GetObjectName(UNITTYPE_ID) + "s";
-    }
+    protected override string CompletionDescription => "Learn to train " + GetObjectName(UNITTYPE_ID) + "s";
 
     private void OnAdd( ){
       this.Holder.ModObjectLimit(UNITTYPE_ID, LIMIT_CHANGE);

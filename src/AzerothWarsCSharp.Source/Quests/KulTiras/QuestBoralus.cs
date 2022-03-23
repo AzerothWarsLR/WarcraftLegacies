@@ -12,20 +12,16 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
   
 
 
-    protected override string CompletionPopup => 
-      return "KulFourCC(Tiras has joined the war && its military is now free to assist the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "KulFourCC(Tiras has joined the war && its military is now free to assist the " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in KulFourCC(Tiras && enables Katherine Proodmoure to be trained at the altar";
-    }
+    protected override string CompletionDescription => "Control of all units in KulFourCC(Tiras && enables Katherine Proodmoure to be trained at the altar";
 
     private void OnFail( ){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_Kultiras, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.Kultiras.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete(){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_Kultiras, this.Holder.Player);
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.Kultiras.Rect, this.Holder.Player);
       if (GetLocalPlayer() == this.Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\KultirasTheme.mp3" );
       }

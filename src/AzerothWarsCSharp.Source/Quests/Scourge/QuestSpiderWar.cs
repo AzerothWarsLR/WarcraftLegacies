@@ -13,20 +13,16 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
   
 
 
-    protected override string CompletionPopup => 
-      return "Northrend && the Icecrown Citadel is now under full control of the Lich King && the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "Northrend && the Icecrown Citadel is now under full control of the Lich King && the " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Access to the Plague Research at the Frozen Throne, KelFourCC(tuzad && Rivendare trainable && a base in Icecrown";
-    }
+    protected override string CompletionDescription => "Access to the Plague Research at the Frozen Throne, KelFourCC(tuzad && Rivendare trainable && a base in Icecrown";
 
     private void OnFail( ){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_Ice_Crown, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.Ice_Crown.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete(){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_Ice_Crown, this.Holder.Player);
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.Ice_Crown.Rect, this.Holder.Player);
       SetPlayerTechResearched(Holder.Player, FourCC("R03A"), 1);
       if (GetLocalPlayer() == this.Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\ScourgeTheme.mp3" );

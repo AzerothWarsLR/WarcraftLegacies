@@ -18,13 +18,9 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       return true;
     }
 
-    protected override string CompletionPopup => 
-      return "The people of the Eastern Kingdoms have been united under the banner of Stormwind. Long live High King Varian Wrynn!";
-    }
+    protected override string CompletionPopup => "The people of the Eastern Kingdoms have been united under the banner of Stormwind. Long live High King Varian Wrynn!";
 
-    protected override string CompletionDescription => 
-      return "You gain a research improving all of your units, the Crowns of Lordaeron && Stormwind are merged, && Varian gains " + I2S(EXPERIENCE_REWARD) + ".";
-    }
+    protected override string CompletionDescription => "You gain a research improving all of your units, the Crowns of Lordaeron && Stormwind are merged, && Varian gains " + I2S(EXPERIENCE_REWARD) + ".";
 
     protected override void OnComplete(){
       //Artifact

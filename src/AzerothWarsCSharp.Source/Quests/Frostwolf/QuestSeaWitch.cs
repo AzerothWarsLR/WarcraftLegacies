@@ -17,16 +17,12 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
   
 
 
-    protected override string CompletionPopup => 
-      return "The sea witch ZarFourCC("jira has been slain. Thrall && Vol")jin can now sail.";
-    }
+    protected override string CompletionPopup => "The sea witch ZarFourCC("jira has been slain. Thrall && Vol")jin can now sail.";
 
-    protected override string CompletionDescription => 
-      return "Gain control of all neutral units on the Darkspear Isles && teleport to shore";
-    }
+    protected override string CompletionDescription => "Gain control of all neutral units on the Darkspear Isles && teleport to shore";
 
     private void OnFail( ){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_EchoUnlock, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.EchoUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete(){
@@ -34,8 +30,8 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       group tempGroup = CreateGroup();
       unit u;
       //Transfer control of all passive units on island and teleport all Frostwolf units to shore
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_CairneStart, this.Holder.Player);
-      GroupEnumUnitsInRect(tempGroup, gg_rct_Darkspear_Island, null);
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.CairneStart.Rect, this.Holder.Player);
+      GroupEnumUnitsInRect(tempGroup, Regions.Darkspear_Island.Rect, null);
       while(true){
         u = FirstOfGroup(tempGroup);
         if ( u == null){ break; }
@@ -43,14 +39,14 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
           GeneralHelpers.UnitRescue(u, this.Holder.Player);
         }
         if (GetOwningPlayer(u) == FACTION_FROSTWOLF.Player && IsUnitType(u, UNIT_TYPE_STRUCTURE) == false){
-          SetUnitPosition(u, GetRandomReal(GetRectMinX(gg_rct_ThrallLanding), GetRectMaxX(gg_rct_ThrallLanding)), GetRandomReal(GetRectMinY(gg_rct_ThrallLanding), GetRectMaxY(gg_rct_ThrallLanding)));
+          SetUnitPosition(u, GetRandomReal(GetRectMinX(Regions.ThrallLanding), GetRectMaxX(gg_rct_ThrallLanding)), GetRandomReal(GetRectMinY(gg_rct_ThrallLanding).Rect, GetRectMaxY(gg_rct_ThrallLanding)));
         }
         GroupRemoveUnit(tempGroup, u);
       }
       DestroyGroup(tempGroup);
       RemoveWeatherEffectBJ(Storm);
       GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("opeo"), -1818, -2070, 270, 3);
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_EchoUnlock, this.Holder.Player);
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.EchoUnlock.Rect, this.Holder.Player);
     }
 
     private void OnAdd( ){
@@ -66,7 +62,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     }
 
     private static void onInit( ){
-      Storm = AddWeatherEffect(gg_rct_Darkspear_Island, FourCC("RAhr"));
+      Storm = AddWeatherEffect(Regions.Darkspear_Island.Rect, FourCC("RAhr"));
       EnableWeatherEffect(Storm, true);
     }
 

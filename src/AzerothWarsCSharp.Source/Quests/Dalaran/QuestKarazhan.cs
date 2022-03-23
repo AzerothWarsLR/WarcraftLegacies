@@ -6,13 +6,9 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
   public sealed class QuestKarazhan : QuestData{
 
 
-    protected override string CompletionPopup => 
-      return "Karazhan has been captured. " + this.Holder.Name + "FourCC(s  archivists scour its halls for arcane resources.";
-    }
+    protected override string CompletionPopup => "Karazhan has been captured. " + this.Holder.Name + "FourCC(s  archivists scour its halls for arcane resources.";
 
-    protected override string CompletionDescription => 
-      return "Learn to research three powerful upgrades at Karazhan.";
-    }
+    protected override string CompletionDescription => "Learn to research three powerful upgrades at Karazhan.";
 
     private void OnAdd( ){
       Holder.ModObjectLimit(FourCC("R020"), UNLIMITED)   ;//Rain: An Amalgam

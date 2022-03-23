@@ -9,21 +9,17 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
   public sealed class QuestLiberateLordaeron : QuestData{
 
   
-    private const int QUESTRESEARCH_ID = FourCC("R07P")   ;//This research is given when the quest is completed
+    private static readonly int QuestResearchId = FourCC("R07P")   ;//This research is given when the quest is completed
   
 
 
-    protected override string CompletionPopup => 
-      return "The lands of Lordaeron have been purged from Undeath && Corruption";
-    }
+    protected override string CompletionPopup => "The lands of Lordaeron have been purged from Undeath && Corruption";
 
-    protected override string CompletionDescription => 
-      return "Enable to train Commander Goodchild && Isilien, Unlock New Hearthglen in Northrend && the Scarlet Harbor";
-    }
+    protected override string CompletionDescription => "Enable to train Commander Goodchild && Isilien, Unlock New Hearthglen in Northrend && the Scarlet Harbor";
 
     protected override void OnComplete(){
 
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_ScarletHarbor, this.Holder.Player);
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.ScarletHarbor.Rect, this.Holder.Player);
       GeneralHelpers.KillNeutralHostileUnitsInRadius(4152, 16521, 2300);
       GeneralHelpers.KillNeutralHostileUnitsInRadius(-2190, 16803, 700);
       GeneralHelpers.CreateStructureForced(this.Holder.Player, FourCC("h08J"), -5133152, 1667969, 4757993*bj_RADTODEG, 256);
@@ -62,7 +58,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01H"))));
       this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01M"))));
       this.AddQuestItem(new QuestItemSelfExists());
-      this.ResearchId = QUESTRESEARCH_ID;
+      ResearchId = QuestResearchId;
       ;;
     }
 

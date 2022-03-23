@@ -12,13 +12,9 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       return true;
     }
 
-    protected override string CompletionPopup => 
-      return "Arthas has ascended the Frozen Throne itself && shattered NerFourCC("zhul")s frozen prison. Ner)zhul && Arthas are now joined, body && soul, into one being: the god-like Lich King.";
-    }
+    protected override string CompletionPopup => "Arthas has ascended the Frozen Throne itself && shattered NerFourCC("zhul")s frozen prison. Ner)zhul && Arthas are now joined, body && soul, into one being: the god-like Lich King.";
 
-    protected override string CompletionDescription => 
-      return "Arthas becomes the Lich King, but the Frozen Throne loses its abilities";
-    }
+    protected override string CompletionDescription => "Arthas becomes the Lich King, but the Frozen Throne loses its abilities";
 
     protected override void OnComplete(){
       PlayThematicMusicBJ( "Sound\\Music\\mp3Music\\LichKingTheme.mp3" );
@@ -48,7 +44,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       this.AddQuestItem(new QuestItemControlLegend(LEGEND_ARTHAS, false));
       this.AddQuestItem(new QuestItemLegendLevel(LEGEND_ARTHAS, 12));
       this.AddQuestItem(new QuestItemResearch(FourCC("R07X"), )u000)));
-      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_ARTHAS, gg_rct_LichKing, "Icecrown Citadel"));
+      this.AddQuestItem(new QuestItemLegendInRect(LEGEND_ARTHAS, Regions.LichKing.Rect, "Icecrown Citadel"));
       ;;
     }
 

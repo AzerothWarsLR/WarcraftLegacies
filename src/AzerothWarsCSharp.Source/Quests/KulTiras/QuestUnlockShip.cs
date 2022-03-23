@@ -8,13 +8,9 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
   public sealed class QuestUnlockShip : QuestData{
 
 
-    protected override string CompletionPopup => 
-      return "The Proudmoore capital ship is now ready to sails!";
-    }
+    protected override string CompletionPopup => "The Proudmoore capital ship is now ready to sails!";
 
-    protected override string CompletionDescription => 
-      return "Unpause the Proudmoore capital ship && unlocks the buildings inside.";
-    }
+    protected override string CompletionDescription => "Unpause the Proudmoore capital ship && unlocks the buildings inside.";
 
     private string operator FailurePopup( ){
       return "Boralus has fallen, Katherine has escaped on the Proudmoore Capital Ship with a handful of Survivors.";
@@ -25,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
     }
 
     protected override void OnComplete(){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_ShipAmbient, this.Holder.Player);
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.ShipAmbient.Rect, this.Holder.Player);
       PauseUnitBJ( false, gg_unit_h08T_0260 );
     }
 
@@ -37,9 +33,9 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       LEGEND_KATHERINE.Spawn(this.Holder.Player, -15223, -22856, 110);
       UnitAddItem(LEGEND_KATHERINE.Unit, CreateItem(FourCC("I00M"), GetUnitX(LEGEND_KATHERINE.Unit), GetUnitY(LEGEND_KATHERINE.Unit)));
       if (GetLocalPlayer() == this.Holder.Player){
-        SetCameraPosition(GetRectCenterX(gg_rct_ShipAmbient), GetRectCenterY(gg_rct_ShipAmbient));
+        SetCameraPosition(GetRectCenterX(Regions.ShipAmbient).Rect, GetRectCenterY(gg_rct_ShipAmbient));
       }
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_ShipAmbient, this.Holder.Player);
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.ShipAmbient.Rect, this.Holder.Player);
       PauseUnitBJ( false, gg_unit_h08T_0260 );
       SetUnitOwner(gg_unit_h08T_0260, this.Holder.Player, true);
     }

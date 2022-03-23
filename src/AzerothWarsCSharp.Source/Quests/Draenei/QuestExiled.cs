@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
   public sealed class QuestExiled : QuestData{
 
   
-    private const int QUESTRESEARCH_ID = FourCC("R081")   ;//This research is given when the quest is completed
+    private static readonly int QuestResearchId = FourCC("R081")   ;//This research is given when the quest is completed
     private const int RESEARCH_ID = FourCC("R080")   ;//This research is required to complete
   
 
@@ -18,20 +18,16 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       return true;
     }
 
-    protected override string CompletionPopup => 
-      return "The Draenei have landed on Azuremyst after escaping Outland";
-    }
+    protected override string CompletionPopup => "The Draenei have landed on Azuremyst after escaping Outland";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Azuremyst, gain 200 gold, 500 lumber && teleports all your units away from Outland";
-    }
+    protected override string CompletionDescription => "Control of all units in Azuremyst, gain 200 gold, 500 lumber && teleports all your units away from Outland";
 
     private void GrantExiled(player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
 
       //Transfer all Neutral Passive units in Exiled
-      GroupEnumUnitsInRect(tempGroup, gg_rct_DraeneiEvacuation, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.DraeneiEvacuation.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }
@@ -50,7 +46,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       unit u;
 
       //Transfer all Neutral Passive units in Exiled
-      GroupEnumUnitsInRect(tempGroup, gg_rct_InstanceOutland, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.InstanceOutland.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }
@@ -77,7 +73,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       KillUnit(gg_unit_o02P_2291);
       KillUnit(LEGEND_VELEN.Unit );
 
-      GroupEnumUnitsInRect(tempGroup, gg_rct_InstanceOutland, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.InstanceOutland.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }
@@ -114,7 +110,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       this.AddQuestItem(new QuestItemEitherOf.create(QuestItemResearch.create(RESEARCH_ID, FourCC("h09W")), QuestItemTime(782)));
       this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_EXODARSHIP));
       this.AddQuestItem(new QuestItemSelfExists());
-      this.ResearchId = QUESTRESEARCH_ID;
+      ResearchId = QuestResearchId;
       ;;
     }
 

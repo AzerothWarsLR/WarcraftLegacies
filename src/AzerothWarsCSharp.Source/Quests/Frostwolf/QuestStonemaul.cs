@@ -13,20 +13,16 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
   
 
 
-    protected override string CompletionPopup => 
-      return "Stonemaul has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "Stonemaul has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Stonemaul && 3000 lumber";
-    }
+    protected override string CompletionDescription => "Control of all units in Stonemaul && 3000 lumber";
 
     private void GrantStonemaul(player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
 
       //Transfer all Neutral Passive units in Stonemaul
-      GroupEnumUnitsInRect(tempGroup, gg_rct_StonemaulKeep, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.StonemaulKeep.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }

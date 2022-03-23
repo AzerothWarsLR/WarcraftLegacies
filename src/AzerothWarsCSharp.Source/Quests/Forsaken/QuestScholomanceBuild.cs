@@ -10,13 +10,9 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
   
 
 
-    protected override string CompletionPopup => 
-      return "Putress is now trainable.";
-    }
+    protected override string CompletionPopup => "Putress is now trainable.";
 
-    protected override string CompletionDescription => 
-      return "Putress is trainable at the altar";
-    }
+    protected override string CompletionDescription => "Putress is trainable at the altar";
 
     protected override void OnComplete(){
     }

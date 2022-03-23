@@ -8,20 +8,16 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
   public sealed class QuestNaxxramas : QuestData{
 
 
-    protected override string CompletionPopup => 
-      return "The Naxxramas has now been raised && under the control of the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "The Naxxramas has now been raised && under the control of the " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Naxxramas";
-    }
+    protected override string CompletionDescription => "Control of all units in Naxxramas";
 
     private void GrantNaxxramas(player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
 
       //Transfer all Neutral Passive units in Naxxramas
-      GroupEnumUnitsInRect(tempGroup, gg_rct_NaxAmbient, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.NaxAmbient.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }
@@ -44,7 +40,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Dread Citadel", "This fallen necropolis can be transformed into a potent war machine by the Lich KelFourCC("tuzad", "ReplaceableTextures\\CommandButtons\\BTNBlackCitadel.blp"");
-      QuestItemChannelRect questItemChannelRect = this.AddQuestItem(new QuestItemChannelRect(gg_rct_NaxUnlock, "Naxxramas", LEGEND_KELTHUZAD, 60, 270));
+      QuestItemChannelRect questItemChannelRect = this.AddQuestItem(new QuestItemChannelRect(Regions.NaxUnlock, "Naxxramas", LEGEND_KELTHUZAD, 60.Rect, 270));
       questItemChannelRect.RequiredUnitTypeId = UNITTYPE_KELTHUZAD_LICH;
       ;;
     }

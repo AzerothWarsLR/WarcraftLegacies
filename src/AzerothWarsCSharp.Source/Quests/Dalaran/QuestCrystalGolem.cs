@@ -15,9 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       ;.Holder.Name + "FourCC(s Earth Golems have been infused with living crystal.";
     }
 
-    protected override string CompletionDescription => 
-      return "Transform your Earth Golems into Crystal Golems";
-    }
+    protected override string CompletionDescription => "Transform your Earth Golems into Crystal Golems";
 
     protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);

@@ -13,20 +13,16 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
   
 
 
-    protected override string CompletionPopup => 
-      return "Silvermoon siege has been lifted, && its military is now free to assist the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "Silvermoon siege has been lifted, && its military is now free to assist the " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Silvermoon && enable Anasterian to be trained at the Altar";
-    }
+    protected override string CompletionDescription => "Control of all units in Silvermoon && enable Anasterian to be trained at the Altar";
 
     private void GrantSilvermoon(player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
 
       //Transfer all Neutral Passive units in Silvermoon
-      GroupEnumUnitsInRect(tempGroup, gg_rct_SunwellAmbient, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.SunwellAmbient.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }

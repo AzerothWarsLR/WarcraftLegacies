@@ -10,20 +10,16 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
 
 
-    protected override string CompletionPopup => 
-      return "Stratholme has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "Stratholme has been liberated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Stratholme";
-    }
+    protected override string CompletionDescription => "Control of all units in Stratholme";
 
     private void OnFail( ){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_StratholmeUnlock, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.StratholmeUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete(){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_StratholmeUnlock, this.Holder.Player);
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.StratholmeUnlock.Rect, this.Holder.Player);
     }
 
     private void OnAdd( ){

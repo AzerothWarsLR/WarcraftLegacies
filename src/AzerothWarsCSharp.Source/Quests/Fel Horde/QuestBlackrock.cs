@@ -6,27 +6,23 @@ using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 {
-  public sealed class QuestBlackrock : QuestData : QuestData{
+  public sealed class QuestBlackrock : QuestData{
 
   
     private const int QUEST_RESEARCH_ID = FourCC("R03C");
   
 
 
-    protected override string CompletionPopup => 
-      return "Blackrock Citadel has been subjugated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "Blackrock Citadel has been subjugated, && its military is now free to assist the " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Blackrock Citadel && enable DalFourCC(rend Blackhand to be trained at the altar";
-    }
+    protected override string CompletionDescription => "Control of all units in Blackrock Citadel && enable DalFourCC(rend Blackhand to be trained at the altar";
 
     private void GrantBlackrock(player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
 
       //Transfer all Neutral Passive units in Blackrock
-      GroupEnumUnitsInRect(tempGroup, gg_rct_BlackrockUnlock, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.BlackrockUnlock.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }

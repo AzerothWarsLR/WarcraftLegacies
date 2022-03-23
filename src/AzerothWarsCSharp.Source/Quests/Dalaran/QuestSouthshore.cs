@@ -9,20 +9,16 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
   public sealed class QuestSouthshore : QuestData{
 
 
-    protected override string CompletionPopup => 
-      return "The Murlocs have been defeated, Southshore is safe.";
-    }
+    protected override string CompletionPopup => "The Murlocs have been defeated, Southshore is safe.";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Southshore";
-    }
+    protected override string CompletionDescription => "Control of all units in Southshore";
 
     private void GrantSouthshore(player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
 
       //Transfer all Neutral Passive units in Southshore
-      GroupEnumUnitsInRect(tempGroup, gg_rct_SouthshoreUnlock, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.SouthshoreUnlock.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }

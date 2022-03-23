@@ -12,20 +12,16 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
   
 
 
-    protected override string CompletionPopup => 
-      return "The City of Gold is now yours to command && has joined the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "The City of Gold is now yours to command && has joined the " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Control of all units in Zandalar && enables the Golden Fleet to be built";
-    }
+    protected override string CompletionDescription => "Control of all units in Zandalar && enables the Golden Fleet to be built";
 
     private void OnFail( ){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_ZandalarUnlock, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.ZandalarUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete(){
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_ZandalarUnlock, this.Holder.Player);
+      GeneralHelpers.RescueNeutralUnitsInRect(Regions.ZandalarUnlock.Rect, this.Holder.Player);
       if (GetLocalPlayer() == this.Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\ZandalarTheme.mp3" );
       }

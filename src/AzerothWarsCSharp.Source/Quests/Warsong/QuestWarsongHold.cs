@@ -14,13 +14,9 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
   
 
 
-    protected override string CompletionPopup => 
-      return "The Warsong Clan has sail for the icy shores of Northrend && up a formidable encampment at Borean Tundra.";
-    }
+    protected override string CompletionPopup => "The Warsong Clan has sail for the icy shores of Northrend && up a formidable encampment at Borean Tundra.";
 
-    protected override string CompletionDescription => 
-      return "A new base at Borean Tundra in Northrend";
-    }
+    protected override string CompletionDescription => "A new base at Borean Tundra in Northrend";
 
     protected override void OnComplete(){
       unit boreanTundra = ControlPoint.GetFromUnitType(FourCC("n00G")).Unit;

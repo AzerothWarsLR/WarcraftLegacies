@@ -11,13 +11,9 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
   
 
 
-    protected override string CompletionPopup => 
-      return "The Frostwolves have been ousted from Kalimdor, along with their Tauren allies. They will !be missed.";
-    }
+    protected override string CompletionPopup => "The Frostwolves have been ousted from Kalimdor, along with their Tauren allies. They will !be missed.";
 
-    protected override string CompletionDescription => 
-      return "The demihero Amara && the hero Jarod";
-    }
+    protected override string CompletionDescription => "The demihero Amara && the hero Jarod";
 
     protected override void OnComplete(){
       SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);

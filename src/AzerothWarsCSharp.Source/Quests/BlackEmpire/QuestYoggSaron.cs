@@ -6,20 +6,16 @@ using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 {
-  public sealed class QuestYoggSaron : QuestData : QuestData{
+  public sealed class QuestYoggSaron : QuestData{
 
   
     private const int RESEARCH_ID = FourCC("R07R");
   
 
 
-    protected override string CompletionPopup => 
-      return "Yogg-Saron has been awoken";
-    }
+    protected override CompletionPopup => Yogg-Saron has been awoken;
 
-    protected override string CompletionDescription => 
-      return "The old god Yogg-Saron will join the Black Empire && enable to train Forgotten ones";
-    }
+    protected override string CompletionDescription => "The old god Yogg-Saron will join the Black Empire && enable to train Forgotten ones";
 
     protected override void OnComplete(){
       GeneralHelpers.UnitRescue(gg_unit_U02C_2829, this.Holder.Player)  ;//Yogg

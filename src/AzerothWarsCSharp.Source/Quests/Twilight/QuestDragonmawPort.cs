@@ -9,20 +9,16 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
   public sealed class QuestDragonmawPort : QuestData{
 
 
-    protected override string CompletionPopup => 
-      return "Dragonmaw Port has fallen under our control && its military is now free to assist the " + this.Holder.Team.Name + ".";
-    }
+    protected override string CompletionPopup => "Dragonmaw Port has fallen under our control && its military is now free to assist the " + this.Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => 
-      return "Control of all buildings in Dragonmaw Port";
-    }
+    protected override string CompletionDescription => "Control of all buildings in Dragonmaw Port";
 
     private void GrantDragonmawPort(player whichPlayer ){
       group tempGroup = CreateGroup();
       unit u;
 
       //Transfer all Neutral Passive units in DragonmawPort
-      GroupEnumUnitsInRect(tempGroup, gg_rct_DragonmawUnlock, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.DragonmawUnlock.Rect, null);
       u = FirstOfGroup(tempGroup);
       while(true){
         if ( u == null){ break; }

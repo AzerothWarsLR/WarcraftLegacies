@@ -11,13 +11,9 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
   
 
 
-    protected override string CompletionPopup => 
-      return "With the SeaFourCC(s now secure, the Ember Order can be reformed && Lucille Waycrest is trainable";
-    }
+    protected override string CompletionPopup => "With the SeaFourCC(s now secure, the Ember Order can be reformed && Lucille Waycrest is trainable";
 
-    protected override string CompletionDescription => 
-      return "The Order of Embers is reborn && Lucille Waycrest is trainable";
-    }
+    protected override string CompletionDescription => "The Order of Embers is reborn && Lucille Waycrest is trainable";
 
     protected override void OnComplete(){
 

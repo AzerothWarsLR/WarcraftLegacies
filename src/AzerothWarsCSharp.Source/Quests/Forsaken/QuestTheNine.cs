@@ -7,13 +7,9 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
   public sealed class QuestTheNine : QuestData{
 
 
-    protected override string CompletionPopup => 
-      return "Enable up to 9 ValFourCC(kyr join their ranks.";
-    }
+    protected override string CompletionPopup => "Enable up to 9 ValFourCC(kyr join their ranks.";
 
-    protected override string CompletionDescription => 
-      return "Enable 9 ValFourCC(kyr to be raised";
-    }
+    protected override string CompletionDescription => "Enable 9 ValFourCC(kyr to be raised";
 
     protected override void OnComplete(){
       FACTION_FORSAKEN.ModObjectLimit(FourCC("u01V"), 5)           ;//Valyr

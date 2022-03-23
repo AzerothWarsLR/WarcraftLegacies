@@ -16,9 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
 
     }
 
-    protected override string CompletionDescription => 
-      return "Control of the Crossroads";
-    }
+    protected override string CompletionDescription => "Control of the Crossroads";
 
     private void GiveCrossroads(player whichPlayer ){
       unit u;
