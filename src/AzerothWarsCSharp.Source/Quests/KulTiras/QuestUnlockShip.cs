@@ -40,7 +40,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       SetUnitOwner(gg_unit_h08T_0260, Holder.Player, true);
     }
 
-    public  thistype ( ){
+    public  QuestUnlockShip ( ){
       thistype this = thistype.allocate("The Zandalar Menace", "The Troll Empire of Zandalar is a danger to the safety of KulFourCC("tiras && the Alliance. Before setting sail, we must eliminate them.", "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp"");
       AddQuestItem(new QuestItemControlLegend(LEGEND_DAZARALOR, false));
       AddQuestItem(new QuestItemControlLegend(LEGEND_BORALUS, true));

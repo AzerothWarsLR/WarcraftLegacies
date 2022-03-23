@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
     }
 
-    public  thistype ( ){
+    public  QuestCrystalGolem ( ){
 
       this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02R"))));
       this.AddQuestItem(new QuestItemControlLegend(LEGEND_DRAKTHARONKEEP, false));

@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
     }
 
-    public  thistype ( ){
+    public  QuestScholomanceBuild ( ){
 
       this.AddQuestItem(new QuestItemBuild(FourCC("u011"), 2));
       this.AddQuestItem(new QuestItemBuild(FourCC("h08C"), 20));

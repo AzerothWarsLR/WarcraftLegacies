@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       DestroyEffect(AddSpecialEffect("Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl", GetUnitX(LEGEND_KELTHUZAD.Unit), GetUnitY(LEGEND_KELTHUZAD.Unit)));
     }
 
-    public  thistype ( ){
+    public  QuestKelthuzad ( ){
       thistype this = thistype.allocate("Life Beyond Death", "KelFourCC("thuzad is the leader of the Cult of the Damned && an extraordinarily powerful necromancer. If he were to be brought to the Sunwell && submerged in its waters, he would be reanimated as an immortal Lich.", "ReplaceableTextures\\CommandButtons\\BTNLichVersion2blp"");
       this.AddQuestItem(new QuestItemControlLegend(LEGEND_SUNWELL, false));
       this.AddQuestItem(new QuestItemLegendInRect(LEGEND_KELTHUZAD, Regions.Sunwell.Rect, "The Sunwell"));

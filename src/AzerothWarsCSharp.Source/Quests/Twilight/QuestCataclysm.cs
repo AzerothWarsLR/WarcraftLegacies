@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       Holder.ModObjectLimit(CataclysmResearch, UNLIMITED);
     }
 
-    public  thistype ( ){
+    public  QuestCataclysm ( ){
       thistype this = thistype.allocate("The Cataclysm", "The Old GodFourCC("s will is finnicky, you are !privy to when their plan will be in motion, but when it is, your cult will be ready to welcome it.", "ReplaceableTextures\\CommandButtons\\BTNDeathwing.blp"");
       AddQuestItem(new QuestItemControlLegend(LEGEND_DEATHWING, false));
       ;;

@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
 
     protected override string CompletionDescription => "Enable to train Mounted Archers";
 
-    public  thistype ( ){
+    public  QuestArathiVolunteers ( ){
       thistype this = thistype.allocate("Arathi Volunteers", "The men of Stromgrade should join us in the fight.", "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionCastle.blp");
       this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01K"))));
       this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01Z"))));

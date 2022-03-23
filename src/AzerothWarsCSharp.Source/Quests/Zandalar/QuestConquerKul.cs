@@ -45,7 +45,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       DestroyGroup(tempGroup);
     }
 
-    public  thistype ( ){
+    public  QuestConquerKul ( ){
       thistype this = thistype.allocate("Conquer Boralus", "The KulFourCC("tiran people && their fleet have been a threat to the Zandalari Empire for ages, it is time to put them to rest. ", "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp"");
       AddQuestItem(new QuestItemControlLegend(LEGEND_DAZARALOR, true));
       AddQuestItem(new QuestItemLegendDead(LEGEND_BORALUS));

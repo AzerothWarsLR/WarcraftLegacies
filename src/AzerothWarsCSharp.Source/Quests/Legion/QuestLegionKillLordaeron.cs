@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       AddHeroAttributes(LEGEND_TICHONDRIUS.Unit, 15, 15, 15);
     }
 
-    public  thistype ( ){
+    public  QuestLegionKillLordaeron ( ){
       thistype this = thistype.allocate("Token Resistance", "The Kingdom of Lordaeron must be eliminated to pave the way for the LegionFourCC("s arrival.", "ReplaceableTextures\\CommandButtons\\BTNTichondrius.blp"");
       AddQuestItem(new QuestItemLegendDead(LEGEND_CAPITALPALACE));
       AddQuestItem(new QuestItemLegendDead(LEGEND_STRATHOLME));

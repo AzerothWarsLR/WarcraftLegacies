@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       GeneralHelpers.RescueUnitsInGroup(udg_MaievUnlockOutland, this.Holder.Player);
     }
 
-    public  thistype ( ){
+    public  QuestMaievOutland ( ){
       thistype this = thistype.allocate("Driven by Vengeance", "Maiev drive for vengeance leads her to chase Illidan all the way to other worlds.", "ReplaceableTextures\\CommandButtons\\BTNMaievArmor.blp");
       this.AddQuestItem(new QuestItemCastSpell(FourCC("A0J5"), true));
       this.AddQuestItem(new QuestItemControlLegend(LEGEND_MAIEV, true));

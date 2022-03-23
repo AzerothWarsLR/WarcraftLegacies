@@ -62,7 +62,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       Holder.ModObjectLimit(QuestResearchId, 1);
     }
 
-    public  thistype ( ){
+    public  QuestDalaran ( ){
       thistype this = thistype.allocate("Outskirts", "The territories of Dalaran are fragmented, secure the lands && protect Dalaran citizens .", "ReplaceableTextures\\CommandButtons\\BTNArcaneCastle.blp");
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01D"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08M"))));

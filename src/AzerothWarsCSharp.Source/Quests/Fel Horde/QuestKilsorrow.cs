@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     protected override void OnAdd( ){
     }
 
-    public  thistype ( ){
+    public  QuestKilsorrow ( ){
       thistype this = thistype.allocate("KilFourCC("sorrow Fortress", "This sinister fortress will serve the Fel Horde well, clear the surrounding lands to establish it", "ReplaceableTextures\\CommandButtons\\BTNFelOrcWatchTower.blp"");
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n09X"))));
       AddQuestItem(new QuestItemExpire(1452));

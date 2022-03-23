@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       KillUnit(gg_unit_n0BU_0220);
     }
 
-    public  thistype ( ){
+    public  QuestFirstWave ( ){
       thistype this = thistype.allocate("Broken Civilisation", "The Fel Orc attack will begin at any moment, the Draenei need to evacuate their civilians aboard the Exodar", "ReplaceableTextures\\CommandButtons\\BTNDraeneiDivineCitadel.blp");
       AddQuestItem(new QuestItemTime(720));
       this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_EXODARSHIP));

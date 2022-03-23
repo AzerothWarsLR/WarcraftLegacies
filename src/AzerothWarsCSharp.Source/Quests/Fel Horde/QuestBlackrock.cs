@@ -49,7 +49,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       Holder.ModObjectLimit(QuestResearchId, 1);
     }
 
-    public  thistype ( ){
+    public  QuestBlackrock ( ){
       thistype this = thistype.allocate("Blackrock Unification", "Make contact with the Blackrock clan && convince them to join Magtheridon", "ReplaceableTextures\\CommandButtons\\BTNBlackhand.blp");
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00S"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n09Y"))));

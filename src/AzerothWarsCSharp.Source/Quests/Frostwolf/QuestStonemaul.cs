@@ -48,7 +48,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     protected override void OnAdd( ){
     }
 
-    public  thistype ( ){
+    public  QuestStonemaul ( ){
       thistype this = thistype.allocate("The ChieftainFourCC("s Challenge", "The Ogres of Stonemaul follow the strongest, slay the Chieftain to gain control of the base.", "ReplaceableTextures\\CommandButtons\\BTNOneHeadedOgre.blp"");
       AddQuestItem(QuestItemKillUnit.create(gg_unit_noga_1228)) ;//Korgall
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n022"))));

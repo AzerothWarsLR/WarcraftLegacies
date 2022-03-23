@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       this.Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
     }
 
-    public  thistype ( ){
+    public  QuestDruidsKillFrostwolf ( ){
       thistype this = thistype.allocate("Natural Contest", "The Frostwolf Clan has arrived on the shores of Kalimdor. Though their respect of the wild spirits is to be admired, their presence can!be tolerated.", "ReplaceableTextures\\CommandButtons\\BTNHeroTaurenChieftain.blp");
       this.AddQuestItem(new QuestItemLegendDead(LEGEND_THUNDERBLUFF));
       ;;

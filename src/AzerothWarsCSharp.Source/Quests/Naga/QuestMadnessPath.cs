@@ -70,7 +70,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       WaygateSetDestinationLocBJ( gg_unit_h01D_3384, GetRectCenter(gg_rct_NazjatarEntrance2) );
     }
 
-    public  thistype ( ){
+    public  QuestMadnessPath ( ){
       thistype this = thistype.allocate("Voices in the Void", "Azshara takes command of the Naga in the name of NFourCC("zoth. Illidan")s reign is no more.", "ReplaceableTextures\\CommandButtons\\BTNGuardianofTheSea.blp");
       AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("n055")));
       this.AddQuestItem(new QuestItemLegendNotDead(LEGEND_ILLIDAN));

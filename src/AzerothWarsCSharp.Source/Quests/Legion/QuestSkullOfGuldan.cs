@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       ARTIFACT_SKULLOFGULDAN.setStatus(ARTIFACT_STATUS_GROUND);
     }
 
-    public  thistype ( ){
+    public  QuestSkullOfGuldan ( ){
       thistype this = thistype.allocate("The Skull of GulFourCC("dan", "The Skull of the master warlock Gul")dan is protected by the Mages of Dalaran. It rightfully belongs to the Legion.", "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp");
       _questItemAnyUnitInRect = this.AddQuestItem(new QuestItemAnyUnitInRect(Regions.DalaranDungeon, "Dalaran Dungeons".Rect, true));
       this.AddQuestItem(new QuestItemEitherOf.create(QuestItemLegendDead.create(LEGEND_ILLIDAN), QuestItemFactionDefeated(FACTION_NAGA)));

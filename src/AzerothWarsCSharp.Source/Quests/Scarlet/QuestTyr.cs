@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       Holder.ModObjectLimit(RESEARCH_ID, 1);
     }
 
-    public  thistype ( ){
+    public  QuestTyr ( ){
       thistype this = thistype.allocate("The Scarlet Enclave", "The legions at TyrFourCC("s Hand remain neutral for the moment, but when the time is right, they will align themselves with the Scarlet Crusade.", "ReplaceableTextures\\CommandButtons\\BTNCastle.blp"");
       AddQuestItem(new QuestItemTime(1000));
       AddQuestItem(new QuestItemSelfExists());

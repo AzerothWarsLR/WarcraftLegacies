@@ -49,7 +49,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       GiveCrossroads(this.Holder.Player);
     }
 
-    public  thistype ( ){
+    public  QuestCrossroads ( ){
       thistype this = thistype.allocate("The Crossroads", "The Horde still needs to establish a strong strategic foothold into Kalimdor. There is an opportune crossroads nearby.", "ReplaceableTextures\\CommandButtons\\BTNBarracks.blp");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_nrzm_0113)) ;//Razorman Medicine Man
       this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01T"))));

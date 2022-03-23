@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
     protected override void OnAdd( ){
     }
 
-    public  thistype ( ){
+    public  QuestEmbassy ( ){
       thistype this = thistype.allocate("Infernal Foothold", "A stronger foothold in this world will be required to field the Burning LegionFourCC("s war machines && to in more of its lieutenants.", "ReplaceableTextures\\CommandButtons\\BTNDemonBlackCitadel.blp"");
       this.AddQuestItem(new QuestItemUpgrade(FourCC("e01H"), )e01F)));
       this.ResearchId = FourCC("R042");

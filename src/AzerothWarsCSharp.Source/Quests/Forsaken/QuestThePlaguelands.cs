@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
     }
 
 
-    public  thistype ( ){
+    public  QuestThePlaguelands ( ){
       thistype this = thistype.allocate("The Plaguelands", "The ravaged lands of Lordaeron must be conquered by the Forsaken, their survival depends on it", "ReplaceableTextures\\CommandButtons\\BTNNathanosBlightcaller.blp");
       AddQuestItem(new QuestItemControlLegend(LEGEND_NATHANOS, false));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01F"))));

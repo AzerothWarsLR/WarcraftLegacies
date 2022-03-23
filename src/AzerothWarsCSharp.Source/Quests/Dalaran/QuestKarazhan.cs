@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       Holder.ModObjectLimit(FourCC("R01B"), UNLIMITED)   ;//A Treatise on Barriers
     }
 
-    public  thistype ( ){
+    public  QuestKarazhan ( ){
       thistype this = thistype.allocate("Secrets of Karazhan", "The spire of Medivh stands mysteriously idle. Dalaran could make use of its grand magicks.", "ReplaceableTextures\\CommandButtons\\BTNTomeBrown.blp");
       AddQuestItem(new QuestItemControlLegend(LEGEND_KARAZHAN, false));
       ;;

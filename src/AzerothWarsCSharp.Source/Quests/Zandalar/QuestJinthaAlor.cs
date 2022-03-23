@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       this.Holder.ModObjectLimit(JINTHAALOR_RESEARCH, UNLIMITED);
     }
 
-    public  thistype ( ){
+    public  QuestJinthaAlor ( ){
       thistype this = thistype.allocate("The Ancient Egg", "The Vilebranch trolls of JinthaFourCC("Alor are controlled by their fear of the Soulflayer")s egg, hidden within their shrine. Smash it to gain their loyalty.", "ReplaceableTextures\\CommandButtons\\BTNForestTrollShadowPriest.blp");
       this.AddQuestItem(new QuestItemControlLegend(LEGEND_JINTHAALOR, false));
       ;;

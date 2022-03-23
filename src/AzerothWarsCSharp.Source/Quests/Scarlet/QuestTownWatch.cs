@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
     protected override void OnAdd( ){
     }
 
-    public  thistype ( ){
+    public  QuestTownWatch ( ){
       thistype this = thistype.allocate("The Cult of the Damned", "Unholy Cultists are spreading a deadly plague among the villages of Lordaeron. We must stop them, prevent the corruption, && kill all the Cultists.", "ReplaceableTextures\\CommandButtons\\BTNAcolyte.blp");
       this.AddQuestItem(new QuestItemResearch(FourCC("Rhse"), )h083)));
       this.AddQuestItem(new QuestItemBuild(FourCC("h084"), 8));

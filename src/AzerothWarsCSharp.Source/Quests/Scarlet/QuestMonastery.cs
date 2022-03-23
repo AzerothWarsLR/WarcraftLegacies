@@ -44,7 +44,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       Holder.ModObjectLimit(RESEARCH_ID, 1);
     }
 
-    public  thistype ( ){
+    public  QuestMonastery ( ){
       thistype this = thistype.allocate("The Secret Cloister", "The Scarlet Monastery is the perfect place for the secret base of the Scarlet Crusade.", "ReplaceableTextures\\CommandButtons\\BTNDivine_Reckoning_Icon.blp");
       AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("h00T")));
       AddQuestItem(new QuestItemSelfExists());

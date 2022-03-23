@@ -59,7 +59,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }
 
-    public  thistype ( ){
+    public  QuestShoresOfNorthrend ( ){
       thistype this = thistype.allocate("Shores of Northrend", "MalFourCC("ganis") citadel lies somewhere within the arctic wastes of the north. In order to assault the Dreadlord, Arthas must first establish a base camp at the shores of Northrend.", "ReplaceableTextures\\CommandButtons\\BTNHumanTransport.blp");
       AddQuestItem(new QuestItemControlLegend(LEGEND_ARTHAS, true));
       AddQuestItem(new QuestItemLegendDead(LEGEND_SCHOLOMANCE));

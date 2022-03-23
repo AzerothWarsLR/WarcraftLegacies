@@ -54,7 +54,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       Holder.ModObjectLimit(QuestResearchId, 1);
     }
 
-    public  thistype ( ){
+    public  QuestHellfire ( ){
       thistype this = thistype.allocate("The Citadel", "The clans holding Hellfire Citadel do !respect Kargath authority yet, destroy Murmur to finally establish Magtheridon as the undisputable king of Outland", "ReplaceableTextures\\CommandButtons\\BTNFelOrcFortress.blp");
       AddQuestItem(new QuestItemLegendDead(LEGEND_EXODARSHIP));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01J"))));

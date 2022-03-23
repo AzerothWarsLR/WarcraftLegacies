@@ -51,7 +51,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       Holder.ModObjectLimit(RESEARCH_ID, 1);
     }
 
-    public  thistype ( ){
+    public  QuestDominion ( ){
       thistype this = thistype.allocate("Dwarven Dominion", "The Dwarven Dominion must be established before Ironforge can join the war.", "ReplaceableTextures\\CommandButtons\\BTNNorthrendCastle.blp");
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n017"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n014"))));

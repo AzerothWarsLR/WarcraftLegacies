@@ -39,7 +39,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       SetPlayerStateBJ( Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300 );
     }
 
-    public  thistype ( ){
+    public  QuestLichKingArthas ( ){
       thistype this = thistype.allocate("The Ascension", "From within the depths of the Frozen Throne, the Lich King NerFourCC("zhul cries out for his champion. Release the Helm of Domination from its confines && merge its power with that of the Scourge")s greatest Death Knight.", "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp");
       AddQuestItem(new QuestItemControlLegend(LEGEND_ARTHAS, false));
       this.AddQuestItem(new QuestItemLegendLevel(LEGEND_ARTHAS, 12));

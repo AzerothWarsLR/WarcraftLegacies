@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       tempGroup = null;
     }
 
-    public  thistype ( ){
+    public  QuestKillDraenei ( ){
       thistype this = thistype.allocate("The Shattrah Massacre", "The Draenei race existence insults the Fel Horde demon masters, slaughter them all ", "ReplaceableTextures\\CommandButtons\\BTNChaosWolfRider.blp");
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n09X"))));
       AddQuestItem(new QuestItemLegendDead(LEGEND_EXODARSHIP));

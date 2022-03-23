@@ -53,7 +53,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       Holder.ModObjectLimit(QuestResearchId, 1);
     }
 
-    public  thistype ( ){
+    public  QuestSeaWitch ( ){
       thistype this = thistype.allocate("Riders on the Storm", "Warchief Thrall && his forces have been shipwrecked on the Darkspear Isles. Kill the Sea Witch there to give them a chance to rebuild their fleet && escape.", "ReplaceableTextures\\CommandButtons\\BTNGhost.blp");
       AddQuestItem(new QuestItemKillUnit(LEGEND_SEAWITCH.Unit));
       AddQuestItem(new QuestItemExpire(600));

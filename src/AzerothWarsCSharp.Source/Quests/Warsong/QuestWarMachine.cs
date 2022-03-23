@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       this.Holder.ModObjectLimit(FourCC("R021"), UNLIMITED);
     }
 
-    public  thistype ( ){
+    public  QuestWarMachine ( ){
       thistype this = thistype.allocate("The War Machine", "The bountiful woodlands of Ashenvale are now accessible to the Horde. It is time to begin harvesting && armament operations.", "ReplaceableTextures\\CommandButtons\\BTNBundleOfLumber.blp");
       this.AddQuestItem(new QuestItemResearch(FourCC("R021"), )o01I)));
       ;;

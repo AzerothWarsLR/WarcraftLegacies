@@ -54,7 +54,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       Holder.ModObjectLimit(HeroId, 1);
     }
 
-    public  thistype ( ){
+    public  QuestStromgarde ( ){
       thistype this = thistype.allocate("Stromgarde", "Although StromgardeFourCC("s strength has dwindled since the days of the Arathorian Empire, it remains a significant bastion of humanity. They could be convinced to mobilize their forces for Stormwind.", "ReplaceableTextures\\CommandButtons\\BTNTheCaptain.blp"");
       _questItemAnyUnitInRect = QuestItemAnyUnitInRect.create(Regions.Stromgarde, "Stromgarde".Rect, true);
       this.AddQuestItem(_questItemAnyUnitInRect);

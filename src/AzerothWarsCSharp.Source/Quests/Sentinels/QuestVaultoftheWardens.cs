@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       Holder.ModObjectLimit(ResearchId, 1);
     }
 
-    public  thistype ( ){
+    public  QuestVaultoftheWardens ( ){
       thistype this = thistype.allocate("Vault of the Wardens", "In millenia past, the most vile entities of Azeroth were imprisoned in a facility near Zin-Ashari. The Broken Isles, now raised from the sea floor, would be a strategic location for a newer edition of such a prison.", "ReplaceableTextures\\CommandButtons\\BTNReincarnationWarden.blp");
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n05Y"))));
       AddQuestItem(new QuestItemSelfExists());

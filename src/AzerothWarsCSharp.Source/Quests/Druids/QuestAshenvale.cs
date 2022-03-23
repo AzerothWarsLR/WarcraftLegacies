@@ -47,7 +47,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       }
     }
 
-    public  thistype ( ){
+    public  QuestAshenvale ( ){
       thistype this = thistype.allocate("The Spirits of Ashenvale", "The forest needs healing. Regain control of it to summon itFourCC("s Guardian, the Demigod Cenarius", "ReplaceableTextures\\CommandButtons\\BTNKeeperC.blp"");
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_MALFURION, Regions.AshenvaleUnlock.Rect, "Ashenvale"));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n07C"))));

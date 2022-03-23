@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       Holder.ModObjectLimit(RESEARCH_ID, 1);
     }
 
-    public  thistype ( ){
+    public  QuestArgentDawn ( ){
       thistype this = thistype.allocate("The Argent Dawn", "The Militia of Lordaeron has been solidified into the Argent Dawn, a strong military force lead by Tirion Fording.", "ReplaceableTextures\\CommandButtons\\BTNResurrection.blp");
       AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("h00T")));
       AddQuestItem(new QuestItemSelfExists());

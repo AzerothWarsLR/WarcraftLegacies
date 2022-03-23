@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       AdjustPlayerStateBJ( 100, Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
     }
 
-    public  thistype ( ){
+    public  QuestAstranaar ( ){
       thistype this = thistype.allocate("Astranaar Stronghold", "Darkshore is under attack by some Murloc. We should deal with them swiftly and){ make for the Astranaar Outpost. Clearing the Murlocs will also reestablish communication with Darnassus.", "ReplaceableTextures\\CommandButtons\\BTNMurloc.blp");
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_TYRANDE, Regions.AstranaarUnlock.Rect, "Astranaar Outpost"));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02U"))));

@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       _questToDiscover.Progress = QUEST_PROGRESS_INCOMPLETE;
     }
 
-    public  thistype (QuestData questToDiscover ){
+    public  QuestIllidanChapterOne (QuestData questToDiscover ){
       thistype this = thistype.allocate("Chapter One: The Aetheneum Secrets", "In order to gain the power he craves, Illidan must plunder the hidden Aetheneum library for its secrets.", "ReplaceableTextures\\CommandButtons\\BTNDoomlord.blp");
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.DireMaulEntrance.Rect, "Feralas"));
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.AethneumLibraryEntrance.Rect, "the Aetheneum Library"));

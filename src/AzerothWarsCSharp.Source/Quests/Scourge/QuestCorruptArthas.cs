@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       Holder.ModObjectLimit(HeroId, 1);
     }
 
-    public  thistype ( ){
+    public  QuestCorruptArthas ( ){
       thistype this = thistype.allocate("The Culling", "When the city of Stratholme, Prince Arthas will abandon his people && join the Scourge as their champion.", "ReplaceableTextures\\CommandButtons\\BTNHeroDeathKnight.blp");
       AddQuestItem(new QuestItemLegendDead(LEGEND_STRATHOLME));
       this.AddQuestItem(new QuestItemEitherOf.create(QuestItemLegendDead.create(LEGEND_ARTHAS), QuestItemFactionDefeated(FACTION_LORDAERON)));

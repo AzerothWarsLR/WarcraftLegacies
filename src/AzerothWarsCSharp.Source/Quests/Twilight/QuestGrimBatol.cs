@@ -31,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
     protected override void OnAdd( ){
     }
 
-    public  thistype ( ){
+    public  QuestGrimBatol ( ){
       thistype this = thistype.allocate("The Cursed Fortress", "The mountain fortress of Grim Batol will be the perfect stronghold for the Twilight hammer clan. It has served well in the past && will do so again.", "ReplaceableTextures\\CommandButtons\\BTNFortressWC2blp");
       AddQuestItem(new QuestItemLegendDead(LEGEND_VAELASTRASZ));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n03X"))));

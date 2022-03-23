@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       RescueNeutralUnitsInRect(Regions.DrakUnlock.Rect, Holder.Player);
     }
 
-    public  thistype ( ){
+    public  QuestDrakUnlock ( ){
       thistype this = thistype.allocate("DrakFourCC("taron Keep", "Drak")taron)s Keep will be the place for an outpost by the sea.", "ReplaceableTextures\\CommandButtons\\BTNUndeadShipyard.blp");
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n030"))));
       AddQuestItem(new QuestItemControlLegend(LEGEND_DRAKTHARONKEEP, false));

@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       this.Holder.ModObjectLimit(GUNDRAK_RESEARCH, UNLIMITED);
     }
 
-    public  thistype ( ){
+    public  QuestGundrak ( ){
       thistype this = thistype.allocate("The Drakkari Fortress", "The Drakkari troll of Gundrak believe their fortress to be impregnable. Capture it to gain their loyalty.", "ReplaceableTextures\\CommandButtons\\BTNTerrorTroll.blp");
       this.AddQuestItem(new QuestItemControlLegend(LEGEND_GUNDRAK, false));
       ;;

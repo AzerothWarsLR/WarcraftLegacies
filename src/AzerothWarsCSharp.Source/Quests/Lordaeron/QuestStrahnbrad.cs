@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       RescueNeutralUnitsInRect(Regions.StrahnbradUnlock.Rect, Holder.Player);
     }
 
-    public  thistype ( ){
+    public  QuestStrahnbrad ( ){
       thistype this = thistype.allocate("The Defense of Strahnbrad", "The Strahnbrad is under attack by some brigands, clear them out", "ReplaceableTextures\\CommandButtons\\BTNFarm.blp");
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01C"))));
       AddQuestItem(new QuestItemExpire(1170));

@@ -105,7 +105,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       }
     }
 
-    public  thistype ( ){
+    public  QuestExiled ( ){
       thistype this = thistype.allocate("The Exile from Outland", "The Draenei need to escape Outland through the Exodar ship. We will need to power it up with a Divine Citadel first. The longer you hold out, the better the rewards will be", "ReplaceableTextures\\CommandButtons\\BTNUndeadAirBarge.blp");
       this.AddQuestItem(new QuestItemEitherOf.create(QuestItemResearch.create(RESEARCH_ID, FourCC("h09W")), QuestItemTime(782)));
       this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_EXODARSHIP));

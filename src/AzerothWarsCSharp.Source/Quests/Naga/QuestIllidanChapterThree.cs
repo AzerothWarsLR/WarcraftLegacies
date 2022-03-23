@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       SetUnitInvulnerable(gg_unit_n045_3377, true);
     }
 
-    public  thistype ( ){
+    public  QuestIllidanChapterThree ( ){
       thistype this = thistype.allocate("Chapter Three: Dwellers from the Deep", "Awakening the Naga will give Illidan the army he needs to achieve his goals.", "ReplaceableTextures\\CommandButtons\\BTNNagaMyrmidon.blp");
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.StartQuest3.Rect, "the exit"));
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.MaelstromAmbient.Rect, "the Maelstrom"));

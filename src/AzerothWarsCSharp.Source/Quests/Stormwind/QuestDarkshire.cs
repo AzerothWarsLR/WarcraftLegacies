@@ -43,7 +43,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     protected override void OnAdd( ){
     }
 
-    public  thistype ( ){
+    public  QuestDarkshire ( ){
       thistype this = thistype.allocate("Gnoll troubles", "The town of Darkshire is under attack by GnollFourCC("s, clear them out!", "ReplaceableTextures\\CommandButtons\\BTNGnollArcher.blp"");
       AddQuestItem(QuestItemKillUnit.create(gg_unit_ngnv_0586)) ;//Gnoll Overseer
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00V"))));

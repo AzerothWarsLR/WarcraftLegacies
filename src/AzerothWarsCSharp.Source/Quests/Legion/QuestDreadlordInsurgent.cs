@@ -47,7 +47,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       }
     }
 
-    public  thistype ( ){
+    public  QuestDreadlordInsurgent ( ){
       thistype this = thistype.allocate("Dreadlord Insurgent", "Varimathras has branched out && tried to take control of the Plaguelands, Sylvanas will try && make him join her cause", "ReplaceableTextures\\CommandButtons\\BTNHeroDreadLord.blp");
       this.AddQuestItem(new QuestItemResearch(FourCC("R08H"), )n040)));
       ;;

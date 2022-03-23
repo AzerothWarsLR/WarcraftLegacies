@@ -52,7 +52,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       Holder.ModObjectLimit(QuestResearchId, 1);
     }
 
-    public  thistype ( ){
+    public  QuestStormwindCity ( ){
       thistype this = thistype.allocate("Clear the Outskirts", "The outskirts of Stormwind are infested by evil creatures. Kill their leaders && regain control of the Towns.", "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionCastle.blp");
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00V"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00Z"))));

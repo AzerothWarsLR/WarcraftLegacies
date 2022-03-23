@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     }
 
 
-    public  thistype ( ){
+    public  QuestGoldshire ( ){
       thistype this = thistype.allocate("The Scourge of Elwynn", "Hogger && his pack have taken over Goldshire, clear them out!", "ReplaceableTextures\\CommandButtons\\BTNGnoll.blp");
       AddQuestItem(QuestItemKillUnit.create(gg_unit_n021_2624)) ;//Hogger
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00Z"))));

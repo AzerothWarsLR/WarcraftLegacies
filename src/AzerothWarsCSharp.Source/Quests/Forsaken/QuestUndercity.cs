@@ -47,7 +47,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
     }
 
-    public  thistype ( ){
+    public  QuestUndercity ( ){
       thistype this = thistype.allocate("Forsaken Independance", "The Forsaken had enough of living under the tyranny of the Lich King. Sylvanas has vowed to give them their freedom back && a home", "ReplaceableTextures\\CommandButtons\\BTNForsakenArrows.blp");
       AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("h08B")));
       AddQuestItem(new QuestItemLegendInRect(LEGEND_SYLVANASV, Regions.Terenas.Rect, "Capital City"));

@@ -43,7 +43,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }
 
-    public  thistype ( ){
+    public  QuestKingdomOfManLordaeron ( ){
       thistype this = thistype.allocate("Kingdom of Man", "Before the First War, all of humanity was united under the banner of the Arathorian Empire. Reclaim its greatness by uniting mankind once again.", "ReplaceableTextures\\CommandButtons\\BTNFireKingCrown.blp");
       AddQuestItem(new QuestItemControlLegend(LEGEND_ARTHAS, true));
       AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_CROWNLORDAERON));

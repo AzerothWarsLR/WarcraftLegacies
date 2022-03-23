@@ -60,7 +60,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       }
     }
 
-    public  thistype ( ){
+    public  QuestTempestKeep ( ){
       thistype this = thistype.allocate("In Search of Masters", "The Blood Elves are starved for magic; they need to search for more powerful sources of it. Maybe Outland is the answer to their plight.", "ReplaceableTextures\\CommandButtons\\BTNBloodelvenWarrior.blp");
       this.AddQuestItem(new QuestItemCastSpell(FourCC("A0IP"), true));
       this.AddQuestItem(new QuestItemControlLegend(LEGEND_KAEL, true));

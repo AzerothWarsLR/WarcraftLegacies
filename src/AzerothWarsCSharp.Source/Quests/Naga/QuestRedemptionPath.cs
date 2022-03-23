@@ -64,7 +64,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       WaygateSetDestinationLocBJ( gg_unit_h01D_3384, GetRectCenter(gg_rct_NazjatarEntrance2) );
     }
 
-    public  thistype ( ){
+    public  QuestRedemptionPath ( ){
       thistype this = thistype.allocate("The Brothers Stormrage", "Illidan follows his heart && seeks forgivness from Malfurion. United by their brotherly bond && their desire to protect Tyrande, they decide to unite their forces once again.", "ReplaceableTextures\\CommandButtons\\BTNDemonHunter2blp");
       AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("n055")));
       AddQuestItem(new QuestItemControlLegend(LEGEND_ILLIDAN, true));

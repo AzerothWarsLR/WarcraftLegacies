@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 
     protected override string CompletionDescription => "Gain the hero Zakajz the Corruptor";
 
-    public  thistype ( ){
+    public  QuestIntoTheVoid ( ){
       thistype this = thistype.allocate("The Tomb of Tyr", "Long ago, Zakajz the Corruptor was killed by the Keeper Tyr && entombed with him. Only XalFourCC("atath, the Black Blade, is powerful enough to summon him.", "ReplaceableTextures\\CommandButtons\\BTNGeneralVezax.blp"");
       AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_XALATATH));
       AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_XALATATH, Regions.TyrsFall.Rect, "TyrFourCC("s Fall""));

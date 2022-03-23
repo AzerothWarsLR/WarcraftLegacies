@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 
     }
 
-    public  thistype ( ){
+    public  QuestSafeSea ( ){
       thistype this = thistype.allocate("Safe Sea Decree", "The seas must be secured && the KulFourCC("tiras navy must be returned to its former glory!", "ReplaceableTextures\\CommandButtons\\BTNKulTirasDreadnought.blp"");
       this.AddQuestItem(new QuestItemTrain(FourCC("hdes"),)hshy), 2));
       this.AddQuestItem(new QuestItemTrain(FourCC("h04J"),)hshy), 1));

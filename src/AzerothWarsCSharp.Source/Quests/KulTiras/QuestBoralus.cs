@@ -31,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
     }
 
-    public  thistype ( ){
+    public  QuestBoralus ( ){
       thistype this = thistype.allocate("The City at Sea", "Proudmoore is stranded at sea. Rejoin Boralus to take control of the city.", "ReplaceableTextures\\CommandButtons\\BTNHumanShipyard.blp");
       this.AddQuestItem(new QuestItemResearch(FourCC("R04R"), )h06I)));
       this.AddQuestItem(new QuestItemUpgrade(FourCC("h06I"), )h062)));

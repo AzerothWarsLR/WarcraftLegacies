@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       UnitRescue(gg_unit_U02C_2829, Holder.Player)  ;//Yogg
     }
 
-    public  thistype ( ){
+    public  QuestYoggSaron ( ){
       thistype this = thistype.allocate("Fiend of a Thousand Faces", "Yogg-Saron was imprisoned beneath Northrend by the Titans countless millenia ago. ", "ReplaceableTextures\\CommandButtons\\BTNYogg-saronIcon.blp");
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n053"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00I"))));

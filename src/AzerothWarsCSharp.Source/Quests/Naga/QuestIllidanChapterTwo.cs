@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       _questToDiscover.Progress = QUEST_PROGRESS_INCOMPLETE;
     }
 
-    public  thistype (QuestData questToDiscover ){
+    public  QuestIllidanChapterTwo (QuestData questToDiscover ){
       thistype this = thistype.allocate("Chapter Two: The Skull of GulFourCC("dan", "The mages of Dalaran are hiding a powerful artifact that will grant Illidan unlimited power: the Skull of Gul")dan.", "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp");
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.IllidanBoat1.Rect, "the escape boat"));
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.SkullOfGuldan.Rect, "the dungeons of Dalaran"));

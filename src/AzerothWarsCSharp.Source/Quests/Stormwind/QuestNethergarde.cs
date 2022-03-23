@@ -43,7 +43,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     protected override void OnAdd( ){
     }
 
-    public  thistype ( ){
+    public  QuestNethergarde ( ){
       thistype this = thistype.allocate("Nethergarde relief", "The nethergarde fort is holding down the Dark Portal, they will need to be reinforced soon!", "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionBarracks.blp");
       AddQuestItem(new QuestItemLegendInRect(LEGEND_VARIAN, Regions.NethergardeUnlock.Rect, "Nethergarde"));
       AddQuestItem(new QuestItemExpire(1440));

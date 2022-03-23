@@ -50,7 +50,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
     }
 
 
-    public  thistype ( ){
+    public  QuestLiberateLordaeron ( ){
       thistype this = thistype.allocate("Liberation of Lordaeron", "The lands of Lordaeron are overrun by corruption. Everything must be purged!", "ReplaceableTextures\\CommandButtons\\BTNNorthrendCastle.blp");
       AddQuestItem(new QuestItemControlLegend(LEGEND_BRIGITTE, false));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01F"))));

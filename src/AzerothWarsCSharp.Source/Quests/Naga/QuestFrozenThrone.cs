@@ -31,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       SetPlayerTechResearched(FACTION_QUELTHALAS.Player, FourCC("R075"), 1);
     }
 
-    public  thistype ( ){
+    public  QuestFrozenThrone ( ){
       thistype this = thistype.allocate("A Symphony of Frost && Flame", "KilFourCC("jaeden has ordered Illidan to destroy the Frozen Throne, && he shall obey.", "ReplaceableTextures\\CommandButtons\\BTNMetamorphosis.blp"");
       AddQuestItem(new QuestItemKillUnit(LEGEND_LICHKING.Unit));
       this.AddQuestItem(new QuestItemResearch(FourCC("R063"), )n055)));

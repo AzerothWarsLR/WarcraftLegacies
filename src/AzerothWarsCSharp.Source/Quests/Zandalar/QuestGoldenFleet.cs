@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
     }
 
-    public  thistype ( ){
+    public  QuestGoldenFleet ( ){
 
       this.AddQuestItem(new QuestItemTrain(FourCC("o04W"),)o049), 5));
       ResearchId = QUEST_RESEARCH_ID;

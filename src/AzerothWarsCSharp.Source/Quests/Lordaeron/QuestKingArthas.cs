@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       LEGEND_ARTHAS.ClearUnitDependencies();
     }
 
-    public  thistype ( ){
+    public  QuestKingArthas ( ){
       thistype this = thistype.allocate("Line of Succession", "Arthas Menethil is the one true heir of the Kingdom of Lordaeron. The only thing standing in the way of his coronation is the world-ending threat of the Scourge.", "ReplaceableTextures\\CommandButtons\\BTNArthas.blp");
       this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_CAPITALPALACE));
       AddQuestItem(new QuestItemControlLegend(LEGEND_ARTHAS, true));

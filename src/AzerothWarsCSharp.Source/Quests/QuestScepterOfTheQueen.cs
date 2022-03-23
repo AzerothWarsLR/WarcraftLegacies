@@ -47,7 +47,7 @@ namespace AzerothWarsCSharp.Source.Quests
       Holder.ModObjectLimit(thistype.researchId, UNLIMITED);
     }
 
-    public  thistype ( ){
+    public  QuestScepterOfTheQueen ( ){
       thistype this = thistype.allocate("Return to the Fold", "Remnants of the ancient Highborne survive within the ruins of Dire Maul. If Stonemaul falls, it would be safe for them to come out.", "ReplaceableTextures\\CommandButtons\\BTNNagaWeaponUp2blp");
       this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_FEATHERMOON));
       AddQuestItem(new QuestItemLegendDead(LEGEND_STONEMAUL));

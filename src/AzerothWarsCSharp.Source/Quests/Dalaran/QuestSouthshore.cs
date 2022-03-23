@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     }
 
 
-    public  thistype ( ){
+    public  QuestSouthshore ( ){
       thistype this = thistype.allocate("Murloc Troubles", "A small murloc skirmish is attacking Southshore, push them back", "ReplaceableTextures\\CommandButtons\\BTNMurloc.blp");
       AddQuestItem(QuestItemKillUnit.create(gg_unit_nmrm_0204)) ;//Murloc
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08M"))));

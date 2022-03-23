@@ -58,7 +58,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       }
     }
 
-    public  thistype ( ){
+    public  QuestMalfurionAwakens ( ){
       thistype this = thistype.allocate("Awakening of Stormrage", "Ever since the War of the Ancients ten thousand years ago, Malfurion Stormrage && his druids have slumbered within the Barrow Den. Now, their help is required once again.", "ReplaceableTextures\\CommandButtons\\BTNFurion.blp");
       AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_HORNOFCENARIUS));
       AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_HORNOFCENARIUS, Regions.Moonglade.Rect, "The Barrow Den"));

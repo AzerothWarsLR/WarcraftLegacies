@@ -56,7 +56,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       Holder.ModObjectLimit(QuestResearchId, 1);
     }
 
-    public  thistype ( ){
+    public  QuestSilvermoon ( ){
       thistype this = thistype.allocate("The Siege of Silvermoon", "Silvermoon has been besieged by Trolls. Clear them out && destroy their city of ZulFourCC("aman.", "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp"");
       AddQuestItem(QuestItemKillUnit.create(gg_unit_O00O_1933)) ;//Zul)jin
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01V"))));

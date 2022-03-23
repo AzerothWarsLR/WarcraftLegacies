@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       SetUnitInvulnerable(gg_unit_Nsjs_1887, true);
     }
 
-    public  thistype ( ){
+    public  QuestChenStormstout ( ){
       thistype this = thistype.allocate("The Wandering Brewmaster", "Rumours tell of a strange white-furred creature from a foreign land. Perhaps it could be convinced to join the Horde.", "ReplaceableTextures\\CommandButtons\\BTNPandarenBrewmaster.blp");
       this.AddQuestItem(new QuestItemAnyUnitInRect(Regions.Chen, "Chen Stormstout".Rect, false));
       AddQuestItem(new QuestItemSelfExists());

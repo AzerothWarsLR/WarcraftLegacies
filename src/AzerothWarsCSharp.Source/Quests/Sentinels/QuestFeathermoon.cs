@@ -49,7 +49,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       }
     }
 
-    public  thistype ( ){
+    public  QuestFeathermoon ( ){
       thistype this = thistype.allocate("Feathermoon Stronghold", "Feathermoon Stronghold stood guard for ten thousand years, it is time to relieve the guards from their duty.", "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp");
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_TYRANDE, Regions.FeathermoonUnlock.Rect, "Feathermoon Stronghold"));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01R"))));

@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
     }
 
-    public  thistype ( ){
+    public  QuestSpreadTheWord ( ){
       thistype this = thistype.allocate("Spread the Whispers of the Old God", "The world shall hear the whispers of the Old God. Spread the visions of the end", "ReplaceableTextures\\CommandButtons\\BTNOldGodWhispers.blp");
       this.AddQuestItem(new QuestItemBuild(FourCC("o03C"), 1));
       this.AddQuestItem(new QuestItemTrain(FourCC("obot"),)o03I), 3));

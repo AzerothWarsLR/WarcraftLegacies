@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       }
     }
 
-    public  thistype ( ){
+    public  QuestSummonLegion ( ){
       thistype this = thistype.allocate("Under the Burning Sky", "The greater forces of the Burning Legion lie in wait in the vast expanse of the Twisting Nether. Use the Book of Medivh to tear open a hole in space-time, && visit the full might of the Legion upon Azeroth.", "ReplaceableTextures\\CommandButtons\\BTNArchimonde.blp");
       AddQuestItem(new QuestItemCastSpell(RitualId, false));
       ResearchId = FourCC("R04B");

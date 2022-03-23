@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       RemoveUnit(gg_unit_n05J_3370);
     }
 
-    public  thistype ( ){
+    public  QuestClosePortal ( ){
       thistype this = thistype.allocate("Seal the Dark Portal", "The Dark Portal has been a menace to the Kingdom of Stormwind for decades, it is time to end the menace once && for all.", "ReplaceableTextures\\CommandButtons\\BTNDarkPortal.blp");
       AddQuestItem(new QuestItemChannelRect(Regions.ClosePortal, "The Dark Portal", LEGEND_KHADGAR, 480.Rect, 270));
       ;;

@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     protected override void OnAdd( ){
     }
 
-    public  thistype ( ){
+    public  QuestShadowfang ( ){
       thistype this = thistype.allocate("Shadows of Silverspine Forest", "The woods of Silverspine are unsafe for travellers, they need to be investigated", "ReplaceableTextures\\CommandButtons\\BTNworgen.blp");
       AddQuestItem(QuestItemKillUnit.create(gg_unit_o02J_0984)) ;//Worgen
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01D"))));

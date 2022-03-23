@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
     }
 
 
-    public  thistype ( ){
+    public  QuestDunMorogh ( ){
       thistype this = thistype.allocate("Mountain Village", "A small troll skirmish is attacking Dun Morogh. Push them back!", "ReplaceableTextures\\CommandButtons\\BTNIceTrollShadowPriest.blp");
       AddQuestItem(QuestItemKillUnit.create(gg_unit_nith_1625)) ;//Troll
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n014"))));

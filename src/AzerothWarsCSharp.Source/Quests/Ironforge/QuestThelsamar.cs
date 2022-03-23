@@ -40,7 +40,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
     }
 
 
-    public  thistype ( ){
+    public  QuestThelsamar ( ){
       thistype this = thistype.allocate("Murloc Menace", "A vile group of Murloc is terrorizing Thelsamar. Destroy them!", "ReplaceableTextures\\CommandButtons\\BTNMurlocNightCrawler.blp");
       AddQuestItem(QuestItemKillUnit.create(gg_unit_N089_1494)) ;//Murloc
       AddQuestItem(new QuestItemExpire(1435));

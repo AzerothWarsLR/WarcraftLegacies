@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       tempGroup = null;
     }
 
-    public  thistype ( ){
+    public  QuestHonorHold ( ){
       thistype this = thistype.allocate("Honor Hold", "Despite OutlandFourCC("s incredibly harsh climate, some Alliance forces have managed to make a home there - a town called Honor Hold", "ReplaceableTextures\\CommandButtons\\BTNHumanBarracks.blp"");
       AddQuestItem(new QuestItemLegendDead(LEGEND_HELLFIRECITADEL));
       ;;

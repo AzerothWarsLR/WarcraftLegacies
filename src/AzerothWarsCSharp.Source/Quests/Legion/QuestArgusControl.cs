@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       GeneralHelpers.UnitRescue(gg_unit_n0BE_3262, FACTION_LEGION.Player);
     }
 
-    public  thistype ( ){
+    public  QuestArgusControl ( ){
       thistype this = thistype.allocate("Argus Incursion", "The planet of Argus is !fully under the control of the Legion. Bring it under control!", "ReplaceableTextures\\CommandButtons\\BTNMastersLodge.blp");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_h09U_3138)) ;//Knight
       this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BF"))));

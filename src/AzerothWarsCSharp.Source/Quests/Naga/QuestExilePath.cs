@@ -73,7 +73,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       AdjustPlayerStateBJ( 800, Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
     }
 
-    public  thistype ( ){
+    public  QuestExilePath ( ){
       thistype this = thistype.allocate("A Parting of Ways", "Illidan must go his own way to find power, && Outland is the perfect place to acquire it.", "ReplaceableTextures\\CommandButtons\\BTNIllidanDemonicPower.blp");
       AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("n055")));
       AddQuestItem(new QuestItemControlLegend(LEGEND_ILLIDAN, true));

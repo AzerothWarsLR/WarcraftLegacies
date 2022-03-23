@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       SetDoodadAnimationRectBJ( "show", FourCC("ZCv1"), gg_rct_ScarletMonastery );
     }
 
-    public  thistype ( ){
+    public  QuestDemonGateMonastery ( ){
       thistype this = thistype.allocate("A Scarlet Rift", "The energies surrounding the Scarlet Monastery are extraordinary. Destroy this bastion of light to fabricate a Demon Gate in its place.", "ReplaceableTextures\\CommandButtons\\BTNMaskOfDeath.blp");
       _questItemKillMonastery = AddQuestItem(new QuestItemKillUnit(gg_unit_h00T_0786));
       ;;

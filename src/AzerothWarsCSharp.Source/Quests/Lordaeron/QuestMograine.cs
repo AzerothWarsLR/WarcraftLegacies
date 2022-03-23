@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       this.Holder.ModObjectLimit(HERO_ID, 1);
     }
 
-    public  thistype ( ){
+    public  QuestMograine ( ){
       thistype this = thistype.allocate("The Exile", "The Lich King, looming over Northrend from IcecrownFourCC("s peak, is the greatest threat Lordaeron has ever faced. He must be destroyed.", "ReplaceableTextures\\CommandButtons\\BTNAlexandros.blp"");
       this.AddQuestItem(new QuestItemLegendDead(LEGEND_LICHKING));
       this.ResearchId = FourCC("R06P");

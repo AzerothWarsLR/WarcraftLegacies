@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       UnitAddItemSafe(LEGEND_JAINA.Unit, ARTIFACT_SOULGEM.item);
     }
 
-    public  thistype ( ){
+    public  QuestJainaSoulGem ( ){
       thistype this = thistype.allocate("The Soul Gem", "Scholomance is home to a wide variety of profane artifacts. Bring Jaina there to see what might be discovered.", "ReplaceableTextures\\CommandButtons\\BTNSoulGem.blp");
       AddQuestItem(new QuestItemLegendInRect(LEGEND_JAINA, Regions.JainaSoulGem.Rect, "Scholomance"));
       AddQuestItem(new QuestItemLegendDead(LEGEND_SCHOLOMANCE));

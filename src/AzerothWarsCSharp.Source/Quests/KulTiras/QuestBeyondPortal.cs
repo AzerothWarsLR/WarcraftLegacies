@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 
     protected override string CompletionDescription => "You will be able to train Fusillier from the Barrack";
 
-    public  thistype ( ){
+    public  QuestBeyondPortal ( ){
       thistype this = thistype.allocate("Beyond the Dark Portal", "The Orc threat from Draenor still looms over all. Eliminate every trace of the Orcs && their bases.", "ReplaceableTextures\\CommandButtons\\BTNDarkPortal.blp");
       AddQuestItem(new QuestItemControlLegend(LEGEND_BLACKTEMPLE, false));
       AddQuestItem(new QuestItemLegendDead(LEGEND_HELLFIRECITADEL));

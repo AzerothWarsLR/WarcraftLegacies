@@ -54,7 +54,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       SetPlayerStateBJ( Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300 );
     }
 
-    public  thistype ( ){
+    public  QuestTheNexus ( ){
       thistype this = thistype.allocate("The Nexus", "The new Lich King calls for Jaina, tempts her with power. The Nexus needs a master, && Jaina is perfect for it.", "ReplaceableTextures\\CommandButtons\\BTNBlueDragonNexus.blp");
       AddQuestItem(new QuestItemChannelRect(Regions.JainaChannel, "The Nexus", LEGEND_JAINA, 60.Rect, 270));
       AddQuestItem(new QuestItemControlLegend(LEGEND_JAINA, true));

@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
     protected override string CompletionDescription => "You can summon Al-akir from the Altar";
 
 
-    public  thistype ( ){
+    public  QuestFeludius ( ){
       thistype this = thistype.allocate("Gift of the Windlord", "Bringing the Legendary Sword, Thunderfury, to Uldum will grant us the favors of AlFourCC("akir, the great Wind Elemental Lord", "ReplaceableTextures\\CommandButtons\\BTNfuryoftheair.blp"");
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BD"))));
       AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_THUNDERFURY, Regions.UldumAmbiance.Rect, "Uldum"));

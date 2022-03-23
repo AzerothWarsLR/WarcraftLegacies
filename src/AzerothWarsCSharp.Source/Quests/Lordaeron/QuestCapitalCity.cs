@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       Holder.ModObjectLimit(RESEARCH_ID, 1);
     }
 
-    public  thistype ( ){
+    public  QuestCapitalCity ( ){
       thistype this = thistype.allocate("Hearthlands", "The territories of Lordaeron are fragmented. Regain control of the old AllianceFourCC("s hold to secure the kingdom.", "ReplaceableTextures\\CommandButtons\\BTNCastle.blp"");
       AddQuestItem(new QuestItemControlLegend(LEGEND_CAERDARROW, false));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01M"))));

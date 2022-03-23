@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       Holder.Team = TEAM_ALLIANCE;
     }
 
-    public  thistype ( ){
+    public  QuestJoinAllianceDruid ( ){
       thistype this = thistype.allocate("Join the Alliance", "With a world ending threat happening, the Alliance has reached to the Night Elves to join them", "ReplaceableTextures\\CommandButtons\\BTNalliance.blp");
       AddQuestItem(new QuestItemCastSpell(FourCC("A0IG"), true));
       ;;

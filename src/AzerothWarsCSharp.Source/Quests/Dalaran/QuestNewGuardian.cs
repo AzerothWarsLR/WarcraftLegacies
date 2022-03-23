@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       LEGEND_JAINA.PermaDies = false;
     }
 
-    public  thistype ( ){
+    public  QuestNewGuardian ( ){
       thistype this = thistype.allocate("Guardian of Tirisfal", "Medivh's death left Azeroth without a Guardian. The spell book he left behind could be used to empower a new one.", "ReplaceableTextures\\CommandButtons\\BTNAstral Blessing.blp"");
       this.AddQuestItem(new QuestItemLegendLevel(LEGEND_JAINA, 15));
       this.AddQuestItem(new QuestItemLegendHasArtifact(LEGEND_JAINA, ARTIFACT_BOOKOFMEDIVH));

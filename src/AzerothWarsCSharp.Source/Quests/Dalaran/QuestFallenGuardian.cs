@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       Holder.ModObjectLimit(MedivhId, 1);
     }
 
-    public  thistype ( ){
+    public  QuestFallenGuardian ( ){
       thistype this = thistype.allocate("The Fallen Guardian", "Medivh's body was corrupted by Sargeras at conception. Now that he is dead, the secrets of the Tomb of Sargeras and Karazhan combined might allow the mages of Dalaran to cleanse his spirit.", "ReplaceableTextures\\CommandButtons\\BTNMedivh.blp");
       AddQuestItem(new QuestItemControlLegend(LEGEND_KARAZHAN, false));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00J"))));

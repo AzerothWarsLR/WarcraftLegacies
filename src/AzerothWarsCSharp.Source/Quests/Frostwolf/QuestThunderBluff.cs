@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       }
     }
 
-    public  thistype ( ){
+    public  QuestThunderBluff ( ){
       thistype this = thistype.allocate("The Long March", "The Tauren have been wandering for too long. The plains of Mulgore would offer respite from this endless journey.", "ReplaceableTextures\\CommandButtons\\BTNCentaurKhan.blp");
       this.AddQuestItem(new QuestItemLegendDead(LEGEND_CENTAURKHAN));
       this.AddQuestItem(new QuestItemAnyUnitInRect(Regions.ThunderBluff, "Thunder Bluff".Rect, true));

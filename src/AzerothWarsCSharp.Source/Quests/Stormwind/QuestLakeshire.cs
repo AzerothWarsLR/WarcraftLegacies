@@ -43,7 +43,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     protected override void OnAdd( ){
     }
 
-    public  thistype ( ){
+    public  QuestLakeshire ( ){
       thistype this = thistype.allocate("Marauding Ogres", "The town of Lakeshire is invaded by Ogres, wipe them out!", "ReplaceableTextures\\CommandButtons\\BTNOgreLord.blp");
       AddQuestItem(QuestItemKillUnit.create(gg_unit_nogl_0621)) ;//Ogre Lord
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n011"))));

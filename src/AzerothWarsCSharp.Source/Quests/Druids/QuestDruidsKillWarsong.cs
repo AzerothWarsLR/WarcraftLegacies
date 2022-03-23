@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       Holder.ModObjectLimit(UNITTYPE_ID, 6) ;//Siege Ancient
     }
 
-    public  thistype ( ){
+    public  QuestDruidsKillWarsong ( ){
       thistype this = thistype.allocate("Enemies at the Gate", "Arriving from another planet && across the seas of Azeroth, the Orcs of the Warsong Clan have arrived to ravage the wilderness && consume its bounty. They must be stopped.", "ReplaceableTextures\\CommandButtons\\BTNHellScream.blp");
       AddQuestItem(new QuestItemLegendDead(LEGEND_STONEMAUL));
       ;;

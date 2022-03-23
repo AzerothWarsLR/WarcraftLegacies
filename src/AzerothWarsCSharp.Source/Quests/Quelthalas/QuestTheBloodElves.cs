@@ -90,7 +90,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       tempGroup = null;
     }
 
-    public  thistype ( ){
+    public  QuestTheBloodElves ( ){
       thistype this = thistype.allocate("The Blood Elves", "The Elves of QuelFourCC("thalas have a deep reliance on the Sunwell")s magic. Without it, they would have to turn to darker magicks to sate themselves.", "ReplaceableTextures\\CommandButtons\\BTNHeroBloodElfPrince.blp");
       AddQuestItem(new QuestItemControlLegend(LEGEND_DRAKTHARONKEEP, false));
       AddQuestItem(new QuestItemControlLegend(LEGEND_ANASTERIAN, true));

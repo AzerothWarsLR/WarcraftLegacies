@@ -44,7 +44,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       Holder.ModObjectLimit(ResearchId, UNLIMITED);
     }
 
-    public  thistype ( ){
+    public  QuestKingdomOfManStormwind ( ){
       thistype this = thistype.allocate("Kingdom of Man", "Before the First War, all of humanity was united under the banner of the Arathorian Empire. Reclaim its greatness by uniting mankind once again.", "ReplaceableTextures\\CommandButtons\\BTNFireKingCrown.blp");
       this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_VARIAN));
       AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_CROWNLORDAERON));

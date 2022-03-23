@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       Holder.Team = TEAM_ALLIANCE;
     }
 
-    public  thistype ( ){
+    public  QuestJoinAllianceNaga ( ){
       thistype this = thistype.allocate("Join the Alliance", "The Alliance has invited the Night Elves to join them in the face of a looming world threat.", "ReplaceableTextures\\CommandButtons\\BTNalliance.blp");
       AddQuestItem(new QuestItemCastSpell(FourCC("A0IG"), true));
       AddQuestItem(new QuestItemControlLegend(LEGEND_ALTRUIS, true));

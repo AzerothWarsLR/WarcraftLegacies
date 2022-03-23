@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       Holder.ModObjectLimit(HeroId, 1);
     }
 
-    public  thistype ( ){
+    public  QuestTortolla ( ){
       thistype this = thistype.allocate("The Turtle Demigod", "Tortolla was badly wounded during the War of the Ancients, && has been resting ever since.", "ReplaceableTextures\\CommandButtons\\BTNSeaTurtleGreen.blp");
       AddQuestItem(new QuestItemTime(1200));
       AddQuestItem(QuestItemSelfExists);

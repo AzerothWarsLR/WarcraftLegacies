@@ -31,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
     }
 
-    public  thistype ( ){
+    public  QuestZandalar ( ){
       thistype this = thistype.allocate("City of Gold", "We need to regain control of our land.", "ReplaceableTextures\\CommandButtons\\BTNBloodTrollMage.blp");
       this.AddQuestItem(new QuestItemResearch(FourCC("R04R"), )o03Z)));
       this.AddQuestItem(new QuestItemUpgrade(FourCC("o03Z"), )o03Y)));

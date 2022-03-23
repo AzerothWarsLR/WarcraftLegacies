@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       SUMMON_KIL.Progress = QUEST_PROGRESS_INCOMPLETE;
     }
 
-    public  thistype ( ){
+    public  QuestGreatTreachery ( ){
       thistype this = thistype.allocate("The Great Treachery", "KilFourCC("jaeden has approached Kael with an offer of power && salvation for his people. Only by accepting will his hunger for magic by satiated.", "ReplaceableTextures\\CommandButtons\\BTNFelKaelthas.blp"");
       AddQuestItem(new QuestItemCastSpell(FourCC("A0IF"), true));
       this.AddQuestItem(new QuestItemLegendLevel(LEGEND_KAEL, 6));
