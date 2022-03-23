@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
@@ -32,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Legends
       LEGEND_MALYGOS.StartingXp = 10900;
 
       LEGEND_DALARAN = new Legend();
-      LEGEND_DALARAN.Unit = gg_unit_h002_0230;
+      LEGEND_DALARAN.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h002"));
       LEGEND_DALARAN.DeathMessage = "The Violet Citadel, the ultimate bastion of arcane knowledge in the Eastern Kingdoms, crumbles like a sand castle.";
       LEGEND_DALARAN.IsCapital = true;
 

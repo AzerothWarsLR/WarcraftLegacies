@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
@@ -24,18 +25,18 @@ namespace AzerothWarsCSharp.Source.Legends
 
       LEGEND_MAGNI = new Legend();
       LEGEND_MAGNI.UnitType = FourCC("H00S");
-      LEGEND_MAGNI.AddUnitDependency(gg_unit_h001_0180);
+      LEGEND_MAGNI.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("h001")));
       LEGEND_MAGNI.DeathMessage = "King Magni Bronzebeard has died.";
       LEGEND_MAGNI.Essential = true;
       LEGEND_MAGNI.StartingXp = 1000;
 
       LEGEND_GREATFORGE = new Legend();
-      LEGEND_GREATFORGE.Unit = gg_unit_h001_0180;
+      LEGEND_GREATFORGE.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h001"));
       LEGEND_GREATFORGE.DeathMessage = "The Great Forge has been extinguished.";
       LEGEND_GREATFORGE.IsCapital = true;
 
       LEGEND_THELSAMAR = new Legend();
-      LEGEND_THELSAMAR.Unit = gg_unit_h05H_1847;
+      LEGEND_THELSAMAR.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h05H"));
     }
 
   }

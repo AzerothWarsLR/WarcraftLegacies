@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
@@ -20,11 +21,11 @@ namespace AzerothWarsCSharp.Source.Legends
       LEGEND_NOBUNDO.StartingXp = 1800;
 
       LEGEND_EXODAR = new Legend();
-      LEGEND_EXODAR.Unit = gg_unit_o05E_1583;
+      LEGEND_EXODAR.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o05E"));
       LEGEND_EXODAR.IsCapital = true;
 
       LEGEND_EXODARSHIP = new Legend();
-      LEGEND_EXODARSHIP.Unit = gg_unit_h09W_3303;
+      LEGEND_EXODARSHIP.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h09W"));
 
       LEGEND_MARAAD = new Legend();
       LEGEND_MARAAD.UnitType = FourCC("H09S");

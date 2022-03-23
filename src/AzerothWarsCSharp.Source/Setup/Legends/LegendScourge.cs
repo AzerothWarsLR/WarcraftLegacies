@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
@@ -41,13 +42,13 @@ namespace AzerothWarsCSharp.Source.Legends
 
       LegendUtgarde = new Legend
       {
-        Unit = gg_unit_h00O_2516,
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h00O")),
         Capturable = true
       };
 
       LegendLichking = new Legend
       {
-        Unit = gg_unit_u000_0649,
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("u000")),
         Hivemind = true,
         DeathMessage =
           "The great Lich King has been destroyed. With no central mind to command them, the forces of the Undead have gone rogue."

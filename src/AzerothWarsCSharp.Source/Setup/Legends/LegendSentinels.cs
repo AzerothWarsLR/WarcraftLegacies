@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
@@ -20,11 +21,11 @@ namespace AzerothWarsCSharp.Source.Legends
       legendMaiev.UnitType = FourCC("Ewrd");
 
       legendAuberdine = new Legend();
-      legendAuberdine.Unit = gg_unit_e00J_0320;
+      legendAuberdine.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("e00J"));
       legendAuberdine.IsCapital = true;
 
       legendFeathermoon = new Legend();
-      legendFeathermoon.Unit = gg_unit_e00M_2545;
+      legendFeathermoon.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("e00M"));
       legendFeathermoon.IsCapital = true;
 
       legendTyrande = new Legend();

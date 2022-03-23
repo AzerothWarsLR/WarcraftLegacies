@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
@@ -46,7 +47,7 @@ namespace AzerothWarsCSharp.Source.Legends
 
       Legend.Register(legendNordrassil = new Legend
       {
-        Unit = gg_unit_n002_0130,
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("n002")),
         Capturable = true,
         IsCapital = true
       });

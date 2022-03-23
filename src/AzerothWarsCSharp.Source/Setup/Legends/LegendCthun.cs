@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
@@ -13,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Legends
     {
       legendCthun = new Legend
       {
-        Unit = gg_unit_U00R_0609,
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("U00R")),
         PermaDies = true,
         DeathMessage = "C'thun, God of the Qiraji, was once defeated by the Titans, and again by the combined Dragonflights. " +
                        "Today he experiences his third defeat his first true death."
@@ -28,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Legends
 
       legendGatesahnqiraj = new Legend
       {
-        Unit = gg_unit_h02U_2413
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h02U"))
       };
 
       legendYor = new Legend();

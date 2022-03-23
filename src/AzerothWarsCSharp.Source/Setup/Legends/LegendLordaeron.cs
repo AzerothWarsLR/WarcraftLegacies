@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
@@ -30,24 +31,24 @@ namespace AzerothWarsCSharp.Source.Legends
       LEGEND_GOODCHILD.StartingXp = 2800;
 
       LEGEND_CAPITALPALACE = new Legend();
-      LEGEND_CAPITALPALACE.Unit = gg_unit_h000_0406;
+      LEGEND_CAPITALPALACE.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h000"));
       LEGEND_CAPITALPALACE.DeathMessage = "The capital city of Lordaeron has been razed, && King Terenas is dead.";
       LEGEND_CAPITALPALACE.IsCapital = true;
 
       LEGEND_STRATHOLME = new Legend();
-      LEGEND_STRATHOLME.Unit = gg_unit_h01G_0885;
+      LEGEND_STRATHOLME.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h01G"));
       LEGEND_STRATHOLME.DeathMessage = "The majestic city of Stratholme has been destroyed.";
       LEGEND_STRATHOLME.IsCapital = true;
 
       LEGEND_TYRSHAND = new Legend();
-      LEGEND_TYRSHAND.Unit = gg_unit_h030_0839;
+      LEGEND_TYRSHAND.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h030"));
       LEGEND_TYRSHAND.DeathMessage = "TyrFourCC(s Hand, the bastion of human power in Lordaeron, has fallen.";
       LEGEND_TYRSHAND.IsCapital = true;
 
       LEGEND_UTHER = new Legend();
       LEGEND_UTHER.UnitType = FourCC("Huth");
-      LEGEND_UTHER.AddUnitDependency(gg_unit_h000_0406);
-      LEGEND_UTHER.AddUnitDependency(gg_unit_nico_0666);
+      LEGEND_UTHER.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("h000")));
+      LEGEND_UTHER.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nico")));
       LEGEND_UTHER.DeathMessage = "Uther the Lightbringer makes his last stand, perishing in the defense of the light. Lordaeron, && humanity itself, has lost one of its finest exemplars in this dark hour.";
       LEGEND_UTHER.PlayerColor = PLAYER_COLOR_LIGHT_BLUE;
       LEGEND_UTHER.StartingXp = 1000;
@@ -56,7 +57,7 @@ namespace AzerothWarsCSharp.Source.Legends
       LEGEND_ARTHAS.UnitType = FourCC("Hart");
       LEGEND_ARTHAS.PlayerColor = PLAYER_COLOR_BLUE;
       LEGEND_ARTHAS.AddUnitDependency(LEGEND_STRATHOLME.Unit);
-      LEGEND_ARTHAS.AddUnitDependency(gg_unit_nico_0666);
+      LEGEND_ARTHAS.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nico")));
       LEGEND_ARTHAS.Essential = true;
 
     }

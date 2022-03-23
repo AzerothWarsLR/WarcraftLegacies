@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
@@ -21,12 +22,12 @@ namespace AzerothWarsCSharp.Source.Legends
     public static void Setup()
     {
       legendSilvermoon = new Legend();
-      legendSilvermoon.Unit = gg_unit_h003_0418;
+      legendSilvermoon.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h003"));
       legendSilvermoon.DeathMessage = "The grand city of the high elves, Silvermoon, has been crushed by her enemies.";
       legendSilvermoon.IsCapital = true;
 
       legendSunwell = new Legend();
-      legendSunwell.Unit = gg_unit_n001_0165;
+      legendSunwell.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("n001"));
       legendSunwell.Capturable = true;
       legendSunwell.IsCapital = true;
 

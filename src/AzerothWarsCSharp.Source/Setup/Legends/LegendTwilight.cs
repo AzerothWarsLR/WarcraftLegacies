@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
@@ -15,12 +16,12 @@ namespace AzerothWarsCSharp.Source.Legends
 
     public static void Setup( ){
       LEGEND_TWILIGHTCITADEL = new Legend();
-      LEGEND_TWILIGHTCITADEL.Unit = gg_unit_h05U_0015;
+      LEGEND_TWILIGHTCITADEL.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h05U"));
       LEGEND_TWILIGHTCITADEL.DeathMessage = "The Twilight Citadel has been toppled. Already the land has begun to heal, but it may be decades before the permeating Old God stink fully dissipates from the Twilight Highlands.";
       LEGEND_TWILIGHTCITADEL.IsCapital = true;
 
       LEGEND_DEATHWING = new Legend();
-      LEGEND_DEATHWING.Unit = gg_unit_u01Y_0071;
+      LEGEND_DEATHWING.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("u01Y"));
       LEGEND_DEATHWING.PermaDies = true;
       LEGEND_DEATHWING.DeathMessage = "Deathwing, the Black Scourge, is no more. The Destroyer has finally been defeated.";
 

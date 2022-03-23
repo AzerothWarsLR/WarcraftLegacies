@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
@@ -26,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Legends
       LEGEND_KATHERINE.StartingXp = 1200;
 
       LEGEND_BORALUS = new Legend();
-      LEGEND_BORALUS.Unit = gg_unit_h046_0409;
+      LEGEND_BORALUS.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h046"));
       LEGEND_BORALUS.DeathMessage = "Boralus Keep has fallen";
 
     }

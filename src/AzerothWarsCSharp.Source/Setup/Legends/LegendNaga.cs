@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
@@ -19,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Legends
 
     public static void Setup( ){
       LEGEND_ILLIDAN = new Legend();
-      LEGEND_ILLIDAN.Unit = gg_unit_Eill_0748;
+      LEGEND_ILLIDAN.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("Eill"));
       LEGEND_ILLIDAN.PlayerColor = PLAYER_COLOR_PURPLE;
 
       LEGEND_VASHJ = new Legend();
@@ -42,18 +43,18 @@ namespace AzerothWarsCSharp.Source.Legends
       LEGEND_AKAMA.StartingXp = 4000;
 
       LEGEND_NZOTH = new Legend();
-      LEGEND_NZOTH.Unit = gg_unit_U01Z_1237;
+      LEGEND_NZOTH.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("U01Z"));
       LEGEND_NZOTH.DeathMessage = "NFourCC("zoth the Corruptor lay in wait for millenia before enacting final ploy. In the end, it was all for naught; N")zoth lies dead, && he will never witness the true floatization of his Black Empire.";
       LEGEND_NZOTH.PermaDies = true;
 
       LEGEND_NAZJATAR = new Legend();
-      LEGEND_NAZJATAR.Unit = gg_unit_n045_3377;
+      LEGEND_NAZJATAR.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("n045"));
       LEGEND_NAZJATAR.DeathMessage = "The Eternal Palace, the royal seat of Queen Azshara && the Nazjatar Empire, has been destroyed.";
       LEGEND_NAZJATAR.IsCapital = true;
       LEGEND_NAZJATAR.Hivemind = true;
 
       LEGEND_VAULT = new Legend();
-      LEGEND_VAULT.Unit = gg_unit_n05A_2845;
+      LEGEND_VAULT.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("n05A"));
       LEGEND_VAULT.DeathMessage = "The Aetheneum vault has been destroyed, && with it, ages of knowledge is lost.";
       LEGEND_VAULT.IsCapital = true;
     }

@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
@@ -21,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Legends
     public static void Setup( ){
       LegendMagtheridon = new Legend();
       LegendMagtheridon.UnitType = FourCC("Nmag");
-      LegendMagtheridon.AddUnitDependency(gg_unit_o00F_0659);
+      LegendMagtheridon.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("o00F")));
       LegendMagtheridon.DeathMessage = "Magtheridon’s eternal demon soul has been consumed, && his life permanently extinguished. The Lord of Outland has fallen.";
       LegendMagtheridon.Essential = true;
 
@@ -48,16 +49,16 @@ namespace AzerothWarsCSharp.Source.Legends
       LegendTeron.PlayerColor = PLAYER_COLOR_MAROON;
 
       LegendBlackrockspire = new Legend();
-      LegendBlackrockspire.Unit = gg_unit_o013_2507;
+      LegendBlackrockspire.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o013"));
       LegendBlackrockspire.DeathMessage = "Blackrock Spire has been razed.";
 
       LegendBlacktemple = new Legend();
-      LegendBlacktemple.Unit = gg_unit_o00F_0659;
+      LegendBlacktemple.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o00F"));
       LegendBlacktemple.IsCapital = true;
       LegendBlacktemple.Capturable = true;
 
       LegendHellfirecitadel = new Legend();
-      LegendHellfirecitadel.Unit = gg_unit_o008_0168;
+      LegendHellfirecitadel.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o008"));
       LegendHellfirecitadel.IsCapital = true;
     }
 

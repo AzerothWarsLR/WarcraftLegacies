@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
@@ -15,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Legends
 
     public static void Setup( ){
       LEGEND_ARCHIMONDE = new Legend();
-      LEGEND_ARCHIMONDE.Unit = gg_unit_Uwar_2344;
+      LEGEND_ARCHIMONDE.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("Uwar"));
       LEGEND_ARCHIMONDE.PermaDies = true;
       LEGEND_ARCHIMONDE.DeathMessage = "Archimonde the Defiler has been banished from Azeroth, marking the end of his second failed invasion.";
       LEGEND_ARCHIMONDE.StartingXp = 10800;

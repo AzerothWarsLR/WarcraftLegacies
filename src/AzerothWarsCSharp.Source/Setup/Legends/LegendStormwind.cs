@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
@@ -17,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Legends
     public static void Setup( ){
       LEGEND_VARIAN = new Legend();
       LEGEND_VARIAN.UnitType = FourCC("H00R");
-      LEGEND_VARIAN.AddUnitDependency(gg_unit_h00X_0007);
+      LEGEND_VARIAN.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("h00X")));
       LEGEND_VARIAN.DeathMessage = "The King of Stormwind dies a warrior’s death, defending hearth && family. The Wrynn Dynasty crumbles with his passing.";
       LEGEND_VARIAN.Essential = true;
       LEGEND_VARIAN.StartingXp = 1800;
@@ -34,12 +35,12 @@ namespace AzerothWarsCSharp.Source.Legends
       LEGEND_KHADGAR.StartingXp = 7000;
 
       LEGEND_STORMWINDKEEP = new Legend();
-      LEGEND_STORMWINDKEEP.Unit = gg_unit_h00X_0007;
+      LEGEND_STORMWINDKEEP.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h00X"));
       LEGEND_STORMWINDKEEP.DeathMessage = "Stormwind Keep, the capitol of the nation of Stormwind, has been destroyed!";
       LEGEND_STORMWINDKEEP.IsCapital = true;
 
       LEGEND_DARKSHIRE = new Legend();
-      LEGEND_DARKSHIRE.Unit = gg_unit_h03Y_0077;
+      LEGEND_DARKSHIRE.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h03Y"));
     }
 
   }

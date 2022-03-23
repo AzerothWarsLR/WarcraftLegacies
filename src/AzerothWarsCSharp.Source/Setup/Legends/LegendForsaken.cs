@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
@@ -25,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Legends
       LEGEND_VARIMATHRAS.PlayerColor = PLAYER_COLOR_RED;
 
       LEGEND_SCHOLOMANCE = new Legend();
-      LEGEND_SCHOLOMANCE.Unit = gg_unit_u012_1149;
+      LEGEND_SCHOLOMANCE.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("u012"));
       LEGEND_SCHOLOMANCE.DeathMessage = "Scholomance, the center of the ScourgeFourCC(s operations in Lordaeron, has been destroyed.";
     }
 

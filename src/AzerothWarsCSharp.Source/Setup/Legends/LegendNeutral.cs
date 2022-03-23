@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
@@ -41,117 +42,117 @@ namespace AzerothWarsCSharp.Source.Legends
 
     public static void Setup( ){
       legendRagnaros = new Legend();
-      legendRagnaros.Unit = gg_unit_N00D_1457;
+      legendRagnaros.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("N00D"));
       legendRagnaros.DeathMessage = "Ragnaros, the King of Fire && Lord of the Firelands, has been extinguished.";
 
       legendSeawitch = new Legend();
-      legendSeawitch.Unit = gg_unit_O02L_0340;
+      legendSeawitch.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("O02L"));
 
       legendAuchindoun = new Legend();
       legendAuchindoun.Capturable = true;
-      legendAuchindoun.Unit = gg_unit_h026_1207;
+      legendAuchindoun.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h026"));
 
       legendDraktharonkeep = new Legend();
       legendDraktharonkeep.Capturable = true;
-      legendDraktharonkeep.Unit = gg_unit_o016_0771;
+      legendDraktharonkeep.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o016"));
 
       legendOshugun = new Legend();
       legendOshugun.Capturable = true;
-      legendOshugun.Unit = gg_unit_h02Z_0726;
+      legendOshugun.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h02Z"));
 
       legendJinthaalor = new Legend();
       legendJinthaalor.Capturable = true;
-      legendJinthaalor.Unit = gg_unit_o02G_0310;
+      legendJinthaalor.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o02G"));
 
       legendShrineofulatek = new Legend();
       legendShrineofulatek.Capturable = true;
-      legendShrineofulatek.Unit = gg_unit_o00Q_0989;
+      legendShrineofulatek.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o00Q"));
 
       legendSeradane = new Legend();
       legendSeradane.Capturable = true;
-      legendSeradane.Unit = gg_unit_e014_3083;
+      legendSeradane.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("e014"));
 
       legendZulgurub = new Legend();
       legendZulgurub.Capturable = true;
-      legendZulgurub.Unit = gg_unit_o018_0017;
+      legendZulgurub.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o018"));
 
       legendDazaralor = new Legend();
       legendDazaralor.Capturable = true;
-      legendDazaralor.Unit = gg_unit_o00V_2194;
+      legendDazaralor.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o00V"));
 
       legendGundrak = new Legend();
       legendGundrak.Capturable = true;
-      legendGundrak.Unit = gg_unit_o00N_0704;
+      legendGundrak.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o00N"));
 
       legendDuskwoodgraveyard = new Legend();
       legendDuskwoodgraveyard.Capturable = true;
-      legendDuskwoodgraveyard.Unit = gg_unit_h01F_1161;
+      legendDuskwoodgraveyard.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h01F"));
 
       legendGrimbatol = new Legend();
       legendGrimbatol.Capturable = true;
-      legendGrimbatol.Unit = gg_unit_h01Z_0618;
+      legendGrimbatol.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h01Z"));
 
       legendEthelrethor = new Legend();
       legendEthelrethor.Capturable = true;
-      legendEthelrethor.Unit = gg_unit_h05I_0313;
+      legendEthelrethor.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h05I"));
 
       legendNexus = new Legend();
-      legendNexus.Unit = gg_unit_h04P_1732;
+      legendNexus.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h04P"));
       legendNexus.Capturable = true;
 
       legendKarazhan = new Legend();
-      legendKarazhan.Unit = gg_unit_h00G_0084;
+      legendKarazhan.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h00G"));
       legendKarazhan.Capturable = true;
 
       legendZulfarrak = new Legend();
       legendZulfarrak.Capturable = true;
-      legendZulfarrak.Unit = gg_unit_o00K_0150;
+      legendZulfarrak.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o00K"));
 
       legendFountainofhealth = new Legend();
       legendFountainofhealth.Capturable = true;
-      legendFountainofhealth.Unit = gg_unit_nfoh_0212;
+      legendFountainofhealth.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("nfoh"));
 
       legendFountainofhealthWetlands = new Legend();
       legendFountainofhealthWetlands.Capturable = true;
-      legendFountainofhealthWetlands.Unit = gg_unit_nfoh_2299;
+      legendFountainofhealthWetlands.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("nfoh"));
 
       legendFountainofhealthFeralas = new Legend();
       legendFountainofhealthFeralas.Capturable = true;
-      legendFountainofhealthFeralas.Unit = gg_unit_nfoh_0315;
+      legendFountainofhealthFeralas.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("nfoh"));
 
       legendFountainofhealthTomb = new Legend();
       legendFountainofhealthTomb.Capturable = true;
-      legendFountainofhealthTomb.Unit = gg_unit_nfoh_1904;
+      legendFountainofhealthTomb.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("nfoh"));
 
       legendFountainofhealthDalaran = new Legend();
       legendFountainofhealthDalaran.Capturable = true;
-      legendFountainofhealthDalaran.Unit = gg_unit_nfoh_1190;
+      legendFountainofhealthDalaran.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("nfoh"));
 
       legendFountainofblood = new Legend();
       legendFountainofblood.Capturable = true;
-      legendFountainofblood.Unit = gg_unit_nbfl_0094;
+      legendFountainofblood.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("nbfl"));
 
       legendCentaurkhan = new Legend();
-      legendCentaurkhan.Unit = gg_unit_ncnk_0573;
+      legendCentaurkhan.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("ncnk"));
 
       legendImmolthar = new Legend();
-      legendImmolthar.Unit = gg_unit_n04R_1914;
+      legendImmolthar.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("n04R"));
 
       legendVaelastrasz = new Legend();
-      legendVaelastrasz.Unit = gg_unit_nrwm_1981;
+      legendVaelastrasz.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("nrwm"));
 
       legendOcculus = new Legend();
-      legendOcculus.Unit = gg_unit_O025_3426;
+      legendOcculus.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("O025"));
       legendOcculus.PermaDies = true;
 
       legendSaragosa = new Legend();
-      legendSaragosa.Unit = gg_unit_nadr_0658;
+      legendSaragosa.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("nadr"));
 
       legendArugal = new Legend();
-      legendArugal.Unit = gg_unit_Hgam_1450;
+      legendArugal.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("Hgam"));
 
       legendCaerdarrow = new Legend();
-      legendCaerdarrow.Unit = gg_unit_u01M_0484;
+      legendCaerdarrow.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("u01M"));
       legendCaerdarrow.Capturable = true;
     }
 

@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
@@ -12,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Legends
     {
       Legend.Register(legendYogg = new Legend
       {
-        Unit = gg_unit_U02C_2829,
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("U02C")),
         PermaDies = true,
         DeathMessage =
           "Yogg-Saron, the Fiend of a Thousand Faces, has been vanquished. The countless souls consigned to his maw have finally been avenged."
