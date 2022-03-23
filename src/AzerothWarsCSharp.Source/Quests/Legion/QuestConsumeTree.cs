@@ -28,8 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
     public  thistype ( ){
       thistype this = thistype.allocate("Twilight of the Gods", "Consuming the World Tree will grant Archimonde immeasurable power && eliminate his mortal enemies, the Druids of Kalimdor, forever.", "ReplaceableTextures\\CommandButtons\\BTNGlazeroth.blp");
-      AddQuestItem(new QuestItemChannelRect(Regions.ArchimondeChannel, "The World Tree", LEGEND_ARCHIMONDE, 420.Rect, 90));
-      ;;
+      AddQuestItem(new QuestItemChannelRect(Regions.ArchimondeChannel, "The World Tree", LEGEND_ARCHIMONDE, 420, 90));
     }
 
 

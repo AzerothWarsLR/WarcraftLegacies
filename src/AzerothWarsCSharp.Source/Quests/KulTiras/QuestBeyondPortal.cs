@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       AddQuestItem(new QuestItemLegendDead(LEGEND_BLACKROCKSPIRE));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = QUEST_RESEARCH_ID;
-      ;;
+      
     }
 
 

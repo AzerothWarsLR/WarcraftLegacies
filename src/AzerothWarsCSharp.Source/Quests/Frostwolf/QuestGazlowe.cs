@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     public  thistype ( ){
       thistype this = thistype.allocate("Explosive Engineering", "The Horde needs engineering skills if (it is to thrive. The Goblins of Kezan could provide such expertise.", "ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp");
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n04Z"))));
-      ;;
+      
     }
 
 

@@ -56,7 +56,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0A9"))));
       AddQuestItem(new QuestItemExpire(1451));
       AddQuestItem(QuestItemSelfExists);
-      ;;
+      
     }
 
 

@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
     public  thistype ( ){
       thistype this = thistype.allocate("The Blood of Mannoroth", "Long ago, the orcs drank the blood of Mannoroth && were infused with demonic fury. A mere taste of his blood would reignite those powers.", "ReplaceableTextures\\CommandButtons\\BTNFountainOfLifeBlood.blp");
       AddQuestItem(new QuestItemControlLegend(LEGEND_FOUNTAINOFBLOOD, false));
-      ;;
+      
     }
 
 

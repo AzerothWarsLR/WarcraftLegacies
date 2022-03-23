@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01C"))));
       AddQuestItem(new QuestItemExpire(1170));
       AddQuestItem(new QuestItemSelfExists());
-      ;;
+      
     }
 
 

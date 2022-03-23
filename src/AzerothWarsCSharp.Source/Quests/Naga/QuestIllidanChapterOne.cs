@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.ImmolFight.Rect, "ImmolFourCC("thar")s Lair"));
       AddQuestItem(new QuestItemLegendDead(LEGEND_IMMOLTHAR));
       this._questToDiscover = questToDiscover;
-      ;;
+      
     }
 
 

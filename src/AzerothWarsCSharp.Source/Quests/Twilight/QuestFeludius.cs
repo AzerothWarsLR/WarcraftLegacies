@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BD"))));
       AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_THUNDERFURY, Regions.UldumAmbiance.Rect, "Uldum"));
       base.ResearchId = ResearchId;
-      ;;
+      
     }
 
 

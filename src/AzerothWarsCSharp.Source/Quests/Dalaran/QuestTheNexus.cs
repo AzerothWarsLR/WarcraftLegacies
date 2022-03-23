@@ -59,7 +59,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       AddQuestItem(new QuestItemChannelRect(Regions.JainaChannel, "The Nexus", LEGEND_JAINA, 60.Rect, 270));
       AddQuestItem(new QuestItemControlLegend(LEGEND_JAINA, true));
       AddQuestItem(new QuestItemControlLegend(LEGEND_NEXUS, false));
-      ;;
+      
     }
 
 

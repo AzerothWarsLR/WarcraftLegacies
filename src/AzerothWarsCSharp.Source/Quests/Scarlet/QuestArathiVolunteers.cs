@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01K"))));
       this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01Z"))));
       this.ResearchId = QUEST_RESEARCH_ID;
-      ;;
+      
     }
 
 

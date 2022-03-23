@@ -42,7 +42,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.StartQuest3.Rect, "the exit"));
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.MaelstromAmbient.Rect, "the Maelstrom"));
       AddQuestItem(new QuestItemCastSpell(RitualId, true));
-      ;;
+      
     }
 
 

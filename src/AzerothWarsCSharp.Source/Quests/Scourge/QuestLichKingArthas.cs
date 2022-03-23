@@ -45,7 +45,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       this.AddQuestItem(new QuestItemLegendLevel(LEGEND_ARTHAS, 12));
       this.AddQuestItem(new QuestItemResearch(FourCC("R07X"), )u000)));
       AddQuestItem(new QuestItemLegendInRect(LEGEND_ARTHAS, Regions.LichKing.Rect, "Icecrown Citadel"));
-      ;;
+      
     }
 
 

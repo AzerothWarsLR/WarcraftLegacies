@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests
       this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_STONEMAUL));
       AddQuestItem(new QuestItemLegendDead(LEGEND_FEATHERMOON));
       this.AddQuestItem(new QuestItemAnyUnitInRect(Regions.HighBourne, "Dire Maul".Rect, true));
-      ;;
+      
     }
 
 
@@ -52,7 +52,7 @@ namespace AzerothWarsCSharp.Source.Quests
       this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_FEATHERMOON));
       AddQuestItem(new QuestItemLegendDead(LEGEND_STONEMAUL));
       this.AddQuestItem(new QuestItemAnyUnitInRect(Regions.HighBourne, "Dire Maul".Rect, true));
-      ;;
+      
     }
 
 

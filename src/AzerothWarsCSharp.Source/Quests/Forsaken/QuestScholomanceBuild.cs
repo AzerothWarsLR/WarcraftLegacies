@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       this.AddQuestItem(new QuestItemBuild(FourCC("u01J"), 2));
       this.AddQuestItem(new QuestItemUpgrade(FourCC("h08B"), )h089)));
       ResearchId = QUEST_RESEARCH_ID;
-      ;;
+      
     }
 
 

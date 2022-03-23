@@ -51,7 +51,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
     public  thistype ( ){
       thistype this = thistype.allocate("Wildhammer Alliance", "The Wildhammer dwarves roam freely over the peaks of the Hinterlands. An audience with Magni himself might earn their cooperation.", "ReplaceableTextures\\CommandButtons\\BTNHeroGriffonWarrior.blp");
       AddQuestItem(new QuestItemLegendInRect(LEGEND_MAGNI, Regions.AeriePeak.Rect, "Aerie Peak"));
-      ;;
+      
     }
 
 

@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       AddQuestItem(new QuestItemLegendDead(LEGEND_GREATFORGE));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0AA"))));
       base.ResearchId = ResearchId;
-      ;;
+      
     }
 
 

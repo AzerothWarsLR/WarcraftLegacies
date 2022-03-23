@@ -31,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     public  thistype ( ){
       thistype this = thistype.allocate("Those Who Came Before", "During the Second War, the souls of slain Shadow Council members were infused into the corpses of Stormwind knights to create the Death Knights. If Stormwind were to fall again, the unholy order could return.", "ReplaceableTextures\\CommandButtons\\BTNAcolyte.blp");
       this.AddQuestItem(new QuestItemLegendDead(LEGEND_STORMWINDKEEP));
-      ;;
+      
     }
 
 

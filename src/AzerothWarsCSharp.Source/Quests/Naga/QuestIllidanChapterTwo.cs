@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       this.AddQuestItem(new QuestItemLegendHasArtifact(LEGEND_ILLIDAN, ARTIFACT_SKULLOFGULDAN));
       this._questToDiscover = questToDiscover;
 
-      ;;
+      
     }
 
 

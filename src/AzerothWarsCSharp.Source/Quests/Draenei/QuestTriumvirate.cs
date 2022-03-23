@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BL"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n09X"))));
       this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_VELEN));
-      ;;
+      
     }
 
 

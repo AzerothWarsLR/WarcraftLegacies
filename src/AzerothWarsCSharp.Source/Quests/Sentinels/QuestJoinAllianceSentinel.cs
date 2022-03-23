@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       thistype this = thistype.allocate("Join the Alliance", "With a world ending threat happening, the Alliance has reached to the Night Elves to join them", "ReplaceableTextures\\CommandButtons\\BTNalliance.blp");
       AddQuestItem(new QuestItemCastSpell(FourCC("A0IG"), true));
       AddQuestItem(new QuestItemControlLegend(LEGEND_TYRANDE, true));
-      ;;
+      
     }
 
 

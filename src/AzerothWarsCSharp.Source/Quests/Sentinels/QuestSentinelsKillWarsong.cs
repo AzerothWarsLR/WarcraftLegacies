@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
     public  thistype ( ){
       thistype this = thistype.allocate("Green-skinned Brutes", "The Warsong Clan has arrived near Ashenvale && begun threatening the wilds. These invaders must be repelled.", "ReplaceableTextures\\CommandButtons\\BTNRaider.blp");
       AddQuestItem(new QuestItemLegendDead(LEGEND_STONEMAUL));
-      ;;
+      
     }
 
 

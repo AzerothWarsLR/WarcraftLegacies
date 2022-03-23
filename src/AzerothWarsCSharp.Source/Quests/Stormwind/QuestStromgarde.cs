@@ -59,7 +59,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       _questItemAnyUnitInRect = QuestItemAnyUnitInRect.create(Regions.Stromgarde, "Stromgarde".Rect, true);
       this.AddQuestItem(_questItemAnyUnitInRect);
       AddQuestItem(new QuestItemSelfExists());
-      ;;
+      
     }
 
 

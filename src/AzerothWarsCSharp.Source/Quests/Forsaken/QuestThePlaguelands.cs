@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n03P"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01M"))));
       AddQuestItem(new QuestItemSelfExists());
-      ;;
+      
     }
 
 

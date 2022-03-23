@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BG"))));
       this.AddQuestItem(new QuestItemSelfExists());
       ResearchId = QuestResearchId;
-      ;;
+      
     }
 
 

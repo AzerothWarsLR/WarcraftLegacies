@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       AddQuestItem(new QuestItemLegendDead(LEGEND_LICHKING));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n03U"))));
       this.AddQuestItem(new QuestItemAnyUnitInRect(Regions.GrizzlyHills, "Grizzly Hills".Rect, true));
-      ;;
+      
     }
 
 

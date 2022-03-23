@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       AddQuestItem(new QuestItemTime(1200));
       AddQuestItem(QuestItemSelfExists);
       ResearchId = FourCC("R049");
-      ;;
+      
     }
 
 

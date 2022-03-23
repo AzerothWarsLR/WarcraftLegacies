@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       AddQuestItem(new QuestItemExpire(1140));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = QuestResearchId;
-      ;;
+      
     }
 
 

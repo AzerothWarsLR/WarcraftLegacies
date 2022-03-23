@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_ZINROKH));
       AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_ZINROKH, Regions.DrownedTemple.Rect, "The Drowned Temple"));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00U"))));
-      ;;
+      
     }
 
 

@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       AddQuestItem(new QuestItemCastSpell(FourCC("A0IG"), true));
       AddQuestItem(new QuestItemControlLegend(LEGEND_ALTRUIS, true));
       this.AddQuestItem(new QuestItemResearch(FourCC("R062"), )n055)));
-      ;;
+      
     }
 
 

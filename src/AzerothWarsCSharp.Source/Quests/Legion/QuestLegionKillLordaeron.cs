@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       AddQuestItem(new QuestItemLegendDead(LEGEND_CAPITALPALACE));
       AddQuestItem(new QuestItemLegendDead(LEGEND_STRATHOLME));
       AddQuestItem(new QuestItemLegendDead(LEGEND_TYRSHAND));
-      ;;
+      
     }
 
 

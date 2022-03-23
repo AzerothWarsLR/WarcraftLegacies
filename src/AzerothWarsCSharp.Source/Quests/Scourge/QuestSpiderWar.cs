@@ -42,7 +42,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       this.AddQuestItem(new QuestItemUpgrade(FourCC("unp2"), )unpl)));
       AddQuestItem(new QuestItemExpire(1480));
       AddQuestItem(new QuestItemSelfExists());
-      ;;
+      
     }
 
 

@@ -55,7 +55,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01T"))));
       this.AddQuestItem(new QuestItemExpire(1460));
       this.AddQuestItem(new QuestItemSelfExists());
-      ;;
+      
     }
 
 

@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02U"))));
       AddQuestItem(new QuestItemExpire(1430));
       AddQuestItem(new QuestItemSelfExists());
-      ;;
+      
     }
 
 

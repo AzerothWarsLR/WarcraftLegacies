@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
     public  thistype ( ){
       thistype this = thistype.allocate("Heart of Hakkar", "The Gurubashi trolls of ZulFourCC("Gurub follow the sacred Heart of Hakkar, hidden within their shrine. Capture it to gain their loyalty.", "ReplaceableTextures\\CommandButtons\\BTNTrollRavager.blp"");
       this.AddQuestItem(new QuestItemControlLegend(LEGEND_ZULGURUB, false));
-      ;;
+      
     }
 
 

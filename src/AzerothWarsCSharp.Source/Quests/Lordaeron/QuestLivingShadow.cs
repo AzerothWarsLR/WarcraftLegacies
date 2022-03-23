@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       thistype this = thistype.allocate("The Living Embodiment of Shadow", "The Dark Fortress looming over the Twilight Highlands is a beacon of darkness. Destroy it && clear the surrounding lands of evil.", "ReplaceableTextures\\CommandButtons\\BTNShadow Orb.blp");
       AddQuestItem(new QuestItemLegendInRect(LEGEND_UTHER, Regions.TwilightOutside.Rect, "Twilight Citadel"));
       AddQuestItem(new QuestItemLegendDead(LEGEND_TWILIGHTCITADEL));
-      ;;
+      
     }
 
 

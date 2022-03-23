@@ -38,7 +38,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       AddQuestItem(new QuestItemLegendDead(LEGEND_STRATHOLME));
       this.AddQuestItem(new QuestItemEitherOf.create(QuestItemLegendDead.create(LEGEND_ARTHAS), QuestItemFactionDefeated(FACTION_LORDAERON)));
       AddQuestItem(new QuestItemSelfExists());
-      ;;
+      
     }
 
 

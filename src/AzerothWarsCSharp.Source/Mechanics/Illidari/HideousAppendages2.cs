@@ -93,7 +93,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Illidari
             this._caster = caster;
             thistype.tentacleSetsByCasterHandleId[GetHandleId(this._caster)] = this;
             this.startPeriodic();
-            ;;
+            
         }
 
 

@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       AddQuestItem(new QuestItemControlLegend(LEGEND_KARAZHAN, false));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00J"))));
       base.ResearchId = FourCC("R04K");
-      ;;
+      
     }
 
 

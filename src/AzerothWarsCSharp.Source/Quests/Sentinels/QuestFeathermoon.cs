@@ -57,7 +57,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       AddQuestItem(new QuestItemExpire(1485));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = RESEARCH_ID;
-      ;;
+      
     }
 
 

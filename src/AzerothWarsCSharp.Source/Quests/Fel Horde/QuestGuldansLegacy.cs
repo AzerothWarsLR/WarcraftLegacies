@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     public  thistype ( ){
       thistype this = thistype.allocate("GulFourCC("dans Legacy", "The Orc Warlock Gul")dan is ultimately responsible for the formation of the Fel Horde. Though long dead, his teachings could still be extracted from his body.", "ReplaceableTextures\\CommandButtons\\BTNGuldan.blp");
       this.AddQuestItem(new QuestItemAnyUnitInRect(Regions.Guldan, "GulFourCC("dan")s corpse in the Tomb of Sargeras".Rect, true));
-      ;;
+      
     }
 
 

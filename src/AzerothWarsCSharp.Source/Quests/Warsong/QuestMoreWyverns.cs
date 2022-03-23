@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       thistype this = thistype.allocate("Perfect Warriors", "The prowess && savagery of the Sentinels is to be respected - && feared. They must be eliminated.", "ReplaceableTextures\\CommandButtons\\BTNArcher.blp");
       AddQuestItem(new QuestItemLegendDead(LEGEND_FEATHERMOON));
       AddQuestItem(new QuestItemLegendDead(LEGEND_AUBERDINE));
-      ;;
+      
     }
 
 

@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     public  thistype ( ){
       thistype this = thistype.allocate("The Blue Dragonflight", "The Blue Dragons of Northrend are the wardens of magic on Azeroth. They might be convinced to willingly join the mages of Dalaran.", "ReplaceableTextures\\CommandButtons\\BTNAzureDragon.blp");
       AddQuestItem(new QuestItemControlLegend(LEGEND_NEXUS, false));
-      ;;
+      
     }
 
 

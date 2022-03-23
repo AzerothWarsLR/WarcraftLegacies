@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       _questItemAnyUnitInRect = this.AddQuestItem(new QuestItemAnyUnitInRect(Regions.DalaranDungeon, "Dalaran Dungeons".Rect, true));
       this.AddQuestItem(new QuestItemEitherOf.create(QuestItemLegendDead.create(LEGEND_ILLIDAN), QuestItemFactionDefeated(FACTION_NAGA)));
       AddQuestItem(new QuestItemSelfExists());
-      ;;
+      
     }
 
 

@@ -38,7 +38,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       AddQuestItem(new QuestItemExpire(900));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = QUEST_RESEARCH_ID;
-      ;;
+      
     }
 
 

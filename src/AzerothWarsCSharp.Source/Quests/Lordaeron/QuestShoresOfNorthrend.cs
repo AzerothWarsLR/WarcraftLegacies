@@ -64,7 +64,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       AddQuestItem(new QuestItemControlLegend(LEGEND_ARTHAS, true));
       AddQuestItem(new QuestItemLegendDead(LEGEND_SCHOLOMANCE));
       AddQuestItem(new QuestItemResearch(ResearchId, FourCC("hshy")));
-      ;;
+      
     }
 
 

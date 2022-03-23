@@ -47,7 +47,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n014"))));
       AddQuestItem(new QuestItemExpire(1435));
       AddQuestItem(new QuestItemSelfExists());
-      ;;
+      
     }
 
 

@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       thistype this = thistype.allocate("Refuse KilFourCC("Jaeden")s Offer", "Kil)jaeden has approached Kael with an offer of power && salvation. He should refuse it && resist the temptation of Fel power.", "ReplaceableTextures\\CommandButtons\\BTNDemonHunter2blp");
       AddQuestItem(new QuestItemCastSpell(FourCC("A0IK"), true));
       this.AddQuestItem(new QuestItemLegendLevel(LEGEND_KAEL, 6));
-      ;;
+      
     }
 
 

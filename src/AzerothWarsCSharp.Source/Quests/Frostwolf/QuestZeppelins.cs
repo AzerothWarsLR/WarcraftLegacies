@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       thistype this = thistype.allocate("The Spirits of Ashenvale", "The Sentinels have laid claim over Kalimdor. As long as they survive, the Orcs will never be safe.", "ReplaceableTextures\\CommandButtons\\BTNGoblinZeppelin.blp");
       AddQuestItem(new QuestItemLegendDead(LEGEND_AUBERDINE));
       AddQuestItem(new QuestItemLegendDead(LEGEND_FEATHERMOON));
-      ;;
+      
     }
 
 

@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       AddQuestItem(new QuestItemTime(720));
       this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_EXODARSHIP));
       AddQuestItem(new QuestItemSelfExists());
-      ;;
+      
     }
 
 

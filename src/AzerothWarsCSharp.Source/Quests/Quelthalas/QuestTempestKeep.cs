@@ -65,7 +65,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       this.AddQuestItem(new QuestItemCastSpell(FourCC("A0IP"), true));
       this.AddQuestItem(new QuestItemControlLegend(LEGEND_KAEL, true));
       this.ResearchId = QUEST_RESEARCH_ID;
-      ;;
+      
     }
 
 
