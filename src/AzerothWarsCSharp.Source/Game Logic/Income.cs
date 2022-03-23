@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Game_Logic
       timer incomeTimer = CreateTimer();
       TimerStart(incomeTimer, PERIOD, true, () =>
       {
-        foreach (var player in GeneralHelpers.GetAllPlayers())
+        foreach (var player in GetAllPlayers())
         {
           var person = Person.ByHandle(player);
           if (person != null)

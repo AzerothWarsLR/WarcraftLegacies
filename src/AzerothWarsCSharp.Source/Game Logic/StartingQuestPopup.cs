@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Game_Logic
       TriggerRegisterTimerEvent(trig, 63, false);
       TriggerAddAction(trig, () =>
       {
-        foreach (var player in GeneralHelpers.GetAllPlayers())
+        foreach (var player in GetAllPlayers())
         {
           if (Person.ByHandle(player)?.Faction.StartingQuest != null && GetLocalPlayer() == player)
           {

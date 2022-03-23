@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
 
     public QuestItemObelisk(ControlPoint target ){
 
-      this.Description = "Summon a NyaFourCC(lothan Obelisk on " + GetUnitName(target.u);
+      Description = "Summon a NyaFourCC(lothan Obelisk on " + GetUnitName(target.u);
       this.target = target;
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;

@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
 
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
 
         GroupRemoveUnit(tempGroup, u);
@@ -57,8 +57,8 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
       "Trade Prince Gallywix will need a great amount of wealth to rule the future Goblin Empire; he needs to expand his business all over the world quickly.",
       "ReplaceableTextures\\CommandButtons\\BTNGoblinPrince.blp")
     {
-      this.AddQuestItem(new QuestItemTrain(FourCC(""nzep""), FourCC(""o04M""), 16));
-      this.AddQuestItem(new QuestItemTrain(FourCC(""o04S""), FourCC(""o04M""), 10));
+      AddQuestItem(new QuestItemTrain(FourCC(""nzep""), FourCC(""o04M""), 16));
+      AddQuestItem(new QuestItemTrain(FourCC(""o04S""), FourCC(""o04M""), 10));
       ResearchId = QuestResearchId;
     }
   }

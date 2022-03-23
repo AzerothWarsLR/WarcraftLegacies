@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Cheats
       string parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
       if (parameter == "all")
       {
-        foreach (var player in GeneralHelpers.GetAllPlayers())
+        foreach (var player in GetAllPlayers())
         {
           SetPlayerAllianceStateBJ(GetTriggerPlayer(), player, bj_ALLIANCE_ALLIED_ADVUNITS);
           SetPlayerAllianceStateBJ(player, GetTriggerPlayer(), bj_ALLIANCE_ALLIED_ADVUNITS);
@@ -40,7 +40,7 @@ namespace AzerothWarsCSharp.Source.Cheats
     public static void Setup()
     {
       trigger trig = CreateTrigger();
-      foreach (var player in GeneralHelpers.GetAllPlayers())
+      foreach (var player in GetAllPlayers())
       {
         TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
       }

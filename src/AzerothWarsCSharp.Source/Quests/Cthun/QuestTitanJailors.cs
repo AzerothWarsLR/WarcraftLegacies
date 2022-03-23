@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
 
     protected override void OnFail()
     {
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_TunnelUnlock, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      RescueNeutralUnitsInRect(gg_rct_TunnelUnlock, Player(PLAYER_NEUTRAL_AGGRESSIVE));
       WaygateActivateBJ(true, gg_unit_h03V_0591);
       WaygateSetDestinationLocBJ(gg_unit_h03V_0591, GetRectCenter(gg_rct_Silithus_Stone_Interior));
     }
@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
     {
       WaygateActivateBJ(true, gg_unit_h03V_0591);
       WaygateSetDestinationLocBJ(gg_unit_h03V_0591, GetRectCenter(gg_rct_Silithus_Stone_Interior));
-      GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_TunnelUnlock, Holder.Player);
+      RescueNeutralUnitsInRect(gg_rct_TunnelUnlock, Holder.Player);
     }
 
     public QuestTitanJailors() : base("Jailors of the Old God",

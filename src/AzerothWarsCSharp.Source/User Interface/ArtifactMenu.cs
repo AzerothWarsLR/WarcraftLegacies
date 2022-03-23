@@ -93,9 +93,9 @@ namespace AzerothWarsCSharp.Source.User_Interface
 
     void destroy()
     {
-      DestroyTrigger(this.nextTrigger);
-      DestroyTrigger(this.prevTrigger);
-      DestroyTrigger(this.exitTrigger);
+      DestroyTrigger(nextTrigger);
+      DestroyTrigger(prevTrigger);
+      DestroyTrigger(exitTrigger);
 
       BlzDestroyFrame(this.prevButton);
       BlzDestroyFrame(this.nextButton);
@@ -127,9 +127,9 @@ namespace AzerothWarsCSharp.Source.User_Interface
       BlzFrameSetSize(this.nextButton, 009, 0037);
       BlzFrameSetText(this.nextButton, "Next");
 
-      this.nextTrigger = CreateTrigger();
-      BlzTriggerRegisterFrameEvent(this.nextTrigger, this.nextButton, FRAMEEVENT_CONTROL_CLICK);
-      TriggerAddAction(this.nextTrigger, thistype.nextButtonClick);
+      nextTrigger = CreateTrigger();
+      BlzTriggerRegisterFrameEvent(nextTrigger, this.nextButton, FRAMEEVENT_CONTROL_CLICK);
+      TriggerAddAction(nextTrigger, thistype.nextButtonClick);
     }
 
     void createPrevButton()
@@ -140,9 +140,9 @@ namespace AzerothWarsCSharp.Source.User_Interface
       BlzFrameSetSize(this.prevButton, 009, 0037);
       BlzFrameSetText(this.prevButton, "Previous");
 
-      this.prevTrigger = CreateTrigger();
-      BlzTriggerRegisterFrameEvent(this.prevTrigger, this.prevButton, FRAMEEVENT_CONTROL_CLICK);
-      TriggerAddAction(this.prevTrigger, thistype.prevButtonClick);
+      prevTrigger = CreateTrigger();
+      BlzTriggerRegisterFrameEvent(prevTrigger, this.prevButton, FRAMEEVENT_CONTROL_CLICK);
+      TriggerAddAction(prevTrigger, thistype.prevButtonClick);
     }
 
     ArtifactMenuPage(int id)
@@ -172,20 +172,20 @@ namespace AzerothWarsCSharp.Source.User_Interface
       BlzFrameSetPoint(this.exitButton, FRAMEPOINT_BOTTOM, this.backdrop, FRAMEPOINT_BOTTOM, 00, BOTTOM_BUTTON_Y_OFFSET);
       BlzFrameSetSize(this.exitButton, 009, 0037);
       BlzFrameSetText(this.exitButton, "Exit");
-      this.exitTrigger = CreateTrigger();
-      BlzTriggerRegisterFrameEvent(this.exitTrigger, this.exitButton, FRAMEEVENT_CONTROL_CLICK);
-      TriggerAddAction(this.exitTrigger, thistype.exitButtonClick);
+      exitTrigger = CreateTrigger();
+      BlzTriggerRegisterFrameEvent(exitTrigger, this.exitButton, FRAMEEVENT_CONTROL_CLICK);
+      TriggerAddAction(exitTrigger, thistype.exitButtonClick);
 
       //Add previous and next buttons
       if (thistype.pageArray[this.id - 1] != 0)
       {
-        this.createPrevButton();
+        createPrevButton();
         thistype.pageArray[this.id - 1].createNextButton();
       }
 
       if (thistype.pageArray[this.id + 1] != 0)
       {
-        this.createNextButton();
+        createNextButton();
       }
 
       ;
@@ -234,7 +234,7 @@ namespace AzerothWarsCSharp.Source.User_Interface
     {
       if (p != 0)
       {
-        this.setText("Owned by|n" + p.Faction.prefixCol + p.Faction.Name + "|r");
+        setText("Owned by|n" + p.Faction.prefixCol + p.Faction.Name + "|r");
       }
     }
 
@@ -314,27 +314,27 @@ namespace AzerothWarsCSharp.Source.User_Interface
       this.id = i;
 
       //Determine x, y and z positions based on id
-      this.z = this.id / (COLUMN_COUNT * ROW_COUNT);
-      idMod = this.id - (this.z * COLUMN_COUNT * ROW_COUNT);
-      this.y = idMod / COLUMN_COUNT;
-      this.x = ModuloInteger(this.id, COLUMN_COUNT);
+      z = this.id / (COLUMN_COUNT * ROW_COUNT);
+      idMod = this.id - (z * COLUMN_COUNT * ROW_COUNT);
+      y = idMod / COLUMN_COUNT;
+      x = ModuloInteger(this.id, COLUMN_COUNT);
 
       //Determine which page to place on based on z value, and create it if it does not exist
-      if (ArtifactMenuPage.pageArray[this.z] == 0)
+      if (ArtifactMenuPage.pageArray[z] == 0)
       {
-        this.parentPage = ArtifactMenuPage.create(this.z);
+        parentPage = ArtifactMenuPage.create(z);
       }
       else
       {
-        this.parentPage = ArtifactMenuPage.pageArray[this.id];
+        parentPage = ArtifactMenuPage.pageArray[this.id];
       }
 
       //Create black box encompassing the representation
-      this.box = BlzCreateFrame("ArtifactItemBox", ArtifactMenuPage.pageArray[this.z].backdrop, 0, 0);
+      this.box = BlzCreateFrame("ArtifactItemBox", ArtifactMenuPage.pageArray[z].backdrop, 0, 0);
       BlzFrameSetSize(this.box, BOX_WIDTH, BOX_HEIGHT);
-      BlzFrameSetPoint(this.box, FRAMEPOINT_TOPLEFT, ArtifactMenuPage.pageArray[this.z].backdrop, FRAMEPOINT_TOPLEFT,
-        BOX_WIDTH * this.x + boxSpacingX * (this.x + 1),
-        -(Y_OFFSET_TOP + (BOX_HEIGHT * this.y + boxSpacingY * (this.y + 1))));
+      BlzFrameSetPoint(this.box, FRAMEPOINT_TOPLEFT, ArtifactMenuPage.pageArray[z].backdrop, FRAMEPOINT_TOPLEFT,
+        BOX_WIDTH * x + boxSpacingX * (x + 1),
+        -(Y_OFFSET_TOP + (BOX_HEIGHT * y + boxSpacingY * (y + 1))));
 
       //Create icon in the box
       this.icon = BlzCreateFrameByType("BACKDROP", "ArtifactIcon", this.box, "", 0);

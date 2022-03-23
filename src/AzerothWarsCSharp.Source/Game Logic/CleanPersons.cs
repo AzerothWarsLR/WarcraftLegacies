@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Game_Logic
           return;
         }
 
-        foreach (var player in GeneralHelpers.GetAllPlayers())
+        foreach (var player in GetAllPlayers())
         {
           var person = Person.ByHandle(player);
           if (person != null && GetPlayerSlotState(player) != PLAYER_SLOT_STATE_PLAYING &&

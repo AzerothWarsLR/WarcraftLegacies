@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       while(true){
         if ( u == null){ break; }
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)){
-          GeneralHelpers.UnitRescue(u, whichPlayer);
+          UnitRescue(u, whichPlayer);
         }
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);

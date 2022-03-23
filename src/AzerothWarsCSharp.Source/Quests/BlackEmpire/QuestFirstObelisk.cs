@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
     {
       foreach (var unit in _rescueUnits)
       {
-        GeneralHelpers.UnitRescue(unit, Holder.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE));
+        UnitRescue(unit, Holder.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
       RemoveUnit(Herald.Instance.unit);
       BlackEmpirePortal.GoToNext();
