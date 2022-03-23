@@ -33,9 +33,9 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
         u = FirstOfGroup(udg_Crossroad);
       }
       //Give resources and display message
-      CreateUnit(whichPlayer, FourCC(oeye), -12844, -1975, 0);
-      CreateUnit(whichPlayer, FourCC(oeye), -10876, -2066, 0);
-      CreateUnit(whichPlayer, FourCC(oeye), -11922, -824, 0);
+      CreateUnit(whichPlayer, FourCC("oeye"), -12844, -1975, 0);
+      CreateUnit(whichPlayer, FourCC("oeye"), -10876, -2066, 0);
+      CreateUnit(whichPlayer, FourCC("oeye"), -11922, -824, 0);
 
       //Cleanup
       DestroyGroup(udg_Crossroad);
@@ -53,7 +53,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
     public  thistype ( ){
       thistype this = thistype.allocate("The Crossroads", "The Horde still needs to establish a strong strategic foothold into Kalimdor. There is an opportune crossroads nearby.", "ReplaceableTextures\\CommandButtons\\BTNBarracks.blp");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_nrzm_0113)) ;//Razorman Medicine Man
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01T))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01T"))));
       this.AddQuestItem(QuestItemExpire.create(1460));
       this.AddQuestItem(QuestItemSelfExists.create());
       ;;

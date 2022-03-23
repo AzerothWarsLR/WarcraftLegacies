@@ -48,7 +48,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
 
     public  thistype ( ){
       thistype this = thistype.allocate("Dragonmaw Port", "The Dragonmaw Port will be the perfect staging ground of the invasion of Azeroth", "ReplaceableTextures\\CommandButtons\\BTNIronHordeSummoningCircle.blp");
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n08T))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n08T"))));
       this.AddQuestItem(QuestItemExpire.create(1227));
       this.AddQuestItem(QuestItemSelfExists.create());
       ;;

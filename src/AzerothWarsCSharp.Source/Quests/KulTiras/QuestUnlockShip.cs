@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       LEGEND_KATHERINE.StartingXp = GetHeroXP(LEGEND_KATHERINE.Unit);
       this.Holder.obliterate();
       LEGEND_KATHERINE.Spawn(this.Holder.Player, -15223, -22856, 110);
-      UnitAddItem(LEGEND_KATHERINE.Unit, CreateItem(FourCC(I00M), GetUnitX(LEGEND_KATHERINE.Unit), GetUnitY(LEGEND_KATHERINE.Unit)));
+      UnitAddItem(LEGEND_KATHERINE.Unit, CreateItem(FourCC("I00M"), GetUnitX(LEGEND_KATHERINE.Unit), GetUnitY(LEGEND_KATHERINE.Unit)));
       if (GetLocalPlayer() == this.Holder.Player){
         SetCameraPosition(GetRectCenterX(gg_rct_ShipAmbient), GetRectCenterY(gg_rct_ShipAmbient));
       }
@@ -44,7 +44,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
     }
 
     public  thistype ( ){
-      thistype this = thistype.allocate("The Zandalar Menace", "The Troll Empire of Zandalar is a danger to the safety of KulFourCC(tiras && the Alliance. Before setting sail, we must eliminate them.", "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp");
+      thistype this = thistype.allocate("The Zandalar Menace", "The Troll Empire of Zandalar is a danger to the safety of KulFourCC("tiras && the Alliance. Before setting sail, we must eliminate them.", "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp"");
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_DAZARALOR, false));
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_BORALUS, true));
       ;;

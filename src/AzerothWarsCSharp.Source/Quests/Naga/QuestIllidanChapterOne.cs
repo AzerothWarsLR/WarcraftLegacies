@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       thistype this = thistype.allocate("Chapter One: The Aetheneum Secrets", "In order to gain the power he craves, Illidan must plunder the hidden Aetheneum library for its secrets.", "ReplaceableTextures\\CommandButtons\\BTNDoomlord.blp");
       this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_ILLIDAN, gg_rct_Dire_Maul_Entrance, "Feralas"));
       this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_ILLIDAN, gg_rct_AethneumLibraryEntrance, "the Aetheneum Library"));
-      this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_ILLIDAN, gg_rct_ImmolFight, "ImmolFourCC(thar)s Lair"));
+      this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_ILLIDAN, gg_rct_ImmolFight, "ImmolFourCC("thar")s Lair"));
       this.AddQuestItem(QuestItemLegendDead.create(LEGEND_IMMOLTHAR));
       this.questToDiscover = questToDiscover;
       ;;

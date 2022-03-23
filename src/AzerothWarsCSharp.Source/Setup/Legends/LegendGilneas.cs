@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Legends
       LEGEND_TESS.Unit = gg_unit_Ewar_0424;
 
       LEGEND_GOLDRINN = new Legend();
-      LEGEND_GOLDRINN.UnitType = FourCC(E01E);
+      LEGEND_GOLDRINN.UnitType = FourCC("E01E");
       LEGEND_GOLDRINN.StartingXp = 8800;
 
       LEGEND_GENN = new Legend();

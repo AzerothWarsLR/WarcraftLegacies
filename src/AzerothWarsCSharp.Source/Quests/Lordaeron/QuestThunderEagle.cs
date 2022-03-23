@@ -6,8 +6,8 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
   public class QuestThunderEagle{
 
   
-    private const int RESEARCH_ID = FourCC(R04L);
-    private const int THUNDER_EAGLE_ID = FourCC(nwe2);
+    private const int RESEARCH_ID = FourCC("R04L");
+    private const int THUNDER_EAGLE_ID = FourCC("nwe2");
   
 
 
@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     public  thistype ( ){
       thistype this = thistype.allocate("To the Skies!", "The Thunder Eagles of the Storm Peaks live in fear of the Legion. Wipe out the Legion Nexus to bring these great birds out into the open.", "ReplaceableTextures\\CommandButtons\\BTNWarEagle.blp");
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_DRAKTHARONKEEP, false));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n02S))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n02S"))));
       ;;
     }
 

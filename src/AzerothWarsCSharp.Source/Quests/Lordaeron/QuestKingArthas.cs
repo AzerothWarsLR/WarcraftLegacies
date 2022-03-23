@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
   public class QuestKingArthas{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC(R08A)   ;//This research is given when the quest is completed
+    private const int QUEST_RESEARCH_ID = FourCC("R08A")   ;//This research is given when the quest is completed
   
 
 

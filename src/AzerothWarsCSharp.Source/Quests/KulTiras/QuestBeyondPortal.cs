@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
   public class QuestBeyondPortal{
 
  
-    private const int QUEST_RESEARCH_ID = FourCC(R085)   ;//This research is given when the quest is completed
+    private const int QUEST_RESEARCH_ID = FourCC("R085")   ;//This research is given when the quest is completed
   
 
 

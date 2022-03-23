@@ -5,9 +5,9 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
   public class QuestGundrak{
 
   
-    private const int GUNDRAK_RESEARCH = FourCC(R02Q);
-    private const int WARLORD_ID = FourCC(nftk);
-    private const int TROLL_SHRINE_ID = FourCC(o04X);
+    private const int GUNDRAK_RESEARCH = FourCC("R02Q");
+    private const int WARLORD_ID = FourCC("nftk");
+    private const int TROLL_SHRINE_ID = FourCC("o04X");
   
 
 

@@ -6,9 +6,9 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
   public class QuestFelHordeKillIronforge : QuestData{
  
   
-    private const int RESEARCH_ID = FourCC(R011);
-    private const int UNITTYPE_ID = FourCC(nina);
-    private const int BUILDING_ID = FourCC(o030);
+    private const int RESEARCH_ID = FourCC("R011");
+    private const int UNITTYPE_ID = FourCC("nina");
+    private const int BUILDING_ID = FourCC("o030");
     private const int UNIT_LIMIT = 4;
   
 

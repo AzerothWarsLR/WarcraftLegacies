@@ -21,10 +21,10 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       FelHordeSetup.FACTION_FEL_HORDE.ModObjectLimit(LegendFelHorde.LEGEND_MAGTHERIDON.UnitType, -Faction.UNLIMITED);
     }
 
-    public QuestBlackTemple ( ) : base("The Lord of Outland", "The Fel Horde is weak && complacent. The Illidari will easily subjugate them into IllidanFourCC(s service.", "ReplaceableTextures\\CommandButtons\\BTNMetamorphosis.blp"){
+    public QuestBlackTemple ( ) : base("The Lord of Outland", "The Fel Horde is weak && complacent. The Illidari will easily subjugate them into IllidanFourCC("s service.", "ReplaceableTextures\\CommandButtons\\BTNMetamorphosis.blp""){
       AddQuestItem(new QuestItemControlLegend(LegendFelHorde.LEGEND_BLACKTEMPLE, false));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00R"))));
-      this.AddQuestItem(new QuestItemResearch(FourCC("R063"), FourCC("n055")));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC(""n00R""))));
+      this.AddQuestItem(new QuestItemResearch(FourCC(""R063""), FourCC(""n055"")));
       Global = true;
 }
 

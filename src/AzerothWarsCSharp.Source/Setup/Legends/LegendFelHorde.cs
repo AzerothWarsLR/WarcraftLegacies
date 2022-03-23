@@ -20,30 +20,30 @@ namespace AzerothWarsCSharp.Source.Legends
 
     public static void Setup( ){
       LEGEND_MAGTHERIDON = new Legend();
-      LEGEND_MAGTHERIDON.UnitType = FourCC(Nmag);
+      LEGEND_MAGTHERIDON.UnitType = FourCC("Nmag");
       LEGEND_MAGTHERIDON.AddUnitDependency(gg_unit_o00F_0659);
       LEGEND_MAGTHERIDON.DeathMessage = "Magtheridon’s eternal demon soul has been consumed, && his life permanently extinguished. The Lord of Outland has fallen.";
       LEGEND_MAGTHERIDON.Essential = true;
 
       LEGEND_REND = new Legend();
-      LEGEND_REND.UnitType = FourCC(Nbbc);
+      LEGEND_REND.UnitType = FourCC("Nbbc");
       LEGEND_REND.StartingXp = 2800;
 
       LEGEND_KARGATH = new Legend();
-      LEGEND_KARGATH.UnitType = FourCC(N03D);
+      LEGEND_KARGATH.UnitType = FourCC("N03D");
       LEGEND_KARGATH.StartingXp = 2800;
 
       LEGEND_ZULUHED = new Legend();
-      LEGEND_ZULUHED.UnitType = FourCC(O00Y);
+      LEGEND_ZULUHED.UnitType = FourCC("O00Y");
 
       LEGEND_NEKROSH = new Legend();
-      LEGEND_NEKROSH.UnitType = FourCC(O01Q);
+      LEGEND_NEKROSH.UnitType = FourCC("O01Q");
 
       LEGEND_CHOGALL = new Legend();
-      LEGEND_CHOGALL.UnitType = FourCC(O01P);
+      LEGEND_CHOGALL.UnitType = FourCC("O01P");
 
       LEGEND_TERON = new Legend();
-      LEGEND_TERON.UnitType = FourCC(U02D);
+      LEGEND_TERON.UnitType = FourCC("U02D");
       LEGEND_TERON.StartingXp = 5400;
       LEGEND_TERON.PlayerColor = PLAYER_COLOR_MAROON;
 

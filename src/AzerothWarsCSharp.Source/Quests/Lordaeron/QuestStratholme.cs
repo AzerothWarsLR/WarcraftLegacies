@@ -31,8 +31,8 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     public  thistype ( ){
       thistype this = thistype.allocate("Blackrock && Roll", "The Blackrock clan has taken over Alterac, they must be eliminated for the safety of Lordaeron", "ReplaceableTextures\\CommandButtons\\BTNChaosBlademaster.blp");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_o00B_1316)) ;//Jubei
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n019))));
-      this.AddQuestItem(QuestItemUpgrade.create(FourCC(hcas), )htow)));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n019"))));
+      this.AddQuestItem(QuestItemUpgrade.create(FourCC("hcas"), )htow)));
       this.AddQuestItem(QuestItemExpire.create(1470));
       this.AddQuestItem(QuestItemSelfExists.create());
       ;;

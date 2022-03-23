@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
   public class QuestTortolla{
 
   
-    private const int HERO_ID = FourCC(H04U);
+    private const int HERO_ID = FourCC("H04U");
   
 
 
@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       thistype this = thistype.allocate("The Turtle Demigod", "Tortolla was badly wounded during the War of the Ancients, && has been resting ever since.", "ReplaceableTextures\\CommandButtons\\BTNSeaTurtleGreen.blp");
       this.AddQuestItem(QuestItemTime.create(1200));
       this.AddQuestItem(QuestItemSelfExists);
-      this.ResearchId = FourCC(R049);
+      this.ResearchId = FourCC("R049");
       ;;
     }
 

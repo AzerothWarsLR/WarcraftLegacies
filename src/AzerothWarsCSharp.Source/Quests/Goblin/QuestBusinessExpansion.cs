@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
 {
   public sealed class QuestBusinessExpansion : QuestData
   {
-    private static readonly int QuestResearchId = FourCC("R07G");
+    private static readonly int QuestResearchId = FourCC(""R07G"");
 
     protected override string CompletionDescription => "The shipyard will be buildable";
 
@@ -57,8 +57,8 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
       "Trade Prince Gallywix will need a great amount of wealth to rule the future Goblin Empire; he needs to expand his business all over the world quickly.",
       "ReplaceableTextures\\CommandButtons\\BTNGoblinPrince.blp")
     {
-      this.AddQuestItem(new QuestItemTrain(FourCC("nzep"), FourCC("o04M"), 16));
-      this.AddQuestItem(new QuestItemTrain(FourCC("o04S"), FourCC("o04M"), 10));
+      this.AddQuestItem(new QuestItemTrain(FourCC(""nzep""), FourCC(""o04M""), 16));
+      this.AddQuestItem(new QuestItemTrain(FourCC(""o04S""), FourCC(""o04M""), 10));
       ResearchId = QuestResearchId;
     }
   }

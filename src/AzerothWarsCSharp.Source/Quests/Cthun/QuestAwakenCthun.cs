@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
     {
       _cthun = cthun;
       AddQuestItem(new QuestItemChannelRect(Regions.CthunSummon.Rect, "C'thun", LegendCthun.LEGEND_SKERAM, 420, 270));
-      ResearchId = FourCC("R06A");
+      ResearchId = FourCC(""R06A"");
     }
   }
 }

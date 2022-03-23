@@ -7,8 +7,8 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
   public class QuestWildhammer{
 
   
-    private const int HERO_ID = FourCC(H028);
-    private const int RESEARCH_ID = FourCC(R01C);
+    private const int HERO_ID = FourCC("H028");
+    private const int RESEARCH_ID = FourCC("R01C");
   
 
 

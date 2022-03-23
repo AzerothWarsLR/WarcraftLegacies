@@ -5,8 +5,8 @@ using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 namespace AzerothWarsCSharp.Source.Quests.Warsong
 {
   public class QuestChenStormstout{
-    private readonly int _chenResearch = FourCC("R037");
-    private readonly int _chenId = FourCC("Nsjs");
+    private readonly int _chenResearch = FourCC(""R037"");
+    private readonly int _chenId = FourCC(""Nsjs"");
     
     protected override string CompletionPopup => 
       return "Chen Stormstout has joined the " + this.Holder.Team.Name + ".";

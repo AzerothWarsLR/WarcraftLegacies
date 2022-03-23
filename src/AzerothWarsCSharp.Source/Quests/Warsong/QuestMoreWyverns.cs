@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
   public class QuestMoreWyverns{
 
   
-    private const int UNITTYPE_ID = FourCC(owyv);
+    private const int UNITTYPE_ID = FourCC("owyv");
     private const int LIMIT_CHANGE = 2;
   
 

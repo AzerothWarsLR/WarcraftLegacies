@@ -22,12 +22,12 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
     protected override void OnComplete(){
       player holderPlayer = this.Holder.Person.Player;
 
-      FACTION_LEGION.ModObjectLimit(FourCC(Utic), -UNLIMITED)           ;//Tichondrius
-      FACTION_LEGION.ModObjectLimit(FourCC(Umal), -UNLIMITED)           ;//maglanis
-      FACTION_LEGION.ModObjectLimit(FourCC(U00L), -UNLIMITED)           ;//Anatheron
+      FACTION_LEGION.ModObjectLimit(FourCC("Utic"), -UNLIMITED)           ;//Tichondrius
+      FACTION_LEGION.ModObjectLimit(FourCC("Umal"), -UNLIMITED)           ;//maglanis
+      FACTION_LEGION.ModObjectLimit(FourCC("U00L"), -UNLIMITED)           ;//Anatheron
 
-      FACTION_LEGION.ModObjectLimit(FourCC(E01O), 1)        ;//Lilian
-      FACTION_LEGION.ModObjectLimit(FourCC(Uvar), 1)        ;//Vari
+      FACTION_LEGION.ModObjectLimit(FourCC("E01O"), 1)        ;//Lilian
+      FACTION_LEGION.ModObjectLimit(FourCC("Uvar"), 1)        ;//Vari
 
       this.Holder.Team = TEAM_FORSAKEN;
       this.Holder.Name = "|cff8080ffInsurgents|r";
@@ -39,10 +39,10 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       this.Holder.obliterate();
       LEGEND_LILIAN.Spawn(this.Holder.Player, 7254, 7833, 110);
       LEGEND_VARIMATHRAS.Spawn(this.Holder.Player, 7254, 7833, 110);
-      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC(n04J), GetRectCenterX(gg_rct_Vandermar_Village), GetRectCenterY(gg_rct_Vandermar_Village), 270, 12);
-      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC(u00D), GetRectCenterX(gg_rct_Vandermar_Village), GetRectCenterY(gg_rct_Vandermar_Village), 270, 6);
-      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC(ninc), GetRectCenterX(gg_rct_Vandermar_Village), GetRectCenterY(gg_rct_Vandermar_Village), 270, 12);
-      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC(u007), GetRectCenterX(gg_rct_Vandermar_Village), GetRectCenterY(gg_rct_Vandermar_Village), 270, 2);
+      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("n04J"), GetRectCenterX(gg_rct_Vandermar_Village), GetRectCenterY(gg_rct_Vandermar_Village), 270, 12);
+      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("u00D"), GetRectCenterX(gg_rct_Vandermar_Village), GetRectCenterY(gg_rct_Vandermar_Village), 270, 6);
+      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("ninc"), GetRectCenterX(gg_rct_Vandermar_Village), GetRectCenterY(gg_rct_Vandermar_Village), 270, 12);
+      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("u007"), GetRectCenterX(gg_rct_Vandermar_Village), GetRectCenterY(gg_rct_Vandermar_Village), 270, 2);
       AdjustPlayerStateBJ( 2000, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
       AdjustPlayerStateBJ( 900, this.Holder.Player, PLAYER_STATE_RESOURCE_LUMBER );
       if (GetLocalPlayer() == this.Holder.Player){
@@ -52,7 +52,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
     public  thistype ( ){
       thistype this = thistype.allocate("Dreadlord Insurgent", "Varimathras has branched out && tried to take control of the Plaguelands, Sylvanas will try && make him join her cause", "ReplaceableTextures\\CommandButtons\\BTNHeroDreadLord.blp");
-      this.AddQuestItem(QuestItemResearch.create(FourCC(R08H), )n040)));
+      this.AddQuestItem(QuestItemResearch.create(FourCC("R08H"), )n040)));
       ;;
     }
 

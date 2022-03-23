@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
   public class QuestIllidanChapterThree{
 
    
-    private const int RITUAL_ID = FourCC(A0KY);
+    private const int RITUAL_ID = FourCC("A0KY");
   
 
 

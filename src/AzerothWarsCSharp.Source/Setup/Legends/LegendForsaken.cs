@@ -13,15 +13,15 @@ namespace AzerothWarsCSharp.Source.Legends
 
     public static void Setup( ){
       LEGEND_SYLVANASV = new Legend();
-      LEGEND_SYLVANASV.UnitType = FourCC(Usyl);
+      LEGEND_SYLVANASV.UnitType = FourCC("Usyl");
       LEGEND_SYLVANASV.StartingXp = 15400;
 
       LEGEND_NATHANOS = new Legend();
-      LEGEND_NATHANOS.UnitType = FourCC(H049);
+      LEGEND_NATHANOS.UnitType = FourCC("H049");
       LEGEND_NATHANOS.StartingXp = 4000;
 
       LEGEND_VARIMATHRAS = new Legend();
-      LEGEND_VARIMATHRAS.UnitType = FourCC(Uvar);
+      LEGEND_VARIMATHRAS.UnitType = FourCC("Uvar");
       LEGEND_VARIMATHRAS.PlayerColor = PLAYER_COLOR_RED;
 
       LEGEND_SCHOLOMANCE = new Legend();

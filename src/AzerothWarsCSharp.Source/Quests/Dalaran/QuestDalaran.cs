@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
   public class QuestDalaran{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC(R038);
+    private const int QUEST_RESEARCH_ID = FourCC("R038");
   
 
 
@@ -54,7 +54,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     }
 
     protected override void OnComplete(){
-      SetPlayerTechResearched(Holder.Player, FourCC(R038), 1);
+      SetPlayerTechResearched(Holder.Player, FourCC("R038"), 1);
       GrantDalaran(this.Holder.Player);
       if (GetLocalPlayer() == this.Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\DalaranTheme.mp3" );
@@ -67,11 +67,11 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     public  thistype ( ){
       thistype this = thistype.allocate("Outskirts", "The territories of Dalaran are fragmented, secure the lands && protect Dalaran citizens .", "ReplaceableTextures\\CommandButtons\\BTNArcaneCastle.blp");
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01D))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n08M))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n018))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01I))));
-      this.AddQuestItem(QuestItemUpgrade.create(FourCC(h068), )h065)));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01D"))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n08M"))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n018"))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01I"))));
+      this.AddQuestItem(QuestItemUpgrade.create(FourCC("h068"), )h065)));
       this.AddQuestItem(QuestItemExpire.create(1445));
       this.AddQuestItem(QuestItemSelfExists.create());
       ;;

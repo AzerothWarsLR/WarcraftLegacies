@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
   public class QuestBlackrock : QuestData{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC(R03C);
+    private const int QUEST_RESEARCH_ID = FourCC("R03C");
   
 
 
@@ -45,7 +45,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     }
 
     protected override void OnComplete(){
-      SetPlayerTechResearched(Holder.Player, FourCC(R03C), 1);
+      SetPlayerTechResearched(Holder.Player, FourCC("R03C"), 1);
       GrantBlackrock(this.Holder.Player);
     }
 
@@ -55,9 +55,9 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 
     public  thistype ( ){
       thistype this = thistype.allocate("Blackrock Unification", "Make contact with the Blackrock clan && convince them to join Magtheridon", "ReplaceableTextures\\CommandButtons\\BTNBlackhand.blp");
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n00S))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n09Y))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n0A9))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n00S"))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n09Y"))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n0A9"))));
       this.AddQuestItem(QuestItemExpire.create(1451));
       this.AddQuestItem(QuestItemSelfExists);
       ;;

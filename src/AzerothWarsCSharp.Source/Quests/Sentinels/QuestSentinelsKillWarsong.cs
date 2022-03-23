@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
   public class QuestSentinelsKillWarsong{
 
   
-    private const int RESEARCH_ID = FourCC(R007);
+    private const int RESEARCH_ID = FourCC("R007");
   
 
 

@@ -7,8 +7,8 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
   public class QuestCorruptArthas{
 
   
-    private const int HERO_ID = FourCC(Uear);
-    private const int RESEARCH_ID = FourCC(R01K);
+    private const int HERO_ID = FourCC("Uear");
+    private const int RESEARCH_ID = FourCC("R01K");
   
 
 
@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       LEGEND_ARTHAS.Unit = null;
       LEGEND_ARTHAS.PlayerColor = PLAYER_COLOR_PURPLE;
       LEGEND_ARTHAS.StartingXp = 7000;
-      LEGEND_ARTHAS.UnitType = FourCC(Uear);
+      LEGEND_ARTHAS.UnitType = FourCC("Uear");
       LEGEND_ARTHAS.ClearUnitDependencies();
       SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);
     }

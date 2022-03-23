@@ -11,14 +11,14 @@ namespace AzerothWarsCSharp.Source.Legends
     public static Legend LEGEND_TORTOLLA;
     public static Legend LEGEND_NORDRASSIL;
 
-    public static int UNITTYPE_CENARIUS_ALIVE = FourCC("Ecen");
-    public static int UNITTYPE_CENARIUS_GHOST = FourCC("E00H");
+    public static int UNITTYPE_CENARIUS_ALIVE = FourCC(""Ecen"");
+    public static int UNITTYPE_CENARIUS_GHOST = FourCC(""E00H"");
     
     public static void Setup()
     {
       Legend.Register(LEGEND_CENARIUS = new Legend
       {
-        UnitType = FourCC("Ecen"),
+        UnitType = FourCC(""Ecen""),
         PermaDies = true,
         DeathMessage =
           "The Lord of the Forest, Cenarius, has fallen. The druids of the Kaldorei have lost their greatest mentor.",
@@ -29,18 +29,18 @@ namespace AzerothWarsCSharp.Source.Legends
 
       Legend.Register(LEGEND_MALFURION = new Legend
       {
-        UnitType = FourCC(Efur),
+        UnitType = FourCC("Efur"),
         Essential = true
       });
 
       Legend.Register( LEGEND_FANDRAL = new Legend
       {
-        UnitType = FourCC(E00K)
+        UnitType = FourCC("E00K")
       });
 
       Legend.Register(LEGEND_URSOC = new Legend
       {
-        UnitType = FourCC(E00A),
+        UnitType = FourCC("E00A"),
         StartingXp = 7000
       });
 
@@ -53,7 +53,7 @@ namespace AzerothWarsCSharp.Source.Legends
 
       Legend.Register(LEGEND_TORTOLLA = new Legend
       {
-        UnitType = FourCC(H04U),
+        UnitType = FourCC("H04U"),
         StartingXp = 1800
       });
     }

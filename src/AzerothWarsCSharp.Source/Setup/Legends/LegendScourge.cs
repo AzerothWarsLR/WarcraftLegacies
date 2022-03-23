@@ -10,15 +10,15 @@ namespace AzerothWarsCSharp.Source.Legends
     public static Legend? LegendLichking { get; private set; }
     public static Legend? LegendUtgarde { get; private set; }
 
-    public static int UnittypeKelthuzadNecromancer { get; } = FourCC("U001");
-    public static int UnittypeKelthuzadGhost { get; } = FourCC("U00M");
-    public static int UnittypeKelthuzadLich { get; } = FourCC("Uktl");
+    public static int UnittypeKelthuzadNecromancer { get; } = FourCC(""U001"");
+    public static int UnittypeKelthuzadGhost { get; } = FourCC(""U00M"");
+    public static int UnittypeKelthuzadLich { get; } = FourCC(""Uktl"");
 
     public static void Setup()
     {
       LegendKelthuzad = new Legend
       {
-        UnitType = FourCC("U001"),
+        UnitType = FourCC(""U001""),
         PermaDies = true,
         DeathMessage =
           "KelFourCC(thuzad has been slain. He lives on in spectral form, && may yet return if (he is brought to the Sunwell.",
@@ -30,12 +30,12 @@ namespace AzerothWarsCSharp.Source.Legends
 
       LegendAnubarak = new Legend
       {
-        UnitType = FourCC("Uanb")
+        UnitType = FourCC(""Uanb"")
       };
 
       LegendRivendare = new Legend
       {
-        UnitType = FourCC("U00A"),
+        UnitType = FourCC(""U00A""),
         StartingXp = 1000
       };
 

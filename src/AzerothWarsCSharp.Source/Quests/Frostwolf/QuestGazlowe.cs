@@ -6,8 +6,8 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
   public class QuestGazlowe{
 
   
-    private const int RESEARCH_ID = FourCC(R01F);
-    private const int HERO_ID = FourCC(Ntin);
+    private const int RESEARCH_ID = FourCC("R01F");
+    private const int HERO_ID = FourCC("Ntin");
   
 
 
@@ -31,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
     public  thistype ( ){
       thistype this = thistype.allocate("Explosive Engineering", "The Horde needs engineering skills if (it is to thrive. The Goblins of Kezan could provide such expertise.", "ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp");
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n04Z))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n04Z"))));
       ;;
     }
 

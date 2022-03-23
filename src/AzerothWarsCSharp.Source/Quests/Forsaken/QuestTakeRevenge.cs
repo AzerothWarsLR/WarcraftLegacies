@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     public  thistype ( ){
       thistype this = thistype.allocate("Cold-Hearted Revenge", "Sylvanas longs to take revenge on the Lich King. Killing him && absorbing his power would maybe satisfy the emptiness inside her", "ReplaceableTextures\\CommandButtons\\BTNHelmofdomination.blp");
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n0BC))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n0BC"))));
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_SYLVANASV, true));
       this.AddQuestItem(QuestItemLegendDead.create(LEGEND_LICHKING));
       ;;

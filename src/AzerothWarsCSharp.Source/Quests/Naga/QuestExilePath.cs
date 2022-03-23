@@ -7,8 +7,8 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
   public class QuestExilePath{
 
   
-    private const int RESEARCH_ID = FourCC(R063)         ;//This research is required to complete the quest
-    private const int QUEST_RESEARCH_ID = FourCC(R008)   ;//This research is given when the quest is completed
+    private const int RESEARCH_ID = FourCC("R063")         ;//This research is required to complete the quest
+    private const int QUEST_RESEARCH_ID = FourCC("R008")   ;//This research is given when the quest is completed
   
 
 
@@ -46,9 +46,9 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     protected override void OnComplete(){
       GrantAkama(this.Holder.Player);
-      FACTION_NAGA.ModObjectLimit(FourCC(n08W), UNLIMITED)   ;//Lost One Den
-      FACTION_NAGA.ModObjectLimit(FourCC(ndrn), UNLIMITED)   ;//Vindicator
-      FACTION_NAGA.ModObjectLimit(FourCC(ndrs), 6)   ;//Seer
+      FACTION_NAGA.ModObjectLimit(FourCC("n08W"), UNLIMITED)   ;//Lost One Den
+      FACTION_NAGA.ModObjectLimit(FourCC("ndrn"), UNLIMITED)   ;//Vindicator
+      FACTION_NAGA.ModObjectLimit(FourCC("ndrs"), 6)   ;//Seer
       SetUnitOwner(LEGEND_NZOTH.Unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
       REDEMPTION_PATH.Progress = QUEST_PROGRESS_FAILED;
       MADNESS_PATH.Progress = QUEST_PROGRESS_FAILED;
@@ -58,7 +58,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       ShowUnitShow( gg_unit_n07E_0958 );
       WaygateSetDestinationLocBJ( gg_unit_n07E_1491, GetRectCenter(gg_rct_NazjatarExit3) );
       WaygateSetDestinationLocBJ( gg_unit_n07E_0958 , GetRectCenter(gg_rct_IllidanOutlandEntrance) );
-      SetPlayerTechResearched(FACTION_SENTINELS.Player, FourCC(R06D), 1);
+      SetPlayerTechResearched(FACTION_SENTINELS.Player, FourCC("R06D"), 1);
       this.Holder.Name = "Illidari";
       WaygateActivateBJ( true, gg_unit_h01D_3378 );
       ShowUnitShow( gg_unit_h01D_3378 );
@@ -78,7 +78,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     public  thistype ( ){
       thistype this = thistype.allocate("A Parting of Ways", "Illidan must go his own way to find power, && Outland is the perfect place to acquire it.", "ReplaceableTextures\\CommandButtons\\BTNIllidanDemonicPower.blp");
-      this.AddQuestItem(QuestItemResearch.create(RESEARCH_ID, FourCC(n055)));
+      this.AddQuestItem(QuestItemResearch.create(RESEARCH_ID, FourCC("n055")));
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_ILLIDAN, true));
       this.AddQuestItem(QuestItemSelfExists.create());
       this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_ILLIDAN, gg_rct_NazjatarHidden, "Nazjatar"));

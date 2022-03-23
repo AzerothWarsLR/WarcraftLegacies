@@ -5,8 +5,8 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
   public class QuestSentinelsKillFrostwolf{
 
   
-    private const int RESEARCH_ID = FourCC(R052);
-    private const int AMARA_ID = FourCC(h03I);
+    private const int RESEARCH_ID = FourCC("R052");
+    private const int AMARA_ID = FourCC("h03I");
   
 
 

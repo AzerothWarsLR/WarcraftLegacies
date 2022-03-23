@@ -7,8 +7,8 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
   public class QuestStromgarde{
 
   
-    private const int HERO_ID = FourCC(H00Z);
-    private const int RESEARCH_ID = FourCC(R01M);
+    private const int HERO_ID = FourCC("H00Z");
+    private const int RESEARCH_ID = FourCC("R01M");
   
 
 
@@ -58,7 +58,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     }
 
     public  thistype ( ){
-      thistype this = thistype.allocate("Stromgarde", "Although StromgardeFourCC(s strength has dwindled since the days of the Arathorian Empire, it remains a significant bastion of humanity. They could be convinced to mobilize their forces for Stormwind.", "ReplaceableTextures\\CommandButtons\\BTNTheCaptain.blp");
+      thistype this = thistype.allocate("Stromgarde", "Although StromgardeFourCC("s strength has dwindled since the days of the Arathorian Empire, it remains a significant bastion of humanity. They could be convinced to mobilize their forces for Stormwind.", "ReplaceableTextures\\CommandButtons\\BTNTheCaptain.blp"");
       questItemAnyUnitInRect = QuestItemAnyUnitInRect.create(gg_rct_Stromgarde, "Stromgarde", true);
       this.AddQuestItem(questItemAnyUnitInRect);
       this.AddQuestItem(QuestItemSelfExists.create());

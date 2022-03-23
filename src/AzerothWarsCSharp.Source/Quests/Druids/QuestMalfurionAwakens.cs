@@ -12,8 +12,8 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
   
     private group MoongladeUnits;
 
-    private const int HORN_OF_CENARIUS = FourCC(cnhn);
-    private const int GHANIR = FourCC(I00C);
+    private const int HORN_OF_CENARIUS = FourCC("cnhn");
+    private const int GHANIR = FourCC("I00C");
   
 
 

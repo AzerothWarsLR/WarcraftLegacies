@@ -5,9 +5,9 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
   public class QuestZulgurub{
 
   
-    private const int ZULGURUB_RESEARCH = FourCC(R02M);
-    private const int TROLL_SHRINE_ID = FourCC(o04X);
-    private const int RAVAGER_ID = FourCC(o021);
+    private const int ZULGURUB_RESEARCH = FourCC("R02M");
+    private const int TROLL_SHRINE_ID = FourCC("o04X");
+    private const int RAVAGER_ID = FourCC("o021");
   
 
 
@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
     }
 
     protected override string CompletionDescription => 
-      return "Control of ZulFourCC(Gurub, 300 gold tribute && the ability to train " + GetObjectName(RAVAGER_ID) + "s from the " + GetObjectName(TROLL_SHRINE_ID);
+      return "Control of ZulFourCC("Gurub, 300 gold tribute && the ability to train " + GetObjectName(RAVAGER_ID") + "s from the " + GetObjectName(TROLL_SHRINE_ID);
     }
 
     protected override void OnComplete(){
@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
     }
 
     public  thistype ( ){
-      thistype this = thistype.allocate("Heart of Hakkar", "The Gurubashi trolls of ZulFourCC(Gurub follow the sacred Heart of Hakkar, hidden within their shrine. Capture it to gain their loyalty.", "ReplaceableTextures\\CommandButtons\\BTNTrollRavager.blp");
+      thistype this = thistype.allocate("Heart of Hakkar", "The Gurubashi trolls of ZulFourCC("Gurub follow the sacred Heart of Hakkar, hidden within their shrine. Capture it to gain their loyalty.", "ReplaceableTextures\\CommandButtons\\BTNTrollRavager.blp"");
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_ZULGURUB, false));
       ;;
     }

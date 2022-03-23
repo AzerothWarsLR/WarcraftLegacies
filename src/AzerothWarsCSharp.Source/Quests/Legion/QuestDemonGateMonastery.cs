@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
   public class QuestDemonGateMonastery{
 
   
-    private const int DEMONGATE_ID = FourCC(n081);
+    private const int DEMONGATE_ID = FourCC("n081");
   
 
 
@@ -21,14 +21,14 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
     protected override void OnComplete(){
       CreateUnit(Holder.Player, DEMONGATE_ID, GetUnitX(questItemKillMonastery.Target), GetUnitY(questItemKillMonastery.Target), 270);
-      SetDoodadAnimationRectBJ( "hide", FourCC(YObb), gg_rct_ScarletMonastery );
-      SetDoodadAnimationRectBJ( "hide", FourCC(ZSab), gg_rct_ScarletMonastery );
-      SetDoodadAnimationRectBJ( "hide", FourCC(YOsw), gg_rct_ScarletMonastery );
-      SetDoodadAnimationRectBJ( "show", FourCC(LOsm), gg_rct_ScarletMonastery );
-      SetDoodadAnimationRectBJ( "hide", FourCC(YOlp), gg_rct_ScarletMonastery );
-      SetDoodadAnimationRectBJ( "hide", FourCC(ZCv2), gg_rct_ScarletMonastery );
-      SetDoodadAnimationRectBJ( "hide", FourCC(ZCv1), gg_rct_ScarletMonastery );
-      SetDoodadAnimationRectBJ( "show", FourCC(ZCv1), gg_rct_ScarletMonastery );
+      SetDoodadAnimationRectBJ( "hide", FourCC("YObb"), gg_rct_ScarletMonastery );
+      SetDoodadAnimationRectBJ( "hide", FourCC("ZSab"), gg_rct_ScarletMonastery );
+      SetDoodadAnimationRectBJ( "hide", FourCC("YOsw"), gg_rct_ScarletMonastery );
+      SetDoodadAnimationRectBJ( "show", FourCC("LOsm"), gg_rct_ScarletMonastery );
+      SetDoodadAnimationRectBJ( "hide", FourCC("YOlp"), gg_rct_ScarletMonastery );
+      SetDoodadAnimationRectBJ( "hide", FourCC("ZCv2"), gg_rct_ScarletMonastery );
+      SetDoodadAnimationRectBJ( "hide", FourCC("ZCv1"), gg_rct_ScarletMonastery );
+      SetDoodadAnimationRectBJ( "show", FourCC("ZCv1"), gg_rct_ScarletMonastery );
     }
 
     public  thistype ( ){

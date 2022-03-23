@@ -14,14 +14,14 @@ namespace AzerothWarsCSharp.Source.Legends
     public static void Setup( ){
 
       LEGEND_GALLYWIX = new Legend();
-      LEGEND_GALLYWIX.UnitType = FourCC(O04N);
+      LEGEND_GALLYWIX.UnitType = FourCC("O04N");
 
       LEGEND_NOGGENFOGGER = new Legend();
-      LEGEND_NOGGENFOGGER.UnitType = FourCC(Nalc);
+      LEGEND_NOGGENFOGGER.UnitType = FourCC("Nalc");
       LEGEND_NOGGENFOGGER.StartingXp = 800;
 
       LEGEND_GAZLOWE = new Legend();
-      LEGEND_GAZLOWE.UnitType = FourCC(Ntin);
+      LEGEND_GAZLOWE.UnitType = FourCC("Ntin");
       LEGEND_GAZLOWE.StartingXp = 1800;
 
     }

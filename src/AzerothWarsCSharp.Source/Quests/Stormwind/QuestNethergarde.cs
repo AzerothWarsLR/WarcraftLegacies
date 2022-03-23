@@ -40,7 +40,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     protected override void OnComplete(){
       GrantNethergarde(this.Holder.Player);
-      FACTION_STORMWIND.ModObjectLimit(FourCC(h03F),1)               ;//Reginald windsor
+      FACTION_STORMWIND.ModObjectLimit(FourCC("h03F"),1)               ;//Reginald windsor
     }
 
     private void OnAdd( ){

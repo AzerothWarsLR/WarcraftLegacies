@@ -14,15 +14,15 @@ namespace AzerothWarsCSharp.Source.Legends
 
     public static void Setup( ){
       LEGEND_ADMIRAL = new Legend();
-      LEGEND_ADMIRAL.UnitType = FourCC(Hapm);
+      LEGEND_ADMIRAL.UnitType = FourCC("Hapm");
       LEGEND_ADMIRAL.Essential = true;
 
       LEGEND_LUCILLE = new Legend();
-      LEGEND_LUCILLE.UnitType = FourCC(E016);
+      LEGEND_LUCILLE.UnitType = FourCC("E016");
       LEGEND_LUCILLE.StartingXp = 2800;
 
       LEGEND_KATHERINE = new Legend();
-      LEGEND_KATHERINE.UnitType = FourCC(H05L);
+      LEGEND_KATHERINE.UnitType = FourCC("H05L");
       LEGEND_KATHERINE.StartingXp = 1200;
 
       LEGEND_BORALUS = new Legend();

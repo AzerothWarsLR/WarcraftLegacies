@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     }
 
     protected override string CompletionPopup => 
-      return "Arthas has ascended the Frozen Throne itself && shattered NerFourCC(zhul)s frozen prison. Ner)zhul && Arthas are now joined, body && soul, into one being: the god-like Lich King.";
+      return "Arthas has ascended the Frozen Throne itself && shattered NerFourCC("zhul")s frozen prison. Ner)zhul && Arthas are now joined, body && soul, into one being: the god-like Lich King.";
     }
 
     protected override string CompletionDescription => 
@@ -24,13 +24,13 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       LEGEND_LICHKING.DeathMessage = "Icecrown Citadel been razed. Unfortunately, the Lich King has already vacated his unholy throne.";
       LEGEND_LICHKING.PermaDies = false;
       LEGEND_LICHKING.Hivemind = false;
-      UnitRemoveAbility(LEGEND_LICHKING.Unit, FourCC(A0W8));
-      UnitRemoveAbility(LEGEND_LICHKING.Unit, FourCC(A0L3));
-      UnitRemoveAbility(LEGEND_LICHKING.Unit, FourCC(A002));
-      UnitRemoveAbility(LEGEND_LICHKING.Unit, FourCC(A001));
+      UnitRemoveAbility(LEGEND_LICHKING.Unit, FourCC("A0W8"));
+      UnitRemoveAbility(LEGEND_LICHKING.Unit, FourCC("A0L3"));
+      UnitRemoveAbility(LEGEND_LICHKING.Unit, FourCC("A002"));
+      UnitRemoveAbility(LEGEND_LICHKING.Unit, FourCC("A001"));
       BlzSetUnitMaxMana(LEGEND_LICHKING.Unit, 0);
       BlzSetUnitName(LEGEND_LICHKING.Unit, "Icecrown Citadel");
-      LEGEND_ARTHAS.UnitType = FourCC(N023);
+      LEGEND_ARTHAS.UnitType = FourCC("N023");
       LEGEND_ARTHAS.PermaDies = true;
       LEGEND_ARTHAS.Hivemind = true;
       LEGEND_ARTHAS.DeathMessage = "The great Lich King has been destroyed. With no central mind to command them, the forces of the Undead have gone rogue.";
@@ -43,10 +43,10 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     }
 
     public  thistype ( ){
-      thistype this = thistype.allocate("The Ascension", "From within the depths of the Frozen Throne, the Lich King NerFourCC(zhul cries out for his champion. Release the Helm of Domination from its confines && merge its power with that of the Scourge)s greatest Death Knight.", "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp");
+      thistype this = thistype.allocate("The Ascension", "From within the depths of the Frozen Throne, the Lich King NerFourCC("zhul cries out for his champion. Release the Helm of Domination from its confines && merge its power with that of the Scourge")s greatest Death Knight.", "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp");
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_ARTHAS, false));
       this.AddQuestItem(QuestItemLegendLevel.create(LEGEND_ARTHAS, 12));
-      this.AddQuestItem(QuestItemResearch.create(FourCC(R07X), )u000)));
+      this.AddQuestItem(QuestItemResearch.create(FourCC("R07X"), )u000)));
       this.AddQuestItem(QuestItemLegendInRect.create(LEGEND_ARTHAS, gg_rct_LichKing, "Icecrown Citadel"));
       ;;
     }

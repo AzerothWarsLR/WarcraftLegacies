@@ -2,6 +2,7 @@ using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.Source.Artifacts;
 using AzerothWarsCSharp.Source.Game_Logic;
 using AzerothWarsCSharp.Source.Game_Logic.GameEnd;
+using AzerothWarsCSharp.Source.IncompatibleUpgrades;
 using AzerothWarsCSharp.Source.Mechanics.Quelthalas;
 
 namespace AzerothWarsCSharp.Source.Setup
@@ -29,6 +30,7 @@ namespace AzerothWarsCSharp.Source.Setup
       SilvermoonDies.Setup();
       ZinrokhAssembly.Setup();
       SurvivingTeamVictory.Setup();
+      IncompatibleTierConfig.Setup();
     }
   }
 }

@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
   public class QuestCataclysm{
 
   
-    private const int CATACLYSM_RESEARCH = FourCC(R05E);
+    private const int CATACLYSM_RESEARCH = FourCC("R05E");
   
 
 
@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
     protected override void OnComplete(){
       SetPlayerTechResearched(this.Holder.Player, CATACLYSM_RESEARCH, 1);
       PlayThematicMusicBJ( "war3mapImported\\TwilightTheme.mp3" );
-      SetPlayerTechResearched(FACTION_CTHUN.Player, FourCC(R07D), 1);
+      SetPlayerTechResearched(FACTION_CTHUN.Player, FourCC("R07D"), 1);
       IssueImmediateOrderBJ( gg_unit_h02U_2413, "unrobogoblin" );
     }
 
@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
     }
 
     public  thistype ( ){
-      thistype this = thistype.allocate("The Cataclysm", "The Old GodFourCC(s will is finnicky, you are !privy to when their plan will be in motion, but when it is, your cult will be ready to welcome it.", "ReplaceableTextures\\CommandButtons\\BTNDeathwing.blp");
+      thistype this = thistype.allocate("The Cataclysm", "The Old GodFourCC("s will is finnicky, you are !privy to when their plan will be in motion, but when it is, your cult will be ready to welcome it.", "ReplaceableTextures\\CommandButtons\\BTNDeathwing.blp"");
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_DEATHWING, false));
       ;;
     }

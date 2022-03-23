@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
   public class QuestGnomeregan{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC(R05Q);
+    private const int QUEST_RESEARCH_ID = FourCC("R05Q");
   
 
 
@@ -43,7 +43,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
     }
 
     protected override void OnComplete(){
-      SetPlayerTechResearched(Holder.Player, FourCC(R05Q), 1);
+      SetPlayerTechResearched(Holder.Player, FourCC("R05Q"), 1);
       GrantGnomeregan(this.Holder.Player);
     }
 

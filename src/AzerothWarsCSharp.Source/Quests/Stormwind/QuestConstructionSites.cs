@@ -4,7 +4,7 @@
   
     using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
-    private const int RESEARCH_ID = FourCC(R022);
+    private const int RESEARCH_ID = FourCC("R022");
   
 
 

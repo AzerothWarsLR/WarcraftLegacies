@@ -5,8 +5,8 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
   public class QuestMadnessPath{
 
   
-    private const int RESEARCH_ID = FourCC(R065)         ;//This research is required to complete the quest
-    private const int QUEST_RESEARCH_ID = FourCC(R033)   ;//This research is given when the quest is completed
+    private const int RESEARCH_ID = FourCC("R065")         ;//This research is required to complete the quest
+    private const int QUEST_RESEARCH_ID = FourCC("R033")   ;//This research is given when the quest is completed
   
 
 
@@ -46,9 +46,9 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
     }
 
     private void AdjustTechtree( ){
-      FACTION_NAGA.ModObjectLimit(FourCC(n08V), UNLIMITED) ;//Depth Void Portal
-      FACTION_NAGA.ModObjectLimit(FourCC(h01Q), 4) ;//Immortal Guardian
-      FACTION_NAGA.ModObjectLimit(FourCC(H08U), 1) ;//Azshara
+      FACTION_NAGA.ModObjectLimit(FourCC("n08V"), UNLIMITED) ;//Depth Void Portal
+      FACTION_NAGA.ModObjectLimit(FourCC("h01Q"), 4) ;//Immortal Guardian
+      FACTION_NAGA.ModObjectLimit(FourCC("H08U"), 1) ;//Azshara
     }
 
     protected override void OnComplete(){
@@ -56,7 +56,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       AdjustTechtree();
       FailQuests();
       TransferHeroes();
-      FACTION_NAGA.ModObjectLimit(FourCC(Eevi), -UNLIMITED)  	    ;//Illidan
+      FACTION_NAGA.ModObjectLimit(FourCC("Eevi"), -UNLIMITED)  	    ;//Illidan
       BLACKEMPIREPORTAL_ILLIDAN.PortalState = BLACKEMPIREPORTALSTATE_OPEN;
       RenameIllidanFaction();
       WaygateActivateBJ( true, gg_unit_h01D_3378 );
@@ -74,8 +74,8 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
     }
 
     public  thistype ( ){
-      thistype this = thistype.allocate("Voices in the Void", "Azshara takes command of the Naga in the name of NFourCC(zoth. Illidan)s reign is no more.", "ReplaceableTextures\\CommandButtons\\BTNGuardianofTheSea.blp");
-      this.AddQuestItem(QuestItemResearch.create(RESEARCH_ID, FourCC(n055)));
+      thistype this = thistype.allocate("Voices in the Void", "Azshara takes command of the Naga in the name of NFourCC("zoth. Illidan")s reign is no more.", "ReplaceableTextures\\CommandButtons\\BTNGuardianofTheSea.blp");
+      this.AddQuestItem(QuestItemResearch.create(RESEARCH_ID, FourCC("n055")));
       this.AddQuestItem(QuestItemLegendNotDead.create(LEGEND_ILLIDAN));
       this.AddQuestItem(QuestItemSelfExists.create());
       this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_ILLIDAN, gg_rct_NazjatarHidden, "Nazjatar"));

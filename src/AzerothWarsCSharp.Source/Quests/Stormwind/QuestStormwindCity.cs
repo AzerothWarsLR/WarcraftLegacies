@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
   public class QuestStormwindCity{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC(R02S);
+    private const int QUEST_RESEARCH_ID = FourCC("R02S");
   
 
 
@@ -44,7 +44,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     }
 
     protected override void OnComplete(){
-      SetPlayerTechResearched(Holder.Player, FourCC(R02S), 1);
+      SetPlayerTechResearched(Holder.Player, FourCC("R02S"), 1);
       GrantStormwind(this.Holder.Player);
       if (GetLocalPlayer() == this.Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\StormwindTheme.mp3" );
@@ -57,10 +57,10 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     public  thistype ( ){
       thistype this = thistype.allocate("Clear the Outskirts", "The outskirts of Stormwind are infested by evil creatures. Kill their leaders && regain control of the Towns.", "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionCastle.blp");
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n00V))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n00Z))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n011))));
-      this.AddQuestItem(QuestItemUpgrade.create(FourCC(h06N), )h06K)));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n00V"))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n00Z"))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n011"))));
+      this.AddQuestItem(QuestItemUpgrade.create(FourCC("h06N"), )h06K)));
       this.AddQuestItem(QuestItemExpire.create(1020));
       this.AddQuestItem(QuestItemSelfExists.create());
       ;;

@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 
 
     protected override string CompletionPopup => 
-      return "The second Obelisk has been set. NyFourCC(alotha)s connection to Azeroth grows stronger.";
+      return "The second Obelisk has been set. NyFourCC("alotha")s connection to Azeroth grows stronger.";
     }
 
     protected override string CompletionDescription => 
@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 
     public  thistype ( ){
       thistype this = thistype.allocate("Second Obelisk", "The convergence of floatities grows ever closer. An Obelisk must be established in Uldum.", "ReplaceableTextures\\CommandButtons\\BTNIceCrownObelisk.blp");
-      this.AddQuestItem(QuestItemObelisk.create(ControlPoint.GetFromUnitType(FourCC(n0BD))));
+      this.AddQuestItem(QuestItemObelisk.create(ControlPoint.GetFromUnitType(FourCC("n0BD"))));
       ;;
     }
 

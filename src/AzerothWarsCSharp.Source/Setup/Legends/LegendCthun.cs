@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Legends
 
       LEGEND_SKERAM = new Legend
       {
-        UnitType = FourCC("E005"),
+        UnitType = FourCC(""E005""),
         PlayerColor = PLAYER_COLOR_RED,
         Name = "Prophet Skeram"
       };
@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.Source.Legends
       };
 
       LEGEND_YOR = new Legend();
-      LEGEND_YOR.UnitType = FourCC(U02A);
+      LEGEND_YOR.UnitType = FourCC("U02A");
       LEGEND_YOR.StartingXp = 8800;
     }
   }

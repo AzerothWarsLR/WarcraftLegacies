@@ -54,7 +54,7 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
     {
       AddQuestItem(new QuestItemExpire(1522));
       AddQuestItem(new QuestItemSelfExists());
-      ResearchId = FourCC("R07E");
+      ResearchId = FourCC(""R07E"");
     }
   }
 }

@@ -14,9 +14,9 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(FourCC(R020), UNLIMITED)   ;//Rain: An Amalgam
-      Holder.ModObjectLimit(FourCC(R03M), UNLIMITED)   ;//Methods of Control
-      Holder.ModObjectLimit(FourCC(R01B), UNLIMITED)   ;//A Treatise on Barriers
+      Holder.ModObjectLimit(FourCC("R020"), UNLIMITED)   ;//Rain: An Amalgam
+      Holder.ModObjectLimit(FourCC("R03M"), UNLIMITED)   ;//Methods of Control
+      Holder.ModObjectLimit(FourCC("R01B"), UNLIMITED)   ;//A Treatise on Barriers
     }
 
     public  thistype ( ){

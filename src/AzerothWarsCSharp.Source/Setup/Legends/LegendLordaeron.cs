@@ -18,15 +18,15 @@ namespace AzerothWarsCSharp.Source.Legends
 
     public static void Setup( ){
       LEGEND_MOGRAINE = new Legend();
-      LEGEND_MOGRAINE.UnitType = FourCC(H01J);
+      LEGEND_MOGRAINE.UnitType = FourCC("H01J");
       LEGEND_MOGRAINE.StartingXp = 2800;
 
       LEGEND_GARITHOS = new Legend();
-      LEGEND_GARITHOS.UnitType = FourCC(Hlgr);
+      LEGEND_GARITHOS.UnitType = FourCC("Hlgr");
       LEGEND_GARITHOS.StartingXp = 2800;
 
       LEGEND_GOODCHILD = new Legend();
-      LEGEND_GOODCHILD.UnitType = FourCC(E00O);
+      LEGEND_GOODCHILD.UnitType = FourCC("E00O");
       LEGEND_GOODCHILD.StartingXp = 2800;
 
       LEGEND_CAPITALPALACE = new Legend();
@@ -45,7 +45,7 @@ namespace AzerothWarsCSharp.Source.Legends
       LEGEND_TYRSHAND.IsCapital = true;
 
       LEGEND_UTHER = new Legend();
-      LEGEND_UTHER.UnitType = FourCC(Huth);
+      LEGEND_UTHER.UnitType = FourCC("Huth");
       LEGEND_UTHER.AddUnitDependency(gg_unit_h000_0406);
       LEGEND_UTHER.AddUnitDependency(gg_unit_nico_0666);
       LEGEND_UTHER.DeathMessage = "Uther the Lightbringer makes his last stand, perishing in the defense of the light. Lordaeron, && humanity itself, has lost one of its finest exemplars in this dark hour.";
@@ -53,7 +53,7 @@ namespace AzerothWarsCSharp.Source.Legends
       LEGEND_UTHER.StartingXp = 1000;
 
       LEGEND_ARTHAS = new Legend();
-      LEGEND_ARTHAS.UnitType = FourCC(Hart);
+      LEGEND_ARTHAS.UnitType = FourCC("Hart");
       LEGEND_ARTHAS.PlayerColor = PLAYER_COLOR_BLUE;
       LEGEND_ARTHAS.AddUnitDependency(LEGEND_STRATHOLME.Unit);
       LEGEND_ARTHAS.AddUnitDependency(gg_unit_nico_0666);

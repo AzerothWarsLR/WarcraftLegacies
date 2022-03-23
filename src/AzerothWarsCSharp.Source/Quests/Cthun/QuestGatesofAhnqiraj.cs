@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
       "ReplaceableTextures\\CommandButtons\\BTNScarabMedal.blp")
     {
       Global = true;
-      this.AddQuestItem(new QuestItemCastSpell(FourCC("A0O1"), true));
+      this.AddQuestItem(new QuestItemCastSpell(FourCC(""A0O1""), true));
     }
   }
 }

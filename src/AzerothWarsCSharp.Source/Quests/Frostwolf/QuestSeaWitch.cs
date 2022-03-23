@@ -12,12 +12,12 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
   
     private weathereffect Storm;
-    private const int QUEST_RESEARCH_ID = FourCC(R05H);
+    private const int QUEST_RESEARCH_ID = FourCC("R05H");
   
 
 
     protected override string CompletionPopup => 
-      return "The sea witch ZarFourCC(jira has been slain. Thrall && Vol)jin can now sail.";
+      return "The sea witch ZarFourCC("jira has been slain. Thrall && Vol")jin can now sail.";
     }
 
     protected override string CompletionDescription => 
@@ -48,7 +48,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       }
       DestroyGroup(tempGroup);
       RemoveWeatherEffectBJ(Storm);
-      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC(opeo), -1818, -2070, 270, 3);
+      GeneralHelpers.CreateUnits(this.Holder.Player, FourCC("opeo"), -1818, -2070, 270, 3);
       GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_EchoUnlock, this.Holder.Player);
     }
 
@@ -65,7 +65,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     }
 
     private static void onInit( ){
-      Storm = AddWeatherEffect(gg_rct_Darkspear_Island, FourCC(RAhr));
+      Storm = AddWeatherEffect(gg_rct_Darkspear_Island, FourCC("RAhr"));
       EnableWeatherEffect(Storm, true);
     }
 

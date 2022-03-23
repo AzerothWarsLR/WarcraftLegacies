@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
   public class QuestFountainOfBlood{
 
   
-    private const int RESEARCH_ID = FourCC(R00X);
+    private const int RESEARCH_ID = FourCC("R00X");
   
 
 

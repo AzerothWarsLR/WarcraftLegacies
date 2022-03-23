@@ -6,8 +6,8 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
   public class QuestAndrassil{
 
   
-    private const int RESEARCH_ID = FourCC(R002);
-    private const int URSOC_ID = FourCC(E00A);
+    private const int RESEARCH_ID = FourCC("R002");
+    private const int URSOC_ID = FourCC("E00A");
   
 
 
@@ -22,19 +22,19 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 
     protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
-      CreateUnit(Holder.Player, FourCC(n04F), GetRectCenterX(gg_rct_Andrassil), GetRectCenterY(gg_rct_Andrassil), 0);
+      CreateUnit(Holder.Player, FourCC("n04F"), GetRectCenterX(gg_rct_Andrassil), GetRectCenterY(gg_rct_Andrassil), 0);
     }
 
     private void OnAdd( ){
-      Holder.ModObjectLimit(FourCC(R05X), UNLIMITED);
+      Holder.ModObjectLimit(FourCC("R05X"), UNLIMITED);
       Holder.ModObjectLimit(URSOC_ID, 1);
       Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
     }
 
     public  thistype ( ){
-      thistype this = thistype.allocate("Crown of the Snow", "Long ago, Fandral Staghelm cut a sapling from Nordrassil && used it to grow Andrassil in Northrend. Without the blessing of the Aspects, it fell to the Old GodsFourCC( corruption. If Northrend were to be reclaimed, Andrassil)s growth could begin anew.", "ReplaceableTextures\\CommandButtons\\BTNTreant.blp");
+      thistype this = thistype.allocate("Crown of the Snow", "Long ago, Fandral Staghelm cut a sapling from Nordrassil && used it to grow Andrassil in Northrend. Without the blessing of the Aspects, it fell to the Old GodsFourCC(" corruption. If Northrend were to be reclaimed, Andrassil")s growth could begin anew.", "ReplaceableTextures\\CommandButtons\\BTNTreant.blp");
       this.AddQuestItem(QuestItemLegendDead.create(LEGEND_LICHKING));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n03U))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n03U"))));
       this.AddQuestItem(QuestItemAnyUnitInRect.create(gg_rct_GrizzlyHills, "Grizzly Hills", true));
       ;;
     }

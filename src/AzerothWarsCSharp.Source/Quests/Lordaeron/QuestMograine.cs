@@ -7,8 +7,8 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
   public class QuestMograine{
 
   
-    private const int ALTAR_ID = FourCC(halt);
-    private const int HERO_ID = FourCC(H01J);
+    private const int ALTAR_ID = FourCC("halt");
+    private const int HERO_ID = FourCC("H01J");
   
 
 
@@ -25,9 +25,9 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     }
 
     public  thistype ( ){
-      thistype this = thistype.allocate("The Exile", "The Lich King, looming over Northrend from IcecrownFourCC(s peak, is the greatest threat Lordaeron has ever faced. He must be destroyed.", "ReplaceableTextures\\CommandButtons\\BTNAlexandros.blp");
+      thistype this = thistype.allocate("The Exile", "The Lich King, looming over Northrend from IcecrownFourCC("s peak, is the greatest threat Lordaeron has ever faced. He must be destroyed.", "ReplaceableTextures\\CommandButtons\\BTNAlexandros.blp"");
       this.AddQuestItem(QuestItemLegendDead.create(LEGEND_LICHKING));
-      this.ResearchId = FourCC(R06P);
+      this.ResearchId = FourCC("R06P");
       ;;
     }
 

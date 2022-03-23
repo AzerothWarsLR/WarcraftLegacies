@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     }
 
     public  thistype ( ){
-      thistype this = thistype.allocate("Jailor of the Damned", "Before he became the Lich King, NerFourCC(zhul was the chieftain && elder shaman of the Shadowmoon Clan. Perhaps something of his former self still survives within the Frozen Throne.", "ReplaceableTextures\\CommandButtons\\BTNShaman.blp");
+      thistype this = thistype.allocate("Jailor of the Damned", "Before he became the Lich King, NerFourCC("zhul was the chieftain && elder shaman of the Shadowmoon Clan. Perhaps something of his former self still survives within the Frozen Throne.", "ReplaceableTextures\\CommandButtons\\BTNShaman.blp"");
       this.AddQuestItem(QuestItemKillUnit.create(LEGEND_LICHKING.Unit));
       ;;
     }

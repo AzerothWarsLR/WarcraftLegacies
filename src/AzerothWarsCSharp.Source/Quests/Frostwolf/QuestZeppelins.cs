@@ -5,8 +5,8 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
   public class QuestZeppelins{
 
   
-    private const int RESEARCH_ID = FourCC(R058);
-    private const int UNITTYPE_ID = FourCC(nzep);
+    private const int RESEARCH_ID = FourCC("R058");
+    private const int UNITTYPE_ID = FourCC("nzep");
     private const int LIMIT_CHANGE = 2;
   
 

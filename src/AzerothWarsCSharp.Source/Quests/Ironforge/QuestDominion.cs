@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
   public class QuestDominion{
 
   
-    private const int RESEARCH_ID = FourCC(R043)   ;//This research is given when the quest is completed
+    private const int RESEARCH_ID = FourCC("R043")   ;//This research is given when the quest is completed
   
 
 
@@ -56,10 +56,10 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
 
     public  thistype ( ){
       thistype this = thistype.allocate("Dwarven Dominion", "The Dwarven Dominion must be established before Ironforge can join the war.", "ReplaceableTextures\\CommandButtons\\BTNNorthrendCastle.blp");
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n017))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n014))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n013))));
-      this.AddQuestItem(QuestItemUpgrade.create(FourCC(h07G), )h07E)));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n017"))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n014"))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n013"))));
+      this.AddQuestItem(QuestItemUpgrade.create(FourCC("h07G"), )h07E)));
       this.AddQuestItem(QuestItemExpire.create(1462));
       this.AddQuestItem(QuestItemSelfExists.create());
       this.ResearchId = RESEARCH_ID;

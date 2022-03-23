@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
   public class QuestAshenvale{
 
   
-    private const int RESEARCH_ID = FourCC(R06R)   ;//This research is given when the quest is completed
+    private const int RESEARCH_ID = FourCC("R06R")   ;//This research is given when the quest is completed
   
 
 
@@ -51,12 +51,12 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
     }
 
     public  thistype ( ){
-      thistype this = thistype.allocate("The Spirits of Ashenvale", "The forest needs healing. Regain control of it to summon itFourCC(s Guardian, the Demigod Cenarius", "ReplaceableTextures\\CommandButtons\\BTNKeeperC.blp");
+      thistype this = thistype.allocate("The Spirits of Ashenvale", "The forest needs healing. Regain control of it to summon itFourCC("s Guardian, the Demigod Cenarius", "ReplaceableTextures\\CommandButtons\\BTNKeeperC.blp"");
       this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_MALFURION, gg_rct_AshenvaleUnlock, "Ashenvale"));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n07C))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01Q))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n08U))));
-      this.AddQuestItem(QuestItemUpgrade.create(FourCC(etoa), )etol)));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n07C"))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01Q"))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n08U"))));
+      this.AddQuestItem(QuestItemUpgrade.create(FourCC("etoa"), )etol)));
       this.AddQuestItem(QuestItemExpire.create(1440));
       this.AddQuestItem(QuestItemSelfExists.create());
       this.ResearchId = RESEARCH_ID;

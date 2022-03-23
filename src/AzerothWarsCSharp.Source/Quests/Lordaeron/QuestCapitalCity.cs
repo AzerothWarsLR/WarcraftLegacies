@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
   public class QuestCapitalCity{
 
   
-    private const int RESEARCH_ID = FourCC(R04Y)   ;//This research is given when the quest is completed
+    private const int RESEARCH_ID = FourCC("R04Y")   ;//This research is given when the quest is completed
   
 
 
@@ -37,10 +37,10 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     }
 
     public  thistype ( ){
-      thistype this = thistype.allocate("Hearthlands", "The territories of Lordaeron are fragmented. Regain control of the old AllianceFourCC(s hold to secure the kingdom.", "ReplaceableTextures\\CommandButtons\\BTNCastle.blp");
+      thistype this = thistype.allocate("Hearthlands", "The territories of Lordaeron are fragmented. Regain control of the old AllianceFourCC("s hold to secure the kingdom.", "ReplaceableTextures\\CommandButtons\\BTNCastle.blp"");
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_CAERDARROW, false));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01M))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01C))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01M"))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01C"))));
       this.AddQuestItem(QuestItemExpire.create(1472));
       this.AddQuestItem(QuestItemSelfExists.create());
       this.ResearchId = RESEARCH_ID;

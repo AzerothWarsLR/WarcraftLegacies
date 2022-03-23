@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
   public class QuestArathiVolunteers{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC(R089);
+    private const int QUEST_RESEARCH_ID = FourCC("R089");
   
 
 
@@ -22,8 +22,8 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
     public  thistype ( ){
       //Todo: what fight, flavour wise? Is it the Third War?
       thistype this = thistype.allocate("Arathi Volunteers", "The men of Stromgrade should join us in the fight.", "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionCastle.blp");
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01K))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01Z))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01K"))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01Z"))));
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

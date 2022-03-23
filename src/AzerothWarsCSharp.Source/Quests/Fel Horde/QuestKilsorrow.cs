@@ -30,8 +30,8 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     }
 
     public  thistype ( ){
-      thistype this = thistype.allocate("KilFourCC(sorrow Fortress", "This sinister fortress will serve the Fel Horde well, clear the surrounding lands to establish it", "ReplaceableTextures\\CommandButtons\\BTNFelOrcWatchTower.blp");
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n09X))));
+      thistype this = thistype.allocate("KilFourCC("sorrow Fortress", "This sinister fortress will serve the Fel Horde well, clear the surrounding lands to establish it", "ReplaceableTextures\\CommandButtons\\BTNFelOrcWatchTower.blp"");
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n09X"))));
       this.AddQuestItem(QuestItemExpire.create(1452));
       this.AddQuestItem(QuestItemSelfExists);
       ;;

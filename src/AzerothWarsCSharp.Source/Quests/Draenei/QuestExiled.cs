@@ -7,8 +7,8 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
   public class QuestExiled{
 
   
-    private const int QUESTRESEARCH_ID = FourCC(R081)   ;//This research is given when the quest is completed
-    private const int RESEARCH_ID = FourCC(R080)   ;//This research is required to complete
+    private const int QUESTRESEARCH_ID = FourCC("R081")   ;//This research is given when the quest is completed
+    private const int RESEARCH_ID = FourCC("R080")   ;//This research is required to complete
   
 
 
@@ -98,7 +98,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       AdjustPlayerStateBJ( 500, this.Holder.Player, PLAYER_STATE_RESOURCE_LUMBER );
       FACTION_DRAENEI.AddQuest(SHIP_ARGUS);
       SHIP_ARGUS.Progress = QUEST_PROGRESS_INCOMPLETE;
-      UnitRemoveAbilityBJ( FourCC(ACm2), LEGEND_VELEN.Unit);
+      UnitRemoveAbilityBJ( FourCC("ACm2"), LEGEND_VELEN.Unit);
       GrantExiled(this.Holder.Player);
       EscapeOutland(this.Holder.Player);
       RemoveUnit(gg_unit_h09W_3303);
@@ -110,7 +110,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Exile from Outland", "The Draenei need to escape Outland through the Exodar ship. We will need to power it up with a Divine Citadel first. The longer you hold out, the better the rewards will be", "ReplaceableTextures\\CommandButtons\\BTNUndeadAirBarge.blp");
-      this.AddQuestItem(QuestItemEitherOf.create(QuestItemResearch.create(RESEARCH_ID, FourCC(h09W)), QuestItemTime.create(782)));
+      this.AddQuestItem(QuestItemEitherOf.create(QuestItemResearch.create(RESEARCH_ID, FourCC("h09W")), QuestItemTime.create(782)));
       this.AddQuestItem(QuestItemLegendNotPermanentlyDead.create(LEGEND_EXODARSHIP));
       this.AddQuestItem(QuestItemSelfExists.create());
       this.ResearchId = QUESTRESEARCH_ID;

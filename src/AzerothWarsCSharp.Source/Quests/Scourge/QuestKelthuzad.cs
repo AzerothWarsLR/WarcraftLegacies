@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     }
 
     public  thistype ( ){
-      thistype this = thistype.allocate("Life Beyond Death", "KelFourCC(thuzad is the leader of the Cult of the Damned && an extraordinarily powerful necromancer. If he were to be brought to the Sunwell && submerged in its waters, he would be reanimated as an immortal Lich.", "ReplaceableTextures\\CommandButtons\\BTNLichVersion2blp");
+      thistype this = thistype.allocate("Life Beyond Death", "KelFourCC("thuzad is the leader of the Cult of the Damned && an extraordinarily powerful necromancer. If he were to be brought to the Sunwell && submerged in its waters, he would be reanimated as an immortal Lich.", "ReplaceableTextures\\CommandButtons\\BTNLichVersion2blp"");
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_SUNWELL, false));
       this.AddQuestItem(QuestItemLegendInRect.create(LEGEND_KELTHUZAD, gg_rct_Sunwell, "The Sunwell"));
       ;;

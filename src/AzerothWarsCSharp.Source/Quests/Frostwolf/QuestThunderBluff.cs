@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
   
     private group ThunderBluffUnits;
-    private const int QUEST_RESEARCH_ID = FourCC(R05I);
+    private const int QUEST_RESEARCH_ID = FourCC("R05I");
   
 
 

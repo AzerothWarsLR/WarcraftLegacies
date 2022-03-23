@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
   public class QuestFeathermoon{
 
   
-    private const int RESEARCH_ID = FourCC(R06M)   ;//This research is given when the quest is completed
+    private const int RESEARCH_ID = FourCC("R06M")   ;//This research is given when the quest is completed
   
 
 
@@ -55,8 +55,8 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
     public  thistype ( ){
       thistype this = thistype.allocate("Feathermoon Stronghold", "Feathermoon Stronghold stood guard for ten thousand years, it is time to relieve the guards from their duty.", "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp");
       this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_TYRANDE, gg_rct_FeathermoonUnlock, "Feathermoon Stronghold"));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01R))));
-      this.AddQuestItem(QuestItemUpgrade.create(FourCC(n06P), )n06J)));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01R"))));
+      this.AddQuestItem(QuestItemUpgrade.create(FourCC("n06P"), )n06J)));
       this.AddQuestItem(QuestItemExpire.create(1485));
       this.AddQuestItem(QuestItemSelfExists.create());
       this.ResearchId = RESEARCH_ID;

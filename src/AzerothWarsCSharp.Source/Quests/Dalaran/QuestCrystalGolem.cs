@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
   public class QuestCrystalGolem{
 
   
-    private const int RESEARCH_ID = FourCC(R045);
+    private const int RESEARCH_ID = FourCC("R045");
   
 
 
@@ -21,8 +21,8 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     protected override void OnComplete(){
       SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
       DisplayResearchAcquired(Holder.Player, RESEARCH_ID, 1);
-      Holder.ModObjectLimit(FourCC(n096), -6);
-      Holder.ModObjectLimit(FourCC(n0AD), 6);
+      Holder.ModObjectLimit(FourCC("n096"), -6);
+      Holder.ModObjectLimit(FourCC("n0AD"), 6);
     }
 
     private void OnAdd( ){
@@ -31,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     public  thistype ( ){
 
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n02R))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n02R"))));
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_DRAKTHARONKEEP, false));
       ;;
     }

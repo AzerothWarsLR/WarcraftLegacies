@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
   public class QuestKingdomOfManLordaeron{
 
   
-    private const int RESEARCH_ID = FourCC(R01N);
+    private const int RESEARCH_ID = FourCC("R01N");
   
 
 
@@ -38,7 +38,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
       DisplayResearchAcquired(Holder.Player, RESEARCH_ID, 1);
       //High King Arthas
-      LEGEND_ARTHAS.UnitType = FourCC(Harf);
+      LEGEND_ARTHAS.UnitType = FourCC("Harf");
       LEGEND_ARTHAS.ClearUnitDependencies();
     }
 
@@ -52,8 +52,8 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       this.AddQuestItem(QuestItemAcquireArtifact.create(ARTIFACT_CROWNLORDAERON));
       this.AddQuestItem(QuestItemAcquireArtifact.create(ARTIFACT_CROWNSTORMWIND));
       this.AddQuestItem(QuestItemLegendDead.create(LEGEND_LICHKING));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n010))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01G))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n010"))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01G"))));
       ;;
     }
 

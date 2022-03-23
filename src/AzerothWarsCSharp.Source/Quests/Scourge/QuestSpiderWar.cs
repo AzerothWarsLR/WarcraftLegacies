@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
   public class QuestSpiderWar{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC(R03A);
+    private const int QUEST_RESEARCH_ID = FourCC("R03A");
   
 
 
@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override void OnComplete(){
       GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_Ice_Crown, this.Holder.Player);
-      SetPlayerTechResearched(Holder.Player, FourCC(R03A), 1);
+      SetPlayerTechResearched(Holder.Player, FourCC("R03A"), 1);
       if (GetLocalPlayer() == this.Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\ScourgeTheme.mp3" );
       }
@@ -38,11 +38,11 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     public  thistype ( ){
       thistype this = thistype.allocate("War of the Spider", "The proud Nerubians have declared war on the newly formed Lich King, destroy them to secure the continent of Northrend.", "ReplaceableTextures\\CommandButtons\\BTNNerubianQueen.blp");
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n00I))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n08D))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n00G))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n00I"))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n08D"))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n00G"))));
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_n074_1565)) ;//Nezar)azret
-      this.AddQuestItem(QuestItemUpgrade.create(FourCC(unp2), )unpl)));
+      this.AddQuestItem(QuestItemUpgrade.create(FourCC("unp2"), )unpl)));
       this.AddQuestItem(QuestItemExpire.create(1480));
       this.AddQuestItem(QuestItemSelfExists.create());
       ;;

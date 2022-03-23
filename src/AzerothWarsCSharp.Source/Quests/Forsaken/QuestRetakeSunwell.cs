@@ -14,11 +14,11 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
     }
 
     protected override void OnComplete(){
-      SetPlayerTechResearched(Holder.Player, FourCC(R07V), 1);
+      SetPlayerTechResearched(Holder.Player, FourCC("R07V"), 1);
     }
 
     public  thistype ( ){
-      thistype this = thistype.allocate("Retaking the Sunwell", "Even in undeath, the SunwellFourCC(s energy to the Forsaken banshees. Reclaim it to bolster their vitality", "ReplaceableTextures\\CommandButtons\\BTNGhost.blp");
+      thistype this = thistype.allocate("Retaking the Sunwell", "Even in undeath, the SunwellFourCC("s energy to the Forsaken banshees. Reclaim it to bolster their vitality", "ReplaceableTextures\\CommandButtons\\BTNGhost.blp"");
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_SUNWELL, false));
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_NATHANOS, false));
       ;;

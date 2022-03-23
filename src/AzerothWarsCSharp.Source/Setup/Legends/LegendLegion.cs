@@ -22,20 +22,20 @@ namespace AzerothWarsCSharp.Source.Legends
       LEGEND_ARCHIMONDE.Essential = true;
 
       LEGEND_ANETHERON = new Legend();
-      LEGEND_ANETHERON.UnitType = FourCC(U00L);
+      LEGEND_ANETHERON.UnitType = FourCC("U00L");
       LEGEND_ANETHERON.PlayerColor = PLAYER_COLOR_ORANGE;
       LEGEND_ANETHERON.StartingXp = 4000;
 
       LEGEND_LILIAN = new Legend();
-      LEGEND_LILIAN.UnitType = FourCC(E01O);
+      LEGEND_LILIAN.UnitType = FourCC("E01O");
       LEGEND_LILIAN.StartingXp = 4000;
 
       LEGEND_TICHONDRIUS = new Legend();
-      LEGEND_TICHONDRIUS.UnitType = FourCC(Utic);
+      LEGEND_TICHONDRIUS.UnitType = FourCC("Utic");
       LEGEND_TICHONDRIUS.PlayerColor = PLAYER_COLOR_RED;
 
       LEGEND_MALGANIS = new Legend();
-      LEGEND_MALGANIS.UnitType = FourCC(Umal);
+      LEGEND_MALGANIS.UnitType = FourCC("Umal");
       LEGEND_MALGANIS.PlayerColor = PLAYER_COLOR_GREEN;
 
     }

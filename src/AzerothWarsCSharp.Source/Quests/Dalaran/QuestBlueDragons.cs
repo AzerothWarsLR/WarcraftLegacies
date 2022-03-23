@@ -5,9 +5,9 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
   public class QuestBlueDragons{
 
   
-    private const int RESEARCH_ID = FourCC(R00U);
-    private const int DRAGON_ID = FourCC(n0AC);
-    private const int MANADAM_ID = FourCC(R00N);
+    private const int RESEARCH_ID = FourCC("R00U");
+    private const int DRAGON_ID = FourCC("n0AC");
+    private const int MANADAM_ID = FourCC("R00N");
   
 
 

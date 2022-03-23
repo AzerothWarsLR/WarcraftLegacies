@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
   public class QuestLegionCaptureSunwell{
 
   
-    private const int RESEARCH_ID = FourCC(R054);
+    private const int RESEARCH_ID = FourCC("R054");
   
 
 
@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
     }
 
     public  thistype ( ){
-      thistype this = thistype.allocate("Fall of Silvermoon", "The Sunwell is the source of the High ElvesFourCC( immortality && magical prowess. Under control of the Scourge, it would be the source of immense necromantic power.", "ReplaceableTextures\\CommandButtons\\BTNOrbOfCorruption.blp");
+      thistype this = thistype.allocate("Fall of Silvermoon", "The Sunwell is the source of the High ElvesFourCC(" immortality && magical prowess. Under control of the Scourge, it would be the source of immense necromantic power.", "ReplaceableTextures\\CommandButtons\\BTNOrbOfCorruption.blp"");
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_SUNWELL, false));
       ;;
     }

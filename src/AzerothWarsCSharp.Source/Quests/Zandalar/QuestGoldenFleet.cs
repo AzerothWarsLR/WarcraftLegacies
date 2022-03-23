@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
   public class QuestGoldenFleet{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC(R06W)   ;//This research is given when the quest is completed
+    private const int QUEST_RESEARCH_ID = FourCC("R06W")   ;//This research is given when the quest is completed
   
 
 
@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 
     public  thistype ( ){
 
-      this.AddQuestItem(QuestItemTrain.create(FourCC(o04W),)o049), 5));
+      this.AddQuestItem(QuestItemTrain.create(FourCC("o04W"),)o049), 5));
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;
     }

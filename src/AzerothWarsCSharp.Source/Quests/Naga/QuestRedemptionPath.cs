@@ -7,8 +7,8 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
   public class QuestRedemptionPath{
 
   
-    private const int RESEARCH_ID = FourCC(R062)         ;//This research is required to complete the quest
-    private const int QUEST_RESEARCH_ID = FourCC(R06S)   ;//This research is given when the quest is completed
+    private const int RESEARCH_ID = FourCC("R062")         ;//This research is required to complete the quest
+    private const int QUEST_RESEARCH_ID = FourCC("R06S")   ;//This research is given when the quest is completed
   
 
 
@@ -26,9 +26,9 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
     }
 
     protected override void OnComplete(){
-      FACTION_NAGA.ModObjectLimit(FourCC(n08H), UNLIMITED)   ;//Demon Hunter grounds
-      FACTION_NAGA.ModObjectLimit(FourCC(e00S), UNLIMITED)   ;//Glaive Warrior
-      FACTION_NAGA.ModObjectLimit(FourCC(h08W), 6)   ;//Demon Hunter
+      FACTION_NAGA.ModObjectLimit(FourCC("n08H"), UNLIMITED)   ;//Demon Hunter grounds
+      FACTION_NAGA.ModObjectLimit(FourCC("e00S"), UNLIMITED)   ;//Glaive Warrior
+      FACTION_NAGA.ModObjectLimit(FourCC("h08W"), 6)   ;//Demon Hunter
       SetUnitOwner(LEGEND_NZOTH.Unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
       EXILE_PATH.Progress = QUEST_PROGRESS_FAILED;
       MADNESS_PATH.Progress = QUEST_PROGRESS_FAILED;
@@ -69,7 +69,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Brothers Stormrage", "Illidan follows his heart && seeks forgivness from Malfurion. United by their brotherly bond && their desire to protect Tyrande, they decide to unite their forces once again.", "ReplaceableTextures\\CommandButtons\\BTNDemonHunter2blp");
-      this.AddQuestItem(QuestItemResearch.create(RESEARCH_ID, FourCC(n055)));
+      this.AddQuestItem(QuestItemResearch.create(RESEARCH_ID, FourCC("n055")));
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_ILLIDAN, true));
       this.AddQuestItem(QuestItemSelfExists.create());
       this.AddQuestItem(QuestItemLegendReachRect.create(LEGEND_ILLIDAN, gg_rct_NazjatarHidden, "Nazjatar"));

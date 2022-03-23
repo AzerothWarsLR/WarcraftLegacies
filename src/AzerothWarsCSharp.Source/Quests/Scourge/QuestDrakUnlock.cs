@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
   public class QuestDrakUnlock{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC(R08J);
+    private const int QUEST_RESEARCH_ID = FourCC("R08J");
   
 
 
@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     }
 
     protected override string CompletionDescription => 
-      return "Control of all buildings in DrakFourCC(taron Keep)";
+      return "Control of all buildings in DrakFourCC("taron Keep")";
     }
 
     private void OnFail( ){
@@ -30,8 +30,8 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     }
 
     public  thistype ( ){
-      thistype this = thistype.allocate("DrakFourCC(taron Keep", "Drak)taron)s Keep will be the place for an outpost by the sea.", "ReplaceableTextures\\CommandButtons\\BTNUndeadShipyard.blp");
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n030))));
+      thistype this = thistype.allocate("DrakFourCC("taron Keep", "Drak")taron)s Keep will be the place for an outpost by the sea.", "ReplaceableTextures\\CommandButtons\\BTNUndeadShipyard.blp");
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n030"))));
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_DRAKTHARONKEEP, false));
       this.AddQuestItem(QuestItemExpire.create(1140));
       this.AddQuestItem(QuestItemSelfExists.create());

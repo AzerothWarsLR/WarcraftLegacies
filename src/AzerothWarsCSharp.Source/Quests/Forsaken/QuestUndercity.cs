@@ -7,8 +7,8 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
   public class QuestUndercity{
 
   
-    private const int RESEARCH_ID = FourCC(R050)         ;//This research is required to complete the quest
-    private const int QUEST_RESEARCH_ID = FourCC(R04X)   ;//This research is given when the quest is completed
+    private const int RESEARCH_ID = FourCC("R050")         ;//This research is required to complete the quest
+    private const int QUEST_RESEARCH_ID = FourCC("R04X")   ;//This research is given when the quest is completed
   
 
 
@@ -31,8 +31,8 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     protected override void OnComplete(){
       GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_UndercityUnlock, this.Holder.Player);
-      SetPlayerTechResearched(FACTION_LORDAERON.Player, FourCC(R08G), 1);
-      SetPlayerTechResearched(FACTION_LEGION.Player, FourCC(R08G), 1);
+      SetPlayerTechResearched(FACTION_LORDAERON.Player, FourCC("R08G"), 1);
+      SetPlayerTechResearched(FACTION_LEGION.Player, FourCC("R08G"), 1);
       WaygateActivateBJ( true, gg_unit_n08F_1739 );
       WaygateActivateBJ( true, gg_unit_n08F_1798 );
       ShowUnitShow( gg_unit_n08F_1739 );
@@ -52,7 +52,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     public  thistype ( ){
       thistype this = thistype.allocate("Forsaken Independance", "The Forsaken had enough of living under the tyranny of the Lich King. Sylvanas has vowed to give them their freedom back && a home", "ReplaceableTextures\\CommandButtons\\BTNForsakenArrows.blp");
-      this.AddQuestItem(QuestItemResearch.create(RESEARCH_ID, FourCC(h08B)));
+      this.AddQuestItem(QuestItemResearch.create(RESEARCH_ID, FourCC("h08B")));
       this.AddQuestItem(QuestItemLegendInRect.create(LEGEND_SYLVANASV, gg_rct_Terenas, "Capital City"));
       this.AddQuestItem(QuestItemLegendDead.create(LEGEND_CAPITALPALACE));
       this.AddQuestItem(QuestItemSelfExists.create());

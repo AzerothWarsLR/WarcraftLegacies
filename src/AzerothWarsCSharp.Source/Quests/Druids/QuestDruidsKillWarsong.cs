@@ -5,8 +5,8 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
   public class QuestDruidsKillWarsong{
 
   
-    private const int UNITTYPE_ID = FourCC(e012) ;//Siege Ancient
-    private const int RESEARCH_ID = FourCC(R05A) ;//Research enabling Siege Ancient
+    private const int UNITTYPE_ID = FourCC("e012") ;//Siege Ancient
+    private const int RESEARCH_ID = FourCC("R05A") ;//Research enabling Siege Ancient
   
 
 

@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
   public class QuestSilvermoon{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC(R02U);
+    private const int QUEST_RESEARCH_ID = FourCC("R02U");
   
 
 
@@ -44,7 +44,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     }
 
     protected override void OnComplete(){
-      SetPlayerTechResearched(Holder.Player, FourCC(R02U), 1);
+      SetPlayerTechResearched(Holder.Player, FourCC("R02U"), 1);
       GrantSilvermoon(this.Holder.Player);
       if (UnitAlive(gg_unit_h00D_2122)){
         SetUnitInvulnerable(LEGEND_SILVERMOON.Unit, true );
@@ -60,11 +60,11 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     }
 
     public  thistype ( ){
-      thistype this = thistype.allocate("The Siege of Silvermoon", "Silvermoon has been besieged by Trolls. Clear them out && destroy their city of ZulFourCC(aman.", "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp");
+      thistype this = thistype.allocate("The Siege of Silvermoon", "Silvermoon has been besieged by Trolls. Clear them out && destroy their city of ZulFourCC("aman.", "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp"");
       this.AddQuestItem(QuestItemKillUnit.create(gg_unit_O00O_1933)) ;//Zul)jin
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01V))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01L))));
-      this.AddQuestItem(QuestItemUpgrade.create(FourCC(h03T), )h033)));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01V"))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01L"))));
+      this.AddQuestItem(QuestItemUpgrade.create(FourCC("h03T"), )h033)));
       this.AddQuestItem(QuestItemExpire.create(1480));
       this.AddQuestItem(QuestItemSelfExists.create());
       ;;

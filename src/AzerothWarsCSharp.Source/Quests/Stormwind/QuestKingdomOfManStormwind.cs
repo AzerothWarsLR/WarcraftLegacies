@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
   public class QuestKingdomOfManStormwind{
 
   
-    private const int RESEARCH_ID = FourCC(R01N);
+    private const int RESEARCH_ID = FourCC("R01N");
     private const int EXPERIENCE_REWARD = 6000;
   
 
@@ -53,8 +53,8 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       this.AddQuestItem(QuestItemAcquireArtifact.create(ARTIFACT_CROWNLORDAERON));
       this.AddQuestItem(QuestItemAcquireArtifact.create(ARTIFACT_CROWNSTORMWIND));
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_BLACKTEMPLE, false));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n010))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01G))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n010"))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01G"))));
       ;;
     }
 

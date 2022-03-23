@@ -7,8 +7,8 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
   public class QuestDarkIron{
 
   
-    private const int HERO_ID = FourCC(H03G);
-    private const int RESEARCH_ID = FourCC(R01A);
+    private const int HERO_ID = FourCC("H03G");
+    private const int RESEARCH_ID = FourCC("R01A");
   
 
 

@@ -15,15 +15,15 @@ namespace AzerothWarsCSharp.Source.Legends
 
     public static void Setup( ){
       LEGEND_DAGRAN = new Legend();
-      LEGEND_DAGRAN.UnitType = FourCC(H03G);
+      LEGEND_DAGRAN.UnitType = FourCC("H03G");
       LEGEND_DAGRAN.StartingXp = 1000;
 
       LEGEND_FALSTAD = new Legend();
-      LEGEND_FALSTAD.UnitType = FourCC(H028);
+      LEGEND_FALSTAD.UnitType = FourCC("H028");
       LEGEND_FALSTAD.StartingXp = 1000;
 
       LEGEND_MAGNI = new Legend();
-      LEGEND_MAGNI.UnitType = FourCC(H00S);
+      LEGEND_MAGNI.UnitType = FourCC("H00S");
       LEGEND_MAGNI.AddUnitDependency(gg_unit_h001_0180);
       LEGEND_MAGNI.DeathMessage = "King Magni Bronzebeard has died.";
       LEGEND_MAGNI.Essential = true;

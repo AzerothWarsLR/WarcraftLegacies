@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
   public class QuestHellfire : QuestData{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC(R00P);
+    private const int QUEST_RESEARCH_ID = FourCC("R00P");
   
 
 
@@ -43,7 +43,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     protected override void OnComplete(){
       GeneralHelpers.UnitRescue(gg_unit_n081_0882, FACTION_FEL_HORDE.Player);
       GeneralHelpers.UnitRescue(gg_unit_n081_0717, FACTION_FEL_HORDE.Player);
-      SetPlayerTechResearched(Holder.Player, FourCC(R00P), 1);
+      SetPlayerTechResearched(Holder.Player, FourCC("R00P"), 1);
       GrantHellfire(this.Holder.Player);
       if (GetLocalPlayer() == this.Holder.Player){
         PlayThematicMusicBJ( "war3mapImported\\FelTheme.mp3" );
@@ -61,9 +61,9 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     public  thistype ( ){
       thistype this = thistype.allocate("The Citadel", "The clans holding Hellfire Citadel do !respect Kargath authority yet, destroy Murmur to finally establish Magtheridon as the undisputable king of Outland", "ReplaceableTextures\\CommandButtons\\BTNFelOrcFortress.blp");
       this.AddQuestItem(QuestItemLegendDead.create(LEGEND_EXODARSHIP));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n01J))));
-      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC(n02N))));
-      this.AddQuestItem(QuestItemUpgrade.create(FourCC(o030), )o02Y)));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n01J"))));
+      this.AddQuestItem(QuestItemControlPoint.create(ControlPoint.GetFromUnitType(FourCC("n02N"))));
+      this.AddQuestItem(QuestItemUpgrade.create(FourCC("o030"), )o02Y)));
       this.AddQuestItem(QuestItemExpire.create(1450));
       this.AddQuestItem(QuestItemSelfExists);
       ;;

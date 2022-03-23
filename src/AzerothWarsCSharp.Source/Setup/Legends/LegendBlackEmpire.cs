@@ -20,12 +20,12 @@ namespace AzerothWarsCSharp.Source.Legends
       
       Legend.Register(LEGEND_VOLAZJ = new Legend
       {
-        UnitType = FourCC("E01D")
+        UnitType = FourCC(""E01D"")
       });
 
       Legend.Register(LEGEND_ZAKAJZ = new Legend
       {
-        UnitType = FourCC("U00P"),
+        UnitType = FourCC(""U00P""),
         StartingXp = 8800
       });
     }

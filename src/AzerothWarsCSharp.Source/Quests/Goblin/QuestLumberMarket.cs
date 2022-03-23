@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
       "ReplaceableTextures\\CommandButtons\\BTNJunkGolem.blp")
     {
       AddQuestItem(new QuestItemControlLegend(LegendDruids.LEGEND_NORDRASSIL, false));
-      ResearchId = FourCC("R07Z");
+      ResearchId = FourCC(""R07Z"");
     }
   }
 }

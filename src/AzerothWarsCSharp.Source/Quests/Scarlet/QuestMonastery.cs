@@ -7,8 +7,8 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
   public class QuestMonastery{
 
   
-    private const int RESEARCH_ID = FourCC(R03P)         ;//This research is required to complete the quest
-    private const int QUEST_RESEARCH_ID = FourCC(R03F)   ;//This research is given when the quest is completed
+    private const int RESEARCH_ID = FourCC("R03P")         ;//This research is required to complete the quest
+    private const int QUEST_RESEARCH_ID = FourCC("R03F")   ;//This research is given when the quest is completed
   
 
 
@@ -30,9 +30,9 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
     }
 
     protected override void OnComplete(){
-      SetPlayerTechResearched(FACTION_KULTIRAS.Player, FourCC(R06V), 1);
-      SetPlayerTechResearched(FACTION_LORDAERON.Player, FourCC(R06V), 1);
-      SetPlayerTechResearched(FACTION_SCARLET.Player, FourCC(R086), 1);
+      SetPlayerTechResearched(FACTION_KULTIRAS.Player, FourCC("R06V"), 1);
+      SetPlayerTechResearched(FACTION_LORDAERON.Player, FourCC("R06V"), 1);
+      SetPlayerTechResearched(FACTION_SCARLET.Player, FourCC("R086"), 1);
       GeneralHelpers.RescueNeutralUnitsInRect(gg_rct_ScarletAmbient, this.Holder.Player);
       WaygateActivateBJ( true, gg_unit_h00T_0786 );
       WaygateSetDestinationLocBJ( gg_unit_h00T_0786, GetRectCenter(gg_rct_Scarlet_Monastery_Interior) );
@@ -49,7 +49,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
 
     public  thistype ( ){
       thistype this = thistype.allocate("The Secret Cloister", "The Scarlet Monastery is the perfect place for the secret base of the Scarlet Crusade.", "ReplaceableTextures\\CommandButtons\\BTNDivine_Reckoning_Icon.blp");
-      this.AddQuestItem(QuestItemResearch.create(RESEARCH_ID, FourCC(h00T)));
+      this.AddQuestItem(QuestItemResearch.create(RESEARCH_ID, FourCC("h00T")));
       this.AddQuestItem(QuestItemSelfExists.create());
       this.ResearchId = QUEST_RESEARCH_ID;
       ;;

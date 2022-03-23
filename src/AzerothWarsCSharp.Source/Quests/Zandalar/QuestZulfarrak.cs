@@ -7,17 +7,17 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
   public class QuestZulfarrak{
 
   
-    private const int GAHZRILLA_RESEARCH = FourCC(R02F);
-    private const int GAHZRILLA_ID = FourCC(H06Q);
+    private const int GAHZRILLA_RESEARCH = FourCC("R02F");
+    private const int GAHZRILLA_ID = FourCC("H06Q");
   
 
 
     protected override string CompletionPopup => 
-      return "ZulFourCC(farrak has fallen. The Sandfury trolls lend their might to the " + this.Holder.Team.Name + ", you can train Storm Wyrms && Gahz)rilla awakens from its slumber.";
+      return "ZulFourCC("farrak has fallen. The Sandfury trolls lend their might to the " + this.Holder.Team.Name + ", you can train Storm Wyrms && Gahz")rilla awakens from its slumber.";
     }
 
     protected override string CompletionDescription => 
-      return "Control of ZulFourCC(farrak, 300 gold tribute, enable to train Storm Wyrm && you can summon the hero Gahz)rilla from the Altar of Conquerors";
+      return "Control of ZulFourCC("farrak, 300 gold tribute, enable to train Storm Wyrm && you can summon the hero Gahz")rilla from the Altar of Conquerors";
     }
 
     protected override void OnComplete(){
@@ -50,7 +50,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
     }
 
     public  thistype ( ){
-      thistype this = thistype.allocate("Fury of the Sands", "The Sandfury Trolls of ZulFourCC(farrak are openly hostile to visitors, but they share a common heritage with the Zandalari Trolls. An adequate display of force could bring them around.", "ReplaceableTextures\\CommandButtons\\BTNDarkTroll.blp");
+      thistype this = thistype.allocate("Fury of the Sands", "The Sandfury Trolls of ZulFourCC("farrak are openly hostile to visitors, but they share a common heritage with the Zandalari Trolls. An adequate display of force could bring them around.", "ReplaceableTextures\\CommandButtons\\BTNDarkTroll.blp"");
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_ZULFARRAK, false));
       ;;
     }

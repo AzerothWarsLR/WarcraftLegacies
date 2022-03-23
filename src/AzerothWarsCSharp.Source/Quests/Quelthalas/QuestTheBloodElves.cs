@@ -11,10 +11,10 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
   public class QuestTheBloodElves{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC(R04Q);
-    private const int UNITTYPE_ID = FourCC(n048);
-    private const int BUILDING_ID = FourCC(n0A2);
-    private const int HERO_ID = FourCC(Hkal);
+    private const int QUEST_RESEARCH_ID = FourCC("R04Q");
+    private const int UNITTYPE_ID = FourCC("n048");
+    private const int BUILDING_ID = FourCC("n0A2");
+    private const int HERO_ID = FourCC("Hkal");
   
 
 
@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     }
 
     private string operator FailureDescription( ){
-      return "You lose everything you control, but you gain Prince KaelFourCC(thas at the Dalaran Dungeons, && you can train " + GetObjectName(UNITTYPE_ID) + "s from the Consortium";
+      return "You lose everything you control, but you gain Prince KaelFourCC("thas at the Dalaran Dungeons, && you can train " + GetObjectName(UNITTYPE_ID") + "s from the Consortium";
     }
 
     protected override void OnComplete(){
@@ -57,7 +57,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
         DestroyGroup(thistype.SecondChanceUnits);
         SetPlayerTechResearched(Holder.Player, QUEST_RESEARCH_ID, 1);
         LEGEND_KAEL.Spawn(this.Holder.Player, -11410, 21975, 110);
-        UnitAddItem(LEGEND_KAEL.Unit, CreateItem(FourCC(I00M), GetUnitX(LEGEND_KAEL.Unit), GetUnitY(LEGEND_KAEL.Unit)));
+        UnitAddItem(LEGEND_KAEL.Unit, CreateItem(FourCC("I00M"), GetUnitX(LEGEND_KAEL.Unit), GetUnitY(LEGEND_KAEL.Unit)));
         if (GetLocalPlayer() == this.Holder.Player){
           SetCameraPosition(GetRectCenterX(gg_rct_BloodElfSecondChanceSpawn), GetRectCenterY(gg_rct_BloodElfSecondChanceSpawn));
         }
@@ -94,7 +94,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     }
 
     public  thistype ( ){
-      thistype this = thistype.allocate("The Blood Elves", "The Elves of QuelFourCC(thalas have a deep reliance on the Sunwell)s magic. Without it, they would have to turn to darker magicks to sate themselves.", "ReplaceableTextures\\CommandButtons\\BTNHeroBloodElfPrince.blp");
+      thistype this = thistype.allocate("The Blood Elves", "The Elves of QuelFourCC("thalas have a deep reliance on the Sunwell")s magic. Without it, they would have to turn to darker magicks to sate themselves.", "ReplaceableTextures\\CommandButtons\\BTNHeroBloodElfPrince.blp");
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_DRAKTHARONKEEP, false));
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_ANASTERIAN, true));
       this.AddQuestItem(QuestItemControlLegend.create(LEGEND_SUNWELL, true));
