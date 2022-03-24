@@ -256,11 +256,6 @@ timerdialog udg_NagaTimerWindow= null
 player udg_GilneasPlayer= null
 real udg_GilneasReal= 0
 force udg_GilneasGroup= null
-unit udg_CurseConverter= null
-group udg_WerewolfGroup= null
-fogmodifier udg_GilneasVision= null
-group udg_TessGroup= null
-group udg_GilneasPortals= null
 force udg_KulTirasGroup= null
 player udg_KulTirasPlayer= null
 group udg_LordaeronGroup= null
@@ -294,11 +289,6 @@ unit udg_OilPlatform= null
 string udg_StringPlatform
 group udg_OilGroup= null
 group udg_MaievUnlockOutland= null
-timer udg_SummonKilTimer= null
-timerdialog udg_SummonKilTimerWindow= null
-timer udg_NexusTimer= null
-timerdialog udg_NexusTimerWindow= null
-location udg_TessPoint= null
 effect udg_CthunEffect= null
 string udg_StringZep
 integer udg_ZeppelinRandomInt= 0
@@ -308,7 +298,6 @@ boolean udg_FirstOilRig= false
 location udg_OilRigPoint= null
 integer udg_OilRandomInt= 0
 rect udg_OilRandomRegion= null
-group udg_OilDummyGroup= null
 group udg_TradersGroup= null
 dialog udg_VoteDialog= null
 button udg_DialogYes= null
@@ -319,8 +308,541 @@ group udg_BlackEmpirePortals= null
 group udg_NyalothaGroup1= null
 group udg_NyalothaGroup2= null
 group udg_NyalothaGroup3= null
+string udg_StringTaxe
+group udg_GroupTaxe= null
+player udg_ScarletPlayer= null
+integer udg_TaxeIntAmount= 0
 
     // Generated
+rect gg_rct_Solliden_Farmstead= null
+rect gg_rct_Arathi_Ships= null
+rect gg_rct_Auberdine_Ships= null
+rect gg_rct_Auberdine_Ships_2= null
+rect gg_rct_AzjolNerubDragonblight_Exit= null
+rect gg_rct_Blasted_Lands_Weather= null
+rect gg_rct_Barren_Excavation= null
+rect gg_rct_Blackrock_Entrance= null
+rect gg_rct_Blackrock_Exit= null
+rect gg_rct_Borean_Tundra= null
+rect gg_rct_Brill= null
+rect gg_rct_Broken_Isles= null
+rect gg_rct_CaerDarrowShipyard= null
+rect gg_rct_Cathedral_of_Light= null
+rect gg_rct_Central_Northrend= null
+rect gg_rct_Coldarra= null
+rect gg_rct_Construction_Site_2= null
+rect gg_rct_Corins_Crossing= null
+rect gg_rct_Crossroads= null
+rect gg_rct_Dalaran= null
+rect gg_rct_DalaranDungeon= null
+rect gg_rct_Dalaran_Dungeons_Entrance= null
+rect gg_rct_Dalaran_Dungeons_Exit= null
+rect gg_rct_DalaranExit2= null
+rect gg_rct_Dark_Portal_Entrance_1= null
+rect gg_rct_Dark_Portal_Exit_1= null
+rect gg_rct_Darkspear_Island= null
+rect gg_rct_Darrowshire= null
+rect gg_rct_Demongate_1= null
+rect gg_rct_Demongate_2= null
+rect gg_rct_DemonGate3= null
+rect gg_rct_Desolace_Ships= null
+rect gg_rct_Dire_Maul_Entrance= null
+rect gg_rct_Dire_Maul_Exit= null
+rect gg_rct_Dun_Morogh_Excavation= null
+rect gg_rct_Dun_Morogh_Ships= null
+rect gg_rct_Dustwallow_Ships= null
+rect gg_rct_East_Thandol= null
+rect gg_rct_Eastern_Northrend= null
+rect gg_rct_EssenceSpawn= null
+rect gg_rct_Far_Eastern_Northrend= null
+rect gg_rct_Felwood_Vision= null
+rect gg_rct_Fenris_ships= null
+rect gg_rct_Fjord= null
+rect gg_rct_Gilneas= null
+rect gg_rct_Gilneas_Canals= null
+rect gg_rct_Gnomergan= null
+rect gg_rct_Greymane= null
+rect gg_rct_Grim_Batol= null
+rect gg_rct_Grim_Batol_Tunnel_Entrance= null
+rect gg_rct_Grim_Batol_Tunnel_Top= null
+rect gg_rct_Havenshire= null
+rect gg_rct_Hearthglen= null
+rect gg_rct_HeroOrItemWaitRect= null
+rect gg_rct_HonorHold= null
+rect gg_rct_Howling_Fjord= null
+rect gg_rct_Ice_Crown= null
+rect gg_rct_IcecrownShipyard= null
+rect gg_rct_IllidanSpawn= null
+rect gg_rct_Ironforge= null
+rect gg_rct_Jaina_soul_gem= null
+rect gg_rct_Kali_Ships= null
+rect gg_rct_Kultiras= null
+rect gg_rct_LichKing= null
+rect gg_rct_Loch_Modan_Ships= null
+rect gg_rct_Lordaeron_East= null
+rect gg_rct_Lordaeron_West= null
+rect gg_rct_Moonglade= null
+rect gg_rct_Murloc_Attack= null
+rect gg_rct_Murloc_Spawn_1= null
+rect gg_rct_Murloc_Spawn_2= null
+rect gg_rct_InstanceNazjatar= null
+rect gg_rct_Nether_Exit= null
+rect gg_rct_Northern_Kali_Ships= null
+rect gg_rct_Northrend_ships= null
+rect gg_rct_OrgGate= null
+rect gg_rct_Orgrimmar= null
+rect gg_rct_Outland_Ships= null
+rect gg_rct_Plague_1= null
+rect gg_rct_Plague_2= null
+rect gg_rct_Plague_3= null
+rect gg_rct_Plague_4= null
+rect gg_rct_Plague_5= null
+rect gg_rct_Plague_6= null
+rect gg_rct_Plague_7= null
+rect gg_rct_Quel_Ships_1= null
+rect gg_rct_Quel_Ships_2= null
+rect gg_rct_Quel_Ships_3= null
+rect gg_rct_Quelthalas= null
+rect gg_rct_Sargeras_Entrance= null
+rect gg_rct_Sargeras_Exit= null
+rect gg_rct_ScarletMonastery= null
+rect gg_rct_Scholomance_Entrance= null
+rect gg_rct_Scholomance_Exit= null
+rect gg_rct_Shadowforge_City= null
+rect gg_rct_Shadowforge_gate= null
+rect gg_rct_Shadowmoon_Excavation= null
+rect gg_rct_Siphon_Cast_Zone= null
+rect gg_rct_South_EK_Ships= null
+rect gg_rct_StonemaulKeep= null
+rect gg_rct_Storm_Peaks= null
+rect gg_rct_Stormwind= null
+rect gg_rct_Stratholme_Platform_entrance= null
+rect gg_rct_Stratholme_platform_exit= null
+rect gg_rct_StratholmeShipyard= null
+rect gg_rct_Stromgarde= null
+rect gg_rct_Stromwind_antiship= null
+rect gg_rct_STV_Ships= null
+rect gg_rct_Terenas= null
+rect gg_rct_The_Basin= null
+rect gg_rct_Thrall_2= null
+rect gg_rct_Thrall_3= null
+rect gg_rct_Thrall_4= null
+rect gg_rct_Thrall_5= null
+rect gg_rct_Thrall_6= null
+rect gg_rct_Thrall_Landing1= null
+rect gg_rct_Thrall_Ship_1= null
+rect gg_rct_Thrall_Ship_2= null
+rect gg_rct_Tomb_Of_Sargeras_Ships= null
+rect gg_rct_TwistingNether= null
+rect gg_rct_Vandermar_Village= null
+rect gg_rct_WarsongCamp= null
+rect gg_rct_West_Thandol= null
+rect gg_rct_Winterpspring_Excavation= null
+rect gg_rct_ZF_Spawn_1= null
+rect gg_rct_ZF_Spawn_2= null
+rect gg_rct_Zulfarrak= null
+rect gg_rct_East_of_Azeroth= null
+rect gg_rct_West_of_Kalimdor= null
+rect gg_rct_Silvermon_Palace_trolls= null
+rect gg_rct_BloodpactFountain= null
+rect gg_rct_FTSummon= null
+rect gg_rct_Book_Retrieval= null
+rect gg_rct_King_Arthas_crown= null
+rect gg_rct_Drekthars_Spellbook= null
+rect gg_rct_Masteries= null
+rect gg_rct_Cthun_prevent_1= null
+rect gg_rct_AhnQiraj= null
+rect gg_rct_Cthun_position= null
+rect gg_rct_Sunwell_region= null
+rect gg_rct_RiseSpawn2= null
+rect gg_rct_AzjolNerub_South_Entrance= null
+rect gg_rct_AzjolNerub_North_Exit= null
+rect gg_rct_AzjolNerubNorth_entrance= null
+rect gg_rct_Alterac_Exca= null
+rect gg_rct_Andorhal= null
+rect gg_rct_Aerie_Peak= null
+rect gg_rct_TempestKeep= null
+rect gg_rct_Sunwell= null
+rect gg_rct_InstanceBarrowDeeps= null
+rect gg_rct_InstanceDireMaul= null
+rect gg_rct_InstanceScholomance= null
+rect gg_rct_InstanceBlackrock= null
+rect gg_rct_InstanceSargerasTomb= null
+rect gg_rct_InstanceAzjolNerub= null
+rect gg_rct_InstanceOutland= null
+rect gg_rct_DalaranEntrance2= null
+rect gg_rct_InstanceDalaranDungeon1= null
+rect gg_rct_InstanceDalaranDungeon2= null
+rect gg_rct_InstanceDalaranDungeon3= null
+rect gg_rct_Tempest_Keep_Evacuate= null
+rect gg_rct_Gazlower= null
+rect gg_rct_Varok= null
+rect gg_rct_Region_077= null
+rect gg_rct_NyHighland= null
+rect gg_rct_Mannoroth= null
+rect gg_rct_Jergosh= null
+rect gg_rct_Dark_Portal_Exit_2= null
+rect gg_rct_Dark_Portal_Exit_3= null
+rect gg_rct_Dark_Portal_Entrance_2= null
+rect gg_rct_Dark_Portal_Entrance_3= null
+rect gg_rct_Chen= null
+rect gg_rct_QuelDanil_Lodge= null
+rect gg_rct_HighBourne= null
+rect gg_rct_Andrassil= null
+rect gg_rct_EvilIllidanSpawn= null
+rect gg_rct_VaultoftheWardens= null
+rect gg_rct_Theramore= null
+rect gg_rct_Terrordale= null
+rect gg_rct_Dreadscar_1= null
+rect gg_rct_Deemspring= null
+rect gg_rct_Dreadscar_3= null
+rect gg_rct_Scholo_Ships= null
+rect gg_rct_DalaCutscene1= null
+rect gg_rct_Dreadscar_2= null
+rect gg_rct_DalaCutscene2= null
+rect gg_rct_DalaCutscene3= null
+rect gg_rct_DalaCutscene4= null
+rect gg_rct_DalaCutscene4_Copy= null
+rect gg_rct_DalaCutscene4_Copy_2= null
+rect gg_rct_Lord2= null
+rect gg_rct_Dwarf1= null
+rect gg_rct_Dwarf2= null
+rect gg_rct_Dwarf3= null
+rect gg_rct_Dwarf4= null
+rect gg_rct_Legion3= null
+rect gg_rct_Frostwolf1= null
+rect gg_rct_Warsong1= null
+rect gg_rct_Sent1= null
+rect gg_rct_Sent2= null
+rect gg_rct_Sent3= null
+rect gg_rct_Sent4= null
+rect gg_rct_Sent5= null
+rect gg_rct_Sent_6= null
+rect gg_rct_Sent_7= null
+rect gg_rct_Sent8= null
+rect gg_rct_Sent9= null
+rect gg_rct_Sent10= null
+rect gg_rct_Druid1= null
+rect gg_rct_Druid2= null
+rect gg_rct_Druid3= null
+rect gg_rct_Scourge1= null
+rect gg_rct_Scourge2= null
+rect gg_rct_Scourge3= null
+rect gg_rct_Scourge4= null
+rect gg_rct_Stormwind1= null
+rect gg_rct_Stormwind2= null
+rect gg_rct_Stormwind3= null
+rect gg_rct_Fel1= null
+rect gg_rct_Fel2= null
+rect gg_rct_Fel3= null
+rect gg_rct_Fel4= null
+rect gg_rct_Fel5= null
+rect gg_rct_Fel6= null
+rect gg_rct_Fel7= null
+rect gg_rct_Fel8= null
+rect gg_rct_Quel1= null
+rect gg_rct_Quel5= null
+rect gg_rct_Quel2= null
+rect gg_rct_Quel3= null
+rect gg_rct_Quel4= null
+rect gg_rct_NazjatarExit3= null
+rect gg_rct_DagranSpawn= null
+rect gg_rct_Guldan= null
+rect gg_rct_Gazlowe= null
+rect gg_rct_Khadgar= null
+rect gg_rct_Cenarius= null
+rect gg_rct_Ursoc= null
+rect gg_rct_ThunderBluff= null
+rect gg_rct_ThrallLanding= null
+rect gg_rct_CairneStart= null
+rect gg_rct_Druid4= null
+rect gg_rct_Druid5= null
+rect gg_rct_Sent11= null
+rect gg_rct_Sent_12= null
+rect gg_rct_Dwarf_group_1= null
+rect gg_rct_GrizzlyHills= null
+rect gg_rct_Northrend_Ambiance= null
+rect gg_rct_TeldrassilAmbient= null
+rect gg_rct_MoongladeVillage= null
+rect gg_rct_AzuremystAmbient= null
+rect gg_rct_AshenvaleAmbient= null
+rect gg_rct_BarrenAmbient1= null
+rect gg_rct_BarrenAmbient2= null
+rect gg_rct_BarrenAmbient3= null
+rect gg_rct_BarrenAmbient4= null
+rect gg_rct_BarrenAmbient5= null
+rect gg_rct_SilithusAmbient= null
+rect gg_rct_UngoroAmbient= null
+rect gg_rct_FeralasAmbient1= null
+rect gg_rct_FeralasAmbient2= null
+rect gg_rct_AszharaAmbient1= null
+rect gg_rct_AzsharaAmbient2= null
+rect gg_rct_DusthallowAmbient= null
+rect gg_rct_EchoIsleAmbient= null
+rect gg_rct_ZulfarrakAmbient= null
+rect gg_rct_KezanAmbient= null
+rect gg_rct_AshenvaleAmbient2= null
+rect gg_rct_WinterspringAmbient1= null
+rect gg_rct_WinterspringAmbient2= null
+rect gg_rct_AshenvaleAmbient3= null
+rect gg_rct_RanazjarAmbient= null
+rect gg_rct_AshenvaleAmbient4= null
+rect gg_rct_Queltalas_2= null
+rect gg_rct_StratholmeAmbient= null
+rect gg_rct_LordaeronAmbient1= null
+rect gg_rct_TyrHandAmbient= null
+rect gg_rct_LordaeronAmbient2= null
+rect gg_rct_LordaeronAmbient3= null
+rect gg_rct_ZulAman_trolls= null
+rect gg_rct_LordaeronAmbient4= null
+rect gg_rct_LordaeronAmbient5= null
+rect gg_rct_QuelthalasAmbient= null
+rect gg_rct_SunwellAmbient= null
+rect gg_rct_ShadowfangAmbient= null
+rect gg_rct_LordamereLakeAmbient= null
+rect gg_rct_SouthshoreAmbient= null
+rect gg_rct_AlteracAmbient= null
+rect gg_rct_ScholomanceAmbient2= null
+rect gg_rct_ScholomanceAmbient1= null
+rect gg_rct_SouthshoreAmbient2= null
+rect gg_rct_SouthshoreAmbient3= null
+rect gg_rct_SouthshoreAmbient4= null
+rect gg_rct_SouthshoreAmbient5= null
+rect gg_rct_BridgeAmbient= null
+rect gg_rct_ScholomanceAmbient3= null
+rect gg_rct_HinterlandAmbient1= null
+rect gg_rct_HinterlandAmbient2= null
+rect gg_rct_TolbaradAmbient= null
+rect gg_rct_BalorAmbient= null
+rect gg_rct_StormwindAmbient2= null
+rect gg_rct_SentinelTowerAmbient= null
+rect gg_rct_StranglethornAmbient1= null
+rect gg_rct_StranglethornAmbient2= null
+rect gg_rct_StranglethornAmbient3= null
+rect gg_rct_ElwinForestAmbient= null
+rect gg_rct_DarkshireAmbient1= null
+rect gg_rct_DarkshireAmbient2= null
+rect gg_rct_DarkshireAmbient3= null
+rect gg_rct_BlastedlandAmbient= null
+rect gg_rct_SwampofSorrowsAmbient= null
+rect gg_rct_BurningSteppesAmbient= null
+rect gg_rct_BurningSteppeAmbient2= null
+rect gg_rct_IronforgeAmbient= null
+rect gg_rct_DunmoroghAmbient1= null
+rect gg_rct_DunmoroghAmbient2= null
+rect gg_rct_DunmoroghAmbient3= null
+rect gg_rct_LochModanAmbient= null
+rect gg_rct_WetlandAmbient1= null
+rect gg_rct_WetlandAmbient2= null
+rect gg_rct_GrimBatolAmbient1= null
+rect gg_rct_GrimBatolAmbient2= null
+rect gg_rct_Region_BS= null
+rect gg_rct_Region_IC= null
+rect gg_rct_Region_DB= null
+rect gg_rct_Region_AE= null
+rect gg_rct_Region_AZ_1= null
+rect gg_rct_Region_AZ_2= null
+rect gg_rct_Region_BM= null
+rect gg_rct_Region_ToS= null
+rect gg_rct_Region_SC= null
+rect gg_rct_IllidanWeather= null
+rect gg_rct_IllidanMovement1= null
+rect gg_rct_IllidanMovement2= null
+rect gg_rct_IllidanAmbiance2= null
+rect gg_rct_LightningBolt2= null
+rect gg_rct_LightningBolt3= null
+rect gg_rct_WaveCrash= null
+rect gg_rct_BloodElfSecondChanceSpawn= null
+rect gg_rct_AethneumTombExit= null
+rect gg_rct_AethneumLibraryEntrance= null
+rect gg_rct_IllidanMoveAethneum= null
+rect gg_rct_ImmolFight= null
+rect gg_rct_AethneumCatacombs= null
+rect gg_rct_AethneumRemove= null
+rect gg_rct_AetheneumTombExit2= null
+rect gg_rct_NazjatarEntrance2= null
+rect gg_rct_NazjatarEntrance1= null
+rect gg_rct_NazjatarExit1= null
+rect gg_rct_NazjatarExit2= null
+rect gg_rct_AetheneumTombEntrance2= null
+rect gg_rct_IllidanBoat1= null
+rect gg_rct_IllidanBoat2= null
+rect gg_rct_IllidanBoat3= null
+rect gg_rct_IllidanBoat4= null
+rect gg_rct_IllidanExit2= null
+rect gg_rct_IllidanCameraExit= null
+rect gg_rct_IllidanExitText1= null
+rect gg_rct_SkullOfGuldan= null
+rect gg_rct_IllidanDala1= null
+rect gg_rct_IllidanDala2= null
+rect gg_rct_IllidanDalaranInstance= null
+rect gg_rct_StartQuest2= null
+rect gg_rct_IllidanDala4= null
+rect gg_rct_IllidanDala5= null
+rect gg_rct_IllidanDala6= null
+rect gg_rct_IllidanDala7= null
+rect gg_rct_IllidanDala8= null
+rect gg_rct_IllidanElementalSentry= null
+rect gg_rct_StartQuest3= null
+rect gg_rct_IllidanDalaExit= null
+rect gg_rct_UnlockIllidanSwitch= null
+rect gg_rct_IllidanLook= null
+rect gg_rct_IllidanLast= null
+rect gg_rct_AetheneumtoNazjatar= null
+rect gg_rct_IllidanNaga1= null
+rect gg_rct_IllidanNaga2= null
+rect gg_rct_IllidanNaga3= null
+rect gg_rct_MaelstromAmbient= null
+rect gg_rct_Chapter2Map= null
+rect gg_rct_Chapter3= null
+rect gg_rct_WerewolfSpawn1= null
+rect gg_rct_WerewolfSpawn2= null
+rect gg_rct_WerewolfSpawn3= null
+rect gg_rct_Attack_Commands= null
+rect gg_rct_AttackPoint= null
+rect gg_rct_GilneasMovement1= null
+rect gg_rct_GilneasMovement2= null
+rect gg_rct_GilneasMovement3= null
+rect gg_rct_GilneasMovement4= null
+rect gg_rct_GilneasMovement5= null
+rect gg_rct_GilneasMovement2_Copy= null
+rect gg_rct_GilneasMovement2_Copy_2= null
+rect gg_rct_GilneasMovement2_Copy_2_Copy= null
+rect gg_rct_Chapter2Start= null
+rect gg_rct_Chapter2TeleStart= null
+rect gg_rct_WerewolfSpawn4= null
+rect gg_rct_AttackPoint_Copy= null
+rect gg_rct_GilneasExit3= null
+rect gg_rct_GilneasExit1= null
+rect gg_rct_GilneasExit2= null
+rect gg_rct_GilneasEntrance1= null
+rect gg_rct_GilneasEntrance2= null
+rect gg_rct_GilneasEntrance3= null
+rect gg_rct_Checkpoint1Gilneas= null
+rect gg_rct_BlackrockUnlock= null
+rect gg_rct_Scarlet_Monastery_Interior= null
+rect gg_rct_Undercity_Interior_1= null
+rect gg_rct_Undercity_Interior_2= null
+rect gg_rct_Undercity_Exterior_1= null
+rect gg_rct_Undercity_Exterior_2= null
+rect gg_rct_Scarlet_Monastery_Exterior= null
+rect gg_rct_Undercity_Escape= null
+rect gg_rct_DarkshireUnlock= null
+rect gg_rct_StormwindUnlock= null
+rect gg_rct_LakeshireUnlock= null
+rect gg_rct_NethergardeUnlock= null
+rect gg_rct_StratholmeUnlock= null
+rect gg_rct_TyrUnlock= null
+rect gg_rct_ShadowfangUnlock= null
+rect gg_rct_TrollAttackSpawn= null
+rect gg_rct_TrollTarget= null
+rect gg_rct_KilsorrowUnlock= null
+rect gg_rct_HellfireUnlock= null
+rect gg_rct_ScarletAmbient= null
+rect gg_rct_ThelUnlock= null
+rect gg_rct_KulAttack= null
+rect gg_rct_KulTarget= null
+rect gg_rct_BlademasterUnlock= null
+rect gg_rct_ZandalarUnlock= null
+rect gg_rct_UndercityUnlock= null
+rect gg_rct_NaxxramasInside= null
+rect gg_rct_NaxAmbient= null
+rect gg_rct_NaxUnlock= null
+rect gg_rct_TwilightOutside= null
+rect gg_rct_ShipInside= null
+rect gg_rct_ShipAmbient= null
+rect gg_rct_ShipTarget= null
+rect gg_rct_NagaUnlock2= null
+rect gg_rct_NagaUnlock1= null
+rect gg_rct_NazjatarHidden= null
+rect gg_rct_IllidanOutlandEntrance= null
+rect gg_rct_Kalimdor= null
+rect gg_rct_FeathermoonUnlock= null
+rect gg_rct_AstranaarUnlock= null
+rect gg_rct_AshenvaleUnlock= null
+rect gg_rct_DrownedTemple= null
+rect gg_rct_NzothIni= null
+rect gg_rct_DragonmawUnlock= null
+rect gg_rct_SouthshoreUnlock= null
+rect gg_rct_GilneasMovement2_Copy_2_Copy_Copy= null
+rect gg_rct_MaievStartUnlock= null
+rect gg_rct_Silithus_Bug_Interior= null
+rect gg_rct_Silithus_Stone_Interior= null
+rect gg_rct_Silithus_Stone_Exterior= null
+rect gg_rct_Silithus_Bug_Exterior= null
+rect gg_rct_EchoUnlock= null
+rect gg_rct_StrahnbradUnlock= null
+rect gg_rct_TunnelUnlock= null
+rect gg_rct_AhnqirajInstance= null
+rect gg_rct_CthunSummon= null
+rect gg_rct_ZeppelinReturn= null
+rect gg_rct_Trade1= null
+rect gg_rct_Trade2= null
+rect gg_rct_Trade3= null
+rect gg_rct_Trade4= null
+rect gg_rct_Trader1= null
+rect gg_rct_Trader2= null
+rect gg_rct_Trader3= null
+rect gg_rct_GadgetUnlock= null
+rect gg_rct_OilRig1= null
+rect gg_rct_OilRig2= null
+rect gg_rct_OilRig3= null
+rect gg_rct_OilRig4= null
+rect gg_rct_OilRig5= null
+rect gg_rct_OilRig6= null
+rect gg_rct_Ny_Ulduar_Interior= null
+rect gg_rct_Ny_Twilight_Highlands_Interior= null
+rect gg_rct_Ny_Nazjatar_Interior= null
+rect gg_rct_Ny_Silithus_Interior= null
+rect gg_rct_ScarletExit= null
+rect gg_rct_TempestKeepSpawn= null
+rect gg_rct_SummonObeliskTarget= null
+rect gg_rct_NyalothaInstance= null
+rect gg_rct_NyTanaris= null
+rect gg_rct_NyNorth= null
+rect gg_rct_UldumAmbiance= null
+rect gg_rct_NyalothaUnlock1= null
+rect gg_rct_NyalothaUnlock2= null
+rect gg_rct_NyalothaUnlock3= null
+rect gg_rct_ScarletHarbor= null
+rect gg_rct_KaliRock1= null
+rect gg_rct_KaliRock2= null
+rect gg_rct_KaliRock3= null
+rect gg_rct_KaliRock4= null
+rect gg_rct_GoldrinnDuskwood= null
+rect gg_rct_GoldrinnHyjal= null
+rect gg_rct_TeldrassilUnlock1= null
+rect gg_rct_TeldrassilUnlock2= null
+rect gg_rct_DarnassusWorgen= null
+rect gg_rct_KaelSunwellChannel= null
+rect gg_rct_JainaChannel= null
+rect gg_rct_MonolithNoBuild= null
+rect gg_rct_DrakUnlock= null
+rect gg_rct_NyalothaAmbiance= null
+rect gg_rct_ArchimondeChannel= null
+rect gg_rct_DraeneiEvacuation= null
+rect gg_rct_AkamaUnlock= null
+rect gg_rct_Draenei_Invulnerable= null
+rect gg_rct_DragonSoulChannel= null
+rect gg_rct_WyrmrestTemple= null
+rect gg_rct_WorldTunnelEntrance= null
+rect gg_rct_WorldTunnelExit= null
+rect gg_rct_StrahnbradTaxe= null
+rect gg_rct_AndhoralTaxe= null
+rect gg_rct_TirisfalTaxe= null
+rect gg_rct_HeartglenTaxe= null
+rect gg_rct_CorinTaxe= null
+rect gg_rct_HavenshireTaxe= null
+rect gg_rct_AshbringerForge= null
+rect gg_rct_TyrsFall= null
+rect gg_rct_DuskwoodCrypt= null
+rect gg_rct_OutlandToArgus= null
+rect gg_rct_ClosePortal= null
+rect gg_rct_KaliRock5= null
+rect gg_rct_FromAzuremyst= null
+rect gg_rct_ArugalLocation= null
+rect gg_rct_GarithosCrusadeSpawn= null
+rect gg_rct_KaliRock6= null
 camerasetup gg_cam_Dalaran_1= null
 camerasetup gg_cam_Dalaran_2= null
 camerasetup gg_cam_Dalaran_3= null
@@ -657,8 +1179,7 @@ sound gg_snd_WolfHowl= null
 string gg_snd_ZandalarTheme
 sound gg_snd_DoorCloseRemix= null
 sound gg_snd_DoorOpenRemix= null
-sound gg_snd_NukeAlarm= null
-sound gg_snd_NukeTheme2= null
+sound gg_snd_NuclearLaunchDetected= null
 trigger gg_trg_VoteAppear= null
 trigger gg_trg_VoteYes= null
 trigger gg_trg_VoteNo= null
@@ -666,6 +1187,7 @@ trigger gg_trg_VoteEnd= null
 trigger gg_trg_PatronIni= null
 trigger gg_trg_Intros= null
 trigger gg_trg_IntroText= null
+trigger gg_trg_FoodIni= null
 trigger gg_trg_QuestInit= null
 trigger gg_trg_Terrain_Initialization= null
 trigger gg_trg_Hide_blockers= null
@@ -710,12 +1232,13 @@ trigger gg_trg_StormwindCleanup= null
 trigger gg_trg_Shipyard_Cancellation_Rects= null
 trigger gg_trg_Unique_Regen_Ring= null
 trigger gg_trg_Unique_Regen_Ring_Copy= null
-trigger gg_trg_Anti_Wind_Walk_Worker= null
+trigger gg_trg_Anti_Diamond_of_summoning= null
 trigger gg_trg_Antiportal_Camping= null
 trigger gg_trg_Antiportal_Camping_inside= null
 trigger gg_trg_Cancel_Shipyards= null
 trigger gg_trg_Ironforge_protection= null
 trigger gg_trg_Stormwind_protection= null
+trigger gg_trg_NazjatarProtection= null
 trigger gg_trg_High_Elves_Protection_2= null
 trigger gg_trg_Capital_antisuicide= null
 trigger gg_trg_Capital_Palace_Protection= null
@@ -723,6 +1246,10 @@ trigger gg_trg_Dalaran_Protection= null
 trigger gg_trg_Stratholme_Protection= null
 trigger gg_trg_Tyrs_Hand_Protection= null
 trigger gg_trg_Throne_Protection_2= null
+trigger gg_trg_GoblinProtection= null
+trigger gg_trg_NajzatarRemoval= null
+trigger gg_trg_RemoveWorkerDraenei= null
+trigger gg_trg_Turn22Pass= null
 trigger gg_trg_Tomb_Unlock= null
 trigger gg_trg_RemoveKalimRocks= null
 trigger gg_trg_Book_of_Medivh_retrieval= null
@@ -732,24 +1259,7 @@ trigger gg_trg_Murmur_Dies= null
 trigger gg_trg_CinematicMusicIni= null
 trigger gg_trg_Intros_Cinematic= null
 trigger gg_trg_Intro_End= null
-trigger gg_trg_GilneasCinematic= null
 trigger gg_trg_NagaCinematic= null
-trigger gg_trg_KulTirasCinematic= null
-trigger gg_trg_INI_Gilneas= null
-trigger gg_trg_GilneasHint1= null
-trigger gg_trg_GilneasHint2_Copy= null
-trigger gg_trg_GilneasHint2= null
-trigger gg_trg_DayTrigger= null
-trigger gg_trg_NightTrigger= null
-trigger gg_trg_Curse_Converstion= null
-trigger gg_trg_Curse_ConverstionShaman= null
-trigger gg_trg_InnerFight= null
-trigger gg_trg_NightAttack1= null
-trigger gg_trg_NightAttack2= null
-trigger gg_trg_Citizen_spawns_Copy= null
-trigger gg_trg_Chapter2= null
-trigger gg_trg_Chapter_3= null
-trigger gg_trg_GilneasCampaignVictory= null
 trigger gg_trg_IllidariINI= null
 trigger gg_trg_ReachDiremaul= null
 trigger gg_trg_Enter_Aetheneum= null
@@ -771,16 +1281,18 @@ trigger gg_trg_Naga_Summon= null
 trigger gg_trg_Naga_Timer_Reset= null
 trigger gg_trg_NagaBaseUnlock= null
 trigger gg_trg_IllidariPath= null
+trigger gg_trg_Untitled_Trigger_001= null
 trigger gg_trg_ObsMinimapReset= null
 trigger gg_trg_ObsPlayer14= null
-trigger gg_trg_Obs_Test_2_Copy= null
 trigger gg_trg_GUIUnitReferences= null
 trigger gg_trg_GUIUnitReference2= null
 trigger gg_trg_far= null
 trigger gg_trg_Custom_Camera= null
 trigger gg_trg_clear_command= null
 trigger gg_trg_Reset_Copy= null
-trigger gg_trg_info= null
+trigger gg_trg_TaxeBuildingStop= null
+trigger gg_trg_AddCastlesToTaxe= null
+trigger gg_trg_TaxeIncome= null
 trigger gg_trg_MonasteryCollapse= null
 trigger gg_trg_ArtilleryFireWarning= null
 trigger gg_trg_ArtilleryFire= null
@@ -792,9 +1304,6 @@ trigger gg_trg_ZeppelinTrain= null
 trigger gg_trg_ZeppelinLumberTrade= null
 trigger gg_trg_OilPlatformLoop= null
 trigger gg_trg_DiscoveringOil= null
-trigger gg_trg_OilRigDies= null
-trigger gg_trg_BlademasterDie= null
-trigger gg_trg_ShipDie= null
 trigger gg_trg_ShipLand= null
 trigger gg_trg_ShipOpen= null
 trigger gg_trg_ShipClose= null
@@ -803,18 +1312,11 @@ trigger gg_trg_Cataclysm= null
 trigger gg_trg_VisionoftheOldOnes= null
 trigger gg_trg_CorruptWorker= null
 trigger gg_trg_GoldCultistLoop= null
-trigger gg_trg_NexusResearch= null
-trigger gg_trg_Demon_Gate_INI= null
-trigger gg_trg_Hellfire_Death= null
-trigger gg_trg_Doom_Towers_North= null
-trigger gg_trg_Doom_Towers_South= null
-trigger gg_trg_Throne_of_Kiljaeden_rally= null
-trigger gg_trg_Sea_Witch_1= null
-trigger gg_trg_IronforgeDies= null
-trigger gg_trg_LegionSummonInit_Copy= null
+trigger gg_trg_LegionSummonStop= null
 trigger gg_trg_Legion_No_Book_Summon_Timer_Copy= null
 trigger gg_trg_Legion_Summon_Copy= null
 trigger gg_trg_Legion_No_Book_Finish_Copy= null
+trigger gg_trg_WalkingMonolith= null
 trigger gg_trg_HeroImmunityTurnOff= null
 trigger gg_trg_Lordaeron_West= null
 trigger gg_trg_Scarlet_Monastery_Dies= null
@@ -893,27 +1395,27 @@ trigger gg_trg_Ashbringer_LVL_2= null
 trigger gg_trg_Ashbringer_LVL_3= null
 trigger gg_trg_Ashbringer_LVL_4= null
 trigger gg_trg_Ascendancy= null
+unit gg_unit_nhmc_3317= null
 unit gg_unit_hhou_0341= null
 unit gg_unit_h000_0406= null
+unit gg_unit_nhmc_3297= null
 unit gg_unit_hhou_3395= null
 unit gg_unit_ngol_0217= null
+unit gg_unit_n0BU_0220= null
 unit gg_unit_hfoo_3647= null
 unit gg_unit_nfro_2837= null
-unit gg_unit_h03V_3969= null
 unit gg_unit_h05M_0263= null
 unit gg_unit_N00D_1457= null
 unit gg_unit_o00J_1495= null
-unit gg_unit_h03V_3785= null
 unit gg_unit_ngol_0066= null
-unit gg_unit_h03V_3970= null
 unit gg_unit_nmrm_3219= null
 unit gg_unit_hhou_3201= null
 unit gg_unit_h07K_0178= null
-unit gg_unit_h01E_1544= null
 unit gg_unit_o04E_1559= null
 unit gg_unit_n04O_1571= null
 unit gg_unit_etrs_3609= null
 unit gg_unit_ngol_0625= null
+unit gg_unit_o02P_2291= null
 unit gg_unit_h02K_3968= null
 unit gg_unit_h01T_0343= null
 unit gg_unit_npgr_0558= null
@@ -929,8 +1431,8 @@ unit gg_unit_nmcf_0537= null
 unit gg_unit_h006_0898= null
 unit gg_unit_h01A_0402= null
 unit gg_unit_o02D_0254= null
+unit gg_unit_ngol_3272= null
 unit gg_unit_ngol_0095= null
-unit gg_unit_u01Q_3871= null
 unit gg_unit_nfh0_3218= null
 unit gg_unit_e00J_0320= null
 unit gg_unit_h07K_0177= null
@@ -940,12 +1442,10 @@ unit gg_unit_n036_1065= null
 unit gg_unit_h01D_3381= null
 unit gg_unit_o013_2507= null
 unit gg_unit_n094_0348= null
-unit gg_unit_h03V_2232= null
 unit gg_unit_nbsm_1188= null
 unit gg_unit_ngol_0063= null
 unit gg_unit_ncnk_0573= null
 unit gg_unit_n03B_0037= null
-unit gg_unit_nhmc_1519= null
 unit gg_unit_h01T_2045= null
 unit gg_unit_n036_0778= null
 unit gg_unit_H00E_1728= null
@@ -960,11 +1460,12 @@ unit gg_unit_o01I_1505= null
 unit gg_unit_h03P_2095= null
 unit gg_unit_o00K_0150= null
 unit gg_unit_h00I_0870= null
+unit gg_unit_u01M_0484= null
 unit gg_unit_h00L_0987= null
 unit gg_unit_ncp2_3613= null
 unit gg_unit_o008_0168= null
 unit gg_unit_o004_0169= null
-unit gg_unit_h03V_3971= null
+unit gg_unit_n0BE_3261= null
 unit gg_unit_nico_0666= null
 unit gg_unit_o00F_0659= null
 unit gg_unit_h03V_1110= null
@@ -997,11 +1498,10 @@ unit gg_unit_hbla_3319= null
 unit gg_unit_n0AG_2643= null
 unit gg_unit_hgtw_3320= null
 unit gg_unit_Eill_0748= null
-unit gg_unit_h00L_0227= null
+unit gg_unit_nfro_2886= null
 unit gg_unit_hhou_0337= null
 unit gg_unit_n002_0130= null
 unit gg_unit_u015_2698= null
-unit gg_unit_o02J_3931= null
 unit gg_unit_h013_0174= null
 unit gg_unit_ngol_0506= null
 unit gg_unit_hars_3321= null
@@ -1023,28 +1523,26 @@ unit gg_unit_n081_1585= null
 unit gg_unit_h01Z_0618= null
 unit gg_unit_h04P_1732= null
 unit gg_unit_n07F_1101= null
+unit gg_unit_h00L_0774= null
 unit gg_unit_h05Z_3325= null
-unit gg_unit_o00G_1521= null
-unit gg_unit_h03V_3800= null
 unit gg_unit_noga_1228= null
 unit gg_unit_n021_2624= null
 unit gg_unit_h01G_0885= null
 unit gg_unit_h02U_2413= null
+unit gg_unit_h046_0409= null
 unit gg_unit_o00N_0704= null
 unit gg_unit_n036_2719= null
 unit gg_unit_h05I_0313= null
 unit gg_unit_hhou_0295= null
 unit gg_unit_u008_2124= null
-unit gg_unit_h004_0090= null
 unit gg_unit_u000_0649= null
-unit gg_unit_n081_0036= null
 unit gg_unit_n03B_0010= null
 unit gg_unit_nemi_0019= null
 unit gg_unit_Hamg_3616= null
+unit gg_unit_o05E_1583= null
 unit gg_unit_O02C_2437= null
 unit gg_unit_o016_0771= null
 unit gg_unit_o02G_0310= null
-unit gg_unit_ngol_3788= null
 unit gg_unit_h007_0869= null
 unit gg_unit_n04R_1914= null
 unit gg_unit_ngol_0291= null
@@ -1065,21 +1563,21 @@ unit gg_unit_n03G_3941= null
 unit gg_unit_h055_0035= null
 unit gg_unit_nrwm_1981= null
 unit gg_unit_h02Z_0726= null
+unit gg_unit_o055_3337= null
 unit gg_unit_u012_1149= null
+unit gg_unit_o054_3338= null
 unit gg_unit_h03V_0257= null
 unit gg_unit_u01U_1037= null
 unit gg_unit_nfoh_1190= null
 unit gg_unit_u01U_1043= null
 unit gg_unit_o02J_0984= null
 unit gg_unit_O025_3426= null
-unit gg_unit_u00W_2892= null
 unit gg_unit_O00O_1933= null
 unit gg_unit_u01Y_0071= null
 unit gg_unit_nfoh_2299= null
 unit gg_unit_h00I_2030= null
 unit gg_unit_h01D_3379= null
 unit gg_unit_nfoh_0212= null
-unit gg_unit_h03V_3812= null
 unit gg_unit_h001_0180= null
 unit gg_unit_o01U_1388= null
 unit gg_unit_h03W_1656= null
@@ -1093,6 +1591,7 @@ unit gg_unit_ubdr_0668= null
 unit gg_unit_htow_0789= null
 unit gg_unit_n07E_1154= null
 unit gg_unit_hmtm_2086= null
+unit gg_unit_o051_3356= null
 unit gg_unit_n052_3374= null
 unit gg_unit_h00D_2123= null
 unit gg_unit_h00D_2122= null
@@ -1116,9 +1615,9 @@ unit gg_unit_ngol_0042= null
 unit gg_unit_n04B_1155= null
 unit gg_unit_n03C_0000= null
 unit gg_unit_e00M_2545= null
-unit gg_unit_h04I_0101= null
 unit gg_unit_h030_0839= null
 unit gg_unit_nadr_0658= null
+unit gg_unit_h03V_3441= null
 unit gg_unit_U00R_0609= null
 unit gg_unit_n081_4142= null
 unit gg_unit_n085_2846= null
@@ -1128,12 +1627,13 @@ unit gg_unit_h01B_2496= null
 unit gg_unit_n07F_1001= null
 unit gg_unit_h006_0416= null
 unit gg_unit_h006_0411= null
-unit gg_unit_Hgam_1450= null
+unit gg_unit_n0BE_3262= null
 unit gg_unit_n074_1565= null
 unit gg_unit_nmyr_2375= null
 unit gg_unit_h00L_0162= null
 unit gg_unit_h03P_0175= null
 unit gg_unit_nfoh_1904= null
+unit gg_unit_h03V_3449= null
 unit gg_unit_h070_1120= null
 unit gg_unit_n066_0114= null
 unit gg_unit_n066_0531= null
@@ -1144,16 +1644,19 @@ unit gg_unit_h08T_0260= null
 unit gg_unit_nitw_1513= null
 unit gg_unit_h006_2912= null
 unit gg_unit_ngol_0224= null
+unit gg_unit_h03V_3538= null
 unit gg_unit_ngol_0069= null
 unit gg_unit_h03K_0031= null
 unit gg_unit_negt_2501= null
 unit gg_unit_ncp2_3614= null
 unit gg_unit_n036_3291= null
+unit gg_unit_nfro_3150= null
 unit gg_unit_h01D_3387= null
 unit gg_unit_nftt_0799= null
 unit gg_unit_owtw_1637= null
 unit gg_unit_owtw_1636= null
 unit gg_unit_n094_0611= null
+unit gg_unit_nfro_1519= null
 unit gg_unit_U01Z_1237= null
 unit gg_unit_nmyr_2386= null
 unit gg_unit_n081_0882= null
@@ -1165,21 +1668,16 @@ unit gg_unit_e014_3083= null
 unit gg_unit_n094_0347= null
 unit gg_unit_h00L_0135= null
 unit gg_unit_harm_0119= null
-unit gg_unit_h04M_3955= null
-unit gg_unit_h04E_3954= null
-unit gg_unit_Hhkl_1500= null
-unit gg_unit_Hpb2_3787= null
+unit gg_unit_h09U_3138= null
+unit gg_unit_n0BQ_3487= null
 unit gg_unit_h07X_0170= null
-unit gg_unit_h04E_3953= null
-unit gg_unit_h057_3921= null
+unit gg_unit_h09W_3303= null
 unit gg_unit_h03V_0183= null
-unit gg_unit_hbot_3795= null
-unit gg_unit_Ewar_0424= null
 unit gg_unit_o04M_1640= null
 unit gg_unit_h03K_1492= null
 unit gg_unit_n036_3292= null
+unit gg_unit_h03V_3539= null
 unit gg_unit_ohun_3197= null
-unit gg_unit_n04H_0194= null
 unit gg_unit_n08R_2209= null
 unit gg_unit_h01D_3385= null
 unit gg_unit_h070_2542= null
@@ -1195,13 +1693,11 @@ unit gg_unit_ngol_0006= null
 unit gg_unit_nrzm_0113= null
 unit gg_unit_n07E_1491= null
 unit gg_unit_n05X_1493= null
-unit gg_unit_h04E_2478= null
 unit gg_unit_npig_3022= null
 unit gg_unit_nfro_2832= null
-unit gg_unit_ngol_2372= null
 unit gg_unit_nsgg_1490= null
+unit gg_unit_o05I_0261= null
 unit gg_unit_nfro_3039= null
-unit gg_unit_h00L_3084= null
 destructable gg_dest_B017_8051= null
 destructable gg_dest_B017_8950= null
 destructable gg_dest_B017_11949= null
@@ -1219,549 +1715,23 @@ destructable gg_dest_ATtr_5868= null
 destructable gg_dest_ATtr_5854= null
 destructable gg_dest_ATtr_5852= null
 destructable gg_dest_ATtr_5849= null
+destructable gg_dest_ATg1_35873= null
 destructable gg_dest_DTg6_36078= null
 destructable gg_dest_DTg7_11246= null
 destructable gg_dest_DTlv_11361= null
 destructable gg_dest_ATg1_11032= null
 destructable gg_dest_ATtr_11494= null
+destructable gg_dest_B023_23223= null
 destructable gg_dest_YT24_0267= null
 destructable gg_dest_ZTsx_15632= null
 destructable gg_dest_LTg3_11362= null
-destructable gg_dest_ATg3_35872= null
 destructable gg_dest_ATg2_35871= null
-destructable gg_dest_ATg1_35873= null
-destructable gg_dest_OTsp_35728= null
-destructable gg_dest_OTsp_35732= null
-destructable gg_dest_OTsp_19293= null
-destructable gg_dest_OTsp_35727= null
 destructable gg_dest_ATg3_35869= null
-rect gg_rct_Solliden_Farmstead= null
-rect gg_rct_Arathi_Ships= null
-rect gg_rct_AzjolNerubDragonblight_Exit= null
-rect gg_rct_Blasted_Lands_Weather= null
-rect gg_rct_Barren_Excavation= null
-rect gg_rct_Blackrock_Entrance= null
-rect gg_rct_Book_of_Mediv_Chaos= null
-rect gg_rct_Borean_Tundra= null
-rect gg_rct_Brill= null
-rect gg_rct_Broken_Isles= null
-rect gg_rct_CaerDarrowShipyard= null
-rect gg_rct_Cathedral_of_Light= null
-rect gg_rct_Central_Northrend= null
-rect gg_rct_Chaosmod1= null
-rect gg_rct_Coldarra= null
-rect gg_rct_Construction_Site_2= null
-rect gg_rct_Corins_Crossing= null
-rect gg_rct_Crossroads= null
-rect gg_rct_Dalaran= null
-rect gg_rct_DalaranDungeon= null
-rect gg_rct_Dalaran_Dungeons_Entrance= null
-rect gg_rct_Dalaran_Dungeons_Exit= null
-rect gg_rct_DalaranExit2= null
-rect gg_rct_Dark_Portal_Entrance_1= null
-rect gg_rct_Dark_Portal_Exit_1= null
-rect gg_rct_Darkspear_Island= null
-rect gg_rct_Darrowshire= null
-rect gg_rct_Demongate_1= null
-rect gg_rct_Demongate_2= null
-rect gg_rct_DemonGate3= null
-rect gg_rct_Desolace_Ships= null
-rect gg_rct_Dire_Maul_Entrance= null
-rect gg_rct_Dire_Maul_Exit= null
-rect gg_rct_Dun_Morogh_Excavation= null
-rect gg_rct_Dun_Morogh_Ships= null
-rect gg_rct_Dustwallow_Ships= null
-rect gg_rct_East_Thandol= null
-rect gg_rct_Eastern_Northrend= null
-rect gg_rct_EssenceSpawn= null
-rect gg_rct_Far_Eastern_Northrend= null
-rect gg_rct_Felwood_Vision= null
-rect gg_rct_Fenris_ships= null
-rect gg_rct_Fjord= null
-rect gg_rct_Gilneas= null
-rect gg_rct_Gilneas_Canals= null
-rect gg_rct_Gnomergan= null
-rect gg_rct_Greymane= null
-rect gg_rct_Grim_Batol= null
-rect gg_rct_Grim_Batol_Tunnel_Entrance= null
-rect gg_rct_Grim_Batol_Tunnel_Top= null
-rect gg_rct_Havenshire= null
-rect gg_rct_Hearthglen= null
-rect gg_rct_HeroOrItemWaitRect= null
-rect gg_rct_HonorHold= null
-rect gg_rct_Howling_Fjord= null
-rect gg_rct_Ice_Crown= null
-rect gg_rct_IcecrownShipyard= null
-rect gg_rct_IllidanSpawn= null
-rect gg_rct_Ironforge= null
-rect gg_rct_Jaina_soul_gem= null
-rect gg_rct_Kali_Ships= null
-rect gg_rct_Kultiras= null
-rect gg_rct_LichKing= null
-rect gg_rct_Loch_Modan_Ships= null
-rect gg_rct_Lordaeron_East= null
-rect gg_rct_Lordaeron_West= null
-rect gg_rct_Moonglade= null
-rect gg_rct_Murloc_Attack= null
-rect gg_rct_Murloc_Spawn_1= null
-rect gg_rct_Murloc_Spawn_2= null
-rect gg_rct_InstanceNazjatar= null
-rect gg_rct_Nether_Exit= null
-rect gg_rct_Northern_Kali_Ships= null
-rect gg_rct_Northrend_ships= null
-rect gg_rct_OrgGate= null
-rect gg_rct_Orgrimmar= null
-rect gg_rct_Outland_Ships= null
-rect gg_rct_Plague_1= null
-rect gg_rct_Plague_2= null
-rect gg_rct_Plague_3= null
-rect gg_rct_Plague_4= null
-rect gg_rct_Plague_5= null
-rect gg_rct_Plague_6= null
-rect gg_rct_Plague_7= null
-rect gg_rct_Quel_Ships_1= null
-rect gg_rct_Quel_Ships_2= null
-rect gg_rct_Quel_Ships_3= null
-rect gg_rct_Quelthalas= null
-rect gg_rct_Sargeras_Entrance= null
-rect gg_rct_Sargeras_Exit= null
-rect gg_rct_ScarletMonastery= null
-rect gg_rct_Scholomance_Entrance= null
-rect gg_rct_Scholomance_Exit= null
-rect gg_rct_Shadowforge_City= null
-rect gg_rct_Shadowmoon_Excavation= null
-rect gg_rct_Siphon_Cast_Zone= null
-rect gg_rct_South_EK_Ships= null
-rect gg_rct_StonemaulKeep= null
-rect gg_rct_Storm_Peaks= null
-rect gg_rct_Stormwind= null
-rect gg_rct_Stratholme_Platform_entrance= null
-rect gg_rct_Stratholme_platform_exit= null
-rect gg_rct_StratholmeShipyard= null
-rect gg_rct_Stromgarde= null
-rect gg_rct_Stromwind_antiship= null
-rect gg_rct_STV_Ships= null
-rect gg_rct_Terenas= null
-rect gg_rct_The_Basin= null
-rect gg_rct_Thrall_2= null
-rect gg_rct_Thrall_3= null
-rect gg_rct_Thrall_4= null
-rect gg_rct_Thrall_5= null
-rect gg_rct_Thrall_6= null
-rect gg_rct_Thrall_Landing1= null
-rect gg_rct_Thrall_Ship_1= null
-rect gg_rct_Thrall_Ship_2= null
-rect gg_rct_Tomb_Of_Sargeras_Ships= null
-rect gg_rct_TwistingNether= null
-rect gg_rct_Vandermar_Village= null
-rect gg_rct_WarsongCamp= null
-rect gg_rct_West_Thandol= null
-rect gg_rct_Winterpspring_Excavation= null
-rect gg_rct_ZF_Spawn_1= null
-rect gg_rct_ZF_Spawn_2= null
-rect gg_rct_Zulfarrak= null
-rect gg_rct_East_of_Azeroth= null
-rect gg_rct_West_of_Kalimdor= null
-rect gg_rct_Silvermon_Palace_trolls= null
-rect gg_rct_BloodpactFountain= null
-rect gg_rct_FTSummon= null
-rect gg_rct_Book_Retrieval= null
-rect gg_rct_King_Arthas_crown= null
-rect gg_rct_Drekthars_Spellbook= null
-rect gg_rct_Masteries= null
-rect gg_rct_Cthun_prevent_1= null
-rect gg_rct_AhnQiraj= null
-rect gg_rct_Cthun_position= null
-rect gg_rct_Sunwell_region= null
-rect gg_rct_RiseSpawn2= null
-rect gg_rct_AzjolNerub_South_Entrance= null
-rect gg_rct_AzjolNerub_North_Exit= null
-rect gg_rct_Auberdine_Ships_2= null
-rect gg_rct_Auberdine_Ships= null
-rect gg_rct_AzjolNerubNorth_entrance= null
-rect gg_rct_Auberdine_Ships_2_Copy= null
-rect gg_rct_Auberdine_Ships_Copy= null
-rect gg_rct_Arathi_Ships_Copy= null
-rect gg_rct_Alterac_Exca= null
-rect gg_rct_Arathi_Ships_Copy_2= null
-rect gg_rct_Andorhal= null
-rect gg_rct_Aerie_Peak= null
-rect gg_rct_Arathi_Ships_Copy_3= null
-rect gg_rct_TempestKeep= null
-rect gg_rct_Sunwell= null
-rect gg_rct_InstanceBarrowDeeps= null
-rect gg_rct_InstanceDireMaul= null
-rect gg_rct_InstanceScholomance= null
-rect gg_rct_InstanceSargerasTomb= null
-rect gg_rct_InstanceAzjolNerub= null
-rect gg_rct_InstanceOutland= null
-rect gg_rct_DalaranEntrance2= null
-rect gg_rct_InstanceDalaranDungeon1= null
-rect gg_rct_InstanceDalaranDungeon2= null
-rect gg_rct_InstanceDalaranDungeon3= null
-rect gg_rct_Tempest_Keep_Evacuate= null
-rect gg_rct_Gazlower= null
-rect gg_rct_Varok= null
-rect gg_rct_Region_077= null
-rect gg_rct_NyHighland= null
-rect gg_rct_Mannoroth= null
-rect gg_rct_Jergosh= null
-rect gg_rct_Dark_Portal_Exit_2= null
-rect gg_rct_Dark_Portal_Exit_3= null
-rect gg_rct_Dark_Portal_Entrance_2= null
-rect gg_rct_Dark_Portal_Entrance_3= null
-rect gg_rct_Chen= null
-rect gg_rct_QuelDanil_Lodge= null
-rect gg_rct_HighBourne= null
-rect gg_rct_Andrassil= null
-rect gg_rct_EvilIllidanSpawn= null
-rect gg_rct_VaultoftheWardens= null
-rect gg_rct_Theramore= null
-rect gg_rct_Terrordale= null
-rect gg_rct_Dreadscar_1= null
-rect gg_rct_Deemspring= null
-rect gg_rct_Dreadscar_3= null
-rect gg_rct_Scholo_Ships= null
-rect gg_rct_DalaCutscene1= null
-rect gg_rct_Dreadscar_2= null
-rect gg_rct_DalaCutscene2= null
-rect gg_rct_DalaCutscene3= null
-rect gg_rct_DalaCutscene4= null
-rect gg_rct_DalaCutscene4_Copy= null
-rect gg_rct_DalaCutscene4_Copy_2= null
-rect gg_rct_Lord1= null
-rect gg_rct_Lord2= null
-rect gg_rct_Lord3= null
-rect gg_rct_Lord4= null
-rect gg_rct_Lord5= null
-rect gg_rct_Lord6= null
-rect gg_rct_Dwarf1= null
-rect gg_rct_Dwarf2= null
-rect gg_rct_Dwarf3= null
-rect gg_rct_Dwarf4= null
-rect gg_rct_Legion1= null
-rect gg_rct_Legion00= null
-rect gg_rct_Legion2= null
-rect gg_rct_Legion3= null
-rect gg_rct_Frostwolf1= null
-rect gg_rct_Warsong1= null
-rect gg_rct_Sent1= null
-rect gg_rct_Sent2= null
-rect gg_rct_Sent3= null
-rect gg_rct_Sent4= null
-rect gg_rct_Sent5= null
-rect gg_rct_Sent_6= null
-rect gg_rct_Sent_7= null
-rect gg_rct_Sent8= null
-rect gg_rct_Sent9= null
-rect gg_rct_Sent10= null
-rect gg_rct_Druid1= null
-rect gg_rct_Druid2= null
-rect gg_rct_Druid3= null
-rect gg_rct_Scourge1= null
-rect gg_rct_Scourge2= null
-rect gg_rct_Scourge3= null
-rect gg_rct_Scourge4= null
-rect gg_rct_Stormwind1= null
-rect gg_rct_Stormwind2= null
-rect gg_rct_Stormwind3= null
-rect gg_rct_Fel4= null
-rect gg_rct_Fel5= null
-rect gg_rct_Fel6= null
-rect gg_rct_Fel7= null
-rect gg_rct_Fel8= null
-rect gg_rct_Quel1= null
-rect gg_rct_Quel5= null
-rect gg_rct_Quel2= null
-rect gg_rct_Quel3= null
-rect gg_rct_Quel4= null
-rect gg_rct_NazjatarExit3= null
-rect gg_rct_DagranSpawn= null
-rect gg_rct_Guldan= null
-rect gg_rct_Gazlowe= null
-rect gg_rct_Anetheron= null
-rect gg_rct_Khadgar= null
-rect gg_rct_Cenarius= null
-rect gg_rct_Ursoc= null
-rect gg_rct_Kiljaeden= null
-rect gg_rct_ThunderBluff= null
-rect gg_rct_ThrallLanding= null
-rect gg_rct_CairneStart= null
-rect gg_rct_Druid4= null
-rect gg_rct_Druid5= null
-rect gg_rct_Sent11= null
-rect gg_rct_Sent_12= null
-rect gg_rct_Dwarf_group_1= null
-rect gg_rct_GrizzlyHills= null
-rect gg_rct_Northrend_Ambiance= null
-rect gg_rct_TeldrassilAmbient= null
-rect gg_rct_MoongladeVillage= null
-rect gg_rct_AzuremystAmbient= null
-rect gg_rct_AshenvaleAmbient= null
-rect gg_rct_BarrenAmbient1= null
-rect gg_rct_BarrenAmbient2= null
-rect gg_rct_BarrenAmbient3= null
-rect gg_rct_BarrenAmbient4= null
-rect gg_rct_BarrenAmbient5= null
-rect gg_rct_SilithusAmbient= null
-rect gg_rct_UngoroAmbient= null
-rect gg_rct_FeralasAmbient1= null
-rect gg_rct_FeralasAmbient2= null
-rect gg_rct_AszharaAmbient1= null
-rect gg_rct_AzsharaAmbient2= null
-rect gg_rct_DusthallowAmbient= null
-rect gg_rct_EchoIsleAmbient= null
-rect gg_rct_ZulfarrakAmbient= null
-rect gg_rct_KezanAmbient= null
-rect gg_rct_AshenvaleAmbient2= null
-rect gg_rct_WinterspringAmbient1= null
-rect gg_rct_WinterspringAmbient2= null
-rect gg_rct_AshenvaleAmbient3= null
-rect gg_rct_RanazjarAmbient= null
-rect gg_rct_AshenvaleAmbient4= null
-rect gg_rct_Queltalas_2= null
-rect gg_rct_StratholmeAmbient= null
-rect gg_rct_LordaeronAmbient1= null
-rect gg_rct_TyrHandAmbient= null
-rect gg_rct_LordaeronAmbient2= null
-rect gg_rct_LordaeronAmbient3= null
-rect gg_rct_ZulAman_trolls= null
-rect gg_rct_LordaeronAmbient4= null
-rect gg_rct_LordaeronAmbient5= null
-rect gg_rct_QuelthalasAmbient= null
-rect gg_rct_SunwellAmbient= null
-rect gg_rct_ShadowfangAmbient= null
-rect gg_rct_LordamereLakeAmbient= null
-rect gg_rct_SouthshoreAmbient= null
-rect gg_rct_AlteracAmbient= null
-rect gg_rct_ScholomanceAmbient2= null
-rect gg_rct_ScholomanceAmbient1= null
-rect gg_rct_SouthshoreAmbient2= null
-rect gg_rct_SouthshoreAmbient3= null
-rect gg_rct_SouthshoreAmbient4= null
-rect gg_rct_SouthshoreAmbient5= null
-rect gg_rct_BridgeAmbient= null
-rect gg_rct_ScholomanceAmbient3= null
-rect gg_rct_HinterlandAmbient1= null
-rect gg_rct_HinterlandAmbient2= null
-rect gg_rct_Aerie_Peak_Copy= null
-rect gg_rct_TolbaradAmbient= null
-rect gg_rct_BalorAmbient= null
-rect gg_rct_StormwindAmbient2= null
-rect gg_rct_SentinelTowerAmbient= null
-rect gg_rct_StranglethornAmbient1= null
-rect gg_rct_StranglethornAmbient2= null
-rect gg_rct_StranglethornAmbient3= null
-rect gg_rct_ElwinForestAmbient= null
-rect gg_rct_DarkshireAmbient1= null
-rect gg_rct_DarkshireAmbient2= null
-rect gg_rct_DarkshireAmbient3= null
-rect gg_rct_BlastedlandAmbient= null
-rect gg_rct_SwampofSorrowsAmbient= null
-rect gg_rct_BurningSteppesAmbient= null
-rect gg_rct_BurningSteppeAmbient2= null
-rect gg_rct_IronforgeAmbient= null
-rect gg_rct_DunmoroghAmbient1= null
-rect gg_rct_DunmoroghAmbient2= null
-rect gg_rct_DunmoroghAmbient3= null
-rect gg_rct_LochModanAmbient= null
-rect gg_rct_WetlandAmbient1= null
-rect gg_rct_WetlandAmbient2= null
-rect gg_rct_GrimBatolAmbient1= null
-rect gg_rct_GrimBatolAmbient2= null
-rect gg_rct_Region_IC= null
-rect gg_rct_Region_DB= null
-rect gg_rct_Region_AE= null
-rect gg_rct_Region_AZ_1= null
-rect gg_rct_Region_AZ_2= null
-rect gg_rct_Region_BM= null
-rect gg_rct_Region_ToS= null
-rect gg_rct_Region_SC= null
-rect gg_rct_IllidanWeather= null
-rect gg_rct_IllidanMovement1= null
-rect gg_rct_IllidanMovement2= null
-rect gg_rct_IllidanAmbiance2= null
-rect gg_rct_LightningBolt2= null
-rect gg_rct_LightningBolt3= null
-rect gg_rct_WaveCrash= null
-rect gg_rct_BloodElfSecondChanceSpawn= null
-rect gg_rct_AethneumTombExit= null
-rect gg_rct_AethneumLibraryEntrance= null
-rect gg_rct_IllidanMoveAethneum= null
-rect gg_rct_ImmolFight= null
-rect gg_rct_AethneumCatacombs= null
-rect gg_rct_AethneumRemove= null
-rect gg_rct_AetheneumTombExit2= null
-rect gg_rct_NazjatarEntrance2= null
-rect gg_rct_NazjatarEntrance1= null
-rect gg_rct_NazjatarExit1= null
-rect gg_rct_NazjatarExit2= null
-rect gg_rct_AetheneumTombEntrance2= null
-rect gg_rct_IllidanBoat1= null
-rect gg_rct_IllidanBoat2= null
-rect gg_rct_IllidanBoat3= null
-rect gg_rct_IllidanBoat4= null
-rect gg_rct_IllidanExit2= null
-rect gg_rct_IllidanCameraExit= null
-rect gg_rct_IllidanExitText1= null
-rect gg_rct_SkullOfGuldan= null
-rect gg_rct_IllidanDala1= null
-rect gg_rct_IllidanDala2= null
-rect gg_rct_IllidanDalaranInstance= null
-rect gg_rct_StartQuest2= null
-rect gg_rct_IllidanDala4= null
-rect gg_rct_IllidanDala5= null
-rect gg_rct_IllidanDala6= null
-rect gg_rct_IllidanDala7= null
-rect gg_rct_IllidanDala8= null
-rect gg_rct_IllidanElementalSentry= null
-rect gg_rct_StartQuest3= null
-rect gg_rct_IllidanDalaExit= null
-rect gg_rct_UnlockIllidanSwitch= null
-rect gg_rct_IllidanLook= null
-rect gg_rct_IllidanLast= null
-rect gg_rct_AetheneumtoNazjatar= null
-rect gg_rct_IllidanNaga1= null
-rect gg_rct_IllidanNaga2= null
-rect gg_rct_IllidanNaga3= null
-rect gg_rct_MaelstromAmbient= null
-rect gg_rct_Chapter2Map= null
-rect gg_rct_Chapter3= null
-rect gg_rct_WerewolfSpawn1= null
-rect gg_rct_WerewolfSpawn2= null
-rect gg_rct_WerewolfSpawn3= null
-rect gg_rct_Attack_Commands= null
-rect gg_rct_AttackPoint= null
-rect gg_rct_GilneasMovement1= null
-rect gg_rct_GilneasMovement2= null
-rect gg_rct_GilneasMovement3= null
-rect gg_rct_GilneasMovement4= null
-rect gg_rct_GilneasMovement5= null
-rect gg_rct_Innerfight1= null
-rect gg_rct_InnerFightStart= null
-rect gg_rct_Innerfight2= null
-rect gg_rct_GilneasMovement2_Copy= null
-rect gg_rct_GilneasMovement2_Copy_2= null
-rect gg_rct_GilneasMovement2_Copy_2_Copy= null
-rect gg_rct_Chapter2Start= null
-rect gg_rct_Chapter2TeleStart= null
-rect gg_rct_WerewolfSpawn4= null
-rect gg_rct_AttackPoint_Copy= null
-rect gg_rct_GilneasExit3= null
-rect gg_rct_GilneasExit1= null
-rect gg_rct_GilneasExit2= null
-rect gg_rct_GilneasEntrance1= null
-rect gg_rct_GilneasEntrance2= null
-rect gg_rct_GilneasEntrance3= null
-rect gg_rct_Checkpoint1Gilneas= null
-rect gg_rct_Scarlet_Monastery_Interior= null
-rect gg_rct_Undercity_Interior_1= null
-rect gg_rct_Undercity_Interior_2= null
-rect gg_rct_Undercity_Exterior_1= null
-rect gg_rct_Undercity_Exterior_2= null
-rect gg_rct_Scarlet_Monastery_Exterior= null
-rect gg_rct_Undercity_Escape= null
-rect gg_rct_DarkshireUnlock= null
-rect gg_rct_StormwindUnlock= null
-rect gg_rct_LakeshireUnlock= null
-rect gg_rct_NethergardeUnlock= null
-rect gg_rct_StratholmeUnlock= null
-rect gg_rct_TyrUnlock= null
-rect gg_rct_ShadowfangUnlock= null
-rect gg_rct_TrollAttackSpawn= null
-rect gg_rct_TrollTarget= null
-rect gg_rct_KilsorrowUnlock= null
-rect gg_rct_HellfireUnlock= null
-rect gg_rct_ScarletAmbient= null
-rect gg_rct_ThelUnlock= null
-rect gg_rct_KulAttack= null
-rect gg_rct_KulTarget= null
-rect gg_rct_BlademasterUnlock= null
-rect gg_rct_ZandalarUnlock= null
-rect gg_rct_UndercityUnlock= null
-rect gg_rct_NaxxramasInside= null
-rect gg_rct_NaxAmbient= null
-rect gg_rct_NaxUnlock= null
-rect gg_rct_TwilightAmbient= null
-rect gg_rct_TwilightInside= null
-rect gg_rct_TwilightOutside= null
-rect gg_rct_ShipInside= null
-rect gg_rct_ShipAmbient= null
-rect gg_rct_ShipTarget= null
-rect gg_rct_NagaUnlock2= null
-rect gg_rct_NagaUnlock1= null
-rect gg_rct_NazjatarHidden= null
-rect gg_rct_IllidanOutlandEntrance= null
-rect gg_rct_Kalimdor= null
-rect gg_rct_FeathermoonUnlock= null
-rect gg_rct_AstranaarUnlock= null
-rect gg_rct_AshenvaleUnlock= null
-rect gg_rct_DrownedTemple= null
-rect gg_rct_NzothIni= null
-rect gg_rct_DragonmawUnlock= null
-rect gg_rct_SouthshoreUnlock= null
-rect gg_rct_GilneasMovement2_Copy_2_Copy_Copy= null
-rect gg_rct_MaievStartUnlock= null
-rect gg_rct_Silithus_Bug_Interior= null
-rect gg_rct_Silithus_Stone_Interior= null
-rect gg_rct_Silithus_Stone_Exterior= null
-rect gg_rct_Silithus_Bug_Exterior= null
-rect gg_rct_EchoUnlock= null
-rect gg_rct_StrahnbradUnlock= null
-rect gg_rct_TunnelUnlock= null
-rect gg_rct_AhnqirajInstance= null
-rect gg_rct_CthunSummon= null
-rect gg_rct_ZeppelinReturn= null
-rect gg_rct_Trade1= null
-rect gg_rct_Trade2= null
-rect gg_rct_Trade3= null
-rect gg_rct_Trade4= null
-rect gg_rct_Trader1= null
-rect gg_rct_Trader2= null
-rect gg_rct_Trader3= null
-rect gg_rct_GadgetUnlock= null
-rect gg_rct_OilRig1= null
-rect gg_rct_OilRig2= null
-rect gg_rct_OilRig3= null
-rect gg_rct_OilRig4= null
-rect gg_rct_OilRig5= null
-rect gg_rct_OilRig6= null
-rect gg_rct_Ny_Ulduar_Interior= null
-rect gg_rct_Ny_Twilight_Highlands_Interior= null
-rect gg_rct_Ny_Nazjatar_Interior= null
-rect gg_rct_Ny_Silithus_Interior= null
-rect gg_rct_ScarletExit= null
-rect gg_rct_TempestKeepSpawn= null
-rect gg_rct_SummonObeliskTarget= null
-rect gg_rct_NyalothaInstance= null
-rect gg_rct_NyTanaris= null
-rect gg_rct_NyNorth= null
-rect gg_rct_UldumAmbiance= null
-rect gg_rct_NyalothaUnlock1= null
-rect gg_rct_NyalothaUnlock2= null
-rect gg_rct_NyalothaUnlock3= null
-rect gg_rct_ScarletHarbor= null
-rect gg_rct_KaliRock1= null
-rect gg_rct_KaliRock2= null
-rect gg_rct_KaliRock3= null
-rect gg_rct_KaliRock4= null
-rect gg_rct_GoldrinnDuskwood= null
-rect gg_rct_GoldrinnHyjal= null
-rect gg_rct_TeldrassilUnlock1= null
-rect gg_rct_TeldrassilUnlock2= null
-rect gg_rct_DarnassusWorgen= null
-rect gg_rct_KaelSunwellChannel= null
-rect gg_rct_JainaChannel= null
-rect gg_rct_Auberdine_Ships_2_Copy_2= null
-rect gg_rct_Fel2= null
-rect gg_rct_Blackrock_Exit= null
-rect gg_rct_Shadowforge_gate= null
-rect gg_rct_InstanceBlackrock= null
-rect gg_rct_Fel1= null
-rect gg_rct_Fel2_Copy= null
-rect gg_rct_Fel3= null
-rect gg_rct_Region_BS= null
-rect gg_rct_BlackrockUnlock= null
+destructable gg_dest_OTsp_35727= null
+destructable gg_dest_OTsp_19293= null
+destructable gg_dest_OTsp_35732= null
+destructable gg_dest_OTsp_35728= null
+destructable gg_dest_ATg3_35872= null
 boolean AreAllianceActive= false
 
 
@@ -1790,7 +1760,6 @@ call KillUnit(gg_unit_hhou_0375)
 call KillUnit(gg_unit_nhcn_2597)
 call KillUnit(gg_unit_nmcf_0537)
 call KillUnit(gg_unit_h006_0898)
-call KillUnit(gg_unit_u01Q_3871)
 call KillUnit(gg_unit_nfh0_3218)
 call KillUnit(gg_unit_e00J_0320)
 call KillUnit(gg_unit_h07K_0177)
@@ -1850,7 +1819,6 @@ call KillUnit(gg_unit_o00N_0704)
 call KillUnit(gg_unit_n036_2719)
 call KillUnit(gg_unit_h05I_0313)
 call KillUnit(gg_unit_u008_2124)
-call KillUnit(gg_unit_h004_0090)
 call KillUnit(gg_unit_u000_0649)
 call KillUnit(gg_unit_n03B_0010)
 call KillUnit(gg_unit_nemi_0019)
@@ -1931,7 +1899,6 @@ call KillUnit(gg_unit_n08R_2209)
 call KillUnit(gg_unit_h070_2542)
 call KillUnit(gg_unit_n03Q_3666)
 call KillUnit(gg_unit_n03S_1348)
-call KillUnit(gg_unit_n04H_0194)
 call KillUnit(gg_unit_n04O_1571)
 call KillUnit(gg_unit_n03G_3941)
 call KillUnit(gg_unit_h074_0614)
@@ -1964,7 +1931,7 @@ endfunction
 //library GUIUnitReferences ends
 //===========================================================================
 // 
-// Warcraft LegaciesBETA30
+// Warcraft Legacies 1.04c
 // 
 //   Warcraft III map script
 //   Generated by the Warcraft III World Editor
@@ -2230,10 +2197,6 @@ function InitGlobals takes nothing returns nothing
     set udg_GilneasPlayer=Player(20)
     set udg_GilneasReal=100.00
     set udg_GilneasGroup=bj_FORCE_PLAYER[20]
-    set udg_CurseConverter=null
-    set udg_WerewolfGroup=CreateGroup()
-    set udg_TessGroup=CreateGroup()
-    set udg_GilneasPortals=CreateGroup()
     set udg_KulTirasGroup=bj_FORCE_PLAYER[22]
     set udg_KulTirasPlayer=Player(22)
     set udg_LordaeronGroup=CreateGroup()
@@ -2257,15 +2220,12 @@ function InitGlobals takes nothing returns nothing
     set udg_StringPlatform=""
     set udg_OilGroup=CreateGroup()
     set udg_MaievUnlockOutland=CreateGroup()
-    set udg_SummonKilTimer=CreateTimer()
-    set udg_NexusTimer=CreateTimer()
     set udg_StringZep=""
     set udg_ZeppelinRandomInt=0
     set udg_TraderRandomInt=0
     set udg_TraderString=""
     set udg_FirstOilRig=false
     set udg_OilRandomInt=0
-    set udg_OilDummyGroup=CreateGroup()
     set udg_TradersGroup=CreateGroup()
     set udg_VoteDialog=DialogCreate()
     set udg_VoteCountYes=0
@@ -2274,6 +2234,10 @@ function InitGlobals takes nothing returns nothing
     set udg_NyalothaGroup1=CreateGroup()
     set udg_NyalothaGroup2=CreateGroup()
     set udg_NyalothaGroup3=CreateGroup()
+    set udg_StringTaxe=""
+    set udg_GroupTaxe=CreateGroup()
+    set udg_ScarletPlayer=Player(12)
+    set udg_TaxeIntAmount=0
 endfunction
 
 //***************************************************************************
@@ -3818,80 +3782,6 @@ function Unit002792_DropItems takes nothing returns nothing
     call DestroyTrigger(GetTriggeringTrigger())
 endfunction
 
-function Unit002817_DropItems takes nothing returns nothing
-    local widget trigWidget= null
-    local unit trigUnit= null
-    local integer itemID= 0
-    local boolean canDrop= true
-
-    set trigWidget=bj_lastDyingWidget
-    if ( trigWidget == null ) then
-        set trigUnit=GetTriggerUnit()
-    endif
-
-    if ( trigUnit != null ) then
-        set canDrop=not IsUnitHidden(trigUnit)
-        if ( canDrop and GetChangingUnit() != null ) then
-            set canDrop=( GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE) )
-        endif
-    endif
-
-    if ( canDrop ) then
-        // Item set 0
-        call RandomDistReset()
-        call RandomDistAddItem('envl', 33)
-        call RandomDistAddItem('pnvu', 33)
-        call RandomDistAddItem('pres', 34)
-        set itemID=RandomDistChoose()
-        if ( trigUnit != null ) then
-            call UnitDropItem(trigUnit, itemID)
-        else
-            call WidgetDropItem(trigWidget, itemID)
-        endif
-
-    endif
-
-    set bj_lastDyingWidget=null
-    call DestroyTrigger(GetTriggeringTrigger())
-endfunction
-
-function Unit002830_DropItems takes nothing returns nothing
-    local widget trigWidget= null
-    local unit trigUnit= null
-    local integer itemID= 0
-    local boolean canDrop= true
-
-    set trigWidget=bj_lastDyingWidget
-    if ( trigWidget == null ) then
-        set trigUnit=GetTriggerUnit()
-    endif
-
-    if ( trigUnit != null ) then
-        set canDrop=not IsUnitHidden(trigUnit)
-        if ( canDrop and GetChangingUnit() != null ) then
-            set canDrop=( GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE) )
-        endif
-    endif
-
-    if ( canDrop ) then
-        // Item set 0
-        call RandomDistReset()
-        call RandomDistAddItem('srrc', 33)
-        call RandomDistAddItem('rej6', 33)
-        call RandomDistAddItem('sres', 34)
-        set itemID=RandomDistChoose()
-        if ( trigUnit != null ) then
-            call UnitDropItem(trigUnit, itemID)
-        else
-            call WidgetDropItem(trigWidget, itemID)
-        endif
-
-    endif
-
-    set bj_lastDyingWidget=null
-    call DestroyTrigger(GetTriggeringTrigger())
-endfunction
-
 function Unit002860_DropItems takes nothing returns nothing
     local widget trigWidget= null
     local unit trigUnit= null
@@ -4034,6 +3924,76 @@ function Unit002893_DropItems takes nothing returns nothing
     call DestroyTrigger(GetTriggeringTrigger())
 endfunction
 
+function Unit003015_DropItems takes nothing returns nothing
+    local widget trigWidget= null
+    local unit trigUnit= null
+    local integer itemID= 0
+    local boolean canDrop= true
+
+    set trigWidget=bj_lastDyingWidget
+    if ( trigWidget == null ) then
+        set trigUnit=GetTriggerUnit()
+    endif
+
+    if ( trigUnit != null ) then
+        set canDrop=not IsUnitHidden(trigUnit)
+        if ( canDrop and GetChangingUnit() != null ) then
+            set canDrop=( GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE) )
+        endif
+    endif
+
+    if ( canDrop ) then
+        // Item set 0
+        call RandomDistReset()
+        call RandomDistAddItem('pnvu', 100)
+        set itemID=RandomDistChoose()
+        if ( trigUnit != null ) then
+            call UnitDropItem(trigUnit, itemID)
+        else
+            call WidgetDropItem(trigWidget, itemID)
+        endif
+
+    endif
+
+    set bj_lastDyingWidget=null
+    call DestroyTrigger(GetTriggeringTrigger())
+endfunction
+
+function Unit003020_DropItems takes nothing returns nothing
+    local widget trigWidget= null
+    local unit trigUnit= null
+    local integer itemID= 0
+    local boolean canDrop= true
+
+    set trigWidget=bj_lastDyingWidget
+    if ( trigWidget == null ) then
+        set trigUnit=GetTriggerUnit()
+    endif
+
+    if ( trigUnit != null ) then
+        set canDrop=not IsUnitHidden(trigUnit)
+        if ( canDrop and GetChangingUnit() != null ) then
+            set canDrop=( GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE) )
+        endif
+    endif
+
+    if ( canDrop ) then
+        // Item set 0
+        call RandomDistReset()
+        call RandomDistAddItem('sres', 100)
+        set itemID=RandomDistChoose()
+        if ( trigUnit != null ) then
+            call UnitDropItem(trigUnit, itemID)
+        else
+            call WidgetDropItem(trigWidget, itemID)
+        endif
+
+    endif
+
+    set bj_lastDyingWidget=null
+    call DestroyTrigger(GetTriggeringTrigger())
+endfunction
+
 function Unit003128_DropItems takes nothing returns nothing
     local widget trigWidget= null
     local unit trigUnit= null
@@ -4056,6 +4016,41 @@ function Unit003128_DropItems takes nothing returns nothing
         // Item set 0
         call RandomDistReset()
         call RandomDistAddItem('texp', 100)
+        set itemID=RandomDistChoose()
+        if ( trigUnit != null ) then
+            call UnitDropItem(trigUnit, itemID)
+        else
+            call WidgetDropItem(trigWidget, itemID)
+        endif
+
+    endif
+
+    set bj_lastDyingWidget=null
+    call DestroyTrigger(GetTriggeringTrigger())
+endfunction
+
+function Unit003789_DropItems takes nothing returns nothing
+    local widget trigWidget= null
+    local unit trigUnit= null
+    local integer itemID= 0
+    local boolean canDrop= true
+
+    set trigWidget=bj_lastDyingWidget
+    if ( trigWidget == null ) then
+        set trigUnit=GetTriggerUnit()
+    endif
+
+    if ( trigUnit != null ) then
+        set canDrop=not IsUnitHidden(trigUnit)
+        if ( canDrop and GetChangingUnit() != null ) then
+            set canDrop=( GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE) )
+        endif
+    endif
+
+    if ( canDrop ) then
+        // Item set 0
+        call RandomDistReset()
+        call RandomDistAddItem('rde0', 100)
         set itemID=RandomDistChoose()
         if ( trigUnit != null ) then
             call UnitDropItem(trigUnit, itemID)
@@ -4927,16 +4922,11 @@ function InitSounds takes nothing returns nothing
     call SetSoundDistanceCutoff(gg_snd_DoorOpenRemix, 3000.0)
     call SetSoundConeAngles(gg_snd_DoorOpenRemix, 0.0, 0.0, 127)
     call SetSoundConeOrientation(gg_snd_DoorOpenRemix, 0.0, 0.0, 0.0)
-    set gg_snd_NukeAlarm=CreateSound("war3mapImported/NukeAlarm.mp3", false, false, false, 1, 1, "DefaultEAXON")
-    call SetSoundDuration(gg_snd_NukeAlarm, 15699)
-    call SetSoundChannel(gg_snd_NukeAlarm, 0)
-    call SetSoundVolume(gg_snd_NukeAlarm, 120)
-    call SetSoundPitch(gg_snd_NukeAlarm, 1.0)
-    set gg_snd_NukeTheme2=CreateSound("war3mapImported/NukeTheme2.mp3", false, false, false, 1, 1, "DefaultEAXON")
-    call SetSoundDuration(gg_snd_NukeTheme2, 15699)
-    call SetSoundChannel(gg_snd_NukeTheme2, 0)
-    call SetSoundVolume(gg_snd_NukeTheme2, 120)
-    call SetSoundPitch(gg_snd_NukeTheme2, 1.0)
+    set gg_snd_NuclearLaunchDetected=CreateSound("war3mapImported/NuclearLaunchDetected.mp3", false, false, false, 0, 0, "DefaultEAXON")
+    call SetSoundDuration(gg_snd_NuclearLaunchDetected, 2638)
+    call SetSoundChannel(gg_snd_NuclearLaunchDetected, 0)
+    call SetSoundVolume(gg_snd_NuclearLaunchDetected, 127)
+    call SetSoundPitch(gg_snd_NuclearLaunchDetected, 1.0)
 endfunction
 
 //***************************************************************************
@@ -4949,38 +4939,39 @@ function CreateAllDestructables takes nothing returns nothing
     local destructable d
     local trigger t
     local real life
-    set gg_dest_ATg1_35873=BlzCreateDestructableWithSkin('ATg1', - 23424.0, - 3264.0, 90.000, 1.000, 0, 'ATg1')
     set gg_dest_ATg1_11032=BlzCreateDestructableWithSkin('ATg1', 21888.0, - 25728.0, 270.000, 0.900, 0, 'ATg1')
+    set gg_dest_ATg1_35873=BlzCreateDestructableWithSkin('ATg1', - 23424.0, - 3264.0, 90.000, 1.000, 0, 'ATg1')
     set gg_dest_ATg2_35871=BlzCreateDestructableWithSkin('ATg2', - 27552.0, - 3488.0, 270.000, 1.000, 0, 'ATg2')
-    set gg_dest_ATg3_35872=BlzCreateDestructableWithSkin('ATg3', - 24896.0, 576.0, 180.000, 1.000, 0, 'ATg3')
     set gg_dest_ATg3_35869=BlzCreateDestructableWithSkin('ATg3', - 25216.0, - 6272.0, 180.000, 1.000, 0, 'ATg3')
+    set gg_dest_ATg3_35872=BlzCreateDestructableWithSkin('ATg3', - 24896.0, 576.0, 180.000, 1.000, 0, 'ATg3')
     set gg_dest_ATg4_28534=BlzCreateDestructableZWithSkin('ATg4', 17824.0, - 1824.0, 324.5, 270.000, 1.000, 0, 'ATg4')
-    set gg_dest_ATtr_5852=BlzCreateDestructableWithSkin('ATtr', - 10560.0, 2688.0, 302.000, 1.000, 0, 'ATtr')
     set gg_dest_ATtr_5854=BlzCreateDestructableWithSkin('ATtr', - 10432.0, 2688.0, 221.000, 1.000, 3, 'ATtr')
+    set gg_dest_ATtr_11494=BlzCreateDestructableWithSkin('ATtr', - 11520.0, 2752.0, 44.000, 1.000, 1, 'ATtr')
     set gg_dest_ATtr_5855=BlzCreateDestructableWithSkin('ATtr', - 12288.0, 2304.0, 14.000, 1.000, 0, 'ATtr')
     set gg_dest_ATtr_5850=BlzCreateDestructableWithSkin('ATtr', - 10880.0, 2752.0, 107.000, 1.000, 4, 'ATtr')
     set gg_dest_ATtr_5911=BlzCreateDestructableWithSkin('ATtr', - 12672.0, 2304.0, 314.000, 1.000, 1, 'ATtr')
-    set gg_dest_ATtr_5849=BlzCreateDestructableWithSkin('ATtr', - 11264.0, 2752.0, 159.000, 1.000, 3, 'ATtr')
-    set gg_dest_ATtr_11494=BlzCreateDestructableWithSkin('ATtr', - 11520.0, 2752.0, 44.000, 1.000, 1, 'ATtr')
+    set gg_dest_ATtr_5852=BlzCreateDestructableWithSkin('ATtr', - 10560.0, 2688.0, 302.000, 1.000, 0, 'ATtr')
     set gg_dest_ATtr_5868=BlzCreateDestructableWithSkin('ATtr', - 12416.0, 2368.0, 65.000, 1.000, 4, 'ATtr')
-    set gg_dest_B017_8051=BlzCreateDestructableWithSkin('B017', 13640.6, 641.3, 91.713, 0.450, 0, 'B017')
-    set gg_dest_B017_11954=BlzCreateDestructableWithSkin('B017', 8233.7, - 11721.7, 0.000, 0.450, 0, 'B017')
+    set gg_dest_ATtr_5849=BlzCreateDestructableWithSkin('ATtr', - 11264.0, 2752.0, 159.000, 1.000, 3, 'ATtr')
     set gg_dest_B017_8950=BlzCreateDestructableWithSkin('B017', 3258.6, - 27132.1, 130.797, 0.450, 0, 'B017')
     set gg_dest_B017_11949=BlzCreateDestructableZWithSkin('B017', 8608.8, - 11979.9, 89.7, 92.547, 0.450, 0, 'B017')
+    set gg_dest_B017_8051=BlzCreateDestructableWithSkin('B017', 13640.6, 641.3, 91.713, 0.450, 0, 'B017')
+    set gg_dest_B017_11954=BlzCreateDestructableWithSkin('B017', 8233.7, - 11721.7, 0.000, 0.450, 0, 'B017')
+    set gg_dest_B023_23223=BlzCreateDestructableWithSkin('B023', 2679.9, - 22909.8, 126.000, 12.047, 0, 'B023')
     set gg_dest_DTg6_36078=BlzCreateDestructableWithSkin('DTg6', - 7712.0, 21984.0, 270.000, 0.700, 0, 'DTg6')
     set gg_dest_DTg7_11246=BlzCreateDestructableWithSkin('DTg7', 20608.0, - 25344.0, 0.000, 0.900, 0, 'DTg7')
     set gg_dest_DTlv_11361=BlzCreateDestructableWithSkin('DTlv', 22304.0, - 26144.0, 270.000, 1.000, 0, 'DTlv')
     set gg_dest_LT08_0837=BlzCreateDestructableZWithSkin('LT08', 15712.0, 320.0, - 35.0, 0.000, 1.000, 0, 'LT08')
     set gg_dest_LTg3_11362=BlzCreateDestructableWithSkin('LTg3', 21504.0, - 26176.0, 0.000, 1.150, 0, 'LTg3')
+    set gg_dest_OTsp_35728=BlzCreateDestructableWithSkin('OTsp', - 26323.3, - 1954.8, 358.308, 0.650, 0, 'OTsp')
     set gg_dest_OTsp_35727=BlzCreateDestructableWithSkin('OTsp', - 25504.5, - 1311.6, 269.781, 0.650, 0, 'OTsp')
     set gg_dest_OTsp_19293=BlzCreateDestructableWithSkin('OTsp', - 24657.1, - 1839.8, 195.834, 0.650, 0, 'OTsp')
-    set gg_dest_OTsp_35728=BlzCreateDestructableWithSkin('OTsp', - 26323.3, - 1954.8, 358.308, 0.650, 0, 'OTsp')
     set gg_dest_OTsp_35732=BlzCreateDestructableWithSkin('OTsp', - 24958.3, - 5735.6, 290.909, 0.650, 0, 'OTsp')
     set gg_dest_YT24_0267=BlzCreateDestructableZWithSkin('YT24', - 17984.0, 23808.0, - 202.3, 0.000, 1.000, 0, 'YT24')
-    set gg_dest_YTpc_2067=BlzCreateDestructableWithSkin('YTpc', 14464.0, 4096.0, 335.539, 1.500, 0, 'LTba')
     set gg_dest_YTpc_2065=BlzCreateDestructableWithSkin('YTpc', 14528.0, 4224.0, 305.646, 1.550, 0, 'LTba')
-    set gg_dest_YTpc_12037=BlzCreateDestructableWithSkin('YTpc', 14784.0, 4160.0, 270.000, 1.000, 0, 'YTpc')
     set gg_dest_YTpc_7559=BlzCreateDestructableWithSkin('YTpc', 14656.0, 4224.0, 260.209, 1.450, 0, 'LTba')
+    set gg_dest_YTpc_12037=BlzCreateDestructableWithSkin('YTpc', 14784.0, 4160.0, 270.000, 1.000, 0, 'YTpc')
+    set gg_dest_YTpc_2067=BlzCreateDestructableWithSkin('YTpc', 14464.0, 4096.0, 335.539, 1.500, 0, 'LTba')
     set gg_dest_ZTsx_15632=BlzCreateDestructableZWithSkin('ZTsx', - 25472.0, 22720.0, - 141.4, 270.000, 0.800, 0, 'ZTsx')
 endfunction
 
@@ -4994,39 +4985,47 @@ function CreateAllItems takes nothing returns nothing
     local integer itemID
 
     call BlzCreateItemWithSkin('bspd', - 24151.0, 20144.7, 'bspd')
+    call BlzCreateItemWithSkin('dsum', - 23783.9, 7742.7, 'dsum')
+    call BlzCreateItemWithSkin('dsum', - 23916.0, 7695.8, 'dsum')
+    call BlzCreateItemWithSkin('dsum', - 23330.8, 7337.2, 'dsum')
+    call BlzCreateItemWithSkin('dsum', - 23668.4, 7643.9, 'dsum')
+    call BlzCreateItemWithSkin('dsum', - 23600.4, 7346.4, 'dsum')
+    call BlzCreateItemWithSkin('dsum', - 23818.1, 7284.8, 'dsum')
+    call BlzCreateItemWithSkin('dsum', - 23146.8, 7188.4, 'dsum')
+    call BlzCreateItemWithSkin('dsum', - 23484.5, 7056.8, 'dsum')
     call BlzCreateItemWithSkin('gcel', 17601.6, - 27080.1, 'gcel')
-    call BlzCreateItemWithSkin('gold', - 23995.1, 19307.7, 'gold')
     call BlzCreateItemWithSkin('gold', - 24095.4, 19304.7, 'gold')
-    call BlzCreateItemWithSkin('gold', - 23865.9, 19307.1, 'gold')
-    call BlzCreateItemWithSkin('gold', 20405.0, - 27274.5, 'gold')
     call BlzCreateItemWithSkin('gold', 20412.5, - 27122.7, 'gold')
+    call BlzCreateItemWithSkin('gold', 20405.0, - 27274.5, 'gold')
+    call BlzCreateItemWithSkin('gold', - 23995.1, 19307.7, 'gold')
+    call BlzCreateItemWithSkin('gold', - 23865.9, 19307.1, 'gold')
     call BlzCreateItemWithSkin('phea', 20405.4, - 27206.5, 'phea')
-    call BlzCreateItemWithSkin('rhe1', - 25467.3, 24142.9, 'rhe1')
     call BlzCreateItemWithSkin('rhe1', - 26591.9, 20503.6, 'rhe1')
+    call BlzCreateItemWithSkin('rhe1', - 25467.3, 24142.9, 'rhe1')
     call BlzCreateItemWithSkin('rhe1', - 27348.5, 19423.3, 'rhe1')
-    call BlzCreateItemWithSkin('rhe2', - 26928.8, 18617.6, 'rhe2')
-    call BlzCreateItemWithSkin('rhe2', 19784.8, - 24803.2, 'rhe2')
-    call BlzCreateItemWithSkin('rhe2', 21378.7, - 25880.3, 'rhe2')
-    call BlzCreateItemWithSkin('rhe2', 21635.5, - 25880.7, 'rhe2')
-    call BlzCreateItemWithSkin('rhe2', - 26826.7, 19726.9, 'rhe2')
     call BlzCreateItemWithSkin('rhe2', 18869.6, - 25320.1, 'rhe2')
     call BlzCreateItemWithSkin('rhe2', 18826.0, - 24739.0, 'rhe2')
+    call BlzCreateItemWithSkin('rhe2', 21378.7, - 25880.3, 'rhe2')
+    call BlzCreateItemWithSkin('rhe2', 19784.8, - 24803.2, 'rhe2')
+    call BlzCreateItemWithSkin('rhe2', - 26826.7, 19726.9, 'rhe2')
+    call BlzCreateItemWithSkin('rhe2', - 26928.8, 18617.6, 'rhe2')
+    call BlzCreateItemWithSkin('rhe2', 21635.5, - 25880.7, 'rhe2')
     call BlzCreateItemWithSkin('rhe3', 19331.5, - 25305.1, 'rhe3')
-    call BlzCreateItemWithSkin('rhe3', 20865.6, - 24937.6, 'rhe3')
-    call BlzCreateItemWithSkin('rhe3', 19318.7, - 24779.9, 'rhe3')
-    call BlzCreateItemWithSkin('rhe3', 19975.7, - 27246.4, 'rhe3')
-    call BlzCreateItemWithSkin('rhe3', 21161.2, - 25343.3, 'rhe3')
     call BlzCreateItemWithSkin('rhe3', 20078.8, - 25902.1, 'rhe3')
+    call BlzCreateItemWithSkin('rhe3', 20865.6, - 24937.6, 'rhe3')
     call BlzCreateItemWithSkin('rhe3', - 24069.6, 19474.9, 'rhe3')
+    call BlzCreateItemWithSkin('rhe3', 19318.7, - 24779.9, 'rhe3')
+    call BlzCreateItemWithSkin('rhe3', 21161.2, - 25343.3, 'rhe3')
+    call BlzCreateItemWithSkin('rhe3', 19975.7, - 27246.4, 'rhe3')
     call BlzCreateItemWithSkin('rma2', - 23913.7, 19484.5, 'rma2')
-    call BlzCreateItemWithSkin('rman', - 26476.4, 22765.0, 'rman')
-    call BlzCreateItemWithSkin('rman', 21781.7, - 27349.8, 'rman')
     call BlzCreateItemWithSkin('rman', - 26587.2, 18634.3, 'rman')
     call BlzCreateItemWithSkin('rman', - 26587.1, 20234.8, 'rman')
+    call BlzCreateItemWithSkin('rman', 21781.7, - 27349.8, 'rman')
+    call BlzCreateItemWithSkin('rman', - 26476.4, 22765.0, 'rman')
     call BlzCreateItemWithSkin('rres', 22305.4, - 26506.0, 'rres')
+    call BlzCreateItemWithSkin('texp', - 23867.8, 19656.8, 'texp')
     call BlzCreateItemWithSkin('texp', - 24005.7, 19660.7, 'texp')
     call BlzCreateItemWithSkin('texp', - 24124.1, 19653.8, 'texp')
-    call BlzCreateItemWithSkin('texp', - 23867.8, 19656.8, 'texp')
 endfunction
 
 //***************************************************************************
@@ -5044,6 +5043,8 @@ function CreateBuildingsForPlayer0 takes nothing returns nothing
     local real life
 
     set u=BlzCreateUnitWithSkin(p, 'ogre', - 1824.0, - 2528.0, 270.000, 'ogre')
+    set u=BlzCreateUnitWithSkin(p, 'owtw', - 2112.0, - 2816.0, 270.000, 'owtw')
+    set u=BlzCreateUnitWithSkin(p, 'owtw', - 1536.0, - 2432.0, 270.000, 'owtw')
 endfunction
 
 //===========================================================================
@@ -5079,7 +5080,7 @@ function CreateBuildingsForPlayer1 takes nothing returns nothing
     set gg_unit_h01T_0343=BlzCreateUnitWithSkin(p, 'h01T', 7488.0, 9920.0, 345.766, 'h01T')
     set u=BlzCreateUnitWithSkin(p, 'h00I', 18496.0, 9792.0, 270.000, 'h00I')
     set u=BlzCreateUnitWithSkin(p, 'hhou', 16448.0, 8576.0, 270.000, 'hhou')
-    set u=BlzCreateUnitWithSkin(p, 'h016', 12544.0, 8384.0, 23.085, 'h016')
+    set u=BlzCreateUnitWithSkin(p, 'h016', 12224.0, 8320.0, 270.000, 'h016')
     set u=BlzCreateUnitWithSkin(p, 'h00I', 6720.0, 9600.0, 270.000, 'h00I')
     set u=BlzCreateUnitWithSkin(p, 'h016', 17024.0, 8256.0, 270.000, 'h016')
     set u=BlzCreateUnitWithSkin(p, 'h00I', 11456.0, 8832.0, 270.000, 'h00I')
@@ -5194,14 +5195,6 @@ function CreateBuildingsForPlayer3 takes nothing returns nothing
     local real life
 
     set u=BlzCreateUnitWithSkin(p, 'unpl', - 5600.0, 18656.0, 270.000, 'unpl')
-    set gg_unit_n094_0347=BlzCreateUnitWithSkin(p, 'n094', - 3648.0, 20224.0, 270.000, 'n094')
-    call SetUnitState(gg_unit_n094_0347, UNIT_STATE_MANA, 1000)
-    set gg_unit_n094_0348=BlzCreateUnitWithSkin(p, 'n094', - 3648.0, 23360.0, 45.000, 'n094')
-    call SetUnitState(gg_unit_n094_0348, UNIT_STATE_MANA, 1000)
-    set gg_unit_n094_0539=BlzCreateUnitWithSkin(p, 'n094', - 3648.0, 22592.0, 45.000, 'n094')
-    call SetUnitState(gg_unit_n094_0539, UNIT_STATE_MANA, 1000)
-    set gg_unit_n094_0611=BlzCreateUnitWithSkin(p, 'n094', - 3008.0, 20736.0, 270.000, 'n094')
-    call SetUnitState(gg_unit_n094_0611, UNIT_STATE_MANA, 1000)
     set gg_unit_u000_0649=BlzCreateUnitWithSkin(p, 'u000', - 3136.0, 20160.0, 135.000, 'u000')
     set u=BlzCreateUnitWithSkin(p, 'n09H', - 5504.0, 18432.0, 270.000, 'n09H')
 endfunction
@@ -5259,6 +5252,24 @@ function CreateBuildingsForPlayer5 takes nothing returns nothing
 
     set u=BlzCreateUnitWithSkin(p, 'o00C', - 10272.0, 1760.0, 270.000, 'o00C')
     set u=BlzCreateUnitWithSkin(p, 'n05K', - 10496.0, 2048.0, 270.000, 'n05K')
+    set u=BlzCreateUnitWithSkin(p, 'h07E', - 25120.0, - 28192.0, 270.000, 'h07E')
+    set u=BlzCreateUnitWithSkin(p, 'harm', - 24192.0, - 28736.0, 270.000, 'harm')
+    set u=BlzCreateUnitWithSkin(p, 'h07F', - 25056.0, - 27872.0, 270.000, 'h07F')
+    set u=BlzCreateUnitWithSkin(p, 'h07G', - 25024.0, - 27520.0, 270.000, 'h07G')
+    set u=BlzCreateUnitWithSkin(p, 'h01S', - 24512.0, - 27968.0, 270.000, 'h01S')
+    set u=BlzCreateUnitWithSkin(p, 'h07B', - 25056.0, - 29344.0, 270.000, 'h07B')
+    set u=BlzCreateUnitWithSkin(p, 'h07C', - 25088.0, - 28736.0, 270.000, 'h07C')
+    set u=BlzCreateUnitWithSkin(p, 'h048', - 24160.0, - 28064.0, 270.000, 'h048')
+    set u=BlzCreateUnitWithSkin(p, 'h042', - 24608.0, - 28768.0, 270.000, 'h042')
+    set u=BlzCreateUnitWithSkin(p, 'h07H', - 25280.0, - 29312.0, 270.000, 'h07H')
+    set u=BlzCreateUnitWithSkin(p, 'h07I', - 25408.0, - 29312.0, 270.000, 'h07I')
+    set u=BlzCreateUnitWithSkin(p, 'h07J', - 25536.0, - 29312.0, 270.000, 'h07J')
+    set u=BlzCreateUnitWithSkin(p, 'hgra', - 23808.0, - 28736.0, 270.000, 'hgra')
+    set u=BlzCreateUnitWithSkin(p, 'h07D', - 23840.0, - 28064.0, 270.000, 'h07D')
+    set u=BlzCreateUnitWithSkin(p, 'n07U', - 24640.0, - 29312.0, 270.000, 'n07U')
+    set u=BlzCreateUnitWithSkin(p, 'n0AL', - 11008.0, 1728.0, 270.000, 'n0AL')
+    set u=BlzCreateUnitWithSkin(p, 'n0AL', - 11520.0, 2304.0, 270.000, 'n0AL')
+    set u=BlzCreateUnitWithSkin(p, 'n0AL', - 11392.0, 1024.0, 270.000, 'n0AL')
 endfunction
 
 //===========================================================================
@@ -5272,6 +5283,21 @@ function CreateUnitsForPlayer5 takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'o04L', - 9830.8, 2033.1, 148.232, 'o04L')
     set u=BlzCreateUnitWithSkin(p, 'o04L', - 9998.8, 2157.4, 277.259, 'o04L')
     set u=BlzCreateUnitWithSkin(p, 'o04L', - 10025.8, 1981.6, 40.137, 'o04L')
+    set u=BlzCreateUnitWithSkin(p, 'U00W', - 24048.6, - 29587.8, 257.070, 'U00W')
+    set u=BlzCreateUnitWithSkin(p, 'H03G', - 24698.0, - 29505.1, 273.820, 'H03G')
+    call SetUnitColor(u, ConvertPlayerColor(12))
+    set u=BlzCreateUnitWithSkin(p, 'h0AA', - 24362.5, - 28897.4, 246.540, 'h0AA')
+    set u=BlzCreateUnitWithSkin(p, 'h0AB', - 24528.8, - 28955.6, 268.302, 'h0AB')
+    set u=BlzCreateUnitWithSkin(p, 'n0CC', - 24097.3, - 28916.9, 272.459, 'n0CC')
+    set u=BlzCreateUnitWithSkin(p, 'n0CF', - 23579.1, - 28948.4, 269.540, 'n0CF')
+    set u=BlzCreateUnitWithSkin(p, 'n0CG', - 23857.5, - 28928.9, 283.930, 'n0CG')
+    set u=BlzCreateUnitWithSkin(p, 'h00B', - 25112.1, - 28918.5, 285.214, 'h00B')
+    set u=BlzCreateUnitWithSkin(p, 'h0A6', - 25232.4, - 28930.6, 271.469, 'h0A6')
+    set u=BlzCreateUnitWithSkin(p, 'h0A8', - 24842.4, - 27626.9, 273.544, 'h0A8')
+    set u=BlzCreateUnitWithSkin(p, 'h0A7', - 24968.5, - 28927.5, 275.280, 'h0A7')
+    set u=BlzCreateUnitWithSkin(p, 'n0CH', - 24663.7, - 28952.1, 266.940, 'n0CH')
+    set u=BlzCreateUnitWithSkin(p, 'h019', - 24908.1, - 28306.1, 340.243, 'h019')
+    set u=BlzCreateUnitWithSkin(p, 'U02K', - 24292.2, - 29432.4, 268.250, 'U02K')
 endfunction
 
 //===========================================================================
@@ -5282,7 +5308,7 @@ function CreateBuildingsForPlayer6 takes nothing returns nothing
     local trigger t
     local real life
 
-    set gg_unit_n081_0036=BlzCreateUnitWithSkin(p, 'n081', 5504.0, - 28736.0, 270.000, 'n081')
+    set u=BlzCreateUnitWithSkin(p, 'n081', 5504.0, - 28736.0, 270.000, 'n081')
     set gg_unit_n066_0114=BlzCreateUnitWithSkin(p, 'n066', 4608.0, - 31424.0, 180.000, 'n066')
     set u=BlzCreateUnitWithSkin(p, 'o02Y', 5344.0, - 31264.0, 270.000, 'o02Y')
     set u=BlzCreateUnitWithSkin(p, 'ndfl', 4864.0, - 31488.0, 270.000, 'ndfl')
@@ -5322,20 +5348,6 @@ function CreateBuildingsForPlayer7 takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h065', 9824.0, 2848.0, 270.000, 'h065')
     set u=BlzCreateUnitWithSkin(p, 'h00I', 10112.0, 2688.0, 270.000, 'h00I')
     set u=BlzCreateUnitWithSkin(p, 'h00I', 12608.0, 2176.0, 270.000, 'h00I')
-    set u=BlzCreateUnitWithSkin(p, 'h02N', - 6816.0, - 8480.0, 270.000, 'h02N')
-    set u=BlzCreateUnitWithSkin(p, 'hshy', - 6880.0, - 10144.0, 270.000, 'hshy')
-    set u=BlzCreateUnitWithSkin(p, 'h069', - 6848.0, - 9152.0, 270.000, 'h069')
-    set u=BlzCreateUnitWithSkin(p, 'h066', - 7776.0, - 9632.0, 270.000, 'h066')
-    set u=BlzCreateUnitWithSkin(p, 'h044', - 6432.0, - 9376.0, 270.000, 'h044')
-    set u=BlzCreateUnitWithSkin(p, 'n004', - 6656.0, - 9472.0, 270.000, 'n004')
-    set u=BlzCreateUnitWithSkin(p, 'n004', - 7424.0, - 9728.0, 270.000, 'n004')
-    set u=BlzCreateUnitWithSkin(p, 'n004', - 6784.0, - 8640.0, 270.000, 'n004')
-    set u=BlzCreateUnitWithSkin(p, 'n004', - 8192.0, - 8832.0, 270.000, 'n004')
-    set u=BlzCreateUnitWithSkin(p, 'n004', - 7808.0, - 8192.0, 270.000, 'n004')
-    set u=BlzCreateUnitWithSkin(p, 'hhou', - 7680.0, - 8352.0, 350.957, 'hhou')
-    set u=BlzCreateUnitWithSkin(p, 'hhou', - 7936.0, - 9344.0, 359.868, 'hhou')
-    set u=BlzCreateUnitWithSkin(p, 'hhou', - 7584.0, - 8224.0, 295.778, 'hhou')
-    set u=BlzCreateUnitWithSkin(p, 'h010', - 7488.0, - 8768.0, 166.906, 'h010')
 endfunction
 
 //===========================================================================
@@ -5359,7 +5371,8 @@ function CreateBuildingsForPlayer8 takes nothing returns nothing
     local trigger t
     local real life
 
-    set u=BlzCreateUnitWithSkin(p, 'o03L', - 352.0, - 6944.0, 270.000, 'o03L')
+    set gg_unit_o05I_0261=BlzCreateUnitWithSkin(p, 'o05I', - 192.0, - 5824.0, 270.000, 'o05I')
+    set u=BlzCreateUnitWithSkin(p, 'o03L', - 2528.0, - 8352.0, 270.000, 'o03L')
     set gg_unit_o04M_1640=BlzCreateUnitWithSkin(p, 'o04M', - 672.0, - 5536.0, 270.000, 'o04M')
     set gg_unit_h04Z_2727=BlzCreateUnitWithSkin(p, 'h04Z', - 1056.0, - 6816.0, 270.000, 'h04Z')
     set u=BlzCreateUnitWithSkin(p, 'o03U', - 704.0, - 6720.0, 270.000, 'o03U')
@@ -5367,6 +5380,7 @@ function CreateBuildingsForPlayer8 takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'o03U', - 1664.0, - 7936.0, 270.000, 'o03U')
     set u=BlzCreateUnitWithSkin(p, 'o03U', - 1472.0, - 7936.0, 270.000, 'o03U')
     set u=BlzCreateUnitWithSkin(p, 'o03W', 256.0, - 6784.0, 270.000, 'o03W')
+    set u=BlzCreateUnitWithSkin(p, 'o03W', - 1216.0, - 6464.0, 270.000, 'o03W')
     set u=BlzCreateUnitWithSkin(p, 'n04Z', - 960.0, - 7168.0, 270.000, 'n04Z')
 endfunction
 
@@ -5382,6 +5396,9 @@ function CreateUnitsForPlayer8 takes nothing returns nothing
     call SetUnitState(u, UNIT_STATE_MANA, 55)
     set u=BlzCreateUnitWithSkin(p, 'h08Z', - 1757.1, - 6142.9, 335.875, 'h08Z')
     call SetUnitState(u, UNIT_STATE_MANA, 55)
+    set u=BlzCreateUnitWithSkin(p, 'o02I', - 2104.0, - 8130.9, 253.517, 'o02I')
+    set u=BlzCreateUnitWithSkin(p, 'o02I', - 2060.2, - 8264.6, 176.501, 'o02I')
+    set u=BlzCreateUnitWithSkin(p, 'o02I', - 2230.6, - 8217.9, 23.797, 'o02I')
 endfunction
 
 //===========================================================================
@@ -5448,7 +5465,7 @@ function CreateBuildingsForPlayer11 takes nothing returns nothing
     local real life
 
     set gg_unit_n002_0130=BlzCreateUnitWithSkin(p, 'n002', - 11584.0, 7744.0, 236.080, 'n002')
-    set u=BlzCreateUnitWithSkin(p, 'n01P', - 11648.0, 7296.0, 270.000, 'n01P')
+    set u=BlzCreateUnitWithSkin(p, 'n01P', - 11712.0, 6848.0, 270.000, 'n01P')
     set u=BlzCreateUnitWithSkin(p, 'etol', - 11360.0, 6624.0, 270.000, 'etol')
     set u=BlzCreateUnitWithSkin(p, 'emow', - 11520.0, 6272.0, 270.000, 'emow')
     set u=BlzCreateUnitWithSkin(p, 'e00Q', - 11520.0, 8448.0, 270.000, 'e00Q')
@@ -5512,6 +5529,45 @@ function CreateUnitsForPlayer12 takes nothing returns nothing
 endfunction
 
 //===========================================================================
+function CreateBuildingsForPlayer13 takes nothing returns nothing
+    local player p= Player(13)
+    local unit u
+    local integer unitID
+    local trigger t
+    local real life
+
+    set u=BlzCreateUnitWithSkin(p, 'n09X', - 1344.0, - 28672.0, 270.000, 'n09X')
+    set u=BlzCreateUnitWithSkin(p, 'o053', - 1888.0, - 28960.0, 270.000, 'o053')
+    set gg_unit_o02P_2291=BlzCreateUnitWithSkin(p, 'o02P', 2592.0, - 23072.0, 270.000, 'o02P')
+    set u=BlzCreateUnitWithSkin(p, 'u00U', - 1024.0, - 28672.0, 270.000, 'u00U')
+    set u=BlzCreateUnitWithSkin(p, 'o056', - 1536.0, - 29248.0, 270.000, 'o056')
+    set gg_unit_h09W_3303=BlzCreateUnitWithSkin(p, 'h09W', 4032.0, - 21664.0, 180.687, 'h09W')
+    set u=BlzCreateUnitWithSkin(p, 'o056', - 1536.0, - 28160.0, 270.000, 'o056')
+    set u=BlzCreateUnitWithSkin(p, 'o057', - 1120.0, - 28192.0, 270.000, 'o057')
+    set u=BlzCreateUnitWithSkin(p, 'o056', - 1408.0, - 29184.0, 270.000, 'o056')
+    set u=BlzCreateUnitWithSkin(p, 'u00U', - 1536.0, - 28352.0, 270.000, 'u00U')
+    set u=BlzCreateUnitWithSkin(p, 'o052', 2304.0, - 22592.0, 270.000, 'o052')
+    set u=BlzCreateUnitWithSkin(p, 'o058', 2656.0, - 22496.0, 270.000, 'o058')
+    set u=BlzCreateUnitWithSkin(p, 'o054', 1952.0, - 23008.0, 270.000, 'o054')
+endfunction
+
+//===========================================================================
+function CreateUnitsForPlayer13 takes nothing returns nothing
+    local player p= Player(13)
+    local unit u
+    local integer unitID
+    local trigger t
+    local real life
+
+    set u=BlzCreateUnitWithSkin(p, 'o05A', - 1418.8, - 28240.4, 282.595, 'o05A')
+    set u=BlzCreateUnitWithSkin(p, 'o05A', - 1584.9, - 29084.3, 42.656, 'o05A')
+    set u=BlzCreateUnitWithSkin(p, 'o05A', - 1620.9, - 28930.6, 23.288, 'o05A')
+    set u=BlzCreateUnitWithSkin(p, 'o05A', - 1118.2, - 28888.9, 147.221, 'o05A')
+    set u=BlzCreateUnitWithSkin(p, 'o05A', - 1260.5, - 28245.5, 282.595, 'o05A')
+    set u=BlzCreateUnitWithSkin(p, 'o05A', - 1386.7, - 29059.2, 76.660, 'o05A')
+endfunction
+
+//===========================================================================
 function CreateBuildingsForPlayer14 takes nothing returns nothing
     local player p= Player(14)
     local unit u
@@ -5519,6 +5575,7 @@ function CreateBuildingsForPlayer14 takes nothing returns nothing
     local trigger t
     local real life
 
+    set u=BlzCreateUnitWithSkin(p, 'n0BB', - 26240.0, - 2752.0, 270.000, 'n0BB')
     set u=BlzCreateUnitWithSkin(p, 'n0AR', - 28160.0, - 1024.0, 270.000, 'n0AR')
     set u=BlzCreateUnitWithSkin(p, 'n0B6', - 26432.0, - 3776.0, 270.000, 'n0B6')
 endfunction
@@ -5710,18 +5767,29 @@ function CreateBuildingsForPlayer19 takes nothing returns nothing
     local trigger t
     local real life
 
-    set u=BlzCreateUnitWithSkin(p, 'o03K', 20096.0, - 6784.0, 270.000, 'o03K')
+    set u=BlzCreateUnitWithSkin(p, 'o03K', 20160.0, - 4864.0, 270.000, 'o03K')
     set gg_unit_h05U_0015=BlzCreateUnitWithSkin(p, 'h05U', 19520.0, - 5184.0, 270.000, 'h05U')
-    set u=BlzCreateUnitWithSkin(p, 'o03K', 20352.0, - 6464.0, 270.000, 'o03K')
-    set u=BlzCreateUnitWithSkin(p, 'o03K', 20544.0, - 6080.0, 270.000, 'o03K')
-    set u=BlzCreateUnitWithSkin(p, 'o03K', 21120.0, - 5952.0, 270.000, 'o03K')
-    set u=BlzCreateUnitWithSkin(p, 'o03K', 21056.0, - 5312.0, 270.000, 'o03K')
-    set u=BlzCreateUnitWithSkin(p, 'o03K', 21312.0, - 5568.0, 270.000, 'o03K')
-    set u=BlzCreateUnitWithSkin(p, 'o03H', 20032.0, - 6400.0, 270.000, 'o03H')
-    set u=BlzCreateUnitWithSkin(p, 'o03H', 20992.0, - 5632.0, 270.000, 'o03H')
-    set u=BlzCreateUnitWithSkin(p, 'o03H', 20480.0, - 5760.0, 270.000, 'o03H')
+    set u=BlzCreateUnitWithSkin(p, 'o03K', 19776.0, - 6016.0, 270.000, 'o03K')
+    set u=BlzCreateUnitWithSkin(p, 'o03K', 20352.0, - 5248.0, 270.000, 'o03K')
+    set u=BlzCreateUnitWithSkin(p, 'o03K', 20224.0, - 5568.0, 270.000, 'o03K')
+    set u=BlzCreateUnitWithSkin(p, 'o03H', 19712.0, - 5824.0, 270.000, 'o03H')
+    set u=BlzCreateUnitWithSkin(p, 'o03H', 20096.0, - 5056.0, 270.000, 'o03H')
+    set u=BlzCreateUnitWithSkin(p, 'o03H', 20096.0, - 5504.0, 270.000, 'o03H')
     set u=BlzCreateUnitWithSkin(p, 'o03H', 18944.0, - 4416.0, 270.000, 'o03H')
     set u=BlzCreateUnitWithSkin(p, 'o03H', 19712.0, - 4032.0, 270.000, 'o03H')
+    set u=BlzCreateUnitWithSkin(p, 'n09F', 19072.0, - 6272.0, 270.000, 'n09F')
+endfunction
+
+//===========================================================================
+function CreateBuildingsForPlayer20 takes nothing returns nothing
+    local player p= Player(20)
+    local unit u
+    local integer unitID
+    local trigger t
+    local real life
+
+    set u=BlzCreateUnitWithSkin(p, 'h03O', 7776.0, 1120.0, 270.000, 'h03O')
+    set u=BlzCreateUnitWithSkin(p, 'h09K', - 17376.0, 14624.0, 270.000, 'h09K')
 endfunction
 
 //===========================================================================
@@ -5732,11 +5800,26 @@ function CreateUnitsForPlayer20 takes nothing returns nothing
     local trigger t
     local real life
 
-    set gg_unit_Ewar_0424=BlzCreateUnitWithSkin(p, 'Ewar', - 20387.7, - 30869.5, 271.020, 'Ewar')
-    set gg_unit_h04E_2478=BlzCreateUnitWithSkin(p, 'h04E', - 20490.4, - 30677.6, 286.027, 'h04E')
-    set gg_unit_h04E_3953=BlzCreateUnitWithSkin(p, 'h04E', - 20460.2, - 30792.3, 286.027, 'h04E')
-    set gg_unit_h04E_3954=BlzCreateUnitWithSkin(p, 'h04E', - 20336.3, - 30767.3, 29.115, 'h04E')
-    set gg_unit_h04M_3955=BlzCreateUnitWithSkin(p, 'h04M', - 20386.1, - 30668.9, 79.027, 'h04M')
+    set u=BlzCreateUnitWithSkin(p, 'hpea', - 17168.5, 14860.9, 355.825, 'hpea')
+    set u=BlzCreateUnitWithSkin(p, 'h03L', 6839.6, - 18.6, 20.655, 'h03L')
+    set u=BlzCreateUnitWithSkin(p, 'h03L', 6916.3, - 16.0, 208.626, 'h03L')
+    set u=BlzCreateUnitWithSkin(p, 'h04E', 7138.8, - 281.4, 307.429, 'h04E')
+    set u=BlzCreateUnitWithSkin(p, 'h04E', 7242.8, - 271.3, 333.599, 'h04E')
+    set u=BlzCreateUnitWithSkin(p, 'h04M', 7766.6, - 228.3, 92.552, 'h04M')
+    set u=BlzCreateUnitWithSkin(p, 'h04M', 7917.0, - 145.4, 65.887, 'h04M')
+    set u=BlzCreateUnitWithSkin(p, 'n06K', 6859.3, 813.8, 23.105, 'n06K')
+    set u=BlzCreateUnitWithSkin(p, 'h04E', 6821.6, 978.4, 156.186, 'h04E')
+    set u=BlzCreateUnitWithSkin(p, 'h04E', 6670.3, 852.3, 152.110, 'h04E')
+    set u=BlzCreateUnitWithSkin(p, 'h03L', 8080.3, 947.6, 251.814, 'h03L')
+    set u=BlzCreateUnitWithSkin(p, 'h03L', 4293.2, - 600.5, 326.201, 'h03L')
+    set u=BlzCreateUnitWithSkin(p, 'h04E', 4306.7, - 774.4, 294.462, 'h04E')
+    set u=BlzCreateUnitWithSkin(p, 'h03L', 3809.0, - 1555.2, 305.088, 'h03L')
+    set u=BlzCreateUnitWithSkin(p, 'hpea', - 17183.0, 14987.4, 355.825, 'hpea')
+    set u=BlzCreateUnitWithSkin(p, 'hpea', - 17076.9, 14904.2, 215.800, 'hpea')
+    set u=BlzCreateUnitWithSkin(p, 'h04E', 7373.7, - 2940.7, 272.548, 'h04E')
+    set u=BlzCreateUnitWithSkin(p, 'h04E', 7211.7, - 2949.6, 272.548, 'h04E')
+    set u=BlzCreateUnitWithSkin(p, 'h04E', 7282.6, - 3019.9, 272.548, 'h04E')
+    set u=BlzCreateUnitWithSkin(p, 'h03L', 4172.1, - 732.8, 279.069, 'h03L')
 endfunction
 
 //===========================================================================
@@ -5750,20 +5833,26 @@ function CreateBuildingsForPlayer21 takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'n011', 15680.0, - 13120.0, 270.000, 'n011')
     set u=BlzCreateUnitWithSkin(p, 'n02K', - 18304.0, - 17344.0, 270.000, 'n02K')
     set u=BlzCreateUnitWithSkin(p, 'n00G', - 7744.0, 15680.0, 270.000, 'n00G')
-    set u=BlzCreateUnitWithSkin(p, 'u01M', 15168.0, 7616.0, 270.000, 'u01M')
-    call SetUnitColor(u, ConvertPlayerColor(3))
+    set gg_unit_u01M_0484=BlzCreateUnitWithSkin(p, 'u01M', 15168.0, 7616.0, 270.000, 'u01M')
+    call SetUnitColor(gg_unit_u01M_0484, ConvertPlayerColor(3))
     set u=BlzCreateUnitWithSkin(p, 'n02E', - 13696.0, 11584.0, 270.000, 'n02E')
+    set u=BlzCreateUnitWithSkin(p, 'n019', 11264.0, 6272.0, 270.000, 'n019')
+    set u=BlzCreateUnitWithSkin(p, 'owtw', 20992.0, - 3904.0, 270.000, 'owtw')
+    set u=BlzCreateUnitWithSkin(p, 'n07L', 5376.0, - 12416.0, 270.000, 'n07L')
     set u=BlzCreateUnitWithSkin(p, 'o02A', 10944.0, 6336.0, 270.000, 'o02A')
     set u=BlzCreateUnitWithSkin(p, 'o02H', 11136.0, 6656.0, 330.000, 'o02H')
     set u=BlzCreateUnitWithSkin(p, 'n028', - 19584.0, 18816.0, 270.000, 'n028')
     set u=BlzCreateUnitWithSkin(p, 'n01I', 14976.0, 7296.0, 270.000, 'n01I')
     set u=BlzCreateUnitWithSkin(p, 'n01L', 18368.0, 15936.0, 270.000, 'n01L')
+    set u=BlzCreateUnitWithSkin(p, 'o02A', 11904.0, 6208.0, 270.000, 'o02A')
+    set u=BlzCreateUnitWithSkin(p, 'n01D', 7552.0, 4160.0, 270.000, 'n01D')
     set u=BlzCreateUnitWithSkin(p, 'nctl', - 16256.0, 5888.0, 270.000, 'nctl')
     set u=BlzCreateUnitWithSkin(p, 'ncap', - 16096.0, 6240.0, 270.000, 'ncap')
     set u=BlzCreateUnitWithSkin(p, 'ncaw', - 15849.5, 6406.4, 270.000, 'ncaw')
     set u=BlzCreateUnitWithSkin(p, 'n078', - 25792.0, - 12032.0, 270.000, 'n078')
     set u=BlzCreateUnitWithSkin(p, 'n07C', - 15232.0, 8832.0, 270.000, 'n07C')
-    set u=BlzCreateUnitWithSkin(p, 'n09F', 19072.0, - 6272.0, 270.000, 'n09F')
+    set u=BlzCreateUnitWithSkin(p, 'n0BH', - 23680.0, 10176.0, 270.000, 'n0BH')
+    set u=BlzCreateUnitWithSkin(p, 'n0BX', 4864.0, - 8704.0, 270.000, 'n0BX')
     set u=BlzCreateUnitWithSkin(p, 'nfh1', - 3904.0, - 1280.0, 270.000, 'nfh1')
     set life=GetUnitState(u, UNIT_STATE_LIFE)
     call SetUnitState(u, UNIT_STATE_LIFE, 0.37 * life)
@@ -5782,8 +5871,6 @@ function CreateUnitsForPlayer21 takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nmmu', 15159.5, - 4917.2, 132.851, 'nmmu')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nfsh', 18500.2, 16018.7, 207.549, 'nfsh')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ogru', - 15311.0, - 22818.2, 275.841, 'ogru')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmrl', - 17498.7, 6767.6, 226.790, 'nmrl')
     call SetUnitAcquireRange(u, 200.0)
@@ -5826,11 +5913,15 @@ function CreateUnitsForPlayer21 takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set gg_unit_nogl_0621=BlzCreateUnitWithSkin(p, 'nogl', 15830.1, - 13041.1, 16.117, 'nogl')
     call SetUnitAcquireRange(gg_unit_nogl_0621, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'h09T', - 25818.3, 6233.8, 282.390, 'h09T')
+    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nogm', 15900.9, - 13204.3, 206.637, 'nogm')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nogm', 15676.6, - 12935.7, 254.528, 'nogm')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nomg', 15989.8, - 13064.4, 214.504, 'nomg')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nfsh', 4676.0, - 10655.5, 290.081, 'nfsh')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nomg', 15519.5, - 12862.8, 275.677, 'nomg')
     call SetUnitAcquireRange(u, 200.0)
@@ -5884,8 +5975,6 @@ function CreateUnitsForPlayer21 takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nass', 15132.0, 6830.2, 161.295, 'nass')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ogru', - 15146.9, - 22817.0, 261.085, 'ogru')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nftr', 18203.4, 15938.5, 8.731, 'nftr')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nbrg', 14715.7, 6855.4, 9.119, 'nbrg')
@@ -5902,15 +5991,25 @@ function CreateUnitsForPlayer21 takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nrog', 14965.9, 6686.2, 120.645, 'nrog')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'orai', - 15458.9, - 22407.6, 275.502, 'orai')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'orai', - 15070.8, - 22412.5, 263.074, 'orai')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nhdc', 14679.2, 6964.5, 314.447, 'nhdc')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nwld', 7763.1, 4158.9, 171.842, 'nwld')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmmu', - 13538.5, 11440.8, 139.223, 'nmmu')
     call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nwlg', 7525.0, 4333.6, 256.066, 'nwlg')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nwlt', 7347.3, 4152.3, 345.575, 'nwlt')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nwlt', 7710.4, 4043.3, 189.344, 'nwlt')
+    call SetUnitAcquireRange(u, 200.0)
+    set gg_unit_o02J_0984=BlzCreateUnitWithSkin(p, 'o02J', 7677.4, 4325.8, 215.060, 'o02J')
+    call SetUnitAcquireRange(gg_unit_o02J_0984, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nftr', 18264.3, 15737.4, 96.771, 'nftr')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmrv', 2386.7, - 5196.0, 339.312, 'nmrv')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmsn', 2463.5, - 5319.1, 102.462, 'nmsn')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nsts', - 15554.6, 6043.3, 118.656, 'nsts')
     call SetUnitAcquireRange(u, 200.0)
@@ -5930,21 +6029,20 @@ function CreateUnitsForPlayer21 takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nspd', - 5213.0, 22997.7, 354.122, 'nspd')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nftr', - 15586.3, - 22673.0, 269.251, 'nftr')
+    set u=BlzCreateUnitWithSkin(p, 'nwzd', 1796.5, - 8228.3, 270.382, 'nwzd')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nftr', - 14929.7, - 22676.5, 274.044, 'nftr')
+    set u=BlzCreateUnitWithSkin(p, 'nwzd', 1882.6, - 8208.9, 279.270, 'nwzd')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ogru', - 15441.4, - 22852.6, 305.244, 'ogru')
+    set u=BlzCreateUnitWithSkin(p, 'nbld', 1787.8, - 8371.1, 344.249, 'nbld')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmfs', - 13450.0, 11553.2, 83.861, 'nmfs')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'u00V', - 15127.0, - 22569.7, 181.531, 'u00V')
+    set u=BlzCreateUnitWithSkin(p, 'nenf', 1666.5, - 8573.6, 14.447, 'nenf')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ogru', - 15003.0, - 22883.2, 219.826, 'ogru')
+    set u=BlzCreateUnitWithSkin(p, 'nwiz', 1620.3, - 8473.1, 332.731, 'nwiz')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nnws', - 7610.1, 15876.6, 251.715, 'nnws')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'o02J', - 18678.6, - 25011.3, 258.725, 'o02J')
     set u=BlzCreateUnitWithSkin(p, 'nnwr', - 7486.7, 15696.2, 216.888, 'nnwr')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nnwl', - 7782.8, 15463.1, 79.983, 'nnwl')
@@ -5953,9 +6051,9 @@ function CreateUnitsForPlayer21 takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nnwa', - 7800.4, 15863.9, 292.200, 'nnwa')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nftr', - 15102.4, - 22710.3, 269.251, 'nftr')
+    set u=BlzCreateUnitWithSkin(p, 'nwzg', 2083.0, - 8348.1, 212.383, 'nwzg')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nftr', - 15407.1, - 22696.7, 269.251, 'nftr')
+    set u=BlzCreateUnitWithSkin(p, 'nwzr', 1551.7, - 8337.6, 329.832, 'nwzr')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmrr', - 13552.9, 11678.7, 253.935, 'nmrr')
     call SetUnitAcquireRange(u, 200.0)
@@ -5966,16 +6064,6 @@ function CreateUnitsForPlayer21 takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmrl', - 13826.9, 11575.2, 103.055, 'nmrl')
     call SetUnitAcquireRange(u, 200.0)
-    set gg_unit_Hgam_1450=BlzCreateUnitWithSkin(p, 'Hgam', - 18591.0, - 24825.8, 226.700, 'Hgam')
-    call SetHeroLevel(gg_unit_Hgam_1450, 20, false)
-    call SelectHeroSkill(gg_unit_Hgam_1450, 'AHbz')
-    call SelectHeroSkill(gg_unit_Hgam_1450, 'AHbz')
-    call SelectHeroSkill(gg_unit_Hgam_1450, 'AHbz')
-    call SelectHeroSkill(gg_unit_Hgam_1450, 'AHbz')
-    call SelectHeroSkill(gg_unit_Hgam_1450, 'AHab')
-    call SelectHeroSkill(gg_unit_Hgam_1450, 'AHab')
-    call SelectHeroSkill(gg_unit_Hgam_1450, 'AHab')
-    call SelectHeroSkill(gg_unit_Hgam_1450, 'AHab')
     set u=BlzCreateUnitWithSkin(p, 'nmfs', 14888.3, - 4812.0, 320.151, 'nmfs')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmpg', 14980.0, - 4701.6, 329.358, 'nmpg')
@@ -5992,27 +6080,59 @@ function CreateUnitsForPlayer21 takes nothing returns nothing
     call SelectHeroSkill(gg_unit_N089_1494, 'ANrf')
     call SelectHeroSkill(gg_unit_N089_1494, 'ANrf')
     call SelectHeroSkill(gg_unit_N089_1494, 'ANrf')
-    set gg_unit_Hhkl_1500=BlzCreateUnitWithSkin(p, 'Hhkl', - 18938.6, - 25225.4, 217.650, 'Hhkl')
-    call SetHeroLevel(gg_unit_Hhkl_1500, 8, false)
-    call SelectHeroSkill(gg_unit_Hhkl_1500, 'A02A')
-    call SelectHeroSkill(gg_unit_Hhkl_1500, 'A02A')
-    call SelectHeroSkill(gg_unit_Hhkl_1500, 'A02A')
-    call IssueImmediateOrder(gg_unit_Hhkl_1500, "")
-    call SelectHeroSkill(gg_unit_Hhkl_1500, 'A0WM')
-    call SelectHeroSkill(gg_unit_Hhkl_1500, 'A0WM')
-    call SelectHeroSkill(gg_unit_Hhkl_1500, 'A0WM')
-    call IssueImmediateOrder(gg_unit_Hhkl_1500, "")
-    call SelectHeroSkill(gg_unit_Hhkl_1500, 'AEah')
-    call SelectHeroSkill(gg_unit_Hhkl_1500, 'AEah')
+    set u=BlzCreateUnitWithSkin(p, 'nwzr', 2044.0, - 8257.5, 235.675, 'nwzr')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nass', 1978.3, - 8160.3, 271.135, 'nass')
+    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nsts', - 15760.8, 5927.0, 122.721, 'nsts')
     call SetUnitAcquireRange(u, 200.0)
-    set gg_unit_o00G_1521=BlzCreateUnitWithSkin(p, 'o00G', - 15248.2, - 22420.8, 271.303, 'o00G')
-    call SetUnitAcquireRange(gg_unit_o00G_1521, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nrog', 1678.1, - 8337.9, 354.869, 'nrog')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nftb', 4825.9, - 10610.6, 270.689, 'nftb')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nftb', 4687.0, - 10875.5, 275.622, 'nftb')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nfsp', 4681.2, - 10781.6, 334.643, 'nfsp')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nftr', 4581.2, - 10712.1, 9.031, 'nftr')
+    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nsty', - 15778.6, 6205.5, 334.478, 'nsty')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nftr', 4573.2, - 10873.4, 48.100, 'nftr')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nftt', 4928.8, - 10692.3, 156.516, 'nftt')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nftt', 4902.5, - 10847.4, 142.838, 'nftt')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'ngnv', 5246.1, - 12313.1, 321.305, 'ngnv')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'ngnw', 5281.0, - 12564.7, 124.523, 'ngnw')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'ngnb', 5132.0, - 12434.8, 331.819, 'ngnb')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nstl', - 15639.9, 5878.9, 38.168, 'nstl')
     call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'ngns', 5379.9, - 12483.1, 154.330, 'ngns')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'ngno', 5369.0, - 12291.4, 281.654, 'ngno')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'ngno', 5154.8, - 12555.5, 90.959, 'ngno')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'o01F', 11331.1, 6157.2, 141.453, 'o01F')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'o01F', 11135.0, 6420.2, 311.560, 'o01F')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'njga', 472.1, - 14856.2, 140.168, 'njga')
+    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nstl', - 15940.4, 6135.8, 84.542, 'nstl')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'njgb', 392.5, - 14542.9, 297.365, 'njgb')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmtw', 2555.0, - 5307.0, 109.526, 'nmtw')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmbg', 2786.7, - 5067.5, 229.445, 'nmbg')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmsn', 2335.2, - 5284.1, 4.691, 'nmsn')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nwrg', - 25645.4, - 11401.7, 251.590, 'nwrg')
     call SetUnitAcquireRange(u, 200.0)
@@ -6050,11 +6170,54 @@ function CreateUnitsForPlayer21 takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nwrg', - 27415.1, - 13381.7, 259.774, 'nwrg')
     call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nlrv', 2584.7, - 5184.1, 275.733, 'nlrv')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmrv', - 249.6, - 11927.3, 339.312, 'nmrv')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmsn', - 172.8, - 12050.4, 102.462, 'nmsn')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmtw', - 81.2, - 12038.3, 109.526, 'nmtw')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmbg', 114.5, - 11840.0, 229.445, 'nmbg')
+    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nsat', - 15699.5, 6246.2, 346.179, 'nsat')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmrl', - 17323.0, 6687.5, 196.233, 'nmrl')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmrl', - 17387.4, 6510.0, 144.173, 'nmrl')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmsn', - 301.1, - 12015.4, 4.691, 'nmsn')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nlrv', - 51.6, - 11915.4, 275.733, 'nlrv')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nenf', 1825.9, - 8515.1, 87.036, 'nenf')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nrog', 1695.4, - 8470.7, 290.410, 'nrog')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nrog', 2208.6, - 8322.3, 246.563, 'nrog')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nrog', 2083.7, - 8441.3, 210.603, 'nrog')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'ogru', 21613.9, - 3719.6, 76.550, 'ogru')
+    call SetUnitAcquireRange(u, 200.0)
+    call IssueImmediateOrder(u, "")
+    call IssueImmediateOrder(u, "")
+    call IssueImmediateOrder(u, "frenzyon")
+    set u=BlzCreateUnitWithSkin(p, 'ogru', 21454.0, - 4040.0, 78.649, 'ogru')
+    call SetUnitAcquireRange(u, 200.0)
+    call IssueImmediateOrder(u, "")
+    call IssueImmediateOrder(u, "")
+    call IssueImmediateOrder(u, "frenzyon")
+    set u=BlzCreateUnitWithSkin(p, 'oshm', 21115.7, - 3865.6, 51.020, 'oshm')
+    call SetUnitAcquireRange(u, 200.0)
+    call IssueImmediateOrder(u, "frostarmoron")
+    call IssueImmediateOrder(u, "")
+    set u=BlzCreateUnitWithSkin(p, 'orai', 20906.5, - 3751.9, 97.424, 'orai')
+    call SetUnitAcquireRange(u, 200.0)
+    call IssueImmediateOrder(u, "frenzyon")
+    call IssueImmediateOrder(u, "")
+    call IssueImmediateOrder(u, "")
+    set u=BlzCreateUnitWithSkin(p, 'nrdk', 21357.1, - 3509.1, 214.112, 'nrdk')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nrvd', - 15165.5, 8982.3, 231.203, 'nrvd')
     call SetUnitAcquireRange(u, 200.0)
@@ -6114,10 +6277,44 @@ function CreateUnitsForPlayer21 takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'narg', - 25392.5, - 13976.5, 45.185, 'narg')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'o02J', - 18742.5, - 24664.6, 274.773, 'o02J')
+    set u=BlzCreateUnitWithSkin(p, 'ogru', 21421.3, - 3856.9, 305.859, 'ogru')
+    call SetUnitAcquireRange(u, 200.0)
+    call IssueImmediateOrder(u, "")
+    call IssueImmediateOrder(u, "")
+    call IssueImmediateOrder(u, "frenzyon")
+    set u=BlzCreateUnitWithSkin(p, 'nrdk', 21464.3, - 3596.6, 205.340, 'nrdk')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'orai', 21124.8, - 3675.4, 129.793, 'orai')
+    call SetUnitAcquireRange(u, 200.0)
+    call IssueImmediateOrder(u, "frenzyon")
+    call IssueImmediateOrder(u, "")
+    call IssueImmediateOrder(u, "")
+    set u=BlzCreateUnitWithSkin(p, 'orai', 21210.9, - 3483.4, 178.802, 'orai')
+    call SetUnitAcquireRange(u, 200.0)
+    call IssueImmediateOrder(u, "frenzyon")
+    call IssueImmediateOrder(u, "")
+    call IssueImmediateOrder(u, "")
+    set u=BlzCreateUnitWithSkin(p, 'nwzd', 13176.2, 3822.7, 269.966, 'nwzd')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nenf', 12962.2, 3680.4, 323.103, 'nenf')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'o01F', 11800.7, 6164.5, 141.453, 'o01F')
+    call SetUnitAcquireRange(u, 200.0)
+    set gg_unit_h09U_3138=BlzCreateUnitWithSkin(p, 'h09U', - 23583.5, 10273.6, 178.283, 'h09U')
+    call SetUnitAcquireRange(gg_unit_h09U_3138, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmrm', - 17686.3, 6716.4, 330.809, 'nmrm')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmrr', - 17656.5, 6508.7, 44.712, 'nmrr')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'o05B', - 23830.1, 10269.9, 266.130, 'o05B')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'njga', 243.6, - 14805.8, 79.950, 'njga')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'o05B', - 25552.0, 10064.4, 225.621, 'o05B')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'o05C', - 25431.6, 10098.4, 267.403, 'o05C')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'njg1', 561.8, - 14664.5, 248.881, 'njg1')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmrl', - 3968.5, - 1462.2, 99.605, 'nmrl')
     call SetUnitAcquireRange(u, 200.0)
@@ -6127,56 +6324,97 @@ function CreateUnitsForPlayer21 takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmrl', - 3406.0, - 1048.1, 186.696, 'nmrl')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'O038', - 18898.5, - 24804.4, 335.547, 'O038')
-    call SetHeroLevel(u, 8, false)
-    set u=BlzCreateUnitWithSkin(p, 'o02J', - 24868.2, - 21970.7, 215.060, 'o02J')
+    set u=BlzCreateUnitWithSkin(p, 'h09T', - 23765.0, 10350.0, 288.720, 'h09T')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'o02J', - 25322.7, - 21779.1, 294.617, 'o02J')
+    set u=BlzCreateUnitWithSkin(p, 'o05B', - 23702.7, 10043.3, 193.719, 'o05B')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'o02J', - 24733.6, - 22208.2, 215.060, 'o02J')
+    set u=BlzCreateUnitWithSkin(p, 'njg1', 767.0, - 14663.5, 232.214, 'njg1')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'o02J', - 25110.6, - 21824.5, 215.060, 'o02J')
+    set u=BlzCreateUnitWithSkin(p, 'njga', 718.2, - 14807.8, 184.590, 'njga')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwld', - 25070.9, - 21965.7, 227.215, 'nwld')
+    set u=BlzCreateUnitWithSkin(p, 'o01F', 11781.8, 6326.8, 245.753, 'o01F')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwld', - 24926.5, - 22375.0, 113.613, 'nwld')
+    set u=BlzCreateUnitWithSkin(p, 'nenf', 13239.2, 3715.5, 246.033, 'nenf')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlg', - 25403.1, - 22074.0, 2.351, 'nwlg')
+    set u=BlzCreateUnitWithSkin(p, 'nwzr', 13310.2, 3561.1, 205.851, 'nwzr')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlg', - 25135.4, - 22363.2, 97.188, 'nwlg')
+    set u=BlzCreateUnitWithSkin(p, 'nass', 14678.3, 7088.1, 300.334, 'nass')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', - 25216.9, - 21861.6, 254.100, 'nwlt')
+    set u=BlzCreateUnitWithSkin(p, 'nenf', 14618.5, 6868.5, 320.997, 'nenf')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', - 24956.8, - 22117.4, 237.367, 'nwlt')
+    set u=BlzCreateUnitWithSkin(p, 'ngno', 5017.3, - 8622.1, 179.544, 'ngno')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', - 24770.3, - 22365.2, 137.322, 'nwlt')
+    set u=BlzCreateUnitWithSkin(p, 'ngno', 4831.7, - 8580.9, 269.723, 'ngno')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', - 25427.6, - 21902.7, 342.641, 'nwlt')
+    set u=BlzCreateUnitWithSkin(p, 'ngna', 4908.6, - 8834.9, 85.608, 'ngna')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'O038', - 25291.5, - 22229.2, 236.270, 'O038')
-    call SetHeroLevel(u, 11, false)
+    set u=BlzCreateUnitWithSkin(p, 'ngna', 4711.3, - 8707.3, 52.165, 'ngna')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'o02J', - 27352.6, - 22254.1, 91.310, 'o02J')
+    set u=BlzCreateUnitWithSkin(p, 'ngnw', 5033.1, - 8745.5, 179.698, 'ngnw')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlg', - 26014.6, - 24071.2, 117.645, 'nwlg')
+    set u=BlzCreateUnitWithSkin(p, 'nass', 1874.2, - 13179.1, 148.519, 'nass')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlg', - 25964.4, - 24306.1, 25.258, 'nwlg')
+    set u=BlzCreateUnitWithSkin(p, 'nbld', 1746.6, - 12671.8, 242.786, 'nbld')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', - 26107.8, - 24123.6, 237.367, 'nwlt')
+    set u=BlzCreateUnitWithSkin(p, 'nass', 1854.2, - 12785.3, 212.093, 'nass')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', - 26061.1, - 24269.7, 237.367, 'nwlt')
+    set u=BlzCreateUnitWithSkin(p, 'nass', 1599.5, - 12674.5, 232.939, 'nass')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', - 25955.2, - 24011.8, 237.367, 'nwlt')
+    set u=BlzCreateUnitWithSkin(p, 'nban', 1718.2, - 13137.1, 21.171, 'nban')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', - 25886.1, - 24127.8, 237.367, 'nwlt')
+    set u=BlzCreateUnitWithSkin(p, 'nban', 1453.4, - 12783.8, 127.017, 'nban')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', - 26052.0, - 24348.7, 237.367, 'nwlt')
+    set u=BlzCreateUnitWithSkin(p, 'nban', 1933.6, - 12955.2, 43.848, 'nban')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', - 25858.7, - 24372.3, 237.367, 'nwlt')
+    set u=BlzCreateUnitWithSkin(p, 'nban', 2041.2, - 13051.1, 236.400, 'nban')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlg', - 26066.0, - 24194.9, 117.645, 'nwlg')
+    set u=BlzCreateUnitWithSkin(p, 'nftr', 1437.3, - 15019.7, 64.470, 'nftr')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', - 25882.0, - 24027.2, 237.367, 'nwlt')
+    set u=BlzCreateUnitWithSkin(p, 'nftr', 1304.9, - 15233.9, 156.857, 'nftr')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nfsp', 1434.8, - 15181.2, 171.908, 'nfsp')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nftr', 1953.4, - 14094.5, 141.376, 'nftr')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nftr', 1741.6, - 14088.2, 252.561, 'nftr')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nass', 2674.2, - 6469.8, 53.945, 'nass')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nenf', 2839.2, - 6411.9, 197.057, 'nenf')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nrog', 2762.7, - 6595.6, 161.614, 'nrog')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nrog', 2923.9, - 6522.7, 229.424, 'nrog')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nlkl', 3315.7, - 8972.2, 19.468, 'nlkl')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nlsn', 3518.7, - 9063.4, 77.819, 'nlsn')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'ntrt', 992.9, - 10899.1, 215.251, 'ntrt')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmcf', 1195.2, - 10864.0, 68.766, 'nmcf')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmcf', 1132.7, - 11020.9, 81.851, 'nmcf')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmcf', 743.9, - 10893.7, 353.067, 'nmcf')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmcf', 860.6, - 10800.0, 240.605, 'nmcf')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmbg', 841.0, - 11021.5, 77.028, 'nmbg')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nlds', 3427.8, - 8732.7, 278.743, 'nlds')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nltc', 3636.8, - 9057.5, 93.365, 'nltc')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nlpd', 3478.8, - 8969.5, 69.963, 'nlpd')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nsrh', 2185.4, - 12059.2, 300.134, 'nsrh')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nlpr', 3533.6, - 8786.0, 311.659, 'nlpr')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nlpr', 3659.4, - 8803.4, 318.833, 'nlpr')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nlpr', 3712.8, - 8936.4, 25.017, 'nlpr')
     call SetUnitAcquireRange(u, 200.0)
 endfunction
 
@@ -6188,11 +6426,45 @@ function CreateBuildingsForPlayer22 takes nothing returns nothing
     local trigger t
     local real life
 
+    set u=BlzCreateUnitWithSkin(p, 'h07M', - 6432.0, - 9376.0, 270.000, 'h07M')
     set u=BlzCreateUnitWithSkin(p, 'h062', 3936.0, - 13408.0, 270.000, 'h062')
     set u=BlzCreateUnitWithSkin(p, 'h07N', 3776.0, - 13696.0, 270.000, 'h07N')
-    set u=BlzCreateUnitWithSkin(p, 'h07S', 3584.0, - 13248.0, 270.000, 'h07S')
-    set u=BlzCreateUnitWithSkin(p, 'h07S', 4032.0, - 13888.0, 270.000, 'h07S')
-    set u=BlzCreateUnitWithSkin(p, 'h07V', 4608.0, - 13312.0, 270.000, 'h07V')
+    set u=BlzCreateUnitWithSkin(p, 'h06R', - 6848.0, - 8512.0, 270.000, 'h06R')
+    set u=BlzCreateUnitWithSkin(p, 'h07O', - 7904.0, - 9376.0, 270.000, 'h07O')
+    set u=BlzCreateUnitWithSkin(p, 'h07Q', - 7584.0, - 8224.0, 270.000, 'h07Q')
+    set u=BlzCreateUnitWithSkin(p, 'h07S', 3584.0, - 13376.0, 270.000, 'h07S')
+    set u=BlzCreateUnitWithSkin(p, 'h07W', - 6944.0, - 9952.0, 270.000, 'h07W')
+    set u=BlzCreateUnitWithSkin(p, 'h07P', - 7744.0, - 9728.0, 270.000, 'h07P')
+    set u=BlzCreateUnitWithSkin(p, 'h07S', 3968.0, - 13888.0, 270.000, 'h07S')
+    set u=BlzCreateUnitWithSkin(p, 'h07V', - 7808.0, - 8192.0, 270.000, 'h07V')
+    set u=BlzCreateUnitWithSkin(p, 'h07V', - 7040.0, - 8384.0, 270.000, 'h07V')
+    set u=BlzCreateUnitWithSkin(p, 'h07V', - 6144.0, - 8960.0, 270.000, 'h07V')
+    set u=BlzCreateUnitWithSkin(p, 'h07V', - 7552.0, - 9728.0, 270.000, 'h07V')
+    set u=BlzCreateUnitWithSkin(p, 'h07T', - 6144.0, - 9472.0, 270.000, 'h07T')
+    set u=BlzCreateUnitWithSkin(p, 'h07T', - 7680.0, - 10240.0, 270.000, 'h07T')
+    set u=BlzCreateUnitWithSkin(p, 'h07T', - 8192.0, - 8832.0, 270.000, 'h07T')
+    set u=BlzCreateUnitWithSkin(p, 'h010', - 7488.0, - 8768.0, 166.906, 'h010')
+    set u=BlzCreateUnitWithSkin(p, 'o05F', 4992.0, - 13184.0, 270.000, 'o05F')
+    set u=BlzCreateUnitWithSkin(p, 'h07N', - 7232.0, - 8576.0, 270.000, 'h07N')
+    set u=BlzCreateUnitWithSkin(p, 'h07N', - 6784.0, - 9088.0, 270.000, 'h07N')
+    set u=BlzCreateUnitWithSkin(p, 'h07N', - 7808.0, - 8704.0, 270.000, 'h07N')
+    set u=BlzCreateUnitWithSkin(p, 'h07N', - 21952.0, - 28416.0, 270.000, 'h07N')
+    set u=BlzCreateUnitWithSkin(p, 'h07M', - 22240.0, - 28384.0, 270.000, 'h07M')
+    set u=BlzCreateUnitWithSkin(p, 'h07W', - 21664.0, - 28896.0, 270.000, 'h07W')
+    set u=BlzCreateUnitWithSkin(p, 'h064', - 22240.0, - 28000.0, 270.000, 'h064')
+    set u=BlzCreateUnitWithSkin(p, 'h06I', - 21888.0, - 27968.0, 270.000, 'h06I')
+    set u=BlzCreateUnitWithSkin(p, 'h06R', - 22528.0, - 28352.0, 270.000, 'h06R')
+    set u=BlzCreateUnitWithSkin(p, 'h093', - 22592.0, - 28736.0, 270.000, 'h093')
+    set u=BlzCreateUnitWithSkin(p, 'h07O', - 22240.0, - 28704.0, 270.000, 'h07O')
+    set u=BlzCreateUnitWithSkin(p, 'h07P', - 21952.0, - 28736.0, 270.000, 'h07P')
+    set u=BlzCreateUnitWithSkin(p, 'h07Q', - 21664.0, - 28512.0, 270.000, 'h07Q')
+    set u=BlzCreateUnitWithSkin(p, 'h07R', - 22464.0, - 28992.0, 270.000, 'h07R')
+    set u=BlzCreateUnitWithSkin(p, 'h07U', - 22272.0, - 28992.0, 270.000, 'h07U')
+    set u=BlzCreateUnitWithSkin(p, 'h07S', - 22080.0, - 28992.0, 270.000, 'h07S')
+    set u=BlzCreateUnitWithSkin(p, 'n07H', - 22592.0, - 28032.0, 270.000, 'n07H')
+    set u=BlzCreateUnitWithSkin(p, 'h07V', - 22272.0, - 29120.0, 270.000, 'h07V')
+    set u=BlzCreateUnitWithSkin(p, 'h07T', - 22080.0, - 29120.0, 270.000, 'h07T')
+    set u=BlzCreateUnitWithSkin(p, 'h06A', - 23104.0, - 28352.0, 270.000, 'h06A')
 endfunction
 
 //===========================================================================
@@ -6207,6 +6479,22 @@ function CreateUnitsForPlayer22 takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h01E', 4210.9, - 13096.5, 241.091, 'h01E')
     set u=BlzCreateUnitWithSkin(p, 'h01E', 4086.1, - 13152.1, 299.785, 'h01E')
     set u=BlzCreateUnitWithSkin(p, 'h01E', 4183.6, - 13278.7, 95.839, 'h01E')
+    set u=BlzCreateUnitWithSkin(p, 'h041', - 7917.6, - 8472.4, 145.352, 'h041')
+    set u=BlzCreateUnitWithSkin(p, 'h041', - 8045.0, - 8599.6, 92.255, 'h041')
+    set u=BlzCreateUnitWithSkin(p, 'h06J', - 8015.3, - 8663.2, 6.955, 'h06J')
+    set u=BlzCreateUnitWithSkin(p, 'h06J', - 7806.0, - 8476.8, 301.155, 'h06J')
+    set u=BlzCreateUnitWithSkin(p, 'h05K', - 7636.3, - 8364.7, 238.004, 'h05K')
+    set u=BlzCreateUnitWithSkin(p, 'h05K', - 7505.7, - 8356.0, 60.548, 'h05K')
+    set u=BlzCreateUnitWithSkin(p, 'e007', - 7430.5, - 9291.6, 267.207, 'e007')
+    set u=BlzCreateUnitWithSkin(p, 'e007', - 7312.9, - 9412.1, 264.515, 'e007')
+    set u=BlzCreateUnitWithSkin(p, 'h041', - 6994.4, - 8633.3, 279.929, 'h041')
+    set u=BlzCreateUnitWithSkin(p, 'h041', - 6857.6, - 8695.5, 12.953, 'h041')
+    set u=BlzCreateUnitWithSkin(p, 'h041', - 7288.9, - 9833.0, 14.623, 'h041')
+    set u=BlzCreateUnitWithSkin(p, 'h041', - 6658.9, - 9582.0, 253.320, 'h041')
+    set u=BlzCreateUnitWithSkin(p, 'h01E', - 7081.6, - 9093.2, 319.668, 'h01E')
+    set u=BlzCreateUnitWithSkin(p, 'h01E', - 6964.8, - 9068.8, 25.808, 'h01E')
+    set u=BlzCreateUnitWithSkin(p, 'h06J', - 6746.9, - 9253.9, 138.531, 'h06J')
+    set u=BlzCreateUnitWithSkin(p, 'h06J', - 7742.3, - 9455.7, 229.775, 'h06J')
 endfunction
 
 //===========================================================================
@@ -6217,10 +6505,8 @@ function CreateBuildingsForPlayer23 takes nothing returns nothing
     local trigger t
     local real life
 
-    set gg_unit_o016_0771=BlzCreateUnitWithSkin(p, 'o016', 2496.0, 19520.0, 216.766, 'o016')
-    set u=BlzCreateUnitWithSkin(p, 'n030', 2496.0, 19776.0, 270.000, 'n030')
-    set gg_unit_u01Q_3871=BlzCreateUnitWithSkin(p, 'u01Q', 2016.0, 20512.0, 270.000, 'u01Q')
-    call SetUnitColor(gg_unit_u01Q_3871, ConvertPlayerColor(22))
+    set u=BlzCreateUnitWithSkin(p, 'u00F', - 27936.0, 5984.0, 270.000, 'u00F')
+    set gg_unit_n0BE_3262=BlzCreateUnitWithSkin(p, 'n0BE', - 3616.0, - 21664.0, 270.000, 'n0BE')
 endfunction
 
 //===========================================================================
@@ -6231,9 +6517,9 @@ function CreateUnitsForPlayer23 takes nothing returns nothing
     local trigger t
     local real life
 
-    set u=BlzCreateUnitWithSkin(p, 'u00D', 2328.5, 20553.3, 260.340, 'u00D')
-    set u=BlzCreateUnitWithSkin(p, 'u00D', 2410.7, 20478.0, 205.110, 'u00D')
-    set u=BlzCreateUnitWithSkin(p, 'u00D', 2268.3, 20431.6, 17.458, 'u00D')
+    set u=BlzCreateUnitWithSkin(p, 'u00D', - 27875.7, 6223.6, 17.458, 'u00D')
+    set u=BlzCreateUnitWithSkin(p, 'u00D', - 27787.4, 6341.3, 276.979, 'u00D')
+    set u=BlzCreateUnitWithSkin(p, 'u00D', - 27762.0, 6156.1, 95.613, 'u00D')
 endfunction
 
 //===========================================================================
@@ -6262,7 +6548,7 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set gg_unit_o00K_0150=BlzCreateUnitWithSkin(p, 'o00K', - 12096.0, - 12480.0, 270.000, 'o00K')
     call SetUnitState(gg_unit_o00K_0150, UNIT_STATE_MANA, 300)
     call SetUnitAcquireRange(gg_unit_o00K_0150, 200.0)
-    set gg_unit_o008_0168=BlzCreateUnitWithSkin(p, 'o008', 960.0, - 26688.0, 80.000, 'o008')
+    set gg_unit_o008_0168=BlzCreateUnitWithSkin(p, 'o008', 960.0, - 26688.0, 270.000, 'o008')
     call SetUnitColor(gg_unit_o008_0168, ConvertPlayerColor(12))
     set gg_unit_h03V_0183=BlzCreateUnitWithSkin(p, 'h03V', - 24928.0, - 5792.0, 270.000, 'h03V')
     call SetUnitAcquireRange(gg_unit_h03V_0183, 200.0)
@@ -6274,8 +6560,10 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h01T', 16768.0, 1792.0, 270.000, 'h01T')
     set gg_unit_nfoh_0212=BlzCreateUnitWithSkin(p, 'nfoh', 10752.0, 5760.0, 0.000, 'nfoh')
     set u=BlzCreateUnitWithSkin(p, 'n09C', - 5696.0, - 7104.0, 270.000, 'n09C')
-    set u=BlzCreateUnitWithSkin(p, 'n02Z', - 20672.0, 8192.0, 270.000, 'n02Z')
+    set u=BlzCreateUnitWithSkin(p, 'n02Z', - 20928.0, 10112.0, 270.000, 'n02Z')
     set u=BlzCreateUnitWithSkin(p, 'n03A', 9920.0, 5376.0, 270.000, 'n03A')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_DalaranEntrance2), GetRectCenterY(gg_rct_DalaranEntrance2))
+    call WaygateActivate(u, true)
     set u=BlzCreateUnitWithSkin(p, 'n00F', - 7616.0, 20736.0, 270.000, 'n00F')
     set gg_unit_h03V_0257=BlzCreateUnitWithSkin(p, 'h03V', - 26208.0, - 1952.0, 270.000, 'h03V')
     call SetUnitAcquireRange(gg_unit_h03V_0257, 200.0)
@@ -6285,11 +6573,10 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set gg_unit_h05I_0313=BlzCreateUnitWithSkin(p, 'h05I', - 19648.0, - 3200.0, 270.000, 'h05I')
     call SetUnitState(gg_unit_h05I_0313, UNIT_STATE_MANA, 200)
     set gg_unit_nfoh_0315=BlzCreateUnitWithSkin(p, 'nfoh', - 17728.0, - 10880.0, 270.000, 'nfoh')
-    set u=BlzCreateUnitWithSkin(p, 'u00Q', 1120.0, - 27104.0, 270.000, 'u00Q')
+    set u=BlzCreateUnitWithSkin(p, 'u00Q', 800.0, - 27296.0, 270.000, 'u00Q')
     set u=BlzCreateUnitWithSkin(p, 'n00H', 5888.0, 21568.0, 270.000, 'n00H')
     set u=BlzCreateUnitWithSkin(p, 'n08Q', 11264.0, - 512.0, 270.000, 'n08Q')
     set u=BlzCreateUnitWithSkin(p, 'o034', 1600.0, - 25600.0, 270.000, 'o034')
-    set u=BlzCreateUnitWithSkin(p, 'h004', - 11648.0, - 12416.0, 298.867, 'h004')
     set u=BlzCreateUnitWithSkin(p, 'h007', 11264.0, - 256.0, 270.000, 'h007')
     set u=BlzCreateUnitWithSkin(p, 'nfgo', - 9792.0, - 30720.0, 270.000, 'nfgo')
     call SetUnitState(u, UNIT_STATE_MANA, 1000)
@@ -6303,44 +6590,47 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'owtw', 15296.0, - 17792.0, 270.000, 'owtw')
     set u=BlzCreateUnitWithSkin(p, 'nmg0', - 6432.0, 1056.0, 270.000, 'nmg0')
     set u=BlzCreateUnitWithSkin(p, 'n02R', - 320.0, 20288.0, 270.000, 'n02R')
-    set u=BlzCreateUnitWithSkin(p, 'npgf', 1408.0, - 27008.0, 270.000, 'npgf')
+    set u=BlzCreateUnitWithSkin(p, 'npgf', 1344.0, - 27072.0, 270.000, 'npgf')
     set u=BlzCreateUnitWithSkin(p, 'n0AN', 1728.0, - 25792.0, 270.000, 'n0AN')
     set u=BlzCreateUnitWithSkin(p, 'n027', - 16640.0, - 9664.0, 270.000, 'n027')
     set u=BlzCreateUnitWithSkin(p, 'n00S', 1216.0, - 26240.0, 270.000, 'n00S')
     set gg_unit_h03V_0591=BlzCreateUnitWithSkin(p, 'h03V', - 18656.0, - 18272.0, 270.000, 'h03V')
     call SetUnitAcquireRange(gg_unit_h03V_0591, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'h03V', - 27680.0, - 15136.0, 270.000, 'h03V')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Silithus_Bug_Exterior), GetRectCenterY(gg_rct_Silithus_Bug_Exterior))
+    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'n01T', - 11840.0, - 2176.0, 270.000, 'n01T')
-    set u=BlzCreateUnitWithSkin(p, 'n02A', - 13248.0, - 7232.0, 270.000, 'n02A')
+    set u=BlzCreateUnitWithSkin(p, 'n02A', - 12928.0, - 4800.0, 270.000, 'n02A')
     set u=BlzCreateUnitWithSkin(p, 'n022', - 10752.0, - 9088.0, 270.000, 'n022')
     set u=BlzCreateUnitWithSkin(p, 'n01U', - 18624.0, 1408.0, 270.000, 'n01U')
     set u=BlzCreateUnitWithSkin(p, 'nfr1', 4672.0, 18176.0, 191.880, 'nfr1')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nfr1', 5472.0, 18432.0, 270.000, 'nfr1')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'n019', 11264.0, 6272.0, 270.000, 'n019')
     set u=BlzCreateUnitWithSkin(p, 'n020', - 10624.0, - 15360.0, 270.000, 'n020')
-    set u=BlzCreateUnitWithSkin(p, 'owtw', 20992.0, - 3904.0, 270.000, 'owtw')
     set u=BlzCreateUnitWithSkin(p, 'n026', - 12416.0, - 10560.0, 270.000, 'n026')
     set u=BlzCreateUnitWithSkin(p, 'n025', - 13120.0, - 12864.0, 270.000, 'n025')
     set gg_unit_o00N_0704=BlzCreateUnitWithSkin(p, 'o00N', 6304.0, 21920.0, 262.000, 'o00N')
     call SetUnitAcquireRange(gg_unit_o00N_0704, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'n01X', - 9664.0, 9088.0, 270.000, 'n01X')
+    set u=BlzCreateUnitWithSkin(p, 'n01X', - 11136.0, 10496.0, 270.000, 'n01X')
     set u=BlzCreateUnitWithSkin(p, 'o00M', 4352.0, 20608.0, 270.000, 'o00M')
     set u=BlzCreateUnitWithSkin(p, 'n01J', - 4032.0, - 25152.0, 270.000, 'n01J')
     set u=BlzCreateUnitWithSkin(p, 'n09I', 11904.0, 23104.0, 270.000, 'n09I')
     set u=BlzCreateUnitWithSkin(p, 'n02T', 1408.0, - 29120.0, 270.000, 'n02T')
     set gg_unit_h02Z_0726=BlzCreateUnitWithSkin(p, 'h02Z', - 5120.0, - 30528.0, 89.562, 'h02Z')
-    set u=BlzCreateUnitWithSkin(p, 'n00B', - 4544.0, - 28096.0, 270.000, 'n00B')
+    set u=BlzCreateUnitWithSkin(p, 'n00B', - 3456.0, - 29056.0, 270.000, 'n00B')
     set u=BlzCreateUnitWithSkin(p, 'o00M', 6016.0, 22016.0, 270.000, 'o00M')
-    set u=BlzCreateUnitWithSkin(p, 'n08X', - 28096.0, - 19840.0, 270.000, 'n08X')
     set u=BlzCreateUnitWithSkin(p, 'nfr2', 5312.0, 18816.0, 90.970, 'nfr2')
     set u=BlzCreateUnitWithSkin(p, 'n02S', 3456.0, 22976.0, 270.000, 'n02S')
     set u=BlzCreateUnitWithSkin(p, 'nfr1', 4672.0, 18496.0, 87.282, 'nfr1')
     set u=BlzCreateUnitWithSkin(p, 'n032', - 10208.0, - 25504.0, 270.000, 'n032')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Sargeras_Entrance), GetRectCenterY(gg_rct_Sargeras_Entrance))
+    call WaygateActivate(u, true)
+    set gg_unit_o016_0771=BlzCreateUnitWithSkin(p, 'o016', 2496.0, 19584.0, 270.000, 'o016')
     set gg_unit_n036_0778=BlzCreateUnitWithSkin(p, 'n036', 4576.0, - 24736.0, 270.000, 'n036')
-    set u=BlzCreateUnitWithSkin(p, 'n07L', 5376.0, - 12416.0, 270.000, 'n07L')
+    call WaygateSetDestination(gg_unit_n036_0778, GetRectCenterX(gg_rct_Dark_Portal_Entrance_3), GetRectCenterY(gg_rct_Dark_Portal_Entrance_3))
+    call WaygateActivate(gg_unit_n036_0778, true)
     set u=BlzCreateUnitWithSkin(p, 'n05Y', - 1664.0, 7616.0, 270.000, 'n05Y')
     set u=BlzCreateUnitWithSkin(p, 'n0AJ', 10752.0, - 22720.0, 270.000, 'n0AJ')
     call SetUnitAcquireRange(u, 200.0)
@@ -6352,6 +6642,8 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nfh1', 21504.0, 12416.0, 270.000, 'nfh1')
     set u=BlzCreateUnitWithSkin(p, 'nfh1', 21760.0, 11904.0, 122.269, 'nfh1')
     set gg_unit_n036_1065=BlzCreateUnitWithSkin(p, 'n036', 15584.0, - 19552.0, 270.000, 'n036')
+    call WaygateSetDestination(gg_unit_n036_1065, GetRectCenterX(gg_rct_Dark_Portal_Exit_2), GetRectCenterY(gg_rct_Dark_Portal_Exit_2))
+    call WaygateActivate(gg_unit_n036_1065, true)
     call SetUnitAcquireRange(gg_unit_n036_1065, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nct2', - 12512.0, - 4256.0, 270.000, 'nct2')
     set u=BlzCreateUnitWithSkin(p, 'nct1', - 13024.0, - 4256.0, 270.000, 'nct1')
@@ -6364,16 +6656,19 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'n0AF', - 9152.0, - 7296.0, 270.000, 'n0AF')
     set gg_unit_h026_1207=BlzCreateUnitWithSkin(p, 'h026', - 256.0, - 31616.0, 270.000, 'h026')
     set u=BlzCreateUnitWithSkin(p, 'h03V', - 24928.0, - 12192.0, 270.000, 'h03V')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Silithus_Stone_Exterior), GetRectCenterY(gg_rct_Silithus_Stone_Exterior))
+    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set gg_unit_n035_1269=BlzCreateUnitWithSkin(p, 'n035', 14656.0, 7744.0, 347.332, 'n035')
     set u=BlzCreateUnitWithSkin(p, 'h024', 2752.0, 15744.0, 270.000, 'h024')
-    set u=BlzCreateUnitWithSkin(p, 'n07Q', 1088.0, - 22016.0, 270.000, 'n07Q')
-    set u=BlzCreateUnitWithSkin(p, 'o02V', 256.0, - 25536.0, 270.000, 'o02V')
+    set u=BlzCreateUnitWithSkin(p, 'n07Q', 1088.0, - 21952.0, 270.000, 'n07Q')
+    set u=BlzCreateUnitWithSkin(p, 'o02V', 288.0, - 25504.0, 270.000, 'o02V')
     set u=BlzCreateUnitWithSkin(p, 'ncnt', - 20000.0, - 4448.0, 270.000, 'ncnt')
     set u=BlzCreateUnitWithSkin(p, 'h006', 13312.0, 3840.0, 270.000, 'h006')
     set u=BlzCreateUnitWithSkin(p, 'h03V', - 24800.0, 15392.0, 270.000, 'h03V')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Scarlet_Monastery_Exterior), GetRectCenterY(gg_rct_Scarlet_Monastery_Exterior))
+    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'n09X', - 1344.0, - 28672.0, 270.000, 'n09X')
     set u=BlzCreateUnitWithSkin(p, 'n02M', 16960.0, - 9216.0, 270.000, 'n02M')
     set u=BlzCreateUnitWithSkin(p, 'n012', 13248.0, - 11328.0, 270.000, 'n012')
     set u=BlzCreateUnitWithSkin(p, 'n00Y', 14016.0, - 17600.0, 270.000, 'n00Y')
@@ -6391,21 +6686,18 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'n016', 14080.0, - 2240.0, 270.000, 'n016')
     set u=BlzCreateUnitWithSkin(p, 'n01V', 21952.0, 12096.0, 270.000, 'n01V')
     set u=BlzCreateUnitWithSkin(p, 'nfh1', 22208.0, 12992.0, 270.000, 'nfh1')
-    set u=BlzCreateUnitWithSkin(p, 'hbla', 11680.0, - 1760.0, 198.960, 'hbla')
-    set u=BlzCreateUnitWithSkin(p, 'owtw', 4224.0, - 10560.0, 270.000, 'owtw')
-    set u=BlzCreateUnitWithSkin(p, 'obar', 5184.0, - 10624.0, 270.000, 'obar')
-    set u=BlzCreateUnitWithSkin(p, 'otrb', 5120.0, - 10944.0, 270.000, 'otrb')
+    set u=BlzCreateUnitWithSkin(p, 'hbla', 11680.0, - 1760.0, 270.000, 'hbla')
     set u=BlzCreateUnitWithSkin(p, 'h03V', - 16096.0, - 17312.0, 270.000, 'h03V')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Silithus_Bug_Interior), GetRectCenterY(gg_rct_Silithus_Bug_Interior))
+    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'n01C', 12928.0, 5440.0, 270.000, 'n01C')
-    set u=BlzCreateUnitWithSkin(p, 'h024', 4992.0, 2432.0, 270.000, 'h024')
-    call SetUnitState(u, UNIT_STATE_MANA, 200)
     set gg_unit_owtw_1636=BlzCreateUnitWithSkin(p, 'owtw', - 11264.0, - 13888.0, 270.000, 'owtw')
     set gg_unit_owtw_1637=BlzCreateUnitWithSkin(p, 'owtw', - 11136.0, - 13184.0, 270.000, 'owtw')
-    set u=BlzCreateUnitWithSkin(p, 'h004', - 10752.0, - 13120.0, 270.000, 'h004')
-    set u=BlzCreateUnitWithSkin(p, 'n09K', 2688.0, - 512.0, 270.000, 'n09K')
-    set u=BlzCreateUnitWithSkin(p, 'n01D', 7552.0, 4160.0, 270.000, 'n01D')
+    set u=BlzCreateUnitWithSkin(p, 'n09K', 1664.0, - 12928.0, 270.000, 'n09K')
     set u=BlzCreateUnitWithSkin(p, 'n03A', 8640.0, 4800.0, 270.000, 'n03A')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Dalaran_Dungeons_Exit), GetRectCenterY(gg_rct_Dalaran_Dungeons_Exit))
+    call WaygateActivate(u, true)
     set u=BlzCreateUnitWithSkin(p, 'nhns', - 18944.0, - 320.0, 270.000, 'nhns')
     set u=BlzCreateUnitWithSkin(p, 'nfh1', 20480.0, 11328.0, 119.763, 'nfh1')
     call SetUnitAcquireRange(u, 200.0)
@@ -6415,10 +6707,17 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nfr1', - 10368.0, 11264.0, 270.000, 'nfr1')
     set u=BlzCreateUnitWithSkin(p, 'nct1', - 9504.0, - 3040.0, 270.000, 'nct1')
     set u=BlzCreateUnitWithSkin(p, 'h03V', - 28448.0, 14944.0, 270.000, 'h03V')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Undercity_Escape), GetRectCenterY(gg_rct_Undercity_Escape))
+    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'n0BJ', - 9216.0, 8192.0, 270.000, 'n0BJ')
     set u=BlzCreateUnitWithSkin(p, 'h03V', - 26528.0, 14432.0, 270.000, 'h03V')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Undercity_Exterior_1), GetRectCenterY(gg_rct_Undercity_Exterior_1))
+    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'h03V', - 27936.0, 17632.0, 270.000, 'h03V')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Undercity_Exterior_2), GetRectCenterY(gg_rct_Undercity_Exterior_2))
+    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nnzg', - 13472.0, - 28832.0, 270.000, 'nnzg')
     set u=BlzCreateUnitWithSkin(p, 'o002', 14336.0, - 18816.0, 270.000, 'o002')
@@ -6443,12 +6742,16 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'o034', 576.0, - 26752.0, 270.000, 'o034')
     set u=BlzCreateUnitWithSkin(p, 'n08U', - 12608.0, 1600.0, 270.000, 'n08U')
     set u=BlzCreateUnitWithSkin(p, 'h004', 21184.0, 15680.0, 270.000, 'h004')
+    set u=BlzCreateUnitWithSkin(p, 'h03V', 11232.0, 11232.0, 270.000, 'h03V')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Scarlet_Monastery_Interior), GetRectCenterY(gg_rct_Scarlet_Monastery_Interior))
+    call WaygateActivate(u, true)
+    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'n03O', - 20352.0, - 2112.0, 270.000, 'n03O')
-    set u=BlzCreateUnitWithSkin(p, 'n0BB', - 26240.0, - 2752.0, 270.000, 'n0BB')
     set u=BlzCreateUnitWithSkin(p, 'n03Z', - 9088.0, - 3200.0, 270.000, 'n03Z')
+    set u=BlzCreateUnitWithSkin(p, 'n0BV', 1920.0, - 8384.0, 270.000, 'n0BV')
     set u=BlzCreateUnitWithSkin(p, 'n0A8', - 2432.0, - 13824.0, 270.000, 'n0A8')
     set u=BlzCreateUnitWithSkin(p, 'n04Y', - 3328.0, - 2112.0, 270.000, 'n04Y')
-    set u=BlzCreateUnitWithSkin(p, 'o034', 1216.0, - 26880.0, 270.000, 'o034')
+    set u=BlzCreateUnitWithSkin(p, 'o034', 1152.0, - 27200.0, 270.000, 'o034')
     set u=BlzCreateUnitWithSkin(p, 'nhns', - 13952.0, - 1088.0, 270.000, 'nhns')
     set u=BlzCreateUnitWithSkin(p, 'nnzg', - 11744.0, - 28768.0, 270.000, 'nnzg')
     set u=BlzCreateUnitWithSkin(p, 'nnzg', - 12000.0, - 26848.0, 270.000, 'nnzg')
@@ -6465,24 +6768,32 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'o034', 704.0, - 25600.0, 270.000, 'o034')
     set u=BlzCreateUnitWithSkin(p, 'n02O', 3008.0, - 20416.0, 270.000, 'n02O')
     set gg_unit_n036_2719=BlzCreateUnitWithSkin(p, 'n036', 17440.0, - 19232.0, 270.000, 'n036')
+    call WaygateSetDestination(gg_unit_n036_2719, GetRectCenterX(gg_rct_Dark_Portal_Exit_3), GetRectCenterY(gg_rct_Dark_Portal_Exit_3))
+    call WaygateActivate(gg_unit_n036_2719, true)
     call SetUnitAcquireRange(gg_unit_n036_2719, 200.0)
     set gg_unit_n036_2720=BlzCreateUnitWithSkin(p, 'n036', 16544.0, - 19168.0, 270.000, 'n036')
+    call WaygateSetDestination(gg_unit_n036_2720, GetRectCenterX(gg_rct_Dark_Portal_Exit_1), GetRectCenterY(gg_rct_Dark_Portal_Exit_1))
+    call WaygateActivate(gg_unit_n036_2720, true)
     call SetUnitAcquireRange(gg_unit_n036_2720, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'owtw', 20992.0, 15232.0, 270.000, 'owtw')
     set u=BlzCreateUnitWithSkin(p, 'h03V', - 23968.0, 17248.0, 270.000, 'h03V')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_ScarletExit), GetRectCenterY(gg_rct_ScarletExit))
+    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'o02X', 1472.0, - 26688.0, 270.000, 'o02X')
+    set u=BlzCreateUnitWithSkin(p, 'n0BM', - 6208.0, 1408.0, 270.000, 'n0BM')
+    set u=BlzCreateUnitWithSkin(p, 'n0BN', - 9216.0, - 11072.0, 270.000, 'n0BN')
     set u=BlzCreateUnitWithSkin(p, 'n01Q', - 14912.0, 4352.0, 270.000, 'n01Q')
+    set u=BlzCreateUnitWithSkin(p, 'n030', 2368.0, 19904.0, 270.000, 'n030')
+    set u=BlzCreateUnitWithSkin(p, 'n0BO', - 12864.0, - 8640.0, 270.000, 'n0BO')
     set u=BlzCreateUnitWithSkin(p, 'nct1', - 14304.0, - 2336.0, 270.000, 'nct1')
-    set u=BlzCreateUnitWithSkin(p, 'n0BD', - 14336.0, - 18048.0, 270.000, 'n0BD')
+    set u=BlzCreateUnitWithSkin(p, 'n0BD', - 14336.0, - 17920.0, 270.000, 'n0BD')
     set u=BlzCreateUnitWithSkin(p, 'ngnh', 5408.0, 8672.0, 270.000, 'ngnh')
     set u=BlzCreateUnitWithSkin(p, 'ngt2', 5024.0, 8736.0, 270.000, 'ngt2')
     set u=BlzCreateUnitWithSkin(p, 'n005', - 20416.0, - 2432.0, 270.000, 'n005')
     set u=BlzCreateUnitWithSkin(p, 'n01Z', 15744.0, 1792.0, 270.000, 'n01Z')
     set u=BlzCreateUnitWithSkin(p, 'n00L', 10304.0, - 22976.0, 270.000, 'n00L')
     set u=BlzCreateUnitWithSkin(p, 'h007', 12160.0, - 448.0, 270.000, 'h007')
-    set u=BlzCreateUnitWithSkin(p, 'nfr2', - 20288.0, 8448.0, 270.000, 'nfr2')
-    set u=BlzCreateUnitWithSkin(p, 'nfr1', - 20928.0, 8512.0, 270.000, 'nfr1')
     set u=BlzCreateUnitWithSkin(p, 'o002', 17920.0, 3456.0, 270.000, 'o002')
     set u=BlzCreateUnitWithSkin(p, 'hbar', 10959.3, - 220.4, 340.680, 'hbar')
     set u=BlzCreateUnitWithSkin(p, 'hshy', 12064.0, 160.0, 270.000, 'hshy')
@@ -6492,20 +6803,38 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     call IssueImmediateOrder(gg_unit_e014_3083, "")
     set u=BlzCreateUnitWithSkin(p, 'n07Y', 2688.0, 16448.0, 270.000, 'n07Y')
     set u=BlzCreateUnitWithSkin(p, 'n09V', 2560.0, - 31040.0, 270.000, 'n09V')
+    set u=BlzCreateUnitWithSkin(p, 'n0BF', - 27968.0, 9536.0, 270.000, 'n0BF')
+    set u=BlzCreateUnitWithSkin(p, 'n0BG', - 23744.0, 6400.0, 270.000, 'n0BG')
+    set u=BlzCreateUnitWithSkin(p, 'n0BW', 2176.0, - 6016.0, 270.000, 'n0BW')
     set u=BlzCreateUnitWithSkin(p, 'nfh1', 20544.0, 15360.0, 270.000, 'nfh1')
     set u=BlzCreateUnitWithSkin(p, 'ncnt', - 14496.0, - 2848.0, 270.000, 'ncnt')
     set u=BlzCreateUnitWithSkin(p, 'nct2', - 14560.0, - 2272.0, 270.000, 'nct2')
     set u=BlzCreateUnitWithSkin(p, 'n0AA', 18560.0, - 30336.0, 270.000, 'n0AA')
+    set u=BlzCreateUnitWithSkin(p, 'n0BI', - 10496.0, 5248.0, 270.000, 'n0BI')
+    set u=BlzCreateUnitWithSkin(p, 'n0BK', - 12288.0, - 19840.0, 270.000, 'n0BK')
     set gg_unit_n036_3291=BlzCreateUnitWithSkin(p, 'n036', 4704.0, - 25376.0, 270.000, 'n036')
+    call WaygateSetDestination(gg_unit_n036_3291, GetRectCenterX(gg_rct_Dark_Portal_Entrance_1), GetRectCenterY(gg_rct_Dark_Portal_Entrance_1))
+    call WaygateActivate(gg_unit_n036_3291, true)
     set gg_unit_n036_3292=BlzCreateUnitWithSkin(p, 'n036', 5216.0, - 25760.0, 270.000, 'n036')
-    set u=BlzCreateUnitWithSkin(p, 'h004', - 11264.0, - 12480.0, 270.000, 'h004')
+    call WaygateSetDestination(gg_unit_n036_3292, GetRectCenterX(gg_rct_Dark_Portal_Entrance_2), GetRectCenterY(gg_rct_Dark_Portal_Entrance_2))
+    call WaygateActivate(gg_unit_n036_3292, true)
+    set u=BlzCreateUnitWithSkin(p, 'n0A6', - 10752.0, - 3904.0, 270.000, 'n0A6')
     set u=BlzCreateUnitWithSkin(p, 'n00J', - 8896.0, - 24896.0, 270.000, 'n00J')
     set gg_unit_n05J_3370=BlzCreateUnitWithSkin(p, 'n05J', 17408.0, - 17920.0, 270.000, 'n05J')
     set gg_unit_n05J_3375=BlzCreateUnitWithSkin(p, 'n05J', 3712.0, - 26048.0, 270.000, 'n05J')
+    set gg_unit_h03V_3441=BlzCreateUnitWithSkin(p, 'h03V', 17376.0, - 11232.0, 270.000, 'h03V')
+    call SetUnitAcquireRange(gg_unit_h03V_3441, 200.0)
+    set gg_unit_h03V_3449=BlzCreateUnitWithSkin(p, 'h03V', - 27552.0, - 9056.0, 270.000, 'h03V')
+    call SetUnitAcquireRange(gg_unit_h03V_3449, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'o00M', 5632.0, 20160.0, 270.000, 'o00M')
     set u=BlzCreateUnitWithSkin(p, 'o00M', 6400.0, 21632.0, 270.000, 'o00M')
+    set u=BlzCreateUnitWithSkin(p, 'n0BP', 22784.0, - 17536.0, 270.000, 'n0BP')
     set u=BlzCreateUnitWithSkin(p, 'ogre', 15520.0, - 17632.0, 0.206, 'ogre')
     set u=BlzCreateUnitWithSkin(p, 'n09R', - 8448.0, 3008.0, 270.000, 'n09R')
+    set gg_unit_h03V_3538=BlzCreateUnitWithSkin(p, 'h03V', 4256.0, - 21728.0, 270.000, 'h03V')
+    call SetUnitAcquireRange(gg_unit_h03V_3538, 200.0)
+    set gg_unit_h03V_3539=BlzCreateUnitWithSkin(p, 'h03V', - 23712.0, 9056.0, 270.000, 'h03V')
+    call SetUnitAcquireRange(gg_unit_h03V_3539, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'osld', - 3264.0, - 27968.0, 270.000, 'osld')
     set u=BlzCreateUnitWithSkin(p, 'nct2', - 13856.0, - 5344.0, 270.000, 'nct2')
     set u=BlzCreateUnitWithSkin(p, 'nct1', - 13408.0, - 5088.0, 270.000, 'nct1')
@@ -6513,20 +6842,12 @@ function CreateNeutralHostileBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'o002', - 16704.0, 21440.0, 270.000, 'o002')
     set u=BlzCreateUnitWithSkin(p, 'n05C', - 8768.0, - 13312.0, 270.000, 'n05C')
     set u=BlzCreateUnitWithSkin(p, 'n05G', - 20608.0, - 11648.0, 270.000, 'n05G')
-    set u=BlzCreateUnitWithSkin(p, 'n05N', - 16320.0, - 1152.0, 270.000, 'n05N')
-    set u=BlzCreateUnitWithSkin(p, 'n06V', - 20672.0, - 28736.0, 270.000, 'n06V')
-    set gg_unit_h03V_3785=BlzCreateUnitWithSkin(p, 'h03V', 5664.0, - 992.0, 270.000, 'h03V')
-    set gg_unit_h03V_3800=BlzCreateUnitWithSkin(p, 'h03V', 8288.0, 1696.0, 270.000, 'h03V')
-    call SetUnitAcquireRange(gg_unit_h03V_3800, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'n084', - 22016.0, - 22016.0, 270.000, 'n084')
-    set gg_unit_h03V_3812=BlzCreateUnitWithSkin(p, 'h03V', 6944.0, 2592.0, 270.000, 'h03V')
-    set u=BlzCreateUnitWithSkin(p, 'n06R', - 24000.0, - 21760.0, 270.000, 'n06R')
+    set u=BlzCreateUnitWithSkin(p, 'n05N', - 15616.0, - 2176.0, 270.000, 'n05N')
+    set u=BlzCreateUnitWithSkin(p, 'o031', 1760.0, - 27296.0, 270.000, 'o031')
+    set u=BlzCreateUnitWithSkin(p, 'o033', - 64.0, - 26752.0, 270.000, 'o033')
     set u=BlzCreateUnitWithSkin(p, 'n092', - 11504.8, - 12850.8, 270.000, 'n092')
     set u=BlzCreateUnitWithSkin(p, 'n09G', - 15488.0, - 6144.0, 270.000, 'n09G')
     set u=BlzCreateUnitWithSkin(p, 'n0A9', 15488.0, - 18176.0, 270.000, 'n0A9')
-    set gg_unit_h03V_3969=BlzCreateUnitWithSkin(p, 'h03V', - 24352.0, - 18080.0, 270.000, 'h03V')
-    set gg_unit_h03V_3970=BlzCreateUnitWithSkin(p, 'h03V', - 20512.0, - 23648.0, 270.000, 'h03V')
-    set gg_unit_h03V_3971=BlzCreateUnitWithSkin(p, 'h03V', - 28448.0, - 20640.0, 270.000, 'h03V')
     set u=BlzCreateUnitWithSkin(p, 'h016', 13824.0, 2880.0, 270.000, 'h016')
     set u=BlzCreateUnitWithSkin(p, 'hhou', 16224.0, 1760.0, 170.300, 'hhou')
 endfunction
@@ -6555,7 +6876,7 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ncim', - 15632.1, - 5973.5, 299.090, 'ncim')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ndrw', - 3170.1, - 26229.9, 95.000, 'ndrw')
+    set u=BlzCreateUnitWithSkin(p, 'ndrw', - 3813.6, - 26230.5, 95.000, 'ndrw')
     call SetUnitAcquireRange(u, 200.0)
     set gg_unit_nrzm_0113=BlzCreateUnitWithSkin(p, 'nrzm', - 11869.2, - 2033.5, 267.504, 'nrzm')
     call SetUnitState(gg_unit_nrzm_0113, UNIT_STATE_MANA, 400)
@@ -6572,15 +6893,15 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nrzs', - 11929.9, - 2280.9, 39.800, 'nrzs')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ncer', - 12780.9, - 9614.9, 145.925, 'ncer')
+    set u=BlzCreateUnitWithSkin(p, 'ncer', - 13477.5, - 9950.3, 145.925, 'ncer')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ncer', - 12984.9, - 9427.3, 296.816, 'ncer')
+    set u=BlzCreateUnitWithSkin(p, 'ncer', - 13681.5, - 9762.7, 296.816, 'ncer')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ncea', - 12800.1, - 9473.6, 349.365, 'ncea')
+    set u=BlzCreateUnitWithSkin(p, 'ncea', - 13496.6, - 9809.0, 349.365, 'ncea')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ncea', - 13555.6, - 9983.1, 227.677, 'ncea')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ncea', - 13412.3, - 8659.4, 313.197, 'ncea')
+    set u=BlzCreateUnitWithSkin(p, 'ncea', - 13067.0, - 4862.8, 313.197, 'ncea')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'n02H', - 1149.9, 23760.7, 3.236, 'n02H')
     call SetUnitState(u, UNIT_STATE_MANA, 300)
@@ -6588,11 +6909,11 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'n02G', - 888.2, 23577.5, 42.992, 'n02G')
     call SetUnitState(u, UNIT_STATE_MANA, 400)
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ncim', - 13332.4, - 8417.8, 264.097, 'ncim')
+    set u=BlzCreateUnitWithSkin(p, 'ncim', - 12902.3, - 4703.4, 264.097, 'ncim')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ncen', - 13218.4, - 8550.0, 254.561, 'ncen')
+    set u=BlzCreateUnitWithSkin(p, 'ncen', - 12788.3, - 4835.6, 254.561, 'ncen')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ncer', - 12730.4, - 8730.3, 222.310, 'ncer')
+    set u=BlzCreateUnitWithSkin(p, 'ncer', - 12584.9, - 10624.4, 3.344, 'ncer')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ncer', - 13488.5, - 10124.0, 59.800, 'ncer')
     call SetUnitAcquireRange(u, 200.0)
@@ -6657,8 +6978,6 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ndtb', - 1497.2, - 13741.5, 68.089, 'ndtb')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'u00V', 4316.7, - 10538.1, 5.180, 'u00V')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nnsw', - 7358.7, 13903.1, 88.848, 'nnsw')
     call SetUnitState(u, UNIT_STATE_MANA, 400)
     call SetUnitAcquireRange(u, 200.0)
@@ -6672,19 +6991,17 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nfpl', 5339.9, 18289.4, 180.033, 'nfpl')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nslf', - 1544.1, - 25288.2, 268.067, 'nslf')
+    set u=BlzCreateUnitWithSkin(p, 'nslf', - 2129.4, - 25698.3, 268.067, 'nslf')
     call SetUnitState(u, UNIT_STATE_MANA, 300)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nwiz', 6213.0, 8623.4, 300.714, 'nwiz')
     call SetUnitState(u, UNIT_STATE_MANA, 140)
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'u00V', 4814.3, - 10874.0, 90.192, 'u00V')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nhrq', - 18710.6, 1497.8, 316.794, 'nhrq')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nogr', - 4624.1, - 28188.9, 270.000, 'nogr')
+    set u=BlzCreateUnitWithSkin(p, 'nogr', - 3536.1, - 29148.9, 270.000, 'nogr')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ndrh', - 3271.7, - 26174.9, 51.545, 'ndrh')
+    set u=BlzCreateUnitWithSkin(p, 'ndrh', - 3915.2, - 26175.6, 51.545, 'ndrh')
     call SetUnitState(u, UNIT_STATE_MANA, 400)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nhrh', - 18683.7, 1247.5, 42.255, 'nhrh')
@@ -6695,17 +7012,11 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     call IssueImmediateOrder(u, "")
     call IssueImmediateOrder(u, "slowon")
-    set u=BlzCreateUnitWithSkin(p, 'o02J', - 21930.7, - 24595.1, 294.617, 'o02J')
+    set u=BlzCreateUnitWithSkin(p, 'nwnr', - 9023.3, 8177.2, 244.000, 'nwnr')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', - 22035.6, - 24718.7, 342.641, 'nwlt')
+    set u=BlzCreateUnitWithSkin(p, 'nwen', - 9154.2, 8072.0, 350.075, 'nwen')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'o02J', - 21718.6, - 24640.5, 215.060, 'o02J')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwnr', - 8613.8, 8051.3, 244.000, 'nwnr')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwen', - 8862.4, 7887.4, 350.075, 'nwen')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwen', - 8666.8, 7798.5, 130.728, 'nwen')
+    set u=BlzCreateUnitWithSkin(p, 'nwen', - 8966.9, 8005.0, 130.728, 'nwen')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'n0AI', 10360.0, - 23119.2, 213.490, 'n0AI')
     call SetUnitAcquireRange(u, 200.0)
@@ -6803,8 +7114,6 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmam', 1094.2, 16232.6, 30.944, 'nmam')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'o02J', - 21481.6, - 24636.7, 215.060, 'o02J')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nomg', 20164.5, - 1170.8, 86.360, 'nomg')
     call SetUnitAcquireRange(u, 200.0)
     call IssueImmediateOrder(u, "bloodluston")
@@ -6827,8 +7136,6 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ntka', 3346.5, 14224.7, 292.542, 'ntka')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ogru', 5238.9, - 12555.0, 94.233, 'ogru')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nhrw', - 18847.3, 1328.5, 317.559, 'nhrw')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ntka', - 2047.6, 16592.5, 163.702, 'ntka')
@@ -6839,7 +7146,7 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'ntkh', - 1853.7, 16843.4, 185.008, 'ntkh')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nomg', - 4612.2, - 27975.8, 292.530, 'nomg')
+    set u=BlzCreateUnitWithSkin(p, 'nomg', - 3524.2, - 28935.8, 292.530, 'nomg')
     call SetUnitAcquireRange(u, 200.0)
     call IssueImmediateOrder(u, "bloodluston")
     set u=BlzCreateUnitWithSkin(p, 'nitt', 5821.3, 21820.8, 306.680, 'nitt')
@@ -6847,7 +7154,7 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nnwr', - 3145.6, 17653.2, 225.605, 'nnwr')
     call SetUnitState(u, UNIT_STATE_MANA, 400)
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nitr', 4455.8, 20379.6, 220.640, 'nitr')
+    set u=BlzCreateUnitWithSkin(p, 'nitr', 4609.1, 20404.2, 220.640, 'nitr')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nwwg', 6460.2, 14181.8, 1.160, 'nwwg')
     call SetUnitAcquireRange(u, 200.0)
@@ -6861,13 +7168,14 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitState(gg_unit_nadr_0658, UNIT_STATE_MANA, 800)
     call SetUnitAcquireRange(gg_unit_nadr_0658, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nhyd', - 2768.3, - 24998.6, 171.952, 'nhyd')
+    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmdr', 1239.4, 15972.7, 112.626, 'nmdr')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nbdw', - 839.0, 17326.0, 231.562, 'nbdw')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nhrr', - 18393.6, 1444.1, 144.244, 'nhrr')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nith', 4506.4, 20479.9, 254.340, 'nith')
+    set u=BlzCreateUnitWithSkin(p, 'nith', 4659.7, 20504.6, 254.340, 'nith')
     call SetUnitAcquireRange(u, 200.0)
     call IssueImmediateOrder(u, "frostarmoron")
     set gg_unit_ubdr_0668=BlzCreateUnitWithSkin(p, 'ubdr', - 2295.0, 18899.4, 329.940, 'ubdr')
@@ -6884,17 +7192,11 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nban', 12990.7, 5536.0, 247.229, 'nban')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nitr', 4556.1, 20374.7, 215.669, 'nitr')
+    set u=BlzCreateUnitWithSkin(p, 'nitr', 4709.4, 20399.3, 215.669, 'nitr')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nhrr', - 18446.4, 1665.4, 206.670, 'nhrr')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', - 23858.2, - 21741.9, 237.367, 'nwlt')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlg', - 24074.7, - 21600.1, 258.322, 'nwlg')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nfpl', 5622.4, 18453.7, 335.020, 'nfpl')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ocat', 4576.7, - 10658.6, 235.130, 'ocat')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nfpt', 4116.9, 17936.5, 289.789, 'nfpt')
     call SetUnitState(u, UNIT_STATE_MANA, 400)
@@ -6916,8 +7218,6 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nwen', 5763.8, 17163.4, 295.014, 'nwen')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ndrw', - 1282.6, - 28475.0, 262.416, 'ndrw')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'n02H', - 218.1, 20030.6, 141.475, 'n02H')
     call SetUnitState(u, UNIT_STATE_MANA, 300)
     call SetUnitAcquireRange(u, 200.0)
@@ -6932,8 +7232,6 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nadw', - 9589.1, 17741.3, 288.897, 'nadw')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', - 23943.6, - 21571.8, 237.367, 'nwlt')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nnwa', - 3656.6, 17503.6, 321.777, 'nnwa')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmyr', - 7220.0, 14005.3, 83.547, 'nmyr')
@@ -6941,15 +7239,13 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'n02G', - 277.1, 20471.2, 268.626, 'n02G')
     call SetUnitState(u, UNIT_STATE_MANA, 400)
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlg', - 23933.0, - 21944.6, 97.188, 'nwlg')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nwwg', 6678.6, 14002.0, 111.524, 'nwwg')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nspd', - 2716.7, 17470.0, 130.715, 'nspd')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmgd', 12050.6, 23096.2, 295.627, 'nmgd')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nitr', 4560.6, 20260.3, 215.340, 'nitr')
+    set u=BlzCreateUnitWithSkin(p, 'nitr', 4713.9, 20284.9, 215.340, 'nitr')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nenp', - 15160.6, 7576.2, 249.830, 'nenp')
     call SetUnitAcquireRange(u, 200.0)
@@ -7019,7 +7315,7 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'ngrk', - 18295.0, - 1690.6, 335.190, 'ngrk')
     call SetUnitAcquireRange(u, 200.0)
     call IssueImmediateOrder(u, "slowon")
-    set u=BlzCreateUnitWithSkin(p, 'nslf', - 1393.8, - 25664.5, 32.556, 'nslf')
+    set u=BlzCreateUnitWithSkin(p, 'nslf', - 2083.7, - 25910.4, 32.556, 'nslf')
     call SetUnitState(u, UNIT_STATE_MANA, 300)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nsty', - 17555.8, - 4490.7, 210.200, 'nsty')
@@ -7035,8 +7331,6 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitState(u, UNIT_STATE_MANA, 400)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nchg', 194.3, - 31206.4, 45.820, 'nchg')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwld', 7763.1, 4158.9, 171.842, 'nwld')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nban', 11978.8, 7477.4, 321.184, 'nban')
     call SetUnitAcquireRange(u, 200.0)
@@ -7085,17 +7379,6 @@ function CreateNeutralHostile takes nothing returns nothing
     call IssueImmediateOrder(u, "")
     call IssueImmediateOrder(u, "")
     call IssueImmediateOrder(u, "")
-    set u=BlzCreateUnitWithSkin(p, 'nwlg', 7525.0, 4333.6, 256.066, 'nwlg')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', 7347.3, 4152.3, 345.575, 'nwlt')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', 7710.4, 4043.3, 189.344, 'nwlt')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'O038', - 21455.6, - 24846.7, 236.270, 'O038')
-    call SetHeroLevel(u, 11, false)
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlg', - 21741.7, - 25041.3, 97.188, 'nwlg')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ogru', - 3145.1, - 27790.7, 193.266, 'ogru')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nrog', 13509.2, 6308.4, 306.260, 'nrog')
@@ -7103,12 +7386,8 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nspr', - 14537.0, 9580.4, 355.000, 'nspr')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nhyh', - 3008.7, - 24999.1, 64.920, 'nhyh')
-    set u=BlzCreateUnitWithSkin(p, 'nfgb', 2637.2, - 22812.7, 157.850, 'nfgb')
     call SetUnitAcquireRange(u, 200.0)
-    set gg_unit_o02J_0984=BlzCreateUnitWithSkin(p, 'o02J', 7677.4, 4325.8, 215.060, 'o02J')
-    call SetUnitAcquireRange(gg_unit_o02J_0984, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ners', 2991.0, - 20640.7, 156.264, 'ners')
-    call SetUnitState(u, UNIT_STATE_MANA, 200)
+    set u=BlzCreateUnitWithSkin(p, 'nvdl', 2807.4, - 21669.4, 130.807, 'nvdl')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nsty', - 17413.2, - 4233.7, 210.200, 'nsty')
     call SetUnitAcquireRange(u, 200.0)
@@ -7193,8 +7472,6 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitState(u, UNIT_STATE_MANA, 200)
     call SetUnitAcquireRange(u, 200.0)
     call IssueImmediateOrder(u, "healon")
-    set u=BlzCreateUnitWithSkin(p, 'nwlg', - 21893.8, - 24877.3, 2.351, 'nwlg')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'osp4', 22404.6, 12644.0, 243.320, 'osp4')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmgw', 12332.8, 23199.7, 100.923, 'nmgw')
@@ -7226,8 +7503,6 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nnwl', - 11447.2, - 28956.3, 211.372, 'nnwl')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwld', - 22064.1, - 24898.8, 113.613, 'nwld')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nspd', - 11283.6, - 29078.3, 267.976, 'nspd')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nspd', - 11570.6, - 29162.7, 192.278, 'nspd')
@@ -7240,6 +7515,8 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nnwa', - 12046.3, - 30248.4, 223.590, 'nnwa')
     call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nchg', 1577.8, - 26296.2, 4.346, 'nchg')
+    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nnwl', - 11649.4, - 30808.5, 22.424, 'nnwl')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ndrh', - 2421.5, - 29582.4, 282.973, 'ndrh')
@@ -7249,11 +7526,7 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nspd', - 11827.4, - 30113.1, 143.420, 'nspd')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwld', - 21678.9, - 24781.7, 227.215, 'nwld')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ndtt', - 11544.8, - 13425.8, 344.676, 'ndtt')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', - 21565.2, - 24858.3, 237.367, 'nwlt')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nspd', - 11850.2, - 30492.9, 203.715, 'nspd')
     call SetUnitAcquireRange(u, 200.0)
@@ -7262,8 +7535,6 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nspd', - 11166.2, - 30506.2, 193.321, 'nspd')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nnws', - 13060.1, - 27317.5, 325.790, 'nnws')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'o02J', - 21341.6, - 25024.2, 215.060, 'o02J')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nfot', - 9501.2, - 28796.6, 55.999, 'nfot')
     call SetUnitAcquireRange(u, 200.0)
@@ -7324,8 +7595,6 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nwen', - 371.7, 22663.1, 231.134, 'nwen')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', - 21824.9, - 24677.6, 254.100, 'nwlt')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nwen', - 400.3, 22812.7, 306.259, 'nwen')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nftb', 20388.4, 11419.6, 135.279, 'nftb')
@@ -7384,7 +7653,7 @@ function CreateNeutralHostile takes nothing returns nothing
     call TriggerAddAction(t, function Unit002664_DropItems)
     set u=BlzCreateUnitWithSkin(p, 'nwlt', - 16986.2, 5419.3, 100.000, 'nwlt')
     call SetUnitAcquireRange(u, 200.0)
-    set gg_unit_N00D_1457=BlzCreateUnitWithSkin(p, 'N00D', 17141.3, - 29064.3, 344.950, 'N00D')
+    set gg_unit_N00D_1457=BlzCreateUnitWithSkin(p, 'N00D', 17141.3, - 29064.3, 299.141, 'N00D')
     call SetHeroLevel(gg_unit_N00D_1457, 12, false)
     call SetHeroStr(gg_unit_N00D_1457, 75, true)
     call SetHeroAgi(gg_unit_N00D_1457, 15, true)
@@ -7403,38 +7672,19 @@ function CreateNeutralHostile takes nothing returns nothing
     call IssueImmediateOrder(u, "")
     call IssueImmediateOrder(u, "")
     call IssueImmediateOrder(u, "")
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', - 21607.2, - 25039.7, 137.322, 'nwlt')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ndtr', 17361.0, - 15669.5, 212.764, 'ndtr')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ogru', 4883.2, - 10620.5, 213.976, 'ogru')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ogru', 4259.4, - 10667.8, 332.061, 'ogru')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nchw', 4692.2, - 10765.0, 23.775, 'nchw')
     call SetUnitAcquireRange(u, 200.0)
     set gg_unit_nitw_1513=BlzCreateUnitWithSkin(p, 'nitw', 8037.4, - 6179.3, 300.000, 'nitw')
     call SetUnitAcquireRange(gg_unit_nitw_1513, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nitt', 7915.6, - 6198.8, 300.000, 'nitt')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'orai', 4511.1, - 10565.3, 250.024, 'orai')
-    call SetUnitAcquireRange(u, 200.0)
-    set gg_unit_nhmc_1519=BlzCreateUnitWithSkin(p, 'nhmc', 8502.0, 11033.2, 289.600, 'nhmc')
     set u=BlzCreateUnitWithSkin(p, 'nslf', - 13954.9, - 12477.6, 212.021, 'nslf')
     call SetUnitState(u, UNIT_STATE_MANA, 300)
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nftr', 4947.7, - 10787.7, 154.462, 'nftr')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nfrs', - 7403.1, 21012.6, 190.581, 'nfrs')
     call SetUnitState(u, UNIT_STATE_MANA, 300)
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nftr', 4370.3, - 10621.1, 269.261, 'nftr')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ogru', 5362.3, - 12559.0, 94.233, 'ogru')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'orai', 5289.2, - 12212.8, 283.906, 'orai')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nftr', 5417.1, - 12275.1, 256.784, 'nftr')
+    set u=BlzCreateUnitWithSkin(p, 'nfsp', 4853.0, - 14342.7, 105.860, 'nfsp')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nftr', 4933.3, - 14360.3, 154.806, 'nftr')
     call SetUnitAcquireRange(u, 200.0)
@@ -7445,23 +7695,15 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nsrn', - 786.6, 6462.2, 99.529, 'nsrn')
     call SetUnitState(u, UNIT_STATE_MANA, 350)
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ogru', 4792.6, - 14294.5, 334.753, 'ogru')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'n04O', - 9870.9, - 23472.2, 0.000, 'n04O')
     call SetUnitState(u, UNIT_STATE_MANA, 500)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nnwa', - 12709.0, - 29139.1, 194.706, 'nnwa')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ogru', 6289.4, - 12483.3, 15.513, 'ogru')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ogru', 6334.2, - 12633.7, 141.464, 'ogru')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'orai', 6384.3, - 12493.6, 185.850, 'orai')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'n04O', - 9861.4, - 23832.2, 0.000, 'n04O')
     call SetUnitState(u, UNIT_STATE_MANA, 500)
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'u00V', 5238.0, - 12405.0, 5.180, 'u00V')
+    set u=BlzCreateUnitWithSkin(p, 'nftr', 6480.4, - 12533.8, 246.222, 'nftr')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nitt', 8090.4, - 6043.9, 310.000, 'nitt')
     call SetUnitAcquireRange(u, 200.0)
@@ -7497,8 +7739,6 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nvdg', 3002.4, - 20191.8, 274.156, 'nvdg')
     call SetUnitState(u, UNIT_STATE_MANA, 400)
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nfgu', - 4079.7, - 21844.3, 262.450, 'nfgu')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nerd', - 3948.7, - 23573.3, 97.874, 'nerd')
     call SetUnitState(u, UNIT_STATE_MANA, 300)
     call SetUnitAcquireRange(u, 200.0)
@@ -7507,14 +7747,14 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nsll', - 10451.0, - 15212.8, 271.290, 'nsll')
     call SetUnitAcquireRange(u, 200.0)
     call IssueImmediateOrder(u, "immolation")
-    set u=BlzCreateUnitWithSkin(p, 'nrzg', - 13374.7, - 7143.1, 32.960, 'nrzg')
+    set u=BlzCreateUnitWithSkin(p, 'nrzg', - 13037.9, - 8790.8, 32.960, 'nrzg')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nslm', 2554.7, - 31314.4, 280.413, 'nslm')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nndk', - 49.5, - 19771.2, 210.110, 'nndk')
+    set u=BlzCreateUnitWithSkin(p, 'nvdl', 2686.7, - 21629.7, 310.439, 'nvdl')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nndk', - 88.8, - 20079.5, 136.621, 'nndk')
+    set u=BlzCreateUnitWithSkin(p, 'nvdl', - 54.7, - 19748.6, 130.807, 'nvdl')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ndrd', - 2604.0, - 29447.6, 215.430, 'ndrd')
     call SetUnitState(u, UNIT_STATE_MANA, 300)
@@ -7526,25 +7766,18 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nogo', - 10966.9, - 8557.0, 313.647, 'nogo')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ners', 3168.6, - 20522.3, 180.881, 'ners')
-    call SetUnitState(u, UNIT_STATE_MANA, 200)
+    set u=BlzCreateUnitWithSkin(p, 'nvdl', - 175.4, - 19708.8, 310.439, 'nvdl')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nfgb', 2823.3, - 20303.5, 157.845, 'nfgb')
+    set u=BlzCreateUnitWithSkin(p, 'nfgb', 3118.5, - 20540.7, 157.845, 'nfgb')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nogr', - 1999.8, - 21070.5, 102.189, 'nogr')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nltc', - 4215.1, - 25158.7, 64.468, 'nltc')
     call SetUnitState(u, UNIT_STATE_MANA, 300)
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ndqp', 2532.1, - 23021.6, 60.680, 'ndqp')
-    call SetUnitState(u, UNIT_STATE_MANA, 400)
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nitr', 10635.1, - 7437.5, 69.782, 'nitr')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nitt', 10791.4, - 7353.5, 161.801, 'nitt')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ners', 2733.8, - 23118.1, 85.246, 'ners')
-    call SetUnitState(u, UNIT_STATE_MANA, 200)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nltc', - 3928.6, - 25047.8, 232.578, 'nltc')
     call SetUnitState(u, UNIT_STATE_MANA, 300)
@@ -7552,16 +7785,10 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nvdg', 1206.6, - 19876.8, 208.890, 'nvdg')
     call SetUnitState(u, UNIT_STATE_MANA, 400)
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nerd', - 3721.7, - 21766.1, 235.577, 'nerd')
-    call SetUnitState(u, UNIT_STATE_MANA, 300)
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nogm', - 3046.7, - 21836.0, 262.429, 'nogm')
     call SetUnitAcquireRange(u, 200.0)
     set gg_unit_nith_1625=BlzCreateUnitWithSkin(p, 'nith', 10677.5, - 7183.1, 246.574, 'nith')
     call SetUnitAcquireRange(gg_unit_nith_1625, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ndqv', 2839.5, - 22897.5, 290.910, 'ndqv')
-    call SetUnitState(u, UNIT_STATE_MANA, 200)
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nitr', 10504.1, - 7244.8, 335.479, 'nitr')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'efon', - 12894.7, - 12843.4, 247.013, 'efon')
@@ -7577,9 +7804,9 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nspg', 4853.9, 16492.5, 267.280, 'nspg')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nbld', 2683.4, - 338.8, 276.544, 'nbld')
+    set u=BlzCreateUnitWithSkin(p, 'nsrn', 2235.3, - 12249.7, 69.820, 'nsrn')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nbrg', 2409.0, - 409.7, 255.561, 'nbrg')
+    set u=BlzCreateUnitWithSkin(p, 'nsra', 2132.6, - 12180.1, 35.421, 'nsra')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nomg', 15582.9, - 18378.1, 179.805, 'nomg')
     call SetUnitState(u, UNIT_STATE_MANA, 400)
@@ -7587,8 +7814,6 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'ncen', - 12133.5, - 10581.5, 230.092, 'ncen')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmrr', - 18525.1, 5355.5, 20.110, 'nmrr')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nban', 2308.3, - 429.0, 305.340, 'nban')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nftb', 20563.4, 15264.8, 299.746, 'nftb')
     call SetUnitAcquireRange(u, 200.0)
@@ -7645,12 +7870,12 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'ndth', - 11615.2, - 12529.9, 267.180, 'ndth')
     call SetUnitAcquireRange(u, 200.0)
     call IssueImmediateOrder(u, "healon")
-    set u=BlzCreateUnitWithSkin(p, 'nrzm', - 13359.0, - 6970.5, 279.962, 'nrzm')
+    set u=BlzCreateUnitWithSkin(p, 'nrzm', - 13003.7, - 8557.9, 279.962, 'nrzm')
     call SetUnitState(u, UNIT_STATE_MANA, 400)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nith', 7914.9, - 6099.7, 310.000, 'nith')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nrzb', - 13144.0, - 7117.9, 193.696, 'nrzb')
+    set u=BlzCreateUnitWithSkin(p, 'nrzb', - 12771.3, - 8840.9, 102.263, 'nrzb')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nhrr', - 18801.3, - 204.6, 43.716, 'nhrr')
     call SetUnitAcquireRange(u, 200.0)
@@ -7670,7 +7895,7 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nftr', 21817.2, 13063.0, 250.367, 'nftr')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nrzt', - 13190.2, - 6956.1, 253.583, 'nrzt')
+    set u=BlzCreateUnitWithSkin(p, 'nrzt', - 12681.2, - 8644.1, 175.616, 'nrzt')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nkot', - 15341.9, - 732.4, 329.007, 'nkot')
     call SetUnitAcquireRange(u, 200.0)
@@ -7708,40 +7933,38 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nskg', - 1948.8, - 12209.6, 144.343, 'nskg')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'Nrob', 1246.9, - 21956.8, 180.000, 'Nrob')
+    set u=BlzCreateUnitWithSkin(p, 'Nrob', 1287.6, - 21904.6, 180.000, 'Nrob')
     call SetUnitAcquireRange(u, 200.0)
     call SelectHeroSkill(u, 'ANsy')
     call UnitAddItemToSlotById(u, 'I01P', 0)
     set t=CreateTrigger()
     call TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
     call TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-    call TriggerAddAction(t, function Unit002830_DropItems)
+    call TriggerAddAction(t, function Unit003020_DropItems)
     set u=BlzCreateUnitWithSkin(p, 'nskg', - 2116.5, - 12307.8, 49.231, 'nskg')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nskf', - 2073.5, - 12158.0, 287.688, 'nskf')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nomg', - 10673.4, - 8801.9, 156.033, 'nomg')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nfrb', - 6625.2, 1713.5, 43.840, 'nfrb')
+    set u=BlzCreateUnitWithSkin(p, 'nfrb', - 6308.0, 1326.3, 43.840, 'nfrb')
     call SetUnitState(u, UNIT_STATE_MANA, 400)
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nfre', - 6384.1, 1823.0, 112.489, 'nfre')
+    set u=BlzCreateUnitWithSkin(p, 'nfre', - 6142.9, 1307.0, 112.489, 'nfre')
     call SetUnitState(u, UNIT_STATE_MANA, 500)
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nfrl', - 9513.4, 9092.4, 151.640, 'nfrl')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nnwa', - 13556.8, - 30323.5, 277.798, 'nnwa')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nnsw', - 5709.3, 5512.0, 60.000, 'nnsw')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ndqp', 2803.1, - 20530.8, 60.680, 'ndqp')
+    set u=BlzCreateUnitWithSkin(p, 'ndqp', 2806.0, - 20470.7, 7.260, 'ndqp')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'npfm', - 4102.2, - 23587.5, 92.521, 'npfm')
     call SetUnitState(u, UNIT_STATE_MANA, 300)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ndtr', 17355.2, - 15779.1, 0.220, 'ndtr')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nfrs', - 6651.5, 1881.3, 263.159, 'nfrs')
+    set u=BlzCreateUnitWithSkin(p, 'nfrs', - 6256.5, 1550.5, 263.159, 'nfrs')
     call SetUnitState(u, UNIT_STATE_MANA, 300)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmrr', - 6369.3, 894.1, 43.960, 'nmrr')
@@ -7778,9 +8001,6 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nspd', - 13976.3, - 29094.8, 316.811, 'nspd')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nftr', 20777.5, 11651.7, 288.100, 'nftr')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nbal', - 3921.0, - 21681.6, 265.462, 'nbal')
-    call SetUnitState(u, UNIT_STATE_MANA, 500)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nbzw', - 8886.2, - 15767.1, 182.790, 'nbzw')
     call SetUnitAcquireRange(u, 200.0)
@@ -7846,14 +8066,10 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ngnb', 7596.3, 5857.2, 302.100, 'ngnb')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nenf', 2804.7, - 790.5, 248.156, 'nenf')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nlds', - 1863.2, 7677.1, 275.381, 'nlds')
     call SetUnitState(u, UNIT_STATE_MANA, 300)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ngna', 7573.0, 5670.1, 50.420, 'ngna')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'n0AI', 1107.3, - 21823.7, 213.490, 'n0AI')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ngna', 7658.8, 5658.8, 105.540, 'ngna')
     call SetUnitAcquireRange(u, 200.0)
@@ -7935,8 +8151,6 @@ function CreateNeutralHostile takes nothing returns nothing
     call TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
     call TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
     call TriggerAddAction(t, function Unit001185_DropItems)
-    set u=BlzCreateUnitWithSkin(p, 'nenf', 2573.8, - 789.6, 299.837, 'nenf')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nbrg', 6938.9, - 14640.7, 350.244, 'nbrg')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nspb', 5744.3, 7776.5, 199.661, 'nspb')
@@ -7972,14 +8186,12 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nfov', - 8523.9, - 23578.8, 140.610, 'nfov')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwzr', 2913.3, - 407.7, 259.648, 'nwzr')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmrl', - 5710.3, 19966.0, 134.554, 'nmrl')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'hrif', 18707.6, - 30565.5, 95.394, 'hrif')
     call SetUnitAcquireRange(u, 200.0)
     call IssueImmediateOrder(u, "")
-    set u=BlzCreateUnitWithSkin(p, 'ndtt', - 11697.5, - 13604.9, 339.708, 'ndtt')
+    set u=BlzCreateUnitWithSkin(p, 'ndtt', - 11595.9, - 13662.1, 339.708, 'ndtt')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nwlg', - 13723.9, 518.9, 68.293, 'nwlg')
     call SetUnitAcquireRange(u, 200.0)
@@ -7988,7 +8200,7 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nmsn', - 19079.9, - 10014.0, 260.604, 'nmsn')
     call SetUnitState(u, UNIT_STATE_MANA, 300)
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nstw', - 16410.8, - 1308.0, 73.960, 'nstw')
+    set u=BlzCreateUnitWithSkin(p, 'nstw', - 15845.5, - 2291.7, 73.960, 'nstw')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmyr', - 15818.5, 11292.9, 137.430, 'nmyr')
     call SetUnitAcquireRange(u, 200.0)
@@ -8029,19 +8241,15 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nwlg', 5815.8, 6529.4, 80.778, 'nwlg')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nndk', - 3690.4, - 20912.2, 6.610, 'nndk')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nnwr', - 12024.1, - 27112.7, 255.636, 'nnwr')
     call SetUnitState(u, UNIT_STATE_MANA, 400)
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nndk', - 3394.9, - 20620.8, 300.000, 'nndk')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmmu', - 13195.9, 22862.8, 287.050, 'nmmu')
     call SetUnitState(u, UNIT_STATE_MANA, 400)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nwlt', - 13615.0, 592.8, 301.870, 'nwlt')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nthl', - 16485.6, - 977.9, 285.650, 'nthl')
+    set u=BlzCreateUnitWithSkin(p, 'nthl', - 15510.6, - 2034.6, 285.650, 'nthl')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nogr', 17209.1, - 5143.1, 198.520, 'nogr')
     call SetUnitAcquireRange(u, 200.0)
@@ -8104,10 +8312,6 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmtw', - 19216.5, - 7928.8, 252.408, 'nmtw')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nhfp', 3186.4, - 478.0, 19.534, 'nhfp')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nhfp', 3229.5, - 392.5, 309.505, 'nhfp')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'n04H', - 8635.8, - 23496.5, 146.694, 'n04H')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nvdl', - 9141.3, - 23561.7, 144.991, 'nvdl')
@@ -8116,14 +8320,7 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nchg', 873.9, - 26084.1, 168.989, 'nchg')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwiz', 2386.0, - 518.4, 119.788, 'nwiz')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nass', 2681.3, - 584.7, 268.323, 'nass')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'njg1', - 11610.5, - 6274.6, 222.667, 'njg1')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nfra', - 20804.1, 7926.0, 60.910, 'nfra')
-    call SetUnitState(u, UNIT_STATE_MANA, 500)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'njga', - 11545.8, - 6557.0, 94.936, 'njga')
     call SetUnitAcquireRange(u, 200.0)
@@ -8149,7 +8346,7 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmrl', - 17159.1, 8524.3, 194.486, 'nmrl')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ncen', - 14328.4, - 2494.5, 9.042, 'ncen')
+    set u=BlzCreateUnitWithSkin(p, 'ncen', - 14190.3, - 2803.4, 9.042, 'ncen')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ncnk', - 12391.4, - 10367.1, 242.954, 'ncnk')
     call SetUnitState(u, UNIT_STATE_MANA, 500)
@@ -8160,9 +8357,6 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmrr', - 17417.9, 8516.1, 311.813, 'nmrr')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nfre', - 20879.3, 8152.9, 332.347, 'nfre')
-    call SetUnitState(u, UNIT_STATE_MANA, 500)
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'otbk', 13860.6, - 19195.5, 169.992, 'otbk')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmbg', 1210.4, 8219.3, 114.184, 'nmbg')
@@ -8172,14 +8366,9 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ohun', 11346.0, - 19251.1, 90.000, 'ohun')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nfrb', - 20668.7, 8641.8, 45.496, 'nfrb')
-    call SetUnitState(u, UNIT_STATE_MANA, 400)
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmrl', - 17303.0, 8381.2, 242.540, 'nmrl')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nenc', - 19432.9, 8087.8, 213.449, 'nenc')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'o02J', - 21806.7, - 21954.0, 215.060, 'o02J')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmrr', - 9682.5, - 6343.8, 84.327, 'nmrr')
     call SetUnitAcquireRange(u, 200.0)
@@ -8227,10 +8416,6 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nchg', 707.9, - 26371.2, 23.923, 'nchg')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nbrg', 2617.2, - 689.8, 272.740, 'nbrg')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nbrg', 2760.8, - 697.2, 283.159, 'nbrg')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ngnb', 17059.3, - 14027.5, 55.000, 'ngnb')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmcf', - 18488.4, 5526.9, 282.980, 'nmcf')
@@ -8239,7 +8424,7 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ngnv', 17308.9, - 13959.4, 135.000, 'ngnv')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ncks', - 14644.9, - 2499.7, 296.728, 'ncks')
+    set u=BlzCreateUnitWithSkin(p, 'ncks', - 14169.6, - 2542.1, 296.728, 'ncks')
     call SetUnitState(u, UNIT_STATE_MANA, 400)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nftk', 14110.7, - 19364.6, 180.492, 'nftk')
@@ -8247,8 +8432,6 @@ function CreateNeutralHostile takes nothing returns nothing
     call IssueImmediateOrder(u, "")
     set gg_unit_ndtw_2405=BlzCreateUnitWithSkin(p, 'ndtw', - 1384.0, - 13488.2, 201.375, 'ndtw')
     call SetUnitAcquireRange(gg_unit_ndtw_2405, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nban', 2866.1, - 906.0, 235.884, 'nban')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ndtb', - 1594.4, - 13400.6, 330.721, 'ndtb')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ndtt', - 2382.0, - 13594.3, 99.594, 'ndtt')
@@ -8264,14 +8447,6 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nmtw', 1169.2, 8033.2, 179.478, 'nmtw')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ndtr', - 2656.7, - 13599.7, 206.890, 'ndtr')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nban', 2481.4, - 939.3, 10.635, 'nban')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nban', 2347.8, - 746.9, 179.599, 'nban')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nbrg', 3154.9, - 643.6, 296.563, 'nbrg')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nban', 3083.1, - 774.5, 109.625, 'nban')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nslh', 17572.5, - 3571.7, 76.083, 'nslh')
     call SetUnitAcquireRange(u, 200.0)
@@ -8319,27 +8494,6 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nwlg', 14902.9, - 20764.8, 35.938, 'nwlg')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nbrg', 15933.9, 1997.1, 329.330, 'nbrg')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ogru', 21613.9, - 3719.6, 76.550, 'ogru')
-    call SetUnitAcquireRange(u, 200.0)
-    call IssueImmediateOrder(u, "")
-    call IssueImmediateOrder(u, "")
-    call IssueImmediateOrder(u, "frenzyon")
-    set u=BlzCreateUnitWithSkin(p, 'ogru', 21454.0, - 4040.0, 78.649, 'ogru')
-    call SetUnitAcquireRange(u, 200.0)
-    call IssueImmediateOrder(u, "")
-    call IssueImmediateOrder(u, "")
-    call IssueImmediateOrder(u, "frenzyon")
-    set u=BlzCreateUnitWithSkin(p, 'oshm', 21115.7, - 3865.6, 51.020, 'oshm')
-    call SetUnitAcquireRange(u, 200.0)
-    call IssueImmediateOrder(u, "frostarmoron")
-    call IssueImmediateOrder(u, "")
-    set u=BlzCreateUnitWithSkin(p, 'orai', 20906.5, - 3751.9, 97.424, 'orai')
-    call SetUnitAcquireRange(u, 200.0)
-    call IssueImmediateOrder(u, "frenzyon")
-    call IssueImmediateOrder(u, "")
-    call IssueImmediateOrder(u, "")
-    set u=BlzCreateUnitWithSkin(p, 'nrdk', 21357.1, - 3509.1, 214.112, 'nrdk')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nspd', - 12768.5, - 29008.8, 289.004, 'nspd')
     call SetUnitAcquireRange(u, 200.0)
@@ -8418,7 +8572,7 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nubr', - 8568.1, - 29884.9, 190.591, 'nubr')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nogm', - 4434.2, - 28059.3, 307.500, 'nogm')
+    set u=BlzCreateUnitWithSkin(p, 'nogm', - 3346.2, - 29019.3, 307.500, 'nogm')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'oshm', - 3306.6, - 27826.0, 119.810, 'oshm')
     call SetUnitAcquireRange(u, 200.0)
@@ -8452,8 +8606,6 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nltc', 19285.9, - 11419.1, 337.853, 'nltc')
     call SetUnitState(u, UNIT_STATE_MANA, 300)
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'n0AI', 950.7, - 21863.7, 23.000, 'n0AI')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'E00P', - 12629.7, 11036.5, 10.460, 'E00P')
     call SetHeroLevel(u, 5, false)
     call SetHeroStr(u, 36, true)
@@ -8472,8 +8624,6 @@ function CreateNeutralHostile takes nothing returns nothing
     call IssueImmediateOrder(u, "")
     call IssueImmediateOrder(u, "")
     call IssueImmediateOrder(u, "")
-    set u=BlzCreateUnitWithSkin(p, 'n0AI', 1252.2, - 22173.7, 213.490, 'n0AI')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'hrif', 15379.6, - 11017.7, 100.892, 'hrif')
     call SetUnitAcquireRange(u, 200.0)
     call IssueImmediateOrder(u, "")
@@ -8486,6 +8636,10 @@ function CreateNeutralHostile takes nothing returns nothing
     call IssueImmediateOrder(u, "")
     call IssueImmediateOrder(u, "")
     call IssueImmediateOrder(u, "")
+    set u=BlzCreateUnitWithSkin(p, 'nmrl', 6362.4, - 2997.7, 193.179, 'nmrl')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmrl', 6321.5, - 2883.0, 36.058, 'nmrl')
+    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nowk', - 17604.7, - 13513.9, 7.592, 'nowk')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nowe', - 17279.0, - 13684.9, 116.140, 'nowe')
@@ -8499,6 +8653,8 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nmyr', - 7058.1, 4548.9, 322.670, 'nmyr')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nbds', 11136.5, - 15702.9, 292.450, 'nbds')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmrl', 6008.2, - 2791.2, 334.500, 'nmrl')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nsat', - 17466.0, - 2964.3, 190.000, 'nsat')
     call SetUnitAcquireRange(u, 200.0)
@@ -8527,6 +8683,8 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'njga', 9659.4, - 21197.8, 124.090, 'njga')
     call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmrr', 6159.4, - 2855.1, 272.129, 'nmrr')
+    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'n04H', - 8657.5, - 23610.1, 312.637, 'n04H')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ners', - 8497.5, - 23846.3, 44.452, 'ners')
@@ -8547,19 +8705,26 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nlv1', 17641.5, - 28974.1, 328.642, 'nlv1')
     call SetUnitAcquireRange(u, 200.0)
     call IssueImmediateOrder(u, "")
-    set gg_unit_nfro_2832=BlzCreateUnitWithSkin(p, 'nfro', 21798.3, 13566.1, 294.596, 'nfro')
-    set gg_unit_nfro_2833=BlzCreateUnitWithSkin(p, 'nfro', 4074.4, - 4254.3, 274.233, 'nfro')
     set u=BlzCreateUnitWithSkin(p, 'njgb', - 14555.6, - 8928.7, 356.990, 'njgb')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'njga', - 14774.9, - 8991.6, 245.519, 'njga')
     call SetUnitAcquireRange(u, 200.0)
-    set gg_unit_nfro_2837=BlzCreateUnitWithSkin(p, 'nfro', 13236.0, 5344.2, 175.989, 'nfro')
     set u=BlzCreateUnitWithSkin(p, 'njg1', - 14664.9, - 8767.0, 62.976, 'njg1')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nwld', - 15099.5, - 10512.7, 89.585, 'nwld')
     call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'ngrk', 8526.8, 1664.6, 248.288, 'ngrk')
+    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nwlg', - 15003.4, - 10048.0, 239.268, 'nwlg')
     call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'ngrk', 8320.7, 1855.1, 191.135, 'ngrk')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'ngst', 8355.5, 1690.9, 234.240, 'ngst')
+    call SetUnitAcquireRange(u, 200.0)
+    set t=CreateTrigger()
+    call TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
+    call TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
+    call TriggerAddAction(t, function Unit003789_DropItems)
     set u=BlzCreateUnitWithSkin(p, 'nogl', - 16893.2, 21425.0, 94.870, 'nogl')
     call SetUnitState(u, UNIT_STATE_MANA, 250)
     call SetUnitAcquireRange(u, 200.0)
@@ -8571,6 +8736,8 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nwlt', - 15193.8, - 10370.9, 56.076, 'nwlt')
     call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nogl', 3508.1, 1437.4, 306.477, 'nogl')
+    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nsat', - 18236.0, 22618.1, 8.767, 'nsat')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
     call SetUnitAcquireRange(u, 200.0)
@@ -8581,9 +8748,17 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nsty', - 17886.5, 22562.1, 271.750, 'nsty')
     call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nomg', 3323.5, 1472.5, 322.631, 'nomg')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nogr', 3679.5, 1530.0, 271.420, 'nogr')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nogr', 3542.7, 1628.3, 288.493, 'nogr')
+    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nslm', - 14256.2, - 12359.3, 175.721, 'nslm')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nslf', - 14085.4, - 12252.9, 272.820, 'nslf')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nogr', 3377.7, 1283.7, 343.914, 'nogr')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ngrk', - 5749.3, - 30795.8, 247.727, 'ngrk')
     set u=BlzCreateUnitWithSkin(p, 'nhrq', - 13852.0, - 718.0, 342.449, 'nhrq')
@@ -8610,6 +8785,23 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitState(u, UNIT_STATE_MANA, 250)
     call SetUnitAcquireRange(u, 200.0)
     call IssueImmediateOrder(u, "")
+    set u=BlzCreateUnitWithSkin(p, 'nspb', 9135.1, - 87.4, 319.701, 'nspb')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nspb', 8923.0, - 139.0, 96.397, 'nspb')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nspg', 9045.5, - 230.8, 154.802, 'nspg')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nspg', 9070.5, 57.0, 13.810, 'nspg')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmrl', 9219.0, 823.4, 193.179, 'nmrl')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmrl', 9178.2, 938.1, 36.058, 'nmrl')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmrr', 9123.0, 1011.2, 272.129, 'nmrr')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'o02J', 7537.6, - 1506.3, 248.980, 'o02J')
+    call SetUnitAcquireRange(u, 200.0)
+    call UnitAddItemToSlotById(u, 'shea', 0)
     set u=BlzCreateUnitWithSkin(p, 'nenc', - 21048.5, 10111.6, 308.609, 'nenc')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nenc', - 20977.6, 10236.4, 270.495, 'nenc')
@@ -8630,12 +8822,18 @@ function CreateNeutralHostile takes nothing returns nothing
     call IssueImmediateOrder(u, "slowon")
     set u=BlzCreateUnitWithSkin(p, 'otbk', 9575.7, - 18738.9, 86.760, 'otbk')
     call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nwlg', 7259.7, - 1761.1, 353.298, 'nwlg')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nwlg', 7433.6, - 1848.5, 62.558, 'nwlg')
+    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ntrs', - 7980.9, - 15245.6, 292.500, 'ntrs')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ntrs', - 7796.6, - 14990.2, 18.980, 'ntrs')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ngnw', 17362.9, - 13761.0, 207.920, 'ngnw')
     call SetUnitState(u, UNIT_STATE_MANA, 300)
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nwld', 7346.4, - 1576.0, 18.458, 'nwld')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ngnb', 5198.7, 9101.4, 5.990, 'ngnb')
     call SetUnitAcquireRange(u, 200.0)
@@ -8646,6 +8844,8 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nenc', - 20754.9, 10199.8, 155.704, 'nenc')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ngns', 5387.2, 8966.4, 100.650, 'ngns')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nwlt', 7614.6, - 1620.2, 280.918, 'nwlt')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nftr', 20598.3, 11434.7, 36.637, 'nftr')
     call SetUnitAcquireRange(u, 200.0)
@@ -8659,6 +8859,8 @@ function CreateNeutralHostile takes nothing returns nothing
     call IssueImmediateOrder(u, "")
     call IssueImmediateOrder(u, "")
     call IssueImmediateOrder(u, "autodispelon")
+    set u=BlzCreateUnitWithSkin(p, 'nwlt', 6577.6, - 1492.0, 228.061, 'nwlt')
+    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nftr', 19677.2, 10762.6, 160.000, 'nftr')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nftr', 19146.3, 10694.7, 91.752, 'nftr')
@@ -8668,6 +8870,8 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nftt', 19459.3, 10674.3, 160.000, 'nftt')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ngz1', 19283.1, 10739.9, 98.816, 'ngz1')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nwlt', 6549.4, - 1665.3, 38.135, 'nwlt')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'uske', 9406.0, - 15983.0, 195.340, 'uske')
     call SetUnitAcquireRange(u, 200.0)
@@ -8682,46 +8886,27 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'oeye', 20578.5, 15820.7, 159.990, 'oeye')
     call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nchg', 1657.8, - 26269.8, 2.925, 'nchg')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nogr', 3470.9, 379.5, 39.016, 'nogr')
+    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ogru', 15164.3, - 3337.8, 192.480, 'ogru')
-    call SetUnitAcquireRange(u, 200.0)
-    call IssueImmediateOrder(u, "frenzyon")
-    call IssueImmediateOrder(u, "")
-    call IssueImmediateOrder(u, "")
-    set u=BlzCreateUnitWithSkin(p, 'ogru', 21421.3, - 3856.9, 305.859, 'ogru')
-    call SetUnitAcquireRange(u, 200.0)
-    call IssueImmediateOrder(u, "")
-    call IssueImmediateOrder(u, "")
-    call IssueImmediateOrder(u, "frenzyon")
-    set u=BlzCreateUnitWithSkin(p, 'nrdk', 21464.3, - 3596.6, 205.340, 'nrdk')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'orai', 21124.8, - 3675.4, 129.793, 'orai')
-    call SetUnitAcquireRange(u, 200.0)
-    call IssueImmediateOrder(u, "frenzyon")
-    call IssueImmediateOrder(u, "")
-    call IssueImmediateOrder(u, "")
-    set u=BlzCreateUnitWithSkin(p, 'orai', 21210.9, - 3483.4, 178.802, 'orai')
     call SetUnitAcquireRange(u, 200.0)
     call IssueImmediateOrder(u, "frenzyon")
     call IssueImmediateOrder(u, "")
     call IssueImmediateOrder(u, "")
     set u=BlzCreateUnitWithSkin(p, 'nhyh', - 11492.2, - 13774.6, 55.090, 'nhyd')
     call SetUnitAcquireRange(u, 200.0)
-    set gg_unit_npig_3022=BlzCreateUnitWithSkin(p, 'npig', 19690.6, 17214.4, 277.239, 'npig')
     set u=BlzCreateUnitWithSkin(p, 'nfsh', 18848.6, 3545.4, 229.371, 'nfsh')
     call SetUnitState(u, UNIT_STATE_MANA, 300)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'hmtm', 12615.7, - 8930.8, 311.660, 'hmtm')
     call SetUnitAcquireRange(u, 200.0)
-    call IssueImmediateOrder(u, "")
-    set u=BlzCreateUnitWithSkin(p, 'nfrg', - 20743.2, 8288.1, 280.270, 'nfrg')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nfrl', - 20450.1, 8155.9, 10.980, 'nfrl')
-    call SetUnitAcquireRange(u, 200.0)
+    call IssueImmediateOrder(u, "replenishmanaon")
     set u=BlzCreateUnitWithSkin(p, 'nftt', 18903.5, 3927.2, 125.786, 'nftt')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nftb', 18703.0, 3715.6, 9.784, 'nftb')
     call SetUnitAcquireRange(u, 200.0)
-    set gg_unit_nfro_3039=BlzCreateUnitWithSkin(p, 'nfro', - 16605.3, - 10181.0, 81.500, 'nfro')
     set u=BlzCreateUnitWithSkin(p, 'nftr', 17862.6, 4035.9, 130.000, 'nftr')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nftb', 17403.9, 3303.3, 17.128, 'nftb')
@@ -8802,13 +8987,23 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nkob', - 6874.2, 18472.5, 92.530, 'nkob')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nfra', - 10151.7, 11128.3, 203.160, 'nfra')
+    set u=BlzCreateUnitWithSkin(p, 'nits', 2232.2, 20025.2, 334.764, 'nits')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nith', 2110.9, 20018.3, 267.097, 'nith')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nfra', - 11044.4, 10571.1, 203.160, 'nfra')
     call SetUnitState(u, UNIT_STATE_MANA, 500)
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nfrg', - 10227.1, 10943.2, 113.680, 'nfrg')
+    set u=BlzCreateUnitWithSkin(p, 'nitr', 2225.8, 19731.8, 163.368, 'nitr')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nfre', - 10444.9, 11084.0, 252.870, 'nfre')
+    set u=BlzCreateUnitWithSkin(p, 'nitt', 2106.9, 19794.2, 135.685, 'nitt')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nfrg', - 11067.4, 10273.1, 113.680, 'nfrg')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nfre', - 11241.3, 10637.2, 307.797, 'nfre')
     call SetUnitState(u, UNIT_STATE_MANA, 500)
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nitr', 2194.8, 19873.3, 4.528, 'nitr')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nbld', 11116.6, - 361.7, 300.000, 'nbld')
     call SetUnitAcquireRange(u, 200.0)
@@ -8818,7 +9013,7 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ngrk', 18369.3, - 11299.3, 180.000, 'ngrk')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nenp', - 1849.4, - 25285.1, 273.630, 'nenp')
+    set u=BlzCreateUnitWithSkin(p, 'nenp', - 2270.0, - 25624.5, 273.630, 'nenp')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nsth', - 10647.5, 3759.9, 352.430, 'nsth')
     call SetUnitState(u, UNIT_STATE_MANA, 500)
@@ -8833,11 +9028,49 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nsat', - 10400.8, 3758.5, 229.193, 'nsat')
     call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nsel', - 12439.9, - 19757.5, 341.466, 'nsel')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nelb', - 12212.9, - 19906.4, 125.298, 'nelb')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nele', - 12424.8, - 19924.5, 107.197, 'nele')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nele', - 12066.7, - 19701.0, 98.792, 'nele')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nrel', - 12237.1, - 19649.5, 249.287, 'nrel')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nrel', - 12332.8, - 19619.4, 269.042, 'nrel')
+    call SetUnitAcquireRange(u, 200.0)
     set gg_unit_nftb_3169=BlzCreateUnitWithSkin(p, 'nftb', 20638.9, 15649.5, 91.157, 'nftb')
     call SetUnitAcquireRange(gg_unit_nftb_3169, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ncen', - 14481.0, - 2644.6, 303.671, 'ncen')
+    set u=BlzCreateUnitWithSkin(p, 'njga', - 13289.6, - 16451.2, 227.644, 'njga')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ncim', - 14760.9, - 2375.3, 151.484, 'ncim')
+    set u=BlzCreateUnitWithSkin(p, 'njg1', - 13297.5, - 16655.6, 95.594, 'njg1')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'njg1', - 13453.7, - 16553.7, 23.242, 'njg1')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmtw', - 11664.2, - 17645.1, 209.702, 'nmtw')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmbg', - 11789.3, - 17616.7, 285.972, 'nmbg')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmcf', - 11830.8, - 17770.8, 20.520, 'nmcf')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmsn', - 11716.6, - 17801.2, 178.764, 'nmsn')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nscb', - 13059.2, - 18422.1, 321.261, 'nscb')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nsc3', - 13187.8, - 18453.6, 34.861, 'nsc3')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nsc2', - 13114.5, - 18592.0, 103.670, 'nsc2')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nkot', - 14974.8, - 15694.5, 326.502, 'nkot')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'ncen', - 14334.7, - 2573.0, 303.671, 'ncen')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nkog', - 15022.9, - 15928.6, 37.377, 'nkog')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nkob', - 14775.3, - 15723.3, 1.154, 'nkob')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'ncim', - 14056.9, - 2695.3, 151.484, 'ncim')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nhrh', - 14021.8, - 904.1, 0.415, 'nhrh')
@@ -8847,7 +9080,29 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nhrr', - 13801.8, - 863.1, 8.731, 'nhrr')
     call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nkob', - 14810.3, - 15905.8, 340.927, 'nkob')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nano', - 15580.8, - 18619.9, 339.653, 'nano')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nanw', - 15281.8, - 18772.0, 169.986, 'nanw')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nane', - 15725.5, - 18916.6, 258.578, 'nane')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nanc', - 15601.8, - 18772.8, 1.318, 'nanc')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nanc', - 15537.7, - 18884.4, 1.472, 'nanc')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nanb', - 15317.7, - 18907.9, 168.656, 'nanb')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nanb', - 15362.6, - 18667.2, 238.433, 'nanb')
+    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nvdl', - 322.7, - 31035.9, 36.223, 'nvdl')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nehy', - 14368.4, - 17703.1, 268.195, 'nehy')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nhyh', - 14232.2, - 17803.6, 203.759, 'nhyh')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nhyd', - 14118.7, - 18006.9, 264.014, 'nhyd')
     call SetUnitAcquireRange(u, 200.0)
     set gg_unit_nmrm_3219=BlzCreateUnitWithSkin(p, 'nmrm', - 2236.2, - 1024.5, 233.600, 'nmrm')
     call SetUnitAcquireRange(gg_unit_nmrm_3219, 200.0)
@@ -8859,11 +9114,36 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nvde', 3263.9, - 27552.3, 267.257, 'nvde')
     call SetUnitState(u, UNIT_STATE_MANA, 500)
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nvdl', 3095.3, - 27587.0, 130.807, 'nvdl')
+    set u=BlzCreateUnitWithSkin(p, 'nvdl', 3142.2, - 27582.0, 130.807, 'nvdl')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nvdl', 3405.4, - 27532.4, 310.439, 'nvdl')
+    set u=BlzCreateUnitWithSkin(p, 'nvdl', 3452.3, - 27527.4, 310.439, 'nvdl')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'n02G', - 23728.4, 6635.3, 268.626, 'n02G')
+    call SetUnitState(u, UNIT_STATE_MANA, 400)
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'n02H', - 23669.4, 6194.7, 141.475, 'n02H')
+    call SetUnitState(u, UNIT_STATE_MANA, 300)
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'n02H', - 23938.4, 6272.5, 87.996, 'n02H')
+    call SetUnitState(u, UNIT_STATE_MANA, 300)
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'n02G', - 24014.4, 6516.8, 340.798, 'n02G')
+    call SetUnitState(u, UNIT_STATE_MANA, 400)
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'n02H', - 23537.8, 6411.6, 141.475, 'n02H')
+    call SetUnitState(u, UNIT_STATE_MANA, 300)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nrdr', 18212.7, - 758.8, 30.100, 'nrdr')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nvdg', - 24990.5, 8580.8, 88.707, 'nvdg')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nvdg', - 25093.2, 8677.0, 11.162, 'nvdg')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'npfl', - 27890.8, 9380.5, 116.393, 'npfl')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'npfl', - 27822.7, 9596.7, 192.003, 'npfl')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'npfl', - 28114.5, 9626.9, 324.788, 'npfl')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nspb', 16299.5, 4614.9, 3.746, 'nspb')
     call SetUnitAcquireRange(u, 200.0)
@@ -8872,6 +9152,19 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nspg', 16146.2, 4574.2, 93.057, 'nspg')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nsbm', 16588.0, 4680.0, 254.636, 'nsbm')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nvdg', - 166.1, - 19818.8, 91.959, 'nvdg')
+    call SetUnitState(u, UNIT_STATE_MANA, 400)
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nchg', 1565.7, - 26193.2, 357.786, 'nchg')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'owar', 1564.3, - 26076.5, 5.757, 'owar')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'owar', 1618.3, - 26377.8, 2.782, 'owar')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nchg', 1642.1, - 26158.5, 355.196, 'nchg')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'n058', 1590.7, - 25853.2, 323.609, 'n058')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmyr', - 20795.5, - 11417.2, 135.000, 'nmyr')
     call SetUnitAcquireRange(u, 200.0)
@@ -8923,7 +9216,13 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nvde', - 434.0, - 31264.5, 4.100, 'nvde')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ndtr', - 10719.3, - 13325.4, 209.834, 'ndtr')
+    set u=BlzCreateUnitWithSkin(p, 'nogr', 3646.7, 382.9, 135.870, 'nogr')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nogr', 5584.2, 2316.8, 299.612, 'nogr')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nogr', 5363.1, 2202.4, 281.945, 'nogr')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'ndtr', - 10737.5, - 13397.1, 209.834, 'ndtr')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ndtr', - 10832.6, - 13235.3, 241.922, 'ndtr')
     call SetUnitAcquireRange(u, 200.0)
@@ -8955,6 +9254,40 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitState(u, UNIT_STATE_MANA, 200)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nftt', 2676.5, 17601.0, 322.590, 'nftt')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nkol', 23598.8, - 17951.5, 317.229, 'nkol')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nkot', 23501.4, - 17622.7, 158.186, 'nkot')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nkot', 23377.4, - 17991.0, 81.147, 'nkot')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nkog', 23597.0, - 17547.3, 87.168, 'nkog')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nkog', 23485.0, - 17949.8, 298.431, 'nkog')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nkob', 23391.9, - 17708.6, 311.285, 'nkob')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nkob', 23561.3, - 17705.6, 122.941, 'nkob')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nkob', 23422.5, - 17790.3, 105.593, 'nkob')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nkob', 23340.0, - 17885.2, 184.950, 'nkob')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nkob', 23514.3, - 17834.7, 148.298, 'nkob')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmrr', 22423.3, - 16428.6, 325.623, 'nmrr')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmrm', 22491.6, - 16604.9, 61.393, 'nmrm')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nmrl', 22607.8, - 16436.3, 205.593, 'nmrl')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nqbh', 21868.8, - 18606.5, 158.768, 'nqbh')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nrzt', 21791.5, - 18445.1, 192.607, 'nrzt')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nrzs', 21610.3, - 18478.1, 328.743, 'nrzs')
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nrzm', 21685.4, - 18629.1, 46.566, 'nrzm')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nwlg', 14939.6, - 20354.4, 308.225, 'nwlg')
     call SetUnitAcquireRange(u, 200.0)
@@ -9111,7 +9444,7 @@ function CreateNeutralHostile takes nothing returns nothing
     call TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
     call TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
     call TriggerAddAction(t, function Unit002893_DropItems)
-    set u=BlzCreateUnitWithSkin(p, 'nenp', - 1681.0, - 25515.4, 337.532, 'nenp')
+    set u=BlzCreateUnitWithSkin(p, 'nenp', - 2314.9, - 25930.0, 337.532, 'nenp')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'Nrob', 10511.3, - 23100.7, 120.000, 'Nrob')
     call SetUnitAcquireRange(u, 200.0)
@@ -9131,7 +9464,7 @@ function CreateNeutralHostile takes nothing returns nothing
     call TriggerAddAction(t, function Unit002633_DropItems)
     set u=BlzCreateUnitWithSkin(p, 'ndrw', 921.8, - 29076.1, 30.000, 'ndrw')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'Nalc', 872.0, - 22020.4, 0.000, 'Nalc')
+    set u=BlzCreateUnitWithSkin(p, 'Nalc', 1143.5, - 21749.9, 245.490, 'Nalc')
     call SetUnitState(u, UNIT_STATE_MANA, 270)
     call SetUnitAcquireRange(u, 200.0)
     call SelectHeroSkill(u, 'Aamk')
@@ -9139,12 +9472,14 @@ function CreateNeutralHostile takes nothing returns nothing
     set t=CreateTrigger()
     call TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
     call TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-    call TriggerAddAction(t, function Unit002817_DropItems)
+    call TriggerAddAction(t, function Unit003015_DropItems)
     set u=BlzCreateUnitWithSkin(p, 'ndrs', 1274.7, - 28852.0, 249.420, 'ndrs')
     call SetUnitState(u, UNIT_STATE_MANA, 300)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ndrd', 1113.5, - 28732.1, 262.270, 'ndrd')
     call SetUnitState(u, UNIT_STATE_MANA, 300)
+    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nfsp', 6437.8, - 12715.6, 65.546, 'nfsp')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ntrg', - 9025.9, - 7159.3, 290.000, 'ntrg')
     call SetUnitAcquireRange(u, 200.0)
@@ -9154,28 +9489,16 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ntrs', - 9293.9, - 7303.8, 200.000, 'ntrs')
     call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nftt', 6379.3, - 12599.0, 355.175, 'nftt')
+    call SetUnitAcquireRange(u, 200.0)
     set gg_unit_n057_3617=BlzCreateUnitWithSkin(p, 'n057', 20475.5, - 25837.2, 270.000, 'n057')
-    set u=BlzCreateUnitWithSkin(p, 'ndrd', - 1490.6, - 28332.2, 349.740, 'ndrd')
-    call SetUnitState(u, UNIT_STATE_MANA, 300)
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'n0AI', - 10286.0, 10067.6, 270.000, 'n0AI')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ndrh', - 1649.2, - 28914.3, 34.823, 'ndrh')
-    call SetUnitState(u, UNIT_STATE_MANA, 400)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'h01I', 18708.2, - 26914.4, 256.310, 'h01I')
     set t=CreateTrigger()
     call TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
     call TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
     call TriggerAddAction(t, function Unit000447_DropItems)
-    set u=BlzCreateUnitWithSkin(p, 'ndrd', - 1419.4, - 28815.1, 90.000, 'ndrd')
-    call SetUnitState(u, UNIT_STATE_MANA, 300)
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ndrh', - 1354.6, - 28253.1, 274.070, 'ndrh')
-    call SetUnitState(u, UNIT_STATE_MANA, 400)
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'ndrw', - 1184.7, - 28624.2, 175.910, 'ndrw')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nsgt', - 36.4, - 29518.9, 159.691, 'nsgt')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nspr', 14.4, - 29223.5, 254.176, 'nspr')
@@ -9187,6 +9510,7 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'ngrk', - 5530.2, - 31014.7, 86.894, 'ngrk')
     set u=BlzCreateUnitWithSkin(p, 'ngrk', - 5281.8, - 31132.6, 86.894, 'ngrk')
     set u=BlzCreateUnitWithSkin(p, 'nhyh', - 2944.7, - 24844.2, 255.099, 'nhyh')
+    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nele', - 5262.7, - 29189.7, 183.199, 'nele')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nele', - 6209.5, - 28957.3, 340.105, 'nele')
@@ -9217,6 +9541,8 @@ function CreateNeutralHostile takes nothing returns nothing
     call TriggerRegisterUnitEvent(t, gg_unit_hfoo_3649, EVENT_UNIT_DEATH)
     call TriggerRegisterUnitEvent(t, gg_unit_hfoo_3649, EVENT_UNIT_CHANGE_OWNER)
     call TriggerAddAction(t, function Unit002889_DropItems)
+    set u=BlzCreateUnitWithSkin(p, 'nogm', 5411.3, 2387.2, 292.247, 'nogm')
+    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nslv', - 10665.3, - 15630.5, 86.490, 'nslv')
     call SetUnitAcquireRange(u, 200.0)
     call IssueImmediateOrder(u, "bloodluston")
@@ -9260,22 +9586,6 @@ function CreateNeutralHostile takes nothing returns nothing
     call SetUnitAcquireRange(gg_unit_nftb_3743, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nftt', 21078.0, 15805.8, 266.740, 'nftt')
     call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'o02J', - 20757.3, - 28589.5, 294.617, 'o02J')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'o02J', - 20545.2, - 28634.8, 215.060, 'o02J')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'o02J', - 20827.9, - 28902.1, 294.617, 'o02J')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'o02J', - 20615.8, - 28947.4, 215.060, 'o02J')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwld', - 20725.1, - 28982.2, 84.911, 'nwld')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwld', - 20852.2, - 28737.4, 357.224, 'nwld')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwld', - 20626.7, - 28563.2, 256.309, 'nwld')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'o02J', - 22091.7, - 21878.8, 294.617, 'o02J')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'h02A', 15141.1, - 1198.1, 40.958, 'h02A')
     call SetUnitAcquireRange(u, 200.0)
     call IssueImmediateOrder(u, "")
@@ -9291,18 +9601,6 @@ function CreateNeutralHostile takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nogr', 15444.3, - 17884.7, 281.249, 'nogr')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ntrs', 16452.5, - 21317.0, 65.380, 'ntrs')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwld', - 21791.6, - 22069.4, 227.215, 'nwld')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlg', - 21987.5, - 22243.8, 97.188, 'nwlg')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlg', - 22119.9, - 22191.7, 56.138, 'nwlg')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', - 21911.1, - 22078.6, 237.367, 'nwlt')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', - 22159.1, - 21972.0, 352.781, 'nwlt')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'nwlt', - 21922.6, - 21890.6, 237.367, 'nwlt')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'ntrs', 16716.3, - 21276.3, 141.795, 'ntrs')
     call SetUnitAcquireRange(u, 200.0)
@@ -9348,7 +9646,7 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h004', - 11520.0, - 14080.0, 270.000, 'h004')
     set u=BlzCreateUnitWithSkin(p, 'h088', 20800.0, 9536.0, 270.000, 'h088')
     set gg_unit_ngol_0006=BlzCreateUnitWithSkin(p, 'ngol', - 1792.0, - 1728.0, 270.000, 'ngol')
-    call SetResourceAmount(gg_unit_ngol_0006, 300)
+    call SetResourceAmount(gg_unit_ngol_0006, 600)
     set gg_unit_h00X_0007=BlzCreateUnitWithSkin(p, 'h00X', 9856.0, - 10112.0, 291.000, 'h00X')
     set u=BlzCreateUnitWithSkin(p, 'h05Q', 10240.0, 4672.0, 270.000, 'h05Q')
     set u=BlzCreateUnitWithSkin(p, 'ncb3', 9536.0, - 11328.0, 270.000, 'ncb3')
@@ -9377,18 +9675,18 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set gg_unit_ngol_0042=BlzCreateUnitWithSkin(p, 'ngol', 6016.0, - 30848.0, 270.000, 'ngol')
     call SetResourceAmount(gg_unit_ngol_0042, 1500)
     set u=BlzCreateUnitWithSkin(p, 'ostr', 13408.0, - 20640.0, 118.522, 'ostr')
-    set u=BlzCreateUnitWithSkin(p, 'oalt', 12992.0, - 20416.0, 56.738, 'oalt')
+    set u=BlzCreateUnitWithSkin(p, 'oalt', 13024.0, - 20384.0, 270.000, 'oalt')
     set u=BlzCreateUnitWithSkin(p, 'ovln', 14240.0, - 19424.0, 114.992, 'ovln')
     set u=BlzCreateUnitWithSkin(p, 'h004', 13888.0, - 19008.0, 210.310, 'h004')
     set u=BlzCreateUnitWithSkin(p, 'n003', 15488.0, 4864.0, 270.000, 'n003')
-    set u=BlzCreateUnitWithSkin(p, 'h07W', 3232.0, - 3552.0, 270.000, 'h07W')
+    set u=BlzCreateUnitWithSkin(p, 'h07W', 4256.0, - 6112.0, 270.000, 'h07W')
     set u=BlzCreateUnitWithSkin(p, 'h004', 9600.0, - 18240.0, 270.000, 'h004')
     set u=BlzCreateUnitWithSkin(p, 'h06E', 13696.0, 1600.0, 360.000, 'h06E')
     set u=BlzCreateUnitWithSkin(p, 'h004', 13568.0, - 18560.0, 266.861, 'h004')
     set gg_unit_ngol_0063=BlzCreateUnitWithSkin(p, 'ngol', - 4928.0, 18816.0, 270.000, 'ngol')
     call SetResourceAmount(gg_unit_ngol_0063, 1500)
     set gg_unit_ngol_0066=BlzCreateUnitWithSkin(p, 'ngol', 13632.0, 8768.0, 270.000, 'ngol')
-    call SetResourceAmount(gg_unit_ngol_0066, 1500)
+    call SetResourceAmount(gg_unit_ngol_0066, 1700)
     set gg_unit_ngol_0069=BlzCreateUnitWithSkin(p, 'ngol', - 10944.0, 7232.0, 270.000, 'ngol')
     call SetResourceAmount(gg_unit_ngol_0069, 1200)
     set u=BlzCreateUnitWithSkin(p, 'e00L', - 5696.0, - 27648.0, 270.000, 'e00L')
@@ -9398,14 +9696,13 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h00I', 12160.0, - 16000.0, 270.000, 'h00I')
     set u=BlzCreateUnitWithSkin(p, 'h05G', 14112.0, - 13024.0, 330.000, 'h05G')
     set u=BlzCreateUnitWithSkin(p, 'h00I', 14400.0, - 12928.0, 270.000, 'h00I')
-    set gg_unit_h004_0090=BlzCreateUnitWithSkin(p, 'h004', - 11712.0, - 13440.0, 1.599, 'h004')
+    set u=BlzCreateUnitWithSkin(p, 'o041', - 10944.0, - 12992.0, 270.000, 'o041')
     set gg_unit_ngol_0095=BlzCreateUnitWithSkin(p, 'ngol', - 14464.0, - 4736.0, 270.000, 'ngol')
-    call SetResourceAmount(gg_unit_ngol_0095, 700)
+    call SetResourceAmount(gg_unit_ngol_0095, 900)
     set u=BlzCreateUnitWithSkin(p, 'h016', 12608.0, - 16128.0, 270.000, 'h016')
     set gg_unit_ngol_0099=BlzCreateUnitWithSkin(p, 'ngol', - 9728.0, 2304.0, 270.000, 'ngol')
     call SetResourceAmount(gg_unit_ngol_0099, 1500)
     set u=BlzCreateUnitWithSkin(p, 'osld', 12032.0, - 17472.0, 314.112, 'osld')
-    set gg_unit_h04I_0101=BlzCreateUnitWithSkin(p, 'h04I', - 25280.0, - 29696.0, 336.000, 'h04I')
     set u=BlzCreateUnitWithSkin(p, 'owtw', - 6720.0, - 5632.0, 270.000, 'owtw')
     set u=BlzCreateUnitWithSkin(p, 'nef1', 19264.0, 18368.0, 270.000, 'nef1')
     set u=BlzCreateUnitWithSkin(p, 'nef0', 18112.0, 18240.0, 210.547, 'nef0')
@@ -9413,6 +9710,8 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h03J', 19680.0, 19168.0, 270.000, 'h03J')
     set u=BlzCreateUnitWithSkin(p, 'nef1', 19136.0, 17600.0, 270.000, 'nef1')
     set u=BlzCreateUnitWithSkin(p, 'n033', 12768.0, - 10656.0, 270.000, 'n033')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Blackrock_Exit), GetRectCenterY(gg_rct_Blackrock_Exit))
+    call WaygateActivate(u, true)
     set u=BlzCreateUnitWithSkin(p, 'o033', 22464.0, - 31104.0, 270.000, 'o033')
     set u=BlzCreateUnitWithSkin(p, 'o033', 22464.0, - 31552.0, 270.000, 'o033')
     set u=BlzCreateUnitWithSkin(p, 'n06J', - 5088.0, - 27360.0, 270.000, 'n06J')
@@ -9420,21 +9719,23 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'o02W', 21056.0, - 29440.0, 270.000, 'o02W')
     set gg_unit_harm_0119=BlzCreateUnitWithSkin(p, 'harm', 8256.0, - 5312.0, 270.000, 'harm')
     set gg_unit_ngol_0120=BlzCreateUnitWithSkin(p, 'ngol', 9172.8, 2425.5, 79.106, 'ngol')
-    call SetResourceAmount(gg_unit_ngol_0120, 900)
+    call SetResourceAmount(gg_unit_ngol_0120, 800)
     set u=BlzCreateUnitWithSkin(p, 'ngme', 11456.0, 9728.0, 270.000, 'ngme')
-    set u=BlzCreateUnitWithSkin(p, 'h01S', 10624.0, - 5760.0, 310.000, 'h01S')
+    set u=BlzCreateUnitWithSkin(p, 'h01S', 10624.0, - 5760.0, 270.000, 'h01S')
     set u=BlzCreateUnitWithSkin(p, 'n033', 20064.0, - 29856.0, 270.000, 'n033')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Blackrock_Entrance), GetRectCenterY(gg_rct_Blackrock_Entrance))
+    call WaygateActivate(u, true)
     set gg_unit_h00L_0132=BlzCreateUnitWithSkin(p, 'h00L', - 8832.0, - 1344.0, 270.000, 'h00L')
     set u=BlzCreateUnitWithSkin(p, 'n02V', - 7424.0, - 5376.0, 270.000, 'n02V')
     set gg_unit_h00L_0135=BlzCreateUnitWithSkin(p, 'h00L', - 8384.0, 1024.0, 270.000, 'h00L')
     set u=BlzCreateUnitWithSkin(p, 'o03W', - 8960.0, - 13760.0, 270.000, 'o03W')
-    set u=BlzCreateUnitWithSkin(p, 'h097', 19456.0, 7232.0, 270.000, 'h097')
+    set u=BlzCreateUnitWithSkin(p, 'n0C5', 10368.0, - 29312.0, 270.000, 'n0C5')
     set u=BlzCreateUnitWithSkin(p, 'o03P', - 9024.0, - 13056.0, 270.000, 'o03P')
     set u=BlzCreateUnitWithSkin(p, 'hars', 18400.0, - 17056.0, 270.000, 'hars')
     set gg_unit_h00L_0162=BlzCreateUnitWithSkin(p, 'h00L', 10624.0, - 6592.0, 270.000, 'h00L')
     set u=BlzCreateUnitWithSkin(p, 'h01T', 10048.0, - 8384.0, 270.000, 'h01T')
     set gg_unit_n001_0165=BlzCreateUnitWithSkin(p, 'n001', 18560.0, 21824.0, 270.000, 'n001')
-    set gg_unit_h07C_0166=BlzCreateUnitWithSkin(p, 'h07C', 7488.0, - 5824.0, 60.000, 'h07C')
+    set gg_unit_h07C_0166=BlzCreateUnitWithSkin(p, 'h07C', 7488.0, - 5824.0, 270.000, 'h07C')
     set gg_unit_o004_0169=BlzCreateUnitWithSkin(p, 'o004', - 10304.0, - 8832.0, 270.000, 'o004')
     call SetUnitState(gg_unit_o004_0169, UNIT_STATE_MANA, 300)
     set gg_unit_ngol_0172=BlzCreateUnitWithSkin(p, 'ngol', 12864.0, 11264.0, 270.000, 'ngol')
@@ -9446,11 +9747,11 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set gg_unit_h07K_0178=BlzCreateUnitWithSkin(p, 'h07K', 10688.0, - 6016.0, 270.000, 'h07K')
     set gg_unit_h001_0180=BlzCreateUnitWithSkin(p, 'h001', 10624.0, - 5312.0, 270.000, 'h001')
     set u=BlzCreateUnitWithSkin(p, 'harm', 9984.0, - 5888.0, 270.000, 'harm')
-    set u=BlzCreateUnitWithSkin(p, 'h07C', 10048.0, - 4544.0, 340.000, 'h07C')
+    set u=BlzCreateUnitWithSkin(p, 'h07C', 10048.0, - 4544.0, 270.000, 'h07C')
     set u=BlzCreateUnitWithSkin(p, 'o017', - 3904.0, - 31680.0, 55.000, 'o017')
     call SetUnitColor(u, ConvertPlayerColor(12))
     set u=BlzCreateUnitWithSkin(p, 'o01B', - 8864.0, - 480.0, 316.982, 'o01B')
-    set u=BlzCreateUnitWithSkin(p, 'h01S', 10944.0, - 4864.0, 90.000, 'h01S')
+    set u=BlzCreateUnitWithSkin(p, 'h01S', 10944.0, - 4864.0, 270.000, 'h01S')
     set u=BlzCreateUnitWithSkin(p, 'n03E', - 8640.0, - 384.0, 270.000, 'n03E')
     set u=BlzCreateUnitWithSkin(p, 'nshp', 9664.0, - 22848.0, 270.000, 'nshp')
     set u=BlzCreateUnitWithSkin(p, 'o028', - 8512.0, - 512.0, 270.000, 'o028')
@@ -9458,17 +9759,19 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'hars', 13792.0, 1184.0, 270.000, 'hars')
     set u=BlzCreateUnitWithSkin(p, 'n05U', - 20288.0, - 8768.0, 270.000, 'n05U')
     set u=BlzCreateUnitWithSkin(p, 'o028', - 9088.0, - 640.0, 270.000, 'o028')
-    set gg_unit_ngol_0217=BlzCreateUnitWithSkin(p, 'ngol', 2752.0, 20800.0, 270.000, 'ngol')
+    set gg_unit_ngol_0217=BlzCreateUnitWithSkin(p, 'ngol', - 27328.0, 6336.0, 270.000, 'ngol')
     call SetResourceAmount(gg_unit_ngol_0217, 1000)
-    set u=BlzCreateUnitWithSkin(p, 'h03Q', - 24832.0, - 29440.0, 299.000, 'h03Q')
-    set u=BlzCreateUnitWithSkin(p, 'o02T', - 7968.0, - 1760.0, 270.000, 'o02T')
+    set u=BlzCreateUnitWithSkin(p, 'ngol', - 16896.0, 15232.0, 270.000, 'ngol')
+    call SetResourceAmount(u, 1500)
+    set gg_unit_n0BU_0220=BlzCreateUnitWithSkin(p, 'n0BU', - 18976.0, 8032.0, 270.000, 'n0BU')
+    call WaygateSetDestination(gg_unit_n0BU_0220, GetRectCenterX(gg_rct_FromAzuremyst), GetRectCenterY(gg_rct_FromAzuremyst))
+    call WaygateActivate(gg_unit_n0BU_0220, true)
     set u=BlzCreateUnitWithSkin(p, 'h07C', 14528.0, 4864.0, 270.000, 'h07C')
     set u=BlzCreateUnitWithSkin(p, 'hgra', 14144.0, 4800.0, 270.000, 'hgra')
     set u=BlzCreateUnitWithSkin(p, 'h06T', 14752.0, 1312.0, 270.000, 'h06T')
     set gg_unit_ngol_0224=BlzCreateUnitWithSkin(p, 'ngol', 17728.0, 12992.0, 270.000, 'ngol')
     call SetResourceAmount(gg_unit_ngol_0224, 1400)
-    set u=BlzCreateUnitWithSkin(p, 'h03Q', - 25600.0, - 30208.0, 29.000, 'h03Q')
-    set gg_unit_h00L_0227=BlzCreateUnitWithSkin(p, 'h00L', 9408.0, 3968.0, 270.000, 'h00L')
+    set u=BlzCreateUnitWithSkin(p, 'h00K', 9408.0, 3968.0, 270.000, 'h00K')
     set gg_unit_h002_0230=BlzCreateUnitWithSkin(p, 'h002', 9405.1, 5442.2, 232.466, 'h002')
     call SetUnitState(gg_unit_h002_0230, UNIT_STATE_MANA, 500)
     set gg_unit_n03G_0233=BlzCreateUnitWithSkin(p, 'n03G', 9024.0, 4096.0, 270.000, 'n03G')
@@ -9480,20 +9783,22 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h05O', 9760.0, 4960.0, 74.646, 'h05O')
     set u=BlzCreateUnitWithSkin(p, 'n01B', 9408.0, 4992.0, 270.000, 'n01B')
     set u=BlzCreateUnitWithSkin(p, 'ngme', 2304.0, 16320.0, 270.000, 'ngme')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 23936.0, - 29504.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nntt', - 25280.0, - 24128.0, 270.000, 'nntt')
     set u=BlzCreateUnitWithSkin(p, 'n03E', - 8704.0, 768.0, 270.000, 'n03E')
     set u=BlzCreateUnitWithSkin(p, 'h02N', 6112.0, 3936.0, 270.000, 'h02N')
     set u=BlzCreateUnitWithSkin(p, 'h067', 8768.0, 5120.0, 270.000, 'h067')
     set u=BlzCreateUnitWithSkin(p, 'n03H', - 11648.0, 22976.0, 270.000, 'n03H')
-    set u=BlzCreateUnitWithSkin(p, 'h097', 21696.0, 8192.0, 270.000, 'h097')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_DalaranExit2), GetRectCenterY(gg_rct_DalaranExit2))
+    call WaygateActivate(u, true)
     set u=BlzCreateUnitWithSkin(p, 'o028', - 8640.0, - 512.0, 270.000, 'o028')
     set gg_unit_o02D_0254=BlzCreateUnitWithSkin(p, 'o02D', - 7168.0, - 5120.0, 270.000, 'o02D')
     set u=BlzCreateUnitWithSkin(p, 'n03S', 14976.0, 320.0, 270.000, 'n03S')
-    set u=BlzCreateUnitWithSkin(p, 'o020', - 7360.0, 192.0, 270.000, 'o020')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_East_Thandol), GetRectCenterY(gg_rct_East_Thandol))
+    call WaygateActivate(u, true)
+    set u=BlzCreateUnitWithSkin(p, 'o020', - 7328.0, 224.0, 270.000, 'o020')
     set u=BlzCreateUnitWithSkin(p, 'ngad', - 10432.0, 10176.0, 270.000, 'ngad')
     set u=BlzCreateUnitWithSkin(p, 'edob', - 20736.0, - 9920.0, 270.000, 'edob')
-    set u=BlzCreateUnitWithSkin(p, 'o028', - 9088.0, 448.0, 270.000, 'o028')
+    set u=BlzCreateUnitWithSkin(p, 'o028', - 9088.0, 512.0, 270.000, 'o028')
     set u=BlzCreateUnitWithSkin(p, 'ndfl', 21536.0, - 28704.0, 270.000, 'ndfl')
     call SetUnitState(u, UNIT_STATE_MANA, 1000)
     set u=BlzCreateUnitWithSkin(p, 'o028', - 9088.0, 0.0, 270.000, 'o028')
@@ -9509,7 +9814,7 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set gg_unit_ngol_0291=BlzCreateUnitWithSkin(p, 'ngol', 7232.0, - 16192.0, 270.000, 'ngol')
     call SetResourceAmount(gg_unit_ngol_0291, 1000)
     set gg_unit_h00L_0293=BlzCreateUnitWithSkin(p, 'h00L', 9088.0, 9472.0, 270.000, 'h00L')
-    set u=BlzCreateUnitWithSkin(p, 'h058', 5792.0, 4512.0, 326.134, 'h058')
+    set u=BlzCreateUnitWithSkin(p, 'h058', 5792.0, 4512.0, 270.000, 'h058')
     set u=BlzCreateUnitWithSkin(p, 'n004', 5760.0, 3968.0, 270.000, 'n004')
     set gg_unit_ngol_0301=BlzCreateUnitWithSkin(p, 'ngol', - 16000.0, 10048.0, 270.000, 'ngol')
     call SetResourceAmount(gg_unit_ngol_0301, 1200)
@@ -9520,31 +9825,39 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h01U', 13888.0, 4416.0, 90.556, 'h01U')
     call SetUnitState(u, UNIT_STATE_MANA, 250)
     set u=BlzCreateUnitWithSkin(p, 'h036', 8992.0, 4640.0, 270.000, 'h036')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 24192.0, - 29504.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'nnsa', - 24448.0, - 24576.0, 270.000, 'nnsa')
     set u=BlzCreateUnitWithSkin(p, 'nmh1', 18912.0, 3680.0, 270.000, 'nmh1')
     set u=BlzCreateUnitWithSkin(p, 'h069', 10048.0, 4352.0, 164.214, 'h069')
     set u=BlzCreateUnitWithSkin(p, 'h044', 9632.0, 4640.0, 270.000, 'h044')
-    set u=BlzCreateUnitWithSkin(p, 'o01S', - 7552.0, - 832.0, 270.000, 'o01S')
+    set u=BlzCreateUnitWithSkin(p, 'o01S', - 7616.0, - 960.0, 270.000, 'o01S')
     set gg_unit_hvlt_0319=BlzCreateUnitWithSkin(p, 'hvlt', 9728.0, 5440.0, 270.000, 'hvlt')
     set u=BlzCreateUnitWithSkin(p, 'h05O', 8709.1, 4423.5, 154.418, 'h05O')
     set u=BlzCreateUnitWithSkin(p, 'o006', - 8000.0, 0.0, 270.000, 'o006')
     set u=BlzCreateUnitWithSkin(p, 'ncb9', 15104.0, 1408.0, 180.904, 'ncb9')
+    set u=BlzCreateUnitWithSkin(p, 'n0BU', - 1888.0, - 7072.0, 270.000, 'n0BU')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_GadgetUnlock), GetRectCenterY(gg_rct_GadgetUnlock))
+    call WaygateActivate(u, true)
     set u=BlzCreateUnitWithSkin(p, 'nmrk', 9472.0, 8576.0, 270.000, 'nmrk')
     set u=BlzCreateUnitWithSkin(p, 'h08R', - 22880.0, 17312.0, 270.000, 'h08R')
     set u=BlzCreateUnitWithSkin(p, 'h036', 6432.0, 3616.0, 270.000, 'h036')
+    set gg_unit_n094_0347=BlzCreateUnitWithSkin(p, 'n094', - 3648.0, 20224.0, 270.000, 'n094')
+    call SetUnitState(gg_unit_n094_0347, UNIT_STATE_MANA, 1000)
+    set gg_unit_n094_0348=BlzCreateUnitWithSkin(p, 'n094', - 3648.0, 23360.0, 45.000, 'n094')
+    call SetUnitState(gg_unit_n094_0348, UNIT_STATE_MANA, 1000)
     set u=BlzCreateUnitWithSkin(p, 'o033', - 3392.0, - 31808.0, 270.000, 'o033')
     set u=BlzCreateUnitWithSkin(p, 'h05P', 8640.0, 4608.0, 270.000, 'h05P')
     set u=BlzCreateUnitWithSkin(p, 'ncb9', 15104.0, 1216.0, 174.623, 'ncb9')
     set u=BlzCreateUnitWithSkin(p, 'n003', 18816.0, 18752.0, 270.000, 'n003')
-    set u=BlzCreateUnitWithSkin(p, 'h07T', 2560.0, - 3648.0, 270.000, 'h07T')
-    set u=BlzCreateUnitWithSkin(p, 'n04N', - 21056.0, 23424.0, 270.000, 'n04N')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 24448.0, - 29504.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'ngol', - 192.0, - 11584.0, 270.000, 'ngol')
+    call SetResourceAmount(u, 600)
+    set u=BlzCreateUnitWithSkin(p, 'h07T', 3584.0, - 6208.0, 270.000, 'h07T')
+    set u=BlzCreateUnitWithSkin(p, 'n04N', - 27840.0, 13312.0, 270.000, 'n04N')
+    set u=BlzCreateUnitWithSkin(p, 'nnfm', - 24832.0, - 23936.0, 270.000, 'nnfm')
+    set u=BlzCreateUnitWithSkin(p, 'o04X', - 11200.0, - 12480.0, 270.000, 'o04X')
     set u=BlzCreateUnitWithSkin(p, 'n03E', - 7424.0, - 576.0, 270.000, 'n03E')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 25536.0, - 31104.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'o01S', - 7232.0, - 128.0, 270.000, 'o01S')
-    set u=BlzCreateUnitWithSkin(p, 'o02Q', - 9280.0, 448.0, 270.000, 'o02Q')
+    set u=BlzCreateUnitWithSkin(p, 'nnad', - 25248.0, - 25248.0, 270.000, 'nnad')
+    set u=BlzCreateUnitWithSkin(p, 'o05G', - 9280.0, 448.0, 270.000, 'o05G')
+    set u=BlzCreateUnitWithSkin(p, 'o02Q', - 7232.0, - 128.0, 270.000, 'o02Q')
     set u=BlzCreateUnitWithSkin(p, 'ncb8', 13184.0, 960.0, 270.000, 'ncb8')
     set u=BlzCreateUnitWithSkin(p, 'h02V', 14272.0, 896.0, 270.000, 'h02V')
     call SetUnitState(u, UNIT_STATE_MANA, 300)
@@ -9556,13 +9869,15 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'o01S', - 12224.0, - 2368.0, 270.000, 'o01S')
     set u=BlzCreateUnitWithSkin(p, 'n03E', - 11712.0, - 2496.0, 270.000, 'n03E')
     set gg_unit_h01A_0402=BlzCreateUnitWithSkin(p, 'h01A', 672.0, 2976.0, 270.000, 'h01A')
+    call WaygateSetDestination(gg_unit_h01A_0402, GetRectCenterX(gg_rct_NazjatarExit1), GetRectCenterY(gg_rct_NazjatarExit1))
+    call WaygateActivate(gg_unit_h01A_0402, true)
     set u=BlzCreateUnitWithSkin(p, 'o028', - 11584.0, - 2496.0, 270.000, 'o028')
     set u=BlzCreateUnitWithSkin(p, 'o028', - 11520.0, - 2368.0, 270.000, 'o028')
     set gg_unit_h000_0406=BlzCreateUnitWithSkin(p, 'h000', 9088.0, 8000.0, 270.000, 'h000')
     set u=BlzCreateUnitWithSkin(p, 'hbar', 8256.0, 8768.0, 30.000, 'hbar')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 25536.0, - 30848.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h046', 3424.0, - 5024.0, 270.000, 'h046')
-    call SetUnitState(u, UNIT_STATE_MANA, 500)
+    set u=BlzCreateUnitWithSkin(p, 'nnsg', - 25280.0, - 24640.0, 270.000, 'nnsg')
+    set gg_unit_h046_0409=BlzCreateUnitWithSkin(p, 'h046', 4448.0, - 7584.0, 270.000, 'h046')
+    call SetUnitState(gg_unit_h046_0409, UNIT_STATE_MANA, 500)
     set gg_unit_h006_0411=BlzCreateUnitWithSkin(p, 'h006', 9472.0, 8832.0, 33.465, 'h006')
     set u=BlzCreateUnitWithSkin(p, 'ncba', 9664.0, 9344.0, 270.000, 'ncba')
     set u=BlzCreateUnitWithSkin(p, 'o028', - 12224.0, - 1856.0, 270.000, 'o028')
@@ -9573,14 +9888,19 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'ncb4', 9856.0, 9216.0, 270.000, 'ncb4')
     set u=BlzCreateUnitWithSkin(p, 'ncb4', 9856.0, 9088.0, 270.000, 'ncb4')
     set u=BlzCreateUnitWithSkin(p, 'o035', 20992.0, - 29760.0, 270.000, 'o035')
+    set u=BlzCreateUnitWithSkin(p, 'nntg', - 24448.0, - 25216.0, 270.000, 'nntg')
+    set u=BlzCreateUnitWithSkin(p, 'nmrb', - 24832.0, - 25216.0, 270.000, 'nmrb')
     set u=BlzCreateUnitWithSkin(p, 'n071', - 25600.0, - 11200.0, 270.000, 'n071')
     call SetUnitColor(u, ConvertPlayerColor(16))
+    set u=BlzCreateUnitWithSkin(p, 'h06S', - 24416.0, - 23904.0, 270.000, 'h06S')
+    set u=BlzCreateUnitWithSkin(p, 'n055', - 25280.0, - 23488.0, 270.000, 'n055')
+    set u=BlzCreateUnitWithSkin(p, 'n0A3', - 24864.0, - 24608.0, 270.000, 'n0A3')
     set u=BlzCreateUnitWithSkin(p, 'ncb8', 8384.0, 9280.0, 270.000, 'ncb8')
     set u=BlzCreateUnitWithSkin(p, 'ngad', 10112.0, - 23232.0, 270.000, 'ngad')
     set u=BlzCreateUnitWithSkin(p, 'ncba', 8704.0, 8640.0, 270.000, 'ncba')
     set u=BlzCreateUnitWithSkin(p, 'h03N', - 5120.0, - 27776.0, 270.000, 'h03N')
     set u=BlzCreateUnitWithSkin(p, 'n05Z', - 12736.0, 21312.0, 270.000, 'n05Z')
-    set u=BlzCreateUnitWithSkin(p, 'oalt', - 8000.0, - 4224.0, 270.000, 'oalt')
+    set u=BlzCreateUnitWithSkin(p, 'oalt', - 7968.0, - 4192.0, 270.000, 'oalt')
     set u=BlzCreateUnitWithSkin(p, 'h01H', 4192.0, - 21344.0, 270.000, 'h01H')
     set u=BlzCreateUnitWithSkin(p, 'h00K', - 11264.0, 22464.0, 270.000, 'h00K')
     set u=BlzCreateUnitWithSkin(p, 'h067', - 13824.0, 21696.0, 270.000, 'h067')
@@ -9613,7 +9933,7 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h08D', - 27584.0, 16576.0, 270.000, 'h08D')
     set u=BlzCreateUnitWithSkin(p, 'h08D', - 27584.0, 15808.0, 270.000, 'h08D')
     set u=BlzCreateUnitWithSkin(p, 'h08C', - 26176.0, 15616.0, 270.000, 'h08C')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 25536.0, - 30592.0, 270.000, 'h04G')
+    set u=BlzCreateUnitWithSkin(p, 'n005', - 24448.0, - 25024.0, 270.000, 'n005')
     set u=BlzCreateUnitWithSkin(p, 'h08C', - 26048.0, 15680.0, 270.000, 'h08C')
     set u=BlzCreateUnitWithSkin(p, 'h08C', - 28416.0, 16832.0, 270.000, 'h08C')
     set u=BlzCreateUnitWithSkin(p, 'h08C', - 28288.0, 16896.0, 270.000, 'h08C')
@@ -9625,6 +9945,8 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h06E', 13120.0, - 15296.0, 270.000, 'h06E')
     set u=BlzCreateUnitWithSkin(p, 'hars', 15264.0, - 13280.0, 270.000, 'hars')
     set u=BlzCreateUnitWithSkin(p, 'h072', 12032.0, - 15744.0, 270.000, 'h072')
+    set gg_unit_n094_0539=BlzCreateUnitWithSkin(p, 'n094', - 3648.0, 22592.0, 45.000, 'n094')
+    call SetUnitState(gg_unit_n094_0539, UNIT_STATE_MANA, 1000)
     set u=BlzCreateUnitWithSkin(p, 'h072', 12800.0, - 15616.0, 270.000, 'h072')
     set u=BlzCreateUnitWithSkin(p, 'nmh1', - 5856.0, 20128.0, 270.000, 'nmh1')
     set u=BlzCreateUnitWithSkin(p, 'h06V', 13184.0, - 15744.0, 270.000, 'h06V')
@@ -9637,30 +9959,37 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h072', 14656.0, - 13376.0, 270.000, 'h072')
     set u=BlzCreateUnitWithSkin(p, 'h079', - 13888.0, 21248.0, 270.000, 'h079')
     set u=BlzCreateUnitWithSkin(p, 'h05O', 9799.6, 4664.6, 284.214, 'h05O')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 24832.0, - 31040.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'n04T', - 25280.0, - 23808.0, 270.000, 'n04T')
     set u=BlzCreateUnitWithSkin(p, 'h06W', 12928.0, - 16256.0, 270.000, 'h06W')
     set gg_unit_h00L_0588=BlzCreateUnitWithSkin(p, 'h00L', 14976.0, 11520.0, 270.000, 'h00L')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 24576.0, - 31040.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'n08H', - 23936.0, - 24704.0, 270.000, 'n08H')
+    set u=BlzCreateUnitWithSkin(p, 'n08W', - 24000.0, - 24256.0, 270.000, 'n08W')
+    set gg_unit_n094_0611=BlzCreateUnitWithSkin(p, 'n094', - 3008.0, 20736.0, 270.000, 'n094')
+    call SetUnitState(gg_unit_n094_0611, UNIT_STATE_MANA, 1000)
     set gg_unit_h074_0614=BlzCreateUnitWithSkin(p, 'h074', 18816.0, 20608.0, 270.000, 'h074')
     set gg_unit_h01Z_0618=BlzCreateUnitWithSkin(p, 'h01Z', 17152.0, - 2752.0, 270.000, 'h01Z')
     set gg_unit_ngol_0625=BlzCreateUnitWithSkin(p, 'ngol', 12096.0, - 2752.0, 270.000, 'ngol')
     call SetResourceAmount(gg_unit_ngol_0625, 1400)
-    set u=BlzCreateUnitWithSkin(p, 'hshy', 21920.0, 6816.0, 270.000, 'hshy')
     set gg_unit_h01X_0656=BlzCreateUnitWithSkin(p, 'h01X', 18560.0, 17536.0, 270.000, 'h01X')
     set u=BlzCreateUnitWithSkin(p, 'ofor', - 7392.0, - 6112.0, 270.000, 'ofor')
+    set u=BlzCreateUnitWithSkin(p, 'ngol', - 23168.0, 6848.0, 270.000, 'ngol')
+    call SetResourceAmount(u, 1000)
     set u=BlzCreateUnitWithSkin(p, 'h02Y', 19734.9, 17696.6, 165.009, 'h02Y')
+    set u=BlzCreateUnitWithSkin(p, 'n0C8', - 22976.0, - 23680.0, 270.000, 'n0C8')
+    set u=BlzCreateUnitWithSkin(p, 'n0C9', - 22976.0, - 23360.0, 270.000, 'n0C9')
     set u=BlzCreateUnitWithSkin(p, 'h048', 11360.0, - 5600.0, 270.000, 'h048')
     set u=BlzCreateUnitWithSkin(p, 'ngad', - 10752.0, - 3520.0, 270.000, 'ngad')
-    set u=BlzCreateUnitWithSkin(p, 'u00G', - 19872.0, 23520.0, 270.000, 'u00G')
+    set u=BlzCreateUnitWithSkin(p, 'u00G', - 26592.0, 13344.0, 270.000, 'u00G')
     call SetUnitColor(u, ConvertPlayerColor(0))
     set u=BlzCreateUnitWithSkin(p, 'nefm', 15808.0, 19264.0, 70.000, 'nefm')
     set gg_unit_n081_0717=BlzCreateUnitWithSkin(p, 'n081', 576.0, - 25024.0, 318.516, 'n081')
+    set u=BlzCreateUnitWithSkin(p, 'n0C3', - 22208.0, - 24576.0, 270.000, 'n0C3')
     set u=BlzCreateUnitWithSkin(p, 'osld', - 7104.0, - 4672.0, 270.000, 'osld')
-    set u=BlzCreateUnitWithSkin(p, 'h06R', 3776.0, - 4352.0, 270.000, 'h06R')
+    set u=BlzCreateUnitWithSkin(p, 'h06R', 4800.0, - 6912.0, 270.000, 'h06R')
+    set u=BlzCreateUnitWithSkin(p, 'n0C4', - 23104.0, - 24576.0, 270.000, 'n0C4')
     set gg_unit_nbwd_0737=BlzCreateUnitWithSkin(p, 'nbwd', - 12576.0, 10400.0, 143.905, 'nbwd')
     set u=BlzCreateUnitWithSkin(p, 'nef5', 18112.0, 18560.0, 270.000, 'nef5')
+    set u=BlzCreateUnitWithSkin(p, 'n0C7', - 22656.0, - 24576.0, 270.000, 'n0C7')
     set u=BlzCreateUnitWithSkin(p, 'h083', 21216.0, 8416.0, 270.000, 'h083')
     set u=BlzCreateUnitWithSkin(p, 'h03N', - 5504.0, - 28288.0, 270.000, 'h03N')
     set u=BlzCreateUnitWithSkin(p, 'h088', 20864.0, 7296.0, 270.000, 'h088')
@@ -9669,8 +9998,7 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     call IssueImmediateOrder(gg_unit_n032_0769, "")
     set u=BlzCreateUnitWithSkin(p, 'nmrk', 14656.0, 12096.0, 270.000, 'nmrk')
     set u=BlzCreateUnitWithSkin(p, 'h088', 20928.0, 8192.0, 270.000, 'h088')
-    set u=BlzCreateUnitWithSkin(p, 'h00K', 4160.0, - 5440.0, 270.000, 'h00K')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 24704.0, - 30976.0, 270.000, 'h04G')
+    set gg_unit_h00L_0774=BlzCreateUnitWithSkin(p, 'h00L', 5184.0, - 8000.0, 270.000, 'h00L')
     set u=BlzCreateUnitWithSkin(p, 'h087', 21504.0, 7424.0, 270.000, 'h087')
     set u=BlzCreateUnitWithSkin(p, 'h087', 19072.0, 7424.0, 270.000, 'h087')
     set u=BlzCreateUnitWithSkin(p, 'h087', 19200.0, 8320.0, 270.000, 'h087')
@@ -9688,30 +10016,31 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nheb', 18272.0, 22304.0, 270.000, 'nheb')
     set u=BlzCreateUnitWithSkin(p, 'nef0', 19840.0, 17920.0, 270.000, 'nef0')
     set u=BlzCreateUnitWithSkin(p, 'nef0', 18176.0, 20864.0, 49.729, 'nef0')
-    set u=BlzCreateUnitWithSkin(p, 'h07W', 3104.0, - 4000.0, 270.000, 'h07W')
+    set u=BlzCreateUnitWithSkin(p, 'h07W', 4128.0, - 6560.0, 270.000, 'h07W')
     set u=BlzCreateUnitWithSkin(p, 'h06W', 11072.0, - 12864.0, 270.000, 'h06W')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 24832.0, - 31168.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'n0C2', - 22976.0, - 24000.0, 270.000, 'n0C2')
     set gg_unit_h030_0839=BlzCreateUnitWithSkin(p, 'h030', 20672.0, 7808.0, 200.650, 'h030')
-    set u=BlzCreateUnitWithSkin(p, 'oshy', - 6816.0, - 5984.0, 270.000, 'oshy')
+    set u=BlzCreateUnitWithSkin(p, 'h034', 17248.0, 18336.0, 270.000, 'h034')
     set u=BlzCreateUnitWithSkin(p, 'nef5', 19968.0, 17792.0, 0.000, 'nef5')
     set u=BlzCreateUnitWithSkin(p, 'n0A2', 15904.0, 19552.0, 270.000, 'n0A2')
     set gg_unit_hctw_0855=BlzCreateUnitWithSkin(p, 'hctw', 20672.0, 8064.0, 220.000, 'hctw')
     set u=BlzCreateUnitWithSkin(p, 'n02W', 20224.0, 7872.0, 270.000, 'n02W')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 24576.0, - 31168.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'n0C1', - 22592.0, - 23488.0, 270.000, 'n0C1')
     set u=BlzCreateUnitWithSkin(p, 'n071', - 25024.0, - 11456.0, 270.000, 'n071')
     call SetUnitColor(u, ConvertPlayerColor(16))
-    set u=BlzCreateUnitWithSkin(p, 'h07T', 2688.0, - 4160.0, 270.000, 'h07T')
+    set u=BlzCreateUnitWithSkin(p, 'ngol', 2624.0, - 4928.0, 270.000, 'ngol')
+    call SetResourceAmount(u, 600)
+    set u=BlzCreateUnitWithSkin(p, 'h07T', 3712.0, - 6720.0, 270.000, 'h07T')
     set gg_unit_h007_0869=BlzCreateUnitWithSkin(p, 'h007', 20032.0, 8128.0, 270.000, 'h007')
-    set u=BlzCreateUnitWithSkin(p, 'h03A', - 23040.0, - 30272.0, 270.000, 'h03A')
-    set u=BlzCreateUnitWithSkin(p, 'ngme', 832.0, - 21888.0, 270.000, 'ngme')
+    set u=BlzCreateUnitWithSkin(p, 'n0C5', 10112.0, - 29056.0, 270.000, 'n0C5')
+    set u=BlzCreateUnitWithSkin(p, 'n08V', - 21760.0, - 24576.0, 270.000, 'n08V')
+    set u=BlzCreateUnitWithSkin(p, 'ngme', 1280.0, - 21760.0, 270.000, 'ngme')
     set gg_unit_n081_0882=BlzCreateUnitWithSkin(p, 'n081', - 896.0, - 22336.0, 166.751, 'n081')
     set u=BlzCreateUnitWithSkin(p, 'owtw', - 8192.0, - 5568.0, 270.000, 'owtw')
-    set u=BlzCreateUnitWithSkin(p, 'ndmg', - 20096.0, 21184.0, 270.000, 'ndmg')
+    set u=BlzCreateUnitWithSkin(p, 'ndmg', - 26880.0, 11072.0, 270.000, 'ndmg')
     set gg_unit_h01G_0885=BlzCreateUnitWithSkin(p, 'h01G', 13824.0, 12416.0, 19.773, 'h01G')
     set gg_unit_h006_0886=BlzCreateUnitWithSkin(p, 'h006', 15360.0, 11584.0, 146.924, 'h006')
-    set u=BlzCreateUnitWithSkin(p, 'ndmg', - 20928.0, 22912.0, 270.000, 'ndmg')
+    set u=BlzCreateUnitWithSkin(p, 'ndmg', - 27712.0, 12800.0, 270.000, 'ndmg')
     set u=BlzCreateUnitWithSkin(p, 'ncb0', 14016.0, 11264.0, 47.830, 'ncb0')
     set u=BlzCreateUnitWithSkin(p, 'halt', 16096.0, 11872.0, 270.000, 'halt')
     set u=BlzCreateUnitWithSkin(p, 'ncb3', 15168.0, 12416.0, 270.000, 'ncb3')
@@ -9720,15 +10049,14 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nef5', 19008.0, 18880.0, 0.000, 'nef5')
     set gg_unit_h006_0898=BlzCreateUnitWithSkin(p, 'h006', 14592.0, 11584.0, 94.367, 'h006')
     set u=BlzCreateUnitWithSkin(p, 'hbar', 15424.0, 12992.0, 300.000, 'hbar')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 24064.0, - 30336.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'n0C5', - 22208.0, - 25536.0, 270.000, 'n0C5')
     set u=BlzCreateUnitWithSkin(p, 'ncb9', 15008.0, 13056.0, 270.000, 'ncb9')
     set u=BlzCreateUnitWithSkin(p, 'ngol', - 24960.0, - 13760.0, 270.000, 'ngol')
     call SetResourceAmount(u, 600)
-    set u=BlzCreateUnitWithSkin(p, 'h07T', 3328.0, - 5952.0, 270.000, 'h07T')
+    set u=BlzCreateUnitWithSkin(p, 'h07T', 3776.0, - 4928.0, 270.000, 'h07T')
     set u=BlzCreateUnitWithSkin(p, 'ncb9', 15584.0, 11520.0, 125.000, 'ncb9')
     set u=BlzCreateUnitWithSkin(p, 'h035', 15840.0, 12384.0, 255.650, 'h035')
-    set u=BlzCreateUnitWithSkin(p, 'hbla', 15200.0, 13024.0, 301.945, 'hbla')
+    set u=BlzCreateUnitWithSkin(p, 'hbla', 15200.0, 13024.0, 270.000, 'hbla')
     set u=BlzCreateUnitWithSkin(p, 'ncb3', 15872.0, 12096.0, 270.000, 'ncb3')
     set u=BlzCreateUnitWithSkin(p, 'ncbb', 15168.0, 12224.0, 270.000, 'ncbb')
     set u=BlzCreateUnitWithSkin(p, 'nef0', 19136.0, 18880.0, 270.000, 'nef0')
@@ -9742,15 +10070,18 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nef2', 17216.0, 18176.0, 17.357, 'nef2')
     set u=BlzCreateUnitWithSkin(p, 'nef0', 19264.0, 17600.0, 270.000, 'nef0')
     set u=BlzCreateUnitWithSkin(p, 'nefm', 17792.0, 22016.0, 18.511, 'nefm')
-    set u=BlzCreateUnitWithSkin(p, 'h03A', - 23168.0, - 26624.0, 270.000, 'h03A')
+    set u=BlzCreateUnitWithSkin(p, 'n0C6', - 22208.0, - 25280.0, 270.000, 'n0C6')
     set u=BlzCreateUnitWithSkin(p, 'nef5', 17216.0, 18048.0, 270.000, 'nef5')
     set u=BlzCreateUnitWithSkin(p, 'nef5', 16192.0, 19904.0, 233.713, 'nef5')
     set u=BlzCreateUnitWithSkin(p, 'nefm', 17856.0, 17728.0, 167.499, 'nefm')
+    set u=BlzCreateUnitWithSkin(p, 'n0C0', - 23072.0, - 25376.0, 270.000, 'n0C0')
+    set u=BlzCreateUnitWithSkin(p, 'n0BZ', - 22720.0, - 25408.0, 270.000, 'n0BZ')
+    set u=BlzCreateUnitWithSkin(p, 'nbt2', - 3584.0, - 20992.0, 270.000, 'nbt2')
     set u=BlzCreateUnitWithSkin(p, 'ngol', - 26880.0, - 11136.0, 270.000, 'ngol')
     call SetResourceAmount(u, 600)
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 24064.0, - 30464.0, 270.000, 'h04G')
+    set u=BlzCreateUnitWithSkin(p, 'h0A4', - 22304.0, - 23456.0, 270.000, 'h0A4')
     set u=BlzCreateUnitWithSkin(p, 'n00O', 21760.0, - 29760.0, 270.000, 'n00O')
-    set gg_unit_n07F_1001=BlzCreateUnitWithSkin(p, 'n07F', - 14654.0, - 17247.6, 58.334, 'n07F')
+    set gg_unit_n07F_1001=BlzCreateUnitWithSkin(p, 'n07F', - 15106.1, - 17495.4, 329.520, 'n07F')
     set u=BlzCreateUnitWithSkin(p, 'n003', 19008.0, 17600.0, 270.000, 'n003')
     set u=BlzCreateUnitWithSkin(p, 'n003', 20032.0, 18880.0, 270.000, 'n003')
     set u=BlzCreateUnitWithSkin(p, 'nef2', 17216.0, 17664.0, 270.000, 'nef2')
@@ -9761,57 +10092,39 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nef5', 18304.0, 18112.0, 270.000, 'nef5')
     set u=BlzCreateUnitWithSkin(p, 'ngol', - 24640.0, - 8896.0, 270.000, 'ngol')
     call SetResourceAmount(u, 600)
-    set u=BlzCreateUnitWithSkin(p, 'h077', 16928.0, 20000.0, 270.000, 'h077')
     set u=BlzCreateUnitWithSkin(p, 'nef6', 18048.0, 22400.0, 270.000, 'nef6')
     set u=BlzCreateUnitWithSkin(p, 'nef6', 19072.0, 22368.0, 206.725, 'nef6')
     set u=BlzCreateUnitWithSkin(p, 'nef0', 19008.0, 18176.0, 0.000, 'nef0')
     set u=BlzCreateUnitWithSkin(p, 'h074', 17792.0, 18816.0, 270.000, 'h074')
-    set u=BlzCreateUnitWithSkin(p, 'ncb5', 3584.0, - 4480.0, 46.891, 'ncb5')
+    set u=BlzCreateUnitWithSkin(p, 'ncb5', 4608.0, - 7040.0, 270.000, 'ncb5')
     set u=BlzCreateUnitWithSkin(p, 'h05P', 10240.0, 4416.0, 270.000, 'h05P')
-    set u=BlzCreateUnitWithSkin(p, 'ncb5', 4416.0, - 4992.0, 111.230, 'ncb5')
+    set u=BlzCreateUnitWithSkin(p, 'ncb5', 5440.0, - 7552.0, 270.000, 'ncb5')
     set u=BlzCreateUnitWithSkin(p, 'h06V', 10816.0, - 14080.0, 270.000, 'h06V')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 23936.0, - 30464.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h07T', 4416.0, - 5248.0, 270.000, 'h07T')
-    set u=BlzCreateUnitWithSkin(p, 'h07T', 3712.0, - 5184.0, 270.000, 'h07T')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 24064.0, - 30208.0, 270.000, 'h04G')
     set u=BlzCreateUnitWithSkin(p, 'h06E', 10176.0, - 13376.0, 270.000, 'h06E')
     set u=BlzCreateUnitWithSkin(p, 'nmh0', 18592.0, 3872.0, 270.000, 'nmh0')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 23936.0, - 30208.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h03A', - 24704.0, - 31104.0, 270.000, 'h03A')
-    set u=BlzCreateUnitWithSkin(p, 'n01W', 3648.0, - 4864.0, 270.000, 'n01W')
-    set u=BlzCreateUnitWithSkin(p, 'h07V', 3072.0, - 3072.0, 270.000, 'h07V')
+    set u=BlzCreateUnitWithSkin(p, 'n01W', 4672.0, - 7424.0, 270.000, 'n01W')
+    set u=BlzCreateUnitWithSkin(p, 'h07V', 4096.0, - 5632.0, 270.000, 'h07V')
     set u=BlzCreateUnitWithSkin(p, 'nmh1', 18656.0, 3424.0, 270.000, 'nmh1')
     set u=BlzCreateUnitWithSkin(p, 'o035', 21760.0, - 30720.0, 270.000, 'o035')
     set u=BlzCreateUnitWithSkin(p, 'otto', - 7360.0, - 4288.0, 270.000, 'otto')
-    set u=BlzCreateUnitWithSkin(p, 'h03E', - 22912.0, - 29504.0, 270.000, 'h03E')
-    set u=BlzCreateUnitWithSkin(p, 'h07T', 3264.0, - 4736.0, 270.000, 'h07T')
+    set u=BlzCreateUnitWithSkin(p, 'h07T', 4224.0, - 7360.0, 270.000, 'h07T')
     set u=BlzCreateUnitWithSkin(p, 'o02B', - 12032.0, - 8512.0, 270.000, 'o02B')
-    set u=BlzCreateUnitWithSkin(p, 'h07O', 3488.0, - 5728.0, 270.000, 'h07O')
-    set u=BlzCreateUnitWithSkin(p, 'h07M', 4320.0, - 4768.0, 270.000, 'h07M')
+    set u=BlzCreateUnitWithSkin(p, 'h07T', 1856.0, - 6336.0, 270.000, 'h07T')
+    set u=BlzCreateUnitWithSkin(p, 'h07M', 5344.0, - 7328.0, 270.000, 'h07M')
     set u=BlzCreateUnitWithSkin(p, 'h072', 10112.0, - 14400.0, 270.000, 'h072')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 24832.0, - 31488.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'h05E', 17792.0, - 17280.0, 305.000, 'h05E')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
     set u=BlzCreateUnitWithSkin(p, 'h070', 17600.0, - 17280.0, 270.000, 'h070')
     set u=BlzCreateUnitWithSkin(p, 'h025', 7296.0, - 8768.0, 270.000, 'h025')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 24576.0, - 31488.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h04H', - 23616.0, - 30144.0, 270.000, 'h04H')
     set gg_unit_n07F_1069=BlzCreateUnitWithSkin(p, 'n07F', 19266.0, 160.4, 287.866, 'n07F')
-    set u=BlzCreateUnitWithSkin(p, 'h04H', - 23680.0, - 30016.0, 270.000, 'h04H')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 23552.0, - 29952.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 25024.0, - 31040.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 25024.0, - 31232.0, 270.000, 'h04G')
     set u=BlzCreateUnitWithSkin(p, 'h05E', 17856.0, - 17920.0, 125.000, 'h05E')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
     set u=BlzCreateUnitWithSkin(p, 'n03I', - 18144.0, 20896.0, 270.000, 'n03I')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Dire_Maul_Entrance), GetRectCenterY(gg_rct_Dire_Maul_Entrance))
+    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'h06F', 11808.0, - 13728.0, 270.000, 'h06F')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 25024.0, - 31424.0, 270.000, 'h04G')
     set gg_unit_n07F_1101=BlzCreateUnitWithSkin(p, 'n07F', 4001.4, 23543.2, 270.000, 'n07F')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 24384.0, - 31424.0, 270.000, 'h04G')
     set u=BlzCreateUnitWithSkin(p, 'hars', 8992.0, - 13536.0, 270.000, 'hars')
     set u=BlzCreateUnitWithSkin(p, 'h02R', 11456.0, - 12800.0, 73.044, 'h02R')
     set u=BlzCreateUnitWithSkin(p, 'o03T', - 8576.0, - 12992.0, 270.000, 'o03T')
@@ -9823,9 +10136,7 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set gg_unit_h00L_1118=BlzCreateUnitWithSkin(p, 'h00L', 8896.0, - 10112.0, 270.000, 'h00L')
     set gg_unit_h070_1120=BlzCreateUnitWithSkin(p, 'h070', 9536.0, - 10944.0, 270.000, 'h070')
     set gg_unit_h053_1121=BlzCreateUnitWithSkin(p, 'h053', 8576.0, - 11648.0, 270.000, 'h053')
-    set u=BlzCreateUnitWithSkin(p, 'h06D', 7840.0, - 9568.0, 270.000, 'h06D')
-    set u=BlzCreateUnitWithSkin(p, 'h06D', 7840.0, - 10016.0, 270.000, 'h06D')
-    set u=BlzCreateUnitWithSkin(p, 'oalt', - 10688.0, - 8256.0, 270.000, 'oalt')
+    set u=BlzCreateUnitWithSkin(p, 'oalt', - 10656.0, - 8224.0, 270.000, 'oalt')
     set u=BlzCreateUnitWithSkin(p, 'h024', 7936.0, - 8960.0, 300.000, 'h024')
     set u=BlzCreateUnitWithSkin(p, 'h071', 9152.0, - 10240.0, 270.000, 'h071')
     set u=BlzCreateUnitWithSkin(p, 'h07C', 16896.0, - 30656.0, 270.000, 'h07C')
@@ -9837,12 +10148,17 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h09D', - 15232.0, - 22528.0, 270.000, 'h09D')
     set u=BlzCreateUnitWithSkin(p, 'npgf', 22080.0, - 29568.0, 270.000, 'npgf')
     set gg_unit_n07E_1154=BlzCreateUnitWithSkin(p, 'n07E', - 27334.7, 19215.8, 0.000, 'n07E')
+    call WaygateSetDestination(gg_unit_n07E_1154, GetRectCenterX(gg_rct_NazjatarExit3), GetRectCenterY(gg_rct_NazjatarExit3))
+    call WaygateActivate(gg_unit_n07E_1154, true)
     set u=BlzCreateUnitWithSkin(p, 'npgf', 22208.0, - 29568.0, 270.000, 'npgf')
     set u=BlzCreateUnitWithSkin(p, 'npgf', 22144.0, - 29440.0, 270.000, 'npgf')
+    set u=BlzCreateUnitWithSkin(p, 'h03A', 6528.0, - 384.0, 270.000, 'h03A')
     set u=BlzCreateUnitWithSkin(p, 'ovln', - 9632.0, - 9760.0, 270.000, 'ovln')
     set u=BlzCreateUnitWithSkin(p, 'u01W', - 26048.0, 16384.0, 270.000, 'u01W')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 24384.0, - 31232.0, 270.000, 'h04G')
+    set u=BlzCreateUnitWithSkin(p, 'h03A', 6784.0, - 640.0, 270.000, 'h03A')
     set u=BlzCreateUnitWithSkin(p, 'n03H', - 14208.0, 20736.0, 270.000, 'n03H')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Dalaran_Dungeons_Entrance), GetRectCenterY(gg_rct_Dalaran_Dungeons_Entrance))
+    call WaygateActivate(u, true)
     set u=BlzCreateUnitWithSkin(p, 'h044', - 11680.0, 20832.0, 270.000, 'h044')
     set u=BlzCreateUnitWithSkin(p, 'h079', - 12992.0, 21696.0, 270.000, 'h079')
     set u=BlzCreateUnitWithSkin(p, 'hvlt', - 12544.0, 21056.0, 270.000, 'hvlt')
@@ -9855,24 +10171,32 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nfh0', - 7424.0, - 4736.0, 270.000, 'nfh0')
     set u=BlzCreateUnitWithSkin(p, 'nfh1', - 6656.0, - 5504.0, 270.000, 'nfh1')
     set u=BlzCreateUnitWithSkin(p, 'owtw', - 8064.0, - 4864.0, 270.000, 'owtw')
+    set u=BlzCreateUnitWithSkin(p, 'h039', 8192.0, - 256.0, 270.000, 'h039')
+    set u=BlzCreateUnitWithSkin(p, 'h039', 7936.0, - 512.0, 270.000, 'h039')
     set u=BlzCreateUnitWithSkin(p, 'h072', 18176.0, - 17152.0, 270.000, 'h072')
     set u=BlzCreateUnitWithSkin(p, 'harm', 17344.0, - 30784.0, 270.000, 'harm')
+    set u=BlzCreateUnitWithSkin(p, 'h03A', 8064.0, 1088.0, 270.000, 'h03A')
     set u=BlzCreateUnitWithSkin(p, 'h074', 16448.0, 19328.0, 270.000, 'h074')
+    set u=BlzCreateUnitWithSkin(p, 'h052', 6784.0, 1152.0, 270.000, 'h052')
     set u=BlzCreateUnitWithSkin(p, 'n003', 18304.0, 18752.0, 270.000, 'n003')
     set u=BlzCreateUnitWithSkin(p, 'o035', 21760.0, - 31424.0, 270.000, 'o035')
     set u=BlzCreateUnitWithSkin(p, 'obar', - 11200.0, - 9280.0, 270.000, 'obar')
     set u=BlzCreateUnitWithSkin(p, 'ngme', - 6912.0, 5312.0, 270.000, 'ngme')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 24384.0, - 31040.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h023', - 23776.0, - 25376.0, 270.000, 'h023')
+    set u=BlzCreateUnitWithSkin(p, 'h052', 6528.0, 832.0, 270.000, 'h052')
+    set u=BlzCreateUnitWithSkin(p, 'h04I', 7680.0, 768.0, 270.000, 'h04I')
     set u=BlzCreateUnitWithSkin(p, 'nbt2', - 15744.0, - 3968.0, 270.000, 'nbt2')
-    set u=BlzCreateUnitWithSkin(p, 'h076', 5664.0, 3808.0, 270.000, 'h076')
+    set u=BlzCreateUnitWithSkin(p, 'o044', - 11456.0, - 12480.0, 270.000, 'o044')
+    set u=BlzCreateUnitWithSkin(p, 'h03Q', 7104.0, - 64.0, 270.000, 'h03Q')
     set u=BlzCreateUnitWithSkin(p, 'h05C', 15776.0, 4768.0, 215.245, 'h05C')
     set u=BlzCreateUnitWithSkin(p, 'nbt2', - 15360.0, - 3968.0, 270.000, 'nbt2')
     set u=BlzCreateUnitWithSkin(p, 'o035', 21312.0, - 30080.0, 270.000, 'o035')
-    set u=BlzCreateUnitWithSkin(p, 'u006', - 20416.0, 23488.0, 270.000, 'u006')
+    set u=BlzCreateUnitWithSkin(p, 'u006', - 27200.0, 13376.0, 270.000, 'u006')
     set u=BlzCreateUnitWithSkin(p, 'ncb3', 8960.0, - 11840.0, 270.000, 'ncb3')
     set u=BlzCreateUnitWithSkin(p, 'n03N', 18560.0, 21248.0, 270.000, 'n03N')
+    set u=BlzCreateUnitWithSkin(p, 'h03E', 6912.0, 512.0, 270.000, 'h03E')
     set gg_unit_n03S_1348=BlzCreateUnitWithSkin(p, 'n03S', 21632.0, - 8256.0, 270.000, 'n03S')
+    call WaygateSetDestination(gg_unit_n03S_1348, GetRectCenterX(gg_rct_West_of_Kalimdor), GetRectCenterY(gg_rct_West_of_Kalimdor))
+    call WaygateActivate(gg_unit_n03S_1348, true)
     set u=BlzCreateUnitWithSkin(p, 'n02Y', - 18432.0, 15168.0, 270.000, 'n02Y')
     set u=BlzCreateUnitWithSkin(p, 'h082', - 24640.0, 17024.0, 270.000, 'h082')
     set u=BlzCreateUnitWithSkin(p, 'owtw', - 11008.0, - 8128.0, 270.000, 'owtw')
@@ -9880,7 +10204,7 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h06V', 9280.0, - 14080.0, 270.000, 'h06V')
     set u=BlzCreateUnitWithSkin(p, 'h06V', 11840.0, - 14272.0, 270.000, 'h06V')
     set u=BlzCreateUnitWithSkin(p, 'h072', 13056.0, - 13824.0, 270.000, 'h072')
-    set u=BlzCreateUnitWithSkin(p, 'h07B', 11616.0, - 5344.0, 170.000, 'h07B')
+    set u=BlzCreateUnitWithSkin(p, 'h07B', 11616.0, - 5344.0, 270.000, 'h07B')
     set u=BlzCreateUnitWithSkin(p, 'h072', 8832.0, - 14336.0, 270.000, 'h072')
     set u=BlzCreateUnitWithSkin(p, 'h004', 12800.0, - 19712.0, 4.860, 'h004')
     set u=BlzCreateUnitWithSkin(p, 'h016', 21888.0, 7936.0, 270.000, 'h016')
@@ -9888,21 +10212,24 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'ntt2', - 14464.0, - 4096.0, 270.000, 'ntt2')
     set u=BlzCreateUnitWithSkin(p, 'h07K', 14272.0, 4224.0, 270.000, 'h07K')
     set u=BlzCreateUnitWithSkin(p, 'h07K', 14592.0, 4544.0, 270.000, 'h07K')
-    set u=BlzCreateUnitWithSkin(p, 'h03D', - 24992.0, - 25760.0, 270.000, 'h03D')
+    set u=BlzCreateUnitWithSkin(p, 'h02X', 7200.0, 800.0, 270.000, 'h02X')
     set u=BlzCreateUnitWithSkin(p, 'harm', 15424.0, - 4992.0, 270.000, 'harm')
     set u=BlzCreateUnitWithSkin(p, 'h07C', 14784.0, - 5632.0, 270.000, 'h07C')
-    set u=BlzCreateUnitWithSkin(p, 'h03D', - 24736.0, - 25632.0, 270.000, 'h03D')
+    set u=BlzCreateUnitWithSkin(p, 'h03D', 7648.0, 32.0, 270.000, 'h03D')
     set u=BlzCreateUnitWithSkin(p, 'h01S', 15616.0, - 6016.0, 270.000, 'h01S')
     set u=BlzCreateUnitWithSkin(p, 'h01S', 14848.0, - 5184.0, 270.000, 'h01S')
     set u=BlzCreateUnitWithSkin(p, 'h07K', 15488.0, - 6208.0, 270.000, 'h07K')
     set u=BlzCreateUnitWithSkin(p, 'h056', 14976.0, - 6528.0, 270.000, 'h056')
     set u=BlzCreateUnitWithSkin(p, 'n00T', 18304.0, - 17344.0, 270.000, 'n00T')
-    set u=BlzCreateUnitWithSkin(p, 'h02F', - 24128.0, - 31296.0, 270.000, 'h02F')
+    set u=BlzCreateUnitWithSkin(p, 'h039', 6528.0, 448.0, 270.000, 'h039')
+    set u=BlzCreateUnitWithSkin(p, 'h02F', 6528.0, 704.0, 270.000, 'h02F')
+    set u=BlzCreateUnitWithSkin(p, 'h024', 9536.0, - 2112.0, 270.000, 'h024')
+    call SetUnitState(u, UNIT_STATE_MANA, 200)
     set u=BlzCreateUnitWithSkin(p, 'n015', 10624.0, - 4608.0, 270.000, 'n015')
     set u=BlzCreateUnitWithSkin(p, 'h07K', 8128.0, - 5632.0, 270.000, 'h07K')
     set u=BlzCreateUnitWithSkin(p, 'n013', 15168.0, - 6144.0, 270.000, 'n013')
     set u=BlzCreateUnitWithSkin(p, 'n01G', 9088.0, 8576.0, 270.000, 'n01G')
-    set u=BlzCreateUnitWithSkin(p, 'h04H', - 24256.0, - 25280.0, 270.000, 'h04H')
+    set u=BlzCreateUnitWithSkin(p, 'h02F', 7616.0, 1152.0, 270.000, 'h02F')
     set u=BlzCreateUnitWithSkin(p, 'n01O', 20224.0, 18688.0, 270.000, 'n01O')
     set u=BlzCreateUnitWithSkin(p, 'n010', 9856.0, - 10752.0, 270.000, 'n010')
     set u=BlzCreateUnitWithSkin(p, 'n01M', 14400.0, 12416.0, 270.000, 'n01M')
@@ -9911,26 +10238,29 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     call SetUnitColor(u, ConvertPlayerColor(21))
     set u=BlzCreateUnitWithSkin(p, 'nfh1', 13824.0, - 20288.0, 160.217, 'nfh1')
     set gg_unit_n07E_1491=BlzCreateUnitWithSkin(p, 'n07E', - 2286.7, - 20080.2, 270.000, 'n07E')
-    set gg_unit_n05X_1493=BlzCreateUnitWithSkin(p, 'n05X', 4416.0, - 21696.0, 270.000, 'n05X')
+    set gg_unit_n05X_1493=BlzCreateUnitWithSkin(p, 'n05X', 4480.0, - 21696.0, 270.000, 'n05X')
     set gg_unit_o00J_1495=BlzCreateUnitWithSkin(p, 'o00J', - 15552.0, - 3968.0, 220.000, 'o00J')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 26432.0, - 30336.0, 270.000, 'h04G')
+    set u=BlzCreateUnitWithSkin(p, 'h02F', 6912.0, 1152.0, 270.000, 'h02F')
+    set u=BlzCreateUnitWithSkin(p, 'n008', 7936.0, 64.0, 270.000, 'n008')
     set u=BlzCreateUnitWithSkin(p, 'h07J', 7872.0, - 5824.0, 270.000, 'h07J')
     set gg_unit_o01I_1505=BlzCreateUnitWithSkin(p, 'o01I', 14688.0, - 27616.0, 270.000, 'o01I')
     set u=BlzCreateUnitWithSkin(p, 'ngol', - 25280.0, - 12800.0, 270.000, 'ngol')
     call SetResourceAmount(u, 600)
-    set u=BlzCreateUnitWithSkin(p, 'h02F', - 24000.0, - 31168.0, 270.000, 'h02F')
+    set u=BlzCreateUnitWithSkin(p, 'h02F', 7552.0, - 320.0, 270.000, 'h02F')
     set u=BlzCreateUnitWithSkin(p, 'ncb9', 11200.0, - 10240.0, 270.000, 'ncb9')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 23104.0, - 26304.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'h02F', 7552.0, - 192.0, 270.000, 'h02F')
     set u=BlzCreateUnitWithSkin(p, 'ngme', - 6464.0, 17408.0, 270.000, 'ngme')
     set u=BlzCreateUnitWithSkin(p, 'uzg1', - 4288.0, 21504.0, 270.000, 'uzg1')
     set u=BlzCreateUnitWithSkin(p, 'uzg1', - 3776.0, 21888.0, 270.000, 'uzg1')
-    set u=BlzCreateUnitWithSkin(p, 'uaod', - 3136.0, 21696.0, 270.000, 'uaod')
+    set u=BlzCreateUnitWithSkin(p, 'uaod', - 3104.0, 21728.0, 270.000, 'uaod')
     set u=BlzCreateUnitWithSkin(p, 'o035', - 4032.0, - 31360.0, 270.000, 'o035')
     set u=BlzCreateUnitWithSkin(p, 'o035', - 2880.0, - 31232.0, 270.000, 'o035')
-    set u=BlzCreateUnitWithSkin(p, 'ugrv', - 3904.0, 22336.0, 270.000, 'ugrv')
+    set u=BlzCreateUnitWithSkin(p, 'ugrv', - 4096.0, 22400.0, 270.000, 'ugrv')
     set u=BlzCreateUnitWithSkin(p, 'ngme', - 1024.0, - 28800.0, 270.000, 'ngme')
+    set u=BlzCreateUnitWithSkin(p, 'h024', 4224.0, 2560.0, 270.000, 'h024')
+    call SetUnitState(u, UNIT_STATE_MANA, 200)
     set u=BlzCreateUnitWithSkin(p, 'usep', - 3008.0, 21312.0, 270.000, 'usep')
+    set gg_unit_o05E_1583=BlzCreateUnitWithSkin(p, 'o05E', - 21568.0, 8000.0, 206.777, 'o05E')
     set gg_unit_n081_1585=BlzCreateUnitWithSkin(p, 'n081', - 512.0, - 23456.0, 213.875, 'n081')
     set u=BlzCreateUnitWithSkin(p, 'utod', - 4064.0, 20896.0, 270.000, 'utod')
     set u=BlzCreateUnitWithSkin(p, 'o03D', 21440.0, - 3648.0, 270.000, 'o03D')
@@ -9945,75 +10275,65 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'uzg1', - 2368.0, 22656.0, 270.000, 'uzg1')
     set u=BlzCreateUnitWithSkin(p, 'uzg2', - 2688.0, 23168.0, 270.000, 'uzg2')
     set u=BlzCreateUnitWithSkin(p, 'usep', - 3008.0, 23232.0, 270.000, 'usep')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 23232.0, - 26304.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 23488.0, - 26048.0, 270.000, 'h04G')
+    set u=BlzCreateUnitWithSkin(p, 'n0BL', - 20736.0, 8128.0, 270.000, 'n0BL')
+    set u=BlzCreateUnitWithSkin(p, 'h02F', 6528.0, 576.0, 270.000, 'h02F')
+    set u=BlzCreateUnitWithSkin(p, 'h02F', 8064.0, 384.0, 270.000, 'h02F')
     set u=BlzCreateUnitWithSkin(p, 'o044', - 4480.0, - 15808.0, 270.000, 'o044')
     set u=BlzCreateUnitWithSkin(p, 'o043', - 3904.0, - 15936.0, 270.000, 'o043')
     set u=BlzCreateUnitWithSkin(p, 'o04X', - 3776.0, - 15040.0, 270.000, 'o04X')
     set u=BlzCreateUnitWithSkin(p, 'o045', - 2752.0, - 15936.0, 270.000, 'o045')
-    set u=BlzCreateUnitWithSkin(p, 'o040', - 3264.0, - 15872.0, 270.000, 'o040')
+    set u=BlzCreateUnitWithSkin(p, 'o043', - 11712.0, - 13504.0, 270.000, 'o043')
+    set u=BlzCreateUnitWithSkin(p, 'o040', - 3232.0, - 15840.0, 270.000, 'o040')
     set u=BlzCreateUnitWithSkin(p, 'h042', 8032.0, - 5152.0, 270.000, 'h042')
     set u=BlzCreateUnitWithSkin(p, 'o041', - 3456.0, - 16384.0, 270.000, 'o041')
     set u=BlzCreateUnitWithSkin(p, 'o045', - 3456.0, - 16896.0, 270.000, 'o045')
     set u=BlzCreateUnitWithSkin(p, 'o047', - 4576.0, - 15008.0, 270.000, 'o047')
     set u=BlzCreateUnitWithSkin(p, 'o045', - 3328.0, - 16832.0, 270.000, 'o045')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 23872.0, - 26048.0, 270.000, 'h04G')
+    set u=BlzCreateUnitWithSkin(p, 'h02F', 7936.0, 384.0, 270.000, 'h02F')
     set u=BlzCreateUnitWithSkin(p, 'o045', - 4800.0, - 16320.0, 270.000, 'o045')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 23872.0, - 25856.0, 270.000, 'h04G')
+    set u=BlzCreateUnitWithSkin(p, 'h02F', 7936.0, 1152.0, 270.000, 'h02F')
     set u=BlzCreateUnitWithSkin(p, 'o045', - 4160.0, - 14976.0, 270.000, 'o045')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 23488.0, - 25856.0, 270.000, 'h04G')
     set u=BlzCreateUnitWithSkin(p, 'o046', - 4416.0, - 16384.0, 270.000, 'o046')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 23488.0, - 26560.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 23872.0, - 26560.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 23872.0, - 26240.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'h02F', 7040.0, 1152.0, 270.000, 'h02F')
+    set u=BlzCreateUnitWithSkin(p, 'h039', 7168.0, 1152.0, 270.000, 'h039')
+    set u=BlzCreateUnitWithSkin(p, 'h01R', 7264.0, - 2720.0, 270.000, 'h01R')
     set u=BlzCreateUnitWithSkin(p, 'o046', - 3840.0, - 16640.0, 270.000, 'o046')
     set u=BlzCreateUnitWithSkin(p, 'o048', - 4032.0, - 16320.0, 270.000, 'o048')
     set gg_unit_ngol_1676=BlzCreateUnitWithSkin(p, 'ngol', - 3904.0, - 11968.0, 270.000, 'ngol')
     call SetResourceAmount(gg_unit_ngol_1676, 1000)
     set u=BlzCreateUnitWithSkin(p, 'o046', - 3584.0, - 14976.0, 270.000, 'o046')
     set u=BlzCreateUnitWithSkin(p, 'h06T', 8096.0, - 10784.0, 65.000, 'h06T')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 23488.0, - 26240.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h04H', - 23872.0, - 27136.0, 270.000, 'h04H')
-    set u=BlzCreateUnitWithSkin(p, 'h04H', - 24256.0, - 26624.0, 270.000, 'h04H')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 23872.0, - 27456.0, 270.000, 'h04G')
+    set u=BlzCreateUnitWithSkin(p, 'h039', 7808.0, - 2880.0, 270.000, 'h039')
+    set u=BlzCreateUnitWithSkin(p, 'h039', 6528.0, 64.0, 270.000, 'h039')
+    set u=BlzCreateUnitWithSkin(p, 'h039', 6912.0, - 2816.0, 270.000, 'h039')
+    set u=BlzCreateUnitWithSkin(p, 'h024', 3648.0, - 1536.0, 270.000, 'h024')
+    call SetUnitState(u, UNIT_STATE_MANA, 200)
     set u=BlzCreateUnitWithSkin(p, 'h071', 13568.0, 1280.0, 270.000, 'h071')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 23488.0, - 27456.0, 270.000, 'h04G')
+    set u=BlzCreateUnitWithSkin(p, 'h0A9', 4096.0, - 512.0, 270.000, 'h0A9')
     set u=BlzCreateUnitWithSkin(p, 'h07L', 18112.0, - 30976.0, 270.000, 'h07L')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 23488.0, - 27072.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'n008', - 24576.0, - 27392.0, 270.000, 'n008')
+    set u=BlzCreateUnitWithSkin(p, 'h039', 5248.0, - 1024.0, 270.000, 'h039')
+    set u=BlzCreateUnitWithSkin(p, 'h02F', 5120.0, - 1088.0, 270.000, 'h02F')
     set gg_unit_n08F_1739=BlzCreateUnitWithSkin(p, 'n08F', 8870.4, 8066.6, 270.000, 'n08F')
     set u=BlzCreateUnitWithSkin(p, 'h070', 14912.0, 1664.0, 270.000, 'h070')
-    set u=BlzCreateUnitWithSkin(p, 'n008', - 24576.0, - 28288.0, 270.000, 'n008')
-    set u=BlzCreateUnitWithSkin(p, 'h07Q', - 14880.0, - 22880.0, 166.046, 'h07Q')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 24448.0, - 26688.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 24576.0, - 26688.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h06R', - 15616.0, - 22848.0, 29.697, 'h06R')
+    set u=BlzCreateUnitWithSkin(p, 'h01T', 4608.0, - 2496.0, 270.000, 'h01T')
+    set u=BlzCreateUnitWithSkin(p, 'h07Q', - 14880.0, - 22880.0, 270.000, 'h07Q')
+    set u=BlzCreateUnitWithSkin(p, 'h06R', - 15616.0, - 22848.0, 270.000, 'h06R')
     set u=BlzCreateUnitWithSkin(p, 'h06A', 8256.0, - 9536.0, 270.000, 'h06A')
-    set u=BlzCreateUnitWithSkin(p, 'h01S', 17920.0, - 31616.0, 130.000, 'h01S')
+    set u=BlzCreateUnitWithSkin(p, 'h01S', 17920.0, - 31616.0, 270.000, 'h01S')
     call SetUnitState(u, UNIT_STATE_MANA, 1000)
     set gg_unit_n08F_1798=BlzCreateUnitWithSkin(p, 'n08F', 9326.0, 8051.1, 270.000, 'n08F')
     set u=BlzCreateUnitWithSkin(p, 'h00I', 12992.0, 5056.0, 270.000, 'h00I')
     set u=BlzCreateUnitWithSkin(p, 'otrb', - 10560.0, - 9536.0, 270.000, 'otrb')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 24256.0, - 26368.0, 270.000, 'h04G')
     set gg_unit_e013_1815=BlzCreateUnitWithSkin(p, 'e013', 320.0, 18624.0, 270.000, 'e013')
     set u=BlzCreateUnitWithSkin(p, 'ngol', - 16192.0, - 16320.0, 270.000, 'ngol')
     call SetResourceAmount(u, 400)
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 24256.0, - 25856.0, 270.000, 'h04G')
     set u=BlzCreateUnitWithSkin(p, 'usep', - 22336.0, 14272.0, 265.603, 'usep')
     set u=BlzCreateUnitWithSkin(p, 'uslh', - 24288.0, 14304.0, 270.000, 'uslh')
     set u=BlzCreateUnitWithSkin(p, 'n06X', 7872.0, - 5632.0, 270.000, 'n06X')
+    set u=BlzCreateUnitWithSkin(p, 'o056', - 20672.0, 7616.0, 270.000, 'o056')
     set u=BlzCreateUnitWithSkin(p, 'hhou', 13056.0, 5184.0, 140.000, 'hhou')
     set gg_unit_h05H_1847=BlzCreateUnitWithSkin(p, 'h05H', 15456.0, - 5728.0, 270.000, 'h05H')
-    set u=BlzCreateUnitWithSkin(p, 'uaod', - 24512.0, 11968.0, 61.459, 'uaod')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 24256.0, - 25664.0, 270.000, 'h04G')
+    set u=BlzCreateUnitWithSkin(p, 'uaod', - 24544.0, 11936.0, 61.106, 'uaod')
     set u=BlzCreateUnitWithSkin(p, 'h07L', 18112.0, - 31616.0, 270.000, 'h07L')
     set u=BlzCreateUnitWithSkin(p, 'utod', - 22432.0, 11936.0, 100.437, 'utod')
     set u=BlzCreateUnitWithSkin(p, 'h034', 4000.0, - 21344.0, 270.000, 'h034')
@@ -10030,7 +10350,7 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'uzig', - 24704.0, 14336.0, 270.000, 'uzig')
     set u=BlzCreateUnitWithSkin(p, 'uzig', - 24448.0, 14336.0, 270.000, 'uzig')
     set u=BlzCreateUnitWithSkin(p, 'uzig', - 24576.0, 14336.0, 270.000, 'uzig')
-    set u=BlzCreateUnitWithSkin(p, 'eate', - 13248.0, 3328.0, 359.071, 'eate')
+    set u=BlzCreateUnitWithSkin(p, 'eate', - 13216.0, 3360.0, 270.000, 'eate')
     set u=BlzCreateUnitWithSkin(p, 'h048', 7520.0, - 5536.0, 270.000, 'h048')
     set u=BlzCreateUnitWithSkin(p, 'uzig', - 24704.0, 14208.0, 270.000, 'uzig')
     set u=BlzCreateUnitWithSkin(p, 'uzig', - 24704.0, 14080.0, 270.000, 'uzig')
@@ -10041,7 +10361,6 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'uzig', - 22272.0, 11904.0, 270.000, 'uzig')
     set u=BlzCreateUnitWithSkin(p, 'uzg1', - 22528.0, 11776.0, 270.000, 'uzg1')
     set u=BlzCreateUnitWithSkin(p, 'uzg1', - 22272.0, 12032.0, 270.000, 'uzg1')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 25152.0, - 26240.0, 270.000, 'h04G')
     set u=BlzCreateUnitWithSkin(p, 'uzg2', - 23040.0, 13952.0, 270.000, 'uzg2')
     set u=BlzCreateUnitWithSkin(p, 'ugrv', - 22336.0, 12288.0, 270.000, 'ugrv')
     set u=BlzCreateUnitWithSkin(p, 'utom', - 24096.0, 12384.0, 264.489, 'utom')
@@ -10064,7 +10383,7 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'owtw', - 11648.0, - 8576.0, 270.000, 'owtw')
     set u=BlzCreateUnitWithSkin(p, 'o03H', 21952.0, - 3840.0, 270.000, 'o03H')
     set u=BlzCreateUnitWithSkin(p, 'e00L', - 21120.0, - 9088.0, 270.000, 'e00L')
-    set u=BlzCreateUnitWithSkin(p, 'e00R', - 20032.0, - 8704.0, 270.000, 'e00R')
+    set u=BlzCreateUnitWithSkin(p, 'e00R', - 20000.0, - 8672.0, 270.000, 'e00R')
     set u=BlzCreateUnitWithSkin(p, 'h03M', - 20352.0, - 8960.0, 270.000, 'h03M')
     set u=BlzCreateUnitWithSkin(p, 'h03M', - 20736.0, - 8768.0, 270.000, 'h03M')
     set u=BlzCreateUnitWithSkin(p, 'h03M', - 21184.0, - 8832.0, 270.000, 'h03M')
@@ -10076,29 +10395,27 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'e00V', - 21120.0, - 9472.0, 270.000, 'e00V')
     set u=BlzCreateUnitWithSkin(p, 'n06M', - 20480.0, - 10112.0, 270.000, 'n06M')
     set u=BlzCreateUnitWithSkin(p, 'n06M', - 20800.0, - 8320.0, 270.000, 'n06M')
-    set u=BlzCreateUnitWithSkin(p, 'h03O', - 23840.0, - 27936.0, 270.000, 'h03O')
     set gg_unit_h03P_2095=BlzCreateUnitWithSkin(p, 'h03P', 8064.0, - 6400.0, 270.000, 'h03P')
-    set u=BlzCreateUnitWithSkin(p, 'h07N', 4608.0, - 5632.0, 270.000, 'h07N')
-    set u=BlzCreateUnitWithSkin(p, 'h07Q', 2848.0, - 3488.0, 270.000, 'h07Q')
+    set u=BlzCreateUnitWithSkin(p, 'nbt2', - 3136.0, - 20736.0, 270.000, 'nbt2')
+    set u=BlzCreateUnitWithSkin(p, 'h07Q', 5408.0, - 6880.0, 270.000, 'h07Q')
     set u=BlzCreateUnitWithSkin(p, 'n03Q', 17216.0, 384.0, 270.000, 'n03Q')
-    set u=BlzCreateUnitWithSkin(p, 'n055', 14656.0, - 28992.0, 270.000, 'n055')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_West_Thandol), GetRectCenterY(gg_rct_West_Thandol))
+    call WaygateActivate(u, true)
+    set u=BlzCreateUnitWithSkin(p, 'n08W', - 3584.0, - 20416.0, 270.000, 'n08W')
+    set u=BlzCreateUnitWithSkin(p, 'o040', - 10656.0, - 13216.0, 270.000, 'o040')
+    set u=BlzCreateUnitWithSkin(p, 'n0C9', 14656.0, - 28992.0, 270.000, 'n0C9')
     set u=BlzCreateUnitWithSkin(p, 'n06J', - 15328.0, 2336.0, 270.000, 'n06J')
-    set u=BlzCreateUnitWithSkin(p, 'h03O', - 23392.0, - 27936.0, 270.000, 'h03O')
-    set u=BlzCreateUnitWithSkin(p, 'n07P', - 7616.0, 0.0, 270.000, 'n07P')
-    set u=BlzCreateUnitWithSkin(p, 'h02F', - 24064.0, - 28544.0, 270.000, 'h02F')
+    set u=BlzCreateUnitWithSkin(p, 'n07P', - 8704.0, - 832.0, 270.000, 'n07P')
     set gg_unit_o00V_2194=BlzCreateUnitWithSkin(p, 'o00V', - 3008.0, - 15552.0, 216.315, 'o00V')
     set u=BlzCreateUnitWithSkin(p, 'ncb0', 15936.0, 11968.0, 270.000, 'ncb0')
     set u=BlzCreateUnitWithSkin(p, 'ngol', - 24064.0, - 896.0, 270.000, 'ngol')
-    call SetResourceAmount(u, 800)
+    call SetResourceAmount(u, 700)
     set u=BlzCreateUnitWithSkin(p, 'ncb9', 13760.0, 12800.0, 0.000, 'ncb9')
     set u=BlzCreateUnitWithSkin(p, 'ngol', - 27392.0, - 640.0, 270.000, 'ngol')
-    call SetResourceAmount(u, 800)
-    set u=BlzCreateUnitWithSkin(p, 'h02F', - 23872.0, - 28544.0, 270.000, 'h02F')
+    call SetResourceAmount(u, 700)
     set u=BlzCreateUnitWithSkin(p, 'ngol', - 27392.0, - 4480.0, 270.000, 'ngol')
-    call SetResourceAmount(u, 800)
-    set gg_unit_h03V_2232=BlzCreateUnitWithSkin(p, 'h03V', 4576.0, - 10592.0, 270.000, 'h03V')
+    call SetResourceAmount(u, 700)
     set u=BlzCreateUnitWithSkin(p, 'h02H', 6912.0, - 9728.0, 0.000, 'h02H')
-    set u=BlzCreateUnitWithSkin(p, 'h02F', - 23680.0, - 28544.0, 270.000, 'h02F')
     set u=BlzCreateUnitWithSkin(p, 'e00L', - 15808.0, 2368.0, 270.000, 'e00L')
     set u=BlzCreateUnitWithSkin(p, 'n06M', - 15488.0, 1920.0, 270.000, 'n06M')
     set u=BlzCreateUnitWithSkin(p, 'edob', - 16064.0, 1472.0, 270.000, 'edob')
@@ -10106,32 +10423,29 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'otrb', - 11136.0, - 8064.0, 270.000, 'otrb')
     set u=BlzCreateUnitWithSkin(p, 'edos', - 16704.0, 1536.0, 270.000, 'edos')
     set u=BlzCreateUnitWithSkin(p, 'n06M', - 16256.0, 2112.0, 270.000, 'n06M')
+    set u=BlzCreateUnitWithSkin(p, 'o056', - 21504.0, 7680.0, 270.000, 'o056')
     set u=BlzCreateUnitWithSkin(p, 'n06M', - 15616.0, 1472.0, 270.000, 'n06M')
     set u=BlzCreateUnitWithSkin(p, 'n01R', - 15616.0, 1920.0, 270.000, 'n01R')
-    set u=BlzCreateUnitWithSkin(p, 'h01R', - 22944.0, - 28384.0, 270.000, 'h01R')
     set u=BlzCreateUnitWithSkin(p, 'ngme', 9792.0, 2048.0, 270.000, 'ngme')
     set u=BlzCreateUnitWithSkin(p, 'ngme', 15616.0, - 3520.0, 270.000, 'ngme')
     set u=BlzCreateUnitWithSkin(p, 'ngme', 10688.0, - 22976.0, 270.000, 'ngme')
-    set u=BlzCreateUnitWithSkin(p, 'h02F', - 23872.0, - 31040.0, 270.000, 'h02F')
+    set u=BlzCreateUnitWithSkin(p, 'h02F', 7040.0, - 640.0, 270.000, 'h02F')
     set u=BlzCreateUnitWithSkin(p, 'eaom', - 13376.0, 12096.0, 270.000, 'eaom')
     set u=BlzCreateUnitWithSkin(p, 'h069', - 12480.0, 22336.0, 270.000, 'h069')
     set u=BlzCreateUnitWithSkin(p, 'eaoe', - 14144.0, 11968.0, 270.000, 'eaoe')
     set u=BlzCreateUnitWithSkin(p, 'eaow', - 13760.0, 10816.0, 270.000, 'eaow')
-    set u=BlzCreateUnitWithSkin(p, 'u01N', - 19776.0, 22208.0, 228.214, 'u01N')
+    set u=BlzCreateUnitWithSkin(p, 'h02F', 7168.0, - 640.0, 270.000, 'h02F')
+    set u=BlzCreateUnitWithSkin(p, 'u01N', - 26528.0, 12128.0, 270.000, 'u01N')
     set u=BlzCreateUnitWithSkin(p, 'e010', - 14464.0, 10752.0, 270.000, 'e010')
-    set u=BlzCreateUnitWithSkin(p, 'h02F', - 24128.0, - 31040.0, 270.000, 'h02F')
-    set u=BlzCreateUnitWithSkin(p, 'eate', - 12608.0, 11968.0, 270.000, 'eate')
+    set u=BlzCreateUnitWithSkin(p, 'h02F', 6912.0, - 640.0, 270.000, 'h02F')
+    set u=BlzCreateUnitWithSkin(p, 'eate', - 12576.0, 12000.0, 270.000, 'eate')
     set u=BlzCreateUnitWithSkin(p, 'emow', - 12992.0, 10752.0, 270.000, 'emow')
-    set u=BlzCreateUnitWithSkin(p, 'h02F', - 24000.0, - 30912.0, 270.000, 'h02F')
+    set u=BlzCreateUnitWithSkin(p, 'h039', 8320.0, 512.0, 270.000, 'h039')
     set u=BlzCreateUnitWithSkin(p, 'emow', - 13568.0, 10752.0, 270.000, 'emow')
     set u=BlzCreateUnitWithSkin(p, 'emow', - 14080.0, 11200.0, 270.000, 'emow')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 25408.0, - 31936.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'emow', - 13120.0, 11520.0, 270.000, 'emow')
     set u=BlzCreateUnitWithSkin(p, 'emow', - 12928.0, 11136.0, 270.000, 'emow')
     set u=BlzCreateUnitWithSkin(p, 'etrp', - 13824.0, 3072.0, 270.000, 'etrp')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 25216.0, - 31936.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'etrp', - 14336.0, 2816.0, 270.000, 'etrp')
     set u=BlzCreateUnitWithSkin(p, 'etrp', - 13568.0, 2496.0, 270.000, 'etrp')
     set u=BlzCreateUnitWithSkin(p, 'etol', - 15264.0, 4512.0, 270.000, 'etol')
@@ -10140,13 +10454,10 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'eaow', - 14400.0, 3968.0, 270.000, 'eaow')
     set u=BlzCreateUnitWithSkin(p, 'emow', - 14080.0, 4352.0, 270.000, 'emow')
     set u=BlzCreateUnitWithSkin(p, 'emow', - 15104.0, 2816.0, 270.000, 'emow')
-    set gg_unit_ngol_2372=BlzCreateUnitWithSkin(p, 'ngol', - 27584.0, - 30656.0, 270.000, 'ngol')
-    call SetResourceAmount(gg_unit_ngol_2372, 1200)
     set u=BlzCreateUnitWithSkin(p, 'h06F', 13920.0, 672.0, 120.000, 'h06F')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 25024.0, - 31808.0, 270.000, 'h04G')
     set u=BlzCreateUnitWithSkin(p, 'o03E', 21312.0, - 4160.0, 270.000, 'o03E')
     set u=BlzCreateUnitWithSkin(p, 'o03T', - 8960.0, - 13568.0, 270.000, 'o03T')
-    set u=BlzCreateUnitWithSkin(p, 'n04N', - 21312.0, 23424.0, 270.000, 'n04N')
+    set u=BlzCreateUnitWithSkin(p, 'n04N', - 28096.0, 13312.0, 270.000, 'n04N')
     set u=BlzCreateUnitWithSkin(p, 'o002', - 15232.0, - 4672.0, 270.000, 'o002')
     set u=BlzCreateUnitWithSkin(p, 'h02N', 11936.0, 2208.0, 270.000, 'h02N')
     set u=BlzCreateUnitWithSkin(p, 'o03D', 17216.0, - 3904.0, 270.000, 'o03D')
@@ -10165,7 +10476,6 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h06A', 11072.0, - 10496.0, 270.000, 'h06A')
     set u=BlzCreateUnitWithSkin(p, 'n050', - 3776.0, - 15488.0, 270.000, 'n050')
     set u=BlzCreateUnitWithSkin(p, 'o002', - 14848.0, - 5312.0, 270.000, 'o002')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 25024.0, - 32000.0, 270.000, 'h04G')
     set u=BlzCreateUnitWithSkin(p, 'h069', 11456.0, 1984.0, 270.000, 'h069')
     set u=BlzCreateUnitWithSkin(p, 'h036', 10976.0, 2144.0, 270.000, 'h036')
     set u=BlzCreateUnitWithSkin(p, 'h078', 11392.0, 2496.0, 270.000, 'h078')
@@ -10173,56 +10483,38 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h063', 11008.0, 2560.0, 270.000, 'h063')
     set u=BlzCreateUnitWithSkin(p, 'n06M', - 5888.0, - 28032.0, 270.000, 'n06M')
     set u=BlzCreateUnitWithSkin(p, 'n06M', - 5440.0, - 27520.0, 270.000, 'n06M')
-    set u=BlzCreateUnitWithSkin(p, 'h07V', 4096.0, - 4096.0, 270.000, 'h07V')
+    set u=BlzCreateUnitWithSkin(p, 'o05F', 5120.0, - 6720.0, 270.000, 'o05F')
     set u=BlzCreateUnitWithSkin(p, 'h01O', 16960.0, - 31424.0, 270.000, 'h01O')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 24704.0, - 32000.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 24704.0, - 31872.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
     set gg_unit_o013_2507=BlzCreateUnitWithSkin(p, 'o013', 22208.0, - 28864.0, 270.000, 'o013')
     call SetUnitState(gg_unit_o013_2507, UNIT_STATE_MANA, 300)
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 24384.0, - 31808.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 24384.0, - 32000.0, 270.000, 'h04G')
     set gg_unit_h00O_2516=BlzCreateUnitWithSkin(p, 'h00O', 5056.0, 15424.0, 270.000, 'h00O')
     call SetUnitColor(gg_unit_h00O_2516, ConvertPlayerColor(24))
     set u=BlzCreateUnitWithSkin(p, 'ngme', - 10112.0, 10176.0, 270.000, 'ngme')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 24128.0, - 31808.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'u00N', - 19744.0, 23072.0, 270.000, 'u00N')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 24128.0, - 32000.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'u006', - 26432.0, 12864.0, 270.000, 'u006')
     set u=BlzCreateUnitWithSkin(p, 'otto', - 15040.0, - 3776.0, 243.000, 'otto')
     set gg_unit_h070_2542=BlzCreateUnitWithSkin(p, 'h070', 10176.0, - 10944.0, 270.000, 'h070')
     set u=BlzCreateUnitWithSkin(p, 'obar', - 15040.0, - 4288.0, 180.000, 'obar')
     set gg_unit_e00M_2545=BlzCreateUnitWithSkin(p, 'e00M', - 20352.0, - 8512.0, 211.472, 'e00M')
     set u=BlzCreateUnitWithSkin(p, 'ncb9', 11136.0, - 11328.0, 270.000, 'ncb9')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 24000.0, - 32000.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 24000.0, - 31808.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 23552.0, - 31424.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'n06O', - 18208.0, 15584.0, 270.000, 'n06O')
-    set u=BlzCreateUnitWithSkin(p, 'h09K', - 17056.0, 14944.0, 270.000, 'h09K')
-    set u=BlzCreateUnitWithSkin(p, 'n04Q', - 20416.0, 21440.0, 270.000, 'n04Q')
-    set u=BlzCreateUnitWithSkin(p, 'h02F', - 16768.0, 14656.0, 270.000, 'h02F')
-    set u=BlzCreateUnitWithSkin(p, 'n040', - 20448.0, 23136.0, 270.000, 'n040')
+    set u=BlzCreateUnitWithSkin(p, 'n06O', - 18016.0, 16224.0, 270.000, 'n06O')
+    set u=BlzCreateUnitWithSkin(p, 'n04Q', - 27200.0, 11328.0, 270.000, 'n04Q')
+    set u=BlzCreateUnitWithSkin(p, 'h02F', 4864.0, 768.0, 270.000, 'h02F')
+    set u=BlzCreateUnitWithSkin(p, 'n040', - 27232.0, 13024.0, 270.000, 'n040')
     set u=BlzCreateUnitWithSkin(p, 'otto', - 10368.0, - 8448.0, 270.000, 'otto')
     set u=BlzCreateUnitWithSkin(p, 'h070', 8192.0, - 10432.0, 270.000, 'h070')
     set u=BlzCreateUnitWithSkin(p, 'e00L', - 19712.0, 14912.0, 270.000, 'e00L')
     set u=BlzCreateUnitWithSkin(p, 'o002', - 15872.0, - 5056.0, 270.000, 'o002')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 23744.0, - 31424.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h02F', - 16960.0, 15232.0, 270.000, 'h02F')
+    set u=BlzCreateUnitWithSkin(p, 'h02F', 7488.0, - 2688.0, 270.000, 'h02F')
+    set u=BlzCreateUnitWithSkin(p, 'h02F', 7552.0, - 2816.0, 270.000, 'h02F')
     set gg_unit_h007_2648=BlzCreateUnitWithSkin(p, 'h007', 20032.0, 7424.0, 270.000, 'h007')
     set u=BlzCreateUnitWithSkin(p, 'h016', 19840.0, 9344.0, 270.000, 'h016')
     set u=BlzCreateUnitWithSkin(p, 'h01T', 21760.0, 8768.0, 270.000, 'h01T')
-    set u=BlzCreateUnitWithSkin(p, 'n040', - 20064.0, 22816.0, 270.000, 'n040')
+    set u=BlzCreateUnitWithSkin(p, 'n040', - 26848.0, 12704.0, 270.000, 'n040')
     set u=BlzCreateUnitWithSkin(p, 'n03E', - 11648.0, - 1856.0, 270.000, 'n03E')
     set u=BlzCreateUnitWithSkin(p, 'n03E', - 12352.0, - 1792.0, 270.000, 'n03E')
     set u=BlzCreateUnitWithSkin(p, 'n071', - 25536.0, - 10304.0, 270.000, 'n071')
     call SetUnitColor(u, ConvertPlayerColor(16))
-    set u=BlzCreateUnitWithSkin(p, 'u01F', - 25088.0, - 9536.0, 270.000, 'u01F')
+    set u=BlzCreateUnitWithSkin(p, 'u01F', - 25056.0, - 9504.0, 270.000, 'u01F')
     call SetUnitColor(u, ConvertPlayerColor(16))
     set u=BlzCreateUnitWithSkin(p, 'ngme', - 11008.0, - 3776.0, 270.000, 'ngme')
     set u=BlzCreateUnitWithSkin(p, 'u01G', - 25888.0, - 8992.0, 270.000, 'u01G')
@@ -10238,7 +10530,7 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'ncbb', 14848.0, 12096.0, 270.000, 'ncbb')
     set u=BlzCreateUnitWithSkin(p, 'n071', - 25728.0, - 8768.0, 270.000, 'n071')
     call SetUnitColor(u, ConvertPlayerColor(16))
-    set u=BlzCreateUnitWithSkin(p, 'ndmg', - 21184.0, 22080.0, 270.000, 'ndmg')
+    set u=BlzCreateUnitWithSkin(p, 'ndmg', - 27968.0, 11968.0, 270.000, 'ndmg')
     set u=BlzCreateUnitWithSkin(p, 'o00D', - 25536.0, - 9728.0, 270.000, 'o00D')
     call SetUnitColor(u, ConvertPlayerColor(16))
     set u=BlzCreateUnitWithSkin(p, 'u021', - 25312.0, - 9056.0, 270.000, 'u021')
@@ -10249,26 +10541,21 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'n071', - 24960.0, - 10176.0, 270.000, 'n071')
     call SetUnitColor(u, ConvertPlayerColor(16))
     set u=BlzCreateUnitWithSkin(p, 'o035', - 3520.0, - 30912.0, 270.000, 'o035')
-    set gg_unit_u015_2698=BlzCreateUnitWithSkin(p, 'u015', - 19744.0, 21536.0, 270.000, 'u015')
-    set u=BlzCreateUnitWithSkin(p, 'h03Q', - 17024.0, 14400.0, 270.000, 'h03Q')
-    set u=BlzCreateUnitWithSkin(p, 'n008', - 17728.0, 14464.0, 270.000, 'n008')
+    set gg_unit_u015_2698=BlzCreateUnitWithSkin(p, 'u015', - 26528.0, 11424.0, 270.000, 'u015')
     set u=BlzCreateUnitWithSkin(p, 'u01H', - 25984.0, - 9472.0, 270.000, 'u01H')
     call SetUnitColor(u, ConvertPlayerColor(16))
     set u=BlzCreateUnitWithSkin(p, 'otrb', - 11136.0, - 8192.0, 270.000, 'otrb')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 23360.0, - 30656.0, 270.000, 'h04G')
     set u=BlzCreateUnitWithSkin(p, 'otrb', - 11648.0, - 8448.0, 270.000, 'otrb')
     set u=BlzCreateUnitWithSkin(p, 'n003', 19008.0, 21824.0, 270.000, 'n003')
-    set u=BlzCreateUnitWithSkin(p, 'e00R', - 16704.0, 22720.0, 270.000, 'e00R')
+    set u=BlzCreateUnitWithSkin(p, 'e00R', - 16672.0, 22752.0, 270.000, 'e00R')
     set u=BlzCreateUnitWithSkin(p, 'otrb', - 11520.0, - 8448.0, 270.000, 'otrb')
     set u=BlzCreateUnitWithSkin(p, 'ngad', 19072.0, - 9664.0, 270.000, 'ngad')
     set u=BlzCreateUnitWithSkin(p, 'otrb', - 11008.0, - 8000.0, 270.000, 'otrb')
     set u=BlzCreateUnitWithSkin(p, 'ofor', - 11552.0, - 8928.0, 270.000, 'ofor')
-    set u=BlzCreateUnitWithSkin(p, 'h02F', - 17472.0, 14720.0, 270.000, 'h02F')
     set u=BlzCreateUnitWithSkin(p, 'n06M', - 17984.0, 14976.0, 270.000, 'n06M')
-    set u=BlzCreateUnitWithSkin(p, 'h03D', - 17504.0, 15840.0, 190.980, 'h03D')
     set u=BlzCreateUnitWithSkin(p, 'n03E', - 9216.0, - 1152.0, 270.000, 'n03E')
     set u=BlzCreateUnitWithSkin(p, 'nshp', 19648.0, - 9920.0, 270.000, 'nshp')
-    set u=BlzCreateUnitWithSkin(p, 'nnfm', 15360.0, - 28288.0, 270.000, 'nnfm')
+    set u=BlzCreateUnitWithSkin(p, 'n0C5', 15360.0, - 28288.0, 270.000, 'n0C5')
     set u=BlzCreateUnitWithSkin(p, 'nnfm', - 25984.0, 21696.0, 270.000, 'nnfm')
     set u=BlzCreateUnitWithSkin(p, 'ngol', - 27904.0, - 13440.0, 329.348, 'ngol')
     call SetResourceAmount(u, 600)
@@ -10276,16 +10563,12 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h03M', - 19584.0, 12928.0, 270.000, 'h03M')
     set u=BlzCreateUnitWithSkin(p, 'h03M', - 19136.0, 12480.0, 270.000, 'h03M')
     set u=BlzCreateUnitWithSkin(p, 'nnfm', - 25536.0, 20864.0, 270.000, 'nnfm')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 23360.0, - 30912.0, 270.000, 'h04G')
     set u=BlzCreateUnitWithSkin(p, 'hbar', 8448.0, 6528.0, 301.622, 'hbar')
     set u=BlzCreateUnitWithSkin(p, 'ngme', 18880.0, - 9856.0, 270.000, 'ngme')
     set u=BlzCreateUnitWithSkin(p, 'h03M', - 20224.0, 13248.0, 270.000, 'h03M')
-    set u=BlzCreateUnitWithSkin(p, 'e011', - 19936.0, 12576.0, 270.000, 'e011')
     set u=BlzCreateUnitWithSkin(p, 'edos', - 19584.0, 14528.0, 270.000, 'edos')
     set u=BlzCreateUnitWithSkin(p, 'nntg', - 24576.0, 20928.0, 270.000, 'nntg')
     set u=BlzCreateUnitWithSkin(p, 'nntg', - 24576.0, 21504.0, 270.000, 'nntg')
-    set u=BlzCreateUnitWithSkin(p, 'ngol', - 10688.0, 11264.0, 270.000, 'ngol')
-    call SetResourceAmount(u, 1000)
     set u=BlzCreateUnitWithSkin(p, 'e00V', - 16704.0, 22976.0, 270.000, 'e00V')
     set gg_unit_n05A_2845=BlzCreateUnitWithSkin(p, 'n05A', - 26752.0, 19200.0, 270.000, 'n05A')
     set gg_unit_n085_2846=BlzCreateUnitWithSkin(p, 'n085', - 16736.0, 23392.0, 186.360, 'n085')
@@ -10298,27 +10581,20 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     call SetUnitState(u, UNIT_STATE_MANA, 500)
     set u=BlzCreateUnitWithSkin(p, 'n06M', - 16640.0, 23168.0, 193.701, 'n06M')
     call SetUnitState(u, UNIT_STATE_MANA, 500)
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 23040.0, - 29888.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 23296.0, - 31424.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h04H', - 23232.0, - 31232.0, 270.000, 'h04H')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 23040.0, - 30144.0, 270.000, 'h04G')
     set u=BlzCreateUnitWithSkin(p, 'n03I', - 16992.0, - 8480.0, 270.000, 'n03I')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_Dire_Maul_Exit), GetRectCenterY(gg_rct_Dire_Maul_Exit))
+    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'o048', - 2560.0, - 15168.0, 270.000, 'o048')
-    set u=BlzCreateUnitWithSkin(p, 'h03A', - 23680.0, - 29504.0, 270.000, 'h03A')
-    set u=BlzCreateUnitWithSkin(p, 'h03A', - 25472.0, - 31424.0, 270.000, 'h03A')
     set u=BlzCreateUnitWithSkin(p, 'ovln', - 16032.0, - 4192.0, 270.000, 'ovln')
-    set u=BlzCreateUnitWithSkin(p, 'h03A', - 23488.0, - 31168.0, 270.000, 'h03A')
     set u=BlzCreateUnitWithSkin(p, 'n0BC', - 27136.0, 15936.0, 270.000, 'n0BC')
     set u=BlzCreateUnitWithSkin(p, 'h06S', - 25632.0, 21536.0, 270.000, 'h06S')
-    set u=BlzCreateUnitWithSkin(p, 'h03A', - 23936.0, - 29952.0, 270.000, 'h03A')
-    set u=BlzCreateUnitWithSkin(p, 'n0A3', - 27264.0, 20864.0, 270.000, 'n0A3')
-    set u=BlzCreateUnitWithSkin(p, 'h01R', - 28000.0, - 31264.0, 270.000, 'h01R')
-    set u=BlzCreateUnitWithSkin(p, 'ngol', - 17984.0, 16384.0, 270.000, 'ngol')
-    call SetResourceAmount(u, 1000)
-    set u=BlzCreateUnitWithSkin(p, 'h07X', - 8544.0, 23200.0, 270.000, 'h07X')
+    set u=BlzCreateUnitWithSkin(p, 'n0A3', - 27232.0, 20896.0, 270.000, 'n0A3')
+    set u=BlzCreateUnitWithSkin(p, 'n0C4', 11136.0, - 29952.0, 270.000, 'n0C4')
+    set u=BlzCreateUnitWithSkin(p, 'h09L', - 8544.0, 23200.0, 270.000, 'h09L')
     set u=BlzCreateUnitWithSkin(p, 'h085', - 8512.0, 22400.0, 270.000, 'h085')
     set u=BlzCreateUnitWithSkin(p, 'ntt2', - 15232.0, - 3328.0, 250.000, 'ntt2')
+    set u=BlzCreateUnitWithSkin(p, 'n0C4', 12096.0, - 31040.0, 270.000, 'n0C4')
     set u=BlzCreateUnitWithSkin(p, 'n0AR', - 28096.0, - 4800.0, 270.000, 'n0AR')
     set u=BlzCreateUnitWithSkin(p, 'n0B2', - 26432.0, - 5760.0, 270.000, 'n0B2')
     set u=BlzCreateUnitWithSkin(p, 'h081', - 8896.0, 22976.0, 342.262, 'h081')
@@ -10342,8 +10618,6 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'n005', - 25344.0, 19136.0, 270.000, 'n005')
     set u=BlzCreateUnitWithSkin(p, 'n0AY', - 23552.0, - 320.0, 270.000, 'n0AY')
     set u=BlzCreateUnitWithSkin(p, 'n005', - 24896.0, 19456.0, 270.000, 'n005')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 21568.0, - 26112.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'n0AY', - 22848.0, - 320.0, 270.000, 'n0AY')
     set u=BlzCreateUnitWithSkin(p, 'n0B1', - 22976.0, - 2560.0, 270.000, 'n0B1')
     set u=BlzCreateUnitWithSkin(p, 'nshp', - 16000.0, 11968.0, 270.000, 'nshp')
@@ -10367,7 +10641,7 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'n0AX', - 26176.0, 960.0, 270.000, 'n0AX')
     set u=BlzCreateUnitWithSkin(p, 'n0AV', - 23712.0, - 5792.0, 270.000, 'n0AV')
     set u=BlzCreateUnitWithSkin(p, 'n0AX', - 27200.0, - 4992.0, 270.000, 'n0AX')
-    set u=BlzCreateUnitWithSkin(p, 'ncb9', 3904.0, - 5248.0, 40.754, 'ncb9')
+    set u=BlzCreateUnitWithSkin(p, 'ncb9', 4928.0, - 7808.0, 270.000, 'ncb9')
     set u=BlzCreateUnitWithSkin(p, 'n0B3', - 28096.0, - 5824.0, 270.000, 'n0B3')
     set u=BlzCreateUnitWithSkin(p, 'n0B3', - 25856.0, - 256.0, 270.000, 'n0B3')
     set u=BlzCreateUnitWithSkin(p, 'n0AU', - 26240.0, - 6976.0, 270.000, 'n0AU')
@@ -10376,6 +10650,7 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'n0AY', - 28288.0, 128.0, 270.000, 'n0AY')
     set u=BlzCreateUnitWithSkin(p, 'n0B1', - 28352.0, - 384.0, 270.000, 'n0B1')
     set u=BlzCreateUnitWithSkin(p, 'n0AY', - 27264.0, 576.0, 270.000, 'n0AY')
+    set u=BlzCreateUnitWithSkin(p, 'n08W', - 4160.0, - 20672.0, 270.000, 'n08W')
     set u=BlzCreateUnitWithSkin(p, 'nfh0', 18176.0, 3968.0, 270.000, 'nfh0')
     set u=BlzCreateUnitWithSkin(p, 'nfh1', 17728.0, 3904.0, 270.000, 'nfh1')
     call SetUnitAcquireRange(u, 200.0)
@@ -10385,17 +10660,31 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nmh0', 18912.0, 4064.0, 270.000, 'nmh0')
     set u=BlzCreateUnitWithSkin(p, 'h01T', 12928.0, 5696.0, 270.000, 'h01T')
-    set gg_unit_h00L_3084=BlzCreateUnitWithSkin(p, 'h00L', - 21760.0, - 25984.0, 270.000, 'h00L')
+    set u=BlzCreateUnitWithSkin(p, 'h086', - 23296.0, 15744.0, 270.000, 'h086')
+    set u=BlzCreateUnitWithSkin(p, 'unpl', 2272.0, 20512.0, 270.000, 'unpl')
+    set u=BlzCreateUnitWithSkin(p, 'uzg1', 2304.0, 18752.0, 270.000, 'uzg1')
+    set u=BlzCreateUnitWithSkin(p, 'uzg1', 2752.0, 18752.0, 270.000, 'uzg1')
+    set u=BlzCreateUnitWithSkin(p, 'u003', 2496.0, 19456.0, 270.000, 'u003')
+    set u=BlzCreateUnitWithSkin(p, 'uzg2', 1600.0, 19648.0, 270.000, 'uzg2')
     set u=BlzCreateUnitWithSkin(p, 'h01V', 12768.0, 5216.0, 270.000, 'h01V')
+    set u=BlzCreateUnitWithSkin(p, 'usep', 2624.0, 20800.0, 270.000, 'usep')
+    set u=BlzCreateUnitWithSkin(p, 'uaod', 3168.0, 19680.0, 270.000, 'uaod')
+    set u=BlzCreateUnitWithSkin(p, 'uzg1', 2880.0, 20032.0, 270.000, 'uzg1')
+    set u=BlzCreateUnitWithSkin(p, 'utom', 3040.0, 19232.0, 270.000, 'utom')
+    set u=BlzCreateUnitWithSkin(p, 'ushp', 1632.0, 18784.0, 270.000, 'ushp')
+    set u=BlzCreateUnitWithSkin(p, 'uzg1', 1216.0, 19264.0, 270.000, 'uzg1')
+    set u=BlzCreateUnitWithSkin(p, 'ugrv', 3136.0, 18880.0, 270.000, 'ugrv')
+    set u=BlzCreateUnitWithSkin(p, 'utod', 1632.0, 20576.0, 270.000, 'utod')
+    set u=BlzCreateUnitWithSkin(p, 'uslh', 1824.0, 20064.0, 270.000, 'uslh')
     set u=BlzCreateUnitWithSkin(p, 'h05P', 9664.0, 4800.0, 270.000, 'h05P')
     set u=BlzCreateUnitWithSkin(p, 'h05O', 10065.5, 5232.1, 357.957, 'h05O')
     set u=BlzCreateUnitWithSkin(p, 'h05P', 8768.0, 4224.0, 270.000, 'h05P')
     set u=BlzCreateUnitWithSkin(p, 'h05Q', 9152.0, 4544.0, 270.000, 'h05Q')
     set u=BlzCreateUnitWithSkin(p, 'n005', - 26432.0, 18816.0, 270.000, 'n005')
     set u=BlzCreateUnitWithSkin(p, 'h066', - 13472.0, 21344.0, 270.000, 'h066')
-    set u=BlzCreateUnitWithSkin(p, 'n005', - 26432.0, 19648.0, 270.000, 'n005')
-    set u=BlzCreateUnitWithSkin(p, 'n0A3', - 26368.0, 20352.0, 270.000, 'n0A3')
-    set u=BlzCreateUnitWithSkin(p, 'n0A3', - 27008.0, 19712.0, 270.000, 'n0A3')
+    set u=BlzCreateUnitWithSkin(p, 'n005', - 26432.0, 19776.0, 270.000, 'n005')
+    set u=BlzCreateUnitWithSkin(p, 'n0A3', - 26336.0, 20384.0, 270.000, 'n0A3')
+    set u=BlzCreateUnitWithSkin(p, 'n0A3', - 27040.0, 19744.0, 270.000, 'n0A3')
     set u=BlzCreateUnitWithSkin(p, 'nnsg', - 26752.0, 18688.0, 270.000, 'nnsg')
     set u=BlzCreateUnitWithSkin(p, 'nfh1', - 3328.0, - 2816.0, 270.000, 'nfh1')
     set u=BlzCreateUnitWithSkin(p, 'nfh0', - 3904.0, - 2688.0, 270.000, 'nfh0')
@@ -10408,8 +10697,11 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     call SetUnitState(gg_unit_nfh0_3218, UNIT_STATE_LIFE, 0.78 * life)
     call SetUnitAcquireRange(gg_unit_nfh0_3218, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nnsg', - 27136.0, 22464.0, 270.000, 'nnsg')
+    set gg_unit_n0BE_3261=BlzCreateUnitWithSkin(p, 'n0BE', 3552.0, 20768.0, 270.000, 'n0BE')
     set u=BlzCreateUnitWithSkin(p, 'npgf', 22336.0, - 30016.0, 270.000, 'npgf')
     set u=BlzCreateUnitWithSkin(p, 'npgf', 22336.0, - 29888.0, 270.000, 'npgf')
+    set gg_unit_ngol_3272=BlzCreateUnitWithSkin(p, 'ngol', 3328.0, - 22720.0, 270.000, 'ngol')
+    call SetResourceAmount(gg_unit_ngol_3272, 2000)
     set u=BlzCreateUnitWithSkin(p, 'nten', - 1728.0, 16960.0, 270.000, 'nten')
     set u=BlzCreateUnitWithSkin(p, 'npgf', 22464.0, - 29952.0, 270.000, 'npgf')
     set u=BlzCreateUnitWithSkin(p, 'npgf', 21568.0, - 30208.0, 270.000, 'npgf')
@@ -10428,12 +10720,22 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set gg_unit_hbla_3319=BlzCreateUnitWithSkin(p, 'hbla', 2720.0, - 26848.0, 270.000, 'hbla')
     set gg_unit_hgtw_3320=BlzCreateUnitWithSkin(p, 'hgtw', 2880.0, - 26496.0, 270.000, 'hgtw')
     set gg_unit_hars_3321=BlzCreateUnitWithSkin(p, 'hars', 2976.0, - 27104.0, 270.000, 'hars')
+    set u=BlzCreateUnitWithSkin(p, 'o058', - 20128.0, 8288.0, 270.000, 'o058')
     set gg_unit_h05Z_3325=BlzCreateUnitWithSkin(p, 'h05Z', 3392.0, - 26688.0, 270.000, 'h05Z')
-    set u=BlzCreateUnitWithSkin(p, 'ncbe', 2624.0, - 3840.0, 33.220, 'ncbe')
+    set u=BlzCreateUnitWithSkin(p, 'o053', - 20576.0, 7904.0, 270.000, 'o053')
+    set u=BlzCreateUnitWithSkin(p, 'ncbe', 3648.0, - 6400.0, 270.000, 'ncbe')
+    set u=BlzCreateUnitWithSkin(p, 'o052', - 20224.0, 7872.0, 270.000, 'o052')
     set u=BlzCreateUnitWithSkin(p, 'ngme', - 1472.0, - 5440.0, 270.000, 'ngme')
     set u=BlzCreateUnitWithSkin(p, 'ngad', 2944.0, 16256.0, 270.000, 'ngad')
-    set u=BlzCreateUnitWithSkin(p, 'ngad', 1280.0, - 21760.0, 270.000, 'ngad')
+    set u=BlzCreateUnitWithSkin(p, 'u00U', - 20800.0, 7232.0, 270.000, 'u00U')
+    set u=BlzCreateUnitWithSkin(p, 'u00U', - 20416.0, 7680.0, 270.000, 'u00U')
     set u=BlzCreateUnitWithSkin(p, 'nnfm', - 24960.0, 19328.0, 270.000, 'nnfm')
+    set u=BlzCreateUnitWithSkin(p, 'u00U', - 20416.0, 8576.0, 270.000, 'u00U')
+    set u=BlzCreateUnitWithSkin(p, 'u00U', - 21184.0, 8832.0, 270.000, 'u00U')
+    set gg_unit_o055_3337=BlzCreateUnitWithSkin(p, 'o055', - 21312.0, 7168.0, 270.000, 'o055')
+    set gg_unit_o054_3338=BlzCreateUnitWithSkin(p, 'o054', - 21024.0, 7648.0, 270.000, 'o054')
+    set gg_unit_o051_3356=BlzCreateUnitWithSkin(p, 'o051', - 21024.0, 8480.0, 270.000, 'o051')
+    set u=BlzCreateUnitWithSkin(p, 'o056', - 21504.0, 8320.0, 270.000, 'o056')
     set u=BlzCreateUnitWithSkin(p, 'nnad', - 24032.0, 20256.0, 270.000, 'nnad')
     set u=BlzCreateUnitWithSkin(p, 'nnfm', - 25600.0, 24128.0, 270.000, 'nnfm')
     set u=BlzCreateUnitWithSkin(p, 'nnfm', - 25344.0, 24128.0, 270.000, 'nnfm')
@@ -10441,52 +10743,80 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nntg', - 25920.0, 23872.0, 270.000, 'nntg')
     set u=BlzCreateUnitWithSkin(p, 'nnfm', - 24320.0, 21696.0, 270.000, 'nnfm')
     set gg_unit_n052_3374=BlzCreateUnitWithSkin(p, 'n052', 20915.5, - 25302.1, 270.000, 'n052')
-    set gg_unit_n045_3377=BlzCreateUnitWithSkin(p, 'n045', 8448.0, - 30976.0, 270.000, 'n045')
+    set gg_unit_n045_3377=BlzCreateUnitWithSkin(p, 'n045', 8576.0, - 30784.0, 270.000, 'n045')
     set gg_unit_h01D_3378=BlzCreateUnitWithSkin(p, 'h01D', - 668.7, 1193.4, 270.000, 'h01D')
+    call WaygateSetDestination(gg_unit_h01D_3378, GetRectCenterX(gg_rct_NazjatarExit2), GetRectCenterY(gg_rct_NazjatarExit2))
+    call WaygateActivate(gg_unit_h01D_3378, true)
     set gg_unit_h01D_3379=BlzCreateUnitWithSkin(p, 'h01D', - 27808.0, 23584.0, 180.000, 'h01D')
+    call WaygateSetDestination(gg_unit_h01D_3379, GetRectCenterX(gg_rct_AethneumLibraryEntrance), GetRectCenterY(gg_rct_AethneumLibraryEntrance))
+    call WaygateActivate(gg_unit_h01D_3379, true)
     set gg_unit_h01D_3380=BlzCreateUnitWithSkin(p, 'h01D', - 23840.0, 21024.0, 180.000, 'h01D')
+    call WaygateSetDestination(gg_unit_h01D_3380, GetRectCenterX(gg_rct_AetheneumTombEntrance2), GetRectCenterY(gg_rct_AetheneumTombEntrance2))
+    call WaygateActivate(gg_unit_h01D_3380, true)
     set gg_unit_h01D_3381=BlzCreateUnitWithSkin(p, 'h01D', 12231.1, - 27480.6, 270.000, 'h01D')
+    call WaygateSetDestination(gg_unit_h01D_3381, GetRectCenterX(gg_rct_NazjatarEntrance1), GetRectCenterY(gg_rct_NazjatarEntrance1))
+    call WaygateActivate(gg_unit_h01D_3381, true)
     set gg_unit_h01D_3384=BlzCreateUnitWithSkin(p, 'h01D', 12664.7, - 29661.8, 130.510, 'h01D')
+    call WaygateSetDestination(gg_unit_h01D_3384, GetRectCenterX(gg_rct_NazjatarEntrance2), GetRectCenterY(gg_rct_NazjatarEntrance2))
+    call WaygateActivate(gg_unit_h01D_3384, true)
     set gg_unit_h01D_3385=BlzCreateUnitWithSkin(p, 'h01D', - 18004.9, 24158.5, 270.000, 'h01D')
+    set u=BlzCreateUnitWithSkin(p, 'ngol', - 3008.0, - 31680.0, 270.000, 'ngol')
+    call SetResourceAmount(u, 800)
     set gg_unit_h01D_3387=BlzCreateUnitWithSkin(p, 'h01D', - 17701.3, - 7273.3, 130.000, 'h01D')
-    set u=BlzCreateUnitWithSkin(p, 'nnsg', 11136.0, - 29952.0, 270.000, 'nnsg')
-    set u=BlzCreateUnitWithSkin(p, 'nnsg', 9728.0, - 27712.0, 270.000, 'nnsg')
-    set u=BlzCreateUnitWithSkin(p, 'nnsg', 8384.0, - 27584.0, 270.000, 'nnsg')
-    set u=BlzCreateUnitWithSkin(p, 'nnfm', 11392.0, - 30272.0, 270.000, 'nnfm')
+    set u=BlzCreateUnitWithSkin(p, 'n0C4', 9728.0, - 27712.0, 270.000, 'n0C4')
+    set u=BlzCreateUnitWithSkin(p, 'n0C4', 8384.0, - 27584.0, 270.000, 'n0C4')
+    set u=BlzCreateUnitWithSkin(p, 'n0C0', 10784.0, - 30112.0, 270.000, 'n0C0')
+    set u=BlzCreateUnitWithSkin(p, 'u00U', - 21056.0, 7936.0, 270.000, 'u00U')
+    set u=BlzCreateUnitWithSkin(p, 'n0C5', 11072.0, - 30144.0, 270.000, 'n0C5')
+    set u=BlzCreateUnitWithSkin(p, 'n0C1', 11392.0, - 30272.0, 270.000, 'n0C1')
+    set u=BlzCreateUnitWithSkin(p, 'n0C5', 8896.0, - 31040.0, 270.000, 'n0C5')
     set u=BlzCreateUnitWithSkin(p, 'ntn2', - 2304.0, 17152.0, 270.000, 'ntn2')
-    set u=BlzCreateUnitWithSkin(p, 'nnfm', 11328.0, - 30592.0, 270.000, 'nnfm')
-    set u=BlzCreateUnitWithSkin(p, 'nnfm', 11072.0, - 30976.0, 270.000, 'nnfm')
-    set u=BlzCreateUnitWithSkin(p, 'nnfm', 12160.0, - 30720.0, 270.000, 'nnfm')
-    set u=BlzCreateUnitWithSkin(p, 'nnfm', 9024.0, - 27520.0, 270.000, 'nnfm')
+    set u=BlzCreateUnitWithSkin(p, 'n0C5', 8256.0, - 30592.0, 270.000, 'n0C5')
+    set u=BlzCreateUnitWithSkin(p, 'n0C5', 8448.0, - 30016.0, 270.000, 'n0C5')
+    set u=BlzCreateUnitWithSkin(p, 'n0C5', 9408.0, - 30976.0, 270.000, 'n0C5')
+    set u=BlzCreateUnitWithSkin(p, 'n0C1', 11328.0, - 30592.0, 270.000, 'n0C1')
+    set u=BlzCreateUnitWithSkin(p, 'n0C1', 11072.0, - 30976.0, 270.000, 'n0C1')
+    set u=BlzCreateUnitWithSkin(p, 'n0C1', 12160.0, - 30720.0, 270.000, 'n0C1')
+    set u=BlzCreateUnitWithSkin(p, 'n0C1', 9024.0, - 27520.0, 270.000, 'n0C1')
+    set u=BlzCreateUnitWithSkin(p, 'n0C5', 11200.0, - 29056.0, 270.000, 'n0C5')
+    set u=BlzCreateUnitWithSkin(p, 'n0C5', 10432.0, - 28224.0, 270.000, 'n0C5')
     set u=BlzCreateUnitWithSkin(p, 'n03M', - 15616.0, - 4544.0, 270.000, 'n03M')
-    set u=BlzCreateUnitWithSkin(p, 'nnfm', 8768.0, - 27968.0, 270.000, 'nnfm')
-    set u=BlzCreateUnitWithSkin(p, 'nnfm', 8384.0, - 28096.0, 270.000, 'nnfm')
-    set u=BlzCreateUnitWithSkin(p, 'nnfm', 10048.0, - 27712.0, 270.000, 'nnfm')
+    set u=BlzCreateUnitWithSkin(p, 'n0C1', 8768.0, - 27968.0, 270.000, 'n0C1')
+    set u=BlzCreateUnitWithSkin(p, 'o05J', - 26688.0, 3712.0, 270.000, 'o05J')
+    set u=BlzCreateUnitWithSkin(p, 'o03E', - 26368.0, 3712.0, 270.000, 'o03E')
+    set u=BlzCreateUnitWithSkin(p, 'o03D', - 27136.0, 3712.0, 270.000, 'o03D')
+    set u=BlzCreateUnitWithSkin(p, 'n0C1', 8384.0, - 28096.0, 270.000, 'n0C1')
+    set u=BlzCreateUnitWithSkin(p, 'n0C1', 10048.0, - 27712.0, 270.000, 'n0C1')
     set u=BlzCreateUnitWithSkin(p, 'n05Q', 8896.0, - 30528.0, 270.000, 'n05Q')
-    set u=BlzCreateUnitWithSkin(p, 'nmrb', 9216.0, - 29440.0, 270.000, 'nmrb')
-    set u=BlzCreateUnitWithSkin(p, 'nnad', 10784.0, - 30112.0, 270.000, 'nnad')
-    set u=BlzCreateUnitWithSkin(p, 'nnsa', 9216.0, - 28608.0, 270.000, 'nnsa')
-    set u=BlzCreateUnitWithSkin(p, 'nnfm', 10816.0, - 31232.0, 270.000, 'nnfm')
-    set u=BlzCreateUnitWithSkin(p, 'nnfm', 9984.0, - 31232.0, 270.000, 'nnfm')
-    set u=BlzCreateUnitWithSkin(p, 'n0A3', 8256.0, - 28608.0, 270.000, 'n0A3')
-    set u=BlzCreateUnitWithSkin(p, 'nnfm', 8192.0, - 29312.0, 270.000, 'nnfm')
+    set u=BlzCreateUnitWithSkin(p, 'n0BZ', 9216.0, - 29440.0, 270.000, 'n0BZ')
+    set u=BlzCreateUnitWithSkin(p, 'n0C7', 8320.0, - 28608.0, 270.000, 'n0C7')
+    set u=BlzCreateUnitWithSkin(p, 'n08V', 9216.0, - 28608.0, 270.000, 'n08V')
+    set u=BlzCreateUnitWithSkin(p, 'n0C1', 10816.0, - 31232.0, 270.000, 'n0C1')
+    set u=BlzCreateUnitWithSkin(p, 'n0C1', 9984.0, - 31232.0, 270.000, 'n0C1')
+    set u=BlzCreateUnitWithSkin(p, 'h0A4', 11360.0, - 30432.0, 270.000, 'h0A4')
+    set u=BlzCreateUnitWithSkin(p, 'n0C1', 8192.0, - 29312.0, 270.000, 'n0C1')
     set u=BlzCreateUnitWithSkin(p, 'ntn2', - 5568.0, 15808.0, 245.672, 'ntn2')
-    set u=BlzCreateUnitWithSkin(p, 'nnsg', 12096.0, - 31040.0, 270.000, 'nnsg')
+    set u=BlzCreateUnitWithSkin(p, 'n0C1', 8512.0, - 28288.0, 270.000, 'n0C1')
     set u=BlzCreateUnitWithSkin(p, 'n00K', - 25472.0, 22272.0, 270.000, 'n00K')
     set u=BlzCreateUnitWithSkin(p, 'nten', - 6080.0, 15872.0, 293.921, 'nten')
     set u=BlzCreateUnitWithSkin(p, 'nten', - 5696.0, 15040.0, 184.406, 'nten')
-    set u=BlzCreateUnitWithSkin(p, 'nntg', 9408.0, - 30400.0, 270.000, 'nntg')
-    set u=BlzCreateUnitWithSkin(p, 'nntg', 9024.0, - 30016.0, 270.000, 'nntg')
-    set u=BlzCreateUnitWithSkin(p, 'nntg', 9664.0, - 28096.0, 270.000, 'nntg')
-    set u=BlzCreateUnitWithSkin(p, 'nntg', 11584.0, - 30272.0, 270.000, 'nntg')
-    set u=BlzCreateUnitWithSkin(p, 'nntg', 11520.0, - 30912.0, 270.000, 'nntg')
-    set u=BlzCreateUnitWithSkin(p, 'nntg', 11776.0, - 29696.0, 270.000, 'nntg')
-    set u=BlzCreateUnitWithSkin(p, 'nntg', 9664.0, - 31104.0, 270.000, 'nntg')
+    set u=BlzCreateUnitWithSkin(p, 'n0C5', 9408.0, - 30400.0, 270.000, 'n0C5')
+    set u=BlzCreateUnitWithSkin(p, 'n0C5', 9024.0, - 30016.0, 270.000, 'n0C5')
+    set u=BlzCreateUnitWithSkin(p, 'n0C5', 9664.0, - 28096.0, 270.000, 'n0C5')
+    set u=BlzCreateUnitWithSkin(p, 'n0C5', 11584.0, - 30272.0, 270.000, 'n0C5')
+    set u=BlzCreateUnitWithSkin(p, 'n0C5', 11520.0, - 30912.0, 270.000, 'n0C5')
+    set u=BlzCreateUnitWithSkin(p, 'n0C5', 11776.0, - 29696.0, 270.000, 'n0C5')
+    set u=BlzCreateUnitWithSkin(p, 'n0C5', 9664.0, - 31104.0, 270.000, 'n0C5')
     set u=BlzCreateUnitWithSkin(p, 'nntg', 8320.0, - 29696.0, 270.000, 'nntg')
-    set u=BlzCreateUnitWithSkin(p, 'h06S', 11360.0, - 30432.0, 270.000, 'h06S')
-    set u=BlzCreateUnitWithSkin(p, 'nnfm', 8512.0, - 28288.0, 270.000, 'nnfm')
-    set u=BlzCreateUnitWithSkin(p, 'n04T', 12096.0, - 30400.0, 270.000, 'n04T')
+    set u=BlzCreateUnitWithSkin(p, 'n0C8', 12096.0, - 30400.0, 270.000, 'n0C8')
+    set gg_unit_n0BQ_3487=BlzCreateUnitWithSkin(p, 'n0BQ', 9292.3, - 30048.6, 270.000, 'n0BQ')
     set u=BlzCreateUnitWithSkin(p, 'ncbf', 8320.0, 8256.0, 45.000, 'ncbf')
+    set u=BlzCreateUnitWithSkin(p, 'ngol', - 1728.0, - 8192.0, 270.000, 'ngol')
+    call SetResourceAmount(u, 800)
+    set u=BlzCreateUnitWithSkin(p, 'n0BT', - 27989.0, 999.0, 270.000, 'n0BT')
+    set u=BlzCreateUnitWithSkin(p, 'n0BT', - 23066.1, 1052.2, 270.000, 'n0BT')
+    set u=BlzCreateUnitWithSkin(p, 'n0BT', - 28221.3, - 6999.7, 270.000, 'n0BT')
+    set u=BlzCreateUnitWithSkin(p, 'n0BT', - 23402.0, - 6917.3, 270.000, 'n0BT')
     set u=BlzCreateUnitWithSkin(p, 'nshp', - 10432.0, - 3904.0, 270.000, 'nshp')
     set u=BlzCreateUnitWithSkin(p, 'nshp', - 7872.0, - 13376.0, 270.000, 'nshp')
     set u=BlzCreateUnitWithSkin(p, 'ncbf', 13952.0, 11904.0, 45.000, 'ncbf')
@@ -10494,113 +10824,30 @@ function CreateNeutralPassiveBuildings takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'ncbd', 14848.0, 12640.0, 45.000, 'ncbd')
     set u=BlzCreateUnitWithSkin(p, 'ncb9', 15776.0, 11584.0, 35.000, 'ncb9')
     set u=BlzCreateUnitWithSkin(p, 'ncb9', 14848.0, 13120.0, 180.000, 'ncb9')
-    set u=BlzCreateUnitWithSkin(p, 'hshy', 13856.0, 13664.0, 270.000, 'hshy')
+    set u=BlzCreateUnitWithSkin(p, 'n07H', 5440.0, - 7680.0, 270.000, 'n07H')
     set u=BlzCreateUnitWithSkin(p, 'n09Y', - 3328.0, - 31360.0, 270.000, 'n09Y')
     set u=BlzCreateUnitWithSkin(p, 'hgra', 11200.0, - 4480.0, 270.000, 'hgra')
-    set u=BlzCreateUnitWithSkin(p, 'h042', 9760.0, - 5408.0, 50.000, 'h042')
+    set u=BlzCreateUnitWithSkin(p, 'h042', 9760.0, - 5408.0, 270.000, 'h042')
     set u=BlzCreateUnitWithSkin(p, 'h056', 11136.0, - 6080.0, 270.000, 'h056')
     set u=BlzCreateUnitWithSkin(p, 'h056', 10112.0, - 6144.0, 270.000, 'h056')
     set u=BlzCreateUnitWithSkin(p, 'n05W', 15168.0, - 28288.0, 270.000, 'n05W')
+    set u=BlzCreateUnitWithSkin(p, 'h07T', 1984.0, - 4800.0, 270.000, 'h07T')
+    set u=BlzCreateUnitWithSkin(p, 'h07T', 1984.0, - 5120.0, 270.000, 'h07T')
     set gg_unit_n03Q_3666=BlzCreateUnitWithSkin(p, 'n03Q', - 20800.0, 4864.0, 270.000, 'n03Q')
+    call WaygateSetDestination(gg_unit_n03Q_3666, GetRectCenterX(gg_rct_East_of_Azeroth), GetRectCenterY(gg_rct_East_of_Azeroth))
+    call WaygateActivate(gg_unit_n03Q_3666, true)
     set u=BlzCreateUnitWithSkin(p, 'n005', - 24256.0, 20416.0, 270.000, 'n005')
     set u=BlzCreateUnitWithSkin(p, 'n005', - 26048.0, 22656.0, 270.000, 'n005')
     set u=BlzCreateUnitWithSkin(p, 'n005', - 24896.0, 22592.0, 270.000, 'n005')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 22464.0, - 21440.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h04H', - 23040.0, - 23936.0, 270.000, 'h04H')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 22528.0, - 24128.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 23040.0, - 24320.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 22784.0, - 23680.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h039', - 21888.0, - 24064.0, 270.000, 'h039')
-    set gg_unit_ngol_3788=BlzCreateUnitWithSkin(p, 'ngol', - 27328.0, - 30848.0, 270.000, 'ngol')
-    call SetResourceAmount(gg_unit_ngol_3788, 1200)
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 26432.0, - 29760.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h02F', - 27520.0, - 31488.0, 270.000, 'h02F')
-    set u=BlzCreateUnitWithSkin(p, 'h039', - 26560.0, - 31424.0, 270.000, 'h039')
-    set u=BlzCreateUnitWithSkin(p, 'h039', - 26560.0, - 31936.0, 270.000, 'h039')
-    set u=BlzCreateUnitWithSkin(p, 'h039', - 28224.0, - 29824.0, 270.000, 'h039')
-    set u=BlzCreateUnitWithSkin(p, 'h039', - 27840.0, - 29824.0, 270.000, 'h039')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 26560.0, - 29760.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'n046', - 24192.0, - 30848.0, 270.000, 'n046')
-    set u=BlzCreateUnitWithSkin(p, 'h02F', - 28416.0, - 31040.0, 270.000, 'h02F')
-    set u=BlzCreateUnitWithSkin(p, 'h02F', - 27264.0, - 31104.0, 270.000, 'h02F')
-    set u=BlzCreateUnitWithSkin(p, 'h02F', - 27648.0, - 32000.0, 270.000, 'h02F')
-    set u=BlzCreateUnitWithSkin(p, 'n031', - 27008.0, - 27904.0, 270.000, 'n031')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 27520.0, - 29760.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 27392.0, - 29760.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 27136.0, - 29760.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 26432.0, - 30592.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h04H', - 26752.0, - 29824.0, 270.000, 'h04H')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 27008.0, - 29760.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h02F', - 28096.0, - 30464.0, 270.000, 'h02F')
-    set u=BlzCreateUnitWithSkin(p, 'h03A', - 27136.0, - 31488.0, 270.000, 'h03A')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 27136.0, - 28288.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 27136.0, - 28544.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 27136.0, - 28800.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 26752.0, - 27840.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 26496.0, - 27840.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 26240.0, - 27840.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 28352.0, - 28160.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 28352.0, - 28416.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 28352.0, - 28672.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h04H', - 26880.0, - 26432.0, 270.000, 'h04H')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 26624.0, - 27136.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h03A', - 27136.0, - 25984.0, 270.000, 'h03A')
-    set u=BlzCreateUnitWithSkin(p, 'h039', - 28288.0, - 27840.0, 270.000, 'h039')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 26368.0, - 27136.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 26112.0, - 27136.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 27904.0, - 26560.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 27648.0, - 26560.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 27392.0, - 26560.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 27904.0, - 26368.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 27648.0, - 26368.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 27392.0, - 26368.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h04H', - 28224.0, - 26560.0, 270.000, 'h04H')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 28224.0, - 26688.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 27904.0, - 26240.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 27776.0, - 26240.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 27648.0, - 26240.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 27520.0, - 26240.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 27392.0, - 26240.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'n008', - 27968.0, - 27328.0, 270.000, 'n008')
-    set u=BlzCreateUnitWithSkin(p, 'h023', - 27168.0, - 27168.0, 270.000, 'h023')
-    set u=BlzCreateUnitWithSkin(p, 'h02X', - 25952.0, - 27680.0, 270.000, 'h02X')
-    set u=BlzCreateUnitWithSkin(p, 'h03O', - 27680.0, - 27616.0, 270.000, 'h03O')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 27776.0, - 28672.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 27776.0, - 28096.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set u=BlzCreateUnitWithSkin(p, 'h03Q', - 26432.0, - 26112.0, 270.000, 'h03Q')
-    set u=BlzCreateUnitWithSkin(p, 'h03Q', - 26176.0, - 26240.0, 270.000, 'h03Q')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 22208.0, - 30848.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
-    set gg_unit_h057_3921=BlzCreateUnitWithSkin(p, 'h057', - 26117.8, - 28822.8, 133.850, 'h057')
-    set u=BlzCreateUnitWithSkin(p, 'h04G', - 25408.0, - 24896.0, 270.000, 'h04G')
-    set u=BlzCreateUnitWithSkin(p, 'h059', - 27264.0, - 25024.0, 270.000, 'h059')
-    call SetUnitAcquireRange(u, 200.0)
+    set u=BlzCreateUnitWithSkin(p, 'h02F', 4992.0, - 1024.0, 270.000, 'h02F')
+    set u=BlzCreateUnitWithSkin(p, 'h02F', 4928.0, - 1408.0, 270.000, 'h02F')
+    set u=BlzCreateUnitWithSkin(p, 'h02F', 5056.0, - 1472.0, 270.000, 'h02F')
+    set u=BlzCreateUnitWithSkin(p, 'o031', - 2848.0, - 30880.0, 270.000, 'o031')
+    set u=BlzCreateUnitWithSkin(p, 'h02F', 4800.0, - 1280.0, 270.000, 'h02F')
+    set u=BlzCreateUnitWithSkin(p, 'h039', 4864.0, - 1024.0, 270.000, 'h039')
+    set u=BlzCreateUnitWithSkin(p, 'o02V', 22496.0, - 29216.0, 270.000, 'o02V')
     set gg_unit_n03G_3941=BlzCreateUnitWithSkin(p, 'n03G', 9088.0, 4992.0, 270.000, 'n03G')
-    set u=BlzCreateUnitWithSkin(p, 'h03A', - 27584.0, - 26112.0, 270.000, 'h03A')
-    set u=BlzCreateUnitWithSkin(p, 'h03A', - 26688.0, - 26112.0, 270.000, 'h03A')
-    set gg_unit_h02K_3968=BlzCreateUnitWithSkin(p, 'h02K', - 24192.0, - 20096.0, 270.000, 'h02K')
+    set gg_unit_h02K_3968=BlzCreateUnitWithSkin(p, 'h02K', 6976.0, 2496.0, 270.000, 'h02K')
     call IssueImmediateOrder(gg_unit_h02K_3968, "")
     set u=BlzCreateUnitWithSkin(p, 'nmh0', 16224.0, - 21152.0, 270.000, 'nmh0')
     set u=BlzCreateUnitWithSkin(p, 'nmh0', 16864.0, - 21152.0, 270.000, 'nmh0')
@@ -10616,7 +10863,7 @@ function CreateNeutralPassive takes nothing returns nothing
     local trigger t
     local real life
 
-    set gg_unit_n03C_0000=BlzCreateUnitWithSkin(p, 'n03C', - 20592.8, 20893.5, 298.000, 'n03C')
+    set gg_unit_n03C_0000=BlzCreateUnitWithSkin(p, 'n03C', - 26233.3, 8476.3, 298.000, 'n03C')
     set gg_unit_nemi_0019=BlzCreateUnitWithSkin(p, 'nemi', 9083.0, 8352.9, 75.340, 'nemi')
     call SetUnitState(gg_unit_nemi_0019, UNIT_STATE_MANA, 200)
     call SetUnitColor(gg_unit_nemi_0019, ConvertPlayerColor(9))
@@ -10633,12 +10880,13 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'otau', - 9417.5, - 11166.7, 80.888, 'otau')
     set u=BlzCreateUnitWithSkin(p, 'h018', 18077.7, - 31094.8, 320.117, 'h018')
     set u=BlzCreateUnitWithSkin(p, 'hrif', 11341.2, - 5013.1, 252.292, 'hrif')
-    set gg_unit_n04H_0194=BlzCreateUnitWithSkin(p, 'n04H', - 21250.4, 21879.5, 194.772, 'n04H')
+    set u=BlzCreateUnitWithSkin(p, 'n04H', - 27646.9, 11411.6, 278.992, 'n04H')
     set u=BlzCreateUnitWithSkin(p, 'nvlk', 9034.4, 3193.4, 239.466, 'nvlk')
     set u=BlzCreateUnitWithSkin(p, 'nvil', 10249.2, 3756.3, 342.554, 'nvil')
     set u=BlzCreateUnitWithSkin(p, 'nhym', 6246.5, 3604.1, 73.907, 'nhym')
+    set u=BlzCreateUnitWithSkin(p, 'ewsp', - 18075.3, 15912.2, 186.608, 'ewsp')
     set u=BlzCreateUnitWithSkin(p, 'o02M', - 7421.2, - 16.2, 167.799, 'o02M')
-    set gg_unit_h08T_0260=BlzCreateUnitWithSkin(p, 'h08T', 4695.5, - 10393.6, 270.220, 'h08T')
+    set gg_unit_h08T_0260=BlzCreateUnitWithSkin(p, 'h08T', 4543.7, - 6530.5, 58.431, 'h08T')
     set u=BlzCreateUnitWithSkin(p, 'hgyr', 17974.2, - 31335.0, 1.724, 'hgyr')
     set u=BlzCreateUnitWithSkin(p, 'h08M', 20090.7, 8001.1, 327.545, 'h08M')
     set u=BlzCreateUnitWithSkin(p, 'h018', 10534.8, - 5873.3, 270.000, 'h018')
@@ -10653,7 +10901,6 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nchg', - 3343.2, - 31211.2, 101.781, 'nchg')
     set u=BlzCreateUnitWithSkin(p, 'h095', 21021.7, 8700.3, 207.011, 'h095')
     set u=BlzCreateUnitWithSkin(p, 'h00A', 14714.9, 1721.8, 299.643, 'h00A')
-    set u=BlzCreateUnitWithSkin(p, 'h04E', - 27326.6, - 26117.9, 100.209, 'h04E')
     set u=BlzCreateUnitWithSkin(p, 'h095', 21062.5, 8499.4, 145.288, 'h095')
     set u=BlzCreateUnitWithSkin(p, 'h096', 21393.3, 7825.1, 93.694, 'h096')
     set u=BlzCreateUnitWithSkin(p, 'h096', 21335.5, 7551.1, 190.190, 'h096')
@@ -10678,14 +10925,19 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h00J', 15179.3, - 13097.4, 232.346, 'h00J')
     set u=BlzCreateUnitWithSkin(p, 'h00J', 15104.3, - 13188.3, 60.317, 'h00J')
     set u=BlzCreateUnitWithSkin(p, 'h00J', 12431.6, - 15923.5, 23.270, 'h00J')
+    set u=BlzCreateUnitWithSkin(p, 'hpea', - 23167.2, 17192.1, 221.854, 'hpea')
     set u=BlzCreateUnitWithSkin(p, 'o02M', - 7424.8, - 225.2, 37.904, 'o02M')
     set u=BlzCreateUnitWithSkin(p, 'n038', - 3296.0, 17856.0, 270.000, 'n038')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_AzjolNerubDragonblight_Exit), GetRectCenterY(gg_rct_AzjolNerubDragonblight_Exit))
+    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'h01I', 9698.2, 5295.2, 7.364, 'h01I')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
+    set u=BlzCreateUnitWithSkin(p, 'hpea', - 22974.6, 17070.0, 64.085, 'hpea')
     set u=BlzCreateUnitWithSkin(p, 'h01I', 9816.3, 5325.3, 216.874, 'h01I')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
-    set u=BlzCreateUnitWithSkin(p, 'n04H', - 21398.6, 21894.6, 45.924, 'n04H')
+    set u=BlzCreateUnitWithSkin(p, 'H0A5', - 23079.5, - 25666.5, 260.015, 'H0A5')
+    set u=BlzCreateUnitWithSkin(p, 'n04H', - 27786.0, 11394.1, 270.373, 'n04H')
     set u=BlzCreateUnitWithSkin(p, 'o02M', - 9330.4, 188.5, 26.654, 'o02M')
     set u=BlzCreateUnitWithSkin(p, 'h032', 9869.7, 4213.5, 170.469, 'h032')
     call SetUnitState(u, UNIT_STATE_MANA, 300)
@@ -10696,7 +10948,7 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'o02M', - 9133.5, 267.4, 133.664, 'o02M')
     set u=BlzCreateUnitWithSkin(p, 'o02M', - 7696.8, - 656.7, 46.759, 'o02M')
     set u=BlzCreateUnitWithSkin(p, 'n08P', 18969.8, - 202.8, 322.134, 'n08P')
-    set u=BlzCreateUnitWithSkin(p, 'etrs', - 20411.1, 12675.6, 214.653, 'etrs')
+    set u=BlzCreateUnitWithSkin(p, 'n0BY', - 26885.4, 15875.5, 255.055, 'n0BY')
     set u=BlzCreateUnitWithSkin(p, 'hkni', 9213.4, 9294.0, 93.713, 'hkni')
     set u=BlzCreateUnitWithSkin(p, 'earc', - 17166.2, 23044.6, 115.887, 'earc')
     set u=BlzCreateUnitWithSkin(p, 'n00C', 9903.0, - 5316.6, 31.298, 'n00C')
@@ -10704,18 +10956,37 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'esen', - 18779.2, 15092.9, 293.344, 'esen')
     set u=BlzCreateUnitWithSkin(p, 'esen', - 17162.8, 22792.4, 13.250, 'esen')
     set u=BlzCreateUnitWithSkin(p, 'esen', - 18519.1, 15276.3, 300.943, 'esen')
-    set u=BlzCreateUnitWithSkin(p, 'n04H', - 21407.0, 21714.1, 7.295, 'n04H')
-    set u=BlzCreateUnitWithSkin(p, 'h03L', - 23165.4, - 26752.2, 188.094, 'h03L')
+    set u=BlzCreateUnitWithSkin(p, 'n04H', - 27656.2, 11512.6, 278.992, 'n04H')
+    set u=BlzCreateUnitWithSkin(p, 'nmyr', - 25395.4, - 24877.1, 271.880, 'nmyr')
+    set u=BlzCreateUnitWithSkin(p, 'n0BY', - 27451.1, 15977.5, 10.954, 'n0BY')
+    set u=BlzCreateUnitWithSkin(p, 'nnrg', - 25030.5, - 23623.5, 271.448, 'nnrg')
+    set u=BlzCreateUnitWithSkin(p, 'nsnp', - 25217.5, - 24881.2, 274.147, 'nsnp')
+    set u=BlzCreateUnitWithSkin(p, 'ntrg', - 23685.3, - 26067.6, 296.058, 'ntrg')
+    set u=BlzCreateUnitWithSkin(p, 'nmpe', - 25082.1, - 24227.3, 335.654, 'nmpe')
+    set u=BlzCreateUnitWithSkin(p, 'nmpe', - 23145.2, - 24147.0, 152.198, 'nmpe')
+    set u=BlzCreateUnitWithSkin(p, 'nnsw', - 24941.9, - 24828.9, 275.267, 'nnsw')
+    set u=BlzCreateUnitWithSkin(p, 'nnsu', - 24712.6, - 24817.6, 264.993, 'nnsu')
+    set u=BlzCreateUnitWithSkin(p, 'nmsc', - 24864.6, - 24796.2, 267.910, 'nmsc')
+    set u=BlzCreateUnitWithSkin(p, 'nwgs', - 22319.1, - 24829.3, 238.312, 'nwgs')
+    set u=BlzCreateUnitWithSkin(p, 'e00Y', - 24291.8, - 24652.3, 261.002, 'e00Y')
+    set u=BlzCreateUnitWithSkin(p, 'H08U', - 23275.7, - 25647.1, 263.229, 'H08U')
+    call SetUnitColor(u, ConvertPlayerColor(9))
+    set u=BlzCreateUnitWithSkin(p, 'h01Q', - 21865.0, - 24772.0, 262.663, 'h01Q')
+    call SetUnitColor(u, ConvertPlayerColor(16))
     set u=BlzCreateUnitWithSkin(p, 'h02D', 10157.4, 4993.0, 217.986, 'h02D')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
     set u=BlzCreateUnitWithSkin(p, 'h02D', 9244.3, 4443.0, 328.290, 'h02D')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
     set u=BlzCreateUnitWithSkin(p, 'nhym', 9153.9, 4122.0, 35.959, 'nhym')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
+    set u=BlzCreateUnitWithSkin(p, 'n0CA', - 23342.4, - 24816.5, 267.630, 'n0CA')
+    set u=BlzCreateUnitWithSkin(p, 'h02P', - 23250.5, - 23387.2, 261.450, 'h02P')
+    set u=BlzCreateUnitWithSkin(p, 'n0CD', - 22556.0, - 24800.5, 267.722, 'n0CD')
     set u=BlzCreateUnitWithSkin(p, 'nvlw', 17311.7, 10551.6, 17.313, 'nvlw')
+    set u=BlzCreateUnitWithSkin(p, 'n0BY', - 26894.2, 16364.3, 136.136, 'n0BY')
+    set u=BlzCreateUnitWithSkin(p, 'n0BY', - 27394.1, 16397.4, 72.435, 'n0BY')
     set u=BlzCreateUnitWithSkin(p, 'nmpe', 14982.3, - 28798.3, 88.647, 'nmpe')
     set u=BlzCreateUnitWithSkin(p, 'esen', - 17006.8, 22615.8, 153.846, 'esen')
-    set u=BlzCreateUnitWithSkin(p, 'h02O', 18392.3, - 17492.9, 229.283, 'h02O')
     set gg_unit_nbsm_1188=BlzCreateUnitWithSkin(p, 'nbsm', - 11904.0, 23872.0, 270.000, 'nbsm')
     call SetUnitAcquireRange(gg_unit_nbsm_1188, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'hrif', 16902.7, - 30856.9, 307.766, 'hrif')
@@ -10781,7 +11052,6 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h08I', - 24008.0, 15962.8, 129.072, 'h08I')
     set u=BlzCreateUnitWithSkin(p, 'h08I', - 23924.5, 16030.2, 132.457, 'h08I')
     set u=BlzCreateUnitWithSkin(p, 'h08I', - 23850.0, 16107.6, 138.444, 'h08I')
-    set u=BlzCreateUnitWithSkin(p, 'h04E', - 27012.3, - 26107.1, 100.209, 'h04E')
     set u=BlzCreateUnitWithSkin(p, 'h08I', - 23959.4, 15870.8, 129.072, 'h08I')
     set u=BlzCreateUnitWithSkin(p, 'h08I', - 23876.2, 15932.4, 129.072, 'h08I')
     set u=BlzCreateUnitWithSkin(p, 'h08I', - 23788.4, 15999.2, 129.072, 'h08I')
@@ -10838,6 +11108,7 @@ function CreateNeutralPassive takes nothing returns nothing
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nvlk', 10202.1, 2515.2, 239.466, 'nvlk')
     set u=BlzCreateUnitWithSkin(p, 'nvlw', 10093.2, 2565.0, 304.870, 'nvlw')
+    set gg_unit_nfro_1519=BlzCreateUnitWithSkin(p, 'nfro', 16942.6, 14795.6, 311.843, 'nfro')
     set u=BlzCreateUnitWithSkin(p, 'ohun', - 8074.7, - 5398.0, 160.515, 'ohun')
     set u=BlzCreateUnitWithSkin(p, 'nhea', 20191.2, 18209.1, 223.864, 'nhea')
     call IssueImmediateOrder(u, "")
@@ -10846,8 +11117,8 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'hsor', 17730.4, 18300.3, 34.198, 'hsor')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
     set u=BlzCreateUnitWithSkin(p, 'odoc', - 7511.3, - 5852.8, 144.068, 'odoc')
-    set u=BlzCreateUnitWithSkin(p, 'n04H', - 20258.2, 21293.3, 137.410, 'n04H')
-    set u=BlzCreateUnitWithSkin(p, 'n04H', - 20294.2, 21207.8, 112.910, 'n04H')
+    set u=BlzCreateUnitWithSkin(p, 'n04H', - 27795.3, 11495.1, 270.373, 'n04H')
+    set u=BlzCreateUnitWithSkin(p, 'n04H', - 27657.6, 11641.3, 278.992, 'n04H')
     set u=BlzCreateUnitWithSkin(p, 'nogn', - 7832.4, 35.1, 158.175, 'nogn')
     set u=BlzCreateUnitWithSkin(p, 'nhea', 15920.9, 4788.2, 260.711, 'nhea')
     call SetUnitState(u, UNIT_STATE_MANA, 100)
@@ -10884,23 +11155,25 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h00A', 9183.1, - 14055.2, 241.021, 'h00A')
     set u=BlzCreateUnitWithSkin(p, 'n093', 10319.9, - 12948.8, 266.614, 'n093')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
-    set u=BlzCreateUnitWithSkin(p, 'n04H', - 20093.2, 20904.8, 320.789, 'n04H')
+    set u=BlzCreateUnitWithSkin(p, 'n04H', - 27796.6, 11623.8, 270.373, 'n04H')
     set u=BlzCreateUnitWithSkin(p, 'hhes', 15707.2, 4633.9, 263.529, 'hhes')
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'otbk', - 9574.3, - 783.6, 141.640, 'otbk')
-    set u=BlzCreateUnitWithSkin(p, 'n04H', - 19997.1, 21007.3, 218.525, 'n04H')
-    set u=BlzCreateUnitWithSkin(p, 'ninf', - 20978.2, 21280.6, 86.740, 'ninf')
+    set u=BlzCreateUnitWithSkin(p, 'n04H', - 27654.3, 11774.0, 278.992, 'n04H')
+    set u=BlzCreateUnitWithSkin(p, 'n04H', - 27793.4, 11756.5, 270.373, 'n04H')
     set u=BlzCreateUnitWithSkin(p, 'hkni', 14142.1, 12511.5, 1.520, 'hkni')
     set u=BlzCreateUnitWithSkin(p, 'hspt', - 11205.7, 22241.3, 215.491, 'hspt')
     set u=BlzCreateUnitWithSkin(p, 'hmpr', - 11185.0, 21946.5, 187.569, 'hmpr')
     set u=BlzCreateUnitWithSkin(p, 'n038', - 12768.0, - 26720.0, 270.000, 'n038')
-    set u=BlzCreateUnitWithSkin(p, 'n04H', - 20899.1, 22719.9, 305.737, 'n04H')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_AzjolNerub_South_Entrance), GetRectCenterY(gg_rct_AzjolNerub_South_Entrance))
+    call WaygateActivate(u, true)
+    set u=BlzCreateUnitWithSkin(p, 'n04H', - 27387.6, 11438.8, 278.992, 'n04H')
     set u=BlzCreateUnitWithSkin(p, 'n03K', 15775.9, 12207.6, 196.497, 'n03K')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
     set u=BlzCreateUnitWithSkin(p, 'n03K', 15617.8, 11746.3, 115.888, 'n03K')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
     set u=BlzCreateUnitWithSkin(p, 'hmpr', - 11232.9, 21753.2, 134.980, 'hmpr')
-    set u=BlzCreateUnitWithSkin(p, 'n04H', - 20741.5, 22800.3, 128.709, 'n04H')
+    set u=BlzCreateUnitWithSkin(p, 'n04H', - 27526.7, 11421.2, 270.373, 'n04H')
     set u=BlzCreateUnitWithSkin(p, 'uaco', - 24243.5, 12310.8, 266.712, 'uaco')
     set u=BlzCreateUnitWithSkin(p, 'uaco', - 24139.0, 12206.6, 210.591, 'uaco')
     set u=BlzCreateUnitWithSkin(p, 'n02D', 17838.6, - 30933.0, 218.050, 'n02D')
@@ -10910,8 +11183,8 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'hsor', - 11164.8, 22142.1, 229.753, 'hsor')
     set u=BlzCreateUnitWithSkin(p, 'h00J', 8685.9, - 10680.8, 308.934, 'h00J')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
-    set u=BlzCreateUnitWithSkin(p, 'n04H', - 19713.4, 22783.9, 321.755, 'n04H')
-    set u=BlzCreateUnitWithSkin(p, 'n04H', - 19755.9, 22648.3, 17.029, 'n04H')
+    set u=BlzCreateUnitWithSkin(p, 'n04H', - 27399.7, 11544.7, 278.992, 'n04H')
+    set u=BlzCreateUnitWithSkin(p, 'n04H', - 27538.8, 11527.2, 270.373, 'n04H')
     set u=BlzCreateUnitWithSkin(p, 'h018', 16990.6, - 31202.4, 43.526, 'h018')
     set u=BlzCreateUnitWithSkin(p, 'h02O', 10622.2, - 11451.7, 270.000, 'h02O')
     set u=BlzCreateUnitWithSkin(p, 'h00A', 10844.5, - 11657.3, 119.256, 'h00A')
@@ -10943,7 +11216,7 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'ugho', - 24368.8, 14027.4, 267.020, 'ugho')
     set u=BlzCreateUnitWithSkin(p, 'ucry', - 22469.4, 13721.2, 159.867, 'ucry')
     set u=BlzCreateUnitWithSkin(p, 'u00J', - 11374.0, 21777.2, 217.086, 'u00J')
-    set u=BlzCreateUnitWithSkin(p, 'n04H', - 19837.4, 22736.6, 326.842, 'n04H')
+    set u=BlzCreateUnitWithSkin(p, 'n04H', - 27416.7, 11671.0, 278.992, 'n04H')
     set u=BlzCreateUnitWithSkin(p, 'h02D', 9733.9, 5219.4, 63.961, 'h02D')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
     set u=BlzCreateUnitWithSkin(p, 'ucry', - 22728.1, 13567.4, 122.249, 'ucry')
@@ -10954,7 +11227,7 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'hgyr', 8123.8, - 5288.2, 270.000, 'hgyr')
     set u=BlzCreateUnitWithSkin(p, 'nbel', 3905.6, - 21822.5, 134.554, 'nbel')
     set u=BlzCreateUnitWithSkin(p, 'nbel', 4000.1, - 21559.7, 54.560, 'nbel')
-    set u=BlzCreateUnitWithSkin(p, 'n04O', - 21047.9, 22393.8, 327.545, 'n04O')
+    set u=BlzCreateUnitWithSkin(p, 'n04O', - 27702.1, 12511.2, 266.619, 'n04O')
     set u=BlzCreateUnitWithSkin(p, 'nhea', 2122.2, - 19120.2, 316.251, 'nhea')
     set u=BlzCreateUnitWithSkin(p, 'hmpr', 3938.6, - 21468.3, 52.000, 'hmpr')
     set u=BlzCreateUnitWithSkin(p, 'hmpr', 4058.4, - 21455.0, 295.256, 'hmpr')
@@ -10967,12 +11240,12 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'hmpr', 2567.4, - 19384.3, 162.852, 'hmpr')
     set u=BlzCreateUnitWithSkin(p, 'nbee', 2227.9, - 19065.5, 32.246, 'nbee')
     set u=BlzCreateUnitWithSkin(p, 'nbee', 3929.8, - 21916.5, 164.152, 'nbee')
-    set u=BlzCreateUnitWithSkin(p, 'n04O', - 20293.2, 23313.7, 260.484, 'n04O')
+    set u=BlzCreateUnitWithSkin(p, 'n04O', - 27273.1, 12480.1, 260.484, 'n04O')
     set u=BlzCreateUnitWithSkin(p, 'u00J', - 11236.5, 21603.7, 88.091, 'u00J')
     set u=BlzCreateUnitWithSkin(p, 'n06C', - 20902.8, - 9396.6, 83.290, 'n06C')
     set u=BlzCreateUnitWithSkin(p, 'h037', 10103.2, - 5717.1, 49.474, 'h037')
     call SetUnitState(u, UNIT_STATE_MANA, 250)
-    set u=BlzCreateUnitWithSkin(p, 'n04O', - 21032.9, 22625.0, 300.480, 'n04O')
+    set u=BlzCreateUnitWithSkin(p, 'n04O', - 27274.6, 12312.6, 264.557, 'n04O')
     set u=BlzCreateUnitWithSkin(p, 'n06C', - 20852.1, - 9431.7, 171.557, 'n06C')
     set u=BlzCreateUnitWithSkin(p, 'e006', - 21016.9, - 9261.3, 307.517, 'e006')
     set u=BlzCreateUnitWithSkin(p, 'esen', - 20542.3, - 9355.2, 319.492, 'esen')
@@ -10984,7 +11257,6 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'esen', - 20536.7, - 8660.5, 272.579, 'esen')
     set u=BlzCreateUnitWithSkin(p, 'ewsp', - 20215.9, - 8674.9, 319.349, 'ewsp')
     set u=BlzCreateUnitWithSkin(p, 'ewsp', - 20189.9, - 8895.6, 60.899, 'ewsp')
-    set u=BlzCreateUnitWithSkin(p, 'h009', - 27380.9, 15995.1, 29.257, 'h009')
     set u=BlzCreateUnitWithSkin(p, 'nvlw', 10347.6, 10158.3, 271.274, 'nvlw')
     set u=BlzCreateUnitWithSkin(p, 'nvk2', 10427.8, 10054.1, 37.090, 'nvk2')
     set u=BlzCreateUnitWithSkin(p, 'nvil', 13822.7, 9054.9, 167.128, 'nvil')
@@ -11003,9 +11275,9 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nvil', 6614.9, 4066.3, 282.297, 'nvil')
     set u=BlzCreateUnitWithSkin(p, 'nvlw', 6795.7, 4115.7, 245.877, 'nvlw')
     set u=BlzCreateUnitWithSkin(p, 'nvil', 12208.3, 8901.1, 277.125, 'nvil')
-    set u=BlzCreateUnitWithSkin(p, 'nvil', 12434.9, 8280.6, 229.491, 'nvil')
+    set u=BlzCreateUnitWithSkin(p, 'nvil', 12383.9, 8225.1, 229.491, 'nvil')
     set u=BlzCreateUnitWithSkin(p, 'nvlk', 11991.4, 9559.4, 268.260, 'nvlw')
-    set u=BlzCreateUnitWithSkin(p, 'nvil', 12585.7, 8936.2, 260.880, 'nvil')
+    set u=BlzCreateUnitWithSkin(p, 'nvil', 12590.5, 8946.1, 260.880, 'nvil')
     set u=BlzCreateUnitWithSkin(p, 'nvk2', 11871.2, 8327.7, 101.495, 'nvk2')
     set u=BlzCreateUnitWithSkin(p, 'nvl2', 11412.6, 8964.9, 43.670, 'nvl2')
     set u=BlzCreateUnitWithSkin(p, 'nvk2', 13749.8, 8913.0, 94.210, 'nvk2')
@@ -11032,12 +11304,15 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nvil', 15111.3, 12044.2, 347.398, 'nvil')
     set u=BlzCreateUnitWithSkin(p, 'nvl2', 14050.0, 11795.8, 303.631, 'nvl2')
     set gg_unit_n08R_2209=BlzCreateUnitWithSkin(p, 'n08R', 16568.8, - 2772.2, 315.280, 'n08R')
+    call WaygateSetDestination(gg_unit_n08R_2209, GetRectCenterX(gg_rct_Grim_Batol_Tunnel_Top), GetRectCenterY(gg_rct_Grim_Batol_Tunnel_Top))
+    call WaygateActivate(gg_unit_n08R_2209, true)
     set gg_unit_n08R_2214=BlzCreateUnitWithSkin(p, 'n08R', 16760.8, - 2484.2, 116.560, 'n08R')
+    call WaygateSetDestination(gg_unit_n08R_2214, GetRectCenterX(gg_rct_Grim_Batol_Tunnel_Entrance), GetRectCenterY(gg_rct_Grim_Batol_Tunnel_Entrance))
+    call WaygateActivate(gg_unit_n08R_2214, true)
     set u=BlzCreateUnitWithSkin(p, 'nvlw', 12365.8, 2024.0, 4.182, 'nvlw')
     set u=BlzCreateUnitWithSkin(p, 'nvl2', 10435.9, 2512.6, 331.200, 'nvl2')
     set u=BlzCreateUnitWithSkin(p, 'nvlw', 10514.6, 2572.3, 329.120, 'nvlw')
     set u=BlzCreateUnitWithSkin(p, 'earc', - 15811.3, 2173.1, 298.831, 'earc')
-    set u=BlzCreateUnitWithSkin(p, 'h03L', - 26884.0, - 26221.0, 186.576, 'h03L')
     set u=BlzCreateUnitWithSkin(p, 'h02O', 17882.6, - 17425.2, 307.941, 'h02O')
     set u=BlzCreateUnitWithSkin(p, 'esen', - 15904.6, 1615.7, 39.600, 'esen')
     set u=BlzCreateUnitWithSkin(p, 'earc', - 15384.8, 2124.9, 225.773, 'earc')
@@ -11046,32 +11321,23 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nvil', 13549.7, 13252.3, 249.719, 'nvil')
     set u=BlzCreateUnitWithSkin(p, 'nvk2', 12299.7, 8688.6, 268.580, 'nvk2')
     set u=BlzCreateUnitWithSkin(p, 'nvlw', 14524.2, 12059.1, 318.286, 'nvlw')
-    set u=BlzCreateUnitWithSkin(p, 'n04O', - 20044.2, 23035.8, 226.042, 'n04O')
+    set u=BlzCreateUnitWithSkin(p, 'n04O', - 27704.6, 12339.0, 260.671, 'n04O')
     set u=BlzCreateUnitWithSkin(p, 'nvk2', 14575.1, 11996.4, 29.945, 'nvk2')
     set u=BlzCreateUnitWithSkin(p, 'nvlw', 14957.0, 10229.4, 81.895, 'nvlw')
-    set u=BlzCreateUnitWithSkin(p, 'h03L', - 27826.6, - 25939.3, 18.925, 'h03L')
     set u=BlzCreateUnitWithSkin(p, 'n093', 8873.4, - 11292.9, 322.162, 'n093')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
     set u=BlzCreateUnitWithSkin(p, 'nvil', 15482.7, 9087.5, 78.609, 'nvil')
-    set gg_unit_Uwar_2344=BlzCreateUnitWithSkin(p, 'Uwar', - 20079.8, 23266.8, 244.340, 'Uwar')
+    set gg_unit_Uwar_2344=BlzCreateUnitWithSkin(p, 'Uwar', - 27454.9, 12304.5, 268.876, 'Uwar')
     call SetHeroLevel(gg_unit_Uwar_2344, 8, false)
     call SetUnitColor(gg_unit_Uwar_2344, ConvertPlayerColor(1))
-    set u=BlzCreateUnitWithSkin(p, 'h03L', - 27239.5, - 25883.9, 18.925, 'h03L')
-    set u=BlzCreateUnitWithSkin(p, 'h03L', - 27065.5, - 25871.5, 18.925, 'h03L')
-    set u=BlzCreateUnitWithSkin(p, 'nmyr', 14375.8, - 28378.0, 148.692, 'nmyr')
-    set u=BlzCreateUnitWithSkin(p, 'h04M', - 27217.3, - 26088.9, 285.137, 'h04M')
-    set u=BlzCreateUnitWithSkin(p, 'h04M', - 27093.3, - 26090.2, 285.137, 'h04M')
-    set u=BlzCreateUnitWithSkin(p, 'h04M', - 26788.0, - 26058.1, 285.137, 'h04M')
-    set u=BlzCreateUnitWithSkin(p, 'n04U', - 21396.1, 21541.6, 243.981, 'n04U')
-    set u=BlzCreateUnitWithSkin(p, 'nmyr', 14314.1, - 28809.7, 123.492, 'nmyr')
-    set u=BlzCreateUnitWithSkin(p, 'ninf', - 21075.5, 21721.0, 142.354, 'ninf')
-    set u=BlzCreateUnitWithSkin(p, 'nchw', - 3166.7, - 31745.9, 326.357, 'nchw')
+    set gg_unit_nmyr_2375=BlzCreateUnitWithSkin(p, 'nmyr', 14375.8, - 28378.0, 148.692, 'nmyr')
+    set u=BlzCreateUnitWithSkin(p, 'n04H', - 27555.8, 11653.4, 270.373, 'n04H')
+    set gg_unit_nmyr_2386=BlzCreateUnitWithSkin(p, 'nmyr', 14314.1, - 28809.7, 123.492, 'nmyr')
+    set u=BlzCreateUnitWithSkin(p, 'n04H', - 27420.3, 11800.1, 278.992, 'n04H')
+    set u=BlzCreateUnitWithSkin(p, 'nchw', - 3217.1, - 31741.9, 326.357, 'nchw')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
-    set u=BlzCreateUnitWithSkin(p, 'ninf', - 20562.9, 21445.7, 271.920, 'ninf')
-    set u=BlzCreateUnitWithSkin(p, 'h009', - 26877.0, 15947.7, 83.444, 'h009')
+    set u=BlzCreateUnitWithSkin(p, 'ninf', - 28153.0, 11813.5, 271.920, 'ninf')
     set u=BlzCreateUnitWithSkin(p, 'n09S', 4241.6, - 21866.1, 120.370, 'n09S')
-    set u=BlzCreateUnitWithSkin(p, 'h009', - 26844.5, 16453.9, 325.777, 'h009')
-    set u=BlzCreateUnitWithSkin(p, 'h009', - 27294.6, 16470.7, 141.981, 'h009')
     set u=BlzCreateUnitWithSkin(p, 'h08N', - 27237.8, 15216.9, 211.164, 'h08N')
     set u=BlzCreateUnitWithSkin(p, 'o04A', - 3888.4, - 15711.6, 30.243, 'o04A')
     set u=BlzCreateUnitWithSkin(p, 'o04A', - 3797.7, - 15774.3, 45.536, 'o04A')
@@ -11104,6 +11370,7 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'n07S', - 26258.3, 17133.3, 281.050, 'n07S')
     set u=BlzCreateUnitWithSkin(p, 'h08P', - 28389.3, 16338.3, 85.322, 'h08P')
     set u=BlzCreateUnitWithSkin(p, 'h08P', - 28108.5, 16383.5, 196.420, 'h08P')
+    set u=BlzCreateUnitWithSkin(p, 'n0CB', - 22710.7, - 24804.9, 270.007, 'n0CB')
     set u=BlzCreateUnitWithSkin(p, 'n07W', - 26496.5, 15109.6, 4.208, 'n07W')
     set u=BlzCreateUnitWithSkin(p, 'u01R', - 26637.8, 15141.1, 125.325, 'u01R')
     set u=BlzCreateUnitWithSkin(p, 'u01R', - 26782.7, 15102.7, 12.459, 'u01R')
@@ -11112,8 +11379,11 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'h08O', - 27823.9, 15188.7, 331.413, 'h08O')
     set u=BlzCreateUnitWithSkin(p, 'nvlw', 21011.9, 8161.3, 318.286, 'nvlw')
     set u=BlzCreateUnitWithSkin(p, 'h08O', - 27419.1, 15169.3, 276.271, 'h08O')
+    set u=BlzCreateUnitWithSkin(p, 'n0CE', - 23162.2, - 24812.4, 267.533, 'n0CE')
     set u=BlzCreateUnitWithSkin(p, 'h08O', - 27529.3, 14931.2, 234.510, 'h08O')
     set u=BlzCreateUnitWithSkin(p, 'n07S', - 27485.2, 14639.6, 135.081, 'n07S')
+    set u=BlzCreateUnitWithSkin(p, 'u02J', - 22101.6, - 24812.1, 285.940, 'u02J')
+    set u=BlzCreateUnitWithSkin(p, 'o05N', - 24545.7, - 24727.0, 256.002, 'o05N')
     set u=BlzCreateUnitWithSkin(p, 'h06B', - 23147.6, 17352.1, 242.223, 'h06B')
     set u=BlzCreateUnitWithSkin(p, 'h06B', - 22841.2, 17058.4, 223.179, 'h06B')
     set u=BlzCreateUnitWithSkin(p, 'h08L', - 23658.6, 15792.1, 171.766, 'h08L')
@@ -11121,13 +11391,17 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'o04C', - 24305.1, 17012.1, 300.324, 'o04C')
     set u=BlzCreateUnitWithSkin(p, 'nmyr', 11032.8, - 28944.3, 190.201, 'nmyr')
     set u=BlzCreateUnitWithSkin(p, 'nmyr', 10491.5, - 28368.9, 250.935, 'nmyr')
-    set u=BlzCreateUnitWithSkin(p, 'obot', - 6575.9, - 5819.3, 238.120, 'obot')
-    set u=BlzCreateUnitWithSkin(p, 'ebsh', - 21009.5, - 8174.1, 149.989, 'ebsh')
+    set u=BlzCreateUnitWithSkin(p, 'n0BR', - 19307.9, 18321.3, 233.853, 'n0BR')
+    set u=BlzCreateUnitWithSkin(p, 'edes', - 21032.5, - 8227.3, 144.782, 'edes')
     set u=BlzCreateUnitWithSkin(p, 'nmyr', 11607.3, - 29707.0, 148.111, 'nmyr')
     set u=BlzCreateUnitWithSkin(p, 'n038', - 8608.0, - 28896.0, 270.000, 'n038')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_AzjolNerubNorth_entrance), GetRectCenterY(gg_rct_AzjolNerubNorth_entrance))
+    call WaygateActivate(u, true)
     set u=BlzCreateUnitWithSkin(p, 'nmyr', 9516.1, - 27667.3, 207.670, 'nmyr')
     set u=BlzCreateUnitWithSkin(p, 'nsnp', 11713.4, - 30449.0, 120.381, 'nsnp')
     set u=BlzCreateUnitWithSkin(p, 'n038', - 5534.6, 23981.1, 269.000, 'n038')
+    call WaygateSetDestination(u, GetRectCenterX(gg_rct_AzjolNerub_North_Exit), GetRectCenterY(gg_rct_AzjolNerub_North_Exit))
+    call WaygateActivate(u, true)
     call SetUnitAcquireRange(u, 200.0)
     set u=BlzCreateUnitWithSkin(p, 'nsnp', 11960.4, - 30178.6, 179.061, 'nsnp')
     set u=BlzCreateUnitWithSkin(p, 'nsnp', 8897.2, - 27615.7, 250.815, 'nsnp')
@@ -11148,7 +11422,7 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nnrg', 8676.1, - 30410.7, 346.267, 'nnrg')
     set u=BlzCreateUnitWithSkin(p, 'nnrg', 8952.5, - 30722.5, 72.079, 'nnrg')
     set u=BlzCreateUnitWithSkin(p, 'hfoo', 14497.2, 12880.4, 299.305, 'hfoo')
-    set u=BlzCreateUnitWithSkin(p, 'nchw', - 3152.1, - 31848.9, 8.976, 'nchw')
+    set u=BlzCreateUnitWithSkin(p, 'nchw', - 3248.7, - 31845.2, 8.976, 'nchw')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
     set u=BlzCreateUnitWithSkin(p, 'owar', - 3344.1, - 30989.3, 118.979, 'owar')
     set u=BlzCreateUnitWithSkin(p, 'nhea', 19762.0, 18643.8, 248.797, 'nhea')
@@ -11172,37 +11446,27 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'e006', - 19463.2, 14889.4, 46.452, 'e006')
     set u=BlzCreateUnitWithSkin(p, 'nmyr', - 24556.2, 21089.1, 48.968, 'nmyr')
     set u=BlzCreateUnitWithSkin(p, 'e006', - 19343.4, 14946.2, 221.260, 'e006')
-    set u=BlzCreateUnitWithSkin(p, 'ewsp', - 18200.5, 15964.4, 186.608, 'ewsp')
-    set u=BlzCreateUnitWithSkin(p, 'ewsp', - 18171.7, 15821.8, 217.690, 'ewsp')
+    set gg_unit_nfro_2832=BlzCreateUnitWithSkin(p, 'nfro', 21798.3, 13566.1, 294.600, 'nfro')
+    set gg_unit_nfro_2833=BlzCreateUnitWithSkin(p, 'nfro', 4439.8, - 7116.7, 274.230, 'nfro')
+    set gg_unit_nfro_2837=BlzCreateUnitWithSkin(p, 'nfro', 13236.0, 5344.2, 175.990, 'nfro')
     set u=BlzCreateUnitWithSkin(p, 'u02G', - 26771.6, 17611.3, 283.870, 'u02G')
-    set u=BlzCreateUnitWithSkin(p, 'ewsp', - 18332.1, 15895.4, 186.608, 'ewsp')
-    set gg_unit_u00W_2892=BlzCreateUnitWithSkin(p, 'u00W', - 18299.0, - 24621.5, 195.610, 'u00W')
+    set u=BlzCreateUnitWithSkin(p, 'nhyc', - 25078.0, - 24861.2, 266.451, 'nhyc')
+    set gg_unit_nfro_2886=BlzCreateUnitWithSkin(p, 'nfro', 5406.3, 9732.2, 222.579, 'nfro')
+    set u=BlzCreateUnitWithSkin(p, 'ewsp', - 18211.0, 15869.4, 186.608, 'ewsp')
     set u=BlzCreateUnitWithSkin(p, 'h02O', 9016.0, - 10765.2, 103.000, 'h02O')
     set u=BlzCreateUnitWithSkin(p, 'h00J', 8324.7, - 9747.6, 308.934, 'h00J')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
-    set u=BlzCreateUnitWithSkin(p, 'nvil', - 28223.4, - 19786.0, 261.241, 'nvil')
-    set u=BlzCreateUnitWithSkin(p, 'nvlw', - 28257.2, - 19967.3, 322.634, 'nvlw')
-    set u=BlzCreateUnitWithSkin(p, 'nvil', - 27736.3, - 19986.5, 211.339, 'nvil')
-    set u=BlzCreateUnitWithSkin(p, 'nvl2', - 27953.7, - 19812.9, 244.915, 'nvl2')
-    set u=BlzCreateUnitWithSkin(p, 'nvl2', - 27335.3, - 18841.3, 33.048, 'nvl2')
-    set u=BlzCreateUnitWithSkin(p, 'nvil', - 27332.2, - 18741.1, 307.363, 'nvil')
-    set u=BlzCreateUnitWithSkin(p, 'nvlw', - 26706.3, - 21497.3, 30.645, 'nvlw')
-    set u=BlzCreateUnitWithSkin(p, 'nvl2', - 27033.5, - 21004.4, 11.415, 'nvl2')
-    set u=BlzCreateUnitWithSkin(p, 'nvil', - 27528.3, - 20650.4, 308.758, 'nvil')
     set u=BlzCreateUnitWithSkin(p, 'h00A', 8573.8, - 9981.7, 119.256, 'h00A')
-    set u=BlzCreateUnitWithSkin(p, 'h04E', - 27569.0, - 25982.5, 44.540, 'h04E')
-    set u=BlzCreateUnitWithSkin(p, 'h04E', - 27293.9, - 25992.8, 100.209, 'h04E')
-    set u=BlzCreateUnitWithSkin(p, 'h04E', - 26713.1, - 25993.3, 106.065, 'h04E')
     set u=BlzCreateUnitWithSkin(p, 'nchg', - 3613.3, - 30987.8, 250.008, 'nchg')
-    set u=BlzCreateUnitWithSkin(p, 'h04E', - 27025.7, - 25985.4, 20.699, 'h04E')
-    set u=BlzCreateUnitWithSkin(p, 'h00A', 18081.0, - 17850.7, 119.664, 'h00A')
-    set u=BlzCreateUnitWithSkin(p, 'h04E', - 22976.0, - 26310.3, 26.423, 'h04E')
     set u=BlzCreateUnitWithSkin(p, 'h00A', 18008.3, - 17301.1, 316.800, 'h00A')
     set u=BlzCreateUnitWithSkin(p, 'h018', 14340.9, 4360.0, 318.615, 'h018')
     call SetUnitAcquireRange(u, 200.0)
+    set gg_unit_npig_3022=BlzCreateUnitWithSkin(p, 'npig', 19690.6, 17214.4, 277.240, 'npig')
+    set u=BlzCreateUnitWithSkin(p, 'n0BS', 11707.9, 8629.5, 306.082, 'n0BS')
     set u=BlzCreateUnitWithSkin(p, 'u02G', - 27406.1, 17616.0, 283.870, 'u02G')
     set u=BlzCreateUnitWithSkin(p, 'u02G', - 28421.4, 15977.1, 16.859, 'u02G')
     set u=BlzCreateUnitWithSkin(p, 'u02G', - 27525.2, 14801.4, 7.439, 'u02G')
+    set gg_unit_nfro_3039=BlzCreateUnitWithSkin(p, 'nfro', - 16605.3, - 10181.0, 81.500, 'nfro')
     set u=BlzCreateUnitWithSkin(p, 'h08L', - 8950.7, 22737.3, 17.908, 'h08L')
     set u=BlzCreateUnitWithSkin(p, 'h08L', - 8879.4, 22625.3, 346.860, 'h08L')
     set u=BlzCreateUnitWithSkin(p, 'h096', - 8739.5, 22430.5, 30.136, 'h096')
@@ -11215,14 +11479,40 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'n068', - 9082.1, 22840.8, 154.396, 'n068')
     set u=BlzCreateUnitWithSkin(p, 'hpea', - 8695.7, 22944.8, 73.390, 'hpea')
     set u=BlzCreateUnitWithSkin(p, 'h05F', 10077.2, - 10694.8, 230.000, 'h05F')
+    set gg_unit_nfro_3150=BlzCreateUnitWithSkin(p, 'nfro', 15249.7, 2536.5, 295.219, 'nfro')
     set u=BlzCreateUnitWithSkin(p, 'h01L', 10060.4, - 4957.9, 0.000, 'h01L')
     set gg_unit_ohun_3197=BlzCreateUnitWithSkin(p, 'ohun', - 3403.5, - 2977.9, 333.000, 'ohun')
+    set u=BlzCreateUnitWithSkin(p, 'ndrn', - 3282.1, - 20743.1, 142.387, 'ndrn')
+    set u=BlzCreateUnitWithSkin(p, 'ndrn', - 3261.9, - 20594.8, 272.711, 'ndrn')
     set u=BlzCreateUnitWithSkin(p, 'n02D', 16810.7, - 30874.9, 5.061, 'n02D')
     call SetUnitState(u, UNIT_STATE_MANA, 250)
     set u=BlzCreateUnitWithSkin(p, 'ohun', - 3787.2, - 2767.7, 225.000, 'ohun')
     set u=BlzCreateUnitWithSkin(p, 'odoc', - 3465.1, - 2876.3, 276.150, 'odoc')
     call SetUnitState(u, UNIT_STATE_MANA, 200)
+    set u=BlzCreateUnitWithSkin(p, 'ndrn', - 3557.7, - 20834.4, 121.930, 'ndrn')
+    set u=BlzCreateUnitWithSkin(p, 'ndrn', - 3466.8, - 20874.4, 135.553, 'ndrn')
+    set u=BlzCreateUnitWithSkin(p, 'ndrs', - 3593.5, - 20608.1, 125.775, 'ndrs')
+    set u=BlzCreateUnitWithSkin(p, 'ndrs', - 3867.2, - 20684.5, 130.346, 'ndrs')
+    set u=BlzCreateUnitWithSkin(p, 'ndrn', - 3925.6, - 20969.5, 63.437, 'ndrn')
+    set u=BlzCreateUnitWithSkin(p, 'ndrs', - 3377.4, - 20487.2, 190.421, 'ndrs')
+    set u=BlzCreateUnitWithSkin(p, 'h041', 5220.4, - 6996.5, 226.369, 'h041')
+    set u=BlzCreateUnitWithSkin(p, 'h041', 5304.0, - 7119.8, 200.737, 'h041')
+    set u=BlzCreateUnitWithSkin(p, 'h041', 4946.6, - 8132.2, 25.258, 'h041')
+    set u=BlzCreateUnitWithSkin(p, 'h06J', 4975.9, - 6957.6, 224.425, 'h06J')
+    set gg_unit_nhmc_3297=BlzCreateUnitWithSkin(p, 'nhmc', 15406.5, 2548.3, 250.342, 'nhmc')
+    set gg_unit_nhmc_3317=BlzCreateUnitWithSkin(p, 'nhmc', 15486.8, 2471.9, 219.755, 'nhmc')
     set u=BlzCreateUnitWithSkin(p, 'owar', 22098.6, - 29300.7, 250.090, 'owar')
+    set u=BlzCreateUnitWithSkin(p, 'h06J', 3774.9, - 6413.5, 52.329, 'h06J')
+    set u=BlzCreateUnitWithSkin(p, 'h06J', 3998.9, - 6099.5, 3.252, 'h06J')
+    set u=BlzCreateUnitWithSkin(p, 'h05K', 3973.5, - 6214.5, 147.924, 'h05K')
+    set u=BlzCreateUnitWithSkin(p, 'h05K', 3899.3, - 6312.2, 153.396, 'h05K')
+    set u=BlzCreateUnitWithSkin(p, 'e007', 4766.3, - 8209.1, 193.365, 'e007')
+    set u=BlzCreateUnitWithSkin(p, 'ncpn', - 3638.0, - 31611.1, 150.155, 'ncpn')
+    set u=BlzCreateUnitWithSkin(p, 'ncpn', - 3652.6, - 31710.7, 111.855, 'ncpn')
+    set u=BlzCreateUnitWithSkin(p, 'n09O', - 26434.0, 3490.6, 268.764, 'n09O')
+    set u=BlzCreateUnitWithSkin(p, 'n07X', - 26546.1, 3471.6, 267.059, 'n07X')
+    set u=BlzCreateUnitWithSkin(p, 'u01T', - 26676.2, 3468.4, 269.633, 'u01T')
+    set u=BlzCreateUnitWithSkin(p, 'o04K', - 27019.5, 3432.1, 274.015, 'o04K')
     set u=BlzCreateUnitWithSkin(p, 'nvlw', 11756.4, 8521.0, 329.551, 'nvlw')
     set u=BlzCreateUnitWithSkin(p, 'nvil', 6948.8, 7227.2, 232.330, 'nvil')
     set u=BlzCreateUnitWithSkin(p, 'nvil', 5961.5, 3868.5, 232.330, 'nvil')
@@ -11230,10 +11520,28 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nvil', 10436.0, 4025.8, 232.335, 'nvil')
     set u=BlzCreateUnitWithSkin(p, 'nvl2', 13895.4, 11687.7, 281.965, 'nvl2')
     set u=BlzCreateUnitWithSkin(p, 'nvl2', 15252.3, 12918.4, 128.606, 'nvl2')
+    set u=BlzCreateUnitWithSkin(p, 'n04H', - 27559.4, 11782.6, 270.373, 'n04H')
+    set u=BlzCreateUnitWithSkin(p, 'ninf', - 27988.9, 11669.5, 271.920, 'ninf')
+    set u=BlzCreateUnitWithSkin(p, 'ninf', - 28150.3, 11641.8, 271.920, 'ninf')
+    set u=BlzCreateUnitWithSkin(p, 'ninf', - 27976.8, 11526.9, 271.920, 'ninf')
+    set u=BlzCreateUnitWithSkin(p, 'ninf', - 28186.2, 11987.6, 271.920, 'ninf')
+    set u=BlzCreateUnitWithSkin(p, 'ninf', - 27225.5, 11147.4, 271.920, 'ninf')
+    set u=BlzCreateUnitWithSkin(p, 'ninf', - 27034.1, 10985.9, 268.476, 'ninf')
+    set u=BlzCreateUnitWithSkin(p, 'ninf', - 27991.1, 11817.8, 271.920, 'ninf')
+    set u=BlzCreateUnitWithSkin(p, 'ninf', - 27033.4, 11208.4, 271.920, 'ninf')
+    set u=BlzCreateUnitWithSkin(p, 'O00Y', - 27386.4, 3272.1, 269.883, 'O00Y')
+    set u=BlzCreateUnitWithSkin(p, 'n04L', - 28096.3, 13074.2, 268.490, 'n04L')
+    set u=BlzCreateUnitWithSkin(p, 'n04L', - 27920.5, 13068.4, 268.490, 'n04L')
+    set u=BlzCreateUnitWithSkin(p, 'n04L', - 27926.6, 12874.1, 268.490, 'n04L')
+    set u=BlzCreateUnitWithSkin(p, 'n04L', - 28099.4, 12881.9, 268.490, 'n04L')
+    set u=BlzCreateUnitWithSkin(p, 'n04U', - 27848.0, 11792.3, 270.350, 'n04U')
     set u=BlzCreateUnitWithSkin(p, 'nvl2', 13887.0, 12840.8, 303.631, 'nvl2')
     set u=BlzCreateUnitWithSkin(p, 'nvlw', 15222.3, 12068.3, 197.973, 'nvlw')
     set u=BlzCreateUnitWithSkin(p, 'nvlw', 15885.4, 11840.8, 168.096, 'nvlw')
+    set u=BlzCreateUnitWithSkin(p, 'n04U', - 27636.4, 11801.9, 270.350, 'n04U')
     set u=BlzCreateUnitWithSkin(p, 'nvl2', 14479.0, 13392.7, 52.376, 'nvl2')
+    set u=BlzCreateUnitWithSkin(p, 'n04U', - 27468.3, 11824.8, 270.350, 'n04U')
+    set u=BlzCreateUnitWithSkin(p, 'n04U', - 27284.3, 11814.7, 270.350, 'n04U')
     set gg_unit_etrs_3609=BlzCreateUnitWithSkin(p, 'etrs', - 6698.7, 4251.1, 260.680, 'etrs')
     set gg_unit_Hamg_3616=BlzCreateUnitWithSkin(p, 'Hamg', 19310.1, - 26168.0, 180.000, 'Hamg')
     call SetHeroLevel(gg_unit_Hamg_3616, 20, false)
@@ -11246,8 +11554,15 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'n063', 17714.6, 19045.4, 265.818, 'n063')
     set u=BlzCreateUnitWithSkin(p, 'n063', 19160.9, 18185.0, 294.234, 'n063')
     set u=BlzCreateUnitWithSkin(p, 'Otch', - 12787.5, - 3416.7, 270.000, 'Otch')
+    set u=BlzCreateUnitWithSkin(p, 'O01Q', - 27180.1, 3277.8, 264.750, 'O01Q')
     set u=BlzCreateUnitWithSkin(p, 'nmpe', 11574.5, - 30524.0, 274.634, 'nmpe')
     set u=BlzCreateUnitWithSkin(p, 'nmpe', 11536.4, - 30746.3, 68.755, 'nmpe')
+    set u=BlzCreateUnitWithSkin(p, 'nrdk', - 26477.5, 3228.3, 265.170, 'nrdk')
+    set u=BlzCreateUnitWithSkin(p, 'nrdr', - 26762.9, 3342.3, 269.436, 'nrdr')
+    set u=BlzCreateUnitWithSkin(p, 'o05K', - 27296.3, 3415.9, 269.237, 'o05K')
+    set u=BlzCreateUnitWithSkin(p, 'o05L', - 27169.0, 3411.0, 271.027, 'o05L')
+    set u=BlzCreateUnitWithSkin(p, 'o04I', - 27438.4, 3643.7, 261.348, 'o04I')
+    set u=BlzCreateUnitWithSkin(p, 'o04L', - 27324.6, 3626.5, 273.298, 'o04L')
     set u=BlzCreateUnitWithSkin(p, 'nmpe', - 25473.6, 21498.6, 59.405, 'nmpe')
     set u=BlzCreateUnitWithSkin(p, 'nsnp', - 24657.5, 21637.7, 349.958, 'nsnp')
     set u=BlzCreateUnitWithSkin(p, 'nsnp', - 24674.4, 20731.0, 52.549, 'nsnp')
@@ -11264,25 +11579,9 @@ function CreateNeutralPassive takes nothing returns nothing
     set u=BlzCreateUnitWithSkin(p, 'nmpe', - 26534.8, 19376.8, 68.656, 'nmpe')
     set u=BlzCreateUnitWithSkin(p, 'nmpe', - 26477.8, 19117.6, 146.782, 'nmpe')
     set u=BlzCreateUnitWithSkin(p, 'nnsw', - 26253.9, 22542.1, 328.468, 'nnsw')
-    set gg_unit_Hpb2_3787=BlzCreateUnitWithSkin(p, 'Hpb2', - 25052.6, - 29979.2, 306.000, 'Hpb2')
-    call SelectHeroSkill(gg_unit_Hpb2_3787, 'A0XO')
-    call IssueImmediateOrder(gg_unit_Hpb2_3787, "")
-    set u=BlzCreateUnitWithSkin(p, 'hpea', - 27803.1, - 31053.9, 4.395, 'hpea')
-    set u=BlzCreateUnitWithSkin(p, 'hpea', - 27767.2, - 30958.2, 92.859, 'hpea')
-    set u=BlzCreateUnitWithSkin(p, 'hpea', - 27681.5, - 30962.8, 87.553, 'hpea')
-    set gg_unit_hbot_3795=BlzCreateUnitWithSkin(p, 'hbot', - 28108.5, - 18151.1, 72.571, 'hbot')
-    set u=BlzCreateUnitWithSkin(p, 'hpea', - 27720.3, - 31113.4, 129.840, 'hpea')
-    set u=BlzCreateUnitWithSkin(p, 'hpea', - 27639.0, - 31052.0, 81.510, 'hpea')
-    set u=BlzCreateUnitWithSkin(p, 'h02O', 18222.0, - 17737.2, 150.858, 'h02O')
+    set u=BlzCreateUnitWithSkin(p, 'o05M', - 26694.3, 3439.6, 267.182, 'o05M')
     set u=BlzCreateUnitWithSkin(p, 'hpea', 18328.0, - 17602.9, 134.982, 'hpea')
-    set u=BlzCreateUnitWithSkin(p, 'h04E', - 22319.0, - 30919.7, 277.633, 'h04E')
     set u=BlzCreateUnitWithSkin(p, 'hpea', 18123.4, - 17256.9, 311.798, 'hpea')
-    set u=BlzCreateUnitWithSkin(p, 'h03L', - 26765.0, - 26168.9, 186.576, 'h03L')
-    set u=BlzCreateUnitWithSkin(p, 'h03L', - 23252.2, - 30514.0, 62.602, 'h03L')
-    set u=BlzCreateUnitWithSkin(p, 'h04E', - 26926.2, - 26066.3, 75.248, 'h04E')
-    set u=BlzCreateUnitWithSkin(p, 'h04E', - 27437.7, - 26054.7, 93.527, 'h04E')
-    set u=BlzCreateUnitWithSkin(p, 'h04M', - 27728.6, - 25907.7, 285.137, 'h04M')
-    set u=BlzCreateUnitWithSkin(p, 'h03L', - 27715.9, - 26033.5, 11.844, 'h03L')
     set u=BlzCreateUnitWithSkin(p, 'hspt', 19615.7, 19011.9, 258.761, 'hspt')
     set u=BlzCreateUnitWithSkin(p, 'ospw', - 15804.7, - 4354.6, 8.767, 'ospw')
     set u=BlzCreateUnitWithSkin(p, 'hspt', 17871.9, 18541.1, 258.969, 'hspt')
@@ -11309,12 +11608,14 @@ function CreatePlayerBuildings takes nothing returns nothing
     call CreateBuildingsForPlayer10()
     call CreateBuildingsForPlayer11()
     call CreateBuildingsForPlayer12()
+    call CreateBuildingsForPlayer13()
     call CreateBuildingsForPlayer14()
     call CreateBuildingsForPlayer15()
     call CreateBuildingsForPlayer16()
     call CreateBuildingsForPlayer17()
     call CreateBuildingsForPlayer18()
     call CreateBuildingsForPlayer19()
+    call CreateBuildingsForPlayer20()
     call CreateBuildingsForPlayer21()
     call CreateBuildingsForPlayer22()
     call CreateBuildingsForPlayer23()
@@ -11335,6 +11636,7 @@ function CreatePlayerUnits takes nothing returns nothing
     call CreateUnitsForPlayer10()
     call CreateUnitsForPlayer11()
     call CreateUnitsForPlayer12()
+    call CreateUnitsForPlayer13()
     call CreateUnitsForPlayer14()
     call CreateUnitsForPlayer15()
     call CreateUnitsForPlayer16()
@@ -11365,553 +11667,563 @@ endfunction
 function CreateRegions takes nothing returns nothing
     local weathereffect we
 
-    set gg_rct_Solliden_Farmstead=Rect(8128.0, 8992.0, 9536.0, 10592.0)
-    set gg_rct_Arathi_Ships=Rect(17984.0, 768.0, 18752.0, 1632.0)
-    set gg_rct_AzjolNerubDragonblight_Exit=Rect(- 11264.0, - 26944.0, - 10816.0, - 26720.0)
-    set gg_rct_Blasted_Lands_Weather=Rect(16672.0, - 21344.0, 20320.0, - 17984.0)
-    set gg_rct_Barren_Excavation=Rect(- 8928.0, - 15392.0, - 8864.0, - 15328.0)
-    set gg_rct_Blackrock_Entrance=Rect(14304.0, - 10784.0, 14688.0, - 10656.0)
-    set gg_rct_Book_of_Mediv_Chaos=Rect(4064.0, 18176.0, 4224.0, 18304.0)
-    set gg_rct_Borean_Tundra=Rect(- 7424.0, 13664.0, - 3040.0, 19008.0)
-    set gg_rct_Brill=Rect(9792.0, 10144.0, 11520.0, 11648.0)
-    set gg_rct_Broken_Isles=Rect(- 1120.0, 5568.0, 3648.0, 9472.0)
-    set gg_rct_CaerDarrowShipyard=Rect(10336.0, 2016.0, 20224.0, 11424.0)
-    set gg_rct_Cathedral_of_Light=Rect(10048.0, - 11872.0, 10528.0, - 11456.0)
-    set gg_rct_Central_Northrend=Rect(- 2432.0, 15104.0, 3680.0, 20320.0)
+    set gg_rct_Solliden_Farmstead=Rect(6400.0, 8992.0, 7808.0, 10592.0)
+    set gg_rct_Arathi_Ships=Rect(16256.0, 768.0, 17024.0, 1632.0)
+    set gg_rct_Auberdine_Ships=Rect(- 18272.0, 2848.0, - 15936.0, 5312.0)
+    set gg_rct_Auberdine_Ships_2=Rect(- 16640.0, 7424.0, - 9504.0, 11072.0)
+    set gg_rct_AzjolNerubDragonblight_Exit=Rect(- 12992.0, - 26944.0, - 12544.0, - 26720.0)
+    set gg_rct_Blasted_Lands_Weather=Rect(14944.0, - 21344.0, 18592.0, - 17984.0)
+    set gg_rct_Barren_Excavation=Rect(- 10656.0, - 15392.0, - 10592.0, - 15328.0)
+    set gg_rct_Blackrock_Entrance=Rect(12576.0, - 10784.0, 12960.0, - 10656.0)
+    set gg_rct_Blackrock_Exit=Rect(19808.0, - 30048.0, 20320.0, - 29888.0)
+    set gg_rct_Borean_Tundra=Rect(- 9152.0, 13664.0, - 4768.0, 19008.0)
+    set gg_rct_Brill=Rect(8064.0, 10144.0, 9792.0, 11648.0)
+    set gg_rct_Broken_Isles=Rect(- 2848.0, 5568.0, 1920.0, 9472.0)
+    set gg_rct_CaerDarrowShipyard=Rect(8608.0, 2016.0, 18496.0, 11424.0)
+    set gg_rct_Cathedral_of_Light=Rect(8320.0, - 11872.0, 8800.0, - 11456.0)
+    set gg_rct_Central_Northrend=Rect(- 4160.0, 15104.0, 1952.0, 20320.0)
     set we=AddWeatherEffect(gg_rct_Central_Northrend, 'SNls')
     call EnableWeatherEffect(we, true)
-    set gg_rct_Chaosmod1=Rect(13632.0, - 12192.0, 15744.0, - 10528.0)
-    set gg_rct_Coldarra=Rect(- 8928.0, 16896.0, - 6976.0, 18272.0)
+    set gg_rct_Coldarra=Rect(- 10656.0, 16896.0, - 8704.0, 18272.0)
     set we=AddWeatherEffect(gg_rct_Coldarra, 'SNls')
     call EnableWeatherEffect(we, true)
-    set gg_rct_Construction_Site_2=Rect(12480.0, - 12160.0, 13088.0, - 11488.0)
-    set gg_rct_Corins_Crossing=Rect(17920.0, 8896.0, 19808.0, 10944.0)
-    set gg_rct_Crossroads=Rect(- 10752.0, - 2592.0, - 9696.0, - 1568.0)
-    set gg_rct_Dalaran=Rect(10176.0, 3904.0, 12064.0, 5760.0)
-    set gg_rct_DalaranDungeon=Rect(- 12288.0, 20224.0, - 9024.0, 22848.0)
-    set gg_rct_Dalaran_Dungeons_Entrance=Rect(10272.0, 4576.0, 10656.0, 4928.0)
-    set gg_rct_Dalaran_Dungeons_Exit=Rect(- 12608.0, 20576.0, - 12160.0, 20832.0)
-    set gg_rct_DalaranExit2=Rect(11424.0, 5152.0, 11712.0, 5440.0)
-    set gg_rct_Dark_Portal_Entrance_1=Rect(18016.0, - 19008.0, 18432.0, - 18688.0)
-    set gg_rct_Dark_Portal_Exit_1=Rect(5952.0, - 25792.0, 6304.0, - 25344.0)
-    set gg_rct_Darkspear_Island=Rect(- 2656.0, - 3680.0, 608.0, - 352.0)
-    set gg_rct_Darrowshire=Rect(17824.0, 7168.0, 19328.0, 8480.0)
-    set gg_rct_Demongate_1=Rect(480.0, - 22400.0, 864.0, - 22016.0)
-    set gg_rct_Demongate_2=Rect(6880.0, - 29152.0, 7232.0, - 28800.0)
-    set gg_rct_DemonGate3=Rect(2080.0, - 25472.0, 2592.0, - 25024.0)
-    set gg_rct_Desolace_Ships=Rect(- 16992.0, - 7584.0, - 14464.0, - 3488.0)
-    set gg_rct_Dire_Maul_Entrance=Rect(- 15456.0, - 8736.0, - 15136.0, - 8576.0)
-    set gg_rct_Dire_Maul_Exit=Rect(- 16544.0, 20960.0, - 16288.0, 21088.0)
-    set gg_rct_Dun_Morogh_Excavation=Rect(12320.0, - 7328.0, 12384.0, - 7264.0)
-    set gg_rct_Dun_Morogh_Ships=Rect(9024.0, - 7872.0, 15968.0, - 4992.0)
-    set gg_rct_Dustwallow_Ships=Rect(- 10688.0, - 8736.0, - 7040.0, - 6144.0)
-    set gg_rct_East_Thandol=Rect(18848.0, 288.0, 19040.0, 448.0)
-    set gg_rct_Eastern_Northrend=Rect(576.0, 20320.0, 6336.0, 21408.0)
-    set gg_rct_EssenceSpawn=Rect(- 10432.0, 6240.0, - 10240.0, 6400.0)
-    set gg_rct_Far_Eastern_Northrend=Rect(6336.0, 20064.0, 9056.0, 22944.0)
+    set gg_rct_Construction_Site_2=Rect(10752.0, - 12160.0, 11360.0, - 11488.0)
+    set gg_rct_Corins_Crossing=Rect(16192.0, 8896.0, 18080.0, 10944.0)
+    set gg_rct_Crossroads=Rect(- 12480.0, - 2592.0, - 11424.0, - 1568.0)
+    set gg_rct_Dalaran=Rect(8448.0, 3904.0, 10336.0, 5760.0)
+    set gg_rct_DalaranDungeon=Rect(- 14016.0, 20224.0, - 10752.0, 22848.0)
+    set gg_rct_Dalaran_Dungeons_Entrance=Rect(8544.0, 4576.0, 8928.0, 4928.0)
+    set gg_rct_Dalaran_Dungeons_Exit=Rect(- 14336.0, 20576.0, - 13888.0, 20832.0)
+    set gg_rct_DalaranExit2=Rect(9696.0, 5152.0, 9984.0, 5440.0)
+    set gg_rct_Dark_Portal_Entrance_1=Rect(16288.0, - 19008.0, 16704.0, - 18688.0)
+    set gg_rct_Dark_Portal_Exit_1=Rect(4224.0, - 25792.0, 4576.0, - 25344.0)
+    set gg_rct_Darkspear_Island=Rect(- 4384.0, - 3680.0, - 1120.0, - 352.0)
+    set gg_rct_Darrowshire=Rect(16096.0, 7168.0, 17600.0, 8480.0)
+    set gg_rct_Demongate_1=Rect(- 1248.0, - 22400.0, - 864.0, - 22016.0)
+    set gg_rct_Demongate_2=Rect(5152.0, - 29152.0, 5504.0, - 28800.0)
+    set gg_rct_DemonGate3=Rect(352.0, - 25472.0, 864.0, - 25024.0)
+    set gg_rct_Desolace_Ships=Rect(- 18720.0, - 7584.0, - 16192.0, - 3488.0)
+    set gg_rct_Dire_Maul_Entrance=Rect(- 17184.0, - 8736.0, - 16864.0, - 8576.0)
+    set gg_rct_Dire_Maul_Exit=Rect(- 18272.0, 20960.0, - 18016.0, 21088.0)
+    set gg_rct_Dun_Morogh_Excavation=Rect(10592.0, - 7328.0, 10656.0, - 7264.0)
+    set gg_rct_Dun_Morogh_Ships=Rect(7296.0, - 7872.0, 14240.0, - 4992.0)
+    set gg_rct_Dustwallow_Ships=Rect(- 12416.0, - 8736.0, - 8768.0, - 6144.0)
+    set gg_rct_East_Thandol=Rect(17120.0, 288.0, 17312.0, 448.0)
+    set gg_rct_Eastern_Northrend=Rect(- 2272.0, 20320.0, 4608.0, 22304.0)
+    set gg_rct_EssenceSpawn=Rect(- 12160.0, 6240.0, - 11968.0, 6400.0)
+    set gg_rct_Far_Eastern_Northrend=Rect(4608.0, 20064.0, 7328.0, 22944.0)
     set we=AddWeatherEffect(gg_rct_Far_Eastern_Northrend, 'SNhs')
     call EnableWeatherEffect(we, true)
-    set gg_rct_Felwood_Vision=Rect(- 14496.0, 5888.0, - 12832.0, 7776.0)
-    set gg_rct_Fenris_ships=Rect(7488.0, 4960.0, 14752.0, 8128.0)
-    set gg_rct_Fjord=Rect(3296.0, 13408.0, 9920.0, 20096.0)
-    set gg_rct_Gilneas=Rect(5824.0, - 2624.0, 11168.0, 2336.0)
-    set gg_rct_Gilneas_Canals=Rect(7616.0, - 1344.0, 10368.0, 2624.0)
-    set gg_rct_Gnomergan=Rect(9024.0, - 6528.0, 10400.0, - 4960.0)
-    set gg_rct_Greymane=Rect(8800.0, 352.0, 9056.0, 544.0)
-    set gg_rct_Grim_Batol=Rect(17728.0, - 4192.0, 19680.0, - 2048.0)
-    set gg_rct_Grim_Batol_Tunnel_Entrance=Rect(18208.0, - 2944.0, 18400.0, - 2784.0)
-    set gg_rct_Grim_Batol_Tunnel_Top=Rect(18336.0, - 2496.0, 18560.0, - 2400.0)
-    set gg_rct_Havenshire=Rect(21856.0, 7040.0, 23840.0, 9472.0)
-    set gg_rct_Hearthglen=Rect(12352.0, 10176.0, 15040.0, 11744.0)
-    set gg_rct_HeroOrItemWaitRect=Rect(22368.0, 24256.0, 22912.0, 24512.0)
-    set gg_rct_HonorHold=Rect(3936.0, - 27360.0, 5664.0, - 26016.0)
-    set gg_rct_Howling_Fjord=Rect(7136.0, 15328.0, 7200.0, 15392.0)
-    set gg_rct_Ice_Crown=Rect(- 2656.0, 19616.0, - 544.0, 24736.0)
+    set gg_rct_Felwood_Vision=Rect(- 16224.0, 5888.0, - 14560.0, 7776.0)
+    set gg_rct_Fenris_ships=Rect(5760.0, 4960.0, 13024.0, 8128.0)
+    set gg_rct_Fjord=Rect(1536.0, 13408.0, 8192.0, 20320.0)
+    set gg_rct_Gilneas=Rect(4096.0, - 2624.0, 9440.0, 2336.0)
+    set gg_rct_Gilneas_Canals=Rect(5888.0, - 1344.0, 8640.0, 2624.0)
+    set gg_rct_Gnomergan=Rect(7296.0, - 6528.0, 8672.0, - 4960.0)
+    set gg_rct_Greymane=Rect(7072.0, 352.0, 7328.0, 544.0)
+    set gg_rct_Grim_Batol=Rect(16000.0, - 4192.0, 17952.0, - 2048.0)
+    set gg_rct_Grim_Batol_Tunnel_Entrance=Rect(16480.0, - 2944.0, 16672.0, - 2784.0)
+    set gg_rct_Grim_Batol_Tunnel_Top=Rect(16608.0, - 2496.0, 16832.0, - 2400.0)
+    set gg_rct_Havenshire=Rect(20128.0, 7040.0, 22112.0, 9472.0)
+    set gg_rct_Hearthglen=Rect(10624.0, 10176.0, 13312.0, 11744.0)
+    set gg_rct_HeroOrItemWaitRect=Rect(20640.0, 24256.0, 21184.0, 24512.0)
+    set gg_rct_HonorHold=Rect(2208.0, - 27360.0, 3936.0, - 26016.0)
+    set gg_rct_Howling_Fjord=Rect(5408.0, 15328.0, 5472.0, 15392.0)
+    set gg_rct_Ice_Crown=Rect(- 4384.0, 19616.0, - 2272.0, 24736.0)
     set we=AddWeatherEffect(gg_rct_Ice_Crown, 'SNls')
     call EnableWeatherEffect(we, true)
-    set gg_rct_IcecrownShipyard=Rect(- 5248.0, 22304.0, 480.0, 24992.0)
+    set gg_rct_IcecrownShipyard=Rect(- 6976.0, 22304.0, - 1248.0, 24992.0)
     set we=AddWeatherEffect(gg_rct_IcecrownShipyard, 'SNls')
     call EnableWeatherEffect(we, true)
-    set gg_rct_IllidanSpawn=Rect(- 11232.0, 6080.0, - 11168.0, 6144.0)
-    set gg_rct_Ironforge=Rect(11520.0, - 5728.0, 11744.0, - 5536.0)
-    set gg_rct_Jaina_soul_gem=Rect(- 19456.0, 17440.0, - 17440.0, 19808.0)
-    set gg_rct_Kali_Ships=Rect(- 15872.0, - 15296.0, - 9088.0, 5600.0)
-    set gg_rct_Kultiras=Rect(3936.0, - 6592.0, 6752.0, - 2624.0)
-    set gg_rct_LichKing=Rect(- 1792.0, 20224.0, - 1408.0, 20704.0)
-    set gg_rct_Loch_Modan_Ships=Rect(16448.0, - 7552.0, 19680.0, - 1536.0)
-    set gg_rct_Lordaeron_East=Rect(14624.0, 7456.0, 19968.0, 13984.0)
-    set gg_rct_Lordaeron_West=Rect(5312.0, 7200.0, 15520.0, 13024.0)
-    set gg_rct_Moonglade=Rect(- 11264.0, 10176.0, - 10688.0, 10656.0)
-    set gg_rct_Murloc_Attack=Rect(- 1728.0, - 2368.0, - 1568.0, - 2176.0)
-    set gg_rct_Murloc_Spawn_1=Rect(- 1952.0, - 3584.0, - 1408.0, - 3296.0)
-    set gg_rct_Murloc_Spawn_2=Rect(- 2880.0, - 3040.0, - 2688.0, - 2592.0)
-    set gg_rct_InstanceNazjatar=Rect(9600.0, - 31584.0, 17280.0, - 26624.0)
-    set gg_rct_Nether_Exit=Rect(- 19776.0, 20736.0, - 17888.0, 21504.0)
-    set gg_rct_Northern_Kali_Ships=Rect(- 15616.0, - 1376.0, - 6976.0, 8800.0)
-    set gg_rct_Northrend_ships=Rect(- 7488.0, 19680.0, 7776.0, 24992.0)
-    set gg_rct_OrgGate=Rect(- 7552.0, - 1344.0, - 7360.0, - 1248.0)
-    set gg_rct_Orgrimmar=Rect(- 8096.0, - 2080.0, - 5248.0, 1248.0)
-    set gg_rct_Outland_Ships=Rect(- 4704.0, - 32224.0, 8416.0, - 18176.0)
-    set gg_rct_Plague_1=Rect(8096.0, 6848.0, 9568.0, 10816.0)
-    set gg_rct_Plague_2=Rect(13120.0, 8736.0, 15680.0, 9888.0)
-    set gg_rct_Plague_3=Rect(17696.0, 7744.0, 20384.0, 8960.0)
-    set gg_rct_Plague_4=Rect(17056.0, 8896.0, 20224.0, 10944.0)
-    set gg_rct_Plague_5=Rect(8864.0, 10272.0, 11008.0, 11840.0)
-    set gg_rct_Plague_6=Rect(8288.0, 3104.0, 9600.0, 5568.0)
-    set gg_rct_Plague_7=Rect(10944.0, 2048.0, 14464.0, 3424.0)
-    set gg_rct_Quel_Ships_1=Rect(18112.0, 16608.0, 21824.0, 17568.0)
-    set gg_rct_Quel_Ships_2=Rect(18944.0, 13984.0, 22240.0, 17568.0)
-    set gg_rct_Quel_Ships_3=Rect(18016.0, 11744.0, 23648.0, 15584.0)
-    set gg_rct_Quelthalas=Rect(16864.0, 13536.0, 23136.0, 23168.0)
-    set gg_rct_Sargeras_Entrance=Rect(704.0, 8096.0, 1280.0, 8576.0)
-    set gg_rct_Sargeras_Exit=Rect(- 8608.0, - 25376.0, - 8288.0, - 25056.0)
-    set gg_rct_ScarletMonastery=Rect(12800.0, 11168.0, 13248.0, 11840.0)
-    set gg_rct_Scholomance_Entrance=Rect(16288.0, 7552.0, 16640.0, 7872.0)
-    set gg_rct_Scholomance_Exit=Rect(- 19392.0, 17440.0, - 19008.0, 17792.0)
-    set gg_rct_Shadowforge_City=Rect(18432.0, - 31744.0, 20000.0, - 30560.0)
-    set gg_rct_Shadowmoon_Excavation=Rect(4256.0, - 31072.0, 4320.0, - 31008.0)
-    set gg_rct_Siphon_Cast_Zone=Rect(- 10016.0, 7424.0, - 9760.0, 7648.0)
-    set gg_rct_South_EK_Ships=Rect(9600.0, - 18240.0, 20608.0, - 12288.0)
-    set gg_rct_StonemaulKeep=Rect(- 10464.0, - 10112.0, - 7680.0, - 7904.0)
-    set gg_rct_Storm_Peaks=Rect(640.0, 21088.0, 6368.0, 25088.0)
+    set gg_rct_IllidanSpawn=Rect(- 12960.0, 6080.0, - 12896.0, 6144.0)
+    set gg_rct_Ironforge=Rect(9792.0, - 5728.0, 10016.0, - 5536.0)
+    set gg_rct_Jaina_soul_gem=Rect(- 21184.0, 17440.0, - 19168.0, 19808.0)
+    set gg_rct_Kali_Ships=Rect(- 17600.0, - 15296.0, - 10816.0, 5600.0)
+    set gg_rct_Kultiras=Rect(864.0, - 10304.0, 5856.0, - 3744.0)
+    set gg_rct_LichKing=Rect(- 3520.0, 20224.0, - 3136.0, 20704.0)
+    set gg_rct_Loch_Modan_Ships=Rect(14720.0, - 7552.0, 17952.0, - 1536.0)
+    set gg_rct_Lordaeron_East=Rect(12896.0, 7456.0, 18240.0, 13984.0)
+    set gg_rct_Lordaeron_West=Rect(3584.0, 7200.0, 13792.0, 13024.0)
+    set gg_rct_Moonglade=Rect(- 12992.0, 10176.0, - 12416.0, 10656.0)
+    set gg_rct_Murloc_Attack=Rect(- 3456.0, - 2368.0, - 3296.0, - 2176.0)
+    set gg_rct_Murloc_Spawn_1=Rect(- 3680.0, - 3584.0, - 3136.0, - 3296.0)
+    set gg_rct_Murloc_Spawn_2=Rect(- 4608.0, - 3040.0, - 4416.0, - 2592.0)
+    set gg_rct_InstanceNazjatar=Rect(7872.0, - 31584.0, 15552.0, - 26624.0)
+    set gg_rct_Nether_Exit=Rect(- 26688.0, 7776.0, - 25696.0, 8800.0)
+    set gg_rct_Northern_Kali_Ships=Rect(- 17344.0, - 1376.0, - 8704.0, 8800.0)
+    set gg_rct_Northrend_ships=Rect(- 9216.0, 19680.0, 6048.0, 24992.0)
+    set gg_rct_OrgGate=Rect(- 9280.0, - 1344.0, - 9088.0, - 1248.0)
+    set gg_rct_Orgrimmar=Rect(- 9824.0, - 2080.0, - 6976.0, 1248.0)
+    set gg_rct_Outland_Ships=Rect(- 6432.0, - 32224.0, 6688.0, - 18176.0)
+    set gg_rct_Plague_1=Rect(6368.0, 6848.0, 7840.0, 10816.0)
+    set gg_rct_Plague_2=Rect(11392.0, 8736.0, 13952.0, 9888.0)
+    set gg_rct_Plague_3=Rect(15968.0, 7744.0, 18656.0, 8960.0)
+    set gg_rct_Plague_4=Rect(15328.0, 8896.0, 18496.0, 10944.0)
+    set gg_rct_Plague_5=Rect(7136.0, 10272.0, 9280.0, 11840.0)
+    set gg_rct_Plague_6=Rect(6560.0, 3104.0, 7872.0, 5568.0)
+    set gg_rct_Plague_7=Rect(9216.0, 2048.0, 12736.0, 3424.0)
+    set gg_rct_Quel_Ships_1=Rect(16384.0, 16608.0, 20096.0, 17568.0)
+    set gg_rct_Quel_Ships_2=Rect(17216.0, 13984.0, 20512.0, 17568.0)
+    set gg_rct_Quel_Ships_3=Rect(16288.0, 11744.0, 21920.0, 15584.0)
+    set gg_rct_Quelthalas=Rect(15136.0, 13536.0, 21408.0, 23168.0)
+    set gg_rct_Sargeras_Entrance=Rect(- 1024.0, 8096.0, - 448.0, 8576.0)
+    set gg_rct_Sargeras_Exit=Rect(- 10336.0, - 25376.0, - 10016.0, - 25056.0)
+    set gg_rct_ScarletMonastery=Rect(11072.0, 11168.0, 11520.0, 11840.0)
+    set gg_rct_Scholomance_Entrance=Rect(14560.0, 7552.0, 14912.0, 7872.0)
+    set gg_rct_Scholomance_Exit=Rect(- 21120.0, 17440.0, - 20736.0, 17792.0)
+    set gg_rct_Shadowforge_City=Rect(16704.0, - 31744.0, 18272.0, - 30560.0)
+    set gg_rct_Shadowforge_gate=Rect(17952.0, - 31712.0, 18336.0, - 30912.0)
+    set gg_rct_Shadowmoon_Excavation=Rect(2528.0, - 31072.0, 2592.0, - 31008.0)
+    set gg_rct_Siphon_Cast_Zone=Rect(- 11744.0, 7424.0, - 11488.0, 7648.0)
+    set gg_rct_South_EK_Ships=Rect(7872.0, - 18240.0, 18880.0, - 12288.0)
+    set gg_rct_StonemaulKeep=Rect(- 12192.0, - 10112.0, - 9408.0, - 7904.0)
+    set gg_rct_Storm_Peaks=Rect(- 1088.0, 21088.0, 4640.0, 25088.0)
     set we=AddWeatherEffect(gg_rct_Storm_Peaks, 'SNhs')
     call EnableWeatherEffect(we, true)
-    set gg_rct_Stormwind=Rect(12608.0, - 10176.0, 12768.0, - 10016.0)
-    set gg_rct_Stratholme_Platform_entrance=Rect(16288.0, 12320.0, 16320.0, 12384.0)
-    set gg_rct_Stratholme_platform_exit=Rect(16448.0, 12320.0, 16512.0, 12416.0)
-    set gg_rct_StratholmeShipyard=Rect(15424.0, 7232.0, 21856.0, 11712.0)
-    set gg_rct_Stromgarde=Rect(14624.0, 448.0, 16992.0, 2048.0)
-    set gg_rct_Stromwind_antiship=Rect(9696.0, - 12768.0, 13408.0, - 9216.0)
-    set gg_rct_STV_Ships=Rect(11840.0, - 20032.0, 15776.0, - 17600.0)
-    set gg_rct_Terenas=Rect(9824.0, 7648.0, 11776.0, 9536.0)
-    set gg_rct_The_Basin=Rect(- 6560.0, 16256.0, - 2368.0, 22336.0)
-    set gg_rct_Thrall_2=Rect(- 1184.0, - 2880.0, - 768.0, - 2528.0)
-    set gg_rct_Thrall_3=Rect(- 928.0, - 1888.0, - 320.0, - 1504.0)
-    set gg_rct_Thrall_4=Rect(- 736.0, - 1568.0, - 608.0, - 1376.0)
-    set gg_rct_Thrall_5=Rect(- 544.0, - 1568.0, - 416.0, - 1344.0)
-    set gg_rct_Thrall_6=Rect(- 928.0, - 1856.0, - 192.0, - 960.0)
-    set gg_rct_Thrall_Landing1=Rect(- 2368.0, - 3328.0, - 1536.0, - 2656.0)
-    set gg_rct_Thrall_Ship_1=Rect(544.0, - 1824.0, 640.0, - 1728.0)
-    set gg_rct_Thrall_Ship_2=Rect(544.0, - 2336.0, 640.0, - 2240.0)
-    set gg_rct_Tomb_Of_Sargeras_Ships=Rect(- 9024.0, - 25760.0, - 6304.0, - 22816.0)
-    set gg_rct_TwistingNether=Rect(- 19776.0, 20736.0, - 17824.0, 23744.0)
-    set gg_rct_Vandermar_Village=Rect(8320.0, 6656.0, 9568.0, 8864.0)
-    set gg_rct_WarsongCamp=Rect(- 9344.0, 832.0, - 7904.0, 2688.0)
-    set gg_rct_West_Thandol=Rect(16608.0, 192.0, 16800.0, 416.0)
-    set gg_rct_Winterpspring_Excavation=Rect(- 8224.0, 9632.0, - 8160.0, 9696.0)
-    set gg_rct_ZF_Spawn_1=Rect(- 10240.0, - 12928.0, - 9888.0, - 12768.0)
-    set gg_rct_ZF_Spawn_2=Rect(- 9728.0, - 12800.0, - 9472.0, - 12544.0)
-    set gg_rct_Zulfarrak=Rect(- 10624.0, - 14272.0, - 8864.0, - 12064.0)
-    set gg_rct_East_of_Azeroth=Rect(23392.0, - 8544.0, 23840.0, - 8032.0)
-    set gg_rct_West_of_Kalimdor=Rect(- 19136.0, 4576.0, - 18528.0, 5216.0)
-    set gg_rct_Silvermon_Palace_trolls=Rect(22144.0, 18880.0, 22368.0, 19168.0)
-    set gg_rct_BloodpactFountain=Rect(- 9824.0, 3072.0, - 9472.0, 3328.0)
-    set gg_rct_FTSummon=Rect(- 1664.0, 20384.0, - 1504.0, 20512.0)
-    set gg_rct_Book_Retrieval=Rect(- 10272.0, 23616.0, - 9888.0, 24064.0)
-    set gg_rct_King_Arthas_crown=Rect(10624.0, 8320.0, 11008.0, 8512.0)
-    set gg_rct_Drekthars_Spellbook=Rect(- 10528.0, 6368.0, - 9152.0, 7712.0)
-    set gg_rct_Masteries=Rect(23264.0, 23968.0, 24160.0, 24640.0)
-    set gg_rct_Cthun_prevent_1=Rect(21696.0, 23296.0, 24288.0, 24736.0)
-    set gg_rct_AhnQiraj=Rect(- 18080.0, - 18880.0, - 14048.0, - 15072.0)
-    set gg_rct_Cthun_position=Rect(- 15776.0, - 18240.0, - 15744.0, - 18208.0)
-    set gg_rct_Sunwell_region=Rect(17184.0, 18816.0, 22496.0, 23168.0)
-    set gg_rct_RiseSpawn2=Rect(14432.0, 17376.0, 15808.0, 18816.0)
-    set gg_rct_AzjolNerub_South_Entrance=Rect(- 1728.0, 17696.0, - 1408.0, 17856.0)
-    set gg_rct_AzjolNerub_North_Exit=Rect(- 7104.0, - 28992.0, - 6624.0, - 28864.0)
-    set gg_rct_Auberdine_Ships_2=Rect(- 14912.0, 7424.0, - 7776.0, 11072.0)
-    set gg_rct_Auberdine_Ships=Rect(- 16544.0, 2848.0, - 14208.0, 5312.0)
-    set gg_rct_AzjolNerubNorth_entrance=Rect(- 4032.0, 23808.0, - 3584.0, 24000.0)
-    set gg_rct_Auberdine_Ships_2_Copy=Rect(- 14912.0, 7424.0, - 7776.0, 11072.0)
-    set gg_rct_Auberdine_Ships_Copy=Rect(- 16544.0, 2848.0, - 14208.0, 5312.0)
-    set gg_rct_Arathi_Ships_Copy=Rect(17984.0, 768.0, 18752.0, 1632.0)
-    set gg_rct_Alterac_Exca=Rect(12832.0, 5856.0, 12896.0, 5920.0)
-    set gg_rct_Arathi_Ships_Copy_2=Rect(17984.0, 768.0, 18752.0, 1632.0)
-    set gg_rct_Andorhal=Rect(12864.0, 7104.0, 15424.0, 8512.0)
-    set gg_rct_Aerie_Peak=Rect(15328.0, 4096.0, 16480.0, 5184.0)
-    set gg_rct_Arathi_Ships_Copy_3=Rect(17984.0, 768.0, 18752.0, 1632.0)
-    set gg_rct_TempestKeep=Rect(3168.0, - 23040.0, 6752.0, - 17952.0)
-    set gg_rct_Sunwell=Rect(19872.0, 21248.0, 20704.0, 22048.0)
-    set gg_rct_InstanceBarrowDeeps=Rect(17440.0, - 32128.0, 17568.0, - 31904.0)
-    set gg_rct_InstanceDireMaul=Rect(- 17056.0, 20800.0, - 14624.0, 24544.0)
-    set gg_rct_InstanceScholomance=Rect(- 19488.0, 17344.0, - 17408.0, 19808.0)
-    set gg_rct_InstanceSargerasTomb=Rect(- 9024.0, - 25760.0, - 6304.0, - 22816.0)
-    set gg_rct_InstanceAzjolNerub=Rect(- 12768.0, - 31200.0, - 6144.0, - 26560.0)
-    set gg_rct_InstanceOutland=Rect(- 4704.0, - 32224.0, 8416.0, - 18176.0)
-    set gg_rct_DalaranEntrance2=Rect(- 10240.0, 22880.0, - 9888.0, 23104.0)
-    set gg_rct_InstanceDalaranDungeon1=Rect(- 12288.0, 20224.0, - 9216.0, 24096.0)
-    set gg_rct_InstanceDalaranDungeon2=Rect(- 12448.0, 20192.0, - 12064.0, 22176.0)
-    set gg_rct_InstanceDalaranDungeon3=Rect(- 12704.0, 20544.0, - 12384.0, 20928.0)
-    set gg_rct_Tempest_Keep_Evacuate=Rect(- 1472.0, - 21888.0, - 608.0, - 21024.0)
-    set gg_rct_Gazlower=Rect(- 6304.0, - 4672.0, - 6240.0, - 4576.0)
-    set gg_rct_Varok=Rect(- 6336.0, 96.0, - 6240.0, 224.0)
-    set gg_rct_Region_077=Rect(6368.0, 16832.0, 8928.0, 17504.0)
+    set gg_rct_Stormwind=Rect(10880.0, - 10176.0, 11040.0, - 10016.0)
+    set gg_rct_Stratholme_Platform_entrance=Rect(14560.0, 12320.0, 14592.0, 12384.0)
+    set gg_rct_Stratholme_platform_exit=Rect(14720.0, 12320.0, 14784.0, 12416.0)
+    set gg_rct_StratholmeShipyard=Rect(13696.0, 7232.0, 20128.0, 11712.0)
+    set gg_rct_Stromgarde=Rect(12896.0, 448.0, 15264.0, 2048.0)
+    set gg_rct_Stromwind_antiship=Rect(7968.0, - 12768.0, 11680.0, - 9216.0)
+    set gg_rct_STV_Ships=Rect(10112.0, - 20032.0, 14048.0, - 17600.0)
+    set gg_rct_Terenas=Rect(8096.0, 7648.0, 10048.0, 9536.0)
+    set gg_rct_The_Basin=Rect(- 8288.0, 16256.0, - 4096.0, 22336.0)
+    set gg_rct_Thrall_2=Rect(- 2912.0, - 2880.0, - 2496.0, - 2528.0)
+    set gg_rct_Thrall_3=Rect(- 2656.0, - 1888.0, - 2048.0, - 1504.0)
+    set gg_rct_Thrall_4=Rect(- 2464.0, - 1568.0, - 2336.0, - 1376.0)
+    set gg_rct_Thrall_5=Rect(- 2272.0, - 1568.0, - 2144.0, - 1344.0)
+    set gg_rct_Thrall_6=Rect(- 2656.0, - 1856.0, - 1920.0, - 960.0)
+    set gg_rct_Thrall_Landing1=Rect(- 4096.0, - 3328.0, - 3264.0, - 2656.0)
+    set gg_rct_Thrall_Ship_1=Rect(- 1184.0, - 1824.0, - 1088.0, - 1728.0)
+    set gg_rct_Thrall_Ship_2=Rect(- 1184.0, - 2336.0, - 1088.0, - 2240.0)
+    set gg_rct_Tomb_Of_Sargeras_Ships=Rect(- 10752.0, - 25760.0, - 8032.0, - 22816.0)
+    set gg_rct_TwistingNether=Rect(- 28320.0, 10560.0, - 26272.0, 13600.0)
+    set gg_rct_Vandermar_Village=Rect(6592.0, 6656.0, 7840.0, 8864.0)
+    set gg_rct_WarsongCamp=Rect(- 11072.0, 832.0, - 9632.0, 2688.0)
+    set gg_rct_West_Thandol=Rect(14880.0, 192.0, 15072.0, 416.0)
+    set gg_rct_Winterpspring_Excavation=Rect(- 9952.0, 9632.0, - 9888.0, 9696.0)
+    set gg_rct_ZF_Spawn_1=Rect(- 11968.0, - 12928.0, - 11616.0, - 12768.0)
+    set gg_rct_ZF_Spawn_2=Rect(- 11456.0, - 12800.0, - 11200.0, - 12544.0)
+    set gg_rct_Zulfarrak=Rect(- 12352.0, - 14272.0, - 10592.0, - 12064.0)
+    set gg_rct_East_of_Azeroth=Rect(21664.0, - 8544.0, 22112.0, - 8032.0)
+    set gg_rct_West_of_Kalimdor=Rect(- 20864.0, 4576.0, - 20256.0, 5216.0)
+    set gg_rct_Silvermon_Palace_trolls=Rect(20416.0, 18880.0, 20640.0, 19168.0)
+    set gg_rct_BloodpactFountain=Rect(- 11552.0, 3072.0, - 11200.0, 3328.0)
+    set gg_rct_FTSummon=Rect(- 3392.0, 20384.0, - 3232.0, 20512.0)
+    set gg_rct_Book_Retrieval=Rect(- 12000.0, 23616.0, - 11616.0, 24064.0)
+    set gg_rct_King_Arthas_crown=Rect(8896.0, 8320.0, 9280.0, 8512.0)
+    set gg_rct_Drekthars_Spellbook=Rect(- 12256.0, 6368.0, - 10880.0, 7712.0)
+    set gg_rct_Masteries=Rect(21536.0, 23968.0, 22432.0, 24640.0)
+    set gg_rct_Cthun_prevent_1=Rect(19968.0, 23296.0, 22560.0, 24736.0)
+    set gg_rct_AhnQiraj=Rect(- 19808.0, - 18848.0, - 15808.0, - 15072.0)
+    set gg_rct_Cthun_position=Rect(- 17504.0, - 18240.0, - 17472.0, - 18208.0)
+    set gg_rct_Sunwell_region=Rect(15456.0, 18816.0, 20768.0, 23168.0)
+    set gg_rct_RiseSpawn2=Rect(12704.0, 17376.0, 14080.0, 18816.0)
+    set gg_rct_AzjolNerub_South_Entrance=Rect(- 3456.0, 17696.0, - 3136.0, 17856.0)
+    set gg_rct_AzjolNerub_North_Exit=Rect(- 8832.0, - 28992.0, - 8352.0, - 28864.0)
+    set gg_rct_Auberdine_Ships_2=Rect(- 16640.0, 7424.0, - 9504.0, 11072.0)
+    set gg_rct_Auberdine_Ships=Rect(- 18272.0, 2848.0, - 15936.0, 5312.0)
+    set gg_rct_AzjolNerubNorth_entrance=Rect(- 5760.0, 23808.0, - 5312.0, 24000.0)
+    set gg_rct_Auberdine_Ships_2=Rect(- 16640.0, 7424.0, - 9504.0, 11072.0)
+    set gg_rct_Auberdine_Ships=Rect(- 18272.0, 2848.0, - 15936.0, 5312.0)
+    set gg_rct_Arathi_Ships=Rect(16256.0, 768.0, 17024.0, 1632.0)
+    set gg_rct_Alterac_Exca=Rect(11104.0, 5856.0, 11168.0, 5920.0)
+    set gg_rct_Arathi_Ships=Rect(16256.0, 768.0, 17024.0, 1632.0)
+    set gg_rct_Andorhal=Rect(11136.0, 7104.0, 13696.0, 8512.0)
+    set gg_rct_Aerie_Peak=Rect(13600.0, 4096.0, 14752.0, 5184.0)
+    set gg_rct_Arathi_Ships=Rect(16256.0, 768.0, 17024.0, 1632.0)
+    set gg_rct_TempestKeep=Rect(1408.0, - 22432.0, 5024.0, - 17952.0)
+    set gg_rct_Sunwell=Rect(18144.0, 21248.0, 18976.0, 22048.0)
+    set gg_rct_InstanceBarrowDeeps=Rect(15712.0, - 32128.0, 15840.0, - 31904.0)
+    set gg_rct_InstanceDireMaul=Rect(- 18784.0, 20544.0, - 15904.0, 24544.0)
+    set gg_rct_InstanceScholomance=Rect(- 21216.0, 17344.0, - 19136.0, 19808.0)
+    set gg_rct_InstanceBlackrock=Rect(16416.0, - 32032.0, 22592.0, - 28544.0)
+    set gg_rct_InstanceSargerasTomb=Rect(- 10752.0, - 25760.0, - 8032.0, - 22816.0)
+    set gg_rct_InstanceAzjolNerub=Rect(- 14496.0, - 31200.0, - 7872.0, - 26560.0)
+    set gg_rct_InstanceOutland=Rect(- 6432.0, - 32224.0, 6688.0, - 18176.0)
+    set gg_rct_DalaranEntrance2=Rect(- 11968.0, 22880.0, - 11616.0, 23104.0)
+    set gg_rct_InstanceDalaranDungeon1=Rect(- 14016.0, 20224.0, - 10944.0, 24096.0)
+    set gg_rct_InstanceDalaranDungeon2=Rect(- 14176.0, 20192.0, - 13792.0, 22176.0)
+    set gg_rct_InstanceDalaranDungeon3=Rect(- 14432.0, 20544.0, - 14112.0, 20928.0)
+    set gg_rct_Tempest_Keep_Evacuate=Rect(- 3040.0, - 21984.0, - 2176.0, - 21120.0)
+    set gg_rct_Gazlower=Rect(- 8032.0, - 4672.0, - 7968.0, - 4576.0)
+    set gg_rct_Varok=Rect(- 8064.0, 96.0, - 7968.0, 224.0)
+    set gg_rct_Region_077=Rect(4640.0, 16832.0, 7200.0, 17504.0)
     set we=AddWeatherEffect(gg_rct_Region_077, 'SNls')
     call EnableWeatherEffect(we, true)
-    set gg_rct_NyHighland=Rect(20928.0, - 512.0, 21248.0, - 160.0)
-    set gg_rct_Mannoroth=Rect(- 8864.0, - 9472.0, - 8448.0, - 9024.0)
-    set gg_rct_Jergosh=Rect(- 9632.0, - 9024.0, - 9472.0, - 8864.0)
-    set gg_rct_Dark_Portal_Exit_2=Rect(5760.0, - 25088.0, 6144.0, - 24704.0)
-    set gg_rct_Dark_Portal_Exit_3=Rect(6592.0, - 26304.0, 6976.0, - 25920.0)
-    set gg_rct_Dark_Portal_Entrance_2=Rect(19328.0, - 19232.0, 19744.0, - 18912.0)
-    set gg_rct_Dark_Portal_Entrance_3=Rect(16960.0, - 19392.0, 17376.0, - 19072.0)
-    set gg_rct_Chen=Rect(- 7808.0, - 2848.0, - 7360.0, - 2176.0)
-    set gg_rct_QuelDanil_Lodge=Rect(17088.0, 4352.0, 17888.0, 5152.0)
-    set gg_rct_HighBourne=Rect(- 15808.0, 22272.0, - 14720.0, 23584.0)
-    set gg_rct_Andrassil=Rect(6720.0, 18400.0, 7168.0, 18816.0)
-    set gg_rct_EvilIllidanSpawn=Rect(4544.0, - 20480.0, 4800.0, - 20224.0)
-    set gg_rct_VaultoftheWardens=Rect(576.0, 6784.0, 896.0, 7104.0)
-    set gg_rct_Theramore=Rect(- 6752.0, - 10304.0, - 4288.0, - 7776.0)
-    set gg_rct_Terrordale=Rect(16384.0, 10336.0, 17696.0, 10880.0)
-    set gg_rct_Dreadscar_1=Rect(19808.0, 12256.0, 20512.0, 14688.0)
-    set gg_rct_Deemspring=Rect(19136.0, 18016.0, 19264.0, 18144.0)
-    set gg_rct_Dreadscar_3=Rect(20032.0, 19424.0, 20544.0, 21408.0)
-    set gg_rct_Scholo_Ships=Rect(- 19616.0, 17280.0, - 17248.0, 20032.0)
-    set gg_rct_DalaCutscene1=Rect(11328.0, 3488.0, 11392.0, 3552.0)
-    set gg_rct_Dreadscar_2=Rect(19584.0, 15392.0, 20736.0, 17376.0)
-    set gg_rct_DalaCutscene2=Rect(11392.0, 3232.0, 11456.0, 3296.0)
-    set gg_rct_DalaCutscene3=Rect(11488.0, 3328.0, 11552.0, 3392.0)
-    set gg_rct_DalaCutscene4=Rect(11232.0, 3072.0, 11296.0, 3136.0)
-    set gg_rct_DalaCutscene4_Copy=Rect(11104.0, 3072.0, 11168.0, 3136.0)
-    set gg_rct_DalaCutscene4_Copy_2=Rect(11200.0, 2976.0, 11264.0, 3040.0)
-    set gg_rct_Lord1=Rect(13792.0, 8672.0, 13856.0, 8736.0)
-    set gg_rct_Lord2=Rect(13056.0, 6016.0, 13184.0, 6144.0)
-    set gg_rct_Lord3=Rect(14336.0, 8608.0, 14400.0, 8672.0)
-    set gg_rct_Lord4=Rect(13952.0, 8480.0, 14016.0, 8544.0)
-    set gg_rct_Lord5=Rect(13792.0, 8480.0, 13856.0, 8544.0)
-    set gg_rct_Lord6=Rect(14400.0, 8128.0, 14464.0, 8192.0)
-    set gg_rct_Dwarf1=Rect(14080.0, - 3232.0, 14144.0, - 3168.0)
-    set gg_rct_Dwarf2=Rect(14144.0, - 3360.0, 14208.0, - 3296.0)
-    set gg_rct_Dwarf3=Rect(14016.0, - 3328.0, 14080.0, - 3264.0)
-    set gg_rct_Dwarf4=Rect(14336.0, - 3136.0, 14400.0, - 3072.0)
-    set gg_rct_Legion1=Rect(- 18304.0, 21664.0, - 18240.0, 21728.0)
-    set gg_rct_Legion00=Rect(3840.0, 20256.0, 3904.0, 20320.0)
-    set gg_rct_Legion2=Rect(- 18016.0, 21856.0, - 17952.0, 21920.0)
-    set gg_rct_Legion3=Rect(12832.0, 5664.0, 12896.0, 5728.0)
-    set gg_rct_Frostwolf1=Rect(- 192.0, - 2080.0, - 128.0, - 2016.0)
-    set gg_rct_Warsong1=Rect(- 9088.0, - 5024.0, - 9024.0, - 4960.0)
-    set gg_rct_Sent1=Rect(- 12160.0, 6720.0, - 12096.0, 6784.0)
-    set gg_rct_Sent2=Rect(- 15168.0, 10432.0, - 15104.0, 10496.0)
-    set gg_rct_Sent3=Rect(- 15040.0, 9856.0, - 14976.0, 9920.0)
-    set gg_rct_Sent4=Rect(- 15424.0, 9440.0, - 15360.0, 9504.0)
-    set gg_rct_Sent5=Rect(- 15616.0, 8448.0, - 15552.0, 8512.0)
-    set gg_rct_Sent_6=Rect(- 15456.0, 8960.0, - 15392.0, 9024.0)
-    set gg_rct_Sent_7=Rect(- 15360.0, 8928.0, - 15296.0, 8992.0)
-    set gg_rct_Sent8=Rect(- 18720.0, - 8704.0, - 18656.0, - 8640.0)
-    set gg_rct_Sent9=Rect(- 15200.0, 9504.0, - 15136.0, 9568.0)
-    set gg_rct_Sent10=Rect(- 18464.0, - 8928.0, - 18400.0, - 8864.0)
-    set gg_rct_Druid1=Rect(- 11552.0, 3776.0, - 11488.0, 3840.0)
-    set gg_rct_Druid2=Rect(- 12448.0, 6656.0, - 12384.0, 6720.0)
-    set gg_rct_Druid3=Rect(- 13920.0, 1984.0, - 13856.0, 2048.0)
-    set gg_rct_Scourge1=Rect(- 18688.0, 19424.0, - 18624.0, 19488.0)
-    set gg_rct_Scourge2=Rect(- 19104.0, 19168.0, - 19040.0, 19232.0)
-    set gg_rct_Scourge3=Rect(16736.0, 7360.0, 16800.0, 7424.0)
-    set gg_rct_Scourge4=Rect(16576.0, 7424.0, 16640.0, 7488.0)
-    set gg_rct_Stormwind1=Rect(16032.0, - 13216.0, 16096.0, - 13152.0)
-    set gg_rct_Stormwind2=Rect(11616.0, - 10912.0, 11680.0, - 10848.0)
-    set gg_rct_Stormwind3=Rect(11648.0, - 11456.0, 11712.0, - 11392.0)
-    set gg_rct_Fel4=Rect(14464.0, - 10880.0, 14528.0, - 10816.0)
-    set gg_rct_Fel5=Rect(19232.0, - 17696.0, 19296.0, - 17632.0)
-    set gg_rct_Fel6=Rect(19328.0, - 17632.0, 19392.0, - 17568.0)
-    set gg_rct_Fel7=Rect(19328.0, - 17760.0, 19392.0, - 17696.0)
-    set gg_rct_Fel8=Rect(6816.0, - 30080.0, 6880.0, - 30016.0)
-    set gg_rct_Quel1=Rect(21728.0, 12480.0, 21792.0, 12544.0)
-    set gg_rct_Quel5=Rect(21152.0, 12704.0, 21216.0, 12768.0)
-    set gg_rct_Quel2=Rect(22112.0, 15904.0, 22176.0, 15968.0)
-    set gg_rct_Quel3=Rect(22144.0, 16032.0, 22208.0, 16096.0)
-    set gg_rct_Quel4=Rect(22272.0, 16000.0, 22336.0, 16064.0)
-    set gg_rct_NazjatarExit3=Rect(16064.0, - 27872.0, 16704.0, - 27392.0)
-    set gg_rct_DagranSpawn=Rect(18848.0, - 31264.0, 18944.0, - 31200.0)
-    set gg_rct_Guldan=Rect(- 8256.0, - 24736.0, - 8000.0, - 24480.0)
-    set gg_rct_Gazlowe=Rect(- 6208.0, - 288.0, - 6080.0, - 160.0)
-    set gg_rct_Anetheron=Rect(3968.0, 20000.0, 4096.0, 20128.0)
-    set gg_rct_Khadgar=Rect(10496.0, - 11616.0, 10624.0, - 11488.0)
-    set gg_rct_Cenarius=Rect(- 10016.0, 6816.0, - 9920.0, 6944.0)
-    set gg_rct_Ursoc=Rect(- 9888.0, 6816.0, - 9792.0, 6944.0)
-    set gg_rct_Kiljaeden=Rect(- 18432.0, 23168.0, - 18304.0, 23296.0)
-    set gg_rct_ThunderBluff=Rect(- 14816.0, - 7808.0, - 12512.0, - 3072.0)
-    set gg_rct_ThrallLanding=Rect(- 7392.0, - 11040.0, - 6848.0, - 10752.0)
-    set gg_rct_CairneStart=Rect(- 8768.0, - 11616.0, - 7200.0, - 10688.0)
-    set gg_rct_Druid4=Rect(- 11360.0, 3264.0, - 11296.0, 3328.0)
-    set gg_rct_Druid5=Rect(- 12096.0, 3872.0, - 12032.0, 3936.0)
-    set gg_rct_Sent11=Rect(- 15936.0, - 13408.0, - 15872.0, - 13344.0)
-    set gg_rct_Sent_12=Rect(- 15392.0, 9120.0, - 15328.0, 9184.0)
-    set gg_rct_Dwarf_group_1=Rect(13440.0, - 3520.0, 13824.0, - 2912.0)
-    set gg_rct_GrizzlyHills=Rect(5184.0, 17184.0, 7680.0, 19232.0)
-    set gg_rct_Northrend_Ambiance=Rect(- 7488.0, 13248.0, 10336.0, 24736.0)
-    set gg_rct_TeldrassilAmbient=Rect(- 18848.0, 12160.0, - 14272.0, 16544.0)
-    set gg_rct_MoongladeVillage=Rect(- 12864.0, 10048.0, - 10560.0, 12192.0)
-    set gg_rct_AzuremystAmbient=Rect(- 19744.0, 7104.0, - 17248.0, 11072.0)
-    set gg_rct_AshenvaleAmbient=Rect(- 16128.0, 384.0, - 8128.0, 9152.0)
-    set gg_rct_BarrenAmbient1=Rect(- 17696.0, - 5632.0, - 8128.0, 384.0)
-    set gg_rct_BarrenAmbient2=Rect(- 14720.0, - 7776.0, - 10624.0, - 5472.0)
-    set gg_rct_BarrenAmbient3=Rect(- 12480.0, - 10272.0, - 10752.0, - 7840.0)
-    set gg_rct_BarrenAmbient4=Rect(- 12544.0, - 11616.0, - 7040.0, - 10048.0)
-    set gg_rct_BarrenAmbient5=Rect(- 10752.0, - 16544.0, - 5952.0, - 11712.0)
-    set gg_rct_SilithusAmbient=Rect(- 19040.0, - 18848.0, - 14016.0, - 11744.0)
-    set gg_rct_UngoroAmbient=Rect(- 13888.0, - 15200.0, - 10880.0, - 11680.0)
-    set gg_rct_FeralasAmbient1=Rect(- 15680.0, - 11552.0, - 12608.0, - 7904.0)
-    set gg_rct_FeralasAmbient2=Rect(- 19776.0, - 11744.0, - 15520.0, - 5536.0)
-    set gg_rct_AszharaAmbient1=Rect(- 8096.0, - 3872.0, - 5632.0, 3488.0)
-    set gg_rct_AzsharaAmbient2=Rect(- 6976.0, 832.0, - 2624.0, 6176.0)
-    set gg_rct_DusthallowAmbient=Rect(- 10528.0, - 9920.0, - 6912.0, - 5728.0)
-    set gg_rct_EchoIsleAmbient=Rect(- 6848.0, - 10208.0, - 3328.0, - 4064.0)
-    set gg_rct_ZulfarrakAmbient=Rect(- 4224.0, - 17216.0, 768.0, - 11264.0)
-    set gg_rct_KezanAmbient=Rect(- 1376.0, - 9920.0, 2464.0, - 5184.0)
-    set gg_rct_AshenvaleAmbient2=Rect(- 16032.0, 9152.0, - 10240.0, 12704.0)
-    set gg_rct_WinterspringAmbient1=Rect(- 10176.0, 9152.0, - 6752.0, 12032.0)
-    set gg_rct_WinterspringAmbient2=Rect(- 8064.0, 5792.0, - 6688.0, 9088.0)
-    set gg_rct_AshenvaleAmbient3=Rect(- 17696.0, 512.0, - 15616.0, 2080.0)
-    set gg_rct_RanazjarAmbient=Rect(- 19616.0, - 3040.0, - 17760.0, - 1248.0)
-    set gg_rct_AshenvaleAmbient4=Rect(- 17344.0, 2080.0, - 16128.0, 7584.0)
-    set gg_rct_Queltalas_2=Rect(17984.0, 11936.0, 21952.0, 14016.0)
-    set gg_rct_StratholmeAmbient=Rect(14784.0, 11136.0, 18016.0, 13888.0)
-    set gg_rct_LordaeronAmbient1=Rect(17696.0, 7264.0, 20736.0, 11712.0)
-    set gg_rct_TyrHandAmbient=Rect(20736.0, 6592.0, 23776.0, 9952.0)
-    set gg_rct_LordaeronAmbient2=Rect(14656.0, 8448.0, 17856.0, 11040.0)
-    set gg_rct_LordaeronAmbient3=Rect(11520.0, 7872.0, 15424.0, 12192.0)
-    set gg_rct_ZulAman_trolls=Rect(21984.0, 10176.0, 24576.0, 17440.0)
-    set gg_rct_LordaeronAmbient4=Rect(8576.0, 9472.0, 11552.0, 12224.0)
-    set gg_rct_LordaeronAmbient5=Rect(6272.0, 8128.0, 9760.0, 10688.0)
-    set gg_rct_QuelthalasAmbient=Rect(17952.0, 11776.0, 21952.0, 17440.0)
-    set gg_rct_SunwellAmbient=Rect(16896.0, 17440.0, 23104.0, 23104.0)
-    set gg_rct_ShadowfangAmbient=Rect(7072.0, 2624.0, 10304.0, 8160.0)
-    set gg_rct_LordamereLakeAmbient=Rect(10048.0, 5824.0, 12096.0, 7680.0)
-    set gg_rct_SouthshoreAmbient=Rect(10304.0, 1600.0, 15264.0, 3904.0)
-    set gg_rct_AlteracAmbient=Rect(12160.0, 4608.0, 13888.0, 7104.0)
-    set gg_rct_ScholomanceAmbient2=Rect(13856.0, 5440.0, 17952.0, 7072.0)
-    set gg_rct_ScholomanceAmbient1=Rect(15456.0, 7072.0, 17824.0, 8416.0)
-    set gg_rct_SouthshoreAmbient2=Rect(12064.0, 3936.0, 15296.0, 4608.0)
-    set gg_rct_SouthshoreAmbient3=Rect(13856.0, 4608.0, 15328.0, 5472.0)
-    set gg_rct_SouthshoreAmbient4=Rect(15232.0, 1920.0, 20064.0, 2976.0)
-    set gg_rct_SouthshoreAmbient5=Rect(17024.0, 736.0, 19584.0, 1920.0)
-    set gg_rct_BridgeAmbient=Rect(16960.0, - 288.0, 19232.0, 736.0)
-    set gg_rct_ScholomanceAmbient3=Rect(12928.0, 7072.0, 15456.0, 7840.0)
-    set gg_rct_HinterlandAmbient1=Rect(15328.0, 3040.0, 20864.0, 5408.0)
-    set gg_rct_HinterlandAmbient2=Rect(17984.0, 5408.0, 20800.0, 7040.0)
-    set gg_rct_Aerie_Peak_Copy=Rect(15328.0, 4096.0, 16480.0, 5184.0)
-    set gg_rct_TolbaradAmbient=Rect(12128.0, - 2176.0, 14144.0, 544.0)
-    set gg_rct_BalorAmbient=Rect(4832.0, - 14400.0, 8384.0, - 10112.0)
-    set gg_rct_StormwindAmbient2=Rect(8352.0, - 10528.0, 9888.0, - 8544.0)
-    set gg_rct_SentinelTowerAmbient=Rect(7424.0, - 17664.0, 10400.0, - 14304.0)
-    set gg_rct_StranglethornAmbient1=Rect(9408.0, - 19136.0, 15264.0, - 17472.0)
-    set gg_rct_StranglethornAmbient2=Rect(13536.0, - 22016.0, 16608.0, - 18272.0)
-    set gg_rct_StranglethornAmbient3=Rect(10496.0, - 23808.0, 14464.0, - 19168.0)
-    set gg_rct_ElwinForestAmbient=Rect(10432.0, - 14816.0, 15104.0, - 12704.0)
-    set gg_rct_DarkshireAmbient1=Rect(10400.0, - 17440.0, 15328.0, - 14816.0)
-    set gg_rct_DarkshireAmbient2=Rect(15328.0, - 18208.0, 16640.0, - 14720.0)
-    set gg_rct_DarkshireAmbient3=Rect(15136.0, - 14752.0, 19680.0, - 12672.0)
-    set gg_rct_BlastedlandAmbient=Rect(16640.0, - 21760.0, 20928.0, - 16896.0)
-    set gg_rct_SwampofSorrowsAmbient=Rect(16672.0, - 16896.0, 21152.0, - 14784.0)
-    set gg_rct_BurningSteppesAmbient=Rect(13440.0, - 12704.0, 19712.0, - 7552.0)
-    set gg_rct_BurningSteppeAmbient2=Rect(19680.0, - 14720.0, 21600.0, - 9504.0)
-    set gg_rct_IronforgeAmbient=Rect(11232.0, - 6656.0, 13440.0, - 4160.0)
-    set gg_rct_DunmoroghAmbient1=Rect(8416.0, - 8416.0, 11264.0, - 4096.0)
-    set gg_rct_DunmoroghAmbient2=Rect(10048.0, - 9216.0, 13440.0, - 6656.0)
-    set gg_rct_DunmoroghAmbient3=Rect(13408.0, - 7552.0, 16384.0, - 4032.0)
-    set gg_rct_LochModanAmbient=Rect(16352.0, - 7552.0, 19616.0, - 4032.0)
-    set gg_rct_WetlandAmbient1=Rect(14272.0, - 4032.0, 16448.0, - 416.0)
-    set gg_rct_WetlandAmbient2=Rect(13024.0, - 3808.0, 14304.0, - 2272.0)
-    set gg_rct_GrimBatolAmbient1=Rect(16448.0, - 4032.0, 19648.0, - 256.0)
-    set gg_rct_GrimBatolAmbient2=Rect(19680.0, - 7200.0, 23808.0, 736.0)
-    set gg_rct_Region_IC=Rect(- 11200.0, - 26848.0, - 11136.0, - 26784.0)
-    set gg_rct_Region_DB=Rect(- 7104.0, - 28992.0, - 7040.0, - 28928.0)
-    set gg_rct_Region_AE=Rect(- 15584.0, - 8448.0, - 15520.0, - 8384.0)
-    set gg_rct_Region_AZ_1=Rect(- 1760.0, 17888.0, - 1696.0, 17952.0)
-    set gg_rct_Region_AZ_2=Rect(- 4032.0, 23968.0, - 3968.0, 24032.0)
-    set gg_rct_Region_BM=Rect(14304.0, - 10592.0, 14368.0, - 10528.0)
-    set gg_rct_Region_ToS=Rect(768.0, 8576.0, 832.0, 8640.0)
-    set gg_rct_Region_SC=Rect(16192.0, 7616.0, 16256.0, 7680.0)
-    set gg_rct_IllidanWeather=Rect(- 17728.0, 2624.0, - 15904.0, 4640.0)
-    set gg_rct_IllidanMovement1=Rect(- 17088.0, 4032.0, - 17056.0, 4064.0)
-    set gg_rct_IllidanMovement2=Rect(- 17088.0, 3968.0, - 17056.0, 4000.0)
-    set gg_rct_IllidanAmbiance2=Rect(- 256.0, 8128.0, 2336.0, 10432.0)
-    set gg_rct_LightningBolt2=Rect(- 16800.0, 3488.0, - 16768.0, 3520.0)
-    set gg_rct_LightningBolt3=Rect(- 17056.0, 3584.0, - 17024.0, 3616.0)
-    set gg_rct_WaveCrash=Rect(- 17184.0, 3872.0, - 17152.0, 3904.0)
-    set gg_rct_BloodElfSecondChanceSpawn=Rect(- 10016.0, 21504.0, - 9312.0, 22304.0)
-    set gg_rct_AethneumTombExit=Rect(- 26112.0, 23232.0, - 25984.0, 23840.0)
-    set gg_rct_AethneumLibraryEntrance=Rect(- 16544.0, 23904.0, - 15936.0, 24160.0)
-    set gg_rct_IllidanMoveAethneum=Rect(- 24416.0, 21856.0, - 24384.0, 21888.0)
-    set gg_rct_ImmolFight=Rect(- 25728.0, 18496.0, - 24512.0, 19936.0)
-    set gg_rct_AethneumCatacombs=Rect(- 26432.0, 17952.0, - 21344.0, 24544.0)
-    set gg_rct_AethneumRemove=Rect(- 24000.0, 22624.0, - 23456.0, 22912.0)
-    set gg_rct_AetheneumTombExit2=Rect(- 22336.0, 20832.0, - 22144.0, 21216.0)
-    set gg_rct_NazjatarEntrance2=Rect(832.0, 992.0, 1312.0, 1184.0)
-    set gg_rct_NazjatarEntrance1=Rect(2112.0, 2752.0, 2592.0, 2944.0)
-    set gg_rct_NazjatarExit1=Rect(13728.0, - 27712.0, 14208.0, - 27520.0)
-    set gg_rct_NazjatarExit2=Rect(14144.0, - 29728.0, 14528.0, - 29408.0)
-    set gg_rct_AetheneumTombEntrance2=Rect(- 16288.0, - 7200.0, - 15936.0, - 6912.0)
-    set gg_rct_IllidanBoat1=Rect(- 5152.0, 4064.0, - 4832.0, 4512.0)
-    set gg_rct_IllidanBoat2=Rect(5344.0, 7456.0, 5472.0, 7616.0)
-    set gg_rct_IllidanBoat3=Rect(6144.0, 7072.0, 6208.0, 7136.0)
-    set gg_rct_IllidanBoat4=Rect(- 3552.0, 3168.0, - 3520.0, 3200.0)
-    set gg_rct_IllidanExit2=Rect(- 13856.0, - 8256.0, - 13600.0, - 8032.0)
-    set gg_rct_IllidanCameraExit=Rect(- 18112.0, - 10400.0, - 13344.0, - 6112.0)
-    set gg_rct_IllidanExitText1=Rect(- 15200.0, - 7808.0, - 15168.0, - 7776.0)
-    set gg_rct_SkullOfGuldan=Rect(- 12096.0, 23232.0, - 11680.0, 23488.0)
-    set gg_rct_IllidanDala1=Rect(19168.0, - 25024.0, 19424.0, - 24928.0)
-    set gg_rct_IllidanDala2=Rect(19296.0, - 25792.0, 19328.0, - 25760.0)
-    set gg_rct_IllidanDalaranInstance=Rect(18496.0, - 27584.0, 24256.0, - 24384.0)
-    set gg_rct_StartQuest2=Rect(- 11424.0, - 24384.0, - 11264.0, - 24224.0)
-    set gg_rct_IllidanDala4=Rect(20416.0, - 26208.0, 20448.0, - 26176.0)
-    set gg_rct_IllidanDala5=Rect(21984.0, - 26144.0, 22016.0, - 26112.0)
-    set gg_rct_IllidanDala6=Rect(21024.0, - 25088.0, 21056.0, - 25056.0)
-    set gg_rct_IllidanDala7=Rect(20736.0, - 25088.0, 20768.0, - 25056.0)
-    set gg_rct_IllidanDala8=Rect(19776.0, - 26144.0, 19808.0, - 26112.0)
-    set gg_rct_IllidanElementalSentry=Rect(21920.0, - 26176.0, 22496.0, - 25440.0)
-    set gg_rct_StartQuest3=Rect(- 10752.0, - 24416.0, - 10592.0, - 24256.0)
-    set gg_rct_IllidanDalaExit=Rect(10464.0, 6432.0, 10624.0, 6624.0)
-    set gg_rct_UnlockIllidanSwitch=Rect(23200.0, - 25472.0, 24032.0, - 25344.0)
-    set gg_rct_IllidanLook=Rect(23616.0, - 26208.0, 23648.0, - 26176.0)
-    set gg_rct_IllidanLast=Rect(- 16992.0, 3712.0, - 16960.0, 3744.0)
-    set gg_rct_AetheneumtoNazjatar=Rect(- 25472.0, 19008.0, - 25152.0, 19392.0)
-    set gg_rct_IllidanNaga1=Rect(15040.0, - 28000.0, 15072.0, - 27968.0)
-    set gg_rct_IllidanNaga2=Rect(16000.0, - 28672.0, 16032.0, - 28640.0)
-    set gg_rct_IllidanNaga3=Rect(14976.0, - 28064.0, 15008.0, - 28032.0)
-    set gg_rct_MaelstromAmbient=Rect(- 160.0, 224.0, 3296.0, 3552.0)
-    set gg_rct_Chapter2Map=Rect(- 26944.0, - 32256.0, - 20160.0, - 24960.0)
-    set gg_rct_Chapter3=Rect(- 26944.0, - 32224.0, - 16480.0, - 19744.0)
-    set gg_rct_WerewolfSpawn1=Rect(- 20864.0, - 31456.0, - 20256.0, - 30816.0)
-    set gg_rct_WerewolfSpawn2=Rect(- 20672.0, - 26752.0, - 20064.0, - 26112.0)
-    set gg_rct_WerewolfSpawn3=Rect(- 26176.0, - 25440.0, - 25568.0, - 24928.0)
-    set gg_rct_Attack_Commands=Rect(- 26944.0, - 32256.0, - 18912.0, - 24448.0)
-    set gg_rct_AttackPoint=Rect(- 23936.0, - 29792.0, - 23424.0, - 29344.0)
-    set gg_rct_GilneasMovement1=Rect(- 25664.0, - 21536.0, - 25632.0, - 21504.0)
-    set gg_rct_GilneasMovement2=Rect(- 25632.0, - 17952.0, - 25600.0, - 17920.0)
-    set gg_rct_GilneasMovement3=Rect(- 25088.0, - 17440.0, - 25056.0, - 17408.0)
-    set gg_rct_GilneasMovement4=Rect(- 25600.0, - 17632.0, - 25568.0, - 17600.0)
-    set gg_rct_GilneasMovement5=Rect(- 25600.0, - 17504.0, - 25568.0, - 17472.0)
-    set gg_rct_Innerfight1=Rect(- 24480.0, - 24448.0, - 24096.0, - 23904.0)
-    set gg_rct_InnerFightStart=Rect(- 26080.0, - 23040.0, - 23904.0, - 22880.0)
-    set gg_rct_Innerfight2=Rect(- 26208.0, - 24768.0, - 24096.0, - 23296.0)
-    set gg_rct_GilneasMovement2_Copy=Rect(- 25728.0, - 17824.0, - 25696.0, - 17792.0)
-    set gg_rct_GilneasMovement2_Copy_2=Rect(- 25536.0, - 17824.0, - 25504.0, - 17792.0)
-    set gg_rct_GilneasMovement2_Copy_2_Copy=Rect(- 25632.0, - 17728.0, - 25600.0, - 17696.0)
-    set gg_rct_Chapter2Start=Rect(- 26400.0, - 30880.0, - 25920.0, - 30624.0)
-    set gg_rct_Chapter2TeleStart=Rect(- 26400.0, - 30208.0, - 25920.0, - 29952.0)
-    set gg_rct_WerewolfSpawn4=Rect(- 25376.0, - 25408.0, - 24736.0, - 24992.0)
-    set gg_rct_AttackPoint_Copy=Rect(- 24640.0, - 29088.0, - 24128.0, - 28640.0)
-    set gg_rct_GilneasExit3=Rect(- 26688.0, - 21088.0, - 26432.0, - 20640.0)
-    set gg_rct_GilneasExit1=Rect(- 22944.0, - 18272.0, - 22368.0, - 18080.0)
-    set gg_rct_GilneasExit2=Rect(- 19008.0, - 23872.0, - 18784.0, - 23328.0)
-    set gg_rct_GilneasEntrance1=Rect(8448.0, 2720.0, 8928.0, 2912.0)
-    set gg_rct_GilneasEntrance2=Rect(10016.0, 1472.0, 10240.0, 1856.0)
-    set gg_rct_GilneasEntrance3=Rect(7104.0, - 1248.0, 7328.0, - 864.0)
-    set gg_rct_Checkpoint1Gilneas=Rect(- 21952.0, - 27648.0, - 21920.0, - 27616.0)
-    set gg_rct_Scarlet_Monastery_Interior=Rect(- 23136.0, 15360.0, - 22784.0, 15744.0)
-    set gg_rct_Undercity_Interior_1=Rect(- 24992.0, 14464.0, - 24640.0, 14848.0)
-    set gg_rct_Undercity_Interior_2=Rect(- 26400.0, 17344.0, - 26048.0, 17728.0)
-    set gg_rct_Undercity_Exterior_1=Rect(10976.0, 7808.0, 11328.0, 8192.0)
-    set gg_rct_Undercity_Exterior_2=Rect(10304.0, 7808.0, 10656.0, 8192.0)
-    set gg_rct_Scarlet_Monastery_Exterior=Rect(12704.0, 10912.0, 13056.0, 11296.0)
-    set gg_rct_Undercity_Escape=Rect(7776.0, 8288.0, 8128.0, 8672.0)
-    set gg_rct_DarkshireUnlock=Rect(13632.0, - 16320.0, 15136.0, - 15072.0)
-    set gg_rct_StormwindUnlock=Rect(8544.0, - 12704.0, 13408.0, - 8544.0)
-    set gg_rct_LakeshireUnlock=Rect(15296.0, - 13696.0, 17184.0, - 12864.0)
-    set gg_rct_NethergardeUnlock=Rect(19200.0, - 18400.0, 20608.0, - 16960.0)
-    set gg_rct_StratholmeUnlock=Rect(14976.0, 11168.0, 17952.0, 13952.0)
-    set gg_rct_TyrUnlock=Rect(20640.0, 6560.0, 24320.0, 9696.0)
-    set gg_rct_ShadowfangUnlock=Rect(7200.0, 3104.0, 8320.0, 4768.0)
-    set gg_rct_TrollAttackSpawn=Rect(22656.0, 12224.0, 22976.0, 12480.0)
-    set gg_rct_TrollTarget=Rect(18816.0, 12480.0, 18848.0, 12512.0)
-    set gg_rct_KilsorrowUnlock=Rect(- 2496.0, - 31904.0, - 1024.0, - 30752.0)
-    set gg_rct_HellfireUnlock=Rect(1600.0, - 27200.0, 3712.0, - 25312.0)
-    set gg_rct_ScarletAmbient=Rect(- 23424.0, 15072.0, - 20864.0, 17696.0)
-    set gg_rct_ThelUnlock=Rect(16416.0, - 6752.0, 17376.0, - 4768.0)
-    set gg_rct_KulAttack=Rect(5504.0, - 11136.0, 5824.0, - 10912.0)
-    set gg_rct_KulTarget=Rect(5632.0, - 13440.0, 5664.0, - 13408.0)
-    set gg_rct_BlademasterUnlock=Rect(6080.0, - 10496.0, 6752.0, - 10112.0)
-    set gg_rct_ZandalarUnlock=Rect(- 3712.0, - 17088.0, - 672.0, - 14656.0)
-    set gg_rct_UndercityUnlock=Rect(- 26944.0, 14176.0, - 24000.0, 17888.0)
-    set gg_rct_NaxxramasInside=Rect(- 22016.0, 14080.0, - 21504.0, 14368.0)
-    set gg_rct_NaxAmbient=Rect(- 23200.0, 11520.0, - 20288.0, 14528.0)
-    set gg_rct_NaxUnlock=Rect(1856.0, 18464.0, 1984.0, 18592.0)
-    set gg_rct_TwilightAmbient=Rect(- 26176.0, 10368.0, - 24000.0, 13792.0)
-    set gg_rct_TwilightInside=Rect(- 25344.0, 13248.0, - 24800.0, 13504.0)
-    set gg_rct_TwilightOutside=Rect(20960.0, - 5632.0, 21536.0, - 5344.0)
-    set gg_rct_ShipInside=Rect(- 13824.0, - 24608.0, - 13280.0, - 24160.0)
-    set gg_rct_ShipAmbient=Rect(- 14112.0, - 24736.0, - 12928.0, - 22112.0)
-    set gg_rct_ShipTarget=Rect(6336.0, - 10528.0, 6368.0, - 10496.0)
-    set gg_rct_NagaUnlock2=Rect(9632.0, - 31616.0, 14144.0, - 26304.0)
-    set gg_rct_NagaUnlock1=Rect(15552.0, - 29376.0, 17280.0, - 27424.0)
-    set gg_rct_NazjatarHidden=Rect(- 10752.0, - 24032.0, - 10592.0, - 23872.0)
-    set gg_rct_IllidanOutlandEntrance=Rect(- 768.0, - 20512.0, - 352.0, - 20064.0)
-    set gg_rct_Kalimdor=Rect(- 19552.0, - 18816.0, - 3936.0, 12000.0)
-    set gg_rct_FeathermoonUnlock=Rect(- 19648.0, - 10272.0, - 18048.0, - 7840.0)
-    set gg_rct_AstranaarUnlock=Rect(- 15104.0, 1344.0, - 13440.0, 2496.0)
-    set gg_rct_AshenvaleUnlock=Rect(- 13824.0, 2464.0, - 11360.0, 4576.0)
-    set gg_rct_DrownedTemple=Rect(18976.0, - 15936.0, 19424.0, - 15520.0)
-    set gg_rct_NzothIni=Rect(- 11328.0, - 25216.0, - 11200.0, - 25088.0)
-    set gg_rct_DragonmawUnlock=Rect(22592.0, - 4416.0, 23968.0, - 3488.0)
-    set gg_rct_SouthshoreUnlock=Rect(12512.0, 1632.0, 13824.0, 2656.0)
-    set gg_rct_GilneasMovement2_Copy_2_Copy_Copy=Rect(- 25696.0, - 17664.0, - 25664.0, - 17632.0)
-    set gg_rct_MaievStartUnlock=Rect(- 4288.0, - 28416.0, - 3168.0, - 27104.0)
-    set gg_rct_Silithus_Bug_Interior=Rect(- 26144.0, - 15424.0, - 25664.0, - 14912.0)
-    set gg_rct_Silithus_Stone_Interior=Rect(- 23424.0, - 12448.0, - 23136.0, - 11936.0)
-    set gg_rct_Silithus_Stone_Exterior=Rect(- 17088.0, - 18464.0, - 16768.0, - 18048.0)
-    set gg_rct_Silithus_Bug_Exterior=Rect(- 14624.0, - 17504.0, - 14368.0, - 17120.0)
-    set gg_rct_EchoUnlock=Rect(- 6880.0, - 6816.0, - 4480.0, - 3968.0)
-    set gg_rct_StrahnbradUnlock=Rect(14272.0, 4992.0, 15136.0, 5824.0)
-    set gg_rct_TunnelUnlock=Rect(- 24512.0, - 11712.0, - 22848.0, - 8480.0)
-    set gg_rct_AhnqirajInstance=Rect(- 26752.0, - 16416.0, - 22144.0, - 8000.0)
-    set gg_rct_CthunSummon=Rect(- 25824.0, - 9312.0, - 25696.0, - 9184.0)
-    set gg_rct_ZeppelinReturn=Rect(768.0, - 5856.0, 1376.0, - 5216.0)
-    set gg_rct_Trade1=Rect(11968.0, - 23200.0, 12352.0, - 22816.0)
-    set gg_rct_Trade2=Rect(- 8704.0, 9856.0, - 8320.0, 10240.0)
-    set gg_rct_Trade3=Rect(- 9280.0, - 3808.0, - 8864.0, - 3392.0)
-    set gg_rct_Trade4=Rect(20544.0, - 9984.0, 20928.0, - 9600.0)
-    set gg_rct_Trader1=Rect(3872.0, 15456.0, 4288.0, 15776.0)
-    set gg_rct_Trader2=Rect(- 6112.0, - 13344.0, - 5728.0, - 13024.0)
-    set gg_rct_Trader3=Rect(11072.0, - 22752.0, 11392.0, - 22464.0)
-    set gg_rct_GadgetUnlock=Rect(- 7520.0, - 13984.0, - 6592.0, - 12896.0)
-    set gg_rct_OilRig1=Rect(1536.0, - 4608.0, 2720.0, - 3648.0)
-    set gg_rct_OilRig2=Rect(1696.0, - 14688.0, 4064.0, - 11808.0)
-    set gg_rct_OilRig3=Rect(1952.0, - 16704.0, 5248.0, - 14816.0)
-    set gg_rct_OilRig4=Rect(- 4704.0, 7648.0, - 2336.0, 11200.0)
-    set gg_rct_OilRig5=Rect(- 2208.0, 10976.0, 2848.0, 13824.0)
-    set gg_rct_OilRig6=Rect(- 9280.0, - 20608.0, - 6464.0, - 18592.0)
-    set gg_rct_Ny_Ulduar_Interior=Rect(- 26432.0, 768.0, - 26048.0, 1184.0)
+    set gg_rct_NyHighland=Rect(19200.0, - 512.0, 19520.0, - 160.0)
+    set gg_rct_Mannoroth=Rect(- 10592.0, - 9472.0, - 10176.0, - 9024.0)
+    set gg_rct_Jergosh=Rect(- 11360.0, - 9024.0, - 11200.0, - 8864.0)
+    set gg_rct_Dark_Portal_Exit_2=Rect(4032.0, - 25088.0, 4416.0, - 24704.0)
+    set gg_rct_Dark_Portal_Exit_3=Rect(4864.0, - 26304.0, 5248.0, - 25920.0)
+    set gg_rct_Dark_Portal_Entrance_2=Rect(17600.0, - 19232.0, 18016.0, - 18912.0)
+    set gg_rct_Dark_Portal_Entrance_3=Rect(15232.0, - 19392.0, 15648.0, - 19072.0)
+    set gg_rct_Chen=Rect(- 9536.0, - 2848.0, - 9088.0, - 2176.0)
+    set gg_rct_QuelDanil_Lodge=Rect(15360.0, 4352.0, 16160.0, 5152.0)
+    set gg_rct_HighBourne=Rect(- 17536.0, 22272.0, - 16448.0, 23584.0)
+    set gg_rct_Andrassil=Rect(4992.0, 18400.0, 5440.0, 18816.0)
+    set gg_rct_EvilIllidanSpawn=Rect(2816.0, - 20480.0, 3072.0, - 20224.0)
+    set gg_rct_VaultoftheWardens=Rect(- 1152.0, 6784.0, - 832.0, 7104.0)
+    set gg_rct_Theramore=Rect(- 8480.0, - 10304.0, - 6016.0, - 7776.0)
+    set gg_rct_Terrordale=Rect(14656.0, 10336.0, 15968.0, 10880.0)
+    set gg_rct_Dreadscar_1=Rect(18080.0, 12256.0, 18784.0, 14688.0)
+    set gg_rct_Deemspring=Rect(17408.0, 18016.0, 17536.0, 18144.0)
+    set gg_rct_Dreadscar_3=Rect(18304.0, 19424.0, 18816.0, 21408.0)
+    set gg_rct_Scholo_Ships=Rect(- 21344.0, 17280.0, - 18976.0, 20032.0)
+    set gg_rct_DalaCutscene1=Rect(9600.0, 3488.0, 9664.0, 3552.0)
+    set gg_rct_Dreadscar_2=Rect(17856.0, 15392.0, 19008.0, 17376.0)
+    set gg_rct_DalaCutscene2=Rect(9664.0, 3232.0, 9728.0, 3296.0)
+    set gg_rct_DalaCutscene3=Rect(9760.0, 3328.0, 9824.0, 3392.0)
+    set gg_rct_DalaCutscene4=Rect(9504.0, 3072.0, 9568.0, 3136.0)
+    set gg_rct_DalaCutscene4_Copy=Rect(9376.0, 3072.0, 9440.0, 3136.0)
+    set gg_rct_DalaCutscene4_Copy_2=Rect(9472.0, 2976.0, 9536.0, 3040.0)
+    set gg_rct_Lord2=Rect(11328.0, 6016.0, 11456.0, 6144.0)
+    set gg_rct_Dwarf1=Rect(12352.0, - 3232.0, 12416.0, - 3168.0)
+    set gg_rct_Dwarf2=Rect(12416.0, - 3360.0, 12480.0, - 3296.0)
+    set gg_rct_Dwarf3=Rect(12288.0, - 3328.0, 12352.0, - 3264.0)
+    set gg_rct_Dwarf4=Rect(12608.0, - 3136.0, 12672.0, - 3072.0)
+    set gg_rct_Legion3=Rect(11104.0, 5664.0, 11168.0, 5728.0)
+    set gg_rct_Frostwolf1=Rect(- 1920.0, - 2080.0, - 1856.0, - 2016.0)
+    set gg_rct_Warsong1=Rect(- 10816.0, - 5024.0, - 10752.0, - 4960.0)
+    set gg_rct_Sent1=Rect(- 13888.0, 6720.0, - 13824.0, 6784.0)
+    set gg_rct_Sent2=Rect(- 16896.0, 10432.0, - 16832.0, 10496.0)
+    set gg_rct_Sent3=Rect(- 16768.0, 9856.0, - 16704.0, 9920.0)
+    set gg_rct_Sent4=Rect(- 17152.0, 9440.0, - 17088.0, 9504.0)
+    set gg_rct_Sent5=Rect(- 17344.0, 8448.0, - 17280.0, 8512.0)
+    set gg_rct_Sent_6=Rect(- 17184.0, 8960.0, - 17120.0, 9024.0)
+    set gg_rct_Sent_7=Rect(- 17088.0, 8928.0, - 17024.0, 8992.0)
+    set gg_rct_Sent8=Rect(- 20448.0, - 8704.0, - 20384.0, - 8640.0)
+    set gg_rct_Sent9=Rect(- 16928.0, 9504.0, - 16864.0, 9568.0)
+    set gg_rct_Sent10=Rect(- 20192.0, - 8928.0, - 20128.0, - 8864.0)
+    set gg_rct_Druid1=Rect(- 13280.0, 3776.0, - 13216.0, 3840.0)
+    set gg_rct_Druid2=Rect(- 14176.0, 6656.0, - 14112.0, 6720.0)
+    set gg_rct_Druid3=Rect(- 15648.0, 1984.0, - 15584.0, 2048.0)
+    set gg_rct_Scourge1=Rect(- 20416.0, 19424.0, - 20352.0, 19488.0)
+    set gg_rct_Scourge2=Rect(- 20832.0, 19168.0, - 20768.0, 19232.0)
+    set gg_rct_Scourge3=Rect(15008.0, 7360.0, 15072.0, 7424.0)
+    set gg_rct_Scourge4=Rect(14848.0, 7424.0, 14912.0, 7488.0)
+    set gg_rct_Stormwind1=Rect(14304.0, - 13216.0, 14368.0, - 13152.0)
+    set gg_rct_Stormwind2=Rect(9888.0, - 10912.0, 9952.0, - 10848.0)
+    set gg_rct_Stormwind3=Rect(9920.0, - 11456.0, 9984.0, - 11392.0)
+    set gg_rct_Fel1=Rect(21824.0, - 29536.0, 21888.0, - 29472.0)
+    set gg_rct_Fel2=Rect(20032.0, - 30016.0, 20096.0, - 29952.0)
+    set gg_rct_Fel3=Rect(20032.0, - 29984.0, 20096.0, - 29920.0)
+    set gg_rct_Fel4=Rect(12736.0, - 10880.0, 12800.0, - 10816.0)
+    set gg_rct_Fel5=Rect(17504.0, - 17696.0, 17568.0, - 17632.0)
+    set gg_rct_Fel6=Rect(17600.0, - 17632.0, 17664.0, - 17568.0)
+    set gg_rct_Fel7=Rect(17600.0, - 17760.0, 17664.0, - 17696.0)
+    set gg_rct_Fel8=Rect(5088.0, - 30080.0, 5152.0, - 30016.0)
+    set gg_rct_Quel1=Rect(20000.0, 12480.0, 20064.0, 12544.0)
+    set gg_rct_Quel5=Rect(19424.0, 12704.0, 19488.0, 12768.0)
+    set gg_rct_Quel2=Rect(20384.0, 15904.0, 20448.0, 15968.0)
+    set gg_rct_Quel3=Rect(20416.0, 16032.0, 20480.0, 16096.0)
+    set gg_rct_Quel4=Rect(20544.0, 16000.0, 20608.0, 16064.0)
+    set gg_rct_NazjatarExit3=Rect(14336.0, - 27872.0, 14976.0, - 27392.0)
+    set gg_rct_DagranSpawn=Rect(17120.0, - 31264.0, 17216.0, - 31200.0)
+    set gg_rct_Guldan=Rect(- 9984.0, - 24736.0, - 9728.0, - 24480.0)
+    set gg_rct_Gazlowe=Rect(- 7936.0, - 288.0, - 7808.0, - 160.0)
+    set gg_rct_Khadgar=Rect(8768.0, - 11616.0, 8896.0, - 11488.0)
+    set gg_rct_Cenarius=Rect(- 11744.0, 6816.0, - 11648.0, 6944.0)
+    set gg_rct_Ursoc=Rect(- 11616.0, 6816.0, - 11520.0, 6944.0)
+    set gg_rct_ThunderBluff=Rect(- 16544.0, - 7808.0, - 14240.0, - 3072.0)
+    set gg_rct_ThrallLanding=Rect(- 9120.0, - 11040.0, - 8576.0, - 10752.0)
+    set gg_rct_CairneStart=Rect(- 10496.0, - 11616.0, - 8928.0, - 10688.0)
+    set gg_rct_Druid4=Rect(- 13088.0, 3264.0, - 13024.0, 3328.0)
+    set gg_rct_Druid5=Rect(- 13824.0, 3872.0, - 13760.0, 3936.0)
+    set gg_rct_Sent11=Rect(- 17664.0, - 13408.0, - 17600.0, - 13344.0)
+    set gg_rct_Sent_12=Rect(- 17120.0, 9120.0, - 17056.0, 9184.0)
+    set gg_rct_Dwarf_group_1=Rect(11712.0, - 3520.0, 12096.0, - 2912.0)
+    set gg_rct_GrizzlyHills=Rect(3456.0, 17184.0, 5952.0, 19232.0)
+    set gg_rct_Northrend_Ambiance=Rect(- 9216.0, 13248.0, 8608.0, 24736.0)
+    set gg_rct_TeldrassilAmbient=Rect(- 20576.0, 12160.0, - 16000.0, 16544.0)
+    set gg_rct_MoongladeVillage=Rect(- 14592.0, 10048.0, - 12288.0, 12192.0)
+    set gg_rct_AzuremystAmbient=Rect(- 22016.0, 6464.0, - 18976.0, 11072.0)
+    set gg_rct_AshenvaleAmbient=Rect(- 17856.0, 384.0, - 9856.0, 9152.0)
+    set gg_rct_BarrenAmbient1=Rect(- 19424.0, - 5632.0, - 9856.0, 384.0)
+    set gg_rct_BarrenAmbient2=Rect(- 16448.0, - 7776.0, - 12352.0, - 5472.0)
+    set gg_rct_BarrenAmbient3=Rect(- 14208.0, - 10272.0, - 12480.0, - 7840.0)
+    set gg_rct_BarrenAmbient4=Rect(- 14272.0, - 11616.0, - 8768.0, - 10048.0)
+    set gg_rct_BarrenAmbient5=Rect(- 12480.0, - 16544.0, - 7680.0, - 11712.0)
+    set gg_rct_SilithusAmbient=Rect(- 20768.0, - 19744.0, - 15712.0, - 11744.0)
+    set gg_rct_UngoroAmbient=Rect(- 15616.0, - 15200.0, - 12608.0, - 11680.0)
+    set gg_rct_FeralasAmbient1=Rect(- 17408.0, - 11552.0, - 14336.0, - 7904.0)
+    set gg_rct_FeralasAmbient2=Rect(- 21504.0, - 11744.0, - 17248.0, - 5536.0)
+    set gg_rct_AszharaAmbient1=Rect(- 9824.0, - 3872.0, - 7360.0, 3488.0)
+    set gg_rct_AzsharaAmbient2=Rect(- 8704.0, 832.0, - 4352.0, 6176.0)
+    set gg_rct_DusthallowAmbient=Rect(- 12256.0, - 9920.0, - 8640.0, - 5728.0)
+    set gg_rct_EchoIsleAmbient=Rect(- 8576.0, - 10208.0, - 5056.0, - 4064.0)
+    set gg_rct_ZulfarrakAmbient=Rect(- 5952.0, - 17216.0, 2944.0, - 10368.0)
+    set gg_rct_KezanAmbient=Rect(- 3104.0, - 9920.0, 736.0, - 5184.0)
+    set gg_rct_AshenvaleAmbient2=Rect(- 17760.0, 9152.0, - 11968.0, 12704.0)
+    set gg_rct_WinterspringAmbient1=Rect(- 11904.0, 9152.0, - 8480.0, 12032.0)
+    set gg_rct_WinterspringAmbient2=Rect(- 9792.0, 5792.0, - 8416.0, 9088.0)
+    set gg_rct_AshenvaleAmbient3=Rect(- 19424.0, 512.0, - 17344.0, 2080.0)
+    set gg_rct_RanazjarAmbient=Rect(- 21344.0, - 3040.0, - 19488.0, - 1248.0)
+    set gg_rct_AshenvaleAmbient4=Rect(- 19072.0, 2080.0, - 17856.0, 7584.0)
+    set gg_rct_Queltalas_2=Rect(16256.0, 11936.0, 20224.0, 14016.0)
+    set gg_rct_StratholmeAmbient=Rect(13056.0, 11136.0, 16288.0, 13888.0)
+    set gg_rct_LordaeronAmbient1=Rect(15968.0, 7264.0, 19008.0, 11712.0)
+    set gg_rct_TyrHandAmbient=Rect(19008.0, 6592.0, 22048.0, 9952.0)
+    set gg_rct_LordaeronAmbient2=Rect(12928.0, 8448.0, 16128.0, 11040.0)
+    set gg_rct_LordaeronAmbient3=Rect(9792.0, 7872.0, 13696.0, 12192.0)
+    set gg_rct_ZulAman_trolls=Rect(20256.0, 10176.0, 22848.0, 17440.0)
+    set gg_rct_LordaeronAmbient4=Rect(6848.0, 9472.0, 9824.0, 12224.0)
+    set gg_rct_LordaeronAmbient5=Rect(4544.0, 8128.0, 8032.0, 10688.0)
+    set gg_rct_QuelthalasAmbient=Rect(16224.0, 11776.0, 20224.0, 17440.0)
+    set gg_rct_SunwellAmbient=Rect(15168.0, 17440.0, 21376.0, 23104.0)
+    set gg_rct_ShadowfangAmbient=Rect(5344.0, 2624.0, 8576.0, 8160.0)
+    set gg_rct_LordamereLakeAmbient=Rect(8320.0, 5824.0, 10368.0, 7680.0)
+    set gg_rct_SouthshoreAmbient=Rect(8576.0, 1600.0, 13536.0, 3904.0)
+    set gg_rct_AlteracAmbient=Rect(10432.0, 4608.0, 12160.0, 7104.0)
+    set gg_rct_ScholomanceAmbient2=Rect(12128.0, 5440.0, 16224.0, 7072.0)
+    set gg_rct_ScholomanceAmbient1=Rect(13728.0, 7072.0, 16096.0, 8416.0)
+    set gg_rct_SouthshoreAmbient2=Rect(10336.0, 3936.0, 13568.0, 4608.0)
+    set gg_rct_SouthshoreAmbient3=Rect(12128.0, 4608.0, 13600.0, 5472.0)
+    set gg_rct_SouthshoreAmbient4=Rect(13504.0, 1920.0, 18336.0, 2976.0)
+    set gg_rct_SouthshoreAmbient5=Rect(15296.0, 736.0, 17856.0, 1920.0)
+    set gg_rct_BridgeAmbient=Rect(15232.0, - 288.0, 17504.0, 736.0)
+    set gg_rct_ScholomanceAmbient3=Rect(11200.0, 7072.0, 13728.0, 7840.0)
+    set gg_rct_HinterlandAmbient1=Rect(13600.0, 3040.0, 19136.0, 5408.0)
+    set gg_rct_HinterlandAmbient2=Rect(16256.0, 5408.0, 19072.0, 7040.0)
+    set gg_rct_Aerie_Peak=Rect(13600.0, 4096.0, 14752.0, 5184.0)
+    set gg_rct_TolbaradAmbient=Rect(10400.0, - 2176.0, 12416.0, 544.0)
+    set gg_rct_BalorAmbient=Rect(3104.0, - 14400.0, 6656.0, - 10112.0)
+    set gg_rct_StormwindAmbient2=Rect(6624.0, - 10528.0, 8160.0, - 8544.0)
+    set gg_rct_SentinelTowerAmbient=Rect(5696.0, - 17664.0, 8672.0, - 14304.0)
+    set gg_rct_StranglethornAmbient1=Rect(7680.0, - 19136.0, 13536.0, - 17472.0)
+    set gg_rct_StranglethornAmbient2=Rect(11808.0, - 22016.0, 14880.0, - 18272.0)
+    set gg_rct_StranglethornAmbient3=Rect(8768.0, - 23808.0, 12736.0, - 19168.0)
+    set gg_rct_ElwinForestAmbient=Rect(8704.0, - 14816.0, 13376.0, - 12704.0)
+    set gg_rct_DarkshireAmbient1=Rect(8672.0, - 17440.0, 13600.0, - 14816.0)
+    set gg_rct_DarkshireAmbient2=Rect(13600.0, - 18208.0, 14912.0, - 14720.0)
+    set gg_rct_DarkshireAmbient3=Rect(13408.0, - 14752.0, 17952.0, - 12672.0)
+    set gg_rct_BlastedlandAmbient=Rect(14912.0, - 21760.0, 19200.0, - 16896.0)
+    set gg_rct_SwampofSorrowsAmbient=Rect(14944.0, - 16896.0, 19424.0, - 14784.0)
+    set gg_rct_BurningSteppesAmbient=Rect(11712.0, - 12704.0, 17984.0, - 7552.0)
+    set gg_rct_BurningSteppeAmbient2=Rect(17952.0, - 14720.0, 19872.0, - 9504.0)
+    set gg_rct_IronforgeAmbient=Rect(9504.0, - 6656.0, 11712.0, - 4160.0)
+    set gg_rct_DunmoroghAmbient1=Rect(6688.0, - 8416.0, 9536.0, - 4096.0)
+    set gg_rct_DunmoroghAmbient2=Rect(8320.0, - 9216.0, 11712.0, - 6656.0)
+    set gg_rct_DunmoroghAmbient3=Rect(11680.0, - 7552.0, 14656.0, - 4032.0)
+    set gg_rct_LochModanAmbient=Rect(14624.0, - 7552.0, 17888.0, - 4032.0)
+    set gg_rct_WetlandAmbient1=Rect(12544.0, - 4032.0, 14720.0, - 416.0)
+    set gg_rct_WetlandAmbient2=Rect(11296.0, - 3808.0, 12576.0, - 2272.0)
+    set gg_rct_GrimBatolAmbient1=Rect(14720.0, - 4032.0, 17920.0, - 256.0)
+    set gg_rct_GrimBatolAmbient2=Rect(17952.0, - 7200.0, 22080.0, 736.0)
+    set gg_rct_Region_BS=Rect(19776.0, - 29792.0, 19840.0, - 29728.0)
+    set gg_rct_Region_IC=Rect(- 12928.0, - 26848.0, - 12864.0, - 26784.0)
+    set gg_rct_Region_DB=Rect(- 8832.0, - 28992.0, - 8768.0, - 28928.0)
+    set gg_rct_Region_AE=Rect(- 17312.0, - 8448.0, - 17248.0, - 8384.0)
+    set gg_rct_Region_AZ_1=Rect(- 3488.0, 17888.0, - 3424.0, 17952.0)
+    set gg_rct_Region_AZ_2=Rect(- 5760.0, 23968.0, - 5696.0, 24032.0)
+    set gg_rct_Region_BM=Rect(12576.0, - 10592.0, 12640.0, - 10528.0)
+    set gg_rct_Region_ToS=Rect(- 960.0, 8576.0, - 896.0, 8640.0)
+    set gg_rct_Region_SC=Rect(14464.0, 7616.0, 14528.0, 7680.0)
+    set gg_rct_IllidanWeather=Rect(- 19456.0, 2624.0, - 17632.0, 4640.0)
+    set gg_rct_IllidanMovement1=Rect(- 18816.0, 4032.0, - 18784.0, 4064.0)
+    set gg_rct_IllidanMovement2=Rect(- 18816.0, 3968.0, - 18784.0, 4000.0)
+    set gg_rct_IllidanAmbiance2=Rect(- 1984.0, 8128.0, 608.0, 10432.0)
+    set gg_rct_LightningBolt2=Rect(- 18528.0, 3488.0, - 18496.0, 3520.0)
+    set gg_rct_LightningBolt3=Rect(- 18784.0, 3584.0, - 18752.0, 3616.0)
+    set gg_rct_WaveCrash=Rect(- 18912.0, 3872.0, - 18880.0, 3904.0)
+    set gg_rct_BloodElfSecondChanceSpawn=Rect(- 11744.0, 21504.0, - 11040.0, 22304.0)
+    set gg_rct_AethneumTombExit=Rect(- 27840.0, 23232.0, - 27712.0, 23840.0)
+    set gg_rct_AethneumLibraryEntrance=Rect(- 18272.0, 23904.0, - 17664.0, 24160.0)
+    set gg_rct_IllidanMoveAethneum=Rect(- 26144.0, 21856.0, - 26112.0, 21888.0)
+    set gg_rct_ImmolFight=Rect(- 27456.0, 18496.0, - 26240.0, 19936.0)
+    set gg_rct_AethneumCatacombs=Rect(- 28160.0, 17952.0, - 23072.0, 24544.0)
+    set gg_rct_AethneumRemove=Rect(- 25728.0, 22624.0, - 25184.0, 22912.0)
+    set gg_rct_AetheneumTombExit2=Rect(- 24064.0, 20832.0, - 23872.0, 21216.0)
+    set gg_rct_NazjatarEntrance2=Rect(- 896.0, 992.0, - 416.0, 1184.0)
+    set gg_rct_NazjatarEntrance1=Rect(384.0, 2752.0, 864.0, 2944.0)
+    set gg_rct_NazjatarExit1=Rect(12000.0, - 27712.0, 12480.0, - 27520.0)
+    set gg_rct_NazjatarExit2=Rect(12416.0, - 29728.0, 12800.0, - 29408.0)
+    set gg_rct_AetheneumTombEntrance2=Rect(- 18016.0, - 7200.0, - 17664.0, - 6912.0)
+    set gg_rct_IllidanBoat1=Rect(- 6880.0, 4064.0, - 6560.0, 4512.0)
+    set gg_rct_IllidanBoat2=Rect(3616.0, 7456.0, 3744.0, 7616.0)
+    set gg_rct_IllidanBoat3=Rect(4416.0, 7072.0, 4480.0, 7136.0)
+    set gg_rct_IllidanBoat4=Rect(- 5280.0, 3168.0, - 5248.0, 3200.0)
+    set gg_rct_IllidanExit2=Rect(- 15584.0, - 8256.0, - 15328.0, - 8032.0)
+    set gg_rct_IllidanCameraExit=Rect(- 19840.0, - 10400.0, - 15072.0, - 6112.0)
+    set gg_rct_IllidanExitText1=Rect(- 16928.0, - 7808.0, - 16896.0, - 7776.0)
+    set gg_rct_SkullOfGuldan=Rect(- 13824.0, 23232.0, - 13408.0, 23488.0)
+    set gg_rct_IllidanDala1=Rect(17440.0, - 25024.0, 17696.0, - 24928.0)
+    set gg_rct_IllidanDala2=Rect(17568.0, - 25792.0, 17600.0, - 25760.0)
+    set gg_rct_IllidanDalaranInstance=Rect(16768.0, - 27584.0, 22528.0, - 24384.0)
+    set gg_rct_StartQuest2=Rect(- 13152.0, - 24384.0, - 12992.0, - 24224.0)
+    set gg_rct_IllidanDala4=Rect(18688.0, - 26208.0, 18720.0, - 26176.0)
+    set gg_rct_IllidanDala5=Rect(20256.0, - 26144.0, 20288.0, - 26112.0)
+    set gg_rct_IllidanDala6=Rect(19296.0, - 25088.0, 19328.0, - 25056.0)
+    set gg_rct_IllidanDala7=Rect(19008.0, - 25088.0, 19040.0, - 25056.0)
+    set gg_rct_IllidanDala8=Rect(18048.0, - 26144.0, 18080.0, - 26112.0)
+    set gg_rct_IllidanElementalSentry=Rect(20192.0, - 26176.0, 20768.0, - 25440.0)
+    set gg_rct_StartQuest3=Rect(- 12480.0, - 24416.0, - 12320.0, - 24256.0)
+    set gg_rct_IllidanDalaExit=Rect(8736.0, 6432.0, 8896.0, 6624.0)
+    set gg_rct_UnlockIllidanSwitch=Rect(21472.0, - 25472.0, 22304.0, - 25344.0)
+    set gg_rct_IllidanLook=Rect(21888.0, - 26208.0, 21920.0, - 26176.0)
+    set gg_rct_IllidanLast=Rect(- 18720.0, 3712.0, - 18688.0, 3744.0)
+    set gg_rct_AetheneumtoNazjatar=Rect(- 27200.0, 19008.0, - 26880.0, 19392.0)
+    set gg_rct_IllidanNaga1=Rect(13312.0, - 28000.0, 13344.0, - 27968.0)
+    set gg_rct_IllidanNaga2=Rect(14272.0, - 28672.0, 14304.0, - 28640.0)
+    set gg_rct_IllidanNaga3=Rect(13248.0, - 28064.0, 13280.0, - 28032.0)
+    set gg_rct_MaelstromAmbient=Rect(- 1888.0, 224.0, 1568.0, 3552.0)
+    set gg_rct_Chapter2Map=Rect(- 28672.0, - 32256.0, - 21888.0, - 24960.0)
+    set gg_rct_Chapter3=Rect(- 28672.0, - 32224.0, - 18208.0, - 19744.0)
+    set gg_rct_WerewolfSpawn1=Rect(- 22592.0, - 31456.0, - 21984.0, - 30816.0)
+    set gg_rct_WerewolfSpawn2=Rect(- 22400.0, - 26752.0, - 21792.0, - 26112.0)
+    set gg_rct_WerewolfSpawn3=Rect(- 27904.0, - 25440.0, - 27296.0, - 24928.0)
+    set gg_rct_Attack_Commands=Rect(- 28672.0, - 32256.0, - 20640.0, - 24448.0)
+    set gg_rct_AttackPoint=Rect(- 25664.0, - 29792.0, - 25152.0, - 29344.0)
+    set gg_rct_GilneasMovement1=Rect(- 27392.0, - 21536.0, - 27360.0, - 21504.0)
+    set gg_rct_GilneasMovement2=Rect(- 27360.0, - 17952.0, - 27328.0, - 17920.0)
+    set gg_rct_GilneasMovement3=Rect(- 26816.0, - 17440.0, - 26784.0, - 17408.0)
+    set gg_rct_GilneasMovement4=Rect(- 27328.0, - 17632.0, - 27296.0, - 17600.0)
+    set gg_rct_GilneasMovement5=Rect(- 27328.0, - 17504.0, - 27296.0, - 17472.0)
+    set gg_rct_GilneasMovement2_Copy=Rect(- 27456.0, - 17824.0, - 27424.0, - 17792.0)
+    set gg_rct_GilneasMovement2_Copy_2=Rect(- 27264.0, - 17824.0, - 27232.0, - 17792.0)
+    set gg_rct_GilneasMovement2_Copy_2_Copy=Rect(- 27360.0, - 17728.0, - 27328.0, - 17696.0)
+    set gg_rct_Chapter2Start=Rect(- 28128.0, - 30880.0, - 27648.0, - 30624.0)
+    set gg_rct_Chapter2TeleStart=Rect(- 28128.0, - 30208.0, - 27648.0, - 29952.0)
+    set gg_rct_WerewolfSpawn4=Rect(- 27104.0, - 25408.0, - 26464.0, - 24992.0)
+    set gg_rct_AttackPoint_Copy=Rect(- 26368.0, - 29088.0, - 25856.0, - 28640.0)
+    set gg_rct_GilneasExit3=Rect(- 28416.0, - 21088.0, - 28160.0, - 20640.0)
+    set gg_rct_GilneasExit1=Rect(- 24672.0, - 18272.0, - 24096.0, - 18080.0)
+    set gg_rct_GilneasExit2=Rect(- 20736.0, - 23872.0, - 20512.0, - 23328.0)
+    set gg_rct_GilneasEntrance1=Rect(6720.0, 2720.0, 7200.0, 2912.0)
+    set gg_rct_GilneasEntrance2=Rect(8320.0, 1248.0, 8672.0, 1792.0)
+    set gg_rct_GilneasEntrance3=Rect(5376.0, - 1248.0, 5600.0, - 864.0)
+    set gg_rct_Checkpoint1Gilneas=Rect(- 23680.0, - 27648.0, - 23648.0, - 27616.0)
+    set gg_rct_BlackrockUnlock=Rect(20448.0, - 31968.0, 22560.0, - 28512.0)
+    set gg_rct_Scarlet_Monastery_Interior=Rect(- 24864.0, 15360.0, - 24512.0, 15744.0)
+    set gg_rct_Undercity_Interior_1=Rect(- 26720.0, 14464.0, - 26368.0, 14848.0)
+    set gg_rct_Undercity_Interior_2=Rect(- 28128.0, 17344.0, - 27776.0, 17728.0)
+    set gg_rct_Undercity_Exterior_1=Rect(9248.0, 7808.0, 9600.0, 8192.0)
+    set gg_rct_Undercity_Exterior_2=Rect(8576.0, 7808.0, 8928.0, 8192.0)
+    set gg_rct_Scarlet_Monastery_Exterior=Rect(10976.0, 10912.0, 11328.0, 11296.0)
+    set gg_rct_Undercity_Escape=Rect(6048.0, 8288.0, 6400.0, 8672.0)
+    set gg_rct_DarkshireUnlock=Rect(11904.0, - 16320.0, 13408.0, - 15072.0)
+    set gg_rct_StormwindUnlock=Rect(6816.0, - 12704.0, 11680.0, - 8544.0)
+    set gg_rct_LakeshireUnlock=Rect(13568.0, - 13696.0, 15456.0, - 12864.0)
+    set gg_rct_NethergardeUnlock=Rect(17472.0, - 18400.0, 18880.0, - 16960.0)
+    set gg_rct_StratholmeUnlock=Rect(13248.0, 11168.0, 16224.0, 13952.0)
+    set gg_rct_TyrUnlock=Rect(18912.0, 6560.0, 22592.0, 9696.0)
+    set gg_rct_ShadowfangUnlock=Rect(5440.0, 3104.0, 6592.0, 4768.0)
+    set gg_rct_TrollAttackSpawn=Rect(20928.0, 12224.0, 21248.0, 12480.0)
+    set gg_rct_TrollTarget=Rect(17088.0, 12480.0, 17120.0, 12512.0)
+    set gg_rct_KilsorrowUnlock=Rect(- 4224.0, - 31904.0, - 2752.0, - 30752.0)
+    set gg_rct_HellfireUnlock=Rect(- 128.0, - 27424.0, 2048.0, - 25312.0)
+    set gg_rct_ScarletAmbient=Rect(- 25152.0, 15072.0, - 22592.0, 17696.0)
+    set gg_rct_ThelUnlock=Rect(14688.0, - 6752.0, 15648.0, - 4768.0)
+    set gg_rct_KulAttack=Rect(3776.0, - 11136.0, 4096.0, - 10912.0)
+    set gg_rct_KulTarget=Rect(3904.0, - 13440.0, 3936.0, - 13408.0)
+    set gg_rct_BlademasterUnlock=Rect(4352.0, - 10496.0, 5024.0, - 10112.0)
+    set gg_rct_ZandalarUnlock=Rect(- 5440.0, - 17088.0, - 2400.0, - 14656.0)
+    set gg_rct_UndercityUnlock=Rect(- 28672.0, 14176.0, - 25728.0, 17888.0)
+    set gg_rct_NaxxramasInside=Rect(- 23744.0, 14080.0, - 23232.0, 14368.0)
+    set gg_rct_NaxAmbient=Rect(- 24928.0, 11520.0, - 22016.0, 14528.0)
+    set gg_rct_NaxUnlock=Rect(128.0, 18464.0, 256.0, 18592.0)
+    set gg_rct_TwilightOutside=Rect(19040.0, - 5632.0, 20000.0, - 4640.0)
+    set gg_rct_ShipInside=Rect(- 15552.0, - 24608.0, - 15008.0, - 24160.0)
+    set gg_rct_ShipAmbient=Rect(- 15840.0, - 24736.0, - 14656.0, - 22112.0)
+    set gg_rct_ShipTarget=Rect(4608.0, - 10528.0, 4640.0, - 10496.0)
+    set gg_rct_NagaUnlock2=Rect(7904.0, - 31616.0, 12416.0, - 26304.0)
+    set gg_rct_NagaUnlock1=Rect(13824.0, - 29376.0, 15552.0, - 27424.0)
+    set gg_rct_NazjatarHidden=Rect(- 12480.0, - 24032.0, - 12320.0, - 23872.0)
+    set gg_rct_IllidanOutlandEntrance=Rect(- 2496.0, - 20512.0, - 2080.0, - 20064.0)
+    set gg_rct_Kalimdor=Rect(- 21280.0, - 18816.0, - 5664.0, 12000.0)
+    set gg_rct_FeathermoonUnlock=Rect(- 21376.0, - 10272.0, - 19776.0, - 7840.0)
+    set gg_rct_AstranaarUnlock=Rect(- 16832.0, 1344.0, - 15168.0, 2496.0)
+    set gg_rct_AshenvaleUnlock=Rect(- 15552.0, 2464.0, - 13088.0, 4576.0)
+    set gg_rct_DrownedTemple=Rect(17248.0, - 15936.0, 17696.0, - 15520.0)
+    set gg_rct_NzothIni=Rect(- 13056.0, - 25216.0, - 12928.0, - 25088.0)
+    set gg_rct_DragonmawUnlock=Rect(20864.0, - 4416.0, 22240.0, - 3488.0)
+    set gg_rct_SouthshoreUnlock=Rect(10784.0, 1632.0, 12096.0, 2656.0)
+    set gg_rct_GilneasMovement2_Copy_2_Copy_Copy=Rect(- 27424.0, - 17664.0, - 27392.0, - 17632.0)
+    set gg_rct_MaievStartUnlock=Rect(- 6016.0, - 28416.0, - 4896.0, - 27104.0)
+    set gg_rct_Silithus_Bug_Interior=Rect(- 27872.0, - 15424.0, - 27392.0, - 14912.0)
+    set gg_rct_Silithus_Stone_Interior=Rect(- 25152.0, - 12448.0, - 24864.0, - 11936.0)
+    set gg_rct_Silithus_Stone_Exterior=Rect(- 18816.0, - 18464.0, - 18496.0, - 18048.0)
+    set gg_rct_Silithus_Bug_Exterior=Rect(- 16352.0, - 17504.0, - 16096.0, - 17120.0)
+    set gg_rct_EchoUnlock=Rect(- 8608.0, - 6816.0, - 6208.0, - 3968.0)
+    set gg_rct_StrahnbradUnlock=Rect(12544.0, 4992.0, 13408.0, 5824.0)
+    set gg_rct_TunnelUnlock=Rect(- 26240.0, - 11712.0, - 24576.0, - 8480.0)
+    set gg_rct_AhnqirajInstance=Rect(- 28480.0, - 16416.0, - 23872.0, - 8000.0)
+    set gg_rct_CthunSummon=Rect(- 27552.0, - 9312.0, - 27424.0, - 9184.0)
+    set gg_rct_ZeppelinReturn=Rect(- 960.0, - 5856.0, - 352.0, - 5216.0)
+    set gg_rct_Trade1=Rect(10240.0, - 23200.0, 10624.0, - 22816.0)
+    set gg_rct_Trade2=Rect(- 10432.0, 9856.0, - 10048.0, 10240.0)
+    set gg_rct_Trade3=Rect(- 11008.0, - 3808.0, - 10592.0, - 3392.0)
+    set gg_rct_Trade4=Rect(18816.0, - 9984.0, 19200.0, - 9600.0)
+    set gg_rct_Trader1=Rect(2144.0, 15456.0, 2560.0, 15776.0)
+    set gg_rct_Trader2=Rect(- 7840.0, - 13344.0, - 7456.0, - 13024.0)
+    set gg_rct_Trader3=Rect(9344.0, - 22752.0, 9664.0, - 22464.0)
+    set gg_rct_GadgetUnlock=Rect(- 9248.0, - 13984.0, - 8320.0, - 12896.0)
+    set gg_rct_OilRig1=Rect(- 736.0, - 4768.0, 448.0, - 3808.0)
+    set gg_rct_OilRig2=Rect(320.0, - 3104.0, 2688.0, - 224.0)
+    set gg_rct_OilRig3=Rect(2272.0, - 16512.0, 5568.0, - 14624.0)
+    set gg_rct_OilRig4=Rect(- 6432.0, 7648.0, - 4064.0, 11200.0)
+    set gg_rct_OilRig5=Rect(- 3936.0, 10976.0, 1120.0, 13824.0)
+    set gg_rct_OilRig6=Rect(- 11008.0, - 20608.0, - 8192.0, - 18592.0)
+    set gg_rct_Ny_Ulduar_Interior=Rect(- 28160.0, 768.0, - 27776.0, 1184.0)
     set we=AddWeatherEffect(gg_rct_Ny_Ulduar_Interior, 'SNls')
     call EnableWeatherEffect(we, true)
-    set gg_rct_Ny_Twilight_Highlands_Interior=Rect(- 21600.0, 768.0, - 21248.0, 1152.0)
-    set gg_rct_Ny_Nazjatar_Interior=Rect(- 21920.0, - 7232.0, - 21440.0, - 6720.0)
+    set gg_rct_Ny_Twilight_Highlands_Interior=Rect(- 23328.0, 768.0, - 22976.0, 1152.0)
+    set gg_rct_Ny_Nazjatar_Interior=Rect(- 23648.0, - 7232.0, - 23168.0, - 6720.0)
     set we=AddWeatherEffect(gg_rct_Ny_Nazjatar_Interior, 'RAhr')
     call EnableWeatherEffect(we, true)
-    set gg_rct_Ny_Silithus_Interior=Rect(- 26688.0, - 7200.0, - 26336.0, - 6816.0)
+    set gg_rct_Ny_Silithus_Interior=Rect(- 28416.0, - 7200.0, - 28064.0, - 6816.0)
     set we=AddWeatherEffect(gg_rct_Ny_Silithus_Interior, 'WOlw')
     call EnableWeatherEffect(we, true)
-    set gg_rct_ScarletExit=Rect(12064.0, 11712.0, 12512.0, 12096.0)
-    set gg_rct_TempestKeepSpawn=Rect(5536.0, - 21856.0, 5952.0, - 21504.0)
-    set gg_rct_SummonObeliskTarget=Rect(4960.0, 22752.0, 5376.0, 23168.0)
-    set gg_rct_NyalothaInstance=Rect(- 26944.0, - 7264.0, - 20928.0, 1536.0)
-    set gg_rct_NyTanaris=Rect(- 13280.0, - 17888.0, - 12800.0, - 17376.0)
-    set gg_rct_NyNorth=Rect(5536.0, 23072.0, 5888.0, 23520.0)
-    set gg_rct_UldumAmbiance=Rect(- 13984.0, - 20320.0, - 9888.0, - 15232.0)
-    set gg_rct_NyalothaUnlock1=Rect(- 26912.0, - 1152.0, - 20576.0, 1504.0)
-    set gg_rct_NyalothaUnlock2=Rect(- 23776.0, - 7552.0, - 20800.0, - 2464.0)
-    set gg_rct_NyalothaUnlock3=Rect(- 26912.0, - 7520.0, - 23744.0, - 4032.0)
-    set gg_rct_ScarletHarbor=Rect(- 8000.0, 21984.0, - 6144.0, 23648.0)
-    set gg_rct_KaliRock1=Rect(- 15136.0, - 2336.0, - 13728.0, - 1280.0)
-    set gg_rct_KaliRock2=Rect(- 10752.0, - 8512.0, - 10304.0, - 7776.0)
-    set gg_rct_KaliRock3=Rect(- 12640.0, - 12032.0, - 11776.0, - 11616.0)
-    set gg_rct_KaliRock4=Rect(- 8576.0, - 12960.0, - 7680.0, - 12384.0)
-    set gg_rct_GoldrinnDuskwood=Rect(12704.0, - 16000.0, 13184.0, - 15520.0)
-    set gg_rct_GoldrinnHyjal=Rect(- 9312.0, 5216.0, - 8768.0, 5760.0)
-    set gg_rct_TeldrassilUnlock1=Rect(- 18304.0, 14368.0, - 16320.0, 16480.0)
-    set gg_rct_TeldrassilUnlock2=Rect(- 18912.0, 12160.0, - 17184.0, 13312.0)
-    set gg_rct_DarnassusWorgen=Rect(- 16320.0, 13504.0, - 15040.0, 15968.0)
-    set gg_rct_KaelSunwellChannel=Rect(20224.0, 21568.0, 20352.0, 21696.0)
-    set gg_rct_JainaChannel=Rect(- 8160.0, 17632.0, - 8064.0, 17728.0)
-    set gg_rct_Auberdine_Ships_2_Copy_2=Rect(- 14912.0, 7424.0, - 7776.0, 11072.0)
-    set gg_rct_Fel2=Rect(21760.0, - 30016.0, 21824.0, - 29952.0)
-    set gg_rct_Blackrock_Exit=Rect(21536.0, - 30048.0, 22048.0, - 29888.0)
-    set gg_rct_Shadowforge_gate=Rect(19680.0, - 31712.0, 20064.0, - 30912.0)
-    set gg_rct_InstanceBlackrock=Rect(18144.0, - 32032.0, 24320.0, - 28544.0)
-    set gg_rct_Fel1=Rect(23552.0, - 29536.0, 23616.0, - 29472.0)
-    set gg_rct_Fel2_Copy=Rect(21760.0, - 30016.0, 21824.0, - 29952.0)
-    set gg_rct_Fel3=Rect(21760.0, - 29984.0, 21824.0, - 29920.0)
-    set gg_rct_Region_BS=Rect(21504.0, - 29792.0, 21568.0, - 29728.0)
-    set gg_rct_BlackrockUnlock=Rect(22176.0, - 31968.0, 24288.0, - 28512.0)
+    set gg_rct_ScarletExit=Rect(10336.0, 11712.0, 10784.0, 12096.0)
+    set gg_rct_TempestKeepSpawn=Rect(3808.0, - 21856.0, 4224.0, - 21504.0)
+    set gg_rct_SummonObeliskTarget=Rect(3232.0, 22752.0, 3648.0, 23168.0)
+    set gg_rct_NyalothaInstance=Rect(- 28672.0, - 7264.0, - 22656.0, 1536.0)
+    set gg_rct_NyTanaris=Rect(- 15136.0, - 17888.0, - 14656.0, - 17376.0)
+    set gg_rct_NyNorth=Rect(3808.0, 23072.0, 4160.0, 23520.0)
+    set gg_rct_UldumAmbiance=Rect(- 15712.0, - 20576.0, - 11552.0, - 15232.0)
+    set gg_rct_NyalothaUnlock1=Rect(- 28640.0, - 1152.0, - 22304.0, 1504.0)
+    set gg_rct_NyalothaUnlock2=Rect(- 25504.0, - 7552.0, - 22528.0, - 2464.0)
+    set gg_rct_NyalothaUnlock3=Rect(- 28640.0, - 7520.0, - 25472.0, - 4032.0)
+    set gg_rct_ScarletHarbor=Rect(- 9728.0, 21984.0, - 7872.0, 23648.0)
+    set gg_rct_KaliRock1=Rect(- 16864.0, - 2336.0, - 15456.0, - 1280.0)
+    set gg_rct_KaliRock2=Rect(- 12480.0, - 8512.0, - 12032.0, - 7776.0)
+    set gg_rct_KaliRock3=Rect(- 14368.0, - 12032.0, - 13504.0, - 11616.0)
+    set gg_rct_KaliRock4=Rect(- 10304.0, - 12960.0, - 9408.0, - 12384.0)
+    set gg_rct_GoldrinnDuskwood=Rect(10976.0, - 16000.0, 11456.0, - 15520.0)
+    set gg_rct_GoldrinnHyjal=Rect(- 11040.0, 5216.0, - 10496.0, 5760.0)
+    set gg_rct_TeldrassilUnlock1=Rect(- 20032.0, 14368.0, - 17856.0, 16480.0)
+    set gg_rct_TeldrassilUnlock2=Rect(- 20640.0, 12160.0, - 18912.0, 13312.0)
+    set gg_rct_DarnassusWorgen=Rect(- 17856.0, 12736.0, - 16736.0, 15968.0)
+    set gg_rct_KaelSunwellChannel=Rect(18496.0, 21568.0, 18624.0, 21696.0)
+    set gg_rct_JainaChannel=Rect(- 9888.0, 17632.0, - 9792.0, 17728.0)
+    set gg_rct_MonolithNoBuild=Rect(- 28608.0, 5440.0, - 22048.0, 14336.0)
+    set gg_rct_DrakUnlock=Rect(1120.0, 18592.0, 3360.0, 20960.0)
+    set gg_rct_NyalothaAmbiance=Rect(- 28672.0, - 7424.0, - 22176.0, 1536.0)
+    set gg_rct_ArchimondeChannel=Rect(- 11712.0, 7264.0, - 11520.0, 7424.0)
+    set gg_rct_DraeneiEvacuation=Rect(- 21984.0, 6976.0, - 20000.0, 9344.0)
+    set gg_rct_AkamaUnlock=Rect(- 4416.0, - 21088.0, - 3072.0, - 20064.0)
+    set gg_rct_Draenei_Invulnerable=Rect(1792.0, - 23264.0, 3456.0, - 22400.0)
+    set gg_rct_DragonSoulChannel=Rect(12320.0, - 11552.0, 12544.0, - 11328.0)
+    set gg_rct_WyrmrestTemple=Rect(- 928.0, 17056.0, - 288.0, 17824.0)
+    set gg_rct_WorldTunnelEntrance=Rect(- 27744.0, - 9472.0, - 27200.0, - 9184.0)
+    set gg_rct_WorldTunnelExit=Rect(17472.0, - 11584.0, 17792.0, - 11040.0)
+    set gg_rct_StrahnbradTaxe=Rect(12896.0, 5440.0, 12928.0, 5472.0)
+    set gg_rct_AndhoralTaxe=Rect(12416.0, 8512.0, 12448.0, 8544.0)
+    set gg_rct_TirisfalTaxe=Rect(7072.0, 10016.0, 7104.0, 10048.0)
+    set gg_rct_HeartglenTaxe=Rect(12288.0, 10944.0, 12416.0, 11072.0)
+    set gg_rct_CorinTaxe=Rect(17536.0, 9056.0, 17568.0, 9088.0)
+    set gg_rct_HavenshireTaxe=Rect(20320.0, 9408.0, 20352.0, 9440.0)
+    set gg_rct_AshbringerForge=Rect(10240.0, - 5440.0, 10368.0, - 5312.0)
+    set gg_rct_TyrsFall=Rect(5120.0, 9056.0, 5408.0, 9344.0)
+    set gg_rct_DuskwoodCrypt=Rect(9376.0, - 16032.0, 9728.0, - 15616.0)
+    set gg_rct_OutlandToArgus=Rect(- 23872.0, 9120.0, - 23360.0, 9536.0)
+    set gg_rct_ClosePortal=Rect(16192.0, - 19488.0, 16480.0, - 19232.0)
+    set gg_rct_KaliRock5=Rect(- 12320.0, - 16992.0, - 11520.0, - 16288.0)
+    set gg_rct_FromAzuremyst=Rect(- 17696.0, 7840.0, - 17184.0, 8480.0)
+    set gg_rct_ArugalLocation=Rect(- 18944.0, - 25088.0, - 18432.0, - 24512.0)
+    set gg_rct_GarithosCrusadeSpawn=Rect(19168.0, 7520.0, 19776.0, 8160.0)
+    set gg_rct_KaliRock6=Rect(- 18752.0, - 15040.0, - 17248.0, - 14784.0)
 endfunction
 
 //***************************************************************************
@@ -14045,10 +14357,10 @@ endfunction
 
 function Trig_VoteAppear_Actions takes nothing returns nothing
     call DialogSetMessageBJ(udg_VoteDialog, "TRIGSTR_2624")
-    call DialogAddButtonBJ(udg_VoteDialog, "TRIGSTR_5928")
-    set udg_DialogYes=GetLastCreatedButtonBJ()
     call DialogAddButtonBJ(udg_VoteDialog, "TRIGSTR_5930")
     set udg_DialogNo=GetLastCreatedButtonBJ()
+    call DialogAddButtonBJ(udg_VoteDialog, "TRIGSTR_5928")
+    set udg_DialogYes=GetLastCreatedButtonBJ()
     call ForForce(GetPlayersAll(), function Trig_VoteAppear_Func006A)
 endfunction
 
@@ -14141,11 +14453,15 @@ endfunction
 // Trigger: PatronIni
 //===========================================================================
 function Trig_PatronIni_Actions takes nothing returns nothing
-    call BlzSetUnitName(gg_unit_nhmc_1519, "bredbrodak - Tier 1 Patron")
+    call BlzSetUnitName(gg_unit_nhmc_3297, "owen wallace - Tier 1 Patron")
+    call BlzSetUnitName(gg_unit_nhmc_3317, "mark tizedes - Tier 1 Patron")
+    call BlzSetUnitName(gg_unit_nfro_1519, "bredbrodak - Tier 2 Patron")
     call BlzSetUnitName(gg_unit_nfro_2833, "Ringabel - Tier 2 Patron")
     call BlzSetUnitName(gg_unit_nfro_2832, "Akane - Tier 2 Patron")
     call BlzSetUnitName(gg_unit_nfro_2837, "Dromoka - Tier 2 Patron")
     call BlzSetUnitName(gg_unit_nfro_3039, "Menos - Tier 2 Patron")
+    call BlzSetUnitName(gg_unit_nfro_2886, "Bocelot - Tier 2 Patron")
+    call BlzSetUnitName(gg_unit_nfro_3150, "Eagleman - Tier 2 Patron")
     call BlzSetUnitName(gg_unit_npig_3022, "Greenelf - Tier 3 Patron")
 endfunction
 
@@ -14175,9 +14491,6 @@ function Trig_Intros_Actions takes nothing returns nothing
     call DisplayTimedTextToForce(GetPlayersAll(), 51.00, "TRIGSTR_024")
     call DisplayTimedTextToForce(GetPlayersAll(), 51.00, "TRIGSTR_025")
     call DisplayTimedTextToForce(GetPlayersAll(), 51.00, "TRIGSTR_026")
-    call SetPlayerColorBJ(Player(21), PLAYER_COLOR_MAROON, true)
-    call SetPlayerAllianceStateBJ(Player(21), Player(PLAYER_NEUTRAL_AGGRESSIVE), bj_ALLIANCE_ALLIED_VISION)
-    call SetPlayerAllianceStateBJ(Player(PLAYER_NEUTRAL_AGGRESSIVE), Player(21), bj_ALLIANCE_ALLIED_VISION)
     call DestroyTrigger(GetTriggeringTrigger())
 endfunction
 
@@ -14204,6 +14517,7 @@ function Trig_IntroText_Actions takes nothing returns nothing
     call DisplayTimedTextToForce(bj_FORCE_PLAYER[10], 40.00, "TRIGSTR_3502")
     call DisplayTimedTextToForce(bj_FORCE_PLAYER[11], 40.00, "TRIGSTR_5318")
     call DisplayTimedTextToForce(bj_FORCE_PLAYER[12], 40.00, "TRIGSTR_7112")
+    call DisplayTimedTextToForce(bj_FORCE_PLAYER[13], 40.00, "TRIGSTR_10880")
     call DisplayTimedTextToForce(bj_FORCE_PLAYER[14], 45.00, "TRIGSTR_17487")
     call DisplayTimedTextToForce(bj_FORCE_PLAYER[16], 40.00, "TRIGSTR_5171")
     call DisplayTimedTextToForce(bj_FORCE_PLAYER[17], 40.00, "TRIGSTR_11615")
@@ -14220,6 +14534,23 @@ function InitTrig_IntroText takes nothing returns nothing
     set gg_trg_IntroText=CreateTrigger()
     call TriggerRegisterTimerEventSingle(gg_trg_IntroText, 10.00)
     call TriggerAddAction(gg_trg_IntroText, function Trig_IntroText_Actions)
+endfunction
+
+//===========================================================================
+// Trigger: FoodIni
+//===========================================================================
+function Trig_FoodIni_Func001A takes nothing returns nothing
+    call SetPlayerStateBJ(GetEnumPlayer(), PLAYER_STATE_FOOD_CAP_CEILING, 200)
+endfunction
+
+function Trig_FoodIni_Actions takes nothing returns nothing
+    call ForForce(GetPlayersAll(), function Trig_FoodIni_Func001A)
+endfunction
+
+//===========================================================================
+function InitTrig_FoodIni takes nothing returns nothing
+    set gg_trg_FoodIni=CreateTrigger()
+    call TriggerAddAction(gg_trg_FoodIni, function Trig_FoodIni_Actions)
 endfunction
 
 //===========================================================================
@@ -14249,10 +14580,106 @@ endfunction
 //===========================================================================
 // Trigger: Terrain Initialization
 //===========================================================================
+function Trig_Terrain_Initialization_Func001Func001C takes nothing returns boolean
+    if ( not ( GetDestructableTypeId(GetEnumDestructable()) == 'LTrc' ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_Terrain_Initialization_Func001A takes nothing returns nothing
+    if ( Trig_Terrain_Initialization_Func001Func001C() ) then
+        call SetDestructableInvulnerableBJ(GetEnumDestructable(), true)
+    else
+    endif
+endfunction
+
+function Trig_Terrain_Initialization_Func002Func001C takes nothing returns boolean
+    if ( not ( GetDestructableTypeId(GetEnumDestructable()) == 'LTrc' ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_Terrain_Initialization_Func002A takes nothing returns nothing
+    if ( Trig_Terrain_Initialization_Func002Func001C() ) then
+        call SetDestructableInvulnerableBJ(GetEnumDestructable(), true)
+    else
+    endif
+endfunction
+
+function Trig_Terrain_Initialization_Func003Func001C takes nothing returns boolean
+    if ( not ( GetDestructableTypeId(GetEnumDestructable()) == 'LTrc' ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_Terrain_Initialization_Func003A takes nothing returns nothing
+    if ( Trig_Terrain_Initialization_Func003Func001C() ) then
+        call SetDestructableInvulnerableBJ(GetEnumDestructable(), true)
+    else
+    endif
+endfunction
+
+function Trig_Terrain_Initialization_Func004Func001C takes nothing returns boolean
+    if ( not ( GetDestructableTypeId(GetEnumDestructable()) == 'LTrc' ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_Terrain_Initialization_Func004A takes nothing returns nothing
+    if ( Trig_Terrain_Initialization_Func004Func001C() ) then
+        call SetDestructableInvulnerableBJ(GetEnumDestructable(), true)
+    else
+    endif
+endfunction
+
+function Trig_Terrain_Initialization_Func005Func001C takes nothing returns boolean
+    if ( not ( GetDestructableTypeId(GetEnumDestructable()) == 'LTrc' ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_Terrain_Initialization_Func005A takes nothing returns nothing
+    if ( Trig_Terrain_Initialization_Func005Func001C() ) then
+        call SetDestructableInvulnerableBJ(GetEnumDestructable(), true)
+    else
+    endif
+endfunction
+
+function Trig_Terrain_Initialization_Func006Func001C takes nothing returns boolean
+    if ( not ( GetDestructableTypeId(GetEnumDestructable()) == 'LTrc' ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_Terrain_Initialization_Func006A takes nothing returns nothing
+    if ( Trig_Terrain_Initialization_Func006Func001C() ) then
+        call SetDestructableInvulnerableBJ(GetEnumDestructable(), true)
+    else
+    endif
+endfunction
+
+function Trig_Terrain_Initialization_Func008002 takes nothing returns nothing
+    call SetDestAnimationSpeedPercent(GetEnumDestructable(), 0.00)
+endfunction
+
 function Trig_Terrain_Initialization_Actions takes nothing returns nothing
+    call EnumDestructablesInRectAll(gg_rct_KaliRock1, function Trig_Terrain_Initialization_Func001A)
+    call EnumDestructablesInRectAll(gg_rct_KaliRock2, function Trig_Terrain_Initialization_Func002A)
+    call EnumDestructablesInRectAll(gg_rct_KaliRock3, function Trig_Terrain_Initialization_Func003A)
+    call EnumDestructablesInRectAll(gg_rct_KaliRock4, function Trig_Terrain_Initialization_Func004A)
+    call EnumDestructablesInRectAll(gg_rct_KaliRock5, function Trig_Terrain_Initialization_Func005A)
+    call EnumDestructablesInRectAll(gg_rct_KaliRock6, function Trig_Terrain_Initialization_Func006A)
+    call EnumDestructablesInRectAll(gg_rct_AhnQiraj, function Trig_Terrain_Initialization_Func008002)
     // Thandol Span Bridge
     call SetDestructableInvulnerableBJ(gg_dest_LT08_0837, true)
     // Dalaran Shield
+    call AddWeatherEffectSaveLast(gg_rct_Dalaran, 'MEds')
     set udg_DalaranAura=GetLastCreatedWeatherEffect()
     call DestroyTrigger(GetTriggeringTrigger())
 endfunction
@@ -14511,7 +14938,14 @@ endfunction
 //===========================================================================
 // Trigger: Neutral and Hostile Unit Initialization
 //===========================================================================
+function Trig_Neutral_and_Hostile_Unit_Initialization_Func003A takes nothing returns nothing
+    call SetUnitOwner(GetEnumUnit(), Player(PLAYER_NEUTRAL_AGGRESSIVE), true)
+endfunction
+
 function Trig_Neutral_and_Hostile_Unit_Initialization_Actions takes nothing returns nothing
+    call SetPlayerAllianceStateBJ(Player(PLAYER_NEUTRAL_AGGRESSIVE), Player(21), bj_ALLIANCE_ALLIED_VISION)
+    call SetPlayerAllianceStateBJ(Player(21), Player(PLAYER_NEUTRAL_AGGRESSIVE), bj_ALLIANCE_ALLIED_VISION)
+    call ForGroupBJ(GetUnitsOfPlayerAll(Player(21)), function Trig_Neutral_and_Hostile_Unit_Initialization_Func003A)
     // Disables and Limits
     call SetPlayerTechResearchedSwap('Rhse', 1, Player(PLAYER_NEUTRAL_AGGRESSIVE))
     call EnableCreepSleepBJ(false)
@@ -14574,20 +15008,23 @@ endfunction
 function Trig_Gate_Initialization_Actions takes nothing returns nothing
     call SetUnitAnimation(gg_unit_h00L_0588, "death alternate")
     call SetUnitAnimation(gg_unit_h00L_0293, "death alternate")
-    call SetUnitAnimation(gg_unit_h00L_0227, "death alternate")
     call SetUnitAnimation(gg_unit_h00L_0200, "death alternate")
     call SetUnitAnimation(gg_unit_h00L_0162, "death alternate")
     call SetUnitAnimation(gg_unit_h00L_0072, "death alternate")
     call SetUnitAnimation(gg_unit_h00L_0135, "death alternate")
     call SetUnitAnimation(gg_unit_h00L_0132, "death alternate")
-    call SetUnitAnimation(gg_unit_h00L_3084, "death alternate")
+    call SetUnitAnimation(gg_unit_h00L_0774, "death alternate")
+    call SetUnitAnimation(gg_unit_h00L_0987, "death alternate")
     call SetUnitAnimation(gg_unit_h01X_0656, "death alternate")
     call SetDestructableInvulnerableBJ(gg_dest_ATg4_28534, true)
     call SetDestructableInvulnerableBJ(gg_dest_DTg6_36078, true)
     call SetUnitInvulnerable(gg_unit_h02K_3968, true)
-    call SetUnitInvulnerable(gg_unit_h00L_3084, true)
     call ShowUnitHide(gg_unit_n08F_1739)
     call ShowUnitHide(gg_unit_n08F_1798)
+    call ShowUnitHide(gg_unit_h03V_3441)
+    call ShowUnitHide(gg_unit_h03V_3449)
+    call ShowUnitHide(gg_unit_h03V_3539)
+    call ShowUnitHide(gg_unit_h03V_3538)
     // Elves Gates
     call SetUnitAnimation(gg_unit_h00L_0987, "death alternate")
     // South Alliances Gates
@@ -14606,6 +15043,8 @@ endfunction
 // Trigger: Floating text
 //===========================================================================
 function Trig_Floating_text_Actions takes nothing returns nothing
+    call CreateTextTagLocBJ("TRIGSTR_027", GetRectCenter(gg_rct_East_of_Azeroth), 0, 10, 100, 100, 100, 0)
+    call CreateTextTagLocBJ("TRIGSTR_028", GetRectCenter(gg_rct_West_of_Kalimdor), 0, 10, 100, 100, 100, 0)
     call DestroyTrigger(GetTriggeringTrigger())
 endfunction
 
@@ -14620,7 +15059,30 @@ endfunction
 // Trigger: Hidden Object and hastable INI
 //===========================================================================
 function Trig_Hidden_Object_and_hastable_INI_Actions takes nothing returns nothing
+    call SetDoodadAnimationRectBJ("hide", 'YScd', gg_rct_Stromgarde)
+    call SetDoodadAnimationRectBJ("hide", 'ZPfw', gg_rct_Cathedral_of_Light)
+    call SetDoodadAnimationRectBJ("hide", 'YPbs', gg_rct_Construction_Site_2)
+    call SetDoodadAnimationRectBJ("hide", 'LOwp', gg_rct_Construction_Site_2)
+    call SetDoodadAnimationRectBJ("hide", 'LOh1', gg_rct_Construction_Site_2)
+    call SetDoodadAnimationRectBJ("hide", 'CPbs', gg_rct_Construction_Site_2)
+    call SetDoodadAnimationRectBJ("hide", 'YOst', gg_rct_Construction_Site_2)
+    call SetDoodadAnimationRectBJ("hide", 'LOam', gg_rct_Construction_Site_2)
+    call SetDoodadAnimationRectBJ("hide", 'D02V', gg_rct_Construction_Site_2)
+    call SetDoodadAnimationRectBJ("hide", 'YPfs', gg_rct_Cathedral_of_Light)
+    call SetDoodadAnimationRectBJ("hide", 'LOar', gg_rct_Construction_Site_2)
     call PolledWait(0.50)
+    call SetDoodadAnimationRectBJ("hide", 'LOhp', gg_rct_Construction_Site_2)
+    call SetDoodadAnimationRectBJ("hide", 'YPpp', gg_rct_Cathedral_of_Light)
+    call SetDoodadAnimationRectBJ("hide", 'YOlp', gg_rct_Cathedral_of_Light)
+    call SetDoodadAnimationRectBJ("hide", 'XOmr', gg_rct_Stromwind_antiship)
+    call SetDoodadAnimationRectBJ("hide", 'YScd', gg_rct_HonorHold)
+    call SetDoodadAnimationRectBJ("hide", 'YScd', gg_rct_Stromwind_antiship)
+    call SetDoodadAnimationRectBJ("hide", 'ZCv2', gg_rct_Stromwind_antiship)
+    call SetDoodadAnimationRectBJ("hide", 'JOgr', gg_rct_Stromwind_antiship)
+    call SetDoodadAnimationRectBJ("hide", 'ZCv1', gg_rct_Stromwind_antiship)
+    call SetDoodadAnimationRectBJ("hide", 'D02N', gg_rct_Stromwind_antiship)
+    call SetDoodadAnimationRectBJ("hide", 'CSra', gg_rct_HonorHold)
+    call SetDoodadAnimationRectBJ("hide", 'YScr', gg_rct_Terenas)
     call DisableTrigger(GetTriggeringTrigger())
     call DestroyTrigger(GetTriggeringTrigger())
 endfunction
@@ -14635,11 +15097,21 @@ endfunction
 //===========================================================================
 // Trigger: ScourgeLegion
 //===========================================================================
-function Trig_ScourgeLegion_Func010002 takes nothing returns nothing
+function Trig_ScourgeLegion_Func012002 takes nothing returns nothing
+    call SetUnitInvulnerable(GetEnumUnit(), true)
+endfunction
+
+function Trig_ScourgeLegion_Func014002 takes nothing returns nothing
+    call SetUnitInvulnerable(GetEnumUnit(), true)
+endfunction
+
+function Trig_ScourgeLegion_Func016002 takes nothing returns nothing
     call SetUnitInvulnerable(GetEnumUnit(), true)
 endfunction
 
 function Trig_ScourgeLegion_Actions takes nothing returns nothing
+    call SetUnitInvulnerable(gg_unit_n0BE_3262, true)
+    call SetUnitInvulnerable(gg_unit_n0BE_3261, true)
     call SetPlayerTechResearchedSwap('R04R', 1, Player(23))
     call SetUnitInvulnerable(gg_unit_e013_1815, true)
     call SetUnitTimeScalePercent(gg_unit_u01X_1857, 0.00)
@@ -14647,7 +15119,12 @@ function Trig_ScourgeLegion_Actions takes nothing returns nothing
     call SetPlayerAbilityAvailableBJ(false, 'A0K2', udg_ScourgePlayer)
     call SetPlayerAbilityAvailableBJ(false, 'A09N', udg_ScourgePlayer)
     // Unit Invulnerable
-    call ForGroupBJ(udg_IcecrownGroup, function Trig_ScourgeLegion_Func010002)
+    set udg_IcecrownGroup=GetUnitsInRectOfPlayer(gg_rct_DrakUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_IcecrownGroup, function Trig_ScourgeLegion_Func012002)
+    set udg_IcecrownGroup=GetUnitsInRectOfPlayer(gg_rct_TwistingNether, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_IcecrownGroup, function Trig_ScourgeLegion_Func014002)
+    set udg_IcecrownGroup=GetUnitsInRectOfPlayer(gg_rct_Ice_Crown, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_IcecrownGroup, function Trig_ScourgeLegion_Func016002)
     call DestroyGroup(udg_IcecrownGroup)
     call SetUnitInvulnerable(gg_unit_u000_0649, true)
     call DisableTrigger(GetTriggeringTrigger())
@@ -14663,20 +15140,31 @@ endfunction
 //===========================================================================
 // Trigger: Teal
 //===========================================================================
-function Trig_Teal_Func005002 takes nothing returns nothing
-    call SetUnitInvulnerable(GetEnumUnit(), true)
-endfunction
-
 function Trig_Teal_Func008002 takes nothing returns nothing
     call SetUnitInvulnerable(GetEnumUnit(), true)
 endfunction
 
+function Trig_Teal_Func010002 takes nothing returns nothing
+    call SetUnitInvulnerable(GetEnumUnit(), true)
+endfunction
+
+function Trig_Teal_Func013002 takes nothing returns nothing
+    call SetUnitInvulnerable(GetEnumUnit(), true)
+endfunction
+
 function Trig_Teal_Actions takes nothing returns nothing
+    call SetUnitInvulnerable(gg_unit_n081_1585, true)
+    call SetUnitInvulnerable(gg_unit_n081_0882, true)
+    call SetUnitInvulnerable(gg_unit_n081_4142, true)
     call SetPlayerAbilityAvailableBJ(false, 'A0MZ', udg_FelPlayer)
     call SetPlayerAbilityAvailableBJ(false, 'A0GM', udg_FelPlayer)
-    call ForGroupBJ(udg_HellfireGroup, function Trig_Teal_Func005002)
-    call DestroyGroup(udg_HellfireGroup)
+    set udg_HellfireGroup=GetUnitsInRectOfPlayer(gg_rct_KilsorrowUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_HellfireGroup, function Trig_Teal_Func008002)
+    set udg_HellfireGroup=GetUnitsInRectOfPlayer(gg_rct_HellfireUnlock, Player(PLAYER_NEUTRAL_AGGRESSIVE))
+    call ForGroupBJ(udg_HellfireGroup, function Trig_Teal_Func010002)
+    call DestroyGroup(udg_HellfireGroup)
+    set udg_HellfireGroup=GetUnitsInRectOfPlayer(gg_rct_BlackrockUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_HellfireGroup, function Trig_Teal_Func013002)
     call DestroyGroup(udg_HellfireGroup)
     call DisableTrigger(GetTriggeringTrigger())
     call DestroyTrigger(GetTriggeringTrigger())
@@ -14720,10 +15208,13 @@ function Trig_Purple_Actions takes nothing returns nothing
     call SetUnitInvulnerable(gg_unit_h006_0416, true)
     call SetUnitInvulnerable(gg_unit_h006_0411, true)
     call SetUnitInvulnerable(gg_unit_h000_0406, true)
+    set udg_LordaeronGroup=GetUnitsInRectOfPlayer(gg_rct_Terenas, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_LordaeronGroup, function Trig_Purple_Func019002)
     call DestroyGroup(udg_LordaeronGroup)
+    set udg_LordaeronGroup=GetUnitsInRectOfPlayer(gg_rct_StratholmeUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_LordaeronGroup, function Trig_Purple_Func022002)
     call DestroyGroup(udg_LordaeronGroup)
+    set udg_LordaeronGroup=GetUnitsInRectOfPlayer(gg_rct_TyrUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_LordaeronGroup, function Trig_Purple_Func025002)
     call DestroyGroup(udg_LordaeronGroup)
     call DisableTrigger(GetTriggeringTrigger())
@@ -14761,11 +15252,16 @@ endfunction
 
 function Trig_Yellow_Actions takes nothing returns nothing
     // ------------------------- Yellow ------------------------- 
+    set udg_Aeriepeak=GetUnitsInRectOfPlayer(gg_rct_Aerie_Peak, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Aeriepeak, function Trig_Yellow_Func003002)
     call DestroyGroup(udg_Aeriepeak)
+    set udg_DarkIrons=GetUnitsInRectOfPlayer(gg_rct_Shadowforge_City, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_DarkIrons, function Trig_Yellow_Func006002)
+    set udg_DarkIrons=GetUnitsInRectOfPlayer(gg_rct_IronforgeAmbient, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_DarkIrons, function Trig_Yellow_Func008002)
+    set udg_DarkIrons=GetUnitsInRectOfPlayer(gg_rct_ThelUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_DarkIrons, function Trig_Yellow_Func010002)
+    set udg_DarkIrons=GetUnitsInRectOfPlayer(gg_rct_DunmoroghAmbient2, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_DarkIrons, function Trig_Yellow_Func012002)
     call DestroyGroup(udg_DarkIrons)
     // Disables and Limits
@@ -14789,32 +15285,33 @@ endfunction
 //===========================================================================
 // Trigger: DalaKultiras
 //===========================================================================
-function Trig_DalaKultiras_Func018002 takes nothing returns nothing
+function Trig_DalaKultiras_Func019002 takes nothing returns nothing
     call SetUnitInvulnerable(GetEnumUnit(), true)
 endfunction
 
-function Trig_DalaKultiras_Func020002 takes nothing returns nothing
+function Trig_DalaKultiras_Func021002 takes nothing returns nothing
     call SetUnitInvulnerable(GetEnumUnit(), true)
 endfunction
 
-function Trig_DalaKultiras_Func023002 takes nothing returns nothing
+function Trig_DalaKultiras_Func024002 takes nothing returns nothing
     call SetUnitInvulnerable(GetEnumUnit(), true)
 endfunction
 
-function Trig_DalaKultiras_Func026002 takes nothing returns nothing
+function Trig_DalaKultiras_Func027002 takes nothing returns nothing
     call SetUnitInvulnerable(GetEnumUnit(), true)
 endfunction
 
-function Trig_DalaKultiras_Func029002 takes nothing returns nothing
+function Trig_DalaKultiras_Func030002 takes nothing returns nothing
     call SetUnitInvulnerable(GetEnumUnit(), true)
 endfunction
 
-function Trig_DalaKultiras_Func032002 takes nothing returns nothing
+function Trig_DalaKultiras_Func033002 takes nothing returns nothing
     call SetUnitInvulnerable(GetEnumUnit(), true)
 endfunction
 
 function Trig_DalaKultiras_Actions takes nothing returns nothing
     // Disables and Limits
+    call PauseUnitBJ(true, gg_unit_h08T_0260)
     call SetPlayerAbilityAvailableBJ(false, 'A0GG', udg_DalaPlayer)
     call SetPlayerAbilityAvailableBJ(false, 'A0WG', udg_DalaPlayer)
     call SetPlayerAbilityAvailableBJ(false, 'A0UG', udg_DalaPlayer)
@@ -14829,16 +15326,22 @@ function Trig_DalaKultiras_Actions takes nothing returns nothing
     call SetUnitInvulnerable(gg_unit_h002_0230, true)
     // Groups
     // ------------------------- Orange ------------------------- 
-    call ForGroupBJ(udg_Theramore, function Trig_DalaKultiras_Func018002)
-    call ForGroupBJ(udg_Theramore, function Trig_DalaKultiras_Func020002)
+    set udg_Theramore=GetUnitsInRectOfPlayer(gg_rct_Theramore, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_Theramore, function Trig_DalaKultiras_Func019002)
+    set udg_Theramore=GetUnitsInRectOfPlayer(gg_rct_SouthshoreUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_Theramore, function Trig_DalaKultiras_Func021002)
     call DestroyGroup(udg_Theramore)
-    call ForGroupBJ(udg_Kultiras, function Trig_DalaKultiras_Func023002)
+    set udg_Kultiras=GetUnitsInRectOfPlayer(gg_rct_Kultiras, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_Kultiras, function Trig_DalaKultiras_Func024002)
     call DestroyGroup(udg_Kultiras)
-    call ForGroupBJ(udg_Kultiras, function Trig_DalaKultiras_Func026002)
+    set udg_Kultiras=GetUnitsInRectOfPlayer(gg_rct_Dalaran, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_Kultiras, function Trig_DalaKultiras_Func027002)
     call DestroyGroup(udg_Kultiras)
-    call ForGroupBJ(udg_Kultiras, function Trig_DalaKultiras_Func029002)
+    set udg_Kultiras=GetUnitsInRectOfPlayer(gg_rct_DalaranDungeon, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_Kultiras, function Trig_DalaKultiras_Func030002)
     call DestroyGroup(udg_Kultiras)
-    call ForGroupBJ(udg_Kultiras, function Trig_DalaKultiras_Func032002)
+    set udg_Kultiras=GetUnitsInRectOfPlayer(gg_rct_BlademasterUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_Kultiras, function Trig_DalaKultiras_Func033002)
     call DestroyGroup(udg_Kultiras)
     call DisableTrigger(GetTriggeringTrigger())
     call DestroyTrigger(GetTriggeringTrigger())
@@ -14877,8 +15380,11 @@ function Trig_Green_Actions takes nothing returns nothing
     call SetUnitInvulnerable(gg_unit_n001_0165, true)
     // Groups
     // ------------------------- Green ------------------------- 
+    set udg_QuelDanilLodge=GetUnitsInRectOfPlayer(gg_rct_SunwellAmbient, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_QuelDanilLodge, function Trig_Green_Func010002)
+    set udg_QuelDanilLodge=GetUnitsInRectOfPlayer(gg_rct_QuelDanil_Lodge, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_QuelDanilLodge, function Trig_Green_Func012002)
+    set udg_TempestKeep=GetUnitsInRectOfPlayer(gg_rct_TempestKeep, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_TempestKeep, function Trig_Green_Func014002)
     call ForGroupBJ(udg_TempestKeep, function Trig_Green_Func015002)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -14913,6 +15419,7 @@ endfunction
 // Trigger: Grey
 //===========================================================================
 function Trig_Grey_Actions takes nothing returns nothing
+    call SetUnitInvulnerable(gg_unit_o04M_1640, true)
     call SetPlayerAbilityAvailableBJ(false, 'A0PF', udg_WarsongPlayer)
     // Disables and Limits
     call SetPlayerAbilityAvailableBJ(false, 'A0Q9', udg_WarsongPlayer)
@@ -14981,19 +15488,26 @@ function Trig_Dark_Green_Actions takes nothing returns nothing
     call SetUnitInvulnerable(gg_unit_hbla_3319, true)
     call SetUnitInvulnerable(gg_unit_h05Z_3325, true)
     call SetUnitInvulnerable(gg_unit_h03W_1656, true)
+    set udg_HonorHold=GetUnitsInRectOfPlayer(gg_rct_HonorHold, udg_StormwindPlayer)
     call ForGroupBJ(udg_HonorHold, function Trig_Dark_Green_Func019002)
     call ForGroupBJ(udg_HonorHold, function Trig_Dark_Green_Func020002)
     call DestroyGroup(udg_HonorHold)
+    set udg_HonorHold=GetUnitsInRectOfPlayer(gg_rct_HonorHold, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_HonorHold, function Trig_Dark_Green_Func023002)
     call DestroyGroup(udg_HonorHold)
+    set udg_Stromgarde=GetUnitsInRectOfPlayer(gg_rct_Stromgarde, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Stromgarde, function Trig_Dark_Green_Func026002)
     call DestroyGroup(udg_Stromgarde)
+    set udg_Stromgarde=GetUnitsInRectOfPlayer(gg_rct_DarkshireUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Stromgarde, function Trig_Dark_Green_Func029002)
     call DestroyGroup(udg_Stromgarde)
+    set udg_Stromgarde=GetUnitsInRectOfPlayer(gg_rct_LakeshireUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Stromgarde, function Trig_Dark_Green_Func032002)
     call DestroyGroup(udg_Stromgarde)
+    set udg_Stromgarde=GetUnitsInRectOfPlayer(gg_rct_StormwindUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Stromgarde, function Trig_Dark_Green_Func035002)
     call DestroyGroup(udg_Stromgarde)
+    set udg_Stromgarde=GetUnitsInRectOfPlayer(gg_rct_NethergardeUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_Stromgarde, function Trig_Dark_Green_Func038002)
     call DestroyGroup(udg_Stromgarde)
     call DisableTrigger(GetTriggeringTrigger())
@@ -15009,6 +15523,10 @@ endfunction
 //===========================================================================
 // Trigger: SentinelDruid
 //===========================================================================
+function Trig_SentinelDruid_Func002002 takes nothing returns nothing
+    call SetUnitInvulnerable(GetEnumUnit(), true)
+endfunction
+
 function Trig_SentinelDruid_Func004002 takes nothing returns nothing
     call SetUnitInvulnerable(GetEnumUnit(), true)
 endfunction
@@ -15021,22 +15539,20 @@ function Trig_SentinelDruid_Func008002 takes nothing returns nothing
     call SetUnitInvulnerable(GetEnumUnit(), true)
 endfunction
 
-function Trig_SentinelDruid_Func010002 takes nothing returns nothing
-    call SetUnitInvulnerable(GetEnumUnit(), true)
-endfunction
-
-function Trig_SentinelDruid_Func011002 takes nothing returns nothing
+function Trig_SentinelDruid_Func009002 takes nothing returns nothing
     call ShowUnitHide(GetEnumUnit())
 endfunction
 
 function Trig_SentinelDruid_Actions takes nothing returns nothing
-    call SetPlayerStateBJ(Player(11), PLAYER_STATE_FOOD_CAP_CEILING, 300)
-    call SetPlayerStateBJ(Player(18), PLAYER_STATE_FOOD_CAP_CEILING, 300)
+    set udg_FeathermoonGroup=GetUnitsInRectOfPlayer(gg_rct_AstranaarUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_FeathermoonGroup, function Trig_SentinelDruid_Func002002)
+    set udg_FeathermoonGroup=GetUnitsInRectOfPlayer(gg_rct_FeathermoonUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_FeathermoonGroup, function Trig_SentinelDruid_Func004002)
+    set udg_FeathermoonGroup=GetUnitsInRectOfPlayer(gg_rct_MoongladeVillage, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_FeathermoonGroup, function Trig_SentinelDruid_Func006002)
-    call ForGroupBJ(udg_FeathermoonGroup, function Trig_SentinelDruid_Func008002)
-    call ForGroupBJ(udg_MaievUnlockOutland, function Trig_SentinelDruid_Func010002)
-    call ForGroupBJ(udg_MaievUnlockOutland, function Trig_SentinelDruid_Func011002)
+    set udg_MaievUnlockOutland=GetUnitsInRectOfPlayer(gg_rct_MaievStartUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_MaievUnlockOutland, function Trig_SentinelDruid_Func008002)
+    call ForGroupBJ(udg_MaievUnlockOutland, function Trig_SentinelDruid_Func009002)
     call SetPlayerTechResearchedSwap('Rews', 1, udg_DruidPlayer)
     call DisableTrigger(GetTriggeringTrigger())
     call DestroyTrigger(GetTriggeringTrigger())
@@ -15069,7 +15585,11 @@ function Trig_Group_Hiding_and_Invuln_Func010002 takes nothing returns nothing
     call SetUnitInvulnerable(GetEnumUnit(), true)
 endfunction
 
-function Trig_Group_Hiding_and_Invuln_Func013002 takes nothing returns nothing
+function Trig_Group_Hiding_and_Invuln_Func012002 takes nothing returns nothing
+    call SetUnitInvulnerable(GetEnumUnit(), true)
+endfunction
+
+function Trig_Group_Hiding_and_Invuln_Func014002 takes nothing returns nothing
     call SetUnitInvulnerable(GetEnumUnit(), true)
 endfunction
 
@@ -15077,8 +15597,8 @@ function Trig_Group_Hiding_and_Invuln_Func016002 takes nothing returns nothing
     call SetUnitInvulnerable(GetEnumUnit(), true)
 endfunction
 
-function Trig_Group_Hiding_and_Invuln_Func017002 takes nothing returns nothing
-    call ShowUnitHide(GetEnumUnit())
+function Trig_Group_Hiding_and_Invuln_Func018002 takes nothing returns nothing
+    call SetUnitInvulnerable(GetEnumUnit(), true)
 endfunction
 
 function Trig_Group_Hiding_and_Invuln_Func021002 takes nothing returns nothing
@@ -15089,28 +15609,58 @@ function Trig_Group_Hiding_and_Invuln_Func024002 takes nothing returns nothing
     call SetUnitInvulnerable(GetEnumUnit(), true)
 endfunction
 
-function Trig_Group_Hiding_and_Invuln_Func028002 takes nothing returns nothing
+function Trig_Group_Hiding_and_Invuln_Func025002 takes nothing returns nothing
+    call ShowUnitHide(GetEnumUnit())
+endfunction
+
+function Trig_Group_Hiding_and_Invuln_Func029002 takes nothing returns nothing
+    call SetUnitInvulnerable(GetEnumUnit(), true)
+endfunction
+
+function Trig_Group_Hiding_and_Invuln_Func032002 takes nothing returns nothing
+    call SetUnitInvulnerable(GetEnumUnit(), true)
+endfunction
+
+function Trig_Group_Hiding_and_Invuln_Func036002 takes nothing returns nothing
     call SetUnitInvulnerable(GetEnumUnit(), true)
 endfunction
 
 function Trig_Group_Hiding_and_Invuln_Actions takes nothing returns nothing
     // ------------------------- Pink ------------------------- 
+    set udg_ZulFurrak=GetUnitsInRectOfPlayer(gg_rct_Zulfarrak, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_ZulFurrak, function Trig_Group_Hiding_and_Invuln_Func004002)
+    set udg_ZulFurrak=GetUnitsInRectOfPlayer(gg_rct_Draenei_Invulnerable, Player(13))
     call ForGroupBJ(udg_ZulFurrak, function Trig_Group_Hiding_and_Invuln_Func006002)
+    set udg_ZulFurrak=GetUnitsInRectOfPlayer(gg_rct_EchoIsleAmbient, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_ZulFurrak, function Trig_Group_Hiding_and_Invuln_Func008002)
-    call ForGroupBJ(udg_Orgrimmar, function Trig_Group_Hiding_and_Invuln_Func010002)
+    set udg_ZulFurrak=GetUnitsInRectOfPlayer(gg_rct_DraeneiEvacuation, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_ZulFurrak, function Trig_Group_Hiding_and_Invuln_Func010002)
+    set udg_ZulFurrak=GetUnitsInRectOfPlayer(gg_rct_AkamaUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_ZulFurrak, function Trig_Group_Hiding_and_Invuln_Func012002)
+    set udg_ZulFurrak=GetUnitsInRectOfPlayer(gg_rct_GadgetUnlock, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_ZulFurrak, function Trig_Group_Hiding_and_Invuln_Func014002)
+    set udg_ZulFurrak=GetUnitsInRectOfPlayer(gg_rct_StonemaulKeep, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_ZulFurrak, function Trig_Group_Hiding_and_Invuln_Func016002)
+    set udg_Orgrimmar=GetUnitsInRectOfPlayer(gg_rct_Orgrimmar, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_Orgrimmar, function Trig_Group_Hiding_and_Invuln_Func018002)
     call DestroyGroup(udg_Orgrimmar)
-    call ForGroupBJ(udg_DarkspearIsland, function Trig_Group_Hiding_and_Invuln_Func013002)
+    set udg_DarkspearIsland=GetUnitsInRectOfPlayer(gg_rct_Darkspear_Island, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_DarkspearIsland, function Trig_Group_Hiding_and_Invuln_Func021002)
     call DestroyGroup(udg_DarkspearIsland)
-    call ForGroupBJ(udg_Crossroad, function Trig_Group_Hiding_and_Invuln_Func016002)
-    call ForGroupBJ(udg_Crossroad, function Trig_Group_Hiding_and_Invuln_Func017002)
+    set udg_Crossroad=GetUnitsInRectOfPlayer(gg_rct_Crossroads, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_Crossroad, function Trig_Group_Hiding_and_Invuln_Func024002)
+    call ForGroupBJ(udg_Crossroad, function Trig_Group_Hiding_and_Invuln_Func025002)
+    set udg_Thrallislandgroup=GetUnitsInRectOfPlayer(gg_rct_Thrall_6, Player(PLAYER_NEUTRAL_AGGRESSIVE))
     // ------------------------- Grey ------------------------- 
-    call ForGroupBJ(udg_WarsongLumberCamp, function Trig_Group_Hiding_and_Invuln_Func021002)
+    set udg_WarsongLumberCamp=GetUnitsInRectOfPlayer(gg_rct_WarsongCamp, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_WarsongLumberCamp, function Trig_Group_Hiding_and_Invuln_Func029002)
     call DestroyGroup(udg_WarsongLumberCamp)
-    call ForGroupBJ(udg_Chen, function Trig_Group_Hiding_and_Invuln_Func024002)
+    set udg_Chen=GetUnitsInRectOfPlayer(gg_rct_Chen, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_Chen, function Trig_Group_Hiding_and_Invuln_Func032002)
     call DestroyGroup(udg_Chen)
     // ------------------------- Hostile/Creeps ------------------------- 
-    call ForGroupBJ(udg_Gilneas, function Trig_Group_Hiding_and_Invuln_Func028002)
+    set udg_Gilneas=GetUnitsInRectOfPlayer(gg_rct_Gilneas, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_Gilneas, function Trig_Group_Hiding_and_Invuln_Func036002)
     call DestroyGroup(udg_Gilneas)
     call DestroyTrigger(GetTriggeringTrigger())
 endfunction
@@ -15125,6 +15675,65 @@ endfunction
 // Trigger: AmbianceEK
 //===========================================================================
 function Trig_AmbianceEK_Actions takes nothing returns nothing
+    call SetStackedSoundBJ(true, gg_snd_LordaeronSummerDay, gg_rct_QuelthalasAmbient)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronSummerDay, gg_rct_LordaeronAmbient1)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronSummerDay, gg_rct_LordaeronAmbient2)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronSummerDay, gg_rct_LordaeronAmbient3)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronSummerDay, gg_rct_LordaeronAmbient4)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronSummerDay, gg_rct_LordaeronAmbient5)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronSummerDay, gg_rct_ElwinForestAmbient)
+    call SetStackedSoundBJ(true, gg_snd_CityScapeDay, gg_rct_SunwellAmbient)
+    call SetStackedSoundBJ(true, gg_snd_CityScapeDay, gg_rct_StratholmeAmbient)
+    call SetStackedSoundBJ(true, gg_snd_CityScapeDay, gg_rct_Terenas)
+    call SetStackedSoundBJ(true, gg_snd_CityScapeDay, gg_rct_TyrHandAmbient)
+    call SetStackedSoundBJ(true, gg_snd_CityScapeDay, gg_rct_Dalaran)
+    call SetStackedSoundBJ(true, gg_snd_CityScapeDay, gg_rct_Stromgarde)
+    call SetStackedSoundBJ(true, gg_snd_CityScapeDay, gg_rct_StormwindAmbient2)
+    call SetStackedSoundBJ(true, gg_snd_CityScapeDay, gg_rct_Stromwind_antiship)
+    call SetStackedSoundBJ(true, gg_snd_CityScapeDay, gg_rct_ScarletAmbient)
+    call SetStackedSoundBJ(true, gg_snd_CityScapeDay, gg_rct_ShipAmbient)
+    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsDay, gg_rct_Gilneas)
+    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsDay, gg_rct_Chapter3)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronSummerNight, gg_rct_ShadowfangAmbient)
+    call SetStackedSoundBJ(true, gg_snd_IceCrownDay, gg_rct_LordamereLakeAmbient)
+    call SetStackedSoundBJ(true, gg_snd_IceCrownDay, gg_rct_BridgeAmbient)
+    call SetStackedSoundBJ(true, gg_snd_IceCrownDay, gg_rct_Aerie_Peak)
+    call SetStackedSoundBJ(true, gg_snd_IceCrownDay, gg_rct_DunmoroghAmbient1)
+    call SetStackedSoundBJ(true, gg_snd_IceCrownDay, gg_rct_DunmoroghAmbient2)
+    call SetStackedSoundBJ(true, gg_snd_IceCrownDay, gg_rct_DunmoroghAmbient3)
+    call SetStackedSoundBJ(true, gg_snd_IceCrownNight, gg_rct_IronforgeAmbient)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_SouthshoreAmbient)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_SouthshoreAmbient2)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_SouthshoreAmbient3)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_SouthshoreAmbient4)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_SouthshoreAmbient5)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_ScholomanceAmbient1)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_ScholomanceAmbient2)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_ScholomanceAmbient3)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_Kultiras)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_SentinelTowerAmbient)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_GrimBatolAmbient1)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_GrimBatolAmbient2)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronFallNight, gg_rct_ZulAman_trolls)
+    call SetStackedSoundBJ(true, gg_snd_NorthrendDay, gg_rct_AlteracAmbient)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronWinterNight, gg_rct_HinterlandAmbient1)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronWinterNight, gg_rct_HinterlandAmbient2)
+    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsDay, gg_rct_TolbaradAmbient)
+    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsDay, gg_rct_UndercityUnlock)
+    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsDay, gg_rct_DarkshireAmbient1)
+    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsDay, gg_rct_DarkshireAmbient2)
+    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsDay, gg_rct_DarkshireAmbient3)
+    call SetStackedSoundBJ(true, gg_snd_WetlandsNight, gg_rct_BalorAmbient)
+    call SetStackedSoundBJ(true, gg_snd_WetlandsNight, gg_rct_StranglethornAmbient1)
+    call SetStackedSoundBJ(true, gg_snd_WetlandsNight, gg_rct_StranglethornAmbient2)
+    call SetStackedSoundBJ(true, gg_snd_WetlandsNight, gg_rct_StranglethornAmbient3)
+    call SetStackedSoundBJ(true, gg_snd_BlackCitadel_OutlandNight, gg_rct_BlastedlandAmbient)
+    call SetStackedSoundBJ(true, gg_snd_AshenvaleNight, gg_rct_SwampofSorrowsAmbient)
+    call SetStackedSoundBJ(true, gg_snd_AshenvaleNight, gg_rct_WetlandAmbient1)
+    call SetStackedSoundBJ(true, gg_snd_AshenvaleNight, gg_rct_WetlandAmbient2)
+    call SetStackedSoundBJ(true, gg_snd_BarrensDay, gg_rct_BurningSteppesAmbient)
+    call SetStackedSoundBJ(true, gg_snd_BarrensDay, gg_rct_BurningSteppeAmbient2)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronWinterDay, gg_rct_LochModanAmbient)
 endfunction
 
 //===========================================================================
@@ -15138,6 +15747,47 @@ endfunction
 // Trigger: Ambiance
 //===========================================================================
 function Trig_Ambiance_Actions takes nothing returns nothing
+    call SetStackedSoundBJ(true, gg_snd_NorthrendNight, gg_rct_Northrend_Ambiance)
+    call SetStackedSoundBJ(true, gg_snd_NorthrendNight, gg_rct_Coldarra)
+    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsNight, gg_rct_InstanceDalaranDungeon1)
+    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsNight, gg_rct_InstanceScholomance)
+    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsNight, gg_rct_IllidanDalaranInstance)
+    call SetStackedSoundBJ(true, gg_snd_BlackCitadel_OutlandNight, gg_rct_InstanceDireMaul)
+    call SetStackedSoundBJ(true, gg_snd_BlackCitadel_OutlandNight, gg_rct_AethneumCatacombs)
+    call SetStackedSoundBJ(true, gg_snd_BlackCitadel_OutlandNight, gg_rct_InstanceSargerasTomb)
+    call SetStackedSoundBJ(true, gg_snd_BlackCitadel_OutlandDay, gg_rct_InstanceOutland)
+    call SetStackedSoundBJ(true, gg_snd_BlackCitadel_OutlandDay, gg_rct_InstanceBlackrock)
+    call SetStackedSoundBJ(true, gg_snd_BlackCitadel_OutlandDay, gg_rct_MonolithNoBuild)
+    call SetStackedSoundBJ(true, gg_snd_IceCrownNight, gg_rct_InstanceAzjolNerub)
+    call SetStackedSoundBJ(true, gg_snd_AshenvaleNight, gg_rct_TeldrassilAmbient)
+    call SetStackedSoundBJ(true, gg_snd_AshenvaleNight, gg_rct_FeralasAmbient1)
+    call SetStackedSoundBJ(true, gg_snd_AshenvaleNight, gg_rct_FeralasAmbient2)
+    call SetStackedSoundBJ(true, gg_snd_AshenvaleNight, gg_rct_RanazjarAmbient)
+    call SetStackedSoundBJ(true, gg_snd_AshenvaleNight, gg_rct_DusthallowAmbient)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_AzuremystAmbient)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_AszharaAmbient1)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_AzsharaAmbient2)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_EchoIsleAmbient)
+    call SetStackedSoundBJ(true, gg_snd_LordaeronFallDay, gg_rct_MaelstromAmbient)
+    call SetStackedSoundBJ(true, gg_snd_AshenvaleDay, gg_rct_AshenvaleAmbient)
+    call SetStackedSoundBJ(true, gg_snd_AshenvaleDay, gg_rct_AshenvaleAmbient2)
+    call SetStackedSoundBJ(true, gg_snd_AshenvaleDay, gg_rct_AshenvaleAmbient3)
+    call SetStackedSoundBJ(true, gg_snd_AshenvaleDay, gg_rct_AshenvaleAmbient4)
+    call SetStackedSoundBJ(true, gg_snd_BarrensDay, gg_rct_BarrenAmbient1)
+    call SetStackedSoundBJ(true, gg_snd_BarrensDay, gg_rct_BarrenAmbient2)
+    call SetStackedSoundBJ(true, gg_snd_BarrensDay, gg_rct_BarrenAmbient3)
+    call SetStackedSoundBJ(true, gg_snd_BarrensDay, gg_rct_BarrenAmbient4)
+    call SetStackedSoundBJ(true, gg_snd_BarrensDay, gg_rct_BarrenAmbient5)
+    call SetStackedSoundBJ(true, gg_snd_BarrensDay, gg_rct_UldumAmbiance)
+    call SetStackedSoundBJ(true, gg_snd_BarrensDay, gg_rct_AhnqirajInstance)
+    call SetStackedSoundBJ(true, gg_snd_DalaranRuinsDay, gg_rct_SilithusAmbient)
+    call SetStackedSoundBJ(true, gg_snd_WetlandsNight, gg_rct_UngoroAmbient)
+    call SetStackedSoundBJ(true, gg_snd_Wetlandsday, gg_rct_ZulfarrakAmbient)
+    call SetStackedSoundBJ(true, gg_snd_Wetlandsday, gg_rct_KezanAmbient)
+    call SetStackedSoundBJ(true, gg_snd_Wetlandsday, gg_rct_Darkspear_Island)
+    call SetStackedSoundBJ(true, gg_snd_Wetlandsday, gg_rct_Broken_Isles)
+    call SetStackedSoundBJ(true, gg_snd_IceCrownDay, gg_rct_WinterspringAmbient1)
+    call SetStackedSoundBJ(true, gg_snd_IceCrownDay, gg_rct_WinterspringAmbient2)
 endfunction
 
 //===========================================================================
@@ -15668,8 +16318,6 @@ function Trig_GilneasCleanup_Conditions takes nothing returns boolean
 endfunction
 
 function Trig_GilneasCleanup_Actions takes nothing returns nothing
-    call RemoveUnit(gg_unit_ngol_3788)
-    call RemoveUnit(gg_unit_ngol_2372)
 endfunction
 
 //===========================================================================
@@ -15684,8 +16332,6 @@ endfunction
 // Trigger: GilneasLeaveCleanup
 //===========================================================================
 function Trig_GilneasLeaveCleanup_Actions takes nothing returns nothing
-    call RemoveUnit(gg_unit_ngol_3788)
-    call RemoveUnit(gg_unit_ngol_2372)
 endfunction
 
 //===========================================================================
@@ -15891,6 +16537,90 @@ function Trig_Shipyard_Cancellation_Rects_Func001C takes nothing returns boolean
 endfunction
 
 function Trig_Shipyard_Cancellation_Rects_Func002C takes nothing returns boolean
+    if ( ( RectContainsUnit(gg_rct_CaerDarrowShipyard, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_InstanceNazjatar, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Arathi_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Auberdine_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Kali_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Dustwallow_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_STV_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Fenris_ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Auberdine_Ships_2, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Outland_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Northern_Kali_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Scholo_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_DalaranDungeon, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Stromwind_antiship, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_StratholmeShipyard, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Gilneas_Canals, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_TwistingNether, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Dun_Morogh_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Northrend_ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Desolace_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_South_EK_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_IcecrownShipyard, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Loch_Modan_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Tomb_Of_Sargeras_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Quel_Ships_1, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Quel_Ships_2, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Quel_Ships_3, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Chapter3, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
     return false
 endfunction
 
@@ -15898,7 +16628,7 @@ function Trig_Shipyard_Cancellation_Rects_Conditions takes nothing returns boole
     if ( not Trig_Shipyard_Cancellation_Rects_Func001C() ) then
         return false
     endif
-    if ( not (false) ) then // INLINED!!
+    if ( not Trig_Shipyard_Cancellation_Rects_Func002C() ) then
         return false
     endif
     return true
@@ -16020,102 +16750,63 @@ function InitTrig_Unique_Regen_Ring_Copy takes nothing returns nothing
 endfunction
 
 //===========================================================================
-// Trigger: Anti Wind Walk Worker
+// Trigger: Anti Diamond of summoning
 //===========================================================================
-function Trig_Anti_Wind_Walk_Worker_Func002C takes nothing returns boolean
-    if ( ( GetUnitTypeId(GetTriggerUnit()) == 'Hvwd' ) ) then
+function Trig_Anti_Diamond_of_summoning_Func002C takes nothing returns boolean
+    if ( ( GetUnitTypeId(GetTriggerUnit()) == 'Eevi' ) ) then
         return true
     endif
-    if ( ( GetUnitTypeId(GetTriggerUnit()) == 'o00G' ) ) then
+    if ( ( GetUnitTypeId(GetTriggerUnit()) == 'H08U' ) ) then
         return true
     endif
-    if ( ( GetUnitTypeId(GetTriggerUnit()) == 'n00A' ) ) then
+    if ( ( GetUnitTypeId(GetTriggerUnit()) == 'E015' ) ) then
         return true
     endif
-    if ( ( GetUnitTypeId(GetTriggerUnit()) == 'Ogrh' ) ) then
+    if ( ( GetUnitTypeId(GetTriggerUnit()) == 'U00S' ) ) then
         return true
     endif
-    if ( ( GetUnitTypeId(GetTriggerUnit()) == 'Opgh' ) ) then
-        return true
-    endif
-    if ( ( GetUnitTypeId(GetTriggerUnit()) == 'o00B' ) ) then
-        return true
-    endif
-    if ( ( GetUnitTypeId(GetTriggerUnit()) == 'o00B' ) ) then
-        return true
-    endif
-    if ( ( GetUnitTypeId(GetTriggerUnit()) == 'E002' ) ) then
-        return true
-    endif
-    if ( ( GetUnitTypeId(GetTriggerUnit()) == 'Nbbc' ) ) then
-        return true
-    endif
-    if ( ( GetUnitTypeId(GetTriggerUnit()) == 'H028' ) ) then
-        return true
-    endif
-    if ( ( GetUnitTypeId(GetTriggerUnit()) == 'n075' ) ) then
+    if ( ( GetUnitTypeId(GetTriggerUnit()) == 'Hvsh' ) ) then
         return true
     endif
     return false
 endfunction
 
-function Trig_Anti_Wind_Walk_Worker_Conditions takes nothing returns boolean
-    if ( not Trig_Anti_Wind_Walk_Worker_Func002C() ) then
+function Trig_Anti_Diamond_of_summoning_Conditions takes nothing returns boolean
+    if ( not Trig_Anti_Diamond_of_summoning_Func002C() ) then
         return false
     endif
     return true
 endfunction
 
-function Trig_Anti_Wind_Walk_Worker_Func003Func001C takes nothing returns boolean
-    if ( ( GetItemTypeId(GetManipulatedItem()) == 'I01G' ) ) then
-        return true
-    endif
-    if ( ( GetItemTypeId(GetManipulatedItem()) == 'I00A' ) ) then
-        return true
-    endif
-    if ( ( GetItemTypeId(GetManipulatedItem()) == 'I00M' ) ) then
-        return true
-    endif
-    if ( ( GetItemTypeId(GetManipulatedItem()) == 'I00P' ) ) then
-        return true
-    endif
-    if ( ( GetItemTypeId(GetManipulatedItem()) == 'I00Q' ) ) then
-        return true
-    endif
-    if ( ( GetItemTypeId(GetManipulatedItem()) == 'I00B' ) ) then
-        return true
-    endif
-    if ( ( GetItemTypeId(GetManipulatedItem()) == 'I00O' ) ) then
-        return true
-    endif
-    if ( ( GetItemTypeId(GetManipulatedItem()) == 'I00G' ) ) then
+function Trig_Anti_Diamond_of_summoning_Func003Func001C takes nothing returns boolean
+    if ( ( GetItemTypeId(GetManipulatedItem()) == 'dsum' ) ) then
         return true
     endif
     return false
 endfunction
 
-function Trig_Anti_Wind_Walk_Worker_Func003C takes nothing returns boolean
-    if ( not Trig_Anti_Wind_Walk_Worker_Func003Func001C() ) then
+function Trig_Anti_Diamond_of_summoning_Func003C takes nothing returns boolean
+    if ( not Trig_Anti_Diamond_of_summoning_Func003Func001C() ) then
         return false
     endif
     return true
 endfunction
 
-function Trig_Anti_Wind_Walk_Worker_Actions takes nothing returns nothing
-    if ( Trig_Anti_Wind_Walk_Worker_Func003C() ) then
+function Trig_Anti_Diamond_of_summoning_Actions takes nothing returns nothing
+    if ( Trig_Anti_Diamond_of_summoning_Func003C() ) then
         call RemoveItem(GetManipulatedItem())
-        call AdjustPlayerStateBJ(100, GetOwningPlayer(GetTriggerUnit()), PLAYER_STATE_RESOURCE_GOLD)
+        call AdjustPlayerStateBJ(45, GetOwningPlayer(GetTriggerUnit()), PLAYER_STATE_RESOURCE_GOLD)
     else
         call DoNothing()
     endif
 endfunction
 
 //===========================================================================
-function InitTrig_Anti_Wind_Walk_Worker takes nothing returns nothing
-    set gg_trg_Anti_Wind_Walk_Worker=CreateTrigger()
-    call TriggerRegisterAnyUnitEventBJ(gg_trg_Anti_Wind_Walk_Worker, EVENT_PLAYER_UNIT_PICKUP_ITEM)
-    call TriggerAddCondition(gg_trg_Anti_Wind_Walk_Worker, Condition(function Trig_Anti_Wind_Walk_Worker_Conditions))
-    call TriggerAddAction(gg_trg_Anti_Wind_Walk_Worker, function Trig_Anti_Wind_Walk_Worker_Actions)
+function InitTrig_Anti_Diamond_of_summoning takes nothing returns nothing
+    set gg_trg_Anti_Diamond_of_summoning=CreateTrigger()
+    call TriggerRegisterAnyUnitEventBJ(gg_trg_Anti_Diamond_of_summoning, EVENT_PLAYER_UNIT_PICKUP_ITEM)
+    call TriggerAddCondition(gg_trg_Anti_Diamond_of_summoning, Condition(function Trig_Anti_Diamond_of_summoning_Conditions))
+    call TriggerAddAction(gg_trg_Anti_Diamond_of_summoning, function Trig_Anti_Diamond_of_summoning_Actions)
 endfunction
 
 //===========================================================================
@@ -16273,6 +16964,90 @@ function Trig_Cancel_Shipyards_Func002C takes nothing returns boolean
 endfunction
 
 function Trig_Cancel_Shipyards_Func003C takes nothing returns boolean
+    if ( ( RectContainsUnit(gg_rct_CaerDarrowShipyard, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_InstanceNazjatar, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Arathi_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Auberdine_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Kali_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Dustwallow_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_STV_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Fenris_ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Auberdine_Ships_2, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Outland_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Northern_Kali_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Scholo_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_DalaranDungeon, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Stromwind_antiship, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_StratholmeShipyard, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Gilneas_Canals, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_TwistingNether, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Dun_Morogh_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Northrend_ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Desolace_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_South_EK_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_IcecrownShipyard, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Loch_Modan_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Tomb_Of_Sargeras_Ships, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Quel_Ships_1, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Quel_Ships_2, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Quel_Ships_3, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
+    if ( ( RectContainsUnit(gg_rct_Chapter3, GetConstructedStructure()) == true ) ) then
+        return true
+    endif
     return false
 endfunction
 
@@ -16280,7 +17055,7 @@ function Trig_Cancel_Shipyards_Conditions takes nothing returns boolean
     if ( not Trig_Cancel_Shipyards_Func002C() ) then
         return false
     endif
-    if ( not (false) ) then // INLINED!!
+    if ( not Trig_Cancel_Shipyards_Func003C() ) then
         return false
     endif
     return true
@@ -16368,6 +17143,21 @@ function InitTrig_Stormwind_protection takes nothing returns nothing
 endfunction
 
 //===========================================================================
+// Trigger: NazjatarProtection
+//===========================================================================
+function Trig_NazjatarProtection_Actions takes nothing returns nothing
+    call SetUnitInvulnerable(gg_unit_n045_3377, false)
+    call DestroyTrigger(GetTriggeringTrigger())
+endfunction
+
+//===========================================================================
+function InitTrig_NazjatarProtection takes nothing returns nothing
+    set gg_trg_NazjatarProtection=CreateTrigger()
+    call TriggerRegisterUnitEvent(gg_trg_NazjatarProtection, gg_unit_n0BQ_3487, EVENT_UNIT_DEATH)
+    call TriggerAddAction(gg_trg_NazjatarProtection, function Trig_NazjatarProtection_Actions)
+endfunction
+
+//===========================================================================
 // Trigger: High Elves Protection 2
 //===========================================================================
 function Trig_High_Elves_Protection_2_Func003001 takes nothing returns boolean
@@ -16385,12 +17175,7 @@ function Trig_High_Elves_Protection_2_Conditions takes nothing returns boolean
     return true
 endfunction
 
-function Trig_High_Elves_Protection_2_Func005A takes nothing returns nothing
-    call DestroyGroup(udg_TempGroup)
-endfunction
-
 function Trig_High_Elves_Protection_2_Actions takes nothing returns nothing
-    call ForGroupBJ(udg_TempGroup, function Trig_High_Elves_Protection_2_Func005A)
     call SetUnitInvulnerable(gg_unit_h003_0418, false)
     call DisplayTextToForce(GetPlayersAll(), "TRIGSTR_017")
     call DestroyTrigger(GetTriggeringTrigger())
@@ -16425,6 +17210,7 @@ endfunction
 //===========================================================================
 function InitTrig_Capital_antisuicide takes nothing returns nothing
     set gg_trg_Capital_antisuicide=CreateTrigger()
+    call TriggerRegisterEnterRectSimple(gg_trg_Capital_antisuicide, gg_rct_Terenas)
     call TriggerAddCondition(gg_trg_Capital_antisuicide, Condition(function Trig_Capital_antisuicide_Conditions))
     call TriggerAddAction(gg_trg_Capital_antisuicide, function Trig_Capital_antisuicide_Actions)
 endfunction
@@ -16633,6 +17419,107 @@ function InitTrig_Throne_Protection_2 takes nothing returns nothing
 endfunction
 
 //===========================================================================
+// Trigger: GoblinProtection
+//===========================================================================
+function Trig_GoblinProtection_Actions takes nothing returns nothing
+    call SetUnitInvulnerable(gg_unit_o04M_1640, false)
+endfunction
+
+//===========================================================================
+function InitTrig_GoblinProtection takes nothing returns nothing
+    set gg_trg_GoblinProtection=CreateTrigger()
+    call TriggerRegisterUnitEvent(gg_trg_GoblinProtection, gg_unit_o05I_0261, EVENT_UNIT_DEATH)
+    call TriggerAddAction(gg_trg_GoblinProtection, function Trig_GoblinProtection_Actions)
+endfunction
+
+//===========================================================================
+// Trigger: NajzatarRemoval
+//===========================================================================
+function Trig_NajzatarRemoval_Conditions takes nothing returns boolean
+    if ( not ( GetOwningPlayer(GetTriggerUnit()) != Player(15) ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_NajzatarRemoval_Actions takes nothing returns nothing
+    call TriggerSleepAction(2)
+    call SetUnitOwner(gg_unit_n045_3377, Player(PLAYER_NEUTRAL_AGGRESSIVE), true)
+endfunction
+
+//===========================================================================
+function InitTrig_NajzatarRemoval takes nothing returns nothing
+    set gg_trg_NajzatarRemoval=CreateTrigger()
+    call TriggerRegisterUnitEvent(gg_trg_NajzatarRemoval, gg_unit_n045_3377, EVENT_UNIT_CHANGE_OWNER)
+    call TriggerAddCondition(gg_trg_NajzatarRemoval, Condition(function Trig_NajzatarRemoval_Conditions))
+    call TriggerAddAction(gg_trg_NajzatarRemoval, function Trig_NajzatarRemoval_Actions)
+endfunction
+
+//===========================================================================
+// Trigger: RemoveWorkerDraenei
+//===========================================================================
+function Trig_RemoveWorkerDraenei_Func002Func001C takes nothing returns boolean
+    if ( not ( IsUnitType(GetEnumUnit(), UNIT_TYPE_ANCIENT) == false ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_RemoveWorkerDraenei_Func002A takes nothing returns nothing
+    if ( Trig_RemoveWorkerDraenei_Func002Func001C() ) then
+        call KillUnit(GetEnumUnit())
+    else
+        call SetUnitOwner(GetEnumUnit(), Player(PLAYER_NEUTRAL_AGGRESSIVE), true)
+    endif
+endfunction
+
+function Trig_RemoveWorkerDraenei_Func003Func001C takes nothing returns boolean
+    if ( not ( IsUnitType(GetEnumUnit(), UNIT_TYPE_ANCIENT) == false ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_RemoveWorkerDraenei_Func003A takes nothing returns nothing
+    if ( Trig_RemoveWorkerDraenei_Func003Func001C() ) then
+        call KillUnit(GetEnumUnit())
+    else
+        call SetUnitOwner(GetEnumUnit(), Player(PLAYER_NEUTRAL_AGGRESSIVE), true)
+    endif
+endfunction
+
+function Trig_RemoveWorkerDraenei_Actions takes nothing returns nothing
+    call TriggerSleepAction(5.00)
+    call ForGroupBJ(GetUnitsInRectOfPlayer(gg_rct_InstanceOutland, Player(13)), function Trig_RemoveWorkerDraenei_Func002A)
+    call ForGroupBJ(GetUnitsInRectOfPlayer(gg_rct_InstanceOutland, Player(13)), function Trig_RemoveWorkerDraenei_Func003A)
+endfunction
+
+//===========================================================================
+function InitTrig_RemoveWorkerDraenei takes nothing returns nothing
+    set gg_trg_RemoveWorkerDraenei=CreateTrigger()
+    call TriggerRegisterUnitEvent(gg_trg_RemoveWorkerDraenei, gg_unit_o05E_1583, EVENT_UNIT_CHANGE_OWNER)
+    call TriggerAddAction(gg_trg_RemoveWorkerDraenei, function Trig_RemoveWorkerDraenei_Actions)
+endfunction
+
+//===========================================================================
+// Trigger: Turn22Pass
+//===========================================================================
+function Trig_Turn22Pass_Func001A takes nothing returns nothing
+    call SetPlayerTechResearchedSwap('R08I', 1, GetEnumPlayer())
+endfunction
+
+function Trig_Turn22Pass_Actions takes nothing returns nothing
+    call ForForce(GetPlayersAll(), function Trig_Turn22Pass_Func001A)
+endfunction
+
+//===========================================================================
+function InitTrig_Turn22Pass takes nothing returns nothing
+    set gg_trg_Turn22Pass=CreateTrigger()
+    call TriggerRegisterTimerEventSingle(gg_trg_Turn22Pass, 1320.00)
+    call TriggerAddAction(gg_trg_Turn22Pass, function Trig_Turn22Pass_Actions)
+endfunction
+
+//===========================================================================
 // Trigger: Tomb Unlock
 //===========================================================================
 function Trig_Tomb_Unlock_Actions takes nothing returns nothing
@@ -16651,7 +17538,102 @@ endfunction
 //===========================================================================
 // Trigger: RemoveKalimRocks
 //===========================================================================
+function Trig_RemoveKalimRocks_Func001A takes nothing returns nothing
+    call SetPlayerTechResearchedSwap('R08C', 1, GetEnumPlayer())
+endfunction
+
+function Trig_RemoveKalimRocks_Func002Func001C takes nothing returns boolean
+    if ( not ( GetDestructableTypeId(GetEnumDestructable()) == 'LTrc' ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_RemoveKalimRocks_Func002A takes nothing returns nothing
+    if ( Trig_RemoveKalimRocks_Func002Func001C() ) then
+        call RemoveDestructable(GetEnumDestructable())
+    else
+    endif
+endfunction
+
+function Trig_RemoveKalimRocks_Func003Func001C takes nothing returns boolean
+    if ( not ( GetDestructableTypeId(GetEnumDestructable()) == 'LTrc' ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_RemoveKalimRocks_Func003A takes nothing returns nothing
+    if ( Trig_RemoveKalimRocks_Func003Func001C() ) then
+        call RemoveDestructable(GetEnumDestructable())
+    else
+    endif
+endfunction
+
+function Trig_RemoveKalimRocks_Func004Func001C takes nothing returns boolean
+    if ( not ( GetDestructableTypeId(GetEnumDestructable()) == 'LTrc' ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_RemoveKalimRocks_Func004A takes nothing returns nothing
+    if ( Trig_RemoveKalimRocks_Func004Func001C() ) then
+        call RemoveDestructable(GetEnumDestructable())
+    else
+    endif
+endfunction
+
+function Trig_RemoveKalimRocks_Func005Func001C takes nothing returns boolean
+    if ( not ( GetDestructableTypeId(GetEnumDestructable()) == 'LTrc' ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_RemoveKalimRocks_Func005A takes nothing returns nothing
+    if ( Trig_RemoveKalimRocks_Func005Func001C() ) then
+        call RemoveDestructable(GetEnumDestructable())
+    else
+    endif
+endfunction
+
+function Trig_RemoveKalimRocks_Func006Func001C takes nothing returns boolean
+    if ( not ( GetDestructableTypeId(GetEnumDestructable()) == 'LTrc' ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_RemoveKalimRocks_Func006A takes nothing returns nothing
+    if ( Trig_RemoveKalimRocks_Func006Func001C() ) then
+        call RemoveDestructable(GetEnumDestructable())
+    else
+    endif
+endfunction
+
+function Trig_RemoveKalimRocks_Func007Func001C takes nothing returns boolean
+    if ( not ( GetDestructableTypeId(GetEnumDestructable()) == 'LTrc' ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_RemoveKalimRocks_Func007A takes nothing returns nothing
+    if ( Trig_RemoveKalimRocks_Func007Func001C() ) then
+        call RemoveDestructable(GetEnumDestructable())
+    else
+    endif
+endfunction
+
 function Trig_RemoveKalimRocks_Actions takes nothing returns nothing
+    call ForForce(GetPlayersAll(), function Trig_RemoveKalimRocks_Func001A)
+    call EnumDestructablesInRectAll(gg_rct_KaliRock1, function Trig_RemoveKalimRocks_Func002A)
+    call EnumDestructablesInRectAll(gg_rct_KaliRock2, function Trig_RemoveKalimRocks_Func003A)
+    call EnumDestructablesInRectAll(gg_rct_KaliRock3, function Trig_RemoveKalimRocks_Func004A)
+    call EnumDestructablesInRectAll(gg_rct_KaliRock4, function Trig_RemoveKalimRocks_Func005A)
+    call EnumDestructablesInRectAll(gg_rct_KaliRock5, function Trig_RemoveKalimRocks_Func006A)
+    call EnumDestructablesInRectAll(gg_rct_KaliRock6, function Trig_RemoveKalimRocks_Func007A)
 endfunction
 
 //===========================================================================
@@ -16665,13 +17647,16 @@ endfunction
 // Trigger: Book of Medivh retrieval
 //===========================================================================
 function Trig_Book_of_Medivh_retrieval_Conditions takes nothing returns boolean
-    if ( not ( GetHeroLevel(GetTriggerUnit()) >= 10 ) ) then
+    if ( not ( GetHeroLevel(GetTriggerUnit()) >= 15 ) ) then
         return false
     endif
     if ( not ( GetOwningPlayer(GetTriggerUnit()) != Player(23) ) ) then
         return false
     endif
     if ( not ( GetOwningPlayer(GetTriggerUnit()) != Player(3) ) ) then
+        return false
+    endif
+    if ( not ( GetOwningPlayer(GetTriggerUnit()) != Player(2) ) ) then
         return false
     endif
     return true
@@ -16687,6 +17672,7 @@ endfunction
 //===========================================================================
 function InitTrig_Book_of_Medivh_retrieval takes nothing returns nothing
     set gg_trg_Book_of_Medivh_retrieval=CreateTrigger()
+    call TriggerRegisterEnterRectSimple(gg_trg_Book_of_Medivh_retrieval, gg_rct_Book_Retrieval)
     call TriggerAddCondition(gg_trg_Book_of_Medivh_retrieval, Condition(function Trig_Book_of_Medivh_retrieval_Conditions))
     call TriggerAddAction(gg_trg_Book_of_Medivh_retrieval, function Trig_Book_of_Medivh_retrieval_Actions)
 endfunction
@@ -16694,16 +17680,21 @@ endfunction
 //===========================================================================
 // Trigger: Book of Medivh retrieval blue and red
 //===========================================================================
-function Trig_Book_of_Medivh_retrieval_blue_and_red_Func002001 takes nothing returns boolean
-    return ( GetOwningPlayer(GetTriggerUnit()) == Player(3) )
-endfunction
-
-function Trig_Book_of_Medivh_retrieval_blue_and_red_Func002002 takes nothing returns boolean
-    return ( GetOwningPlayer(GetTriggerUnit()) == Player(23) )
+function Trig_Book_of_Medivh_retrieval_blue_and_red_Func002C takes nothing returns boolean
+    if ( ( GetOwningPlayer(GetTriggerUnit()) == Player(3) ) ) then
+        return true
+    endif
+    if ( ( GetOwningPlayer(GetTriggerUnit()) == Player(23) ) ) then
+        return true
+    endif
+    if ( ( GetOwningPlayer(GetTriggerUnit()) == Player(2) ) ) then
+        return true
+    endif
+    return false
 endfunction
 
 function Trig_Book_of_Medivh_retrieval_blue_and_red_Conditions takes nothing returns boolean
-    if ( not GetBooleanOr((GetOwningPlayer(GetTriggerUnit()) == Player(3)), (GetOwningPlayer(GetTriggerUnit()) == Player(23))) ) then // INLINED!!
+    if ( not Trig_Book_of_Medivh_retrieval_blue_and_red_Func002C() ) then
         return false
     endif
     return true
@@ -16719,6 +17710,7 @@ endfunction
 //===========================================================================
 function InitTrig_Book_of_Medivh_retrieval_blue_and_red takes nothing returns nothing
     set gg_trg_Book_of_Medivh_retrieval_blue_and_red=CreateTrigger()
+    call TriggerRegisterEnterRectSimple(gg_trg_Book_of_Medivh_retrieval_blue_and_red, gg_rct_Book_Retrieval)
     call TriggerAddCondition(gg_trg_Book_of_Medivh_retrieval_blue_and_red, Condition(function Trig_Book_of_Medivh_retrieval_blue_and_red_Conditions))
     call TriggerAddAction(gg_trg_Book_of_Medivh_retrieval_blue_and_red, function Trig_Book_of_Medivh_retrieval_blue_and_red_Actions)
 endfunction
@@ -16745,6 +17737,7 @@ endfunction
 
 function Trig_Tomb_of_Sargeras_Open_Actions takes nothing returns nothing
     call WaygateActivateBJ(true, gg_unit_n032_0769)
+    call WaygateSetDestinationLocBJ(gg_unit_n032_0769, GetRectCenter(gg_rct_Sargeras_Exit))
     set udg_IllidanTomb=true
     call SetUnitAnimation(gg_unit_o01U_1388, "decay flesh")
     call DisplayTextToForce(GetPlayersAll(), "TRIGSTR_032")
@@ -16756,6 +17749,7 @@ endfunction
 function InitTrig_Tomb_of_Sargeras_Open takes nothing returns nothing
     set gg_trg_Tomb_of_Sargeras_Open=CreateTrigger()
     call DisableTrigger(gg_trg_Tomb_of_Sargeras_Open)
+    call TriggerRegisterEnterRectSimple(gg_trg_Tomb_of_Sargeras_Open, gg_rct_Sargeras_Entrance)
     call TriggerAddCondition(gg_trg_Tomb_of_Sargeras_Open, Condition(function Trig_Tomb_of_Sargeras_Open_Conditions))
     call TriggerAddAction(gg_trg_Tomb_of_Sargeras_Open, function Trig_Tomb_of_Sargeras_Open_Actions)
 endfunction
@@ -16838,12 +17832,16 @@ function Trig_Intros_Cinematic_Actions takes nothing returns nothing
     call CameraSetupApplyForPlayer(true, gg_cam_Forsaken1, Player(9), 0.00)
     call SetCameraFieldForPlayer(Player(19), CAMERA_FIELD_TARGET_DISTANCE, 2400.00, 1.00)
     call SetCameraFieldForPlayer(Player(8), CAMERA_FIELD_TARGET_DISTANCE, 2400.00, 1.00)
+    call AddWeatherEffectSaveLast(gg_rct_IllidanWeather, 'RAhr')
     call EnableWeatherEffect(GetLastCreatedWeatherEffect(), true)
     set udg_IllidanRain=GetLastCreatedWeatherEffect()
+    call AddWeatherEffectSaveLast(gg_rct_IllidanWeather, 'WNcw')
     call EnableWeatherEffect(GetLastCreatedWeatherEffect(), true)
     set udg_IllidanWind=GetLastCreatedWeatherEffect()
+    call AddWeatherEffectSaveLast(gg_rct_IllidanAmbiance2, 'RAhr')
     call EnableWeatherEffect(GetLastCreatedWeatherEffect(), true)
     set udg_IllidanRain2=GetLastCreatedWeatherEffect()
+    call AddWeatherEffectSaveLast(gg_rct_IllidanAmbiance2, 'WNcw')
     call EnableWeatherEffect(GetLastCreatedWeatherEffect(), true)
     set udg_IllidanWind3=GetLastCreatedWeatherEffect()
     call VolumeGroupSetVolumeBJ(SOUND_VOLUMEGROUP_MUSIC, 45.00)
@@ -16938,50 +17936,6 @@ function InitTrig_Intro_End takes nothing returns nothing
 endfunction
 
 //===========================================================================
-// Trigger: GilneasCinematic
-//===========================================================================
-function Trig_GilneasCinematic_Actions takes nothing returns nothing
-    if GetLocalPlayer() == udg_GilneasPlayer then
-    set udg_GilneasReal=0.00
-    endif
-    call CameraSetupApplyForPlayer(true, gg_cam_Gilneas2, udg_GilneasPlayer, 10.00)
-    call TriggerSleepAction(6.00)
-    call TriggerSleepAction(1.00)
-    call TriggerSleepAction(1.00)
-    call TriggerSleepAction(1.00)
-    call TriggerSleepAction(1.00)
-    call SetUnitOwner(gg_unit_u00W_2892, Player(PLAYER_NEUTRAL_AGGRESSIVE), true)
-    call TriggerSleepAction(3.00)
-    call RemoveUnit(gg_unit_hbot_3795)
-    call TransmissionFromUnitWithNameBJ(udg_GilneasGroup, gg_unit_Ewar_0424, "TRIGSTR_3682", null, "TRIGSTR_9454", bj_TIMETYPE_ADD, 0, false)
-    call TriggerSleepAction(3.00)
-    call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 3.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_GilneasReal)
-    call CameraSetupApplyForPlayer(true, gg_cam_Gilneas3, udg_GilneasPlayer, 0.00)
-    call CameraSetupApplyForPlayer(true, gg_cam_Gilneas4, udg_GilneasPlayer, 20.00)
-    call TriggerSleepAction(7.00)
-    call TransmissionFromUnitWithNameBJ(udg_GilneasGroup, gg_unit_Ewar_0424, "TRIGSTR_3194", null, "TRIGSTR_3203", bj_TIMETYPE_ADD, 0, false)
-    call TriggerSleepAction(3.00)
-    call TriggerSleepAction(10.00)
-    call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 3.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_GilneasReal)
-    call CameraSetupApplyForPlayer(true, gg_cam_Gilneas5, udg_GilneasPlayer, 0.00)
-    call CameraSetupApplyForPlayer(true, gg_cam_Gilneas6, udg_GilneasPlayer, 10.00)
-    call TransmissionFromUnitWithNameBJ(udg_GilneasGroup, gg_unit_Ewar_0424, "TRIGSTR_14793", null, "TRIGSTR_15222", bj_TIMETYPE_ADD, 0, false)
-    call TriggerSleepAction(10.00)
-    call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 3.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_GilneasReal)
-    call CameraSetupApplyForPlayer(true, gg_cam_Gilneas7, udg_GilneasPlayer, 0.00)
-    call CameraSetupApplyForPlayer(true, gg_cam_Gilneas8, udg_GilneasPlayer, 10.00)
-    call TriggerSleepAction(3.00)
-    call TransmissionFromUnitWithNameBJ(udg_GilneasGroup, gg_unit_Ewar_0424, "TRIGSTR_15223", null, "TRIGSTR_15764", bj_TIMETYPE_ADD, 0, false)
-endfunction
-
-//===========================================================================
-function InitTrig_GilneasCinematic takes nothing returns nothing
-    set gg_trg_GilneasCinematic=CreateTrigger()
-    call TriggerRegisterTimerEventSingle(gg_trg_GilneasCinematic, 2.00)
-    call TriggerAddAction(gg_trg_GilneasCinematic, function Trig_GilneasCinematic_Actions)
-endfunction
-
-//===========================================================================
 // Trigger: NagaCinematic
 //===========================================================================
 function Trig_NagaCinematic_Func013001 takes nothing returns boolean
@@ -17016,12 +17970,14 @@ function Trig_NagaCinematic_Actions takes nothing returns nothing
     call TriggerSleepAction(1.40)
     call TransmissionFromUnitWithNameBJ(udg_NagaGroup, gg_unit_Eill_0748, "TRIGSTR_16168", null, "TRIGSTR_16169", bj_TIMETYPE_ADD, 3.00, false)
     call SetUnitAnimationByIndex(udg_IllidanAnimation, 0)
+    call IssuePointOrderLocBJ(gg_unit_Eill_0748, "move", GetRectCenter(gg_rct_IllidanMovement1))
     call TriggerSleepAction(4.20)
     call SetUnitTimeScalePercent(gg_unit_Eill_0748, 15.00)
     call SetUnitAnimationByIndex(udg_IllidanAnimation, 1)
     call TriggerSleepAction(4.90)
     call TransmissionFromUnitWithNameBJ(udg_NagaGroup, gg_unit_Eill_0748, "TRIGSTR_16170", null, "TRIGSTR_16171", bj_TIMETYPE_ADD, 0, false)
     call TriggerSleepAction(6.00)
+    call CreateNUnitsAtLoc(1, 'h03C', Player(PLAYER_NEUTRAL_PASSIVE), GetRectCenter(gg_rct_LightningBolt2), bj_UNIT_FACING)
     set udg_LightningBoltAnim=GetLastCreatedUnit()
     call TriggerSleepAction(0.85)
     call KillUnit(udg_LightningBoltAnim)
@@ -17034,19 +17990,23 @@ function Trig_NagaCinematic_Actions takes nothing returns nothing
     call CameraSetupApplyForPlayer(true, gg_cam_Naga6, udg_NagaPlayer, 0.00)
     call CameraSetupApplyForPlayer(true, gg_cam_Naga7, udg_NagaPlayer, 20.00)
     call TriggerSleepAction(2.00)
+    call IssuePointOrderLocBJ(gg_unit_Eill_0748, "move", GetRectCenter(gg_rct_IllidanMovement2))
     call TriggerSleepAction(0.50)
     call SetUnitTimeScalePercent(gg_unit_Eill_0748, 40.00)
     call SetUnitAnimationByIndex(udg_IllidanAnimation, 2)
     call TriggerSleepAction(3.70)
+    call CreateNUnitsAtLoc(1, 'h03C', Player(PLAYER_NEUTRAL_PASSIVE), GetRectCenter(gg_rct_LightningBolt3), bj_UNIT_FACING)
     set udg_LightningBoltAnim=GetLastCreatedUnit()
     call TriggerSleepAction(0.65)
     call KillUnit(udg_LightningBoltAnim)
     call TriggerSleepAction(2.30)
+    call CreateNUnitsAtLoc(1, 'h043', Player(PLAYER_NEUTRAL_PASSIVE), GetRectCenter(gg_rct_WaveCrash), 136.00)
     set udg_LightningBoltAnim=GetLastCreatedUnit()
     call TriggerSleepAction(1.50)
     call SetUnitTimeScalePercent(gg_unit_Eill_0748, 50.00)
     call SetUnitAnimationByIndex(udg_IllidanAnimation, 0)
     call TriggerSleepAction(6.00)
+    call IssuePointOrderLocBJ(gg_unit_Eill_0748, "move", GetRectCenter(gg_rct_IllidanLast))
     call SetUnitTimeScalePercent(gg_unit_Eill_0748, 100.00)
     call KillUnit(udg_LightningBoltAnim)
 endfunction
@@ -17056,598 +18016,6 @@ function InitTrig_NagaCinematic takes nothing returns nothing
     set gg_trg_NagaCinematic=CreateTrigger()
     call TriggerRegisterTimerEventSingle(gg_trg_NagaCinematic, 2.20)
     call TriggerAddAction(gg_trg_NagaCinematic, function Trig_NagaCinematic_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: INI Gilneas
-//===========================================================================
-function Trig_INI_Gilneas_Actions takes nothing returns nothing
-    call GroupAddUnitSimple(gg_unit_h03V_3970, udg_GilneasPortals)
-    call GroupAddUnitSimple(gg_unit_h03V_3971, udg_GilneasPortals)
-    call GroupAddUnitSimple(gg_unit_h03V_3969, udg_GilneasPortals)
-    call GroupAddUnitSimple(gg_unit_h03V_3785, udg_GilneasPortals)
-    call GroupAddUnitSimple(gg_unit_h03V_3800, udg_GilneasPortals)
-    call GroupAddUnitSimple(gg_unit_h03V_3812, udg_GilneasPortals)
-    set udg_CurseConverter=gg_unit_u00W_2892
-    call GroupAddUnitSimple(gg_unit_h04E_3953, udg_TessGroup)
-    call GroupAddUnitSimple(gg_unit_h04E_2478, udg_TessGroup)
-    call GroupAddUnitSimple(gg_unit_h04E_3954, udg_TessGroup)
-    call GroupAddUnitSimple(gg_unit_Ewar_0424, udg_TessGroup)
-    call GroupAddUnitSimple(gg_unit_h04M_3955, udg_TessGroup)
-    call DestroyTrigger(GetTriggeringTrigger())
-endfunction
-
-//===========================================================================
-function InitTrig_INI_Gilneas takes nothing returns nothing
-    set gg_trg_INI_Gilneas=CreateTrigger()
-    call TriggerRegisterTimerEventSingle(gg_trg_INI_Gilneas, 1.00)
-    call TriggerAddAction(gg_trg_INI_Gilneas, function Trig_INI_Gilneas_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: GilneasHint1
-//===========================================================================
-function Trig_GilneasHint1_Actions takes nothing returns nothing
-    if GetLocalPlayer() == udg_GilneasPlayer then
-    call PlaySoundBJ(gg_snd_Hint)
-    endif
-    call DisplayTextToForce(bj_FORCE_PLAYER[20], "TRIGSTR_12696")
-    call DestroyTrigger(GetTriggeringTrigger())
-endfunction
-
-//===========================================================================
-function InitTrig_GilneasHint1 takes nothing returns nothing
-    set gg_trg_GilneasHint1=CreateTrigger()
-    call TriggerRegisterTimerEventSingle(gg_trg_GilneasHint1, 75.00)
-    call TriggerAddAction(gg_trg_GilneasHint1, function Trig_GilneasHint1_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: GilneasHint2 Copy
-//===========================================================================
-function Trig_GilneasHint2_Copy_Actions takes nothing returns nothing
-    if GetLocalPlayer() == udg_GilneasPlayer then
-    call PlaySoundBJ(gg_snd_Hint)
-    endif
-    call DisplayTextToForce(bj_FORCE_PLAYER[20], "TRIGSTR_15767")
-    call DestroyTrigger(GetTriggeringTrigger())
-endfunction
-
-//===========================================================================
-function InitTrig_GilneasHint2_Copy takes nothing returns nothing
-    set gg_trg_GilneasHint2_Copy=CreateTrigger()
-    call TriggerRegisterTimerEventSingle(gg_trg_GilneasHint2_Copy, 270.00)
-    call TriggerAddAction(gg_trg_GilneasHint2_Copy, function Trig_GilneasHint2_Copy_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: GilneasHint2
-//===========================================================================
-function Trig_GilneasHint2_Actions takes nothing returns nothing
-    if GetLocalPlayer() == udg_GilneasPlayer then
-    call PlaySoundBJ(gg_snd_Hint)
-    endif
-    call DisplayTextToForce(bj_FORCE_PLAYER[20], "TRIGSTR_15257")
-    call DestroyTrigger(GetTriggeringTrigger())
-endfunction
-
-//===========================================================================
-function InitTrig_GilneasHint2 takes nothing returns nothing
-    set gg_trg_GilneasHint2=CreateTrigger()
-    call TriggerRegisterTimerEventSingle(gg_trg_GilneasHint2, 185.00)
-    call TriggerAddAction(gg_trg_GilneasHint2, function Trig_GilneasHint2_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: DayTrigger
-//===========================================================================
-function Trig_DayTrigger_Actions takes nothing returns nothing
-    call SetUnitOwner(gg_unit_u00W_2892, Player(PLAYER_NEUTRAL_PASSIVE), true)
-endfunction
-
-//===========================================================================
-function InitTrig_DayTrigger takes nothing returns nothing
-    set gg_trg_DayTrigger=CreateTrigger()
-    call TriggerRegisterGameStateEventTimeOfDay(gg_trg_DayTrigger, EQUAL, 6.00)
-    call TriggerAddAction(gg_trg_DayTrigger, function Trig_DayTrigger_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: NightTrigger
-//===========================================================================
-function Trig_NightTrigger_Actions takes nothing returns nothing
-    call SetUnitOwner(gg_unit_u00W_2892, Player(PLAYER_NEUTRAL_AGGRESSIVE), true)
-endfunction
-
-//===========================================================================
-function InitTrig_NightTrigger takes nothing returns nothing
-    set gg_trg_NightTrigger=CreateTrigger()
-    call TriggerRegisterGameStateEventTimeOfDay(gg_trg_NightTrigger, EQUAL, 18.00)
-    call TriggerAddAction(gg_trg_NightTrigger, function Trig_NightTrigger_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: Curse Converstion
-//===========================================================================
-function Trig_Curse_Converstion_Conditions takes nothing returns boolean
-    if ( not ( GetSpellAbilityId() == 'A0MJ' ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_Curse_Converstion_Actions takes nothing returns nothing
-    set udg_PlagueConversion=GetSpellTargetUnit()
-    call SetUnitOwner(udg_PlagueConversion, Player(21), true)
-endfunction
-
-//===========================================================================
-function InitTrig_Curse_Converstion takes nothing returns nothing
-    set gg_trg_Curse_Converstion=CreateTrigger()
-    call TriggerRegisterUnitEvent(gg_trg_Curse_Converstion, gg_unit_u00W_2892, EVENT_UNIT_SPELL_EFFECT)
-    call TriggerAddCondition(gg_trg_Curse_Converstion, Condition(function Trig_Curse_Converstion_Conditions))
-    call TriggerAddAction(gg_trg_Curse_Converstion, function Trig_Curse_Converstion_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: Curse ConverstionShaman
-//===========================================================================
-function Trig_Curse_ConverstionShaman_Conditions takes nothing returns boolean
-    if ( not ( GetSpellAbilityId() == 'A0MU' ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_Curse_ConverstionShaman_Actions takes nothing returns nothing
-    set udg_PlagueConversion=GetSpellTargetUnit()
-    call SetUnitOwner(udg_PlagueConversion, Player(21), true)
-endfunction
-
-//===========================================================================
-function InitTrig_Curse_ConverstionShaman takes nothing returns nothing
-    set gg_trg_Curse_ConverstionShaman=CreateTrigger()
-    call TriggerRegisterAnyUnitEventBJ(gg_trg_Curse_ConverstionShaman, EVENT_PLAYER_UNIT_SPELL_EFFECT)
-    call TriggerAddCondition(gg_trg_Curse_ConverstionShaman, Condition(function Trig_Curse_ConverstionShaman_Conditions))
-    call TriggerAddAction(gg_trg_Curse_ConverstionShaman, function Trig_Curse_ConverstionShaman_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: InnerFight
-//===========================================================================
-function Trig_InnerFight_Conditions takes nothing returns boolean
-    if ( not ( GetEnteringUnit() == gg_unit_Ewar_0424 ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_InnerFight_Func004A takes nothing returns nothing
-endfunction
-
-function Trig_InnerFight_Func009Func001C takes nothing returns boolean
-    if ( not ( IsUnitAliveBJ(gg_unit_h057_3921) == true ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_InnerFight_Func009A takes nothing returns nothing
-    if ( Trig_InnerFight_Func009Func001C() ) then
-    else
-    endif
-endfunction
-
-function Trig_InnerFight_Actions takes nothing returns nothing
-    call ForGroupBJ(udg_WerewolfGroup, function Trig_InnerFight_Func004A)
-    call TriggerSleepAction(2)
-    if GetLocalPlayer() == udg_GilneasPlayer then
-    call PlaySoundBJ(gg_snd_FootmanYesAttack3)
-    endif
-    call ForGroupBJ(udg_WerewolfGroup, function Trig_InnerFight_Func009A)
-    call DestroyTrigger(GetTriggeringTrigger())
-endfunction
-
-//===========================================================================
-function InitTrig_InnerFight takes nothing returns nothing
-    set gg_trg_InnerFight=CreateTrigger()
-    call TriggerAddCondition(gg_trg_InnerFight, Condition(function Trig_InnerFight_Conditions))
-    call TriggerAddAction(gg_trg_InnerFight, function Trig_InnerFight_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: NightAttack1
-//===========================================================================
-function Trig_NightAttack1_Conditions takes nothing returns boolean
-    if ( not ( GetPlayerSlotState(Player(20)) == PLAYER_SLOT_STATE_PLAYING ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_NightAttack1_Func014Func001C takes nothing returns boolean
-    if ( not ( IsUnitAliveBJ(gg_unit_h057_3921) == true ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_NightAttack1_Func014A takes nothing returns nothing
-    if ( Trig_NightAttack1_Func014Func001C() ) then
-    else
-    endif
-endfunction
-
-function Trig_NightAttack1_Func031Func001C takes nothing returns boolean
-    if ( not ( IsUnitAliveBJ(gg_unit_h057_3921) == true ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_NightAttack1_Func031A takes nothing returns nothing
-    if ( Trig_NightAttack1_Func031Func001C() ) then
-    else
-    endif
-endfunction
-
-function Trig_NightAttack1_Func047Func001C takes nothing returns boolean
-    if ( not ( IsUnitAliveBJ(gg_unit_h057_3921) == true ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_NightAttack1_Func047A takes nothing returns nothing
-    if ( Trig_NightAttack1_Func047Func001C() ) then
-    else
-    endif
-endfunction
-
-function Trig_NightAttack1_Actions takes nothing returns nothing
-    if GetLocalPlayer() == udg_GilneasPlayer then
-    call PlaySoundBJ(gg_snd_WolfHowl)
-    endif
-    call TriggerSleepAction(1.00)
-    call ForGroupBJ(udg_WerewolfGroup, function Trig_NightAttack1_Func014A)
-    call DestroyGroup(udg_WerewolfGroup)
-    call TriggerSleepAction(59.00)
-    if GetLocalPlayer() == udg_GilneasPlayer then
-    call PlaySoundBJ(gg_snd_WolfHowl)
-    endif
-    call TriggerSleepAction(1.00)
-    call ForGroupBJ(udg_WerewolfGroup, function Trig_NightAttack1_Func031A)
-    call DestroyGroup(udg_WerewolfGroup)
-    call TriggerSleepAction(59.00)
-    if GetLocalPlayer() == udg_GilneasPlayer then
-    call PlaySoundBJ(gg_snd_WolfHowl)
-    endif
-    call TriggerSleepAction(1.00)
-    call ForGroupBJ(udg_WerewolfGroup, function Trig_NightAttack1_Func047A)
-    call DestroyGroup(udg_WerewolfGroup)
-endfunction
-
-//===========================================================================
-function InitTrig_NightAttack1 takes nothing returns nothing
-    set gg_trg_NightAttack1=CreateTrigger()
-    call TriggerRegisterTimerEventSingle(gg_trg_NightAttack1, 360.00)
-    call TriggerAddCondition(gg_trg_NightAttack1, Condition(function Trig_NightAttack1_Conditions))
-    call TriggerAddAction(gg_trg_NightAttack1, function Trig_NightAttack1_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: NightAttack2
-//===========================================================================
-function Trig_NightAttack2_Conditions takes nothing returns boolean
-    if ( not ( GetPlayerSlotState(Player(20)) == PLAYER_SLOT_STATE_PLAYING ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_NightAttack2_Func016Func001C takes nothing returns boolean
-    if ( not ( IsUnitAliveBJ(gg_unit_h057_3921) == true ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_NightAttack2_Func016A takes nothing returns nothing
-    if ( Trig_NightAttack2_Func016Func001C() ) then
-    else
-    endif
-endfunction
-
-function Trig_NightAttack2_Func020Func001C takes nothing returns boolean
-    if ( not ( IsUnitAliveBJ(gg_unit_h057_3921) == true ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_NightAttack2_Func020A takes nothing returns nothing
-    if ( Trig_NightAttack2_Func020Func001C() ) then
-    else
-    endif
-endfunction
-
-function Trig_NightAttack2_Func035Func001C takes nothing returns boolean
-    if ( not ( IsUnitAliveBJ(gg_unit_h057_3921) == true ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_NightAttack2_Func035A takes nothing returns nothing
-    if ( Trig_NightAttack2_Func035Func001C() ) then
-    else
-    endif
-endfunction
-
-function Trig_NightAttack2_Func039Func001C takes nothing returns boolean
-    if ( not ( IsUnitAliveBJ(gg_unit_h057_3921) == true ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_NightAttack2_Func039A takes nothing returns nothing
-    if ( Trig_NightAttack2_Func039Func001C() ) then
-    else
-    endif
-endfunction
-
-function Trig_NightAttack2_Func060Func001C takes nothing returns boolean
-    if ( not ( IsUnitAliveBJ(gg_unit_h057_3921) == true ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_NightAttack2_Func060A takes nothing returns nothing
-    if ( Trig_NightAttack2_Func060Func001C() ) then
-    else
-    endif
-endfunction
-
-function Trig_NightAttack2_Func064Func001C takes nothing returns boolean
-    if ( not ( IsUnitAliveBJ(gg_unit_h057_3921) == true ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_NightAttack2_Func064A takes nothing returns nothing
-    if ( Trig_NightAttack2_Func064Func001C() ) then
-    else
-    endif
-endfunction
-
-function Trig_NightAttack2_Actions takes nothing returns nothing
-    if GetLocalPlayer() == udg_GilneasPlayer then
-    call PlaySoundBJ(gg_snd_WolfHowl)
-    endif
-    call TriggerSleepAction(1.00)
-    call ForGroupBJ(udg_WerewolfGroup, function Trig_NightAttack2_Func016A)
-    call DestroyGroup(udg_WerewolfGroup)
-    call TriggerSleepAction(10.00)
-    call ForGroupBJ(udg_WerewolfGroup, function Trig_NightAttack2_Func020A)
-    call DestroyGroup(udg_WerewolfGroup)
-    call TriggerSleepAction(49.00)
-    if GetLocalPlayer() == udg_GilneasPlayer then
-    call PlaySoundBJ(gg_snd_WolfHowl)
-    endif
-    call TriggerSleepAction(1.00)
-    call ForGroupBJ(udg_WerewolfGroup, function Trig_NightAttack2_Func035A)
-    call DestroyGroup(udg_WerewolfGroup)
-    call TriggerSleepAction(10.00)
-    call ForGroupBJ(udg_WerewolfGroup, function Trig_NightAttack2_Func039A)
-    call DestroyGroup(udg_WerewolfGroup)
-    call TriggerSleepAction(49.00)
-    if GetLocalPlayer() == udg_GilneasPlayer then
-    call PlaySoundBJ(gg_snd_WolfHowl)
-    endif
-    call TriggerSleepAction(1.00)
-    call ForGroupBJ(udg_WerewolfGroup, function Trig_NightAttack2_Func060A)
-    call DestroyGroup(udg_WerewolfGroup)
-    call TriggerSleepAction(10.00)
-    call ForGroupBJ(udg_WerewolfGroup, function Trig_NightAttack2_Func064A)
-    call DestroyGroup(udg_WerewolfGroup)
-endfunction
-
-//===========================================================================
-function InitTrig_NightAttack2 takes nothing returns nothing
-    set gg_trg_NightAttack2=CreateTrigger()
-    call TriggerRegisterTimerEventSingle(gg_trg_NightAttack2, 840.00)
-    call TriggerAddCondition(gg_trg_NightAttack2, Condition(function Trig_NightAttack2_Conditions))
-    call TriggerAddAction(gg_trg_NightAttack2, function Trig_NightAttack2_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: Citizen spawns Copy
-//===========================================================================
-function Trig_Citizen_spawns_Copy_Func001Func002C takes nothing returns boolean
-    if ( ( GetUnitTypeId(GetTriggerUnit()) == 'h04G' ) ) then
-        return true
-    endif
-    if ( ( GetUnitTypeId(GetTriggerUnit()) == 'h059' ) ) then
-        return true
-    endif
-    if ( ( GetUnitTypeId(GetTriggerUnit()) == 'h04H' ) ) then
-        return true
-    endif
-    return false
-endfunction
-
-function Trig_Citizen_spawns_Copy_Func001C takes nothing returns boolean
-    if ( not ( GetOwningPlayer(GetTriggerUnit()) == Player(20) ) ) then
-        return false
-    endif
-    if ( not Trig_Citizen_spawns_Copy_Func001Func002C() ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_Citizen_spawns_Copy_Conditions takes nothing returns boolean
-    if ( not Trig_Citizen_spawns_Copy_Func001C() ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_Citizen_spawns_Copy_Func009Func001C takes nothing returns boolean
-    if ( not ( IsUnitAliveBJ(gg_unit_h057_3921) == true ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_Citizen_spawns_Copy_Func009A takes nothing returns nothing
-    if ( Trig_Citizen_spawns_Copy_Func009Func001C() ) then
-    else
-    endif
-endfunction
-
-function Trig_Citizen_spawns_Copy_Actions takes nothing returns nothing
-    set udg_CityBuildingPos=GetUnitLoc(GetDyingUnit())
-    call CreateNUnitsAtLoc(1, 'nvil', Player(PLAYER_NEUTRAL_PASSIVE), udg_CityBuildingPos, bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'nvlw', Player(PLAYER_NEUTRAL_PASSIVE), udg_CityBuildingPos, bj_UNIT_FACING)
-    call RemoveLocation(udg_CityBuildingPos)
-    call TriggerSleepAction(8.00)
-    call ForGroupBJ(udg_WerewolfGroup, function Trig_Citizen_spawns_Copy_Func009A)
-    call DestroyGroup(udg_WerewolfGroup)
-endfunction
-
-//===========================================================================
-function InitTrig_Citizen_spawns_Copy takes nothing returns nothing
-    set gg_trg_Citizen_spawns_Copy=CreateTrigger()
-    call TriggerRegisterAnyUnitEventBJ(gg_trg_Citizen_spawns_Copy, EVENT_PLAYER_UNIT_DEATH)
-    call TriggerAddCondition(gg_trg_Citizen_spawns_Copy, Condition(function Trig_Citizen_spawns_Copy_Conditions))
-    call TriggerAddAction(gg_trg_Citizen_spawns_Copy, function Trig_Citizen_spawns_Copy_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: Chapter2
-//===========================================================================
-function Trig_Chapter2_Conditions takes nothing returns boolean
-    if ( not ( GetEnteringUnit() == gg_unit_Ewar_0424 ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_Chapter2_Func013A takes nothing returns nothing
-    call KillUnit(GetEnumUnit())
-endfunction
-
-function Trig_Chapter2_Func015Func001C takes nothing returns boolean
-    if ( not ( IsUnitAliveBJ(gg_unit_h04I_0101) == true ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_Chapter2_Func015A takes nothing returns nothing
-    if ( Trig_Chapter2_Func015Func001C() ) then
-    else
-    endif
-endfunction
-
-function Trig_Chapter2_Actions takes nothing returns nothing
-    call DestroyTrigger(GetTriggeringTrigger())
-    set udg_TessPoint=GetUnitLoc(gg_unit_Ewar_0424)
-    if GetLocalPlayer() == udg_GilneasPlayer then
-    call PlayThematicMusicBJ("PursuitTheme")
-    endif
-    set udg_GilneasVision=GetLastCreatedFogModifier()
-    call SetUserControlForceOff(udg_GilneasGroup)
-    call ForceCinematicSubtitlesBJ(true)
-    call ShowInterfaceForceOff(udg_GilneasGroup, 0.50)
-    call ForGroupBJ(udg_WerewolfGroup, function Trig_Chapter2_Func013A)
-    call ForGroupBJ(udg_WerewolfGroup, function Trig_Chapter2_Func015A)
-    call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 3.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_GilneasReal)
-    call CameraSetupApplyForPlayer(true, gg_cam_GilneasChapter2Cam1, udg_GilneasPlayer, 0.00)
-    call CameraSetupApplyForPlayer(true, gg_cam_GilneasChapter2Cam2, udg_GilneasPlayer, 6.00)
-    call TriggerSleepAction(12.00)
-    call CameraSetupApplyForPlayer(true, gg_cam_GilneasChapter2Cam3, udg_GilneasPlayer, 0.00)
-    call CameraSetupApplyForPlayer(true, gg_cam_GilneasChapter2Cam4, udg_GilneasPlayer, 8.00)
-    call TriggerSleepAction(8.00)
-    if GetLocalPlayer() == udg_GilneasPlayer then
-    call BlzChangeMinimapTerrainTex("war3mapImported\\Map_Gilneas2.blp")
-    endif
-    call ShowInterfaceForceOn(udg_GilneasGroup, 0.00)
-    call ForceCinematicSubtitlesBJ(false)
-    call SetUserControlForceOn(udg_GilneasGroup)
-    call SetCameraFieldForPlayer(udg_GilneasPlayer, CAMERA_FIELD_TARGET_DISTANCE, 2400.00, 0.00)
-    call DestroyFogModifier(udg_GilneasVision)
-endfunction
-
-//===========================================================================
-function InitTrig_Chapter2 takes nothing returns nothing
-    set gg_trg_Chapter2=CreateTrigger()
-    call TriggerAddCondition(gg_trg_Chapter2, Condition(function Trig_Chapter2_Conditions))
-    call TriggerAddAction(gg_trg_Chapter2, function Trig_Chapter2_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: Chapter 3
-//===========================================================================
-function Trig_Chapter_3_Actions takes nothing returns nothing
-    call SetUnitInvulnerable(gg_unit_h00L_3084, false)
-    call SetUnitInvulnerable(gg_unit_h02K_3968, false)
-    set udg_GilneasPlayer=Player(20)
-    if GetLocalPlayer() == udg_GilneasPlayer then
-    call BlzChangeMinimapTerrainTex("war3mapImported\\Map_Gilneas3.blp")
-    endif
-    set udg_TessPoint=GetUnitLoc(gg_unit_Ewar_0424)
-    call SetUnitPositionLoc(gg_unit_Ewar_0424, udg_TessPoint)
-    call TriggerSleepAction(20.00)
-    call PingMinimapLocForForce(bj_FORCE_PLAYER[20], GetUnitLoc(gg_unit_Hhkl_1500), 1)
-    call TransmissionFromUnitWithNameBJ(udg_GilneasGroup, gg_unit_Ewar_0424, "TRIGSTR_4884", null, "TRIGSTR_4885", bj_TIMETYPE_ADD, 0, false)
-endfunction
-
-//===========================================================================
-function InitTrig_Chapter_3 takes nothing returns nothing
-    set gg_trg_Chapter_3=CreateTrigger()
-    call TriggerRegisterTimerEventSingle(gg_trg_Chapter_3, 900.00)
-    call TriggerAddAction(gg_trg_Chapter_3, function Trig_Chapter_3_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: GilneasCampaignVictory
-//===========================================================================
-function Trig_GilneasCampaignVictory_Conditions takes nothing returns boolean
-    if ( not ( GetItemTypeId(GetManipulatedItem()) == 'I00R' ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_GilneasCampaignVictory_Actions takes nothing returns nothing
-    set udg_TessPoint=GetUnitLoc(gg_unit_Ewar_0424)
-    call SetUnitPositionLoc(gg_unit_Ewar_0424, udg_TessPoint)
-    call RemoveUnit(gg_unit_u00W_2892)
-    call SetUnitOwner(gg_unit_Hhkl_1500, Player(20), true)
-    call SetUnitOwner(gg_unit_h02K_3968, Player(20), true)
-    call DisableTrigger(gg_trg_DayTrigger)
-    call DisableTrigger(gg_trg_Demon_Gate_INI)
-    call DisableTrigger(gg_trg_Citizen_spawns_Copy)
-    call SetCameraBoundsToRectForPlayerBJ(Player(20), GetEntireMapRect())
-    set udg_GilneasPlayer=Player(20)
-    if GetLocalPlayer() == udg_GilneasPlayer then
-    call BlzChangeMinimapTerrainTex("war3mapMap.blp")
-    endif
-    call DestroyTrigger(GetTriggeringTrigger())
-    call DisableTrigger(gg_trg_Chapter_3)
-endfunction
-
-//===========================================================================
-function InitTrig_GilneasCampaignVictory takes nothing returns nothing
-    set gg_trg_GilneasCampaignVictory=CreateTrigger()
-    call TriggerRegisterUnitEvent(gg_trg_GilneasCampaignVictory, gg_unit_Ewar_0424, EVENT_UNIT_PICKUP_ITEM)
-    call TriggerAddCondition(gg_trg_GilneasCampaignVictory, Condition(function Trig_GilneasCampaignVictory_Conditions))
-    call TriggerAddAction(gg_trg_GilneasCampaignVictory, function Trig_GilneasCampaignVictory_Actions)
 endfunction
 
 //===========================================================================
@@ -17662,6 +18030,7 @@ function Trig_IllidariINI_Func022002 takes nothing returns nothing
 endfunction
 
 function Trig_IllidariINI_Func023A takes nothing returns nothing
+    call WaygateActivateBJ(false, GetEnumUnit())
     call ShowUnitHide(GetEnumUnit())
 endfunction
 
@@ -17708,9 +18077,11 @@ function Trig_IllidariINI_Actions takes nothing returns nothing
     call KillDestructable(gg_dest_YT24_0267)
     call ForGroupBJ(udg_AetheneumPortals, function Trig_IllidariINI_Func022002)
     call ForGroupBJ(udg_AetheneumPortals, function Trig_IllidariINI_Func023A)
+    set udg_AethneumBaseUnits=GetUnitsInRectOfPlayer(gg_rct_AethneumCatacombs, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_AethneumBaseUnits, function Trig_IllidariINI_Func025002)
     call ForGroupBJ(udg_AethneumBaseUnits, function Trig_IllidariINI_Func026A)
     // Nazjatar
+    set udg_NazjatarBaseUnit=GetUnitsInRectOfPlayer(gg_rct_InstanceNazjatar, Player(PLAYER_NEUTRAL_PASSIVE))
     call ForGroupBJ(udg_NazjatarBaseUnit, function Trig_IllidariINI_Func029002)
     call ForGroupBJ(udg_NagaPortals, function Trig_IllidariINI_Func030002)
     call ForGroupBJ(udg_NagaPortals, function Trig_IllidariINI_Func031A)
@@ -17745,6 +18116,7 @@ endfunction
 //===========================================================================
 function InitTrig_ReachDiremaul takes nothing returns nothing
     set gg_trg_ReachDiremaul=CreateTrigger()
+    call TriggerRegisterEnterRectSimple(gg_trg_ReachDiremaul, gg_rct_FeralasAmbient1)
     call TriggerAddCondition(gg_trg_ReachDiremaul, Condition(function Trig_ReachDiremaul_Conditions))
     call TriggerAddAction(gg_trg_ReachDiremaul, function Trig_ReachDiremaul_Actions)
 endfunction
@@ -17761,6 +18133,7 @@ endfunction
 
 function Trig_Enter_Aetheneum_Actions takes nothing returns nothing
     call SetPlayerTechResearchedSwap('R05J', 1, Player(15))
+    call CreateFogModifierRectBJ(true, Player(15), FOG_OF_WAR_VISIBLE, gg_rct_AethneumCatacombs)
     set udg_IllidanVision=GetLastCreatedFogModifier()
     call SetUserControlForceOff(bj_FORCE_PLAYER[15])
     call ShowInterfaceForceOff(bj_FORCE_PLAYER[15], 0.50)
@@ -17771,10 +18144,13 @@ function Trig_Enter_Aetheneum_Actions takes nothing returns nothing
     if GetLocalPlayer() == udg_NagaPlayer then
     call PlaySoundBJ(gg_snd_QuestLog)
     endif
+    call SetCameraBoundsToRectForPlayerBJ(Player(15), gg_rct_AethneumCatacombs)
     if GetLocalPlayer() == udg_NagaPlayer then
     call BlzChangeMinimapTerrainTex("war3mapImported\\Minimap4.blp")
     endif
     call DisplayTextToForce(bj_FORCE_PLAYER[15], "TRIGSTR_242")
+    call SetUnitPositionLoc(GetTriggerUnit(), GetRectCenter(gg_rct_AethneumTombExit))
+    call IssuePointOrderLocBJ(gg_unit_Eill_0748, "move", GetRectCenter(gg_rct_IllidanMoveAethneum))
     call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 3.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_NagaReal)
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanAetheneum1, Player(15), 0)
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanAetheneum2, Player(15), 4.00)
@@ -17793,6 +18169,7 @@ endfunction
 //===========================================================================
 function InitTrig_Enter_Aetheneum takes nothing returns nothing
     set gg_trg_Enter_Aetheneum=CreateTrigger()
+    call TriggerRegisterEnterRectSimple(gg_trg_Enter_Aetheneum, gg_rct_AethneumLibraryEntrance)
     call TriggerAddCondition(gg_trg_Enter_Aetheneum, Condition(function Trig_Enter_Aetheneum_Conditions))
     call TriggerAddAction(gg_trg_Enter_Aetheneum, function Trig_Enter_Aetheneum_Actions)
 endfunction
@@ -17830,6 +18207,7 @@ endfunction
 //===========================================================================
 function InitTrig_ImmoltharIni takes nothing returns nothing
     set gg_trg_ImmoltharIni=CreateTrigger()
+    call TriggerRegisterEnterRectSimple(gg_trg_ImmoltharIni, gg_rct_ImmolFight)
     call TriggerAddAction(gg_trg_ImmoltharIni, function Trig_ImmoltharIni_Actions)
 endfunction
 
@@ -17878,14 +18256,33 @@ endfunction
 //===========================================================================
 // Trigger: ImmolDie
 //===========================================================================
+function Trig_ImmolDie_Func001002 takes nothing returns nothing
+    call RemoveDestructable(GetEnumDestructable())
+endfunction
+
+function Trig_ImmolDie_Func004001002 takes nothing returns boolean
+    return ( GetOwningPlayer(GetFilterUnit()) == Player(PLAYER_NEUTRAL_AGGRESSIVE) )
+endfunction
+
+function Trig_ImmolDie_Func004002 takes nothing returns nothing
+    call UnitDamageTargetBJ(gg_unit_h01A_0402, GetEnumUnit(), 88888.00, ATTACK_TYPE_CHAOS, DAMAGE_TYPE_NORMAL)
+endfunction
+
+function Trig_ImmolDie_Func006002 takes nothing returns nothing
+    call RemoveItem(GetEnumItem())
+endfunction
+
 function Trig_ImmolDie_Func034002 takes nothing returns nothing
     call ShowUnitShow(GetEnumUnit())
 endfunction
 
 function Trig_ImmolDie_Actions takes nothing returns nothing
+    call EnumDestructablesInRectAll(gg_rct_AethneumRemove, function Trig_ImmolDie_Func001002)
     call EnableTrigger(gg_trg_BoatEscape1)
     call TriggerSleepAction(6.00)
+    call ForGroupBJ(GetUnitsInRectMatching(gg_rct_AethneumCatacombs, Condition(function Trig_ImmolDie_Func004001002)), function Trig_ImmolDie_Func004002)
     call TriggerSleepAction(4.00)
+    call EnumItemsInRectBJ(gg_rct_AethneumCatacombs, function Trig_ImmolDie_Func006002)
     call TriggerSleepAction(4.00)
     if GetLocalPlayer() == udg_NagaPlayer then
     call BlzChangeMinimapTerrainTex("war3mapMap.blp")
@@ -17894,10 +18291,12 @@ function Trig_ImmolDie_Actions takes nothing returns nothing
     call ShowUnitShow(gg_unit_ncp2_3614)
     call SetUserControlForceOff(bj_FORCE_PLAYER[15])
     call ShowInterfaceForceOff(bj_FORCE_PLAYER[15], 0.50)
+    call SetCameraBoundsToRectForPlayerBJ(Player(15), gg_rct_IllidanCameraExit)
     call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 3.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_NagaReal)
     call PanCameraToTimedLocForPlayer(Player(15), CameraSetupGetDestPositionLoc(gg_cam_IllidanExit1), 0)
     call CreateFogModifierRectBJ(true, Player(15), FOG_OF_WAR_VISIBLE, GetCurrentCameraBoundsMapRectBJ())
     set udg_IllidanVision=GetLastCreatedFogModifier()
+    call CreateTextTagLocBJ("TRIGSTR_6019", GetRectCenter(gg_rct_IllidanExitText1), 0, 10, 100, 100, 100, 0)
     call ShowTextTagForceBJ(false, GetLastCreatedTextTag(), GetPlayersAll())
     call ShowTextTagForceBJ(true, GetLastCreatedTextTag(), bj_FORCE_PLAYER[15])
     set udg_IllidanFloatingText1=GetLastCreatedTextTag()
@@ -17912,6 +18311,7 @@ function Trig_ImmolDie_Actions takes nothing returns nothing
     call EnableTrigger(gg_trg_EscapeClick)
     call TriggerSleepAction(8.00)
     call ForGroupBJ(udg_AethneumBaseUnits, function Trig_ImmolDie_Func034002)
+    call SetUnitPositionLoc(gg_unit_Eill_0748, GetRectCenter(gg_rct_StartQuest2))
     call ShowInterfaceForceOn(bj_FORCE_PLAYER[15], 0.00)
     call SetUserControlForceOn(bj_FORCE_PLAYER[15])
     call DestroyTrigger(GetTriggeringTrigger())
@@ -17955,11 +18355,13 @@ function Trig_EscapeClick_Actions takes nothing returns nothing
     call DestroyTextTagBJ(udg_IllidanFloatingText3)
     call SetCameraBoundsToRectForPlayerBJ(Player(15), GetEntireMapRect())
     if ( Trig_EscapeClick_Func007C() ) then
+        call SetUnitPositionLoc(gg_unit_Eill_0748, GetRectCenter(gg_rct_AetheneumTombEntrance2))
         call PanCameraToTimedLocForPlayer(Player(15), CameraSetupGetDestPositionLoc(gg_cam_IllidanExit2), 0)
         call SetCameraFieldForPlayer(Player(15), CAMERA_FIELD_TARGET_DISTANCE, 2400.00, 0.00)
     else
     endif
     if ( Trig_EscapeClick_Func008C() ) then
+        call SetUnitPositionLoc(gg_unit_Eill_0748, GetRectCenter(gg_rct_IllidanExit2))
         call PanCameraToTimedLocForPlayer(Player(15), CameraSetupGetDestPositionLoc(gg_cam_IllidanExit3), 0)
         call SetCameraFieldForPlayer(Player(15), CAMERA_FIELD_TARGET_DISTANCE, 2400.00, 0.00)
     else
@@ -17970,7 +18372,9 @@ function Trig_EscapeClick_Actions takes nothing returns nothing
     call PlayThematicMusicBJ("IllidansTheme")
     endif
     call TriggerSleepAction(2)
+    call CreateFogModifierRectBJ(true, Player(15), FOG_OF_WAR_VISIBLE, gg_rct_IllidanDalaranInstance)
     set udg_IllidanVision=GetLastCreatedFogModifier()
+    call PingMinimapLocForForce(bj_FORCE_PLAYER[15], GetRectCenter(gg_rct_IllidanBoat1), 15.00)
     call DestroyTrigger(GetTriggeringTrigger())
 endfunction
 
@@ -18003,10 +18407,18 @@ function Trig_BoatEscape1_Actions takes nothing returns nothing
     endif
     call SetUnitOwner(udg_IllidanBoat, Player(15), true)
     call ShowUnitHide(gg_unit_Eill_0748)
+    call SetUnitPositionLoc(gg_unit_Eill_0748, GetRectCenter(gg_rct_IllidanBoat3))
     call IssueImmediateOrderBJ(gg_unit_Eill_0748, "stop")
+    call PanCameraToTimedLocForPlayer(Player(15), GetRectCenter(gg_rct_IllidanBoat1), 2.00)
     call TriggerSleepAction(1.00)
+    call PanCameraToTimedLocForPlayer(Player(15), GetRectCenter(gg_rct_IllidanBoat4), 10.00)
+    call IssuePointOrderLocBJ(udg_IllidanBoat, "move", GetRectCenter(gg_rct_IllidanBoat4))
     call TriggerSleepAction(5.00)
     call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 5.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_NagaReal)
+    call PanCameraToTimedLocForPlayer(Player(15), GetRectCenter(gg_rct_IllidanBoat2), 0)
+    call PanCameraToTimedLocForPlayer(Player(15), GetRectCenter(gg_rct_IllidanBoat3), 4.00)
+    call SetUnitPositionLoc(udg_IllidanBoat, GetRectCenter(gg_rct_IllidanBoat2))
+    call IssuePointOrderLocBJ(udg_IllidanBoat, "move", GetRectCenter(gg_rct_IllidanBoat3))
     call TriggerSleepAction(3.00)
     call KillUnit(udg_IllidanBoat)
     call TriggerSleepAction(1.50)
@@ -18020,6 +18432,7 @@ function Trig_BoatEscape1_Actions takes nothing returns nothing
     call PlaySoundBJ(gg_snd_QuestLog)
     endif
     call DisplayTextToForce(bj_FORCE_PLAYER[15], "TRIGSTR_5677")
+    call PingMinimapLocForForce(bj_FORCE_PLAYER[15], GetRectCenter(gg_rct_DalaranExit2), 15.00)
     call EnableTrigger(gg_trg_DalaranDungeonsIllidan)
     call DestroyTrigger(GetTriggeringTrigger())
 endfunction
@@ -18028,6 +18441,7 @@ endfunction
 function InitTrig_BoatEscape1 takes nothing returns nothing
     set gg_trg_BoatEscape1=CreateTrigger()
     call DisableTrigger(gg_trg_BoatEscape1)
+    call TriggerRegisterEnterRectSimple(gg_trg_BoatEscape1, gg_rct_IllidanBoat1)
     call TriggerAddCondition(gg_trg_BoatEscape1, Condition(function Trig_BoatEscape1_Conditions))
     call TriggerAddAction(gg_trg_BoatEscape1, function Trig_BoatEscape1_Actions)
 endfunction
@@ -18047,6 +18461,7 @@ function Trig_DalaranDungeonsIllidan_Actions takes nothing returns nothing
     call SetDestructableInvulnerableBJ(gg_dest_ATg1_11032, true)
     call SetDestructableInvulnerableBJ(gg_dest_DTg7_11246, true)
     call UnitRemoveAbilityBJ('A0LW', gg_unit_Eill_0748)
+    call CreateFogModifierRectBJ(true, Player(15), FOG_OF_WAR_VISIBLE, gg_rct_IllidanDalaranInstance)
     set udg_IllidanVision=GetLastCreatedFogModifier()
     call SetUserControlForceOff(bj_FORCE_PLAYER[15])
     call ShowInterfaceForceOff(bj_FORCE_PLAYER[15], 0.50)
@@ -18057,6 +18472,8 @@ function Trig_DalaranDungeonsIllidan_Actions takes nothing returns nothing
     if GetLocalPlayer() == udg_NagaPlayer then
     call BlzChangeMinimapTerrainTex("war3mapImported\\Minimap5.blp")
     endif
+    call SetUnitPositionLoc(GetTriggerUnit(), GetRectCenter(gg_rct_IllidanDala1))
+    call IssuePointOrderLocBJ(gg_unit_Eill_0748, "move", GetRectCenter(gg_rct_IllidanDala2))
     call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 3.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_NagaReal)
     call PanCameraToTimedLocForPlayer(GetOwningPlayer(GetTriggerUnit()), CameraSetupGetDestPositionLoc(gg_cam_IllidanDalaran1), 0)
     call PanCameraToTimedLocForPlayer(Player(15), CameraSetupGetDestPositionLoc(gg_cam_IllidanDalaran2), 5.00)
@@ -18065,18 +18482,24 @@ function Trig_DalaranDungeonsIllidan_Actions takes nothing returns nothing
     call TransmissionFromUnitWithNameBJ(bj_FORCE_PLAYER[15], gg_unit_Eill_0748, "TRIGSTR_5599", gg_snd_Cinematic5Illidan, "TRIGSTR_6018", bj_TIMETYPE_ADD, 0, false)
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanDala8, Player(15), 0)
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanDala9, Player(15), 3.00)
+    call SetCameraBoundsToRectForPlayerBJ(Player(15), gg_rct_IllidanDalaranInstance)
     call TriggerSleepAction(3.00)
     call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 3.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_NagaReal)
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanDalaran3, Player(15), 0)
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanDalaran4, Player(15), 15.00)
+    call IssuePointOrderLocBJ(gg_unit_Hamg_3616, "move", GetRectCenter(gg_rct_IllidanDala4))
     call TriggerSleepAction(3.00)
     call TransmissionFromUnitWithNameBJ(bj_FORCE_PLAYER[15], gg_unit_Hamg_3616, "TRIGSTR_6859", gg_snd_Archamge1, "TRIGSTR_6861", bj_TIMETYPE_ADD, 0, false)
+    call IssuePointOrderLocBJ(gg_unit_Eill_0748, "move", GetRectCenter(gg_rct_IllidanDala8))
     call TriggerSleepAction(2.20)
     call TransmissionFromUnitWithNameBJ(bj_FORCE_PLAYER[15], gg_unit_Eill_0748, "TRIGSTR_6021", gg_snd_IllidanWarcry1, "TRIGSTR_6857", bj_TIMETYPE_ADD, 0, false)
     call TriggerSleepAction(2.20)
+    call IssuePointOrderLocBJ(gg_unit_Hamg_3616, "move", GetRectCenter(gg_rct_IllidanDala5))
     call TransmissionFromUnitWithNameBJ(bj_FORCE_PLAYER[15], gg_unit_Hamg_3616, "TRIGSTR_6862", gg_snd_Archmage2, "TRIGSTR_6863", bj_TIMETYPE_ADD, 0, false)
     call TriggerSleepAction(3.50)
     call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 3.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_NagaReal)
+    call SetUnitPositionLoc(gg_unit_Hamg_3616, GetRectCenter(gg_rct_IllidanDala6))
+    call IssuePointOrderLocBJ(gg_unit_Hamg_3616, "move", GetRectCenter(gg_rct_IllidanDala7))
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanDala5, Player(15), 0)
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanDala6, Player(15), 3.00)
     call TriggerSleepAction(1.50)
@@ -18096,6 +18519,7 @@ function Trig_DalaranDungeonsIllidan_Actions takes nothing returns nothing
     endif
     call DisplayTextToForce(bj_FORCE_PLAYER[15], "TRIGSTR_6017")
     call TriggerSleepAction(3.00)
+    call CreateFogModifierRectBJ(true, Player(15), FOG_OF_WAR_VISIBLE, gg_rct_IllidanElementalSentry)
     set udg_IllidanVision=GetLastCreatedFogModifier()
     call SetUnitTimeScalePercent(gg_unit_n057_3617, 20.00)
     call EnableTrigger(gg_trg_DefenseFires)
@@ -18110,6 +18534,7 @@ endfunction
 function InitTrig_DalaranDungeonsIllidan takes nothing returns nothing
     set gg_trg_DalaranDungeonsIllidan=CreateTrigger()
     call DisableTrigger(gg_trg_DalaranDungeonsIllidan)
+    call TriggerRegisterEnterRectSimple(gg_trg_DalaranDungeonsIllidan, gg_rct_SkullOfGuldan)
     call TriggerAddCondition(gg_trg_DalaranDungeonsIllidan, Condition(function Trig_DalaranDungeonsIllidan_Conditions))
     call TriggerAddAction(gg_trg_DalaranDungeonsIllidan, function Trig_DalaranDungeonsIllidan_Actions)
 endfunction
@@ -18202,10 +18627,12 @@ function Trig_AcquiringtheSkull_Actions takes nothing returns nothing
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanDala9, Player(15), 7.00)
     call TriggerSleepAction(0.50)
     call SetUnitColor(udg_IllidanAnimation, PLAYER_COLOR_PURPLE)
+    call SetUnitFacingToFaceLocTimed(udg_IllidanAnimation, GetRectCenter(gg_rct_IllidanLook), 0)
     call TransmissionFromUnitWithNameBJ(bj_FORCE_PLAYER[15], udg_IllidanAnimation, "TRIGSTR_8882", gg_snd_N06Illidan17, "TRIGSTR_14591", bj_TIMETYPE_ADD, 0, false)
     call TriggerSleepAction(1.20)
     call IssueImmediateOrderBJ(udg_IllidanAnimation, "metamorphosis")
     call TriggerSleepAction(5.30)
+    call CreateFogModifierRectBJ(true, Player(15), FOG_OF_WAR_VISIBLE, gg_rct_InstanceNazjatar)
     set udg_IllidanVision=GetLastCreatedFogModifier()
     call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 3.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_NagaReal)
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanNazjatar1, Player(15), 0)
@@ -18214,15 +18641,19 @@ function Trig_AcquiringtheSkull_Actions takes nothing returns nothing
     call TransmissionFromUnitWithNameBJ(bj_FORCE_PLAYER[15], udg_IllidanAnimation, "TRIGSTR_15734", gg_snd_DemonHunterMorphedReady1, "TRIGSTR_15749", bj_TIMETYPE_ADD, 0, false)
     call TriggerSleepAction(5.00)
     call DestroyFogModifier(udg_IllidanVision)
+    call CreateFogModifierRectBJ(true, Player(15), FOG_OF_WAR_VISIBLE, gg_rct_LordamereLakeAmbient)
     set udg_IllidanVision=GetLastCreatedFogModifier()
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanDalaExit1, Player(15), 0)
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanDalaExit2, Player(15), 4.00)
+    call SetUnitPositionLoc(udg_IllidanAnimation, GetRectCenter(gg_rct_StartQuest3))
     call TriggerSleepAction(1.00)
+    call SetUnitPositionLoc(udg_IllidanAnimation, GetRectCenter(gg_rct_IllidanDalaExit))
     call TriggerSleepAction(2.00)
     call ShowInterfaceForceOn(bj_FORCE_PLAYER[15], 0.00)
     call ForceCinematicSubtitlesBJ(false)
     call SetUserControlForceOn(bj_FORCE_PLAYER[15])
     call SetCameraFieldForPlayer(Player(15), CAMERA_FIELD_TARGET_DISTANCE, 2400.00, 0.00)
+    call PingMinimapLocForForce(bj_FORCE_PLAYER[15], GetRectCenter(gg_rct_MaelstromAmbient), 15.00)
     call DestroyFogModifier(udg_IllidanVision)
     call EnableTrigger(gg_trg_GetToMaelstrom)
     if GetLocalPlayer() == udg_NagaPlayer then
@@ -18258,6 +18689,7 @@ endfunction
 //===========================================================================
 function InitTrig_UnlockIllidanChange takes nothing returns nothing
     set gg_trg_UnlockIllidanChange=CreateTrigger()
+    call TriggerRegisterEnterRectSimple(gg_trg_UnlockIllidanChange, gg_rct_UnlockIllidanSwitch)
     call TriggerAddCondition(gg_trg_UnlockIllidanChange, Condition(function Trig_UnlockIllidanChange_Conditions))
     call TriggerAddAction(gg_trg_UnlockIllidanChange, function Trig_UnlockIllidanChange_Actions)
 endfunction
@@ -18281,6 +18713,7 @@ endfunction
 function InitTrig_IllidanChange takes nothing returns nothing
     set gg_trg_IllidanChange=CreateTrigger()
     call DisableTrigger(gg_trg_IllidanChange)
+    call TriggerRegisterEnterRectSimple(gg_trg_IllidanChange, gg_rct_IllidanDalaranInstance)
     call TriggerAddCondition(gg_trg_IllidanChange, Condition(function Trig_IllidanChange_Conditions))
     call TriggerAddAction(gg_trg_IllidanChange, function Trig_IllidanChange_Actions)
 endfunction
@@ -18318,6 +18751,7 @@ endfunction
 function InitTrig_GetToMaelstrom takes nothing returns nothing
     set gg_trg_GetToMaelstrom=CreateTrigger()
     call DisableTrigger(gg_trg_GetToMaelstrom)
+    call TriggerRegisterEnterRectSimple(gg_trg_GetToMaelstrom, gg_rct_MaelstromAmbient)
     call TriggerAddCondition(gg_trg_GetToMaelstrom, Condition(function Trig_GetToMaelstrom_Conditions))
     call TriggerAddAction(gg_trg_GetToMaelstrom, function Trig_GetToMaelstrom_Actions)
 endfunction
@@ -18388,14 +18822,19 @@ function Trig_NagaBaseUnlock_Actions takes nothing returns nothing
     if GetLocalPlayer() == udg_NagaPlayer then
     call PlayThematicMusicBJ("war3mapImported\\IllidanCinematicEnd.mp3")
     endif
+    call CreateFogModifierRectBJ(true, Player(15), FOG_OF_WAR_VISIBLE, gg_rct_InstanceNazjatar)
     set udg_IllidanVision=GetLastCreatedFogModifier()
     call SetUserControlForceOff(bj_FORCE_PLAYER[15])
     call ShowInterfaceForceOff(bj_FORCE_PLAYER[15], 0.50)
     call ForceCinematicSubtitlesBJ(true)
+    call SetUnitPositionLoc(udg_IllidanAnimation, GetRectCenter(gg_rct_IllidanNaga1))
     call CinematicFadeBJ(bj_CINEFADETYPE_FADEIN, 3.00, "ReplaceableTextures\\CameraMasks\\Black_mask.blp", 0, 0, 0, udg_NagaReal)
+    call IssuePointOrderLocBJ(udg_IllidanAnimation, "move", GetRectCenter(gg_rct_IllidanNaga2))
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanNaga1, Player(15), 0)
     call CameraSetupApplyForPlayer(true, gg_cam_IllidanNaga2, Player(15), 9.00)
     call TriggerSleepAction(3.00)
+    call IssuePointOrderLocBJ(gg_unit_nmyr_2375, "move", GetRectCenter(gg_rct_IllidanNaga1))
+    call IssuePointOrderLocBJ(gg_unit_nmyr_2386, "move", GetRectCenter(gg_rct_IllidanNaga3))
     call TransmissionFromUnitWithNameBJ(udg_NagaGroup, udg_IllidanAnimation, "TRIGSTR_8830", null, "TRIGSTR_8832", bj_TIMETYPE_ADD, 0, false)
     call TriggerSleepAction(5.50)
     call TransmissionFromUnitWithNameBJ(udg_NagaGroup, udg_IllidanAnimation, "TRIGSTR_8833", null, "TRIGSTR_8834", bj_TIMETYPE_ADD, 0, false)
@@ -18403,6 +18842,7 @@ function Trig_NagaBaseUnlock_Actions takes nothing returns nothing
     call SetUnitAnimationByIndex(udg_IllidanAnimation, 1)
     call TriggerSleepAction(6.10)
     call SetUnitAnimationByIndex(udg_IllidanAnimation, 0)
+    call SetUnitFacingToFaceLocTimed(udg_IllidanAnimation, GetRectCenter(gg_rct_IllidanNaga1), 3.00)
     call TransmissionFromUnitWithNameBJ(udg_NagaGroup, udg_IllidanAnimation, "TRIGSTR_8835", null, "TRIGSTR_10106", bj_TIMETYPE_ADD, 0, false)
     call TriggerSleepAction(8.50)
     call ShowInterfaceForceOn(bj_FORCE_PLAYER[15], 0.00)
@@ -18416,6 +18856,8 @@ function Trig_NagaBaseUnlock_Actions takes nothing returns nothing
     endif
     call UnitRemoveAbilityBJ('A0KY', udg_IllidanAnimation)
     call TriggerSleepAction(1.00)
+    call SetUnitPositionLoc(udg_IllidanAnimation, GetRectCenter(gg_rct_NazjatarHidden))
+    call SetUnitPositionLoc(udg_IllidanAnimation, GetRectCenter(gg_rct_IllidanNaga1))
     call DestroyTrigger(GetTriggeringTrigger())
 endfunction
 
@@ -18439,6 +18881,18 @@ function InitTrig_IllidariPath takes nothing returns nothing
     set gg_trg_IllidariPath=CreateTrigger()
     call TriggerRegisterUnitEvent(gg_trg_IllidariPath, gg_unit_o01I_1505, EVENT_UNIT_RESEARCH_FINISH)
     call TriggerAddAction(gg_trg_IllidariPath, function Trig_IllidariPath_Actions)
+endfunction
+
+//===========================================================================
+// Trigger: Untitled Trigger 001
+//===========================================================================
+function Trig_Untitled_Trigger_001_Actions takes nothing returns nothing
+endfunction
+
+//===========================================================================
+function InitTrig_Untitled_Trigger_001 takes nothing returns nothing
+    set gg_trg_Untitled_Trigger_001=CreateTrigger()
+    call TriggerAddAction(gg_trg_Untitled_Trigger_001, function Trig_Untitled_Trigger_001_Actions)
 endfunction
 
 //===========================================================================
@@ -18468,16 +18922,24 @@ endfunction
 //===========================================================================
 // Trigger: ObsPlayer14
 //===========================================================================
+function Trig_ObsPlayer14_Conditions takes nothing returns boolean
+    if ( not ( GetPlayerName(Player(21)) != "Lordsebas#11619" ) ) then
+        return false
+    endif
+    return true
+endfunction
+
 function Trig_ObsPlayer14_Actions takes nothing returns nothing
-    call SetCameraFieldForPlayer(Player(13), CAMERA_FIELD_TARGET_DISTANCE, 2600.00, 3.00)
-    call SetPlayerState(Player(13), PLAYER_STATE_OBSERVER, 1)
-    call CreateFogModifierRectBJ(true, Player(13), FOG_OF_WAR_VISIBLE, GetPlayableMapRect())
+    call SetCameraFieldForPlayer(Player(21), CAMERA_FIELD_TARGET_DISTANCE, 2600.00, 3.00)
+    call SetPlayerState(Player(21), PLAYER_STATE_OBSERVER, 1)
+    call CreateFogModifierRectBJ(true, Player(21), FOG_OF_WAR_VISIBLE, GetPlayableMapRect())
 endfunction
 
 //===========================================================================
 function InitTrig_ObsPlayer14 takes nothing returns nothing
     set gg_trg_ObsPlayer14=CreateTrigger()
-    call TriggerRegisterPlayerChatEvent(gg_trg_ObsPlayer14, Player(13), "-obs", true)
+    call TriggerRegisterTimerEventSingle(gg_trg_ObsPlayer14, 63.00)
+    call TriggerAddCondition(gg_trg_ObsPlayer14, Condition(function Trig_ObsPlayer14_Conditions))
     call TriggerAddAction(gg_trg_ObsPlayer14, function Trig_ObsPlayer14_Actions)
 endfunction
 
@@ -18496,13 +18958,6 @@ function Trig_GUIUnitReference2_Actions takes nothing returns nothing
     call KillUnit(gg_unit_Nsjs_1887)
     call KillUnit(gg_unit_n045_3377)
     call KillUnit(gg_unit_n05A_2845)
-    call KillUnit(gg_unit_Hgam_1450)
-    call KillUnit(gg_unit_h04I_0101)
-    call KillUnit(gg_unit_h057_3921)
-    call KillUnit(gg_unit_Ewar_0424)
-    call KillUnit(gg_unit_Hpb2_3787)
-    call KillUnit(gg_unit_Hhkl_1500)
-    call KillUnit(gg_unit_Hgam_1450)
     call KillUnit(gg_unit_n021_2624)
     call KillUnit(gg_unit_ngnv_0586)
     call KillUnit(gg_unit_nogl_0621)
@@ -18510,7 +18965,6 @@ function Trig_GUIUnitReference2_Actions takes nothing returns nothing
     call KillUnit(gg_unit_n074_1565)
     call KillUnit(gg_unit_hmtm_2086)
     call KillUnit(gg_unit_N089_1494)
-    call KillUnit(gg_unit_o00G_1521)
     call KillUnit(gg_unit_o04E_1559)
     call KillUnit(gg_unit_nrzm_0113)
     call KillUnit(gg_unit_nmrm_3219)
@@ -18534,10 +18988,24 @@ function Trig_GUIUnitReference2_Actions takes nothing returns nothing
     call KillUnit(gg_unit_n07F_1001)
     call KillUnit(gg_unit_h03V_0183)
     call KillUnit(gg_unit_nadr_0658)
+    call KillUnit(gg_unit_o05E_1583)
+    call KillUnit(gg_unit_h09W_3303)
+    call KillUnit(gg_unit_o051_3356)
+    call KillUnit(gg_unit_o055_3337)
+    call KillUnit(gg_unit_o054_3338)
+    call KillUnit(gg_unit_o02P_2291)
+    call KillUnit(gg_unit_h09U_3138)
+    call KillUnit(gg_unit_u01M_0484)
+    call KillUnit(gg_unit_n0BU_0220)
+    call KillUnit(gg_unit_h03V_3538)
+    call KillUnit(gg_unit_h03V_3539)
+    call KillUnit(gg_unit_ngol_3272)
+    call KillUnit(gg_unit_h046_0409)
     call KillDestructable(gg_dest_OTsp_35728)
     call KillDestructable(gg_dest_OTsp_35727)
     call KillDestructable(gg_dest_OTsp_19293)
     call KillDestructable(gg_dest_OTsp_35732)
+    call KillDestructable(gg_dest_B023_23223)
 endfunction
 
 //===========================================================================
@@ -18713,41 +19181,169 @@ function InitTrig_Reset_Copy takes nothing returns nothing
 endfunction
 
 //===========================================================================
-// Trigger: info
+// Trigger: TaxeBuildingStop
 //===========================================================================
-function Trig_info_Actions takes nothing returns nothing
-    set udg_tempTrigPlayer=GetTriggerPlayer()
-    call DisplayTextToForce(GetForceOfPlayer(udg_tempTrigPlayer), "TRIGSTR_008")
+function Trig_TaxeBuildingStop_Func004C takes nothing returns boolean
+    if ( not ( RectContainsUnit(gg_rct_HeartglenTaxe, GetConstructingStructure()) == false ) ) then
+        return false
+    endif
+    if ( not ( RectContainsUnit(gg_rct_StrahnbradTaxe, GetConstructingStructure()) == false ) ) then
+        return false
+    endif
+    if ( not ( RectContainsUnit(gg_rct_AndhoralTaxe, GetConstructingStructure()) == false ) ) then
+        return false
+    endif
+    if ( not ( RectContainsUnit(gg_rct_TirisfalTaxe, GetConstructingStructure()) == false ) ) then
+        return false
+    endif
+    if ( not ( RectContainsUnit(gg_rct_HavenshireTaxe, GetConstructingStructure()) == false ) ) then
+        return false
+    endif
+    if ( not ( RectContainsUnit(gg_rct_CorinTaxe, GetConstructingStructure()) == false ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_TaxeBuildingStop_Conditions takes nothing returns boolean
+    if ( not ( GetUnitTypeId(GetConstructingStructure()) == 'h097' ) ) then
+        return false
+    endif
+    if ( not Trig_TaxeBuildingStop_Func004C() ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_TaxeBuildingStop_Actions takes nothing returns nothing
+    call KillUnit(GetConstructingStructure())
 endfunction
 
 //===========================================================================
-function InitTrig_info takes nothing returns nothing
-    set gg_trg_info=CreateTrigger()
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(0), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(1), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(2), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(3), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(4), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(5), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(6), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(7), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(8), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(9), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(10), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(11), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(12), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(13), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(14), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(15), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(16), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(17), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(18), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(19), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(20), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(21), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(22), "-info", true)
-    call TriggerRegisterPlayerChatEvent(gg_trg_info, Player(23), "-info", true)
-    call TriggerAddAction(gg_trg_info, function Trig_info_Actions)
+function InitTrig_TaxeBuildingStop takes nothing returns nothing
+    set gg_trg_TaxeBuildingStop=CreateTrigger()
+    call TriggerRegisterAnyUnitEventBJ(gg_trg_TaxeBuildingStop, EVENT_PLAYER_UNIT_CONSTRUCT_START)
+    call TriggerAddCondition(gg_trg_TaxeBuildingStop, Condition(function Trig_TaxeBuildingStop_Conditions))
+    call TriggerAddAction(gg_trg_TaxeBuildingStop, function Trig_TaxeBuildingStop_Actions)
+endfunction
+
+//===========================================================================
+// Trigger: AddCastlesToTaxe
+//===========================================================================
+function Trig_AddCastlesToTaxe_Conditions takes nothing returns boolean
+    if ( not ( GetUnitTypeId(GetTriggerUnit()) == 'h09N' ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_AddCastlesToTaxe_Actions takes nothing returns nothing
+    call GroupAddUnitSimple(GetTriggerUnit(), udg_GroupTaxe)
+endfunction
+
+//===========================================================================
+function InitTrig_AddCastlesToTaxe takes nothing returns nothing
+    set gg_trg_AddCastlesToTaxe=CreateTrigger()
+    call TriggerRegisterAnyUnitEventBJ(gg_trg_AddCastlesToTaxe, EVENT_PLAYER_UNIT_UPGRADE_FINISH)
+    call TriggerAddCondition(gg_trg_AddCastlesToTaxe, Condition(function Trig_AddCastlesToTaxe_Conditions))
+    call TriggerAddAction(gg_trg_AddCastlesToTaxe, function Trig_AddCastlesToTaxe_Actions)
+endfunction
+
+//===========================================================================
+// Trigger: TaxeIncome
+//===========================================================================
+function Trig_TaxeIncome_Func002Func001Func002Func001Func001Func001Func001C takes nothing returns boolean
+    if ( not ( GetUnitTypeId(GetEnumUnit()) == 'h09Q' ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_TaxeIncome_Func002Func001Func002Func001Func001Func001C takes nothing returns boolean
+    if ( not ( GetUnitTypeId(GetEnumUnit()) == 'h09O' ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_TaxeIncome_Func002Func001Func002Func001Func001C takes nothing returns boolean
+    if ( not ( GetUnitTypeId(GetEnumUnit()) == 'h09P' ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_TaxeIncome_Func002Func001Func002Func001C takes nothing returns boolean
+    if ( not ( GetUnitTypeId(GetEnumUnit()) == 'h09N' ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_TaxeIncome_Func002Func001Func002C takes nothing returns boolean
+    if ( not ( IsUnitAliveBJ(GetEnumUnit()) == true ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_TaxeIncome_Func002Func001A takes nothing returns nothing
+    set udg_TaxeIntAmount=0
+    if ( Trig_TaxeIncome_Func002Func001Func002C() ) then
+        if ( Trig_TaxeIncome_Func002Func001Func002Func001C() ) then
+            set udg_TaxeIntAmount=15
+        else
+            if ( Trig_TaxeIncome_Func002Func001Func002Func001Func001C() ) then
+                set udg_TaxeIntAmount=60
+            else
+                if ( Trig_TaxeIncome_Func002Func001Func002Func001Func001Func001C() ) then
+                    set udg_TaxeIntAmount=80
+                else
+                    if ( Trig_TaxeIncome_Func002Func001Func002Func001Func001Func001Func001C() ) then
+                        set udg_TaxeIntAmount=100
+                    else
+                    endif
+                endif
+            endif
+        endif
+        //  
+        call AdjustPlayerStateBJ(udg_TaxeIntAmount, Player(12), PLAYER_STATE_RESOURCE_GOLD)
+        //  
+        set udg_StringTaxe=""
+        if GetLocalPlayer() == udg_ScarletPlayer then
+        set udg_StringTaxe=( "+" + I2S(udg_TaxeIntAmount) )
+        endif
+        call CreateTextTagUnitBJ(udg_StringTaxe, GetEnumUnit(), 0, 10.50, 100.00, 80.00, 0.00, 0)
+        call SetTextTagLifespanBJ(GetLastCreatedTextTag(), 3.00)
+        call SetTextTagFadepointBJ(GetLastCreatedTextTag(), 2.00)
+        call SetTextTagVelocityBJ(GetLastCreatedTextTag(), 64.00, 90.00)
+        call SetTextTagPermanentBJ(GetLastCreatedTextTag(), false)
+        set udg_StringTaxe=""
+        set udg_TaxeIntAmount=0
+    else
+        call GroupRemoveUnitSimple(GetEnumUnit(), udg_GroupTaxe)
+    endif
+endfunction
+
+function Trig_TaxeIncome_Func002C takes nothing returns boolean
+    if ( not ( CountUnitsInGroup(udg_GroupTaxe) > 0 ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_TaxeIncome_Actions takes nothing returns nothing
+    if ( Trig_TaxeIncome_Func002C() ) then
+        call ForGroupBJ(udg_GroupTaxe, function Trig_TaxeIncome_Func002Func001A)
+    else
+    endif
+endfunction
+
+//===========================================================================
+function InitTrig_TaxeIncome takes nothing returns nothing
+    set gg_trg_TaxeIncome=CreateTrigger()
+    call TriggerRegisterTimerEventPeriodic(gg_trg_TaxeIncome, 60.00)
+    call TriggerAddAction(gg_trg_TaxeIncome, function Trig_TaxeIncome_Actions)
 endfunction
 
 //===========================================================================
@@ -18758,6 +19354,7 @@ function Trig_MonasteryCollapse_Func002A takes nothing returns nothing
 endfunction
 
 function Trig_MonasteryCollapse_Actions takes nothing returns nothing
+    set udg_TempGroup=GetUnitsInRectAll(gg_rct_ScarletAmbient)
     call ForGroupBJ(udg_TempGroup, function Trig_MonasteryCollapse_Func002A)
     call DestroyGroup(udg_TempGroup)
 endfunction
@@ -18780,8 +19377,7 @@ function Trig_ArtilleryFireWarning_Conditions takes nothing returns boolean
 endfunction
 
 function Trig_ArtilleryFireWarning_Actions takes nothing returns nothing
-    call PlaySoundBJ(gg_snd_NukeTheme2)
-    call PingMinimapLocForForce(GetPlayersAll(), GetOrderPointLoc(), 20.00)
+    call PlaySoundBJ(gg_snd_NuclearLaunchDetected)
     call CreateNUnitsAtLoc(1, 'h06L', Player(8), GetOrderPointLoc(), bj_UNIT_FACING)
     call UnitApplyTimedLifeBJ(25.00, 'BTLF', GetLastCreatedUnit())
 endfunction
@@ -18893,10 +19489,13 @@ function Trig_TraderTrain_Actions takes nothing returns nothing
     call GroupAddUnitSimple(GetTrainedUnit(), udg_TradersGroup)
     set udg_TraderRandomInt=GetRandomInt(1, 3)
     if ( Trig_TraderTrain_Func005C() ) then
+        call IssuePointOrderLocBJ(GetTrainedUnit(), "patrol", GetRectCenter(gg_rct_Trader1))
     else
         if ( Trig_TraderTrain_Func005Func002C() ) then
+            call IssuePointOrderLocBJ(GetTrainedUnit(), "patrol", GetRectCenter(gg_rct_Trader2))
         else
             if ( Trig_TraderTrain_Func005Func002Func002C() ) then
+                call IssuePointOrderLocBJ(GetTrainedUnit(), "patrol", GetRectCenter(gg_rct_Trader3))
             else
             endif
         endif
@@ -18922,11 +19521,11 @@ function Trig_TraderRessourceGain_Conditions takes nothing returns boolean
 endfunction
 
 function Trig_TraderRessourceGain_Actions takes nothing returns nothing
-    call AdjustPlayerStateBJ(60, Player(8), PLAYER_STATE_RESOURCE_GOLD)
+    call AdjustPlayerStateBJ(40, Player(8), PLAYER_STATE_RESOURCE_GOLD)
     //  
     set udg_TraderString=""
     if GetLocalPlayer() == udg_GoblinPlayer then
-    set udg_TraderString=( "+60" )
+    set udg_TraderString=( "+40" )
     endif
     call CreateTextTagUnitBJ(udg_TraderString, GetTriggerUnit(), 0, 10.50, 100.00, 80.00, 0.00, 0)
     call SetTextTagLifespanBJ(GetLastCreatedTextTag(), 3.00)
@@ -18939,6 +19538,7 @@ endfunction
 //===========================================================================
 function InitTrig_TraderRessourceGain takes nothing returns nothing
     set gg_trg_TraderRessourceGain=CreateTrigger()
+    call TriggerRegisterEnterRectSimple(gg_trg_TraderRessourceGain, gg_rct_ZeppelinReturn)
     call TriggerAddCondition(gg_trg_TraderRessourceGain, Condition(function Trig_TraderRessourceGain_Conditions))
     call TriggerAddAction(gg_trg_TraderRessourceGain, function Trig_TraderRessourceGain_Actions)
 endfunction
@@ -18985,12 +19585,16 @@ function Trig_ZeppelinTrain_Actions takes nothing returns nothing
     call GroupAddUnitSimple(GetTrainedUnit(), udg_TradersGroup)
     set udg_ZeppelinRandomInt=GetRandomInt(1, 4)
     if ( Trig_ZeppelinTrain_Func004C() ) then
+        call IssuePointOrderLocBJ(GetTrainedUnit(), "patrol", GetRectCenter(gg_rct_Trade1))
     else
         if ( Trig_ZeppelinTrain_Func004Func002C() ) then
+            call IssuePointOrderLocBJ(GetTrainedUnit(), "patrol", GetRectCenter(gg_rct_Trade2))
         else
             if ( Trig_ZeppelinTrain_Func004Func002Func002C() ) then
+                call IssuePointOrderLocBJ(GetTrainedUnit(), "patrol", GetRectCenter(gg_rct_Trade3))
             else
                 if ( Trig_ZeppelinTrain_Func004Func002Func002Func002C() ) then
+                    call IssuePointOrderLocBJ(GetTrainedUnit(), "patrol", GetRectCenter(gg_rct_Trade4))
                 else
                 endif
             endif
@@ -19017,11 +19621,11 @@ function Trig_ZeppelinLumberTrade_Conditions takes nothing returns boolean
 endfunction
 
 function Trig_ZeppelinLumberTrade_Actions takes nothing returns nothing
-    call AdjustPlayerStateBJ(100, Player(8), PLAYER_STATE_RESOURCE_LUMBER)
+    call AdjustPlayerStateBJ(60, Player(8), PLAYER_STATE_RESOURCE_LUMBER)
     //  
     set udg_StringZep=""
     if GetLocalPlayer() == udg_GoblinPlayer then
-    set udg_StringZep=( "+100" )
+    set udg_StringZep=( "+60" )
     endif
     call CreateTextTagUnitBJ(udg_StringZep, GetTriggerUnit(), - 60.00, 10.50, 0.00, 100.00, 0.00, 0)
     call SetTextTagLifespanBJ(GetLastCreatedTextTag(), 3.00)
@@ -19034,6 +19638,7 @@ endfunction
 //===========================================================================
 function InitTrig_ZeppelinLumberTrade takes nothing returns nothing
     set gg_trg_ZeppelinLumberTrade=CreateTrigger()
+    call TriggerRegisterEnterRectSimple(gg_trg_ZeppelinLumberTrade, gg_rct_ZeppelinReturn)
     call TriggerAddCondition(gg_trg_ZeppelinLumberTrade, Condition(function Trig_ZeppelinLumberTrade_Conditions))
     call TriggerAddAction(gg_trg_ZeppelinLumberTrade, function Trig_ZeppelinLumberTrade_Actions)
 endfunction
@@ -19092,35 +19697,35 @@ endfunction
 //===========================================================================
 // Trigger: DiscoveringOil
 //===========================================================================
-function Trig_DiscoveringOil_Func001Func003Func001Func001Func001Func001C takes nothing returns boolean
+function Trig_DiscoveringOil_Func001Func002Func001Func001Func001Func001C takes nothing returns boolean
     if ( not ( udg_OilRandomInt == 5 ) ) then
         return false
     endif
     return true
 endfunction
 
-function Trig_DiscoveringOil_Func001Func003Func001Func001Func001C takes nothing returns boolean
+function Trig_DiscoveringOil_Func001Func002Func001Func001Func001C takes nothing returns boolean
     if ( not ( udg_OilRandomInt == 4 ) ) then
         return false
     endif
     return true
 endfunction
 
-function Trig_DiscoveringOil_Func001Func003Func001Func001C takes nothing returns boolean
+function Trig_DiscoveringOil_Func001Func002Func001Func001C takes nothing returns boolean
     if ( not ( udg_OilRandomInt == 3 ) ) then
         return false
     endif
     return true
 endfunction
 
-function Trig_DiscoveringOil_Func001Func003Func001C takes nothing returns boolean
+function Trig_DiscoveringOil_Func001Func002Func001C takes nothing returns boolean
     if ( not ( udg_OilRandomInt == 2 ) ) then
         return false
     endif
     return true
 endfunction
 
-function Trig_DiscoveringOil_Func001Func003C takes nothing returns boolean
+function Trig_DiscoveringOil_Func001Func002C takes nothing returns boolean
     if ( not ( udg_OilRandomInt == 1 ) ) then
         return false
     endif
@@ -19136,8 +19741,8 @@ endfunction
 
 function Trig_DiscoveringOil_Actions takes nothing returns nothing
     if ( Trig_DiscoveringOil_Func001C() ) then
-        call GroupAddUnitSimple(GetTrainedUnit(), udg_OilDummyGroup)
         set udg_FirstOilRig=true
+        set udg_OilRigPoint=GetRandomLocInRect(gg_rct_OilRig1)
         call PingMinimapLocForForce(bj_FORCE_PLAYER[8], udg_OilRigPoint, 20.00)
         call TriggerSleepAction(GetRandomReal(20.00, 40.00))
         call CreateNUnitsAtLoc(1, 'o04R', Player(8), udg_OilRigPoint, bj_UNIT_FACING)
@@ -19145,15 +19750,20 @@ function Trig_DiscoveringOil_Actions takes nothing returns nothing
         call EnableTrigger(gg_trg_OilPlatformLoop)
     else
         set udg_OilRandomInt=GetRandomInt(1, 5)
-        if ( Trig_DiscoveringOil_Func001Func003C() ) then
+        if ( Trig_DiscoveringOil_Func001Func002C() ) then
+            set udg_OilRandomRegion=gg_rct_OilRig2
         else
-            if ( Trig_DiscoveringOil_Func001Func003Func001C() ) then
+            if ( Trig_DiscoveringOil_Func001Func002Func001C() ) then
+                set udg_OilRandomRegion=gg_rct_OilRig3
             else
-                if ( Trig_DiscoveringOil_Func001Func003Func001Func001C() ) then
+                if ( Trig_DiscoveringOil_Func001Func002Func001Func001C() ) then
+                    set udg_OilRandomRegion=gg_rct_OilRig4
                 else
-                    if ( Trig_DiscoveringOil_Func001Func003Func001Func001Func001C() ) then
+                    if ( Trig_DiscoveringOil_Func001Func002Func001Func001Func001C() ) then
+                        set udg_OilRandomRegion=gg_rct_OilRig5
                     else
-                        if ( Trig_DiscoveringOil_Func001Func003Func001Func001Func001Func001C() ) then
+                        if ( Trig_DiscoveringOil_Func001Func002Func001Func001Func001Func001C() ) then
+                            set udg_OilRandomRegion=gg_rct_OilRig6
                         else
                         endif
                     endif
@@ -19174,62 +19784,6 @@ function InitTrig_DiscoveringOil takes nothing returns nothing
     set gg_trg_DiscoveringOil=CreateTrigger()
     call TriggerRegisterUnitEvent(gg_trg_DiscoveringOil, gg_unit_h04Z_2727, EVENT_UNIT_TRAIN_FINISH)
     call TriggerAddAction(gg_trg_DiscoveringOil, function Trig_DiscoveringOil_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: OilRigDies
-//===========================================================================
-function Trig_OilRigDies_Conditions takes nothing returns boolean
-    if ( not ( GetUnitTypeId(GetTriggerUnit()) == 'o04R' ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_OilRigDies_Actions takes nothing returns nothing
-    call RemoveUnit(GroupPickRandomUnit(udg_OilDummyGroup))
-endfunction
-
-//===========================================================================
-function InitTrig_OilRigDies takes nothing returns nothing
-    set gg_trg_OilRigDies=CreateTrigger()
-    call TriggerRegisterPlayerUnitEventSimple(gg_trg_OilRigDies, Player(8), EVENT_PLAYER_UNIT_DEATH)
-    call TriggerAddCondition(gg_trg_OilRigDies, Condition(function Trig_OilRigDies_Conditions))
-    call TriggerAddAction(gg_trg_OilRigDies, function Trig_OilRigDies_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: BlademasterDie
-//===========================================================================
-function Trig_BlademasterDie_Actions takes nothing returns nothing
-    call RemoveUnit(gg_unit_h03V_2232)
-endfunction
-
-//===========================================================================
-function InitTrig_BlademasterDie takes nothing returns nothing
-    set gg_trg_BlademasterDie=CreateTrigger()
-    call TriggerRegisterUnitEvent(gg_trg_BlademasterDie, gg_unit_o00G_1521, EVENT_UNIT_DEATH)
-    call TriggerAddAction(gg_trg_BlademasterDie, function Trig_BlademasterDie_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: ShipDie
-//===========================================================================
-function Trig_ShipDie_Func002A takes nothing returns nothing
-    call KillUnit(GetEnumUnit())
-endfunction
-
-function Trig_ShipDie_Actions takes nothing returns nothing
-    call ForGroupBJ(udg_TempGroup, function Trig_ShipDie_Func002A)
-    call DestroyGroup(udg_TempGroup)
-    call TriggerSleepAction(2)
-endfunction
-
-//===========================================================================
-function InitTrig_ShipDie takes nothing returns nothing
-    set gg_trg_ShipDie=CreateTrigger()
-    call TriggerRegisterUnitEvent(gg_trg_ShipDie, gg_unit_h08T_0260, EVENT_UNIT_DEATH)
-    call TriggerAddAction(gg_trg_ShipDie, function Trig_ShipDie_Actions)
 endfunction
 
 //===========================================================================
@@ -19279,6 +19833,7 @@ endfunction
 
 function Trig_ShipOpen_Actions takes nothing returns nothing
     set udg_ShipPoint1=GetSpellTargetLoc()
+    set udg_ShipPoint2=GetRectCenter(gg_rct_ShipInside)
     call CreateNUnitsAtLoc(1, 'h05T', Player(PLAYER_NEUTRAL_PASSIVE), udg_ShipPoint1, bj_UNIT_FACING)
     set udg_ShipGate1=GetLastCreatedUnit()
     call WaygateActivateBJ(true, udg_ShipGate1)
@@ -19325,7 +19880,7 @@ endfunction
 //===========================================================================
 // Trigger: DragonmawGate
 //===========================================================================
-function Trig_DragonmawGate_Func001C takes nothing returns boolean
+function Trig_DragonmawGate_Conditions takes nothing returns boolean
     if ( not ( GetSpellAbilityId() == 'A0OI' ) ) then
         return false
     endif
@@ -19333,41 +19888,32 @@ function Trig_DragonmawGate_Func001C takes nothing returns boolean
 endfunction
 
 function Trig_DragonmawGate_Actions takes nothing returns nothing
-    if ( Trig_DragonmawGate_Func001C() ) then
-        call ModifyGateBJ(bj_GATEOPERATION_OPEN, gg_dest_ATg4_28534)
-        call UnitRemoveAbilityBJ('A0OI', gg_unit_h01Z_0618)
-        call UnitAddAbilityBJ('A0OJ', gg_unit_h01Z_0618)
-        call BlzStartUnitAbilityCooldown(gg_unit_h01Z_0618, 'A0OJ', 420.00)
-        call PlaySoundAtPointBJ(gg_snd_DoorOpenRemix, 100, GetDestructableLoc(gg_dest_ATg4_28534), 0)
-    else
-        call ModifyGateBJ(bj_GATEOPERATION_CLOSE, gg_dest_ATg4_28534)
-        call UnitRemoveAbilityBJ('A0OJ', gg_unit_h01Z_0618)
-        call UnitAddAbilityBJ('A0OI', gg_unit_h01Z_0618)
-        call BlzStartUnitAbilityCooldown(gg_unit_h01Z_0618, 'A0OI', 180.00)
-        call PlaySoundAtPointBJ(gg_snd_DoorCloseRemix, 100, GetDestructableLoc(gg_dest_ATg4_28534), 0)
-    endif
+    call ModifyGateBJ(bj_GATEOPERATION_OPEN, gg_dest_ATg4_28534)
+    call UnitRemoveAbilityBJ('A0OI', gg_unit_h01Z_0618)
+    call PlaySoundAtPointBJ(gg_snd_DoorOpenRemix, 100, GetDestructableLoc(gg_dest_ATg4_28534), 0)
 endfunction
 
 //===========================================================================
 function InitTrig_DragonmawGate takes nothing returns nothing
     set gg_trg_DragonmawGate=CreateTrigger()
     call TriggerRegisterUnitEvent(gg_trg_DragonmawGate, gg_unit_h01Z_0618, EVENT_UNIT_SPELL_EFFECT)
+    call TriggerAddCondition(gg_trg_DragonmawGate, Condition(function Trig_DragonmawGate_Conditions))
     call TriggerAddAction(gg_trg_DragonmawGate, function Trig_DragonmawGate_Actions)
 endfunction
 
 //===========================================================================
 // Trigger: Cataclysm
 //===========================================================================
-function Trig_Cataclysm_Func024Func002C takes nothing returns boolean
+function Trig_Cataclysm_Func020Func002C takes nothing returns boolean
     if ( not ( GetRandomInt(1, 2) == 1 ) ) then
         return false
     endif
     return true
 endfunction
 
-function Trig_Cataclysm_Func024A takes nothing returns nothing
+function Trig_Cataclysm_Func020A takes nothing returns nothing
     call SetUnitOwner(GetEnumUnit(), Player(19), true)
-    if ( Trig_Cataclysm_Func024Func002C() ) then
+    if ( Trig_Cataclysm_Func020Func002C() ) then
         call ReplaceUnitBJ(GetEnumUnit(), 'n087', bj_UNIT_STATE_METHOD_RELATIVE)
         call CreateNUnitsAtLoc(1, 'n087', Player(19), GetUnitLoc(GetEnumUnit()), bj_UNIT_FACING)
         call CreateNUnitsAtLoc(1, 'o04B', Player(19), GetUnitLoc(GetEnumUnit()), bj_UNIT_FACING)
@@ -19378,21 +19924,18 @@ function Trig_Cataclysm_Func024A takes nothing returns nothing
     call GroupRemoveUnitSimple(GetEnumUnit(), udg_CultistGoldGroup)
 endfunction
 
-function Trig_Cataclysm_Func025A takes nothing returns nothing
+function Trig_Cataclysm_Func021A takes nothing returns nothing
     call CameraSetEQNoiseForPlayer(GetEnumPlayer(), 30.00)
 endfunction
 
-function Trig_Cataclysm_Func027A takes nothing returns nothing
+function Trig_Cataclysm_Func023A takes nothing returns nothing
     call SetPlayerTechResearchedSwap('R072', 1, GetEnumPlayer())
     call CameraClearNoiseForPlayer(GetEnumPlayer())
 endfunction
 
 function Trig_Cataclysm_Actions takes nothing returns nothing
-    call KillUnit(gg_unit_o04M_1640)
-    call UnitRemoveAbilityBJ('A0OI', gg_unit_h01Z_0618)
-    call UnitRemoveAbilityBJ('A0OJ', gg_unit_h01Z_0618)
-    call UnitAddAbilityBJ('A0OI', gg_unit_h01Z_0618)
     call IssueImmediateOrderBJ(gg_unit_h01Z_0618, "berserk")
+    call SetUnitPositionLoc(gg_unit_u01Y_0071, GetRectCenter(gg_rct_TwilightOutside))
     call SetUnitOwner(gg_unit_u01Y_0071, Player(19), true)
     call SetPlayerAllianceStateBJ(Player(0), Player(19), bj_ALLIANCE_UNALLIED)
     call SetPlayerAllianceStateBJ(Player(1), Player(19), bj_ALLIANCE_UNALLIED)
@@ -19409,10 +19952,10 @@ function Trig_Cataclysm_Actions takes nothing returns nothing
     call SetPlayerAllianceStateBJ(Player(23), Player(19), bj_ALLIANCE_UNALLIED)
     call SetPlayerAbilityAvailableBJ(false, 'A0BW', Player(19))
     call DisableTrigger(gg_trg_GoldCultistLoop)
-    call ForGroupBJ(udg_CultistGoldGroup, function Trig_Cataclysm_Func024A)
-    call ForForce(GetPlayersAll(), function Trig_Cataclysm_Func025A)
+    call ForGroupBJ(udg_CultistGoldGroup, function Trig_Cataclysm_Func020A)
+    call ForForce(GetPlayersAll(), function Trig_Cataclysm_Func021A)
     call TriggerSleepAction(3.00)
-    call ForForce(GetPlayersAll(), function Trig_Cataclysm_Func027A)
+    call ForForce(GetPlayersAll(), function Trig_Cataclysm_Func023A)
 endfunction
 
 //===========================================================================
@@ -19438,7 +19981,6 @@ function Trig_VisionoftheOldOnes_Actions takes nothing returns nothing
     call SetPlayerAllianceStateBJ(Player(12), Player(19), bj_ALLIANCE_UNALLIED_VISION)
     call SetPlayerAllianceStateBJ(Player(17), Player(19), bj_ALLIANCE_UNALLIED_VISION)
     call SetPlayerAllianceStateBJ(Player(22), Player(19), bj_ALLIANCE_UNALLIED_VISION)
-    call SetPlayerAllianceStateBJ(Player(23), Player(19), bj_ALLIANCE_UNALLIED_VISION)
 endfunction
 
 //===========================================================================
@@ -19534,204 +20076,31 @@ function InitTrig_GoldCultistLoop takes nothing returns nothing
 endfunction
 
 //===========================================================================
-// Trigger: NexusResearch
+// Trigger: LegionSummonStop
 //===========================================================================
-function Trig_NexusResearch_Conditions takes nothing returns boolean
-    if ( not ( GetResearched() == 'R07W' ) ) then
+function Trig_LegionSummonStop_Conditions takes nothing returns boolean
+    if ( not ( RectContainsLoc(gg_rct_MonolithNoBuild, GetUnitLoc(GetSpellAbilityUnit())) == true ) ) then
+        return false
+    endif
+    if ( not ( GetSpellAbilityId() == 'A00J' ) ) then
         return false
     endif
     return true
 endfunction
 
-function Trig_NexusResearch_Actions takes nothing returns nothing
-    call SetPlayerTechResearchedSwap('R079', 1, Player(7))
+function Trig_LegionSummonStop_Actions takes nothing returns nothing
+    set udg_SpellImmunesummoner=GetTriggerUnit()
+    call TriggerSleepAction(2)
+    call IssueImmediateOrderBJ(udg_SpellImmunesummoner, "stop")
+    set udg_SpellImmunesummoner=null
 endfunction
 
 //===========================================================================
-function InitTrig_NexusResearch takes nothing returns nothing
-    set gg_trg_NexusResearch=CreateTrigger()
-    call TriggerRegisterUnitEvent(gg_trg_NexusResearch, gg_unit_u000_0649, EVENT_UNIT_RESEARCH_FINISH)
-    call TriggerAddCondition(gg_trg_NexusResearch, Condition(function Trig_NexusResearch_Conditions))
-    call TriggerAddAction(gg_trg_NexusResearch, function Trig_NexusResearch_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: Demon Gate INI
-//===========================================================================
-function Trig_Demon_Gate_INI_Actions takes nothing returns nothing
-    call ShowUnitHide(gg_unit_n081_1585)
-    call SetUnitLifePercentBJ(gg_unit_n081_4142, 100)
-    call IssueImmediateOrderBJ(gg_unit_o01C_2371, "immolation")
-endfunction
-
-//===========================================================================
-function InitTrig_Demon_Gate_INI takes nothing returns nothing
-    set gg_trg_Demon_Gate_INI=CreateTrigger()
-    call TriggerRegisterTimerEventSingle(gg_trg_Demon_Gate_INI, 5)
-    call TriggerAddAction(gg_trg_Demon_Gate_INI, function Trig_Demon_Gate_INI_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: Hellfire Death
-//===========================================================================
-function Trig_Hellfire_Death_Actions takes nothing returns nothing
-    call SetPlayerTechResearchedSwap('R039', 1, udg_StormwindPlayer)
-    call DestroyTrigger(GetTriggeringTrigger())
-endfunction
-
-//===========================================================================
-function InitTrig_Hellfire_Death takes nothing returns nothing
-    set gg_trg_Hellfire_Death=CreateTrigger()
-    call TriggerRegisterUnitEvent(gg_trg_Hellfire_Death, gg_unit_o008_0168, EVENT_UNIT_DEATH)
-    call TriggerAddAction(gg_trg_Hellfire_Death, function Trig_Hellfire_Death_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: Doom Towers North
-//===========================================================================
-function Trig_Doom_Towers_North_Actions takes nothing returns nothing
-    call KillUnit(gg_unit_n066_0114)
-    call KillUnit(gg_unit_n066_1650)
-    call DestroyTrigger(GetTriggeringTrigger())
-endfunction
-
-//===========================================================================
-function InitTrig_Doom_Towers_North takes nothing returns nothing
-    set gg_trg_Doom_Towers_North=CreateTrigger()
-    call TriggerRegisterUnitEvent(gg_trg_Doom_Towers_North, gg_unit_npgr_0907, EVENT_UNIT_DEATH)
-    call TriggerAddAction(gg_trg_Doom_Towers_North, function Trig_Doom_Towers_North_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: Doom Towers South
-//===========================================================================
-function Trig_Doom_Towers_South_Actions takes nothing returns nothing
-    call KillUnit(gg_unit_n066_0531)
-    call KillUnit(gg_unit_n066_0538)
-    call DestroyTrigger(GetTriggeringTrigger())
-endfunction
-
-//===========================================================================
-function InitTrig_Doom_Towers_South takes nothing returns nothing
-    set gg_trg_Doom_Towers_South=CreateTrigger()
-    call TriggerRegisterUnitEvent(gg_trg_Doom_Towers_South, gg_unit_npgr_0558, EVENT_UNIT_DEATH)
-    call TriggerAddAction(gg_trg_Doom_Towers_South, function Trig_Doom_Towers_South_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: Throne of Kiljaeden rally
-//===========================================================================
-function Trig_Throne_of_Kiljaeden_rally_Func002C takes nothing returns boolean
-    if ( ( GetIssuedOrderIdBJ() == String2OrderIdBJ("smart") ) ) then
-        return true
-    endif
-    if ( ( GetIssuedOrderIdBJ() == String2OrderIdBJ("setrally") ) ) then
-        return true
-    endif
-    return false
-endfunction
-
-function Trig_Throne_of_Kiljaeden_rally_Conditions takes nothing returns boolean
-    if ( not Trig_Throne_of_Kiljaeden_rally_Func002C() ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_Throne_of_Kiljaeden_rally_Actions takes nothing returns nothing
-    set udg_TempPoint=GetOrderPointLoc()
-    call IssuePointOrderLocBJ(gg_unit_n081_0717, "setrally", udg_TempPoint)
-    call IssuePointOrderLocBJ(gg_unit_n081_0036, "setrally", udg_TempPoint)
-    call IssuePointOrderLocBJ(gg_unit_n081_0882, "setrally", udg_TempPoint)
-    call IssuePointOrderLocBJ(gg_unit_n081_4142, "setrally", udg_TempPoint)
-    call IssuePointOrderLocBJ(gg_unit_n081_1585, "setrally", udg_TempPoint)
-    call RemoveLocation(udg_TempPoint)
-endfunction
-
-//===========================================================================
-function InitTrig_Throne_of_Kiljaeden_rally takes nothing returns nothing
-    set gg_trg_Throne_of_Kiljaeden_rally=CreateTrigger()
-    call TriggerRegisterUnitEvent(gg_trg_Throne_of_Kiljaeden_rally, gg_unit_o01C_2371, EVENT_UNIT_ISSUED_POINT_ORDER)
-    call TriggerAddCondition(gg_trg_Throne_of_Kiljaeden_rally, Condition(function Trig_Throne_of_Kiljaeden_rally_Conditions))
-    call TriggerAddAction(gg_trg_Throne_of_Kiljaeden_rally, function Trig_Throne_of_Kiljaeden_rally_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: Sea Witch 1
-//===========================================================================
-function Trig_Sea_Witch_1_Conditions takes nothing returns boolean
-    if ( not ( GetOwningPlayer(GetTriggerUnit()) == udg_FrostwolfPlayer ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_Sea_Witch_1_Func004002 takes nothing returns nothing
-    call SetUnitInvulnerable(GetEnumUnit(), false)
-endfunction
-
-function Trig_Sea_Witch_1_Func005002 takes nothing returns nothing
-    call SetUnitOwner(GetEnumUnit(), Player(0), true)
-endfunction
-
-function Trig_Sea_Witch_1_Actions takes nothing returns nothing
-    call ForGroupBJ(udg_TempGroup, function Trig_Sea_Witch_1_Func004002)
-    call ForGroupBJ(udg_TempGroup, function Trig_Sea_Witch_1_Func005002)
-    call DestroyGroup(udg_TempGroup)
-    call SetUnitInvulnerable(gg_unit_ohun_3197, false)
-    call CreateNUnitsAtLoc(1, 'nmsn', Player(PLAYER_NEUTRAL_AGGRESSIVE), udg_TempPoint, bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'nmrv', Player(PLAYER_NEUTRAL_AGGRESSIVE), udg_TempPoint, bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'nmcf', Player(PLAYER_NEUTRAL_AGGRESSIVE), udg_TempPoint, bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'nmbg', Player(PLAYER_NEUTRAL_AGGRESSIVE), udg_TempPoint, bj_UNIT_FACING)
-    call RemoveLocation(udg_TempPoint)
-    call CreateNUnitsAtLoc(1, 'nmbg', Player(PLAYER_NEUTRAL_AGGRESSIVE), udg_TempPoint, bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'nmtw', Player(PLAYER_NEUTRAL_AGGRESSIVE), udg_TempPoint, bj_UNIT_FACING)
-    call CreateNUnitsAtLoc(1, 'nmcf', Player(PLAYER_NEUTRAL_AGGRESSIVE), udg_TempPoint, bj_UNIT_FACING)
-    call RemoveLocation(udg_TempPoint)
-    call GroupPointOrderLocBJ(udg_TempGroup, "attack", udg_TempPoint)
-    call DestroyGroup(udg_TempGroup)
-    call DestroyGroup(udg_TempGroup)
-    call RemoveLocation(udg_TempPoint)
-    call DestroyTrigger(GetTriggeringTrigger())
-endfunction
-
-//===========================================================================
-function InitTrig_Sea_Witch_1 takes nothing returns nothing
-    set gg_trg_Sea_Witch_1=CreateTrigger()
-    call TriggerAddCondition(gg_trg_Sea_Witch_1, Condition(function Trig_Sea_Witch_1_Conditions))
-    call TriggerAddAction(gg_trg_Sea_Witch_1, function Trig_Sea_Witch_1_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: IronforgeDies
-//===========================================================================
-function Trig_IronforgeDies_Actions takes nothing returns nothing
-    call KillUnit(gg_unit_h040_1856)
-    call DestroyTrigger(GetTriggeringTrigger())
-endfunction
-
-//===========================================================================
-function InitTrig_IronforgeDies takes nothing returns nothing
-    set gg_trg_IronforgeDies=CreateTrigger()
-    call TriggerRegisterUnitEvent(gg_trg_IronforgeDies, gg_unit_h001_0180, EVENT_UNIT_DEATH)
-    call TriggerAddAction(gg_trg_IronforgeDies, function Trig_IronforgeDies_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: LegionSummonInit Copy
-//===========================================================================
-function Trig_LegionSummonInit_Copy_Func002A takes nothing returns nothing
-    call SetPlayerTechResearchedSwap('R04S', 1, GetEnumPlayer())
-endfunction
-
-function Trig_LegionSummonInit_Copy_Actions takes nothing returns nothing
-    call ForForce(GetPlayersAll(), function Trig_LegionSummonInit_Copy_Func002A)
-endfunction
-
-//===========================================================================
-function InitTrig_LegionSummonInit_Copy takes nothing returns nothing
-    set gg_trg_LegionSummonInit_Copy=CreateTrigger()
-    call TriggerAddAction(gg_trg_LegionSummonInit_Copy, function Trig_LegionSummonInit_Copy_Actions)
+function InitTrig_LegionSummonStop takes nothing returns nothing
+    set gg_trg_LegionSummonStop=CreateTrigger()
+    call TriggerRegisterAnyUnitEventBJ(gg_trg_LegionSummonStop, EVENT_PLAYER_UNIT_SPELL_CHANNEL)
+    call TriggerAddCondition(gg_trg_LegionSummonStop, Condition(function Trig_LegionSummonStop_Conditions))
+    call TriggerAddAction(gg_trg_LegionSummonStop, function Trig_LegionSummonStop_Actions)
 endfunction
 
 //===========================================================================
@@ -19767,18 +20136,22 @@ endfunction
 // Trigger: Legion Summon Copy
 //===========================================================================
 function Trig_Legion_Summon_Copy_Conditions takes nothing returns boolean
+    if ( not ( RectContainsLoc(gg_rct_MonolithNoBuild, GetUnitLoc(GetSpellAbilityUnit())) == false ) ) then
+        return false
+    endif
     if ( not ( GetSpellAbilityId() == 'A00J' ) ) then
         return false
     endif
     return true
 endfunction
 
-function Trig_Legion_Summon_Copy_Func003A takes nothing returns nothing
+function Trig_Legion_Summon_Copy_Func005A takes nothing returns nothing
     call SetPlayerTechResearchedSwap('R04S', 0, GetEnumPlayer())
 endfunction
 
 function Trig_Legion_Summon_Copy_Actions takes nothing returns nothing
-    call ForForce(GetPlayersAll(), function Trig_Legion_Summon_Copy_Func003A)
+    call EnableTrigger(gg_trg_Legion_No_Book_Finish_Copy)
+    call ForForce(GetPlayersAll(), function Trig_Legion_Summon_Copy_Func005A)
     call StartTimerBJ(udg_Legion, false, 180.00)
     call CreateTimerDialogBJ(udg_Legion, "TRIGSTR_015")
     set udg_Legion_Copy=GetLastCreatedTimerDialogBJ()
@@ -19806,30 +20179,38 @@ function Trig_Legion_No_Book_Finish_Copy_Conditions takes nothing returns boolea
     return true
 endfunction
 
-function Trig_Legion_No_Book_Finish_Copy_Func005A takes nothing returns nothing
+function Trig_Legion_No_Book_Finish_Copy_Func006A takes nothing returns nothing
     call SetPlayerTechResearchedSwap('R072', 1, GetEnumPlayer())
     call SetPlayerAbilityAvailableBJ(false, 'A00J', GetEnumPlayer())
 endfunction
 
-function Trig_Legion_No_Book_Finish_Copy_Func007002 takes nothing returns nothing
+function Trig_Legion_No_Book_Finish_Copy_Func008002 takes nothing returns nothing
     call SetUnitOwner(GetEnumUnit(), udg_LegionPlayer, true)
 endfunction
 
+function Trig_Legion_No_Book_Finish_Copy_Func009002 takes nothing returns nothing
+    call SetUnitInvulnerable(GetEnumUnit(), false)
+endfunction
+
 function Trig_Legion_No_Book_Finish_Copy_Actions takes nothing returns nothing
+    call AdjustPlayerStateBJ(1000, Player(23), PLAYER_STATE_RESOURCE_GOLD)
     call SetPlayerTechResearchedSwap('R04B', 1, udg_LegionPlayer)
     call DestroyTimerDialogBJ(udg_Legion_Copy)
-    call ForForce(GetPlayersAll(), function Trig_Legion_No_Book_Finish_Copy_Func005A)
-    call ForGroupBJ(udg_TwistingNether, function Trig_Legion_No_Book_Finish_Copy_Func007002)
+    call ForForce(GetPlayersAll(), function Trig_Legion_No_Book_Finish_Copy_Func006A)
+    set udg_TwistingNether=GetUnitsInRectOfPlayer(gg_rct_TwistingNether, Player(PLAYER_NEUTRAL_PASSIVE))
+    call ForGroupBJ(udg_TwistingNether, function Trig_Legion_No_Book_Finish_Copy_Func008002)
+    call ForGroupBJ(udg_TwistingNether, function Trig_Legion_No_Book_Finish_Copy_Func009002)
     call DestroyGroup(udg_TwistingNether)
     call SetUnitOwner(gg_unit_n03C_0000, Player(PLAYER_NEUTRAL_AGGRESSIVE), true)
-    set udg_Portalposition=GetUnitLoc(GetTriggerUnit())
+    set udg_Portalposition=GetUnitLoc(udg_SpellImmunesummoner)
+    set udg_NetherExit=GetRectCenter(gg_rct_Nether_Exit)
     call CreateNUnitsAtLoc(1, 'n037', udg_LegionPlayer, udg_Portalposition, bj_UNIT_FACING)
     set udg_RegionPosition=GetUnitLoc(GetLastCreatedUnit())
     call WaygateSetDestinationLocBJ(GetLastCreatedUnit(), udg_NetherExit)
     call WaygateActivateBJ(true, GetLastCreatedUnit())
     call WaygateActivateBJ(true, gg_unit_n03C_0000)
     call WaygateSetDestinationLocBJ(gg_unit_n03C_0000, udg_RegionPosition)
-    call UnitRemoveAbilityBJ('A00J', GetTriggerUnit())
+    call UnitRemoveAbilityBJ('A00J', udg_SpellImmunesummoner)
     call PlaySoundBJ(gg_snd_U08Archimonde19)
     call KillSoundWhenDoneBJ(GetLastPlayedSound())
     call UnitRemoveAbilityBJ('A0KZ', udg_SpellImmunesummoner)
@@ -19847,9 +20228,42 @@ endfunction
 //===========================================================================
 function InitTrig_Legion_No_Book_Finish_Copy takes nothing returns nothing
     set gg_trg_Legion_No_Book_Finish_Copy=CreateTrigger()
+    call DisableTrigger(gg_trg_Legion_No_Book_Finish_Copy)
     call TriggerRegisterAnyUnitEventBJ(gg_trg_Legion_No_Book_Finish_Copy, EVENT_PLAYER_UNIT_SPELL_FINISH)
     call TriggerAddCondition(gg_trg_Legion_No_Book_Finish_Copy, Condition(function Trig_Legion_No_Book_Finish_Copy_Conditions))
     call TriggerAddAction(gg_trg_Legion_No_Book_Finish_Copy, function Trig_Legion_No_Book_Finish_Copy_Actions)
+endfunction
+
+//===========================================================================
+// Trigger: WalkingMonolith
+//===========================================================================
+function Trig_WalkingMonolith_Conditions takes nothing returns boolean
+    if ( not ( GetUnitTypeId(GetConstructingStructure()) == 'e01F' ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_WalkingMonolith_Func001C takes nothing returns boolean
+    if ( not ( RectContainsUnit(gg_rct_MonolithNoBuild, GetTriggerUnit()) == true ) ) then
+        return false
+    endif
+    return true
+endfunction
+
+function Trig_WalkingMonolith_Actions takes nothing returns nothing
+    if ( Trig_WalkingMonolith_Func001C() ) then
+        call RemoveUnit(GetConstructingStructure())
+    else
+    endif
+endfunction
+
+//===========================================================================
+function InitTrig_WalkingMonolith takes nothing returns nothing
+    set gg_trg_WalkingMonolith=CreateTrigger()
+    call TriggerRegisterPlayerUnitEventSimple(gg_trg_WalkingMonolith, Player(23), EVENT_PLAYER_UNIT_CONSTRUCT_START)
+    call TriggerAddCondition(gg_trg_WalkingMonolith, Condition(function Trig_WalkingMonolith_Conditions))
+    call TriggerAddAction(gg_trg_WalkingMonolith, function Trig_WalkingMonolith_Actions)
 endfunction
 
 //===========================================================================
@@ -19871,9 +20285,11 @@ endfunction
 //===========================================================================
 function Trig_Lordaeron_West_Actions takes nothing returns nothing
     call KillUnit(gg_unit_nemi_0019)
+    call SetItemPositionLoc(GetLastRemovedItem(), GetRectCenter(gg_rct_King_Arthas_crown))
     call SetDoodadAnimationBJ("hide", 'YSaw', 200.00, GetUnitLoc(gg_unit_h000_0406))
     call SetDoodadAnimationBJ("hide", 'D044', 200.00, GetUnitLoc(gg_unit_h000_0406))
     call SetDoodadAnimationBJ("hide", 'YObb', 200.00, GetUnitLoc(gg_unit_h000_0406))
+    call SetDoodadAnimationRectBJ("show", 'YScr', gg_rct_Terenas)
     call DestroyTrigger(GetTriggeringTrigger())
 endfunction
 
@@ -19888,6 +20304,15 @@ endfunction
 // Trigger: Scarlet Monastery Dies
 //===========================================================================
 function Trig_Scarlet_Monastery_Dies_Actions takes nothing returns nothing
+    call SetDoodadAnimationRectBJ("hide", 'YOlp', gg_rct_ScarletMonastery)
+    call SetDoodadAnimationRectBJ("hide", 'YOsw', gg_rct_ScarletMonastery)
+    call SetDoodadAnimationRectBJ("hide", 'YSaw', gg_rct_ScarletMonastery)
+    call SetDoodadAnimationRectBJ("hide", 'ZCv2', gg_rct_ScarletMonastery)
+    call SetDoodadAnimationRectBJ("hide", 'ZCv1', gg_rct_ScarletMonastery)
+    call SetDoodadAnimationRectBJ("hide", 'YOst', gg_rct_ScarletMonastery)
+    call SetDoodadAnimationRectBJ("hide", 'YObb', gg_rct_ScarletMonastery)
+    call SetDoodadAnimationRectBJ("show", 'YScr', gg_rct_ScarletMonastery)
+    call SetDoodadAnimationRectBJ("show", 'LOsm', gg_rct_ScarletMonastery)
     call DestroyTrigger(GetTriggeringTrigger())
 endfunction
 
@@ -19943,18 +20368,27 @@ endfunction
 //===========================================================================
 // Trigger: NaxDie
 //===========================================================================
-function Trig_NaxDie_Func002A takes nothing returns nothing
+function Trig_NaxDie_Func004A takes nothing returns nothing
     call KillUnit(GetEnumUnit())
 endfunction
 
+function Trig_NaxDie_Func007A takes nothing returns nothing
+    call SetItemPositionLoc(GetEnumItem(), GetRectCenter(gg_rct_MaelstromAmbient))
+endfunction
+
 function Trig_NaxDie_Actions takes nothing returns nothing
-    call ForGroupBJ(udg_TempGroup, function Trig_NaxDie_Func002A)
+    call KillUnit(gg_unit_e013_1815)
+    set udg_TempGroup=GetUnitsInRectAll(gg_rct_NaxAmbient)
+    call ForGroupBJ(udg_TempGroup, function Trig_NaxDie_Func004A)
     call DestroyGroup(udg_TempGroup)
+    call TriggerSleepAction(2)
+    call EnumItemsInRectBJ(gg_rct_NaxAmbient, function Trig_NaxDie_Func007A)
 endfunction
 
 //===========================================================================
 function InitTrig_NaxDie takes nothing returns nothing
     set gg_trg_NaxDie=CreateTrigger()
+    call TriggerRegisterUnitEvent(gg_trg_NaxDie, gg_unit_u01X_1857, EVENT_UNIT_DEATH)
     call TriggerRegisterUnitEvent(gg_trg_NaxDie, gg_unit_e013_1815, EVENT_UNIT_DEATH)
     call TriggerAddAction(gg_trg_NaxDie, function Trig_NaxDie_Actions)
 endfunction
@@ -20006,6 +20440,7 @@ endfunction
 
 function Trig_NaxxramasOpen_Actions takes nothing returns nothing
     set udg_NaxPoint=OffsetLocation(GetUnitLoc(gg_unit_e013_1815), - 100.00, - 100.00)
+    set udg_NaxPointIn=GetRectCenter(gg_rct_NaxxramasInside)
     call CreateNUnitsAtLoc(1, 'h05T', Player(PLAYER_NEUTRAL_PASSIVE), udg_NaxPoint, bj_UNIT_FACING)
     set udg_NaxGate1=GetLastCreatedUnit()
     call WaygateActivateBJ(true, udg_NaxGate1)
@@ -20054,9 +20489,6 @@ endfunction
 //===========================================================================
 function Trig_Frozen_Throne_Safety_Func002C takes nothing returns boolean
     if ( ( GetUnitTypeId(GetTriggerUnit()) == 'u000' ) ) then
-        return true
-    endif
-    if ( ( GetUnitTypeId(GetTriggerUnit()) == 'n094' ) ) then
         return true
     endif
     return false
@@ -20151,9 +20583,12 @@ function Trig_Plague_Actions_Actions takes nothing returns nothing
     endif
     call DisableTrigger(gg_trg_Gold_Farm_Loop)
     call WaygateActivateBJ(true, gg_unit_n04B_1155)
+    call WaygateSetDestinationLocBJ(gg_unit_n04B_1155, GetRectCenter(gg_rct_Scholomance_Entrance))
     call WaygateActivateBJ(true, gg_unit_n035_1269)
+    call WaygateSetDestinationLocBJ(gg_unit_n035_1269, GetRectCenter(gg_rct_Scholomance_Exit))
     call EnableTrigger(gg_trg_Plague_Cauldrons)
     // ==============
+    set udg_PlagueRandomPoint=GetRandomLocInRect(gg_rct_Plague_5)
     call CreateNUnitsAtLoc(1, 'h02W', udg_PlaguePlayer, udg_PlagueRandomPoint, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueRandomPoint)
     set udg_PlagueCauldronPos=GetUnitLoc(GetLastCreatedUnit())
@@ -20164,6 +20599,7 @@ function Trig_Plague_Actions_Actions takes nothing returns nothing
     call CreateNUnitsAtLoc(2, 'n07S', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call CreateNUnitsAtLoc(4, 'h08O', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueCauldronPos)
+    set udg_PlagueRandomPoint=GetRandomLocInRect(gg_rct_Plague_1)
     call CreateNUnitsAtLoc(1, 'h02W', udg_ScourgePlayer, udg_PlagueRandomPoint, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueRandomPoint)
     set udg_PlagueCauldronPos=GetUnitLoc(GetLastCreatedUnit())
@@ -20174,6 +20610,7 @@ function Trig_Plague_Actions_Actions takes nothing returns nothing
     call CreateNUnitsAtLoc(2, 'n07S', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call CreateNUnitsAtLoc(4, 'h08O', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueCauldronPos)
+    set udg_PlagueRandomPoint=GetRandomLocInRect(gg_rct_Plague_3)
     call CreateNUnitsAtLoc(1, 'h02W', udg_PlaguePlayer, udg_PlagueRandomPoint, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueRandomPoint)
     set udg_PlagueCauldronPos=GetUnitLoc(GetLastCreatedUnit())
@@ -20184,6 +20621,7 @@ function Trig_Plague_Actions_Actions takes nothing returns nothing
     call CreateNUnitsAtLoc(2, 'n07S', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call CreateNUnitsAtLoc(4, 'h08O', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueCauldronPos)
+    set udg_PlagueRandomPoint=GetRandomLocInRect(gg_rct_Plague_2)
     call CreateNUnitsAtLoc(1, 'h02W', udg_PlaguePlayer, udg_PlagueRandomPoint, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueRandomPoint)
     set udg_PlagueCauldronPos=GetUnitLoc(GetLastCreatedUnit())
@@ -20194,6 +20632,7 @@ function Trig_Plague_Actions_Actions takes nothing returns nothing
     call CreateNUnitsAtLoc(2, 'n07S', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call CreateNUnitsAtLoc(4, 'h08O', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueCauldronPos)
+    set udg_PlagueRandomPoint=GetRandomLocInRect(gg_rct_Plague_4)
     call CreateNUnitsAtLoc(1, 'h02W', udg_PlaguePlayer, udg_PlagueRandomPoint, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueRandomPoint)
     set udg_PlagueCauldronPos=GetUnitLoc(GetLastCreatedUnit())
@@ -20204,6 +20643,7 @@ function Trig_Plague_Actions_Actions takes nothing returns nothing
     call CreateNUnitsAtLoc(2, 'n07S', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call CreateNUnitsAtLoc(4, 'h08O', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueCauldronPos)
+    set udg_PlagueRandomPoint=GetRandomLocInRect(gg_rct_Plague_6)
     call CreateNUnitsAtLoc(1, 'h02W', udg_PlaguePlayer, udg_PlagueRandomPoint, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueRandomPoint)
     set udg_PlagueCauldronPos=GetUnitLoc(GetLastCreatedUnit())
@@ -20214,6 +20654,7 @@ function Trig_Plague_Actions_Actions takes nothing returns nothing
     call CreateNUnitsAtLoc(2, 'n07S', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call CreateNUnitsAtLoc(4, 'h08O', udg_PlaguePlayer, udg_PlagueCauldronPos, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueCauldronPos)
+    set udg_PlagueRandomPoint=GetRandomLocInRect(gg_rct_Plague_7)
     call CreateNUnitsAtLoc(1, 'h02W', udg_PlaguePlayer, udg_PlagueRandomPoint, bj_UNIT_FACING)
     call RemoveLocation(udg_PlagueRandomPoint)
     set udg_PlagueCauldronPos=GetUnitLoc(GetLastCreatedUnit())
@@ -20559,6 +21000,9 @@ function Trig_Citizen_spawns_Func002Func003002 takes nothing returns boolean
 endfunction
 
 function Trig_Citizen_spawns_Func002C takes nothing returns boolean
+    if ( not ( RectContainsUnit(gg_rct_Stromwind_antiship, GetTriggerUnit()) == false ) ) then
+        return false
+    endif
     if ( not ( GetOwningPlayer(GetTriggerUnit()) != udg_DwarfPlayer ) ) then
         return false
     endif
@@ -20671,16 +21115,22 @@ function Trig_AndorhalKill_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 512.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Andorhal)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Andorhal)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Andorhal)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Andorhal)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Andorhal)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Andorhal)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -20716,16 +21166,22 @@ function Trig_HavenshireKill_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 512.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Havenshire)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Havenshire)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Havenshire)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Havenshire)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Havenshire)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Havenshire)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -20761,16 +21217,22 @@ function Trig_Hearthglen_Kill_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 512.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Hearthglen)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Hearthglen)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Hearthglen)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Hearthglen)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Hearthglen)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Hearthglen)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -20806,8 +21268,10 @@ function Trig_DarrowshireKill_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 512.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Darrowshire)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Darrowshire)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -20843,10 +21307,13 @@ function Trig_Terrordale_Kill_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 300.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Terrordale)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Terrordale)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Terrordale)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -20882,16 +21349,22 @@ function Trig_Corins_Crossing_Kill_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 512.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Corins_Crossing)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Corins_Crossing)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Corins_Crossing)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Corins_Crossing)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Corins_Crossing)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Corins_Crossing)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -20927,12 +21400,16 @@ function Trig_BrillKill_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 512.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Brill)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Brill)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Brill)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Brill)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -20968,16 +21445,22 @@ function Trig_Vandermar_Village_Kill_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 512.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Vandermar_Village)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Vandermar_Village)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Vandermar_Village)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Vandermar_Village)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Vandermar_Village)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Vandermar_Village)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -21013,12 +21496,16 @@ function Trig_Solliden_Farmstead_Kill_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 512.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Solliden_Farmstead)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Solliden_Farmstead)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Solliden_Farmstead)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Solliden_Farmstead)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -21384,20 +21871,28 @@ function Trig_Dreadscar_1_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_1)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_1)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_1)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_1)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_1)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_1)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_1)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_1)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -21433,22 +21928,31 @@ function Trig_Dreadscar_2_Actions takes nothing returns nothing
     set udg_TempPoint=GetUnitLoc(GetTriggerUnit())
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_2)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_2)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_2)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_2)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_2)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_2)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_2)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_2)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_2)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -21481,32 +21985,46 @@ function Trig_Dreadscar_3_Conditions takes nothing returns boolean
 endfunction
 
 function Trig_Dreadscar_3_Actions takes nothing returns nothing
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
+    set udg_TempPoint=GetRandomLocInRect(gg_rct_Dreadscar_3)
     call SetBlightRadiusLocBJ(true, Player(0), udg_TempPoint, 200.00)
     call RemoveLocation(udg_TempPoint)
     call DestroyTrigger(GetTriggeringTrigger())
@@ -21532,7 +22050,9 @@ endfunction
 
 function Trig_ScholoOpen_Actions takes nothing returns nothing
     call WaygateActivateBJ(true, gg_unit_n04B_1155)
+    call WaygateSetDestinationLocBJ(gg_unit_n04B_1155, GetRectCenter(gg_rct_Scholomance_Entrance))
     call WaygateActivateBJ(true, gg_unit_n035_1269)
+    call WaygateSetDestinationLocBJ(gg_unit_n035_1269, GetRectCenter(gg_rct_Scholomance_Exit))
 endfunction
 
 //===========================================================================
@@ -21555,11 +22075,11 @@ endfunction
 
 function Trig_Gold_Farm_Loop_Func001Func001A takes nothing returns nothing
     if ( Trig_Gold_Farm_Loop_Func001Func001Func001C() ) then
-        call AdjustPlayerStateBJ(5, Player(9), PLAYER_STATE_RESOURCE_GOLD)
+        call AdjustPlayerStateBJ(6, Player(9), PLAYER_STATE_RESOURCE_GOLD)
         //  
         set udg_StringFarm=""
         if GetLocalPlayer() == udg_ForsakenPlayer then
-        set udg_StringFarm=( "+5" )
+        set udg_StringFarm=( "+6" )
         endif
         call CreateTextTagUnitBJ(udg_StringFarm, GetEnumUnit(), 0, 10.50, 100.00, 80.00, 0.00, 0)
         call SetTextTagLifespanBJ(GetLastCreatedTextTag(), 3.00)
@@ -21567,11 +22087,11 @@ function Trig_Gold_Farm_Loop_Func001Func001A takes nothing returns nothing
         call SetTextTagVelocityBJ(GetLastCreatedTextTag(), 64.00, 90.00)
         call SetTextTagPermanentBJ(GetLastCreatedTextTag(), false)
         set udg_StringFarm=""
-        call AdjustPlayerStateBJ(3, Player(9), PLAYER_STATE_RESOURCE_LUMBER)
+        call AdjustPlayerStateBJ(5, Player(9), PLAYER_STATE_RESOURCE_LUMBER)
         //  
         set udg_StringFarm=""
         if GetLocalPlayer() == udg_ForsakenPlayer then
-        set udg_StringFarm=( "+3" )
+        set udg_StringFarm=( "+5" )
         endif
         call CreateTextTagUnitBJ(udg_StringFarm, GetEnumUnit(), - 60.00, 10.50, 0.00, 100.00, 0.00, 0)
         call SetTextTagLifespanBJ(GetLastCreatedTextTag(), 3.00)
@@ -21689,6 +22209,10 @@ function Trig_Dark_Green_Caster_Building_Construction_Actions takes nothing retu
     call CreateNUnitsAtLocFacingLocBJ(1, 'h05A', udg_StormwindPlayer, udg_TempPoint, Location(9108.00, - 11165.00))
     set udg_SanctumORCathedral=GetLastCreatedUnit()
     call RemoveLocation(udg_TempPoint)
+    call SetDoodadAnimationRectBJ("show", 'D02N', gg_rct_Stromwind_antiship)
+    call SetDoodadAnimationRectBJ("show", 'JOgr', gg_rct_Stromwind_antiship)
+    call SetDoodadAnimationRectBJ("show", 'ZCv2', gg_rct_Cathedral_of_Light)
+    call SetDoodadAnimationRectBJ("show", 'XOmr', gg_rct_Stromwind_antiship)
     call EnableTrigger(gg_trg_Mana_Syphon)
 endfunction
 
@@ -21717,6 +22241,11 @@ function Trig_Dark_Green_Melee_Building_Construction_Actions takes nothing retur
     call CreateNUnitsAtLocFacingLocBJ(1, 'h05J', udg_StormwindPlayer, udg_TempPoint, Location(10390.00, - 12100.00))
     set udg_HeadquartersORHall=GetLastCreatedUnit()
     call RemoveLocation(udg_TempPoint)
+    call SetDoodadAnimationRectBJ("show", 'LOar', gg_rct_Construction_Site_2)
+    call SetDoodadAnimationRectBJ("show", 'YOst', gg_rct_Construction_Site_2)
+    call SetDoodadAnimationRectBJ("show", 'LOwp', gg_rct_Construction_Site_2)
+    call SetDoodadAnimationRectBJ("show", 'LOh1', gg_rct_Construction_Site_2)
+    call SetDoodadAnimationRectBJ("show", 'LOam', gg_rct_Construction_Site_2)
     call SetPlayerAbilityAvailableBJ(true, 'ACav', udg_StormwindPlayer)
 endfunction
 
@@ -21733,10 +22262,6 @@ endfunction
 //===========================================================================
 function Trig_CthunIni_Actions takes nothing returns nothing
     call SetUnitInvulnerable(gg_unit_h02U_2413, true)
-    call AddSpecialEffectTargetUnitBJ("overhead", gg_unit_U00R_0609, "Abilities\\Spells\\Undead\\Sleep\\SleepTarget.mdl")
-    set udg_CthunEffect=GetLastCreatedEffectBJ()
-    call TriggerSleepAction(11.00)
-    call SetUnitTimeScalePercent(gg_unit_U00R_0609, 0.00)
     call PauseUnitBJ(true, gg_unit_U00R_0609)
 endfunction
 
@@ -21749,6 +22274,42 @@ endfunction
 //===========================================================================
 // Trigger: BlackEmpireIni
 //===========================================================================
+function Trig_BlackEmpireIni_Func011002002001 takes nothing returns boolean
+    return ( GetOwningPlayer(GetFilterUnit()) == Player(PLAYER_NEUTRAL_PASSIVE) )
+endfunction
+
+function Trig_BlackEmpireIni_Func011002002002 takes nothing returns boolean
+    return ( GetUnitFoodUsed(GetFilterUnit()) != 10 )
+endfunction
+
+function Trig_BlackEmpireIni_Func011002002 takes nothing returns boolean
+    return GetBooleanAnd((GetOwningPlayer(GetFilterUnit()) == Player(PLAYER_NEUTRAL_PASSIVE)), (GetUnitFoodUsed(GetFilterUnit()) != 10)) // INLINED!!
+endfunction
+
+function Trig_BlackEmpireIni_Func012002002001 takes nothing returns boolean
+    return ( GetOwningPlayer(GetFilterUnit()) == Player(PLAYER_NEUTRAL_PASSIVE) )
+endfunction
+
+function Trig_BlackEmpireIni_Func012002002002 takes nothing returns boolean
+    return ( GetUnitFoodUsed(GetFilterUnit()) != 10 )
+endfunction
+
+function Trig_BlackEmpireIni_Func012002002 takes nothing returns boolean
+    return GetBooleanAnd((GetOwningPlayer(GetFilterUnit()) == Player(PLAYER_NEUTRAL_PASSIVE)), (GetUnitFoodUsed(GetFilterUnit()) != 10)) // INLINED!!
+endfunction
+
+function Trig_BlackEmpireIni_Func013002002001 takes nothing returns boolean
+    return ( GetOwningPlayer(GetFilterUnit()) == Player(PLAYER_NEUTRAL_PASSIVE) )
+endfunction
+
+function Trig_BlackEmpireIni_Func013002002002 takes nothing returns boolean
+    return ( GetUnitFoodUsed(GetFilterUnit()) != 10 )
+endfunction
+
+function Trig_BlackEmpireIni_Func013002002 takes nothing returns boolean
+    return GetBooleanAnd((GetOwningPlayer(GetFilterUnit()) == Player(PLAYER_NEUTRAL_PASSIVE)), (GetUnitFoodUsed(GetFilterUnit()) != 10)) // INLINED!!
+endfunction
+
 function Trig_BlackEmpireIni_Func014002 takes nothing returns nothing
     call SetUnitInvulnerable(GetEnumUnit(), true)
 endfunction
@@ -21777,12 +22338,16 @@ function Trig_BlackEmpireIni_Actions takes nothing returns nothing
     call GroupAddUnitSimple(gg_unit_h03V_0257, udg_BlackEmpirePortals)
     call GroupAddUnitSimple(gg_unit_h03V_1110, udg_BlackEmpirePortals)
     call GroupAddUnitSimple(gg_unit_h03V_0396, udg_BlackEmpirePortals)
+    call CreateFogModifierRectBJ(true, Player(14), FOG_OF_WAR_VISIBLE, gg_rct_NyalothaInstance)
     call SetDestructableInvulnerableBJ(gg_dest_ATg2_35871, true)
     call SetDestructableInvulnerableBJ(gg_dest_ATg1_35873, true)
     call SetDestructableInvulnerableBJ(gg_dest_ATg3_35869, true)
     call SetDestructableInvulnerableBJ(gg_dest_ATg3_35872, true)
     call SetUnitOwner(gg_unit_U02C_2829, Player(PLAYER_NEUTRAL_PASSIVE), true)
     call SetUnitInvulnerable(gg_unit_U02C_2829, true)
+    set udg_NyalothaGroup1=GetUnitsInRectMatching(gg_rct_NyalothaUnlock1, Condition(function Trig_BlackEmpireIni_Func011002002))
+    set udg_NyalothaGroup2=GetUnitsInRectMatching(gg_rct_NyalothaUnlock2, Condition(function Trig_BlackEmpireIni_Func012002002))
+    set udg_NyalothaGroup3=GetUnitsInRectMatching(gg_rct_NyalothaUnlock3, Condition(function Trig_BlackEmpireIni_Func013002002))
     call ForGroupBJ(udg_NyalothaGroup1, function Trig_BlackEmpireIni_Func014002)
     call ForGroupBJ(udg_NyalothaGroup1, function Trig_BlackEmpireIni_Func015002)
     call ForGroupBJ(udg_NyalothaGroup2, function Trig_BlackEmpireIni_Func016002)
@@ -21802,6 +22367,7 @@ endfunction
 // Trigger: Region Atheneum
 //===========================================================================
 function Trig_Region_Atheneum_Actions takes nothing returns nothing
+    call CreateTextTagLocBJ("TRIGSTR_237", GetRectCenter(gg_rct_Region_AE), 225.00, 20.00, 100, 100, 100, 0)
 endfunction
 
 //===========================================================================
@@ -21815,6 +22381,7 @@ endfunction
 // Trigger: Region Azjol Nerub 1
 //===========================================================================
 function Trig_Region_Azjol_Nerub_1_Actions takes nothing returns nothing
+    call CreateTextTagLocBJ("TRIGSTR_1294", GetRectCenter(gg_rct_Region_AZ_1), 350.00, 15.00, 100, 100, 100, 0)
 endfunction
 
 //===========================================================================
@@ -21828,6 +22395,7 @@ endfunction
 // Trigger: Region Azjol Nerub 2
 //===========================================================================
 function Trig_Region_Azjol_Nerub_2_Actions takes nothing returns nothing
+    call CreateTextTagLocBJ("TRIGSTR_3818", GetRectCenter(gg_rct_Region_AZ_2), 350.00, 20.00, 100, 100, 100, 0)
 endfunction
 
 //===========================================================================
@@ -21841,6 +22409,7 @@ endfunction
 // Trigger: Region Blackrock Mountain
 //===========================================================================
 function Trig_Region_Blackrock_Mountain_Actions takes nothing returns nothing
+    call CreateTextTagLocBJ("TRIGSTR_3928", GetRectCenter(gg_rct_Region_BM), 200.00, 20.00, 100, 100, 100, 0)
 endfunction
 
 //===========================================================================
@@ -21854,6 +22423,7 @@ endfunction
 // Trigger: Region Burning Steppes
 //===========================================================================
 function Trig_Region_Burning_Steppes_Actions takes nothing returns nothing
+    call CreateTextTagLocBJ("TRIGSTR_261", GetRectCenter(gg_rct_Region_BS), 200.00, 20.00, 100, 100, 100, 0)
 endfunction
 
 //===========================================================================
@@ -21867,6 +22437,7 @@ endfunction
 // Trigger: Region Icecrown
 //===========================================================================
 function Trig_Region_Icecrown_Actions takes nothing returns nothing
+    call CreateTextTagLocBJ("TRIGSTR_1194", GetRectCenter(gg_rct_Region_DB), 275.00, 15.00, 100, 100, 100, 0)
 endfunction
 
 //===========================================================================
@@ -21880,6 +22451,7 @@ endfunction
 // Trigger: Region Dragonblight
 //===========================================================================
 function Trig_Region_Dragonblight_Actions takes nothing returns nothing
+    call CreateTextTagLocBJ("TRIGSTR_801", GetRectCenter(gg_rct_Region_IC), 275.00, 15.00, 100, 100, 100, 0)
 endfunction
 
 //===========================================================================
@@ -21893,6 +22465,7 @@ endfunction
 // Trigger: Region Scholomance
 //===========================================================================
 function Trig_Region_Scholomance_Actions takes nothing returns nothing
+    call CreateTextTagLocBJ("TRIGSTR_15412", GetRectCenter(gg_rct_Region_SC), 200.00, 15.00, 100, 100, 100, 0)
 endfunction
 
 //===========================================================================
@@ -21906,6 +22479,7 @@ endfunction
 // Trigger: Region Tomb of Sargeras
 //===========================================================================
 function Trig_Region_Tomb_of_Sargeras_Actions takes nothing returns nothing
+    call CreateTextTagLocBJ("TRIGSTR_6655", GetRectCenter(gg_rct_Region_ToS), 250.00, 12.00, 100, 100, 100, 0)
 endfunction
 
 //===========================================================================
@@ -21913,50 +22487,6 @@ function InitTrig_Region_Tomb_of_Sargeras takes nothing returns nothing
     set gg_trg_Region_Tomb_of_Sargeras=CreateTrigger()
     call TriggerRegisterTimerEventSingle(gg_trg_Region_Tomb_of_Sargeras, 65.00)
     call TriggerAddAction(gg_trg_Region_Tomb_of_Sargeras, function Trig_Region_Tomb_of_Sargeras_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: UnleashSoul
-//===========================================================================
-function Trig_UnleashSoul_Conditions takes nothing returns boolean
-    if ( not ( GetSpellAbilityId() == 'A0OX' ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_UnleashSoul_Actions takes nothing returns nothing
-    call UnitAddAbilityBJ('A0OY', GetSpellAbilityUnit())
-endfunction
-
-//===========================================================================
-function InitTrig_UnleashSoul takes nothing returns nothing
-    set gg_trg_UnleashSoul=CreateTrigger()
-    call TriggerRegisterPlayerUnitEventSimple(gg_trg_UnleashSoul, Player(17), EVENT_PLAYER_UNIT_SPELL_CHANNEL)
-    call TriggerAddCondition(gg_trg_UnleashSoul, Condition(function Trig_UnleashSoul_Conditions))
-    call TriggerAddAction(gg_trg_UnleashSoul, function Trig_UnleashSoul_Actions)
-endfunction
-
-//===========================================================================
-// Trigger: UnleashSoulEnd
-//===========================================================================
-function Trig_UnleashSoulEnd_Conditions takes nothing returns boolean
-    if ( not ( GetSpellAbilityId() == 'A0OX' ) ) then
-        return false
-    endif
-    return true
-endfunction
-
-function Trig_UnleashSoulEnd_Actions takes nothing returns nothing
-    call UnitRemoveAbilityBJ('A0OY', GetSpellAbilityUnit())
-endfunction
-
-//===========================================================================
-function InitTrig_UnleashSoulEnd takes nothing returns nothing
-    set gg_trg_UnleashSoulEnd=CreateTrigger()
-    call TriggerRegisterPlayerUnitEventSimple(gg_trg_UnleashSoulEnd, Player(17), EVENT_PLAYER_UNIT_SPELL_ENDCAST)
-    call TriggerAddCondition(gg_trg_UnleashSoulEnd, Condition(function Trig_UnleashSoulEnd_Conditions))
-    call TriggerAddAction(gg_trg_UnleashSoulEnd, function Trig_UnleashSoulEnd_Actions)
 endfunction
 
 //===========================================================================
@@ -22138,6 +22668,7 @@ function Trig_Recall_FT_Copy_Conditions takes nothing returns boolean
 endfunction
 
 function Trig_Recall_FT_Copy_Actions takes nothing returns nothing
+    set udg_FTSummon=GetRectCenter(gg_rct_FTSummon)
     call SetUnitPositionLoc(GetSpellTargetUnit(), udg_FTSummon)
     call RemoveLocation(udg_FTSummon)
 endfunction
@@ -22463,6 +22994,7 @@ function InitCustomTriggers takes nothing returns nothing
     call InitTrig_PatronIni()
     call InitTrig_Intros()
     call InitTrig_IntroText()
+    call InitTrig_FoodIni()
     call InitTrig_QuestInit()
     call InitTrig_Terrain_Initialization()
     call InitTrig_Hide_blockers()
@@ -22507,12 +23039,13 @@ function InitCustomTriggers takes nothing returns nothing
     call InitTrig_Shipyard_Cancellation_Rects()
     call InitTrig_Unique_Regen_Ring()
     call InitTrig_Unique_Regen_Ring_Copy()
-    call InitTrig_Anti_Wind_Walk_Worker()
+    call InitTrig_Anti_Diamond_of_summoning()
     call InitTrig_Antiportal_Camping()
     call InitTrig_Antiportal_Camping_inside()
     call InitTrig_Cancel_Shipyards()
     call InitTrig_Ironforge_protection()
     call InitTrig_Stormwind_protection()
+    call InitTrig_NazjatarProtection()
     call InitTrig_High_Elves_Protection_2()
     call InitTrig_Capital_antisuicide()
     call InitTrig_Capital_Palace_Protection()
@@ -22520,6 +23053,10 @@ function InitCustomTriggers takes nothing returns nothing
     call InitTrig_Stratholme_Protection()
     call InitTrig_Tyrs_Hand_Protection()
     call InitTrig_Throne_Protection_2()
+    call InitTrig_GoblinProtection()
+    call InitTrig_NajzatarRemoval()
+    call InitTrig_RemoveWorkerDraenei()
+    call InitTrig_Turn22Pass()
     call InitTrig_Tomb_Unlock()
     call InitTrig_RemoveKalimRocks()
     call InitTrig_Book_of_Medivh_retrieval()
@@ -22529,23 +23066,7 @@ function InitCustomTriggers takes nothing returns nothing
     call InitTrig_CinematicMusicIni()
     call InitTrig_Intros_Cinematic()
     call InitTrig_Intro_End()
-    call InitTrig_GilneasCinematic()
     call InitTrig_NagaCinematic()
-    call InitTrig_INI_Gilneas()
-    call InitTrig_GilneasHint1()
-    call InitTrig_GilneasHint2_Copy()
-    call InitTrig_GilneasHint2()
-    call InitTrig_DayTrigger()
-    call InitTrig_NightTrigger()
-    call InitTrig_Curse_Converstion()
-    call InitTrig_Curse_ConverstionShaman()
-    call InitTrig_InnerFight()
-    call InitTrig_NightAttack1()
-    call InitTrig_NightAttack2()
-    call InitTrig_Citizen_spawns_Copy()
-    call InitTrig_Chapter2()
-    call InitTrig_Chapter_3()
-    call InitTrig_GilneasCampaignVictory()
     call InitTrig_IllidariINI()
     call InitTrig_ReachDiremaul()
     call InitTrig_Enter_Aetheneum()
@@ -22567,6 +23088,7 @@ function InitCustomTriggers takes nothing returns nothing
     call InitTrig_Naga_Timer_Reset()
     call InitTrig_NagaBaseUnlock()
     call InitTrig_IllidariPath()
+    call InitTrig_Untitled_Trigger_001()
     call InitTrig_ObsMinimapReset()
     call InitTrig_ObsPlayer14()
     //Function not found: call InitTrig_GUIUnitReferences()
@@ -22575,7 +23097,9 @@ function InitCustomTriggers takes nothing returns nothing
     call InitTrig_Custom_Camera()
     call InitTrig_clear_command()
     call InitTrig_Reset_Copy()
-    call InitTrig_info()
+    call InitTrig_TaxeBuildingStop()
+    call InitTrig_AddCastlesToTaxe()
+    call InitTrig_TaxeIncome()
     call InitTrig_MonasteryCollapse()
     call InitTrig_ArtilleryFireWarning()
     call InitTrig_ArtilleryFire()
@@ -22587,9 +23111,6 @@ function InitCustomTriggers takes nothing returns nothing
     call InitTrig_ZeppelinLumberTrade()
     call InitTrig_OilPlatformLoop()
     call InitTrig_DiscoveringOil()
-    call InitTrig_OilRigDies()
-    call InitTrig_BlademasterDie()
-    call InitTrig_ShipDie()
     call InitTrig_ShipLand()
     call InitTrig_ShipOpen()
     call InitTrig_ShipClose()
@@ -22598,18 +23119,11 @@ function InitCustomTriggers takes nothing returns nothing
     call InitTrig_VisionoftheOldOnes()
     call InitTrig_CorruptWorker()
     call InitTrig_GoldCultistLoop()
-    call InitTrig_NexusResearch()
-    call InitTrig_Demon_Gate_INI()
-    call InitTrig_Hellfire_Death()
-    call InitTrig_Doom_Towers_North()
-    call InitTrig_Doom_Towers_South()
-    call InitTrig_Throne_of_Kiljaeden_rally()
-    call InitTrig_Sea_Witch_1()
-    call InitTrig_IronforgeDies()
-    call InitTrig_LegionSummonInit_Copy()
+    call InitTrig_LegionSummonStop()
     call InitTrig_Legion_No_Book_Summon_Timer_Copy()
     call InitTrig_Legion_Summon_Copy()
     call InitTrig_Legion_No_Book_Finish_Copy()
+    call InitTrig_WalkingMonolith()
     call InitTrig_HeroImmunityTurnOff()
     call InitTrig_Lordaeron_West()
     call InitTrig_Scarlet_Monastery_Dies()
@@ -22666,8 +23180,6 @@ function InitCustomTriggers takes nothing returns nothing
     call InitTrig_Region_Dragonblight()
     call InitTrig_Region_Scholomance()
     call InitTrig_Region_Tomb_of_Sargeras()
-    call InitTrig_UnleashSoul()
-    call InitTrig_UnleashSoulEnd()
     call InitTrig_Devour()
     call InitTrig_Mana_Syphon()
     call InitTrig_Unstable_Kaboom()
@@ -22691,6 +23203,7 @@ endfunction
 function RunInitializationTriggers takes nothing returns nothing
     call ConditionalTriggerExecute(gg_trg_PatronIni)
     call ConditionalTriggerExecute(gg_trg_Intros)
+    call ConditionalTriggerExecute(gg_trg_FoodIni)
     call ConditionalTriggerExecute(gg_trg_Hide_blockers)
     call ConditionalTriggerExecute(gg_trg_Neutral_Victim_init)
     call ConditionalTriggerExecute(gg_trg_Neutral_and_Hostile_Unit_Initialization)
@@ -22708,7 +23221,6 @@ function RunInitializationTriggers takes nothing returns nothing
     call ConditionalTriggerExecute(gg_trg_Group_Hiding_and_Invuln)
     call ConditionalTriggerExecute(gg_trg_Intros_Cinematic)
     call ConditionalTriggerExecute(gg_trg_IllidariINI)
-    call ConditionalTriggerExecute(gg_trg_LegionSummonInit_Copy)
     call ConditionalTriggerExecute(gg_trg_CthunIni)
 endfunction
 
@@ -22985,6 +23497,9 @@ function InitUpgrades_Player0 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(0), 'R006', 3)
     call SetPlayerTechMaxAllowed(Player(0), 'R00C', 3)
     call SetPlayerTechResearched(Player(0), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(0), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player1 takes nothing returns nothing
@@ -23254,6 +23769,9 @@ function InitUpgrades_Player1 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(1), 'R06O', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'R06Q', 0)
     call SetPlayerTechResearched(Player(1), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(1), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player2 takes nothing returns nothing
@@ -23524,6 +24042,9 @@ function InitUpgrades_Player2 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(2), 'R006', 3)
     call SetPlayerTechMaxAllowed(Player(2), 'R00C', 3)
     call SetPlayerTechResearched(Player(2), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(2), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player3 takes nothing returns nothing
@@ -23791,6 +24312,9 @@ function InitUpgrades_Player3 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(3), 'R006', 3)
     call SetPlayerTechMaxAllowed(Player(3), 'R00C', 3)
     call SetPlayerTechResearched(Player(3), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(3), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player4 takes nothing returns nothing
@@ -24059,6 +24583,9 @@ function InitUpgrades_Player4 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(4), 'R006', 3)
     call SetPlayerTechMaxAllowed(Player(4), 'R00C', 3)
     call SetPlayerTechResearched(Player(4), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(4), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player5 takes nothing returns nothing
@@ -24328,6 +24855,9 @@ function InitUpgrades_Player5 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(5), 'R006', 3)
     call SetPlayerTechMaxAllowed(Player(5), 'R00C', 3)
     call SetPlayerTechResearched(Player(5), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(5), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player6 takes nothing returns nothing
@@ -24598,6 +25128,9 @@ function InitUpgrades_Player6 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(6), 'R006', 3)
     call SetPlayerTechMaxAllowed(Player(6), 'R00C', 3)
     call SetPlayerTechResearched(Player(6), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(6), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player7 takes nothing returns nothing
@@ -24867,6 +25400,9 @@ function InitUpgrades_Player7 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(7), 'R006', 3)
     call SetPlayerTechMaxAllowed(Player(7), 'R00C', 3)
     call SetPlayerTechResearched(Player(7), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(7), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player8 takes nothing returns nothing
@@ -25136,6 +25672,9 @@ function InitUpgrades_Player8 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(8), 'R006', 3)
     call SetPlayerTechMaxAllowed(Player(8), 'R00C', 3)
     call SetPlayerTechResearched(Player(8), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(8), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player9 takes nothing returns nothing
@@ -25405,6 +25944,9 @@ function InitUpgrades_Player9 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(9), 'R006', 3)
     call SetPlayerTechMaxAllowed(Player(9), 'R00C', 3)
     call SetPlayerTechResearched(Player(9), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(9), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player10 takes nothing returns nothing
@@ -25674,6 +26216,9 @@ function InitUpgrades_Player10 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(10), 'R006', 3)
     call SetPlayerTechMaxAllowed(Player(10), 'R00C', 3)
     call SetPlayerTechResearched(Player(10), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(10), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player11 takes nothing returns nothing
@@ -25943,6 +26488,9 @@ function InitUpgrades_Player11 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(11), 'R006', 3)
     call SetPlayerTechMaxAllowed(Player(11), 'R00C', 3)
     call SetPlayerTechResearched(Player(11), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(11), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player12 takes nothing returns nothing
@@ -26189,6 +26737,9 @@ function InitUpgrades_Player12 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(12), 'R06G', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'R06K', 0)
     call SetPlayerTechResearched(Player(12), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(12), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player13 takes nothing returns nothing
@@ -26435,6 +26986,9 @@ function InitUpgrades_Player13 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(13), 'Rhme', 8)
     call SetPlayerTechMaxAllowed(Player(13), 'R06G', 0)
     call SetPlayerTechResearched(Player(13), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(13), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player14 takes nothing returns nothing
@@ -26695,6 +27249,9 @@ function InitUpgrades_Player14 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(14), 'R06O', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'R06Q', 0)
     call SetPlayerTechResearched(Player(14), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(14), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player15 takes nothing returns nothing
@@ -26959,6 +27516,9 @@ function InitUpgrades_Player15 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(15), 'R006', 3)
     call SetPlayerTechMaxAllowed(Player(15), 'R00C', 3)
     call SetPlayerTechResearched(Player(15), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(15), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player16 takes nothing returns nothing
@@ -27222,6 +27782,9 @@ function InitUpgrades_Player16 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(16), 'R001', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'R006', 3)
     call SetPlayerTechMaxAllowed(Player(16), 'R00C', 3)
+    call SetPlayerTechMaxAllowed(Player(16), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player17 takes nothing returns nothing
@@ -27229,6 +27792,9 @@ function InitUpgrades_Player17 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(17), 'Rhme', 8)
     call SetPlayerTechMaxAllowed(Player(17), 'R06G', 0)
     call SetPlayerTechResearched(Player(17), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(17), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player18 takes nothing returns nothing
@@ -27451,6 +28017,9 @@ function InitUpgrades_Player18 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(18), 'R006', 3)
     call SetPlayerTechMaxAllowed(Player(18), 'R00C', 3)
     call SetPlayerTechResearched(Player(18), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(18), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player19 takes nothing returns nothing
@@ -27673,6 +28242,9 @@ function InitUpgrades_Player19 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(19), 'R006', 3)
     call SetPlayerTechMaxAllowed(Player(19), 'R00C', 3)
     call SetPlayerTechResearched(Player(19), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(19), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player20 takes nothing returns nothing
@@ -27896,6 +28468,9 @@ function InitUpgrades_Player20 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(20), 'R006', 3)
     call SetPlayerTechMaxAllowed(Player(20), 'R00C', 3)
     call SetPlayerTechResearched(Player(20), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(20), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player21 takes nothing returns nothing
@@ -27903,6 +28478,9 @@ function InitUpgrades_Player21 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(21), 'Rhme', 8)
     call SetPlayerTechMaxAllowed(Player(21), 'R06G', 0)
     call SetPlayerTechResearched(Player(21), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(21), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player22 takes nothing returns nothing
@@ -27910,6 +28488,9 @@ function InitUpgrades_Player22 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(22), 'Rhme', 8)
     call SetPlayerTechMaxAllowed(Player(22), 'R06G', 0)
     call SetPlayerTechResearched(Player(22), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(22), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'R08K', 0)
 endfunction
 
 function InitUpgrades_Player23 takes nothing returns nothing
@@ -27917,6 +28498,9 @@ function InitUpgrades_Player23 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(23), 'Rhme', 8)
     call SetPlayerTechMaxAllowed(Player(23), 'R06G', 0)
     call SetPlayerTechResearched(Player(23), 'R06A', 1)
+    call SetPlayerTechMaxAllowed(Player(23), 'R078', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'R07C', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'R08K', 0)
 endfunction
 
 function InitUpgrades takes nothing returns nothing
@@ -27961,6 +28545,7 @@ function InitTechTree_Player0 takes nothing returns nothing
     call SetPlayerAbilityAvailable(Player(0), 'A0GD', false)
     call SetPlayerAbilityAvailable(Player(0), 'A0GA', false)
     call SetPlayerAbilityAvailable(Player(0), 'A0CY', false)
+    call SetPlayerAbilityAvailable(Player(0), 'A0TL', false)
     call SetPlayerTechMaxAllowed(Player(0), 'htow', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'hkee', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'hcas', 0)
@@ -27976,7 +28561,6 @@ function InitTechTree_Player0 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(0), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(0), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'h008', 0)
@@ -28222,7 +28806,6 @@ function InitTechTree_Player0 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(0), 'u00Q', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'u015', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'ospw', 0)
-    call SetPlayerTechMaxAllowed(Player(0), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'h048', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'h042', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'h04V', 0)
@@ -28530,7 +29113,6 @@ function InitTechTree_Player0 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(0), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(0), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'o02M', 0)
@@ -28810,7 +29392,75 @@ function InitTechTree_Player0 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(0), 'I00Z', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'E01E', 0)
-    call SetPlayerTechMaxAllowed(Player(0), 'A0TL', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'h00B', 0)
+    call SetPlayerTechMaxAllowed(Player(0), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'I01R', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'I01Q', 0)
     call SetPlayerTechMaxAllowed(Player(0), 'demo', 0)
@@ -28847,6 +29497,7 @@ function InitTechTree_Player1 takes nothing returns nothing
     call SetPlayerAbilityAvailable(Player(1), 'A0NP', false)
     call SetPlayerAbilityAvailable(Player(1), 'A0MQ', false)
     call SetPlayerAbilityAvailable(Player(1), 'A01I', false)
+    call SetPlayerAbilityAvailable(Player(1), 'A0TL', false)
     call SetPlayerTechMaxAllowed(Player(1), 'htow', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'hkee', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'hcas', 0)
@@ -28862,7 +29513,6 @@ function InitTechTree_Player1 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(1), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(1), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'h008', 0)
@@ -29103,7 +29753,6 @@ function InitTechTree_Player1 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(1), 'u00Q', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'u015', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'ospw', 0)
-    call SetPlayerTechMaxAllowed(Player(1), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'h048', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'h042', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'h04V', 0)
@@ -29408,7 +30057,6 @@ function InitTechTree_Player1 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(1), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(1), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'o02M', 0)
@@ -29687,7 +30335,75 @@ function InitTechTree_Player1 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(1), 'I00Z', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'E01E', 0)
-    call SetPlayerTechMaxAllowed(Player(1), 'A0TL', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'h00B', 0)
+    call SetPlayerTechMaxAllowed(Player(1), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'I01Q', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'demo', 0)
     call SetPlayerTechMaxAllowed(Player(1), 'h05L', 0)
@@ -29717,6 +30433,7 @@ function InitTechTree_Player2 takes nothing returns nothing
     call SetPlayerAbilityAvailable(Player(2), 'A0GA', false)
     call SetPlayerAbilityAvailable(Player(2), 'A0CY', false)
     call SetPlayerAbilityAvailable(Player(2), 'A0IG', false)
+    call SetPlayerAbilityAvailable(Player(2), 'A0TL', false)
     call SetPlayerTechMaxAllowed(Player(2), 'htow', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'hkee', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'hcas', 0)
@@ -29732,7 +30449,6 @@ function InitTechTree_Player2 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(2), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(2), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'h008', 0)
@@ -29981,7 +30697,6 @@ function InitTechTree_Player2 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(2), 'u00Q', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'u015', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'ospw', 0)
-    call SetPlayerTechMaxAllowed(Player(2), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'h048', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'h042', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'h04V', 0)
@@ -30283,7 +30998,6 @@ function InitTechTree_Player2 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(2), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(2), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'o02M', 0)
@@ -30562,7 +31276,75 @@ function InitTechTree_Player2 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(2), 'I00Z', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'E01E', 0)
-    call SetPlayerTechMaxAllowed(Player(2), 'A0TL', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'h00B', 0)
+    call SetPlayerTechMaxAllowed(Player(2), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'I01R', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'demo', 0)
     call SetPlayerTechMaxAllowed(Player(2), 'h05L', 0)
@@ -30595,6 +31377,7 @@ function InitTechTree_Player3 takes nothing returns nothing
     call SetPlayerAbilityAvailable(Player(3), 'A0GC', false)
     call SetPlayerAbilityAvailable(Player(3), 'A0GD', false)
     call SetPlayerAbilityAvailable(Player(3), 'A0CY', false)
+    call SetPlayerAbilityAvailable(Player(3), 'A0TL', false)
     call SetPlayerTechMaxAllowed(Player(3), 'htow', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'hkee', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'hcas', 0)
@@ -30610,7 +31393,6 @@ function InitTechTree_Player3 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(3), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(3), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'h008', 0)
@@ -30856,7 +31638,6 @@ function InitTechTree_Player3 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(3), 'u00Q', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'u015', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'ospw', 0)
-    call SetPlayerTechMaxAllowed(Player(3), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'h048', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'h042', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'h04V', 0)
@@ -31165,7 +31946,6 @@ function InitTechTree_Player3 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(3), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(3), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'o02M', 0)
@@ -31444,7 +32224,75 @@ function InitTechTree_Player3 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(3), 'I00Z', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'E01E', 0)
-    call SetPlayerTechMaxAllowed(Player(3), 'A0TL', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'h00B', 0)
+    call SetPlayerTechMaxAllowed(Player(3), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'I01R', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'I01Q', 0)
     call SetPlayerTechMaxAllowed(Player(3), 'demo', 0)
@@ -31477,6 +32325,9 @@ function InitTechTree_Player4 takes nothing returns nothing
     call SetPlayerAbilityAvailable(Player(4), 'A0CK', false)
     call SetPlayerAbilityAvailable(Player(4), 'A0F9', false)
     call SetPlayerAbilityAvailable(Player(4), 'A0IG', false)
+    call SetPlayerAbilityAvailable(Player(4), 'A0TL', false)
+    call SetPlayerAbilityAvailable(Player(4), 'A0V4', false)
+    call SetPlayerAbilityAvailable(Player(4), 'A0V6', false)
     call SetPlayerTechMaxAllowed(Player(4), 'htow', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'hkee', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'hcas', 0)
@@ -31492,7 +32343,6 @@ function InitTechTree_Player4 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(4), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(4), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'h008', 0)
@@ -31736,7 +32586,6 @@ function InitTechTree_Player4 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(4), 'u00Q', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'u015', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'ospw', 0)
-    call SetPlayerTechMaxAllowed(Player(4), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'h048', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'h042', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'h04V', 0)
@@ -32036,7 +32885,6 @@ function InitTechTree_Player4 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(4), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(4), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'o02M', 0)
@@ -32314,18 +33162,84 @@ function InitTechTree_Player4 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(4), 'n0AQ', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'E01E', 0)
-    call SetPlayerTechMaxAllowed(Player(4), 'A0TL', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'h00B', 0)
+    call SetPlayerTechMaxAllowed(Player(4), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'demo', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'h05L', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'h04A', 0)
-    call SetPlayerTechMaxAllowed(Player(4), 'A0V6', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'e015', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'e016', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'o01P', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'o01Q', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'u00L', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'o026', 0)
-    call SetPlayerTechMaxAllowed(Player(4), 'A0V4', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'u00M', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'o023', 0)
     call SetPlayerTechMaxAllowed(Player(4), 'o024', 0)
@@ -32343,6 +33257,7 @@ function InitTechTree_Player5 takes nothing returns nothing
     call SetPlayerAbilityAvailable(Player(5), 'A0GD', false)
     call SetPlayerAbilityAvailable(Player(5), 'A0GA', false)
     call SetPlayerAbilityAvailable(Player(5), 'A0CY', false)
+    call SetPlayerAbilityAvailable(Player(5), 'A0TL', false)
     call SetPlayerTechMaxAllowed(Player(5), 'htow', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'hkee', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'hcas', 0)
@@ -32358,7 +33273,6 @@ function InitTechTree_Player5 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(5), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(5), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'h008', 0)
@@ -32603,7 +33517,6 @@ function InitTechTree_Player5 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(5), 'u00Q', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'u015', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'ospw', 0)
-    call SetPlayerTechMaxAllowed(Player(5), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'h048', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'h042', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'h04V', 0)
@@ -32899,7 +33812,6 @@ function InitTechTree_Player5 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(5), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(5), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'o02M', 0)
@@ -33178,7 +34090,75 @@ function InitTechTree_Player5 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(5), 'I00Z', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'E01E', 0)
-    call SetPlayerTechMaxAllowed(Player(5), 'A0TL', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'h00B', 0)
+    call SetPlayerTechMaxAllowed(Player(5), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'H03L', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'demo', 0)
     call SetPlayerTechMaxAllowed(Player(5), 'h05L', 0)
@@ -33209,6 +34189,7 @@ function InitTechTree_Player6 takes nothing returns nothing
     call SetPlayerAbilityAvailable(Player(6), 'A0GD', false)
     call SetPlayerAbilityAvailable(Player(6), 'A0GA', false)
     call SetPlayerAbilityAvailable(Player(6), 'A0CY', false)
+    call SetPlayerAbilityAvailable(Player(6), 'A0TL', false)
     call SetPlayerTechMaxAllowed(Player(6), 'htow', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'hkee', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'hcas', 0)
@@ -33224,7 +34205,6 @@ function InitTechTree_Player6 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(6), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(6), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'h008', 0)
@@ -33469,7 +34449,6 @@ function InitTechTree_Player6 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(6), 'u00Q', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'u015', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'ospw', 0)
-    call SetPlayerTechMaxAllowed(Player(6), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'h048', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'h042', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'h04V', 0)
@@ -33766,7 +34745,6 @@ function InitTechTree_Player6 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(6), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(6), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'o02M', 0)
@@ -34045,7 +35023,75 @@ function InitTechTree_Player6 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(6), 'I00Z', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'E01E', 0)
-    call SetPlayerTechMaxAllowed(Player(6), 'A0TL', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'h00B', 0)
+    call SetPlayerTechMaxAllowed(Player(6), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'demo', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'h05L', 0)
     call SetPlayerTechMaxAllowed(Player(6), 'h04A', 0)
@@ -34075,6 +35121,7 @@ function InitTechTree_Player7 takes nothing returns nothing
     call SetPlayerAbilityAvailable(Player(7), 'A0GD', false)
     call SetPlayerAbilityAvailable(Player(7), 'A0GA', false)
     call SetPlayerAbilityAvailable(Player(7), 'A0CY', false)
+    call SetPlayerAbilityAvailable(Player(7), 'A0TL', false)
     call SetPlayerTechMaxAllowed(Player(7), 'htow', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'hkee', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'hcas', 0)
@@ -34090,7 +35137,6 @@ function InitTechTree_Player7 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(7), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(7), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'h008', 0)
@@ -34336,7 +35382,6 @@ function InitTechTree_Player7 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(7), 'u00Q', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'u015', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'ospw', 0)
-    call SetPlayerTechMaxAllowed(Player(7), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'h048', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'h042', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'h04V', 0)
@@ -34633,7 +35678,6 @@ function InitTechTree_Player7 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(7), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(7), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'o02M', 0)
@@ -34912,7 +35956,75 @@ function InitTechTree_Player7 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(7), 'I00Z', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'E01E', 0)
-    call SetPlayerTechMaxAllowed(Player(7), 'A0TL', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'h00B', 0)
+    call SetPlayerTechMaxAllowed(Player(7), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'demo', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'h05L', 0)
     call SetPlayerTechMaxAllowed(Player(7), 'h04A', 0)
@@ -34944,6 +36056,7 @@ function InitTechTree_Player8 takes nothing returns nothing
     call SetPlayerAbilityAvailable(Player(8), 'A0GD', false)
     call SetPlayerAbilityAvailable(Player(8), 'A0GA', false)
     call SetPlayerAbilityAvailable(Player(8), 'A0CY', false)
+    call SetPlayerAbilityAvailable(Player(8), 'A0TL', false)
     call SetPlayerTechMaxAllowed(Player(8), 'htow', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'hkee', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'hcas', 0)
@@ -34959,7 +36072,6 @@ function InitTechTree_Player8 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(8), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(8), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'h008', 0)
@@ -35203,7 +36315,6 @@ function InitTechTree_Player8 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(8), 'u00Q', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'u015', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'ospw', 0)
-    call SetPlayerTechMaxAllowed(Player(8), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'h048', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'h042', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'h04V', 0)
@@ -35500,7 +36611,6 @@ function InitTechTree_Player8 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(8), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(8), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'o02M', 0)
@@ -35779,7 +36889,75 @@ function InitTechTree_Player8 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(8), 'I00Z', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'E01E', 0)
-    call SetPlayerTechMaxAllowed(Player(8), 'A0TL', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'h00B', 0)
+    call SetPlayerTechMaxAllowed(Player(8), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'demo', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'h05L', 0)
     call SetPlayerTechMaxAllowed(Player(8), 'h04A', 0)
@@ -35811,6 +36989,7 @@ function InitTechTree_Player9 takes nothing returns nothing
     call SetPlayerAbilityAvailable(Player(9), 'A0GD', false)
     call SetPlayerAbilityAvailable(Player(9), 'A0GA', false)
     call SetPlayerAbilityAvailable(Player(9), 'A0CY', false)
+    call SetPlayerAbilityAvailable(Player(9), 'A0TL', false)
     call SetPlayerTechMaxAllowed(Player(9), 'htow', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'hkee', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'hcas', 0)
@@ -35826,7 +37005,6 @@ function InitTechTree_Player9 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(9), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(9), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'h008', 0)
@@ -36069,7 +37247,6 @@ function InitTechTree_Player9 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(9), 'u00Q', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'u015', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'ospw', 0)
-    call SetPlayerTechMaxAllowed(Player(9), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'h048', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'h042', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'h04V', 0)
@@ -36363,7 +37540,6 @@ function InitTechTree_Player9 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(9), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(9), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'o02M', 0)
@@ -36642,7 +37818,75 @@ function InitTechTree_Player9 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(9), 'I00Z', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'E01E', 0)
-    call SetPlayerTechMaxAllowed(Player(9), 'A0TL', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'h00B', 0)
+    call SetPlayerTechMaxAllowed(Player(9), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'demo', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'h05L', 0)
     call SetPlayerTechMaxAllowed(Player(9), 'h04A', 0)
@@ -36670,6 +37914,7 @@ function InitTechTree_Player10 takes nothing returns nothing
     call SetPlayerAbilityAvailable(Player(10), 'A0GC', false)
     call SetPlayerAbilityAvailable(Player(10), 'A0GA', false)
     call SetPlayerAbilityAvailable(Player(10), 'A0CY', false)
+    call SetPlayerAbilityAvailable(Player(10), 'A0TL', false)
     call SetPlayerTechMaxAllowed(Player(10), 'htow', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'hkee', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'hcas', 0)
@@ -36685,7 +37930,6 @@ function InitTechTree_Player10 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(10), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(10), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'h008', 0)
@@ -36930,7 +38174,6 @@ function InitTechTree_Player10 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(10), 'u00Q', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'u015', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'ospw', 0)
-    call SetPlayerTechMaxAllowed(Player(10), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'h048', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'h042', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'h04V', 0)
@@ -37227,7 +38470,6 @@ function InitTechTree_Player10 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(10), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(10), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'o02M', 0)
@@ -37505,7 +38747,75 @@ function InitTechTree_Player10 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(10), 'I00Z', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'E01E', 0)
-    call SetPlayerTechMaxAllowed(Player(10), 'A0TL', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'h00B', 0)
+    call SetPlayerTechMaxAllowed(Player(10), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'demo', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'h05L', 0)
     call SetPlayerTechMaxAllowed(Player(10), 'h04A', 0)
@@ -37537,6 +38847,7 @@ function InitTechTree_Player11 takes nothing returns nothing
     call SetPlayerAbilityAvailable(Player(11), 'A0GD', false)
     call SetPlayerAbilityAvailable(Player(11), 'A0GA', false)
     call SetPlayerAbilityAvailable(Player(11), 'A0CY', false)
+    call SetPlayerAbilityAvailable(Player(11), 'A0TL', false)
     call SetPlayerTechMaxAllowed(Player(11), 'htow', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'hkee', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'hcas', 0)
@@ -37552,7 +38863,6 @@ function InitTechTree_Player11 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(11), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(11), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'h008', 0)
@@ -37794,7 +39104,6 @@ function InitTechTree_Player11 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(11), 'u00Q', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'u015', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'ospw', 0)
-    call SetPlayerTechMaxAllowed(Player(11), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'h048', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'h042', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'h04V', 0)
@@ -38090,7 +39399,6 @@ function InitTechTree_Player11 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(11), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(11), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'o02M', 0)
@@ -38369,7 +39677,75 @@ function InitTechTree_Player11 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(11), 'I00Z', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'E01E', 0)
-    call SetPlayerTechMaxAllowed(Player(11), 'A0TL', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'h00B', 0)
+    call SetPlayerTechMaxAllowed(Player(11), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'demo', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'h05L', 0)
     call SetPlayerTechMaxAllowed(Player(11), 'h04A', 0)
@@ -38411,7 +39787,6 @@ function InitTechTree_Player12 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(12), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(12), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'h008', 0)
@@ -38637,7 +40012,6 @@ function InitTechTree_Player12 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(12), 'u00Q', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'u015', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'ospw', 0)
-    call SetPlayerTechMaxAllowed(Player(12), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'h048', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'h042', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'h04V', 0)
@@ -38799,6 +40173,7 @@ function InitTechTree_Player12 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(12), 'h05K', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'h03T', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'o02I', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'nmdr', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'u00O', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'h067', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'n0AK', 0)
@@ -38913,7 +40288,6 @@ function InitTechTree_Player12 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(12), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(12), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'o02M', 0)
@@ -39185,6 +40559,75 @@ function InitTechTree_Player12 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(12), 'n0AQ', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'E01E', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'h00B', 0)
+    call SetPlayerTechMaxAllowed(Player(12), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'h04A', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'e015', 0)
     call SetPlayerTechMaxAllowed(Player(12), 'e016', 0)
@@ -39217,7 +40660,6 @@ function InitTechTree_Player13 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(13), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(13), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'h008', 0)
@@ -39443,7 +40885,6 @@ function InitTechTree_Player13 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(13), 'u00Q', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'u015', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'ospw', 0)
-    call SetPlayerTechMaxAllowed(Player(13), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'h048', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'h042', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'h04V', 0)
@@ -39605,6 +41046,7 @@ function InitTechTree_Player13 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(13), 'h05K', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'h03T', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'o02I', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'nmdr', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'u00O', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'h067', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'n0AK', 0)
@@ -39719,7 +41161,6 @@ function InitTechTree_Player13 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(13), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(13), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'o02M', 0)
@@ -39991,6 +41432,75 @@ function InitTechTree_Player13 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(13), 'n0AQ', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'E01E', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'h00B', 0)
+    call SetPlayerTechMaxAllowed(Player(13), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'h04A', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'e015', 0)
     call SetPlayerTechMaxAllowed(Player(13), 'e016', 0)
@@ -40003,6 +41513,7 @@ function InitTechTree_Player13 takes nothing returns nothing
 endfunction
 
 function InitTechTree_Player14 takes nothing returns nothing
+    call SetPlayerAbilityAvailable(Player(14), 'A0TL', false)
     call SetPlayerTechMaxAllowed(Player(14), 'htow', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'hkee', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'hcas', 0)
@@ -40018,7 +41529,6 @@ function InitTechTree_Player14 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(14), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(14), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'h008', 0)
@@ -40247,7 +41757,6 @@ function InitTechTree_Player14 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(14), 'u00Q', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'u015', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'ospw', 0)
-    call SetPlayerTechMaxAllowed(Player(14), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'h048', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'h042', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'h04V', 0)
@@ -40533,7 +42042,6 @@ function InitTechTree_Player14 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(14), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(14), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'o02M', 0)
@@ -40810,7 +42318,75 @@ function InitTechTree_Player14 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(14), 'n0AQ', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'E01E', 0)
-    call SetPlayerTechMaxAllowed(Player(14), 'A0TL', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'h00B', 0)
+    call SetPlayerTechMaxAllowed(Player(14), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'demo', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'h05L', 0)
     call SetPlayerTechMaxAllowed(Player(14), 'h04A', 0)
@@ -40823,6 +42399,7 @@ function InitTechTree_Player14 takes nothing returns nothing
 endfunction
 
 function InitTechTree_Player15 takes nothing returns nothing
+    call SetPlayerAbilityAvailable(Player(15), 'A0TL', false)
     call SetPlayerTechMaxAllowed(Player(15), 'htow', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'hkee', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'hcas', 0)
@@ -40838,7 +42415,6 @@ function InitTechTree_Player15 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(15), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(15), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'h008', 0)
@@ -41067,7 +42643,6 @@ function InitTechTree_Player15 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(15), 'u00Q', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'u015', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'ospw', 0)
-    call SetPlayerTechMaxAllowed(Player(15), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'h048', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'h042', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'h04V', 0)
@@ -41353,7 +42928,6 @@ function InitTechTree_Player15 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(15), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(15), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'o02M', 0)
@@ -41630,7 +43204,75 @@ function InitTechTree_Player15 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(15), 'n0AQ', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'E01E', 0)
-    call SetPlayerTechMaxAllowed(Player(15), 'A0TL', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'h00B', 0)
+    call SetPlayerTechMaxAllowed(Player(15), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'demo', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'h05L', 0)
     call SetPlayerTechMaxAllowed(Player(15), 'h04A', 0)
@@ -41643,6 +43285,7 @@ function InitTechTree_Player15 takes nothing returns nothing
 endfunction
 
 function InitTechTree_Player16 takes nothing returns nothing
+    call SetPlayerAbilityAvailable(Player(16), 'A0TL', false)
     call SetPlayerTechMaxAllowed(Player(16), 'htow', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'hkee', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'hcas', 0)
@@ -41658,7 +43301,6 @@ function InitTechTree_Player16 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(16), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(16), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'h008', 0)
@@ -41887,7 +43529,6 @@ function InitTechTree_Player16 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(16), 'u00Q', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'u015', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'ospw', 0)
-    call SetPlayerTechMaxAllowed(Player(16), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'h048', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'h042', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'h04V', 0)
@@ -42173,7 +43814,6 @@ function InitTechTree_Player16 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(16), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(16), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'o02M', 0)
@@ -42450,7 +44090,75 @@ function InitTechTree_Player16 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(16), 'n0AQ', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'E01E', 0)
-    call SetPlayerTechMaxAllowed(Player(16), 'A0TL', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'h00B', 0)
+    call SetPlayerTechMaxAllowed(Player(16), 'h02P', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'demo', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'h05L', 0)
     call SetPlayerTechMaxAllowed(Player(16), 'h04A', 0)
@@ -42478,7 +44186,6 @@ function InitTechTree_Player17 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(17), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(17), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'h008', 0)
@@ -42760,6 +44467,7 @@ function InitTechTree_Player17 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(17), 'u01I', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'n071', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'nnmg', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'u019', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'h02Q', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'ocbw', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'n086', 0)
@@ -42817,6 +44525,7 @@ function InitTechTree_Player17 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(17), 'h05K', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'h03T', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'o02I', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'nmdr', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'h067', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'n0AK', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'h01H', 0)
@@ -42928,7 +44637,6 @@ function InitTechTree_Player17 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(17), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(17), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'o02M', 0)
@@ -43188,9 +44896,78 @@ function InitTechTree_Player17 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(17), 'U00S', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'U00Z', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'n0AH', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o01G', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'n0AQ', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(17), 'E01E', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(17), 'h00B', 0)
 endfunction
 
 function InitTechTree_Player18 takes nothing returns nothing
@@ -43209,7 +44986,6 @@ function InitTechTree_Player18 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(18), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(18), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'h008', 0)
@@ -43493,6 +45269,7 @@ function InitTechTree_Player18 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(18), 'u01I', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'n071', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'nnmg', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'u019', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'h02Q', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'ocbw', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'n086', 0)
@@ -43551,6 +45328,7 @@ function InitTechTree_Player18 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(18), 'h05K', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'h03T', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'o02I', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'nmdr', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'h067', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'n0AK', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'h01H', 0)
@@ -43662,7 +45440,6 @@ function InitTechTree_Player18 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(18), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(18), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'o02M', 0)
@@ -43929,6 +45706,74 @@ function InitTechTree_Player18 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(18), 'n0AQ', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(18), 'E01E', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(18), 'h00B', 0)
 endfunction
 
 function InitTechTree_Player19 takes nothing returns nothing
@@ -43947,7 +45792,6 @@ function InitTechTree_Player19 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(19), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(19), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'h008', 0)
@@ -44231,6 +46075,7 @@ function InitTechTree_Player19 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(19), 'u01I', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'n071', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'nnmg', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'u019', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'h02Q', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'ocbw', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'n086', 0)
@@ -44289,6 +46134,7 @@ function InitTechTree_Player19 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(19), 'h05K', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'h03T', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'o02I', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'nmdr', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'h067', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'n0AK', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'h01H', 0)
@@ -44400,7 +46246,6 @@ function InitTechTree_Player19 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(19), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(19), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'o02M', 0)
@@ -44667,6 +46512,74 @@ function InitTechTree_Player19 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(19), 'n0AQ', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(19), 'E01E', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(19), 'h00B', 0)
 endfunction
 
 function InitTechTree_Player20 takes nothing returns nothing
@@ -44685,7 +46598,6 @@ function InitTechTree_Player20 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(20), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(20), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'h008', 0)
@@ -44969,6 +46881,7 @@ function InitTechTree_Player20 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(20), 'u01I', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'n071', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'nnmg', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'u019', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'h02Q', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'ocbw', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'n086', 0)
@@ -45027,6 +46940,7 @@ function InitTechTree_Player20 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(20), 'h05K', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'h03T', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'o02I', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'nmdr', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'h067', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'n0AK', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'h01H', 0)
@@ -45138,7 +47052,6 @@ function InitTechTree_Player20 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(20), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(20), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'o02M', 0)
@@ -45405,6 +47318,74 @@ function InitTechTree_Player20 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(20), 'n0AQ', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(20), 'E01E', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(20), 'h00B', 0)
 endfunction
 
 function InitTechTree_Player21 takes nothing returns nothing
@@ -45423,7 +47404,6 @@ function InitTechTree_Player21 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(21), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(21), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'h008', 0)
@@ -45705,6 +47685,7 @@ function InitTechTree_Player21 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(21), 'u01I', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'n071', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'nnmg', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'u019', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'h02Q', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'ocbw', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'n086', 0)
@@ -45762,6 +47743,7 @@ function InitTechTree_Player21 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(21), 'h05K', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'h03T', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'o02I', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'nmdr', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'h067', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'n0AK', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'h01H', 0)
@@ -45873,7 +47855,6 @@ function InitTechTree_Player21 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(21), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(21), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'o02M', 0)
@@ -46133,9 +48114,78 @@ function InitTechTree_Player21 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(21), 'U00S', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'U00Z', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'n0AH', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o01G', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'n0AQ', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(21), 'E01E', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(21), 'h00B', 0)
 endfunction
 
 function InitTechTree_Player22 takes nothing returns nothing
@@ -46154,7 +48204,6 @@ function InitTechTree_Player22 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(22), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(22), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'h008', 0)
@@ -46437,6 +48486,7 @@ function InitTechTree_Player22 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(22), 'u01I', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'n071', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'nnmg', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'u019', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'h02Q', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'ocbw', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'n086', 0)
@@ -46495,6 +48545,7 @@ function InitTechTree_Player22 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(22), 'h05K', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'h03T', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'o02I', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'nmdr', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'h067', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'n0AK', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'h01H', 0)
@@ -46606,7 +48657,6 @@ function InitTechTree_Player22 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(22), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(22), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'o02M', 0)
@@ -46870,6 +48920,74 @@ function InitTechTree_Player22 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(22), 'n0AQ', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(22), 'E01E', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(22), 'h00B', 0)
 endfunction
 
 function InitTechTree_Player23 takes nothing returns nothing
@@ -46888,7 +49006,6 @@ function InitTechTree_Player23 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(23), 'hgtw', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'h006', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'hctw', 0)
-    call SetPlayerTechMaxAllowed(Player(23), 'h00B', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'h007', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'hatw', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'h008', 0)
@@ -47170,6 +49287,7 @@ function InitTechTree_Player23 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(23), 'u01I', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'n071', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'nnmg', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'u019', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'h02Q', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'ocbw', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'n086', 0)
@@ -47227,6 +49345,7 @@ function InitTechTree_Player23 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(23), 'h05K', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'h03T', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'o02I', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'nmdr', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'h067', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'n0AK', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'h01H', 0)
@@ -47338,7 +49457,6 @@ function InitTechTree_Player23 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(23), 'n0AN', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'n0AL', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'n03L', 0)
-    call SetPlayerTechMaxAllowed(Player(23), 'u00U', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'n04N', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'u00N', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'o02M', 0)
@@ -47598,9 +49716,78 @@ function InitTechTree_Player23 takes nothing returns nothing
     call SetPlayerTechMaxAllowed(Player(23), 'U00S', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'U00Z', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'n0AH', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o01G', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'n0AQ', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'U02D', 0)
     call SetPlayerTechMaxAllowed(Player(23), 'E01E', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'e01G', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'e01H', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'e01F', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o048', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'h09A', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'h09B', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'h011', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'h09H', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'u02G', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'u02E', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'u02F', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'u029', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o04V', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o04Y', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o04Z', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'h09F', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'n077', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'n0B4', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'n0B5', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'n0B1', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'n0B0', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'h06U', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'h09E', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'n0B2', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'n0AV', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'n0AT', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'n0AW', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'n0B3', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'n0AX', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'n0AU', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'n0AR', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'n0AS', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'n0AY', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'n0AZ', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'u00U', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o05A', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o050', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o02P', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o051', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o058', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o052', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o053', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o055', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o056', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o057', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'u01Q', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o059', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o054', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'e01K', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'h09U', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'h09R', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'h09T', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o05B', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o05D', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o05C', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'u02H', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'e01L', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'e01M', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o05G', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'h09X', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'h09Y', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'h0A0', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o00X', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'o05H', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'h09I', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'h09J', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'h0A3', 0)
+    call SetPlayerTechMaxAllowed(Player(23), 'h00B', 0)
 endfunction
 
 function InitTechTree takes nothing returns nothing
@@ -47644,7 +49831,7 @@ function InitCustomPlayerSlots takes nothing returns nothing
     call SetPlayerColor(Player(0), ConvertPlayerColor(0))
     call SetPlayerRacePreference(Player(0), RACE_PREF_ORC)
     call SetPlayerRaceSelectable(Player(0), false)
-    call SetPlayerController(Player(0), MAP_CONTROL_COMPUTER)
+    call SetPlayerController(Player(0), MAP_CONTROL_USER)
 
     // Player 1
     call SetPlayerStartLocation(Player(1), 1)
@@ -47652,7 +49839,7 @@ function InitCustomPlayerSlots takes nothing returns nothing
     call SetPlayerColor(Player(1), ConvertPlayerColor(1))
     call SetPlayerRacePreference(Player(1), RACE_PREF_HUMAN)
     call SetPlayerRaceSelectable(Player(1), false)
-    call SetPlayerController(Player(1), MAP_CONTROL_COMPUTER)
+    call SetPlayerController(Player(1), MAP_CONTROL_USER)
 
     // Player 2
     call SetPlayerStartLocation(Player(2), 2)
@@ -47660,7 +49847,7 @@ function InitCustomPlayerSlots takes nothing returns nothing
     call SetPlayerColor(Player(2), ConvertPlayerColor(2))
     call SetPlayerRacePreference(Player(2), RACE_PREF_NIGHTELF)
     call SetPlayerRaceSelectable(Player(2), false)
-    call SetPlayerController(Player(2), MAP_CONTROL_COMPUTER)
+    call SetPlayerController(Player(2), MAP_CONTROL_USER)
 
     // Player 3
     call SetPlayerStartLocation(Player(3), 3)
@@ -47668,7 +49855,7 @@ function InitCustomPlayerSlots takes nothing returns nothing
     call SetPlayerColor(Player(3), ConvertPlayerColor(3))
     call SetPlayerRacePreference(Player(3), RACE_PREF_UNDEAD)
     call SetPlayerRaceSelectable(Player(3), false)
-    call SetPlayerController(Player(3), MAP_CONTROL_COMPUTER)
+    call SetPlayerController(Player(3), MAP_CONTROL_USER)
 
     // Player 4
     call SetPlayerStartLocation(Player(4), 4)
@@ -47676,7 +49863,7 @@ function InitCustomPlayerSlots takes nothing returns nothing
     call SetPlayerColor(Player(4), ConvertPlayerColor(4))
     call SetPlayerRacePreference(Player(4), RACE_PREF_HUMAN)
     call SetPlayerRaceSelectable(Player(4), false)
-    call SetPlayerController(Player(4), MAP_CONTROL_COMPUTER)
+    call SetPlayerController(Player(4), MAP_CONTROL_USER)
 
     // Player 5
     call SetPlayerStartLocation(Player(5), 5)
@@ -47684,7 +49871,7 @@ function InitCustomPlayerSlots takes nothing returns nothing
     call SetPlayerColor(Player(5), ConvertPlayerColor(5))
     call SetPlayerRacePreference(Player(5), RACE_PREF_ORC)
     call SetPlayerRaceSelectable(Player(5), false)
-    call SetPlayerController(Player(5), MAP_CONTROL_COMPUTER)
+    call SetPlayerController(Player(5), MAP_CONTROL_USER)
 
     // Player 6
     call SetPlayerStartLocation(Player(6), 6)
@@ -47692,7 +49879,7 @@ function InitCustomPlayerSlots takes nothing returns nothing
     call SetPlayerColor(Player(6), ConvertPlayerColor(6))
     call SetPlayerRacePreference(Player(6), RACE_PREF_ORC)
     call SetPlayerRaceSelectable(Player(6), false)
-    call SetPlayerController(Player(6), MAP_CONTROL_COMPUTER)
+    call SetPlayerController(Player(6), MAP_CONTROL_USER)
 
     // Player 7
     call SetPlayerStartLocation(Player(7), 7)
@@ -47708,7 +49895,7 @@ function InitCustomPlayerSlots takes nothing returns nothing
     call SetPlayerColor(Player(8), ConvertPlayerColor(8))
     call SetPlayerRacePreference(Player(8), RACE_PREF_ORC)
     call SetPlayerRaceSelectable(Player(8), false)
-    call SetPlayerController(Player(8), MAP_CONTROL_COMPUTER)
+    call SetPlayerController(Player(8), MAP_CONTROL_USER)
 
     // Player 9
     call SetPlayerStartLocation(Player(9), 9)
@@ -47716,7 +49903,7 @@ function InitCustomPlayerSlots takes nothing returns nothing
     call SetPlayerColor(Player(9), ConvertPlayerColor(9))
     call SetPlayerRacePreference(Player(9), RACE_PREF_UNDEAD)
     call SetPlayerRaceSelectable(Player(9), false)
-    call SetPlayerController(Player(9), MAP_CONTROL_COMPUTER)
+    call SetPlayerController(Player(9), MAP_CONTROL_USER)
 
     // Player 10
     call SetPlayerStartLocation(Player(10), 10)
@@ -47724,7 +49911,7 @@ function InitCustomPlayerSlots takes nothing returns nothing
     call SetPlayerColor(Player(10), ConvertPlayerColor(10))
     call SetPlayerRacePreference(Player(10), RACE_PREF_HUMAN)
     call SetPlayerRaceSelectable(Player(10), false)
-    call SetPlayerController(Player(10), MAP_CONTROL_COMPUTER)
+    call SetPlayerController(Player(10), MAP_CONTROL_USER)
 
     // Player 11
     call SetPlayerStartLocation(Player(11), 11)
@@ -47732,7 +49919,7 @@ function InitCustomPlayerSlots takes nothing returns nothing
     call SetPlayerColor(Player(11), ConvertPlayerColor(11))
     call SetPlayerRacePreference(Player(11), RACE_PREF_NIGHTELF)
     call SetPlayerRaceSelectable(Player(11), false)
-    call SetPlayerController(Player(11), MAP_CONTROL_COMPUTER)
+    call SetPlayerController(Player(11), MAP_CONTROL_USER)
 
     // Player 12
     call SetPlayerStartLocation(Player(12), 12)
@@ -47740,15 +49927,15 @@ function InitCustomPlayerSlots takes nothing returns nothing
     call SetPlayerColor(Player(12), ConvertPlayerColor(12))
     call SetPlayerRacePreference(Player(12), RACE_PREF_HUMAN)
     call SetPlayerRaceSelectable(Player(12), false)
-    call SetPlayerController(Player(12), MAP_CONTROL_COMPUTER)
+    call SetPlayerController(Player(12), MAP_CONTROL_USER)
 
     // Player 13
     call SetPlayerStartLocation(Player(13), 13)
     call ForcePlayerStartLocation(Player(13), 13)
     call SetPlayerColor(Player(13), ConvertPlayerColor(13))
-    call SetPlayerRacePreference(Player(13), RACE_PREF_HUMAN)
+    call SetPlayerRacePreference(Player(13), RACE_PREF_NIGHTELF)
     call SetPlayerRaceSelectable(Player(13), false)
-    call SetPlayerController(Player(13), MAP_CONTROL_COMPUTER)
+    call SetPlayerController(Player(13), MAP_CONTROL_USER)
 
     // Player 14
     call SetPlayerStartLocation(Player(14), 14)
@@ -47756,7 +49943,7 @@ function InitCustomPlayerSlots takes nothing returns nothing
     call SetPlayerColor(Player(14), ConvertPlayerColor(14))
     call SetPlayerRacePreference(Player(14), RACE_PREF_UNDEAD)
     call SetPlayerRaceSelectable(Player(14), false)
-    call SetPlayerController(Player(14), MAP_CONTROL_COMPUTER)
+    call SetPlayerController(Player(14), MAP_CONTROL_USER)
 
     // Player 15
     call SetPlayerStartLocation(Player(15), 15)
@@ -47764,7 +49951,7 @@ function InitCustomPlayerSlots takes nothing returns nothing
     call SetPlayerColor(Player(15), ConvertPlayerColor(15))
     call SetPlayerRacePreference(Player(15), RACE_PREF_NIGHTELF)
     call SetPlayerRaceSelectable(Player(15), false)
-    call SetPlayerController(Player(15), MAP_CONTROL_COMPUTER)
+    call SetPlayerController(Player(15), MAP_CONTROL_USER)
 
     // Player 16
     call SetPlayerStartLocation(Player(16), 16)
@@ -47780,7 +49967,7 @@ function InitCustomPlayerSlots takes nothing returns nothing
     call SetPlayerColor(Player(17), ConvertPlayerColor(17))
     call SetPlayerRacePreference(Player(17), RACE_PREF_ORC)
     call SetPlayerRaceSelectable(Player(17), false)
-    call SetPlayerController(Player(17), MAP_CONTROL_COMPUTER)
+    call SetPlayerController(Player(17), MAP_CONTROL_USER)
 
     // Player 18
     call SetPlayerStartLocation(Player(18), 18)
@@ -47788,7 +49975,7 @@ function InitCustomPlayerSlots takes nothing returns nothing
     call SetPlayerColor(Player(18), ConvertPlayerColor(18))
     call SetPlayerRacePreference(Player(18), RACE_PREF_NIGHTELF)
     call SetPlayerRaceSelectable(Player(18), false)
-    call SetPlayerController(Player(18), MAP_CONTROL_COMPUTER)
+    call SetPlayerController(Player(18), MAP_CONTROL_USER)
 
     // Player 19
     call SetPlayerStartLocation(Player(19), 19)
@@ -47810,9 +49997,9 @@ function InitCustomPlayerSlots takes nothing returns nothing
     call SetPlayerStartLocation(Player(21), 21)
     call ForcePlayerStartLocation(Player(21), 21)
     call SetPlayerColor(Player(21), ConvertPlayerColor(21))
-    call SetPlayerRacePreference(Player(21), RACE_PREF_UNDEAD)
+    call SetPlayerRacePreference(Player(21), RACE_PREF_NIGHTELF)
     call SetPlayerRaceSelectable(Player(21), false)
-    call SetPlayerController(Player(21), MAP_CONTROL_COMPUTER)
+    call SetPlayerController(Player(21), MAP_CONTROL_USER)
 
     // Player 22
     call SetPlayerStartLocation(Player(22), 22)
@@ -47839,12 +50026,11 @@ function InitCustomTeams takes nothing returns nothing
     call SetPlayerTeam(Player(9), 0)
     call SetPlayerTeam(Player(23), 0)
 
-    // Force: TRIGSTR_16455
+    // Force: TRIGSTR_18308
     call SetPlayerTeam(Player(1), 1)
     call SetPlayerTeam(Player(2), 1)
     call SetPlayerTeam(Player(7), 1)
     call SetPlayerTeam(Player(12), 1)
-    call SetPlayerTeam(Player(20), 1)
 
     // Force: TRIGSTR_2802
     call SetPlayerTeam(Player(0), 2)
@@ -47857,13 +50043,14 @@ function InitCustomTeams takes nothing returns nothing
     call SetPlayerTeam(Player(10), 3)
     call SetPlayerTeam(Player(22), 3)
 
-    // Force: TRIGSTR_15155
+    // Force: TRIGSTR_18309
     call SetPlayerTeam(Player(11), 4)
+    call SetPlayerTeam(Player(13), 4)
     call SetPlayerTeam(Player(15), 4)
     call SetPlayerTeam(Player(18), 4)
+    call SetPlayerTeam(Player(20), 4)
 
-    // Force: TRIGSTR_17454
-    call SetPlayerTeam(Player(13), 5)
+    // Force: TRIGSTR_3194
     call SetPlayerTeam(Player(14), 5)
     call SetPlayerTeam(Player(16), 5)
     call SetPlayerTeam(Player(19), 5)
@@ -48158,7 +50345,7 @@ function config takes nothing returns nothing
     call SetTeams(24)
     call SetGamePlacement(MAP_PLACEMENT_TEAMS_TOGETHER)
 
-    call DefineStartLocation(0, - 1792.0, - 2176.0)
+    call DefineStartLocation(0, - 1856.0, - 2560.0)
     call DefineStartLocation(1, 12928.0, 8448.0)
     call DefineStartLocation(2, 17728.0, 12672.0)
     call DefineStartLocation(3, - 5504.0, 18560.0)
@@ -48171,17 +50358,17 @@ function config takes nothing returns nothing
     call DefineStartLocation(10, 7040.0, - 16640.0)
     call DefineStartLocation(11, - 11264.0, 6720.0)
     call DefineStartLocation(12, 12416.0, 11072.0)
-    call DefineStartLocation(13, - 15488.0, - 32192.0)
+    call DefineStartLocation(13, - 1216.0, - 28672.0)
     call DefineStartLocation(14, - 27776.0, - 1024.0)
     call DefineStartLocation(15, - 18176.0, 3392.0)
     call DefineStartLocation(16, - 16768.0, - 16512.0)
     call DefineStartLocation(17, - 4352.0, - 12480.0)
     call DefineStartLocation(18, - 16704.0, 9920.0)
     call DefineStartLocation(19, 19520.0, - 5056.0)
-    call DefineStartLocation(20, - 27584.0, - 30912.0)
-    call DefineStartLocation(21, - 15488.0, - 32192.0)
+    call DefineStartLocation(20, - 17088.0, 14848.0)
+    call DefineStartLocation(21, 8896.0, - 30528.0)
     call DefineStartLocation(22, 3904.0, - 13440.0)
-    call DefineStartLocation(23, 2304.0, 20416.0)
+    call DefineStartLocation(23, - 27840.0, 6208.0)
 
     // Player setup
     call InitCustomPlayerSlots()
