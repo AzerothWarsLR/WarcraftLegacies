@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
   
     private const int RESEARCH_ID = FourCC("R050")         ;//This research is required to complete the quest
-    private const int QUEST_RESEARCH_ID = FourCC("R04X")   ;//This research is given when the quest is completed
+    private static readonly int QUEST_RESEARCH_ID = FourCC("R04X")   ;//This research is given when the quest is completed
   
 
 

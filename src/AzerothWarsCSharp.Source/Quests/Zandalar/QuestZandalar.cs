@@ -5,16 +5,16 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 {
   public sealed class QuestZandalar : QuestData
   {
-    private const int QUEST_RESEARCH_ID = FourCC("R04W"); //This research is given when the quest is completed
+    private static readonly int QuestResearchId = FourCC("R04W"); //This research is given when the quest is completed
 
     public QuestZandalar() : base("City of Gold", "We need to regain control of our land.",
       "ReplaceableTextures\\CommandButtons\\BTNBloodTrollMage.blp")
     {
-      this.AddQuestItem(new QuestItemResearch(FourCC("R04R"),)o03Z)));
-      this.AddQuestItem(new QuestItemUpgrade(FourCC("o03Z"),)o03Y)));
+      this.AddQuestItem(new QuestItemResearch(FourCC("R04R"), FourCC("o03Z")));
+      this.AddQuestItem(new QuestItemUpgrade(FourCC("o03Z"), FourCC("o03Y")));
       AddQuestItem(new QuestItemExpire(900));
       AddQuestItem(new QuestItemSelfExists());
-      ResearchId = QUEST_RESEARCH_ID;
+      ResearchId = QuestResearchId;
       ;
       ;
     }
@@ -39,7 +39,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 
     protected override void OnAdd()
     {
-      Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
+      Holder.ModObjectLimit(QuestResearchId, 1);
     }
   }
 }

@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
   public sealed class QuestScholomanceBuild : QuestData{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC("R04Z")   ;//This research is given when the quest is completed
+    private static readonly int QUEST_RESEARCH_ID = FourCC("R04Z")   ;//This research is given when the quest is completed
   
 
 

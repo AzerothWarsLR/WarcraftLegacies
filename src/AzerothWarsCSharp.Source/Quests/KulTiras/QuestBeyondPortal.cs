@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 {
   public sealed class QuestBeyondPortal : QuestData
   {
-    private const int QUEST_RESEARCH_ID = FourCC("R085"); //This research is given when the quest is completed
+    private static readonly int QUEST_RESEARCH_ID = FourCC("R085"); //This research is given when the quest is completed
 
     public QuestBeyondPortal() : base("Beyond the Dark Portal",
       "The Orc threat from Draenor still looms over all. Eliminate every trace of the Orcs && their bases.",

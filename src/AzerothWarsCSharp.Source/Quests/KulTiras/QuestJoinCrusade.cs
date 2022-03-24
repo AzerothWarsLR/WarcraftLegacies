@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
   public sealed class QuestJoinCrusade : QuestData{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC("R06U")   ;//This research is given when the quest is completed
+    private static readonly int QUEST_RESEARCH_ID = FourCC("R06U")   ;//This research is given when the quest is completed
   
 
 

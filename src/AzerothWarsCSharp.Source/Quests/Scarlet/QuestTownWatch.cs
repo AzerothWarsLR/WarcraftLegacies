@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
 {
   public sealed class QuestTownWatch : QuestData
   {
-    private const int QUEST_RESEARCH_ID = FourCC("R077"); //This research is given when the quest is completed
+    private static readonly int QUEST_RESEARCH_ID = FourCC("R077"); //This research is given when the quest is completed
 
     public QuestTownWatch() : base("The Cult of the Damned",
       "Unholy Cultists are spreading a deadly plague among the villages of Lordaeron. We must stop them, prevent the corruption, && kill all the Cultists.",

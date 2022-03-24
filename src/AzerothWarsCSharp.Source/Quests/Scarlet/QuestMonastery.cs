@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
   public sealed class QuestMonastery : QuestData
   {
     private const int RESEARCH_ID = FourCC("R03P"); //This research is required to complete the quest
-    private const int QUEST_RESEARCH_ID = FourCC("R03F"); //This research is given when the quest is completed
+    private static readonly int QUEST_RESEARCH_ID = FourCC("R03F"); //This research is given when the quest is completed
 
     private Global()
     {

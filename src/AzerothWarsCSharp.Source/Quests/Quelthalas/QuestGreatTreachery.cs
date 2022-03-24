@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
   public sealed class QuestGreatTreachery : QuestData{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC("R075")   ;//This research is given when the quest is completed
+    private static readonly int QUEST_RESEARCH_ID = FourCC("R075")   ;//This research is given when the quest is completed
   
 
 

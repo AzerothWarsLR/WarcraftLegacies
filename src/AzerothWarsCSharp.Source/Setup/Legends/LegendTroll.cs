@@ -5,9 +5,9 @@ namespace AzerothWarsCSharp.Source.Legends
   public static class LegendTroll{
 
   
-    public static Legend LEGEND_PRIEST
-    public static Legend LEGEND_RASTAKHAN
-    public static Legend LEGEND_HAKKAR
+    public static Legend LEGEND_PRIEST { get; private set; }
+    public static Legend LEGEND_RASTAKHAN { get; private set; }
+    public static Legend LEGEND_HAKKAR { get; private set; }
   
 
     public static void Setup( ){

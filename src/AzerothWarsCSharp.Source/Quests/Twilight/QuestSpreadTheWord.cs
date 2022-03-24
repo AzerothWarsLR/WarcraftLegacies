@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
 {
   public sealed class QuestSpreadTheWord : QuestData
   {
-    private const int QUEST_RESEARCH_ID = FourCC("R05F"); //This research is given when the quest is completed
+    private static readonly int QUEST_RESEARCH_ID = FourCC("R05F"); //This research is given when the quest is completed
 
     public QuestSpreadTheWord() : base("Spread the Whispers of the Old God",
       "The world shall hear the whispers of the Old God. Spread the visions of the end",

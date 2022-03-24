@@ -5,9 +5,9 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
 {
   public sealed class QuestGatesofAhnqiraj : QuestData
   {
-    protected override string CompletionPopup => "The Old God C'thun has awaken && is now ready to unleash the Qiraji on the world of Azeorth.";
+    protected override string CompletionPopup => "The Old God C'thun has awake and&is now ready to unleash the Qiraji on the world of Azeorth.";
     
-    protected override string CompletionDescription => "Gain control of C'thun && enable you to open the Gates of Ahn'qiraj";
+    protected override string CompletionDescription => "Gain control of C'thun and enable you to open the Gates of Ahn'qiraj";
       
     protected override void OnComplete()
     {
@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
       "ReplaceableTextures\\CommandButtons\\BTNScarabMedal.blp")
     {
       Global = true;
-      AddQuestItem(new QuestItemCastSpell(FourCC(""A0O1""), true));
+      AddQuestItem(new QuestItemCastSpell(FourCC("A0O1"), true));
     }
   }
 }

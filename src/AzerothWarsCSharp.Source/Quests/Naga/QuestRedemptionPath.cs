@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
   public sealed class QuestRedemptionPath : QuestData
   {
     private const int RESEARCH_ID = FourCC("R062"); //This research is required to complete the quest
-    private const int QUEST_RESEARCH_ID = FourCC("R06S"); //This research is given when the quest is completed
+    private static readonly int QUEST_RESEARCH_ID = FourCC("R06S"); //This research is given when the quest is completed
 
     private Global()
     {

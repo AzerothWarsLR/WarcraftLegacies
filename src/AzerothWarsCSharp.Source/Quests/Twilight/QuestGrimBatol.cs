@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
 {
   public sealed class QuestGrimBatol : QuestData
   {
-    private const int QUEST_RESEARCH_ID = FourCC("R06Y"); //This research is given when the quest is completed
+    private static readonly int QUEST_RESEARCH_ID = FourCC("R06Y"); //This research is given when the quest is completed
 
     public QuestGrimBatol() : base("The Cursed Fortress",
       "The mountain fortress of Grim Batol will be the perfect stronghold for the Twilight hammer clan. It has served well in the past && will do so again.",

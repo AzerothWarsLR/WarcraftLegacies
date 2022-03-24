@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// <summary>
     /// Describes to the player what will happen when the quest is failed.
     /// </summary>
-    protected string FailureDescription => "DEFAULTFAILUREDESCRIPTION";
+    protected virtual string FailureDescription => "DEFAULTFAILUREDESCRIPTION";
 
     /// <summary>
     /// Displayed to the player when the quest is completed.
@@ -44,7 +44,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// <summary>
     /// Displayed to the player when the quest is failed.
     /// </summary>
-    public string FailurePopup => null;
+    protected virtual string FailurePopup => null;
 
     /// <summary>
     /// Describes the background and flavour of this quest.

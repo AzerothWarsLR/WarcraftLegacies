@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
   public sealed class QuestExilePath : QuestData
   {
     private const int RESEARCH_ID = FourCC("R063"); //This research is required to complete the quest
-    private const int QUEST_RESEARCH_ID = FourCC("R008"); //This research is given when the quest is completed
+    private static readonly int QUEST_RESEARCH_ID = FourCC("R008"); //This research is given when the quest is completed
 
     private Global()
     {

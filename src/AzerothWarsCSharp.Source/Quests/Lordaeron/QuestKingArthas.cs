@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {
   public sealed class QuestKingArthas : QuestData
   {
-    private const int QUEST_RESEARCH_ID = FourCC("R08A"); //This research is given when the quest is completed
+    private static readonly int QUEST_RESEARCH_ID = FourCC("R08A"); //This research is given when the quest is completed
 
     public QuestKingArthas() : base("Line of Succession",
       "Arthas Menethil is the one true heir of the Kingdom of Lordaeron. The only thing standing in the way of his coronation is the world-ending threat of the Scourge.",

@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 {
   public sealed class QuestBoralus : QuestData
   {
-    private const int QUEST_RESEARCH_ID = FourCC("R00L"); //This research is given when the quest is completed
+    private static readonly int QUEST_RESEARCH_ID = FourCC("R00L"); //This research is given when the quest is completed
 
     public QuestBoralus() : base("The City at Sea",
       "Proudmoore is stranded at sea. Rejoin Boralus to take control of the city.",

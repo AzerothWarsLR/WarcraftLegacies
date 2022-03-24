@@ -6,11 +6,11 @@ namespace AzerothWarsCSharp.Source.Legends
   public static class LegendKultiras{
 
   
-    public static Legend LEGEND_ADMIRAL
-    public static Legend LEGEND_LUCILLE
-    public static Legend LEGEND_KATHERINE
+    public static Legend LEGEND_ADMIRAL { get; private set; }
+    public static Legend LEGEND_LUCILLE { get; private set; }
+    public static Legend LEGEND_KATHERINE { get; private set; }
 
-    public static Legend LEGEND_BORALUS
+    public static Legend LEGEND_BORALUS { get; private set; }
   
 
     public static void Setup( ){

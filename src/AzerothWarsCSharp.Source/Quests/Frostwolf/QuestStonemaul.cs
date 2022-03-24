@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
   public sealed class QuestStonemaul : QuestData{
 
   
-    private const int QUEST_RESEARCH_ID = FourCC("R03S")   ;//This research is given when the quest is completed
+    private static readonly int QUEST_RESEARCH_ID = FourCC("R03S")   ;//This research is given when the quest is completed
   
 
 

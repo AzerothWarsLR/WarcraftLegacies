@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {
   public sealed class QuestTempestKeep : QuestData
   {
-    private const int QUEST_RESEARCH_ID = FourCC("R073"); //This research is given when the quest is completed
+    private static readonly int QUEST_RESEARCH_ID = FourCC("R073"); //This research is given when the quest is completed
 
 
     protected override string CompletionPopup =>

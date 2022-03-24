@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
   public sealed class QuestMadnessPath : QuestData
   {
     private const int RESEARCH_ID = FourCC("R065"); //This research is required to complete the quest
-    private const int QUEST_RESEARCH_ID = FourCC("R033"); //This research is given when the quest is completed
+    private static readonly int QUEST_RESEARCH_ID = FourCC("R033"); //This research is given when the quest is completed
 
     private Global()
     {
