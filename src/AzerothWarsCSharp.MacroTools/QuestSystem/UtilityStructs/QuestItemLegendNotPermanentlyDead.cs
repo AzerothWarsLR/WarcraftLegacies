@@ -2,7 +2,7 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemLegendNotPermanentlyDead{
+  public class QuestItemLegendNotPermanentlyDead : QuestItemData{
 
 
     private Legend target = 0;
@@ -47,8 +47,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       }
     }
 
-    thistype (Legend target ){
-
+    public QuestItemLegendNotPermanentlyDead(Legend target){
       this.target = target;
       if (IsUnitType(target.Unit, UNIT_TYPE_STRUCTURE)){
         this.Description = target.Name + " is intact";

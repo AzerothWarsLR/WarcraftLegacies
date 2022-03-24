@@ -1,5 +1,7 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Warsong
 {
@@ -14,10 +16,8 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       "The prowess && savagery of the Sentinels is to be respected - && feared. They must be eliminated.",
       "ReplaceableTextures\\CommandButtons\\BTNArcher.blp")
     {
-      AddQuestItem(new QuestItemLegendDead(LEGEND_FEATHERMOON));
-      AddQuestItem(new QuestItemLegendDead(LEGEND_AUBERDINE));
-      ;
-      ;
+      AddQuestItem(new QuestItemLegendDead(LegendSentinels.legendFeathermoon));
+      AddQuestItem(new QuestItemLegendDead(LegendSentinels.legendAuberdine));
     }
 
 
@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
     protected override void OnComplete()
     {
       Holder.ModObjectLimit(UnittypeId, LIMIT_CHANGE);
-      DisplayUnitLimit(Holder, UnittypeId);
+      Display.DisplayUnitLimit(Holder, UnittypeId);
     }
   }
 }

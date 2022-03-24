@@ -1,28 +1,29 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Warsong
 {
-  public sealed class QuestWarsongKillDruids : QuestData{
-
-
-    private static int _experienceReward = 10000;
+  public sealed class QuestWarsongKillDruids : QuestData
+  {
+    private const int EXPERIENCE_REWARD = 10000;
 
     protected override string CompletionPopup => "Nordrassil has been captured. The Warsong is supreme!";
 
-    protected override string CompletionDescription => "Grom Hellscream gains " + I2S(_experienceReward) + " experience";
+    protected override string CompletionDescription =>
+      "Grom Hellscream gains " + I2S(EXPERIENCE_REWARD) + " experience";
 
-    protected override void OnComplete(){
-      AddHeroXP(LEGEND_GROM.Unit, _experienceReward, true);
+    protected override void OnComplete()
+    {
+      AddHeroXP(LegendWarsong.LegendGrom.Unit, EXPERIENCE_REWARD, true);
     }
 
-    public  QuestWarsongKillDruids ( ){
-      thistype this = thistype.allocate("Tear It Down", "The World Tree, Nordrassil, is the Night ElvesFourCC(" source of immortality. Capture it to cripple them permanently.","ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp"");
-      AddQuestItem(new QuestItemControlLegend(LEGEND_NORDRASSIL, false));
-      this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_GROM));
-      
+    public QuestWarsongKillDruids() : base("Tear It Down",
+      "The World Tree, Nordrassil, is the Night Elves' source of immortality. Capture it to cripple them permanently.",
+      "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
+    {
+      AddQuestItem(new QuestItemControlLegend(LegendDruids.legendNordrassil, false));
+      AddQuestItem(new QuestItemLegendNotPermanentlyDead(LegendWarsong.LegendGrom));
     }
-
-
   }
 }

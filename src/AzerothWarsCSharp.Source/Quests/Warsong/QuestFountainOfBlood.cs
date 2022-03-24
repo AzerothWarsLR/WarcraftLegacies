@@ -1,5 +1,7 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Warsong
 {
@@ -8,12 +10,10 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
     private static readonly int ResearchId = FourCC("R00X");
 
     public QuestFountainOfBlood() : base("The Blood of Mannoroth",
-      "Long ago, the orcs drank the blood of Mannoroth && were infused with demonic fury. A mere taste of his blood would reignite those powers.",
+      "Long ago, the orcs drank the blood of Mannoroth and were infused with demonic fury. A mere taste of his blood would reignite those powers.",
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLifeBlood.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LEGEND_FOUNTAINOFBLOOD, false));
-      ;
-      ;
+      AddQuestItem(new QuestItemControlLegend(LegendNeutral.legendFountainofblood, false));
     }
 
 
@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       "The Fountain of Blood is under Warsong control. As the orcs drink from it, they feel a a familiar fury awake within them.";
 
     protected override string CompletionDescription =>
-      "Allows Orcish units to increase their attack rate && movement speed temporarily";
+      "Allows Orcish units to increase their attack rate and movement speed temporarily";
 
     protected override void OnComplete()
     {
@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
 
     protected override void OnAdd()
     {
-      Holder.ModObjectLimit(ResearchId, UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
     }
   }
 }
