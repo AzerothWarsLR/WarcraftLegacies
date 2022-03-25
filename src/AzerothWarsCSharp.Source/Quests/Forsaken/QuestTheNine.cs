@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       AddQuestItem(new QuestItemControlLegend(LEGEND_SYLVANASV, false));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02J"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n03U"))));
-      AddQuestItem(new QuestItemLegendDead(LEGEND_LICHKING));
+      AddQuestItem(new QuestItemLegendDead(LegendScourge.LegendLichking));
       AddQuestItem(new QuestItemSelfExists());
     }
 

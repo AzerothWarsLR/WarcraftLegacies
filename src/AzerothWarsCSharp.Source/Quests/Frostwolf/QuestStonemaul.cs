@@ -1,6 +1,8 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 {
@@ -8,19 +10,16 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
   {
     private static readonly int QUEST_RESEARCH_ID = FourCC("R03S"); //This research is given when the quest is completed
 
-    public QuestStonemaul()
+    public QuestStonemaul() : base("The Chieftain's Challenge",
+      "The Ogres of Stonemaul follow the strongest, slay the Chieftain to gain control of the base.",
+      "ReplaceableTextures\\CommandButtons\\BTNOneHeadedOgre.blp")
     {
-      thistype this =
-        thistype.allocate("The ChieftainFourCC("s Challenge", "The Ogres of Stonemaul follow the strongest,
-          slay the Chieftain to gain control of the base.", "ReplaceableTextures\\CommandButtons\\BTNOneHeadedOgre
-            .blp");
-      AddQuestItem(QuestItemKillUnit.create(gg_unit_noga_1228)); //Korgall
+      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnitByUnitType(FourCC("noga")))); //Korgall
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n022"))));
       AddQuestItem(new QuestItemExpire(1505));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = QUEST_RESEARCH_ID;
     }
-
 
     protected override string CompletionPopup =>
       "Stonemaul has been liberated, && its military is now free to assist the " + Holder.Team.Name + ".";
@@ -44,7 +43,6 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       }
 
       DestroyGroup(tempGroup);
-      tempGroup = null;
     }
 
     protected override void OnFail()
@@ -55,11 +53,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     protected override void OnComplete()
     {
       GrantStonemaul(Holder.Player);
-      AdjustPlayerStateBJ(3000, FACTION_FROSTWOLF.Player, PLAYER_STATE_RESOURCE_LUMBER);
-    }
-
-    protected override void OnAdd()
-    {
+      AdjustPlayerStateBJ(3000, FrostwolfSetup.FACTION_FROSTWOLF.Player, PLAYER_STATE_RESOURCE_LUMBER);
     }
   }
 }

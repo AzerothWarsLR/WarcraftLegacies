@@ -32,19 +32,19 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     protected override void OnComplete()
     {
-      FACTION_DALARAN.ModObjectLimit(FourCC("h069"), -UNLIMITED); //Military Quarters
-      FACTION_DALARAN.ModObjectLimit(FourCC("h067"), -UNLIMITED); //Laboratory
-      FACTION_DALARAN.ModObjectLimit(FourCC("n096"), -UNLIMITED); //Golem
-      FACTION_DALARAN.ModObjectLimit(FourCC("o02U"), -UNLIMITED); //Crystal artillery
-      FACTION_DALARAN.ModObjectLimit(FourCC("n0AD"), -UNLIMITED); //Crystal Golem
-      FACTION_DALARAN.ModObjectLimit(FourCC("h032"), -UNLIMITED); //Battlemage
-      FACTION_DALARAN.ModObjectLimit(FourCC("n007"), -UNLIMITED); //Kirintor
-      FACTION_DALARAN.ModObjectLimit(FourCC("h022"), -UNLIMITED); //Peasant
-      FACTION_DALARAN.ModObjectLimit(FourCC("Hant"), -UNLIMITED); //Antonidas
-      FACTION_DALARAN.ModObjectLimit(FourCC("Haah"), -UNLIMITED); //Mediv
-      FACTION_DALARAN.ModObjectLimit(FourCC("njks"), -UNLIMITED); //Kasan
-      FACTION_DALARAN.ModObjectLimit(FourCC("R06O"), -UNLIMITED); //Phase Blade
-      FACTION_DALARAN.ModObjectLimit(FourCC("R061"), -UNLIMITED); //Forked Lightning
+      FACTION_DALARAN.ModObjectLimit(FourCC("h069"), -Faction.UNLIMITED); //Military Quarters
+      FACTION_DALARAN.ModObjectLimit(FourCC("h067"), -Faction.UNLIMITED); //Laboratory
+      FACTION_DALARAN.ModObjectLimit(FourCC("n096"), -Faction.UNLIMITED); //Golem
+      FACTION_DALARAN.ModObjectLimit(FourCC("o02U"), -Faction.UNLIMITED); //Crystal artillery
+      FACTION_DALARAN.ModObjectLimit(FourCC("n0AD"), -Faction.UNLIMITED); //Crystal Golem
+      FACTION_DALARAN.ModObjectLimit(FourCC("h032"), -Faction.UNLIMITED); //Battlemage
+      FACTION_DALARAN.ModObjectLimit(FourCC("n007"), -Faction.UNLIMITED); //Kirintor
+      FACTION_DALARAN.ModObjectLimit(FourCC("h022"), -Faction.UNLIMITED); //Peasant
+      FACTION_DALARAN.ModObjectLimit(FourCC("Hant"), -Faction.UNLIMITED); //Antonidas
+      FACTION_DALARAN.ModObjectLimit(FourCC("Haah"), -Faction.UNLIMITED); //Mediv
+      FACTION_DALARAN.ModObjectLimit(FourCC("njks"), -Faction.UNLIMITED); //Kasan
+      FACTION_DALARAN.ModObjectLimit(FourCC("R06O"), -Faction.UNLIMITED); //Phase Blade
+      FACTION_DALARAN.ModObjectLimit(FourCC("R061"), -Faction.UNLIMITED); //Forked Lightning
       RemoveUnit(LEGEND_ANTONIDAS.Unit);
       RemoveUnit(LEGEND_MEDIVH.Unit);
 
@@ -53,13 +53,13 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       FACTION_DALARAN.ModObjectLimit(FourCC("H04A"), 1); //Nexus Jaina
 
       FACTION_DALARAN.ModObjectLimit(FourCC("n0A1"), 6); //Elite
-      FACTION_DALARAN.ModObjectLimit(FourCC("h09C"), UNLIMITED); //Worker
-      FACTION_DALARAN.ModObjectLimit(FourCC("h099"), UNLIMITED); //Infantry
-      FACTION_DALARAN.ModObjectLimit(FourCC("n0A4"), UNLIMITED); //Dragonspawn
+      FACTION_DALARAN.ModObjectLimit(FourCC("h09C"), Faction.UNLIMITED); //Worker
+      FACTION_DALARAN.ModObjectLimit(FourCC("h099"), Faction.UNLIMITED); //Infantry
+      FACTION_DALARAN.ModObjectLimit(FourCC("n0A4"), Faction.UNLIMITED); //Dragonspawn
       FACTION_DALARAN.ModObjectLimit(FourCC("u025"), 12); //Elementalist
       FACTION_DALARAN.ModObjectLimit(FourCC("n09T"), 6); //Judicator
-      FACTION_DALARAN.ModObjectLimit(FourCC("h09A"), UNLIMITED); //Nexus
-      FACTION_DALARAN.ModObjectLimit(FourCC("h09B"), UNLIMITED); //Roost
+      FACTION_DALARAN.ModObjectLimit(FourCC("h09A"), Faction.UNLIMITED); //Nexus
+      FACTION_DALARAN.ModObjectLimit(FourCC("h09B"), Faction.UNLIMITED); //Roost
 
       LEGEND_JAINA.UnitType = FourCC("H04A");
 

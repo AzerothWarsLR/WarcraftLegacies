@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       "ReplaceableTextures\\CommandButtons\\BTNUndeadShipyard.blp")
     {
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n030"))));
-      AddQuestItem(new QuestItemControlLegend(LEGEND_DRAKTHARONKEEP, false));
+      AddQuestItem(new QuestItemControlLegend(LegendNeutral.legendDraktharonkeep, false));
       AddQuestItem(new QuestItemExpire(1140));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = QuestResearchId;

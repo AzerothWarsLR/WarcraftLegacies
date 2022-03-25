@@ -21,8 +21,8 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       "ReplaceableTextures\\CommandButtons\\BTNFireKingCrown.blp")
     {
       this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_VARIAN));
-      AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_CROWNLORDAERON));
-      AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_CROWNSTORMWIND));
+      AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactCrownlordaeron));
+      AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactCrownstormwind));
       AddQuestItem(new QuestItemControlLegend(LEGEND_BLACKTEMPLE, false));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n010"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01G"))));
@@ -43,14 +43,14 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     protected override void OnComplete()
     {
       //Artifact
-      unit crownHolder = ARTIFACT_CROWNSTORMWIND.OwningUnit;
-      RemoveItem(ARTIFACT_CROWNLORDAERON.item);
-      RemoveItem(ARTIFACT_CROWNSTORMWIND.item);
-      UnitAddItemSafe(crownHolder, ARTIFACT_CROWNEASTERNKINGDOMS.item);
-      ARTIFACT_CROWNLORDAERON.setStatus(ARTIFACT_STATUS_HIDDEN);
-      ARTIFACT_CROWNLORDAERON.setDescription("Melted down");
-      ARTIFACT_CROWNSTORMWIND.setStatus(ARTIFACT_STATUS_HIDDEN);
-      ARTIFACT_CROWNSTORMWIND.setDescription("Melted down");
+      unit crownHolder = ArtifactSetup.ArtifactCrownstormwind.OwningUnit;
+      RemoveItem(ArtifactSetup.ArtifactCrownlordaeron.Item);
+      RemoveItem(ArtifactSetup.ArtifactCrownstormwind.Item);
+      UnitAddItemSafe(crownHolder, ArtifactSetup.ArtifactCrowneasternkingdoms.Item);
+      ArtifactSetup.ArtifactCrownlordaeron.Status = ArtifactStatus.Hidden;
+ArtifactSetup.ArtifactCrownlordaeron.Description = "Melted down";
+      ArtifactSetup.ArtifactCrownstormwind.Status = ArtifactStatus.Hidden;
+ArtifactSetup.ArtifactCrownstormwind.Description = "Melted down";
       //Research
       SetPlayerTechResearched(Holder.Player, ResearchId, 1);
       DisplayResearchAcquired(Holder.Player, ResearchId, 1);
@@ -61,7 +61,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     protected override void OnAdd()
     {
-      Holder.ModObjectLimit(ResearchId, UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
     }
   }
 }

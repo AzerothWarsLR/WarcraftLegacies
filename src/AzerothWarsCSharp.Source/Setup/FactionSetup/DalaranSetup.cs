@@ -19,37 +19,37 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       f.StartingLumber = 500;
 
       //Structures
-      f.ModObjectLimit(FourCC("h065"), UNLIMITED)   ;//Refuge
-      f.ModObjectLimit(FourCC("h066"), UNLIMITED)   ;//Conclave
-      f.ModObjectLimit(FourCC("h068"), UNLIMITED)   ;//Observatory
-      f.ModObjectLimit(FourCC("h063"), UNLIMITED)   ;//Granary
-      f.ModObjectLimit(FourCC("h044"), UNLIMITED)   ;//Altar of Knowledge
-      f.ModObjectLimit(FourCC("h069"), UNLIMITED)   ;//Barracks
-      f.ModObjectLimit(FourCC("h02N"), UNLIMITED)   ;//Trade Quarters
-      f.ModObjectLimit(FourCC("h036"), UNLIMITED)   ;//Arcane Sanctuary
-      f.ModObjectLimit(FourCC("h078"), UNLIMITED)   ;//Scout Tower
-      f.ModObjectLimit(FourCC("h079"), UNLIMITED)   ;//Arcane Tower
-      f.ModObjectLimit(FourCC("h07A"), UNLIMITED)   ;//Arcane Tower (Improved)
-      f.ModObjectLimit(FourCC("hvlt"), UNLIMITED)   ;//Arcane Vault
-      f.ModObjectLimit(FourCC("h076"), UNLIMITED)   ;//Alliance Shipyard
-      f.ModObjectLimit(FourCC("ndgt"), UNLIMITED)   ;//Dalaran Tower
-      f.ModObjectLimit(FourCC("n004"), UNLIMITED)   ;//Dalaran Tower (Improved)
-      f.ModObjectLimit(FourCC("h067"), UNLIMITED)   ;//Laboratory
+      f.ModObjectLimit(FourCC("h065"), Faction.UNLIMITED)   ;//Refuge
+      f.ModObjectLimit(FourCC("h066"), Faction.UNLIMITED)   ;//Conclave
+      f.ModObjectLimit(FourCC("h068"), Faction.UNLIMITED)   ;//Observatory
+      f.ModObjectLimit(FourCC("h063"), Faction.UNLIMITED)   ;//Granary
+      f.ModObjectLimit(FourCC("h044"), Faction.UNLIMITED)   ;//Altar of Knowledge
+      f.ModObjectLimit(FourCC("h069"), Faction.UNLIMITED)   ;//Barracks
+      f.ModObjectLimit(FourCC("h02N"), Faction.UNLIMITED)   ;//Trade Quarters
+      f.ModObjectLimit(FourCC("h036"), Faction.UNLIMITED)   ;//Arcane Sanctuary
+      f.ModObjectLimit(FourCC("h078"), Faction.UNLIMITED)   ;//Scout Tower
+      f.ModObjectLimit(FourCC("h079"), Faction.UNLIMITED)   ;//Arcane Tower
+      f.ModObjectLimit(FourCC("h07A"), Faction.UNLIMITED)   ;//Arcane Tower (Improved)
+      f.ModObjectLimit(FourCC("hvlt"), Faction.UNLIMITED)   ;//Arcane Vault
+      f.ModObjectLimit(FourCC("h076"), Faction.UNLIMITED)   ;//Alliance Shipyard
+      f.ModObjectLimit(FourCC("ndgt"), Faction.UNLIMITED)   ;//Dalaran Tower
+      f.ModObjectLimit(FourCC("n004"), Faction.UNLIMITED)   ;//Dalaran Tower (Improved)
+      f.ModObjectLimit(FourCC("h067"), Faction.UNLIMITED)   ;//Laboratory
       f.ModObjectLimit(FourCC("n0AO"), 2)           ;//Way Gate
 
       //Units
-      f.ModObjectLimit(FourCC("h022"), UNLIMITED)   ;//Shaper
+      f.ModObjectLimit(FourCC("h022"), Faction.UNLIMITED)   ;//Shaper
       f.ModObjectLimit(FourCC("hbot"), 12)  	    ;//Alliance Transport Ship
       f.ModObjectLimit(FourCC("hdes"), 12)  	    ;//Alliance Frigate
       f.ModObjectLimit(FourCC("hbsh"), 6)          ;//Alliance Battle Ship
-      f.ModObjectLimit(FourCC("nhym"), UNLIMITED)   ;//Hydromancer
-      f.ModObjectLimit(FourCC("h032"), UNLIMITED)   ;//Battlemage
-      f.ModObjectLimit(FourCC("h02D"), UNLIMITED)   ;//Geomancer
-      f.ModObjectLimit(FourCC("h01I"), UNLIMITED)   ;//Arcanist
+      f.ModObjectLimit(FourCC("nhym"), Faction.UNLIMITED)   ;//Hydromancer
+      f.ModObjectLimit(FourCC("h032"), Faction.UNLIMITED)   ;//Battlemage
+      f.ModObjectLimit(FourCC("h02D"), Faction.UNLIMITED)   ;//Geomancer
+      f.ModObjectLimit(FourCC("h01I"), Faction.UNLIMITED)   ;//Arcanist
       f.ModObjectLimit(FourCC("n007"), 6)           ;//Kirin Tor
       f.ModObjectLimit(FourCC("n096"), 6)           ;//Earth Golem
-      f.ModObjectLimit(FourCC("n03E"), UNLIMITED)   ;//Pyromancer
-      f.ModObjectLimit(FourCC("n0AK"), UNLIMITED)   ;//Sludge Flinger
+      f.ModObjectLimit(FourCC("n03E"), Faction.UNLIMITED)   ;//Pyromancer
+      f.ModObjectLimit(FourCC("n0AK"), Faction.UNLIMITED)   ;//Sludge Flinger
       f.ModObjectLimit(FourCC("o02U"), 6)           ;//Crystal Artillery
 
 
@@ -59,17 +59,17 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       f.ModObjectLimit(FourCC("Hant"), 1)           ;//antonidas
 
       //Upgrades
-      f.ModObjectLimit(FourCC("R01I"), UNLIMITED)   ;//Arcanist Adept Training
-      f.ModObjectLimit(FourCC("R01V"), UNLIMITED)   ;//Geomancer Adept Training
-      f.ModObjectLimit(FourCC("R00E"), UNLIMITED)   ;//Hydromancer Adept Training
-      f.ModObjectLimit(FourCC("R01L"), UNLIMITED)   ;//Magic Sentry
-      f.ModObjectLimit(FourCC("R00K"), UNLIMITED)   ;//Power Infusion
-      f.ModObjectLimit(FourCC("R00D"), UNLIMITED)   ;//Pyromancer Adept Training
-      f.ModObjectLimit(FourCC("Rhac"), UNLIMITED)   ;//Improved Masonry
-      f.ModObjectLimit(FourCC("R06J"), UNLIMITED)   ;//Improved Ooze
-      f.ModObjectLimit(FourCC("R061"), UNLIMITED)   ;//Improved Forked Lightning
-      f.ModObjectLimit(FourCC("R06O"), UNLIMITED)   ;//Improved Phase Blade
-      f.ModObjectLimit(FourCC("R00J"), UNLIMITED)   ;//Combat Tomes
+      f.ModObjectLimit(FourCC("R01I"), Faction.UNLIMITED)   ;//Arcanist Adept Training
+      f.ModObjectLimit(FourCC("R01V"), Faction.UNLIMITED)   ;//Geomancer Adept Training
+      f.ModObjectLimit(FourCC("R00E"), Faction.UNLIMITED)   ;//Hydromancer Adept Training
+      f.ModObjectLimit(FourCC("R01L"), Faction.UNLIMITED)   ;//Magic Sentry
+      f.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED)   ;//Power Infusion
+      f.ModObjectLimit(FourCC("R00D"), Faction.UNLIMITED)   ;//Pyromancer Adept Training
+      f.ModObjectLimit(FourCC("Rhac"), Faction.UNLIMITED)   ;//Improved Masonry
+      f.ModObjectLimit(FourCC("R06J"), Faction.UNLIMITED)   ;//Improved Ooze
+      f.ModObjectLimit(FourCC("R061"), Faction.UNLIMITED)   ;//Improved Forked Lightning
+      f.ModObjectLimit(FourCC("R06O"), Faction.UNLIMITED)   ;//Improved Phase Blade
+      f.ModObjectLimit(FourCC("R00J"), Faction.UNLIMITED)   ;//Combat Tomes
     }
 
   }

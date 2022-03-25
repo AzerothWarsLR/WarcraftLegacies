@@ -65,7 +65,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     private void AdjustTechtree()
     {
-      FACTION_NAGA.ModObjectLimit(FourCC("n08V"), UNLIMITED); //Depth Void Portal
+      FACTION_NAGA.ModObjectLimit(FourCC("n08V"), Faction.UNLIMITED); //Depth Void Portal
       FACTION_NAGA.ModObjectLimit(FourCC("h01Q"), 4); //Immortal Guardian
       FACTION_NAGA.ModObjectLimit(FourCC("H08U"), 1); //Azshara
     }
@@ -76,7 +76,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       AdjustTechtree();
       FailQuests();
       TransferHeroes();
-      FACTION_NAGA.ModObjectLimit(FourCC("Eevi"), -UNLIMITED); //Illidan
+      FACTION_NAGA.ModObjectLimit(FourCC("Eevi"), -Faction.UNLIMITED); //Illidan
       BLACKEMPIREPORTAL_ILLIDAN.PortalState = BLACKEMPIREPORTALSTATE_OPEN;
       RenameIllidanFaction();
       WaygateActivateBJ(true, gg_unit_h01D_3378);

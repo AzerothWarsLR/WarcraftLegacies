@@ -25,13 +25,13 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     }
 
     protected override void OnAdd( ){
-      Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
+      Holder.ModObjectLimit(RESEARCH_ID, Faction.UNLIMITED);
     }
 
     public  QuestCrystalGolem ( ){
 
       this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02R"))));
-      this.AddQuestItem(new QuestItemControlLegend(LEGEND_DRAKTHARONKEEP, false));
+      this.AddQuestItem(new QuestItemControlLegend(LegendNeutral.legendDraktharonkeep, false));
       
     }
 

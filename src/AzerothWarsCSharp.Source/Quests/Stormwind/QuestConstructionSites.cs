@@ -25,7 +25,7 @@
     }
 
     protected override void OnAdd( ){
-      this.Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
+      this.Holder.ModObjectLimit(RESEARCH_ID, Faction.UNLIMITED);
     }
 
     public  thistype ( ){

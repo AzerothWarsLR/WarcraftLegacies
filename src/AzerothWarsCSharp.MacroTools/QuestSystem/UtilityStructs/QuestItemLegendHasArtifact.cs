@@ -39,7 +39,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     thistype (Legend targetLegend, Artifact targetArtifact ){
 
-      this.Description = targetLegend.Name + " has " + GetItemName(targetArtifact.item);
+      this.Description = targetLegend.Name + " has " + GetItemName(targetArtifact.Item);
       this.targetLegend = targetLegend;
       this.targetArtifact = targetArtifact;
       thistype.byIndex[thistype.count] = this;

@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
     protected override void OnComplete()
     {
       SetPlayerTechResearched(FACTION_KULTIRAS.Player, FourCC("R06V"), 1);
-      SetPlayerTechResearched(FACTION_LORDAERON.Player, FourCC("R06V"), 1);
+      SetPlayerTechResearched(LordaeronSetup.FactionLordaeron.Player, FourCC("R06V"), 1);
       SetPlayerTechResearched(FACTION_SCARLET.Player, FourCC("R086"), 1);
       RescueNeutralUnitsInRect(Regions.ScarletAmbient.Rect, Holder.Player);
       WaygateActivateBJ(true, gg_unit_h00T_0786);

@@ -1,5 +1,8 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
+using AzerothWarsCSharp.Source.Setup;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {
@@ -7,41 +10,32 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
   {
     private const float DUMMY_X = 22700;
     private const float DUMMY_Y = 23734;
-
-    private Global()
-    {
-      return true;
-    }
-
+    
     public QuestAshbringer() : base("The Ashbringer",
       "The Living Shadow must be purged, with enough Holy Magic && the craftiness of the Dwarves, it could be reforged into the strongest weapon of the Light",
       "ReplaceableTextures\\CommandButtons\\BTNAshbringer2blp")
     {
-      AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_LIVINGSHADOW));
-      this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_GREATFORGE));
-      AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_LIVINGSHADOW, Regions.AshbringerForge.Rect, "The Great Forge"));
-      AddQuestItem(new QuestItemChannelRect(Regions.AshbringerForge, "The Great Forge", LEGEND_UTHER, 60.Rect, 340));
-      ;
-      ;
+      AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactLivingshadow));
+      AddQuestItem(new QuestItemLegendNotPermanentlyDead(LegendIronforge.LEGEND_GREATFORGE));
+      AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.ArtifactLivingshadow, Regions.AshbringerForge.Rect, "The Great Forge"));
+      AddQuestItem(new QuestItemChannelRect(Regions.AshbringerForge.Rect, "The Great Forge", LegendLordaeron.LegendUther, 60, 340));
+      Global = true;
     }
 
     protected override string CompletionPopup =>
-      "The Ashbringer has been forged && Mograine has returned from exile to wield it";
+      "The Ashbringer has been forged and Mograine has returned from exile to wield it";
 
-    protected override string CompletionDescription => "Gain the hero Mograine && the artifact Ashbringer";
-
-
-    bool operator
-
+    protected override string CompletionDescription => "Gain the hero Mograine and the artifact Ashbringer";
+    
     protected override void OnComplete()
     {
-      LEGEND_MOGRAINE.Spawn(Holder.Player, GetRectCenterX(Regions.AshbringerForge),
-        GetRectCenterY(gg_rct_AshbringerForge).Rect, 270);
-      SetHeroLevel(LEGEND_MOGRAINE.Unit, 10, false);
-      UnitAddItemSafe(LEGEND_MOGRAINE.Unit, ARTIFACT_ASHBRINGER.item);
-      SetItemPosition(ARTIFACT_LIVINGSHADOW.item, DUMMY_X, DUMMY_Y);
-      ARTIFACT_LIVINGSHADOW.setStatus(ARTIFACT_STATUS_HIDDEN);
-      ARTIFACT_LIVINGSHADOW.setDescription("Used to create the Ashbringer");
+      LegendLordaeron.LegendMograine.Spawn(Holder.Player, Regions.AshbringerForge.Center.X,
+        Regions.AshbringerForge.Center.Y, 270);
+      SetHeroLevel(LegendLordaeron.LegendMograine.Unit, 10, false);
+      UnitAddItemSafe(LegendLordaeron.LegendMograine.Unit, ArtifactSetup.ArtifactAshbringer.Item);
+      SetItemPosition(ArtifactSetup.ArtifactLivingshadow.Item, DUMMY_X, DUMMY_Y);
+      ArtifactSetup.ArtifactLivingshadow.Status = ArtifactStatus.Ground;
+      ArtifactSetup.ArtifactLivingshadow.Description = "Used to create the Ashbringer";
     }
   }
 }

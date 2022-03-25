@@ -40,14 +40,14 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       PlayThematicMusicBJ("war3mapImported\\ScarletTheme.mp3");
       SetPlayerColor(Holder.Player, PLAYER_COLOR_SNOW);
 
-      FACTION_SCARLET.ModObjectLimit(FourCC("h08I"), -UNLIMITED); //Crusader
-      FACTION_SCARLET.ModObjectLimit(FourCC("h09I"), UNLIMITED); //Argent Crusader
+      FACTION_SCARLET.ModObjectLimit(FourCC("h08I"), -Faction.UNLIMITED); //Crusader
+      FACTION_SCARLET.ModObjectLimit(FourCC("h09I"), Faction.UNLIMITED); //Argent Crusader
 
-      FACTION_SCARLET.ModObjectLimit(FourCC("h08L"), -UNLIMITED); //Cavalier
-      FACTION_SCARLET.ModObjectLimit(FourCC("h0A3"), UNLIMITED); //Lilian
+      FACTION_SCARLET.ModObjectLimit(FourCC("h08L"), -Faction.UNLIMITED); //Cavalier
+      FACTION_SCARLET.ModObjectLimit(FourCC("h0A3"), Faction.UNLIMITED); //Lilian
 
-      FACTION_SCARLET.ModObjectLimit(FourCC("h08J"), -UNLIMITED); //Arbalest
-      FACTION_SCARLET.ModObjectLimit(FourCC("h09J"), UNLIMITED); //Lilian
+      FACTION_SCARLET.ModObjectLimit(FourCC("h08J"), -Faction.UNLIMITED); //Arbalest
+      FACTION_SCARLET.ModObjectLimit(FourCC("h09J"), Faction.UNLIMITED); //Lilian
     }
 
     protected override void OnAdd()

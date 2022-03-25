@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       "The Elves of QuelFourCC("thalas have a deep reliance on the Sunwell")s magic. Without it, they would have to turn to darker magicks to sate themselves.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroBloodElfPrince.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LEGEND_DRAKTHARONKEEP, false));
+      AddQuestItem(new QuestItemControlLegend(LegendNeutral.legendDraktharonkeep, false));
       AddQuestItem(new QuestItemControlLegend(LEGEND_ANASTERIAN, true));
       AddQuestItem(new QuestItemControlLegend(LEGEND_SUNWELL, true));
       ;
@@ -63,7 +63,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       player holderPlayer = Holder.Person.Player;
       Legend triggerLegend = GetTriggerLegend();
       LEGEND_KAEL.StartingXp = GetHeroXP(LEGEND_ANASTERIAN.Unit);
-      Holder.obliterate();
+      Holder.Obliterate();
       if (Holder.ScoreStatus != SCORESTATUS_DEFEATED)
       {
         while (true)
@@ -89,7 +89,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     protected override void OnAdd()
     {
-      Holder.ModObjectLimit(QuestResearchId, UNLIMITED);
+      Holder.ModObjectLimit(QuestResearchId, Faction.UNLIMITED);
       Holder.ModObjectLimit(UnittypeId, 6);
       Holder.ModObjectLimit(HeroId, 1);
     }

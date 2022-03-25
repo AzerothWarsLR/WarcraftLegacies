@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "ReplaceableTextures\\CommandButtons\\BTNSoulGem.blp")
     {
       AddQuestItem(new QuestItemLegendInRect(LEGEND_JAINA, Regions.JainaSoulGem.Rect, "Scholomance"));
-      AddQuestItem(new QuestItemLegendDead(LEGEND_SCHOLOMANCE));
+      AddQuestItem(new QuestItemLegendDead(LegendForsaken.LegendScholomance));
       ;
       ;
     }
@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     protected override void OnComplete()
     {
-      UnitAddItemSafe(LEGEND_JAINA.Unit, ARTIFACT_SOULGEM.item);
+      UnitAddItemSafe(LEGEND_JAINA.Unit, ARTIFACT_SOULGEM.Item);
     }
   }
 }

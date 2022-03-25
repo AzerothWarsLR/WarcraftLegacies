@@ -2,10 +2,10 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
-  public class FrostwolfSetup{
+  public static class FrostwolfSetup{
 
   
-    Faction FACTION_FROSTWOLF
+    public static Faction FACTION_FROSTWOLF { get; private set; }
   
 
     public static void Setup( ){
@@ -17,33 +17,33 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       f.StartingGold = 150;
       f.StartingLumber = 500;
 
-      f.ModObjectLimit(FourCC("ogre"), UNLIMITED)   ;//Great Hall
-      f.ModObjectLimit(FourCC("ostr"), UNLIMITED)   ;//Stronghold
-      f.ModObjectLimit(FourCC("ofrt"), UNLIMITED)   ;//Fortress
-      f.ModObjectLimit(FourCC("oalt"), UNLIMITED)   ;//Altar of Storms
-      f.ModObjectLimit(FourCC("obar"), UNLIMITED)   ;//Barracks
-      f.ModObjectLimit(FourCC("ofor"), UNLIMITED)   ;//War Mill
-      f.ModObjectLimit(FourCC("otto"), UNLIMITED)   ;//Tauren Totem
-      f.ModObjectLimit(FourCC("osld"), UNLIMITED)   ;//Spirit Lodge
-      f.ModObjectLimit(FourCC("otrb"), UNLIMITED)   ;//Orc Burrow
-      f.ModObjectLimit(FourCC("owtw"), UNLIMITED)   ;//Watch Tower
-      f.ModObjectLimit(FourCC("o002"), UNLIMITED)   ;//Improved Watch Tower
-      f.ModObjectLimit(FourCC("ovln"), UNLIMITED)   ;//Voodoo Lounge
-      f.ModObjectLimit(FourCC("oshy"), UNLIMITED)   ;//Shipyard
+      f.ModObjectLimit(FourCC("ogre"), Faction.UNLIMITED)   ;//Great Hall
+      f.ModObjectLimit(FourCC("ostr"), Faction.UNLIMITED)   ;//Stronghold
+      f.ModObjectLimit(FourCC("ofrt"), Faction.UNLIMITED)   ;//Fortress
+      f.ModObjectLimit(FourCC("oalt"), Faction.UNLIMITED)   ;//Altar of Storms
+      f.ModObjectLimit(FourCC("obar"), Faction.UNLIMITED)   ;//Barracks
+      f.ModObjectLimit(FourCC("ofor"), Faction.UNLIMITED)   ;//War Mill
+      f.ModObjectLimit(FourCC("otto"), Faction.UNLIMITED)   ;//Tauren Totem
+      f.ModObjectLimit(FourCC("osld"), Faction.UNLIMITED)   ;//Spirit Lodge
+      f.ModObjectLimit(FourCC("otrb"), Faction.UNLIMITED)   ;//Orc Burrow
+      f.ModObjectLimit(FourCC("owtw"), Faction.UNLIMITED)   ;//Watch Tower
+      f.ModObjectLimit(FourCC("o002"), Faction.UNLIMITED)   ;//Improved Watch Tower
+      f.ModObjectLimit(FourCC("ovln"), Faction.UNLIMITED)   ;//Voodoo Lounge
+      f.ModObjectLimit(FourCC("oshy"), Faction.UNLIMITED)   ;//Shipyard
 
-      f.ModObjectLimit(FourCC("opeo"), UNLIMITED)   ;//Peon
-      f.ModObjectLimit(FourCC("ogru"), UNLIMITED)   ;//Grunt
-      f.ModObjectLimit(FourCC("otau"), UNLIMITED)   ;//Tauren
-      f.ModObjectLimit(FourCC("ohun"), UNLIMITED)   ;//Troll Headhunter
+      f.ModObjectLimit(FourCC("opeo"), Faction.UNLIMITED)   ;//Peon
+      f.ModObjectLimit(FourCC("ogru"), Faction.UNLIMITED)   ;//Grunt
+      f.ModObjectLimit(FourCC("otau"), Faction.UNLIMITED)   ;//Tauren
+      f.ModObjectLimit(FourCC("ohun"), Faction.UNLIMITED)   ;//Troll Headhunter
       f.ModObjectLimit(FourCC("ocat"), 6)           ;//Catapult
       f.ModObjectLimit(FourCC("otbr"), 12)          ;//Troll Batrider
-      f.ModObjectLimit(FourCC("odoc"), UNLIMITED)   ;//Troll Witch Doctor
-      f.ModObjectLimit(FourCC("oshm"), UNLIMITED)   ;//Shaman
-      f.ModObjectLimit(FourCC("ospw"), UNLIMITED)   ;//Spirit Walker
+      f.ModObjectLimit(FourCC("odoc"), Faction.UNLIMITED)   ;//Troll Witch Doctor
+      f.ModObjectLimit(FourCC("oshm"), Faction.UNLIMITED)   ;//Shaman
+      f.ModObjectLimit(FourCC("ospw"), Faction.UNLIMITED)   ;//Spirit Walker
       f.ModObjectLimit(FourCC("o00A"), 6)           ;//Far Seer
       f.ModObjectLimit(FourCC("obot"), 12)  	    ;//Transport Ship
       f.ModObjectLimit(FourCC("odes"), 12)  	    ;//Orc Frigate
-      f.ModObjectLimit(FourCC("oosc"), UNLIMITED)   ;//Pack Kodo
+      f.ModObjectLimit(FourCC("oosc"), Faction.UNLIMITED)   ;//Pack Kodo
       f.ModObjectLimit(FourCC("ojgn"), 6)          ;//Juggernaught
 
       f.ModObjectLimit(FourCC("h00C"), 1)           ;//Drek)thar
@@ -52,18 +52,18 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       f.ModObjectLimit(FourCC("Orkn"), 1)           ;//Voljin
       f.ModObjectLimit(FourCC("Orex"), 1)           ;//Rexxar
 
-      f.ModObjectLimit(FourCC("Rows"), UNLIMITED)   ;//Improved Pulverize
-      f.ModObjectLimit(FourCC("Rost"), UNLIMITED)   ;//Shaman Adept Training
-      f.ModObjectLimit(FourCC("Rowd"), UNLIMITED)   ;//Witch Doctor Adept Training
-      f.ModObjectLimit(FourCC("Rowt"), UNLIMITED)   ;//Spirit Walker Adept Training
-      f.ModObjectLimit(FourCC("R023"), UNLIMITED)   ;//Spiritual Infusion
-      f.ModObjectLimit(FourCC("Rolf"), UNLIMITED)   ;//Liquid Fire
-      f.ModObjectLimit(FourCC("Rosp"), UNLIMITED)   ;//Spiked Barricades
-      f.ModObjectLimit(FourCC("Rorb"), UNLIMITED)   ;//reinforced Defenses
-      f.ModObjectLimit(FourCC("R00H"), UNLIMITED)   ;//Animal Companion
-      f.ModObjectLimit(FourCC("R00R"), UNLIMITED)   ;//Improved Chain Lightning
-      f.ModObjectLimit(FourCC("R00W"), UNLIMITED)   ;//Toughened Hides
-      f.ModObjectLimit(FourCC("R01Z"), UNLIMITED)   ;//Battle Stations
+      f.ModObjectLimit(FourCC("Rows"), Faction.UNLIMITED)   ;//Improved Pulverize
+      f.ModObjectLimit(FourCC("Rost"), Faction.UNLIMITED)   ;//Shaman Adept Training
+      f.ModObjectLimit(FourCC("Rowd"), Faction.UNLIMITED)   ;//Witch Doctor Adept Training
+      f.ModObjectLimit(FourCC("Rowt"), Faction.UNLIMITED)   ;//Spirit Walker Adept Training
+      f.ModObjectLimit(FourCC("R023"), Faction.UNLIMITED)   ;//Spiritual Infusion
+      f.ModObjectLimit(FourCC("Rolf"), Faction.UNLIMITED)   ;//Liquid Fire
+      f.ModObjectLimit(FourCC("Rosp"), Faction.UNLIMITED)   ;//Spiked Barricades
+      f.ModObjectLimit(FourCC("Rorb"), Faction.UNLIMITED)   ;//reinforced Defenses
+      f.ModObjectLimit(FourCC("R00H"), Faction.UNLIMITED)   ;//Animal Companion
+      f.ModObjectLimit(FourCC("R00R"), Faction.UNLIMITED)   ;//Improved Chain Lightning
+      f.ModObjectLimit(FourCC("R00W"), Faction.UNLIMITED)   ;//Toughened Hides
+      f.ModObjectLimit(FourCC("R01Z"), Faction.UNLIMITED)   ;//Battle Stations
       f.SetObjectLevel(FourCC("R01Z"), 1)                ;//Battle Stations
     }
 

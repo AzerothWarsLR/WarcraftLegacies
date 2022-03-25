@@ -7,8 +7,8 @@ namespace AzerothWarsCSharp.Source.Researches.Lordaeron
   
 
     private static void Research( ){
-      FACTION_LORDAERON.ModObjectLimit(FourCC(hfoo), -UNLIMITED)  ;//Footman
-      FACTION_LORDAERON.ModObjectLimit(FourCC(h029), UNLIMITED)   ;//Veteran Footman
+      LordaeronSetup.FactionLordaeron.ModObjectLimit(FourCC(hfoo), -Faction.UNLIMITED)  ;//Footman
+      LordaeronSetup.FactionLordaeron.ModObjectLimit(FourCC(h029), Faction.UNLIMITED)   ;//Veteran Footman
     }
 
     public static void Setup( ){

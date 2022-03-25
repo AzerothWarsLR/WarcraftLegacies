@@ -45,7 +45,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       unit u;
       player holderPlayer = Holder.Person.Player;
       LEGEND_KATHERINE.StartingXp = GetHeroXP(LEGEND_KATHERINE.Unit);
-      Holder.obliterate();
+      Holder.Obliterate();
       LEGEND_KATHERINE.Spawn(Holder.Player, -15223, -22856, 110);
       UnitAddItem(LEGEND_KATHERINE.Unit,
         CreateItem(FourCC("I00M"), GetUnitX(LEGEND_KATHERINE.Unit), GetUnitY(LEGEND_KATHERINE.Unit)));

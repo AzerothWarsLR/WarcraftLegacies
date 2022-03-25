@@ -1,17 +1,16 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 {
   public sealed class QuestFreeNerzhul : QuestData
   {
-    public QuestFreeNerzhul()
+    public QuestFreeNerzhul() : base("Jailor of the Damned",
+      "Before he became the Lich King, Ner'zhul was the chieftain and elder shaman of the Shadowmoon Clan. Perhaps something of his former self still survives within the Frozen Throne.",
+      "ReplaceableTextures\\CommandButtons\\BTNShaman.blp")
     {
-      thistype this = thistype.allocate("Jailor of the Damned",
-        "Before he became the Lich King, NerFourCC("zhul was the chieftain && elder shaman of the Shadowmoon Clan
-          .Perhaps something of his former self still survives within the Frozen Throne
-          .", "ReplaceableTextures\\CommandButtons\\BTNShaman.blp");
-      AddQuestItem(new QuestItemKillUnit(LEGEND_LICHKING.Unit));
+      AddQuestItem(new QuestItemKillUnit(LegendScourge.LegendLichking.Unit));
     }
 
 
@@ -22,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
     protected override void OnComplete()
     {
-      AddHeroAttributes(LEGEND_THRALL.Unit, 10, 10, 10);
+      AddHeroAttributes(LegendFrostwolf.legendThrall.Unit, 10, 10, 10);
     }
   }
 }

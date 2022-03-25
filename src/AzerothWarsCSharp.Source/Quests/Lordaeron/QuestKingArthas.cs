@@ -1,25 +1,25 @@
-//Prince Arthas goes to the Frozen Throne after it)s destroyed. He becomes King Arthas, gets the Crown of Lordaeron, and Terenas dies.
-
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
+using AzerothWarsCSharp.Source.Setup;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {
   public sealed class QuestKingArthas : QuestData
   {
-    private static readonly int QUEST_RESEARCH_ID = FourCC("R08A"); //This research is given when the quest is completed
-
-    public QuestKingArthas() : base("Line of Succession",
+    private static readonly int QuestResearchId = FourCC("R08A"); //This research is given when the quest is completed
+    private readonly unit _terenas;
+    
+    public QuestKingArthas(unit terenas) : base("Line of Succession",
       "Arthas Menethil is the one true heir of the Kingdom of Lordaeron. The only thing standing in the way of his coronation is the world-ending threat of the Scourge.",
       "ReplaceableTextures\\CommandButtons\\BTNArthas.blp")
     {
-      this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_CAPITALPALACE));
-      AddQuestItem(new QuestItemControlLegend(LEGEND_ARTHAS, true));
-      AddQuestItem(new QuestItemLegendDead(LEGEND_LICHKING));
-      AddQuestItem(new QuestItemLegendInRect(LEGEND_ARTHAS, Regions.KingArthasCrown.Rect, "King Terenas"));
-      ResearchId = QUEST_RESEARCH_ID;
-      ;
-      ;
+      AddQuestItem(new QuestItemLegendNotPermanentlyDead(LegendLordaeron.LegendCapitalpalace));
+      AddQuestItem(new QuestItemControlLegend(LegendLordaeron.LegendArthas, true));
+      AddQuestItem(new QuestItemLegendDead(LegendScourge.LegendLichking));
+      AddQuestItem(new QuestItemLegendInRect(LegendLordaeron.LegendArthas, Regions.King_Arthas_crown.Rect, "King Terenas"));
+      ResearchId = QuestResearchId;
+      _terenas = terenas;
     }
 
 
@@ -27,16 +27,16 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "With the Lich King eliminated, the Kingdom of Lordaeron is free of its greatest threat. King Terenas Menethil proudly abdicates in favor of his son.";
 
     protected override string CompletionDescription =>
-      "Arthas gains 2000 experience && the Crown of Lordaeron, && he can no longer permanently die";
+      "Arthas gains 2000 experience and the Crown of Lordaeron, and he can no longer permanently die";
 
     protected override void OnComplete()
     {
-      BlzSetUnitName(LEGEND_ARTHAS.Unit, "King of Lordaeron");
-      BlzSetUnitName(gg_unit_nemi_0019, "King Emeritus Terenas Menethil");
-      RemoveUnit(gg_unit_nemi_0019);
-      AddHeroXP(LEGEND_ARTHAS.Unit, 2000, true);
-      UnitAddItemSafe(LEGEND_ARTHAS.Unit, ARTIFACT_CROWNLORDAERON.item);
-      LEGEND_ARTHAS.ClearUnitDependencies();
+      BlzSetUnitName(LegendLordaeron.LegendArthas.Unit, "King of Lordaeron");
+      BlzSetUnitName(_terenas, "King Emeritus Terenas Menethil");
+      RemoveUnit(_terenas);
+      AddHeroXP(LegendLordaeron.LegendArthas.Unit, 2000, true);
+      UnitAddItemSafe(LegendLordaeron.LegendArthas.Unit, ArtifactSetup.ArtifactCrownlordaeron.Item);
+      LegendLordaeron.LegendArthas.ClearUnitDependencies();
     }
   }
 }

@@ -22,9 +22,9 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     protected override void OnAdd()
     {
-      Holder.ModObjectLimit(FourCC("R020"), UNLIMITED); //Rain: An Amalgam
-      Holder.ModObjectLimit(FourCC("R03M"), UNLIMITED); //Methods of Control
-      Holder.ModObjectLimit(FourCC("R01B"), UNLIMITED); //A Treatise on Barriers
+      Holder.ModObjectLimit(FourCC("R020"), Faction.UNLIMITED); //Rain: An Amalgam
+      Holder.ModObjectLimit(FourCC("R03M"), Faction.UNLIMITED); //Methods of Control
+      Holder.ModObjectLimit(FourCC("R01B"), Faction.UNLIMITED); //A Treatise on Barriers
     }
   }
 }

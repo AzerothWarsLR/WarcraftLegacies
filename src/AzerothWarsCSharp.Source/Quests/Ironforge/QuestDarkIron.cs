@@ -46,7 +46,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
 
     protected override void OnAdd()
     {
-      Holder.ModObjectLimit(ResearchId, UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
       Holder.ModObjectLimit(HeroId, 1);
     }
   }

@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       thistype this = thistype.allocate("A Symphony of Frost && Flame",
         "Kil'jaeden has ordered Illidan to destroy the Frozen Throne, && he shall obey.",
         "ReplaceableTextures\\CommandButtons\\BTNMetamorphosis.blp");
-      AddQuestItem(new QuestItemKillUnit(LEGEND_LICHKING.Unit));
+      AddQuestItem(new QuestItemKillUnit(LegendScourge.LegendLichking.Unit));
       this.AddQuestItem(new QuestItemResearch(FourCC("R063"),)n055)));
     }
 

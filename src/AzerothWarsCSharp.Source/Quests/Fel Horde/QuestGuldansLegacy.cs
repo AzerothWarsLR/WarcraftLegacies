@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
   }
 
   protected override void OnAdd( ){
-  Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
+  Holder.ModObjectLimit(RESEARCH_ID, Faction.UNLIMITED);
   }
 
   public QuestGuldansLegacy ( ) : base("GulFourCC("dans Legacy", "The Orc Warlock Gul

@@ -6,19 +6,19 @@ namespace AzerothWarsCSharp.Source.Legends
   public static class LegendTwilight{
 
   
-    public static Legend LEGEND_DEATHWING
-    public static Legend LEGEND_FELUDIUS
-    public static Legend LEGEND_IGNACIOUS
-    public static Legend LEGEND_AZIL
+    public static Legend LEGEND_DEATHWING { get; private set; }
+    public static Legend LEGEND_FELUDIUS { get; private set; }
+    public static Legend LEGEND_IGNACIOUS { get; private set; }
+    public static Legend LEGEND_AZIL { get; private set; }
 
-    public static Legend LEGEND_TWILIGHTCITADEL
+    public static Legend LegendTwilightcitadel { get; private set; }
   
 
     public static void Setup( ){
-      LEGEND_TWILIGHTCITADEL = new Legend();
-      LEGEND_TWILIGHTCITADEL.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h05U"));
-      LEGEND_TWILIGHTCITADEL.DeathMessage = "The Twilight Citadel has been toppled. Already the land has begun to heal, but it may be decades before the permeating Old God stink fully dissipates from the Twilight Highlands.";
-      LEGEND_TWILIGHTCITADEL.IsCapital = true;
+      LegendTwilight.LegendTwilightcitadel = new Legend();
+      LegendTwilight.LegendTwilightcitadel.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h05U"));
+      LegendTwilight.LegendTwilightcitadel.DeathMessage = "The Twilight Citadel has been toppled. Already the land has begun to heal, but it may be decades before the permeating Old God stink fully dissipates from the Twilight Highlands.";
+      LegendTwilight.LegendTwilightcitadel.IsCapital = true;
 
       LEGEND_DEATHWING = new Legend();
       LEGEND_DEATHWING.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("u01Y"));
@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Legends
       LEGEND_AZIL = new Legend();
       LEGEND_AZIL.UnitType = FourCC("H08Q");
       LEGEND_AZIL.StartingXp = 1800;
-      LEGEND_AZIL.AddUnitDependency(LEGEND_TWILIGHTCITADEL.Unit);
+      LEGEND_AZIL.AddUnitDependency(LegendTwilight.LegendTwilightcitadel.Unit);
 
       LEGEND_FELUDIUS = new Legend();
       LEGEND_FELUDIUS.UnitType = FourCC("U01S");

@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       "ReplaceableTextures\\CommandButtons\\BTNTheLichKingQuest.blp")
     {
       AddQuestItem(new QuestItemResearch(FourCC(""R07W""), FourCC(""u000"")));
-      AddQuestItem(new QuestItemControlLegend(LegendScourge.LEGEND_ARTHAS, false));
+      AddQuestItem(new QuestItemControlLegend(LegendScourge.LegendLordaeron.LegendArthas, false));
       AddQuestItem(new QuestItemTime(900));
       Global = true;
     }

@@ -1,5 +1,7 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {
@@ -7,15 +9,11 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
   {
     private static readonly int ResearchId = FourCC("R06F");
 
-    public QuestShoresOfNorthrend() : base("Shores of Northrend",
-      "MalFourCC("ganis") citadel lies somewhere within the arctic wastes of the north. In order to assault the Dreadlord, Arthas must first establish a base camp at the shores of Northrend.",
-      "ReplaceableTextures\\CommandButtons\\BTNHumanTransport.blp")
+    public QuestShoresOfNorthrend() : base("Shores of Northrend", "Mal'ganis' citadel lies somewhere within the arctic wastes of the north. In order to assault the Dreadlord, Arthas must first establish a base camp at the shores of Northrend.", "ReplaceableTextures\\CommandButtons\\BTNHumanTransport.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LEGEND_ARTHAS, true));
-      AddQuestItem(new QuestItemLegendDead(LEGEND_SCHOLOMANCE));
+      AddQuestItem(new QuestItemControlLegend(LegendLordaeron.LegendArthas, true));
+      AddQuestItem(new QuestItemLegendDead(LegendForsaken.LegendScholomance));
       AddQuestItem(new QuestItemResearch(ResearchId, FourCC("hshy")));
-      ;
-      ;
     }
 
 
@@ -27,17 +25,17 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     protected override void OnFail()
     {
-      Holder.ModObjectLimit(ResearchId, -UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, -Faction.UNLIMITED);
     }
 
     protected override void OnComplete()
     {
       KillNeutralHostileUnitsInRadius(4152, 16521, 2300);
       KillNeutralHostileUnitsInRadius(-2190, 16803, 700);
-      if (GetOwningPlayer(LEGEND_ARTHAS.Unit) == Holder.Player)
+      if (GetOwningPlayer(LegendLordaeron.LegendArthas.Unit) == Holder.Player)
       {
-        ReviveHero(LEGEND_ARTHAS.Unit, 400, 16102, true);
-        BlzSetUnitFacingEx(LEGEND_ARTHAS.Unit, 112);
+        ReviveHero(LegendLordaeron.LegendArthas.Unit, 400, 16102, true);
+        BlzSetUnitFacingEx(LegendLordaeron.LegendArthas.Unit, 112);
       }
 
       CreateStructureForced(Holder.Player, FourCC("h01C"), -5133152, 1667969, 4757993 * bj_RADTODEG, 256);
@@ -65,12 +63,12 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       CreateStructureForced(Holder.Player, FourCC("hgtw"), 1472, 16384, 4712389 * bj_RADTODEG, 256);
       CreateStructureForced(Holder.Player, FourCC("hkni"), 8933604, 1617558, 4130178 * bj_RADTODEG, 256);
       CreateStructureForced(Holder.Player, FourCC("nchp"), -9312155, 1655475, 5458206 * bj_RADTODEG, 256);
-      Holder.ModObjectLimit(ResearchId, -UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, -Faction.UNLIMITED);
     }
 
     protected override void OnAdd()
     {
-      Holder.ModObjectLimit(ResearchId, UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
     }
   }
 }

@@ -58,8 +58,8 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
     protected override void OnComplete()
     {
       GrantAkama(Holder.Player);
-      FACTION_NAGA.ModObjectLimit(FourCC("n08W"), UNLIMITED); //Lost One Den
-      FACTION_NAGA.ModObjectLimit(FourCC("ndrn"), UNLIMITED); //Vindicator
+      FACTION_NAGA.ModObjectLimit(FourCC("n08W"), Faction.UNLIMITED); //Lost One Den
+      FACTION_NAGA.ModObjectLimit(FourCC("ndrn"), Faction.UNLIMITED); //Vindicator
       FACTION_NAGA.ModObjectLimit(FourCC("ndrs"), 6); //Seer
       SetUnitOwner(LEGEND_NZOTH.Unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
       REDEMPTION_PATH.Progress = QUEST_PROGRESS_FAILED;

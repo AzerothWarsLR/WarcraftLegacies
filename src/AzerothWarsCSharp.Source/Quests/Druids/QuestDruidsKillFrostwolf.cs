@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 
   protected override void OnAdd( ){
   this.Holder.ModObjectLimit(ELEMENTAL_GUARDIAN_ID, 1);
-  this.Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
+  this.Holder.ModObjectLimit(RESEARCH_ID, Faction.UNLIMITED);
   }
 
   public QuestDruidsKillFrostwolf ( ) : base("Natural Contest",

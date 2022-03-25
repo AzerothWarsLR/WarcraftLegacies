@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
 
     protected override void OnAdd()
     {
-      Holder.ModObjectLimit(ResearchId, UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
     }
   }
 }

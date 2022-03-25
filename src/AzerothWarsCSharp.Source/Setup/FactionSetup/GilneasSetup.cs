@@ -18,37 +18,37 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       f.StartingLumber = 200;
 
       //Structures
-      f.ModObjectLimit(FourCC("h01R"), UNLIMITED)   ;//Town Hall
-      f.ModObjectLimit(FourCC("h023"), UNLIMITED)   ;//Keep
-      f.ModObjectLimit(FourCC("h02C"), UNLIMITED)   ;//Castle
-      f.ModObjectLimit(FourCC("h02F"), UNLIMITED)   ;//Farm
-      f.ModObjectLimit(FourCC("h02X"), UNLIMITED)   ;//Altar
-      f.ModObjectLimit(FourCC("h039"), UNLIMITED)   ;//Scout Tower
-      f.ModObjectLimit(FourCC("h03A"), UNLIMITED)   ;//Guard Tower
-      f.ModObjectLimit(FourCC("h03B"), UNLIMITED)   ;//Cannon Tower
-      f.ModObjectLimit(FourCC("h03D"), UNLIMITED)   ;//Temple of the cursed
-      f.ModObjectLimit(FourCC("h03E"), UNLIMITED)   ;//Training Hall
-      f.ModObjectLimit(FourCC("n008"), UNLIMITED)   ;//Marketplace
-      f.ModObjectLimit(FourCC("h03H"), UNLIMITED)   ;//Shipyard
-      f.ModObjectLimit(FourCC("h03O"), UNLIMITED)   ;//Blacksmith
-      f.ModObjectLimit(FourCC("h03Q"), UNLIMITED)   ;//Garrison
-      f.ModObjectLimit(FourCC("h052"), UNLIMITED)   ;//Improved Guard Tower
-      f.ModObjectLimit(FourCC("h04N"), UNLIMITED)   ;//Improved Cannon Tower
+      f.ModObjectLimit(FourCC("h01R"), Faction.UNLIMITED)   ;//Town Hall
+      f.ModObjectLimit(FourCC("h023"), Faction.UNLIMITED)   ;//Keep
+      f.ModObjectLimit(FourCC("h02C"), Faction.UNLIMITED)   ;//Castle
+      f.ModObjectLimit(FourCC("h02F"), Faction.UNLIMITED)   ;//Farm
+      f.ModObjectLimit(FourCC("h02X"), Faction.UNLIMITED)   ;//Altar
+      f.ModObjectLimit(FourCC("h039"), Faction.UNLIMITED)   ;//Scout Tower
+      f.ModObjectLimit(FourCC("h03A"), Faction.UNLIMITED)   ;//Guard Tower
+      f.ModObjectLimit(FourCC("h03B"), Faction.UNLIMITED)   ;//Cannon Tower
+      f.ModObjectLimit(FourCC("h03D"), Faction.UNLIMITED)   ;//Temple of the cursed
+      f.ModObjectLimit(FourCC("h03E"), Faction.UNLIMITED)   ;//Training Hall
+      f.ModObjectLimit(FourCC("n008"), Faction.UNLIMITED)   ;//Marketplace
+      f.ModObjectLimit(FourCC("h03H"), Faction.UNLIMITED)   ;//Shipyard
+      f.ModObjectLimit(FourCC("h03O"), Faction.UNLIMITED)   ;//Blacksmith
+      f.ModObjectLimit(FourCC("h03Q"), Faction.UNLIMITED)   ;//Garrison
+      f.ModObjectLimit(FourCC("h052"), Faction.UNLIMITED)   ;//Improved Guard Tower
+      f.ModObjectLimit(FourCC("h04N"), Faction.UNLIMITED)   ;//Improved Cannon Tower
 
       //Units
-      f.ModObjectLimit(FourCC("hpea"), UNLIMITED)   ;//Peasant
+      f.ModObjectLimit(FourCC("hpea"), Faction.UNLIMITED)   ;//Peasant
       f.ModObjectLimit(FourCC("hbot"), 12)   ;//Alliance Transport Ship
       f.ModObjectLimit(FourCC("hdes"), 12)   ;//Alliance Frigate
       f.ModObjectLimit(FourCC("hbsh"), 6)          ;//Alliance Battle Ship
-      f.ModObjectLimit(FourCC("n06K"), UNLIMITED)   ;//Wildsoul
-      f.ModObjectLimit(FourCC("h04M"), UNLIMITED)   ;//Cleric
-      f.ModObjectLimit(FourCC("h04E"), UNLIMITED)   ;//Protector
-      f.ModObjectLimit(FourCC("n06L"), UNLIMITED)   ;//Armored Wolf
+      f.ModObjectLimit(FourCC("n06K"), Faction.UNLIMITED)   ;//Wildsoul
+      f.ModObjectLimit(FourCC("h04M"), Faction.UNLIMITED)   ;//Cleric
+      f.ModObjectLimit(FourCC("h04E"), Faction.UNLIMITED)   ;//Protector
+      f.ModObjectLimit(FourCC("n06L"), Faction.UNLIMITED)   ;//Armored Wolf
       f.ModObjectLimit(FourCC("o01V"), 6)           ;//Greyguard
       f.ModObjectLimit(FourCC("n029"), 12)          ;//Sea Giant
-      f.ModObjectLimit(FourCC("h03L"), UNLIMITED)   ;//Shotgunner
-      f.ModObjectLimit(FourCC("nsgt"), UNLIMITED)   ;//Spider
-      f.ModObjectLimit(FourCC("n067"), UNLIMITED)   ;//Spider
+      f.ModObjectLimit(FourCC("h03L"), Faction.UNLIMITED)   ;//Shotgunner
+      f.ModObjectLimit(FourCC("nsgt"), Faction.UNLIMITED)   ;//Spider
+      f.ModObjectLimit(FourCC("n067"), Faction.UNLIMITED)   ;//Spider
       f.ModObjectLimit(FourCC("o04U"), 6)           ;//Mangonel
       f.ModObjectLimit(FourCC("n06Z"), 6)           ;//Gunship
       f.ModObjectLimit(FourCC("n06Q"), 12)          ;//Royal Guard
@@ -59,11 +59,11 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       f.ModObjectLimit(FourCC("Hpb2"), 1)          ;//Darius
 
       //Upgrades
-      f.ModObjectLimit(FourCC("R04O"), UNLIMITED)   ;//Cleric Training
-      f.ModObjectLimit(FourCC("R04P"), UNLIMITED)   ;//Scythe Training
-      f.ModObjectLimit(FourCC("R00K"), UNLIMITED)   ;//Power Infusion
-      f.ModObjectLimit(FourCC("Rhlh"), UNLIMITED)   ;//Improved Lumber Harvesting
-      f.ModObjectLimit(FourCC("Rhac"), UNLIMITED)   ;//Improved Masonry
+      f.ModObjectLimit(FourCC("R04O"), Faction.UNLIMITED)   ;//Cleric Training
+      f.ModObjectLimit(FourCC("R04P"), Faction.UNLIMITED)   ;//Scythe Training
+      f.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED)   ;//Power Infusion
+      f.ModObjectLimit(FourCC("Rhlh"), Faction.UNLIMITED)   ;//Improved Lumber Harvesting
+      f.ModObjectLimit(FourCC("Rhac"), Faction.UNLIMITED)   ;//Improved Masonry
     }
 
   }

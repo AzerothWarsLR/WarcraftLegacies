@@ -13,8 +13,8 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       "ReplaceableTextures\\CommandButtons\\BTNHeroDeathKnight.blp")
     {
       AddQuestItem(new QuestItemLegendDead(LEGEND_STRATHOLME));
-      this.AddQuestItem(new QuestItemEitherOf.create(QuestItemLegendDead.create(LEGEND_ARTHAS),
-        QuestItemFactionDefeated(FACTION_LORDAERON)));
+      this.AddQuestItem(new QuestItemEitherOf.create(QuestItemLegendDead.create(LegendLordaeron.LegendArthas),
+        QuestItemFactionDefeated(LordaeronSetup.FactionLordaeron)));
       AddQuestItem(new QuestItemSelfExists());
       ;
       ;
@@ -28,19 +28,19 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override void OnComplete()
     {
-      UnitDropAllItems(LEGEND_ARTHAS.Unit);
-      RemoveUnit(LEGEND_ARTHAS.Unit);
-      LEGEND_ARTHAS.Unit = null;
-      LEGEND_ARTHAS.PlayerColor = PLAYER_COLOR_PURPLE;
-      LEGEND_ARTHAS.StartingXp = 7000;
-      LEGEND_ARTHAS.UnitType = FourCC("Uear");
-      LEGEND_ARTHAS.ClearUnitDependencies();
+      UnitDropAllItems(LegendLordaeron.LegendArthas.Unit);
+      RemoveUnit(LegendLordaeron.LegendArthas.Unit);
+      LegendLordaeron.LegendArthas.Unit = null;
+      LegendLordaeron.LegendArthas.PlayerColor = PLAYER_COLOR_PURPLE;
+      LegendLordaeron.LegendArthas.StartingXp = 7000;
+      LegendLordaeron.LegendArthas.UnitType = FourCC("Uear");
+      LegendLordaeron.LegendArthas.ClearUnitDependencies();
       SetPlayerTechResearched(Holder.Player, ResearchId, 1);
     }
 
     protected override void OnAdd()
     {
-      Holder.ModObjectLimit(ResearchId, UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
       Holder.ModObjectLimit(HeroId, 1);
     }
   }

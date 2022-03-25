@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     protected override void OnAdd()
     {
       Holder.ModObjectLimit(UnittypeId, LIMIT_CHANGE);
-      Holder.ModObjectLimit(ResearchId, UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
     }
 
     protected override void OnComplete()

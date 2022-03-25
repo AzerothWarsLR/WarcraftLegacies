@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
   protected override void OnComplete(){
   internal SetUnitOwner(LEGEND_KAEL.Unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
-  this.Holder.obliterate();
+  this.Holder.Obliterate();
   internal SetUnitOwner(LEGEND_KAEL.Unit, this.Holder.Player, true);
   FACTION_QUELTHALAS.AddQuest(SUMMON_KIL);
   SUMMON_KIL.Progress = QUEST_PROGRESS_UNDISCOVERED;
@@ -23,17 +23,17 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
   GREAT_TREACHERY.Progress = QUEST_PROGRESS_UNDISCOVERED;
   FACTION_QUELTHALAS.AddQuest(STAY_LOYAL);
   STAY_LOYAL.Progress = QUEST_PROGRESS_UNDISCOVERED;
-  FACTION_QUELTHALAS.ModObjectLimit(FourCC("H00Q"), -UNLIMITED); //Anasterian
-  FACTION_QUELTHALAS.ModObjectLimit(FourCC("Hvwd"), -UNLIMITED); //Sylvanas
-  FACTION_QUELTHALAS.ModObjectLimit(FourCC("n075"), -UNLIMITED); //Vareesa
-  FACTION_QUELTHALAS.ModObjectLimit(FourCC("n00A"), -UNLIMITED); //Farstrider
-  FACTION_QUELTHALAS.ModObjectLimit(FourCC("hhes"), -UNLIMITED); //Swordsman
+  FACTION_QUELTHALAS.ModObjectLimit(FourCC("H00Q"), -Faction.UNLIMITED); //Anasterian
+  FACTION_QUELTHALAS.ModObjectLimit(FourCC("Hvwd"), -Faction.UNLIMITED); //Sylvanas
+  FACTION_QUELTHALAS.ModObjectLimit(FourCC("n075"), -Faction.UNLIMITED); //Vareesa
+  FACTION_QUELTHALAS.ModObjectLimit(FourCC("n00A"), -Faction.UNLIMITED); //Farstrider
+  FACTION_QUELTHALAS.ModObjectLimit(FourCC("hhes"), -Faction.UNLIMITED); //Swordsman
   FACTION_QUELTHALAS.ModObjectLimit(FourCC("nbel"),UNLIMITED); //Sunfury
   FACTION_QUELTHALAS.ModObjectLimit(FourCC("n09S"), 6); //Ranger
   FACTION_QUELTHALAS.ModObjectLimit(FourCC("n02F"), 6); //Felblood Warlock
   FACTION_QUELTHALAS.ModObjectLimit(FourCC("e01B"), 6); //Arcane Anihilator
-  FACTION_QUELTHALAS.ModObjectLimit(FourCC("H00Q"), -UNLIMITED); //Anasterian
-  FACTION_QUELTHALAS.ModObjectLimit(FourCC("Hvwd"), -UNLIMITED); //sylvanas
+  FACTION_QUELTHALAS.ModObjectLimit(FourCC("H00Q"), -Faction.UNLIMITED); //Anasterian
+  FACTION_QUELTHALAS.ModObjectLimit(FourCC("Hvwd"), -Faction.UNLIMITED); //sylvanas
   internal RemoveUnit(LEGEND_ANASTERIAN.Unit);
   internal RemoveUnit(LEGEND_SYLVANAS.Unit);
   internal SetUnitPosition(LEGEND_KAEL.Unit, 4067, -21695);

@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
 
     protected override void OnComplete()
     {
-      UnitAddItemSafe(LEGEND_VELEN.Unit, ARTIFACT_CROWNTRIUMVIRATE.item);
+      UnitAddItemSafe(LEGEND_VELEN.Unit, ARTIFACT_CROWNTRIUMVIRATE.Item);
     }
   }
 }

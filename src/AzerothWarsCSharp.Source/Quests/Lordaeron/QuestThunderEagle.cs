@@ -1,6 +1,7 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {
@@ -13,13 +14,10 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "The Thunder Eagles of the Storm Peaks live in fear of the Legion. Wipe out the Legion Nexus to bring these great birds out into the open.",
       "ReplaceableTextures\\CommandButtons\\BTNWarEagle.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LEGEND_DRAKTHARONKEEP, false));
+      AddQuestItem(new QuestItemControlLegend(LegendNeutral.legendDraktharonkeep, false));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02S"))));
-      ;
-      ;
     }
-
-
+    
     protected override string CompletionPopup => "The Thunder Eagles, now in safe hands " + Holder.Name + ".";
 
     protected override string CompletionDescription => "Learn to train " + GetObjectName(ThunderEagleId) + "s";
@@ -28,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     {
       SetPlayerTechResearched(Holder.Player, ResearchId, 1);
       DisplayUnitTypeAcquired(Holder.Player, ThunderEagleId,
-        "You can now train Thunder Eagles from upgraded Town Halls && from your capitals.");
+        "You can now train Thunder Eagles from upgraded Town Halls and from your capitals.");
     }
   }
 }

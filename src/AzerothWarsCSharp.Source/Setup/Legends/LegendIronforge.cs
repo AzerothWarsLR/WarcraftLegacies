@@ -6,12 +6,11 @@ namespace AzerothWarsCSharp.Source.Legends
   public static class LegendIronforge{
 
   
-    public static Legend LEGEND_DAGRAN
-    public static Legend LEGEND_FALSTAD
-    public static Legend LEGEND_MAGNI
-
-    public static Legend LEGEND_GREATFORGE
-    public static Legend LEGEND_THELSAMAR
+    public static Legend LEGEND_DAGRAN { get; private set; }
+    public static Legend LEGEND_FALSTAD { get; private set; }
+    public static Legend LEGEND_MAGNI { get; private set; }
+    public static Legend LEGEND_GREATFORGE { get; private set; }
+    public static Legend LEGEND_THELSAMAR { get; private set; }
   
 
     public static void Setup( ){

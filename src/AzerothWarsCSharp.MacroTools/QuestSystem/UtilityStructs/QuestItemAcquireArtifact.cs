@@ -38,7 +38,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     public QuestItemAcquireArtifact (Artifact target ){
 
-      this.Description = "Acquire " + GetItemName(target.item);
+      this.Description = "Acquire " + GetItemName(target.Item);
       this.target = target;
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;

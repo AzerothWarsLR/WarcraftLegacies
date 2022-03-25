@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       "The ravaged lands of Lordaeron must be conquered by the Forsaken, their survival depends on it",
       "ReplaceableTextures\\CommandButtons\\BTNNathanosBlightcaller.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LEGEND_NATHANOS, false));
+      AddQuestItem(new QuestItemControlLegend(LegendForsaken.LegendNathanos, false));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01F"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n044"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01H"))));

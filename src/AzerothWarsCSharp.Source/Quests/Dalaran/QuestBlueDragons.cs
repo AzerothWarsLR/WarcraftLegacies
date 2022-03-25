@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     protected override void OnAdd()
     {
       Holder.ModObjectLimit(DRAGON_ID, 6);
-      Holder.ModObjectLimit(MANADAM_ID, UNLIMITED);
+      Holder.ModObjectLimit(MANADAM_ID, Faction.UNLIMITED);
     }
   }
 }

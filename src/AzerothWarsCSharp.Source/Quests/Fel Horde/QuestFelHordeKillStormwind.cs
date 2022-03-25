@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
   }
 
   protected override void OnAdd( ){
-  Holder.ModObjectLimit(RESEARCH_ID, UNLIMITED);
+  Holder.ModObjectLimit(RESEARCH_ID, Faction.UNLIMITED);
   Holder.ModObjectLimit(UNITTYPE_ID, UNIT_LIMIT);
   }
 

@@ -5,61 +5,75 @@ namespace AzerothWarsCSharp.Source.Legends
 {
   public static class LegendLordaeron
   {
-    public static Legend LEGEND_UTHER { get; private set; }
-    public static Legend LEGEND_ARTHAS { get; private set; }
-    public static Legend LEGEND_MOGRAINE { get; private set; }
-    public static Legend LEGEND_GARITHOS { get; private set; }
-    public static Legend LEGEND_GOODCHILD { get; private set; }
-
-    public static Legend LEGEND_CAPITALPALACE { get; private set; }
-    public static Legend LEGEND_STRATHOLME { get; private set; }
-    public static Legend LEGEND_TYRSHAND { get; private set; }
-
-
+    public static Legend LegendUther { get; private set; }
+    public static Legend LegendArthas { get; private set; }
+    public static Legend LegendMograine { get; private set; }
+    public static Legend LegendGarithos { get; private set; }
+    public static Legend LegendGoodchild { get; private set; }
+    public static Legend LegendCapitalpalace { get; private set; }
+    public static Legend LegendStratholme { get; private set; }
+    public static Legend LegendTyrshand { get; private set; }
+    
     public static void Setup()
     {
-      LEGEND_MOGRAINE = new Legend();
-      LEGEND_MOGRAINE.UnitType = FourCC("H01J");
-      LEGEND_MOGRAINE.StartingXp = 2800;
+      LegendMograine = new Legend
+      {
+        UnitType = FourCC("H01J"),
+        StartingXp = 2800
+      };
 
-      LEGEND_GARITHOS = new Legend();
-      LEGEND_GARITHOS.UnitType = FourCC("Hlgr");
-      LEGEND_GARITHOS.StartingXp = 2800;
+      LegendGarithos = new Legend
+      {
+        UnitType = FourCC("Hlgr"),
+        StartingXp = 2800
+      };
 
-      LEGEND_GOODCHILD = new Legend();
-      LEGEND_GOODCHILD.UnitType = FourCC("E00O");
-      LEGEND_GOODCHILD.StartingXp = 2800;
+      LegendGoodchild = new Legend
+      {
+        UnitType = FourCC("E00O"),
+        StartingXp = 2800
+      };
 
-      LEGEND_CAPITALPALACE = new Legend();
-      LEGEND_CAPITALPALACE.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h000"));
-      LEGEND_CAPITALPALACE.DeathMessage = "The capital city of Lordaeron has been razed, && King Terenas is dead.";
-      LEGEND_CAPITALPALACE.IsCapital = true;
+      LegendCapitalpalace = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h000")),
+        DeathMessage = "The capital city of Lordaeron has been razed, and King Terenas is dead.",
+        IsCapital = true
+      };
 
-      LEGEND_STRATHOLME = new Legend();
-      LEGEND_STRATHOLME.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h01G"));
-      LEGEND_STRATHOLME.DeathMessage = "The majestic city of Stratholme has been destroyed.";
-      LEGEND_STRATHOLME.IsCapital = true;
+      LegendStratholme = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h01G")),
+        DeathMessage = "The majestic city of Stratholme has been destroyed.",
+        IsCapital = true
+      };
 
-      LEGEND_TYRSHAND = new Legend();
-      LEGEND_TYRSHAND.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h030"));
-      LEGEND_TYRSHAND.DeathMessage = "TyrFourCC(s Hand, the bastion of human power in Lordaeron, has fallen.";
-      LEGEND_TYRSHAND.IsCapital = true;
+      LegendTyrshand = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h030")),
+        DeathMessage = "TyrFourCC(s Hand, the bastion of human power in Lordaeron, has fallen.",
+        IsCapital = true
+      };
 
-      LEGEND_UTHER = new Legend();
-      LEGEND_UTHER.UnitType = FourCC("Huth");
-      LEGEND_UTHER.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("h000")));
-      LEGEND_UTHER.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nico")));
-      LEGEND_UTHER.DeathMessage =
-        "Uther the Lightbringer makes his last stand, perishing in the defense of the light. Lordaeron, && humanity itself, has lost one of its finest exemplars in this dark hour.";
-      LEGEND_UTHER.PlayerColor = PLAYER_COLOR_LIGHT_BLUE;
-      LEGEND_UTHER.StartingXp = 1000;
+      LegendUther = new Legend
+      {
+        UnitType = FourCC("Huth")
+      };
+      LegendUther.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("h000")));
+      LegendUther.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nico")));
+      LegendUther.DeathMessage =
+        "Uther the Lightbringer makes his last stand, perishing in the defense of the light. Lordaeron, and humanity itself, has lost one of its finest exemplars in this dark hour.";
+      LegendUther.PlayerColor = PLAYER_COLOR_LIGHT_BLUE;
+      LegendUther.StartingXp = 1000;
 
-      LEGEND_ARTHAS = new Legend();
-      LEGEND_ARTHAS.UnitType = FourCC("Hart");
-      LEGEND_ARTHAS.PlayerColor = PLAYER_COLOR_BLUE;
-      LEGEND_ARTHAS.AddUnitDependency(LEGEND_STRATHOLME.Unit);
-      LEGEND_ARTHAS.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nico")));
-      LEGEND_ARTHAS.Essential = true;
+      LegendArthas = new Legend
+      {
+        UnitType = FourCC("Hart"),
+        PlayerColor = PLAYER_COLOR_BLUE
+      };
+      LegendArthas.AddUnitDependency(LegendStratholme.Unit);
+      LegendArthas.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nico")));
+      LegendArthas.Essential = true;
     }
   }
 }

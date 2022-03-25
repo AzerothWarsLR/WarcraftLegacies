@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override void OnAdd()
     {
-      Holder.ModObjectLimit(SapphironResearch, UNLIMITED);
+      Holder.ModObjectLimit(SapphironResearch, Faction.UNLIMITED);
     }
   }
 }

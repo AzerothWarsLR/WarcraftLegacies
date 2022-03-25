@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Setup
       p.Faction = FACTION_FROSTWOLF;
 
       p = Person.create(Player(1));
-      p.Faction = FACTION_LORDAERON;
+      p.Faction = LordaeronSetup.FactionLordaeron;
 
       p = Person.create(Player(2));
       p.Faction = FACTION_QUELTHALAS;

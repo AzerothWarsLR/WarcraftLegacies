@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       if (targetArtifact.OwningUnit != null && RectContainsCoords(targetRect, GetUnitX(targetArtifact.OwningUnit), GetUnitY(targetArtifact.OwningUnit))){
         return true;
       }
-      if (targetArtifact.OwningUnit == null && RectContainsCoords(targetRect, GetItemX(targetArtifact.item), GetItemY(targetArtifact.item))){
+      if (targetArtifact.OwningUnit == null && RectContainsCoords(targetRect, GetItemX(targetArtifact.Item), GetItemY(targetArtifact.Item))){
         return true;
       }
       return false;
@@ -84,7 +84,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       this.targetArtifact = targetArtifact;
       this.targetRect = targetRect;
       targetRegion = RectToRegion(targetRect);
-      this.Description = "Bring " + GetItemName(targetArtifact.item) + " to " + rectName;
+      this.Description = "Bring " + GetItemName(targetArtifact.Item) + " to " + rectName;
       TriggerRegisterEnterRegion(thistype.entersRectTrig, targetRegion, null);
       TriggerRegisterLeaveRegion(thistype.exitsRectTrig, targetRegion, null);
       thistype.byIndex[thistype.count] = this;

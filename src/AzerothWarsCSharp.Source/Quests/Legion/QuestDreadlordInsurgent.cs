@@ -37,11 +37,11 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNHeroDreadLord.blp";
       SetPlayerColor(Holder.Player, PLAYER_COLOR_LIGHT_BLUE);
 
-      LegendForsaken.LEGEND_VARIMATHRAS.StartingXp = GetHeroXP(LegendLegion.LEGEND_TICHONDRIUS.Unit);
+      LegendForsaken.LegendVarimathras.StartingXp = GetHeroXP(LegendLegion.LEGEND_TICHONDRIUS.Unit);
       LegendLegion.LEGEND_LILIAN.StartingXp = GetHeroXP(LegendLegion.LEGEND_MALGANIS.Unit);
       Holder.Obliterate();
       LegendLegion.LEGEND_LILIAN.Spawn(Holder.Player, 7254, 7833, 110);
-      LegendForsaken.LEGEND_VARIMATHRAS.Spawn(Holder.Player, 7254, 7833, 110);
+      LegendForsaken.LegendVarimathras.Spawn(Holder.Player, 7254, 7833, 110);
       CreateUnits(Holder.Player, FourCC("n04J"), Regions.Vandermar_Village.Center.X,
         Regions.Vandermar_Village.Center.Y, 270, 12);
       CreateUnits(Holder.Player, FourCC("u00D"), Regions.Vandermar_Village.Center.X,

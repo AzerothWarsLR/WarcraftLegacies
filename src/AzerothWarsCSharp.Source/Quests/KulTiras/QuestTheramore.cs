@@ -44,18 +44,18 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
     protected override void OnFail()
     {
       thistype.GrantToPlayer(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      Holder.ModObjectLimit(ResearchId, -UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, -Faction.UNLIMITED);
     }
 
     protected override void OnComplete()
     {
       thistype.GrantToPlayer(Holder.Player);
-      Holder.ModObjectLimit(ResearchId, -UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, -Faction.UNLIMITED);
     }
 
     protected override void OnAdd()
     {
-      Holder.ModObjectLimit(ResearchId, UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
     }
 
     private static void OnInit()

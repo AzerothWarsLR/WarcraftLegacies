@@ -37,8 +37,8 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     protected override void OnComplete()
     {
-      FACTION_NAGA.ModObjectLimit(FourCC("n08H"), UNLIMITED); //Demon Hunter grounds
-      FACTION_NAGA.ModObjectLimit(FourCC("e00S"), UNLIMITED); //Glaive Warrior
+      FACTION_NAGA.ModObjectLimit(FourCC("n08H"), Faction.UNLIMITED); //Demon Hunter grounds
+      FACTION_NAGA.ModObjectLimit(FourCC("e00S"), Faction.UNLIMITED); //Glaive Warrior
       FACTION_NAGA.ModObjectLimit(FourCC("h08W"), 6); //Demon Hunter
       SetUnitOwner(LEGEND_NZOTH.Unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
       EXILE_PATH.Progress = QUEST_PROGRESS_FAILED;

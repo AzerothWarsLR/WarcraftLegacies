@@ -138,7 +138,16 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     public string ColoredName => PrefixCol + _name + "|r";
 
-    public string PrefixCol { get; }
+    private string _prefixCol;
+    public string PrefixCol
+    {
+      get => _prefixCol;
+        set
+      {
+        _prefixCol = value;
+        NameChanged?.Invoke(this, this);
+      }
+    }
 
     public string? Name
     {

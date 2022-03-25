@@ -14,29 +14,29 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       f.StartingGold = 150;
       f.StartingLumber = 500;
 
-      f.ModObjectLimit(FourCC("o03L"), UNLIMITED)   ;//Great Hall
-      f.ModObjectLimit(FourCC("o03M"), UNLIMITED)   ;//Stronghold
-      f.ModObjectLimit(FourCC("o03N"), UNLIMITED)   ;//Fortress
-      f.ModObjectLimit(FourCC("o03O"), UNLIMITED)   ;//Altar of Storms
-      f.ModObjectLimit(FourCC("o03P"), UNLIMITED)   ;//Barracks
-      f.ModObjectLimit(FourCC("o03Q"), UNLIMITED)   ;//War Mill
-      f.ModObjectLimit(FourCC("o03S"), UNLIMITED)   ;//Tauren Totem
-      f.ModObjectLimit(FourCC("o01M"), UNLIMITED)   ;//Spirit Lodge
-      f.ModObjectLimit(FourCC("o03T"), UNLIMITED)   ;//Orc Burrow
-      f.ModObjectLimit(FourCC("o03U"), UNLIMITED)   ;//Watch Tower
-      f.ModObjectLimit(FourCC("o03W"), UNLIMITED)   ;//Improved Watch Tower
-      f.ModObjectLimit(FourCC("o03X"), UNLIMITED)   ;//Voodoo Lounge
-      f.ModObjectLimit(FourCC("o03V"), UNLIMITED)   ;//Shipyard
+      f.ModObjectLimit(FourCC("o03L"), Faction.UNLIMITED)   ;//Great Hall
+      f.ModObjectLimit(FourCC("o03M"), Faction.UNLIMITED)   ;//Stronghold
+      f.ModObjectLimit(FourCC("o03N"), Faction.UNLIMITED)   ;//Fortress
+      f.ModObjectLimit(FourCC("o03O"), Faction.UNLIMITED)   ;//Altar of Storms
+      f.ModObjectLimit(FourCC("o03P"), Faction.UNLIMITED)   ;//Barracks
+      f.ModObjectLimit(FourCC("o03Q"), Faction.UNLIMITED)   ;//War Mill
+      f.ModObjectLimit(FourCC("o03S"), Faction.UNLIMITED)   ;//Tauren Totem
+      f.ModObjectLimit(FourCC("o01M"), Faction.UNLIMITED)   ;//Spirit Lodge
+      f.ModObjectLimit(FourCC("o03T"), Faction.UNLIMITED)   ;//Orc Burrow
+      f.ModObjectLimit(FourCC("o03U"), Faction.UNLIMITED)   ;//Watch Tower
+      f.ModObjectLimit(FourCC("o03W"), Faction.UNLIMITED)   ;//Improved Watch Tower
+      f.ModObjectLimit(FourCC("o03X"), Faction.UNLIMITED)   ;//Voodoo Lounge
+      f.ModObjectLimit(FourCC("o03V"), Faction.UNLIMITED)   ;//Shipyard
       f.ModObjectLimit(FourCC("n0AQ"), 6)           ;//Oil Platform
       f.ModObjectLimit(FourCC("h011"), 1)           ;//Artillery
 
-      f.ModObjectLimit(FourCC("o02I"), UNLIMITED)   ;//Peon
-      f.ModObjectLimit(FourCC("n099"), UNLIMITED)   ;//Ogre
+      f.ModObjectLimit(FourCC("o02I"), Faction.UNLIMITED)   ;//Peon
+      f.ModObjectLimit(FourCC("n099"), Faction.UNLIMITED)   ;//Ogre
       f.ModObjectLimit(FourCC("h08X"), 8)           ;//sapper
-      f.ModObjectLimit(FourCC("h08Y"), UNLIMITED)          ;//Gunner
-      f.ModObjectLimit(FourCC("odoc"), UNLIMITED)   ;//GOBLIN Witch Doctor
-      f.ModObjectLimit(FourCC("o04P"), UNLIMITED)   ;//Mage
-      f.ModObjectLimit(FourCC("o04O"), UNLIMITED)   ;//Alch
+      f.ModObjectLimit(FourCC("h08Y"), Faction.UNLIMITED)          ;//Gunner
+      f.ModObjectLimit(FourCC("odoc"), Faction.UNLIMITED)   ;//GOBLIN Witch Doctor
+      f.ModObjectLimit(FourCC("o04P"), Faction.UNLIMITED)   ;//Mage
+      f.ModObjectLimit(FourCC("o04O"), Faction.UNLIMITED)   ;//Alch
       f.ModObjectLimit(FourCC("o04Q"), 6)           ;//Tinker
       f.ModObjectLimit(FourCC("obot"), 12)  	    ;//Transport Ship
       f.ModObjectLimit(FourCC("odes"), 12)  	    ;//Orc Frigate
@@ -52,9 +52,9 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       f.ModObjectLimit(FourCC("Ntin"), 1)           ;//Gazlowee
       f.ModObjectLimit(FourCC("Nalc"), 1)           ;//Noggenfogger
 
-      f.ModObjectLimit(FourCC("R07L"), UNLIMITED)   ;//Wizard Training
-      f.ModObjectLimit(FourCC("R07M"), UNLIMITED)   ;//Alchemist Training
-      f.ModObjectLimit(FourCC("R023"), UNLIMITED)   ;//Spiritual Infusion
+      f.ModObjectLimit(FourCC("R07L"), Faction.UNLIMITED)   ;//Wizard Training
+      f.ModObjectLimit(FourCC("R07M"), Faction.UNLIMITED)   ;//Alchemist Training
+      f.ModObjectLimit(FourCC("R023"), Faction.UNLIMITED)   ;//Spiritual Infusion
 
     }
 

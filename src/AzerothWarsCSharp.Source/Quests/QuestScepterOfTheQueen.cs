@@ -45,19 +45,19 @@ namespace AzerothWarsCSharp.Source.Quests
 
     protected override void OnComplete()
     {
-      SetItemPosition(ARTIFACT_SCEPTEROFTHEQUEEN.item, GetRectCenterX(Regions.HighBourne).Rect,
+      SetItemPosition(ARTIFACT_SCEPTEROFTHEQUEEN.Item, GetRectCenterX(Regions.HighBourne).Rect,
         GetRectCenterY(gg_rct_HighBourne));
       RescueNeutralUnitsInRect(Regions.HighBourne.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnFail()
     {
-      Holder.ModObjectLimit(thistype.researchId, -UNLIMITED);
+      Holder.ModObjectLimit(thistype.researchId, -Faction.UNLIMITED);
     }
 
     protected override void OnComplete()
     {
-      SetItemPosition(ARTIFACT_SCEPTEROFTHEQUEEN.item, GetRectCenterX(Regions.HighBourne).Rect,
+      SetItemPosition(ARTIFACT_SCEPTEROFTHEQUEEN.Item, GetRectCenterX(Regions.HighBourne).Rect,
         GetRectCenterY(gg_rct_HighBourne));
       RescueNeutralUnitsInRect(Regions.HighBourne.Rect, Holder.Player);
       SetPlayerTechResearched(Holder.Player, thistype.researchId, 1);
@@ -65,7 +65,7 @@ namespace AzerothWarsCSharp.Source.Quests
 
     protected override void OnAdd()
     {
-      Holder.ModObjectLimit(thistype.researchId, UNLIMITED);
+      Holder.ModObjectLimit(thistype.researchId, Faction.UNLIMITED);
     }
 
 

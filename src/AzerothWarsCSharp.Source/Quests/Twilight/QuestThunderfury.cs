@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
 
     protected override void OnComplete()
     {
-      UnitAddItemSafe(LEGEND_CHOGALL.Unit, ARTIFACT_THUNDERFURY.item);
+      UnitAddItemSafe(LEGEND_CHOGALL.Unit, ARTIFACT_THUNDERFURY.Item);
     }
   }
 }

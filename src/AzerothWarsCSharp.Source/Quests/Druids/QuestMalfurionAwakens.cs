@@ -65,11 +65,11 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
         LEGEND_MALFURION.Spawn(Holder.Player, GetRectCenterX(Regions.Moonglade), GetRectCenterY(gg_rct_Moonglade).Rect,
           270);
         SetHeroLevel(LEGEND_MALFURION.Unit, 3, false);
-        UnitAddItemSafe(LEGEND_MALFURION.Unit, ARTIFACT_GHANIR.item);
+        UnitAddItemSafe(LEGEND_MALFURION.Unit, ARTIFACT_GHANIR.Item);
       }
       else
       {
-        SetItemPosition(ARTIFACT_GHANIR.item, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()));
+        SetItemPosition(ARTIFACT_GHANIR.Item, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()));
       }
     }
 

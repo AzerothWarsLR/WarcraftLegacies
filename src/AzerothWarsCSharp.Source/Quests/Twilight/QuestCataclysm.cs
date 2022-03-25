@@ -38,7 +38,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
 
     protected override void OnAdd()
     {
-      Holder.ModObjectLimit(CataclysmResearch, UNLIMITED);
+      Holder.ModObjectLimit(CataclysmResearch, Faction.UNLIMITED);
     }
   }
 }

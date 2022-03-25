@@ -14,8 +14,6 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       "ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp")
     {
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n04Z"))));
-      ;
-      ;
     }
 
 
@@ -33,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     protected override void OnAdd()
     {
       Holder.ModObjectLimit(HeroId, 1);
-      Holder.ModObjectLimit(ResearchId, UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
     }
   }
 }

@@ -49,20 +49,20 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     protected override void OnFail()
     {
       GiveStromgarde(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      SetItemPosition(ARTIFACT_TROLKALAR.item, 140889, 12363);
-      ARTIFACT_TROLKALAR.setStatus(ARTIFACT_STATUS_GROUND);
+      SetItemPosition(ARTIFACT_TROLKALAR.Item, 140889, 12363);
+ArtifactSetup.      ARTIFACT_TROLKALAR.Status = ARTIFACT_STATUS_GROUND;
     }
 
     protected override void OnComplete()
     {
       GiveStromgarde(Holder.Player);
-      UnitAddItemSafe(_questItemAnyUnitInRect.TriggerUnit, ARTIFACT_TROLKALAR.item);
+      UnitAddItemSafe(_questItemAnyUnitInRect.TriggerUnit, ARTIFACT_TROLKALAR.Item);
       SetPlayerTechResearched(Holder.Player, ResearchId, 1);
     }
 
     protected override void OnAdd()
     {
-      Holder.ModObjectLimit(ResearchId, UNLIMITED);
+      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
       Holder.ModObjectLimit(HeroId, 1);
     }
   }

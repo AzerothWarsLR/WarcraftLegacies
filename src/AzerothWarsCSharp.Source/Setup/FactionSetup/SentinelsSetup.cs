@@ -18,32 +18,32 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       f.StartingGold = 150;
       f.StartingLumber = 500;
 
-      f.ModObjectLimit(FourCC("e00V"), UNLIMITED)   ;//Temple of Elune
-      f.ModObjectLimit(FourCC("e00R"), UNLIMITED)   ;//Altar of Watchers
-      f.ModObjectLimit(FourCC("e00L"), UNLIMITED)   ;//War Academy
-      f.ModObjectLimit(FourCC("edob"), UNLIMITED)   ;//Hunter)s Hall
-      f.ModObjectLimit(FourCC("eden"), UNLIMITED)   ;//Ancient of Wonders
-      f.ModObjectLimit(FourCC("e011"), UNLIMITED)   ;//Night Elf Shipyard
-      f.ModObjectLimit(FourCC("h03N"), UNLIMITED)   ;//Enchanged Runestone
-      f.ModObjectLimit(FourCC("h03M"), UNLIMITED)   ;//Runestone
-      f.ModObjectLimit(FourCC("n06O"), UNLIMITED)   ;//Sentinel Embassy
-      f.ModObjectLimit(FourCC("n06P"), UNLIMITED)   ;//Sentinel Enclave
-      f.ModObjectLimit(FourCC("n06J"), UNLIMITED)   ;//Sentinel Outpost
-      f.ModObjectLimit(FourCC("n06M"), UNLIMITED)   ;//Residence
-      f.ModObjectLimit(FourCC("edos"), UNLIMITED)   ;//Roost
-      f.ModObjectLimit(FourCC("e00T"), UNLIMITED)   ;//Bastion
+      f.ModObjectLimit(FourCC("e00V"), Faction.UNLIMITED)   ;//Temple of Elune
+      f.ModObjectLimit(FourCC("e00R"), Faction.UNLIMITED)   ;//Altar of Watchers
+      f.ModObjectLimit(FourCC("e00L"), Faction.UNLIMITED)   ;//War Academy
+      f.ModObjectLimit(FourCC("edob"), Faction.UNLIMITED)   ;//Hunter)s Hall
+      f.ModObjectLimit(FourCC("eden"), Faction.UNLIMITED)   ;//Ancient of Wonders
+      f.ModObjectLimit(FourCC("e011"), Faction.UNLIMITED)   ;//Night Elf Shipyard
+      f.ModObjectLimit(FourCC("h03N"), Faction.UNLIMITED)   ;//Enchanged Runestone
+      f.ModObjectLimit(FourCC("h03M"), Faction.UNLIMITED)   ;//Runestone
+      f.ModObjectLimit(FourCC("n06O"), Faction.UNLIMITED)   ;//Sentinel Embassy
+      f.ModObjectLimit(FourCC("n06P"), Faction.UNLIMITED)   ;//Sentinel Enclave
+      f.ModObjectLimit(FourCC("n06J"), Faction.UNLIMITED)   ;//Sentinel Outpost
+      f.ModObjectLimit(FourCC("n06M"), Faction.UNLIMITED)   ;//Residence
+      f.ModObjectLimit(FourCC("edos"), Faction.UNLIMITED)   ;//Roost
+      f.ModObjectLimit(FourCC("e00T"), Faction.UNLIMITED)   ;//Bastion
 
-      f.ModObjectLimit(FourCC("ewsp"), UNLIMITED)   ;//Wisp
-      f.ModObjectLimit(FourCC("e006"), UNLIMITED)   ;//Priestess
-      f.ModObjectLimit(FourCC("n06C"), UNLIMITED)   ;//Trapper
+      f.ModObjectLimit(FourCC("ewsp"), Faction.UNLIMITED)   ;//Wisp
+      f.ModObjectLimit(FourCC("e006"), Faction.UNLIMITED)   ;//Priestess
+      f.ModObjectLimit(FourCC("n06C"), Faction.UNLIMITED)   ;//Trapper
       f.ModObjectLimit(FourCC("h04L"), 6)           ;//Priestess of the Moon
-      f.ModObjectLimit(FourCC("earc"), UNLIMITED)   ;//Archer
-      f.ModObjectLimit(FourCC("esen"), UNLIMITED)   ;//Huntress
-      f.ModObjectLimit(FourCC("h08V"), UNLIMITED)   ;//Nightsaber Knight
+      f.ModObjectLimit(FourCC("earc"), Faction.UNLIMITED)   ;//Archer
+      f.ModObjectLimit(FourCC("esen"), Faction.UNLIMITED)   ;//Huntress
+      f.ModObjectLimit(FourCC("h08V"), Faction.UNLIMITED)   ;//Nightsaber Knight
       f.ModObjectLimit(FourCC("ebal"), 8)           ;//Glaive Thrower
       f.ModObjectLimit(FourCC("ehpr"), 6)           ;//Hippogryph Rider
       f.ModObjectLimit(FourCC("n034"), 12)           ;//Guild Ranger
-      f.ModObjectLimit(FourCC("nwat"), UNLIMITED)   ;//Nightblade
+      f.ModObjectLimit(FourCC("nwat"), Faction.UNLIMITED)   ;//Nightblade
       f.ModObjectLimit(FourCC("etrs"), 12)   	    ;//Night Elf Transport Ship
       f.ModObjectLimit(FourCC("edes"), 12)  	    ;//Night Elf Frigate
       f.ModObjectLimit(FourCC("ebsh"), 6)          ;//Night Elf Battleship
@@ -55,18 +55,18 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       f.ModObjectLimit(FourCC("Ewrd"), 1)           ;//Maiev
       f.ModObjectLimit(FourCC("O02E"), 1)           ;//Jarod
 
-      f.ModObjectLimit(FourCC("R00S"), UNLIMITED)   ;//Priestess Adept Training
-      f.ModObjectLimit(FourCC("R064"), UNLIMITED)   ;//Sentinel Fortifications
-      f.ModObjectLimit(FourCC("R01W"), UNLIMITED)   ;//Trapper Adept Training
-      f.ModObjectLimit(FourCC("R026"), UNLIMITED)   ;//Elune)s Power Infusion
-      f.ModObjectLimit(FourCC("Reib"), UNLIMITED)   ;//Improved Bows
-      f.ModObjectLimit(FourCC("Reuv"), UNLIMITED)   ;//Ultravision
-      f.ModObjectLimit(FourCC("Remg"), UNLIMITED)   ;//Upgraded Moon Glaive
-      f.ModObjectLimit(FourCC("Roen"), UNLIMITED)   ;//Ensnare
-      f.ModObjectLimit(FourCC("R04E"), UNLIMITED)   ;//Ysera)s Gift (World Tree upgrade)
-      f.ModObjectLimit(FourCC("R002"), UNLIMITED)   ;//Blackwald Enhancement
-      f.ModObjectLimit(FourCC("R03J"), UNLIMITED)   ;//Wind Walk
-      f.ModObjectLimit(FourCC("R013"), UNLIMITED)   ;//Elune)s Blessing
+      f.ModObjectLimit(FourCC("R00S"), Faction.UNLIMITED)   ;//Priestess Adept Training
+      f.ModObjectLimit(FourCC("R064"), Faction.UNLIMITED)   ;//Sentinel Fortifications
+      f.ModObjectLimit(FourCC("R01W"), Faction.UNLIMITED)   ;//Trapper Adept Training
+      f.ModObjectLimit(FourCC("R026"), Faction.UNLIMITED)   ;//Elune)s Power Infusion
+      f.ModObjectLimit(FourCC("Reib"), Faction.UNLIMITED)   ;//Improved Bows
+      f.ModObjectLimit(FourCC("Reuv"), Faction.UNLIMITED)   ;//Ultravision
+      f.ModObjectLimit(FourCC("Remg"), Faction.UNLIMITED)   ;//Upgraded Moon Glaive
+      f.ModObjectLimit(FourCC("Roen"), Faction.UNLIMITED)   ;//Ensnare
+      f.ModObjectLimit(FourCC("R04E"), Faction.UNLIMITED)   ;//Ysera)s Gift (World Tree upgrade)
+      f.ModObjectLimit(FourCC("R002"), Faction.UNLIMITED)   ;//Blackwald Enhancement
+      f.ModObjectLimit(FourCC("R03J"), Faction.UNLIMITED)   ;//Wind Walk
+      f.ModObjectLimit(FourCC("R013"), Faction.UNLIMITED)   ;//Elune)s Blessing
     }
 
   }

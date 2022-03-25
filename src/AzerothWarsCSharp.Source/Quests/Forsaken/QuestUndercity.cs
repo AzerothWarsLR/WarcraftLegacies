@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     protected override void OnComplete(){
       RescueNeutralUnitsInRect(Regions.UndercityUnlock.Rect, Holder.Player);
-      SetPlayerTechResearched(FACTION_LORDAERON.Player, FourCC("R08G"), 1);
+      SetPlayerTechResearched(LordaeronSetup.FactionLordaeron.Player, FourCC("R08G"), 1);
       SetPlayerTechResearched(FACTION_LEGION.Player, FourCC("R08G"), 1);
       WaygateActivateBJ( true, gg_unit_n08F_1739 );
       WaygateActivateBJ( true, gg_unit_n08F_1798 );
@@ -51,7 +51,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       thistype this = thistype.allocate("Forsaken Independance", "The Forsaken had enough of living under the tyranny of the Lich King. Sylvanas has vowed to give them their freedom back && a home", "ReplaceableTextures\\CommandButtons\\BTNForsakenArrows.blp");
       AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("h08B")));
       AddQuestItem(new QuestItemLegendInRect(LEGEND_SYLVANASV, Regions.Terenas.Rect, "Capital City"));
-      AddQuestItem(new QuestItemLegendDead(LEGEND_CAPITALPALACE));
+      AddQuestItem(new QuestItemLegendDead(LegendLordaeron.LegendCapitalPalace));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = QUEST_RESEARCH_ID;
       
