@@ -1,5 +1,9 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
+using AzerothWarsCSharp.Source.Setup;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Quests.Legion
 {
@@ -8,35 +12,34 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
     private readonly QuestItemAnyUnitInRect _questItemAnyUnitInRect;
 
     public QuestSkullOfGuldan() : base(
-      "The Skull of GulFourCC("dan", "The Skull of the master warlock Gul")dan is protected by the Mages of Dalaran. It rightfully belongs to the Legion.",
+      "The Skull of Gul'dan",
+      "The Skull of the master warlock Gul'dan is protected by the Mages of Dalaran. It rightfully belongs to the Legion.",
       "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp")
     {
-      _questItemAnyUnitInRect =
-        this.AddQuestItem(new QuestItemAnyUnitInRect(Regions.DalaranDungeon, "Dalaran Dungeons".Rect, true));
-      this.AddQuestItem(new QuestItemEitherOf.create(QuestItemLegendDead.create(LEGEND_ILLIDAN),
-        QuestItemFactionDefeated(FACTION_NAGA)));
+      _questItemAnyUnitInRect = new QuestItemAnyUnitInRect(Regions.DalaranDungeon.Rect, "Dalaran Dungeons", true);
+      AddQuestItem(_questItemAnyUnitInRect);
+
+      AddQuestItem(new QuestItemEitherOf(new QuestItemLegendDead(LegendNaga.LEGEND_ILLIDAN),
+        new QuestItemFactionDefeated(NagaSetup.FactionNaga)));
       AddQuestItem(new QuestItemSelfExists());
-      ;
-      ;
     }
 
-    protected override string CompletionPopup => "The Skull of GulFourCC("
+    protected override string CompletionPopup => "The Skull of Gul'dan";
 
-    protected override string CompletionDescription => "The Skull of GulFourCC(dan";
-    private dan Has
-    private been Retrieved by" + GetHeroProperName(questItemAnyUnitInRect.TriggerUnit") +
-    ". Its nefarious energies will fuel the Legion)s operations on Azeroth.";
+    protected override string CompletionDescription => "The Skull of Gul'dan has been retrieved by " +
+                                                       GetHeroProperName(_questItemAnyUnitInRect.TriggerUnit) +
+                                                       ". Its nefarious energies will fuel the Legion's operations on Azeroth.";
 
     protected override void OnComplete()
     {
-      ARTIFACT_SKULLOFGULDAN.setStatus(ARTIFACT_STATUS_GROUND);
-      UnitAddItemSafe(_questItemAnyUnitInRect.TriggerUnit, ARTIFACT_SKULLOFGULDAN.item);
+      ArtifactSetup.ArtifactSkullofguldan.Status = ArtifactStatus.Ground;
+      UnitAddItemSafe(_questItemAnyUnitInRect.TriggerUnit, ArtifactSetup.ArtifactSkullofguldan.Item);
     }
 
     protected override void OnFail()
     {
-      SetItemPosition(ARTIFACT_SKULLOFGULDAN.item, -11867, 222165);
-      ARTIFACT_SKULLOFGULDAN.setStatus(ARTIFACT_STATUS_GROUND);
+      SetItemPosition(ArtifactSetup.ArtifactSkullofguldan.Item, -11867, 222165);
+      ArtifactSetup.ArtifactSkullofguldan.Status = ArtifactStatus.Ground;
     }
   }
 }

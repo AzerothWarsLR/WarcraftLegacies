@@ -1,75 +1,74 @@
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public sealed class QuestItemKillUnit : QuestItemData{
-
-
+  public sealed class QuestItemKillUnit : QuestItemData
+  {
     private static group targets = CreateGroup();
-    private unit target;
     private static int count = 0;
     private static thistype[] byIndex;
 
-    float operator X( ){
-      if (IsUnitType(target, UNIT_TYPE_STRUCTURE) || IsPlayerNeutralHostile(GetOwningPlayer(target))){
-        return GetUnitX(target);
-      }
+    private X()
+    {
+      if (IsUnitType(Target, UNIT_TYPE_STRUCTURE) || IsPlayerNeutralHostile(GetOwningPlayer(Target)))
+        return GetUnitX(Target);
       return 0;
     }
 
-    float operator Y( ){
-      if (IsUnitType(target, UNIT_TYPE_STRUCTURE) || IsPlayerNeutralHostile(GetOwningPlayer(target))){
-        return GetUnitY(target);
-      }
+    private Y()
+    {
+      if (IsUnitType(Target, UNIT_TYPE_STRUCTURE) || IsPlayerNeutralHostile(GetOwningPlayer(Target)))
+        return GetUnitY(Target);
       return 0;
     }
 
-    unit operator Target( ){
-      ;.target;
-    }
-
-    private void OnUnitDeath( ){
-      if (this.Holder.Team.ContainsPlayer(GetOwningPlayer(GetKillingUnit()))){
-        this.Progress = QUEST_PROGRESS_COMPLETE;
-      }else {
-        this.Progress = QUEST_PROGRESS_FAILED;
-      }
-    }
-
-    private void InitializeDescription( ){
-      if (IsUnitType(target, UNIT_TYPE_STRUCTURE) || IsUnitType(target, UNIT_TYPE_ANCIENT)){
-        this.Description = "Destroy " + GetUnitName(target);
-        return;
-      }
-      this.Description = "Kill " + GetUnitName(target);
-    }
-
-    private static void OnAnyUnitDeath( ){
-      var i = 0;
-      thistype loopItem;
-      while(true){
-        if ( i == thistype.count){ break; }
-        loopItem = thistype.byIndex[i];
-        if (loopItem.target == GetTriggerUnit()){
-          loopItem.OnUnitDeath();
-        }
-        i = i + 1;
-      }
-    }
-
-    public QuestItemKillUnit (unit unitToKill ){
-
+    public QuestItemKillUnit(unit unitToKill)
+    {
       trigger trig = CreateTrigger();
       TriggerRegisterUnitEvent(trig, unitToKill, EVENT_UNIT_DEATH);
-      TriggerAddAction(trig,  thistype.OnAnyUnitDeath);
-      target = unitToKill;
+      TriggerAddAction(trig, thistype.OnAnyUnitDeath);
+      Target = unitToKill;
       InitializeDescription();
       GroupAddUnit(thistype.targets, unitToKill);
       this.targetWidget = unitToKill;
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
-      
     }
 
+    public unit Target { get; }
 
+    float operator
 
+    float operator
+
+    private void OnUnitDeath()
+    {
+      if (Holder.Team.ContainsPlayer(GetOwningPlayer(GetKillingUnit())))
+        Progress = QUEST_PROGRESS_COMPLETE;
+      else
+        Progress = QUEST_PROGRESS_FAILED;
+    }
+
+    private void InitializeDescription()
+    {
+      if (IsUnitType(Target, UNIT_TYPE_STRUCTURE) || IsUnitType(Target, UNIT_TYPE_ANCIENT))
+      {
+        Description = "Destroy " + GetUnitName(Target);
+        return;
+      }
+
+      Description = "Kill " + GetUnitName(Target);
+    }
+
+    private static void OnAnyUnitDeath()
+    {
+      var i = 0;
+      thistype loopItem;
+      while (true)
+      {
+        if (i == thistype.count) break;
+        loopItem = thistype.byIndex[i];
+        if (loopItem.target == GetTriggerUnit()) loopItem.OnUnitDeath();
+        i = i + 1;
+      }
+    }
   }
 }

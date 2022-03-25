@@ -3,21 +3,21 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
 {
-  public static class LegendLordaeron{
+  public static class LegendLordaeron
+  {
+    public static Legend LEGEND_UTHER { get; private set; }
+    public static Legend LEGEND_ARTHAS { get; private set; }
+    public static Legend LEGEND_MOGRAINE { get; private set; }
+    public static Legend LEGEND_GARITHOS { get; private set; }
+    public static Legend LEGEND_GOODCHILD { get; private set; }
 
-  
-    public static Legend LEGEND_UTHER
-    public static Legend LEGEND_ARTHAS
-    public static Legend LEGEND_MOGRAINE
-    public static Legend LEGEND_GARITHOS
-    public static Legend LEGEND_GOODCHILD
+    public static Legend LEGEND_CAPITALPALACE { get; private set; }
+    public static Legend LEGEND_STRATHOLME { get; private set; }
+    public static Legend LEGEND_TYRSHAND { get; private set; }
 
-    public static Legend LEGEND_CAPITALPALACE
-    public static Legend LEGEND_STRATHOLME
-    public static Legend LEGEND_TYRSHAND
-  
 
-    public static void Setup( ){
+    public static void Setup()
+    {
       LEGEND_MOGRAINE = new Legend();
       LEGEND_MOGRAINE.UnitType = FourCC("H01J");
       LEGEND_MOGRAINE.StartingXp = 2800;
@@ -49,7 +49,8 @@ namespace AzerothWarsCSharp.Source.Legends
       LEGEND_UTHER.UnitType = FourCC("Huth");
       LEGEND_UTHER.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("h000")));
       LEGEND_UTHER.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nico")));
-      LEGEND_UTHER.DeathMessage = "Uther the Lightbringer makes his last stand, perishing in the defense of the light. Lordaeron, && humanity itself, has lost one of its finest exemplars in this dark hour.";
+      LEGEND_UTHER.DeathMessage =
+        "Uther the Lightbringer makes his last stand, perishing in the defense of the light. Lordaeron, && humanity itself, has lost one of its finest exemplars in this dark hour.";
       LEGEND_UTHER.PlayerColor = PLAYER_COLOR_LIGHT_BLUE;
       LEGEND_UTHER.StartingXp = 1000;
 
@@ -59,8 +60,6 @@ namespace AzerothWarsCSharp.Source.Legends
       LEGEND_ARTHAS.AddUnitDependency(LEGEND_STRATHOLME.Unit);
       LEGEND_ARTHAS.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nico")));
       LEGEND_ARTHAS.Essential = true;
-
     }
-
   }
 }

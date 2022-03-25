@@ -3,16 +3,16 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
 {
-  public static class LegendForsaken{
+  public static class LegendForsaken
+  {
+    public static Legend LEGEND_SYLVANASV { get; private set; }
+    public static Legend LEGEND_SCHOLOMANCE { get; private set; }
+    public static Legend LEGEND_VARIMATHRAS { get; private set; }
+    public static Legend LEGEND_NATHANOS { get; private set; }
 
-  
-    public static Legend LEGEND_SYLVANASV
-    public static Legend LEGEND_SCHOLOMANCE
-    public static Legend LEGEND_VARIMATHRAS
-    public static Legend LEGEND_NATHANOS
-  
 
-    public static void Setup( ){
+    public static void Setup()
+    {
       LEGEND_SYLVANASV = new Legend();
       LEGEND_SYLVANASV.UnitType = FourCC("Usyl");
       LEGEND_SYLVANASV.StartingXp = 15400;
@@ -27,8 +27,8 @@ namespace AzerothWarsCSharp.Source.Legends
 
       LEGEND_SCHOLOMANCE = new Legend();
       LEGEND_SCHOLOMANCE.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("u012"));
-      LEGEND_SCHOLOMANCE.DeathMessage = "Scholomance, the center of the ScourgeFourCC(s operations in Lordaeron, has been destroyed.";
+      LEGEND_SCHOLOMANCE.DeathMessage =
+        "Scholomance, the center of the ScourgeFourCC(s operations in Lordaeron, has been destroyed.";
     }
-
   }
 }

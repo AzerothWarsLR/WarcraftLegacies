@@ -67,7 +67,7 @@ namespace AzerothWarsCSharp.Source.Legends
       legendKiljaeden.PermaDies = true;
       legendKiljaeden.StartingXp = 10800;
       legendKiljaeden.DeathMessage =
-        "KilFourCC(jaeden the Deceiver has been annihilated, but it is too late for the Blood Elves, who will continue to live && die with demonic taint coursing through their veins.";
+        "Kil'jaeden the Deceiver has been annihilated, but it is too late for the Blood Elves, who will continue to live && die with demonic taint coursing through their veins.";
     }
   }
 }

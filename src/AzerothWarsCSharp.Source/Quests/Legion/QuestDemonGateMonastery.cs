@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
@@ -14,9 +15,8 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       "The energies surrounding the Scarlet Monastery are extraordinary. Destroy this bastion of light to fabricate a Demon Gate in its place.",
       "ReplaceableTextures\\CommandButtons\\BTNMaskOfDeath.blp")
     {
-      _questItemKillMonastery = AddQuestItem(new QuestItemKillUnit(gg_unit_h00T_0786));
-      ;
-      ;
+      _questItemKillMonastery = new QuestItemKillUnit(PreplacedUnitSystem.GetUnitByUnitType(FourCC("h00T")));
+      AddQuestItem(_questItemKillMonastery);
     }
 
     protected override string CompletionPopup =>
@@ -28,14 +28,15 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
     {
       CreateUnit(Holder.Player, DemongateId, GetUnitX(_questItemKillMonastery.Target),
         GetUnitY(_questItemKillMonastery.Target), 270);
-      SetDoodadAnimationRectBJ("hide", FourCC("YObb"), gg_rct_ScarletMonastery);
-      SetDoodadAnimationRectBJ("hide", FourCC("ZSab"), gg_rct_ScarletMonastery);
-      SetDoodadAnimationRectBJ("hide", FourCC("YOsw"), gg_rct_ScarletMonastery);
-      SetDoodadAnimationRectBJ("show", FourCC("LOsm"), gg_rct_ScarletMonastery);
-      SetDoodadAnimationRectBJ("hide", FourCC("YOlp"), gg_rct_ScarletMonastery);
-      SetDoodadAnimationRectBJ("hide", FourCC("ZCv2"), gg_rct_ScarletMonastery);
-      SetDoodadAnimationRectBJ("hide", FourCC("ZCv1"), gg_rct_ScarletMonastery);
-      SetDoodadAnimationRectBJ("show", FourCC("ZCv1"), gg_rct_ScarletMonastery);
+      var monastery = Regions.ScarletMonastery.Rect;
+      SetDoodadAnimationRectBJ("hide", FourCC("YObb"), monastery);
+      SetDoodadAnimationRectBJ("hide", FourCC("ZSab"), monastery);
+      SetDoodadAnimationRectBJ("hide", FourCC("YOsw"), monastery);
+      SetDoodadAnimationRectBJ("show", FourCC("LOsm"), monastery);
+      SetDoodadAnimationRectBJ("hide", FourCC("YOlp"), monastery);
+      SetDoodadAnimationRectBJ("hide", FourCC("ZCv2"), monastery);
+      SetDoodadAnimationRectBJ("hide", FourCC("ZCv1"), monastery);
+      SetDoodadAnimationRectBJ("show", FourCC("ZCv1"), monastery);
     }
   }
 }

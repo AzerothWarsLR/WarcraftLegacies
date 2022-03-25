@@ -7,23 +7,16 @@ using WCSharp.Events;
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
   /// <summary>
-  /// Represents a faction in the Azeroth Wars universe, such as Lordaeron, Stormwind, or the Frostwolf Clan.
-  /// Governs techtrees and quests.
+  ///   Represents a faction in the Azeroth Wars universe, such as Lordaeron, Stormwind, or the Frostwolf Clan.
+  ///   Governs techtrees and quests.
   /// </summary>
   public sealed class Faction
   {
-    public static event EventHandler<Faction>? Registered;
-    public static event EventHandler<FactionChangeTeamEventArgs>? TeamLeft;
-    public static event EventHandler<Faction>? TeamJoin;
-    public static event EventHandler<Faction>? GameLeave;
-    public static event EventHandler<Faction>? NameChanged;
-    public static event EventHandler<Faction>? IconChanged;
-    public static event EventHandler<Faction>? StatusChanged;
-
     /// <summary>
-    /// Signifies unlimited unit production.
+    ///   Signifies unlimited unit production.
     /// </summary>
     public const int UNLIMITED = 200;
+
     private const int HERO_COST = 100; //For refunding
 
     private const float
@@ -32,26 +25,38 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private const float XP_TRANSFER_PERCENT = 100; //How much experience is transferred from heroes that leave the game)
 
     private static readonly Dictionary<string?, Faction> FactionsByName = new();
-
-    private string? _name;
-    private string _prefixCol;
-    private string _icon;
-    private ScoreStatus _scoreStatus = ScoreStatus.Undefeated;
-
-    private Person? _person;
-    private Team? _team;
-    private int _xp; //Stored by DistributeUnits and given out again by DistributeResources
-
-    private int _defeatedResearch; //This upgrade is researched for all players only if this Faction slot is defeated
-    private int _undefeatedResearch; //This upgrade is researched for all players only if this Faction is undefeated
-
-    private readonly Dictionary<int, int> _objectLimits = new();
     private readonly Dictionary<int, int> _objectLevels = new();
 
-    private int _questCount;
+    private readonly Dictionary<int, int> _objectLimits = new();
     private readonly List<QuestData> _quests = new();
 
     private readonly Dictionary<int, int> _unitTypeByCategory = new();
+
+    private readonly int
+      _defeatedResearch; //This upgrade is researched for all players only if this Faction slot is defeated
+
+    private string _icon;
+
+    private string? _name;
+
+    private Person? _person;
+
+    private int _questCount;
+    private ScoreStatus _scoreStatus = ScoreStatus.Undefeated;
+    private Team? _team;
+
+    private readonly int
+      _undefeatedResearch; //This upgrade is researched for all players only if this Faction is undefeated
+
+    private int _xp; //Stored by DistributeUnits and given out again by DistributeResources
+
+    public Faction(string? name, playercolor playerColor, string prefixCol, string icon)
+    {
+      _name = name;
+      PlayerColor = playerColor;
+      PrefixCol = prefixCol;
+      _icon = icon;
+    }
 
     public int StartingGold { get; init; }
 
@@ -71,23 +76,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       set => SetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER, R2I(value));
     }
 
-    /// <summary>
-    /// Returns all unit types which this <see cref="Faction"/> can only train a limited number of.
-    /// </summary>
-    public IEnumerable<int> GetLimitedObjects()
-    {
-      return _objectLimits.Keys;
-    }
-    
-    /// <summary>
-    /// Returns the maximum number of times the Faction can train a unit, build a building, or research a research.
-    /// </summary>
-    /// <param name="whichObject">The object ID of a unit, building, or research.</param>
-    public int GetObjectLimit(int whichObject)
-    {
-      return _objectLimits[whichObject];
-    }
-
     public ScoreStatus ScoreStatus
     {
       get => _scoreStatus;
@@ -96,19 +84,14 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         var i = 0;
         //Change defeated/undefeated researches
         if (value == ScoreStatus.Defeated)
-        {
           while (true)
           {
-            if (i == Environment.MAX_PLAYERS)
-            {
-              break;
-            }
+            if (i == Environment.MAX_PLAYERS) break;
 
             SetPlayerTechResearched(Player(i), _defeatedResearch, 1);
             SetPlayerTechResearched(Player(i), _undefeatedResearch, 0);
             i += 1;
           }
-        }
 
         //Remove player from game if necessary
         if (value == ScoreStatus.Defeated && Player != null)
@@ -124,7 +107,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     }
 
     /// <summary>
-    /// Which <see cref="Team"/> this <see cref="Faction"/> belongs to.
+    ///   Which <see cref="Team" /> this <see cref="Faction" /> belongs to.
     /// </summary>
     public Team? Team
     {
@@ -149,13 +132,13 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     }
 
     /// <summary>
-    /// How much gold this <see cref="Faction"/> receives per minute if occupied by a player.
+    ///   How much gold this <see cref="Faction" /> receives per minute if occupied by a player.
     /// </summary>
     public float Income => _person.ControlPointValue;
 
-    public string ColoredName => _prefixCol + _name + "|r";
+    public string ColoredName => PrefixCol + _name + "|r";
 
-    public string PrefixCol => _prefixCol;
+    public string PrefixCol { get; }
 
     public string? Name
     {
@@ -180,7 +163,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     }
 
     /// <summary>
-    /// The <see cref="player"/> currently occupying this <see cref="Faction"/>.
+    ///   The <see cref="player" /> currently occupying this <see cref="Faction" />.
     /// </summary>
     public player? Player => _person?.Player;
 
@@ -199,15 +182,9 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         _person = value;
         //Maintain referential integrity
         //Todo: this seems a bit silly
-        if (value == null)
-        {
-          return;
-        }
+        if (value == null) return;
 
-        if (value.Faction != this)
-        {
-          value.Faction = this;
-        }
+        if (value.Faction != this) value.Faction = this;
 
         Team?.AllyPlayer(value.Player);
         ApplyObjects();
@@ -217,37 +194,81 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     public QuestData? StartingQuest { get; set; }
 
+    /// <summary>
+    ///   This research is enabled for every player while this <see cref="Faction" /> is not defeated.
+    /// </summary>
+    public int UndefeatedResearch
+    {
+      init
+      {
+        if (_undefeatedResearch == 0)
+        {
+          _undefeatedResearch = value;
+          foreach (var player in GetAllPlayers()) SetPlayerTechResearched(player, _undefeatedResearch, 1);
+        }
+      }
+      get => _undefeatedResearch;
+    }
+
+    /// <summary>
+    ///   This research is enabled for every player while this <see cref="Faction" /> is defeated.
+    /// </summary>
+    public int DefeatedResearch
+    {
+      init
+      {
+        if (_defeatedResearch == 0)
+        {
+          _defeatedResearch = value;
+          foreach (var player in GetAllPlayers()) SetPlayerTechResearched(player, _defeatedResearch, 0);
+        }
+      }
+    }
+
+    public static event EventHandler<Faction>? Registered;
+    public static event EventHandler<FactionChangeTeamEventArgs>? TeamLeft;
+    public static event EventHandler<Faction>? TeamJoin;
+    public static event EventHandler<Faction>? GameLeave;
+    public static event EventHandler<Faction>? NameChanged;
+    public static event EventHandler<Faction>? IconChanged;
+    public static event EventHandler<Faction>? StatusChanged;
+
+    /// <summary>
+    ///   Returns all unit types which this <see cref="Faction" /> can only train a limited number of.
+    /// </summary>
+    public IEnumerable<int> GetLimitedObjects()
+    {
+      return _objectLimits.Keys;
+    }
+
+    /// <summary>
+    ///   Returns the maximum number of times the Faction can train a unit, build a building, or research a research.
+    /// </summary>
+    /// <param name="whichObject">The object ID of a unit, building, or research.</param>
+    public int GetObjectLimit(int whichObject)
+    {
+      return _objectLimits[whichObject];
+    }
+
     //Adds this Faction's object limits and levels to its active Person
     private void ApplyObjects()
     {
-      foreach (var (key, value) in _objectLimits)
-      {
-        Person?.ModObjectLimit(key, value);
-      }
+      foreach (var (key, value) in _objectLimits) Person?.ModObjectLimit(key, value);
 
-      foreach (var (key, value) in _objectLevels)
-      {
-        Person?.SetObjectLevel(key, value);
-      }
+      foreach (var (key, value) in _objectLevels) Person?.SetObjectLevel(key, value);
     }
 
     //Removes this Faction's object limits and levels from its active Person
     private void UnapplyObjects()
     {
-      foreach (var (key, value) in _objectLimits)
-      {
-        Person?.ModObjectLimit(key, -value);
-      }
+      foreach (var (key, value) in _objectLimits) Person?.ModObjectLimit(key, -value);
 
-      foreach (var (key, value) in _objectLevels)
-      {
-        Person?.SetObjectLevel(key, 0);
-      }
+      foreach (var (key, value) in _objectLevels) Person?.SetObjectLevel(key, 0);
     }
 
     /// <summary>
-    /// Unallies the <see cref="Faction"/> from all of its allies, creating a new <see cref="Team"/>
-    /// based on its name.
+    ///   Unallies the <see cref="Faction" /> from all of its allies, creating a new <see cref="Team" />
+    ///   based on its name.
     /// </summary>
     public void Unally()
     {
@@ -275,10 +296,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     {
       foreach (var quest in _quests)
       {
-        if (GetLocalPlayer() == Player)
-        {
-          quest.ShowLocal();
-        }
+        if (GetLocalPlayer() == Player) quest.ShowLocal();
 
         quest.ShowSync();
       }
@@ -289,10 +307,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     {
       foreach (var quest in _quests)
       {
-        if (GetLocalPlayer() == Player)
-        {
-          quest.HideLocal();
-        }
+        if (GetLocalPlayer() == Player) quest.HideLocal();
 
         quest.HideSync();
       }
@@ -303,10 +318,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       questData.Holder = this;
       _quests[_questCount] = questData;
       _questCount += 1;
-      if (GetLocalPlayer() == Player)
-      {
-        questData.ShowLocal();
-      }
+      if (GetLocalPlayer() == Player) questData.ShowLocal();
 
       questData.ShowSync();
       return questData;
@@ -343,54 +355,15 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       //If a Person has this Faction, adjust their techtree as well
       Person?.ModObjectLimit(id, limit);
 
-      if (_objectLimits[id] == 0)
-      {
-        _objectLimits.Remove(id);
-      }
+      if (_objectLimits[id] == 0) _objectLimits.Remove(id);
 
       //Index the unit type to a unit category if possible and necessary
       _unitTypeByCategory[UnitType.GetFromId(id).UnitCategory] = id;
     }
 
     /// <summary>
-    /// This research is enabled for every player while this <see cref="Faction"/> is not defeated.
-    /// </summary>
-    public int UndefeatedResearch
-    {
-      init
-      {
-        if (_undefeatedResearch == 0)
-        {
-          _undefeatedResearch = value;
-          foreach (var player in GeneralHelpers.GetAllPlayers())
-          {
-            SetPlayerTechResearched(player, _undefeatedResearch, 1);
-          }
-        }
-      }
-    }
-
-    /// <summary>
-    /// This research is enabled for every player while this <see cref="Faction"/> is defeated.
-    /// </summary>
-    public int DefeatedResearch
-    {
-      init
-      {
-        if (_defeatedResearch == 0)
-        {
-          _defeatedResearch = value;
-          foreach (var player in GeneralHelpers.GetAllPlayers())
-          {
-            SetPlayerTechResearched(player, _defeatedResearch, 0);
-          }
-        }
-      }
-    }
-
-    /// <summary>
-    /// Causes the <see cref="Faction"/>'s <see cref="player"/> to lose everything they control,
-    /// without distributing it to members of their <see cref="Team"/>.
+    ///   Causes the <see cref="Faction" />'s <see cref="player" /> to lose everything they control,
+    ///   without distributing it to members of their <see cref="Team" />.
     /// </summary>
     public void Obliterate()
     {
@@ -405,21 +378,12 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       while (true)
       {
         unit u = FirstOfGroup(tempGroup);
-        if (u == null)
-        {
-          break;
-        }
+        if (u == null) break;
 
         UnitType tempUnitType = UnitType.GetFromHandle(u);
-        if (!UnitAlive(u))
-        {
-          RemoveUnit(u);
-        }
+        if (!UnitAlive(u)) RemoveUnit(u);
 
-        if (!tempUnitType.Meta)
-        {
-          SetUnitOwner(u, Player(bj_PLAYER_NEUTRAL_VICTIM), false);
-        }
+        if (!tempUnitType.Meta) SetUnitOwner(u, Player(bj_PLAYER_NEUTRAL_VICTIM), false);
 
         GroupRemoveUnit(tempGroup, u);
       }
@@ -429,51 +393,41 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     private void DistributeExperience()
     {
-      if (_team == null)
-      {
-        return;
-      }
+      if (_team == null) return;
       foreach (var ally in _team.GetAllFactions())
       {
-        var allyHeroes = new GroupWrapper().EnumUnitsOfPlayer(ally.Player).EmptyToList().FindAll(unit => IsUnitType(unit, UNIT_TYPE_HERO));
+        var allyHeroes = new GroupWrapper().EnumUnitsOfPlayer(ally.Player).EmptyToList()
+          .FindAll(unit => IsUnitType(unit, UNIT_TYPE_HERO));
         foreach (var hero in allyHeroes)
-        {
           AddHeroXP(hero, R2I(_xp / (_team.PlayerCount - 1) / allyHeroes.Count * XP_TRANSFER_PERCENT), true);
-        }
       }
+
       _xp = 0;
     }
 
     private void DistributeResources()
     {
-      if (_team == null)
-      {
-        return;
-      }
+      if (_team == null) return;
       foreach (var faction in _team.GetAllFactions())
-      {
         if (faction.Person != null)
         {
           faction.Gold = faction.Gold + Gold / _team.PlayerCount - 1;
           faction.Lumber = faction.Lumber + Lumber / _team.PlayerCount - 1;
         }
-      }
+
       Gold = 0;
       Lumber = 0;
     }
 
     private void DistributeUnits()
     {
-      if (_team == null)
-      {
-        return;
-      }
+      if (_team == null) return;
       force eligiblePlayers = Team.CreateForceFromPlayers();
 
       ForceRemovePlayer(eligiblePlayers, Player);
 
       var playerUnits = new GroupWrapper().EmptyToList();
-      
+
       foreach (var unit in playerUnits)
       {
         UnitType loopUnitType = UnitType.GetFromHandle(unit);
@@ -483,12 +437,9 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
           Person.AddGold(HERO_COST);
           _xp += GetHeroXP(unit);
           //Subtract hero's starting XP from refunded XP
-          if (Legend.GetFromUnit(unit) != null)
-          {
-            _xp -= Legend.GetFromUnit(unit)!.StartingXp;
-          }
+          if (Legend.GetFromUnit(unit) != null) _xp -= Legend.GetFromUnit(unit)!.StartingXp;
 
-          GeneralHelpers.UnitDropAllItems(unit);
+          UnitDropAllItems(unit);
           RemoveUnit(unit);
           //Refund gold and lumber of refundable units
         }
@@ -496,7 +447,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         {
           Gold += loopUnitType.GoldCost * REFUND_PERCENT;
           Lumber += loopUnitType.LumberCost * REFUND_PERCENT;
-          GeneralHelpers.UnitDropAllItems(unit);
+          UnitDropAllItems(unit);
           RemoveUnit(unit);
         }
         //Transfer the ownership of everything else
@@ -506,13 +457,14 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
             Team.PlayerCount > 1 ? ForcePickRandomPlayer(eligiblePlayers) : Player(bj_PLAYER_NEUTRAL_VICTIM), false);
         }
       }
+
       //Cleanup
       DestroyForce(eligiblePlayers);
     }
-    
+
     /// <summary>
-    /// This should get used any time a player exits the game without being defeated;
-    /// IE they left, went afk, became an observer, or triggered an event that causes this.
+    ///   This should get used any time a player exits the game without being defeated;
+    ///   IE they left, went afk, became an observer, or triggered an event that causes this.
     /// </summary>
     private void Leave()
     {
@@ -526,6 +478,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       {
         Obliterate();
       }
+
       GameLeave?.Invoke(this, this);
     }
 
@@ -538,31 +491,19 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     {
       return FactionsByName.ContainsKey(name);
     }
-    
+
     public static Faction GetFromName(string name)
-    { 
+    {
       return FactionsByName[name];
     }
 
     public static void Register(Faction faction)
     {
       if (!FactionsByName.ContainsKey(faction.Name.ToLower()))
-      {
         FactionsByName[faction.Name.ToLower()] = faction;
-      }
       else
-      {
         throw new Exception($"Attempted to register faction that already exists with name {faction}.");
-      }
       Registered?.Invoke(faction, faction);
-    }
-    
-    public Faction(string? name, playercolor playerColor, string prefixCol, string icon)
-    {
-      _name = name;
-      PlayerColor = playerColor;
-      _prefixCol = prefixCol;
-      _icon = icon;
     }
 
     private static void OnAnyResearch()

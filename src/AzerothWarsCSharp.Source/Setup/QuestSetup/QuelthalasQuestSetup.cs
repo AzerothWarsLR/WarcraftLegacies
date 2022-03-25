@@ -1,27 +1,33 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.Source.Quests.Quelthalas;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
-  public class QuelthalasQuestSetup{
+  public static class QuelthalasQuestSetup
+  {
+    public static QuestData SUMMON_KIL { get; private set; }
+    public static QuestData GREAT_TREACHERY { get; private set; }
+    public static QuestData STAY_LOYAL { get; private set; }
 
-    public static void Setup( ){
+    public static void Setup()
+    {
+      var quelthalas = QuelthalasSetup.FACTION_QUELTHALAS;
       //Setup
-      QuestData newQuest = FACTION_QUELTHALAS.AddQuest(QuestSilvermoon.create());
-      QuestData tempestKeep = QuestTempestKeep.create();
+      QuestData newQuest = quelthalas.AddQuest(new QuestSilvermoon());
+      QuestData tempestKeep = new QuestTempestKeep();
 
-      FACTION_QUELTHALAS.StartingQuest = newQuest;
+      quelthalas.StartingQuest = newQuest;
       //Early duel
-      FACTION_QUELTHALAS.AddQuest(QuestTheBloodElves.create());
-      FACTION_QUELTHALAS.AddQuest(QuestQueldanil.create());
+      quelthalas.AddQuest(new QuestTheBloodElves());
+      quelthalas.AddQuest(new QuestQueldanil());
 
-      FACTION_QUELTHALAS.AddQuest(tempestKeep);
-      tempestKeep.Progress = QUEST_PROGRESS_UNDISCOVERED;
+      quelthalas.AddQuest(tempestKeep);
+      tempestKeep.Progress = QuestProgress.Undiscovered;
 
-      SUMMON_KIL = QuestSummonKil.create();
-      GREAT_TREACHERY = QuestGreatTreachery.create();
-      STAY_LOYAL = QuestStayLoyal.create();
+      SUMMON_KIL = new QuestSummonKil();
+      GREAT_TREACHERY = new QuestGreatTreachery();
+      STAY_LOYAL = new QuestStayLoyal();
     }
-
   }
 }

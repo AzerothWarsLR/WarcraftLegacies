@@ -9,7 +9,8 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 
     protected override string CompletionPopup => "GulFourCC("
 
-    protected override string CompletionDescription =>dan")s remains have been located within the Tomb of Sargeras. His eldritch knowledge may now be put to purpose.";
+    protected override string CompletionDescription =>
+      dan")s remains have been located within the Tomb of Sargeras. His eldritch knowledge may now be put to purpose.";
   }
 
   protected override void OnComplete(){
@@ -25,8 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
   , "ReplaceableTextures\\CommandButtons\\BTNGuldan.blp"){
   this.
   internal AddQuestItem(
-  internal new QuestItemAnyUnitInRect(Regions.Guldan, "GulFourCC("dan")s corpse in the Tomb of Sargeras".Rect, true));
-  
+  internal new QuestItemAnyUnitInRect(Regions.Guldan, "Gul'dan)s corpse in the Tomb of Sargeras".Rect, true));
   }
 }
 

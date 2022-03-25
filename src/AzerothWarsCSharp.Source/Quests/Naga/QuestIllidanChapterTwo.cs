@@ -10,8 +10,8 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
     private readonly QuestData _questToDiscover;
 
     public QuestIllidanChapterTwo(QuestData questToDiscover) : base(
-      "Chapter Two: The Skull of GulFourCC("dan", "The mages of Dalaran are hiding a powerful artifact that will grant Illidan unlimited power
-      : the Skull of Gul")dan.", "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp")
+      "Chapter Two: The Skull of Gul'dan, "The mages of Dalaran are hiding a powerful artifact that will grant Illidan unlimited power
+      : the Skull of Gul'dan.", "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp")
     {
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.IllidanBoat1.Rect, "the escape boat"));
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.SkullOfGuldan.Rect,
