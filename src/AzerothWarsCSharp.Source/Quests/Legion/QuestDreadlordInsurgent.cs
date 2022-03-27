@@ -25,12 +25,12 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
     protected override void OnComplete()
     {
-      LegionSetup.FACTION_LEGION.ModObjectLimit(FourCC("Utic"), -Faction.UNLIMITED); //Tichondrius
-      LegionSetup.FACTION_LEGION.ModObjectLimit(FourCC("Umal"), -Faction.UNLIMITED); //maglanis
-      LegionSetup.FACTION_LEGION.ModObjectLimit(FourCC("U00L"), -Faction.UNLIMITED); //Anatheron
+      LegionSetup.FactionLegion.ModObjectLimit(FourCC("Utic"), -Faction.UNLIMITED); //Tichondrius
+      LegionSetup.FactionLegion.ModObjectLimit(FourCC("Umal"), -Faction.UNLIMITED); //maglanis
+      LegionSetup.FactionLegion.ModObjectLimit(FourCC("U00L"), -Faction.UNLIMITED); //Anatheron
 
-      LegionSetup.FACTION_LEGION.ModObjectLimit(FourCC("E01O"), 1); //Lilian
-      LegionSetup.FACTION_LEGION.ModObjectLimit(FourCC("Uvar"), 1); //Vari
+      LegionSetup.FactionLegion.ModObjectLimit(FourCC("E01O"), 1); //Lilian
+      LegionSetup.FactionLegion.ModObjectLimit(FourCC("Uvar"), 1); //Vari
 
       Holder.Team = TeamSetup.TeamForsaken;
       Holder.Name = "|cff8080ffInsurgents|r";

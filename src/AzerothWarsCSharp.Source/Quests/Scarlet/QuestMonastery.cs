@@ -20,8 +20,6 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("h00T")));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = QUEST_RESEARCH_ID;
-      ;
-      ;
     }
 
     protected override string CompletionPopup =>
@@ -42,7 +40,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
     {
       SetPlayerTechResearched(FACTION_KULTIRAS.Player, FourCC("R06V"), 1);
       SetPlayerTechResearched(LordaeronSetup.FactionLordaeron.Player, FourCC("R06V"), 1);
-      SetPlayerTechResearched(FACTION_SCARLET.Player, FourCC("R086"), 1);
+      SetPlayerTechResearched(ScarletSetup.FactionScarlet.Player, FourCC("R086"), 1);
       RescueNeutralUnitsInRect(Regions.ScarletAmbient.Rect, Holder.Player);
       WaygateActivateBJ(true, gg_unit_h00T_0786);
       WaygateSetDestinationLocBJ(gg_unit_h00T_0786, GetRectCenter(gg_rct_Scarlet_Monastery_Interior));

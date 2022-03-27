@@ -64,7 +64,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       LEGEND_JAINA.UnitType = FourCC("H04A");
 
       UnitRemoveAbilityBJ(FourCC("A0RB"), LEGEND_JAINA.Unit);
-      Holder.Team = TEAM_SCOURGE;
+      Holder.Team = TeamSetup.TeamScourge;
       Holder.Name = "The Nexus";
       Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNJaina_Archmage.blp";
       SetPlayerStateBJ(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);

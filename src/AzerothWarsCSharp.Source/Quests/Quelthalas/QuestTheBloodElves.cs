@@ -30,12 +30,12 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     }
 
     public QuestTheBloodElves() : base("The Blood Elves",
-      "The Elves of QuelFourCC("thalas have a deep reliance on the Sunwell")s magic. Without it, they would have to turn to darker magicks to sate themselves.",
+      "The Elves of Quel'"thalas have a deep reliance on the Sunwell")s magic. Without it, they would have to turn to darker magicks to sate themselves.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroBloodElfPrince.blp")
     {
       AddQuestItem(new QuestItemControlLegend(LegendNeutral.legendDraktharonkeep, false));
       AddQuestItem(new QuestItemControlLegend(LEGEND_ANASTERIAN, true));
-      AddQuestItem(new QuestItemControlLegend(LEGEND_SUNWELL, true));
+      AddQuestItem(new QuestItemControlLegend(LegendQuelthalas.LegendSunwell, true));
       ;
       ;
     }

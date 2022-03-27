@@ -11,7 +11,6 @@ namespace AzerothWarsCSharp.Source.Legends
     public static Legend LEGEND_MALGANIS { get; private set; }
     public static Legend LEGEND_LILIAN { get; private set; }
 
-
     public static void Setup()
     {
       LEGEND_ARCHIMONDE = new Legend

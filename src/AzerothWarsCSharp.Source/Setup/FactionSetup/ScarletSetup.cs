@@ -2,16 +2,13 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
-  public class ScarletSetup{
-
-  
-    Faction FACTION_SCARLET
-  
-
+  public static class ScarletSetup{
+    public static Faction FactionScarlet { get; private set; }
+    
     public static void Setup( ){
       Faction f;
-      FACTION_SCARLET = Faction.create("Militia", PLAYER_COLOR_MAROON, "|cff800000","ReplaceableTextures\\CommandButtons\\BTNPeasant.blp");
-      f = FACTION_SCARLET;
+      FactionScarlet = Faction.create("Militia", PLAYER_COLOR_MAROON, "|cff800000","ReplaceableTextures\\CommandButtons\\BTNPeasant.blp");
+      f = FactionScarlet;
       f.Team = TEAM_ALLIANCE;
       f.StartingGold = 150;
       f.StartingLumber = 500;

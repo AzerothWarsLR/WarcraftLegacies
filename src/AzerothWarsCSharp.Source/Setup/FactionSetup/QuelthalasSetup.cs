@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       Faction f;
       FACTION_QUELTHALAS =
         Faction.create(
-          "QuelFourCC("thalas", PLAYER_COLOR_CYAN, " |
+          "Quel'"thalas", PLAYER_COLOR_CYAN, " |
                              C0000FFFF","ReplaceableTextures\\CommandButtons\\BTNSylvanusWindrunner.blp");
       f = FACTION_QUELTHALAS;
       f.Team = TEAM_ALLIANCE;

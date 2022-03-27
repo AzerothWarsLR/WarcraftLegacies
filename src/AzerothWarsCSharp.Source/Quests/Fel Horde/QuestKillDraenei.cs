@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       "ReplaceableTextures\\CommandButtons\\BTNChaosWolfRider.blp")
     {
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n09X"))));
-      AddQuestItem(new QuestItemLegendDead(LEGEND_EXODARSHIP));
+      AddQuestItem(new QuestItemLegendDead(LegendDraenei.LegendExodarship));
       AddQuestItem(QuestItemSelfExists);
       ;
       ;

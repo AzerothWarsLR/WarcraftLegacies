@@ -30,6 +30,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private playercolor? _playerColor;
     private bool _isCapital;
     private string? _name;
+    private bool _hivemind;
 
     public static event EventHandler<LegendChangeOwnerEventArgs>? OnLegendChangeOwner;
 
@@ -196,7 +197,15 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// <summary>
     /// If true, when the Legend dies, its parent faction is defeated.
     /// </summary>
-    public bool Hivemind { private get; init; }
+    public bool Hivemind
+    {
+      private get { return _hivemind; }
+      set
+      {
+        _hivemind = value;
+        RefreshDummy();
+      }
+    }
 
     /// <summary>
     /// The current unit type of the Legend. Can be changed at any time, even if the Legend is already in the game world.
@@ -212,7 +221,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
           SetUnitState(newUnit, UNIT_STATE_LIFE, GetUnitState(_unit, UNIT_STATE_LIFE));
           SetUnitState(newUnit, UNIT_STATE_MANA, GetUnitState(_unit, UNIT_STATE_MANA));
           SetHeroXP(newUnit, GetHeroXP(_unit), false);
-          GeneralHelpers.UnitTransferItems(_unit, newUnit);
+          UnitTransferItems(_unit, newUnit);
           var oldX = GetUnitX(_unit);
           var oldY = GetUnitY(_unit);
           RemoveUnit(_unit);
@@ -352,7 +361,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
     }
 
-    private void onCast()
+    private void OnCast()
     {
       group tempGroup;
       unit u;
@@ -375,9 +384,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
           GroupRemoveUnit(tempGroup, u);
         }
-
         DestroyGroup(tempGroup);
-        tempGroup = null;
       }
     }
 
@@ -454,7 +461,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     private static void OnUnitCast()
     {
-      GetFromUnit(GetTriggerUnit())?.onCast();
+      GetFromUnit(GetTriggerUnit())?.OnCast();
     }
 
     //When any unit is trained, check if it has the unittype of a Legend, and assign it to that Legend if so

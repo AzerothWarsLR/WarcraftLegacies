@@ -12,12 +12,10 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       "ReplaceableTextures\\CommandButtons\\BTNHumanShipyard.blp")
     {
       this.AddQuestItem(new QuestItemResearch(FourCC("R04R"),)h06I)));
-      this.AddQuestItem(new QuestItemUpgrade(FourCC("h06I"),)h062)));
+      AddQuestItem(new QuestItemUpgrade(FourCC("h062"), FourCC("h062")));
       AddQuestItem(new QuestItemExpire(900));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = QUEST_RESEARCH_ID;
-      ;
-      ;
     }
 
 

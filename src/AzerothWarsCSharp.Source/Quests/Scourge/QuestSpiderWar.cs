@@ -16,28 +16,26 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08D"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00G"))));
       AddQuestItem(QuestItemKillUnit.create(gg_unit_n074_1565)); //Nezar)azret
-      this.AddQuestItem(new QuestItemUpgrade(FourCC("unp2"),)unpl)));
+      AddQuestItem(new QuestItemUpgrade(FourCC("unpl"), FourCC("unpl")));
       AddQuestItem(new QuestItemExpire(1480));
       AddQuestItem(new QuestItemSelfExists());
-      ;
-      ;
     }
 
 
     protected override string CompletionPopup =>
-      "Northrend && the Icecrown Citadel is now under full control of the Lich King && the " + Holder.Team.Name + ".";
+      "Northrend && the Icecrown Citadel is now under full control of the Lich King and the " + Holder.Team.Name + ".";
 
     protected override string CompletionDescription =>
       "Access to the Plague Research at the Frozen Throne, KelFourCC(tuzad && Rivendare trainable && a base in Icecrown";
 
     protected override void OnFail()
     {
-      RescueNeutralUnitsInRect(Regions.IceCrown.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      RescueNeutralUnitsInRect(Regions.Ice_Crown.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
     {
-      RescueNeutralUnitsInRect(Regions.IceCrown.Rect, Holder.Player);
+      RescueNeutralUnitsInRect(Regions.Ice_Crown.Rect, Holder.Player);
       SetPlayerTechResearched(Holder.Player, FourCC("R03A"), 1);
       if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\ScourgeTheme.mp3");
     }

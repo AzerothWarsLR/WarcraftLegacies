@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_VARIAN));
       AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactCrownlordaeron));
       AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactCrownstormwind));
-      AddQuestItem(new QuestItemControlLegend(LEGEND_BLACKTEMPLE, false));
+      AddQuestItem(new QuestItemControlLegend(LegendFelHorde.LegendBlacktemple, false));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n010"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01G"))));
       ;

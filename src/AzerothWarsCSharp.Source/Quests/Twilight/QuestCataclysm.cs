@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
@@ -7,26 +8,20 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
   {
     private static readonly int CataclysmResearch = FourCC("R05E");
 
-    private Global()
-    {
-      return true;
-    }
-
     public QuestCataclysm()
     {
       thistype this = thistype.allocate("The Cataclysm", "The Old GodFourCC("s will is finnicky,
         you are !privy to when their plan will be in motion, but when it is,
         your cult will be ready to welcome it.", "ReplaceableTextures\\CommandButtons\\BTNDeathwing.blp");
       AddQuestItem(new QuestItemControlLegend(LEGEND_DEATHWING, false));
+      Global = true;
     }
 
     protected override string CompletionPopup => "Deathwing is here, Doomsday is at hand, the Cataclysm as begun!";
 
     protected override string CompletionDescription =>
       "Cultists all over the world join your cause actively, Deathwing as a super demihero && the 2 elemental ascendant heroes.";
-
-
-    bool operator
+    
 
     protected override void OnComplete()
     {

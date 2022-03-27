@@ -3,8 +3,8 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge
   public class HelmOfDominationDropsWhenScourgeLeaves{
 
     private static void Actions( ){
-      if (GetTriggerFaction() == FACTION_SCOURGE && ARTIFACT_HELMOFDOMINATION.OwningUnit == LegendScourge.LegendLichking.Unit){
-        SetItemPosition(ARTIFACT_HELMOFDOMINATION.Item, GetRectCenterX(gg_rct_LichKing), GetRectCenterY(gg_rct_LichKing));
+      if (GetTriggerFaction() == ScourgeSetup.FactionScourge && ArtifactSetup.ArtifactHelmofdomination.OwningUnit == LegendScourge.LegendLichking.Unit){
+        SetItemPosition(ArtifactSetup.ArtifactHelmofdomination.Item, GetRectCenterX(gg_rct_LichKing), GetRectCenterY(gg_rct_LichKing));
       }
     }
 

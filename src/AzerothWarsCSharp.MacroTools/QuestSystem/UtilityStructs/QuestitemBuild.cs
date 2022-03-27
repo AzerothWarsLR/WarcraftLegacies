@@ -1,6 +1,6 @@
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemBuild{
+  public class QuestItemBuild : QuestItemData{
 
 
     private static int count = 0;
@@ -14,14 +14,12 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       this.Description = "Build " + GetObjectName(objectId) + "s (" + I2S(currentBuildCount) + "/" + I2S(targetBuildCount) + ")";
     }
 
-    thistype (int objectId, int targetBuildCount ){
-
+    public QuestItemBuild(int objectId, int targetBuildCount ){
       this.objectId = objectId;
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
       this.targetBuildCount = targetBuildCount;
       this.CurrentBuildCount = 0;
-      
     }
 
     private static void OnAnyBuild( ){

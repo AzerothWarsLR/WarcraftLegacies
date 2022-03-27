@@ -1,15 +1,13 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
+using AzerothWarsCSharp.Source.Setup;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Quests.Scourge
 {
   public sealed class QuestLichKingArthas : QuestData
   {
-    private Global()
-    {
-      return true;
-    }
-
     public QuestLichKingArthas() : base("The Ascension",
       "From within the depths of the Frozen Throne, the Lich King NerFourCC("zhul cries out for his champion
         .Release the Helm of Domination from its confines && merge its power with that of the Scourge")s greatest Death Knight.",
@@ -19,8 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       this.AddQuestItem(new QuestItemLegendLevel(LegendLordaeron.LegendArthas, 12));
       this.AddQuestItem(new QuestItemResearch(FourCC("R07X"),)u000)));
       AddQuestItem(new QuestItemLegendInRect(LegendLordaeron.LegendArthas, Regions.LichKing.Rect, "Icecrown Citadel"));
-      ;
-      ;
+      Global = true;
     }
 
     protected override string CompletionPopup => "Arthas has ascended the Frozen Throne itself && shattered NerFourCC("
@@ -52,9 +49,9 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
         "The great Lich King has been destroyed. With no central mind to command them, the forces of the Undead have gone rogue.";
       SetUnitState(LegendLordaeron.LegendArthas.Unit, UNIT_STATE_LIFE, GetUnitState(LegendLordaeron.LegendArthas.Unit, UNIT_STATE_MAX_LIFE));
       SetUnitState(LegendLordaeron.LegendArthas.Unit, UNIT_STATE_MANA, GetUnitState(LegendLordaeron.LegendArthas.Unit, UNIT_STATE_MAX_MANA));
-      UnitAddItemSafe(LegendLordaeron.LegendArthas.Unit, ARTIFACT_HELMOFDOMINATION.Item);
-      Holder.Team = TEAM_SCOURGE;
-      UnitRescue(gg_unit_h00O_2516, FACTION_SCOURGE.Player);
+      UnitAddItemSafe(LegendLordaeron.LegendArthas.Unit, ArtifactSetup.ArtifactHelmofdomination.Item);
+      Holder.Team = TeamSetup.TeamScourge;
+      UnitRescue(gg_unit_h00O_2516, ScourgeSetup.FactionScourge.Player);
       SetPlayerStateBJ(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
     }
   }

@@ -12,10 +12,10 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       "The clans holding Hellfire Citadel do !respect Kargath authority yet, destroy Murmur to finally establish Magtheridon as the undisputable king of Outland",
       "ReplaceableTextures\\CommandButtons\\BTNFelOrcFortress.blp")
     {
-      AddQuestItem(new QuestItemLegendDead(LEGEND_EXODARSHIP));
+      AddQuestItem(new QuestItemLegendDead(LegendDraenei.LegendExodarship));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01J"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02N"))));
-      this.AddQuestItem(new QuestItemUpgrade(FourCC("o030"),)o02Y)));
+      AddQuestItem(new QuestItemUpgrade(FourCC("o02Y"), FourCC("o02Y")));
       AddQuestItem(new QuestItemExpire(1450));
       AddQuestItem(QuestItemSelfExists);
       ;

@@ -6,13 +6,13 @@ namespace AzerothWarsCSharp.Source.Legends
   public static class LegendDalaran{
 
   
-    public static Legend LEGEND_ANTONIDAS
-    public static Legend LEGEND_MEDIVH
-    public static Legend LEGEND_JAINA
-    public static Legend LEGEND_KALECGOS
+    public static Legend LEGEND_ANTONIDAS { get; private set; }
+    public static Legend LEGEND_MEDIVH { get; private set; }
+    public static Legend LEGEND_JAINA { get; private set; }
+    public static Legend LEGEND_KALECGOS { get; private set; }
     public static Legend LEGEND_MALYGOS
-
-    public static Legend LEGEND_DALARAN
+ { get; private set; }
+    public static Legend LEGEND_DALARAN { get; private set; }
   
 
     public static void Setup( ){

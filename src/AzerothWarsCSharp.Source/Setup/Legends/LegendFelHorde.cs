@@ -13,7 +13,6 @@ namespace AzerothWarsCSharp.Source.Legends
     public static Legend LegendRend { get; private set; }
     public static Legend LegendTeron { get; private set; }
     public static Legend LegendKargath { get; private set; }
-
     public static Legend LegendBlackrockspire { get; private set; }
     public static Legend LegendBlacktemple { get; private set; }
     public static Legend LegendHellfirecitadel { get; private set; }

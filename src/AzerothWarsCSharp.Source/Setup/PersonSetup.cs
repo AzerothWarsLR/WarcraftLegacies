@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Setup
       p.Faction = FACTION_QUELTHALAS;
 
       p = Person.create(Player(3));
-      p.Faction = FACTION_SCOURGE;
+      p.Faction = ScourgeSetup.FactionScourge;
 
       p = Person.create(Player(4));
       p.Faction = FACTION_IRONFORGE;
@@ -44,7 +44,7 @@ namespace AzerothWarsCSharp.Source.Setup
       p.Faction = FACTION_DRUIDS;
 
       p = Person.create(Player(12));
-      p.Faction = FACTION_SCARLET;
+      p.Faction = ScarletSetup.FactionScarlet;
 
       p = Person.create(Player(13));
       p.Faction = FACTION_DRAENEI;
@@ -74,7 +74,7 @@ namespace AzerothWarsCSharp.Source.Setup
       p.Faction = FACTION_KULTIRAS;
 
       p = Person.create(Player(23));
-      p.Faction = FACTION_LEGION;
+      p.Faction = LegionSetup.FactionLegion;
 
       Person.create(Player(21));
 

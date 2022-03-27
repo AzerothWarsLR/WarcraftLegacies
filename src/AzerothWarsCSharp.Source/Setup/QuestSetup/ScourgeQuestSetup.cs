@@ -19,18 +19,18 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       questNaxxramas.AddQuestItem(QuestItemCompleteQuest.create(questKelthuzad));
 
       //Setup
-      FACTION_SCOURGE.AddQuest(questSpiderWar);
-      FACTION_SCOURGE.StartingQuest = questSpiderWar;
-      FACTION_SCOURGE.AddQuest(questDrakUnlock);
-      FACTION_SCOURGE.AddQuest(questPlague);
-      FACTION_SCOURGE.AddQuest(questSapphiron);
+      ScourgeSetup.FactionScourge.AddQuest(questSpiderWar);
+      ScourgeSetup.FactionScourge.StartingQuest = questSpiderWar;
+      ScourgeSetup.FactionScourge.AddQuest(questDrakUnlock);
+      ScourgeSetup.FactionScourge.AddQuest(questPlague);
+      ScourgeSetup.FactionScourge.AddQuest(questSapphiron);
       //Early duel
-      FACTION_SCOURGE.AddQuest(questCorruptArthas);
-      FACTION_SCOURGE.AddQuest(questKelthuzad);
-      FACTION_SCOURGE.AddQuest(questNaxxramas);
-      FACTION_SCOURGE.AddQuest(questCivilWar);
+      ScourgeSetup.FactionScourge.AddQuest(questCorruptArthas);
+      ScourgeSetup.FactionScourge.AddQuest(questKelthuzad);
+      ScourgeSetup.FactionScourge.AddQuest(questNaxxramas);
+      ScourgeSetup.FactionScourge.AddQuest(questCivilWar);
       //Misc
-      FACTION_SCOURGE.AddQuest(questLichKingArthas);
+      ScourgeSetup.FactionScourge.AddQuest(questLichKingArthas);
     }
 
   }

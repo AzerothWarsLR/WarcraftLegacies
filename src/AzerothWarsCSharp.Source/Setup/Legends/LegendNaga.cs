@@ -12,54 +12,67 @@ namespace AzerothWarsCSharp.Source.Legends
     public static Legend LEGEND_NZOTH { get; private set; }
     public static Legend LEGEND_ALTRUIS { get; private set; }
     public static Legend LEGEND_AKAMA { get; private set; }
-
     public static Legend LEGEND_NAZJATAR { get; private set; }
     public static Legend LEGEND_VAULT { get; private set; }
 
-
     public static void Setup()
     {
-      LEGEND_ILLIDAN = new Legend();
-      LEGEND_ILLIDAN.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("Eill"));
-      LEGEND_ILLIDAN.PlayerColor = PLAYER_COLOR_PURPLE;
+      LEGEND_ILLIDAN = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("Eill")),
+        PlayerColor = PLAYER_COLOR_PURPLE
+      };
 
-      LEGEND_VASHJ = new Legend();
-      LEGEND_VASHJ.UnitType = FourCC("Hvsh");
-      LEGEND_VASHJ.StartingXp = 2800;
+      LEGEND_VASHJ = new Legend
+      {
+        UnitType = FourCC("Hvsh"),
+        StartingXp = 2800
+      };
 
-      LEGEND_AZSHARA = new Legend();
-      LEGEND_AZSHARA.UnitType = FourCC("H08U");
+      LEGEND_AZSHARA = new Legend
+      {
+        UnitType = FourCC("H08U")
+      };
 
-      LEGEND_NAJENTUS = new Legend();
-      LEGEND_NAJENTUS.UnitType = FourCC("U00S");
-      LEGEND_NAJENTUS.StartingXp = 2800;
+      LEGEND_NAJENTUS = new Legend
+      {
+        UnitType = FourCC("U00S"),
+        StartingXp = 2800
+      };
 
-      LEGEND_ALTRUIS = new Legend();
-      LEGEND_ALTRUIS.UnitType = FourCC("E015");
-      LEGEND_ALTRUIS.StartingXp = 4000;
+      LEGEND_ALTRUIS = new Legend
+      {
+        UnitType = FourCC("E015"),
+        StartingXp = 4000
+      };
 
-      LEGEND_AKAMA = new Legend();
-      LEGEND_AKAMA.UnitType = FourCC("Naka");
-      LEGEND_AKAMA.StartingXp = 4000;
+      LEGEND_AKAMA = new Legend
+      {
+        UnitType = FourCC("Naka"),
+        StartingXp = 4000
+      };
 
-      LEGEND_NZOTH = new Legend();
-      LEGEND_NZOTH.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("U01Z"));
-      LEGEND_NZOTH.DeathMessage = "NFourCC("zoth the Corruptor lay in wait for millenia before
-      enacting final ploy.In the end, it was all for naught;
-      N")zoth lies dead, && he will never witness the true floatization of his Black Empire.";
-      LEGEND_NZOTH.PermaDies = true;
+      LEGEND_NZOTH = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("U01Z")),
+        DeathMessage = "N'zoth the Corruptor lay in wait for millenia before enacting final ploy. In the end, it was all for naught; N'zoth lies dead, and he will never witness the true floatization of his Black Empire.",
+        PermaDies = true
+      };
 
-      LEGEND_NAZJATAR = new Legend();
-      LEGEND_NAZJATAR.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("n045"));
-      LEGEND_NAZJATAR.DeathMessage =
-        "The Eternal Palace, the royal seat of Queen Azshara && the Nazjatar Empire, has been destroyed.";
-      LEGEND_NAZJATAR.IsCapital = true;
-      LEGEND_NAZJATAR.Hivemind = true;
+      LEGEND_NAZJATAR = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("n045")),
+        DeathMessage = "The Eternal Palace, the royal seat of Queen Azshara and the Nazjatar Empire, has been destroyed.",
+        IsCapital = true,
+        Hivemind = true
+      };
 
-      LEGEND_VAULT = new Legend();
-      LEGEND_VAULT.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("n05A"));
-      LEGEND_VAULT.DeathMessage = "The Aetheneum vault has been destroyed, && with it, ages of knowledge is lost.";
-      LEGEND_VAULT.IsCapital = true;
+      LEGEND_VAULT = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("n05A")),
+        DeathMessage = "The Aetheneum vault has been destroyed, and with it, ages of knowledge is lost.",
+        IsCapital = true
+      };
     }
   }
 }

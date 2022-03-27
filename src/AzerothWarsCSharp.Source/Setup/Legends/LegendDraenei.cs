@@ -6,34 +6,33 @@ namespace AzerothWarsCSharp.Source.Legends
   public static class LegendDraenei{
 
   
-    public static Legend LEGEND_VELEN
-    public static Legend LEGEND_MARAAD
-    public static Legend LEGEND_NOBUNDO
-
-    public static Legend LEGEND_EXODAR
-    public static Legend LEGEND_EXODARSHIP
+    public static Legend LegendVelen { get; private set; }
+    public static Legend LegendMaraad { get; private set; }
+    public static Legend LegendNobundo { get; private set; }
+    public static Legend LegendExodar { get; private set; }
+    public static Legend LegendExodarship { get; private set; }
   
 
     public static void Setup( ){
 
-      LEGEND_NOBUNDO = new Legend();
-      LEGEND_NOBUNDO.UnitType = FourCC("E01J");
-      LEGEND_NOBUNDO.StartingXp = 1800;
+      LegendNobundo = new Legend();
+      LegendNobundo.UnitType = FourCC("E01J");
+      LegendNobundo.StartingXp = 1800;
 
-      LEGEND_EXODAR = new Legend();
-      LEGEND_EXODAR.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o05E"));
-      LEGEND_EXODAR.IsCapital = true;
+      LegendExodar = new Legend();
+      LegendExodar.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o05E"));
+      LegendExodar.IsCapital = true;
 
-      LEGEND_EXODARSHIP = new Legend();
-      LEGEND_EXODARSHIP.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h09W"));
+      LegendExodarship = new Legend();
+      LegendExodarship.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h09W"));
 
-      LEGEND_MARAAD = new Legend();
-      LEGEND_MARAAD.UnitType = FourCC("H09S");
+      LegendMaraad = new Legend();
+      LegendMaraad.UnitType = FourCC("H09S");
 
-      LEGEND_VELEN = new Legend();
-      LEGEND_VELEN.UnitType = FourCC("E01I");
-      LEGEND_VELEN.AddUnitDependency(LEGEND_EXODAR.Unit);
-      LEGEND_VELEN.AddUnitDependency(LEGEND_EXODARSHIP.Unit);
+      LegendVelen = new Legend();
+      LegendVelen.UnitType = FourCC("E01I");
+      LegendVelen.AddUnitDependency(LegendExodar.Unit);
+      LegendVelen.AddUnitDependency(LegendExodarship.Unit);
     }
 
   }

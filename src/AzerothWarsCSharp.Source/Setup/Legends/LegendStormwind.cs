@@ -6,13 +6,12 @@ namespace AzerothWarsCSharp.Source.Legends
   public static class LegendStormwind{
 
   
-    public static Legend LEGEND_VARIAN
-    public static Legend LEGEND_KHADGAR
-    public static Legend LEGEND_GALEN
-    public static Legend LEGEND_BOLVAR
-
-    public static Legend LEGEND_STORMWINDKEEP
-    public static Legend LEGEND_DARKSHIRE
+    public static Legend LEGEND_VARIAN { get; private set; }
+    public static Legend LEGEND_KHADGAR { get; private set; }
+    public static Legend LEGEND_GALEN { get; private set; }
+    public static Legend LEGEND_BOLVAR { get; private set; }
+    public static Legend LEGEND_STORMWINDKEEP { get; private set; }
+    public static Legend LEGEND_DARKSHIRE { get; private set; }
   
 
     public static void Setup( ){

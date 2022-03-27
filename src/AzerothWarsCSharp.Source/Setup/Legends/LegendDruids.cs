@@ -11,15 +11,14 @@ namespace AzerothWarsCSharp.Source.Legends
     public static Legend legendUrsoc;
     public static Legend legendTortolla;
     public static Legend legendNordrassil;
-
-    public static int unittypeCenariusAlive = FourCC(""Ecen"");
-    public static int unittypeCenariusGhost = FourCC(""E00H"");
+    public static int unittypeCenariusAlive = FourCC("Ecen");
+    public static int unittypeCenariusGhost = FourCC("E00H");
     
     public static void Setup()
     {
       Legend.Register(legendCenarius = new Legend
       {
-        UnitType = FourCC(""Ecen""),
+        UnitType = FourCC("Ecen"),
         PermaDies = true,
         DeathMessage =
           "The Lord of the Forest, Cenarius, has fallen. The druids of the Kaldorei have lost their greatest mentor.",

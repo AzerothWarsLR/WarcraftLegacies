@@ -11,7 +11,6 @@ namespace AzerothWarsCSharp.Source.Legends
     public static Legend legendTyrande;
     public static Legend legendShandris;
     public static Legend legendJarod;
-
     public static Legend legendAuberdine;
     public static Legend legendFeathermoon;
   

@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
         some Alliance forces have managed to make a home there -
                                                          a town called Honor Hold", "ReplaceableTextures\
           \CommandButtons\\BTNHumanBarracks.blp");
-      AddQuestItem(new QuestItemLegendDead(LEGEND_HELLFIRECITADEL));
+      AddQuestItem(new QuestItemLegendDead(LegendFelHorde.LegendHellfirecitadel));
     }
 
 

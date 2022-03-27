@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       }
     }
 
-    thistype (int duration ){
+    public QuestItemTime(int duration ){
 
       this.Description = I2S(duration) + " seconds have elapsed";
       timer = CreateTimer();

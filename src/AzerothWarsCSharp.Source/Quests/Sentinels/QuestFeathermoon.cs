@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_TYRANDE, Regions.FeathermoonUnlock.Rect,
         "Feathermoon Stronghold"));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01R"))));
-      this.AddQuestItem(new QuestItemUpgrade(FourCC("n06P"),)n06J)));
+      AddQuestItem(new QuestItemUpgrade(FourCC("n06J"), FourCC("n06J")));
       AddQuestItem(new QuestItemExpire(1485));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = RESEARCH_ID;

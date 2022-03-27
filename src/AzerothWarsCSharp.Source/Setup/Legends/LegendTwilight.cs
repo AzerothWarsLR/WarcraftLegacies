@@ -10,7 +10,6 @@ namespace AzerothWarsCSharp.Source.Legends
     public static Legend LEGEND_FELUDIUS { get; private set; }
     public static Legend LEGEND_IGNACIOUS { get; private set; }
     public static Legend LEGEND_AZIL { get; private set; }
-
     public static Legend LegendTwilightcitadel { get; private set; }
   
 

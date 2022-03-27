@@ -9,7 +9,6 @@ namespace AzerothWarsCSharp.Source.Legends
 
     public static Legend legendRagnaros;
     public static Legend legendSeawitch;
-
     public static Legend legendAuchindoun;
     public static Legend legendDraktharonkeep;
     public static Legend legendOshugun;

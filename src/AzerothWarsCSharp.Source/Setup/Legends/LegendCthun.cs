@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Legends
     public static Legend legendGatesahnqiraj;
     public static Legend legendCthun;
     public static Legend legendYor;
-
+    
     public static void Setup()
     {
       legendCthun = new Legend
@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Legends
 
       legendSkeram = new Legend
       {
-        UnitType = FourCC(""E005""),
+        UnitType = FourCC("E005"),
         PlayerColor = PLAYER_COLOR_RED,
         Name = "Prophet Skeram"
       };

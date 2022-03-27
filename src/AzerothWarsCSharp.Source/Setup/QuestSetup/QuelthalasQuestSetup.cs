@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       quelthalas.StartingQuest = newQuest;
       //Early duel
       quelthalas.AddQuest(new QuestTheBloodElves());
-      quelthalas.AddQuest(new QuestQueldanil());
+      quelthalas.AddQuest(new QuestQueldanil(Regions.QuelDanil_Lodge.Rect));
 
       quelthalas.AddQuest(tempestKeep);
       tempestKeep.Progress = QuestProgress.Undiscovered;

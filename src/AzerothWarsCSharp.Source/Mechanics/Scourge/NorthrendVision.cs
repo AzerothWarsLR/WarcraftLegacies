@@ -44,9 +44,9 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge
     {
       player triggerPlayer;
       var i = 0;
-      if (GetTriggerPerson().Faction == FACTION_SCOURGE)
+      if (GetTriggerPerson().Faction == ScourgeSetup.FactionScourge)
         Enable();
-      else if (GetChangingPersonPrevFaction() == FACTION_SCOURGE) Disable();
+      else if (GetChangingPersonPrevFaction() == ScourgeSetup.FactionScourge) Disable();
     }
 
     public static void Setup()
@@ -55,7 +55,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge
       OnPersonFactionChange.register(trig);
       TriggerAddCondition(trig, PersonChangesFaction);
 
-      if (FACTION_SCOURGE.Person != 0) Enable();
+      if (ScourgeSetup.FactionScourge.Person != 0) Enable();
     }
   }
 }

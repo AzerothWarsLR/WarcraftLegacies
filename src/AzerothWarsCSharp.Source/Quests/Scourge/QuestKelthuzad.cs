@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Quests.Scourge
@@ -12,8 +13,8 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
         "KelFourCC("thuzad is the leader of the Cult of the Damned && an extraordinarily powerful necromancer
           .If he were to be brought to the Sunwell && submerged in its waters,
         he would be reanimated as an immortal Lich.", "ReplaceableTextures\\CommandButtons\\BTNLichVersion2blp");
-      AddQuestItem(new QuestItemControlLegend(LEGEND_SUNWELL, false));
-      AddQuestItem(new QuestItemLegendInRect(LEGEND_KELTHUZAD, Regions.Sunwell.Rect, "The Sunwell"));
+      AddQuestItem(new QuestItemControlLegend(LegendQuelthalas.LegendSunwell, false));
+      AddQuestItem(new QuestItemLegendInRect(LegendScourge.LegendKelthuzad, Regions.Sunwell.Rect, "The Sunwell"));
     }
 
     protected override string CompletionPopup
@@ -22,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       {
         string completionPopup =
           "KelFourCC(thuzad has been reanimated && empowered through the unlimited magical energies of the Sunwell.";
-        if (LegionSetup.FACTION_LEGION != null)
+        if (LegionSetup.FactionLegion != null)
           completionPopup += " He now has the ability to summon the Burning Legion.";
         return completionPopup;
       }
@@ -32,14 +33,14 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override void OnComplete()
     {
-      LEGEND_KELTHUZAD.UnitType = UNITTYPE_KELTHUZAD_LICH;
-      LEGEND_KELTHUZAD.PermaDies = false;
-      SetUnitState(LEGEND_KELTHUZAD.Unit, UNIT_STATE_LIFE, GetUnitState(LEGEND_KELTHUZAD.Unit, UNIT_STATE_MAX_LIFE));
-      SetUnitState(LEGEND_KELTHUZAD.Unit, UNIT_STATE_MANA, GetUnitState(LEGEND_KELTHUZAD.Unit, UNIT_STATE_MAX_MANA));
-      DestroyEffect(AddSpecialEffect("war3mapImported\\Soul Beam Blue.mdx", GetUnitX(LEGEND_KELTHUZAD.Unit),
-        GetUnitY(LEGEND_KELTHUZAD.Unit)));
+      LegendScourge.LegendKelthuzad.UnitType = UNITTYPE_KELTHUZAD_LICH;
+      LegendScourge.LegendKelthuzad.PermaDies = false;
+      SetUnitState(LegendScourge.LegendKelthuzad.Unit, UNIT_STATE_LIFE, GetUnitState(LegendScourge.LegendKelthuzad.Unit, UNIT_STATE_MAX_LIFE));
+      SetUnitState(LegendScourge.LegendKelthuzad.Unit, UNIT_STATE_MANA, GetUnitState(LegendScourge.LegendKelthuzad.Unit, UNIT_STATE_MAX_MANA));
+      DestroyEffect(AddSpecialEffect("war3mapImported\\Soul Beam Blue.mdx", GetUnitX(LegendScourge.LegendKelthuzad.Unit),
+        GetUnitY(LegendScourge.LegendKelthuzad.Unit)));
       DestroyEffect(AddSpecialEffect("Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl",
-        GetUnitX(LEGEND_KELTHUZAD.Unit), GetUnitY(LEGEND_KELTHUZAD.Unit)));
+        GetUnitX(LegendScourge.LegendKelthuzad.Unit), GetUnitY(LegendScourge.LegendKelthuzad.Unit)));
     }
   }
 }

@@ -6,12 +6,12 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 
     public static void Setup( ){
       //Early duel
-      FACTION_SCARLET.StartingQuest = FACTION_SCARLET.AddQuest(QuestTownWatch.create());
-      FACTION_SCARLET.AddQuest(QuestMonastery.create());
-      FACTION_SCARLET.AddQuest(QuestArgentDawn.create());
-      FACTION_SCARLET.AddQuest(QuestArathiVolunteers.create());
-      FACTION_SCARLET.AddQuest(QuestTyr.create());
-      FACTION_SCARLET.AddQuest(QuestLiberateLordaeron.create());
+      ScarletSetup.FactionScarlet.StartingQuest = ScarletSetup.FactionScarlet.AddQuest(QuestTownWatch.create());
+      ScarletSetup.FactionScarlet.AddQuest(QuestMonastery.create());
+      ScarletSetup.FactionScarlet.AddQuest(QuestArgentDawn.create());
+      ScarletSetup.FactionScarlet.AddQuest(QuestArathiVolunteers.create());
+      ScarletSetup.FactionScarlet.AddQuest(QuestTyr.create());
+      ScarletSetup.FactionScarlet.AddQuest(QuestLiberateLordaeron.create());
     }
 
 

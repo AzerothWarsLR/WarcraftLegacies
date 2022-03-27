@@ -1,6 +1,7 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Scourge
 {
@@ -9,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     private static readonly int QuestResearchId = FourCC("R08J");
 
     public QuestDrakUnlock() : base(
-      "DrakFourCC("taron Keep", "Drak")taron)s Keep will be the place for an outpost by the sea.",
+      "Draktharon's Keep", "Drak'tharon's Keep will be the place for an outpost by the sea.",
       "ReplaceableTextures\\CommandButtons\\BTNUndeadShipyard.blp")
     {
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n030"))));
@@ -24,8 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override string CompletionPopup => "DrakFourCC(taron Keep is now under the control of the Scourge.";
 
-    protected override string CompletionDescription => "Control of all buildings in DrakFourCC("
-    private taron Keep")";
+    protected override string CompletionDescription => "Control of all buildings in Drak'tharon Keep";
 
     protected override void OnFail()
     {

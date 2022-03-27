@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Draenei
 {
@@ -12,11 +13,9 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       "ReplaceableTextures\\CommandButtons\\BTNGlazeroth.blp")
     {
       AddQuestItem(new QuestItemTime(480));
-      this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LEGEND_EXODARSHIP));
+      this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LegendDraenei.LegendExodarship));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = QuestResearchId;
-      ;
-      ;
     }
 
 

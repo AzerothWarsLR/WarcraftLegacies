@@ -1,17 +1,16 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Scourge
 {
   public sealed class QuestNaxxramas : QuestData
   {
-    public QuestNaxxramas()
+    public QuestNaxxramas() : base("The Dread Citadel",
+      "This fallen necropolis can be transformed into a potent war machine by the Lich Kel'thuzad", @"ReplaceableTextures\CommandButtons\BTNBlackCitadel.blp")
     {
-      thistype this = thistype.allocate("The Dread Citadel",
-        "This fallen necropolis can be transformed into a potent war machine by the Lich KelFourCC("tuzad", "ReplaceableTextures\
-          \CommandButtons\\BTNBlackCitadel.blp");
       QuestItemChannelRect questItemChannelRect =
-        AddQuestItem(new QuestItemChannelRect(Regions.NaxUnlock, "Naxxramas", LEGEND_KELTHUZAD, 60.Rect, 270));
+        AddQuestItem(new QuestItemChannelRect(Regions.NaxUnlock.Rect, "Naxxramas", LegendScourge.LegendKelthuzad, 60, 270));
       questItemChannelRect.RequiredUnitTypeId = UNITTYPE_KELTHUZAD_LICH;
     }
 
@@ -21,14 +20,13 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override string CompletionDescription => "Control of all units in Naxxramas";
 
-    private void GrantNaxxramas(player whichPlayer)
+    private static void GrantNaxxramas(player whichPlayer)
     {
       group tempGroup = CreateGroup();
-      unit u;
 
       //Transfer all Neutral Passive units in Naxxramas
       GroupEnumUnitsInRect(tempGroup, Regions.NaxAmbient.Rect, null);
-      u = FirstOfGroup(tempGroup);
+      unit u = FirstOfGroup(tempGroup);
       while (true)
       {
         if (u == null) break;
@@ -36,9 +34,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
       }
-
       DestroyGroup(tempGroup);
-      tempGroup = null;
     }
 
     protected override void OnComplete()

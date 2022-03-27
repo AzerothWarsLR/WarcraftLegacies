@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Legends
     public static Legend legendYogg;
     public static Legend legendVolazj;
     public static Legend legendZakajz;
-
+    
     public static void Setup()
     {
       Legend.Register(legendYogg = new Legend
@@ -21,12 +21,12 @@ namespace AzerothWarsCSharp.Source.Legends
       
       Legend.Register(legendVolazj = new Legend
       {
-        UnitType = FourCC(""E01D"")
+        UnitType = FourCC("E01D")
       });
 
       Legend.Register(legendZakajz = new Legend
       {
-        UnitType = FourCC(""U00P""),
+        UnitType = FourCC("U00P"),
         StartingXp = 8800
       });
     }

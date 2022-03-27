@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       thistype this = thistype.allocate("Retaking the Sunwell",
         "Even in undeath, the SunwellFourCC("s energy to the Forsaken banshees
           .Reclaim it to bolster their vitality", "ReplaceableTextures\\CommandButtons\\BTNGhost.blp");
-      AddQuestItem(new QuestItemControlLegend(LEGEND_SUNWELL, false));
+      AddQuestItem(new QuestItemControlLegend(LegendQuelthalas.LegendSunwell, false));
       AddQuestItem(new QuestItemControlLegend(LegendForsaken.LegendNathanos, false));
     }
 

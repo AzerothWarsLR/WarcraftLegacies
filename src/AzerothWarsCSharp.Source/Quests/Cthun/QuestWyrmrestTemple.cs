@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
       AddQuestItem(new QuestItemLegendDead(LegendNeutral.legendSaragosa));
       AddQuestItem(new QuestItemLegendDead(LegendNeutral.legendVaelastrasz));
       AddQuestItem(new QuestItemLegendDead(LegendNeutral.legendOcculus));
-      ResearchId = FourCC(""R07S"");
+      ResearchId = FourCC("R07S");
     }
 
     protected override string CompletionPopup => "Yor'sahj can now be trained at the altar";

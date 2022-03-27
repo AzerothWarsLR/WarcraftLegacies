@@ -4,7 +4,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 {
   public sealed class QuestGuldansLegacy : QuestData
   {
-    private int _researchId = FourCC(""R041"");
+    private int _researchId = FourCC("R041");
 
 
     protected override string CompletionPopup => "GulFourCC("

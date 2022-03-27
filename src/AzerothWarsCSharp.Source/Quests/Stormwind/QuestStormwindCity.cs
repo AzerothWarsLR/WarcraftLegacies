@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00V"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00Z"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n011"))));
-      this.AddQuestItem(new QuestItemUpgrade(FourCC("h06N"),)h06K)));
+      AddQuestItem(new QuestItemUpgrade(FourCC("h06K"), FourCC("h06K")));
       AddQuestItem(new QuestItemExpire(1020));
       AddQuestItem(new QuestItemSelfExists());
       ;

@@ -1,6 +1,8 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {
@@ -8,34 +10,29 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
   {
     private static readonly int QuestResearchId = FourCC("R02U");
 
-    public QuestSilvermoon()
+    public QuestSilvermoon() : base("The Siege of Silvermoon", "Silvermoon has been besieged by Trolls. Clear them out and destroy their city of Zul'aman.", "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp")
     {
-      thistype this = thistype.allocate("The Siege of Silvermoon",
-        "Silvermoon has been besieged by Trolls. Clear them out && destroy their city of ZulFourCC("aman
-          .", "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp");
-      AddQuestItem(QuestItemKillUnit.create(gg_unit_O00O_1933)); //Zul)jin
+      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnitByUnitType(FourCC("O00O")))); //Zul'jin
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01V"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01L"))));
-      this.AddQuestItem(new QuestItemUpgrade(FourCC("h03T"),)h033)));
+      AddQuestItem(new QuestItemUpgrade(FourCC("h033"), FourCC("h033")));
       AddQuestItem(new QuestItemExpire(1480));
       AddQuestItem(new QuestItemSelfExists());
     }
-
-
+    
     protected override string CompletionPopup =>
-      "Silvermoon siege has been lifted, && its military is now free to assist the " + Holder.Team.Name + ".";
+      "Silvermoon siege has been lifted, and its military is now free to assist the " + Holder.Team.Name + ".";
 
     protected override string CompletionDescription =>
-      "Control of all units in Silvermoon && enable Anasterian to be trained at the Altar";
+      "Control of all units in Silvermoon and enable Anasterian to be trained at the Altar";
 
-    private void GrantSilvermoon(player whichPlayer)
+    private static void GrantSilvermoon(player whichPlayer)
     {
       group tempGroup = CreateGroup();
-      unit u;
 
       //Transfer all Neutral Passive units in Silvermoon
       GroupEnumUnitsInRect(tempGroup, Regions.SunwellAmbient.Rect, null);
-      u = FirstOfGroup(tempGroup);
+      unit u = FirstOfGroup(tempGroup);
       while (true)
       {
         if (u == null) break;
@@ -45,7 +42,6 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       }
 
       DestroyGroup(tempGroup);
-      tempGroup = null;
     }
 
     protected override void OnFail()
@@ -57,8 +53,8 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     {
       SetPlayerTechResearched(Holder.Player, FourCC("R02U"), 1);
       GrantSilvermoon(Holder.Player);
-      if (UnitAlive(gg_unit_h00D_2122)) SetUnitInvulnerable(LEGEND_SILVERMOON.Unit, true);
-      SetUnitInvulnerable(LEGEND_SUNWELL.Unit, true);
+      if (UnitAlive(gg_unit_h00D_2122)) SetUnitInvulnerable(LegendQuelthalas.LegendSilvermoon.Unit, true);
+      SetUnitInvulnerable(LegendQuelthalas.LegendSunwell.Unit, true);
       if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\SilvermoonTheme.mp3");
     }
 

@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       "ReplaceableTextures\\CommandButtons\\BTNFelKaelthas.blp")
     {
       AddQuestItem(new QuestItemCastSpell(FourCC("A0IF"), true));
-      AddQuestItem(new QuestItemLegendLevel(LegendQuelthalas.legendKael, 6));
+      AddQuestItem(new QuestItemLegendLevel(LegendQuelthalas.LegendKael, 6));
       ResearchId = QuestResearchId;
       Global = true;
     }
@@ -30,10 +30,10 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     protected override void OnComplete()
     {
       QuelthalasQuestSetup.STAY_LOYAL.Progress = QuestProgress.Failed;
-      UnitRemoveAbilityBJ(FourCC("A0IF"), LegendQuelthalas.legendKael.Unit);
-      UnitRemoveAbilityBJ(FourCC("A0IK"), LegendQuelthalas.legendKael.Unit);
-      RemoveUnit(LegendQuelthalas.legendLorthemar.Unit);
-      QuelthalasSetup.FACTION_QUELTHALAS.ModObjectLimit(LegendQuelthalas.legendLorthemar.UnitType, -Faction.UNLIMITED);
+      UnitRemoveAbilityBJ(FourCC("A0IF"), LegendQuelthalas.LegendKael.Unit);
+      UnitRemoveAbilityBJ(FourCC("A0IK"), LegendQuelthalas.LegendKael.Unit);
+      RemoveUnit(LegendQuelthalas.LegendLorthemar.Unit);
+      QuelthalasSetup.FACTION_QUELTHALAS.ModObjectLimit(LegendQuelthalas.LegendLorthemar.UnitType, -Faction.UNLIMITED);
       Holder.Team = TeamSetup.TeamLegion;
       QuelthalasQuestSetup.SUMMON_KIL.Progress = QuestProgress.Incomplete;
     }

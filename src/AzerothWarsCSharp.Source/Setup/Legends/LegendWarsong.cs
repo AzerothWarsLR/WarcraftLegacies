@@ -18,29 +18,29 @@ namespace AzerothWarsCSharp.Source.Legends
     {
       LegendChen = new Legend
       {
-        UnitType = FourCC(""Nsjs""),
+        UnitType = FourCC("Nsjs"),
         StartingXp = 1000
       };
 
       LegendSaurfang = new Legend
       {
-        UnitType = FourCC(""Obla""),
+        UnitType = FourCC("Obla"),
         StartingXp = 2800
       };
 
       LegendJergosh = new Legend
       {
-        UnitType = FourCC(""Oths"")
+        UnitType = FourCC("Oths")
       };
 
       LegendMannoroth = new Legend
       {
-        UnitType = FourCC(""Nman"")
+        UnitType = FourCC("Nman")
       };
 
       LegendStonemaul = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC(""o004"")),
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o004")),
         DeathMessage = "The fortress of the Stonemaul Clan has fallen.",
         IsCapital = true
       };
@@ -49,7 +49,7 @@ namespace AzerothWarsCSharp.Source.Legends
 
       LegendGrom = new Legend
       {
-        UnitType = FourCC(""Ogrh"")
+        UnitType = FourCC("Ogrh")
       };
     }
   }

@@ -19,10 +19,10 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
 
 
     protected override string CompletionPopup =>
-      "Magni has spoken with Falstad Wildhammer && secured an alliance with the Wildhammer Clan.";
+      "Magni has spoken with Falstad Wildhammer and secured an alliance with the Wildhammer Clan.";
 
     protected override string CompletionDescription =>
-      "You gain control of Aerie Peak && you can train the hero Falstad Wildhammer from the Altar of Fortitude";
+      "You gain control of Aerie Peak and you can train the hero Falstad Wildhammer from the Altar of Fortitude";
 
     protected override void OnComplete()
     {

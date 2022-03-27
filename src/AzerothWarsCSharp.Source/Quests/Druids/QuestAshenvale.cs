@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n07C"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01Q"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08U"))));
-      this.AddQuestItem(new QuestItemUpgrade(FourCC("etoa"),)etol)));
+      AddQuestItem(new QuestItemUpgrade(FourCC("etol"), FourCC("etol")));
       AddQuestItem(new QuestItemExpire(1440));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = RESEARCH_ID;

@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08M"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n018"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01I"))));
-      this.AddQuestItem(new QuestItemUpgrade(FourCC("h068"),)h065)));
+      AddQuestItem(new QuestItemUpgrade(FourCC("h065"), FourCC("h065")));
       AddQuestItem(new QuestItemExpire(1445));
       AddQuestItem(new QuestItemSelfExists());
       ;

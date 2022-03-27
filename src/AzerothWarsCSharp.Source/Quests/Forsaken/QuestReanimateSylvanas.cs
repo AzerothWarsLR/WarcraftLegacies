@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
     private GetObjectName(ALTAR_ID);
 
 
-    protected override string CompletionPopup => "QuelFourCC("
+    protected override string CompletionPopup => "Quel'"
 
     protected override string CompletionDescription =>
     return "You can summon Sylvanas from the " +
@@ -22,8 +22,8 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
   }
 
   protected override void OnComplete(){
-  internal SetUnitAnimation(LEGEND_SUNWELL.Unit, "stand second");
-  internal SetUnitAnimation(LEGEND_SUNWELL.Unit, "stand third");
+  internal SetUnitAnimation(LegendQuelthalas.LegendSunwell.Unit, "stand second");
+  internal SetUnitAnimation(LegendQuelthalas.LegendSunwell.Unit, "stand third");
   }
 
   public QuestReanimateSylvanas ( ){
@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
   this.
   internal AddQuestItem(
 
-  internal new QuestItemControlLegend(LEGEND_SUNWELL, false));
+  internal new QuestItemControlLegend(LegendQuelthalas.LegendSunwell, false));
     this.ResearchId =
   internal FourCC("R02D");
   }

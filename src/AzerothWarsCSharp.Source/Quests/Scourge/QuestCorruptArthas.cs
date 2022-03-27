@@ -1,5 +1,8 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Quests.Scourge
 {
@@ -12,12 +15,10 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       "When the city of Stratholme, Prince Arthas will abandon his people && join the Scourge as their champion.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroDeathKnight.blp")
     {
-      AddQuestItem(new QuestItemLegendDead(LEGEND_STRATHOLME));
-      this.AddQuestItem(new QuestItemEitherOf.create(QuestItemLegendDead.create(LegendLordaeron.LegendArthas),
-        QuestItemFactionDefeated(LordaeronSetup.FactionLordaeron)));
+      AddQuestItem(new QuestItemLegendDead(LegendLordaeron.LegendStratholme));
+      AddQuestItem(new QuestItemEitherOf(new QuestItemLegendDead(LegendLordaeron.LegendArthas),
+        new QuestItemFactionDefeated(LordaeronSetup.FactionLordaeron)));
       AddQuestItem(new QuestItemSelfExists());
-      ;
-      ;
     }
 
 

@@ -6,14 +6,14 @@ namespace AzerothWarsCSharp.Source.Legends
   public static class LegendGilneas{
 
   
-    public static Legend LEGEND_TESS
-    public static Legend LEGEND_GENN
-    public static Legend LEGEND_DARIUS
+    public static Legend LEGEND_TESS { get; private set; }
+    public static Legend LEGEND_GENN { get; private set; }
+    public static Legend LEGEND_DARIUS { get; private set; }
     public static Legend LEGEND_GOLDRINN
-
-    public static Legend LEGEND_LIGHTDAWN
+ { get; private set; }
+    public static Legend LEGEND_LIGHTDAWN { get; private set; }
     public static Legend LEGEND_GILNEASCASTLE
-
+ { get; private set; }
   
 
     public static void Setup( ){

@@ -2,24 +2,24 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
 {
-  public static class LegendScarlet{
+  public static class LegendScarlet
+  {
+    public static Legend LegendBrigitte { get; private set; }
+    public static Legend LEGEND_TIRION { get; private set; }
+    
+    public static void Setup()
+    {
+      LegendBrigitte = new Legend
+      {
+        UnitType = FourCC("H00Y"),
+        StartingXp = 7000
+      };
 
-  
-    public static Legend LEGEND_BRIGITTE
-    public static Legend LEGEND_TIRION
-  
-
-    public static void Setup( ){
-
-      LEGEND_BRIGITTE = new Legend();
-      LEGEND_BRIGITTE.UnitType = FourCC("H00Y");
-      LEGEND_BRIGITTE.StartingXp = 7000;
-
-      LEGEND_TIRION = new Legend();
-      LEGEND_TIRION.UnitType = FourCC("H09Z");
-      LEGEND_TIRION.StartingXp = 7000;
-
+      LEGEND_TIRION = new Legend
+      {
+        UnitType = FourCC("H09Z"),
+        StartingXp = 7000
+      };
     }
-
   }
 }

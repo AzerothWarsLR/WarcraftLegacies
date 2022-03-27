@@ -112,7 +112,6 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     private Legend targetLegend;
     private Channel channel = 0;
     private float facing ;//Which way the unit faces while it is channeling
-    private int requiredUnitTypeId;
 
     private static trigger entersRectTrig = CreateTrigger();
     private static int count = 0;
@@ -127,10 +126,10 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       return GetRectCenterY(targetRect);
     }
 
-    //The Unit Type ID the entering unit must have to start channeling
-    void operator RequiredUnitTypeId=(int value ){
-      requiredUnitTypeId = value;
-    }
+    /// <summary>
+    /// The Unit Type ID the entering unit must have to start channeling.
+    /// </summary>
+    public int RequiredUnitTypeId { get; init; }
 
     private void OnRegionEnter(unit whichUnit ){
       if (GetOwningPlayer(whichUnit) == this.Holder.Player && UnitAlive(whichUnit) && Legend.ByHandle(GetTriggerUnit()) == targetLegend && channel == 0 && this.Progress == QUEST_PROGRESS_INCOMPLETE){
