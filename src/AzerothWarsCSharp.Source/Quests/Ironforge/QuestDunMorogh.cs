@@ -14,11 +14,8 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n014"))));
       AddQuestItem(new QuestItemExpire(1435));
       AddQuestItem(new QuestItemSelfExists());
-      ;
-      ;
     }
-
-
+    
     protected override string CompletionPopup => "The Trolls have been defeated, Dun Morogh will join your cause.";
 
     protected override string CompletionDescription => "Control of all units in Dun Morogh";
@@ -26,11 +23,10 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
     private void GrantDunMorogh(player whichPlayer)
     {
       group tempGroup = CreateGroup();
-      unit u;
 
       //Transfer all Neutral Passive units in DunMorogh
       GroupEnumUnitsInRect(tempGroup, Regions.DunmoroghAmbient2.Rect, null);
-      u = FirstOfGroup(tempGroup);
+      unit u = FirstOfGroup(tempGroup);
       while (true)
       {
         if (u == null) break;
@@ -40,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       }
 
       DestroyGroup(tempGroup);
-      tempGroup = null;
+      
     }
 
     protected override void OnFail()

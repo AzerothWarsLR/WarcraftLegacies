@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 
     public static void Setup()
     {
-      var quelthalas = QuelthalasSetup.FACTION_QUELTHALAS;
+      var quelthalas = QuelthalasSetup.FactionQuelthalas;
       //Setup
       QuestData newQuest = quelthalas.AddQuest(new QuestSilvermoon());
       QuestData tempestKeep = new QuestTempestKeep();

@@ -8,11 +8,10 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
   {
     private static readonly int QUEST_RESEARCH_ID = FourCC("R06T"); //This research is given when the quest is completed
 
-    public QuestSafeSea()
+    public QuestSafeSea() : base("Safe Sea Decree",
+      "The seas must be secured and the Kul'tiras navy must be returned to its former glory!", @"ReplaceableTextures\
+          \CommandButtons\\BTNKulTirasDreadnought.blp")
     {
-      thistype this = thistype.allocate("Safe Sea Decree",
-        "The seas must be secured && the KulFourCC("tiras navy must be returned to its former glory!", "ReplaceableTextures\
-          \CommandButtons\\BTNKulTirasDreadnought.blp");
       this.AddQuestItem(new QuestItemTrain(FourCC("hdes"),)hshy), 2));
       this.AddQuestItem(new QuestItemTrain(FourCC("h04J"),)hshy), 1));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01W"))));

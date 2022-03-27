@@ -5,61 +5,61 @@ namespace AzerothWarsCSharp.Source.Legends
 {
   public static class LegendNaga
   {
-    public static Legend LEGEND_ILLIDAN { get; private set; }
-    public static Legend LEGEND_VASHJ { get; private set; }
-    public static Legend LEGEND_NAJENTUS { get; private set; }
-    public static Legend LEGEND_AZSHARA { get; private set; }
-    public static Legend LEGEND_NZOTH { get; private set; }
-    public static Legend LEGEND_ALTRUIS { get; private set; }
-    public static Legend LEGEND_AKAMA { get; private set; }
-    public static Legend LEGEND_NAZJATAR { get; private set; }
-    public static Legend LEGEND_VAULT { get; private set; }
+    public static Legend LegendIllidan { get; private set; }
+    public static Legend LegendVashj { get; private set; }
+    public static Legend LegendNajentus { get; private set; }
+    public static Legend LegendAzshara { get; private set; }
+    public static Legend LegendNzoth { get; private set; }
+    public static Legend LegendAltruis { get; private set; }
+    public static Legend LegendAkama { get; private set; }
+    public static Legend LegendNazjatar { get; private set; }
+    public static Legend LegendVault { get; private set; }
 
     public static void Setup()
     {
-      LEGEND_ILLIDAN = new Legend
+      LegendIllidan = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("Eill")),
         PlayerColor = PLAYER_COLOR_PURPLE
       };
 
-      LEGEND_VASHJ = new Legend
+      LegendVashj = new Legend
       {
         UnitType = FourCC("Hvsh"),
         StartingXp = 2800
       };
 
-      LEGEND_AZSHARA = new Legend
+      LegendAzshara = new Legend
       {
         UnitType = FourCC("H08U")
       };
 
-      LEGEND_NAJENTUS = new Legend
+      LegendNajentus = new Legend
       {
         UnitType = FourCC("U00S"),
         StartingXp = 2800
       };
 
-      LEGEND_ALTRUIS = new Legend
+      LegendAltruis = new Legend
       {
         UnitType = FourCC("E015"),
         StartingXp = 4000
       };
 
-      LEGEND_AKAMA = new Legend
+      LegendAkama = new Legend
       {
         UnitType = FourCC("Naka"),
         StartingXp = 4000
       };
 
-      LEGEND_NZOTH = new Legend
+      LegendNzoth = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("U01Z")),
         DeathMessage = "N'zoth the Corruptor lay in wait for millenia before enacting final ploy. In the end, it was all for naught; N'zoth lies dead, and he will never witness the true floatization of his Black Empire.",
         PermaDies = true
       };
 
-      LEGEND_NAZJATAR = new Legend
+      LegendNazjatar = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("n045")),
         DeathMessage = "The Eternal Palace, the royal seat of Queen Azshara and the Nazjatar Empire, has been destroyed.",
@@ -67,7 +67,7 @@ namespace AzerothWarsCSharp.Source.Legends
         Hivemind = true
       };
 
-      LEGEND_VAULT = new Legend
+      LegendVault = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("n05A")),
         DeathMessage = "The Aetheneum vault has been destroyed, and with it, ages of knowledge is lost.",

@@ -1,5 +1,7 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Setup;
 
 namespace AzerothWarsCSharp.Source.Quests.Stormwind
 {
@@ -43,7 +45,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
       //Cleanup
       DestroyGroup(tempGroup);
-      tempGroup = null;
+      
     }
 
     protected override void OnFail()

@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     protected override void OnComplete()
     {
       RescueNeutralUnitsInRect(Regions.KilsorrowUnlock.Rect, Holder.Player);
-      UnitRescue(gg_unit_n081_4142, FACTION_FEL_HORDE.Player);
+      UnitRescue(gg_unit_n081_4142, FelHordeSetup.FactionFelHorde.Player);
     }
 
     protected override void OnAdd()

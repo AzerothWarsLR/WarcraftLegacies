@@ -4,17 +4,17 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
   public static class QuelthalasSetup
   {
-    public static Faction FACTION_QUELTHALAS { get; private set; }
+    public static Faction FactionQuelthalas { get; private set; }
 
 
     public static void Setup()
     {
       Faction f;
-      FACTION_QUELTHALAS =
+      FactionQuelthalas =
         Faction.create(
           "Quel'"thalas", PLAYER_COLOR_CYAN, " |
                              C0000FFFF","ReplaceableTextures\\CommandButtons\\BTNSylvanusWindrunner.blp");
-      f = FACTION_QUELTHALAS;
+      f = FactionQuelthalas;
       f.Team = TEAM_ALLIANCE;
       f.UndefeatedResearch = FourCC("R05U");
       f.StartingGold = 150;

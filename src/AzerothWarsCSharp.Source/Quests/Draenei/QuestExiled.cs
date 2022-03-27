@@ -52,7 +52,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       }
 
       DestroyGroup(tempGroup);
-      tempGroup = null;
+      
     }
 
     private void EscapeOutland(player whichPlayer)
@@ -78,7 +78,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       }
 
       DestroyGroup(tempGroup);
-      tempGroup = null;
+      
     }
 
     protected override void OnFail()
@@ -103,7 +103,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       }
 
       DestroyGroup(tempGroup);
-      tempGroup = null;
+      
     }
 
     protected override void OnComplete()

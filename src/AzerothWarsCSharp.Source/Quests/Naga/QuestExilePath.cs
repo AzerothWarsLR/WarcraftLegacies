@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
@@ -18,9 +19,9 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       "ReplaceableTextures\\CommandButtons\\BTNIllidanDemonicPower.blp")
     {
       AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("n055")));
-      AddQuestItem(new QuestItemControlLegend(LEGEND_ILLIDAN, true));
+      AddQuestItem(new QuestItemControlLegend(LegendNaga.LegendIllidan, true));
       AddQuestItem(new QuestItemSelfExists());
-      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.NazjatarHidden.Rect, "Nazjatar"));
+      this.AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.NazjatarHidden.Rect, "Nazjatar"));
       ResearchId = QUEST_RESEARCH_ID;
       ;
       ;
@@ -50,7 +51,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       }
 
       DestroyGroup(tempGroup);
-      tempGroup = null;
+      
     }
 
     bool operator
@@ -58,9 +59,9 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
     protected override void OnComplete()
     {
       GrantAkama(Holder.Player);
-      FACTION_NAGA.ModObjectLimit(FourCC("n08W"), Faction.UNLIMITED); //Lost One Den
-      FACTION_NAGA.ModObjectLimit(FourCC("ndrn"), Faction.UNLIMITED); //Vindicator
-      FACTION_NAGA.ModObjectLimit(FourCC("ndrs"), 6); //Seer
+      NagaSetup.FactionNaga.ModObjectLimit(FourCC("n08W"), Faction.UNLIMITED); //Lost One Den
+      NagaSetup.FactionNaga.ModObjectLimit(FourCC("ndrn"), Faction.UNLIMITED); //Vindicator
+      NagaSetup.FactionNaga.ModObjectLimit(FourCC("ndrs"), 6); //Seer
       SetUnitOwner(LEGEND_NZOTH.Unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
       REDEMPTION_PATH.Progress = QUEST_PROGRESS_FAILED;
       MADNESS_PATH.Progress = QUEST_PROGRESS_FAILED;

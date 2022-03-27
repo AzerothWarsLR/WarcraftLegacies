@@ -2,6 +2,7 @@
 
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Naga
 {
@@ -13,12 +14,12 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       "In order to gain the power he craves, Illidan must plunder the hidden Aetheneum library for its secrets.",
       "ReplaceableTextures\\CommandButtons\\BTNDoomlord.blp")
     {
-      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.DireMaulEntrance.Rect, "Feralas"));
-      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.AethneumLibraryEntrance.Rect,
+      this.AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.Dire_Maul_Entrance.Rect, "Feralas"));
+      this.AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.AethneumLibraryEntrance.Rect,
         "the Aetheneum Library"));
-      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.ImmolFight.Rect,
-        "ImmolFourCC("thar")s Lair"));
-      AddQuestItem(new QuestItemLegendDead(LEGEND_IMMOLTHAR));
+      this.AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.ImmolFight.Rect,
+        "Immol'thar's Lair"));
+      AddQuestItem(new QuestItemLegendDead(LegendNeutral.legendImmolthar));
       _questToDiscover = questToDiscover;
       ;
       ;
@@ -31,7 +32,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     protected override void OnComplete()
     {
-      _questToDiscover.Progress = QUEST_PROGRESS_INCOMPLETE;
+      _questToDiscover.Progress = QuestProgress.Incomplete;
     }
   }
 }

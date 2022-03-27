@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       _questItemAnyUnitInRect = new QuestItemAnyUnitInRect(Regions.DalaranDungeon.Rect, "Dalaran Dungeons", true);
       AddQuestItem(_questItemAnyUnitInRect);
 
-      AddQuestItem(new QuestItemEitherOf(new QuestItemLegendDead(LegendNaga.LEGEND_ILLIDAN),
+      AddQuestItem(new QuestItemEitherOf(new QuestItemLegendDead(LegendNaga.LegendIllidan),
         new QuestItemFactionDefeated(NagaSetup.FactionNaga)));
       AddQuestItem(new QuestItemSelfExists());
     }

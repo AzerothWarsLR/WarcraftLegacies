@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.Source.Quests.Scarlet;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {

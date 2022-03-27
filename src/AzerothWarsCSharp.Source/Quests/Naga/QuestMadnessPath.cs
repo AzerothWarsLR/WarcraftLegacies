@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
@@ -18,9 +19,9 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       "ReplaceableTextures\\CommandButtons\\BTNGuardianofTheSea.blp")
     {
       AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("n055")));
-      this.AddQuestItem(new QuestItemLegendNotDead(LEGEND_ILLIDAN));
+      this.AddQuestItem(new QuestItemLegendNotDead(LegendNaga.LegendIllidan));
       AddQuestItem(new QuestItemSelfExists());
-      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.NazjatarHidden.Rect, "Nazjatar"));
+      this.AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.NazjatarHidden.Rect, "Nazjatar"));
       ResearchId = QUEST_RESEARCH_ID;
       ;
       ;
@@ -60,14 +61,14 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       LEGEND_AZSHARA.Spawn(Holder.Player, GetRectCenterX(Regions.InstanceNazjatar),
         GetRectCenterY(gg_rct_InstanceNazjatar).Rect, 270);
       SetHeroLevel(LEGEND_AZSHARA.Unit, 7, false);
-      SetUnitOwner(LEGEND_ILLIDAN.Unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
+      SetUnitOwner(LegendNaga.LegendIllidan.Unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
     }
 
     private void AdjustTechtree()
     {
-      FACTION_NAGA.ModObjectLimit(FourCC("n08V"), Faction.UNLIMITED); //Depth Void Portal
-      FACTION_NAGA.ModObjectLimit(FourCC("h01Q"), 4); //Immortal Guardian
-      FACTION_NAGA.ModObjectLimit(FourCC("H08U"), 1); //Azshara
+      NagaSetup.FactionNaga.ModObjectLimit(FourCC("n08V"), Faction.UNLIMITED); //Depth Void Portal
+      NagaSetup.FactionNaga.ModObjectLimit(FourCC("h01Q"), 4); //Immortal Guardian
+      NagaSetup.FactionNaga.ModObjectLimit(FourCC("H08U"), 1); //Azshara
     }
 
     protected override void OnComplete()
@@ -76,7 +77,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       AdjustTechtree();
       FailQuests();
       TransferHeroes();
-      FACTION_NAGA.ModObjectLimit(FourCC("Eevi"), -Faction.UNLIMITED); //Illidan
+      NagaSetup.FactionNaga.ModObjectLimit(FourCC("Eevi"), -Faction.UNLIMITED); //Illidan
       BLACKEMPIREPORTAL_ILLIDAN.PortalState = BLACKEMPIREPORTALSTATE_OPEN;
       RenameIllidanFaction();
       WaygateActivateBJ(true, gg_unit_h01D_3378);

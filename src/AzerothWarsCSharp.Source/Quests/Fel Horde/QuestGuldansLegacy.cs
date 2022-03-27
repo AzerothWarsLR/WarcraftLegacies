@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 
 namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
@@ -5,15 +6,10 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
   public sealed class QuestGuldansLegacy : QuestData
   {
     private int _researchId = FourCC("R041");
+    
+    protected override string CompletionDescription => "Guldan's remains have been located within the Tomb of Sargeras. His eldritch knowledge may now be put to purpose.";
 
-
-    protected override string CompletionPopup => "GulFourCC("
-
-    protected override string CompletionDescription =>
-      dan")s remains have been located within the Tomb of Sargeras. His eldritch knowledge may now be put to purpose.";
-  }
-
-  protected override void OnComplete(){
+    protected override void OnComplete(){
   internal SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
   }
 

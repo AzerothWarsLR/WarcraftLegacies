@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 
 namespace AzerothWarsCSharp.Source.Quests.Quelthalas
@@ -14,35 +15,35 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
   protected override string CompletionDescription => "Control of the TempestKeep";
 
   protected override void OnComplete(){
-  internal SetUnitOwner(LEGEND_KAEL.Unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
+  internal SetUnitOwner(LegendQuelthalas.LegendKael.Unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
   this.Holder.Obliterate();
-  internal SetUnitOwner(LEGEND_KAEL.Unit, this.Holder.Player, true);
-  FACTION_QUELTHALAS.AddQuest(SUMMON_KIL);
+  internal SetUnitOwner(LegendQuelthalas.LegendKael.Unit, this.Holder.Player, true);
+  QuelthalasSetup.FactionQuelthalas.AddQuest(SUMMON_KIL);
   SUMMON_KIL.Progress = QUEST_PROGRESS_UNDISCOVERED;
-  FACTION_QUELTHALAS.AddQuest(GREAT_TREACHERY);
+  QuelthalasSetup.FactionQuelthalas.AddQuest(GREAT_TREACHERY);
   GREAT_TREACHERY.Progress = QUEST_PROGRESS_UNDISCOVERED;
-  FACTION_QUELTHALAS.AddQuest(STAY_LOYAL);
+  QuelthalasSetup.FactionQuelthalas.AddQuest(STAY_LOYAL);
   STAY_LOYAL.Progress = QUEST_PROGRESS_UNDISCOVERED;
-  FACTION_QUELTHALAS.ModObjectLimit(FourCC("H00Q"), -Faction.UNLIMITED); //Anasterian
-  FACTION_QUELTHALAS.ModObjectLimit(FourCC("Hvwd"), -Faction.UNLIMITED); //Sylvanas
-  FACTION_QUELTHALAS.ModObjectLimit(FourCC("n075"), -Faction.UNLIMITED); //Vareesa
-  FACTION_QUELTHALAS.ModObjectLimit(FourCC("n00A"), -Faction.UNLIMITED); //Farstrider
-  FACTION_QUELTHALAS.ModObjectLimit(FourCC("hhes"), -Faction.UNLIMITED); //Swordsman
-  FACTION_QUELTHALAS.ModObjectLimit(FourCC("nbel"),UNLIMITED); //Sunfury
-  FACTION_QUELTHALAS.ModObjectLimit(FourCC("n09S"), 6); //Ranger
-  FACTION_QUELTHALAS.ModObjectLimit(FourCC("n02F"), 6); //Felblood Warlock
-  FACTION_QUELTHALAS.ModObjectLimit(FourCC("e01B"), 6); //Arcane Anihilator
-  FACTION_QUELTHALAS.ModObjectLimit(FourCC("H00Q"), -Faction.UNLIMITED); //Anasterian
-  FACTION_QUELTHALAS.ModObjectLimit(FourCC("Hvwd"), -Faction.UNLIMITED); //sylvanas
+  QuelthalasSetup.FactionQuelthalas.ModObjectLimit(FourCC("H00Q"), -Faction.UNLIMITED); //Anasterian
+  QuelthalasSetup.FactionQuelthalas.ModObjectLimit(FourCC("Hvwd"), -Faction.UNLIMITED); //Sylvanas
+  QuelthalasSetup.FactionQuelthalas.ModObjectLimit(FourCC("n075"), -Faction.UNLIMITED); //Vareesa
+  QuelthalasSetup.FactionQuelthalas.ModObjectLimit(FourCC("n00A"), -Faction.UNLIMITED); //Farstrider
+  QuelthalasSetup.FactionQuelthalas.ModObjectLimit(FourCC("hhes"), -Faction.UNLIMITED); //Swordsman
+  QuelthalasSetup.FactionQuelthalas.ModObjectLimit(FourCC("nbel"),UNLIMITED); //Sunfury
+  QuelthalasSetup.FactionQuelthalas.ModObjectLimit(FourCC("n09S"), 6); //Ranger
+  QuelthalasSetup.FactionQuelthalas.ModObjectLimit(FourCC("n02F"), 6); //Felblood Warlock
+  QuelthalasSetup.FactionQuelthalas.ModObjectLimit(FourCC("e01B"), 6); //Arcane Anihilator
+  QuelthalasSetup.FactionQuelthalas.ModObjectLimit(FourCC("H00Q"), -Faction.UNLIMITED); //Anasterian
+  QuelthalasSetup.FactionQuelthalas.ModObjectLimit(FourCC("Hvwd"), -Faction.UNLIMITED); //sylvanas
   internal RemoveUnit(LEGEND_ANASTERIAN.Unit);
   internal RemoveUnit(LEGEND_SYLVANAS.Unit);
-  internal SetUnitPosition(LEGEND_KAEL.Unit, 4067, -21695);
+  internal SetUnitPosition(LegendQuelthalas.LegendKael.Unit, 4067, -21695);
   internal SetUnitPosition(LEGEND_LORTHEMAR.Unit, 4067, -21695);
-  internal UnitRemoveAbilityBJ(FourCC("A0IP"), LEGEND_KAEL.Unit);
+  internal UnitRemoveAbilityBJ(FourCC("A0IP"), LegendQuelthalas.LegendKael.Unit);
   GeneralHelpers.RescueUnitsInGroup(udg_TempestKeep, this.Holder.Player);
-  this.Holder.Team = TEAM_NAGA;
-  internal UnitAddAbility(LEGEND_KAEL.Unit, FourCC("A0IK"));
-  internal UnitAddAbility(LEGEND_KAEL.Unit, FourCC("A0IF"));
+  this.Holder.Team = TeamSetup.TeamNaga;
+  internal UnitAddAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0IK"));
+  internal UnitAddAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0IF"));
   internal AdjustPlayerStateBJ(2000, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD );
   internal AdjustPlayerStateBJ(4000, this.Holder.Player, PLAYER_STATE_RESOURCE_LUMBER );
   this.Holder.Name = "Blood Elves";
@@ -61,7 +62,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
   this.
   internal AddQuestItem(
 
-  internal new QuestItemControlLegend(LEGEND_KAEL, true));
+  internal new QuestItemControlLegend(LegendQuelthalas.LegendKael, true));
     this.ResearchId = QUEST_RESEARCH_ID;
   
   }

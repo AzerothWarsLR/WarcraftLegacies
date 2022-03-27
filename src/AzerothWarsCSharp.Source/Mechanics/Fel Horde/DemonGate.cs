@@ -85,7 +85,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Fel_Horde
     private float operator RallyX( ){
       location rally;
       float x;
-      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(_u) == FACTION_FEL_HORDE.Player){
+      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(_u) == FelHordeSetup.FactionFelHorde.Player){
         return FocalDemonGate.Instance.RallyX;
       }
       rally = GetUnitRallyPoint(_u);
@@ -98,7 +98,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Fel_Horde
     private float operator RallyY( ){
       location rally;
       float y;
-      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(_u) == FACTION_FEL_HORDE.Player){
+      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(_u) == FelHordeSetup.FactionFelHorde.Player){
         return FocalDemonGate.Instance.RallyY;
       }
       rally = GetUnitRallyPoint(_u);
@@ -109,14 +109,14 @@ namespace AzerothWarsCSharp.Source.Mechanics.Fel_Horde
     }
 
     private float operator SpawnX( ){
-      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(_u) == FACTION_FEL_HORDE.Player){
+      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(_u) == FelHordeSetup.FactionFelHorde.Player){
         return FocalDemonGate.Instance.SpawnX;
       }
       return GetPolarOffsetX(X, SPAWN_DISTANCE, Facing);
     }
 
     private float operator SpawnY( ){
-      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(_u) == FACTION_FEL_HORDE.Player){
+      if (FocalDemonGate.Instance != 0 && FocalDemonGate.Instance.Alive == true && GetOwningPlayer(_u) == FelHordeSetup.FactionFelHorde.Player){
         return FocalDemonGate.Instance.SpawnY;
       }
       return GetPolarOffsetY(Y, SPAWN_DISTANCE, Facing);

@@ -3,6 +3,7 @@
 
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Stormwind
 {
@@ -40,7 +41,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       SetDoodadAnimationRectBJ("unhide", FourCC("CSra"), gg_rct_HonorHold);
       //Cleanup
       DestroyGroup(tempGroup);
-      tempGroup = null;
+      
     }
   }
 }

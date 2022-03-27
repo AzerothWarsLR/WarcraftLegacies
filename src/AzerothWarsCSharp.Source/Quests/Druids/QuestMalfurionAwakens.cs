@@ -49,7 +49,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 
       //Cleanup
       DestroyGroup(tempGroup);
-      tempGroup = null;
+      
     }
 
     protected override void OnFail()
@@ -97,7 +97,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       }
 
       DestroyGroup(tempGroup);
-      tempGroup = null;
+      
       //Add quest
     }
   }

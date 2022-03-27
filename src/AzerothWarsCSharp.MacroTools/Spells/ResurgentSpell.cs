@@ -3,6 +3,9 @@ using AzerothWarsCSharp.MacroTools.SpellSystem;
 
 namespace AzerothWarsCSharp.MacroTools.Spells
 {
+  /// <summary>
+  /// Repeatedly casts a spell at the target location.
+  /// </summary>
   public sealed class ResurgentSpell : Spell
   {
     public ResurgentSpell(int id, int dummySpellId, string dummySpellOrder) : base(id)

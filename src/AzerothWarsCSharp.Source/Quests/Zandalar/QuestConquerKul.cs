@@ -55,7 +55,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp")
     {
       AddQuestItem(new QuestItemControlLegend(LegendNeutral.legendDazaralor, true));
-      AddQuestItem(new QuestItemLegendDead(LegendKultiras.LEGEND_BORALUS));
+      AddQuestItem(new QuestItemLegendDead(LegendKultiras.LegendBoralus));
       ResearchId = QuestResearchId;
     }
   }

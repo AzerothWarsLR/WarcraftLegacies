@@ -1,5 +1,7 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 {
@@ -15,8 +17,8 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       "The Sentinels have laid claim over Kalimdor. As long as they survive, the Orcs will never be safe.",
       "ReplaceableTextures\\CommandButtons\\BTNGoblinZeppelin.blp")
     {
-      AddQuestItem(new QuestItemLegendDead(LEGEND_AUBERDINE));
-      AddQuestItem(new QuestItemLegendDead(LEGEND_FEATHERMOON));
+      AddQuestItem(new QuestItemLegendDead(LegendSentinels.legendAuberdine));
+      AddQuestItem(new QuestItemLegendDead(LegendSentinels.legendFeathermoon));
       ;
       ;
     }

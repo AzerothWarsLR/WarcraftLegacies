@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 
       FactionFelHorde = Faction.create("Fel Horde", PLAYER_COLOR_GREEN, "|c0020c000","ReplaceableTextures\\CommandButtons\\BTNPitLord.blp");
       f = FactionFelHorde;
-      f.Team = TEAM_LEGION;
+      f.Team = TeamSetup.TeamLegion;
       f.UndefeatedResearch = FourCC("R05L");
       f.StartingGold = 300;
       f.StartingLumber = 600;

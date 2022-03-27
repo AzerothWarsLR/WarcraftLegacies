@@ -46,7 +46,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       }
 
       DestroyGroup(tempGroup);
-      tempGroup = null;
+      
     }
 
     protected override void OnFail()

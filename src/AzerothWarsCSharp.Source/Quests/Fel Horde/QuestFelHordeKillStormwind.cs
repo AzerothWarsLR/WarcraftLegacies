@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 
 namespace AzerothWarsCSharp.Source.Quests.Fel_Horde

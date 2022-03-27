@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Forsaken
 {

@@ -2,7 +2,7 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemLegendReachRect{
+  public class QuestItemLegendReachRect : QuestItemData{
 
     private static region RectToRegion(rect whichRect ){
       region rectRegion = CreateRegion();
@@ -48,7 +48,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       }
     }
 
-    thistype (Legend legend, rect targetRect, string rectName ){
+    public QuesTItemLegendReachRect(Legend legend, rect targetRect, string rectName ){
 
       target = RectToRegion(targetRect);
       this.targetRect = targetRect;

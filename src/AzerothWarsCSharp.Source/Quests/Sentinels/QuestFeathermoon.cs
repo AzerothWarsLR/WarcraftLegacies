@@ -47,7 +47,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       }
 
       DestroyGroup(tempGroup);
-      tempGroup = null;
+      
     }
 
     protected override void OnFail()

@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     "ReplaceableTextures\\CommandButtons\\BTNDemonHunter2blp")
     {
       AddQuestItem(new QuestItemCastSpell(FourCC("A0IK"), true));
-      AddQuestItem(new QuestItemLegendLevel(LEGEND_KAEL, 6));
+      AddQuestItem(new QuestItemLegendLevel(LegendQuelthalas.LegendKael, 6));
       ;
       ;
     }
@@ -33,8 +33,8 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     {
       GREAT_TREACHERY.Progress = QUEST_PROGRESS_FAILED;
       SUMMON_KIL.Progress = QUEST_PROGRESS_FAILED;
-      UnitRemoveAbilityBJ(FourCC("A0IK"), LEGEND_KAEL.Unit);
-      UnitRemoveAbilityBJ(FourCC("A0IF"), LEGEND_KAEL.Unit);
+      UnitRemoveAbilityBJ(FourCC("A0IK"), LegendQuelthalas.LegendKael.Unit);
+      UnitRemoveAbilityBJ(FourCC("A0IF"), LegendQuelthalas.LegendKael.Unit);
     }
   }
 }

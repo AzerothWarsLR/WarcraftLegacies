@@ -6,29 +6,29 @@ namespace AzerothWarsCSharp.Source.Setup
   {
     public static void Setup()
     {
-      ScourgeSetup_OnInit();
-      LegionSetup_OnInit();
-      LordaeronSetup_OnInit();
-      DalaranSetup_OnInit();
-      QuelthalasSetup_OnInit();
-      SentinelsSetup_OnInit();
-      DruidsSetup_OnInit();
-      FelHordeSetup_OnInit();
-      FrostwolfSetup_OnInit();
-      WarsongSetup_OnInit();
-      StormwindSetup_OnInit();
-      IronforgeSetup_OnInit();
-      KultirasSetup_OnInit();
-      NagaSetup_OnInit();
-      GilneasSetup_OnInit();
-      TrollSetup_OnInit();
+      ScourgeSetup.Setup();
+      LegionSetup.Setup();
+      LordaeronSetup.Setup();
+      DalaranSetup.Setup();
+      QuelthalasSetup.Setup();
+      SentinelsSetup.Setup();
+      DruidsSetup.Setup();
+      FelHordeSetup.Setup();
+      FrostwolfSetup.Setup();
+      WarsongSetup.Setup();
+      StormwindSetup.Setup();
+      IronforgeSetup.Setup();
+      KultirasSetup.Setup();
+      NagaSetup.Setup();
+      GilneasSetup.Setup();
+      TrollSetup.Setup();
       GoblinSetup.Setup();
-      TwilightSetup_OnInit();
-      ScarletSetup_OnInit();
-      CthunSetup_OnInit();
-      ForsakenSetup_OnInit();
-      BlackEmpireSetup_OnInit();
-      DraeneiSetup_OnInit();
+      TwilightSetup.Setup();
+      ScarletSetup.Setup();
+      CthunSetup.Setup();
+      ForsakenSetup.Setup();
+      BlackEmpireSetup.Setup();
+      DraeneiSetup.Setup();
     }
   }
 }

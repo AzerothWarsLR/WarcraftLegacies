@@ -11,9 +11,9 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       QuestData chapterThree = QuestIllidanChapterThree.create();
       QuestData chapterTwo = QuestIllidanChapterTwo.create(chapterThree);
       QuestData chapterOne = QuestIllidanChapterOne.create(chapterTwo);
-      FACTION_NAGA.AddQuest(chapterOne);
-      FACTION_NAGA.AddQuest(chapterTwo);
-      FACTION_NAGA.AddQuest(chapterThree);
+      NagaSetup.FactionNaga.AddQuest(chapterOne);
+      NagaSetup.FactionNaga.AddQuest(chapterTwo);
+      NagaSetup.FactionNaga.AddQuest(chapterThree);
 
       EXILE_PATH = QuestExilePath.create();
       MADNESS_PATH = QuestMadnessPath.create();
@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       chapterTwo.Progress = QUEST_PROGRESS_UNDISCOVERED;
       chapterThree.Progress = QUEST_PROGRESS_UNDISCOVERED;
 
-      FACTION_NAGA.StartingQuest = chapterOne;
+      NagaSetup.FactionNaga.StartingQuest = chapterOne;
     }
 
   }

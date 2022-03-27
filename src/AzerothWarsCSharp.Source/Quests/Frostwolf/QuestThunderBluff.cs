@@ -77,7 +77,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
   }
 
   internal DestroyGroup(tempGroup);
-  tempGroup = null;
+  
   }
 }
 

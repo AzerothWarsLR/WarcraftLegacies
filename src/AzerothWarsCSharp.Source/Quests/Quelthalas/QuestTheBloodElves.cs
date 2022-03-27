@@ -4,6 +4,7 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {
@@ -62,7 +63,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       unit u;
       player holderPlayer = Holder.Person.Player;
       Legend triggerLegend = GetTriggerLegend();
-      LEGEND_KAEL.StartingXp = GetHeroXP(LEGEND_ANASTERIAN.Unit);
+      LegendQuelthalas.LegendKael.StartingXp = GetHeroXP(LEGEND_ANASTERIAN.Unit);
       Holder.Obliterate();
       if (Holder.ScoreStatus != SCORESTATUS_DEFEATED)
       {
@@ -76,9 +77,9 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
         DestroyGroup(thistype.SecondChanceUnits);
         SetPlayerTechResearched(Holder.Player, QuestResearchId, 1);
-        LEGEND_KAEL.Spawn(Holder.Player, -11410, 21975, 110);
-        UnitAddItem(LEGEND_KAEL.Unit,
-          CreateItem(FourCC("I00M"), GetUnitX(LEGEND_KAEL.Unit), GetUnitY(LEGEND_KAEL.Unit)));
+        LegendQuelthalas.LegendKael.Spawn(Holder.Player, -11410, 21975, 110);
+        UnitAddItem(LegendQuelthalas.LegendKael.Unit,
+          CreateItem(FourCC("I00M"), GetUnitX(LegendQuelthalas.LegendKael.Unit), GetUnitY(LegendQuelthalas.LegendKael.Unit)));
         if (GetLocalPlayer() == Holder.Player)
           SetCameraPosition(GetRectCenterX(Regions.BloodElfSecondChanceSpawn).Rect,
             GetRectCenterY(gg_rct_BloodElfSecondChanceSpawn));
@@ -118,7 +119,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       }
 
       DestroyGroup(tempGroup);
-      tempGroup = null;
+      
     }
   }
 }

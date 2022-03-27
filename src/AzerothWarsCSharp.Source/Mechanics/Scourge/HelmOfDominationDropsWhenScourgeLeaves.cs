@@ -1,3 +1,7 @@
+using AzerothWarsCSharp.Source.Legends;
+using AzerothWarsCSharp.Source.Setup;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
+
 namespace AzerothWarsCSharp.Source.Mechanics.Scourge
 {
   public class HelmOfDominationDropsWhenScourgeLeaves{

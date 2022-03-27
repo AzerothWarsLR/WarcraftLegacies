@@ -1,30 +1,31 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
+using AzerothWarsCSharp.Source.Setup;
 
 namespace AzerothWarsCSharp.Source.Quests.KulTiras
 {
   public sealed class QuestJoinCrusade : QuestData
   {
-    private static readonly int QUEST_RESEARCH_ID = FourCC("R06U"); //This research is given when the quest is completed
+    private static readonly int QuestResearchId = FourCC("R06U"); //This research is given when the quest is completed
 
-    public QuestJoinCrusade()
+    public QuestJoinCrusade() : base("Join the Crusade",
+      "Daelin Proudmoore sees the plight of the Scarlet Crusade. As fellow human survivors of horrible war, they should join forces with Kul'tiras",
+      "ReplaceableTextures\\CommandButtons\\BTNDivine_Reckoning_Icon.blp")
     {
-      thistype this = thistype.allocate("Join the Crusade",
-        "Daelin Proudmoore sees the plight of the Scarlet Crusade. As fellow human survivors of horrible war, they should join forces with KulFourCC("tiras
-          .", "ReplaceableTextures\\CommandButtons\\BTNDivine_Reckoning_Icon.blp");
       AddQuestItem(new QuestItemCastSpell(FourCC("A0JB"), true));
-      ResearchId = QUEST_RESEARCH_ID;
+      ResearchId = QuestResearchId;
     }
 
 
     protected override string CompletionPopup => "Kul Tiras has joined the Scarlet Crusade";
 
-    protected override string CompletionDescription => "Unlock Order Inquisitor && join the Scarlet Crusade";
+    protected override string CompletionDescription => "Unlock Order Inquisitor and join the Scarlet Crusade";
 
     protected override void OnComplete()
     {
-      UnitRemoveAbilityBJ(FourCC("A0JB"), LEGEND_ADMIRAL.Unit);
-      Holder.Team = TEAM_SCARLET;
+      UnitRemoveAbilityBJ(FourCC("A0JB"), LegendKultiras.LegendAdmiral.Unit);
+      Holder.Team = TeamSetup.TeamScarlet;
     }
   }
 }

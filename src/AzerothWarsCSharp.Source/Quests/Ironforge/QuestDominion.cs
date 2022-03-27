@@ -6,8 +6,6 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
 {
   public sealed class QuestDominion : QuestData
   {
-    private const int RESEARCH_ID = FourCC("R043"); //This research is given when the quest is completed
-
     public QuestDominion() : base("Dwarven Dominion",
       "The Dwarven Dominion must be established before Ironforge can join the war.",
       "ReplaceableTextures\\CommandButtons\\BTNNorthrendCastle.blp")
@@ -18,12 +16,9 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       AddQuestItem(new QuestItemUpgrade(FourCC("h07E"), FourCC("h07E")));
       AddQuestItem(new QuestItemExpire(1462));
       AddQuestItem(new QuestItemSelfExists());
-      ResearchId = RESEARCH_ID;
-      ;
-      ;
+      ResearchId = FourCC("R043");
     }
-
-
+    
     protected override string CompletionPopup =>
       "The Dwarven Empire is re-united again, Ironforge is ready for war again.";
 
@@ -46,7 +41,6 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       }
 
       DestroyGroup(tempGroup);
-      tempGroup = null;
     }
 
     protected override void OnFail()
@@ -58,11 +52,6 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
     {
       GrantDominion(Holder.Player);
       if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\DwarfTheme.mp3");
-    }
-
-    protected override void OnAdd()
-    {
-      Holder.ModObjectLimit(RESEARCH_ID, 1);
     }
   }
 }

@@ -13,8 +13,8 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       "Awakening the Naga will give Illidan the army he needs to achieve his goals.",
       "ReplaceableTextures\\CommandButtons\\BTNNagaMyrmidon.blp")
     {
-      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.StartQuest3.Rect, "the exit"));
-      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.MaelstromAmbient.Rect, "the Maelstrom"));
+      this.AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.StartQuest3.Rect, "the exit"));
+      this.AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.MaelstromAmbient.Rect, "the Maelstrom"));
       AddQuestItem(new QuestItemCastSpell(RitualId, true));
       ;
       ;
@@ -29,17 +29,17 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
     {
       RescueNeutralUnitsInRect(Regions.NagaUnlock2.Rect, Holder.Player);
       RescueNeutralUnitsInRect(Regions.NagaUnlock1.Rect, Holder.Player);
-      FACTION_NAGA.AddQuest(REDEMPTION_PATH);
+      NagaSetup.FactionNaga.AddQuest(REDEMPTION_PATH);
       REDEMPTION_PATH.Progress = QUEST_PROGRESS_UNDISCOVERED;
-      FACTION_NAGA.AddQuest(EXILE_PATH);
+      NagaSetup.FactionNaga.AddQuest(EXILE_PATH);
       EXILE_PATH.Progress = QUEST_PROGRESS_UNDISCOVERED;
-      FACTION_NAGA.AddQuest(MADNESS_PATH);
+      NagaSetup.FactionNaga.AddQuest(MADNESS_PATH);
       MADNESS_PATH.Progress = QUEST_PROGRESS_UNDISCOVERED;
-      //call FACTION_NAGA.AddQuest(ALLIANCE_NAGA)
+      //call NagaSetup.FactionNaga.AddQuest(ALLIANCE_NAGA)
       //set ALLIANCE_NAGA.Progress = QUEST_PROGRESS_UNDISCOVERED
-      FACTION_NAGA.AddQuest(CONQUER_BLACK_TEMPLE);
+      NagaSetup.FactionNaga.AddQuest(CONQUER_BLACK_TEMPLE);
       CONQUER_BLACK_TEMPLE.Progress = QUEST_PROGRESS_UNDISCOVERED;
-      FACTION_NAGA.AddQuest(KILL_FROZEN_THRONE);
+      NagaSetup.FactionNaga.AddQuest(KILL_FROZEN_THRONE);
       KILL_FROZEN_THRONE.Progress = QUEST_PROGRESS_UNDISCOVERED;
       SetUnitInvulnerable(gg_unit_n045_3377, true);
     }

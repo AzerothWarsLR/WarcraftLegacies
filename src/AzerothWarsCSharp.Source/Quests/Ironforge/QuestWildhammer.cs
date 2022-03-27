@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
@@ -12,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       "The Wildhammer dwarves roam freely over the peaks of the Hinterlands. An audience with Magni himself might earn their cooperation.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroGriffonWarrior.blp")
     {
-      AddQuestItem(new QuestItemLegendInRect(LEGEND_MAGNI, Regions.AeriePeak.Rect, "Aerie Peak"));
+      AddQuestItem(new QuestItemLegendInRect(LegendIronforge.LegendMagni, Regions.AeriePeak.Rect, "Aerie Peak"));
       ;
       ;
     }
@@ -42,7 +43,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       }
 
       DestroyGroup(tempGroup);
-      tempGroup = null;
+      
       SetPlayerTechResearched(Holder.Player, ResearchId, 1);
     }
 

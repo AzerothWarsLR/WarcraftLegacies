@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       }
 
       DestroyGroup(tempGroup);
-      tempGroup = null;
+      
     }
 
     protected override void OnFail()

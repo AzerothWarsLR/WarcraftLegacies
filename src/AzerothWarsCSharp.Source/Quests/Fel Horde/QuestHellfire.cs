@@ -1,6 +1,7 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 {
@@ -46,13 +47,13 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       }
 
       DestroyGroup(tempGroup);
-      tempGroup = null;
+      
     }
 
     protected override void OnComplete()
     {
-      UnitRescue(gg_unit_n081_0882, FACTION_FEL_HORDE.Player);
-      UnitRescue(gg_unit_n081_0717, FACTION_FEL_HORDE.Player);
+      UnitRescue(gg_unit_n081_0882, FelHordeSetup.FactionFelHorde.Player);
+      UnitRescue(gg_unit_n081_0717, FelHordeSetup.FactionFelHorde.Player);
       SetPlayerTechResearched(Holder.Player, FourCC("R00P"), 1);
       GrantHellfire(Holder.Player);
       if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\FelTheme.mp3");

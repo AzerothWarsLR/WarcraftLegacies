@@ -13,10 +13,10 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       "Chapter Two: The Skull of Gul'dan, "The mages of Dalaran are hiding a powerful artifact that will grant Illidan unlimited power
       : the Skull of Gul'dan.", "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp")
     {
-      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.IllidanBoat1.Rect, "the escape boat"));
-      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_ILLIDAN, Regions.SkullOfGuldan.Rect,
+      this.AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.IllidanBoat1.Rect, "the escape boat"));
+      this.AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.SkullOfGuldan.Rect,
         "the dungeons of Dalaran"));
-      this.AddQuestItem(new QuestItemLegendHasArtifact(LEGEND_ILLIDAN, ARTIFACT_SKULLOFGULDAN));
+      this.AddQuestItem(new QuestItemLegendHasArtifact(LegendNaga.LegendIllidan, ARTIFACT_SKULLOFGULDAN));
       _questToDiscover = questToDiscover;
 
       ;
@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     protected override void OnComplete()
     {
-      LEGEND_ILLIDAN.UnitType = FourCC("Eevi");
+      LegendNaga.LegendIllidan.UnitType = FourCC("Eevi");
       _questToDiscover.Progress = QUEST_PROGRESS_INCOMPLETE;
     }
   }

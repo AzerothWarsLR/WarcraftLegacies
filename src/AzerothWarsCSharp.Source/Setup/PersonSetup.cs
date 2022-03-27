@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup
 {
@@ -14,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Setup
       p.Faction = LordaeronSetup.FactionLordaeron;
 
       p = Person.create(Player(2));
-      p.Faction = FACTION_QUELTHALAS;
+      p.Faction = QuelthalasSetup.FactionQuelthalas;
 
       p = Person.create(Player(3));
       p.Faction = ScourgeSetup.FactionScourge;
@@ -26,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Setup
       p.Faction = FACTION_WARSONG;
 
       p = Person.create(Player(6));
-      p.Faction = FACTION_FEL_HORDE;
+      p.Faction = FelHordeSetup.FactionFelHorde;
 
       p = Person.create(Player(7));
       p.Faction = FACTION_DALARAN;
@@ -53,7 +54,7 @@ namespace AzerothWarsCSharp.Source.Setup
       p.Faction = FACTION_BLACKEMPIRE;
 
       p = Person.create(Player(15));
-      p.Faction = FACTION_NAGA;
+      p.Faction = NagaSetup.FactionNaga;
 
       p = Person.create(Player(16));
       p.Faction = FACTION_CTHUN;

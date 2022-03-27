@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Quests.Scarlet
 {
@@ -44,7 +45,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       RescueNeutralUnitsInRect(Regions.ScarletAmbient.Rect, Holder.Player);
       WaygateActivateBJ(true, gg_unit_h00T_0786);
       WaygateSetDestinationLocBJ(gg_unit_h00T_0786, GetRectCenter(gg_rct_Scarlet_Monastery_Interior));
-      Holder.Team = TEAM_SCARLET;
+      Holder.Team = TeamSetup.TeamScarlet;
       Holder.Name = "Scarlet";
       Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNSaidan Dathrohan.blp";
       PlayThematicMusicBJ("war3mapImported\\ScarletTheme.mp3");

@@ -38,7 +38,7 @@ namespace AzerothWarsCSharp.Source.Spells
         GroupRemoveUnit(tempGroup, u);
       }
       DestroyGroup(tempGroup);
-      tempGroup = null;
+      
       caster = null;
     }
 

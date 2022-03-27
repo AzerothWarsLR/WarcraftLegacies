@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 
       FactionNaga = Faction.create("Illidan", PLAYER_COLOR_VIOLET, "|cffff00ff","ReplaceableTextures\\CommandButtons\\BTNEvilIllidan.blp");
       f = FactionNaga;
-      f.Team = TEAM_NAGA;
+      f.Team = TeamSetup.TeamNaga;
       f.UndefeatedResearch = FourCC("R02L");
       f.StartingGold = 0;
       f.StartingLumber = 2500;

@@ -1,3 +1,5 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
+
 namespace AzerothWarsCSharp.Source.Researches.Stormwind
 {
   public class TierKnowledgeOfHonorHold{

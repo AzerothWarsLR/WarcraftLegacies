@@ -1,5 +1,7 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Setup;
 
 namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {

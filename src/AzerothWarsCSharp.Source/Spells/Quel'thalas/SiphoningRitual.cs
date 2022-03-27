@@ -127,7 +127,7 @@ namespace AzerothWarsCSharp.Source.Spells.Quel_thalas
       }
 
       DestroyGroup(tempGroup);
-      tempGroup = null;
+      
       startPeriodic();
       
     }

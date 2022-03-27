@@ -2,6 +2,7 @@
 
 
   
+    using AzerothWarsCSharp.MacroTools.FactionSystem;
     using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
     private static readonly int researchId = FourCC("R022");

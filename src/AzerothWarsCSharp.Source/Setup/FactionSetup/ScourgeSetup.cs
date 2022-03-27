@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 
       FactionScourge = Faction.create("Scourge", PLAYER_COLOR_PURPLE, "|c00540081","ReplaceableTextures\\CommandButtons\\BTNRevenant.blp");
       f = FactionScourge;
-      f.Team = TEAM_LEGION;
+      f.Team = TeamSetup.TeamLegion;
       f.UndefeatedResearch = FourCC("R05K");
       f.StartingGold = 150;
       f.StartingLumber = 500;

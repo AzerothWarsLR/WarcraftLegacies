@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
         GroupRemoveUnit(tempGroup, u);
       }
       DestroyGroup(tempGroup);
-      tempGroup = null;
+      
       u = null;
     }
 

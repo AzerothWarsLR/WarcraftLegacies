@@ -39,7 +39,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       }
 
       DestroyGroup(tempGroup);
-      tempGroup = null;
+      
     }
 
     protected override void OnFail()

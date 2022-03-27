@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 
       FACTION_FORSAKEN = Faction.create("Cult", PLAYER_COLOR_LIGHT_BLUE, "|cff8080ff","ReplaceableTextures\\CommandButtons\\BTNAcolyte.blp");
       f = FACTION_FORSAKEN;
-      f.Team = TEAM_LEGION;
+      f.Team = TeamSetup.TeamLegion;
       f.StartingGold = 0;
       f.StartingLumber = 100;
 

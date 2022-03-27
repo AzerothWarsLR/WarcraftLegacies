@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
@@ -16,8 +17,6 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
     {
       AddQuestItem(new QuestItemResearch(ResearchId, FourCC("h076")));
       AddQuestItem(new QuestItemSelfExists());
-      ;
-      ;
     }
 
     protected override string CompletionPopup =>
@@ -27,29 +26,26 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 
     private static void GrantToPlayer(player whichPlayer)
     {
-      unit u;
       while (true)
       {
-        u = FirstOfGroup(_theramoreUnits);
+        unit u = FirstOfGroup(_theramoreUnits);
         if (u == null) break;
         UnitRescue(u, whichPlayer);
         GroupRemoveUnit(_theramoreUnits, u);
       }
 
       DestroyGroup(_theramoreUnits);
-      u = null;
-      _theramoreUnits = null;
     }
 
     protected override void OnFail()
     {
-      thistype.GrantToPlayer(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GrantToPlayer(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       Holder.ModObjectLimit(ResearchId, -Faction.UNLIMITED);
     }
 
     protected override void OnComplete()
     {
-      thistype.GrantToPlayer(Holder.Player);
+      GrantToPlayer(Holder.Player);
       Holder.ModObjectLimit(ResearchId, -Faction.UNLIMITED);
     }
 
@@ -60,14 +56,12 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 
     private static void OnInit()
     {
-      group tempGroup;
-      unit u;
-      tempGroup = CreateGroup();
+      @group tempGroup = CreateGroup();
       _theramoreUnits = CreateGroup();
       GroupEnumUnitsInRect(tempGroup, Regions.Theramore.Rect, null);
       while (true)
       {
-        u = FirstOfGroup(tempGroup);
+        unit u = FirstOfGroup(tempGroup);
         if (u == null) break;
         SetUnitInvulnerable(u, true);
         SetUnitOwner(u, Player(PLAYER_NEUTRAL_PASSIVE), true);

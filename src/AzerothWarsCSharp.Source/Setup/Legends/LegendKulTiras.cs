@@ -3,33 +3,39 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Legends
 {
-  public static class LegendKultiras{
+  public static class LegendKultiras
+  {
+    public static Legend LegendAdmiral { get; private set; }
+    public static Legend LegendLucille { get; private set; }
+    public static Legend LegendKatherine { get; private set; }
+    public static Legend LegendBoralus { get; private set; }
 
-  
-    public static Legend LEGEND_ADMIRAL { get; private set; }
-    public static Legend LEGEND_LUCILLE { get; private set; }
-    public static Legend LEGEND_KATHERINE { get; private set; }
-    public static Legend LEGEND_BORALUS { get; private set; }
-  
 
-    public static void Setup( ){
-      LEGEND_ADMIRAL = new Legend();
-      LEGEND_ADMIRAL.UnitType = FourCC("Hapm");
-      LEGEND_ADMIRAL.Essential = true;
+    public static void Setup()
+    {
+      LegendAdmiral = new Legend
+      {
+        UnitType = FourCC("Hapm"),
+        Essential = true
+      };
 
-      LEGEND_LUCILLE = new Legend();
-      LEGEND_LUCILLE.UnitType = FourCC("E016");
-      LEGEND_LUCILLE.StartingXp = 2800;
+      LegendLucille = new Legend
+      {
+        UnitType = FourCC("E016"),
+        StartingXp = 2800
+      };
 
-      LEGEND_KATHERINE = new Legend();
-      LEGEND_KATHERINE.UnitType = FourCC("H05L");
-      LEGEND_KATHERINE.StartingXp = 1200;
+      LegendKatherine = new Legend
+      {
+        UnitType = FourCC("H05L"),
+        StartingXp = 1200
+      };
 
-      LEGEND_BORALUS = new Legend();
-      LEGEND_BORALUS.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h046"));
-      LEGEND_BORALUS.DeathMessage = "Boralus Keep has fallen";
-
+      LegendBoralus = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h046")),
+        DeathMessage = "Boralus Keep has fallen"
+      };
     }
-
   }
 }
