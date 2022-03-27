@@ -29,7 +29,6 @@ namespace AzerothWarsCSharp.Source.Setup
       CheatTele.Setup();
       CheatTime.Setup();
       CheatUncontrol.Setup();
-      CheatUnlock.Setup();
       CheatVision.Setup();
     }
   }
