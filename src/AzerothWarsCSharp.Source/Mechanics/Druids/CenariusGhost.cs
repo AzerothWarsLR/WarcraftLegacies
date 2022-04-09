@@ -8,10 +8,10 @@ namespace AzerothWarsCSharp.Source.Mechanics.Druids
   {
     private static void Dies(object? sender, Legend legend)
     {
-      var cenarius = LegendDruids.legendCenarius;
-      if (cenarius == legend && legend.UnitType == LegendDruids.unittypeCenariusAlive)
+      var cenarius = LegendDruids.LegendCenarius;
+      if (cenarius == legend && legend.UnitType == LegendDruids.UnittypeCenariusAlive)
       {
-        cenarius.UnitType = LegendDruids.unittypeCenariusGhost;
+        cenarius.UnitType = LegendDruids.UnittypeCenariusGhost;
         cenarius.PermaDies = false;
         cenarius.ClearUnitDependencies();
         cenarius.Spawn(DruidsSetup.factionDruids.Player, Regions.Cenarius.Center.X, Regions.Cenarius.Center.Y, 270);
@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Druids
     public static void Setup()
     {
       Legend.OnLegendPermaDeath += Dies;
-      LegendDruids.legendCenarius.DeathMessage =
+      LegendDruids.LegendCenarius.DeathMessage =
         "Cenarius, Demigod of the Night Elves, has fallen. His spirit lives on, a mere echo of his former self.";
     }
   }

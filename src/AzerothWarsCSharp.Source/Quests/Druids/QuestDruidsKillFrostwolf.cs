@@ -1,42 +1,38 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Druids
 {
   public sealed class QuestDruidsKillFrostwolf : QuestData
   {
-    private static readonly int ResearchId = FourCC("R044");
-    private static readonly int ElementalGuardianId = FourCC("e00X");
-    private GetObjectName(ELEMENTAL_GUARDIAN_ID);
-
+    private const int RESEARCH_ID = Constants.UPGRADE_QUEST_COMPLETED_NATURAL_CONTEST_DRUIDS;
+    private const int ELEMENTAL_GUARDIAN_ID = Constants.UNIT_ELEMENTAL_GUARDIAN_DRUIDS_DEMI;
 
     protected override string CompletionPopup =>
-      "The Frostwolves have been driven from Kalimdor. Their departure reveals the existence of a powerful nature spirit that now heeds the of the Druids.";
+      "The Frostwolves have been driven from Kalimdor. Their departure reveals the existence of a powerful nature spirit that now heeds the call of the Druids.";
 
-    protected override string RewardDescription =>
-    return "The demihero " +
+    protected override string RewardDescription => "The demihero " + GetObjectName(ELEMENTAL_GUARDIAN_ID);
+
+    protected override void OnComplete()
+    {
+      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
+      DisplayUnitTypeAcquired(Holder.Player, ELEMENTAL_GUARDIAN_ID,
+        "You can now train the Elemental Guardian from the Altar of Elders.");
+    }
+
+    protected override void OnAdd()
+    {
+      Holder.ModObjectLimit(ELEMENTAL_GUARDIAN_ID, 1);
+      Holder.ModObjectLimit(RESEARCH_ID, Faction.UNLIMITED);
+    }
+
+    public QuestDruidsKillFrostwolf() : base("Natural Contest",
+      "The Frostwolf Clan has arrived on the shores of Kalimdor. Though their respect of the wild spirits is to be admired, their presence cannot be tolerated.",
+      "ReplaceableTextures\\CommandButtons\\BTNHeroTaurenChieftain.blp")
+    {
+      AddQuestItem(new QuestItemLegendDead(LegendFrostwolf.LegendThunderbluff));
+    }
   }
-
-  protected override void OnComplete(){
-  internal SetPlayerTechResearched(this.Holder.Player, RESEARCH_ID, 1);
-  internal DisplayUnitTypeAcquired(this.Holder.Player, ELEMENTAL_GUARDIAN_ID,
-  "You can now train the Elemental Guardian from the Altar of Elders.");
-  }
-
-  protected override void OnAdd( ){
-  this.Holder.ModObjectLimit(ELEMENTAL_GUARDIAN_ID, 1);
-  this.Holder.ModObjectLimit(RESEARCH_ID, Faction.UNLIMITED);
-  }
-
-  public QuestDruidsKillFrostwolf ( ) : base("Natural Contest",
-  "The Frostwolf Clan has arrived on the shores of Kalimdor. Though their respect of the wild spirits is to be admired, their presence can!be tolerated."
-  , "ReplaceableTextures\\CommandButtons\\BTNHeroTaurenChieftain.blp"){
-  this.
-  internal AddQuestItem(
-
-  internal new QuestItemLegendDead(LEGEND_THUNDERBLUFF));
-    
-  }
-}
-
 }

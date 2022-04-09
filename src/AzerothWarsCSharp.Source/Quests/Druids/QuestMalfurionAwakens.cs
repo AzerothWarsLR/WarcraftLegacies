@@ -1,104 +1,55 @@
-//Anyone on the Night Elves team approaches Moonglade with a unit with the Horn of Cenarius,
-//Causing Malfurion to spawn.
-
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.Wrappers;
+using AzerothWarsCSharp.Source.Legends;
+using AzerothWarsCSharp.Source.Setup;
+using WCSharp.Shared.Data;
 
 namespace AzerothWarsCSharp.Source.Quests.Druids
 {
   public sealed class QuestMalfurionAwakens : QuestData
   {
-    private static readonly int HornOfCenarius = FourCC("cnhn");
-    private static readonly int Ghanir = FourCC("I00C");
+    private readonly List<unit> _moongladeUnits = new();
 
-
-    private group _moongladeUnits;
-
-    public QuestMalfurionAwakens() : base("Awakening of Stormrage",
-      "Ever since the War of the Ancients ten thousand years ago, Malfurion Stormrage && his druids have slumbered within the Barrow Den. Now, their help is required once again.",
+    public QuestMalfurionAwakens(Rectangle moonglade) : base("Awakening of Stormrage",
+      "Ever since the War of the Ancients ten thousand years ago, Malfurion Stormrage and his druids have slumbered within the Barrow Den. Now, their help is required once again.",
       "ReplaceableTextures\\CommandButtons\\BTNFurion.blp")
     {
-      AddQuestItem(new QuestItemAcquireArtifact(ARTIFACT_HORNOFCENARIUS));
-      AddQuestItem(new QuestItemArtifactInRect(ARTIFACT_HORNOFCENARIUS, Regions.Moonglade.Rect, "The Barrow Den"));
+      AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactHornofcenarius));
+      AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.ArtifactHornofcenarius, Regions.Moonglade.Rect, "The Barrow Den"));
       AddQuestItem(new QuestItemExpire(1440));
       AddQuestItem(new QuestItemSelfExists());
-      ;
-      ;
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(moonglade).EmptyToList())
+      {
+        SetUnitInvulnerable(unit, true);
+        _moongladeUnits.Add(unit);
+      }
     }
-
-
+    
     protected override string CompletionPopup => "Malfurion has emerged from his deep slumber in the Barrow Den.";
 
-    protected override string RewardDescription => "Gain the hero Malfurion && the artifact GFourCC(hanir";
-
-    private void GiveMoonglade(player whichPlayer)
-    {
-      group tempGroup = CreateGroup();
-      unit u;
-
-      //Transfer all Neutral Passive units in Moonglade
-      GroupEnumUnitsInRect(tempGroup, Regions.MoongladeVillage.Rect, null);
-      u = FirstOfGroup(tempGroup);
-      while (true)
-      {
-        if (u == null) break;
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) UnitRescue(u, whichPlayer);
-        GroupRemoveUnit(tempGroup, u);
-        u = FirstOfGroup(tempGroup);
-      }
-
-      //Cleanup
-      DestroyGroup(tempGroup);
-      
-    }
+    protected override string RewardDescription => "Gain the hero Malfurion and the artifact G'hanir";
 
     protected override void OnFail()
     {
-      GiveMoonglade(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _moongladeUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
     {
-      GiveMoonglade(Holder.Player);
+      foreach (var unit in _moongladeUnits) UnitRescue(unit, Holder.Player);
       if (LegendDruids.LegendMalfurion.Unit == null)
       {
-        LegendDruids.LegendMalfurion.Spawn(Holder.Player, GetRectCenterX(Regions.Moonglade), GetRectCenterY(gg_rct_Moonglade).Rect,
+        LegendDruids.LegendMalfurion.Spawn(Holder.Player, Regions.Moonglade.Center.X, Regions.Moonglade.Center.Y,
           270);
         SetHeroLevel(LegendDruids.LegendMalfurion.Unit, 3, false);
-        UnitAddItemSafe(LegendDruids.LegendMalfurion.Unit, ARTIFACT_GHANIR.Item);
+        UnitAddItemSafe(LegendDruids.LegendMalfurion.Unit, ArtifactSetup.ArtifactGhanir.Item);
       }
       else
       {
-        SetItemPosition(ARTIFACT_GHANIR.Item, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()));
+        SetItemPosition(ArtifactSetup.ArtifactGhanir.Item, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()));
       }
-    }
-
-
-    public static void Setup()
-    {
-      //Setup initially invulnerable and hidden group at Moonglade
-      group tempGroup = CreateGroup();
-      unit u;
-      var i = 0;
-      _moongladeUnits = CreateGroup();
-      GroupEnumUnitsInRect(tempGroup, Regions.MoongladeVillage.Rect, null);
-      while (true)
-      {
-        u = FirstOfGroup(tempGroup);
-        if (u == null) break;
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          SetUnitInvulnerable(u, true);
-          GroupAddUnit(_moongladeUnits, u);
-        }
-
-        GroupRemoveUnit(tempGroup, u);
-        i = i + 1;
-      }
-
-      DestroyGroup(tempGroup);
-      
-      //Add quest
     }
   }
 }

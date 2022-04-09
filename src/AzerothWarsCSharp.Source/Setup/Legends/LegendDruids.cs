@@ -5,18 +5,18 @@ namespace AzerothWarsCSharp.Source.Legends
 {
   public static class LegendDruids
   {
-    public static Legend legendCenarius;
-    public static Legend legendMalfurion;
-    public static Legend legendFandral;
-    public static Legend legendUrsoc;
-    public static Legend legendTortolla;
-    public static Legend legendNordrassil;
-    public static int unittypeCenariusAlive = FourCC("Ecen");
-    public static int unittypeCenariusGhost = FourCC("E00H");
+    public static Legend LegendCenarius { get; private set; }
+    public static Legend LegendMalfurion { get; private set; }
+    public static Legend LegendFandral { get; private set; }
+    public static Legend LegendUrsoc { get; private set; }
+    public static Legend LegendTortolla { get; private set; }
+    public static Legend LegendNordrassil { get; private set; }
+    public static int UnittypeCenariusAlive { get; private set; } = FourCC("Ecen");
+    public static int UnittypeCenariusGhost { get; private set; } = FourCC("E00H");
     
     public static void Setup()
     {
-      Legend.Register(legendCenarius = new Legend
+      Legend.Register(LegendCenarius = new Legend
       {
         UnitType = FourCC("Ecen"),
         PermaDies = true,
@@ -27,31 +27,31 @@ namespace AzerothWarsCSharp.Source.Legends
         StartingXp = 1000
       });
 
-      Legend.Register(legendMalfurion = new Legend
+      Legend.Register(LegendMalfurion = new Legend
       {
         UnitType = FourCC("Efur"),
         Essential = true
       });
 
-      Legend.Register( legendFandral = new Legend
+      Legend.Register( LegendFandral = new Legend
       {
         UnitType = FourCC("E00K")
       });
 
-      Legend.Register(legendUrsoc = new Legend
+      Legend.Register(LegendUrsoc = new Legend
       {
         UnitType = FourCC("E00A"),
         StartingXp = 7000
       });
 
-      Legend.Register(legendNordrassil = new Legend
+      Legend.Register(LegendNordrassil = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("n002")),
         Capturable = true,
         IsCapital = true
       });
 
-      Legend.Register(legendTortolla = new Legend
+      Legend.Register(LegendTortolla = new Legend
       {
         UnitType = FourCC("H04U"),
         StartingXp = 1800

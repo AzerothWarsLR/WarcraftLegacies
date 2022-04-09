@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       "The World Tree, Nordrassil, is the Night Elves' source of immortality. Capture it to cripple them permanently.",
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendDruids.legendNordrassil, false));
+      AddQuestItem(new QuestItemControlLegend(LegendDruids.LegendNordrassil, false));
       AddQuestItem(new QuestItemLegendNotPermanentlyDead(LegendWarsong.LegendGrom));
     }
   }

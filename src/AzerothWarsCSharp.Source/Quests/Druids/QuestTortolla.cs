@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       SetUnitInvulnerable(_sleepingTortolla, true);
       AddSpecialEffectTarget("Abilities\\Spells\\Undead\\Sleep\\SleepTarget.mdl", _sleepingTortolla,
         "overhead");
-      SetHeroXP(_sleepingTortolla, LegendDruids.legendTortolla.StartingXp, false);
+      SetHeroXP(_sleepingTortolla, LegendDruids.LegendTortolla.StartingXp, false);
     }
 
     protected override string CompletionPopup => "Tortolla has finally awoken from his ancient slumber.";

@@ -3,20 +3,18 @@ using AzerothWarsCSharp.Source.Quests.Druids;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
-  public class DruidsQuestSetup{
+  public static class DruidsQuestSetup{
 
-    public static void Setup( ){
-      //Setup
-      QuestData newQuest = FACTION_DRUIDS.AddQuest(QuestMalfurionAwakens.create());
-      FACTION_DRUIDS.StartingQuest = newQuest;
-      //Early duel
-      FACTION_DRUIDS.AddQuest(QuestAshenvale.create());
-      FACTION_DRUIDS.AddQuest(QuestDruidsKillFrostwolf.create());
-      FACTION_DRUIDS.AddQuest(QuestDruidsKillWarsong.create());
-      //Misc
-      FACTION_DRUIDS.AddQuest(QuestAndrassil.create());
-      FACTION_DRUIDS.AddQuest(QuestTortolla.create());
-      //call FACTION_DRUIDS.AddQuest(QuestJoinAllianceDruid.create())
+    public static void Setup( )
+    {
+      var druids = FactionSetup.DruidsSetup.factionDruids;
+      QuestData newQuest = druids.AddQuest(new QuestMalfurionAwakens(Regions.Moonglade));
+      druids.StartingQuest = newQuest;
+      druids.AddQuest(new QuestAshenvale());
+      druids.AddQuest(new QuestDruidsKillFrostwolf());
+      druids.AddQuest(new QuestDruidsKillWarsong());
+      druids.AddQuest(new QuestAndrassil());
+      druids.AddQuest(new QuestTortolla());
     }
 
   }
