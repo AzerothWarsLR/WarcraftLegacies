@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     public static event EventHandler<QuestItemData> ProgressChanged;
 
     private QuestItemData _parentQuestItem;
-    private int _progress = QuestData.QuestProgress.Incomplete;
+    private QuestProgress _progress = QuestProgress.Incomplete;
     private string _description = "";
     private minimapicon _minimapIcon;
     private effect _mapEffect; //The visual effect that appears on the map, usually a Circle of Power
@@ -75,7 +75,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         {
           switch (value)
           {
-            case QuestData.QuestProgress.Incomplete:
+            case QuestProgress.Incomplete:
             {
               QuestItemSetCompleted(QuestItem, false);
               if (GetLocalPlayer() == Holder.Player)
@@ -86,7 +86,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
               ShowSync();
               break;
             }
-            case QuestData.QuestProgress.Complete:
+            case QuestProgress.Complete:
             {
               QuestItemSetCompleted(QuestItem, true);
               if (GetLocalPlayer() == Holder.Player)
@@ -97,8 +97,10 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
               HideSync();
               break;
             }
-            case QuestData.QUEST_PROGRESS_UNDISCOVERED:
-            case QuestData.QuestProgress.Failed:
+            case QuestProgress.Undiscovered:
+              QuestItemSetCompleted(QuestItem, false);
+              break;
+            case QuestProgress.Failed:
               QuestItemSetCompleted(QuestItem, false);
               break;
           }
@@ -131,8 +133,8 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     //Shows the local aspects of this QuestItem, namely the minimap icon.
     public void ShowLocal()
     {
-      if (Progress == QuestData.QuestProgress.Incomplete &&
-          ParentQuest.Progress == QuestData.QuestProgress.Incomplete)
+      if (Progress == QuestProgress.Incomplete &&
+          ParentQuest.Progress == QuestProgress.Incomplete)
       {
         if (_minimapIcon == null && X != 0 && Y != 0)
         {
@@ -149,7 +151,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     //Shows the synchronous aspects of this QuestItem, namely the visible target circle.
     public void ShowSync()
     {
-      if (Progress == QuestData.QuestProgress.Incomplete && ParentQuest.Progress == QuestData.QuestProgress.Incomplete)
+      if (Progress == QuestProgress.Incomplete && ParentQuest.Progress == QuestProgress.Incomplete)
       {
         string effectPath;
         if (MapEffectPath != null && _mapEffect == null)
