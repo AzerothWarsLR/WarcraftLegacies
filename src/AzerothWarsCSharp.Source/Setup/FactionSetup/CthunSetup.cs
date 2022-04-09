@@ -4,13 +4,12 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
   public class CthunSetup
   {
-    public static Faction factionCthun;
-
-
+    public static Faction FactionCthun { get; private set; }
+    
     public static void Setup()
     {
       Faction f;
-      factionCthun = Faction.create("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cFFFFDF80",
+      FactionCthun = Faction.create("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cFFFFDF80",
         "ReplaceableTextures\\CommandButtons\\BTNCthunIcon.blp");
       f = factionCthun;
       f.Team = TEAM_OLDGOD;

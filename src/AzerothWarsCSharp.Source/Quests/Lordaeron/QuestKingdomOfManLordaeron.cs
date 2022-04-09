@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     protected override string CompletionPopup =>
       "The people of the Eastern Kingdoms have been united under the banner of Lordaeron. Long live High King Arthas Menethil!";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "You gain a research improving all of your units, the Crowns of Lordaeron and Stormwind are merged, and Arthas becomes High King";
 
 

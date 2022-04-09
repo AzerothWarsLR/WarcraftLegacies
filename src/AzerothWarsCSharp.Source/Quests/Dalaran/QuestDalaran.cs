@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     protected override string CompletionPopup =>
       "Dalaran outskirs are now secure, the mages will join " + Holder.Team.Name + ".";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Control of all units in Dalaran && enables Antonidas to be trained at the Altar";
 
     private void GrantDalaran(player whichPlayer)

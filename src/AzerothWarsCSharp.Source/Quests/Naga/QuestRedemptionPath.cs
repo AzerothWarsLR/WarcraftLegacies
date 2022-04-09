@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
     protected override string CompletionPopup =>
       "Nazjatar && the Aetheneum is now under the influence of the Night Elves.";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Control of all units in the Aetheneum. Join the Night Elves && enable to train Altruis.";
 
 

@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
 
     protected override string CompletionPopup => "ChoFourCC(gall has found the legendary sword, Thunderfury";
 
-    protected override string CompletionDescription => "The legendary sword Thunderfury";
+    protected override string RewardDescription => "The legendary sword Thunderfury";
 
     protected override void OnComplete()
     {

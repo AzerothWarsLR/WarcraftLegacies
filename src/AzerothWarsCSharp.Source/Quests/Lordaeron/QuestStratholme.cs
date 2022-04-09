@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     protected override string CompletionPopup =>
       "Stratholme has been liberated, and its military is now free to assist the " + Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => "Control of all units in Stratholme";
+    protected override string RewardDescription => "Control of all units in Stratholme";
 
     protected override void OnFail()
     {

@@ -8,11 +8,14 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
   {
     public static void Setup()
     {
-      var cthun = CthunSetup.factionCthun;
-      cthun.StartingQuest = cthun.AddQuest(new QuestTitanJailors());
+      var cthun = CthunSetup.FactionCthun;
+      cthun.StartingQuest = cthun.AddQuest(new QuestTitanJailors(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_ENTRANCE_PORTAL)));
       cthun.AddQuest(new QuestAwakenCthun(PreplacedUnitSystem.GetUnitByUnitType(FourCC("U00R"))));
       cthun.AddQuest(new QuestEndlessRanks());
-      cthun.AddQuest(new QuestGatesofAhnqiraj());
+      cthun.AddQuest(new QuestGatesofAhnqiraj(
+        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_ENTRANCE_PORTAL),
+        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_ENTRANCE_PORTAL),
+        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_GATES_OF_AHN_QIRAJ_CLOSED)));
       cthun.AddQuest(new QuestDragonSoul());
       cthun.AddQuest(new QuestWyrmrestTemple());
     }

@@ -1,23 +1,37 @@
+using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.Source.Quests.Draenei;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
-  public class DraeneiQuestSetup{
+  public class DraeneiQuestSetup
+  {
+    public static QuestData SHIP_ARGUS { get; private set; }
 
-    public static void Setup( ){
-      //Setup
-      QuestData newQuest = FACTION_DRAENEI.AddQuest(QuestExiled.create());
-      FACTION_DRAENEI.StartingQuest = newQuest;
-      //Early duel
-      FACTION_DRAENEI.AddQuest(QuestFirstWave.create());
-      FACTION_DRAENEI.AddQuest(QuestSurvivorsShattrah.create());
-      FACTION_DRAENEI.AddQuest(QuestBrokenOne.create());
-      FACTION_DRAENEI.AddQuest(QuestTriumvirate.create());
+    public static void Setup()
+    {
+      var draenei = DraeneiSetup.Draenei;
+      
+      var questExiled = new QuestExiled
+      {
+        GoldMine = PreplacedUnitSystem.GetUnitByUnitType(FourCC("ngol")),
+        KilledOnFail = new List<unit>
+        {
+          PreplacedUnitSystem.GetUnitByUnitType(FourCC("o02P")),
+          PreplacedUnitSystem.GetUnitByUnitType(FourCC("o02P"))
+        },
+        TheExodar = PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_THE_EXODAR)
+      };
+      draenei.AddQuest(questExiled);
+      draenei.StartingQuest = questExiled;
+      draenei.AddQuest(new QuestFirstWave());
+      draenei.AddQuest(new QuestSurvivorsShattrah());
+      draenei.AddQuest(new QuestBrokenOne());
+      draenei.AddQuest(new QuestTriumvirate());
 
-      SHIP_ARGUS = QuestShipArgus.create();
-      //Misc
+      SHIP_ARGUS = new QuestShipArgus();
     }
-
   }
 }

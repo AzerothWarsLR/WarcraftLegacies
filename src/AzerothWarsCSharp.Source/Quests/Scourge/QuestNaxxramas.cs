@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     protected override string CompletionPopup =>
       "The Naxxramas has now been raised && under the control of the " + Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => "Control of all units in Naxxramas";
+    protected override string RewardDescription => "Control of all units in Naxxramas";
 
     private static void GrantNaxxramas(player whichPlayer)
     {

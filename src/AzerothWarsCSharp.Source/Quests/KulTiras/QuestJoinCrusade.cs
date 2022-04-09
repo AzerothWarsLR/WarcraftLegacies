@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 
     protected override string CompletionPopup => "Kul Tiras has joined the Scarlet Crusade";
 
-    protected override string CompletionDescription => "Unlock Order Inquisitor and join the Scarlet Crusade";
+    protected override string RewardDescription => "Unlock Order Inquisitor and join the Scarlet Crusade";
 
     protected override void OnComplete()
     {

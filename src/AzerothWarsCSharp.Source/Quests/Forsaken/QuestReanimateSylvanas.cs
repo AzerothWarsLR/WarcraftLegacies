@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     protected override string CompletionPopup => "Quel'"
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
     return "You can summon Sylvanas from the " +
 
     private thalas Has

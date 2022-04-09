@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
 
     protected override string CompletionPopup => "The Cultists have been eliminated. Our towns are now safe.";
 
-    protected override string CompletionDescription => "Gain 4000 lumber && 500 gold";
+    protected override string RewardDescription => "Gain 4000 lumber && 500 gold";
 
     protected override void OnComplete()
     {

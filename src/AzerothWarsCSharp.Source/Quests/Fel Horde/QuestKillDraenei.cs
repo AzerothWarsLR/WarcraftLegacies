@@ -2,6 +2,7 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Legends;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 {
@@ -13,32 +14,28 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     {
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n09X"))));
       AddQuestItem(new QuestItemLegendDead(LegendDraenei.LegendExodarship));
-      AddQuestItem(QuestItemSelfExists);
-      ;
-      ;
+      AddQuestItem(new QuestItemSelfExists());
     }
-
-
+    
     protected override string CompletionPopup =>
-      "The Draenei have been eliminated from Outland && their gold mine is ours.";
+      "The Draenei have been eliminated from Outland and their gold mine is ours.";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "The Draenei rich gold mine in Tempest Keep, the faster we destroy them, the more gold will be left";
 
     protected override void OnComplete()
     {
       group tempGroup = CreateGroup();
-      unit u;
 
       AdjustPlayerStateBJ(500, Holder.Player, PLAYER_STATE_RESOURCE_GOLD);
       AdjustPlayerStateBJ(500, Holder.Player, PLAYER_STATE_RESOURCE_LUMBER);
 
       GroupEnumUnitsInRect(tempGroup, Regions.InstanceOutland.Rect, null);
-      u = FirstOfGroup(tempGroup);
+      unit u = FirstOfGroup(tempGroup);
       while (true)
       {
         if (u == null) break;
-        if (GetOwningPlayer(u) == FACTION_DRAENEI.Player)
+        if (GetOwningPlayer(u) == DraeneiSetup.Draenei.Player)
           if (IsUnitType(u, UNIT_TYPE_STRUCTURE) && !IsUnitType(u, UNIT_TYPE_ANCIENT))
             KillUnit(u);
         GroupRemoveUnit(tempGroup, u);

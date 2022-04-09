@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     protected override string CompletionPopup => "Galen Trollbane has pledged his forces to StormwindFourCC(s cause.";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Control of all units at Stromgarde, the artifact TrolFourCC(kalar, && you can summon the hero Galen Trollbane from the Altar of Kings";
 
     private void GiveStromgarde(player whichPlayer)

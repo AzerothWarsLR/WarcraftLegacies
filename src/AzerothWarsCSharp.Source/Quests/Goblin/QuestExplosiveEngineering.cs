@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
   {
     protected override string CompletionPopup => "Gazlowee is now trainable";
 
-    protected override string CompletionDescription => "Gazlowee is trainable at the altar";
+    protected override string RewardDescription => "Gazlowee is trainable at the altar";
 
     public QuestExplosiveEngineering() : base("Explosive Engineering",
       "The Goblin chief engineer, Gazlowee, is overseeing the construction of the overseas oil platforms.",

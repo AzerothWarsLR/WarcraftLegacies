@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     protected override string CompletionPopup =>
       "StormwindFourCC(s annihilation has left behind the corpses of thousands of elite knights. As occurred during the Second War, these corpses have been filled with the souls of slain Shadow Council members, recreating the indominatable order of Death Knights.";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
     return "Teron Gorefiend can be trained at the altar && learn to train " +
   }
 

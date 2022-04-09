@@ -1,47 +1,39 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Quests.Naga
 {
   public sealed class QuestExilePath : QuestData
   {
-    private const int RESEARCH_ID = FourCC("R063"); //This research is required to complete the quest
-    private static readonly int QUEST_RESEARCH_ID = FourCC("R008"); //This research is given when the quest is completed
-
-    private Global()
-    {
-      return true;
-    }
-
     public QuestExilePath() : base("A Parting of Ways",
       "Illidan must go his own way to find power, && Outland is the perfect place to acquire it.",
       "ReplaceableTextures\\CommandButtons\\BTNIllidanDemonicPower.blp")
     {
-      AddQuestItem(new QuestItemResearch(RESEARCH_ID, FourCC("n055")));
+      AddQuestItem(new QuestItemResearch(FourCC("R063"), FourCC("n055")));
       AddQuestItem(new QuestItemControlLegend(LegendNaga.LegendIllidan, true));
       AddQuestItem(new QuestItemSelfExists());
-      this.AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.NazjatarHidden.Rect, "Nazjatar"));
-      ResearchId = QUEST_RESEARCH_ID;
-      ;
-      ;
+      AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.NazjatarHidden.Rect, "Nazjatar"));
+      ResearchId = FourCC("R008");
+      Global = true;
     }
 
     protected override string CompletionPopup =>
       "Illidan has invaded Outland && has allied himself with the Draenei Broken Ones.";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Open a portal to Outland, grants you the Draenei village near it, enables you to train Akama, Najentus && Draenei units, grants you 300 food limit && grants you 800 gold";
 
 
-    private void GrantAkama(player whichPlayer)
+    private static void GrantAkama(player whichPlayer)
     {
       group tempGroup = CreateGroup();
-      unit u;
 
       //Transfer all Neutral Passive units in Exiled
       GroupEnumUnitsInRect(tempGroup, Regions.AkamaUnlock.Rect, null);
-      u = FirstOfGroup(tempGroup);
+      unit u = FirstOfGroup(tempGroup);
       while (true)
       {
         if (u == null) break;
@@ -53,9 +45,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       DestroyGroup(tempGroup);
       
     }
-
-    bool operator
-
+    
     protected override void OnComplete()
     {
       GrantAkama(Holder.Player);

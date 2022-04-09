@@ -39,7 +39,7 @@ namespace AzerothWarsCSharp.Source.Setup
       p.Faction = FACTION_FORSAKEN;
 
       p = Person.create(Player(10));
-      p.Faction = FACTION_STORMWIND;
+      p.Faction = StormwindSetup.Stormwind;
 
       p = Person.create(Player(11));
       p.Faction = FACTION_DRUIDS;
@@ -48,7 +48,7 @@ namespace AzerothWarsCSharp.Source.Setup
       p.Faction = ScarletSetup.FactionScarlet;
 
       p = Person.create(Player(13));
-      p.Faction = FACTION_DRAENEI;
+      p.Faction = DraeneiSetup.Draenei;
 
       p = Person.create(Player(14));
       p.Faction = FACTION_BLACKEMPIRE;
@@ -57,7 +57,7 @@ namespace AzerothWarsCSharp.Source.Setup
       p.Faction = NagaSetup.FactionNaga;
 
       p = Person.create(Player(16));
-      p.Faction = FACTION_CTHUN;
+      p.Faction = CthunSetup.FactionCthun;
 
       p = Person.create(Player(17));
       p.Faction = FACTION_TROLL;

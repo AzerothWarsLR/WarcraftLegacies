@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
 
     protected override string CompletionPopup => "Velen has liberated Argus && re-assembled the Crown of Triumvirate";
 
-    protected override string CompletionDescription => "You gain the powerful item, the Crown of the Triumvirate";
+    protected override string RewardDescription => "You gain the powerful item, the Crown of the Triumvirate";
     
 
     protected override void OnComplete()

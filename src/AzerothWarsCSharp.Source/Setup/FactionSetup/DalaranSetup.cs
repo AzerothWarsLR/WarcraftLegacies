@@ -2,17 +2,15 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
-  public class DalaranSetup{
-
-  
-    Faction FACTION_DALARAN
+  public static class DalaranSetup{
+    public static Faction Dalaran { get; private set; }
   
 
     public static void Setup( ){
       Faction f;
 
-      FACTION_DALARAN = Faction.create("Dalaran", PLAYER_COLOR_PINK, "|c00e55bb0","ReplaceableTextures\\CommandButtons\\BTNJaina.blp");
-      f = FACTION_DALARAN;
+      Dalaran = Faction.create("Dalaran", PLAYER_COLOR_PINK, "|c00e55bb0","ReplaceableTextures\\CommandButtons\\BTNJaina.blp");
+      f = Dalaran;
       f.UndefeatedResearch = FourCC("R05N");
       f.Team = TEAM_ALLIANCE;
       f.StartingGold = 150;

@@ -3,6 +3,7 @@ using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Legends;
 using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
+using AzerothWarsCSharp.Source.Setup.QuestSetup;
 
 namespace AzerothWarsCSharp.Source.Quests.Naga
 {
@@ -13,30 +14,29 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       "ReplaceableTextures\\CommandButtons\\BTNMetamorphosis.blp")
     {
       AddQuestItem(new QuestItemKillUnit(LegendScourge.LegendLichking.Unit));
-      this.AddQuestItem(new QuestItemResearch(FourCC("R063"),)n055)));
+      AddQuestItem(new QuestItemResearch(FourCC("R063"), FourCC("n055")));
       Global = true;
     }
 
     protected override string CompletionPopup =>
-      "As a reward for his mission, Illidan && his followers have been welcomed into the ranks of the Burning Legion";
+      "As a reward for his mission, Illidan and his followers have been welcomed into the ranks of the Burning Legion";
 
-    protected override string CompletionDescription => "The Illidari team will join the Burning Legion in their team";
+    protected override string RewardDescription => "The Illidari team will join the Burning Legion in their team";
     
-
     protected override void OnComplete()
     {
       if (QuelthalasSetup.FactionQuelthalas.Team == TeamSetup.TeamNaga)
       {
         QuelthalasSetup.FactionQuelthalas.Team = TeamSetup.TeamLegion;
-        SUMMON_KIL.Progress = QUEST_PROGRESS_INCOMPLETE;
-        GREAT_TREACHERY.Progress = QUEST_PROGRESS_FAILED;
-        STAY_LOYAL.Progress = QUEST_PROGRESS_FAILED;
-        UnitRemoveAbilityBJ(FourCC("A0IK"), LegendQuelthalas.LegendKael.Unit);
-        UnitRemoveAbilityBJ(FourCC("A0IF"), LegendQuelthalas.LegendKael.Unit);
+        QuelthalasQuestSetup.SUMMON_KIL.Progress = QuestProgress.Incomplete;
+        QuelthalasQuestSetup.GREAT_TREACHERY.Progress = QuestProgress.Failed;
+        QuelthalasQuestSetup.STAY_LOYAL.Progress = QuestProgress.Failed;
+        UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0IK"));
+        UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0IF"));
         UnitAddAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0R7"));
       }
 
-      if (FelHordeSetup.FactionFelHorde.Team == TeamSetup.TeamNaga) 
+      if (FelHordeSetup.FactionFelHorde.Team == TeamSetup.TeamNaga)
         FelHordeSetup.FactionFelHorde.Team = TeamSetup.TeamLegion;
       NagaSetup.FactionNaga.Team = TeamSetup.TeamLegion;
       SetPlayerTechResearched(QuelthalasSetup.FactionQuelthalas.Player, FourCC("R075"), 1);

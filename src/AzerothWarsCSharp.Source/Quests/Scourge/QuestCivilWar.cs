@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
   {
     protected override string CompletionPopup => "The Lich King has rebelled against his demon masters";
 
-    protected override string CompletionDescription => "Unally from the Legion team";
+    protected override string RewardDescription => "Unally from the Legion team";
 
     protected override void OnComplete()
     {

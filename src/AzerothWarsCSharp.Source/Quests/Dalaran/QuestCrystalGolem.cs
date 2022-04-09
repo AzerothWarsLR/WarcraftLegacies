@@ -5,37 +5,26 @@ using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {
-  public sealed class QuestCrystalGolem : QuestData{
+  public sealed class QuestCrystalGolem : QuestData
+  {
+    protected override string CompletionPopup => Holder.Name + "'s Earth Golems have been infused with living crystal.";
 
-  
-    private static readonly int ResearchId = FourCC("R045");
-  
+    protected override string RewardDescription => "Transform your Earth Golems into Crystal Golems";
 
-
-    protected override string CompletionPopup => 
-      ;.Holder.Name + "FourCC(s Earth Golems have been infused with living crystal.";
-    }
-
-    protected override string CompletionDescription => "Transform your Earth Golems into Crystal Golems";
-
-    protected override void OnComplete(){
-      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
-      DisplayResearchAcquired(Holder.Player, RESEARCH_ID, 1);
+    protected override void OnComplete()
+    {
+      DisplayResearchAcquired(Holder.Player, ResearchId, 1);
       Holder.ModObjectLimit(FourCC("n096"), -6);
       Holder.ModObjectLimit(FourCC("n0AD"), 6);
     }
 
-    protected override void OnAdd( ){
-      Holder.ModObjectLimit(RESEARCH_ID, Faction.UNLIMITED);
+    public QuestCrystalGolem() : base("Crystalsong Forest",
+      "The living crystal of the Crystalsong Forest suffers from its proximity to the Legion. Freed from that corruption, it could be used to empower Dalaran's constructs."
+      , "ReplaceableTextures\\CommandButtons\\BTNRockGolem.blp")
+    {
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02R"))));
+      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendDraktharonkeep, false));
+      ResearchId = FourCC("R045");
     }
-
-    public  QuestCrystalGolem ( ){
-
-      this.AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02R"))));
-      this.AddQuestItem(new QuestItemControlLegend(LegendNeutral.legendDraktharonkeep, false));
-      
-    }
-
-
   }
 }

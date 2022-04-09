@@ -5,48 +5,48 @@ namespace AzerothWarsCSharp.Source.Legends
 {
   public static class LegendFrostwolf
   {
-    public static Legend? legendCairne;
-    public static Legend? legendThrall;
-    public static Legend? legendRexxar;
+    public static Legend? LegendCairne { get; private set; }
+    public static Legend? LegendThrall { get; private set; }
+    public static Legend? LegendRexxar { get; private set; }
 
-    public static Legend? legendThunderbluff;
-    public static Legend? legendDarkspearhold;
-    public static Legend? legendOrgrimmar;
+    public static Legend? LegendThunderbluff { get; private set; }
+    public static Legend? LegendDarkspearhold { get; private set; }
+    public static Legend? LegendOrgrimmar { get; private set; }
     
     public static void Setup( ){
-      legendCairne = new Legend
+      LegendCairne = new Legend
       {
         UnitType = FourCC("Ocbh"),
         DeathMessage = "CairneFourCC(s spirit has passed on from this world. The Tauren have already begun to revere their fallen ancestor.",
         StartingXp = 1000
       };
 
-      legendThrall = new Legend
+      LegendThrall = new Legend
       {
         UnitType = FourCC("Othr"),
         Essential = true
       };
 
-      legendThunderbluff = new Legend
+      LegendThunderbluff = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o00J")),
         DeathMessage = "The mesas of Thunderbluff have been swept clean of the Tauren. The Bloodhoof are without a home.",
         IsCapital = true
       };
 
-      legendDarkspearhold = new Legend
+      LegendDarkspearhold = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o02D")),
         IsCapital = true
       };
 
-      legendRexxar = new Legend
+      LegendRexxar = new Legend
       {
         UnitType = FourCC("Orex"),
         StartingXp = 1800
       };
 
-      legendOrgrimmar = new Legend
+      LegendOrgrimmar = new Legend
       {
         DeathMessage = "Orgrimmar has been demolished. With it dies the hopes && dreams of a wartorn race seeking refuge in a new world."
       };

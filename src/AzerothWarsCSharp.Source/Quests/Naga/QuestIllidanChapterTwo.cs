@@ -1,7 +1,7 @@
-//Escapes Kalimdor, Find the Skull of Guldan
-
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
+using AzerothWarsCSharp.Source.Setup;
 
 namespace AzerothWarsCSharp.Source.Quests.Naga
 {
@@ -9,29 +9,27 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
   {
     private readonly QuestData _questToDiscover;
 
-    public QuestIllidanChapterTwo(QuestData questToDiscover) : base(
-      "Chapter Two: The Skull of Gul'dan, "The mages of Dalaran are hiding a powerful artifact that will grant Illidan unlimited power
-      : the Skull of Gul'dan.", "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp")
+    public QuestIllidanChapterTwo(QuestData questToDiscover) : base("Chapter Two: The Skull of Gul'dan",
+      "The mages of Dalaran are hiding a powerful artifact that will grant Illidan unlimited power: the Skull of Gul'dan.",
+      "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp")
     {
-      this.AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.IllidanBoat1.Rect, "the escape boat"));
-      this.AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.SkullOfGuldan.Rect,
+      AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.IllidanBoat1.Rect,
+        "the escape boat"));
+      AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.SkullOfGuldan.Rect,
         "the dungeons of Dalaran"));
-      this.AddQuestItem(new QuestItemLegendHasArtifact(LegendNaga.LegendIllidan, ARTIFACT_SKULLOFGULDAN));
+      AddQuestItem(new QuestItemLegendHasArtifact(LegendNaga.LegendIllidan, ArtifactSetup.ArtifactSkullofguldan));
       _questToDiscover = questToDiscover;
-
-      ;
-      ;
     }
 
     protected override string CompletionPopup =>
       "Illidan has learned of the existence of the Skull of GulFourCC(dan, hidden in Dalaran";
 
-    protected override string CompletionDescription => "Chapter Three: Dwellers from the Deep";
+    protected override string RewardDescription => "Chapter Three: Dwellers from the Deep";
 
     protected override void OnComplete()
     {
       LegendNaga.LegendIllidan.UnitType = FourCC("Eevi");
-      _questToDiscover.Progress = QUEST_PROGRESS_INCOMPLETE;
+      _questToDiscover.Progress = QuestProgress.Incomplete;
     }
   }
 }

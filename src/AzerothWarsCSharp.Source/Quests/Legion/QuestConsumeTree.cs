@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
     protected override string CompletionPopup =>
       "Archimonde has now consummed the World Tree && is now nigh unstoppable";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "By consuming the World Tree, Archimonde will obtain immense power. +80 to all stats. Additionally, the Druids faction will be eliminated.";
 
 

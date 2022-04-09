@@ -6,13 +6,10 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
   public sealed class QuestArathiVolunteers : QuestData
   {
     private static readonly int QuestResearchId = FourCC("R089");
+    
+    protected override string CompletionPopup => "The Arathi have been convinced to join the fight.";
 
-
-    protected override string CompletionPopup =>
-    return "The Arathi have been convinced to join the fight.";
-  }
-
-  protected override string CompletionDescription => "Enable to train Mounted Archers";
+    protected override string CompletionDescription => "Enable to train Mounted Archers";
 
   public QuestArathiVolunteers ( ) : base("Arathi Volunteers", "The men of Stromgrade should join us in the fight.",
   "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionCastle.blp"){

@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02N"))));
       AddQuestItem(new QuestItemUpgrade(FourCC("o02Y"), FourCC("o02Y")));
       AddQuestItem(new QuestItemExpire(1450));
-      AddQuestItem(QuestItemSelfExists);
+      AddQuestItem(new QuestItemSelfExists());
       ;
       ;
     }
@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     protected override string CompletionPopup =>
       "Hellfire Citadel has been subjugated, && its military is now free to assist the " + Holder.Team.Name + ".";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Control of all units in Hellfire Citadel && enable Kargath to be trained at the altar";
 
     private void GrantHellfire(player whichPlayer)

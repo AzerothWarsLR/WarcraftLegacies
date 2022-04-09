@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 
     protected override string CompletionPopup => "Hakkar has emerged from the Drowned Temple";
 
-    protected override string CompletionDescription => "Gain the demigod hero Hakkar";
+    protected override string RewardDescription => "Gain the demigod hero Hakkar";
 
     protected override void OnComplete()
     {

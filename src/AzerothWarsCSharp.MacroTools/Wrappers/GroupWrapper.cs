@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using WCSharp.Shared.Data;
 
 namespace AzerothWarsCSharp.MacroTools.Wrappers
 {
@@ -42,6 +43,11 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
     {
       GroupEnumUnitsOfPlayer(_group, player, null);
       return this;
+    }
+
+    public GroupWrapper EnumUnitsInRect(Rectangle rect)
+    {
+      return EnumUnitsInRect(rect.Rect);
     }
     
     public GroupWrapper EnumUnitsInRect(rect rect)

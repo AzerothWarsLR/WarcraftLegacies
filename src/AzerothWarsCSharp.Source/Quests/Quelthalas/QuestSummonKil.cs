@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     protected override string CompletionPopup => "The greater demon Kil'jaeden has been summoned to Azeroth";
 
-    protected override string CompletionDescription => "The hero Kil'jaeden";
+    protected override string RewardDescription => "The hero Kil'jaeden";
 
 
     private bool operator

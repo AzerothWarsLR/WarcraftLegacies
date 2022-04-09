@@ -1,20 +1,20 @@
 using AzerothWarsCSharp.Source.Quests.Sentinels;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
-  public class SentinelsQuestSetup{
-
-    public static void Setup( ){
-      //Early duel
-      FACTION_SENTINELS.StartingQuest = FACTION_SENTINELS.AddQuest(QuestAstranaar.create());
-      FACTION_SENTINELS.AddQuest(QuestFeathermoon.create());
-      FACTION_SENTINELS.AddQuest(QuestSentinelsKillWarsong.create());
-      FACTION_SENTINELS.AddQuest(QuestSentinelsKillFrostwolf.create());
-      FACTION_SENTINELS.AddQuest(QuestMaievOutland.create());
-      FACTION_SENTINELS.AddQuest(QuestScepterOfTheQueenSentinels.create());
-      //Misc
-      FACTION_SENTINELS.AddQuest(QuestVaultoftheWardens.create());
-      //call FACTION_SENTINELS.AddQuest(QuestJoinAllianceSentinel.create())
+  public static class SentinelsQuestSetup{
+    public static void Setup( )
+    {
+      var sentinels = SentinelsSetup.Sentinels;
+      
+      sentinels.StartingQuest = sentinels.AddQuest(new QuestAstranaar());
+      sentinels.AddQuest(new QuestFeathermoon());
+      sentinels.AddQuest(new QuestSentinelsKillWarsong());
+      sentinels.AddQuest(new QuestSentinelsKillFrostwolf());
+      sentinels.AddQuest(new QuestMaievOutland(Regions.MaievStartUnlock));
+      sentinels.AddQuest(new QuestScepterOfTheQueenSentinels());
+      sentinels.AddQuest(new QuestVaultoftheWardens());
     }
 
   }

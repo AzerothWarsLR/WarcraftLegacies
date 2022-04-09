@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
   {
     protected override string CompletionPopup => "With all the Goblin towns united, a new empire rises!";
 
-    protected override string CompletionDescription => "Unlock the Intercontinental Artillery";
+    protected override string RewardDescription => "Unlock the Intercontinental Artillery";
 
     public QuestGoblinEmpire() : base("Goblin Empire",
       "All the Goblin syndicatesFourCC( towns must be reunited under one banner.",

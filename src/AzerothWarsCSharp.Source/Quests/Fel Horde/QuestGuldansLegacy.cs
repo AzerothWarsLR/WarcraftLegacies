@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
   {
     private int _researchId = FourCC("R041");
     
-    protected override string CompletionDescription => "Guldan's remains have been located within the Tomb of Sargeras. His eldritch knowledge may now be put to purpose.";
+    protected override string RewardDescription => "Guldan's remains have been located within the Tomb of Sargeras. His eldritch knowledge may now be put to purpose.";
 
     protected override void OnComplete(){
   internal SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);

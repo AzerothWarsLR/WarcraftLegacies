@@ -1,6 +1,7 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Sentinels
 {
@@ -10,20 +11,17 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       "Darkshore is under attack by some Murloc. We should deal with them swiftly and){ make for the Astranaar Outpost. Clearing the Murlocs will also reestablish communication with Darnassus.",
       "ReplaceableTextures\\CommandButtons\\BTNMurloc.blp")
     {
-      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_TYRANDE, Regions.AstranaarUnlock.Rect,
+      AddQuestItem(new QuestItemLegendReachRect(LegendSentinels.legendTyrande, Regions.AstranaarUnlock.Rect,
         "Astranaar Outpost"));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02U"))));
       AddQuestItem(new QuestItemExpire(1430));
       AddQuestItem(new QuestItemSelfExists());
-      ;
-      ;
     }
 
-
     protected override string CompletionPopup =>
-      "Astranaar has been relieved && has joined the Sentinels in their war effort";
+      "Astranaar has been relieved and has joined the Sentinels in their war effort";
 
-    protected override string CompletionDescription => "Control of all units in Astranaar Outpost && Darnassus";
+    protected override string RewardDescription => "Control of all units in Astranaar Outpost and Darnassus";
 
     protected override void OnFail()
     {

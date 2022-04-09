@@ -1,53 +1,46 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Druids
 {
   public sealed class QuestTortolla : QuestData
   {
     private static readonly int HeroId = FourCC("H04U");
+    private readonly unit _sleepingTortolla;
 
     public QuestTortolla() : base("The Turtle Demigod",
       "Tortolla was badly wounded during the War of the Ancients, && has been resting ever since.",
       "ReplaceableTextures\\CommandButtons\\BTNSeaTurtleGreen.blp")
     {
       AddQuestItem(new QuestItemTime(1200));
-      AddQuestItem(QuestItemSelfExists);
+      AddQuestItem(new QuestItemSelfExists());
       ResearchId = FourCC("R049");
-      ;
-      ;
+
+      _sleepingTortolla = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), HeroId, -12827, 5729, 333);
+      SetUnitInvulnerable(_sleepingTortolla, true);
+      AddSpecialEffectTarget("Abilities\\Spells\\Undead\\Sleep\\SleepTarget.mdl", _sleepingTortolla,
+        "overhead");
+      SetHeroXP(_sleepingTortolla, LegendDruids.legendTortolla.StartingXp, false);
     }
 
     protected override string CompletionPopup => "Tortolla has finally awoken from his ancient slumber.";
 
-    protected override string CompletionDescription => "You can summon Tortolla from the Altar of Elders";
-
-
-    private static unit SleepingTortolla
+    protected override string RewardDescription => "You can summon Tortolla from the Altar of Elders";
 
     protected override void OnComplete()
     {
-      RemoveUnit(thistype.sleepingTortolla);
+      RemoveUnit(_sleepingTortolla);
     }
 
     protected override void OnFail()
     {
-      RemoveUnit(thistype.sleepingTortolla);
+      RemoveUnit(_sleepingTortolla);
     }
 
     protected override void OnAdd()
     {
       Holder.ModObjectLimit(HeroId, 1);
-    }
-
-
-    public static void Setup()
-    {
-      QuestTortolla.SleepingTortolla = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), HeroId, -12827, 5729, 333);
-      SetUnitInvulnerable(QuestTortolla.SleepingTortolla, true);
-      AddSpecialEffectTarget("Abilities\\Spells\\Undead\\Sleep\\SleepTarget.mdl", QuestTortolla.SleepingTortolla,
-        "overhead");
-      SetHeroXP(QuestTortolla.SleepingTortolla, LEGEND_TORTOLLA.StartingXP, false);
     }
   }
 }

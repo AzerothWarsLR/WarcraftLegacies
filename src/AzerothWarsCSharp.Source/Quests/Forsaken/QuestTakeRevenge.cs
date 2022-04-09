@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
     protected override string CompletionPopup =>
       "With the Lich King eliminated, Sylvanas vengeance is finally complete. She has absorbed his power and has become the Banshee Queen";
 
-    protected override string CompletionDescription => "Sylvanas gains 20 intelligence, 20 strength && Chaos damage";
+    protected override string RewardDescription => "Sylvanas gains 20 intelligence, 20 strength && Chaos damage";
 
     protected override void OnComplete()
     {

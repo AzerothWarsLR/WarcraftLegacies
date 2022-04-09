@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     protected override string CompletionPopup =>
       "The plague has been unleashed! The citizens of Lordaeron are quickly transforming into mindless zombies.";
 
-    protected override string CompletionDescription => "A plague is unleashed upon the lands of Lordaeron";
+    protected override string RewardDescription => "A plague is unleashed upon the lands of Lordaeron";
 
 
     private bool Global()

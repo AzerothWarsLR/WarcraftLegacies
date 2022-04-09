@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
 
     protected override string CompletionPopup => "Chen Stormstout has joined the " + Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => "The hero Chen Stormstout";
+    protected override string RewardDescription => "The hero Chen Stormstout";
 
     protected override void OnFail()
     {

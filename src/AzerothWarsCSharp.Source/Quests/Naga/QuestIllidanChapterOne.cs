@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
         "the Aetheneum Library"));
       this.AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.ImmolFight.Rect,
         "Immol'thar's Lair"));
-      AddQuestItem(new QuestItemLegendDead(LegendNeutral.legendImmolthar));
+      AddQuestItem(new QuestItemLegendDead(LegendNeutral.LegendImmolthar));
       _questToDiscover = questToDiscover;
       ;
       ;
@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
     protected override string CompletionPopup =>
       "Illidan has learned of the existence of the Skull of GulFourCC(dan, hidden in Dalaran";
 
-    protected override string CompletionDescription => "Chapter Two - The Skull of GulFourCC(dan";
+    protected override string RewardDescription => "Chapter Two - The Skull of GulFourCC(dan";
 
     protected override void OnComplete()
     {

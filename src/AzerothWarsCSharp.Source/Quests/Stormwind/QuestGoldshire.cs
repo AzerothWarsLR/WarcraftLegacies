@@ -6,31 +6,28 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 {
   public sealed class QuestGoldshire : QuestData
   {
-    public QuestGoldshire() : base("The Scourge of Elwynn",
+    public QuestGoldshire(unit hogger) : base("The Scourge of Elwynn",
       "Hogger && his pack have taken over Goldshire, clear them out!",
       "ReplaceableTextures\\CommandButtons\\BTNGnoll.blp")
     {
-      AddQuestItem(QuestItemKillUnit.create(gg_unit_n021_2624)); //Hogger
+      AddQuestItem(new QuestItemKillUnit(hogger)); //Hogger
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00Z"))));
       AddQuestItem(new QuestItemExpire(1335));
       AddQuestItem(new QuestItemSelfExists());
-      ;
-      ;
     }
-
-
+    
     protected override string CompletionPopup => "The Gnolls have been defeated, Goldshire is safe.";
 
-    protected override string CompletionDescription => "Control of all units in Goldshire";
+    protected override string RewardDescription => "Control of all units in Goldshire";
 
-    private void GrantGoldshire(player whichPlayer)
+    //Todo: replace with GeneralHelpers function
+    private static void GrantGoldshire(player whichPlayer)
     {
       group tempGroup = CreateGroup();
-      unit u;
 
       //Transfer all Neutral Passive units in Goldshire
       GroupEnumUnitsInRect(tempGroup, Regions.ElwinForestAmbient.Rect, null);
-      u = FirstOfGroup(tempGroup);
+      unit u = FirstOfGroup(tempGroup);
       while (true)
       {
         if (u == null) break;

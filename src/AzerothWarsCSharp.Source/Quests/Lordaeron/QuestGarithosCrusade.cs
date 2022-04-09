@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     protected override string CompletionPopup =>
       "Garithos has always had a disliking for the other races. His pride and desire for power has led the remnants of the Lordaeron forces to join the crusade";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "You lose everything, but will spawn with Garithos and a small army in Tyr Hand";
 
     protected override void OnComplete()

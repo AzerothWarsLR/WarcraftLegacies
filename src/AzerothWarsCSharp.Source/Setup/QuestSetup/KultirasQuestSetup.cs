@@ -1,19 +1,21 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.Source.Quests.KulTiras;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
-  public class KultirasQuestSetup{
+  public static class KultirasQuestSetup
+  {
+    public static void Setup()
+    {
+      var kultiras = KultirasSetup.FACTION_KULTIRAS;
 
-    public static void Setup( ){
-
-      FACTION_KULTIRAS.StartingQuest = FACTION_KULTIRAS.AddQuest(QuestBoralus.create());
-      FACTION_KULTIRAS.AddQuest(QuestUnlockShip.create());
-      FACTION_KULTIRAS.AddQuest(QuestSafeSea.create());
-      FACTION_KULTIRAS.AddQuest(QuestTheramore.create());
-      FACTION_KULTIRAS.AddQuest(QuestBeyondPortal.create());
-      FACTION_KULTIRAS.AddQuest(QuestJoinCrusade.create());
-
+      kultiras.StartingQuest = kultiras.AddQuest(new QuestBoralus());
+      kultiras.AddQuest(new QuestUnlockShip(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_PROUDMOORE_FLAGSHIP_KUL_TIRAS)));
+      kultiras.AddQuest(new QuestSafeSea());
+      kultiras.AddQuest(new QuestTheramore());
+      kultiras.AddQuest(new QuestBeyondPortal());
+      kultiras.AddQuest(new QuestJoinCrusade());
     }
-
   }
 }

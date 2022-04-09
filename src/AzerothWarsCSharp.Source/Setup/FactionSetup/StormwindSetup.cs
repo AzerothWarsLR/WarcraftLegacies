@@ -4,16 +4,16 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
   public class StormwindSetup
   {
-    Faction FACTION_STORMWIND
+    public static Faction Stormwind { get; private set; }
 
 
     public static void Setup()
     {
       Faction f;
 
-      FACTION_STORMWIND = Faction.create("Stormwind", PLAYER_COLOR_AQUA, "|CFF106246",
+      Stormwind = Faction.create("Stormwind", PLAYER_COLOR_AQUA, "|CFF106246",
         "ReplaceableTextures\\CommandButtons\\BTNKnight.blp");
-      f = FACTION_STORMWIND;
+      f = Stormwind;
       f.Team = TEAM_ALLIANCE;
       f.UndefeatedResearch = FourCC("R060");
       f.StartingGold = 150;

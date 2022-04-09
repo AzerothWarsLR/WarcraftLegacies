@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
   {
     private static readonly int QuestResearchId = FourCC("R07G");
 
-    protected override string CompletionDescription => "The shipyard will be buildable";
+    protected override string RewardDescription => "The shipyard will be buildable";
 
     protected override string CompletionPopup => "You can now build shipyards && ships";
 

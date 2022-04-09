@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
     protected override string CompletionPopup =>
       "The Draenei have holded long enough and most of their civilisation had time to join the Exodar";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "The Divine Citadel, Teleporter, Astral Sanctum and Crystal Spire will be deleted from Azuremyst";
 
     protected override void OnFail()

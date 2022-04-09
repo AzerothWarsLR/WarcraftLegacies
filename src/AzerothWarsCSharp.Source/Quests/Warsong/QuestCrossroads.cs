@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
     
     protected override string CompletionPopup => "The Crossroads have been constructed.";
 
-    protected override string CompletionDescription => "Control of the Crossroads";
+    protected override string RewardDescription => "Control of the Crossroads";
 
     private void GiveCrossroads(player whichPlayer)
     {

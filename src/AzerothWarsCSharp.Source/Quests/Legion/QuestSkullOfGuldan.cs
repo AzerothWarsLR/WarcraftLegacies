@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
     protected override string CompletionPopup => "The Skull of Gul'dan";
 
-    protected override string CompletionDescription => "The Skull of Gul'dan has been retrieved by " +
+    protected override string RewardDescription => "The Skull of Gul'dan has been retrieved by " +
                                                        GetHeroProperName(_questItemAnyUnitInRect.TriggerUnit) +
                                                        ". Its nefarious energies will fuel the Legion's operations on Azeroth.";
 

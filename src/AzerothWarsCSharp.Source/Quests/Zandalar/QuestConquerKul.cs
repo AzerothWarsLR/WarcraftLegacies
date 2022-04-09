@@ -10,11 +10,11 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 
     protected override string CompletionPopup => "Before setting sails we need to conquer KulFourCC(tiras";
 
-    protected override string CompletionDescription => "Unlock shipyards";
+    protected override string RewardDescription => "Unlock shipyards";
 
     protected override string FailurePopup => "Zandalar has fallen.";
 
-    protected override string FailureDescription => "You can no longer build shipyards, but you unlock Zulfarrak";
+    protected override string PenaltyDescription => "You can no longer build shipyards, but you unlock Zulfarrak";
 
     protected override void OnFail()
     {
@@ -54,7 +54,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       "The Kul'tiran people and their fleet have been a threat to the Zandalari Empire for ages, it is time to put them to rest.",
       "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.legendDazaralor, true));
+      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendDazaralor, true));
       AddQuestItem(new QuestItemLegendDead(LegendKultiras.LegendBoralus));
       ResearchId = QuestResearchId;
     }

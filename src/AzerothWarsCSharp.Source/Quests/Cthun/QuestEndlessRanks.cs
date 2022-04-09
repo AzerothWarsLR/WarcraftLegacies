@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
   {
     protected override string CompletionPopup => "The Gates of Ahn'qiraj can now be opened";
 
-    protected override string CompletionDescription => "Enable the Gates of Ahn'qiraj to be opened";
+    protected override string RewardDescription => "Enable the Gates of Ahn'qiraj to be opened";
     
     public QuestEndlessRanks() : base("The Endless Army",
       "Before opening the Gates of Ahn'qiraj, the armies of C'thunn need to darken the sky and shake the earth itself.",

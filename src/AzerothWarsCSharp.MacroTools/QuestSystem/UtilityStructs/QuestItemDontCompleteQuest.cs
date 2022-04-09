@@ -1,6 +1,6 @@
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemDontCompleteQuest{
+  public sealed class QuestItemDontCompleteQuest : QuestItemData{
 
 
     private QuestData target = 0;
@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       }
     }
 
-    thistype (QuestData target ){
+    public QuestItemDontcompleteQuest(QuestData target){
 
 
       if (target == 0){

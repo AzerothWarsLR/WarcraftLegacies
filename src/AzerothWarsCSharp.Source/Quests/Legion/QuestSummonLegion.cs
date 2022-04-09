@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
     protected override string CompletionPopup => "Tremble, mortals, && despair. Doom has come to this world.";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "The hero Archimonde, control of all units in the Twisting Nether, && learn to train Greater Demons";
 
 

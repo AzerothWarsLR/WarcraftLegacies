@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       "Feathermoon Stronghold stood guard for ten thousand years, it is time to relieve the guards from their duty.",
       "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp")
     {
-      this.AddQuestItem(new QuestItemLegendReachRect(LEGEND_TYRANDE, Regions.FeathermoonUnlock.Rect,
+      this.AddQuestItem(new QuestItemLegendReachRect(LegendSentinels.LegendTyrande, Regions.FeathermoonUnlock.Rect,
         "Feathermoon Stronghold"));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01R"))));
       AddQuestItem(new QuestItemUpgrade(FourCC("n06J"), FourCC("n06J")));
@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
     protected override string CompletionPopup =>
       "Feathermoon Stronghold has been relieved && has joined the Sentinels in their war effort";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Control of all units in Feathermoon Stronghold && make Shandris && Maiev trainable at the Altar";
 
     private void GrantFeathermoon(player whichPlayer)

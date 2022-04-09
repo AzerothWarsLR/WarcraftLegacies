@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
     protected override string CompletionPopup =>
       "The Frostwolves have been driven from Kalimdor. Their departure reveals the existence of a powerful nature spirit that now heeds the of the Druids.";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
     return "The demihero " +
   }
 

@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
@@ -11,26 +12,23 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       "The people of Gnomeregan have long been unable to assist the Alliance in its wars due an infestation of troggs && Ice Trolls. Resolve their conflicts for them to gain their services.",
       "ReplaceableTextures\\CommandButtons\\BTNFlyingMachine.blp")
     {
-      AddQuestItem(QuestItemKillUnit.create(gg_unit_nitw_1513)); //Ice Troll Warlord
+      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nitw")))); //Ice Troll Warlord
       AddQuestItem(new QuestItemSelfExists());
-      ;
-      ;
     }
 
 
     protected override string CompletionPopup =>
-      "Gnomeregan has been literated, && its military is now free to assist the " + Holder.Team.Name + ".";
+      "Gnomeregan has been literated, and its military is now free to assist the " + Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => "Control of all units in Gnomeregan";
+    protected override string RewardDescription => "Control of all units in Gnomeregan";
 
-    private void GrantGnomeregan(player whichPlayer)
+    private static void GrantGnomeregan(player whichPlayer)
     {
       group tempGroup = CreateGroup();
-      unit u;
 
       //Transfer all Neutral Passive units in Gnomeregan
       GroupEnumUnitsInRect(tempGroup, Regions.Gnomergan.Rect, null);
-      u = FirstOfGroup(tempGroup);
+      unit u = FirstOfGroup(tempGroup);
       while (true)
       {
         if (u == null) break;

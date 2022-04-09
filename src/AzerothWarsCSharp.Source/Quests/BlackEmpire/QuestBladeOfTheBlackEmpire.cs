@@ -17,12 +17,12 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       _sequel = sequel;
       AddQuestItem(new QuestItemLegendInRect(LegendBlackEmpire.legendVolazj, Regions.DuskwoodCrypt.Rect,
         "Duskwood Graveyard Crypt"));
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.legendDuskwoodgraveyard, false));
+      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendDuskwoodgraveyard, false));
     }
 
     protected override string CompletionPopup => "Herald Volazj has found the Black Blade, Xal'alath.";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Xal'alath will be ours and the Tomb of Tyr quest will be revealed.";
 
     protected override void OnComplete()
@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       if (LegendBlackEmpire.legendVolazj.Unit != null && ArtifactSetup.ArtifactXalatath != null)
         UnitAddItemSafe(LegendBlackEmpire.legendVolazj.Unit, ArtifactSetup.ArtifactXalatath.Item);
       BlackEmpireSetup.factionBlackempire.AddQuest(_sequel);
-      _sequel.Progress = QUEST_PROGRESS_INCOMPLETE;
+      _sequel.Progress = QuestProgress.Incomplete;
     }
   }
 }

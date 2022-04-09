@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
     protected override string CompletionPopup =>
       "The Merging of Realities has come to pass. The NyaFourCC(lothan portals to Storm Peaks, Northern Highlands, && Tanaris have been permanently opened.";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "The NyaFourCC(lothan portals to Storm Peaks, Northern Highlands, && Tanaris will be permanently opened";
 
     //Opens the central portals in Nyalotha permanently.

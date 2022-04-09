@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
 
     protected override string CompletionPopup => "Velen has opened the portal to Argus";
 
-    protected override string CompletionDescription => "Open a Portal between Tempest Keep and Argus";
+    protected override string RewardDescription => "Open a Portal between Tempest Keep and Argus";
     
     protected override void OnComplete()
     {

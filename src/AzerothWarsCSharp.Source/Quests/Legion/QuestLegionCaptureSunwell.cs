@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
     protected override string CompletionPopup =>
       "The Sunwell has been captured by the Scourge. It now writhes with necromantic energy.";
 
-    protected override string CompletionDescription => "A research improving your Dreadlords";
+    protected override string RewardDescription => "A research improving your Dreadlords";
 
 
     protected override void OnAdd()

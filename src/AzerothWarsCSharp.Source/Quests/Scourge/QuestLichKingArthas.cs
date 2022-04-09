@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override string CompletionPopup => "Arthas has ascended the Frozen Throne itself && shattered NerFourCC("
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Arthas becomes the Lich King, but the Frozen Throne loses its abilities";
 
 

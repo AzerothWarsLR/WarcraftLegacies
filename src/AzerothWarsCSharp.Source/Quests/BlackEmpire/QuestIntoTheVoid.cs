@@ -26,6 +26,6 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
     protected override string CompletionPopup =>
       "Zakajz the Corruptor has been awakened from the Tomb of Tyr and has rejoined his master Yogg'saron.";
 
-    protected override string CompletionDescription => "Gain the hero Zakajz the Corruptor";
+    protected override string RewardDescription => "Gain the hero Zakajz the Corruptor";
   }
 }

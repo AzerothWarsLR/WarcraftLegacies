@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Researches.Ironforge
 
       recipient = FACTION_IRONFORGE.Person;
       if (recipient == 0){
-        recipient = FACTION_STORMWIND.Person;
+        recipient = StormwindSetup.Stormwind.Person;
       }
       if (recipient == 0){
         KillUnit(gg_unit_n03B_0010);

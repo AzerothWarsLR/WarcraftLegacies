@@ -2,7 +2,7 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemLegendHasArtifact{
+  public class QuestItemLegendHasArtifact : QuestItemData{
 
 
     private static int count = 0;
@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       }
     }
 
-    thistype (Legend targetLegend, Artifact targetArtifact ){
+    public QuestItemLegendHasArtifact(Legend targetLegend, Artifact targetArtifact ){
 
       this.Description = targetLegend.Name + " has " + GetItemName(targetArtifact.Item);
       this.targetLegend = targetLegend;

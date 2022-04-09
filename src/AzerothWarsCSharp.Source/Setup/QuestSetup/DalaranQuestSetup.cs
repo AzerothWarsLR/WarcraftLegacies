@@ -1,39 +1,43 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Quests.Dalaran;
 using AzerothWarsCSharp.Source.Quests.KulTiras;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
-  public class DalaranQuestSetup{
+  public class DalaranQuestSetup
+  {
+    public static void Setup()
+    {
+      var dalaran = DalaranSetup.Dalaran;
 
-    public static void Setup( ){
-      QuestNewGuardian newGuardian = QuestNewGuardian.create();
-      QuestTheNexus theNexus = QuestTheNexus.create();
-      QuestCrystalGolem crystalGolem = QuestCrystalGolem.create();
-      QuestFallenGuardian fallenGuardian = QuestFallenGuardian.create();
-      QuestSouthshore questSouthshore = QuestSouthshore.create();
+      QuestNewGuardian newGuardian = new QuestNewGuardian();
+      QuestTheNexus theNexus = new QuestTheNexus();
+      QuestCrystalGolem crystalGolem = new QuestCrystalGolem();
+      QuestFallenGuardian fallenGuardian = new QuestFallenGuardian();
+      QuestSouthshore questSouthshore = new QuestSouthshore(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nmrm")));
 
-      newGuardian.AddQuestItem(QuestItemDontCompleteQuest.create(theNexus));
-      crystalGolem.AddQuestItem(QuestItemDontCompleteQuest.create(theNexus));
-      fallenGuardian.AddQuestItem(QuestItemDontCompleteQuest.create(theNexus));
-      theNexus.AddQuestItem(QuestItemDontCompleteQuest.create(newGuardian));
+      newGuardian.AddQuestItem(new QuestItemDontCompleteQuest(theNexus));
+      crystalGolem.AddQuestItem(new QuestItemDontCompleteQuest(theNexus));
+      fallenGuardian.AddQuestItem(new QuestItemDontCompleteQuest(theNexus));
+      theNexus.AddQuestItem(new QuestItemDontCompleteQuest(newGuardian));
 
       //Early duel
-      FACTION_DALARAN.AddQuest(questSouthshore);
-      FACTION_DALARAN.StartingQuest = questSouthshore;
-      FACTION_DALARAN.AddQuest(QuestShadowfang.create());
-      FACTION_DALARAN.AddQuest(QuestDalaran.create());
-      FACTION_DALARAN.AddQuest(QuestJainaSoulGem.create());
-      FACTION_DALARAN.AddQuest(QuestBlueDragons.create());
+      dalaran.AddQuest(questSouthshore);
+      dalaran.StartingQuest = questSouthshore;
+      dalaran.AddQuest(new QuestShadowfang(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_WORGEN_GILNEAS)));
+      dalaran.AddQuest(new QuestDalaran());
+      dalaran.AddQuest(new QuestJainaSoulGem());
+      dalaran.AddQuest(new QuestBlueDragons());
       //Misc
-      FACTION_DALARAN.AddQuest(QuestKarazhan.create());
-      FACTION_DALARAN.AddQuest(QuestTheramore.create());
+      dalaran.AddQuest(new QuestKarazhan());
+      dalaran.AddQuest(new QuestTheramore());
 
-      FACTION_DALARAN.AddQuest(crystalGolem);
-      FACTION_DALARAN.AddQuest(fallenGuardian);
-      FACTION_DALARAN.AddQuest(newGuardian);
-      FACTION_DALARAN.AddQuest(theNexus);
+      dalaran.AddQuest(crystalGolem);
+      dalaran.AddQuest(fallenGuardian);
+      dalaran.AddQuest(newGuardian);
+      dalaran.AddQuest(theNexus);
     }
-
   }
 }

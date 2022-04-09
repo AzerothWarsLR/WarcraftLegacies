@@ -6,30 +6,28 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 {
   public sealed class QuestDarkshire : QuestData
   {
-    public QuestDarkshire()
+    public QuestDarkshire(unit gnollToKill) : base("Gnoll troubles",
+      "The town of Darkshire is under attack by Gnoll's, clear them out!",
+      "ReplaceableTextures\\CommandButtons\\BTNGnollArcher.blp")
     {
-      thistype this = thistype.allocate("Gnoll troubles", "The town of Darkshire is under attack by GnollFourCC("s,
-        clear them out!", "ReplaceableTextures\\CommandButtons\\BTNGnollArcher.blp");
-      AddQuestItem(QuestItemKillUnit.create(gg_unit_ngnv_0586)); //Gnoll Overseer
+      AddQuestItem(new QuestItemKillUnit(gnollToKill));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00V"))));
       AddQuestItem(new QuestItemExpire(1425));
       AddQuestItem(new QuestItemSelfExists());
     }
-
-
+    
     protected override string CompletionPopup =>
       "Darkshire has been liberated, && its military is now free to assist the " + Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => "Control of all units in Darkshire";
+    protected override string RewardDescription => "Control of all units in Darkshire";
 
-    private void GrantDarkshire(player whichPlayer)
+    private static void GrantDarkshire(player whichPlayer)
     {
       group tempGroup = CreateGroup();
-      unit u;
 
       //Transfer all Neutral Passive units in Darkshire
       GroupEnumUnitsInRect(tempGroup, Regions.DarkshireUnlock.Rect, null);
-      u = FirstOfGroup(tempGroup);
+      unit u = FirstOfGroup(tempGroup);
       while (true)
       {
         if (u == null) break;
@@ -39,7 +37,6 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       }
 
       DestroyGroup(tempGroup);
-      
     }
 
     protected override void OnFail()
@@ -50,10 +47,6 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     protected override void OnComplete()
     {
       GrantDarkshire(Holder.Player);
-    }
-
-    protected override void OnAdd()
-    {
     }
   }
 }

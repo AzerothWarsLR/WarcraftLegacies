@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     protected override string CompletionPopup =>
       "With the Lich King eliminated, the Kingdom of Lordaeron is free of its greatest threat. King Terenas Menethil proudly abdicates in favor of his son.";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Arthas gains 2000 experience and the Crown of Lordaeron, and he can no longer permanently die";
 
     protected override void OnComplete()

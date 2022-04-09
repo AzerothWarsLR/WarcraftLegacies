@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
     protected override string CompletionPopup =>
       "The Argent Dawn has been declared and ready to join the " + Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => "Unlock your elites, Crusader units && Tirion Fordring";
+    protected override string RewardDescription => "Unlock your elites, Crusader units && Tirion Fordring";
     
     protected override void OnComplete()
     {

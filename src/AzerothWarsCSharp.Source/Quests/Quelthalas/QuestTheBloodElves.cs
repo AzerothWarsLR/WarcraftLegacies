@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       "The Elves of Quel'"thalas have a deep reliance on the Sunwell")s magic. Without it, they would have to turn to darker magicks to sate themselves.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroBloodElfPrince.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.legendDraktharonkeep, false));
+      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendDraktharonkeep, false));
       AddQuestItem(new QuestItemControlLegend(LEGEND_ANASTERIAN, true));
       AddQuestItem(new QuestItemControlLegend(LegendQuelthalas.LegendSunwell, true));
       ;
@@ -44,7 +44,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     protected override string CompletionPopup =>
       "The Legion Nexus has been obliterated. A group of ambitious mages seize the opportunity to study the demonsFourCC( magic, becoming the first Blood Mages.";
 
-    protected override string CompletionDescription => "Learn to train " + GetObjectName(UnittypeId) +
+    protected override string RewardDescription => "Learn to train " + GetObjectName(UnittypeId) +
                                                        "s from the Consortium, && you can summon Prince KaelFourCC(thas from the Altar of Prowess";
 
     private string operator

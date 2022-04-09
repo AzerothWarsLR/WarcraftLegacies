@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
     protected override string CompletionPopup =>
       "The massive exploitation of Ashenvale has bolstered the entire Horde's weapons, armour and defenses.";
 
-    protected override string CompletionDescription => "You and all of your allies gain the researches " +
+    protected override string RewardDescription => "You and all of your allies gain the researches " +
                                                        GetObjectName(FourCC("Rhme")) + ", " +
                                                        GetObjectName(FourCC("Rhar")) + ", " +
                                                        GetObjectName(FourCC("Rorb")) + ", and " +

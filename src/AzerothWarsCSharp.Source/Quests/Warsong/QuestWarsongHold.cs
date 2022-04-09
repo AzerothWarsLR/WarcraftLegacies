@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
     protected override string CompletionPopup =>
       "The Warsong Clan has sail for the icy shores of Northrend and up a formidable encampment at Borean Tundra.";
 
-    protected override string CompletionDescription => "A new base at Borean Tundra in Northrend";
+    protected override string RewardDescription => "A new base at Borean Tundra in Northrend";
 
     protected override void OnComplete()
     {

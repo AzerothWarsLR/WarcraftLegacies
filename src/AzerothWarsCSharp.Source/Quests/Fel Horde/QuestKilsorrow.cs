@@ -1,26 +1,30 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 {
   public sealed class QuestKilsorrow : QuestData
   {
-    public QuestKilsorrow()
+    private readonly unit _kilsorrowFortress;
+
+    public QuestKilsorrow(unit kilsorrowFortress) : base("Kil'sorrow Fortress",
+      "This sinister fortress will serve the Fel Horde well, clear the surrounding lands to establish it",
+      "ReplaceableTextures\\CommandButtons\\BTNFelOrcWatchTower.blp")
     {
-      thistype this =
-        thistype.allocate("KilFourCC("sorrow Fortress", "This sinister fortress will serve the Fel Horde well,
-          clear the surrounding lands to establish it", "ReplaceableTextures\\CommandButtons\\BTNFelOrcWatchTower.blp");
+      _kilsorrowFortress = kilsorrowFortress;
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n09X"))));
       AddQuestItem(new QuestItemExpire(1452));
-      AddQuestItem(QuestItemSelfExists);
+      AddQuestItem(new QuestItemSelfExists());
     }
 
-
+    //Todo: bad flavour
     protected override string CompletionPopup =>
-      "KilFourCC(sorrow is now established, && its military is now free to assist the " + Holder.Team.Name + ".";
+      "Kil'sorrow is now established, and its military is now free to assist the " + Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => "Control of all units in KilFourCC(sorrow && 3 new Demon Gates";
+    //Todo: indicate where those Demon Gates are
+    protected override string RewardDescription => "Control of all units in Kil'sorrow and 3 new Demon Gates";
 
     protected override void OnFail()
     {
@@ -30,11 +34,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     protected override void OnComplete()
     {
       RescueNeutralUnitsInRect(Regions.KilsorrowUnlock.Rect, Holder.Player);
-      UnitRescue(gg_unit_n081_4142, FelHordeSetup.FactionFelHorde.Player);
-    }
-
-    protected override void OnAdd()
-    {
+      UnitRescue(_kilsorrowFortress, FelHordeSetup.FactionFelHorde.Player);
     }
   }
 }

@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     protected override string CompletionPopup =>
       "Uther has discovered the Living Embodiment of Shadow in the ruins of the Twilight Citadel";
 
-    protected override string CompletionDescription => "The Living Shadow and the Ashbringer Quest discovery";
+    protected override string RewardDescription => "The Living Shadow and the Ashbringer Quest discovery";
 
     protected override void OnComplete()
     {

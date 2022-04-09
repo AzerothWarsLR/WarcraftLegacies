@@ -14,14 +14,14 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
       AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactDemonsoul));
       AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.ArtifactDemonsoul, Regions.WyrmrestTemple.Rect,
         "Wyrmrest Temple"));
-      AddQuestItem(new QuestItemLegendDead(LegendNeutral.legendSaragosa));
-      AddQuestItem(new QuestItemLegendDead(LegendNeutral.legendVaelastrasz));
-      AddQuestItem(new QuestItemLegendDead(LegendNeutral.legendOcculus));
+      AddQuestItem(new QuestItemLegendDead(LegendNeutral.LegendSaragosa));
+      AddQuestItem(new QuestItemLegendDead(LegendNeutral.LegendVaelastrasz));
+      AddQuestItem(new QuestItemLegendDead(LegendNeutral.LegendOcculus));
       ResearchId = FourCC("R07S");
     }
 
     protected override string CompletionPopup => "Yor'sahj can now be trained at the altar";
 
-    protected override string CompletionDescription => "The hero Yor'sahj will join Ahn'Qiraj";
+    protected override string RewardDescription => "The hero Yor'sahj will join Ahn'Qiraj";
   }
 }

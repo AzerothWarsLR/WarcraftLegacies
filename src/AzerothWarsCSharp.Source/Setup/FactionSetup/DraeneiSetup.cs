@@ -4,16 +4,13 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
   public class DraeneiSetup{
-
-  
-    Faction FACTION_DRAENEI
-  
-
+    public static Faction Draenei { get; private set; }
+    
     public static void Setup( ){
       Faction f;
 
-      FACTION_DRAENEI = Faction.create("The Exodar", PLAYER_COLOR_NAVY, "|cff000080","ReplaceableTextures\\CommandButtons\\BTNBOSSVelen.blp");
-      f = FACTION_DRAENEI;
+      DraeneiSetup.Draenei = Faction.create("The Exodar", PLAYER_COLOR_NAVY, "|cff000080","ReplaceableTextures\\CommandButtons\\BTNBOSSVelen.blp");
+      f = DraeneiSetup.Draenei;
       f.Team = TEAM_NIGHT_ELVES;
       f.UndefeatedResearch = FourCC("R06E");
       f.StartingGold = 150;

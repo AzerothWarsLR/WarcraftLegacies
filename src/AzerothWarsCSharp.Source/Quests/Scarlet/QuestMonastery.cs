@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
     protected override string CompletionPopup =>
       "The Scarlet Monastery Hand is complete && ready to join the " + Holder.Team.Name + ".";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Control of all units in the Scarlet Monastery && you will unally the alliance";
 
 

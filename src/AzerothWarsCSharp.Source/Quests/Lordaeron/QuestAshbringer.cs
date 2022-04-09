@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     protected override string CompletionPopup =>
       "The Ashbringer has been forged and Mograine has returned from exile to wield it";
 
-    protected override string CompletionDescription => "Gain the hero Mograine and the artifact Ashbringer";
+    protected override string RewardDescription => "Gain the hero Mograine and the artifact Ashbringer";
     
     protected override void OnComplete()
     {

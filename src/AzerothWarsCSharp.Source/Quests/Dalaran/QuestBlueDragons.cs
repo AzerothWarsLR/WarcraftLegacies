@@ -1,6 +1,7 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {
@@ -14,16 +15,13 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "The Blue Dragons of Northrend are the wardens of magic on Azeroth. They might be convinced to willingly join the mages of Dalaran.",
       "ReplaceableTextures\\CommandButtons\\BTNAzureDragon.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LEGEND_NEXUS, false));
-      ;
-      ;
+      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendNexus, false));
     }
-
-
+    
     protected override string CompletionPopup =>
       "The Nexus has been captured. The Blue Dragonflight fights for " + Holder.Name + ".";
 
-    protected override string CompletionDescription => "Learn to train Blue Dragons";
+    protected override string RewardDescription => "Learn to train Blue Dragons";
 
     protected override void OnComplete()
     {

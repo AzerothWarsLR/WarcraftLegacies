@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       "Warchief Thrall && his forces have been shipwrecked on the Darkspear Isles. Kill the Sea Witch there to give them a chance to rebuild their fleet && escape.",
       "ReplaceableTextures\\CommandButtons\\BTNGhost.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(LegendNeutral.legendSeawitch.Unit));
+      AddQuestItem(new QuestItemKillUnit(LegendNeutral.LegendSeawitch.Unit));
       AddQuestItem(new QuestItemExpire(600));
       ResearchId = QuestResearchId;
     }
@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     protected override string CompletionPopup =>
       "The sea witch Zar'jira has been slain. Thrall and Vol'jin can now set sail.";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Gain control of all neutral units on the Darkspear Isles && teleport to shore";
 
     protected override void OnFail()

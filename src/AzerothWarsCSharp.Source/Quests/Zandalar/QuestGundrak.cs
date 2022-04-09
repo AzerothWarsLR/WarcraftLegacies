@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
     protected override string CompletionPopup =>
       "Gundrak has fallen. The Drakkari trolls lend their might to the " + this.Holder.Team.Name;
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       $"Control of Gundrak, 300 gold tribute and the ability to train {GetObjectName(WarlordId)}s from the {GetObjectName(TrollShrineId)}.";
 
     protected override void OnComplete()
@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       "The Drakkari troll of Gundrak believe their fortress to be impregnable. Capture it to gain their loyalty.",
       "ReplaceableTextures\\CommandButtons\\BTNTerrorTroll.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.legendGundrak, false));
+      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendGundrak, false));
     }
   }
 }

@@ -13,22 +13,22 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       "ReplaceableTextures\\CommandButtons\\BTNSorceressMaster.blp")
     {
       AddQuestItem(new QuestItemControlLegend(LegendDruids.legendNordrassil, false));
-      AddQuestItem(new QuestItemLegendInRect(LegendFrostwolf.legendThrall, Regions.Drekthars_Spellbook.Rect,
+      AddQuestItem(new QuestItemLegendInRect(LegendFrostwolf.LegendThrall, Regions.Drekthars_Spellbook.Rect,
         "Nordrassil"));
     }
 
     protected override string CompletionPopup =>
       "The World Tree, Nordrassil, has been captured by the forces of the Horde. Drek'thar has gifted Warchief Thrall his magical spellbook for this achievement.";
 
-    protected override string CompletionDescription => "Drek'thar's Spellbook";
+    protected override string RewardDescription => "Drek'thar's Spellbook";
 
     protected override void OnComplete()
     {
       var drektharsSpellbook = ArtifactSetup.ArtifactDrektharsspellbook;
-      if (drektharsSpellbook != null && LegendFrostwolf.legendThrall?.Unit != null)
+      if (drektharsSpellbook != null && LegendFrostwolf.LegendThrall?.Unit != null)
       {
         drektharsSpellbook.Status = ArtifactStatus.Ground;
-        UnitAddItemSafe(LegendFrostwolf.legendThrall.Unit, drektharsSpellbook.Item);
+        UnitAddItemSafe(LegendFrostwolf.LegendThrall.Unit, drektharsSpellbook.Item);
       }
     }
   }

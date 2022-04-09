@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     protected override string CompletionPopup =>
       "Stormwind has been liberated, && its military is now free to assist the " + Holder.Team.Name + ".";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Control of all units in Stormwind && enable Varian to be trained at the altar";
 
     private void GrantStormwind(player whichPlayer)

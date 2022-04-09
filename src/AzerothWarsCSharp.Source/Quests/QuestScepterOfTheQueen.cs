@@ -35,13 +35,13 @@ namespace AzerothWarsCSharp.Source.Quests
     protected override string CompletionPopup =>
       "The Highborne are no longer implicitly defended by the Night Elven presence at Feathermoon Stronghold. The Horde unleashes their full might against these Night Elven arcanists.";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Gain the Scepter of the Queen && turn all units in Dire Maul hostile";
 
     protected override string CompletionPopup =>
       "The ShenFourCC(dralar, the Highborne survivors of the Sundering, swear allegiance to their fellow Night Elves. As a sign of their loyalty, they offer up an artifact they have guarded for thousands of years: the Scepter of the Queen.";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Gain the Scepter of the Queen && control of all units in Dire Maul";
 
     protected override void OnComplete()

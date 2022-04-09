@@ -4,44 +4,52 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 namespace AzerothWarsCSharp.Source.Legends
 {
   public static class LegendDalaran{
-
-  
-    public static Legend LEGEND_ANTONIDAS { get; private set; }
-    public static Legend LEGEND_MEDIVH { get; private set; }
-    public static Legend LEGEND_JAINA { get; private set; }
-    public static Legend LEGEND_KALECGOS { get; private set; }
-    public static Legend LEGEND_MALYGOS
- { get; private set; }
-    public static Legend LEGEND_DALARAN { get; private set; }
-  
-
+    public static Legend LegendAntonidas { get; private set; }
+    public static Legend LegendMedivh { get; private set; }
+    public static Legend LegendJaina { get; private set; }
+    public static Legend LegendKalecgos { get; private set; }
+    public static Legend LegendMalygos { get; private set; }
+    public static Legend LegendDalaranCapital { get; private set; }
+    
     public static void Setup( ){
-      LEGEND_JAINA = new Legend();
-      LEGEND_JAINA.UnitType = FourCC("Hjai");
-      LEGEND_JAINA.Essential = true;
+      LegendJaina = new Legend
+      {
+        UnitType = FourCC("Hjai"),
+        Essential = true
+      };
 
-      LEGEND_MEDIVH = new Legend();
-      LEGEND_MEDIVH.UnitType = FourCC("Haah");
-      LEGEND_MEDIVH.StartingXp = 2800;
+      LegendMedivh = new Legend
+      {
+        UnitType = FourCC("Haah"),
+        StartingXp = 2800
+      };
 
-      LEGEND_KALECGOS = new Legend();
-      LEGEND_KALECGOS.UnitType = FourCC("U027");
-      LEGEND_KALECGOS.StartingXp = 9800;
+      LegendKalecgos = new Legend
+      {
+        UnitType = FourCC("U027"),
+        StartingXp = 9800
+      };
 
-      LEGEND_MALYGOS = new Legend();
-      LEGEND_MALYGOS.UnitType = FourCC("U026");
-      LEGEND_MALYGOS.StartingXp = 10900;
+      LegendMalygos = new Legend
+      {
+        UnitType = FourCC("U026"),
+        StartingXp = 10900
+      };
 
-      LEGEND_DALARAN = new Legend();
-      LEGEND_DALARAN.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h002"));
-      LEGEND_DALARAN.DeathMessage = "The Violet Citadel, the ultimate bastion of arcane knowledge in the Eastern Kingdoms, crumbles like a sand castle.";
-      LEGEND_DALARAN.IsCapital = true;
+      LegendDalaranCapital = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h002")),
+        DeathMessage = "The Violet Citadel, the ultimate bastion of arcane knowledge in the Eastern Kingdoms, crumbles like a sand castle.",
+        IsCapital = true
+      };
 
-      LEGEND_ANTONIDAS = new Legend();
-      LEGEND_ANTONIDAS.UnitType = FourCC("Hant");
-      LEGEND_ANTONIDAS.StartingXp = 1000;
-      LEGEND_ANTONIDAS.AddUnitDependency(LEGEND_DALARAN.Unit);
-      LEGEND_ANTONIDAS.DeathMessage = "Archmage Antonidas has been cut down, his vast knowledge forever lost with his death. The mages of Dalaran have lost their brightest mind.";
+      LegendAntonidas = new Legend
+      {
+        UnitType = FourCC("Hant"),
+        StartingXp = 1000
+      };
+      LegendAntonidas.AddUnitDependency(LegendDalaranCapital.Unit);
+      LegendAntonidas.DeathMessage = "Archmage Antonidas has been cut down, his vast knowledge forever lost with his death. The mages of Dalaran have lost their brightest mind.";
     }
 
   }

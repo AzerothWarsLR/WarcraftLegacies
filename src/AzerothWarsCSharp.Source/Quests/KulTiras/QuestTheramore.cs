@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
     protected override string CompletionPopup =>
       "A sizeable isle off the coast of Dustwallow Marsh has been colonized && dubbed Theramore, marking the first human settlement to be established on Kalimdor.";
 
-    protected override string CompletionDescription => "Control of all units at Theramore";
+    protected override string RewardDescription => "Control of all units at Theramore";
 
     private static void GrantToPlayer(player whichPlayer)
     {

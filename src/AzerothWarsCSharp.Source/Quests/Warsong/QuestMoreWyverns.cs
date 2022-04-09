@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
     protected override string CompletionPopup =>
       "The Sentinels have been eliminated. Warchief Thrall breathes a sigh of relief, knowing that his people are safe - for now.";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Learn to train " + I2S(LIMIT_CHANGE) + " additional " + GetObjectName(UnittypeId) + "s";
 
     protected override void OnComplete()

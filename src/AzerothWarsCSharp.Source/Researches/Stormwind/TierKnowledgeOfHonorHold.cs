@@ -27,8 +27,8 @@ namespace AzerothWarsCSharp.Source.Researches.Stormwind
     }
 
     private static void Research( ){
-      FACTION_STORMWIND.ModObjectLimit(FourCC(R03X), Faction.UNLIMITED)       ;//High Sorcerer Andromath
-      FACTION_STORMWIND.ModObjectLimit(FourCC(R03Y), Faction.UNLIMITED)       ;//Katrana Prestor
+      StormwindSetup.Stormwind.ModObjectLimit(FourCC(R03X), Faction.UNLIMITED)       ;//High Sorcerer Andromath
+      StormwindSetup.Stormwind.ModObjectLimit(FourCC(R03Y), Faction.UNLIMITED)       ;//Katrana Prestor
       EnablePortals();
     }
 

@@ -6,23 +6,20 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {
   public sealed class QuestShadowfang : QuestData
   {
-    public QuestShadowfang() : base("Shadows of Silverspine Forest",
+    public QuestShadowfang(unit worgenToKill) : base("Shadows of Silverspine Forest",
       "The woods of Silverspine are unsafe for travellers, they need to be investigated",
       "ReplaceableTextures\\CommandButtons\\BTNworgen.blp")
     {
-      AddQuestItem(QuestItemKillUnit.create(gg_unit_o02J_0984)); //Worgen
+      AddQuestItem(new QuestItemKillUnit(worgenToKill)); //Worgen
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01D"))));
       AddQuestItem(new QuestItemExpire(1444));
       AddQuestItem(new QuestItemSelfExists());
-      ;
-      ;
     }
-
-
+    
     protected override string CompletionPopup =>
-      "Shadowfang has been liberated, && its military is now free to assist the " + Holder.Team.Name + ".";
+      "Shadowfang has been liberated, and its military is now free to assist the " + Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => "Control of all units in Shadowfang";
+    protected override string RewardDescription => "Control of all units in Shadowfang";
 
     protected override void OnFail()
     {
@@ -32,10 +29,6 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     protected override void OnComplete()
     {
       RescueNeutralUnitsInRect(Regions.ShadowfangUnlock.Rect, Holder.Player);
-    }
-
-    protected override void OnAdd()
-    {
     }
   }
 }

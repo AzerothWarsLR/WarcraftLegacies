@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       ResearchId = FourCC("R07R");
     }
     
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "The old god Yogg-Saron will join the Black Empire and enable to train Forgotten ones.";
 
 

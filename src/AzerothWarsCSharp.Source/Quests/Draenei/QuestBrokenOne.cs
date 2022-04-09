@@ -19,6 +19,6 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
     
     protected override string CompletionPopup => "The hero Nobundo is now trainable at the Altar";
 
-    protected override string CompletionDescription => "Nobundo will join the survivors on the Exodar";
+    protected override string RewardDescription => "Nobundo will join the survivors on the Exodar";
   }
 }

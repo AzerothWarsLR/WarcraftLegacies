@@ -8,27 +8,33 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
 {
   public sealed class QuestTitanJailors : QuestData
   {
+    private readonly unit _waygate;
+    
     protected override string CompletionPopup =>
       "THe titan jailors guarding C'thuns resting place have been destroyed. Now nothing stands between the Qiraji and their master.";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Gain control of all units in Ahn'qiraj's inner temple and unlock the awakening spell for C'thunn";
 
+    private void ActivateWaygate()
+    {
+      WaygateActivate(_waygate, true);
+      WaygateSetDestination(_waygate, Regions.Silithus_Stone_Interior.Center.X, Regions.Silithus_Stone_Interior.Center.Y);
+    }
+    
     protected override void OnFail()
     {
       RescueNeutralUnitsInRect(Regions.TunnelUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      WaygateActivateBJ(true, gg_unit_h03V_0591);
-      WaygateSetDestinationLocBJ(gg_unit_h03V_0591, GetRectCenter(gg_rct_Silithus_Stone_Interior));
+      ActivateWaygate();
     }
 
     protected override void OnComplete()
     {
-      WaygateActivateBJ(true, gg_unit_h03V_0591);
-      WaygateSetDestinationLocBJ(gg_unit_h03V_0591, GetRectCenter(gg_rct_Silithus_Stone_Interior));
       RescueNeutralUnitsInRect(Regions.TunnelUnlock.Rect, Holder.Player);
+      ActivateWaygate();
     }
 
-    public QuestTitanJailors() : base("Jailors of the Old God",
+    public QuestTitanJailors(unit waygate) : base("Jailors of the Old God",
       "The Old God C'thun is imprisoned deep within the temple of Ahn'qiraj, defended by mechanical wardens left behind by the Titans.",
       "ReplaceableTextures\\CommandButtons\\BTNArmorGolem.blp")
     {
@@ -38,6 +44,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
       AddQuestItem(new QuestItemExpire(1428));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = FourCC("R07B");
+      _waygate = waygate;
     }
   }
 }

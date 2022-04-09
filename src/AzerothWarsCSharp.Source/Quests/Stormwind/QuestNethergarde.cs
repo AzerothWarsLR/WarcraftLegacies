@@ -1,5 +1,7 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Quests.Stormwind
 {
@@ -9,26 +11,22 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       "The nethergarde fort is holding down the Dark Portal, they will need to be reinforced soon!",
       "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionBarracks.blp")
     {
-      AddQuestItem(new QuestItemLegendInRect(LEGEND_VARIAN, Regions.NethergardeUnlock.Rect, "Nethergarde"));
+      AddQuestItem(new QuestItemLegendInRect(LegendStormwind.LegendVarian, Regions.NethergardeUnlock.Rect, "Nethergarde"));
       AddQuestItem(new QuestItemExpire(1440));
       AddQuestItem(new QuestItemSelfExists());
-      ;
-      ;
     }
-
-
+    
     protected override string CompletionPopup => "Varian has come to relieve the Nethergarde garrison.";
 
-    protected override string CompletionDescription => "You gain control of the Nethergarde base";
+    protected override string RewardDescription => "You gain control of the Nethergarde base";
 
-    private void GrantNethergarde(player whichPlayer)
+    private static void GrantNethergarde(player whichPlayer)
     {
       group tempGroup = CreateGroup();
-      unit u;
 
       //Transfer all Neutral Passive units in Nethergarde
       GroupEnumUnitsInRect(tempGroup, Regions.NethergardeUnlock.Rect, null);
-      u = FirstOfGroup(tempGroup);
+      unit u = FirstOfGroup(tempGroup);
       while (true)
       {
         if (u == null) break;
@@ -49,11 +47,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     protected override void OnComplete()
     {
       GrantNethergarde(Holder.Player);
-      FACTION_STORMWIND.ModObjectLimit(FourCC("h03F"), 1); //Reginald windsor
-    }
-
-    protected override void OnAdd()
-    {
+      StormwindSetup.Stormwind.ModObjectLimit(FourCC("h03F"), 1); //Reginald windsor
     }
   }
 }

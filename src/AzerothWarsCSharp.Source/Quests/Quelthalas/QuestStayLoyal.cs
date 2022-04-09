@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     protected override string CompletionPopup => "The Blood Elves stay loyal to Illidan";
 
-    protected override string CompletionDescription => "Stay allied to Illidan";
+    protected override string RewardDescription => "Stay allied to Illidan";
     private s Offer",
     "Kil)jaeden has approached Kael with an offer of power && salvation. He should refuse it && resist the temptation of Fel power."
     ,

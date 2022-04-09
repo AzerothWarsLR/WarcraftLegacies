@@ -51,7 +51,7 @@ namespace AzerothWarsCSharp.Source.Legends
       LegendTyrshand = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h030")),
-        DeathMessage = "TyrFourCC(s Hand, the bastion of human power in Lordaeron, has fallen.",
+        DeathMessage = "Tyr's Hand, the bastion of human power in Lordaeron, has fallen.",
         IsCapital = true
       };
 

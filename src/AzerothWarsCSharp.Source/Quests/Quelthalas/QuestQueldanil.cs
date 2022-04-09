@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     protected override string CompletionPopup =>
       "Quel'thalas has finally reunited with its lost rangers in the Hinterlands.";
 
-    protected override string CompletionDescription => "Control of Quel'danil Lodge";
+    protected override string RewardDescription => "Control of Quel'danil Lodge";
 
     protected override void OnComplete()
     {

@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "The territories of Lordaeron are fragmented. Regain control of the old Alliance's hold to secure the kingdom.",
       "ReplaceableTextures\\CommandButtons\\BTNCastle.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.legendCaerdarrow, false));
+      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendCaerdarrow, false));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01M"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01C"))));
       AddQuestItem(new QuestItemExpire(1472));
@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     protected override string CompletionPopup =>
       "Capital City has been liberated, && its military is now free to assist the " + Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => "Control of all units in Capital City";
+    protected override string RewardDescription => "Control of all units in Capital City";
 
     protected override void OnFail()
     {

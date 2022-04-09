@@ -8,24 +8,23 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
   {
     private static readonly int QuestResearchId = FourCC("R03A");
 
-    public QuestSpiderWar() : base("War of the Spider",
+    public QuestSpiderWar(unit spiderQueen) : base("War of the Spider",
       "The proud Nerubians have declared war on the newly formed Lich King, destroy them to secure the continent of Northrend.",
       "ReplaceableTextures\\CommandButtons\\BTNNerubianQueen.blp")
     {
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00I"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08D"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00G"))));
-      AddQuestItem(QuestItemKillUnit.create(gg_unit_n074_1565)); //Nezar)azret
+      AddQuestItem(new QuestItemKillUnit(spiderQueen));
       AddQuestItem(new QuestItemUpgrade(FourCC("unpl"), FourCC("unpl")));
       AddQuestItem(new QuestItemExpire(1480));
       AddQuestItem(new QuestItemSelfExists());
     }
-
-
+    
     protected override string CompletionPopup =>
       "Northrend && the Icecrown Citadel is now under full control of the Lich King and the " + Holder.Team.Name + ".";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Access to the Plague Research at the Frozen Throne, KelFourCC(tuzad && Rivendare trainable && a base in Icecrown";
 
     protected override void OnFail()

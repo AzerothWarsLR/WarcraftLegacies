@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
 
     protected override string CompletionPopup => "Nordrassil has been captured. The Warsong is supreme!";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Grom Hellscream gains " + I2S(EXPERIENCE_REWARD) + " experience";
 
     protected override void OnComplete()

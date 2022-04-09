@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
 
     protected override string CompletionPopup => "Skeram will be granted the Dragon Soul";
 
-    protected override string CompletionDescription => "The Dragon Soul will be granted to Skeram";
+    protected override string RewardDescription => "The Dragon Soul will be granted to Skeram";
 
     protected override void OnComplete()
     {

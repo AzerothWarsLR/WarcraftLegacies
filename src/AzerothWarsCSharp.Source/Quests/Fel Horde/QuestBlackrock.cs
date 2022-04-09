@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     protected override string CompletionPopup =>
       "Blackrock Citadel has been subjugated, && its military is now free to assist the " + Holder.Team.Name + ".";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Control of all units in Blackrock Citadel && enable DalFourCC(rend Blackhand to be trained at the altar";
 
     private void GrantBlackrock(player whichPlayer)

@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
@@ -10,17 +11,17 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       "A small troll skirmish is attacking Dun Morogh. Push them back!",
       "ReplaceableTextures\\CommandButtons\\BTNIceTrollShadowPriest.blp")
     {
-      AddQuestItem(QuestItemKillUnit.create(gg_unit_nith_1625)); //Troll
+      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nith")))); //Troll
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n014"))));
       AddQuestItem(new QuestItemExpire(1435));
       AddQuestItem(new QuestItemSelfExists());
     }
-    
+
     protected override string CompletionPopup => "The Trolls have been defeated, Dun Morogh will join your cause.";
 
-    protected override string CompletionDescription => "Control of all units in Dun Morogh";
+    protected override string RewardDescription => "Control of all units in Dun Morogh";
 
-    private void GrantDunMorogh(player whichPlayer)
+    private static void GrantDunMorogh(player whichPlayer)
     {
       group tempGroup = CreateGroup();
 
@@ -36,7 +37,6 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       }
 
       DestroyGroup(tempGroup);
-      
     }
 
     protected override void OnFail()

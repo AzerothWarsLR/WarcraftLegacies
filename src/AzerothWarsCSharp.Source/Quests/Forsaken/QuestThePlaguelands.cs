@@ -18,19 +18,17 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n03P"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01M"))));
       AddQuestItem(new QuestItemSelfExists());
-      ;
-      ;
     }
 
-
+    //Todo: includes mechanics, should just be flavour
     protected override string CompletionPopup =>
-      "The ravaged lands of Lordaeron are now under the control of the Forsaken && able to train up to 4 ValFourCC(kyr join their ranks. 500 gold was plundered.";
+      "The ravaged lands of Lordaeron are now under the control of the Forsaken and able to train up to 4 Val'kyr join their ranks. 500 gold was plundered.";
 
-    protected override string CompletionDescription => "Enable 4 ValFourCC(kyr to be raised && grants 500 gold";
+    protected override string RewardDescription => "Enable 4 Val'kyr to be raised and grants 500 gold";
 
     protected override void OnComplete()
     {
-      FACTION_FORSAKEN.ModObjectLimit(FourCC("u01V"), 2); //Valyr
+      Holder.ModObjectLimit(Constants.UNIT_VAL_KYR_FORSAKEN, 2);
       AdjustPlayerStateBJ(500, Holder.Player, PLAYER_STATE_RESOURCE_GOLD);
     }
   }

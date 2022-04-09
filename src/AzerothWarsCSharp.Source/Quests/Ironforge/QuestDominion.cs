@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
     protected override string CompletionPopup =>
       "The Dwarven Empire is re-united again, Ironforge is ready for war again.";
 
-    protected override string CompletionDescription => "Control of all units in Ironforge";
+    protected override string RewardDescription => "Control of all units in Ironforge";
 
     private void GrantDominion(player whichPlayer)
     {

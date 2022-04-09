@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Legends;
 using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
@@ -9,21 +10,18 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
   public sealed class QuestBlackTemple : QuestData
   {
     public QuestBlackTemple() : base("The Lord of Outland",
-      "The Fel Horde is weak && complacent. The Illidari will easily subjugate them into IllidanFourCC("s service
-        .", "ReplaceableTextures\\CommandButtons\\BTNMetamorphosis.blp"){
-
-    private AddQuestItem(
-    private new QuestItemControlLegend(LegendFelHorde.LegendBlacktemple, false));
-    private AddQuestItem(
-    private new QuestItemControlPoint(ControlPoint.GetFromUnitType
-    private AddQuestItem(
-    private new QuestItemResearch(FourCC
-    private FourCC(""
-
+      "The Fel Horde is weak and complacent. The Illidari will easily subjugate them into Illidan's service.",
+      "ReplaceableTextures\\CommandButtons\\BTNMetamorphosis.blp")
+    {
+      AddQuestItem(new QuestItemControlLegend(LegendFelHorde.LegendBlacktemple, false));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00R"))));
+      AddQuestItem(new QuestItemResearch(FourCC("R063"), FourCC("n055")));
+    }
+    
     protected override string CompletionPopup =>
       "Illidan has killed Magtheridon && subjugated the Fel Horde, the Illidari grow strong.";
 
-    protected override string CompletionDescription => "The Fel Horde will join us && Magtheridon will die";
+    protected override string RewardDescription => "The Fel Horde will join us and Magtheridon will die";
 
     protected override void OnComplete()
     {
@@ -31,10 +29,5 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       RemoveUnit(LegendFelHorde.LegendMagtheridon.Unit);
       FelHordeSetup.FactionFelHorde.ModObjectLimit(LegendFelHorde.LegendMagtheridon.UnitType, -Faction.UNLIMITED);
     }
-
-    n00R""))));R063""),n055"")));
-    Global= true;
   }
-}
-
 }

@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     protected override string CompletionPopup =>
       "Stonemaul has been liberated, && its military is now free to assist the " + Holder.Team.Name + ".";
 
-    protected override string CompletionDescription => "Control of all units in Stonemaul && 3000 lumber";
+    protected override string RewardDescription => "Control of all units in Stonemaul && 3000 lumber";
 
     private void GrantStonemaul(player whichPlayer)
     {

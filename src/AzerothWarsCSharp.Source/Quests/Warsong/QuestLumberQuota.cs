@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
 
     protected override string CompletionPopup => "Control of all units in Orgrimmar, able to train Varok";
 
-    protected override string CompletionDescription => "Control of all units in Orgrimmar, able to train Varok";
+    protected override string RewardDescription => "Control of all units in Orgrimmar, able to train Varok";
 
     protected override void OnComplete()
     {

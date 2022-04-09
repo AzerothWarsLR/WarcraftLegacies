@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     protected override string CompletionPopup =>
       "The Sentinels have been slain. With their Hippogryphs no longer terrorizing the skies, the Horde can field its refurbished Zeppelins.";
 
-    protected override string CompletionDescription => "Learn to train " + GetObjectName(UnittypeId) + "s";
+    protected override string RewardDescription => "Learn to train " + GetObjectName(UnittypeId) + "s";
 
     protected override void OnAdd()
     {

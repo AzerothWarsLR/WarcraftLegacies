@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
 
     protected override string CompletionPopup => "The lands of Lordaeron have been purged from Undeath && Corruption";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Enable to train Commander Goodchild && Isilien, Unlock New Hearthglen in Northrend && the Scarlet Harbor";
 
     protected override void OnComplete()

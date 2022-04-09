@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
     protected override string CompletionPopup =>
       "Undercity is now under the " + Holder.Team.Name + " && they have declared independance.";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Control of all units in Undercity, unlock Nathanos and unally the Legion team";
 
     protected override void OnFail()

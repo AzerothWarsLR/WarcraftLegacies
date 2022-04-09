@@ -2,11 +2,10 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
-  public class KultirasSetup
+  public static class KultirasSetup
   {
-    private Faction FACTION_KULTIRAS
-
-
+    public static Faction FACTION_KULTIRAS { get; private set; }
+    
     public static void Setup()
     {
       Faction f;

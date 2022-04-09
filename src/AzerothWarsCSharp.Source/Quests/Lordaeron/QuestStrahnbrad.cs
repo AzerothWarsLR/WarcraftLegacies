@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     protected override string CompletionPopup => "Strahnbrad has been liberated.";
 
-    protected override string CompletionDescription => "Control of all buildings in Strahnbrad";
+    protected override string RewardDescription => "Control of all buildings in Strahnbrad";
 
     protected override void OnFail()
     {

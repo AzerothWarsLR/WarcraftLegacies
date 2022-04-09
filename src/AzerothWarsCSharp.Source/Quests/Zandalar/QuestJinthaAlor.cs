@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
     protected override string CompletionPopup =>
       "Jintha'Alor has fallen. The Vilebranch trolls lend their might to the " + Holder.Team.Name + ".";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Control of Jintha'Alor, 300 gold tribute and the ability to train " + GetObjectName(BearRiderId) +
       "s from the " + GetObjectName(TrollShrineId);
 
@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       "The Vilebranch trolls of Jintha'Alor are controlled by their fear of the Soulflayer's egg, hidden within their shrine. Smash it to gain their loyalty.",
       "ReplaceableTextures\\CommandButtons\\BTNForestTrollShadowPriest.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.legendJinthaalor, false));
+      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendJinthaalor, false));
     }
   }
 }

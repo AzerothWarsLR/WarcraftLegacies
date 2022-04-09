@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
@@ -8,17 +9,15 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
     public QuestThelsamar() : base("Murloc Menace", "A vile group of Murloc is terrorizing Thelsamar. Destroy them!",
       "ReplaceableTextures\\CommandButtons\\BTNMurlocNightCrawler.blp")
     {
-      AddQuestItem(QuestItemKillUnit.create(gg_unit_N089_1494)); //Murloc
+      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnitByUnitType(FourCC("N089")))); //Murloc
       AddQuestItem(new QuestItemExpire(1435));
       AddQuestItem(new QuestItemSelfExists());
-      ;
-      ;
     }
 
 
     protected override string CompletionPopup => "The Murlocs have been defeated, Thelsamar will join your cause.";
 
-    protected override string CompletionDescription => "Control of all units in Thelsamar";
+    protected override string RewardDescription => "Control of all units in Thelsamar";
 
     private void GrantThelsamar(player whichPlayer)
     {

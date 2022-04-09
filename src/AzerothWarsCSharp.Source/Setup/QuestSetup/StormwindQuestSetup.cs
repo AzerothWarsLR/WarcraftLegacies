@@ -1,25 +1,40 @@
+using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.Source.Quests.Stormwind;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
-  public class StormwindQuestSetup{
+  public static class StormwindQuestSetup
+  {
+    public static void Setup()
+    {
+      var stormwind = StormwindSetup.Stormwind;
 
-    public static void Setup( ){
       //Setup
-      QuestData newQuest = FACTION_STORMWIND.AddQuest(QuestDarkshire.create());
-      FACTION_STORMWIND.StartingQuest = newQuest;
+      QuestData newQuest =
+        stormwind.AddQuest(new QuestDarkshire(PreplacedUnitSystem.GetUnitByUnitType(FourCC("ngnv"))));
+      stormwind.StartingQuest = newQuest;
       //Early duel
-      FACTION_STORMWIND.AddQuest(QuestLakeshire.create());
-      FACTION_STORMWIND.AddQuest(QuestGoldshire.create());
-      FACTION_STORMWIND.AddQuest(QuestStormwindCity.create());
-      FACTION_STORMWIND.AddQuest(QuestNethergarde.create());
+      stormwind.AddQuest(new QuestLakeshire(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nogl"))));
+      stormwind.AddQuest(new QuestGoldshire(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_HOGGER)));
+      stormwind.AddQuest(new QuestStormwindCity());
+      stormwind.AddQuest(new QuestNethergarde());
       //Misc
-      FACTION_STORMWIND.AddQuest(QuestStromgarde.create());
-      FACTION_STORMWIND.AddQuest(QuestHonorHold.create());
-      FACTION_STORMWIND.AddQuest(QuestKhadgar.create());
-      FACTION_STORMWIND.AddQuest(QuestClosePortal.create());
+      stormwind.AddQuest(new QuestStromgarde());
+      stormwind.AddQuest(new QuestHonorHold(
+        new List<unit>
+        {
+          PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_HONOR_HOLD_ARATHOR),
+          PreplacedUnitSystem.GetUnitByUnitType(FourCC("hbla")),
+          PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_DANATH_TROLLBANE_ARATHOR_DEMI),
+          PreplacedUnitSystem.GetUnitByUnitType(FourCC("hgtw")),
+          PreplacedUnitSystem.GetUnitByUnitType(FourCC("hars"))
+        }
+        ));
+      stormwind.AddQuest(new QuestKhadgar());
+      stormwind.AddQuest(new QuestClosePortal());
     }
-
   }
 }

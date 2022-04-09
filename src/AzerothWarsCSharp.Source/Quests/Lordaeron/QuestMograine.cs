@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     protected override string CompletionPopup =>
       "With the Lich King eliminated, the Kingdom of Lordaeron is free of its greatest threat. Alexandros Mograine gains recognition as a champion of the war, and prepares himself to aid Lordaeron in future conflicts in a greater capacity.";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "You can summon Alexandros Mograine from the " + GetObjectName(AltarId);
 
     protected override void OnAdd()

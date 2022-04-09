@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
     protected override string CompletionPopup =>
       "ZulFourCC(Gurub has fallen. The Gurubashi trolls lend their might to the " + Holder.Team.Name + ".";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Control of Zul'Gurub, 300 gold tribute and the ability to train " + GetObjectName(RavagerId) + "s from the " +
       GetObjectName(TrollShrineId);
 
@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       "The Gurubashi trolls of Zul'Gurub follow the sacred Heart of Hakkar, hidden within their shrine. Capture it to gain their loyalty.",
       "ReplaceableTextures\\CommandButtons\\BTNTrollRavager.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.legendZulgurub, false));
+      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendZulgurub, false));
     }
   }
 }

@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     protected override string CompletionPopup => "The Blood Elves have joined the Burning Legion";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Unlock the summon Kil'jaeden quest and join the Burning Legion team";
 
     protected override void OnComplete()

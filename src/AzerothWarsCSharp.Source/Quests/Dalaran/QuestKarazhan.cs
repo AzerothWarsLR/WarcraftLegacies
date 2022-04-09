@@ -1,6 +1,7 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {
@@ -10,22 +11,19 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "The spire of Medivh stands mysteriously idle. Dalaran could make use of its grand magicks.",
       "ReplaceableTextures\\CommandButtons\\BTNTomeBrown.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LEGEND_KARAZHAN, false));
-      ;
-      ;
+      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendKarazhan, false));
     }
-
-
+    
     protected override string CompletionPopup => "Karazhan has been captured. " + Holder.Name +
-                                                 "FourCC(s  archivists scour its halls for arcane resources.";
+                                                 "'s archivists scour its halls for arcane resources.";
 
-    protected override string CompletionDescription => "Learn to research three powerful upgrades at Karazhan.";
+    protected override string RewardDescription => "Learn to research three powerful upgrades at Karazhan.";
 
     protected override void OnAdd()
     {
-      Holder.ModObjectLimit(FourCC("R020"), Faction.UNLIMITED); //Rain: An Amalgam
-      Holder.ModObjectLimit(FourCC("R03M"), Faction.UNLIMITED); //Methods of Control
-      Holder.ModObjectLimit(FourCC("R01B"), Faction.UNLIMITED); //A Treatise on Barriers
+      Holder.ModObjectLimit(Constants.UPGRADE_RAIN_AN_AMALGAM_DALARAN_KARAZHAN, Faction.UNLIMITED);
+      Holder.ModObjectLimit(Constants.UPGRADE_METHODS_OF_NEGATION_DALARAN_KARAZHAN, Faction.UNLIMITED);
+      Holder.ModObjectLimit(Constants.UPGRADE_A_TREATISE_ON_BARRIERS_DALARAN_KARAZHAN, Faction.UNLIMITED);
     }
   }
 }

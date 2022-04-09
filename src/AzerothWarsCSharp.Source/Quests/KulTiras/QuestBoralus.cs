@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       "Proudmoore is stranded at sea. Rejoin Boralus to take control of the city.",
       "ReplaceableTextures\\CommandButtons\\BTNHumanShipyard.blp")
     {
-      this.AddQuestItem(new QuestItemResearch(FourCC("R04R"),)h06I)));
+      AddQuestItem(new QuestItemResearch(FourCC("R04R"), FourCC("h06I")));
       AddQuestItem(new QuestItemUpgrade(FourCC("h062"), FourCC("h062")));
       AddQuestItem(new QuestItemExpire(900));
       AddQuestItem(new QuestItemSelfExists());
@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
     protected override string CompletionPopup =>
       "KulFourCC(Tiras has joined the war && its military is now free to assist the " + Holder.Team.Name + ".";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Control of all units in KulFourCC(Tiras && enables Katherine Proodmoure to be trained at the altar";
 
     protected override void OnFail()

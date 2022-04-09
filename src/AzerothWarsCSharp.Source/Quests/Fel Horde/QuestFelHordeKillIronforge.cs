@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     protected override string CompletionPopup =>
       "The Great Forge has been annihilated. The Fel HordeFourCC(s peons immediately salvage its intact refineries && put them to purpose in the creation of Felsteel.";
 
-    protected override string CompletionDescription => "Learn to train " + I2S(UNIT_LIMIT) + " " +
+    protected override string RewardDescription => "Learn to train " + I2S(UNIT_LIMIT) + " " +
                                                        GetObjectName(UnittypeId) + "s from the " +
                                                        GetObjectName(BuildingId) + " && acquire Felsteel Plating";
 

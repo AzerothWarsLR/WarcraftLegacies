@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       _rescueUnits.Add(PreplacedUnitSystem.GetUnitByUnitType(FourCC("n0BE")));
     }
 
-    protected override string CompletionDescription => "Enable to research Astral Walk and build a shop";
+    protected override string RewardDescription => "Enable to research Astral Walk and build a shop";
     protected override string CompletionPopup => "Enable to research Astral Walk and build a shop";
 
     protected override void OnComplete()

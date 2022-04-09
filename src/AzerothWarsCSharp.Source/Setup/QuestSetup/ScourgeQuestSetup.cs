@@ -1,23 +1,24 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Quests.Scourge;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
-  public class ScourgeQuestSetup{
+  public static class ScourgeQuestSetup{
 
     public static void Setup( ){
-      QuestSpiderWar questSpiderWar = QuestSpiderWar.create();
-      QuestKelthuzad questKelthuzad = QuestKelthuzad.create();
-      QuestDrakUnlock questDrakUnlock = QuestDrakUnlock.create();
-      QuestPlague questPlague = QuestPlague.create();
-      QuestSapphiron questSapphiron = QuestSapphiron.create();
-      QuestCorruptArthas questCorruptArthas = QuestCorruptArthas.create();
-      QuestNaxxramas questNaxxramas = QuestNaxxramas.create();
-      QuestCivilWar questCivilWar = QuestCivilWar.create();
-      QuestLichKingArthas questLichKingArthas = QuestLichKingArthas.create();
+      QuestSpiderWar questSpiderWar = new QuestSpiderWar(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_QUEEN_NEZAR_AZRET));
+      QuestKelthuzad questKelthuzad = new QuestKelthuzad();
+      QuestDrakUnlock questDrakUnlock = new QuestDrakUnlock();
+      QuestPlague questPlague = new QuestPlague();
+      QuestSapphiron questSapphiron = new QuestSapphiron();
+      QuestCorruptArthas questCorruptArthas = new QuestCorruptArthas();
+      QuestNaxxramas questNaxxramas = new QuestNaxxramas();
+      QuestCivilWar questCivilWar = new QuestCivilWar();
+      QuestLichKingArthas questLichKingArthas = new QuestLichKingArthas();
 
-      questNaxxramas.AddQuestItem(QuestItemCompleteQuest.create(questKelthuzad));
+      questNaxxramas.AddQuestItem(new QuestItemCompleteQuest(questKelthuzad));
 
       //Setup
       ScourgeSetup.FactionScourge.AddQuest(questSpiderWar);

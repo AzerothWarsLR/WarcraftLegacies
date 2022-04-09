@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     protected override string CompletionPopup =>
       "Silvermoon siege has been lifted, and its military is now free to assist the " + Holder.Team.Name + ".";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Control of all units in Silvermoon and enable Anasterian to be trained at the Altar";
 
     private static void GrantSilvermoon(player whichPlayer)

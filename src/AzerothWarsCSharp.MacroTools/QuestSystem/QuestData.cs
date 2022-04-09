@@ -29,30 +29,38 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
 
     public string Title { get; }
 
+    /// <summary>
+    /// If true, completing this quest will broadcast a message to every player.
+    /// </summary>
     public bool Global { get; init; }
 
     /// <summary>
     ///   Describes to the player what will happen when the quest is completed.
+    ///   Describes mechanics, not flavour.
     /// </summary>
-    protected abstract string CompletionDescription { get; }
+    protected abstract string RewardDescription { get; }
 
     /// <summary>
     ///   Describes to the player what will happen when the quest is failed.
+    ///   Describes mechanics, not flavour.
     /// </summary>
-    protected virtual string FailureDescription => "DEFAULTFAILUREDESCRIPTION";
+    protected virtual string PenaltyDescription => "DEFAULTFAILUREDESCRIPTION";
 
     /// <summary>
     ///   Displayed to the player when the quest is completed.
+    ///   Describes flavour, not mechanics.
     /// </summary>
     protected abstract string CompletionPopup { get; }
 
     /// <summary>
     ///   Displayed to the player when the quest is failed.
+    ///   Describes flavour, not mechanics.
     /// </summary>
     protected virtual string FailurePopup => null;
 
     /// <summary>
     ///   Describes the background and flavour of this quest.
+    ///   Describes flavour, not mechanics.
     /// </summary>
     public string Description { get; }
 
@@ -159,11 +167,11 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         OnAdd();
         if (FailurePopup != null)
           QuestSetDescription(Quest,
-            Description + "\n|cffffcc00On completion:|r " + CompletionDescription +
-            "\n|cffffcc00On failure:|r " + FailureDescription);
+            Description + "\n|cffffcc00On completion:|r " + RewardDescription +
+            "\n|cffffcc00On failure:|r " + PenaltyDescription);
         else
           QuestSetDescription(Quest,
-            Description + "\n|cffffcc00On completion:|r " + CompletionDescription);
+            Description + "\n|cffffcc00On completion:|r " + RewardDescription);
 
         foreach (var questItem in _questItems) questItem.OnAdd();
 

@@ -5,26 +5,36 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
 {
   public sealed class QuestGatesofAhnqiraj : QuestData
   {
-    protected override string CompletionPopup => "The Old God C'thun has awake and&is now ready to unleash the Qiraji on the world of Azeorth.";
+    private unit _bigGate;
+    private unit _waygateA;
+    private unit _waygateB;
     
-    protected override string CompletionDescription => "Gain control of C'thun and enable you to open the Gates of Ahn'qiraj";
+    
+    protected override string CompletionPopup => "The Old God C'thun has awaken and now ready to unleash the Qiraji on the world of Azeorth.";
+    
+    protected override string RewardDescription => "Gain control of C'thun and enable you to open the Gates of Ahn'qiraj";
       
     protected override void OnComplete()
     {
-      WaygateActivate(gg_unit_h03V_3441, true);
-      ShowUnitShow(gg_unit_h03V_3441);
-      WaygateSetDestinationLocBJ(gg_unit_h03V_3441, GetRectCenter(gg_rct_WorldTunnelEntrance));
-      WaygateActivateBJ(gg_unit_h03V_3449, true);
-      ShowUnitShow(gg_unit_h03V_3449);
-      WaygateSetDestinationLocBJ(gg_unit_h03V_3449, GetRectCenter(gg_rct_WorldTunnelExit));
-      SetUnitInvulnerable(gg_unit_h02U_2413, false);
+      WaygateActivate(_waygateA, true);
+      ShowUnit(_waygateA, true);
+      WaygateSetDestinationLocBJ(_waygateA, GetRectCenter(Regions.WorldTunnelEntrance.Rect));
+      
+      WaygateActivate(_waygateB, true);
+      ShowUnit(_waygateB, true);
+      WaygateSetDestinationLocBJ(_waygateB, GetRectCenter(Regions.WorldTunnelExit.Rect));
+      
+      SetUnitInvulnerable(_bigGate, false);
       PlayThematicMusicBJ("war3mapImported\\CthunTheme.mp3");
     }
       
-    public QuestGatesofAhnqiraj() : base("The Gates of Ahn'qiraj",
+    public QuestGatesofAhnqiraj(unit bigGate, unit waygateA, unit waygateB) : base("The Gates of Ahn'qiraj",
       "At the conclusion of the War of the Shifting Sands, the Dragonflights sealed the Qiraji behind the Scarab Wall. Now centuries later, C'thun is once again ready to open the gates to his ancient empire.",
       "ReplaceableTextures\\CommandButtons\\BTNScarabMedal.blp")
     {
+      _bigGate = bigGate;
+      _waygateA = waygateA;
+      _waygateB = waygateB;
       Global = true;
       AddQuestItem(new QuestItemCastSpell(FourCC("A0O1"), true));
     }

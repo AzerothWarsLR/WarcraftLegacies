@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     protected override string CompletionPopup => "Garithos weak mind is an easy pray to Sylvanas mind control, ";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "You lose everything, but will spawn with Garithos and a small army in Capital City";
 
     protected override void OnComplete()

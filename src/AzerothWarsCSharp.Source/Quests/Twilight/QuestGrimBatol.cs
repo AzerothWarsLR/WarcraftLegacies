@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
     protected override string CompletionPopup =>
       "Grim Batol is now under our control, && its military is now free to assist the " + Holder.Team.Name + ".";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Control of all units in Grim Batol && able to train Orcish Death Knights";
 
     protected override void OnFail()

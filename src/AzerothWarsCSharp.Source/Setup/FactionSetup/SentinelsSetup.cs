@@ -5,14 +5,14 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
   public class SentinelsSetup{
 
   
-    Faction FACTION_SENTINELS
+    public static Faction Sentinels { get; private set; }
   
 
     public static void Setup( ){
       Faction f;
 
-      FACTION_SENTINELS = Faction.create("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80","ReplaceableTextures\\CommandButtons\\BTNPriestessOfTheMoon.blp");
-      f = FACTION_SENTINELS;
+      Sentinels = Faction.create("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80","ReplaceableTextures\\CommandButtons\\BTNPriestessOfTheMoon.blp");
+      f = Sentinels;
       f.Team = TEAM_NIGHT_ELVES;
       f.UndefeatedResearch = FourCC("R05Y");
       f.StartingGold = 150;

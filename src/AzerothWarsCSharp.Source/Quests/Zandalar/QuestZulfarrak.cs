@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
                                                  this.Holder.Team.Name +
                                                  ", you can train Storm Wyrms and Gahz'rilla awakens from its slumber.";
 
-    protected override string CompletionDescription =>
+    protected override string RewardDescription =>
       "Control of Zul'farrak, 300 gold tribute, enable to train Storm Wyrm and you can summon the hero Gahz'rilla from the Altar of Conquerors";
 
     protected override void OnComplete()
@@ -52,7 +52,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       DestroyGroup(tempGroup);
       SetPlayerTechResearched(Holder.Player, GahzrillaResearch, 1);
       AdjustPlayerStateBJ(300, Holder.Player, PLAYER_STATE_RESOURCE_GOLD);
-      SetUnitOwner(LegendNeutral.legendZulfarrak.Unit, Holder.Player, true);
+      SetUnitOwner(LegendNeutral.LegendZulfarrak.Unit, Holder.Player, true);
     }
 
     protected override void OnAdd()
@@ -65,7 +65,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       "The Sandfury Trolls of Zul'farrak are openly hostile to visitors, but they share a common heritage with the Zandalari Trolls. An adequate display of force could bring them around.",
       "ReplaceableTextures\\CommandButtons\\BTNDarkTroll.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.legendZulfarrak, false));
+      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendZulfarrak, false));
     }
   }
 }

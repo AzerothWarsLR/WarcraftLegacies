@@ -307,7 +307,6 @@ public static class Regions
 	public static Rectangle ScholomanceAmbient3 { get; set; } = new Rectangle(11200f, 7072f, 13728f, 7840f);
 	public static Rectangle HinterlandAmbient1 { get; set; } = new Rectangle(13600f, 3040f, 19136f, 5408f);
 	public static Rectangle HinterlandAmbient2 { get; set; } = new Rectangle(16256f, 5408f, 19072f, 7040f);
-	public static Rectangle Aerie_Peak { get; set; } = new Rectangle(13600f, 4096f, 14752f, 5184f);
 	public static Rectangle TolbaradAmbient { get; set; } = new Rectangle(10400f, -2176f, 12416f, 544f);
 	public static Rectangle BalorAmbient { get; set; } = new Rectangle(3104f, -14400f, 6656f, -10112f);
 	public static Rectangle StormwindAmbient2 { get; set; } = new Rectangle(6624f, -10528f, 8160f, -8544f);

@@ -1,59 +1,52 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.KulTiras
 {
   public sealed class QuestUnlockShip : QuestData
   {
-    private FailurePopup()
-    {
-      return "Boralus has fallen, Katherine has escaped on the Proudmoore Capital Ship with a handful of Survivors.";
-    }
+    private readonly unit _proudmooreCapitalShip;
+    
+    protected override string FailurePopup =>
+      "Boralus has fallen, Katherine has escaped on the Proudmoore Capital Ship with a handful of Survivors.";
 
-    private FailureDescription()
-    {
-      return "You lose everything you control, but you gain Katherine at the capital ship.";
-    }
+    protected override string PenaltyDescription =>
+      "You lose everything you control, but you gain Katherine at the capital ship.";
 
-    public QuestUnlockShip()
+    public QuestUnlockShip(unit proudmooreCapitalShip) : base("The Zandalar Menace",
+      "The Troll Empire of Zandalar is a danger to the safety of Kul'tiras and the Alliance. Before setting sail, we must eliminate them.",
+      "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp")
     {
-      thistype this = thistype.allocate("The Zandalar Menace",
-        "The Troll Empire of Zandalar is a danger to the safety of KulFourCC("tiras && the Alliance.Before setting sail,
-        we must eliminate them.", "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp");
-      AddQuestItem(new QuestItemControlLegend(LEGEND_DAZARALOR, false));
-      AddQuestItem(new QuestItemControlLegend(LEGEND_BORALUS, true));
+      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendDazaralor, false));
+      AddQuestItem(new QuestItemControlLegend(LegendKultiras.LegendBoralus, true));
+      _proudmooreCapitalShip = proudmooreCapitalShip;
     }
-
 
     protected override string CompletionPopup => "The Proudmoore capital ship is now ready to sails!";
 
-    protected override string CompletionDescription =>
-      "Unpause the Proudmoore capital ship && unlocks the buildings inside.";
-
-    private string operator
-
-    private string operator
+    protected override string RewardDescription =>
+      "Unpause the Proudmoore capital ship and unlocks the buildings inside.";
 
     protected override void OnComplete()
     {
       RescueNeutralUnitsInRect(Regions.ShipAmbient.Rect, Holder.Player);
-      PauseUnitBJ(false, gg_unit_h08T_0260);
+      PauseUnit(_proudmooreCapitalShip, false);
     }
 
     protected override void OnFail()
     {
-      unit u;
-      player holderPlayer = Holder.Person.Player;
-      LEGEND_KATHERINE.StartingXp = GetHeroXP(LEGEND_KATHERINE.Unit);
+      LegendKultiras.LegendKatherine.StartingXp = GetHeroXP(LegendKultiras.LegendKatherine.Unit);
       Holder.Obliterate();
-      LEGEND_KATHERINE.Spawn(Holder.Player, -15223, -22856, 110);
-      UnitAddItem(LEGEND_KATHERINE.Unit,
-        CreateItem(FourCC("I00M"), GetUnitX(LEGEND_KATHERINE.Unit), GetUnitY(LEGEND_KATHERINE.Unit)));
+      LegendKultiras.LegendKatherine.Spawn(Holder.Player, -15223, -22856, 110);
+      UnitAddItem(LegendKultiras.LegendKatherine.Unit,
+        CreateItem(FourCC("I00M"), GetUnitX(LegendKultiras.LegendKatherine.Unit),
+          GetUnitY(LegendKultiras.LegendKatherine.Unit)));
       if (GetLocalPlayer() == Holder.Player)
-        SetCameraPosition(GetRectCenterX(Regions.ShipAmbient).Rect, GetRectCenterY(gg_rct_ShipAmbient));
+        SetCameraPosition(Regions.ShipAmbient.Center.X, Regions.ShipAmbient.Center.Y);
       RescueNeutralUnitsInRect(Regions.ShipAmbient.Rect, Holder.Player);
-      PauseUnitBJ(false, gg_unit_h08T_0260);
-      SetUnitOwner(gg_unit_h08T_0260, Holder.Player, true);
+      PauseUnit(_proudmooreCapitalShip, true);
+      SetUnitOwner(_proudmooreCapitalShip, Holder.Player, true);
     }
   }
 }
