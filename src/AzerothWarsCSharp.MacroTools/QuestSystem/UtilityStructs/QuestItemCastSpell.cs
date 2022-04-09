@@ -1,69 +1,46 @@
+using WCSharp.Events;
+
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
+  /// <summary>
+  /// Completes when a unit casts a specific spell.
+  /// </summary>
   public sealed class QuestItemCastSpell : QuestItemData
   {
-    private unit caster;
-    private int spellId;
-    private bool holderOnly = false;
+    private readonly bool _holderOnly;
 
-    private static int count = 0;
-    private static thistype[] byIndex;
+    /// <summary>
+    /// The unit that was used to complete the quest.
+    /// </summary>
+    public unit Caster { get; private set; }
 
-    unit operator Caster()
+    private void OnCast()
     {
-      ;.caster;
-    }
-
-    private void OnCast(unit caster)
-    {
-      if (this.Progress != QuestProgress.Complete && (GetOwningPlayer(caster) == this.Holder.Player || !holderOnly))
+      if (Progress != QuestProgress.Complete && (GetOwningPlayer(GetTriggerUnit()) == Holder.Player || !_holderOnly))
       {
-        this.caster = caster;
-        this.Progress = QuestProgress.Complete;
+        Caster = GetTriggerUnit();
+        Progress = QuestProgress.Complete;
       }
     }
 
-    private static void OnAnyUnitFinishesSpell()
-    {
-      var i = 0;
-      thistype loopItem;
-      var spellAbilityId = GetSpellAbilityId();
-      while (true)
-      {
-        if (i == thistype.count)
-        {
-          break;
-        }
-
-        loopItem = thistype.byIndex[i];
-        if (loopItem.spellId == spellAbilityId)
-        {
-          loopItem.OnCast(GetTriggerUnit());
-        }
-
-        i = i + 1;
-      }
-    }
-
+    /// <summary>
+    /// Completes when a unit casts a specific spell.
+    /// </summary>
+    /// <param name="spellId">The spell that needs to be casted for completion.</param>
+    /// <param name="holderOnly">If true, the quest holder must cast the spell themselves.</param>
     public QuestItemCastSpell(int spellId, bool holderOnly)
     {
-      PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_SPELL_FINISH,
-        thistype.OnAnyUnitFinishesSpell); //TODO: use filtered events
+      PlayerUnitEvents.Register(PlayerUnitEvent.SpellFinish, OnCast);
       if (holderOnly)
       {
-        this.Description = "Cast " + GetObjectName(spellId);
+        Description = "Cast " + GetObjectName(spellId);
       }
       else
       {
-        this.Description = "Anyone casts " + GetObjectName(spellId);
+        Description = "Anyone casts " + GetObjectName(spellId);
       }
-
-      this.spellId = spellId;
-      this.holderOnly = holderOnly;
-      thistype.byIndex[thistype.count] = this;
-      thistype.count = thistype.count + 1;
-      ;
-      ;
+      
+      _holderOnly = holderOnly;
     }
   }
 }

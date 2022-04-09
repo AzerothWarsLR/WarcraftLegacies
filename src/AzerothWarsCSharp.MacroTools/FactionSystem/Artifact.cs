@@ -93,6 +93,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
     }
 
+    public event EventHandler<Artifact> Acquired;
+    
     public static event EventHandler<Artifact>? OnArtifactCreate;
     public static event EventHandler<Artifact>? OnArtifactAcquire;
     public static event EventHandler<Artifact>? OnArtifactDrop;
@@ -146,6 +148,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       OnArtifactFactionChange?.Invoke(this, this);
     }
 
+    public Person OwningPerson => _owningPerson;
+
     private void SetOwningPerson(Person? p)
     {
       _owningPerson = p;
@@ -163,6 +167,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     {
       OwningUnit = GetTriggerUnit();
       OnArtifactAcquire?.Invoke(this, this);
+      Acquired?.Invoke(this, this);
     }
 
     private void Dropped()

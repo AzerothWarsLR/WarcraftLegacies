@@ -2,57 +2,32 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemLegendHasArtifact : QuestItemData{
+  public sealed class QuestItemLegendHasArtifact : QuestItemData
+  {
+    private readonly Artifact _targetArtifact;
+    private readonly Legend _targetLegend;
 
-
-    private static int count = 0;
-    private static thistype[] byIndex;
-    private Artifact targetArtifact;
-    private Legend targetLegend;
-
-    private void OnAdd( ){
-      if (targetArtifact.OwningUnit == targetLegend.Unit){
-        this.Progress = QuestProgress.Complete;
+    public override void OnAdd()
+    {
+      if (_targetArtifact.OwningUnit == _targetLegend.Unit)
+      {
+        Progress = QuestProgress.Complete;
       }
     }
 
-    private void OnAcquired( ){
-      if (targetArtifact.OwningUnit == targetLegend.Unit){
-        this.Progress = QuestProgress.Complete;
-      }else {
-        this.Progress = QuestProgress.Incomplete;
-      }
+    private void OnAcquired(object? sender, Artifact artifact)
+    {
+      Progress = _targetArtifact.OwningUnit == _targetLegend.Unit
+        ? QuestProgress.Complete
+        : QuestProgress.Incomplete;
     }
 
-    static void OnAnyArtifactAcquired( ){
-      var i = 0;
-      thistype loopItem;
-      while(true){
-        if ( i == thistype.count){ break; }
-        loopItem = thistype.byIndex[i];
-        if (loopItem.targetArtifact == GetTriggerArtifact()){
-          loopItem.OnAcquired();
-        }
-        i = i + 1;
-      }
+    public QuestItemLegendHasArtifact(Legend targetLegend, Artifact targetArtifact)
+    {
+      Description = targetLegend.Name + " has " + GetItemName(targetArtifact.Item);
+      _targetLegend = targetLegend;
+      _targetArtifact = targetArtifact;
+      targetArtifact.Acquired += OnAcquired;
     }
-
-    public QuestItemLegendHasArtifact(Legend targetLegend, Artifact targetArtifact ){
-
-      this.Description = targetLegend.Name + " has " + GetItemName(targetArtifact.Item);
-      this.targetLegend = targetLegend;
-      this.targetArtifact = targetArtifact;
-      thistype.byIndex[thistype.count] = this;
-      thistype.count = thistype.count + 1;
-      
-    }
-
-
-    public static void Setup( ){
-      trigger trig = CreateTrigger();
-      OnArtifactOwnerChange.register(trig);
-      TriggerAddAction(trig,  OnAnyArtifactAcquired);
-    }
-
   }
 }

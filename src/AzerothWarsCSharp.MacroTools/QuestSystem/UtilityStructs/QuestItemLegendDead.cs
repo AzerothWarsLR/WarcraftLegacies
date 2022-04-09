@@ -1,67 +1,36 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemLegendDead : QuestItemData{
+  public class QuestItemLegendDead : QuestItemData
+  {
+    private readonly Legend _target;
 
+    public override Point Position => new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
 
-    private Legend target = 0;
-    private static int count = 0;
-    private static thistype[] byIndex;
+    public override bool DisplaysPosition => IsUnitType(_target.Unit, UNIT_TYPE_STRUCTURE) ||
+                                             GetOwningPlayer(_target.Unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE);
 
-    float operator X( ){
-      if (IsUnitType(target.Unit, UNIT_TYPE_STRUCTURE) || GetOwningPlayer(target.Unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE)){
-        return GetUnitX(target.Unit);
+    private void OnDeath(object? sender, Legend legend)
+    {
+      Progress = QuestProgress.Complete;
+    }
+
+    public QuestItemLegendDead(Legend target)
+    {
+      _target = target;
+      TargetWidget = target.Unit;
+      if (IsUnitType(target.Unit, UNIT_TYPE_STRUCTURE))
+      {
+        Description = target.Name + " is destroyed";
       }
-      return 0;
-    }
-
-    float operator Y( ){
-      if (IsUnitType(target.Unit, UNIT_TYPE_STRUCTURE) || GetOwningPlayer(target.Unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE)){
-        return GetUnitY(target.Unit);
+      else
+      {
+        Description = target.Name + " is dead";
       }
-      return 0;
+
+      target.PermanentlyDied += OnDeath;
     }
-
-    private void OnDeath( ){
-      this.Progress = QuestProgress.Complete;
-    }
-
-    private static void OnAnyUnitDeath( ){
-      var i = 0;
-      thistype loopItem;
-      Legend triggerLegend = GetTriggerLegend();
-      while(true){
-        if ( i == thistype.count){ break; }
-        loopItem = thistype.byIndex[i];
-        if (loopItem.target == triggerLegend){
-          loopItem.OnDeath();
-        }
-        i = i + 1;
-      }
-    }
-
-    public QuestItemLegendDead(Legend target ){
-
-      this.target = target;
-      this.targetWidget = target.Unit;
-      if (IsUnitType(target.Unit, UNIT_TYPE_STRUCTURE)){
-        this.Description = target.Name + " is destroyed";
-      }else {
-        this.Description = target.Name + " is dead";
-      }
-      thistype.byIndex[thistype.count] = this;
-      thistype.count = thistype.count + 1;
-      
-    }
-
-    private static void onInit( ){
-      trigger trig = CreateTrigger();
-      OnLegendPermaDeath.register(trig);
-      TriggerAddAction(trig,  thistype.OnAnyUnitDeath);
-    }
-
-
-
   }
 }

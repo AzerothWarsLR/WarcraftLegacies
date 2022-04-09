@@ -2,46 +2,24 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemSelfExists : QuestItemData{
-
-
-    private static int count = 0;
-    private static thistype[] byIndex;
-
-    bool operator ShowsInQuestLog( ){
-      return false;
+  public sealed class QuestItemSelfExists : QuestItemData{
+    public override void OnAdd(){
+      Progress = QuestProgress.Complete;
+      Holder.ScoreStatusChanged += OnAnyFactionScoreStatusChanged;
     }
 
-    void OnAdd( ){
-      this.Progress = QuestProgress.Complete;
-    }
-
-    static void OnAnyFactionScoreStatusChanged( ){
-      var i = 0;
-      Faction triggerFaction = GetTriggerFaction();
-      if (triggerFaction != 0 && triggerFaction.ScoreStatus == SCORESTATUS_DEFEATED){
-        while(true){
-          if ( i == thistype.count){ break; }
-          if (thistype.byIndex[i].Holder == triggerFaction){
-            thistype.byIndex[i].Progress = QuestProgress.Failed;
-          }
-          i = i + 1;
-        }
+    private void OnAnyFactionScoreStatusChanged(object? sender, Faction faction)
+    {
+      if (faction.ScoreStatus == ScoreStatus.Defeated)
+      {
+        Progress = QuestProgress.Failed;
       }
     }
 
     public QuestItemSelfExists()
     {
-      thistype.byIndex[thistype.count] = this;
-      thistype.count = thistype.count + 1;
-      this.Progress = QuestProgress.Complete;
-      
-    }
-
-    public static void Setup( ){
-      trigger trig = CreateTrigger();
-      FactionScoreStatusChanged.register(trig);
-      TriggerAddAction(trig,  OnAnyFactionScoreStatusChanged);
+      Progress = QuestProgress.Complete;
+      ShowsInQuestLog = false;
     }
 
   }

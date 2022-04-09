@@ -1,5 +1,6 @@
 using System;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem
 {
@@ -13,12 +14,21 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     private minimapicon _minimapIcon;
     private effect _mapEffect; //The visual effect that appears on the map, usually a Circle of Power
     private effect _overheadEffect;
-    private readonly widget _targetWidget = null;
+
+    /// <summary>
+    /// Where the <see cref="QuestItemData"/> can be completed.
+    /// </summary>
+    public virtual Point Position { get; }
+
+    /// <summary>
+    /// Whether or not the <see cref="QuestItemData"/> should display a position.
+    /// </summary>
+    public virtual bool DisplaysPosition => false;
 
     /// <summary>
     /// Overhead effects get rendered over the target widget.
     /// </summary>
-    public widget TargetWidget => _targetWidget;
+    public widget TargetWidget { get; set; }
 
     /// <summary>
     /// The file path for the overhead effect to use for this item.
@@ -39,11 +49,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// <summary>
     /// Whether or not this can be seen as a bullet point in the quest log.
     /// </summary>
-    public bool ShowsInQuestLog => true;
-
-    public float X => 0;
-
-    public float Y => 0;
+    public bool ShowsInQuestLog { get; set; } = true;
 
     public Faction Holder => ParentQuest != null ? ParentQuest.Holder : _parentQuestItem?.Holder;
 
@@ -125,10 +131,10 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
 
     public string PingPath => "MinimapQuestObjectivePrimary";
 
-    //Run when added to a Quest
-    public void OnAdd()
-    {
-    }
+    /// <summary>
+    /// Runs when a <see cref="QuestData"/> with this <see cref="QuestItemData"/> is added to a <see cref="Faction"/>.
+    /// </summary>
+    public virtual void OnAdd() { }
 
     //Shows the local aspects of this QuestItem, namely the minimap icon.
     public void ShowLocal()
@@ -136,9 +142,9 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       if (Progress == QuestProgress.Incomplete &&
           ParentQuest.Progress == QuestProgress.Incomplete)
       {
-        if (_minimapIcon == null && X != 0 && Y != 0)
+        if (_minimapIcon == null && Position.X != 0 && Position.Y != 0)
         {
-          _minimapIcon = CreateMinimapIcon(X, Y, 255, 255, 0, SkinManagerGetLocalPath(PingPath),
+          _minimapIcon = CreateMinimapIcon(Position.X, Position.Y, 255, 255, 0, SkinManagerGetLocalPath(PingPath),
             FOG_OF_WAR_MASKED);
         }
         else if (_minimapIcon != null)
@@ -157,9 +163,9 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         if (MapEffectPath != null && _mapEffect == null)
         {
           effectPath = GetLocalPlayer() == Holder.Player ? MapEffectPath : "";
-          _mapEffect = AddSpecialEffect(effectPath, X, Y);
+          _mapEffect = AddSpecialEffect(effectPath, Position.X, Position.Y);
           BlzSetSpecialEffectColorByPlayer(_mapEffect, Holder.Player);
-          BlzSetSpecialEffectHeight(_mapEffect, 100 + Environment.GetPositionZ(X, Y));
+          BlzSetSpecialEffectHeight(_mapEffect, 100 + Environment.GetPositionZ(Position.X, Position.Y));
         }
 
         if (OverheadEffectPath != null && _overheadEffect == null && TargetWidget != null)

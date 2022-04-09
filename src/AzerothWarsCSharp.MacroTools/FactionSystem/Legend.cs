@@ -32,6 +32,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private string? _name;
     private bool _hivemind;
 
+    /// <summary>
+    /// Fired when the <see cref="Legend"/> permanently dies.
+    /// </summary>
+    public event EventHandler<Legend>? PermanentlyDied;
+    
     public static event EventHandler<LegendChangeOwnerEventArgs>? OnLegendChangeOwner;
 
     /// <summary>
@@ -344,6 +349,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
 
       OnLegendPermaDeath?.Invoke(this, this);
+      PermanentlyDied?.Invoke(this, this);
     }
 
     private void OnChangeOwner()

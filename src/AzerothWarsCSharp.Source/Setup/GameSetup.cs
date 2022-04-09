@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.Source.Artifacts;
 using AzerothWarsCSharp.Source.Game_Logic;
@@ -12,6 +13,7 @@ namespace AzerothWarsCSharp.Source.Setup
   {
     public static void Setup()
     {
+      Legend.Setup();
       QuestData.Setup();
       ShoreSetup.Setup();
       InstanceSetup_OnInit();

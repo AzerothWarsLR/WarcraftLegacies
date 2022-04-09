@@ -1,50 +1,41 @@
+using WCSharp.Events;
+
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemKillXUnit : QuestItemData{
+  /// <summary>
+  /// Completes when the quest holder has killed a certain number of units of a certain type.
+  /// </summary>
+  public class QuestItemKillXUnit : QuestItemData
+  {
+    private readonly int _objectId;
+    private int _currentKillXUnitCount;
+    private readonly int _targetKillXUnitCount;
 
-
-    private static int count = 0;
-    private static thistype[] byIndex;
-    private int objectId;
-    private int currentKillXUnitCount;
-    private int targetKillXUnitCount;
-
-    private void operator CurrentKillXUnitCount=(int value ){
-      currentKillXUnitCount = value;
-      this.Description = "Kill " + GetObjectName(objectId) + "s (" + I2S(currentKillXUnitCount) + "/" + I2S(targetKillXUnitCount) + ")";
-    }
-
-    public QuestItemKillXUnit(int objectId, int targetKillXUnitCount ){
-
-      this.objectId = objectId;
-      thistype.byIndex[thistype.count] = this;
-      thistype.count = thistype.count + 1;
-      this.targetKillXUnitCount = targetKillXUnitCount;
-      this.CurrentKillXUnitCount = 0;
-      
-    }
-
-    private static void OnAnyKillXUnit( ){
-      var i = 0;
-      thistype loopQuestItem;
-      unit triggerUnit = GetDyingUnit();
-      while(true){
-        if ( i == thistype.count){ break; }
-        loopQuestItem = thistype.byIndex[i];
-        if (!loopQuestItem.ProgressLocked && loopQuestItem.objectId == GetUnitTypeId(triggerUnit)){
-          loopQuestItem.CurrentKillXUnitCount = loopQuestItem.currentKillXUnitCount + 1;
-          if (loopQuestItem.currentKillXUnitCount == loopQuestItem.targetKillXUnitCount){
-            loopQuestItem.Progress = QuestProgress.Complete;
-          }
-        }
-        i = i + 1;
+    private int CurrentKillXUnitCount
+    {
+      set
+      {
+        _currentKillXUnitCount = value;
+        Description = "Kill " + GetObjectName(_objectId) + "s (" + I2S(_currentKillXUnitCount) + "/" +
+                      I2S(_targetKillXUnitCount) + ")";
       }
     }
 
-    private static void onInit( ){
-      PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_DEATH ,  thistype.OnAnyKillXUnit) ;//TODO: use filtered events
+    public QuestItemKillXUnit(int objectId, int targetKillXUnitCount)
+    {
+      _objectId = objectId;
+      _targetKillXUnitCount = targetKillXUnitCount;
+      CurrentKillXUnitCount = 0;
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDies, OnAnyKillXUnit, objectId);
     }
 
-
+    private void OnAnyKillXUnit()
+    {
+      CurrentKillXUnitCount = _currentKillXUnitCount + 1;
+      if (_currentKillXUnitCount == _targetKillXUnitCount)
+      {
+        Progress = QuestProgress.Complete;
+      }
+    }
   }
 }

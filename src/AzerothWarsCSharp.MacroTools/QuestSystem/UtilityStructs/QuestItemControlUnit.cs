@@ -1,44 +1,28 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Events;
+using WCSharp.Shared.Data;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemControlUnit{
-
-
-    private static thistype[] byHandleId;
-    private unit target;
-
-    float operator X( ){
-      return GetUnitX(target);
-    }
-
-    float operator Y( ){
-      return GetUnitY(target);
-    }
+  public sealed class QuestItemControlUnit : QuestItemData, IHasPosition {
+    
+    private readonly unit _target;
 
     private void OnUnitChangeOwner( ){
-      if (this.Holder.Team.ContainsFaction(Person.ByHandle(GetOwningPlayer(target)))){
-        this.Progress = QuestProgress.Complete;
+      if (Holder.Team.ContainsPlayer(GetOwningPlayer(_target))){
+        Progress = QuestProgress.Complete;
       }
     }
 
-    private static void OnAnyUnitChangeOwner( ){
-      thistype.byHandleId[GetHandleId(GetTriggerUnit())].OnUnitChangeOwner();
+    public QuestItemControlUnit(unit target){
+      Description = "Your team controls " + GetUnitName(target);
+      TargetWidget = target;
+      _target = target;
+
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeChangesOwner, OnUnitChangeOwner);
     }
 
-    thistype (unit target ){
+    public Point Position => new(GetUnitX(_target), GetUnitY(_target));
 
-      trigger trig = CreateTrigger();
-      TriggerRegisterUnitEvent(trig, target, EVENT_UNIT_CHANGE_OWNER);
-      TriggerAddAction(trig,  thistype.OnAnyUnitChangeOwner);
-      this.Description = "Your team controls " + GetUnitName(target);
-      this.target = target;
-      this.targetWidget = target;
-      thistype.byHandleId[GetHandleId(target)] = this;
-      
-    }
-
-
-
+    public bool DisplaysPosition => true;
   }
 }

@@ -1,3 +1,5 @@
+using WCSharp.Events;
+
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
   public class QuestItemAnyUnitInRect : QuestItemData

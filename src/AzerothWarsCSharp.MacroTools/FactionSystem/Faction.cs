@@ -61,6 +61,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       _icon = icon;
     }
 
+    public EventHandler<Faction> ScoreStatusChanged;
+    
     public int StartingGold { get; init; }
 
     public int StartingLumber { get; init; }
@@ -106,6 +108,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
         _scoreStatus = value;
         StatusChanged?.Invoke(this, this);
+        ScoreStatusChanged?.Invoke(this, this);
       }
     }
 
