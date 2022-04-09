@@ -290,7 +290,9 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
           return;
         }
 
-        Team = Team.Register(new Team(newTeamName));
+        var newTeam = new Team(newTeamName);
+        Team.Register(newTeam);
+        Team = newTeam;
       }
     }
 
