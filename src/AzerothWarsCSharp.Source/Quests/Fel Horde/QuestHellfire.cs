@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
@@ -9,35 +10,36 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
   {
     private static readonly int QuestResearchId = FourCC("R00P");
 
-    public QuestHellfire() : base("The Citadel",
-      "The clans holding Hellfire Citadel do !respect Kargath authority yet, destroy Murmur to finally establish Magtheridon as the undisputable king of Outland",
+    private readonly List<unit> _demonGates;
+
+    //Todo: mediocre flavour
+    public QuestHellfire(List<unit> demonGates) : base("The Citadel",
+      "The clans holding Hellfire Citadel do not respect Kargath authority yet, destroy Murmur to finally establish Magtheridon as the undisputable king of Outland",
       "ReplaceableTextures\\CommandButtons\\BTNFelOrcFortress.blp")
     {
+      _demonGates = demonGates;
       AddQuestItem(new QuestItemLegendDead(LegendDraenei.LegendExodarship));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01J"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02N"))));
       AddQuestItem(new QuestItemUpgrade(FourCC("o02Y"), FourCC("o02Y")));
       AddQuestItem(new QuestItemExpire(1450));
       AddQuestItem(new QuestItemSelfExists());
-      ;
-      ;
     }
 
-
+    //Todo: bad flavor
     protected override string CompletionPopup =>
-      "Hellfire Citadel has been subjugated, && its military is now free to assist the " + Holder.Team.Name + ".";
+      "Hellfire Citadel has been subjugated, and its military is now free to assist the " + Holder.Team.Name + ".";
 
     protected override string RewardDescription =>
-      "Control of all units in Hellfire Citadel && enable Kargath to be trained at the altar";
+      "Control of all units in Hellfire Citadel and enable Kargath to be trained at the altar";
 
-    private void GrantHellfire(player whichPlayer)
+    private static void GrantHellfire(player whichPlayer)
     {
       group tempGroup = CreateGroup();
-      unit u;
 
       //Transfer all Neutral Passive units in Hellfire Citadel
       GroupEnumUnitsInRect(tempGroup, Regions.HellfireUnlock.Rect, null);
-      u = FirstOfGroup(tempGroup);
+      unit u = FirstOfGroup(tempGroup);
       while (true)
       {
         if (u == null) break;
@@ -47,13 +49,15 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       }
 
       DestroyGroup(tempGroup);
-      
     }
 
     protected override void OnComplete()
     {
-      UnitRescue(gg_unit_n081_0882, FelHordeSetup.FactionFelHorde.Player);
-      UnitRescue(gg_unit_n081_0717, FelHordeSetup.FactionFelHorde.Player);
+      foreach (var unit in _demonGates)
+      {
+        UnitRescue(unit, Holder.Player);
+      }
+
       SetPlayerTechResearched(Holder.Player, FourCC("R00P"), 1);
       GrantHellfire(Holder.Player);
       if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\FelTheme.mp3");

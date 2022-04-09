@@ -5,31 +5,17 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
 {
   public sealed class QuestSpreadTheWord : QuestData
   {
-    private static readonly int QUEST_RESEARCH_ID = FourCC("R05F"); //This research is given when the quest is completed
-
     public QuestSpreadTheWord() : base("Spread the Whispers of the Old God",
       "The world shall hear the whispers of the Old God. Spread the visions of the end",
       "ReplaceableTextures\\CommandButtons\\BTNOldGodWhispers.blp")
     {
-      this.AddQuestItem(new QuestItemBuild(FourCC("o03C"), 1));
-      this.AddQuestItem(new QuestItemTrain(FourCC("obot"),)o03I), 3));
-      ResearchId = QUEST_RESEARCH_ID;
-      ;
-      ;
+      AddQuestItem(new QuestItemBuild(FourCC("o03C"), 1));
+      AddQuestItem(new QuestItemTrain(FourCC("obot"), FourCC("o03I"), 3));
+      ResearchId = FourCC("R05F");
     }
-
-
+    
     protected override string CompletionPopup => "The high priestess Azil is now trainable";
 
     protected override string RewardDescription => "The high priestess Azil is trainable at the altar";
-
-    protected override void OnComplete()
-    {
-    }
-
-    protected override void OnAdd()
-    {
-      Holder.ModObjectLimit(QUEST_RESEARCH_ID, 1);
-    }
   }
 }

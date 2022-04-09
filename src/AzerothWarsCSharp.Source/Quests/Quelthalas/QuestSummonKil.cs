@@ -1,37 +1,30 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {
   public sealed class QuestSummonKil : QuestData
   {
-    private static readonly int RitualId = FourCC("A0R7");
-
-    private Global()
+    public QuestSummonKil() : base("The Great Deceiver",
+      "The greater demon Kil'jaeden has been scheming for aeons. Will Kael finally be the one to summon him and consume Azeroth?",
+      "ReplaceableTextures\\CommandButtons\\BTNKiljaedin.blp")
     {
-      return true;
-    }
-
-    public QuestSummonKil()
-    {
-      thistype this = thistype.allocate("The Great Deceiver",
-        "The greater demon Kil'jaeden has been scheming for aeons. Will kael finally be the one to summon him && consume Azeroth?",
-        "ReplaceableTextures\\CommandButtons\\BTNKiljaedin.blp");
-      AddQuestItem(new QuestItemChannelRect(Regions.KaelSunwellChannel, "The Sunwell", LegendQuelthalas.LegendKael, 180.Rect, 270));
+      AddQuestItem(new QuestItemChannelRect(Regions.KaelSunwellChannel.Rect, "The Sunwell", LegendQuelthalas.LegendKael,
+        180, 270));
+      Global = true;
     }
 
     protected override string CompletionPopup => "The greater demon Kil'jaeden has been summoned to Azeroth";
 
     protected override string RewardDescription => "The hero Kil'jaeden";
-
-
-    private bool operator
-
+    
     protected override void OnComplete()
     {
       UnitRemoveAbilityBJ(FourCC("A0R7"), LegendQuelthalas.LegendKael.Unit);
-      LEGEND_KILJAEDEN.Spawn(QuelthalasSetup.FactionQuelthalas.Player, GetRectCenterX(Regions.Sunwell),
-        GetRectCenterY(gg_rct_Sunwell).Rect, 244);
+      LegendQuelthalas.LegendKiljaeden.Spawn(QuelthalasSetup.FactionQuelthalas.Player, Regions.Sunwell.Center.X,
+        Regions.Sunwell.Center.Y, 244);
     }
   }
 }

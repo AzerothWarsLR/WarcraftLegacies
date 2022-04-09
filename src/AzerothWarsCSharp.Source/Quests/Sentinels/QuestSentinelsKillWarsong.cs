@@ -1,23 +1,20 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Sentinels
 {
   public sealed class QuestSentinelsKillWarsong : QuestData
   {
-    private static readonly int ResearchId = FourCC("R007");
-
     public QuestSentinelsKillWarsong() : base("Green-skinned Brutes",
-      "The Warsong Clan has arrived near Ashenvale && begun threatening the wilds. These invaders must be repelled.",
+      "The Warsong Clan has arrived near Ashenvale and begun threatening the wilds. These invaders must be repelled.",
       "ReplaceableTextures\\CommandButtons\\BTNRaider.blp")
     {
-      AddQuestItem(new QuestItemLegendDead(LEGEND_STONEMAUL));
-      ;
-      ;
+      AddQuestItem(new QuestItemLegendDead(LegendWarsong.LegendStonemaul));
+      ResearchId = Constants.UPGRADE_QUEST_COMPLETED_GREEN_SKINNED_BRUTES_SENTINELS;
     }
-
-
+    
     protected override string CompletionPopup =>
       "The Warsong presence on Kalimdor has been eliminated. The land has been protected from their misbegotten race.";
 

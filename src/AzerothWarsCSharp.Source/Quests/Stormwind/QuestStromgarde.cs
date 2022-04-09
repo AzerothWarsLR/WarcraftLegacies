@@ -8,28 +8,25 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
   public sealed class QuestStromgarde : QuestData
   {
     private static readonly int HeroId = FourCC("H00Z");
-    private static readonly int ResearchId = FourCC("R01M");
 
+    private readonly QuestItemAnyUnitInRect _questItemAnyUnitInRect;
 
-    private readonly QuestItemAnyUnitInRect _questItemAnyUnitInRect = 0;
-
-    public QuestStromgarde()
+    public QuestStromgarde() : base("Stromgarde",
+      "Although Stromgarde's strength has dwindled since the days of the Arathorian Empire, it remains a significant bastion of humanity. They could be convinced to mobilize their forces for Stormwind.",
+      "ReplaceableTextures\\CommandButtons\\BTNTheCaptain.blp")
     {
-      thistype this = thistype.allocate("Stromgarde",
-        "Although StromgardeFourCC("s strength has dwindled since the days of the Arathorian Empire,
-        it remains a significant bastion of humanity.They could be convinced to mobilize their forces for Stormwind.
-      ", "ReplaceableTextures\\CommandButtons\\BTNTheCaptain.blp");
-      _questItemAnyUnitInRect = QuestItemAnyUnitInRect.create(Regions.Stromgarde, "Stromgarde".Rect, true);
+      _questItemAnyUnitInRect = new QuestItemAnyUnitInRect(Regions.Stromgarde.Rect, "Stromgarde", true);
       AddQuestItem(_questItemAnyUnitInRect);
       AddQuestItem(new QuestItemSelfExists());
+      ResearchId = Constants.UPGRADE_QUEST_COMPLETED_STROMGARDE_STORMWIND;
     }
 
-    protected override string CompletionPopup => "Galen Trollbane has pledged his forces to StormwindFourCC(s cause.";
+    protected override string CompletionPopup => "Galen Trollbane has pledged his forces to Stormwind's cause.";
 
     protected override string RewardDescription =>
-      "Control of all units at Stromgarde, the artifact TrolFourCC(kalar, && you can summon the hero Galen Trollbane from the Altar of Kings";
+      "Control of all units at Stromgarde, the artifact Trol'kalar, and you can summon the hero Galen Trollbane from the Altar of Kings";
 
-    private void GiveStromgarde(player whichPlayer)
+    private static void GiveStromgarde(player whichPlayer)
     {
       group tempGroup = CreateGroup();
       unit u;
@@ -45,20 +42,19 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
       //Cleanup
       DestroyGroup(tempGroup);
-      
     }
 
     protected override void OnFail()
     {
       GiveStromgarde(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      SetItemPosition(ARTIFACT_TROLKALAR.Item, 140889, 12363);
-ArtifactSetup.      ARTIFACT_TROLKALAR.Status = ARTIFACT_STATUS_GROUND;
+      SetItemPosition(ArtifactSetup.ArtifactTrolkalar.Item, 140889, 12363);
+      ArtifactSetup.ArtifactTrolkalar.Status = ArtifactStatus.Ground;
     }
 
     protected override void OnComplete()
     {
       GiveStromgarde(Holder.Player);
-      UnitAddItemSafe(_questItemAnyUnitInRect.TriggerUnit, ARTIFACT_TROLKALAR.Item);
+      UnitAddItemSafe(_questItemAnyUnitInRect.TriggerUnit, ArtifactSetup.ArtifactTrolkalar.Item);
       SetPlayerTechResearched(Holder.Player, ResearchId, 1);
     }
 

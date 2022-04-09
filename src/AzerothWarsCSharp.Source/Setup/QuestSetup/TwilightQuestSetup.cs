@@ -1,19 +1,24 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.Source.Quests.Twilight;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
-  public class TwilightQuestSetup{
+  public static class TwilightQuestSetup{
 
-    public static void Setup( ){
-
-      FACTION_TWILIGHT.StartingQuest = FACTION_TWILIGHT.AddQuest(QuestDragonmawPort.create());
-      FACTION_TWILIGHT.AddQuest(QuestGrimBatol.create());
-      FACTION_TWILIGHT.AddQuest(QuestSpreadTheWord.create());
-      FACTION_TWILIGHT.AddQuest(QuestThunderfury.create());
-      FACTION_TWILIGHT.AddQuest(QuestFeludius.create());
-      FACTION_TWILIGHT.AddQuest(QuestIgnacious.create());
-      FACTION_TWILIGHT.AddQuest(QuestCataclysm.create());
-
+    public static void Setup( )
+    {
+      var twilight = TwilightSetup.FACTION_TWILIGHT;
+      twilight.StartingQuest = twilight.AddQuest(new QuestDragonmawPort());
+      twilight.AddQuest(new QuestGrimBatol(
+        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_GRIM_BATOL_TUNNELS),
+        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_GRIM_BATOL_TUNNELS),
+        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_GRIM_BATOL_CREEP)));
+      twilight.AddQuest(new QuestSpreadTheWord());
+      twilight.AddQuest(new QuestThunderfury());
+      twilight.AddQuest(new QuestFeludius());
+      twilight.AddQuest(new QuestIgnacious());
+      twilight.AddQuest(new QuestCataclysm());
     }
 
   }

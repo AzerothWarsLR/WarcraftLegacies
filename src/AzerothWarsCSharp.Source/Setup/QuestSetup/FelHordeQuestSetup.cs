@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.Source.Quests.Fel_Horde;
@@ -9,15 +10,17 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
   {
     public static void Setup()
     {
-      //Early duel
       QuestData newQuest = FactionFelHorde.AddQuest(new QuestKillDraenei());
       FactionFelHorde.StartingQuest = newQuest;
       FactionFelHorde.AddQuest(new QuestKilsorrow(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_KIL_SORROW_FORTRESS)));
-      FactionFelHorde.AddQuest(new QuestHellfire());
+      FactionFelHorde.AddQuest(new QuestHellfire(new List<unit>
+      {
+        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_UNFOCUSED_DEMON_GATE_T0),
+        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_UNFOCUSED_DEMON_GATE_T0)
+      }));
       FactionFelHorde.AddQuest(new QuestBlackrock());
       FactionFelHorde.AddQuest(new QuestFelHordeKillIronforge());
       FactionFelHorde.AddQuest(new QuestFelHordeKillStormwind());
-      //Misc
       FactionFelHorde.AddQuest(new QuestGuldansLegacy());
     }
   }

@@ -9,19 +9,15 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
   {
     private static readonly int SapphironId = FourCC("ubdd");
     private static readonly int SapphironResearch = FourCC("R025");
-
-    public QuestSapphiron()
+    
+    public QuestSapphiron(unit sapphiron) : base("Sapphiron", "Kill Sapphiron the Blue Dragon to have Kel'Tuzad reanimate her as a Frost Wyrm. Sapphiron can be found in Northrend.", "ReplaceableTextures\\CommandButtons\\BTNFrostWyrm.blp")
     {
-      thistype this = thistype.allocate("Sapphiron",
-        "Kill Sapphiron the Blue Dragon to have KelFourCC("Tuzad reanimate her as a Frost Wyrm
-          .Sapphiron can be found in Northrend.", "ReplaceableTextures\\CommandButtons\\BTNFrostWyrm.blp");
-      AddQuestItem(new QuestItemKillUnit(gg_unit_ubdr_0668));
+      AddQuestItem(new QuestItemKillUnit(sapphiron));
       AddQuestItem(new QuestItemControlLegend(LegendScourge.LegendKelthuzad, false));
     }
-
-
+    
     protected override string CompletionPopup =>
-      "Sapphiron has been slain, && has been reanimated as a mighty Frost Wyrm under the command of the Scourge.";
+      "Sapphiron has been slain, and has been reanimated as a mighty Frost Wyrm under the command of the Scourge.";
 
     protected override string RewardDescription => "The demihero Sapphiron";
 

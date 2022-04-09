@@ -5,18 +5,20 @@ using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
-  public static class ScourgeQuestSetup{
-
-    public static void Setup( ){
-      QuestSpiderWar questSpiderWar = new QuestSpiderWar(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_QUEEN_NEZAR_AZRET));
-      QuestKelthuzad questKelthuzad = new QuestKelthuzad();
-      QuestDrakUnlock questDrakUnlock = new QuestDrakUnlock();
-      QuestPlague questPlague = new QuestPlague();
-      QuestSapphiron questSapphiron = new QuestSapphiron();
-      QuestCorruptArthas questCorruptArthas = new QuestCorruptArthas();
-      QuestNaxxramas questNaxxramas = new QuestNaxxramas();
-      QuestCivilWar questCivilWar = new QuestCivilWar();
-      QuestLichKingArthas questLichKingArthas = new QuestLichKingArthas();
+  public static class ScourgeQuestSetup
+  {
+    public static void Setup()
+    {
+      QuestSpiderWar questSpiderWar = new(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_QUEEN_NEZAR_AZRET));
+      QuestKelthuzad questKelthuzad = new();
+      QuestDrakUnlock questDrakUnlock = new();
+      QuestPlague questPlague = new();
+      QuestSapphiron questSapphiron = new(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_SAPPHIRON_CREEP));
+      QuestCorruptArthas questCorruptArthas = new();
+      QuestNaxxramas questNaxxramas = new(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_NAXXRAMAS_SCOURGE));
+      QuestCivilWar questCivilWar = new();
+      QuestLichKingArthas questLichKingArthas =
+        new(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_UTGARDE_KEEP_SCOURGE));
 
       questNaxxramas.AddQuestItem(new QuestItemCompleteQuest(questKelthuzad));
 
@@ -34,6 +36,5 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       //Misc
       ScourgeSetup.FactionScourge.AddQuest(questLichKingArthas);
     }
-
   }
 }

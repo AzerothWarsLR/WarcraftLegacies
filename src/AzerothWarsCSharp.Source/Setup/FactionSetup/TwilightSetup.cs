@@ -2,10 +2,8 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
-  public class TwilightSetup{
-
-  
-    Faction FACTION_TWILIGHT
+  public static class TwilightSetup{
+    public static Faction FACTION_TWILIGHT { get; private set; }
   
 
     public static void Setup( ){

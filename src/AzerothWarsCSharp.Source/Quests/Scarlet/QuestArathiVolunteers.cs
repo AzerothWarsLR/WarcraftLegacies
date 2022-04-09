@@ -1,27 +1,22 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
 namespace AzerothWarsCSharp.Source.Quests.Scarlet
 {
   public sealed class QuestArathiVolunteers : QuestData
   {
-    private static readonly int QuestResearchId = FourCC("R089");
-    
+    //Todo: bad flavour
     protected override string CompletionPopup => "The Arathi have been convinced to join the fight.";
 
-    protected override string CompletionDescription => "Enable to train Mounted Archers";
+    protected override string RewardDescription => "Enable to train Mounted Archers";
 
-  public QuestArathiVolunteers ( ) : base("Arathi Volunteers", "The men of Stromgrade should join us in the fight.",
-  "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionCastle.blp"){
-  this.
-  internal AddQuestItem(
-  internal new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01K"))));
-  this.
-  internal AddQuestItem(
-  internal new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01Z"))));
-  this.ResearchId = QUEST_RESEARCH_ID;
-  
+    public QuestArathiVolunteers() : base("Arathi Volunteers", "The men of Stromgrade should join us in the fight.",
+      "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionCastle.blp")
+    {
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01k"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01Z"))));
+      ResearchId = FourCC("R089");
+    }
   }
-}
-
 }

@@ -1,43 +1,38 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Sentinels
 {
   public sealed class QuestFeathermoon : QuestData
   {
-    private const int RESEARCH_ID = FourCC("R06M"); //This research is given when the quest is completed
-
     public QuestFeathermoon() : base("Feathermoon Stronghold",
       "Feathermoon Stronghold stood guard for ten thousand years, it is time to relieve the guards from their duty.",
       "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp")
     {
-      this.AddQuestItem(new QuestItemLegendReachRect(LegendSentinels.LegendTyrande, Regions.FeathermoonUnlock.Rect,
+      AddQuestItem(new QuestItemLegendReachRect(LegendSentinels.legendTyrande, Regions.FeathermoonUnlock.Rect,
         "Feathermoon Stronghold"));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01R"))));
       AddQuestItem(new QuestItemUpgrade(FourCC("n06J"), FourCC("n06J")));
       AddQuestItem(new QuestItemExpire(1485));
       AddQuestItem(new QuestItemSelfExists());
-      ResearchId = RESEARCH_ID;
-      ;
-      ;
+      ResearchId = FourCC("R06M");
     }
-
-
+    
     protected override string CompletionPopup =>
       "Feathermoon Stronghold has been relieved && has joined the Sentinels in their war effort";
 
     protected override string RewardDescription =>
       "Control of all units in Feathermoon Stronghold && make Shandris && Maiev trainable at the Altar";
 
-    private void GrantFeathermoon(player whichPlayer)
+    private static void GrantFeathermoon(player whichPlayer)
     {
       group tempGroup = CreateGroup();
-      unit u;
 
       //Transfer all Neutral Passive units in Feathermoon
       GroupEnumUnitsInRect(tempGroup, Regions.FeathermoonUnlock.Rect, null);
-      u = FirstOfGroup(tempGroup);
+      unit u = FirstOfGroup(tempGroup);
       while (true)
       {
         if (u == null) break;

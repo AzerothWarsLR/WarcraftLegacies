@@ -8,18 +8,23 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {
   public sealed class QuestSilvermoon : QuestData
   {
-    private static readonly int QuestResearchId = FourCC("R02U");
-
-    public QuestSilvermoon() : base("The Siege of Silvermoon", "Silvermoon has been besieged by Trolls. Clear them out and destroy their city of Zul'aman.", "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp")
+    private unit _elvenRunestone;
+    
+    public QuestSilvermoon(unit elvenRunestone) : base("The Siege of Silvermoon",
+      "Silvermoon has been besieged by Trolls. Clear them out and destroy their city of Zul'aman.",
+      "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnitByUnitType(FourCC("O00O")))); //Zul'jin
+      _elvenRunestone = elvenRunestone;
+      AddQuestItem(new QuestItemKillUnit(
+        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_CHIEFTAN_OF_THE_AMANI_TRIBE_CREEP_ZUL_AMAN)));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01V"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01L"))));
       AddQuestItem(new QuestItemUpgrade(FourCC("h033"), FourCC("h033")));
       AddQuestItem(new QuestItemExpire(1480));
       AddQuestItem(new QuestItemSelfExists());
+      ResearchId = Constants.UPGRADE_QUEST_COMPLETED_THE_SIEGE_OF_SILVERMOON;
     }
-    
+
     protected override string CompletionPopup =>
       "Silvermoon siege has been lifted, and its military is now free to assist the " + Holder.Team.Name + ".";
 
@@ -53,14 +58,11 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     {
       SetPlayerTechResearched(Holder.Player, FourCC("R02U"), 1);
       GrantSilvermoon(Holder.Player);
-      if (UnitAlive(gg_unit_h00D_2122)) SetUnitInvulnerable(LegendQuelthalas.LegendSilvermoon.Unit, true);
+      if (UnitAlive(_elvenRunestone))
+        SetUnitInvulnerable(LegendQuelthalas.LegendSilvermoon.Unit, true);
       SetUnitInvulnerable(LegendQuelthalas.LegendSunwell.Unit, true);
-      if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\SilvermoonTheme.mp3");
-    }
-
-    protected override void OnAdd()
-    {
-      Holder.ModObjectLimit(QuestResearchId, 1);
+      if (GetLocalPlayer() == Holder.Player)
+        PlayThematicMusicBJ("war3mapImported\\SilvermoonTheme.mp3");
     }
   }
 }

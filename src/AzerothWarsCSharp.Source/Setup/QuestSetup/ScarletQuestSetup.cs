@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.Source.Quests.Scarlet;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
@@ -7,12 +8,12 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 
     public static void Setup( ){
       //Early duel
-      ScarletSetup.FactionScarlet.StartingQuest = ScarletSetup.FactionScarlet.AddQuest(QuestTownWatch.create());
-      ScarletSetup.FactionScarlet.AddQuest(QuestMonastery.create());
-      ScarletSetup.FactionScarlet.AddQuest(QuestArgentDawn.create());
-      ScarletSetup.FactionScarlet.AddQuest(QuestArathiVolunteers.create());
-      ScarletSetup.FactionScarlet.AddQuest(QuestTyr.create());
-      ScarletSetup.FactionScarlet.AddQuest(QuestLiberateLordaeron.create());
+      ScarletSetup.FactionScarlet.StartingQuest = ScarletSetup.FactionScarlet.AddQuest(new QuestTownWatch());
+      ScarletSetup.FactionScarlet.AddQuest(new QuestMonastery(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_SCARLET_MONASTERY_LORDAERON)));
+      ScarletSetup.FactionScarlet.AddQuest(new QuestArgentDawn());
+      ScarletSetup.FactionScarlet.AddQuest(new QuestArathiVolunteers());
+      ScarletSetup.FactionScarlet.AddQuest(new QuestTyr());
+      ScarletSetup.FactionScarlet.AddQuest(new QuestLiberateLordaeron());
     }
 
 
