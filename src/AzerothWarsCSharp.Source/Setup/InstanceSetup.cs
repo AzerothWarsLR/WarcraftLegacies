@@ -3,53 +3,94 @@ using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Setup
 {
-  public class InstanceSetup{
+  public static class InstanceSetup
+  {
+    public static void Setup()
+    {
+      InstanceSystem.Register(
+        new Instance
+        {
+          Name = "Barrow Deeps",
+          Rectangles = {Regions.InstanceBarrowDeeps}
+        }
+      );
+      
+      InstanceSystem.Register(
+        new Instance
+        {
+          Name = "Twisting Nether",
+          Rectangles = {Regions.TwistingNether}
+        }
+      );
+      
+      InstanceSystem.Register(
+        new Instance
+        {
+          Name = "Dire Maul",
+          Rectangles = {Regions.InstanceDireMaul}
+        }
+      );
 
-    public static void Setup( ){
-      Instance tempInstance = 0;
+      InstanceSystem.Register(
+        new Instance
+        {
+          Name = "Scholomance",
+          Rectangles = {Regions.InstanceScholomance}
+        }
+      );
 
-      tempInstance = Instance.create();
-      tempInstance.Name = "Barrow Deeps";
-      tempInstance.addRect(gg_rct_InstanceBarrowDeeps);
-
-      tempInstance = Instance.create();
-      tempInstance.Name = "Twisting Nether";
-      tempInstance.addRect(gg_rct_TwistingNether);
-
-      tempInstance = Instance.create();
-      tempInstance.Name = "Dire Maul";
-      tempInstance.addRect(gg_rct_InstanceDireMaul);
-
-      tempInstance = Instance.create();
-      tempInstance.Name = "Scholomance";
-      tempInstance.addRect(gg_rct_InstanceScholomance);
-
-      tempInstance = Instance.create();
-      tempInstance.Name = "Blackrock Depths";
-      tempInstance.addRect(gg_rct_InstanceBlackrock);
-
-      tempInstance = Instance.create();
-      tempInstance.Name = "Tomb of Sargeras";
-      tempInstance.addRect(gg_rct_InstanceSargerasTomb);
-
-      tempInstance = Instance.create();
-      tempInstance.Name = "AzjolFourCC(nerub";
-      tempInstance.addRect(gg_rct_InstanceAzjolNerub);
-
-      tempInstance = Instance.create();
-      tempInstance.Name = "Outland";
-      tempInstance.addRect(gg_rct_InstanceOutland);
-
-      tempInstance = Instance.create();
-      tempInstance.Name = "Outland";
-      tempInstance.addRect(gg_rct_InstanceNazjatar);
-
-      tempInstance = Instance.create();
-      tempInstance.Name = "Dalaran Dungeons";
-      tempInstance.addRect(gg_rct_InstanceDalaranDungeon1);
-      tempInstance.addRect(gg_rct_InstanceDalaranDungeon2);
-      tempInstance.addRect(gg_rct_InstanceDalaranDungeon3);
+      InstanceSystem.Register(
+        new Instance
+        {
+          Name = "Blackrock Depths",
+          Rectangles = {Regions.InstanceBlackrock}
+        }
+      );
+      
+      InstanceSystem.Register(
+        new Instance
+        {
+          Name = "Tomb of Sargeras",
+          Rectangles = {Regions.InstanceSargerasTomb}
+        }
+      );
+      
+      InstanceSystem.Register(
+        new Instance
+        {
+          Name = "Azjol'nerub",
+          Rectangles = {Regions.InstanceAzjolNerub}
+        }
+      );
+      
+      InstanceSystem.Register(
+        new Instance
+        {
+          Name = "Outland",
+          Rectangles = {Regions.InstanceOutland}
+        }
+      );
+      
+      InstanceSystem.Register(
+        new Instance
+        {
+          Name = "Nazjatar",
+          Rectangles = {Regions.InstanceNazjatar}
+        }
+      );
+      
+      InstanceSystem.Register(
+        new Instance
+        {
+          Name = "Dalaran Dungeons",
+          Rectangles =
+          {
+            Regions.InstanceDalaranDungeon1,
+            Regions.InstanceDalaranDungeon2,
+            Regions.InstanceDalaranDungeon3
+          }
+        }
+      );
     }
-
   }
 }

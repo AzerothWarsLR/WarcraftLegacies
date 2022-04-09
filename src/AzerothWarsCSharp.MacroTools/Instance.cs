@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using WCSharp.Shared.Data;
+
 namespace AzerothWarsCSharp.MacroTools
 {
   /// <summary>
@@ -12,6 +15,8 @@ namespace AzerothWarsCSharp.MacroTools
     readonly Gate[] gatesByIndex[10];
     private string name;
 
+    public List<Rectangle> Rectangles { get; init; }
+    
     public string Name { get; set; }
 
     void operator Name=(string value ) {
@@ -55,14 +60,11 @@ namespace AzerothWarsCSharp.MacroTools
       RegionAddRect(whichRegion, whichRect);
     }
 
-    thistype()
+    public Instance()
     {
       whichRegion = CreateRegion();
       thistype.instancesByIndex[thistype.instanceCount] = this;
       thistype.instanceCount = thistype.instanceCount + 1;
-
-      ;
-      ;
     }
 
 

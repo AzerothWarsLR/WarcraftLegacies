@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Setup
   {
     public static void Setup()
     {
-      ShoreSetup_OnInit();
+      ShoreSetup.Setup();
       InstanceSetup_OnInit();
       TeamSetup_OnInit();
       AllFactionSetup.Setup();
@@ -29,7 +29,6 @@ namespace AzerothWarsCSharp.Source.Setup
       ControlPointVictory.Setup();
       SilvermoonDies.Setup();
       ZinrokhAssembly.Setup();
-      SurvivingTeamVictory.Setup();
       IncompatibleTierConfig.Setup();
     }
   }
