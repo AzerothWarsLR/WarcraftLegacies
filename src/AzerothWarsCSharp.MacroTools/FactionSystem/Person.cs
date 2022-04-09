@@ -5,11 +5,10 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
   public sealed class Person
   {
-    public static force Observers;
-    public static event EventHandler<Person>? FactionChange;
+    public static event EventHandler<PersonFactionChangeEventArgs>? FactionChange;
     private static readonly Dictionary<int, Person> ById = new();
 
-    private Faction? _faction; //Controls name, available objects, color, and icon
+    private Faction? _faction;
     private int _controlPointCount;
     private float _controlPointValue; //Gold per minute
 
@@ -24,48 +23,47 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       set;
     }
 
-    public Faction Faction
+    /// <summary>
+    /// Controls name, available objects, color, and icon.
+    /// </summary>
+    public Faction? Faction
     {
       get => _faction;
       set
       {
-        Faction prevFaction;
-
-        prevFaction = _faction;
-        thistype.prevFaction = _faction;
-
+        Faction prevFaction = Faction;
+        
         //Unapply old faction
         if (_faction != null)
         {
-          _faction = 0;
-          if (this.prevFaction != 0)
+          _faction = null;
+          if (prevFaction != null)
           {
-            this.prevFaction.Person = 0; //Referential integrity
+            prevFaction.Person = null; //Referential integrity
           }
         }
 
         //Apply new faction
-        if (newFaction != 0)
+        if (value != null)
         {
-          if (newFaction.Person == 0)
+          if (value.Person == null)
           {
-            SetPlayerColorBJ(this.p, newFaction.playCol, true);
-            _faction = newFaction;
+            SetPlayerColorBJ(Player, value.PlayerColor, true);
+            _faction = value;
             //Enforce referential integrity
-            if (newFaction.Person != this)
+            if (value.Person != this)
             {
-              newFaction.Person = this;
+              value.Person = this;
             }
           }
           else
           {
-            BJDebugMsg("Error: attempted to Person " + GetPlayerName(this.p) +
-                       " to already occupied faction with name " + newFaction.name);
+            BJDebugMsg("Error: attempted to Person " + GetPlayerName(Player) +
+                       " to already occupied faction with name " + value.Name);
           }
         }
 
-        thistype.triggerPerson = this;
-        FactionChange.fire();
+        FactionChange?.Invoke(this, new PersonFactionChangeEventArgs(this, prevFaction));
       }
     }
 
@@ -77,7 +75,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         if (value < 0)
         {
           throw new ArgumentOutOfRangeException(
-            $"Tried to assign a negative ControlPointValue value to + {GetPlayerName(this.p)}");
+            $"Tried to assign a negative ControlPointValue value to + {GetPlayerName(this.Player)}");
         }
 
         _controlPointValue = value;
@@ -91,7 +89,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       {
         if (value < 0)
         {
-          BJDebugMsg("ERROR: Tried to assign a negative ControlPoint counter to " + GetPlayerName(this.p));
+          throw new ArgumentOutOfRangeException(
+            $"Tried to assign a negative {nameof(ControlPointCount)} to + {GetPlayerName(Player)}");
         }
 
         _controlPointCount = value;
@@ -114,21 +113,21 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       return _objectLimits[id];
     }
 
-    void SetObjectLimit(int id, int limit)
+    public void SetObjectLimit(int id, int limit)
     {
       _objectLimits[id] = limit;
-      this.SetObjectLevel(id, IMinBJ(GetPlayerTechCount(Player, id, true), limit));
-      if (limit >= UNLIMITED)
+      SetObjectLevel(id, IMinBJ(GetPlayerTechCount(Player, id, true), limit));
+      switch (limit)
       {
-        SetPlayerTechMaxAllowed(Player, id, -1);
-      }
-      else if (limit <= 0)
-      {
-        SetPlayerTechMaxAllowed(Player, id, 0);
-      }
-      else
-      {
-        SetPlayerTechMaxAllowed(Player, id, limit);
+        case >= Faction.UNLIMITED:
+          SetPlayerTechMaxAllowed(Player, id, -1);
+          break;
+        case <= 0:
+          SetPlayerTechMaxAllowed(Player, id, 0);
+          break;
+        default:
+          SetPlayerTechMaxAllowed(Player, id, limit);
+          break;
       }
     }
 
@@ -159,12 +158,12 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     public static Person GetFromId(int id)
     {
-      type.byId[id];
+      return ById[id];
     }
 
     public static Person ByHandle(player whichPlayer)
     {
-      type.byId[GetPlayerId(whichPlayer)];
+      return ById[GetPlayerId(whichPlayer)];
     }
 
     /// <summary>
@@ -178,11 +177,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public Person(player player)
     {
       Player = player;
-    }
-
-    public static void Setup()
-    {
-      Observers = CreateForce();
     }
   }
 }
