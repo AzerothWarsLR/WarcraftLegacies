@@ -1,4 +1,4 @@
-namespace AzerothWarsCSharp.Source.Game_Logic
+namespace AzerothWarsCSharp.MacroTools
 {
   public static class GameTime
   {

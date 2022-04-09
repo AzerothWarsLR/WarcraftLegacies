@@ -86,7 +86,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         if (value == ScoreStatus.Defeated)
           while (true)
           {
-            if (i == Environment.MAX_PLAYERS) break;
+            if (i == bj_MAX_PLAYERS) break;
 
             SetPlayerTechResearched(Player(i), _defeatedResearch, 1);
             SetPlayerTechResearched(Player(i), _undefeatedResearch, 0);

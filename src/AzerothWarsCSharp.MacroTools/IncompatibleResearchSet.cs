@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Events;
 
 namespace AzerothWarsCSharp.MacroTools
 {
@@ -43,7 +44,7 @@ namespace AzerothWarsCSharp.MacroTools
     }
 
     //Flag is true for START, and false for CANCEL
-    private static void DoResearch(bool flag ){
+    private static void DoResearch(bool flag){
       foreach (var incompatibleResearchSet in IncompatibleResearchSets)
       {
         foreach (var research in incompatibleResearchSet._researches)
@@ -77,9 +78,10 @@ namespace AzerothWarsCSharp.MacroTools
       DoResearch(false);
     }
 
-    public static void Setup( ){
-      PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_RESEARCH_START,  ResearchStart);
-      PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_RESEARCH_CANCEL,  ResearchCancel);
+    public static void Setup( )
+    {
+      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsStarted, ResearchStart);
+      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, ResearchCancel);
     }
 
   }
