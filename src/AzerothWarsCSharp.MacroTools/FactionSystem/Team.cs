@@ -1,113 +1,68 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
   public class Team
   {
-    private static Dictionary<string, Team> teamsByName;
-    private static thistype[] teamsByIndex;
-    private static readonly int teamCount = 0;
-    private static readonly thistype triggerTeam = 0;
-    private Set factions;
-
-    private Set invitees; //Factions invited to join this Team
+    private static readonly Dictionary<string, Team> TeamsByName = new();
+    private readonly List<Faction> _factions = new();
+    private readonly List<Faction> _invitees = new();
+    private static readonly List<Team> AllTeams;
 
     public static event EventHandler<Team> TeamCreate;
     
     public static event EventHandler<Team> TeamSizeChange;
 
     public static event EventHandler<Team> TeamScoreStatusChanged;
-    
-    private string victoryMusic;
 
     public ScoreStatus ScoreStatus { get; } = ScoreStatus.Undefeated;
-    
-    public string VictoryMusic { get; init; }
 
-    private CapitalCount()
+    public int ControlPointCount
     {
-      var total = 0;
-      var i = 0;
-      Legend loopLegend;
-      while (true)
+      get
       {
-        if (i == Legend.Count) break;
-        loopLegend = Legend.ByIndex(i);
-        if (loopLegend != 0 && loopLegend.Unit != null && loopLegend.OwningFaction.Team == this &&
-            loopLegend.IsCapital && UnitAlive(loopLegend.Unit)) total = total + 1;
-        i = i + 1;
+        var total = 0;
+        foreach (var faction in _factions)
+        {
+          total += faction.Person.ControlPointCount;
+        }
+
+        return total;
       }
-
-      return total;
-    }
-
-    private ControlPointCount()
-    {
-      var total = 0;
-      var i = 0;
-      while (true)
-      {
-        if (i == this.FactionCount) break;
-        if (GetFactionByIndex(i).Person != 0) total = total + GetFactionByIndex(i).Person.ControlPointCount;
-        i = i + 1;
-      }
-
-      return total;
-    }
-
-    private FactionCount()
-    {
-      ;.factions.size;
-    }
-
-    private Count()
-    {
-      ;
-      type.teamCount;
     }
 
     public Team(string name)
     {
       Name = name;
-      factions = Set.create("factions in " + name);
-      invitees = Set.create("invitees of " + name);
-
-      if (thistype.teamsByName[StringCase(name, false)] == 0)
+      if (TeamsByName[StringCase(name, false)] == null)
       {
-        thistype.teamsByName[StringCase(name, false)] = this;
+        TeamsByName[StringCase(name, false)] = this;
       }
       else
       {
-        BJDebugMsg("Error: created team that already exists with name " + name);
-        return 0;
+        throw new Exception("Created team that already exists with name " + name);
       }
-
-      thistype.teamsByIndex[teamCount] = this;
-      thistype.teamCount = thistype.teamCount + 1;
-
-      thistype.triggerTeam = this;
-      TeamCreate.fire();
+      TeamCreate.Invoke(this, this);
     }
 
     public string Name { get; }
 
-    //Only includes filled Factions
+    /// <summary>
+    /// Returns the number of real <see cref="player"/>s within this <see cref="Team"/>.
+    /// </summary>
     public int PlayerCount
     {
       get
       {
-        var i = 0;
         var total = 0;
-        Faction loopFaction;
-        while (true)
+        foreach (var faction in _factions)
         {
-          if (i == factions.size) break;
-
-          loopFaction = factions[i];
-          if (loopFaction.Person != 0 && loopFaction.ScoreStatus != SCORESTATUS_DEFEATED) total = total + 1;
-
-          i = i + 1;
+          if (faction.Player != null)
+          {
+            total++;
+          }
         }
 
         return total;
@@ -116,207 +71,156 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     public static IEnumerable<Team> GetAllTeams()
     {
+      return AllTeams.ToList();
     }
 
-    public static Team Register(Team team)
+    public static void Register(Team team)
     {
-      throw new NotImplementedException();
+      AllTeams.Add(team);
+      TeamsByName[team.Name] = team;
     }
 
     public static bool TeamWithNameExists(string teamName)
     {
-      return teamsByName.ContainsKey(teamName);
+      return TeamsByName.ContainsKey(teamName);
     }
 
     public static Team GetTeamByName(string teamName)
     {
-      return teamsByName[teamName];
+      return TeamsByName[teamName];
     }
 
     public IEnumerable<Faction> GetAllFactions()
     {
-      foreach (var faction in factions) yield return faction;
+      foreach (var faction in _factions) yield return faction;
     }
-
-    void operator VictoryMusic=(string whichMusic ) {
-      victoryMusic = whichMusic;
-    }
-
-    string operator
-
-    integer operator
-
-    integer operator
-
-    integer operator
-
-    integer operator
-
-    private Faction GetFactionByIndex(int index)
-    {
-      ;.factions[index];
-    }
+    
+    /// <summary>
+    /// Music that plays when this <see cref="Team"/> wins the game.
+    /// </summary>
+    public string VictoryMusic { get; init; }
 
     public void RemoveFaction(Faction faction)
     {
-      var i = 0;
-      if (!factions.contains(faction))
-        BJDebugMsg("Attempted to remove non-present faction " + faction.Name + " from team " + Name);
-      factions.remove(faction);
-      //Make all present factions ally the new faction and visa-versa
-      if (faction.Person != 0) UnallyPlayer(faction.Player);
-      //
-      thistype.triggerTeam = this;
-      OnTeamSizeChange.fire();
+      if (!_factions.Contains(faction))
+        throw new Exception("Attempted to remove non-present faction " + faction.Name + " from team " + Name);
+      _factions.Remove(faction);
+      if (faction.Person != null) 
+        UnallyPlayer(faction.Player);
+      TeamSizeChange.Invoke(this, this);
     }
 
     public void AddFaction(Faction faction)
     {
       var i = 0;
-      if (factions.contains(faction))
-        BJDebugMsg("Attempted to add already present faction " + faction.Name + " to team " + Name);
-      factions.add(faction);
-      //Make all present factions ally the new faction and visa-versa
-      if (faction.Person != 0) AllyPlayer(faction.Player);
-      //
-      thistype.triggerTeam = this;
-      OnTeamSizeChange.fire();
+      if (_factions.Contains(faction))
+        throw new Exception("Attempted to add already present faction " + faction.Name + " to team " + Name);
+      _factions.Add(faction);
+      if (faction.Person != null) 
+        AllyPlayer(faction.Player);
+      TeamSizeChange.Invoke(this, this);
     }
 
+    /// <summary>
+    /// Causes every <see cref="player"/> in the <see cref="Team"/> to ally the given player, and vise-versa.
+    /// </summary>
+    /// <param name="whichPlayer"></param>
     public void AllyPlayer(player whichPlayer)
     {
-      var i = 0;
-      while (true)
+      foreach (var faction in _factions)
       {
-        if (i == this.FactionCount) break;
-        SetPlayerAllianceStateBJ(whichPlayer, GetFactionByIndex(i).Player, bj_ALLIANCE_ALLIED_VISION);
-        SetPlayerAllianceStateBJ(GetFactionByIndex(i).Player, whichPlayer, bj_ALLIANCE_ALLIED_VISION);
-        i = i + 1;
+        SetPlayerAllianceStateBJ(whichPlayer, faction.Player, bj_ALLIANCE_ALLIED_VISION);
+        SetPlayerAllianceStateBJ(faction.Player, whichPlayer, bj_ALLIANCE_ALLIED_VISION);
       }
-
-      thistype.triggerTeam = this;
     }
 
+    /// <summary>
+    /// Causes every <see cref="player"/> in the <see cref="Team"/> to unally the given player, and vise-versa.
+    /// </summary>
+    /// <param name="whichPlayer"></param>
     public void UnallyPlayer(player whichPlayer)
     {
-      var i = 0;
-      while (true)
+      foreach (var faction in _factions)
       {
-        if (i == this.FactionCount) break;
-        SetPlayerAllianceStateBJ(whichPlayer, GetFactionByIndex(i).Player, bj_ALLIANCE_UNALLIED);
-        SetPlayerAllianceStateBJ(GetFactionByIndex(i).Player, whichPlayer, bj_ALLIANCE_UNALLIED);
-        i = i + 1;
+        SetPlayerAllianceStateBJ(whichPlayer, faction.Player, bj_ALLIANCE_UNALLIED);
+        SetPlayerAllianceStateBJ(faction.Player, whichPlayer, bj_ALLIANCE_UNALLIED);
       }
-
-      thistype.triggerTeam = this;
     }
 
-    //Revokes an invite sent to a player
+    /// <summary>
+    /// Revokes an invite sent to a player.
+    /// </summary>
     public void Uninvite(Faction whichFaction)
     {
-      if (invitees.contains(whichFaction))
+      if (_invitees.Contains(whichFaction))
       {
-        DisplayText(whichFaction.prefixCol + whichFaction.name + "|r is no longer invited to join the " + Name + ".");
+        DisplayText(whichFaction.ColoredName + "|r is no longer invited to join the " + Name + ".");
         DisplayTextToPlayer(whichFaction.Player, 0, 0, "You are no longer invited to join the " + Name + ".");
-        invitees.remove(whichFaction);
+        _invitees.Remove(whichFaction);
       }
     }
 
-    //Sends an invite to this team to a player, which they can choose to accept at a later date
+    /// <summary>
+    /// Sends an invite to this team to a player, which they can choose to accept at a later date.
+    /// </summary>
     public void Invite(Faction whichFaction)
     {
-      if (!factions.contains(whichFaction) && !invitees.contains(whichFaction) && whichFaction.CanBeInvited == true)
+      if (!_factions.Contains(whichFaction) && !_invitees.Contains(whichFaction))
       {
-        if (GetLocalPlayer() == whichFaction.Player || factions.contains(Person.ByHandle(GetLocalPlayer())))
-          StartSound(gg_snd_ArrangedTeamInvitation);
-        DisplayText(whichFaction.prefixCol + whichFaction.name + "|r has been invited to join the " + Name + ".");
+        //if (GetLocalPlayer() == whichFaction.Player || ContainsPlayer(GetLocalPlayer()))
+          //StartSound("Sound\Interface\ArrangedTeamInvitation.wav");
+        DisplayText(whichFaction.ColoredName + "|r has been invited to join the " + Name + ".");
         DisplayTextToPlayer(whichFaction.Player, 0, 0,
           "You have been invited to join the " + Name + ". Type -join " + Name + " to accept.");
-        invitees.add(whichFaction);
+        _invitees.Add(whichFaction);
       }
     }
 
+    /// <summary>
+    /// Displays the provided text to all <see cref="player"/>s in the <see cref="Team"/>.
+    /// </summary>
+    /// <param name="text"></param>
     public void DisplayText(string text)
     {
-      var i = 0;
-      while (true)
+      foreach (var faction in _factions)
       {
-        if (i == factions.size) break;
-        DisplayTextToPlayer(Faction(factions[i]).Player, 0, 0, text);
-        i = i + 1;
+        DisplayTextToPlayer(faction.Player, 0, 0, text);
       }
     }
 
-    public force CreateForceFromPlayers()
-    {
-      var i = 0;
-      force newForce = CreateForce();
-      Faction loopFaction;
-      while (true)
-      {
-        if (i == factions.size) break;
-        loopFaction = factions[i];
-        if (loopFaction.Person != 0 && loopFaction.ScoreStatus != SCORESTATUS_DEFEATED)
-          ForceAddPlayer(newForce, Faction(factions[i]).Player);
-        i = i + 1;
-      }
-
-      return newForce;
-    }
-
+    /// <summary>
+    /// Checks whether or not the given <see cref="Faction"/> has been invited to this <see cref="Team"/>.
+    /// </summary>
     public bool IsFactionInvited(Faction whichFaction)
     {
-      ;.invitees.contains(whichFaction);
+      return _invitees.Contains(whichFaction);
     }
 
+    /// <summary>
+    /// Checks whether or not the given <see cref="player"/> is in this <see cref="Team"/>.
+    /// </summary>
+    /// <param name="whichPlayer"></param>
+    /// <returns></returns>
     private bool ContainsPlayer(player whichPlayer)
     {
-      var i = 0;
-      while (true)
+      foreach (var faction in _factions)
       {
-        if (i == factions.size) break;
-        if (Faction(factions[i]).Player == whichPlayer) return true;
-        i = i + 1;
+        if (faction.Player == whichPlayer)
+        {
+          return true;
+        }
       }
-
       return false;
     }
 
     public bool ContainsFaction(Faction faction)
     {
-      ;.factions.contains(faction);
+      return _factions.Contains(faction);
     }
-
-    static integer operator
-
-    private static thistype ByName(string name)
+    
+    private static Team ByName(string name)
     {
-      ;
-      type.teamsByName[name];
-    }
-
-    private static thistype ByIndex(int index)
-    {
-      ;
-      type.teamsByIndex[index];
-    }
-
-    private static void onInit()
-    {
-      thistype.teamsByName = StringTable.create();
-    }
-
-
-    private static Team GetTriggerTeam()
-    {
-      return triggerTeam;
-    }
-
-    public static void Setup()
-    {
-      TeamCreate = Event.create();
-      OnTeamSizeChange = Event.create();
-      TeamScoreStatusChanged = Event.create();
+      return TeamsByName[name];
     }
   }
 }
