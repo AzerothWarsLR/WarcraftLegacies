@@ -25,15 +25,19 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private const float XP_TRANSFER_PERCENT = 100; //How much experience is transferred from heroes that leave the game)
 
     private static readonly Dictionary<string?, Faction> FactionsByName = new();
+
+    private readonly int
+      _defeatedResearch; //This upgrade is researched for all players only if this Faction slot is defeated
+
     private readonly Dictionary<int, int> _objectLevels = new();
 
     private readonly Dictionary<int, int> _objectLimits = new();
     private readonly List<QuestData> _quests = new();
 
-    private readonly Dictionary<int, int> _unitTypeByCategory = new();
-
     private readonly int
-      _defeatedResearch; //This upgrade is researched for all players only if this Faction slot is defeated
+      _undefeatedResearch; //This upgrade is researched for all players only if this Faction is undefeated
+
+    private readonly Dictionary<int, int> _unitTypeByCategory = new();
 
     private string _icon;
 
@@ -41,12 +45,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     private Person? _person;
 
+    private string _prefixCol;
+
     private int _questCount;
     private ScoreStatus _scoreStatus = ScoreStatus.Undefeated;
     private Team? _team;
-
-    private readonly int
-      _undefeatedResearch; //This upgrade is researched for all players only if this Faction is undefeated
 
     private int _xp; //Stored by DistributeUnits and given out again by DistributeResources
 
@@ -138,11 +141,10 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     public string ColoredName => PrefixCol + _name + "|r";
 
-    private string _prefixCol;
     public string PrefixCol
     {
       get => _prefixCol;
-        set
+      set
       {
         _prefixCol = value;
         NameChanged?.Invoke(this, this);

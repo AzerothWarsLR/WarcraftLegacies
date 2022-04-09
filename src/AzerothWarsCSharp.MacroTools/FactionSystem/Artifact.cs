@@ -217,7 +217,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
     }
 
-    private static void OnPersonFactionChanged(object? sender, Person person)
+    private static void OnPersonFactionChanged(object? sender, PersonFactionChangeEventArgs personFactionChangeEventArgs)
     {
     }
 
