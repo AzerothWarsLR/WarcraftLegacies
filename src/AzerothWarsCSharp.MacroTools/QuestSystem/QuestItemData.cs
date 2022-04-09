@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
 {
   public abstract class QuestItemData
   {
-    public static event EventHandler<QuestItemData> ProgressChanged;
+    public event EventHandler<QuestItemData> ProgressChanged;
 
     private QuestItemData _parentQuestItem;
     private QuestProgress _progress = QuestProgress.Incomplete;
@@ -134,7 +134,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// <summary>
     /// Runs when a <see cref="QuestData"/> with this <see cref="QuestItemData"/> is added to a <see cref="Faction"/>.
     /// </summary>
-    public virtual void OnAdd() { }
+    internal virtual void OnAdd() { }
 
     //Shows the local aspects of this QuestItem, namely the minimap icon.
     public void ShowLocal()

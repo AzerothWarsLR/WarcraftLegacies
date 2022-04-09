@@ -7,12 +7,17 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     private readonly Artifact _targetArtifact;
     private readonly Legend _targetLegend;
 
-    public override void OnAdd()
+    public QuestItemLegendHasArtifact(Legend targetLegend, Artifact targetArtifact)
     {
-      if (_targetArtifact.OwningUnit == _targetLegend.Unit)
-      {
-        Progress = QuestProgress.Complete;
-      }
+      Description = targetLegend.Name + " has " + GetItemName(targetArtifact.Item);
+      _targetLegend = targetLegend;
+      _targetArtifact = targetArtifact;
+      targetArtifact.Acquired += OnAcquired;
+    }
+
+    internal override void OnAdd()
+    {
+      if (_targetArtifact.OwningUnit == _targetLegend.Unit) Progress = QuestProgress.Complete;
     }
 
     private void OnAcquired(object? sender, Artifact artifact)
@@ -20,14 +25,6 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       Progress = _targetArtifact.OwningUnit == _targetLegend.Unit
         ? QuestProgress.Complete
         : QuestProgress.Incomplete;
-    }
-
-    public QuestItemLegendHasArtifact(Legend targetLegend, Artifact targetArtifact)
-    {
-      Description = targetLegend.Name + " has " + GetItemName(targetArtifact.Item);
-      _targetLegend = targetLegend;
-      _targetArtifact = targetArtifact;
-      targetArtifact.Acquired += OnAcquired;
     }
   }
 }

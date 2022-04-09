@@ -1,76 +1,47 @@
+using WCSharp.Shared.Data;
+
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
   public class QuestItemEitherOf : QuestItemData
   {
-    private static int count = 0;
-    private static thistype[] byIndex;
+    private readonly QuestItemData _questItemA;
+    private readonly QuestItemData _questItemB;
 
-    private readonly QuestItemData questItemA;
-    private readonly QuestItemData questItemB;
-
-    private X()
-    {
-      return questItemA.X;
-    }
-
-    private Y()
-    {
-      return questItemA.Y;
-    }
-
+    public override Point Position => new(_questItemA.Position.X, _questItemB.Position.Y);
+    
     public QuestItemEitherOf(QuestItemData questItemA, QuestItemData questItemB)
     {
-      this.questItemA = questItemA;
-      this.questItemB = questItemB;
+      _questItemA = questItemA;
+      _questItemB = questItemB;
       questItemA.ParentQuestItem = this;
       questItemB.ParentQuestItem = this;
-      Description = questItemA.Description + " || " + questItemB.Description;
-      thistype.byIndex[thistype.count] = this;
-      thistype.count = thistype.count + 1;
+      Description = questItemA.Description + " or " + questItemB.Description;
+      questItemA.ProgressChanged += OnChildProgressChanged;
+      questItemB.ProgressChanged += OnChildProgressChanged;
     }
 
-    float operator
-
-    float operator
-
-    private void OnAdd()
+    internal override void OnAdd()
     {
-      questItemA.OnAdd();
-      questItemB.OnAdd();
-      CheckChildStatus();
+      _questItemA.OnAdd();
+      _questItemB.OnAdd();
+      Update();
     }
 
-    private void CheckChildStatus()
+    private void Update()
     {
-      if (questItemA.Progress == QuestProgress.Complete || questItemB.Progress == QuestProgress.Complete)
+      if (_questItemA.Progress == QuestProgress.Complete || _questItemB.Progress == QuestProgress.Complete)
       {
         Progress = QuestProgress.Complete;
         return;
       }
 
-      if (questItemA.Progress == QuestProgress.Failed && questItemB.Progress == QuestProgress.Failed)
+      if (_questItemA.Progress == QuestProgress.Failed && _questItemB.Progress == QuestProgress.Failed)
         Progress = QuestProgress.Failed;
     }
 
-    public static void OnAnyQuestItemProgressChanged()
+    private void OnChildProgressChanged(object? sender, QuestItemData questItemData)
     {
-      QuestItemData triggerQuestItemData = QuestItemData.TriggerQuestItemData;
-      var i = 0;
-      while (true)
-      {
-        if (i == thistype.count) break;
-        if (triggerQuestItemData == thistype.byIndex[i].questItemA ||
-            triggerQuestItemData == thistype.byIndex[i].questItemB) thistype.byIndex[i].CheckChildStatus();
-        i = i + 1;
-      }
-    }
-
-
-    public static void Setup()
-    {
-      trigger trig = CreateTrigger();
-      ProgressChanged.register(trig);
-      TriggerAddAction(trig, OnAnyQuestItemProgressChanged);
+      Update();
     }
   }
 }

@@ -1,13 +1,20 @@
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
   /// <summary>
-  /// Starts completed, then fails when the specified amount of time has elapsed.
+  ///   Starts completed, then fails when the specified amount of time has elapsed.
   /// </summary>
   public class QuestItemExpire : QuestItemData
   {
     private readonly timer _timer;
 
-    public override void OnAdd()
+    public QuestItemExpire(int duration)
+    {
+      Description = "Complete this quest before " + I2S(duration) + " seconds have elapsed";
+      _timer = CreateTimer();
+      TimerStart(_timer, duration, false, OnExpire);
+    }
+
+    internal override void OnAdd()
     {
       Progress = QuestProgress.Complete;
     }
@@ -16,13 +23,6 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     {
       DestroyTimer(_timer);
       Progress = QuestProgress.Failed;
-    }
-
-    public QuestItemExpire(int duration)
-    {
-      Description = "Complete this quest before " + I2S(duration) + " seconds have elapsed";
-      _timer = CreateTimer();
-      TimerStart(_timer, duration, false, OnExpire);
     }
   }
 }
