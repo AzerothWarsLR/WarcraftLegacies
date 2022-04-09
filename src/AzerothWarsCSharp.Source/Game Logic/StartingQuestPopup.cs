@@ -2,7 +2,6 @@
 
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
-using AzerothWarsCSharp.Source.Libraries;
 
 namespace AzerothWarsCSharp.Source.Game_Logic
 {

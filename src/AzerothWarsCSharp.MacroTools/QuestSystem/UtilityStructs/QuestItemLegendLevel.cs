@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     private void OnLevel()
     {
-      if (GetHeroLevel(target.Unit) >= level) Progress = QUEST_PROGRESS_COMPLETE;
+      if (GetHeroLevel(target.Unit) >= level) Progress = QuestProgress.Complete;
     }
 
     private static void OnAnyLevel()

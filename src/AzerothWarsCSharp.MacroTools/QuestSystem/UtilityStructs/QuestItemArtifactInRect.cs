@@ -42,18 +42,18 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     private void OnRegionEnter(unit whichUnit ){
       if (targetArtifact.OwningUnit == GetEnteringUnit()){
         //call BJDebugMsg("On Region Enter" + GetUnitName(GetEnteringUnit()))
-        this.Progress = QUEST_PROGRESS_COMPLETE;
+        this.Progress = QuestProgress.Complete;
       }else {
-        this.Progress = QUEST_PROGRESS_INCOMPLETE;
+        this.Progress = QuestProgress.Incomplete;
       }
     }
 
     private void OnRegionExit( ){
       if (IsArtifactInRect()){
         //call BJDebugMsg("On Region Exit")
-        this.Progress = QUEST_PROGRESS_COMPLETE;
+        this.Progress = QuestProgress.Complete;
       }else {
-        this.Progress = QUEST_PROGRESS_INCOMPLETE;
+        this.Progress = QuestProgress.Incomplete;
       }
     }
 

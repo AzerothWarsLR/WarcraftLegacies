@@ -8,10 +8,10 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     private static thistype[] byIndex;
 
     public void OnQuestProgressChanged( ){
-      if (target.Progress == QUEST_PROGRESS_COMPLETE){
-        this.Progress = QUEST_PROGRESS_COMPLETE;
-      }else if (target.Progress == QUEST_PROGRESS_FAILED){
-        this.Progress = QUEST_PROGRESS_FAILED;
+      if (target.Progress == QuestProgress.Complete){
+        this.Progress = QuestProgress.Complete;
+      }else if (target.Progress == QuestProgress.Failed){
+        this.Progress = QuestProgress.Failed;
       }
     }
 

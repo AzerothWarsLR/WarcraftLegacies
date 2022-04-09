@@ -34,15 +34,15 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     private void OnRegionExit( ){
       if (UnitAlive(legend.Unit) && IsUnitInRegion(target, legend.Unit)){
-        this.Progress = QUEST_PROGRESS_COMPLETE;
+        this.Progress = QuestProgress.Complete;
       }else {
-        this.Progress = QUEST_PROGRESS_INCOMPLETE;
+        this.Progress = QuestProgress.Incomplete;
       }
     }
 
     private void OnRegionEnter(unit whichUnit ){
       if (UnitAlive(legend.Unit) && GetTriggerUnit() == legend.Unit){
-        this.Progress = QUEST_PROGRESS_COMPLETE;
+        this.Progress = QuestProgress.Complete;
       }
     }
 

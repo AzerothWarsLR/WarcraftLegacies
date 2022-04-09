@@ -10,12 +10,12 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     private static thistype[] byIndex;
 
     void OnAdd( ){
-      this.Progress = QUEST_PROGRESS_COMPLETE;
+      this.Progress = QuestProgress.Complete;
     }
 
     private void OnExpire( ){
       DestroyTimer(timer);
-      this.Progress = QUEST_PROGRESS_FAILED;
+      this.Progress = QuestProgress.Failed;
     }
 
     private static void OnAnyTimerExpires( ){

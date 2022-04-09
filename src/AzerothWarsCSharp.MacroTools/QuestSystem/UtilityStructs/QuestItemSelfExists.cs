@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     }
 
     void OnAdd( ){
-      this.Progress = QUEST_PROGRESS_COMPLETE;
+      this.Progress = QuestProgress.Complete;
     }
 
     static void OnAnyFactionScoreStatusChanged( ){
@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
         while(true){
           if ( i == thistype.count){ break; }
           if (thistype.byIndex[i].Holder == triggerFaction){
-            thistype.byIndex[i].Progress = QUEST_PROGRESS_FAILED;
+            thistype.byIndex[i].Progress = QuestProgress.Failed;
           }
           i = i + 1;
         }
@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     {
       thistype.byIndex[thistype.count] = this;
       thistype.count = thistype.count + 1;
-      this.Progress = QUEST_PROGRESS_COMPLETE;
+      this.Progress = QuestProgress.Complete;
       
     }
 

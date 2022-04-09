@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
         loopQuestItem = thistype.byIndex[i];
         if (!loopQuestItem.ProgressLocked && loopQuestItem.objectId == GetUnitTypeId(triggerUnit) && loopQuestItem.Holder.Player == GetOwningPlayer(GetTriggerUnit())){
           loopQuestItem.triggerUnit = triggerUnit;
-          loopQuestItem.Progress = QUEST_PROGRESS_COMPLETE;
+          loopQuestItem.Progress = QuestProgress.Complete;
         }
         i = i + 1;
       }

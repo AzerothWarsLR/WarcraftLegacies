@@ -1,5 +1,4 @@
 using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.Source.Libraries;
 using WCSharp.Events;
 
 namespace AzerothWarsCSharp.Source.Cheats

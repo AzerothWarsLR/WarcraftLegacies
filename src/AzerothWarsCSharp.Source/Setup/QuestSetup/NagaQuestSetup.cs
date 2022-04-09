@@ -27,8 +27,8 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       CONQUER_BLACK_TEMPLE = QuestBlackTemple.create();
       KILL_FROZEN_THRONE = QuestFrozenThrone.create();
 
-      chapterTwo.Progress = QUEST_PROGRESS_UNDISCOVERED;
-      chapterThree.Progress = QUEST_PROGRESS_UNDISCOVERED;
+      chapterTwo.Progress = QuestProgress.Undiscovered;
+      chapterThree.Progress = QuestProgress.Undiscovered;
 
       NagaSetup.FactionNaga.StartingQuest = chapterOne;
     }

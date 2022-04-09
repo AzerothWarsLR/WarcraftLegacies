@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     private void OnExpire( ){
       DestroyTimer(timer);
-      this.Progress = QUEST_PROGRESS_COMPLETE;
+      this.Progress = QuestProgress.Complete;
     }
 
     private static void OnAnyTimerExpires( ){

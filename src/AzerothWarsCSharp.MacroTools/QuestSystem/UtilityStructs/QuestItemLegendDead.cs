@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     }
 
     private void OnDeath( ){
-      this.Progress = QUEST_PROGRESS_COMPLETE;
+      this.Progress = QuestProgress.Complete;
     }
 
     private static void OnAnyUnitDeath( ){

@@ -42,14 +42,14 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     private void CheckChildStatus()
     {
-      if (questItemA.Progress == QUEST_PROGRESS_COMPLETE || questItemB.Progress == QUEST_PROGRESS_COMPLETE)
+      if (questItemA.Progress == QuestProgress.Complete || questItemB.Progress == QuestProgress.Complete)
       {
-        Progress = QUEST_PROGRESS_COMPLETE;
+        Progress = QuestProgress.Complete;
         return;
       }
 
-      if (questItemA.Progress == QUEST_PROGRESS_FAILED && questItemB.Progress == QUEST_PROGRESS_FAILED)
-        Progress = QUEST_PROGRESS_FAILED;
+      if (questItemA.Progress == QuestProgress.Failed && questItemB.Progress == QuestProgress.Failed)
+        Progress = QuestProgress.Failed;
     }
 
     public static void OnAnyQuestItemProgressChanged()

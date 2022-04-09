@@ -12,8 +12,8 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 
       FACTION_GILNEAS.StartingQuest = chapterOne;
 
-      chapterTwo.Progress = QUEST_PROGRESS_UNDISCOVERED;
-      chapterThree.Progress = QUEST_PROGRESS_UNDISCOVERED;
+      chapterTwo.Progress = QuestProgress.Undiscovered;
+      chapterThree.Progress = QuestProgress.Undiscovered;
 
       GOLDRINNELVE_PATH = QuestGoldrinnElvePath.create();
       //set GOLDRINNHUMAN_PATH = QuestGoldrinnHumanPath.create()

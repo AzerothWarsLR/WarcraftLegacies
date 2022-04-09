@@ -16,10 +16,10 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     private void OnCast(unit caster)
     {
-      if (this.Progress != QUEST_PROGRESS_COMPLETE && (GetOwningPlayer(caster) == this.Holder.Player || !holderOnly))
+      if (this.Progress != QuestProgress.Complete && (GetOwningPlayer(caster) == this.Holder.Player || !holderOnly))
       {
         this.caster = caster;
-        this.Progress = QUEST_PROGRESS_COMPLETE;
+        this.Progress = QuestProgress.Complete;
       }
     }
 

@@ -132,7 +132,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     public int RequiredUnitTypeId { get; init; }
 
     private void OnRegionEnter(unit whichUnit ){
-      if (GetOwningPlayer(whichUnit) == this.Holder.Player && UnitAlive(whichUnit) && Legend.ByHandle(GetTriggerUnit()) == targetLegend && channel == 0 && this.Progress == QUEST_PROGRESS_INCOMPLETE){
+      if (GetOwningPlayer(whichUnit) == this.Holder.Player && UnitAlive(whichUnit) && Legend.ByHandle(GetTriggerUnit()) == targetLegend && channel == 0 && this.Progress == QuestProgress.Incomplete){
         if (requiredUnitTypeId == 0 || requiredUnitTypeId == GetUnitTypeId(GetTriggerUnit())){
           channel = Channel.create(whichUnit, duration, facing, this);
         }
@@ -144,7 +144,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     void OnChannelEnd(Channel whichChannel, bool finished ){
       if (whichChannel == channel){
         if (finished){
-          this.Progress = QUEST_PROGRESS_COMPLETE;
+          this.Progress = QuestProgress.Complete;
         }
         channel = 0;
       }

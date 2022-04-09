@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
         while (true)
         {
           if (i == thistype.count) break;
-          if (thistype.byIndex[i].target == triggerFaction) thistype.byIndex[i].Progress = QUEST_PROGRESS_COMPLETE;
+          if (thistype.byIndex[i].target == triggerFaction) thistype.byIndex[i].Progress = QuestProgress.Complete;
           i = i + 1;
         }
     }

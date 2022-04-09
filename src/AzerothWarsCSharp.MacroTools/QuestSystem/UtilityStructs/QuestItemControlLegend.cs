@@ -26,18 +26,18 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     private void OnAdd( ){
       if (this.Holder.Team.ContainsPlayer(GetOwningPlayer(target.Unit))){
-        this.Progress = QUEST_PROGRESS_COMPLETE;
+        this.Progress = QuestProgress.Complete;
       }
     }
 
     private void OnTargetChangeOwner( ){
       if (this.Holder.Team.ContainsPlayer(GetOwningPlayer(target.Unit))){
-        this.Progress = QUEST_PROGRESS_COMPLETE;
+        this.Progress = QuestProgress.Complete;
       }else {
         if (canFail){
-          this.Progress = QUEST_PROGRESS_FAILED;
+          this.Progress = QuestProgress.Failed;
         }else {
-          this.Progress = QUEST_PROGRESS_INCOMPLETE;
+          this.Progress = QuestProgress.Incomplete;
         }
       }
     }
@@ -50,7 +50,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
         if ( i == thistype.count){ break; }
         loopItem = thistype.byIndex[i];
         if (loopItem.target == triggerLegend && loopItem.canFail == true){
-          loopItem.Progress = QUEST_PROGRESS_FAILED;
+          loopItem.Progress = QuestProgress.Failed;
         }
         i = i + 1;
       }

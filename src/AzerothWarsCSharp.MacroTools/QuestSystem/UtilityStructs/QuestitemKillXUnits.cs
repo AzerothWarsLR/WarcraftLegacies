@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
         if (!loopQuestItem.ProgressLocked && loopQuestItem.objectId == GetUnitTypeId(triggerUnit)){
           loopQuestItem.CurrentKillXUnitCount = loopQuestItem.currentKillXUnitCount + 1;
           if (loopQuestItem.currentKillXUnitCount == loopQuestItem.targetKillXUnitCount){
-            loopQuestItem.Progress = QUEST_PROGRESS_COMPLETE;
+            loopQuestItem.Progress = QuestProgress.Complete;
           }
         }
         i = i + 1;

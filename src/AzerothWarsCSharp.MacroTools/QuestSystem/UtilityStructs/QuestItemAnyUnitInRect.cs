@@ -83,20 +83,20 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
         (IsUnitType(whichUnit, UNIT_TYPE_HERO) || !heroOnly) || IsValidUnitInRect())
       {
         TriggerUnit = whichUnit;
-        Progress = QUEST_PROGRESS_COMPLETE;
+        Progress = QuestProgress.Complete;
       }
       else
       {
-        Progress = QUEST_PROGRESS_INCOMPLETE;
+        Progress = QuestProgress.Incomplete;
       }
     }
 
     private void OnRegionExit()
     {
       if (IsValidUnitInRect())
-        Progress = QUEST_PROGRESS_COMPLETE;
+        Progress = QuestProgress.Complete;
       else
-        Progress = QUEST_PROGRESS_INCOMPLETE;
+        Progress = QuestProgress.Incomplete;
     }
 
     private static void OnAnyRegionExit()

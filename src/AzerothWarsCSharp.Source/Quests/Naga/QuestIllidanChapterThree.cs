@@ -30,17 +30,17 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       RescueNeutralUnitsInRect(Regions.NagaUnlock2.Rect, Holder.Player);
       RescueNeutralUnitsInRect(Regions.NagaUnlock1.Rect, Holder.Player);
       NagaSetup.FactionNaga.AddQuest(NagaQuestSetup.REDEMPTION_PATH);
-      NagaQuestSetup.REDEMPTION_PATH.Progress = QUEST_PROGRESS_UNDISCOVERED;
+      NagaQuestSetup.REDEMPTION_PATH.Progress = QuestProgress.Undiscovered;
       NagaSetup.FactionNaga.AddQuest(NagaQuestSetup.EXILE_PATH);
-      NagaQuestSetup.EXILE_PATH.Progress = QUEST_PROGRESS_UNDISCOVERED;
+      NagaQuestSetup.EXILE_PATH.Progress = QuestProgress.Undiscovered;
       NagaSetup.FactionNaga.AddQuest(NagaQuestSetup.MADNESS_PATH);
-      NagaQuestSetup.MADNESS_PATH.Progress = QUEST_PROGRESS_UNDISCOVERED;
+      NagaQuestSetup.MADNESS_PATH.Progress = QuestProgress.Undiscovered;
       //call NagaSetup.FactionNaga.AddQuest(ALLIANCE_NAGA)
-      //set ALLIANCE_NAGA.Progress = QUEST_PROGRESS_UNDISCOVERED
+      //set ALLIANCE_NAGA.Progress = QuestProgress.Undiscovered
       NagaSetup.FactionNaga.AddQuest(NagaQuestSetup.CONQUER_BLACK_TEMPLE);
-      NagaQuestSetup.CONQUER_BLACK_TEMPLE.Progress = QUEST_PROGRESS_UNDISCOVERED;
+      NagaQuestSetup.CONQUER_BLACK_TEMPLE.Progress = QuestProgress.Undiscovered;
       NagaSetup.FactionNaga.AddQuest(NagaQuestSetup.KILL_FROZEN_THRONE);
-      NagaQuestSetup.KILL_FROZEN_THRONE.Progress = QUEST_PROGRESS_UNDISCOVERED;
+      NagaQuestSetup.KILL_FROZEN_THRONE.Progress = QuestProgress.Undiscovered;
       SetUnitInvulnerable(_unitToMakeInvulnerable, true);
     }
   }

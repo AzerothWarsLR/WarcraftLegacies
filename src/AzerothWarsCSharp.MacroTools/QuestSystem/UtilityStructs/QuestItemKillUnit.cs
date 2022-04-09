@@ -42,9 +42,9 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     private void OnUnitDeath()
     {
       if (Holder.Team.ContainsPlayer(GetOwningPlayer(GetKillingUnit())))
-        Progress = QUEST_PROGRESS_COMPLETE;
+        Progress = QuestProgress.Complete;
       else
-        Progress = QUEST_PROGRESS_FAILED;
+        Progress = QuestProgress.Failed;
     }
 
     private void InitializeDescription()

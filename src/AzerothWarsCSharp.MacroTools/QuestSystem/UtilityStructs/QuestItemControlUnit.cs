@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     private void OnUnitChangeOwner( ){
       if (this.Holder.Team.ContainsFaction(Person.ByHandle(GetOwningPlayer(target)))){
-        this.Progress = QUEST_PROGRESS_COMPLETE;
+        this.Progress = QuestProgress.Complete;
       }
     }
 

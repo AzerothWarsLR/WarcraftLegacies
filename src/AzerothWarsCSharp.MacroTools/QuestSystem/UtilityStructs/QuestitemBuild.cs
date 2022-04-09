@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
         loopQuestItem.CurrentBuildCount = loopQuestItem.currentBuildCount + 1;
         if (loopQuestItem.currentBuildCount == loopQuestItem.targetBuildCount){
-          loopQuestItem.Progress = QUEST_PROGRESS_COMPLETE;
+          loopQuestItem.Progress = QuestProgress.Complete;
         }
       }
       i = i + 1;

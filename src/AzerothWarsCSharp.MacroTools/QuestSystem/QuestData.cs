@@ -6,17 +6,13 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
 {
   public abstract class QuestData
   {
-    public const int QUEST_PROGRESS_UNDISCOVERED = 0;
-    public const int QUEST_PROGRESS_INCOMPLETE = 1;
-    public const int QUEST_PROGRESS_COMPLETE = 2;
-    public const int QUEST_PROGRESS_FAILED = 3;
     private readonly List<QuestItemData> _questItems = new();
 
     private Faction _holder;
     private bool _muted = true; //Doesn't display text when updated if true
-    private int _progress = QUEST_PROGRESS_INCOMPLETE;
+    private QuestProgress _progress = QuestProgress.Incomplete;
 
-    public QuestData(string title, string desc, string icon)
+    protected QuestData(string title, string desc, string icon)
     {
       Quest = CreateQuest();
       Description = desc;
@@ -56,7 +52,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     ///   Displayed to the player when the quest is failed.
     ///   Describes flavour, not mechanics.
     /// </summary>
-    protected virtual string FailurePopup => null;
+    protected virtual string FailurePopup => "null";
 
     /// <summary>
     ///   Describes the background and flavour of this quest.
@@ -71,7 +67,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
 
     public quest Quest { get; }
 
-    public bool ProgressLocked => _progress is QUEST_PROGRESS_COMPLETE or QUEST_PROGRESS_FAILED;
+    public bool ProgressLocked => _progress is QuestProgress.Complete or QuestProgress.Failed;
 
     public QuestProgress Progress
     {
@@ -82,7 +78,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         _progress = value;
         switch (value)
         {
-          case QUEST_PROGRESS_COMPLETE:
+          case QuestProgress.Complete:
           {
             QuestSetCompleted(Quest, true);
             QuestSetFailed(Quest, false);
@@ -98,7 +94,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
             OnComplete();
             break;
           }
-          case QUEST_PROGRESS_FAILED:
+          case QuestProgress.Failed:
           {
             QuestSetCompleted(Quest, false);
             QuestSetFailed(Quest, true);
@@ -108,10 +104,10 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
             OnFail();
             break;
           }
-          case QUEST_PROGRESS_INCOMPLETE:
+          case QuestProgress.Incomplete:
           {
             if (!_muted)
-              if (formerProgress == QUEST_PROGRESS_UNDISCOVERED)
+              if (formerProgress == QuestProgress.Undiscovered)
                 DisplayDiscovered();
 
             QuestSetCompleted(Quest, false);
@@ -119,7 +115,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
             QuestSetDiscovered(Quest, true);
             break;
           }
-          case QUEST_PROGRESS_UNDISCOVERED:
+          case QuestProgress.Undiscovered:
             QuestSetCompleted(Quest, false);
             QuestSetFailed(Quest, false);
             QuestSetDiscovered(Quest, false);
@@ -127,7 +123,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         }
 
         //If the quest is incomplete, show its markers. Otherwise, hide them.
-        if (Progress != QUEST_PROGRESS_INCOMPLETE)
+        if (Progress != QuestProgress.Incomplete)
           foreach (var questItem in _questItems)
           {
             if (GetLocalPlayer() == Holder.Player) questItem.HideLocal();
@@ -260,7 +256,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         foreach (var questItem in _questItems)
           if (questItem.ShowsInQuestLog)
           {
-            if (questItem.Progress == QUEST_PROGRESS_COMPLETE)
+            if (questItem.Progress == QuestProgress.Complete)
               display = display + " - |cff808080" + questItem.Description + " (Completed)|r\n";
             else
               display = display + " - " + questItem.Description + "\n";
@@ -285,8 +281,8 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
           if (questItem.ShowsInQuestLog)
             display = questItem.Progress switch
             {
-              QUEST_PROGRESS_COMPLETE => display + " - |cff808080" + questItem.Description + " (Completed)|r\n",
-              QUEST_PROGRESS_FAILED => display + " - |cffCD5C5C" + questItem.Description + " (Failed)|r\n",
+              QuestProgress.Complete => display + " - |cff808080" + questItem.Description + " (Completed)|r\n",
+              QuestProgress.Failed => display + " - |cffCD5C5C" + questItem.Description + " (Failed)|r\n",
               _ => display + " - " + questItem.Description + "\n"
             };
 
@@ -319,7 +315,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         foreach (var questItem in _questItems)
           if (questItem.ShowsInQuestLog)
           {
-            if (questItem.Progress == QUEST_PROGRESS_COMPLETE)
+            if (questItem.Progress == QuestProgress.Complete)
               display = display + " - |cff808080" + questItem.Description + " (Completed)|r\n";
             else
               display = display + " - " + questItem.Description + "\n";
@@ -337,34 +333,34 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       var anyUndiscovered = false;
 
       foreach (var questItem in _questItems)
-        if (questItem.Progress != QUEST_PROGRESS_COMPLETE)
+        if (questItem.Progress != QuestProgress.Complete)
         {
           allComplete = false;
           switch (questItem.Progress)
           {
-            case QUEST_PROGRESS_FAILED:
+            case QuestProgress.Failed:
               anyFailed = true;
               break;
-            case QUEST_PROGRESS_UNDISCOVERED:
+            case QuestProgress.Undiscovered:
               anyUndiscovered = true;
               break;
           }
         }
 
       //If anything is undiscovered, the quest is undiscovered
-      if (anyUndiscovered && Progress != QUEST_PROGRESS_UNDISCOVERED)
-        Progress = QUEST_PROGRESS_UNDISCOVERED;
+      if (anyUndiscovered && Progress != QuestProgress.Undiscovered)
+        Progress = QuestProgress.Undiscovered;
       //If everything is complete, the quest is completed
-      else if (allComplete && Progress != QUEST_PROGRESS_COMPLETE)
-        Progress = QUEST_PROGRESS_COMPLETE;
+      else if (allComplete && Progress != QuestProgress.Complete)
+        Progress = QuestProgress.Complete;
       //If anything is failed, the quest is failed
-      else if (anyFailed && Progress != QUEST_PROGRESS_FAILED)
-        Progress = QUEST_PROGRESS_FAILED;
+      else if (anyFailed && Progress != QuestProgress.Failed)
+        Progress = QuestProgress.Failed;
       else
-        Progress = QUEST_PROGRESS_INCOMPLETE;
+        Progress = QuestProgress.Incomplete;
     }
 
-    public QuestItemData AddQuestItem(QuestItemData value)
+    public void AddQuestItem(QuestItemData value)
     {
       _questItems.Add(value);
       if (value.ShowsInQuestLog)
@@ -374,10 +370,9 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       }
 
       value.ParentQuest = this;
-      return value;
     }
 
-    private static void OnAnyQuestItemProgressChanged(object sender, QuestItemData e)
+    private static void OnAnyQuestItemProgressChanged(object? sender, QuestItemData e)
     {
       e.ParentQuest.OnQuestItemProgressChanged();
     }

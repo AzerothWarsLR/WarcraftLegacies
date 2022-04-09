@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
         if ( i == thistype.count){ break; }
         loopQuestItem = thistype.byIndex[i];
         if (loopQuestItem.researchId == researched && loopQuestItem.Holder.Player == GetOwningPlayer(GetTriggerUnit())){
-          loopQuestItem.Progress = QUEST_PROGRESS_COMPLETE;
+          loopQuestItem.Progress = QuestProgress.Complete;
         }
         i = i + 1;
       }

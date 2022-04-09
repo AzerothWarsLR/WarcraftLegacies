@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.Source.Libraries;
+using AzerothWarsCSharp.MacroTools;
 
 namespace AzerothWarsCSharp.Source.Cheats
 {

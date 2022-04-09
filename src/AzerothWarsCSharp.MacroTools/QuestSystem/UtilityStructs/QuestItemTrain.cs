@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
           item.CurrentTrainCount = item._currentTrainCount + 1;
           if (item._currentTrainCount == item._targetTrainCount)
           {
-            item.Progress = QuestData.QUEST_PROGRESS_COMPLETE;
+            item.Progress = QuestData.QuestProgress.Complete;
           }
         }
       }

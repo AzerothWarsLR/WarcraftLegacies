@@ -12,15 +12,15 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     private void OnAdd( ){
       if (targetArtifact.OwningUnit == targetLegend.Unit){
-        this.Progress = QUEST_PROGRESS_COMPLETE;
+        this.Progress = QuestProgress.Complete;
       }
     }
 
     private void OnAcquired( ){
       if (targetArtifact.OwningUnit == targetLegend.Unit){
-        this.Progress = QUEST_PROGRESS_COMPLETE;
+        this.Progress = QuestProgress.Complete;
       }else {
-        this.Progress = QUEST_PROGRESS_INCOMPLETE;
+        this.Progress = QuestProgress.Incomplete;
       }
     }
 

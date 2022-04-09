@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     private static thistype[] byIndex;
 
     private void OnDeath( ){
-      this.Progress = QUEST_PROGRESS_INCOMPLETE;
+      this.Progress = QuestProgress.Incomplete;
     }
 
     private static void OnAnyUnitDeath( ){
@@ -35,7 +35,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
         if ( i == thistype.count){ break; }
         loopQuestItem = thistype.byIndex[i];
         if (!loopQuestItem.ProgressLocked && loopQuestItem.target.UnitType == GetUnitTypeId(triggerUnit) && loopQuestItem.Holder.Player == GetOwningPlayer(GetTrainedUnit())){
-          loopQuestItem.Progress = QUEST_PROGRESS_COMPLETE;
+          loopQuestItem.Progress = QuestProgress.Complete;
         }
         i = i + 1;
       }
@@ -49,7 +49,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
         if ( i == thistype.count){ break; }
         loopQuestItem = thistype.byIndex[i];
         if (!loopQuestItem.ProgressLocked && loopQuestItem.target.UnitType == GetUnitTypeId(triggerUnit) && loopQuestItem.Holder.Player == GetOwningPlayer(GetRevivingUnit())){
-          loopQuestItem.Progress = QUEST_PROGRESS_COMPLETE;
+          loopQuestItem.Progress = QuestProgress.Complete;
         }
         i = i + 1;
       }
@@ -57,7 +57,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     void OnAdd( ){
       if (UnitAlive(target.Unit)){
-        this.Progress = QUEST_PROGRESS_COMPLETE;
+        this.Progress = QuestProgress.Complete;
       }
     }
 
