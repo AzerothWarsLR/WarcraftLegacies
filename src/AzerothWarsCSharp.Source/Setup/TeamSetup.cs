@@ -19,37 +19,55 @@ namespace AzerothWarsCSharp.Source.Setup
 
     public static void Setup( ){
       //Starting teams
-      Team t = 0;
+      TeamAlliance = new Team("Alliance")
+      {
+        VictoryMusic = "HeroicVictory"
+      };
 
-      TeamAlliance = Team.create("Alliance");
-      TeamAlliance.VictoryMusic = "HeroicVictory";
+      TeamLegion = new Team("Burning Legion")
+      {
+        VictoryMusic = "DarkVictory"
+      };
 
-      TeamLegion = Team.create("Burning Legion");
-      TeamLegion.VictoryMusic = "DarkVictory";
+      TeamHorde = new Team("Horde")
+      {
+        VictoryMusic = "DarkVictory"
+      };
 
-      TeamHorde = Team.create("Horde");
-      TeamHorde.VictoryMusic = "DarkVictory";
+      TeamNightElves = new Team("Night Elves")
+      {
+        VictoryMusic = "HeroicVictory"
+      };
 
-      TeamNightElves = Team.create("Night Elves");
-      TeamNightElves.VictoryMusic = "HeroicVictory";
+      TeamOldgod = new Team("Old Gods")
+      {
+        VictoryMusic = "DarkVictory"
+      };
 
-      TeamOldgod = Team.create("Old Gods");
-      TeamOldgod.VictoryMusic = "DarkVictory";
+      TeamNaga = new Team("Illidari")
+      {
+        VictoryMusic = "DarkVictory"
+      };
 
-      TeamNaga = Team.create("Illidari");
-      TeamNaga.VictoryMusic = "DarkVictory";
+      TeamGilneas = new Team("Gilneas")
+      {
+        VictoryMusic = "HeroicVictory"
+      };
 
-      TeamGilneas = Team.create("Gilneas");
-      TeamGilneas.VictoryMusic = "HeroicVictory";
+      TeamScarlet = new Team("Scarlet Crusade")
+      {
+        VictoryMusic = "DarkVictory"
+      };
 
-      TeamScarlet = Team.create("Scarlet Crusade");
-      TeamScarlet.VictoryMusic = "DarkVictory";
+      TeamForsaken = new Team("Forsaken")
+      {
+        VictoryMusic = "DarkVictory"
+      };
 
-      TeamForsaken = Team.create("Forsaken");
-      TeamForsaken.VictoryMusic = "DarkVictory";
-
-      TeamScourge = Team.create("Northrend");
-      TeamScourge.VictoryMusic = "DarkVictory";
+      TeamScourge = new Team("Northrend")
+      {
+        VictoryMusic = "DarkVictory"
+      };
     }
 
   }
