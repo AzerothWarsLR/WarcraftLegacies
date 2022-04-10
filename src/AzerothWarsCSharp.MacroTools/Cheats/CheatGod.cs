@@ -1,9 +1,8 @@
 using WCSharp.Events;
-
 using static War3Api.Common;
 using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 
-namespace AzerothWarsCSharp.Source.Cheats
+namespace AzerothWarsCSharp.MacroTools.Cheats
 {
   public class CheatGod
   {

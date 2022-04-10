@@ -1,13 +1,12 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
-
 using static War3Api.Common;
 using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 
-namespace AzerothWarsCSharp.Source.Cheats
+namespace AzerothWarsCSharp.MacroTools.Cheats
 {
-  public static class CheatFaction
+  public static class CheatKick
   {
-    private const string COMMAND = "-faction ";
+    private const string COMMAND = "-kick ";
     private static string? _parameter;
 
     private static void Actions()
@@ -16,11 +15,16 @@ namespace AzerothWarsCSharp.Source.Cheats
 
       string enteredString = GetEventPlayerChatString();
       player p = GetTriggerPlayer();
-      _parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
-      Faction f = Faction.GetFromName(_parameter);
+      var kickId = 0;
 
-      Person.ByHandle(GetTriggerPlayer()).Faction = f;
-      DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Attempted to faction to " + f.Name + ".");
+      _parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
+      kickId = S2I(_parameter);
+
+      var faction = Person.ByHandle(Player(kickId)).Faction;
+      if (faction != null)
+        faction.ScoreStatus = ScoreStatus.Defeated;
+      DisplayTextToPlayer(p, 0, 0,
+        "|cffD27575CHEAT:|r Attempted to kick player " + GetPlayerName(Player(kickId)) + ".");
     }
 
     public static void Setup()

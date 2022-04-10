@@ -1,5 +1,4 @@
-using AzerothWarsCSharp.Source.Cheats;
-
+using AzerothWarsCSharp.MacroTools.Cheats;
 using static War3Api.Common; using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Cinematics

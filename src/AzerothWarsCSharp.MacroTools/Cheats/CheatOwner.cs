@@ -1,15 +1,15 @@
 using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 
-namespace AzerothWarsCSharp.Source.Cheats
+namespace AzerothWarsCSharp.MacroTools.Cheats
 {
-  public static class CheatHp
+  public static class CheatOwner
   {
-    private const string COMMAND = "-hp ";
+    private const string COMMAND = "-owner ";
     private static string? _parameter;
 
-    private static void SetHp()
+    private static void SetOwner()
     {
-      SetUnitLifeBJ(GetEnumUnit(), S2R(_parameter));
+      SetUnitOwner(GetEnumUnit(), Player(S2I(_parameter)), true);
     }
 
     private static void Actions()
@@ -18,13 +18,13 @@ namespace AzerothWarsCSharp.Source.Cheats
 
       string enteredString = GetEventPlayerChatString();
       player p = GetTriggerPlayer();
-      GetPlayerId(p);
       _parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
 
       if (S2I(_parameter) >= 0)
       {
-        ForGroupBJ(GetUnitsSelectedAll(p), SetHp);
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Setting hitpoints of selected units to " + _parameter + ".");
+        ForGroupBJ(GetUnitsSelectedAll(p), SetOwner);
+        DisplayTextToPlayer(p, 0, 0,
+          "|cffD27575CHEAT:|r Setting owner of selected units to " + GetPlayerName(Player(S2I(_parameter))) + ".");
       }
     }
 

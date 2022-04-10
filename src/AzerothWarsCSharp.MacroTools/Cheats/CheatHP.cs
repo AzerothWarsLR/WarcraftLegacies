@@ -1,16 +1,15 @@
 using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 
-namespace AzerothWarsCSharp.Source.Cheats
+namespace AzerothWarsCSharp.MacroTools.Cheats
 {
-  public static class CheatLevel
+  public static class CheatHp
   {
-    private const string COMMAND = "-level ";
+    private const string COMMAND = "-hp ";
     private static string? _parameter;
 
-
-    private static void SetLevel()
+    private static void SetHp()
     {
-      SetHeroLevelBJ(GetEnumUnit(), S2I(_parameter), true);
+      SetUnitLifeBJ(GetEnumUnit(), S2R(_parameter));
     }
 
     private static void Actions()
@@ -22,10 +21,10 @@ namespace AzerothWarsCSharp.Source.Cheats
       GetPlayerId(p);
       _parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
 
-      if (S2I(_parameter) > 0)
+      if (S2I(_parameter) >= 0)
       {
-        ForGroupBJ(GetUnitsSelectedAll(p), SetLevel);
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Setting hero level of selected units to " + _parameter + ".");
+        ForGroupBJ(GetUnitsSelectedAll(p), SetHp);
+        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Setting hitpoints of selected units to " + _parameter + ".");
       }
     }
 
@@ -33,6 +32,7 @@ namespace AzerothWarsCSharp.Source.Cheats
     {
       trigger trig = CreateTrigger();
       foreach (var player in GetAllPlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
+
       TriggerAddAction(trig, Actions);
     }
   }

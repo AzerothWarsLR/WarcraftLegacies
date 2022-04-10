@@ -1,26 +1,39 @@
-﻿using AzerothWarsCSharp.MacroTools.Commands;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.Cheats
 {
-  /// <summary>
-  /// A cheat to increase or decrease the user's gold.
-  /// </summary>
-  public static class CheatGold
-  {
-    public static void Setup()
-    {
-      var cheatGold = new CheatCommand("gold", (triggerPlayer, arguments) =>
+  public class CheatGold{
+
+    //**CONFIG
+  
+    private const string COMMAND     = "-gold ";
+  
+    //*ENDCONFIG
+
+    private static void Actions( ){
+      if (!TestSafety.CheatCondition())
       {
-        if (int.TryParse(arguments[0], out var gold))
-        {
-          AdjustPlayerStateBJ(gold, triggerPlayer, PLAYER_STATE_RESOURCE_GOLD);
-          CommandSystem.Display(triggerPlayer, "Granted " + arguments[0] + " gold.");
-        }
+        return;
       }
-      );
-      CommandSystem.Register(cheatGold);
+      var i = 0;
+      string enteredString = GetEventPlayerChatString();
+      string parameter = null;
+      player p = GetTriggerPlayer();
+
+      parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
+      SetPlayerState(p, PLAYER_STATE_RESOURCE_GOLD, S2I(parameter));
+      DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Set to " + parameter + " gold.");
     }
+
+    public static void Setup( ){
+      trigger trig = CreateTrigger();
+      foreach (var player in GetAllPlayers())
+      {
+        TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
+      }
+      TriggerAddAction(trig, Actions);
+    }
+
   }
 }
