@@ -3,83 +3,104 @@ using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup
 {
-  public class PersonSetup{
+  public static class PersonSetup
+  {
+    public static void Setup()
+    {
+      Person.Register(new Person(Player(0)) 
+        {Faction = FrostwolfSetup.FACTION_FROSTWOLF}
+      );
 
-    public static void Setup( ){
-      Person p;
+      Person.Register(new Person(Player(1)) 
+        {Faction = LordaeronSetup.FactionLordaeron}
+      );
 
-      p = Person.create(Player(0));
-      p.Faction = FACTION_FROSTWOLF;
+      Person.Register(new Person(Player(2)) 
+        {Faction = QuelthalasSetup.FactionQuelthalas}
+      );
 
-      p = Person.create(Player(1));
-      p.Faction = LordaeronSetup.FactionLordaeron;
+      Person.Register(new Person(Player(3)) 
+        {Faction = ScourgeSetup.FactionScourge}
+      );
 
-      p = Person.create(Player(2));
-      p.Faction = QuelthalasSetup.FactionQuelthalas;
+      Person.Register(new Person(Player(4)) 
+        {Faction = IronforgeSetup.FACTION_IRONFORGE}
+      );
 
-      p = Person.create(Player(3));
-      p.Faction = ScourgeSetup.FactionScourge;
+      Person.Register(new Person(Player(5)) 
+        {Faction = WarsongSetup.FACTION_WARSONG}
+      );
 
-      p = Person.create(Player(4));
-      p.Faction = FACTION_IRONFORGE;
+      Person.Register(new Person(Player(6)) 
+        {Faction = FelHordeSetup.FactionFelHorde}
+      );
 
-      p = Person.create(Player(5));
-      p.Faction = FACTION_WARSONG;
+      Person.Register(new Person(Player(7)) 
+        {Faction = DalaranSetup.Dalaran}
+      );
 
-      p = Person.create(Player(6));
-      p.Faction = FelHordeSetup.FactionFelHorde;
+      Person.Register(new Person(Player(8)) 
+        {Faction = GoblinSetup.factionGoblin}
+      );
 
-      p = Person.create(Player(7));
-      p.Faction = FACTION_DALARAN;
+      Person.Register(new Person(Player(9)) 
+        {Faction = ForsakenSetup.FACTION_FORSAKEN}
+      );
 
-      p = Person.create(Player(8));
-      p.Faction = FACTION_GOBLIN;
+      Person.Register(new Person(Player(10)) 
+        {Faction = StormwindSetup.Stormwind}
+      );
 
-      p = Person.create(Player(9));
-      p.Faction = FACTION_FORSAKEN;
+      Person.Register(new Person(Player(11)) 
+        {Faction = DruidsSetup.factionDruids}
+      );
 
-      p = Person.create(Player(10));
-      p.Faction = StormwindSetup.Stormwind;
+      Person.Register(new Person(Player(12)) 
+        {Faction = ScarletSetup.FactionScarlet}
+      );
 
-      p = Person.create(Player(11));
-      p.Faction = FACTION_DRUIDS;
+      Person.Register(new Person(Player(13)) 
+        {Faction = DraeneiSetup.Draenei}
+      );
 
-      p = Person.create(Player(12));
-      p.Faction = ScarletSetup.FactionScarlet;
+      Person.Register(new Person(Player(14)) 
+        {Faction = BlackEmpireSetup.FactionBlackempire}
+      );
 
-      p = Person.create(Player(13));
-      p.Faction = DraeneiSetup.Draenei;
+      Person.Register(new Person(Player(15)) 
+        {Faction = NagaSetup.FactionNaga}
+      );
 
-      p = Person.create(Player(14));
-      p.Faction = FACTION_BLACKEMPIRE;
+      Person.Register(new Person(Player(16)) 
+        {Faction = CthunSetup.FactionCthun}
+      );
 
-      p = Person.create(Player(15));
-      p.Faction = NagaSetup.FactionNaga;
+      Person.Register(new Person(Player(17)) 
+        {Faction = TrollSetup.FACTION_TROLL}
+      );
 
-      p = Person.create(Player(16));
-      p.Faction = CthunSetup.FactionCthun;
+      Person.Register(new Person(Player(18)) 
+        {Faction = SentinelsSetup.Sentinels}
+      );
 
-      p = Person.create(Player(17));
-      p.Faction = FACTION_TROLL;
+      Person.Register(new Person(Player(19)) 
+        {Faction = TwilightSetup.FACTION_TWILIGHT}
+      );
 
-      p = Person.create(Player(18));
-      p.Faction = FACTION_SENTINELS;
+      Person.Register(new Person(Player(20)) 
+        {Faction = GilneasSetup.FACTION_GILNEAS}
+      );
 
-      p = Person.create(Player(19));
-      p.Faction = FACTION_TWILIGHT;
+      Person.Register(new Person(Player(22)) 
+        {Faction = KultirasSetup.FACTION_KULTIRAS}
+      );
+      
+      Person.Register(new Person(Player(23)) 
+        {Faction = LegionSetup.FactionLegion}
+      );
 
-      p = Person.create(Player(20));
-      p.Faction = FACTION_GILNEAS;
-
-      p = Person.create(Player(22));
-      p.Faction = FACTION_KULTIRAS;
-
-      p = Person.create(Player(23));
-      p.Faction = LegionSetup.FactionLegion;
-
-      Person.create(Player(21));
-
+      Person.Register(new Person(Player(21))
+      );
     }
-
   }
 }

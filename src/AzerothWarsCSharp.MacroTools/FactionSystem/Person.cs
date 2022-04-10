@@ -169,7 +169,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// <summary>
     /// Register a <see cref="Person"/> to the Person system.
     /// </summary>
-    public void Register(Person person)
+    public static void Register(Person person)
     {
       ById[GetPlayerId(person.Player)] = person;
     }

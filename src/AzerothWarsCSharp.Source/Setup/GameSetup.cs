@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Setup
       ArtifactSetup.Setup();
       ControlPointSetup.Setup();
       AllQuestSetup.Setup();
-      ResearchSetup.Setup();
+      //ResearchSetup.Setup();
       ObserverSetup.Setup();
       SpellsSetup.Setup();
       CpCapture.Setup();
@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Setup
       ControlPointVictory.Setup();
       SilvermoonDies.Setup();
       ZinrokhAssembly.Setup();
-      IncompatibleTierConfig.Setup();
+      //IncompatibleTierConfig.Setup();
       FactionMultiboard.Setup();
     }
   }

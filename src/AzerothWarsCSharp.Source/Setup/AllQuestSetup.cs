@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Setup
       StormwindQuestSetup.Setup();
       WarsongQuestSetup.Setup();
       NagaQuestSetup.Setup();
-      GilneasQuestSetup.Setup();
+      //GilneasQuestSetup.Setup();
       KultirasQuestSetup.Setup();
       ScarletQuestSetup.Setup();
       TrollQuestSetup.Setup();
