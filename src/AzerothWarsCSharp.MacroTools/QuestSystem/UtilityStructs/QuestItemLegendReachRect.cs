@@ -1,69 +1,41 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Wrappers;
+using WCSharp.Shared.Data;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemLegendReachRect : QuestItemData{
+  public class QuestItemLegendReachRect : QuestItemData
+  {
+    private readonly TriggerWrapper _entersRect = new();
 
-    private static region RectToRegion(rect whichRect ){
+    private readonly Legend _legend;
+    private readonly region _target;
+    private readonly rect _targetRect;
+
+    public QuestItemLegendReachRect(Legend legend, rect targetRect, string rectName)
+    {
+      _target = RectToRegion(targetRect);
+      _targetRect = targetRect;
+      _legend = legend;
+      Description = legend.Name + " reaches " + rectName;
+      TriggerRegisterEnterRegion(_entersRect.Trigger, _target, null);
+      TriggerAddAction(_entersRect.Trigger, OnRegionEnter);
+      PingPath = "MinimapQuestTurnIn";
+    }
+
+    public override Point Position => new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
+
+    private static region RectToRegion(rect whichRect)
+    {
       region rectRegion = CreateRegion();
       RegionAddRect(rectRegion, whichRect);
       return rectRegion;
     }
 
-
-    private Legend legend;
-    private region target;
-    private rect targetRect;
-
-    private static trigger entersRectTrig = CreateTrigger();
-    private static int count = 0;
-    private static thistype[] byIndex;
-
-    float operator X( ){
-      return GetRectCenterX(targetRect);
+    private void OnRegionEnter()
+    {
+      if (GetTriggeringRegion() == _target && UnitAlive(_legend.Unit) && GetTriggerUnit() == _legend.Unit)
+        Progress = QuestProgress.Complete;
     }
-
-    float operator Y( ){
-      return GetRectCenterY(targetRect);
-    }
-
-    string operator PingPath( ){
-      return "MinimapQuestTurnIn";
-    }
-
-    private void OnRegionEnter(unit whichUnit ){
-      if (UnitAlive(legend.Unit) && GetTriggerUnit() == legend.Unit){
-        this.Progress = QuestProgress.Complete;
-      }
-    }
-
-    private static void OnAnyRegionEnter( ){
-      var i = 0;
-      while(true){
-        if ( i == thistype.count){ break; }
-        if (GetTriggeringRegion() == thistype.byIndex[i].target){
-          thistype.byIndex[i].OnRegionEnter(GetEnteringUnit());
-        }
-        i = i + 1;
-      }
-    }
-
-    public QuesTItemLegendReachRect(Legend legend, rect targetRect, string rectName ){
-
-      target = RectToRegion(targetRect);
-      this.targetRect = targetRect;
-      this.legend = legend;
-      this.Description = legend.Name + " reaches " + rectName;
-      TriggerRegisterEnterRegion(thistype.entersRectTrig, target, null);
-      thistype.byIndex[thistype.count] = this;
-      thistype.count = thistype.count + 1;
-      
-    }
-
-    private static void onInit( ){
-      TriggerAddAction(thistype.entersRectTrig,  OnAnyRegionEnter);
-    }
-
-
   }
 }

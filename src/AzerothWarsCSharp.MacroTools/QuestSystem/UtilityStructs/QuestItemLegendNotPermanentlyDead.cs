@@ -1,71 +1,38 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Events;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemLegendNotPermanentlyDead : QuestItemData{
+  public sealed class QuestItemLegendNotPermanentlyDead : QuestItemData
+  {
+    private readonly Legend _target;
 
+    public QuestItemLegendNotPermanentlyDead(Legend target)
+    {
+      _target = target;
+      if (IsUnitType(target.Unit, UNIT_TYPE_STRUCTURE))
+        Description = target.Name + " is intact";
+      else
+        Description = target.Name + " is alive";
 
-    private Legend target = 0;
-    private static int count = 0;
-    private static thistype[] byIndex;
-
-    private void OnDeath( ){
-      this.Progress = QuestProgress.Failed;
+      target.PermanentlyDied += OnAnyUnitDeath;
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, OnAnyUnitTrain);
     }
 
-    private static void OnAnyUnitDeath( ){
-      var i = 0;
-      thistype loopItem;
-      Legend triggerLegend = GetTriggerLegend();
-      while(true){
-        if ( i == thistype.count){ break; }
-        loopItem = thistype.byIndex[i];
-        if (loopItem.target == triggerLegend){
-          loopItem.OnDeath();
-        }
-        i = i + 1;
-      }
+    private void OnAnyUnitDeath(object? sender, Legend legend)
+    {
+      Progress = QuestProgress.Failed;
     }
 
-    static  OnAnyUnitTrain( ){//this will fuck up if a legend is already alive or another one is trained
-      var i = 0;
-      thistype loopQuestItem;
-      unit triggerUnit = GetTrainedUnit();
-      while(true){
-        if ( i == thistype.count){ break; }
-        loopQuestItem = thistype.byIndex[i];
-        if (!loopQuestItem.ProgressLocked && loopQuestItem.target.UnitType == GetUnitTypeId(triggerUnit) && loopQuestItem.Holder.Player == GetOwningPlayer(GetTrainedUnit())){
-          loopQuestItem.Progress = QuestProgress.Complete;
-        }
-        i = i + 1;
-      }
+    private void OnAnyUnitTrain()
+    {
+      if (!ProgressLocked && _target.UnitType == GetUnitTypeId(GetTriggerUnit()) &&
+          Holder.Player == GetOwningPlayer(GetTrainedUnit())) Progress = QuestProgress.Complete;
     }
 
-    void OnAdd( ){
-      if (UnitAlive(target.Unit)){
-        this.Progress = QuestProgress.Complete;
-      }
+    internal override void OnAdd()
+    {
+      if (UnitAlive(_target.Unit)) Progress = QuestProgress.Complete;
     }
-
-    public QuestItemLegendNotPermanentlyDead(Legend target){
-      this.target = target;
-      if (IsUnitType(target.Unit, UNIT_TYPE_STRUCTURE)){
-        this.Description = target.Name + " is intact";
-      }else {
-        this.Description = target.Name + " is alive";
-      }
-      thistype.byIndex[thistype.count] = this;
-      thistype.count = thistype.count + 1;
-      
-    }
-
-    private static void onInit( ){
-      trigger trig = CreateTrigger();
-      OnLegendPermaDeath.register(trig);
-      PlayerUnitEventAddAction(EVENT_PLAYER_UNIT_TRAIN_FINISH,  thistype.OnAnyUnitTrain);
-      TriggerAddAction(trig,  thistype.OnAnyUnitDeath);
-    }
-
-
   }
 }

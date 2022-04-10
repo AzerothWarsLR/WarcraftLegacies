@@ -53,6 +53,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     private int _xp; //Stored by DistributeUnits and given out again by DistributeResources
 
+    public EventHandler<Faction> ScoreStatusChanged;
+
     public Faction(string? name, playercolor playerColor, string prefixCol, string icon)
     {
       _name = name;
@@ -61,8 +63,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       _icon = icon;
     }
 
-    public EventHandler<Faction> ScoreStatusChanged;
-    
     public int StartingGold { get; init; }
 
     public int StartingLumber { get; init; }
@@ -133,6 +133,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
           value.AddFaction(this);
           _team = value;
           TeamJoin?.Invoke(this, this);
+          JoinedTeam?.Invoke(this, this);
         }
       }
     }
@@ -238,6 +239,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         }
       }
     }
+
+    /// <summary>
+    ///   Fires when the <see cref="Faction" /> joins a new <see cref="Team" />.
+    /// </summary>
+    public event EventHandler<Faction>? JoinedTeam;
 
     public static event EventHandler<Faction>? Registered;
     public static event EventHandler<FactionChangeTeamEventArgs>? TeamLeft;

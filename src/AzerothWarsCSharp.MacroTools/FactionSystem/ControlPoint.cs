@@ -40,6 +40,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     public Person OwningPerson => Person.ByHandle(owner);
 
+    public event EventHandler<ControlPointOwnerChangeEventArgs> ChangedOwner;
+
     /// <summary>
     ///   Whether or not the given unit is a <see cref="ControlPoint" />.
     /// </summary>
@@ -70,6 +72,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       person.ControlPointCount += 1;
 
       OnControlPointOwnerChange?.Invoke(this, new ControlPointOwnerChangeEventArgs(this, formerOwner));
+      ChangedOwner?.Invoke(this, new ControlPointOwnerChangeEventArgs(this, formerOwner));
     }
 
     public static ControlPoint GetFromUnit(unit whichUnit)

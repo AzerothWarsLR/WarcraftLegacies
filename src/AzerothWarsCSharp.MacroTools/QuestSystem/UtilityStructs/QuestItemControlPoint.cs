@@ -1,85 +1,41 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemControlPoint : QuestItemData{
+  public sealed class QuestItemControlPoint : QuestItemData
+  {
+    private readonly ControlPoint _target;
 
-
-    private static trigger unitDies = CreateTrigger();
-    private ControlPoint target = 0;
-    private static int count = 0;
-    private static thistype[] byIndex;
-
-    float operator X( ){
-      return GetUnitX(target.Unit);
+    public QuestItemControlPoint(ControlPoint target)
+    {
+      _target = target;
+      Description = "Your team controls " + target.Name;
+      TargetWidget = target.Unit;
+      target.ChangedOwner += OnTargetChangeOwner;
+      Faction.TeamJoin += OnFactionTeamJoin;
     }
 
-    float operator Y( ){
-      return GetUnitY(target.Unit);
+    public override Point Position => new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
+
+    internal override void OnAdd()
+    {
+      if (Holder.Team.ContainsPlayer(GetOwningPlayer(_target.Unit))) Progress = QuestProgress.Complete;
+
+      Holder.JoinedTeam += OnFactionTeamJoin;
     }
 
-    private void OnAdd( ){
-      if (this.Holder.Team.ContainsPlayer(GetOwningPlayer(target.Unit))){
-        this.Progress = QuestProgress.Complete;
-      }
+    private void OnTargetChangeOwner(object? sender, ControlPointOwnerChangeEventArgs controlPointOwnerChangeEventArgs)
+    {
+      Progress = Holder.Team.ContainsPlayer(GetOwningPlayer(_target.Unit))
+        ? QuestProgress.Complete
+        : QuestProgress.Incomplete;
     }
 
-    private void OnTargetChangeOwner( ){
-      if (this.Holder.Team.ContainsPlayer(GetOwningPlayer(target.Unit))){
-        this.Progress = QuestProgress.Complete;
-      }else {
-        this.Progress = QuestProgress.Incomplete;
-      }
+    private void OnFactionTeamJoin(object? sender, Faction faction)
+    {
+      if (faction.Team == Holder.Team && GetOwningPlayer(_target.Unit) == faction.Player)
+        Progress = QuestProgress.Complete;
     }
-
-    public static void OnFactionTeamJoin( ){
-      var i = 0;
-      thistype loopItem;
-      Team loopItemHolderTeam;
-      while(true){
-        if ( i == thistype.count){ break; }
-        //Iterate across all QuestItemControlPoints held by Factions in either the Team that was left or the Team that was joined
-        loopItem = thistype.byIndex[i];
-        loopItemHolderTeam = loopItem.Holder.Team;
-        if (loopItemHolderTeam == GetTriggerFaction().Team || loopItemHolderTeam == GetTriggerFactionPrevTeam()){
-          loopItem.OnTargetChangeOwner();
-        }
-        i = i + 1;
-      }
-    }
-
-    public static void OnAnyControlPointChangeOwner( ){
-      var i = 0;
-      thistype loopItem;
-      while(true){
-        if ( i == thistype.count){ break; }
-        loopItem = thistype.byIndex[i];
-        if (loopItem.target == GetTriggerControlPoint()){
-          loopItem.OnTargetChangeOwner();
-        }
-        i = i + 1;
-      }
-    }
-
-    public QuestItemControlPoint(ControlPoint target){
-
-      this.target = target;
-      this.Description = "Your team controls " + target.Name;
-      this.targetWidget = target.Unit;
-      thistype.byIndex[thistype.count] = this;
-      thistype.count = thistype.count + 1;
-      
-    }
-
-
-    public static void Setup( ){
-      trigger trigOwnerChange = CreateTrigger();
-      trigger trigFaction = CreateTrigger();
-      OnControlPointOwnerChange.register(trigOwnerChange);
-      OnFactionTeamJoin.register(trigFaction);
-      TriggerAddAction(trigOwnerChange,  OnAnyControlPointChangeOwner);
-      TriggerAddAction(trigFaction,  OnFactionTeamJoin);
-    }
-
   }
 }
