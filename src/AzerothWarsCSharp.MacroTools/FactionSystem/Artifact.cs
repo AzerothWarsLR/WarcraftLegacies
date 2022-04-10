@@ -15,7 +15,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private unit? _owningUnit;
     private ArtifactStatus _status;
     private int _titanforgedAbility = FourCC("A0VJ");
-    private string? _description;
 
     public Artifact(item whichItem)
     {
@@ -176,7 +175,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
           IsTerrainPathable(GetUnitX(_owningUnit), GetUnitY(_owningUnit), PATHING_TYPE_WALKABILITY))
         if (!UnitAlive(_owningUnit))
         {
-          Shore tempShore = Shore.GetNearestShore(GetUnitX(_owningUnit), GetUnitY(_owningUnit));
+          Shore tempShore = Shore.GetNearestShore(new Point(GetUnitX(_owningUnit), GetUnitY(_owningUnit)));
           Item = CreateItem(GetItemTypeId(Item), tempShore.Position.X, tempShore.Position.Y);
         }
 
