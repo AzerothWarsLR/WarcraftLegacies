@@ -3,6 +3,8 @@ using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Legends;
 
+using static War3Api.Common;
+
 namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {
   public sealed class QuestFallenGuardian : QuestData

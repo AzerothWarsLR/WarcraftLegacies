@@ -2,7 +2,8 @@ using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-using GeneralHelpers = AzerothWarsCSharp.MacroTools.GeneralHelpers;
+using static War3Api.Common;
+using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Cthun
 {

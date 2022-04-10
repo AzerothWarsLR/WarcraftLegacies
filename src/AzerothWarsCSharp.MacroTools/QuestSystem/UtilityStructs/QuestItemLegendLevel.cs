@@ -1,6 +1,8 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using WCSharp.Events;
 
+using static War3Api.Common;
+
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
   public sealed class QuestItemLegendLevel : QuestItemData

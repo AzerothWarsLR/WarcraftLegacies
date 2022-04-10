@@ -3,6 +3,8 @@ using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Legends;
 
+using static War3Api.Common; using static War3Api.Blizzard;
+
 namespace AzerothWarsCSharp.Source.Quests.Forsaken
 {
   public sealed class QuestThePlaguelands : QuestData

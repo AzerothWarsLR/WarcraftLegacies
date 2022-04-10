@@ -1,5 +1,7 @@
 using AzerothWarsCSharp.Source.Legends;
 
+using static War3Api.Common;
+
 namespace AzerothWarsCSharp.Source.Mechanics.Quelthalas
 {
   public static class SilvermoonDies

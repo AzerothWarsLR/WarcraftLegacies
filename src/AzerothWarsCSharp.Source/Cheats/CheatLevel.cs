@@ -1,3 +1,5 @@
+using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
+
 namespace AzerothWarsCSharp.Source.Cheats
 {
   public static class CheatLevel

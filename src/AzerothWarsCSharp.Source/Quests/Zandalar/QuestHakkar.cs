@@ -4,6 +4,8 @@ using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Legends;
 using AzerothWarsCSharp.Source.Setup;
 
+using static War3Api.Common;
+
 namespace AzerothWarsCSharp.Source.Quests.Zandalar
 {
   public sealed class QuestHakkar : QuestData

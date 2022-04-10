@@ -1,5 +1,7 @@
 using AzerothWarsCSharp.MacroTools;
 
+using static War3Api.Common; using static War3Api.Blizzard;
+
 namespace AzerothWarsCSharp.Source.Cheats
 {
   public static class TestSafety

@@ -6,6 +6,8 @@ using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using AzerothWarsCSharp.Source.Setup.QuestSetup;
 
+using static War3Api.Common; using static War3Api.Blizzard;
+
 namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {
   public sealed class QuestGreatTreachery : QuestData

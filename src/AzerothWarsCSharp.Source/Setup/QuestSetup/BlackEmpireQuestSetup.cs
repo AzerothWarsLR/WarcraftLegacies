@@ -1,7 +1,3 @@
-using System.Collections.Generic;
-using AzerothWarsCSharp.Source.Quests.BlackEmpire;
-using AzerothWarsCSharp.Source.Setup.FactionSetup;
-
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
   public static class BlackEmpireQuestSetup

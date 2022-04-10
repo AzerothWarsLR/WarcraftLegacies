@@ -3,7 +3,8 @@ using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Legends;
 
-namespace AzerothWarsCSharp.Source.Quests.Dalaran
+using static War3Api.Common;
+using static AzerothWarsCSharp.MacroTools.Display; namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {
   public sealed class QuestBlueDragons : QuestData
   {

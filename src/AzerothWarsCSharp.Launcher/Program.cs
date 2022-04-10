@@ -79,10 +79,10 @@ namespace AzerothWarsCSharp.Launcher
           });
           break;
         case ConsoleKey.D2:
-          Build(BASE_MAP_PATH, TEST_SOURCE_CODE_PROJECT_FOLDER_PATH, false);
+          Build(BASE_MAP_PATH, SOURCE_CODE_PROJECT_FOLDER_PATH, false);
           break;
         case ConsoleKey.D3:
-          Build(BASE_MAP_PATH,TEST_SOURCE_CODE_PROJECT_FOLDER_PATH, true);
+          Build(BASE_MAP_PATH, SOURCE_CODE_PROJECT_FOLDER_PATH, true);
           break;
         case ConsoleKey.D4:
           DisplayUnusedModels();

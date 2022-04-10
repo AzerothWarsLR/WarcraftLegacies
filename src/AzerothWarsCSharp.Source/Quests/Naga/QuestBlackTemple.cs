@@ -5,6 +5,8 @@ using AzerothWarsCSharp.Source.Legends;
 using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
+using static War3Api.Common;
+
 namespace AzerothWarsCSharp.Source.Quests.Naga
 {
   public sealed class QuestBlackTemple : QuestData

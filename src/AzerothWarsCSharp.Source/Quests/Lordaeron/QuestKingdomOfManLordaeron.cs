@@ -5,6 +5,9 @@ using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Legends;
 using AzerothWarsCSharp.Source.Setup;
 
+using static War3Api.Common;
+using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
+
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {
   public sealed class QuestKingdomOfManLordaeron : QuestData

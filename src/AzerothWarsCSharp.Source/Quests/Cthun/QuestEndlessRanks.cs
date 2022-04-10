@@ -1,6 +1,8 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
+using static War3Api.Common;
+
 namespace AzerothWarsCSharp.Source.Quests.Cthun
 {
   public sealed class QuestEndlessRanks : QuestData

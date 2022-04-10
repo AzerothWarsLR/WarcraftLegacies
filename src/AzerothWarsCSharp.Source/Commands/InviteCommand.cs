@@ -1,6 +1,9 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.Source.Game_Logic;
 
+using static War3Api.Common;
+using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
+
 namespace AzerothWarsCSharp.Source.Commands
 {
   /// <summary>

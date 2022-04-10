@@ -1,7 +1,9 @@
 //Displays each Faction)s starting quest after the cinematic phase ends
 
-using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+
+using static War3Api.Common;
+using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Game_Logic
 {

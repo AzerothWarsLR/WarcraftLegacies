@@ -1,6 +1,8 @@
 ﻿using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 
+using static War3Api.Common; using static War3Api.Blizzard;
+
 namespace AzerothWarsCSharp.MacroTools.Hazards
 {
   public sealed class SolarJudgementHazard : Hazard

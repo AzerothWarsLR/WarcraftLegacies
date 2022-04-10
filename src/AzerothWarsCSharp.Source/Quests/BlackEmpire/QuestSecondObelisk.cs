@@ -4,7 +4,7 @@
 // using AzerothWarsCSharp.MacroTools.Wrappers;
 // using AzerothWarsCSharp.Source.Mechanics.BlackEmpire;
 //
-// namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
+// using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 // {
 //   public sealed class QuestSecondObelisk : QuestData
 //   {

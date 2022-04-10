@@ -2,6 +2,8 @@
 using AzerothWarsCSharp.MacroTools.Spells;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 
+using static War3Api.Common;
+
 namespace AzerothWarsCSharp.Source.Setup
 {
   public static class SpellsSetup

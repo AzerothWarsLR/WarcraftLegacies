@@ -5,6 +5,9 @@ using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Legends;
 using WCSharp.Shared.Data;
 
+using static War3Api.Common;
+using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
+
 namespace AzerothWarsCSharp.Source.Quests.Sentinels
 {
   public sealed class QuestMaievOutland : QuestData

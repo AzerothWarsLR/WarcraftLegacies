@@ -1,5 +1,7 @@
 using WCSharp.Events;
 
+using static War3Api.Common;
+
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
   public class QuestItemResearch : QuestItemData

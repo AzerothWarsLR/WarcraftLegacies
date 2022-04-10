@@ -6,7 +6,9 @@ using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Legends;
 using WCSharp.Shared.Data;
 
-namespace AzerothWarsCSharp.Source.Quests.Quelthalas
+using static War3Api.Common;
+using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
+using static AzerothWarsCSharp.MacroTools.Display; namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {
   public sealed class QuestTheBloodElves : QuestData
   {

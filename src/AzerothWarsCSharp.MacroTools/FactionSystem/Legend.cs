@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using WCSharp.Events;
 
+using static War3Api.Common;
+using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
+
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
   /// <summary>

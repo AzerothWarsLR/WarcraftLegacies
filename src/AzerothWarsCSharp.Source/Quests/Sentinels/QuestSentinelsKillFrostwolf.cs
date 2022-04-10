@@ -3,7 +3,8 @@ using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Legends;
 
-namespace AzerothWarsCSharp.Source.Quests.Sentinels
+using static War3Api.Common;
+using static AzerothWarsCSharp.MacroTools.Display; namespace AzerothWarsCSharp.Source.Quests.Sentinels
 {
   public sealed class QuestSentinelsKillFrostwolf : QuestData
   {

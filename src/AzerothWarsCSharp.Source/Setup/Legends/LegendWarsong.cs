@@ -1,6 +1,8 @@
 using AzerothWarsCSharp.MacroTools;
 using Legend = AzerothWarsCSharp.MacroTools.FactionSystem.Legend;
 
+using static War3Api.Common;
+
 namespace AzerothWarsCSharp.Source.Legends
 {
   public static class LegendWarsong

@@ -3,6 +3,8 @@ using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.Source.Quests.Naga;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
+using static War3Api.Common;
+
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
   public static class NagaQuestSetup{

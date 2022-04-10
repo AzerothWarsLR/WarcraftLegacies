@@ -3,6 +3,8 @@ using AzerothWarsCSharp.Source.Legends;
 using AzerothWarsCSharp.Source.Quests.Scourge;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
+using static War3Api.Common;
+
 namespace AzerothWarsCSharp.Source.Mechanics.Scourge
 {
   /// <summary>

@@ -2,6 +2,8 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 
+using static War3Api.Common; using static War3Api.Blizzard;
+
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
   public sealed class QuestItemArtifactInRect : QuestItemData

@@ -1,8 +1,11 @@
+using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Legends;
 using AzerothWarsCSharp.Source.Setup.QuestSetup;
+
+using static War3Api.Common; using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Quests.Draenei
 {

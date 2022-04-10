@@ -2,6 +2,8 @@ using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.Source.Quests.Cthun;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
+using static War3Api.Common;
+
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
   public static class CthunQuestSetup

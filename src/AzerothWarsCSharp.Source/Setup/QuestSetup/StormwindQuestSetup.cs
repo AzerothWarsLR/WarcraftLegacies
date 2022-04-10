@@ -4,6 +4,8 @@ using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.Source.Quests.Stormwind;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
+using static War3Api.Common;
+
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
   public static class StormwindQuestSetup

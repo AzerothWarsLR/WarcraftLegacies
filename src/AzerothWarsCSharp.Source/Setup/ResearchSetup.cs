@@ -1,4 +1,4 @@
-// namespace AzerothWarsCSharp.Source.Setup
+// using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 // {
 //   public class ResearchSetup{
 //

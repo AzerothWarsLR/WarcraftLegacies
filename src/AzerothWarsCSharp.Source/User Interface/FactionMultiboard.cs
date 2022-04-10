@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
+using static War3Api.Common; using static War3Api.Blizzard;
+
 namespace AzerothWarsCSharp.Source.User_Interface
 {
   public sealed class FactionMultiboard

@@ -1,6 +1,6 @@
 // using AzerothWarsCSharp.MacroTools;
 //
-// namespace AzerothWarsCSharp.Source.IncompatibleUpgrades
+// using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 // {
 //   public static class IncompatibleTierConfig{
 //

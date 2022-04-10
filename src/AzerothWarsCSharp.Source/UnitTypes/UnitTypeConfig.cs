@@ -1,5 +1,7 @@
 using AzerothWarsCSharp.MacroTools;
 
+using static War3Api.Common;
+
 namespace AzerothWarsCSharp.Source.UnitTypes
 {
   public class UnitTypeConfig{

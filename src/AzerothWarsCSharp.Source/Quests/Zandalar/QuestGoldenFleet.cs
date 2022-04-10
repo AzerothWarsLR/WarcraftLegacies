@@ -1,6 +1,8 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
+using static War3Api.Common;
+
 namespace AzerothWarsCSharp.Source.Quests.Zandalar
 {
   public sealed class QuestGoldenFleet : QuestData

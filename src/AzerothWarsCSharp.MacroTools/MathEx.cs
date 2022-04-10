@@ -1,5 +1,6 @@
 ﻿using System;
 using WCSharp.Shared.Data;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.MacroTools
 {

@@ -1,8 +1,11 @@
+using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
+
+using static War3Api.Common; using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 {

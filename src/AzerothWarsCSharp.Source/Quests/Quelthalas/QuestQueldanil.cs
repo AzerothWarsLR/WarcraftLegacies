@@ -1,7 +1,10 @@
+using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
+
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {

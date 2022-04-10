@@ -1,5 +1,7 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
+using static War3Api.Common;
+
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
   public class SentinelsSetup{

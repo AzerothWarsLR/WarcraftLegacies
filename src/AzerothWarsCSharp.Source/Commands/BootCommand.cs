@@ -3,6 +3,9 @@ using AzerothWarsCSharp.Source.Game_Logic;
 using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
+using static War3Api.Common;
+using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
+
 namespace AzerothWarsCSharp.Source.Commands
 {
   public static class BootCommand{

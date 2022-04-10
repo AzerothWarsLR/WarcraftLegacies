@@ -1,6 +1,6 @@
 // using AzerothWarsCSharp.MacroTools.FactionSystem;
 //
-// namespace AzerothWarsCSharp.Source.Researches.Stormwind
+// using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 // {
 //   public class TierExpeditionSurvivors{
 //

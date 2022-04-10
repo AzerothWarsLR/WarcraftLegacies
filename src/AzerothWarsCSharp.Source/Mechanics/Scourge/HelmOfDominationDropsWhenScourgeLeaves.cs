@@ -2,7 +2,7 @@
 // using AzerothWarsCSharp.Source.Setup;
 // using AzerothWarsCSharp.Source.Setup.FactionSetup;
 //
-// namespace AzerothWarsCSharp.Source.Mechanics.Scourge
+// using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 // {
 //   public class HelmOfDominationDropsWhenScourgeLeaves{
 //

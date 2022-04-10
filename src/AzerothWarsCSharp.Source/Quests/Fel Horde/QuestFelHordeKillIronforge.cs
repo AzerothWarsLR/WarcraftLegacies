@@ -1,7 +1,8 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Legends;
+
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 {

@@ -1,9 +1,12 @@
+using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
+
+using static War3Api.Common; using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Quests.Warsong
 {

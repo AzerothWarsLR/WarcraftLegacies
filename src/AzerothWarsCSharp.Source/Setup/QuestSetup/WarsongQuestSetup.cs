@@ -2,6 +2,8 @@ using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.Source.Quests.Warsong;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
+using static War3Api.Common;
+
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
   public class WarsongQuestSetup{

@@ -4,6 +4,8 @@ using AzerothWarsCSharp.Source.Quests.Dalaran;
 using AzerothWarsCSharp.Source.Quests.KulTiras;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
+using static War3Api.Common;
+
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
   public class DalaranQuestSetup

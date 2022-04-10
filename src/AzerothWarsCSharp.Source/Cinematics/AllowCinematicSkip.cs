@@ -1,5 +1,7 @@
 using AzerothWarsCSharp.Source.Cheats;
 
+using static War3Api.Common; using static War3Api.Blizzard;
+
 namespace AzerothWarsCSharp.Source.Cinematics
 {
   public class AllowCinematicSkip

@@ -1,5 +1,7 @@
 using AzerothWarsCSharp.MacroTools.Wrappers;
 
+using static War3Api.Common;
+
 namespace AzerothWarsCSharp.MacroTools
 {
   public static class DummyCast

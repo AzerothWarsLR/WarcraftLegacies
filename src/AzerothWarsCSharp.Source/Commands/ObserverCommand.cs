@@ -1,5 +1,7 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 
+using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
+
 namespace AzerothWarsCSharp.Source.Commands
 {
   public static class ObserverCommand{

@@ -6,6 +6,9 @@ using AzerothWarsCSharp.Source.Legends;
 using AzerothWarsCSharp.Source.Setup;
 using WCSharp.Shared.Data;
 
+using static War3Api.Common;
+using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
+
 namespace AzerothWarsCSharp.Source.Quests.Druids
 {
   public sealed class QuestMalfurionAwakens : QuestData
