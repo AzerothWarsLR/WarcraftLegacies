@@ -1,5 +1,4 @@
-﻿using AzerothWarsCSharp.Common.Constants;
-using AzerothWarsCSharp.MacroTools.Commands;
+﻿using AzerothWarsCSharp.MacroTools.Commands;
 using static War3Api.Common;
 using static War3Api.Blizzard;
 
@@ -17,7 +16,7 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
         var target = arguments[0];
         if (target == "all")
         {
-          for (var i = 0; i < PlayerConstants.PlayerSlotCount; i++)
+          for (var i = 0; i < bj_MAX_PLAYERS; i++)
           {
             SetPlayerAllianceStateBJ(Player(i), triggerPlayer, bj_ALLIANCE_ALLIED_ADVUNITS);
             CommandSystem.Display(triggerPlayer, "Granted control of all players.");
