@@ -24,11 +24,7 @@ namespace AzerothWarsCSharp.Launcher
     private const string SOURCE_CODE_PROJECT_FOLDER_PATH = @"..\..\..\..\AzerothWarsCSharp.Source";
     private const string TEST_SOURCE_CODE_PROJECT_FOLDER_PATH = @"..\..\..\..\AzerothWarsCSharp.TestSource";
     private const string ASSETS_FOLDER_PATH = @"..\..\..\..\Assets\";
-
-    /// <summary>
-    ///   Folder containing loose JASS files that will be added to the final result.
-    /// </summary>
-    private const string JASS_FOLDER_PATH = @"..\..\..\..\..\jass\";
+    
     private const string BASE_MAP_PATH = @"..\..\..\..\..\maps\source.w3x";
     private const string TEST_MAP_PATH = @"..\..\..\..\..\maps\testsource.w3x";
 
