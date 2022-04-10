@@ -7,8 +7,6 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     private readonly QuestItemData _questItemA;
     private readonly QuestItemData _questItemB;
 
-    public override Point Position => new(_questItemA.Position.X, _questItemB.Position.Y);
-    
     public QuestItemEitherOf(QuestItemData questItemA, QuestItemData questItemB)
     {
       _questItemA = questItemA;
@@ -19,6 +17,8 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       questItemA.ProgressChanged += OnChildProgressChanged;
       questItemB.ProgressChanged += OnChildProgressChanged;
     }
+
+    public override Point Position => new(_questItemA.Position.X, _questItemB.Position.Y);
 
     internal override void OnAdd()
     {

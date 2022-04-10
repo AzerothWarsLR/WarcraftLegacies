@@ -36,6 +36,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// Fired when the <see cref="Legend"/> permanently dies.
     /// </summary>
     public event EventHandler<Legend>? PermanentlyDied;
+
+    /// <summary>
+    /// Fired when the <see cref="Legend"/> changes owner.
+    /// </summary>
+    public event EventHandler<LegendChangeOwnerEventArgs>? ChangedOwner;
     
     public static event EventHandler<LegendChangeOwnerEventArgs>? OnLegendChangeOwner;
 
@@ -250,6 +255,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       {
         Unit = CreateUnit(owner, _unitType, x, y, face);
         OnLegendChangeOwner?.Invoke(this, new LegendChangeOwnerEventArgs(this, null));
+        ChangedOwner?.Invoke(this, new LegendChangeOwnerEventArgs(this, null));
       }
       else if (!UnitAlive(Unit))
       {
@@ -355,6 +361,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private void OnChangeOwner()
     {
       OnLegendChangeOwner?.Invoke(this, new LegendChangeOwnerEventArgs(this, GetChangingUnitPrevOwner()));
+      ChangedOwner?.Invoke(this, new LegendChangeOwnerEventArgs(this, null));
     }
 
     private void OnDamaging()

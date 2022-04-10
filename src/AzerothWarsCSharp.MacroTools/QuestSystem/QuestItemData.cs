@@ -6,32 +6,36 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
 {
   public abstract class QuestItemData
   {
-    public event EventHandler<QuestItemData> ProgressChanged;
+    private string _description = "";
+    private effect _mapEffect; //The visual effect that appears on the map, usually a Circle of Power
+    private minimapicon _minimapIcon;
+    private effect _overheadEffect;
 
     private QuestItemData _parentQuestItem;
     private QuestProgress _progress = QuestProgress.Incomplete;
-    private string _description = "";
-    private minimapicon _minimapIcon;
-    private effect _mapEffect; //The visual effect that appears on the map, usually a Circle of Power
-    private effect _overheadEffect;
+
+    public QuestItemData()
+    {
+      OverheadEffectPath = "Abilities\\Spells\\Other\\TalkToMe\\TalkToMe";
+    }
 
     /// <summary>
-    /// Where the <see cref="QuestItemData"/> can be completed.
+    ///   Where the <see cref="QuestItemData" /> can be completed.
     /// </summary>
     public virtual Point Position { get; }
 
     /// <summary>
-    /// Whether or not the <see cref="QuestItemData"/> should display a position.
+    ///   Whether or not the <see cref="QuestItemData" /> should display a position.
     /// </summary>
-    public virtual bool DisplaysPosition => false;
+    public bool DisplaysPosition { get; protected init; }
 
     /// <summary>
-    /// Overhead effects get rendered over the target widget.
+    ///   Overhead effects get rendered over the target widget.
     /// </summary>
     public widget TargetWidget { get; set; }
 
     /// <summary>
-    /// The file path for the overhead effect to use for this item.
+    ///   The file path for the overhead effect to use for this item.
     /// </summary>
     public string OverheadEffectPath { get; }
 
@@ -47,7 +51,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     public questitem QuestItem { get; set; }
 
     /// <summary>
-    /// Whether or not this can be seen as a bullet point in the quest log.
+    ///   Whether or not this can be seen as a bullet point in the quest log.
     /// </summary>
     public bool ShowsInQuestLog { get; set; } = true;
 
@@ -57,10 +61,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     {
       get
       {
-        if (ParentQuest != null)
-        {
-          return ParentQuest.ProgressLocked;
-        }
+        if (ParentQuest != null) return ParentQuest.ProgressLocked;
 
         return _parentQuestItem == null || _parentQuestItem.ProgressLocked;
       }
@@ -71,23 +72,16 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       get => _progress;
       set
       {
-        if (ProgressLocked || _progress == value)
-        {
-          return;
-        }
+        if (ProgressLocked || _progress == value) return;
 
         _progress = value;
         if (ShowsInQuestLog)
-        {
           switch (value)
           {
             case QuestProgress.Incomplete:
             {
               QuestItemSetCompleted(QuestItem, false);
-              if (GetLocalPlayer() == Holder.Player)
-              {
-                ShowLocal();
-              }
+              if (GetLocalPlayer() == Holder.Player) ShowLocal();
 
               ShowSync();
               break;
@@ -95,10 +89,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
             case QuestProgress.Complete:
             {
               QuestItemSetCompleted(QuestItem, true);
-              if (GetLocalPlayer() == Holder.Player)
-              {
-                HideLocal();
-              }
+              if (GetLocalPlayer() == Holder.Player) HideLocal();
 
               HideSync();
               break;
@@ -110,7 +101,6 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
               QuestItemSetCompleted(QuestItem, false);
               break;
           }
-        }
 
         ProgressChanged?.Invoke(this, this);
       }
@@ -122,19 +112,24 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       set
       {
         _description = value;
-        if (QuestItem != null)
-        {
-          QuestItemSetDescription(QuestItem, _description);
-        }
+        if (QuestItem != null) QuestItemSetDescription(QuestItem, _description);
       }
     }
 
-    public string PingPath => "MinimapQuestObjectivePrimary";
+    /// <summary>
+    ///   The texture path for the icon that appears showing where this <see cref="QuestItemData" />
+    ///   can be completed.
+    /// </summary>
+    public string PingPath { get; protected init; } = "MinimapQuestObjectivePrimary";
+
+    public event EventHandler<QuestItemData> ProgressChanged;
 
     /// <summary>
-    /// Runs when a <see cref="QuestData"/> with this <see cref="QuestItemData"/> is added to a <see cref="Faction"/>.
+    ///   Runs when a <see cref="QuestData" /> with this <see cref="QuestItemData" /> is added to a <see cref="Faction" />.
     /// </summary>
-    internal virtual void OnAdd() { }
+    internal virtual void OnAdd()
+    {
+    }
 
     //Shows the local aspects of this QuestItem, namely the minimap icon.
     public void ShowLocal()
@@ -143,14 +138,9 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
           ParentQuest.Progress == QuestProgress.Incomplete)
       {
         if (_minimapIcon == null && Position.X != 0 && Position.Y != 0)
-        {
           _minimapIcon = CreateMinimapIcon(Position.X, Position.Y, 255, 255, 0, SkinManagerGetLocalPath(PingPath),
             FOG_OF_WAR_MASKED);
-        }
-        else if (_minimapIcon != null)
-        {
-          SetMinimapIconVisible(_minimapIcon, true);
-        }
+        else if (_minimapIcon != null) SetMinimapIconVisible(_minimapIcon, true);
       }
     }
 
@@ -179,10 +169,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     //Hides the synchronous aspects of this QuestItem, namely the minimap icon.
     public void HideLocal()
     {
-      if (_minimapIcon != null)
-      {
-        SetMinimapIconVisible(_minimapIcon, false);
-      }
+      if (_minimapIcon != null) SetMinimapIconVisible(_minimapIcon, false);
     }
 
     //Hides the synchronous aspects of this QuestItem, namely the minimap icon.
@@ -199,11 +186,6 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         DestroyEffect(_overheadEffect);
         _overheadEffect = null;
       }
-    }
-
-    public QuestItemData()
-    {
-      OverheadEffectPath = "Abilities\\Spells\\Other\\TalkToMe\\TalkToMe";
     }
   }
 }

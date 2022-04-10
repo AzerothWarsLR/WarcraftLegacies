@@ -2,7 +2,7 @@ using WCSharp.Events;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemBuild : QuestItemData
+  public sealed class QuestItemBuild : QuestItemData
   {
     private readonly int _objectId;
     private int _currentBuildCount;

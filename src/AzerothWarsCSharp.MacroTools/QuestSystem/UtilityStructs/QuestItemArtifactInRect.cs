@@ -1,103 +1,62 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Wrappers;
+using WCSharp.Shared.Data;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemArtifactInRect : QuestItemData{
+  public sealed class QuestItemArtifactInRect : QuestItemData
+  {
+    private readonly TriggerWrapper _entersRect = new();
+    private readonly TriggerWrapper _exitsRect = new();
 
-    private static region RectToRegion(rect whichRect ){
+    private readonly Artifact _targetArtifact;
+    private readonly rect _targetRect;
+
+    public QuestItemArtifactInRect(Artifact targetArtifact, rect targetRect, string rectName)
+    {
+      _targetArtifact = targetArtifact;
+      _targetRect = targetRect;
+      region targetRegion = RectToRegion(targetRect);
+      Description = "Bring " + GetItemName(targetArtifact.Item) + " to " + rectName;
+
+      TriggerRegisterEnterRegion(_entersRect.Trigger, targetRegion, null);
+      TriggerAddAction(_entersRect.Trigger, OnRegionEnter);
+      TriggerRegisterLeaveRegion(_exitsRect.Trigger, targetRegion, null);
+      TriggerAddAction(_exitsRect.Trigger, OnRegionExit);
+
+      DisplaysPosition = true;
+    }
+
+    public override Point Position => new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
+
+    private static region RectToRegion(rect whichRect)
+    {
       region rectRegion = CreateRegion();
       RegionAddRect(rectRegion, whichRect);
       return rectRegion;
     }
 
-
-    private Artifact targetArtifact;
-    private rect targetRect;
-    private region targetRegion;
-
-    private static trigger entersRectTrig = CreateTrigger();
-    private static trigger exitsRectTrig = CreateTrigger();
-    private static int count = 0;
-    private static thistype[] byIndex;
-    private static group tempGroup = CreateGroup();
-
-    float operator X( ){
-      return GetRectCenterX(targetRect);
-    }
-
-    float operator Y( ){
-      return GetRectCenterY(targetRect);
-    }
-
-    private bool IsArtifactInRect( ){
-      if (targetArtifact.OwningUnit != null && RectContainsCoords(targetRect, GetUnitX(targetArtifact.OwningUnit), GetUnitY(targetArtifact.OwningUnit))){
+    private bool IsArtifactInRect()
+    {
+      if (_targetArtifact.OwningUnit != null && RectContainsCoords(_targetRect, GetUnitX(_targetArtifact.OwningUnit),
+        GetUnitY(_targetArtifact.OwningUnit)))
         return true;
-      }
-      if (targetArtifact.OwningUnit == null && RectContainsCoords(targetRect, GetItemX(targetArtifact.Item), GetItemY(targetArtifact.Item))){
+
+      if (_targetArtifact.OwningUnit == null &&
+          RectContainsCoords(_targetRect, GetItemX(_targetArtifact.Item), GetItemY(_targetArtifact.Item)))
         return true;
-      }
+
       return false;
     }
 
-    private void OnRegionEnter(unit whichUnit ){
-      if (targetArtifact.OwningUnit == GetEnteringUnit()){
-        //call BJDebugMsg("On Region Enter" + GetUnitName(GetEnteringUnit()))
-        this.Progress = QuestProgress.Complete;
-      }else {
-        this.Progress = QuestProgress.Incomplete;
-      }
+    private void OnRegionEnter()
+    {
+      Progress = _targetArtifact.OwningUnit == GetEnteringUnit() ? QuestProgress.Complete : QuestProgress.Incomplete;
     }
 
-    private void OnRegionExit( ){
-      if (IsArtifactInRect()){
-        //call BJDebugMsg("On Region Exit")
-        this.Progress = QuestProgress.Complete;
-      }else {
-        this.Progress = QuestProgress.Incomplete;
-      }
+    private void OnRegionExit()
+    {
+      Progress = IsArtifactInRect() ? QuestProgress.Complete : QuestProgress.Incomplete;
     }
-
-    private static void OnAnyRegionExit( ){
-      var i = 0;
-      while(true){
-        if ( i == thistype.count){ break; }
-        if (GetTriggeringRegion() == thistype.byIndex[i].targetRegion){
-          thistype.byIndex[i].OnRegionExit();
-        }
-        i = i + 1;
-      }
-    }
-
-    private static void OnAnyRegionEnter( ){
-      var i = 0;
-      while(true){
-        if ( i == thistype.count){ break; }
-        if (GetTriggeringRegion() == thistype.byIndex[i].targetRegion){
-          thistype.byIndex[i].OnRegionEnter(GetEnteringUnit());
-        }
-        i = i + 1;
-      }
-    }
-
-    public QuestItemArtifactInRect (Artifact targetArtifact, rect targetRect, string rectName ){
-
-      this.targetArtifact = targetArtifact;
-      this.targetRect = targetRect;
-      targetRegion = RectToRegion(targetRect);
-      this.Description = "Bring " + GetItemName(targetArtifact.Item) + " to " + rectName;
-      TriggerRegisterEnterRegion(thistype.entersRectTrig, targetRegion, null);
-      TriggerRegisterLeaveRegion(thistype.exitsRectTrig, targetRegion, null);
-      thistype.byIndex[thistype.count] = this;
-      thistype.count = thistype.count + 1;
-      
-    }
-
-    private static void onInit( ){
-      TriggerAddAction(thistype.entersRectTrig,  thistype.OnAnyRegionEnter);
-      TriggerAddAction(thistype.exitsRectTrig,  thistype.OnAnyRegionExit);
-    }
-
-
-
   }
 }

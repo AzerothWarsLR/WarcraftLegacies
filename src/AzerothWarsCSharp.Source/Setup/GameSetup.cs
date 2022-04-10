@@ -6,6 +6,7 @@ using AzerothWarsCSharp.Source.Game_Logic;
 using AzerothWarsCSharp.Source.Game_Logic.GameEnd;
 using AzerothWarsCSharp.Source.IncompatibleUpgrades;
 using AzerothWarsCSharp.Source.Mechanics.Quelthalas;
+using AzerothWarsCSharp.Source.User_Interface;
 
 namespace AzerothWarsCSharp.Source.Setup
 {
@@ -34,6 +35,7 @@ namespace AzerothWarsCSharp.Source.Setup
       SilvermoonDies.Setup();
       ZinrokhAssembly.Setup();
       IncompatibleTierConfig.Setup();
+      FactionMultiboard.Setup();
     }
   }
 }

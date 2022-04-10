@@ -1,52 +1,36 @@
-using WCSharp.Events;
+using AzerothWarsCSharp.MacroTools.Wrappers;
+using WCSharp.Shared.Data;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemAnyUnitInRect : QuestItemData
+  public sealed class QuestItemAnyUnitInRect : QuestItemData
   {
-    private static trigger entersRectTrig = CreateTrigger();
-    private static trigger exitsRectTrig = CreateTrigger();
-    private static int count = 0;
-    private static thistype[] byIndex;
-    private static group tempGroup = CreateGroup();
-    private readonly bool heroOnly;
-
-
-    private readonly region target;
-    private readonly rect targetRect;
-
-    private X()
-    {
-      return GetRectCenterX(targetRect);
-    }
-
-    private Y()
-    {
-      return GetRectCenterY(targetRect);
-    }
-
-    private PingPath()
-    {
-      return "MinimapQuestTurnIn";
-    }
+    private static readonly trigger EntersRectTrig = CreateTrigger();
+    private static readonly trigger ExitsRectTrig = CreateTrigger();
+    private readonly bool _heroOnly;
+    private readonly rect _targetRect;
 
     public QuestItemAnyUnitInRect(rect targetRect, string rectName, bool heroOnly)
     {
-      trigger trig = CreateTrigger();
       if (heroOnly)
         Description = "You have a hero at " + rectName;
       else
         Description = "You have a unit at " + rectName;
-      target = RectToRegion(targetRect);
-      this.targetRect = targetRect;
-      this.heroOnly = heroOnly;
-      TriggerRegisterEnterRegion(thistype.entersRectTrig, target, null);
-      TriggerRegisterLeaveRegion(thistype.exitsRectTrig, target, null);
-      thistype.byIndex[thistype.count] = this;
-      thistype.count = thistype.count + 1;
+      region target = RectToRegion(targetRect);
+      _targetRect = targetRect;
+      _heroOnly = heroOnly;
+      DisplaysPosition = true;
+      TriggerRegisterEnterRegion(EntersRectTrig, target, null);
+      TriggerRegisterLeaveRegion(ExitsRectTrig, target, null);
+      PingPath = "MinimapQuestTurnIn";
     }
 
-    public unit TriggerUnit { get; private set; }
+    public override Point Position => new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
+
+    /// <summary>
+    ///   The <see cref="unit" /> that completed this objective.
+    /// </summary>
+    public unit? TriggerUnit { get; private set; }
 
     private static region RectToRegion(rect whichRect)
     {
@@ -55,36 +39,22 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       return rectRegion;
     }
 
-    float operator
-
-    float operator
-
-    string operator
-
     private bool IsValidUnitInRect()
     {
-      unit u;
-      player holderPlayer = Holder.Player;
-      GroupClear(thistype.tempGroup);
-      GroupEnumUnitsInRect(thistype.tempGroup, targetRect, null);
-      while (true)
-      {
-        u = FirstOfGroup(thistype.tempGroup);
-        if (u == null) break;
-        if (GetOwningPlayer(u) == Holder.Player && UnitAlive(u) &&
-            (IsUnitType(u, UNIT_TYPE_HERO) || !heroOnly)) return true;
-        GroupRemoveUnit(thistype.tempGroup, u);
-      }
-
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(_targetRect).EmptyToList())
+        if (GetOwningPlayer(unit) == Holder.Player && UnitAlive(unit) &&
+            (IsUnitType(unit, UNIT_TYPE_HERO) || !_heroOnly))
+          return true;
       return false;
     }
 
-    private void OnRegionEnter(unit whichUnit)
+    private void OnRegionEnter()
     {
-      if (GetOwningPlayer(whichUnit) == Holder.Player && UnitAlive(whichUnit) &&
-        (IsUnitType(whichUnit, UNIT_TYPE_HERO) || !heroOnly) || IsValidUnitInRect())
+      var triggerUnit = GetTriggerUnit();
+      if (GetOwningPlayer(triggerUnit) == Holder.Player && UnitAlive(triggerUnit) &&
+        (IsUnitType(triggerUnit, UNIT_TYPE_HERO) || !_heroOnly) || IsValidUnitInRect())
       {
-        TriggerUnit = whichUnit;
+        TriggerUnit = triggerUnit;
         Progress = QuestProgress.Complete;
       }
       else
@@ -95,38 +65,14 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     private void OnRegionExit()
     {
-      if (IsValidUnitInRect())
-        Progress = QuestProgress.Complete;
-      else
-        Progress = QuestProgress.Incomplete;
+      Progress = IsValidUnitInRect() ? QuestProgress.Complete : QuestProgress.Incomplete;
     }
 
-    private static void OnAnyRegionExit()
+    internal override void OnAdd()
     {
-      var i = 0;
-      while (true)
-      {
-        if (i == thistype.count) break;
-        if (GetTriggeringRegion() == thistype.byIndex[i].target) thistype.byIndex[i].OnRegionExit();
-        i = i + 1;
-      }
-    }
-
-    private static void OnAnyRegionEnter()
-    {
-      var i = 0;
-      while (true)
-      {
-        if (i == thistype.count) break;
-        if (GetTriggeringRegion() == thistype.byIndex[i].target) thistype.byIndex[i].OnRegionEnter(GetEnteringUnit());
-        i = i + 1;
-      }
-    }
-
-    private static void onInit()
-    {
-      TriggerAddAction(thistype.entersRectTrig, thistype.OnAnyRegionEnter);
-      TriggerAddAction(thistype.exitsRectTrig, thistype.OnAnyRegionExit);
+      Progress = IsValidUnitInRect() ? QuestProgress.Complete : QuestProgress.Incomplete;
+      TriggerAddAction(EntersRectTrig, OnRegionEnter);
+      TriggerAddAction(ExitsRectTrig, OnRegionExit);
     }
   }
 }

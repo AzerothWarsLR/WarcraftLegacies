@@ -114,7 +114,7 @@ namespace AzerothWarsCSharp.Source.User_Interface
       Instance?.UpdateFactionRow(faction);
     }
 
-    private static void OnPersonFactionChange(object? sender, Person person)
+    private static void OnPersonFactionChange(object? sender, PersonFactionChangeEventArgs personFactionChangeEventArgs)
     {
       RenderInstance();
     }

@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     public string Title { get; }
 
     /// <summary>
-    /// If true, completing this quest will broadcast a message to every player.
+    ///   If true, completing this quest will broadcast a message to every player.
     /// </summary>
     public bool Global { get; init; }
 
@@ -138,7 +138,8 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
             questItem.ShowSync();
           }
 
-        QuestProgressChanged?.Invoke(this, this);
+        ProgressChanged?.Invoke(this, this);
+        ProgressChanged?.Invoke(this, this);
       }
     }
 
@@ -175,7 +176,10 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       }
     }
 
-    public event EventHandler<QuestData> QuestProgressChanged;
+    /// <summary>
+    ///   Fired when the <see cref="QuestData" /> changes its progress.
+    /// </summary>
+    public event EventHandler<QuestData> ProgressChanged;
 
     /// <summary>
     ///   Fired when the Quest is completed.
@@ -375,11 +379,6 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     private static void OnAnyQuestItemProgressChanged(object? sender, QuestItemData e)
     {
       e.ParentQuest.OnQuestItemProgressChanged();
-    }
-
-    public static void Setup()
-    {
-      QuestItemData.ProgressChanged += OnAnyQuestItemProgressChanged;
     }
   }
 }
