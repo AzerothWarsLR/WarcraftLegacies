@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools.Instances;
 using WCSharp.Shared.Data;
 
 namespace AzerothWarsCSharp.MacroTools
@@ -10,12 +11,7 @@ namespace AzerothWarsCSharp.MacroTools
   {
     private static readonly List<Shore> ShoresByIndex = new();
 
-    public static int Count => ShoresByIndex.Count;
-
-    public static Shore ByIndex(int i)
-    {
-      return ShoresByIndex[i];
-    }
+    private static int Count => ShoresByIndex.Count;
 
     public Point Position { get; }
 
@@ -31,7 +27,7 @@ namespace AzerothWarsCSharp.MacroTools
       ShoresByIndex.Add(this);
     }
 
-    public static Shore? GetNearestShore(float x, float y)
+    public static Shore? GetNearestShore(Point position)
     {
       var i = 0;
       Shore? nearestShore = null;
@@ -43,8 +39,7 @@ namespace AzerothWarsCSharp.MacroTools
           break;
         }
 
-        var tempDistance = Instance.GetDistanceBetweenPointsEx(x, y, ShoresByIndex[i]
-          .Position.X, ShoresByIndex[i].Position.Y);
+        var tempDistance = InstanceSystem.GetDistanceBetweenPointsEx(position, ShoresByIndex[i].Position);
         if (tempDistance < nearestDistance)
         {
           nearestDistance = tempDistance;

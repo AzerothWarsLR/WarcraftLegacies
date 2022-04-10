@@ -15,17 +15,16 @@ namespace AzerothWarsCSharp.Source.Setup
     public static void Setup()
     {
       Legend.Setup();
-      QuestData.Setup();
       ShoreSetup.Setup();
-      InstanceSetup_OnInit();
-      TeamSetup_OnInit();
+      InstanceSetup.Setup();
+      TeamSetup.Setup();
       AllFactionSetup.Setup();
-      PersonSetup_OnInit();
-      ArtifactSetup_OnInit();
+      PersonSetup.Setup();
+      ArtifactSetup.Setup();
       ControlPointSetup.Setup();
       AllQuestSetup.Setup();
-      ResearchSetup_OnInit();
-      ObserverSetup_OnInit();
+      ResearchSetup.Setup();
+      ObserverSetup.Setup();
       SpellsSetup.Setup();
       CpCapture.Setup();
       DestructibleHider.Setup();
