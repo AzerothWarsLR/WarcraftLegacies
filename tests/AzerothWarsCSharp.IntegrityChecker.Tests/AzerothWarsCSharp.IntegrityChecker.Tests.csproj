@@ -6,9 +6,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
-      <PackageReference Include="MSTest.TestAdapter" Version="2.2.8" />
-      <PackageReference Include="MSTest.TestFramework" Version="2.2.8" />
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0-preview-20220401-08" />
+      <PackageReference Include="MSTest.TestAdapter" Version="2.2.9" />
+      <PackageReference Include="MSTest.TestFramework" Version="2.2.9" />
     </ItemGroup>
 
     <ItemGroup>

@@ -10,7 +10,7 @@
     </PropertyGroup>
     
     <ItemGroup>
-      <PackageReference Include="War3Net.Build.Core" Version="5.2.2" />
+      <PackageReference Include="War3Net.Build.Core" Version="5.4.1" />
     </ItemGroup>
     
     <ItemGroup>

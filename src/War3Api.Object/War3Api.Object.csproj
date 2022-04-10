@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="War3Net.Build" Version="5.0.4" />
-    <PackageReference Include="War3Net.Common" Version="5.0.2" />
+    <PackageReference Include="War3Net.Build" Version="5.4.1" />
+    <PackageReference Include="War3Net.Common" Version="5.4.0" />
   </ItemGroup>
 
 </Project>
