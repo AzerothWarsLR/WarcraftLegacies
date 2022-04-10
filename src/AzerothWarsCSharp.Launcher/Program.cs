@@ -132,7 +132,7 @@ namespace AzerothWarsCSharp.Launcher
 			Directory.CreateDirectory(OUTPUT_FOLDER_PATH);
 
 			// Load existing map data
-			var map = Map.Open(TEST_MAP_PATH);
+			var map = Map.Open(baseMapPath);
 			var builder = new MapBuilder(map);
 			builder.AddFiles(baseMapPath, "*", SearchOption.AllDirectories);
 			builder.AddFiles(ASSETS_FOLDER_PATH, "*", SearchOption.AllDirectories);
