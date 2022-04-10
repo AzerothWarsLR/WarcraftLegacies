@@ -11,11 +11,10 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
     {
       Faction f;
       FactionQuelthalas =
-        Faction.create(
-          "Quel'"thalas", PLAYER_COLOR_CYAN, " |
-                             C0000FFFF","ReplaceableTextures\\CommandButtons\\BTNSylvanusWindrunner.blp");
+        new Faction(
+          "Quel'thalas", PLAYER_COLOR_CYAN, "|C0000FFFF","ReplaceableTextures\\CommandButtons\\BTNSylvanusWindrunner.blp");
       f = FactionQuelthalas;
-      f.Team = TEAM_ALLIANCE;
+      f.Team = TeamSetup.TeamAlliance;
       f.UndefeatedResearch = FourCC("R05U");
       f.StartingGold = 150;
       f.StartingLumber = 500;

@@ -3,17 +3,15 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
   public class GilneasSetup{
-
-  
-    Faction FACTION_GILNEAS
+    public static Faction FACTION_GILNEAS { get; private set; }
   
 
     public static void Setup( ){
       Faction f;
 
-      FACTION_GILNEAS = Faction.create("Gilneas", PLAYER_COLOR_COAL, "|cff808080", "ReplaceableTextures\\CommandButtons\\BTNGreymane.blp");
+      FACTION_GILNEAS = new Faction("Gilneas", PLAYER_COLOR_COAL, "|cff808080", "ReplaceableTextures\\CommandButtons\\BTNGreymane.blp");
       f = FACTION_GILNEAS;
-      f.Team = TEAM_NIGHT_ELVES;
+      f.Team = TeamSetup.TeamNightElves;
       f.StartingGold = 150;
       f.StartingLumber = 200;
 

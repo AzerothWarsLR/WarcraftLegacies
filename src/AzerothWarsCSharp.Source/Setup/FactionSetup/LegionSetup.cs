@@ -4,14 +4,14 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
   public class LegionSetup
   {
-    public static Faction LegionSetup.FactionLegion { get; private set; }
+    public static Faction FactionLegion { get; private set; }
 
 
     public static void Setup()
     {
       Faction f;
 
-      LegionSetup.FactionLegion = Faction.create("Legion", PLAYER_COLOR_PEANUT, "|CFFBF8F4F",
+      LegionSetup.FactionLegion = new Faction("Legion", PLAYER_COLOR_PEANUT, "|CFFBF8F4F",
         "ReplaceableTextures\\CommandButtons\\BTNKiljaedin.blp");
       f = LegionSetup.FactionLegion;
       f.UndefeatedResearch = FourCC("R04T");

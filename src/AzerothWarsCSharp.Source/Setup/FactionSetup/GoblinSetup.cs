@@ -8,9 +8,9 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
     
     public static void Setup( ){
       Faction f;
-      factionGoblin = Faction.create("Bilgewater", PLAYER_COLOR_LIGHT_GRAY, "|cff808080","ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp");
+      factionGoblin = new Faction("Bilgewater", PLAYER_COLOR_LIGHT_GRAY, "|cff808080","ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp");
       f = factionGoblin;
-      f.Team = TEAM_HORDE;
+      f.Team = TeamSetup.TeamHorde;
       f.StartingGold = 150;
       f.StartingLumber = 500;
 

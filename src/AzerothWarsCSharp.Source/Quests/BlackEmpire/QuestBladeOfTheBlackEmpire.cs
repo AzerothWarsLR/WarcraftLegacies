@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
     {
       if (LegendBlackEmpire.legendVolazj.Unit != null && ArtifactSetup.ArtifactXalatath != null)
         UnitAddItemSafe(LegendBlackEmpire.legendVolazj.Unit, ArtifactSetup.ArtifactXalatath.Item);
-      BlackEmpireSetup.factionBlackempire.AddQuest(_sequel);
+      BlackEmpireSetup.FactionBlackempire.AddQuest(_sequel);
       _sequel.Progress = QuestProgress.Incomplete;
     }
   }

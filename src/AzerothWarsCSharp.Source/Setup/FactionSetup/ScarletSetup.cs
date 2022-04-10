@@ -7,9 +7,9 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
     
     public static void Setup( ){
       Faction f;
-      FactionScarlet = Faction.create("Militia", PLAYER_COLOR_MAROON, "|cff800000","ReplaceableTextures\\CommandButtons\\BTNPeasant.blp");
+      FactionScarlet = new Faction("Militia", PLAYER_COLOR_MAROON, "|cff800000","ReplaceableTextures\\CommandButtons\\BTNPeasant.blp");
       f = FactionScarlet;
-      f.Team = TEAM_ALLIANCE;
+      f.Team = TeamSetup.TeamAlliance;
       f.StartingGold = 150;
       f.StartingLumber = 500;
 

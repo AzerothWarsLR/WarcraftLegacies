@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
     public static void Setup( ){
       Faction f;
 
-      FactionScourge = Faction.create("Scourge", PLAYER_COLOR_PURPLE, "|c00540081","ReplaceableTextures\\CommandButtons\\BTNRevenant.blp");
+      FactionScourge = new Faction("Scourge", PLAYER_COLOR_PURPLE, "|c00540081","ReplaceableTextures\\CommandButtons\\BTNRevenant.blp");
       f = FactionScourge;
       f.Team = TeamSetup.TeamLegion;
       f.UndefeatedResearch = FourCC("R05K");

@@ -5,17 +5,16 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
   public static class KultirasSetup
   {
     public static Faction FACTION_KULTIRAS { get; private set; }
-    
+
     public static void Setup()
     {
       Faction f;
 
       FACTION_KULTIRAS =
-        Faction.create(
-          "KulFourCC("tiras", PLAYER_COLOR_EMERALD, " | cff00781e", "ReplaceableTextures\\CommandButtons\\BTNProudmoore
-            .blp");
+        new Faction(
+          "Kul'tiras", PLAYER_COLOR_EMERALD, " | cff00781e", "ReplaceableTextures\\CommandButtons\\BTNProudmoore.blp");
       f = FACTION_KULTIRAS;
-      f.Team = TEAM_ALLIANCE;
+      f.Team = TeamSetup.TeamAlliance;
       f.StartingGold = 150;
       f.StartingLumber = 500;
 

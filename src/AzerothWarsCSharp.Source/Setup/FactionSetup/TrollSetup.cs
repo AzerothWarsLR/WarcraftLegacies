@@ -3,16 +3,14 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
   public class TrollSetup{
-
-  
-    Faction FACTION_TROLL
+    public static Faction FACTION_TROLL { get; private set; }
   
 
     public static void Setup( ){
       Faction f;
-      FACTION_TROLL = Faction.create("Zandalar", PLAYER_COLOR_PEACH, "|cffff8c6c","ReplaceableTextures\\CommandButtons\\BTNHeadHunterBerserker.blp");
+      FACTION_TROLL = new Faction("Zandalar", PLAYER_COLOR_PEACH, "|cffff8c6c","ReplaceableTextures\\CommandButtons\\BTNHeadHunterBerserker.blp");
       f = FACTION_TROLL;
-      f.Team = TEAM_HORDE;
+      f.Team = TeamSetup.TeamHorde;
       f.StartingGold = 150;
       f.StartingLumber = 500;
 

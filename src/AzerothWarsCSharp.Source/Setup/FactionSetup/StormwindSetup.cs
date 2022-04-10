@@ -11,10 +11,10 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
     {
       Faction f;
 
-      Stormwind = Faction.create("Stormwind", PLAYER_COLOR_AQUA, "|CFF106246",
+      Stormwind = new Faction("Stormwind", PLAYER_COLOR_AQUA, "|CFF106246",
         "ReplaceableTextures\\CommandButtons\\BTNKnight.blp");
       f = Stormwind;
-      f.Team = TEAM_ALLIANCE;
+      f.Team = TeamSetup.TeamAlliance;
       f.UndefeatedResearch = FourCC("R060");
       f.StartingGold = 150;
       f.StartingLumber = 500;

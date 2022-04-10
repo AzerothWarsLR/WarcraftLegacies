@@ -3,17 +3,15 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
   public class IronforgeSetup{
-
-  
-    Faction FACTION_IRONFORGE
+    public static Faction FACTION_IRONFORGE { get; private set; }
   
 
     public static void Setup( ){
       Faction f;
 
-      FACTION_IRONFORGE = Faction.create("Ironforge", PLAYER_COLOR_YELLOW, "|C00FFFC01","ReplaceableTextures\\CommandButtons\\BTNHeroMountainKing.blp");
+      FACTION_IRONFORGE = new Faction("Ironforge", PLAYER_COLOR_YELLOW, "|C00FFFC01","ReplaceableTextures\\CommandButtons\\BTNHeroMountainKing.blp");
       f = FACTION_IRONFORGE;
-      f.Team = TEAM_ALLIANCE;
+      f.Team = TeamSetup.TeamAlliance;
       f.UndefeatedResearch = FourCC("R05T");
       f.StartingGold = 150;
       f.StartingLumber = 500;

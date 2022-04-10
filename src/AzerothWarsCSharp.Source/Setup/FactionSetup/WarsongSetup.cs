@@ -3,16 +3,15 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
   public class WarsongSetup{
-  
-    Faction FACTION_WARSONG
+    public static Faction FACTION_WARSONG { get; private set; }
   
 
     public static void Setup( ){
       Faction f;
 
-      FACTION_WARSONG = Faction.create("Warsong", PLAYER_COLOR_ORANGE, "|c00ff8000","ReplaceableTextures\\CommandButtons\\BTNHellScream.blp");
+      FACTION_WARSONG = new Faction("Warsong", PLAYER_COLOR_ORANGE, "|c00ff8000","ReplaceableTextures\\CommandButtons\\BTNHellScream.blp");
       f = FACTION_WARSONG;
-      f.Team = TEAM_HORDE;
+      f.Team = TeamSetup.TeamHorde;
       f.UndefeatedResearch = FourCC("R05W");
       f.StartingGold = 150;
       f.StartingLumber = 500;

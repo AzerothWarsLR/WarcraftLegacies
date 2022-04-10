@@ -34,8 +34,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private readonly Dictionary<int, int> _objectLimits = new();
     private readonly List<QuestData> _quests = new();
 
-    private readonly int
-      _undefeatedResearch; //This upgrade is researched for all players only if this Faction is undefeated
+    private int _undefeatedResearch; //This upgrade is researched for all players only if this Faction is undefeated
 
     private readonly Dictionary<int, int> _unitTypeByCategory = new();
 
@@ -63,9 +62,9 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       _icon = icon;
     }
 
-    public int StartingGold { get; init; }
+    public int StartingGold { get; set; }
 
-    public int StartingLumber { get; init; }
+    public int StartingLumber { get; set; }
 
     public playercolor PlayerColor { get; init; }
 
@@ -214,7 +213,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// </summary>
     public int UndefeatedResearch
     {
-      init
+      set
       {
         if (_undefeatedResearch == 0)
         {
