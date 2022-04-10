@@ -15,6 +15,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private unit? _owningUnit;
     private ArtifactStatus _status;
     private int _titanforgedAbility = FourCC("A0VJ");
+    private string? _description;
 
     public Artifact(item whichItem)
     {
@@ -90,6 +91,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         _description = value;
         OnArtifactDescriptionChange?.Invoke(this, this);
       }
+      get => _description;
     }
 
     public event EventHandler<Artifact> Acquired;
