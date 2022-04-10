@@ -1,10 +1,8 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
-using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.Source.Artifacts;
 using AzerothWarsCSharp.Source.Game_Logic;
 using AzerothWarsCSharp.Source.Game_Logic.GameEnd;
-using AzerothWarsCSharp.Source.IncompatibleUpgrades;
 using AzerothWarsCSharp.Source.Mechanics.Quelthalas;
 using AzerothWarsCSharp.Source.User_Interface;
 
