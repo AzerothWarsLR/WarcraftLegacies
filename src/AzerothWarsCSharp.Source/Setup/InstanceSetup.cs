@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.Instances;
 
 namespace AzerothWarsCSharp.Source.Setup
 {

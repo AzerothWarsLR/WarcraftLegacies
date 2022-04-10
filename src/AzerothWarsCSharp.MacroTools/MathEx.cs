@@ -1,14 +1,14 @@
 ﻿using System;
-using static War3Api.Blizzard;
+using WCSharp.Shared.Data;
 
 namespace AzerothWarsCSharp.MacroTools
 {
   public static class MathEx
   {
-    public static float GetDistanceBetweenPoints(float xa, float ya, float xb, float yb)
+    public static float GetDistanceBetweenPoints(Point positionA, Point positionB)
     {
-      var dx = xb - xa;
-      var dy = yb - ya;
+      var dx = positionB.X - positionA.X;
+      var dy = positionB.Y - positionA.Y;
 
       return (float)Math.Sqrt(dx * dx + dy * dy);
     }

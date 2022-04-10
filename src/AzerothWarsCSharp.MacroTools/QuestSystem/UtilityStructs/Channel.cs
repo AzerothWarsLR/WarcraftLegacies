@@ -24,12 +24,12 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     private readonly TimerWrapper _periodictimer = new();
 
     public event EventHandler<Channel>? Finished;
-    
+
     /// <summary>
     /// If true, the caster finished the entire channel duration.
     /// </summary>
     public bool FinishedWithoutInterruption { get; private set; }
-    
+
     private void End(bool finishedWithoutInterruption)
     {
       PauseUnit(_caster, false);
@@ -49,13 +49,13 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     private void Periodic()
     {
-      if (!UnitAlive(_caster) || MathEx.GetDistanceBetweenPoints(GetUnitX(_caster), GetUnitY(_caster),
-          _position.X, _position.Y) > 100)
-        {
-          End(false);
-        }
+      if (!UnitAlive(_caster) || MathEx.GetDistanceBetweenPoints(new Point(GetUnitX(_caster), GetUnitY(_caster)),
+        _position) > 100)
+      {
+        End(false);
+      }
 
-        _elapsedDuration = _elapsedDuration + PERIOD;
+      _elapsedDuration += PERIOD;
       if (_elapsedDuration >= _maxDuration)
       {
         End(true);
@@ -79,22 +79,22 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       {
         return;
       }
-      
+
       if (disposing)
       {
         _periodictimer.Dispose();
       }
-      
+
       BlzSetSpecialEffectPosition(_sfxProgress, -100000, -100000,
         0); //Has no death animation so needs to be moved off the map
       DestroyEffect(_sfxProgress);
       DestroyEffect(_sfx);
       DestroyTimer(_channelingTimer);
       DestroyTimerDialog(_channelingDialog);
-      
+
       _disposed = true;
     }
-    
+
     public Channel(unit caster, float duration, float facing, Point position, bool global = false, string title = "")
     {
       _caster = caster;
@@ -102,7 +102,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       _maxDuration = duration;
 
       _position = position;
-      
+
       SetUnitX(caster, position.X);
       SetUnitY(caster, position.Y);
       _sfxProgress = AddSpecialEffect(PROGRESS_EFFECT, GetUnitX(caster), GetUnitY(caster));
@@ -124,7 +124,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
         TimerDialogSetTitle(_channelingDialog, title);
         TimerDialogDisplay(_channelingDialog, true);
       }
-      
+
       _periodictimer.Start(PERIOD, true, Periodic);
     }
   }
