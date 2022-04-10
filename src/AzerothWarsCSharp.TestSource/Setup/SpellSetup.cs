@@ -18,6 +18,23 @@ namespace AzerothWarsCSharp.TestSource.Setup
         Effect = @"war3mapImported\Earth NovaTarget.mdx"
       };
       SpellSystem.Register(summonGraniteGolems);
+
+      var massSimulacrum = new MassSimulacrum(FourCC("AHfs"))
+      {
+        Radius = 150,
+        CountBase = 2,
+        CountLevel = 4,
+        Duration = 60,
+        Effect = @"war3mapImported\Soul Discharge Blue.mdx",
+        EffectScale = 1.1f,
+        EffectTarget = @"Abilities\Spells\Items\AIil\AIilTarget.mdl",
+        EffectScaleTarget = 1.0f,
+        HealthBonusBase = -0.5f,
+        HealthBonusLevel = 0.2f,
+        DamageBonusBase = -0.5f,
+        DamageBonusLevel = 0.2f,
+      };
+      SpellSystem.Register(massSimulacrum);
     }
   }
 }

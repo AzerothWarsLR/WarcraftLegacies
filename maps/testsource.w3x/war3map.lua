@@ -8,6 +8,11 @@ function CreateUnitsForPlayer0()
     local t
     local life
     u = BlzCreateUnitWithSkin(p, FourCC("Hblm"), 34.5, -9.4, 240.231, FourCC("Hblm"))
+    u = BlzCreateUnitWithSkin(p, FourCC("hfoo"), -20.0, 166.3, 194.914, FourCC("hfoo"))
+    u = BlzCreateUnitWithSkin(p, FourCC("hfoo"), -99.6, 125.3, 70.359, FourCC("hfoo"))
+    u = BlzCreateUnitWithSkin(p, FourCC("hfoo"), -126.9, 20.0, 299.189, FourCC("hfoo"))
+    u = BlzCreateUnitWithSkin(p, FourCC("hfoo"), -135.8, -59.5, 78.686, FourCC("hfoo"))
+    u = BlzCreateUnitWithSkin(p, FourCC("hfoo"), -165.8, 94.7, 88.717, FourCC("hfoo"))
 end
 
 function CreatePlayerBuildings()
