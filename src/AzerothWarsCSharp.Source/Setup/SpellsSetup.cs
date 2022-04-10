@@ -1,7 +1,6 @@
 ﻿using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.Spells;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
-using AzerothWarsCSharp.Source.Spells;
 
 namespace AzerothWarsCSharp.Source.Setup
 {
@@ -9,8 +8,6 @@ namespace AzerothWarsCSharp.Source.Setup
   {
     public static void Setup()
     {
-      IllusionaryLance.Setup();
-
       var warStompCairne = new Stomp(Constants.ABILITY_WAR_STOMP_PINK_CAIRNE_AZGALOR)
       {
         Radius = 300,
