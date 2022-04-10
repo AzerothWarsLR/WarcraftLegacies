@@ -293,7 +293,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// </summary>
     public void Unally()
     {
-      if (Team is {PlayerCount: > 1})
+      if (Team.PlayerCount > 1)
       {
         string newTeamName = Name + " Pact";
         if (Team.TeamWithNameExists(newTeamName))

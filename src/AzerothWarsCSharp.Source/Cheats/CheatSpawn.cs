@@ -21,15 +21,12 @@ namespace AzerothWarsCSharp.Source.Cheats
         i += 1;
       }
 
-      switch (i)
-      {
-        case < 10:
-          return i + 48;
-        case < 36:
-          return i + 65 - 10;
-        default:
-          return i + 97 - 36;
-      }
+      if (i < 10)
+        return i + 48;
+      else if (i < 36)
+        return i + 65 - 10;
+      else
+        return i + 97 - 36;
     }
 
     private static int S2Raw(string? s)

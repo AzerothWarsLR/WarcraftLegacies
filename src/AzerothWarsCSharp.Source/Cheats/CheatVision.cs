@@ -20,16 +20,15 @@ namespace AzerothWarsCSharp.Source.Cheats
       player p = GetTriggerPlayer();
       string parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
 
-      switch (parameter)
+      if (parameter == "on")
       {
-        case "on":
-          Fogs[p] = CreateFogModifierRectBJ(true, p, FOG_OF_WAR_VISIBLE, GetPlayableMapRect());
-          DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Whole map revealed.");
-          break;
-        case "off":
-          DestroyFogModifier(Fogs[p]);
-          DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Whole map unrevealed.");
-          break;
+        Fogs[p] = CreateFogModifierRectBJ(true, p, FOG_OF_WAR_VISIBLE, GetPlayableMapRect());
+        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Whole map revealed.");
+      }
+      else if (parameter == "off")
+      {
+        DestroyFogModifier(Fogs[p]);
+        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Whole map unrevealed.");
       }
     }
 

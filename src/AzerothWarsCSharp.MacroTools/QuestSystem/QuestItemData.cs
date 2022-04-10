@@ -78,30 +78,27 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
 
         _progress = value;
         if (ShowsInQuestLog)
-          switch (value)
+          if (value == QuestProgress.Incomplete)
           {
-            case QuestProgress.Incomplete:
-            {
-              QuestItemSetCompleted(QuestItem, false);
-              if (GetLocalPlayer() == Holder.Player) ShowLocal();
+            QuestItemSetCompleted(QuestItem, false);
+            if (GetLocalPlayer() == Holder.Player) ShowLocal();
 
-              ShowSync();
-              break;
-            }
-            case QuestProgress.Complete:
-            {
-              QuestItemSetCompleted(QuestItem, true);
-              if (GetLocalPlayer() == Holder.Player) HideLocal();
+            ShowSync();
+          }
+          else if (value == QuestProgress.Complete)
+          {
+            QuestItemSetCompleted(QuestItem, true);
+            if (GetLocalPlayer() == Holder.Player) HideLocal();
 
-              HideSync();
-              break;
-            }
-            case QuestProgress.Undiscovered:
-              QuestItemSetCompleted(QuestItem, false);
-              break;
-            case QuestProgress.Failed:
-              QuestItemSetCompleted(QuestItem, false);
-              break;
+            HideSync();
+          }
+          else if (value == QuestProgress.Undiscovered)
+          {
+            QuestItemSetCompleted(QuestItem, false);
+          }
+          else if (value == QuestProgress.Failed)
+          {
+            QuestItemSetCompleted(QuestItem, false);
           }
 
         ProgressChanged?.Invoke(this, this);

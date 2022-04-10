@@ -119,18 +119,12 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     {
       _objectLimits[id] = limit;
       SetObjectLevel(id, IMinBJ(GetPlayerTechCount(Player, id, true), limit));
-      switch (limit)
-      {
-        case >= Faction.UNLIMITED:
-          SetPlayerTechMaxAllowed(Player, id, -1);
-          break;
-        case <= 0:
-          SetPlayerTechMaxAllowed(Player, id, 0);
-          break;
-        default:
-          SetPlayerTechMaxAllowed(Player, id, limit);
-          break;
-      }
+      if (limit >= Faction.UNLIMITED)
+        SetPlayerTechMaxAllowed(Player, id, -1);
+      else if (limit <= 0)
+        SetPlayerTechMaxAllowed(Player, id, 0);
+      else
+        SetPlayerTechMaxAllowed(Player, id, limit);
     }
 
     public void ModObjectLimit(int id, int limit)

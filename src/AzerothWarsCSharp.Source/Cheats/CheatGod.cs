@@ -27,17 +27,16 @@ namespace AzerothWarsCSharp.Source.Cheats
       var pId = GetPlayerId(p);
       string parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
 
-      switch (parameter)
+      if (parameter == "on")
       {
-        case "on":
-          _toggle[pId] = true;
-          DisplayTextToPlayer(p, 0, 0,
-            "|cffD27575CHEAT:|r God mod activated. Your units will deal 100x damage && take no damage.");
-          break;
-        case "off":
-          _toggle[pId] = false;
-          DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r God mode deactivated.");
-          break;
+        _toggle[pId] = true;
+        DisplayTextToPlayer(p, 0, 0,
+          "|cffD27575CHEAT:|r God mod activated. Your units will deal 100x damage && take no damage.");
+      }
+      else if (parameter == "off")
+      {
+        _toggle[pId] = false;
+        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r God mode deactivated.");
       }
     }
 

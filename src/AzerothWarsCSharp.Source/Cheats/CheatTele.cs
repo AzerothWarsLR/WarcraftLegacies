@@ -28,16 +28,15 @@ namespace AzerothWarsCSharp.Source.Cheats
       player p = GetTriggerPlayer();
       string parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
 
-      switch (parameter)
+      if (parameter == "on")
       {
-        case "on":
-          TeleToggle[p] = true;
-          DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Teleport activated. Use patrol to move instantly.");
-          break;
-        case "off":
-          TeleToggle[p] = false;
-          DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Teleport deactivated. Patrol works normally.");
-          break;
+        TeleToggle[p] = true;
+        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Teleport activated. Use patrol to move instantly.");
+      }
+      else if (parameter == "off")
+      {
+        TeleToggle[p] = false;
+        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Teleport deactivated. Patrol works normally.");
       }
     }
 

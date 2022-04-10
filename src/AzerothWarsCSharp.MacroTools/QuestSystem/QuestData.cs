@@ -78,50 +78,45 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       {
         var formerProgress = _progress;
         _progress = value;
-        switch (value)
+        if (value == QuestProgress.Complete)
         {
-          case QuestProgress.Complete:
+          QuestSetCompleted(Quest, true);
+          QuestSetFailed(Quest, false);
+          QuestSetDiscovered(Quest, true);
+          if (!_muted)
           {
-            QuestSetCompleted(Quest, true);
-            QuestSetFailed(Quest, false);
-            QuestSetDiscovered(Quest, true);
-            if (!_muted)
-            {
-              DisplayCompleted();
-              if (Global) DisplayCompletedGlobal();
-            }
-
-            if (ResearchId != 0) SetPlayerTechResearched(Holder.Player, ResearchId, 1);
-
-            OnComplete();
-            break;
+            DisplayCompleted();
+            if (Global) DisplayCompletedGlobal();
           }
-          case QuestProgress.Failed:
-          {
-            QuestSetCompleted(Quest, false);
-            QuestSetFailed(Quest, true);
-            QuestSetDiscovered(Quest, true);
-            if (!_muted) DisplayFailed();
 
-            OnFail();
-            break;
-          }
-          case QuestProgress.Incomplete:
-          {
-            if (!_muted)
-              if (formerProgress == QuestProgress.Undiscovered)
-                DisplayDiscovered();
+          if (ResearchId != 0) SetPlayerTechResearched(Holder.Player, ResearchId, 1);
 
-            QuestSetCompleted(Quest, false);
-            QuestSetFailed(Quest, false);
-            QuestSetDiscovered(Quest, true);
-            break;
-          }
-          case QuestProgress.Undiscovered:
-            QuestSetCompleted(Quest, false);
-            QuestSetFailed(Quest, false);
-            QuestSetDiscovered(Quest, false);
-            break;
+          OnComplete();
+        }
+        else if (value == QuestProgress.Failed)
+        {
+          QuestSetCompleted(Quest, false);
+          QuestSetFailed(Quest, true);
+          QuestSetDiscovered(Quest, true);
+          if (!_muted) DisplayFailed();
+
+          OnFail();
+        }
+        else if (value == QuestProgress.Incomplete)
+        {
+          if (!_muted)
+            if (formerProgress == QuestProgress.Undiscovered)
+              DisplayDiscovered();
+
+          QuestSetCompleted(Quest, false);
+          QuestSetFailed(Quest, false);
+          QuestSetDiscovered(Quest, true);
+        }
+        else if (value == QuestProgress.Undiscovered)
+        {
+          QuestSetCompleted(Quest, false);
+          QuestSetFailed(Quest, false);
+          QuestSetDiscovered(Quest, false);
         }
 
         //If the quest is incomplete, show its markers. Otherwise, hide them.
@@ -342,15 +337,9 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         if (questItem.Progress != QuestProgress.Complete)
         {
           allComplete = false;
-          switch (questItem.Progress)
-          {
-            case QuestProgress.Failed:
-              anyFailed = true;
-              break;
-            case QuestProgress.Undiscovered:
-              anyUndiscovered = true;
-              break;
-          }
+          if (questItem.Progress == QuestProgress.Failed)
+            anyFailed = true;
+          else if (questItem.Progress == QuestProgress.Undiscovered) anyUndiscovered = true;
         }
 
       //If anything is undiscovered, the quest is undiscovered

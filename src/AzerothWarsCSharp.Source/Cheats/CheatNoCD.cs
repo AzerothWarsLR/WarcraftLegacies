@@ -23,16 +23,15 @@ namespace AzerothWarsCSharp.Source.Cheats
       player p = GetTriggerPlayer();
       string parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
 
-      switch (parameter)
+      if (parameter == "on")
       {
-        case "on":
-          Toggle[p] = true;
-          DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r No cooldowns activated.");
-          break;
-        case "off":
-          Toggle[p] = false;
-          DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r No cooldowns deactivated.");
-          break;
+        Toggle[p] = true;
+        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r No cooldowns activated.");
+      }
+      else if (parameter == "off")
+      {
+        Toggle[p] = false;
+        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r No cooldowns deactivated.");
       }
     }
 

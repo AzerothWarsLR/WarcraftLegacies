@@ -133,21 +133,14 @@ namespace AzerothWarsCSharp.MacroTools
       SetHeroInt(whichUnit, GetHeroInt(whichUnit, false) + intelligence, true);
 
       string sfx;
-      switch (str)
-      {
-        case > 0 when agi == 0 && intelligence == 0:
-          sfx = "Abilities\\Spells\\Items\\AIsm\\AIsmTarget.mdl";
-          break;
-        case 0 when agi > 0 && intelligence == 0:
-          sfx = "Abilities\\Spells\\Items\\AIam\\AIamTarget.mdl";
-          break;
-        case 0 when agi == 0 && intelligence > 0:
-          sfx = "Abilities\\Spells\\Items\\AIim\\AIimTarget.mdl";
-          break;
-        default:
-          sfx = "Abilities\\Spells\\Items\\AIlm\\AIlmTarget.mdl";
-          break;
-      }
+      if (str > 0 && (agi == 0 && intelligence == 0))
+        sfx = "Abilities\\Spells\\Items\\AIsm\\AIsmTarget.mdl";
+      else if (str == 0 && (agi > 0 && intelligence == 0))
+        sfx = "Abilities\\Spells\\Items\\AIam\\AIamTarget.mdl";
+      else if (str == 0 && (agi == 0 && intelligence > 0))
+        sfx = "Abilities\\Spells\\Items\\AIim\\AIimTarget.mdl";
+      else
+        sfx = "Abilities\\Spells\\Items\\AIlm\\AIlmTarget.mdl";
 
       DestroyEffect(AddSpecialEffect(sfx, GetUnitX(whichUnit), GetUnitY(whichUnit)));
     }
