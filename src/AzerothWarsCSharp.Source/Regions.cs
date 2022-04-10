@@ -145,17 +145,10 @@ public static class Regions
 	public static Rectangle RiseSpawn2 { get; set; } = new Rectangle(12704f, 17376f, 14080f, 18816f);
 	public static Rectangle AzjolNerub_South_Entrance { get; set; } = new Rectangle(-3456f, 17696f, -3136f, 17856f);
 	public static Rectangle AzjolNerub_North_Exit { get; set; } = new Rectangle(-8832f, -28992f, -8352f, -28864f);
-	public static Rectangle Auberdine_Ships_2 { get; set; } = new Rectangle(-16640f, 7424f, -9504f, 11072f);
-	public static Rectangle Auberdine_Ships { get; set; } = new Rectangle(-18272f, 2848f, -15936f, 5312f);
 	public static Rectangle AzjolNerubNorth_entrance { get; set; } = new Rectangle(-5760f, 23808f, -5312f, 24000f);
-	public static Rectangle Auberdine_Ships_2 { get; set; } = new Rectangle(-16640f, 7424f, -9504f, 11072f);
-	public static Rectangle Auberdine_Ships { get; set; } = new Rectangle(-18272f, 2848f, -15936f, 5312f);
-	public static Rectangle Arathi_Ships { get; set; } = new Rectangle(16256f, 768f, 17024f, 1632f);
 	public static Rectangle Alterac_Exca { get; set; } = new Rectangle(11104f, 5856f, 11168f, 5920f);
-	public static Rectangle Arathi_Ships { get; set; } = new Rectangle(16256f, 768f, 17024f, 1632f);
 	public static Rectangle Andorhal { get; set; } = new Rectangle(11136f, 7104f, 13696f, 8512f);
-	public static Rectangle Aerie_Peak { get; set; } = new Rectangle(13600f, 4096f, 14752f, 5184f);
-	public static Rectangle Arathi_Ships { get; set; } = new Rectangle(16256f, 768f, 17024f, 1632f);
+
 	public static Rectangle TempestKeep { get; set; } = new Rectangle(1408f, -22432f, 5024f, -17952f);
 	public static Rectangle Sunwell { get; set; } = new Rectangle(18144f, 21248f, 18976f, 22048f);
 	public static Rectangle InstanceBarrowDeeps { get; set; } = new Rectangle(15712f, -32128f, 15840f, -31904f);
