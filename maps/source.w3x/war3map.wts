@@ -22,15 +22,6 @@ STRING 3
 (Light Blue - Illidan)
 }
 
-STRING 4
-{
-An enormous thank you to...
-
-The Azeroth wars past developers: Augur, Crusader793, Bhaal_Spawn., EagleMan, Avrion, Railen, Thurr, Rhemar, SteakonSpear, Talinn, LuneLune. Dave_Rolf and Richardik.
-
-And the artists who have created the swathe of custom icons and models that we use: Ujimasa Hojo. General Frank, Shiv, Malvodion, nGy, UgoUgo, JetFangInferno, -Grendel,  SpasMaster, Eagle XI, Mythic, Hamsta, assasin_lord, Hayate, R.A.N.G.I.T.,  Stefan.K,  Eusira, 00110000, Pyritie, Sunchips, Dojo, PeeKay, nhocklanhox6, dhguardianes, HappyTauren, HerrDave, Shyster, takakenji, JesusHipster, Boogles, Kwaliti, Tauer, WhiteDeath, and Mechanical Man
-}
-
 STRING 5
 // Abilities: A0DW (Blink), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -90,109 +81,10 @@ STRING 14
 Spawn Horror
 }
 
-STRING 15
-{
-Legion Summon
-}
-
-STRING 16
-{
-The Burning Legion is being summoned!
-}
-
-STRING 17
-{
-The last Elven Runestone has been destroyed. Dark times have fallen over Quel'thalas.
-
-Silvermoon is now vulnerable.
-}
-
-STRING 18
-{
-The Obelisks which shielded and stood watch over Icecrown have been destroyed.
-
-The Frozen Throne is now vulnerable.
-}
-
-STRING 19
-{
-Commands
-}
-
-STRING 20
-{
-General:
--info for useful commands
--obs makes you into an observer
-Camera:
--reset sets the camera at default height.
--mid/(-med) sets the camera to a height slightly below default.
--far sets the camera  to a height slightly above default.
-}
-
-STRING 21
-{
-Discord
-}
-
-STRING 22
-{
-Please visit our Discord at: https://discord.gg/4eGZn
-}
-
-STRING 23
-{
-Credits
-}
-
-STRING 24
-{
-|cffffcc00Warcraft Legacies|r
-}
-
-STRING 25
-{
-|cffaaaaaaJoin our Discord:|r discord.gg/pnWZs69
-|cffff0000Support our Patreon:|r https://www.patreon.com/lordsebas
-}
-
 STRING 26
+// Units: h04R (Uldum Gate ), Ubertip (Tooltip - Extended)
 {
  
-}
-
-STRING 27
-{
-To the West of Kalimdor
-}
-
-STRING 28
-{
-To the East of Azeroth
-}
-
-STRING 29
-{
-The Tomb of Sargeras is now accessible, unlock it with a lvl 10 or more hero.
-
-}
-
-STRING 30
-{
-Book of Medivh has been retrieved from its pedestal.
-
-}
-
-STRING 31
-{
-Book of Medivh has been retrieved from its pedestal.
-
-}
-
-STRING 32
-{
-The Tomb of Sargeras has been opened.
-
 }
 
 STRING 33
@@ -583,17 +475,6 @@ STRING 97
 // Abilities: Aloa (Load), EditorSuffix (Editor Suffix)
 {
 (Castle)
-}
-
-STRING 98
-{
-You are playing as the inventive |cff808080Bilgewater Cartel|r.
-
-You need traders to gain ressources early on, build Trading Zeppelins for Lumber and Traders for Gold.
-
-Some of your more advanced units and buildings require fuel. Use the Kezan Oil Supply to discover and build new Oil Platforms and start accumulating it. Your global supply is indicated by the mana of the Kezan Oil Supply.
-
-Hurry up though, when the cataclysm inevitably happens, your trading center and traders will be destroyed and you won't be able to rebuild them.
 }
 
 STRING 99
@@ -1424,11 +1305,6 @@ STRING 236
 Teleporter Circle Indicator
 }
 
-STRING 237
-{
-|cffd79b00The Atheneum|r
-}
-
 STRING 238
 // Abilities: A075 (Acid Blob), EditorSuffix (Editor Suffix)
 {
@@ -1451,15 +1327,6 @@ STRING 241
 // Units: h06I (Castle), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Deckhand, Storm Sorcerer |n|cfff5962dAbilities:|R Summon Garrison
-}
-
-STRING 242
-{
-|cffffcc00QUEST UPDATE|r
-Chapter One
-  - |cff808080Reach the Aetheneum (Completed)|r
-  - Reach Immol'thar Lair
-  - Kill Immol'thar
 }
 
 STRING 243
@@ -1557,11 +1424,6 @@ STRING 260
 // Units: o039 (Great Hall), EditorSuffix (Name - Editor Suffix)
 {
 (twilight)
-}
-
-STRING 261
-{
-|cffd79b00Burning Steppes|r
 }
 
 STRING 262
@@ -2000,15 +1862,6 @@ STRING 334
 // Units: udes (Corsair), Tip (Tooltip - Basic)
 {
 Build Corsair
-}
-
-STRING 335
-{
-You are playing as the honorable |cffff0000Frostwolf Clan|r.
-
-You cannot train any peons or progress in your tech tree as long as you did not reach Kalimdor.
-
-A gold mine is awaiting you at Thunderbluff, Once you land in Kalimdor, make sure you escort your kodo with the Great Hall packed to it.
 }
 
 STRING 336
@@ -3608,11 +3461,6 @@ STRING 601
 (Sentinels-Tyrande)
 }
 
-STRING 602
-{
-Illidan
-}
-
 STRING 603
 // Units: hbsh (Battleship), Hotkey (Hotkey)
 {
@@ -3883,17 +3731,6 @@ STRING 647
 W
 }
 
-STRING 648
-{
-You are playing as the powerful |cff4242ebKingdom of Lordaeron|r.
-
-You start the game with the largest territory, but your enemies will be upon you soon enough.
-
-Secure your major cities as fast as possible.
-
-Keep an eye out for Cultists of the damned, they will start infecting your buidings. Destroy as many infected building as you can before plague!
-}
-
 STRING 649
 // Units: nndr (Nether Dragon), Ubertip (Tooltip - Extended)
 {
@@ -3928,11 +3765,6 @@ STRING 654
 // Units: hctw (Cannon Tower), Hotkey (Hotkey)
 {
 X
-}
-
-STRING 655
-{
-|cffff0000WARNING|r - Move out of the way whenever he charges for a shockwave!
 }
 
 STRING 656
@@ -3977,22 +3809,6 @@ STRING 662
 (Green - Naga Item Shop)
 }
 
-STRING 663
-{
-|cffff0000WARNING|r - Get away from Immol'thar when he channels a spell
-}
-
-STRING 664
-{
-You are playing as the mystical |cff32e1e1Kingdom of Quel'thalas|r.
-
-Your starting territory is very secure, but you need to deal with the Trolls from Zul'Aman.
-
-They will be attacking you shortly so be prepared and train some troups. 
-
-Your allies will need your help with the Undead soon, be ready to join them as soon as you have secured your capital.
-}
-
 STRING 665
 // Units: nmyr (Naga Myrmidon), EditorSuffix (Name - Editor Suffix)
 {
@@ -4003,19 +3819,6 @@ STRING 666
 // Units: nfgu (Felguard), Hotkey (Hotkey)
 {
 Q
-}
-
-STRING 667
-{
-You are playing as the heartless army of the Lich King,|cff6f2583The Undead Scourge|r.
-
-Northrend is vast and isolated, perfect to amass the vast undying ranks to destroy your enemies.
-
-The ancient Nerubian have declared war on you, destroy their meager holdings and kill their Queen to secure the continent.
-
-Coordinate with your allies for the Plague that will sweep Lordaeron. 
-
-The ancient ziggurat of Nax'rammas will become the perfect weapon for the Scourge, but we will need a powerful necromance to awaken it.
 }
 
 STRING 668
@@ -4816,11 +4619,6 @@ STRING 800
 // Units: nefm (Residence), Ubertip (Tooltip - Extended)
 {
 Rural elven home, providing for its nation. Provides 8 food, which increases the maximum number of units that can be trained.
-}
-
-STRING 801
-{
-|cffd79b00Dragonblight|r
 }
 
 STRING 802
@@ -7179,11 +6977,6 @@ STRING 1193
 Summon Arthas Menethil
 }
 
-STRING 1194
-{
-|cffd79b00Icecrown|r
-}
-
 STRING 1195
 // Units: Ubal (Envoy of Archimonde), EditorSuffix (Name - Editor Suffix)
 {
@@ -7778,11 +7571,6 @@ STRING 1293
 Summon Othmar Garithos
 }
 
-STRING 1294
-{
-|cffd79b00Azjol-Nerub|r
-}
-
 STRING 1295
 // Units: Hkal (Prince of Quel'thalas), Awakentip (Tooltip - Awaken)
 {
@@ -8165,15 +7953,6 @@ STRING 1358
 // Units: Eevi (Betrayer), Name (Name)
 {
 Betrayer
-}
-
-STRING 1359
-{
-|cffffcc00QUEST UPDATE|r
-Chapter One
-  - |cff808080Reach the Aetheneum (Completed)|r
-  - |cff808080Reach Immol'thar Lair (Completed)|r
-  - Kill Immol'thar
 }
 
 STRING 1360
@@ -11577,11 +11356,6 @@ STRING 1926
 (Fel Horde-Zuluhed)
 }
 
-STRING 1927
-{
-|cffe10000Kil'jaeden has made an offer of salvation and power to Kael'thas.|r
-}
-
 STRING 1928
 // Units: n09G (Mulgore (20gold/min)), Name (Name)
 {
@@ -14220,11 +13994,6 @@ STRING 2367
 Target
 }
 
-STRING 2368
-{
-Naga awakening
-}
-
 STRING 2369
 // Units: n051 (Nether Dragon), EditorSuffix (Name - Editor Suffix)
 {
@@ -15756,11 +15525,6 @@ STRING 2623
 Booty Bay (10gold/min)
 }
 
-STRING 2624
-{
-Activate Open Alliances?
-}
-
 STRING 2625
 // Units: n00J (Tomb of Sargeras (20gold/min)), Name (Name)
 {
@@ -16101,18 +15865,6 @@ STRING 2681
 // Units: h07L (Improved Guard Tower), Name (Name)
 {
 Improved Guard Tower
-}
-
-STRING 2682
-{
-You are playing as the enduring |cffe4bc00Kingdom of Ironforge.
-|r
-Re-establish your holding by capturing the surrounding lands.
-
-The Twilight Hammer clan is nearby, but they cannot leave their area by land except if the open the Dragonmaw Gate. 
-If they do, they cannot close the gate for 7 minutes, so be ready to retaliate. 
-
-Your Stormwind ally will be under attack by the Fel Horde, be ready to help him.
 }
 
 STRING 2683
@@ -17933,7 +17685,7 @@ Greymane's Gate
 }
 
 STRING 2986
-// Units: h04R (Uldum Gate ), Ubertip (Tooltip - Extended)
+// Units: h02S (Gates of Ahn'Qiraj), Ubertip (Tooltip - Extended)
 {
  
 }
@@ -18115,7 +17867,7 @@ Uldum Gate
 }
 
 STRING 3016
-// Units: h02S (Gates of Ahn'Qiraj), Ubertip (Tooltip - Extended)
+// Units: h02M (Greymane's Gate), Ubertip (Tooltip - Extended)
 {
  
 }
@@ -18295,7 +18047,7 @@ Horizontal Wooden Gate
 }
 
 STRING 3046
-// Units: h02M (Greymane's Gate), Ubertip (Tooltip - Extended)
+// Units: h02J (Stormwind Harbour Gate), Ubertip (Tooltip - Extended)
 {
  
 }
@@ -18319,7 +18071,7 @@ Horizontal Wooden Gate
 }
 
 STRING 3050
-// Units: h02J (Stormwind Harbour Gate), Ubertip (Tooltip - Extended)
+// Units: h02I (Stormwind Harbour Gate), Ubertip (Tooltip - Extended)
 {
  
 }
@@ -19640,7 +19392,7 @@ Horizontal Wooden Gate
 }
 
 STRING 3270
-// Units: h02I (Stormwind Harbour Gate), Ubertip (Tooltip - Extended)
+// Units: h00L (Horizontal Wooden Gate), Ubertip (Tooltip - Extended)
 {
  
 }
@@ -19790,7 +19542,7 @@ Greymane's Gate
 }
 
 STRING 3295
-// Units: h00L (Horizontal Wooden Gate), Ubertip (Tooltip - Extended)
+// Units: E00K (Archdruid of Darnassus), Tip (Tooltip - Basic)
 {
  
 }
@@ -19850,7 +19602,7 @@ Horizontal Wooden Gate
 }
 
 STRING 3305
-// Units: E00K (Archdruid of Darnassus), Tip (Tooltip - Basic)
+// Units: E001 (Archdruid of Darnassus), Tip (Tooltip - Basic)
 {
  
 }
@@ -19874,7 +19626,7 @@ Horizontal Wooden Gate
 }
 
 STRING 3309
-// Units: E001 (Archdruid of Darnassus), Tip (Tooltip - Basic)
+// Units: E001 (Archdruid of Darnassus), Ubertip (Tooltip - Extended)
 {
  
 }
@@ -20983,60 +20735,10 @@ STRING 3493
 Scarlet Monastery
 }
 
-STRING 3494
-{
-You are playing as the proud |cffd45e19Warsong clan|r.
-
-You start isolated in the woods of Ashenvale. The Warchief expects a large amount of lumber to be collected, so you better start chopping!
-
-Use Demolishers to cut your way through the forest to the Barrens or towards the Night elves, but be careful, you might be opening the way for your enemies.
-
-Unlock your base Orgrimmar as soon as possible to defend against the tide of Night Elves.
-}
-
-STRING 3495
-{
-You are playing as the bloodthirsty |cff00cd00Fel Horde|r.
-
-The puny Draenei are still in Outland, defying the Fel Horde demon masters. Eliminate them all.
-
-Your allies will not be able to help you, so you are on your own. 
-
-Move fast, do not let the alliance organise themselves and unite their forces against you.
-}
-
 STRING 3496
 // Units: h04Z (Kezan Oil Supply), EditorSuffix (Name - Editor Suffix)
 {
  (Goblin)
-}
-
-STRING 3497
-// Units: E001 (Archdruid of Darnassus), Ubertip (Tooltip - Extended)
-{
- 
-}
-
-STRING 3498
-{
-You are playing as the wise |cffff8080Mages of Dalaran|r.
-
-Your first order of business should be to unlock your cities, Dalaran and Shadowfang Keep. 
-
-Once your territory is secured, you will need to prepare for the Plague and the inevitable invasion of the Burning Legion. Your ally of Lordaeron will need your help.
-
-Alternatively, you could go help the Kingdom of Gilneas and help them survive the worgen attacks. Once their curse lifted, they will join the Alliance.
-}
-
-STRING 3499
-{
-You are playing as the secretive |cff8080ffCult of the Damned|r.
-
-Your first task is to use your three Cultist of the Damned to corrupt human buildings in Lordaeron. These corrupted buildings will provide income for you until the plague.
-
-You start allied with the Scourge and the Burning Legion, but you will use them to further your own motives. 
-
-Your main target should be the Sunwell. Once captured, you will have access to Sylvanas, and she will allow the Forsaken to declare independence from the Lich King.
 }
 
 STRING 3500
@@ -21049,17 +20751,6 @@ STRING 3501
 // Units: nogn (Warlock), Ubertip (Tooltip - Extended)
 {
 Dark art mage of the horde.|n|cfff5962dAbilities:|R Firebolt|n|cfff5962dCan Learn:|R Frenzy, Soulburn |n|n|cffd5d500Attacks land and air units.|r
-}
-
-STRING 3502
-{
-You are playing as the steadfast |cff005800Kingdom of Stormwind|r.
-
-As Stormwind, you are the first line of defense against the inevitable tide of the Fel Horde. 
-
-Unlock your cities, Stormwind, Lakeshire and Darkshire as soon as possible. Then race to your Stronghold of Nethergarde near the Dark Portal and prepare for the Fel Horde arrival. If you make it in time, you might hold the line.
-
-Make sure to communicate with your Dwarven and Kul'tiran allies, they will be the ones to help you early game, as the rest of the Alliance will be too far to reach you in time.
 }
 
 STRING 3503
@@ -22479,40 +22170,10 @@ STRING 3738
 Revive Necromancer
 }
 
-STRING 3739
-{
-You need to corrupt workers all over the world to your cause. Use the Glimpse spell in your capital to that effect. Each new corrupted worker will give you a gold income over time. 
-
-The Cataclysm will happen at a random time between turns 22 and 29. 
-While waiting for it, use boats to safely gather territory while amassing an army in the Twilight Higlands.
-}
-
-STRING 3740
-{
-You are playing as the hardy island |cff008000Kingdom of Kul'tiras|r.
-
-You start in Balor islands, but you will need to move out quickly to control your capital and the Gold Mines on Kul'tiras island. 
-
-The Zandalar Empire will be coming from the south so be careful, the fight will be bloody.
-
-Once you have conquered the Zandalar empire, set sail to help your allies.
-}
-
 STRING 3741
 // Units: o03L (Great Hall), Hotkey (Hotkey)
 {
 Q
-}
-
-STRING 3742
-{
-You are playing as the destructive |cffa2722dBurning Legion|r.
-
-You start off isolated in Argus. Use Astral Walk and Diamonds of Summoning to move your units to Azeroth.
-
-Your dreadlords are the only elites available before tier 4, make sure to use them.
-
-Your ultimate goal is to summon the Burning Legion and the easiest way to do that is to invade the city of Dalaran, where the book of Medivh is kept.
 }
 
 STRING 3743
@@ -22875,12 +22536,6 @@ STRING 3802
 Q
 }
 
-STRING 3803
-// Units/NightElf/Illidan/IllidanYes4.flac
-{
-Evil draws close...
-}
-
 STRING 3804
 // Units: O01P (Leader of the Twilight's Hammer), Propernames (Proper Names)
 {
@@ -22963,11 +22618,6 @@ STRING 3817
 // Units: O00Y (Dragonmaw Chieftain), Tip (Tooltip - Basic)
 {
 Summon Zuluhed the Whacked
-}
-
-STRING 3818
-{
-|cffd79b00Azjol-Nerub|r
 }
 
 STRING 3819
@@ -23151,6 +22801,7 @@ Revive Envoy of Archimonde
 }
 
 STRING 3849
+// Units: n04R (Immol'thar), Name (Name)
 {
 Immol'thar
 }
@@ -23621,11 +23272,6 @@ STRING 3927
 // Units: H028 (Thane of Aerie Peak), Tip (Tooltip - Basic)
 {
 Summon Falstad Wildhammer
-}
-
-STRING 3928
-{
-|cffd79b00Blackrock Mountain|r
 }
 
 STRING 3929
@@ -29300,12 +28946,6 @@ STRING 4873
 W
 }
 
-STRING 4874
-// Sound/Ambient/DoodadEffects/SargerasLaugh.flac
-{
-
-}
-
 STRING 4875
 // Abilities: ANbr (General's Order), EditorSuffix (Editor Suffix)
 {
@@ -31082,17 +30722,6 @@ STRING 5170
 Tosses a target non-mechanical enemy unit into the air, rendering it unable to move, attack or cast spells, and stopping others from attacking or casting on it. Lasts 15 seconds on units and 2 seconds on heroes.
 }
 
-STRING 5171
-{
-You are playing as the Ancient|cffc6b232 Empire of Ahn'Qiraj|r.
-
-You need to awaken and free your god, C'thun, from the Titan's prison.
-
-Your surface gold mine will run out quickly, but there are many underground. Build a small army and start entering the Ahn'Qiraj tunnels to capture more goldmines.
-
-Once you have built up enough ressources, unleash the wrath of the Old Gods on the world.
-}
-
 STRING 5172
 // Items: moon (Moonstone), Hotkey (Hotkey)
 {
@@ -31967,17 +31596,6 @@ STRING 5317
 // Abilities: AUim (Impale), Researchtip (Tooltip - Learn)
 {
 Learn Impale (|cffffcc00Q|r) - [|cffffcc00Level %d|r]
-}
-
-STRING 5318
-{
-You are playing as the venerable |cff6c4414Druids of the Cenarion Circle|r.
-
-As the Druids, you do not start with any hero, you need to awaken Malfurion as fast as possible from his slumber. 
-
-Once awakened, you can use his Force of Nature to clear a path through the trees in Ashenvale and summon Cenarius to your help. 
-
-You should attack the Horde before they can organize and before their allies can come and help them, do not let them desecrate the forest.
 }
 
 STRING 5319
@@ -33660,11 +33278,6 @@ STRING 5598
 E
 }
 
-STRING 5599
-{
-Illidan
-}
-
 STRING 5600
 // Abilities: ANst (Voodoo Spirits), EditorSuffix (Editor Suffix)
 {
@@ -34125,15 +33738,6 @@ STRING 5676
 // Abilities: ANrc (Rain of Chaos), Ubertip (Tooltip - Normal - Extended)
 {
 Calls down 6 Elite Infernals from the sky.
-}
-
-STRING 5677
-{
-|cffffcc00QUEST UPDATE|r
-Chapter Two
-  - |cff808080Reach the escape boat (Completed)|r
-  - Reach the Dalaran Dungeons
-  - Acquire the Skull of Gul'dan
 }
 
 STRING 5678
@@ -35637,30 +35241,10 @@ STRING 5927
 (unused)
 }
 
-STRING 5928
-{
-Yes
-}
-
 STRING 5929
 // Abilities: A096 (Summon Water Elemental), Tip (Tooltip - Normal)
 {
 Summon Water Elemental - [|cffffcc00Level 4|r]
-}
-
-STRING 5930
-{
-no
-}
-
-STRING 5931
-{
-Alliances are open!
-}
-
-STRING 5932
-{
-Open alliances is deactivated, only event alliances are possible
 }
 
 STRING 5933
@@ -36165,36 +35749,6 @@ STRING 6016
 // Units: n0C5 (Tidal Guardian), Hotkey (Hotkey)
 {
 Z
-}
-
-STRING 6017
-{
-|cffffcc00QUEST UPDATE|r
-Chapter Two
-  - |cff808080Reach the escape boat (Completed)|r
-  - |cff808080Reach the Dalaran Dungeons  (Completed)|r
-  - Acquire the Skull of Gul'dan
-}
-
-STRING 6018
-// war3mapImported/Cinematic5Illidan.mp3
-{
-That is where the Skull of Gul'dan is kept.
-}
-
-STRING 6019
-{
-Click on the location you want to exit from!
-}
-
-STRING 6020
-{
-CLICK HERE
-}
-
-STRING 6021
-{
-Illidan
 }
 
 STRING 6022
@@ -37082,11 +36636,6 @@ STRING 6169
 // Units: nnsw (Naga Siren), Ubertip (Tooltip - Extended)
 {
 Powerful spellcaster. Can initially cast Parasite, which damages an enemy unit over time and can spawn a Watery Minion from their corpse. Also has the Frostbolt and anti-magic shell abilities. |n|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 6170
-{
-CLICK HERE
 }
 
 STRING 6171
@@ -39993,11 +39542,6 @@ STRING 6654
 W
 }
 
-STRING 6655
-{
-|cffd79b00Tomb of Sargeras|r
-}
-
 STRING 6656
 // Abilities: A01J (Inferno Strike), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -41204,12 +40748,6 @@ STRING 6856
 Q
 }
 
-STRING 6857
-// Units/NightElf/Illidan/IllidanWarcry1.flac
-{
-None may challenge me!
-}
-
 STRING 6858
 // Abilities: ANrf (Rain of Fire), Hotkey (Hotkey - Normal)
 {
@@ -41217,6 +40755,7 @@ Q
 }
 
 STRING 6859
+// Units: Hamg (Archmage), Propernames (Proper Names)
 {
 Conjurus Rex
 }
@@ -41225,29 +40764,6 @@ STRING 6860
 // Abilities: A10I (Demon Rage), Researchubertip (Tooltip - Learn - Extended)
 {
 Causes this unit to attack significantly faster, and move <A10I,DataA1,%>%, faster but take <A10I,DataC1,%>% more damage. |nLasts 7 seconds.|n|n|cffffcc00Level 1|r - <A10I,DataB1,%>% attack rate increase.|n|cffffcc00Level 2|r - <A10I,DataB2,%>% attack rate increase.|n|cffffcc00Level 3|r - <A10I,DataB3,%>% attack rate increase. |n|cffffcc00Level 4|r - <A10I,DataB4,%>% attack rate increase.
-}
-
-STRING 6861
-// war3mapImported/Archamge1.wav
-{
-We've prepared for your coming.
-}
-
-STRING 6862
-{
-Conjurus Rex
-}
-
-STRING 6863
-// war3mapImported/Archmage2.wav
-{
-We will be forced to unleash our full powers against you! 
-}
-
-STRING 6864
-// Units: Hamg (Archmage), Propernames (Proper Names)
-{
-Conjurus Rex
 }
 
 STRING 6865
@@ -42578,11 +42094,6 @@ STRING 7082
 (C'thun Faceless One)
 }
 
-STRING 7083
-{
-Immol'thar
-}
-
 STRING 7084
 // Units: h0A4 (Coral Forge), EditorSuffix (Name - Editor Suffix)
 {
@@ -42749,19 +42260,6 @@ STRING 7111
 // Abilities: A0Y2 (Locust Swarm), Researchtip (Tooltip - Learn)
 {
 Learn Locust Swarm - [|cffffcc00Level %d|r]
-}
-
-STRING 7112
-{
-You are playing as the vengeful |cff940000Scarlet Crusade|r.
-
-You need to prevent the Cultist of the Damned spread of corruption in Lordaeron.
-
-Build towers to detect them and destroy any building that is corrupted.
-
-Your units are weaker by themselves, but they gain substantial bonuses the more type of different combat units you field in your army.
-
-Bid your time until you are ready to unleash the Crusade to the world.
 }
 
 STRING 7113
@@ -52628,11 +52126,6 @@ STRING 8756
 Demonic flames scorch the target dealing 300 damage.
 }
 
-STRING 8757
-{
-|cffff0000WARNING|r - A dampening field prevents Illidan from blinking. Make sure to dodge the shockwaves from the Elemental!
-}
-
 STRING 8758
 // Abilities: A0LH (Maelstrom Aura), Name (Name)
 {
@@ -53053,46 +52546,16 @@ STRING 8827
 Sends a lance of frost magic at a target enemy unit, dealing 375 damage and stunning the target for 7 seconds. (half on heroes)
 }
 
-STRING 8828
-{
-The Naga's are being awakened
-}
-
 STRING 8829
 // Abilities: A0QQ (Aimed Shot), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
-STRING 8830
-{
-Illidan
-}
-
 STRING 8831
 // Abilities: A0Q4 (Earth Bind), Hotkey (Hotkey - Normal)
 {
 Q
-}
-
-STRING 8832
-{
-Now go forth
-}
-
-STRING 8833
-{
-Illidan
-}
-
-STRING 8834
-{
-Unleash the tides of doom
-}
-
-STRING 8835
-{
-Illidan
 }
 
 STRING 8836
@@ -53369,11 +52832,6 @@ STRING 8881
 // Abilities: A0KN (Earth's Grace), Ubertip (Tooltip - Normal - Extended)
 {
 Sprays <A0KN,DataF4> waves of healing mist; each wave heals <A0KN,DataA4> damage to all friendly units in an area.
-}
-
-STRING 8882
-{
-Illidan
 }
 
 STRING 8883
@@ -56548,12 +56006,6 @@ STRING 9411
 // Abilities: A0Q1 (Incinerate), Researchhotkey (Hotkey - Learn)
 {
 E
-}
-
-STRING 9412
-// Units/Demon/HeroPitLord/HPitLordWhat1.flac
-{
-Tremble before me
 }
 
 STRING 9413
@@ -60714,11 +60166,6 @@ STRING 10105
 Q
 }
 
-STRING 10106
-{
-Upon all those who would oppose us
-}
-
 STRING 10107
 // Abilities: A0F9 (Resurgent Flame Strike), Hotkey (Hotkey - Normal)
 {
@@ -60759,14 +60206,6 @@ STRING 10113
 // Abilities: A0N5 (Worgen Fury), Tip (Tooltip - Normal)
 {
 Worgen Fury
-}
-
-STRING 10114
-{
-|cffffcc00QUEST UPDATE|r
-Chapter Three
-  - |cff808080the Maelstrom (Completed)|r
-  - Awaken the Naga
 }
 
 STRING 10115
@@ -62779,12 +62218,6 @@ STRING 10449
 Train |cffffcc00F|rel Beast
 }
 
-STRING 10450
-// Units: n04R (Immol'thar), Name (Name)
-{
-Immol'thar
-}
-
 STRING 10451
 // Abilities: A0LS (Shockwave), EditorSuffix (Editor Suffix)
 {
@@ -64050,11 +63483,6 @@ STRING 10661
 // Upgrades: R03Q (Shaman Adept Training,Shaman Master Training), Name (Name)
 {
 Shadowpriest Master Training
-}
-
-STRING 10662
-{
-|cffff0000WARNING|r - Keep moving, you can avoid Immol'thar Projectiles!
 }
 
 STRING 10663
@@ -65357,17 +64785,6 @@ STRING 10879
 // Abilities: A0CR (Animal Fury), Hotkey (Hotkey - Normal)
 {
 W
-}
-
-STRING 10880
-{
-You are playing as the exiled |cff000080Draenei|r.
-
-You need to immediately evacuate Shattrah and run to Tempest Keep, where your gold mine is located.
-
-Hold on in Outland as much as possible, to a maximum of 15 min, the onslaught of the Fel horde, but this is a battle you cannot win.
-
-Escape at the right time, try and save as many units as you can when escaping.
 }
 
 STRING 10881
@@ -69774,17 +69191,6 @@ STRING 11614
 Learn Toughness - [|cffffcc00Level %d|r]
 }
 
-STRING 11615
-{
-You are playing as the traditional |cffe1946cZandalarian Empire|r.
-
-You start off on Zandalar, but you will need to move fast to Crestfall and claim more gold mines. 
-
-The Kul'tiras army will be attacking you from the North soon so be ready and ready your armies. 
-
-Once the human menace has been eliminated, go help your Horde allies in Kalimdor.
-}
-
 STRING 11616
 // Abilities: A066 (Toughness), Tip (Tooltip - Normal)
 {
@@ -69807,26 +69213,6 @@ STRING 11619
 // Abilities: A066 (Toughness), Tip (Tooltip - Normal)
 {
 Toughness - [|cffffcc00Level 4|r]
-}
-
-STRING 11620
-{
-You are playing as the vigilant |cffb2ffb2Sentinel Army|r.
-
-The ancient Druids are still slowly awakening from their slumber, it comes to the Sentinels to drive back the invaders from Kalimdor.
-
-Your first mission is to race down the coast all the way to Feathermoon Stronghold, an extremely robust fortress on the southern part of the continent. 
-
-Once you have secured your holdings, get your army and destroy the orc invaders. Be careful, they will outnumber you if you give them time to organize with their allies.
-}
-
-STRING 11621
-{
-You are playing as the fanatical |cffcd8ccdTwilight Hammer Clan|r.
-
-You start isolated in the Twilight Highlands, the only way in is through the coast or the Dragonmaw Gate.
-
-The gate is invulnerable, whoever controls the fortress Grim Batol controls the gate. But be careful, once open, it will take seven minutes to be able to close it again.
 }
 
 STRING 11622
@@ -87647,12 +87033,6 @@ STRING 14590
 (Arathor-T0)
 }
 
-STRING 14591
-// Sound/Dialogue/NightElfCampaign/NightElf06/N06Illidan17.flac
-{
-Now I am complete!
-}
-
 STRING 14592
 // Upgrades: R02V (Defend), Name (Name)
 {
@@ -91971,11 +91351,6 @@ STRING 15319
 Serpent Ward (|cffffcc00Q|r) - [|cffffcc00Level 2|r]
 }
 
-STRING 15320
-{
-Illidan
-}
-
 STRING 15321
 // Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
@@ -92524,11 +91899,6 @@ STRING 15411
 // Upgrades: R040 (Magic Sentry), Ubertip (Tooltip - Extended)
 {
 Allows Sky Barges to be trained from the Infernal Machine Factory.
-}
-
-STRING 15412
-{
-|cffd79b00Scholomance|r
 }
 
 STRING 15413
@@ -93941,11 +93311,6 @@ STRING 15647
 C
 }
 
-STRING 15648
-{
-Betrayer...
-}
-
 STRING 15649
 // Abilities: A0R0 (Summon Engineer), Tip (Tooltip - Normal)
 {
@@ -94457,11 +93822,6 @@ STRING 15733
 Tidal Serpent
 }
 
-STRING 15734
-{
-Illidan
-}
-
 STRING 15735
 // Abilities: A0DA (Summon Mur'gul), Tip (Tooltip - Normal)
 {
@@ -94544,12 +93904,6 @@ STRING 15748
 // Abilities: A0M6 (Anti Portal Blocking), Name (Name)
 {
 Anti Portal Blocking
-}
-
-STRING 15749
-// Units/NightElf/HeroDemonHunter/DemonHunterMorphedReady1.flac
-{
-At last, we shall have revenge!
 }
 
 STRING 15750
@@ -96435,11 +95789,6 @@ STRING 16063
 (twilight)
 }
 
-STRING 16064
-{
-Illidan
-}
-
 STRING 16065
 // Abilities: A0NK (Plague Strike), Researchhotkey (Hotkey - Learn)
 {
@@ -97050,42 +96399,6 @@ STRING 16166
 // Units: h06A (Smitty), Tip (Tooltip - Basic)
 {
 Build Smitty
-}
-
-STRING 16167
-{
-In truth, it was I who was betrayed. 
-}
-
-STRING 16168
-{
-Illidan
-}
-
-STRING 16169
-{
-Still I am hunted, still I am hated. 
-}
-
-STRING 16170
-{
-Illidan
-}
-
-STRING 16171
-{
-Now my blind eyes see what others cannot. 
-
-}
-
-STRING 16172
-{
-Illidan
-}
-
-STRING 16173
-{
-That sometimes the hand of fate must be forced!
 }
 
 STRING 16174
@@ -104954,19 +104267,6 @@ STRING 17486
 // Abilities: A07A (Dispel Magic), EditorSuffix (Editor Suffix)
 {
 (Goblin)
-}
-
-STRING 17487
-{
-You are playing as the horrifying |cff008080Black Empire|r.
-
-You are cut off in a horrible alternate world, Ny'alotha.
-
-To exit it, you need to first create 3 Obelisks at 3 points in Azeroth: Storm Peaks, Twilight Highlands and Tanaris, in that order. 
-
-Use your Heralds to summon the Obelisk. Move them to the corners of Ny'alotha to move them to Azeroth.
-
-While summoning the Obelisks, you can temporarily send your armies through the portals into Azeroth. But until all 3 Obelisks are summoned, your units will all return to Ny'alotha when the summoning is over.
 }
 
 STRING 17488
