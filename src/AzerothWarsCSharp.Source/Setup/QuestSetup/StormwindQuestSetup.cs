@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       stormwind.StartingQuest = newQuest;
       //Early duel
       stormwind.AddQuest(new QuestLakeshire(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nogl"))));
-      stormwind.AddQuest(new QuestGoldshire(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_HOGGER)));
+      stormwind.AddQuest(new QuestGoldshire(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_N021_HOGGER)));
       stormwind.AddQuest(new QuestStormwindCity());
       stormwind.AddQuest(new QuestNethergarde());
       //Misc
@@ -26,9 +26,9 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       stormwind.AddQuest(new QuestHonorHold(
         new List<unit>
         {
-          PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_HONOR_HOLD_ARATHOR),
+          PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_H05Z_HONOR_HOLD_ARATHOR),
           PreplacedUnitSystem.GetUnitByUnitType(FourCC("hbla")),
-          PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_DANATH_TROLLBANE_ARATHOR_DEMI),
+          PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_H03W_DANATH_TROLLBANE_ARATHOR_DEMI),
           PreplacedUnitSystem.GetUnitByUnitType(FourCC("hgtw")),
           PreplacedUnitSystem.GetUnitByUnitType(FourCC("hars"))
         }

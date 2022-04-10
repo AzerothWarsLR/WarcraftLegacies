@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       _questItemAnyUnitInRect = new QuestItemAnyUnitInRect(Regions.Stromgarde.Rect, "Stromgarde", true);
       AddQuestItem(_questItemAnyUnitInRect);
       AddQuestItem(new QuestItemSelfExists());
-      ResearchId = Constants.UPGRADE_QUEST_COMPLETED_STROMGARDE_STORMWIND;
+      ResearchId = Constants.UPGRADE_R01M_QUEST_COMPLETED_STROMGARDE_STORMWIND;
     }
 
     protected override string CompletionPopup => "Galen Trollbane has pledged his forces to Stormwind's cause.";

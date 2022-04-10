@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Setup
   {
     public static void Setup()
     {
-      var warStompCairne = new Stomp(Constants.ABILITY_WAR_STOMP_PINK_CAIRNE_AZGALOR)
+      var warStompCairne = new Stomp(Constants.ABILITY_A0WM_WAR_STOMP_PINK_CAIRNE_AZGALOR)
       {
         Radius = 300,
         DamageBase = 20,
@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(warStompCairne);
 
-      var warStompImmoltar = new Stomp(Constants.ABILITY_WAR_STOMP_IMMOLTAR)
+      var warStompImmoltar = new Stomp(Constants.ABILITY_A0LU_WAR_STOMP_IMMOLTAR)
       {
         Radius = 200,
         DamageBase = 9000,
@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(warStompImmoltar);
 
-      var warStompKazzak = new Stomp(Constants.ABILITY_WAR_STOMP_BLUE_DOOM_GUARD_TEAL_KAZZAK)
+      var warStompKazzak = new Stomp(Constants.ABILITY_A0AW_WAR_STOMP_BLUE_DOOM_GUARD_TEAL_KAZZAK)
       {
         Radius = 300,
         DamageBase = 25,
@@ -40,7 +40,7 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(warStompKazzak);
 
-      var thunderClap = new Stomp(Constants.ABILITY_CONSECRATION_LORDAERON_UTHER)
+      var thunderClap = new Stomp(Constants.ABILITY_A0WE_CONSECRATION_LORDAERON_UTHER)
       {
         Radius = 225,
         DamageBase = 65,
@@ -81,9 +81,9 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(massEnrage);
 
-      var massFrostArmor = new MassAnySpell(Constants.ABILITY_MASS_ICE_ARMOR_WARSONG_GAHZ_RILLA)
+      var massFrostArmor = new MassAnySpell(Constants.ABILITY_A0H3_MASS_ICE_ARMOR_WARSONG_GAHZ_RILLA)
       {
-        DummyAbilityId = Constants.ABILITY_MASS_ICE_ARMOR_WARSONG_GAHZ_RILLA_DUMMY,
+        DummyAbilityId = Constants.ABILITY_A0H3_MASS_ICE_ARMOR_WARSONG_GAHZ_RILLA,
         DummyAbilityOrderString = "frostarmor",
         Radius = 200,
         CastFilter = CastFilters.IsTargetAllyAndAlive,
@@ -91,9 +91,9 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(massFrostArmor);
 
-      var scattershot = new MassAnySpell(Constants.ABILITY_SCATTERSHOT_KUL_TIRAS_LADY_ASHVANE_DUMMY)
+      var scattershot = new MassAnySpell(Constants.ABILITY_A0GP_SCATTERSHOT_KUL_TIRAS_LADY_ASHVANE)
       {
-        DummyAbilityId = Constants.ABILITY_SCATTERSHOT_KUL_TIRAS_LADY_ASHVANE_DUMMY,
+        DummyAbilityId = Constants.ABILITY_A0GL_SCATTERSHOT_KUL_TIRAS_LADY_ASHVANE_DUMMY,
         DummyAbilityOrderString = "thunderbolt",
         Radius = 250,
         CastFilter = CastFilters.IsTargetEnemyAndAlive,
@@ -101,9 +101,9 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(scattershot);
 
-      var massBanish = new MassAnySpell(Constants.ABILITY_MASS_BANISH_QUEL_THALAS_KAEL_THAS)
+      var massBanish = new MassAnySpell(Constants.ABILITY_A0FD_MASS_BANISH_QUEL_THALAS_KAEL_THAS)
       {
-        DummyAbilityId = Constants.ABILITY_MASS_BANISH_QUEL_THALAS_KAEL_THAS_DUMMY_CASTER,
+        DummyAbilityId = Constants.ABILITY_A0FE_MASS_BANISH_QUEL_THALAS_KAEL_THAS_DUMMY_CASTER,
         DummyAbilityOrderString = "banish",
         Radius = 250,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
@@ -111,17 +111,17 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(massBanish);
 
-      var thunderFists = new SpellOnAttack(Constants.ABILITY_THUNDER_FISTS_CHO_GALL)
+      var thunderFists = new SpellOnAttack(Constants.ABILITY_A0LN_THUNDER_FISTS_CHO_GALL)
       {
-        DummyAbilityId = Constants.ABILITY_THUNDER_FISTS_CHO_GALL_DUMMY_CAST,
+        DummyAbilityId = Constants.ABILITY_A024_THUNDER_FISTS_CHO_GALL_DUMMY_CAST,
         DummyOrderString = "forkedlightning",
         ProcChance = 0.15f
       };
       SpellSystem.Register(thunderFists);
 
-      var seismicShard = new MassAnySpell(Constants.ABILITY_SEISMIC_SHARD_AZIL)
+      var seismicShard = new MassAnySpell(Constants.ABILITY_A0OD_SEISMIC_SHARD_AZIL)
       {
-        DummyAbilityId = Constants.ABILITY_SEISMIC_SHARD_AZIL_DUMMY,
+        DummyAbilityId = Constants.ABILITY_A0OE_SEISMIC_SHARD_AZIL_DUMMY,
         DummyAbilityOrderString = "thunderbolt",
         Radius = 250,
         CastFilter = CastFilters.IsTargetEnemyAndAlive,
@@ -129,9 +129,9 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(seismicShard);
 
-      var elunesGaze = new MassAnySpell(Constants.ABILITY_ELUNE_S_GAZE_SENTINELS)
+      var elunesGaze = new MassAnySpell(Constants.ABILITY_A0VX_ELUNE_S_GAZE_SENTINELS)
       {
-        DummyAbilityId = Constants.ABILITY_INVISIBILITY_LB,
+        DummyAbilityId = Constants.ABILITY_A0VY_INVISIBILITY_LB,
         DummyAbilityOrderString = "invisibility",
         Radius = 350,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
@@ -139,7 +139,7 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(elunesGaze);
 
-      var massSimulacrum = new MassSimulacrum(Constants.ABILITY_MASS_SIMULACRUM_ORANGE_ANTONIDAS)
+      var massSimulacrum = new MassSimulacrum(Constants.ABILITY_A0DG_MASS_SIMULACRUM_ORANGE_ANTONIDAS)
       {
         Radius = 150,
         CountBase = 2,
@@ -156,14 +156,14 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(massSimulacrum);
 
-      var bombingRun = new ChannelAnySpell(Constants.ABILITY_BOMBING_RUN_DARK_GREEN)
+      var bombingRun = new ChannelAnySpell(Constants.ABILITY_A0S1_BOMBING_RUN_DARK_GREEN)
       {
         DummyAbilityId = FourCC("A0S1"),
         DummyAbilityOrderString = "locustswarm"
       };
       SpellSystem.Register(bombingRun);
 
-      var inspireMadness = new InspireMadness(Constants.ABILITY_INSPIRE_MADNESS_LEGION_TICHONDRIUS)
+      var inspireMadness = new InspireMadness(Constants.ABILITY_A10M_INSPIRE_MADNESS_LEGION_TICHONDRIUS)
       {
         Radius = 400,
         CountBase = 2,
@@ -176,7 +176,7 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(inspireMadness);
 
-      var summonGraniteGolems = new SummonUnits(Constants.ABILITY_SUMMON_GRANITE_GOLEMS_QUEL_THALAS_SUNWELL)
+      var summonGraniteGolems = new SummonUnits(Constants.ABILITY_A0EP_SUMMON_GRANITE_GOLEMS_QUEL_THALAS_SUNWELL)
       {
         SummonUnitTypeId = FourCC("nggr"),
         SummonCount = 4,
@@ -187,7 +187,7 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(summonGraniteGolems);
 
-      var solarJudgement = new SolarJudgementSpell(Constants.ABILITY_SOLAR_JUDGEMENT_LORDAERON_ARTHAS)
+      var solarJudgement = new SolarJudgementSpell(Constants.ABILITY_A01F_SOLAR_JUDGEMENT_LORDAERON_ARTHAS)
       {
         DamageBase = 20,
         DamageLevel = 20,
@@ -202,15 +202,15 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(solarJudgement);
 
-      var resurgentFlameStrike = new ResurgentSpell(Constants.ABILITY_RESURGENT_FLAME_STRIKE_QUEL_THALAS_KAEL_THAS,
-        Constants.ABILITY_RESURGENT_FLAME_STRIKE_QUEL_THALAS_KAEL_THAS_DUMMY, "flamestrike")
+      var resurgentFlameStrike = new ResurgentSpell(Constants.ABILITY_A04H_RESURGENT_FLAME_STRIKE_QUEL_THALAS_KAEL_THAS,
+        Constants.ABILITY_A0F9_RESURGENT_FLAME_STRIKE_QUEL_THALAS_KAEL_THAS_DUMMY, "flamestrike")
       {
         Duration = 14,
         Interval = 7,
       };
       SpellSystem.Register(resurgentFlameStrike);
 
-      var executeWarsong = new Execute(Constants.UNIT_RAVAGER_WARSONG);
+      var executeWarsong = new Execute(Constants.UNIT_O021_RAVAGER_WARSONG);
       SpellSystem.Register(executeWarsong);
 
       var executeBlackEmpire = new Execute(FourCC("n0B4"));

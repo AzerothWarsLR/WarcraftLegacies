@@ -11,9 +11,9 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       var twilight = TwilightSetup.FACTION_TWILIGHT;
       twilight.StartingQuest = twilight.AddQuest(new QuestDragonmawPort());
       twilight.AddQuest(new QuestGrimBatol(
-        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_GRIM_BATOL_TUNNELS),
-        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_GRIM_BATOL_TUNNELS),
-        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_GRIM_BATOL_CREEP)));
+        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_N08R_GRIM_BATOL_TUNNELS),
+        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_N08R_GRIM_BATOL_TUNNELS),
+        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_H01Z_GRIM_BATOL_CREEP)));
       twilight.AddQuest(new QuestSpreadTheWord());
       twilight.AddQuest(new QuestThunderfury());
       twilight.AddQuest(new QuestFeludius());

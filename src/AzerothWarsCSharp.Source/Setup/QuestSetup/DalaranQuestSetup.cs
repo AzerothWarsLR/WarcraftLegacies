@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       //Early duel
       dalaran.AddQuest(questSouthshore);
       dalaran.StartingQuest = questSouthshore;
-      dalaran.AddQuest(new QuestShadowfang(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_WORGEN_GILNEAS)));
+      dalaran.AddQuest(new QuestShadowfang(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_O02J_WORGEN_GILNEAS)));
       dalaran.AddQuest(new QuestDalaran());
       dalaran.AddQuest(new QuestJainaSoulGem());
       dalaran.AddQuest(new QuestBlueDragons());

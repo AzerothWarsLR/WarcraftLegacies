@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
           PreplacedUnitSystem.GetUnitByUnitType(FourCC("o02P")),
           PreplacedUnitSystem.GetUnitByUnitType(FourCC("o02P"))
         },
-        TheExodar = PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_THE_EXODAR)
+        TheExodar = PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_H09W_THE_EXODAR)
       };
       draenei.AddQuest(questExiled);
       draenei.StartingQuest = questExiled;

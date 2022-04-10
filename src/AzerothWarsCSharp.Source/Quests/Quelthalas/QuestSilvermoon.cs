@@ -16,13 +16,13 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     {
       _elvenRunestone = elvenRunestone;
       AddQuestItem(new QuestItemKillUnit(
-        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_CHIEFTAN_OF_THE_AMANI_TRIBE_CREEP_ZUL_AMAN)));
+        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_O00O_CHIEFTAN_OF_THE_AMANI_TRIBE_CREEP_ZUL_AMAN)));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01V"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01L"))));
       AddQuestItem(new QuestItemUpgrade(FourCC("h033"), FourCC("h033")));
       AddQuestItem(new QuestItemExpire(1480));
       AddQuestItem(new QuestItemSelfExists());
-      ResearchId = Constants.UPGRADE_QUEST_COMPLETED_THE_SIEGE_OF_SILVERMOON;
+      ResearchId = Constants.UPGRADE_R02U_QUEST_COMPLETED_THE_SIEGE_OF_SILVERMOON;
     }
 
     protected override string CompletionPopup =>

@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       "ReplaceableTextures\\CommandButtons\\BTNRaider.blp")
     {
       AddQuestItem(new QuestItemLegendDead(LegendWarsong.LegendStonemaul));
-      ResearchId = Constants.UPGRADE_QUEST_COMPLETED_GREEN_SKINNED_BRUTES_SENTINELS;
+      ResearchId = Constants.UPGRADE_R007_QUEST_COMPLETED_GREEN_SKINNED_BRUTES_SENTINELS;
     }
     
     protected override string CompletionPopup =>

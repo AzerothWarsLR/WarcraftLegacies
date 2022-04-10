@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08T"))));
       AddQuestItem(new QuestItemExpire(1428));
       AddQuestItem(new QuestItemSelfExists());
-      ResearchId = Constants.UPGRADE_QUEST_COMPLETED_THE_CURSED_FORTRESS;
+      ResearchId = Constants.UPGRADE_R06Y_QUEST_COMPLETED_THE_CURSED_FORTRESS;
     }
     
     //Todo: bad flavour

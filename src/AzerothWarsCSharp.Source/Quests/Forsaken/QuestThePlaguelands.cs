@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     protected override void OnComplete()
     {
-      Holder.ModObjectLimit(Constants.UNIT_VAL_KYR_FORSAKEN, 2);
+      Holder.ModObjectLimit(Constants.UNIT_U01V_VAL_KYR_FORSAKEN, 2);
       AdjustPlayerStateBJ(500, Holder.Player, PLAYER_STATE_RESOURCE_GOLD);
     }
   }

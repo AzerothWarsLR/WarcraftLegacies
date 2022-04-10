@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       _scarletMonastery = scarletMonastery;
       AddQuestItem(new QuestItemResearch(UnleashTheCrusadeResearchId, FourCC("h00T")));
       AddQuestItem(new QuestItemSelfExists());
-      ResearchId = Constants.UPGRADE_QUEST_COMPLETED_UNLEASH_THE_CRUSADE;
+      ResearchId = Constants.UPGRADE_R03F_QUEST_COMPLETED_UNLEASH_THE_CRUSADE;
       Global = true;
     }
 

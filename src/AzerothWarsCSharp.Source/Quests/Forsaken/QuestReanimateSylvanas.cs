@@ -19,7 +19,7 @@ public class QuestReanimateSylvanas : QuestData
   }
 
   protected override string RewardDescription => "You can summon Sylvanas from the " +
-                                                 GetObjectName(Constants.UNIT_ALTAR_OF_THE_QUEEN_FORSAKEN);
+                                                 GetObjectName(Constants.UNIT_U010_ALTAR_OF_THE_QUEEN_FORSAKEN);
 
   protected override string CompletionPopup =>
     "Quel'thalas has fallen to the Scourge's onslaught. The Sunwell itself has been corrupted, cutting the quel'dorei off from the source of their longevity. Sylvanas is denied a clean death following her tenacious defense, and she becomes the first of the High Elven Banshees.";

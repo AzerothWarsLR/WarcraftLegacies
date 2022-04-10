@@ -9,16 +9,16 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
   {
     public static void Setup()
     {
-      QuestSpiderWar questSpiderWar = new(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_QUEEN_NEZAR_AZRET));
+      QuestSpiderWar questSpiderWar = new(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_N074_QUEEN_NEZAR_AZRET));
       QuestKelthuzad questKelthuzad = new();
       QuestDrakUnlock questDrakUnlock = new();
       QuestPlague questPlague = new();
-      QuestSapphiron questSapphiron = new(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_SAPPHIRON_CREEP));
+      QuestSapphiron questSapphiron = new(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_UBDR_SAPPHIRON_CREEP));
       QuestCorruptArthas questCorruptArthas = new();
-      QuestNaxxramas questNaxxramas = new(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_NAXXRAMAS_SCOURGE));
+      QuestNaxxramas questNaxxramas = new(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_E013_NAXXRAMAS_SCOURGE));
       QuestCivilWar questCivilWar = new();
       QuestLichKingArthas questLichKingArthas =
-        new(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_UTGARDE_KEEP_SCOURGE));
+        new(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE));
 
       questNaxxramas.AddQuestItem(new QuestItemCompleteQuest(questKelthuzad));
 

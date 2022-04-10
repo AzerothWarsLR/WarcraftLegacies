@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       UnitRemoveAbilityBJ(FourCC("A0RB"), LegendDalaran.LegendJaina.Unit);
       AddSpecialEffectTarget("war3mapImported\\Soul Armor Cosmic.mdx", whichUnit, "chest");
       BlzSetUnitName(whichUnit, "Guardian of Tirisfal");
-      UnitAddAbility(whichUnit, Constants.ABILITY_GUARDIAN_OF_TIRISFAL_DALARAN_GUARDIAN_OF_TIRISFAL);
+      UnitAddAbility(whichUnit, Constants.ABILITY_A0BX_GUARDIAN_OF_TIRISFAL_DALARAN_GUARDIAN_OF_TIRISFAL);
       BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0, 5); //Chaos
       AddHeroAttributes(whichUnit, 0, 0, 20);
       LegendDalaran.LegendJaina.ClearUnitDependencies();

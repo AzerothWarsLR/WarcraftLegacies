@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       {
         UnitRescue(unit, Holder.Player);
       }
-      Holder.ModObjectLimit(Constants.UNIT_DANATH_TROLLBANE_ARATHOR_DEMI, 1);
+      Holder.ModObjectLimit(Constants.UNIT_H03W_DANATH_TROLLBANE_ARATHOR_DEMI, 1);
       //Set animations of doodads within Honor Hold
       SetDoodadAnimationRectBJ("hide", FourCC("ISrb"), Regions.HonorHold.Rect);
       SetDoodadAnimationRectBJ("hide", FourCC("LSst"), Regions.HonorHold.Rect);

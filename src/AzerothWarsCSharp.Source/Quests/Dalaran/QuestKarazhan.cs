@@ -21,9 +21,9 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     protected override void OnAdd()
     {
-      Holder.ModObjectLimit(Constants.UPGRADE_RAIN_AN_AMALGAM_DALARAN_KARAZHAN, Faction.UNLIMITED);
-      Holder.ModObjectLimit(Constants.UPGRADE_METHODS_OF_NEGATION_DALARAN_KARAZHAN, Faction.UNLIMITED);
-      Holder.ModObjectLimit(Constants.UPGRADE_A_TREATISE_ON_BARRIERS_DALARAN_KARAZHAN, Faction.UNLIMITED);
+      Holder.ModObjectLimit(Constants.UPGRADE_R020_RAIN_AN_AMALGAM_DALARAN_KARAZHAN, Faction.UNLIMITED);
+      Holder.ModObjectLimit(Constants.UPGRADE_R03M_METHODS_OF_NEGATION_DALARAN_KARAZHAN, Faction.UNLIMITED);
+      Holder.ModObjectLimit(Constants.UPGRADE_R01B_A_TREATISE_ON_BARRIERS_DALARAN_KARAZHAN, Faction.UNLIMITED);
     }
   }
 }

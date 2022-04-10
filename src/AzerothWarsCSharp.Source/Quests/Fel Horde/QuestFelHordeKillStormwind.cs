@@ -6,9 +6,9 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 {
   public sealed class QuestFelHordeKillStormwind : QuestData
   {
-    private const int UNITTYPE_ID = Constants.UNIT_FEL_DEATH_KNIGHT_FEL_HORDE_ELITE_TIER;
+    private const int UNITTYPE_ID = Constants.UNIT_N086_FEL_DEATH_KNIGHT_FEL_HORDE_ELITE_TIER;
     private const int UNIT_LIMIT = 6;
-    private const int BUILDING_ID = Constants.UNIT_FORTRESS_FEL_HORDE;
+    private const int BUILDING_ID = Constants.UNIT_O030_FORTRESS_FEL_HORDE;
 
     protected override string CompletionPopup =>
       "Stormwind's annihilation has left behind the corpses of thousands of elite knights. As occurred during the Second War, these corpses have been filled with the souls of slain Shadow Council members, recreating the indominatable order of Death Knights.";
@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       "ReplaceableTextures\\CommandButtons\\BTNAcolyte.blp")
     {
       AddQuestItem(new QuestItemLegendDead(LegendStormwind.LegendStormwindkeep));
-      ResearchId = Constants.UPGRADE_QUEST_COMPLETED_THOSE_WHO_CAME_BEFORE_FEL_HORDE;
+      ResearchId = Constants.UPGRADE_R05Z_QUEST_COMPLETED_THOSE_WHO_CAME_BEFORE_FEL_HORDE;
     }
   }
 }

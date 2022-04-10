@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       var kultiras = KultirasSetup.FACTION_KULTIRAS;
 
       kultiras.StartingQuest = kultiras.AddQuest(new QuestBoralus());
-      kultiras.AddQuest(new QuestUnlockShip(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_PROUDMOORE_FLAGSHIP_KUL_TIRAS)));
+      kultiras.AddQuest(new QuestUnlockShip(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS)));
       kultiras.AddQuest(new QuestSafeSea());
       kultiras.AddQuest(new QuestTheramore());
       kultiras.AddQuest(new QuestBeyondPortal());

@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 {
   public sealed class QuestDruidsKillWarsong : QuestData
   {
-    private const int UNITTYPE_ID = Constants.UNIT_SIEGE_ANCIENT_DRUIDS_ELITE;
+    private const int UNITTYPE_ID = Constants.UNIT_E012_SIEGE_ANCIENT_DRUIDS_ELITE;
 
     public QuestDruidsKillWarsong() : base("Enemies at the Gate",
       "Arriving from another planet && across the seas of Azeroth, the Orcs of the Warsong Clan have arrived to ravage the wilderness && consume its bounty. They must be stopped.",

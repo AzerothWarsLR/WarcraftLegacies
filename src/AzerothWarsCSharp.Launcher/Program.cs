@@ -72,7 +72,7 @@ namespace AzerothWarsCSharp.Launcher
         case ConsoleKey.D1:
           ConstantGenerator.Run(BASE_MAP_PATH, SOURCE_CODE_PROJECT_FOLDER_PATH, new ConstantGeneratorOptions
           {
-            IncludeCode = false
+            IncludeCode = true
           });
           break;
         case ConsoleKey.D2:
