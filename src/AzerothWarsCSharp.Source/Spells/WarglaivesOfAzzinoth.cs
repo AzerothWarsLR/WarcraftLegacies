@@ -3,7 +3,7 @@ namespace AzerothWarsCSharp.Source.Spells
   public class WarglaivesOfAzzinoth{
 
   
-    private const int ABIL_ID = FourCC(A0YW);
+    private const int ABIL_ID = FourCC("A0YW");
 
     private const float RADIUS = 150;
     private const float DAMAGE_BASE = 4;
@@ -50,15 +50,15 @@ namespace AzerothWarsCSharp.Source.Spells
     }
 
     public static void Setup( ){
-      RegisterUnitTypeInflictsDamageAction(FourCC(Eill),  Damaging);
-      RegisterUnitTypeInflictsDamageAction(FourCC(Eidm),  Damaging);
-      RegisterUnitTypeInflictsDamageAction(FourCC(Eevm),  Damaging);
-      RegisterUnitTypeInflictsDamageAction(FourCC(Eilm),  Damaging);
-      RegisterUnitTypeInflictsDamageAction(FourCC(Eevi),  Damaging);
-      RegisterUnitTypeInflictsDamageAction(FourCC(E00F),  Damaging);
-      RegisterUnitTypeInflictsDamageAction(FourCC(E00G),  Damaging);
-      RegisterUnitTypeInflictsDamageAction(FourCC(E00E),  Damaging);
-      RegisterUnitTypeInflictsDamageAction(FourCC(E00D),  Damaging);
+      RegisterUnitTypeInflictsDamageAction(FourCC("Eill"),  Damaging);
+      RegisterUnitTypeInflictsDamageAction(FourCC("Eidm"),  Damaging);
+      RegisterUnitTypeInflictsDamageAction(FourCC("Eevm"),  Damaging);
+      RegisterUnitTypeInflictsDamageAction(FourCC("Eilm"),  Damaging);
+      RegisterUnitTypeInflictsDamageAction(FourCC("Eevi"),  Damaging);
+      RegisterUnitTypeInflictsDamageAction(FourCC("E00F"),  Damaging);
+      RegisterUnitTypeInflictsDamageAction(FourCC("E00G"),  Damaging);
+      RegisterUnitTypeInflictsDamageAction(FourCC("E00E"),  Damaging);
+      RegisterUnitTypeInflictsDamageAction(FourCC("E00D"),  Damaging);
     }
 
   }

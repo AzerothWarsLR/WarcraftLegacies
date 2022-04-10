@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.Researches.Stormwind
   public class TierMagesOfStromgarde{
 
   
-    private const int UNITTYPE_PORTAL = FourCC(n09P);
+    private const int UNITTYPE_PORTAL = FourCC("n09P");
     private const float WAYGATE_OFFSET = 100;
   
 
@@ -27,13 +27,13 @@ namespace AzerothWarsCSharp.Source.Researches.Stormwind
     }
 
     private static void Research( ){
-      StormwindSetup.Stormwind.ModObjectLimit(FourCC(R03X), Faction.UNLIMITED)       ;//High Sorcerer Andromath
-      StormwindSetup.Stormwind.ModObjectLimit(FourCC(R03Y), Faction.UNLIMITED)       ;//Katrana Prestor
+      StormwindSetup.Stormwind.ModObjectLimit(FourCC("R03X"), Faction.UNLIMITED)       ;//High Sorcerer Andromath
+      StormwindSetup.Stormwind.ModObjectLimit(FourCC("R03Y"), Faction.UNLIMITED)       ;//Katrana Prestor
       EnablePortals();
     }
 
     public static void Setup( ){
-      RegisterResearchFinishedAction(FourCC(R03V),  Research);
+      RegisterResearchFinishedAction(FourCC("R03V"),  Research);
     }
 
   }

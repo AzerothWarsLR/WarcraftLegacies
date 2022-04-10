@@ -3,7 +3,7 @@ namespace AzerothWarsCSharp.Source.Spells
   public class EmpowerIntellect{
 
   
-    private const int BUFF_ID = FourCC(B069);
+    private const int BUFF_ID = FourCC("B069");
     private const float REFUND_MULT = 075;
   
 

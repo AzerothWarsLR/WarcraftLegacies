@@ -3,7 +3,7 @@ namespace AzerothWarsCSharp.Source.Researches.Stormwind
   public class TierHighSorcererAndromath{
 
   
-    private const int DEMI_UNITTYPE_ID = FourCC(h05X);
+    private const int DEMI_UNITTYPE_ID = FourCC("h05X");
   
 
     private static void Research( ){
@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Researches.Stormwind
     }
 
     public static void Setup( ){
-      RegisterResearchFinishedAction(FourCC(R03X),  Research);
+      RegisterResearchFinishedAction(FourCC("R03X"),  Research);
       StormwindSetup.Stormwind.ModObjectLimit(DEMI_UNITTYPE_ID, 1);
     }
 

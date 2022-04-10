@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.Researches.Ironforge
   public class DeeprunTram{
 
   
-    private const int RESEARCH_ID = FourCC(R014);
+    private const int RESEARCH_ID = FourCC("R014");
   
 
     private static void Transfer( ){

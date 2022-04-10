@@ -3,7 +3,7 @@ namespace AzerothWarsCSharp.Source.Researches.Stormwind
   public class TierKatranaPrestor{
 
   
-    private const int DEMI_UNITTYPE_ID = FourCC(n06F);
+    private const int DEMI_UNITTYPE_ID = FourCC("n06F");
   
 
     private static void Research( ){
@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Researches.Stormwind
     }
 
     public static void Setup( ){
-      RegisterResearchFinishedAction(FourCC(R03Y),  Research);
+      RegisterResearchFinishedAction(FourCC("R03Y"),  Research);
       StormwindSetup.Stormwind.ModObjectLimit(DEMI_UNITTYPE_ID, 1);
     }
 

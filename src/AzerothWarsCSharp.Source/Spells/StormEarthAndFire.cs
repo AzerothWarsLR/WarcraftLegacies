@@ -3,11 +3,11 @@ namespace AzerothWarsCSharp.Source.Spells
   public class StormEarthAndFire{
 
   
-    private const int  ABIL_ID = FourCC(A0HM);
+    private const int  ABIL_ID = FourCC("A0HM");
 
-    private const int  UNIT_TYPE_1 = FourCC(npn4);
-    private const int  UNIT_TYPE_2 = FourCC(npn5);
-    private const int  UNIT_TYPE_3 = FourCC(npn6);
+    private const int  UNIT_TYPE_1 = FourCC("npn4");
+    private const int  UNIT_TYPE_2 = FourCC("npn5");
+    private const int  UNIT_TYPE_3 = FourCC("npn6");
     private const float     DURATION = 60    ;//Summoned unit duration
 
     private const string   EFFECT = "war3mapImported\\Soul Discharge Blue.mdx";
