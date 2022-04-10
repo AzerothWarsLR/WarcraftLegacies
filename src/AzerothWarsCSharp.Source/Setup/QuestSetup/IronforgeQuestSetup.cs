@@ -1,20 +1,24 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.Source.Quests.Ironforge;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
   public class IronforgeQuestSetup{
 
-    public static void Setup( ){
+    public static void Setup( )
+    {
+      var ironforge = IronforgeSetup.FACTION_IRONFORGE;
+      
       //Setup
-      QuestData newQuest = FACTION_IRONFORGE.AddQuest(QuestThelsamar.create());
-      FACTION_IRONFORGE.StartingQuest = newQuest;
+      QuestData newQuest = ironforge.AddQuest(new QuestThelsamar());
+      ironforge.StartingQuest = newQuest;
       //Early duel
-      FACTION_IRONFORGE.AddQuest(QuestDunMorogh.create());
-      FACTION_IRONFORGE.AddQuest(QuestDominion.create());
-      FACTION_IRONFORGE.AddQuest(QuestGnomeregan.create());
-      FACTION_IRONFORGE.AddQuest(QuestDarkIron.create());
-      FACTION_IRONFORGE.AddQuest(QuestWildhammer.create());
+      ironforge.AddQuest(new QuestDunMorogh());
+      ironforge.AddQuest(new QuestDominion());
+      ironforge.AddQuest(new QuestGnomeregan());
+      ironforge.AddQuest(new QuestDarkIron());
+      ironforge.AddQuest(new QuestWildhammer());
       //Misc
     }
 

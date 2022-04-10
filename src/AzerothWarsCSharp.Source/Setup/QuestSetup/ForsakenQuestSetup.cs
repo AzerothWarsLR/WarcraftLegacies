@@ -1,18 +1,21 @@
 using AzerothWarsCSharp.Source.Quests.Forsaken;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
   public class ForsakenQuestSetup{
 
-    public static void Setup( ){
-
-      FACTION_FORSAKEN.StartingQuest = FACTION_FORSAKEN.AddQuest(QuestScholomanceBuild.create());
-      FACTION_FORSAKEN.AddQuest(QuestReanimateSylvanas.create());
-      FACTION_FORSAKEN.AddQuest(QuestUndercity.create());
-      FACTION_FORSAKEN.AddQuest(QuestThePlaguelands.create());
-      FACTION_FORSAKEN.AddQuest(QuestRetakeSunwell.create());
-      FACTION_FORSAKEN.AddQuest(QuestTheNine.create());
-      FACTION_FORSAKEN.AddQuest(QuestTakeRevenge.create());
+    public static void Setup( )
+    {
+      var forsaken = ForsakenSetup.FACTION_FORSAKEN;
+      
+      forsaken.StartingQuest = forsaken.AddQuest(new QuestScholomanceBuild());
+      forsaken.AddQuest(new QuestReanimateSylvanas());
+      forsaken.AddQuest(new QuestUndercity(null, null));
+      forsaken.AddQuest(new QuestThePlaguelands());
+      forsaken.AddQuest(new QuestRetakeSunwell());
+      forsaken.AddQuest(new QuestTheNine());
+      forsaken.AddQuest(new QuestTakeRevenge());
 
 
     }

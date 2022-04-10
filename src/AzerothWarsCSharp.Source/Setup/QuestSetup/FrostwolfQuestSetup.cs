@@ -1,21 +1,25 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.Source.Quests.Frostwolf;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
   public class FrostwolfQuestSetup{
 
-    public static void Setup( ){
+    public static void Setup( )
+    {
+      var frostwolf = FrostwolfSetup.FACTION_FROSTWOLF;
+      
       //Setup
-      QuestData newQuest = FACTION_FROSTWOLF.AddQuest(QuestSeaWitch.create());
-      FACTION_FROSTWOLF.StartingQuest = newQuest;
-      FACTION_FROSTWOLF.AddQuest(QuestThunderBluff.create());
-      FACTION_FROSTWOLF.AddQuest(QuestStonemaul.create());
+      QuestData newQuest = frostwolf.AddQuest(new QuestSeaWitch());
+      frostwolf.StartingQuest = newQuest;
+      frostwolf.AddQuest(new QuestThunderBluff(Regions.ThunderBluff.Rect));
+      frostwolf.AddQuest(new QuestStonemaul());
       //Starting duel
-      FACTION_FROSTWOLF.AddQuest(QuestDrektharsSpellbook.create());
-      FACTION_FROSTWOLF.AddQuest(QuestScepterOfTheQueenWarsong.create());
+      frostwolf.AddQuest(new QuestDrektharsSpellbook());
+      //frostwolf.AddQuest(new QuestScepterOfTheQueenWarsong());
       //Misc
-      FACTION_FROSTWOLF.AddQuest(QuestFreeNerzhul.create());
+      frostwolf.AddQuest(new QuestFreeNerzhul());
     }
 
   }

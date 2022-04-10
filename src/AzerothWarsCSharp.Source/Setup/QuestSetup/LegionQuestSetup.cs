@@ -8,15 +8,15 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 
     public static void Setup( ){
       //Early duel
-      QuestData newQuest = LegionSetup.FactionLegion.AddQuest(QuestArgusControl.create());
+      QuestData newQuest = LegionSetup.FactionLegion.AddQuest(new QuestArgusControl());
       LegionSetup.FactionLegion.StartingQuest = newQuest;
-      LegionSetup.FactionLegion.AddQuest(QuestEmbassy.create());
-      LegionSetup.FactionLegion.AddQuest(QuestLegionCaptureSunwell.create());
-      LegionSetup.FactionLegion.AddQuest(QuestLegionKillLordaeron.create());
+      LegionSetup.FactionLegion.AddQuest(new QuestEmbassy());
+      LegionSetup.FactionLegion.AddQuest(new QuestLegionCaptureSunwell());
+      LegionSetup.FactionLegion.AddQuest(new QuestLegionKillLordaeron());
       //Misc
-      LegionSetup.FactionLegion.AddQuest(QuestSummonLegion.create());
-      LegionSetup.FactionLegion.AddQuest(QuestConsumeTree.create());
-      LegionSetup.FactionLegion.AddQuest(QuestDreadlordInsurgent.create());
+      LegionSetup.FactionLegion.AddQuest(new QuestSummonLegion());
+      LegionSetup.FactionLegion.AddQuest(new QuestConsumeTree());
+      LegionSetup.FactionLegion.AddQuest(new QuestDreadlordInsurgent());
     }
 
   }

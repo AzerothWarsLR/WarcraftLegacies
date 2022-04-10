@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
     }
 
 
-    public QuestJinthaAlor(string title, string desc, string icon) : base("The Ancient Egg",
+    public QuestJinthaAlor() : base("The Ancient Egg",
       "The Vilebranch trolls of Jintha'Alor are controlled by their fear of the Soulflayer's egg, hidden within their shrine. Smash it to gain their loyalty.",
       "ReplaceableTextures\\CommandButtons\\BTNForestTrollShadowPriest.blp")
     {

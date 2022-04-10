@@ -1,19 +1,21 @@
 using AzerothWarsCSharp.Source.Quests.Zandalar;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
   public class TrollQuestSetup{
 
-    public static void Setup( ){
-
-      FACTION_TROLL.StartingQuest = FACTION_TROLL.AddQuest(QuestZandalar.create());
-      //call FACTION_TROLL.AddQuest(QuestGoldenFleet.create())
-      FACTION_TROLL.AddQuest(QuestConquerKul.create());
-      FACTION_TROLL.AddQuest(QuestZulfarrak.create());
-      FACTION_TROLL.AddQuest(QuestZulgurub.create());
-      FACTION_TROLL.AddQuest(QuestGundrak.create());
-      FACTION_TROLL.AddQuest(QuestJinthaAlor.create());
-      FACTION_TROLL.AddQuest(QuestHakkar.create());
+    public static void Setup( )
+    {
+      var zandalar = TrollSetup.FACTION_TROLL;
+      
+      zandalar.StartingQuest = zandalar.AddQuest(new QuestZandalar());
+      zandalar.AddQuest(new QuestConquerKul());
+      zandalar.AddQuest(new QuestZulfarrak());
+      zandalar.AddQuest(new QuestZulgurub());
+      zandalar.AddQuest(new QuestGundrak());
+      zandalar.AddQuest(new QuestJinthaAlor());
+      zandalar.AddQuest(new QuestHakkar());
 
     }
 

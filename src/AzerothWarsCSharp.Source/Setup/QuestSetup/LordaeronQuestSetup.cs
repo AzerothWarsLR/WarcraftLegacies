@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
   public class LordaeronQuestSetup
   {
-    public static QuestData TheAshbringer { get; private set; };
+    public static QuestData TheAshbringer { get; private set; }
 
     public static void Setup()
     {

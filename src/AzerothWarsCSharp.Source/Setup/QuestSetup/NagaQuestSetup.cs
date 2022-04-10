@@ -1,6 +1,7 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.Source.Quests.Naga;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
@@ -15,17 +16,16 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       //Early duel
 
       QuestData chapterThree = new QuestIllidanChapterThree(PreplacedUnitSystem.GetUnitByUnitType(FourCC("n045")));
-      QuestData chapterTwo = QuestIllidanChapterTwo.create(chapterThree);
-      QuestData chapterOne = QuestIllidanChapterOne.create(chapterTwo);
+      QuestData chapterTwo = new QuestIllidanChapterTwo(chapterThree);
+      QuestData chapterOne = new QuestIllidanChapterOne(chapterTwo);
       NagaSetup.FactionNaga.AddQuest(chapterOne);
       NagaSetup.FactionNaga.AddQuest(chapterTwo);
       NagaSetup.FactionNaga.AddQuest(chapterThree);
 
-      EXILE_PATH = QuestExilePath.create();
-      MADNESS_PATH = QuestMadnessPath.create();
-      REDEMPTION_PATH = QuestRedemptionPath.create();
-      CONQUER_BLACK_TEMPLE = QuestBlackTemple.create();
-      KILL_FROZEN_THRONE = QuestFrozenThrone.create();
+      //EXILE_PATH = new QuestExilePath();
+      //REDEMPTION_PATH = new QuestRedemptionPath();
+      CONQUER_BLACK_TEMPLE = new QuestBlackTemple();
+      KILL_FROZEN_THRONE = new QuestFrozenThrone();
 
       chapterTwo.Progress = QuestProgress.Undiscovered;
       chapterThree.Progress = QuestProgress.Undiscovered;

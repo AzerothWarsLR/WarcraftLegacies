@@ -1,21 +1,25 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.Source.Quests.Warsong;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
   public class WarsongQuestSetup{
 
-    public static void Setup( ){
+    public static void Setup( )
+    {
+      var warsong = WarsongSetup.FACTION_WARSONG;
+      
       //Setup
-      FACTION_WARSONG.StartingQuest = FACTION_WARSONG.AddQuest(new QuestLumberQuota());
-      FACTION_WARSONG.AddQuest(new QuestCrossroads());
-      FACTION_WARSONG.AddQuest(new QuestChenStormstout(PreplacedUnitSystem.GetUnitByUnitType(FourCC("Nsjs"))));
-      FACTION_WARSONG.AddQuest(new QuestFountainOfBlood());
+      warsong.StartingQuest = warsong.AddQuest(new QuestLumberQuota());
+      warsong.AddQuest(new QuestCrossroads(Regions.Crossroads.Rect));
+      warsong.AddQuest(new QuestChenStormstout(PreplacedUnitSystem.GetUnitByUnitType(FourCC("Nsjs"))));
+      warsong.AddQuest(new QuestFountainOfBlood());
       //Early duel
-      FACTION_WARSONG.AddQuest(new QuestWarsongKillDruids());
-      FACTION_WARSONG.AddQuest(new QuestMoreWyverns());
+      warsong.AddQuest(new QuestWarsongKillDruids());
+      warsong.AddQuest(new QuestMoreWyverns());
       //Misc
-      FACTION_WARSONG.AddQuest(new QuestWarsongHold());
+      warsong.AddQuest(new QuestWarsongHold());
 
     }
 
