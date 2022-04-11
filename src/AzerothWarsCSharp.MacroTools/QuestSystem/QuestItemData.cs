@@ -39,23 +39,23 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// <summary>
     ///   The file path for the overhead effect to use for this item.
     /// </summary>
-    public string OverheadEffectPath { get; }
+    private string OverheadEffectPath { get; }
 
-    public string MapEffectPath { get; set; }
+    protected string MapEffectPath { get; init; }
 
-    public QuestItemData ParentQuestItem
+    internal QuestItemData ParentQuestItem
     {
       set => _parentQuestItem = value;
     }
 
-    public QuestData ParentQuest { get; set; }
+    internal QuestData ParentQuest { get; set; }
 
-    public questitem QuestItem { get; set; }
+    internal questitem QuestItem { get; set; }
 
     /// <summary>
     ///   Whether or not this can be seen as a bullet point in the quest log.
     /// </summary>
-    public bool ShowsInQuestLog { get; set; } = true;
+    public bool ShowsInQuestLog { get; protected init; } = true;
 
     public Faction Holder => ParentQuest != null ? ParentQuest.Holder : _parentQuestItem?.Holder;
 

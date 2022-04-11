@@ -18,24 +18,31 @@ namespace AzerothWarsCSharp.MacroTools.Factions
     /// </summary>
     public const int UNLIMITED = 200;
 
+    /// <summary>
+    /// The gold cost value of a hero.
+    /// </summary>
     private const int HERO_COST = 100; //For refunding
 
-    private const float
-      REFUND_PERCENT = 100; //How much gold and lumber is refunded from units that get refunded on leave
+    /// <summary>
+    /// How much gold and lumber is refunded from units that get refunded when a player leaves.
+    /// </summary>
+    private const float REFUND_PERCENT = 100;
 
-    private const float XP_TRANSFER_PERCENT = 100; //How much experience is transferred from heroes that leave the game)
+    /// <summary>
+    /// How much experience is transferred from heroes that leave the game.
+    /// </summary>
+    private const float XP_TRANSFER_PERCENT = 100;
 
-    private static readonly Dictionary<string?, Faction> FactionsByName = new();
+    private static readonly Dictionary<string, Faction> FactionsByName = new();
 
-    private readonly int
-      _defeatedResearch; //This upgrade is researched for all players only if this Faction slot is defeated
+    private readonly int _defeatedResearch;
 
     private readonly Dictionary<int, int> _objectLevels = new();
 
     private readonly Dictionary<int, int> _objectLimits = new();
     private readonly List<QuestData> _quests = new();
 
-    private int _undefeatedResearch; //This upgrade is researched for all players only if this Faction is undefeated
+    private int _undefeatedResearch;
 
     private readonly Dictionary<int, int> _unitTypeByCategory = new();
 
@@ -46,8 +53,7 @@ namespace AzerothWarsCSharp.MacroTools.Factions
     private Person? _person;
 
     private string _prefixCol;
-
-    private int _questCount;
+    
     private ScoreStatus _scoreStatus = ScoreStatus.Undefeated;
     private Team? _team;
 
@@ -338,10 +344,8 @@ namespace AzerothWarsCSharp.MacroTools.Factions
     public QuestData AddQuest(QuestData questData)
     {
       questData.Holder = this;
-      _quests[_questCount] = questData;
-      _questCount += 1;
+      _quests.Add(questData);
       if (GetLocalPlayer() == Player) questData.ShowLocal();
-
       questData.ShowSync();
       return questData;
     }

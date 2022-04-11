@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
       Console.WriteLine("Setting up ControlPointSetup...");
       //ControlPointSetup.Setup();
       Console.WriteLine("Setting up AllQuestSetup...");
-      //AllQuestSetup.Setup();
+      AllQuestSetup.Setup();
       Console.WriteLine("Setting up ResearchSetup...");
       //ResearchSetup.Setup();
       Console.WriteLine("Setting up ObserverSetup...");
@@ -44,6 +44,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
       //ControlPointVictory.Setup();
       Console.WriteLine("Setting up IncompatibleTierConfig...");
       //IncompatibleTierConfig.Setup();
+      Console.WriteLine("Setting up FactionMultiboard...");
       FactionMultiboard.Setup();
     }
   }

@@ -354,16 +354,16 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         Progress = QuestProgress.Incomplete;
     }
 
-    public void AddQuestItem(QuestItemData value)
+    public void AddQuestItem(QuestItemData questItem)
     {
-      _questItems.Add(value);
-      if (value.ShowsInQuestLog)
+      _questItems.Add(questItem);
+      if (questItem.ShowsInQuestLog)
       {
-        value.QuestItem = QuestCreateItem(Quest);
-        QuestItemSetDescription(value.QuestItem, value.Description);
+        questItem.QuestItem = QuestCreateItem(Quest);
+        QuestItemSetDescription(questItem.QuestItem, questItem.Description);
       }
 
-      value.ParentQuest = this;
+      questItem.ParentQuest = this;
     }
 
     private static void OnAnyQuestItemProgressChanged(object? sender, QuestItemData e)

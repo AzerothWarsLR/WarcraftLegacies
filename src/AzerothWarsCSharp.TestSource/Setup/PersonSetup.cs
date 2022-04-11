@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
     public static void Setup()
     {
       Person.Register(new Person(Player(0)) 
-        {Faction = BlackEmpireSetup.FactionBlackempire}
+        {Faction = BlackEmpireSetup.BlackEmpire}
       );
 
       Person.Register(new Person(Player(1)) 
