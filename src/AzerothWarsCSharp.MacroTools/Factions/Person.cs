@@ -1,9 +1,8 @@
 using System;
 using System.Collections.Generic;
-
 using static War3Api.Common; using static War3Api.Blizzard;
 
-namespace AzerothWarsCSharp.MacroTools.FactionSystem
+namespace AzerothWarsCSharp.MacroTools.Factions
 {
   public sealed class Person
   {

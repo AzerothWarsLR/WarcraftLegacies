@@ -1,7 +1,6 @@
 //Give each player their starting gold and lumber as the opening cinematic ends.
 
-using AzerothWarsCSharp.MacroTools.FactionSystem;
-
+using AzerothWarsCSharp.MacroTools.Factions;
 using static War3Api.Common;
 using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 

@@ -1,29 +1,20 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-
 using static War3Api.Common; using static War3Api.Blizzard;
 
-namespace AzerothWarsCSharp.MacroTools.FactionSystem
+namespace AzerothWarsCSharp.MacroTools.Factions
 {
-  public class Team
+  public sealed class Team
   {
-    private static readonly Dictionary<string, Team> TeamsByName = new();
-    private static readonly List<Team> AllTeams;
     private readonly List<Faction> _factions = new();
     private readonly List<Faction> _invitees = new();
 
     public Team(string name)
     {
       Name = name;
-      if (TeamsByName[StringCase(name, false)] == null)
-        TeamsByName[StringCase(name, false)] = this;
-      else
-        throw new Exception("Created team that already exists with name " + name);
-      TeamCreate.Invoke(this, this);
+      TeamCreate?.Invoke(this, this);
     }
-
-    public ScoreStatus ScoreStatus { get; } = ScoreStatus.Undefeated;
 
     public int ControlPointCount
     {
@@ -59,16 +50,9 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// </summary>
     public string VictoryMusic { get; init; }
 
-    public static event EventHandler<Team> TeamCreate;
+    public static event EventHandler<Team>? TeamCreate;
 
-    public static event EventHandler<Team> TeamSizeChange;
-
-    public static event EventHandler<Team> TeamScoreStatusChanged;
-
-    public static IEnumerable<Team> GetAllTeams()
-    {
-      return AllTeams.ToList();
-    }
+    public static event EventHandler<Team>? TeamSizeChange;
 
     /// <summary>
     ///   Creates a <see cref="force" /> containing all <see cref="player" />s within this <see cref="Team" />.
@@ -83,22 +67,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       return newForce;
     }
 
-    public static void Register(Team team)
-    {
-      AllTeams.Add(team);
-      TeamsByName[team.Name] = team;
-    }
-
-    public static bool TeamWithNameExists(string teamName)
-    {
-      return TeamsByName.ContainsKey(teamName);
-    }
-
-    public static Team GetTeamByName(string teamName)
-    {
-      return TeamsByName[teamName];
-    }
-
     public IEnumerable<Faction> GetAllFactions()
     {
       foreach (var faction in _factions) yield return faction;
@@ -111,7 +79,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       _factions.Remove(faction);
       if (faction.Person != null)
         UnallyPlayer(faction.Player);
-      TeamSizeChange.Invoke(this, this);
+      TeamSizeChange?.Invoke(this, this);
     }
 
     public void AddFaction(Faction faction)
@@ -122,7 +90,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       _factions.Add(faction);
       if (faction.Person != null)
         AllyPlayer(faction.Player);
-      TeamSizeChange.Invoke(this, this);
+      TeamSizeChange?.Invoke(this, this);
     }
 
     /// <summary>
@@ -213,11 +181,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public bool ContainsFaction(Faction faction)
     {
       return _factions.Contains(faction);
-    }
-
-    private static Team ByName(string name)
-    {
-      return TeamsByName[name];
     }
   }
 }

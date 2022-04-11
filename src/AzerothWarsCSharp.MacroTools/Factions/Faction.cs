@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Events;
-
 using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 
-namespace AzerothWarsCSharp.MacroTools.FactionSystem
+namespace AzerothWarsCSharp.MacroTools.Factions
 {
   /// <summary>
   ///   Represents a faction in the Azeroth Wars universe, such as Lordaeron, Stormwind, or the Frostwolf Clan.
@@ -296,14 +295,14 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       if (Team.PlayerCount > 1)
       {
         string newTeamName = Name + " Pact";
-        if (Team.TeamWithNameExists(newTeamName))
+        if (FactionManager.TeamWithNameExists(newTeamName))
         {
-          Team = Team.GetTeamByName(newTeamName);
+          Team = FactionManager.GetTeamByName(newTeamName);
           return;
         }
 
         var newTeam = new Team(newTeamName);
-        Team.Register(newTeam);
+        FactionManager.Register(newTeam);
         Team = newTeam;
       }
     }

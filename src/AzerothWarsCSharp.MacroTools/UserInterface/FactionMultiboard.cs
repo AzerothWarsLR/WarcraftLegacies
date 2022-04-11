@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Factions;
 using static War3Api.Common; using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.MacroTools.UserInterface
@@ -87,7 +87,7 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
       MultiboardSetRowCount(_multiboard, 30);
       UpdateHeaderRow();
       row += 1;
-      foreach (var team in Team.GetAllTeams())
+      foreach (var team in FactionManager.GetAllTeams())
         if (team.PlayerCount > 0)
         {
           _rowsByTeam[team] = row;

@@ -1,5 +1,5 @@
+using AzerothWarsCSharp.MacroTools.Factions;
 using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
-using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Legends;

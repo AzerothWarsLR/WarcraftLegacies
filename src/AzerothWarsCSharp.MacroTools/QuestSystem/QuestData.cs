@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
-using AzerothWarsCSharp.MacroTools.FactionSystem;
-
+using AzerothWarsCSharp.MacroTools.Factions;
 using static War3Api.Common; using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem

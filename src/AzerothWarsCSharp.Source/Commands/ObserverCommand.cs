@@ -1,5 +1,4 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
-
+using AzerothWarsCSharp.MacroTools.Factions;
 using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Commands

@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Factions;
 using AzerothWarsCSharp.Source.Legends;
 using AzerothWarsCSharp.Source.Quests.Scourge;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;

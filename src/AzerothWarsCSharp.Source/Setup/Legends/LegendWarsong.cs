@@ -1,5 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
-using Legend = AzerothWarsCSharp.MacroTools.FactionSystem.Legend;
+using Legend = AzerothWarsCSharp.MacroTools.Factions.Legend;
 
 using static War3Api.Common;
 

@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Factions;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 
 using static War3Api.Common; using static War3Api.Blizzard;

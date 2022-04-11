@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Factions;
 using AzerothWarsCSharp.TestSource.Setup.FactionSetup.FactionSetup;
 using static War3Api.Common;
 

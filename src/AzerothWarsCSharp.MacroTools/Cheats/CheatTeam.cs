@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Factions;
 using static War3Api.Common;
 using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 
@@ -8,8 +8,7 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
   {
     private const string COMMAND = "-team ";
     private static string? _parameter;
-
-
+    
     private static void Actions()
     {
       if (!TestSafety.CheatCondition()) return;
@@ -17,7 +16,7 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
       string enteredString = GetEventPlayerChatString();
       player p = GetTriggerPlayer();
       _parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
-      Team t = Team.GetTeamByName(_parameter);
+      Team t = FactionManager.GetTeamByName(_parameter);
       var faction = Person.ByHandle(p).Faction;
       if (faction != null) faction.Team = t;
       DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Attempted to team to " + t.Name + ".");

@@ -1,7 +1,10 @@
-﻿public enum QuestProgress
+﻿namespace AzerothWarsCSharp.MacroTools.QuestSystem
 {
-  Undiscovered,
-  Incomplete,
-  Complete,
-  Failed
+  public enum QuestProgress
+  {
+    Undiscovered,
+    Incomplete,
+    Complete,
+    Failed
+  }
 }

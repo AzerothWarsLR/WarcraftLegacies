@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Artifacts;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 

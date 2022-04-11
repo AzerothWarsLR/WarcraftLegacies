@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Factions;
 using WCSharp.Events;
 
 using static War3Api.Common; using static War3Api.Blizzard;

@@ -1,5 +1,4 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
-
+using AzerothWarsCSharp.MacroTools.Factions;
 using static War3Api.Common;
 using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 
@@ -22,9 +21,9 @@ namespace AzerothWarsCSharp.Source.Commands
         string content = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
         content = StringCase(content, false);
         
-        if (Team.TeamWithNameExists(content))
+        if (FactionManager.TeamWithNameExists(content))
         {
-          Team targetTeam = Team.GetTeamByName(content);
+          Team targetTeam = FactionManager.GetTeamByName(content);
           if (targetTeam.IsFactionInvited(triggerPerson.Faction))
           {
             triggerPerson.Faction.Team = targetTeam;

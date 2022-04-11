@@ -2,10 +2,9 @@ using System;
 using System.Collections.Generic;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
-
 using static War3Api.Common; using static War3Api.Blizzard;
 
-namespace AzerothWarsCSharp.MacroTools.FactionSystem
+namespace AzerothWarsCSharp.MacroTools.Factions
 {
   /// <summary>
   ///   An immobile and permanent unit on the map.

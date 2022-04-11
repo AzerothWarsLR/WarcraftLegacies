@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Factions;
 
 namespace AzerothWarsCSharp.TestSource.Setup
 {
@@ -12,16 +12,19 @@ namespace AzerothWarsCSharp.TestSource.Setup
       {
         VictoryMusic = "HeroicVictory"
       };
+      FactionManager.Register(TeamAlliance);
 
       TeamLegion = new Team("Burning Legion")
       {
         VictoryMusic = "DarkVictory"
       };
+      FactionManager.Register(TeamLegion);
 
       TeamHorde = new Team("Horde")
       {
         VictoryMusic = "DarkVictory"
       };
+      FactionManager.Register(TeamHorde);
     }
 
   }

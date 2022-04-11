@@ -1,5 +1,5 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
-
+using AzerothWarsCSharp.MacroTools.Artifacts;
+using AzerothWarsCSharp.MacroTools.Factions;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs

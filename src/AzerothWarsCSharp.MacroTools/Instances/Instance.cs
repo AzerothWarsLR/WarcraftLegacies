@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using WCSharp.Shared.Data;
-
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools
+namespace AzerothWarsCSharp.MacroTools.Instances
 {
   /// <summary>
   /// An instance is a region that is physically seperate from all other instances irrespective of its actual geographical location on the Warcraft map.

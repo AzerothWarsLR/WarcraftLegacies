@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AzerothWarsCSharp.MacroTools.FactionSystem
+namespace AzerothWarsCSharp.MacroTools.Factions
 {
   public sealed class FactionChangeTeamEventArgs : EventArgs
   {

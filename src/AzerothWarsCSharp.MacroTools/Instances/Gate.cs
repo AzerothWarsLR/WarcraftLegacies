@@ -1,6 +1,6 @@
 ﻿using WCSharp.Shared.Data;
 
-namespace AzerothWarsCSharp.MacroTools
+namespace AzerothWarsCSharp.MacroTools.Instances
 {
   public sealed class Gate
   {
