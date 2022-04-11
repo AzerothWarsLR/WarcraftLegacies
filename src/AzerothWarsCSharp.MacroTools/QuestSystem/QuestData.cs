@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// <summary>
     ///   If true, completing this quest will broadcast a message to every player.
     /// </summary>
-    public bool Global { get; init; }
+    protected bool Global { get; init; }
 
     /// <summary>
     ///   Describes to the player what will happen when the quest is completed.
@@ -60,14 +60,14 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     ///   Describes the background and flavour of this quest.
     ///   Describes flavour, not mechanics.
     /// </summary>
-    public string Description { get; }
+    private string Description { get; }
 
     /// <summary>
     ///   The research given to the faction when it completes its quest.
     /// </summary>
-    public int ResearchId { get; set; }
+    protected int ResearchId { get; set; }
 
-    public quest Quest { get; }
+    private quest Quest { get; }
 
     public bool ProgressLocked => _progress is QuestProgress.Complete or QuestProgress.Failed;
 
@@ -201,7 +201,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// <summary>
     ///   Enables the local aspects of all child QuestItems.
     /// </summary>
-    public void ShowLocal()
+    internal void ShowLocal()
     {
       QuestSetEnabled(Quest, true);
       foreach (var questItem in _questItems) questItem.ShowLocal();
@@ -210,7 +210,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// <summary>
     ///   Enables the synchronous aspects of all child QuestItems.
     /// </summary>
-    public void ShowSync()
+    internal void ShowSync()
     {
       foreach (var questItem in _questItems) questItem.ShowSync();
     }
@@ -218,7 +218,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// <summary>
     ///   Disables the local aspects of all child QuestItems.
     /// </summary>
-    public void HideLocal()
+    internal void HideLocal()
     {
       QuestSetEnabled(Quest, false);
       foreach (var questItem in _questItems) questItem.HideLocal();
@@ -227,7 +227,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// <summary>
     ///   Disables the synchronous aspects of all child QuestItems.
     /// </summary>
-    public void HideSync()
+    internal void HideSync()
     {
       foreach (var questItem in _questItems) questItem.HideSync();
     }
@@ -308,7 +308,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       }
     }
 
-    public void DisplayDiscovered()
+    internal void DisplayDiscovered()
     {
       var display = "";
       if (GetLocalPlayer() == Holder.Player)
