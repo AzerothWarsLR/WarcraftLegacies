@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     public QuestItemTime(int duration)
     {
-      Description = I2S(duration) + " seconds have elapsed";
+      Description = $"{duration} seconds have elapsed";
       _timer = CreateTimer();
       TimerStart(_timer, duration, false, OnExpire);
     }

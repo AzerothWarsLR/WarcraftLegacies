@@ -16,6 +16,7 @@ namespace AzerothWarsCSharp.TestSource.Quests
       CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), FourCC("uaco"), 0, 0, 0);
       AddQuestItem(new QuestItemKillUnit(acolyte));
       AddQuestItem(new QuestItemKillXUnit(FourCC("uaco"), 3));
+      AddQuestItem(new QuestItemTime(7));
     }
 
     protected override string RewardDescription => "Just the greatest things.";

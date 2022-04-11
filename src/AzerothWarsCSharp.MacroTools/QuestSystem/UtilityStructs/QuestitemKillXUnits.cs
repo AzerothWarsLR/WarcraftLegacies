@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       set
       {
         _currentKillXUnitCount = value;
-        Description = $"Kill {GetObjectName(_objectId)}s ({_currentKillXUnitCount} / {_targetKillXUnitCount})";
+        Description = $"Kill {GetObjectName(_objectId)}s ({_currentKillXUnitCount}/{_targetKillXUnitCount})";
       }
     }
 
