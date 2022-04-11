@@ -18,8 +18,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       set
       {
         _currentKillXUnitCount = value;
-        Description = "Kill " + GetObjectName(_objectId) + "s (" + I2S(_currentKillXUnitCount) + "/" +
-                      I2S(_targetKillXUnitCount) + ")";
+        Description = $"Kill {GetObjectName(_objectId)}s ({_currentKillXUnitCount} / {_targetKillXUnitCount})";
       }
     }
 
@@ -28,10 +27,10 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       _objectId = objectId;
       _targetKillXUnitCount = targetKillXUnitCount;
       CurrentKillXUnitCount = 0;
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDies, OnAnyKillXUnit, objectId);
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDies, OnKillUnit, objectId);
     }
 
-    private void OnAnyKillXUnit()
+    private void OnKillUnit()
     {
       CurrentKillXUnitCount = _currentKillXUnitCount + 1;
       if (_currentKillXUnitCount == _targetKillXUnitCount)
