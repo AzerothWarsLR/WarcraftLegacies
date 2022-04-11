@@ -135,10 +135,11 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       if (Progress == QuestProgress.Incomplete &&
           ParentQuest.Progress == QuestProgress.Incomplete)
       {
-        if (_minimapIcon == null && Position.X != 0 && Position.Y != 0)
+        if (_minimapIcon == null && DisplaysPosition)
           _minimapIcon = CreateMinimapIcon(Position.X, Position.Y, 255, 255, 0, SkinManagerGetLocalPath(PingPath),
             FOG_OF_WAR_MASKED);
-        else if (_minimapIcon != null) SetMinimapIconVisible(_minimapIcon, true);
+        else if (_minimapIcon != null) 
+          SetMinimapIconVisible(_minimapIcon, true);
       }
     }
 
