@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.Factions;
-using static War3Api.Common; using static War3Api.Blizzard;
+using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem
 {
@@ -135,7 +136,6 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
           }
 
         ProgressChanged?.Invoke(this, this);
-        ProgressChanged?.Invoke(this, this);
       }
     }
 
@@ -175,7 +175,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// <summary>
     ///   Fired when the <see cref="QuestData" /> changes its progress.
     /// </summary>
-    public event EventHandler<QuestData> ProgressChanged;
+    public event EventHandler<QuestData>? ProgressChanged;
 
     /// <summary>
     ///   Fired when the Quest is completed.
@@ -232,7 +232,9 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       foreach (var questItem in _questItems) questItem.HideSync();
     }
 
-    //Display a warning message to everyone EXCEPT the player that completed the quest
+    /// <summary>
+    ///   Displays a warning message to everyone except the player that completed the <see cref="QuestData" />.
+    /// </summary>
     private void DisplayCompletedGlobal()
     {
       var display = "";
@@ -326,7 +328,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       }
     }
 
-    private void OnQuestItemProgressChanged()
+    private void OnQuestItemProgressChanged(object? sender, QuestItemData questItemData)
     {
       var allComplete = true;
       var anyFailed = false;
@@ -364,11 +366,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       }
 
       questItem.ParentQuest = this;
-    }
-
-    private static void OnAnyQuestItemProgressChanged(object? sender, QuestItemData e)
-    {
-      e.ParentQuest.OnQuestItemProgressChanged();
+      questItem.ProgressChanged += OnQuestItemProgressChanged;
     }
   }
 }
