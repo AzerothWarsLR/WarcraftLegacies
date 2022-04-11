@@ -1,10 +1,10 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.UserInterface;
 using AzerothWarsCSharp.Source.Artifacts;
 using AzerothWarsCSharp.Source.Game_Logic;
 using AzerothWarsCSharp.Source.Game_Logic.GameEnd;
 using AzerothWarsCSharp.Source.Mechanics.Quelthalas;
-using AzerothWarsCSharp.Source.User_Interface;
 
 namespace AzerothWarsCSharp.Source.Setup
 {
