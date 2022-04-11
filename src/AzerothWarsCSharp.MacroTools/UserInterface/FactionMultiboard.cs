@@ -1,9 +1,13 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.Factions;
-using static War3Api.Common; using static War3Api.Blizzard;
+using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.MacroTools.UserInterface
 {
+  /// <summary>
+  /// Displays the name, color, <see cref="Team"/>, <see cref="ControlPoint"/> count, and income of all <see cref="Faction"/>s in the game.
+  /// </summary>
   public sealed class FactionMultiboard
   {
     private const int COLUMN_COUNT = 3;
@@ -14,9 +18,9 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
     private const int COLUMN_INCOME = 2;
     private const int COLUMN_TEAM = 0;
 
-    private const float WIDTH_FACTION = 008;
-    private const float WIDTH_CP = 002;
-    private const float WIDTH_INCOME = 002;
+    private const float WIDTH_FACTION = 0.08f;
+    private const float WIDTH_CP = 0.02f;
+    private const float WIDTH_INCOME = 0.02f;
     private const float WIDTH_TEAM = WIDTH_FACTION + WIDTH_CP + WIDTH_INCOME;
     private readonly Dictionary<Faction, int> _rowsByFaction = new();
     private readonly Dictionary<Team, int> _rowsByTeam = new();
@@ -148,8 +152,9 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
 
     public static void Setup()
     {
-      TriggerSleepAction(1);
-      Instance = new FactionMultiboard(COLUMN_COUNT, 3, TITLE);
+      var timer = CreateTimer();
+        TimerStart(timer, 2, false, () => { Instance = new FactionMultiboard(COLUMN_COUNT, 3, TITLE); }
+      );
 
       Person.FactionChange += OnPersonFactionChange;
       Faction.TeamJoin += OnFactionTeamJoin;
