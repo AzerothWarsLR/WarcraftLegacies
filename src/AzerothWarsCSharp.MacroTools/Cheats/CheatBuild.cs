@@ -29,7 +29,10 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
     private static void Build()
     {
       if (GetIssuedOrderId() == 851976 && IsCheatActive(GetTriggerPlayer()))
+      {
         UnitSetUpgradeProgress(GetTriggerUnit(), 100);
+        UnitSetConstructionProgress(GetTriggerUnit(), 100);
+      }
     }
 
     private static void Actions()
