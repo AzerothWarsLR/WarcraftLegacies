@@ -1,22 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Factions
 {
   /// <summary>
-  /// Responsible for the management of all <see cref="Faction"/>s and <see cref="Team"/>s in the game.
+  ///   Responsible for the management of all <see cref="Faction" />s and <see cref="Team" />s in the game.
   /// </summary>
   public static class FactionManager
   {
     private static readonly Dictionary<string, Team> TeamsByName = new();
     private static readonly List<Team> AllTeams = new();
-    
+    private static readonly Dictionary<string, Faction> FactionsByName = new();
+
+    public static event EventHandler<Faction>? FactionRegistered;
+
+    private static void OnFactionNameChange(object? sender, FactionNameChangeEventArgs args)
+    {
+      FactionsByName.Remove(args.PreviousName);
+      args.Faction.Name = args.Faction.Name;
+      FactionsByName.Add(args.Faction.Name, args.Faction);
+    }
+
     public static IEnumerable<Team> GetAllTeams()
     {
       return AllTeams.ToList();
     }
-    
+
     public static bool TeamWithNameExists(string teamName)
     {
       return TeamsByName.ContainsKey(teamName);
@@ -26,19 +37,45 @@ namespace AzerothWarsCSharp.MacroTools.Factions
     {
       return TeamsByName[teamName];
     }
-    
-    /// <summary>
-    /// Registers a <see cref="Faction"/> to the <see cref="FactionManager"/>,
-    /// allowing it to be retrieved globally and fire global events.
-    /// </summary>
-    public static void Register(Faction faction)
+
+    public static Faction? GetFromPlayer(player whichPlayer)
     {
-      
+      return Person.ByHandle(whichPlayer)?.Faction;
+    }
+
+    public static bool FactionWithNameExists(string name)
+    {
+      return FactionsByName.ContainsKey(name.ToLower());
+    }
+
+    public static Faction GetFromName(string name)
+    {
+      return FactionsByName[name.ToLower()];
     }
 
     /// <summary>
-    /// Registers a <see cref="Team"/> to the <see cref="FactionManager"/>,
-    /// allowing it to be retrieved globally and fire global events.
+    ///   Registers a <see cref="Faction" /> to the <see cref="FactionManager" />,
+    ///   allowing it to be retrieved globally and fire global events.
+    /// </summary>
+    public static void Register(Faction faction)
+    {
+      if (!FactionsByName.ContainsKey(faction.Name.ToLower()))
+      {
+        FactionsByName[faction.Name.ToLower()] = faction;
+        faction.NameChanged += OnFactionNameChange;
+        FactionRegistered?.Invoke(faction, faction);
+      }
+      else
+      {
+        throw new Exception($"Attempted to register faction that already exists with name {faction}.");
+      }
+
+      FactionRegistered?.Invoke(faction, faction);
+    }
+
+    /// <summary>
+    ///   Registers a <see cref="Team" /> to the <see cref="FactionManager" />,
+    ///   allowing it to be retrieved globally and fire global events.
     /// </summary>
     public static void Register(Team team)
     {
@@ -48,7 +85,10 @@ namespace AzerothWarsCSharp.MacroTools.Factions
         AllTeams.Add(team);
       }
       else
-        throw new Exception($"Attempted to register a {nameof(Team)} named {team.Name}, but there is already a registered {nameof(Team)} with that name.");
+      {
+        throw new Exception(
+          $"Attempted to register a {nameof(Team)} named {team.Name}, but there is already a registered {nameof(Team)} with that name.");
+      }
     }
   }
 }

@@ -18,6 +18,7 @@ namespace AzerothWarsCSharp.TestSource.Setup.FactionSetup.FactionSetup
         StartingGold = 150,
         StartingLumber = 500
       };
+      FactionManager.Register(factionDruids);
     }
   }
 }

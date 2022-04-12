@@ -16,6 +16,7 @@ namespace AzerothWarsCSharp.TestSource.Setup.FactionSetup.FactionSetup
         StartingLumber = 500,
         Team = TeamSetup.TeamAlliance
       };
+      FactionManager.Register(BlackEmpire);
     }
   }
 }

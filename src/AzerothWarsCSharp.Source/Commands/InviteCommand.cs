@@ -1,18 +1,17 @@
 using AzerothWarsCSharp.MacroTools.Factions;
 using AzerothWarsCSharp.Source.Game_Logic;
-
 using static War3Api.Common;
 using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Commands
 {
   /// <summary>
-  /// Invites the specified <see cref="Faction"/>'s <see cref="player"/> to the sender's <see cref="Team"/>.
+  ///   Invites the specified <see cref="Faction" />'s <see cref="player" /> to the sender's <see cref="Team" />.
   /// </summary>
   public static class InviteCommand
   {
     private const string COMMAND = "-invite ";
-    
+
     private static void Actions()
     {
       string enteredString = GetEventPlayerChatString();
@@ -25,13 +24,13 @@ namespace AzerothWarsCSharp.Source.Commands
           string content = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
           content = StringCase(content, false);
 
-          if (!Faction.FactionWithNameExists(content))
+          if (!FactionManager.FactionWithNameExists(content))
           {
             DisplayTextToPlayer(senderPerson.Player, 0, 0, $"There is no Faction with the name {content}.");
             return;
           }
 
-          var targetFaction = Faction.GetFromName(content);
+          var targetFaction = FactionManager.GetFromName(content);
 
           if (senderPerson.Faction == targetFaction)
           {
@@ -46,10 +45,7 @@ namespace AzerothWarsCSharp.Source.Commands
             return;
           }
 
-          if (targetFaction.Person != null)
-          {
-            senderPerson.Faction?.Team?.Invite(targetFaction);
-          }
+          if (targetFaction.Person != null) senderPerson.Faction?.Team?.Invite(targetFaction);
         }
       }
       else
@@ -61,11 +57,8 @@ namespace AzerothWarsCSharp.Source.Commands
     public static void Setup()
     {
       trigger trig = CreateTrigger();
-      foreach (var player in GetAllPlayers())
-      {
-        TriggerRegisterPlayerChatEvent( trig, player, COMMAND, false);
-      }
-      TriggerAddAction(trig,  Actions);
+      foreach (var player in GetAllPlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
+      TriggerAddAction(trig, Actions);
     }
   }
 }

@@ -18,6 +18,7 @@ namespace AzerothWarsCSharp.TestSource.Setup.FactionSetup.FactionSetup
         StartingLumber = 500,
         Team = TeamSetup.TeamLegion
       };
+      FactionManager.Register(Dalaran);
     }
   }
 }

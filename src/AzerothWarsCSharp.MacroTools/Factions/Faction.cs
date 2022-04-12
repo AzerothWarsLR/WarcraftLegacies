@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Events;
-using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
+using static War3Api.Common;
+using static War3Api.Blizzard;
+using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.Factions
 {
@@ -19,21 +21,19 @@ namespace AzerothWarsCSharp.MacroTools.Factions
     public const int UNLIMITED = 200;
 
     /// <summary>
-    /// The gold cost value of a hero.
+    ///   The gold cost value of a hero.
     /// </summary>
     private const int HERO_COST = 100; //For refunding
 
     /// <summary>
-    /// How much gold and lumber is refunded from units that get refunded when a player leaves.
+    ///   How much gold and lumber is refunded from units that get refunded when a player leaves.
     /// </summary>
     private const float REFUND_PERCENT = 100;
 
     /// <summary>
-    /// How much experience is transferred from heroes that leave the game.
+    ///   How much experience is transferred from heroes that leave the game.
     /// </summary>
     private const float XP_TRANSFER_PERCENT = 100;
-
-    private static readonly Dictionary<string, Faction> FactionsByName = new();
 
     private readonly int _defeatedResearch;
 
@@ -42,30 +42,30 @@ namespace AzerothWarsCSharp.MacroTools.Factions
     private readonly Dictionary<int, int> _objectLimits = new();
     private readonly List<QuestData> _quests = new();
 
-    private int _undefeatedResearch;
-
     private readonly Dictionary<int, int> _unitTypeByCategory = new();
 
     private string _icon;
 
-    private string? _name;
+    private string _name;
 
     private Person? _person;
 
     private string _prefixCol;
-    
+
     private ScoreStatus _scoreStatus = ScoreStatus.Undefeated;
     private Team? _team;
+
+    private int _undefeatedResearch;
 
     private int _xp; //Stored by DistributeUnits and given out again by DistributeResources
 
     public EventHandler<Faction> ScoreStatusChanged;
 
-    public Faction(string? name, playercolor playerColor, string prefixCol, string icon)
+    public Faction(string name, playercolor playerColor, string prefixCol, string icon)
     {
       _name = name;
       PlayerColor = playerColor;
-      PrefixCol = prefixCol;
+      _prefixCol = prefixCol;
       _icon = icon;
     }
 
@@ -73,7 +73,7 @@ namespace AzerothWarsCSharp.MacroTools.Factions
 
     public int StartingLumber { get; set; }
 
-    public playercolor PlayerColor { get; init; }
+    public playercolor PlayerColor { get; }
 
     public float Gold
     {
@@ -157,19 +157,18 @@ namespace AzerothWarsCSharp.MacroTools.Factions
       set
       {
         _prefixCol = value;
-        NameChanged?.Invoke(this, this);
+        NameChanged?.Invoke(this, new FactionNameChangeEventArgs(this, null));
       }
     }
 
-    public string? Name
+    public string Name
     {
       get => _name;
       set
       {
-        FactionsByName.Remove(_name);
+        var formerName = _name;
         _name = value;
-        FactionsByName[value.ToLower()] = this;
-        NameChanged?.Invoke(this, this);
+        NameChanged?.Invoke(this, new FactionNameChangeEventArgs(this, formerName));
       }
     }
 
@@ -251,11 +250,14 @@ namespace AzerothWarsCSharp.MacroTools.Factions
     /// </summary>
     public event EventHandler<Faction>? JoinedTeam;
 
-    public static event EventHandler<Faction>? Registered;
+    /// <summary>
+    ///   Fires when the <see cref="Faction" /> changes its name.
+    /// </summary>
+    public event EventHandler<FactionNameChangeEventArgs>? NameChanged;
+
     public static event EventHandler<FactionChangeTeamEventArgs>? TeamLeft;
     public static event EventHandler<Faction>? TeamJoin;
     public static event EventHandler<Faction>? GameLeave;
-    public static event EventHandler<Faction>? NameChanged;
     public static event EventHandler<Faction>? IconChanged;
     public static event EventHandler<Faction>? StatusChanged;
 
@@ -508,33 +510,9 @@ namespace AzerothWarsCSharp.MacroTools.Factions
       GameLeave?.Invoke(this, this);
     }
 
-    public static Faction? GetFromPlayer(player whichPlayer)
-    {
-      return Person.ByHandle(whichPlayer)?.Faction;
-    }
-
-    public static bool FactionWithNameExists(string name)
-    {
-      return FactionsByName.ContainsKey(name);
-    }
-
-    public static Faction GetFromName(string name)
-    {
-      return FactionsByName[name];
-    }
-
-    public static void Register(Faction faction)
-    {
-      if (!FactionsByName.ContainsKey(faction.Name.ToLower()))
-        FactionsByName[faction.Name.ToLower()] = faction;
-      else
-        throw new Exception($"Attempted to register faction that already exists with name {faction}.");
-      Registered?.Invoke(faction, faction);
-    }
-
     private static void OnAnyResearch()
     {
-      var faction = GetFromPlayer(GetTriggerPlayer());
+      var faction = FactionManager.GetFromPlayer(GetTriggerPlayer());
       faction?.SetObjectLevel(GetResearched(), GetPlayerTechCount(GetTriggerPlayer(), GetResearched(), false));
     }
 

@@ -5,7 +5,7 @@ using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 namespace AzerothWarsCSharp.Source.Commands
 {
   /// <summary>
-  /// Revokes an invitation sent to a player from the sending player's <see cref="Team"/>.
+  ///   Revokes an invitation sent to a player from the sending player's <see cref="Team" />.
   /// </summary>
   public static class UninviteCommand
   {
@@ -22,18 +22,14 @@ namespace AzerothWarsCSharp.Source.Commands
         string content = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
         content = StringCase(content, false);
 
-        if (Faction.FactionWithNameExists(content))
+        if (FactionManager.FactionWithNameExists(content))
         {
-          Faction targetFaction = Faction.GetFromName(content);
+          Faction targetFaction = FactionManager.GetFromName(content);
           if (targetFaction.Person != null)
-          {
             senderPerson.Faction.Team?.Uninvite(targetFaction);
-          }
           else
-          {
             DisplayTextToPlayer(senderPerson.Player, 0, 0,
               $"There is no player with the Faction {targetFaction.ColoredName}.");
-          }
         }
         else
         {
@@ -45,10 +41,7 @@ namespace AzerothWarsCSharp.Source.Commands
     public static void Setup()
     {
       trigger trig = CreateTrigger();
-      foreach (var player in GetAllPlayers())
-      {
-        TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
-      }
+      foreach (var player in GetAllPlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
 
       TriggerAddAction(trig, Actions);
     }

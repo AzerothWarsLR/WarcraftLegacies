@@ -6,7 +6,8 @@ using static War3Api.Blizzard;
 namespace AzerothWarsCSharp.MacroTools.UserInterface
 {
   /// <summary>
-  /// Displays the name, color, <see cref="Team"/>, <see cref="ControlPoint"/> count, and income of all <see cref="Faction"/>s in the game.
+  ///   Displays the name, color, <see cref="Team" />, <see cref="ControlPoint" /> count, and income of all
+  ///   <see cref="Faction" />s in the game.
   /// </summary>
   public sealed class FactionMultiboard
   {
@@ -153,7 +154,7 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
     public static void Setup()
     {
       var timer = CreateTimer();
-        TimerStart(timer, 2, false, () => { Instance = new FactionMultiboard(COLUMN_COUNT, 3, TITLE); }
+      TimerStart(timer, 2, false, () => { Instance = new FactionMultiboard(COLUMN_COUNT, 3, TITLE); }
       );
 
       Person.FactionChange += OnPersonFactionChange;
@@ -161,7 +162,7 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
       Faction.TeamLeft += OnFactionTeamLeft;
       Faction.StatusChanged += OnFactionStatusChanged;
 
-      Faction.NameChanged += OnFactionNameChanged;
+      //Faction.NameChanged += OnFactionNameChanged;
       Faction.IconChanged += OnFactionNameChanged;
 
       ControlPoint.OnControlPointLoss += OnControlPointLost;
