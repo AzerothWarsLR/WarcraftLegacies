@@ -1,5 +1,6 @@
 ﻿using System;
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.Frames.Books.Powers;
 using AzerothWarsCSharp.MacroTools.UserInterface;
 
 namespace AzerothWarsCSharp.TestSource.Setup
@@ -46,6 +47,8 @@ namespace AzerothWarsCSharp.TestSource.Setup
       //IncompatibleTierConfig.Setup();
       Console.WriteLine("Setting up FactionMultiboard...");
       FactionMultiboard.Setup();
+      Console.WriteLine("Setting up PowerBook...");
+      PowerBook.Initialize();
     }
   }
 }

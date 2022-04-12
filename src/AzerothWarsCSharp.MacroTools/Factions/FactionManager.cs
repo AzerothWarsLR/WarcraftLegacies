@@ -13,9 +13,11 @@ namespace AzerothWarsCSharp.MacroTools.Factions
     private static readonly Dictionary<string, Team> TeamsByName = new();
     private static readonly List<Team> AllTeams = new();
     private static readonly Dictionary<string, Faction> FactionsByName = new();
+    private static readonly List<Power> AllPowers = new();
 
     public static event EventHandler<Faction>? FactionRegistered;
-
+    public static event EventHandler<Power>? PowerAdded;
+    
     private static void OnFactionNameChange(object? sender, FactionNameChangeEventArgs args)
     {
       FactionsByName.Remove(args.PreviousName);
@@ -23,6 +25,11 @@ namespace AzerothWarsCSharp.MacroTools.Factions
       FactionsByName.Add(args.Faction.Name, args.Faction);
     }
 
+    public static List<Power> GetAllPowers()
+    {
+      return AllPowers.ToList();
+    }
+    
     public static IEnumerable<Team> GetAllTeams()
     {
       return AllTeams.ToList();
@@ -53,6 +60,12 @@ namespace AzerothWarsCSharp.MacroTools.Factions
       return FactionsByName[name.ToLower()];
     }
 
+    public static void FactionAddPower(Faction faction, Power power)
+    {
+      AllPowers.Add(power);
+      PowerAdded?.Invoke(null, power);
+    }
+    
     /// <summary>
     ///   Registers a <see cref="Faction" /> to the <see cref="FactionManager" />,
     ///   allowing it to be retrieved globally and fire global events.
