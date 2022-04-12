@@ -4,6 +4,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
   {
     public QuestItemCompleteQuest(QuestData target)
     {
+      Description = "Complete the quest " + target.Title;
       target.ProgressChanged += OnQuestProgressChanged;
     }
 

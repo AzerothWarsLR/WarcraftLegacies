@@ -11,6 +11,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
       
       BlackEmpireSetup.BlackEmpire.AddQuest(exampleQuestA);
       BlackEmpireSetup.BlackEmpire.AddQuest(new ExampleQuestB(exampleQuestA));
+      BlackEmpireSetup.BlackEmpire.AddQuest(new ExampleQuestC(exampleQuestA));
     }
   }
 }
