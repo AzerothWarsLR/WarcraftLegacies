@@ -1,10 +1,10 @@
-using AzerothWarsCSharp.MacroTools.Factions;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Legends;
 
 using static War3Api.Common;
-using static AzerothWarsCSharp.MacroTools.Display; namespace AzerothWarsCSharp.Source.Quests.Druids
+using static AzerothWarsCSharp.MacroTools.Libraries.Display; namespace AzerothWarsCSharp.Source.Quests.Druids
 {
   public sealed class QuestDruidsKillFrostwolf : QuestData
   {

@@ -1,9 +1,9 @@
 //A command that pings all units belonging to the user that have a limit on how many of them can be made.
 
-using AzerothWarsCSharp.MacroTools.Factions;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 
-using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
+using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Commands
 {

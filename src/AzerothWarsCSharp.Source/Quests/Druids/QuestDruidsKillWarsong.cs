@@ -1,4 +1,4 @@
-using static AzerothWarsCSharp.MacroTools.Display;
+using static AzerothWarsCSharp.MacroTools.Libraries.Display;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Legends;

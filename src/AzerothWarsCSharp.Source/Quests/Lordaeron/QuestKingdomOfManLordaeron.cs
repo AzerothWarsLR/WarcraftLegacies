@@ -1,13 +1,14 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.Artifacts;
-using AzerothWarsCSharp.MacroTools.Factions;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Legends;
 using AzerothWarsCSharp.Source.Setup;
 
 using static War3Api.Common;
-using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {

@@ -1,4 +1,6 @@
-﻿namespace AzerothWarsCSharp.MacroTools.Powers
+﻿using AzerothWarsCSharp.MacroTools.FactionSystem;
+
+namespace AzerothWarsCSharp.MacroTools.Powers
 {
   public class DummyPower : Power
   {

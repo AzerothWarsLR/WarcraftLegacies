@@ -2,7 +2,7 @@
 using WCSharp.Shared.Data;
 using static War3Api.Blizzard;
 
-namespace AzerothWarsCSharp.MacroTools
+namespace AzerothWarsCSharp.MacroTools.Libraries
 {
   public static class MathEx
   {

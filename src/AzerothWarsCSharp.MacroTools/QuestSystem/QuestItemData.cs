@@ -1,7 +1,8 @@
 using System;
-using AzerothWarsCSharp.MacroTools.Factions;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
+using Environment = AzerothWarsCSharp.MacroTools.Libraries.Environment;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem
 {

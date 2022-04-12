@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using AzerothWarsCSharp.MacroTools.Factions;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -7,8 +7,8 @@ using AzerothWarsCSharp.Source.Legends;
 using WCSharp.Shared.Data;
 
 using static War3Api.Common;
-using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
-using static AzerothWarsCSharp.MacroTools.Display; namespace AzerothWarsCSharp.Source.Quests.Quelthalas
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static AzerothWarsCSharp.MacroTools.Libraries.Display; namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {
   public sealed class QuestTheBloodElves : QuestData
   {

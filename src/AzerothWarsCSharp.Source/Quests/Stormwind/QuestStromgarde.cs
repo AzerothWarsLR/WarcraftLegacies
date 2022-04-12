@@ -1,6 +1,6 @@
 using AzerothWarsCSharp.MacroTools.Artifacts;
-using AzerothWarsCSharp.MacroTools.Factions;
-using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;

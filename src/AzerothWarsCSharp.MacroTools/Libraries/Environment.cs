@@ -1,6 +1,6 @@
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools
+namespace AzerothWarsCSharp.MacroTools.Libraries
 {
   public class Environment
   {

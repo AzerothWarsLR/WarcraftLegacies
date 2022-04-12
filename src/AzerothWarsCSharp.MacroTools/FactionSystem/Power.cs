@@ -1,4 +1,4 @@
-﻿namespace AzerothWarsCSharp.MacroTools
+﻿namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
   /// <summary>
   /// An ability that can be bestowed on a Faction.

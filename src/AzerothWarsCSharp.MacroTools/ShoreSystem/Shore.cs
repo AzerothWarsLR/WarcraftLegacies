@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.Instances;
 using WCSharp.Shared.Data;
 
-namespace AzerothWarsCSharp.MacroTools
+namespace AzerothWarsCSharp.MacroTools.ShoreSystem
 {
   /// <summary>
   /// A position where the beach meets the shore.

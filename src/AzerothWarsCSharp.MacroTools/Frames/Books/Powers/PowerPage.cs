@@ -1,4 +1,5 @@
 ﻿using System;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
 {

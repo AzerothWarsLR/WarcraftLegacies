@@ -5,9 +5,9 @@ using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Events;
 using static War3Api.Common;
 using static War3Api.Blizzard;
-using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
-namespace AzerothWarsCSharp.MacroTools.Factions
+namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
   /// <summary>
   ///   Represents a faction in the Azeroth Wars universe, such as Lordaeron, Stormwind, or the Frostwolf Clan.

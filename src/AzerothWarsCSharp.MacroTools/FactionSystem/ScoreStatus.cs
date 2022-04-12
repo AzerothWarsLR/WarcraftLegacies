@@ -1,4 +1,4 @@
-namespace AzerothWarsCSharp.MacroTools.Factions
+namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
   public enum ScoreStatus
   {

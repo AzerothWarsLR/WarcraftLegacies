@@ -1,7 +1,7 @@
 ﻿using System;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.Factions
+namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
   public sealed class ControlPointOwnerChangeEventArgs : EventArgs
   {

@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.HintSystem;
 
 namespace AzerothWarsCSharp.Source.Hints
 {

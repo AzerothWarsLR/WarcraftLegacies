@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
+using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
-using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
-
-namespace AzerothWarsCSharp.MacroTools
+namespace AzerothWarsCSharp.MacroTools.HintSystem
 {
   public sealed class Hint
   {
@@ -26,7 +25,7 @@ namespace AzerothWarsCSharp.MacroTools
 
     private void Display()
     {
-      MacroTools.Display.DisplayHint(GetLocalPlayer(), _msg);
+      Libraries.Display.DisplayHint(GetLocalPlayer(), _msg);
       Unread.Remove(this);
     }
 

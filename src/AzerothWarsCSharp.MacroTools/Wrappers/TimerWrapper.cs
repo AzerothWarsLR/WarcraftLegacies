@@ -1,8 +1,7 @@
 ﻿using System;
-
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools
+namespace AzerothWarsCSharp.MacroTools.Wrappers
 {
   public sealed class TimerWrapper : IDisposable
   {

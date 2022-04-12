@@ -1,9 +1,9 @@
-using AzerothWarsCSharp.MacroTools.Factions;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 
 using static War3Api.Common;
-using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {

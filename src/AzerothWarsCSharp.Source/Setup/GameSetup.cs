@@ -1,5 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.MacroTools.Factions;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.UserInterface;
 using AzerothWarsCSharp.Source.Artifacts;
 using AzerothWarsCSharp.Source.Game_Logic;

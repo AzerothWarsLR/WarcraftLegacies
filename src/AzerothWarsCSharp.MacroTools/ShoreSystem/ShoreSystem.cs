@@ -1,4 +1,4 @@
-﻿namespace AzerothWarsCSharp.MacroTools
+﻿namespace AzerothWarsCSharp.MacroTools.ShoreSystem
 {
   public static class ShoreSystem
   {

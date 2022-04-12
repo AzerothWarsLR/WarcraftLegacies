@@ -1,11 +1,12 @@
 using System;
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using WCSharp.Events;
 using static War3Api.Common;
-using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
-namespace AzerothWarsCSharp.MacroTools.Factions
+namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
   /// <summary>
   /// A Legend is a wrapper for unique heroes. A Legend can continue to exist even if the unit it describes does not.

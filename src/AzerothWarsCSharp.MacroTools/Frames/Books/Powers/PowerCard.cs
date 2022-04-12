@@ -1,4 +1,5 @@
-﻿using static War3Api.Common;
+﻿using AzerothWarsCSharp.MacroTools.FactionSystem;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
 {

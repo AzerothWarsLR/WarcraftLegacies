@@ -1,6 +1,6 @@
 using static War3Api.Common; using static War3Api.Blizzard;
 
-namespace AzerothWarsCSharp.MacroTools
+namespace AzerothWarsCSharp.MacroTools.SpellSystem
 {
   public static class SpellHelpers
   {
