@@ -3,19 +3,17 @@ using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.Cheats
 {
-  public class CheatLumber{
-
+  public static class CheatLumber
+  {
     //**CONFIG
-    
-    private const string COMMAND     = "-lumber ";
-    
+
+    private const string COMMAND = "-lumber ";
+
     //*ENDCONFIG
 
-    private static void Actions( ){
-      if (!TestSafety.CheatCondition())
-      {
-        return;
-      }
+    private static void Actions()
+    {
+      if (!TestSafety.CheatCondition()) return;
       var i = 0;
       string enteredString = GetEventPlayerChatString();
       string parameter = null;
@@ -26,14 +24,11 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
       DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Set to " + parameter + " lumber.");
     }
 
-    public static void Setup( ){
+    public static void Setup()
+    {
       trigger trig = CreateTrigger();
-      foreach (var player in GetAllPlayers())
-      {
-        TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
-      }
+      foreach (var player in GetAllPlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
       TriggerAddAction(trig, Actions);
     }
-
   }
 }

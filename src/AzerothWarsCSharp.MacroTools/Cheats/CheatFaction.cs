@@ -1,3 +1,4 @@
+using System;
 using AzerothWarsCSharp.MacroTools.Factions;
 using static War3Api.Common;
 using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
@@ -11,15 +12,27 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
 
     private static void Actions()
     {
-      if (!TestSafety.CheatCondition()) return;
+      try
+      {
+        if (!TestSafety.CheatCondition())
+          return;
 
-      string enteredString = GetEventPlayerChatString();
-      player p = GetTriggerPlayer();
-      _parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
-      Faction f = Faction.GetFromName(_parameter);
+        string enteredString = GetEventPlayerChatString();
+        player p = GetTriggerPlayer();
+        _parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
 
-      Person.ByHandle(GetTriggerPlayer()).Faction = f;
-      DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Attempted to faction to " + f.Name + ".");
+        if (!FactionManager.FactionWithNameExists(_parameter))
+          throw new Exception($"There is no registered {nameof(Faction)} with the name {_parameter}.");
+
+        Faction f = FactionManager.GetFromName(_parameter);
+
+        Person.ByHandle(GetTriggerPlayer()).Faction = f;
+        DisplayTextToPlayer(p, 0, 0, $"|cffD27575CHEAT:|r Attempted to change faction to {f.Name}.");
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex);
+      }
     }
 
     public static void Setup()

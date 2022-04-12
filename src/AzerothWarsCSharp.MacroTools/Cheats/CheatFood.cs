@@ -1,36 +1,30 @@
-using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
+using static War3Api.Common;
+using static War3Api.Blizzard;
+using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.Cheats
 {
-  public class CheatFood{
+  public static class CheatFood
+  {
+    private const string COMMAND = "-food ";
 
-  
-    private const string COMMAND     = "-food ";
-  
 
-    private static void Actions( ){
-      if (!TestSafety.CheatCondition())
-      {
-        return;
-      }
-      var i = 0;
+    private static void Actions()
+    {
+      if (!TestSafety.CheatCondition()) return;
       string enteredString = GetEventPlayerChatString();
-      string parameter = null;
       player p = GetTriggerPlayer();
 
-      parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
+      string parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
       AdjustPlayerStateBJ(S2I(parameter), p, PLAYER_STATE_RESOURCE_FOOD_CAP);
       DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Granted " + parameter + " food.");
     }
 
-    public static void Setup( ){
+    public static void Setup()
+    {
       trigger trig = CreateTrigger();
-      foreach (var player in GetAllPlayers())
-      {
-        TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
-      }
+      foreach (var player in GetAllPlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
       TriggerAddAction(trig, Actions);
     }
-
   }
 }

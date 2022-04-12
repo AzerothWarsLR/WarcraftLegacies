@@ -1,16 +1,14 @@
 using System.Collections.Generic;
-using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
+using static War3Api.Common;
+using static War3Api.Blizzard;
+using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.Cheats
 {
   public static class CheatVision
   {
-    //**CONFIG
-
     private const string COMMAND = "-vision ";
     private static readonly Dictionary<player, fogmodifier> Fogs = new();
-
-    //*ENDCONFIG
 
     private static void Actions()
     {

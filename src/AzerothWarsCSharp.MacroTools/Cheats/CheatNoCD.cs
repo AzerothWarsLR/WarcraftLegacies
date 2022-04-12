@@ -8,11 +8,28 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
   public static class CheatNocd
   {
     private const string COMMAND = "-nocd ";
-    private static readonly Dictionary<player, bool> Toggle = new();
+    private static readonly List<player> PlayersWithCheat = new();
+
+    private static bool IsCheatActive(player whichPlayer)
+    {
+      return PlayersWithCheat.Contains(whichPlayer);
+    }
+
+    private static void SetCheatActive(player whichPlayer, bool isActive)
+    {
+      if (isActive && !PlayersWithCheat.Contains(whichPlayer))
+      {
+        PlayersWithCheat.Add(whichPlayer);
+        return;
+      }
+
+      if (!isActive && PlayersWithCheat.Contains(whichPlayer)) PlayersWithCheat.Remove(whichPlayer);
+    }
 
     private static void Spell()
     {
-      if (Toggle[GetTriggerPlayer()]) BlzEndUnitAbilityCooldown(GetTriggerUnit(), GetSpellAbilityId());
+      if (IsCheatActive(GetTriggerPlayer()))
+        BlzEndUnitAbilityCooldown(GetTriggerUnit(), GetSpellAbilityId());
     }
 
     private static void Actions()
@@ -24,12 +41,12 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
 
       if (parameter == "on")
       {
-        Toggle[p] = true;
+        SetCheatActive(p, true);
         DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r No cooldowns activated.");
       }
       else if (parameter == "off")
       {
-        Toggle[p] = false;
+        SetCheatActive(p, false);
         DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r No cooldowns deactivated.");
       }
     }
