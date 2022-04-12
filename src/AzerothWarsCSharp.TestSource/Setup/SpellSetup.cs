@@ -35,6 +35,9 @@ namespace AzerothWarsCSharp.TestSource.Setup
         DamageBonusLevel = 0.2f,
       };
       SpellSystem.Register(massSimulacrum);
+      
+      var executeFootman = new Execute(FourCC("hfoo"));
+      SpellSystem.Register(executeFootman);
     }
   }
 }
