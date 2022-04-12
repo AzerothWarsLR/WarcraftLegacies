@@ -7,7 +7,10 @@ namespace AzerothWarsCSharp.TestSource.Setup
   {
     public static void Setup()
     {
-      BlackEmpireSetup.BlackEmpire.AddQuest(new ExampleQuestA());
+      var exampleQuestA = new ExampleQuestA();
+      
+      BlackEmpireSetup.BlackEmpire.AddQuest(exampleQuestA);
+      BlackEmpireSetup.BlackEmpire.AddQuest(new ExampleQuestB(exampleQuestA));
     }
   }
 }
