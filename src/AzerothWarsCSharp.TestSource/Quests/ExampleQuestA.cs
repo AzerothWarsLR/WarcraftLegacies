@@ -17,6 +17,7 @@ namespace AzerothWarsCSharp.TestSource.Quests
       AddQuestItem(new QuestItemKillUnit(acolyte));
       AddQuestItem(new QuestItemKillXUnit(FourCC("uaco"), 3));
       AddQuestItem(new QuestItemTime(7));
+      AddQuestItem(new QuestItemCastSpell(FourCC("AHfs"), false));
     }
 
     protected override string RewardDescription => "Just the greatest things.";
