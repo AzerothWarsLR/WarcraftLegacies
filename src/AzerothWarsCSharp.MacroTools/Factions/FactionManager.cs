@@ -30,12 +30,12 @@ namespace AzerothWarsCSharp.MacroTools.Factions
 
     public static bool TeamWithNameExists(string teamName)
     {
-      return TeamsByName.ContainsKey(teamName);
+      return TeamsByName.ContainsKey(teamName.ToLower());
     }
 
     public static Team GetTeamByName(string teamName)
     {
-      return TeamsByName[teamName];
+      return TeamsByName[teamName.ToLower()];
     }
 
     public static Faction? GetFromPlayer(player whichPlayer)

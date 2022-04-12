@@ -1,3 +1,4 @@
+using System;
 using AzerothWarsCSharp.MacroTools.Factions;
 using static War3Api.Common;
 using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
@@ -11,15 +12,28 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
     
     private static void Actions()
     {
-      if (!TestSafety.CheatCondition()) return;
+      try
+      {
+        if (!TestSafety.CheatCondition()) return;
 
-      string enteredString = GetEventPlayerChatString();
-      player p = GetTriggerPlayer();
-      _parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
-      Team t = FactionManager.GetTeamByName(_parameter);
-      var faction = Person.ByHandle(p).Faction;
-      if (faction != null) faction.Team = t;
-      DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Attempted to team to " + t.Name + ".");
+        string enteredString = GetEventPlayerChatString();
+        player p = GetTriggerPlayer();
+        _parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
+
+        if (!FactionManager.TeamWithNameExists(_parameter))
+        {
+          throw new Exception($"There is no registered {nameof(Team)} with the name {_parameter}.");
+        }
+      
+        Team t = FactionManager.GetTeamByName(_parameter);
+        var faction = Person.ByHandle(p).Faction;
+        if (faction != null) faction.Team = t;
+        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Attempted to team to " + t.Name + ".");
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex);
+      }
     }
 
     public static void Setup()
