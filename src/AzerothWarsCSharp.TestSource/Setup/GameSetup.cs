@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
       Console.WriteLine("Setting up ArtifactSetup...");
       //ArtifactSetup.Setup();
       Console.WriteLine("Setting up ControlPointSetup...");
-      //ControlPointSetup.Setup();
+      ControlPointSetup.Setup();
       Console.WriteLine("Setting up AllQuestSetup...");
       AllQuestSetup.Setup();
       Console.WriteLine("Setting up ResearchSetup...");

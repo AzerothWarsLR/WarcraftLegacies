@@ -17,18 +17,18 @@ namespace AzerothWarsCSharp.MacroTools.Factions
 
     private static readonly int RegenerationAbility = FourCC("A0UT");
 
-    private static readonly Dictionary<int, ControlPoint> _byUnitType = new();
-    private static readonly Dictionary<unit, ControlPoint> _byUnit = new();
+    private static readonly Dictionary<int, ControlPoint> ByUnitType = new();
+    private static readonly Dictionary<unit, ControlPoint> ByUnit = new();
 
-    private readonly float value;
-    private player owner;
+    private readonly float _value;
+    private player _owner;
 
     public ControlPoint(unit u, float value)
     {
       Position = new Point(GetUnitX(u), GetUnitY(u));
       Unit = u;
-      owner = GetOwningPlayer(u);
-      this.value = value;
+      _owner = GetOwningPlayer(u);
+      _value = value;
     }
 
     public int UnitType => GetUnitTypeId(Unit);
@@ -39,9 +39,12 @@ namespace AzerothWarsCSharp.MacroTools.Factions
 
     public unit Unit { get; }
 
-    public Person OwningPerson => Person.ByHandle(owner);
+    public Person OwningPerson => Person.ByHandle(_owner);
 
-    public event EventHandler<ControlPointOwnerChangeEventArgs> ChangedOwner;
+    /// <summary>
+    /// Fires when the <see cref="ControlPoint"/> changes its owner.
+    /// </summary>
+    public event EventHandler<ControlPointOwnerChangeEventArgs>? ChangedOwner;
 
     /// <summary>
     ///   Whether or not the given unit is a <see cref="ControlPoint" />.
@@ -50,7 +53,7 @@ namespace AzerothWarsCSharp.MacroTools.Factions
     /// <returns></returns>
     public static bool UnitIsControlPoint(unit unit)
     {
-      return _byUnit.ContainsKey(unit);
+      return ByUnit.ContainsKey(unit);
     }
 
     public static event EventHandler<ControlPoint>? OnControlPointLoss;
@@ -58,32 +61,34 @@ namespace AzerothWarsCSharp.MacroTools.Factions
 
     private void ChangeOwner(player p)
     {
-      Person person = Person.ByHandle(owner);
+      Person person = Person.ByHandle(_owner);
 
-      person.ControlPointValue -= value;
+      person.ControlPointValue -= _value;
       person.ControlPointCount -= 1;
 
       OnControlPointLoss?.Invoke(this, this);
 
-      var formerOwner = owner;
-      owner = p;
-      person = Person.ByHandle(owner);
+      var formerOwner = _owner;
+      _owner = p;
+      person = Person.ByHandle(_owner);
 
-      person.ControlPointValue += value;
+      person.ControlPointValue += _value;
       person.ControlPointCount += 1;
 
+      UnitAddAbility(Unit, RegenerationAbility);
+      
       OnControlPointOwnerChange?.Invoke(this, new ControlPointOwnerChangeEventArgs(this, formerOwner));
       ChangedOwner?.Invoke(this, new ControlPointOwnerChangeEventArgs(this, formerOwner));
     }
 
     public static ControlPoint GetFromUnit(unit whichUnit)
     {
-      return _byUnit[whichUnit];
+      return ByUnit[whichUnit];
     }
 
     public static ControlPoint GetFromUnitType(int unitType)
     {
-      return _byUnitType[unitType];
+      return ByUnitType[unitType];
     }
 
     /// <summary>
@@ -92,18 +97,21 @@ namespace AzerothWarsCSharp.MacroTools.Factions
     public static void Register(ControlPoint controlPoint)
     {
       AllControlPoints.Add(controlPoint);
-      _byUnit[controlPoint.Unit] = controlPoint;
-      _byUnitType[controlPoint.UnitType] = controlPoint;
+      ByUnit.Add(controlPoint.Unit, controlPoint);
+      ByUnitType.Add(controlPoint.UnitType, controlPoint);
       BlzSetUnitMaxHP(controlPoint.Unit, MAX_HITPOINTS);
       SetUnitLifePercentBJ(controlPoint.Unit, 80);
 
-      controlPoint.OwningPerson.ControlPointValue += controlPoint.value;
+      controlPoint.OwningPerson.ControlPointValue += controlPoint._value;
       controlPoint.OwningPerson.ControlPointCount += 1;
     }
 
     private static void UnitChangesOwner()
     {
-      if (_byUnit.ContainsKey(GetTriggerUnit())) _byUnit[GetTriggerUnit()].ChangeOwner(GetTriggerPlayer());
+      if (ByUnit.ContainsKey(GetTriggerUnit()))
+      {
+        ByUnit[GetTriggerUnit()].ChangeOwner(GetTriggerPlayer());
+      }
     }
 
     public static void Setup()

@@ -156,9 +156,19 @@ namespace AzerothWarsCSharp.MacroTools.Factions
       return ById[id];
     }
 
+    /// <summary>
+    /// Retrieves the <see cref="Person"/> object which contains information about the given <see cref="player"/>.
+    /// </summary>
     public static Person ByHandle(player whichPlayer)
     {
-      return ById[GetPlayerId(whichPlayer)];
+      if (ById.TryGetValue(GetPlayerId(whichPlayer), out var person))
+      {
+        return person;
+      }
+
+      var newPerson = new Person(whichPlayer);
+      Register(newPerson);
+      return newPerson;
     }
 
     /// <summary>

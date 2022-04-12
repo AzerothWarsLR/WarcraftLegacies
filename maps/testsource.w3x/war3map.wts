@@ -28,3 +28,21 @@ STRING 6
 Force 1
 }
 
+STRING 7
+// Abilities: A000 (Income (+10)), Name (Name)
+{
+Income (+10)
+}
+
+STRING 8
+// Abilities: A001 (Income (+5)), Name (Name)
+{
+Income (+5)
+}
+
+STRING 9
+// Abilities: A002 (Income (+15)), Name (Name)
+{
+Income (+15)
+}
+
