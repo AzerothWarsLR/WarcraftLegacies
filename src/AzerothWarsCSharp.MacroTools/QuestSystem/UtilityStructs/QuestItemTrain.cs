@@ -1,57 +1,55 @@
-using System.Collections.Generic;
 using WCSharp.Events;
-
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
+  /// <summary>
+  /// Completes when the holder has trained a specific number of a specific unit type.
+  /// </summary>
   public sealed class QuestItemTrain : QuestItemData
   {
-    private static readonly List<QuestItemTrain> ByIndex = new();
     private readonly int _objectId;
+    private readonly int _targetTrainCount;
     private readonly int _trainFromId;
     private int _currentTrainCount;
-    private readonly int _targetTrainCount;
+
+    /// <summary>
+    /// Completes when the holder has trained a specific number of a specific unit type.
+    /// </summary>
+    /// <param name="objectId">The unit type that has to be trained.</param>
+    /// <param name="trainFromId">The unit type of a building from which the unit can be trained.</param>
+    /// <param name="targetTrainCount">How many of the unit type need to be trained.</param>
+    public QuestItemTrain(int objectId, int trainFromId, int targetTrainCount)
+    {
+      _objectId = objectId;
+      _trainFromId = trainFromId;
+      _targetTrainCount = targetTrainCount;
+      CurrentTrainCount = 0;
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, OnTrain);
+    }
 
     private int CurrentTrainCount
     {
       set
       {
         _currentTrainCount = value;
-        Description = "Train " + GetObjectName(_objectId) + "s from the " + GetObjectName(_trainFromId) + " (" +
-                      I2S(_currentTrainCount) + "/" + I2S(_targetTrainCount) + ")";
+        Description = $"Train {GetObjectName(_objectId)}s from the {GetObjectName(_trainFromId)} ({_currentTrainCount}/{_targetTrainCount})";
       }
     }
 
-    public QuestItemTrain(int objectId, int trainFromId, int targetTrainCount)
+    private void OnTrain()
     {
-      _objectId = objectId;
-      _trainFromId = trainFromId;
-      ByIndex.Add(this);
-      _targetTrainCount = targetTrainCount;
-      CurrentTrainCount = 0;
-    }
-
-    private static void OnAnyTrain()
-    {
-      unit triggerUnit = GetTrainedUnit();
-      foreach (var item in ByIndex)
+      if (GetUnitTypeId(GetTrainedUnit()) != _objectId)
       {
-        if (!item.ProgressLocked && item._objectId == GetUnitTypeId(triggerUnit) &&
-            item.Holder.Player == GetOwningPlayer(GetTrainedUnit()))
-        {
-          item.CurrentTrainCount = item._currentTrainCount + 1;
-          if (item._currentTrainCount == item._targetTrainCount)
-          {
-            item.Progress = QuestProgress.Complete;
-          }
-        }
+        return;
       }
-    }
-
-    public static void Setup()
-    {
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, OnAnyTrain);
+      
+      if (!ProgressLocked && Holder.Player == GetOwningPlayer(GetTrainedUnit()))
+      {
+        CurrentTrainCount = _currentTrainCount + 1;
+        if (_currentTrainCount == _targetTrainCount) 
+          Progress = QuestProgress.Complete;
+      }
     }
   }
 }

@@ -11,14 +11,14 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     private readonly bool _heroOnly;
     private readonly rect _targetRect;
 
-    public QuestItemAnyUnitInRect(rect targetRect, string rectName, bool heroOnly)
+    public QuestItemAnyUnitInRect(Rectangle targetRect, string rectName, bool heroOnly)
     {
+      _targetRect = targetRect.Rect;
       if (heroOnly)
         Description = "You have a hero at " + rectName;
       else
         Description = "You have a unit at " + rectName;
-      region target = RectToRegion(targetRect);
-      _targetRect = targetRect;
+      region target = RectToRegion(_targetRect);
       _heroOnly = heroOnly;
       DisplaysPosition = true;
       TriggerRegisterEnterRegion(EntersRectTrig, target, null);
