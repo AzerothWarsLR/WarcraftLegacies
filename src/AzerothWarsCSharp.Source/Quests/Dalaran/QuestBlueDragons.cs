@@ -27,7 +27,7 @@ using static AzerothWarsCSharp.MacroTools.Libraries.Display; namespace AzerothWa
     {
       SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
       DisplayUnitTypeAcquired(Holder.Player, DRAGON_ID,
-        "You can now train Blue Dragons from Military Quarters && the Nexus.");
+        "You can now train Blue Dragons from Military Quarters and the Nexus.");
     }
 
     protected override void OnAdd()

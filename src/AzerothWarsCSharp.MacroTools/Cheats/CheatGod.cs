@@ -54,7 +54,7 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
       {
         SetCheatActive(triggerPlayer, true);
         DisplayTextToPlayer(triggerPlayer, 0, 0,
-          "|cffD27575CHEAT:|r God mod activated. Your units will deal 100x damage && take no damage.");
+          "|cffD27575CHEAT:|r God mod activated. Your units will deal 100x damage and take no damage.");
       }
       else if (parameter == "off")
       {

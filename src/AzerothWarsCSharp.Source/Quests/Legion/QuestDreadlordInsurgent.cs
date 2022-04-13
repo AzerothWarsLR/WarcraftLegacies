@@ -19,10 +19,10 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
 
     protected override string CompletionPopup =>
-      "The Dreadlord has quickly fallen to Sylvanas && forced to join the Forsaken ";
+      "The Dreadlord has quickly fallen to Sylvanas and forced to join the Forsaken ";
 
     protected override string RewardDescription =>
-      "You lose everything, but will spawn with a small army, Varimathras && Lilian Voss near Capital City";
+      "You lose everything, but will spawn with a small army, Varimathras and Lilian Voss near Capital City";
 
     protected override void OnComplete()
     {

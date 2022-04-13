@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     private const float DUMMY_Y = 23734;
     
     public QuestAshbringer() : base("The Ashbringer",
-      "The Living Shadow must be purged, with enough Holy Magic && the craftiness of the Dwarves, it could be reforged into the strongest weapon of the Light",
+      "The Living Shadow must be purged, with enough Holy Magic and the craftiness of the Dwarves, it could be reforged into the strongest weapon of the Light",
       "ReplaceableTextures\\CommandButtons\\BTNAshbringer2blp")
     {
       AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactLivingshadow));

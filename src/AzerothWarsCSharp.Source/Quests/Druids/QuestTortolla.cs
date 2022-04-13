@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
     private readonly unit _sleepingTortolla;
 
     public QuestTortolla() : base("The Turtle Demigod",
-      "Tortolla was badly wounded during the War of the Ancients, && has been resting ever since.",
+      "Tortolla was badly wounded during the War of the Ancients, and has been resting ever since.",
       "ReplaceableTextures\\CommandButtons\\BTNSeaTurtleGreen.blp")
     {
       AddQuestItem(new QuestItemTime(1200));

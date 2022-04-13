@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     private weathereffect? _storm;
 
     public QuestSeaWitch() : base("Riders on the Storm",
-      "Warchief Thrall && his forces have been shipwrecked on the Darkspear Isles. Kill the Sea Witch there to give them a chance to rebuild their fleet && escape.",
+      "Warchief Thrall and his forces have been shipwrecked on the Darkspear Isles. Kill the Sea Witch there to give them a chance to rebuild their fleet and escape.",
       "ReplaceableTextures\\CommandButtons\\BTNGhost.blp")
     {
       AddQuestItem(new QuestItemKillUnit(LegendNeutral.LegendSeawitch.Unit));
@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       "The sea witch Zar'jira has been slain. Thrall and Vol'jin can now set sail.";
 
     protected override string RewardDescription =>
-      "Gain control of all neutral units on the Darkspear Isles && teleport to shore";
+      "Gain control of all neutral units on the Darkspear Isles and teleport to shore";
 
     protected override void OnFail()
     {

@@ -24,10 +24,10 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 
 
     protected override string CompletionPopup =>
-      "The City of Gold is now yours to command && has joined the " + Holder.Team.Name + ".";
+      "The City of Gold is now yours to command and has joined the " + Holder.Team.Name + ".";
 
     protected override string RewardDescription =>
-      "Control of all units in Zandalar && enables the Golden Fleet to be built";
+      "Control of all units in Zandalar and enables the Golden Fleet to be built";
 
     protected override void OnFail()
     {

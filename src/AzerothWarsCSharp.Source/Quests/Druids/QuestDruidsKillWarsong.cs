@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
     private const int UNITTYPE_ID = Constants.UNIT_E012_SIEGE_ANCIENT_DRUIDS_ELITE;
 
     public QuestDruidsKillWarsong() : base("Enemies at the Gate",
-      "Arriving from another planet && across the seas of Azeroth, the Orcs of the Warsong Clan have arrived to ravage the wilderness && consume its bounty. They must be stopped.",
+      "Arriving from another planet and across the seas of Azeroth, the Orcs of the Warsong Clan have arrived to ravage the wilderness and consume its bounty. They must be stopped.",
       "ReplaceableTextures\\CommandButtons\\BTNHellScream.blp")
     {
       AddQuestItem(new QuestItemLegendDead(LegendWarsong.LegendStonemaul));

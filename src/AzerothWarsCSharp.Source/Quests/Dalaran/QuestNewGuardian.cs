@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "Dalaran has empowered Jaina to be the new Guardian of Tirisfal, endowing her with a portion of the Council of TirisfalFourCC(s power.";
 
     protected override string RewardDescription =>
-      "Grant Jaina Chaos Damage, 20 additional Intelligence, Teleport, && Mana Shield";
+      "Grant Jaina Chaos Damage, 20 additional Intelligence, Teleport, and Mana Shield";
 
     protected override void OnComplete()
     {

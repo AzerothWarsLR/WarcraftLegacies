@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
   public sealed class QuestGoldshire : QuestData
   {
     public QuestGoldshire(unit hogger) : base("The Scourge of Elwynn",
-      "Hogger && his pack have taken over Goldshire, clear them out!",
+      "Hogger and his pack have taken over Goldshire, clear them out!",
       "ReplaceableTextures\\CommandButtons\\BTNGnoll.blp")
     {
       AddQuestItem(new QuestItemKillUnit(hogger)); //Hogger

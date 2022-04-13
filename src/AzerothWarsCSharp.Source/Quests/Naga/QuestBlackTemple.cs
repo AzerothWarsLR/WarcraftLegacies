@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
     }
     
     protected override string CompletionPopup =>
-      "Illidan has killed Magtheridon && subjugated the Fel Horde, the Illidari grow strong.";
+      "Illidan has killed Magtheridon and subjugated the Fel Horde, the Illidari grow strong.";
 
     protected override string RewardDescription => "The Fel Horde will join us and Magtheridon will die";
 

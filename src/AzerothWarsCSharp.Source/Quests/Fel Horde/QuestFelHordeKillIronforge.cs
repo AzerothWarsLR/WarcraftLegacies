@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     private static readonly int BuildingId = FourCC("o030");
 
     public QuestFelHordeKillIronforge() : base("Felsteel Refining",
-      "The smiths of Ironforge have long been put to use crafting goods && war machinery. In the hands of the Fel Horde, they could be used to smelt && refine the ultimate metal: Felsteel.",
+      "The smiths of Ironforge have long been put to use crafting goods and war machinery. In the hands of the Fel Horde, they could be used to smelt and refine the ultimate metal: Felsteel.",
       "ReplaceableTextures\\CommandButtons\\BTNInfernalFlameCannon.blp")
     {
       AddQuestItem(new QuestItemLegendDead(LegendIronforge.LegendGreatforge));
@@ -21,11 +21,11 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 
 
     protected override string CompletionPopup =>
-      "The Great Forge has been annihilated. The Fel HordeFourCC(s peons immediately salvage its intact refineries && put them to purpose in the creation of Felsteel.";
+      "The Great Forge has been annihilated. The Fel HordeFourCC(s peons immediately salvage its intact refineries and put them to purpose in the creation of Felsteel.";
 
     protected override string RewardDescription => "Learn to train " + I2S(UNIT_LIMIT) + " " +
                                                        GetObjectName(UnittypeId) + "s from the " +
-                                                       GetObjectName(BuildingId) + " && acquire Felsteel Plating";
+                                                       GetObjectName(BuildingId) + " and acquire Felsteel Plating";
 
     protected override void OnAdd()
     {

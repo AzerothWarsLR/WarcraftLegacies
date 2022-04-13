@@ -24,10 +24,10 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     }
     
     protected override string CompletionPopup =>
-      "Northrend && the Icecrown Citadel is now under full control of the Lich King and the " + Holder.Team.Name + ".";
+      "Northrend and the Icecrown Citadel is now under full control of the Lich King and the " + Holder.Team.Name + ".";
 
     protected override string RewardDescription =>
-      "Access to the Plague Research at the Frozen Throne, KelFourCC(tuzad && Rivendare trainable && a base in Icecrown";
+      "Access to the Plague Research at the Frozen Throne, KelFourCC(tuzad and Rivendare trainable and a base in Icecrown";
 
     protected override void OnFail()
     {

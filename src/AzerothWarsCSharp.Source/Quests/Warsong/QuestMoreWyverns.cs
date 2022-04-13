@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
     private static readonly int UnittypeId = FourCC("owyv");
 
     public QuestMoreWyverns() : base("Perfect Warriors",
-      "The prowess && savagery of the Sentinels is to be respected - && feared. They must be eliminated.",
+      "The prowess and savagery of the Sentinels is to be respected - and feared. They must be eliminated.",
       "ReplaceableTextures\\CommandButtons\\BTNArcher.blp")
     {
       AddQuestItem(new QuestItemLegendDead(LegendSentinels.legendFeathermoon));

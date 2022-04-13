@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
     protected override string CompletionPopup => "Sylvanas and all the Banshee Hall units gain 500 bonus hit points";
 
     protected override string RewardDescription =>
-      "Sylvanas && her Banshees will be empowered with 500 additional hitpoints each";
+      "Sylvanas and her Banshees will be empowered with 500 additional hitpoints each";
 
     protected override void OnComplete()
     {

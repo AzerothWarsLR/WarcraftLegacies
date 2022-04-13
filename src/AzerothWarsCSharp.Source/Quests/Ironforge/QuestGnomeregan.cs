@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
     private static readonly int QuestResearchId = FourCC("R05Q");
 
     public QuestGnomeregan() : base("The City of Invention",
-      "The people of Gnomeregan have long been unable to assist the Alliance in its wars due an infestation of troggs && Ice Trolls. Resolve their conflicts for them to gain their services.",
+      "The people of Gnomeregan have long been unable to assist the Alliance in its wars due an infestation of troggs and Ice Trolls. Resolve their conflicts for them to gain their services.",
       "ReplaceableTextures\\CommandButtons\\BTNFlyingMachine.blp")
     {
       AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nitw")))); //Ice Troll Warlord

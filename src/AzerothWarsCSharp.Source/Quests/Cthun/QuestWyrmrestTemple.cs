@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
   public sealed class QuestWyrmrestTemple : QuestData
   {
     public QuestWyrmrestTemple() : base("The Siege of Wyrmrest Temple",
-      "Yor'sahj the Unsleeping)s mission is to destroy the Wyrmrest temple, assist him && he will join the Black Empire",
+      "Yor'sahj the Unsleeping)s mission is to destroy the Wyrmrest temple, assist him and he will join the Black Empire",
       "ReplaceableTextures\\CommandButtons\\BTNHeroMastermind.blp")
     {
       AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactDemonsoul));

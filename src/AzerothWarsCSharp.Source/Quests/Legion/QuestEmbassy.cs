@@ -20,6 +20,6 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
     protected override string CompletionPopup => "The Legion has secured a foothold on Azeroth.";
 
     protected override string RewardDescription =>
-      "You can build the Infernal Machine Factory && summon Anetheron from the " + GetObjectName(AltarId);
+      "You can build the Infernal Machine Factory and summon Anetheron from the " + GetObjectName(AltarId);
   }
 }

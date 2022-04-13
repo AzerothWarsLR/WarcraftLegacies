@@ -50,7 +50,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
     }
 
     public QuestUndercity(unit waygateA, unit waygateB) : base("Forsaken Independance",
-      "The Forsaken had enough of living under the tyranny of the Lich King. Sylvanas has vowed to give them their freedom back && a home",
+      "The Forsaken had enough of living under the tyranny of the Lich King. Sylvanas has vowed to give them their freedom back and a home",
       "ReplaceableTextures\\CommandButtons\\BTNForsakenArrows.blp")
     {
       _waygateA = waygateA;

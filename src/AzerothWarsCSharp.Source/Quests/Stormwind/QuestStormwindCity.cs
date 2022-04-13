@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     private static readonly int QuestResearchId = FourCC("R02S");
 
     public QuestStormwindCity() : base("Clear the Outskirts",
-      "The outskirts of Stormwind are infested by evil creatures. Kill their leaders && regain control of the Towns.",
+      "The outskirts of Stormwind are infested by evil creatures. Kill their leaders and regain control of the Towns.",
       "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionCastle.blp")
     {
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00V"))));
@@ -26,10 +26,10 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
 
     protected override string CompletionPopup =>
-      "Stormwind has been liberated, && its military is now free to assist the " + Holder.Team.Name + ".";
+      "Stormwind has been liberated, and its military is now free to assist the " + Holder.Team.Name + ".";
 
     protected override string RewardDescription =>
-      "Control of all units in Stormwind && enable Varian to be trained at the altar";
+      "Control of all units in Stormwind and enable Varian to be trained at the altar";
 
     private void GrantStormwind(player whichPlayer)
     {

@@ -32,10 +32,10 @@
 //     }
 //
 //     protected override string CompletionPopup =>
-//       "The Merging of Realities has come to pass. The NyaFourCC(lothan portals to Storm Peaks, Northern Highlands, && Tanaris have been permanently opened.";
+//       "The Merging of Realities has come to pass. The NyaFourCC(lothan portals to Storm Peaks, Northern Highlands, and Tanaris have been permanently opened.";
 //
 //     protected override string RewardDescription =>
-//       "The NyaFourCC(lothan portals to Storm Peaks, Northern Highlands, && Tanaris will be permanently opened";
+//       "The NyaFourCC(lothan portals to Storm Peaks, Northern Highlands, and Tanaris will be permanently opened";
 //
 //     //Opens the central portals in Nyalotha permanently.
 //     private void OpenPortals()

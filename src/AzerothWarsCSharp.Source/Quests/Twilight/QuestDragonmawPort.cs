@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
 
 
     protected override string CompletionPopup =>
-      "Dragonmaw Port has fallen under our control && its military is now free to assist the " + Holder.Team.Name + ".";
+      "Dragonmaw Port has fallen under our control and its military is now free to assist the " + Holder.Team.Name + ".";
 
     protected override string RewardDescription => "Control of all buildings in Dragonmaw Port";
 

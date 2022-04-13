@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
 
     protected override string RewardDescription => "The shipyard will be buildable";
 
-    protected override string CompletionPopup => "You can now build shipyards && ships";
+    protected override string CompletionPopup => "You can now build shipyards and ships";
 
     private static void GrantGadetzan(player whichPlayer)
     {

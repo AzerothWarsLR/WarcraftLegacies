@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
     private static readonly int QuestResearchId = FourCC("R082"); //This research is given when the quest is completed
 
     public QuestSurvivorsShattrah() : base("The Survivors of Shattrah",
-      "The Shattrah massacre was swift && brutal, if (the Draenei hold long enough in Outland, they might regroup with some of the survivors.",
+      "The Shattrah massacre was swift and brutal, if (the Draenei hold long enough in Outland, they might regroup with some of the survivors.",
       "ReplaceableTextures\\CommandButtons\\BTNGlazeroth.blp")
     {
       AddQuestItem(new QuestItemTime(480));

@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     }
     
     protected override string CompletionPopup =>
-      "Lakeshire has been liberated, && its military is now free to assist the " + Holder.Team.Name + ".";
+      "Lakeshire has been liberated, and its military is now free to assist the " + Holder.Team.Name + ".";
 
     protected override string RewardDescription => "Control of all units in Lakeshire";
 

@@ -23,10 +23,10 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 
 
     protected override string CompletionPopup =>
-      "KulFourCC(Tiras has joined the war && its military is now free to assist the " + Holder.Team.Name + ".";
+      "KulFourCC(Tiras has joined the war and its military is now free to assist the " + Holder.Team.Name + ".";
 
     protected override string RewardDescription =>
-      "Control of all units in KulFourCC(Tiras && enables Katherine Proodmoure to be trained at the altar";
+      "Control of all units in KulFourCC(Tiras and enables Katherine Proodmoure to be trained at the altar";
 
     protected override void OnFail()
     {

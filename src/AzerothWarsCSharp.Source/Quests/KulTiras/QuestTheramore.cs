@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
     }
 
     protected override string CompletionPopup =>
-      "A sizeable isle off the coast of Dustwallow Marsh has been colonized && dubbed Theramore, marking the first human settlement to be established on Kalimdor.";
+      "A sizeable isle off the coast of Dustwallow Marsh has been colonized and dubbed Theramore, marking the first human settlement to be established on Kalimdor.";
 
     protected override string RewardDescription => "Control of all units at Theramore";
 

@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
     protected override string CompletionPopup => "The World Tree is ours, our lumber supplies will never run out!";
 
     protected override string RewardDescription =>
-      "Shredders will gain cleaving attack && 500 hit points. You will gain 30000 lumber.";
+      "Shredders will gain cleaving attack and 500 hit points. You will gain 30000 lumber.";
 
     protected override void OnComplete()
     {

@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
 
     protected override string CompletionPopup =>
-      "Khadgar has been freed from his confines under the Black Temple, && he is now free to serve the Kingdom of Stormwind.";
+      "Khadgar has been freed from his confines under the Black Temple, and he is now free to serve the Kingdom of Stormwind.";
 
     protected override string RewardDescription => "You can summon Khadgar from the Altar of Kings";
 

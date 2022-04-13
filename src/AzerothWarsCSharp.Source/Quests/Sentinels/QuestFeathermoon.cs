@@ -23,10 +23,10 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
     }
     
     protected override string CompletionPopup =>
-      "Feathermoon Stronghold has been relieved && has joined the Sentinels in their war effort";
+      "Feathermoon Stronghold has been relieved and has joined the Sentinels in their war effort";
 
     protected override string RewardDescription =>
-      "Control of all units in Feathermoon Stronghold && make Shandris && Maiev trainable at the Altar";
+      "Control of all units in Feathermoon Stronghold and make Shandris and Maiev trainable at the Altar";
 
     private static void GrantFeathermoon(player whichPlayer)
     {

@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
       "Control of all buildings in Gadgetzan and enables Noggenfogger to be built at the altar";
 
     protected override string RewardDescription =>
-      "We can train Noggenfogger && Gadgetzan is now under our influence and its military is now free to assist the " +
+      "We can train Noggenfogger and Gadgetzan is now under our influence and its military is now free to assist the " +
       Holder.Team.Name + ".";
 
     private static void GrantGadetzan(player whichPlayer)

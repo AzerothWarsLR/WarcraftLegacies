@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
   public sealed class QuestBeyondPortal : QuestData
   {
     public QuestBeyondPortal() : base("Beyond the Dark Portal",
-      "The Orc threat from Draenor still looms over all. Eliminate every trace of the Orcs && their bases.",
+      "The Orc threat from Draenor still looms over all. Eliminate every trace of the Orcs and their bases.",
       "ReplaceableTextures\\CommandButtons\\BTNDarkPortal.blp")
     {
       AddQuestItem(new QuestItemControlLegend(LegendFelHorde.LegendBlacktemple, false));

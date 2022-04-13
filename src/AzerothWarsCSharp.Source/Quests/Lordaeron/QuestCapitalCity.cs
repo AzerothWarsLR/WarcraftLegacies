@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     }
 
     protected override string CompletionPopup =>
-      "Capital City has been liberated, && its military is now free to assist the " + Holder.Team.Name + ".";
+      "Capital City has been liberated, and its military is now free to assist the " + Holder.Team.Name + ".";
 
     protected override string RewardDescription => "Control of all units in Capital City";
 

@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       LegendMagtheridon = new Legend();
       LegendMagtheridon.UnitType = FourCC("Nmag");
       LegendMagtheridon.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("o00F")));
-      LegendMagtheridon.DeathMessage = "Magtheridon’s eternal demon soul has been consumed, && his life permanently extinguished. The Lord of Outland has fallen.";
+      LegendMagtheridon.DeathMessage = "Magtheridon’s eternal demon soul has been consumed, and his life permanently extinguished. The Lord of Outland has fallen.";
       LegendMagtheridon.Essential = true;
 
       LegendRend = new Legend();

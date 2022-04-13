@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
     }
 
     protected override string CompletionPopup =>
-      "Tyr's Hand has joined the war && its military is now free to assist the " + Holder.Team.Name + ".";
+      "Tyr's Hand has joined the war and its military is now free to assist the " + Holder.Team.Name + ".";
 
     protected override string RewardDescription => "Control of all units in Tyr's Hand";
 

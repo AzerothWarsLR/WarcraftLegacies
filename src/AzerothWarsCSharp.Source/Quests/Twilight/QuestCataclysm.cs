@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
     protected override string CompletionPopup => "Deathwing is here, Doomsday is at hand, the Cataclysm as begun!";
 
     protected override string RewardDescription =>
-      "Cultists all over the world join your cause actively, Deathwing as a super demihero && the 2 elemental ascendant heroes.";
+      "Cultists all over the world join your cause actively, Deathwing as a super demihero and the 2 elemental ascendant heroes.";
     
     protected override void OnComplete()
     {

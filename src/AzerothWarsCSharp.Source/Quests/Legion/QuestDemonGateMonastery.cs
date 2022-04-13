@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
     }
 
     protected override string CompletionPopup =>
-      "The great Scarlet Monastery has fallen, && from its ashes rises an even greater Demon Gate.";
+      "The great Scarlet Monastery has fallen, and from its ashes rises an even greater Demon Gate.";
 
     protected override string RewardDescription => "A new Demon Gate at the MonasteryFourCC(s location";
 

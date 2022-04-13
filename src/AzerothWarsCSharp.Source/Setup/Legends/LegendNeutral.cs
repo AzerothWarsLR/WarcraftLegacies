@@ -43,7 +43,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       LegendRagnaros = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("N00D")),
-        DeathMessage = "Ragnaros, the King of Fire && Lord of the Firelands, has been extinguished."
+        DeathMessage = "Ragnaros, the King of Fire and Lord of the Firelands, has been extinguished."
       };
 
       LegendSeawitch = new Legend

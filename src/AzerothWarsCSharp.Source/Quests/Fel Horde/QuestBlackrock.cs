@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     private static readonly int QuestResearchId = FourCC("R03C");
 
     public QuestBlackrock() : base("Blackrock Unification",
-      "Make contact with the Blackrock clan && convince them to join Magtheridon",
+      "Make contact with the Blackrock clan and convince them to join Magtheridon",
       "ReplaceableTextures\\CommandButtons\\BTNBlackhand.blp")
     {
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00S"))));
@@ -24,10 +24,10 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 
 
     protected override string CompletionPopup =>
-      "Blackrock Citadel has been subjugated, && its military is now free to assist the " + Holder.Team.Name + ".";
+      "Blackrock Citadel has been subjugated, and its military is now free to assist the " + Holder.Team.Name + ".";
 
     protected override string RewardDescription =>
-      "Control of all units in Blackrock Citadel && enable DalFourCC(rend Blackhand to be trained at the altar";
+      "Control of all units in Blackrock Citadel and enable DalFourCC(rend Blackhand to be trained at the altar";
 
     private void GrantBlackrock(player whichPlayer)
     {

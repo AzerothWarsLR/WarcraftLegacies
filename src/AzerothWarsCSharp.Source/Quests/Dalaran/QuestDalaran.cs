@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     private static readonly int QuestResearchId = FourCC("R038");
 
     public QuestDalaran() : base("Outskirts",
-      "The territories of Dalaran are fragmented, secure the lands && protect Dalaran citizens .",
+      "The territories of Dalaran are fragmented, secure the lands and protect Dalaran citizens .",
       "ReplaceableTextures\\CommandButtons\\BTNArcaneCastle.blp")
     {
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01D"))));
@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "Dalaran outskirs are now secure, the mages will join " + Holder.Team.Name + ".";
 
     protected override string RewardDescription =>
-      "Control of all units in Dalaran && enables Antonidas to be trained at the Altar";
+      "Control of all units in Dalaran and enables Antonidas to be trained at the Altar";
 
     private void GrantDalaran(player whichPlayer)
     {

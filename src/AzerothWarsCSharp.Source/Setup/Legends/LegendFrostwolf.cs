@@ -50,7 +50,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 
       LegendOrgrimmar = new Legend
       {
-        DeathMessage = "Orgrimmar has been demolished. With it dies the hopes && dreams of a wartorn race seeking refuge in a new world."
+        DeathMessage = "Orgrimmar has been demolished. With it dies the hopes and dreams of a wartorn race seeking refuge in a new world."
       };
     }
 

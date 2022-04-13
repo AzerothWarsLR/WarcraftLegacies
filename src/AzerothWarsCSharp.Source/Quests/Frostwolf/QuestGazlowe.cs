@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
                                                  " control, the goblin Gazlowe offers his services as an expert engineer, upgrading your Shredders with new weaponry.";
 
     protected override string RewardDescription =>
-      "You can summon Gazlowe from the Altar of Storms, && Shredders learn to cast Pocket Factory, Saw Bombardment, && Emergency Repairs";
+      "You can summon Gazlowe from the Altar of Storms, and Shredders learn to cast Pocket Factory, Saw Bombardment, and Emergency Repairs";
 
     protected override void OnComplete()
     {

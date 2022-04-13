@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
   public sealed class QuestClosePortal : QuestData
   {
     public QuestClosePortal() : base("Seal the Dark Portal",
-      "The Dark Portal has been a menace to the Kingdom of Stormwind for decades, it is time to end the menace once && for all.",
+      "The Dark Portal has been a menace to the Kingdom of Stormwind for decades, it is time to end the menace once and for all.",
       "ReplaceableTextures\\CommandButtons\\BTNDarkPortal.blp")
     {
       AddQuestItem(new QuestItemChannelRect(Regions.ClosePortal, "The Dark Portal", LegendStormwind.LegendKhadgar, 480, 270));

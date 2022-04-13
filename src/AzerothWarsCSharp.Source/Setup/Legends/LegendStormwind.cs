@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         UnitType = FourCC("H00R")
       };
       LegendVarian.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("h00X")));
-      LegendVarian.DeathMessage = "The King of Stormwind dies a warrior’s death, defending hearth && family. The Wrynn Dynasty crumbles with his passing.";
+      LegendVarian.DeathMessage = "The King of Stormwind dies a warrior’s death, defending hearth and family. The Wrynn Dynasty crumbles with his passing.";
       LegendVarian.Essential = true;
       LegendVarian.StartingXp = 1800;
 

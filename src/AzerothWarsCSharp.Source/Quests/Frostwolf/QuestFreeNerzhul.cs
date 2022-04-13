@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     protected override string CompletionPopup =>
       "NerFourCC(zhul is finally free from his tortured existence as the bearer of the Helm of Domination. With his dying breath, he passes his wisdom on to Thrall.";
 
-    protected override string RewardDescription => "Thrall gains 10 Strength, 10 Agility && 10 Intelligence";
+    protected override string RewardDescription => "Thrall gains 10 Strength, 10 Agility and 10 Intelligence";
 
     protected override void OnComplete()
     {

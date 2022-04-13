@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       "The peace talk were succesful, The Dark Iron will join the Dwarven Empire.";
 
     protected override string RewardDescription =>
-      "You gain control of Shadowforge City && can train the hero Dagran Thaurassian from the Altar of Fortitude";
+      "You gain control of Shadowforge City and can train the hero Dagran Thaurassian from the Altar of Fortitude";
 
     protected override void OnComplete()
     {

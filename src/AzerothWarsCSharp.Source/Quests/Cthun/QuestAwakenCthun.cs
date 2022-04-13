@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
     private readonly unit _cthun;
     
     protected override string CompletionPopup =>
-      "C'thun, Old God of madness && chaos, has awakened from his slumber. Azeroth itself shrinks back in fear as this unfathomably evil entity unleashes its singular gaze for the first time in millenia.";
+      "C'thun, Old God of madness and chaos, has awakened from his slumber. Azeroth itself shrinks back in fear as this unfathomably evil entity unleashes its singular gaze for the first time in millenia.";
     
     protected override string RewardDescription =>
       "Gain control of C'thun and the ability to train Wasps"; //Todo: from where?
