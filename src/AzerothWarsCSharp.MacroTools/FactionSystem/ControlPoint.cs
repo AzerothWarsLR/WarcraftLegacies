@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools.Libraries;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common; using static War3Api.Blizzard;
@@ -90,7 +91,12 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     public static ControlPoint GetFromUnitType(int unitType)
     {
-      return ByUnitType[unitType];
+      if (ByUnitType.TryGetValue(unitType, out var controlPoint))
+      {
+        return controlPoint;
+      }
+
+      throw new KeyNotFoundException($"There is no {nameof(ControlPoint)} with unit type ID {GeneralHelpers.DebugIdInteger2IdString(unitType)}");
     }
 
     /// <summary>
