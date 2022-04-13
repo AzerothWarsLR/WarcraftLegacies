@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
-using static War3Api.Common; using static War3Api.Blizzard;
+using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.MacroTools.Libraries
 {
@@ -9,6 +10,23 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
     private static force _destForce = CreateForce();
     private static readonly group TempGroup = CreateGroup();
     private static readonly rect TempRect = Rect(0, 0, 0, 0);
+
+    public static string DebugIdInteger2IdString(int value)
+    {
+      const string charMap =
+        ".................................!.#$%&'()*+,-./0123456789:;<=>.@ABCDEFGHIJKLMNOPQRSTUVWXYZ[.]^_`abcdefghijklmnopqrstuvwxyz{|}~.................................................................................................................................";
+      string result = "";
+      var remainingValue = value;
+      
+      for (var i = 0; i < 5; i++)
+      {
+        var charValue = ModuloInteger(remainingValue, 256);
+        remainingValue /= 256;
+        result = SubString(charMap, charValue, charValue + 1) + result;
+      }
+
+      return result;
+    }
 
     public static IEnumerable<player> GetAllPlayers()
     {

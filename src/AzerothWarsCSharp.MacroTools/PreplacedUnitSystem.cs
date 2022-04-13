@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using static War3Api.Common;
 using static War3Api.Blizzard;
@@ -25,7 +26,7 @@ namespace AzerothWarsCSharp.MacroTools
       if (!_initialized) throw new Exception("PreplacedUnitSystem has not been initialized.");
       if (!UnitsByTypeId.ContainsKey(unitTypeId))
       {
-        throw new KeyNotFoundException($"There is no preplaced unit with Unit Type Id {GetObjectName(unitTypeId)}.");
+        throw new KeyNotFoundException($"There is no preplaced unit with Unit Type Id {GeneralHelpers.DebugIdInteger2IdString(unitTypeId)}.");
       }
       return UnitsByTypeId[unitTypeId];
     }
