@@ -1,3 +1,4 @@
+using System;
 using AzerothWarsCSharp.MacroTools.Artifacts;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Shared.Data;
@@ -14,11 +15,11 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     private readonly Artifact _targetArtifact;
     private readonly rect _targetRect;
 
-    public QuestItemArtifactInRect(Artifact targetArtifact, rect targetRect, string rectName)
+    public QuestItemArtifactInRect(Artifact targetArtifact, Rectangle targetRect, string rectName)
     {
       _targetArtifact = targetArtifact;
-      _targetRect = targetRect;
-      region targetRegion = RectToRegion(targetRect);
+      _targetRect = targetRect.Rect;
+      region targetRegion = RectToRegion(_targetRect);
       Description = "Bring " + GetItemName(targetArtifact.Item) + " to " + rectName;
 
       TriggerRegisterEnterRegion(_entersRect.Trigger, targetRegion, null);
@@ -53,12 +54,26 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     private void OnRegionEnter()
     {
-      Progress = _targetArtifact.OwningUnit == GetEnteringUnit() ? QuestProgress.Complete : QuestProgress.Incomplete;
+      try
+      {
+        Progress = _targetArtifact.OwningUnit == GetEnteringUnit() ? QuestProgress.Complete : QuestProgress.Incomplete;
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex);
+      }
     }
 
     private void OnRegionExit()
     {
-      Progress = IsArtifactInRect() ? QuestProgress.Complete : QuestProgress.Incomplete;
+      try
+      {
+        Progress = IsArtifactInRect() ? QuestProgress.Complete : QuestProgress.Incomplete;
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex);
+      }
     }
   }
 }

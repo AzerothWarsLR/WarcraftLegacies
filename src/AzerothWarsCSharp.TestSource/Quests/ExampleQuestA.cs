@@ -1,5 +1,6 @@
 ﻿using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.TestSource.Setup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -15,10 +16,7 @@ namespace AzerothWarsCSharp.TestSource.Quests
       CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), FourCC("uaco"), 0, 0, 0);
       CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), FourCC("uaco"), 0, 0, 0);
       CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), FourCC("uaco"), 0, 0, 0);
-      AddQuestItem(new QuestItemEitherOf(new QuestItemKillUnit(acolyte),
-        new QuestItemAnyUnitInRect(new Rectangle(-813, -183, -460, 183), "that square to the left", false)));
-      AddQuestItem(new QuestItemResearch(FourCC("Rhde"), FourCC("Hbar")));
-      AddQuestItem(new QuestItemTrain(FourCC("hfoo"), FourCC("Hbar"), 3));
+      AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.Killmaim, new Rectangle(-813, -183, -460, 183), "over here"));
     }
 
     protected override string RewardDescription => "Just the greatest things.";
