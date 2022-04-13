@@ -14,10 +14,10 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     private readonly region _target;
     private readonly rect _targetRect;
 
-    public QuestItemLegendReachRect(Legend legend, rect targetRect, string rectName)
+    public QuestItemLegendReachRect(Legend legend, Rectangle targetRect, string rectName)
     {
-      _target = RectToRegion(targetRect);
-      _targetRect = targetRect;
+      _targetRect = targetRect.Rect;
+      _target = RectToRegion(_targetRect);
       _legend = legend;
       Description = legend.Name + " reaches " + rectName;
       TriggerRegisterEnterRegion(_entersRect.Trigger, _target, null);
