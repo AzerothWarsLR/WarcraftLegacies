@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Events;
@@ -103,17 +104,15 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       get => _scoreStatus;
       set
       {
-        var i = 0;
         //Change defeated/undefeated researches
-        if (value == ScoreStatus.Defeated)
-          while (true)
+        foreach (var player in GetAllPlayers())
+        {
+          if (value == ScoreStatus.Defeated)
           {
-            if (i == bj_MAX_PLAYERS) break;
-
-            SetPlayerTechResearched(Player(i), _defeatedResearch, 1);
-            SetPlayerTechResearched(Player(i), _undefeatedResearch, 0);
-            i += 1;
+            SetPlayerTechResearched(player, _defeatedResearch, 1);
+            SetPlayerTechResearched(player, _undefeatedResearch, 0);
           }
+        }
 
         //Remove player from game if necessary
         if (value == ScoreStatus.Defeated && Player != null)
@@ -424,28 +423,20 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// </summary>
     public void Obliterate()
     {
-      group tempGroup = CreateGroup();
-
       //Take away resources
       SetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD, 0);
       SetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER, 0);
 
       //Give all units to Neutral Victim
-      GroupEnumUnitsOfPlayer(tempGroup, Player, null);
-      while (true)
+      foreach (var unit in new GroupWrapper().EnumUnitsOfPlayer(Player).EmptyToList())
       {
-        unit u = FirstOfGroup(tempGroup);
-        if (u == null) break;
+        UnitType tempUnitType = UnitType.GetFromHandle(unit);
+        if (!UnitAlive(unit)) 
+          RemoveUnit(unit);
 
-        UnitType tempUnitType = UnitType.GetFromHandle(u);
-        if (!UnitAlive(u)) RemoveUnit(u);
-
-        if (!tempUnitType.Meta) SetUnitOwner(u, Player(bj_PLAYER_NEUTRAL_VICTIM), false);
-
-        GroupRemoveUnit(tempGroup, u);
+        if (!tempUnitType?.Meta == true) 
+          SetUnitOwner(unit, Player(bj_PLAYER_NEUTRAL_VICTIM), false);
       }
-
-      DestroyGroup(tempGroup);
     }
 
     /// <summary>

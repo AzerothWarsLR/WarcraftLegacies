@@ -40,9 +40,9 @@ namespace AzerothWarsCSharp.MacroTools
     /// <summary>
     /// Returns the UnitType representation of a unit on the map.
     /// </summary>
-    public static UnitType GetFromHandle(unit whichUnit)
+    public static UnitType? GetFromHandle(unit whichUnit)
     {
-      return ById[GetUnitTypeId(whichUnit)];
+      return ById.TryGetValue(GetUnitTypeId(whichUnit), out var unitType) ? unitType : null;
     }
 
     /// <summary>
