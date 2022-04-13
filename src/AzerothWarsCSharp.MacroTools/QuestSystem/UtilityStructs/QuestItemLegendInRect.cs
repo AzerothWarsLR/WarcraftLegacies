@@ -16,10 +16,10 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     private readonly rect _targetRect;
 
 
-    public QuestItemLegendInRect(Legend legend, rect targetRect, string rectName)
+    public QuestItemLegendInRect(Legend legend, Rectangle targetRect, string rectName)
     {
-      _target = RectToRegion(targetRect);
-      _targetRect = targetRect;
+      _targetRect = targetRect.Rect;
+      _target = RectToRegion(_targetRect);
       _legend = legend;
       Description = legend.Name + " is at " + rectName;
       TriggerRegisterEnterRegion(_entersRect.Trigger, _target, null);
