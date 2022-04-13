@@ -18,7 +18,6 @@ namespace AzerothWarsCSharp.Source.Setup
     public static Artifact? ArtifactHelmofdomination { get; private set; }
     public static Artifact? ArtifactDrektharsspellbook { get; private set; }
     public static Artifact? ArtifactScepterofthequeen { get; private set; }
-    public static Artifact? ArtifactScytheofelune { get; private set; }
     public static Artifact? ArtifactBookofmedivh { get; private set; }
     public static Artifact? ArtifactSoulgem { get; private set; }
     public static Artifact? ArtifactHornofcenarius { get; private set; }
@@ -188,11 +187,6 @@ namespace AzerothWarsCSharp.Source.Setup
         Description = "Draenei Quest"
       };
       ArtifactSystem.Register(ArtifactCrowntriumvirate);
-
-      ArtifactScytheofelune = new Artifact(CreateItem(FourCC("I00R"), DUMMY_X, DUMMY_Y));
-      UnitAddAbility(PreplacedUnitSystem.GetUnitByUnitType(FourCC("Hgam_1450")), Artifact.ArtifactHolderAbilId); //Arugal
-      UnitAddItem(PreplacedUnitSystem.GetUnitByUnitType(FourCC("Hgam")), ArtifactScytheofelune.Item); //Arugal
-      ArtifactSystem.Register(ArtifactScytheofelune);
 
       ArtifactThunderfury = new Artifact(CreateItem(FourCC("I00Z"), DUMMY_X, DUMMY_Y))
       {

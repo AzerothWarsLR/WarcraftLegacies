@@ -17,6 +17,7 @@ namespace AzerothWarsCSharp.TestSource.Setup.FactionSetup.FactionSetup
         StartingLumber = 500,
         Team = TeamSetup.TeamAlliance
       };
+      BlackEmpire.ModObjectLimit(FourCC("hfoo"), 5);
 
       var power = new DummyPower("Waygates",
         "Allows you to construct 2 Waygates, which enable teleportation between them.",

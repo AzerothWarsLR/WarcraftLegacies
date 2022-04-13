@@ -4,9 +4,8 @@ using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static AzerothWarsCSharp.MacroTools.Libraries.Display;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-using AzerothWarsCSharp.Source.Legends;
 using AzerothWarsCSharp.Source.Setup;
-
+using AzerothWarsCSharp.Source.Setup.Legends;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Stormwind

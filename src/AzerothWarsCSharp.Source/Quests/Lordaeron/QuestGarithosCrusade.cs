@@ -2,9 +2,8 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-using AzerothWarsCSharp.Source.Legends;
 using AzerothWarsCSharp.Source.Setup;
-
+using AzerothWarsCSharp.Source.Setup.Legends;
 using static War3Api.Common; using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron

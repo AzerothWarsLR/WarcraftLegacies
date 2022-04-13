@@ -3,7 +3,7 @@ using Legend = AzerothWarsCSharp.MacroTools.FactionSystem.Legend;
 
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.Legends
+namespace AzerothWarsCSharp.Source.Setup.Legends
 {
   public static class LegendFrostwolf
   {

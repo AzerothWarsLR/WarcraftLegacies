@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Events;
@@ -43,9 +42,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private readonly Dictionary<int, int> _objectLimits = new();
     private readonly List<Power> _powers = new();
     private readonly List<QuestData> _quests = new();
-
-    private readonly Dictionary<int, int> _unitTypeByCategory = new();
-
+    
     private string _icon;
 
     private string _name;
@@ -65,7 +62,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     ///   Fired when the <see cref="Faction" /> gains a <see cref="Power" />.
     /// </summary>
     public EventHandler<FactionPowerEventArgs>? PowerAdded;
-    
+
     /// <summary>
     ///   Fired when the <see cref="Faction" /> loses a <see cref="Power" />.
     /// </summary>
@@ -106,13 +103,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       {
         //Change defeated/undefeated researches
         foreach (var player in GetAllPlayers())
-        {
           if (value == ScoreStatus.Defeated)
           {
             SetPlayerTechResearched(player, _defeatedResearch, 1);
             SetPlayerTechResearched(player, _undefeatedResearch, 0);
           }
-        }
 
         //Remove player from game if necessary
         if (value == ScoreStatus.Defeated && Player != null)
@@ -314,7 +309,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     }
 
     /// <summary>
-    /// Removes a <see cref="Power"/> from this <see cref="Faction"/>.
+    ///   Removes a <see cref="Power" /> from this <see cref="Faction" />.
     /// </summary>
     public void RemovePower(Power power)
     {
@@ -342,14 +337,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         Team = newTeam;
       }
     }
-
-    public int GetUnitTypeByCategory(int unitCategory)
-    {
-      return _unitTypeByCategory[unitCategory];
-    }
-
-    //Shows all of the Faction)s quest, rendering them in the quest log,
-    //showing them on the minimap, and showing them on the map.
+    
+    /// <summary>
+    /// Shows all of the Faction's quest, rendering them in the quest log,
+    /// showing them on the minimap, and showing them on the map.
+    /// </summary>
     private void ShowAllQuests()
     {
       foreach (var quest in _quests)
@@ -391,30 +383,23 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       Person?.SetObjectLevel(obj, level);
     }
 
-    public bool HasObjectLimit(int objectId)
+    /// <summary>
+    ///   Changes the limit of the given object that the <see cref="Faction" /> can train, build, or research.
+    /// </summary>
+    /// <param name="objectId">The object ID to modify the limit of.</param>
+    /// <param name="limit">The amount to adjust the limit by.</param>
+    public void ModObjectLimit(int objectId, int limit)
     {
-      return _objectLimits.ContainsKey(objectId);
-    }
-
-    public void ModObjectLimit(int id, int limit)
-    {
-      if (HasObjectLimit(id))
-      {
-        _objectLimits[id] += limit;
-      }
+      if (_objectLimits.ContainsKey(objectId))
+        _objectLimits[objectId] += limit;
       else
-      {
-        _objectLimits[id] = limit;
-        ;
-      }
+        _objectLimits.Add(objectId, limit);
 
       //If a Person has this Faction, adjust their techtree as well
-      Person?.ModObjectLimit(id, limit);
+      Person?.ModObjectLimit(objectId, limit);
 
-      if (_objectLimits[id] == 0) _objectLimits.Remove(id);
-
-      //Index the unit type to a unit category if possible and necessary
-      _unitTypeByCategory[UnitType.GetFromId(id).UnitCategory] = id;
+      if (_objectLimits[objectId] == 0)
+        _objectLimits.Remove(objectId);
     }
 
     /// <summary>
@@ -431,10 +416,10 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       foreach (var unit in new GroupWrapper().EnumUnitsOfPlayer(Player).EmptyToList())
       {
         UnitType tempUnitType = UnitType.GetFromHandle(unit);
-        if (!UnitAlive(unit)) 
+        if (!UnitAlive(unit))
           RemoveUnit(unit);
 
-        if (!tempUnitType?.Meta == true) 
+        if (!tempUnitType?.Meta == true)
           SetUnitOwner(unit, Player(bj_PLAYER_NEUTRAL_VICTIM), false);
       }
     }

@@ -1,8 +1,7 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
-using AzerothWarsCSharp.Source.Legends;
 using AzerothWarsCSharp.Source.Quests.Scourge;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
-
+using AzerothWarsCSharp.Source.Setup.Legends;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Mechanics.Scourge

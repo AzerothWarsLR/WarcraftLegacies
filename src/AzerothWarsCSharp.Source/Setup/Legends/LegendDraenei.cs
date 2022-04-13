@@ -2,7 +2,7 @@ using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.Legends
+namespace AzerothWarsCSharp.Source.Setup.Legends
 {
   public static class LegendDraenei{
 

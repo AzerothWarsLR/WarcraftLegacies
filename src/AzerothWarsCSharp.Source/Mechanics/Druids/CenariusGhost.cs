@@ -1,6 +1,6 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
-using AzerothWarsCSharp.Source.Legends;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
+using AzerothWarsCSharp.Source.Setup.Legends;
 
 namespace AzerothWarsCSharp.Source.Mechanics.Druids
 {

@@ -2,8 +2,7 @@ using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-using AzerothWarsCSharp.Source.Legends;
-
+using AzerothWarsCSharp.Source.Setup.Legends;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Warsong

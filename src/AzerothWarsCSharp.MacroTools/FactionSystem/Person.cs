@@ -1,31 +1,32 @@
 using System;
 using System.Collections.Generic;
-using static War3Api.Common; using static War3Api.Blizzard;
+using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
   public sealed class Person
   {
-    public static event EventHandler<PersonFactionChangeEventArgs>? FactionChange;
     private static readonly Dictionary<int, Person> ById = new();
+    private readonly Dictionary<int, int> _objectLevels = new();
 
-    private Faction? _faction;
+    private readonly Dictionary<int, int> _objectLimits = new();
     private int _controlPointCount;
     private float _controlPointValue; //Gold per minute
 
+    private Faction? _faction;
+
     private float _partialGold; //Just used for income calculations
 
-    private readonly Dictionary<int, int> _objectLimits = new();
-    private readonly Dictionary<int, int> _objectLevels = new();
-
-    public player Player
+    public Person(player player)
     {
-      get;
-      set;
+      Player = player;
     }
 
+    public player Player { get; set; }
+
     /// <summary>
-    /// Controls name, available objects, color, and icon.
+    ///   Controls name, available objects, color, and icon.
     /// </summary>
     public Faction? Faction
     {
@@ -33,15 +34,12 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       set
       {
         Faction prevFaction = Faction;
-        
+
         //Unapply old faction
         if (_faction != null)
         {
           _faction = null;
-          if (prevFaction != null)
-          {
-            prevFaction.Person = null; //Referential integrity
-          }
+          if (prevFaction != null) prevFaction.Person = null; //Referential integrity
         }
 
         //Apply new faction
@@ -52,10 +50,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
             SetPlayerColorBJ(Player, value.PlayerColor, true);
             _faction = value;
             //Enforce referential integrity
-            if (value.Person != this)
-            {
-              value.Person = this;
-            }
+            if (value.Person != this) value.Person = this;
           }
           else
           {
@@ -74,10 +69,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       set
       {
         if (value < 0)
-        {
           throw new ArgumentOutOfRangeException(
-            $"Tried to assign a negative ControlPointValue value to + {GetPlayerName(this.Player)}");
-        }
+            $"Tried to assign a negative ControlPointValue value to + {GetPlayerName(Player)}");
 
         _controlPointValue = value;
       }
@@ -89,14 +82,14 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       set
       {
         if (value < 0)
-        {
           throw new ArgumentOutOfRangeException(
             $"Tried to assign a negative {nameof(ControlPointCount)} to + {GetPlayerName(Player)}");
-        }
 
         _controlPointCount = value;
       }
     }
+
+    public static event EventHandler<PersonFactionChangeEventArgs>? FactionChange;
 
     public int GetObjectLevel(int obj)
     {
@@ -111,10 +104,10 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     public int GetObjectLimit(int id)
     {
-      return _objectLimits[id];
+      return _objectLimits.TryGetValue(id, out var limit) ? limit : 0;
     }
 
-    public void SetObjectLimit(int id, int limit)
+    private void SetObjectLimit(int id, int limit)
     {
       _objectLimits[id] = limit;
       SetObjectLevel(id, IMinBJ(GetPlayerTechCount(Player, id, true), limit));
@@ -128,23 +121,21 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     public void ModObjectLimit(int id, int limit)
     {
-      SetObjectLimit(id, _objectLimits[id] + limit);
+      SetObjectLimit(id, GetObjectLimit(id) + limit);
     }
 
     public void AddGold(float x)
     {
-      var fullGold = (float)Math.Floor(x);
+      var fullGold = (float) Math.Floor(x);
       var remainderGold = x - fullGold;
 
-      SetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD, GetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD) + R2I(fullGold));
+      SetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD,
+        GetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD) + R2I(fullGold));
       _partialGold += remainderGold;
 
       while (true)
       {
-        if (_partialGold < 1)
-        {
-          break;
-        }
+        if (_partialGold < 1) break;
 
         _partialGold -= 1;
         SetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD, GetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD) + 1);
@@ -157,14 +148,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     }
 
     /// <summary>
-    /// Retrieves the <see cref="Person"/> object which contains information about the given <see cref="player"/>.
+    ///   Retrieves the <see cref="Person" /> object which contains information about the given <see cref="player" />.
     /// </summary>
     public static Person ByHandle(player whichPlayer)
     {
-      if (ById.TryGetValue(GetPlayerId(whichPlayer), out var person))
-      {
-        return person;
-      }
+      if (ById.TryGetValue(GetPlayerId(whichPlayer), out var person)) return person;
 
       var newPerson = new Person(whichPlayer);
       Register(newPerson);
@@ -172,16 +160,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     }
 
     /// <summary>
-    /// Register a <see cref="Person"/> to the Person system.
+    ///   Register a <see cref="Person" /> to the Person system.
     /// </summary>
     public static void Register(Person person)
     {
       ById[GetPlayerId(person.Player)] = person;
-    }
-    
-    public Person(player player)
-    {
-      Player = player;
     }
   }
 }

@@ -2,7 +2,7 @@ using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.Legends
+namespace AzerothWarsCSharp.Source.Setup.Legends
 {
   public static class LegendNeutral
   {
@@ -201,11 +201,6 @@ namespace AzerothWarsCSharp.Source.Legends
       LegendSaragosa = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("nadr"))
-      };
-
-      LegendArugal = new Legend
-      {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("Hgam"))
       };
 
       LegendCaerdarrow = new Legend

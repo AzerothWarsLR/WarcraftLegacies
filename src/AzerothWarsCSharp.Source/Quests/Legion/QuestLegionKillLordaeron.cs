@@ -2,7 +2,7 @@ using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-using AzerothWarsCSharp.Source.Legends;
+using AzerothWarsCSharp.Source.Setup.Legends;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Legion

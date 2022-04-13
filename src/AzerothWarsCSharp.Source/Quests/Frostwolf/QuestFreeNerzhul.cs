@@ -1,7 +1,7 @@
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-using AzerothWarsCSharp.Source.Legends;
+using AzerothWarsCSharp.Source.Setup.Legends;
 
 namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 {
