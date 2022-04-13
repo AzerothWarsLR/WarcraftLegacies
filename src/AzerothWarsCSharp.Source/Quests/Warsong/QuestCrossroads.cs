@@ -43,7 +43,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
 
     public QuestCrossroads(rect rescueRect) : base("The Crossroads", "The Horde still needs to establish a strong strategic foothold into Kalimdor. There is an opportune crossroads nearby.", "ReplaceableTextures\\CommandButtons\\BTNBarracks.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nzrm")))); //Razorman Medicine Man
+      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nrzm")))); //Razorman Medicine Man
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01T"))));
       AddQuestItem(new QuestItemExpire(1460));
       AddQuestItem(new QuestItemSelfExists());
