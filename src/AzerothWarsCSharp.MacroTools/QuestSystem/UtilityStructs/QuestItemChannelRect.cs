@@ -57,10 +57,10 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       channel.Dispose();
     }
 
-    public QuestItemChannelRect(rect targetRect, string rectName, Legend whichLegend, float duration, float facing)
+    public QuestItemChannelRect(Rectangle targetRect, string rectName, Legend whichLegend, float duration, float facing)
     {
-      region target = RectToRegion(targetRect);
-      _targetRect = targetRect;
+      _targetRect = targetRect.Rect;
+      region target = RectToRegion(_targetRect);
       _targetLegend = whichLegend;
       _duration = duration;
       Description = $"Have {whichLegend.Name} channel at {rectName} for {I2S(R2I(duration))} seconds";

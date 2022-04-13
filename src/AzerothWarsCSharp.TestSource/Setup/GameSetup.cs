@@ -1,6 +1,7 @@
 ﻿using System;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.Artifacts;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Frames.Books.Powers;
 using AzerothWarsCSharp.MacroTools.UserInterface;
 
@@ -11,7 +12,9 @@ namespace AzerothWarsCSharp.TestSource.Setup
     public static void Setup()
     {
       Console.WriteLine("Setting up Legend...");
-      //Legend.Setup();
+      Legend.Setup();
+      Console.WriteLine("Setting up LegendSetup...");
+      LegendSetup.Setup();
       Console.WriteLine("Setting up ShoreSetup...");
       //ShoreSetup.Setup();
       Console.WriteLine("Setting up InstanceSetup...");

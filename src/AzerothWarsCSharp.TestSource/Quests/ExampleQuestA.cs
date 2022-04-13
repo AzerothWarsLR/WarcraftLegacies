@@ -11,12 +11,7 @@ namespace AzerothWarsCSharp.TestSource.Quests
     public ExampleQuestA() : base("Example Quest", "You have to do something fun.",
       "ReplaceableTextures\\CommandButtons\\BTNAcolyte.blp")
     {
-      var acolyte = CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), FourCC("uaco"), 0, 0, 0);
-      CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), FourCC("uaco"), 0, 0, 0);
-      CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), FourCC("uaco"), 0, 0, 0);
-      CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), FourCC("uaco"), 0, 0, 0);
-      CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), FourCC("uaco"), 0, 0, 0);
-      AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.Killmaim, new Rectangle(-813, -183, -460, 183), "over here"));
+      AddQuestItem(new QuestItemChannelRect(new Rectangle(-813, -183, -460, 183), "over here", LegendSetup.Kael, 7, 180));
     }
 
     protected override string RewardDescription => "Just the greatest things.";
