@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
@@ -17,7 +18,8 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
     private static PowerBook _instance;
 
     private Faction _trackedFaction;
-
+    private readonly Dictionary<Power, PowerPage> _pagesByPower = new();
+    
     private PowerBook(float width, float height, float bottomButtonXOffset, float bottomButtonYOffset) : base(width,
       height, bottomButtonXOffset, bottomButtonYOffset)
     {
@@ -27,6 +29,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
       LauncherPosition = new Point(0.15f, 0.56f);
       Position = new Point(0.4f, 0.36f);
       TrackedFaction = Person.ByHandle(GetLocalPlayer()).Faction;
+      Person.FactionChange += OnPersonChangeFaction;
     }
 
     /// <summary>
@@ -37,11 +40,18 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
       get => _trackedFaction;
       set
       {
-        if (_trackedFaction != null) _trackedFaction.PowerAdded -= OnFactionAddPower;
+        if (_trackedFaction != null)
+        {
+          _trackedFaction.PowerAdded -= OnFactionAddPower;
+          _trackedFaction.PowerRemoved -= OnFactionRemovePower;
+          RemoveAllPowers(_trackedFaction);
+        }
+          
 
         if (_trackedFaction == value) return;
         _trackedFaction = value;
         _trackedFaction.PowerAdded += OnFactionAddPower;
+        _trackedFaction.PowerRemoved += OnFactionRemovePower;
         AddAllPowers(value);
       }
     }
@@ -51,10 +61,27 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
       AddPower(factionPowerEventArgs.Power);
     }
 
-    private void OnFactionRemovePower()
+    private void OnPersonChangeFaction(object? sender, PersonFactionChangeEventArgs args)
     {
+      if (args.Person == Person.ByHandle(GetLocalPlayer()))
+      {
+        TrackedFaction = args.Person.Faction;
+      }
+    }
+    
+    private void OnFactionRemovePower(object? sender, FactionPowerEventArgs factionPowerEventArgs)
+    {
+      RemovePower(factionPowerEventArgs.Power);
     }
 
+    private void RemoveAllPowers(Faction faction)
+    {
+      foreach (var power in faction.GetAllPowers())
+      {
+        RemovePower(power);
+      }
+    }
+    
     private void AddAllPowers(Faction faction)
     {
       foreach (var power in faction.GetAllPowers())
@@ -71,6 +98,13 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
       }
 
       lastPage.AddPower(power);
+      _pagesByPower.Add(power, lastPage);
+    }
+
+    private void RemovePower(Power power)
+    {
+      _pagesByPower[power].RemovePower(power);
+      _pagesByPower.Remove(power);
     }
 
     private static void LoadToc(string tocFilePath)

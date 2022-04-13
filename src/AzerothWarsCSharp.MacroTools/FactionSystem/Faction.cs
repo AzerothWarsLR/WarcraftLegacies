@@ -64,6 +64,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     ///   Fired when the <see cref="Faction" /> gains a <see cref="Power" />.
     /// </summary>
     public EventHandler<FactionPowerEventArgs>? PowerAdded;
+    
+    /// <summary>
+    ///   Fired when the <see cref="Faction" /> loses a <see cref="Power" />.
+    /// </summary>
+    public EventHandler<FactionPowerEventArgs>? PowerRemoved;
 
     public EventHandler<Faction> ScoreStatusChanged;
 
@@ -307,6 +312,15 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     {
       _powers.Add(power);
       PowerAdded?.Invoke(this, new FactionPowerEventArgs(this, power));
+    }
+
+    /// <summary>
+    /// Removes a <see cref="Power"/> from this <see cref="Faction"/>.
+    /// </summary>
+    public void RemovePower(Power power)
+    {
+      _powers.Remove(power);
+      PowerRemoved?.Invoke(this, new FactionPowerEventArgs(this, power));
     }
 
     /// <summary>

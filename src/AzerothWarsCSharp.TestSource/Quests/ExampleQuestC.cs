@@ -1,20 +1,32 @@
-﻿using AzerothWarsCSharp.MacroTools.QuestSystem;
+﻿using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Powers;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.TestSource.Setup;
 using static War3Api.Common;
 
 public sealed class ExampleQuestC : QuestData
 {
+  private Power _zerglingPower;
+  
   public ExampleQuestC(QuestData otherQuest) : base("Free Zergling", "We really need a free Zergling.",
     "ReplaceableTextures\\CommandButtons\\BTNZergling.blp")
   {
-    AddQuestItem(new QuestItemCompleteQuest(otherQuest));
+    AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.Killmaim));
+    _zerglingPower = new DummyPower("Zerglings", "Spawn zerglings constantly.", "Zergling");
   }
 
   protected override string RewardDescription => "A free Zergling";
   protected override string CompletionPopup => "Congratulations on your free Zergling!";
 
+  protected override void OnAdd()
+  {
+    Holder.AddPower(_zerglingPower);
+  }
+  
   protected override void OnComplete()
   {
     CreateUnit(Holder.Player, FourCC("zzrg"), 0, 0, 0);
+    Holder.RemovePower(_zerglingPower);
   }
 }

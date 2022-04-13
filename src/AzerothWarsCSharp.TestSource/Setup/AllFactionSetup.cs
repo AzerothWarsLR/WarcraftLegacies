@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Powers;
 using AzerothWarsCSharp.TestSource.Setup.FactionSetup.FactionSetup;
 using static War3Api.Common;
 
@@ -19,6 +20,8 @@ namespace AzerothWarsCSharp.TestSource.Setup
       {
         Team = TeamSetup.TeamAlliance
       };
+      var newPower = new DummyPower("Space", "You're from space, and can use spaceships.", "Marine");
+      spaceMarines.AddPower(newPower);
       FactionManager.Register(spaceMarines);
     }
   }
