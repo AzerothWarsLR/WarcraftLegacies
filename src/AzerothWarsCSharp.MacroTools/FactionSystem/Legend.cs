@@ -335,11 +335,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       if (IsUnitType(_unit, UNIT_TYPE_HERO))
       {
         effect tempEffect = AddSpecialEffect(DeathSfx, GetUnitX(_unit), GetUnitY(_unit));
-        BlzSetSpecialEffectScale(tempEffect, 20);
+        BlzSetSpecialEffectScale(tempEffect, 2);
         DestroyEffect(tempEffect);
         if (_unit != null)
         {
-          GeneralHelpers.UnitDropAllItems(_unit);
+          UnitDropAllItems(_unit);
           RemoveUnit(_unit);
         }
       }
