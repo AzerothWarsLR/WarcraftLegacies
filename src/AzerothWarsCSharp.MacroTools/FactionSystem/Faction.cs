@@ -40,6 +40,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private readonly Dictionary<int, int> _objectLevels = new();
 
     private readonly Dictionary<int, int> _objectLimits = new();
+    private readonly List<Power> _powers = new();
     private readonly List<QuestData> _quests = new();
 
     private readonly Dictionary<int, int> _unitTypeByCategory = new();
@@ -58,6 +59,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private int _undefeatedResearch;
 
     private int _xp; //Stored by DistributeUnits and given out again by DistributeResources
+
+    /// <summary>
+    ///   Fired when the <see cref="Faction" /> gains a <see cref="Power" />.
+    /// </summary>
+    public EventHandler<FactionPowerEventArgs>? PowerAdded;
 
     public EventHandler<Faction> ScoreStatusChanged;
 
@@ -295,6 +301,15 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     }
 
     /// <summary>
+    ///   Adds a <see cref="Power" /> to this <see cref="Faction" />.
+    /// </summary>
+    public void AddPower(Power power)
+    {
+      _powers.Add(power);
+      PowerAdded?.Invoke(this, new FactionPowerEventArgs(this, power));
+    }
+
+    /// <summary>
     ///   Unallies the <see cref="Faction" /> from all of its allies, creating a new <see cref="Team" />
     ///   based on its name.
     /// </summary>
@@ -417,6 +432,14 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
 
       DestroyGroup(tempGroup);
+    }
+
+    /// <summary>
+    ///   Returns all <see cref="Power" />s this <see cref="Faction" /> has.
+    /// </summary>
+    public IEnumerable<Power> GetAllPowers()
+    {
+      foreach (var power in _powers) yield return power;
     }
 
     private void DistributeExperience()

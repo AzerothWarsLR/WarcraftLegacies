@@ -12,20 +12,53 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
     private const float BottomButtonXOffset = 0.02f;
     private const float BookWidth = 0.25f;
     private const float BookHeight = 0.39f;
-    
-    private static PowerBook? _instance;
+
     private static bool _initialized;
+    private static PowerBook _instance;
+
+    private Faction _trackedFaction;
 
     private PowerBook(float width, float height, float bottomButtonXOffset, float bottomButtonYOffset) : base(width,
       height, bottomButtonXOffset, bottomButtonYOffset)
     {
-      FactionManager.PowerAdded += OnFactionSystemPowerAdded;
       var firstPage = AddPage();
       firstPage.Visible = true;
-      AddAllPowers();
       BookTitle = "Powers";
       LauncherPosition = new Point(0.15f, 0.56f);
       Position = new Point(0.4f, 0.36f);
+      TrackedFaction = Person.ByHandle(GetLocalPlayer()).Faction;
+    }
+
+    /// <summary>
+    ///   The <see cref="PowerBook" /> displays the <see cref="Power" />s of this <see cref="Faction" />.
+    /// </summary>
+    public Faction TrackedFaction
+    {
+      get => _trackedFaction;
+      set
+      {
+        if (_trackedFaction != null) _trackedFaction.PowerAdded -= OnFactionAddPower;
+
+        if (_trackedFaction == value) return;
+        _trackedFaction = value;
+        _trackedFaction.PowerAdded += OnFactionAddPower;
+        AddAllPowers(value);
+      }
+    }
+
+    private void OnFactionAddPower(object? sender, FactionPowerEventArgs factionPowerEventArgs)
+    {
+      AddPower(factionPowerEventArgs.Power);
+    }
+
+    private void OnFactionRemovePower()
+    {
+    }
+
+    private void AddAllPowers(Faction faction)
+    {
+      foreach (var power in faction.GetAllPowers())
+        AddPower(power);
     }
 
     private void AddPower(Power power)
@@ -36,22 +69,13 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
         AddPage();
         lastPage = Pages.Last();
       }
-      lastPage.AddPower(power);
-    }
 
-    private void AddAllPowers()
-    {
-      foreach (var power in FactionManager.GetAllPowers()) AddPower(power);
+      lastPage.AddPower(power);
     }
 
     private static void LoadToc(string tocFilePath)
     {
       if (!BlzLoadTOCFile(tocFilePath)) throw new Exception($"Failed to load TOC {tocFilePath}");
-    }
-
-    private void OnFactionSystemPowerAdded(object? sender, Power power)
-    {
-      AddPower(power);
     }
 
     public static void Initialize()
@@ -63,11 +87,6 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
         _instance = new PowerBook(BookWidth, BookHeight, BottomButtonXOffset, BottomButtonYOffset);
         _initialized = true;
       }
-    }
-
-    protected override void DisposeEvents()
-    {
-      FactionManager.PowerAdded -= OnFactionSystemPowerAdded;
     }
   }
 }
