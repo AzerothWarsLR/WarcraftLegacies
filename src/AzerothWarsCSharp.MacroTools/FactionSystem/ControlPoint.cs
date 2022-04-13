@@ -59,8 +59,10 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public static event EventHandler<ControlPoint>? OnControlPointLoss;
     public static event EventHandler<ControlPointOwnerChangeEventArgs>? OnControlPointOwnerChange;
 
-    private void ChangeOwner(player p)
+    private void ChangeOwner()
     {
+      var p = GetTriggerPlayer();
+      
       Person person = Person.ByHandle(_owner);
 
       person.ControlPointValue -= _value;
@@ -104,19 +106,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
       controlPoint.OwningPerson.ControlPointValue += controlPoint._value;
       controlPoint.OwningPerson.ControlPointCount += 1;
-    }
-
-    private static void UnitChangesOwner()
-    {
-      if (ByUnit.ContainsKey(GetTriggerUnit()))
-      {
-        ByUnit[GetTriggerUnit()].ChangeOwner(GetTriggerPlayer());
-      }
-    }
-
-    public static void Setup()
-    {
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeChangesOwner, UnitChangesOwner);
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeChangesOwner, controlPoint.ChangeOwner, controlPoint.UnitType);
     }
   }
 }
