@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       "ReplaceableTextures\\CommandButtons\\BTNfuryoftheair.blp")
     {
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BD"))));
-      AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.ArtifactThunderfury, Regions.UldumAmbiance.Rect, "Uldum"));
+      AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.ArtifactThunderfury, Regions.UldumAmbiance, "Uldum"));
       ResearchId = FourCC("R07T");
     }
     

@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       "The nethergarde fort is holding down the Dark Portal, they will need to be reinforced soon!",
       "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionBarracks.blp")
     {
-      AddQuestItem(new QuestItemLegendInRect(LegendStormwind.LegendVarian, Regions.NethergardeUnlock.Rect, "Nethergarde"));
+      AddQuestItem(new QuestItemLegendInRect(LegendStormwind.LegendVarian, Regions.NethergardeUnlock, "Nethergarde"));
       AddQuestItem(new QuestItemExpire(1440));
       AddQuestItem(new QuestItemSelfExists());
     }

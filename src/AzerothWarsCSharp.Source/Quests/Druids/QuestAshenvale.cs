@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       "ReplaceableTextures\\CommandButtons\\BTNKeeperC.blp")
     {
       AddQuestItem(
-        new QuestItemLegendReachRect(LegendDruids.LegendMalfurion, Regions.AshenvaleUnlock.Rect, "Ashenvale"));
+        new QuestItemLegendReachRect(LegendDruids.LegendMalfurion, Regions.AshenvaleUnlock, "Ashenvale"));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n07C"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01Q"))));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08U"))));

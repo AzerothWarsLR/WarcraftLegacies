@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
   {
     public QuestThunderfury() : base("Blessed Blade of the Windseeker", "The legendary sword, Thunderfury, has been lost somewhere in the Broken Isles, Cho'gall has seen it in a vision. It will be a great asset to the Old Gods", "ReplaceableTextures\\CommandButtons\\BTNThunderfury2.blp")
     {
-      AddQuestItem(new QuestItemLegendInRect(LegendFelHorde.LegendChogall, Regions.Broken_Isles.Rect, "The Broken Isles"));
+      AddQuestItem(new QuestItemLegendInRect(LegendFelHorde.LegendChogall, Regions.Broken_Isles, "The Broken Isles"));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n05Y"))));
     }
     

@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       "ReplaceableTextures\\CommandButtons\\BTNSorceressMaster.blp")
     {
       AddQuestItem(new QuestItemControlLegend(LegendDruids.LegendNordrassil, false));
-      AddQuestItem(new QuestItemLegendInRect(LegendFrostwolf.LegendThrall, Regions.Drekthars_Spellbook.Rect,
+      AddQuestItem(new QuestItemLegendInRect(LegendFrostwolf.LegendThrall, Regions.Drekthars_Spellbook,
         "Nordrassil"));
     }
 

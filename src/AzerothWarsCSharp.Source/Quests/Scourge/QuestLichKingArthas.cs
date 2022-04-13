@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       AddQuestItem(new QuestItemControlLegend(LegendLordaeron.LegendArthas, false));
       AddQuestItem(new QuestItemLegendLevel(LegendLordaeron.LegendArthas, 12));
       AddQuestItem(new QuestItemResearch(FourCC("R07X"), FourCC("u000")));
-      AddQuestItem(new QuestItemLegendInRect(LegendLordaeron.LegendArthas, Regions.LichKing.Rect, "Icecrown Citadel"));
+      AddQuestItem(new QuestItemLegendInRect(LegendLordaeron.LegendArthas, Regions.LichKing, "Icecrown Citadel"));
       Global = true;
     }
 

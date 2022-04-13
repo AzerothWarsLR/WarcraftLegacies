@@ -16,8 +16,8 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       "ReplaceableTextures\\CommandButtons\\BTNGeneralVezax.blp")
     {
       AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactXalatath));
-      AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.ArtifactXalatath, Regions.TyrsFall.Rect, "Tyr's Fall"));
-      AddQuestItem(new QuestItemChannelRect(Regions.TyrsFall.Rect, "The Tomb of Tyr", LegendBlackEmpire.legendVolazj,
+      AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.ArtifactXalatath, Regions.TyrsFall, "Tyr's Fall"));
+      AddQuestItem(new QuestItemChannelRect(Regions.TyrsFall, "The Tomb of Tyr", LegendBlackEmpire.legendVolazj,
         120,
         170));
       ResearchId = QuestResearchId;

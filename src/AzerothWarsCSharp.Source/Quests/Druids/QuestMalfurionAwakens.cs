@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       "ReplaceableTextures\\CommandButtons\\BTNFurion.blp")
     {
       AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactHornofcenarius));
-      AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.ArtifactHornofcenarius, Regions.Moonglade.Rect, "The Barrow Den"));
+      AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.ArtifactHornofcenarius, Regions.Moonglade, "The Barrow Den"));
       AddQuestItem(new QuestItemExpire(1440));
       AddQuestItem(new QuestItemSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(moonglade).EmptyToList())

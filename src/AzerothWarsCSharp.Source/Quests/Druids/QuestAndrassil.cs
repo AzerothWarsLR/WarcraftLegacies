@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
     {
       AddQuestItem(new QuestItemLegendDead(LegendScourge.LegendLichking));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n03U"))));
-      this.AddQuestItem(new QuestItemAnyUnitInRect(Regions.GrizzlyHills.Rect, "Grizzly Hills", true));
+      this.AddQuestItem(new QuestItemAnyUnitInRect(Regions.GrizzlyHills, "Grizzly Hills", true));
     }
 
 

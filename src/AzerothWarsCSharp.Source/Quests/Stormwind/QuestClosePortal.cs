@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       "The Dark Portal has been a menace to the Kingdom of Stormwind for decades, it is time to end the menace once && for all.",
       "ReplaceableTextures\\CommandButtons\\BTNDarkPortal.blp")
     {
-      AddQuestItem(new QuestItemChannelRect(Regions.ClosePortal.Rect, "The Dark Portal", LegendStormwind.LegendKhadgar, 480, 270));
+      AddQuestItem(new QuestItemChannelRect(Regions.ClosePortal, "The Dark Portal", LegendStormwind.LegendKhadgar, 480, 270));
       Global = true;
     }
 

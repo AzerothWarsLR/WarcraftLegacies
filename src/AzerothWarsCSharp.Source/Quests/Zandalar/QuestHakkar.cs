@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       "ReplaceableTextures\\CommandButtons\\BTNWindSerpent2blp")
     {
       AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactZinrokh));
-      AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.ArtifactZinrokh, Regions.DrownedTemple.Rect,
+      AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.ArtifactZinrokh, Regions.DrownedTemple,
         "The Drowned Temple"));
       AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00U"))));
       Global = true;

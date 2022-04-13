@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       "ReplaceableTextures\\CommandButtons\\BTNCentaurKhan.blp")
     {
       AddQuestItem(new QuestItemLegendDead(LegendNeutral.LegendCentaurkhan));
-      AddQuestItem(new QuestItemAnyUnitInRect(Regions.ThunderBluff.Rect, "Thunder Bluff", true));
+      AddQuestItem(new QuestItemAnyUnitInRect(Regions.ThunderBluff, "Thunder Bluff", true));
       AddQuestItem(new QuestItemExpire(1455));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = FourCC("R05I");

@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       "The Orc Warlock Gul'dan is ultimately responsible for the formation of the Fel Horde. Though long dead, his teachings could still be extracted from his body.",
       "ReplaceableTextures\\CommandButtons\\BTNGuldan.blp")
     {
-      AddQuestItem(new QuestItemAnyUnitInRect(Regions.Guldan.Rect, "Gul'dan's corpse in the Tomb of Sargeras", true));
+      AddQuestItem(new QuestItemAnyUnitInRect(Regions.Guldan, "Gul'dan's corpse in the Tomb of Sargeras", true));
       ResearchId = FourCC("R041");
     }
   }

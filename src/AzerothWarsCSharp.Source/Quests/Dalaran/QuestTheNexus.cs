@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "The new Lich King calls for Jaina, tempts her with power. The Nexus needs a master, and Jaina is perfect for it.",
       "ReplaceableTextures\\CommandButtons\\BTNBlueDragonNexus.blp")
     {
-      AddQuestItem(new QuestItemChannelRect(Regions.JainaChannel.Rect, "The Nexus", LegendDalaran.LegendJaina, 60, 270));
+      AddQuestItem(new QuestItemChannelRect(Regions.JainaChannel, "The Nexus", LegendDalaran.LegendJaina, 60, 270));
       AddQuestItem(new QuestItemControlLegend(LegendDalaran.LegendJaina, true));
       AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendNexus, false));
       Global = true;

@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     {
       _naxxramas = naxxramas;
       QuestItemChannelRect questItemChannelRect =
-        new(Regions.NaxUnlock.Rect, "Naxxramas", LegendScourge.LegendKelthuzad, 60, 270)
+        new(Regions.NaxUnlock, "Naxxramas", LegendScourge.LegendKelthuzad, 60, 270)
         {
           RequiredUnitTypeId = LegendScourge.UnittypeKelthuzadLich
         };

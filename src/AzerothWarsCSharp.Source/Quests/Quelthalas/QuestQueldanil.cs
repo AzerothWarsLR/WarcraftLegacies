@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     private readonly List<unit> _rescueUnits;
     
     public QuestQueldanil(rect rescueRect) : base("Quel'danil Lodge", "Quel'danil Lodge is a High Elven outpost situated in the Hinterlands. It's been some time since the rangers there have been in contact with Quel'thalas.", "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp"){
-      AddQuestItem(new QuestItemAnyUnitInRect(Regions.QuelDanil_Lodge.Rect, "Quel'danil Lodge", true));
+      AddQuestItem(new QuestItemAnyUnitInRect(Regions.QuelDanil_Lodge, "Quel'danil Lodge", true));
       AddQuestItem(new QuestItemTime(1200));
       ResearchId = FourCC("R074");
       _rescueUnits = new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList();

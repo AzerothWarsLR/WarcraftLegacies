@@ -308,7 +308,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       }
     }
 
-    internal void DisplayDiscovered()
+    public void DisplayDiscovered()
     {
       var display = "";
       if (GetLocalPlayer() == Holder.Player)

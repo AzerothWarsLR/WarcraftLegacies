@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
       "ReplaceableTextures\\CommandButtons\\BTNHeroMastermind.blp")
     {
       AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactDemonsoul));
-      AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.ArtifactDemonsoul, Regions.WyrmrestTemple.Rect,
+      AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.ArtifactDemonsoul, Regions.WyrmrestTemple,
         "Wyrmrest Temple"));
       AddQuestItem(new QuestItemLegendDead(LegendNeutral.LegendSaragosa));
       AddQuestItem(new QuestItemLegendDead(LegendNeutral.LegendVaelastrasz));

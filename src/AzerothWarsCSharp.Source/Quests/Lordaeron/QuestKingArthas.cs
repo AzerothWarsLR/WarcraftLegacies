@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       AddQuestItem(new QuestItemLegendNotPermanentlyDead(LegendLordaeron.LegendCapitalpalace));
       AddQuestItem(new QuestItemControlLegend(LegendLordaeron.LegendArthas, true));
       AddQuestItem(new QuestItemLegendDead(LegendScourge.LegendLichking));
-      AddQuestItem(new QuestItemLegendInRect(LegendLordaeron.LegendArthas, Regions.King_Arthas_crown.Rect, "King Terenas"));
+      AddQuestItem(new QuestItemLegendInRect(LegendLordaeron.LegendArthas, Regions.King_Arthas_crown, "King Terenas"));
       ResearchId = QuestResearchId;
       _terenas = terenas;
     }

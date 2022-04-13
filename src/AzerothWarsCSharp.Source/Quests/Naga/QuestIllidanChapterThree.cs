@@ -19,8 +19,8 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       "ReplaceableTextures\\CommandButtons\\BTNNagaMyrmidon.blp")
     {
       _unitToMakeInvulnerable = unitToMakeInvulnerable;
-      AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.StartQuest3.Rect, "the exit"));
-      AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.MaelstromAmbient.Rect, "the Maelstrom"));
+      AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.StartQuest3, "the exit"));
+      AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.MaelstromAmbient, "the Maelstrom"));
       AddQuestItem(new QuestItemCastSpell(RitualId, true));
     }
     

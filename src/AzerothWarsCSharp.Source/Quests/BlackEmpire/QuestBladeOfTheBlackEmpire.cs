@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       "ReplaceableTextures\\CommandButtons\\BTNmidnightGS.blp")
     {
       _sequel = sequel;
-      AddQuestItem(new QuestItemLegendInRect(LegendBlackEmpire.legendVolazj, Regions.DuskwoodCrypt.Rect,
+      AddQuestItem(new QuestItemLegendInRect(LegendBlackEmpire.legendVolazj, Regions.DuskwoodCrypt,
         "Duskwood Graveyard Crypt"));
       AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendDuskwoodgraveyard, false));
     }

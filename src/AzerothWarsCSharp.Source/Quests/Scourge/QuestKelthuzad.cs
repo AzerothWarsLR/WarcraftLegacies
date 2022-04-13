@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       "ReplaceableTextures\\CommandButtons\\BTNLichVersion2.blp")
     {
       AddQuestItem(new QuestItemControlLegend(LegendQuelthalas.LegendSunwell, false));
-      AddQuestItem(new QuestItemLegendInRect(LegendScourge.LegendKelthuzad, Regions.Sunwell.Rect, "The Sunwell"));
+      AddQuestItem(new QuestItemLegendInRect(LegendScourge.LegendKelthuzad, Regions.Sunwell, "The Sunwell"));
     }
 
     protected override string CompletionPopup

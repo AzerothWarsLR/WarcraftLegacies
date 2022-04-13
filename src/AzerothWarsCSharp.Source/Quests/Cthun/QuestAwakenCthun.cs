@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
       "ReplaceableTextures\\CommandButtons\\BTNCthunIcon.blp")
     {
       _cthun = cthun;
-      AddQuestItem(new QuestItemChannelRect(Regions.CthunSummon.Rect, "C'thun", LegendCthun.legendSkeram, 420, 270));
+      AddQuestItem(new QuestItemChannelRect(Regions.CthunSummon, "C'thun", LegendCthun.legendSkeram, 420, 270));
       ResearchId = FourCC("R06A");
     }
   }
