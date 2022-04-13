@@ -1,5 +1,6 @@
 ﻿using System;
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.Artifacts;
 using AzerothWarsCSharp.MacroTools.Frames.Books.Powers;
 using AzerothWarsCSharp.MacroTools.UserInterface;
 
@@ -21,8 +22,10 @@ namespace AzerothWarsCSharp.TestSource.Setup
       AllFactionSetup.Setup();
       Console.WriteLine("Setting up PersonSetup...");
       PersonSetup.Setup();
+      Console.WriteLine("Setting up Artifact...");
+      Artifact.Setup();
       Console.WriteLine("Setting up ArtifactSetup...");
-      //ArtifactSetup.Setup();
+      ArtifactSetup.Setup();
       Console.WriteLine("Setting up ControlPointSetup...");
       ControlPointSetup.Setup();
       Console.WriteLine("Setting up AllQuestSetup...");

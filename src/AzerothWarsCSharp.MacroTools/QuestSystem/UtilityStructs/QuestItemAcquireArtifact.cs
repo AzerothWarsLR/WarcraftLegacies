@@ -1,3 +1,4 @@
+using System;
 using AzerothWarsCSharp.MacroTools.Artifacts;
 using static War3Api.Common;
 
