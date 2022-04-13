@@ -42,7 +42,7 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(warStompKazzak);
 
-      var thunderClap = new Stomp(Constants.ABILITY_A0WE_CONSECRATION_LORDAERON_UTHER)
+      var thunderClap = new Stomp(FourCC("A0QC"))
       {
         Radius = 225,
         DamageBase = 65,
@@ -52,7 +52,7 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(thunderClap);
 
-      var consecration = new Stomp(FourCC("A0WE"))
+      var consecration = new Stomp(Constants.ABILITY_A0WE_CONSECRATION_LORDAERON_UTHER)
       {
         Radius = 225,
         DamageBase = 0,
@@ -85,7 +85,7 @@ namespace AzerothWarsCSharp.Source.Setup
 
       var massFrostArmor = new MassAnySpell(Constants.ABILITY_A0H3_MASS_ICE_ARMOR_WARSONG_GAHZ_RILLA)
       {
-        DummyAbilityId = Constants.ABILITY_A0H3_MASS_ICE_ARMOR_WARSONG_GAHZ_RILLA,
+        DummyAbilityId = Constants.ABILITY_A0H6_MASS_ICE_ARMOR_WARSONG_GAHZ_RILLA_DUMMY,
         DummyAbilityOrderString = "frostarmor",
         Radius = 200,
         CastFilter = CastFilters.IsTargetAllyAndAlive,
