@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
@@ -144,23 +143,16 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
 
     private static void OnControlPointOwnerChanged(object? sender, ControlPointOwnerChangeEventArgs args)
     {
-      Console.WriteLine("a");
       if (args.ControlPoint.Owner.GetFaction() != null)
       {
-        Console.WriteLine("b");
         Instance?.UpdateFactionRow(args.ControlPoint.Owner.GetFaction());
-        Console.WriteLine("c");
       }
-
-      Console.WriteLine("d");
+      
       var formerPerson = PlayerData.ByHandle(args.FormerOwner);
-      Console.WriteLine("e");
       if (formerPerson.Faction != null)
       {
-        Console.WriteLine("f");
         Instance?.UpdateFactionRow(formerPerson.Faction);
       }
-      Console.WriteLine("g");
     }
 
     public static void Setup()
