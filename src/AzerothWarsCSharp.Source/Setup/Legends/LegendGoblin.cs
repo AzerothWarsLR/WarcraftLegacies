@@ -15,18 +15,21 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       {
         UnitType = FourCC("O04N")
       };
+      Legend.Register(LEGEND_GALLYWIX);
 
       LEGEND_NOGGENFOGGER = new Legend
       {
         UnitType = FourCC("Nalc"),
         StartingXp = 800
       };
+      Legend.Register(LEGEND_NOGGENFOGGER);
 
       LEGEND_GAZLOWE = new Legend
       {
         UnitType = FourCC("Ntin"),
         StartingXp = 1800
       };
+      Legend.Register(LEGEND_GAZLOWE);
     }
   }
 }

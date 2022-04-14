@@ -10,16 +10,18 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
     public static Legend legendGatesahnqiraj;
     public static Legend legendCthun;
     public static Legend legendYor;
-    
+
     public static void Setup()
     {
       legendCthun = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("U00R")),
         PermaDies = true,
-        DeathMessage = "C'thun, God of the Qiraji, was once defeated by the Titans, and again by the combined Dragonflights. " +
-                       "Today he experiences his third defeat his first true death."
+        DeathMessage =
+          "C'thun, God of the Qiraji, was once defeated by the Titans, and again by the combined Dragonflights. " +
+          "Today he experiences his third defeat his first true death."
       };
+      Legend.Register(legendCthun);
 
       legendSkeram = new Legend
       {
@@ -27,15 +29,19 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         PlayerColor = PLAYER_COLOR_RED,
         Name = "Prophet Skeram"
       };
+      Legend.Register(legendSkeram);
 
       legendGatesahnqiraj = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h02U"))
       };
 
-      legendYor = new Legend();
-      legendYor.UnitType = FourCC("U02A");
-      legendYor.StartingXp = 8800;
+      legendYor = new Legend
+      {
+        UnitType = FourCC("U02A"),
+        StartingXp = 8800
+      };
+      Legend.Register(legendYor);
     }
   }
 }

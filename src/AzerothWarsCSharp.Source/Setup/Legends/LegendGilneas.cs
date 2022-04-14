@@ -5,49 +5,55 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 {
   public static class LegendGilneas
   {
-    public static Legend LEGEND_TESS { get; private set; }
-    public static Legend LEGEND_GENN { get; private set; }
-    public static Legend LEGEND_DARIUS { get; private set; }
-    public static Legend LEGEND_GOLDRINN { get; private set; }
-    public static Legend LEGEND_LIGHTDAWN { get; private set; }
-    public static Legend LEGEND_GILNEASCASTLE { get; private set; }
-    
+    public static Legend LegendTess { get; private set; }
+    public static Legend LegendGenn { get; private set; }
+    public static Legend LegendDarius { get; private set; }
+    public static Legend LegendGoldrinn { get; private set; }
+    public static Legend LegendLightdawn { get; private set; }
+    public static Legend LegendGilneascastle { get; private set; }
+
     public static void Setup()
     {
-      LEGEND_TESS = new Legend
+      LegendTess = new Legend
       {
         UnitType = FourCC("Ewar")
       };
+      Legend.Register(LegendTess);
 
-      LEGEND_GOLDRINN = new Legend
+      LegendGoldrinn = new Legend
       {
         UnitType = FourCC("E01E"),
         StartingXp = 8800
       };
+      Legend.Register(LegendGoldrinn);
 
-      LEGEND_GENN = new Legend
+      LegendGenn = new Legend
       {
         UnitType = FourCC("HHkl")
       };
+      Legend.Register(LegendGenn);
 
-      LEGEND_DARIUS = new Legend
+      LegendDarius = new Legend
       {
         UnitType = FourCC("hpb2")
       };
+      Legend.Register(LegendDarius);
 
-      LEGEND_LIGHTDAWN = new Legend
+      LegendLightdawn = new Legend
       {
         UnitType = FourCC("h057"),
         DeathMessage = "The Light's Dawn Capital has been destroyed.",
         IsCapital = true
       };
+      Legend.Register(LegendLightdawn);
 
-      LEGEND_GILNEASCASTLE = new Legend
+      LegendGilneascastle = new Legend
       {
         UnitType = FourCC("h04I"),
         DeathMessage = "The Gilneas castle has fallen",
         IsCapital = true
       };
+      Legend.Register(LegendGilneascastle);
     }
   }
 }

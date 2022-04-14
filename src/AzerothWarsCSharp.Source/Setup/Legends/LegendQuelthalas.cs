@@ -20,53 +20,83 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 
     public static void Setup()
     {
-      LegendSilvermoon = new Legend();
-      LegendSilvermoon.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h003"));
-      LegendSilvermoon.DeathMessage = "The grand city of the high elves, Silvermoon, has been crushed by her enemies.";
-      LegendSilvermoon.IsCapital = true;
+      LegendSilvermoon = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h003")),
+        DeathMessage = "The grand city of the high elves, Silvermoon, has been crushed by her enemies.",
+        IsCapital = true
+      };
+      Legend.Register(LegendSilvermoon);
 
-      LegendSunwell = new Legend();
-      LegendSunwell.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("n001"));
-      LegendSunwell.Capturable = true;
-      LegendSunwell.IsCapital = true;
+      LegendSunwell = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("n001")),
+        Capturable = true,
+        IsCapital = true
+      };
+      Legend.Register(LegendSunwell);
 
-      LegendAnasterian = new Legend();
-      LegendAnasterian.UnitType = FourCC("H00Q");
-      LegendAnasterian.PlayerColor = PLAYER_COLOR_MAROON;
+      LegendAnasterian = new Legend
+      {
+        UnitType = FourCC("H00Q"),
+        PlayerColor = PLAYER_COLOR_MAROON
+      };
       LegendAnasterian.AddUnitDependency(LegendSunwell.Unit);
       LegendAnasterian.Essential = true;
       LegendAnasterian.StartingXp = 1000;
+      Legend.Register(LegendAnasterian);
 
-      LegendRommath = new Legend();
-      LegendRommath.UnitType = FourCC("H04F");
-      LegendRommath.StartingXp = 1800;
+      LegendRommath = new Legend
+      {
+        UnitType = FourCC("H04F"),
+        StartingXp = 1800
+      };
+      Legend.Register(LegendRommath);
 
-      LegendJennalla = new Legend();
-      LegendJennalla.UnitType = FourCC("H02B");
+      LegendJennalla = new Legend
+      {
+        UnitType = FourCC("H02B")
+      };
+      Legend.Register(LegendJennalla);
 
-      LegendPathaleon = new Legend();
-      LegendPathaleon.UnitType = FourCC("H098");
-      LegendPathaleon.StartingXp = 1800;
+      LegendPathaleon = new Legend
+      {
+        UnitType = FourCC("H098"),
+        StartingXp = 1800
+      };
+      Legend.Register(LegendPathaleon);
 
-      LegendSylvanas = new Legend();
-      LegendSylvanas.UnitType = FourCC("Hvwd");
-      LegendSylvanas.PlayerColor = PLAYER_COLOR_GREEN;
+      LegendSylvanas = new Legend
+      {
+        UnitType = FourCC("Hvwd"),
+        PlayerColor = PLAYER_COLOR_GREEN
+      };
+      Legend.Register(LegendSylvanas);
 
-      LegendKael = new Legend();
-      LegendKael.PlayerColor = PLAYER_COLOR_RED;
-      LegendKael.UnitType = FourCC("Hkal");
-      LegendKael.StartingXp = 1800;
+      LegendKael = new Legend
+      {
+        PlayerColor = PLAYER_COLOR_RED,
+        UnitType = FourCC("Hkal"),
+        StartingXp = 1800
+      };
+      Legend.Register(LegendKael);
 
-      LegendLorthemar = new Legend();
-      LegendLorthemar.UnitType = FourCC("H02E");
-      LegendLorthemar.StartingXp = 2800;
+      LegendLorthemar = new Legend
+      {
+        UnitType = FourCC("H02E"),
+        StartingXp = 2800
+      };
+      Legend.Register(LegendLorthemar);
 
-      LegendKiljaeden = new Legend();
-      LegendKiljaeden.UnitType = FourCC("U004");
-      LegendKiljaeden.PermaDies = true;
-      LegendKiljaeden.StartingXp = 10800;
-      LegendKiljaeden.DeathMessage =
-        "Kil'jaeden the Deceiver has been annihilated, but it is too late for the Blood Elves, who will continue to live and die with demonic taint coursing through their veins.";
+      LegendKiljaeden = new Legend
+      {
+        UnitType = FourCC("U004"),
+        PermaDies = true,
+        StartingXp = 10800,
+        DeathMessage =
+          "Kil'jaeden the Deceiver has been annihilated, but it is too late for the Blood Elves, who will continue to live and die with demonic taint coursing through their veins."
+      };
+      Legend.Register(LegendKiljaeden);
     }
   }
 }

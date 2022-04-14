@@ -1,6 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
-using Legend = AzerothWarsCSharp.MacroTools.FactionSystem.Legend;
-
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.Legends
@@ -14,45 +13,54 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
     public static Legend? LegendThunderbluff { get; private set; }
     public static Legend? LegendDarkspearhold { get; private set; }
     public static Legend? LegendOrgrimmar { get; private set; }
-    
-    public static void Setup( ){
+
+    public static void Setup()
+    {
       LegendCairne = new Legend
       {
         UnitType = FourCC("Ocbh"),
-        DeathMessage = "CairneFourCC(s spirit has passed on from this world. The Tauren have already begun to revere their fallen ancestor.",
+        DeathMessage =
+          "CairneFourCC(s spirit has passed on from this world. The Tauren have already begun to revere their fallen ancestor.",
         StartingXp = 1000
       };
+      Legend.Register(LegendCairne);
 
       LegendThrall = new Legend
       {
         UnitType = FourCC("Othr"),
         Essential = true
       };
+      Legend.Register(LegendThrall);
 
       LegendThunderbluff = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o00J")),
-        DeathMessage = "The mesas of Thunderbluff have been swept clean of the Tauren. The Bloodhoof are without a home.",
+        DeathMessage =
+          "The mesas of Thunderbluff have been swept clean of the Tauren. The Bloodhoof are without a home.",
         IsCapital = true
       };
+      Legend.Register(LegendThunderbluff);
 
       LegendDarkspearhold = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o02D")),
         IsCapital = true
       };
+      Legend.Register(LegendDarkspearhold);
 
       LegendRexxar = new Legend
       {
         UnitType = FourCC("Orex"),
         StartingXp = 1800
       };
+      Legend.Register(LegendRexxar);
 
       LegendOrgrimmar = new Legend
       {
-        DeathMessage = "Orgrimmar has been demolished. With it dies the hopes and dreams of a wartorn race seeking refuge in a new world."
+        DeathMessage =
+          "Orgrimmar has been demolished. With it dies the hopes and dreams of a wartorn race seeking refuge in a new world."
       };
+      Legend.Register(LegendOrgrimmar);
     }
-
   }
 }

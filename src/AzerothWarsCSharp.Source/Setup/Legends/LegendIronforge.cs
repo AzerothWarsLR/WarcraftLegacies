@@ -12,7 +12,6 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
     public static Legend LegendGreatforge { get; private set; }
     public static Legend LegendThelsamar { get; private set; }
 
-
     public static void Setup()
     {
       LegendDagran = new Legend
@@ -20,33 +19,38 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         UnitType = FourCC("H03G"),
         StartingXp = 1000
       };
+      Legend.Register(LegendDagran);
 
       LegendFalstad = new Legend
       {
         UnitType = FourCC("H028"),
         StartingXp = 1000
       };
+      Legend.Register(LegendFalstad);
 
       LegendMagni = new Legend
       {
-        UnitType = FourCC("H00S")
+        UnitType = FourCC("H00S"),
+        DeathMessage = "King Magni Bronzebeard has died.", //Todo: bad flavour
+        Essential = true,
+        StartingXp = 1000
       };
       LegendMagni.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("h001")));
-      LegendMagni.DeathMessage = "King Magni Bronzebeard has died.";
-      LegendMagni.Essential = true;
-      LegendMagni.StartingXp = 1000;
+      Legend.Register(LegendMagni);
 
       LegendGreatforge = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h001")),
-        DeathMessage = "The Great Forge has been extinguished.",
+        DeathMessage = "The Great Forge has been extinguished.", //Todo: mediocre flavour
         IsCapital = true
       };
+      Legend.Register(LegendGreatforge);
 
       LegendThelsamar = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h05H"))
       };
+      Legend.Register(LegendThelsamar);
     }
   }
 }

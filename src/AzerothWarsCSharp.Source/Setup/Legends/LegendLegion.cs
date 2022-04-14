@@ -23,6 +23,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         StartingXp = 10800,
         Essential = true
       };
+      Legend.Register(LEGEND_ARCHIMONDE);
 
       LEGEND_ANETHERON = new Legend
       {
@@ -30,24 +31,28 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         PlayerColor = PLAYER_COLOR_ORANGE,
         StartingXp = 4000
       };
+      Legend.Register(LEGEND_ANETHERON);
 
       LEGEND_LILIAN = new Legend
       {
         UnitType = FourCC("E01O"),
         StartingXp = 4000
       };
+      Legend.Register(LEGEND_LILIAN);
 
       LEGEND_TICHONDRIUS = new Legend
       {
         UnitType = FourCC("Utic"),
         PlayerColor = PLAYER_COLOR_RED
       };
+      Legend.Register(LEGEND_TICHONDRIUS);
 
       LEGEND_MALGANIS = new Legend
       {
         UnitType = FourCC("Umal"),
         PlayerColor = PLAYER_COLOR_GREEN
       };
+      Legend.Register(LEGEND_MALGANIS);
     }
   }
 }

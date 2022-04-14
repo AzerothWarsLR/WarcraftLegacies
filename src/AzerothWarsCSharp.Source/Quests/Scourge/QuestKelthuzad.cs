@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       }
     }
 
-    protected override string RewardDescription => "KelFourCC(thuzad becomes a Lich";
+    protected override string RewardDescription => "Kel'thuzad becomes a Lich";
 
     protected override void OnComplete()
     {

@@ -4,9 +4,8 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.Legends
 {
-  public static class LegendFelHorde{
-
-  
+  public static class LegendFelHorde
+  {
     public static Legend LegendMagtheridon { get; private set; }
     public static Legend LegendZuluhed { get; private set; }
     public static Legend LegendChogall { get; private set; }
@@ -17,50 +16,81 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
     public static Legend LegendBlackrockspire { get; private set; }
     public static Legend LegendBlacktemple { get; private set; }
     public static Legend LegendHellfirecitadel { get; private set; }
-  
 
-    public static void Setup( ){
-      LegendMagtheridon = new Legend();
-      LegendMagtheridon.UnitType = FourCC("Nmag");
+
+    public static void Setup()
+    {
+      LegendMagtheridon = new Legend
+      {
+        UnitType = FourCC("Nmag")
+      };
       LegendMagtheridon.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("o00F")));
-      LegendMagtheridon.DeathMessage = "Magtheridon’s eternal demon soul has been consumed, and his life permanently extinguished. The Lord of Outland has fallen.";
+      LegendMagtheridon.DeathMessage =
+        "Magtheridon’s eternal demon soul has been consumed, and his life permanently extinguished. The Lord of Outland has fallen.";
       LegendMagtheridon.Essential = true;
+      Legend.Register(LegendMagtheridon);
 
-      LegendRend = new Legend();
-      LegendRend.UnitType = FourCC("Nbbc");
-      LegendRend.StartingXp = 2800;
+      LegendRend = new Legend
+      {
+        UnitType = FourCC("Nbbc"),
+        StartingXp = 2800
+      };
+      Legend.Register(LegendRend);
 
-      LegendKargath = new Legend();
-      LegendKargath.UnitType = FourCC("N03D");
-      LegendKargath.StartingXp = 2800;
+      LegendKargath = new Legend
+      {
+        UnitType = FourCC("N03D"),
+        StartingXp = 2800
+      };
+      Legend.Register(LegendKargath);
 
-      LegendZuluhed = new Legend();
-      LegendZuluhed.UnitType = FourCC("O00Y");
+      LegendZuluhed = new Legend
+      {
+        UnitType = FourCC("O00Y")
+      };
+      Legend.Register(LegendZuluhed);
 
-      LegendNekrosh = new Legend();
-      LegendNekrosh.UnitType = FourCC("O01Q");
+      LegendNekrosh = new Legend
+      {
+        UnitType = FourCC("O01Q")
+      };
+      Legend.Register(LegendNekrosh);
 
-      LegendChogall = new Legend();
-      LegendChogall.UnitType = FourCC("O01P");
+      LegendChogall = new Legend
+      {
+        UnitType = FourCC("O01P")
+      };
+      Legend.Register(LegendChogall);
 
-      LegendTeron = new Legend();
-      LegendTeron.UnitType = FourCC("U02D");
-      LegendTeron.StartingXp = 5400;
-      LegendTeron.PlayerColor = PLAYER_COLOR_MAROON;
+      LegendTeron = new Legend
+      {
+        UnitType = FourCC("U02D"),
+        StartingXp = 5400,
+        PlayerColor = PLAYER_COLOR_MAROON
+      };
+      Legend.Register(LegendTeron);
 
-      LegendBlackrockspire = new Legend();
-      LegendBlackrockspire.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o013"));
-      LegendBlackrockspire.DeathMessage = "Blackrock Spire has been razed.";
+      LegendBlackrockspire = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o013")),
+        DeathMessage = "Blackrock Spire has been razed."
+      };
+      Legend.Register(LegendBlackrockspire);
 
-      LegendBlacktemple = new Legend();
-      LegendBlacktemple.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o00F"));
-      LegendBlacktemple.IsCapital = true;
-      LegendBlacktemple.Capturable = true;
+      LegendBlacktemple = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o00F")),
+        IsCapital = true,
+        Capturable = true
+      };
+      Legend.Register(LegendBlacktemple);
 
-      LegendHellfirecitadel = new Legend();
-      LegendHellfirecitadel.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o008"));
-      LegendHellfirecitadel.IsCapital = true;
+      LegendHellfirecitadel = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o008")),
+        IsCapital = true
+      };
+      Legend.Register(LegendHellfirecitadel);
     }
-
   }
 }

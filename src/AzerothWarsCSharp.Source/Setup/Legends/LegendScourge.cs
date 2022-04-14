@@ -23,29 +23,33 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         UnitType = FourCC("U001"),
         PermaDies = true,
         DeathMessage =
-          "KelFourCC(thuzad has been slain. He lives on in spectral form, and may yet return if (he is brought to the Sunwell.",
+          "Kel'thuzad has been slain. He lives on in spectral form, and may yet return if (he is brought to the Sunwell.",
         DeathSfx = "Abilities\\Spells\\Undead\\DeathCoil\\DeathCoilSpecialArt.mdl",
         Essential = true,
         StartingXp = 1000,
-        Name = "KelFourCC(thuzad"
+        Name = "Kel'thuzad"
       };
+      Legend.Register(LegendKelthuzad);
 
       LegendAnubarak = new Legend
       {
         UnitType = FourCC("Uanb")
       };
+      Legend.Register(LegendAnubarak);
 
       LegendRivendare = new Legend
       {
         UnitType = FourCC("U00A"),
         StartingXp = 1000
       };
+      Legend.Register(LegendRivendare);
 
       LegendUtgarde = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h00O")),
         Capturable = true
       };
+      Legend.Register(LegendUtgarde);
 
       LegendLichking = new Legend
       {
@@ -54,6 +58,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         DeathMessage =
           "The great Lich King has been destroyed. With no central mind to command them, the forces of the Undead have gone rogue."
       };
+      Legend.Register(LegendLichking);
     }
   }
 }

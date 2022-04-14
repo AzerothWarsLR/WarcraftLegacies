@@ -23,50 +23,59 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("Eill")),
         PlayerColor = PLAYER_COLOR_PURPLE
       };
+      Legend.Register(LegendIllidan);
 
       LegendVashj = new Legend
       {
         UnitType = FourCC("Hvsh"),
         StartingXp = 2800
       };
+      Legend.Register(LegendVashj);
 
       LegendAzshara = new Legend
       {
         UnitType = FourCC("H08U")
       };
+      Legend.Register(LegendAzshara);
 
       LegendNajentus = new Legend
       {
         UnitType = FourCC("U00S"),
         StartingXp = 2800
       };
+      Legend.Register(LegendNajentus);
 
       LegendAltruis = new Legend
       {
         UnitType = FourCC("E015"),
         StartingXp = 4000
       };
+      Legend.Register(LegendAltruis);
 
       LegendAkama = new Legend
       {
         UnitType = FourCC("Naka"),
         StartingXp = 4000
       };
+      Legend.Register(LegendAkama);
 
       LegendNzoth = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("U01Z")),
-        DeathMessage = "N'zoth the Corruptor lay in wait for millenia before enacting final ploy. In the end, it was all for naught; N'zoth lies dead, and he will never witness the true floatization of his Black Empire.",
+        DeathMessage =
+          "N'zoth the Corruptor lay in wait for millenia before enacting final ploy. In the end, it was all for naught;Legend.Register(LegendNzoth); N'zoth lies dead, and he will never witness the true floatization of his Black Empire.",
         PermaDies = true
       };
 
       LegendNazjatar = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("n045")),
-        DeathMessage = "The Eternal Palace, the royal seat of Queen Azshara and the Nazjatar Empire, has been destroyed.",
+        DeathMessage =
+          "The Eternal Palace, the royal seat of Queen Azshara and the Nazjatar Empire, has been destroyed.",
         IsCapital = true,
         Hivemind = true
       };
+      Legend.Register(LegendNazjatar);
 
       LegendVault = new Legend
       {
@@ -74,6 +83,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         DeathMessage = "The Aetheneum vault has been destroyed, and with it, ages of knowledge is lost.",
         IsCapital = true
       };
+      Legend.Register(LegendVault);
     }
   }
 }

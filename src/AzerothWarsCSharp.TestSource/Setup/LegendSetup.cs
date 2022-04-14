@@ -1,7 +1,7 @@
 ﻿using AzerothWarsCSharp.MacroTools.FactionSystem;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.TestSource
+namespace AzerothWarsCSharp.TestSource.Setup
 {
   public static class LegendSetup
   {
@@ -14,11 +14,13 @@ namespace AzerothWarsCSharp.TestSource
       {
         Unit = CreateUnit(Player(0), FourCC("Hkal"), 0, 0, 0)
       };
+      Legend.Register(Kael);
       Uther = new Legend
       {
         UnitType = FourCC("Huth"),
         StartingXp = 3000
       };
+      Legend.Register(Uther);
     }
   }
 }

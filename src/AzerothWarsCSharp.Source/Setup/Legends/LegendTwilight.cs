@@ -4,41 +4,55 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.Legends
 {
-  public static class LegendTwilight{
-
-  
+  public static class LegendTwilight
+  {
     public static Legend LEGEND_DEATHWING { get; private set; }
     public static Legend LEGEND_FELUDIUS { get; private set; }
     public static Legend LEGEND_IGNACIOUS { get; private set; }
     public static Legend LEGEND_AZIL { get; private set; }
     public static Legend LegendTwilightcitadel { get; private set; }
-  
 
-    public static void Setup( ){
-      LegendTwilight.LegendTwilightcitadel = new Legend();
-      LegendTwilight.LegendTwilightcitadel.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h05U"));
-      LegendTwilight.LegendTwilightcitadel.DeathMessage = "The Twilight Citadel has been toppled. Already the land has begun to heal, but it may be decades before the permeating Old God stink fully dissipates from the Twilight Highlands.";
-      LegendTwilight.LegendTwilightcitadel.IsCapital = true;
 
-      LEGEND_DEATHWING = new Legend();
-      LEGEND_DEATHWING.Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("u01Y"));
-      LEGEND_DEATHWING.PermaDies = true;
-      LEGEND_DEATHWING.DeathMessage = "Deathwing, the Black Scourge, is no more. The Destroyer has finally been defeated.";
+    public static void Setup()
+    {
+      LegendTwilightcitadel = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h05U")),
+        DeathMessage =
+          "The Twilight Citadel has been toppled. Already the land has begun to heal, but it may be decades before the permeating Old God stink fully dissipates from the Twilight Highlands.",
+        IsCapital = true
+      };
+      Legend.Register(LegendTwilightcitadel);
 
-      LEGEND_AZIL = new Legend();
-      LEGEND_AZIL.UnitType = FourCC("H08Q");
-      LEGEND_AZIL.StartingXp = 1800;
-      LEGEND_AZIL.AddUnitDependency(LegendTwilight.LegendTwilightcitadel.Unit);
+      LEGEND_DEATHWING = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("u01Y")),
+        PermaDies = true,
+        DeathMessage = "Deathwing, the Black Scourge, is no more. The Destroyer has finally been defeated."
+      };
+      Legend.Register(LEGEND_DEATHWING);
 
-      LEGEND_FELUDIUS = new Legend();
-      LEGEND_FELUDIUS.UnitType = FourCC("U01S");
-      LEGEND_FELUDIUS.StartingXp = 2800;
+      LEGEND_AZIL = new Legend
+      {
+        UnitType = FourCC("H08Q"),
+        StartingXp = 1800
+      };
+      LEGEND_AZIL.AddUnitDependency(LegendTwilightcitadel.Unit);
+      Legend.Register(LEGEND_AZIL);
 
-      LEGEND_IGNACIOUS = new Legend();
-      LEGEND_IGNACIOUS.UnitType = FourCC("O04H");
-      LEGEND_IGNACIOUS.StartingXp = 2800;
+      LEGEND_FELUDIUS = new Legend
+      {
+        UnitType = FourCC("U01S"),
+        StartingXp = 2800
+      };
+      Legend.Register(LEGEND_FELUDIUS);
 
+      LEGEND_IGNACIOUS = new Legend
+      {
+        UnitType = FourCC("O04H"),
+        StartingXp = 2800
+      };
+      Legend.Register(LEGEND_IGNACIOUS);
     }
-
   }
 }
