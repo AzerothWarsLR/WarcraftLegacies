@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       QuestData newQuest = frostwolf.AddQuest(new QuestSeaWitch());
       frostwolf.StartingQuest = newQuest;
       frostwolf.AddQuest(new QuestThunderBluff(Regions.ThunderBluff.Rect));
-      frostwolf.AddQuest(new QuestStonemaul());
+      frostwolf.AddQuest(new QuestStonemaul(Regions.StonemaulKeep));
       //Starting duel
       frostwolf.AddQuest(new QuestDrektharsSpellbook());
       //frostwolf.AddQuest(new QuestScepterOfTheQueenWarsong());
