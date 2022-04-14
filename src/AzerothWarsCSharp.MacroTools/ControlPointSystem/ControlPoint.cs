@@ -43,46 +43,57 @@ namespace AzerothWarsCSharp.MacroTools.ControlPointSystem
     ///   Fires when the <see cref="ControlPoint" /> changes its owner.
     /// </summary>
     public event EventHandler<ControlPointOwnerChangeEventArgs>? ChangedOwner;
-
-    public static event EventHandler<ControlPoint>? OnControlPointLoss;
+    
     public static event EventHandler<ControlPointOwnerChangeEventArgs>? OnControlPointOwnerChange;
 
     private void OnDamaged()
     {
-      unit attacker = GetEventDamageSource();
-
-      var hp = (GetUnitState(Unit, UNIT_STATE_LIFE) - GetEventDamage()) /
-               GetUnitState(Unit, UNIT_STATE_MAX_LIFE);
-      if (hp < CAPTURE_THRESHOLD)
+      try
       {
-        BlzSetEventDamage(0);
-        SetUnitOwner(Unit, GetOwningPlayer(attacker), true);
-        SetUnitLifePercentBJ(Unit, 85);
+        unit attacker = GetEventDamageSource();
+
+        var hp = (GetUnitState(Unit, UNIT_STATE_LIFE) - GetEventDamage()) /
+                 GetUnitState(Unit, UNIT_STATE_MAX_LIFE);
+        if (hp < CAPTURE_THRESHOLD)
+        {
+          BlzSetEventDamage(0);
+          SetUnitOwner(Unit, GetOwningPlayer(attacker), true);
+          SetUnitLifePercentBJ(Unit, 85);
+        }
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex);
       }
     }
 
     private void ChangeOwner()
     {
-      var p = GetTriggerPlayer();
+      try
+      {
+        var p = GetTriggerPlayer();
 
-      Person person = Person.ByHandle(_owner);
+        Person person = Person.ByHandle(_owner);
 
-      person.ControlPointValue -= Value;
-      person.ControlPointCount -= 1;
+        person.ControlPointValue -= Value;
+        person.ControlPointCount -= 1;
+        
+        var formerOwner = _owner;
+        _owner = p;
+        person = Person.ByHandle(_owner);
 
-      OnControlPointLoss?.Invoke(this, this);
+        person.ControlPointValue += Value;
+        person.ControlPointCount += 1;
 
-      var formerOwner = _owner;
-      _owner = p;
-      person = Person.ByHandle(_owner);
+        UnitAddAbility(Unit, RegenerationAbility);
 
-      person.ControlPointValue += Value;
-      person.ControlPointCount += 1;
-
-      UnitAddAbility(Unit, RegenerationAbility);
-
-      OnControlPointOwnerChange?.Invoke(this, new ControlPointOwnerChangeEventArgs(this, formerOwner));
-      ChangedOwner?.Invoke(this, new ControlPointOwnerChangeEventArgs(this, formerOwner));
+        OnControlPointOwnerChange?.Invoke(this, new ControlPointOwnerChangeEventArgs(this, formerOwner));
+        ChangedOwner?.Invoke(this, new ControlPointOwnerChangeEventArgs(this, formerOwner));
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex);
+      }
     }
   }
 }

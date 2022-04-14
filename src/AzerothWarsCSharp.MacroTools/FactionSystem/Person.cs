@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       Player = player;
     }
 
-    public player Player { get; set; }
+    public player Player { get; }
 
     /// <summary>
     ///   Controls name, available objects, color, and icon.
@@ -142,11 +142,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
     }
 
-    public static Person GetFromId(int id)
-    {
-      return ById[id];
-    }
-
     /// <summary>
     ///   Retrieves the <see cref="Person" /> object which contains information about the given <see cref="player" />.
     /// </summary>
@@ -164,7 +159,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// </summary>
     public static void Register(Person person)
     {
-      ById[GetPlayerId(person.Player)] = person;
+      ById.Add(GetPlayerId(person.Player), person);
     }
   }
 }

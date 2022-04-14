@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
@@ -141,15 +142,25 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
       RenderInstance();
     }
 
-    private static void OnControlPointLost(object? sender, ControlPoint controlPoint)
-    {
-      if (controlPoint.OwningPerson.Faction != null) Instance?.UpdateFactionRow(controlPoint.OwningPerson.Faction);
-    }
-
     private static void OnControlPointOwnerChanged(object? sender, ControlPointOwnerChangeEventArgs args)
     {
+      Console.WriteLine("a");
       if (args.ControlPoint.OwningPerson.Faction != null)
+      {
+        Console.WriteLine("b");
         Instance?.UpdateFactionRow(args.ControlPoint.OwningPerson.Faction);
+        Console.WriteLine("c");
+      }
+
+      Console.WriteLine("d");
+      var formerPerson = Person.ByHandle(args.FormerOwner);
+      Console.WriteLine("e");
+      if (formerPerson.Faction != null)
+      {
+        Console.WriteLine("f");
+        Instance?.UpdateFactionRow(formerPerson.Faction);
+      }
+      Console.WriteLine("g");
     }
 
     public static void Setup()
@@ -165,8 +176,7 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
 
       //Faction.NameChanged += OnFactionNameChanged;
       Faction.IconChanged += OnFactionNameChanged;
-
-      ControlPoint.OnControlPointLoss += OnControlPointLost;
+      
       ControlPoint.OnControlPointOwnerChange += OnControlPointOwnerChanged;
     }
   }
