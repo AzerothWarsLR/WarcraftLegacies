@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       Holder.Person.ModObjectLimit(FourCC("Hlgr"), 1); //Garithos
       Holder.Person.ModObjectLimit(FourCC("E00O"), 1); //Goodchild
 
-      Holder.Team = TeamSetup.TeamScarlet;
+      Holder.Team = TeamSetup.ScarletCrusade;
       Holder.Name = "|cff800000Garithos|r";
       Holder.PrefixCol = "|cff800000";
       Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNGarithos.blp";

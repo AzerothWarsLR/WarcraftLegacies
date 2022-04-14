@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         UndefeatedResearch = FourCC("R05L"),
         StartingGold = 300,
         StartingLumber = 600,
-        Team = TeamSetup.TeamLegion
+        Team = TeamSetup.Legion
       };
 
       FactionFelHorde.ModObjectLimit(FourCC("o02Y"), Faction.UNLIMITED); //Great Hall

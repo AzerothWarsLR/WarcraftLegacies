@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       Sentinels = new Faction("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80",
         "ReplaceableTextures\\CommandButtons\\BTNPriestessOfTheMoon.blp");
       f = Sentinels;
-      f.Team = TeamSetup.TeamNightElves;
+      f.Team = TeamSetup.NightElves;
       f.UndefeatedResearch = FourCC("R05Y");
       f.StartingGold = 150;
       f.StartingLumber = 500;

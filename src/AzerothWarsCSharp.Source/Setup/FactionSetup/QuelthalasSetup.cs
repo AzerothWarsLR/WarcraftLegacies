@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
           "Quel'thalas", PLAYER_COLOR_CYAN, "|C0000FFFF",
           "ReplaceableTextures\\CommandButtons\\BTNSylvanusWindrunner.blp");
       f = FactionQuelthalas;
-      f.Team = TeamSetup.TeamAlliance;
+      f.Team = TeamSetup.Alliance;
       f.UndefeatedResearch = FourCC("R05U");
       f.StartingGold = 150;
       f.StartingLumber = 500;

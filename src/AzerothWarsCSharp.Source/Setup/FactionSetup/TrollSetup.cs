@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       FACTION_TROLL = new Faction("Zandalar", PLAYER_COLOR_PEACH, "|cffff8c6c",
         "ReplaceableTextures\\CommandButtons\\BTNHeadHunterBerserker.blp");
       f = FACTION_TROLL;
-      f.Team = TeamSetup.TeamHorde;
+      f.Team = TeamSetup.Horde;
       f.StartingGold = 150;
       f.StartingLumber = 500;
 

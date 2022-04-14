@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       LordaeronSetup.FactionLordaeron.ModObjectLimit(FourCC("H049"), 1); //Nathanos
       LordaeronSetup.FactionLordaeron.ModObjectLimit(FourCC("Hlgr"), 1); //Garithos
 
-      Holder.Team = TeamSetup.TeamForsaken;
+      Holder.Team = TeamSetup.Forsaken;
       Holder.PrefixCol = "|cff8080ff";
       Holder.Name = "Garithos";
       Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNGarithos.blp";

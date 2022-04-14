@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override void OnComplete()
     {
-      Holder.Team = TeamSetup.TeamScourge;
+      Holder.Team = TeamSetup.Scourge;
     }
 
     public QuestCivilWar() : base("Civil War",

@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       FACTION_WARSONG = new Faction("Warsong", PLAYER_COLOR_ORANGE, "|c00ff8000",
         "ReplaceableTextures\\CommandButtons\\BTNHellScream.blp");
       Faction f = FACTION_WARSONG;
-      f.Team = TeamSetup.TeamHorde;
+      f.Team = TeamSetup.Horde;
       f.UndefeatedResearch = FourCC("R05W");
       f.StartingGold = 150;
       f.StartingLumber = 500;

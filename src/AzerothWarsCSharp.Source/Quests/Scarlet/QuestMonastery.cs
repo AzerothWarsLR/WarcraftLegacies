@@ -45,7 +45,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       RescueNeutralUnitsInRect(Regions.ScarletAmbient.Rect, Holder.Player);
       WaygateActivateBJ(true, _scarletMonastery);
       WaygateSetDestination(_scarletMonastery, Regions.ScarletMonastery.Center.X, Regions.ScarletMonastery.Center.Y);
-      Holder.Team = TeamSetup.TeamScarlet;
+      Holder.Team = TeamSetup.ScarletCrusade;
       Holder.Name = "Scarlet";
       Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNSaidan Dathrohan.blp";
       PlayThematicMusicBJ("war3mapImported\\ScarletTheme.mp3");

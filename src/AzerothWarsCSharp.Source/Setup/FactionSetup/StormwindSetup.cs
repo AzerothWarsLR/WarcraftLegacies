@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       Stormwind = new Faction("Stormwind", PLAYER_COLOR_AQUA, "|CFF106246",
         "ReplaceableTextures\\CommandButtons\\BTNKnight.blp");
       f = Stormwind;
-      f.Team = TeamSetup.TeamAlliance;
+      f.Team = TeamSetup.Alliance;
       f.UndefeatedResearch = FourCC("R060");
       f.StartingGold = 150;
       f.StartingLumber = 500;

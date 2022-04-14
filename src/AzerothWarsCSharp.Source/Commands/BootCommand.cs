@@ -53,7 +53,7 @@ namespace AzerothWarsCSharp.Source.Commands
           return;
         }
 
-        if (FelHordeSetup.FactionFelHorde.Team != TeamSetup.TeamNaga)
+        if (FelHordeSetup.FactionFelHorde.Team != TeamSetup.Naga)
         {
           DisplayTextToPlayer(senderPerson.Player, 0, 0, $"{targetFaction.ColoredName} isn't your vassal.");
           return;

@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
     {
       FACTION_FORSAKEN = new Faction("Cult", PLAYER_COLOR_LIGHT_BLUE, "|cff8080ff",
         "ReplaceableTextures\\CommandButtons\\BTNAcolyte.blp");
-      FACTION_FORSAKEN.Team = TeamSetup.TeamLegion;
+      FACTION_FORSAKEN.Team = TeamSetup.Legion;
       FACTION_FORSAKEN.StartingGold = 0;
       FACTION_FORSAKEN.StartingLumber = 100;
 

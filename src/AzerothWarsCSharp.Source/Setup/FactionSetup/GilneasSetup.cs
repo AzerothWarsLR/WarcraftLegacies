@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       FACTION_GILNEAS = new Faction("Gilneas", PLAYER_COLOR_COAL, "|cff808080",
         "ReplaceableTextures\\CommandButtons\\BTNGreymane.blp");
       f = FACTION_GILNEAS;
-      f.Team = TeamSetup.TeamNightElves;
+      f.Team = TeamSetup.NightElves;
       f.StartingGold = 150;
       f.StartingLumber = 200;
 

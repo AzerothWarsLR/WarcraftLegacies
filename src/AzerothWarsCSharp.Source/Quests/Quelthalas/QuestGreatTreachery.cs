@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       UnitRemoveAbilityBJ(FourCC("A0IK"), LegendQuelthalas.LegendKael.Unit);
       RemoveUnit(LegendQuelthalas.LegendLorthemar.Unit);
       QuelthalasSetup.FactionQuelthalas.ModObjectLimit(LegendQuelthalas.LegendLorthemar.UnitType, -Faction.UNLIMITED);
-      Holder.Team = TeamSetup.TeamLegion;
+      Holder.Team = TeamSetup.Legion;
       QuelthalasQuestSetup.SUMMON_KIL.Progress = QuestProgress.Incomplete;
     }
   }

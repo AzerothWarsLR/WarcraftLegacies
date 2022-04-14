@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     protected override void OnComplete()
     {
-      if (NagaSetup.FactionNaga.Team == TeamSetup.TeamNaga) FelHordeSetup.FactionFelHorde.Team = TeamSetup.TeamNaga;
+      if (NagaSetup.FactionNaga.Team == TeamSetup.Naga) FelHordeSetup.FactionFelHorde.Team = TeamSetup.Naga;
       RemoveUnit(LegendFelHorde.LegendMagtheridon.Unit);
       FelHordeSetup.FactionFelHorde.ModObjectLimit(LegendFelHorde.LegendMagtheridon.UnitType, -Faction.UNLIMITED);
     }

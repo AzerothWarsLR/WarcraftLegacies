@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       factionGoblin = new Faction("Bilgewater", PLAYER_COLOR_LIGHT_GRAY, "|cff808080",
         "ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp");
       f = factionGoblin;
-      f.Team = TeamSetup.TeamHorde;
+      f.Team = TeamSetup.Horde;
       f.StartingGold = 150;
       f.StartingLumber = 500;
 

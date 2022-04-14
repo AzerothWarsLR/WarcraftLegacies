@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       SetPlayerTechResearched(LegionSetup.FactionLegion.Player, FourCC("R08G"), 1);
       ActivatePortal(_waygateA, Regions.Undercity_Interior_2.Center);
       ActivatePortal(_waygateB, Regions.Undercity_Interior_1.Center);
-      Holder.Team = TeamSetup.TeamForsaken;
+      Holder.Team = TeamSetup.Forsaken;
       Holder.Name = "Forsaken";
       Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNBansheeRanger.blp";
       //Todo: make the below into a Faction property

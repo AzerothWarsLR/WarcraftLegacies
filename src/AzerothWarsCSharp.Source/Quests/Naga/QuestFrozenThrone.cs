@@ -27,9 +27,9 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
     
     protected override void OnComplete()
     {
-      if (QuelthalasSetup.FactionQuelthalas.Team == TeamSetup.TeamNaga)
+      if (QuelthalasSetup.FactionQuelthalas.Team == TeamSetup.Naga)
       {
-        QuelthalasSetup.FactionQuelthalas.Team = TeamSetup.TeamLegion;
+        QuelthalasSetup.FactionQuelthalas.Team = TeamSetup.Legion;
         QuelthalasQuestSetup.SUMMON_KIL.Progress = QuestProgress.Incomplete;
         QuelthalasQuestSetup.GREAT_TREACHERY.Progress = QuestProgress.Failed;
         QuelthalasQuestSetup.STAY_LOYAL.Progress = QuestProgress.Failed;
@@ -38,9 +38,9 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
         UnitAddAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0R7"));
       }
 
-      if (FelHordeSetup.FactionFelHorde.Team == TeamSetup.TeamNaga)
-        FelHordeSetup.FactionFelHorde.Team = TeamSetup.TeamLegion;
-      NagaSetup.FactionNaga.Team = TeamSetup.TeamLegion;
+      if (FelHordeSetup.FactionFelHorde.Team == TeamSetup.Naga)
+        FelHordeSetup.FactionFelHorde.Team = TeamSetup.Legion;
+      NagaSetup.FactionNaga.Team = TeamSetup.Legion;
       SetPlayerTechResearched(QuelthalasSetup.FactionQuelthalas.Player, FourCC("R075"), 1);
     }
   }

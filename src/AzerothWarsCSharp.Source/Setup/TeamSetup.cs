@@ -2,72 +2,79 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Setup
 {
-  public class TeamSetup{
-
-  
-    public static Team TeamLegion { get; private set; }
-    public static Team TeamAlliance { get; private set; }
-    public static Team TeamHorde { get; private set; }
-    public static Team TeamNightElves { get; private set; }
-    public static Team TeamNaga { get; private set; }
-    public static Team TeamGilneas { get; private set; }
-    public static Team TeamScarlet { get; private set; }
-    public static Team TeamForsaken { get; private set; }
-    public static Team TeamOldgod { get; private set; }
-    public static Team TeamScourge { get; private set; }
+  public static class TeamSetup{
+    public static Team Legion { get; private set; }
+    public static Team Alliance { get; private set; }
+    public static Team Horde { get; private set; }
+    public static Team NightElves { get; private set; }
+    public static Team Naga { get; private set; }
+    public static Team Gilneas { get; private set; }
+    public static Team ScarletCrusade { get; private set; }
+    public static Team Forsaken { get; private set; }
+    public static Team OldGods { get; private set; }
+    public static Team Scourge { get; private set; }
   
 
     public static void Setup( ){
-      //Starting teams
-      TeamAlliance = new Team("Alliance")
+      Alliance = new Team("Alliance")
       {
         VictoryMusic = "HeroicVictory"
       };
-
-      TeamLegion = new Team("Burning Legion")
+      FactionManager.Register(Alliance);
+      
+      Legion = new Team("Burning Legion")
       {
         VictoryMusic = "DarkVictory"
       };
+      FactionManager.Register(Legion);
 
-      TeamHorde = new Team("Horde")
+      Horde = new Team("Horde")
       {
         VictoryMusic = "DarkVictory"
       };
-
-      TeamNightElves = new Team("Night Elves")
+      FactionManager.Register(Horde);
+      
+      NightElves = new Team("Night Elves")
       {
         VictoryMusic = "HeroicVictory"
       };
-
-      TeamOldgod = new Team("Old Gods")
+      FactionManager.Register(NightElves);
+      
+      OldGods = new Team("Old Gods")
       {
         VictoryMusic = "DarkVictory"
       };
-
-      TeamNaga = new Team("Illidari")
+      FactionManager.Register(OldGods);
+      
+      Naga = new Team("Illidari")
       {
         VictoryMusic = "DarkVictory"
       };
-
-      TeamGilneas = new Team("Gilneas")
+      FactionManager.Register(Naga);
+      
+      Gilneas = new Team("Gilneas")
       {
         VictoryMusic = "HeroicVictory"
       };
-
-      TeamScarlet = new Team("Scarlet Crusade")
+      FactionManager.Register(Gilneas);
+      
+      ScarletCrusade = new Team("Scarlet Crusade")
       {
         VictoryMusic = "DarkVictory"
       };
-
-      TeamForsaken = new Team("Forsaken")
+      FactionManager.Register(ScarletCrusade);
+      
+      Forsaken = new Team("Forsaken")
       {
         VictoryMusic = "DarkVictory"
       };
-
-      TeamScourge = new Team("Northrend")
+      FactionManager.Register(Forsaken);
+      
+      Scourge = new Team("Northrend")
       {
         VictoryMusic = "DarkVictory"
       };
+      FactionManager.Register(Scourge);
     }
 
   }
