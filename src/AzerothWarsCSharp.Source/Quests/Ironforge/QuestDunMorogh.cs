@@ -1,9 +1,8 @@
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Ironforge
@@ -15,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       "ReplaceableTextures\\CommandButtons\\BTNIceTrollShadowPriest.blp")
     {
       AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nith")))); //Troll
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n014"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n014"))));
       AddQuestItem(new QuestItemExpire(1435));
       AddQuestItem(new QuestItemSelfExists());
     }

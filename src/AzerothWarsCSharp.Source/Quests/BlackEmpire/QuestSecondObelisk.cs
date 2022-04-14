@@ -14,7 +14,7 @@
 //       "The convergence of floatities grows ever closer. An Obelisk must be established in Uldum.",
 //       "ReplaceableTextures\\CommandButtons\\BTNIceCrownObelisk.blp")
 //     {
-//       AddQuestItem(new QuestItemObelisk(ControlPoint.GetFromUnitType(FourCC("n0BD"))));
+//       AddQuestItem(new QuestItemObelisk(ControlPointManager.GetFromUnitType(FourCC("n0BD"))));
 //       foreach (var rescueRect in rescueRects)
 //       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
 //       {

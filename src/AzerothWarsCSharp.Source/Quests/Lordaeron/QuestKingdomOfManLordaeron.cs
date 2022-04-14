@@ -1,5 +1,5 @@
-using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.Artifacts;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
@@ -23,8 +23,8 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactCrownlordaeron));
       AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactCrownstormwind));
       AddQuestItem(new QuestItemLegendDead(LegendScourge.LegendLichking));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n010"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01G"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n010"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01G"))));
       Global = true;
     }
 

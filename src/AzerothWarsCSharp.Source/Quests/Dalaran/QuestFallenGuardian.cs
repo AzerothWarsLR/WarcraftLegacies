@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -15,10 +15,10 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "ReplaceableTextures\\CommandButtons\\BTNMedivh.blp")
     {
       AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendKarazhan, false));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00J"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00J"))));
       ResearchId = FourCC("R04K");
     }
-    
+
     protected override string CompletionPopup =>
       "Medivh's spirit has been cleansed of Sargeras' influence, allowing him to return to Azeroth for a time.";
 

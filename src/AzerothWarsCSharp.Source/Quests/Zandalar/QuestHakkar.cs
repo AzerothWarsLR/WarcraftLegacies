@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactZinrokh));
       AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.ArtifactZinrokh, Regions.DrownedTemple,
         "The Drowned Temple"));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00U"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00U"))));
       Global = true;
     }
 

@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
@@ -15,10 +16,10 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       "ReplaceableTextures\\CommandButtons\\BTNMetamorphosis.blp")
     {
       AddQuestItem(new QuestItemControlLegend(LegendFelHorde.LegendBlacktemple, false));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00R"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00R"))));
       AddQuestItem(new QuestItemResearch(FourCC("R063"), FourCC("n055")));
     }
-    
+
     protected override string CompletionPopup =>
       "Illidan has killed Magtheridon and subjugated the Fel Horde, the Illidari grow strong.";
 

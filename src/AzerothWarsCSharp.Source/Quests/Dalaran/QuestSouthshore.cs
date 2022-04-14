@@ -1,7 +1,6 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
 using static War3Api.Common;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
@@ -14,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "ReplaceableTextures\\CommandButtons\\BTNMurloc.blp")
     {
       AddQuestItem(new QuestItemKillUnit(murlocToKill));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08M"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08M"))));
       AddQuestItem(new QuestItemExpire(1135));
       AddQuestItem(new QuestItemSelfExists());
     }

@@ -1,9 +1,10 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
-using static War3Api.Common; using static War3Api.Blizzard;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {
@@ -16,8 +17,8 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "ReplaceableTextures\\CommandButtons\\BTNCastle.blp")
     {
       AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendCaerdarrow, false));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01M"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01C"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01M"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01C"))));
       AddQuestItem(new QuestItemExpire(1472));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = FourCC("R04Y");

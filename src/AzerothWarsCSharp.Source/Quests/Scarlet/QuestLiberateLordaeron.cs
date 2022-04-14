@@ -1,8 +1,10 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
-using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;
+using static War3Api.Blizzard;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Scarlet
 {
@@ -16,10 +18,10 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       "ReplaceableTextures\\CommandButtons\\BTNNorthrendCastle.blp")
     {
       AddQuestItem(new QuestItemControlLegend(LegendScarlet.LegendBrigitte, false));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01F"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n03P"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01H"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01M"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01F"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03P"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01H"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01M"))));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = QuestResearchId;
       ;

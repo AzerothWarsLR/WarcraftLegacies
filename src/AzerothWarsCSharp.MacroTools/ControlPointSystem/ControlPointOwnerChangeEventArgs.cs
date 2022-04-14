@@ -1,17 +1,17 @@
 ﻿using System;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.FactionSystem
+namespace AzerothWarsCSharp.MacroTools.ControlPointSystem
 {
   public sealed class ControlPointOwnerChangeEventArgs : EventArgs
   {
-    public ControlPoint ControlPoint { get; }
-    public player FormerOwner { get; }
-
     public ControlPointOwnerChangeEventArgs(ControlPoint controlPoint, player formerOwner)
     {
       ControlPoint = controlPoint;
       FormerOwner = formerOwner;
     }
+
+    public ControlPoint ControlPoint { get; }
+    public player FormerOwner { get; }
   }
 }

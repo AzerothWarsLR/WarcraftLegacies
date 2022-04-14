@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -13,11 +13,11 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       "Sylvanas longs to take revenge on the Lich King. Killing him and absorbing his power would maybe satisfy the emptiness inside her",
       "ReplaceableTextures\\CommandButtons\\BTNHelmofdomination.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BC"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BC"))));
       AddQuestItem(new QuestItemControlLegend(LegendForsaken.LegendSylvanasv, true));
       AddQuestItem(new QuestItemLegendDead(LegendScourge.LegendLichking));
     }
-    
+
     protected override string CompletionPopup =>
       "With the Lich King eliminated, Sylvanas vengeance is finally complete. She has absorbed his power and has become the Banshee Queen";
 

@@ -1,8 +1,7 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Twilight
@@ -13,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       "The Dragonmaw Port will be the perfect staging ground of the invasion of Azeroth",
       "ReplaceableTextures\\CommandButtons\\BTNIronHordeSummoningCircle.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08T"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08T"))));
       AddQuestItem(new QuestItemExpire(1227));
       AddQuestItem(new QuestItemSelfExists());
       ;
@@ -22,7 +21,8 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
 
 
     protected override string CompletionPopup =>
-      "Dragonmaw Port has fallen under our control and its military is now free to assist the " + Holder.Team.Name + ".";
+      "Dragonmaw Port has fallen under our control and its military is now free to assist the " + Holder.Team.Name +
+      ".";
 
     protected override string RewardDescription => "Control of all buildings in Dragonmaw Port";
 
@@ -43,7 +43,6 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       }
 
       DestroyGroup(tempGroup);
-      
     }
 
     protected override void OnFail()

@@ -1,10 +1,11 @@
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using System.Collections.Generic;
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
-using static War3Api.Common; using static War3Api.Blizzard;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 {
@@ -21,8 +22,8 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     {
       _demonGates = demonGates;
       AddQuestItem(new QuestItemLegendDead(LegendDraenei.LegendExodarship));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01J"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02N"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01J"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02N"))));
       AddQuestItem(new QuestItemUpgrade(FourCC("o02Y"), FourCC("o02Y")));
       AddQuestItem(new QuestItemExpire(1450));
       AddQuestItem(new QuestItemSelfExists());
@@ -55,10 +56,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 
     protected override void OnComplete()
     {
-      foreach (var unit in _demonGates)
-      {
-        UnitRescue(unit, Holder.Player);
-      }
+      foreach (var unit in _demonGates) UnitRescue(unit, Holder.Player);
 
       SetPlayerTechResearched(Holder.Player, FourCC("R00P"), 1);
       GrantHellfire(Holder.Player);

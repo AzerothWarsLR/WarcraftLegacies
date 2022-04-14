@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -14,9 +14,9 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       "Eons ago, the council that led the Eredar was the Triumvirate. If Velen could reconquer Argus, he could reform the Crown of the Triumvirate",
       "ReplaceableTextures\\CommandButtons\\BTNNeverMeltingCrown.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BH"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BL"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n09X"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BH"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BL"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09X"))));
       AddQuestItem(new QuestItemLegendNotPermanentlyDead(LegendDraenei.LegendVelen));
       Global = true;
     }
@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
     protected override string CompletionPopup => "Velen has liberated Argus and re-assembled the Crown of Triumvirate";
 
     protected override string RewardDescription => "You gain the powerful item, the Crown of the Triumvirate";
-    
+
 
     protected override void OnComplete()
     {

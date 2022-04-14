@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       "ReplaceableTextures\\CommandButtons\\BTNOneHeadedOgre.blp")
     {
       AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnitByUnitType(FourCC("noga")))); //Korgall
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n022"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n022"))));
       AddQuestItem(new QuestItemExpire(1505));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = FourCC("R03S");

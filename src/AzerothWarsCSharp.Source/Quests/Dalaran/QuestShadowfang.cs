@@ -1,7 +1,6 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
 using static War3Api.Common;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
@@ -14,11 +13,11 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "ReplaceableTextures\\CommandButtons\\BTNworgen.blp")
     {
       AddQuestItem(new QuestItemKillUnit(worgenToKill)); //Worgen
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01D"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01D"))));
       AddQuestItem(new QuestItemExpire(1444));
       AddQuestItem(new QuestItemSelfExists());
     }
-    
+
     protected override string CompletionPopup =>
       "Shadowfang has been liberated, and its military is now free to assist the " + Holder.Team.Name + ".";
 

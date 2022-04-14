@@ -1,8 +1,7 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
@@ -13,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "The Strahnbrad is under attack by some brigands, clear them out",
       "ReplaceableTextures\\CommandButtons\\BTNFarm.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01C"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01C"))));
       AddQuestItem(new QuestItemExpire(1170));
       AddQuestItem(new QuestItemSelfExists());
       ;

@@ -1,7 +1,6 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Draenei
@@ -15,10 +14,10 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       "ReplaceableTextures\\CommandButtons\\BTNAkamanew.blp")
     {
       AddQuestItem(new QuestItemTime(720));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02O"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02O"))));
       ResearchId = QuestResearchId;
     }
-    
+
     protected override string CompletionPopup => "The hero Nobundo is now trainable at the Altar";
 
     protected override string RewardDescription => "Nobundo will join the survivors on the Exodar";

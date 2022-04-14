@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -13,8 +13,8 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       "ReplaceableTextures\\CommandButtons\\BTNPaleValkyr.blp")
     {
       AddQuestItem(new QuestItemControlLegend(LegendForsaken.LegendSylvanasv, false));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02J"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n03U"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02J"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03U"))));
       AddQuestItem(new QuestItemLegendDead(LegendScourge.LegendLichking));
       AddQuestItem(new QuestItemSelfExists());
     }

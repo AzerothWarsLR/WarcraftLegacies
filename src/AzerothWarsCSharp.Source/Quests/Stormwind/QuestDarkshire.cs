@@ -1,7 +1,6 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
 using static War3Api.Common;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
@@ -14,11 +13,11 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       "ReplaceableTextures\\CommandButtons\\BTNGnollArcher.blp")
     {
       AddQuestItem(new QuestItemKillUnit(gnollToKill));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00V"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00V"))));
       AddQuestItem(new QuestItemExpire(1425));
       AddQuestItem(new QuestItemSelfExists());
     }
-    
+
     protected override string CompletionPopup =>
       "Darkshire has been liberated, and its military is now free to assist the " + Holder.Team.Name + ".";
 

@@ -1,8 +1,10 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
-using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;
+using static War3Api.Blizzard;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Druids
 {
@@ -14,9 +16,9 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
     {
       AddQuestItem(
         new QuestItemLegendReachRect(LegendDruids.LegendMalfurion, Regions.AshenvaleUnlock, "Ashenvale"));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n07C"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01Q"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08U"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n07C"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01Q"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08U"))));
       AddQuestItem(new QuestItemUpgrade(FourCC("etol"), FourCC("etol")));
       AddQuestItem(new QuestItemExpire(1440));
       AddQuestItem(new QuestItemSelfExists());

@@ -1,9 +1,10 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
-using static War3Api.Common; using static War3Api.Blizzard;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Quests.Sentinels
 {
@@ -15,13 +16,13 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
     {
       AddQuestItem(new QuestItemLegendReachRect(LegendSentinels.legendTyrande, Regions.FeathermoonUnlock,
         "Feathermoon Stronghold"));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01R"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01R"))));
       AddQuestItem(new QuestItemUpgrade(FourCC("n06J"), FourCC("n06J")));
       AddQuestItem(new QuestItemExpire(1485));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = FourCC("R06M");
     }
-    
+
     protected override string CompletionPopup =>
       "Feathermoon Stronghold has been relieved and has joined the Sentinels in their war effort";
 
@@ -44,7 +45,6 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       }
 
       DestroyGroup(tempGroup);
-      
     }
 
     protected override void OnFail()

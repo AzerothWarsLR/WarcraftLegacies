@@ -1,9 +1,10 @@
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
-using static War3Api.Common; using static War3Api.Blizzard;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Quests.Warsong
 {
@@ -12,6 +13,13 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
     private static readonly int ResearchId = FourCC("R06G");
     private static readonly int AbilityId = FourCC("A0DZ");
 
+    public QuestWarsongHold() : base("Warsong Hold",
+      "The far-off land of Northrend is the new home of the traitor shaman Ner'zhul. The Warsong must land its forces on its shores in order to end the existential threat he now represents.",
+      "ReplaceableTextures\\CommandButtons\\BTNTuskaarBrown.blp")
+    {
+      AddQuestItem(new QuestItemResearch(ResearchId, FourCC("o02T")));
+    }
+
     protected override string CompletionPopup =>
       "The Warsong Clan has sail for the icy shores of Northrend and up a formidable encampment at Borean Tundra.";
 
@@ -19,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
 
     protected override void OnComplete()
     {
-      unit boreanTundra = ControlPoint.GetFromUnitType(FourCC("n00G")).Unit;
+      unit boreanTundra = ControlPointManager.GetFromUnitType(FourCC("n00G")).Unit;
       KillNeutralHostileUnitsInRadius(GetUnitX(boreanTundra), GetUnitY(boreanTundra), 2300);
       //Spawn the base
       SetUnitOwner(boreanTundra, Holder.Player, true);
@@ -57,12 +65,6 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
     protected override void OnAdd()
     {
       Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
-    }
-
-    public QuestWarsongHold() : base("Warsong Hold",
-      "The far-off land of Northrend is the new home of the traitor shaman Ner'zhul. The Warsong must land its forces on its shores in order to end the existential threat he now represents.",
-      "ReplaceableTextures\\CommandButtons\\BTNTuskaarBrown.blp") {
-      AddQuestItem(new QuestItemResearch(ResearchId, FourCC("o02T")));
     }
   }
 }

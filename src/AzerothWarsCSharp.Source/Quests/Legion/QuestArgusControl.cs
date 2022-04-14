@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
 using static War3Api.Common;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
@@ -18,9 +17,9 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       "ReplaceableTextures\\CommandButtons\\BTNMastersLodge.blp")
     {
       AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnitByUnitType(FourCC("h09U")))); //Knight
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BF"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BH"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0BG"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BF"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BH"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BG"))));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = FourCC("R055");
       _rescueUnits.Add(PreplacedUnitSystem.GetUnitByUnitType(FourCC("n0BE")));

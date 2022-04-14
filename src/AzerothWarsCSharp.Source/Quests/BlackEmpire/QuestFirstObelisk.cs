@@ -37,7 +37,7 @@
 //         SetUnitInvulnerable(unit, true);
 //         _rescueUnits.Add(unit);
 //       }
-//       AddQuestItem(new QuestItemObelisk(ControlPoint.GetFromUnitType(FourCC("n02S"))));
+//       AddQuestItem(new QuestItemObelisk(ControlPointManager.GetFromUnitType(FourCC("n02S"))));
 //     }
 //   }
 // }

@@ -1,8 +1,9 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
-using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;
+using static War3Api.Blizzard;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Scourge
 {
@@ -14,15 +15,15 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       "The proud Nerubians have declared war on the newly formed Lich King, destroy them to secure the continent of Northrend.",
       "ReplaceableTextures\\CommandButtons\\BTNNerubianQueen.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00I"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08D"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00G"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00I"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08D"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00G"))));
       AddQuestItem(new QuestItemKillUnit(spiderQueen));
       AddQuestItem(new QuestItemUpgrade(FourCC("unpl"), FourCC("unpl")));
       AddQuestItem(new QuestItemExpire(1480));
       AddQuestItem(new QuestItemSelfExists());
     }
-    
+
     protected override string CompletionPopup =>
       "Northrend and the Icecrown Citadel is now under full control of the Lich King and the " + Holder.Team.Name + ".";
 

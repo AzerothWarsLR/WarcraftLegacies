@@ -1,7 +1,6 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
 using static War3Api.Common;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
@@ -9,15 +8,16 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 {
   public sealed class QuestLakeshire : QuestData
   {
-    public QuestLakeshire(unit ogreLordToKill) : base("Marauding Ogres", "The town of Lakeshire is invaded by Ogres, wipe them out!",
+    public QuestLakeshire(unit ogreLordToKill) : base("Marauding Ogres",
+      "The town of Lakeshire is invaded by Ogres, wipe them out!",
       "ReplaceableTextures\\CommandButtons\\BTNOgreLord.blp")
     {
       AddQuestItem(new QuestItemKillUnit(ogreLordToKill));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n011"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n011"))));
       AddQuestItem(new QuestItemExpire(1427));
       AddQuestItem(new QuestItemSelfExists());
     }
-    
+
     protected override string CompletionPopup =>
       "Lakeshire has been liberated, and its military is now free to assist the " + Holder.Team.Name + ".";
 
@@ -39,7 +39,6 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       }
 
       DestroyGroup(tempGroup);
-      
     }
 
     protected override void OnFail()

@@ -1,9 +1,10 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using AzerothWarsCSharp.Source.Setup.Legends;
-using static War3Api.Common; using static War3Api.Blizzard;
+using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 {
@@ -13,11 +14,11 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       "The Draenei race existence insults the Fel Horde demon masters, slaughter them all ",
       "ReplaceableTextures\\CommandButtons\\BTNChaosWolfRider.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n09X"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09X"))));
       AddQuestItem(new QuestItemLegendDead(LegendDraenei.LegendExodarship));
       AddQuestItem(new QuestItemSelfExists());
     }
-    
+
     protected override string CompletionPopup =>
       "The Draenei have been eliminated from Outland and their gold mine is ours.";
 
@@ -44,7 +45,6 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       }
 
       DestroyGroup(tempGroup);
-      
     }
   }
 }

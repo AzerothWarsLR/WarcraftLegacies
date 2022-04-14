@@ -1,7 +1,6 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
 using static War3Api.Common;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
@@ -15,9 +14,9 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       "Make contact with the Blackrock clan and convince them to join Magtheridon",
       "ReplaceableTextures\\CommandButtons\\BTNBlackhand.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00S"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n09Y"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0A9"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00S"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09Y"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0A9"))));
       AddQuestItem(new QuestItemExpire(1451));
       AddQuestItem(new QuestItemSelfExists());
     }
@@ -46,7 +45,6 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       }
 
       DestroyGroup(tempGroup);
-      
     }
 
     protected override void OnFail()

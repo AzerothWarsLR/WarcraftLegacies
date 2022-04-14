@@ -1,8 +1,9 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
-using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;
+using static War3Api.Blizzard;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {
@@ -14,10 +15,10 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "The territories of Dalaran are fragmented, secure the lands and protect Dalaran citizens .",
       "ReplaceableTextures\\CommandButtons\\BTNArcaneCastle.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01D"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n08M"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n018"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01I"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01D"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08M"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n018"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01I"))));
       AddQuestItem(new QuestItemUpgrade(FourCC("h065"), FourCC("h065")));
       AddQuestItem(new QuestItemExpire(1445));
       AddQuestItem(new QuestItemSelfExists());
@@ -59,7 +60,6 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       }
 
       DestroyGroup(tempGroup);
-      
     }
 
     protected override void OnFail()

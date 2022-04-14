@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
@@ -16,8 +17,8 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       "ReplaceableTextures\\CommandButtons\\BTNTreant.blp")
     {
       AddQuestItem(new QuestItemLegendDead(LegendScourge.LegendLichking));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n03U"))));
-      this.AddQuestItem(new QuestItemAnyUnitInRect(Regions.GrizzlyHills, "Grizzly Hills", true));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03U"))));
+      AddQuestItem(new QuestItemAnyUnitInRect(Regions.GrizzlyHills, "Grizzly Hills", true));
     }
 
 

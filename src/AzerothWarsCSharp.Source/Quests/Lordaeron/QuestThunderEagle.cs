@@ -1,8 +1,8 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
-using static AzerothWarsCSharp.MacroTools.Libraries.Display;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
+using static AzerothWarsCSharp.MacroTools.Libraries.Display;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
@@ -17,9 +17,9 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "ReplaceableTextures\\CommandButtons\\BTNWarEagle.blp")
     {
       AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendDraktharonkeep, false));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02S"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02S"))));
     }
-    
+
     protected override string CompletionPopup => "The Thunder Eagles, now in safe hands " + Holder.Name + ".";
 
     protected override string RewardDescription => "Learn to train " + GetObjectName(ThunderEagleId) + "s";

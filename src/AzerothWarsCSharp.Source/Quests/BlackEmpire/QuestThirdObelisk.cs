@@ -16,13 +16,13 @@
 //       "Reality frays at the seams as madness threatents to overtake it. Once an Obelisk has been established in the Twilight Highlands, the mirror worlds of Azeroth and Ny'alotha will finally be one, and the Black empire will be unleashed.",
 //       "ReplaceableTextures\\CommandButtons\\BTNHorrorSoul.blp")
 //     {
-//       AddQuestItem(new QuestItemObelisk(ControlPoint.GetFromUnitType(FourCC("n02S"))));
-//       AddQuestItem(new QuestItemObelisk(ControlPoint.GetFromUnitType(FourCC("n04V"))));
-//       AddQuestItem(new QuestItemObelisk(ControlPoint.GetFromUnitType(FourCC("n0BD"))));
+//       AddQuestItem(new QuestItemObelisk(ControlPointManager.GetFromUnitType(FourCC("n02S"))));
+//       AddQuestItem(new QuestItemObelisk(ControlPointManager.GetFromUnitType(FourCC("n04V"))));
+//       AddQuestItem(new QuestItemObelisk(ControlPointManager.GetFromUnitType(FourCC("n0BD"))));
 //       AddQuestItem(new QuestItemExpire(1800));
 //       Global = true;
 //
-//       AddQuestItem(new QuestItemObelisk(ControlPoint.GetFromUnitType(FourCC("n0BD"))));
+//       AddQuestItem(new QuestItemObelisk(ControlPointManager.GetFromUnitType(FourCC("n0BD"))));
 //       foreach (var rescueRect in rescueRects)
 //       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
 //       {

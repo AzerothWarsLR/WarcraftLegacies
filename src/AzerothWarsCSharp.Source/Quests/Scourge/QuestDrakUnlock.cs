@@ -1,8 +1,8 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Scourge
@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       "Draktharon's Keep", "Drak'tharon's Keep will be the place for an outpost by the sea.",
       "ReplaceableTextures\\CommandButtons\\BTNUndeadShipyard.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n030"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n030"))));
       AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendDraktharonkeep, false));
       AddQuestItem(new QuestItemExpire(1140));
       AddQuestItem(new QuestItemSelfExists());

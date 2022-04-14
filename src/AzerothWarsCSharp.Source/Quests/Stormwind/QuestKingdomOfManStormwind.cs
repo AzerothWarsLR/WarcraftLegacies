@@ -1,11 +1,11 @@
 using AzerothWarsCSharp.MacroTools.Artifacts;
-using AzerothWarsCSharp.MacroTools.FactionSystem;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
-using static AzerothWarsCSharp.MacroTools.Libraries.Display;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.Legends;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static AzerothWarsCSharp.MacroTools.Libraries.Display;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Stormwind
@@ -18,12 +18,12 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       "Before the First War, all of humanity was united under the banner of the Arathorian Empire. Reclaim its greatness by uniting mankind once again.",
       "ReplaceableTextures\\CommandButtons\\BTNFireKingCrown.blp")
     {
-      this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LegendStormwind.LegendVarian));
+      AddQuestItem(new QuestItemLegendNotPermanentlyDead(LegendStormwind.LegendVarian));
       AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactCrownlordaeron));
       AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactCrownstormwind));
       AddQuestItem(new QuestItemControlLegend(LegendFelHorde.LegendBlacktemple, false));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n010"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01G"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n010"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01G"))));
       ResearchId = FourCC("R01N");
       Global = true;
     }

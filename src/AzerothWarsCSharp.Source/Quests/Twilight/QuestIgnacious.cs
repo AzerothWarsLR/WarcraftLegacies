@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -13,12 +13,12 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp")
     {
       AddQuestItem(new QuestItemLegendDead(LegendIronforge.LegendGreatforge));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n0AA"))));
-      base.ResearchId = FourCC("R07Q");
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0AA"))));
+      ResearchId = FourCC("R07Q");
     }
-    
+
     protected override string CompletionPopup => "The great Ragnaros has ascended one of our shamans.";
-    
+
     //Todo: specify altar name
     protected override string RewardDescription => "You can summon Ignacious from the Altar";
   }

@@ -1,9 +1,8 @@
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
@@ -15,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "ReplaceableTextures\\CommandButtons\\BTNChaosBlademaster.blp")
     {
       AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnitByUnitType(FourCC("o00B")))); //Jubei
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n019"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n019"))));
       AddQuestItem(new QuestItemUpgrade(FourCC("hcas"), FourCC("htow")));
       AddQuestItem(new QuestItemExpire(1470));
       AddQuestItem(new QuestItemSelfExists());

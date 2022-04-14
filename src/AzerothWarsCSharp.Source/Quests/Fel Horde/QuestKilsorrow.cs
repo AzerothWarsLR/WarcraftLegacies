@@ -1,9 +1,8 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
-
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
@@ -17,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       "ReplaceableTextures\\CommandButtons\\BTNFelOrcWatchTower.blp")
     {
       _kilsorrowFortress = kilsorrowFortress;
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n09X"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09X"))));
       AddQuestItem(new QuestItemExpire(1452));
       AddQuestItem(new QuestItemSelfExists());
     }

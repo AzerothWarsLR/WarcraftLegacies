@@ -1,8 +1,9 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
-using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;
+using static War3Api.Blizzard;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Stormwind
 {
@@ -14,9 +15,9 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       "The outskirts of Stormwind are infested by evil creatures. Kill their leaders and regain control of the Towns.",
       "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionCastle.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00V"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00Z"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n011"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00V"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00Z"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n011"))));
       AddQuestItem(new QuestItemUpgrade(FourCC("h06K"), FourCC("h06K")));
       AddQuestItem(new QuestItemExpire(1020));
       AddQuestItem(new QuestItemSelfExists());
@@ -48,7 +49,6 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       }
 
       DestroyGroup(tempGroup);
-      
     }
 
     protected override void OnFail()

@@ -1,17 +1,18 @@
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
-using static War3Api.Common; using static War3Api.Blizzard;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {
   public sealed class QuestSilvermoon : QuestData
   {
-    private unit _elvenRunestone;
-    
+    private readonly unit _elvenRunestone;
+
     public QuestSilvermoon(unit elvenRunestone) : base("The Siege of Silvermoon",
       "Silvermoon has been besieged by Trolls. Clear them out and destroy their city of Zul'aman.",
       "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp")
@@ -19,8 +20,8 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       _elvenRunestone = elvenRunestone;
       AddQuestItem(new QuestItemKillUnit(
         PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_O00O_CHIEFTAN_OF_THE_AMANI_TRIBE_CREEP_ZUL_AMAN)));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01V"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n01L"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01V"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01L"))));
       AddQuestItem(new QuestItemUpgrade(FourCC("h033"), FourCC("h033")));
       AddQuestItem(new QuestItemExpire(1480));
       AddQuestItem(new QuestItemSelfExists());

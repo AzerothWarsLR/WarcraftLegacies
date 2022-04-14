@@ -1,9 +1,10 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
-using static War3Api.Common; using static War3Api.Blizzard;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Quests.Sentinels
 {
@@ -15,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
     {
       AddQuestItem(new QuestItemLegendReachRect(LegendSentinels.legendTyrande, Regions.AstranaarUnlock,
         "Astranaar Outpost"));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n02U"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02U"))));
       AddQuestItem(new QuestItemExpire(1430));
       AddQuestItem(new QuestItemSelfExists());
     }

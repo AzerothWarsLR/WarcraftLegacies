@@ -1,8 +1,7 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Stormwind
@@ -14,11 +13,11 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       "ReplaceableTextures\\CommandButtons\\BTNGnoll.blp")
     {
       AddQuestItem(new QuestItemKillUnit(hogger)); //Hogger
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n00Z"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00Z"))));
       AddQuestItem(new QuestItemExpire(1335));
       AddQuestItem(new QuestItemSelfExists());
     }
-    
+
     protected override string CompletionPopup => "The Gnolls have been defeated, Goldshire is safe.";
 
     protected override string RewardDescription => "Control of all units in Goldshire";
@@ -40,7 +39,6 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       }
 
       DestroyGroup(tempGroup);
-      
     }
 
     protected override void OnFail()

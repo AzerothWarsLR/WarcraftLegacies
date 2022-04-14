@@ -1,9 +1,9 @@
-using AzerothWarsCSharp.MacroTools.FactionSystem;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
-using static War3Api.Common; using static War3Api.Blizzard;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Quests.Ironforge
 {
@@ -13,15 +13,15 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       "The Dwarven Dominion must be established before Ironforge can join the war.",
       "ReplaceableTextures\\CommandButtons\\BTNNorthrendCastle.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n017"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n014"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPoint.GetFromUnitType(FourCC("n013"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n017"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n014"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n013"))));
       AddQuestItem(new QuestItemUpgrade(FourCC("h07E"), FourCC("h07E")));
       AddQuestItem(new QuestItemExpire(1462));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = FourCC("R043");
     }
-    
+
     protected override string CompletionPopup =>
       "The Dwarven Empire is re-united again, Ironforge is ready for war again.";
 

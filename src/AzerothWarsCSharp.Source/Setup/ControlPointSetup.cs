@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
-
-using static War3Api.Common; using static War3Api.Blizzard;
+using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Setup
 {
@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Setup
     {
       foreach (var (unitTypeId, goldValue) in ControlPointValues)
         if (GetUnitAbilityLevel(unit, unitTypeId) > 0)
-          ControlPoint.Register(new ControlPoint(unit, goldValue));
+          ControlPointManager.Register(new ControlPoint(unit, goldValue));
     }
 
     public static void Setup()
