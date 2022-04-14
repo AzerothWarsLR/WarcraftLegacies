@@ -1,6 +1,6 @@
 using System;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
-using WCSharp.Events;
+using AzerothWarsCSharp.MacroTools.Wrappers;
 using static War3Api.Common;
 using static War3Api.Blizzard;
 
@@ -16,12 +16,19 @@ namespace AzerothWarsCSharp.MacroTools.ControlPointSystem
     private const float CAPTURE_THRESHOLD = 0.8f; //Percentage of maximum HP; below this, the CP will go to the damager
     private static readonly int RegenerationAbility = FourCC("A0UT");
 
+    private readonly TriggerWrapper _damageTrigger = new();
+    private readonly TriggerWrapper _changeOwnerTrigger = new();
+
     public ControlPoint(unit u, float value)
     {
       Unit = u;
       Value = value;
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeChangesOwner, ChangeOwner, UnitType);
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeIsDamaged, OnDamaged, UnitType);
+
+      TriggerRegisterUnitEvent(_damageTrigger.Trigger, Unit, EVENT_UNIT_DAMAGED);
+      TriggerRegisterUnitEvent(_changeOwnerTrigger.Trigger, Unit, EVENT_UNIT_CHANGE_OWNER);
+
+      TriggerAddAction(_damageTrigger.Trigger, OnDamaged);
+      TriggerAddAction(_changeOwnerTrigger.Trigger, ChangeOwner);
     }
 
     public player Owner => GetOwningPlayer(Unit);
@@ -81,8 +88,9 @@ namespace AzerothWarsCSharp.MacroTools.ControlPointSystem
 
         playerData.ControlPointValue += Value;
         playerData.ControlPointCount += 1;
-
+        
         UnitAddAbility(Unit, RegenerationAbility);
+        SetUnitState(Unit, UNIT_STATE_LIFE, GetUnitState(Unit, UNIT_STATE_MAX_LIFE));
 
         OnControlPointOwnerChange?.Invoke(this, new ControlPointOwnerChangeEventArgs(this, formerOwner));
         ChangedOwner?.Invoke(this, new ControlPointOwnerChangeEventArgs(this, formerOwner));
