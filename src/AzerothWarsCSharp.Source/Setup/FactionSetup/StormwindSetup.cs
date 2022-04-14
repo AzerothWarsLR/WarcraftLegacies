@@ -86,6 +86,8 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       f.ModObjectLimit(FourCC("R03A"), Faction.UNLIMITED); //Focus In The Light
       f.ModObjectLimit(FourCC("R03T"), Faction.UNLIMITED); //Electric Strike Ritual
       f.ModObjectLimit(FourCC("R03U"), Faction.UNLIMITED); //Solar Flare Ritual
+
+      FactionManager.Register(Stormwind);
     }
   }
 }

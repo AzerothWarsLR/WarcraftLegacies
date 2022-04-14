@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
   public static class CthunSetup
   {
     public static Faction FactionCthun { get; private set; }
-    
+
     public static void Setup()
     {
       FactionCthun = new Faction("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cFFFFDF80",
@@ -54,7 +54,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       FactionCthun.ModObjectLimit(FourCC("R07I"), Faction.UNLIMITED); //Shadow weaver training
       FactionCthun.ModObjectLimit(FourCC("R07J"), Faction.UNLIMITED); //Shadow weaver training
 
-      //Masteries
+      FactionManager.Register(FactionCthun);
     }
   }
 }

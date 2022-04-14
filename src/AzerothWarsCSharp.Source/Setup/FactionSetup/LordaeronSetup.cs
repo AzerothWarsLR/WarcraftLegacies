@@ -81,6 +81,8 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 
       FactionLordaeron.ModObjectLimit(FourCC("R08E"), Faction.UNLIMITED); //Garithos Crusade
       FactionLordaeron.ModObjectLimit(FourCC("R08F"), Faction.UNLIMITED); //Mind Control
+
+      FactionManager.Register(FactionLordaeron);
     }
   }
 }

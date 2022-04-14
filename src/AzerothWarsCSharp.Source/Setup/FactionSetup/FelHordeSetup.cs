@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
   public static class FelHordeSetup
   {
     public static Faction FactionFelHorde { get; private set; }
-    
+
     public static void Setup()
     {
       Faction f;
@@ -89,6 +89,8 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       FactionFelHorde.ModObjectLimit(FourCC("n07D"), 1); //Maiden
       FactionFelHorde.ModObjectLimit(FourCC("n07o"), 1); //Terror
       FactionFelHorde.ModObjectLimit(FourCC("n07N"), 1); //Lord
+
+      FactionManager.Register(FactionFelHorde);
     }
   }
 }

@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
   public static class DruidsSetup
   {
     public static Faction factionDruids;
-    
+
     public static void Setup()
     {
       Faction f;
@@ -72,6 +72,8 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       factionDruids.ModObjectLimit(FourCC("R048"), Faction.UNLIMITED); //Deadly Poison
       factionDruids.ModObjectLimit(FourCC("R008"), Faction.UNLIMITED); //Improved Natures FuryR015
       factionDruids.ModObjectLimit(FourCC("R015"), Faction.UNLIMITED); //Improved Mana Flare
+
+      FactionManager.Register(factionDruids);
     }
   }
 }

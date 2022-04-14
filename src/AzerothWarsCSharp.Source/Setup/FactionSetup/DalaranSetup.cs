@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
   public static class DalaranSetup
   {
     public static Faction Dalaran { get; private set; }
-    
+
     public static void Setup()
     {
       Faction f;
@@ -72,6 +72,8 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       Dalaran.ModObjectLimit(FourCC("R061"), Faction.UNLIMITED); //Improved Forked Lightning
       Dalaran.ModObjectLimit(FourCC("R06O"), Faction.UNLIMITED); //Improved Phase Blade
       Dalaran.ModObjectLimit(FourCC("R00J"), Faction.UNLIMITED); //Combat Tomes
+
+      FactionManager.Register(Dalaran);
     }
   }
 }

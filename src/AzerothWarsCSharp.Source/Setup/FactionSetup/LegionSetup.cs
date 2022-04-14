@@ -12,9 +12,9 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
     {
       Faction f;
 
-      LegionSetup.FactionLegion = new Faction("Legion", PLAYER_COLOR_PEANUT, "|CFFBF8F4F",
+      FactionLegion = new Faction("Legion", PLAYER_COLOR_PEANUT, "|CFFBF8F4F",
         "ReplaceableTextures\\CommandButtons\\BTNKiljaedin.blp");
-      f = LegionSetup.FactionLegion;
+      f = FactionLegion;
       f.UndefeatedResearch = FourCC("R04T");
       f.Team = TeamSetup.TeamLegion;
       f.StartingGold = 150;
@@ -76,6 +76,8 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       f.ModObjectLimit(FourCC("U00L"), 1); //Anetheron
       f.ModObjectLimit(FourCC("Umal"), 1); //Mal)ganis
       f.ModObjectLimit(FourCC("Utic"), 1); //Tichondrius
+
+      FactionManager.Register(FactionLegion);
     }
   }
 }

@@ -83,6 +83,8 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       FactionScourge.ModObjectLimit(FourCC("R06N"), Faction.UNLIMITED); //Improved Orb of Annihilation
       FactionScourge.ModObjectLimit(FourCC("Rusl"), Faction.UNLIMITED); //Skeletal Mastery
       FactionScourge.ModObjectLimit(FourCC("Rusm"), Faction.UNLIMITED); //Skeletal Longevity
+
+      FactionManager.Register(FactionScourge);
     }
   }
 }

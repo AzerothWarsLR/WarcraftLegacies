@@ -59,7 +59,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       FactionBlackempire.ModObjectLimit(FourCC("R07N"), Faction.UNLIMITED); //Sorcerer Training
       FactionBlackempire.ModObjectLimit(FourCC("R07O"), Faction.UNLIMITED); //Fateweaver Training
 
-      //Masteries
+      FactionManager.Register(FactionBlackempire);
     }
   }
 }

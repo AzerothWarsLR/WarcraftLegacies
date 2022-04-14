@@ -74,6 +74,8 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       f.ModObjectLimit(FourCC("Hapm"), 1); //Admiral
       f.ModObjectLimit(FourCC("H05L"), 1); //Lady Ashvane
       f.ModObjectLimit(FourCC("E016"), 1); //Lucille
+
+      FactionManager.Register(FACTION_KULTIRAS);
     }
   }
 }

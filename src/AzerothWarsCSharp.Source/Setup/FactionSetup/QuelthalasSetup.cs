@@ -13,7 +13,8 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       Faction f;
       FactionQuelthalas =
         new Faction(
-          "Quel'thalas", PLAYER_COLOR_CYAN, "|C0000FFFF","ReplaceableTextures\\CommandButtons\\BTNSylvanusWindrunner.blp");
+          "Quel'thalas", PLAYER_COLOR_CYAN, "|C0000FFFF",
+          "ReplaceableTextures\\CommandButtons\\BTNSylvanusWindrunner.blp");
       f = FactionQuelthalas;
       f.Team = TeamSetup.TeamAlliance;
       f.UndefeatedResearch = FourCC("R05U");
@@ -85,6 +86,8 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       //Paths
       f.ModObjectLimit(FourCC("R046"), Faction.UNLIMITED); //Quel)thelas Full Mobilization
       f.ModObjectLimit(FourCC("R04U"), Faction.UNLIMITED); //Solo Path
+
+      FactionManager.Register(FactionQuelthalas);
     }
   }
 }

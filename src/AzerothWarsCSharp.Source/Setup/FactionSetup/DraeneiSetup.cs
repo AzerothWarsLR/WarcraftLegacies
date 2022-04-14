@@ -54,6 +54,8 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       Draenei.ModObjectLimit(FourCC("R023"), Faction.UNLIMITED); //Spiritual Infusion
       Draenei.ModObjectLimit(FourCC("R078"), Faction.UNLIMITED); //Elementalist training
       Draenei.ModObjectLimit(FourCC("R07C"), Faction.UNLIMITED); //Luminarch training
+
+      FactionManager.Register(Draenei);
     }
   }
 }
