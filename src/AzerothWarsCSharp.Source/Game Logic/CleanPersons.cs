@@ -6,7 +6,7 @@ using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 namespace AzerothWarsCSharp.Source.Game_Logic
 {
   /// <summary>
-  /// Removes players from the game if their slot is unoccupied.
+  ///   Removes players from the game if their slot is unoccupied.
   /// </summary>
   public static class CleanPersons
   {
@@ -16,20 +16,12 @@ namespace AzerothWarsCSharp.Source.Game_Logic
       TriggerRegisterTimerEvent(trig, 2, false);
       TriggerAddAction(trig, () =>
       {
-        if (TestSafety.AreCheatsActive)
-        {
-          return;
-        }
+        if (TestSafety.AreCheatsActive) return;
 
         foreach (var player in GetAllPlayers())
-        {
-          var person = PlayerData.ByHandle(player);
-          if (person != null && GetPlayerSlotState(player) != PLAYER_SLOT_STATE_PLAYING &&
-              person.Faction.ScoreStatus == ScoreStatus.Undefeated)
-          {
-            person.Faction.ScoreStatus = ScoreStatus.Defeated;
-          }
-        }
+          if (GetPlayerSlotState(player) != PLAYER_SLOT_STATE_PLAYING &&
+              player.GetFaction().ScoreStatus == ScoreStatus.Undefeated)
+            player.GetFaction().ScoreStatus = ScoreStatus.Defeated;
       });
     }
   }

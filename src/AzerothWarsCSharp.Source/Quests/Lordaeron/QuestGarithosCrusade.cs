@@ -1,10 +1,11 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.Legends;
-using static War3Api.Common; using static War3Api.Blizzard;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {
@@ -25,17 +26,17 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     protected override void OnComplete()
     {
-      Holder.Person.ModObjectLimit(FourCC("h00F"), -Faction.UNLIMITED); //Paladin
-      Holder.Person.ModObjectLimit(FourCC("R06Q"), -Faction.UNLIMITED); //Paladin Adept Training
-      Holder.Person.ModObjectLimit(FourCC("h012"), -Faction.UNLIMITED); //Falric
-      Holder.Person.ModObjectLimit(FourCC("Hart"), -Faction.UNLIMITED); //Arthas
-      Holder.Person.ModObjectLimit(FourCC("Huth"), -Faction.UNLIMITED); //Uther
-      Holder.Person.ModObjectLimit(FourCC("H01J"), -Faction.UNLIMITED); //Mograine
-      Holder.Person.ModObjectLimit(FourCC("Harf"), -Faction.UNLIMITED); //Arthas
+      Holder.Player?.ModObjectLimit(FourCC("h00F"), -Faction.UNLIMITED); //Paladin
+      Holder.Player?.ModObjectLimit(FourCC("R06Q"), -Faction.UNLIMITED); //Paladin Adept Training
+      Holder.Player?.ModObjectLimit(FourCC("h012"), -Faction.UNLIMITED); //Falric
+      Holder.Player?.ModObjectLimit(FourCC("Hart"), -Faction.UNLIMITED); //Arthas
+      Holder.Player?.ModObjectLimit(FourCC("Huth"), -Faction.UNLIMITED); //Uther
+      Holder.Player?.ModObjectLimit(FourCC("H01J"), -Faction.UNLIMITED); //Mograine
+      Holder.Player?.ModObjectLimit(FourCC("Harf"), -Faction.UNLIMITED); //Arthas
 
-      Holder.Person.ModObjectLimit(FourCC("h009"), 6); //Dark Knight
-      Holder.Person.ModObjectLimit(FourCC("Hlgr"), 1); //Garithos
-      Holder.Person.ModObjectLimit(FourCC("E00O"), 1); //Goodchild
+      Holder.Player?.ModObjectLimit(FourCC("h009"), 6); //Dark Knight
+      Holder.Player?.ModObjectLimit(FourCC("Hlgr"), 1); //Garithos
+      Holder.Player?.ModObjectLimit(FourCC("E00O"), 1); //Goodchild
 
       Holder.Team = TeamSetup.ScarletCrusade;
       Holder.Name = "|cff800000Garithos|r";

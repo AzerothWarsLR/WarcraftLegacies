@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Commands
     private static void Actions()
     {
       string enteredString = GetEventPlayerChatString();
-      PlayerData senderPlayerData = PlayerData.ByHandle(GetTriggerPlayer());
+      var triggerPlayer = GetTriggerPlayer();
 
       if (SubString(enteredString, 0, StringLength(COMMAND)) == COMMAND)
       {
@@ -22,47 +22,47 @@ namespace AzerothWarsCSharp.Source.Commands
         content = StringCase(content, false);
         Faction targetFaction = FactionManager.GetFromName(content);
 
-        if (senderPlayerData.Faction != NagaSetup.FactionNaga)
+        if (triggerPlayer.GetFaction() != NagaSetup.FactionNaga)
         {
-          DisplayTextToPlayer(senderPlayerData.Player, 0, 0, "This command can only be used by liege factions.");
+          DisplayTextToPlayer(triggerPlayer, 0, 0, "This command can only be used by liege factions.");
           return;
         }
 
         if (OpenAllianceVote.AreAlliancesOpen)
         {
-          DisplayTextToPlayer(senderPlayerData.Player, 0, 0, "Alliances are open");
+          DisplayTextToPlayer(triggerPlayer, 0, 0, "Alliances are open");
           return;
         }
 
         if (targetFaction == null)
         {
-          DisplayTextToPlayer(senderPlayerData.Player, 0, 0, "There is no Faction with the name " + content + ".");
+          DisplayTextToPlayer(triggerPlayer, 0, 0, "There is no Faction with the name " + content + ".");
           return;
         }
 
-        if (senderPlayerData.Faction == targetFaction)
+        if (triggerPlayer.GetFaction() == targetFaction)
         {
-          DisplayTextToPlayer(senderPlayerData.Player, 0, 0, "You can'boot yourself from the game.");
+          DisplayTextToPlayer(triggerPlayer, 0, 0, "You can'boot yourself from the game.");
           return;
         }
 
-        if (targetFaction.Person == null)
+        if (targetFaction.Player == null)
         {
-          DisplayTextToPlayer(senderPlayerData.Player, 0, 0,
+          DisplayTextToPlayer(triggerPlayer, 0, 0,
             "There is no player with the Faction " + targetFaction.ColoredName + ".");
           return;
         }
 
         if (FelHordeSetup.FactionFelHorde.Team != TeamSetup.Naga)
         {
-          DisplayTextToPlayer(senderPlayerData.Player, 0, 0, $"{targetFaction.ColoredName} isn't your vassal.");
+          DisplayTextToPlayer(triggerPlayer, 0, 0, $"{targetFaction.ColoredName} isn't your vassal.");
           return;
         }
 
-        if (targetFaction.Person != null)
+        if (targetFaction.Player != null)
         {
           targetFaction.Obliterate();
-          targetFaction.Person.Faction = null;
+          targetFaction.Player.SetFaction(null);
         }
       }
     }

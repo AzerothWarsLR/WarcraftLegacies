@@ -1,6 +1,5 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using WCSharp.Events;
-
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Game_Logic
@@ -15,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Game_Logic
         SetUnitColor(GetTriggerUnit(),
           revivedLegend is {HasCustomColor: true}
             ? revivedLegend.PlayerColor
-            : PlayerData.ByHandle(GetTriggerPlayer())?.Faction.PlayerColor);
+            : GetTriggerPlayer().GetFaction()?.PlayerColor);
       });
     }
   }

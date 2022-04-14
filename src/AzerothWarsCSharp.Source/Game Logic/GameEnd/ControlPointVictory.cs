@@ -40,8 +40,8 @@ namespace AzerothWarsCSharp.Source.Game_Logic.GameEnd
     {
       var total = 0;
       foreach (var faction in whichTeam.GetAllFactions())
-        if (faction.Person != null)
-          total += faction.Person.ControlPointCount;
+        if (faction.Player != null)
+          total += faction.Player.GetControlPointCount();
       return total;
     }
 
@@ -57,7 +57,7 @@ namespace AzerothWarsCSharp.Source.Game_Logic.GameEnd
     {
       if (!VictoryDefeat.GameWon)
       {
-        var team = PlayerData.ByHandle(GetOwningPlayer(controlPointOwnerChangeEventArgs.ControlPoint.Unit)).Faction.Team;
+        var team = controlPointOwnerChangeEventArgs.ControlPoint.Owner.GetFaction().Team;
         var teamControlPoints = GetTeamControlPoints(team);
         if (teamControlPoints >= _cpsVictory)
           VictoryDefeat.TeamVictory(team);

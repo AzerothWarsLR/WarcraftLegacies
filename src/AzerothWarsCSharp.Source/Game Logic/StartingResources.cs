@@ -16,11 +16,8 @@ namespace AzerothWarsCSharp.Source.Game_Logic
       {
         foreach (var player in GetAllPlayers())
         {
-          if (PlayerData.ByHandle(player) != null)
-          {
-            SetPlayerState(player, PLAYER_STATE_RESOURCE_GOLD, PlayerData.ByHandle(player)!.Faction.StartingGold);
-            SetPlayerState(player, PLAYER_STATE_RESOURCE_LUMBER, PlayerData.ByHandle(player)!.Faction.StartingLumber);
-          }
+          SetPlayerState(player, PLAYER_STATE_RESOURCE_GOLD, player.GetFaction().StartingGold);
+          SetPlayerState(player, PLAYER_STATE_RESOURCE_LUMBER, player.GetFaction().StartingLumber);
         }
       });
     }
