@@ -16,7 +16,8 @@ namespace AzerothWarsCSharp.TestSource
       };
       Uther = new Legend
       {
-        Unit = CreateUnit(Player(3), FourCC("Huth"), 0, 0, 0)
+        UnitType = FourCC("Huth"),
+        StartingXp = 3000
       };
     }
   }

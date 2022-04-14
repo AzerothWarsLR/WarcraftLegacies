@@ -55,6 +55,8 @@ namespace AzerothWarsCSharp.TestSource.Setup
       FactionMultiboard.Setup();
       Console.WriteLine("Setting up PowerBook...");
       PowerBook.Initialize();
+      Console.WriteLine("Setting up TestSetup...");
+      TestSetup.Setup();
     }
   }
 }
