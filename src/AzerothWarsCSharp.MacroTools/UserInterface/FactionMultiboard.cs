@@ -47,7 +47,7 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
       multiboarditem incomeMbi = MultiboardGetItem(_multiboard, row, COLUMN_INCOME);
       MultiboardSetItemValue(factionMbi, faction.ColoredName);
       MultiboardSetItemIcon(factionMbi, faction.Icon);
-      MultiboardSetItemValue(cpMbi, faction.Person?.ControlPointCount.ToString());
+      MultiboardSetItemValue(cpMbi, faction.Player?.GetControlPointCount().ToString());
       MultiboardSetItemValue(incomeMbi, I2S(R2I(faction.Income)));
       MultiboardSetItemWidth(factionMbi, WIDTH_FACTION);
       MultiboardSetItemWidth(cpMbi, WIDTH_CP);
@@ -101,7 +101,7 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
           UpdateTeamRow(team);
           row += 1;
           foreach (var faction in team.GetAllFactions())
-            if (faction.Person != null && faction.ScoreStatus != ScoreStatus.Defeated)
+            if (faction.Player != null && faction.ScoreStatus != ScoreStatus.Defeated)
             {
               _rowsByFaction[faction] = row;
               UpdateFactionRow(faction);
@@ -122,7 +122,7 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
       Instance?.UpdateFactionRow(faction);
     }
 
-    private static void OnPersonFactionChange(object? sender, PersonFactionChangeEventArgs personFactionChangeEventArgs)
+    private static void OnPersonFactionChange(object? sender, PlayerFactionChangeEventArgs playerFactionChangeEventArgs)
     {
       RenderInstance();
     }
@@ -145,15 +145,15 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
     private static void OnControlPointOwnerChanged(object? sender, ControlPointOwnerChangeEventArgs args)
     {
       Console.WriteLine("a");
-      if (args.ControlPoint.OwningPerson.Faction != null)
+      if (args.ControlPoint.Owner.GetFaction() != null)
       {
         Console.WriteLine("b");
-        Instance?.UpdateFactionRow(args.ControlPoint.OwningPerson.Faction);
+        Instance?.UpdateFactionRow(args.ControlPoint.Owner.GetFaction());
         Console.WriteLine("c");
       }
 
       Console.WriteLine("d");
-      var formerPerson = Person.ByHandle(args.FormerOwner);
+      var formerPerson = PlayerData.ByHandle(args.FormerOwner);
       Console.WriteLine("e");
       if (formerPerson.Faction != null)
       {
@@ -169,7 +169,7 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
       TimerStart(timer, 2, false, () => { Instance = new FactionMultiboard(COLUMN_COUNT, 3, TITLE); }
       );
 
-      Person.FactionChange += OnPersonFactionChange;
+      PlayerData.FactionChange += OnPersonFactionChange;
       Faction.TeamJoin += OnFactionTeamJoin;
       Faction.TeamLeft += OnFactionTeamLeft;
       Faction.StatusChanged += OnFactionStatusChanged;

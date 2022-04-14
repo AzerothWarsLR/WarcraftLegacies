@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Game_Logic
     private static void VerifyUnitIntegrity(unit whichUnit)
     {
       var player = GetOwningPlayer(whichUnit);
-      var tempPerson = Person.ByHandle(player);
+      var tempPerson = PlayerData.ByHandle(player);
       if (tempPerson != null && tempPerson.GetObjectLimit(GetUnitTypeId(whichUnit)) == 0)
       {
         AdjustPlayerStateSimpleBJ(player, PLAYER_STATE_RESOURCE_GOLD, GetUnitGoldCost(GetUnitTypeId(whichUnit)));

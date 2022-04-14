@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
         }
       
         Team t = FactionManager.GetTeamByName(_parameter);
-        var faction = Person.ByHandle(p).Faction;
+        var faction = PlayerData.ByHandle(p).Faction;
         if (faction != null) faction.Team = t;
         DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Attempted to team to " + t.Name + ".");
       }

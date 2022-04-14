@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Commands
     private static void Actions()
     {
       string enteredString = GetEventPlayerChatString();
-      Person triggerPerson = Person.ByHandle(GetTriggerPlayer());
+      PlayerData triggerPlayerData = PlayerData.ByHandle(GetTriggerPlayer());
 
       if (SubString(enteredString, 0, StringLength(COMMAND)) == COMMAND)
       {
@@ -24,20 +24,20 @@ namespace AzerothWarsCSharp.Source.Commands
         if (FactionManager.TeamWithNameExists(content))
         {
           Team targetTeam = FactionManager.GetTeamByName(content);
-          if (targetTeam.IsFactionInvited(triggerPerson.Faction))
+          if (targetTeam.IsFactionInvited(triggerPlayerData.Faction))
           {
-            triggerPerson.Faction.Team = targetTeam;
-            DisplayTextToPlayer(triggerPerson.Player, 0, 0, $"You have joined {targetTeam.Name}.");
-            targetTeam.DisplayText($"{triggerPerson.Faction.ColoredName} has joined the {targetTeam.Name}.");
+            triggerPlayerData.Faction.Team = targetTeam;
+            DisplayTextToPlayer(triggerPlayerData.Player, 0, 0, $"You have joined {targetTeam.Name}.");
+            targetTeam.DisplayText($"{triggerPlayerData.Faction.ColoredName} has joined the {targetTeam.Name}.");
           }
           else
           {
-            DisplayTextToPlayer(triggerPerson.Player, 0, 0, "You have !been invited to join " + targetTeam.Name + ".");
+            DisplayTextToPlayer(triggerPlayerData.Player, 0, 0, "You have !been invited to join " + targetTeam.Name + ".");
           }
         }
         else
         {
-          DisplayTextToPlayer(triggerPerson.Player, 0, 0, "There is no Team with the name " + content + ".");
+          DisplayTextToPlayer(triggerPlayerData.Player, 0, 0, "There is no Team with the name " + content + ".");
         }
       }
     }

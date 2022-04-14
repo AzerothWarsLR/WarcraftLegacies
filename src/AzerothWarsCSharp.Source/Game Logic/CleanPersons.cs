@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Game_Logic
 
         foreach (var player in GetAllPlayers())
         {
-          var person = Person.ByHandle(player);
+          var person = PlayerData.ByHandle(player);
           if (person != null && GetPlayerSlotState(player) != PLAYER_SLOT_STATE_PLAYING &&
               person.Faction.ScoreStatus == ScoreStatus.Undefeated)
           {

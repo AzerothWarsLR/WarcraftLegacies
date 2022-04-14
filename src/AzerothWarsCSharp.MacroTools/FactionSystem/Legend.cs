@@ -193,11 +193,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
     }
 
-    public Faction? OwningFaction => OwningPerson?.Faction;
-
-    public Person? OwningPerson => Person.ByHandle(GetOwningPlayer(_unit));
-
-    public player OwningPlayer => GetOwningPlayer(_unit);
+    public player? OwningPlayer => GetOwningPlayer(_unit);
 
     /// <summary>
     ///   Fired when the <see cref="Legend" /> permanently dies.
@@ -329,7 +325,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, displayString + DeathMessage);
       }
 
-      if (Hivemind && OwningPerson != null) OwningPerson.Faction.Obliterate();
+      if (Hivemind && OwningPlayer != null) 
+        OwningPlayer.GetFaction().Obliterate();
 
       OnLegendPermaDeath?.Invoke(this, this);
       PermanentlyDied?.Invoke(this, this);

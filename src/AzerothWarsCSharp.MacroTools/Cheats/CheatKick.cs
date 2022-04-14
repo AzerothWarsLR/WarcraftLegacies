@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
         _parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
         var kickId = S2I(_parameter);
 
-        var faction = Person.ByHandle(Player(kickId)).Faction;
+        var faction = PlayerData.ByHandle(Player(kickId)).Faction;
         if (faction != null)
           faction.ScoreStatus = ScoreStatus.Defeated;
         DisplayTextToPlayer(p, 0, 0,

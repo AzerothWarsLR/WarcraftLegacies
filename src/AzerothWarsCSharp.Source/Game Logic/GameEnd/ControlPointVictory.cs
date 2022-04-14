@@ -57,7 +57,7 @@ namespace AzerothWarsCSharp.Source.Game_Logic.GameEnd
     {
       if (!VictoryDefeat.GameWon)
       {
-        var team = Person.ByHandle(GetOwningPlayer(controlPointOwnerChangeEventArgs.ControlPoint.Unit)).Faction.Team;
+        var team = PlayerData.ByHandle(GetOwningPlayer(controlPointOwnerChangeEventArgs.ControlPoint.Unit)).Faction.Team;
         var teamControlPoints = GetTeamControlPoints(team);
         if (teamControlPoints >= _cpsVictory)
           VictoryDefeat.TeamVictory(team);

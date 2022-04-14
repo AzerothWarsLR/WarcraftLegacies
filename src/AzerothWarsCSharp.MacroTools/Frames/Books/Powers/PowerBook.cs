@@ -28,8 +28,8 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
       BookTitle = "Powers";
       LauncherPosition = new Point(0.15f, 0.56f);
       Position = new Point(0.4f, 0.36f);
-      TrackedFaction = Person.ByHandle(GetLocalPlayer()).Faction;
-      Person.FactionChange += OnPersonChangeFaction;
+      TrackedFaction = PlayerData.ByHandle(GetLocalPlayer()).Faction;
+      PlayerData.FactionChange += OnPersonChangeFaction;
     }
 
     /// <summary>
@@ -61,11 +61,11 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
       AddPower(factionPowerEventArgs.Power);
     }
 
-    private void OnPersonChangeFaction(object? sender, PersonFactionChangeEventArgs args)
+    private void OnPersonChangeFaction(object? sender, PlayerFactionChangeEventArgs args)
     {
-      if (args.Person == Person.ByHandle(GetLocalPlayer()))
+      if (args.Player == GetLocalPlayer())
       {
-        TrackedFaction = args.Person.Faction;
+        TrackedFaction = args.Player.GetFaction();
       }
     }
     

@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Game_Logic
         SetUnitColor(GetTriggerUnit(),
           revivedLegend is {HasCustomColor: true}
             ? revivedLegend.PlayerColor
-            : Person.ByHandle(GetTriggerPlayer())?.Faction.PlayerColor);
+            : PlayerData.ByHandle(GetTriggerPlayer())?.Faction.PlayerColor);
       });
     }
   }

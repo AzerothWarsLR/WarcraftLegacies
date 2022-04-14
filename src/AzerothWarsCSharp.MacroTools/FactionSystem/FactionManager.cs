@@ -43,7 +43,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     public static Faction? GetFromPlayer(player whichPlayer)
     {
-      return Person.ByHandle(whichPlayer)?.Faction;
+      return PlayerData.ByHandle(whichPlayer)?.Faction;
     }
 
     public static bool FactionWithNameExists(string name)

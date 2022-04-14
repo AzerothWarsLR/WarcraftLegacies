@@ -5,9 +5,12 @@ using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
-  public sealed class Person
+  /// <summary>
+  /// Provides extra information about players that is not already tracked by the Warcraft 3 engine.
+  /// </summary>
+  internal sealed class PlayerData
   {
-    private static readonly Dictionary<int, Person> ById = new();
+    private static readonly Dictionary<int, PlayerData> ById = new();
     private readonly Dictionary<int, int> _objectLevels = new();
 
     private readonly Dictionary<int, int> _objectLimits = new();
@@ -18,7 +21,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     private float _partialGold; //Just used for income calculations
 
-    public Person(player player)
+    public PlayerData(player player)
     {
       Player = player;
     }
@@ -39,18 +42,20 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         if (_faction != null)
         {
           _faction = null;
-          if (prevFaction != null) prevFaction.Person = null; //Referential integrity
+          if (prevFaction != null) 
+            prevFaction.Player = null; //Referential integrity
         }
 
         //Apply new faction
         if (value != null)
         {
-          if (value.Person == null)
+          if (value.Player == null)
           {
             SetPlayerColorBJ(Player, value.PlayerColor, true);
             _faction = value;
             //Enforce referential integrity
-            if (value.Person != this) value.Person = this;
+            if (value.Player != Player) 
+              value.Player = Player;
           }
           else
           {
@@ -59,7 +64,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
           }
         }
 
-        FactionChange?.Invoke(this, new PersonFactionChangeEventArgs(this, prevFaction));
+        FactionChange?.Invoke(this, new PlayerFactionChangeEventArgs(Player, prevFaction));
       }
     }
 
@@ -89,7 +94,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
     }
 
-    public static event EventHandler<PersonFactionChangeEventArgs>? FactionChange;
+    public static event EventHandler<PlayerFactionChangeEventArgs>? FactionChange;
 
     public int GetObjectLevel(int obj)
     {
@@ -143,23 +148,23 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     }
 
     /// <summary>
-    ///   Retrieves the <see cref="Person" /> object which contains information about the given <see cref="player" />.
+    ///   Retrieves the <see cref="PlayerData" /> object which contains information about the given <see cref="player" />.
     /// </summary>
-    public static Person ByHandle(player whichPlayer)
+    public static PlayerData ByHandle(player whichPlayer)
     {
       if (ById.TryGetValue(GetPlayerId(whichPlayer), out var person)) return person;
 
-      var newPerson = new Person(whichPlayer);
+      var newPerson = new PlayerData(whichPlayer);
       Register(newPerson);
       return newPerson;
     }
 
     /// <summary>
-    ///   Register a <see cref="Person" /> to the Person system.
+    ///   Register a <see cref="PlayerData" /> to the Person system.
     /// </summary>
-    public static void Register(Person person)
+    public static void Register(PlayerData playerData)
     {
-      ById.Add(GetPlayerId(person.Player), person);
+      ById.Add(GetPlayerId(playerData.Player), playerData);
     }
   }
 }

@@ -11,16 +11,16 @@ namespace AzerothWarsCSharp.Source.Commands
     private const string COMMAND = "-limited";
     
     private static void Actions( ){
-      Person triggerPerson = Person.ByHandle(GetTriggerPlayer());
-      Faction triggerFaction = triggerPerson.Faction;
-      foreach (var unit in new GroupWrapper().EnumUnitsOfPlayer(triggerPerson.Player).EmptyToList())
+      PlayerData triggerPlayerData = PlayerData.ByHandle(GetTriggerPlayer());
+      Faction triggerFaction = triggerPlayerData.Faction;
+      foreach (var unit in new GroupWrapper().EnumUnitsOfPlayer(triggerPlayerData.Player).EmptyToList())
       {
         foreach (var objectTypeId in triggerFaction.GetLimitedObjects())
         {
           var objectLimit = triggerFaction.GetObjectLimit(objectTypeId);
           if (objectLimit < Faction.UNLIMITED && GetUnitTypeId(unit) == triggerFaction.GetObjectLimit(objectTypeId))
           {
-            PingMinimapForPlayer(triggerPerson.Player, GetUnitX(unit), GetUnitY(unit), 5);
+            PingMinimapForPlayer(triggerPlayerData.Player, GetUnitX(unit), GetUnitY(unit), 5);
           }
         }
       }

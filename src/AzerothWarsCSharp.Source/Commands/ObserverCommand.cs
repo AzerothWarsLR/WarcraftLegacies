@@ -7,8 +7,8 @@ namespace AzerothWarsCSharp.Source.Commands
     private const string COMMAND     = "-obs";
     
     private static void Actions( ){
-      Person triggerPerson = Person.ByHandle(GetTriggerPlayer());
-      triggerPerson.Faction.ScoreStatus = ScoreStatus.Defeated;
+      PlayerData triggerPlayerData = PlayerData.ByHandle(GetTriggerPlayer());
+      triggerPlayerData.Faction.ScoreStatus = ScoreStatus.Defeated;
       FogModifierStart(CreateFogModifierRect(GetTriggerPlayer(), FOG_OF_WAR_VISIBLE, GetPlayableMapRect(), false, false));
     }
 

@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
 
         Faction f = FactionManager.GetFromName(_parameter);
 
-        Person.ByHandle(GetTriggerPlayer()).Faction = f;
+        PlayerData.ByHandle(GetTriggerPlayer()).Faction = f;
         DisplayTextToPlayer(p, 0, 0, $"|cffD27575CHEAT:|r Attempted to change faction to {f.Name}.");
       }
       catch (Exception ex)

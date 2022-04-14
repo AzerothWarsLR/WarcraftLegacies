@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.MacroTools
 
     private void DisableResearches( ){
       var i = 0;
-      var p = Person.ByHandle(GetTriggerPlayer());
+      var p = PlayerData.ByHandle(GetTriggerPlayer());
       while(true){
         if (_researches[i] == 0){ break; }
         if (_researches[i] != GetResearched()){
@@ -35,7 +35,7 @@ namespace AzerothWarsCSharp.MacroTools
 
     private void EnableResearches( ){
       var i = 0;
-      var p = Person.ByHandle(GetTriggerPlayer());
+      var p = PlayerData.ByHandle(GetTriggerPlayer());
       while(true){
         if (_researches[i] == 0){ break; }
         if (_researches[i] != GetResearched()){

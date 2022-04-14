@@ -13,8 +13,8 @@ namespace AzerothWarsCSharp.Source.Commands
     
     private static void Actions()
     {
-      Person triggerPerson = Person.ByHandle(GetTriggerPlayer());
-      triggerPerson.Faction.Unally();
+      PlayerData triggerPlayerData = PlayerData.ByHandle(GetTriggerPlayer());
+      triggerPlayerData.Faction.Unally();
     }
 
     public static void Setup()

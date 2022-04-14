@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Commands
     private static void Actions()
     {
       string enteredString = GetEventPlayerChatString();
-      Person senderPerson = Person.ByHandle(GetTriggerPlayer());
+      PlayerData senderPlayerData = PlayerData.ByHandle(GetTriggerPlayer());
 
       if (SubString(enteredString, 0, StringLength(COMMAND)) == COMMAND)
       {
@@ -26,14 +26,14 @@ namespace AzerothWarsCSharp.Source.Commands
         {
           Faction targetFaction = FactionManager.GetFromName(content);
           if (targetFaction.Person != null)
-            senderPerson.Faction.Team?.Uninvite(targetFaction);
+            senderPlayerData.Faction.Team?.Uninvite(targetFaction);
           else
-            DisplayTextToPlayer(senderPerson.Player, 0, 0,
+            DisplayTextToPlayer(senderPlayerData.Player, 0, 0,
               $"There is no player with the Faction {targetFaction.ColoredName}.");
         }
         else
         {
-          DisplayTextToPlayer(senderPerson.Player, 0, 0, $"There is no Faction with the name {content}.");
+          DisplayTextToPlayer(senderPlayerData.Player, 0, 0, $"There is no Faction with the name {content}.");
         }
       }
     }

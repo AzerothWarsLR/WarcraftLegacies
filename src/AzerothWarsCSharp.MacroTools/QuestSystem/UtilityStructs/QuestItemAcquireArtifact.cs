@@ -20,12 +20,13 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     internal override void OnAdd()
     {
-      if (_target.OwningPerson == Holder.Person) Progress = QuestProgress.Complete;
+      if (_target.OwningPlayer == Holder.Player) 
+        Progress = QuestProgress.Complete;
     }
 
     private void OnAcquired(object? sender, Artifact artifact)
     {
-      Progress = _target.OwningPerson == Holder.Person ? QuestProgress.Complete : QuestProgress.Incomplete;
+      Progress = _target.OwningPlayer == Holder.Player ? QuestProgress.Complete : QuestProgress.Incomplete;
     }
   }
 }

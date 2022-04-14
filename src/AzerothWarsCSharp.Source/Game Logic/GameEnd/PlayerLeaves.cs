@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Game_Logic.GameEnd
 
     private static void PlayerLeavesGame( ){
       var p = GetTriggerPlayer();
-      var triggerPerson = Person.ByHandle(GetTriggerPlayer());
+      var triggerPerson = PlayerData.ByHandle(GetTriggerPlayer());
 
       //Display leaving message
       if (triggerPerson?.Faction != null){

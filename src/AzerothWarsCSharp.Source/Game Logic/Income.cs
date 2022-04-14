@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Game_Logic
       {
         foreach (var player in GetAllPlayers())
         {
-          var person = Person.ByHandle(player);
+          var person = PlayerData.ByHandle(player);
           if (person != null)
           {
             var goldPerSecond = person.Faction.Income * PERIOD / 60;

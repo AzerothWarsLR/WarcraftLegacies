@@ -15,17 +15,17 @@ namespace AzerothWarsCSharp.MacroTools.ControlPointSystem
   {
     private const float CAPTURE_THRESHOLD = 0.8f; //Percentage of maximum HP; below this, the CP will go to the damager
     private static readonly int RegenerationAbility = FourCC("A0UT");
-    private player _owner;
 
     public ControlPoint(unit u, float value)
     {
       Unit = u;
-      _owner = GetOwningPlayer(u);
       Value = value;
       PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeChangesOwner, ChangeOwner, UnitType);
       PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeIsDamaged, OnDamaged, UnitType);
     }
 
+    public player Owner => GetOwningPlayer(Unit);
+    
     /// <summary>
     ///   How much gold this <see cref="ControlPoint" /> grants per minute.
     /// </summary>
@@ -36,9 +36,7 @@ namespace AzerothWarsCSharp.MacroTools.ControlPointSystem
     public string Name => GetUnitName(Unit);
 
     public unit Unit { get; }
-
-    public Person OwningPerson => Person.ByHandle(_owner);
-
+    
     /// <summary>
     ///   Fires when the <see cref="ControlPoint" /> changes its owner.
     /// </summary>
@@ -71,19 +69,18 @@ namespace AzerothWarsCSharp.MacroTools.ControlPointSystem
     {
       try
       {
-        var p = GetTriggerPlayer();
+        var formerOwner = GetChangingUnitPrevOwner();
+        var newOwner = GetTriggerPlayer();
 
-        Person person = Person.ByHandle(_owner);
-
-        person.ControlPointValue -= Value;
-        person.ControlPointCount -= 1;
+        PlayerData playerData = PlayerData.ByHandle(formerOwner);
         
-        var formerOwner = _owner;
-        _owner = p;
-        person = Person.ByHandle(_owner);
+        playerData.ControlPointValue -= Value;
+        playerData.ControlPointCount -= 1;
+        
+        playerData = PlayerData.ByHandle(newOwner);
 
-        person.ControlPointValue += Value;
-        person.ControlPointCount += 1;
+        playerData.ControlPointValue += Value;
+        playerData.ControlPointCount += 1;
 
         UnitAddAbility(Unit, RegenerationAbility);
 

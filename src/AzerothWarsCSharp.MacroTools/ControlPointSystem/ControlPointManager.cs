@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Libraries;
 using static War3Api.Common;
 using static War3Api.Blizzard;
@@ -41,8 +42,8 @@ namespace AzerothWarsCSharp.MacroTools.ControlPointSystem
       BlzSetUnitMaxHP(controlPoint.Unit, MAX_HITPOINTS);
       SetUnitLifePercentBJ(controlPoint.Unit, 80);
 
-      controlPoint.OwningPerson.ControlPointValue += controlPoint.Value;
-      controlPoint.OwningPerson.ControlPointCount += 1;
+      controlPoint.Owner.SetControlPointValue(controlPoint.Owner.GetControlPointValue() + controlPoint.Value);
+      controlPoint.Owner.SetControlPointCount(controlPoint.Owner.GetControlPointCount() + 1);
     }
   }
 }

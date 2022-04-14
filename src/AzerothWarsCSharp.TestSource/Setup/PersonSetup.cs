@@ -8,25 +8,11 @@ namespace AzerothWarsCSharp.TestSource.Setup
   {
     public static void Setup()
     {
-      Person.Register(new Person(Player(0)) 
-        {Faction = BlackEmpireSetup.BlackEmpire}
-      );
-
-      Person.Register(new Person(Player(1)) 
-        {Faction = CthunSetup.FactionCthun}
-      );
-
-      Person.Register(new Person(Player(2)) 
-        {Faction = DalaranSetup.Dalaran}
-      );
-
-      Person.Register(new Person(Player(3)) 
-        {Faction = DraeneiSetup.Draenei}
-      );
-
-      Person.Register(new Person(Player(4)) 
-        {Faction = DruidsSetup.factionDruids}
-      );
+      Player(0).SetFaction(BlackEmpireSetup.BlackEmpire);
+      Player(1).SetFaction(CthunSetup.FactionCthun);
+      Player(2).SetFaction(DalaranSetup.Dalaran);
+      Player(3).SetFaction(DraeneiSetup.Draenei);
+      Player(4).SetFaction(DruidsSetup.factionDruids);
     }
   }
 }

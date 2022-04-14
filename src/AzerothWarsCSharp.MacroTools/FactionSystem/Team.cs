@@ -20,7 +20,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       get
       {
         var total = 0;
-        foreach (var faction in _factions) total += faction.Person.ControlPointCount;
+        foreach (var faction in _factions) 
+          total += faction.Player.GetControlPointCount();
 
         return total;
       }
@@ -76,7 +77,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       if (!_factions.Contains(faction))
         throw new Exception("Attempted to remove non-present faction " + faction.Name + " from team " + Name);
       _factions.Remove(faction);
-      if (faction.Person != null)
+      if (faction.Player != null)
         UnallyPlayer(faction.Player);
       TeamSizeChange?.Invoke(this, this);
     }
@@ -87,7 +88,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       if (_factions.Contains(faction))
         throw new Exception("Attempted to add already present faction " + faction.Name + " to team " + Name);
       _factions.Add(faction);
-      if (faction.Person != null)
+      if (faction.Player != null)
         AllyPlayer(faction.Player);
       TeamSizeChange?.Invoke(this, this);
     }

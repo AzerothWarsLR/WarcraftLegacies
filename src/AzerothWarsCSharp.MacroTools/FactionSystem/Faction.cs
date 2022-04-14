@@ -34,28 +34,20 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     ///   How much experience is transferred from heroes that leave the game.
     /// </summary>
     private const float XP_TRANSFER_PERCENT = 100;
-
-    private readonly int _defeatedResearch;
-
+    
     private readonly Dictionary<int, int> _objectLevels = new();
-
     private readonly Dictionary<int, int> _objectLimits = new();
     private readonly List<Power> _powers = new();
     private readonly List<QuestData> _quests = new();
     
+    private readonly int _defeatedResearch;
     private string _icon;
-
     private string _name;
-
-    private Person? _person;
-
+    private player? _player;
     private string _prefixCol;
-
     private ScoreStatus _scoreStatus = ScoreStatus.Undefeated;
     private Team? _team;
-
     private int _undefeatedResearch;
-
     private int _xp; //Stored by DistributeUnits and given out again by DistributeResources
 
     /// <summary>
@@ -152,7 +144,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// <summary>
     ///   How much gold this <see cref="Faction" /> receives per minute if occupied by a player.
     /// </summary>
-    public float Income => _person.ControlPointValue;
+    public float Income => _player.GetControlPointValue();
 
     public string ColoredName => PrefixCol + _name + "|r";
 
@@ -186,15 +178,14 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         IconChanged?.Invoke(this, this);
       }
     }
+    
 
     /// <summary>
     ///   The <see cref="player" /> currently occupying this <see cref="Faction" />.
     /// </summary>
-    public player? Player => _person?.Player;
-
-    public Person? Person
+    public player? Player
     {
-      get => _person;
+      get => _player;
       set
       {
         if (Player != null)
@@ -204,14 +195,15 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
           UnapplyObjects();
         }
 
-        _person = value;
+        _player = value;
         //Maintain referential integrity
         //Todo: this seems a bit silly
         if (value == null) return;
 
-        if (value.Faction != this) value.Faction = this;
+        if (value.GetFaction() != this) 
+          value.SetFaction(this);
 
-        Team?.AllyPlayer(value.Player);
+        Team?.AllyPlayer(value);
         ApplyObjects();
         ShowAllQuests();
       }
@@ -286,17 +278,21 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     //Adds this Faction's object limits and levels to its active Person
     private void ApplyObjects()
     {
-      foreach (var (key, value) in _objectLimits) Person?.ModObjectLimit(key, value);
+      foreach (var (key, value) in _objectLimits) 
+        Player?.ModObjectLimit(key, value);
 
-      foreach (var (key, value) in _objectLevels) Person?.SetObjectLevel(key, value);
+      foreach (var (key, value) in _objectLevels) 
+        Player?.SetObjectLevel(key, value);
     }
 
     //Removes this Faction's object limits and levels from its active Person
     private void UnapplyObjects()
     {
-      foreach (var (key, value) in _objectLimits) Person?.ModObjectLimit(key, -value);
+      foreach (var (key, value) in _objectLimits) 
+        Player?.ModObjectLimit(key, -value);
 
-      foreach (var (key, value) in _objectLevels) Person?.SetObjectLevel(key, 0);
+      foreach (var (key, value) in _objectLevels) 
+        Player?.SetObjectLevel(key, 0);
     }
 
     /// <summary>
@@ -380,7 +376,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public void SetObjectLevel(int obj, int level)
     {
       _objectLevels[obj] = level;
-      Person?.SetObjectLevel(obj, level);
+      Player?.SetObjectLevel(obj, level);
     }
 
     /// <summary>
@@ -395,8 +391,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       else
         _objectLimits.Add(objectId, limit);
 
-      //If a Person has this Faction, adjust their techtree as well
-      Person?.ModObjectLimit(objectId, limit);
+      //If a player has this Faction, adjust their techtree as well
+      Player?.ModObjectLimit(objectId, limit);
 
       if (_objectLimits[objectId] == 0)
         _objectLimits.Remove(objectId);
@@ -450,7 +446,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     {
       if (_team == null) return;
       foreach (var faction in _team.GetAllFactions())
-        if (faction.Person != null)
+        if (faction.Player != null)
         {
           faction.Gold = faction.Gold + Gold / _team.PlayerCount - 1;
           faction.Lumber = faction.Lumber + Lumber / _team.PlayerCount - 1;
@@ -475,7 +471,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         //Refund gold and experience of heroes
         if (IsUnitType(unit, UNIT_TYPE_HERO))
         {
-          Person.AddGold(HERO_COST);
+          Player?.AddGold(HERO_COST);
           _xp += GetHeroXP(unit);
           //Subtract hero's starting XP from refunded XP
           if (Legend.GetFromUnit(unit) != null) _xp -= Legend.GetFromUnit(unit)!.StartingXp;

@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Commands
     private static void Actions()
     {
       string enteredString = GetEventPlayerChatString();
-      Person senderPerson = Person.ByHandle(GetTriggerPlayer());
+      PlayerData senderPlayerData = PlayerData.ByHandle(GetTriggerPlayer());
 
       if (OpenAllianceVote.AreAlliancesOpen)
       {
@@ -26,31 +26,31 @@ namespace AzerothWarsCSharp.Source.Commands
 
           if (!FactionManager.FactionWithNameExists(content))
           {
-            DisplayTextToPlayer(senderPerson.Player, 0, 0, $"There is no Faction with the name {content}.");
+            DisplayTextToPlayer(senderPlayerData.Player, 0, 0, $"There is no Faction with the name {content}.");
             return;
           }
 
           var targetFaction = FactionManager.GetFromName(content);
 
-          if (senderPerson.Faction == targetFaction)
+          if (senderPlayerData.Faction == targetFaction)
           {
-            DisplayTextToPlayer(senderPerson.Player, 0, 0, "You can'invite yourself to your own team.");
+            DisplayTextToPlayer(senderPlayerData.Player, 0, 0, "You can'invite yourself to your own team.");
             return;
           }
 
           if (targetFaction.Person == null)
           {
-            DisplayTextToPlayer(senderPerson.Player, 0, 0,
+            DisplayTextToPlayer(senderPlayerData.Player, 0, 0,
               $"There is no player with the Faction {targetFaction.PrefixCol} {targetFaction.Name}|r.");
             return;
           }
 
-          if (targetFaction.Person != null) senderPerson.Faction?.Team?.Invite(targetFaction);
+          if (targetFaction.Person != null) senderPlayerData.Faction?.Team?.Invite(targetFaction);
         }
       }
       else
       {
-        DisplayTextToPlayer(senderPerson.Player, 0, 0, "You can!ally yet");
+        DisplayTextToPlayer(senderPlayerData.Player, 0, 0, "You can!ally yet");
       }
     }
 

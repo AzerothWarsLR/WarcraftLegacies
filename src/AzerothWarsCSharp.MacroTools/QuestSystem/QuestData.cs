@@ -243,7 +243,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         display = display + "\n|cffffcc00MAJOR EVENT - " + Holder.PrefixCol + Title + "|r\n" +
                   CompletionPopup + "\n";
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
-        StartSound(Person.ByHandle(GetLocalPlayer()).Faction.Team.ContainsFaction(Holder)
+        StartSound(PlayerData.ByHandle(GetLocalPlayer()).Faction.Team.ContainsFaction(Holder)
           ? bj_questCompletedSound
           : bj_questWarningSound);
       }
