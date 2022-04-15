@@ -32,6 +32,8 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       lordaeron.AddQuest(new QuestKingArthas(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nemi"))));
       lordaeron.AddQuest(new QuestLivingShadow());
       lordaeron.AddQuest(new QuestKingdomOfManLordaeron());
+      lordaeron.AddQuest(new QuestGarithosCrusade());
+      lordaeron.AddQuest(new QuestGarithosMindControl());
 
       TheAshbringer = new QuestAshbringer();
     }
