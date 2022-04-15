@@ -7,7 +7,7 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
-  public class LordaeronQuestSetup
+  public static class LordaeronQuestSetup
   {
     public static QuestData TheAshbringer { get; private set; }
 
@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       //Early duel
       lordaeron.StartingQuest = lordaeron.AddQuest(new QuestStratholme(Regions.StratholmeUnlock));
       lordaeron.AddQuest(new QuestStrahnbrad(Regions.StrahnbradUnlock));
-      lordaeron.AddQuest(new QuestCapitalCity(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nemi"))));
+      lordaeron.AddQuest(new QuestCapitalCity(Regions.Terenas, PreplacedUnitSystem.GetUnitByUnitType(FourCC("nemi"))));
 
       lordaeron.AddQuest(new QuestShoresOfNorthrend());
       lordaeron.AddQuest(new QuestThunderEagle());
