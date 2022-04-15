@@ -42,7 +42,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h000")),
         DeathMessage = "The capital city of Lordaeron has been razed, and King Terenas is dead.",
-        IsCapital = true
+        
       };
       Legend.Register(LegendCapitalpalace);
 
@@ -50,7 +50,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h01G")),
         DeathMessage = "The majestic city of Stratholme has been destroyed.",
-        IsCapital = true
+        
       };
       Legend.Register(LegendStratholme);
 
@@ -58,7 +58,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h030")),
         DeathMessage = "Tyr's Hand, the bastion of human power in Lordaeron, has fallen.",
-        IsCapital = true
+        
       };
       Legend.Register(LegendTyrshand);
 

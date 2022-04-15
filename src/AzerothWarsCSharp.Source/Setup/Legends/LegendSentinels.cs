@@ -24,14 +24,14 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       legendAuberdine = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("e00J")),
-        IsCapital = true
+        
       };
       Legend.Register(legendAuberdine);
 
       legendFeathermoon = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("e00M")),
-        IsCapital = true
+        
       };
       Legend.Register(legendFeathermoon);
 

@@ -79,7 +79,6 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       LegendBlacktemple = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o00F")),
-        IsCapital = true,
         Capturable = true
       };
       Legend.Register(LegendBlacktemple);
@@ -87,7 +86,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       LegendHellfirecitadel = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o008")),
-        IsCapital = true
+        
       };
       Legend.Register(LegendHellfirecitadel);
     }

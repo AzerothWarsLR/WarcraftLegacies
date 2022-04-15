@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h05U")),
         DeathMessage =
           "The Twilight Citadel has been toppled. Already the land has begun to heal, but it may be decades before the permeating Old God stink fully dissipates from the Twilight Highlands.",
-        IsCapital = true
+        
       };
       Legend.Register(LegendTwilightcitadel);
 

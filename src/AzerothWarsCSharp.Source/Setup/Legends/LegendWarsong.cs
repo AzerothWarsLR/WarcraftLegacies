@@ -47,7 +47,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o004")),
         DeathMessage = "The fortress of the Stonemaul Clan has fallen.",
-        IsCapital = true
+        
       };
       Legend.Register(LegendStonemaul);
 

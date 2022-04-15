@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       LegendExodar = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o05E")),
-        IsCapital = true
+        
       };
       Legend.Register(LegendExodar);
 

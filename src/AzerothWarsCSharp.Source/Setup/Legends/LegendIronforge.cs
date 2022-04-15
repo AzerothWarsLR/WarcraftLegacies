@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h001")),
         DeathMessage = "The Great Forge has been extinguished.", //Todo: mediocre flavour
-        IsCapital = true
+        
       };
       Legend.Register(LegendGreatforge);
 

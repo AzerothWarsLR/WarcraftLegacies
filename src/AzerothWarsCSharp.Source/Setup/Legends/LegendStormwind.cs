@@ -50,7 +50,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h00X")),
         DeathMessage = "Stormwind Keep, the capitol of the nation of Stormwind, has been destroyed!",
-        IsCapital = true
+        
       };
       Legend.Register(LegendStormwindkeep);
 

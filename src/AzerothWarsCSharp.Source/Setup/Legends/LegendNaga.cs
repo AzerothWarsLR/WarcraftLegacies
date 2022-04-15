@@ -72,7 +72,6 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("n045")),
         DeathMessage =
           "The Eternal Palace, the royal seat of Queen Azshara and the Nazjatar Empire, has been destroyed.",
-        IsCapital = true,
         Hivemind = true
       };
       Legend.Register(LegendNazjatar);
@@ -81,7 +80,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("n05A")),
         DeathMessage = "The Aetheneum vault has been destroyed, and with it, ages of knowledge is lost.",
-        IsCapital = true
+        
       };
       Legend.Register(LegendVault);
     }

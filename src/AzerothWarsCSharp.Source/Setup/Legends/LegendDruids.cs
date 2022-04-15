@@ -48,7 +48,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("n002")),
         Capturable = true,
-        IsCapital = true
+        
       });
 
       Legend.Register(LegendTortolla = new Legend

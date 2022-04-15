@@ -43,7 +43,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       {
         UnitType = FourCC("h057"),
         DeathMessage = "The Light's Dawn Capital has been destroyed.",
-        IsCapital = true
+        
       };
       Legend.Register(LegendLightdawn);
 
@@ -51,7 +51,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       {
         UnitType = FourCC("h04I"),
         DeathMessage = "The Gilneas castle has fallen",
-        IsCapital = true
+        
       };
       Legend.Register(LegendGilneascastle);
     }

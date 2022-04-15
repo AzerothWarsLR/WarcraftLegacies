@@ -25,7 +25,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private trigger? _deathTrig;
     private group? _diesWithout;
     private bool _hivemind;
-    private bool _isCapital;
     private readonly string? _name;
     private trigger? _ownerTrig;
     private bool _permaDies;
@@ -47,19 +46,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         return IsUnitType(_unit, UNIT_TYPE_HERO) ? GetHeroProperName(_unit) : GetUnitName(_unit);
       }
       init => _name = value;
-    }
-
-    /// <summary>
-    ///   Whether or not this Legend counts as a capital building.
-    /// </summary>
-    public bool IsCapital
-    {
-      get => _isCapital;
-      set
-      {
-        _isCapital = value;
-        RefreshDummy();
-      }
     }
 
     public bool HasCustomColor { get; private set; }
@@ -293,11 +279,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
           UnitRemoveAbility(_unit, _dummyDieswithout);
         }
       }
-
-      if (_isCapital)
-        UnitAddAbility(_unit, _dummyCapital);
-      else
-        UnitRemoveAbility(_unit, _dummyCapital);
     }
 
     private void PermaDeath()

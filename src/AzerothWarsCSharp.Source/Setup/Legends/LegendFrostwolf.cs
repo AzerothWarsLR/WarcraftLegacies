@@ -36,14 +36,14 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o00J")),
         DeathMessage =
           "The mesas of Thunderbluff have been swept clean of the Tauren. The Bloodhoof are without a home.",
-        IsCapital = true
+        
       };
       Legend.Register(LegendThunderbluff);
 
       LegendDarkspearhold = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o02D")),
-        IsCapital = true
+        
       };
       Legend.Register(LegendDarkspearhold);
 

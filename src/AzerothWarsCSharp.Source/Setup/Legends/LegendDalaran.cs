@@ -47,7 +47,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h002")),
         DeathMessage =
           "The Violet Citadel, the ultimate bastion of arcane knowledge in the Eastern Kingdoms, crumbles like a sand castle.",
-        IsCapital = true
+        
       };
       Legend.Register(LegendDalaranCapital);
 
