@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.MacroTools.Artifacts;
+using AzerothWarsCSharp.MacroTools.ArtifactSystem;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;

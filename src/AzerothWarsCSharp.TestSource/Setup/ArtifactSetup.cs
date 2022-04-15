@@ -1,4 +1,4 @@
-﻿using AzerothWarsCSharp.MacroTools.Artifacts;
+﻿using AzerothWarsCSharp.MacroTools.ArtifactSystem;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.TestSource.Setup

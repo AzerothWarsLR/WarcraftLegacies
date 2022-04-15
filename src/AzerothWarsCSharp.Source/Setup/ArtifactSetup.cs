@@ -1,5 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.MacroTools.Artifacts;
+using AzerothWarsCSharp.MacroTools.ArtifactSystem;
 using WCSharp.Shared.Data;
 
 using static War3Api.Common;

@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.MacroTools.Artifacts;
+using AzerothWarsCSharp.MacroTools.ArtifactSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using static War3Api.Common;
 
@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       Description = targetLegend.Name + " has " + GetItemName(targetArtifact.Item);
       _targetLegend = targetLegend;
       _targetArtifact = targetArtifact;
-      targetArtifact.Acquired += OnAcquired;
+      targetArtifact.PickedUp += OnPickedUp;
     }
 
     internal override void OnAdd()
@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       if (_targetArtifact.OwningUnit == _targetLegend.Unit) Progress = QuestProgress.Complete;
     }
 
-    private void OnAcquired(object? sender, Artifact artifact)
+    private void OnPickedUp(object? sender, Artifact artifact)
     {
       Progress = _targetArtifact.OwningUnit == _targetLegend.Unit
         ? QuestProgress.Complete

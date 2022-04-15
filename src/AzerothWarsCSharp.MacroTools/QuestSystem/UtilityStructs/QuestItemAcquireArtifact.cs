@@ -1,5 +1,5 @@
 using System;
-using AzerothWarsCSharp.MacroTools.Artifacts;
+using AzerothWarsCSharp.MacroTools.ArtifactSystem;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     {
       Description = "Acquire " + GetItemName(target.Item);
       _target = target;
-      target.Acquired += OnAcquired;
+      target.PickedUp += OnPickedUp;
     }
 
     internal override void OnAdd()
@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
         Progress = QuestProgress.Complete;
     }
 
-    private void OnAcquired(object? sender, Artifact artifact)
+    private void OnPickedUp(object? sender, Artifact artifact)
     {
       Progress = _target.OwningPlayer == Holder.Player ? QuestProgress.Complete : QuestProgress.Incomplete;
     }

@@ -1,7 +1,8 @@
 ﻿using System;
 using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.MacroTools.Artifacts;
+using AzerothWarsCSharp.MacroTools.ArtifactSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem;
 using AzerothWarsCSharp.MacroTools.Frames.Books.Powers;
 using AzerothWarsCSharp.MacroTools.UserInterface;
 
@@ -55,6 +56,8 @@ namespace AzerothWarsCSharp.TestSource.Setup
       FactionMultiboard.Setup();
       Console.WriteLine("Setting up PowerBook...");
       PowerBook.Initialize();
+      Console.WriteLine("Setting up ArtifactBook...");
+      ArtifactBook.Initialize();
       Console.WriteLine("Setting up TestSetup...");
       TestSetup.Setup();
     }
