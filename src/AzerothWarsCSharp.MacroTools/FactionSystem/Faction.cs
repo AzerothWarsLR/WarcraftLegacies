@@ -44,7 +44,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private string _icon;
     private string _name;
     private player? _player;
-    private string _prefixCol;
     private ScoreStatus _scoreStatus = ScoreStatus.Undefeated;
     private Team? _team;
     private int _undefeatedResearch;
@@ -66,7 +65,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     {
       _name = name;
       PlayerColor = playerColor;
-      _prefixCol = prefixCol;
+      PrefixCol = prefixCol;
       _icon = icon;
     }
 
@@ -148,15 +147,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     public string ColoredName => PrefixCol + _name + "|r";
 
-    public string PrefixCol
-    {
-      get => _prefixCol;
-      set
-      {
-        _prefixCol = value;
-        NameChanged?.Invoke(this, new FactionNameChangeEventArgs(this, null));
-      }
-    }
+    public string PrefixCol { get; init; }
 
     public string Name
     {
