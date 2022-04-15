@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using AzerothWarsCSharp.MacroTools.ArtifactSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Frames.Books.Powers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -15,10 +18,10 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
     private const float BOTTOM_BUTTON_X_OFFSET = 0.02f;
     private const float BOOK_WIDTH = 0.7f;
     private const float BOOK_HEIGHT = 0.37f;
-
-    // ReSharper disable once NotAccessedField.Local
+    
     private static ArtifactBook? _instance;
     private static bool _initialized;
+    private readonly Dictionary<Artifact, ArtifactPage> _pagesByArtifact = new();
 
     private ArtifactBook(float width, float height, float bottomButtonXOffset, float bottomButtonYOffset) : base(width,
       height, bottomButtonXOffset, bottomButtonYOffset)
@@ -41,6 +44,14 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
         lastPage = Pages.Last();
       }
       lastPage.AddArtifact(artifact);
+      _pagesByArtifact.Add(artifact, lastPage);
+      artifact.Disposed += OnArtifactDisposed;
+    }
+
+    private void OnArtifactDisposed(object? sender, Artifact artifact)
+    {
+      _pagesByArtifact[artifact].RemoveArtifact(artifact);
+      _pagesByArtifact.Remove(artifact);
     }
 
     private void AddAllArtifacts()
@@ -73,6 +84,10 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
     protected override void DisposeEvents()
     {
       ArtifactManager.ArtifactRegistered -= ArtifactCreated;
+      foreach (var artifact in _pagesByArtifact.Keys)
+      {
+        artifact.Disposed -= OnArtifactDisposed;
+      }
     }
   }
 }

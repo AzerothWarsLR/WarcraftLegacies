@@ -102,7 +102,8 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
 
     private void OnAnyFactionNameChanged(object? sender, Faction e)
     {
-      if (e == _artifact.OwningPlayer.GetFaction()) OnArtifactOwnerChanged(this, _artifact);
+      if (e == _artifact.OwningPlayer?.GetFaction()) 
+        OnArtifactOwnerChanged(this, _artifact);
     }
 
     protected override void DisposeEvents()

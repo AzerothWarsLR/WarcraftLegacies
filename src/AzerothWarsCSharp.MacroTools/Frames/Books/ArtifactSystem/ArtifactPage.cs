@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.ArtifactSystem;
 
 namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
@@ -8,12 +9,27 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
   /// </summary>
   public sealed class ArtifactPage : Page
   {
+    private readonly Dictionary<Artifact, ArtifactCard> _cardsByArtifact = new();
+    
     public ArtifactPage()
     {
       Rows = 3;
       Columns = 4;
       YOffsetTop = 0.025f;
       YOffsetBot = 0.05f;
+    }
+    
+    /// <summary>
+    /// Unrenders a <see cref="Artifact"/> from this <see cref="ArtifactPage"/>.
+    /// </summary>
+    public void RemoveArtifact(Artifact artifact)
+    {
+      if (_cardsByArtifact.TryGetValue(artifact, out var artifactCard))
+      {
+        Cards.Remove(artifactCard);
+        _cardsByArtifact.Remove(artifact);
+        artifactCard.Dispose();
+      }
     }
     
     /// <summary>
@@ -27,6 +43,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
       PositionFrameAtIndex(artifactCard, Cards.Count);
       Cards.Add(artifactCard);
       AddFrame(artifactCard);
+      _cardsByArtifact.Add(artifact, artifactCard);
     }
   }
 }

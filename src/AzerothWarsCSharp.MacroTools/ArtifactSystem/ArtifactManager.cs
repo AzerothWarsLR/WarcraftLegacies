@@ -43,5 +43,16 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
     {
       foreach (var artifact in AllArtifacts) yield return artifact;
     }
+
+    /// <summary>
+    /// Completely removes the given Artifact from the game.
+    /// </summary>
+    /// <param name="artifact"></param>
+    public static void Destroy(Artifact artifact)
+    {
+      AllArtifacts.Remove(artifact);
+      ArtifactsByType.Remove(GetItemTypeId(artifact.Item));
+      artifact.Dispose();
+    }
   }
 }

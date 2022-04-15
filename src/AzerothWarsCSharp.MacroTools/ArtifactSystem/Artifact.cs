@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.ShoreSystem;
 using WCSharp.Events;
@@ -8,7 +7,7 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
 {
-  public sealed class Artifact
+  public sealed class Artifact : IDisposable
   {
     private unit? _owningUnit;
     private ArtifactStatus _status;
@@ -39,9 +38,9 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
     private void OnUnitChangesOwner()
     {
       if (OwningUnit == GetTriggerUnit())
-          SetOwningPlayer(GetOwningPlayer(GetTriggerUnit()));
+        SetOwningPlayer(GetOwningPlayer(GetTriggerUnit()));
     }
-    
+
     public item Item { get; private set; }
 
     /// <summary>
@@ -103,7 +102,7 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
     /// Fired when the <see cref="player"/> owning the <see cref="unit"/> carrying the <see cref="Artifact"/> changes <see cref="Faction"/>.
     /// </summary>
     public event EventHandler<Artifact>? FactionChanged;
-    
+
     /// <summary>
     /// Fired when the <see cref="Artifact"/> is picked up by a unit.
     /// </summary>
@@ -113,11 +112,11 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
     /// Fired when the <see cref="Artifact"/> is dropped.
     /// </summary>
     public event EventHandler<Artifact>? Dropped;
-    
+
     /// <summary>
     /// Fired when the <see cref="Artifact"/> is permanently destroyed.
     /// </summary>
-    public event EventHandler<Artifact>? Destroyed;
+    public event EventHandler<Artifact>? Disposed;
 
     /// <summary>
     ///   The owner of this <see cref="Artifact" /> changes.
@@ -216,10 +215,25 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
       }
     }
 
-    public void Destroy()
+
+    private void Dispose(bool disposing)
     {
-      Destroyed?.Invoke(this, this);
+      if (disposing)
+      {
+        
+      }
+      Disposed?.Invoke(this, this);
       RemoveItem(Item);
+    }
+
+    ~Artifact()
+    {
+      Dispose(false);
+    }
+
+    public void Dispose()
+    {
+      Dispose(true);
     }
   }
 }

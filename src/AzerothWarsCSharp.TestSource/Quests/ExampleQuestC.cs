@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.TestSource.Quests
       Holder.Name = "Zerg";
       Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNZergling.blp";
 
-      //ArtifactManager.Destroy(ArtifactSetup.KelensDagger);
+      ArtifactManager.Destroy(ArtifactSetup.OrbOfFrost);
     }
   }
 }
