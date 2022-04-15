@@ -8,7 +8,15 @@ namespace AzerothWarsCSharp.MacroTools.ControlPointSystem
 {
   public static class ControlPointManager
   {
+    /// <summary>
+    ///   How often players receive income.
+    ///   Changing this will not affect the total amount of income they receive.
+    /// </summary>
+    private const float PERIOD = 1;
+
     private const int MAX_HITPOINTS = 10000; //All Control Points get given this many hitpoints
+
+    private static bool _initialized;
 
     private static readonly Dictionary<int, ControlPoint> ByUnitType = new();
     private static readonly Dictionary<unit, ControlPoint> ByUnit = new();
@@ -44,6 +52,21 @@ namespace AzerothWarsCSharp.MacroTools.ControlPointSystem
 
       controlPoint.Owner.SetControlPointValue(controlPoint.Owner.GetControlPointValue() + controlPoint.Value);
       controlPoint.Owner.SetControlPointCount(controlPoint.Owner.GetControlPointCount() + 1);
+
+      if (_initialized)
+      {
+        _initialized = true;
+        timer incomeTimer = CreateTimer();
+        TimerStart(incomeTimer, PERIOD, true, () =>
+        {
+          foreach (var player in GeneralHelpers.GetAllPlayers())
+            if (player.GetFaction() != null)
+            {
+              var goldPerSecond = player.GetFaction().Income * PERIOD / 60;
+              player.AddGold(goldPerSecond);
+            }
+        });
+      }
     }
   }
 }
