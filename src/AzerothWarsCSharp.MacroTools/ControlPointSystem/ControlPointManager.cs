@@ -53,7 +53,7 @@ namespace AzerothWarsCSharp.MacroTools.ControlPointSystem
       controlPoint.Owner.SetControlPointValue(controlPoint.Owner.GetControlPointValue() + controlPoint.Value);
       controlPoint.Owner.SetControlPointCount(controlPoint.Owner.GetControlPointCount() + 1);
 
-      if (_initialized)
+      if (!_initialized)
       {
         _initialized = true;
         timer incomeTimer = CreateTimer();
