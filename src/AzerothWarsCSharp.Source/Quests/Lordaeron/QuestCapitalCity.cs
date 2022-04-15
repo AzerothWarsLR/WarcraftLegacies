@@ -13,28 +13,26 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {
   public sealed class QuestCapitalCity : QuestData
   {
-    private readonly unit _unitToMakeInvulnerable;
     private readonly List<unit> _rescueUnits = new();
+    private readonly unit _unitToMakeInvulnerable;
 
-    public QuestCapitalCity(Rectangle rescueRect, unit unitToMakeInvulnerable) : base("Hearthlands",
-      "The territories of Lordaeron are fragmented. Regain control of the old Alliance's hold to secure the kingdom.",
-      "ReplaceableTextures\\CommandButtons\\BTNCastle.blp")
+    public QuestCapitalCity(Rectangle rescueRect, unit unitToMakeInvulnerable, IEnumerable<QuestData> prequisites) :
+      base("Hearthlands",
+        "The territories of Lordaeron are fragmented. Regain control of the old Alliance's hold to secure the kingdom.",
+        "ReplaceableTextures\\CommandButtons\\BTNCastle.blp")
     {
       AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendCaerdarrow, false));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01M"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01C"))));
+      foreach (var prequisite in prequisites) AddQuestItem(new QuestItemCompleteQuest(prequisite));
       AddQuestItem(new QuestItemExpire(1472));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = FourCC("R04Y");
       _unitToMakeInvulnerable = unitToMakeInvulnerable;
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
-      {
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
-      }
     }
 
     protected override string CompletionPopup =>
@@ -44,20 +42,14 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     protected override void OnFail()
     {
-      foreach (var unit in _rescueUnits)
-      {
-        UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      }
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
     {
-      foreach (var unit in _rescueUnits)
-      {
-        UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      }
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
       SetUnitInvulnerable(_unitToMakeInvulnerable, true);
-      if (GetLocalPlayer() == Holder.Player) 
+      if (GetLocalPlayer() == Holder.Player)
         PlayThematicMusicBJ("war3mapImported\\CapitalCity.mp3");
     }
   }

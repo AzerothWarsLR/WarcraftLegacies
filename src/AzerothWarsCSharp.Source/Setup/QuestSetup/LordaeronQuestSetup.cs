@@ -2,7 +2,6 @@ using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.Source.Quests.Lordaeron;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
-
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
@@ -14,10 +13,19 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
     public static void Setup()
     {
       var lordaeron = LordaeronSetup.FactionLordaeron;
-      //Early duel
-      lordaeron.StartingQuest = lordaeron.AddQuest(new QuestStratholme(Regions.StratholmeUnlock));
-      lordaeron.AddQuest(new QuestStrahnbrad(Regions.StrahnbradUnlock));
-      lordaeron.AddQuest(new QuestCapitalCity(Regions.Terenas, PreplacedUnitSystem.GetUnitByUnitType(FourCC("nemi"))));
+
+      var questStrahnbrad = new QuestStrahnbrad(Regions.StrahnbradUnlock);
+      var questStratholme = new QuestStratholme(Regions.StratholmeUnlock);
+
+      lordaeron.AddQuest(questStratholme);
+      lordaeron.StartingQuest = questStratholme;
+      lordaeron.AddQuest(questStrahnbrad);
+      lordaeron.AddQuest(new QuestCapitalCity(Regions.Terenas, PreplacedUnitSystem.GetUnitByUnitType(FourCC("nemi")),
+        new QuestData[]
+        {
+          questStrahnbrad,
+          questStratholme
+        }));
 
       lordaeron.AddQuest(new QuestShoresOfNorthrend());
       lordaeron.AddQuest(new QuestThunderEagle());
