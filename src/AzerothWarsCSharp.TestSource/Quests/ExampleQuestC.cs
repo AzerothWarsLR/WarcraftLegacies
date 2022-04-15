@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.TestSource.Quests
   {
     private readonly Power _zerglingPower;
   
-    public ExampleQuestC(QuestData otherQuest) : base("Free Zergling", "We really need a free Zergling.",
+    public ExampleQuestC() : base("Free Zergling", "We really need a free Zergling.",
       "ReplaceableTextures\\CommandButtons\\BTNZergling.blp")
     {
       AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.Killmaim));
@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.TestSource.Quests
       _zerglingPower = new DummyPower("Zerglings", "Spawn zerglings constantly.", "Zergling");
     }
 
-    protected override string RewardDescription => "A free Zergling, and Orb of Darkness";
+    protected override string RewardDescription => "A free Zergling, and destroy Kelen's Dagger of Escape";
     protected override string CompletionPopup => "Congratulations on your free Zergling!";
     protected override string PenaltyDescription => "A hostile Peasant spawns";
 
@@ -40,6 +40,8 @@ namespace AzerothWarsCSharp.TestSource.Quests
       Holder.RemovePower(_zerglingPower);
       Holder.Name = "Zerg";
       Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNZergling.blp";
+
+      //ArtifactManager.Destroy(ArtifactSetup.KelensDagger);
     }
   }
 }

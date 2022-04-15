@@ -12,13 +12,13 @@ namespace AzerothWarsCSharp.TestSource.Setup
     public static void Setup()
     {
       Killmaim = new Artifact(CreateItem(FourCC("klmm"), 0, 0));
-      Artifact.Register(Killmaim);
+      ArtifactManager.Register(Killmaim);
       
       OrbOfFrost = new Artifact(CreateItem(FourCC("ofro"), 0, 0));
-      Artifact.Register(OrbOfFrost);
+      ArtifactManager.Register(OrbOfFrost);
       
       KelensDagger = new Artifact(CreateItem(FourCC("desc"), 0, 0));
-      Artifact.Register(KelensDagger);
+      ArtifactManager.Register(KelensDagger);
     }
   }
 }

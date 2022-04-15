@@ -26,8 +26,6 @@ namespace AzerothWarsCSharp.TestSource.Setup
       AllFactionSetup.Setup();
       Console.WriteLine("Setting up PersonSetup...");
       PersonSetup.Setup();
-      Console.WriteLine("Setting up Artifact...");
-      Artifact.Setup();
       Console.WriteLine("Setting up ArtifactSetup...");
       ArtifactSetup.Setup();
       Console.WriteLine("Setting up ControlPointSetup...");
