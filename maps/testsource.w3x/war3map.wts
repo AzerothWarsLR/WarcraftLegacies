@@ -46,3 +46,58 @@ STRING 9
 Income (+15)
 }
 
+STRING 10
+{
+Player 2
+}
+
+STRING 11
+{
+Player 3
+}
+
+STRING 12
+{
+Player 4
+}
+
+STRING 13
+{
+Player 5
+}
+
+STRING 14
+{
+Player 6
+}
+
+STRING 15
+{
+Player 7
+}
+
+STRING 16
+{
+Player 8
+}
+
+STRING 17
+{
+Player 9
+}
+
+STRING 18
+{
+Player 10
+}
+
+STRING 19
+{
+Player 11
+}
+
+STRING 20
+{
+Player 12
+}
+
