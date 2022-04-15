@@ -7,53 +7,16 @@ using static War3Api.Common;
 namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
 {
   /// <summary>
-  /// Represents a single Artifact in a black rectangle.
+  ///   Represents a single Artifact in a black rectangle.
   /// </summary>
   public sealed class ArtifactCard : Card
   {
     private const float BOX_WIDTH = 0.13f;
     private const float BOX_HEIGHT = 0.086f;
+    private readonly Artifact _artifact;
+    private readonly Frame _pingButton;
 
     private readonly TextFrame _text;
-    private readonly Frame _pingButton;
-    private readonly Artifact _artifact;
-
-    private void OnArtifactOwnerChanged(object? sender, Artifact artifact)
-    {
-      try
-      {
-        _text.Text = $"{artifact.OwningPlayer?.GetFaction()?.ColoredName}";
-      }
-      catch (Exception ex)
-      {
-        Console.WriteLine(ex);
-      }
-    }
-
-    private void OnArtifactStatusChanged(object? sender, Artifact artifact)
-    {
-      switch (artifact.Status)
-      {
-        case ArtifactStatus.Unit:
-          _text.Visible = true;
-          _pingButton.Visible = false;
-          break;
-        case ArtifactStatus.Ground:
-          _text.Visible = false;
-          _pingButton.Visible = true;
-          break;
-        case ArtifactStatus.Special:
-          _text.Visible = false;
-          _pingButton.Visible = true;
-          break;
-        case ArtifactStatus.Hidden:
-          _text.Visible = true;
-          _pingButton.Visible = false;
-          break;
-        default:
-          throw new InvalidEnumArgumentException();
-      }
-    }
 
     public ArtifactCard(Artifact artifact, Frame parent) : base(parent, BOX_WIDTH, BOX_HEIGHT)
     {
@@ -97,6 +60,49 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
       artifact.OwnerChanged += OnArtifactOwnerChanged;
       artifact.StatusChanged += OnArtifactStatusChanged;
       artifact.FactionChanged += OnArtifactOwnerChanged;
+      FactionManager.AnyFactionNameChanged += OnAnyFactionNameChanged;
+    }
+
+    private void OnArtifactOwnerChanged(object? sender, Artifact artifact)
+    {
+      try
+      {
+        _text.Text = $"Owned by {artifact.OwningPlayer?.GetFaction()?.ColoredName}";
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex);
+      }
+    }
+
+    private void OnArtifactStatusChanged(object? sender, Artifact artifact)
+    {
+      switch (artifact.Status)
+      {
+        case ArtifactStatus.Unit:
+          _text.Visible = true;
+          _pingButton.Visible = false;
+          break;
+        case ArtifactStatus.Ground:
+          _text.Visible = false;
+          _pingButton.Visible = true;
+          break;
+        case ArtifactStatus.Special:
+          _text.Visible = false;
+          _pingButton.Visible = true;
+          break;
+        case ArtifactStatus.Hidden:
+          _text.Visible = true;
+          _pingButton.Visible = false;
+          break;
+        default:
+          throw new InvalidEnumArgumentException();
+      }
+    }
+
+    private void OnAnyFactionNameChanged(object? sender, Faction e)
+    {
+      if (e == _artifact.OwningPlayer.GetFaction()) OnArtifactOwnerChanged(this, _artifact);
     }
 
     protected override void DisposeEvents()
