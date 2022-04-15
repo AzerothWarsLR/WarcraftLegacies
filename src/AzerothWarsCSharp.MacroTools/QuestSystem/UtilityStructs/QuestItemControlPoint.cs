@@ -16,6 +16,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       TargetWidget = target.Unit;
       target.ChangedOwner += OnTargetChangeOwner;
       Faction.TeamJoin += OnFactionTeamJoin;
+      DisplaysPosition = true;
     }
 
     public override Point Position => new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
