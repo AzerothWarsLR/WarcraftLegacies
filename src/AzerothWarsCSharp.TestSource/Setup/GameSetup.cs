@@ -12,8 +12,6 @@ namespace AzerothWarsCSharp.TestSource.Setup
   {
     public static void Setup()
     {
-      Console.WriteLine("Setting up Legend...");
-      Legend.Setup();
       Console.WriteLine("Setting up LegendSetup...");
       LegendSetup.Setup();
       Console.WriteLine("Setting up ShoreSetup...");

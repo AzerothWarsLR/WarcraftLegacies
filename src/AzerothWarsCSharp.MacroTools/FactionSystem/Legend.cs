@@ -17,22 +17,26 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
   {
     private static readonly Dictionary<unit, Legend> ByUnit = new();
     private static readonly List<Legend> AllLegends = new();
-    private readonly int _dummyCapital = FourCC("LEca");
     private readonly int _dummyDieswithout = FourCC("LEgn");
     private readonly int _dummyPermadies = FourCC("LEgo");
+    private readonly string? _name;
     private trigger? _castTrig;
     private trigger? _damageTrig;
     private trigger? _deathTrig;
     private group? _diesWithout;
     private bool _hivemind;
-    private readonly string? _name;
     private trigger? _ownerTrig;
     private bool _permaDies;
     private playercolor? _playerColor;
 
     private unit? _unit;
     private int _unitType;
-    
+
+    public Legend()
+    {
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, OnUnitTrain);
+    }
+
     public bool EnableMessages { get; set; }
 
     public string Name
@@ -53,7 +57,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// <summary>
     ///   The colour of the Legend's in-game model.
     /// </summary>
-    public playercolor PlayerColor
+    public playercolor? PlayerColor
     {
       get => _playerColor;
       set
@@ -189,8 +193,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// </summary>
     public event EventHandler<LegendChangeOwnerEventArgs>? ChangedOwner;
 
-    public static event EventHandler<LegendChangeOwnerEventArgs>? OnLegendChangeOwner;
-
     /// <summary>
     ///   Fires when a Legend permanently dies, but before it is removed from the game.
     /// </summary>
@@ -224,7 +226,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       if (Unit == null)
       {
         Unit = CreateUnit(owner, _unitType, x, y, face);
-        OnLegendChangeOwner?.Invoke(this, new LegendChangeOwnerEventArgs(this, null));
         ChangedOwner?.Invoke(this, new LegendChangeOwnerEventArgs(this, null));
       }
       else if (!UnitAlive(Unit))
@@ -304,7 +305,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, displayString + DeathMessage);
       }
 
-      if (Hivemind && OwningPlayer != null) 
+      if (Hivemind && OwningPlayer != null)
         OwningPlayer.GetFaction().Obliterate();
 
       OnLegendPermaDeath?.Invoke(this, this);
@@ -313,7 +314,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     private void OnChangeOwner()
     {
-      OnLegendChangeOwner?.Invoke(this, new LegendChangeOwnerEventArgs(this, GetChangingUnitPrevOwner()));
       ChangedOwner?.Invoke(this, new LegendChangeOwnerEventArgs(this, null));
     }
 
@@ -415,25 +415,19 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     }
 
     //When any unit is trained, check if it has the unittype of a Legend, and assign it to that Legend if so
-    private static void OnUnitTrain()
+    private void OnUnitTrain()
     {
       unit trainedUnit = GetTrainedUnit();
-      foreach (var legend in AllLegends)
-        if (legend.UnitType == GetUnitTypeId(trainedUnit))
-        {
-          legend.Unit = trainedUnit;
-          OnLegendChangeOwner?.Invoke(legend, null);
-        }
+      if (UnitType == GetUnitTypeId(trainedUnit))
+      {
+        Unit = trainedUnit;
+        ChangedOwner?.Invoke(this, null);
+      }
     }
 
     ~Legend()
     {
       DestroyGroup(_diesWithout);
-    }
-
-    public static void Setup()
-    {
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, OnUnitTrain);
     }
 
     /// <summary>

@@ -15,8 +15,6 @@ namespace AzerothWarsCSharp.Source.Setup
     {
       Console.WriteLine("Initializing PreplacedUnitSystem...");
       PreplacedUnitSystem.Initialize();
-      Console.WriteLine("Setting up Legend...");
-      Legend.Setup();
       Console.WriteLine("Setting up AllLegendSetup...");
       AllLegendSetup.Setup();
       Console.WriteLine("Setting up ShoreSetup...");
