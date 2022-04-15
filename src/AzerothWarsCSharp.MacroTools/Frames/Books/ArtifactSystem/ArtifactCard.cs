@@ -96,12 +96,14 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
 
       artifact.OwnerChanged += OnArtifactOwnerChanged;
       artifact.StatusChanged += OnArtifactStatusChanged;
+      artifact.FactionChanged += OnArtifactOwnerChanged;
     }
 
     protected override void DisposeEvents()
     {
       _artifact.OwnerChanged -= OnArtifactOwnerChanged;
       _artifact.StatusChanged -= OnArtifactStatusChanged;
+      _artifact.FactionChanged -= OnArtifactOwnerChanged;
     }
   }
 }

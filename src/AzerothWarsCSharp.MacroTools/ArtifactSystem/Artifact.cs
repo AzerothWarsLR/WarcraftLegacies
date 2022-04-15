@@ -102,6 +102,11 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
       }
       get => _description ?? "";
     }
+
+    /// <summary>
+    /// Fired when the <see cref="player"/> owning the <see cref="unit"/> carrying the <see cref="Artifact"/> changes <see cref="Faction"/>.
+    /// </summary>
+    public event EventHandler<Artifact>? FactionChanged;
     
     /// <summary>
     /// Fired when the <see cref="Artifact"/> is picked up by a unit.
@@ -231,8 +236,15 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
       RemoveItem(Item);
     }
 
-    private static void OnPersonFactionChanged(object? sender, PlayerFactionChangeEventArgs playerFactionChangeEventArgs)
+    private static void OnPersonFactionChanged(object? sender, PlayerFactionChangeEventArgs args)
     {
+      foreach (var artifact in GetAllArtifacts())
+      {
+        if (artifact.OwningPlayer?.GetFaction() == args.Player.GetFaction())
+        {
+          artifact.FactionChanged?.Invoke(artifact, artifact);
+        }
+      }
     }
 
     /// <summary>
