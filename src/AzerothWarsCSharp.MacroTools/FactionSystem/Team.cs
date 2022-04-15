@@ -173,7 +173,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public bool ContainsPlayer(player whichPlayer)
     {
       foreach (var faction in _factions)
-        if (faction.Player == whichPlayer)
+        if (faction.Player != null && faction.Player == whichPlayer)
           return true;
       return false;
     }
