@@ -19,11 +19,23 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// </summary>
     public static event EventHandler<Faction>? FactionRegistered;
 
+    /// <summary>
+    /// Fired when any <see cref="Faction"/> changes its name.
+    /// </summary>
+    public static event EventHandler<Faction>? AnyFactionNameChanged; //todo: remove this; shouldn't need static events of this nature
+
     private static void OnFactionNameChange(object? sender, FactionNameChangeEventArgs args)
     {
-      FactionsByName.Remove(args.PreviousName);
-      args.Faction.Name = args.Faction.Name;
-      FactionsByName.Add(args.Faction.Name, args.Faction);
+      try
+      {
+        FactionsByName.Remove(args.PreviousName);
+        FactionsByName.Add(args.Faction.Name, args.Faction);
+        AnyFactionNameChanged?.Invoke(args.Faction, args.Faction);
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex);
+      }
     }
 
     public static IEnumerable<Team> GetAllTeams()
@@ -65,8 +77,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       if (!FactionsByName.ContainsKey(faction.Name.ToLower()))
       {
         FactionsByName[faction.Name.ToLower()] = faction;
-        faction.NameChanged += OnFactionNameChange;
         FactionRegistered?.Invoke(faction, faction);
+        faction.NameChanged += OnFactionNameChange;
       }
       else
       {

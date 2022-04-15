@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
@@ -116,7 +117,7 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
       Instance?.Render();
     }
 
-    private static void OnFactionNameChanged(object? sender, Faction faction)
+    private static void OnFactionAnyFactionNameChanged(object? sender, Faction faction)
     {
       Instance?.UpdateFactionRow(faction);
     }
@@ -166,10 +167,15 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
       Faction.TeamLeft += OnFactionTeamLeft;
       Faction.StatusChanged += OnFactionStatusChanged;
 
-      //Faction.NameChanged += OnFactionNameChanged;
-      Faction.IconChanged += OnFactionNameChanged;
+      FactionManager.AnyFactionNameChanged += OnFactionAnyFactionNameChanged;
+      Faction.IconChanged += OnFactionIconChanged;
       
       ControlPoint.OnControlPointOwnerChange += OnControlPointOwnerChanged;
+    }
+
+    private static void OnFactionIconChanged(object? sender, Faction args)
+    {
+      Instance?.UpdateFactionRow(args);
     }
   }
 }
