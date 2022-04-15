@@ -28,7 +28,6 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       LegendThrall = new Legend
       {
         UnitType = FourCC("Othr"),
-        Essential = true
       };
       Legend.Register(LegendThrall);
 

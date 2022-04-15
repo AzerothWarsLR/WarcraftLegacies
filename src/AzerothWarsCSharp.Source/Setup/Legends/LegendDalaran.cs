@@ -18,7 +18,6 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       LegendJaina = new Legend
       {
         UnitType = FourCC("Hjai"),
-        Essential = true
       };
       Legend.Register(LegendJaina);
 

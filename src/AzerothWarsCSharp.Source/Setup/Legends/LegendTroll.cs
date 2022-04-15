@@ -14,7 +14,6 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       LEGEND_PRIEST = new Legend
       {
         UnitType = FourCC("O01J"),
-        Essential = true
       };
       Legend.Register(LEGEND_PRIEST);
 

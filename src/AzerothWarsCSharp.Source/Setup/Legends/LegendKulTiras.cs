@@ -16,7 +16,6 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       LegendAdmiral = new Legend
       {
         UnitType = FourCC("Hapm"),
-        Essential = true
       };
       Legend.Register(LegendAdmiral);
 

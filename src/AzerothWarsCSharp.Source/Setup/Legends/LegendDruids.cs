@@ -31,7 +31,6 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       Legend.Register(LegendMalfurion = new Legend
       {
         UnitType = FourCC("Efur"),
-        Essential = true
       });
 
       Legend.Register( LegendFandral = new Legend

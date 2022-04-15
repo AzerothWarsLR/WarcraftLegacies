@@ -27,7 +27,6 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       LegendMagtheridon.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("o00F")));
       LegendMagtheridon.DeathMessage =
         "Magtheridon’s eternal demon soul has been consumed, and his life permanently extinguished. The Lord of Outland has fallen.";
-      LegendMagtheridon.Essential = true;
       Legend.Register(LegendMagtheridon);
 
       LegendRend = new Legend

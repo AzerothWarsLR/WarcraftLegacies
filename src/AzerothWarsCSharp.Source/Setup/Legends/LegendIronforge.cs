@@ -32,7 +32,6 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       {
         UnitType = FourCC("H00S"),
         DeathMessage = "King Magni Bronzebeard has died.", //Todo: bad flavour
-        Essential = true,
         StartingXp = 1000
       };
       LegendMagni.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("h001")));

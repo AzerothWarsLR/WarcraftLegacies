@@ -21,7 +21,6 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         DeathMessage =
           "Archimonde the Defiler has been banished from Azeroth, marking the end of his second failed invasion.",
         StartingXp = 10800,
-        Essential = true
       };
       Legend.Register(LEGEND_ARCHIMONDE);
 

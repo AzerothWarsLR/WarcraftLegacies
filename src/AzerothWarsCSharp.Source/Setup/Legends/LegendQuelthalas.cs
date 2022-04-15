@@ -42,7 +42,6 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         PlayerColor = PLAYER_COLOR_MAROON
       };
       LegendAnasterian.AddUnitDependency(LegendSunwell.Unit);
-      LegendAnasterian.Essential = true;
       LegendAnasterian.StartingXp = 1000;
       Legend.Register(LegendAnasterian);
 

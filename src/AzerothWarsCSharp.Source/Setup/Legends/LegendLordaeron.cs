@@ -78,7 +78,6 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       {
         UnitType = FourCC("Hart"),
         PlayerColor = PLAYER_COLOR_BLUE,
-        Essential = true
       };
       LegendArthas.AddUnitDependency(LegendStratholme.Unit);
       LegendArthas.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nico")));

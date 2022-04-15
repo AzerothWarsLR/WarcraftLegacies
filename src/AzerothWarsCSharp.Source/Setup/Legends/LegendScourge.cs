@@ -25,7 +25,6 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         DeathMessage =
           "Kel'thuzad has been slain. He lives on in spectral form, and may yet return if (he is brought to the Sunwell.",
         DeathSfx = "Abilities\\Spells\\Undead\\DeathCoil\\DeathCoilSpecialArt.mdl",
-        Essential = true,
         StartingXp = 1000,
         Name = "Kel'thuzad"
       };

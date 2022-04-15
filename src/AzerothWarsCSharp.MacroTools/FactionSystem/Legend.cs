@@ -33,9 +33,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     private unit? _unit;
     private int _unitType;
-
-    public bool Essential { get; set; }
-
+    
     public bool EnableMessages { get; set; }
 
     public string Name

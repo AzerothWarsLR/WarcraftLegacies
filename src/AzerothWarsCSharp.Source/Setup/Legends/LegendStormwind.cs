@@ -23,7 +23,6 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       LegendVarian.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("h00X")));
       LegendVarian.DeathMessage =
         "The King of Stormwind dies a warrior’s death, defending hearth and family. The Wrynn Dynasty crumbles with his passing.";
-      LegendVarian.Essential = true;
       LegendVarian.StartingXp = 1800;
       Legend.Register(LegendVarian);
 

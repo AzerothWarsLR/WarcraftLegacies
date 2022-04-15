@@ -39,7 +39,6 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       {
         UnitType = FourCC("Etyr"),
         PlayerColor = PLAYER_COLOR_CYAN,
-        Essential = true
       };
       Legend.Register(legendTyrande);
 
