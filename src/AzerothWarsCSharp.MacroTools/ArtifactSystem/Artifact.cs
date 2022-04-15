@@ -10,9 +10,6 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
 {
   public sealed class Artifact
   {
-    private static readonly Dictionary<int, Artifact> ArtifactsByType = new();
-    private static readonly List<Artifact> AllArtifacts = new();
-
     private unit? _owningUnit;
     private ArtifactStatus _status;
     private int _titanforgedAbility = FourCC("A0VJ");
@@ -27,25 +24,24 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
       SetOwningPlayer(null);
       PlayerUnitEvents.Register(PlayerUnitEvent.ItemTypeIsPickedUp, OnPickedUp, GetItemTypeId(whichItem));
       PlayerUnitEvents.Register(PlayerUnitEvent.ItemTypeIsDropped, OnDropped, GetItemTypeId(whichItem));
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeChangesOwner, OnUnitChangesOwner);
+      PlayerData.FactionChange += OnPlayerFactionChange;
     }
 
-    /// <summary>
-    /// Registers an <see cref="Artifact"/> to the Artifact System.
-    /// </summary>
-    public static void Register(Artifact artifact)
+    private void OnPlayerFactionChange(object? sender, PlayerFactionChangeEventArgs e)
     {
-      if (!ArtifactsByType.ContainsKey(GetItemTypeId(artifact.Item)))
+      if (OwningPlayer?.GetFaction() == e.Player.GetFaction())
       {
-        ArtifactsByType[GetItemTypeId(artifact.Item)] = artifact;
-        ArtifactRegistered?.Invoke(artifact, artifact);
-        AllArtifacts.Add(artifact);
-      }
-      else
-      {
-        throw new Exception($"Attempted to create already existing Artifact from {GetItemName(artifact.Item)}.");
+        FactionChanged?.Invoke(this, this);
       }
     }
 
+    private void OnUnitChangesOwner()
+    {
+      if (OwningUnit == GetTriggerUnit())
+          SetOwningPlayer(GetOwningPlayer(GetTriggerUnit()));
+    }
+    
     public item Item { get; private set; }
 
     /// <summary>
@@ -112,11 +108,6 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
     /// Fired when the <see cref="Artifact"/> is picked up by a unit.
     /// </summary>
     public event EventHandler<Artifact>? PickedUp;
-    
-    /// <summary>
-    /// Fired when an <see cref="Artifact"/> is newly registered to the system.
-    /// </summary>
-    public static event EventHandler<Artifact>? ArtifactRegistered;
 
     /// <summary>
     /// Fired when the <see cref="Artifact"/> is dropped.
@@ -184,11 +175,6 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
       Status = OwningPlayer != null ? ArtifactStatus.Unit : ArtifactStatus.Ground;
     }
 
-    public static Artifact GetFromTypeId(int typeId)
-    {
-      return ArtifactsByType[typeId];
-    }
-
     private void OnPickedUp()
     {
       OwningUnit = GetTriggerUnit();
@@ -234,43 +220,6 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
     {
       Destroyed?.Invoke(this, this);
       RemoveItem(Item);
-    }
-
-    private static void OnPersonFactionChanged(object? sender, PlayerFactionChangeEventArgs args)
-    {
-      foreach (var artifact in GetAllArtifacts())
-      {
-        if (artifact.OwningPlayer?.GetFaction() == args.Player.GetFaction())
-        {
-          artifact.FactionChanged?.Invoke(artifact, artifact);
-        }
-      }
-    }
-
-    /// <summary>
-    /// Returns all <see cref="Artifact"/>s registered to the system.
-    /// </summary>
-    public static IEnumerable<Artifact> GetAllArtifacts()
-    {
-      foreach (var artifact in AllArtifacts) yield return artifact;
-    }
-
-    /// <summary>
-    ///   When a unit carrying an <see cref="Artifact" /> changes owner, update their <see cref="Artifact" />s owner
-    ///   information.
-    /// </summary>
-    private static void UnitChangeOwner()
-    {
-      if (GetTriggerUnit() != null)
-        foreach (var artifact in GetAllArtifacts())
-          if (artifact.OwningUnit == GetTriggerUnit())
-            artifact.SetOwningPlayer(GetOwningPlayer(GetTriggerUnit()));
-    }
-
-    public static void Setup()
-    {
-      PlayerData.FactionChange += OnPersonFactionChanged;
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeChangesOwner, UnitChangeOwner);
     }
   }
 }

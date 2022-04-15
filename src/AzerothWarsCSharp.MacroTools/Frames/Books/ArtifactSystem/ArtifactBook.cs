@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
     private ArtifactBook(float width, float height, float bottomButtonXOffset, float bottomButtonYOffset) : base(width,
       height, bottomButtonXOffset, bottomButtonYOffset)
     {
-      Artifact.ArtifactRegistered += ArtifactCreated;
+      ArtifactManager.ArtifactRegistered += ArtifactCreated;
       var firstPage = AddPage();
       firstPage.Visible = true;
       AddAllArtifacts();
@@ -45,7 +45,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
 
     private void AddAllArtifacts()
     {
-      foreach (var artifact in Artifact.GetAllArtifacts()) 
+      foreach (var artifact in ArtifactManager.GetAllArtifacts()) 
         AddArtifact(artifact);
     }
 
@@ -72,7 +72,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
 
     protected override void DisposeEvents()
     {
-      Artifact.ArtifactRegistered -= ArtifactCreated;
+      ArtifactManager.ArtifactRegistered -= ArtifactCreated;
     }
   }
 }
