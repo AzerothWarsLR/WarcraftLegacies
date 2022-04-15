@@ -15,8 +15,8 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
     {
       var lordaeron = LordaeronSetup.FactionLordaeron;
       //Early duel
-      lordaeron.StartingQuest = lordaeron.AddQuest(new QuestStratholme());
-      lordaeron.AddQuest(new QuestStrahnbrad());
+      lordaeron.StartingQuest = lordaeron.AddQuest(new QuestStratholme(Regions.StratholmeUnlock));
+      lordaeron.AddQuest(new QuestStrahnbrad(Regions.StrahnbradUnlock));
       lordaeron.AddQuest(new QuestCapitalCity(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nemi"))));
 
       lordaeron.AddQuest(new QuestShoresOfNorthrend());
