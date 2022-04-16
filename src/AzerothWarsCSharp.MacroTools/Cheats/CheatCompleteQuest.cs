@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
 {
   public static class CheatCompleteQuest
   {
-    private const string COMMAND = "-completequest ";
+    private const string COMMAND = "-complete ";
 
     private static void Actions()
     {
