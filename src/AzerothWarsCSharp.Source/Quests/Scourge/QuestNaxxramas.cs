@@ -36,14 +36,13 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
         }
     }
 
-    protected override string CompletionPopup =>
-      "The Naxxramas has now been raised and under the control of the " + Holder.Team.Name + ".";
+    protected override string CompletionPopup => $"The Naxxramas has now been raised and under the control of the {Holder.Team.Name}.";
 
     protected override string RewardDescription => "Control of all units in Naxxramas";
 
     protected override void OnComplete()
     {
-      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
       UnitRescue(_naxxramas, Holder.Player);
       SetPlayerAbilityAvailableBJ(false, FourCC("A0O2"), Holder.Player);
     }
