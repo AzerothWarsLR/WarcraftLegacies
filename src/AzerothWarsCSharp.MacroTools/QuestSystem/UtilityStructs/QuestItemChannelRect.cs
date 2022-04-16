@@ -70,6 +70,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
       TriggerRegisterEnterRegion(_entersRectTrig.Trigger, target, null);
       TriggerAddAction(_entersRectTrig.Trigger, OnRegionEnter);
+      DisplaysPosition = true;
     }
     
     

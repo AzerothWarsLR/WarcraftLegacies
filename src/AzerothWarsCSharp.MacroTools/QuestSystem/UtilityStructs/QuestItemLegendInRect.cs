@@ -15,7 +15,6 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     private readonly region _target;
     private readonly rect _targetRect;
 
-
     public QuestItemLegendInRect(Legend legend, Rectangle targetRect, string rectName)
     {
       _targetRect = targetRect.Rect;
@@ -27,6 +26,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       TriggerRegisterLeaveRegion(_exitsRect.Trigger, _target, null);
       TriggerAddAction(_exitsRect.Trigger, OnRegionExit);
       PingPath = "MinimapQuestTurnIn";
+      ShowsInQuestLog = true;
     }
 
     public override Point Position => new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
