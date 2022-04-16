@@ -40,8 +40,10 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
       float sidesPerDie = BlzGetUnitDiceSides(whichUnit, weaponIndex);
       return R2I(baseDamage + (numberOfDice + sidesPerDie * numberOfDice) / 2);
     }
-
-    //Returns as percentage.
+    
+    /// <summary>
+    /// Gets a units physical damage reduction as a percentage. Only takes armor into account.
+    /// </summary>
     public static float GetUnitDamageReduction(unit whichUnit)
     {
       var armor = BlzGetUnitArmor(whichUnit);
@@ -104,7 +106,7 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
         if (i == count) break;
 
         CreateUnit(whichPlayer, unitId, x, y, face);
-        i = i + 1;
+        i += 1;
       }
     }
 
@@ -121,12 +123,6 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
     private static void ForceAddForceEnum()
     {
       ForceAddPlayer(_destForce, GetEnumPlayer());
-    }
-
-    public static void ForceAddForce(force sourceForce, force destForce)
-    {
-      _destForce = destForce;
-      ForForce(sourceForce, ForceAddForceEnum);
     }
 
     public static void AddHeroAttributes(unit whichUnit, int str, int agi, int intelligence)
@@ -148,6 +144,9 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
       DestroyEffect(AddSpecialEffect(sfx, GetUnitX(whichUnit), GetUnitY(whichUnit)));
     }
 
+    /// <summary>
+    /// Reveals the unit, makes it vulnerable, and transfers its ownership to the specified player.
+    /// </summary>
     public static void UnitRescue(unit whichUnit, player whichPlayer)
     {
       //If the unit costs 10 food, that means it should be owned by neutral passive instead of the rescuing player.
@@ -156,49 +155,17 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
       SetUnitInvulnerable(whichUnit, false);
     }
 
-    public static void RescueUnitsInGroup(group whichGroup, player whichPlayer)
-    {
-      group tempGroup = CreateGroup();
-      BlzGroupAddGroupFast(whichGroup, tempGroup);
-      while (true)
-      {
-        unit u = FirstOfGroup(tempGroup);
-        if (u == null) break;
-
-        UnitRescue(u, whichPlayer);
-        GroupRemoveUnit(tempGroup, u);
-      }
-
-      DestroyGroup(tempGroup);
-    }
-
-    public static void RescueHostileUnitsInRect(rect whichRect, player whichPlayer)
-    {
-      group tempGroup = CreateGroup();
-      GroupEnumUnitsInRect(tempGroup, whichRect, null);
-      while (true)
-      {
-        unit u = FirstOfGroup(tempGroup);
-        if (u == null) break;
-
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_AGGRESSIVE)) UnitRescue(u, whichPlayer);
-
-        GroupRemoveUnit(tempGroup, u);
-      }
-
-      DestroyGroup(tempGroup);
-    }
-
+    /// <summary>
+    /// Drops a units entire inventory on the ground.
+    /// </summary>
     public static void UnitDropAllItems(unit u)
     {
-      var i = 0;
       var unitX = GetUnitX(u);
       var unitY = GetUnitY(u);
       float ang = 0; //Radians
-      while (true)
-      {
-        if (i > 6) break;
 
+      for (var i = 0; i < 6; i++)
+      {
         var x = unitX + HERO_DROP_DIST * Cos(ang);
         var y = unitY + HERO_DROP_DIST * Sin(ang);
         ang += 360 * bj_DEGTORAD / 6;
@@ -209,24 +176,20 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
           UnitRemoveItem(u, dropItem);
           SetItemPosition(dropItem, x, y);
         }
-
-        i += 1;
       }
     }
 
     public static void UnitTransferItems(unit sender, unit receiver)
     {
-      var i = 0;
-      while (true)
+      for (var i = 0; i < 6; i++)
       {
-        if (i > 6) break;
-
         UnitAddItem(receiver, UnitItemInSlot(sender, i));
-        i = i + 1;
       }
     }
-
-    //Add an item to a unit. If the unit)s inventory is full, drop it on the ground near them instead.
+    
+    /// <summary>
+    /// Add an item to a unit. If the unit's inventory is full, drop it on the ground near them instead.
+    /// </summary>
     public static void UnitAddItemSafe(unit whichUnit, item whichItem)
     {
       SetItemPosition(whichItem, GetUnitX(whichUnit), GetUnitY(whichUnit));
