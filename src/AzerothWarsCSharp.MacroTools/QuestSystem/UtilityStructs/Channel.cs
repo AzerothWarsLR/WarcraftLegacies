@@ -12,8 +12,8 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
   {
     private const string EFFECT = "Abilities\\Spells\\Other\\Drain\\ManaDrainCaster.mdl";
     private const string PROGRESS_EFFECT = "war3mapImported\\Progressbar10sec.mdx";
-    private const float PROGRESS_SCALE = 15;
-    private const float PROGRESS_HEIGHT = 285;
+    private const float PROGRESS_SCALE = 1.5f;
+    private const float PROGRESS_HEIGHT = 285f;
     private const float PERIOD = 0.15f;
 
     private bool _disposed;
