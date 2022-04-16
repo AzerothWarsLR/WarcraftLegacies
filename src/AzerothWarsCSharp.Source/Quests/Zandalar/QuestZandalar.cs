@@ -1,28 +1,35 @@
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
-using static War3Api.Common; using static War3Api.Blizzard;
+using AzerothWarsCSharp.MacroTools.Wrappers;
+using WCSharp.Shared.Data;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Quests.Zandalar
 {
   public sealed class QuestZandalar : QuestData
   {
-    private static readonly int QuestResearchId = FourCC("R04W"); //This research is given when the quest is completed
+    private readonly List<unit> _rescueUnits = new();
 
-    public QuestZandalar() : base("City of Gold", "We need to regain control of our land.",
+    public QuestZandalar(Rectangle rescueRect) : base("City of Gold", "We need to regain control of our land.",
       "ReplaceableTextures\\CommandButtons\\BTNBloodTrollMage.blp")
     {
-      this.AddQuestItem(new QuestItemResearch(FourCC("R04R"), FourCC("o03Z")));
-      this.AddQuestItem(new QuestItemUpgrade(FourCC("o03Z"), FourCC("o03Y")));
+      AddQuestItem(new QuestItemResearch(FourCC("R04R"), FourCC("o03Z")));
+      AddQuestItem(new QuestItemUpgrade(FourCC("o03Z"), FourCC("o03Y")));
       AddQuestItem(new QuestItemExpire(900));
       AddQuestItem(new QuestItemSelfExists());
-      ResearchId = QuestResearchId;
-      ;
-      ;
+      ResearchId = FourCC("R04W");
+
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        {
+          SetUnitInvulnerable(unit, true);
+          _rescueUnits.Add(unit);
+        }
     }
-
-
+    
     protected override string CompletionPopup =>
       "The City of Gold is now yours to command and has joined the " + Holder.Team.Name + ".";
 
@@ -31,18 +38,13 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 
     protected override void OnFail()
     {
-      RescueNeutralUnitsInRect(Regions.ZandalarUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
     {
-      RescueNeutralUnitsInRect(Regions.ZandalarUnlock.Rect, Holder.Player);
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
       if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\ZandalarTheme.mp3");
-    }
-
-    protected override void OnAdd()
-    {
-      Holder.ModObjectLimit(QuestResearchId, 1);
     }
   }
 }

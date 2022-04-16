@@ -1,7 +1,10 @@
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup.Legends;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 using static War3Api.Blizzard;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
@@ -11,9 +14,9 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
   public sealed class QuestLiberateLordaeron : QuestData
   {
     private static readonly int QuestResearchId = FourCC("R07P"); //This research is given when the quest is completed
+    private readonly List<unit> _rescueUnits = new();
 
-
-    public QuestLiberateLordaeron() : base("Liberation of Lordaeron",
+    public QuestLiberateLordaeron(Rectangle rescueRect) : base("Liberation of Lordaeron",
       "The lands of Lordaeron are overrun by corruption. Everything must be purged!",
       "ReplaceableTextures\\CommandButtons\\BTNNorthrendCastle.blp")
     {
@@ -24,8 +27,13 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01M"))));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = QuestResearchId;
-      ;
-      ;
+
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        {
+          SetUnitInvulnerable(unit, true);
+          _rescueUnits.Add(unit);
+        }
     }
 
 
@@ -36,7 +44,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
 
     protected override void OnComplete()
     {
-      RescueNeutralUnitsInRect(Regions.ScarletHarbor.Rect, Holder.Player);
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
       KillNeutralHostileUnitsInRadius(4152, 16521, 2300);
       KillNeutralHostileUnitsInRadius(-2190, 16803, 700);
       CreateStructureForced(Holder.Player, FourCC("h08J"), -5133152, 1667969, 4757993 * bj_RADTODEG, 256);

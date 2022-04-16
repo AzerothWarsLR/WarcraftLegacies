@@ -1,7 +1,10 @@
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup.Legends;
+using WCSharp.Shared.Data;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 
@@ -9,9 +12,9 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 {
   public sealed class QuestDrakUnlock : QuestData
   {
-    private static readonly int QuestResearchId = FourCC("R08J");
+    private readonly List<unit> _rescueUnits = new();
 
-    public QuestDrakUnlock() : base(
+    public QuestDrakUnlock(Rectangle rescueRect) : base(
       "Draktharon's Keep", "Drak'tharon's Keep will be the place for an outpost by the sea.",
       "ReplaceableTextures\\CommandButtons\\BTNUndeadShipyard.blp")
     {
@@ -19,11 +22,15 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendDraktharonkeep, false));
       AddQuestItem(new QuestItemExpire(1140));
       AddQuestItem(new QuestItemSelfExists());
-      ResearchId = QuestResearchId;
-      ;
-      ;
-    }
+      ResearchId = FourCC("R08J");
 
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        {
+          SetUnitInvulnerable(unit, true);
+          _rescueUnits.Add(unit);
+        }
+    }
 
     protected override string CompletionPopup => "DrakFourCC(taron Keep is now under the control of the Scourge.";
 
@@ -31,12 +38,12 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override void OnFail()
     {
-      RescueNeutralUnitsInRect(Regions.DrakUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
     {
-      RescueNeutralUnitsInRect(Regions.DrakUnlock.Rect, Holder.Player);
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
     }
   }
 }

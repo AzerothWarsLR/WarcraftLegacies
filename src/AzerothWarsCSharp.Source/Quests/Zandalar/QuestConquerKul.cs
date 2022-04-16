@@ -1,7 +1,7 @@
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Zandalar
@@ -10,7 +10,16 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
   {
     private static readonly int QuestResearchId = FourCC("R08D");
 
-    protected override string CompletionPopup => "Before setting sails we need to conquer KulFourCC(tiras";
+    public QuestConquerKul() : base("Conquer Boralus",
+      "The Kul'tiran people and their fleet have been a threat to the Zandalari Empire for ages, it is time to put them to rest.",
+      "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp")
+    {
+      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendDazaralor, true));
+      AddQuestItem(new QuestItemLegendDead(LegendKultiras.LegendBoralus));
+      ResearchId = QuestResearchId;
+    }
+
+    protected override string CompletionPopup => "Before setting sails we need to conquer Kul'tiras";
 
     protected override string RewardDescription => "Unlock shipyards";
 
@@ -27,22 +36,15 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       u = FirstOfGroup(tempGroup);
       while (true)
       {
-        if (u == null)
-        {
-          break;
-        }
+        if (u == null) break;
 
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE) ||
             GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_AGGRESSIVE))
         {
           if (IsUnitType(u, UNIT_TYPE_HERO))
-          {
             KillUnit(u);
-          }
           else
-          {
             UnitRescue(u, Holder.Player);
-          }
         }
 
         GroupRemoveUnit(tempGroup, u);
@@ -50,15 +52,6 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       }
 
       DestroyGroup(tempGroup);
-    }
-
-    public QuestConquerKul() : base("Conquer Boralus",
-      "The Kul'tiran people and their fleet have been a threat to the Zandalari Empire for ages, it is time to put them to rest.",
-      "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp")
-    {
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendDazaralor, true));
-      AddQuestItem(new QuestItemLegendDead(LegendKultiras.LegendBoralus));
-      ResearchId = QuestResearchId;
     }
   }
 }

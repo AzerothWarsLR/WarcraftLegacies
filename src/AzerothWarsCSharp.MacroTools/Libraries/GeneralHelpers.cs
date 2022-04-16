@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
         ".................................!.#$%&'()*+,-./0123456789:;<=>.@ABCDEFGHIJKLMNOPQRSTUVWXYZ[.]^_`abcdefghijklmnopqrstuvwxyz{|}~.................................................................................................................................";
       string result = "";
       var remainingValue = value;
-      
+
       for (var i = 0; i < 5; i++)
       {
         var charValue = ModuloInteger(remainingValue, 256);
@@ -30,10 +30,7 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
 
     public static IEnumerable<player> GetAllPlayers()
     {
-      for (var i = 0; i < bj_MAX_PLAYERS; i++)
-      {
-        yield return Player(i);
-      }
+      for (var i = 0; i < bj_MAX_PLAYERS; i++) yield return Player(i);
     }
 
     public static int GetUnitAverageDamage(unit whichUnit, int weaponIndex)
@@ -57,16 +54,11 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
       while (true)
       {
         unit u = FirstOfGroup(TempGroup);
-        if (u == null)
-        {
-          break;
-        }
+        if (u == null) break;
 
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !IsUnitType(u, UNIT_TYPE_SAPPER) &&
             !IsUnitType(u, UNIT_TYPE_STRUCTURE))
-        {
           KillUnit(u);
-        }
 
         GroupRemoveUnit(TempGroup, u);
       }
@@ -79,10 +71,7 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
       while (true)
       {
         unit u = FirstOfGroup(TempGroup);
-        if (u == null)
-        {
-          break;
-        }
+        if (u == null) break;
 
         if (IsUnitType(u, UNIT_TYPE_STRUCTURE))
         {
@@ -112,10 +101,7 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
       var i = 0;
       while (true)
       {
-        if (i == count)
-        {
-          break;
-        }
+        if (i == count) break;
 
         CreateUnit(whichPlayer, unitId, x, y, face);
         i = i + 1;
@@ -150,11 +136,11 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
       SetHeroInt(whichUnit, GetHeroInt(whichUnit, false) + intelligence, true);
 
       string sfx;
-      if (str > 0 && (agi == 0 && intelligence == 0))
+      if (str > 0 && agi == 0 && intelligence == 0)
         sfx = "Abilities\\Spells\\Items\\AIsm\\AIsmTarget.mdl";
-      else if (str == 0 && (agi > 0 && intelligence == 0))
+      else if (str == 0 && agi > 0 && intelligence == 0)
         sfx = "Abilities\\Spells\\Items\\AIam\\AIamTarget.mdl";
-      else if (str == 0 && (agi == 0 && intelligence > 0))
+      else if (str == 0 && agi == 0 && intelligence > 0)
         sfx = "Abilities\\Spells\\Items\\AIim\\AIimTarget.mdl";
       else
         sfx = "Abilities\\Spells\\Items\\AIlm\\AIlmTarget.mdl";
@@ -177,10 +163,7 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
       while (true)
       {
         unit u = FirstOfGroup(tempGroup);
-        if (u == null)
-        {
-          break;
-        }
+        if (u == null) break;
 
         UnitRescue(u, whichPlayer);
         GroupRemoveUnit(tempGroup, u);
@@ -196,38 +179,9 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
       while (true)
       {
         unit u = FirstOfGroup(tempGroup);
-        if (u == null)
-        {
-          break;
-        }
+        if (u == null) break;
 
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-        {
-          UnitRescue(u, whichPlayer);
-        }
-
-        GroupRemoveUnit(tempGroup, u);
-      }
-
-      DestroyGroup(tempGroup);
-    }
-
-    public static void RescueNeutralUnitsInRect(rect whichRect, player whichPlayer)
-    {
-      group tempGroup = CreateGroup();
-      GroupEnumUnitsInRect(tempGroup, whichRect, null);
-      while (true)
-      {
-        unit u = FirstOfGroup(tempGroup);
-        if (u == null)
-        {
-          break;
-        }
-
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          UnitRescue(u, whichPlayer);
-        }
+        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_AGGRESSIVE)) UnitRescue(u, whichPlayer);
 
         GroupRemoveUnit(tempGroup, u);
       }
@@ -243,14 +197,11 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
       float ang = 0; //Radians
       while (true)
       {
-        if (i > 6)
-        {
-          break;
-        }
+        if (i > 6) break;
 
         var x = unitX + HERO_DROP_DIST * Cos(ang);
         var y = unitY + HERO_DROP_DIST * Sin(ang);
-        ang += (360 * bj_DEGTORAD) / 6;
+        ang += 360 * bj_DEGTORAD / 6;
         item dropItem = UnitItemInSlot(u, i);
         if (BlzGetItemBooleanField(dropItem, ITEM_BF_DROPPED_WHEN_CARRIER_DIES) ||
             BlzGetItemBooleanField(dropItem, ITEM_BF_CAN_BE_DROPPED))
@@ -268,10 +219,7 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
       var i = 0;
       while (true)
       {
-        if (i > 6)
-        {
-          break;
-        }
+        if (i > 6) break;
 
         UnitAddItem(receiver, UnitItemInSlot(sender, i));
         i = i + 1;

@@ -1,39 +1,21 @@
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
-using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using AzerothWarsCSharp.MacroTools.Wrappers;
+using WCSharp.Shared.Data;
+using static War3Api.Common;
+using static War3Api.Blizzard;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Warsong
 {
   public sealed class QuestLumberQuota : QuestData
   {
-    private readonly int _researchId = FourCC("R05O"); //This research is required to complete the quest
     private readonly int _questResearchId = FourCC("R05R"); //This research is given when the quest is completed
+    private readonly List<unit> _rescueUnits = new();
+    private readonly int _researchId = FourCC("R05O"); //This research is required to complete the quest
 
-    protected override string CompletionPopup => "Control of all units in Orgrimmar, able to train Varok";
-
-    protected override string RewardDescription => "Control of all units in Orgrimmar, able to train Varok";
-
-    protected override void OnComplete()
-    {
-      RescueNeutralUnitsInRect(Regions.Orgrimmar.Rect, Holder.Player);
-      if (GetLocalPlayer() == Holder.Player)
-      {
-        PlayThematicMusicBJ("war3mapImported\\OrgrimmarTheme.mp3");
-      }
-    }
-
-    protected override void OnFail()
-    {
-      RescueNeutralUnitsInRect(Regions.Orgrimmar.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
-    }
-
-    protected override void OnAdd()
-    {
-      Holder.ModObjectLimit(_researchId, 1);
-    }
-
-    public QuestLumberQuota() : base("To Tame a Land",
+    public QuestLumberQuota(Rectangle rescueRect) : base("To Tame a Land",
       "This new continent is ripe for opportunity, if (the Horde is going to survive, a new city needs to be built.",
       "ReplaceableTextures\\CommandButtons\\BTNFortress.blp")
     {
@@ -41,6 +23,33 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       AddQuestItem(new QuestItemExpire(1500));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = _questResearchId;
+
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        {
+          SetUnitInvulnerable(unit, true);
+          _rescueUnits.Add(unit);
+        }
+    }
+
+    protected override string CompletionPopup => "Control of all units in Orgrimmar, able to train Varok";
+
+    protected override string RewardDescription => "Control of all units in Orgrimmar, able to train Varok";
+
+    protected override void OnComplete()
+    {
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
+      if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\OrgrimmarTheme.mp3");
+    }
+
+    protected override void OnFail()
+    {
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+    }
+
+    protected override void OnAdd()
+    {
+      Holder.ModObjectLimit(_researchId, 1);
     }
   }
 }

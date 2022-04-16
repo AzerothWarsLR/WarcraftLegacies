@@ -1,7 +1,10 @@
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup.Legends;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.KulTiras
@@ -9,21 +12,29 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
   public sealed class QuestUnlockShip : QuestData
   {
     private readonly unit _proudmooreCapitalShip;
-    
-    protected override string FailurePopup =>
-      "Boralus has fallen, Katherine has escaped on the Proudmoore Capital Ship with a handful of Survivors.";
+    private readonly List<unit> _rescueUnits = new();
 
-    protected override string PenaltyDescription =>
-      "You lose everything you control, but you gain Katherine at the capital ship.";
-
-    public QuestUnlockShip(unit proudmooreCapitalShip) : base("The Zandalar Menace",
+    public QuestUnlockShip(Rectangle rescueRect, unit proudmooreCapitalShip) : base("The Zandalar Menace",
       "The Troll Empire of Zandalar is a danger to the safety of Kul'tiras and the Alliance. Before setting sail, we must eliminate them.",
       "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp")
     {
       AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendDazaralor, false));
       AddQuestItem(new QuestItemControlLegend(LegendKultiras.LegendBoralus, true));
       _proudmooreCapitalShip = proudmooreCapitalShip;
+
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        {
+          SetUnitInvulnerable(unit, true);
+          _rescueUnits.Add(unit);
+        }
     }
+
+    protected override string FailurePopup =>
+      "Boralus has fallen, Katherine has escaped on the Proudmoore Capital Ship with a handful of Survivors.";
+
+    protected override string PenaltyDescription =>
+      "You lose everything you control, but you gain Katherine at the capital ship.";
 
     protected override string CompletionPopup => "The Proudmoore capital ship is now ready to sails!";
 
@@ -32,7 +43,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 
     protected override void OnComplete()
     {
-      RescueNeutralUnitsInRect(Regions.ShipAmbient.Rect, Holder.Player);
+      foreach (var unit in _rescueUnits) GeneralHelpers.UnitRescue(unit, Holder.Player);
       PauseUnit(_proudmooreCapitalShip, false);
     }
 
@@ -46,7 +57,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
           GetUnitY(LegendKultiras.LegendKatherine.Unit)));
       if (GetLocalPlayer() == Holder.Player)
         SetCameraPosition(Regions.ShipAmbient.Center.X, Regions.ShipAmbient.Center.Y);
-      RescueNeutralUnitsInRect(Regions.ShipAmbient.Rect, Holder.Player);
+      foreach (var unit in _rescueUnits) GeneralHelpers.UnitRescue(unit, Holder.Player);
       PauseUnit(_proudmooreCapitalShip, true);
       SetUnitOwner(_proudmooreCapitalShip, Holder.Player, true);
     }

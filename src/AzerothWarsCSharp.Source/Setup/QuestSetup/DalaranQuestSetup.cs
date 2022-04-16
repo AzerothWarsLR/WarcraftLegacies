@@ -3,7 +3,6 @@ using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Quests.Dalaran;
 using AzerothWarsCSharp.Source.Quests.KulTiras;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
-
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
@@ -14,11 +13,11 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
     {
       var dalaran = DalaranSetup.Dalaran;
 
-      QuestNewGuardian newGuardian = new QuestNewGuardian();
-      QuestTheNexus theNexus = new QuestTheNexus();
-      QuestCrystalGolem crystalGolem = new QuestCrystalGolem();
-      QuestFallenGuardian fallenGuardian = new QuestFallenGuardian();
-      QuestSouthshore questSouthshore = new QuestSouthshore(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nmrm")));
+      QuestNewGuardian newGuardian = new();
+      QuestTheNexus theNexus = new();
+      QuestCrystalGolem crystalGolem = new();
+      QuestFallenGuardian fallenGuardian = new();
+      QuestSouthshore questSouthshore = new(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nmrm")));
 
       newGuardian.AddQuestItem(new QuestItemDontCompleteQuest(theNexus));
       crystalGolem.AddQuestItem(new QuestItemDontCompleteQuest(theNexus));
@@ -28,7 +27,8 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       //Early duel
       dalaran.AddQuest(questSouthshore);
       dalaran.StartingQuest = questSouthshore;
-      dalaran.AddQuest(new QuestShadowfang(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_O02J_WORGEN_GILNEAS)));
+      dalaran.AddQuest(new QuestShadowfang(Regions.ShadowfangUnlock,
+        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_O02J_WORGEN_GILNEAS)));
       dalaran.AddQuest(new QuestDalaran());
       dalaran.AddQuest(new QuestJainaSoulGem());
       dalaran.AddQuest(new QuestBlueDragons());

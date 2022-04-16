@@ -1,32 +1,40 @@
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using AzerothWarsCSharp.Source.Setup.Legends;
-using static War3Api.Common; using static War3Api.Blizzard;
+using WCSharp.Shared.Data;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 {
   /// <summary>
-  /// Frostwolf kills the Sea Witch. Thrall gets some boats to leave the Darkspear Isles.
-  /// Presently this ONLY deals with the final component of the event. The rest is done in GUI.
+  ///   Frostwolf kills the Sea Witch. Thrall gets some boats to leave the Darkspear Isles.
+  ///   Presently this ONLY deals with the final component of the event. The rest is done in GUI.
   /// </summary>
   public sealed class QuestSeaWitch : QuestData
   {
-    private static readonly int QuestResearchId = FourCC("R05H");
-
-
+    private readonly List<unit> _rescueUnits = new();
     private weathereffect? _storm;
 
-    public QuestSeaWitch() : base("Riders on the Storm",
+    public QuestSeaWitch(Rectangle rescueRect) : base("Riders on the Storm",
       "Warchief Thrall and his forces have been shipwrecked on the Darkspear Isles. Kill the Sea Witch there to give them a chance to rebuild their fleet and escape.",
       "ReplaceableTextures\\CommandButtons\\BTNGhost.blp")
     {
       AddQuestItem(new QuestItemKillUnit(LegendNeutral.LegendSeawitch.Unit));
       AddQuestItem(new QuestItemExpire(600));
-      ResearchId = QuestResearchId;
-    }
+      ResearchId = FourCC("R05H");
 
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        {
+          SetUnitInvulnerable(unit, true);
+          _rescueUnits.Add(unit);
+        }
+    }
 
     protected override string CompletionPopup =>
       "The sea witch Zar'jira has been slain. Thrall and Vol'jin can now set sail.";
@@ -36,14 +44,14 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
     protected override void OnFail()
     {
-      RescueNeutralUnitsInRect(Regions.EchoUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
     {
       group tempGroup = CreateGroup();
       //Transfer control of all passive units on island and teleport all Frostwolf units to shore
-      RescueNeutralUnitsInRect(Regions.CairneStart.Rect, Holder.Player);
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
       GroupEnumUnitsInRect(tempGroup, Regions.Darkspear_Island.Rect, null);
       while (true)
       {
@@ -60,12 +68,11 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       DestroyGroup(tempGroup);
       RemoveWeatherEffectBJ(_storm);
       CreateUnits(Holder.Player, FourCC("opeo"), -1818, -2070, 270, 3);
-      RescueNeutralUnitsInRect(Regions.EchoUnlock.Rect, Holder.Player);
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
     }
 
     protected override void OnAdd()
     {
-      Holder.ModObjectLimit(QuestResearchId, 1);
       if (_storm == null)
       {
         _storm = AddWeatherEffect(Regions.Darkspear_Island.Rect, FourCC("RAhr"));

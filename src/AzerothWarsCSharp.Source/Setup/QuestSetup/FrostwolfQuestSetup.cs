@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
     {
       var frostwolf = FrostwolfSetup.FACTION_FROSTWOLF;
 
-      QuestData newQuest = frostwolf.AddQuest(new QuestSeaWitch());
+      QuestData newQuest = frostwolf.AddQuest(new QuestSeaWitch(Regions.EchoUnlock));
       frostwolf.StartingQuest = newQuest;
       frostwolf.AddQuest(new QuestThunderBluff(Regions.ThunderBluff.Rect));
       frostwolf.AddQuest(new QuestStonemaul(Regions.StonemaulKeep));

@@ -1,14 +1,19 @@
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.Wrappers;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {
   public sealed class QuestShadowfang : QuestData
   {
-    public QuestShadowfang(unit worgenToKill) : base("Shadows of Silverspine Forest",
+    private readonly List<unit> _rescueUnits = new();
+
+    public QuestShadowfang(Rectangle rescueRect, unit worgenToKill) : base("Shadows of Silverspine Forest",
       "The woods of Silverspine are unsafe for travellers, they need to be investigated",
       "ReplaceableTextures\\CommandButtons\\BTNworgen.blp")
     {
@@ -16,6 +21,13 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01D"))));
       AddQuestItem(new QuestItemExpire(1444));
       AddQuestItem(new QuestItemSelfExists());
+
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        {
+          SetUnitInvulnerable(unit, true);
+          _rescueUnits.Add(unit);
+        }
     }
 
     protected override string CompletionPopup =>
@@ -25,12 +37,12 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     protected override void OnFail()
     {
-      RescueNeutralUnitsInRect(Regions.ShadowfangUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) GeneralHelpers.UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
     {
-      RescueNeutralUnitsInRect(Regions.ShadowfangUnlock.Rect, Holder.Player);
+      foreach (var unit in _rescueUnits) GeneralHelpers.UnitRescue(unit, Holder.Player);
     }
   }
 }

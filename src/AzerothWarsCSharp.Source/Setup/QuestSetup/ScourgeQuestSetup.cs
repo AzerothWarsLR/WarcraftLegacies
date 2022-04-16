@@ -9,9 +9,10 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
   {
     public static void Setup()
     {
-      QuestSpiderWar questSpiderWar = new(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_N074_QUEEN_NEZAR_AZRET));
+      QuestSpiderWar questSpiderWar = new(Regions.Ice_Crown,
+        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_N074_QUEEN_NEZAR_AZRET));
       QuestKelthuzad questKelthuzad = new();
-      QuestDrakUnlock questDrakUnlock = new();
+      QuestDrakUnlock questDrakUnlock = new(Regions.DrakUnlock);
       QuestPlague questPlague = new();
       QuestSapphiron questSapphiron = new(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_UBDR_SAPPHIRON_CREEP));
       QuestCorruptArthas questCorruptArthas = new();

@@ -1,7 +1,10 @@
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
+using WCSharp.Shared.Data;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 
@@ -10,8 +13,9 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
   public sealed class QuestKilsorrow : QuestData
   {
     private readonly unit _kilsorrowFortress;
+    private readonly List<unit> _rescueUnits = new();
 
-    public QuestKilsorrow(unit kilsorrowFortress) : base("Kil'sorrow Fortress",
+    public QuestKilsorrow(Rectangle rescueRect, unit kilsorrowFortress) : base("Kil'sorrow Fortress",
       "This sinister fortress will serve the Fel Horde well, clear the surrounding lands to establish it",
       "ReplaceableTextures\\CommandButtons\\BTNFelOrcWatchTower.blp")
     {
@@ -19,6 +23,13 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09X"))));
       AddQuestItem(new QuestItemExpire(1452));
       AddQuestItem(new QuestItemSelfExists());
+
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        {
+          SetUnitInvulnerable(unit, true);
+          _rescueUnits.Add(unit);
+        }
     }
 
     //Todo: bad flavour
@@ -30,12 +41,12 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 
     protected override void OnFail()
     {
-      RescueNeutralUnitsInRect(Regions.KilsorrowUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
     {
-      RescueNeutralUnitsInRect(Regions.KilsorrowUnlock.Rect, Holder.Player);
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
       UnitRescue(_kilsorrowFortress, FelHordeSetup.FactionFelHorde.Player);
     }
   }

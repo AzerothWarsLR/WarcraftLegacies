@@ -1,6 +1,9 @@
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.Wrappers;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 using static War3Api.Blizzard;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
@@ -10,8 +13,9 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
   public sealed class QuestSpiderWar : QuestData
   {
     private static readonly int QuestResearchId = FourCC("R03A");
+    private readonly List<unit> _rescueUnits = new();
 
-    public QuestSpiderWar(unit spiderQueen) : base("War of the Spider",
+    public QuestSpiderWar(Rectangle rescueRect, unit spiderQueen) : base("War of the Spider",
       "The proud Nerubians have declared war on the newly formed Lich King, destroy them to secure the continent of Northrend.",
       "ReplaceableTextures\\CommandButtons\\BTNNerubianQueen.blp")
     {
@@ -19,25 +23,32 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08D"))));
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00G"))));
       AddQuestItem(new QuestItemKillUnit(spiderQueen));
-      AddQuestItem(new QuestItemUpgrade(FourCC("unpl"), FourCC("unpl")));
+      AddQuestItem(new QuestItemUpgrade(FourCC("unp2"), FourCC("unp1")));
       AddQuestItem(new QuestItemExpire(1480));
       AddQuestItem(new QuestItemSelfExists());
+
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        {
+          SetUnitInvulnerable(unit, true);
+          _rescueUnits.Add(unit);
+        }
     }
 
     protected override string CompletionPopup =>
       "Northrend and the Icecrown Citadel is now under full control of the Lich King and the " + Holder.Team.Name + ".";
 
     protected override string RewardDescription =>
-      "Access to the Plague Research at the Frozen Throne, KelFourCC(tuzad and Rivendare trainable and a base in Icecrown";
+      "Access to the Plague Research at the Frozen Throne, Kel'thuzad and Rivendare trainable and a base in Icecrown";
 
     protected override void OnFail()
     {
-      RescueNeutralUnitsInRect(Regions.Ice_Crown.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
     {
-      RescueNeutralUnitsInRect(Regions.Ice_Crown.Rect, Holder.Player);
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
       SetPlayerTechResearched(Holder.Player, FourCC("R03A"), 1);
       if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\ScourgeTheme.mp3");
     }

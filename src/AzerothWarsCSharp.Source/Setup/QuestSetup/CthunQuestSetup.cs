@@ -1,7 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.Source.Quests.Cthun;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
-
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
@@ -11,7 +10,8 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
     public static void Setup()
     {
       var cthun = CthunSetup.FactionCthun;
-      cthun.StartingQuest = cthun.AddQuest(new QuestTitanJailors(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_H03V_ENTRANCE_PORTAL)));
+      cthun.StartingQuest = cthun.AddQuest(new QuestTitanJailors(Regions.TunnelUnlock,
+        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_H03V_ENTRANCE_PORTAL)));
       cthun.AddQuest(new QuestAwakenCthun(PreplacedUnitSystem.GetUnitByUnitType(FourCC("U00R"))));
       cthun.AddQuest(new QuestEndlessRanks());
       cthun.AddQuest(new QuestGatesofAhnqiraj(

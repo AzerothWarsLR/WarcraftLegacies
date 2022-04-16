@@ -1,20 +1,23 @@
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
-
-using static War3Api.Common; using static War3Api.Blizzard;
+using WCSharp.Shared.Data;
+using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Quests.Scarlet
 {
   public sealed class QuestMonastery : QuestData
   {
     private static readonly int UnleashTheCrusadeResearchId = FourCC("R03P");
-
+    private readonly List<unit> _rescueUnits = new();
     private readonly unit _scarletMonastery;
-    
-    public QuestMonastery(unit scarletMonastery) : base("The Secret Cloister",
+
+    public QuestMonastery(Rectangle rescueRect, unit scarletMonastery) : base("The Secret Cloister",
       "The Scarlet Monastery is the perfect place for the secret base of the Scarlet Crusade.",
       "ReplaceableTextures\\CommandButtons\\BTNDivine_Reckoning_Icon.blp")
     {
@@ -23,6 +26,13 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = Constants.UPGRADE_R03F_QUEST_COMPLETED_UNLEASH_THE_CRUSADE;
       Global = true;
+
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        {
+          SetUnitInvulnerable(unit, true);
+          _rescueUnits.Add(unit);
+        }
     }
 
     //Todo: bad flavour
@@ -31,10 +41,10 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
 
     protected override string RewardDescription =>
       "Control of all units in the Scarlet Monastery and you will unally the alliance";
-    
+
     protected override void OnFail()
     {
-      RescueNeutralUnitsInRect(Regions.ScarletAmbient.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) GeneralHelpers.UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
@@ -42,7 +52,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       SetPlayerTechResearched(KultirasSetup.FACTION_KULTIRAS.Player, FourCC("R06V"), 1);
       SetPlayerTechResearched(LordaeronSetup.FactionLordaeron.Player, FourCC("R06V"), 1);
       SetPlayerTechResearched(ScarletSetup.FactionScarlet.Player, FourCC("R086"), 1);
-      RescueNeutralUnitsInRect(Regions.ScarletAmbient.Rect, Holder.Player);
+      foreach (var unit in _rescueUnits) GeneralHelpers.UnitRescue(unit, Holder.Player);
       WaygateActivateBJ(true, _scarletMonastery);
       WaygateSetDestination(_scarletMonastery, Regions.ScarletMonastery.Center.X, Regions.ScarletMonastery.Center.Y);
       Holder.Team = TeamSetup.ScarletCrusade;

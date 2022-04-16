@@ -1,7 +1,10 @@
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup.Legends;
+using WCSharp.Shared.Data;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 using static War3Api.Blizzard;
@@ -10,7 +13,9 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
 {
   public sealed class QuestAstranaar : QuestData
   {
-    public QuestAstranaar() : base("Astranaar Stronghold",
+    private readonly List<unit> _rescueUnits = new();
+
+    public QuestAstranaar(List<Rectangle> rescueRects) : base("Astranaar Stronghold",
       "Darkshore is under attack by some Murloc. We should deal with them swiftly and){ make for the Astranaar Outpost. Clearing the Murlocs will also reestablish communication with Darnassus.",
       "ReplaceableTextures\\CommandButtons\\BTNMurloc.blp")
     {
@@ -19,6 +24,14 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02U"))));
       AddQuestItem(new QuestItemExpire(1430));
       AddQuestItem(new QuestItemSelfExists());
+
+      foreach (var rectangle in rescueRects)
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rectangle.Rect).EmptyToList())
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        {
+          SetUnitInvulnerable(unit, true);
+          _rescueUnits.Add(unit);
+        }
     }
 
     protected override string CompletionPopup =>
@@ -28,16 +41,16 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
 
     protected override void OnFail()
     {
-      RescueNeutralUnitsInRect(Regions.AstranaarUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      RescueNeutralUnitsInRect(Regions.TeldrassilUnlock1.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      RescueNeutralUnitsInRect(Regions.TeldrassilUnlock2.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
     {
-      RescueNeutralUnitsInRect(Regions.AstranaarUnlock.Rect, Holder.Player);
-      RescueNeutralUnitsInRect(Regions.TeldrassilUnlock1.Rect, Holder.Player);
-      RescueNeutralUnitsInRect(Regions.TeldrassilUnlock2.Rect, Holder.Player);
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
       AdjustPlayerStateBJ(200, Holder.Player, PLAYER_STATE_RESOURCE_LUMBER);
       AdjustPlayerStateBJ(100, Holder.Player, PLAYER_STATE_RESOURCE_GOLD);
     }

@@ -1,17 +1,21 @@
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.Wrappers;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Cthun
 {
   public sealed class QuestTitanJailors : QuestData
   {
+    private readonly List<unit> _rescueUnits = new();
     private readonly unit _waygate;
 
-    public QuestTitanJailors(unit waygate) : base("Jailors of the Old God",
+    public QuestTitanJailors(Rectangle rescueRect, unit waygate) : base("Jailors of the Old God",
       "The Old God C'thun is imprisoned deep within the temple of Ahn'qiraj, defended by mechanical wardens left behind by the Titans.",
       "ReplaceableTextures\\CommandButtons\\BTNArmorGolem.blp")
     {
@@ -22,6 +26,13 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = FourCC("R07B");
       _waygate = waygate;
+
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        {
+          SetUnitInvulnerable(unit, true);
+          _rescueUnits.Add(unit);
+        }
     }
 
     protected override string CompletionPopup =>
@@ -39,13 +50,13 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
 
     protected override void OnFail()
     {
-      RescueNeutralUnitsInRect(Regions.TunnelUnlock.Rect, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) GeneralHelpers.UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
       ActivateWaygate();
     }
 
     protected override void OnComplete()
     {
-      RescueNeutralUnitsInRect(Regions.TunnelUnlock.Rect, Holder.Player);
+      foreach (var unit in _rescueUnits) GeneralHelpers.UnitRescue(unit, Holder.Player);
       ActivateWaygate();
     }
   }
