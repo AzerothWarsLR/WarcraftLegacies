@@ -30,6 +30,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
       CheatTime.Setup();
       CheatUncontrol.Setup();
       CheatVision.Setup();
+      CheatCompleteQuest.Setup();
     }
   }
 }

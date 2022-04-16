@@ -34,13 +34,13 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     ///   How much experience is transferred from heroes that leave the game.
     /// </summary>
     private const float XP_TRANSFER_PERCENT = 100;
-    
+
+    private readonly int _defeatedResearch;
+
     private readonly Dictionary<int, int> _objectLevels = new();
     private readonly Dictionary<int, int> _objectLimits = new();
     private readonly List<Power> _powers = new();
-    private readonly List<QuestData> _quests = new();
-    
-    private readonly int _defeatedResearch;
+    private readonly Dictionary<string, QuestData> _questsByName = new();
     private string _icon;
     private string _name;
     private player? _player;
@@ -169,7 +169,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         IconChanged?.Invoke(this, this);
       }
     }
-    
+
 
     /// <summary>
     ///   The <see cref="player" /> currently occupying this <see cref="Faction" />.
@@ -191,7 +191,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         //Todo: this seems a bit silly
         if (value == null) return;
 
-        if (value.GetFaction() != this) 
+        if (value.GetFaction() != this)
           value.SetFaction(this);
 
         Team?.AllyPlayer(value);
@@ -269,20 +269,20 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     //Adds this Faction's object limits and levels to its active Person
     private void ApplyObjects()
     {
-      foreach (var (key, value) in _objectLimits) 
+      foreach (var (key, value) in _objectLimits)
         Player?.ModObjectLimit(key, value);
 
-      foreach (var (key, value) in _objectLevels) 
+      foreach (var (key, value) in _objectLevels)
         Player?.SetObjectLevel(key, value);
     }
 
     //Removes this Faction's object limits and levels from its active Person
     private void UnapplyObjects()
     {
-      foreach (var (key, value) in _objectLimits) 
+      foreach (var (key, value) in _objectLimits)
         Player?.ModObjectLimit(key, -value);
 
-      foreach (var (key, value) in _objectLevels) 
+      foreach (var (key, value) in _objectLevels)
         Player?.SetObjectLevel(key, 0);
     }
 
@@ -324,14 +324,14 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         Team = newTeam;
       }
     }
-    
+
     /// <summary>
-    /// Shows all of the Faction's quest, rendering them in the quest log,
-    /// showing them on the minimap, and showing them on the map.
+    ///   Shows all of the Faction's quest, rendering them in the quest log,
+    ///   showing them on the minimap, and showing them on the map.
     /// </summary>
     private void ShowAllQuests()
     {
-      foreach (var quest in _quests)
+      foreach (var quest in _questsByName.Values)
       {
         if (GetLocalPlayer() == Player) quest.ShowLocal();
 
@@ -342,7 +342,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     //Hides all of the Faction)s quests.
     private void HideAllQuests()
     {
-      foreach (var quest in _quests)
+      foreach (var quest in _questsByName.Values)
       {
         if (GetLocalPlayer() == Player) quest.HideLocal();
 
@@ -353,7 +353,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public QuestData AddQuest(QuestData questData)
     {
       questData.Holder = this;
-      _quests.Add(questData);
+      _questsByName.Add(questData.Title, questData);
       if (GetLocalPlayer() == Player) questData.ShowLocal();
       questData.ShowSync();
       return questData;
@@ -519,6 +519,14 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public static void Setup()
     {
       PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, OnAnyResearch);
+    }
+
+    /// <summary>
+    ///   Attempts to retrieve a <see cref="QuestData" /> belonging to this <see cref="Faction" /> with the given title.
+    /// </summary>
+    public QuestData GetQuestByTitle(string parameter)
+    {
+      return _questsByName[parameter];
     }
   }
 }
