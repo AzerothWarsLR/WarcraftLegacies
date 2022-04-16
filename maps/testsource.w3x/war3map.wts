@@ -101,3 +101,8 @@ STRING 20
 Player 12
 }
 
+STRING 21
+{
+Force 2
+}
+

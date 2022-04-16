@@ -8,6 +8,7 @@ using CSharpLua;
 using Microsoft.CodeAnalysis;
 using War3Net.Build;
 using War3Net.Build.Extensions;
+using War3Net.Build.Info;
 using War3Net.IO.Mpq;
 using WCSharp.ConstantGenerator;
 
@@ -95,10 +96,12 @@ namespace AzerothWarsCSharp.Launcher
 
 			// Load existing map data
 			var map = Map.Open(baseMapPath);
+
+			SetTestPlayerSlot(map, 2);
 			var builder = new MapBuilder(map);
 			builder.AddFiles(baseMapPath, "*", SearchOption.AllDirectories);
 			builder.AddFiles(ASSETS_FOLDER_PATH, "*", SearchOption.AllDirectories);
-
+			
 			// Set debug options if necessary, configure compiler
 			const string csc = DEBUG ? "-debug -define:DEBUG" : null;
 			var csproj = Directory.EnumerateFiles(projectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
@@ -129,43 +132,56 @@ namespace AzerothWarsCSharp.Launcher
 			// Build w3x file
 			var archiveCreateOptions = new MpqArchiveCreateOptions
 			{
-				ListFileCreateMode = MpqFileCreateMode.Overwrite,
-				AttributesCreateMode = MpqFileCreateMode.Prune,
 				BlockSize = 3,
+				AttributesCreateMode = MpqFileCreateMode.Overwrite,
+				ListFileCreateMode = MpqFileCreateMode.Overwrite
 			};
-
+			
 			builder.Build(Path.Combine(OUTPUT_FOLDER_PATH, OUTPUT_MAP_NAME), archiveCreateOptions);
 
 			// Launch if that option was selected
 			if (launch)
 			{
-				var wc3exe = ConfigurationManager.AppSettings["wc3exe"];
-				if (File.Exists(wc3exe))
-				{
-					var commandLineArgs = new StringBuilder();
-					var isReforged = Version.Parse(FileVersionInfo.GetVersionInfo(wc3exe).FileVersion) >= new Version(1, 32);
-					if (isReforged)
-					{
-						commandLineArgs.Append(" -launch");
-					}
-					else
-					{
-						commandLineArgs.Append($" -graphicsapi {GRAPHICS_API}");
-					}
-
-					commandLineArgs.Append(" -nowfpause");
-
-					var mapPath = Path.Combine(OUTPUT_FOLDER_PATH, OUTPUT_MAP_NAME);
-					var absoluteMapPath = new FileInfo(mapPath).FullName;
-					commandLineArgs.Append($" -loadfile \"{absoluteMapPath}\"");
-
-					Process.Start(wc3exe, commandLineArgs.ToString());
-				}
-				else
-				{
-					throw new Exception("Please set wc3exe in Launcher/app.config to the path of your Warcraft III executable.");
-				}
+				LaunchGame();
 			}
+    }
+    
+    /// <summary>
+    /// Makes all players prior to the given player slot computers,
+    /// so that the given player slot is what the tester will play as when the map is launched.
+    /// </summary>
+    private static void SetTestPlayerSlot(Map map, int playerSlot)
+    {
+	    foreach (var player in map.Info.Players)
+	    {
+		    if (player.Id < playerSlot)
+		    {
+			    player.Controller = PlayerController.Computer;
+		    }
+	    }
+    }
+    
+    private static void LaunchGame()
+    {
+	    var wc3Exe = ConfigurationManager.AppSettings["wc3exe"];
+	    if (File.Exists(wc3Exe))
+	    {
+		    var commandLineArgs = new StringBuilder();
+		    var isReforged = Version.Parse(FileVersionInfo.GetVersionInfo(wc3Exe).FileVersion) >= new Version(1, 32);
+		    commandLineArgs.Append(isReforged ? " -launch" : $" -graphicsapi {GRAPHICS_API}");
+
+		    commandLineArgs.Append(" -nowfpause");
+
+		    var mapPath = Path.Combine(OUTPUT_FOLDER_PATH, OUTPUT_MAP_NAME);
+		    var absoluteMapPath = new FileInfo(mapPath).FullName;
+		    commandLineArgs.Append($" -loadfile \"{absoluteMapPath}\"");
+
+		    Process.Start(wc3Exe, commandLineArgs.ToString());
+	    }
+	    else
+	    {
+		    throw new Exception("Please set wc3exe in Launcher/app.config to the path of your Warcraft III executable.");
+	    }
     }
   }
 }
