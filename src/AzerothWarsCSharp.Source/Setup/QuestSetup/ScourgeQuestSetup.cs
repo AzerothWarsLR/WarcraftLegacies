@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       QuestPlague questPlague = new();
       QuestSapphiron questSapphiron = new(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_UBDR_SAPPHIRON_CREEP));
       QuestCorruptArthas questCorruptArthas = new();
-      QuestNaxxramas questNaxxramas = new(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_E013_NAXXRAMAS_SCOURGE));
+      QuestNaxxramas questNaxxramas = new(Regions.NaxxramasInside, PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_E013_NAXXRAMAS_SCOURGE));
       QuestCivilWar questCivilWar = new();
       QuestLichKingArthas questLichKingArthas =
         new(PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE));
