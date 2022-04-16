@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n017"))));
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n014"))));
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n013"))));
-      AddQuestItem(new QuestItemUpgrade(FourCC("h07E"), FourCC("h07E")));
+      AddQuestItem(new QuestItemUpgrade(FourCC("h07G"), FourCC("h07E")));
       AddQuestItem(new QuestItemExpire(1462));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = FourCC("R043");
