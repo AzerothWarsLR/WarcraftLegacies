@@ -27,6 +27,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       TriggerAddAction(_exitsRect.Trigger, OnRegionExit);
       PingPath = "MinimapQuestTurnIn";
       ShowsInQuestLog = true;
+      DisplaysPosition = true;
     }
 
     public override Point Position => new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
