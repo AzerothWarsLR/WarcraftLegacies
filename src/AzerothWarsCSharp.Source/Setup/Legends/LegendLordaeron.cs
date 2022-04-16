@@ -70,8 +70,6 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         PlayerColor = PLAYER_COLOR_LIGHT_BLUE,
         StartingXp = 1000
       };
-      LegendUther.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("h000")));
-      LegendUther.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nico")));
       Legend.Register(LegendUther);
 
       LegendArthas = new Legend
@@ -79,8 +77,6 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         UnitType = FourCC("Hart"),
         PlayerColor = PLAYER_COLOR_BLUE,
       };
-      LegendArthas.AddUnitDependency(LegendStratholme.Unit);
-      LegendArthas.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nico")));
       Legend.Register(LegendArthas);
     }
   }

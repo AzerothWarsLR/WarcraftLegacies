@@ -4,6 +4,7 @@ using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
+using AzerothWarsCSharp.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
@@ -44,6 +45,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       {
         UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
+      LegendLordaeron.LegendArthas.AddUnitDependency(LegendLordaeron.LegendStratholme.Unit);
     }
 
     protected override void OnComplete()
@@ -52,6 +54,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       {
         UnitRescue(unit, Holder.Player);
       }
+      LegendLordaeron.LegendArthas.AddUnitDependency(LegendLordaeron.LegendStratholme.Unit);
     }
   }
 }

@@ -43,6 +43,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     protected override void OnFail()
     {
       foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      LegendLordaeron.LegendUther.AddUnitDependency(LegendLordaeron.LegendCapitalpalace.Unit);
     }
 
     protected override void OnComplete()
@@ -51,6 +52,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       SetUnitInvulnerable(_unitToMakeInvulnerable, true);
       if (GetLocalPlayer() == Holder.Player)
         PlayThematicMusicBJ("war3mapImported\\CapitalCity.mp3");
+      LegendLordaeron.LegendUther.AddUnitDependency(LegendLordaeron.LegendCapitalpalace.Unit);
     }
   }
 }
