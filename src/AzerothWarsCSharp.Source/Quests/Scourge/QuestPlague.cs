@@ -26,12 +26,11 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     protected override void OnComplete()
     {
       Holder.ModObjectLimit(ResearchId, -Faction.UNLIMITED);
-      //TriggerExecute(gg_trg_Plague_Actions);
     }
 
     protected override void OnAdd()
     {
-      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
+      Holder.ModObjectLimit(FourCC("u000"), Faction.UNLIMITED);
     }
   }
 }
