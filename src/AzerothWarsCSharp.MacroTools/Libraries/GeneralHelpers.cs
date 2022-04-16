@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
   public static class GeneralHelpers
   {
     private const float HERO_DROP_DIST = 50; //The radius in which heroes spread out items when they drop them
-    private static force _destForce = CreateForce();
+    private static readonly force _destForce = CreateForce();
     private static readonly group TempGroup = CreateGroup();
     private static readonly rect TempRect = Rect(0, 0, 0, 0);
 
@@ -40,9 +40,9 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
       float sidesPerDie = BlzGetUnitDiceSides(whichUnit, weaponIndex);
       return R2I(baseDamage + (numberOfDice + sidesPerDie * numberOfDice) / 2);
     }
-    
+
     /// <summary>
-    /// Gets a units physical damage reduction as a percentage. Only takes armor into account.
+    ///   Gets a units physical damage reduction as a percentage. Only takes armor into account.
     /// </summary>
     public static float GetUnitDamageReduction(unit whichUnit)
     {
@@ -145,7 +145,7 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
     }
 
     /// <summary>
-    /// Reveals the unit, makes it vulnerable, and transfers its ownership to the specified player.
+    ///   Reveals the unit, makes it vulnerable, and transfers its ownership to the specified player.
     /// </summary>
     public static void UnitRescue(unit whichUnit, player whichPlayer)
     {
@@ -156,7 +156,7 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
     }
 
     /// <summary>
-    /// Drops a units entire inventory on the ground.
+    ///   Drops a units entire inventory on the ground.
     /// </summary>
     public static void UnitDropAllItems(unit u)
     {
@@ -181,14 +181,11 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
 
     public static void UnitTransferItems(unit sender, unit receiver)
     {
-      for (var i = 0; i < 6; i++)
-      {
-        UnitAddItem(receiver, UnitItemInSlot(sender, i));
-      }
+      for (var i = 0; i < 6; i++) UnitAddItem(receiver, UnitItemInSlot(sender, i));
     }
-    
+
     /// <summary>
-    /// Add an item to a unit. If the unit's inventory is full, drop it on the ground near them instead.
+    ///   Add an item to a unit. If the unit's inventory is full, drop it on the ground near them instead.
     /// </summary>
     public static void UnitAddItemSafe(unit whichUnit, item whichItem)
     {
