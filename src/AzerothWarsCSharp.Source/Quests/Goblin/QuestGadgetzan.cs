@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -16,6 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
       "The city of Gadgetzan is a perfect foothold into Kalimdor.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroAlchemist.blp")
     {
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n05C"))));
       AddQuestItem(new QuestItemExpire(1522));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = FourCC("R07E");
