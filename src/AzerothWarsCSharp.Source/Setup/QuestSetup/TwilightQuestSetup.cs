@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
     public static void Setup()
     {
       var twilight = TwilightSetup.FACTION_TWILIGHT;
-      twilight.StartingQuest = twilight.AddQuest(new QuestDragonmawPort());
+      twilight.StartingQuest = twilight.AddQuest(new QuestDragonmawPort(Regions.DragonmawUnlock));
       twilight.AddQuest(new QuestGrimBatol(Regions.Grim_Batol,
         PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_N08R_GRIM_BATOL_TUNNELS),
         PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_N08R_GRIM_BATOL_TUNNELS),
