@@ -13,10 +13,10 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
     private static readonly int RavagerId = FourCC("o021");
 
     protected override string CompletionPopup =>
-      "ZulFourCC(Gurub has fallen. The Gurubashi trolls lend their might to the " + Holder.Team.Name + ".";
+      "Zul'gurub has fallen. The Gurubashi trolls lend their might to the " + Holder.Team.Name + ".";
 
     protected override string RewardDescription =>
-      "Control of Zul'Gurub, 300 gold tribute and the ability to train " + GetObjectName(RavagerId) + "s from the " +
+      "300 gold and the ability to train " + GetObjectName(RavagerId) + "s from the " +
       GetObjectName(TrollShrineId);
 
     protected override void OnComplete()

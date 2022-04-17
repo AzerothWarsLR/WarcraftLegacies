@@ -11,13 +11,12 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
     private static readonly int GundrakResearch = FourCC("R02Q");
     private static readonly int WarlordId = FourCC("nftk");
     private static readonly int TrollShrineId = FourCC("o04X");
-
-
+    
     protected override string CompletionPopup =>
       "Gundrak has fallen. The Drakkari trolls lend their might to the " + this.Holder.Team.Name;
 
     protected override string RewardDescription =>
-      $"Control of Gundrak, 300 gold tribute and the ability to train {GetObjectName(WarlordId)}s from the {GetObjectName(TrollShrineId)}.";
+      $"300 gold and the ability to train {GetObjectName(WarlordId)}s from the {GetObjectName(TrollShrineId)}.";
 
     protected override void OnComplete()
     {
