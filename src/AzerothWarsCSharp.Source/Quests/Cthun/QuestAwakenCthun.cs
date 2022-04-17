@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -17,8 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
 
     protected override void OnComplete()
     {
-      SetUnitInvulnerable(_cthun, false);
-      PauseUnit(_cthun, false);
+      GeneralHelpers.UnitRescue(_cthun, Holder.Player);
     }
     
     public QuestAwakenCthun(unit cthun) : base("The Awakening of C'thun",
@@ -28,6 +28,8 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
       _cthun = cthun;
       AddQuestItem(new QuestItemChannelRect(Regions.CthunSummon, "C'thun", LegendCthun.legendSkeram, 420, 270));
       ResearchId = FourCC("R06A");
+      SetUnitInvulnerable(_cthun, true);
+      PauseUnit(_cthun, true);
     }
   }
 }
