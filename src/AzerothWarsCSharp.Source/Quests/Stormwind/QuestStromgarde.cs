@@ -1,10 +1,12 @@
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.ArtifactSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup;
-
+using WCSharp.Shared.Data;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Stormwind
@@ -12,10 +14,10 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
   public sealed class QuestStromgarde : QuestData
   {
     private static readonly int HeroId = FourCC("H00Z");
-
     private readonly QuestItemAnyUnitInRect _questItemAnyUnitInRect;
+    private readonly List<unit> _rescueUnits = new();
 
-    public QuestStromgarde() : base("Stromgarde",
+    public QuestStromgarde(Rectangle rescueRect) : base("Stromgarde",
       "Although Stromgarde's strength has dwindled since the days of the Arathorian Empire, it remains a significant bastion of humanity. They could be convinced to mobilize their forces for Stormwind.",
       "ReplaceableTextures\\CommandButtons\\BTNTheCaptain.blp")
     {
@@ -23,6 +25,12 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       AddQuestItem(_questItemAnyUnitInRect);
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = Constants.UPGRADE_R01M_QUEST_COMPLETED_STROMGARDE_STORMWIND;
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        {
+          SetUnitInvulnerable(unit, true);
+          _rescueUnits.Add(unit);
+        }
     }
 
     protected override string CompletionPopup => "Galen Trollbane has pledged his forces to Stormwind's cause.";
@@ -30,36 +38,18 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     protected override string RewardDescription =>
       "Control of all units at Stromgarde, the artifact Trol'kalar, and you can summon the hero Galen Trollbane from the Altar of Kings";
 
-    private static void GiveStromgarde(player whichPlayer)
-    {
-      group tempGroup = CreateGroup();
-      unit u;
-      //Transfer all Neutral Passive units in Stromgarde
-      GroupEnumUnitsInRect(tempGroup, Regions.Stromgarde.Rect, null);
-      while (true)
-      {
-        u = FirstOfGroup(tempGroup);
-        if (u == null) break;
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) UnitRescue(u, whichPlayer);
-        GroupRemoveUnit(tempGroup, u);
-      }
-
-      //Cleanup
-      DestroyGroup(tempGroup);
-    }
-
     protected override void OnFail()
     {
-      GiveStromgarde(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
       SetItemPosition(ArtifactSetup.ArtifactTrolkalar.Item, 140889, 12363);
       ArtifactSetup.ArtifactTrolkalar.Status = ArtifactStatus.Ground;
     }
 
     protected override void OnComplete()
     {
-      GiveStromgarde(Holder.Player);
       UnitAddItemSafe(_questItemAnyUnitInRect.TriggerUnit, ArtifactSetup.ArtifactTrolkalar.Item);
       SetPlayerTechResearched(Holder.Player, ResearchId, 1);
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
     }
 
     protected override void OnAdd()
