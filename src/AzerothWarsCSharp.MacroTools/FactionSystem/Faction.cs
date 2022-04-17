@@ -184,6 +184,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
           Team?.UnallyPlayer(Player);
           HideAllQuests();
           UnapplyObjects();
+          UnapplyPowers();
         }
 
         _player = value;
@@ -196,6 +197,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
         Team?.AllyPlayer(value);
         ApplyObjects();
+        ApplyPowers();
         ShowAllQuests();
       }
     }
@@ -231,6 +233,16 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
           foreach (var player in GetAllPlayers()) SetPlayerTechResearched(player, _defeatedResearch, 0);
         }
       }
+    }
+
+    private void ApplyPowers()
+    {
+      foreach (var power in _powers) power.OnAdd(Player);
+    }
+
+    private void UnapplyPowers()
+    {
+      foreach (var power in _powers) power.OnRemove(Player);
     }
 
     /// <summary>
@@ -292,6 +304,10 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public void AddPower(Power power)
     {
       _powers.Add(power);
+      if (Player != null)
+      {
+        power.OnAdd(Player);
+      }
       PowerAdded?.Invoke(this, new FactionPowerEventArgs(this, power));
     }
 
@@ -301,6 +317,10 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public void RemovePower(Power power)
     {
       _powers.Remove(power);
+      if (Player != null)
+      {
+        power.OnRemove(Player);
+      }
       PowerRemoved?.Invoke(this, new FactionPowerEventArgs(this, power));
     }
 

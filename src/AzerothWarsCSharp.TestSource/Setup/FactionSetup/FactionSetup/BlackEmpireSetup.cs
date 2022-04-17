@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Powers;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.TestSource.Setup.FactionSetup.FactionSetup
@@ -24,10 +25,15 @@ namespace AzerothWarsCSharp.TestSource.Setup.FactionSetup.FactionSetup
         "Waygate");
       BlackEmpire.AddPower(power);
 
-      power = new DummyPower("All-Seeing",
+      var visionPower = new VisionPower("All-Seeing",
         "Grants permanent vision over Northrend.",
-        "Charm");
-      BlackEmpire.AddPower(power);
+        "Charm", new[]
+        {
+          new Rectangle(100, 100, 0, 0),
+          new Rectangle(-100, -100, 0, 0),
+          new Rectangle(-813, -183, -460, 183)
+        });
+      BlackEmpire.AddPower(visionPower);
 
       FactionManager.Register(BlackEmpire);
     }

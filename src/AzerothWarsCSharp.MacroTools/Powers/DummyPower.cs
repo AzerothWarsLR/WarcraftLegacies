@@ -1,4 +1,5 @@
 ﻿using AzerothWarsCSharp.MacroTools.FactionSystem;
+using War3Api;
 
 namespace AzerothWarsCSharp.MacroTools.Powers
 {
@@ -9,6 +10,14 @@ namespace AzerothWarsCSharp.MacroTools.Powers
       Name = name;
       Description = description;
       IconName = iconName;
+    }
+
+    protected internal override void OnAdd(Common.player whichPlayer)
+    {
+    }
+
+    protected internal override void OnRemove(Common.player whichPlayer)
+    {
     }
   }
 }
