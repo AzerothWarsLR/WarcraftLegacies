@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       var druids = FactionSetup.DruidsSetup.factionDruids;
       QuestData newQuest = druids.AddQuest(new QuestMalfurionAwakens(Regions.Moonglade));
       druids.StartingQuest = newQuest;
-      druids.AddQuest(new QuestAshenvale());
+      druids.AddQuest(new QuestAshenvale(Regions.AshenvaleUnlock));
       druids.AddQuest(new QuestDruidsKillFrostwolf());
       druids.AddQuest(new QuestDruidsKillWarsong());
       druids.AddQuest(new QuestAndrassil());
