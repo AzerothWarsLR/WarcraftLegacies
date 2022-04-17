@@ -1,6 +1,9 @@
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.Wrappers;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 using static War3Api.Blizzard;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
@@ -9,9 +12,9 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {
   public sealed class QuestDalaran : QuestData
   {
-    private static readonly int QuestResearchId = FourCC("R038");
+    private readonly List<unit> _rescueUnits = new();
 
-    public QuestDalaran() : base("Outskirts",
+    public QuestDalaran(IEnumerable<Rectangle> rescueRects) : base("Outskirts",
       "The territories of Dalaran are fragmented, secure the lands and protect Dalaran citizens .",
       "ReplaceableTextures\\CommandButtons\\BTNArcaneCastle.blp")
     {
@@ -19,13 +22,19 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08M"))));
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n018"))));
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01I"))));
-      AddQuestItem(new QuestItemUpgrade(FourCC("h065"), FourCC("h065")));
+      AddQuestItem(new QuestItemUpgrade(FourCC("h068"), FourCC("h065")));
       AddQuestItem(new QuestItemExpire(1445));
       AddQuestItem(new QuestItemSelfExists());
-      ;
-      ;
-    }
+      ResearchId = Constants.UPGRADE_R038_QUEST_COMPLETED_OUTSKIRTS;
 
+      foreach (var rectangle in rescueRects)
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rectangle.Rect).EmptyToList())
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        {
+          SetUnitInvulnerable(unit, true);
+          _rescueUnits.Add(unit);
+        }
+    }
 
     protected override string CompletionPopup =>
       "Dalaran outskirs are now secure, the mages will join " + Holder.Team.Name + ".";
@@ -33,50 +42,15 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     protected override string RewardDescription =>
       "Control of all units in Dalaran and enables Antonidas to be trained at the Altar";
 
-    private void GrantDalaran(player whichPlayer)
-    {
-      group tempGroup = CreateGroup();
-      unit u;
-
-      //Transfer all Neutral Passive units in Dalaran
-      GroupEnumUnitsInRect(tempGroup, Regions.Dalaran.Rect, null);
-      u = FirstOfGroup(tempGroup);
-      while (true)
-      {
-        if (u == null) break;
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) UnitRescue(u, whichPlayer);
-        GroupRemoveUnit(tempGroup, u);
-        u = FirstOfGroup(tempGroup);
-      }
-
-      GroupEnumUnitsInRect(tempGroup, Regions.DalaranDungeon.Rect, null);
-      u = FirstOfGroup(tempGroup);
-      while (true)
-      {
-        if (u == null) break;
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) UnitRescue(u, whichPlayer);
-        GroupRemoveUnit(tempGroup, u);
-        u = FirstOfGroup(tempGroup);
-      }
-
-      DestroyGroup(tempGroup);
-    }
-
     protected override void OnFail()
     {
-      GrantDalaran(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
     {
-      SetPlayerTechResearched(Holder.Player, FourCC("R038"), 1);
-      GrantDalaran(Holder.Player);
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
       if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\DalaranTheme.mp3");
-    }
-
-    protected override void OnAdd()
-    {
-      Holder.ModObjectLimit(QuestResearchId, 1);
     }
   }
 }

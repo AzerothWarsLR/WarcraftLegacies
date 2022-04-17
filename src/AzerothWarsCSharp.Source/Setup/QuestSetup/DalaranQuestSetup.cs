@@ -7,7 +7,7 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
-  public class DalaranQuestSetup
+  public static class DalaranQuestSetup
   {
     public static void Setup()
     {
@@ -17,7 +17,8 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       QuestTheNexus theNexus = new();
       QuestCrystalGolem crystalGolem = new();
       QuestFallenGuardian fallenGuardian = new();
-      QuestSouthshore questSouthshore = new(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nmrm")));
+      QuestSouthshore questSouthshore =
+        new(Regions.SouthshoreUnlock, PreplacedUnitSystem.GetUnitByUnitType(FourCC("nmrm")));
 
       newGuardian.AddQuestItem(new QuestItemDontCompleteQuest(theNexus));
       crystalGolem.AddQuestItem(new QuestItemDontCompleteQuest(theNexus));
@@ -29,7 +30,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       dalaran.StartingQuest = questSouthshore;
       dalaran.AddQuest(new QuestShadowfang(Regions.ShadowfangUnlock,
         PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_O02J_WORGEN_GILNEAS)));
-      dalaran.AddQuest(new QuestDalaran());
+      dalaran.AddQuest(new QuestDalaran(new[] {Regions.Dalaran, Regions.DalaranDungeon}));
       dalaran.AddQuest(new QuestJainaSoulGem());
       dalaran.AddQuest(new QuestBlueDragons());
       //Misc
