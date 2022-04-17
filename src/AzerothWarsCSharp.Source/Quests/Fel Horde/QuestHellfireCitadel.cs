@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       AddQuestItem(new QuestItemLegendDead(LegendDraenei.LegendExodarship));
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01J"))));
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02N"))));
-      AddQuestItem(new QuestItemUpgrade(FourCC("o02Y"), FourCC("o02Y")));
+      AddQuestItem(new QuestItemUpgrade(FourCC("o030"), FourCC("o02Y")));
       AddQuestItem(new QuestItemExpire(1450));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = FourCC("R00P");
