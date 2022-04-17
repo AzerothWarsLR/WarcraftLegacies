@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 
       zandalar.StartingQuest = zandalar.AddQuest(new QuestZandalar(Regions.ZandalarUnlock));
       zandalar.AddQuest(new QuestConquerKul());
-      zandalar.AddQuest(new QuestZulfarrak());
+      zandalar.AddQuest(new QuestZulfarrak(Regions.Zulfarrak));
       zandalar.AddQuest(new QuestZulgurub());
       zandalar.AddQuest(new QuestGundrak());
       zandalar.AddQuest(new QuestJinthaAlor());
