@@ -23,6 +23,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       TriggerRegisterEnterRegion(_entersRect.Trigger, _target, null);
       TriggerAddAction(_entersRect.Trigger, OnRegionEnter);
       PingPath = "MinimapQuestTurnIn";
+      DisplaysPosition = true;
     }
 
     public override Point Position => new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
