@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Powers;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
@@ -84,6 +85,24 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       FactionScourge.ModObjectLimit(FourCC("Rusl"), Faction.UNLIMITED); //Skeletal Mastery
       FactionScourge.ModObjectLimit(FourCC("Rusm"), Faction.UNLIMITED); //Skeletal Longevity
 
+      //Powers
+      var visionPower = new VisionPower("All-Seeing",
+        "Grants permanent vision over Northrend.",
+        "Charm", new[]
+        {
+          Regions.Storm_Peaks,
+          Regions.Central_Northrend,
+          Regions.The_Basin,
+          Regions.Ice_Crown,
+          Regions.Fjord,
+          Regions.Eastern_Northrend,
+          Regions.Far_Eastern_Northrend,
+          Regions.Coldarra,
+          Regions.Borean_Tundra,
+          Regions.IcecrownShipyard
+        });
+      FactionScourge.AddPower(visionPower);
+      
       FactionManager.Register(FactionScourge);
     }
   }
