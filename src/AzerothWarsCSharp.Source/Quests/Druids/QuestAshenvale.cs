@@ -1,7 +1,10 @@
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup.Legends;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 using static War3Api.Blizzard;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
@@ -10,7 +13,9 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 {
   public sealed class QuestAshenvale : QuestData
   {
-    public QuestAshenvale() : base("The Spirits of Ashenvale",
+    private readonly List<unit> _rescueUnits = new();
+    
+    public QuestAshenvale(Rectangle rescueRect) : base("The Spirits of Ashenvale",
       "The forest needs healing. Regain control of it to summon it's Guardian, the Demigod Cenarius",
       "ReplaceableTextures\\CommandButtons\\BTNKeeperC.blp")
     {
@@ -23,41 +28,30 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       AddQuestItem(new QuestItemExpire(1440));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = FourCC("R06R");
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        {
+          SetUnitInvulnerable(unit, true);
+          _rescueUnits.Add(unit);
+        }
     }
-
-
+    
     protected override string CompletionPopup => "Ashenvale is under control and Cenarius can now be awaken";
 
     protected override string RewardDescription =>
       "Control of all units in Ashenvale and make Cenarius trainable at the Altar";
 
-    private static void GrantAshenvale(player whichPlayer)
-    {
-      group tempGroup = CreateGroup();
-
-      //Transfer all Neutral Passive units in Ashenvale
-      GroupEnumUnitsInRect(tempGroup, Regions.AshenvaleUnlock.Rect, null);
-      unit u = FirstOfGroup(tempGroup);
-      while (true)
-      {
-        if (u == null) break;
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) UnitRescue(u, whichPlayer);
-        GroupRemoveUnit(tempGroup, u);
-        u = FirstOfGroup(tempGroup);
-      }
-
-      DestroyGroup(tempGroup);
-    }
-
     protected override void OnFail()
     {
-      GrantAshenvale(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      _rescueUnits.Clear();
     }
 
     protected override void OnComplete()
     {
-      GrantAshenvale(Holder.Player);
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
       if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\DruidTheme.mp3");
+      _rescueUnits.Clear();
     }
   }
 }
