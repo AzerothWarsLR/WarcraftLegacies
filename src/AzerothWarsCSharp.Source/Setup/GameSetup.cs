@@ -7,6 +7,7 @@ using AzerothWarsCSharp.MacroTools.UserInterface;
 using AzerothWarsCSharp.Source.Artifacts;
 using AzerothWarsCSharp.Source.Game_Logic;
 using AzerothWarsCSharp.Source.Game_Logic.GameEnd;
+using AzerothWarsCSharp.Source.Hints;
 using AzerothWarsCSharp.Source.Mechanics.Quelthalas;
 
 namespace AzerothWarsCSharp.Source.Setup
@@ -63,6 +64,8 @@ namespace AzerothWarsCSharp.Source.Setup
       ArtifactBook.Initialize();
       Console.WriteLine("Setting up PowerBook...");
       PowerBook.Initialize();
+      Console.WriteLine("Setting up HintConfig...");
+      HintConfig.Setup();
     }
   }
 }
