@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.Source.Quests.Goblin;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
@@ -6,9 +7,9 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
   {
     public static void Setup()
     {
-      var goblin = FactionSetup.GoblinSetup.factionGoblin;
+      var goblin = GoblinSetup.factionGoblin;
       goblin.StartingQuest = goblin.AddQuest(new QuestBusinessExpansion());
-      goblin.AddQuest(new QuestGadgetzan());
+      goblin.AddQuest(new QuestGadgetzan(Regions.GadgetUnlock));
       goblin.AddQuest(new QuestExplosiveEngineering());
       goblin.AddQuest(new QuestWesternExpansion());
       goblin.AddQuest(new QuestLumberMarket());
