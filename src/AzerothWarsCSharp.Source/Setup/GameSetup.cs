@@ -1,6 +1,8 @@
 using System;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem;
+using AzerothWarsCSharp.MacroTools.Frames.Books.Powers;
 using AzerothWarsCSharp.MacroTools.UserInterface;
 using AzerothWarsCSharp.Source.Artifacts;
 using AzerothWarsCSharp.Source.Game_Logic;
@@ -57,6 +59,10 @@ namespace AzerothWarsCSharp.Source.Setup
       FactionMultiboard.Setup();
       Console.WriteLine("Shutting down PreplacedUnitSystem...");
       PreplacedUnitSystem.Shutdown();
+      Console.WriteLine("Setting up ArtifactBook...");
+      ArtifactBook.Initialize();
+      Console.WriteLine("Setting up PowerBook...");
+      PowerBook.Initialize();
     }
   }
 }
