@@ -12,10 +12,8 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       "ReplaceableTextures\\CommandButtons\\BTNGhost.blp")
     {
       AddQuestItem(new QuestItemControlLegend(LegendQuelthalas.LegendSunwell, false));
-      AddQuestItem(new QuestItemControlLegend(LegendForsaken.LegendNathanos, false));
     }
-
-
+    
     protected override string CompletionPopup => "Sylvanas and all the Banshee Hall units gain 500 bonus hit points";
 
     protected override string RewardDescription =>

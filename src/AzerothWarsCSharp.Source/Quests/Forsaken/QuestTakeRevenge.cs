@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       "ReplaceableTextures\\CommandButtons\\BTNHelmofdomination.blp")
     {
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BC"))));
-      AddQuestItem(new QuestItemControlLegend(LegendForsaken.LegendSylvanasv, true));
+      AddQuestItem(new QuestItemLegendNotPermanentlyDead(LegendForsaken.LegendSylvanasv));
       AddQuestItem(new QuestItemLegendDead(LegendScourge.LegendLichking));
     }
 

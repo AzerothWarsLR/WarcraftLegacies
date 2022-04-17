@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       "Most of the Val'kyr are still in Northrend, under the influence of the Lich King, they need to join the Forsaken cause",
       "ReplaceableTextures\\CommandButtons\\BTNPaleValkyr.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendForsaken.LegendSylvanasv, false));
+      AddQuestItem(new QuestItemLegendNotPermanentlyDead(LegendForsaken.LegendSylvanasv));
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02J"))));
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03U"))));
       AddQuestItem(new QuestItemLegendDead(LegendScourge.LegendLichking));

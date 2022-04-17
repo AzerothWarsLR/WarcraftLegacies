@@ -13,9 +13,6 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       forsaken.AddQuest(new QuestReanimateSylvanas());
       forsaken.AddQuest(new QuestUndercity(Regions.UndercityUnlock, null, null));
       forsaken.AddQuest(new QuestThePlaguelands());
-      forsaken.AddQuest(new QuestRetakeSunwell());
-      forsaken.AddQuest(new QuestTheNine());
-      forsaken.AddQuest(new QuestTakeRevenge());
     }
   }
 }
