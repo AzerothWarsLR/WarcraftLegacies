@@ -1,6 +1,9 @@
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.Wrappers;
+using WCSharp.Shared.Data;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 using static War3Api.Blizzard;
@@ -9,7 +12,9 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
 {
   public sealed class QuestDominion : QuestData
   {
-    public QuestDominion() : base("Dwarven Dominion",
+    private readonly List<unit> _rescueUnits = new();
+    
+    public QuestDominion(Rectangle rescueRect) : base("Dwarven Dominion",
       "The Dwarven Dominion must be established before Ironforge can join the war.",
       "ReplaceableTextures\\CommandButtons\\BTNNorthrendCastle.blp")
     {
@@ -20,6 +25,14 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       AddQuestItem(new QuestItemExpire(1462));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = FourCC("R043");
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+      {
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        {
+          SetUnitInvulnerable(unit, true);
+          _rescueUnits.Add(unit);
+        }
+      }
     }
 
     protected override string CompletionPopup =>
@@ -27,33 +40,20 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
 
     protected override string RewardDescription => "Control of all units in Ironforge";
 
-    private void GrantDominion(player whichPlayer)
-    {
-      group tempGroup = CreateGroup();
-      unit u;
-
-      //Transfer all Neutral Passive units in Dominion
-      GroupEnumUnitsInRect(tempGroup, Regions.IronforgeAmbient.Rect, null);
-      u = FirstOfGroup(tempGroup);
-      while (true)
-      {
-        if (u == null) break;
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) UnitRescue(u, whichPlayer);
-        GroupRemoveUnit(tempGroup, u);
-        u = FirstOfGroup(tempGroup);
-      }
-
-      DestroyGroup(tempGroup);
-    }
-
     protected override void OnFail()
     {
-      GrantDominion(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits)
+      {
+        UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      }
     }
 
     protected override void OnComplete()
     {
-      GrantDominion(Holder.Player);
+      foreach (var unit in _rescueUnits)
+      {
+        UnitRescue(unit, Holder.Player);
+      }
       if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\DwarfTheme.mp3");
     }
   }

@@ -4,23 +4,18 @@ using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
-  public class IronforgeQuestSetup{
-
-    public static void Setup( )
+  public static class IronforgeQuestSetup
+  {
+    public static void Setup()
     {
       var ironforge = IronforgeSetup.FACTION_IRONFORGE;
-      
-      //Setup
-      QuestData newQuest = ironforge.AddQuest(new QuestThelsamar());
+      QuestData newQuest = ironforge.AddQuest(new QuestThelsamar(Regions.ThelUnlock));
       ironforge.StartingQuest = newQuest;
-      //Early duel
       ironforge.AddQuest(new QuestDunMorogh());
-      ironforge.AddQuest(new QuestDominion());
-      ironforge.AddQuest(new QuestGnomeregan());
+      ironforge.AddQuest(new QuestDominion(Regions.IronforgeAmbient));
+      ironforge.AddQuest(new QuestGnomeregan(Regions.Gnomergan));
       ironforge.AddQuest(new QuestDarkIron());
       ironforge.AddQuest(new QuestWildhammer());
-      //Misc
     }
-
   }
 }
