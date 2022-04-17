@@ -16,8 +16,9 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
     private static readonly int UnleashTheCrusadeResearchId = FourCC("R03P");
     private readonly List<unit> _rescueUnits = new();
     private readonly unit _scarletMonastery;
+    private readonly QuestData _sequel;
 
-    public QuestMonastery(Rectangle rescueRect, unit scarletMonastery) : base("The Secret Cloister",
+    public QuestMonastery(Rectangle rescueRect, unit scarletMonastery, QuestData sequel) : base("The Secret Cloister",
       "The Scarlet Monastery is the perfect place for the secret base of the Scarlet Crusade.",
       "ReplaceableTextures\\CommandButtons\\BTNDivine_Reckoning_Icon.blp")
     {
@@ -26,6 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = Constants.UPGRADE_R03F_QUEST_COMPLETED_UNLEASH_THE_CRUSADE;
       Global = true;
+      _sequel = sequel;
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
@@ -60,6 +62,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNSaidan Dathrohan.blp";
       PlayThematicMusicBJ("war3mapImported\\ScarletTheme.mp3");
       SetPlayerStateBJ(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
+      Holder.AddQuest(_sequel);
     }
 
     protected override void OnAdd()

@@ -13,7 +13,6 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
 {
   public sealed class QuestLiberateLordaeron : QuestData
   {
-    private static readonly int QuestResearchId = FourCC("R07P"); //This research is given when the quest is completed
     private readonly List<unit> _rescueUnits = new();
 
     public QuestLiberateLordaeron(Rectangle rescueRect) : base("Liberation of Lordaeron",
@@ -26,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01H"))));
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01M"))));
       AddQuestItem(new QuestItemSelfExists());
-      ResearchId = QuestResearchId;
+      ResearchId = FourCC("R07P");
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
