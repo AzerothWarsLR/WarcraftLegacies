@@ -9,13 +9,13 @@ using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Warsong
 {
-  public sealed class QuestLumberQuota : QuestData
+  public sealed class QuestOrgrimmar : QuestData
   {
     private readonly int _questResearchId = FourCC("R05R"); //This research is given when the quest is completed
     private readonly List<unit> _rescueUnits = new();
     private readonly int _researchId = FourCC("R05O"); //This research is required to complete the quest
 
-    public QuestLumberQuota(Rectangle rescueRect) : base("To Tame a Land",
+    public QuestOrgrimmar(Rectangle rescueRect) : base("To Tame a Land",
       "This new continent is ripe for opportunity, if (the Horde is going to survive, a new city needs to be built.",
       "ReplaceableTextures\\CommandButtons\\BTNFortress.blp")
     {

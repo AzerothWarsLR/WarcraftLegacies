@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       var warsong = WarsongSetup.FACTION_WARSONG;
 
       //Setup
-      warsong.StartingQuest = warsong.AddQuest(new QuestLumberQuota(Regions.Orgrimmar));
+      warsong.StartingQuest = warsong.AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
       warsong.AddQuest(new QuestCrossroads(Regions.Crossroads.Rect));
       warsong.AddQuest(new QuestChenStormstout(PreplacedUnitSystem.GetUnitByUnitType(FourCC("Nsjs"))));
       warsong.AddQuest(new QuestFountainOfBlood());
