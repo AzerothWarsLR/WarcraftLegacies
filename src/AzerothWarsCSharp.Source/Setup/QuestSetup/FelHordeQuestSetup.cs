@@ -15,12 +15,12 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       FactionFelHorde.StartingQuest = newQuest;
       FactionFelHorde.AddQuest(new QuestKilsorrow(Regions.KilsorrowUnlock,
         PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_O017_KIL_SORROW_FORTRESS)));
-      FactionFelHorde.AddQuest(new QuestHellfire(new List<unit>
+      FactionFelHorde.AddQuest(new QuestHellfireCitadel(Regions.HellfireUnlock, new List<unit>
       {
         PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_N081_UNFOCUSED_DEMON_GATE_T0),
         PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_N081_UNFOCUSED_DEMON_GATE_T0)
       }));
-      FactionFelHorde.AddQuest(new QuestBlackrock());
+      FactionFelHorde.AddQuest(new QuestBlackrock(Regions.BlackrockUnlock));
       FactionFelHorde.AddQuest(new QuestFelHordeKillIronforge());
       FactionFelHorde.AddQuest(new QuestFelHordeKillStormwind());
       FactionFelHorde.AddQuest(new QuestGuldansLegacy());
