@@ -1,7 +1,10 @@
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup.Legends;
+using WCSharp.Shared.Data;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 using static War3Api.Blizzard;
@@ -10,17 +13,25 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
 {
   public sealed class QuestFeathermoon : QuestData
   {
-    public QuestFeathermoon() : base("Feathermoon Stronghold",
+    private readonly List<unit> _rescueUnits = new();
+
+    public QuestFeathermoon(Rectangle rescueRect) : base("Feathermoon Stronghold",
       "Feathermoon Stronghold stood guard for ten thousand years, it is time to relieve the guards from their duty.",
       "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp")
     {
       AddQuestItem(new QuestItemLegendReachRect(LegendSentinels.legendTyrande, Regions.FeathermoonUnlock,
         "Feathermoon Stronghold"));
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01R"))));
-      AddQuestItem(new QuestItemUpgrade(FourCC("n06J"), FourCC("n06J")));
+      AddQuestItem(new QuestItemUpgrade(FourCC("n06P"), FourCC("n06J")));
       AddQuestItem(new QuestItemExpire(1485));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = FourCC("R06M");
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        {
+          SetUnitInvulnerable(unit, true);
+          _rescueUnits.Add(unit);
+        }
     }
 
     protected override string CompletionPopup =>
@@ -29,32 +40,14 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
     protected override string RewardDescription =>
       "Control of all units in Feathermoon Stronghold and make Shandris and Maiev trainable at the Altar";
 
-    private static void GrantFeathermoon(player whichPlayer)
-    {
-      group tempGroup = CreateGroup();
-
-      //Transfer all Neutral Passive units in Feathermoon
-      GroupEnumUnitsInRect(tempGroup, Regions.FeathermoonUnlock.Rect, null);
-      unit u = FirstOfGroup(tempGroup);
-      while (true)
-      {
-        if (u == null) break;
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) UnitRescue(u, whichPlayer);
-        GroupRemoveUnit(tempGroup, u);
-        u = FirstOfGroup(tempGroup);
-      }
-
-      DestroyGroup(tempGroup);
-    }
-
     protected override void OnFail()
     {
-      GrantFeathermoon(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
     {
-      GrantFeathermoon(Holder.Player);
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
       AdjustPlayerStateBJ(300, Holder.Player, PLAYER_STATE_RESOURCE_LUMBER);
       AdjustPlayerStateBJ(300, Holder.Player, PLAYER_STATE_RESOURCE_GOLD);
       if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\SentinelTheme.mp3");

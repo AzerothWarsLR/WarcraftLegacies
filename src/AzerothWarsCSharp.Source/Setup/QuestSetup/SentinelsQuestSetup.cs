@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
           Regions.AstranaarUnlock, Regions.TeldrassilUnlock1, Regions.TeldrassilUnlock2
         }
       ));
-      sentinels.AddQuest(new QuestFeathermoon());
+      sentinels.AddQuest(new QuestFeathermoon(Regions.FeathermoonUnlock));
       sentinels.AddQuest(new QuestSentinelsKillWarsong());
       sentinels.AddQuest(new QuestSentinelsKillFrostwolf());
       sentinels.AddQuest(new QuestMaievOutland(Regions.MaievStartUnlock));
