@@ -1,7 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Quests.Dalaran;
-using AzerothWarsCSharp.Source.Quests.KulTiras;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using static War3Api.Common;
 
@@ -25,7 +24,6 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       fallenGuardian.AddQuestItem(new QuestItemDontCompleteQuest(theNexus));
       theNexus.AddQuestItem(new QuestItemDontCompleteQuest(newGuardian));
 
-      //Early duel
       dalaran.AddQuest(questSouthshore);
       dalaran.StartingQuest = questSouthshore;
       dalaran.AddQuest(new QuestShadowfang(Regions.ShadowfangUnlock,
@@ -33,9 +31,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       dalaran.AddQuest(new QuestDalaran(new[] {Regions.Dalaran, Regions.DalaranDungeon}));
       dalaran.AddQuest(new QuestJainaSoulGem());
       dalaran.AddQuest(new QuestBlueDragons());
-      //Misc
       dalaran.AddQuest(new QuestKarazhan());
-      dalaran.AddQuest(new QuestTheramore());
 
       dalaran.AddQuest(crystalGolem);
       dalaran.AddQuest(fallenGuardian);

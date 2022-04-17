@@ -1,25 +1,33 @@
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
+using AzerothWarsCSharp.MacroTools.Wrappers;
+using WCSharp.Shared.Data;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.KulTiras
 {
   public sealed class QuestTheramore : QuestData
   {
-    private static readonly int ResearchId = FourCC("R06K");
+    private static readonly int RequiredResearch = FourCC("R06K");
 
+    private readonly List<unit> _rescueUnits = new();
 
-    private static group _theramoreUnits = CreateGroup();
-
-    public QuestTheramore() : base("Theramore",
+    public QuestTheramore(Rectangle rescueRect) : base("Theramore",
       "The distant lands of Kalimdor remain untouched by human civilization. If the Third War proceeds poorly, it may become necessary to establish a forward base there.",
       "ReplaceableTextures\\CommandButtons\\BTNHumanArcaneTower.blp")
     {
-      AddQuestItem(new QuestItemResearch(ResearchId, FourCC("h076")));
+      AddQuestItem(new QuestItemResearch(RequiredResearch, FourCC("h076")));
       AddQuestItem(new QuestItemSelfExists());
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        {
+          SetUnitInvulnerable(unit, true);
+          _rescueUnits.Add(unit);
+          SetUnitOwner(unit, Player(PLAYER_NEUTRAL_PASSIVE), true);
+        }
     }
 
     protected override string CompletionPopup =>
@@ -27,52 +35,21 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 
     protected override string RewardDescription => "Control of all units at Theramore";
 
-    private static void GrantToPlayer(player whichPlayer)
-    {
-      while (true)
-      {
-        unit u = FirstOfGroup(_theramoreUnits);
-        if (u == null) break;
-        UnitRescue(u, whichPlayer);
-        GroupRemoveUnit(_theramoreUnits, u);
-      }
-
-      DestroyGroup(_theramoreUnits);
-    }
-
     protected override void OnFail()
     {
-      GrantToPlayer(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      Holder.ModObjectLimit(ResearchId, -Faction.UNLIMITED);
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      Holder.ModObjectLimit(RequiredResearch, -Faction.UNLIMITED);
     }
 
     protected override void OnComplete()
     {
-      GrantToPlayer(Holder.Player);
-      Holder.ModObjectLimit(ResearchId, -Faction.UNLIMITED);
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
+      Holder.ModObjectLimit(RequiredResearch, -Faction.UNLIMITED);
     }
 
     protected override void OnAdd()
     {
-      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
-    }
-
-    private static void OnInit()
-    {
-      @group tempGroup = CreateGroup();
-      _theramoreUnits = CreateGroup();
-      GroupEnumUnitsInRect(tempGroup, Regions.Theramore.Rect, null);
-      while (true)
-      {
-        unit u = FirstOfGroup(tempGroup);
-        if (u == null) break;
-        SetUnitInvulnerable(u, true);
-        SetUnitOwner(u, Player(PLAYER_NEUTRAL_PASSIVE), true);
-        GroupAddUnit(_theramoreUnits, u);
-        GroupRemoveUnit(tempGroup, u);
-      }
-
-      DestroyGroup(tempGroup);
+      Holder.ModObjectLimit(RequiredResearch, Faction.UNLIMITED);
     }
   }
 }
