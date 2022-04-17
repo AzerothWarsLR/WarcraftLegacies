@@ -42,14 +42,10 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
     protected override void OnFail()
     {
       foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
     {
-      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
-      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
       foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
       AdjustPlayerStateBJ(200, Holder.Player, PLAYER_STATE_RESOURCE_LUMBER);
       AdjustPlayerStateBJ(100, Holder.Player, PLAYER_STATE_RESOURCE_GOLD);
