@@ -14,6 +14,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       Description = "Complete this quest before " + I2S(duration) + " seconds have elapsed";
       _timer = CreateTimer();
       TimerStart(_timer, duration, false, OnExpire);
+      ShowsInQuestLog = false;
     }
 
     internal override void OnAdd()
