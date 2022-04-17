@@ -38,8 +38,6 @@ namespace AzerothWarsCSharp.TestSource.Setup
       SpellSetup.Setup();
       Console.WriteLine("Setting up CpCapture...");
       //CpCapture.Setup();
-      Console.WriteLine("Setting up DestructibleHider...");
-      DestructibleHider.Setup();
       Console.WriteLine("Setting up CheatSetup...");
       CheatSetup.Setup();
       Console.WriteLine("Setting up CommandSetup...");

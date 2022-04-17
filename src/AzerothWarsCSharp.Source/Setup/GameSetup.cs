@@ -42,8 +42,6 @@ namespace AzerothWarsCSharp.Source.Setup
       ObserverSetup.Setup();
       Console.WriteLine("Setting up SpellsSetup...");
       SpellsSetup.Setup();
-      Console.WriteLine("Setting up DestructibleHider...");
-      DestructibleHider.Setup();
       Console.WriteLine("Setting up CheatSetup...");
       CheatSetup.Setup();
       Console.WriteLine("Setting up CommandSetup...");
