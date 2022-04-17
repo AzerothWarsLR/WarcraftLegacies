@@ -23,8 +23,13 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01T"))));
       AddQuestItem(new QuestItemExpire(1460));
       AddQuestItem(new QuestItemSelfExists());
+
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
-        SetUnitInvulnerable(unit, true);
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        {
+          SetUnitInvulnerable(unit, true);
+          _rescueUnits.Add(unit);
+        }
     }
 
     protected override string CompletionPopup => "The Crossroads have been constructed.";
@@ -44,11 +49,13 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
     protected override void OnFail()
     {
       GiveCrossroads(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      _rescueUnits.Clear();
     }
 
     protected override void OnComplete()
     {
       GiveCrossroads(Holder.Player);
+      _rescueUnits.Clear();
     }
   }
 }
