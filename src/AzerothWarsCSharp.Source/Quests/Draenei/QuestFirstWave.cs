@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
 {
   public sealed class QuestFirstWave : QuestData
   {
-    private List<unit> _unitsToKill;
+    private readonly List<unit> _unitsToKill;
     
     public QuestFirstWave() : base("Broken Civilisation",
       "The Fel Orc attack will begin at any moment, the Draenei need to evacuate their civilians aboard the Exodar",
@@ -30,8 +30,8 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
     protected override string CompletionPopup =>
       "The Draenei have holded long enough and most of their civilisation had time to join the Exodar";
 
-    protected override string RewardDescription =>
-      "The Divine Citadel, Teleporter, Astral Sanctum and Crystal Spire will be deleted from Azuremyst";
+    protected override string PenaltyDescription =>
+      "You lose the Divine Citadel, Teleporter, Astral Sanctum and Crystal Spire at Azuremyst Isle";
 
     protected override void OnFail()
     {

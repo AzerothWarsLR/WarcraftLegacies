@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     ///   Describes to the player what will happen when the quest is completed.
     ///   Describes mechanics, not flavour.
     /// </summary>
-    protected abstract string RewardDescription { get; }
+    protected virtual string RewardDescription => "DEFAULTCOMPLETIONDESCRIPTION";
 
     /// <summary>
     ///   Describes to the player what will happen when the quest is failed.
