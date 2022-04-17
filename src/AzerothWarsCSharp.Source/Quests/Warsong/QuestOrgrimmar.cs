@@ -11,7 +11,6 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
 {
   public sealed class QuestOrgrimmar : QuestData
   {
-    private readonly int _questResearchId = FourCC("R05R"); //This research is given when the quest is completed
     private readonly List<unit> _rescueUnits = new();
     private readonly int _researchId = FourCC("R05O"); //This research is required to complete the quest
 
@@ -22,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       AddQuestItem(new QuestItemResearch(_researchId, FourCC("o02S")));
       AddQuestItem(new QuestItemExpire(1500));
       AddQuestItem(new QuestItemSelfExists());
-      ResearchId = _questResearchId;
+      ResearchId = FourCC("R05R");
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
