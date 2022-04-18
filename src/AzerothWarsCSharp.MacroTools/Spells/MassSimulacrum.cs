@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using AzerothWarsCSharp.MacroTools.Buffs;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Buffs;
@@ -45,7 +46,7 @@ namespace AzerothWarsCSharp.MacroTools.Spells
       BuffSystem.Add(buff);
     }
 
-    public override void OnCast(unit caster, widget target, float targetX, float targetY)
+    public override void OnCast(unit caster, unit target, float targetX, float targetY)
     {
       var group = new GroupWrapper();
       group.EnumUnitsInRange(targetX, targetY, Radius);

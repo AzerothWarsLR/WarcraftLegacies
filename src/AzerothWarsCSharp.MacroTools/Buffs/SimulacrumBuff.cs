@@ -2,7 +2,7 @@
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.Spells
+namespace AzerothWarsCSharp.MacroTools.Buffs
 {
   public class SimulacrumBuff : PassiveBuff
   {

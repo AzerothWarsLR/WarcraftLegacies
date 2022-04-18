@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.MacroTools.Spells
 
     public float Interval { get; init; }
 
-    public override void OnCast(unit caster, widget target, float targetX, float targetY)
+    public override void OnCast(unit caster, unit target, float targetX, float targetY)
     {
       var hazard = new RecurrentSpellHazard(null, GetTriggerUnit(), GetSpellTargetX(), GetSpellTargetY(),
         _dummySpellOrder, GetUnitAbilityLevel(GetTriggerUnit(), Id), _dummySpellId)

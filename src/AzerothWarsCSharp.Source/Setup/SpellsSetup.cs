@@ -1,5 +1,4 @@
-﻿using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.MacroTools.Spells;
+﻿using AzerothWarsCSharp.MacroTools.Spells;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 
 using static War3Api.Common;
@@ -243,6 +242,48 @@ namespace AzerothWarsCSharp.Source.Setup
         ReviveEffect = "Heal Blue.mdx"
       };
       SpellSystem.Register(burningVengeance);
+
+      var devour = new Devour(Constants.ABILITY_ADEV_DEVOUR_PINK_KODO_BEAST)
+      {
+        PercentageOfMaxHealth = 0.5f
+      };
+      SpellSystem.Register(devour);
+      
+      //Todo: inappropriately named
+      var manaSyphon = new GrantMana(Constants.ABILITY_A0RG_MANA_SYPHON_ARATHOR_MAGE_TOWER)
+      {
+        ManaToGrant = 250
+      };
+      SpellSystem.Register(manaSyphon);
+
+      var demonSoulCooldown = new CooldownReset(Constants.ABILITY_A0HF_ABILITY_COOLDOWN_RESET);
+      SpellSystem.Register(demonSoulCooldown);
+
+      var overclock = new CooldownReset(Constants.ABILITY_A0RA_OVERCLOCK_GAZLOWEE);
+      SpellSystem.Register(overclock);
+
+      var ascendance = new Ascendance(Constants.ABILITY_AEME_ASCENDANCE_TEAL_ZULUHED)
+      {
+        DurationBase = 15,
+        DurationLevel = 15,
+        HealBase = 50,
+        HealLevel = 100,
+        Radius = 600,
+        AbilitiesToRemove = new []
+        {
+          Constants.ABILITY_HEAL_HEALING_WAVE_TEAL_ZULUHED,
+          Constants.ABILITY_A0B4_BLOODLUST_TOTEM_TEAL_ZULUHED,
+          Constants.ABILITY_AHAB_BRILLIANCE_AURA_ZULUHED_JAINA_MALFURION_VOL_JIN,
+          Constants.ABILITY_AEME_ASCENDANCE_TEAL_ZULUHED
+        },
+      };
+      SpellSystem.Register(ascendance);
+
+      var unholyArmor = new UnholyArmor(Constants.ABILITY_A0F8_UNHOLY_ARMOR_FEL_HORDE_FEL_WARLOCK)
+      {
+        PercentageDamage = 0.06f
+      };
+      SpellSystem.Register(unholyArmor);
     }
   }
 }

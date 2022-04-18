@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
   {
     public int Id { get; }
 
-    public abstract void OnCast(unit caster, widget target, float targetX, float targetY);
+    public abstract void OnCast(unit caster, unit target, float targetX, float targetY);
     
     protected int GetAbilityLevel(unit whichUnit)
     {
