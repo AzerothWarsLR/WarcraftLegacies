@@ -42,7 +42,10 @@ namespace AzerothWarsCSharp.MacroTools.Spells
         GetUnitFacing(target));
       var level = GetAbilityLevel(caster);
       var buff = new SimulacrumBuff(caster, newUnit, 1 + DamageBonusBase + DamageBonusLevel * level,
-        1 + HealthBonusBase + HealthBonusLevel * level, Duration, EffectTarget, EffectScaleTarget);
+        1 + HealthBonusBase + HealthBonusLevel * level, EffectTarget, EffectScaleTarget)
+      {
+        Duration = Duration
+      };
       BuffSystem.Add(buff);
     }
 

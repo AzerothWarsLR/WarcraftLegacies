@@ -8,19 +8,29 @@ namespace AzerothWarsCSharp.MacroTools.Buffs
   {
     private readonly float _damageScale;
     private readonly float _hitpointScale;
-    private readonly float _timedLifeDuration;
     private readonly string _effectTarget;
     private readonly float _effectScaleTarget;
     
     public override void OnDeath(bool killingBlow)
     {
-      RemoveUnit(Target);
+      Active = false;
+      base.OnDeath(killingBlow);
     }
 
+    public override void OnDispose()
+    {
+      var tempEffect = AddSpecialEffect(_effectTarget, GetUnitX(Target), GetUnitY(Target));
+      BlzSetSpecialEffectScale(tempEffect, _effectScaleTarget);
+      DestroyEffect(tempEffect);
+      KillUnit(Target);
+      RemoveUnit(Target);
+      base.OnDispose();
+    }
+    
     public override void OnApply()
     {
       UnitAddType(Target, UNIT_TYPE_SUMMONED);
-      UnitApplyTimedLife(Target, 0, _timedLifeDuration);
+      UnitApplyTimedLife(Target, 0, Duration);
       SetUnitVertexColor(Target, 100, 100, 230, 150);
       GeneralHelpers.ScaleUnitBaseDamage(Target, _damageScale, 0);
       GeneralHelpers.ScaleUnitMaxHitpoints(Target, _hitpointScale);
@@ -29,11 +39,10 @@ namespace AzerothWarsCSharp.MacroTools.Buffs
       DestroyEffect(tempEffect);
     }
     
-    public SimulacrumBuff(unit caster, unit target, float damageScale, float hitPointScale, float timedLifeDuration, string effectTarget, float effectScaleTarget) : base(caster, target)
+    public SimulacrumBuff(unit caster, unit target, float damageScale, float hitPointScale, string effectTarget, float effectScaleTarget) : base(caster, target)
     {
       _damageScale = damageScale;
       _hitpointScale = hitPointScale;
-      _timedLifeDuration = timedLifeDuration;
       _effectTarget = effectTarget;
       _effectScaleTarget = effectScaleTarget;
     }
