@@ -38,6 +38,12 @@ namespace AzerothWarsCSharp.TestSource.Setup
       
       var executeFootman = new Execute(FourCC("hfoo"));
       SpellSystem.Register(executeFootman);
+
+      var animalCompanion = new AnimalCompanion(FourCC("hfoo"), FourCC("nqb1"))
+      {
+        Duration = 12
+      };
+      SpellSystem.Register(animalCompanion);
     }
   }
 }
