@@ -98,7 +98,7 @@ namespace AzerothWarsCSharp.Launcher
       // Load existing map data
       var map = Map.Open(baseMapPath);
 
-      SetTestPlayerSlot(map, 8);
+      SetTestPlayerSlot(map, 0);
       var builder = new MapBuilder(map);
       builder.AddFiles(baseMapPath, "*", SearchOption.AllDirectories);
       builder.AddFiles(ASSETS_FOLDER_PATH, "*", SearchOption.AllDirectories);
