@@ -107,7 +107,7 @@ namespace AzerothWarsCSharp.Launcher
       const string csc = DEBUG ? "-debug -define:DEBUG" : null;
       var csproj = Directory.EnumerateFiles(projectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
       var compiler = new Compiler(csproj, OUTPUT_FOLDER_PATH, string.Empty, null,
-        "WCSharp.*;AzerothWarsCSharp.MacroTools.*", "", csc, false, null,
+        "WCSharp.*", "", csc, false, null,
         string.Empty)
       {
         IsExportMetadata = true,
