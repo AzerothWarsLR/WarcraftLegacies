@@ -12,17 +12,16 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
     public static Spell GetSpellByAbilityId(int abilityId)
     {
       if (!SpellsByAbilityId.ContainsKey(abilityId))
-      {
         throw new Exception($"There is no Spell with abilityId {abilityId}.");
-      }
       return SpellsByAbilityId[abilityId];
     }
 
     private static void OnCast()
     {
-      SpellsByAbilityId[GetSpellAbilityId()].OnCast(GetTriggerUnit(), GetSpellTargetUnit(), GetSpellTargetX(), GetSpellTargetY());
+      SpellsByAbilityId[GetSpellAbilityId()]
+        .OnCast(GetTriggerUnit(), GetSpellTargetUnit(), GetSpellTargetX(), GetSpellTargetY());
     }
-    
+
     private static void OnLearn()
     {
       Console.WriteLine("a");
@@ -31,11 +30,12 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
 
     public static void Register(TakeDamageEffect takeDamageEffect)
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, takeDamageEffect.OnTakesDamage, takeDamageEffect.DamagedUnitTypeId);
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, takeDamageEffect.OnTakesDamage,
+        takeDamageEffect.DamagedUnitTypeId);
     }
 
     /// <summary>
-    /// Registers an <see cref="UnitEffect"/> to the <see cref="SpellSystem"/>.
+    ///   Registers an <see cref="UnitEffect" /> to the <see cref="SpellSystem" />.
     /// </summary>
     public static void Register(UnitEffect unitEffect)
     {
@@ -43,9 +43,9 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
       PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeIsCreated, unitEffect.OnCreated, unitEffect.UnitTypeId);
       PlayerUnitEvents.Register(PlayerUnitEvent.HeroTypeFinishesRevive, unitEffect.OnCreated, unitEffect.UnitTypeId);
     }
-    
+
     /// <summary>
-    /// Registers a spell to the SpellSystem.
+    ///   Registers a spell to the SpellSystem.
     /// </summary>
     public static void Register(Spell spell)
     {

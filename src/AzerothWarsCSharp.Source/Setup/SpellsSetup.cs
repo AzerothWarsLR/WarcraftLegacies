@@ -1,6 +1,5 @@
 ﻿using AzerothWarsCSharp.MacroTools.Spells;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
-
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup
@@ -153,7 +152,7 @@ namespace AzerothWarsCSharp.Source.Setup
         HealthBonusBase = -0.5f,
         HealthBonusLevel = 0.2f,
         DamageBonusBase = -0.5f,
-        DamageBonusLevel = 0.2f,
+        DamageBonusLevel = 0.2f
       };
       SpellSystem.Register(massSimulacrum);
 
@@ -207,7 +206,7 @@ namespace AzerothWarsCSharp.Source.Setup
         Constants.ABILITY_A0F9_RESURGENT_FLAME_STRIKE_QUEL_THALAS_KAEL_THAS_DUMMY, "flamestrike")
       {
         Duration = 14,
-        Interval = 7,
+        Interval = 7
       };
       SpellSystem.Register(resurgentFlameStrike);
 
@@ -248,7 +247,7 @@ namespace AzerothWarsCSharp.Source.Setup
         PercentageOfMaxHealth = 0.5f
       };
       SpellSystem.Register(devour);
-      
+
       //Todo: inappropriately named
       var manaSyphon = new GrantMana(Constants.ABILITY_A0RG_MANA_SYPHON_ARATHOR_MAGE_TOWER)
       {
@@ -269,13 +268,13 @@ namespace AzerothWarsCSharp.Source.Setup
         HealBase = 50,
         HealLevel = 100,
         Radius = 600,
-        AbilitiesToRemove = new []
+        AbilitiesToRemove = new[]
         {
           Constants.ABILITY_HEAL_HEALING_WAVE_TEAL_ZULUHED,
           Constants.ABILITY_A0B4_BLOODLUST_TOTEM_TEAL_ZULUHED,
           Constants.ABILITY_AHAB_BRILLIANCE_AURA_ZULUHED_JAINA_MALFURION_VOL_JIN,
           Constants.ABILITY_AEME_ASCENDANCE_TEAL_ZULUHED
-        },
+        }
       };
       SpellSystem.Register(ascendance);
 
@@ -292,7 +291,7 @@ namespace AzerothWarsCSharp.Source.Setup
         RadiusOffset = 300
       };
       SpellSystem.Register(hideousAppendagesCthun);
-      
+
       var hideousAppendagesYogg = new HideousAppendages(Constants.UNIT_U02C_OLD_GOD)
       {
         TentacleCount = 5,
@@ -300,7 +299,7 @@ namespace AzerothWarsCSharp.Source.Setup
         RadiusOffset = 500
       };
       SpellSystem.Register(hideousAppendagesYogg);
-      
+
       var hideousAppendagesNzoth = new HideousAppendages(Constants.UNIT_U01Z_OLD_GOD_NAGA)
       {
         TentacleCount = 6,

@@ -32,10 +32,10 @@ namespace AzerothWarsCSharp.TestSource.Setup
         HealthBonusBase = -0.5f,
         HealthBonusLevel = 0.2f,
         DamageBonusBase = -0.5f,
-        DamageBonusLevel = 0.2f,
+        DamageBonusLevel = 0.2f
       };
       SpellSystem.Register(massSimulacrum);
-      
+
       var executeFootman = new Execute(FourCC("hfoo"));
       SpellSystem.Register(executeFootman);
 
