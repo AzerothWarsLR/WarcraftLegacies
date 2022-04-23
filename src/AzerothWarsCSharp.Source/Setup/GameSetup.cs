@@ -1,11 +1,10 @@
 using System;
 using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem;
 using AzerothWarsCSharp.MacroTools.Frames.Books.Powers;
+using AzerothWarsCSharp.MacroTools.Mechanics;
 using AzerothWarsCSharp.MacroTools.UserInterface;
 using AzerothWarsCSharp.Source.Artifacts;
-using AzerothWarsCSharp.Source.Game_Logic;
 using AzerothWarsCSharp.Source.Game_Logic.GameEnd;
 using AzerothWarsCSharp.Source.Hints;
 using AzerothWarsCSharp.Source.Mechanics.Quelthalas;
@@ -64,6 +63,8 @@ namespace AzerothWarsCSharp.Source.Setup
       PowerBook.Initialize();
       Console.WriteLine("Setting up HintConfig...");
       HintConfig.Setup();
+      Console.WriteLine("Setting up WaygateManager...");
+      WaygateManager.Setup(Constants.UNIT_N0AO_WAY_GATE_DALARAN);
     }
   }
 }

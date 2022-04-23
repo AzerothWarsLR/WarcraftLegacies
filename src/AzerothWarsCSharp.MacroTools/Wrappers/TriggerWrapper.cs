@@ -1,5 +1,4 @@
 ﻿using System;
-
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Wrappers
@@ -12,6 +11,11 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
     }
 
     public trigger Trigger { get; }
+
+    public void RegisterUnitEvent(unit whichUnit, unitevent whichEvent)
+    {
+      TriggerRegisterUnitEvent(Trigger, whichUnit, whichEvent);
+    }
 
     public void RegisterFrameEvent(framehandle frame, frameeventtype frameeventtype)
     {

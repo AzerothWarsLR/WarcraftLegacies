@@ -1,10 +1,9 @@
 ﻿using System;
-using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.MacroTools.ArtifactSystem;
-using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem;
 using AzerothWarsCSharp.MacroTools.Frames.Books.Powers;
+using AzerothWarsCSharp.MacroTools.Mechanics;
 using AzerothWarsCSharp.MacroTools.UserInterface;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.TestSource.Setup
 {
@@ -54,6 +53,8 @@ namespace AzerothWarsCSharp.TestSource.Setup
       ArtifactBook.Initialize();
       Console.WriteLine("Setting up TestSetup...");
       TestSetup.Setup();
+      Console.WriteLine("Setting up WaygateManager...");
+      WaygateManager.Setup(FourCC("nwgt"));
     }
   }
 }
