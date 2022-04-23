@@ -22,18 +22,26 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
     {
       SpellsByAbilityId[GetSpellAbilityId()].OnCast(GetTriggerUnit(), GetSpellTargetUnit(), GetSpellTargetX(), GetSpellTargetY());
     }
+    
+    private static void OnLearn()
+    {
+      Console.WriteLine("a");
+      SpellsByAbilityId[GetLearnedSkill()].OnLearn(GetTriggerUnit());
+    }
 
     public static void Register(TakeDamageEffect takeDamageEffect)
     {
       PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, takeDamageEffect.OnTakesDamage, takeDamageEffect.DamagedUnitTypeId);
     }
-    
+
     /// <summary>
-    /// Registers an <see cref="AttackEffect"/> to the <see cref="SpellSystem"/>.
+    /// Registers an <see cref="UnitEffect"/> to the <see cref="SpellSystem"/>.
     /// </summary>
-    public static void Register(AttackEffect attackEffect)
+    public static void Register(UnitEffect unitEffect)
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, attackEffect.OnDealsDamage, attackEffect.AttackerUnitTypeId);
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, unitEffect.OnDealsDamage, unitEffect.UnitTypeId);
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeIsCreated, unitEffect.OnCreated, unitEffect.UnitTypeId);
+      PlayerUnitEvents.Register(PlayerUnitEvent.HeroTypeFinishesRevive, unitEffect.OnCreated, unitEffect.UnitTypeId);
     }
     
     /// <summary>
@@ -42,6 +50,7 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
     public static void Register(Spell spell)
     {
       PlayerUnitEvents.Register(PlayerUnitEvent.SpellEffect, OnCast, spell.Id);
+      PlayerUnitEvents.Register(PlayerUnitEvent.SpellLearnedByHeroType, OnLearn, spell.Id);
       SpellsByAbilityId.Add(spell.Id, spell);
     }
   }
