@@ -284,6 +284,30 @@ namespace AzerothWarsCSharp.Source.Setup
         PercentageDamage = 0.06f
       };
       SpellSystem.Register(unholyArmor);
+
+      var hideousAppendagesCthun = new HideousAppendages(Constants.UNIT_U00R_OLD_GOD)
+      {
+        TentacleCount = 5,
+        TentacleUnitTypeId = Constants.UNIT_N073_CTHUNTENTACLE,
+        RadiusOffset = 300
+      };
+      SpellSystem.Register(hideousAppendagesCthun);
+      
+      var hideousAppendagesYogg = new HideousAppendages(Constants.UNIT_U02C_OLD_GOD)
+      {
+        TentacleCount = 5,
+        TentacleUnitTypeId = Constants.UNIT_N0B7_YOGGTENTACLE,
+        RadiusOffset = 500
+      };
+      SpellSystem.Register(hideousAppendagesYogg);
+      
+      var hideousAppendagesNzoth = new HideousAppendages(Constants.UNIT_U01Z_OLD_GOD_NAGA)
+      {
+        TentacleCount = 6,
+        TentacleUnitTypeId = Constants.UNIT_N098_NZOTHTENTACLE,
+        RadiusOffset = 250
+      };
+      SpellSystem.Register(hideousAppendagesNzoth);
     }
   }
 }

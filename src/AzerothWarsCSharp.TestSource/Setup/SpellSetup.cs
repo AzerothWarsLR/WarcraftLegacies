@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
   {
     public static void Setup()
     {
-      var summonGraniteGolems = new SummonUnits(FourCC("AHbn"))
+      var summonGraniteGolems = new SummonUnits(FourCC("AHhb"))
       {
         SummonUnitTypeId = FourCC("nggr"),
         SummonCount = 4,
@@ -44,6 +44,12 @@ namespace AzerothWarsCSharp.TestSource.Setup
         Duration = 12
       };
       SpellSystem.Register(animalCompanion);
+
+      var hideousAppendages = new HideousAppendages(FourCC("Huth"))
+      {
+        TentacleUnitTypeId = FourCC("nfgt")
+      };
+      SpellSystem.Register(hideousAppendages);
     }
   }
 }
