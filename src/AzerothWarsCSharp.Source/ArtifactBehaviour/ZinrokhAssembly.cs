@@ -1,10 +1,13 @@
+using System;
 using AzerothWarsCSharp.MacroTools.ArtifactSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.Source.Setup;
 using WCSharp.Events;
+using static War3Api.Common; 
+using static War3Api.Blizzard; 
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
-using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
-
-namespace AzerothWarsCSharp.Source.Artifacts
+namespace AzerothWarsCSharp.Source.ArtifactBehaviour
 {
   public static class ZinrokhAssembly
   {
@@ -33,10 +36,17 @@ namespace AzerothWarsCSharp.Source.Artifacts
         Consume(FourCC("I01M"));
         Consume(FourCC("I01I"));
         Consume(FourCC("I01L"));
-        var zinrokh = ArtifactManager.GetFromTypeId(FourCC("I016"));
-        UnitAddItemSafe(triggerUnit, zinrokh.Item);
-        DisplayTextToForce(bj_FORCE_ALL_PLAYERS,
-          GetTriggerPlayer().GetFaction()?.ColoredName + "|r has assembled Zin'rokh, Destroyer of Worlds!");
+
+        if (ArtifactSetup.ArtifactZinrokh != null)
+        {
+          ArtifactManager.Register(ArtifactSetup.ArtifactZinrokh);
+          UnitAddItemSafe(triggerUnit, ArtifactSetup.ArtifactZinrokh.Item);
+          DisplayTextToForce(bj_FORCE_ALL_PLAYERS,
+            $"{GetTriggerPlayer().GetFaction()?.ColoredName} |r has assembled Zin'rokh, Destroyer of Worlds!");
+          return;
+        }
+
+        throw new InvalidOperationException("Tried to register Zik'rokh but it does not exist.");
       }
     }
 

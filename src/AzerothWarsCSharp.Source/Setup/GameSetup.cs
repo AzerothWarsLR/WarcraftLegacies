@@ -4,6 +4,7 @@ using AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem;
 using AzerothWarsCSharp.MacroTools.Frames.Books.Powers;
 using AzerothWarsCSharp.MacroTools.Mechanics;
 using AzerothWarsCSharp.MacroTools.UserInterface;
+using AzerothWarsCSharp.Source.ArtifactBehaviour;
 using AzerothWarsCSharp.Source.Artifacts;
 using AzerothWarsCSharp.Source.Game_Logic.GameEnd;
 using AzerothWarsCSharp.Source.Hints;

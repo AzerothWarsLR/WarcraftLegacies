@@ -102,11 +102,8 @@ namespace AzerothWarsCSharp.Source.Setup
 
       ArtifactZinrokh = new Artifact(CreateItem(FourCC("I016"), DUMMY_X, DUMMY_Y))
       {
-        Status = ArtifactStatus.Hidden,
-        Description = "Assembled from its fragments",
         TitanforgedAbility = FourCC("A0VM")
       };
-      ArtifactSystem.Register(ArtifactZinrokh);
 
       tempArtifact = new Artifact(CreateItem(FourCC("I01M"), DUMMY_X, DUMMY_Y)); //Bronze Demon Soul Fragment
       UnitAddAbility(PreplacedUnitSystem.GetUnitByUnitType(FourCC("O024_0567")), Artifact.ArtifactHolderAbilId); //Ukorz
