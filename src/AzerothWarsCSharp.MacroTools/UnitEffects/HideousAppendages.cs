@@ -3,7 +3,7 @@ using AzerothWarsCSharp.MacroTools.SpellSystem;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.Spells
+namespace AzerothWarsCSharp.MacroTools.UnitEffects
 {
   /// <summary>
   ///   Causes the specified unit type to always have a squad of tentacles surrounding them.

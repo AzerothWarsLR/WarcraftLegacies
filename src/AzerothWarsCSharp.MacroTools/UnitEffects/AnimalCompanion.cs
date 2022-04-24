@@ -3,7 +3,7 @@ using AzerothWarsCSharp.MacroTools.SpellSystem;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.Spells
+namespace AzerothWarsCSharp.MacroTools.UnitEffects
 {
   /// <summary>
   ///   The ability holder summons a unit whenever it attacks, up to one unit alive at a time.

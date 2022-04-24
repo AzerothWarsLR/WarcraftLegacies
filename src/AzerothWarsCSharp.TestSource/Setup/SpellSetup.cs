@@ -1,5 +1,6 @@
 ﻿using AzerothWarsCSharp.MacroTools.Spells;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
+using AzerothWarsCSharp.MacroTools.UnitEffects;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.TestSource.Setup

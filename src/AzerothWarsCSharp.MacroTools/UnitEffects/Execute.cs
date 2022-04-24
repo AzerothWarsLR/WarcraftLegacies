@@ -2,7 +2,7 @@
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.Spells
+namespace AzerothWarsCSharp.MacroTools.UnitEffects
 {
   public sealed class Execute : UnitEffect
   {
