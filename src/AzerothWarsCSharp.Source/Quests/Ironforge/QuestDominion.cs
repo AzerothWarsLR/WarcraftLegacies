@@ -52,7 +52,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
     {
       foreach (var unit in _rescueUnits)
       {
-        UnitRescue(unit, Holder.Player);
+        UnitRescue(unit, Holder.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
       if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\DwarfTheme.mp3");
     }

@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
   public static class DraeneiSetup
   {
-    public static Faction Draenei { get; private set; }
+    public static Faction? Draenei { get; private set; }
 
     public static void Setup()
     {

@@ -32,7 +32,8 @@ using static AzerothWarsCSharp.MacroTools.Libraries.Display; namespace AzerothWa
       "The Frostwolf Clan has arrived on the shores of Kalimdor. Though their respect of the wild spirits is to be admired, their presence cannot be tolerated.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroTaurenChieftain.blp")
     {
-      AddQuestItem(new QuestItemLegendDead(LegendFrostwolf.LegendThunderbluff));
+      if (LegendFrostwolf.LegendThunderbluff != null)
+        AddQuestItem(new QuestItemLegendDead(LegendFrostwolf.LegendThunderbluff));
     }
   }
 }

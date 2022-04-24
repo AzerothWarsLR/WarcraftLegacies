@@ -22,7 +22,8 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
     protected override void OnComplete()
     {
-      AddHeroAttributes(LegendFrostwolf.LegendThrall.Unit, 10, 10, 10);
+      if (LegendFrostwolf.LegendThrall?.Unit != null) 
+        AddHeroAttributes(LegendFrostwolf.LegendThrall.Unit, 10, 10, 10);
     }
   }
 }

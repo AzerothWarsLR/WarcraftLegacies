@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
       Player(1).SetFaction(CthunSetup.FactionCthun);
       Player(2).SetFaction(DalaranSetup.Dalaran);
       Player(3).SetFaction(DraeneiSetup.Draenei);
-      Player(4).SetFaction(DruidsSetup.factionDruids);
+      Player(4).SetFaction(DruidsSetup.FactionDruids);
     }
   }
 }

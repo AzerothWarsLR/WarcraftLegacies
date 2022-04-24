@@ -9,8 +9,6 @@ namespace AzerothWarsCSharp.TestSource.Setup.FactionSetup.FactionSetup
     
     public static void Setup()
     {
-      Faction f;
-
       Dalaran = new Faction("Dalaran", PLAYER_COLOR_PINK, "|c00e55bb0",
         "ReplaceableTextures\\CommandButtons\\BTNJaina.blp")
       {
