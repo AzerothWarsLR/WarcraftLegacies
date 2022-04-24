@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       //Setup
       warsong.StartingQuest = warsong.AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
       warsong.AddQuest(new QuestCrossroads(Regions.Crossroads.Rect));
-      warsong.AddQuest(new QuestChenStormstout(PreplacedUnitSystem.GetUnitByUnitType(FourCC("Nsjs"))));
+      warsong.AddQuest(new QuestChenStormstout(PreplacedUnitSystem.GetUnit(FourCC("Nsjs"))));
       warsong.AddQuest(new QuestFountainOfBlood());
       //Early duel
       warsong.AddQuest(new QuestWarsongKillDruids());

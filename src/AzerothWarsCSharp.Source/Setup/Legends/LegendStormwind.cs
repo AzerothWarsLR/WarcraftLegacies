@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       {
         UnitType = FourCC("H00R")
       };
-      LegendVarian.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("h00X")));
+      LegendVarian.AddUnitDependency(PreplacedUnitSystem.GetUnit(FourCC("h00X")));
       LegendVarian.DeathMessage =
         "The King of Stormwind dies a warrior’s death, defending hearth and family. The Wrynn Dynasty crumbles with his passing.";
       LegendVarian.StartingXp = 1800;
@@ -48,15 +48,14 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 
       LegendStormwindkeep = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h00X")),
-        DeathMessage = "Stormwind Keep, the capitol of the nation of Stormwind, has been destroyed!",
-        
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("h00X")),
+        DeathMessage = "Stormwind Keep, the capitol of the nation of Stormwind, has been destroyed!"
       };
       Legend.Register(LegendStormwindkeep);
 
       LegendDarkshire = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h03Y"))
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("h03Y"))
       };
       Legend.Register(LegendDarkshire);
     }

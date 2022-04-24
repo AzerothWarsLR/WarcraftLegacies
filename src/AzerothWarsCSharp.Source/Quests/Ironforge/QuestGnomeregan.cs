@@ -13,23 +13,21 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
   {
     private static readonly int QuestResearchId = FourCC("R05Q");
     private readonly List<unit> _rescueUnits = new();
-    
+
     public QuestGnomeregan(Rectangle rescueRect) : base("The City of Invention",
       "The people of Gnomeregan have long been unable to assist the Alliance in its wars due an infestation of troggs and Ice Trolls. Resolve their conflicts for them to gain their services.",
       "ReplaceableTextures\\CommandButtons\\BTNFlyingMachine.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nitw")))); //Ice Troll Warlord
+      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nitw")))); //Ice Troll Warlord
       AddQuestItem(new QuestItemSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
-      {
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
-      }
     }
-    
+
     protected override string CompletionPopup =>
       "Gnomeregan has been literated, and its military is now free to assist the " + Holder.Team.Name + ".";
 
@@ -37,19 +35,13 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
 
     protected override void OnFail()
     {
-      foreach (var unit in _rescueUnits)
-      {
-        UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      }
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
     {
       SetPlayerTechResearched(Holder.Player, FourCC("R05Q"), 1);
-      foreach (var unit in _rescueUnits)
-      {
-        UnitRescue(unit, Holder.Player);
-      }
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
     }
 
     protected override void OnAdd()

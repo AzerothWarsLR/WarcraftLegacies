@@ -24,14 +24,13 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 
       LegendExodar = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o05E")),
-        
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("o05E"))
       };
       Legend.Register(LegendExodar);
 
       LegendExodarship = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h09W"))
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("h09W"))
       };
       Legend.Register(LegendExodarship);
 

@@ -12,9 +12,9 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
     public static Legend LegendUrsoc { get; private set; }
     public static Legend LegendTortolla { get; private set; }
     public static Legend LegendNordrassil { get; private set; }
-    public static int UnittypeCenariusAlive { get; private set; } = FourCC("Ecen");
-    public static int UnittypeCenariusGhost { get; private set; } = FourCC("E00H");
-    
+    public static int UnittypeCenariusAlive { get; } = FourCC("Ecen");
+    public static int UnittypeCenariusGhost { get; } = FourCC("E00H");
+
     public static void Setup()
     {
       Legend.Register(LegendCenarius = new Legend
@@ -30,10 +30,10 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 
       Legend.Register(LegendMalfurion = new Legend
       {
-        UnitType = FourCC("Efur"),
+        UnitType = FourCC("Efur")
       });
 
-      Legend.Register( LegendFandral = new Legend
+      Legend.Register(LegendFandral = new Legend
       {
         UnitType = FourCC("E00K")
       });
@@ -46,9 +46,8 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 
       Legend.Register(LegendNordrassil = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("n002")),
-        Capturable = true,
-        
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("n002")),
+        Capturable = true
       });
 
       Legend.Register(LegendTortolla = new Legend

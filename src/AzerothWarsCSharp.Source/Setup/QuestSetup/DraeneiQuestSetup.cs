@@ -3,7 +3,6 @@ using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.Source.Quests.Draenei;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
-
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
@@ -15,16 +14,16 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
     public static void Setup()
     {
       var draenei = DraeneiSetup.Draenei;
-      
+
       var questExiled = new QuestExiled
       {
-        GoldMine = PreplacedUnitSystem.GetUnitByUnitType(FourCC("ngol")),
+        GoldMine = PreplacedUnitSystem.GetUnit(FourCC("ngol")),
         KilledOnFail = new List<unit>
         {
-          PreplacedUnitSystem.GetUnitByUnitType(FourCC("o02P")),
-          PreplacedUnitSystem.GetUnitByUnitType(FourCC("o02P"))
+          PreplacedUnitSystem.GetUnit(FourCC("o02P")),
+          PreplacedUnitSystem.GetUnit(FourCC("o02P"))
         },
-        TheExodar = PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_H09W_THE_EXODAR)
+        TheExodar = PreplacedUnitSystem.GetUnit(Constants.UNIT_H09W_THE_EXODAR)
       };
       draenei.AddQuest(questExiled);
       draenei.StartingQuest = questExiled;

@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
     {
       LegendJaina = new Legend
       {
-        UnitType = FourCC("Hjai"),
+        UnitType = FourCC("Hjai")
       };
       Legend.Register(LegendJaina);
 
@@ -44,10 +44,9 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 
       LegendDalaranCapital = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h002")),
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("h002")),
         DeathMessage =
-          "The Violet Citadel, the ultimate bastion of arcane knowledge in the Eastern Kingdoms, crumbles like a sand castle.",
-        
+          "The Violet Citadel, the ultimate bastion of arcane knowledge in the Eastern Kingdoms, crumbles like a sand castle."
       };
       Legend.Register(LegendDalaranCapital);
 

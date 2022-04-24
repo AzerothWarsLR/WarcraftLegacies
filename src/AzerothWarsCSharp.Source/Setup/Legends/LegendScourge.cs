@@ -45,14 +45,14 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 
       LegendUtgarde = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h00O")),
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("h00O")),
         Capturable = true
       };
       Legend.Register(LegendUtgarde);
 
       LegendLichking = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("u000")),
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("u000")),
         Hivemind = true,
         DeathMessage =
           "The great Lich King has been destroyed. With no central mind to command them, the forces of the Undead have gone rogue."

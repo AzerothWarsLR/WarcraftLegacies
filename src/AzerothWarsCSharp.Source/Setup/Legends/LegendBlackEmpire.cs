@@ -9,17 +9,17 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
     public static Legend legendYogg;
     public static Legend legendVolazj;
     public static Legend legendZakajz;
-    
+
     public static void Setup()
     {
       Legend.Register(legendYogg = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("U02C")),
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("U02C")),
         PermaDies = true,
         DeathMessage =
           "Yogg-Saron, the Fiend of a Thousand Faces, has been vanquished. The countless souls consigned to his maw have finally been avenged."
       });
-      
+
       Legend.Register(legendVolazj = new Legend
       {
         UnitType = FourCC("E01D")

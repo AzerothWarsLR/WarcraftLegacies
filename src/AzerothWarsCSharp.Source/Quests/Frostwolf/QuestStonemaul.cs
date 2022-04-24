@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       "The Ogres of Stonemaul follow the strongest, slay the Chieftain to gain control of the base.",
       "ReplaceableTextures\\CommandButtons\\BTNOneHeadedOgre.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnitByUnitType(FourCC("noga")))); //Korgall
+      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnit(FourCC("noga")))); //Korgall
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n022"))));
       AddQuestItem(new QuestItemExpire(1505));
       AddQuestItem(new QuestItemSelfExists());

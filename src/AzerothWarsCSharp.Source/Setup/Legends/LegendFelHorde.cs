@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       {
         UnitType = FourCC("Nmag")
       };
-      LegendMagtheridon.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("o00F")));
+      LegendMagtheridon.AddUnitDependency(PreplacedUnitSystem.GetUnit(FourCC("o00F")));
       LegendMagtheridon.DeathMessage =
         "Magtheridon’s eternal demon soul has been consumed, and his life permanently extinguished. The Lord of Outland has fallen.";
       Legend.Register(LegendMagtheridon);
@@ -71,22 +71,21 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 
       LegendBlackrockspire = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o013")),
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("o013")),
         DeathMessage = "Blackrock Spire has been razed."
       };
       Legend.Register(LegendBlackrockspire);
 
       LegendBlacktemple = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o00F")),
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("o00F")),
         Capturable = true
       };
       Legend.Register(LegendBlacktemple);
 
       LegendHellfirecitadel = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o008")),
-        
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("o008"))
       };
       Legend.Register(LegendHellfirecitadel);
     }

@@ -17,16 +17,15 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
     {
       LegendTwilightcitadel = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h05U")),
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("h05U")),
         DeathMessage =
-          "The Twilight Citadel has been toppled. Already the land has begun to heal, but it may be decades before the permeating Old God stink fully dissipates from the Twilight Highlands.",
-        
+          "The Twilight Citadel has been toppled. Already the land has begun to heal, but it may be decades before the permeating Old God stink fully dissipates from the Twilight Highlands."
       };
       Legend.Register(LegendTwilightcitadel);
 
       LEGEND_DEATHWING = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("u01Y")),
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("u01Y")),
         PermaDies = true,
         DeathMessage = "Deathwing, the Black Scourge, is no more. The Destroyer has finally been defeated."
       };

@@ -45,9 +45,8 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 
       LegendStonemaul = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("o004")),
-        DeathMessage = "The fortress of the Stonemaul Clan has fallen.",
-        
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("o004")),
+        DeathMessage = "The fortress of the Stonemaul Clan has fallen."
       };
       Legend.Register(LegendStonemaul);
 

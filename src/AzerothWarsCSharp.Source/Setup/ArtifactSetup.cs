@@ -1,7 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ArtifactSystem;
 using WCSharp.Shared.Data;
-
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup
@@ -35,39 +34,40 @@ namespace AzerothWarsCSharp.Source.Setup
     public static void Setup()
     {
       Artifact tempArtifact;
-      
+
       ArtifactCrownstormwind = new Artifact(CreateItem(FourCC("I002"), DUMMY_X, DUMMY_Y));
-      UnitAddItem(PreplacedUnitSystem.GetUnitByUnitType(FourCC("n021")), ArtifactCrownstormwind.Item); //Hogger
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("n021")), ArtifactCrownstormwind.Item); //Hogger
       ArtifactSystem.Register(ArtifactCrownstormwind);
 
       ArtifactEyeofsargeras = new Artifact(CreateItem(FourCC("I003"), DUMMY_X, DUMMY_Y));
-      UnitAddAbility(PreplacedUnitSystem.GetUnitByUnitType(FourCC("n04O_1571")), Artifact.ArtifactHolderAbilId); //Doom Guard
-      UnitAddItem(PreplacedUnitSystem.GetUnitByUnitType(FourCC("n04O")), ArtifactEyeofsargeras.Item);
+      UnitAddAbility(PreplacedUnitSystem.GetUnit(FourCC("n04O_1571")), Artifact.ArtifactHolderAbilId); //Doom Guard
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("n04O")), ArtifactEyeofsargeras.Item);
       ArtifactSystem.Register(ArtifactEyeofsargeras);
 
       tempArtifact = new Artifact(CreateItem(FourCC("I00H"), DUMMY_X, DUMMY_Y)); //Sulfuras
-      UnitAddAbility(PreplacedUnitSystem.GetUnitByUnitType(FourCC("N00D_1457")), Artifact.ArtifactHolderAbilId); //Ragnaros
-      UnitAddItem(PreplacedUnitSystem.GetUnitByUnitType(FourCC("N00D")), tempArtifact.Item);
+      UnitAddAbility(PreplacedUnitSystem.GetUnit(FourCC("N00D_1457")), Artifact.ArtifactHolderAbilId); //Ragnaros
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("N00D")), tempArtifact.Item);
       tempArtifact.TitanforgedAbility = FourCC("A0VN");
       ArtifactSystem.Register(tempArtifact);
 
       ArtifactHelmofdomination = new Artifact(CreateItem(FourCC("I01Y"), DUMMY_X, DUMMY_Y)); //Helm of Domination
-      UnitAddAbility(PreplacedUnitSystem.GetUnitByUnitType(FourCC("u000_0649")), Artifact.ArtifactHolderAbilId); //Frozen Throne
-      UnitAddItem(PreplacedUnitSystem.GetUnitByUnitType(FourCC("u000")), ArtifactHelmofdomination.Item);
+      UnitAddAbility(PreplacedUnitSystem.GetUnit(FourCC("u000_0649")), Artifact.ArtifactHolderAbilId); //Frozen Throne
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("u000")), ArtifactHelmofdomination.Item);
       ArtifactSystem.Register(ArtifactHelmofdomination);
 
       ArtifactCrownlordaeron = new Artifact(CreateItem(FourCC("I001"), DUMMY_X, DUMMY_Y)); //Crown of Lordaeron
-      UnitAddAbility(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nemi_0019")), Artifact.ArtifactHolderAbilId); //King Terenas
-      UnitAddItem(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nemi")), ArtifactCrownlordaeron.Item);
+      UnitAddAbility(PreplacedUnitSystem.GetUnit(FourCC("nemi_0019")), Artifact.ArtifactHolderAbilId); //King Terenas
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("nemi")), ArtifactCrownlordaeron.Item);
       ArtifactSystem.Register(ArtifactCrownlordaeron);
 
       tempArtifact = new Artifact(CreateItem(FourCC("I00D"), DUMMY_X, DUMMY_Y)); //Shalamayne
-      UnitAddItem(PreplacedUnitSystem.GetUnitByUnitType(FourCC("n021")), tempArtifact.Item); //Hogger
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("n021")), tempArtifact.Item); //Hogger
       ArtifactSystem.Register(tempArtifact);
 
       tempArtifact = new Artifact(CreateItem(FourCC("klmm"), DUMMY_X, DUMMY_Y)); //Killmaim
-      UnitAddAbility(PreplacedUnitSystem.GetUnitByUnitType(FourCC("H00E_1728")), Artifact.ArtifactHolderAbilId); //Ramzes the Horror
-      UnitAddItem(PreplacedUnitSystem.GetUnitByUnitType(FourCC("H00E")), tempArtifact.Item);
+      UnitAddAbility(PreplacedUnitSystem.GetUnit(FourCC("H00E_1728")),
+        Artifact.ArtifactHolderAbilId); //Ramzes the Horror
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("H00E")), tempArtifact.Item);
       ArtifactSystem.Register(tempArtifact);
 
       tempArtifact = new Artifact(CreateItem(FourCC("I004"), -1480, -2240)); //The Doomhammer
@@ -85,13 +85,14 @@ namespace AzerothWarsCSharp.Source.Setup
       ArtifactSystem.Register(ArtifactTrolkalar);
 
       ArtifactScepterofthequeen = new Artifact(CreateItem(FourCC("I00I"), DUMMY_X, DUMMY_Y));
-      UnitAddAbility(PreplacedUnitSystem.GetUnitByUnitType(FourCC("n085_2846")), Artifact.ArtifactHolderAbilId); //The Atheneum
-      UnitAddItem(PreplacedUnitSystem.GetUnitByUnitType(FourCC("n085")), ArtifactScepterofthequeen.Item);
+      UnitAddAbility(PreplacedUnitSystem.GetUnit(FourCC("n085_2846")), Artifact.ArtifactHolderAbilId); //The Atheneum
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("n085")), ArtifactScepterofthequeen.Item);
       ArtifactSystem.Register(ArtifactScepterofthequeen);
 
       ArtifactBookofmedivh = new Artifact(CreateItem(FourCC("I006"), DUMMY_X, DUMMY_Y)); //Book of Medivh
-      UnitAddAbility(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nbsm_1188")), Artifact.ArtifactHolderAbilId); //Book of Medivh Pedestal
-      UnitAddItem(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nbsm")), ArtifactBookofmedivh.Item);
+      UnitAddAbility(PreplacedUnitSystem.GetUnit(FourCC("nbsm_1188")),
+        Artifact.ArtifactHolderAbilId); //Book of Medivh Pedestal
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("nbsm")), ArtifactBookofmedivh.Item);
       ArtifactSystem.Register(ArtifactBookofmedivh);
 
       ArtifactSkullofguldan = new Artifact(CreateItem(FourCC("I007"), 21886, -25219))
@@ -106,31 +107,31 @@ namespace AzerothWarsCSharp.Source.Setup
       };
 
       tempArtifact = new Artifact(CreateItem(FourCC("I01M"), DUMMY_X, DUMMY_Y)); //Bronze Demon Soul Fragment
-      UnitAddAbility(PreplacedUnitSystem.GetUnitByUnitType(FourCC("O024_0567")), Artifact.ArtifactHolderAbilId); //Ukorz
-      UnitAddItem(PreplacedUnitSystem.GetUnitByUnitType(FourCC("O024")), tempArtifact.Item);
+      UnitAddAbility(PreplacedUnitSystem.GetUnit(FourCC("O024_0567")), Artifact.ArtifactHolderAbilId); //Ukorz
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("O024")), tempArtifact.Item);
       ArtifactSystem.Register(tempArtifact);
 
       tempArtifact = new Artifact(CreateItem(FourCC("I01L"), DUMMY_X, DUMMY_Y)); //Black Demon Soul Fragment
-      UnitAddItem(PreplacedUnitSystem.GetUnitByUnitType(FourCC("o04E")), tempArtifact.Item);
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("o04E")), tempArtifact.Item);
       ArtifactSystem.Register(tempArtifact);
 
       tempArtifact = new Artifact(CreateItem(FourCC("I01J"), DUMMY_X, DUMMY_Y)); //Red Demon Soul Fragment
-      UnitAddAbility(PreplacedUnitSystem.GetUnitByUnitType(FourCC("O023_0517")), Artifact.ArtifactHolderAbilId); //Jin)do
-      UnitAddItem(PreplacedUnitSystem.GetUnitByUnitType(FourCC("O023")), tempArtifact.Item);
+      UnitAddAbility(PreplacedUnitSystem.GetUnit(FourCC("O023_0517")), Artifact.ArtifactHolderAbilId); //Jin)do
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("O023")), tempArtifact.Item);
       ArtifactSystem.Register(tempArtifact);
 
       tempArtifact = new Artifact(CreateItem(FourCC("I01I"), DUMMY_X, DUMMY_Y)); //Blue Demon Soul Fragment
-      UnitAddAbility(PreplacedUnitSystem.GetUnitByUnitType(FourCC("O02C_2437")), Artifact.ArtifactHolderAbilId); //Gal)darah
-      UnitAddItem(PreplacedUnitSystem.GetUnitByUnitType(FourCC("O02C")), tempArtifact.Item);
+      UnitAddAbility(PreplacedUnitSystem.GetUnit(FourCC("O02C_2437")), Artifact.ArtifactHolderAbilId); //Gal)darah
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("O02C")), tempArtifact.Item);
       ArtifactSystem.Register(tempArtifact);
 
       tempArtifact = new Artifact(CreateItem(FourCC("I01K"), DUMMY_X, DUMMY_Y)); //Green Demon Soul Fragment
-      UnitAddItem(PreplacedUnitSystem.GetUnitByUnitType(FourCC("O00O")), tempArtifact.Item);
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("O00O")), tempArtifact.Item);
       ArtifactSystem.Register(tempArtifact);
 
       tempArtifact = new Artifact(CreateItem(FourCC("arsh"), DUMMY_X, DUMMY_Y)); //Shroud of Nozdormuru
-      UnitAddAbility(PreplacedUnitSystem.GetUnitByUnitType(FourCC("O025_3426")), Artifact.ArtifactHolderAbilId); //Occulus
-      UnitAddItem(PreplacedUnitSystem.GetUnitByUnitType(FourCC("O025")), tempArtifact.Item);
+      UnitAddAbility(PreplacedUnitSystem.GetUnit(FourCC("O025_3426")), Artifact.ArtifactHolderAbilId); //Occulus
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("O025")), tempArtifact.Item);
       ArtifactSystem.Register(tempArtifact);
 
       ArtifactDrektharsspellbook = new Artifact(CreateItem(FourCC("dtsb"), DUMMY_X, DUMMY_Y))
@@ -149,26 +150,27 @@ namespace AzerothWarsCSharp.Source.Setup
       ArtifactSystem.Register(ArtifactSoulgem);
 
       ArtifactGhanir = new Artifact(CreateItem(FourCC("I00C"), DUMMY_X, DUMMY_Y)); //G)hanir
-      UnitAddAbility(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nbwd_0737")), Artifact.ArtifactHolderAbilId); //Barrow Den
-      UnitAddItem(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nbwd")), ArtifactGhanir.Item);
+      UnitAddAbility(PreplacedUnitSystem.GetUnit(FourCC("nbwd_0737")), Artifact.ArtifactHolderAbilId); //Barrow Den
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("nbwd")), ArtifactGhanir.Item);
       ArtifactSystem.Register(ArtifactGhanir);
 
       ArtifactHornofcenarius = new Artifact(CreateItem(FourCC("cnhn"), DUMMY_X, DUMMY_Y));
-      UnitAddAbility(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nhcn_2597")), Artifact.ArtifactHolderAbilId); //Horn of Cenarius Pedestal
-      UnitAddItem(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nhcn")), ArtifactHornofcenarius.Item);
+      UnitAddAbility(PreplacedUnitSystem.GetUnit(FourCC("nhcn_2597")),
+        Artifact.ArtifactHolderAbilId); //Horn of Cenarius Pedestal
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("nhcn")), ArtifactHornofcenarius.Item);
       ArtifactSystem.Register(ArtifactHornofcenarius);
 
       tempArtifact = new Artifact(CreateItem(FourCC("kgal"), DUMMY_X, DUMMY_Y)); //Keg of Thunderwater
-      UnitAddItem(PreplacedUnitSystem.GetUnitByUnitType(FourCC("hmtm")), tempArtifact.Item);
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("hmtm")), tempArtifact.Item);
       ArtifactSystem.Register(tempArtifact);
 
       tempArtifact = new Artifact(CreateItem(FourCC("I00J"), DUMMY_X, DUMMY_Y)); //Felo)melorn
-      UnitAddItem(PreplacedUnitSystem.GetUnitByUnitType(FourCC("O00O")), tempArtifact.Item); //Zuljin
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("O00O")), tempArtifact.Item); //Zuljin
       tempArtifact.TitanforgedAbility = FourCC("A0VN");
       ArtifactSystem.Register(tempArtifact);
 
       tempArtifact = new Artifact(CreateItem(FourCC("I00K"), DUMMY_X, DUMMY_Y)); //Essence
-      UnitAddItem(PreplacedUnitSystem.GetUnitByUnitType(FourCC("n03T")), tempArtifact.Item); //Murmur
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("n03T")), tempArtifact.Item); //Murmur
       ArtifactSystem.Register(tempArtifact);
 
       ArtifactCrowneasternkingdoms = new Artifact(CreateItem(FourCC("I00U"), DUMMY_X, DUMMY_Y))

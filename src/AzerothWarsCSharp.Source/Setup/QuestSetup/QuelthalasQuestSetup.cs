@@ -14,7 +14,8 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
     public static void Setup()
     {
       var quelthalas = QuelthalasSetup.FactionQuelthalas;
-      QuestData newQuest = quelthalas.AddQuest(new QuestSilvermoon(Regions.SunwellAmbient, PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS)));
+      QuestData newQuest = quelthalas.AddQuest(new QuestSilvermoon(Regions.SunwellAmbient,
+        PreplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS)));
       //QuestData tempestKeep = new QuestTempestKeep();
       quelthalas.StartingQuest = newQuest;
       quelthalas.AddQuest(new QuestTheBloodElves(Regions.BloodElfSecondChanceSpawn));

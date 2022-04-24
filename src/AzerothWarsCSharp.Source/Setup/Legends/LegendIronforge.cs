@@ -34,20 +34,19 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         DeathMessage = "King Magni Bronzebeard has died.", //Todo: bad flavour
         StartingXp = 1000
       };
-      LegendMagni.AddUnitDependency(PreplacedUnitSystem.GetUnitByUnitType(FourCC("h001")));
+      LegendMagni.AddUnitDependency(PreplacedUnitSystem.GetUnit(FourCC("h001")));
       Legend.Register(LegendMagni);
 
       LegendGreatforge = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h001")),
-        DeathMessage = "The Great Forge has been extinguished.", //Todo: mediocre flavour
-        
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("h001")),
+        DeathMessage = "The Great Forge has been extinguished." //Todo: mediocre flavour
       };
       Legend.Register(LegendGreatforge);
 
       LegendThelsamar = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h05H"))
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("h05H"))
       };
       Legend.Register(LegendThelsamar);
     }

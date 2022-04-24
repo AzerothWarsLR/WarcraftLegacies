@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       "ReplaceableTextures\\CommandButtons\\BTNBarracks.blp")
     {
       AddQuestItem(
-        new QuestItemKillUnit(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nrzm")))); //Razorman Medicine Man
+        new QuestItemKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nrzm")))); //Razorman Medicine Man
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01T"))));
       AddQuestItem(new QuestItemExpire(1460));
       AddQuestItem(new QuestItemSelfExists());

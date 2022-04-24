@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 
       kultiras.StartingQuest = kultiras.AddQuest(new QuestBoralus(Regions.Kultiras));
       kultiras.AddQuest(new QuestUnlockShip(Regions.ShipAmbient,
-        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_H08T_PROUDMOORE_FLAGSHIP_LANDED)));
+        PreplacedUnitSystem.GetUnit(Constants.UNIT_H08T_PROUDMOORE_FLAGSHIP_LANDED)));
       kultiras.AddQuest(new QuestSafeSea());
       kultiras.AddQuest(new QuestTheramore(Regions.Kultiras));
       kultiras.AddQuest(new QuestBeyondPortal());

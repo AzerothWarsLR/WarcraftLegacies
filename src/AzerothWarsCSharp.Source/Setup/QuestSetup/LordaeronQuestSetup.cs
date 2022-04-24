@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       lordaeron.AddQuest(questStratholme);
       lordaeron.StartingQuest = questStratholme;
       lordaeron.AddQuest(questStrahnbrad);
-      lordaeron.AddQuest(new QuestCapitalCity(Regions.Terenas, PreplacedUnitSystem.GetUnitByUnitType(FourCC("nemi")),
+      lordaeron.AddQuest(new QuestCapitalCity(Regions.Terenas, PreplacedUnitSystem.GetUnit(FourCC("nemi")),
         new QuestData[]
         {
           questStrahnbrad,
@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 
       lordaeron.AddQuest(new QuestShoresOfNorthrend());
       lordaeron.AddQuest(new QuestThunderEagle());
-      lordaeron.AddQuest(new QuestKingArthas(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nemi"))));
+      lordaeron.AddQuest(new QuestKingArthas(PreplacedUnitSystem.GetUnit(FourCC("nemi"))));
       lordaeron.AddQuest(new QuestLivingShadow());
       lordaeron.AddQuest(new QuestKingdomOfManLordaeron());
       lordaeron.AddQuest(new QuestGarithosCrusade());

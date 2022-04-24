@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 
       LegendScholomance = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("u012")),
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("u012")),
         DeathMessage = "Scholomance, the center of the ScourgeFourCC(s operations in Lordaeron, has been destroyed."
       };
       Legend.Register(LegendScholomance);

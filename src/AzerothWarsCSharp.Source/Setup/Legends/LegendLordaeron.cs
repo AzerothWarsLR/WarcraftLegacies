@@ -40,25 +40,22 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 
       LegendCapitalpalace = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h000")),
-        DeathMessage = "The capital city of Lordaeron has been razed, and King Terenas is dead.",
-        
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("h000")),
+        DeathMessage = "The capital city of Lordaeron has been razed, and King Terenas is dead."
       };
       Legend.Register(LegendCapitalpalace);
 
       LegendStratholme = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h01G")),
-        DeathMessage = "The majestic city of Stratholme has been destroyed.",
-        
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("h01G")),
+        DeathMessage = "The majestic city of Stratholme has been destroyed."
       };
       Legend.Register(LegendStratholme);
 
       LegendTyrshand = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h030")),
-        DeathMessage = "Tyr's Hand, the bastion of human power in Lordaeron, has fallen.",
-        
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("h030")),
+        DeathMessage = "Tyr's Hand, the bastion of human power in Lordaeron, has fallen."
       };
       Legend.Register(LegendTyrshand);
 
@@ -75,7 +72,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       LegendArthas = new Legend
       {
         UnitType = FourCC("Hart"),
-        PlayerColor = PLAYER_COLOR_BLUE,
+        PlayerColor = PLAYER_COLOR_BLUE
       };
       Legend.Register(LegendArthas);
     }

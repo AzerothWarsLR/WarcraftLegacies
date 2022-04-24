@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
       "The Old God C'thun is imprisoned deep within the temple of Ahn'qiraj, defended by mechanical wardens left behind by the Titans.",
       "ReplaceableTextures\\CommandButtons\\BTNArmorGolem.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnitByUnitType(FourCC("nsgg")))); //Golem
+      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nsgg")))); //Golem
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02K"))));
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n078"))));
       AddQuestItem(new QuestItemExpire(1428));

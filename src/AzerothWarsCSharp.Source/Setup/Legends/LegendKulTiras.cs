@@ -10,12 +10,12 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
     public static Legend LegendLucille { get; private set; }
     public static Legend LegendKatherine { get; private set; }
     public static Legend LegendBoralus { get; private set; }
-    
+
     public static void Setup()
     {
       LegendAdmiral = new Legend
       {
-        UnitType = FourCC("Hapm"),
+        UnitType = FourCC("Hapm")
       };
       Legend.Register(LegendAdmiral);
 
@@ -35,7 +35,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 
       LegendBoralus = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h046")),
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("h046")),
         DeathMessage = "Boralus Keep has fallen"
       };
       Legend.Register(LegendBoralus);

@@ -23,22 +23,20 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 
       legendAuberdine = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("e00J")),
-        
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("e00J"))
       };
       Legend.Register(legendAuberdine);
 
       legendFeathermoon = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("e00M")),
-        
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("e00M"))
       };
       Legend.Register(legendFeathermoon);
 
       legendTyrande = new Legend
       {
         UnitType = FourCC("Etyr"),
-        PlayerColor = PLAYER_COLOR_CYAN,
+        PlayerColor = PLAYER_COLOR_CYAN
       };
       Legend.Register(legendTyrande);
 

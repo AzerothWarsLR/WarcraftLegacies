@@ -1,10 +1,10 @@
 using System.Collections.Generic;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Shared.Data;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Ironforge
@@ -17,17 +17,15 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       "A vile group of Murloc is terrorizing Thelsamar. Destroy them!",
       "ReplaceableTextures\\CommandButtons\\BTNMurlocNightCrawler.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnitByUnitType(FourCC("N089")))); //Murloc
+      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnit(FourCC("N089")))); //Murloc
       AddQuestItem(new QuestItemExpire(1435));
       AddQuestItem(new QuestItemSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
-      {
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
-      }
     }
 
     protected override string CompletionPopup => "The Murlocs have been defeated, Thelsamar will join your cause.";
@@ -36,18 +34,12 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
 
     protected override void OnFail()
     {
-      foreach (var unit in _rescueUnits)
-      {
-        UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      }
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
     {
-      foreach (var unit in _rescueUnits)
-      {
-        UnitRescue(unit, Holder.Player);
-      }
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
     }
   }
 }

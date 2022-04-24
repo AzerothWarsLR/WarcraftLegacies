@@ -16,29 +16,27 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
   {
     private readonly unit _elvenRunestone;
     private readonly List<unit> _rescueUnits = new();
-    
+
     public QuestSilvermoon(Rectangle rescueRect, unit elvenRunestone) : base("The Siege of Silvermoon",
       "Silvermoon has been besieged by Trolls. Clear them out and destroy their city of Zul'aman.",
       "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp")
     {
       _elvenRunestone = elvenRunestone;
       AddQuestItem(new QuestItemKillUnit(
-        PreplacedUnitSystem.GetUnitByUnitType(Constants.UNIT_O00O_CHIEFTAN_OF_THE_AMANI_TRIBE_CREEP_ZUL_AMAN)));
+        PreplacedUnitSystem.GetUnit(Constants.UNIT_O00O_CHIEFTAN_OF_THE_AMANI_TRIBE_CREEP_ZUL_AMAN)));
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01V"))));
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01L"))));
       AddQuestItem(new QuestItemUpgrade(FourCC("h03T"), FourCC("h033")));
       AddQuestItem(new QuestItemExpire(1480));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = Constants.UPGRADE_R02U_QUEST_COMPLETED_THE_SIEGE_OF_SILVERMOON;
-      
+
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
-      {
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
           _rescueUnits.Add(unit);
           SetUnitInvulnerable(unit, true);
         }
-      }
     }
 
     protected override string CompletionPopup =>
@@ -49,19 +47,13 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     protected override void OnFail()
     {
-      foreach (var unit in _rescueUnits)
-      {
-        UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      }
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
     {
       SetPlayerTechResearched(Holder.Player, FourCC("R02U"), 1);
-      foreach (var unit in _rescueUnits)
-      {
-        UnitRescue(unit, Holder.Player);
-      }
+      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
       if (UnitAlive(_elvenRunestone))
         SetUnitInvulnerable(LegendQuelthalas.LegendSilvermoon.Unit, true);
       SetUnitInvulnerable(LegendQuelthalas.LegendSunwell.Unit, true);

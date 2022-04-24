@@ -16,11 +16,11 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
     {
       LEGEND_ARCHIMONDE = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("Uwar")),
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("Uwar")),
         PermaDies = true,
         DeathMessage =
           "Archimonde the Defiler has been banished from Azeroth, marking the end of his second failed invasion.",
-        StartingXp = 10800,
+        StartingXp = 10800
       };
       Legend.Register(LEGEND_ARCHIMONDE);
 

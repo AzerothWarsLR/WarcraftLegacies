@@ -22,17 +22,15 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
     {
       LegendSilvermoon = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("h003")),
-        DeathMessage = "The grand city of the high elves, Silvermoon, has been crushed by her enemies.",
-        
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("h003")),
+        DeathMessage = "The grand city of the high elves, Silvermoon, has been crushed by her enemies."
       };
       Legend.Register(LegendSilvermoon);
 
       LegendSunwell = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnitByUnitType(FourCC("n001")),
-        Capturable = true,
-        
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("n001")),
+        Capturable = true
       };
       Legend.Register(LegendSunwell);
 

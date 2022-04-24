@@ -16,14 +16,14 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       "The planet of Argus is not fully under the control of the Legion. Bring it under control!",
       "ReplaceableTextures\\CommandButtons\\BTNMastersLodge.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnitByUnitType(FourCC("h09U")))); //Knight
+      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnit(FourCC("h09U")))); //Knight
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BF"))));
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BH"))));
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BG"))));
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = FourCC("R055");
-      _rescueUnits.Add(PreplacedUnitSystem.GetUnitByUnitType(FourCC("n0BE")));
-      _rescueUnits.Add(PreplacedUnitSystem.GetUnitByUnitType(FourCC("n0BE")));
+      _rescueUnits.Add(PreplacedUnitSystem.GetUnit(FourCC("n0BE")));
+      _rescueUnits.Add(PreplacedUnitSystem.GetUnit(FourCC("n0BE")));
     }
 
     protected override string RewardDescription => "Enable to research Astral Walk and build a shop";
