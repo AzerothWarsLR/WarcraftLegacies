@@ -46,11 +46,14 @@ namespace AzerothWarsCSharp.TestSource.Setup
       };
       SpellSystem.Register(animalCompanion);
 
-      var hideousAppendages = new HideousAppendages(FourCC("Huth"))
-      {
-        TentacleUnitTypeId = FourCC("nfgt")
-      };
-      SpellSystem.Register(hideousAppendages);
+      // var hideousAppendages = new HideousAppendages(FourCC("Huth"))
+      // {
+      //   TentacleUnitTypeId = FourCC("nfgt")
+      // };
+      // SpellSystem.Register(hideousAppendages);
+
+      var spellResistanceAura = new SpellResistanceAura(FourCC("Huth"));
+      SpellSystem.Register(spellResistanceAura);
     }
   }
 }

@@ -1,19 +1,30 @@
-﻿using War3Api.Object;
+﻿using AzerothWarsCSharp.ObjectFactory.Abilities;
+using War3Api.Object;
 using War3Net.Build;
 
 namespace AzerothWarsCSharp.Launcher
 {
   /// <summary>
-  /// Helper class for adding object data to the map at compile time.
+  ///   Helper class for adding object data to the map at compile time.
   /// </summary>
   public static class ObjectEditor
   {
     /// <summary>
-    /// Adds additional object data to a map.
+    ///   Adds additional object data to a map.
     /// </summary>
     public static void SupplmentMapWithObjectData(Map map)
     {
       var objectDatabase = GetObjectDatabaseFromMap(map);
+      var slowAura = new EffectlessAuraFactory
+      {
+        AttachmentPoint = "origin",
+        Icon = "RunedBracers",
+        TextName = "Spell Resistance Aura",
+        IsPositive = true,
+        TextTooltipExtended = "This unit takes reduced damage from magic attacks and spells."
+      };
+      var buff = slowAura.GenerateBuff("BBBB", objectDatabase);
+      slowAura.Generate("AAAA", buff, objectDatabase);
       WriteObjectData(map, objectDatabase);
     }
 
