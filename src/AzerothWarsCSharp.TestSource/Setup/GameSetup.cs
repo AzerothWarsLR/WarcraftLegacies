@@ -1,4 +1,5 @@
 ﻿using System;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem;
 using AzerothWarsCSharp.MacroTools.Frames.Books.Powers;
 using AzerothWarsCSharp.MacroTools.Mechanics;
@@ -11,6 +12,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
   {
     public static void Setup()
     {
+      PreplacedUnitSystem.Initialize();
       Console.WriteLine("Setting up LegendSetup...");
       LegendSetup.Setup();
       Console.WriteLine("Setting up ShoreSetup...");
@@ -55,6 +57,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
       TestSetup.Setup();
       Console.WriteLine("Setting up WaygateManager...");
       WaygateManager.Setup(FourCC("nwgt"));
+      PreplacedUnitSystem.Shutdown();
     }
   }
 }
