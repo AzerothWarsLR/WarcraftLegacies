@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="War3Net.Build" Version="5.4.1" />
+    <PackageReference Include="War3Net.Common" Version="5.4.0" />
+  </ItemGroup>
+
+</Project>

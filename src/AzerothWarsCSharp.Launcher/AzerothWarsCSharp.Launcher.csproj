@@ -18,4 +18,9 @@
     <PackageReference Include="WCSharp.ConstantGenerator" Version="2.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AzerothWarsCSharp.ObjectFactory\AzerothWarsCSharp.ObjectFactory.csproj" />
+    <ProjectReference Include="..\War3Api.Object\War3Api.Object.csproj" />
+  </ItemGroup>
+
 </Project>

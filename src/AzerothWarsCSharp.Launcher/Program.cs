@@ -4,11 +4,14 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
+using AzerothWarsCSharp.ObjectFactory.Units;
 using CSharpLua;
 using Microsoft.CodeAnalysis;
+using War3Api.Object;
 using War3Net.Build;
 using War3Net.Build.Extensions;
 using War3Net.Build.Info;
+using War3Net.Build.Object;
 using War3Net.IO.Mpq;
 using WCSharp.ConstantGenerator;
 using CoreSystemProvider = CSharpLua.CoreSystem.CoreSystemProvider;
@@ -103,6 +106,8 @@ namespace AzerothWarsCSharp.Launcher
       builder.AddFiles(baseMapPath, "*", SearchOption.AllDirectories);
       builder.AddFiles(ASSETS_FOLDER_PATH, "*", SearchOption.AllDirectories);
 
+      ObjectEditor.SupplmentMapWithObjectData(map);
+      
       // Set debug options if necessary, configure compiler
       const string csc = DEBUG ? "-debug -define:DEBUG" : null;
       var csproj = Directory.EnumerateFiles(projectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
