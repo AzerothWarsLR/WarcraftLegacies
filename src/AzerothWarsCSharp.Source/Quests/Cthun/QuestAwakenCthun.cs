@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.MacroTools.Libraries;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -9,18 +9,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
   public sealed class QuestAwakenCthun : QuestData
   {
     private readonly unit _cthun;
-    
-    protected override string CompletionPopup =>
-      "C'thun, Old God of madness and chaos, has awakened from his slumber. Azeroth itself shrinks back in fear as this unfathomably evil entity unleashes its singular gaze for the first time in millenia.";
-    
-    protected override string RewardDescription =>
-      "Gain control of C'thun and the ability to train Wasps"; //Todo: from where?
 
-    protected override void OnComplete()
-    {
-      GeneralHelpers.UnitRescue(_cthun, Holder.Player);
-    }
-    
     public QuestAwakenCthun(unit cthun) : base("The Awakening of C'thun",
       "The Old God C'thun slumbers beneath the ruins of Ahn'qiraj. Skeram will need to awaken him with an unholy ritual.",
       "ReplaceableTextures\\CommandButtons\\BTNCthunIcon.blp")
@@ -30,6 +19,17 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
       ResearchId = FourCC("R06A");
       SetUnitInvulnerable(_cthun, true);
       PauseUnit(_cthun, true);
+    }
+
+    protected override string CompletionPopup =>
+      "C'thun, Old God of madness and chaos, has awakened from his slumber. Azeroth itself shrinks back in fear as this unfathomably evil entity unleashes its singular gaze for the first time in millenia.";
+
+    protected override string RewardDescription =>
+      "Gain control of C'thun and the ability to train Wasps"; //Todo: from where?
+
+    protected override void OnComplete()
+    {
+      _cthun.Rescue(Holder.Player);
     }
   }
 }

@@ -1,9 +1,9 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using static War3Api.Common;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Ironforge
 {
@@ -29,16 +29,17 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
     protected override void OnComplete()
     {
       group tempGroup = CreateGroup();
-      
+
       //Transfer all Neutral Passive units in region to Ironforge
       GroupEnumUnitsInRect(tempGroup, Regions.Aerie_Peak.Rect, null);
       while (true)
       {
         unit u = FirstOfGroup(tempGroup);
         if (u == null) break;
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) UnitRescue(u, Holder.Player);
+        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) u.Rescue(Holder.Player);
         GroupRemoveUnit(tempGroup, u);
       }
+
       DestroyGroup(tempGroup);
     }
 

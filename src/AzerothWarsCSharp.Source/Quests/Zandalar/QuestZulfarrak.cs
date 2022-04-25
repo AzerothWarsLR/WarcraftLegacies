@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -12,27 +12,8 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 {
   public sealed class QuestZulfarrak : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
-
     private const int GAHZRILLA_ID = Constants.UNIT_H06Q_DEMIGOD_WARSONG;
-
-    protected override string CompletionPopup =>
-      $"Zul'farrak has fallen. The Sandfury trolls lend their might to the {Holder.Team?.Name}.";
-
-    protected override string RewardDescription =>
-      "Control of Zul'farrak, 300 gold tribute, enable to train Storm Wyrm and you can summon the hero Gahz'rilla from the Altar of Conquerors";
-
-    protected override void OnComplete()
-    {
-      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
-      AdjustPlayerStateBJ(300, Holder.Player, PLAYER_STATE_RESOURCE_GOLD);
-      SetUnitOwner(LegendNeutral.LegendZulfarrak.Unit, Holder.Player, true);
-    }
-
-    protected override void OnAdd()
-    {
-      Holder.ModObjectLimit(GAHZRILLA_ID, 1);
-    }
+    private readonly List<unit> _rescueUnits = new();
 
     public QuestZulfarrak(Rectangle rescueRect) : base("Fury of the Sands",
       "The Sandfury Trolls of Zul'farrak are openly hostile to visitors, but they share a common heritage with the Zandalari Trolls. An adequate display of force could bring them around.",
@@ -46,6 +27,24 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
+    }
+
+    protected override string CompletionPopup =>
+      $"Zul'farrak has fallen. The Sandfury trolls lend their might to the {Holder.Team?.Name}.";
+
+    protected override string RewardDescription =>
+      "Control of Zul'farrak, 300 gold tribute, enable to train Storm Wyrm and you can summon the hero Gahz'rilla from the Altar of Conquerors";
+
+    protected override void OnComplete()
+    {
+      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      AdjustPlayerStateBJ(300, Holder.Player, PLAYER_STATE_RESOURCE_GOLD);
+      SetUnitOwner(LegendNeutral.LegendZulfarrak.Unit, Holder.Player, true);
+    }
+
+    protected override void OnAdd()
+    {
+      Holder.ModObjectLimit(GAHZRILLA_ID, 1);
     }
   }
 }

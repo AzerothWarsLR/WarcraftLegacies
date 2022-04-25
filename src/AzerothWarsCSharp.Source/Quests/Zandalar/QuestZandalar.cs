@@ -1,9 +1,9 @@
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Shared.Data;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 using static War3Api.Blizzard;
 
@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
           _rescueUnits.Add(unit);
         }
     }
-    
+
     protected override string CompletionPopup =>
       "The City of Gold is now yours to command and has joined the " + Holder.Team.Name + ".";
 
@@ -38,12 +38,12 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 
     protected override void OnFail()
     {
-      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
     {
-      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
       if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\ZandalarTheme.mp3");
     }
   }

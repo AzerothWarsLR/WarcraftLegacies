@@ -1,10 +1,10 @@
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using WCSharp.Shared.Data;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 using static War3Api.Blizzard;
 
@@ -36,14 +36,15 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
         }
     }
 
-    protected override string CompletionPopup => $"The Naxxramas has now been raised and under the control of the {Holder.Team.Name}.";
+    protected override string CompletionPopup =>
+      $"The Naxxramas has now been raised and under the control of the {Holder.Team.Name}.";
 
     protected override string RewardDescription => "Control of all units in Naxxramas";
 
     protected override void OnComplete()
     {
-      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
-      UnitRescue(_naxxramas, Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      _naxxramas.Rescue(Holder.Player);
       SetPlayerAbilityAvailableBJ(false, FourCC("A0O2"), Holder.Player);
     }
   }

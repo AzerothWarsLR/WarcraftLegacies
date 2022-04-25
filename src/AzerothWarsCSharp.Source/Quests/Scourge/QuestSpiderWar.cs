@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
@@ -6,7 +7,6 @@ using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 using static War3Api.Blizzard;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Scourge
 {
@@ -43,12 +43,12 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override void OnFail()
     {
-      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
     {
-      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
       SetPlayerTechResearched(Holder.Player, FourCC("R03A"), 1);
       if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\ScourgeTheme.mp3");
     }

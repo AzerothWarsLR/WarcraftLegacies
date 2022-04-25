@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -6,7 +7,6 @@ using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using WCSharp.Shared.Data;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 using static War3Api.Blizzard;
 
@@ -14,9 +14,9 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 {
   public sealed class QuestUndercity : QuestData
   {
+    private readonly List<unit> _rescueUnits = new();
     private readonly unit _waygateA;
     private readonly unit _waygateB;
-    private readonly List<unit> _rescueUnits = new();
 
     public QuestUndercity(Rectangle rescueRect, unit waygateA, unit waygateB) : base("Forsaken Independance",
       "The Forsaken had enough of living under the tyranny of the Lich King. Sylvanas has vowed to give them their freedom back and a home",
@@ -49,7 +49,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     protected override void OnFail()
     {
-      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private static void ActivatePortal(unit waygate, Point destination)
@@ -61,7 +61,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     protected override void OnComplete()
     {
-      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
       SetPlayerTechResearched(LordaeronSetup.FactionLordaeron.Player, FourCC("R08G"), 1);
       SetPlayerTechResearched(LegionSetup.FactionLegion.Player, FourCC("R08G"), 1);
       ActivatePortal(_waygateA, Regions.Undercity_Interior_2.Center);

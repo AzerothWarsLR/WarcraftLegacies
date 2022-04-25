@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -44,20 +45,20 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
     protected override void OnFail()
     {
-      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
     {
       group tempGroup = CreateGroup();
       //Transfer control of all passive units on island and teleport all Frostwolf units to shore
-      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
       GroupEnumUnitsInRect(tempGroup, Regions.Darkspear_Island.Rect, null);
       while (true)
       {
         unit u = FirstOfGroup(tempGroup);
         if (u == null) break;
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) UnitRescue(u, Holder.Player);
+        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) u.Rescue(Holder.Player);
         if (GetOwningPlayer(u) == FrostwolfSetup.FACTION_FROSTWOLF.Player &&
             IsUnitType(u, UNIT_TYPE_STRUCTURE) == false)
           SetUnitPosition(u, GetRandomReal(Regions.ThrallLanding.Center.X, Regions.ThrallLanding.Center.Y),
@@ -68,7 +69,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       DestroyGroup(tempGroup);
       RemoveWeatherEffectBJ(_storm);
       CreateUnits(Holder.Player, FourCC("opeo"), -1818, -2070, 270, 3);
-      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
     }
 
     protected override void OnAdd()

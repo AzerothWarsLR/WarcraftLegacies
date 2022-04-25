@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ArtifactSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
@@ -40,7 +41,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     protected override void OnFail()
     {
-      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       SetItemPosition(ArtifactSetup.ArtifactTrolkalar.Item, 140889, 12363);
       ArtifactSetup.ArtifactTrolkalar.Status = ArtifactStatus.Ground;
     }
@@ -49,7 +50,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     {
       UnitAddItemSafe(_questItemAnyUnitInRect.TriggerUnit, ArtifactSetup.ArtifactTrolkalar.Item);
       SetPlayerTechResearched(Holder.Player, ResearchId, 1);
-      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
     }
 
     protected override void OnAdd()

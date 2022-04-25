@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
-using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -50,13 +49,13 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
 
     protected override void OnFail()
     {
-      foreach (var unit in _rescueUnits) GeneralHelpers.UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       ActivateWaygate();
     }
 
     protected override void OnComplete()
     {
-      foreach (var unit in _rescueUnits) GeneralHelpers.UnitRescue(unit, Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
       ActivateWaygate();
     }
   }

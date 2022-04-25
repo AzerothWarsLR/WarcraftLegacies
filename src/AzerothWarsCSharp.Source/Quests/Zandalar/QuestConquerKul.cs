@@ -1,7 +1,7 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Zandalar
@@ -44,7 +44,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
           if (IsUnitType(u, UNIT_TYPE_HERO))
             KillUnit(u);
           else
-            UnitRescue(u, Holder.Player);
+            u.Rescue(Holder.Player);
         }
 
         GroupRemoveUnit(tempGroup, u);

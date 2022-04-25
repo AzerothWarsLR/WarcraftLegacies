@@ -1,4 +1,4 @@
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       AddQuestItem(new QuestItemExpire(1440));
       AddQuestItem(new QuestItemSelfExists());
     }
-    
+
     protected override string CompletionPopup => "Varian has come to relieve the Nethergarde garrison.";
 
     protected override string RewardDescription => "You gain control of the Nethergarde base";
@@ -32,13 +32,12 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       while (true)
       {
         if (u == null) break;
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) UnitRescue(u, whichPlayer);
+        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) u.Rescue(whichPlayer);
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
       }
 
       DestroyGroup(tempGroup);
-      
     }
 
     protected override void OnFail()

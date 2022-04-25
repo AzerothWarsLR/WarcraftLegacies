@@ -1,10 +1,10 @@
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Shared.Data;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 using static War3Api.Blizzard;
 
@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
   public sealed class QuestDominion : QuestData
   {
     private readonly List<unit> _rescueUnits = new();
-    
+
     public QuestDominion(Rectangle rescueRect) : base("Dwarven Dominion",
       "The Dwarven Dominion must be established before Ironforge can join the war.",
       "ReplaceableTextures\\CommandButtons\\BTNNorthrendCastle.blp")
@@ -26,13 +26,11 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       AddQuestItem(new QuestItemSelfExists());
       ResearchId = FourCC("R043");
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
-      {
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
-      }
     }
 
     protected override string CompletionPopup =>
@@ -42,18 +40,12 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
 
     protected override void OnFail()
     {
-      foreach (var unit in _rescueUnits)
-      {
-        UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      }
+      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
     {
-      foreach (var unit in _rescueUnits)
-      {
-        UnitRescue(unit, Holder.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      }
+      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE));
       if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\DwarfTheme.mp3");
     }
   }

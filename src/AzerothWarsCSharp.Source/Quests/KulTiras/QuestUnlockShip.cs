@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using AzerothWarsCSharp.MacroTools.Libraries;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -43,7 +43,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 
     protected override void OnComplete()
     {
-      foreach (var unit in _rescueUnits) GeneralHelpers.UnitRescue(unit, Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
       PauseUnit(_proudmooreCapitalShip, false);
     }
 
@@ -57,7 +57,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
           GetUnitY(LegendKultiras.LegendKatherine.Unit)));
       if (GetLocalPlayer() == Holder.Player)
         SetCameraPosition(Regions.ShipAmbient.Center.X, Regions.ShipAmbient.Center.Y);
-      foreach (var unit in _rescueUnits) GeneralHelpers.UnitRescue(unit, Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
       PauseUnit(_proudmooreCapitalShip, true);
       SetUnitOwner(_proudmooreCapitalShip, Holder.Player, true);
     }

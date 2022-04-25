@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using static War3Api.Common;
 using static War3Api.Blizzard;
 
@@ -143,17 +142,6 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
         sfx = "Abilities\\Spells\\Items\\AIlm\\AIlmTarget.mdl";
 
       DestroyEffect(AddSpecialEffect(sfx, GetUnitX(whichUnit), GetUnitY(whichUnit)));
-    }
-
-    /// <summary>
-    ///   Reveals the unit, makes it vulnerable, and transfers its ownership to the specified player.
-    /// </summary>
-    public static void UnitRescue(unit whichUnit, player whichPlayer)
-    {
-      //If the unit costs 10 food, that means it should be owned by neutral passive instead of the rescuing player.
-      SetUnitOwner(whichUnit, GetUnitFoodUsed(whichUnit) == 10 ? Player(PLAYER_NEUTRAL_PASSIVE) : whichPlayer, true);
-      ShowUnit(whichUnit, true);
-      SetUnitInvulnerable(whichUnit, false);
     }
 
     /// <summary>

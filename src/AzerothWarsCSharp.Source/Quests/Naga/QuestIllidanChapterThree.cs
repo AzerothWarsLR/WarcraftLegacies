@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using AzerothWarsCSharp.MacroTools.Libraries;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -41,8 +41,8 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     protected override void OnComplete()
     {
-      foreach (var unit in _rescueUnits) GeneralHelpers.UnitRescue(unit, Holder.Player);
-      foreach (var unit in _rescueUnits) GeneralHelpers.UnitRescue(unit, Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
       NagaSetup.FactionNaga.AddQuest(NagaQuestSetup.REDEMPTION_PATH);
       NagaQuestSetup.REDEMPTION_PATH.Progress = QuestProgress.Undiscovered;
       NagaSetup.FactionNaga.AddQuest(NagaQuestSetup.EXILE_PATH);

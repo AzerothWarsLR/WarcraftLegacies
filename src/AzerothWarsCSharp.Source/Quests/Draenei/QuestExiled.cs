@@ -1,11 +1,11 @@
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using AzerothWarsCSharp.Source.Setup.QuestSetup;
-
-using static War3Api.Common; using static War3Api.Blizzard;
+using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Quests.Draenei
 {
@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
     public IEnumerable<unit> KilledOnFail { get; init; }
 
     /// <summary>
-    /// Removed from the game when the Draenei escape.
+    ///   Removed from the game when the Draenei escape.
     /// </summary>
     public unit TheExodar { get; init; }
 
@@ -47,7 +47,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       while (true)
       {
         if (u == null) break;
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) UnitRescue(u, whichPlayer);
+        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) u.Rescue(whichPlayer);
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
       }
@@ -84,10 +84,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       group tempGroup = CreateGroup();
 
       GrantExiled(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      foreach (var unit in KilledOnFail)
-      {
-        KillUnit(unit);
-      }
+      foreach (var unit in KilledOnFail) KillUnit(unit);
 
       KillUnit(LegendDraenei.LegendVelen.Unit);
 
@@ -117,10 +114,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       GrantExiled(Holder.Player);
       EscapeOutland();
       RemoveUnit(TheExodar);
-      foreach (var unit in KilledOnFail)
-      {
-        KillUnit(unit);
-      }
+      foreach (var unit in KilledOnFail) KillUnit(unit);
 
       if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\DraeneiTheme.mp3");
     }

@@ -1,13 +1,23 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
-using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Quests.Goblin
 {
   public sealed class QuestBusinessExpansion : QuestData
   {
     private static readonly int QuestResearchId = FourCC("R07G");
+
+    public QuestBusinessExpansion() : base("Business Expansion",
+      "Trade Prince Gallywix will need a great amount of wealth to rule the future Goblin Empire; he needs to expand his business all over the world quickly.",
+      "ReplaceableTextures\\CommandButtons\\BTNGoblinPrince.blp")
+    {
+      AddQuestItem(new QuestItemTrain(FourCC("nzep"), FourCC("o04M"), 16));
+      AddQuestItem(new QuestItemTrain(FourCC("o04S"), FourCC("o04M"), 10));
+      ResearchId = QuestResearchId;
+    }
 
     protected override string RewardDescription => "The shipyard will be buildable";
 
@@ -22,15 +32,9 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
       unit u = FirstOfGroup(tempGroup);
       while (true)
       {
-        if (u == null)
-        {
-          break;
-        }
+        if (u == null) break;
 
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          UnitRescue(u, whichPlayer);
-        }
+        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) u.Rescue(whichPlayer);
 
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
@@ -47,19 +51,7 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
     protected override void OnComplete()
     {
       GrantGadetzan(Holder.Player);
-      if (GetLocalPlayer() == Holder.Player)
-      {
-        PlayThematicMusicBJ("war3mapImported\\GoblinTheme.mp3");
-      }
-    }
-
-    public QuestBusinessExpansion() : base ("Business Expansion",
-      "Trade Prince Gallywix will need a great amount of wealth to rule the future Goblin Empire; he needs to expand his business all over the world quickly.",
-      "ReplaceableTextures\\CommandButtons\\BTNGoblinPrince.blp")
-    {
-      AddQuestItem(new QuestItemTrain(FourCC("nzep"), FourCC("o04M"), 16));
-      AddQuestItem(new QuestItemTrain(FourCC("o04S"), FourCC("o04M"), 10));
-      ResearchId = QuestResearchId;
+      if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\GoblinTheme.mp3");
     }
   }
 }

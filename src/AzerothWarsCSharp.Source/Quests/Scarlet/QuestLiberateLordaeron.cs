@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
@@ -43,7 +44,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
 
     protected override void OnComplete()
     {
-      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
       KillNeutralHostileUnitsInRadius(4152, 16521, 2300);
       KillNeutralHostileUnitsInRadius(-2190, 16803, 700);
       CreateStructureForced(Holder.Player, FourCC("h08J"), -5133152, 1667969, 4757993 * bj_RADTODEG, 256);

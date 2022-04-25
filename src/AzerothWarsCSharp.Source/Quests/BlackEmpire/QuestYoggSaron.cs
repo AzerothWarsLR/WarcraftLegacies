@@ -1,9 +1,9 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using static War3Api.Common;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 {
@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 
     protected override void OnComplete()
     {
-      UnitRescue(LegendBlackEmpire.legendYogg.Unit, Holder.Player);
+      LegendBlackEmpire.legendYogg.Unit.Rescue(Holder.Player);
     }
   }
 }

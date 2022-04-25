@@ -1,11 +1,11 @@
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using WCSharp.Shared.Data;
-
 using static War3Api.Common;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
@@ -20,7 +20,8 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       "ReplaceableTextures\\CommandButtons\\BTNFurion.blp")
     {
       AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactHornofcenarius));
-      AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.ArtifactHornofcenarius, Regions.Moonglade, "The Barrow Den"));
+      AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.ArtifactHornofcenarius, Regions.Moonglade,
+        "The Barrow Den"));
       AddQuestItem(new QuestItemExpire(1440));
       AddQuestItem(new QuestItemSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(moonglade).EmptyToList())
@@ -29,19 +30,19 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
         _moongladeUnits.Add(unit);
       }
     }
-    
+
     protected override string CompletionPopup => "Malfurion has emerged from his deep slumber in the Barrow Den.";
 
     protected override string RewardDescription => "Gain the hero Malfurion and the artifact G'hanir";
 
     protected override void OnFail()
     {
-      foreach (var unit in _moongladeUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _moongladeUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete()
     {
-      foreach (var unit in _moongladeUnits) UnitRescue(unit, Holder.Player);
+      foreach (var unit in _moongladeUnits) unit.Rescue(Holder.Player);
       if (LegendDruids.LegendMalfurion.Unit == null)
       {
         LegendDruids.LegendMalfurion.Spawn(Holder.Player, Regions.Moonglade.Center.X, Regions.Moonglade.Center.Y,

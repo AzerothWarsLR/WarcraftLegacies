@@ -4,7 +4,6 @@ using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 using static War3Api.Blizzard;
 
@@ -38,7 +37,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
 
     private void GiveCrossroads(player whichPlayer)
     {
-      foreach (var unit in _rescueUnits) UnitRescue(unit, whichPlayer);
+      foreach (var unit in _rescueUnits) unit.Rescue(whichPlayer);
       var wardId = FourCC("oeye");
       CreateUnit(whichPlayer, wardId, -12844, -1975, 0);
       CreateUnit(whichPlayer, wardId, -10876, -2066, 0);

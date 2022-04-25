@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
@@ -7,14 +8,13 @@ using AzerothWarsCSharp.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 using static War3Api.Blizzard;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Druids
 {
   public sealed class QuestAshenvale : QuestData
   {
     private readonly List<unit> _rescueUnits = new();
-    
+
     public QuestAshenvale(Rectangle rescueRect) : base("The Spirits of Ashenvale",
       "The forest needs healing. Regain control of it to summon it's Guardian, the Demigod Cenarius",
       "ReplaceableTextures\\CommandButtons\\BTNKeeperC.blp")
@@ -35,7 +35,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
           _rescueUnits.Add(unit);
         }
     }
-    
+
     protected override string CompletionPopup => "Ashenvale is under control and Cenarius can now be awaken";
 
     protected override string RewardDescription =>
@@ -43,13 +43,13 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 
     protected override void OnFail()
     {
-      foreach (var unit in _rescueUnits) UnitRescue(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       _rescueUnits.Clear();
     }
 
     protected override void OnComplete()
     {
-      foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
       if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\DruidTheme.mp3");
       _rescueUnits.Clear();
     }
