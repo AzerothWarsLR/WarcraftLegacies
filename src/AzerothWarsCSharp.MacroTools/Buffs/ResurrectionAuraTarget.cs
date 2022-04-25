@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.MacroTools.Buffs
     {
       if (GetRandomReal(0, 1) < _resurrectionChance)
       {
-        GeneralHelpers.UnitResurrect(Target);
+        Target.Resurrect();
       }
       base.OnDeath(killingBlow);
     }

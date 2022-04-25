@@ -12,26 +12,6 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
     private static readonly group TempGroup = CreateGroup();
     private static readonly rect TempRect = Rect(0, 0, 0, 0);
 
-    /// <summary>
-    /// Resurrects a dead unit.
-    /// </summary>
-    /// <param name="whichUnit">The unit to resurrect.</param>
-    public static void UnitResurrect(unit whichUnit)
-    {
-      if (UnitAlive(whichUnit))
-      {
-        throw new ArgumentException("Tried to resurrect a unit that is already alive.");
-      }
-      
-      var x = GetUnitX(whichUnit);
-      var y = GetUnitY(whichUnit);
-      var unitType = GetUnitTypeId(whichUnit);
-      var face = GetUnitFacing(whichUnit);
-      DestroyEffect(AddSpecialEffect(@"Abilities\Spells\Human\Resurrect\ResurrectTarget.mdl", x, y));
-      RemoveUnit(whichUnit);
-      CreateUnit(GetOwningPlayer(whichUnit), unitType, x, y, face);
-    }
-    
     public static string DebugIdInteger2IdString(int value)
     {
       const string charMap =
