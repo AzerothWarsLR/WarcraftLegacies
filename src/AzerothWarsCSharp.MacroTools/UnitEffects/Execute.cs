@@ -1,5 +1,4 @@
-﻿using AzerothWarsCSharp.MacroTools.Libraries;
-using AzerothWarsCSharp.MacroTools.SpellSystem;
+﻿using AzerothWarsCSharp.MacroTools.SpellSystem;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.UnitEffects
@@ -17,7 +16,7 @@ namespace AzerothWarsCSharp.MacroTools.UnitEffects
     {
       unit triggerUnit = GetTriggerUnit();
       if (BlzGetEventIsAttack() && GetUnitState(triggerUnit, UNIT_STATE_LIFE) <
-        GetEventDamage() + GeneralHelpers.GetUnitAverageDamage(GetEventDamageSource(), 0) * DAMAGE_MULT)
+        GetEventDamage() + GetEventDamageSource().GetAverageDamage(0) * DAMAGE_MULT)
       {
         BlzSetEventDamage(GetUnitState(triggerUnit, UNIT_STATE_LIFE) + 1);
         DestroyEffect(AddSpecialEffectTarget(EFFECT, triggerUnit, "origin"));

@@ -3,7 +3,6 @@ using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Legion
 {
@@ -26,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
     protected override void OnComplete()
     {
       Display.DisplayHeroReward(LegendLegion.LEGEND_TICHONDRIUS.Unit, 15, 15, 15, 0);
-      AddHeroAttributes(LegendLegion.LEGEND_TICHONDRIUS.Unit, 15, 15, 15);
+      LegendLegion.LEGEND_TICHONDRIUS.Unit.AddHeroAttributes(15, 15, 15);
     }
   }
 }

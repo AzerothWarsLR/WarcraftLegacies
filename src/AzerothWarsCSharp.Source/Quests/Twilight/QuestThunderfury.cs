@@ -1,10 +1,10 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using static War3Api.Common;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Twilight
 {
@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
 
     protected override void OnComplete()
     {
-      UnitAddItemSafe(LegendFelHorde.LegendChogall.Unit, ArtifactSetup.ArtifactThunderfury.Item);
+      LegendFelHorde.LegendChogall.Unit.AddItemSafe(ArtifactSetup.ArtifactThunderfury.Item);
     }
   }
 }

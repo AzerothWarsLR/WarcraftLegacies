@@ -1,8 +1,8 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.Legends;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Cthun
 {
@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
 
     protected override void OnComplete()
     {
-      UnitAddItemSafe(LegendCthun.legendSkeram.Unit, ArtifactSetup.ArtifactDemonsoul.Item);
+      LegendCthun.legendSkeram.Unit.AddItemSafe(ArtifactSetup.ArtifactDemonsoul.Item);
     }
   }
 }

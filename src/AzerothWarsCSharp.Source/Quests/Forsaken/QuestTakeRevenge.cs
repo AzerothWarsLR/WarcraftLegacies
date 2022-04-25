@@ -1,9 +1,9 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using static War3Api.Common;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Forsaken
 {
@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       BlzSetUnitName(whichUnit, "Banshee Queen");
       AddSpecialEffectTarget("war3mapImported\\SoulArmor.mdx", whichUnit, "chest");
       BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0, 5); //Chaos
-      AddHeroAttributes(whichUnit, 20, 0, 20);
+      whichUnit.AddHeroAttributes(20, 0, 20);
       LegendForsaken.LegendSylvanasv.ClearUnitDependencies();
     }
   }

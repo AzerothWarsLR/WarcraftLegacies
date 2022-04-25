@@ -1,4 +1,4 @@
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       AddQuestItem(new QuestItemLegendInRect(LegendLordaeron.LegendUther, Regions.TwilightOutside, "Twilight Citadel"));
       AddQuestItem(new QuestItemLegendDead(LegendTwilight.LegendTwilightcitadel));
     }
-    
+
     protected override string CompletionPopup =>
       "Uther has discovered the Living Embodiment of Shadow in the ruins of the Twilight Citadel";
 
@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     protected override void OnComplete()
     {
-      UnitAddItemSafe(LegendLordaeron.LegendUther.Unit, ArtifactSetup.ArtifactLivingshadow.Item);
+      LegendLordaeron.LegendUther.Unit.AddItemSafe(ArtifactSetup.ArtifactLivingshadow.Item);
       LordaeronSetup.FactionLordaeron.AddQuest(LordaeronQuestSetup.TheAshbringer);
       LordaeronQuestSetup.TheAshbringer.Progress = QuestProgress.Incomplete;
     }

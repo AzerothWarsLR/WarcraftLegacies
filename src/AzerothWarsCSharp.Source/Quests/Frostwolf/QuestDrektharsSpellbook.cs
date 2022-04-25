@@ -1,5 +1,5 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ArtifactSystem;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       if (drektharsSpellbook != null && LegendFrostwolf.LegendThrall?.Unit != null)
       {
         drektharsSpellbook.Status = ArtifactStatus.Ground;
-        UnitAddItemSafe(LegendFrostwolf.LegendThrall.Unit, drektharsSpellbook.Item);
+        LegendFrostwolf.LegendThrall.Unit.AddItemSafe(drektharsSpellbook.Item);
       }
     }
   }

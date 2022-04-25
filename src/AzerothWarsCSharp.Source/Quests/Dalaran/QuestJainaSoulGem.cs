@@ -1,8 +1,8 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.Legends;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {
@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     protected override void OnComplete()
     {
-      UnitAddItemSafe(LegendDalaran.LegendJaina.Unit, ArtifactSetup.ArtifactSoulgem.Item);
+      LegendDalaran.LegendJaina.Unit.AddItemSafe(ArtifactSetup.ArtifactSoulgem.Item);
     }
   }
 }

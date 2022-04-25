@@ -1,4 +1,4 @@
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
   {
     private static readonly int QuestResearchId = FourCC("R08A"); //This research is given when the quest is completed
     private readonly unit _terenas;
-    
+
     public QuestKingArthas(unit terenas) : base("Line of Succession",
       "Arthas Menethil is the one true heir of the Kingdom of Lordaeron. The only thing standing in the way of his coronation is the world-ending threat of the Scourge.",
       "ReplaceableTextures\\CommandButtons\\BTNArthas.blp")
@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       BlzSetUnitName(_terenas, "King Emeritus Terenas Menethil");
       RemoveUnit(_terenas);
       AddHeroXP(LegendLordaeron.LegendArthas.Unit, 2000, true);
-      UnitAddItemSafe(LegendLordaeron.LegendArthas.Unit, ArtifactSetup.ArtifactCrownlordaeron.Item);
+      LegendLordaeron.LegendArthas.Unit.AddItemSafe(ArtifactSetup.ArtifactCrownlordaeron.Item);
       LegendLordaeron.LegendArthas.ClearUnitDependencies();
     }
   }

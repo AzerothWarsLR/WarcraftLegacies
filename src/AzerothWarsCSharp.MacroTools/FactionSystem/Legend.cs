@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using WCSharp.Events;
 using static War3Api.Common;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
@@ -102,7 +101,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         if (Unit != null)
         {
           ByUnit.Remove(Unit);
-          UnitDropAllItems(Unit);
+          Unit.DropAllItems();
           RemoveUnit(_unit);
         }
 
@@ -169,7 +168,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
           SetUnitState(newUnit, UNIT_STATE_LIFE, GetUnitState(_unit, UNIT_STATE_LIFE));
           SetUnitState(newUnit, UNIT_STATE_MANA, GetUnitState(_unit, UNIT_STATE_MANA));
           SetHeroXP(newUnit, GetHeroXP(_unit), false);
-          UnitTransferItems(_unit, newUnit);
+          _unit.TransferItems(newUnit);
           var oldX = GetUnitX(_unit);
           var oldY = GetUnitY(_unit);
           RemoveUnit(_unit);
@@ -292,7 +291,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         DestroyEffect(tempEffect);
         if (_unit != null)
         {
-          UnitDropAllItems(_unit);
+          _unit.DropAllItems();
           RemoveUnit(_unit);
         }
       }

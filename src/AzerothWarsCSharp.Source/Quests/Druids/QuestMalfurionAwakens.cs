@@ -7,7 +7,6 @@ using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Druids
 {
@@ -48,7 +47,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
         LegendDruids.LegendMalfurion.Spawn(Holder.Player, Regions.Moonglade.Center.X, Regions.Moonglade.Center.Y,
           270);
         SetHeroLevel(LegendDruids.LegendMalfurion.Unit, 3, false);
-        UnitAddItemSafe(LegendDruids.LegendMalfurion.Unit, ArtifactSetup.ArtifactGhanir.Item);
+        LegendDruids.LegendMalfurion.Unit.AddItemSafe(ArtifactSetup.ArtifactGhanir.Item);
       }
       else
       {

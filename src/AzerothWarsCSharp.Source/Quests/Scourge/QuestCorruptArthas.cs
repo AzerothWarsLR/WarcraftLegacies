@@ -1,5 +1,5 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
@@ -31,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override void OnComplete()
     {
-      UnitDropAllItems(LegendLordaeron.LegendArthas.Unit);
+      LegendLordaeron.LegendArthas.Unit.DropAllItems();
       RemoveUnit(LegendLordaeron.LegendArthas.Unit);
       LegendLordaeron.LegendArthas.Unit = null;
       LegendLordaeron.LegendArthas.PlayerColor = PLAYER_COLOR_PURPLE;

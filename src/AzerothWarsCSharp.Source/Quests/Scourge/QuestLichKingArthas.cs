@@ -4,7 +4,6 @@ using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using AzerothWarsCSharp.Source.Setup.Legends;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 using static War3Api.Blizzard;
 
@@ -54,7 +53,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
         GetUnitState(LegendLordaeron.LegendArthas.Unit, UNIT_STATE_MAX_LIFE));
       SetUnitState(LegendLordaeron.LegendArthas.Unit, UNIT_STATE_MANA,
         GetUnitState(LegendLordaeron.LegendArthas.Unit, UNIT_STATE_MAX_MANA));
-      UnitAddItemSafe(LegendLordaeron.LegendArthas.Unit, ArtifactSetup.ArtifactHelmofdomination.Item);
+      LegendLordaeron.LegendArthas.Unit.AddItemSafe(ArtifactSetup.ArtifactHelmofdomination.Item);
       Holder.Team = TeamSetup.Scourge;
       _utgardeKeep.Rescue(ScourgeSetup.FactionScourge.Player);
       SetPlayerStateBJ(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);

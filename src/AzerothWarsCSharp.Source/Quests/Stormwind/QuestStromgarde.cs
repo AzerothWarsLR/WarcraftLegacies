@@ -7,7 +7,6 @@ using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup;
 using WCSharp.Shared.Data;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Stormwind
@@ -48,7 +47,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     protected override void OnComplete()
     {
-      UnitAddItemSafe(_questItemAnyUnitInRect.TriggerUnit, ArtifactSetup.ArtifactTrolkalar.Item);
+      _questItemAnyUnitInRect.TriggerUnit.AddItemSafe(ArtifactSetup.ArtifactTrolkalar.Item);
       SetPlayerTechResearched(Holder.Player, ResearchId, 1);
       foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
     }

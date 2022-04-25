@@ -1,10 +1,10 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using static War3Api.Common;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Draenei
 {
@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
 
     protected override void OnComplete()
     {
-      UnitAddItemSafe(LegendDraenei.LegendVelen.Unit, ArtifactSetup.ArtifactCrowntriumvirate.Item);
+      LegendDraenei.LegendVelen.Unit.AddItemSafe(ArtifactSetup.ArtifactCrowntriumvirate.Item);
     }
   }
 }

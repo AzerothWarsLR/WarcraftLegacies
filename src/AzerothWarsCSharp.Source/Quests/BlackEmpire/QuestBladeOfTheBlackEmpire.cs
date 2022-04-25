@@ -1,9 +1,9 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using AzerothWarsCSharp.Source.Setup.Legends;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 {
@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
     protected override void OnComplete()
     {
       if (LegendBlackEmpire.legendVolazj.Unit != null && ArtifactSetup.ArtifactXalatath != null)
-        UnitAddItemSafe(LegendBlackEmpire.legendVolazj.Unit, ArtifactSetup.ArtifactXalatath.Item);
+        LegendBlackEmpire.legendVolazj.Unit.AddItemSafe(ArtifactSetup.ArtifactXalatath.Item);
       BlackEmpireSetup.FactionBlackempire.AddQuest(_sequel);
       _sequel.Progress = QuestProgress.Incomplete;
     }

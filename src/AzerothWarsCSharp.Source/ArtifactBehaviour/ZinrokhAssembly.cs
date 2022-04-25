@@ -1,11 +1,11 @@
 using System;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ArtifactSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.Source.Setup;
 using WCSharp.Events;
-using static War3Api.Common; 
-using static War3Api.Blizzard; 
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.ArtifactBehaviour
 {
@@ -40,7 +40,7 @@ namespace AzerothWarsCSharp.Source.ArtifactBehaviour
         if (ArtifactSetup.ArtifactZinrokh != null)
         {
           ArtifactManager.Register(ArtifactSetup.ArtifactZinrokh);
-          UnitAddItemSafe(triggerUnit, ArtifactSetup.ArtifactZinrokh.Item);
+          triggerUnit.AddItemSafe(ArtifactSetup.ArtifactZinrokh.Item);
           DisplayTextToForce(bj_FORCE_ALL_PLAYERS,
             $"{GetTriggerPlayer().GetFaction()?.ColoredName} |r has assembled Zin'rokh, Destroyer of Worlds!");
           return;

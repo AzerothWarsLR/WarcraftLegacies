@@ -1,4 +1,4 @@
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -22,8 +22,8 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
     protected override void OnComplete()
     {
-      if (LegendFrostwolf.LegendThrall?.Unit != null) 
-        AddHeroAttributes(LegendFrostwolf.LegendThrall.Unit, 10, 10, 10);
+      if (LegendFrostwolf.LegendThrall?.Unit != null)
+        LegendFrostwolf.LegendThrall.Unit.AddHeroAttributes(10, 10, 10);
     }
   }
 }

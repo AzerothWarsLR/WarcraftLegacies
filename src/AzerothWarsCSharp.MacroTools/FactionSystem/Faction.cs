@@ -304,10 +304,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public void AddPower(Power power)
     {
       _powers.Add(power);
-      if (Player != null)
-      {
-        power.OnAdd(Player);
-      }
+      if (Player != null) power.OnAdd(Player);
       PowerAdded?.Invoke(this, new FactionPowerEventArgs(this, power));
     }
 
@@ -317,10 +314,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public void RemovePower(Power power)
     {
       _powers.Remove(power);
-      if (Player != null)
-      {
-        power.OnRemove(Player);
-      }
+      if (Player != null) power.OnRemove(Player);
       PowerRemoved?.Invoke(this, new FactionPowerEventArgs(this, power));
     }
 
@@ -487,7 +481,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
           //Subtract hero's starting XP from refunded XP
           if (Legend.GetFromUnit(unit) != null) _xp -= Legend.GetFromUnit(unit)!.StartingXp;
 
-          UnitDropAllItems(unit);
+          unit.DropAllItems();
           RemoveUnit(unit);
           //Refund gold and lumber of refundable units
         }
@@ -495,7 +489,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         {
           Gold += loopUnitType.GoldCost * REFUND_PERCENT;
           Lumber += loopUnitType.LumberCost * REFUND_PERCENT;
-          UnitDropAllItems(unit);
+          unit.DropAllItems();
           RemoveUnit(unit);
         }
         //Transfer the ownership of everything else

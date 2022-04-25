@@ -1,5 +1,4 @@
-﻿using AzerothWarsCSharp.MacroTools.Libraries;
-using WCSharp.Buffs;
+﻿using WCSharp.Buffs;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Buffs
@@ -7,10 +6,19 @@ namespace AzerothWarsCSharp.MacroTools.Buffs
   public class SimulacrumBuff : PassiveBuff
   {
     private readonly float _damageScale;
-    private readonly float _hitpointScale;
-    private readonly string _effectTarget;
     private readonly float _effectScaleTarget;
-    
+    private readonly string _effectTarget;
+    private readonly float _hitpointScale;
+
+    public SimulacrumBuff(unit caster, unit target, float damageScale, float hitPointScale, string effectTarget,
+      float effectScaleTarget) : base(caster, target)
+    {
+      _damageScale = damageScale;
+      _hitpointScale = hitPointScale;
+      _effectTarget = effectTarget;
+      _effectScaleTarget = effectScaleTarget;
+    }
+
     public override void OnDeath(bool killingBlow)
     {
       Active = false;
@@ -26,25 +34,17 @@ namespace AzerothWarsCSharp.MacroTools.Buffs
       RemoveUnit(Target);
       base.OnDispose();
     }
-    
+
     public override void OnApply()
     {
       UnitAddType(Target, UNIT_TYPE_SUMMONED);
       UnitApplyTimedLife(Target, 0, Duration);
       SetUnitVertexColor(Target, 100, 100, 230, 150);
-      GeneralHelpers.ScaleUnitBaseDamage(Target, _damageScale, 0);
-      GeneralHelpers.ScaleUnitMaxHitpoints(Target, _hitpointScale);
+      Target.ScaleBaseDamage(_damageScale, 0);
+      Target.ScaleMaxHitpoints(_hitpointScale);
       var tempEffect = AddSpecialEffect(_effectTarget, GetUnitX(Target), GetUnitY(Target));
       BlzSetSpecialEffectScale(tempEffect, _effectScaleTarget);
       DestroyEffect(tempEffect);
-    }
-    
-    public SimulacrumBuff(unit caster, unit target, float damageScale, float hitPointScale, string effectTarget, float effectScaleTarget) : base(caster, target)
-    {
-      _damageScale = damageScale;
-      _hitpointScale = hitPointScale;
-      _effectTarget = effectTarget;
-      _effectScaleTarget = effectScaleTarget;
     }
   }
 }

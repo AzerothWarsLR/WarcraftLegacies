@@ -1,5 +1,5 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ArtifactSystem;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -29,13 +29,13 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
     protected override string CompletionPopup => "The Skull of Gul'dan";
 
     protected override string RewardDescription => "The Skull of Gul'dan has been retrieved by " +
-                                                       GetHeroProperName(_questItemAnyUnitInRect.TriggerUnit) +
-                                                       ". Its nefarious energies will fuel the Legion's operations on Azeroth.";
+                                                   GetHeroProperName(_questItemAnyUnitInRect.TriggerUnit) +
+                                                   ". Its nefarious energies will fuel the Legion's operations on Azeroth.";
 
     protected override void OnComplete()
     {
       ArtifactSetup.ArtifactSkullofguldan.Status = ArtifactStatus.Ground;
-      UnitAddItemSafe(_questItemAnyUnitInRect.TriggerUnit, ArtifactSetup.ArtifactSkullofguldan.Item);
+      _questItemAnyUnitInRect.TriggerUnit.AddItemSafe(ArtifactSetup.ArtifactSkullofguldan.Item);
     }
 
     protected override void OnFail()

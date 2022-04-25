@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ArtifactSystem;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
@@ -7,7 +8,6 @@ using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using static War3Api.Common;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {
@@ -41,7 +41,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       unit crownHolder = ArtifactSetup.ArtifactCrownstormwind.OwningUnit;
       RemoveItem(ArtifactSetup.ArtifactCrownlordaeron.Item);
       RemoveItem(ArtifactSetup.ArtifactCrownstormwind.Item);
-      UnitAddItemSafe(crownHolder, ArtifactSetup.ArtifactCrowneasternkingdoms.Item);
+      crownHolder.AddItemSafe(ArtifactSetup.ArtifactCrowneasternkingdoms.Item);
       ArtifactSetup.ArtifactCrownlordaeron.Status = ArtifactStatus.Hidden;
       ArtifactSetup.ArtifactCrownlordaeron.Description = "Melted down";
       ArtifactSetup.ArtifactCrownstormwind.Status = ArtifactStatus.Hidden;
