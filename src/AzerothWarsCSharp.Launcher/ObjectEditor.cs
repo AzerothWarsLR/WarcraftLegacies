@@ -25,6 +25,18 @@ namespace AzerothWarsCSharp.Launcher
       };
       var buff = slowAura.GenerateBuff("BBBB", objectDatabase);
       slowAura.Generate("AAAA", buff, objectDatabase);
+      
+      var resurrectionAura = new EffectlessAuraFactory
+      {
+        AttachmentPoint = "origin",
+        Icon = "Resurrection",
+        TextName = "Resurrection Aura",
+        IsPositive = true,
+        TextTooltipExtended = "This unit has a chance to resurrect on death."
+      };
+      var resurrectionAuraBuff = resurrectionAura.GenerateBuff("Ares", objectDatabase);
+      resurrectionAura.Generate("Hres", resurrectionAuraBuff, objectDatabase);
+      
       WriteObjectData(map, objectDatabase);
     }
 

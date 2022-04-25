@@ -52,8 +52,11 @@ namespace AzerothWarsCSharp.TestSource.Setup
       // };
       // SpellSystem.Register(hideousAppendages);
 
-      var spellResistanceAura = new SpellResistanceAura(FourCC("Huth"));
-      SpellSystem.Register(spellResistanceAura);
+      // var spellResistanceAura = new SpellResistanceAura(FourCC("Huth"));
+      // SpellSystem.Register(spellResistanceAura);
+      
+      var resurrectionAura = new ResurrectionAura(FourCC("Huth"));
+      SpellSystem.Register(resurrectionAura);
     }
   }
 }
