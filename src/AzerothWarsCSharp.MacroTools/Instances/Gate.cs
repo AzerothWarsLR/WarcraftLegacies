@@ -1,16 +1,27 @@
 ﻿using WCSharp.Shared.Data;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Instances
 {
   public sealed class Gate
   {
-    public Point InteriorPosition;
-    public Point ExteriorPosition;
+    private readonly unit _exteriorWaygate;
+    private readonly unit _interiorWaygate;
 
-    private Gate(Point interiorPosition, Point exteriorPosition)
+    private Gate(unit interiorWaygate, unit exteriorWaygate)
     {
-      InteriorPosition = interiorPosition;
-      ExteriorPosition = exteriorPosition;
+      _interiorWaygate = interiorWaygate;
+      _exteriorWaygate = exteriorWaygate;
+    }
+
+    public Point InteriorPosition => new(GetUnitX(_interiorWaygate), GetUnitY(_interiorWaygate));
+
+    public Point ExteriorPosition => new(GetUnitX(_exteriorWaygate), GetUnitY(_exteriorWaygate));
+
+    public void Destroy()
+    {
+      KillUnit(_interiorWaygate);
+      KillUnit(_exteriorWaygate);
     }
   }
 }
