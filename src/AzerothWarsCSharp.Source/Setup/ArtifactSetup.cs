@@ -40,8 +40,9 @@ namespace AzerothWarsCSharp.Source.Setup
       ArtifactSystem.Register(ArtifactCrownstormwind);
 
       ArtifactEyeofsargeras = new Artifact(CreateItem(FourCC("I003"), DUMMY_X, DUMMY_Y));
-      UnitAddAbility(PreplacedUnitSystem.GetUnit(FourCC("n04O_1571")), Artifact.ArtifactHolderAbilId); //Doom Guard
-      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("n04O")), ArtifactEyeofsargeras.Item);
+      var doomguard = PreplacedUnitSystem.GetUnit(FourCC("n04O"), new Point(-10028.1f, -23598.7f));
+      UnitAddAbility(doomguard, Artifact.ArtifactHolderAbilId);
+      UnitAddItem(doomguard, ArtifactEyeofsargeras.Item);
       ArtifactSystem.Register(ArtifactEyeofsargeras);
 
       tempArtifact = new Artifact(CreateItem(FourCC("I00H"), DUMMY_X, DUMMY_Y)); //Sulfuras
@@ -161,7 +162,7 @@ namespace AzerothWarsCSharp.Source.Setup
       ArtifactSystem.Register(ArtifactHornofcenarius);
 
       tempArtifact = new Artifact(CreateItem(FourCC("kgal"), DUMMY_X, DUMMY_Y)); //Keg of Thunderwater
-      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("hmtm")), tempArtifact.Item);
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("hmtm"), new Point(15109, -895)), tempArtifact.Item);
       ArtifactSystem.Register(tempArtifact);
 
       tempArtifact = new Artifact(CreateItem(FourCC("I00J"), DUMMY_X, DUMMY_Y)); //Felo)melorn

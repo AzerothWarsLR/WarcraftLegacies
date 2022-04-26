@@ -12,10 +12,10 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
     {
       var stormwind = StormwindSetup.Stormwind;
       QuestData newQuest =
-        stormwind.AddQuest(new QuestDarkshire(PreplacedUnitSystem.GetUnit(FourCC("ngnv"))));
+        stormwind.AddQuest(new QuestDarkshire(PreplacedUnitSystem.GetUnit(FourCC("ngnv"), Regions.DarkshireUnlock.Center)));
       stormwind.StartingQuest = newQuest;
       stormwind.AddQuest(new QuestLakeshire(Regions.LakeshireUnlock,
-        PreplacedUnitSystem.GetUnit(FourCC("nogl"))));
+        PreplacedUnitSystem.GetUnit(FourCC("nogl"), Regions.LakeshireUnlock.Center)));
       stormwind.AddQuest(new QuestGoldshire(Regions.ElwinForestAmbient,
         PreplacedUnitSystem.GetUnit(Constants.UNIT_N021_HOGGER)));
       stormwind.AddQuest(new QuestStormwindCity(Regions.StormwindUnlock));

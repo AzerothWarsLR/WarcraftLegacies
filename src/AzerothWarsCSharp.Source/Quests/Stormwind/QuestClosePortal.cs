@@ -1,6 +1,9 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
+using WCSharp.Shared.Data;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Stormwind
 {
@@ -20,17 +23,19 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     protected override void OnComplete()
     {
-      //Todo: uncomment the below
-      // RemoveUnit(gg_unit_n036_2719);
-      // RemoveUnit(gg_unit_n036_2720);
-      // RemoveUnit(gg_unit_n036_1065);
-      //
-      // RemoveUnit(gg_unit_n036_0778);
-      // RemoveUnit(gg_unit_n036_3291);
-      // RemoveUnit(gg_unit_n036_3292);
-      //
-      // RemoveUnit(gg_unit_n05J_3375);
-      // RemoveUnit(gg_unit_n05J_3370);
+      //Outside the portal
+      RemoveUnit(PreplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, new Point(15579, -19546)));
+      RemoveUnit(PreplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, new Point(16549, -19145)));
+      RemoveUnit(PreplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, new Point(17447, -19214)));
+
+      //Inside the portal
+      RemoveUnit(PreplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, new Point(4576, -24718)));
+      RemoveUnit(PreplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, new Point(4701, -25361)));
+      RemoveUnit(PreplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, new Point(5212, -25743)));
+
+      //Control Nexi
+      RemoveUnit(PreplacedUnitSystem.GetUnit(Constants.UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS, new Point(17420, -17900)));
+      RemoveUnit(PreplacedUnitSystem.GetUnit(Constants.UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS, new Point(3703, -26045)));
     }
   }
 }

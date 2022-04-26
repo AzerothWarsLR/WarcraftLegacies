@@ -8,17 +8,14 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
 {
   public sealed class QuestAwakenCthun : QuestData
   {
-    private readonly unit _cthun;
-
-    public QuestAwakenCthun(unit cthun) : base("The Awakening of C'thun",
+    public QuestAwakenCthun() : base("The Awakening of C'thun",
       "The Old God C'thun slumbers beneath the ruins of Ahn'qiraj. Skeram will need to awaken him with an unholy ritual.",
       "ReplaceableTextures\\CommandButtons\\BTNCthunIcon.blp")
     {
-      _cthun = cthun;
       AddQuestItem(new QuestItemChannelRect(Regions.CthunSummon, "C'thun", LegendCthun.legendSkeram, 420, 270));
-      ResearchId = FourCC("R06A");
-      SetUnitInvulnerable(_cthun, true);
-      PauseUnit(_cthun, true);
+      ResearchId = Constants.UPGRADE_R06A_QUEST_COMPLETED_C_THUN_AWAKENING;
+      SetUnitInvulnerable(LegendCthun.legendCthun.Unit, true);
+      PauseUnit(LegendCthun.legendCthun.Unit, true);
     }
 
     protected override string CompletionPopup =>
@@ -29,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
 
     protected override void OnComplete()
     {
-      _cthun.Rescue(Holder.Player);
+      LegendCthun.legendCthun.Unit.Rescue(Holder.Player);
     }
   }
 }

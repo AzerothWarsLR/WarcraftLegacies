@@ -7,10 +7,9 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
 {
   public sealed class QuestGatesofAhnqiraj : QuestData
   {
-    private unit _bigGate;
-    private unit _waygateA;
-    private unit _waygateB;
-    
+    private readonly unit _bigGate;
+    private readonly unit _waygateA;
+    private readonly unit _waygateB;
     
     protected override string CompletionPopup => "The Old God C'thun has awaken and now ready to unleash the Qiraji on the world of Azeorth.";
     

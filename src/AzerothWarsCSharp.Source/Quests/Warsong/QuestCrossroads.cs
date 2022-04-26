@@ -4,6 +4,7 @@ using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 using static War3Api.Blizzard;
 
@@ -13,12 +14,12 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
   {
     private readonly List<unit> _rescueUnits = new();
 
-    public QuestCrossroads(rect rescueRect) : base("The Crossroads",
+    public QuestCrossroads(Rectangle rescueRect) : base("The Crossroads",
       "The Horde still needs to establish a strong strategic foothold into Kalimdor. There is an opportune crossroads nearby.",
       "ReplaceableTextures\\CommandButtons\\BTNBarracks.blp")
     {
       AddQuestItem(
-        new QuestItemKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nrzm")))); //Razorman Medicine Man
+        new QuestItemKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nrzm"), rescueRect.Center))); //Razorman Medicine Man
       AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01T"))));
       AddQuestItem(new QuestItemExpire(1460));
       AddQuestItem(new QuestItemSelfExists());

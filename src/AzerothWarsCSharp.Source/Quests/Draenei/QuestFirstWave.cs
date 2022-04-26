@@ -20,10 +20,10 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       AddQuestItem(new QuestItemSelfExists());
       _unitsToKill = new List<unit>
       {
-        PreplacedUnitSystem.GetUnit(FourCC("o051")),
-        PreplacedUnitSystem.GetUnit(FourCC("o055")),
-        PreplacedUnitSystem.GetUnit(FourCC("o054")),
-        PreplacedUnitSystem.GetUnit(FourCC("n0BU"))
+        PreplacedUnitSystem.GetUnit(FourCC("o051"), Regions.DraeneiEvacuation.Center),
+        PreplacedUnitSystem.GetUnit(FourCC("o055"), Regions.DraeneiEvacuation.Center),
+        PreplacedUnitSystem.GetUnit(FourCC("o054"), Regions.DraeneiEvacuation.Center),
+        PreplacedUnitSystem.GetUnit(FourCC("n0BU"), Regions.DraeneiEvacuation.Center)
       };
     }
 

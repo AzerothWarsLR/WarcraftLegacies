@@ -23,8 +23,8 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     {
       _demonGates = demonGates;
       AddQuestItem(new QuestItemLegendDead(LegendDraenei.LegendExodarship));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01J"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02N"))));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N01J_ZANGARMARSH_15GOLD_MIN)));
+      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N02N_BLADE_S_EDGE_MOUNTAINS_15GOLD_MIN)));
       AddQuestItem(new QuestItemUpgrade(FourCC("o030"), FourCC("o02Y")));
       AddQuestItem(new QuestItemExpire(1450));
       AddQuestItem(new QuestItemSelfExists());

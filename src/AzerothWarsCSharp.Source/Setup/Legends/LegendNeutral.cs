@@ -203,7 +203,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 
       LegendCentaurkhan = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("ncnk"))
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("ncnk"), Regions.ThunderBluff.Center)
       };
       Legend.Register(LegendCentaurkhan);
 
