@@ -5,10 +5,11 @@ using AzerothWarsCSharp.MacroTools.Frames.Books.Powers;
 using AzerothWarsCSharp.MacroTools.Mechanics;
 using AzerothWarsCSharp.MacroTools.UserInterface;
 using AzerothWarsCSharp.Source.ArtifactBehaviour;
-using AzerothWarsCSharp.Source.Artifacts;
 using AzerothWarsCSharp.Source.Game_Logic.GameEnd;
 using AzerothWarsCSharp.Source.Hints;
 using AzerothWarsCSharp.Source.Mechanics.Quelthalas;
+using AzerothWarsCSharp.Source.Mechanics.Scourge;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup
 {
@@ -66,6 +67,10 @@ namespace AzerothWarsCSharp.Source.Setup
       HintConfig.Setup();
       Console.WriteLine("Setting up WaygateManager...");
       WaygateManager.Setup(Constants.UNIT_N0AO_WAY_GATE_DALARAN);
+      Console.WriteLine("Setting up BlightSystem...");
+      BlightSystem.Setup(ScourgeSetup.FactionScourge);
+      Console.WriteLine("Setting up BlightSetup...");
+      BlightSetup.Setup();
     }
   }
 }

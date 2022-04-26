@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 using static War3Api.Blizzard;
 
@@ -8,6 +9,13 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
   {
     private static readonly group TempGroup = CreateGroup();
     private static readonly rect TempRect = Rect(0, 0, 0, 0);
+
+    public static void SetBlightRadius(player whichPlayer, Point position, float radius, bool addBlight)
+    {
+      var location = Location(position.X, position.Y);
+      SetBlightLoc(whichPlayer, location, radius, addBlight);
+      RemoveLocation(location);
+    }
 
     public static string DebugIdInteger2IdString(int value)
     {
