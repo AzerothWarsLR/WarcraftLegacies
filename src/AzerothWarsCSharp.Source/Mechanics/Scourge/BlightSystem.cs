@@ -44,11 +44,13 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge
     public static void Register(unit whichUnit, BlightParameters blightParameters)
     {
       if (!_initialized) throw new SystemNotInitializedException($"{nameof(BlightSystem)} has not been initialized.");
-
-      var deathTrigger = CreateTrigger();
-      TriggerRegisterUnitEvent(deathTrigger, whichUnit, EVENT_UNIT_DEATH);
-      TriggerAddAction(deathTrigger, UnitDies);
-      BlightParameters.Add(whichUnit, blightParameters);
+      if (!BlightParameters.ContainsKey(whichUnit))
+      {
+        BlightParameters.Add(whichUnit, blightParameters);
+        var deathTrigger = CreateTrigger();
+        TriggerRegisterUnitEvent(deathTrigger, whichUnit, EVENT_UNIT_DEATH);
+        TriggerAddAction(deathTrigger, UnitDies);
+      }
     }
 
     public static void Setup(Faction blightFaction)

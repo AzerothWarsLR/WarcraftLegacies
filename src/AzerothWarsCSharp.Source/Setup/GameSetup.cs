@@ -57,8 +57,6 @@ namespace AzerothWarsCSharp.Source.Setup
       //IncompatibleTierConfig.Setup();
       Console.WriteLine("Setting up FactionMultiboard...");
       FactionMultiboard.Setup();
-      Console.WriteLine("Shutting down PreplacedUnitSystem...");
-      PreplacedUnitSystem.Shutdown();
       Console.WriteLine("Setting up ArtifactBook...");
       ArtifactBook.Initialize();
       Console.WriteLine("Setting up PowerBook...");
@@ -71,6 +69,8 @@ namespace AzerothWarsCSharp.Source.Setup
       BlightSystem.Setup(ScourgeSetup.FactionScourge);
       Console.WriteLine("Setting up BlightSetup...");
       BlightSetup.Setup();
+      Console.WriteLine("Shutting down PreplacedUnitSystem...");
+      PreplacedUnitSystem.Shutdown();
     }
   }
 }
