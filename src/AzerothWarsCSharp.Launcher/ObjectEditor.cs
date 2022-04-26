@@ -45,7 +45,7 @@ namespace AzerothWarsCSharp.Launcher
       var objectDatabase = new ObjectDatabase();
       if (map.AbilityObjectData != null) objectDatabase.AddObjects(map.AbilityObjectData);
       if (map.BuffObjectData != null) objectDatabase.AddObjects(map.BuffObjectData);
-      if (map.DestructableObjectData != null) objectDatabase.AddObjects(map.DestructableObjectData);
+      //if (map.DestructableObjectData != null) objectDatabase.AddObjects(map.DestructableObjectData);
       if (map.DoodadObjectData != null) objectDatabase.AddObjects(map.DoodadObjectData);
       if (map.ItemObjectData != null) objectDatabase.AddObjects(map.ItemObjectData);
       if (map.UnitObjectData != null) objectDatabase.AddObjects(map.UnitObjectData);
@@ -58,7 +58,7 @@ namespace AzerothWarsCSharp.Launcher
       var objectData = objectDatabase.GetAllData();
       if (objectData.UnitData != null) map.UnitObjectData = objectData.UnitData;
       if (objectData.ItemData != null) map.ItemObjectData = objectData.ItemData;
-      if (objectData.DestructableData != null) map.DestructableObjectData = objectData.DestructableData;
+      //if (objectData.DestructableData != null) map.DestructableObjectData = objectData.DestructableData;
       if (objectData.DoodadData != null) map.DoodadObjectData = objectData.DoodadData;
       if (objectData.AbilityData != null) map.AbilityObjectData = objectData.AbilityData;
       if (objectData.BuffData != null) map.BuffObjectData = objectData.BuffData;

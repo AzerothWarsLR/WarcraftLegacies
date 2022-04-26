@@ -101,6 +101,7 @@ namespace AzerothWarsCSharp.Launcher
       // Load existing map data
       var map = Map.Open(baseMapPath);
 
+      FixDoodadData(map);
       SetTestPlayerSlot(map, 0);
       var builder = new MapBuilder(map);
       builder.AddFiles(baseMapPath, "*", SearchOption.AllDirectories);
@@ -162,6 +163,20 @@ namespace AzerothWarsCSharp.Launcher
           player.Controller = PlayerController.Computer;
     }
 
+    private static void FixDoodadData(Map map)
+    {
+      if (map.Doodads != null)
+      {
+        var i = 0;
+        foreach (var doodad in map.Doodads.Doodads)
+        {
+          doodad.CreationNumber = i;
+          i++;
+        }
+      }
+        
+    }
+    
     private static void LaunchGame()
     {
       var wc3Exe = ConfigurationManager.AppSettings["wc3exe"];
