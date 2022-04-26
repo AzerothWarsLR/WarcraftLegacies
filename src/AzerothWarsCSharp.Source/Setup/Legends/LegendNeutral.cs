@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.Legends
@@ -161,35 +162,35 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       LegendFountainofhealth = new Legend
       {
         Capturable = true,
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("nfoh"))
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("nfoh"), Regions.AlteracAmbient.Center)
       };
       Legend.Register(LegendFountainofhealth);
 
       LegendFountainofhealthWetlands = new Legend
       {
         Capturable = true,
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("nfoh"))
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("nfoh"), Regions.WetlandAmbient1.Center)
       };
       Legend.Register(LegendFountainofhealthWetlands);
 
       LegendFountainofhealthFeralas = new Legend
       {
         Capturable = true,
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("nfoh"))
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("nfoh"), Regions.FeralasAmbient1.Center)
       };
       Legend.Register(LegendFountainofhealthFeralas);
 
       LegendFountainofhealthTomb = new Legend
       {
         Capturable = true,
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("nfoh"))
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("nfoh"), Regions.InstanceSargerasTomb.Center)
       };
       Legend.Register(LegendFountainofhealthTomb);
 
       LegendFountainofhealthDalaran = new Legend
       {
         Capturable = true,
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("nfoh"))
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("nfoh"), Regions.DalaranDungeon.Center)
       };
       Legend.Register(LegendFountainofhealthDalaran);
 
