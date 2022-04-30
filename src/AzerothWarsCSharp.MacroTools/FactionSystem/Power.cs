@@ -15,11 +15,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// <summary>
     ///   Fired when the <see cref="Power" /> is added to a <see cref="player" />.
     /// </summary>
-    protected internal abstract void OnAdd(player whichPlayer);
+    public abstract void OnAdd(player whichPlayer);
 
     /// <summary>
     ///   Fired when the <see cref="Power" /> is added to a <see cref="player" />.
     /// </summary>
-    protected internal abstract void OnRemove(player whichPlayer);
+    public abstract void OnRemove(player whichPlayer);
   }
 }

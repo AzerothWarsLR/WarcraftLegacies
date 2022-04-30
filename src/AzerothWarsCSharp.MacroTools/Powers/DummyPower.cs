@@ -12,11 +12,11 @@ namespace AzerothWarsCSharp.MacroTools.Powers
       IconName = iconName;
     }
 
-    protected internal override void OnAdd(Common.player whichPlayer)
+    public override void OnAdd(Common.player whichPlayer)
     {
     }
 
-    protected internal override void OnRemove(Common.player whichPlayer)
+    public override void OnRemove(Common.player whichPlayer)
     {
     }
   }

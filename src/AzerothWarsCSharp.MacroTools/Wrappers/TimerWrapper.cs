@@ -26,6 +26,7 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
     {
       if (disposing)
       {
+        PauseTimer(_timer);
         DestroyTimer(_timer);
       }
     }

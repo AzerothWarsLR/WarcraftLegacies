@@ -6,8 +6,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\AzerothWarsCSharp.Generated\AzerothWarsCSharp.Generated.csproj"/>
-        <ProjectReference Include="..\AzerothWarsCSharp.MacroTools\AzerothWarsCSharp.MacroTools.csproj"/>
+        <ProjectReference Include="..\AzerothWarsCSharp.Generated\AzerothWarsCSharp.Generated.csproj" />
+        <ProjectReference Include="..\AzerothWarsCSharp.MacroTools\AzerothWarsCSharp.MacroTools.csproj" />
     </ItemGroup>
 
 </Project>

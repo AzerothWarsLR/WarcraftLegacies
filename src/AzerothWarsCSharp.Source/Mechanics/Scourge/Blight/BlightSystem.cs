@@ -5,7 +5,7 @@ using AzerothWarsCSharp.MacroTools.Libraries;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.Mechanics.Scourge
+namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Blight
 {
   /// <summary>
   ///   Units can be registered to the <see cref="BlightSystem" /> so that when they are killed by allies of a specicic

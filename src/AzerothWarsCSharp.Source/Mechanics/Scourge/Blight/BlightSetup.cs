@@ -1,7 +1,7 @@
 ﻿using AzerothWarsCSharp.MacroTools;
 using WCSharp.Shared.Data;
 
-namespace AzerothWarsCSharp.Source.Mechanics.Scourge
+namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Blight
 {
   public static class BlightSetup
   {

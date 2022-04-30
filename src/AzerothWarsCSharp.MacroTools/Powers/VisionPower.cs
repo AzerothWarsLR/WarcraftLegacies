@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.MacroTools.Powers
       _visionRects = visionRects;
     }
 
-    protected internal override void OnAdd(player whichPlayer)
+    public override void OnAdd(player whichPlayer)
     {
       foreach (var region in _visionRects)
       {
@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.MacroTools.Powers
       }
     }
 
-    protected internal override void OnRemove(player whichPlayer)
+    public override void OnRemove(player whichPlayer)
     {
       foreach (var fogModifier in _fogModifiers) DestroyFogModifier(fogModifier);
       _fogModifiers.Clear();
