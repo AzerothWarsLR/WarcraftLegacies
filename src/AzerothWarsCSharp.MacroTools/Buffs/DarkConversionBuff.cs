@@ -15,19 +15,29 @@ namespace AzerothWarsCSharp.MacroTools.Buffs
     /// The effect that appears when the unit transforms.
     /// </summary>
     public string TransformEffect { get; init; } = @"Abilities\Spells\Demon\DarkConversion\ZombifyTarget.mdl";
-    
+
     /// <summary>
     /// The ability that gets given to the unit when it finishes transforming.
     /// </summary>
     public int DiseaseCloudAbilityId { get; init; }
 
-    private new player CastingPlayer { get; }
-    
+    /// <summary>
+    /// The player that should own the unit after it has been converted.
+    /// </summary>
+    private player ZombieOwningPlayer { get; }
+
     public DarkConversionBuff(player caster, unit target) : base(target, target)
     {
-      CastingPlayer = caster;
-      EffectString ??= @"Abilities\Spells\Undead\Sleep\SleepTarget.mdl";
-      EffectAttachmentPoint ??= "overhead";
+      ZombieOwningPlayer = caster;
+      if (EffectString == null)
+      {
+        EffectString = @"Abilities\Spells\Undead\Sleep\SleepTarget.mdl";
+      }
+
+      if (EffectAttachmentPoint == null)
+      {
+        EffectAttachmentPoint = "overhead";
+      }
     }
 
     public override void OnApply()
@@ -40,7 +50,7 @@ namespace AzerothWarsCSharp.MacroTools.Buffs
       DestroyEffect(AddSpecialEffect(TransformEffect, GetUnitX(Target), GetUnitY(Target)));
       var zombie = ReplaceUnitBJ(Target, TransformUnitTypeId, bj_UNIT_STATE_METHOD_MAXIMUM);
       UnitAddAbility(zombie, DiseaseCloudAbilityId);
-      SetUnitOwner(zombie, CastingPlayer, true);
+      SetUnitOwner(zombie, ZombieOwningPlayer, true);
     }
   }
 }
