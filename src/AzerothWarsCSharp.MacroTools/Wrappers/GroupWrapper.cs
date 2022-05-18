@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using WCSharp.Shared.Data;
+
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Wrappers
@@ -8,7 +10,7 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
   ///   Manages the creation and destruction of the internal group automatically,
   ///   preventing memory leak issues.
   /// </summary>
-  public class GroupWrapper
+  public sealed class GroupWrapper
   {
     private readonly group _group;
 
@@ -34,6 +36,22 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
       return list;
     }
 
+    public void Add(unit unit)
+    {
+      GroupAddUnit(_group, unit);
+    }
+    
+    public GroupWrapper EnumUnitsOfPlayer(player player)
+    {
+      GroupEnumUnitsOfPlayer(_group, player, null);
+      return this;
+    }
+
+    public GroupWrapper EnumUnitsInRect(Rectangle rect)
+    {
+      return EnumUnitsInRect(rect.Rect);
+    }
+    
     public GroupWrapper EnumUnitsInRect(rect rect)
     {
       GroupEnumUnitsInRect(_group, rect, null);

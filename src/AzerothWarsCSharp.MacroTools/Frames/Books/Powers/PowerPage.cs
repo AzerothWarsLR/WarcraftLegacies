@@ -1,15 +1,33 @@
 ﻿using System;
+using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
 {
-  public class PowerPage : Page
+  public sealed class PowerPage : Page
   {
+    private readonly Dictionary<Power, PowerCard> _cardsByPower = new();
+    
     public PowerPage()
     {
       Rows = 3;
       Columns = 1;
       YOffsetTop = 0.025f;
       YOffsetBot = 0.05f;
+    }
+
+    /// <summary>
+    /// Unrenders a <see cref="Power"/> from this <see cref="PowerPage"/>.
+    /// </summary>
+    /// <param name="power"></param>
+    public void RemovePower(Power power)
+    {
+      if (_cardsByPower.TryGetValue(power, out var powerCard))
+      {
+        Cards.Remove(powerCard);
+        _cardsByPower.Remove(power);
+        powerCard.Dispose();
+      }
     }
     
     /// <summary>
@@ -23,6 +41,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
       PositionFrameAtIndex(powerCard, Cards.Count);
       Cards.Add(powerCard);
       AddFrame(powerCard);
+      _cardsByPower.Add(power, powerCard);
     }
   }
 }

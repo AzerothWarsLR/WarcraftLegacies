@@ -1,7 +1,9 @@
 ﻿using System.Linq;
+using AzerothWarsCSharp.MacroTools.Buffs;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Buffs;
+
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Spells
@@ -40,11 +42,14 @@ namespace AzerothWarsCSharp.MacroTools.Spells
         GetUnitFacing(target));
       var level = GetAbilityLevel(caster);
       var buff = new SimulacrumBuff(caster, newUnit, 1 + DamageBonusBase + DamageBonusLevel * level,
-        1 + HealthBonusBase + HealthBonusLevel * level, Duration, EffectTarget, EffectScaleTarget);
+        1 + HealthBonusBase + HealthBonusLevel * level, EffectTarget, EffectScaleTarget)
+      {
+        Duration = Duration
+      };
       BuffSystem.Add(buff);
     }
 
-    public override void OnCast(unit caster, widget target, float targetX, float targetY)
+    public override void OnCast(unit caster, unit target, float targetX, float targetY)
     {
       var group = new GroupWrapper();
       group.EnumUnitsInRange(targetX, targetY, Radius);

@@ -1,4 +1,5 @@
-﻿using AzerothWarsCSharp.MacroTools.SpellSystem;
+﻿using AzerothWarsCSharp.MacroTools.Libraries;
+using AzerothWarsCSharp.MacroTools.SpellSystem;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Spells
@@ -16,7 +17,7 @@ namespace AzerothWarsCSharp.MacroTools.Spells
     {
     }
 
-    public override void OnCast(unit caster, widget target, float targetX, float targetY)
+    public override void OnCast(unit caster, unit target, float targetX, float targetY)
     {
       var casterX = GetUnitX(caster);
       var casterY = GetUnitY(caster);

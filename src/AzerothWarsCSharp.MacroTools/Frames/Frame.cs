@@ -23,11 +23,6 @@ namespace AzerothWarsCSharp.MacroTools.Frames
       _children.Add(frame);
     }
 
-    private void RemoveFrame(Frame frame)
-    {
-      _children.Remove(frame);
-    }
-
     public float Height
     {
       get => _height;
@@ -97,7 +92,6 @@ namespace AzerothWarsCSharp.MacroTools.Frames
     public void Dispose()
     {
       Dispose(true);
-      GC.SuppressFinalize(this);
     }
 
     /// <summary>
@@ -115,9 +109,9 @@ namespace AzerothWarsCSharp.MacroTools.Frames
           DisposeEvents();
           foreach (var childFrame in _children)
           {
-            RemoveFrame(childFrame);
             childFrame.Dispose();
           }
+          _children.Clear();
         }
         BlzDestroyFrame(Handle);
       }

@@ -1,34 +1,24 @@
-﻿using AzerothWarsCSharp.MacroTools;
+﻿using AzerothWarsCSharp.MacroTools.ArtifactSystem;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.TestSource.Setup
 {
   public static class ArtifactSetup
   {
-    private const float DummyX = 0;
-    private const float DummyY = 0;
-    
-    public static Artifact KillmaimSetup()
-    {
-      var killmaim = new Artifact(CreateItem(FourCC("klmm"), 0, 0));
-      FactionSystem.Add(killmaim);
-      return killmaim;
-    }
+    public static Artifact Killmaim { get; private set; }
+    public static Artifact OrbOfFrost { get; private set; }
+    public static Artifact KelensDagger { get; private set; }
 
-    public static Artifact DrektharsSpellbookSetup()
+    public static void Setup()
     {
-      var artifact = new Artifact(CreateItem(FourCC("dtsb"), 0, 0));
-      FactionSystem.Add(artifact);
-      return artifact;
-    }
-
-    public static void FillerArtifactSetup()
-    {
-      for (var i = 0; i < 20; i++)
-      {
-        var artifact = new Artifact(CreateItem(FourCC("dtsb"), 0, 0));
-        FactionSystem.Add(artifact);
-      }
+      Killmaim = new Artifact(CreateItem(FourCC("klmm"), 0, 0));
+      ArtifactManager.Register(Killmaim);
+      
+      OrbOfFrost = new Artifact(CreateItem(FourCC("ofro"), 0, 0));
+      ArtifactManager.Register(OrbOfFrost);
+      
+      KelensDagger = new Artifact(CreateItem(FourCC("desc"), 0, 0));
+      ArtifactManager.Register(KelensDagger);
     }
   }
 }

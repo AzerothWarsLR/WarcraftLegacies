@@ -1,90 +1,81 @@
-﻿using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.MacroTools.Powers;
-using AzerothWarsCSharp.MacroTools.QuestObjectives;
-using AzerothWarsCSharp.MacroTools.QuestOutcomes;
-using WCSharp.Shared.Data;
-using static War3Api.Common;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Setup
 {
-  public static class TeamSetup
-  {
-    public static void Setup()
-    {
-      var felHorde = new Faction("Fel Horde", PLAYER_COLOR_GREEN, "|c0020c000", "PitLord");
-      var legion = new Faction("Legion", PLAYER_COLOR_PEANUT, "|CFFBF8F4F", "Kiljaedin");
-      var legionTeam = new Team("Burning Legion", "DarkVictory");
-      FactionSystem.FactionSetTeam(felHorde, legionTeam);
-      FactionSystem.FactionSetTeam(legion, legionTeam);
-      FactionSystem.Add(legionTeam);
+  public static class TeamSetup{
+    public static Team Legion { get; private set; }
+    public static Team Alliance { get; private set; }
+    public static Team Horde { get; private set; }
+    public static Team NightElves { get; private set; }
+    public static Team Naga { get; private set; }
+    public static Team Gilneas { get; private set; }
+    public static Team ScarletCrusade { get; private set; }
+    public static Team Forsaken { get; private set; }
+    public static Team OldGods { get; private set; }
+    public static Team Scourge { get; private set; }
+  
 
-      var thrall = new Legend(FourCC("Othr"))
+    public static void Setup( ){
+      Alliance = new Team("Alliance")
       {
-        Name = "Thrall"
+        VictoryMusic = "HeroicVictory"
       };
+      FactionManager.Register(Alliance);
       
-      var frostwolf = new Faction("Frostwolf", PLAYER_COLOR_RED, "|c00ff0303", "Thrall");
-      FactionSystem.PlayerSetFaction(Player(0), frostwolf);
-      var drektharsSpellBookQuest = new Quest("Drekthar's Spellbook", "SorceressMaster")
+      Legion = new Team("Burning Legion")
       {
-        Flavour =
-          "The savage Night Elves threaten the safety of the entire Horde. Capture their World Tree and bring Thrall to its roots.",
-        CompletionFlavour =
-          "The World Tree, Nordrassil, has been captured by the forces of the Horde. Drek'thar has gifted Warchief Thrall his magical spellbook for this achievement."
+        VictoryMusic = "DarkVictory"
       };
-      drektharsSpellBookQuest.AddObjective(new QuestObjectiveTime(5));
-      drektharsSpellBookQuest.AddObjective(new QuestObjectiveKillUnit(CreateUnit(Player(0), FourCC("hfoo"), 0, 0, 0)));
-      drektharsSpellBookQuest.AddOutcome(new QuestOutcomeChangeFactionName("Boopboop"));
-      drektharsSpellBookQuest.AddOutcome(new QuestOutcomeSpawnLegend(thrall, new Point(0, 0), "my house", 5));
-      //drektharsSpellBookQuest.AddOutcome(new QuestOutcomeCreateArtifactAtRect(FourCC("odef"), new Rectangle(10, 10, -10, -10), "banantown"));
-      drektharsSpellBookQuest.AddOutcome(new QuestOutcomeRemoveArtifact(ArtifactSetup.KillmaimSetup()));
+      FactionManager.Register(Legion);
 
-      var frostwolfpower = new DummyPower("Big Wolves",
-        "The Frostwolves are some of the coolest guys and can do things with wolves.", "SpiritWolf");
-      FactionSystem.FactionAddPower(frostwolf, frostwolfpower);
-
-      FactionSystem.FactionAddQuest(frostwolf, drektharsSpellBookQuest);
-
-      var testQuest = new Quest("Fat Dab", "Archimonde")
+      Horde = new Team("Horde")
       {
-        Flavour = "Sometimes you have to do a fully sick dab.",
-        CompletionFlavour = "You did it! The first ever fully sick dab."
+        VictoryMusic = "DarkVictory"
       };
-      testQuest.AddObjective(new QuestObjectiveControlLegend(thrall));
-      FactionSystem.FactionAddQuest(frostwolf, testQuest);
+      FactionManager.Register(Horde);
       
-      var warsong = new Faction("Warsong", PLAYER_COLOR_ORANGE, "|c00ff8000", "HellScream");
-      var horde = new Team("Horde", "DarkVictory");
-      var zandalar = new Faction("Zandalar", PLAYER_COLOR_PEACH, "|cffff8c6c", "HeadHunterBerserker");
-      FactionSystem.FactionSetTeam(frostwolf, horde);
-      FactionSystem.FactionSetTeam(warsong, horde);
-      FactionSystem.FactionSetTeam(zandalar, horde);
-      FactionSystem.Add(horde);
-
-      var sentinels = new Faction("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80", "PriestessOfTheMoon");
-      var druids = new Faction("Druids", PLAYER_COLOR_BROWN, "|c004e2a04", "Furion");
-      var nightElves = new Team("Night Elves", "HeroicVictory");
-      FactionSystem.FactionSetTeam(sentinels, nightElves);
-      FactionSystem.FactionSetTeam(druids, nightElves);
-      FactionSystem.Add(nightElves);
-
-      var oldGods = new Team("Old Gods", "DarkVictory");
-      FactionSystem.Add(oldGods);
-
-      var naga = new Team("Naga", "DarkVictory");
-      FactionSystem.Add(naga);
-
-      var gilneas = new Team("Gilneas", "HeroicVictory");
-      FactionSystem.Add(gilneas);
-
-      var scarlet = new Team("Scarlet Crusade", "DarkVictory");
-      FactionSystem.Add(scarlet);
-
-      var forsaken = new Team("Forsaken", "DarkVictory");
-      FactionSystem.Add(forsaken);
-
-      var scourge = new Team("Scourge", "DarkVictory");
-      FactionSystem.Add(scourge);
+      NightElves = new Team("Night Elves")
+      {
+        VictoryMusic = "HeroicVictory"
+      };
+      FactionManager.Register(NightElves);
+      
+      OldGods = new Team("Old Gods")
+      {
+        VictoryMusic = "DarkVictory"
+      };
+      FactionManager.Register(OldGods);
+      
+      Naga = new Team("Illidari")
+      {
+        VictoryMusic = "DarkVictory"
+      };
+      FactionManager.Register(Naga);
+      
+      Gilneas = new Team("Gilneas")
+      {
+        VictoryMusic = "HeroicVictory"
+      };
+      FactionManager.Register(Gilneas);
+      
+      ScarletCrusade = new Team("Scarlet Crusade")
+      {
+        VictoryMusic = "DarkVictory"
+      };
+      FactionManager.Register(ScarletCrusade);
+      
+      Forsaken = new Team("Forsaken")
+      {
+        VictoryMusic = "DarkVictory"
+      };
+      FactionManager.Register(Forsaken);
+      
+      Scourge = new Team("Northrend")
+      {
+        VictoryMusic = "DarkVictory"
+      };
+      FactionManager.Register(Scourge);
     }
+
   }
 }

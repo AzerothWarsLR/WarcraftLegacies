@@ -1,5 +1,6 @@
 ﻿using AzerothWarsCSharp.MacroTools.Hazards;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
+
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Spells
@@ -21,7 +22,7 @@ namespace AzerothWarsCSharp.MacroTools.Spells
     {
     }
 
-    public override void OnCast(unit caster, widget target, float targetX, float targetY)
+    public override void OnCast(unit caster, unit target, float targetX, float targetY)
     {
       var level = GetAbilityLevel(caster);
       var hazard = new SolarJudgementHazard(null, caster, targetX, targetY)
@@ -36,7 +37,7 @@ namespace AzerothWarsCSharp.MacroTools.Spells
         Interval = Period,
         Duration = Duration,
       };
-      HazardSystem.HazardSystem.Add(hazard);
+      SpellSystem.HazardSystem.Add(hazard);
     }
   }
 }

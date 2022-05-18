@@ -6,10 +6,31 @@ namespace AzerothWarsCSharp.TestSource.Setup
   {
     public static void Setup()
     {
-      CheatGold.Setup();
+      TestSafety.Setup();
+      CheatBuild.Setup();
       CheatControl.Setup();
+      CheatFaction.Setup();
       CheatFood.Setup();
+      CheatGod.Setup();
+      CheatGold.Setup();
+      CheatHasResearch.Setup();
       CheatHp.Setup();
+      CheatKick.Setup();
+      CheatLevel.Setup();
+      CheatLumber.Setup();
+      CheatMana.Setup();
+      CheatMp.Setup();
+      CheatNocd.Setup();
+      CheatOwner.Setup();
+      CheatRemove.Setup();
+      CheatSkipCinematic.Setup();
+      CheatSpawn.Setup();
+      CheatTeam.Setup();
+      CheatTele.Setup();
+      CheatTime.Setup();
+      CheatUncontrol.Setup();
+      CheatVision.Setup();
+      CheatCompleteQuest.Setup();
     }
   }
 }

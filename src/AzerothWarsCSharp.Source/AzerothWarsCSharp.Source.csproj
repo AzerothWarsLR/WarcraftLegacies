@@ -1,34 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="War3Api.Blizzard" Version="1.32.9" />
-    <PackageReference Include="War3Api.Common" Version="1.32.9" />
-    <PackageReference Include="WCSharp.Buffs" Version="2.0.5" />
-    <PackageReference Include="WCSharp.DateTime" Version="2.0.6" />
-    <PackageReference Include="WCSharp.Dummies" Version="2.0.2" />
-    <PackageReference Include="WCSharp.Effects" Version="2.0.0" />
-    <PackageReference Include="WCSharp.Events" Version="2.0.5" />
-    <PackageReference Include="WCSharp.Json" Version="2.0.1" />
-    <PackageReference Include="WCSharp.Knockbacks" Version="2.0.0" />
-    <PackageReference Include="WCSharp.Lightnings" Version="2.0.0" />
-    <PackageReference Include="WCSharp.Missiles" Version="2.0.2" />
-    <PackageReference Include="WCSharp.SaveLoad" Version="2.0.2" />
-    <PackageReference Include="WCSharp.Shared" Version="2.0.1" />
-    <PackageReference Include="WCSharp.Sync" Version="2.0.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\AzerothWarsCSharp.Common\AzerothWarsCSharp.Common.csproj" />
-    <ProjectReference Include="..\AzerothWarsCSharp.Generated\AzerothWarsCSharp.Generated.csproj" />
-    <ProjectReference Include="..\AzerothWarsCSharp.MacroTools\AzerothWarsCSharp.MacroTools.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Powers" />
-  </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\AzerothWarsCSharp.Generated\AzerothWarsCSharp.Generated.csproj"/>
+        <ProjectReference Include="..\AzerothWarsCSharp.MacroTools\AzerothWarsCSharp.MacroTools.csproj"/>
+    </ItemGroup>
 
 </Project>

@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.MacroTools.Spells
     {
     }
 
-    public override void OnCast(unit caster, widget target, float targetX, float targetY)
+    public override void OnCast(unit caster, unit target, float targetX, float targetY)
     {
       DummyCast.ChannelOnPoint(caster, DummyAbilityId, DummyAbilityOrderString, GetAbilityLevel(caster), targetX, targetY, Duration);
     }

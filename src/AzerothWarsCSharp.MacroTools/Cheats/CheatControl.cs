@@ -1,37 +1,50 @@
-﻿using AzerothWarsCSharp.Common.Constants;
-using AzerothWarsCSharp.MacroTools.Commands;
-using static War3Api.Common;
-using static War3Api.Blizzard;
+using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.Cheats
 {
-  /// <summary>
-  /// A cheat to give the user control of other players.
-  /// </summary>
   public static class CheatControl
   {
+    private const string COMMAND = "-control ";
+
+    private static void Actions()
+    {
+      if (!TestSafety.CheatCondition())
+      {
+        return;
+      }
+
+      string enteredString = GetEventPlayerChatString();
+      player p = GetTriggerPlayer();
+      GetPlayerId(p);
+      string parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
+      if (parameter == "all")
+      {
+        foreach (var player in GetAllPlayers())
+        {
+          SetPlayerAllianceStateBJ(GetTriggerPlayer(), player, bj_ALLIANCE_ALLIED_ADVUNITS);
+          SetPlayerAllianceStateBJ(player, GetTriggerPlayer(), bj_ALLIANCE_ALLIED_ADVUNITS);
+        }
+
+        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Granted control of all players.");
+      }
+      else
+      {
+        SetPlayerAllianceStateBJ(Player(S2I(parameter)), GetTriggerPlayer(), bj_ALLIANCE_ALLIED_ADVUNITS);
+        SetPlayerAllianceStateBJ(GetTriggerPlayer(), Player(S2I(parameter)), bj_ALLIANCE_ALLIED_ADVUNITS);
+        DisplayTextToPlayer(p, 0, 0,
+          "|cffD27575CHEAT:|r Granted control of player " + GetPlayerName(Player(S2I(parameter))) + ".");
+      }
+    }
+
     public static void Setup()
     {
-      CommandSystem.Register(new CheatCommand("control", (player triggerPlayer, string[] arguments) =>
+      trigger trig = CreateTrigger();
+      foreach (var player in GetAllPlayers())
       {
-        var target = arguments[0];
-        if (target == "all")
-        {
-          for (var i = 0; i < PlayerConstants.PlayerSlotCount; i++)
-          {
-            SetPlayerAllianceStateBJ(Player(i), triggerPlayer, bj_ALLIANCE_ALLIED_ADVUNITS);
-            CommandSystem.Display(triggerPlayer, "Granted control of all players.");
-          }
-        }
-        else
-        {
-          if (int.TryParse(arguments[0], out var playerId))
-          {
-            SetPlayerAllianceStateBJ(Player(int.Parse(target)), triggerPlayer, bj_ALLIANCE_ALLIED_ADVUNITS);
-            CommandSystem.Display(triggerPlayer, "Granted control of player " + GetPlayerName(Player(playerId)));
-          }
-        }
-      }));
+        TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
+      }
+
+      TriggerAddAction(trig, Actions);
     }
   }
 }

@@ -6,8 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\AzerothWarsCSharp.Common\AzerothWarsCSharp.Common.csproj" />
-      <ProjectReference Include="..\War3Api.Object\War3Api.Object.csproj" />
+        <ProjectReference Include="..\War3Api.Object\War3Api.Object.csproj"/>
     </ItemGroup>
 
 </Project>

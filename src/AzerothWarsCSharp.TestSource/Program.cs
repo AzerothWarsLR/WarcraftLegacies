@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.TestSource
 			}
 			catch (Exception ex)
 			{
-				DisplayTextToPlayer(GetLocalPlayer(), 0, 0, ex.ToString());
+				Console.WriteLine(ex);
 			}
 		}
 	}

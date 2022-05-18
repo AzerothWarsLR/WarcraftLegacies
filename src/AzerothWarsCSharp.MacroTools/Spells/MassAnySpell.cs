@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.MacroTools.Spells
     {
     }
 
-    public override void OnCast(unit caster, widget target, float targetX, float targetY)
+    public override void OnCast(unit caster, unit target, float targetX, float targetY)
     {
       var x = targetX;
       var y = targetY;
@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.MacroTools.Spells
         x = GetUnitX(caster);
         y = GetUnitY(caster);
       }
-      DummyCast.CastOnUnitsInRadius(caster, DummyAbilityId, DummyAbilityOrderString, GetAbilityLevel(caster),
+      DummyCast.DummyCastOnUnitsInCircle(caster, DummyAbilityId, DummyAbilityOrderString, GetAbilityLevel(caster),
         x, y, Radius, CastFilter);
     }
   }
