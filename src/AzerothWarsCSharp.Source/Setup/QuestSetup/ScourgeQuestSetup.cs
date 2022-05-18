@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Quests.Scourge;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
@@ -13,7 +14,15 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
         PreplacedUnitSystem.GetUnit(Constants.UNIT_N074_QUEEN_NEZAR_AZRET));
       QuestKelthuzad questKelthuzad = new();
       QuestDrakUnlock questDrakUnlock = new(Regions.DrakUnlock);
-      QuestPlague questPlague = new();
+      QuestPlague questPlague = new(ForsakenSetup.FACTION_FORSAKEN,
+        PreplacedUnitSystem.GetUnit(Constants.UNIT_N0AG_LORD_BAROV),
+        new GroupWrapper().EnumUnitsOfType(Constants.UNIT_U01U_CULTIST_OF_THE_DAMNED_FORSAKEN).EmptyToList()
+      )
+      {
+        ScholomanceInner = PreplacedUnitSystem.GetUnit(Constants.UNIT_N04B_SCHOLOMANCE_INNER),
+        ScholomanceOuter = PreplacedUnitSystem.GetUnit(Constants.UNIT_N035_SCHOLOMANCE),
+      };
+
       QuestSapphiron questSapphiron = new(PreplacedUnitSystem.GetUnit(Constants.UNIT_UBDR_SAPPHIRON_CREEP));
       QuestCorruptArthas questCorruptArthas = new();
       QuestNaxxramas questNaxxramas = new(Regions.NaxxramasInside,

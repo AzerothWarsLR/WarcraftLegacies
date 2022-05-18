@@ -76,66 +76,73 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       get => _progress;
       set
       {
-        var formerProgress = _progress;
-        _progress = value;
-        if (value == QuestProgress.Complete)
+        try
         {
-          QuestSetCompleted(Quest, true);
-          QuestSetFailed(Quest, false);
-          QuestSetDiscovered(Quest, true);
-          if (!_muted)
+          var formerProgress = _progress;
+          _progress = value;
+          if (value == QuestProgress.Complete)
           {
-            DisplayCompleted();
-            if (Global) DisplayCompletedGlobal();
+            QuestSetCompleted(Quest, true);
+            QuestSetFailed(Quest, false);
+            QuestSetDiscovered(Quest, true);
+            if (!_muted)
+            {
+              DisplayCompleted();
+              if (Global) DisplayCompletedGlobal();
+            }
+
+            if (ResearchId != 0) SetPlayerTechResearched(Holder.Player, ResearchId, 1);
+
+            OnComplete();
+          }
+          else if (value == QuestProgress.Failed)
+          {
+            QuestSetCompleted(Quest, false);
+            QuestSetFailed(Quest, true);
+            QuestSetDiscovered(Quest, true);
+            if (!_muted) DisplayFailed();
+
+            OnFail();
+          }
+          else if (value == QuestProgress.Incomplete)
+          {
+            if (!_muted)
+              if (formerProgress == QuestProgress.Undiscovered)
+                DisplayDiscovered();
+
+            QuestSetCompleted(Quest, false);
+            QuestSetFailed(Quest, false);
+            QuestSetDiscovered(Quest, true);
+          }
+          else if (value == QuestProgress.Undiscovered)
+          {
+            QuestSetCompleted(Quest, false);
+            QuestSetFailed(Quest, false);
+            QuestSetDiscovered(Quest, false);
           }
 
-          if (ResearchId != 0) SetPlayerTechResearched(Holder.Player, ResearchId, 1);
+          //If the quest is incomplete, show its markers. Otherwise, hide them.
+          if (Progress != QuestProgress.Incomplete)
+            foreach (var questItem in _questItems)
+            {
+              if (GetLocalPlayer() == Holder.Player) questItem.HideLocal();
 
-          OnComplete();
+              questItem.HideSync();
+            }
+          else
+            foreach (var questItem in _questItems)
+            {
+              if (GetLocalPlayer() == Holder.Player) questItem.ShowLocal();
+
+              questItem.ShowSync();
+            }
+
+          ProgressChanged?.Invoke(this, this);
         }
-        else if (value == QuestProgress.Failed)
+        catch (Exception ex)
         {
-          QuestSetCompleted(Quest, false);
-          QuestSetFailed(Quest, true);
-          QuestSetDiscovered(Quest, true);
-          if (!_muted) DisplayFailed();
-
-          OnFail();
+          Console.WriteLine(ex);
         }
-        else if (value == QuestProgress.Incomplete)
-        {
-          if (!_muted)
-            if (formerProgress == QuestProgress.Undiscovered)
-              DisplayDiscovered();
-
-          QuestSetCompleted(Quest, false);
-          QuestSetFailed(Quest, false);
-          QuestSetDiscovered(Quest, true);
-        }
-        else if (value == QuestProgress.Undiscovered)
-        {
-          QuestSetCompleted(Quest, false);
-          QuestSetFailed(Quest, false);
-          QuestSetDiscovered(Quest, false);
-        }
-
-        //If the quest is incomplete, show its markers. Otherwise, hide them.
-        if (Progress != QuestProgress.Incomplete)
-          foreach (var questItem in _questItems)
-          {
-            if (GetLocalPlayer() == Holder.Player) questItem.HideLocal();
-
-            questItem.HideSync();
-          }
-        else
-          foreach (var questItem in _questItems)
-          {
-            if (GetLocalPlayer() == Holder.Player) questItem.ShowLocal();
-
-            questItem.ShowSync();
-          }
-
-        ProgressChanged?.Invoke(this, this);
       }
     }
 

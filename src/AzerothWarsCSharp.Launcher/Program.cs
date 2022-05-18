@@ -102,7 +102,7 @@ namespace AzerothWarsCSharp.Launcher
       var map = Map.Open(baseMapPath);
 
       FixDoodadData(map);
-      SetTestPlayerSlot(map, 0);
+      SetTestPlayerSlot(map, 3);
       var builder = new MapBuilder(map);
       builder.AddFiles(baseMapPath, "*", SearchOption.AllDirectories);
       builder.AddFiles(ASSETS_FOLDER_PATH, "*", SearchOption.AllDirectories);
