@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
     private static void Spell()
     {
       if (IsCheatActive(GetTriggerPlayer()))
-        SetUnitManaPercentBJ(GetTriggerUnit(), 100);
+        SetUnitState(GetTriggerUnit(), UNIT_STATE_MANA, GetUnitState(GetTriggerUnit(), UNIT_STATE_MAX_MANA));
     }
 
     private static void Actions()
