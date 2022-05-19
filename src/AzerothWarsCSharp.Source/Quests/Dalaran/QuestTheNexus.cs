@@ -58,7 +58,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
       LegendDalaran.LegendJaina.UnitType = FourCC("H04A");
 
-      UnitRemoveAbilityBJ(FourCC("A0RB"), LegendDalaran.LegendJaina.Unit);
+      UnitRemoveAbility(LegendDalaran.LegendJaina.Unit, FourCC("A0RB"));
       Holder.Team = TeamSetup.Scourge;
       Holder.Name = "The Nexus";
       Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNJaina_Archmage.blp";

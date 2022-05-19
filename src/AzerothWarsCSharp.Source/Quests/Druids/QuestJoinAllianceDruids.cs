@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
     
     protected override void OnComplete()
     {
-      UnitRemoveAbilityBJ(FourCC("A0IG"), LegendDruids.LegendMalfurion.Unit);
+      UnitRemoveAbility(LegendDruids.LegendMalfurion.Unit, FourCC("A0IG"));
       Holder.Team = TeamSetup.Alliance;
     }
   }

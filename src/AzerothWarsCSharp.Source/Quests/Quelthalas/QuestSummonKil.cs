@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     
     protected override void OnComplete()
     {
-      UnitRemoveAbilityBJ(FourCC("A0R7"), LegendQuelthalas.LegendKael.Unit);
+      UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0R7"));
       LegendQuelthalas.LegendKiljaeden.Spawn(QuelthalasSetup.FactionQuelthalas.Player, Regions.Sunwell.Center.X,
         Regions.Sunwell.Center.Y, 244);
     }

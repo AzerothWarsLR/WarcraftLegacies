@@ -25,8 +25,8 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     {
       QuelthalasQuestSetup.GREAT_TREACHERY.Progress = QuestProgress.Failed;
       QuelthalasQuestSetup.SUMMON_KIL.Progress = QuestProgress.Failed;
-      UnitRemoveAbilityBJ(FourCC("A0IK"), LegendQuelthalas.LegendKael.Unit);
-      UnitRemoveAbilityBJ(FourCC("A0IF"), LegendQuelthalas.LegendKael.Unit);
+      UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0IK"));
+      UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0IF"));
     }
   }
 }

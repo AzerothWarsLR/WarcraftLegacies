@@ -111,7 +111,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 500);
       Holder.AddQuest(DraeneiQuestSetup.SHIP_ARGUS);
       DraeneiQuestSetup.SHIP_ARGUS.Progress = QuestProgress.Incomplete;
-      UnitRemoveAbilityBJ(FourCC("ACm2"), LegendDraenei.LegendVelen.Unit);
+      UnitRemoveAbility(LegendDraenei.LegendVelen.Unit, FourCC("ACm2"));
       GrantExiled(Holder.Player);
       EscapeOutland();
       RemoveUnit(TheExodar);
