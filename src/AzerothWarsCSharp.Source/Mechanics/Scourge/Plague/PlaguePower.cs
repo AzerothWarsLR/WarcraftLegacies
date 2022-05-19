@@ -21,7 +21,21 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
     {
       FourCC("ncb0"),
       FourCC("ncb1"),
-      FourCC("ncb2")
+      FourCC("ncb2"),
+      FourCC("ncb3"),
+      FourCC("ncb4"),
+      FourCC("ncb5"),
+      FourCC("ncb6"),
+      FourCC("ncb7"),
+      FourCC("ncb8"),
+      FourCC("ncb9"),
+      FourCC("ncba"),
+      FourCC("ncbb"),
+      FourCC("ncbc"),
+      FourCC("ncbd"),
+      FourCC("ncbb"),
+      FourCC("ncbe"),
+      FourCC("ncbf")
     };
     private readonly List<int> _villagerUnitTypeIds = new()
     {
