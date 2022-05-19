@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.Wrappers;
 using static War3Api.Common;  using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.Cheats
@@ -7,9 +8,9 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
     private const string COMMAND = "-hp ";
     private static string? _parameter;
 
-    private static void SetHp()
+    private static void SetHp(unit whichUnit)
     {
-      SetUnitLifeBJ(GetEnumUnit(), S2R(_parameter));
+      SetUnitState(whichUnit, UNIT_STATE_LIFE, S2R(_parameter));
     }
 
     private static void Actions()
@@ -23,7 +24,10 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
 
       if (S2I(_parameter) >= 0)
       {
-        ForGroupBJ(GetUnitsSelectedAll(p), SetHp);
+        foreach (var unit in new GroupWrapper().EnumSelectedUnits(p).EmptyToList())
+        {
+          SetHp(unit);
+        }
         DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Setting hitpoints of selected units to " + _parameter + ".");
       }
     }

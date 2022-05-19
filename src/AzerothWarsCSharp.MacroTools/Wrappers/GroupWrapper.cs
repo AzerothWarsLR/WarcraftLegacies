@@ -41,6 +41,13 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
       GroupAddUnit(_group, unit);
     }
 
+    public GroupWrapper EnumSelectedUnits(player whichPlayer)
+    {
+      SyncSelections();
+      GroupEnumUnitsSelected(_group, whichPlayer, null);
+      return this;
+    }
+    
     public GroupWrapper EnumUnitsOfType(int unitType)
     {
       GroupEnumUnitsOfType(_group, GetObjectName(unitType), null);

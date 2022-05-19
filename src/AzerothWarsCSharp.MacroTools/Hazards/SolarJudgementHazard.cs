@@ -1,4 +1,5 @@
-﻿using AzerothWarsCSharp.MacroTools.SpellSystem;
+﻿using System;
+using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 
 using static War3Api.Common; 
@@ -37,7 +38,7 @@ namespace AzerothWarsCSharp.MacroTools.Hazards
     
     private void DoRandomBolts()
     {
-      var randomAngle = GetRandomReal(0, 2 * bj_PI);
+      var randomAngle = GetRandomReal(0, 2 * MathF.PI);
       var randomRadius = GetRandomReal(0, Radius);
       DoBolt(X + randomRadius * Cos(randomAngle), Y + randomRadius * Sin(randomAngle));
     }

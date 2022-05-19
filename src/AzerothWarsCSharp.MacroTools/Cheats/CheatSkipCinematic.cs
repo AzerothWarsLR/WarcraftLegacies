@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.Libraries;
 using static War3Api.Common; 
 
 namespace AzerothWarsCSharp.MacroTools.Cheats
@@ -7,7 +8,7 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
     private static void Actions()
     {
       if (!TestSafety.CheatCondition()) return;
-      CinematicModeBJ(false, GetPlayersAll());
+      //CinematicModeBJ(false, GetPlayersAll()); Todo: put this back
       DestroyTrigger(GetTriggeringTrigger());
     }
 
@@ -17,8 +18,8 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
       var i = 0;
       while (true)
       {
-        if (i > bj_MAX_PLAYERS) break;
-        TriggerRegisterPlayerEventEndCinematic(trig, Player(i));
+        if (i > Environment.MAX_PLAYERS) break;
+        TriggerRegisterPlayerEvent(trig, Player(i), EVENT_PLAYER_END_CINEMATIC);
         i += 1;
       }
 

@@ -11,6 +11,14 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
     private static readonly group TempGroup = CreateGroup();
     private static readonly rect TempRect = Rect(0, 0, 0, 0);
 
+    public static rect GetPlayableMapArea()
+    {
+      return Rect(GetCameraBoundMinX() - GetCameraMargin(CAMERA_MARGIN_LEFT),
+        GetCameraBoundMinY() - GetCameraMargin(CAMERA_MARGIN_BOTTOM),
+        GetCameraBoundMaxX() + GetCameraMargin(CAMERA_MARGIN_RIGHT),
+        GetCameraBoundMaxY() + GetCameraMargin(CAMERA_MARGIN_TOP));
+    }
+    
     public static void SetBlightRadius(player whichPlayer, Point position, float radius, bool addBlight)
     {
       var location = Location(position.X, position.Y);
@@ -27,7 +35,7 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
 
       for (var i = 0; i < 5; i++)
       {
-        var charValue = ModuloInteger(remainingValue, 256);
+        var charValue = MathEx.ModuloInteger(remainingValue, 256);
         remainingValue /= 256;
         result = SubString(charMap, charValue, charValue + 1) + result;
       }
@@ -37,7 +45,7 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
 
     public static IEnumerable<player> GetAllPlayers()
     {
-      for (var i = 0; i < bj_MAX_PLAYERS; i++) yield return Player(i);
+      for (var i = 0; i < Environment.MAX_PLAYERS; i++) yield return Player(i);
     }
 
     public static void KillNeutralHostileUnitsInRadius(float x, float y, float radius)
