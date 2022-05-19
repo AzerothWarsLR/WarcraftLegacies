@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
 {
   public static class MathEx
   {
-    private const double DEG_TO_RAD = Math.PI / 180.0;
+    public const double DEG_TO_RAD = Math.PI / 180.0;
     
     public static int ModuloInteger(int dividend, int divisor)
     {
