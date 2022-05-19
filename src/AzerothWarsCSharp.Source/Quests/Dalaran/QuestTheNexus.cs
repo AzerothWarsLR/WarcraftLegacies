@@ -62,7 +62,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       Holder.Team = TeamSetup.Scourge;
       Holder.Name = "The Nexus";
       Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNJaina_Archmage.blp";
-      SetPlayerStateBJ(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
+      SetPlayerState(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
     }
   }
 }

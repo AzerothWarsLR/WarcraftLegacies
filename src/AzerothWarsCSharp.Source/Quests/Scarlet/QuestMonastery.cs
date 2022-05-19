@@ -61,7 +61,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       Holder.Name = "Scarlet";
       Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNSaidan Dathrohan.blp";
       PlayThematicMusic("war3mapImported\\ScarletTheme.mp3");
-      SetPlayerStateBJ(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
+      SetPlayerState(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
       Holder.AddQuest(_sequel);
     }
 

@@ -69,7 +69,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       Holder.Team = TeamSetup.Forsaken;
       Holder.Name = "Forsaken";
       Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNBansheeRanger.blp";
-      SetPlayerStateBJ(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
+      SetPlayerState(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
       PlayThematicMusic("war3mapImported\\ForsakenTheme.mp3");
       Holder.AddQuest(new QuestRetakeSunwell());
       Holder.AddQuest(new QuestTheNine());
