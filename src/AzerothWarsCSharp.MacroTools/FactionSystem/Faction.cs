@@ -421,7 +421,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
           RemoveUnit(unit);
 
         if (!tempUnitType?.Meta == true)
-          SetUnitOwner(unit, Player(bj_PLAYER_NEUTRAL_VICTIM), false);
+          SetUnitOwner(unit, Player(GetBJPlayerNeutralVictim()), false);
       }
     }
 
@@ -496,7 +496,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         else if (UnitType.GetFromHandle(unit).Meta == false)
         {
           SetUnitOwner(unit,
-            Team.PlayerCount > 1 ? ForcePickRandomPlayer(eligiblePlayers) : Player(bj_PLAYER_NEUTRAL_VICTIM), false);
+            Team.PlayerCount > 1 ? ForcePickRandomPlayer(eligiblePlayers) : Player(GetBJPlayerNeutralVictim()), false);
         }
       }
 
