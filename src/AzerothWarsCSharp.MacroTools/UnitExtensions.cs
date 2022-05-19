@@ -141,7 +141,7 @@ namespace AzerothWarsCSharp.MacroTools
       {
         var x = unitX + HERO_DROP_DIST * Cos(ang);
         var y = unitY + HERO_DROP_DIST * Sin(ang);
-        ang += 360 * Blizzard.bj_DEGTORAD / 6;
+        ang += 360 * (float)MathEx.DEG_TO_RAD / 6;
         item dropItem = UnitItemInSlot(u, i);
         if (BlzGetItemBooleanField(dropItem, ITEM_BF_DROPPED_WHEN_CARRIER_DIES) ||
             BlzGetItemBooleanField(dropItem, ITEM_BF_CAN_BE_DROPPED))
