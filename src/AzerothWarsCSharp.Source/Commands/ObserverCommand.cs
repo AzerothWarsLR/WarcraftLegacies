@@ -1,6 +1,5 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using static War3Api.Common;
-
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Commands
@@ -14,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Commands
       var triggerPlayer = GetTriggerPlayer();
       triggerPlayer.GetFaction().ScoreStatus = ScoreStatus.Defeated;
       FogModifierStart(
-        CreateFogModifierRect(GetTriggerPlayer(), FOG_OF_WAR_VISIBLE, GetPlayableMapRect(), false, false));
+        CreateFogModifierRect(GetTriggerPlayer(), FOG_OF_WAR_VISIBLE, GetPlayableMapArea().Rect, false, false));
     }
 
     public static void Setup()

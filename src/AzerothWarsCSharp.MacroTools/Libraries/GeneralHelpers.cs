@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
-
 
 namespace AzerothWarsCSharp.MacroTools.Libraries
 {
@@ -11,6 +12,33 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
     private static readonly group TempGroup = CreateGroup();
     private static readonly rect TempRect = Rect(0, 0, 0, 0);
 
+    private static Point? _enumDestructableCenter;
+    private static float _enumDestructableRadius;
+
+    private static bool EnumDestructablesInCircleFilter()
+    {
+      Debug.Assert(_enumDestructableCenter != null, nameof(_enumDestructableCenter) + " != null");
+      return MathEx.GetDistanceBetweenPoints(
+        new Point(GetDestructableX(GetFilterDestructable()), GetDestructableY(GetFilterDestructable())),
+        _enumDestructableCenter) <= _enumDestructableRadius;
+    }
+
+    public static Rectangle GetRectFromCircle(Point center, float radius)
+    {
+      return new Rectangle(center.X - radius, center.Y - radius, center.X + radius, center.Y + radius);
+    }
+
+    public static void EnumDestructablesInCircle(float radius, Point center, Action actionFunc)
+    {
+      if (radius >= 0)
+      {
+        _enumDestructableCenter = center;
+        _enumDestructableRadius = radius;
+        var r = GetRectFromCircle(center, radius);
+        EnumDestructablesInRect(r.Rect, Condition(EnumDestructablesInCircleFilter), actionFunc);
+      }
+    }
+
     public static Rectangle GetPlayableMapArea()
     {
       return new Rectangle(Rect(GetCameraBoundMinX() - GetCameraMargin(CAMERA_MARGIN_LEFT),
@@ -18,7 +46,7 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
         GetCameraBoundMaxX() + GetCameraMargin(CAMERA_MARGIN_RIGHT),
         GetCameraBoundMaxY() + GetCameraMargin(CAMERA_MARGIN_TOP)));
     }
-    
+
     public static void SetBlightRadius(player whichPlayer, Point position, float radius, bool addBlight)
     {
       var location = Location(position.X, position.Y);

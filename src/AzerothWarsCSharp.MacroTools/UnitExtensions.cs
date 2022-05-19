@@ -1,5 +1,6 @@
 ﻿using System;
 using War3Api;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools
@@ -9,9 +10,18 @@ namespace AzerothWarsCSharp.MacroTools
     private const float HERO_DROP_DIST = 50; //The radius in which heroes spread out items when they drop them
 
     /// <summary>
-    /// If the unit has the given item type, returns the item slot the item is in.
-    /// Otherwise, returns 0.
-    /// This function is 1-indexed.
+    ///   Sets the Waygate's destination to the target point.
+    ///   Blindly assumes that the unit is a Waygate.
+    /// </summary>
+    public static void SetWaygateDestination(this unit waygate, Point destination)
+    {
+      WaygateSetDestination(waygate, destination.X, destination.Y);
+    }
+
+    /// <summary>
+    ///   If the unit has the given item type, returns the item slot the item is in.
+    ///   Otherwise, returns 0.
+    ///   This function is 1-indexed.
     /// </summary>
     public static int GetInventoryIndexOfItemType(this unit whichUnit, int itemTypeId)
     {
@@ -19,16 +29,10 @@ namespace AzerothWarsCSharp.MacroTools
       while (true)
       {
         item indexItem = UnitItemInSlot(whichUnit, index);
-        if (indexItem != null && GetItemTypeId(indexItem) == itemTypeId)
-        {
-          return index + 1;
-        }
+        if (indexItem != null && GetItemTypeId(indexItem) == itemTypeId) return index + 1;
 
         index += 1;
-        if (index >= 6)
-        {
-          break;
-        }
+        if (index >= 6) break;
       }
 
       return 0;
