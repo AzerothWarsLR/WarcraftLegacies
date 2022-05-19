@@ -495,7 +495,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         else if (UnitType.GetFromHandle(unit).Meta == false)
         {
           SetUnitOwner(unit,
-            Team.PlayerCount > 1 ? eligiblePlayers[Random.Shared.Next(eligiblePlayers.Count)] : Player(GetBJPlayerNeutralVictim()), false);
+            Team.PlayerCount > 1 ? eligiblePlayers[GetRandomInt(0, eligiblePlayers.Count)] : Player(GetBJPlayerNeutralVictim()), false);
         }
       }
     }

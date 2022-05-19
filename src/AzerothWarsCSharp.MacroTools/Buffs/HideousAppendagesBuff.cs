@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools.Libraries;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
@@ -57,7 +58,7 @@ namespace AzerothWarsCSharp.MacroTools.Buffs
       var i = 0;
       foreach (var tentacle in _tentacles)
       {
-        var offsetAngle = MathF.PI * 2 / TentacleCount * i;
+        var offsetAngle = MathEx.PI * 2 / TentacleCount * i;
         var offsetX = GetUnitX(Target) + RadiusOffset * Cos(offsetAngle);
         var offsetY = GetUnitY(Target) + RadiusOffset * Sin(offsetAngle);
         SetUnitPosition(tentacle, offsetX, offsetY);

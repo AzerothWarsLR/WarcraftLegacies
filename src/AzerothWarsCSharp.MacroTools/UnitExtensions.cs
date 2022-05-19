@@ -1,4 +1,5 @@
 ﻿using System;
+using AzerothWarsCSharp.MacroTools.Libraries;
 using War3Api;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -41,7 +42,7 @@ namespace AzerothWarsCSharp.MacroTools
     public static void SetLifePercent(this unit whichUnit, float percent)
     {
       SetUnitState(whichUnit, UNIT_STATE_LIFE,
-        GetUnitState(whichUnit, UNIT_STATE_MAX_LIFE) * MathF.Max(0, percent) * 0.01f);
+        GetUnitState(whichUnit, UNIT_STATE_MAX_LIFE) * MathEx.Max(0, percent) * 0.01f);
     }
 
     public static float GetLifePercent(this unit whichUnit)

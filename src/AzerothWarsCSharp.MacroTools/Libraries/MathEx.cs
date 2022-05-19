@@ -7,6 +7,12 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
   public static class MathEx
   {
     public const double DEG_TO_RAD = Math.PI / 180.0;
+    public const float PI = 3.141593F;
+
+    public static float Max(float a, float b)
+    {
+      return b > a ? b : a;
+    }
     
     public static int ModuloInteger(int dividend, int divisor)
     {
