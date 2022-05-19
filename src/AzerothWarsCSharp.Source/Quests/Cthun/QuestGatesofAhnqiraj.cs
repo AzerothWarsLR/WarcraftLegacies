@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
       WaygateSetDestinationLocBJ(_waygateB, GetRectCenter(Regions.WorldTunnelExit.Rect));
       
       SetUnitInvulnerable(_bigGate, false);
-      PlayThematicMusicBJ("war3mapImported\\CthunTheme.mp3");
+      PlayThematicMusic("war3mapImported\\CthunTheme.mp3");
     }
       
     public QuestGatesofAhnqiraj(unit bigGate, unit waygateA, unit waygateB) : base("The Gates of Ahn'qiraj",

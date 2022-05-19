@@ -45,7 +45,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     {
       foreach (var unit in _demonGates) unit.Rescue(Holder.Player);
       foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\FelTheme.mp3");
+      if (GetLocalPlayer() == Holder.Player) PlayThematicMusic("war3mapImported\\FelTheme.mp3");
     }
 
     protected override void OnFail()

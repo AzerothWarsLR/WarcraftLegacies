@@ -50,7 +50,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     protected override void OnComplete()
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\StormwindTheme.mp3");
+      if (GetLocalPlayer() == Holder.Player) PlayThematicMusic("war3mapImported\\StormwindTheme.mp3");
     }
 
     protected override void OnAdd()

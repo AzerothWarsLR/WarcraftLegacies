@@ -44,7 +44,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     protected override void OnComplete()
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\TaurenTheme.mp3");
+      if (GetLocalPlayer() == Holder.Player) PlayThematicMusic("war3mapImported\\TaurenTheme.mp3");
     }
   }
 }

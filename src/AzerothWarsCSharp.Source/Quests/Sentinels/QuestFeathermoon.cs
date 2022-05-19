@@ -51,7 +51,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
       Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 300);
       Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
-      if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\SentinelTheme.mp3");
+      if (GetLocalPlayer() == Holder.Player) PlayThematicMusic("war3mapImported\\SentinelTheme.mp3");
     }
   }
 }

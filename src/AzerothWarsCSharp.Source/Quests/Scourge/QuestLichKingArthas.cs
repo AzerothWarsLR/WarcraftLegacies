@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override void OnComplete()
     {
-      PlayThematicMusicBJ("Sound\\Music\\mp3Music\\LichKingTheme.mp3");
+      PlayThematicMusic("Sound\\Music\\mp3Music\\LichKingTheme.mp3");
       LegendScourge.LegendLichking.DeathMessage =
         "Icecrown Citadel been razed. Unfortunately, the Lich King has already vacated his unholy throne.";
       LegendScourge.LegendLichking.PermaDies = false;

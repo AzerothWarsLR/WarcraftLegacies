@@ -31,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
     protected override void OnComplete()
     {
       SetPlayerTechResearched(Holder.Player, CataclysmResearch, 1);
-      PlayThematicMusicBJ("war3mapImported\\TwilightTheme.mp3");
+      PlayThematicMusic("war3mapImported\\TwilightTheme.mp3");
       SetPlayerTechResearched(CthunSetup.FactionCthun.Player, FourCC("R07D"), 1);
       IssueImmediateOrderBJ(_robogoblin, "unrobogoblin");
     }

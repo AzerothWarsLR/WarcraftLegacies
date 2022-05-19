@@ -56,7 +56,7 @@
 //     {
 //       foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
 //
-//       PlayThematicMusicBJ("war3mapImported\\BlackEmpireTheme.mp3");
+//       PlayThematicMusic("war3mapImported\\BlackEmpireTheme.mp3");
 //       OpenPortals();
 //     }
 //

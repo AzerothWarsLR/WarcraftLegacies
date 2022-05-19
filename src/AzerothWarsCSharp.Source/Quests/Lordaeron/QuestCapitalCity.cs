@@ -50,7 +50,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       SetUnitInvulnerable(_unitToMakeInvulnerable, true);
       if (GetLocalPlayer() == Holder.Player)
-        PlayThematicMusicBJ("war3mapImported\\CapitalCity.mp3");
+        PlayThematicMusic("war3mapImported\\CapitalCity.mp3");
       LegendLordaeron.LegendUther.AddUnitDependency(LegendLordaeron.LegendCapitalpalace.Unit);
     }
   }

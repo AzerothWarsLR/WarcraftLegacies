@@ -117,7 +117,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       RemoveUnit(TheExodar);
       foreach (var unit in KilledOnFail) KillUnit(unit);
 
-      if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\DraeneiTheme.mp3");
+      if (GetLocalPlayer() == Holder.Player) PlayThematicMusic("war3mapImported\\DraeneiTheme.mp3");
     }
   }
 }

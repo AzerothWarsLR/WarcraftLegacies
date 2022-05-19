@@ -50,7 +50,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
       SetPlayerTechResearched(Holder.Player, FourCC("R03A"), 1);
-      if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\ScourgeTheme.mp3");
+      if (GetLocalPlayer() == Holder.Player) PlayThematicMusic("war3mapImported\\ScourgeTheme.mp3");
     }
 
     protected override void OnAdd()

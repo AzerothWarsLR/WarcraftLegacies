@@ -51,7 +51,7 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
     protected override void OnComplete()
     {
       GrantGadetzan(Holder.Player);
-      if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\GoblinTheme.mp3");
+      if (GetLocalPlayer() == Holder.Player) PlayThematicMusic("war3mapImported\\GoblinTheme.mp3");
     }
   }
 }
