@@ -55,7 +55,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       SetPlayerTechResearched(LordaeronSetup.FactionLordaeron.Player, FourCC("R06V"), 1);
       SetPlayerTechResearched(ScarletSetup.FactionScarlet.Player, FourCC("R086"), 1);
       foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      WaygateActivateBJ(true, _scarletMonastery);
+      WaygateActivate(_scarletMonastery, true);
       WaygateSetDestination(_scarletMonastery, Regions.ScarletMonastery.Center.X, Regions.ScarletMonastery.Center.Y);
       Holder.Team = TeamSetup.ScarletCrusade;
       Holder.Name = "Scarlet";

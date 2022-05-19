@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using static War3Api.Common;
 
@@ -27,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Setup
 
     public static void Setup()
     {
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(bj_mapInitialPlayableArea).EmptyToList())
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(GeneralHelpers.GetPlayableMapArea()).EmptyToList())
         InitializeControlPoint(unit);
     }
   }
