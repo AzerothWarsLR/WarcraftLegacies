@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -105,9 +106,9 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
 
     protected override void OnComplete()
     {
-      AdjustPlayerStateBJ(200, Holder.Player, PLAYER_STATE_RESOURCE_GOLD);
-      AdjustPlayerStateBJ(2000 - GetResourceAmount(GoldMine), Player(13), PLAYER_STATE_RESOURCE_GOLD);
-      AdjustPlayerStateBJ(500, Holder.Player, PLAYER_STATE_RESOURCE_LUMBER);
+      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 200);
+      Player(13).AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 2000 - GetResourceAmount(GoldMine));
+      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 500);
       Holder.AddQuest(DraeneiQuestSetup.SHIP_ARGUS);
       DraeneiQuestSetup.SHIP_ARGUS.Progress = QuestProgress.Incomplete;
       UnitRemoveAbilityBJ(FourCC("ACm2"), LegendDraenei.LegendVelen.Unit);

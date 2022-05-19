@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -66,8 +67,8 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
 
         if (IsUnitType(u, UNIT_TYPE_STRUCTURE))
         {
-          AdjustPlayerStateBJ(GetUnitGoldCost(GetUnitTypeId(u)), GetOwningPlayer(u), PLAYER_STATE_RESOURCE_GOLD);
-          AdjustPlayerStateBJ(GetUnitWoodCost(GetUnitTypeId(u)), GetOwningPlayer(u), PLAYER_STATE_RESOURCE_LUMBER);
+          GetOwningPlayer(u).AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, GetUnitGoldCost(GetUnitTypeId(u)));
+          GetOwningPlayer(u).AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, GetUnitWoodCost(GetUnitTypeId(u)));
           KillUnit(u);
         }
 

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -48,8 +49,8 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
     protected override void OnComplete()
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      AdjustPlayerStateBJ(300, Holder.Player, PLAYER_STATE_RESOURCE_LUMBER);
-      AdjustPlayerStateBJ(300, Holder.Player, PLAYER_STATE_RESOURCE_GOLD);
+      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 300);
+      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
       if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\SentinelTheme.mp3");
     }
   }

@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -31,7 +32,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
     protected override void OnComplete()
     {
       Holder.ModObjectLimit(Constants.UNIT_U01V_VAL_KYR_FORSAKEN, 2);
-      AdjustPlayerStateBJ(500, Holder.Player, PLAYER_STATE_RESOURCE_GOLD);
+      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 500);
     }
   }
 }

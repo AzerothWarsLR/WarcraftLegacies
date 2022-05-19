@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -46,7 +47,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     protected override void OnComplete()
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      AdjustPlayerStateBJ(3000, Holder.Player, PLAYER_STATE_RESOURCE_LUMBER);
+      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 3000);
     }
   }
 }

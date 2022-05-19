@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
@@ -25,8 +26,8 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
 
     protected override void OnComplete()
     {
-      AdjustPlayerStateBJ(500, Holder.Player, PLAYER_STATE_RESOURCE_GOLD);
-      AdjustPlayerStateBJ(4000, Holder.Player, PLAYER_STATE_RESOURCE_LUMBER);
+      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 500);
+      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 4000);
     }
   }
 }

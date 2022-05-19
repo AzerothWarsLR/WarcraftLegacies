@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -14,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
 
     protected override void OnComplete()
     {
-      AdjustPlayerStateBJ(30000, Holder.Player, PLAYER_STATE_RESOURCE_LUMBER);
+      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 30000);
     }
 
     public QuestLumberMarket() : base("Lumber Market Krash",

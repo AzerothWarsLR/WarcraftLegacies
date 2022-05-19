@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
     protected override void OnComplete()
     {
       SetPlayerTechResearched(Holder.Player, GundrakResearch, 1);
-      AdjustPlayerStateBJ(300, this.Holder.Player, PLAYER_STATE_RESOURCE_GOLD);
+      this.Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
     }
 
     protected override void OnAdd()

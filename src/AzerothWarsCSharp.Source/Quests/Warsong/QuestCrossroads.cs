@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -43,7 +44,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       CreateUnit(whichPlayer, wardId, -12844, -1975, 0);
       CreateUnit(whichPlayer, wardId, -10876, -2066, 0);
       CreateUnit(whichPlayer, wardId, -11922, -824, 0);
-      AdjustPlayerStateBJ(2000, Holder.Player, PLAYER_STATE_RESOURCE_LUMBER);
+      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 2000);
     }
 
     protected override void OnFail()
