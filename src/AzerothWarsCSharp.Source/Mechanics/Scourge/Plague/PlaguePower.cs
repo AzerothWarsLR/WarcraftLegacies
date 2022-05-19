@@ -52,7 +52,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
       _plagueRects = plagueRects;
       _plagueCauldronUnitTypeId = plagueCauldronUnitTypeId;
       _plagueCauldronSummonParameters = plagueCauldronSummonParameters;
-      IconName = "DiseaseCloud";
+      IconName = "PlagueCloud";
       Name = "Plague of Undeath";
       Description = $"You gain {_plagueRects.Count} Plague Cauldrons which periodically spawn Zombies near them, and neutral villagers on the map are transformed into Zombies.";
     }
