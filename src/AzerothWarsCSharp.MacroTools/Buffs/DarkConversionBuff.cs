@@ -40,6 +40,11 @@ namespace AzerothWarsCSharp.MacroTools.Buffs
       }
     }
 
+    public override StackResult OnStack(Buff newStack)
+    {
+      return StackResult.Stack;
+    }
+    
     public override void OnApply()
     {
       PauseUnit(Target, true);
@@ -49,6 +54,7 @@ namespace AzerothWarsCSharp.MacroTools.Buffs
     {
       DestroyEffect(AddSpecialEffect(TransformEffect, GetUnitX(Target), GetUnitY(Target)));
       var oldUnitPosition = new Point(GetUnitX(Target), GetUnitY(Target));
+      KillUnit(Target);
       RemoveUnit(Target);
       var zombie = CreateUnit(TargetPlayer, TransformUnitTypeId, oldUnitPosition.X, oldUnitPosition.Y, 0);
       UnitAddAbility(zombie, DiseaseCloudAbilityId);

@@ -25,8 +25,11 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
     };
     private readonly List<int> _villagerUnitTypeIds = new()
     {
-      FourCC("nvwl"),
-      FourCC("nvl2")
+      FourCC("nvlw"),
+      FourCC("nvl2"),
+      FourCC("nvil"),
+      FourCC("nvlk"),
+      FourCC("nvk2")
     };
     private readonly List<unit> _plagueCauldrons = new();
     private static readonly PeriodicDisposableTrigger<DarkConversionPeriodicAction> DarkConversionPeriodicTrigger = new(1.0f);
@@ -79,7 +82,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
         PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDies, SpawnPeasants, unitTypeId);
       }
 
-      DarkConversionPeriodicTrigger.Add(new DarkConversionPeriodicAction(whichPlayer));
+      DarkConversionPeriodicTrigger.Add(new DarkConversionPeriodicAction(whichPlayer, _villagerUnitTypeIds));
     }
 
     public override void OnRemove(player whichPlayer)
