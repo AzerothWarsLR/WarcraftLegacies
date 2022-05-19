@@ -464,9 +464,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private void DistributeUnits()
     {
       if (_team == null) return;
-      force eligiblePlayers = Team.CreateForceFromPlayers();
-
-      ForceRemovePlayer(eligiblePlayers, Player);
+      List<player> eligiblePlayers = Team.GetAllPlayers();
+      eligiblePlayers.Remove(Player);
 
       var playerUnits = new GroupWrapper().EmptyToList();
 
@@ -496,12 +495,9 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         else if (UnitType.GetFromHandle(unit).Meta == false)
         {
           SetUnitOwner(unit,
-            Team.PlayerCount > 1 ? ForcePickRandomPlayer(eligiblePlayers) : Player(GetBJPlayerNeutralVictim()), false);
+            Team.PlayerCount > 1 ? eligiblePlayers[Random.Shared.Next(eligiblePlayers.Count)] : Player(GetBJPlayerNeutralVictim()), false);
         }
       }
-
-      //Cleanup
-      DestroyForce(eligiblePlayers);
     }
 
     /// <summary>

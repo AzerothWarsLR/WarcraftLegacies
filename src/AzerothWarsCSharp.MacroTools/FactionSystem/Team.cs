@@ -58,12 +58,12 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     ///   Creates a <see cref="force" /> containing all <see cref="player" />s within this <see cref="Team" />.
     /// </summary>
     /// <returns></returns>
-    public force CreateForceFromPlayers()
+    public List<player> GetAllPlayers()
     {
-      var newForce = CreateForce();
+      var newForce = new List<player>();
       foreach (var faction in _factions)
         if (faction.Player != null)
-          ForceAddPlayer(newForce, faction.Player);
+          newForce.Add(faction.Player);
       return newForce;
     }
 
