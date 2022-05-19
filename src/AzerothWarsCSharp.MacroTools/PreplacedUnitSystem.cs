@@ -80,7 +80,7 @@ namespace AzerothWarsCSharp.MacroTools
 
     private static void ReadAllUnits()
     {
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(GetPlayableMapRect()).EmptyToList())
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(GeneralHelpers.GetPlayableMapArea()).EmptyToList())
       {
         var unitTypeId = GetUnitTypeId(unit);
         if (!UnitsByTypeId.ContainsKey(unitTypeId)) UnitsByTypeId[unitTypeId] = new List<unit>();

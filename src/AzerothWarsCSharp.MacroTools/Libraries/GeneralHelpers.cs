@@ -11,12 +11,12 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
     private static readonly group TempGroup = CreateGroup();
     private static readonly rect TempRect = Rect(0, 0, 0, 0);
 
-    public static rect GetPlayableMapArea()
+    public static Rectangle GetPlayableMapArea()
     {
-      return Rect(GetCameraBoundMinX() - GetCameraMargin(CAMERA_MARGIN_LEFT),
+      return new Rectangle(Rect(GetCameraBoundMinX() - GetCameraMargin(CAMERA_MARGIN_LEFT),
         GetCameraBoundMinY() - GetCameraMargin(CAMERA_MARGIN_BOTTOM),
         GetCameraBoundMaxX() + GetCameraMargin(CAMERA_MARGIN_RIGHT),
-        GetCameraBoundMaxY() + GetCameraMargin(CAMERA_MARGIN_TOP));
+        GetCameraBoundMaxY() + GetCameraMargin(CAMERA_MARGIN_TOP)));
     }
     
     public static void SetBlightRadius(player whichPlayer, Point position, float radius, bool addBlight)

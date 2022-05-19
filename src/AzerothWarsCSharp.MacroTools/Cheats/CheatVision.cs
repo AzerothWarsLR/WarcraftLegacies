@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
 
       if (parameter == "on")
       {
-        var newFog = CreateFogModifierRect(p, FOG_OF_WAR_VISIBLE, GetPlayableMapArea(), true, false);
+        var newFog = CreateFogModifierRect(p, FOG_OF_WAR_VISIBLE, GetPlayableMapArea().Rect, true, false);
         FogModifierStart(newFog);
         Fogs.Add(p, newFog);
         DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Whole map revealed.");
