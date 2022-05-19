@@ -59,7 +59,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
           }
           else
           {
-            BJDebugMsg("Error: attempted to Person " + GetPlayerName(Player) +
+            throw new Exception("Attempted to Person " + GetPlayerName(Player) +
                        " to already occupied faction with name " + value.Name);
           }
         }

@@ -1,3 +1,4 @@
+using System;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
@@ -27,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
     protected override void OnAdd()
     {
       if (Holder.UndefeatedResearch == 0)
-        BJDebugMsg("ERROR: " + Holder.Name + " has no presence research. QuestSummonLegion won't work.");
+        throw new Exception(Holder.Name + " has no presence research. QuestSummonLegion won't work.");
     }
   }
 }

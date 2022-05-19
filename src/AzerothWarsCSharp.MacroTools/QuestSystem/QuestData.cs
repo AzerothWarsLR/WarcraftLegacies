@@ -156,7 +156,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       {
         if (_holder != null)
         {
-          BJDebugMsg("Attempted to Holder of quest " + Title + " to " + value.Name + " but it is already to " +
+          throw new Exception("Attempted to Holder of quest " + Title + " to " + value.Name + " but it is already to " +
                      _holder.Name);
           return;
         }
