@@ -8,6 +8,16 @@ namespace AzerothWarsCSharp.MacroTools
   {
     private const float HERO_DROP_DIST = 50; //The radius in which heroes spread out items when they drop them
 
+    public static void SetLifePercent(this unit whichUnit, float percent)
+    {
+      SetUnitState(whichUnit, UNIT_STATE_LIFE, GetUnitState(whichUnit, UNIT_STATE_MAX_LIFE) * MathF.Max(0, percent) * 0.01f);
+    }
+
+    public static float GetLifePercent(this unit whichUnit)
+    {
+      return GetUnitState(whichUnit, UNIT_STATE_LIFE) / GetUnitState(whichUnit, UNIT_STATE_MAX_LIFE) * 100;
+    }
+    
     /// <summary>
     ///   Resurrects a dead unit.
     /// </summary>
@@ -134,9 +144,9 @@ namespace AzerothWarsCSharp.MacroTools
 
     public static void ScaleMaxHitpoints(this unit u, float scale)
     {
-      var percentageHitpoints = Blizzard.GetUnitLifePercent(u);
+      var percentageHitpoints = u.GetLifePercent();
       BlzSetUnitMaxHP(u, R2I(I2R(BlzGetUnitMaxHP(u)) * scale));
-      Blizzard.SetUnitLifePercentBJ(u, percentageHitpoints);
+      u.SetLifePercent(percentageHitpoints);
     }
   }
 }

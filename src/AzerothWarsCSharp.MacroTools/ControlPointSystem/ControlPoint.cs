@@ -63,7 +63,7 @@ namespace AzerothWarsCSharp.MacroTools.ControlPointSystem
         {
           BlzSetEventDamage(0);
           SetUnitOwner(Unit, GetOwningPlayer(attacker), true);
-          SetUnitLifePercentBJ(Unit, 85);
+          Unit.SetLifePercent(85);
         }
       }
       catch (Exception ex)

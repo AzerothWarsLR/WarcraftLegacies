@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
@@ -34,7 +35,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       unit warsongHold = CreateStructureForced(Holder.Player, FourCC("o02S"), -7648, 15456, 270, 192);
       BlzSetUnitName(warsongHold, "Warsong Hold");
       BlzSetUnitMaxHP(warsongHold, 4000);
-      SetUnitLifePercentBJ(warsongHold, 100);
+      warsongHold.SetLifePercent(100);
       UnitAddAbility(warsongHold, AbilityId);
       CreateStructureForced(Holder.Player, FourCC("n03E"), -7296, 15680, 4712389 * bj_RADTODEG, 128);
       CreateStructureForced(Holder.Player, FourCC("o01T"), -7456, 15008, 4712389 * bj_RADTODEG, 128);
