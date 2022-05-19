@@ -8,16 +8,43 @@ namespace AzerothWarsCSharp.MacroTools
   {
     private const float HERO_DROP_DIST = 50; //The radius in which heroes spread out items when they drop them
 
+    /// <summary>
+    /// If the unit has the given item type, returns the item slot the item is in.
+    /// Otherwise, returns 0.
+    /// This function is 1-indexed.
+    /// </summary>
+    public static int GetInventoryIndexOfItemType(this unit whichUnit, int itemTypeId)
+    {
+      var index = 0;
+      while (true)
+      {
+        item indexItem = UnitItemInSlot(whichUnit, index);
+        if (indexItem != null && GetItemTypeId(indexItem) == itemTypeId)
+        {
+          return index + 1;
+        }
+
+        index += 1;
+        if (index >= 6)
+        {
+          break;
+        }
+      }
+
+      return 0;
+    }
+
     public static void SetLifePercent(this unit whichUnit, float percent)
     {
-      SetUnitState(whichUnit, UNIT_STATE_LIFE, GetUnitState(whichUnit, UNIT_STATE_MAX_LIFE) * MathF.Max(0, percent) * 0.01f);
+      SetUnitState(whichUnit, UNIT_STATE_LIFE,
+        GetUnitState(whichUnit, UNIT_STATE_MAX_LIFE) * MathF.Max(0, percent) * 0.01f);
     }
 
     public static float GetLifePercent(this unit whichUnit)
     {
       return GetUnitState(whichUnit, UNIT_STATE_LIFE) / GetUnitState(whichUnit, UNIT_STATE_MAX_LIFE) * 100;
     }
-    
+
     /// <summary>
     ///   Resurrects a dead unit.
     /// </summary>

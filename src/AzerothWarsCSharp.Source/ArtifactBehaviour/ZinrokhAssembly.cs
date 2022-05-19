@@ -25,11 +25,11 @@ namespace AzerothWarsCSharp.Source.ArtifactBehaviour
     private static void ItemPickup()
     {
       unit triggerUnit = GetTriggerUnit();
-      if (GetInventoryIndexOfItemTypeBJ(triggerUnit, FourCC("I01J")) > 0 &&
-          GetInventoryIndexOfItemTypeBJ(triggerUnit, FourCC("I01K")) > 0 &&
-          GetInventoryIndexOfItemTypeBJ(triggerUnit, FourCC("I01M")) > 0 &&
-          GetInventoryIndexOfItemTypeBJ(triggerUnit, FourCC("I01I")) > 0 &&
-          GetInventoryIndexOfItemTypeBJ(triggerUnit, FourCC("I01L")) > 0)
+      if (triggerUnit.GetInventoryIndexOfItemType(FourCC("I01J")) > 0 &&
+          triggerUnit.GetInventoryIndexOfItemType(FourCC("I01K")) > 0 &&
+          triggerUnit.GetInventoryIndexOfItemType(FourCC("I01M")) > 0 &&
+          triggerUnit.GetInventoryIndexOfItemType(FourCC("I01I")) > 0 &&
+          triggerUnit.GetInventoryIndexOfItemType(FourCC("I01L")) > 0)
       {
         Consume(FourCC("I01J"));
         Consume(FourCC("I01K"));
@@ -41,8 +41,7 @@ namespace AzerothWarsCSharp.Source.ArtifactBehaviour
         {
           ArtifactManager.Register(ArtifactSetup.ArtifactZinrokh);
           triggerUnit.AddItemSafe(ArtifactSetup.ArtifactZinrokh.Item);
-          DisplayTextToForce(bj_FORCE_ALL_PLAYERS,
-            $"{GetTriggerPlayer().GetFaction()?.ColoredName} |r has assembled Zin'rokh, Destroyer of Worlds!");
+          DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"{GetTriggerPlayer().GetFaction()?.ColoredName} |r has assembled Zin'rokh, Destroyer of Worlds!");
           return;
         }
 
