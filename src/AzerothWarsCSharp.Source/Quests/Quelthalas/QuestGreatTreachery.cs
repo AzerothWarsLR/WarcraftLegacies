@@ -6,7 +6,7 @@ using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using AzerothWarsCSharp.Source.Setup.QuestSetup;
 
-using static War3Api.Common; using static War3Api.Blizzard;
+using static War3Api.Common; 
 
 namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {

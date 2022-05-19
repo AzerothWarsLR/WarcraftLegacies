@@ -1,6 +1,6 @@
 using AzerothWarsCSharp.Source.Game_Logic.GameEnd;
 
-using static War3Api.Common; using static War3Api.Blizzard;
+using static War3Api.Common; 
 
 namespace AzerothWarsCSharp.Source.Commands
 {

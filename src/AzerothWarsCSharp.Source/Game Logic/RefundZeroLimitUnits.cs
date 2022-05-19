@@ -1,7 +1,7 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using WCSharp.Events;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.Source.Game_Logic
 {

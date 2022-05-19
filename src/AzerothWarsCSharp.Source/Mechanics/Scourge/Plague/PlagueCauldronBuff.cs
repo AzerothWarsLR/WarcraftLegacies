@@ -1,6 +1,6 @@
 ﻿using WCSharp.Buffs;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
 {

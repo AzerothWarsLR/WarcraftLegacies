@@ -1,7 +1,7 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
-using static War3Api.Common; using static War3Api.Blizzard;
+using static War3Api.Common; 
 
 namespace AzerothWarsCSharp.Source.Quests.Legion
 {

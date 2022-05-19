@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using WCSharp.Events;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.Cheats

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.Source.Setup
 {

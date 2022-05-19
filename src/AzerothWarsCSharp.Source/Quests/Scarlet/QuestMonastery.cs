@@ -7,7 +7,7 @@ using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.Source.Quests.Scarlet
 {

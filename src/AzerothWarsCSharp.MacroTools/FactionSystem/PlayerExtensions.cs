@@ -4,6 +4,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
   public static class PlayerExtensions
   {
+    public static void AdjustPlayerState(this player player, playerstate playerState, int value)
+    {
+      SetPlayerState(player, playerState, GetPlayerState(player, playerState) + value);
+    }
+    
     public static int GetObjectLimit(this player player, int objectId)
     {
       return PlayerData.ByHandle(player).GetObjectLimit(objectId);

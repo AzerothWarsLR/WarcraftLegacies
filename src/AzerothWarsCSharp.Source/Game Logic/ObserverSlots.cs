@@ -1,4 +1,4 @@
-using static War3Api.Common; using static War3Api.Blizzard;
+using static War3Api.Common; 
 
 namespace AzerothWarsCSharp.Source.Game_Logic
 {

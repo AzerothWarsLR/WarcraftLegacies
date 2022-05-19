@@ -8,7 +8,7 @@ using AzerothWarsCSharp.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 {

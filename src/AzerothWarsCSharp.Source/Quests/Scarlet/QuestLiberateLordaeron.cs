@@ -7,7 +7,7 @@ using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Quests.Scarlet

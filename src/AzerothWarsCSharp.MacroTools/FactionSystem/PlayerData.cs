@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
