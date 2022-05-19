@@ -53,7 +53,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
       KillUnit(_lordBarov);
 
-      var plaguePower = new PlaguePower(new List<Rectangle>
+      var plagueRects = new List<Rectangle>
       {
         Regions.Plague_1,
         Regions.Plague_2,
@@ -62,14 +62,18 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
         Regions.Plague_5,
         Regions.Plague_6,
         Regions.Plague_7
-      }, Constants.UNIT_H02W_PLAGUE_CAULDRON, new List<PlagueCauldronSummonParameter>()
+      };
+
+      var plagueCauldronSummonParameters = new List<PlagueCauldronSummonParameter>()
       {
         new(1, Constants.UNIT_U01R_APOTHECARY_FORSAKEN),
         new(2, Constants.UNIT_UACO_ACOLYTE_SCOURGE, Holder),
         new(2, Constants.UNIT_U01K_ACOLYTE_FORSAKEN),
         new(4, Constants.UNIT_N07S_DEADEYE_FORSAKEN),
         new(4, Constants.UNIT_H08O_ROTGUARD_FORSAKEN),
-      });
+      };
+
+      var plaguePower = new PlaguePower(plagueRects, Constants.UNIT_H02W_PLAGUE_CAULDRON, plagueCauldronSummonParameters);
 
       if (_preferredPlagueFaction.ScoreStatus == ScoreStatus.Undefeated)
       {
