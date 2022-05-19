@@ -51,7 +51,7 @@ namespace AzerothWarsCSharp.MacroTools.HintSystem
     public static void Setup()
     {
       var trig = CreateTrigger();
-      TriggerRegisterTimerEventPeriodic(trig, HINT_INTERVAL);
+      TriggerRegisterTimerEvent(trig, HINT_INTERVAL, true);
       TriggerAddAction(trig, DisplayRandomHints);
     }
   }
