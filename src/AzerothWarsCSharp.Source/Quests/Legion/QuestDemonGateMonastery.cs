@@ -31,14 +31,14 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       CreateUnit(Holder.Player, DemongateId, GetUnitX(_questItemKillMonastery.Target),
         GetUnitY(_questItemKillMonastery.Target), 270);
       var monastery = Regions.ScarletMonastery.Rect;
-      SetDoodadAnimationRectBJ("hide", FourCC("YObb"), monastery);
-      SetDoodadAnimationRectBJ("hide", FourCC("ZSab"), monastery);
-      SetDoodadAnimationRectBJ("hide", FourCC("YOsw"), monastery);
-      SetDoodadAnimationRectBJ("show", FourCC("LOsm"), monastery);
-      SetDoodadAnimationRectBJ("hide", FourCC("YOlp"), monastery);
-      SetDoodadAnimationRectBJ("hide", FourCC("ZCv2"), monastery);
-      SetDoodadAnimationRectBJ("hide", FourCC("ZCv1"), monastery);
-      SetDoodadAnimationRectBJ("show", FourCC("ZCv1"), monastery);
+      SetDoodadAnimationRect(monastery, FourCC("YObb"), "hide", false);
+      SetDoodadAnimationRect(monastery, FourCC("ZSab"), "hide", false);
+      SetDoodadAnimationRect(monastery, FourCC("YOsw"), "hide", false);
+      SetDoodadAnimationRect(monastery, FourCC("LOsm"), "show", false);
+      SetDoodadAnimationRect(monastery, FourCC("YOlp"), "hide", false);
+      SetDoodadAnimationRect(monastery, FourCC("ZCv2"), "hide", false);
+      SetDoodadAnimationRect(monastery, FourCC("ZCv1"), "hide", false);
+      SetDoodadAnimationRect(monastery, FourCC("ZCv1"), "show", false);
     }
   }
 }
