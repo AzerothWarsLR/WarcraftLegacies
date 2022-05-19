@@ -67,7 +67,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       }
 
       DestroyGroup(tempGroup);
-      RemoveWeatherEffectBJ(_storm);
+      RemoveWeatherEffect(_storm);
       CreateUnits(Holder.Player, FourCC("opeo"), -1818, -2070, 270, 3);
       foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
     }
