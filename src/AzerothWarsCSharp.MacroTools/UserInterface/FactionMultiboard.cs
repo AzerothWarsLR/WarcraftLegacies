@@ -32,7 +32,11 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
 
     private FactionMultiboard(int columnCount, int rowCount, string title)
     {
-      _multiboard = CreateMultiboardBJ(columnCount, rowCount, title);
+      _multiboard = CreateMultiboard();
+      MultiboardSetRowCount(_multiboard, rowCount);
+      MultiboardSetColumnCount(_multiboard, columnCount);
+      MultiboardSetTitleText(_multiboard, title);
+      MultiboardDisplay(_multiboard, true);
       Render();
     }
 
@@ -90,7 +94,11 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
     {
       var row = 0;
       DestroyMultiboard(_multiboard);
-      _multiboard = CreateMultiboardBJ(COLUMN_COUNT, 3, TITLE);
+      _multiboard = CreateMultiboard();
+      MultiboardSetColumnCount(_multiboard, COLUMN_COUNT);
+      MultiboardSetRowCount(_multiboard, 3);
+      MultiboardSetTitleText(_multiboard, TITLE);
+      MultiboardDisplay(_multiboard, true);
       MultiboardSetRowCount(_multiboard, 30);
       UpdateHeaderRow();
       row += 1;
