@@ -1,5 +1,6 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.Cheats
@@ -16,7 +17,7 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
       player p = GetTriggerPlayer();
 
       string parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
-      AdjustPlayerStateBJ(S2I(parameter), p, PLAYER_STATE_RESOURCE_FOOD_CAP);
+      p.AdjustPlayerState(PLAYER_STATE_RESOURCE_FOOD_CAP, S2I(parameter));
       DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Granted " + parameter + " food.");
     }
 

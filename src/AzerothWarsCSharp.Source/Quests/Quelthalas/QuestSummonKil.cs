@@ -2,7 +2,7 @@ using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using AzerothWarsCSharp.Source.Setup.Legends;
-using static War3Api.Common; using static War3Api.Blizzard;
+using static War3Api.Common; 
 
 namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {
@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     
     protected override void OnComplete()
     {
-      UnitRemoveAbilityBJ(FourCC("A0R7"), LegendQuelthalas.LegendKael.Unit);
+      UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0R7"));
       LegendQuelthalas.LegendKiljaeden.Spawn(QuelthalasSetup.FactionQuelthalas.Player, Regions.Sunwell.Center.X,
         Regions.Sunwell.Center.Y, 244);
     }

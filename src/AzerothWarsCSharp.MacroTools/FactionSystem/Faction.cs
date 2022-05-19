@@ -4,7 +4,7 @@ using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Events;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
@@ -421,7 +421,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
           RemoveUnit(unit);
 
         if (!tempUnitType?.Meta == true)
-          SetUnitOwner(unit, Player(bj_PLAYER_NEUTRAL_VICTIM), false);
+          SetUnitOwner(unit, Player(GetBJPlayerNeutralVictim()), false);
       }
     }
 
@@ -464,9 +464,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private void DistributeUnits()
     {
       if (_team == null) return;
-      force eligiblePlayers = Team.CreateForceFromPlayers();
-
-      ForceRemovePlayer(eligiblePlayers, Player);
+      List<player> eligiblePlayers = Team.GetAllPlayers();
+      eligiblePlayers.Remove(Player);
 
       var playerUnits = new GroupWrapper().EmptyToList();
 
@@ -496,12 +495,9 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         else if (UnitType.GetFromHandle(unit).Meta == false)
         {
           SetUnitOwner(unit,
-            Team.PlayerCount > 1 ? ForcePickRandomPlayer(eligiblePlayers) : Player(bj_PLAYER_NEUTRAL_VICTIM), false);
+            Team.PlayerCount > 1 ? eligiblePlayers[GetRandomInt(0, eligiblePlayers.Count)] : Player(GetBJPlayerNeutralVictim()), false);
         }
       }
-
-      //Cleanup
-      DestroyForce(eligiblePlayers);
     }
 
     /// <summary>

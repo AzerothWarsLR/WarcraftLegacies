@@ -1,4 +1,5 @@
-using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using AzerothWarsCSharp.MacroTools.Wrappers;
+using static War3Api.Common;  using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.Cheats
 {
@@ -6,11 +7,10 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
   {
     private const string COMMAND = "-level ";
     private static string? _parameter;
-
-
-    private static void SetLevel()
+    
+    private static void SetLevel(unit whichUnit)
     {
-      SetHeroLevelBJ(GetEnumUnit(), S2I(_parameter), true);
+      SetHeroLevel(whichUnit, S2I(_parameter), true);
     }
 
     private static void Actions()
@@ -24,7 +24,10 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
 
       if (S2I(_parameter) > 0)
       {
-        ForGroupBJ(GetUnitsSelectedAll(p), SetLevel);
+        foreach (var unit in new GroupWrapper().EnumSelectedUnits(p).EmptyToList())
+        {
+          SetLevel(unit);
+        }
         DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Setting hero level of selected units to " + _parameter + ".");
       }
     }

@@ -2,7 +2,7 @@ using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.Source.Quests.Goblin
 {
@@ -51,7 +51,7 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
     protected override void OnComplete()
     {
       GrantGadetzan(Holder.Player);
-      if (GetLocalPlayer() == Holder.Player) PlayThematicMusicBJ("war3mapImported\\GoblinTheme.mp3");
+      if (GetLocalPlayer() == Holder.Player) PlayThematicMusic("war3mapImported\\GoblinTheme.mp3");
     }
   }
 }

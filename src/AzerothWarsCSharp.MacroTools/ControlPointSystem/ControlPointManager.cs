@@ -2,7 +2,7 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Libraries;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.MacroTools.ControlPointSystem
 {
@@ -48,7 +48,7 @@ namespace AzerothWarsCSharp.MacroTools.ControlPointSystem
       ByUnit.Add(controlPoint.Unit, controlPoint);
       ByUnitType.Add(controlPoint.UnitType, controlPoint);
       BlzSetUnitMaxHP(controlPoint.Unit, MAX_HITPOINTS);
-      SetUnitLifePercentBJ(controlPoint.Unit, 80);
+      controlPoint.Unit.SetLifePercent(80);
 
       controlPoint.Owner.SetControlPointValue(controlPoint.Owner.GetControlPointValue() + controlPoint.Value);
       controlPoint.Owner.SetControlPointCount(controlPoint.Owner.GetControlPointCount() + 1);

@@ -8,7 +8,7 @@ using AzerothWarsCSharp.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 {
@@ -67,7 +67,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       }
 
       DestroyGroup(tempGroup);
-      RemoveWeatherEffectBJ(_storm);
+      RemoveWeatherEffect(_storm);
       CreateUnits(Holder.Player, FourCC("opeo"), -1818, -2070, 270, 3);
       foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
     }

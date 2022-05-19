@@ -1,6 +1,6 @@
 // using AzerothWarsCSharp.MacroTools.FactionSystem;
 //
-// using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
+// using static War3Api.Common;  using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 // {
 //   public static class TitanForgeArtifact
 //   {
@@ -16,8 +16,8 @@
 //       }
 //       else
 //       {
-//         AdjustPlayerStateBJ(1000, GetTriggerPlayer(), PLAYER_STATE_RESOURCE_GOLD);
-//         AdjustPlayerStateBJ(750, GetTriggerPlayer(), PLAYER_STATE_RESOURCE_LUMBER);
+//         GetTriggerPlayer().AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 1000);
+//         GetTriggerPlayer().AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 750);
 //       }
 //
 //       SetPlayerTechResearched(GetTriggerPlayer(), RESEARCH_ID, 1);

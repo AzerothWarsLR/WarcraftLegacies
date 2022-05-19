@@ -6,7 +6,7 @@ using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using AzerothWarsCSharp.Source.Setup.QuestSetup;
 
-using static War3Api.Common; using static War3Api.Blizzard;
+using static War3Api.Common; 
 
 namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {
@@ -32,8 +32,8 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     protected override void OnComplete()
     {
       QuelthalasQuestSetup.STAY_LOYAL.Progress = QuestProgress.Failed;
-      UnitRemoveAbilityBJ(FourCC("A0IF"), LegendQuelthalas.LegendKael.Unit);
-      UnitRemoveAbilityBJ(FourCC("A0IK"), LegendQuelthalas.LegendKael.Unit);
+      UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0IF"));
+      UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0IK"));
       RemoveUnit(LegendQuelthalas.LegendLorthemar.Unit);
       QuelthalasSetup.FactionQuelthalas.ModObjectLimit(LegendQuelthalas.LegendLorthemar.UnitType, -Faction.UNLIMITED);
       Holder.Team = TeamSetup.Legion;

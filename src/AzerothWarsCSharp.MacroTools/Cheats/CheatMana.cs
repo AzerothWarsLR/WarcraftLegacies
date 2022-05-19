@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using WCSharp.Events;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.Cheats
@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
     private static void Spell()
     {
       if (IsCheatActive(GetTriggerPlayer()))
-        SetUnitManaPercentBJ(GetTriggerUnit(), 100);
+        SetUnitState(GetTriggerUnit(), UNIT_STATE_MANA, GetUnitState(GetTriggerUnit(), UNIT_STATE_MAX_MANA));
     }
 
     private static void Actions()

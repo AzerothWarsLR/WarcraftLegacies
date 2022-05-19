@@ -6,7 +6,7 @@ using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.Source.Quests.Scourge
 {
@@ -45,7 +45,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
       _naxxramas.Rescue(Holder.Player);
-      SetPlayerAbilityAvailableBJ(false, FourCC("A0O2"), Holder.Player);
+      SetPlayerAbilityAvailable(Holder.Player, FourCC("A0O2"), false);
     }
   }
 }

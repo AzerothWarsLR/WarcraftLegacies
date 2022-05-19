@@ -1,4 +1,5 @@
-using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
+using static War3Api.Common;  using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.Cheats
 {
@@ -21,16 +22,16 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
       {
         foreach (var player in GetAllPlayers())
         {
-          SetPlayerAllianceStateBJ(GetTriggerPlayer(), player, bj_ALLIANCE_ALLIED_ADVUNITS);
-          SetPlayerAllianceStateBJ(player, GetTriggerPlayer(), bj_ALLIANCE_ALLIED_ADVUNITS);
+          GetTriggerPlayer().SetAllianceState(player, AllianceState.AlliedAdvUnits);
+          player.SetAllianceState(GetTriggerPlayer(), AllianceState.AlliedAdvUnits);
         }
 
         DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Granted control of all players.");
       }
       else
       {
-        SetPlayerAllianceStateBJ(Player(S2I(parameter)), GetTriggerPlayer(), bj_ALLIANCE_ALLIED_ADVUNITS);
-        SetPlayerAllianceStateBJ(GetTriggerPlayer(), Player(S2I(parameter)), bj_ALLIANCE_ALLIED_ADVUNITS);
+        Player(S2I(parameter)).SetAllianceState(GetTriggerPlayer(), AllianceState.AlliedAdvUnits);
+        GetTriggerPlayer().SetAllianceState(Player(S2I(parameter)), AllianceState.AlliedAdvUnits);
         DisplayTextToPlayer(p, 0, 0,
           "|cffD27575CHEAT:|r Granted control of player " + GetPlayerName(Player(S2I(parameter))) + ".");
       }

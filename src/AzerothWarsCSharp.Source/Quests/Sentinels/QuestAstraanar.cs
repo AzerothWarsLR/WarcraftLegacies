@@ -1,13 +1,14 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.Source.Quests.Sentinels
 {
@@ -47,8 +48,8 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
     protected override void OnComplete()
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      AdjustPlayerStateBJ(200, Holder.Player, PLAYER_STATE_RESOURCE_LUMBER);
-      AdjustPlayerStateBJ(100, Holder.Player, PLAYER_STATE_RESOURCE_GOLD);
+      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 200);
+      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 100);
     }
   }
 }

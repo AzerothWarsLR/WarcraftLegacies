@@ -1,7 +1,7 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using WCSharp.Events;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.Source.Game_Logic
 {
@@ -15,8 +15,8 @@ namespace AzerothWarsCSharp.Source.Game_Logic
       var player = GetOwningPlayer(whichUnit);
       if (player.GetObjectLimit(GetUnitTypeId(whichUnit)) == 0)
       {
-        AdjustPlayerStateSimpleBJ(player, PLAYER_STATE_RESOURCE_GOLD, GetUnitGoldCost(GetUnitTypeId(whichUnit)));
-        AdjustPlayerStateSimpleBJ(player, PLAYER_STATE_RESOURCE_LUMBER, GetUnitWoodCost(GetUnitTypeId(whichUnit)));
+        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, GetUnitGoldCost(GetUnitTypeId(whichUnit)));
+        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, GetUnitWoodCost(GetUnitTypeId(whichUnit)));
         RemoveUnit(whichUnit);
       }
     }

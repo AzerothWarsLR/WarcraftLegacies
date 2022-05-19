@@ -1,4 +1,5 @@
-using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using AzerothWarsCSharp.MacroTools.Libraries;
+using static War3Api.Common;  using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.Cheats
 {
@@ -19,7 +20,7 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
         var i = 0;
         while (true)
         {
-          if (i > bj_MAX_PLAYERS) break;
+          if (i > Environment.MAX_PLAYERS) break;
 
           SetPlayerAlliance(Player(i), GetTriggerPlayer(), ALLIANCE_SHARED_CONTROL, false);
           SetPlayerAlliance(Player(i), GetTriggerPlayer(), ALLIANCE_SHARED_ADVANCED_CONTROL, false);

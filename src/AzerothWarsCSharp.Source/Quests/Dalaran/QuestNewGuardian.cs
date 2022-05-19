@@ -4,7 +4,7 @@ using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {
@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     protected override void OnComplete()
     {
       unit whichUnit = LegendDalaran.LegendJaina.Unit;
-      UnitRemoveAbilityBJ(FourCC("A0RB"), LegendDalaran.LegendJaina.Unit);
+      UnitRemoveAbility(LegendDalaran.LegendJaina.Unit, FourCC("A0RB"));
       AddSpecialEffectTarget("war3mapImported\\Soul Armor Cosmic.mdx", whichUnit, "chest");
       BlzSetUnitName(whichUnit, "Guardian of Tirisfal");
       UnitAddAbility(whichUnit, Constants.ABILITY_A0BX_GUARDIAN_OF_TIRISFAL_DALARAN_GUARDIAN_OF_TIRISFAL);

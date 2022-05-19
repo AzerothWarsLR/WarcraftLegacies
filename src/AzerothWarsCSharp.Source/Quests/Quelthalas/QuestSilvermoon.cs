@@ -7,7 +7,7 @@ using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {
@@ -57,7 +57,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
         SetUnitInvulnerable(LegendQuelthalas.LegendSilvermoon.Unit, true);
       SetUnitInvulnerable(LegendQuelthalas.LegendSunwell.Unit, true);
       if (GetLocalPlayer() == Holder.Player)
-        PlayThematicMusicBJ("war3mapImported\\SilvermoonTheme.mp3");
+        PlayThematicMusic("war3mapImported\\SilvermoonTheme.mp3");
     }
   }
 }

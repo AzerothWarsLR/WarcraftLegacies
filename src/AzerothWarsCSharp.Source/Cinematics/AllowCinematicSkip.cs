@@ -1,5 +1,5 @@
 using AzerothWarsCSharp.MacroTools.Cheats;
-using static War3Api.Common; using static War3Api.Blizzard;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Cinematics
 {
@@ -11,10 +11,6 @@ namespace AzerothWarsCSharp.Source.Cinematics
       if (TestSafety.AreCheatsActive)
       {
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "|cffD27575CHEAT:|r CinematicSkip enabled.");
-      }
-      else
-      {
-        bj_cineSceneBeingSkipped = CreateTrigger();
       }
     }
   }

@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using static War3Api.Common; using static War3Api.Blizzard;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       get
       {
         var total = 0;
-        foreach (var faction in _factions) 
+        foreach (var faction in _factions)
           total += faction.Player.GetControlPointCount();
 
         return total;
@@ -58,12 +58,12 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     ///   Creates a <see cref="force" /> containing all <see cref="player" />s within this <see cref="Team" />.
     /// </summary>
     /// <returns></returns>
-    public force CreateForceFromPlayers()
+    public List<player> GetAllPlayers()
     {
-      var newForce = CreateForce();
+      var newForce = new List<player>();
       foreach (var faction in _factions)
         if (faction.Player != null)
-          ForceAddPlayer(newForce, faction.Player);
+          newForce.Add(faction.Player);
       return newForce;
     }
 
@@ -101,8 +101,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     {
       foreach (var faction in _factions)
       {
-        SetPlayerAllianceStateBJ(whichPlayer, faction.Player, bj_ALLIANCE_ALLIED_VISION);
-        SetPlayerAllianceStateBJ(faction.Player, whichPlayer, bj_ALLIANCE_ALLIED_VISION);
+        whichPlayer.SetAllianceState(faction.Player, AllianceState.AlliedVision);
+        faction.Player.SetAllianceState(whichPlayer, AllianceState.AlliedVision);
       }
     }
 
@@ -114,8 +114,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     {
       foreach (var faction in _factions)
       {
-        SetPlayerAllianceStateBJ(whichPlayer, faction.Player, bj_ALLIANCE_UNALLIED);
-        SetPlayerAllianceStateBJ(faction.Player, whichPlayer, bj_ALLIANCE_UNALLIED);
+        whichPlayer.SetAllianceState(faction.Player, AllianceState.Unallied);
+        faction.Player.SetAllianceState(whichPlayer, AllianceState.Unallied);
       }
     }
 

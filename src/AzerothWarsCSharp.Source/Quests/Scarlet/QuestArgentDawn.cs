@@ -3,7 +3,7 @@ using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
-using static War3Api.Common; using static War3Api.Blizzard;
+using static War3Api.Common; 
 
 namespace AzerothWarsCSharp.Source.Quests.Scarlet
 {
@@ -31,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       Holder.Name = "Argent";
       Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNTirionPaladin.blp";
       SetPlayerTechResearched(ScarletSetup.FactionScarlet.Player, FourCC("R086"), 1);
-      PlayThematicMusicBJ("war3mapImported\\ScarletTheme.mp3");
+      PlayThematicMusic("war3mapImported\\ScarletTheme.mp3");
       SetPlayerColor(Holder.Player, PLAYER_COLOR_SNOW);
 
       ScarletSetup.FactionScarlet.ModObjectLimit(FourCC("h08I"), -Faction.UNLIMITED); //Crusader

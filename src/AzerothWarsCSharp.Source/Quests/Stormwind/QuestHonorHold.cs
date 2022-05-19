@@ -6,7 +6,7 @@ using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.Source.Quests.Stormwind
 {
@@ -45,9 +45,9 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
       Holder.ModObjectLimit(Constants.UNIT_H03W_DANATH_TROLLBANE_ARATHOR_DEMI, 1);
       //Set animations of doodads within Honor Hold
-      SetDoodadAnimationRectBJ("hide", FourCC("ISrb"), Regions.HonorHold.Rect);
-      SetDoodadAnimationRectBJ("hide", FourCC("LSst"), Regions.HonorHold.Rect);
-      SetDoodadAnimationRectBJ("unhide", FourCC("CSra"), Regions.HonorHold.Rect);
+      SetDoodadAnimationRect(Regions.HonorHold.Rect, FourCC("ISrb"), "hide", false);
+      SetDoodadAnimationRect(Regions.HonorHold.Rect, FourCC("LSst"), "hide", false);
+      SetDoodadAnimationRect(Regions.HonorHold.Rect, FourCC("CSra"), "unhide", false);
     }
   }
 }

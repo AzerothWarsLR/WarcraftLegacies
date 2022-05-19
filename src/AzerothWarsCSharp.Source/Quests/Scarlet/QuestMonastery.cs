@@ -7,7 +7,7 @@ using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.Source.Quests.Scarlet
 {
@@ -55,13 +55,13 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       SetPlayerTechResearched(LordaeronSetup.FactionLordaeron.Player, FourCC("R06V"), 1);
       SetPlayerTechResearched(ScarletSetup.FactionScarlet.Player, FourCC("R086"), 1);
       foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      WaygateActivateBJ(true, _scarletMonastery);
+      WaygateActivate(_scarletMonastery, true);
       WaygateSetDestination(_scarletMonastery, Regions.ScarletMonastery.Center.X, Regions.ScarletMonastery.Center.Y);
       Holder.Team = TeamSetup.ScarletCrusade;
       Holder.Name = "Scarlet";
       Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNSaidan Dathrohan.blp";
-      PlayThematicMusicBJ("war3mapImported\\ScarletTheme.mp3");
-      SetPlayerStateBJ(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
+      PlayThematicMusic("war3mapImported\\ScarletTheme.mp3");
+      SetPlayerState(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
       Holder.AddQuest(_sequel);
     }
 

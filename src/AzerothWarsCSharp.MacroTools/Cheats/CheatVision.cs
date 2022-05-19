@@ -1,6 +1,7 @@
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools.Libraries;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.Cheats
@@ -19,7 +20,9 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
 
       if (parameter == "on")
       {
-        Fogs[p] = CreateFogModifierRectBJ(true, p, FOG_OF_WAR_VISIBLE, GetPlayableMapRect());
+        var newFog = CreateFogModifierRect(p, FOG_OF_WAR_VISIBLE, GetPlayableMapArea().Rect, true, false);
+        FogModifierStart(newFog);
+        Fogs.Add(p, newFog);
         DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Whole map revealed.");
       }
       else if (parameter == "off")

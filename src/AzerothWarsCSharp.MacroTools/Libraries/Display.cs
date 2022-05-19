@@ -1,5 +1,5 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
-using static War3Api.Common; using static War3Api.Blizzard;
+using static War3Api.Common; 
 
 namespace AzerothWarsCSharp.MacroTools.Libraries
 {
@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
     public static void DisplayHint(player whichPlayer, string msg ){
       DisplayTextToPlayer(whichPlayer, 0, 0, "\n|cff00ff00HINT|r - " + msg);
       if (GetLocalPlayer() == whichPlayer){
-        StartSound(bj_questHintSound);
+        StartSound(SoundLibrary.Hint);
       }
     }
 
@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
       }
       DisplayTextToPlayer(GetOwningPlayer(whichUnit), 0, 0, display);
       if (GetLocalPlayer() == GetOwningPlayer(whichUnit)){
-        StartSound(bj_questHintSound);
+        StartSound(SoundLibrary.Hint);
       }
     }
 
@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
         "\n|cff00ff00UNIT LIMIT CHANGED - " + GetObjectName(unitTypeId) + "|r\nYou can now train up to " +
         I2S(whichFaction.GetObjectLimit(unitTypeId)) + " " + GetObjectName(unitTypeId) + "s.");
       if (GetLocalPlayer() == whichFaction.Player){
-        StartSound(bj_questHintSound);
+        StartSound(SoundLibrary.Hint);
       }
     }
 
@@ -46,7 +46,7 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
         "\n|cff00ff00RESEARCH ACQUIRED - " + GetObjectName(researchId) + "|r\n" +
         BlzGetAbilityExtendedTooltip(researchId, researchLevel));
       if (GetLocalPlayer() == whichPlayer){
-        StartSound(bj_questHintSound);
+        StartSound(SoundLibrary.Hint);
       }
     }
 
@@ -54,14 +54,8 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
       DisplayTextToPlayer(whichPlayer, 0, 0,
         "\n|cff00ff00NEW UNIT ACQUIRED - " + GetObjectName(unitId) + "\n|r" + flavor);
       if (GetLocalPlayer() == whichPlayer){
-        StartSound(bj_questHintSound);
+        StartSound(SoundLibrary.Hint);
       }
-    }
-
-    public static void DisplaySoloPath(Faction whichFaction, string flavour ){
-      var display = "\n|cffffcc00PATH - " + whichFaction.ColoredName + "\n" + flavour + "\n";
-      StartSound(bj_rescueSound);
-      DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
     }
   }
 }

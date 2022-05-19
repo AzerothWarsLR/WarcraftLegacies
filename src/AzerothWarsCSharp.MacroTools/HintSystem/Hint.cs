@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
-using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;  using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.HintSystem
 {
@@ -51,7 +51,7 @@ namespace AzerothWarsCSharp.MacroTools.HintSystem
     public static void Setup()
     {
       var trig = CreateTrigger();
-      TriggerRegisterTimerEventPeriodic(trig, HINT_INTERVAL);
+      TriggerRegisterTimerEvent(trig, HINT_INTERVAL, true);
       TriggerAddAction(trig, DisplayRandomHints);
     }
   }

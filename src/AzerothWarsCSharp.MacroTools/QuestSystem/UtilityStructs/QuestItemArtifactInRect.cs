@@ -3,7 +3,7 @@ using AzerothWarsCSharp.MacroTools.ArtifactSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
@@ -13,13 +13,13 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     private readonly TriggerWrapper _exitsRect = new();
 
     private readonly Artifact _targetArtifact;
-    private readonly rect _targetRect;
+    private readonly Rectangle _targetRect;
 
     public QuestItemArtifactInRect(Artifact targetArtifact, Rectangle targetRect, string rectName)
     {
       _targetArtifact = targetArtifact;
-      _targetRect = targetRect.Rect;
-      region targetRegion = RectToRegion(_targetRect);
+      _targetRect = targetRect;
+      region targetRegion = RectToRegion(_targetRect.Rect);
       Description = "Bring " + GetItemName(targetArtifact.Item) + " to " + rectName;
 
       TriggerRegisterEnterRegion(_entersRect.Trigger, targetRegion, null);
@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       DisplaysPosition = true;
     }
 
-    public override Point Position => new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
+    public override Point Position => new(_targetRect.Center.X, _targetRect.Center.Y);
 
     private static region RectToRegion(rect whichRect)
     {
@@ -41,13 +41,17 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     private bool IsArtifactInRect()
     {
-      if (_targetArtifact.OwningUnit != null && RectContainsCoords(_targetRect, GetUnitX(_targetArtifact.OwningUnit),
-        GetUnitY(_targetArtifact.OwningUnit)))
+      if (_targetArtifact.OwningUnit != null &&
+          _targetRect.Contains(GetUnitX(_targetArtifact.OwningUnit), GetUnitY(_targetArtifact.OwningUnit)))
+      {
         return true;
+      }
 
       if (_targetArtifact.OwningUnit == null &&
-          RectContainsCoords(_targetRect, GetItemX(_targetArtifact.Item), GetItemY(_targetArtifact.Item)))
+          _targetRect.Contains(GetItemX(_targetArtifact.Item), GetItemY(_targetArtifact.Item)))
+      {
         return true;
+      }
 
       return false;
     }

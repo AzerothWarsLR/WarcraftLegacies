@@ -8,7 +8,7 @@ using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.Source.Quests.Forsaken
 {
@@ -69,8 +69,8 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       Holder.Team = TeamSetup.Forsaken;
       Holder.Name = "Forsaken";
       Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNBansheeRanger.blp";
-      SetPlayerStateBJ(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
-      PlayThematicMusicBJ("war3mapImported\\ForsakenTheme.mp3");
+      SetPlayerState(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
+      PlayThematicMusic("war3mapImported\\ForsakenTheme.mp3");
       Holder.AddQuest(new QuestRetakeSunwell());
       Holder.AddQuest(new QuestTheNine());
       Holder.AddQuest(new QuestTakeRevenge());

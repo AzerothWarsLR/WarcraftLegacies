@@ -5,7 +5,7 @@ using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.Source.Quests.Twilight
 {
@@ -31,9 +31,9 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
     protected override void OnComplete()
     {
       SetPlayerTechResearched(Holder.Player, CataclysmResearch, 1);
-      PlayThematicMusicBJ("war3mapImported\\TwilightTheme.mp3");
+      PlayThematicMusic("war3mapImported\\TwilightTheme.mp3");
       SetPlayerTechResearched(CthunSetup.FactionCthun.Player, FourCC("R07D"), 1);
-      IssueImmediateOrderBJ(_robogoblin, "unrobogoblin");
+      IssueImmediateOrder(_robogoblin, "unrobogoblin");
     }
 
     protected override void OnAdd()

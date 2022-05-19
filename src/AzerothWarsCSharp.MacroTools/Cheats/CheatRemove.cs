@@ -1,5 +1,6 @@
+using AzerothWarsCSharp.MacroTools.Wrappers;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.Cheats
@@ -7,19 +8,20 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
   public static class CheatRemove
   {
     private const string COMMAND = "-remove";
-    private static string _parameter = null;
 
-
-    private static void Remove()
+    private static void Remove(unit whichUnit)
     {
-      RemoveUnit(GetEnumUnit());
+      RemoveUnit(whichUnit);
     }
 
     private static void Actions()
     {
       if (!TestSafety.CheatCondition()) return;
       player p = GetTriggerPlayer();
-      ForGroupBJ(GetUnitsSelectedAll(p), Remove);
+      foreach (var unit in new GroupWrapper().EnumSelectedUnits(p).EmptyToList())
+      {
+        Remove(unit);
+      }
       DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Permanently removing selected units.");
     }
 

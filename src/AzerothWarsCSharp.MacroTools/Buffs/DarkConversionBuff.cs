@@ -1,6 +1,6 @@
 ﻿using WCSharp.Buffs;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
-using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.MacroTools.Buffs
 {
@@ -48,7 +48,9 @@ namespace AzerothWarsCSharp.MacroTools.Buffs
     public override void OnDispose()
     {
       DestroyEffect(AddSpecialEffect(TransformEffect, GetUnitX(Target), GetUnitY(Target)));
-      var zombie = ReplaceUnitBJ(Target, TransformUnitTypeId, bj_UNIT_STATE_METHOD_MAXIMUM);
+      var oldUnitPosition = new Point(GetUnitX(Target), GetUnitY(Target));
+      RemoveUnit(Target);
+      var zombie = CreateUnit(TargetPlayer, TransformUnitTypeId, oldUnitPosition.X, oldUnitPosition.Y, 0);
       UnitAddAbility(zombie, DiseaseCloudAbilityId);
       SetUnitOwner(zombie, ZombieOwningPlayer, true);
     }

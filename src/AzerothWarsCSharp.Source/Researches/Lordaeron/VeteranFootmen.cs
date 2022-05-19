@@ -1,7 +1,7 @@
 // using AzerothWarsCSharp.MacroTools.FactionSystem;
 // using AzerothWarsCSharp.Source.Setup.FactionSetup;
 //
-// using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
+// using static War3Api.Common;  using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 // {
 //   public class VeteranFootmen{
 //

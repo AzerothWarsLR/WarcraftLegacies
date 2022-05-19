@@ -1,11 +1,34 @@
 ﻿using System;
 using WCSharp.Shared.Data;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.MacroTools.Libraries
 {
   public static class MathEx
   {
+    public const double DEG_TO_RAD = Math.PI / 180.0;
+    public const float PI = 3.141593F;
+
+    public static float Max(float a, float b)
+    {
+      return b > a ? b : a;
+    }
+    
+    public static int ModuloInteger(int dividend, int divisor)
+    {
+      var modulus = dividend - (dividend / divisor) * divisor;
+
+      // If the dividend was negative, the above modulus calculation will
+      // be negative, but within (-divisor..0).  We can add (divisor) to
+      // shift this result into the desired range of (0..divisor).
+      if (modulus < 0)
+      {
+        modulus += divisor;
+      }
+
+      return modulus;
+    }
+    
     public static float GetDistanceBetweenPoints(Point positionA, Point positionB)
     {
       var dx = positionB.X - positionA.X;
@@ -16,17 +39,17 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
 
     public static float GetAngleBetweenPoints(float xa, float ya, float xb, float yb)
     {
-      return (float)(bj_RADTODEG * Math.Atan2(yb - ya, xb - xa));
+      return (float)(DEG_TO_RAD * Math.Atan2(yb - ya, xb - xa));
     }
 
     public static float GetPolarOffsetX(float x, float dist, float angle)
     {
-      return (float)(x + dist * Math.Cos(angle * bj_DEGTORAD));
+      return (float)(x + dist * Math.Cos(angle * DEG_TO_RAD));
     }
 
     public static float GetPolarOffsetY(float y, float dist, float angle)
     {
-      return (float)(y + dist * Math.Sin(angle * bj_DEGTORAD));
+      return (float)(y + dist * Math.Sin(angle * DEG_TO_RAD));
     }
   }
 }

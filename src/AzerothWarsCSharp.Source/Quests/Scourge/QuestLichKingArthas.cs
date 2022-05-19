@@ -5,7 +5,7 @@ using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.Source.Quests.Scourge
 {
@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override void OnComplete()
     {
-      PlayThematicMusicBJ("Sound\\Music\\mp3Music\\LichKingTheme.mp3");
+      PlayThematicMusic("Sound\\Music\\mp3Music\\LichKingTheme.mp3");
       LegendScourge.LegendLichking.DeathMessage =
         "Icecrown Citadel been razed. Unfortunately, the Lich King has already vacated his unholy throne.";
       LegendScourge.LegendLichking.PermaDies = false;
@@ -56,7 +56,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       LegendLordaeron.LegendArthas.Unit.AddItemSafe(ArtifactSetup.ArtifactHelmofdomination.Item);
       Holder.Team = TeamSetup.Scourge;
       _utgardeKeep.Rescue(ScourgeSetup.FactionScourge.Player);
-      SetPlayerStateBJ(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
+      SetPlayerState(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
     }
   }
 }

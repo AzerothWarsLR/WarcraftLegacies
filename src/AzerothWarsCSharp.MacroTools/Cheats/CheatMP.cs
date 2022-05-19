@@ -1,4 +1,5 @@
-using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using AzerothWarsCSharp.MacroTools.Wrappers;
+using static War3Api.Common;  using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.Cheats
 {
@@ -8,9 +9,9 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
     private static string? _parameter;
 
 
-    private static void SetMana()
+    private static void SetMana(unit whichUnit)
     {
-      SetUnitManaBJ(GetEnumUnit(), S2R(_parameter));
+      SetUnitState(whichUnit, UNIT_STATE_MANA, S2R(_parameter));
     }
 
     private static void Actions()
@@ -22,7 +23,10 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
 
       if (S2I(_parameter) >= 0)
       {
-        ForGroupBJ(GetUnitsSelectedAll(p), SetMana);
+        foreach (var unit in new GroupWrapper().EnumSelectedUnits(p).EmptyToList())
+        {
+          SetMana(unit);
+        }
         DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Setting mana of selected units to " + _parameter + ".");
       }
     }

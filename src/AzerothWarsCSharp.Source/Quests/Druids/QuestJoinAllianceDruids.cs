@@ -2,7 +2,7 @@ using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.Legends;
-using static War3Api.Common; using static War3Api.Blizzard;
+using static War3Api.Common; 
 
 namespace AzerothWarsCSharp.Source.Quests.Druids
 {
@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
     
     protected override void OnComplete()
     {
-      UnitRemoveAbilityBJ(FourCC("A0IG"), LegendDruids.LegendMalfurion.Unit);
+      UnitRemoveAbility(LegendDruids.LegendMalfurion.Unit, FourCC("A0IG"));
       Holder.Team = TeamSetup.Alliance;
     }
   }

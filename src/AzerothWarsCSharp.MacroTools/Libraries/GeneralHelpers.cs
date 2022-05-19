@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
-using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.MacroTools.Libraries
 {
@@ -9,6 +11,41 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
   {
     private static readonly group TempGroup = CreateGroup();
     private static readonly rect TempRect = Rect(0, 0, 0, 0);
+
+    private static Point? _enumDestructableCenter;
+    private static float _enumDestructableRadius;
+
+    private static bool EnumDestructablesInCircleFilter()
+    {
+      Debug.Assert(_enumDestructableCenter != null, nameof(_enumDestructableCenter) + " != null");
+      return MathEx.GetDistanceBetweenPoints(
+        new Point(GetDestructableX(GetFilterDestructable()), GetDestructableY(GetFilterDestructable())),
+        _enumDestructableCenter) <= _enumDestructableRadius;
+    }
+
+    public static Rectangle GetRectFromCircle(Point center, float radius)
+    {
+      return new Rectangle(center.X - radius, center.Y - radius, center.X + radius, center.Y + radius);
+    }
+
+    public static void EnumDestructablesInCircle(float radius, Point center, Action actionFunc)
+    {
+      if (radius >= 0)
+      {
+        _enumDestructableCenter = center;
+        _enumDestructableRadius = radius;
+        var r = GetRectFromCircle(center, radius);
+        EnumDestructablesInRect(r.Rect, Condition(EnumDestructablesInCircleFilter), actionFunc);
+      }
+    }
+
+    public static Rectangle GetPlayableMapArea()
+    {
+      return new Rectangle(Rect(GetCameraBoundMinX() - GetCameraMargin(CAMERA_MARGIN_LEFT),
+        GetCameraBoundMinY() - GetCameraMargin(CAMERA_MARGIN_BOTTOM),
+        GetCameraBoundMaxX() + GetCameraMargin(CAMERA_MARGIN_RIGHT),
+        GetCameraBoundMaxY() + GetCameraMargin(CAMERA_MARGIN_TOP)));
+    }
 
     public static void SetBlightRadius(player whichPlayer, Point position, float radius, bool addBlight)
     {
@@ -26,7 +63,7 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
 
       for (var i = 0; i < 5; i++)
       {
-        var charValue = ModuloInteger(remainingValue, 256);
+        var charValue = MathEx.ModuloInteger(remainingValue, 256);
         remainingValue /= 256;
         result = SubString(charMap, charValue, charValue + 1) + result;
       }
@@ -36,7 +73,7 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
 
     public static IEnumerable<player> GetAllPlayers()
     {
-      for (var i = 0; i < bj_MAX_PLAYERS; i++) yield return Player(i);
+      for (var i = 0; i < Environment.MAX_PLAYERS; i++) yield return Player(i);
     }
 
     public static void KillNeutralHostileUnitsInRadius(float x, float y, float radius)
@@ -66,8 +103,8 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
 
         if (IsUnitType(u, UNIT_TYPE_STRUCTURE))
         {
-          AdjustPlayerStateBJ(GetUnitGoldCost(GetUnitTypeId(u)), GetOwningPlayer(u), PLAYER_STATE_RESOURCE_GOLD);
-          AdjustPlayerStateBJ(GetUnitWoodCost(GetUnitTypeId(u)), GetOwningPlayer(u), PLAYER_STATE_RESOURCE_LUMBER);
+          GetOwningPlayer(u).AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, GetUnitGoldCost(GetUnitTypeId(u)));
+          GetOwningPlayer(u).AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, GetUnitWoodCost(GetUnitTypeId(u)));
           KillUnit(u);
         }
 

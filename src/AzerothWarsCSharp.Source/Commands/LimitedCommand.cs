@@ -3,7 +3,6 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using static War3Api.Common;
-using static War3Api.Blizzard;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Commands
@@ -21,7 +20,8 @@ namespace AzerothWarsCSharp.Source.Commands
       {
         var objectLimit = triggerFaction.GetObjectLimit(objectTypeId);
         if (objectLimit < Faction.UNLIMITED && GetUnitTypeId(unit) == triggerFaction.GetObjectLimit(objectTypeId))
-          PingMinimapForPlayer(triggerPlayer, GetUnitX(unit), GetUnitY(unit), 5);
+          if (GetLocalPlayer() == triggerPlayer)
+            PingMinimap(GetUnitX(unit), GetUnitY(unit), 5);
       }
     }
 

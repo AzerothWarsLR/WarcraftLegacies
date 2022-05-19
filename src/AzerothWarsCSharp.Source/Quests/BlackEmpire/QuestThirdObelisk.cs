@@ -5,7 +5,7 @@
 // using AzerothWarsCSharp.MacroTools.Wrappers;
 // using AzerothWarsCSharp.Source.Mechanics.BlackEmpire;
 //
-// using static War3Api.Common; using static War3Api.Blizzard; using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
+// using static War3Api.Common;  using static AzerothWarsCSharp.MacroTools.GeneralHelpers;
 // {
 //   public sealed class QuestThirdObelisk : QuestData
 //   {
@@ -56,7 +56,7 @@
 //     {
 //       foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
 //
-//       PlayThematicMusicBJ("war3mapImported\\BlackEmpireTheme.mp3");
+//       PlayThematicMusic("war3mapImported\\BlackEmpireTheme.mp3");
 //       OpenPortals();
 //     }
 //

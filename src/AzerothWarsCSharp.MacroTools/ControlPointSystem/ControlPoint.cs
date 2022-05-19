@@ -2,7 +2,7 @@ using System;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.MacroTools.ControlPointSystem
 {
@@ -63,7 +63,7 @@ namespace AzerothWarsCSharp.MacroTools.ControlPointSystem
         {
           BlzSetEventDamage(0);
           SetUnitOwner(Unit, GetOwningPlayer(attacker), true);
-          SetUnitLifePercentBJ(Unit, 85);
+          Unit.SetLifePercent(85);
         }
       }
       catch (Exception ex)

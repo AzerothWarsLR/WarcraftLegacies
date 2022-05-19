@@ -6,7 +6,7 @@ using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {
@@ -50,7 +50,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       SetUnitInvulnerable(_unitToMakeInvulnerable, true);
       if (GetLocalPlayer() == Holder.Player)
-        PlayThematicMusicBJ("war3mapImported\\CapitalCity.mp3");
+        PlayThematicMusic("war3mapImported\\CapitalCity.mp3");
       LegendLordaeron.LegendUther.AddUnitDependency(LegendLordaeron.LegendCapitalpalace.Unit);
     }
   }

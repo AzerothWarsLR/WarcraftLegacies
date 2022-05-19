@@ -3,7 +3,7 @@ using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.Legends;
-using static War3Api.Common; using static War3Api.Blizzard;
+using static War3Api.Common; 
 
 namespace AzerothWarsCSharp.Source.Quests.Dalaran
 {
@@ -58,11 +58,11 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
       LegendDalaran.LegendJaina.UnitType = FourCC("H04A");
 
-      UnitRemoveAbilityBJ(FourCC("A0RB"), LegendDalaran.LegendJaina.Unit);
+      UnitRemoveAbility(LegendDalaran.LegendJaina.Unit, FourCC("A0RB"));
       Holder.Team = TeamSetup.Scourge;
       Holder.Name = "The Nexus";
       Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNJaina_Archmage.blp";
-      SetPlayerStateBJ(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
+      SetPlayerState(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
     }
   }
 }

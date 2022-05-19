@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using static War3Api.Common;
-using static War3Api.Blizzard;
+
 
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
@@ -51,7 +51,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         {
           if (value.Player == null)
           {
-            SetPlayerColorBJ(Player, value.PlayerColor, true);
+            Player.SetColor(value.PlayerColor, true);
             _faction = value;
             //Enforce referential integrity
             if (value.Player != Player) 
@@ -59,7 +59,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
           }
           else
           {
-            BJDebugMsg("Error: attempted to Person " + GetPlayerName(Player) +
+            throw new Exception("Attempted to Person " + GetPlayerName(Player) +
                        " to already occupied faction with name " + value.Name);
           }
         }
@@ -115,7 +115,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private void SetObjectLimit(int id, int limit)
     {
       _objectLimits[id] = limit;
-      SetObjectLevel(id, IMinBJ(GetPlayerTechCount(Player, id, true), limit));
+      SetObjectLevel(id, Math.Min(GetPlayerTechCount(Player, id, true), limit));
       if (limit >= Faction.UNLIMITED)
         SetPlayerTechMaxAllowed(Player, id, -1);
       else if (limit <= 0)
