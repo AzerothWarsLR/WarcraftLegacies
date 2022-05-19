@@ -1,9 +1,22 @@
-﻿using static War3Api.Common;
+﻿using AzerothWarsCSharp.MacroTools.Wrappers;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
   public static class PlayerExtensions
   {
+    public static void SetColor(this player whichPlayer, playercolor color, bool changeExisting)
+    {
+      War3Api.Common.SetPlayerColor(whichPlayer, color);
+      if (changeExisting)
+      {
+        foreach (var unit in new GroupWrapper().EnumUnitsOfPlayer(whichPlayer).EmptyToList())
+        {
+          SetUnitColor(unit, color);
+        }
+      }
+    }
+
     public static void SetAllianceState(this player sourcePlayer, player otherPlayer, AllianceState allianceState)
     {
       // Prevent players from attempting to ally with themselves.

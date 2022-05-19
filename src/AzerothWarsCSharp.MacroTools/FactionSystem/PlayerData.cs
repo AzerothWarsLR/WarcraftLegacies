@@ -51,7 +51,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         {
           if (value.Player == null)
           {
-            SetPlayerColorBJ(Player, value.PlayerColor, true);
+            Player.SetColor(value.PlayerColor, true);
             _faction = value;
             //Enforce referential integrity
             if (value.Player != Player) 
