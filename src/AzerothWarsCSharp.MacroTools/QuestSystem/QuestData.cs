@@ -251,28 +251,8 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
                   CompletionPopup + "\n";
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
         StartSound(PlayerData.ByHandle(GetLocalPlayer()).Faction.Team.ContainsFaction(Holder)
-          ? bj_questCompletedSound
-          : bj_questWarningSound);
-      }
-    }
-
-    private void DisplayUpdated()
-    {
-      var display = "";
-      if (GetLocalPlayer() == Holder.Player)
-      {
-        display = display + "\n|cffffcc00QUEST UPDATED - " + Title + "|r\n" + Description + "\n";
-        foreach (var questItem in _questItems)
-          if (questItem.ShowsInQuestLog)
-          {
-            if (questItem.Progress == QuestProgress.Complete)
-              display = display + " - |cff808080" + questItem.Description + " (Completed)|r\n";
-            else
-              display = display + " - " + questItem.Description + "\n";
-          }
-
-        DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
-        StartSound(bj_questUpdatedSound);
+          ? SoundLibrary.Completed
+          : SoundLibrary.Warning);
       }
     }
 
@@ -296,7 +276,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
             };
 
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
-        StartSound(bj_questFailedSound);
+        StartSound(SoundLibrary.Failed);
       }
     }
 
@@ -311,7 +291,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
             display = display + " - |cff808080" + questItem.Description + " (Completed)|r\n";
 
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
-        StartSound(bj_questCompletedSound);
+        StartSound(SoundLibrary.Completed);
       }
     }
 
@@ -331,7 +311,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
           }
 
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
-        StartSound(bj_questDiscoveredSound);
+        StartSound(SoundLibrary.Discovered);
       }
     }
 
