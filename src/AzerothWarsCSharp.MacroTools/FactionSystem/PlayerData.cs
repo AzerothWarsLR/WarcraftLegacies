@@ -115,7 +115,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private void SetObjectLimit(int id, int limit)
     {
       _objectLimits[id] = limit;
-      SetObjectLevel(id, IMinBJ(GetPlayerTechCount(Player, id, true), limit));
+      SetObjectLevel(id, Math.Min(GetPlayerTechCount(Player, id, true), limit));
       if (limit >= Faction.UNLIMITED)
         SetPlayerTechMaxAllowed(Player, id, -1);
       else if (limit <= 0)
