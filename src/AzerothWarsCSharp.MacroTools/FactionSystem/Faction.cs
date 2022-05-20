@@ -99,7 +99,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
             SetPlayerTechResearched(player, _defeatedResearch, 1);
             SetPlayerTechResearched(player, _undefeatedResearch, 0);
           }
-
+        
         //Remove player from game if necessary
         if (value == ScoreStatus.Defeated && Player != null)
         {
@@ -467,7 +467,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       List<player> eligiblePlayers = Team.GetAllPlayers();
       eligiblePlayers.Remove(Player);
 
-      var playerUnits = new GroupWrapper().EmptyToList();
+      var playerUnits = new GroupWrapper().EnumUnitsOfPlayer(Player).EmptyToList();
 
       foreach (var unit in playerUnits)
       {
@@ -492,7 +492,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
           RemoveUnit(unit);
         }
         //Transfer the ownership of everything else
-        else if (UnitType.GetFromHandle(unit).Meta == false)
+        else if (loopUnitType.Meta == false)
         {
           SetUnitOwner(unit,
             Team.PlayerCount > 1 ? eligiblePlayers[GetRandomInt(0, eligiblePlayers.Count)] : Player(GetBJPlayerNeutralVictim()), false);
@@ -506,7 +506,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// </summary>
     private void Leave()
     {
-      if (_team.PlayerCount > 1 && GameTime.GetGameTime() > 60)
+      if (_team?.PlayerCount > 1 && GameTime.GetGameTime() > 60)
       {
         DistributeUnits();
         DistributeResources();
