@@ -11,15 +11,15 @@ namespace AzerothWarsCSharp.MacroTools
     public static sound Hint => _hint ??= CreateSoundFromLabel("Hint", false, false, false, 10000, 10000);
     
     private static sound? _completed;
-    public static sound Completed => _completed ??= CreateSoundFromLabel("Completed", false, false, false, 10000, 10000);
-    
+    public static sound Completed => _completed ??= CreateSoundFromLabel("QuestCompleted", false, false, false, 10000, 10000);
+
     private static sound? _failed;
-    public static sound Failed => _failed ??= CreateSoundFromLabel("Failed", false, false, false, 10000, 10000);
+    public static sound Failed => _failed ??= CreateSoundFromLabel("QuestFailed", false, false, false, 10000, 10000);
     
     private static sound? _warning;
     public static sound Warning => _warning ??= CreateSoundFromLabel("Warning", false, false, false, 10000, 10000);
     
     private static sound? _discovered;
-    public static sound Discovered => _discovered ??= CreateSoundFromLabel("Discovered", false, false, false, 10000, 10000);
+    public static sound Discovered => _discovered ??= CreateSoundFromLabel("QuestNew", false, false, false, 10000, 10000);
   }
 }
