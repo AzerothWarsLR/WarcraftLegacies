@@ -81,9 +81,10 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
       var triggerUnit = GetTriggerUnit();
       var x = GetUnitX(triggerUnit);
       var y = GetUnitY(triggerUnit);
-      foreach (var unitTypeId in _villagerUnitTypeIds)
+
+      for (var i = 0; i < 2; i++)
       {
-        CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), unitTypeId, x, y, 0);
+        CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), _villagerUnitTypeIds[GetRandomInt(0, _villagerUnitTypeIds.Count-1)], x, y, 0);
       }
     }
 
