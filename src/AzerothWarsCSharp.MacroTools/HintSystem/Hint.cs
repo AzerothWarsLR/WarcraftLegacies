@@ -7,10 +7,10 @@ namespace AzerothWarsCSharp.MacroTools.HintSystem
   public sealed class Hint
   {
     private const float HINT_INTERVAL = 180;
-
-    private static readonly HashSet<Hint> All = new();
-    private static readonly HashSet<Hint> Unread = new();
+    
+    private static readonly List<Hint> Unread = new();
     private readonly string _msg;
+    private static bool _initialized;
 
     public Hint(string msg)
     {
@@ -19,7 +19,10 @@ namespace AzerothWarsCSharp.MacroTools.HintSystem
 
     public static void Register(Hint hint)
     {
-      All.Add(hint);
+      if (!_initialized)
+      {
+        Initialize();
+      }
       Unread.Add(hint);
     }
 
@@ -48,8 +51,9 @@ namespace AzerothWarsCSharp.MacroTools.HintSystem
       }
     }
 
-    public static void Setup()
+    private static void Initialize()
     {
+      _initialized = true;
       var trig = CreateTrigger();
       TriggerRegisterTimerEvent(trig, HINT_INTERVAL, true);
       TriggerAddAction(trig, DisplayRandomHints);

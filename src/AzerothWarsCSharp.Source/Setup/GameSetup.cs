@@ -8,7 +8,6 @@ using AzerothWarsCSharp.Source.ArtifactBehaviour;
 using AzerothWarsCSharp.Source.Game_Logic.GameEnd;
 using AzerothWarsCSharp.Source.Hints;
 using AzerothWarsCSharp.Source.Mechanics.Quelthalas;
-using AzerothWarsCSharp.Source.Mechanics.Scourge;
 using AzerothWarsCSharp.Source.Mechanics.Scourge.Blight;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
