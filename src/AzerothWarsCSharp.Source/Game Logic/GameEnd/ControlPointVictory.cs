@@ -13,10 +13,10 @@ namespace AzerothWarsCSharp.Source.Game_Logic.GameEnd
     private const string VICTORY_COLOR = "|cff911499";
     private static int _cpsVictory = 90; //This many Control Points gives an instant win
 
-    private static Team _victoriousTeam;
-    private static trigger _controlPointTrig;
+    private static Team? _victoriousTeam;
+    private static trigger? _controlPointTrig;
 
-    public static Team GetVictoriousTeam()
+    public static Team? GetVictoriousTeam()
     {
       return _victoriousTeam;
     }
@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Game_Logic.GameEnd
       return CPS_WARNING;
     }
 
-    private static int GetTeamControlPoints(Team? whichTeam)
+    private static int GetTeamControlPoints(Team whichTeam)
     {
       var total = 0;
       foreach (var faction in whichTeam.GetAllFactions())
@@ -45,7 +45,7 @@ namespace AzerothWarsCSharp.Source.Game_Logic.GameEnd
       return total;
     }
 
-    private static void TeamWarning(Team? whichTeam, int controlPoints)
+    private static void TeamWarning(Team whichTeam, int controlPoints)
     {
       DisplayTextToPlayer(GetLocalPlayer(), 0, 0,
         "\n" + VICTORY_COLOR + "TEAM VICTORY IMMINENT|r\n" + whichTeam.Name + " has captured " + I2S(controlPoints) +
@@ -57,11 +57,14 @@ namespace AzerothWarsCSharp.Source.Game_Logic.GameEnd
     {
       if (!VictoryDefeat.GameWon)
       {
-        var team = controlPointOwnerChangeEventArgs.ControlPoint.Owner.GetFaction().Team;
-        var teamControlPoints = GetTeamControlPoints(team);
-        if (teamControlPoints >= _cpsVictory)
-          VictoryDefeat.TeamVictory(team);
-        else if (teamControlPoints > CPS_WARNING) TeamWarning(team, teamControlPoints);
+        var team = controlPointOwnerChangeEventArgs.ControlPoint.Owner.GetFaction()?.Team;
+        if (team != null)
+        {
+          var teamControlPoints = GetTeamControlPoints(team);
+          if (teamControlPoints >= _cpsVictory)
+            VictoryDefeat.TeamVictory(team);
+          else if (teamControlPoints > CPS_WARNING) TeamWarning(team, teamControlPoints);
+        }
       }
     }
 
