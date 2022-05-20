@@ -15,6 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
   /// </summary>
   public sealed class QuestPlague : QuestData
   {
+    private const float PLAGUE_DURATION = 120;
     private readonly Faction _preferredPlagueFaction;
     private readonly unit _lordBarov;
     private readonly IEnumerable<unit> _cultistsOfTheDamned;
@@ -40,7 +41,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     protected override string CompletionPopup =>
       "The plague has been unleashed! The citizens of Lordaeron are quickly transforming into mindless zombies.";
 
-    protected override string RewardDescription => "A plague is unleashed upon the lands of Lordaeron";
+    protected override string RewardDescription => "All villagers in Lordaeron are transformed into Zombies, and several Plague Cauldrons spawn throughout Lordaeron, which periodically spawn Zombies.";
 
     protected override void OnComplete()
     {
@@ -73,7 +74,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
         new(4, Constants.UNIT_H08O_ROTGUARD_FORSAKEN),
       };
 
-      var plaguePower = new PlaguePower(plagueRects, Constants.UNIT_H02W_PLAGUE_CAULDRON, plagueCauldronSummonParameters, 35);
+      var plaguePower = new PlaguePower(plagueRects, Constants.UNIT_H02W_PLAGUE_CAULDRON, plagueCauldronSummonParameters, PLAGUE_DURATION);
 
       if (_preferredPlagueFaction.ScoreStatus == ScoreStatus.Undefeated)
       {
