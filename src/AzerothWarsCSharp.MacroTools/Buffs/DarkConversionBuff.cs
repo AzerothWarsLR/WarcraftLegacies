@@ -1,4 +1,5 @@
 ﻿using WCSharp.Buffs;
+using WCSharp.Effects;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -26,18 +27,11 @@ namespace AzerothWarsCSharp.MacroTools.Buffs
     /// </summary>
     private player ZombieOwningPlayer { get; }
 
+    private effect? _sleepEffect;
+    
     public DarkConversionBuff(player caster, unit target) : base(target, target)
     {
       ZombieOwningPlayer = caster;
-      if (EffectString == null)
-      {
-        EffectString = @"Abilities\Spells\Undead\Sleep\SleepTarget.mdl";
-      }
-
-      if (EffectAttachmentPoint == null)
-      {
-        EffectAttachmentPoint = "overhead";
-      }
     }
 
     public override StackResult OnStack(Buff newStack)
@@ -48,17 +42,19 @@ namespace AzerothWarsCSharp.MacroTools.Buffs
     public override void OnApply()
     {
       PauseUnit(Target, true);
+      _sleepEffect = AddSpecialEffectTarget(@"Abilities\Spells\Undead\Sleep\SleepTarget.mdl", Target, "overhead");
     }
 
     public override void OnDispose()
     {
-      DestroyEffect(AddSpecialEffect(TransformEffect, GetUnitX(Target), GetUnitY(Target)));
+      EffectSystem.Add(AddSpecialEffect(TransformEffect, GetUnitX(Target), GetUnitY(Target)), 2);
       var oldUnitPosition = new Point(GetUnitX(Target), GetUnitY(Target));
       KillUnit(Target);
       RemoveUnit(Target);
       var zombie = CreateUnit(TargetPlayer, TransformUnitTypeId, oldUnitPosition.X, oldUnitPosition.Y, 0);
       UnitAddAbility(zombie, DiseaseCloudAbilityId);
       SetUnitOwner(zombie, ZombieOwningPlayer, true);
+      DestroyEffect(_sleepEffect);
     }
   }
 }

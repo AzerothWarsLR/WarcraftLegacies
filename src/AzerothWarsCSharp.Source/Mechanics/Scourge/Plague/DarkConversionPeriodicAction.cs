@@ -31,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
               var darkConversionBuff = new DarkConversionBuff(_player, unit)
               {
                 TransformUnitTypeId = Constants.UNIT_NZOM_ZOMBIE_SCOURGE,
-                Duration = 6,
+                Duration = GetRandomReal(4, 8),
                 TransformEffect = @"Abilities\Spells\Demon\DarkConversion\ZombifyTarget.mdl",
                 DiseaseCloudAbilityId = Constants.ABILITY_AAP1_DISEASE_CLOUD_RED_ABOMINATION_ZOMBIE
               };
