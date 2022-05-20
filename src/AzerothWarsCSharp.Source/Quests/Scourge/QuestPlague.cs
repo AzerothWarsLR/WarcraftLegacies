@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     public QuestPlague(Faction preferredPlagueFaction, unit lordBarov, IEnumerable<unit> cultistsOfTheDamned) : base(
       "Plague of Undeath",
-      "You can unleash a devastating zombifying plague across the lands of Lordaeron. Once it's started, you can type -off to deactivate Cauldron Zombie spawns. Type -end to stop citizens from turning into zombies.",
+      "The Cult of the Damned is prepared to unleash a devastating zombifying plague across the lands of Lordaeron.",
       "ReplaceableTextures\\CommandButtons\\BTNPlagueBarrel.blp")
     {
       _preferredPlagueFaction = preferredPlagueFaction;
@@ -73,7 +73,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
         new(4, Constants.UNIT_H08O_ROTGUARD_FORSAKEN),
       };
 
-      var plaguePower = new PlaguePower(plagueRects, Constants.UNIT_H02W_PLAGUE_CAULDRON, plagueCauldronSummonParameters);
+      var plaguePower = new PlaguePower(plagueRects, Constants.UNIT_H02W_PLAGUE_CAULDRON, plagueCauldronSummonParameters, 35);
 
       if (_preferredPlagueFaction.ScoreStatus == ScoreStatus.Undefeated)
       {

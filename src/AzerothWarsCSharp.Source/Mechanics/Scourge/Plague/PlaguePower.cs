@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Libraries;
+using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Buffs;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
@@ -9,13 +10,13 @@ using static War3Api.Common;
 namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
 {
   /// <summary>
-  /// Grants the <see cref="Power"/> holder several Plague Cauldrons that periodically spawn undead units.
+  ///   Grants the <see cref="Power" /> holder several Plague Cauldrons that periodically spawn undead units.
   /// </summary>
   public sealed class PlaguePower : Power
   {
-    private readonly List<Rectangle> _plagueRects;
-    private readonly int _plagueCauldronUnitTypeId;
-    private readonly List<PlagueCauldronSummonParameter> _plagueCauldronSummonParameters;
+    private static readonly PeriodicDisposableTrigger<DarkConversionPeriodicAction> DarkConversionPeriodicTrigger =
+      new(1.0f);
+
     private readonly List<int> _cityBuildings = new()
     {
       FourCC("ncb0"),
@@ -36,6 +37,13 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
       FourCC("ncbe"),
       FourCC("ncbf")
     };
+
+    private readonly List<unit> _plagueCauldrons = new();
+    private readonly List<PlagueCauldronSummonParameter> _plagueCauldronSummonParameters;
+    private readonly int _plagueCauldronUnitTypeId;
+    private readonly TimerWrapper _plagueDurationTimer = new();
+    private readonly List<Rectangle> _plagueRects;
+
     private readonly List<int> _villagerUnitTypeIds = new()
     {
       FourCC("nvlw"),
@@ -44,19 +52,22 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
       FourCC("nvlk"),
       FourCC("nvk2")
     };
-    private readonly List<unit> _plagueCauldrons = new();
-    private static readonly PeriodicDisposableTrigger<DarkConversionPeriodicAction> DarkConversionPeriodicTrigger = new(1.0f);
 
-    public PlaguePower(List<Rectangle> plagueRects, int plagueCauldronUnitTypeId, List<PlagueCauldronSummonParameter> plagueCauldronSummonParameters)
+    private float _duration;
+
+    public PlaguePower(List<Rectangle> plagueRects, int plagueCauldronUnitTypeId,
+      List<PlagueCauldronSummonParameter> plagueCauldronSummonParameters, float duration)
     {
       _plagueRects = plagueRects;
       _plagueCauldronUnitTypeId = plagueCauldronUnitTypeId;
       _plagueCauldronSummonParameters = plagueCauldronSummonParameters;
       IconName = "PlagueCloud";
       Name = "Plague of Undeath";
-      Description = $"You gain {_plagueRects.Count} Plague Cauldrons which periodically spawn Zombies near them, and neutral villagers on the map are transformed into Zombies.";
+      RefreshDesciption();
+      _duration = duration;
+      _plagueDurationTimer.Start(duration, false, OnPlagueTimerTick);
     }
-    
+
     private void CreatePlagueCauldrons(player whichPlayer)
     {
       foreach (var plagueRect in _plagueRects)
@@ -70,9 +81,8 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
         };
         BuffSystem.Add(plagueCauldronBuff);
         foreach (var parameter in _plagueCauldronSummonParameters)
-        {
-          GeneralHelpers.CreateUnits(parameter.FactionOverride?.Player ?? whichPlayer, parameter.SummonUnitTypeId, position.X, position.Y, 0, parameter.SummonCount);
-        }
+          GeneralHelpers.CreateUnits(parameter.FactionOverride?.Player ?? whichPlayer, parameter.SummonUnitTypeId,
+            position.X, position.Y, 0, parameter.SummonCount);
       }
     }
 
@@ -83,34 +93,52 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
       var y = GetUnitY(triggerUnit);
 
       for (var i = 0; i < 2; i++)
-      {
-        CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), _villagerUnitTypeIds[GetRandomInt(0, _villagerUnitTypeIds.Count-1)], x, y, 0);
-      }
+        CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE),
+          _villagerUnitTypeIds[GetRandomInt(0, _villagerUnitTypeIds.Count - 1)], x, y, 0);
     }
 
-    public override void OnAdd(player whichPlayer)
+    private void RefreshDesciption()
     {
-      CreatePlagueCauldrons(whichPlayer);
-      foreach (var unitTypeId in _cityBuildings)
-      {
-        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDies, SpawnPeasants, unitTypeId);
-      }
-
-      DarkConversionPeriodicTrigger.Add(new DarkConversionPeriodicAction(whichPlayer, _villagerUnitTypeIds));
+      Description =
+        $"You gain {_plagueRects.Count} Plague Cauldrons which periodically spawn Zombies near them, and neutral villagers on the map are transformed into Zombies.|nDuration: {_duration}";
     }
 
-    public override void OnRemove(player whichPlayer)
+    private void OnPlagueTimerTick()
+    {
+      _duration -= 1;
+      RefreshDesciption();
+      if (_duration <= 0)
+      {
+        _plagueDurationTimer.Dispose();
+        Stop();
+      }
+    }
+
+    private void Stop()
     {
       foreach (var unit in _plagueCauldrons)
       {
         KillUnit(unit);
         RemoveUnit(unit);
       }
+
       PlayerUnitEvents.Unregister(PlayerUnitEvent.UnitTypeDies, SpawnPeasants);
-      foreach (var periodicAction in DarkConversionPeriodicTrigger.Actions)
-      {
+      foreach (var periodicAction in DarkConversionPeriodicTrigger.Actions) 
         periodicAction.Active = false;
-      }
+    }
+
+    public override void OnAdd(player whichPlayer)
+    {
+      CreatePlagueCauldrons(whichPlayer);
+      foreach (var unitTypeId in _cityBuildings)
+        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDies, SpawnPeasants, unitTypeId);
+
+      DarkConversionPeriodicTrigger.Add(new DarkConversionPeriodicAction(whichPlayer, _villagerUnitTypeIds));
+    }
+
+    public override void OnRemove(player whichPlayer)
+    {
+      Stop();
     }
   }
 }
