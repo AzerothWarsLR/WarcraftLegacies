@@ -433,7 +433,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       foreach (var power in _powers) yield return power;
     }
 
-    private void DistributeExperience()
+    private void DistributeExperience(IEnumerable<player> playersToDistributeTo)
     {
       if (_team == null) return;
       foreach (var ally in _team.GetAllFactions())
@@ -447,26 +447,20 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       _xp = 0;
     }
 
-    private void DistributeResources()
+    private void DistributeResources(List<player> playersToDistributeTo)
     {
-      if (_team == null) return;
-      foreach (var faction in _team.GetAllFactions())
-        if (faction.Player != null)
-        {
-          faction.Gold = faction.Gold + Gold / _team.PlayerCount - 1;
-          faction.Lumber = faction.Lumber + Lumber / _team.PlayerCount - 1;
-        }
-
+      foreach (var player in playersToDistributeTo)
+      {
+        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, (int)(Gold / playersToDistributeTo.Count));
+        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, (int)(Lumber / playersToDistributeTo.Count));
+      }
       Gold = 0;
       Lumber = 0;
     }
 
-    private void DistributeUnits()
+    private void DistributeUnits(IReadOnlyList<player> playersToDistributeTo)
     {
       if (_team == null) return;
-      List<player> eligiblePlayers = Team.GetAllPlayers();
-      eligiblePlayers.Remove(Player);
-
       var playerUnits = new GroupWrapper().EnumUnitsOfPlayer(Player).EmptyToList();
 
       foreach (var unit in playerUnits)
@@ -495,7 +489,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         else if (loopUnitType.Meta == false)
         {
           SetUnitOwner(unit,
-            Team.PlayerCount > 1 ? eligiblePlayers[GetRandomInt(0, eligiblePlayers.Count)] : Player(GetBJPlayerNeutralVictim()), false);
+            Team.PlayerCount > 1 ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count)] : Player(GetBJPlayerNeutralVictim()), false);
         }
       }
     }
@@ -506,11 +500,13 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// </summary>
     private void Leave()
     {
-      if (_team?.PlayerCount > 1 && GameTime.GetGameTime() > 60)
+      if (Team?.PlayerCount > 1 && GameTime.GetGameTime() > 60)
       {
-        DistributeUnits();
-        DistributeResources();
-        DistributeExperience();
+        List<player> eligiblePlayers = Team.GetAllPlayers();
+        eligiblePlayers.Remove(Player);
+        DistributeUnits(eligiblePlayers);
+        DistributeResources(eligiblePlayers);
+        DistributeExperience(eligiblePlayers);
       }
       else
       {
