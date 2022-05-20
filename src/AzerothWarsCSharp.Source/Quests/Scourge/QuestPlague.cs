@@ -1,9 +1,11 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Mechanics.Scourge.Plague;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
+using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -18,18 +20,35 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     private readonly Faction _preferredPlagueFaction;
     private readonly unit _lordBarov;
     private readonly IEnumerable<unit> _cultistsOfTheDamned;
-
+    
+    private readonly List<PlagueCauldronSummonParameter> _plagueCauldronSummonParameters;
+    private readonly int _plagueCauldronUnitTypeId;
+    private readonly List<Rectangle> _plagueRects;
+    private readonly float _duration;
+    
     public unit? ScholomanceInner { private get; init; }
     public unit? ScholomanceOuter { private get; init; }
 
-    public QuestPlague(Faction preferredPlagueFaction, unit lordBarov, IEnumerable<unit> cultistsOfTheDamned) : base(
+    /// <summary>
+    /// When completed, the quest holder initiates the Plague, creating Plague Cauldrons around Lordaeron
+    /// and converting villagers into Zombies.
+    /// </summary>
+    /// <param name="preferredPlagueFaction">If this Faction is still in the game, it gets control of the Plague Cauldrons instead of the quest holder.</param>
+    /// <param name="lordBarov">Gets killed when the quest is completed.</param>
+    /// <param name="cultistsOfTheDamned">Gets killed when the quest is completed.</param>
+    /// <param name="plagueParameters">Provides information about how the Plague should work.</param>
+    public QuestPlague(Faction preferredPlagueFaction, unit lordBarov, IEnumerable<unit> cultistsOfTheDamned, PlagueParameters plagueParameters) : base(
       "Plague of Undeath",
-      "You can unleash a devastating zombifying plague across the lands of Lordaeron. Once it's started, you can type -off to deactivate Cauldron Zombie spawns. Type -end to stop citizens from turning into zombies.",
+      "The Cult of the Damned is prepared to unleash a devastating zombifying plague across the lands of Lordaeron.",
       "ReplaceableTextures\\CommandButtons\\BTNPlagueBarrel.blp")
     {
       _preferredPlagueFaction = preferredPlagueFaction;
       _lordBarov = lordBarov;
       _cultistsOfTheDamned = cultistsOfTheDamned;
+      _plagueRects = plagueParameters.PlagueRects;
+      _plagueCauldronUnitTypeId = plagueParameters.PlagueCauldronUnitTypeId;
+      _plagueCauldronSummonParameters = plagueParameters.PlagueCauldronSummonParameters;
+      _duration = plagueParameters.Duration;
       AddQuestItem(new QuestItemEitherOf(
         new QuestItemResearch(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, FourCC("u000")),
         new QuestItemTime(960)));
@@ -40,8 +59,26 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     protected override string CompletionPopup =>
       "The plague has been unleashed! The citizens of Lordaeron are quickly transforming into mindless zombies.";
 
-    protected override string RewardDescription => "A plague is unleashed upon the lands of Lordaeron";
+    protected override string RewardDescription => "All villagers in Lordaeron are transformed into Zombies, and several Plague Cauldrons spawn throughout Lordaeron, which periodically spawn Zombies.";
 
+    private void CreatePlagueCauldrons(player whichPlayer)
+    {
+      foreach (var plagueRect in _plagueRects)
+      {
+        var position = plagueRect.GetRandomPoint();
+        var plagueCauldron = CreateUnit(whichPlayer, _plagueCauldronUnitTypeId, position.X, position.Y, 0);
+        UnitApplyTimedLife(plagueCauldron, 0, _duration);
+        var plagueCauldronBuff = new PlagueCauldronBuff(plagueCauldron, plagueCauldron)
+        {
+          ZombieUnitTypeId = Constants.UNIT_NZOM_ZOMBIE_SCOURGE
+        };
+        BuffSystem.Add(plagueCauldronBuff);
+        foreach (var parameter in _plagueCauldronSummonParameters)
+          GeneralHelpers.CreateUnits(parameter.FactionOverride?.Player ?? whichPlayer, parameter.SummonUnitTypeId,
+            position.X, position.Y, 0, parameter.SummonCount);
+      }
+    }
+    
     protected override void OnComplete()
     {
       OpenScholomance();
@@ -52,31 +89,17 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       }
 
       KillUnit(_lordBarov);
-
-      var plaguePower = new PlaguePower(new List<Rectangle>
-      {
-        Regions.Plague_1,
-        Regions.Plague_2,
-        Regions.Plague_3,
-        Regions.Plague_4,
-        Regions.Plague_5,
-        Regions.Plague_6,
-        Regions.Plague_7
-      }, Constants.UNIT_H02W_PLAGUE_CAULDRON, new List<PlagueCauldronSummonParameter>()
-      {
-        new(1, Constants.UNIT_U01R_APOTHECARY_FORSAKEN),
-        new(2, Constants.UNIT_UACO_ACOLYTE_SCOURGE, Holder),
-        new(2, Constants.UNIT_U01K_ACOLYTE_FORSAKEN),
-        new(4, Constants.UNIT_N07S_DEADEYE_FORSAKEN),
-        new(4, Constants.UNIT_H08O_ROTGUARD_FORSAKEN),
-      });
-
+      
+      var plaguePower = new PlaguePower();
       if (_preferredPlagueFaction.ScoreStatus == ScoreStatus.Undefeated)
       {
         _preferredPlagueFaction.AddPower(plaguePower);
-        return;
+        CreatePlagueCauldrons(_preferredPlagueFaction.Player);
       }
-
+      else
+      {
+        CreatePlagueCauldrons(Holder.Player);
+      }
       Holder.AddPower(plaguePower);
     }
 
