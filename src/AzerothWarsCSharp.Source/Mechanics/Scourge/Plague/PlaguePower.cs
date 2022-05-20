@@ -1,10 +1,6 @@
 ﻿using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
-using AzerothWarsCSharp.MacroTools.Libraries;
-using AzerothWarsCSharp.MacroTools.Wrappers;
-using WCSharp.Buffs;
 using WCSharp.Events;
-using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
@@ -17,6 +13,11 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
     private static readonly PeriodicDisposableTrigger<DarkConversionPeriodicAction> DarkConversionPeriodicTrigger =
       new(1.0f);
 
+    /// <summary>
+    /// A list of all <see cref="player"/>s that have this <see cref="Power"/>.
+    /// </summary>
+    private readonly List<player> _holders = new();
+    
     private readonly List<int> _cityBuildings = new()
     {
       FourCC("ncb0"),
@@ -38,11 +39,6 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
       FourCC("ncbf")
     };
 
-    private readonly List<unit> _plagueCauldrons = new();
-    private readonly List<PlagueCauldronSummonParameter> _plagueCauldronSummonParameters;
-    private readonly int _plagueCauldronUnitTypeId;
-    private readonly List<Rectangle> _plagueRects;
-
     private readonly List<int> _villagerUnitTypeIds = new()
     {
       FourCC("nvlw"),
@@ -52,44 +48,14 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
       FourCC("nvk2")
     };
 
-    private readonly float _duration;
-
     /// <summary>
-    /// Grants the <see cref="Power" /> holder several Plague Cauldrons that periodically spawn undead units.
+    /// Causes <see cref="Power" /> holder to periodically convert villagers on the map into Zombies.
     /// </summary>
-    /// <param name="plagueRects">Where to spawn Plague Cauldrons. Each <see cref="Rect"/> gets 1 Cauldron.</param>
-    /// <param name="plagueCauldronUnitTypeId">The unit type ID for Plague Cauldrons.</param>
-    /// <param name="plagueCauldronSummonParameters">Which units to spawn around Plague Cauldrons and how many.</param>
-    /// <param name="duration">How long the spawned Plague Cauldrons should last.</param>
-    public PlaguePower(List<Rectangle> plagueRects, int plagueCauldronUnitTypeId,
-      List<PlagueCauldronSummonParameter> plagueCauldronSummonParameters, float duration)
+    public PlaguePower()
     {
-      _plagueRects = plagueRects;
-      _plagueCauldronUnitTypeId = plagueCauldronUnitTypeId;
-      _plagueCauldronSummonParameters = plagueCauldronSummonParameters;
       IconName = "PlagueBarrel";
       Name = "Plague of Undeath";
       Description = "All villagers on the map are periodically transformed into Zombies.";
-      _duration = duration;
-    }
-
-    private void CreatePlagueCauldrons(player whichPlayer)
-    {
-      foreach (var plagueRect in _plagueRects)
-      {
-        var position = plagueRect.GetRandomPoint();
-        var plagueCauldron = CreateUnit(whichPlayer, _plagueCauldronUnitTypeId, position.X, position.Y, 0);
-        UnitApplyTimedLife(plagueCauldron, 0, _duration);
-        _plagueCauldrons.Add(plagueCauldron);
-        var plagueCauldronBuff = new PlagueCauldronBuff(plagueCauldron, plagueCauldron)
-        {
-          ZombieUnitTypeId = Constants.UNIT_NZOM_ZOMBIE_SCOURGE
-        };
-        BuffSystem.Add(plagueCauldronBuff);
-        foreach (var parameter in _plagueCauldronSummonParameters)
-          GeneralHelpers.CreateUnits(parameter.FactionOverride?.Player ?? whichPlayer, parameter.SummonUnitTypeId,
-            position.X, position.Y, 0, parameter.SummonCount);
-      }
     }
 
     private void SpawnPeasants()
@@ -105,24 +71,24 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
 
     public override void OnAdd(player whichPlayer)
     {
-      CreatePlagueCauldrons(whichPlayer);
-      foreach (var unitTypeId in _cityBuildings)
-        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDies, SpawnPeasants, unitTypeId);
-
-      DarkConversionPeriodicTrigger.Add(new DarkConversionPeriodicAction(whichPlayer, _villagerUnitTypeIds));
+      if (_holders.Count == 0)
+      {
+        foreach (var unitTypeId in _cityBuildings)
+          PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDies, SpawnPeasants, unitTypeId);
+      }
+      _holders.Add(whichPlayer);
+      DarkConversionPeriodicTrigger.Add(new DarkConversionPeriodicAction(_holders, _villagerUnitTypeIds));
     }
 
     public override void OnRemove(player whichPlayer)
     {
-      foreach (var unit in _plagueCauldrons)
+      _holders.Remove(whichPlayer);
+      if (_holders.Count == 0)
       {
-        KillUnit(unit);
-        RemoveUnit(unit);
+        PlayerUnitEvents.Unregister(PlayerUnitEvent.UnitTypeDies, SpawnPeasants);
+        foreach (var periodicAction in DarkConversionPeriodicTrigger.Actions) 
+          periodicAction.Active = false;
       }
-
-      PlayerUnitEvents.Unregister(PlayerUnitEvent.UnitTypeDies, SpawnPeasants);
-      foreach (var periodicAction in DarkConversionPeriodicTrigger.Actions) 
-        periodicAction.Active = false;
     }
   }
 }

@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.Buffs;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Buffs;
 using WCSharp.Events;
@@ -9,17 +11,33 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
 {
   public sealed class DarkConversionPeriodicAction : IPeriodicDisposableAction
   {
-    private readonly player _player;
+    private readonly List<player> _players;
     private readonly List<int> _validTargets;
 
-    public DarkConversionPeriodicAction(player player, List<int> validTargets)
+    public DarkConversionPeriodicAction(List<player> players, List<int> validTargets)
     {
-      _player = player;
+      _players = players;
       _validTargets = validTargets;
     }
     
     public void Action()
     {
+      player? zombiePlayer = null;
+      foreach (var player in _players)
+      {
+        var faction = player.GetFaction();
+        if (faction != null && faction.ScoreStatus == ScoreStatus.Undefeated)
+        {
+          zombiePlayer = player;
+          break;
+        }
+      }
+
+      if (zombiePlayer == null)
+      {
+        return;
+      }
+      
       foreach (var unit in new GroupWrapper().EnumUnitsOfPlayer(Player(PLAYER_NEUTRAL_PASSIVE)).EmptyToList())
       {
         if (UnitAlive(unit) && !BlzIsUnitInvulnerable(unit))
@@ -28,7 +46,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
           {
             if (GetUnitTypeId(unit) == unitTypeId)
             {
-              var darkConversionBuff = new DarkConversionBuff(_player, unit)
+              var darkConversionBuff = new DarkConversionBuff(zombiePlayer, unit)
               {
                 TransformUnitTypeId = Constants.UNIT_NZOM_ZOMBIE_SCOURGE,
                 Duration = GetRandomReal(4, 8),
