@@ -308,6 +308,10 @@ namespace AzerothWarsCSharp.Source.Setup
         RadiusOffset = 250
       };
       SpellSystem.Register(hideousAppendagesNzoth);
+
+      var summonLegion = new SummonBurningLegion(Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS,
+        Constants.ABILITY_A0KZ_SPELL_IMMUNITY_LEGION_SUMMON, Constants.UPGRADE_R04S_LEGION_SUMMONING_NOT_IN_PROGRESS);
+      SpellSystem.Register(summonLegion);
     }
   }
 }

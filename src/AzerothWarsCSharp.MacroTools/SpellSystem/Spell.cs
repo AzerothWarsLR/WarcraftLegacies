@@ -15,6 +15,11 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
     {
     }
 
+    public virtual void OnStop(unit caster)
+    {
+      
+    }
+    
     public virtual void OnCast(unit caster, unit target, float targetX, float targetY)
     {
     }
