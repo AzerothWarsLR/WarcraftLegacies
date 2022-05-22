@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
@@ -17,6 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
     private readonly List<unit> _rescueUnits = new();
     private readonly unit _exitPortal;
     private readonly QuestItemCastSpell _questItemCastSpell;
+    private TimerWrapper _musicTimer = new();
 
     public QuestSummonLegion(Rectangle rescueRect, unit exitPortal) : base("Under the Burning Sky",
       "The greater forces of the Burning Legion lie in wait in the vast expanse of the Twisting Nether. Use the Book of Medivh to tear open a hole in space-time, and visit the full might of the Legion upon Azeroth.",
@@ -64,10 +64,20 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       _rescueUnits.Clear();
 
       CreatePortals();
-      //Play U08Archimonde19
-      //Play Doom music
+
+      var archimondeDialogue = new SoundWrapper("U08Archimonde19.flac", soundEax: SoundEax.HeroAcks);
+      archimondeDialogue.Play(true);
+
+      _musicTimer = new TimerWrapper();
+      _musicTimer.Start(6, false, PlayMusic);
     }
 
+    private void PlayMusic()
+    {
+      PlayThematicMusic("Doom");
+      _musicTimer.Dispose();
+    }
+    
     private void CreatePortals()
     {
       SetUnitOwner(_exitPortal, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
