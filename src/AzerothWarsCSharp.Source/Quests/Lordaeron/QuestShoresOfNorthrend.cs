@@ -14,9 +14,9 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     public QuestShoresOfNorthrend() : base("Shores of Northrend", "Mal'ganis' citadel lies somewhere within the arctic wastes of the north. In order to assault the Dreadlord, Arthas must first establish a base camp at the shores of Northrend.", "ReplaceableTextures\\CommandButtons\\BTNHumanTransport.blp")
     {
-      AddQuestItem(new ObjectiveControlLegend(LegendLordaeron.LegendArthas, true));
-      AddQuestItem(new ObjectiveLegendDead(LegendForsaken.LegendScholomance));
-      AddQuestItem(new ObjectiveResearch(ResearchId, FourCC("hshy")));
+      AddObjective(new ObjectiveControlLegend(LegendLordaeron.LegendArthas, true));
+      AddObjective(new ObjectiveLegendDead(LegendForsaken.LegendScholomance));
+      AddObjective(new ObjectiveResearch(ResearchId, FourCC("hshy")));
     }
 
 

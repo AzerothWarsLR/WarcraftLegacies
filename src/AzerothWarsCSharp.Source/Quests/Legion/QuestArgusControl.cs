@@ -17,11 +17,11 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       "The planet of Argus is not fully under the control of the Legion. Bring it under control!",
       "ReplaceableTextures\\CommandButtons\\BTNMastersLodge.blp")
     {
-      AddQuestItem(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(Constants.UNIT_H09U_ELEKK_KNIGHT_DRAENEI, Regions.OutlandToArgus.Center)));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BF"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BH"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BG"))));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(Constants.UNIT_H09U_ELEKK_KNIGHT_DRAENEI, Regions.OutlandToArgus.Center)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BF"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BH"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BG"))));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R055");
       _rescueUnits.Add(PreplacedUnitSystem.GetUnit(FourCC("n0BE"), Regions.Eastern_Northrend.Center));
       _rescueUnits.Add(PreplacedUnitSystem.GetUnit(FourCC("n0BE"), Regions.InstanceOutland.Center));

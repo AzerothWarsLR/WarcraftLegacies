@@ -22,8 +22,8 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       "ReplaceableTextures\\CommandButtons\\BTNTheCaptain.blp")
     {
       _objectiveAnyUnitInRect = new ObjectiveAnyUnitInRect(Regions.Stromgarde, "Stromgarde", true);
-      AddQuestItem(_objectiveAnyUnitInRect);
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(_objectiveAnyUnitInRect);
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R01M_QUEST_COMPLETED_STROMGARDE_STORMWIND;
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))

@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       "The greater forces of the Burning Legion lie in wait in the vast expanse of the Twisting Nether. Use the Book of Medivh to tear open a hole in space-time, and visit the full might of the Legion upon Azeroth.",
       "ReplaceableTextures\\CommandButtons\\BTNArchimonde.blp")
     {
-      AddQuestItem(new ObjectiveCastSpell(RitualId, false));
+      AddObjective(new ObjectiveCastSpell(RitualId, false));
       ResearchId = FourCC("R04B");
       Global = true;
     }

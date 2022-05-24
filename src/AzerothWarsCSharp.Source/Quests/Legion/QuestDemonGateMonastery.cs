@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       "ReplaceableTextures\\CommandButtons\\BTNMaskOfDeath.blp")
     {
       _objectiveKillMonastery = new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("h00T")));
-      AddQuestItem(_objectiveKillMonastery);
+      AddObjective(_objectiveKillMonastery);
     }
 
     protected override string CompletionPopup =>

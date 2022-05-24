@@ -19,11 +19,11 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       "Ever since the War of the Ancients ten thousand years ago, Malfurion Stormrage and his druids have slumbered within the Barrow Den. Now, their help is required once again.",
       "ReplaceableTextures\\CommandButtons\\BTNFurion.blp")
     {
-      AddQuestItem(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactHornofcenarius));
-      AddQuestItem(new ObjectiveArtifactInRect(ArtifactSetup.ArtifactHornofcenarius, Regions.Moonglade,
+      AddObjective(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactHornofcenarius));
+      AddObjective(new ObjectiveArtifactInRect(ArtifactSetup.ArtifactHornofcenarius, Regions.Moonglade,
         "The Barrow Den"));
-      AddQuestItem(new ObjectiveExpire(1440));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveExpire(1440));
+      AddObjective(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(moonglade).EmptyToList())
       {
         SetUnitInvulnerable(unit, true);

@@ -21,10 +21,10 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
         "The territories of Lordaeron are fragmented. Regain control of the old Alliance's hold to secure the kingdom.",
         "ReplaceableTextures\\CommandButtons\\BTNCastle.blp")
     {
-      AddQuestItem(new ObjectiveControlLegend(LegendNeutral.LegendCaerdarrow, false));
-      foreach (var prequisite in prequisites) AddQuestItem(new ObjectiveCompleteQuest(prequisite));
-      AddQuestItem(new ObjectiveExpire(1472));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendCaerdarrow, false));
+      foreach (var prequisite in prequisites) AddObjective(new ObjectiveCompleteQuest(prequisite));
+      AddObjective(new ObjectiveExpire(1472));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R04Y");
       _unitToMakeInvulnerable = unitToMakeInvulnerable;
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())

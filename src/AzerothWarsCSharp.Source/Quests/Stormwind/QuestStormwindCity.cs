@@ -20,12 +20,12 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       "The outskirts of Stormwind are infested by evil creatures. Kill their leaders and regain control of the Towns.",
       "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionCastle.blp")
     {
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00V"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00Z"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n011"))));
-      AddQuestItem(new ObjectiveUpgrade(FourCC("h06K"), FourCC("h06K")));
-      AddQuestItem(new ObjectiveExpire(1020));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00V"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00Z"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n011"))));
+      AddObjective(new ObjectiveUpgrade(FourCC("h06K"), FourCC("h06K")));
+      AddObjective(new ObjectiveExpire(1020));
+      AddObjective(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {

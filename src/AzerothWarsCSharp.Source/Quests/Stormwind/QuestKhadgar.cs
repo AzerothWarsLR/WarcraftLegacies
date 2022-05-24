@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       "At the end of the Second War, Khadgar remained in Draenor to seal the Dark Portal, effectively ending the conflict. He has been stranded deep in Outland ever since.",
       "ReplaceableTextures\\CommandButtons\\BTNMageWC2blp")
     {
-      AddQuestItem(new ObjectiveControlLegend(LegendFelHorde.LegendBlacktemple, false));
+      AddObjective(new ObjectiveControlLegend(LegendFelHorde.LegendBlacktemple, false));
       ResearchId = FourCC("R016");
       ;
       ;

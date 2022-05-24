@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       "The far-off land of Northrend is the new home of the traitor shaman Ner'zhul. The Warsong must land its forces on its shores in order to end the existential threat he now represents.",
       "ReplaceableTextures\\CommandButtons\\BTNTuskaarBrown.blp")
     {
-      AddQuestItem(new ObjectiveResearch(ResearchId, FourCC("o02T")));
+      AddObjective(new ObjectiveResearch(ResearchId, FourCC("o02T")));
     }
 
     protected override string CompletionPopup =>

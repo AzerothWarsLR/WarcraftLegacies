@@ -18,8 +18,8 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       "The prowess and savagery of the Sentinels is to be respected - and feared. They must be eliminated.",
       "ReplaceableTextures\\CommandButtons\\BTNArcher.blp")
     {
-      AddQuestItem(new ObjectiveLegendDead(LegendSentinels.legendFeathermoon));
-      AddQuestItem(new ObjectiveLegendDead(LegendSentinels.legendAuberdine));
+      AddObjective(new ObjectiveLegendDead(LegendSentinels.legendFeathermoon));
+      AddObjective(new ObjectiveLegendDead(LegendSentinels.legendAuberdine));
     }
 
 

@@ -22,13 +22,13 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp")
     {
       _elvenRunestone = elvenRunestone;
-      AddQuestItem(new ObjectiveKillUnit(
+      AddObjective(new ObjectiveKillUnit(
         PreplacedUnitSystem.GetUnit(Constants.UNIT_O00O_CHIEFTAN_OF_THE_AMANI_TRIBE_CREEP_ZUL_AMAN)));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01V"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01L"))));
-      AddQuestItem(new ObjectiveUpgrade(FourCC("h03T"), FourCC("h033")));
-      AddQuestItem(new ObjectiveExpire(1480));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01V"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01L"))));
+      AddObjective(new ObjectiveUpgrade(FourCC("h03T"), FourCC("h033")));
+      AddObjective(new ObjectiveExpire(1480));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R02U_QUEST_COMPLETED_THE_SIEGE_OF_SILVERMOON;
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())

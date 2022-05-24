@@ -17,10 +17,10 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
     public QuestZandalar(Rectangle rescueRect) : base("City of Gold", "We need to regain control of our land.",
       "ReplaceableTextures\\CommandButtons\\BTNBloodTrollMage.blp")
     {
-      AddQuestItem(new ObjectiveResearch(FourCC("R04R"), FourCC("o03Z")));
-      AddQuestItem(new ObjectiveUpgrade(FourCC("o03Z"), FourCC("o03Y")));
-      AddQuestItem(new ObjectiveExpire(900));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveResearch(FourCC("R04R"), FourCC("o03Z")));
+      AddObjective(new ObjectiveUpgrade(FourCC("o03Z"), FourCC("o03Y")));
+      AddObjective(new ObjectiveExpire(900));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R04W");
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())

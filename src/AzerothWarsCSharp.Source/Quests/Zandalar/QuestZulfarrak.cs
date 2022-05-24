@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       "ReplaceableTextures\\CommandButtons\\BTNDarkTroll.blp")
     {
       ResearchId = Constants.UPGRADE_R02F_QUEST_COMPLETED_FURY_OF_THE_SANDS_WARSONG;
-      AddQuestItem(new ObjectiveControlLegend(LegendNeutral.LegendZulfarrak, false));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendZulfarrak, false));
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {

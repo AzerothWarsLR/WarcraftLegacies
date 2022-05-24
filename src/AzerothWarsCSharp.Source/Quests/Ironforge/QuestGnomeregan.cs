@@ -18,8 +18,8 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       "The people of Gnomeregan have long been unable to assist the Alliance in its wars due an infestation of troggs and Ice Trolls. Resolve their conflicts for them to gain their services.",
       "ReplaceableTextures\\CommandButtons\\BTNFlyingMachine.blp")
     {
-      AddQuestItem(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nitw"), Regions.Gnomergan.Center))); //Ice Troll Warlord
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nitw"), Regions.Gnomergan.Center))); //Ice Troll Warlord
+      AddObjective(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {

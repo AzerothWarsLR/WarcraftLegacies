@@ -14,9 +14,9 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       "Sylvanas longs to take revenge on the Lich King. Killing him and absorbing his power would maybe satisfy the emptiness inside her",
       "ReplaceableTextures\\CommandButtons\\BTNHelmofdomination.blp")
     {
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BC"))));
-      AddQuestItem(new ObjectiveLegendNotPermanentlyDead(LegendForsaken.LegendSylvanasv));
-      AddQuestItem(new ObjectiveLegendDead(LegendScourge.LegendLichking));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BC"))));
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendForsaken.LegendSylvanasv));
+      AddObjective(new ObjectiveLegendDead(LegendScourge.LegendLichking));
     }
 
     protected override string CompletionPopup =>

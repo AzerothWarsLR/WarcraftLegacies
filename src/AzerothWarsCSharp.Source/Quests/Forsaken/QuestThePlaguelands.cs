@@ -14,13 +14,13 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       "The ravaged lands of Lordaeron must be conquered by the Forsaken, their survival depends on it",
       "ReplaceableTextures\\CommandButtons\\BTNNathanosBlightcaller.blp")
     {
-      AddQuestItem(new ObjectiveControlLegend(LegendForsaken.LegendNathanos, false));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01F"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n044"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01H"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03P"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01M"))));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveControlLegend(LegendForsaken.LegendNathanos, false));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01F"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n044"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01H"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03P"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01M"))));
+      AddObjective(new ObjectiveSelfExists());
     }
 
     //Todo: includes mechanics, should just be flavour

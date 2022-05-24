@@ -20,11 +20,11 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp")
     {
       _objectiveAnyUnitInRect = new ObjectiveAnyUnitInRect(Regions.DalaranDungeon, "Dalaran Dungeons", true);
-      AddQuestItem(_objectiveAnyUnitInRect);
+      AddObjective(_objectiveAnyUnitInRect);
 
-      AddQuestItem(new ObjectiveEitherOf(new ObjectiveLegendDead(LegendNaga.LegendIllidan),
+      AddObjective(new ObjectiveEitherOf(new ObjectiveLegendDead(LegendNaga.LegendIllidan),
         new ObjectiveFactionDefeated(NagaSetup.FactionNaga)));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveSelfExists());
     }
 
     protected override string CompletionPopup => "The Skull of Gul'dan";

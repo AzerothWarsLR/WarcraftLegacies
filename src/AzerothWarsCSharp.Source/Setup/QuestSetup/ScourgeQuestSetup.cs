@@ -58,7 +58,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       QuestLichKingArthas questLichKingArthas =
         new(PreplacedUnitSystem.GetUnit(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE));
 
-      questNaxxramas.AddQuestItem(new ObjectiveCompleteQuest(questKelthuzad));
+      questNaxxramas.AddObjective(new ObjectiveCompleteQuest(questKelthuzad));
 
       //Setup
       ScourgeSetup.FactionScourge.AddQuest(questSpiderWar);

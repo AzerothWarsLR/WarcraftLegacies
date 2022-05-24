@@ -15,8 +15,8 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "Medivh's body was corrupted by Sargeras at conception. Now that he is dead, the secrets of the Tomb of Sargeras and Karazhan combined might allow the mages of Dalaran to cleanse his spirit.",
       "ReplaceableTextures\\CommandButtons\\BTNMedivh.blp")
     {
-      AddQuestItem(new ObjectiveControlLegend(LegendNeutral.LegendKarazhan, false));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00J"))));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendKarazhan, false));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00J"))));
       ResearchId = FourCC("R04K");
     }
 

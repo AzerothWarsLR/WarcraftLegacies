@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "Garithos has always had a distrust of other races, he might be tempted to join the Scarlet MindControl.",
       "ReplaceableTextures\\CommandButtons\\BTNGarithos.blp")
     {
-      AddQuestItem(new ObjectiveResearch(FourCC("R08F"), FourCC("hbla")));
+      AddObjective(new ObjectiveResearch(FourCC("R08F"), FourCC("hbla")));
     }
 
     protected override string CompletionPopup => "Garithos weak mind is an easy pray to Sylvanas mind control, ";

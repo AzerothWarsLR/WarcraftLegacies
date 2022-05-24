@@ -19,11 +19,11 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "The Blackrock clan has taken over Alterac, they must be eliminated for the safety of Lordaeron",
       "ReplaceableTextures\\CommandButtons\\BTNChaosBlademaster.blp")
     {
-      AddQuestItem(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("o00B")))); //Jubei
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n019"))));
-      AddQuestItem(new ObjectiveUpgrade(FourCC("hcas"), FourCC("htow")));
-      AddQuestItem(new ObjectiveExpire(1470));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("o00B")))); //Jubei
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n019"))));
+      AddObjective(new ObjectiveUpgrade(FourCC("hcas"), FourCC("htow")));
+      AddObjective(new ObjectiveExpire(1470));
+      AddObjective(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {

@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       "With a world ending threat happening, the Alliance has reached to the Night Elves to join them",
       "ReplaceableTextures\\CommandButtons\\BTNalliance.blp")
     {
-      AddQuestItem(new ObjectiveCastSpell(FourCC("A0IG"), true));
+      AddObjective(new ObjectiveCastSpell(FourCC("A0IG"), true));
     }
     
     protected override string CompletionPopup => "The Druids have joined the Alliance";

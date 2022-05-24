@@ -16,9 +16,9 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       "The Fel Orc attack will begin at any moment, the Draenei need to evacuate their civilians aboard the Exodar",
       "ReplaceableTextures\\CommandButtons\\BTNDraeneiDivineCitadel.blp")
     {
-      AddQuestItem(new ObjectiveTime(720));
-      AddQuestItem(new ObjectiveLegendNotPermanentlyDead(LegendDraenei.LegendExodarship));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveTime(720));
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendDraenei.LegendExodarship));
+      AddObjective(new ObjectiveSelfExists());
       _unitsToKill = new List<unit>
       {
         PreplacedUnitSystem.GetUnit(FourCC("o051"), Regions.DraeneiEvacuation.Center),

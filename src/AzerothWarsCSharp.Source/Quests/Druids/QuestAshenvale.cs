@@ -20,14 +20,14 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       "The forest needs healing. Regain control of it to summon it's Guardian, the Demigod Cenarius",
       "ReplaceableTextures\\CommandButtons\\BTNKeeperC.blp")
     {
-      AddQuestItem(
+      AddObjective(
         new ObjectiveLegendReachRect(LegendDruids.LegendMalfurion, Regions.AshenvaleUnlock, "Ashenvale"));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n07C"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01Q"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08U"))));
-      AddQuestItem(new ObjectiveUpgrade(FourCC("etol"), FourCC("etol")));
-      AddQuestItem(new ObjectiveExpire(1440));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n07C"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01Q"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08U"))));
+      AddObjective(new ObjectiveUpgrade(FourCC("etol"), FourCC("etol")));
+      AddObjective(new ObjectiveExpire(1440));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R06R");
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))

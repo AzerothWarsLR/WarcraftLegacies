@@ -12,8 +12,8 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       "Destroying the Dwarf great forge will please the Great Elemental Lord, Ragnaros.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp")
     {
-      AddQuestItem(new ObjectiveLegendDead(LegendIronforge.LegendGreatforge));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0AA"))));
+      AddObjective(new ObjectiveLegendDead(LegendIronforge.LegendGreatforge));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0AA"))));
       ResearchId = FourCC("R07Q");
     }
 

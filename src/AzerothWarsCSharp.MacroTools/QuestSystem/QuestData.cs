@@ -335,7 +335,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         Progress = QuestProgress.Incomplete;
     }
 
-    public void AddQuestItem(Objective questItem)
+    public void AddObjective(Objective questItem)
     {
       Objectives.Add(questItem);
       if (questItem.ShowsInQuestLog)

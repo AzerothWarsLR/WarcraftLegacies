@@ -21,8 +21,8 @@ namespace AzerothWarsCSharp.Source.Quests
       _tombOfSargerasEntrance = tombOfSargerasEntrance;
       _tombOfSargerasInteriorEntrance = tombOfSargerasInteriorEntrance;
       _guldanRemains = guldanRemains;
-      AddQuestItem(new ObjectiveTime(900));
-      AddQuestItem(new ObjectiveEitherOf(
+      AddObjective(new ObjectiveTime(900));
+      AddObjective(new ObjectiveEitherOf(
         new ObjectiveLegendReachRect(LegendLordaeron.LegendUther, Regions.Sargeras_Entrance,
           "the Tomb of Sargeras' entrance"),
         new ObjectiveHeroWithLevelReachRect(10, Regions.Sargeras_Entrance, "the Tomb of Sargeras' entrance")));

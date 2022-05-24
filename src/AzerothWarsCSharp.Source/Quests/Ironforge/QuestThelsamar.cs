@@ -17,9 +17,9 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       "A vile group of Murloc is terrorizing Thelsamar. Destroy them!",
       "ReplaceableTextures\\CommandButtons\\BTNMurlocNightCrawler.blp")
     {
-      AddQuestItem(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("N089")))); //Murloc
-      AddQuestItem(new ObjectiveExpire(1435));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("N089")))); //Murloc
+      AddObjective(new ObjectiveExpire(1435));
+      AddObjective(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {

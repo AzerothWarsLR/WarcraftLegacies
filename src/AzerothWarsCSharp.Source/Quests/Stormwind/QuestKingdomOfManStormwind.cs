@@ -19,12 +19,12 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       "Before the First War, all of humanity was united under the banner of the Arathorian Empire. Reclaim its greatness by uniting mankind once again.",
       "ReplaceableTextures\\CommandButtons\\BTNFireKingCrown.blp")
     {
-      AddQuestItem(new ObjectiveLegendNotPermanentlyDead(LegendStormwind.LegendVarian));
-      AddQuestItem(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactCrownlordaeron));
-      AddQuestItem(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactCrownstormwind));
-      AddQuestItem(new ObjectiveControlLegend(LegendFelHorde.LegendBlacktemple, false));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n010"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01G"))));
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendStormwind.LegendVarian));
+      AddObjective(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactCrownlordaeron));
+      AddObjective(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactCrownstormwind));
+      AddObjective(new ObjectiveControlLegend(LegendFelHorde.LegendBlacktemple, false));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n010"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01G"))));
       ResearchId = FourCC("R01N");
       Global = true;
     }

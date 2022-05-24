@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       "Consuming the World Tree will grant Archimonde immeasurable power and eliminate his mortal enemies, the Druids of Kalimdor, forever.",
       "ReplaceableTextures\\CommandButtons\\BTNGlazeroth.blp")
     {
-      AddQuestItem(new ObjectiveChannelRect(Regions.ArchimondeChannel, "The World Tree",
+      AddObjective(new ObjectiveChannelRect(Regions.ArchimondeChannel, "The World Tree",
         LegendLegion.LEGEND_ARCHIMONDE, 420, 90));
       Global = true;
     }

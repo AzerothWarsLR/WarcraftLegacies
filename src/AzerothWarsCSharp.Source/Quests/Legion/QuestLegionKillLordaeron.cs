@@ -13,9 +13,9 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       "The Kingdom of Lordaeron must be eliminated to pave the way for the Legion's arrival.",
       "ReplaceableTextures\\CommandButtons\\BTNTichondrius.blp")
     {
-      AddQuestItem(new ObjectiveLegendDead(LegendLordaeron.LegendCapitalpalace));
-      AddQuestItem(new ObjectiveLegendDead(LegendLordaeron.LegendStratholme));
-      AddQuestItem(new ObjectiveLegendDead(LegendLordaeron.LegendTyrshand));
+      AddObjective(new ObjectiveLegendDead(LegendLordaeron.LegendCapitalpalace));
+      AddObjective(new ObjectiveLegendDead(LegendLordaeron.LegendStratholme));
+      AddObjective(new ObjectiveLegendDead(LegendLordaeron.LegendTyrshand));
     }
 
     protected override string CompletionPopup =>

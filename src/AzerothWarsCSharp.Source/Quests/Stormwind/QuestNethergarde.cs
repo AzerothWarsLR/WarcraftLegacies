@@ -14,9 +14,9 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       "The nethergarde fort is holding down the Dark Portal, they will need to be reinforced soon!",
       "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionBarracks.blp")
     {
-      AddQuestItem(new ObjectiveLegendInRect(LegendStormwind.LegendVarian, Regions.NethergardeUnlock, "Nethergarde"));
-      AddQuestItem(new ObjectiveExpire(1440));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveLegendInRect(LegendStormwind.LegendVarian, Regions.NethergardeUnlock, "Nethergarde"));
+      AddObjective(new ObjectiveExpire(1440));
+      AddObjective(new ObjectiveSelfExists());
     }
 
     protected override string CompletionPopup => "Varian has come to relieve the Nethergarde garrison.";

@@ -18,10 +18,10 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "A small murloc skirmish is attacking Southshore, push them back",
       "ReplaceableTextures\\CommandButtons\\BTNMurloc.blp")
     {
-      AddQuestItem(new ObjectiveKillUnit(murlocToKill));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08M"))));
-      AddQuestItem(new ObjectiveExpire(1135));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveKillUnit(murlocToKill));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08M"))));
+      AddObjective(new ObjectiveExpire(1135));
+      AddObjective(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {

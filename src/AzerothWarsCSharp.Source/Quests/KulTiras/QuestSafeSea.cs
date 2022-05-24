@@ -11,12 +11,12 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       "The seas must be secured and the Kul'tiras navy must be returned to its former glory!", @"ReplaceableTextures\
           \CommandButtons\\BTNKulTirasDreadnought.blp")
     {
-      AddQuestItem(new ObjectiveTrain(FourCC("hdes"), FourCC("hshy"), 2));
-      AddQuestItem(new ObjectiveTrain(FourCC("h04J"), FourCC("hshy"), 1));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01W"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n07L"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08Q"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09K"))));
+      AddObjective(new ObjectiveTrain(FourCC("hdes"), FourCC("hshy"), 2));
+      AddObjective(new ObjectiveTrain(FourCC("h04J"), FourCC("hshy"), 1));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01W"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n07L"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08Q"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09K"))));
       ResearchId = FourCC("R06T");
     }
 

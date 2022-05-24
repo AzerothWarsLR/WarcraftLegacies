@@ -13,8 +13,8 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       "The great shaman Nobundo is fighting to enable Velen and most of the Draenei to escape. If the Draenei hold out long enough, he might have time to join the survivors aboard the Exodar",
       "ReplaceableTextures\\CommandButtons\\BTNAkamanew.blp")
     {
-      AddQuestItem(new ObjectiveTime(720));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02O"))));
+      AddObjective(new ObjectiveTime(720));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02O"))));
       ResearchId = QuestResearchId;
     }
 

@@ -13,10 +13,10 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       "A small troll skirmish is attacking Dun Morogh. Push them back!",
       "ReplaceableTextures\\CommandButtons\\BTNIceTrollShadowPriest.blp")
     {
-      AddQuestItem(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nith"), Regions.DunmoroghAmbient2.Center))); //Troll
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n014"))));
-      AddQuestItem(new ObjectiveExpire(1435));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nith"), Regions.DunmoroghAmbient2.Center))); //Troll
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n014"))));
+      AddObjective(new ObjectiveExpire(1435));
+      AddObjective(new ObjectiveSelfExists());
     }
 
     protected override string CompletionPopup => "The Trolls have been defeated, Dun Morogh will join your cause.";

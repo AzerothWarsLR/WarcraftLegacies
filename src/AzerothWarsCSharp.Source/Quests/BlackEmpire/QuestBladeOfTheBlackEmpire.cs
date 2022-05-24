@@ -17,9 +17,9 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       "ReplaceableTextures\\CommandButtons\\BTNmidnightGS.blp")
     {
       _sequel = sequel;
-      AddQuestItem(new ObjectiveLegendInRect(LegendBlackEmpire.legendVolazj, Regions.DuskwoodCrypt,
+      AddObjective(new ObjectiveLegendInRect(LegendBlackEmpire.legendVolazj, Regions.DuskwoodCrypt,
         "Duskwood Graveyard Crypt"));
-      AddQuestItem(new ObjectiveControlLegend(LegendNeutral.LegendDuskwoodgraveyard, false));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendDuskwoodgraveyard, false));
     }
 
     protected override string CompletionPopup => "Herald Volazj has found the Black Blade, Xal'alath.";

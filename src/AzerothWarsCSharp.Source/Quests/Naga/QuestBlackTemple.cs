@@ -15,9 +15,9 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       "The Fel Horde is weak and complacent. The Illidari will easily subjugate them into Illidan's service.",
       "ReplaceableTextures\\CommandButtons\\BTNMetamorphosis.blp")
     {
-      AddQuestItem(new ObjectiveControlLegend(LegendFelHorde.LegendBlacktemple, false));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00R"))));
-      AddQuestItem(new ObjectiveResearch(FourCC("R063"), FourCC("n055")));
+      AddObjective(new ObjectiveControlLegend(LegendFelHorde.LegendBlacktemple, false));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00R"))));
+      AddObjective(new ObjectiveResearch(FourCC("R063"), FourCC("n055")));
     }
 
     protected override string CompletionPopup =>

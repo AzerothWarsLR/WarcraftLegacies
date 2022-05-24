@@ -11,8 +11,8 @@ namespace AzerothWarsCSharp.TestSource.Quests
       "When the Guardian Aegwynn defeated the fallen Titan Sargeras, she sealed his corpse within the temple that would come to be known as the Tomb of Sargeras. It lies still there, tempting those with the ambition to seize the power that remains within.",
       @"ReplaceableTextures\CommandButtons\BTNUnholyFrenzy.blp")
     {
-      AddQuestItem(new ObjectiveTime(35));
-      AddQuestItem(new ObjectiveKillXUnit(FourCC("hfoo"), 4));
+      AddObjective(new ObjectiveTime(35));
+      AddObjective(new ObjectiveKillXUnit(FourCC("hfoo"), 4));
     }
     
     protected override string RewardDescription => "The Tomb of Sargeras has been opened.";

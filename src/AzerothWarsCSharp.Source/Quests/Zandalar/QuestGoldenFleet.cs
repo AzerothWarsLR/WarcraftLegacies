@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       "The King has ordered for the greatest armada in the world. The construction of the Golden Fleet has begun!",
       "ReplaceableTextures\\CommandButtons\\BTNTrollConjurer.blp")
     {
-      AddQuestItem(new ObjectiveTrain(FourCC("o04W"), FourCC("o049"), 5));
+      AddObjective(new ObjectiveTrain(FourCC("o04W"), FourCC("o049"), 5));
       ResearchId = QuestResearchId;
     }
   }

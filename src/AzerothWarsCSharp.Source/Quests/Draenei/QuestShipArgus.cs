@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       "Tempest Keep still has the power to open a portal Argus, but Velen needs to channel it",
       "ReplaceableTextures\\CommandButtons\\BTNArcaneCastle.blp")
     {
-      AddQuestItem(new ObjectiveChannelRect(Regions.TempestKeepSpawn, "Tempest Keep", LegendDraenei.LegendVelen, 180, 0));
+      AddObjective(new ObjectiveChannelRect(Regions.TempestKeepSpawn, "Tempest Keep", LegendDraenei.LegendVelen, 180, 0));
       Global = true;
     }
 

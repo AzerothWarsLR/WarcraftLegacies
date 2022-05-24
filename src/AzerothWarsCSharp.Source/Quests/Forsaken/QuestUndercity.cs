@@ -25,11 +25,11 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
     {
       _waygateA = waygateA;
       _waygateB = waygateB;
-      AddQuestItem(new ObjectiveResearch(Constants.UPGRADE_R050_DECLARE_FORSAKEN_INDEPENDENCE_FORSAKEN,
+      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R050_DECLARE_FORSAKEN_INDEPENDENCE_FORSAKEN,
         FourCC("h08B")));
-      AddQuestItem(new ObjectiveLegendInRect(LegendForsaken.LegendSylvanasv, Regions.Terenas, "Capital City"));
-      AddQuestItem(new ObjectiveLegendDead(LegendLordaeron.LegendCapitalpalace));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveLegendInRect(LegendForsaken.LegendSylvanasv, Regions.Terenas, "Capital City"));
+      AddObjective(new ObjectiveLegendDead(LegendLordaeron.LegendCapitalpalace));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R04X");
       Global = true;
 

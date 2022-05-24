@@ -15,10 +15,10 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       "Eons ago, the council that led the Eredar was the Triumvirate. If Velen could reconquer Argus, he could reform the Crown of the Triumvirate",
       "ReplaceableTextures\\CommandButtons\\BTNNeverMeltingCrown.blp")
     {
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BH"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BL"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09X"))));
-      AddQuestItem(new ObjectiveLegendNotPermanentlyDead(LegendDraenei.LegendVelen));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BH"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BL"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09X"))));
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendDraenei.LegendVelen));
       Global = true;
     }
 

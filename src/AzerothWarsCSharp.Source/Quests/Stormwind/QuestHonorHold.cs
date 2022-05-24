@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
           _rescueUnits.Add(unit);
         }
 
-      AddQuestItem(new ObjectiveLegendDead(LegendFelHorde.LegendHellfirecitadel));
+      AddObjective(new ObjectiveLegendDead(LegendFelHorde.LegendHellfirecitadel));
     }
 
     protected override string CompletionPopup =>

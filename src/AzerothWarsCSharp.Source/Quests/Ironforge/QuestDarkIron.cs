@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       "The Dark Iron dwarves are renegades. Bring Magni to their capital to open negotiations for an alliance.",
       "ReplaceableTextures\\CommandButtons\\BTNRPGDarkIron.blp")
     {
-      AddQuestItem(new ObjectiveLegendInRect(LegendIronforge.LegendMagni, Regions.Shadowforge_gate,
+      AddObjective(new ObjectiveLegendInRect(LegendIronforge.LegendMagni, Regions.Shadowforge_gate,
         "Shadowforge"));
       ResearchId = FourCC("R01A");
     }

@@ -20,11 +20,11 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       "Darkshore is under attack by some Murloc. We should deal with them swiftly and){ make for the Astranaar Outpost. Clearing the Murlocs will also reestablish communication with Darnassus.",
       "ReplaceableTextures\\CommandButtons\\BTNMurloc.blp")
     {
-      AddQuestItem(new ObjectiveLegendReachRect(LegendSentinels.legendTyrande, Regions.AstranaarUnlock,
+      AddObjective(new ObjectiveLegendReachRect(LegendSentinels.legendTyrande, Regions.AstranaarUnlock,
         "Astranaar Outpost"));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02U"))));
-      AddQuestItem(new ObjectiveExpire(1430));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02U"))));
+      AddObjective(new ObjectiveExpire(1430));
+      AddObjective(new ObjectiveSelfExists());
 
       foreach (var rectangle in rescueRects)
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rectangle.Rect).EmptyToList())

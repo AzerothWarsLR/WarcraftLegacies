@@ -14,10 +14,10 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       "Hakkar is the most dangerous and powerful of the Troll gods. Only by fusing the Demon Soul would the Zandalari be able to control Hakkar and bind him to their will.",
       "ReplaceableTextures\\CommandButtons\\BTNWindSerpent2blp")
     {
-      AddQuestItem(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactZinrokh));
-      AddQuestItem(new ObjectiveArtifactInRect(ArtifactSetup.ArtifactZinrokh, Regions.DrownedTemple,
+      AddObjective(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactZinrokh));
+      AddObjective(new ObjectiveArtifactInRect(ArtifactSetup.ArtifactZinrokh, Regions.DrownedTemple,
         "The Drowned Temple"));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00U"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00U"))));
       Global = true;
     }
 

@@ -24,9 +24,9 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       "The Elves of Quel'thalas have a deep reliance on the Sunwell's magic. Without it, they would have to turn to darker magicks to sate themselves.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroBloodElfPrince.blp")
     {
-      AddQuestItem(new ObjectiveControlLegend(LegendNeutral.LegendDraktharonkeep, false));
-      AddQuestItem(new ObjectiveControlLegend(LegendQuelthalas.LegendAnasterian, true));
-      AddQuestItem(new ObjectiveControlLegend(LegendQuelthalas.LegendSunwell, true));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendDraktharonkeep, false));
+      AddObjective(new ObjectiveControlLegend(LegendQuelthalas.LegendAnasterian, true));
+      AddObjective(new ObjectiveControlLegend(LegendQuelthalas.LegendSunwell, true));
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(secondChanceRect).EmptyToList())
       {

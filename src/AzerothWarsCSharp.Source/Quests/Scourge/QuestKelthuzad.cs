@@ -13,8 +13,8 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       "Kel'thuzad is the leader of the Cult of the Damned and an extraordinarily powerful necromancer. If he were to be brought to the Sunwell and submerged in its waters, he would be reanimated as an immortal Lich.",
       "ReplaceableTextures\\CommandButtons\\BTNLichVersion2.blp")
     {
-      AddQuestItem(new ObjectiveControlLegend(LegendQuelthalas.LegendSunwell, false));
-      AddQuestItem(new ObjectiveLegendInRect(LegendScourge.LegendKelthuzad, Regions.Sunwell, "The Sunwell"));
+      AddObjective(new ObjectiveControlLegend(LegendQuelthalas.LegendSunwell, false));
+      AddObjective(new ObjectiveLegendInRect(LegendScourge.LegendKelthuzad, Regions.Sunwell, "The Sunwell"));
     }
 
     protected override string CompletionPopup

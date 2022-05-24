@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       "The Drakkari troll of Gundrak believe their fortress to be impregnable. Capture it to gain their loyalty.",
       "ReplaceableTextures\\CommandButtons\\BTNTerrorTroll.blp")
     {
-      AddQuestItem(new ObjectiveControlLegend(LegendNeutral.LegendGundrak, false));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendGundrak, false));
     }
   }
 }

@@ -19,10 +19,10 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp")
     {
       _utgardeKeep = utgardeKeep;
-      AddQuestItem(new ObjectiveControlLegend(LegendLordaeron.LegendArthas, false));
-      AddQuestItem(new ObjectiveLegendLevel(LegendLordaeron.LegendArthas, 12));
-      AddQuestItem(new ObjectiveResearch(FourCC("R07X"), FourCC("u000")));
-      AddQuestItem(new ObjectiveLegendInRect(LegendLordaeron.LegendArthas, Regions.LichKing, "Icecrown Citadel"));
+      AddObjective(new ObjectiveControlLegend(LegendLordaeron.LegendArthas, false));
+      AddObjective(new ObjectiveLegendLevel(LegendLordaeron.LegendArthas, 12));
+      AddObjective(new ObjectiveResearch(FourCC("R07X"), FourCC("u000")));
+      AddObjective(new ObjectiveLegendInRect(LegendLordaeron.LegendArthas, Regions.LichKing, "Icecrown Citadel"));
       Global = true;
     }
 

@@ -15,8 +15,8 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
       "Trade Prince Gallywix will need a great amount of wealth to rule the future Goblin Empire; he needs to expand his business all over the world quickly.",
       "ReplaceableTextures\\CommandButtons\\BTNGoblinPrince.blp")
     {
-      AddQuestItem(new ObjectiveTrain(FourCC("nzep"), FourCC("o04M"), 16));
-      AddQuestItem(new ObjectiveTrain(FourCC("o04S"), FourCC("o04M"), 10));
+      AddObjective(new ObjectiveTrain(FourCC("nzep"), FourCC("o04M"), 16));
+      AddObjective(new ObjectiveTrain(FourCC("o04S"), FourCC("o04M"), 10));
       ResearchId = QuestResearchId;
     }
 

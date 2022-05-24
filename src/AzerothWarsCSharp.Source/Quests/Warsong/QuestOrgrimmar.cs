@@ -19,9 +19,9 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       "This new continent is ripe for opportunity, if (the Horde is going to survive, a new city needs to be built.",
       "ReplaceableTextures\\CommandButtons\\BTNFortress.blp")
     {
-      AddQuestItem(new ObjectiveResearch(_researchId, FourCC("o02S")));
-      AddQuestItem(new ObjectiveExpire(1500));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveResearch(_researchId, FourCC("o02S")));
+      AddObjective(new ObjectiveExpire(1500));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R05R");
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())

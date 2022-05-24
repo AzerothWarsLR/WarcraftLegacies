@@ -26,13 +26,13 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       _grimBatol = grimBatol;
       _waygateA = waygateA;
       _waygateB = waygateB;
-      AddQuestItem(new ObjectiveLegendDead(LegendNeutral.LegendVaelastrasz));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03X"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n04V"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09F"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08T"))));
-      AddQuestItem(new ObjectiveExpire(1428));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveLegendDead(LegendNeutral.LegendVaelastrasz));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03X"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n04V"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09F"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08T"))));
+      AddObjective(new ObjectiveExpire(1428));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R06Y_QUEST_COMPLETED_THE_CURSED_FORTRESS;
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())

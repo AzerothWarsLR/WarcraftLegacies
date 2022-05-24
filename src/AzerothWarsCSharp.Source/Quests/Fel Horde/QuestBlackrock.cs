@@ -18,11 +18,11 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       "Make contact with the Blackrock clan and convince them to join Magtheridon",
       "ReplaceableTextures\\CommandButtons\\BTNBlackhand.blp")
     {
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00S"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09Y"))));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0A9"))));
-      AddQuestItem(new ObjectiveExpire(1451));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00S"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09Y"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0A9"))));
+      AddObjective(new ObjectiveExpire(1451));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R03C_QUEST_COMPLETED_BLACKROCK_UNIFICATION;
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))

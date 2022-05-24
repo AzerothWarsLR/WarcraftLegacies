@@ -13,10 +13,10 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       "The town of Darkshire is under attack by Gnoll's, clear them out!",
       "ReplaceableTextures\\CommandButtons\\BTNGnollArcher.blp")
     {
-      AddQuestItem(new ObjectiveKillUnit(gnollToKill));
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00V"))));
-      AddQuestItem(new ObjectiveExpire(1425));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveKillUnit(gnollToKill));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00V"))));
+      AddObjective(new ObjectiveExpire(1425));
+      AddObjective(new ObjectiveSelfExists());
     }
 
     protected override string CompletionPopup =>

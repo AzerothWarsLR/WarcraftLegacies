@@ -17,8 +17,8 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       "The legions at Tyr's Hand remain neutral for the moment, but when the time is right, they will align themselves with the Scarlet Crusade.",
       "ReplaceableTextures\\CommandButtons\\BTNCastle.blp")
     {
-      AddQuestItem(new ObjectiveTime(1000));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveTime(1000));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R03R");
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())

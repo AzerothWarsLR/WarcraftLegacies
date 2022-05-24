@@ -14,8 +14,8 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       "The savage Night Elves threaten the safety of the entire Horde. Capture their World Tree and bring Thrall to its roots.",
       "ReplaceableTextures\\CommandButtons\\BTNSorceressMaster.blp")
     {
-      AddQuestItem(new ObjectiveControlLegend(LegendDruids.LegendNordrassil, false));
-      AddQuestItem(new ObjectiveLegendInRect(LegendFrostwolf.LegendThrall, Regions.Drekthars_Spellbook,
+      AddObjective(new ObjectiveControlLegend(LegendDruids.LegendNordrassil, false));
+      AddObjective(new ObjectiveLegendInRect(LegendFrostwolf.LegendThrall, Regions.Drekthars_Spellbook,
         "Nordrassil"));
     }
 

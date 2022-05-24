@@ -18,10 +18,10 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       "Proudmoore is stranded at sea. Rejoin Boralus to take control of the city.",
       "ReplaceableTextures\\CommandButtons\\BTNHumanShipyard.blp")
     {
-      AddQuestItem(new ObjectiveResearch(FourCC("R04R"), FourCC("h06I")));
-      AddQuestItem(new ObjectiveUpgrade(FourCC("h062"), FourCC("h062")));
-      AddQuestItem(new ObjectiveExpire(900));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveResearch(FourCC("R04R"), FourCC("h06I")));
+      AddObjective(new ObjectiveUpgrade(FourCC("h062"), FourCC("h062")));
+      AddObjective(new ObjectiveExpire(900));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R00L");
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())

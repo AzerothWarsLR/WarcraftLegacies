@@ -19,10 +19,10 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       "Draktharon's Keep", "Drak'tharon's Keep will be the place for an outpost by the sea.",
       "ReplaceableTextures\\CommandButtons\\BTNUndeadShipyard.blp")
     {
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n030"))));
-      AddQuestItem(new ObjectiveControlLegend(LegendNeutral.LegendDraktharonkeep, false));
-      AddQuestItem(new ObjectiveExpire(1140));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n030"))));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendDraktharonkeep, false));
+      AddObjective(new ObjectiveExpire(1140));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R08J");
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())

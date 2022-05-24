@@ -15,8 +15,8 @@ namespace AzerothWarsCSharp.TestSource.Quests
     public ExampleQuestC() : base("Free Zergling", "We really need a free Zergling.",
       "ReplaceableTextures\\CommandButtons\\BTNZergling.blp")
     {
-      AddQuestItem(new ObjectiveAcquireArtifact(ArtifactSetup.Killmaim));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveAcquireArtifact(ArtifactSetup.Killmaim));
+      AddObjective(new ObjectiveSelfExists());
       _zerglingPower = new DummyPower("Zerglings", "Spawn zerglings constantly.", "Zergling");
     }
 

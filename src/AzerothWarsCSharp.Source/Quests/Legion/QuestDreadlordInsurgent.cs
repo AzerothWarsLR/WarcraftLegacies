@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       "Varimathras has branched out and tried to take control of the Plaguelands, Sylvanas will try and make him join her cause.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroDreadLord.blp")
     {
-      AddQuestItem(new ObjectiveResearch(FourCC("R08H"), FourCC("n040")));
+      AddObjective(new ObjectiveResearch(FourCC("R08H"), FourCC("n040")));
     }
 
 

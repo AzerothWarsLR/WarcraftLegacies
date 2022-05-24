@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
         {
           RequiredUnitTypeId = LegendScourge.UnittypeKelthuzadLich
         };
-      AddQuestItem(objectiveChannelRect);
+      AddObjective(objectiveChannelRect);
       SetUnitInvulnerable(naxxramas, true);
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())

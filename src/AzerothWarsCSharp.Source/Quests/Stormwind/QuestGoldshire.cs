@@ -18,10 +18,10 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       "Hogger and his pack have taken over Goldshire, clear them out!",
       "ReplaceableTextures\\CommandButtons\\BTNGnoll.blp")
     {
-      AddQuestItem(new ObjectiveKillUnit(hogger)); //Hogger
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00Z"))));
-      AddQuestItem(new ObjectiveExpire(1335));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveKillUnit(hogger)); //Hogger
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00Z"))));
+      AddObjective(new ObjectiveExpire(1335));
+      AddObjective(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {

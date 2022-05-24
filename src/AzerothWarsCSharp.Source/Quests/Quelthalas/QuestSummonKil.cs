@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       "The greater demon Kil'jaeden has been scheming for aeons. Will Kael finally be the one to summon him and consume Azeroth?",
       "ReplaceableTextures\\CommandButtons\\BTNKiljaedin.blp")
     {
-      AddQuestItem(new ObjectiveChannelRect(Regions.KaelSunwellChannel, "The Sunwell", LegendQuelthalas.LegendKael,
+      AddObjective(new ObjectiveChannelRect(Regions.KaelSunwellChannel, "The Sunwell", LegendQuelthalas.LegendKael,
         180, 270));
       Global = true;
     }

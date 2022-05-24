@@ -13,8 +13,8 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     
     public QuestSapphiron(unit sapphiron) : base("Sapphiron", "Kill Sapphiron the Blue Dragon to have Kel'Tuzad reanimate her as a Frost Wyrm. Sapphiron can be found in Northrend.", "ReplaceableTextures\\CommandButtons\\BTNFrostWyrm.blp")
     {
-      AddQuestItem(new ObjectiveKillUnit(sapphiron));
-      AddQuestItem(new ObjectiveControlLegend(LegendScourge.LegendKelthuzad, false));
+      AddObjective(new ObjectiveKillUnit(sapphiron));
+      AddObjective(new ObjectiveControlLegend(LegendScourge.LegendKelthuzad, false));
     }
     
     protected override string CompletionPopup =>

@@ -18,11 +18,11 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "The Living Shadow must be purged, with enough Holy Magic and the craftiness of the Dwarves, it could be reforged into the strongest weapon of the Light",
       "ReplaceableTextures\\CommandButtons\\BTNAshbringer2blp")
     {
-      AddQuestItem(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactLivingshadow));
-      AddQuestItem(new ObjectiveLegendNotPermanentlyDead(LegendIronforge.LegendGreatforge));
-      AddQuestItem(new ObjectiveArtifactInRect(ArtifactSetup.ArtifactLivingshadow, Regions.AshbringerForge,
+      AddObjective(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactLivingshadow));
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendIronforge.LegendGreatforge));
+      AddObjective(new ObjectiveArtifactInRect(ArtifactSetup.ArtifactLivingshadow, Regions.AshbringerForge,
         "The Great Forge"));
-      AddQuestItem(new ObjectiveChannelRect(Regions.AshbringerForge, "The Great Forge", LegendLordaeron.LegendUther, 60,
+      AddObjective(new ObjectiveChannelRect(Regions.AshbringerForge, "The Great Forge", LegendLordaeron.LegendUther, 60,
         340));
       Global = true;
     }

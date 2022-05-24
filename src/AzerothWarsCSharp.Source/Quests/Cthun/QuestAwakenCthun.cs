@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
       "The Old God C'thun slumbers beneath the ruins of Ahn'qiraj. Skeram will need to awaken him with an unholy ritual.",
       "ReplaceableTextures\\CommandButtons\\BTNCthunIcon.blp")
     {
-      AddQuestItem(new ObjectiveChannelRect(Regions.CthunSummon, "C'thun", LegendCthun.legendSkeram, 420, 270));
+      AddObjective(new ObjectiveChannelRect(Regions.CthunSummon, "C'thun", LegendCthun.legendSkeram, 420, 270));
       ResearchId = Constants.UPGRADE_R06A_QUEST_COMPLETED_C_THUN_AWAKENING;
       SetUnitInvulnerable(LegendCthun.legendCthun.Unit, true);
       PauseUnit(LegendCthun.legendCthun.Unit, true);

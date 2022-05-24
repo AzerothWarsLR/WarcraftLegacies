@@ -16,8 +16,8 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       "Quel'danil Lodge is a High Elven outpost situated in the Hinterlands. It's been some time since the rangers there have been in contact with Quel'thalas.",
       "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp")
     {
-      AddQuestItem(new ObjectiveAnyUnitInRect(Regions.QuelDanil_Lodge, "Quel'danil Lodge", true));
-      AddQuestItem(new ObjectiveTime(1200));
+      AddObjective(new ObjectiveAnyUnitInRect(Regions.QuelDanil_Lodge, "Quel'danil Lodge", true));
+      AddObjective(new ObjectiveTime(1200));
       ResearchId = FourCC("R074");
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())

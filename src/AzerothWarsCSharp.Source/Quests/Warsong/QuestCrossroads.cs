@@ -19,11 +19,11 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       "The Horde still needs to establish a strong strategic foothold into Kalimdor. There is an opportune crossroads nearby.",
       "ReplaceableTextures\\CommandButtons\\BTNBarracks.blp")
     {
-      AddQuestItem(
+      AddObjective(
         new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nrzm"), rescueRect.Center))); //Razorman Medicine Man
-      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01T"))));
-      AddQuestItem(new ObjectiveExpire(1460));
-      AddQuestItem(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01T"))));
+      AddObjective(new ObjectiveExpire(1460));
+      AddObjective(new ObjectiveSelfExists());
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))

@@ -17,10 +17,10 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "Arthas Menethil is the one true heir of the Kingdom of Lordaeron. The only thing standing in the way of his coronation is the world-ending threat of the Scourge.",
       "ReplaceableTextures\\CommandButtons\\BTNArthas.blp")
     {
-      AddQuestItem(new ObjectiveLegendNotPermanentlyDead(LegendLordaeron.LegendCapitalpalace));
-      AddQuestItem(new ObjectiveControlLegend(LegendLordaeron.LegendArthas, true));
-      AddQuestItem(new ObjectiveLegendDead(LegendScourge.LegendLichking));
-      AddQuestItem(new ObjectiveLegendInRect(LegendLordaeron.LegendArthas, Regions.King_Arthas_crown, "King Terenas"));
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendLordaeron.LegendCapitalpalace));
+      AddObjective(new ObjectiveControlLegend(LegendLordaeron.LegendArthas, true));
+      AddObjective(new ObjectiveLegendDead(LegendScourge.LegendLichking));
+      AddObjective(new ObjectiveLegendInRect(LegendLordaeron.LegendArthas, Regions.King_Arthas_crown, "King Terenas"));
       ResearchId = QuestResearchId;
       _terenas = terenas;
     }
