@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -24,9 +25,9 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
     protected override string RewardDescription =>
       "Gain control of C'thun and the ability to train Wasps"; //Todo: from where?
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      LegendCthun.legendCthun.Unit.Rescue(Holder.Player);
+      LegendCthun.legendCthun.Unit.Rescue(completingFaction.Player);
     }
   }
 }

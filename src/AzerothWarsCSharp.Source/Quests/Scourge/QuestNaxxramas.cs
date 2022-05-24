@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -37,15 +38,15 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     }
 
     protected override string CompletionPopup =>
-      $"The Naxxramas has now been raised and under the control of the {Holder.Team.Name}.";
+      $"The Naxxramas has now been raised and under the control of the Scourge.";
 
     protected override string RewardDescription => "Control of all units in Naxxramas";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      _naxxramas.Rescue(Holder.Player);
-      SetPlayerAbilityAvailable(Holder.Player, FourCC("A0O2"), false);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      _naxxramas.Rescue(completingFaction.Player);
+      SetPlayerAbilityAvailable(completingFaction.Player, FourCC("A0O2"), false);
     }
   }
 }

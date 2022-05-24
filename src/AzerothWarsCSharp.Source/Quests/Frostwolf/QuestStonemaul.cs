@@ -35,19 +35,19 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
     //Todo: bad flavour
     protected override string CompletionPopup =>
-      "Stonemaul has been liberated, and its military is now free to assist the " + Holder.Team.Name + ".";
+      "Stonemaul has been liberated, and its military is now free to assist the Frostwolf Clan.";
 
     protected override string RewardDescription => "Control of all units in Stonemaul and 3000 lumber";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 3000);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 3000);
     }
   }
 }

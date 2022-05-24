@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
@@ -40,14 +41,14 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       DestroyGroup(tempGroup);
     }
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       GrantNethergarde(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      GrantNethergarde(Holder.Player);
+      GrantNethergarde(completingFaction.Player);
       StormwindSetup.Stormwind.ModObjectLimit(FourCC("h03F"), 1); //Reginald windsor
     }
   }

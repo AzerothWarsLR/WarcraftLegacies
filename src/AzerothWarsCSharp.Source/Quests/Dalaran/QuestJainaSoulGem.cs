@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -22,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     protected override string RewardDescription => "The Soul Gem";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       LegendDalaran.LegendJaina.Unit.AddItemSafe(ArtifactSetup.ArtifactSoulgem.Item);
     }

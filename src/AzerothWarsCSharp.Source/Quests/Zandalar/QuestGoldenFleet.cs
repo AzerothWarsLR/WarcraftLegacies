@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
@@ -14,9 +15,9 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
     protected override string RewardDescription =>
       "Rastakhan is trainable at the altar and Direhorns are trainable";
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(QuestResearchId, 1);
+      whichFaction.ModObjectLimit(QuestResearchId, 1);
     }
 
     public QuestGoldenFleet() : base("The Golden Fleet",

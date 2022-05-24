@@ -15,17 +15,17 @@ using static AzerothWarsCSharp.MacroTools.Libraries.Display; namespace AzerothWa
 
     protected override string RewardDescription => "The demihero " + GetObjectName(ELEMENTAL_GUARDIAN_ID);
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
-      DisplayUnitTypeAcquired(Holder.Player, ELEMENTAL_GUARDIAN_ID,
+      SetPlayerTechResearched(completingFaction.Player, RESEARCH_ID, 1);
+      DisplayUnitTypeAcquired(completingFaction.Player, ELEMENTAL_GUARDIAN_ID,
         "You can now train the Elemental Guardian from the Altar of Elders.");
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(ELEMENTAL_GUARDIAN_ID, 1);
-      Holder.ModObjectLimit(RESEARCH_ID, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(ELEMENTAL_GUARDIAN_ID, 1);
+      whichFaction.ModObjectLimit(RESEARCH_ID, Faction.UNLIMITED);
     }
 
     public QuestDruidsKillFrostwolf() : base("Natural Contest",

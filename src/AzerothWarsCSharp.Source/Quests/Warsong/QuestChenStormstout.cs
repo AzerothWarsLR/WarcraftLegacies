@@ -24,25 +24,25 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       _chen = chen;
     }
 
-    protected override string CompletionPopup => "Chen Stormstout has joined the " + Holder.Team.Name + ".";
+    protected override string CompletionPopup => "Chen Stormstout has joined the Warsong Clan.";
 
     protected override string RewardDescription => "The hero Chen Stormstout";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       RemoveUnit(_chen);
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       RemoveUnit(_chen);
-      SetPlayerTechResearched(Holder.Player, _chenResearch, 1);
+      SetPlayerTechResearched(completingFaction.Player, _chenResearch, 1);
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(_chenResearch, Faction.UNLIMITED);
-      Holder.ModObjectLimit(_chenId, 1);
+      whichFaction.ModObjectLimit(_chenResearch, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(_chenId, 1);
       SetUnitInvulnerable(_chen, true);
     }
   }

@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -27,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     protected override string RewardDescription => "Chapter Three: Dwellers from the Deep";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       LegendNaga.LegendIllidan.UnitType = FourCC("Eevi");
       _questToDiscover.Progress = QuestProgress.Incomplete;

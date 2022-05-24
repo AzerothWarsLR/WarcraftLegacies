@@ -1,5 +1,6 @@
 //When Black Temple is destroyed, Stormwind can train Khadgar.
 
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -27,9 +28,9 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     protected override string RewardDescription => "You can summon Khadgar from the Altar of Kings";
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(HeroId, 1);
+      whichFaction.ModObjectLimit(HeroId, 1);
     }
   }
 }

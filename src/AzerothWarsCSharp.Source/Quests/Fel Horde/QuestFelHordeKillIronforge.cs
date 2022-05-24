@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -27,9 +28,9 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
                                                        GetObjectName(UnittypeId) + "s from the " +
                                                        GetObjectName(BuildingId) + " and acquire Felsteel Plating";
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(UnittypeId, UNIT_LIMIT);
+      whichFaction.ModObjectLimit(UnittypeId, UNIT_LIMIT);
     }
   }
 }

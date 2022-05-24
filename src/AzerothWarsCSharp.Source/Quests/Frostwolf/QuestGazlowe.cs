@@ -17,23 +17,21 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     {
       AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n04Z"))));
     }
-
-
-    protected override string CompletionPopup => "With the Goblin homeland of Kezan now under " + Holder.Name +
-                                                 " control, the goblin Gazlowe offers his services as an expert engineer, upgrading your Shredders with new weaponry.";
+    
+    protected override string CompletionPopup => "With the Goblin homeland of Kezan now under Frostwolf control, the goblin Gazlowe offers his services as an expert engineer, upgrading your Shredders with new weaponry.";
 
     protected override string RewardDescription =>
       "You can summon Gazlowe from the Altar of Storms, and Shredders learn to cast Pocket Factory, Saw Bombardment, and Emergency Repairs";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      SetPlayerTechResearched(Holder.Player, ResearchId, 1);
+      SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(HeroId, 1);
-      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(HeroId, 1);
+      whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);
     }
   }
 }

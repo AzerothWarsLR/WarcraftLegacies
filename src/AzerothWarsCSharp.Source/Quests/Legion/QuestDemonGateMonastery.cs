@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using static War3Api.Common;
@@ -26,9 +27,9 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
     protected override string RewardDescription => "A new Demon Gate at the MonasteryFourCC(s location";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      CreateUnit(Holder.Player, DemongateId, GetUnitX(_objectiveKillMonastery.Target),
+      CreateUnit(completingFaction.Player, DemongateId, GetUnitX(_objectiveKillMonastery.Target),
         GetUnitY(_objectiveKillMonastery.Target), 270);
       var monastery = Regions.ScarletMonastery.Rect;
       SetDoodadAnimationRect(monastery, FourCC("YObb"), "hide", false);

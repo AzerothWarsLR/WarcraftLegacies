@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -42,12 +43,12 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     //Todo: bad flavour
     protected override string CompletionPopup =>
-      "Undercity is now under the " + Holder.Team.Name + " and they have declared independance.";
+      "Undercity is now under the Forsaken's control and they have declared independance.";
 
     protected override string RewardDescription =>
       "Control of all units in Undercity, unlock Nathanos and unally the Legion team";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
@@ -59,21 +60,21 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       WaygateSetDestination(waygate, destination.X, destination.Y);
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
       SetPlayerTechResearched(LordaeronSetup.FactionLordaeron.Player, FourCC("R08G"), 1);
       SetPlayerTechResearched(LegionSetup.FactionLegion.Player, FourCC("R08G"), 1);
       ActivatePortal(_waygateA, Regions.Undercity_Interior_2.Center);
       ActivatePortal(_waygateB, Regions.Undercity_Interior_1.Center);
-      Holder.Team = TeamSetup.Forsaken;
-      Holder.Name = "Forsaken";
-      Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNBansheeRanger.blp";
-      SetPlayerState(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
+      completingFaction.Team = TeamSetup.Forsaken;
+      completingFaction.Name = "Forsaken";
+      completingFaction.Icon = "ReplaceableTextures\\CommandButtons\\BTNBansheeRanger.blp";
+      SetPlayerState(completingFaction.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
       PlayThematicMusic("war3mapImported\\ForsakenTheme.mp3");
-      Holder.AddQuest(new QuestRetakeSunwell());
-      Holder.AddQuest(new QuestTheNine());
-      Holder.AddQuest(new QuestTakeRevenge());
+      completingFaction.AddQuest(new QuestRetakeSunwell());
+      completingFaction.AddQuest(new QuestTheNine());
+      completingFaction.AddQuest(new QuestTakeRevenge());
     }
   }
 }

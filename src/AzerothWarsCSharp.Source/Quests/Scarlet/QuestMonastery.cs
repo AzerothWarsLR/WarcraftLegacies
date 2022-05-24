@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -39,35 +40,35 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
 
     //Todo: bad flavour
     protected override string CompletionPopup =>
-      "The Scarlet Monastery Hand is complete and ready to join the " + Holder.Team.Name + ".";
+      "The Scarlet Monastery Hand is complete and ready to join the Alliance.";
 
     protected override string RewardDescription =>
       "Control of all units in the Scarlet Monastery and you will unally the alliance";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       SetPlayerTechResearched(KultirasSetup.FACTION_KULTIRAS.Player, FourCC("R06V"), 1);
       SetPlayerTechResearched(LordaeronSetup.FactionLordaeron.Player, FourCC("R06V"), 1);
       SetPlayerTechResearched(ScarletSetup.FactionScarlet.Player, FourCC("R086"), 1);
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
       WaygateActivate(_scarletMonastery, true);
       WaygateSetDestination(_scarletMonastery, Regions.ScarletMonastery.Center.X, Regions.ScarletMonastery.Center.Y);
-      Holder.Team = TeamSetup.ScarletCrusade;
-      Holder.Name = "Scarlet";
-      Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNSaidan Dathrohan.blp";
+      completingFaction.Team = TeamSetup.ScarletCrusade;
+      completingFaction.Name = "Scarlet";
+      completingFaction.Icon = "ReplaceableTextures\\CommandButtons\\BTNSaidan Dathrohan.blp";
       PlayThematicMusic("war3mapImported\\ScarletTheme.mp3");
-      SetPlayerState(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
-      Holder.AddQuest(_sequel);
+      SetPlayerState(completingFaction.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
+      completingFaction.AddQuest(_sequel);
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(UnleashTheCrusadeResearchId, 1);
+      whichFaction.ModObjectLimit(UnleashTheCrusadeResearchId, 1);
     }
   }
 }

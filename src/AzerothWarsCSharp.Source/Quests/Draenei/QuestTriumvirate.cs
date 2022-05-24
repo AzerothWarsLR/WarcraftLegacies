@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -26,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
     protected override string RewardDescription => "You gain the powerful item, the Crown of the Triumvirate";
 
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       LegendDraenei.LegendVelen.Unit.AddItemSafe(ArtifactSetup.ArtifactCrowntriumvirate.Item);
     }

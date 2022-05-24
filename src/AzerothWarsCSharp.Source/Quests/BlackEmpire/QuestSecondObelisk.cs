@@ -29,9 +29,9 @@
 //     protected override string RewardDescription =>
 //       "Unlock the southern zone of NyaFourCC(lotha, and the next Herald you train will open a temporary portal to the Twilight Highlands.";
 //
-//     protected override void OnComplete()
+//     protected override void OnComplete(Faction completingFaction)
 //     {
-//       foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
+//       foreach (var unit in _rescueUnits) UnitRescue(unit, completingFaction.Player);
 //       RemoveUnit(Herald.Instance.Unit);
 //       BlackEmpirePortal.GoToNext();
 //     }

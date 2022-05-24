@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
@@ -25,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       "By consuming the World Tree, Archimonde will obtain immense power. +80 to all stats. Additionally, the Druids faction will be eliminated.";
 
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       unit whichUnit = LegendLegion.LEGEND_ARCHIMONDE.Unit;
       DruidsSetup.factionDruids.Obliterate();

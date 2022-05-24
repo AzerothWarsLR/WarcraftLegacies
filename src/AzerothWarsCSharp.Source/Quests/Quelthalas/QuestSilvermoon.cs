@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -38,25 +39,26 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
         }
     }
 
+    //Todo: bad flavour
     protected override string CompletionPopup =>
-      "Silvermoon siege has been lifted, and its military is now free to assist the " + Holder.Team.Name + ".";
+      "Silvermoon siege has been lifted, and its military is now free to assist the Alliance.";
 
     protected override string RewardDescription =>
       "Control of all units in Silvermoon and enable Anasterian to be trained at the Altar";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      SetPlayerTechResearched(Holder.Player, FourCC("R02U"), 1);
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      SetPlayerTechResearched(completingFaction.Player, FourCC("R02U"), 1);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
       if (UnitAlive(_elvenRunestone))
         SetUnitInvulnerable(LegendQuelthalas.LegendSilvermoon.Unit, true);
       SetUnitInvulnerable(LegendQuelthalas.LegendSunwell.Unit, true);
-      if (GetLocalPlayer() == Holder.Player)
+      if (GetLocalPlayer() == completingFaction.Player)
         PlayThematicMusic("war3mapImported\\SilvermoonTheme.mp3");
     }
   }

@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -22,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
 
     protected override string RewardDescription => "The legendary sword Thunderfury";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       LegendFelHorde.LegendChogall.Unit.AddItemSafe(ArtifactSetup.ArtifactThunderfury.Item);
     }

@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -39,10 +40,10 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     protected override string RewardDescription => "Nazjatar and the Naga's loyalty";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
       NagaSetup.FactionNaga.AddQuest(NagaQuestSetup.REDEMPTION_PATH);
       NagaQuestSetup.REDEMPTION_PATH.Progress = QuestProgress.Undiscovered;
       NagaSetup.FactionNaga.AddQuest(NagaQuestSetup.EXILE_PATH);

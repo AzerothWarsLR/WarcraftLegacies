@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -36,7 +37,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     protected override string CompletionPopup =>
       "The Highborne are no longer implicitly defended by the Night Elven presence at Feathermoon Stronghold. The Horde unleashes their full might against these Night Elven arcanists.";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       SetItemPosition(ArtifactSetup.ArtifactScepterofthequeen?.Item, Regions.HighBourne.Center.X,
         Regions.HighBourne.Center.Y);

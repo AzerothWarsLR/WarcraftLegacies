@@ -29,10 +29,10 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     protected override string RewardDescription => "Enable 4 Val'kyr to be raised and grants 500 gold";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      Holder.ModObjectLimit(Constants.UNIT_U01V_VAL_KYR_FORSAKEN, 2);
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 500);
+      completingFaction.ModObjectLimit(Constants.UNIT_U01V_VAL_KYR_FORSAKEN, 2);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 500);
     }
   }
 }

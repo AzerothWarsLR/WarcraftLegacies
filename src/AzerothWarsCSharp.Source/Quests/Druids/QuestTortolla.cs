@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -29,19 +30,19 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 
     protected override string RewardDescription => "You can summon Tortolla from the Altar of Elders";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       RemoveUnit(_sleepingTortolla);
     }
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       RemoveUnit(_sleepingTortolla);
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(HeroId, 1);
+      whichFaction.ModObjectLimit(HeroId, 1);
     }
   }
 }

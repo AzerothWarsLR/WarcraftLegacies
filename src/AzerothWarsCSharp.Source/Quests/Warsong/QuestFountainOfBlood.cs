@@ -16,22 +16,21 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
     {
       AddQuestItem(new ObjectiveControlLegend(LegendNeutral.LegendFountainofblood, false));
     }
-
-
+    
     protected override string CompletionPopup =>
       "The Fountain of Blood is under Warsong control. As the orcs drink from it, they feel a a familiar fury awake within them.";
 
     protected override string RewardDescription =>
       "Allows Orcish units to increase their attack rate and movement speed temporarily";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      SetPlayerTechResearched(Holder.Player, ResearchId, 1);
+      SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);
     }
   }
 }

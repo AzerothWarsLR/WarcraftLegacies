@@ -1,5 +1,6 @@
 //Illidan Goes to Aetheneum, Finds Immoltar and kills him
 
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -30,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     protected override string RewardDescription => "Chapter Two - The Skull of GulFourCC(dan";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       _questToDiscover.Progress = QuestProgress.Incomplete;
     }

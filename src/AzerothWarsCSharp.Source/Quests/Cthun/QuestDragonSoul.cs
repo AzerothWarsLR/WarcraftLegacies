@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -20,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
 
     protected override string RewardDescription => "The Dragon Soul will be granted to Skeram";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       LegendCthun.legendSkeram.Unit.AddItemSafe(ArtifactSetup.ArtifactDemonsoul.Item);
     }

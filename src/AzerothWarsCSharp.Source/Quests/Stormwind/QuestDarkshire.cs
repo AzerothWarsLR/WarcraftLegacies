@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using static War3Api.Common;
@@ -19,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     }
 
     protected override string CompletionPopup =>
-      "Darkshire has been liberated, and its military is now free to assist the " + Holder.Team.Name + ".";
+      "Darkshire has been liberated, and its military is now free to assist Stormwind.";
 
     protected override string RewardDescription => "Control of all units in Darkshire";
 
@@ -41,14 +42,14 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       DestroyGroup(tempGroup);
     }
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       GrantDarkshire(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      GrantDarkshire(Holder.Player);
+      GrantDarkshire(completingFaction.Player);
     }
   }
 }

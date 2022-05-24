@@ -41,17 +41,17 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
     protected override string RewardDescription =>
       "Control of all units in Feathermoon Stronghold and make Shandris and Maiev trainable at the Altar";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 300);
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
-      if (GetLocalPlayer() == Holder.Player) PlayThematicMusic("war3mapImported\\SentinelTheme.mp3");
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 300);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
+      if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\SentinelTheme.mp3");
     }
   }
 }

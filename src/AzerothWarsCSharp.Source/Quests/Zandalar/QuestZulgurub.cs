@@ -13,21 +13,21 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
     private static readonly int RavagerId = FourCC("o021");
 
     protected override string CompletionPopup =>
-      "Zul'gurub has fallen. The Gurubashi trolls lend their might to the " + Holder.Team.Name + ".";
+      "Zul'gurub has fallen. The Gurubashi trolls lend their might to the Zandalari.";
 
     protected override string RewardDescription =>
       "300 gold and the ability to train " + GetObjectName(RavagerId) + "s from the " +
       GetObjectName(TrollShrineId);
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      SetPlayerTechResearched(Holder.Player, ZulgurubResearch, 1);
-      this.Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
+      SetPlayerTechResearched(completingFaction.Player, ZulgurubResearch, 1);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(ZulgurubResearch, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(ZulgurubResearch, Faction.UNLIMITED);
     }
 
     public QuestZulgurub() : base("Heart of Hakkar",

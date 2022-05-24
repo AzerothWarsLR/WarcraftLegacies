@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -26,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
     protected override string RewardDescription =>
       "Xal'alath will be ours and the Tomb of Tyr quest will be revealed.";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       if (LegendBlackEmpire.legendVolazj.Unit != null && ArtifactSetup.ArtifactXalatath != null)
         LegendBlackEmpire.legendVolazj.Unit.AddItemSafe(ArtifactSetup.ArtifactXalatath.Item);

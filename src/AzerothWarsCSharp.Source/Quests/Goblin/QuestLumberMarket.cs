@@ -13,9 +13,9 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
     protected override string RewardDescription =>
       "Shredders will gain cleaving attack and 500 hit points. You will gain 30000 lumber.";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 30000);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 30000);
     }
 
     public QuestLumberMarket() : base("Lumber Market Krash",

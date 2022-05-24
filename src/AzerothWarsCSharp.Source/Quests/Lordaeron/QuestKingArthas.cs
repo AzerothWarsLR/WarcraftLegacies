@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -31,7 +32,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     protected override string RewardDescription =>
       "Arthas gains 2000 experience and the Crown of Lordaeron, and he can no longer permanently die";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       BlzSetUnitName(LegendLordaeron.LegendArthas.Unit, "King of Lordaeron");
       BlzSetUnitName(_terenas, "King Emeritus Terenas Menethil");

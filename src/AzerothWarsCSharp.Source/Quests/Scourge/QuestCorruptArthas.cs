@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override string RewardDescription => "You can train Arthas Menethil from the Altar of Darkness";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       LegendLordaeron.LegendArthas.Unit.DropAllItems();
       RemoveUnit(LegendLordaeron.LegendArthas.Unit);
@@ -38,13 +38,13 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       LegendLordaeron.LegendArthas.StartingXp = 7000;
       LegendLordaeron.LegendArthas.UnitType = FourCC("Uear");
       LegendLordaeron.LegendArthas.ClearUnitDependencies();
-      SetPlayerTechResearched(Holder.Player, ResearchId, 1);
+      SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
-      Holder.ModObjectLimit(HeroId, 1);
+      whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(HeroId, 1);
     }
   }
 }

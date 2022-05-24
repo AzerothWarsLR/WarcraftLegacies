@@ -22,16 +22,16 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override string RewardDescription => "The demihero Sapphiron";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      CreateUnit(Holder.Player, SapphironId, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()),
+      CreateUnit(completingFaction.Player, SapphironId, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()),
         GetUnitFacing(GetTriggerUnit()));
-      SetPlayerTechResearched(Holder.Player, SapphironResearch, 1);
+      SetPlayerTechResearched(completingFaction.Player, SapphironResearch, 1);
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(SapphironResearch, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(SapphironResearch, Faction.UNLIMITED);
     }
   }
 }

@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -20,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
     protected override string RewardDescription => "Thrall gains 10 Strength, 10 Agility and 10 Intelligence";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       if (LegendFrostwolf.LegendThrall?.Unit != null)
         LegendFrostwolf.LegendThrall.Unit.AddHeroAttributes(10, 10, 10);

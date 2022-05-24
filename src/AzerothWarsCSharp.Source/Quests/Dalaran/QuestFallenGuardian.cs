@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -24,9 +25,9 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     protected override string RewardDescription => "You can summon Medivh from the Altar of Knowledge";
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(MedivhId, 1);
+      whichFaction.ModObjectLimit(MedivhId, 1);
     }
   }
 }

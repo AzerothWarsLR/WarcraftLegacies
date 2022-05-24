@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -23,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     protected override string RewardDescription => "Sylvanas gains 20 intelligence, 20 strength and Chaos damage";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       unit whichUnit = LegendForsaken.LegendSylvanasv.Unit;
       BlzSetUnitName(whichUnit, "Banshee Queen");

@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -24,9 +25,9 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     protected override string RewardDescription => "Enable 9 Val'kyr to be raised";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      Holder.ModObjectLimit(Constants.UNIT_U01V_VAL_KYR_FORSAKEN, 5);
+      completingFaction.ModObjectLimit(Constants.UNIT_U01V_VAL_KYR_FORSAKEN, 5);
     }
   }
 }

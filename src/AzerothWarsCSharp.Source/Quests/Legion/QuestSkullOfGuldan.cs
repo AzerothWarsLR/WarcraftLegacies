@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ArtifactSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -32,13 +33,13 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
                                                    GetHeroProperName(_objectiveAnyUnitInRect.TriggerUnit) +
                                                    ". Its nefarious energies will fuel the Legion's operations on Azeroth.";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       ArtifactSetup.ArtifactSkullofguldan.Status = ArtifactStatus.Ground;
       _objectiveAnyUnitInRect.TriggerUnit.AddItemSafe(ArtifactSetup.ArtifactSkullofguldan.Item);
     }
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       SetItemPosition(ArtifactSetup.ArtifactSkullofguldan.Item, -11867, 222165);
       ArtifactSetup.ArtifactSkullofguldan.Status = ArtifactStatus.Ground;

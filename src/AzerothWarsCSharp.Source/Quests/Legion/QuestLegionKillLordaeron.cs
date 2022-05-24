@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
@@ -22,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
     protected override string RewardDescription => "Tichondrius gains 15 Strength, Agility and Intelligence";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       Display.DisplayHeroReward(LegendLegion.LEGEND_TICHONDRIUS.Unit, 15, 15, 15, 0);
       LegendLegion.LEGEND_TICHONDRIUS.Unit.AddHeroAttributes(15, 15, 15);

@@ -22,16 +22,16 @@ using static AzerothWarsCSharp.MacroTools.Libraries.Display; namespace AzerothWa
 
     protected override string RewardDescription => "The demihero Amara and the hero Jarod";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      SetPlayerTechResearched(Holder.Player, ResearchId, 1);
-      DisplayUnitTypeAcquired(Holder.Player, AmaraId, "You can now revive Amara from the Altar of Elders.");
+      SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
+      DisplayUnitTypeAcquired(completingFaction.Player, AmaraId, "You can now revive Amara from the Altar of Elders.");
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(AmaraId, 1);
-      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(AmaraId, 1);
+      whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);
     }
   }
 }

@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -25,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
     protected override string RewardDescription =>
       "You gain control of Shadowforge City and can train the hero Dagran Thaurassian from the Altar of Fortitude";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       group tempGroup = CreateGroup();
       //Transfer all Neutral Passive units in region to Ironforge
@@ -34,7 +35,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       while (true)
       {
         if (u == null) break;
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) u.Rescue(Holder.Player);
+        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) u.Rescue(completingFaction.Player);
         GroupRemoveUnit(tempGroup, u);
         u = FirstOfGroup(tempGroup);
       }
@@ -42,9 +43,9 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       DestroyGroup(tempGroup);
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(HeroId, 1);
+      whichFaction.ModObjectLimit(HeroId, 1);
     }
   }
 }

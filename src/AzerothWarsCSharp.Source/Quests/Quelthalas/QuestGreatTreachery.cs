@@ -29,14 +29,14 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     protected override string RewardDescription =>
       "Unlock the summon Kil'jaeden quest and join the Burning Legion team";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       QuelthalasQuestSetup.STAY_LOYAL.Progress = QuestProgress.Failed;
       UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0IF"));
       UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0IK"));
       RemoveUnit(LegendQuelthalas.LegendLorthemar.Unit);
       QuelthalasSetup.FactionQuelthalas.ModObjectLimit(LegendQuelthalas.LegendLorthemar.UnitType, -Faction.UNLIMITED);
-      Holder.Team = TeamSetup.Legion;
+      completingFaction.Team = TeamSetup.Legion;
       QuelthalasQuestSetup.SUMMON_KIL.Progress = QuestProgress.Incomplete;
     }
   }

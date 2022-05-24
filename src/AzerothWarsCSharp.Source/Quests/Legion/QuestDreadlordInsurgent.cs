@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
     protected override string RewardDescription =>
       "You lose everything, but will spawn with a small army, Varimathras and Lilian Voss near Capital City";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       LegionSetup.FactionLegion.ModObjectLimit(FourCC("Utic"), -Faction.UNLIMITED); //Tichondrius
       LegionSetup.FactionLegion.ModObjectLimit(FourCC("Umal"), -Faction.UNLIMITED); //maglanis
@@ -33,27 +33,27 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       LegionSetup.FactionLegion.ModObjectLimit(FourCC("E01O"), 1); //Lilian
       LegionSetup.FactionLegion.ModObjectLimit(FourCC("Uvar"), 1); //Vari
 
-      Holder.Team = TeamSetup.Forsaken;
-      Holder.Name = "|cff8080ffInsurgents|r";
-      Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNHeroDreadLord.blp";
-      SetPlayerColor(Holder.Player, PLAYER_COLOR_LIGHT_BLUE);
+      completingFaction.Team = TeamSetup.Forsaken;
+      completingFaction.Name = "|cff8080ffInsurgents|r";
+      completingFaction.Icon = "ReplaceableTextures\\CommandButtons\\BTNHeroDreadLord.blp";
+      SetPlayerColor(completingFaction.Player, PLAYER_COLOR_LIGHT_BLUE);
 
       LegendForsaken.LegendVarimathras.StartingXp = GetHeroXP(LegendLegion.LEGEND_TICHONDRIUS.Unit);
       LegendLegion.LEGEND_LILIAN.StartingXp = GetHeroXP(LegendLegion.LEGEND_MALGANIS.Unit);
-      Holder.Obliterate();
-      LegendLegion.LEGEND_LILIAN.Spawn(Holder.Player, 7254, 7833, 110);
-      LegendForsaken.LegendVarimathras.Spawn(Holder.Player, 7254, 7833, 110);
-      CreateUnits(Holder.Player, FourCC("n04J"), Regions.Vandermar_Village.Center.X,
+      completingFaction.Obliterate();
+      LegendLegion.LEGEND_LILIAN.Spawn(completingFaction.Player, 7254, 7833, 110);
+      LegendForsaken.LegendVarimathras.Spawn(completingFaction.Player, 7254, 7833, 110);
+      CreateUnits(completingFaction.Player, FourCC("n04J"), Regions.Vandermar_Village.Center.X,
         Regions.Vandermar_Village.Center.Y, 270, 12);
-      CreateUnits(Holder.Player, FourCC("u00D"), Regions.Vandermar_Village.Center.X,
+      CreateUnits(completingFaction.Player, FourCC("u00D"), Regions.Vandermar_Village.Center.X,
         Regions.Vandermar_Village.Center.Y, 270, 6);
-      CreateUnits(Holder.Player, FourCC("ninc"), Regions.Vandermar_Village.Center.X,
+      CreateUnits(completingFaction.Player, FourCC("ninc"), Regions.Vandermar_Village.Center.X,
         Regions.Vandermar_Village.Center.Y, 270, 12);
-      CreateUnits(Holder.Player, FourCC("u007"), Regions.Vandermar_Village.Center.X,
+      CreateUnits(completingFaction.Player, FourCC("u007"), Regions.Vandermar_Village.Center.X,
         Regions.Vandermar_Village.Center.Y, 270, 2);
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 2000);
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 900);
-      if (GetLocalPlayer() == Holder.Player)
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 2000);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 900);
+      if (GetLocalPlayer() == completingFaction.Player)
         SetCameraPosition(Regions.Vandermar_Village.Center.X,
           Regions.Vandermar_Village.Center.Y);
     }

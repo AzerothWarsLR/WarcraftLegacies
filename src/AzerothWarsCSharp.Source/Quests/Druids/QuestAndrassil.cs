@@ -28,18 +28,18 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
     protected override string RewardDescription =>
       "A new capital at Grizzly Hills that can research a powerful upgrade for your Druids of the Claw, and you can train the hero Ursoc from the Altar of Elders";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      SetPlayerTechResearched(Holder.Player, ResearchId, 1);
-      CreateUnit(Holder.Player, FourCC("n04F"), GetRectCenterX(Regions.Andrassil.Rect),
+      SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
+      CreateUnit(completingFaction.Player, FourCC("n04F"), GetRectCenterX(Regions.Andrassil.Rect),
         GetRectCenterY(Regions.Andrassil.Rect), 0);
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(FourCC("R05X"), Faction.UNLIMITED);
-      Holder.ModObjectLimit(UrsocId, 1);
-      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(FourCC("R05X"), Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(UrsocId, 1);
+      whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);
     }
   }
 }

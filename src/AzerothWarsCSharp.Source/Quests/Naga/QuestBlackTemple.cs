@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     protected override string RewardDescription => "The Fel Horde will join us and Magtheridon will die";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       if (NagaSetup.FactionNaga.Team == TeamSetup.Naga) FelHordeSetup.FactionFelHorde.Team = TeamSetup.Naga;
       RemoveUnit(LegendFelHorde.LegendMagtheridon.Unit);

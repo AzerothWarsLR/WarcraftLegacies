@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
@@ -26,19 +27,19 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
     protected override string RewardDescription =>
       "The Vault of the Wardens and 4 free Wardens appear at the Broken Isles, and you learn to train Wardens";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      CreateUnit(Holder.Player, FourCC("n04G"), Regions.VaultoftheWardens.Center.X,
+      CreateUnit(completingFaction.Player, FourCC("n04G"), Regions.VaultoftheWardens.Center.X,
         Regions.VaultoftheWardens.Center.Y, 220);
-      CreateUnits(Holder.Player, WardenId, Regions.VaultoftheWardens.Center.X,
+      CreateUnits(completingFaction.Player, WardenId, Regions.VaultoftheWardens.Center.X,
         Regions.VaultoftheWardens.Center.Y, 270, 4);
-      DisplayUnitTypeAcquired(Holder.Player, WardenId,
+      DisplayUnitTypeAcquired(completingFaction.Player, WardenId,
         "You can now train Wardens from the Vault of the Wardens, Sentinel Enclaves, and your capitals.");
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(WardenId, 8);
+      whichFaction.ModObjectLimit(WardenId, 8);
     }
   }
 }

@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -21,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     protected override string RewardDescription => "Stay allied to Illidan";
     
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       QuelthalasQuestSetup.GREAT_TREACHERY.Progress = QuestProgress.Failed;
       QuelthalasQuestSetup.SUMMON_KIL.Progress = QuestProgress.Failed;

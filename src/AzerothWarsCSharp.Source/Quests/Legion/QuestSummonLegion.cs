@@ -1,4 +1,5 @@
 using System;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
@@ -25,10 +26,10 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       "The hero Archimonde, control of all units in the Twisting Nether, and learn to train Greater Demons";
 
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      if (Holder.UndefeatedResearch == 0)
-        throw new Exception(Holder.Name + " has no presence research. QuestSummonLegion won't work.");
+      if (whichFaction.UndefeatedResearch == 0)
+        throw new Exception(whichFaction.Name + " has no presence research. QuestSummonLegion won't work.");
     }
   }
 }

@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -23,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     protected override string RewardDescription => "The Living Shadow and the Ashbringer Quest discovery";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       LegendLordaeron.LegendUther.Unit.AddItemSafe(ArtifactSetup.ArtifactLivingshadow.Item);
       LordaeronSetup.FactionLordaeron.AddQuest(LordaeronQuestSetup.TheAshbringer);

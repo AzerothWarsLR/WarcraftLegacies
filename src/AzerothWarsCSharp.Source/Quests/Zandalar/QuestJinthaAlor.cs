@@ -13,21 +13,21 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
     private static readonly int TrollShrineId = FourCC("o04X");
     
     protected override string CompletionPopup =>
-      "Jintha'Alor has fallen. The Vilebranch trolls lend their might to the " + Holder.Team.Name + ".";
+      "Jintha'Alor has fallen. The Vilebranch trolls lend their might to the Zandalari";
 
     protected override string RewardDescription =>
       "Control of Jintha'Alor, 300 gold tribute and the ability to train " + GetObjectName(BearRiderId) +
       "s from the " + GetObjectName(TrollShrineId);
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      SetPlayerTechResearched(Holder.Player, JinthaalorResearch, 1);
-      this.Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
+      SetPlayerTechResearched(completingFaction.Player, JinthaalorResearch, 1);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(JinthaalorResearch, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(JinthaalorResearch, Faction.UNLIMITED);
     }
 
 

@@ -1,6 +1,7 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ArtifactSystem;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -35,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       "You gain a research improving all of your units, the Crowns of Lordaeron and Stormwind are merged, and Varian gains " +
       I2S(EXPERIENCE_REWARD) + ".";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       unit crownHolder = ArtifactSetup.ArtifactCrownstormwind.OwningUnit;
       RemoveItem(ArtifactSetup.ArtifactCrownlordaeron.Item);
@@ -45,8 +46,8 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       ArtifactSetup.ArtifactCrownlordaeron.Description = "Melted down";
       ArtifactSetup.ArtifactCrownstormwind.Status = ArtifactStatus.Hidden;
       ArtifactSetup.ArtifactCrownstormwind.Description = "Melted down";
-      SetPlayerTechResearched(Holder.Player, ResearchId, 1);
-      DisplayResearchAcquired(Holder.Player, ResearchId, 1);
+      SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
+      DisplayResearchAcquired(completingFaction.Player, ResearchId, 1);
       BlzSetUnitName(LegendStormwind.LegendVarian.Unit, "High King");
       AddHeroXP(LegendStormwind.LegendVarian.Unit, EXPERIENCE_REWARD, true);
     }

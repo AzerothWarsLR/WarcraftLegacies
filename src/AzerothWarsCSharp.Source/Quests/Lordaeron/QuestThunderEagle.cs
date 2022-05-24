@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -20,14 +21,15 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02S"))));
     }
 
-    protected override string CompletionPopup => "The Thunder Eagles, now in safe hands " + Holder.Name + ".";
+    //Todo: bad flavour
+    protected override string CompletionPopup => "The Thunder Eagles are now in the safe hands of Lordaeron.";
 
     protected override string RewardDescription => "Learn to train " + GetObjectName(ThunderEagleId) + "s";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      SetPlayerTechResearched(Holder.Player, ResearchId, 1);
-      DisplayUnitTypeAcquired(Holder.Player, ThunderEagleId,
+      SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
+      DisplayUnitTypeAcquired(completingFaction.Player, ThunderEagleId,
         "You can now train Thunder Eagles from upgraded Town Halls and from your capitals.");
     }
   }

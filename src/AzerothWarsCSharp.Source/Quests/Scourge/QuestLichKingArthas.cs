@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -31,7 +32,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     protected override string RewardDescription =>
       "Arthas becomes the Lich King, but the Frozen Throne loses its abilities";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       PlayThematicMusic("Sound\\Music\\mp3Music\\LichKingTheme.mp3");
       LegendScourge.LegendLichking.DeathMessage =
@@ -54,9 +55,9 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       SetUnitState(LegendLordaeron.LegendArthas.Unit, UNIT_STATE_MANA,
         GetUnitState(LegendLordaeron.LegendArthas.Unit, UNIT_STATE_MAX_MANA));
       LegendLordaeron.LegendArthas.Unit.AddItemSafe(ArtifactSetup.ArtifactHelmofdomination.Item);
-      Holder.Team = TeamSetup.Scourge;
+      completingFaction.Team = TeamSetup.Scourge;
       _utgardeKeep.Rescue(ScourgeSetup.FactionScourge.Player);
-      SetPlayerState(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
+      SetPlayerState(completingFaction.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
     }
   }
 }

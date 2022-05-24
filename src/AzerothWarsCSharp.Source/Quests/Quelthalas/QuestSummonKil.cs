@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
@@ -21,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     protected override string RewardDescription => "The hero Kil'jaeden";
     
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0R7"));
       LegendQuelthalas.LegendKiljaeden.Spawn(QuelthalasSetup.FactionQuelthalas.Player, Regions.Sunwell.Center.X,

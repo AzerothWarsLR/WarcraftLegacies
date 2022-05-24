@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ArtifactSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -23,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
     protected override string RewardDescription => "Drek'thar's Spellbook";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       var drektharsSpellbook = ArtifactSetup.ArtifactDrektharsspellbook;
       if (drektharsSpellbook != null && LegendFrostwolf.LegendThrall?.Unit != null)

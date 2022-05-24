@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -25,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     protected override string RewardDescription => "The Illidari team will join the Burning Legion in their team";
     
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       if (QuelthalasSetup.FactionQuelthalas.Team == TeamSetup.Naga)
       {

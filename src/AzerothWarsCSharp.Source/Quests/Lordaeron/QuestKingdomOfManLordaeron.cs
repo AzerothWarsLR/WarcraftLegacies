@@ -35,7 +35,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "You gain a research improving all of your units, the Crowns of Lordaeron and Stormwind are merged, and Arthas becomes High King";
 
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       //Artifact
       unit crownHolder = ArtifactSetup.ArtifactCrownstormwind.OwningUnit;
@@ -47,16 +47,16 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       ArtifactSetup.ArtifactCrownstormwind.Status = ArtifactStatus.Hidden;
       ArtifactSetup.ArtifactCrownstormwind.Description = "Melted down";
       //Research
-      SetPlayerTechResearched(Holder.Player, RewardResearchId, 1);
-      Display.DisplayResearchAcquired(Holder.Player, RewardResearchId, 1);
+      SetPlayerTechResearched(completingFaction.Player, RewardResearchId, 1);
+      Display.DisplayResearchAcquired(completingFaction.Player, RewardResearchId, 1);
       //High King Arthas
       LegendLordaeron.LegendArthas.UnitType = FourCC("Harf");
       LegendLordaeron.LegendArthas.ClearUnitDependencies();
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(RewardResearchId, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(RewardResearchId, Faction.UNLIMITED);
     }
   }
 }

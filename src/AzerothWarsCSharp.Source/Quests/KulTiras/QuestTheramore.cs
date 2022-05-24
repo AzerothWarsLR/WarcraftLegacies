@@ -35,21 +35,21 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 
     protected override string RewardDescription => "Control of all units at Theramore";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      Holder.ModObjectLimit(RequiredResearch, -Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(RequiredResearch, -Faction.UNLIMITED);
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      Holder.ModObjectLimit(RequiredResearch, -Faction.UNLIMITED);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      completingFaction.ModObjectLimit(RequiredResearch, -Faction.UNLIMITED);
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(RequiredResearch, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(RequiredResearch, Faction.UNLIMITED);
     }
   }
 }

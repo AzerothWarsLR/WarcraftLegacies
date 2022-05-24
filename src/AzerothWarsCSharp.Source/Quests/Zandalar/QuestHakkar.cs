@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -24,9 +25,9 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 
     protected override string RewardDescription => "Gain the demigod hero Hakkar";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      LegendTroll.LEGEND_HAKKAR.Spawn(Holder.Player, Regions.DrownedTemple.Center.X,
+      LegendTroll.LEGEND_HAKKAR.Spawn(completingFaction.Player, Regions.DrownedTemple.Center.X,
         Regions.DrownedTemple.Center.Y, 270);
       SetHeroLevel(LegendTroll.LEGEND_HAKKAR.Unit, 12, false);
     }

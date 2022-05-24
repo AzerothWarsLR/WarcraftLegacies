@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -38,12 +39,12 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     protected override string RewardDescription => "Close the Dark Portal from both sides";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       _unitsToRemove.Clear();
     }
     
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       foreach (var unit in _unitsToRemove)
       {

@@ -79,10 +79,10 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       }
     }
     
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       OpenScholomance();
-      Holder.ModObjectLimit(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, -Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, -Faction.UNLIMITED);
       foreach (var unit in _cultistsOfTheDamned)
       {
         KillUnit(unit);
@@ -98,14 +98,14 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       }
       else
       {
-        CreatePlagueCauldrons(Holder.Player);
+        CreatePlagueCauldrons(completingFaction.Player);
       }
-      Holder.AddPower(plaguePower);
+      completingFaction.AddPower(plaguePower);
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, Faction.UNLIMITED);
     }
 
     private void OpenScholomance()

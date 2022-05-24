@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -14,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
     protected override string RewardDescription =>
       "Grom Hellscream gains " + I2S(EXPERIENCE_REWARD) + " experience";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       AddHeroXP(LegendWarsong.LegendGrom.Unit, EXPERIENCE_REWARD, true);
     }

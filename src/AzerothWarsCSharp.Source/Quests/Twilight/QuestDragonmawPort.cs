@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -28,20 +29,20 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
         }
     }
 
+    //Todo: bad flavour
     protected override string CompletionPopup =>
-      "Dragonmaw Port has fallen under our control and its military is now free to assist the " + Holder.Team.Name +
-      ".";
+      "Dragonmaw Port has fallen under our control and its military is now free to assist the Twilight Clan.";
 
     protected override string RewardDescription => "Control of all buildings in Dragonmaw Port";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
     }
   }
 }

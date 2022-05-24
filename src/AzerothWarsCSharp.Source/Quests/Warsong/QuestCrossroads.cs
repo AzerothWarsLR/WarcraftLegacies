@@ -44,18 +44,18 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       CreateUnit(whichPlayer, wardId, -12844, -1975, 0);
       CreateUnit(whichPlayer, wardId, -10876, -2066, 0);
       CreateUnit(whichPlayer, wardId, -11922, -824, 0);
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 2000);
+      whichPlayer.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 2000);
     }
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       GiveCrossroads(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       _rescueUnits.Clear();
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      GiveCrossroads(Holder.Player);
+      GiveCrossroads(completingFaction.Player);
       _rescueUnits.Clear();
     }
   }

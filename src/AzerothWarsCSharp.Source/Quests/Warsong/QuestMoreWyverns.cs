@@ -1,4 +1,4 @@
-using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
@@ -29,10 +29,10 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
     protected override string RewardDescription =>
       "Learn to train " + I2S(LIMIT_CHANGE) + " additional " + GetObjectName(UnittypeId) + "s";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      Holder.ModObjectLimit(UnittypeId, LIMIT_CHANGE);
-      Display.DisplayUnitLimit(Holder, UnittypeId);
+      completingFaction.ModObjectLimit(UnittypeId, LIMIT_CHANGE);
+      Display.DisplayUnitLimit(completingFaction, UnittypeId);
     }
   }
 }

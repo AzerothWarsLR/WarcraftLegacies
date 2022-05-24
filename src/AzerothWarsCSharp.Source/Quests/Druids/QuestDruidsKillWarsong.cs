@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using static AzerothWarsCSharp.MacroTools.Libraries.Display;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
@@ -23,14 +24,14 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 
     protected override string RewardDescription => "Learn to train " + GetObjectName(UNITTYPE_ID) + "s";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      DisplayUnitTypeAcquired(Holder.Player, UNITTYPE_ID, "You can now train Siege Ancients at the Ancient of War.");
+      DisplayUnitTypeAcquired(completingFaction.Player, UNITTYPE_ID, "You can now train Siege Ancients at the Ancient of War.");
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(UNITTYPE_ID, 6); //Siege Ancient
+      whichFaction.ModObjectLimit(UNITTYPE_ID, 6); //Siege Ancient
     }
   }
 }

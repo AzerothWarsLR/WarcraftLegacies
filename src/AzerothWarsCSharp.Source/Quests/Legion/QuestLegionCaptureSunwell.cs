@@ -22,9 +22,9 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
     protected override string RewardDescription => "A research improving your Dreadlords";
 
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);
     }
   }
 }

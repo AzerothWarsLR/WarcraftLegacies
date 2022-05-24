@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -19,10 +20,10 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 
     protected override string RewardDescription => "Join the Alliance team";
     
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       UnitRemoveAbility(LegendDruids.LegendMalfurion.Unit, FourCC("A0IG"));
-      Holder.Team = TeamSetup.Alliance;
+      completingFaction.Team = TeamSetup.Alliance;
     }
   }
 }

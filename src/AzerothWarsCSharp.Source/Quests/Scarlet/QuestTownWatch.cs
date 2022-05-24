@@ -24,10 +24,10 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
 
     protected override string RewardDescription => "Gain 4000 lumber and 500 gold";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 500);
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 4000);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 500);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 4000);
     }
   }
 }

@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Game_Logic
       {
         foreach (var player in GetAllPlayers())
           if (player.GetFaction().StartingQuest != null && GetLocalPlayer() == player)
-            player.GetFaction().StartingQuest.DisplayDiscovered();
+            player.GetFaction().StartingQuest.DisplayDiscovered(player.GetFaction());
       });
     }
   }

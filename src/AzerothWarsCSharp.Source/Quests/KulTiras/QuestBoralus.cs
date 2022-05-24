@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -33,20 +34,20 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 
 
     protected override string CompletionPopup =>
-      "Kul'tiras has joined the war and its military is now free to assist the " + Holder.Team.Name + ".";
+      "Kul'tiras has joined the war and its military is now free to assist the Alliance.";
 
     protected override string RewardDescription =>
       "Control of all units in Kul'tiras and enables Katherine Proodmoure to be trained at the altar";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      if (GetLocalPlayer() == Holder.Player) PlayThematicMusic("war3mapImported\\KultirasTheme.mp3");
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\KultirasTheme.mp3");
     }
   }
 }

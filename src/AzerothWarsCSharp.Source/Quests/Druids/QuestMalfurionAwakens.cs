@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -34,17 +35,17 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 
     protected override string RewardDescription => "Gain the hero Malfurion and the artifact G'hanir";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _moongladeUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _moongladeUnits) unit.Rescue(Holder.Player);
+      foreach (var unit in _moongladeUnits) unit.Rescue(completingFaction.Player);
       if (LegendDruids.LegendMalfurion.Unit == null)
       {
-        LegendDruids.LegendMalfurion.Spawn(Holder.Player, Regions.Moonglade.Center.X, Regions.Moonglade.Center.Y,
+        LegendDruids.LegendMalfurion.Spawn(completingFaction.Player, Regions.Moonglade.Center.X, Regions.Moonglade.Center.Y,
           270);
         SetHeroLevel(LegendDruids.LegendMalfurion.Unit, 3, false);
         LegendDruids.LegendMalfurion.Unit.AddItemSafe(ArtifactSetup.ArtifactGhanir.Item);

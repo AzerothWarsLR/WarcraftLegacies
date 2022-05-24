@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -24,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     protected override string RewardDescription =>
       "Grant Jaina Chaos Damage, 20 additional Intelligence, Teleport, and Mana Shield";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       unit whichUnit = LegendDalaran.LegendJaina.Unit;
       UnitRemoveAbility(LegendDalaran.LegendJaina.Unit, FourCC("A0RB"));

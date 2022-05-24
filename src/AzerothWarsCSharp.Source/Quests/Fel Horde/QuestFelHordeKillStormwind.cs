@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -18,9 +19,9 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       "Teron Gorefiend can be trained at the altar and learn to train " + I2S(UNIT_LIMIT) + " " +
       GetObjectName(UNITTYPE_ID) + "s from the " + GetObjectName(BUILDING_ID);
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(UNITTYPE_ID, UNIT_LIMIT);
+      whichFaction.ModObjectLimit(UNITTYPE_ID, UNIT_LIMIT);
     }
 
     public QuestFelHordeKillStormwind() : base("Those Who Came Before",

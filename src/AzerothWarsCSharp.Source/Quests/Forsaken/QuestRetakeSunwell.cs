@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -19,9 +20,9 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
     protected override string RewardDescription =>
       "Sylvanas and her Banshees will be empowered with 500 additional hitpoints each";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      SetPlayerTechResearched(Holder.Player, FourCC("R07V"), 1);
+      SetPlayerTechResearched(completingFaction.Player, FourCC("R07V"), 1);
     }
   }
 }

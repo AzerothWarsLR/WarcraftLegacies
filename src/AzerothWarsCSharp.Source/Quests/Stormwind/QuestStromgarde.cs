@@ -38,24 +38,24 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     protected override string RewardDescription =>
       "Control of all units at Stromgarde, the artifact Trol'kalar, and you can summon the hero Galen Trollbane from the Altar of Kings";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       SetItemPosition(ArtifactSetup.ArtifactTrolkalar.Item, 140889, 12363);
       ArtifactSetup.ArtifactTrolkalar.Status = ArtifactStatus.Ground;
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       _objectiveAnyUnitInRect.TriggerUnit.AddItemSafe(ArtifactSetup.ArtifactTrolkalar.Item);
-      SetPlayerTechResearched(Holder.Player, ResearchId, 1);
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
-      Holder.ModObjectLimit(HeroId, 1);
+      whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(HeroId, 1);
     }
   }
 }
