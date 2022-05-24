@@ -43,13 +43,13 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     ///   Describes to the player what will happen when the quest is completed.
     ///   Describes mechanics, not flavour.
     /// </summary>
-    protected virtual string RewardDescription => "DEFAULTCOMPLETIONDESCRIPTION";
+    protected virtual string RewardDescription => "";
 
     /// <summary>
     ///   Describes to the player what will happen when the quest is failed.
     ///   Describes mechanics, not flavour.
     /// </summary>
-    protected virtual string PenaltyDescription => "DEFAULTFAILUREDESCRIPTION";
+    protected virtual string PenaltyDescription => "";
 
     /// <summary>
     ///   Displayed to the player when the quest is completed.
@@ -98,7 +98,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
 
     private void RefreshDescription()
     {
-      if (!string.IsNullOrEmpty(FailurePopup))
+      if (!string.IsNullOrEmpty(PenaltyDescription))
         QuestSetDescription(Quest,
           Description + "\n|cffffcc00On completion:|r " + RewardDescription +
           "\n|cffffcc00On failure:|r " + PenaltyDescription);
