@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     internal override void OnAdd(Faction whichFaction)
     {
       Progress = QuestProgress.Complete;
-      Holder.ScoreStatusChanged += OnAnyFactionScoreStatusChanged;
+      whichFaction.ScoreStatusChanged += OnAnyFactionScoreStatusChanged;
     }
 
     private void OnAnyFactionScoreStatusChanged(object? sender, Faction faction)
