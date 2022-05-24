@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests
     }
 
     //Todo; it would be really cool if this depended on the hero that opens it
-    protected override string RewardDescription => "The Tomb of Sargeras has been opened.";
+    protected override string RewardDescription => "The Tomb of Sargeras opens";
 
     protected override string CompletionPopup => "The Tomb of Sargeras has been opened.";
 
