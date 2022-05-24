@@ -65,7 +65,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// <summary>
     ///   The research given to the faction when it completes its quest.
     /// </summary>
-    protected int ResearchId { get; set; }
+    protected int ResearchId { get; init; }
 
     private quest Quest { get; }
 
@@ -158,14 +158,13 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         {
           throw new Exception("Attempted to Holder of quest " + Title + " to " + value.Name + " but it is already to " +
                      _holder.Name);
-          return;
         }
 
         _holder = value;
         if (ResearchId != 0) Holder.ModObjectLimit(ResearchId, 1);
 
         OnAdd();
-        if (FailurePopup != null)
+        if (!string.IsNullOrEmpty(FailurePopup))
           QuestSetDescription(Quest,
             Description + "\n|cffffcc00On completion:|r " + RewardDescription +
             "\n|cffffcc00On failure:|r " + PenaltyDescription);
@@ -261,7 +260,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       var display = "";
       if (GetLocalPlayer() == Holder.Player)
       {
-        if (FailurePopup != null)
+        if (!string.IsNullOrEmpty(FailurePopup))
           display = display + "\n|cffffcc00QUEST FAILED - " + Title + "|r\n" + FailurePopup + "\n";
         else
           display = display + "\n|cffffcc00QUEST FAILED - " + Title + "|r\n" + Description + "\n";
