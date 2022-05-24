@@ -383,8 +383,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       questData.ProgressChanged += OnQuestProgressChanged;
 
       foreach (var objective in questData.Objectives)
-        if (objective is Objective factionObjective)
-          factionObjective.AddEligibleFaction(this);
+        objective.AddEligibleFaction(this);
 
       return questData;
     }
