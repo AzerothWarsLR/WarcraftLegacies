@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     private void OnUnitDeath()
     {
-      Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(GetKillingUnit().GetOwningPlayer())
+      Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(GetKillingUnit().OwningPlayer())
         ? QuestProgress.Complete
         : QuestProgress.Failed;
     }

@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     private void OnUnitChangeOwner()
     {
-      if (IsPlayerOnSameTeamAsAnyEligibleFaction(_target.GetOwningPlayer()))
+      if (IsPlayerOnSameTeamAsAnyEligibleFaction(_target.OwningPlayer()))
         Progress = QuestProgress.Complete;
     }
   }

@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     private void OnTargetChangeOwner(object? sender, LegendChangeOwnerEventArgs legendChangeOwnerEventArgs)
     {
-      if (IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit!.GetOwningPlayer()))
+      if (IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit!.OwningPlayer()))
         Progress = QuestProgress.Complete;
       else
         Progress = _canFail ? QuestProgress.Failed : QuestProgress.Incomplete;
