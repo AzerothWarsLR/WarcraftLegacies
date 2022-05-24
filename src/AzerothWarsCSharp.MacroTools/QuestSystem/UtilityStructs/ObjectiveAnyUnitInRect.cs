@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -69,7 +70,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       Progress = IsValidUnitInRect() ? QuestProgress.Complete : QuestProgress.Incomplete;
     }
 
-    internal override void OnAdd()
+    internal override void OnAdd(Faction whichFaction)
     {
       Progress = IsValidUnitInRect() ? QuestProgress.Complete : QuestProgress.Incomplete;
       TriggerAddAction(EntersRectTrig, OnRegionEnter);

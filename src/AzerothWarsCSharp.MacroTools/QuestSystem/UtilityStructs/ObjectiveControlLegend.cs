@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     public override Point Position => new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
 
-    internal override void OnAdd()
+    internal override void OnAdd(Faction whichFaction)
     {
       if (EligibleFactions.Contains(GetOwningPlayer(GetTriggerUnit())))
         Progress = QuestProgress.Complete;

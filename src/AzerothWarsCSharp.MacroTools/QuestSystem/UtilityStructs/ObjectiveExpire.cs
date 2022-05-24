@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
@@ -17,7 +18,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       ShowsInQuestLog = false;
     }
 
-    internal override void OnAdd()
+    internal override void OnAdd(Faction whichFaction)
     {
       Progress = QuestProgress.Complete;
     }

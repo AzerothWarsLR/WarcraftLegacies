@@ -21,12 +21,12 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     public override Point Position => new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
 
-    internal override void OnAdd()
+    internal override void OnAdd(Faction whichFaction)
     {
       if (IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.GetOwningPlayer())) 
         Progress = QuestProgress.Complete;
 
-      Holder.JoinedTeam += OnFactionTeamJoin;
+      whichFaction.JoinedTeam += OnFactionTeamJoin;
     }
 
     private void OnTargetChangeOwner(object? sender, ControlPointOwnerChangeEventArgs controlPointOwnerChangeEventArgs)
@@ -38,7 +38,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     private void OnFactionTeamJoin(object? sender, Faction faction)
     {
-      if (faction.Team == Holder.Team && GetOwningPlayer(_target.Unit) == faction.Player)
+      if (IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.GetOwningPlayer()))
         Progress = QuestProgress.Complete;
     }
   }

@@ -129,7 +129,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// <summary>
     ///   Runs when a <see cref="QuestData" /> with this <see cref="Objective" /> is added to a <see cref="Faction" />.
     /// </summary>
-    internal virtual void OnAdd()
+    internal virtual void OnAdd(Faction faction)
     {
     }
 

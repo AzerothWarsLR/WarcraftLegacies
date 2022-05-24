@@ -1,5 +1,6 @@
 using System;
 using AzerothWarsCSharp.MacroTools.ArtifactSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
@@ -18,7 +19,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       target.PickedUp += OnPickedUp;
     }
 
-    internal override void OnAdd()
+    internal override void OnAdd(Faction whichFaction)
     {
       if (EligibleFactions.Contains(_target.OwningPlayer)) 
         Progress = QuestProgress.Complete;

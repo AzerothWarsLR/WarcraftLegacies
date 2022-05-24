@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
@@ -20,10 +21,10 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     public override Point Position => new(_questItemA.Position.X, _questItemB.Position.Y);
 
-    internal override void OnAdd()
+    internal override void OnAdd(Faction whichFaction)
     {
-      _questItemA.OnAdd();
-      _questItemB.OnAdd();
+      _questItemA.OnAdd(whichFaction);
+      _questItemB.OnAdd(whichFaction);
       Update();
     }
 

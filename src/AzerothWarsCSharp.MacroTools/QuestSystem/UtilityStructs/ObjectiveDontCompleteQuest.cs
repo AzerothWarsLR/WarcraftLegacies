@@ -1,3 +1,5 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
+
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
   public sealed class ObjectiveDontCompleteQuest : Objective
@@ -8,7 +10,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       target.ProgressChanged += OnQuestProgressChanged;
     }
 
-    internal override void OnAdd()
+    internal override void OnAdd(Faction whichFaction)
     {
       Progress = QuestProgress.Complete;
     }

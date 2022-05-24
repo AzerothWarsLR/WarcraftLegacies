@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       targetArtifact.PickedUp += OnPickedUp;
     }
 
-    internal override void OnAdd()
+    internal override void OnAdd(Faction whichFaction)
     {
       if (_targetArtifact.OwningUnit == _targetLegend.Unit) Progress = QuestProgress.Complete;
     }

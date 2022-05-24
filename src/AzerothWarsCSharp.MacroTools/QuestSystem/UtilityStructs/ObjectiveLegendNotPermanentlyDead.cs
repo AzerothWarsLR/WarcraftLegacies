@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
         Progress = QuestProgress.Complete;
     }
 
-    internal override void OnAdd()
+    internal override void OnAdd(Faction whichFaction)
     {
       if (UnitAlive(_target.Unit)) Progress = QuestProgress.Complete;
     }
