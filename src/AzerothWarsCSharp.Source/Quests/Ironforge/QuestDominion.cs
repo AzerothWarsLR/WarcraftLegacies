@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -18,12 +19,12 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       "The Dwarven Dominion must be established before Ironforge can join the war.",
       "ReplaceableTextures\\CommandButtons\\BTNNorthrendCastle.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n017"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n014"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n013"))));
-      AddQuestItem(new QuestItemUpgrade(FourCC("h07G"), FourCC("h07E")));
-      AddQuestItem(new QuestItemExpire(1462));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n017"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n014"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n013"))));
+      AddObjective(new ObjectiveUpgrade(FourCC("h07G"), FourCC("h07E")));
+      AddObjective(new ObjectiveExpire(1462));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R043");
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
@@ -38,15 +39,15 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
 
     protected override string RewardDescription => "Control of all units in Ironforge";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      if (GetLocalPlayer() == Holder.Player) PlayThematicMusic("war3mapImported\\DwarfTheme.mp3");
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\DwarfTheme.mp3");
     }
   }
 }

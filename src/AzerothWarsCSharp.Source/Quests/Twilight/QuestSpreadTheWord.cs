@@ -11,8 +11,8 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       "The world shall hear the whispers of the Old God. Spread the visions of the end",
       "ReplaceableTextures\\CommandButtons\\BTNOldGodWhispers.blp")
     {
-      AddQuestItem(new QuestItemBuild(FourCC("o03C"), 1));
-      AddQuestItem(new QuestItemTrain(FourCC("obot"), FourCC("o03I"), 3));
+      AddObjective(new ObjectiveBuild(FourCC("o03C"), 1));
+      AddObjective(new ObjectiveTrain(FourCC("obot"), FourCC("o03I"), 3));
       ResearchId = FourCC("R05F");
     }
     

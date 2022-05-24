@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -14,8 +15,8 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "Medivh's body was corrupted by Sargeras at conception. Now that he is dead, the secrets of the Tomb of Sargeras and Karazhan combined might allow the mages of Dalaran to cleanse his spirit.",
       "ReplaceableTextures\\CommandButtons\\BTNMedivh.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendKarazhan, false));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00J"))));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendKarazhan, false));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00J"))));
       ResearchId = FourCC("R04K");
     }
 
@@ -24,9 +25,9 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     protected override string RewardDescription => "You can summon Medivh from the Altar of Knowledge";
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(MedivhId, 1);
+      whichFaction.ModObjectLimit(MedivhId, 1);
     }
   }
 }

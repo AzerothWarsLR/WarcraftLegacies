@@ -15,25 +15,25 @@ using static AzerothWarsCSharp.MacroTools.Libraries.Display; namespace AzerothWa
       "The Blue Dragons of Northrend are the wardens of magic on Azeroth. They might be convinced to willingly join the mages of Dalaran.",
       "ReplaceableTextures\\CommandButtons\\BTNAzureDragon.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendNexus, false));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendNexus, false));
     }
-    
+
     protected override string CompletionPopup =>
-      "The Nexus has been captured. The Blue Dragonflight fights for " + Holder.Name + ".";
+      "The Nexus has been captured. The Blue Dragonflight fights for Dalaran.";
 
     protected override string RewardDescription => "Learn to train Blue Dragons";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      SetPlayerTechResearched(Holder.Player, RESEARCH_ID, 1);
-      DisplayUnitTypeAcquired(Holder.Player, DRAGON_ID,
+      SetPlayerTechResearched(completingFaction.Player, RESEARCH_ID, 1);
+      DisplayUnitTypeAcquired(completingFaction.Player, DRAGON_ID,
         "You can now train Blue Dragons from Military Quarters and the Nexus.");
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(DRAGON_ID, 6);
-      Holder.ModObjectLimit(MANADAM_ID, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(DRAGON_ID, 6);
+      whichFaction.ModObjectLimit(MANADAM_ID, Faction.UNLIMITED);
     }
   }
 }

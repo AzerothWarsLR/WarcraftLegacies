@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -15,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       "The smiths of Ironforge have long been put to use crafting goods and war machinery. In the hands of the Fel Horde, they could be used to smelt and refine the ultimate metal: Felsteel.",
       "ReplaceableTextures\\CommandButtons\\BTNInfernalFlameCannon.blp")
     {
-      AddQuestItem(new QuestItemLegendDead(LegendIronforge.LegendGreatforge));
+      AddObjective(new ObjectiveLegendDead(LegendIronforge.LegendGreatforge));
       ResearchId = FourCC("R011");
     }
 
@@ -27,9 +28,9 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
                                                        GetObjectName(UnittypeId) + "s from the " +
                                                        GetObjectName(BuildingId) + " and acquire Felsteel Plating";
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(UnittypeId, UNIT_LIMIT);
+      whichFaction.ModObjectLimit(UnittypeId, UNIT_LIMIT);
     }
   }
 }

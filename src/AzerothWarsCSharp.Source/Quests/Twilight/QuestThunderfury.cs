@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -14,15 +15,15 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       "The legendary sword, Thunderfury, has been lost somewhere in the Broken Isles, Cho'gall has seen it in a vision. It will be a great asset to the Old Gods",
       "ReplaceableTextures\\CommandButtons\\BTNThunderfury2.blp")
     {
-      AddQuestItem(new QuestItemLegendInRect(LegendFelHorde.LegendChogall, Regions.Broken_Isles, "The Broken Isles"));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n05Y"))));
+      AddObjective(new ObjectiveLegendInRect(LegendFelHorde.LegendChogall, Regions.Broken_Isles, "The Broken Isles"));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n05Y"))));
     }
 
     protected override string CompletionPopup => "Cho'gall has found the legendary sword, Thunderfury";
 
     protected override string RewardDescription => "The legendary sword Thunderfury";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       LegendFelHorde.LegendChogall.Unit.AddItemSafe(ArtifactSetup.ArtifactThunderfury.Item);
     }

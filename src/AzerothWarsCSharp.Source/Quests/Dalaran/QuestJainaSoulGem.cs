@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -12,8 +13,8 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "Scholomance is home to a wide variety of profane artifacts. Bring Jaina there to see what might be discovered.",
       "ReplaceableTextures\\CommandButtons\\BTNSoulGem.blp")
     {
-      AddQuestItem(new QuestItemLegendInRect(LegendDalaran.LegendJaina, Regions.Jaina_soul_gem, "Scholomance"));
-      AddQuestItem(new QuestItemLegendDead(LegendForsaken.LegendScholomance));
+      AddObjective(new ObjectiveLegendInRect(LegendDalaran.LegendJaina, Regions.Jaina_soul_gem, "Scholomance"));
+      AddObjective(new ObjectiveLegendDead(LegendForsaken.LegendScholomance));
     }
 
 
@@ -22,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     protected override string RewardDescription => "The Soul Gem";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       LegendDalaran.LegendJaina.Unit.AddItemSafe(ArtifactSetup.ArtifactSoulgem.Item);
     }

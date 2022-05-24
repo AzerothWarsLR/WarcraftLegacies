@@ -19,12 +19,12 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "Before the First War, all of humanity was united under the banner of the Arathorian Empire. Reclaim its greatness by uniting mankind once again.",
       "ReplaceableTextures\\CommandButtons\\BTNFireKingCrown.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendLordaeron.LegendArthas, true));
-      AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactCrownlordaeron));
-      AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactCrownstormwind));
-      AddQuestItem(new QuestItemLegendDead(LegendScourge.LegendLichking));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n010"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01G"))));
+      AddObjective(new ObjectiveControlLegend(LegendLordaeron.LegendArthas, true));
+      AddObjective(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactCrownlordaeron));
+      AddObjective(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactCrownstormwind));
+      AddObjective(new ObjectiveLegendDead(LegendScourge.LegendLichking));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n010"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01G"))));
       Global = true;
     }
 
@@ -35,7 +35,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "You gain a research improving all of your units, the Crowns of Lordaeron and Stormwind are merged, and Arthas becomes High King";
 
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       //Artifact
       unit crownHolder = ArtifactSetup.ArtifactCrownstormwind.OwningUnit;
@@ -47,16 +47,16 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       ArtifactSetup.ArtifactCrownstormwind.Status = ArtifactStatus.Hidden;
       ArtifactSetup.ArtifactCrownstormwind.Description = "Melted down";
       //Research
-      SetPlayerTechResearched(Holder.Player, RewardResearchId, 1);
-      Display.DisplayResearchAcquired(Holder.Player, RewardResearchId, 1);
+      SetPlayerTechResearched(completingFaction.Player, RewardResearchId, 1);
+      Display.DisplayResearchAcquired(completingFaction.Player, RewardResearchId, 1);
       //High King Arthas
       LegendLordaeron.LegendArthas.UnitType = FourCC("Harf");
       LegendLordaeron.LegendArthas.ClearUnitDependencies();
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(RewardResearchId, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(RewardResearchId, Faction.UNLIMITED);
     }
   }
 }

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -19,13 +20,13 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       "The proud Nerubians have declared war on the newly formed Lich King, destroy them to secure the continent of Northrend.",
       "ReplaceableTextures\\CommandButtons\\BTNNerubianQueen.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00I"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08D"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00G"))));
-      AddQuestItem(new QuestItemKillUnit(spiderQueen));
-      AddQuestItem(new QuestItemUpgrade(FourCC("unp2"), FourCC("unp1")));
-      AddQuestItem(new QuestItemExpire(1480));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00I"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08D"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00G"))));
+      AddObjective(new ObjectiveKillUnit(spiderQueen));
+      AddObjective(new ObjectiveUpgrade(FourCC("unp2"), FourCC("unp1")));
+      AddObjective(new ObjectiveExpire(1480));
+      AddObjective(new ObjectiveSelfExists());
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
@@ -33,29 +34,31 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
+
+      Required = true;
     }
 
     protected override string CompletionPopup =>
-      "Northrend and the Icecrown Citadel is now under full control of the Lich King and the " + Holder.Team.Name + ".";
+      "Northrend and the Icecrown Citadel is now under full control of the Lich King and the Scourge.";
 
     protected override string RewardDescription =>
       "Access to the Plague Research at the Frozen Throne, Kel'thuzad and Rivendare trainable and a base in Icecrown";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      SetPlayerTechResearched(Holder.Player, FourCC("R03A"), 1);
-      if (GetLocalPlayer() == Holder.Player) PlayThematicMusic("war3mapImported\\ScourgeTheme.mp3");
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      SetPlayerTechResearched(completingFaction.Player, FourCC("R03A"), 1);
+      if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\ScourgeTheme.mp3");
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(QuestResearchId, 1);
+      whichFaction.ModObjectLimit(QuestResearchId, 1);
     }
   }
 }

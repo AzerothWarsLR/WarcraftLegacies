@@ -1,5 +1,6 @@
 //When Black Temple is destroyed, Stormwind can train Khadgar.
 
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -15,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       "At the end of the Second War, Khadgar remained in Draenor to seal the Dark Portal, effectively ending the conflict. He has been stranded deep in Outland ever since.",
       "ReplaceableTextures\\CommandButtons\\BTNMageWC2blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendFelHorde.LegendBlacktemple, false));
+      AddObjective(new ObjectiveControlLegend(LegendFelHorde.LegendBlacktemple, false));
       ResearchId = FourCC("R016");
       ;
       ;
@@ -27,9 +28,9 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     protected override string RewardDescription => "You can summon Khadgar from the Altar of Kings";
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(HeroId, 1);
+      whichFaction.ModObjectLimit(HeroId, 1);
     }
   }
 }

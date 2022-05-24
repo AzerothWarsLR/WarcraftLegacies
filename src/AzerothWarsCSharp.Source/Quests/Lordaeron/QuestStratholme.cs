@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -18,11 +19,11 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "The Blackrock clan has taken over Alterac, they must be eliminated for the safety of Lordaeron",
       "ReplaceableTextures\\CommandButtons\\BTNChaosBlademaster.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnit(FourCC("o00B")))); //Jubei
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n019"))));
-      AddQuestItem(new QuestItemUpgrade(FourCC("hcas"), FourCC("htow")));
-      AddQuestItem(new QuestItemExpire(1470));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("o00B")))); //Jubei
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n019"))));
+      AddObjective(new ObjectiveUpgrade(FourCC("hcas"), FourCC("htow")));
+      AddObjective(new ObjectiveExpire(1470));
+      AddObjective(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
@@ -31,20 +32,21 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
         }
     }
 
+    //Todo: bad flavour
     protected override string CompletionPopup =>
-      "Stratholme has been liberated, and its military is now free to assist the " + Holder.Team.Name + ".";
+      "Stratholme has been liberated, and its military is now free to assist the Kingdom of Lordaeron.";
 
     protected override string RewardDescription => "Control of all units in Stratholme";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       LegendLordaeron.LegendArthas.AddUnitDependency(LegendLordaeron.LegendStratholme.Unit);
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
       LegendLordaeron.LegendArthas.AddUnitDependency(LegendLordaeron.LegendStratholme.Unit);
     }
   }

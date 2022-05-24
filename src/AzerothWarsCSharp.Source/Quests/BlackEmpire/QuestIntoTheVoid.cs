@@ -14,9 +14,9 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       "Long ago, Zakajz the Corruptor was killed by the Keeper Tyr and entombed with him. Only Xal'atath, the Black Blade, is powerful enough to summon him.",
       "ReplaceableTextures\\CommandButtons\\BTNGeneralVezax.blp")
     {
-      AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactXalatath));
-      AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.ArtifactXalatath, Regions.TyrsFall, "Tyr's Fall"));
-      AddQuestItem(new QuestItemChannelRect(Regions.TyrsFall, "The Tomb of Tyr", LegendBlackEmpire.legendVolazj,
+      AddObjective(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactXalatath));
+      AddObjective(new ObjectiveArtifactInRect(ArtifactSetup.ArtifactXalatath, Regions.TyrsFall, "Tyr's Fall"));
+      AddObjective(new ObjectiveChannelRect(Regions.TyrsFall, "The Tomb of Tyr", LegendBlackEmpire.legendVolazj,
         120,
         170));
       ResearchId = QuestResearchId;

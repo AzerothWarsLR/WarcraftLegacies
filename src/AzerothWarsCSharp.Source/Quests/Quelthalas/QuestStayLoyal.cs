@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -11,8 +12,8 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
   {
     public QuestStayLoyal() : base("Refuse Kil'Jaeden's Offer", "Kil'jaeden has approached Kael with an offer of power and salvation. He should refuse it and resist the temptation of Fel power.", "ReplaceableTextures\\CommandButtons\\BTNDemonHunter2.blp")
     {
-      AddQuestItem(new QuestItemCastSpell(FourCC("A0IK"), true));
-      AddQuestItem(new QuestItemLegendLevel(LegendQuelthalas.LegendKael, 6));
+      AddObjective(new ObjectiveCastSpell(FourCC("A0IK"), true));
+      AddObjective(new ObjectiveLegendLevel(LegendQuelthalas.LegendKael, 6));
       Global = true;
     }
 
@@ -21,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     protected override string RewardDescription => "Stay allied to Illidan";
     
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       QuelthalasQuestSetup.GREAT_TREACHERY.Progress = QuestProgress.Failed;
       QuelthalasQuestSetup.SUMMON_KIL.Progress = QuestProgress.Failed;

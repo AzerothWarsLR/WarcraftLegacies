@@ -20,11 +20,11 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       "Darkshore is under attack by some Murloc. We should deal with them swiftly and){ make for the Astranaar Outpost. Clearing the Murlocs will also reestablish communication with Darnassus.",
       "ReplaceableTextures\\CommandButtons\\BTNMurloc.blp")
     {
-      AddQuestItem(new QuestItemLegendReachRect(LegendSentinels.legendTyrande, Regions.AstranaarUnlock,
+      AddObjective(new ObjectiveLegendReachRect(LegendSentinels.legendTyrande, Regions.AstranaarUnlock,
         "Astranaar Outpost"));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02U"))));
-      AddQuestItem(new QuestItemExpire(1430));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02U"))));
+      AddObjective(new ObjectiveExpire(1430));
+      AddObjective(new ObjectiveSelfExists());
 
       foreach (var rectangle in rescueRects)
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rectangle.Rect).EmptyToList())
@@ -40,16 +40,16 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
 
     protected override string RewardDescription => "Control of all units in Astranaar Outpost and Darnassus";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 200);
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 100);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 200);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 100);
     }
   }
 }

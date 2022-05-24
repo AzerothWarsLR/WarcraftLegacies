@@ -1,17 +1,15 @@
 using System;
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using static War3Api.Common;
-
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem
 {
   public abstract class QuestData
   {
-    private readonly List<QuestItemData> _questItems = new();
+    private readonly List<Objective> _objectives = new();
 
-    private Faction _holder;
-    private bool _muted = true; //Doesn't display text when updated if true
     private QuestProgress _progress = QuestProgress.Incomplete;
 
     protected QuestData(string title, string desc, string icon)
@@ -21,8 +19,17 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       Title = title;
       QuestSetTitle(Quest, title);
       QuestSetIconPath(Quest, icon);
-      QuestSetRequired(Quest, false);
       QuestSetEnabled(Quest, false);
+      Required = false;
+    }
+
+    /// <summary>
+    ///   If true, the quest appears on the left hand side of the F9 menu.
+    ///   If false, it appears on the right hand side.
+    /// </summary>
+    protected bool Required
+    {
+      set => QuestSetRequired(Quest, value);
     }
 
     public string Title { get; }
@@ -36,13 +43,13 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     ///   Describes to the player what will happen when the quest is completed.
     ///   Describes mechanics, not flavour.
     /// </summary>
-    protected virtual string RewardDescription => "DEFAULTCOMPLETIONDESCRIPTION";
+    protected virtual string RewardDescription => "";
 
     /// <summary>
     ///   Describes to the player what will happen when the quest is failed.
     ///   Describes mechanics, not flavour.
     /// </summary>
-    protected virtual string PenaltyDescription => "DEFAULTFAILUREDESCRIPTION";
+    protected virtual string PenaltyDescription => "";
 
     /// <summary>
     ///   Displayed to the player when the quest is completed.
@@ -65,7 +72,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// <summary>
     ///   The research given to the faction when it completes its quest.
     /// </summary>
-    protected int ResearchId { get; set; }
+    protected int ResearchId { get; init; }
 
     private quest Quest { get; }
 
@@ -80,64 +87,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         {
           var formerProgress = _progress;
           _progress = value;
-          if (value == QuestProgress.Complete)
-          {
-            QuestSetCompleted(Quest, true);
-            QuestSetFailed(Quest, false);
-            QuestSetDiscovered(Quest, true);
-            if (!_muted)
-            {
-              DisplayCompleted();
-              if (Global) DisplayCompletedGlobal();
-            }
-
-            if (ResearchId != 0) SetPlayerTechResearched(Holder.Player, ResearchId, 1);
-
-            OnComplete();
-          }
-          else if (value == QuestProgress.Failed)
-          {
-            QuestSetCompleted(Quest, false);
-            QuestSetFailed(Quest, true);
-            QuestSetDiscovered(Quest, true);
-            if (!_muted) DisplayFailed();
-
-            OnFail();
-          }
-          else if (value == QuestProgress.Incomplete)
-          {
-            if (!_muted)
-              if (formerProgress == QuestProgress.Undiscovered)
-                DisplayDiscovered();
-
-            QuestSetCompleted(Quest, false);
-            QuestSetFailed(Quest, false);
-            QuestSetDiscovered(Quest, true);
-          }
-          else if (value == QuestProgress.Undiscovered)
-          {
-            QuestSetCompleted(Quest, false);
-            QuestSetFailed(Quest, false);
-            QuestSetDiscovered(Quest, false);
-          }
-
-          //If the quest is incomplete, show its markers. Otherwise, hide them.
-          if (Progress != QuestProgress.Incomplete)
-            foreach (var questItem in _questItems)
-            {
-              if (GetLocalPlayer() == Holder.Player) questItem.HideLocal();
-
-              questItem.HideSync();
-            }
-          else
-            foreach (var questItem in _questItems)
-            {
-              if (GetLocalPlayer() == Holder.Player) questItem.ShowLocal();
-
-              questItem.ShowSync();
-            }
-
-          ProgressChanged?.Invoke(this, this);
+          ProgressChanged?.Invoke(this, new QuestProgressChangedEventArgs(this, formerProgress));
         }
         catch (Exception ex)
         {
@@ -146,62 +96,113 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       }
     }
 
-    /// <summary>
-    ///   The Faction that can complete the quest.
-    /// </summary>
-    public Faction Holder
+    private void RefreshDescription()
     {
-      get => _holder;
-      set
+      if (!string.IsNullOrEmpty(PenaltyDescription))
+        QuestSetDescription(Quest,
+          Description + "\n|cffffcc00On completion:|r " + RewardDescription +
+          "\n|cffffcc00On failure:|r " + PenaltyDescription);
+      else
+        QuestSetDescription(Quest,
+          Description + "\n|cffffcc00On completion:|r " + RewardDescription);
+    }
+
+    /// <summary>
+    ///   Register a <see cref="Faction" /> as being able to complete this <see cref="QuestData" />.
+    /// </summary>
+    internal void Add(Faction faction)
+    {
+      if (ResearchId != 0)
+        faction.ModObjectLimit(ResearchId, 1);
+      OnAdd(faction);
+      foreach (var questItem in _objectives)
       {
-        if (_holder != null)
-        {
-          throw new Exception("Attempted to Holder of quest " + Title + " to " + value.Name + " but it is already to " +
-                     _holder.Name);
-          return;
-        }
-
-        _holder = value;
-        if (ResearchId != 0) Holder.ModObjectLimit(ResearchId, 1);
-
-        OnAdd();
-        if (FailurePopup != null)
-          QuestSetDescription(Quest,
-            Description + "\n|cffffcc00On completion:|r " + RewardDescription +
-            "\n|cffffcc00On failure:|r " + PenaltyDescription);
-        else
-          QuestSetDescription(Quest,
-            Description + "\n|cffffcc00On completion:|r " + RewardDescription);
-
-        foreach (var questItem in _questItems) questItem.OnAdd();
-
-        _muted = false;
+        questItem.AddEligibleFaction(faction);
+        questItem.OnAdd(faction);
       }
+
+      RefreshDescription();
+    }
+
+    internal void ApplyFactionProgress(Faction whichFaction, QuestProgress progress, QuestProgress formerProgress)
+    {
+      if (progress == QuestProgress.Complete)
+      {
+        QuestSetCompleted(Quest, true);
+        QuestSetFailed(Quest, false);
+        QuestSetDiscovered(Quest, true);
+        DisplayCompleted(whichFaction);
+        if (Global) DisplayCompletedGlobal(whichFaction);
+
+        if (ResearchId != 0) SetPlayerTechResearched(whichFaction.Player, ResearchId, 1);
+
+        OnComplete(whichFaction);
+      }
+      else if (progress == QuestProgress.Failed)
+      {
+        QuestSetCompleted(Quest, false);
+        QuestSetFailed(Quest, true);
+        QuestSetDiscovered(Quest, true);
+        DisplayFailed(whichFaction);
+
+        OnFail(whichFaction);
+      }
+      else if (progress == QuestProgress.Incomplete)
+      {
+        if (formerProgress == QuestProgress.Undiscovered)
+          DisplayDiscovered(whichFaction);
+
+        QuestSetCompleted(Quest, false);
+        QuestSetFailed(Quest, false);
+        QuestSetDiscovered(Quest, true);
+      }
+      else if (progress == QuestProgress.Undiscovered)
+      {
+        QuestSetCompleted(Quest, false);
+        QuestSetFailed(Quest, false);
+        QuestSetDiscovered(Quest, false);
+      }
+
+      //If the quest is incomplete, show its markers. Otherwise, hide them.
+      if (Progress != QuestProgress.Incomplete)
+        foreach (var questItem in _objectives)
+        {
+          if (GetLocalPlayer() == whichFaction.Player) questItem.HideLocal();
+
+          questItem.HideSync();
+        }
+      else
+        foreach (var questItem in _objectives)
+        {
+          if (GetLocalPlayer() == whichFaction.Player) questItem.ShowLocal();
+
+          questItem.ShowSync();
+        }
     }
 
     /// <summary>
     ///   Fired when the <see cref="QuestData" /> changes its progress.
     /// </summary>
-    public event EventHandler<QuestData>? ProgressChanged;
+    public event EventHandler<QuestProgressChangedEventArgs>? ProgressChanged;
 
     /// <summary>
     ///   Fired when the Quest is completed.
     /// </summary>
-    protected virtual void OnComplete()
+    protected virtual void OnComplete(Faction whichFaction)
     {
     }
 
     /// <summary>
     ///   Fired when the Quest is failed.
     /// </summary>
-    protected virtual void OnFail()
+    protected virtual void OnFail(Faction whichFaction)
     {
     }
 
     /// <summary>
     ///   Fired when the <see cref="QuestData" /> is added to a <see cref="Faction" />.
     /// </summary>
-    protected virtual void OnAdd()
+    protected virtual void OnAdd(Faction whichFaction)
     {
     }
 
@@ -211,7 +212,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     internal void ShowLocal()
     {
       QuestSetEnabled(Quest, true);
-      foreach (var questItem in _questItems) questItem.ShowLocal();
+      foreach (var questItem in _objectives) questItem.ShowLocal();
     }
 
     /// <summary>
@@ -219,7 +220,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// </summary>
     internal void ShowSync()
     {
-      foreach (var questItem in _questItems) questItem.ShowSync();
+      foreach (var questItem in _objectives) questItem.ShowSync();
     }
 
     /// <summary>
@@ -228,7 +229,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     internal void HideLocal()
     {
       QuestSetEnabled(Quest, false);
-      foreach (var questItem in _questItems) questItem.HideLocal();
+      foreach (var questItem in _objectives) questItem.HideLocal();
     }
 
     /// <summary>
@@ -236,37 +237,38 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// </summary>
     internal void HideSync()
     {
-      foreach (var questItem in _questItems) questItem.HideSync();
+      foreach (var questItem in _objectives) questItem.HideSync();
     }
 
     /// <summary>
     ///   Displays a warning message to everyone except the player that completed the <see cref="QuestData" />.
     /// </summary>
-    private void DisplayCompletedGlobal()
+    private void DisplayCompletedGlobal(Faction faction)
     {
       var display = "";
-      if (GetLocalPlayer() != Holder.Player)
+      if (GetLocalPlayer() != faction.Player)
       {
-        display = display + "\n|cffffcc00MAJOR EVENT - " + Holder.PrefixCol + Title + "|r\n" +
+        display = display + "\n|cffffcc00MAJOR EVENT - " + faction.PrefixCol + Title + "|r\n" +
                   CompletionPopup + "\n";
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
-        StartSound(PlayerData.ByHandle(GetLocalPlayer()).Faction.Team.ContainsFaction(Holder)
+        var localFaction = PlayerData.ByHandle(GetLocalPlayer()).Faction;
+        StartSound(localFaction != null && localFaction.Team?.ContainsFaction(faction) == true
           ? SoundLibrary.Completed
           : SoundLibrary.Warning);
       }
     }
 
-    private void DisplayFailed()
+    private void DisplayFailed(Faction faction)
     {
       var display = "";
-      if (GetLocalPlayer() == Holder.Player)
+      if (GetLocalPlayer() == faction.Player)
       {
-        if (FailurePopup != null)
+        if (!string.IsNullOrEmpty(FailurePopup))
           display = display + "\n|cffffcc00QUEST FAILED - " + Title + "|r\n" + FailurePopup + "\n";
         else
           display = display + "\n|cffffcc00QUEST FAILED - " + Title + "|r\n" + Description + "\n";
 
-        foreach (var questItem in _questItems)
+        foreach (var questItem in _objectives)
           if (questItem.ShowsInQuestLog)
             display = questItem.Progress switch
             {
@@ -280,13 +282,13 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       }
     }
 
-    private void DisplayCompleted()
+    private void DisplayCompleted(Faction faction)
     {
       var display = "";
-      if (GetLocalPlayer() == Holder.Player)
+      if (GetLocalPlayer() == faction.Player)
       {
         display = display + "\n|cffffcc00QUEST COMPLETED - " + Title + "|r\n" + CompletionPopup + "\n";
-        foreach (var questItem in _questItems)
+        foreach (var questItem in _objectives)
           if (questItem.ShowsInQuestLog)
             display = display + " - |cff808080" + questItem.Description + " (Completed)|r\n";
 
@@ -295,13 +297,13 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       }
     }
 
-    public void DisplayDiscovered()
+    public void DisplayDiscovered(Faction faction)
     {
       var display = "";
-      if (GetLocalPlayer() == Holder.Player)
+      if (GetLocalPlayer() == faction.Player)
       {
         display = display + "\n|cffffcc00QUEST DISCOVERED - " + Title + "|r\n" + Description + "\n";
-        foreach (var questItem in _questItems)
+        foreach (var questItem in _objectives)
           if (questItem.ShowsInQuestLog)
           {
             if (questItem.Progress == QuestProgress.Complete)
@@ -315,13 +317,13 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       }
     }
 
-    private void OnQuestItemProgressChanged(object? sender, QuestItemData questItemData)
+    private void OnQuestItemProgressChanged(object? sender, Objective objective)
     {
       var allComplete = true;
       var anyFailed = false;
       var anyUndiscovered = false;
 
-      foreach (var questItem in _questItems)
+      foreach (var questItem in _objectives)
         if (questItem.Progress != QuestProgress.Complete)
         {
           allComplete = false;
@@ -343,9 +345,9 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         Progress = QuestProgress.Incomplete;
     }
 
-    public void AddQuestItem(QuestItemData questItem)
+    public void AddObjective(Objective questItem)
     {
-      _questItems.Add(questItem);
+      _objectives.Add(questItem);
       if (questItem.ShowsInQuestLog)
       {
         questItem.QuestItem = QuestCreateItem(Quest);

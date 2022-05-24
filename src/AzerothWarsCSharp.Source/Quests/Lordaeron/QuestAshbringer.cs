@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ArtifactSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -17,11 +18,11 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "The Living Shadow must be purged, with enough Holy Magic and the craftiness of the Dwarves, it could be reforged into the strongest weapon of the Light",
       "ReplaceableTextures\\CommandButtons\\BTNAshbringer2blp")
     {
-      AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactLivingshadow));
-      AddQuestItem(new QuestItemLegendNotPermanentlyDead(LegendIronforge.LegendGreatforge));
-      AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.ArtifactLivingshadow, Regions.AshbringerForge,
+      AddObjective(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactLivingshadow));
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendIronforge.LegendGreatforge));
+      AddObjective(new ObjectiveArtifactInRect(ArtifactSetup.ArtifactLivingshadow, Regions.AshbringerForge,
         "The Great Forge"));
-      AddQuestItem(new QuestItemChannelRect(Regions.AshbringerForge, "The Great Forge", LegendLordaeron.LegendUther, 60,
+      AddObjective(new ObjectiveChannelRect(Regions.AshbringerForge, "The Great Forge", LegendLordaeron.LegendUther, 60,
         340));
       Global = true;
     }
@@ -31,9 +32,9 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     protected override string RewardDescription => "Gain the hero Mograine and the artifact Ashbringer";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      LegendLordaeron.LegendMograine.Spawn(Holder.Player, Regions.AshbringerForge.Center.X,
+      LegendLordaeron.LegendMograine.Spawn(completingFaction.Player, Regions.AshbringerForge.Center.X,
         Regions.AshbringerForge.Center.Y, 270);
       SetHeroLevel(LegendLordaeron.LegendMograine.Unit, 10, false);
       LegendLordaeron.LegendMograine.Unit.AddItemSafe(ArtifactSetup.ArtifactAshbringer.Item);

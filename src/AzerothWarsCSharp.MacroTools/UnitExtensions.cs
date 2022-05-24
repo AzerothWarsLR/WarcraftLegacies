@@ -10,6 +10,11 @@ namespace AzerothWarsCSharp.MacroTools
   {
     private const float HERO_DROP_DIST = 50; //The radius in which heroes spread out items when they drop them
 
+    public static player OwningPlayer(this unit unit)
+    {
+      return GetOwningPlayer(unit);
+    }
+    
     /// <summary>
     ///   Sets the Waygate's destination to the target point.
     ///   Blindly assumes that the unit is a Waygate.
@@ -64,7 +69,7 @@ namespace AzerothWarsCSharp.MacroTools
       var face = GetUnitFacing(whichUnit);
       DestroyEffect(AddSpecialEffect(@"Abilities\Spells\Human\Resurrect\ResurrectTarget.mdl", x, y));
       RemoveUnit(whichUnit);
-      CreateUnit(GetOwningPlayer(whichUnit), unitType, x, y, face);
+      CreateUnit(OwningPlayer(whichUnit), unitType, x, y, face);
     }
 
     public static void Damage(this unit unit, unit damager, float amount)

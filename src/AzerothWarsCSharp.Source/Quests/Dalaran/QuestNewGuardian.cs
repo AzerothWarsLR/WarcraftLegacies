@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -14,8 +15,8 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "Medivh's death left Azeroth without a Guardian. The spell book he left behind could be used to empower a new one.",
       "ReplaceableTextures\\CommandButtons\\BTNAstral Blessing.blp")
     {
-      AddQuestItem(new QuestItemLegendLevel(LegendDalaran.LegendJaina, 15));
-      AddQuestItem(new QuestItemLegendHasArtifact(LegendDalaran.LegendJaina, ArtifactSetup.ArtifactBookofmedivh));
+      AddObjective(new ObjectiveLegendLevel(LegendDalaran.LegendJaina, 15));
+      AddObjective(new ObjectiveLegendHasArtifact(LegendDalaran.LegendJaina, ArtifactSetup.ArtifactBookofmedivh));
     }
 
     protected override string CompletionPopup =>
@@ -24,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     protected override string RewardDescription =>
       "Grant Jaina Chaos Damage, 20 additional Intelligence, Teleport, and Mana Shield";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       unit whichUnit = LegendDalaran.LegendJaina.Unit;
       UnitRemoveAbility(LegendDalaran.LegendJaina.Unit, FourCC("A0RB"));

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -17,9 +18,9 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
       "The city of Gadgetzan is a perfect foothold into Kalimdor.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroAlchemist.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n05C"))));
-      AddQuestItem(new QuestItemExpire(1522));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n05C"))));
+      AddObjective(new ObjectiveExpire(1522));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R07E");
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
@@ -32,18 +33,18 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
     protected override string CompletionPopup =>
       "Control of all buildings in Gadgetzan and enables Noggenfogger to be built at the altar";
 
+    //Todo: terrible flavour
     protected override string RewardDescription =>
-      "We can train Noggenfogger and Gadgetzan is now under our influence and its military is now free to assist the " +
-      Holder.Team.Name + ".";
+      "We can train Noggenfogger and Gadgetzan is now under our influence and its military is now free to assist the Horde.";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
     }
   }
 }

@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -12,18 +13,18 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override string RewardDescription => "Unally from the Legion team";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      Holder.Team = TeamSetup.Scourge;
+      completingFaction.Team = TeamSetup.Scourge;
     }
 
     public QuestCivilWar() : base("Civil War",
       "The Lich King wants to break free from his Demon Master, but he will need a champion first",
       "ReplaceableTextures\\CommandButtons\\BTNTheLichKingQuest.blp")
     {
-      AddQuestItem(new QuestItemResearch(FourCC("R07W"), FourCC("u000")));
-      AddQuestItem(new QuestItemControlLegend(LegendLordaeron.LegendArthas, false));
-      AddQuestItem(new QuestItemTime(900));
+      AddObjective(new ObjectiveResearch(FourCC("R07W"), FourCC("u000")));
+      AddObjective(new ObjectiveControlLegend(LegendLordaeron.LegendArthas, false));
+      AddObjective(new ObjectiveTime(900));
       Global = true;
     }
   }

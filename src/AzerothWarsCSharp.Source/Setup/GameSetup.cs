@@ -71,6 +71,8 @@ namespace AzerothWarsCSharp.Source.Setup
       BlightSetup.Setup();
       Console.WriteLine("Shutting down PreplacedUnitSystem...");
       PreplacedUnitSystem.Shutdown();
+      Console.WriteLine("Setting up QuestMenuSetup...");
+      QuestMenuSetup.Setup();
     }
   }
 }

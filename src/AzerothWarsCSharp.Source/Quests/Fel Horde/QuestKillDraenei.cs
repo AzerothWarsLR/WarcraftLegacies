@@ -15,9 +15,9 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       "The Draenei race existence insults the Fel Horde demon masters, slaughter them all ",
       "ReplaceableTextures\\CommandButtons\\BTNChaosWolfRider.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09X"))));
-      AddQuestItem(new QuestItemLegendDead(LegendDraenei.LegendExodarship));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09X"))));
+      AddObjective(new ObjectiveLegendDead(LegendDraenei.LegendExodarship));
+      AddObjective(new ObjectiveSelfExists());
     }
 
     protected override string CompletionPopup =>
@@ -26,12 +26,12 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     protected override string RewardDescription =>
       "The Draenei rich gold mine in Tempest Keep, the faster we destroy them, the more gold will be left";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       group tempGroup = CreateGroup();
 
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 500);
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 500);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 500);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 500);
 
       GroupEnumUnitsInRect(tempGroup, Regions.InstanceOutland.Rect, null);
       unit u = FirstOfGroup(tempGroup);

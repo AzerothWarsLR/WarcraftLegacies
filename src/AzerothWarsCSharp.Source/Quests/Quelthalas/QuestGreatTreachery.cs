@@ -18,8 +18,8 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       "Kil'jaeden has approached Kael with an offer of power and salvation for his people. Only by accepting will his hunger for magic by satiated.",
       "ReplaceableTextures\\CommandButtons\\BTNFelKaelthas.blp")
     {
-      AddQuestItem(new QuestItemCastSpell(FourCC("A0IF"), true));
-      AddQuestItem(new QuestItemLegendLevel(LegendQuelthalas.LegendKael, 6));
+      AddObjective(new ObjectiveCastSpell(FourCC("A0IF"), true));
+      AddObjective(new ObjectiveLegendLevel(LegendQuelthalas.LegendKael, 6));
       ResearchId = QuestResearchId;
       Global = true;
     }
@@ -29,14 +29,14 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     protected override string RewardDescription =>
       "Unlock the summon Kil'jaeden quest and join the Burning Legion team";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       QuelthalasQuestSetup.STAY_LOYAL.Progress = QuestProgress.Failed;
       UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0IF"));
       UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0IK"));
       RemoveUnit(LegendQuelthalas.LegendLorthemar.Unit);
       QuelthalasSetup.FactionQuelthalas.ModObjectLimit(LegendQuelthalas.LegendLorthemar.UnitType, -Faction.UNLIMITED);
-      Holder.Team = TeamSetup.Legion;
+      completingFaction.Team = TeamSetup.Legion;
       QuelthalasQuestSetup.SUMMON_KIL.Progress = QuestProgress.Incomplete;
     }
   }

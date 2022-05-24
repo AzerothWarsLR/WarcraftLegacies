@@ -15,8 +15,8 @@ namespace AzerothWarsCSharp.TestSource.Quests
     public ExampleQuestC() : base("Free Zergling", "We really need a free Zergling.",
       "ReplaceableTextures\\CommandButtons\\BTNZergling.blp")
     {
-      AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.Killmaim));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveAcquireArtifact(ArtifactSetup.Killmaim));
+      AddObjective(new ObjectiveSelfExists());
       _zerglingPower = new DummyPower("Zerglings", "Spawn zerglings constantly.", "Zergling");
     }
 
@@ -24,22 +24,22 @@ namespace AzerothWarsCSharp.TestSource.Quests
     protected override string CompletionPopup => "Congratulations on your free Zergling!";
     protected override string PenaltyDescription => "A hostile Peasant spawns";
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.AddPower(_zerglingPower);
+      whichFaction.AddPower(_zerglingPower);
     }
 
-    protected override void OnFail()
+    protected override void OnFail(Faction whichFaction)
     {
       CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), FourCC("hpea"), 0, 0, 0);
     }
   
-    protected override void OnComplete()
+    protected override void OnComplete(Faction whichFaction)
     {
-      CreateUnit(Holder.Player, FourCC("zzrg"), 0, 0, 0);
-      Holder.RemovePower(_zerglingPower);
-      Holder.Name = "Zerg";
-      Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNZergling.blp";
+      CreateUnit(whichFaction.Player, FourCC("zzrg"), 0, 0, 0);
+      whichFaction.RemovePower(_zerglingPower);
+      whichFaction.Name = "Zerg";
+      whichFaction.Icon = "ReplaceableTextures\\CommandButtons\\BTNZergling.blp";
 
       ArtifactManager.Destroy(ArtifactSetup.OrbOfFrost);
     }

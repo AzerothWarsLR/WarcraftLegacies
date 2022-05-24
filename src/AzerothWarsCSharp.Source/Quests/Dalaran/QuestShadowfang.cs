@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -17,10 +18,10 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "The woods of Silverspine are unsafe for travellers, they need to be investigated",
       "ReplaceableTextures\\CommandButtons\\BTNworgen.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(worgenToKill)); //Worgen
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01D"))));
-      AddQuestItem(new QuestItemExpire(1444));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveKillUnit(worgenToKill)); //Worgen
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01D"))));
+      AddObjective(new ObjectiveExpire(1444));
+      AddObjective(new ObjectiveSelfExists());
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
@@ -31,18 +32,18 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
     }
 
     protected override string CompletionPopup =>
-      "Shadowfang has been liberated, and its military is now free to assist the " + Holder.Team.Name + ".";
+      "Shadowfang has been liberated, and its military is now free to assist Dalaran.";
 
     protected override string RewardDescription => "Control of all units in Shadowfang";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
     }
   }
 }

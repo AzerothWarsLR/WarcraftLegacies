@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -15,8 +16,8 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       "Quel'danil Lodge is a High Elven outpost situated in the Hinterlands. It's been some time since the rangers there have been in contact with Quel'thalas.",
       "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp")
     {
-      AddQuestItem(new QuestItemAnyUnitInRect(Regions.QuelDanil_Lodge, "Quel'danil Lodge", true));
-      AddQuestItem(new QuestItemTime(1200));
+      AddObjective(new ObjectiveAnyUnitInRect(Regions.QuelDanil_Lodge, "Quel'danil Lodge", true));
+      AddObjective(new ObjectiveTime(1200));
       ResearchId = FourCC("R074");
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
@@ -32,9 +33,9 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
     protected override string RewardDescription => "Control of Quel'danil Lodge";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
     }
   }
 }

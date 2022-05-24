@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       "The Wildhammer dwarves roam freely over the peaks of the Hinterlands. An audience with Magni himself might earn their cooperation.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroGriffonWarrior.blp")
     {
-      AddQuestItem(new QuestItemLegendInRect(LegendIronforge.LegendMagni, Regions.Aerie_Peak, "Aerie Peak"));
+      AddObjective(new ObjectiveLegendInRect(LegendIronforge.LegendMagni, Regions.Aerie_Peak, "Aerie Peak"));
       ResearchId = FourCC("R01C");
     }
 
@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
     protected override string RewardDescription =>
       "You gain control of Aerie Peak and you can train the hero Falstad Wildhammer from the Altar of Fortitude";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       group tempGroup = CreateGroup();
 
@@ -36,17 +36,17 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       {
         unit u = FirstOfGroup(tempGroup);
         if (u == null) break;
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) u.Rescue(Holder.Player);
+        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) u.Rescue(completingFaction.Player);
         GroupRemoveUnit(tempGroup, u);
       }
 
       DestroyGroup(tempGroup);
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
-      Holder.ModObjectLimit(HeroId, 1);
+      whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(HeroId, 1);
     }
   }
 }

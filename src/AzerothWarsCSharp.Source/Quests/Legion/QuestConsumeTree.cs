@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
@@ -13,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       "Consuming the World Tree will grant Archimonde immeasurable power and eliminate his mortal enemies, the Druids of Kalimdor, forever.",
       "ReplaceableTextures\\CommandButtons\\BTNGlazeroth.blp")
     {
-      AddQuestItem(new QuestItemChannelRect(Regions.ArchimondeChannel, "The World Tree",
+      AddObjective(new ObjectiveChannelRect(Regions.ArchimondeChannel, "The World Tree",
         LegendLegion.LEGEND_ARCHIMONDE, 420, 90));
       Global = true;
     }
@@ -25,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       "By consuming the World Tree, Archimonde will obtain immense power. +80 to all stats. Additionally, the Druids faction will be eliminated.";
 
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       unit whichUnit = LegendLegion.LEGEND_ARCHIMONDE.Unit;
       DruidsSetup.factionDruids.Obliterate();

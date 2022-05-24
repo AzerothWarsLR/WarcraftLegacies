@@ -1,4 +1,5 @@
 using System;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
@@ -14,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       "The greater forces of the Burning Legion lie in wait in the vast expanse of the Twisting Nether. Use the Book of Medivh to tear open a hole in space-time, and visit the full might of the Legion upon Azeroth.",
       "ReplaceableTextures\\CommandButtons\\BTNArchimonde.blp")
     {
-      AddQuestItem(new QuestItemCastSpell(RitualId, false));
+      AddObjective(new ObjectiveCastSpell(RitualId, false));
       ResearchId = FourCC("R04B");
       Global = true;
     }
@@ -25,10 +26,10 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       "The hero Archimonde, control of all units in the Twisting Nether, and learn to train Greater Demons";
 
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      if (Holder.UndefeatedResearch == 0)
-        throw new Exception(Holder.Name + " has no presence research. QuestSummonLegion won't work.");
+      if (whichFaction.UndefeatedResearch == 0)
+        throw new Exception(whichFaction.Name + " has no presence research. QuestSummonLegion won't work.");
     }
   }
 }

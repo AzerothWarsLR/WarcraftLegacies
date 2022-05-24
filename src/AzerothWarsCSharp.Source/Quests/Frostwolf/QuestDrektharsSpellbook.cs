@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ArtifactSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -13,8 +14,8 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       "The savage Night Elves threaten the safety of the entire Horde. Capture their World Tree and bring Thrall to its roots.",
       "ReplaceableTextures\\CommandButtons\\BTNSorceressMaster.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendDruids.LegendNordrassil, false));
-      AddQuestItem(new QuestItemLegendInRect(LegendFrostwolf.LegendThrall, Regions.Drekthars_Spellbook,
+      AddObjective(new ObjectiveControlLegend(LegendDruids.LegendNordrassil, false));
+      AddObjective(new ObjectiveLegendInRect(LegendFrostwolf.LegendThrall, Regions.Drekthars_Spellbook,
         "Nordrassil"));
     }
 
@@ -23,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
     protected override string RewardDescription => "Drek'thar's Spellbook";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       var drektharsSpellbook = ArtifactSetup.ArtifactDrektharsspellbook;
       if (drektharsSpellbook != null && LegendFrostwolf.LegendThrall?.Unit != null)

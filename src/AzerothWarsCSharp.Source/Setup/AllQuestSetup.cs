@@ -2,8 +2,10 @@ using AzerothWarsCSharp.Source.Setup.QuestSetup;
 
 namespace AzerothWarsCSharp.Source.Setup
 {
-  public static class AllQuestSetup{
-    public static void Setup(){
+  public static class AllQuestSetup
+  {
+    public static void Setup()
+    {
       DalaranQuestSetup.Setup();
       DruidsQuestSetup.Setup();
       FelHordeQuestSetup.Setup();
@@ -27,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Setup
       GoblinQuestSetup.Setup();
       BlackEmpireQuestSetup.Setup();
       DraeneiQuestSetup.Setup();
+      SharedQuestSetup.Setup();
     }
-
   }
 }

@@ -14,9 +14,9 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       "Unholy Cultists are spreading a deadly plague among the villages of Lordaeron. We must stop them, prevent the corruption, and kill all the Cultists.",
       "ReplaceableTextures\\CommandButtons\\BTNAcolyte.blp")
     {
-      AddQuestItem(new QuestItemResearch(FourCC("Rhse"), FourCC("h083")));
-      AddQuestItem(new QuestItemBuild(FourCC("h084"), 8));
-      AddQuestItem(new QuestItemKillXUnit(FourCC("u01U"), 3));
+      AddObjective(new ObjectiveResearch(FourCC("Rhse"), FourCC("h083")));
+      AddObjective(new ObjectiveBuild(FourCC("h084"), 8));
+      AddObjective(new ObjectiveKillXUnit(FourCC("u01U"), 3));
       ResearchId = QUEST_RESEARCH_ID;
     }
     
@@ -24,10 +24,10 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
 
     protected override string RewardDescription => "Gain 4000 lumber and 500 gold";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 500);
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 4000);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 500);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 4000);
     }
   }
 }

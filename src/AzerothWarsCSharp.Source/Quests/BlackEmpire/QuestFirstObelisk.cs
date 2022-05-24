@@ -18,11 +18,11 @@
 //     protected override string RewardDescription =>
 //       "Unlock the northern zone of Ny'alotha, and the next Herald you train will open a temporary portal to Uldum.";
 //
-//     protected override void OnComplete()
+//     protected override void OnComplete(Faction completingFaction)
 //     {
 //       foreach (var unit in _rescueUnits)
 //       {
-//         UnitRescue(unit, Holder.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE));
+//         UnitRescue(unit, completingFaction.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE));
 //       }
 //       RemoveUnit(Herald.Instance.Unit);
 //       BlackEmpirePortal.GoToNext();

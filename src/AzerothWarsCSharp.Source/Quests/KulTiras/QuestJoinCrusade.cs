@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -14,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       "Daelin Proudmoore sees the plight of the Scarlet Crusade. As fellow human survivors of horrible war, they should join forces with Kul'tiras",
       "ReplaceableTextures\\CommandButtons\\BTNDivine_Reckoning_Icon.blp")
     {
-      AddQuestItem(new QuestItemCastSpell(FourCC("A0JB"), true));
+      AddObjective(new ObjectiveCastSpell(FourCC("A0JB"), true));
       ResearchId = QuestResearchId;
     }
 
@@ -23,10 +24,10 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
 
     protected override string RewardDescription => "Unlock Order Inquisitor and join the Scarlet Crusade";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       UnitRemoveAbility(LegendKultiras.LegendAdmiral.Unit, FourCC("A0JB"));
-      Holder.Team = TeamSetup.ScarletCrusade;
+      completingFaction.Team = TeamSetup.ScarletCrusade;
     }
   }
 }

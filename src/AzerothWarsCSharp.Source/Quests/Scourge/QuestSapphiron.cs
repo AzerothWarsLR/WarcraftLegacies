@@ -13,8 +13,8 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     
     public QuestSapphiron(unit sapphiron) : base("Sapphiron", "Kill Sapphiron the Blue Dragon to have Kel'Tuzad reanimate her as a Frost Wyrm. Sapphiron can be found in Northrend.", "ReplaceableTextures\\CommandButtons\\BTNFrostWyrm.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(sapphiron));
-      AddQuestItem(new QuestItemControlLegend(LegendScourge.LegendKelthuzad, false));
+      AddObjective(new ObjectiveKillUnit(sapphiron));
+      AddObjective(new ObjectiveControlLegend(LegendScourge.LegendKelthuzad, false));
     }
     
     protected override string CompletionPopup =>
@@ -22,16 +22,16 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override string RewardDescription => "The demihero Sapphiron";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      CreateUnit(Holder.Player, SapphironId, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()),
+      CreateUnit(completingFaction.Player, SapphironId, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()),
         GetUnitFacing(GetTriggerUnit()));
-      SetPlayerTechResearched(Holder.Player, SapphironResearch, 1);
+      SetPlayerTechResearched(completingFaction.Player, SapphironResearch, 1);
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(SapphironResearch, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(SapphironResearch, Faction.UNLIMITED);
     }
   }
 }

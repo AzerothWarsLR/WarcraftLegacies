@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -18,16 +19,16 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       "Teron Gorefiend can be trained at the altar and learn to train " + I2S(UNIT_LIMIT) + " " +
       GetObjectName(UNITTYPE_ID) + "s from the " + GetObjectName(BUILDING_ID);
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(UNITTYPE_ID, UNIT_LIMIT);
+      whichFaction.ModObjectLimit(UNITTYPE_ID, UNIT_LIMIT);
     }
 
     public QuestFelHordeKillStormwind() : base("Those Who Came Before",
       "During the Second War, the souls of slain Shadow Council members were infused into the corpses of Stormwind knights to create the Death Knights. If Stormwind were to fall again, the unholy order could return.",
       "ReplaceableTextures\\CommandButtons\\BTNAcolyte.blp")
     {
-      AddQuestItem(new QuestItemLegendDead(LegendStormwind.LegendStormwindkeep));
+      AddObjective(new ObjectiveLegendDead(LegendStormwind.LegendStormwindkeep));
       ResearchId = Constants.UPGRADE_R05Z_QUEST_COMPLETED_THOSE_WHO_CAME_BEFORE_FEL_HORDE;
     }
   }

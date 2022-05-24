@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
@@ -13,9 +14,9 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       "The nethergarde fort is holding down the Dark Portal, they will need to be reinforced soon!",
       "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionBarracks.blp")
     {
-      AddQuestItem(new QuestItemLegendInRect(LegendStormwind.LegendVarian, Regions.NethergardeUnlock, "Nethergarde"));
-      AddQuestItem(new QuestItemExpire(1440));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveLegendInRect(LegendStormwind.LegendVarian, Regions.NethergardeUnlock, "Nethergarde"));
+      AddObjective(new ObjectiveExpire(1440));
+      AddObjective(new ObjectiveSelfExists());
     }
 
     protected override string CompletionPopup => "Varian has come to relieve the Nethergarde garrison.";
@@ -40,14 +41,14 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       DestroyGroup(tempGroup);
     }
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       GrantNethergarde(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      GrantNethergarde(Holder.Player);
+      GrantNethergarde(completingFaction.Player);
       StormwindSetup.Stormwind.ModObjectLimit(FourCC("h03F"), 1); //Reginald windsor
     }
   }

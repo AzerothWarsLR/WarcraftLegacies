@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using WCSharp.Shared.Data;
@@ -16,11 +17,11 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       "The planet of Argus is not fully under the control of the Legion. Bring it under control!",
       "ReplaceableTextures\\CommandButtons\\BTNMastersLodge.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnit(Constants.UNIT_H09U_ELEKK_KNIGHT_DRAENEI, Regions.OutlandToArgus.Center)));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BF"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BH"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BG"))));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(Constants.UNIT_H09U_ELEKK_KNIGHT_DRAENEI, Regions.OutlandToArgus.Center)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BF"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BH"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BG"))));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R055");
       _rescueUnits.Add(PreplacedUnitSystem.GetUnit(FourCC("n0BE"), Regions.Eastern_Northrend.Center));
       _rescueUnits.Add(PreplacedUnitSystem.GetUnit(FourCC("n0BE"), Regions.InstanceOutland.Center));
@@ -29,9 +30,9 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
     protected override string RewardDescription => "Enable to research Astral Walk and build a shop";
     protected override string CompletionPopup => "Enable to research Astral Walk and build a shop";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
     }
   }
 }

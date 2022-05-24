@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -19,9 +20,9 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       "Remnants of the ancient Highborne survive within the ruins of Dire Maul. If Feathermoon Stronghold falls, it would become a simple matter to slaughter the Highborne and plunder their artifacts.",
       "ReplaceableTextures\\CommandButtons\\BTNNagaWeaponUp2.blp")
     {
-      AddQuestItem(new QuestItemLegendNotPermanentlyDead(LegendWarsong.LegendStonemaul));
-      AddQuestItem(new QuestItemLegendDead(LegendSentinels.legendFeathermoon));
-      AddQuestItem(new QuestItemAnyUnitInRect(rescueRect, "Dire Maul", true));
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendWarsong.LegendStonemaul));
+      AddObjective(new ObjectiveLegendDead(LegendSentinels.legendFeathermoon));
+      AddObjective(new ObjectiveAnyUnitInRect(rescueRect, "Dire Maul", true));
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
         if (!ControlPointManager.UnitIsControlPoint(unit))
         {
@@ -36,7 +37,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     protected override string CompletionPopup =>
       "The Highborne are no longer implicitly defended by the Night Elven presence at Feathermoon Stronghold. The Horde unleashes their full might against these Night Elven arcanists.";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       SetItemPosition(ArtifactSetup.ArtifactScepterofthequeen?.Item, Regions.HighBourne.Center.X,
         Regions.HighBourne.Center.Y);

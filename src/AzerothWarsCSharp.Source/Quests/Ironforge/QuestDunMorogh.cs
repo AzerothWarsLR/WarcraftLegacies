@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using static War3Api.Common;
@@ -12,10 +13,10 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       "A small troll skirmish is attacking Dun Morogh. Push them back!",
       "ReplaceableTextures\\CommandButtons\\BTNIceTrollShadowPriest.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nith"), Regions.DunmoroghAmbient2.Center))); //Troll
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n014"))));
-      AddQuestItem(new QuestItemExpire(1435));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nith"), Regions.DunmoroghAmbient2.Center))); //Troll
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n014"))));
+      AddObjective(new ObjectiveExpire(1435));
+      AddObjective(new ObjectiveSelfExists());
     }
 
     protected override string CompletionPopup => "The Trolls have been defeated, Dun Morogh will join your cause.";
@@ -40,14 +41,14 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       DestroyGroup(tempGroup);
     }
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       GrantDunMorogh(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      GrantDunMorogh(Holder.Player);
+      GrantDunMorogh(completingFaction.Player);
     }
   }
 }

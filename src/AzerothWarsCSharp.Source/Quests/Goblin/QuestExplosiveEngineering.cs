@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
       "The Goblin chief engineer, Gazlowee, is overseeing the construction of the overseas oil platforms.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp")
     {
-      AddQuestItem(new QuestItemTrain(FourCC("n0AQ"), FourCC("h04Z"), 4));
+      AddObjective(new ObjectiveTrain(FourCC("n0AQ"), FourCC("h04Z"), 4));
       ResearchId = FourCC("R01F");
     }
   }

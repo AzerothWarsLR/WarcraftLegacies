@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -21,13 +22,13 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp")
     {
       _elvenRunestone = elvenRunestone;
-      AddQuestItem(new QuestItemKillUnit(
+      AddObjective(new ObjectiveKillUnit(
         PreplacedUnitSystem.GetUnit(Constants.UNIT_O00O_CHIEFTAN_OF_THE_AMANI_TRIBE_CREEP_ZUL_AMAN)));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01V"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01L"))));
-      AddQuestItem(new QuestItemUpgrade(FourCC("h03T"), FourCC("h033")));
-      AddQuestItem(new QuestItemExpire(1480));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01V"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01L"))));
+      AddObjective(new ObjectiveUpgrade(FourCC("h03T"), FourCC("h033")));
+      AddObjective(new ObjectiveExpire(1480));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R02U_QUEST_COMPLETED_THE_SIEGE_OF_SILVERMOON;
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
@@ -38,25 +39,26 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
         }
     }
 
+    //Todo: bad flavour
     protected override string CompletionPopup =>
-      "Silvermoon siege has been lifted, and its military is now free to assist the " + Holder.Team.Name + ".";
+      "Silvermoon siege has been lifted, and its military is now free to assist the Alliance.";
 
     protected override string RewardDescription =>
       "Control of all units in Silvermoon and enable Anasterian to be trained at the Altar";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      SetPlayerTechResearched(Holder.Player, FourCC("R02U"), 1);
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      SetPlayerTechResearched(completingFaction.Player, FourCC("R02U"), 1);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
       if (UnitAlive(_elvenRunestone))
         SetUnitInvulnerable(LegendQuelthalas.LegendSilvermoon.Unit, true);
       SetUnitInvulnerable(LegendQuelthalas.LegendSunwell.Unit, true);
-      if (GetLocalPlayer() == Holder.Player)
+      if (GetLocalPlayer() == completingFaction.Player)
         PlayThematicMusic("war3mapImported\\SilvermoonTheme.mp3");
     }
   }

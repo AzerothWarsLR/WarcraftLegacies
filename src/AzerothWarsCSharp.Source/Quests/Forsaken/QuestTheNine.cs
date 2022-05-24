@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -12,11 +13,11 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       "Most of the Val'kyr are still in Northrend, under the influence of the Lich King, they need to join the Forsaken cause",
       "ReplaceableTextures\\CommandButtons\\BTNPaleValkyr.blp")
     {
-      AddQuestItem(new QuestItemLegendNotPermanentlyDead(LegendForsaken.LegendSylvanasv));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02J"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03U"))));
-      AddQuestItem(new QuestItemLegendDead(LegendScourge.LegendLichking));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendForsaken.LegendSylvanasv));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02J"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03U"))));
+      AddObjective(new ObjectiveLegendDead(LegendScourge.LegendLichking));
+      AddObjective(new ObjectiveSelfExists());
     }
 
     //Todo: bad flavour
@@ -24,9 +25,9 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     protected override string RewardDescription => "Enable 9 Val'kyr to be raised";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      Holder.ModObjectLimit(Constants.UNIT_U01V_VAL_KYR_FORSAKEN, 5);
+      completingFaction.ModObjectLimit(Constants.UNIT_U01V_VAL_KYR_FORSAKEN, 5);
     }
   }
 }

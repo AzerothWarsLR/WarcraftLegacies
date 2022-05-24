@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       "The Warsong Clan has arrived near Ashenvale and begun threatening the wilds. These invaders must be repelled.",
       "ReplaceableTextures\\CommandButtons\\BTNRaider.blp")
     {
-      AddQuestItem(new QuestItemLegendDead(LegendWarsong.LegendStonemaul));
+      AddObjective(new ObjectiveLegendDead(LegendWarsong.LegendStonemaul));
       ResearchId = Constants.UPGRADE_R007_QUEST_COMPLETED_GREEN_SKINNED_BRUTES_SENTINELS;
     }
     
@@ -21,14 +21,14 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
 
     protected override string RewardDescription => "Enable the Watcher Bastion to be built";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      SetPlayerTechResearched(Holder.Player, ResearchId, 1);
+      SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(ResearchId, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);
     }
   }
 }

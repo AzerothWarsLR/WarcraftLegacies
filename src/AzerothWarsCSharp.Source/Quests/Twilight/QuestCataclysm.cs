@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       "The Old God's will is finnicky, you are not privy to when their plan will be set in motion, but when it is, your cult will be ready to welcome it.",
       "ReplaceableTextures\\CommandButtons\\BTNDeathwing.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendTwilight.LEGEND_DEATHWING, false));
+      AddObjective(new ObjectiveControlLegend(LegendTwilight.LEGEND_DEATHWING, false));
       _robogoblin = PreplacedUnitSystem.GetUnit(FourCC("h02U"));
       Global = true;
     }
@@ -28,17 +28,17 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
     protected override string RewardDescription =>
       "Cultists all over the world join your cause actively, Deathwing as a super demihero and the 2 elemental ascendant heroes.";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      SetPlayerTechResearched(Holder.Player, CataclysmResearch, 1);
+      SetPlayerTechResearched(completingFaction.Player, CataclysmResearch, 1);
       PlayThematicMusic("war3mapImported\\TwilightTheme.mp3");
       SetPlayerTechResearched(CthunSetup.FactionCthun.Player, FourCC("R07D"), 1);
       IssueImmediateOrder(_robogoblin, "unrobogoblin");
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(CataclysmResearch, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(CataclysmResearch, Faction.UNLIMITED);
     }
   }
 }

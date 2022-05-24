@@ -24,9 +24,9 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       "The Elves of Quel'thalas have a deep reliance on the Sunwell's magic. Without it, they would have to turn to darker magicks to sate themselves.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroBloodElfPrince.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendDraktharonkeep, false));
-      AddQuestItem(new QuestItemControlLegend(LegendQuelthalas.LegendAnasterian, true));
-      AddQuestItem(new QuestItemControlLegend(LegendQuelthalas.LegendSunwell, true));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendDraktharonkeep, false));
+      AddObjective(new ObjectiveControlLegend(LegendQuelthalas.LegendAnasterian, true));
+      AddObjective(new ObjectiveControlLegend(LegendQuelthalas.LegendSunwell, true));
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(secondChanceRect).EmptyToList())
       {
@@ -51,36 +51,36 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       "You lose everything you control, but you gain Prince Kael'thas at the Dalaran Dungeons, and you can train " +
       GetObjectName(UnittypeId) + "s from the Consortium";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      SetPlayerTechResearched(Holder.Player, QuestResearchId, 1);
-      DisplayUnitTypeAcquired(Holder.Player, UnittypeId,
+      SetPlayerTechResearched(completingFaction.Player, QuestResearchId, 1);
+      DisplayUnitTypeAcquired(completingFaction.Player, UnittypeId,
         "You can now train " + GetObjectName(UnittypeId) + "s from the " + GetObjectName(BuildingId) + ".");
     }
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       LegendQuelthalas.LegendKael.StartingXp = GetHeroXP(LegendQuelthalas.LegendAnasterian.Unit);
-      Holder.Obliterate();
-      if (Holder.ScoreStatus != ScoreStatus.Defeated)
+      completingFaction.Obliterate();
+      if (completingFaction.ScoreStatus != ScoreStatus.Defeated)
       {
-        foreach (var unit in _secondChanceUnits) unit.Rescue(Holder.Player);
+        foreach (var unit in _secondChanceUnits) unit.Rescue(completingFaction.Player);
 
-        SetPlayerTechResearched(Holder.Player, QuestResearchId, 1);
-        LegendQuelthalas.LegendKael.Spawn(Holder.Player, -11410, 21975, 110);
+        SetPlayerTechResearched(completingFaction.Player, QuestResearchId, 1);
+        LegendQuelthalas.LegendKael.Spawn(completingFaction.Player, -11410, 21975, 110);
         UnitAddItem(LegendQuelthalas.LegendKael.Unit,
           CreateItem(FourCC("I00M"), GetUnitX(LegendQuelthalas.LegendKael.Unit),
             GetUnitY(LegendQuelthalas.LegendKael.Unit)));
-        if (GetLocalPlayer() == Holder.Player)
+        if (GetLocalPlayer() == completingFaction.Player)
           SetCameraPosition(Regions.BloodElfSecondChanceSpawn.Center.X, Regions.BloodElfSecondChanceSpawn.Center.Y);
       }
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(QuestResearchId, Faction.UNLIMITED);
-      Holder.ModObjectLimit(UnittypeId, 6);
-      Holder.ModObjectLimit(HeroId, 1);
+      whichFaction.ModObjectLimit(QuestResearchId, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(UnittypeId, 6);
+      whichFaction.ModObjectLimit(HeroId, 1);
     }
   }
 }

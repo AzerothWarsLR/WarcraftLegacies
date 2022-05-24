@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -18,11 +19,12 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp")
     {
       _utgardeKeep = utgardeKeep;
-      AddQuestItem(new QuestItemControlLegend(LegendLordaeron.LegendArthas, false));
-      AddQuestItem(new QuestItemLegendLevel(LegendLordaeron.LegendArthas, 12));
-      AddQuestItem(new QuestItemResearch(FourCC("R07X"), FourCC("u000")));
-      AddQuestItem(new QuestItemLegendInRect(LegendLordaeron.LegendArthas, Regions.LichKing, "Icecrown Citadel"));
+      AddObjective(new ObjectiveControlLegend(LegendLordaeron.LegendArthas, false));
+      AddObjective(new ObjectiveLegendLevel(LegendLordaeron.LegendArthas, 12));
+      AddObjective(new ObjectiveResearch(FourCC("R07X"), FourCC("u000")));
+      AddObjective(new ObjectiveLegendInRect(LegendLordaeron.LegendArthas, Regions.LichKing, "Icecrown Citadel"));
       Global = true;
+      Required = true;
     }
 
     protected override string CompletionPopup =>
@@ -31,7 +33,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     protected override string RewardDescription =>
       "Arthas becomes the Lich King, but the Frozen Throne loses its abilities";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       PlayThematicMusic("Sound\\Music\\mp3Music\\LichKingTheme.mp3");
       LegendScourge.LegendLichking.DeathMessage =
@@ -54,9 +56,9 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       SetUnitState(LegendLordaeron.LegendArthas.Unit, UNIT_STATE_MANA,
         GetUnitState(LegendLordaeron.LegendArthas.Unit, UNIT_STATE_MAX_MANA));
       LegendLordaeron.LegendArthas.Unit.AddItemSafe(ArtifactSetup.ArtifactHelmofdomination.Item);
-      Holder.Team = TeamSetup.Scourge;
+      completingFaction.Team = TeamSetup.Scourge;
       _utgardeKeep.Rescue(ScourgeSetup.FactionScourge.Player);
-      SetPlayerState(Holder.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
+      SetPlayerState(completingFaction.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
     }
   }
 }

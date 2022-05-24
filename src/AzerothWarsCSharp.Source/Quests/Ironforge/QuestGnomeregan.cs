@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -17,8 +18,8 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       "The people of Gnomeregan have long been unable to assist the Alliance in its wars due an infestation of troggs and Ice Trolls. Resolve their conflicts for them to gain their services.",
       "ReplaceableTextures\\CommandButtons\\BTNFlyingMachine.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nitw"), Regions.Gnomergan.Center))); //Ice Troll Warlord
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nitw"), Regions.Gnomergan.Center))); //Ice Troll Warlord
+      AddObjective(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
@@ -28,24 +29,24 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
     }
 
     protected override string CompletionPopup =>
-      "Gnomeregan has been literated, and its military is now free to assist the " + Holder.Team.Name + ".";
+      "Gnomeregan has been literated, and its military is now free to assist Ironforge.";
 
     protected override string RewardDescription => "Control of all units in Gnomeregan";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      SetPlayerTechResearched(Holder.Player, FourCC("R05Q"), 1);
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      SetPlayerTechResearched(completingFaction.Player, FourCC("R05Q"), 1);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(QuestResearchId, 1);
+      whichFaction.ModObjectLimit(QuestResearchId, 1);
     }
   }
 }
