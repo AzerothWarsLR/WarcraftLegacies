@@ -1,5 +1,8 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 using Environment = AzerothWarsCSharp.MacroTools.Libraries.Environment;
@@ -15,9 +18,16 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
 
     private QuestItemData? _parentQuestItem;
     private QuestProgress _progress = QuestProgress.Incomplete;
-
-    protected QuestItemData()
+    private readonly List<Faction> _eligibleFactions;
+    
+    /// <summary>
+    /// An arbitrary objective that can be completed or failed.
+    /// </summary>
+    /// <param name="eligibleFactions">A set of <see cref="Faction"/>s that can contribute
+    /// to the completion of the <see cref="QuestItemData"/>.</param>
+    protected QuestItemData(IEnumerable<Faction> eligibleFactions)
     {
+      _eligibleFactions = eligibleFactions.ToList();
       OverheadEffectPath = "Abilities\\Spells\\Other\\TalkToMe\\TalkToMe";
     }
 
@@ -56,9 +66,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     ///   Whether or not this can be seen as a bullet point in the quest log.
     /// </summary>
     public bool ShowsInQuestLog { get; protected init; } = true;
-
-    protected Faction Holder => ParentQuest != null ? ParentQuest.Holder : _parentQuestItem?.Holder;
-
+    
     protected bool ProgressLocked
     {
       get
@@ -81,14 +89,16 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
           if (value == QuestProgress.Incomplete)
           {
             QuestItemSetCompleted(QuestItem, false);
-            if (GetLocalPlayer() == Holder.Player) ShowLocal();
+            if (_eligibleFactions.ContainsPlayer(GetLocalPlayer())) 
+              ShowLocal();
 
             ShowSync();
           }
           else if (value == QuestProgress.Complete)
           {
             QuestItemSetCompleted(QuestItem, true);
-            if (GetLocalPlayer() == Holder.Player) HideLocal();
+            if (_eligibleFactions.ContainsPlayer(GetLocalPlayer())) 
+              HideLocal();
 
             HideSync();
           }
@@ -154,15 +164,15 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         string effectPath;
         if (MapEffectPath != null && _mapEffect == null)
         {
-          effectPath = GetLocalPlayer() == Holder.Player ? MapEffectPath : "";
+          effectPath = _eligibleFactions.ContainsPlayer(GetLocalPlayer()) ? MapEffectPath : "";
           _mapEffect = AddSpecialEffect(effectPath, Position.X, Position.Y);
-          BlzSetSpecialEffectColorByPlayer(_mapEffect, Holder.Player);
+          BlzSetSpecialEffectColorByPlayer(_mapEffect, _eligibleFactions.First().Player);
           BlzSetSpecialEffectHeight(_mapEffect, 100 + Environment.GetPositionZ(Position.X, Position.Y));
         }
 
         if (OverheadEffectPath != null && _overheadEffect == null && TargetWidget != null)
         {
-          effectPath = GetLocalPlayer() == Holder.Player ? OverheadEffectPath : "";
+          effectPath = _eligibleFactions.ContainsPlayer(GetLocalPlayer()) ? OverheadEffectPath : "";
           _overheadEffect = AddSpecialEffectTarget(effectPath, TargetWidget, "overhead");
         }
       }
