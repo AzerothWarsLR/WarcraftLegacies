@@ -4,7 +4,7 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public sealed class ObjectiveAnyUnitInRect : Objective
+  public sealed class ObjectiveAnyUnitInRect : FactionObjective
   {
     private static readonly trigger EntersRectTrig = CreateTrigger();
     private static readonly trigger ExitsRectTrig = CreateTrigger();
@@ -43,7 +43,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     private bool IsValidUnitInRect()
     {
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(_targetRect).EmptyToList())
-        if (GetOwningPlayer(unit) == Holder.Player && UnitAlive(unit) &&
+        if (EligibleFactions.Contains(GetOwningPlayer(unit)) && UnitAlive(unit) &&
             (IsUnitType(unit, UNIT_TYPE_HERO) || !_heroOnly))
           return true;
       return false;
@@ -52,7 +52,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     private void OnRegionEnter()
     {
       var triggerUnit = GetTriggerUnit();
-      if (GetOwningPlayer(triggerUnit) == Holder.Player && UnitAlive(triggerUnit) &&
+      if (EligibleFactions.Contains(GetOwningPlayer(triggerUnit)) && UnitAlive(triggerUnit) &&
         (IsUnitType(triggerUnit, UNIT_TYPE_HERO) || !_heroOnly) || IsValidUnitInRect())
       {
         TriggerUnit = triggerUnit;

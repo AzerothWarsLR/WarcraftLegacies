@@ -381,6 +381,15 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         questData.ShowLocal();
       questData.ShowSync();
       questData.ProgressChanged += OnQuestProgressChanged;
+
+      foreach (var objective in questData.Objectives)
+      {
+        if (objective is FactionObjective factionObjective)
+        {
+          factionObjective.AddEligibleFaction(this);
+        }
+      }
+      
       return questData;
     }
 

@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
   /// <summary>
   ///   Completes when a unit casts a specific spell.
   /// </summary>
-  public sealed class ObjectiveCastSpell : Objective
+  public sealed class ObjectiveCastSpell : FactionObjective
   {
     private readonly bool _holderOnly;
 
@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     private void OnCast()
     {
-      if (Progress != QuestProgress.Complete && (GetOwningPlayer(GetTriggerUnit()) == Holder.Player || !_holderOnly))
+      if (Progress != QuestProgress.Complete && (!_holderOnly || EligibleFactions.Contains(GetOwningPlayer(GetTriggerUnit()))))
       {
         Caster = GetTriggerUnit();
         Progress = QuestProgress.Complete;

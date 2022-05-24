@@ -28,8 +28,8 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     private void OnAnyUnitTrain()
     {
-      if (!ProgressLocked && _target.UnitType == GetUnitTypeId(GetTriggerUnit()) &&
-          Holder.Player == GetOwningPlayer(GetTrainedUnit())) Progress = QuestProgress.Complete;
+      if (!ProgressLocked && _target.UnitType == GetUnitTypeId(GetTriggerUnit()))
+        Progress = QuestProgress.Complete;
     }
 
     internal override void OnAdd()

@@ -7,11 +7,11 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
   /// <summary>
   ///   Completes when the quest holder picks up a particular <see cref="Artifact" />.
   /// </summary>
-  public sealed class ObjectiveAcquireArtifact : Objective
+  public sealed class ObjectiveAcquireArtifact : FactionObjective
   {
     private readonly Artifact _target;
 
-    public ObjectiveAcquireArtifact(Artifact target)
+    public ObjectiveAcquireArtifact(Artifact target) : base()
     {
       Description = "Acquire " + GetItemName(target.Item);
       _target = target;
@@ -20,13 +20,13 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     internal override void OnAdd()
     {
-      if (_target.OwningPlayer == Holder.Player) 
+      if (EligibleFactions.Contains(_target.OwningPlayer)) 
         Progress = QuestProgress.Complete;
     }
 
     private void OnPickedUp(object? sender, Artifact artifact)
     {
-      Progress = _target.OwningPlayer == Holder.Player ? QuestProgress.Complete : QuestProgress.Incomplete;
+      Progress = EligibleFactions.Contains(_target.OwningPlayer) ? QuestProgress.Complete : QuestProgress.Incomplete;
     }
   }
 }

@@ -13,9 +13,10 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       Progress = QuestProgress.Complete;
     }
 
-    private void OnQuestProgressChanged(object? sender, QuestData questData)
+    private void OnQuestProgressChanged(object? sender, QuestProgressChangedEventArgs args)
     {
-      if (questData.Progress == QuestProgress.Complete) Progress = QuestProgress.Failed;
+      if (args.Quest.Progress == QuestProgress.Complete) 
+        Progress = QuestProgress.Failed;
     }
   }
 }

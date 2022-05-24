@@ -8,9 +8,9 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       target.ProgressChanged += OnQuestProgressChanged;
     }
 
-    private void OnQuestProgressChanged(object? sender, QuestData questData)
+    private void OnQuestProgressChanged(object? sender, QuestProgressChangedEventArgs args)
     {
-      Progress = questData.Progress switch
+      Progress = args.Quest.Progress switch
       {
         QuestProgress.Complete => QuestProgress.Complete,
         QuestProgress.Failed => QuestProgress.Failed,

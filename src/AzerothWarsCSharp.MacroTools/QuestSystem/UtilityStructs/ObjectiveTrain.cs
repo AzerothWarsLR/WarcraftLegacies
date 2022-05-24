@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
   /// <summary>
   /// Completes when the holder has trained a specific number of a specific unit type.
   /// </summary>
-  public sealed class ObjectiveTrain : Objective
+  public sealed class ObjectiveTrain : FactionObjective
   {
     private readonly int _objectId;
     private readonly int _targetTrainCount;
@@ -44,7 +44,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
         return;
       }
       
-      if (!ProgressLocked && Holder.Player == GetOwningPlayer(GetTrainedUnit()))
+      if (!ProgressLocked && EligibleFactions.Contains(GetOwningPlayer(GetTrainedUnit())))
       {
         CurrentTrainCount = _currentTrainCount + 1;
         if (_currentTrainCount == _targetTrainCount) 

@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
   /// <summary>
   /// Completes when the quest holder has killed a certain number of units of a certain type.
   /// </summary>
-  public class ObjectiveKillXUnit : Objective
+  public class ObjectiveKillXUnit : FactionObjective
   {
     private readonly int _objectId;
     private int _currentKillXUnitCount;

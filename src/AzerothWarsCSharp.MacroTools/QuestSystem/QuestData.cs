@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
 {
   public abstract class QuestData
   {
-    private readonly List<Objective> _questItems = new();
+    internal readonly List<Objective> Objectives = new();
 
     private QuestProgress _progress = QuestProgress.Incomplete;
 
@@ -106,7 +106,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       if (ResearchId != 0)
         faction.ModObjectLimit(ResearchId, 1);
       OnAdd(faction);
-      foreach (var questItem in _questItems)
+      foreach (var questItem in Objectives)
         questItem.OnAdd();
       RefreshDescription();
     }
@@ -152,14 +152,14 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
 
       //If the quest is incomplete, show its markers. Otherwise, hide them.
       if (Progress != QuestProgress.Incomplete)
-        foreach (var questItem in _questItems)
+        foreach (var questItem in Objectives)
         {
           if (GetLocalPlayer() == whichFaction.Player) questItem.HideLocal();
 
           questItem.HideSync();
         }
       else
-        foreach (var questItem in _questItems)
+        foreach (var questItem in Objectives)
         {
           if (GetLocalPlayer() == whichFaction.Player) questItem.ShowLocal();
 
@@ -199,7 +199,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     internal void ShowLocal()
     {
       QuestSetEnabled(Quest, true);
-      foreach (var questItem in _questItems) questItem.ShowLocal();
+      foreach (var questItem in Objectives) questItem.ShowLocal();
     }
 
     /// <summary>
@@ -207,7 +207,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// </summary>
     internal void ShowSync()
     {
-      foreach (var questItem in _questItems) questItem.ShowSync();
+      foreach (var questItem in Objectives) questItem.ShowSync();
     }
 
     /// <summary>
@@ -216,7 +216,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     internal void HideLocal()
     {
       QuestSetEnabled(Quest, false);
-      foreach (var questItem in _questItems) questItem.HideLocal();
+      foreach (var questItem in Objectives) questItem.HideLocal();
     }
 
     /// <summary>
@@ -224,7 +224,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// </summary>
     internal void HideSync()
     {
-      foreach (var questItem in _questItems) questItem.HideSync();
+      foreach (var questItem in Objectives) questItem.HideSync();
     }
 
     /// <summary>
@@ -255,7 +255,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         else
           display = display + "\n|cffffcc00QUEST FAILED - " + Title + "|r\n" + Description + "\n";
 
-        foreach (var questItem in _questItems)
+        foreach (var questItem in Objectives)
           if (questItem.ShowsInQuestLog)
             display = questItem.Progress switch
             {
@@ -275,7 +275,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       if (GetLocalPlayer() == faction.Player)
       {
         display = display + "\n|cffffcc00QUEST COMPLETED - " + Title + "|r\n" + CompletionPopup + "\n";
-        foreach (var questItem in _questItems)
+        foreach (var questItem in Objectives)
           if (questItem.ShowsInQuestLog)
             display = display + " - |cff808080" + questItem.Description + " (Completed)|r\n";
 
@@ -290,7 +290,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       if (GetLocalPlayer() == faction.Player)
       {
         display = display + "\n|cffffcc00QUEST DISCOVERED - " + Title + "|r\n" + Description + "\n";
-        foreach (var questItem in _questItems)
+        foreach (var questItem in Objectives)
           if (questItem.ShowsInQuestLog)
           {
             if (questItem.Progress == QuestProgress.Complete)
@@ -310,7 +310,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       var anyFailed = false;
       var anyUndiscovered = false;
 
-      foreach (var questItem in _questItems)
+      foreach (var questItem in Objectives)
         if (questItem.Progress != QuestProgress.Complete)
         {
           allComplete = false;
@@ -334,7 +334,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
 
     public void AddQuestItem(Objective questItem)
     {
-      _questItems.Add(questItem);
+      Objectives.Add(questItem);
       if (questItem.ShowsInQuestLog)
       {
         questItem.QuestItem = QuestCreateItem(Quest);

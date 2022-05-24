@@ -4,7 +4,7 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public sealed class ObjectiveKillUnit : Objective
+  public sealed class ObjectiveKillUnit : FactionObjective
   {
     public ObjectiveKillUnit(unit unitToKill)
     {
@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     private void OnUnitDeath()
     {
-      Progress = Holder.Team.ContainsPlayer(GetOwningPlayer(GetKillingUnit()))
+      Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(GetKillingUnit().GetOwningPlayer())
         ? QuestProgress.Complete
         : QuestProgress.Failed;
     }

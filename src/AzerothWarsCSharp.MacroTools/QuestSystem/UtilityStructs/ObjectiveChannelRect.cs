@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
   /// <summary>
   /// Bring a unit to a location, where they will channel for some period of time. When it's over, the <see cref="Objective"/> is completed.
   /// </summary>
-  public sealed class ObjectiveChannelRect : Objective
+  public sealed class ObjectiveChannelRect : FactionObjective
   {
     private const string
       TARGET_EFFECT =
@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     {
       var whichUnit = GetEnteringUnit();
 
-      if (GetOwningPlayer(whichUnit) == Holder.Player && UnitAlive(whichUnit) &&
+      if (EligibleFactions.Contains(GetOwningPlayer(whichUnit)) && UnitAlive(whichUnit) &&
           Legend.GetFromUnit(GetTriggerUnit()) == _targetLegend && _channel == null &&
           Progress == QuestProgress.Incomplete)
       {

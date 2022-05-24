@@ -4,7 +4,7 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public sealed class ObjectiveControlUnit : Objective
+  public sealed class ObjectiveControlUnit : FactionObjective
   {
     private readonly unit _target;
 
@@ -22,7 +22,8 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     private void OnUnitChangeOwner()
     {
-      if (Holder.Team.ContainsPlayer(GetOwningPlayer(_target))) Progress = QuestProgress.Complete;
+      if (IsPlayerOnSameTeamAsAnyEligibleFaction(_target.GetOwningPlayer()))
+        Progress = QuestProgress.Complete;
     }
   }
 }

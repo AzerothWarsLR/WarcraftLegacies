@@ -1,8 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
-using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 using Environment = AzerothWarsCSharp.MacroTools.Libraries.Environment;
@@ -18,16 +15,12 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
 
     private Objective? _parentQuestItem;
     private QuestProgress _progress = QuestProgress.Incomplete;
-    private readonly List<Faction> _eligibleFactions;
-    
+
     /// <summary>
     /// An arbitrary objective that can be completed or failed.
     /// </summary>
-    /// <param name="eligibleFactions">A set of <see cref="Faction"/>s that can contribute
-    /// to the completion of the <see cref="Objective"/>.</param>
-    protected Objective(IEnumerable<Faction> eligibleFactions)
+    protected Objective()
     {
-      _eligibleFactions = eligibleFactions.ToList();
       OverheadEffectPath = "Abilities\\Spells\\Other\\TalkToMe\\TalkToMe";
     }
 

@@ -10,6 +10,11 @@ namespace AzerothWarsCSharp.MacroTools
   {
     private const float HERO_DROP_DIST = 50; //The radius in which heroes spread out items when they drop them
 
+    public static player GetOwningPlayer(this unit unit)
+    {
+      return War3Api.Common.GetOwningPlayer(unit);
+    }
+    
     /// <summary>
     ///   Sets the Waygate's destination to the target point.
     ///   Blindly assumes that the unit is a Waygate.
