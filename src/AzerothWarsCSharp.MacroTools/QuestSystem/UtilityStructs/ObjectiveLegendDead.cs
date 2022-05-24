@@ -4,11 +4,11 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemLegendDead : QuestItemData
+  public class ObjectiveLegendDead : Objective
   {
     private readonly Legend _target;
 
-    public QuestItemLegendDead(Legend target)
+    public ObjectiveLegendDead(Legend target)
     {
       _target = target;
       TargetWidget = target.Unit;

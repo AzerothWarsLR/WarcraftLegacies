@@ -4,7 +4,7 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public sealed class QuestItemBuild : QuestItemData
+  public sealed class ObjectiveBuild : Objective
   {
     private readonly int _objectId;
     private int _currentBuildCount;
@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       }
     }
 
-    public QuestItemBuild(int objectId, int targetBuildCount)
+    public ObjectiveBuild(int objectId, int targetBuildCount)
     {
       _objectId = objectId;
       _targetBuildCount = targetBuildCount;

@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
 {
   public abstract class QuestData
   {
-    private readonly List<QuestItemData> _questItems = new();
+    private readonly List<Objective> _questItems = new();
 
     private QuestProgress _progress = QuestProgress.Incomplete;
 
@@ -304,7 +304,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       }
     }
 
-    private void OnQuestItemProgressChanged(object? sender, QuestItemData questItemData)
+    private void OnQuestItemProgressChanged(object? sender, Objective objective)
     {
       var allComplete = true;
       var anyFailed = false;
@@ -332,7 +332,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         Progress = QuestProgress.Incomplete;
     }
 
-    public void AddQuestItem(QuestItemData questItem)
+    public void AddQuestItem(Objective questItem)
     {
       _questItems.Add(questItem);
       if (questItem.ShowsInQuestLog)

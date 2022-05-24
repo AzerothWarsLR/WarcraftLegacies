@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
   /// <summary>
   /// Completes when the quest holder has killed a certain number of units of a certain type.
   /// </summary>
-  public class QuestItemKillXUnit : QuestItemData
+  public class ObjectiveKillXUnit : Objective
   {
     private readonly int _objectId;
     private int _currentKillXUnitCount;
@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       }
     }
 
-    public QuestItemKillXUnit(int objectId, int targetKillXUnitCount)
+    public ObjectiveKillXUnit(int objectId, int targetKillXUnitCount)
     {
       _objectId = objectId;
       _targetKillXUnitCount = targetKillXUnitCount;

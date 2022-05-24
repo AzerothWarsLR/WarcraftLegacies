@@ -4,9 +4,9 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public sealed class QuestItemKillUnit : QuestItemData
+  public sealed class ObjectiveKillUnit : Objective
   {
-    public QuestItemKillUnit(unit unitToKill)
+    public ObjectiveKillUnit(unit unitToKill)
     {
       trigger trig = CreateTrigger();
       TriggerRegisterUnitEvent(trig, unitToKill, EVENT_UNIT_DEATH);

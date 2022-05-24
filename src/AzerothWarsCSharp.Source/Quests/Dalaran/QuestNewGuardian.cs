@@ -14,8 +14,8 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "Medivh's death left Azeroth without a Guardian. The spell book he left behind could be used to empower a new one.",
       "ReplaceableTextures\\CommandButtons\\BTNAstral Blessing.blp")
     {
-      AddQuestItem(new QuestItemLegendLevel(LegendDalaran.LegendJaina, 15));
-      AddQuestItem(new QuestItemLegendHasArtifact(LegendDalaran.LegendJaina, ArtifactSetup.ArtifactBookofmedivh));
+      AddQuestItem(new ObjectiveLegendLevel(LegendDalaran.LegendJaina, 15));
+      AddQuestItem(new ObjectiveLegendHasArtifact(LegendDalaran.LegendJaina, ArtifactSetup.ArtifactBookofmedivh));
     }
 
     protected override string CompletionPopup =>

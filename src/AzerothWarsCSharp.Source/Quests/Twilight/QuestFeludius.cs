@@ -12,8 +12,8 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       "Bringing the Legendary Sword, Thunderfury, to Uldum will grant us the favors of Al'akir, the great Wind Elemental Lord",
       "ReplaceableTextures\\CommandButtons\\BTNfuryoftheair.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BD"))));
-      AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.ArtifactThunderfury, Regions.UldumAmbiance, "Uldum"));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BD"))));
+      AddQuestItem(new ObjectiveArtifactInRect(ArtifactSetup.ArtifactThunderfury, Regions.UldumAmbiance, "Uldum"));
       ResearchId = FourCC("R07T");
     }
 

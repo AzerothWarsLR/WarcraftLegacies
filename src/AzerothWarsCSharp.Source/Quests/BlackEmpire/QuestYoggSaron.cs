@@ -13,9 +13,9 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       "Yogg-Saron was imprisoned beneath Northrend by the Titans countless millenia ago. ",
       "ReplaceableTextures\\CommandButtons\\BTNYogg-saronIcon.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n053"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00I"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02S"))));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n053"))));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00I"))));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02S"))));
       ResearchId = FourCC("R07R");
     }
 

@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "The spire of Medivh stands mysteriously idle. Dalaran could make use of its grand magicks.",
       "ReplaceableTextures\\CommandButtons\\BTNTomeBrown.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendKarazhan, false));
+      AddQuestItem(new ObjectiveControlLegend(LegendNeutral.LegendKarazhan, false));
     }
     
     protected override string CompletionPopup => "Karazhan has been captured. " + Holder.Name +

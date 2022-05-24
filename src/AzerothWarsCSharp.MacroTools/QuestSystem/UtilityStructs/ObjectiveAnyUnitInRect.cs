@@ -4,14 +4,14 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public sealed class QuestItemAnyUnitInRect : QuestItemData
+  public sealed class ObjectiveAnyUnitInRect : Objective
   {
     private static readonly trigger EntersRectTrig = CreateTrigger();
     private static readonly trigger ExitsRectTrig = CreateTrigger();
     private readonly bool _heroOnly;
     private readonly rect _targetRect;
 
-    public QuestItemAnyUnitInRect(Rectangle targetRect, string rectName, bool heroOnly)
+    public ObjectiveAnyUnitInRect(Rectangle targetRect, string rectName, bool heroOnly)
     {
       _targetRect = targetRect.Rect;
       if (heroOnly)

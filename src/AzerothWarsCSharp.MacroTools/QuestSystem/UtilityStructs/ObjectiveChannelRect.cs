@@ -8,9 +8,9 @@ using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
   /// <summary>
-  /// Bring a unit to a location, where they will channel for some period of time. When it's over, the <see cref="QuestItemData"/> is completed.
+  /// Bring a unit to a location, where they will channel for some period of time. When it's over, the <see cref="Objective"/> is completed.
   /// </summary>
-  public sealed class QuestItemChannelRect : QuestItemData
+  public sealed class ObjectiveChannelRect : Objective
   {
     private const string
       TARGET_EFFECT =
@@ -57,7 +57,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       channel.Dispose();
     }
 
-    public QuestItemChannelRect(Rectangle targetRect, string rectName, Legend whichLegend, float duration, float facing)
+    public ObjectiveChannelRect(Rectangle targetRect, string rectName, Legend whichLegend, float duration, float facing)
     {
       _targetRect = targetRect.Rect;
       region target = RectToRegion(_targetRect);

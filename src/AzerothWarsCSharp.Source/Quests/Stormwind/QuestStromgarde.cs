@@ -14,16 +14,16 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
   public sealed class QuestStromgarde : QuestData
   {
     private static readonly int HeroId = FourCC("H00Z");
-    private readonly QuestItemAnyUnitInRect _questItemAnyUnitInRect;
+    private readonly ObjectiveAnyUnitInRect _objectiveAnyUnitInRect;
     private readonly List<unit> _rescueUnits = new();
 
     public QuestStromgarde(Rectangle rescueRect) : base("Stromgarde",
       "Although Stromgarde's strength has dwindled since the days of the Arathorian Empire, it remains a significant bastion of humanity. They could be convinced to mobilize their forces for Stormwind.",
       "ReplaceableTextures\\CommandButtons\\BTNTheCaptain.blp")
     {
-      _questItemAnyUnitInRect = new QuestItemAnyUnitInRect(Regions.Stromgarde, "Stromgarde", true);
-      AddQuestItem(_questItemAnyUnitInRect);
-      AddQuestItem(new QuestItemSelfExists());
+      _objectiveAnyUnitInRect = new ObjectiveAnyUnitInRect(Regions.Stromgarde, "Stromgarde", true);
+      AddQuestItem(_objectiveAnyUnitInRect);
+      AddQuestItem(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R01M_QUEST_COMPLETED_STROMGARDE_STORMWIND;
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
@@ -47,7 +47,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     protected override void OnComplete()
     {
-      _questItemAnyUnitInRect.TriggerUnit.AddItemSafe(ArtifactSetup.ArtifactTrolkalar.Item);
+      _objectiveAnyUnitInRect.TriggerUnit.AddItemSafe(ArtifactSetup.ArtifactTrolkalar.Item);
       SetPlayerTechResearched(Holder.Player, ResearchId, 1);
       foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
     }

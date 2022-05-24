@@ -19,10 +19,10 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       QuestSouthshore questSouthshore =
         new(Regions.SouthshoreUnlock, PreplacedUnitSystem.GetUnit(FourCC("nmrm"), Regions.SouthshoreUnlock.Center));
 
-      newGuardian.AddQuestItem(new QuestItemDontCompleteQuest(theNexus));
-      crystalGolem.AddQuestItem(new QuestItemDontCompleteQuest(theNexus));
-      fallenGuardian.AddQuestItem(new QuestItemDontCompleteQuest(theNexus));
-      theNexus.AddQuestItem(new QuestItemDontCompleteQuest(newGuardian));
+      newGuardian.AddQuestItem(new ObjectiveDontCompleteQuest(theNexus));
+      crystalGolem.AddQuestItem(new ObjectiveDontCompleteQuest(theNexus));
+      fallenGuardian.AddQuestItem(new ObjectiveDontCompleteQuest(theNexus));
+      theNexus.AddQuestItem(new ObjectiveDontCompleteQuest(newGuardian));
 
       dalaran.AddQuest(questSouthshore);
       dalaran.StartingQuest = questSouthshore;

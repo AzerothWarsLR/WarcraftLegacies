@@ -5,11 +5,11 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public sealed class QuestItemControlPoint : QuestItemData
+  public sealed class ObjectiveControlPoint : Objective
   {
     private readonly ControlPoint _target;
 
-    public QuestItemControlPoint(ControlPoint target)
+    public ObjectiveControlPoint(ControlPoint target)
     {
       _target = target;
       Description = "Your team controls " + target.Name;

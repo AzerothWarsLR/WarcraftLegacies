@@ -14,12 +14,12 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       "In order to gain the power he craves, Illidan must plunder the hidden Aetheneum library for its secrets.",
       "ReplaceableTextures\\CommandButtons\\BTNDoomlord.blp")
     {
-      this.AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.Dire_Maul_Entrance, "Feralas"));
-      this.AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.AethneumLibraryEntrance,
+      this.AddQuestItem(new ObjectiveLegendReachRect(LegendNaga.LegendIllidan, Regions.Dire_Maul_Entrance, "Feralas"));
+      this.AddQuestItem(new ObjectiveLegendReachRect(LegendNaga.LegendIllidan, Regions.AethneumLibraryEntrance,
         "the Aetheneum Library"));
-      this.AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.ImmolFight,
+      this.AddQuestItem(new ObjectiveLegendReachRect(LegendNaga.LegendIllidan, Regions.ImmolFight,
         "Immol'thar's Lair"));
-      AddQuestItem(new QuestItemLegendDead(LegendNeutral.LegendImmolthar));
+      AddQuestItem(new ObjectiveLegendDead(LegendNeutral.LegendImmolthar));
       _questToDiscover = questToDiscover;
       ;
       ;

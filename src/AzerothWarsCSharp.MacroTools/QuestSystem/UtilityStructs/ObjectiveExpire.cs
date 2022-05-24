@@ -5,11 +5,11 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
   /// <summary>
   ///   Starts completed, then fails when the specified amount of time has elapsed.
   /// </summary>
-  public class QuestItemExpire : QuestItemData
+  public class ObjectiveExpire : Objective
   {
     private readonly timer _timer;
 
-    public QuestItemExpire(int duration)
+    public ObjectiveExpire(int duration)
     {
       Description = "Complete this quest before " + I2S(duration) + " seconds have elapsed";
       _timer = CreateTimer();

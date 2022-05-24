@@ -21,12 +21,12 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       "The lands of Lordaeron are overrun by corruption. Everything must be purged!",
       "ReplaceableTextures\\CommandButtons\\BTNNorthrendCastle.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendScarlet.LegendBrigitte, false));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01F"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03P"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01H"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01M"))));
-      AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new ObjectiveControlLegend(LegendScarlet.LegendBrigitte, false));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01F"))));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03P"))));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01H"))));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01M"))));
+      AddQuestItem(new ObjectiveSelfExists());
       ResearchId = FourCC("R07P");
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())

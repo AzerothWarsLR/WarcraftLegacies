@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       "Daelin Proudmoore sees the plight of the Scarlet Crusade. As fellow human survivors of horrible war, they should join forces with Kul'tiras",
       "ReplaceableTextures\\CommandButtons\\BTNDivine_Reckoning_Icon.blp")
     {
-      AddQuestItem(new QuestItemCastSpell(FourCC("A0JB"), true));
+      AddQuestItem(new ObjectiveCastSpell(FourCC("A0JB"), true));
       ResearchId = QuestResearchId;
     }
 

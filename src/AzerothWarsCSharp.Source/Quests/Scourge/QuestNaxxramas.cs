@@ -20,12 +20,12 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       @"ReplaceableTextures\CommandButtons\BTNBlackCitadel.blp")
     {
       _naxxramas = naxxramas;
-      QuestItemChannelRect questItemChannelRect =
+      ObjectiveChannelRect objectiveChannelRect =
         new(Regions.NaxUnlock, "Naxxramas", LegendScourge.LegendKelthuzad, 60, 270)
         {
           RequiredUnitTypeId = LegendScourge.UnittypeKelthuzadLich
         };
-      AddQuestItem(questItemChannelRect);
+      AddQuestItem(objectiveChannelRect);
       SetUnitInvulnerable(naxxramas, true);
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())

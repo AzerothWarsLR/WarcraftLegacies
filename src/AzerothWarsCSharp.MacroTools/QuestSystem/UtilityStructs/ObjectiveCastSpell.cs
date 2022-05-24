@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
   /// <summary>
   ///   Completes when a unit casts a specific spell.
   /// </summary>
-  public sealed class QuestItemCastSpell : QuestItemData
+  public sealed class ObjectiveCastSpell : Objective
   {
     private readonly bool _holderOnly;
 
@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     /// </summary>
     /// <param name="spellId">The spell that needs to be casted for completion.</param>
     /// <param name="holderOnly">If true, the quest holder must cast the spell themselves.</param>
-    public QuestItemCastSpell(int spellId, bool holderOnly)
+    public ObjectiveCastSpell(int spellId, bool holderOnly)
     {
       PlayerUnitEvents.Register(PlayerUnitEvent.SpellFinish, OnCast, spellId);
       if (holderOnly)

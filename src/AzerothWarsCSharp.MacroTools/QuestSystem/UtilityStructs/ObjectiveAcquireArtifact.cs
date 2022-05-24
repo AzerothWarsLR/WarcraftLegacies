@@ -7,11 +7,11 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
   /// <summary>
   ///   Completes when the quest holder picks up a particular <see cref="Artifact" />.
   /// </summary>
-  public sealed class QuestItemAcquireArtifact : QuestItemData
+  public sealed class ObjectiveAcquireArtifact : Objective
   {
     private readonly Artifact _target;
 
-    public QuestItemAcquireArtifact(Artifact target)
+    public ObjectiveAcquireArtifact(Artifact target)
     {
       Description = "Acquire " + GetItemName(target.Item);
       _target = target;

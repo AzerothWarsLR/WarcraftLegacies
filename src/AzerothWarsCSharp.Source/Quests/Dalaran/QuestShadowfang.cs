@@ -17,10 +17,10 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "The woods of Silverspine are unsafe for travellers, they need to be investigated",
       "ReplaceableTextures\\CommandButtons\\BTNworgen.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(worgenToKill)); //Worgen
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01D"))));
-      AddQuestItem(new QuestItemExpire(1444));
-      AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new ObjectiveKillUnit(worgenToKill)); //Worgen
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01D"))));
+      AddQuestItem(new ObjectiveExpire(1444));
+      AddQuestItem(new ObjectiveSelfExists());
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))

@@ -16,8 +16,8 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "The Thunder Eagles of the Storm Peaks live in fear of the Legion. Wipe out the Legion Nexus to bring these great birds out into the open.",
       "ReplaceableTextures\\CommandButtons\\BTNWarEagle.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendDraktharonkeep, false));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02S"))));
+      AddQuestItem(new ObjectiveControlLegend(LegendNeutral.LegendDraktharonkeep, false));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02S"))));
     }
 
     protected override string CompletionPopup => "The Thunder Eagles, now in safe hands " + Holder.Name + ".";

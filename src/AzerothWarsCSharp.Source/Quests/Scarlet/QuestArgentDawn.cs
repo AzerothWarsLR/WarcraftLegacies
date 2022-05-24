@@ -15,8 +15,8 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       "The Militia of Lordaeron has been solidified into the Argent Dawn, a strong military force lead by Tirion Fording.",
       "ReplaceableTextures\\CommandButtons\\BTNResurrection.blp")
     {
-      AddQuestItem(new QuestItemResearch(RequiredResearchId, FourCC("h00T")));
-      AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new ObjectiveResearch(RequiredResearchId, FourCC("h00T")));
+      AddQuestItem(new ObjectiveSelfExists());
       ResearchId = FourCC("R087");
       Global = true;
     }

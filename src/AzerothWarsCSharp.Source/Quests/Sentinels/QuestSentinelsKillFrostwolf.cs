@@ -13,7 +13,7 @@ using static AzerothWarsCSharp.MacroTools.Libraries.Display; namespace AzerothWa
       "The Frostwolf Clan is beginning to seize a firm foothold within the Barrens and on the plains of Mulgore. They must be driven back.",
       "ReplaceableTextures\\CommandButtons\\BTNThrall.blp")
     {
-      AddQuestItem(new QuestItemLegendDead(LegendFrostwolf.LegendThunderbluff));
+      AddQuestItem(new ObjectiveLegendDead(LegendFrostwolf.LegendThunderbluff));
       ResearchId = FourCC("R052");
     }
 

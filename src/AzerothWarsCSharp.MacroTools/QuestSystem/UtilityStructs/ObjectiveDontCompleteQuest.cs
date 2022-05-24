@@ -1,8 +1,8 @@
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public sealed class QuestItemDontCompleteQuest : QuestItemData
+  public sealed class ObjectiveDontCompleteQuest : Objective
   {
-    public QuestItemDontCompleteQuest(QuestData target)
+    public ObjectiveDontCompleteQuest(QuestData target)
     {
       Description = "Do not complete the quest " + target.Title;
       target.ProgressChanged += OnQuestProgressChanged;

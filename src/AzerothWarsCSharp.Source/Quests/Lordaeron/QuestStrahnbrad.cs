@@ -17,9 +17,9 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "The Strahnbrad is under attack by some brigands, clear them out",
       "ReplaceableTextures\\CommandButtons\\BTNFarm.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01C"))));
-      AddQuestItem(new QuestItemExpire(1170));
-      AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01C"))));
+      AddQuestItem(new ObjectiveExpire(1170));
+      AddQuestItem(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {

@@ -9,14 +9,14 @@ using Environment = AzerothWarsCSharp.MacroTools.Libraries.Environment;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem
 {
-  public abstract class QuestItemData
+  public abstract class Objective
   {
     private string _description = "";
     private effect? _mapEffect; //The visual effect that appears on the map, usually a Circle of Power
     private minimapicon? _minimapIcon;
     private effect? _overheadEffect;
 
-    private QuestItemData? _parentQuestItem;
+    private Objective? _parentQuestItem;
     private QuestProgress _progress = QuestProgress.Incomplete;
     private readonly List<Faction> _eligibleFactions;
     
@@ -24,20 +24,20 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// An arbitrary objective that can be completed or failed.
     /// </summary>
     /// <param name="eligibleFactions">A set of <see cref="Faction"/>s that can contribute
-    /// to the completion of the <see cref="QuestItemData"/>.</param>
-    protected QuestItemData(IEnumerable<Faction> eligibleFactions)
+    /// to the completion of the <see cref="Objective"/>.</param>
+    protected Objective(IEnumerable<Faction> eligibleFactions)
     {
       _eligibleFactions = eligibleFactions.ToList();
       OverheadEffectPath = "Abilities\\Spells\\Other\\TalkToMe\\TalkToMe";
     }
 
     /// <summary>
-    ///   Where the <see cref="QuestItemData" /> can be completed.
+    ///   Where the <see cref="Objective" /> can be completed.
     /// </summary>
     public virtual Point Position { get; }
 
     /// <summary>
-    ///   Whether or not the <see cref="QuestItemData" /> should display a position.
+    ///   Whether or not the <see cref="Objective" /> should display a position.
     /// </summary>
     protected bool DisplaysPosition { get; init; }
 
@@ -53,7 +53,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
 
     protected string? MapEffectPath { get; init; }
 
-    internal QuestItemData ParentQuestItem
+    internal Objective ParentQuestItem
     {
       set => _parentQuestItem = value;
     }
@@ -126,15 +126,15 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     }
 
     /// <summary>
-    ///   The texture path for the icon that appears showing where this <see cref="QuestItemData" />
+    ///   The texture path for the icon that appears showing where this <see cref="Objective" />
     ///   can be completed.
     /// </summary>
     protected string PingPath { get; init; } = "MinimapQuestObjectivePrimary";
 
-    public event EventHandler<QuestItemData>? ProgressChanged;
+    public event EventHandler<Objective>? ProgressChanged;
 
     /// <summary>
-    ///   Runs when a <see cref="QuestData" /> with this <see cref="QuestItemData" /> is added to a <see cref="Faction" />.
+    ///   Runs when a <see cref="QuestData" /> with this <see cref="Objective" /> is added to a <see cref="Faction" />.
     /// </summary>
     internal virtual void OnAdd()
     {

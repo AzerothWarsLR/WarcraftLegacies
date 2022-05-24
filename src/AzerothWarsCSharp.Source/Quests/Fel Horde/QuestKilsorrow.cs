@@ -20,9 +20,9 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       "ReplaceableTextures\\CommandButtons\\BTNFelOrcWatchTower.blp")
     {
       _kilsorrowFortress = kilsorrowFortress;
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09X"))));
-      AddQuestItem(new QuestItemExpire(1452));
-      AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09X"))));
+      AddQuestItem(new ObjectiveExpire(1452));
+      AddQuestItem(new ObjectiveSelfExists());
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))

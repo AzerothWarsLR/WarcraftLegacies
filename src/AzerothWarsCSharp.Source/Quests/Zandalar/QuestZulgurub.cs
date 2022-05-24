@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       "The Gurubashi trolls of Zul'Gurub follow the sacred Heart of Hakkar, hidden within their shrine. Capture it to gain their loyalty.",
       "ReplaceableTextures\\CommandButtons\\BTNTrollRavager.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendZulgurub, false));
+      AddQuestItem(new ObjectiveControlLegend(LegendNeutral.LegendZulgurub, false));
     }
   }
 }

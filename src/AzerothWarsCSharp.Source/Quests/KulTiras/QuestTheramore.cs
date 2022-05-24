@@ -19,8 +19,8 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       "The distant lands of Kalimdor remain untouched by human civilization. If the Third War proceeds poorly, it may become necessary to establish a forward base there.",
       "ReplaceableTextures\\CommandButtons\\BTNHumanArcaneTower.blp")
     {
-      AddQuestItem(new QuestItemResearch(RequiredResearch, FourCC("h076")));
-      AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new ObjectiveResearch(RequiredResearch, FourCC("h076")));
+      AddQuestItem(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {

@@ -14,11 +14,11 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       "The mages of Dalaran are hiding a powerful artifact that will grant Illidan unlimited power: the Skull of Gul'dan.",
       "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp")
     {
-      AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.IllidanBoat1,
+      AddQuestItem(new ObjectiveLegendReachRect(LegendNaga.LegendIllidan, Regions.IllidanBoat1,
         "the escape boat"));
-      AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.SkullOfGuldan,
+      AddQuestItem(new ObjectiveLegendReachRect(LegendNaga.LegendIllidan, Regions.SkullOfGuldan,
         "the dungeons of Dalaran"));
-      AddQuestItem(new QuestItemLegendHasArtifact(LegendNaga.LegendIllidan, ArtifactSetup.ArtifactSkullofguldan));
+      AddQuestItem(new ObjectiveLegendHasArtifact(LegendNaga.LegendIllidan, ArtifactSetup.ArtifactSkullofguldan));
       _questToDiscover = questToDiscover;
     }
 

@@ -20,12 +20,12 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       "Feathermoon Stronghold stood guard for ten thousand years, it is time to relieve the guards from their duty.",
       "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp")
     {
-      AddQuestItem(new QuestItemLegendReachRect(LegendSentinels.legendTyrande, Regions.FeathermoonUnlock,
+      AddQuestItem(new ObjectiveLegendReachRect(LegendSentinels.legendTyrande, Regions.FeathermoonUnlock,
         "Feathermoon Stronghold"));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01R"))));
-      AddQuestItem(new QuestItemUpgrade(FourCC("n06P"), FourCC("n06J")));
-      AddQuestItem(new QuestItemExpire(1485));
-      AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01R"))));
+      AddQuestItem(new ObjectiveUpgrade(FourCC("n06P"), FourCC("n06J")));
+      AddQuestItem(new ObjectiveExpire(1485));
+      AddQuestItem(new ObjectiveSelfExists());
       ResearchId = FourCC("R06M");
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))

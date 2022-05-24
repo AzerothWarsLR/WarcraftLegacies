@@ -14,8 +14,8 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       "The legendary sword, Thunderfury, has been lost somewhere in the Broken Isles, Cho'gall has seen it in a vision. It will be a great asset to the Old Gods",
       "ReplaceableTextures\\CommandButtons\\BTNThunderfury2.blp")
     {
-      AddQuestItem(new QuestItemLegendInRect(LegendFelHorde.LegendChogall, Regions.Broken_Isles, "The Broken Isles"));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n05Y"))));
+      AddQuestItem(new ObjectiveLegendInRect(LegendFelHorde.LegendChogall, Regions.Broken_Isles, "The Broken Isles"));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n05Y"))));
     }
 
     protected override string CompletionPopup => "Cho'gall has found the legendary sword, Thunderfury";

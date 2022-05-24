@@ -22,12 +22,12 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       "ReplaceableTextures\\CommandButtons\\BTNFelOrcFortress.blp")
     {
       _demonGates = demonGates;
-      AddQuestItem(new QuestItemLegendDead(LegendDraenei.LegendExodarship));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N01J_ZANGARMARSH_15GOLD_MIN)));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N02N_BLADE_S_EDGE_MOUNTAINS_15GOLD_MIN)));
-      AddQuestItem(new QuestItemUpgrade(FourCC("o030"), FourCC("o02Y")));
-      AddQuestItem(new QuestItemExpire(1450));
-      AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new ObjectiveLegendDead(LegendDraenei.LegendExodarship));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N01J_ZANGARMARSH_15GOLD_MIN)));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N02N_BLADE_S_EDGE_MOUNTAINS_15GOLD_MIN)));
+      AddQuestItem(new ObjectiveUpgrade(FourCC("o030"), FourCC("o02Y")));
+      AddQuestItem(new ObjectiveExpire(1450));
+      AddQuestItem(new ObjectiveSelfExists());
       ResearchId = FourCC("R00P");
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE))

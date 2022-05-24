@@ -5,13 +5,13 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public sealed class QuestItemLegendLevel : QuestItemData
+  public sealed class ObjectiveLegendLevel : Objective
   {
     private readonly int _level;
 
     private readonly Legend _target;
 
-    public QuestItemLegendLevel(Legend target, int level)
+    public ObjectiveLegendLevel(Legend target, int level)
     {
       Description = target.Name + " is level " + I2S(level);
       _target = target;

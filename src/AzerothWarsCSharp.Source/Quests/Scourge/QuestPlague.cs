@@ -49,10 +49,10 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       _plagueCauldronUnitTypeId = plagueParameters.PlagueCauldronUnitTypeId;
       _plagueCauldronSummonParameters = plagueParameters.PlagueCauldronSummonParameters;
       _duration = plagueParameters.Duration;
-      AddQuestItem(new QuestItemEitherOf(
-        new QuestItemResearch(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, FourCC("u000")),
-        new QuestItemTime(960)));
-      AddQuestItem(new QuestItemTime(660));
+      AddQuestItem(new ObjectiveEitherOf(
+        new ObjectiveResearch(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, FourCC("u000")),
+        new ObjectiveTime(960)));
+      AddQuestItem(new ObjectiveTime(660));
       Global = true;
     }
 

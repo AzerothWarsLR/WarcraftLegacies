@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       "The Old God's will is finnicky, you are not privy to when their plan will be set in motion, but when it is, your cult will be ready to welcome it.",
       "ReplaceableTextures\\CommandButtons\\BTNDeathwing.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendTwilight.LEGEND_DEATHWING, false));
+      AddQuestItem(new ObjectiveControlLegend(LegendTwilight.LEGEND_DEATHWING, false));
       _robogoblin = PreplacedUnitSystem.GetUnit(FourCC("h02U"));
       Global = true;
     }

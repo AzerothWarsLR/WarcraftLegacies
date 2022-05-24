@@ -17,10 +17,10 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       "The town of Lakeshire is invaded by Ogres, wipe them out!",
       "ReplaceableTextures\\CommandButtons\\BTNOgreLord.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(ogreLordToKill));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n011"))));
-      AddQuestItem(new QuestItemExpire(1427));
-      AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new ObjectiveKillUnit(ogreLordToKill));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n011"))));
+      AddQuestItem(new ObjectiveExpire(1427));
+      AddQuestItem(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {

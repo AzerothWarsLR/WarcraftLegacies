@@ -18,8 +18,8 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       "Kil'jaeden has approached Kael with an offer of power and salvation for his people. Only by accepting will his hunger for magic by satiated.",
       "ReplaceableTextures\\CommandButtons\\BTNFelKaelthas.blp")
     {
-      AddQuestItem(new QuestItemCastSpell(FourCC("A0IF"), true));
-      AddQuestItem(new QuestItemLegendLevel(LegendQuelthalas.LegendKael, 6));
+      AddQuestItem(new ObjectiveCastSpell(FourCC("A0IF"), true));
+      AddQuestItem(new ObjectiveLegendLevel(LegendQuelthalas.LegendKael, 6));
       ResearchId = QuestResearchId;
       Global = true;
     }

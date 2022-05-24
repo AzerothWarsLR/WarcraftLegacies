@@ -16,11 +16,11 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       "The Scholomance is the secret staging ground for the invasion of Lordaeron, build your infrastructure and be ready for war.",
       "ReplaceableTextures\\CommandButtons\\BTNAffinityII.blp")
     {
-      AddQuestItem(new QuestItemBuild(FourCC("u011"), 2));
-      AddQuestItem(new QuestItemBuild(FourCC("h08C"), 20));
-      AddQuestItem(new QuestItemBuild(FourCC("u014"), 1));
-      AddQuestItem(new QuestItemBuild(FourCC("u01J"), 2));
-      AddQuestItem(new QuestItemUpgrade(FourCC("h08B"), FourCC("h089")));
+      AddQuestItem(new ObjectiveBuild(FourCC("u011"), 2));
+      AddQuestItem(new ObjectiveBuild(FourCC("h08C"), 20));
+      AddQuestItem(new ObjectiveBuild(FourCC("u014"), 1));
+      AddQuestItem(new ObjectiveBuild(FourCC("u01J"), 2));
+      AddQuestItem(new ObjectiveUpgrade(FourCC("h08B"), FourCC("h089")));
       ResearchId = FourCC("R04Z");
     }
   }

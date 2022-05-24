@@ -15,8 +15,8 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       "Kil'jaeden has ordered Illidan to destroy the Frozen Throne, and he shall obey.",
       "ReplaceableTextures\\CommandButtons\\BTNMetamorphosis.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(LegendScourge.LegendLichking.Unit));
-      AddQuestItem(new QuestItemResearch(FourCC("R063"), FourCC("n055")));
+      AddQuestItem(new ObjectiveKillUnit(LegendScourge.LegendLichking.Unit));
+      AddQuestItem(new ObjectiveResearch(FourCC("R063"), FourCC("n055")));
       Global = true;
     }
 

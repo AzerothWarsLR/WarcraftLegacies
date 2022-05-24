@@ -16,9 +16,9 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       "Long ago, Fandral Staghelm cut a sapling from Nordrassil and used it to grow Andrassil in Northrend. Without the blessing of the Aspects, it fell to the Old Gods' corruption. If Northrend were to be reclaimed, Andrassil's growth could begin anew.",
       "ReplaceableTextures\\CommandButtons\\BTNTreant.blp")
     {
-      AddQuestItem(new QuestItemLegendDead(LegendScourge.LegendLichking));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03U"))));
-      AddQuestItem(new QuestItemAnyUnitInRect(Regions.GrizzlyHills, "Grizzly Hills", true));
+      AddQuestItem(new ObjectiveLegendDead(LegendScourge.LegendLichking));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03U"))));
+      AddQuestItem(new ObjectiveAnyUnitInRect(Regions.GrizzlyHills, "Grizzly Hills", true));
     }
 
 

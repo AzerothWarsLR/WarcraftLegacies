@@ -15,8 +15,8 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       "In millenia past, the most vile entities of Azeroth were imprisoned in a facility near Zin-Ashari. The Broken Isles, now raised from the sea floor, would be a strategic location for a newer edition of such a prison.",
       "ReplaceableTextures\\CommandButtons\\BTNReincarnationWarden.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n05Y"))));
-      AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n05Y"))));
+      AddQuestItem(new ObjectiveSelfExists());
       ResearchId = FourCC("R06H");
     }
 

@@ -19,13 +19,13 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       "The proud Nerubians have declared war on the newly formed Lich King, destroy them to secure the continent of Northrend.",
       "ReplaceableTextures\\CommandButtons\\BTNNerubianQueen.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00I"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08D"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00G"))));
-      AddQuestItem(new QuestItemKillUnit(spiderQueen));
-      AddQuestItem(new QuestItemUpgrade(FourCC("unp2"), FourCC("unp1")));
-      AddQuestItem(new QuestItemExpire(1480));
-      AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00I"))));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08D"))));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00G"))));
+      AddQuestItem(new ObjectiveKillUnit(spiderQueen));
+      AddQuestItem(new ObjectiveUpgrade(FourCC("unp2"), FourCC("unp1")));
+      AddQuestItem(new ObjectiveExpire(1480));
+      AddQuestItem(new ObjectiveSelfExists());
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))

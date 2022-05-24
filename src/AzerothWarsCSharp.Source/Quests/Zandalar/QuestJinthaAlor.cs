@@ -35,7 +35,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       "The Vilebranch trolls of Jintha'Alor are controlled by their fear of the Soulflayer's egg, hidden within their shrine. Smash it to gain their loyalty.",
       "ReplaceableTextures\\CommandButtons\\BTNForestTrollShadowPriest.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendJinthaalor, false));
+      AddQuestItem(new ObjectiveControlLegend(LegendNeutral.LegendJinthaalor, false));
     }
   }
 }

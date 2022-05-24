@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       "During the Second War, the souls of slain Shadow Council members were infused into the corpses of Stormwind knights to create the Death Knights. If Stormwind were to fall again, the unholy order could return.",
       "ReplaceableTextures\\CommandButtons\\BTNAcolyte.blp")
     {
-      AddQuestItem(new QuestItemLegendDead(LegendStormwind.LegendStormwindkeep));
+      AddQuestItem(new ObjectiveLegendDead(LegendStormwind.LegendStormwindkeep));
       ResearchId = Constants.UPGRADE_R05Z_QUEST_COMPLETED_THOSE_WHO_CAME_BEFORE_FEL_HORDE;
     }
   }

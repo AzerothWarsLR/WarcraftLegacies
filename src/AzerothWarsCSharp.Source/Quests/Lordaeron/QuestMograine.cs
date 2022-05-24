@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "The Lich King, looming over Northrend from Icecrown's peak, is the greatest threat Lordaeron has ever faced. He must be destroyed.",
       "ReplaceableTextures\\CommandButtons\\BTNAlexandros.blp")
     {
-      AddQuestItem(new QuestItemLegendDead(LegendScourge.LegendLichking));
+      AddQuestItem(new ObjectiveLegendDead(LegendScourge.LegendLichking));
       ResearchId = FourCC("R06P");
     }
   }

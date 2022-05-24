@@ -19,12 +19,12 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "Before the First War, all of humanity was united under the banner of the Arathorian Empire. Reclaim its greatness by uniting mankind once again.",
       "ReplaceableTextures\\CommandButtons\\BTNFireKingCrown.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendLordaeron.LegendArthas, true));
-      AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactCrownlordaeron));
-      AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactCrownstormwind));
-      AddQuestItem(new QuestItemLegendDead(LegendScourge.LegendLichking));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n010"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01G"))));
+      AddQuestItem(new ObjectiveControlLegend(LegendLordaeron.LegendArthas, true));
+      AddQuestItem(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactCrownlordaeron));
+      AddQuestItem(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactCrownstormwind));
+      AddQuestItem(new ObjectiveLegendDead(LegendScourge.LegendLichking));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n010"))));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01G"))));
       Global = true;
     }
 

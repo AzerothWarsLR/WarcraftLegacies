@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       "The Sunwell is the source of the High Elves' immortality and magical prowess. Under control of the Scourge, it would be the source of immense necromantic power.",
       "ReplaceableTextures\\CommandButtons\\BTNOrbOfCorruption.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendQuelthalas.LegendSunwell, false));
+      AddQuestItem(new ObjectiveControlLegend(LegendQuelthalas.LegendSunwell, false));
       ResearchId = FourCC("R054");
     }
 

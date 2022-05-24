@@ -5,12 +5,12 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public sealed class QuestItemControlLegend : QuestItemData
+  public sealed class ObjectiveControlLegend : Objective
   {
     private readonly bool _canFail;
     private readonly Legend _target;
 
-    public QuestItemControlLegend(Legend target, bool canFail)
+    public ObjectiveControlLegend(Legend target, bool canFail)
     {
       _target = target;
       Description = "Your team controls " + target.Name;

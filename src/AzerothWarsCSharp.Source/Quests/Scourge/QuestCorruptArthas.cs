@@ -17,10 +17,10 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       "When the city of Stratholme, Prince Arthas will abandon his people and join the Scourge as their champion.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroDeathKnight.blp")
     {
-      AddQuestItem(new QuestItemLegendDead(LegendLordaeron.LegendStratholme));
-      AddQuestItem(new QuestItemEitherOf(new QuestItemLegendDead(LegendLordaeron.LegendArthas),
-        new QuestItemFactionDefeated(LordaeronSetup.FactionLordaeron)));
-      AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new ObjectiveLegendDead(LegendLordaeron.LegendStratholme));
+      AddQuestItem(new ObjectiveEitherOf(new ObjectiveLegendDead(LegendLordaeron.LegendArthas),
+        new ObjectiveFactionDefeated(LordaeronSetup.FactionLordaeron)));
+      AddQuestItem(new ObjectiveSelfExists());
     }
 
 

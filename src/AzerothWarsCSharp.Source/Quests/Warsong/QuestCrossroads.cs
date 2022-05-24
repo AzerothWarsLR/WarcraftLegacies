@@ -20,10 +20,10 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       "ReplaceableTextures\\CommandButtons\\BTNBarracks.blp")
     {
       AddQuestItem(
-        new QuestItemKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nrzm"), rescueRect.Center))); //Razorman Medicine Man
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01T"))));
-      AddQuestItem(new QuestItemExpire(1460));
-      AddQuestItem(new QuestItemSelfExists());
+        new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nrzm"), rescueRect.Center))); //Razorman Medicine Man
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01T"))));
+      AddQuestItem(new ObjectiveExpire(1460));
+      AddQuestItem(new ObjectiveSelfExists());
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))

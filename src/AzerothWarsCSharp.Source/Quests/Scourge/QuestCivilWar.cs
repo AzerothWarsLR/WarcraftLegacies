@@ -21,9 +21,9 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       "The Lich King wants to break free from his Demon Master, but he will need a champion first",
       "ReplaceableTextures\\CommandButtons\\BTNTheLichKingQuest.blp")
     {
-      AddQuestItem(new QuestItemResearch(FourCC("R07W"), FourCC("u000")));
-      AddQuestItem(new QuestItemControlLegend(LegendLordaeron.LegendArthas, false));
-      AddQuestItem(new QuestItemTime(900));
+      AddQuestItem(new ObjectiveResearch(FourCC("R07W"), FourCC("u000")));
+      AddQuestItem(new ObjectiveControlLegend(LegendLordaeron.LegendArthas, false));
+      AddQuestItem(new ObjectiveTime(900));
       Global = true;
     }
   }

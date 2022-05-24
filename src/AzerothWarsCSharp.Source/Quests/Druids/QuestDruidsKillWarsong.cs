@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       "Arriving from another planet and across the seas of Azeroth, the Orcs of the Warsong Clan have arrived to ravage the wilderness and consume its bounty. They must be stopped.",
       "ReplaceableTextures\\CommandButtons\\BTNHellScream.blp")
     {
-      AddQuestItem(new QuestItemLegendDead(LegendWarsong.LegendStonemaul));
+      AddQuestItem(new ObjectiveLegendDead(LegendWarsong.LegendStonemaul));
       ResearchId = FourCC("R05A");
     }
     

@@ -13,8 +13,8 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "The living crystal of the Crystalsong Forest suffers from its proximity to the Legion. Freed from that corruption, it could be used to empower Dalaran's constructs."
       , "ReplaceableTextures\\CommandButtons\\BTNRockGolem.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02R"))));
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendDraktharonkeep, false));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02R"))));
+      AddQuestItem(new ObjectiveControlLegend(LegendNeutral.LegendDraktharonkeep, false));
       ResearchId = FourCC("R045");
     }
 

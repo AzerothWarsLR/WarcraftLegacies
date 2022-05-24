@@ -7,7 +7,7 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public sealed class QuestItemArtifactInRect : QuestItemData
+  public sealed class ObjectiveArtifactInRect : Objective
   {
     private readonly TriggerWrapper _entersRect = new();
     private readonly TriggerWrapper _exitsRect = new();
@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     private readonly Artifact _targetArtifact;
     private readonly Rectangle _targetRect;
 
-    public QuestItemArtifactInRect(Artifact targetArtifact, Rectangle targetRect, string rectName)
+    public ObjectiveArtifactInRect(Artifact targetArtifact, Rectangle targetRect, string rectName)
     {
       _targetArtifact = targetArtifact;
       _targetRect = targetRect;

@@ -18,12 +18,12 @@ namespace AzerothWarsCSharp.Source.Quests.Ironforge
       "The Dwarven Dominion must be established before Ironforge can join the war.",
       "ReplaceableTextures\\CommandButtons\\BTNNorthrendCastle.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n017"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n014"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n013"))));
-      AddQuestItem(new QuestItemUpgrade(FourCC("h07G"), FourCC("h07E")));
-      AddQuestItem(new QuestItemExpire(1462));
-      AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n017"))));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n014"))));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n013"))));
+      AddQuestItem(new ObjectiveUpgrade(FourCC("h07G"), FourCC("h07E")));
+      AddQuestItem(new ObjectiveExpire(1462));
+      AddQuestItem(new ObjectiveSelfExists());
       ResearchId = FourCC("R043");
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))

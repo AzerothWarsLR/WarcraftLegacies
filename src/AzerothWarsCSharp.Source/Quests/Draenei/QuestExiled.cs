@@ -16,10 +16,10 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       "The Draenei need to escape Outland through the Exodar ship. We will need to power it up with a Divine Citadel first. The longer you hold out, the better the rewards will be",
       "ReplaceableTextures\\CommandButtons\\BTNUndeadAirBarge.blp")
     {
-      AddQuestItem(new QuestItemEitherOf(new QuestItemResearch(FourCC("R080"), FourCC("h09W")),
-        new QuestItemTime(782)));
-      AddQuestItem(new QuestItemLegendNotPermanentlyDead(LegendDraenei.LegendExodarship));
-      AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new ObjectiveEitherOf(new ObjectiveResearch(FourCC("R080"), FourCC("h09W")),
+        new ObjectiveTime(782)));
+      AddQuestItem(new ObjectiveLegendNotPermanentlyDead(LegendDraenei.LegendExodarship));
+      AddQuestItem(new ObjectiveSelfExists());
       ResearchId = FourCC("R081");
       Global = true;
     }

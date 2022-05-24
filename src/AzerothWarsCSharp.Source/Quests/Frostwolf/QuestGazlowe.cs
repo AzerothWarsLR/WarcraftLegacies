@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       "The Horde needs engineering skills if (it is to thrive. The Goblins of Kezan could provide such expertise.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n04Z"))));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n04Z"))));
     }
 
 

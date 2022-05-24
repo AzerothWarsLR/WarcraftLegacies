@@ -11,10 +11,10 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       "The Orc threat from Draenor still looms over all. Eliminate every trace of the Orcs and their bases.",
       "ReplaceableTextures\\CommandButtons\\BTNDarkPortal.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendFelHorde.LegendBlacktemple, false));
-      AddQuestItem(new QuestItemLegendDead(LegendFelHorde.LegendHellfirecitadel));
-      AddQuestItem(new QuestItemLegendDead(LegendFelHorde.LegendBlackrockspire));
-      AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new ObjectiveControlLegend(LegendFelHorde.LegendBlacktemple, false));
+      AddQuestItem(new ObjectiveLegendDead(LegendFelHorde.LegendHellfirecitadel));
+      AddQuestItem(new ObjectiveLegendDead(LegendFelHorde.LegendBlackrockspire));
+      AddQuestItem(new ObjectiveSelfExists());
       ResearchId = FourCC("R085");
     }
     

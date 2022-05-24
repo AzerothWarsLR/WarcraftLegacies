@@ -2,7 +2,7 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemTime : QuestItemData
+  public class ObjectiveTime : Objective
   {
     private readonly timer _timer;
 
@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       Progress = QuestProgress.Complete;
     }
 
-    public QuestItemTime(int duration)
+    public ObjectiveTime(int duration)
     {
       Description = $"{duration} seconds have elapsed";
       _timer = CreateTimer();

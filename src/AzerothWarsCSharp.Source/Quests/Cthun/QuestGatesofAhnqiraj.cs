@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
       _waygateA = waygateA;
       _waygateB = waygateB;
       Global = true;
-      AddQuestItem(new QuestItemCastSpell(FourCC("A0O1"), true));
+      AddQuestItem(new ObjectiveCastSpell(FourCC("A0O1"), true));
     }
 
     protected override string CompletionPopup =>

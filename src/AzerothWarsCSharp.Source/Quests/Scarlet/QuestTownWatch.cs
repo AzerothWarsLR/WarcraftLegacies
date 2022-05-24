@@ -14,9 +14,9 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       "Unholy Cultists are spreading a deadly plague among the villages of Lordaeron. We must stop them, prevent the corruption, and kill all the Cultists.",
       "ReplaceableTextures\\CommandButtons\\BTNAcolyte.blp")
     {
-      AddQuestItem(new QuestItemResearch(FourCC("Rhse"), FourCC("h083")));
-      AddQuestItem(new QuestItemBuild(FourCC("h084"), 8));
-      AddQuestItem(new QuestItemKillXUnit(FourCC("u01U"), 3));
+      AddQuestItem(new ObjectiveResearch(FourCC("Rhse"), FourCC("h083")));
+      AddQuestItem(new ObjectiveBuild(FourCC("h084"), 8));
+      AddQuestItem(new ObjectiveKillXUnit(FourCC("u01U"), 3));
       ResearchId = QUEST_RESEARCH_ID;
     }
     

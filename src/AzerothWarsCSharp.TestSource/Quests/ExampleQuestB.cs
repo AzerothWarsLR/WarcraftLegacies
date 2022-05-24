@@ -8,8 +8,8 @@ namespace AzerothWarsCSharp.TestSource.Quests
   {
     public ExampleQuestB(QuestData otherQuest) : base("Better Quest", "Don't complete that other quest, he sucks.", "ReplaceableTextures\\CommandButtons\\BTNPaladin.blp")
     {
-      AddQuestItem(new QuestItemDontCompleteQuest(otherQuest));
-      AddQuestItem(new QuestItemBuild(FourCC("hbar"), 1));
+      AddQuestItem(new ObjectiveDontCompleteQuest(otherQuest));
+      AddQuestItem(new ObjectiveBuild(FourCC("hbar"), 1));
     }
 
     protected override string RewardDescription => "No idea.";

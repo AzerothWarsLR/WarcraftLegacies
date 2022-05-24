@@ -17,8 +17,8 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       "Maiev drive for vengeance leads her to chase Illidan all the way to other worlds.",
       "ReplaceableTextures\\CommandButtons\\BTNMaievArmor.blp")
     {
-      AddQuestItem(new QuestItemCastSpell(FourCC("A0J5"), true));
-      AddQuestItem(new QuestItemControlLegend(LegendSentinels.legendMaiev, true));
+      AddQuestItem(new ObjectiveCastSpell(FourCC("A0J5"), true));
+      AddQuestItem(new ObjectiveControlLegend(LegendSentinels.legendMaiev, true));
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
       {

@@ -25,8 +25,8 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       "Warchief Thrall and his forces have been shipwrecked on the Darkspear Isles. Kill the Sea Witch there to give them a chance to rebuild their fleet and escape.",
       "ReplaceableTextures\\CommandButtons\\BTNGhost.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(LegendNeutral.LegendSeawitch.Unit));
-      AddQuestItem(new QuestItemExpire(600));
+      AddQuestItem(new ObjectiveKillUnit(LegendNeutral.LegendSeawitch.Unit));
+      AddQuestItem(new ObjectiveExpire(600));
       ResearchId = FourCC("R05H");
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())

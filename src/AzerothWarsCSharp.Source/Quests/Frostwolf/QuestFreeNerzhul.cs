@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       "Before he became the Lich King, Ner'zhul was the chieftain and elder shaman of the Shadowmoon Clan. Perhaps something of his former self still survives within the Frozen Throne.",
       "ReplaceableTextures\\CommandButtons\\BTNShaman.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(LegendScourge.LegendLichking.Unit));
+      AddQuestItem(new ObjectiveKillUnit(LegendScourge.LegendLichking.Unit));
     }
 
 

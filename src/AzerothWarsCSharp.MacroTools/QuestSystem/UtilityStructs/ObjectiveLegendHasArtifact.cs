@@ -4,12 +4,12 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public sealed class QuestItemLegendHasArtifact : QuestItemData
+  public sealed class ObjectiveLegendHasArtifact : Objective
   {
     private readonly Artifact _targetArtifact;
     private readonly Legend _targetLegend;
 
-    public QuestItemLegendHasArtifact(Legend targetLegend, Artifact targetArtifact)
+    public ObjectiveLegendHasArtifact(Legend targetLegend, Artifact targetArtifact)
     {
       Description = targetLegend.Name + " has " + GetItemName(targetArtifact.Item);
       _targetLegend = targetLegend;

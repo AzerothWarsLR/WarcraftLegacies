@@ -11,8 +11,8 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
   {
     public QuestStayLoyal() : base("Refuse Kil'Jaeden's Offer", "Kil'jaeden has approached Kael with an offer of power and salvation. He should refuse it and resist the temptation of Fel power.", "ReplaceableTextures\\CommandButtons\\BTNDemonHunter2.blp")
     {
-      AddQuestItem(new QuestItemCastSpell(FourCC("A0IK"), true));
-      AddQuestItem(new QuestItemLegendLevel(LegendQuelthalas.LegendKael, 6));
+      AddQuestItem(new ObjectiveCastSpell(FourCC("A0IK"), true));
+      AddQuestItem(new ObjectiveLegendLevel(LegendQuelthalas.LegendKael, 6));
       Global = true;
     }
 

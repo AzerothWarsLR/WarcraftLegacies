@@ -14,8 +14,8 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       "Tortolla was badly wounded during the War of the Ancients, and has been resting ever since.",
       "ReplaceableTextures\\CommandButtons\\BTNSeaTurtleGreen.blp")
     {
-      AddQuestItem(new QuestItemTime(1200));
-      AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new ObjectiveTime(1200));
+      AddQuestItem(new ObjectiveSelfExists());
       ResearchId = FourCC("R049");
 
       _sleepingTortolla = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), HeroId, -12827, 5729, 333);

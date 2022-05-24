@@ -2,9 +2,9 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public sealed class QuestItemSelfExists : QuestItemData
+  public sealed class ObjectiveSelfExists : Objective
   {
-    public QuestItemSelfExists()
+    public ObjectiveSelfExists()
     {
       Progress = QuestProgress.Complete;
       ShowsInQuestLog = false;

@@ -16,8 +16,8 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
       "Feathermoon Stronghold and Auberdine give the Elves a grip on the western shore of Kalimdor. We need to destroy them to clear a way for our business expansion west!",
       "ReplaceableTextures\\CommandButtons\\BTNNightElfShipyard.blp")
     {
-      AddQuestItem(new QuestItemLegendDead(LegendSentinels.legendFeathermoon));
-      AddQuestItem(new QuestItemLegendDead(LegendSentinels.legendAuberdine));
+      AddQuestItem(new ObjectiveLegendDead(LegendSentinels.legendFeathermoon));
+      AddQuestItem(new ObjectiveLegendDead(LegendSentinels.legendAuberdine));
       ResearchId = FourCC("R07Y");
     }
   }

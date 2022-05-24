@@ -33,7 +33,7 @@ using static AzerothWarsCSharp.MacroTools.Libraries.Display; namespace AzerothWa
       "ReplaceableTextures\\CommandButtons\\BTNHeroTaurenChieftain.blp")
     {
       if (LegendFrostwolf.LegendThunderbluff != null)
-        AddQuestItem(new QuestItemLegendDead(LegendFrostwolf.LegendThunderbluff));
+        AddQuestItem(new ObjectiveLegendDead(LegendFrostwolf.LegendThunderbluff));
     }
   }
 }

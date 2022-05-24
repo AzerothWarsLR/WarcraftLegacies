@@ -2,12 +2,12 @@ using WCSharp.Shared.Data;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemEitherOf : QuestItemData
+  public class ObjectiveEitherOf : Objective
   {
-    private readonly QuestItemData _questItemA;
-    private readonly QuestItemData _questItemB;
+    private readonly Objective _questItemA;
+    private readonly Objective _questItemB;
 
-    public QuestItemEitherOf(QuestItemData questItemA, QuestItemData questItemB)
+    public ObjectiveEitherOf(Objective questItemA, Objective questItemB)
     {
       _questItemA = questItemA;
       _questItemB = questItemB;
@@ -39,7 +39,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
         Progress = QuestProgress.Failed;
     }
 
-    private void OnChildProgressChanged(object? sender, QuestItemData questItemData)
+    private void OnChildProgressChanged(object? sender, Objective objective)
     {
       Update();
     }

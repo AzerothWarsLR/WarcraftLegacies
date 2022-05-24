@@ -20,13 +20,13 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       "ReplaceableTextures\\CommandButtons\\BTNKeeperC.blp")
     {
       AddQuestItem(
-        new QuestItemLegendReachRect(LegendDruids.LegendMalfurion, Regions.AshenvaleUnlock, "Ashenvale"));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n07C"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01Q"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08U"))));
-      AddQuestItem(new QuestItemUpgrade(FourCC("etol"), FourCC("etol")));
-      AddQuestItem(new QuestItemExpire(1440));
-      AddQuestItem(new QuestItemSelfExists());
+        new ObjectiveLegendReachRect(LegendDruids.LegendMalfurion, Regions.AshenvaleUnlock, "Ashenvale"));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n07C"))));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01Q"))));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08U"))));
+      AddQuestItem(new ObjectiveUpgrade(FourCC("etol"), FourCC("etol")));
+      AddQuestItem(new ObjectiveExpire(1440));
+      AddQuestItem(new ObjectiveSelfExists());
       ResearchId = FourCC("R06R");
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))

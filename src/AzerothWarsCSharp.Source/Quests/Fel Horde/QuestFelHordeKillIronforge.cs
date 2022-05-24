@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       "The smiths of Ironforge have long been put to use crafting goods and war machinery. In the hands of the Fel Horde, they could be used to smelt and refine the ultimate metal: Felsteel.",
       "ReplaceableTextures\\CommandButtons\\BTNInfernalFlameCannon.blp")
     {
-      AddQuestItem(new QuestItemLegendDead(LegendIronforge.LegendGreatforge));
+      AddQuestItem(new ObjectiveLegendDead(LegendIronforge.LegendGreatforge));
       ResearchId = FourCC("R011");
     }
 

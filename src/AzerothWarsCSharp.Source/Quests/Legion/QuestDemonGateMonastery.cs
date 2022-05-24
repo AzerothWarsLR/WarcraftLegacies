@@ -11,14 +11,14 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
     private static readonly int DemongateId = FourCC("n081");
 
 
-    private readonly QuestItemKillUnit _questItemKillMonastery;
+    private readonly ObjectiveKillUnit _objectiveKillMonastery;
 
     public QuestDemonGateMonastery() : base("A Scarlet Rift",
       "The energies surrounding the Scarlet Monastery are extraordinary. Destroy this bastion of light to fabricate a Demon Gate in its place.",
       "ReplaceableTextures\\CommandButtons\\BTNMaskOfDeath.blp")
     {
-      _questItemKillMonastery = new QuestItemKillUnit(PreplacedUnitSystem.GetUnit(FourCC("h00T")));
-      AddQuestItem(_questItemKillMonastery);
+      _objectiveKillMonastery = new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("h00T")));
+      AddQuestItem(_objectiveKillMonastery);
     }
 
     protected override string CompletionPopup =>
@@ -28,8 +28,8 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
     protected override void OnComplete()
     {
-      CreateUnit(Holder.Player, DemongateId, GetUnitX(_questItemKillMonastery.Target),
-        GetUnitY(_questItemKillMonastery.Target), 270);
+      CreateUnit(Holder.Player, DemongateId, GetUnitX(_objectiveKillMonastery.Target),
+        GetUnitY(_objectiveKillMonastery.Target), 270);
       var monastery = Regions.ScarletMonastery.Rect;
       SetDoodadAnimationRect(monastery, FourCC("YObb"), "hide", false);
       SetDoodadAnimationRect(monastery, FourCC("ZSab"), "hide", false);

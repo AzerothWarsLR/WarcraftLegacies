@@ -2,9 +2,9 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemFactionDefeated : QuestItemData
+  public class ObjectiveFactionDefeated : Objective
   {
-    public QuestItemFactionDefeated(Faction whichFaction)
+    public ObjectiveFactionDefeated(Faction whichFaction)
     {
       Description = whichFaction.Name + " has been defeated";
       whichFaction.ScoreStatusChanged += OnAnyFactionScoreStatusChanged;

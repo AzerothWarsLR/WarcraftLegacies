@@ -6,7 +6,7 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class QuestItemLegendReachRect : QuestItemData
+  public class ObjectiveLegendReachRect : Objective
   {
     private readonly TriggerWrapper _entersRect = new();
 
@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     private readonly region _target;
     private readonly rect _targetRect;
 
-    public QuestItemLegendReachRect(Legend legend, Rectangle targetRect, string rectName)
+    public ObjectiveLegendReachRect(Legend legend, Rectangle targetRect, string rectName)
     {
       _targetRect = targetRect.Rect;
       _target = RectToRegion(_targetRect);

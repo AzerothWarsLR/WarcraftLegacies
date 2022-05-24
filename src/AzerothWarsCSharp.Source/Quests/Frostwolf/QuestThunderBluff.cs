@@ -17,10 +17,10 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       "The Tauren have been wandering for too long. The plains of Mulgore would offer respite from this endless journey.",
       "ReplaceableTextures\\CommandButtons\\BTNCentaurKhan.blp")
     {
-      AddQuestItem(new QuestItemLegendDead(LegendNeutral.LegendCentaurkhan));
-      AddQuestItem(new QuestItemAnyUnitInRect(Regions.ThunderBluff, "Thunder Bluff", true));
-      AddQuestItem(new QuestItemExpire(1455));
-      AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new ObjectiveLegendDead(LegendNeutral.LegendCentaurkhan));
+      AddQuestItem(new ObjectiveAnyUnitInRect(Regions.ThunderBluff, "Thunder Bluff", true));
+      AddQuestItem(new ObjectiveExpire(1455));
+      AddQuestItem(new ObjectiveSelfExists());
       ResearchId = FourCC("R05I");
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())

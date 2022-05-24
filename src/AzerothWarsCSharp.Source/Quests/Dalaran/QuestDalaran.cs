@@ -18,13 +18,13 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "The territories of Dalaran are fragmented, secure the lands and protect Dalaran citizens .",
       "ReplaceableTextures\\CommandButtons\\BTNArcaneCastle.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01D"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08M"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n018"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01I"))));
-      AddQuestItem(new QuestItemUpgrade(FourCC("h068"), FourCC("h065")));
-      AddQuestItem(new QuestItemExpire(1445));
-      AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01D"))));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08M"))));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n018"))));
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01I"))));
+      AddQuestItem(new ObjectiveUpgrade(FourCC("h068"), FourCC("h065")));
+      AddQuestItem(new ObjectiveExpire(1445));
+      AddQuestItem(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R038_QUEST_COMPLETED_OUTSKIRTS;
 
       foreach (var rectangle in rescueRects)

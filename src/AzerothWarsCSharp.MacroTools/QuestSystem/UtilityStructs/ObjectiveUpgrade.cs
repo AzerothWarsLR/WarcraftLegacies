@@ -4,9 +4,9 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public sealed class QuestItemUpgrade : QuestItemData
+  public sealed class ObjectiveUpgrade : Objective
   {
-    public QuestItemUpgrade(int objectId, int upgradeFromId)
+    public ObjectiveUpgrade(int objectId, int upgradeFromId)
     {
       Description = "Upgrade your " + GetObjectName(upgradeFromId) + " to a " + GetObjectName(objectId);
       PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesUpgrade, OnUpgrade, objectId);

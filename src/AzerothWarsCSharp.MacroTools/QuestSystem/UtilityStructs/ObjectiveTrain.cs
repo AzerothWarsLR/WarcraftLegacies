@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
   /// <summary>
   /// Completes when the holder has trained a specific number of a specific unit type.
   /// </summary>
-  public sealed class QuestItemTrain : QuestItemData
+  public sealed class ObjectiveTrain : Objective
   {
     private readonly int _objectId;
     private readonly int _targetTrainCount;
@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     /// <param name="objectId">The unit type that has to be trained.</param>
     /// <param name="trainFromId">The unit type of a building from which the unit can be trained.</param>
     /// <param name="targetTrainCount">How many of the unit type need to be trained.</param>
-    public QuestItemTrain(int objectId, int trainFromId, int targetTrainCount)
+    public ObjectiveTrain(int objectId, int trainFromId, int targetTrainCount)
     {
       _objectId = objectId;
       _trainFromId = trainFromId;

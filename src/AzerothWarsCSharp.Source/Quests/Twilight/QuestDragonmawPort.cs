@@ -17,9 +17,9 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       "The Dragonmaw Port will be the perfect staging ground of the invasion of Azeroth",
       "ReplaceableTextures\\CommandButtons\\BTNIronHordeSummoningCircle.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08T"))));
-      AddQuestItem(new QuestItemExpire(1227));
-      AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08T"))));
+      AddQuestItem(new ObjectiveExpire(1227));
+      AddQuestItem(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {

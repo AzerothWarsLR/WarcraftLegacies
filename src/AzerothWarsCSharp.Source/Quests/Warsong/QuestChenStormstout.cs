@@ -19,8 +19,8 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       "Rumours tell of a strange white-furred creature from a foreign land. Perhaps it could be convinced to join the Horde.",
       "ReplaceableTextures\\CommandButtons\\BTNPandarenBrewmaster.blp")
     {
-      AddQuestItem(new QuestItemAnyUnitInRect(Regions.Chen, "Chen Stormstout", false));
-      AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new ObjectiveAnyUnitInRect(Regions.Chen, "Chen Stormstout", false));
+      AddQuestItem(new ObjectiveSelfExists());
       _chen = chen;
     }
 

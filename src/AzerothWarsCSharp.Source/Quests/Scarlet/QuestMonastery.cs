@@ -23,8 +23,8 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       "ReplaceableTextures\\CommandButtons\\BTNDivine_Reckoning_Icon.blp")
     {
       _scarletMonastery = scarletMonastery;
-      AddQuestItem(new QuestItemResearch(UnleashTheCrusadeResearchId, FourCC("h00T")));
-      AddQuestItem(new QuestItemSelfExists());
+      AddQuestItem(new ObjectiveResearch(UnleashTheCrusadeResearchId, FourCC("h00T")));
+      AddQuestItem(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R03F_QUEST_COMPLETED_UNLEASH_THE_CRUSADE;
       Global = true;
       _sequel = sequel;

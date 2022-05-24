@@ -4,11 +4,11 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public sealed class QuestItemControlUnit : QuestItemData
+  public sealed class ObjectiveControlUnit : Objective
   {
     private readonly unit _target;
 
-    public QuestItemControlUnit(unit target)
+    public ObjectiveControlUnit(unit target)
     {
       Description = "Your team controls " + GetUnitName(target);
       TargetWidget = target;

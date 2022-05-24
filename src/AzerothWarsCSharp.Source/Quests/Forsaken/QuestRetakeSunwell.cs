@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       "Even in undeath, the Sunwell's energy call to the Forsaken banshees. Reclaim it to bolster their vitality",
       "ReplaceableTextures\\CommandButtons\\BTNGhost.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendQuelthalas.LegendSunwell, false));
+      AddQuestItem(new ObjectiveControlLegend(LegendQuelthalas.LegendSunwell, false));
     }
     
     protected override string CompletionPopup => "Sylvanas and all the Banshee Hall units gain 500 bonus hit points";
