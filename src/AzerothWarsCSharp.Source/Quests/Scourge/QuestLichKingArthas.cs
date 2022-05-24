@@ -24,6 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       AddObjective(new ObjectiveResearch(FourCC("R07X"), FourCC("u000")));
       AddObjective(new ObjectiveLegendInRect(LegendLordaeron.LegendArthas, Regions.LichKing, "Icecrown Citadel"));
       Global = true;
+      Required = true;
     }
 
     protected override string CompletionPopup =>

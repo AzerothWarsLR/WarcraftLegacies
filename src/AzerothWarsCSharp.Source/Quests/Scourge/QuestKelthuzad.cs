@@ -15,6 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     {
       AddObjective(new ObjectiveControlLegend(LegendQuelthalas.LegendSunwell, false));
       AddObjective(new ObjectiveLegendInRect(LegendScourge.LegendKelthuzad, Regions.Sunwell, "The Sunwell"));
+      Required = true;
     }
 
     protected override string CompletionPopup

@@ -19,8 +19,17 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       Title = title;
       QuestSetTitle(Quest, title);
       QuestSetIconPath(Quest, icon);
-      QuestSetRequired(Quest, false);
       QuestSetEnabled(Quest, false);
+      Required = false;
+    }
+
+    /// <summary>
+    ///   If true, the quest appears on the left hand side of the F9 menu.
+    ///   If false, it appears on the right hand side.
+    /// </summary>
+    protected bool Required
+    {
+      set => QuestSetRequired(Quest, value);
     }
 
     public string Title { get; }
@@ -111,6 +120,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         questItem.AddEligibleFaction(faction);
         questItem.OnAdd(faction);
       }
+
       RefreshDescription();
     }
 

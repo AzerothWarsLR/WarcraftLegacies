@@ -34,6 +34,8 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
+
+      Required = true;
     }
 
     protected override string CompletionPopup =>

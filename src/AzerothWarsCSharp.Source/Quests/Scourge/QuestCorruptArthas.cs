@@ -21,6 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       AddObjective(new ObjectiveEitherOf(new ObjectiveLegendDead(LegendLordaeron.LegendArthas),
         new ObjectiveFactionDefeated(LordaeronSetup.FactionLordaeron)));
       AddObjective(new ObjectiveSelfExists());
+      Required = true;
     }
 
 

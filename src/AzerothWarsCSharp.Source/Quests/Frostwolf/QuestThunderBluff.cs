@@ -30,6 +30,8 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
+
+      Required = true;
     }
 
     //todo: bad flavour
