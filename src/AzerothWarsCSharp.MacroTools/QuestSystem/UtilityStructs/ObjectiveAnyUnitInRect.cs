@@ -5,7 +5,7 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public sealed class ObjectiveAnyUnitInRect : FactionObjective
+  public sealed class ObjectiveAnyUnitInRect : Objective
   {
     private static readonly trigger EntersRectTrig = CreateTrigger();
     private static readonly trigger ExitsRectTrig = CreateTrigger();

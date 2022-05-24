@@ -5,7 +5,7 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public sealed class ObjectiveControlLegend : FactionObjective
+  public sealed class ObjectiveControlLegend : Objective
   {
     private readonly bool _canFail;
     private readonly Legend _target;

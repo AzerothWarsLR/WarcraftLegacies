@@ -4,9 +4,9 @@ using static War3Api.Common;
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
   /// <summary>
-  /// Completes when the holder has trained a specific number of a specific unit type.
+  ///   Completes when the holder has trained a specific number of a specific unit type.
   /// </summary>
-  public sealed class ObjectiveTrain : FactionObjective
+  public sealed class ObjectiveTrain : Objective
   {
     private readonly int _objectId;
     private readonly int _targetTrainCount;
@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     private int _currentTrainCount;
 
     /// <summary>
-    /// Completes when the holder has trained a specific number of a specific unit type.
+    ///   Completes when the holder has trained a specific number of a specific unit type.
     /// </summary>
     /// <param name="objectId">The unit type that has to be trained.</param>
     /// <param name="trainFromId">The unit type of a building from which the unit can be trained.</param>
@@ -33,21 +33,19 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       set
       {
         _currentTrainCount = value;
-        Description = $"Train {GetObjectName(_objectId)}s from the {GetObjectName(_trainFromId)} ({_currentTrainCount}/{_targetTrainCount})";
+        Description =
+          $"Train {GetObjectName(_objectId)}s from the {GetObjectName(_trainFromId)} ({_currentTrainCount}/{_targetTrainCount})";
       }
     }
 
     private void OnTrain()
     {
-      if (GetUnitTypeId(GetTrainedUnit()) != _objectId)
-      {
-        return;
-      }
-      
+      if (GetUnitTypeId(GetTrainedUnit()) != _objectId) return;
+
       if (!ProgressLocked && EligibleFactions.Contains(GetOwningPlayer(GetTrainedUnit())))
       {
         CurrentTrainCount = _currentTrainCount + 1;
-        if (_currentTrainCount == _targetTrainCount) 
+        if (_currentTrainCount == _targetTrainCount)
           Progress = QuestProgress.Complete;
       }
     }

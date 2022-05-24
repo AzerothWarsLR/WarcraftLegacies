@@ -4,7 +4,7 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public sealed class ObjectiveKillUnit : FactionObjective
+  public sealed class ObjectiveKillUnit : Objective
   {
     public ObjectiveKillUnit(unit unitToKill)
     {

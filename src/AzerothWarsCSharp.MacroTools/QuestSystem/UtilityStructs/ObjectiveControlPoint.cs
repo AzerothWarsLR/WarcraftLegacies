@@ -5,7 +5,7 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public sealed class ObjectiveControlPoint : FactionObjective
+  public sealed class ObjectiveControlPoint : Objective
   {
     private readonly ControlPoint _target;
 
@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     internal override void OnAdd(Faction whichFaction)
     {
-      if (IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.GetOwningPlayer())) 
+      if (IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.GetOwningPlayer()))
         Progress = QuestProgress.Complete;
 
       whichFaction.JoinedTeam += OnFactionTeamJoin;

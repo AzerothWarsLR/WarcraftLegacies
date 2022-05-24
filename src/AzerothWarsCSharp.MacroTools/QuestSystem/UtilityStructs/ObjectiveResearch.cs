@@ -1,10 +1,9 @@
 using WCSharp.Events;
-
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public class ObjectiveResearch : FactionObjective
+  public class ObjectiveResearch : Objective
   {
     public ObjectiveResearch(int researchId, int structureId)
     {
@@ -14,10 +13,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     private void OnAnyResearch()
     {
-      if (EligibleFactions.Contains(GetOwningPlayer(GetTriggerUnit())))
-      {
-        Progress = QuestProgress.Complete;
-      }
+      if (EligibleFactions.Contains(GetOwningPlayer(GetTriggerUnit()))) Progress = QuestProgress.Complete;
     }
   }
 }

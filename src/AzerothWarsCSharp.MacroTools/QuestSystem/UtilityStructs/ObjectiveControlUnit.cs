@@ -4,7 +4,7 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
-  public sealed class ObjectiveControlUnit : FactionObjective
+  public sealed class ObjectiveControlUnit : Objective
   {
     private readonly unit _target;
 
