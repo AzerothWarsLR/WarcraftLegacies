@@ -375,16 +375,15 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     public QuestData AddQuest(QuestData questData)
     {
+      foreach (var objective in questData.Objectives)
+        objective.AddEligibleFaction(this);
+      
       questData.Add(this);
       _questsByName.Add(questData.Title, questData);
       if (GetLocalPlayer() == Player)
         questData.ShowLocal();
       questData.ShowSync();
       questData.ProgressChanged += OnQuestProgressChanged;
-
-      foreach (var objective in questData.Objectives)
-        objective.AddEligibleFaction(this);
-
       return questData;
     }
 
