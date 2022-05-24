@@ -1,0 +1,42 @@
+﻿using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.Source.Setup.Legends;
+using WCSharp.Shared.Data;
+using static War3Api.Common;
+
+namespace AzerothWarsCSharp.Source.Quests
+{
+  public sealed class QuestTombOfSargeras : QuestData
+  {
+    private readonly unit _tombOfSargerasEntrance;
+    private readonly Rectangle _tombOfSargerasInteriorEntrance;
+    private readonly unit _guldanRemains;
+    
+    public QuestTombOfSargeras(unit tombOfSargerasEntrance, Rectangle tombOfSargerasInteriorEntrance, unit guldanRemains) : base("Tomb of Sargeras",
+      "When the Guardian Aegwynn defeated the fallen Titan Sargeras, she sealed his corpse within the temple that would come to be known as the Tomb of Sargeras. It lies still there, tempting those with the ambition to seize the power that remains within.",
+      @"ReplaceableTextures\CommandButtons\BTNUnholyFrenzy.blp")
+    {
+      _tombOfSargerasEntrance = tombOfSargerasEntrance;
+      _tombOfSargerasInteriorEntrance = tombOfSargerasInteriorEntrance;
+      _guldanRemains = guldanRemains;
+      AddQuestItem(new ObjectiveTime(900));
+      AddQuestItem(new ObjectiveEitherOf(
+        new ObjectiveLegendReachRect(LegendLordaeron.LegendUther, Regions.Sargeras_Entrance,
+          "the Tomb of Sargeras' entrance"),
+        new ObjectiveHeroWithLevelReachRect(10, Regions.Sargeras_Entrance, "the Tomb of Sargeras' entrance")));
+    }
+
+    //Todo; it would be really cool if this depended on the hero that opens it
+    protected override string RewardDescription => "The Tomb of Sargeras has been opened.";
+
+    protected override string CompletionPopup => "The Tomb of Sargeras has been opened.";
+
+    protected override void OnComplete(Faction completingFaction)
+    {
+      _tombOfSargerasEntrance.SetWaygateDestination(_tombOfSargerasInteriorEntrance.Center);
+      SetUnitAnimation(_guldanRemains, "decay flesh");
+    }
+  }
+}

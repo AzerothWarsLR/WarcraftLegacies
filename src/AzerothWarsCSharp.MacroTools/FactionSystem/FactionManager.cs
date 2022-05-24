@@ -38,7 +38,12 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
     }
 
-    public static IEnumerable<Team> GetAllTeams()
+    public static List<Faction> GetAllFactions()
+    {
+      return FactionsByName.Values.ToList();
+    }
+    
+    public static List<Team> GetAllTeams()
     {
       return AllTeams.ToList();
     }

@@ -3,7 +3,9 @@ using AzerothWarsCSharp.Source.Setup.QuestSetup;
 namespace AzerothWarsCSharp.Source.Setup
 {
   public static class AllQuestSetup{
-    public static void Setup(){
+    public static void Setup()
+    {
+      SharedQuestSetup.Setup();
       DalaranQuestSetup.Setup();
       DruidsQuestSetup.Setup();
       FelHordeQuestSetup.Setup();
