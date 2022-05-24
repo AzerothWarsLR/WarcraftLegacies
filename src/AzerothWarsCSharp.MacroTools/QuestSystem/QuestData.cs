@@ -107,7 +107,10 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         faction.ModObjectLimit(ResearchId, 1);
       OnAdd(faction);
       foreach (var questItem in Objectives)
+      {
+        questItem.AddEligibleFaction(faction);
         questItem.OnAdd(faction);
+      }
       RefreshDescription();
     }
 
