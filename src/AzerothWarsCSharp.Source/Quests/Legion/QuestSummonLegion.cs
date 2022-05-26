@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 {
   public sealed class QuestSummonLegion : QuestData
   {
-    private static readonly int RitualId = Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS;
+    private const int RITUAL_ID = Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS;
     private readonly List<unit> _rescueUnits = new();
     private readonly unit _interiorPortal;
     private readonly ObjectiveCastSpell _objectiveCastSpell;
@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       "ReplaceableTextures\\CommandButtons\\BTNArchimonde.blp")
     {
       _interiorPortal = interiorPortal;
-      _objectiveCastSpell = new ObjectiveCastSpell(RitualId, false);
+      _objectiveCastSpell = new ObjectiveCastSpell(RITUAL_ID, false);
       AddObjective(_objectiveCastSpell);
       ResearchId = Constants.UPGRADE_R04B_QUEST_COMPLETED_UNDER_THE_BURNING_SKY;
       Global = true;
@@ -62,7 +62,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       _musicTimer.Start(6, false, PlayMusic);
 
       foreach (var player in GeneralHelpers.GetAllPlayers())
-        SetPlayerAbilityAvailable(player, RitualId, false);
+        SetPlayerAbilityAvailable(player, RITUAL_ID, false);
     }
 
     private void PlayMusic()
