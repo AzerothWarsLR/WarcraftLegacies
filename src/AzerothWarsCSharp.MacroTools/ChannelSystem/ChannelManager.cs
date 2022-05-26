@@ -9,7 +9,6 @@ namespace AzerothWarsCSharp.MacroTools.ChannelSystem
     static ChannelManager()
     {
       PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDies, OnDeath);
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDies, OnStopCast);
       PeriodicEvents.AddPeriodicEvent(Action);
     }
 
@@ -67,17 +66,6 @@ namespace AzerothWarsCSharp.MacroTools.ChannelSystem
           }
     }
 
-    private static void OnStopCast()
-    {
-      if (ChannelsByUnit.TryGetValue(GetTriggerUnit(), out var channelsOnUnit))
-        foreach (var channel in channelsOnUnit)
-          if (channel.Active && channel.SpellId == GetSpellAbilityId())
-          {
-            channel.OnDeath(false);
-            channel.Active = false;
-          }
-    }
-
     public static void Add(Channel channel)
     {
       if (ChannelsByUnit.TryGetValue(channel.Caster, out var buffsOnUnit))
@@ -91,6 +79,7 @@ namespace AzerothWarsCSharp.MacroTools.ChannelSystem
       Channels.Add(channel);
       channel.Active = true;
       channel.Apply();
+      PlayerUnitEvents.Register(PlayerUnitEvent.SpellEndCast, channel.OnStop, channel.SpellId);
     }
 
     internal static void Remove(Channel channel)
@@ -101,6 +90,7 @@ namespace AzerothWarsCSharp.MacroTools.ChannelSystem
           ChannelsByUnit.Remove(channel.Caster);
         else
           channelsOnUnit.Remove(channel);
+        PlayerUnitEvents.Unregister(PlayerUnitEvent.SpellEndCast, channel.OnStop);
       }
     }
   }
