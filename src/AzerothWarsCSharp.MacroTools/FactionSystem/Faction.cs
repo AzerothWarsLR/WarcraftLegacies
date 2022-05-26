@@ -75,13 +75,13 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     public playercolor PlayerColor { get; }
 
-    private float Gold
+    public float Gold
     {
       get => I2R(GetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD));
       set => SetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD, R2I(value));
     }
 
-    private float Lumber
+    public float Lumber
     {
       get => I2R(GetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER));
       set => SetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER, R2I(value));

@@ -16,6 +16,12 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
       return SpellsByAbilityId[abilityId];
     }
 
+    private static void OnStop()
+    {
+      SpellsByAbilityId[GetSpellAbilityId()]
+        .OnStop(GetTriggerUnit());
+    }
+    
     private static void OnCast()
     {
       SpellsByAbilityId[GetSpellAbilityId()]
@@ -50,6 +56,7 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
     public static void Register(Spell spell)
     {
       PlayerUnitEvents.Register(PlayerUnitEvent.SpellEffect, OnCast, spell.Id);
+      PlayerUnitEvents.Register(PlayerUnitEvent.SpellEndCast, OnStop, spell.Id);
       PlayerUnitEvents.Register(PlayerUnitEvent.SpellLearnedByHeroType, OnLearn, spell.Id);
       SpellsByAbilityId.Add(spell.Id, spell);
     }

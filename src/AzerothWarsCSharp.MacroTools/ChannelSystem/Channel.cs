@@ -23,6 +23,14 @@ namespace AzerothWarsCSharp.MacroTools.ChannelSystem
     }
 
     /// <summary>
+    ///   Fired when the caster stops channeling.
+    /// </summary>
+    internal void OnStop()
+    {
+      Active = false;
+    }
+    
+    /// <summary>
     ///   Called by the system. Do not call yourself.
     /// </summary>
     public abstract void Apply();

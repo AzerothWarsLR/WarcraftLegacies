@@ -1,6 +1,5 @@
 ﻿using System;
 using AzerothWarsCSharp.MacroTools.Libraries;
-using War3Api;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -10,6 +9,11 @@ namespace AzerothWarsCSharp.MacroTools
   {
     private const float HERO_DROP_DIST = 50; //The radius in which heroes spread out items when they drop them
 
+    public static Point GetPosition(this unit unit)
+    {
+      return new Point(GetUnitX(unit), GetUnitY(unit));
+    }
+    
     public static player OwningPlayer(this unit unit)
     {
       return GetOwningPlayer(unit);
@@ -21,6 +25,7 @@ namespace AzerothWarsCSharp.MacroTools
     /// </summary>
     public static void SetWaygateDestination(this unit waygate, Point destination)
     {
+      WaygateActivate(waygate, true);
       WaygateSetDestination(waygate, destination.X, destination.Y);
     }
 
