@@ -10,27 +10,27 @@ namespace AzerothWarsCSharp.MacroTools.Channels
     private readonly timer _timer;
     private readonly timerdialog _timerDialog;
 
-    public override void OnApply()
+    protected override void OnApply()
     {
       UnitAddAbility(Caster, _spellImmunityId);
+      TimerStart(_timer, Duration, false, null);
       TimerDialogDisplay(_timerDialog, true);
       TimerDialogSetTitle(_timerDialog, "Legion Summon");
-      TimerStart(_timer, 180, false, null);
-      var ability = BlzGetUnitAbility(Caster, SpellId);
-      BlzGetAbilityRealLevelField(ability, ABILITY_RLF_DURATION_NORMAL, GetUnitAbilityLevel(Caster, SpellId));
       PingMinimap(GetUnitX(Caster), GetUnitY(Caster), 8);
+      DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "The Burning Legion is being summoned!");
     }
 
-    public override void OnDispose()
+    protected override void OnDispose()
     {
       UnitRemoveAbility(Caster, _spellImmunityId);
       DestroyTimer(_timer);
       DestroyTimerDialog(_timerDialog);
     }
 
-    public override void OnExpire()
+    protected override void OnExpire()
     {
-      foreach (var player in GeneralHelpers.GetAllPlayers()) SetPlayerAbilityAvailable(player, SpellId, false);
+      foreach (var player in GeneralHelpers.GetAllPlayers())
+        SetPlayerAbilityAvailable(player, SpellId, false);
     }
 
     public SummonLegionChannel(unit caster, int spellId, int spellImmunityId) : base(caster, spellId)
