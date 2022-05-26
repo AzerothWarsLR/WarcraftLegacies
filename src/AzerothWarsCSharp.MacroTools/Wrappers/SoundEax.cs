@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
 
   public static class EaxExtensions
   {
-    public static string ToString(this SoundEax soundEax)
+    public static string GetStringEquivalent(this SoundEax soundEax)
     {
       switch (soundEax)
       {
@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
         case SoundEax.HeroAcks:
           return "HeroAcksEAX";
         default:
-          throw new NotImplementedException(nameof(ToString));
+          throw new NotImplementedException(nameof(GetStringEquivalent));
       }
     }
   }
