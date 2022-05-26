@@ -1,5 +1,4 @@
 ﻿using AzerothWarsCSharp.MacroTools.ChannelSystem;
-using AzerothWarsCSharp.MacroTools.Libraries;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Channels
@@ -25,12 +24,6 @@ namespace AzerothWarsCSharp.MacroTools.Channels
       UnitRemoveAbility(Caster, _spellImmunityId);
       DestroyTimer(_timer);
       DestroyTimerDialog(_timerDialog);
-    }
-
-    protected override void OnExpire()
-    {
-      foreach (var player in GeneralHelpers.GetAllPlayers())
-        SetPlayerAbilityAvailable(player, SpellId, false);
     }
 
     public SummonLegionChannel(unit caster, int spellId, int spellImmunityId) : base(caster, spellId)

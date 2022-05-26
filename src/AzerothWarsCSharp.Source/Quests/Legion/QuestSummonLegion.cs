@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 {
   public sealed class QuestSummonLegion : QuestData
   {
-    private static readonly int RitualId = FourCC("A00J");
+    private static readonly int RitualId = Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS;
     private readonly List<unit> _rescueUnits = new();
     private readonly unit _interiorPortal;
     private readonly ObjectiveCastSpell _objectiveCastSpell;
@@ -60,6 +60,9 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
       _musicTimer = new TimerWrapper();
       _musicTimer.Start(6, false, PlayMusic);
+
+      foreach (var player in GeneralHelpers.GetAllPlayers())
+        SetPlayerAbilityAvailable(player, RitualId, false);
     }
 
     private void PlayMusic()
