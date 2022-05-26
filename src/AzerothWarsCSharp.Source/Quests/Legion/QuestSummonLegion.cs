@@ -15,15 +15,15 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
   {
     private static readonly int RitualId = FourCC("A00J");
     private readonly List<unit> _rescueUnits = new();
-    private readonly unit _exitPortal;
+    private readonly unit _interiorPortal;
     private readonly ObjectiveCastSpell _objectiveCastSpell;
     private TimerWrapper _musicTimer = new();
 
-    public QuestSummonLegion(Rectangle rescueRect, unit exitPortal) : base("Under the Burning Sky",
+    public QuestSummonLegion(Rectangle rescueRect, unit interiorPortal) : base("Under the Burning Sky",
       "The greater forces of the Burning Legion lie in wait in the vast expanse of the Twisting Nether. Use the Book of Medivh to tear open a hole in space-time, and visit the full might of the Legion upon Azeroth.",
       "ReplaceableTextures\\CommandButtons\\BTNArchimonde.blp")
     {
-      _exitPortal = exitPortal;
+      _interiorPortal = interiorPortal;
       _objectiveCastSpell = new ObjectiveCastSpell(RitualId, false);
       AddObjective(_objectiveCastSpell);
       ResearchId = Constants.UPGRADE_R04B_QUEST_COMPLETED_UNDER_THE_BURNING_SKY;
@@ -68,13 +68,16 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       _musicTimer.Dispose();
     }
 
-    private void CreatePortals(player whichPlayer)
+    private void CreatePortals(player? whichPlayer)
     {
-      SetUnitOwner(_exitPortal, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
-      var position = _objectiveCastSpell.Caster!.GetPosition();
-      var entrancePortal = CreateUnit(whichPlayer, Constants.UNIT_N037_DEMON_PORTAL, position.X, position.Y, 0);
-      entrancePortal.SetWaygateDestination(_exitPortal.GetPosition());
-      _exitPortal.SetWaygateDestination(entrancePortal.GetPosition());
+      Point exteriorPortalPosition = _objectiveCastSpell.Caster != null
+        ? _objectiveCastSpell.Caster!.GetPosition()
+        : new Point(0, 0);
+      SetUnitOwner(_interiorPortal, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
+      var exteriorPortal = CreateUnit(whichPlayer ?? Player(PLAYER_NEUTRAL_AGGRESSIVE),
+        Constants.UNIT_N037_DEMON_PORTAL, exteriorPortalPosition.X, exteriorPortalPosition.Y, 0);
+      exteriorPortal.SetWaygateDestination(_interiorPortal.GetPosition());
+      _interiorPortal.SetWaygateDestination(exteriorPortal.GetPosition());
     }
 
     protected override void OnAdd(Faction whichFaction)
