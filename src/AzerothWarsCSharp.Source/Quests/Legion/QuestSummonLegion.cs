@@ -55,7 +55,8 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
       CreatePortals(whichFaction.Player);
 
-      var archimondeDialogue = new SoundWrapper("U08Archimonde19.flac", soundEax: SoundEax.HeroAcks);
+      var archimondeDialogue = new SoundWrapper(@"Sound\Dialogue\UndeadCampaign\Undead08\U08Archimonde19.flac",
+        soundEax: SoundEax.HeroAcks);
       archimondeDialogue.Play(true);
 
       _musicTimer = new TimerWrapper();
