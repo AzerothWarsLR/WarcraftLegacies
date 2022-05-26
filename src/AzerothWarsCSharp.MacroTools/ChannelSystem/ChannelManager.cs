@@ -78,7 +78,7 @@ namespace AzerothWarsCSharp.MacroTools.ChannelSystem
           }
     }
 
-    public static Channel Add(Channel channel)
+    public static void Add(Channel channel)
     {
       if (ChannelsByUnit.TryGetValue(channel.Caster, out var buffsOnUnit))
         buffsOnUnit.Add(channel);
@@ -91,8 +91,6 @@ namespace AzerothWarsCSharp.MacroTools.ChannelSystem
       Channels.Add(channel);
       channel.Active = true;
       channel.Apply();
-
-      return channel;
     }
 
     internal static void Remove(Channel channel)

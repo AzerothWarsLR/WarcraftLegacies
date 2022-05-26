@@ -8,10 +8,18 @@ namespace AzerothWarsCSharp.MacroTools.ChannelSystem
     public unit Caster { get; }
     public int SpellId { get; }
 
+    /// <summary>
+    ///   The remaining duration before this buff expires.
+    /// </summary>
+    public float Duration { get; set; }
+
     protected Channel(unit caster, int spellId)
     {
       Caster = caster;
       SpellId = spellId;
+      var ability = BlzGetUnitAbility(Caster, SpellId);
+      Duration = BlzGetAbilityRealLevelField(ability, ABILITY_RLF_DURATION_NORMAL,
+        GetUnitAbilityLevel(Caster, SpellId));
     }
 
     /// <summary>
@@ -27,14 +35,14 @@ namespace AzerothWarsCSharp.MacroTools.ChannelSystem
     /// <summary>
     ///   Executes immediately upon registry of the Channel.
     /// </summary>
-    public virtual void OnApply()
+    protected virtual void OnApply()
     {
     }
 
     /// <summary>
     ///   Executes when the buff is removed for any reason whatsoever.
     /// </summary>
-    public virtual void OnDispose()
+    protected virtual void OnDispose()
     {
     }
 
@@ -42,7 +50,7 @@ namespace AzerothWarsCSharp.MacroTools.ChannelSystem
     ///   Executes when the Channel expires by reaching the end of its duration. Does not trigger when the buff is removed via
     ///   a dispel or target dies.
     /// </summary>
-    public virtual void OnExpire()
+    protected virtual void OnExpire()
     {
     }
 

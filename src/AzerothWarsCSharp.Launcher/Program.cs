@@ -4,14 +4,11 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
-using AzerothWarsCSharp.ObjectFactory.Units;
 using CSharpLua;
 using Microsoft.CodeAnalysis;
-using War3Api.Object;
 using War3Net.Build;
 using War3Net.Build.Extensions;
 using War3Net.Build.Info;
-using War3Net.Build.Object;
 using War3Net.IO.Mpq;
 using WCSharp.ConstantGenerator;
 using CoreSystemProvider = CSharpLua.CoreSystem.CoreSystemProvider;
@@ -102,7 +99,7 @@ namespace AzerothWarsCSharp.Launcher
       var map = Map.Open(baseMapPath);
 
       FixDoodadData(map);
-      SetTestPlayerSlot(map, 3);
+      SetTestPlayerSlot(map, 0);
       var builder = new MapBuilder(map);
       builder.AddFiles(baseMapPath, "*", SearchOption.AllDirectories);
       builder.AddFiles(ASSETS_FOLDER_PATH, "*", SearchOption.AllDirectories);

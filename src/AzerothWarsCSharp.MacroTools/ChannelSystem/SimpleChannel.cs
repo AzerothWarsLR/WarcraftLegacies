@@ -1,4 +1,5 @@
-﻿using static War3Api.Common;
+﻿using WCSharp.Events;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.ChannelSystem
 {
@@ -15,6 +16,15 @@ namespace AzerothWarsCSharp.MacroTools.ChannelSystem
 
     public sealed override void Action()
     {
+      if (Duration <= PeriodicEvents.SYSTEM_INTERVAL)
+      {
+        OnExpire();
+        Active = false;
+      }
+      else
+      {
+        Duration -= PeriodicEvents.SYSTEM_INTERVAL;
+      }
     }
 
     public override void Dispose()
