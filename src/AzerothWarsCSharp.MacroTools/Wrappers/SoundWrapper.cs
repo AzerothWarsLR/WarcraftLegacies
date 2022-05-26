@@ -24,11 +24,12 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
       StartSound(_sound);
     }
 
-    public SoundWrapper(string fileName, bool looping = false, bool is3D = false, bool stopWhenOutOfRange = false,
-      int fadeInRate = 1, int fadeOutRate = 1, SoundEax soundEax = SoundEax.Default)
+    public SoundWrapper(string fileName, bool looping = false, bool is3D = false, bool stopWhenOutOfRange = true,
+      int fadeInRate = 0, int fadeOutRate = 0, SoundEax soundEax = SoundEax.Default)
     {
-      _sound = CreateSoundFilenameWithLabel(fileName, looping, is3D, stopWhenOutOfRange, fadeInRate, fadeOutRate,
+      _sound = CreateSound(fileName, looping, is3D, stopWhenOutOfRange, fadeInRate, fadeOutRate,
         soundEax.GetStringEquivalent());
+      SetSoundVolume(_sound, 100);
       SetSoundDuration(_sound, GetSoundFileDuration(fileName));
     }
   }
