@@ -15,13 +15,13 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
         throw new ObjectDisposedException(nameof(SoundWrapper));
       }
 
+      StartSound(_sound);
+
       if (disposeAfter)
       {
         KillSoundWhenDone(_sound);
         _disposed = true;
       }
-
-      StartSound(_sound);
     }
 
     public SoundWrapper(string fileName, bool looping = false, bool is3D = false, bool stopWhenOutOfRange = true,
@@ -30,7 +30,6 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
       _sound = CreateSound(fileName, looping, is3D, stopWhenOutOfRange, fadeInRate, fadeOutRate,
         soundEax.GetStringEquivalent());
       SetSoundVolume(_sound, 100);
-      SetSoundDuration(_sound, GetSoundFileDuration(fileName));
     }
   }
 }
