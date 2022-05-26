@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -22,12 +23,12 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       "ReplaceableTextures\\CommandButtons\\BTNFelOrcFortress.blp")
     {
       _demonGates = demonGates;
-      AddQuestItem(new QuestItemLegendDead(LegendDraenei.LegendExodarship));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N01J_ZANGARMARSH_15GOLD_MIN)));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N02N_BLADE_S_EDGE_MOUNTAINS_15GOLD_MIN)));
-      AddQuestItem(new QuestItemUpgrade(FourCC("o030"), FourCC("o02Y")));
-      AddQuestItem(new QuestItemExpire(1450));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveLegendDead(LegendDraenei.LegendExodarship));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N01J_ZANGARMARSH_15GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N02N_BLADE_S_EDGE_MOUNTAINS_15GOLD_MIN)));
+      AddObjective(new ObjectiveUpgrade(FourCC("o030"), FourCC("o02Y")));
+      AddObjective(new ObjectiveExpire(1450));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R00P");
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE))
@@ -36,19 +37,19 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 
     //Todo: bad flavor
     protected override string CompletionPopup =>
-      "Hellfire Citadel has been subjugated, and its military is now free to assist the " + Holder.Team.Name + ".";
+      "Hellfire Citadel has been subjugated, and its military is now free to assist the Fel Horde.";
 
     protected override string RewardDescription =>
       "Control of all units in Hellfire Citadel and enable Kargath to be trained at the altar";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _demonGates) unit.Rescue(Holder.Player);
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      if (GetLocalPlayer() == Holder.Player) PlayThematicMusic("war3mapImported\\FelTheme.mp3");
+      foreach (var unit in _demonGates) unit.Rescue(completingFaction.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\FelTheme.mp3");
     }
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }

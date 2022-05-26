@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using WCSharp.Shared.Data;
-
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Wrappers
@@ -10,17 +10,24 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
   ///   Manages the creation and destruction of the internal group automatically,
   ///   preventing memory leak issues.
   /// </summary>
-  public sealed class GroupWrapper
+  public sealed class GroupWrapper : IDisposable
   {
     private readonly group _group;
+    private bool _disposed;
 
     public GroupWrapper()
     {
       _group = CreateGroup();
     }
 
+    public void Dispose()
+    {
+      Dispose(true);
+    }
+
     /// <summary>
-    ///   Empties the units in this group into a C# List.
+    ///   Empties the units in this group into a List,
+    ///   then disposes the <see cref="GroupWrapper"/>.
     /// </summary>
     public List<unit> EmptyToList()
     {
@@ -32,7 +39,7 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
         GroupRemoveUnit(_group, firstOfGroup);
         firstOfGroup = FirstOfGroup(_group);
       }
-
+      Dispose();
       return list;
     }
 
@@ -47,13 +54,13 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
       GroupEnumUnitsSelected(_group, whichPlayer, null);
       return this;
     }
-    
+
     public GroupWrapper EnumUnitsOfType(int unitType)
     {
       GroupEnumUnitsOfType(_group, GetObjectName(unitType), null);
       return this;
     }
-    
+
     public GroupWrapper EnumUnitsOfPlayer(player player)
     {
       GroupEnumUnitsOfPlayer(_group, player, null);
@@ -64,13 +71,13 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
     {
       return EnumUnitsInRect(rect.Rect);
     }
-    
+
     public GroupWrapper EnumUnitsInRect(rect rect)
     {
       GroupEnumUnitsInRect(_group, rect, null);
       return this;
     }
-    
+
     public GroupWrapper EnumUnitsInRange(float x, float y, float radius)
     {
       GroupEnumUnitsInRange(_group, x, y, radius, null);
@@ -79,7 +86,15 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
 
     ~GroupWrapper()
     {
-      DestroyGroup(_group);
+      Dispose(false);
+    }
+
+    private void Dispose(bool disposing)
+    {
+      if (_disposed) return;
+
+      if (disposing) DestroyGroup(_group);
+      _disposed = true;
     }
   }
 }

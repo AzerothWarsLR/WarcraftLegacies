@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -23,9 +24,9 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       "ReplaceableTextures\\CommandButtons\\BTNNagaMyrmidon.blp")
     {
       _unitToMakeInvulnerable = unitToMakeInvulnerable;
-      AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.StartQuest3, "the exit"));
-      AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.MaelstromAmbient, "the Maelstrom"));
-      AddQuestItem(new QuestItemCastSpell(RitualId, true));
+      AddObjective(new ObjectiveLegendReachRect(LegendNaga.LegendIllidan, Regions.StartQuest3, "the exit"));
+      AddObjective(new ObjectiveLegendReachRect(LegendNaga.LegendIllidan, Regions.MaelstromAmbient, "the Maelstrom"));
+      AddObjective(new ObjectiveCastSpell(RitualId, true));
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
@@ -39,10 +40,10 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     protected override string RewardDescription => "Nazjatar and the Naga's loyalty";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
       NagaSetup.FactionNaga.AddQuest(NagaQuestSetup.REDEMPTION_PATH);
       NagaQuestSetup.REDEMPTION_PATH.Progress = QuestProgress.Undiscovered;
       NagaSetup.FactionNaga.AddQuest(NagaQuestSetup.EXILE_PATH);

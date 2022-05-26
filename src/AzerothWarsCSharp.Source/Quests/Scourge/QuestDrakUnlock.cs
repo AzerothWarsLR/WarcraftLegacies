@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -18,10 +19,10 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       "Draktharon's Keep", "Drak'tharon's Keep will be the place for an outpost by the sea.",
       "ReplaceableTextures\\CommandButtons\\BTNUndeadShipyard.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n030"))));
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendDraktharonkeep, false));
-      AddQuestItem(new QuestItemExpire(1140));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n030"))));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendDraktharonkeep, false));
+      AddObjective(new ObjectiveExpire(1140));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R08J");
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
@@ -36,14 +37,14 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override string RewardDescription => "Control of all buildings in Drak'tharon Keep";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
     }
   }
 }

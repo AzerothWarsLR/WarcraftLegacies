@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -14,8 +15,8 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       "Tortolla was badly wounded during the War of the Ancients, and has been resting ever since.",
       "ReplaceableTextures\\CommandButtons\\BTNSeaTurtleGreen.blp")
     {
-      AddQuestItem(new QuestItemTime(1200));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveTime(1200));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R049");
 
       _sleepingTortolla = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), HeroId, -12827, 5729, 333);
@@ -29,19 +30,19 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
 
     protected override string RewardDescription => "You can summon Tortolla from the Altar of Elders";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       RemoveUnit(_sleepingTortolla);
     }
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       RemoveUnit(_sleepingTortolla);
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(HeroId, 1);
+      whichFaction.ModObjectLimit(HeroId, 1);
     }
   }
 }

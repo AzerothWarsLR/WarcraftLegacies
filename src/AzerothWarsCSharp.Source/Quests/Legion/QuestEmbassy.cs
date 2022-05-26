@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       "A stronger foothold in this world will be required to field the Burning Legion's war machines and to in more of its lieutenants."
       , "ReplaceableTextures\\CommandButtons\\BTNDemonBlackCitadel.blp")
     {
-      AddQuestItem(new QuestItemUpgrade(FourCC("e01H"), FourCC("e01F")));
+      AddObjective(new ObjectiveUpgrade(FourCC("e01H"), FourCC("e01F")));
       ResearchId = FourCC("R042");
     }
 

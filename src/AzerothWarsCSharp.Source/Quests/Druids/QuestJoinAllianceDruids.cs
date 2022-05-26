@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -12,17 +13,17 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       "With a world ending threat happening, the Alliance has reached to the Night Elves to join them",
       "ReplaceableTextures\\CommandButtons\\BTNalliance.blp")
     {
-      AddQuestItem(new QuestItemCastSpell(FourCC("A0IG"), true));
+      AddObjective(new ObjectiveCastSpell(FourCC("A0IG"), true));
     }
     
     protected override string CompletionPopup => "The Druids have joined the Alliance";
 
     protected override string RewardDescription => "Join the Alliance team";
     
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       UnitRemoveAbility(LegendDruids.LegendMalfurion.Unit, FourCC("A0IG"));
-      Holder.Team = TeamSetup.Alliance;
+      completingFaction.Team = TeamSetup.Alliance;
     }
   }
 }

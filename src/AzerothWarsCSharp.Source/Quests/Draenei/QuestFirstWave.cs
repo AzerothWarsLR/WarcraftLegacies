@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -15,9 +16,9 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       "The Fel Orc attack will begin at any moment, the Draenei need to evacuate their civilians aboard the Exodar",
       "ReplaceableTextures\\CommandButtons\\BTNDraeneiDivineCitadel.blp")
     {
-      AddQuestItem(new QuestItemTime(720));
-      AddQuestItem(new QuestItemLegendNotPermanentlyDead(LegendDraenei.LegendExodarship));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveTime(720));
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendDraenei.LegendExodarship));
+      AddObjective(new ObjectiveSelfExists());
       _unitsToKill = new List<unit>
       {
         PreplacedUnitSystem.GetUnit(FourCC("o051"), Regions.DraeneiEvacuation.Center),
@@ -33,7 +34,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
     protected override string PenaltyDescription =>
       "You lose the Divine Citadel, Teleporter, Astral Sanctum and Crystal Spire at Azuremyst Isle";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _unitsToKill) KillUnit(unit);
     }

@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using static War3Api.Common;
@@ -19,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
       _waygateA = waygateA;
       _waygateB = waygateB;
       Global = true;
-      AddQuestItem(new QuestItemCastSpell(FourCC("A0O1"), true));
+      AddObjective(new ObjectiveCastSpell(FourCC("A0O1"), true));
     }
 
     protected override string CompletionPopup =>
@@ -28,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
     protected override string RewardDescription =>
       "Gain control of C'thun and enable you to open the Gates of Ahn'qiraj";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       WaygateActivate(_waygateA, true);
       ShowUnit(_waygateA, true);

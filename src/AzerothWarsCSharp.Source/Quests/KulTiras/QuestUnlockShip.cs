@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -18,8 +19,8 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
       "The Troll Empire of Zandalar is a danger to the safety of Kul'tiras and the Alliance. Before setting sail, we must eliminate them.",
       "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendDazaralor, false));
-      AddQuestItem(new QuestItemControlLegend(LegendKultiras.LegendBoralus, true));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendDazaralor, false));
+      AddObjective(new ObjectiveControlLegend(LegendKultiras.LegendBoralus, true));
       _proudmooreCapitalShip = proudmooreCapitalShip;
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
@@ -41,25 +42,25 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
     protected override string RewardDescription =>
       "Unpause the Proudmoore capital ship and unlocks the buildings inside.";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
       PauseUnit(_proudmooreCapitalShip, false);
     }
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       LegendKultiras.LegendKatherine.StartingXp = GetHeroXP(LegendKultiras.LegendKatherine.Unit);
-      Holder.Obliterate();
-      LegendKultiras.LegendKatherine.Spawn(Holder.Player, -15223, -22856, 110);
+      completingFaction.Obliterate();
+      LegendKultiras.LegendKatherine.Spawn(completingFaction.Player, -15223, -22856, 110);
       UnitAddItem(LegendKultiras.LegendKatherine.Unit,
         CreateItem(FourCC("I00M"), GetUnitX(LegendKultiras.LegendKatherine.Unit),
           GetUnitY(LegendKultiras.LegendKatherine.Unit)));
-      if (GetLocalPlayer() == Holder.Player)
+      if (GetLocalPlayer() == completingFaction.Player)
         SetCameraPosition(Regions.ShipAmbient.Center.X, Regions.ShipAmbient.Center.Y);
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
       PauseUnit(_proudmooreCapitalShip, true);
-      SetUnitOwner(_proudmooreCapitalShip, Holder.Player, true);
+      SetUnitOwner(_proudmooreCapitalShip, completingFaction.Player, true);
     }
   }
 }

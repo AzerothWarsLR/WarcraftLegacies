@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -14,8 +15,8 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       "The Kul'tiran people and their fleet have been a threat to the Zandalari Empire for ages, it is time to put them to rest.",
       "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendDazaralor, true));
-      AddQuestItem(new QuestItemLegendDead(LegendKultiras.LegendBoralus));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendDazaralor, true));
+      AddObjective(new ObjectiveLegendDead(LegendKultiras.LegendBoralus));
       ResearchId = QuestResearchId;
     }
 
@@ -27,13 +28,11 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 
     protected override string PenaltyDescription => "You can no longer build shipyards, but you unlock Zulfarrak";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
-      unit u;
-      group tempGroup;
-      tempGroup = CreateGroup();
+      @group tempGroup = CreateGroup();
       GroupEnumUnitsInRect(tempGroup, Regions.Zulfarrak.Rect, null);
-      u = FirstOfGroup(tempGroup);
+      unit u = FirstOfGroup(tempGroup);
       while (true)
       {
         if (u == null) break;
@@ -44,7 +43,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
           if (IsUnitType(u, UNIT_TYPE_HERO))
             KillUnit(u);
           else
-            u.Rescue(Holder.Player);
+            u.Rescue(completingFaction.Player);
         }
 
         GroupRemoveUnit(tempGroup, u);

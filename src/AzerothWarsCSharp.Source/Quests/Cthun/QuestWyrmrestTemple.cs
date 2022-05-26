@@ -12,12 +12,12 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
       "Yor'sahj the Unsleeping)s mission is to destroy the Wyrmrest temple, assist him and he will join the Black Empire",
       "ReplaceableTextures\\CommandButtons\\BTNHeroMastermind.blp")
     {
-      AddQuestItem(new QuestItemAcquireArtifact(ArtifactSetup.ArtifactDemonsoul));
-      AddQuestItem(new QuestItemArtifactInRect(ArtifactSetup.ArtifactDemonsoul, Regions.WyrmrestTemple,
+      AddObjective(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactDemonsoul));
+      AddObjective(new ObjectiveArtifactInRect(ArtifactSetup.ArtifactDemonsoul, Regions.WyrmrestTemple,
         "Wyrmrest Temple"));
-      AddQuestItem(new QuestItemLegendDead(LegendNeutral.LegendSaragosa));
-      AddQuestItem(new QuestItemLegendDead(LegendNeutral.LegendVaelastrasz));
-      AddQuestItem(new QuestItemLegendDead(LegendNeutral.LegendOcculus));
+      AddObjective(new ObjectiveLegendDead(LegendNeutral.LegendSaragosa));
+      AddObjective(new ObjectiveLegendDead(LegendNeutral.LegendVaelastrasz));
+      AddObjective(new ObjectiveLegendDead(LegendNeutral.LegendOcculus));
       ResearchId = FourCC("R07S");
     }
 

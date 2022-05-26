@@ -19,11 +19,11 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       "The Horde still needs to establish a strong strategic foothold into Kalimdor. There is an opportune crossroads nearby.",
       "ReplaceableTextures\\CommandButtons\\BTNBarracks.blp")
     {
-      AddQuestItem(
-        new QuestItemKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nrzm"), rescueRect.Center))); //Razorman Medicine Man
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01T"))));
-      AddQuestItem(new QuestItemExpire(1460));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(
+        new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nrzm"), rescueRect.Center))); //Razorman Medicine Man
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01T"))));
+      AddObjective(new ObjectiveExpire(1460));
+      AddObjective(new ObjectiveSelfExists());
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
@@ -44,18 +44,18 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       CreateUnit(whichPlayer, wardId, -12844, -1975, 0);
       CreateUnit(whichPlayer, wardId, -10876, -2066, 0);
       CreateUnit(whichPlayer, wardId, -11922, -824, 0);
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 2000);
+      whichPlayer.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 2000);
     }
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       GiveCrossroads(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       _rescueUnits.Clear();
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      GiveCrossroads(Holder.Player);
+      GiveCrossroads(completingFaction.Player);
       _rescueUnits.Clear();
     }
   }

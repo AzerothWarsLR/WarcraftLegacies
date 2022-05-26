@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -17,10 +18,10 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       "Hogger and his pack have taken over Goldshire, clear them out!",
       "ReplaceableTextures\\CommandButtons\\BTNGnoll.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(hogger)); //Hogger
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00Z"))));
-      AddQuestItem(new QuestItemExpire(1335));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveKillUnit(hogger)); //Hogger
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00Z"))));
+      AddObjective(new ObjectiveExpire(1335));
+      AddObjective(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
@@ -33,14 +34,14 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
 
     protected override string RewardDescription => "Control of all units in Goldshire";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
     }
   }
 }

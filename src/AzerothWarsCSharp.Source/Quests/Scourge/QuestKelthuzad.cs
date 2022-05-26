@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
@@ -12,8 +13,9 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       "Kel'thuzad is the leader of the Cult of the Damned and an extraordinarily powerful necromancer. If he were to be brought to the Sunwell and submerged in its waters, he would be reanimated as an immortal Lich.",
       "ReplaceableTextures\\CommandButtons\\BTNLichVersion2.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendQuelthalas.LegendSunwell, false));
-      AddQuestItem(new QuestItemLegendInRect(LegendScourge.LegendKelthuzad, Regions.Sunwell, "The Sunwell"));
+      AddObjective(new ObjectiveControlLegend(LegendQuelthalas.LegendSunwell, false));
+      AddObjective(new ObjectiveLegendInRect(LegendScourge.LegendKelthuzad, Regions.Sunwell, "The Sunwell"));
+      Required = true;
     }
 
     protected override string CompletionPopup
@@ -30,7 +32,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override string RewardDescription => "Kel'thuzad becomes a Lich";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       LegendScourge.LegendKelthuzad.UnitType = LegendScourge.UnittypeKelthuzadLich;
       LegendScourge.LegendKelthuzad.PermaDies = false;

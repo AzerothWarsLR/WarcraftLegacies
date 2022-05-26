@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -16,16 +17,16 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     protected override string RewardDescription =>
       "You can summon Alexandros Mograine from the " + GetObjectName(AltarId);
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(HeroId, 1);
+      whichFaction.ModObjectLimit(HeroId, 1);
     }
 
     public QuestMograine() : base("The Exile",
       "The Lich King, looming over Northrend from Icecrown's peak, is the greatest threat Lordaeron has ever faced. He must be destroyed.",
       "ReplaceableTextures\\CommandButtons\\BTNAlexandros.blp")
     {
-      AddQuestItem(new QuestItemLegendDead(LegendScourge.LegendLichking));
+      AddObjective(new ObjectiveLegendDead(LegendScourge.LegendLichking));
       ResearchId = FourCC("R06P");
     }
   }

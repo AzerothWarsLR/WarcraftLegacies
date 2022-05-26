@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -20,9 +21,9 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
       "ReplaceableTextures\\CommandButtons\\BTNFelOrcWatchTower.blp")
     {
       _kilsorrowFortress = kilsorrowFortress;
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09X"))));
-      AddQuestItem(new QuestItemExpire(1452));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09X"))));
+      AddObjective(new ObjectiveExpire(1452));
+      AddObjective(new ObjectiveSelfExists());
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
@@ -34,19 +35,19 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 
     //Todo: bad flavour
     protected override string CompletionPopup =>
-      "Kil'sorrow is now established, and its military is now free to assist the " + Holder.Team.Name + ".";
+      "Kil'sorrow is now established, and its military is now free to assist the Fel Horde.";
 
     //Todo: indicate where those Demon Gates are
     protected override string RewardDescription => "Control of all units in Kil'sorrow and 3 new Demon Gates";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
       _kilsorrowFortress.Rescue(FelHordeSetup.FactionFelHorde.Player);
     }
   }

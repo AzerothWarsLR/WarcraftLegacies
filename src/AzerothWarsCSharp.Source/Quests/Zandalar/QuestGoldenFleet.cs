@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
@@ -14,16 +15,16 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
     protected override string RewardDescription =>
       "Rastakhan is trainable at the altar and Direhorns are trainable";
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(QuestResearchId, 1);
+      whichFaction.ModObjectLimit(QuestResearchId, 1);
     }
 
     public QuestGoldenFleet() : base("The Golden Fleet",
       "The King has ordered for the greatest armada in the world. The construction of the Golden Fleet has begun!",
       "ReplaceableTextures\\CommandButtons\\BTNTrollConjurer.blp")
     {
-      AddQuestItem(new QuestItemTrain(FourCC("o04W"), FourCC("o049"), 5));
+      AddObjective(new ObjectiveTrain(FourCC("o04W"), FourCC("o049"), 5));
       ResearchId = QuestResearchId;
     }
   }

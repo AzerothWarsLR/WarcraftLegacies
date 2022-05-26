@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using static War3Api.Common;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
@@ -11,11 +12,11 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       "Sylvanas, the Ranger-General of Silvermoon, stands between the legions of the Scourge and the Sunwell. Destroy her people, and her soul will be transformed into a tormented Banshee under the Scourge's control.",
       "ReplaceableTextures\\CommandButtons\\BTNBansheeRanger.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendQuelthalas.LegendSunwell, false));
+      AddObjective(new ObjectiveControlLegend(LegendQuelthalas.LegendSunwell, false));
       ResearchId = FourCC("R02D");
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       SetUnitAnimation(LegendQuelthalas.LegendSunwell.Unit, "stand second");
       SetUnitAnimation(LegendQuelthalas.LegendSunwell.Unit, "stand third");

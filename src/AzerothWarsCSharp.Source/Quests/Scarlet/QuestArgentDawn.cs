@@ -15,24 +15,24 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       "The Militia of Lordaeron has been solidified into the Argent Dawn, a strong military force lead by Tirion Fording.",
       "ReplaceableTextures\\CommandButtons\\BTNResurrection.blp")
     {
-      AddQuestItem(new QuestItemResearch(RequiredResearchId, FourCC("h00T")));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveResearch(RequiredResearchId, FourCC("h00T")));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R087");
       Global = true;
     }
 
     protected override string CompletionPopup =>
-      "The Argent Dawn has been declared and ready to join the " + Holder.Team.Name + ".";
+      "The Argent Dawn has been declared and ready to join the Alliance.";
 
     protected override string RewardDescription => "Unlock your elites, Crusader units and Tirion Fordring";
     
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      Holder.Name = "Argent";
-      Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNTirionPaladin.blp";
+      completingFaction.Name = "Argent";
+      completingFaction.Icon = "ReplaceableTextures\\CommandButtons\\BTNTirionPaladin.blp";
       SetPlayerTechResearched(ScarletSetup.FactionScarlet.Player, FourCC("R086"), 1);
       PlayThematicMusic("war3mapImported\\ScarletTheme.mp3");
-      SetPlayerColor(Holder.Player, PLAYER_COLOR_SNOW);
+      SetPlayerColor(completingFaction.Player, PLAYER_COLOR_SNOW);
 
       ScarletSetup.FactionScarlet.ModObjectLimit(FourCC("h08I"), -Faction.UNLIMITED); //Crusader
       ScarletSetup.FactionScarlet.ModObjectLimit(FourCC("h09I"), Faction.UNLIMITED); //Argent Crusader
@@ -44,9 +44,9 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       ScarletSetup.FactionScarlet.ModObjectLimit(FourCC("h09J"), Faction.UNLIMITED); //Lilian
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(RequiredResearchId, 1);
+      whichFaction.ModObjectLimit(RequiredResearchId, 1);
     }
   }
 }

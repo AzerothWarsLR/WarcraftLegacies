@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -18,11 +19,11 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
       "The Old God C'thun is imprisoned deep within the temple of Ahn'qiraj, defended by mechanical wardens left behind by the Titans.",
       "ReplaceableTextures\\CommandButtons\\BTNArmorGolem.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nsgg")))); //Golem
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02K"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n078"))));
-      AddQuestItem(new QuestItemExpire(1428));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nsgg")))); //Golem
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02K"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n078"))));
+      AddObjective(new ObjectiveExpire(1428));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R07B");
       _waygate = waygate;
 
@@ -47,15 +48,15 @@ namespace AzerothWarsCSharp.Source.Quests.Cthun
         Regions.Silithus_Stone_Interior.Center.Y);
     }
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       ActivateWaygate();
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
       ActivateWaygate();
     }
   }

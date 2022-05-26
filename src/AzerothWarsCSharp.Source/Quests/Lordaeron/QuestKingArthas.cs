@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -16,10 +17,10 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "Arthas Menethil is the one true heir of the Kingdom of Lordaeron. The only thing standing in the way of his coronation is the world-ending threat of the Scourge.",
       "ReplaceableTextures\\CommandButtons\\BTNArthas.blp")
     {
-      AddQuestItem(new QuestItemLegendNotPermanentlyDead(LegendLordaeron.LegendCapitalpalace));
-      AddQuestItem(new QuestItemControlLegend(LegendLordaeron.LegendArthas, true));
-      AddQuestItem(new QuestItemLegendDead(LegendScourge.LegendLichking));
-      AddQuestItem(new QuestItemLegendInRect(LegendLordaeron.LegendArthas, Regions.King_Arthas_crown, "King Terenas"));
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendLordaeron.LegendCapitalpalace));
+      AddObjective(new ObjectiveControlLegend(LegendLordaeron.LegendArthas, true));
+      AddObjective(new ObjectiveLegendDead(LegendScourge.LegendLichking));
+      AddObjective(new ObjectiveLegendInRect(LegendLordaeron.LegendArthas, Regions.King_Arthas_crown, "King Terenas"));
       ResearchId = QuestResearchId;
       _terenas = terenas;
     }
@@ -31,7 +32,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     protected override string RewardDescription =>
       "Arthas gains 2000 experience and the Crown of Lordaeron, and he can no longer permanently die";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       BlzSetUnitName(LegendLordaeron.LegendArthas.Unit, "King of Lordaeron");
       BlzSetUnitName(_terenas, "King Emeritus Terenas Menethil");

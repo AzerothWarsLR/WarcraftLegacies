@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -10,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       "Tempest Keep still has the power to open a portal Argus, but Velen needs to channel it",
       "ReplaceableTextures\\CommandButtons\\BTNArcaneCastle.blp")
     {
-      AddQuestItem(new QuestItemChannelRect(Regions.TempestKeepSpawn, "Tempest Keep", LegendDraenei.LegendVelen, 180, 0));
+      AddObjective(new ObjectiveChannelRect(Regions.TempestKeepSpawn, "Tempest Keep", LegendDraenei.LegendVelen, 180, 0));
       Global = true;
     }
 
@@ -18,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
 
     protected override string RewardDescription => "Open a Portal between Tempest Keep and Argus";
     
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       //Todo: uncomment these
       // WaygateActivateBJ(true, gg_unit_h03V_3538);

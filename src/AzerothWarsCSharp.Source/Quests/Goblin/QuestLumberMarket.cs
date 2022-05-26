@@ -13,16 +13,16 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
     protected override string RewardDescription =>
       "Shredders will gain cleaving attack and 500 hit points. You will gain 30000 lumber.";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 30000);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 30000);
     }
 
     public QuestLumberMarket() : base("Lumber Market Krash",
       "The World Tree would provide enough lumber to completely crash the lumber market, forcing our Shredders to specialise more on war.",
       "ReplaceableTextures\\CommandButtons\\BTNJunkGolem.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendDruids.LegendNordrassil, false));
+      AddObjective(new ObjectiveControlLegend(LegendDruids.LegendNordrassil, false));
       ResearchId = FourCC("R07Z");
     }
   }

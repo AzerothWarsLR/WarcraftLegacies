@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using static War3Api.Common;
@@ -14,8 +15,8 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
       "Trade Prince Gallywix will need a great amount of wealth to rule the future Goblin Empire; he needs to expand his business all over the world quickly.",
       "ReplaceableTextures\\CommandButtons\\BTNGoblinPrince.blp")
     {
-      AddQuestItem(new QuestItemTrain(FourCC("nzep"), FourCC("o04M"), 16));
-      AddQuestItem(new QuestItemTrain(FourCC("o04S"), FourCC("o04M"), 10));
+      AddObjective(new ObjectiveTrain(FourCC("nzep"), FourCC("o04M"), 16));
+      AddObjective(new ObjectiveTrain(FourCC("o04S"), FourCC("o04M"), 10));
       ResearchId = QuestResearchId;
     }
 
@@ -43,15 +44,15 @@ namespace AzerothWarsCSharp.Source.Quests.Goblin
       DestroyGroup(tempGroup);
     }
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       GrantGadetzan(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      GrantGadetzan(Holder.Player);
-      if (GetLocalPlayer() == Holder.Player) PlayThematicMusic("war3mapImported\\GoblinTheme.mp3");
+      GrantGadetzan(completingFaction.Player);
+      if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\GoblinTheme.mp3");
     }
   }
 }

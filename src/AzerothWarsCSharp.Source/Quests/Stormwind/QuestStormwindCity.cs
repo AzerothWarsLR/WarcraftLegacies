@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -19,12 +20,12 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       "The outskirts of Stormwind are infested by evil creatures. Kill their leaders and regain control of the Towns.",
       "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionCastle.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00V"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00Z"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n011"))));
-      AddQuestItem(new QuestItemUpgrade(FourCC("h06K"), FourCC("h06K")));
-      AddQuestItem(new QuestItemExpire(1020));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00V"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00Z"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n011"))));
+      AddObjective(new ObjectiveUpgrade(FourCC("h06K"), FourCC("h06K")));
+      AddObjective(new ObjectiveExpire(1020));
+      AddObjective(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
@@ -35,27 +36,27 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       ResearchId = FourCC("R02S");
     }
 
-
+    //Todo: bad flavour
     protected override string CompletionPopup =>
-      "Stormwind has been liberated, and its military is now free to assist the " + Holder.Team.Name + ".";
+      "Stormwind has been liberated, and its military is now free to assist the Alliance.";
 
     protected override string RewardDescription =>
       "Control of all units in Stormwind and enable Varian to be trained at the altar";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      if (GetLocalPlayer() == Holder.Player) PlayThematicMusic("war3mapImported\\StormwindTheme.mp3");
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\StormwindTheme.mp3");
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(QuestResearchId, 1);
+      whichFaction.ModObjectLimit(QuestResearchId, 1);
     }
   }
 }

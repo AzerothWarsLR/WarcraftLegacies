@@ -40,8 +40,8 @@
 //     //Opens the central portals in Nyalotha permanently.
 //     private void OpenPortals()
 //     {
-//       Holder.ModObjectLimit(FourCC("u02E"), -Faction.UNLIMITED); //Herald
-//       Holder.SetObjectLevel(QuestResearchId, 1);
+//       completingFaction.ModObjectLimit(FourCC("u02E"), -Faction.UNLIMITED); //Herald
+//       completingFaction.SetObjectLevel(QuestResearchId, 1);
 //       BlackEmpirePortalSetup.BLACKEMPIREPORTAL_TWILIGHTHIGHLANDS.PortalState = BlackEmpirePortalState.Open;
 //       BlackEmpirePortalSetup.BLACKEMPIREPORTAL_TANARIS.PortalState = BlackEmpirePortalState.Open;
 //       BlackEmpirePortalSetup.BLACKEMPIREPORTAL_NORTHREND.PortalState = BlackEmpirePortalState.Open;
@@ -49,18 +49,18 @@
 //
 //       RemoveUnit(Herald.Instance.Unit);
 //       BlackEmpirePortal.GoToNext();
-//       if (GetLocalPlayer() == Holder.Player) SetCameraPosition(-25528, -1979);
+//       if (GetLocalPlayer() == completingFaction.Player) SetCameraPosition(-25528, -1979);
 //     }
 //
-//     protected override void OnComplete()
+//     protected override void OnComplete(Faction completingFaction)
 //     {
-//       foreach (var unit in _rescueUnits) UnitRescue(unit, Holder.Player);
+//       foreach (var unit in _rescueUnits) UnitRescue(unit, completingFaction.Player);
 //
 //       PlayThematicMusic("war3mapImported\\BlackEmpireTheme.mp3");
 //       OpenPortals();
 //     }
 //
-//     protected override void OnFail()
+//     protected override void OnFail(Faction completingFaction)
 //     {
 //       OpenPortals();
 //     }

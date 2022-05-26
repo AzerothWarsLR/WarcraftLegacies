@@ -1,5 +1,6 @@
 //Illidan Goes to Aetheneum, Finds Immoltar and kills him
 
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -14,12 +15,12 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       "In order to gain the power he craves, Illidan must plunder the hidden Aetheneum library for its secrets.",
       "ReplaceableTextures\\CommandButtons\\BTNDoomlord.blp")
     {
-      this.AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.Dire_Maul_Entrance, "Feralas"));
-      this.AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.AethneumLibraryEntrance,
+      this.AddObjective(new ObjectiveLegendReachRect(LegendNaga.LegendIllidan, Regions.Dire_Maul_Entrance, "Feralas"));
+      this.AddObjective(new ObjectiveLegendReachRect(LegendNaga.LegendIllidan, Regions.AethneumLibraryEntrance,
         "the Aetheneum Library"));
-      this.AddQuestItem(new QuestItemLegendReachRect(LegendNaga.LegendIllidan, Regions.ImmolFight,
+      this.AddObjective(new ObjectiveLegendReachRect(LegendNaga.LegendIllidan, Regions.ImmolFight,
         "Immol'thar's Lair"));
-      AddQuestItem(new QuestItemLegendDead(LegendNeutral.LegendImmolthar));
+      AddObjective(new ObjectiveLegendDead(LegendNeutral.LegendImmolthar));
       _questToDiscover = questToDiscover;
       ;
       ;
@@ -30,7 +31,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     protected override string RewardDescription => "Chapter Two - The Skull of GulFourCC(dan";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       _questToDiscover.Progress = QuestProgress.Incomplete;
     }

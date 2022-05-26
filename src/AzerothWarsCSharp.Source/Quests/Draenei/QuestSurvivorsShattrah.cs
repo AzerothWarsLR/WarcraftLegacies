@@ -13,9 +13,9 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       "The Shattrah massacre was swift and brutal, if (the Draenei hold long enough in Outland, they might regroup with some of the survivors.",
       "ReplaceableTextures\\CommandButtons\\BTNGlazeroth.blp")
     {
-      AddQuestItem(new QuestItemTime(480));
-      this.AddQuestItem(new QuestItemLegendNotPermanentlyDead(LegendDraenei.LegendExodarship));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveTime(480));
+      this.AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendDraenei.LegendExodarship));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = QuestResearchId;
     }
 

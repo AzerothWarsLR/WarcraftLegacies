@@ -20,12 +20,12 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       "Feathermoon Stronghold stood guard for ten thousand years, it is time to relieve the guards from their duty.",
       "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp")
     {
-      AddQuestItem(new QuestItemLegendReachRect(LegendSentinels.legendTyrande, Regions.FeathermoonUnlock,
+      AddObjective(new ObjectiveLegendReachRect(LegendSentinels.legendTyrande, Regions.FeathermoonUnlock,
         "Feathermoon Stronghold"));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01R"))));
-      AddQuestItem(new QuestItemUpgrade(FourCC("n06P"), FourCC("n06J")));
-      AddQuestItem(new QuestItemExpire(1485));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01R"))));
+      AddObjective(new ObjectiveUpgrade(FourCC("n06P"), FourCC("n06J")));
+      AddObjective(new ObjectiveExpire(1485));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R06M");
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
@@ -41,17 +41,17 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
     protected override string RewardDescription =>
       "Control of all units in Feathermoon Stronghold and make Shandris and Maiev trainable at the Altar";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 300);
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
-      if (GetLocalPlayer() == Holder.Player) PlayThematicMusic("war3mapImported\\SentinelTheme.mp3");
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 300);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
+      if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\SentinelTheme.mp3");
     }
   }
 }

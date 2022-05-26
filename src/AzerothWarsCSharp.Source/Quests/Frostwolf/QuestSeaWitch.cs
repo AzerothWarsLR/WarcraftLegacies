@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -25,8 +26,8 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       "Warchief Thrall and his forces have been shipwrecked on the Darkspear Isles. Kill the Sea Witch there to give them a chance to rebuild their fleet and escape.",
       "ReplaceableTextures\\CommandButtons\\BTNGhost.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(LegendNeutral.LegendSeawitch.Unit));
-      AddQuestItem(new QuestItemExpire(600));
+      AddObjective(new ObjectiveKillUnit(LegendNeutral.LegendSeawitch.Unit));
+      AddObjective(new ObjectiveExpire(600));
       ResearchId = FourCC("R05H");
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
@@ -43,22 +44,22 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
     protected override string RewardDescription =>
       "Gain control of all neutral units on the Darkspear Isles and teleport to shore";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       group tempGroup = CreateGroup();
       //Transfer control of all passive units on island and teleport all Frostwolf units to shore
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
       GroupEnumUnitsInRect(tempGroup, Regions.Darkspear_Island.Rect, null);
       while (true)
       {
         unit u = FirstOfGroup(tempGroup);
         if (u == null) break;
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) u.Rescue(Holder.Player);
+        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) u.Rescue(completingFaction.Player);
         if (GetOwningPlayer(u) == FrostwolfSetup.FACTION_FROSTWOLF.Player &&
             IsUnitType(u, UNIT_TYPE_STRUCTURE) == false)
           SetUnitPosition(u, GetRandomReal(Regions.ThrallLanding.Center.X, Regions.ThrallLanding.Center.Y),
@@ -68,11 +69,11 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
       DestroyGroup(tempGroup);
       RemoveWeatherEffect(_storm);
-      CreateUnits(Holder.Player, FourCC("opeo"), -1818, -2070, 270, 3);
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      CreateUnits(completingFaction.Player, FourCC("opeo"), -1818, -2070, 270, 3);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
       if (_storm == null)
       {

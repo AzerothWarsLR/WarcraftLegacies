@@ -16,10 +16,10 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       "The Draenei need to escape Outland through the Exodar ship. We will need to power it up with a Divine Citadel first. The longer you hold out, the better the rewards will be",
       "ReplaceableTextures\\CommandButtons\\BTNUndeadAirBarge.blp")
     {
-      AddQuestItem(new QuestItemEitherOf(new QuestItemResearch(FourCC("R080"), FourCC("h09W")),
-        new QuestItemTime(782)));
-      AddQuestItem(new QuestItemLegendNotPermanentlyDead(LegendDraenei.LegendExodarship));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveEitherOf(new ObjectiveResearch(FourCC("R080"), FourCC("h09W")),
+        new ObjectiveTime(782)));
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendDraenei.LegendExodarship));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R081");
       Global = true;
     }
@@ -56,7 +56,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       DestroyGroup(tempGroup);
     }
 
-    private void EscapeOutland()
+    private void EscapeOutland(player whichPlayer)
     {
       group tempGroup = CreateGroup();
 
@@ -66,7 +66,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       while (true)
       {
         if (u == null) break;
-        if (GetOwningPlayer(u) == Holder.Player)
+        if (GetOwningPlayer(u) == whichPlayer)
         {
           if (IsUnitType(u, UNIT_TYPE_STRUCTURE) && !IsUnitType(u, UNIT_TYPE_ANCIENT))
             KillUnit(u);
@@ -80,7 +80,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       DestroyGroup(tempGroup);
     }
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       group tempGroup = CreateGroup();
 
@@ -94,7 +94,7 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       while (true)
       {
         if (u == null) break;
-        if (GetOwningPlayer(u) == Holder.Player)
+        if (GetOwningPlayer(u) == completingFaction.Player)
           if (IsUnitType(u, UNIT_TYPE_STRUCTURE) && !IsUnitType(u, UNIT_TYPE_ANCIENT))
             KillUnit(u);
         GroupRemoveUnit(tempGroup, u);
@@ -104,20 +104,20 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       DestroyGroup(tempGroup);
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 200);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 200);
       Player(13).AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 2000 - GetResourceAmount(GoldMine));
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 500);
-      Holder.AddQuest(DraeneiQuestSetup.SHIP_ARGUS);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 500);
+      completingFaction.AddQuest(DraeneiQuestSetup.SHIP_ARGUS);
       DraeneiQuestSetup.SHIP_ARGUS.Progress = QuestProgress.Incomplete;
       UnitRemoveAbility(LegendDraenei.LegendVelen.Unit, FourCC("ACm2"));
-      GrantExiled(Holder.Player);
-      EscapeOutland();
+      GrantExiled(completingFaction.Player);
+      EscapeOutland(completingFaction.Player);
       RemoveUnit(TheExodar);
       foreach (var unit in KilledOnFail) KillUnit(unit);
 
-      if (GetLocalPlayer() == Holder.Player) PlayThematicMusic("war3mapImported\\DraeneiTheme.mp3");
+      if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\DraeneiTheme.mp3");
     }
   }
 }

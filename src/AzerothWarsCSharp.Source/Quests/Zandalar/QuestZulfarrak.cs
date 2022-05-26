@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
       "ReplaceableTextures\\CommandButtons\\BTNDarkTroll.blp")
     {
       ResearchId = Constants.UPGRADE_R02F_QUEST_COMPLETED_FURY_OF_THE_SANDS_WARSONG;
-      AddQuestItem(new QuestItemControlLegend(LegendNeutral.LegendZulfarrak, false));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendZulfarrak, false));
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
@@ -31,21 +31,21 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
     }
 
     protected override string CompletionPopup =>
-      $"Zul'farrak has fallen. The Sandfury trolls lend their might to the {Holder.Team?.Name}.";
+      $"Zul'farrak has fallen. The Sandfury trolls lend their might to the Zandalari.";
 
     protected override string RewardDescription =>
       "Control of Zul'farrak, 300 gold tribute, enable to train Storm Wyrm and you can summon the hero Gahz'rilla from the Altar of Conquerors";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
-      SetUnitOwner(LegendNeutral.LegendZulfarrak.Unit, Holder.Player, true);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
+      SetUnitOwner(LegendNeutral.LegendZulfarrak.Unit, completingFaction.Player, true);
     }
 
-    protected override void OnAdd()
+    protected override void OnAdd(Faction whichFaction)
     {
-      Holder.ModObjectLimit(GAHZRILLA_ID, 1);
+      whichFaction.ModObjectLimit(GAHZRILLA_ID, 1);
     }
   }
 }

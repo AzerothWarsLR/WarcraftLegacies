@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "Garithos has always had a distrust of other races, he might be tempted to join the Scarlet MindControl.",
       "ReplaceableTextures\\CommandButtons\\BTNGarithos.blp")
     {
-      AddQuestItem(new QuestItemResearch(FourCC("R08F"), FourCC("hbla")));
+      AddObjective(new ObjectiveResearch(FourCC("R08F"), FourCC("hbla")));
     }
 
     protected override string CompletionPopup => "Garithos weak mind is an easy pray to Sylvanas mind control, ";
@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     protected override string RewardDescription =>
       "You lose everything, but will spawn with Garithos and a small army in Capital City";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       LordaeronSetup.FactionLordaeron.ModObjectLimit(FourCC("h00F"), -Faction.UNLIMITED); //Paladin
       LordaeronSetup.FactionLordaeron.ModObjectLimit(FourCC("R06Q"), -Faction.UNLIMITED); //Paladin Adept Training
@@ -36,26 +36,26 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       LordaeronSetup.FactionLordaeron.ModObjectLimit(FourCC("H049"), 1); //Nathanos
       LordaeronSetup.FactionLordaeron.ModObjectLimit(FourCC("Hlgr"), 1); //Garithos
 
-      Holder.Team = TeamSetup.Forsaken;
-      Holder.Name = "Garithos";
-      Holder.Icon = "ReplaceableTextures\\CommandButtons\\BTNGarithos.blp";
-      SetPlayerColor(Holder.Player, PLAYER_COLOR_LIGHT_BLUE);
+      completingFaction.Team = TeamSetup.Forsaken;
+      completingFaction.Name = "Garithos";
+      completingFaction.Icon = "ReplaceableTextures\\CommandButtons\\BTNGarithos.blp";
+      SetPlayerColor(completingFaction.Player, PLAYER_COLOR_LIGHT_BLUE);
 
       LegendLordaeron.LegendGarithos.StartingXp = GetHeroXP(LegendLordaeron.LegendArthas.Unit);
-      Holder.Obliterate();
-      LegendLordaeron.LegendGarithos.Spawn(Holder.Player, 9090, 8743, 110);
-      LegendForsaken.LegendNathanos.Spawn(Holder.Player, 9090, 8743, 110);
-      CreateUnits(Holder.Player, FourCC("hkni"), Regions.Terenas.Center.X, Regions.Terenas.Center.Y,
+      completingFaction.Obliterate();
+      LegendLordaeron.LegendGarithos.Spawn(completingFaction.Player, 9090, 8743, 110);
+      LegendForsaken.LegendNathanos.Spawn(completingFaction.Player, 9090, 8743, 110);
+      CreateUnits(completingFaction.Player, FourCC("hkni"), Regions.Terenas.Center.X, Regions.Terenas.Center.Y,
         270, 12);
-      CreateUnits(Holder.Player, FourCC("hpea"), Regions.Terenas.Center.X, Regions.Terenas.Center.Y,
+      CreateUnits(completingFaction.Player, FourCC("hpea"), Regions.Terenas.Center.X, Regions.Terenas.Center.Y,
         270, 6);
-      CreateUnits(Holder.Player, FourCC("hfoo"), Regions.Terenas.Center.X, Regions.Terenas.Center.Y,
+      CreateUnits(completingFaction.Player, FourCC("hfoo"), Regions.Terenas.Center.X, Regions.Terenas.Center.Y,
         270, 12);
-      CreateUnits(Holder.Player, FourCC("h009"), Regions.Terenas.Center.X, Regions.Terenas.Center.Y,
+      CreateUnits(completingFaction.Player, FourCC("h009"), Regions.Terenas.Center.X, Regions.Terenas.Center.Y,
         270, 2);
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 2000);
-      Holder.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 900);
-      if (GetLocalPlayer() == Holder.Player)
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 2000);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 900);
+      if (GetLocalPlayer() == completingFaction.Player)
         SetCameraPosition(Regions.Terenas.Center.X, Regions.Terenas.Center.Y);
     }
   }

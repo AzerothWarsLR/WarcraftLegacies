@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -19,14 +20,14 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       "The forest needs healing. Regain control of it to summon it's Guardian, the Demigod Cenarius",
       "ReplaceableTextures\\CommandButtons\\BTNKeeperC.blp")
     {
-      AddQuestItem(
-        new QuestItemLegendReachRect(LegendDruids.LegendMalfurion, Regions.AshenvaleUnlock, "Ashenvale"));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n07C"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01Q"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08U"))));
-      AddQuestItem(new QuestItemUpgrade(FourCC("etol"), FourCC("etol")));
-      AddQuestItem(new QuestItemExpire(1440));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(
+        new ObjectiveLegendReachRect(LegendDruids.LegendMalfurion, Regions.AshenvaleUnlock, "Ashenvale"));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n07C"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01Q"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08U"))));
+      AddObjective(new ObjectiveUpgrade(FourCC("etol"), FourCC("etol")));
+      AddObjective(new ObjectiveExpire(1440));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R06R");
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
@@ -41,16 +42,16 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
     protected override string RewardDescription =>
       "Control of all units in Ashenvale and make Cenarius trainable at the Altar";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       _rescueUnits.Clear();
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      if (GetLocalPlayer() == Holder.Player) PlayThematicMusic("war3mapImported\\DruidTheme.mp3");
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\DruidTheme.mp3");
       _rescueUnits.Clear();
     }
   }

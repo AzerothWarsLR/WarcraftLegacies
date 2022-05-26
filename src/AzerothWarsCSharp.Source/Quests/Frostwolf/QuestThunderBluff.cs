@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -17,10 +18,10 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       "The Tauren have been wandering for too long. The plains of Mulgore would offer respite from this endless journey.",
       "ReplaceableTextures\\CommandButtons\\BTNCentaurKhan.blp")
     {
-      AddQuestItem(new QuestItemLegendDead(LegendNeutral.LegendCentaurkhan));
-      AddQuestItem(new QuestItemAnyUnitInRect(Regions.ThunderBluff, "Thunder Bluff", true));
-      AddQuestItem(new QuestItemExpire(1455));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveLegendDead(LegendNeutral.LegendCentaurkhan));
+      AddObjective(new ObjectiveAnyUnitInRect(Regions.ThunderBluff, "Thunder Bluff", true));
+      AddObjective(new ObjectiveExpire(1455));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R05I");
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
@@ -29,6 +30,8 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
+
+      Required = true;
     }
 
     //todo: bad flavour
@@ -36,15 +39,15 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
 
     protected override string RewardDescription => "Control of Thunder Bluff";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
-      if (GetLocalPlayer() == Holder.Player) PlayThematicMusic("war3mapImported\\TaurenTheme.mp3");
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\TaurenTheme.mp3");
     }
   }
 }

@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
@@ -14,8 +15,8 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "The Dark Fortress looming over the Twilight Highlands is a beacon of darkness. Destroy it and clear the surrounding lands of evil.",
       "ReplaceableTextures\\CommandButtons\\BTNShadow Orb.blp")
     {
-      AddQuestItem(new QuestItemLegendInRect(LegendLordaeron.LegendUther, Regions.TwilightOutside, "Twilight Citadel"));
-      AddQuestItem(new QuestItemLegendDead(LegendTwilight.LegendTwilightcitadel));
+      AddObjective(new ObjectiveLegendInRect(LegendLordaeron.LegendUther, Regions.TwilightOutside, "Twilight Citadel"));
+      AddObjective(new ObjectiveLegendDead(LegendTwilight.LegendTwilightcitadel));
     }
 
     protected override string CompletionPopup =>
@@ -23,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     protected override string RewardDescription => "The Living Shadow and the Ashbringer Quest discovery";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       LegendLordaeron.LegendUther.Unit.AddItemSafe(ArtifactSetup.ArtifactLivingshadow.Item);
       LordaeronSetup.FactionLordaeron.AddQuest(LordaeronQuestSetup.TheAshbringer);

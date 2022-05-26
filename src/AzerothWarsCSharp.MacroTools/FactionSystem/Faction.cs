@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Events;
 using static War3Api.Common;
-
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
@@ -59,7 +59,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// </summary>
     public EventHandler<FactionPowerEventArgs>? PowerRemoved;
 
-    public EventHandler<Faction> ScoreStatusChanged;
+    public EventHandler<Faction>? ScoreStatusChanged;
 
     public Faction(string name, playercolor playerColor, string prefixCol, string icon)
     {
@@ -75,13 +75,13 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     public playercolor PlayerColor { get; }
 
-    public float Gold
+    private float Gold
     {
       get => I2R(GetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD));
       set => SetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD, R2I(value));
     }
 
-    public float Lumber
+    private float Lumber
     {
       get => I2R(GetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER));
       set => SetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER, R2I(value));
@@ -99,7 +99,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
             SetPlayerTechResearched(player, _defeatedResearch, 1);
             SetPlayerTechResearched(player, _undefeatedResearch, 0);
           }
-        
+
         //Remove player from game if necessary
         if (value == ScoreStatus.Defeated && Player != null)
         {
@@ -143,7 +143,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// <summary>
     ///   How much gold this <see cref="Faction" /> receives per minute if occupied by a player.
     /// </summary>
-    public float Income => _player.GetControlPointValue();
+    public float Income => _player?.GetControlPointValue() ?? 0;
 
     public string ColoredName => PrefixCol + _name + "|r";
 
@@ -237,12 +237,16 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     private void ApplyPowers()
     {
-      foreach (var power in _powers) power.OnAdd(Player);
+      if (Player != null)
+        foreach (var power in _powers)
+          power.OnAdd(Player);
     }
 
     private void UnapplyPowers()
     {
-      foreach (var power in _powers) power.OnRemove(Player);
+      if (Player != null)
+        foreach (var power in _powers)
+          power.OnRemove(Player);
     }
 
     /// <summary>
@@ -294,7 +298,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       foreach (var (key, value) in _objectLimits)
         Player?.ModObjectLimit(key, -value);
 
-      foreach (var (key, value) in _objectLevels)
+      foreach (var (key, _) in _objectLevels)
         Player?.SetObjectLevel(key, 0);
     }
 
@@ -324,7 +328,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// </summary>
     public void Unally()
     {
-      if (Team.PlayerCount > 1)
+      if (Team?.PlayerCount > 1)
       {
         string newTeamName = Name + " Pact";
         if (FactionManager.TeamWithNameExists(newTeamName))
@@ -364,12 +368,19 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
     }
 
+    private void OnQuestProgressChanged(object? sender, QuestProgressChangedEventArgs args)
+    {
+      args.Quest.ApplyFactionProgress(this, args.Quest.Progress, args.FormerProgress);
+    }
+
     public QuestData AddQuest(QuestData questData)
     {
-      questData.Holder = this;
+      questData.Add(this);
       _questsByName.Add(questData.Title, questData);
-      if (GetLocalPlayer() == Player) questData.ShowLocal();
+      if (GetLocalPlayer() == Player)
+        questData.ShowLocal();
       questData.ShowSync();
+      questData.ProgressChanged += OnQuestProgressChanged;
       return questData;
     }
 
@@ -436,9 +447,9 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private void DistributeExperience(IEnumerable<player> playersToDistributeTo)
     {
       if (_team == null) return;
-      foreach (var ally in _team.GetAllFactions())
+      foreach (var ally in playersToDistributeTo)
       {
-        var allyHeroes = new GroupWrapper().EnumUnitsOfPlayer(ally.Player).EmptyToList()
+        var allyHeroes = new GroupWrapper().EnumUnitsOfPlayer(ally).EmptyToList()
           .FindAll(unit => IsUnitType(unit, UNIT_TYPE_HERO));
         foreach (var hero in allyHeroes)
           AddHeroXP(hero, R2I(_xp / (_team.PlayerCount - 1) / allyHeroes.Count * XP_TRANSFER_PERCENT), true);
@@ -451,9 +462,10 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     {
       foreach (var player in playersToDistributeTo)
       {
-        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, (int)(Gold / playersToDistributeTo.Count));
-        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, (int)(Lumber / playersToDistributeTo.Count));
+        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, (int) (Gold / playersToDistributeTo.Count));
+        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, (int) (Lumber / playersToDistributeTo.Count));
       }
+
       Gold = 0;
       Lumber = 0;
     }
@@ -489,7 +501,9 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         else if (loopUnitType.Meta == false)
         {
           SetUnitOwner(unit,
-            Team.PlayerCount > 1 ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count)] : Player(GetBJPlayerNeutralVictim()), false);
+            Team.PlayerCount > 1
+              ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count)]
+              : Player(GetBJPlayerNeutralVictim()), false);
         }
       }
     }

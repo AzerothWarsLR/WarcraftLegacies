@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -13,9 +14,9 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       "Sylvanas longs to take revenge on the Lich King. Killing him and absorbing his power would maybe satisfy the emptiness inside her",
       "ReplaceableTextures\\CommandButtons\\BTNHelmofdomination.blp")
     {
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BC"))));
-      AddQuestItem(new QuestItemLegendNotPermanentlyDead(LegendForsaken.LegendSylvanasv));
-      AddQuestItem(new QuestItemLegendDead(LegendScourge.LegendLichking));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BC"))));
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendForsaken.LegendSylvanasv));
+      AddObjective(new ObjectiveLegendDead(LegendScourge.LegendLichking));
     }
 
     protected override string CompletionPopup =>
@@ -23,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     protected override string RewardDescription => "Sylvanas gains 20 intelligence, 20 strength and Chaos damage";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       unit whichUnit = LegendForsaken.LegendSylvanasv.Unit;
       BlzSetUnitName(whichUnit, "Banshee Queen");

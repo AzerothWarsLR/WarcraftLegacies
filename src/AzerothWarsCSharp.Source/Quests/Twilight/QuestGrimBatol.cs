@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -25,13 +26,13 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       _grimBatol = grimBatol;
       _waygateA = waygateA;
       _waygateB = waygateB;
-      AddQuestItem(new QuestItemLegendDead(LegendNeutral.LegendVaelastrasz));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03X"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n04V"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09F"))));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08T"))));
-      AddQuestItem(new QuestItemExpire(1428));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveLegendDead(LegendNeutral.LegendVaelastrasz));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03X"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n04V"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09F"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08T"))));
+      AddObjective(new ObjectiveExpire(1428));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R06Y_QUEST_COMPLETED_THE_CURSED_FORTRESS;
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
@@ -44,22 +45,22 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
 
     //Todo: bad flavour
     protected override string CompletionPopup =>
-      "Grim Batol is now under our control, and its military is now free to assist the " + Holder.Team.Name + ".";
+      "Grim Batol is now under our control, and its military is now free to assist the Twilight Hammer.";
 
     protected override string RewardDescription =>
       "Control of all units in Grim Batol and able to train Orcish Death Knights";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      SetUnitOwner(_grimBatol, Holder.Player, true);
+      SetUnitOwner(_grimBatol, completingFaction.Player, true);
       WaygateActivate(_waygateA, true);
       WaygateActivate(_waygateB, true);
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
     }
   }
 }

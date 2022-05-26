@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -17,10 +18,10 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       "A small murloc skirmish is attacking Southshore, push them back",
       "ReplaceableTextures\\CommandButtons\\BTNMurloc.blp")
     {
-      AddQuestItem(new QuestItemKillUnit(murlocToKill));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08M"))));
-      AddQuestItem(new QuestItemExpire(1135));
-      AddQuestItem(new QuestItemSelfExists());
+      AddObjective(new ObjectiveKillUnit(murlocToKill));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08M"))));
+      AddObjective(new ObjectiveExpire(1135));
+      AddObjective(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
@@ -33,14 +34,14 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
 
     protected override string RewardDescription => "Control of all units in Southshore";
 
-    protected override void OnFail()
+    protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Holder.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
     }
   }
 }

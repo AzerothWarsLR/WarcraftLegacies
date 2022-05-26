@@ -15,9 +15,9 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       "The Fel Horde is weak and complacent. The Illidari will easily subjugate them into Illidan's service.",
       "ReplaceableTextures\\CommandButtons\\BTNMetamorphosis.blp")
     {
-      AddQuestItem(new QuestItemControlLegend(LegendFelHorde.LegendBlacktemple, false));
-      AddQuestItem(new QuestItemControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00R"))));
-      AddQuestItem(new QuestItemResearch(FourCC("R063"), FourCC("n055")));
+      AddObjective(new ObjectiveControlLegend(LegendFelHorde.LegendBlacktemple, false));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00R"))));
+      AddObjective(new ObjectiveResearch(FourCC("R063"), FourCC("n055")));
     }
 
     protected override string CompletionPopup =>
@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
 
     protected override string RewardDescription => "The Fel Horde will join us and Magtheridon will die";
 
-    protected override void OnComplete()
+    protected override void OnComplete(Faction completingFaction)
     {
       if (NagaSetup.FactionNaga.Team == TeamSetup.Naga) FelHordeSetup.FactionFelHorde.Team = TeamSetup.Naga;
       RemoveUnit(LegendFelHorde.LegendMagtheridon.Unit);

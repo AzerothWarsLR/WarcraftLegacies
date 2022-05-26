@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.TestSource.Quests
     public ExampleQuestA() : base("Example Quest", "You have to do something fun.",
       "ReplaceableTextures\\CommandButtons\\BTNAcolyte.blp")
     {
-      AddQuestItem(new QuestItemChannelRect(new Rectangle(-813, -183, -460, 183), "over here", LegendSetup.Kael, 7, 180));
+      AddObjective(new ObjectiveChannelRect(new Rectangle(-813, -183, -460, 183), "over here", LegendSetup.Kael, 7, 180));
     }
 
     protected override string RewardDescription => "Just the greatest things.";
