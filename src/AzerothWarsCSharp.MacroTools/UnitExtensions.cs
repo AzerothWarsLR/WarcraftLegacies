@@ -25,6 +25,7 @@ namespace AzerothWarsCSharp.MacroTools
     /// </summary>
     public static void SetWaygateDestination(this unit waygate, Point destination)
     {
+      WaygateActivate(waygate, true);
       WaygateSetDestination(waygate, destination.X, destination.Y);
     }
 
