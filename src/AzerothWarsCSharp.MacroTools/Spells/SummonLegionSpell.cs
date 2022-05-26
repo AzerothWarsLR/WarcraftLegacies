@@ -9,9 +9,14 @@ namespace AzerothWarsCSharp.MacroTools.Spells
   {
     private readonly int _spellImmunityId;
 
+    public float Duration { get; set; } = 180;
+
     public override void OnCast(unit caster, unit target, float targetX, float targetY)
     {
-      var channel = new SummonLegionChannel(caster, Id, _spellImmunityId);
+      var channel = new SummonLegionChannel(caster, Id, _spellImmunityId)
+      {
+        Duration = Duration
+      };
       ChannelManager.Add(channel);
     }
 
