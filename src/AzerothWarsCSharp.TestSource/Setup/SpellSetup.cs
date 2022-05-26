@@ -57,6 +57,9 @@ namespace AzerothWarsCSharp.TestSource.Setup
 
       var resurrectionAura = new ResurrectionAura(FourCC("Huth"));
       SpellSystem.Register(resurrectionAura);
+
+      var summonLegion = new SummonLegionSpell(FourCC("AHdr"), FourCC("ACm2"));
+      SpellSystem.Register(summonLegion);
     }
   }
 }
