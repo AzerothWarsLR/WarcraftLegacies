@@ -80,13 +80,13 @@ namespace AzerothWarsCSharp.MacroTools.ControlPointSystem
         var newOwner = GetTriggerPlayer();
 
         PlayerData playerData = PlayerData.ByHandle(formerOwner);
-        
-        playerData.ControlPointValue -= Value;
+
+        playerData.BaseIncome -= Value;
         playerData.ControlPointCount -= 1;
         
         playerData = PlayerData.ByHandle(newOwner);
 
-        playerData.ControlPointValue += Value;
+        playerData.BaseIncome += Value;
         playerData.ControlPointCount += 1;
         
         UnitAddAbility(Unit, RegenerationAbility);

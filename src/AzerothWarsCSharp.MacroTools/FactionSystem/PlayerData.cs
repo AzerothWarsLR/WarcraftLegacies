@@ -14,8 +14,9 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private readonly Dictionary<int, int> _objectLevels = new();
 
     private readonly Dictionary<int, int> _objectLimits = new();
+    private float _baseIncome; //Gold per minute
+    private float _bonusIncome;
     private int _controlPointCount;
-    private float _controlPointValue; //Gold per minute
 
     private Faction? _faction;
 
@@ -42,7 +43,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         if (_faction != null)
         {
           _faction = null;
-          if (prevFaction != null) 
+          if (prevFaction != null)
             prevFaction.Player = null; //Referential integrity
         }
 
@@ -54,13 +55,13 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
             Player.SetColor(value.PlayerColor, true);
             _faction = value;
             //Enforce referential integrity
-            if (value.Player != Player) 
+            if (value.Player != Player)
               value.Player = Player;
           }
           else
           {
             throw new Exception("Attempted to Person " + GetPlayerName(Player) +
-                       " to already occupied faction with name " + value.Name);
+                                " to already occupied faction with name " + value.Name);
           }
         }
 
@@ -68,16 +69,38 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
     }
 
-    public float ControlPointValue
+    /// <summary>
+    ///   Gold per second gained from all sources.
+    /// </summary>
+    public float TotalIncome => BaseIncome + BonusIncome;
+
+    /// <summary>
+    ///   Gold per second gained from secondary sources like Forsaken's plagued buildings.
+    /// </summary>
+    public float BonusIncome
     {
-      get => _controlPointValue;
+      get => _bonusIncome;
+      set
+      {
+        _bonusIncome = value;
+        IncomeChanged?.Invoke(this, this);
+      }
+    }
+
+    /// <summary>
+    ///   Gold per second gained from primary sources like Control Points.
+    /// </summary>
+    public float BaseIncome
+    {
+      get => _baseIncome;
       set
       {
         if (value < 0)
           throw new ArgumentOutOfRangeException(
-            $"Tried to assign a negative ControlPointValue value to + {GetPlayerName(Player)}");
+            $"Tried to assign a negative {nameof(BaseIncome)} value to {GetPlayerName(Player)}.");
 
-        _controlPointValue = value;
+        _baseIncome = value;
+        IncomeChanged?.Invoke(this, this);
       }
     }
 
@@ -93,6 +116,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         _controlPointCount = value;
       }
     }
+
+    /// <summary>
+    /// Fired when the <see cref="player"/>'s income changes.
+    /// </summary>
+    public event EventHandler<PlayerData>? IncomeChanged;
 
     public static event EventHandler<PlayerFactionChangeEventArgs>? FactionChange;
 

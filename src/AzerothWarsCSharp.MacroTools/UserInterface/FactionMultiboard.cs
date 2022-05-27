@@ -1,9 +1,8 @@
-using System;
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Libraries;
 using static War3Api.Common;
-
 
 namespace AzerothWarsCSharp.MacroTools.UserInterface
 {
@@ -42,6 +41,24 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
 
     private static FactionMultiboard? Instance { get; set; }
 
+    public static void Setup()
+    {
+      var timer = CreateTimer();
+      TimerStart(timer, 2, false, () => { Instance = new FactionMultiboard(COLUMN_COUNT, 3, TITLE); }
+      );
+
+      PlayerData.FactionChange += OnPersonFactionChange;
+      Faction.TeamJoin += OnFactionTeamJoin;
+      Faction.TeamLeft += OnFactionTeamLeft;
+      Faction.StatusChanged += OnFactionStatusChanged;
+
+      FactionManager.AnyFactionNameChanged += OnFactionAnyFactionNameChanged;
+      Faction.IconChanged += OnFactionIconChanged;
+
+      foreach (var player in GeneralHelpers.GetAllPlayers())
+        player.GetPlayerData().IncomeChanged += OnPlayerIncomeChanged;
+    }
+
     //Run when a detail about a Faction has changed
     private void UpdateFactionRow(Faction faction)
     {
@@ -52,7 +69,9 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
       MultiboardSetItemValue(factionMbi, faction.ColoredName);
       MultiboardSetItemIcon(factionMbi, faction.Icon);
       MultiboardSetItemValue(cpMbi, faction.Player?.GetControlPointCount().ToString());
-      MultiboardSetItemValue(incomeMbi, I2S(R2I(faction.Income)));
+      var income = R2I(faction.Player?.GetTotalIncome() ?? 0);
+      var incomePrefix = faction.Player?.GetBonusIncome() > 0 ? "|cffffcc00" : "";
+      MultiboardSetItemValue(incomeMbi, $"{incomePrefix}{I2S(income)}");
       MultiboardSetItemWidth(factionMbi, WIDTH_FACTION);
       MultiboardSetItemWidth(cpMbi, WIDTH_CP);
       MultiboardSetItemWidth(incomeMbi, WIDTH_INCOME);
@@ -150,35 +169,11 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
       RenderInstance();
     }
 
-    private static void OnControlPointOwnerChanged(object? sender, ControlPointOwnerChangeEventArgs args)
+    private static void OnPlayerIncomeChanged(object? sender, PlayerData player)
     {
-      if (args.ControlPoint.Owner.GetFaction() != null)
-      {
-        Instance?.UpdateFactionRow(args.ControlPoint.Owner.GetFaction());
-      }
-      
-      var formerPerson = PlayerData.ByHandle(args.FormerOwner);
-      if (formerPerson.Faction != null)
-      {
-        Instance?.UpdateFactionRow(formerPerson.Faction);
-      }
-    }
-
-    public static void Setup()
-    {
-      var timer = CreateTimer();
-      TimerStart(timer, 2, false, () => { Instance = new FactionMultiboard(COLUMN_COUNT, 3, TITLE); }
-      );
-
-      PlayerData.FactionChange += OnPersonFactionChange;
-      Faction.TeamJoin += OnFactionTeamJoin;
-      Faction.TeamLeft += OnFactionTeamLeft;
-      Faction.StatusChanged += OnFactionStatusChanged;
-
-      FactionManager.AnyFactionNameChanged += OnFactionAnyFactionNameChanged;
-      Faction.IconChanged += OnFactionIconChanged;
-      
-      ControlPoint.OnControlPointOwnerChange += OnControlPointOwnerChanged;
+      var faction = player.Faction;
+      if (faction != null)
+        Instance?.UpdateFactionRow(faction);
     }
 
     private static void OnFactionIconChanged(object? sender, Faction args)

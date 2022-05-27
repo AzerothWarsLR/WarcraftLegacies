@@ -50,7 +50,7 @@ namespace AzerothWarsCSharp.MacroTools.ControlPointSystem
       BlzSetUnitMaxHP(controlPoint.Unit, MAX_HITPOINTS);
       controlPoint.Unit.SetLifePercent(80);
 
-      controlPoint.Owner.SetControlPointValue(controlPoint.Owner.GetControlPointValue() + controlPoint.Value);
+      controlPoint.Owner.SetBaseIncome(controlPoint.Owner.GetBaseIncome() + controlPoint.Value);
       controlPoint.Owner.SetControlPointCount(controlPoint.Owner.GetControlPointCount() + 1);
 
       if (!_initialized)
@@ -62,7 +62,7 @@ namespace AzerothWarsCSharp.MacroTools.ControlPointSystem
           foreach (var player in GeneralHelpers.GetAllPlayers())
             if (player.GetFaction() != null)
             {
-              var goldPerSecond = player.GetFaction().Income * PERIOD / 60;
+              var goldPerSecond = player.GetTotalIncome() * PERIOD / 60;
               player.AddGold(goldPerSecond);
             }
         });
