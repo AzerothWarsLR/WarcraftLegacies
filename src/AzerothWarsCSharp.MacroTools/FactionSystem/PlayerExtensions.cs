@@ -1,5 +1,4 @@
 ﻿using AzerothWarsCSharp.MacroTools.Wrappers;
-using War3Api;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
@@ -123,6 +122,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       return PlayerData.ByHandle(player).TotalIncome;
     }
 
+    public static float GetBonusIncome(this player player)
+    {
+      return PlayerData.ByHandle(player).BonusIncome;
+    }
+    
     public static float GetBaseIncome(this player player)
     {
       return PlayerData.ByHandle(player).BaseIncome;
@@ -131,6 +135,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public static void SetBaseIncome(this player player, float value)
     {
       PlayerData.ByHandle(player).BaseIncome = value;
+    }
+
+    public static void AddBonusIncome(this player player, float value)
+    {
+      PlayerData.ByHandle(player).BonusIncome += value;
     }
   }
 }

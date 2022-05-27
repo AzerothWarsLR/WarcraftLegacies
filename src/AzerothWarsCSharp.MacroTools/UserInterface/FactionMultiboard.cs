@@ -50,7 +50,9 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
       MultiboardSetItemValue(factionMbi, faction.ColoredName);
       MultiboardSetItemIcon(factionMbi, faction.Icon);
       MultiboardSetItemValue(cpMbi, faction.Player?.GetControlPointCount().ToString());
-      MultiboardSetItemValue(incomeMbi, I2S(R2I(faction.Player.GetTotalIncome())));
+      var income = R2I(faction.Player?.GetTotalIncome() ?? 0);
+      var incomePrefix = faction.Player?.GetBonusIncome() > 0 ? "|cffffcc00" : "";
+      MultiboardSetItemValue(incomeMbi, $"{incomePrefix}{I2S(income)}");
       MultiboardSetItemWidth(factionMbi, WIDTH_FACTION);
       MultiboardSetItemWidth(cpMbi, WIDTH_CP);
       MultiboardSetItemWidth(incomeMbi, WIDTH_INCOME);
