@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Mechanics.Scourge.Plague;
@@ -11,13 +12,13 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {
   public static class ScourgeQuestSetup
   {
-    public static void Setup()
+    public static QuestData Setup()
     {
       QuestSpiderWar questSpiderWar = new(Regions.Ice_Crown,
         PreplacedUnitSystem.GetUnit(Constants.UNIT_N074_QUEEN_NEZAR_AZRET));
       QuestKelthuzad questKelthuzad = new();
       QuestDrakUnlock questDrakUnlock = new(Regions.DrakUnlock);
-      
+
       var plagueParameters = new PlagueParameters();
       plagueParameters.PlagueRects = new List<Rectangle>
       {
@@ -39,16 +40,12 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       };
       plagueParameters.PlagueCauldronUnitTypeId = Constants.UNIT_H02W_PLAGUE_CAULDRON;
       plagueParameters.Duration = 360;
-      
+
       QuestPlague questPlague = new(ForsakenSetup.FACTION_FORSAKEN,
         PreplacedUnitSystem.GetUnit(Constants.UNIT_N0AG_LORD_BAROV),
         new GroupWrapper().EnumUnitsOfType(Constants.UNIT_U01U_CULTIST_OF_THE_DAMNED_FORSAKEN).EmptyToList(),
         plagueParameters
-      )
-      {
-        ScholomanceInner = PreplacedUnitSystem.GetUnit(Constants.UNIT_N04B_SCHOLOMANCE_INNER),
-        ScholomanceOuter = PreplacedUnitSystem.GetUnit(Constants.UNIT_N035_SCHOLOMANCE),
-      };
+      );
 
       QuestSapphiron questSapphiron = new(PreplacedUnitSystem.GetUnit(Constants.UNIT_UBDR_SAPPHIRON_CREEP));
       QuestCorruptArthas questCorruptArthas = new();
@@ -73,6 +70,8 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       ScourgeSetup.FactionScourge.AddQuest(questCivilWar);
       //Misc
       ScourgeSetup.FactionScourge.AddQuest(questLichKingArthas);
+
+      return questPlague;
     }
   }
 }

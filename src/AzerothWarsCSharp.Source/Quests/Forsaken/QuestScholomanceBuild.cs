@@ -1,17 +1,11 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Forsaken
 {
   public sealed class QuestScholomanceBuild : QuestData
   {
-    //Todo: bad flavour
-    protected override string CompletionPopup => "Putress is now trainable.";
-
-    protected override string RewardDescription => "Putress is trainable at the altar";
-
     public QuestScholomanceBuild() : base("Secret Buildup",
       "The Scholomance is the secret staging ground for the invasion of Lordaeron, build your infrastructure and be ready for war.",
       "ReplaceableTextures\\CommandButtons\\BTNAffinityII.blp")
@@ -22,6 +16,12 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       AddObjective(new ObjectiveBuild(FourCC("u01J"), 2));
       AddObjective(new ObjectiveUpgrade(FourCC("h08B"), FourCC("h089")));
       ResearchId = FourCC("R04Z");
+      Required = true;
     }
+
+    //Todo: bad flavour
+    protected override string CompletionPopup => "Putress is now trainable.";
+
+    protected override string RewardDescription => "Putress is trainable at the altar";
   }
 }

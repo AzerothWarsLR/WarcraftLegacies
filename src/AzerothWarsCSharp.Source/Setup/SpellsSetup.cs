@@ -1,6 +1,7 @@
 ﻿using AzerothWarsCSharp.MacroTools.Spells;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.UnitEffects;
+using AzerothWarsCSharp.Source.Spells;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup
@@ -312,6 +313,12 @@ namespace AzerothWarsCSharp.Source.Setup
       var summonBurningLegion = new SummonLegionSpell(Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS,
         Constants.ABILITY_A0KZ_SPELL_IMMUNITY_LEGION_SUMMON);
       SpellSystem.Register(summonBurningLegion);
+
+      var corruptBuilding = new CorruptBuildingSpell(Constants.ABILITY_A0N8_CORRUPT_FORSAKEN)
+      {
+        BonusIncome = 6
+      };
+      SpellSystem.Register(corruptBuilding);
     }
   }
 }
