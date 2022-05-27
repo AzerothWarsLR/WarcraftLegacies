@@ -140,11 +140,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
     }
 
-    /// <summary>
-    ///   How much gold this <see cref="Faction" /> receives per minute if occupied by a player.
-    /// </summary>
-    public float Income => _player?.GetControlPointValue() ?? 0;
-
     public string ColoredName => PrefixCol + _name + "|r";
 
     public string PrefixCol { get; init; }

@@ -1,4 +1,5 @@
 ﻿using AzerothWarsCSharp.MacroTools.Wrappers;
+using War3Api;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
@@ -7,7 +8,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
   {
     public static void SetColor(this player whichPlayer, playercolor color, bool changeExisting)
     {
-      War3Api.Common.SetPlayerColor(whichPlayer, color);
+      SetPlayerColor(whichPlayer, color);
       if (changeExisting)
       {
         foreach (var unit in new GroupWrapper().EnumUnitsOfPlayer(whichPlayer).EmptyToList())
@@ -117,14 +118,19 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       PlayerData.ByHandle(player).Faction = faction;
     }
 
-    public static float GetControlPointValue(this player player)
+    public static float GetTotalIncome(this player player)
     {
-      return PlayerData.ByHandle(player).ControlPointValue;
+      return PlayerData.ByHandle(player).TotalIncome;
     }
 
-    public static void SetControlPointValue(this player player, float value)
+    public static float GetBaseIncome(this player player)
     {
-      PlayerData.ByHandle(player).ControlPointValue = value;
+      return PlayerData.ByHandle(player).BaseIncome;
+    }
+
+    public static void SetBaseIncome(this player player, float value)
+    {
+      PlayerData.ByHandle(player).BaseIncome = value;
     }
   }
 }

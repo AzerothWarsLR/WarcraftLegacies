@@ -1,9 +1,7 @@
-using System;
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using static War3Api.Common;
-
 
 namespace AzerothWarsCSharp.MacroTools.UserInterface
 {
@@ -52,7 +50,7 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
       MultiboardSetItemValue(factionMbi, faction.ColoredName);
       MultiboardSetItemIcon(factionMbi, faction.Icon);
       MultiboardSetItemValue(cpMbi, faction.Player?.GetControlPointCount().ToString());
-      MultiboardSetItemValue(incomeMbi, I2S(R2I(faction.Income)));
+      MultiboardSetItemValue(incomeMbi, I2S(R2I(faction.Player.GetTotalIncome())));
       MultiboardSetItemWidth(factionMbi, WIDTH_FACTION);
       MultiboardSetItemWidth(cpMbi, WIDTH_CP);
       MultiboardSetItemWidth(incomeMbi, WIDTH_INCOME);

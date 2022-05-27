@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     private readonly Dictionary<int, int> _objectLimits = new();
     private int _controlPointCount;
-    private float _controlPointValue; //Gold per minute
+    private float _baseIncome; //Gold per minute
 
     private Faction? _faction;
 
@@ -68,16 +68,29 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
     }
 
-    public float ControlPointValue
+    /// <summary>
+    ///   Gold per second gained from all sources.
+    /// </summary>
+    public float TotalIncome => BaseIncome + BonusIncome;
+
+    /// <summary>
+    ///   Gold per second gained from secondary sources like Forsaken's plagued buildings.
+    /// </summary>
+    public float BonusIncome { get; set; }
+
+    /// <summary>
+    ///   Gold per second gained from primary sources like Control Points.
+    /// </summary>
+    public float BaseIncome
     {
-      get => _controlPointValue;
+      get => _baseIncome;
       set
       {
         if (value < 0)
           throw new ArgumentOutOfRangeException(
-            $"Tried to assign a negative ControlPointValue value to + {GetPlayerName(Player)}");
+            $"Tried to assign a negative {nameof(BaseIncome)} value to {GetPlayerName(Player)}.");
 
-        _controlPointValue = value;
+        _baseIncome = value;
       }
     }
 
