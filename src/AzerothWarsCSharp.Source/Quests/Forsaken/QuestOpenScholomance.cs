@@ -20,6 +20,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       AddObjective(new ObjectiveEitherOf(
         new ObjectiveResearch(Constants.UPGRADE_R02X_OPEN_THE_SCHOLOMANCE_SCOURGE, Constants.UNIT_U012_SCHOLOMANCE),
         new ObjectiveCompleteQuest(questPlague)));
+      Required = true;
     }
 
     protected override string CompletionPopup => "Scholomance has been opened!";
