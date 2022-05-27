@@ -14,8 +14,9 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private readonly Dictionary<int, int> _objectLevels = new();
 
     private readonly Dictionary<int, int> _objectLimits = new();
-    private int _controlPointCount;
     private float _baseIncome; //Gold per minute
+    private float _bonusIncome;
+    private int _controlPointCount;
 
     private Faction? _faction;
 
@@ -42,7 +43,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         if (_faction != null)
         {
           _faction = null;
-          if (prevFaction != null) 
+          if (prevFaction != null)
             prevFaction.Player = null; //Referential integrity
         }
 
@@ -54,13 +55,13 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
             Player.SetColor(value.PlayerColor, true);
             _faction = value;
             //Enforce referential integrity
-            if (value.Player != Player) 
+            if (value.Player != Player)
               value.Player = Player;
           }
           else
           {
             throw new Exception("Attempted to Person " + GetPlayerName(Player) +
-                       " to already occupied faction with name " + value.Name);
+                                " to already occupied faction with name " + value.Name);
           }
         }
 
@@ -76,7 +77,15 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// <summary>
     ///   Gold per second gained from secondary sources like Forsaken's plagued buildings.
     /// </summary>
-    public float BonusIncome { get; set; }
+    public float BonusIncome
+    {
+      get => _bonusIncome;
+      set
+      {
+        _bonusIncome = value;
+        IncomeChanged?.Invoke(this, this);
+      }
+    }
 
     /// <summary>
     ///   Gold per second gained from primary sources like Control Points.
@@ -106,6 +115,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         _controlPointCount = value;
       }
     }
+
+    /// <summary>
+    /// Fired when the <see cref="player"/>'s income changes.
+    /// </summary>
+    public event EventHandler<PlayerData>? IncomeChanged;
 
     public static event EventHandler<PlayerFactionChangeEventArgs>? FactionChange;
 

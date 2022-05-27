@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Libraries;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.UserInterface
@@ -150,20 +151,6 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
       RenderInstance();
     }
 
-    private static void OnControlPointOwnerChanged(object? sender, ControlPointOwnerChangeEventArgs args)
-    {
-      if (args.ControlPoint.Owner.GetFaction() != null)
-      {
-        Instance?.UpdateFactionRow(args.ControlPoint.Owner.GetFaction());
-      }
-      
-      var formerPerson = PlayerData.ByHandle(args.FormerOwner);
-      if (formerPerson.Faction != null)
-      {
-        Instance?.UpdateFactionRow(formerPerson.Faction);
-      }
-    }
-
     public static void Setup()
     {
       var timer = CreateTimer();
@@ -177,8 +164,18 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
 
       FactionManager.AnyFactionNameChanged += OnFactionAnyFactionNameChanged;
       Faction.IconChanged += OnFactionIconChanged;
-      
-      ControlPoint.OnControlPointOwnerChange += OnControlPointOwnerChanged;
+
+      foreach (var player in GeneralHelpers.GetAllPlayers())
+      {
+        player.GetPlayerData().IncomeChanged += OnPlayerIncomeChanged;
+      }
+    }
+
+    private static void OnPlayerIncomeChanged(object? sender, PlayerData player)
+    {
+      var faction = player.Faction;
+      if (faction != null)
+        Instance?.UpdateFactionRow(faction);
     }
 
     private static void OnFactionIconChanged(object? sender, Faction args)

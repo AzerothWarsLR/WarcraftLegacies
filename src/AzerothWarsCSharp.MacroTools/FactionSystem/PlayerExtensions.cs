@@ -126,7 +126,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     {
       return PlayerData.ByHandle(player).BonusIncome;
     }
-    
+
     public static float GetBaseIncome(this player player)
     {
       return PlayerData.ByHandle(player).BaseIncome;
@@ -140,6 +140,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public static void AddBonusIncome(this player player, float value)
     {
       PlayerData.ByHandle(player).BonusIncome += value;
+    }
+
+    internal static PlayerData GetPlayerData(this player player)
+    {
+      return PlayerData.ByHandle(player);
     }
   }
 }
