@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Setup
       LegionQuestSetup.Setup();
       LordaeronQuestSetup.Setup();
       QuelthalasQuestSetup.Setup();
-      ScourgeQuestSetup.Setup();
+      var questPlague = ScourgeQuestSetup.Setup();
       SentinelsQuestSetup.Setup();
       StormwindQuestSetup.Setup();
       WarsongQuestSetup.Setup();
@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Setup
       KultirasQuestSetup.Setup();
       ScarletQuestSetup.Setup();
       TrollQuestSetup.Setup();
-      ForsakenQuestSetup.Setup();
+      ForsakenQuestSetup.Setup(questPlague);
       TwilightQuestSetup.Setup();
       CthunQuestSetup.Setup();
       GoblinQuestSetup.Setup();

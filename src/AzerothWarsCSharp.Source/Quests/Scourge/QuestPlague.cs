@@ -4,7 +4,6 @@ using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Mechanics.Scourge.Plague;
-using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -13,7 +12,6 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 {
   /// <summary>
   /// When completed, the plague begins, granting either the Forsaken or the quest holder several Plague Cauldrons that periodically spawn undead units.
-  /// Also forcibly opens Scholomance and clears the creeps outside it.
   /// </summary>
   public sealed class QuestPlague : QuestData
   {
@@ -55,9 +53,6 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       Required = true;
     }
 
-    public unit? ScholomanceInner { private get; init; }
-    public unit? ScholomanceOuter { private get; init; }
-
     protected override string CompletionPopup =>
       "The plague has been unleashed! The citizens of Lordaeron are quickly transforming into mindless zombies.";
 
@@ -84,7 +79,6 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override void OnComplete(Faction completingFaction)
     {
-      OpenScholomance();
       completingFaction.ModObjectLimit(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, -Faction.UNLIMITED);
       foreach (var unit in _cultistsOfTheDamned)
       {
@@ -110,18 +104,6 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
     protected override void OnAdd(Faction whichFaction)
     {
       whichFaction.ModObjectLimit(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, Faction.UNLIMITED);
-    }
-
-    private void OpenScholomance()
-    {
-      ForsakenSetup.FACTION_FORSAKEN.SetObjectLevel(Constants.UPGRADE_R02X_OPEN_THE_SCHOLOMANCE_SCOURGE,
-        1); //Todo: this should probably be a Forsaken quest that completes when this quest completes
-      WaygateActivate(ScholomanceInner, true);
-      WaygateSetDestination(ScholomanceInner, Regions.Scholomance_Entrance.Center.X,
-        Regions.Scholomance_Entrance.Center.Y);
-
-      WaygateActivate(ScholomanceOuter, true);
-      WaygateSetDestination(ScholomanceOuter, Regions.Scholomance_Exit.Center.X, Regions.Scholomance_Exit.Center.Y);
     }
   }
 }
