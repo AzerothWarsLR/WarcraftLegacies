@@ -41,6 +41,24 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
 
     private static FactionMultiboard? Instance { get; set; }
 
+    public static void Setup()
+    {
+      var timer = CreateTimer();
+      TimerStart(timer, 2, false, () => { Instance = new FactionMultiboard(COLUMN_COUNT, 3, TITLE); }
+      );
+
+      PlayerData.FactionChange += OnPersonFactionChange;
+      Faction.TeamJoin += OnFactionTeamJoin;
+      Faction.TeamLeft += OnFactionTeamLeft;
+      Faction.StatusChanged += OnFactionStatusChanged;
+
+      FactionManager.AnyFactionNameChanged += OnFactionAnyFactionNameChanged;
+      Faction.IconChanged += OnFactionIconChanged;
+
+      foreach (var player in GeneralHelpers.GetAllPlayers())
+        player.GetPlayerData().IncomeChanged += OnPlayerIncomeChanged;
+    }
+
     //Run when a detail about a Faction has changed
     private void UpdateFactionRow(Faction faction)
     {
@@ -149,26 +167,6 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
     private static void OnFactionStatusChanged(object? sender, Faction faction)
     {
       RenderInstance();
-    }
-
-    public static void Setup()
-    {
-      var timer = CreateTimer();
-      TimerStart(timer, 2, false, () => { Instance = new FactionMultiboard(COLUMN_COUNT, 3, TITLE); }
-      );
-
-      PlayerData.FactionChange += OnPersonFactionChange;
-      Faction.TeamJoin += OnFactionTeamJoin;
-      Faction.TeamLeft += OnFactionTeamLeft;
-      Faction.StatusChanged += OnFactionStatusChanged;
-
-      FactionManager.AnyFactionNameChanged += OnFactionAnyFactionNameChanged;
-      Faction.IconChanged += OnFactionIconChanged;
-
-      foreach (var player in GeneralHelpers.GetAllPlayers())
-      {
-        player.GetPlayerData().IncomeChanged += OnPlayerIncomeChanged;
-      }
     }
 
     private static void OnPlayerIncomeChanged(object? sender, PlayerData player)
