@@ -100,6 +100,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
             $"Tried to assign a negative {nameof(BaseIncome)} value to {GetPlayerName(Player)}.");
 
         _baseIncome = value;
+        IncomeChanged?.Invoke(this, this);
       }
     }
 
