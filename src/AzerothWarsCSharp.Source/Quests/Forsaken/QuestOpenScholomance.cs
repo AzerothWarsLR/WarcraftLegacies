@@ -2,14 +2,14 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
-using War3Api;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Forsaken
 {
   public sealed class QuestOpenScholomance : QuestData
   {
-    private Common.unit? _scholomanceInner;
-    private Common.unit? _scholomanceOuter;
+    private unit? _scholomanceInner;
+    private unit? _scholomanceOuter;
 
     public QuestOpenScholomance(QuestData questPlague) : base("Open Scholomance",
       "Scholomance remains hidden deep within the ancient crypts beneath Caer Darrow, away from the prying eyes of the Alliance. Soon it will be time to open its doors and unleash the necromantic horrors within.",
