@@ -1,6 +1,7 @@
 ﻿using AzerothWarsCSharp.MacroTools.Spells;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.UnitEffects;
+using AzerothWarsCSharp.Source.Mechanics.BlackEmpire;
 using AzerothWarsCSharp.Source.Spells;
 using static War3Api.Common;
 
@@ -319,6 +320,13 @@ namespace AzerothWarsCSharp.Source.Setup
         BonusIncome = 6
       };
       SpellSystem.Register(corruptBuilding);
+
+      var blackEmpireObeliskSpell =
+        new BlackEmpireObeliskSpell(Constants.ABILITY_A06Z_SUMMON_OBELISK, Constants.UNIT_N0BA_NY_ALOTHA_OBELISK)
+        {
+          Duration = 300,
+        };
+      SpellSystem.Register(blackEmpireObeliskSpell);
     }
   }
 }
