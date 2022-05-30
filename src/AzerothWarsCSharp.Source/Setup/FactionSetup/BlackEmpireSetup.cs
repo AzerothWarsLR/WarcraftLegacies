@@ -67,7 +67,10 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       var heraldUnitEffect = new HeraldUnitEffect(Constants.UNIT_U02E_HERALD_OF_NY_ALOTHA_BLACK_EMPRIE);
       SpellSystem.Register(heraldUnitEffect);
       var obeliskCast =
-        new BlackEmpireObeliskSpell(Constants.ABILITY_A06Z_SUMMON_OBELISK, Constants.UNIT_N0BA_NY_ALOTHA_OBELISK);
+        new BlackEmpireObeliskSpell(Constants.ABILITY_A06Z_SUMMON_OBELISK, Constants.UNIT_N0BA_NY_ALOTHA_OBELISK)
+        {
+          Duration = 300
+        };
       SpellSystem.Register(obeliskCast);
     }
   }
