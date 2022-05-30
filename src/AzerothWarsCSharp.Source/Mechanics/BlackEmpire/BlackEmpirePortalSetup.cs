@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
 
     public static void Setup()
     {
-      var twilightInteriorPos = new Point(-24805, 1872);
+      var twilightInteriorPos = new Point(-24805, -1872);
       var northrendInteriorPos = new Point(-25513, -1379);
       var tanarisInteriorPos = new Point(-26208, -1945);
       var shimmeringPortalId = FourCC("OTsp");
