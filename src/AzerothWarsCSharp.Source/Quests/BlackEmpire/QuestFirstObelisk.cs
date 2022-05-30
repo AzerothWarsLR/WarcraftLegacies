@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
     }
 
     protected override string CompletionPopup =>
-      "The first Obelisk has been summoned, but Nya'lotha's connection to Azeroth is not yet stable. More Obelisks must be erected.";
+      "The first Obelisk has been summoned, but Ny'alotha's connection to Azeroth is not yet stable. More Obelisks must be erected.";
 
     protected override string RewardDescription =>
       "Unlock the northern zone of Ny'alotha, and the next Herald you train will open a temporary portal to Uldum.";

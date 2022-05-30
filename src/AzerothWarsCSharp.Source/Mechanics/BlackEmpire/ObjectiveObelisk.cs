@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
     public ObjectiveObelisk(ControlPoint target)
     {
       _target = target;
-      Description = $"Summon a Nya'lothan Obelisk on {GetUnitName(target.Unit)}";
+      Description = $"Summon a Ny'alothan Obelisk on {GetUnitName(target.Unit)}";
       BlackEmpireObeliskChannel.ObeliskSummoned += OnObeliskSummoned;
       TargetWidget = target.Unit;
       DisplaysPosition = true;

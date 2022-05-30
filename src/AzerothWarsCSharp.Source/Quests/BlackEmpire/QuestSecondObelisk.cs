@@ -40,7 +40,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       "The second Obelisk has been set. Ny'alotha's connection to Azeroth grows stronger.";
 
     protected override string RewardDescription =>
-      "Unlock the southern zone of NyaFourCC(lotha, and the next Herald you train will open a temporary portal to the Twilight Highlands.";
+      "Unlock the southern zone of Ny'alotha(lotha, and the next Herald you train will open a temporary portal to the Twilight Highlands.";
 
     protected override void OnComplete(Faction completingFaction)
     {
