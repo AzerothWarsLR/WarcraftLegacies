@@ -23,6 +23,8 @@ namespace AzerothWarsCSharp.Source.Setup
       AllLegendSetup.Setup();
       Console.WriteLine("Setting up ShoreSetup...");
       ShoreSetup.Setup();
+      Console.WriteLine("Setting up ControlPointSetup...");
+      ControlPointSetup.Setup();
       Console.WriteLine("Setting up InstanceSetup...");
       InstanceSetup.Setup();
       Console.WriteLine("Setting up TeamSetup...");
@@ -33,8 +35,6 @@ namespace AzerothWarsCSharp.Source.Setup
       PersonSetup.Setup();
       Console.WriteLine("Setting up ArtifactSetup...");
       ArtifactSetup.Setup();
-      Console.WriteLine("Setting up ControlPointSetup...");
-      ControlPointSetup.Setup();
       Console.WriteLine("Setting up AllQuestSetup...");
       AllQuestSetup.Setup();
       Console.WriteLine("Setting up ResearchSetup...");
