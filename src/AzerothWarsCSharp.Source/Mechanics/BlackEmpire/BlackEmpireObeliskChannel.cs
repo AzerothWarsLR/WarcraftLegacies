@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
       _target = target;
     }
 
-    public static event EventHandler? ObeliskSummoned;
+    public static event EventHandler<ControlPoint>? ObeliskSummoned;
 
     protected override void OnDispose()
     {
@@ -43,7 +43,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
     protected override void OnExpire()
     {
       _finished = true;
-      ObeliskSummoned?.Invoke(this, EventArgs.Empty);
+      ObeliskSummoned?.Invoke(this, _target);
     }
 
     protected override void OnApply()
