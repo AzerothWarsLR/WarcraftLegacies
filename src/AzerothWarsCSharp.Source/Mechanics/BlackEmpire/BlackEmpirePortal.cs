@@ -12,7 +12,6 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
     private readonly unit _exteriorWaygate;
     private readonly destructable _interiorPortal;
     private readonly unit _interiorWaygate;
-    private ControlPoint _nearbyControlPoint; //This Control Point is the closest one to the exterior Waygate
     private BlackEmpirePortalState _state = BlackEmpirePortalState.Closed;
 
     public BlackEmpirePortal(unit interiorWaygate, destructable interiorPortal, Point interiorDestination,
@@ -22,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
       _interiorPortal = interiorPortal;
       _exteriorWaygate = exteriorWaygate;
       Name = name;
-      _nearbyControlPoint = nearbyControlPoint;
+      NearbyControlPoint = nearbyControlPoint;
       _interiorWaygate.SetWaygateDestination(_exteriorWaygate.GetPosition());
       _exteriorWaygate.SetWaygateDestination(interiorDestination);
       FogModifierStart(CreateFogModifierRadius(BlackEmpireSetup.FactionBlackempire.Player, FOG_OF_WAR_VISIBLE,
@@ -65,5 +64,10 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
         }
       }
     }
+
+    /// <summary>
+    /// This <see cref="ControlPoint"/> is the closest one to the <see cref="BlackEmpirePortal"/>'s exterior Waygate.
+    /// </summary>
+    public ControlPoint NearbyControlPoint { get; }
   }
 }

@@ -21,11 +21,14 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
       if (ControlPointManager.UnitIsControlPoint(target))
       {
         var controlPointTarget = ControlPointManager.GetFromUnitType(GetUnitTypeId(target));
-        var channel = new BlackEmpireObeliskChannel(caster, Id, _obeliskUnitTypeId, controlPointTarget)
+        if (controlPointTarget == BlackEmpirePortalManager.CurrentObjective.NearbyControlPoint)
         {
-          Duration = Duration
-        };
-        ChannelManager.Add(channel);
+          var channel = new BlackEmpireObeliskChannel(caster, Id, _obeliskUnitTypeId, controlPointTarget)
+          {
+            Duration = Duration
+          };
+          ChannelManager.Add(channel);
+        }
       }
     }
   }
