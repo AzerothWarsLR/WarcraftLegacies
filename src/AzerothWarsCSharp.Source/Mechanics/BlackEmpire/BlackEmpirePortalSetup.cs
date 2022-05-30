@@ -23,9 +23,9 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
         NorthrendPortal = new BlackEmpirePortal(
           PreplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, northrendInteriorPos),
           PreplacedUnitSystem.GetDestructable(shimmeringPortalId, northrendInteriorPos),
-          Regions.NyNorth.Center,
+          Regions.Ny_Ulduar_Interior.Center,
           PreplacedUnitSystem.GetUnit(Constants.UNIT_N07F_NY_ALOTHA_PORTAL_GREEN_TWILIGHT_HIGHLANDS,
-            Regions.Ny_Ulduar_Interior.Center), "Northrend",
+            Regions.NyNorth.Center), "Northrend",
           ControlPointManager.GetFromUnitType(Constants.UNIT_N02S_STORM_PEAKS_15GOLD_MIN)),
 
         TanarisPortal = new BlackEmpirePortal(
