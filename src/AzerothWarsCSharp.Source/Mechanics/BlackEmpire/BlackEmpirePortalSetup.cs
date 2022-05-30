@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
           Regions.NyNorth.Center,
           PreplacedUnitSystem.GetUnit(Constants.UNIT_N07F_NY_ALOTHA_PORTAL_GREEN_TWILIGHT_HIGHLANDS,
             Regions.Ny_Ulduar_Interior.Center), "Northrend",
-          ControlPointManager.GetFromUnitType(Constants.UNIT_N04V_NORTHERN_HIGHLANDS_10GOLD_MIN)),
+          ControlPointManager.GetFromUnitType(Constants.UNIT_N02S_STORM_PEAKS_15GOLD_MIN)),
 
         TanarisPortal = new BlackEmpirePortal(
           PreplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, tanarisInteriorPos),
@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
           Regions.Ny_Silithus_Interior.Center,
           PreplacedUnitSystem.GetUnit(Constants.UNIT_N07F_NY_ALOTHA_PORTAL_GREEN_TWILIGHT_HIGHLANDS,
             Regions.NyTanaris.Center), "Ul'dum",
-          ControlPointManager.GetFromUnitType(Constants.UNIT_N04V_NORTHERN_HIGHLANDS_10GOLD_MIN)),
+          ControlPointManager.GetFromUnitType(Constants.UNIT_N0BD_ULDUM_10GOLD_MIN)),
 
         TwilightHighlandsPortal = new BlackEmpirePortal(
           PreplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, twilightInteriorPos),
