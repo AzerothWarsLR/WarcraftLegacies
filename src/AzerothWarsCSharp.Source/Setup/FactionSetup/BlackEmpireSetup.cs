@@ -69,7 +69,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       var obeliskCast =
         new BlackEmpireObeliskSpell(Constants.ABILITY_A06Z_SUMMON_OBELISK, Constants.UNIT_N0BA_NY_ALOTHA_OBELISK)
         {
-          Duration = 300
+          Duration = 180
         };
       SpellSystem.Register(obeliskCast);
     }
