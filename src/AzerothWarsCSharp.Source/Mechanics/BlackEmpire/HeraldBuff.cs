@@ -16,12 +16,19 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
 
     public HeraldBuff(unit caster, unit target) : base(caster, target)
     {
-      if (Instance != null)
+      try
       {
-        throw new Exception($"Tried to create a second {nameof(HeraldBuff)}. There can only be one.");
-      }
+        if (Instance != null)
+        {
+          throw new Exception($"Tried to create a second {nameof(HeraldBuff)}. There can only be one.");
+        }
 
-      Instance = this;
+        Instance = this;
+      }
+      catch (Exception ex)
+      {
+        Console.Write(ex);
+      }
     }
 
     public static HeraldBuff? Instance { get; private set; }
