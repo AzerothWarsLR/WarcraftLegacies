@@ -7,37 +7,41 @@ using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Mechanics.BlackEmpire;
 using static War3Api.Common;
 
-public sealed class QuestFirstObelisk : QuestData
+namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 {
-  private readonly List<unit> _rescueUnits = new();
-
-  public QuestFirstObelisk(rect rescueArea) : base("The First Obelisk",
-    "The twisted floatity of Ny'alotha is a mere shadow of Azeroth, but that will soon change. The first step in merging the two realities is to establish an Obelisk in Northrend.",
-    "ReplaceableTextures\\CommandButtons\\BTNIceCrownObelisk.blp")
+  public sealed class QuestFirstObelisk : QuestData
   {
-    foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueArea).EmptyToList())
+    private readonly List<unit> _rescueUnits = new();
+
+    public QuestFirstObelisk(rect rescueArea) : base("The First Obelisk",
+      "The twisted floatity of Ny'alotha is a mere shadow of Azeroth, but that will soon change. The first step in merging the two realities is to establish an Obelisk in Northrend.",
+      "ReplaceableTextures\\CommandButtons\\BTNIceCrownObelisk.blp")
     {
-      SetUnitInvulnerable(unit, true);
-      _rescueUnits.Add(unit);
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueArea).EmptyToList())
+      {
+        SetUnitInvulnerable(unit, true);
+        _rescueUnits.Add(unit);
+      }
+
+      AddObjective(new ObjectiveObelisk(ControlPointManager.GetFromUnitType(FourCC("n02S"))));
+      Required = true;
     }
 
-    AddObjective(new ObjectiveObelisk(ControlPointManager.GetFromUnitType(FourCC("n02S"))));
-  }
+    protected override string CompletionPopup =>
+      "The first Obelisk has been summoned, but Nya'lotha's connection to Azeroth is not yet stable. More Obelisks must be erected.";
 
-  protected override string CompletionPopup =>
-    "The first Obelisk has been summoned, but Nya'lotha's connection to Azeroth is not yet stable. More Obelisks must be erected.";
+    protected override string RewardDescription =>
+      "Unlock the northern zone of Ny'alotha, and the next Herald you train will open a temporary portal to Uldum.";
 
-  protected override string RewardDescription =>
-    "Unlock the northern zone of Ny'alotha, and the next Herald you train will open a temporary portal to Uldum.";
-
-  protected override void OnComplete(Faction completingFaction)
-  {
-    foreach (var unit in _rescueUnits)
+    protected override void OnComplete(Faction completingFaction)
     {
-      unit.Rescue(completingFaction.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE));
-    }
+      foreach (var unit in _rescueUnits)
+      {
+        unit.Rescue(completingFaction.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      }
 
-    KillUnit(HeraldBuff.Instance?.Caster);
-    BlackEmpirePortalManager.GoToNext();
+      KillUnit(HeraldBuff.Instance?.Caster);
+      BlackEmpirePortalManager.GoToNext();
+    }
   }
 }
