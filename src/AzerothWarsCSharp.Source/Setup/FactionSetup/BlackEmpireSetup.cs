@@ -66,6 +66,9 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       BlackEmpirePortalSetup.Setup();
       var heraldUnitEffect = new HeraldUnitEffect(Constants.UNIT_U02E_HERALD_OF_NY_ALOTHA_BLACK_EMPRIE);
       SpellSystem.Register(heraldUnitEffect);
+      var obeliskCast =
+        new BlackEmpireObeliskSpell(Constants.ABILITY_A06Z_SUMMON_OBELISK, Constants.UNIT_N0BA_NY_ALOTHA_OBELISK);
+      SpellSystem.Register(obeliskCast);
     }
   }
 }
