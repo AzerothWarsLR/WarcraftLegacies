@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
@@ -11,9 +12,10 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 {
   public sealed class QuestFirstObelisk : QuestData
   {
+    private readonly List<destructable> _gates;
     private readonly List<unit> _rescueUnits = new();
 
-    public QuestFirstObelisk(rect rescueArea) : base("The First Obelisk",
+    public QuestFirstObelisk(rect rescueArea, IEnumerable<destructable> gates) : base("The First Obelisk",
       "The twisted floatity of Ny'alotha is a mere shadow of Azeroth, but that will soon change. The first step in merging the two realities is to establish an Obelisk in Northrend.",
       "ReplaceableTextures\\CommandButtons\\BTNIceCrownObelisk.blp")
     {
@@ -21,6 +23,12 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       {
         SetUnitInvulnerable(unit, true);
         _rescueUnits.Add(unit);
+      }
+
+      _gates = gates.ToList();
+      foreach (var gate in _gates)
+      {
+        SetDestructableInvulnerable(gate, true);
       }
 
       AddObjective(new ObjectiveObelisk(ControlPointManager.GetFromUnitType(FourCC("n02S"))));
@@ -42,6 +50,12 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 
       KillUnit(HeraldBuff.Instance?.Caster);
       BlackEmpirePortalManager.GoToNext();
+      foreach (var gate in _gates)
+      {
+        RemoveDestructable(gate);
+      }
+
+      _gates.Clear();
     }
   }
 }

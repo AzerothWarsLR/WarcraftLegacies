@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
@@ -11,9 +12,10 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
 {
   public sealed class QuestSecondObelisk : QuestData
   {
+    private readonly List<destructable> _gates;
     private readonly List<unit> _rescueUnits = new();
 
-    public QuestSecondObelisk(List<rect> rescueRects) : base("Second Obelisk",
+    public QuestSecondObelisk(List<rect> rescueRects, IEnumerable<destructable> gates) : base("Second Obelisk",
       "The convergence of floatities grows ever closer. An Obelisk must be established in Uldum.",
       "ReplaceableTextures\\CommandButtons\\BTNIceCrownObelisk.blp")
     {
@@ -23,6 +25,12 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       {
         SetUnitInvulnerable(unit, true);
         _rescueUnits.Add(unit);
+      }
+
+      _gates = gates.ToList();
+      foreach (var gate in _gates)
+      {
+        SetDestructableInvulnerable(gate, true);
       }
 
       Required = true;
@@ -39,6 +47,12 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
       KillUnit(HeraldBuff.Instance?.Caster);
       BlackEmpirePortalManager.GoToNext();
+      foreach (var gate in _gates)
+      {
+        RemoveDestructable(gate);
+      }
+
+      _gates.Clear();
     }
   }
 }

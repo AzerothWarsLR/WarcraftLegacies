@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
@@ -13,9 +14,10 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
   public sealed class QuestThirdObelisk : QuestData
   {
     private static readonly int QuestResearchId = FourCC("R07K");
+    private readonly List<destructable> _gates;
     private readonly List<unit> _rescueUnits = new();
 
-    public QuestThirdObelisk(List<rect> rescueRects) : base("Merging of Realities",
+    public QuestThirdObelisk(List<rect> rescueRects, IEnumerable<destructable> gates) : base("Merging of Realities",
       "Reality frays at the seams as madness threatents to overtake it. Once an Obelisk has been established in the Twilight Highlands, the mirror worlds of Azeroth and Ny'alotha will finally be one, and the Black empire will be unleashed.",
       "ReplaceableTextures\\CommandButtons\\BTNHorrorSoul.blp")
     {
@@ -33,6 +35,12 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
         _rescueUnits.Add(unit);
       }
 
+      _gates = gates.ToList();
+      foreach (var gate in _gates)
+      {
+        SetDestructableInvulnerable(gate, true);
+      }
+
       Required = true;
     }
 
@@ -43,7 +51,7 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       "The NyaFourCC(lothan portals to Storm Peaks, Northern Highlands, and Tanaris will be permanently opened";
 
     //Opens the central portals in Nyalotha permanently.
-    private static void OpenPortals(Faction completingFaction)
+    private void OpenPortals(Faction completingFaction)
     {
       completingFaction.ModObjectLimit(FourCC("u02E"), -Faction.UNLIMITED); //Herald
       completingFaction.SetObjectLevel(QuestResearchId, 1);
@@ -54,6 +62,13 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       KillUnit(HeraldBuff.Instance?.Caster);
       BlackEmpirePortalManager.GoToNext();
       if (GetLocalPlayer() == completingFaction.Player) SetCameraPosition(-25528, -1979);
+
+      foreach (var gate in _gates)
+      {
+        RemoveDestructable(gate);
+      }
+
+      _gates.Clear();
     }
 
     protected override void OnComplete(Faction completingFaction)
