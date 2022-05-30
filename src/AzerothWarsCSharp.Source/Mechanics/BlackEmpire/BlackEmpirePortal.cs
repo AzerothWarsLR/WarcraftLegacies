@@ -9,10 +9,9 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
 {
   public sealed class BlackEmpirePortal
   {
-    private unit _exteriorWaygate;
-    private Point _interiorDestination;
-    private destructable _interiorPortal;
-    private unit _interiorWaygate;
+    private readonly unit _exteriorWaygate;
+    private readonly destructable _interiorPortal;
+    private readonly unit _interiorWaygate;
     private ControlPoint _nearbyControlPoint; //This Control Point is the closest one to the exterior Waygate
     private BlackEmpirePortalState _state = BlackEmpirePortalState.Closed;
 
@@ -21,7 +20,6 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
     {
       _interiorWaygate = interiorWaygate;
       _interiorPortal = interiorPortal;
-      _interiorDestination = interiorDestination;
       _exteriorWaygate = exteriorWaygate;
       Name = name;
       _nearbyControlPoint = nearbyControlPoint;
