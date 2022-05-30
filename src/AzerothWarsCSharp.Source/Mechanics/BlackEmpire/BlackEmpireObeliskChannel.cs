@@ -38,6 +38,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
       BlzSetSpecialEffectPosition(_sfxProgress, -100000, -100000,
         0); //Has no death animation so needs to be moved off the map
       DestroyEffect(_sfxProgress);
+      SetUnitInvulnerable(Caster, true);
     }
 
     protected override void OnExpire()
@@ -51,7 +52,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
       var controlPointPosition = _target.Unit.GetPosition();
       _obelisk = CreateUnit(Caster.OwningPlayer(), _obeliskUnitTypeId, controlPointPosition.X, controlPointPosition.Y,
         0);
-      SetUnitInvulnerable(Caster, true);
+      SetUnitInvulnerable(Caster, false);
       SetUnitOwner(_target.Unit, Caster.OwningPlayer(), true);
       _sfxProgress = AddSpecialEffect(PROGRESS_EFFECT, controlPointPosition.X, controlPointPosition.Y);
       BlzSetSpecialEffectTimeScale(_sfxProgress, 10 / Duration);
