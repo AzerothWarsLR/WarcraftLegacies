@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
     private readonly unit _exteriorWaygate;
     private readonly destructable _interiorPortal;
     private readonly unit _interiorWaygate;
-    private BlackEmpirePortalState _state = BlackEmpirePortalState.Closed;
+    private BlackEmpirePortalState _state;
 
     public BlackEmpirePortal(unit interiorWaygate, destructable interiorPortal, Point interiorDestination,
       unit exteriorWaygate, string name, ControlPoint nearbyControlPoint)
@@ -26,6 +26,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
       _exteriorWaygate.SetWaygateDestination(interiorDestination);
       FogModifierStart(CreateFogModifierRadius(BlackEmpireSetup.FactionBlackempire.Player, FOG_OF_WAR_VISIBLE,
         GetUnitX(exteriorWaygate), GetUnitY(exteriorWaygate), 700, true, true));
+      State = BlackEmpirePortalState.Closed;
     }
 
     public string Name { get; }
