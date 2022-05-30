@@ -1,4 +1,6 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.SpellSystem;
+using AzerothWarsCSharp.Source.Mechanics.BlackEmpire;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
@@ -60,6 +62,10 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       FactionBlackempire.ModObjectLimit(FourCC("R07O"), Faction.UNLIMITED); //Fateweaver Training
 
       FactionManager.Register(FactionBlackempire);
+
+      BlackEmpirePortalSetup.Setup();
+      var heraldUnitEffect = new HeraldUnitEffect(Constants.UNIT_U02E_HERALD_OF_NY_ALOTHA_BLACK_EMPRIE);
+      SpellSystem.Register(heraldUnitEffect);
     }
   }
 }

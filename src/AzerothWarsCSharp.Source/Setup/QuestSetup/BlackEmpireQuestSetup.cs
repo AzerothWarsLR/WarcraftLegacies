@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using AzerothWarsCSharp.Source.Mechanics.BlackEmpire;
 using AzerothWarsCSharp.Source.Quests.BlackEmpire;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using War3Api;
@@ -10,8 +9,6 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
   {
     public static void Setup()
     {
-      BlackEmpirePortalSetup.Setup();
-
       var blackempire = BlackEmpireSetup.FactionBlackempire;
       blackempire.StartingQuest = blackempire.AddQuest(new QuestFirstObelisk(Regions.NyalothaUnlock1.Rect));
       blackempire.AddQuest(new QuestSecondObelisk(new List<Common.rect>
