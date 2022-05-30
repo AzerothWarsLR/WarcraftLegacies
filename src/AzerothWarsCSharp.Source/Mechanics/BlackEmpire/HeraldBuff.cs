@@ -28,9 +28,9 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
 
     public override void OnApply()
     {
-      BlzSetUnitName(Target, $"Herald of {_linkedPortal?.Name}");
       _linkedPortal = BlackEmpirePortalManager.CurrentObjective;
       _linkedPortal.State = BlackEmpirePortalState.ExitOnly;
+      BlzSetUnitName(Target, $"Herald of {_linkedPortal?.Name}");
     }
 
     public override void OnDispose()
