@@ -33,7 +33,7 @@ public sealed class QuestSecondObelisk : QuestData
   protected override void OnComplete(Faction completingFaction)
   {
     foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
-    RemoveUnit(HeraldBuff.Instance?.Caster);
+    KillUnit(HeraldBuff.Instance?.Caster);
     BlackEmpirePortalManager.GoToNext();
   }
 }

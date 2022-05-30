@@ -47,7 +47,7 @@ public sealed class QuestThirdObelisk : QuestData
     BlackEmpirePortalSetup.TanarisPortal.State = BlackEmpirePortalState.Open;
     BlackEmpirePortalSetup.NorthrendPortal.State = BlackEmpirePortalState.Open;
 
-    RemoveUnit(HeraldBuff.Instance?.Caster);
+    KillUnit(HeraldBuff.Instance?.Caster);
     BlackEmpirePortalManager.GoToNext();
     if (GetLocalPlayer() == completingFaction.Player) SetCameraPosition(-25528, -1979);
   }

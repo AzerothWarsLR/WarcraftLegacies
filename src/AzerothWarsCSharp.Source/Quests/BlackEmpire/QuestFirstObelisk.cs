@@ -37,7 +37,7 @@ public sealed class QuestFirstObelisk : QuestData
       unit.Rescue(completingFaction.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    RemoveUnit(HeraldBuff.Instance?.Caster);
+    KillUnit(HeraldBuff.Instance?.Caster);
     BlackEmpirePortalManager.GoToNext();
   }
 }
