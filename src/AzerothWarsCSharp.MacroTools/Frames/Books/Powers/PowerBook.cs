@@ -16,10 +16,10 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
 
     private static bool _initialized;
     private static PowerBook _instance;
+    private readonly Dictionary<Power, PowerPage> _pagesByPower = new();
 
     private Faction _trackedFaction;
-    private readonly Dictionary<Power, PowerPage> _pagesByPower = new();
-    
+
     private PowerBook(float width, float height, float bottomButtonXOffset, float bottomButtonYOffset) : base(width,
       height, bottomButtonXOffset, bottomButtonYOffset)
     {
@@ -46,7 +46,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
           _trackedFaction.PowerRemoved -= OnFactionRemovePower;
           RemoveAllPowers(_trackedFaction);
         }
-          
+
 
         if (_trackedFaction == value) return;
         _trackedFaction = value;
@@ -68,7 +68,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
         TrackedFaction = args.Player.GetFaction();
       }
     }
-    
+
     private void OnFactionRemovePower(object? sender, FactionPowerEventArgs factionPowerEventArgs)
     {
       RemovePower(factionPowerEventArgs.Power);
@@ -81,7 +81,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
         RemovePower(power);
       }
     }
-    
+
     private void AddAllPowers(Faction faction)
     {
       foreach (var power in faction.GetAllPowers())
@@ -116,7 +116,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
     {
       if (!_initialized)
       {
-        LoadToc(@"war3mapImported\ArtifactSystem.toc");
+        LoadToc(@"ArtifactSystem.toc");
         LoadToc(@"ui\framedef\framedef.toc");
         _instance = new PowerBook(BOOK_WIDTH, BOOK_HEIGHT, BOTTOM_BUTTON_X_OFFSET, BOTTOM_BUTTON_Y_OFFSET);
         _initialized = true;
