@@ -1,4 +1,7 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Powers;
+using AzerothWarsCSharp.MacroTools.SpellSystem;
+using AzerothWarsCSharp.Source.Mechanics.BlackEmpire;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
@@ -58,6 +61,26 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       FactionBlackempire.ModObjectLimit(FourCC("R02A"), Faction.UNLIMITED); //Void Infusion
       FactionBlackempire.ModObjectLimit(FourCC("R07N"), Faction.UNLIMITED); //Sorcerer Training
       FactionBlackempire.ModObjectLimit(FourCC("R07O"), Faction.UNLIMITED); //Fateweaver Training
+
+      //Special mechanics
+      BlackEmpirePortalSetup.Setup();
+      var heraldUnitEffect = new HeraldUnitEffect(Constants.UNIT_U02E_HERALD_OF_NY_ALOTHA_BLACK_EMPRIE);
+      SpellSystem.Register(heraldUnitEffect);
+      var obeliskCast =
+        new BlackEmpireObeliskSpell(Constants.ABILITY_A06Z_SUMMON_OBELISK, Constants.UNIT_N0BA_NY_ALOTHA_OBELISK)
+        {
+          Duration = 180
+        };
+      SpellSystem.Register(obeliskCast);
+
+      //Powers
+      var visionPower = new VisionPower("All-Seeing",
+        "Grants permanent vision over Ny'alotha.",
+        "Charm", new[]
+        {
+          Regions.NyalothaInstance,
+        });
+      FactionBlackempire.AddPower(visionPower);
 
       FactionManager.Register(FactionBlackempire);
     }

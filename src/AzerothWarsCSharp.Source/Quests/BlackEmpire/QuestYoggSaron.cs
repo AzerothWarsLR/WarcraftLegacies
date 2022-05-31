@@ -18,6 +18,8 @@ namespace AzerothWarsCSharp.Source.Quests.BlackEmpire
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00I"))));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02S"))));
       ResearchId = FourCC("R07R");
+      SetUnitInvulnerable(LegendBlackEmpire.legendYogg.Unit, true);
+      SetUnitOwner(LegendBlackEmpire.legendYogg.Unit, Player(PLAYER_NEUTRAL_PASSIVE), true);
     }
 
     protected override string RewardDescription =>
