@@ -1,6 +1,7 @@
 ﻿using System;
 using AzerothWarsCSharp.MacroTools.DialogueSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.TestSource.Setup.FactionSetup.FactionSetup;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.TestSource.Setup
@@ -12,16 +13,21 @@ namespace AzerothWarsCSharp.TestSource.Setup
       try
       {
         DialogueManager.Add(new Dialogue(
-          new[]
+          objectives: new[]
           {
             new ObjectiveLegendDead(LegendSetup.Kael)
-          }
-          , @"Sound\Dialogue\HumanCampaign\Human04\H04Kelthuzad28.flac",
+          },
+          soundFile: @"Sound\Dialogue\HumanCampaign\Human04\H04Kelthuzad28.flac",
+          caption:
           "Naive fool. My death will make little difference in the long run. For now, the scourging of this land... begins.",
-          "Kel'thuzad"
+          speaker: "Kel'thuzad",
+          audience: new[]
+          {
+            BlackEmpireSetup.BlackEmpire
+          }
         ));
         DialogueManager.Add(new Dialogue(
-          new[]
+          objectives: new[]
           {
             new ObjectiveStartSpell(FourCC("AHfs"), false, LegendSetup.Kael)
           }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using static War3Api.Common;
@@ -12,14 +13,17 @@ namespace AzerothWarsCSharp.MacroTools.DialogueSystem
   /// </summary>
   public sealed class Dialogue
   {
+    private readonly IEnumerable<Faction>? _audience;
     private readonly string _caption;
     private readonly SoundWrapper _sound;
     private readonly string _speaker;
 
-    public Dialogue(IEnumerable<Objective> objectives, string soundFile, string caption, string speaker)
+    public Dialogue(IEnumerable<Objective> objectives, string soundFile, string caption, string speaker,
+      IEnumerable<Faction>? audience = null)
     {
       _caption = caption;
       _speaker = speaker;
+      _audience = audience;
       Objectives = objectives.ToList();
       _sound = new SoundWrapper(soundFile, soundEax: SoundEax.HeroAcks);
     }
@@ -33,8 +37,23 @@ namespace AzerothWarsCSharp.MacroTools.DialogueSystem
 
     internal void OnObjectiveCompleted(object? sender, Objective objective)
     {
-      DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
-      _sound.Play(true);
+      if (_audience != null)
+      {
+        foreach (var faction in _audience)
+        {
+          var player = faction.Player;
+          if (player != null)
+          {
+            DisplayTextToPlayer(player, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
+            _sound.Play(player, true);
+          }
+        }
+      }
+      else
+      {
+        _sound.Play(true);
+      }
+
       Completed?.Invoke(this, this);
     }
   }
