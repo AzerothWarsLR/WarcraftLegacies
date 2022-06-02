@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       OverheadEffectPath = "Abilities\\Spells\\Other\\TalkToMe\\TalkToMe";
     }
 
-    protected internal List<Faction> EligibleFactions { get; } = new();
+    public List<Faction> EligibleFactions { get; init; } = new();
 
     /// <summary>
     ///   Where the <see cref="Objective" /> can be completed.
