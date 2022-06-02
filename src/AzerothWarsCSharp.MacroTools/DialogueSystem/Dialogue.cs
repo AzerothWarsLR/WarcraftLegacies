@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -25,7 +24,6 @@ namespace AzerothWarsCSharp.MacroTools.DialogueSystem
 
     internal void OnComplete(object? sender, Objective objective)
     {
-      Console.WriteLine("a");
       DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
       _sound.Play(true);
     }

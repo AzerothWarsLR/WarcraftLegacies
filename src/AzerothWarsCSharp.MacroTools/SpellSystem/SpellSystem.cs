@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
       SpellsByAbilityId[GetSpellAbilityId()]
         .OnStop(GetTriggerUnit());
     }
-    
+
     private static void OnCast()
     {
       SpellsByAbilityId[GetSpellAbilityId()]
@@ -30,7 +30,6 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
 
     private static void OnLearn()
     {
-      Console.WriteLine("a");
       SpellsByAbilityId[GetLearnedSkill()].OnLearn(GetTriggerUnit());
     }
 
