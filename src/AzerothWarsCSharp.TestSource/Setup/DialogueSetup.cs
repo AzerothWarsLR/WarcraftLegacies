@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.DialogueSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.TestSource.Setup.FactionSetup.FactionSetup;
 using static War3Api.Common;
@@ -19,12 +20,12 @@ namespace AzerothWarsCSharp.TestSource.Setup
           {
             new ObjectiveLegendDead(LegendSetup.Kael)
           },
-          soundFile: @"Sound\Dialogue\HumanCampaign\Human04\H04Kelthuzad28.flac",
-          caption:
-          "Naive fool. My death will make little difference in the long run. For now, the scourging of this land... begins.",
-          speaker: "Kel'thuzad",
+          soundFile: @"Sound\Dialogue\OrcCampaign\Orc05\O05Cenarius01",
+          caption: "Who dares defile this ancient land? Who dares the wrath of Cenarius and the Night Elves?",
+          speaker: "Cenarius",
           audience: new[]
           {
+            DalaranSetup.Dalaran,
             BlackEmpireSetup.BlackEmpire
           }
         ));
@@ -37,24 +38,23 @@ namespace AzerothWarsCSharp.TestSource.Setup
           "Come forth, Lord Archimonde! Enter this world, and let us bask in your power!",
           "Kel'thuzad"
         ));
-        DialogueManager.Add(new Dialogue(
-          objectives: new[]
+        var gromObjectives = new List<Objective>();
+        gromObjectives.Add(new ObjectiveControlLegend(LegendSetup.Kael, false)
+        {
+          EligibleFactions = new List<Faction>
           {
-            new ObjectiveControlLegend(LegendSetup.Kael, false)
-            {
-              EligibleFactions = new List<Faction>
-              {
-                BlackEmpireSetup.BlackEmpire
-              }
-            },
-            new ObjectiveControlLegend(LegendSetup.Uther, false)
-            {
-              EligibleFactions = new List<Faction>
-              {
-                BlackEmpireSetup.BlackEmpire
-              }
-            }
-          },
+            BlackEmpireSetup.BlackEmpire
+          }
+        });
+        gromObjectives.Add(new ObjectiveControlLegend(LegendSetup.Uther, false)
+        {
+          EligibleFactions = new List<Faction>
+          {
+            BlackEmpireSetup.BlackEmpire
+          }
+        });
+        DialogueManager.Add(new Dialogue(
+          objectives: gromObjectives,
           soundFile: @"Sound\Dialogue\OrcCampaign\Orc05\O05Grom26.flac",
           caption:
           "Yes! I feel the power once again! Come, my warriors; drink from the dark waters, and you will be reborn!",

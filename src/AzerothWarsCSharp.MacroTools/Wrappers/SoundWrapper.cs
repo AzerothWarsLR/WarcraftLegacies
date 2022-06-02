@@ -5,6 +5,8 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
 {
   public sealed class SoundWrapper
   {
+    public delegate bool PlayCondition(player whichPlayer);
+
     private readonly sound _sound;
     private bool _disposed;
 
@@ -38,19 +40,19 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
     }
 
     /// <summary>
-    /// Plays the sound for a particular player.
+    /// Plays the sound for players meeting a condition.
     /// </summary>
-    /// <param name="audience">Whom to play the sound for.</param>
+    /// <param name="playCondition">The sound only plays if <see cref="GetLocalPlayer"/> meets this condition.</param>
     /// <param name="disposeAfter">Whether or not to dispose of the sound after it's finished playing.</param>
     /// <exception cref="ObjectDisposedException">Thrown if the sound is already disposed.</exception>
-    public void Play(player audience, bool disposeAfter)
+    public void Play(PlayCondition playCondition, bool disposeAfter)
     {
       if (_disposed)
       {
         throw new ObjectDisposedException(nameof(SoundWrapper));
       }
 
-      if (GetLocalPlayer() == audience)
+      if (playCondition(GetLocalPlayer()))
       {
         StartSound(_sound);
       }

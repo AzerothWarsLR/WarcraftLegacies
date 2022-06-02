@@ -40,18 +40,19 @@ namespace AzerothWarsCSharp.MacroTools.DialogueSystem
           case QuestProgress.Complete:
             if (_audience != null)
             {
+              _sound.Play(x => _audience.Contains(x.GetFaction()), true);
               foreach (var faction in _audience)
               {
                 var player = faction.Player;
                 if (player != null)
                 {
                   DisplayTextToPlayer(player, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
-                  _sound.Play(player, true);
                 }
               }
             }
             else
             {
+              DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
               _sound.Play(true);
             }
 
