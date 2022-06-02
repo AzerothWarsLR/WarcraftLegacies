@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -6,6 +7,9 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.DialogueSystem
 {
+  /// <summary>
+  /// Can play a piece of dialogue from the Warcraft 3 campaign.
+  /// </summary>
   public sealed class Dialogue
   {
     private readonly string _caption;
@@ -22,10 +26,16 @@ namespace AzerothWarsCSharp.MacroTools.DialogueSystem
 
     public List<Objective> Objectives { get; }
 
-    internal void OnComplete(object? sender, Objective objective)
+    /// <summary>
+    /// Fired when the <see cref="Dialogue"/> plays.
+    /// </summary>
+    public event EventHandler<Dialogue>? Completed;
+
+    internal void OnObjectiveCompleted(object? sender, Objective objective)
     {
       DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
       _sound.Play(true);
+      Completed?.Invoke(this, this);
     }
   }
 }
