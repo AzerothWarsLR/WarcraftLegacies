@@ -69,7 +69,14 @@ namespace AzerothWarsCSharp.Source.Setup
           {
             new ObjectiveControlLegend(LegendNeutral.LegendFountainofblood, false)
             {
-              EligibleFactions = new List<Faction>()
+              EligibleFactions = new List<Faction>
+              {
+                WarsongSetup.FACTION_WARSONG
+              }
+            },
+            new ObjectiveControlLegend(LegendWarsong.LegendGrom, false)
+            {
+              EligibleFactions = new List<Faction>
               {
                 WarsongSetup.FACTION_WARSONG
               }
