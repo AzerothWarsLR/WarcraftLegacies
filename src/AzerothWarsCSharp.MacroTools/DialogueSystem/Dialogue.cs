@@ -28,33 +28,69 @@ namespace AzerothWarsCSharp.MacroTools.DialogueSystem
       _sound = new SoundWrapper(soundFile, soundEax: SoundEax.HeroAcks);
     }
 
-    public List<Objective> Objectives { get; }
+    internal List<Objective> Objectives { get; }
+
+    private QuestProgress Progress
+    {
+      set
+      {
+        switch (value)
+        {
+          case QuestProgress.Complete:
+            if (_audience != null)
+            {
+              foreach (var faction in _audience)
+              {
+                var player = faction.Player;
+                if (player != null)
+                {
+                  DisplayTextToPlayer(player, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
+                  _sound.Play(player, true);
+                }
+              }
+            }
+            else
+            {
+              _sound.Play(true);
+            }
+
+            Completed?.Invoke(this, this);
+            break;
+          case QuestProgress.Failed:
+            Completed?.Invoke(this, this);
+            break;
+          default:
+            throw new ArgumentOutOfRangeException(nameof(value), value, null);
+        }
+      }
+    }
 
     /// <summary>
     /// Fired when the <see cref="Dialogue"/> plays.
     /// </summary>
     public event EventHandler<Dialogue>? Completed;
 
-    internal void OnObjectiveCompleted(object? sender, Objective objective)
+    internal void OnObjectiveCompleted(object? sender, Objective completedObjective)
     {
-      if (_audience != null)
+      var allComplete = true;
+      var anyFailed = false;
+
+      foreach (var objective in Objectives)
       {
-        foreach (var faction in _audience)
+        if (objective.Progress != QuestProgress.Complete)
         {
-          var player = faction.Player;
-          if (player != null)
-          {
-            DisplayTextToPlayer(player, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
-            _sound.Play(player, true);
-          }
+          allComplete = false;
+          if (objective.Progress == QuestProgress.Failed)
+            anyFailed = true;
         }
       }
-      else
-      {
-        _sound.Play(true);
-      }
 
-      Completed?.Invoke(this, this);
+      if (allComplete)
+        Progress = QuestProgress.Complete;
+      else if (anyFailed)
+        Progress = QuestProgress.Failed;
+      else
+        Progress = QuestProgress.Incomplete;
     }
   }
 }
