@@ -46,13 +46,13 @@ namespace AzerothWarsCSharp.Source.Setup
           {
             new ObjectiveControlLegend(LegendDruids.LegendCenarius, false)
             {
-              EligibleFactions = new List<Faction>()
+              EligibleFactions = new List<Faction>
               {
                 DruidsSetup.factionDruids
               }
             }
           },
-          soundFile: @"Sound\Dialogue\OrcCampaign\Orc05\U05Cenarius01.flac",
+          soundFile: @"Sound\Dialogue\OrcCampaign\Orc05\O05Cenarius01.flac",
           caption: "Who dares defile this ancient land? Who dares the wrath of Cenarius and the Night Elves?",
           speaker: "Cenarius",
           audience: new[]
@@ -82,7 +82,7 @@ namespace AzerothWarsCSharp.Source.Setup
               }
             }
           },
-          soundFile: @"Sound\Dialogue\OrcCampaign\Orc05\U05Grom26.flac",
+          soundFile: @"Sound\Dialogue\OrcCampaign\Orc05\O05Grom26.flac",
           caption:
           "Yes! I feel the power once again! Come, my warriors; drink from the dark waters, and you will be reborn!",
           speaker: "Grom Hellscream",

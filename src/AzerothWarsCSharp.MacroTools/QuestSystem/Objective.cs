@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using AzerothWarsCSharp.MacroTools.DialogueSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using WCSharp.Shared.Data;
@@ -108,8 +109,14 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     protected bool IsPlayerOnSameTeamAsAnyEligibleFaction(player whichPlayer)
     {
       foreach (var eligibleFaction in EligibleFactions)
+      {
+        Console.WriteLine(this._description);
+        Console.WriteLine(eligibleFaction.Team.Name);
+        Console.WriteLine(whichPlayer.GetFaction()?.Team.Name);
         if (eligibleFaction.Team == whichPlayer.GetFaction()?.Team)
           return true;
+      }
+
       return false;
     }
 
@@ -121,7 +128,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     public event EventHandler<Objective>? ProgressChanged;
 
     /// <summary>
-    ///   Runs when a <see cref="QuestData" /> with this <see cref="Objective" /> is added to a <see cref="Faction" />.
+    ///   Runs when this <see cref="Objective"/> is registered to a <see cref="QuestData"/> or the <see cref="DialogueManager"/>.
     /// </summary>
     internal virtual void OnAdd(Faction faction)
     {

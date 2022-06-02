@@ -17,6 +17,7 @@ namespace AzerothWarsCSharp.MacroTools.DialogueSystem
     private readonly string _caption;
     private readonly SoundWrapper _sound;
     private readonly string _speaker;
+    private bool _completed;
 
     public Dialogue(IEnumerable<Objective> objectives, string soundFile, string caption, string speaker,
       IEnumerable<Faction>? audience = null)
@@ -54,9 +55,11 @@ namespace AzerothWarsCSharp.MacroTools.DialogueSystem
               _sound.Play(true);
             }
 
+            _completed = true;
             Completed?.Invoke(this, this);
             break;
           case QuestProgress.Failed:
+            _completed = true;
             Completed?.Invoke(this, this);
             break;
           default:
@@ -72,6 +75,11 @@ namespace AzerothWarsCSharp.MacroTools.DialogueSystem
 
     internal void OnObjectiveCompleted(object? sender, Objective completedObjective)
     {
+      if (_completed)
+      {
+        return;
+      }
+
       var allComplete = true;
       var anyFailed = false;
 
@@ -89,8 +97,6 @@ namespace AzerothWarsCSharp.MacroTools.DialogueSystem
         Progress = QuestProgress.Complete;
       else if (anyFailed)
         Progress = QuestProgress.Failed;
-      else
-        Progress = QuestProgress.Incomplete;
     }
   }
 }

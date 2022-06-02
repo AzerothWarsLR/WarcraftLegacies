@@ -10,6 +10,10 @@
       foreach (var objective in dialogue.Objectives)
       {
         objective.ProgressChanged += dialogue.OnObjectiveCompleted;
+        foreach (var faction in objective.EligibleFactions)
+        {
+          objective.OnAdd(faction);
+        }
       }
 
       dialogue.Completed += DialogueFinished;
