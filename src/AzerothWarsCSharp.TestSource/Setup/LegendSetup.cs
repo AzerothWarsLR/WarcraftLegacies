@@ -12,7 +12,8 @@ namespace AzerothWarsCSharp.TestSource.Setup
     {
       Kael = new Legend
       {
-        Unit = CreateUnit(Player(0), FourCC("Hkal"), 0, 0, 0)
+        Unit = CreateUnit(Player(12), FourCC("Hkal"), 0, 0, 0),
+        PermaDies = true
       };
       Legend.Register(Kael);
       Uther = new Legend

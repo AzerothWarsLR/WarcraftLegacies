@@ -44,6 +44,7 @@ namespace AzerothWarsCSharp.Source.Setup
       BlightSetup.Setup();
       PreplacedUnitSystem.Shutdown();
       QuestMenuSetup.Setup();
+      DialogueSetup.Setup();
     }
   }
 }

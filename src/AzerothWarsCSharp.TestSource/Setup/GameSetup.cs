@@ -35,6 +35,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
       WaygateManager.Setup(FourCC("nwgt"));
       HintSetup.Setup();
       PreplacedUnitSystem.Shutdown();
+      DialogueSetup.Setup();
     }
   }
 }
