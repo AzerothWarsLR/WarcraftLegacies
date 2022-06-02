@@ -60,6 +60,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
       Console.WriteLine("Setting up HintSetup...");
       HintSetup.Setup();
       PreplacedUnitSystem.Shutdown();
+      DialogueSetup.Setup();
     }
   }
 }

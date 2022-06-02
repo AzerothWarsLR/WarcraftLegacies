@@ -73,6 +73,7 @@ namespace AzerothWarsCSharp.Source.Setup
       PreplacedUnitSystem.Shutdown();
       Console.WriteLine("Setting up QuestMenuSetup...");
       QuestMenuSetup.Setup();
+      DialogueSetup.Setup();
     }
   }
 }
