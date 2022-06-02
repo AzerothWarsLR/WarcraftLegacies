@@ -16,7 +16,6 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     private minimapicon? _minimapIcon;
     private effect? _overheadEffect;
 
-    private Objective? _parentQuestItem;
     private QuestProgress _progress = QuestProgress.Incomplete;
 
     /// <summary>
@@ -27,7 +26,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       OverheadEffectPath = "Abilities\\Spells\\Other\\TalkToMe\\TalkToMe";
     }
 
-    protected List<Faction> EligibleFactions { get; } = new();
+    protected internal List<Faction> EligibleFactions { get; } = new();
 
     /// <summary>
     ///   Where the <see cref="Objective" /> can be completed.
@@ -51,13 +50,6 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
 
     protected string? MapEffectPath { get; init; }
 
-    internal Objective ParentQuestItem
-    {
-      set => _parentQuestItem = value;
-    }
-
-    internal QuestData ParentQuest { get; set; }
-
     internal questitem QuestItem { get; set; }
 
     /// <summary>
@@ -65,15 +57,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// </summary>
     public bool ShowsInQuestLog { get; protected init; } = true;
 
-    protected bool ProgressLocked
-    {
-      get
-      {
-        if (ParentQuest != null) return ParentQuest.ProgressLocked;
-
-        return _parentQuestItem == null || _parentQuestItem.ProgressLocked;
-      }
-    }
+    internal bool ProgressLocked { get; set; }
 
     public QuestProgress Progress
     {
@@ -87,18 +71,10 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
           if (value == QuestProgress.Incomplete)
           {
             QuestItemSetCompleted(QuestItem, false);
-            if (EligibleFactions.Contains(GetLocalPlayer()))
-              ShowLocal();
-
-            ShowSync();
           }
           else if (value == QuestProgress.Complete)
           {
             QuestItemSetCompleted(QuestItem, true);
-            if (EligibleFactions.Contains(GetLocalPlayer()))
-              HideLocal();
-
-            HideSync();
           }
           else if (value == QuestProgress.Undiscovered)
           {
@@ -152,10 +128,10 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     }
 
     //Shows the local aspects of this QuestItem, namely the minimap icon.
-    internal void ShowLocal()
+    internal void ShowLocal(QuestProgress parentQuestProgress)
     {
       if (Progress == QuestProgress.Incomplete &&
-          ParentQuest.Progress == QuestProgress.Incomplete)
+          parentQuestProgress == QuestProgress.Incomplete)
       {
         if (_minimapIcon == null && DisplaysPosition)
           _minimapIcon = CreateMinimapIcon(Position.X, Position.Y, 255, 255, 0, SkinManagerGetLocalPath(PingPath),
@@ -168,9 +144,9 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// <summary>
     ///   Shows the synchronous aspects of this QuestItem, namely the visible target circle.
     /// </summary>
-    internal void ShowSync()
+    internal void ShowSync(QuestProgress parentQuestProgress)
     {
-      if (Progress == QuestProgress.Incomplete && ParentQuest.Progress == QuestProgress.Incomplete)
+      if (Progress == QuestProgress.Incomplete && parentQuestProgress == QuestProgress.Incomplete)
       {
         string effectPath;
         if (MapEffectPath != null && _mapEffect == null)
