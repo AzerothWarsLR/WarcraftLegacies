@@ -12,8 +12,6 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     {
       _questItemA = questItemA;
       _questItemB = questItemB;
-      questItemA.ParentQuestItem = this;
-      questItemB.ParentQuestItem = this;
       Description = questItemA.Description + " or " + questItemB.Description;
       questItemA.ProgressChanged += OnChildProgressChanged;
       questItemB.ProgressChanged += OnChildProgressChanged;
