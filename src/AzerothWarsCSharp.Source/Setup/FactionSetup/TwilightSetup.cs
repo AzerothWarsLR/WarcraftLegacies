@@ -61,7 +61,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       f.ModObjectLimit(FourCC("R06Z"), Faction.UNLIMITED); //Herald Training
 
       //Powers
-      var power = new PowerCorruptWorker(new[]
+      var power = new PowerCorruptWorker(30, new[]
       {
         new Continent("Northern Eastern Kingdoms", Regions.Lordaeron_East),
         new Continent("Southern Eastern Kingdoms", Regions.Stormwind),

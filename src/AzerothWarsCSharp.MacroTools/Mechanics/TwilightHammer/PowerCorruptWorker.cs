@@ -14,15 +14,15 @@ namespace AzerothWarsCSharp.Source.Mechanics.TwilightHammer
     /// <summary>
     /// Periodically corrupts a random uncorrupted worker in one of the specified continents.
     /// </summary>
-    /// <param name="continents">The continents in which workers can be corrupted.</param>
     /// <param name="period">How frequently to corrupt workers.</param>
-    public PowerCorruptWorker(IEnumerable<Continent> continents, float period)
+    /// <param name="continents">The continents in which workers can be corrupted.</param>
+    public PowerCorruptWorker(float period, IEnumerable<Continent> continents)
     {
+      _corruptWorkerPeriodicTrigger = new PeriodicTrigger<CorruptWorkerPeriodicAction>(period);
       ActiveContinent = continents.First();
       IconName = "Charm";
       Name = "Corrupt Workers";
       Description = "Corrupt some workers";
-      _corruptWorkerPeriodicTrigger = new PeriodicTrigger<CorruptWorkerPeriodicAction>(period);
     }
 
     public Continent ActiveContinent
