@@ -31,7 +31,8 @@ namespace AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(Continent.Area).EmptyToList())
       {
         if (UnitAlive(unit) && IsUnitType(unit, UNIT_TYPE_PEON) && !IsUnitType(unit, UNIT_TYPE_SUMMONED) &&
-            !IsUnitType(unit, UNIT_TYPE_MECHANICAL) && !typeof(CorruptWorkerBuff).ExistsAsBuffOnUnit(unit))
+            !IsUnitType(unit, UNIT_TYPE_MECHANICAL) && !typeof(CorruptWorkerBuff).ExistsAsBuffOnUnit(unit) &&
+            IsUnitEnemy(unit, _powerHolder))
         {
           var buff = new CorruptWorkerBuff(unit, unit)
           {

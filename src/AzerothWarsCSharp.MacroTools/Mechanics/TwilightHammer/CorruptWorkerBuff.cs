@@ -4,6 +4,9 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer
 {
+  /// <summary>
+  /// Grants the caster vision of the target and increases the caster's income.
+  /// </summary>
   public sealed class CorruptWorkerBuff : PassiveBuff
   {
     private effect? _effect;
