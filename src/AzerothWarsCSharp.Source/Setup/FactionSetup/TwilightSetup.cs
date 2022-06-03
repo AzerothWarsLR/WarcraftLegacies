@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.Source.Mechanics.TwilightHammer;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
@@ -58,6 +59,16 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       f.ModObjectLimit(FourCC("Rosp"), Faction.UNLIMITED); //Spiked Barricades
       f.ModObjectLimit(FourCC("R06X"), Faction.UNLIMITED); //Magic Training
       f.ModObjectLimit(FourCC("R06Z"), Faction.UNLIMITED); //Herald Training
+
+      //Powers
+      var power = new PowerCorruptWorker(new[]
+      {
+        new Continent("Northern Eastern Kingdoms", Regions.Lordaeron_East),
+        new Continent("Southern Eastern Kingdoms", Regions.Stormwind),
+        new Continent("Kalimdor", Regions.Kalimdor),
+        new Continent("Minor islands", Regions.KezanAmbient)
+      });
+      FACTION_TWILIGHT.AddPower(power);
 
       FactionManager.Register(FACTION_TWILIGHT);
     }
