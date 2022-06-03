@@ -105,7 +105,7 @@ namespace AzerothWarsCSharp.Launcher
       builder.AddFiles(ASSETS_FOLDER_PATH, "*", SearchOption.AllDirectories);
 
       ObjectEditor.SupplmentMapWithObjectData(map);
-      
+
       // Set debug options if necessary, configure compiler
       const string csc = DEBUG ? "-debug -define:DEBUG" : null;
       var csproj = Directory.EnumerateFiles(projectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
@@ -171,9 +171,8 @@ namespace AzerothWarsCSharp.Launcher
           i++;
         }
       }
-        
     }
-    
+
     private static void LaunchGame()
     {
       var wc3Exe = ConfigurationManager.AppSettings["wc3exe"];

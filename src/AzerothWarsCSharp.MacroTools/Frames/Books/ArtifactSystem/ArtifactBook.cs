@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using AzerothWarsCSharp.MacroTools.ArtifactSystem;
-using AzerothWarsCSharp.MacroTools.FactionSystem;
-using AzerothWarsCSharp.MacroTools.Frames.Books.Powers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -18,7 +16,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
     private const float BOTTOM_BUTTON_X_OFFSET = 0.02f;
     private const float BOOK_WIDTH = 0.7f;
     private const float BOOK_HEIGHT = 0.37f;
-    
+
     private static ArtifactBook? _instance;
     private static bool _initialized;
     private readonly Dictionary<Artifact, ArtifactPage> _pagesByArtifact = new();
@@ -43,6 +41,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
         AddPage();
         lastPage = Pages.Last();
       }
+
       lastPage.AddArtifact(artifact);
       _pagesByArtifact.Add(artifact, lastPage);
       artifact.Disposed += OnArtifactDisposed;
@@ -56,7 +55,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
 
     private void AddAllArtifacts()
     {
-      foreach (var artifact in ArtifactManager.GetAllArtifacts()) 
+      foreach (var artifact in ArtifactManager.GetAllArtifacts())
         AddArtifact(artifact);
     }
 
@@ -74,7 +73,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
     {
       if (!_initialized)
       {
-        LoadToc(@"war3mapImported\ArtifactSystem.toc");
+        LoadToc(@"ArtifactSystem.toc");
         LoadToc(@"ui\framedef\framedef.toc");
         _instance = new ArtifactBook(BOOK_WIDTH, BOOK_HEIGHT, BOTTOM_BUTTON_X_OFFSET, BOTTOM_BUTTON_Y_OFFSET);
         _initialized = true;

@@ -26,13 +26,13 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 
     internal override void OnAdd(Faction whichFaction)
     {
-      if (EligibleFactions.Contains(GetOwningPlayer(GetTriggerUnit())))
+      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
         Progress = QuestProgress.Complete;
     }
 
     private void OnTargetChangeOwner(object? sender, LegendChangeOwnerEventArgs legendChangeOwnerEventArgs)
     {
-      if (IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit!.OwningPlayer()))
+      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
         Progress = QuestProgress.Complete;
       else
         Progress = _canFail ? QuestProgress.Failed : QuestProgress.Incomplete;

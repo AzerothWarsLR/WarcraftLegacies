@@ -107,6 +107,36 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
           Description + "\n|cffffcc00On completion:|r " + RewardDescription);
     }
 
+    private void Complete(Faction whichFaction)
+    {
+      QuestSetCompleted(Quest, true);
+      QuestSetFailed(Quest, false);
+      QuestSetDiscovered(Quest, true);
+      DisplayCompleted(whichFaction);
+      if (Global) DisplayCompletedGlobal(whichFaction);
+
+      if (ResearchId != 0) SetPlayerTechResearched(whichFaction.Player, ResearchId, 1);
+
+      OnComplete(whichFaction);
+      foreach (var objective in _objectives)
+      {
+        objective.ProgressLocked = true;
+      }
+    }
+
+    private void Fail(Faction whichFaction)
+    {
+      QuestSetCompleted(Quest, false);
+      QuestSetFailed(Quest, true);
+      QuestSetDiscovered(Quest, true);
+      DisplayFailed(whichFaction);
+      OnFail(whichFaction);
+      foreach (var objective in _objectives)
+      {
+        objective.ProgressLocked = true;
+      }
+    }
+
     /// <summary>
     ///   Register a <see cref="Faction" /> as being able to complete this <see cref="QuestData" />.
     /// </summary>
@@ -128,24 +158,11 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     {
       if (progress == QuestProgress.Complete)
       {
-        QuestSetCompleted(Quest, true);
-        QuestSetFailed(Quest, false);
-        QuestSetDiscovered(Quest, true);
-        DisplayCompleted(whichFaction);
-        if (Global) DisplayCompletedGlobal(whichFaction);
-
-        if (ResearchId != 0) SetPlayerTechResearched(whichFaction.Player, ResearchId, 1);
-
-        OnComplete(whichFaction);
+        Complete(whichFaction);
       }
       else if (progress == QuestProgress.Failed)
       {
-        QuestSetCompleted(Quest, false);
-        QuestSetFailed(Quest, true);
-        QuestSetDiscovered(Quest, true);
-        DisplayFailed(whichFaction);
-
-        OnFail(whichFaction);
+        Fail(whichFaction);
       }
       else if (progress == QuestProgress.Incomplete)
       {
@@ -167,16 +184,18 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       if (Progress != QuestProgress.Incomplete)
         foreach (var questItem in _objectives)
         {
-          if (GetLocalPlayer() == whichFaction.Player) questItem.HideLocal();
+          if (GetLocalPlayer() == whichFaction.Player)
+            questItem.HideLocal();
 
           questItem.HideSync();
         }
       else
         foreach (var questItem in _objectives)
         {
-          if (GetLocalPlayer() == whichFaction.Player) questItem.ShowLocal();
+          if (GetLocalPlayer() == whichFaction.Player)
+            questItem.ShowLocal(Progress);
 
-          questItem.ShowSync();
+          questItem.ShowSync(Progress);
         }
     }
 
@@ -212,7 +231,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     internal void ShowLocal()
     {
       QuestSetEnabled(Quest, true);
-      foreach (var questItem in _objectives) questItem.ShowLocal();
+      foreach (var questItem in _objectives) questItem.ShowLocal(Progress);
     }
 
     /// <summary>
@@ -220,7 +239,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// </summary>
     internal void ShowSync()
     {
-      foreach (var questItem in _objectives) questItem.ShowSync();
+      foreach (var questItem in _objectives) questItem.ShowSync(Progress);
     }
 
     /// <summary>
@@ -317,20 +336,43 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       }
     }
 
-    private void OnQuestItemProgressChanged(object? sender, Objective objective)
+    private void OnQuestItemProgressChanged(object? sender, Objective changedObjective)
     {
       var allComplete = true;
       var anyFailed = false;
       var anyUndiscovered = false;
 
-      foreach (var questItem in _objectives)
-        if (questItem.Progress != QuestProgress.Complete)
+      foreach (var objective in _objectives)
+      {
+        if (objective.Progress != QuestProgress.Complete)
         {
           allComplete = false;
-          if (questItem.Progress == QuestProgress.Failed)
+          if (objective.Progress == QuestProgress.Failed)
             anyFailed = true;
-          else if (questItem.Progress == QuestProgress.Undiscovered) anyUndiscovered = true;
+          else if (objective.Progress == QuestProgress.Undiscovered) anyUndiscovered = true;
         }
+
+        switch (objective.Progress)
+        {
+          case QuestProgress.Undiscovered:
+            break;
+          case QuestProgress.Incomplete:
+            if (objective.EligibleFactions.Contains(GetLocalPlayer()))
+              objective.ShowLocal(Progress);
+            objective.ShowSync(Progress);
+            break;
+          case QuestProgress.Complete:
+            if (objective.EligibleFactions.Contains(GetLocalPlayer()))
+              objective.HideLocal();
+            objective.HideSync();
+            break;
+          case QuestProgress.Failed:
+            break;
+          default:
+            throw new ArgumentOutOfRangeException(nameof(objective));
+        }
+      }
+
 
       //If anything is undiscovered, the quest is undiscovered
       if (anyUndiscovered && Progress != QuestProgress.Undiscovered)
@@ -345,17 +387,16 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
         Progress = QuestProgress.Incomplete;
     }
 
-    public void AddObjective(Objective questItem)
+    public void AddObjective(Objective objective)
     {
-      _objectives.Add(questItem);
-      if (questItem.ShowsInQuestLog)
+      _objectives.Add(objective);
+      if (objective.ShowsInQuestLog)
       {
-        questItem.QuestItem = QuestCreateItem(Quest);
-        QuestItemSetDescription(questItem.QuestItem, questItem.Description);
+        objective.QuestItem = QuestCreateItem(Quest);
+        QuestItemSetDescription(objective.QuestItem, objective.Description);
       }
 
-      questItem.ParentQuest = this;
-      questItem.ProgressChanged += OnQuestItemProgressChanged;
+      objective.ProgressChanged += OnQuestItemProgressChanged;
     }
   }
 }

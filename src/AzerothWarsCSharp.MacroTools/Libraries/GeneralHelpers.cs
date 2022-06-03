@@ -11,9 +11,15 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
   {
     private static readonly group TempGroup = CreateGroup();
     private static readonly rect TempRect = Rect(0, 0, 0, 0);
+    private static readonly unit PosUnit;
 
     private static Point? _enumDestructableCenter;
     private static float _enumDestructableRadius;
+
+    static GeneralHelpers()
+    {
+      PosUnit = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), FourCC("u00X"), 0, 0, 0);
+    }
 
     public static void CameraSetEarthquakeNoise(float magnitude)
     {
@@ -157,6 +163,13 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
       var rectRegion = CreateRegion();
       RegionAddRect(rectRegion, whichRect);
       return rectRegion;
+    }
+
+    public static float GetPositionZ(float x, float y)
+    {
+      SetUnitX(PosUnit, x);
+      SetUnitY(PosUnit, y);
+      return BlzGetUnitZ(PosUnit);
     }
   }
 }
