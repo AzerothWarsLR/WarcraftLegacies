@@ -2,12 +2,14 @@
 using System.Linq;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using WCSharp.Events;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer
 {
   public sealed class PowerCorruptWorker : Power
   {
+    private readonly List<Continent> _continents;
     private readonly PeriodicTrigger<CorruptWorkerPeriodicAction> _corruptWorkerPeriodicTrigger;
     private Continent _activeContinent = null!;
 
@@ -15,17 +17,21 @@ namespace AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer
     /// Periodically corrupts a random uncorrupted worker in one of the specified continents.
     /// </summary>
     /// <param name="period">How frequently to corrupt workers.</param>
+    /// <param name="changeContinentAbilityId">This ability, when cast, changes the target of this <see cref="Power"/>
+    /// to any continent that contains the spell's target.</param>
     /// <param name="continents">The continents in which workers can be corrupted.</param>
-    public PowerCorruptWorker(float period, IEnumerable<Continent> continents)
+    public PowerCorruptWorker(float period, int changeContinentAbilityId, IEnumerable<Continent> continents)
     {
       _corruptWorkerPeriodicTrigger = new PeriodicTrigger<CorruptWorkerPeriodicAction>(period);
-      ActiveContinent = continents.First();
+      _continents = continents.ToList();
+      ActiveContinent = _continents.First();
       IconName = "Charm";
       Name = "Corrupt Workers";
       Description = "Corrupt some workers";
+      PlayerUnitEvents.Register(PlayerUnitEvent.SpellFinish, ChangeContinent, changeContinentAbilityId);
     }
 
-    public Continent ActiveContinent
+    private Continent ActiveContinent
     {
       get => _activeContinent;
       set
@@ -36,6 +42,22 @@ namespace AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer
         }
 
         _activeContinent = value;
+      }
+    }
+
+    private void ChangeContinent()
+    {
+      var targetUnit = GetSpellTargetUnit();
+      Point targetPoint =
+        targetUnit != null ? targetUnit.GetPosition() : new Point(GetSpellTargetX(), GetSpellTargetY());
+
+      foreach (var continent in _continents)
+      {
+        if (continent.Area.Contains(targetPoint))
+        {
+          ActiveContinent = continent;
+          return;
+        }
       }
     }
 
