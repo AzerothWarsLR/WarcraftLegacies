@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
@@ -58,6 +59,26 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       f.ModObjectLimit(FourCC("Rosp"), Faction.UNLIMITED); //Spiked Barricades
       f.ModObjectLimit(FourCC("R06X"), Faction.UNLIMITED); //Magic Training
       f.ModObjectLimit(FourCC("R06Z"), Faction.UNLIMITED); //Herald Training
+
+      var cultistUnitTypeIds = new[]
+      {
+        Constants.UNIT_N087_PHASE_GRENADIER_TWILIGHT,
+        Constants.UNIT_O04B_CULTIST_TWILIGHT_HAMMER,
+        Constants.UNIT_O01H_TWILIGHT_HAMMER_ENFORCER_TWILIGHT,
+      };
+
+      //Powers
+      var power = new PowerCorruptWorker(30, Constants.ABILITY_A0BW_GLIMPSE_OF_THE_OLD_GODS_TWILIGHT, new[]
+      {
+        new Continent("Northern Eastern Kingdoms", Regions.Lordaeron_East),
+        new Continent("Southern Eastern Kingdoms", Regions.Stormwind),
+        new Continent("Kalimdor", Regions.Kalimdor),
+        new Continent("Minor islands", Regions.KezanAmbient)
+      }, cultistUnitTypeIds)
+      {
+        IconName = "OldGodWhispers"
+      };
+      FACTION_TWILIGHT.AddPower(power);
 
       FactionManager.Register(FACTION_TWILIGHT);
     }

@@ -9,16 +9,21 @@ namespace AzerothWarsCSharp.MacroTools
   {
     private const float HERO_DROP_DIST = 50; //The radius in which heroes spread out items when they drop them
 
+    public static void SetPosition(this unit unit, Point where)
+    {
+      SetUnitPosition(unit, where.X, where.Y);
+    }
+
     public static Point GetPosition(this unit unit)
     {
       return new Point(GetUnitX(unit), GetUnitY(unit));
     }
-    
+
     public static player OwningPlayer(this unit unit)
     {
       return GetOwningPlayer(unit);
     }
-    
+
     /// <summary>
     ///   Sets the Waygate's destination to the target point.
     ///   Blindly assumes that the unit is a Waygate.
@@ -151,7 +156,7 @@ namespace AzerothWarsCSharp.MacroTools
       {
         var x = unitX + HERO_DROP_DIST * Cos(ang);
         var y = unitY + HERO_DROP_DIST * Sin(ang);
-        ang += 360 * (float)MathEx.DEG_TO_RAD / 6;
+        ang += 360 * (float) MathEx.DEG_TO_RAD / 6;
         item dropItem = UnitItemInSlot(u, i);
         if (BlzGetItemBooleanField(dropItem, ITEM_BF_DROPPED_WHEN_CARRIER_DIES) ||
             BlzGetItemBooleanField(dropItem, ITEM_BF_CAN_BE_DROPPED))

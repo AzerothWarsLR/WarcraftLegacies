@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
     {
       AddObjective(new ObjectiveLegendDead(LegendIronforge.LegendGreatforge));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0AA"))));
-      ResearchId = FourCC("R07Q");
+      ResearchId = Constants.UPGRADE_R07Q_QUEST_COMPLETED_GIFT_OF_THE_FIRELORD;
     }
 
     protected override string CompletionPopup => "The great Ragnaros has ascended one of our shamans.";

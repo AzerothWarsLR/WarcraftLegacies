@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 
       LEGEND_DEATHWING = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("u01Y")),
+        UnitType = Constants.UNIT_U01Y_DEATHWING_TWILIGHT,
         PermaDies = true,
         DeathMessage = "Deathwing, the Black Scourge, is no more. The Destroyer has finally been defeated."
       };

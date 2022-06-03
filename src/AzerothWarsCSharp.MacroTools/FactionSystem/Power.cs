@@ -9,11 +9,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
   public abstract class Power
   {
     private string _description = "";
-    
-    public string IconName { get; protected init; }
+
+    public string IconName { get; init; }
     public string IconPath => $@"ReplaceableTextures\CommandButtons\BTN{IconName}.blp";
-    public string Name { get; protected init; }
-    
+    public string Name { get; init; }
+
     public string Description
     {
       get => _description;
@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     }
 
     public event EventHandler<Power>? DescriptionChanged;
-    
+
     /// <summary>
     ///   Fired when the <see cref="Power" /> is added to a <see cref="player" />.
     /// </summary>

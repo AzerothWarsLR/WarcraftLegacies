@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using WCSharp.Events;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
@@ -220,6 +221,12 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       RefreshDummy();
     }
 
+    public void Spawn(player owner, Point position, float facing)
+    {
+      Spawn(owner, position.X, position.Y, facing);
+    }
+
+    [Obsolete($"Use the version of the method that takes a {nameof(Point)}.")]
     public void Spawn(player owner, float x, float y, float face)
     {
       if (Unit == null)

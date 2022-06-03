@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer;
 using AzerothWarsCSharp.MacroTools.Powers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -34,6 +35,16 @@ namespace AzerothWarsCSharp.TestSource.Setup.FactionSetup.FactionSetup
           new Rectangle(-813, -183, -460, 183)
         });
       BlackEmpire.AddPower(visionPower);
+
+      var corruptWorkerPower = new PowerCorruptWorker(1, FourCC("AHfs"), new[]
+      {
+        new Continent("Little Square", new Rectangle(-813, -183, -460, 183)),
+        new Continent("Northern Eastern Kingdoms", Rectangle.WorldBounds)
+      }, null)
+      {
+        IconName = "Rune"
+      };
+      BlackEmpire.AddPower(corruptWorkerPower);
 
       FactionManager.Register(BlackEmpire);
     }

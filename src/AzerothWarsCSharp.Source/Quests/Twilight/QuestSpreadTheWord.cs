@@ -1,8 +1,6 @@
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 
-using static War3Api.Common;
-
 namespace AzerothWarsCSharp.Source.Quests.Twilight
 {
   public sealed class QuestSpreadTheWord : QuestData
@@ -11,11 +9,13 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       "The world shall hear the whispers of the Old God. Spread the visions of the end",
       "ReplaceableTextures\\CommandButtons\\BTNOldGodWhispers.blp")
     {
-      AddObjective(new ObjectiveBuild(FourCC("o03C"), 1));
-      AddObjective(new ObjectiveTrain(FourCC("obot"), FourCC("o03I"), 3));
-      ResearchId = FourCC("R05F");
+      AddObjective(new ObjectiveBuild(Constants.UNIT_O03C_ALTAR_OF_VISIONS_TWILIGHT, 1));
+      AddObjective(new ObjectiveTrain(Constants.UNIT_OBOT_HORDE_TRANSPORT_SHIP_WARSONG_FROSTWOLF_FEL_HORDE,
+        Constants.UNIT_O03I_TWILIGHT_DOCK_TWILIGHT, 3));
+      ResearchId = Constants.UPGRADE_R05F_QUEST_COMPLETED_SPREAD_THE_WORDS_OF_THE_OLD_GOD;
+      Required = true;
     }
-    
+
     protected override string CompletionPopup => "The high priestess Azil is now trainable";
 
     protected override string RewardDescription => "The high priestess Azil is trainable at the altar";

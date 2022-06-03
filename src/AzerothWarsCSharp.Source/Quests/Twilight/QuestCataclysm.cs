@@ -1,5 +1,6 @@
-using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Libraries;
+using AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
@@ -12,15 +13,16 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
   public sealed class QuestCataclysm : QuestData
   {
     private static readonly int CataclysmResearch = FourCC("R05E");
-    private readonly unit _robogoblin; //Todo: label what this actually is
+    private readonly PowerCorruptWorker _corruptWorkerPower;
 
-    public QuestCataclysm() : base("The Cataclysm",
+    public QuestCataclysm(PowerCorruptWorker corruptWorkerPower) : base("The Cataclysm",
       "The Old God's will is finnicky, you are not privy to when their plan will be set in motion, but when it is, your cult will be ready to welcome it.",
       "ReplaceableTextures\\CommandButtons\\BTNDeathwing.blp")
     {
-      AddObjective(new ObjectiveControlLegend(LegendTwilight.LEGEND_DEATHWING, false));
-      _robogoblin = PreplacedUnitSystem.GetUnit(FourCC("h02U"));
+      _corruptWorkerPower = corruptWorkerPower;
+      AddObjective(new ObjectiveTimeRandom(1360, 1780));
       Global = true;
+      Required = true;
     }
 
     protected override string CompletionPopup => "Deathwing is here, Doomsday is at hand, the Cataclysm as begun!";
@@ -33,7 +35,22 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       SetPlayerTechResearched(completingFaction.Player, CataclysmResearch, 1);
       PlayThematicMusic("war3mapImported\\TwilightTheme.mp3");
       SetPlayerTechResearched(CthunSetup.FactionCthun.Player, FourCC("R07D"), 1);
-      IssueImmediateOrder(_robogoblin, "unrobogoblin");
+      IssueImmediateOrder(LegendNeutral.LegendGrimbatol.Unit, "unrobogoblin");
+      LegendTwilight.LEGEND_DEATHWING.Spawn(completingFaction.Player ?? Player(GetBJPlayerNeutralVictim()),
+        Regions.TwilightOutside.Center, 0);
+      GeneralHelpers.CameraSetEarthquakeNoise(30);
+      if (completingFaction.Player != null)
+        _corruptWorkerPower.ConvertAllWorkers(completingFaction.Player);
+      completingFaction.RemovePower(_corruptWorkerPower);
+      var timer = CreateTimer();
+      TimerStart(timer, 3, false, ClearCameraNoise);
+    }
+
+    private static void ClearCameraNoise()
+    {
+      DestroyTimer(GetExpiredTimer());
+      CameraSetSourceNoise(0, 0);
+      CameraSetTargetNoise(0, 0);
     }
 
     protected override void OnAdd(Faction whichFaction)

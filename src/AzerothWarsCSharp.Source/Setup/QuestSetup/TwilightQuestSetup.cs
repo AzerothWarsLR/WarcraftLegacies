@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer;
 using AzerothWarsCSharp.Source.Quests.Twilight;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
@@ -19,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       twilight.AddQuest(new QuestThunderfury());
       twilight.AddQuest(new QuestFeludius());
       twilight.AddQuest(new QuestIgnacious());
-      twilight.AddQuest(new QuestCataclysm());
+      twilight.AddQuest(new QuestCataclysm(twilight.GetPowerByType<PowerCorruptWorker>()));
     }
   }
 }
