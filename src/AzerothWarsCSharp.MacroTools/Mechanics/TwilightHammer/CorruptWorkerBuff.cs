@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer
     {
       _effect = AddSpecialEffectTarget(
         GetLocalPlayer() == CastingPlayer ? @"Abilities\Spells\Other\Silence\SilenceTarget.mdl" : "", Target,
-        "oerhead");
+        "overhead");
       CastingPlayer.AddBonusIncome(BonusIncome);
       UnitShareVision(Target, CastingPlayer, true);
     }
