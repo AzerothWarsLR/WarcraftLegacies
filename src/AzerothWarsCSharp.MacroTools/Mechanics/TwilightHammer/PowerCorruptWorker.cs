@@ -8,15 +8,21 @@ namespace AzerothWarsCSharp.Source.Mechanics.TwilightHammer
 {
   public sealed class PowerCorruptWorker : Power
   {
-    private readonly PeriodicTrigger<CorruptWorkerPeriodicAction> _corruptWorkerPeriodicTrigger = new(1.0f);
+    private readonly PeriodicTrigger<CorruptWorkerPeriodicAction> _corruptWorkerPeriodicTrigger;
     private Continent _activeContinent = null!;
 
-    public PowerCorruptWorker(IEnumerable<Continent> activeContinent)
+    /// <summary>
+    /// Periodically corrupts a random uncorrupted worker in one of the specified continents.
+    /// </summary>
+    /// <param name="continents">The continents in which workers can be corrupted.</param>
+    /// <param name="period">How frequently to corrupt workers.</param>
+    public PowerCorruptWorker(IEnumerable<Continent> continents, float period)
     {
-      ActiveContinent = activeContinent.First();
+      ActiveContinent = continents.First();
       IconName = "Charm";
       Name = "Corrupt Workers";
       Description = "Corrupt some workers";
+      _corruptWorkerPeriodicTrigger = new PeriodicTrigger<CorruptWorkerPeriodicAction>(period);
     }
 
     public Continent ActiveContinent

@@ -39,7 +39,7 @@ namespace AzerothWarsCSharp.TestSource.Setup.FactionSetup.FactionSetup
       var corruptWorkerPower = new PowerCorruptWorker(new[]
       {
         new Continent("Northern Eastern Kingdoms", Rectangle.WorldBounds)
-      });
+      }, 1);
       BlackEmpire.AddPower(corruptWorkerPower);
 
       FactionManager.Register(BlackEmpire);
