@@ -318,6 +318,22 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     }
 
     /// <summary>
+    /// Gets the first <see cref="Power"/> this <see cref="Faction"/> has with the provided type.
+    /// </summary>
+    public T GetPowerByType<T>() where T : Power
+    {
+      foreach (var power in _powers)
+      {
+        if (power.GetType() == typeof(T))
+        {
+          return (T) power;
+        }
+      }
+
+      throw new Exception($"{_name} doesn't have a Power with the type {typeof(T).Name}.");
+    }
+
+    /// <summary>
     ///   Unallies the <see cref="Faction" /> from all of its allies, creating a new <see cref="Team" />
     ///   based on its name.
     /// </summary>

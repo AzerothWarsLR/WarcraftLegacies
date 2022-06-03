@@ -15,6 +15,22 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
     private static Point? _enumDestructableCenter;
     private static float _enumDestructableRadius;
 
+    public static void CameraSetEarthquakeNoise(float magnitude)
+    {
+      var richter = magnitude;
+      if (richter > 5)
+      {
+        richter = 5;
+      }
+
+      if (richter < 2)
+      {
+        richter = 2;
+      }
+
+      CameraSetTargetNoiseEx(magnitude * 2.0f, magnitude * Pow(10, richter), true);
+    }
+
     private static bool EnumDestructablesInCircleFilter()
     {
       Debug.Assert(_enumDestructableCenter != null, nameof(_enumDestructableCenter) + " != null");

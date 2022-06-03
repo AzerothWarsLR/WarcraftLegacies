@@ -40,7 +40,7 @@ namespace AzerothWarsCSharp.TestSource.Setup.FactionSetup.FactionSetup
       {
         new Continent("Little Square", new Rectangle(-813, -183, -460, 183)),
         new Continent("Northern Eastern Kingdoms", Rectangle.WorldBounds)
-      })
+      }, null)
       {
         IconName = "Rune"
       };

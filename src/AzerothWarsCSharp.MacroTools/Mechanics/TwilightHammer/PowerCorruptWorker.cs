@@ -9,8 +9,10 @@ namespace AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer
 {
   public sealed class PowerCorruptWorker : Power
   {
-    private readonly List<Continent> _continents;
+    private readonly Continent[] _continents;
+    private readonly List<unit> _corruptedWorkers = new();
     private readonly PeriodicTrigger<CorruptWorkerPeriodicAction> _corruptWorkerPeriodicTrigger;
+    private readonly int[] _cultistUnitTypeIds;
     private readonly float _period;
     private Continent _activeContinent = null!;
 
@@ -20,12 +22,15 @@ namespace AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer
     /// <param name="period">How frequently to corrupt workers.</param>
     /// <param name="changeContinentAbilityId">This ability, when cast, changes the target of this <see cref="Power"/>
     /// to any continent that contains the spell's target.</param>
+    /// <param name="cultistUnitTypeIds">This power can transform all corrupted workers into a random unit from this provided list.</param>
     /// <param name="continents">The continents in which workers can be corrupted.</param>
-    public PowerCorruptWorker(float period, int changeContinentAbilityId, IEnumerable<Continent> continents)
+    public PowerCorruptWorker(float period, int changeContinentAbilityId, IEnumerable<Continent> continents,
+      IEnumerable<int> cultistUnitTypeIds)
     {
       _period = period;
+      _cultistUnitTypeIds = cultistUnitTypeIds.ToArray();
       _corruptWorkerPeriodicTrigger = new PeriodicTrigger<CorruptWorkerPeriodicAction>(period);
-      _continents = continents.ToList();
+      _continents = continents.ToArray();
       ActiveContinent = _continents.First();
       Name = "Induction Rites";
       PlayerUnitEvents.Register(PlayerUnitEvent.SpellFinish, ChangeContinent, changeContinentAbilityId);
@@ -44,6 +49,24 @@ namespace AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer
         _activeContinent = value;
         RefreshDescription();
       }
+    }
+
+    /// <summary>
+    /// Converts all corrupted workers into cultists.
+    /// </summary>
+    public void ConvertAllWorkers(player owningPlayer)
+    {
+      foreach (var unit in _corruptedWorkers)
+      {
+        KillUnit(unit);
+        var pos = unit.GetPosition();
+        var facing = GetUnitFacing(unit);
+        RemoveUnit(unit);
+        CreateUnit(owningPlayer, _cultistUnitTypeIds[GetRandomInt(0, _cultistUnitTypeIds.Length - 1)], pos.X, pos.Y,
+          facing);
+      }
+
+      _corruptedWorkers.Clear();
     }
 
     private void RefreshDescription()
@@ -70,7 +93,8 @@ namespace AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer
 
     public override void OnAdd(player whichPlayer)
     {
-      _corruptWorkerPeriodicTrigger.Add(new CorruptWorkerPeriodicAction(whichPlayer, ActiveContinent));
+      _corruptWorkerPeriodicTrigger.Add(
+        new CorruptWorkerPeriodicAction(whichPlayer, ActiveContinent, _corruptedWorkers));
     }
 
     public override void OnRemove(player whichPlayer)
