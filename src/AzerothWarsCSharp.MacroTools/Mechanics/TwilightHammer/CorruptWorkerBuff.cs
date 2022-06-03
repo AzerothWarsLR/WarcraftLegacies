@@ -2,7 +2,7 @@
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.Mechanics.TwilightHammer
+namespace AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer
 {
   public sealed class CorruptWorkerBuff : PassiveBuff
   {

@@ -1,10 +1,9 @@
-﻿using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.MacroTools.Wrappers;
+﻿using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Buffs;
 using WCSharp.Events;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.Mechanics.TwilightHammer
+namespace AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer
 {
   public sealed class CorruptWorkerPeriodicAction : IPeriodicAction
   {

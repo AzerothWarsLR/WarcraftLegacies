@@ -1,5 +1,5 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
-using AzerothWarsCSharp.Source.Mechanics.TwilightHammer;
+using AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup

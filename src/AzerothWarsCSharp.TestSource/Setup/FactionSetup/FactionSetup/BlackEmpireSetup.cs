@@ -1,6 +1,6 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer;
 using AzerothWarsCSharp.MacroTools.Powers;
-using AzerothWarsCSharp.Source.Mechanics.TwilightHammer;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
