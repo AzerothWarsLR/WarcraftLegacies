@@ -11,6 +11,7 @@ namespace AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer
   {
     private readonly List<Continent> _continents;
     private readonly PeriodicTrigger<CorruptWorkerPeriodicAction> _corruptWorkerPeriodicTrigger;
+    private readonly float _period;
     private Continent _activeContinent = null!;
 
     /// <summary>
@@ -22,12 +23,11 @@ namespace AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer
     /// <param name="continents">The continents in which workers can be corrupted.</param>
     public PowerCorruptWorker(float period, int changeContinentAbilityId, IEnumerable<Continent> continents)
     {
+      _period = period;
       _corruptWorkerPeriodicTrigger = new PeriodicTrigger<CorruptWorkerPeriodicAction>(period);
       _continents = continents.ToList();
       ActiveContinent = _continents.First();
-      IconName = "Charm";
-      Name = "Corrupt Workers";
-      Description = "Corrupt some workers";
+      Name = "Induction Rites";
       PlayerUnitEvents.Register(PlayerUnitEvent.SpellFinish, ChangeContinent, changeContinentAbilityId);
     }
 
@@ -42,7 +42,14 @@ namespace AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer
         }
 
         _activeContinent = value;
+        RefreshDescription();
       }
+    }
+
+    private void RefreshDescription()
+    {
+      Description =
+        $"Every {_period} seconds, you corrupt a random worker in {_activeContinent.Name}. You gain 1 Income for each corrupted worker and have vision over them.";
     }
 
     private void ChangeContinent()

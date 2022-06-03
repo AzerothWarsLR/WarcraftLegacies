@@ -67,7 +67,10 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         new Continent("Southern Eastern Kingdoms", Regions.Stormwind),
         new Continent("Kalimdor", Regions.Kalimdor),
         new Continent("Minor islands", Regions.KezanAmbient)
-      });
+      })
+      {
+        IconName = "OldGodWhispers"
+      };
       FACTION_TWILIGHT.AddPower(power);
 
       FactionManager.Register(FACTION_TWILIGHT);
