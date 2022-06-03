@@ -22,6 +22,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       _corruptWorkerPower = corruptWorkerPower;
       AddObjective(new ObjectiveTimeRandom(1360, 1780));
       Global = true;
+      Required = true;
     }
 
     protected override string CompletionPopup => "Deathwing is here, Doomsday is at hand, the Cataclysm as begun!";

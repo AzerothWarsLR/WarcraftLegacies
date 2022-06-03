@@ -2,7 +2,6 @@ using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
-using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Twilight
 {
@@ -12,9 +11,10 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       "Bringing the Legendary Sword, Thunderfury, to Uldum will grant us the favors of Al'akir, the great Wind Elemental Lord",
       "ReplaceableTextures\\CommandButtons\\BTNfuryoftheair.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BD"))));
+      AddObjective(
+        new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N0BD_ULDUM_10GOLD_MIN)));
       AddObjective(new ObjectiveArtifactInRect(ArtifactSetup.ArtifactThunderfury, Regions.UldumAmbiance, "Uldum"));
-      ResearchId = FourCC("R07T");
+      ResearchId = Constants.UPGRADE_R07T_QUEST_COMPLETED_GIFT_OF_THE_WINDLORD;
     }
 
     protected override string CompletionPopup => "The great Al'akir has joined us!";

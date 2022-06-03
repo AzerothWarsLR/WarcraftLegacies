@@ -41,6 +41,8 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
+
+      Required = true;
     }
 
     //Todo: bad flavour

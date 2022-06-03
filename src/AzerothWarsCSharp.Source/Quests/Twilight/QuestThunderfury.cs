@@ -5,7 +5,6 @@ using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.Legends;
-using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Twilight
 {
@@ -16,7 +15,8 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       "ReplaceableTextures\\CommandButtons\\BTNThunderfury2.blp")
     {
       AddObjective(new ObjectiveLegendInRect(LegendFelHorde.LegendChogall, Regions.Broken_Isles, "The Broken Isles"));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n05Y"))));
+      AddObjective(
+        new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N05Y_BROKEN_ISLES_20GOLD_MIN)));
     }
 
     protected override string CompletionPopup => "Cho'gall has found the legendary sword, Thunderfury";
