@@ -319,6 +319,22 @@ namespace AzerothWarsCSharp.Source.Setup
         BonusIncome = 6
       };
       SpellSystem.Register(corruptBuilding);
+
+      SpellSystem.Register(new RegionRestricted(Constants.UNIT_H097_GUARD_POST_SCARLET,
+        new[]
+        {
+          Regions.HeartglenTaxe,
+          Regions.StrahnbradTaxe,
+          Regions.AndhoralTaxe,
+          Regions.TirisfalTaxe,
+          Regions.HavenshireTaxe,
+          Regions.CorinTaxe
+        }));
+
+      SpellSystem.Register(new ProvidesIncome(Constants.UNIT_H09N_PALISADE_FORT_SCARLET, 15));
+      SpellSystem.Register(new ProvidesIncome(Constants.UNIT_H09P_SCARLET_KEEP_SCARLET, 60));
+      SpellSystem.Register(new ProvidesIncome(Constants.UNIT_H09O_CRIMSON_CASTLE_SCARLET, 80));
+      SpellSystem.Register(new ProvidesIncome(Constants.UNIT_H09Q_ROYAL_FORTRESS_SCARLET, 100));
     }
   }
 }
