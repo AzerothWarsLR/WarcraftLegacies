@@ -36,11 +36,15 @@ namespace AzerothWarsCSharp.TestSource.Setup.FactionSetup.FactionSetup
         });
       BlackEmpire.AddPower(visionPower);
 
+      var cultistUnitTypeIds = new[]
+      {
+        FourCC("hfoo")
+      };
       var corruptWorkerPower = new PowerCorruptWorker(1, FourCC("AHfs"), new[]
       {
         new Continent("Little Square", new Rectangle(-813, -183, -460, 183)),
         new Continent("Northern Eastern Kingdoms", Rectangle.WorldBounds)
-      }, null)
+      }, cultistUnitTypeIds)
       {
         IconName = "Rune"
       };
