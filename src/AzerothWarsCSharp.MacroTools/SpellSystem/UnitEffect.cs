@@ -12,6 +12,20 @@
     /// </summary>
     public int UnitTypeId { get; }
 
+    /// <summary>
+    /// Fired when the unit finishes upgrading itself.
+    /// </summary>
+    public virtual void OnUpgrade()
+    {
+    }
+
+    /// <summary>
+    /// Fired when the unit finishes being constructed.
+    /// </summary>
+    public virtual void OnConstruction()
+    {
+    }
+
     public virtual void OnDealsDamage()
     {
     }

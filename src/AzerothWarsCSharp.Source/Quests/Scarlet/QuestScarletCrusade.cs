@@ -12,14 +12,18 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Scarlet
 {
-  public sealed class QuestMonastery : QuestData
+  /// <summary>
+  /// The Militia become the Scarlet Crusade, becoming much stronger but leaving the Alliance.
+  /// </summary>
+  public sealed class QuestScarletCrusade : QuestData
   {
     private static readonly int UnleashTheCrusadeResearchId = FourCC("R03P");
     private readonly List<unit> _rescueUnits = new();
     private readonly unit _scarletMonastery;
     private readonly QuestData _sequel;
 
-    public QuestMonastery(Rectangle rescueRect, unit scarletMonastery, QuestData sequel) : base("The Secret Cloister",
+    public QuestScarletCrusade(Rectangle rescueRect, unit scarletMonastery, QuestData sequel) : base(
+      "The Secret Cloister",
       "The Scarlet Monastery is the perfect place for the secret base of the Scarlet Crusade.",
       "ReplaceableTextures\\CommandButtons\\BTNDivine_Reckoning_Icon.blp")
     {
@@ -52,10 +56,12 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
 
     protected override void OnComplete(Faction completingFaction)
     {
-      SetPlayerTechResearched(KultirasSetup.FACTION_KULTIRAS.Player, FourCC("R06V"), 1);
-      SetPlayerTechResearched(LordaeronSetup.FactionLordaeron.Player, FourCC("R06V"), 1);
-      SetPlayerTechResearched(ScarletSetup.FactionScarlet.Player, FourCC("R086"), 1);
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      SetPlayerTechResearched(KultirasSetup.FACTION_KULTIRAS.Player,
+        Constants.UPGRADE_R06V_SCARLET_CRUSADE_IS_UNLEASHED, 1);
+      SetPlayerTechResearched(LordaeronSetup.FactionLordaeron.Player,
+        Constants.UPGRADE_R06V_SCARLET_CRUSADE_IS_UNLEASHED, 1);
+      SetPlayerTechResearched(ScarletSetup.FactionScarlet.Player, Constants.UPGRADE_R086_PATH_CHOSEN, 1);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player ?? Player(GetBJPlayerNeutralVictim()));
       WaygateActivate(_scarletMonastery, true);
       WaygateSetDestination(_scarletMonastery, Regions.ScarletMonastery.Center.X, Regions.ScarletMonastery.Center.Y);
       completingFaction.Team = TeamSetup.ScarletCrusade;

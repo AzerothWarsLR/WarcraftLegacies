@@ -2,22 +2,21 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
-
-using static War3Api.Common; 
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Scarlet
 {
   public sealed class QuestArgentDawn : QuestData
   {
-    private static readonly int RequiredResearchId = FourCC("R088");
+    private const int REQUIRED_RESEARCH_ID = Constants.UPGRADE_R088_RAYS_OF_A_NEW_DAWN_SCARLET_CRUSADE;
 
     public QuestArgentDawn() : base("The Argent Dawn",
       "The Militia of Lordaeron has been solidified into the Argent Dawn, a strong military force lead by Tirion Fording.",
       "ReplaceableTextures\\CommandButtons\\BTNResurrection.blp")
     {
-      AddObjective(new ObjectiveResearch(RequiredResearchId, FourCC("h00T")));
+      AddObjective(new ObjectiveResearch(REQUIRED_RESEARCH_ID, Constants.UNIT_H00T_SCARLET_MONASTERY_LORDAERON));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = FourCC("R087");
+      ResearchId = Constants.UPGRADE_R087_QUEST_COMPLETED_THE_ARGENT_DAWN;
       Global = true;
     }
 
@@ -25,28 +24,28 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       "The Argent Dawn has been declared and ready to join the Alliance.";
 
     protected override string RewardDescription => "Unlock your elites, Crusader units and Tirion Fordring";
-    
+
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.Name = "Argent";
       completingFaction.Icon = "ReplaceableTextures\\CommandButtons\\BTNTirionPaladin.blp";
-      SetPlayerTechResearched(ScarletSetup.FactionScarlet.Player, FourCC("R086"), 1);
+      SetPlayerTechResearched(ScarletSetup.FactionScarlet.Player, Constants.UPGRADE_R086_PATH_CHOSEN, 1);
       PlayThematicMusic("war3mapImported\\ScarletTheme.mp3");
       SetPlayerColor(completingFaction.Player, PLAYER_COLOR_SNOW);
 
-      ScarletSetup.FactionScarlet.ModObjectLimit(FourCC("h08I"), -Faction.UNLIMITED); //Crusader
-      ScarletSetup.FactionScarlet.ModObjectLimit(FourCC("h09I"), Faction.UNLIMITED); //Argent Crusader
+      ScarletSetup.FactionScarlet.ModObjectLimit(Constants.UNIT_H08I_CRUSADER_SCARLET, -Faction.UNLIMITED);
+      ScarletSetup.FactionScarlet.ModObjectLimit(Constants.UNIT_H09I_HALBARDIER_ARGENT, Faction.UNLIMITED);
 
-      ScarletSetup.FactionScarlet.ModObjectLimit(FourCC("h08L"), -Faction.UNLIMITED); //Cavalier
-      ScarletSetup.FactionScarlet.ModObjectLimit(FourCC("h0A3"), Faction.UNLIMITED); //Lilian
+      ScarletSetup.FactionScarlet.ModObjectLimit(Constants.UNIT_H08L_CAVALIER_SCARLET, -Faction.UNLIMITED);
+      ScarletSetup.FactionScarlet.ModObjectLimit(Constants.UNIT_H0A3_LANCER_SCARLET, Faction.UNLIMITED);
 
-      ScarletSetup.FactionScarlet.ModObjectLimit(FourCC("h08J"), -Faction.UNLIMITED); //Arbalest
-      ScarletSetup.FactionScarlet.ModObjectLimit(FourCC("h09J"), Faction.UNLIMITED); //Lilian
+      ScarletSetup.FactionScarlet.ModObjectLimit(Constants.UNIT_H08J_ARBALEST_SCARLET, -Faction.UNLIMITED);
+      ScarletSetup.FactionScarlet.ModObjectLimit(Constants.UNIT_H09J_CROSSBOWMAN_SCARLET, Faction.UNLIMITED);
     }
 
     protected override void OnAdd(Faction whichFaction)
     {
-      whichFaction.ModObjectLimit(RequiredResearchId, 1);
+      whichFaction.ModObjectLimit(REQUIRED_RESEARCH_ID, 1);
     }
   }
 }

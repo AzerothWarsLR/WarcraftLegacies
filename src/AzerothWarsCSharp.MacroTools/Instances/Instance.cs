@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Shared.Data;
@@ -14,18 +15,23 @@ namespace AzerothWarsCSharp.MacroTools.Instances
   {
     private readonly TriggerWrapper _dependencyDiesTrigger = new();
     private readonly List<Gate> _gates = new();
+    private readonly string _name;
+    private readonly Rectangle[] _rectangles;
 
-    public Instance()
+    public Instance(string name, IEnumerable<Rectangle> areas)
     {
       Region = CreateRegion();
-      foreach (var rectangle in Rectangles) RegionAddRect(Region, rectangle.Rect);
+      _rectangles = areas.ToArray();
+      foreach (var rectangle in _rectangles)
+        RegionAddRect(Region, rectangle.Rect);
+      _name = name;
+    }
+
+    public Instance(string name, Rectangle area) : this(name, new[] {area})
+    {
     }
 
     public region Region { get; }
-
-    public List<Rectangle> Rectangles { get; } = new();
-
-    public string Name { get; set; }
 
     public int GateCount => _gates.Count;
 
@@ -56,7 +62,7 @@ namespace AzerothWarsCSharp.MacroTools.Instances
     /// </summary>
     private void Destroy()
     {
-      foreach (var rect in Rectangles)
+      foreach (var rect in _rectangles)
       {
         EnumItemsInRect(rect.Rect, null, () =>
         {

@@ -10,8 +10,11 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
     public QuestArathiVolunteers() : base("Arathi Volunteers", "The men of Stromgrade should join us in the fight.",
       "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionCastle.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01K"))));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01Z"))));
+      AddObjective(
+        new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N01K_STROMGARDE_25GOLD_MIN)));
+      AddObjective(
+        new ObjectiveControlPoint(
+          ControlPointManager.GetFromUnitType(Constants.UNIT_N01Z_ARATHI_HIGHLANDS_15GOLD_MIN)));
       ResearchId = FourCC("R089");
     }
 
