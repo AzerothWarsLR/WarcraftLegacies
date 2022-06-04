@@ -52,10 +52,12 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
 
     protected override void OnComplete(Faction completingFaction)
     {
-      SetPlayerTechResearched(KultirasSetup.FACTION_KULTIRAS.Player, FourCC("R06V"), 1);
-      SetPlayerTechResearched(LordaeronSetup.FactionLordaeron.Player, FourCC("R06V"), 1);
-      SetPlayerTechResearched(ScarletSetup.FactionScarlet.Player, FourCC("R086"), 1);
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      SetPlayerTechResearched(KultirasSetup.FACTION_KULTIRAS.Player,
+        Constants.UPGRADE_R06V_SCARLET_CRUSADE_IS_UNLEASHED, 1);
+      SetPlayerTechResearched(LordaeronSetup.FactionLordaeron.Player,
+        Constants.UPGRADE_R06V_SCARLET_CRUSADE_IS_UNLEASHED, 1);
+      SetPlayerTechResearched(ScarletSetup.FactionScarlet.Player, Constants.UPGRADE_R086_PATH_CHOSEN, 1);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player ?? Player(GetBJPlayerNeutralVictim()));
       WaygateActivate(_scarletMonastery, true);
       WaygateSetDestination(_scarletMonastery, Regions.ScarletMonastery.Center.X, Regions.ScarletMonastery.Center.Y);
       completingFaction.Team = TeamSetup.ScarletCrusade;
