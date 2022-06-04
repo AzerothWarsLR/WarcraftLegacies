@@ -97,6 +97,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       PlayerData.ByHandle(player).AddGold(gold);
     }
 
+    public static void AddLumber(this player player, float lumber)
+    {
+      PlayerData.ByHandle(player).AddLumber(lumber);
+    }
+
     public static void SetObjectLevel(this player player, int objectId, int level)
     {
       PlayerData.ByHandle(player).SetObjectLevel(objectId, level);
@@ -132,6 +137,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       return PlayerData.ByHandle(player).BaseIncome;
     }
 
+    public static float GetLumberIncome(this player player)
+    {
+      return PlayerData.ByHandle(player).LumberIncome;
+    }
+
     public static void SetBaseIncome(this player player, float value)
     {
       PlayerData.ByHandle(player).BaseIncome = value;
@@ -140,6 +150,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public static void AddBonusIncome(this player player, float value)
     {
       PlayerData.ByHandle(player).BonusIncome += value;
+    }
+
+    public static void AddLumberIncome(this player player, float value)
+    {
+      PlayerData.ByHandle(player).LumberIncome += value;
     }
 
     internal static PlayerData GetPlayerData(this player player)

@@ -14,12 +14,15 @@ namespace AzerothWarsCSharp.MacroTools.UnitEffects
   /// </summary>
   public sealed class Trader : UnitEffect
   {
-    private readonly int _incomeBonus;
+    private readonly int _goldIncomeBonus;
+    private readonly int _lumberIncomeBonus;
     private readonly Point[] _tradeTargets;
 
-    public Trader(int unitTypeId, int incomeBonus, IEnumerable<Point> tradeTargets) : base(unitTypeId)
+    public Trader(int unitTypeId, int goldIncomeBonus, int lumberIncomeBonus, IEnumerable<Point> tradeTargets) :
+      base(unitTypeId)
     {
-      _incomeBonus = incomeBonus;
+      _goldIncomeBonus = goldIncomeBonus;
+      _lumberIncomeBonus = lumberIncomeBonus;
       _tradeTargets = tradeTargets.ToArray();
     }
 
@@ -28,7 +31,7 @@ namespace AzerothWarsCSharp.MacroTools.UnitEffects
       var tradingCenter = GetTrainedUnit();
       var trainedUnit = GetTrainedUnit();
       trainedUnit.IssueOrder("patrol", _tradeTargets[GetRandomInt(0, _tradeTargets.Length - 1)]);
-      var incomeBuff = new TraderBuff(tradingCenter, trainedUnit, _incomeBonus, tradingCenter);
+      var incomeBuff = new TraderBuff(tradingCenter, trainedUnit, _goldIncomeBonus, _lumberIncomeBonus, tradingCenter);
       BuffSystem.Add(incomeBuff);
     }
   }

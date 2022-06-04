@@ -343,7 +343,7 @@ namespace AzerothWarsCSharp.Source.Setup
         Regions.Trade3.Center,
         Regions.Trade4.Center
       };
-      SpellSystem.Register(new Trader(Constants.UNIT_NZEP_TRADING_ZEPPELIN_WARSONG, 60, zeppelinTradeTargets));
+      SpellSystem.Register(new Trader(Constants.UNIT_NZEP_TRADING_ZEPPELIN_WARSONG, 0, 60, zeppelinTradeTargets));
 
       var traderTradeTargets = new[]
       {
@@ -351,7 +351,7 @@ namespace AzerothWarsCSharp.Source.Setup
         Regions.Trader2.Center,
         Regions.Trader3.Center
       };
-      SpellSystem.Register(new Trader(Constants.UNIT_O04S_TRADER_GOBLIN, 40, traderTradeTargets));
+      SpellSystem.Register(new Trader(Constants.UNIT_O04S_TRADER_GOBLIN, 40, 0, traderTradeTargets));
     }
   }
 }

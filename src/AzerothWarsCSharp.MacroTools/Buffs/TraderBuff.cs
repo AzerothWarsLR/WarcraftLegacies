@@ -10,12 +10,15 @@ namespace AzerothWarsCSharp.MacroTools.Buffs
   /// </summary>
   public sealed class TraderBuff : PassiveBuff
   {
-    private readonly int _incomeBonus;
+    private readonly int _goldIncomeBonus;
+    private readonly int _lumberIncomeBonus;
     private readonly TriggerWrapper _tradeCenterDiesTrigger = new();
 
-    public TraderBuff(unit caster, unit target, int incomeBonus, unit tradeCenter) : base(caster, target)
+    public TraderBuff(unit caster, unit target, int goldIncomeBonus, int lumberIncomeBonus, unit tradeCenter) : base(
+      caster, target)
     {
-      _incomeBonus = incomeBonus;
+      _goldIncomeBonus = goldIncomeBonus;
+      _lumberIncomeBonus = lumberIncomeBonus;
       _tradeCenterDiesTrigger.RegisterUnitEvent(tradeCenter, EVENT_UNIT_DEATH);
       _tradeCenterDiesTrigger.AddAction(TradeCenterDies);
     }
@@ -27,12 +30,12 @@ namespace AzerothWarsCSharp.MacroTools.Buffs
 
     public override void OnApply()
     {
-      CastingPlayer.AddBonusIncome(_incomeBonus);
+      CastingPlayer.AddBonusIncome(_goldIncomeBonus);
     }
 
     public override void OnDispose()
     {
-      CastingPlayer.AddBonusIncome(-_incomeBonus);
+      CastingPlayer.AddBonusIncome(-_goldIncomeBonus);
       _tradeCenterDiesTrigger.Dispose();
     }
   }

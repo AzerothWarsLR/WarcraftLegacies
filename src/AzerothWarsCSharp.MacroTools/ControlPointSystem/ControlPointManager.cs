@@ -64,6 +64,8 @@ namespace AzerothWarsCSharp.MacroTools.ControlPointSystem
             {
               var goldPerSecond = player.GetTotalIncome() * PERIOD / 60;
               player.AddGold(goldPerSecond);
+              var lumberPerSecond = player.GetLumberIncome() * PERIOD / 60;
+              player.AddLumber(lumberPerSecond);
             }
         });
       }
