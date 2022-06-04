@@ -12,14 +12,18 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Scarlet
 {
-  public sealed class QuestMonastery : QuestData
+  /// <summary>
+  /// The Militia become the Scarlet Crusade, becoming much stronger but leaving the Alliance.
+  /// </summary>
+  public sealed class QuestScarletCrusade : QuestData
   {
     private static readonly int UnleashTheCrusadeResearchId = FourCC("R03P");
     private readonly List<unit> _rescueUnits = new();
     private readonly unit _scarletMonastery;
     private readonly QuestData _sequel;
 
-    public QuestMonastery(Rectangle rescueRect, unit scarletMonastery, QuestData sequel) : base("The Secret Cloister",
+    public QuestScarletCrusade(Rectangle rescueRect, unit scarletMonastery, QuestData sequel) : base(
+      "The Secret Cloister",
       "The Scarlet Monastery is the perfect place for the secret base of the Scarlet Crusade.",
       "ReplaceableTextures\\CommandButtons\\BTNDivine_Reckoning_Icon.blp")
     {

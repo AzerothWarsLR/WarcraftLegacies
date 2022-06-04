@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       var liberateLordaeron = new QuestLiberateLordaeron(Regions.ScarletHarbor);
 
       ScarletSetup.FactionScarlet.StartingQuest = ScarletSetup.FactionScarlet.AddQuest(new QuestTownWatch());
-      ScarletSetup.FactionScarlet.AddQuest(new QuestMonastery(Regions.ScarletAmbient,
+      ScarletSetup.FactionScarlet.AddQuest(new QuestScarletCrusade(Regions.ScarletAmbient,
         PreplacedUnitSystem.GetUnit(Constants.UNIT_H00T_SCARLET_MONASTERY_LORDAERON), liberateLordaeron));
       ScarletSetup.FactionScarlet.AddQuest(new QuestArgentDawn());
       ScarletSetup.FactionScarlet.AddQuest(new QuestArathiVolunteers());
