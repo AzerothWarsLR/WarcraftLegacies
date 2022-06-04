@@ -9,6 +9,12 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
   {
     private static readonly Dictionary<int, Spell> SpellsByAbilityId = new();
 
+    static SpellSystem()
+    {
+      PlayerUnitEvents.AddCustomEventFilter(EVENT_PLAYER_UNIT_TRAIN_FINISH, "UnitTypeFinishesBeingTrained",
+        () => GetUnitTypeId(GetTrainedUnit()));
+    }
+
     public static Spell GetSpellByAbilityId(int abilityId)
     {
       if (!SpellsByAbilityId.ContainsKey(abilityId))
@@ -46,6 +52,7 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
     {
       PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, unitEffect.OnDealsDamage, unitEffect.UnitTypeId);
       PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeIsCreated, unitEffect.OnCreated, unitEffect.UnitTypeId);
+      PlayerUnitEvents.Register("UnitTypeFinishesBeingTrained", unitEffect.OnTrained, unitEffect.UnitTypeId);
       PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesBeingConstructed, unitEffect.OnConstruction,
         unitEffect.UnitTypeId);
       PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesUpgrade, unitEffect.OnUpgrade, unitEffect.UnitTypeId);

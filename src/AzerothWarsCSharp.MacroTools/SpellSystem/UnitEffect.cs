@@ -33,5 +33,12 @@
     public virtual void OnCreated()
     {
     }
+
+    /// <summary>
+    /// Fired when the unit is trained from a building.
+    /// </summary>
+    public virtual void OnTrained()
+    {
+    }
   }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using AzerothWarsCSharp.MacroTools.Buffs;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
@@ -26,13 +27,21 @@ namespace AzerothWarsCSharp.MacroTools.UnitEffects
       _tradeTargets = tradeTargets.ToArray();
     }
 
-    public override void OnCreated()
+    public override void OnTrained()
     {
-      var tradingCenter = GetTrainedUnit();
-      var trainedUnit = GetTrainedUnit();
-      trainedUnit.IssueOrder("patrol", _tradeTargets[GetRandomInt(0, _tradeTargets.Length - 1)]);
-      var incomeBuff = new TraderBuff(tradingCenter, trainedUnit, _goldIncomeBonus, _lumberIncomeBonus, tradingCenter);
-      BuffSystem.Add(incomeBuff);
+      try
+      {
+        var tradingCenter = GetTriggerUnit();
+        var trainedUnit = GetTrainedUnit();
+        trainedUnit.IssueOrder("patrol", _tradeTargets[GetRandomInt(0, _tradeTargets.Length - 1)]);
+        var incomeBuff =
+          new TraderBuff(tradingCenter, trainedUnit, _goldIncomeBonus, _lumberIncomeBonus, tradingCenter);
+        BuffSystem.Add(incomeBuff);
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex);
+      }
     }
   }
 }

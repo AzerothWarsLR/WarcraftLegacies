@@ -21,6 +21,7 @@ namespace AzerothWarsCSharp.MacroTools.Buffs
       _lumberIncomeBonus = lumberIncomeBonus;
       _tradeCenterDiesTrigger.RegisterUnitEvent(tradeCenter, EVENT_UNIT_DEATH);
       _tradeCenterDiesTrigger.AddAction(TradeCenterDies);
+      Duration = float.MaxValue;
     }
 
     private void TradeCenterDies()
@@ -31,11 +32,13 @@ namespace AzerothWarsCSharp.MacroTools.Buffs
     public override void OnApply()
     {
       CastingPlayer.AddBonusIncome(_goldIncomeBonus);
+      CastingPlayer.AddLumberIncome(_lumberIncomeBonus);
     }
 
     public override void OnDispose()
     {
       CastingPlayer.AddBonusIncome(-_goldIncomeBonus);
+      CastingPlayer.AddLumberIncome(-_lumberIncomeBonus);
       _tradeCenterDiesTrigger.Dispose();
     }
   }
