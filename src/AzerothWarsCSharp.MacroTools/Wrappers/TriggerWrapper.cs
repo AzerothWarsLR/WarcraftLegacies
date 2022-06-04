@@ -3,7 +3,7 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Wrappers
 {
-  public class TriggerWrapper
+  public sealed class TriggerWrapper : IDisposable
   {
     public TriggerWrapper()
     {
@@ -11,6 +11,11 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
     }
 
     public trigger Trigger { get; }
+
+    public void Dispose()
+    {
+      DestroyTrigger(Trigger);
+    }
 
     public void RegisterUnitEvent(unit whichUnit, unitevent whichEvent)
     {

@@ -335,6 +335,23 @@ namespace AzerothWarsCSharp.Source.Setup
       SpellSystem.Register(new ProvidesIncome(Constants.UNIT_H09P_SCARLET_KEEP_SCARLET, 60));
       SpellSystem.Register(new ProvidesIncome(Constants.UNIT_H09O_CRIMSON_CASTLE_SCARLET, 80));
       SpellSystem.Register(new ProvidesIncome(Constants.UNIT_H09Q_ROYAL_FORTRESS_SCARLET, 100));
+
+      var zeppelinTradeTargets = new[]
+      {
+        Regions.Trade1.Center,
+        Regions.Trade2.Center,
+        Regions.Trade3.Center,
+        Regions.Trade4.Center
+      };
+      SpellSystem.Register(new Trader(Constants.UNIT_NZEP_TRADING_ZEPPELIN_WARSONG, 60, zeppelinTradeTargets));
+
+      var traderTradeTargets = new[]
+      {
+        Regions.Trader1.Center,
+        Regions.Trader2.Center,
+        Regions.Trader3.Center
+      };
+      SpellSystem.Register(new Trader(Constants.UNIT_O04S_TRADER_GOBLIN, 40, traderTradeTargets));
     }
   }
 }
