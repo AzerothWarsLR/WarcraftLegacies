@@ -21,13 +21,19 @@ namespace AzerothWarsCSharp.MacroTools.UnitEffects
     public override void OnCreated()
     {
       var pos = GetTriggerUnit().GetPosition();
+      var inValidRectangle = false;
       foreach (var rectangle in _requiredRectangles)
       {
         if (rectangle.Contains(pos))
         {
-          KillUnit(GetTriggerUnit());
-          return;
+          inValidRectangle = true;
+          break;
         }
+      }
+
+      if (!inValidRectangle)
+      {
+        KillUnit(GetTriggerUnit());
       }
     }
   }
