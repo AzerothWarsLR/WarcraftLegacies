@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.Powers;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
@@ -58,6 +59,13 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       f.ModObjectLimit(FourCC("R07L"), Faction.UNLIMITED); //Wizard Training
       f.ModObjectLimit(FourCC("R07M"), Faction.UNLIMITED); //Alchemist Training
       f.ModObjectLimit(FourCC("R023"), Faction.UNLIMITED); //Spiritual Infusion
+
+      var oilPower = new OilPower
+      {
+        Name = "Oil Tycoon",
+        IconName = "OilStation"
+      };
+      factionGoblin.AddPower(oilPower);
 
       FactionManager.Register(factionGoblin);
     }

@@ -50,6 +50,15 @@ namespace AzerothWarsCSharp.TestSource.Setup.FactionSetup.FactionSetup
       };
       BlackEmpire.AddPower(corruptWorkerPower);
 
+      var oilPower = new OilPower
+      {
+        Name = "Oil Tycoon",
+        IconName = "HeroTinker",
+        Amount = 60,
+        Income = 2,
+      };
+      BlackEmpire.AddPower(oilPower);
+
       FactionManager.Register(BlackEmpire);
     }
   }
