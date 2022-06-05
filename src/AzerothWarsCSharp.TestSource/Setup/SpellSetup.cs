@@ -77,6 +77,8 @@ namespace AzerothWarsCSharp.TestSource.Setup
           new Point(1000, 0)
         });
         SpellSystem.Register(trader);
+
+        SpellSystem.Register(new OilUser(FourCC("hmpr")));
       }
       catch (Exception ex)
       {

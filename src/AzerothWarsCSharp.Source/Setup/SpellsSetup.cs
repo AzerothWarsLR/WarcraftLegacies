@@ -361,6 +361,12 @@ namespace AzerothWarsCSharp.Source.Setup
       var artillerySpeedMult =
         new AnimationSpeedMultiplier(Constants.UNIT_H011_INTERCONTINENTAL_ARTILLERY_GOBLIN, 0.4f);
       SpellSystem.Register(artillerySpeedMult);
+
+      SpellSystem.Register(new OilUser(Constants.UNIT_H011_INTERCONTINENTAL_ARTILLERY_GOBLIN));
+      SpellSystem.Register(new OilUser(FourCC("Ntin")));
+      SpellSystem.Register(new OilUser(Constants.UNIT_N062_SHREDDER_GOBLIN));
+      SpellSystem.Register(new OilUser(Constants.UNIT_H08Z_ASSAULT_TANK_GOBLIN));
+      SpellSystem.Register(new OilUser(Constants.UNIT_H091_WAR_ZEPPELIN_GOBLIN));
     }
   }
 }

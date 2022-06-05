@@ -1,4 +1,5 @@
-﻿using AzerothWarsCSharp.MacroTools.FactionSystem;
+﻿using System;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -10,6 +11,8 @@ namespace AzerothWarsCSharp.MacroTools.Powers
     private float _amount;
     private float _income;
     private OilIncomePeriodicAction? _oilIncomePeriodicAction;
+
+    public EventHandler<OilPower>? AmountChanged;
 
     public OilPower()
     {
@@ -25,6 +28,7 @@ namespace AzerothWarsCSharp.MacroTools.Powers
       set
       {
         _amount = value;
+        AmountChanged?.Invoke(this, this);
         RefreshDescription();
       }
     }
