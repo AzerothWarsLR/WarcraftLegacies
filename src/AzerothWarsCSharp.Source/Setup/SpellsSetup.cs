@@ -352,6 +352,15 @@ namespace AzerothWarsCSharp.Source.Setup
         Regions.Trader3.Center
       };
       SpellSystem.Register(new Trader(Constants.UNIT_O04S_TRADER_GOBLIN, 40, 0, traderTradeTargets));
+
+      var nuclearLaunch = new NuclearLaunch(Constants.ABILITY_A0RH_INTERCONTINENTAL_BOMBARDMENT_GOBLIN_ARTILLERY,
+        @"war3mapImported/NuclearLaunchDetected.mp3", Constants.UNIT_H06L_DUMMY_NUKE_WARNING,
+        Constants.UNIT_H050_DUMMY_NUKE_LEFTOVER, 25);
+      SpellSystem.Register(nuclearLaunch);
+
+      var artillerySpeedMult =
+        new AnimationSpeedMultiplier(Constants.UNIT_H011_INTERCONTINENTAL_ARTILLERY_GOBLIN, 0.4f);
+      SpellSystem.Register(artillerySpeedMult);
     }
   }
 }
