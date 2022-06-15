@@ -42,6 +42,7 @@ namespace AzerothWarsCSharp.Source.Setup
       WaygateManager.Setup(Constants.UNIT_N0AO_WAY_GATE_DALARAN);
       BlightSystem.Setup(ScourgeSetup.FactionScourge);
       BlightSetup.Setup();
+      PatronSystem.Setup();
       PreplacedUnitSystem.Shutdown();
       QuestMenuSetup.Setup();
       DialogueSetup.Setup();
