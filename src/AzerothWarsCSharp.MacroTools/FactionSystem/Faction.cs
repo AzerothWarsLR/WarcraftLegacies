@@ -23,17 +23,17 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// <summary>
     ///   The gold cost value of a hero.
     /// </summary>
-    private const int HERO_COST = 100; //For refunding
+    private const int HeroCost = 100; //For refunding
 
     /// <summary>
     ///   How much gold and lumber is refunded from units that get refunded when a player leaves.
     /// </summary>
-    private const float REFUND_PERCENT = 100;
+    private const float RefundPercent = 100;
 
     /// <summary>
     ///   How much experience is transferred from heroes that leave the game.
     /// </summary>
-    private const float XP_TRANSFER_PERCENT = 100;
+    private const float XpTransferPercent = 100;
 
     private readonly int _defeatedResearch;
 
@@ -430,7 +430,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         var allyHeroes = new GroupWrapper().EnumUnitsOfPlayer(ally).EmptyToList()
           .FindAll(unit => IsUnitType(unit, UNIT_TYPE_HERO));
         foreach (var hero in allyHeroes)
-          AddHeroXP(hero, R2I(_xp / (Player.GetTeam().Size - 1) / allyHeroes.Count * XP_TRANSFER_PERCENT), true);
+          AddHeroXP(hero, R2I(_xp / (Player.GetTeam().Size - 1) / allyHeroes.Count * XpTransferPercent), true);
       }
 
       _xp = 0;
@@ -459,7 +459,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         //Refund gold and experience of heroes
         if (IsUnitType(unit, UNIT_TYPE_HERO))
         {
-          Player?.AddGold(HERO_COST);
+          Player?.AddGold(HeroCost);
           _xp += GetHeroXP(unit);
           //Subtract hero's starting XP from refunded XP
           if (Legend.GetFromUnit(unit) != null) _xp -= Legend.GetFromUnit(unit)!.StartingXp;
@@ -470,8 +470,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         }
         else if (loopUnitType.Refund)
         {
-          Gold += loopUnitType.GoldCost * REFUND_PERCENT;
-          Lumber += loopUnitType.LumberCost * REFUND_PERCENT;
+          Gold += loopUnitType.GoldCost * RefundPercent;
+          Lumber += loopUnitType.LumberCost * RefundPercent;
           unit.DropAllItems();
           RemoveUnit(unit);
         }
