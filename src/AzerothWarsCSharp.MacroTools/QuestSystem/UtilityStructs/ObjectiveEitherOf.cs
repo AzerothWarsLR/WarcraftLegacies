@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     {
       ObjectiveA = questItemA;
       ObjectiveB = questItemB;
-      Description = questItemA.Description + " or " + questItemB.Description;
+      Description = $"{questItemA.Description} or {questItemB.Description}";
       questItemA.ProgressChanged += OnChildProgressChanged;
       questItemB.ProgressChanged += OnChildProgressChanged;
     }
@@ -24,6 +24,11 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
     {
       ObjectiveA.OnAdd(whichFaction);
       ObjectiveB.OnAdd(whichFaction);
+      foreach (var eligibleFaction in EligibleFactions)
+      {
+        ObjectiveA.AddEligibleFaction(eligibleFaction);
+        ObjectiveB.AddEligibleFaction(eligibleFaction);
+      }
       Update();
     }
 
