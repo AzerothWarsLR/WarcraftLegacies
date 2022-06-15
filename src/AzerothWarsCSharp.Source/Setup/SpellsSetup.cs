@@ -368,7 +368,7 @@ namespace AzerothWarsCSharp.Source.Setup
       SpellSystem.Register(new OilUser(Constants.UNIT_N062_SHREDDER_GOBLIN));
       SpellSystem.Register(new OilUser(Constants.UNIT_H08Z_ASSAULT_TANK_GOBLIN));
       SpellSystem.Register(new OilUser(Constants.UNIT_H091_WAR_ZEPPELIN_GOBLIN));
-      SpellSystem.Register(new OilProducer(Constants.UNIT_O04R_OIL_PLATFORM_GOBLIN, 5));
+      SpellSystem.Register(new OilProducer(Constants.UNIT_O04R_OIL_PLATFORM_GOBLIN, 11.5f));
       SpellSystem.Register(new OilUser(Constants.UNIT_H04Z_KEZAN_OIL_SUPPLY_GOBLIN));
     }
   }
