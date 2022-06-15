@@ -16,6 +16,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
       AddObjective(new ObjectiveChannelRect(Regions.KaelSunwellChannel, "The Sunwell", LegendQuelthalas.LegendKael,
         180, 270));
       Global = true;
+      Required = true;
     }
 
     protected override string CompletionPopup => "The greater demon Kil'jaeden has been summoned to Azeroth";
@@ -25,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     protected override void OnComplete(Faction completingFaction)
     {
       UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0R7"));
-      LegendQuelthalas.LegendKiljaeden.Spawn(QuelthalasSetup.FactionQuelthalas.Player, Regions.Sunwell.Center.X,
+      LegendQuelthalas.LegendKiljaeden.Spawn(completingFaction.Player, Regions.Sunwell.Center.X,
         Regions.Sunwell.Center.Y, 244);
     }
   }

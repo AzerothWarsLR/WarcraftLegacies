@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
       "ReplaceableTextures\\CommandButtons\\BTNMetamorphosis.blp")
     {
       AddObjective(new ObjectiveKillUnit(LegendScourge.LegendLichking.Unit));
-      AddObjective(new ObjectiveResearch(FourCC("R063"), FourCC("n055")));
+      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R063_PATH_OF_EXILE_NAGA, Constants.UNIT_N055_TEMPLE_OF_TIDES_GREEN_NAGA));
       Global = true;
     }
 
@@ -28,21 +28,15 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
     
     protected override void OnComplete(Faction completingFaction)
     {
-      if (QuelthalasSetup.FactionQuelthalas.Player?.GetTeam() == TeamSetup.Naga)
+      if (completingFaction.Player?.GetTeam() == TeamSetup.Naga)
       {
-        QuelthalasSetup.FactionQuelthalas.Player.SetTeam(TeamSetup.Legion);
-        QuelthalasQuestSetup.SUMMON_KIL.Progress = QuestProgress.Incomplete;
-        QuelthalasQuestSetup.GREAT_TREACHERY.Progress = QuestProgress.Failed;
-        QuelthalasQuestSetup.STAY_LOYAL.Progress = QuestProgress.Failed;
-        UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0IK"));
-        UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0IF"));
-        UnitAddAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0R7"));
+        completingFaction.Player.SetTeam(TeamSetup.Legion);
+        UnitAddAbility(LegendQuelthalas.LegendKael.Unit, Constants.ABILITY_A0R7_INSTILL_RAGE_YOGG);
       }
 
       if (FelHordeSetup.FactionFelHorde.Player?.GetTeam() == TeamSetup.Naga)
         FelHordeSetup.FactionFelHorde.Player?.SetTeam(TeamSetup.Legion);
       NagaSetup.FactionNaga.Player?.SetTeam(TeamSetup.Legion);
-      SetPlayerTechResearched(QuelthalasSetup.FactionQuelthalas.Player, FourCC("R075"), 1);
     }
   }
 }
