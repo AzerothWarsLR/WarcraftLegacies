@@ -15,7 +15,6 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       Description = "Your team controls " + target.Name;
       TargetWidget = target.Unit;
       target.ChangedOwner += OnTargetChangeOwner;
-      Faction.TeamJoin += OnFactionTeamJoin;
       DisplaysPosition = true;
     }
 

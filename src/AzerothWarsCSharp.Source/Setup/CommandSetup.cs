@@ -8,12 +8,10 @@ namespace AzerothWarsCSharp.Source.Setup
     {
       InviteCommand.Setup();
       JoinCommand.Setup();
-      BootCommand.Setup();
       LimitedCommand.Setup();
       ObserverCommand.Setup();
       UnallyCommand.Setup();
       UninviteCommand.Setup();
-      BootCommand.Setup();
     }
   }
 }

@@ -67,7 +67,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       SetPlayerTechResearched(LegionSetup.FactionLegion.Player, FourCC("R08G"), 1);
       ActivatePortal(_waygateA, Regions.Undercity_Interior_2.Center);
       ActivatePortal(_waygateB, Regions.Undercity_Interior_1.Center);
-      completingFaction.Team = TeamSetup.Forsaken;
+      completingFaction.Player?.SetTeam(TeamSetup.Forsaken);
       completingFaction.Name = "Forsaken";
       completingFaction.Icon = "ReplaceableTextures\\CommandButtons\\BTNBansheeRanger.blp";
       SetPlayerState(completingFaction.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);

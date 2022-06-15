@@ -59,7 +59,7 @@ namespace AzerothWarsCSharp.Source.Quests.Dalaran
       LegendDalaran.LegendJaina.UnitType = FourCC("H04A");
 
       UnitRemoveAbility(LegendDalaran.LegendJaina.Unit, FourCC("A0RB"));
-      completingFaction.Team = TeamSetup.Scourge;
+      completingFaction.Player?.SetTeam(TeamSetup.Scourge);
       completingFaction.Name = "The Nexus";
       completingFaction.Icon = "ReplaceableTextures\\CommandButtons\\BTNJaina_Archmage.blp";
       SetPlayerState(completingFaction.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);

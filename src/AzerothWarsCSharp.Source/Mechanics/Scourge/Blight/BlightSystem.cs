@@ -23,16 +23,14 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Blight
       var triggerUnit = GetTriggerUnit();
       var parameters = BlightParameters[triggerUnit];
 
-      if (_blightFaction?.Team is not null && _blightFaction.Player is not null &&
-          _blightFaction.Team.ContainsPlayer(GetOwningPlayer(GetKillingUnit())))
-      {
-        GeneralHelpers.SetBlightRadius(_blightFaction.Player, new Point(GetUnitX(triggerUnit), GetUnitY(triggerUnit)),
-          parameters.PrimaryBlightRadius, true);
-        if (parameters.RandomBlightRectangle is not null)
-          for (var i = 0; i < parameters.RandomBlightCount; i++)
-            GeneralHelpers.SetBlightRadius(_blightFaction.Player, parameters.RandomBlightRectangle.GetRandomPoint(),
-              parameters.RandomBlightRadius, true);
-      }
+      if (_blightFaction?.Player?.GetTeam() is null || _blightFaction.Player is null ||
+          !_blightFaction.Player.GetTeam()?.Contains(GetOwningPlayer(GetKillingUnit())) != true) return;
+      GeneralHelpers.SetBlightRadius(_blightFaction.Player, new Point(GetUnitX(triggerUnit), GetUnitY(triggerUnit)),
+        parameters.PrimaryBlightRadius, true);
+      if (parameters.RandomBlightRectangle is null) return;
+      for (var i = 0; i < parameters.RandomBlightCount; i++)
+        GeneralHelpers.SetBlightRadius(_blightFaction.Player, parameters.RandomBlightRectangle.GetRandomPoint(),
+          parameters.RandomBlightRadius, true);
     }
 
     /// <summary>
@@ -44,13 +42,11 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Blight
     public static void Register(unit whichUnit, BlightParameters blightParameters)
     {
       if (!_initialized) throw new SystemNotInitializedException($"{nameof(BlightSystem)} has not been initialized.");
-      if (!BlightParameters.ContainsKey(whichUnit))
-      {
-        BlightParameters.Add(whichUnit, blightParameters);
-        var deathTrigger = CreateTrigger();
-        TriggerRegisterUnitEvent(deathTrigger, whichUnit, EVENT_UNIT_DEATH);
-        TriggerAddAction(deathTrigger, UnitDies);
-      }
+      if (BlightParameters.ContainsKey(whichUnit)) return;
+      BlightParameters.Add(whichUnit, blightParameters);
+      var deathTrigger = CreateTrigger();
+      TriggerRegisterUnitEvent(deathTrigger, whichUnit, EVENT_UNIT_DEATH);
+      TriggerAddAction(deathTrigger, UnitDies);
     }
 
     public static void Setup(Faction blightFaction)

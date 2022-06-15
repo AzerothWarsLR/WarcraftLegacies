@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using static War3Api.Common;
 
-
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
   /// <summary>
@@ -10,6 +9,9 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
   /// </summary>
   internal sealed class PlayerData
   {
+    public static event EventHandler<PlayerChangeTeamEventArgs>? PlayerLeftTeam;
+    public static event EventHandler<Team>? PlayerJoinedTeam;
+    
     private static readonly Dictionary<int, PlayerData> ById = new();
     private readonly Dictionary<int, int> _objectLevels = new();
 
@@ -18,17 +20,40 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private float _bonusIncome;
     private int _controlPointCount;
 
+    private Team? _team;
     private Faction? _faction;
 
     private float _partialGold; //Just used for income calculations
 
-    public PlayerData(player player)
+    private PlayerData(player player)
     {
       Player = player;
     }
 
-    public player Player { get; }
+    private player Player { get; }
 
+    /// <summary>
+    /// Controls who the <see cref="player"/> is allied to.
+    /// </summary>
+    public Team? Team
+    {
+      get => _team;
+      set
+      {
+        if (_team != null)
+        {
+          _team?.RemovePlayer(Player);
+          PlayerLeftTeam?.Invoke(this, new PlayerChangeTeamEventArgs(Player, _team));
+        }
+        if (value != null)
+        {
+          value.AddPlayer(Player);
+          PlayerJoinedTeam?.Invoke(this, value);
+        }
+        _team = value;
+      }
+    }
+    
     /// <summary>
     ///   Controls name, available objects, color, and icon.
     /// </summary>
@@ -37,7 +62,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       get => _faction;
       set
       {
-        Faction prevFaction = Faction;
+        var prevFaction = Faction;
 
         //Unapply old faction
         if (_faction != null)
@@ -190,7 +215,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// <summary>
     ///   Register a <see cref="PlayerData" /> to the Person system.
     /// </summary>
-    public static void Register(PlayerData playerData)
+    private static void Register(PlayerData playerData)
     {
       ById.Add(GetPlayerId(playerData.Player), playerData);
     }

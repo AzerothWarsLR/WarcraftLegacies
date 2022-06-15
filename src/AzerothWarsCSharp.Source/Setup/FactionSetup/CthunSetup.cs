@@ -12,7 +12,6 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       FactionCthun = new Faction("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cFFFFDF80",
         "ReplaceableTextures\\CommandButtons\\BTNCthunIcon.blp")
       {
-        Team = TeamSetup.OldGods,
         StartingGold = 150,
         StartingLumber = 500
       };

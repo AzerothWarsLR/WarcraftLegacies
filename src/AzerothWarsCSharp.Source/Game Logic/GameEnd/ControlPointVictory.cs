@@ -9,17 +9,9 @@ namespace AzerothWarsCSharp.Source.Game_Logic.GameEnd
   /// </summary>
   public static class ControlPointVictory
   {
-    private const int CPS_WARNING = 75; //How many Control Points to start the warning at
-    private const string VICTORY_COLOR = "|cff911499";
+    private const int CpsWarning = 75; //How many Control Points to start the warning at
+    private const string VictoryColor = "|cff911499";
     private static int _cpsVictory = 90; //This many Control Points gives an instant win
-
-    private static Team? _victoriousTeam;
-    private static trigger? _controlPointTrig;
-
-    public static Team? GetVictoriousTeam()
-    {
-      return _victoriousTeam;
-    }
 
     public static void SetCpsVictory(int victoryCpCount)
     {
@@ -33,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Game_Logic.GameEnd
 
     public static int GetControlPointsRequiredWarning()
     {
-      return CPS_WARNING;
+      return CpsWarning;
     }
 
     private static int GetTeamControlPoints(Team whichTeam)
@@ -48,24 +40,19 @@ namespace AzerothWarsCSharp.Source.Game_Logic.GameEnd
     private static void TeamWarning(Team whichTeam, int controlPoints)
     {
       DisplayTextToPlayer(GetLocalPlayer(), 0, 0,
-        "\n" + VICTORY_COLOR + "TEAM VICTORY IMMINENT|r\n" + whichTeam.Name + " has captured " + I2S(controlPoints) +
-        " out of " + I2S(_cpsVictory) + " Control Points required to win the game!");
+        $"\n{VictoryColor}TEAM VICTORY IMMINENT|r\n{whichTeam.Name} has captured {I2S(controlPoints)} out of {I2S(_cpsVictory)} Control Points required to win the game!");
     }
 
     private static void ControlPointOwnerChanges(object? sender,
       ControlPointOwnerChangeEventArgs controlPointOwnerChangeEventArgs)
     {
-      if (!VictoryDefeat.GameWon)
-      {
-        var team = controlPointOwnerChangeEventArgs.ControlPoint.Owner.GetFaction()?.Team;
-        if (team != null)
-        {
-          var teamControlPoints = GetTeamControlPoints(team);
-          if (teamControlPoints >= _cpsVictory)
-            VictoryDefeat.TeamVictory(team);
-          else if (teamControlPoints > CPS_WARNING) TeamWarning(team, teamControlPoints);
-        }
-      }
+      if (VictoryDefeat.GameWon) return;
+      var team = controlPointOwnerChangeEventArgs.ControlPoint.Owner.GetTeam();
+      if (team == null) return;
+      var teamControlPoints = GetTeamControlPoints(team);
+      if (teamControlPoints >= _cpsVictory)
+        VictoryDefeat.TeamVictory(team);
+      else if (teamControlPoints > CpsWarning) TeamWarning(team, teamControlPoints);
     }
 
     public static void Setup()

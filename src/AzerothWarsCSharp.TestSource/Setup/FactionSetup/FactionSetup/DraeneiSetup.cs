@@ -12,7 +12,6 @@ namespace AzerothWarsCSharp.TestSource.Setup.FactionSetup.FactionSetup
       Draenei = new Faction("The Exodar", PLAYER_COLOR_NAVY, "|cff000080",
         "ReplaceableTextures\\CommandButtons\\BTNBOSSVelen.blp")
       {
-        Team = TeamSetup.TeamHorde,
         StartingGold = 150,
         StartingLumber = 500
       };

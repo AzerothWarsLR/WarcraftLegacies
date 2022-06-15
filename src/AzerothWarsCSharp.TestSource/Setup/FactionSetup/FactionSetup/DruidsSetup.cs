@@ -12,7 +12,6 @@ namespace AzerothWarsCSharp.TestSource.Setup.FactionSetup.FactionSetup
       FactionDruids = new Faction("Druids", PLAYER_COLOR_BROWN, "|c004e2a04",
         "ReplaceableTextures\\CommandButtons\\BTNFurion.blp")
       {
-        Team = TeamSetup.TeamLegion,
         StartingGold = 150,
         StartingLumber = 500
       };

@@ -10,11 +10,9 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 
     public static void Setup()
     {
-      Faction f;
       FACTION_FROSTWOLF = new Faction("Frostwolf", PLAYER_COLOR_RED, "|c00ff0303",
         "ReplaceableTextures\\CommandButtons\\BTNThrall.blp");
-      f = FACTION_FROSTWOLF;
-      f.Team = TeamSetup.Horde;
+      var f = FACTION_FROSTWOLF;
       f.UndefeatedResearch = FourCC("R05V");
       f.StartingGold = 150;
       f.StartingLumber = 500;

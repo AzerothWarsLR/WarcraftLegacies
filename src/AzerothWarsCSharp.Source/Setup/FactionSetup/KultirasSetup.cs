@@ -15,7 +15,6 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         new Faction(
           "Kul'tiras", PLAYER_COLOR_EMERALD, " | cff00781e", "ReplaceableTextures\\CommandButtons\\BTNProudmoore.blp");
       f = FACTION_KULTIRAS;
-      f.Team = TeamSetup.Alliance;
       f.StartingGold = 150;
       f.StartingLumber = 500;
 

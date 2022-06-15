@@ -64,7 +64,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player ?? Player(GetBJPlayerNeutralVictim()));
       WaygateActivate(_scarletMonastery, true);
       WaygateSetDestination(_scarletMonastery, Regions.ScarletMonastery.Center.X, Regions.ScarletMonastery.Center.Y);
-      completingFaction.Team = TeamSetup.ScarletCrusade;
+      completingFaction.Player?.SetTeam(TeamSetup.ScarletCrusade);
       completingFaction.Name = "Scarlet";
       completingFaction.Icon = "ReplaceableTextures\\CommandButtons\\BTNSaidan Dathrohan.blp";
       PlayThematicMusic("war3mapImported\\ScarletTheme.mp3");

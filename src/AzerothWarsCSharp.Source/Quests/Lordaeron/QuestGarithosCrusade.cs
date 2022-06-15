@@ -38,7 +38,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       completingFaction.Player?.ModObjectLimit(FourCC("Hlgr"), 1); //Garithos
       completingFaction.Player?.ModObjectLimit(FourCC("E00O"), 1); //Goodchild
 
-      completingFaction.Team = TeamSetup.ScarletCrusade;
+      completingFaction.Player?.SetTeam(TeamSetup.ScarletCrusade);
       completingFaction.Name = "Garithos";
       completingFaction.Icon = "ReplaceableTextures\\CommandButtons\\BTNGarithos.blp";
       SetPlayerColor(completingFaction.Player, PLAYER_COLOR_MAROON);

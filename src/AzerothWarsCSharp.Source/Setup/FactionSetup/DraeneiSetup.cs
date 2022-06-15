@@ -13,7 +13,6 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNBOSSVelen.blp")
       {
         UndefeatedResearch = FourCC("R06E"),
-        Team = TeamSetup.NightElves,
         StartingGold = 150,
         StartingLumber = 500
       };

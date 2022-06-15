@@ -13,7 +13,6 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       FactionScarlet = new Faction("Militia", PLAYER_COLOR_MAROON, "|cff800000",
         "ReplaceableTextures\\CommandButtons\\BTNPeasant.blp");
       f = FactionScarlet;
-      f.Team = TeamSetup.Alliance;
       f.StartingGold = 150;
       f.StartingLumber = 500;
 

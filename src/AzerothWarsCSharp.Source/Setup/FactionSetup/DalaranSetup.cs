@@ -17,7 +17,6 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         UndefeatedResearch = FourCC("R05N"),
         StartingGold = 150,
         StartingLumber = 500,
-        Team = TeamSetup.Alliance
       };
 
       //Structures

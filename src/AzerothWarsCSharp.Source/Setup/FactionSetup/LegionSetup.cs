@@ -16,7 +16,6 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNKiljaedin.blp");
       f = FactionLegion;
       f.UndefeatedResearch = FourCC("R04T");
-      f.Team = TeamSetup.Legion;
       f.StartingGold = 150;
       f.StartingLumber = 500;
       //Structures

@@ -107,6 +107,16 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       PlayerData.ByHandle(player).ModObjectLimit(objectId, limit);
     }
 
+    public static Team? GetTeam(this player player)
+    {
+      return PlayerData.ByHandle(player).Team;
+    }
+
+    public static void SetTeam(this player player, Team whichTeam)
+    {
+      PlayerData.ByHandle(player).Team = whichTeam;
+    }
+    
     public static Faction? GetFaction(this player player)
     {
       return PlayerData.ByHandle(player).Faction;

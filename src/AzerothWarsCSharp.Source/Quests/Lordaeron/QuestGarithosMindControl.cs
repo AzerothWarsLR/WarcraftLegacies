@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       LordaeronSetup.FactionLordaeron.ModObjectLimit(FourCC("H049"), 1); //Nathanos
       LordaeronSetup.FactionLordaeron.ModObjectLimit(FourCC("Hlgr"), 1); //Garithos
 
-      completingFaction.Team = TeamSetup.Forsaken;
+      completingFaction.Player?.SetTeam(TeamSetup.Forsaken);
       completingFaction.Name = "Garithos";
       completingFaction.Icon = "ReplaceableTextures\\CommandButtons\\BTNGarithos.blp";
       SetPlayerColor(completingFaction.Player, PLAYER_COLOR_LIGHT_BLUE);

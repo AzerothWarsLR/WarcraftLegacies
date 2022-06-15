@@ -23,17 +23,17 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// <summary>
     ///   The gold cost value of a hero.
     /// </summary>
-    private const int HERO_COST = 100; //For refunding
+    private const int HeroCost = 100; //For refunding
 
     /// <summary>
     ///   How much gold and lumber is refunded from units that get refunded when a player leaves.
     /// </summary>
-    private const float REFUND_PERCENT = 100;
+    private const float RefundPercent = 100;
 
     /// <summary>
     ///   How much experience is transferred from heroes that leave the game.
     /// </summary>
-    private const float XP_TRANSFER_PERCENT = 100;
+    private const float XpTransferPercent = 100;
 
     private readonly int _defeatedResearch;
 
@@ -45,7 +45,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private string _name;
     private player? _player;
     private ScoreStatus _scoreStatus = ScoreStatus.Undefeated;
-    private Team? _team;
     private int _undefeatedResearch;
     private int _xp; //Stored by DistributeUnits and given out again by DistributeResources
 
@@ -114,35 +113,9 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
     }
 
-    /// <summary>
-    ///   Which <see cref="Team" /> this <see cref="Faction" /> belongs to.
-    /// </summary>
-    public Team? Team
-    {
-      get => _team;
-      set
-      {
-        if (_team != null)
-        {
-          var previousTeam = _team;
-          _team.RemoveFaction(this);
-          _team = null;
-          TeamLeft?.Invoke(this, new FactionChangeTeamEventArgs(this, previousTeam));
-        }
-
-        if (value != null)
-        {
-          value.AddFaction(this);
-          _team = value;
-          TeamJoin?.Invoke(this, this);
-          JoinedTeam?.Invoke(this, this);
-        }
-      }
-    }
-
     public string ColoredName => PrefixCol + _name + "|r";
 
-    public string PrefixCol { get; init; }
+    public string PrefixCol { get; }
 
     public string Name
     {
@@ -176,7 +149,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       {
         if (Player != null)
         {
-          Team?.UnallyPlayer(Player);
+          Player.GetTeam()?.UnallyPlayer(Player);
           HideAllQuests();
           UnapplyObjects();
           UnapplyPowers();
@@ -190,7 +163,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         if (value.GetFaction() != this)
           value.SetFaction(this);
 
-        Team?.AllyPlayer(value);
+        Player?.GetTeam()?.AllyPlayer(value);
         ApplyObjects();
         ApplyPowers();
         ShowAllQuests();
@@ -206,11 +179,9 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     {
       set
       {
-        if (_undefeatedResearch == 0)
-        {
-          _undefeatedResearch = value;
-          foreach (var player in GetAllPlayers()) SetPlayerTechResearched(player, _undefeatedResearch, 1);
-        }
+        if (_undefeatedResearch != 0) return;
+        _undefeatedResearch = value;
+        foreach (var player in GetAllPlayers()) SetPlayerTechResearched(player, _undefeatedResearch, 1);
       }
       get => _undefeatedResearch;
     }
@@ -222,26 +193,24 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     {
       init
       {
-        if (_defeatedResearch == 0)
-        {
-          _defeatedResearch = value;
-          foreach (var player in GetAllPlayers()) SetPlayerTechResearched(player, _defeatedResearch, 0);
-        }
+        if (_defeatedResearch != 0) return;
+        _defeatedResearch = value;
+        foreach (var player in GetAllPlayers()) SetPlayerTechResearched(player, _defeatedResearch, 0);
       }
     }
 
     private void ApplyPowers()
     {
-      if (Player != null)
-        foreach (var power in _powers)
-          power.OnAdd(Player);
+      if (Player == null) return;
+      foreach (var power in _powers)
+        power.OnAdd(Player);
     }
 
     private void UnapplyPowers()
     {
-      if (Player != null)
-        foreach (var power in _powers)
-          power.OnRemove(Player);
+      if (Player == null) return;
+      foreach (var power in _powers)
+        power.OnRemove(Player);
     }
 
     /// <summary>
@@ -253,9 +222,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     ///   Fires when the <see cref="Faction" /> changes its name.
     /// </summary>
     public event EventHandler<FactionNameChangeEventArgs>? NameChanged;
-
-    public static event EventHandler<FactionChangeTeamEventArgs>? TeamLeft;
-    public static event EventHandler<Faction>? TeamJoin;
+    
     public static event EventHandler<Faction>? GameLeave;
     public static event EventHandler<Faction>? IconChanged;
     public static event EventHandler<Faction>? StatusChanged;
@@ -339,19 +306,17 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// </summary>
     public void Unally()
     {
-      if (Team?.PlayerCount > 1)
+      if (!(Player?.GetTeam()?.Size > 1)) return;
+      var newTeamName = Name + " Pact";
+      if (FactionManager.TeamWithNameExists(newTeamName))
       {
-        string newTeamName = Name + " Pact";
-        if (FactionManager.TeamWithNameExists(newTeamName))
-        {
-          Team = FactionManager.GetTeamByName(newTeamName);
-          return;
-        }
-
-        var newTeam = new Team(newTeamName);
-        FactionManager.Register(newTeam);
-        Team = newTeam;
+        Player.SetTeam(FactionManager.GetTeamByName(newTeamName));
+        return;
       }
+
+      var newTeam = new Team(newTeamName);
+      FactionManager.Register(newTeam);
+      Player.SetTeam(newTeam);
     }
 
     /// <summary>
@@ -457,13 +422,13 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     private void DistributeExperience(IEnumerable<player> playersToDistributeTo)
     {
-      if (_team == null) return;
+      if (Player?.GetTeam() == null) return;
       foreach (var ally in playersToDistributeTo)
       {
         var allyHeroes = new GroupWrapper().EnumUnitsOfPlayer(ally).EmptyToList()
           .FindAll(unit => IsUnitType(unit, UNIT_TYPE_HERO));
         foreach (var hero in allyHeroes)
-          AddHeroXP(hero, R2I(_xp / (_team.PlayerCount - 1) / allyHeroes.Count * XP_TRANSFER_PERCENT), true);
+          AddHeroXP(hero, R2I(_xp / (Player.GetTeam().Size - 1) / allyHeroes.Count * XpTransferPercent), true);
       }
 
       _xp = 0;
@@ -483,7 +448,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     private void DistributeUnits(IReadOnlyList<player> playersToDistributeTo)
     {
-      if (_team == null) return;
+      if (Player?.GetTeam() == null) return;
       var playerUnits = new GroupWrapper().EnumUnitsOfPlayer(Player).EmptyToList();
 
       foreach (var unit in playerUnits)
@@ -492,7 +457,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         //Refund gold and experience of heroes
         if (IsUnitType(unit, UNIT_TYPE_HERO))
         {
-          Player?.AddGold(HERO_COST);
+          Player?.AddGold(HeroCost);
           _xp += GetHeroXP(unit);
           //Subtract hero's starting XP from refunded XP
           if (Legend.GetFromUnit(unit) != null) _xp -= Legend.GetFromUnit(unit)!.StartingXp;
@@ -503,8 +468,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         }
         else if (loopUnitType.Refund)
         {
-          Gold += loopUnitType.GoldCost * REFUND_PERCENT;
-          Lumber += loopUnitType.LumberCost * REFUND_PERCENT;
+          Gold += loopUnitType.GoldCost * RefundPercent;
+          Lumber += loopUnitType.LumberCost * RefundPercent;
           unit.DropAllItems();
           RemoveUnit(unit);
         }
@@ -512,7 +477,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         else if (loopUnitType.Meta == false)
         {
           SetUnitOwner(unit,
-            Team.PlayerCount > 1
+            Player?.GetTeam()?.Size > 1
               ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count)]
               : Player(GetBJPlayerNeutralVictim()), false);
         }
@@ -525,10 +490,10 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// </summary>
     private void Leave()
     {
-      if (Team?.PlayerCount > 1 && GameTime.GetGameTime() > 60)
+      if (Player?.GetTeam()?.Size > 1 && GameTime.GetGameTime() > 60)
       {
-        List<player> eligiblePlayers = Team.GetAllPlayers();
-        eligiblePlayers.Remove(Player);
+        var eligiblePlayers = Player.GetTeam()?.GetAllPlayers();
+        eligiblePlayers?.Remove(Player);
         DistributeUnits(eligiblePlayers);
         DistributeResources(eligiblePlayers);
         DistributeExperience(eligiblePlayers);

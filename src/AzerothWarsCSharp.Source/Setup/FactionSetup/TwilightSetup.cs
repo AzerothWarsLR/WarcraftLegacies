@@ -7,16 +7,12 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
   public static class TwilightSetup
   {
     public static Faction FACTION_TWILIGHT { get; private set; }
-
-
+    
     public static void Setup()
     {
-      Faction f;
-
       FACTION_TWILIGHT = new Faction("Twilight", PLAYER_COLOR_LAVENDER, "|cff9178a8",
         "ReplaceableTextures\\CommandButtons\\BTNChogall.blp");
-      f = FACTION_TWILIGHT;
-      f.Team = TeamSetup.OldGods;
+      var f = FACTION_TWILIGHT;
       f.StartingGold = 150;
       f.StartingLumber = 350;
 
