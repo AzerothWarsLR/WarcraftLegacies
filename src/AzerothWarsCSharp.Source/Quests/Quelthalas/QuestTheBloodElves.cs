@@ -67,6 +67,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
          foreach (var unit in _secondChanceUnits) unit.Rescue(completingFaction.Player);
 
          SetPlayerTechResearched(completingFaction.Player, QuestResearchId, 1);
+         LegendQuelthalas.LegendKael.StartingXp = GetHeroXP(LegendQuelthalas.LegendAnasterian.Unit);
          LegendQuelthalas.LegendKael.Spawn(completingFaction.Player, new Point(-11410, 21975), 110);
          UnitAddItem(LegendQuelthalas.LegendKael.Unit,
             CreateItem(Constants.ITEM_I00M_SUMMON_ELVEN_WORKERS, GetUnitX(LegendQuelthalas.LegendKael.Unit),
