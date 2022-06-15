@@ -113,7 +113,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
       QuestSetFailed(Quest, false);
       QuestSetDiscovered(Quest, true);
       DisplayCompleted(whichFaction);
-      if (Global) DisplayCompletedGlobal(whichFaction);
+      if (Global) DisplayCompletedGlobal(whichFaction.Player);
 
       if (ResearchId != 0) SetPlayerTechResearched(whichFaction.Player, ResearchId, 1);
 
@@ -262,43 +262,38 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     /// <summary>
     ///   Displays a warning message to everyone except the player that completed the <see cref="QuestData" />.
     /// </summary>
-    private void DisplayCompletedGlobal(Faction faction)
+    private void DisplayCompletedGlobal(player whichPlayer)
     {
       var display = "";
-      if (GetLocalPlayer() != faction.Player)
-      {
-        display = display + "\n|cffffcc00MAJOR EVENT - " + faction.PrefixCol + Title + "|r\n" +
-                  CompletionPopup + "\n";
-        DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
-        var localFaction = PlayerData.ByHandle(GetLocalPlayer()).Faction;
-        StartSound(localFaction != null && localFaction.Team?.ContainsFaction(faction) == true
-          ? SoundLibrary.Completed
-          : SoundLibrary.Warning);
-      }
+      if (GetLocalPlayer() == whichPlayer) return;
+      display =
+        $"{display}\n|cffffcc00MAJOR EVENT - {whichPlayer.GetFaction()?.PrefixCol}{Title}|r\n{CompletionPopup}\n";
+      DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
+      StartSound(GetLocalPlayer().GetTeam()?.Contains(whichPlayer) == true
+        ? SoundLibrary.Completed
+        : SoundLibrary.Warning);
     }
 
     private void DisplayFailed(Faction faction)
     {
       var display = "";
-      if (GetLocalPlayer() == faction.Player)
-      {
-        if (!string.IsNullOrEmpty(FailurePopup))
-          display = display + "\n|cffffcc00QUEST FAILED - " + Title + "|r\n" + FailurePopup + "\n";
-        else
-          display = display + "\n|cffffcc00QUEST FAILED - " + Title + "|r\n" + Description + "\n";
+      if (GetLocalPlayer() != faction.Player) return;
+      if (!string.IsNullOrEmpty(FailurePopup))
+        display = display + "\n|cffffcc00QUEST FAILED - " + Title + "|r\n" + FailurePopup + "\n";
+      else
+        display = display + "\n|cffffcc00QUEST FAILED - " + Title + "|r\n" + Description + "\n";
 
-        foreach (var questItem in _objectives)
-          if (questItem.ShowsInQuestLog)
-            display = questItem.Progress switch
-            {
-              QuestProgress.Complete => display + " - |cff808080" + questItem.Description + " (Completed)|r\n",
-              QuestProgress.Failed => display + " - |cffCD5C5C" + questItem.Description + " (Failed)|r\n",
-              _ => display + " - " + questItem.Description + "\n"
-            };
+      foreach (var questItem in _objectives)
+        if (questItem.ShowsInQuestLog)
+          display = questItem.Progress switch
+          {
+            QuestProgress.Complete => display + " - |cff808080" + questItem.Description + " (Completed)|r\n",
+            QuestProgress.Failed => display + " - |cffCD5C5C" + questItem.Description + " (Failed)|r\n",
+            _ => display + " - " + questItem.Description + "\n"
+          };
 
-        DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
-        StartSound(SoundLibrary.Failed);
-      }
+      DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
+      StartSound(SoundLibrary.Failed);
     }
 
     private void DisplayCompleted(Faction faction)

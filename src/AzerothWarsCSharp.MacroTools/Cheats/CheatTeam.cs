@@ -16,8 +16,8 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
       {
         if (!TestSafety.CheatCondition()) return;
 
-        string enteredString = GetEventPlayerChatString();
-        player p = GetTriggerPlayer();
+        var enteredString = GetEventPlayerChatString();
+        var p = GetTriggerPlayer();
         _parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
 
         if (!FactionManager.TeamWithNameExists(_parameter))
@@ -25,9 +25,9 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
           throw new Exception($"There is no registered {nameof(Team)} with the name {_parameter}.");
         }
       
-        Team t = FactionManager.GetTeamByName(_parameter);
+        var t = FactionManager.GetTeamByName(_parameter);
         var faction = PlayerData.ByHandle(p).Faction;
-        if (faction != null) faction.Team = t;
+        faction?.Player?.SetTeam(t);
         DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Attempted to team to " + t.Name + ".");
       }
       catch (Exception ex)

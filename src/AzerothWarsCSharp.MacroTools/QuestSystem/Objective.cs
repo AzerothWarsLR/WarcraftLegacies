@@ -110,7 +110,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
     {
       foreach (var eligibleFaction in EligibleFactions)
       {
-        if (eligibleFaction.Team == whichPlayer.GetFaction()?.Team)
+        if (eligibleFaction.Player?.GetTeam() == whichPlayer.GetTeam())
           return true;
       }
 
