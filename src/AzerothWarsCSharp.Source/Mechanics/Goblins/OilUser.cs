@@ -1,4 +1,5 @@
 ﻿using System;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.Buffs;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Powers;
@@ -6,7 +7,7 @@ using AzerothWarsCSharp.MacroTools.SpellSystem;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.UnitEffects
+namespace AzerothWarsCSharp.Source.Mechanics.Goblins
 {
   /// <summary>
   /// Oil users use oil instead of mana. The oil is provided by the owner's <see cref="OilPower"/> if they have one.

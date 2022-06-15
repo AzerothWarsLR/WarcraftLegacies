@@ -1,9 +1,10 @@
-﻿using AzerothWarsCSharp.MacroTools.SpellSystem;
+﻿using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.Spells
+namespace AzerothWarsCSharp.Source.Mechanics.Goblins
 {
   public sealed class NuclearLaunch : Spell
   {
