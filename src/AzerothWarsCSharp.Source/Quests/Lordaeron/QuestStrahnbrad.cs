@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "The Strahnbrad is under attack by some brigands, clear them out",
       "ReplaceableTextures\\CommandButtons\\BTNFarm.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01C"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N01C_STRAHNBRAD_10GOLD_MIN)));
       AddObjective(new ObjectiveExpire(1170));
       AddObjective(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
@@ -27,6 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
+      Required = true;
     }
 
     protected override string CompletionPopup => "Strahnbrad has been liberated.";

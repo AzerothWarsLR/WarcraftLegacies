@@ -16,10 +16,9 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     {
       AddObjective(new ObjectiveControlLegend(LegendLordaeron.LegendArthas, true));
       AddObjective(new ObjectiveLegendDead(LegendForsaken.LegendScholomance));
-      AddObjective(new ObjectiveResearch(ResearchId, FourCC("hshy")));
+      AddObjective(new ObjectiveResearch(ResearchId, Constants.UNIT_HSHY_ALLIANCE_SHIPYARD_LORDAERON));
     }
-
-
+    
     protected override string CompletionPopup =>
       "Crown Prince Arthas, and what remains of his forces, have landed on the shores of Northrend and established a base camp.";
 

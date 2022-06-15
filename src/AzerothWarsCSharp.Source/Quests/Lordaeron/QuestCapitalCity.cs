@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       foreach (var prequisite in prequisites) AddObjective(new ObjectiveCompleteQuest(prequisite));
       AddObjective(new ObjectiveExpire(1472));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = FourCC("R04Y");
+      ResearchId = Constants.UPGRADE_R04Y_QUEST_COMPLETED_HEARTHLANDS;
       _unitToMakeInvulnerable = unitToMakeInvulnerable;
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
@@ -33,6 +33,8 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
+
+      Required = true;
     }
 
     //Todo: bad flavour

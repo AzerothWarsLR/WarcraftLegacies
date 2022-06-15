@@ -23,9 +23,9 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       AddObjective(new ObjectiveLegendInRect(LegendLordaeron.LegendArthas, Regions.King_Arthas_crown, "King Terenas"));
       ResearchId = QuestResearchId;
       _terenas = terenas;
+      Required = true;
     }
-
-
+    
     protected override string CompletionPopup =>
       "With the Lich King eliminated, the Kingdom of Lordaeron is free of its greatest threat. King Terenas Menethil proudly abdicates in favor of his son.";
 
