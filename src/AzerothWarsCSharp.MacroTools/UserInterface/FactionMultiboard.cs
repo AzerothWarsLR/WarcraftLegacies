@@ -12,18 +12,18 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
   /// </summary>
   public sealed class FactionMultiboard
   {
-    private const int COLUMN_COUNT = 3;
-    private const string TITLE = "Scoreboard";
+    private const int ColumnCount = 3;
+    private const string Title = "Scoreboard";
 
-    private const int COLUMN_FACTION = 0;
-    private const int COLUMN_CP = 1;
-    private const int COLUMN_INCOME = 2;
-    private const int COLUMN_TEAM = 0;
+    private const int ColumnFaction = 0;
+    private const int ColumnCp = 1;
+    private const int ColumnIncome = 2;
+    private const int ColumnTeam = 0;
 
-    private const float WIDTH_FACTION = 0.08f;
-    private const float WIDTH_CP = 0.02f;
-    private const float WIDTH_INCOME = 0.02f;
-    private const float WIDTH_TEAM = WIDTH_FACTION + WIDTH_CP + WIDTH_INCOME;
+    private const float WidthFaction = 0.08f;
+    private const float WidthCp = 0.02f;
+    private const float WidthIncome = 0.02f;
+    private const float WidthTeam = WidthFaction + WidthCp + WidthIncome;
     private readonly Dictionary<Faction, int> _rowsByFaction = new();
     private readonly Dictionary<Team, int> _rowsByTeam = new();
 
@@ -44,7 +44,7 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
     public static void Setup()
     {
       var timer = CreateTimer();
-      TimerStart(timer, 2, false, () => { Instance = new FactionMultiboard(COLUMN_COUNT, 3, TITLE); }
+      TimerStart(timer, 2, false, () => { Instance = new FactionMultiboard(ColumnCount, 3, Title); }
       );
 
       PlayerData.FactionChange += OnPersonFactionChange;
@@ -63,18 +63,18 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
     private void UpdateFactionRow(Faction faction)
     {
       var row = _rowsByFaction[faction];
-      multiboarditem factionMbi = MultiboardGetItem(_multiboard, row, COLUMN_FACTION);
-      multiboarditem cpMbi = MultiboardGetItem(_multiboard, row, COLUMN_CP);
-      multiboarditem incomeMbi = MultiboardGetItem(_multiboard, row, COLUMN_INCOME);
+      multiboarditem factionMbi = MultiboardGetItem(_multiboard, row, ColumnFaction);
+      multiboarditem cpMbi = MultiboardGetItem(_multiboard, row, ColumnCp);
+      multiboarditem incomeMbi = MultiboardGetItem(_multiboard, row, ColumnIncome);
       MultiboardSetItemValue(factionMbi, faction.ColoredName);
       MultiboardSetItemIcon(factionMbi, faction.Icon);
       MultiboardSetItemValue(cpMbi, faction.Player?.GetControlPointCount().ToString());
       var income = R2I(faction.Player?.GetTotalIncome() ?? 0);
       var incomePrefix = faction.Player?.GetBonusIncome() > 0 ? "|cffffcc00" : "";
       MultiboardSetItemValue(incomeMbi, $"{incomePrefix}{I2S(income)}");
-      MultiboardSetItemWidth(factionMbi, WIDTH_FACTION);
-      MultiboardSetItemWidth(cpMbi, WIDTH_CP);
-      MultiboardSetItemWidth(incomeMbi, WIDTH_INCOME);
+      MultiboardSetItemWidth(factionMbi, WidthFaction);
+      MultiboardSetItemWidth(cpMbi, WidthCp);
+      MultiboardSetItemWidth(incomeMbi, WidthIncome);
       MultiboardSetItemStyle(factionMbi, true, true);
       MultiboardSetItemStyle(cpMbi, true, false);
       MultiboardSetItemStyle(incomeMbi, true, false);
@@ -84,28 +84,28 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
     private void UpdateTeamRow(Team team)
     {
       var row = _rowsByTeam[team];
-      multiboarditem mbi = MultiboardGetItem(_multiboard, row, COLUMN_TEAM);
+      multiboarditem mbi = MultiboardGetItem(_multiboard, row, ColumnTeam);
       MultiboardSetItemValue(mbi,
         "-----" + team.Name + SubString("-----------------------------------------", 0, 19 - StringLength(team.Name)));
-      MultiboardSetItemWidth(mbi, WIDTH_TEAM);
+      MultiboardSetItemWidth(mbi, WidthTeam);
       MultiboardSetItemStyle(mbi, true, false);
-      MultiboardSetItemStyle(MultiboardGetItem(_multiboard, row, COLUMN_CP), false, false);
-      MultiboardSetItemStyle(MultiboardGetItem(_multiboard, row, COLUMN_INCOME), false, false);
+      MultiboardSetItemStyle(MultiboardGetItem(_multiboard, row, ColumnCp), false, false);
+      MultiboardSetItemStyle(MultiboardGetItem(_multiboard, row, ColumnIncome), false, false);
     }
 
     private void UpdateHeaderRow()
     {
-      multiboarditem factionMbi = MultiboardGetItem(_multiboard, 0, COLUMN_FACTION);
-      multiboarditem cpMbi = MultiboardGetItem(_multiboard, 0, COLUMN_CP);
-      multiboarditem incomeMbi = MultiboardGetItem(_multiboard, 0, COLUMN_INCOME);
+      multiboarditem factionMbi = MultiboardGetItem(_multiboard, 0, ColumnFaction);
+      multiboarditem cpMbi = MultiboardGetItem(_multiboard, 0, ColumnCp);
+      multiboarditem incomeMbi = MultiboardGetItem(_multiboard, 0, ColumnIncome);
       MultiboardSetItemStyle(factionMbi, false, false);
       MultiboardSetItemStyle(cpMbi, false, true);
       MultiboardSetItemStyle(incomeMbi, false, true);
       MultiboardSetItemIcon(cpMbi, "ReplaceableTextures\\CommandButtons\\BTNCOP.blp");
       MultiboardSetItemIcon(incomeMbi, "ReplaceableTextures\\CommandButtons\\BTNMGexchange.blp");
-      MultiboardSetItemWidth(factionMbi, WIDTH_FACTION);
-      MultiboardSetItemWidth(cpMbi, WIDTH_CP);
-      MultiboardSetItemWidth(incomeMbi, WIDTH_INCOME);
+      MultiboardSetItemWidth(factionMbi, WidthFaction);
+      MultiboardSetItemWidth(cpMbi, WidthCp);
+      MultiboardSetItemWidth(incomeMbi, WidthIncome);
     }
 
     //Run when the number of Teams or Factions have changed, or a Faction has changed its Team
@@ -114,9 +114,9 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
       var row = 0;
       DestroyMultiboard(_multiboard);
       _multiboard = CreateMultiboard();
-      MultiboardSetColumnCount(_multiboard, COLUMN_COUNT);
+      MultiboardSetColumnCount(_multiboard, ColumnCount);
       MultiboardSetRowCount(_multiboard, 3);
-      MultiboardSetTitleText(_multiboard, TITLE);
+      MultiboardSetTitleText(_multiboard, Title);
       MultiboardDisplay(_multiboard, true);
       MultiboardSetRowCount(_multiboard, 30);
       UpdateHeaderRow();
