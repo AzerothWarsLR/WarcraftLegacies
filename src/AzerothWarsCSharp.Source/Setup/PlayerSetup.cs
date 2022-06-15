@@ -4,7 +4,7 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup
 {
-  public static class PersonSetup
+  public static class PlayerSetup
   {
     public static void Setup()
     {
@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.Source.Setup
       Player(2).SetTeam(TeamSetup.Alliance);
       
       Player(3).SetFaction(ScourgeSetup.FactionScourge);
-      Player(3).SetTeam(TeamSetup.Scourge);
+      Player(3).SetTeam(TeamSetup.Legion);
       
       Player(4).SetFaction(IronforgeSetup.FACTION_IRONFORGE);
       Player(4).SetTeam(TeamSetup.Alliance);
@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Setup
       Player(5).SetTeam(TeamSetup.Horde);
       
       Player(6).SetFaction(FelHordeSetup.FactionFelHorde);
-      Player(6).SetTeam(TeamSetup.Scourge);
+      Player(6).SetTeam(TeamSetup.Legion);
       
       Player(7).SetFaction(DalaranSetup.Dalaran);
       Player(7).SetTeam(TeamSetup.Alliance);
@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Setup
       Player(8).SetTeam(TeamSetup.Horde);
       
       Player(9).SetFaction(ForsakenSetup.FACTION_FORSAKEN);
-      Player(9).SetTeam(TeamSetup.Scourge);
+      Player(9).SetTeam(TeamSetup.Legion);
       
       Player(10).SetFaction(StormwindSetup.Stormwind);
       Player(10).SetTeam(TeamSetup.Alliance);
@@ -75,7 +75,7 @@ namespace AzerothWarsCSharp.Source.Setup
       Player(21).SetTeam(TeamSetup.Alliance);
       
       Player(22).SetFaction(LegionSetup.FactionLegion);
-      Player(22).SetTeam(TeamSetup.Scourge);
+      Player(22).SetTeam(TeamSetup.Legion);
     }
   }
 }

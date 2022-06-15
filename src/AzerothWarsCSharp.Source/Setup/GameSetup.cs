@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Setup
       InstanceSetup.Setup();
       TeamSetup.Setup();
       AllFactionSetup.Setup();
-      PersonSetup.Setup();
+      PlayerSetup.Setup();
       ArtifactSetup.Setup();
       AllQuestSetup.Setup();
       //ResearchSetup.Setup();
