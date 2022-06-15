@@ -20,7 +20,6 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
             true));
          AddObjective(new ObjectiveControlLegend(LegendQuelthalas.LegendKael, true));
          ResearchId = Constants.UPGRADE_R073_QUEST_COMPLETED_TEMPEST_KEEP;
-         Required = true;
       }
 
       protected override void OnComplete(Faction completingFaction)
