@@ -163,7 +163,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         if (value.GetFaction() != this)
           value.SetFaction(this);
 
-        Player.GetTeam().AllyPlayer(value);
+        Player?.GetTeam()?.AllyPlayer(value);
         ApplyObjects();
         ApplyPowers();
         ShowAllQuests();
@@ -308,7 +308,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// </summary>
     public void Unally()
     {
-      if (!(Player.GetTeam()?.Size > 1)) return;
+      if (!(Player?.GetTeam()?.Size > 1)) return;
       var newTeamName = Name + " Pact";
       if (FactionManager.TeamWithNameExists(newTeamName))
       {
@@ -424,7 +424,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     private void DistributeExperience(IEnumerable<player> playersToDistributeTo)
     {
-      if (Player.GetTeam() == null) return;
+      if (Player?.GetTeam() == null) return;
       foreach (var ally in playersToDistributeTo)
       {
         var allyHeroes = new GroupWrapper().EnumUnitsOfPlayer(ally).EmptyToList()
@@ -450,7 +450,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     private void DistributeUnits(IReadOnlyList<player> playersToDistributeTo)
     {
-      if (Player.GetTeam() == null) return;
+      if (Player?.GetTeam() == null) return;
       var playerUnits = new GroupWrapper().EnumUnitsOfPlayer(Player).EmptyToList();
 
       foreach (var unit in playerUnits)
@@ -479,7 +479,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         else if (loopUnitType.Meta == false)
         {
           SetUnitOwner(unit,
-            Player.GetTeam().Size > 1
+            Player?.GetTeam()?.Size > 1
               ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count)]
               : Player(GetBJPlayerNeutralVictim()), false);
         }
@@ -492,10 +492,10 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// </summary>
     private void Leave()
     {
-      if (Player.GetTeam().Size > 1 && GameTime.GetGameTime() > 60)
+      if (Player?.GetTeam()?.Size > 1 && GameTime.GetGameTime() > 60)
       {
-        var eligiblePlayers = Player.GetTeam().GetAllPlayers();
-        eligiblePlayers.Remove(Player);
+        var eligiblePlayers = Player.GetTeam()?.GetAllPlayers();
+        eligiblePlayers?.Remove(Player);
         DistributeUnits(eligiblePlayers);
         DistributeResources(eligiblePlayers);
         DistributeExperience(eligiblePlayers);
