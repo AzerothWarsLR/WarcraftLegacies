@@ -52,7 +52,8 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
     {
       PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, unitEffect.OnDealsDamage, unitEffect.UnitTypeId);
       PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeIsCreated, unitEffect.OnCreated, unitEffect.UnitTypeId);
-      PlayerUnitEvents.Register("UnitTypeFinishesBeingTrained", unitEffect.OnTrained, unitEffect.UnitTypeId);
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesBeingTrained, unitEffect.OnTrained, unitEffect.UnitTypeId);
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, unitEffect.OnTrainedUnit, unitEffect.UnitTypeId);
       PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesBeingConstructed, unitEffect.OnConstruction,
         unitEffect.UnitTypeId);
       PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesUpgrade, unitEffect.OnUpgrade, unitEffect.UnitTypeId);

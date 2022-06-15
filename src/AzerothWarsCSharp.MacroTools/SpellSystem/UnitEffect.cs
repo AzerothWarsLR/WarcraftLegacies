@@ -40,5 +40,13 @@
     public virtual void OnTrained()
     {
     }
+
+    /// <summary>
+    /// Fired when the unit trains another unit from itself.
+    /// </summary>
+    public virtual void OnTrainedUnit()
+    {
+      
+    }
   }
 }

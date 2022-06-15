@@ -370,6 +370,15 @@ namespace AzerothWarsCSharp.Source.Setup
       SpellSystem.Register(new OilUser(Constants.UNIT_H091_WAR_ZEPPELIN_GOBLIN));
       SpellSystem.Register(new OilProducer(Constants.UNIT_O04R_OIL_PLATFORM_GOBLIN, 11.5f));
       SpellSystem.Register(new OilUser(Constants.UNIT_H04Z_KEZAN_OIL_SUPPLY_GOBLIN));
+      SpellSystem.Register(new OilRigConstructor(Constants.UNIT_N0AQ_OIL_RIG_WARSONG, new[]
+      {
+        Regions.OilRig1.Center, 
+        Regions.OilRig2.Center,
+        Regions.OilRig3.Center,
+        Regions.OilRig4.Center,
+        Regions.OilRig5.Center,
+        Regions.OilRig6.Center
+      }));
     }
   }
 }
