@@ -56,7 +56,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       SetUnitState(LegendLordaeron.LegendArthas.Unit, UNIT_STATE_MANA,
         GetUnitState(LegendLordaeron.LegendArthas.Unit, UNIT_STATE_MAX_MANA));
       LegendLordaeron.LegendArthas.Unit.AddItemSafe(ArtifactSetup.ArtifactHelmofdomination.Item);
-      completingFaction.Team = TeamSetup.Scourge;
+      completingFaction.Player?.SetTeam(TeamSetup.Scourge);
       _utgardeKeep.Rescue(ScourgeSetup.FactionScourge.Player);
       SetPlayerState(completingFaction.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
     }

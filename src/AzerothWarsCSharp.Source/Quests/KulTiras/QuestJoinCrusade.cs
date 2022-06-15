@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
     protected override void OnComplete(Faction completingFaction)
     {
       UnitRemoveAbility(LegendKultiras.LegendAdmiral.Unit, FourCC("A0JB"));
-      completingFaction.Team = TeamSetup.ScarletCrusade;
+      completingFaction.Player?.SetTeam(TeamSetup.ScarletCrusade);
     }
   }
 }
