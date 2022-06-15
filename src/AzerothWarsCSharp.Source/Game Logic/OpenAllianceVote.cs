@@ -65,6 +65,7 @@ namespace AzerothWarsCSharp.Source.Game_Logic
     
     public static void Setup()
     {
+      DialogSetMessage(VoteDialogue, "Activate open alliances?");
       var timer = CreateTimer();
       TimerStart(timer, 63, false, StartVote);
       var concludeTimer = CreateTimer();
