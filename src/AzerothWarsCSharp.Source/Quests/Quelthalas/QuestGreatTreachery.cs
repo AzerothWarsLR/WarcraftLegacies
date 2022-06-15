@@ -46,6 +46,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
         completingFaction.Player?.SetTeam(TeamSetup.Legion);
         var summonKiljaedenQuest = new QuestSummonKil();
         completingFaction.AddQuest(summonKiljaedenQuest);
+        summonKiljaedenQuest.DisplayDiscovered(completingFaction);
       }
       UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, _acceptSpell);
       UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, _refuseSpell);
