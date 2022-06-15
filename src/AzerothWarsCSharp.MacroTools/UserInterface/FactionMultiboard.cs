@@ -48,8 +48,7 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
       );
 
       PlayerData.FactionChange += OnPersonFactionChange;
-      Faction.TeamJoin += OnFactionTeamJoin;
-      Faction.TeamLeft += OnFactionTeamLeft;
+      Team.TeamSizeChange += OnTeamSizeChange;
       Faction.StatusChanged += OnFactionStatusChanged;
 
       FactionManager.AnyFactionNameChanged += OnFactionAnyFactionNameChanged;
@@ -154,12 +153,7 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
       RenderInstance();
     }
 
-    private static void OnFactionTeamJoin(object? sender, Faction faction)
-    {
-      RenderInstance();
-    }
-
-    private static void OnFactionTeamLeft(object? sender, FactionChangeTeamEventArgs factionChangeTeamEventArgs)
+    private static void OnTeamSizeChange(object? sender, Team team)
     {
       RenderInstance();
     }

@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
 {
   public static class CheatTeam
   {
-    private const string COMMAND = "-team ";
+    private const string Command = "-team ";
     private static string? _parameter;
     
     private static void Actions()
@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
 
         var enteredString = GetEventPlayerChatString();
         var p = GetTriggerPlayer();
-        _parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
+        _parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
 
         if (!FactionManager.TeamWithNameExists(_parameter))
         {
@@ -26,9 +26,8 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
         }
       
         var t = FactionManager.GetTeamByName(_parameter);
-        var faction = PlayerData.ByHandle(p).Faction;
-        faction?.Player?.SetTeam(t);
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Attempted to team to " + t.Name + ".");
+        p.SetTeam(t);
+        DisplayTextToPlayer(p, 0, 0, $"|cffD27575CHEAT:|r Attempted to set team to {t.Name}.");
       }
       catch (Exception ex)
       {
@@ -38,8 +37,8 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
 
     public static void Setup()
     {
-      trigger trig = CreateTrigger();
-      foreach (var player in GetAllPlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
+      var trig = CreateTrigger();
+      foreach (var player in GetAllPlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
 
       TriggerAddAction(trig, Actions);
     }

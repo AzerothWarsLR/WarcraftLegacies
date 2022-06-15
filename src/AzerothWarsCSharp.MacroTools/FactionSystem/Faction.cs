@@ -214,18 +214,10 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     }
 
     /// <summary>
-    ///   Fires when the <see cref="Faction" /> joins a new <see cref="Team" />.
-    /// </summary>
-    public event EventHandler<Faction>? JoinedTeam;
-
-    /// <summary>
     ///   Fires when the <see cref="Faction" /> changes its name.
     /// </summary>
     public event EventHandler<FactionNameChangeEventArgs>? NameChanged;
-
-    public static event EventHandler<FactionChangeTeamEventArgs>? TeamLeft;
-    public static event EventHandler<Faction>? TeamJoin;
-    public static event EventHandler<Faction>? GameLeave;
+    
     public static event EventHandler<Faction>? IconChanged;
     public static event EventHandler<Faction>? StatusChanged;
 
@@ -504,8 +496,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       {
         Obliterate();
       }
-
-      GameLeave?.Invoke(this, this);
     }
 
     private static void OnAnyResearch()
@@ -514,17 +504,17 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       faction?.SetObjectLevel(GetResearched(), GetPlayerTechCount(GetTriggerPlayer(), GetResearched(), false));
     }
 
-    public static void Setup()
-    {
-      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, OnAnyResearch);
-    }
-
     /// <summary>
     ///   Attempts to retrieve a <see cref="QuestData" /> belonging to this <see cref="Faction" /> with the given title.
     /// </summary>
     public QuestData GetQuestByTitle(string parameter)
     {
       return _questsByName[parameter];
+    }
+    
+    static Faction()
+    {
+      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, OnAnyResearch);
     }
   }
 }
