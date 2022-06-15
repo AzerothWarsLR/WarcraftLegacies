@@ -70,15 +70,6 @@ namespace AzerothWarsCSharp.TestSource.Setup
 
         var taxGuardTower = new ProvidesIncome(FourCC("hgtw"), 20);
         SpellSystem.Register(taxGuardTower);
-
-        var trader = new Trader(FourCC("hrif"), 20, 20, new[]
-        {
-          new Point(0, 0),
-          new Point(1000, 0)
-        });
-        SpellSystem.Register(trader);
-
-        SpellSystem.Register(new OilUser(FourCC("hmpr")));
       }
       catch (Exception ex)
       {
