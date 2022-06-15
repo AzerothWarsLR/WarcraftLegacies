@@ -80,11 +80,6 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
          UnitAddAbility(LegendQuelthalas.LegendKael.Unit,
             Constants.ABILITY_A0IF_PERFORM_THE_GREAT_TREACHERY_FACTION_SELECT);
 
-         if (!IsUnitHidden(PreplacedUnitSystem.GetUnit(Constants.UNIT_N07E_PORTAL_GREEN_NAZJATAR)))
-         {
-            IssueImmediateOrder(LegendQuelthalas.LegendKael.Unit, "thunderclap"); //todo: this seems wrong
-         }
-
          completingFaction.Gold += 2000;
          completingFaction.Lumber += 4000;
 
