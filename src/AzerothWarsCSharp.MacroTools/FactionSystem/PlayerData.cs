@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using static War3Api.Common;
 
-
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
   /// <summary>
@@ -23,24 +22,23 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     private float _partialGold; //Just used for income calculations
 
-    public PlayerData(player player)
+    private PlayerData(player player)
     {
       Player = player;
     }
 
-    public player Player { get; }
+    private player Player { get; }
 
     /// <summary>
     /// Controls who the <see cref="player"/> is allied to.
     /// </summary>
     public Team? Team
     {
-      get
-      {
-        return _team;
-      }
+      get => _team;
       set
       {
+        _team?.RemovePlayer(Player);
+        value?.AddPlayer(Player);
         _team = value;
       }
     }
@@ -206,7 +204,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// <summary>
     ///   Register a <see cref="PlayerData" /> to the Person system.
     /// </summary>
-    public static void Register(PlayerData playerData)
+    private static void Register(PlayerData playerData)
     {
       ById.Add(GetPlayerId(playerData.Player), playerData);
     }

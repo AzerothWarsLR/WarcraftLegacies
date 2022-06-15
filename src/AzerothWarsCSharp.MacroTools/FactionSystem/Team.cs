@@ -68,7 +68,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
     }
 
-    public void RemovePlayer(player whichPlayer)
+    internal void RemovePlayer(player whichPlayer)
     {
       if (!_members.Contains(whichPlayer))
       {
@@ -79,7 +79,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       TeamSizeChange?.Invoke(this, this);
     }
 
-    public void AddPlayer(player whichPlayer)
+    internal void AddPlayer(player whichPlayer)
     {
       if (_members.Contains(whichPlayer))
         throw new Exception($"Attempted to add already present player {GetPlayerName(whichPlayer)} to team {Name})");
@@ -92,7 +92,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     ///   Causes every <see cref="player" /> in the <see cref="Team" /> to ally the given player, and vise-versa.
     /// </summary>
     /// <param name="whichPlayer"></param>
-    public void AllyPlayer(player whichPlayer)
+    internal void AllyPlayer(player whichPlayer)
     {
       foreach (var player in _members)
       {
@@ -105,7 +105,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     ///   Causes every <see cref="player" /> in the <see cref="Team" /> to unally the given player, and vise-versa.
     /// </summary>
     /// <param name="whichPlayer"></param>
-    public void UnallyPlayer(player whichPlayer)
+    internal void UnallyPlayer(player whichPlayer)
     {
       foreach (var player in _members)
       {
@@ -122,8 +122,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       if (!_invitees.Contains(whichPlayer)) return;
       var faction = whichPlayer.GetFaction();
       if (faction == null) return;
-      DisplayText(faction.ColoredName + "|r is no longer invited to join the " + Name + ".");
-      DisplayTextToPlayer(faction.Player, 0, 0, "You are no longer invited to join the " + Name + ".");
+      DisplayText($"{faction.ColoredName}|r is no longer invited to join the {Name}.");
+      DisplayTextToPlayer(faction.Player, 0, 0, $"You are no longer invited to join the {Name}.");
       _invitees.Remove(whichPlayer);
     }
 
@@ -137,9 +137,9 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       //StartSound("Sound\Interface\ArrangedTeamInvitation.wav");
       var faction = whichPlayer.GetFaction();
       if (faction == null) return;
-      DisplayText(faction.ColoredName + "|r has been invited to join the " + Name + ".");
+      DisplayText($"{faction.ColoredName}|r has been invited to join the {Name}.");
       DisplayTextToPlayer(faction.Player, 0, 0,
-        "You have been invited to join the " + Name + ". Type -join " + Name + " to accept.");
+        $"You have been invited to join the {Name}. Type -join {Name} to accept.");
       _invitees.Add(whichPlayer);
     }
 
