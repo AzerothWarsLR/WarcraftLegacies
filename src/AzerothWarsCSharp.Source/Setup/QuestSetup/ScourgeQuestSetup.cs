@@ -49,7 +49,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 
       QuestSapphiron questSapphiron = new(PreplacedUnitSystem.GetUnit(Constants.UNIT_UBDR_SAPPHIRON_CREEP));
       QuestCorruptArthas questCorruptArthas = new();
-      QuestNaxxramas questNaxxramas = new(Regions.NaxxramasInside,
+      QuestNaxxramas questNaxxramas = new(Regions.NaxAmbient,
         PreplacedUnitSystem.GetUnit(Constants.UNIT_E013_NAXXRAMAS_SCOURGE));
       QuestCivilWar questCivilWar = new();
       QuestLichKingArthas questLichKingArthas =

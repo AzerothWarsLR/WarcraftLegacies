@@ -8,7 +8,6 @@ using AzerothWarsCSharp.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-
 namespace AzerothWarsCSharp.Source.Quests.Scourge
 {
   public sealed class QuestNaxxramas : QuestData
@@ -33,6 +32,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
           SetUnitInvulnerable(unit, true);
+          ShowUnit(unit, false);
           _rescueUnits.Add(unit);
         }
     }
@@ -44,8 +44,8 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
 
     protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
-      _naxxramas.Rescue(completingFaction.Player);
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player ?? Player(GetBJPlayerNeutralVictim()));
+      _naxxramas.Rescue(completingFaction.Player ?? Player(GetBJPlayerNeutralVictim()));
       SetPlayerAbilityAvailable(completingFaction.Player, FourCC("A0O2"), false);
     }
   }
