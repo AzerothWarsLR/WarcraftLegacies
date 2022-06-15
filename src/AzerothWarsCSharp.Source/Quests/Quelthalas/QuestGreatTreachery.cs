@@ -12,32 +12,44 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 {
   public sealed class QuestGreatTreachery : QuestData
   {
-    private static readonly int QuestResearchId = FourCC("R075"); //This research is given when the quest is completed
-
-    public QuestGreatTreachery() : base("The Great Treachery",
+    private readonly int _acceptSpell;
+    private readonly int _refuseSpell;
+    private readonly ObjectiveEitherOf _choice;
+    
+    public QuestGreatTreachery(int acceptSpell, int refuseSpell) : base("The Great Treachery",
       "Kil'jaeden has approached Kael with an offer of power and salvation for his people. Only by accepting will his hunger for magic by satiated.",
       "ReplaceableTextures\\CommandButtons\\BTNFelKaelthas.blp")
     {
-      AddObjective(new ObjectiveCastSpell(FourCC("A0IF"), true));
+      _acceptSpell = acceptSpell;
+      _refuseSpell = refuseSpell;
+      _choice = new ObjectiveEitherOf(new ObjectiveCastSpell(acceptSpell, true),
+        new ObjectiveCastSpell(refuseSpell, true));
+      AddObjective(_choice);
       AddObjective(new ObjectiveLegendLevel(LegendQuelthalas.LegendKael, 6));
-      ResearchId = QuestResearchId;
+      ResearchId = Constants.UPGRADE_R075_QUEST_COMPLETED_THE_GREAT_TREACHERY;
       Global = true;
+      Required = true;
     }
 
-    protected override string CompletionPopup => "The Blood Elves have joined the Burning Legion";
+    protected override string CompletionPopup =>
+      _choice.ObjectiveA.Progress == QuestProgress.Complete
+        ? "The Blood Elves have joined the Burning Legion" : "The Blood Elves stay loyal to Illidan";
 
-    protected override string RewardDescription =>
-      "Unlock the summon Kil'jaeden quest and join the Burning Legion team";
+    protected override string RewardDescription => "If you accept, join the Burning Legion team and gain the ability to summon Kil'jaeden. If you refuse, stay allied to Illidan.";
 
     protected override void OnComplete(Faction completingFaction)
     {
-      QuelthalasQuestSetup.STAY_LOYAL.Progress = QuestProgress.Failed;
-      UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0IF"));
-      UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, FourCC("A0IK"));
-      RemoveUnit(LegendQuelthalas.LegendLorthemar.Unit);
-      QuelthalasSetup.FactionQuelthalas.ModObjectLimit(LegendQuelthalas.LegendLorthemar.UnitType, -Faction.UNLIMITED);
-      completingFaction.Player?.SetTeam(TeamSetup.Legion);
-      QuelthalasQuestSetup.SUMMON_KIL.Progress = QuestProgress.Incomplete;
+      if (_choice.ObjectiveA.Progress == QuestProgress.Complete)
+      {
+        RemoveUnit(LegendQuelthalas.LegendLorthemar.Unit);
+        completingFaction.ModObjectLimit(LegendQuelthalas.LegendLorthemar.UnitType, -Faction.UNLIMITED);
+        completingFaction.Player?.SetTeam(TeamSetup.Legion);
+        var summonKiljaedenQuest = new QuestSummonKil();
+        completingFaction.AddQuest(summonKiljaedenQuest);
+        summonKiljaedenQuest.DisplayDiscovered(completingFaction);
+      }
+      UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, _acceptSpell);
+      UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, _refuseSpell);
     }
   }
 }

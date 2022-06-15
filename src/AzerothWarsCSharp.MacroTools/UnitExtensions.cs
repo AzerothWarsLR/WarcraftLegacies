@@ -9,6 +9,11 @@ namespace AzerothWarsCSharp.MacroTools
   {
     private const float HERO_DROP_DIST = 50; //The radius in which heroes spread out items when they drop them
 
+    public static void Remove(this unit unit)
+    {
+      RemoveUnit(unit);
+    }
+    
     public static void IssueOrder(this unit unit, string order, Point target)
     {
       IssuePointOrder(unit, order, target.X, target.Y);
@@ -24,6 +29,11 @@ namespace AzerothWarsCSharp.MacroTools
       return new Point(GetUnitX(unit), GetUnitY(unit));
     }
 
+    public static void SetOwner(this unit unit, player whichPlayer)
+    {
+      SetUnitOwner(unit, whichPlayer, true);
+    }
+    
     public static player OwningPlayer(this unit unit)
     {
       return GetOwningPlayer(unit);

@@ -117,11 +117,11 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem
 
       if (ResearchId != 0) SetPlayerTechResearched(whichFaction.Player, ResearchId, 1);
 
-      OnComplete(whichFaction);
       foreach (var objective in _objectives)
       {
         objective.ProgressLocked = true;
       }
+      OnComplete(whichFaction);
     }
 
     private void Fail(Faction whichFaction)

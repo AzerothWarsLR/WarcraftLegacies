@@ -37,6 +37,8 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
           _rescueUnits.Add(unit);
           SetUnitInvulnerable(unit, true);
         }
+
+      Required = true;
     }
 
     //Todo: bad flavour
