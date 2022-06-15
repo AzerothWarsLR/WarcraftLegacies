@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.MacroTools.Buffs
   /// <summary>
   /// Units with this buff use oil instead of mana.
   /// </summary>
-  public sealed class OilUserBuff : PassiveBuff
+  public class OilUserBuff : PassiveBuff
   {
     private readonly OilPower _oilPower;
     private trigger? _castTrigger;
