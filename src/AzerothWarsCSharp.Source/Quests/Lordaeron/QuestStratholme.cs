@@ -19,9 +19,9 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       "The Blackrock clan has taken over Alterac, they must be eliminated for the safety of Lordaeron",
       "ReplaceableTextures\\CommandButtons\\BTNChaosBlademaster.blp")
     {
-      AddObjective(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("o00B")))); //Jubei
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n019"))));
-      AddObjective(new ObjectiveUpgrade(FourCC("hcas"), FourCC("htow")));
+      AddObjective(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(Constants.UNIT_O00B_JUBEI_THOS_LEGION_DEMI)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N019_ALTERAC_MOUNTAINS_20GOLD_MIN)));
+      AddObjective(new ObjectiveUpgrade(Constants.UNIT_HCAS_CASTLE, Constants.UNIT_HTOW_TOWN_HALL));
       AddObjective(new ObjectiveExpire(1470));
       AddObjective(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
@@ -30,6 +30,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
+      Required = true;
     }
 
     //Todo: bad flavour
