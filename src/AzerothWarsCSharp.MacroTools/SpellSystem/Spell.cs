@@ -1,4 +1,5 @@
-﻿using static War3Api.Common;
+﻿using WCSharp.Shared.Data;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.SpellSystem
 {
@@ -17,9 +18,12 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
 
     public virtual void OnStop(unit caster)
     {
-      
     }
-    
+
+    public virtual void OnStartCast(unit caster, unit target, Point targetPoint)
+    {
+    }
+
     public virtual void OnCast(unit caster, unit target, float targetX, float targetY)
     {
     }

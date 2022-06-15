@@ -24,6 +24,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private Faction? _faction;
 
     private float _partialGold; //Just used for income calculations
+    private float _partialLumber;
 
     private PlayerData(player player)
     {
@@ -93,6 +94,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         FactionChange?.Invoke(this, new PlayerFactionChangeEventArgs(Player, prevFaction));
       }
     }
+
+    public float LumberIncome { get; set; }
 
     /// <summary>
     ///   Gold per second gained from all sources.
@@ -197,6 +200,24 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
         _partialGold -= 1;
         SetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD, GetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD) + 1);
+      }
+    }
+
+    public void AddLumber(float x)
+    {
+      var fullLumber = (float) Math.Floor(x);
+      var remainderLumber = x - fullLumber;
+
+      SetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER,
+        GetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER) + R2I(fullLumber));
+      _partialLumber += remainderLumber;
+
+      while (true)
+      {
+        if (_partialLumber < 1) break;
+
+        _partialLumber -= 1;
+        SetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER) + 1);
       }
     }
 
