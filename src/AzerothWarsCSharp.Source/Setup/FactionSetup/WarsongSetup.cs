@@ -3,7 +3,7 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
-  public class WarsongSetup
+  public static class WarsongSetup
   {
     public static Faction FACTION_WARSONG { get; private set; }
     
@@ -11,8 +11,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
     {
       FACTION_WARSONG = new Faction("Warsong", PLAYER_COLOR_ORANGE, "|c00ff8000",
         "ReplaceableTextures\\CommandButtons\\BTNHellScream.blp");
-      Faction f = FACTION_WARSONG;
-      f.Team = TeamSetup.Horde;
+      var f = FACTION_WARSONG;
       f.UndefeatedResearch = FourCC("R05W");
       f.StartingGold = 150;
       f.StartingLumber = 500;

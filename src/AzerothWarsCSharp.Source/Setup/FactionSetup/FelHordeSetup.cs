@@ -9,15 +9,12 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 
     public static void Setup()
     {
-      Faction f;
-
       FactionFelHorde = new Faction("Fel Horde", PLAYER_COLOR_GREEN, "|c0020c000",
         "ReplaceableTextures\\CommandButtons\\BTNPitLord.blp")
       {
         UndefeatedResearch = FourCC("R05L"),
         StartingGold = 300,
         StartingLumber = 600,
-        Team = TeamSetup.Legion
       };
 
       FactionFelHorde.ModObjectLimit(FourCC("o02Y"), Faction.UNLIMITED); //Great Hall

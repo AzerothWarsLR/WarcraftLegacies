@@ -17,7 +17,6 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       {
         StartingGold = 150,
         StartingLumber = 500,
-        Team = TeamSetup.OldGods
       };
 
       //Units

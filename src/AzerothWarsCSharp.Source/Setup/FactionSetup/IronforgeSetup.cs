@@ -15,7 +15,6 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       FACTION_IRONFORGE = new Faction("Ironforge", PLAYER_COLOR_YELLOW, "|C00FFFC01",
         "ReplaceableTextures\\CommandButtons\\BTNHeroMountainKing.blp");
       f = FACTION_IRONFORGE;
-      f.Team = TeamSetup.Alliance;
       f.UndefeatedResearch = FourCC("R05T");
       f.StartingGold = 150;
       f.StartingLumber = 500;

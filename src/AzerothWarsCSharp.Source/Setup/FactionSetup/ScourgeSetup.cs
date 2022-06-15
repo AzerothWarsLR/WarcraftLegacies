@@ -13,7 +13,6 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       FactionScourge = new Faction("Scourge", PLAYER_COLOR_PURPLE, "|c00540081",
         "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp")
       {
-        Team = TeamSetup.Legion,
         UndefeatedResearch = FourCC("R05K"),
         StartingGold = 150,
         StartingLumber = 500
