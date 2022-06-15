@@ -4,6 +4,7 @@ using AzerothWarsCSharp.MacroTools.Frames.Books.Powers;
 using AzerothWarsCSharp.MacroTools.Mechanics;
 using AzerothWarsCSharp.MacroTools.UserInterface;
 using AzerothWarsCSharp.Source.ArtifactBehaviour;
+using AzerothWarsCSharp.Source.Game_Logic;
 using AzerothWarsCSharp.Source.Game_Logic.GameEnd;
 using AzerothWarsCSharp.Source.Hints;
 using AzerothWarsCSharp.Source.Mechanics.Quelthalas;
@@ -45,6 +46,7 @@ namespace AzerothWarsCSharp.Source.Setup
       PreplacedUnitSystem.Shutdown();
       QuestMenuSetup.Setup();
       DialogueSetup.Setup();
+      OpenAllianceVote.Setup();
     }
   }
 }
