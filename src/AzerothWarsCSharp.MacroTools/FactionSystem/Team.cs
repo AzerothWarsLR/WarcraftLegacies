@@ -16,7 +16,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public Team(string name)
     {
       Name = name;
-      TeamCreate?.Invoke(this, this);
     }
 
     public int ControlPointCount
@@ -42,10 +41,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     ///   Music that plays when this <see cref="Team" /> wins the game.
     /// </summary>
     public string? VictoryMusic { get; init; }
-
-    public static event EventHandler<Team>? TeamCreate;
-
-    public static event EventHandler<Team>? TeamSizeChange;
 
     /// <summary>
     ///   Creates a <see cref="force" /> containing all <see cref="player" />s within this <see cref="Team" />.
@@ -76,7 +71,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
       _members.Remove(whichPlayer);
       UnallyPlayer(whichPlayer);
-      TeamSizeChange?.Invoke(this, this);
     }
 
     internal void AddPlayer(player whichPlayer)
@@ -85,7 +79,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         throw new Exception($"Attempted to add already present player {GetPlayerName(whichPlayer)} to team {Name})");
       _members.Add(whichPlayer);
       AllyPlayer(whichPlayer);
-      TeamSizeChange?.Invoke(this, this);
     }
 
     /// <summary>

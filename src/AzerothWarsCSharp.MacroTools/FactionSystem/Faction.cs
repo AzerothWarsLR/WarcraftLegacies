@@ -222,9 +222,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     ///   Fires when the <see cref="Faction" /> changes its name.
     /// </summary>
     public event EventHandler<FactionNameChangeEventArgs>? NameChanged;
-
-    public static event EventHandler<FactionChangeTeamEventArgs>? TeamLeft;
-    public static event EventHandler<Faction>? TeamJoin;
+    
     public static event EventHandler<Faction>? GameLeave;
     public static event EventHandler<Faction>? IconChanged;
     public static event EventHandler<Faction>? StatusChanged;

@@ -9,6 +9,9 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
   /// </summary>
   internal sealed class PlayerData
   {
+    public static event EventHandler<PlayerChangeTeamEventArgs>? PlayerLeftTeam;
+    public static event EventHandler<Team>? PlayerJoinedTeam;
+    
     private static readonly Dictionary<int, PlayerData> ById = new();
     private readonly Dictionary<int, int> _objectLevels = new();
 
@@ -37,8 +40,16 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       get => _team;
       set
       {
-        _team?.RemovePlayer(Player);
-        value?.AddPlayer(Player);
+        if (_team != null)
+        {
+          _team?.RemovePlayer(Player);
+          PlayerLeftTeam?.Invoke(this, new PlayerChangeTeamEventArgs(Player, _team));
+        }
+        if (value != null)
+        {
+          value.AddPlayer(Player);
+          PlayerJoinedTeam?.Invoke(this, value);
+        }
         _team = value;
       }
     }
@@ -51,7 +62,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       get => _faction;
       set
       {
-        Faction prevFaction = Faction;
+        var prevFaction = Faction;
 
         //Unapply old faction
         if (_faction != null)
