@@ -122,7 +122,7 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
       UpdateHeaderRow();
       row += 1;
       foreach (var team in FactionManager.GetAllTeams())
-        if (team.PlayerCount > 0)
+        if (team.Size > 0)
         {
           _rowsByTeam[team] = row;
           UpdateTeamRow(team);

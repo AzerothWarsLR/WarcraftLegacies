@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Commands
         if (FactionManager.TeamWithNameExists(content))
         {
           Team targetTeam = FactionManager.GetTeamByName(content);
-          if (targetTeam.IsFactionInvited(triggerPlayer.GetFaction()))
+          if (targetTeam.IsPlayerInvited(triggerPlayer.GetFaction()))
           {
             triggerPlayer.GetFaction().Team = targetTeam;
             DisplayTextToPlayer(triggerPlayer, 0, 0, $"You have joined {targetTeam.Name}.");

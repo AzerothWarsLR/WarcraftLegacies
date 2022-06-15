@@ -339,7 +339,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// </summary>
     public void Unally()
     {
-      if (Team?.PlayerCount > 1)
+      if (Team?.Size > 1)
       {
         string newTeamName = Name + " Pact";
         if (FactionManager.TeamWithNameExists(newTeamName))
@@ -463,7 +463,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         var allyHeroes = new GroupWrapper().EnumUnitsOfPlayer(ally).EmptyToList()
           .FindAll(unit => IsUnitType(unit, UNIT_TYPE_HERO));
         foreach (var hero in allyHeroes)
-          AddHeroXP(hero, R2I(_xp / (_team.PlayerCount - 1) / allyHeroes.Count * XP_TRANSFER_PERCENT), true);
+          AddHeroXP(hero, R2I(_xp / (_team.Size - 1) / allyHeroes.Count * XP_TRANSFER_PERCENT), true);
       }
 
       _xp = 0;
@@ -512,7 +512,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         else if (loopUnitType.Meta == false)
         {
           SetUnitOwner(unit,
-            Team.PlayerCount > 1
+            Team.Size > 1
               ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count)]
               : Player(GetBJPlayerNeutralVictim()), false);
         }
@@ -525,7 +525,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// </summary>
     private void Leave()
     {
-      if (Team?.PlayerCount > 1 && GameTime.GetGameTime() > 60)
+      if (Team?.Size > 1 && GameTime.GetGameTime() > 60)
       {
         List<player> eligiblePlayers = Team.GetAllPlayers();
         eligiblePlayers.Remove(Player);

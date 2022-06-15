@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Blight
       var parameters = BlightParameters[triggerUnit];
 
       if (_blightFaction?.Team is not null && _blightFaction.Player is not null &&
-          _blightFaction.Team.ContainsPlayer(GetOwningPlayer(GetKillingUnit())))
+          _blightFaction.Team.Contains(GetOwningPlayer(GetKillingUnit())))
       {
         GeneralHelpers.SetBlightRadius(_blightFaction.Player, new Point(GetUnitX(triggerUnit), GetUnitY(triggerUnit)),
           parameters.PrimaryBlightRadius, true);
