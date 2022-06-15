@@ -18,6 +18,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private float _bonusIncome;
     private int _controlPointCount;
 
+    private Team? _team;
     private Faction? _faction;
 
     private float _partialGold; //Just used for income calculations
@@ -29,6 +30,21 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     public player Player { get; }
 
+    /// <summary>
+    /// Controls who the <see cref="player"/> is allied to.
+    /// </summary>
+    public Team? Team
+    {
+      get
+      {
+        return _team;
+      }
+      set
+      {
+        _team = value;
+      }
+    }
+    
     /// <summary>
     ///   Controls name, available objects, color, and icon.
     /// </summary>
