@@ -48,6 +48,19 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private int _undefeatedResearch;
     private int _xp; //Stored by DistributeUnits and given out again by DistributeResources
 
+    public Faction(string name, playercolor playerColor, string prefixCol, string icon)
+    {
+      _name = name;
+      PlayerColor = playerColor;
+      PrefixCol = prefixCol;
+      _icon = icon;
+    }
+    
+    /// <summary>
+    /// Displayed to the <see cref="Faction"/> when the game starts.
+    /// </summary>
+    public string IntroText { get; init; }
+    
     /// <summary>
     ///   Fired when the <see cref="Faction" /> gains a <see cref="Power" />.
     /// </summary>
@@ -59,14 +72,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public EventHandler<FactionPowerEventArgs>? PowerRemoved;
 
     public EventHandler<Faction>? ScoreStatusChanged;
-
-    public Faction(string name, playercolor playerColor, string prefixCol, string icon)
-    {
-      _name = name;
-      PlayerColor = playerColor;
-      PrefixCol = prefixCol;
-      _icon = icon;
-    }
 
     public int StartingGold { get; set; }
 

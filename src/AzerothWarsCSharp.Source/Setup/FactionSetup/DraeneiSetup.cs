@@ -14,7 +14,14 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       {
         UndefeatedResearch = FourCC("R06E"),
         StartingGold = 150,
-        StartingLumber = 500
+        StartingLumber = 500,
+        IntroText = @"You are playing as the exiled |cff000080Draenei|r.
+
+        You must evacuate your people from Shattrah and migrate North to Tempest Keep, there you will find a valuable goldmine.
+
+        The Fel Horde is mobilizing to wipe out your people, this is a fight you cannot win.
+
+        Escape as soon as you can and  try to save as many Draenei as you can. If you are trapped in Outland by turn 15, it may be too late to save your people."
       };
 
       Draenei.ModObjectLimit(FourCC("o02P"), Faction.UNLIMITED); //Crystal Hall

@@ -9,14 +9,19 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 
     public static void Setup()
     {
-      Faction f;
-
       Dalaran = new Faction("Dalaran", PLAYER_COLOR_PINK, "|c00e55bb0",
         "ReplaceableTextures\\CommandButtons\\BTNJaina.blp")
       {
         UndefeatedResearch = FourCC("R05N"),
         StartingGold = 150,
         StartingLumber = 500,
+        IntroText = @"You are playing as the wise |cffff8080Mages of Dalaran|r.
+
+        Your first order of business is to reclaim Dalaran and Shadowfang Keep, which have been encircled by monsters.
+
+        Once your territory is secured, you will need to prepare for the Plague of Undeath and the invasion of the Burning Legion. Lordaeron will surely need your help.
+
+        Your mages are the finest in Azeroth, be sure to utilize them alongside your heroes to turn the tide of battle."
       };
 
       //Structures

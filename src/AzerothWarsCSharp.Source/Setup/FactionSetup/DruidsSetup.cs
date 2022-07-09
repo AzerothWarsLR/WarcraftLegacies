@@ -9,14 +9,20 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 
     public static void Setup()
     {
-      Faction f;
-
       factionDruids = new Faction("Druids", PLAYER_COLOR_BROWN, "|c004e2a04",
         "ReplaceableTextures\\CommandButtons\\BTNFurion.blp")
       {
         UndefeatedResearch = FourCC("R06E"),
         StartingGold = 150,
-        StartingLumber = 500
+        StartingLumber = 500,
+        IntroText = @"You are playing as the venerable Druids of the Cenarion Circle.
+
+        Without a Hero, you are perilously weak in the beginning. 
+        Awaken Malfurion from his slumber as soon as possible. 
+
+        Once awakened, use his Force of Nature to clear a path through the trees in Ashenvale and summon Cenarius to aid you. 
+
+        The Horde is gathering to burn Ashenvale forest and all within, gather your forces and strike before they can organize their forces."
       };
 
       factionDruids.ModObjectLimit(FourCC("etol"), Faction.UNLIMITED); //Tree of Life

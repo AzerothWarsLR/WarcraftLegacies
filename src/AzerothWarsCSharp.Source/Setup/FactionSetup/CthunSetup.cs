@@ -13,7 +13,14 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNCthunIcon.blp")
       {
         StartingGold = 150,
-        StartingLumber = 500
+        StartingLumber = 500,
+        IntroText = @"You are playing as the Ancient|cffc6b232 Empire of Ahn'Qiraj|r.
+
+        C'thun calls out from the Titan's prison. You must gather your forces and unleash him.
+
+        Your surface goldmine will run out quickly, but there are many underground. Raise an army and swarm the tunnels beneath Ahn'Qiraj to capture them.
+
+        Once you have built up enough resources, unleash the wrath of the Old Gods on the world."
       };
 
       //Units

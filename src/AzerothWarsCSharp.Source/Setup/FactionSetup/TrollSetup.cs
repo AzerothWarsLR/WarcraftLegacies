@@ -3,57 +3,64 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
-  public class TrollSetup
+  public static class TrollSetup
   {
     public static Faction FACTION_TROLL { get; private set; }
-
-
+    
     public static void Setup()
     {
       FACTION_TROLL = new Faction("Zandalar", PLAYER_COLOR_PEACH, "|cffff8c6c",
-        "ReplaceableTextures\\CommandButtons\\BTNHeadHunterBerserker.blp");
-      var f = FACTION_TROLL;
-      f.StartingGold = 150;
-      f.StartingLumber = 500;
+        "ReplaceableTextures\\CommandButtons\\BTNHeadHunterBerserker.blp")
+      {
+        StartingGold = 150,
+        StartingLumber = 500,
+        IntroText = @"You are playing as the mighty |cffe1946cZandalari Empire|r.
 
-      f.ModObjectLimit(FourCC("o03R"), Faction.UNLIMITED); //Great Hall
-      f.ModObjectLimit(FourCC("o03Y"), Faction.UNLIMITED); //Stronghold
-      f.ModObjectLimit(FourCC("o03Z"), Faction.UNLIMITED); //Fortress
-      f.ModObjectLimit(FourCC("o040"), Faction.UNLIMITED); //Altar of Storms
-      f.ModObjectLimit(FourCC("o041"), Faction.UNLIMITED); //Barracks
-      f.ModObjectLimit(FourCC("o042"), Faction.UNLIMITED); //War Mill
-      f.ModObjectLimit(FourCC("o044"), Faction.UNLIMITED); //Tauren Totem
-      f.ModObjectLimit(FourCC("o043"), Faction.UNLIMITED); //Spirit Lodge
-      f.ModObjectLimit(FourCC("o045"), Faction.UNLIMITED); //Orc Burrow
-      f.ModObjectLimit(FourCC("o046"), Faction.UNLIMITED); //Watch Tower
-      f.ModObjectLimit(FourCC("o048"), Faction.UNLIMITED); //Improved Watch Tower
-      f.ModObjectLimit(FourCC("o047"), Faction.UNLIMITED); //Voodoo Lounge
-      f.ModObjectLimit(FourCC("o049"), Faction.UNLIMITED); //Shipyard
-      f.ModObjectLimit(FourCC("o04X"), Faction.UNLIMITED); //Loa Shrine
+        You start off on Zandalar. Raise an army and deal with the uprising in Nazmir, then head West to Crestfall to claim more gold mines. 
 
-      f.ModObjectLimit(FourCC("o04A"), Faction.UNLIMITED); //Peon
-      f.ModObjectLimit(FourCC("h021"), Faction.UNLIMITED); //Grunt
-      f.ModObjectLimit(FourCC("o04D"), Faction.UNLIMITED); //Troll Headhunter
-      f.ModObjectLimit(FourCC("n09E"), 2); //Storm Wyrm
-      f.ModObjectLimit(FourCC("e00Z"), 8); //Direhorn
-      f.ModObjectLimit(FourCC("o04F"), Faction.UNLIMITED); //Troll Witch Doctor
-      f.ModObjectLimit(FourCC("o04G"), Faction.UNLIMITED); //Haruspex
-      f.ModObjectLimit(FourCC("o04E"), 6); //Boneseer
-      f.ModObjectLimit(FourCC("h05D"), Faction.UNLIMITED); //Raptor Rider
-      f.ModObjectLimit(FourCC("o04W"), 24); //Golden Vessel
-      f.ModObjectLimit(FourCC("ojgn"), 6); //Juggernaught
-      f.ModObjectLimit(FourCC("o021"), 12); //Ravager
-      f.ModObjectLimit(FourCC("nftk"), 12); //Warlord
-      f.ModObjectLimit(FourCC("o02K"), 6); //Bear Rider
+        The Kul'tiran Navy is mounting an assault on you from the North, brace for a tough fight and counter-attack. 
 
-      f.ModObjectLimit(FourCC("O026"), 1); //Rasthakan
-      f.ModObjectLimit(FourCC("O01J"), 1); //Zul
-      f.ModObjectLimit(FourCC("U023"), 1); //Hakkar
+        Once the human menace has been dealt with, sail West and help the Horde in Kalimdor."
+      };
 
-      f.ModObjectLimit(FourCC("Rers"), Faction.UNLIMITED); //Resistant Skin
-      f.ModObjectLimit(FourCC("R00H"), Faction.UNLIMITED); //Animal Companion
-      f.ModObjectLimit(FourCC("R070"), Faction.UNLIMITED); //Haruspex Training
-      f.ModObjectLimit(FourCC("R071"), Faction.UNLIMITED); //Hex Training
+      FACTION_TROLL.ModObjectLimit(FourCC("o03R"), Faction.UNLIMITED); //Great Hall
+      FACTION_TROLL.ModObjectLimit(FourCC("o03Y"), Faction.UNLIMITED); //Stronghold
+      FACTION_TROLL.ModObjectLimit(FourCC("o03Z"), Faction.UNLIMITED); //Fortress
+      FACTION_TROLL.ModObjectLimit(FourCC("o040"), Faction.UNLIMITED); //Altar of Storms
+      FACTION_TROLL.ModObjectLimit(FourCC("o041"), Faction.UNLIMITED); //Barracks
+      FACTION_TROLL.ModObjectLimit(FourCC("o042"), Faction.UNLIMITED); //War Mill
+      FACTION_TROLL.ModObjectLimit(FourCC("o044"), Faction.UNLIMITED); //Tauren Totem
+      FACTION_TROLL.ModObjectLimit(FourCC("o043"), Faction.UNLIMITED); //Spirit Lodge
+      FACTION_TROLL.ModObjectLimit(FourCC("o045"), Faction.UNLIMITED); //Orc Burrow
+      FACTION_TROLL.ModObjectLimit(FourCC("o046"), Faction.UNLIMITED); //Watch Tower
+      FACTION_TROLL.ModObjectLimit(FourCC("o048"), Faction.UNLIMITED); //Improved Watch Tower
+      FACTION_TROLL.ModObjectLimit(FourCC("o047"), Faction.UNLIMITED); //Voodoo Lounge
+      FACTION_TROLL.ModObjectLimit(FourCC("o049"), Faction.UNLIMITED); //Shipyard
+      FACTION_TROLL.ModObjectLimit(FourCC("o04X"), Faction.UNLIMITED); //Loa Shrine
+
+      FACTION_TROLL.ModObjectLimit(FourCC("o04A"), Faction.UNLIMITED); //Peon
+      FACTION_TROLL.ModObjectLimit(FourCC("h021"), Faction.UNLIMITED); //Grunt
+      FACTION_TROLL.ModObjectLimit(FourCC("o04D"), Faction.UNLIMITED); //Troll Headhunter
+      FACTION_TROLL.ModObjectLimit(FourCC("n09E"), 2); //Storm Wyrm
+      FACTION_TROLL.ModObjectLimit(FourCC("e00Z"), 8); //Direhorn
+      FACTION_TROLL.ModObjectLimit(FourCC("o04F"), Faction.UNLIMITED); //Troll Witch Doctor
+      FACTION_TROLL.ModObjectLimit(FourCC("o04G"), Faction.UNLIMITED); //Haruspex
+      FACTION_TROLL.ModObjectLimit(FourCC("o04E"), 6); //Boneseer
+      FACTION_TROLL.ModObjectLimit(FourCC("h05D"), Faction.UNLIMITED); //Raptor Rider
+      FACTION_TROLL.ModObjectLimit(FourCC("o04W"), 24); //Golden Vessel
+      FACTION_TROLL.ModObjectLimit(FourCC("ojgn"), 6); //Juggernaught
+      FACTION_TROLL.ModObjectLimit(FourCC("o021"), 12); //Ravager
+      FACTION_TROLL.ModObjectLimit(FourCC("nftk"), 12); //Warlord
+      FACTION_TROLL.ModObjectLimit(FourCC("o02K"), 6); //Bear Rider
+
+      FACTION_TROLL.ModObjectLimit(FourCC("O026"), 1); //Rasthakan
+      FACTION_TROLL.ModObjectLimit(FourCC("O01J"), 1); //Zul
+      FACTION_TROLL.ModObjectLimit(FourCC("U023"), 1); //Hakkar
+
+      FACTION_TROLL.ModObjectLimit(FourCC("Rers"), Faction.UNLIMITED); //Resistant Skin
+      FACTION_TROLL.ModObjectLimit(FourCC("R00H"), Faction.UNLIMITED); //Animal Companion
+      FACTION_TROLL.ModObjectLimit(FourCC("R070"), Faction.UNLIMITED); //Haruspex Training
+      FACTION_TROLL.ModObjectLimit(FourCC("R071"), Faction.UNLIMITED); //Hex Training
 
       FactionManager.Register(FACTION_TROLL);
     }

@@ -14,7 +14,14 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNAcolyte.blp")
       {
         StartingGold = 0,
-        StartingLumber = 100
+        StartingLumber = 100,
+        IntroText = @"You are playing as the insidious Cult of the Damned.
+
+        Your first objective is to use your three Cultists of the Damned to corrupt buildings in Lordaeron. These corrupted buildings will provide income for you until the plague is unleashed.
+
+        You are enslaved to the Scourge and Burning Legion, but you can break free from their shackles.
+
+        To do so, march North to Quel'thalas and capture the Sunwell. This will unlock Sylvanas, allowing you to reform as the Forsaken and declare independence from the Lich King."
       };
 
       //Buildings
