@@ -18,7 +18,7 @@ namespace AzerothWarsCSharp.MacroTools.Augments
 
       public override float GetWeight(player whichPlayer)
       {
-         return 5;
+         return whichPlayer.GetLumberIncome() > 10 ? 0 : 5;
       }
 
       public override void OnAdd(Faction whichFaction)
