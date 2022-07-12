@@ -6,6 +6,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
    {
       public static void Setup()
       {
+         AugmentSystem.Register(new TitanicStrengthAugment(2.5f));
          AugmentSystem.Register(new IncomePowerAugment(10));
          AugmentSystem.Register(new IncomePowerAugment(15));
          AugmentSystem.Register(new IncomePowerAugment(20));
