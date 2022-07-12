@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
             var augmentSelectionWindow = new AugmentPage
             {
                Visible = true,
-               Width = 0.3f,
+               Width = 0.5f,
                Height = 0.39f
             };
             augmentSelectionWindow.SetAbsPoint(FRAMEPOINT_CENTER, 0.4f, 0.36f);

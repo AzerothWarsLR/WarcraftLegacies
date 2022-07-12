@@ -10,8 +10,8 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Augments
     
       public AugmentPage()
       {
-         Rows = 3;
-         Columns = 1;
+         Rows = 1;
+         Columns = 3;
          YOffsetTop = 0.025f;
          YOffsetBot = 0.05f;
       }
