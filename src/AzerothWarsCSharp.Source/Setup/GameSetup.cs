@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.Augments;
 using AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem;
 using AzerothWarsCSharp.MacroTools.Frames.Books.Powers;
 using AzerothWarsCSharp.MacroTools.Mechanics;
@@ -47,6 +48,7 @@ namespace AzerothWarsCSharp.Source.Setup
       QuestMenuSetup.Setup();
       DialogueSetup.Setup();
       OpenAllianceVote.Setup();
+      AugmentSetup.Setup();
     }
   }
 }
