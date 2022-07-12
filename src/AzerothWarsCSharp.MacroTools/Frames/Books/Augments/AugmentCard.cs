@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Augments
       private readonly Augment _augment;
       private readonly TextFrame _descriptionFrame;
       
-      public event EventHandler<AugmentCard> OnChoose;
+      public event EventHandler<AugmentCard>? OnChoose;
       
       public AugmentCard(Augment augment, Frame parent) : base(parent, BoxWidth, BoxHeight)
       {
@@ -36,15 +36,6 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Augments
          title.SetPoint(FRAMEPOINT_TOP, icon, FRAMEPOINT_BOTTOM, 0, -0.015f);
          AddFrame(title);
          
-         _descriptionFrame = new TextFrame("AugmentDescription", this, 0, 0)
-         {
-            Text = augment.Description
-         };
-         _descriptionFrame.SetPoint(FRAMEPOINT_LEFT, this, FRAMEPOINT_LEFT, 0.014f, 0);
-         _descriptionFrame.SetPoint(FRAMEPOINT_RIGHT, this, FRAMEPOINT_RIGHT, -0.014f, 0);
-         _descriptionFrame.SetPoint(FRAMEPOINT_TOP, title, FRAMEPOINT_BOTTOM, 0, -0.002f);
-         AddFrame(_descriptionFrame);
-
          var buttonFrame = new Button("ScriptDialogButton", this, 0, 0)
          {
             Width = 0.11f,
@@ -54,12 +45,29 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Augments
          };
          buttonFrame.SetPoint(FRAMEPOINT_BOTTOM, this, FRAMEPOINT_BOTTOM, 0, 0.01f);
          AddFrame(buttonFrame);
+         
+         _descriptionFrame = new TextFrame("AugmentDescription", this, 0, 0)
+         {
+            Text = augment.Description
+         };
+         _descriptionFrame.SetPoint(FRAMEPOINT_LEFT, this, FRAMEPOINT_LEFT, 0.014f, 0);
+         _descriptionFrame.SetPoint(FRAMEPOINT_RIGHT, this, FRAMEPOINT_RIGHT, -0.014f, 0);
+         _descriptionFrame.SetPoint(FRAMEPOINT_TOP, title, FRAMEPOINT_BOTTOM, 0, -0.008f);
+         _descriptionFrame.SetPoint(FRAMEPOINT_BOTTOM, buttonFrame, FRAMEPOINT_TOP, 0, -0.002f);
+         AddFrame(_descriptionFrame);
       }
 
       private void Choose(player triggerplayer)
       {
-         triggerplayer.GetFaction()?.AddAugment(_augment);
-         OnChoose?.Invoke(this, this);
+         try
+         {
+            triggerplayer.GetFaction()?.AddAugment(_augment);
+            OnChoose?.Invoke(this, this);
+         }
+         catch (Exception ex)
+         {
+            Console.Write(ex);
+         }
       }
    }
 }

@@ -2,7 +2,7 @@ Frame "TEXT" "AugmentDescription" {
     DecorateFileNames,
     FrameFont "EscMenuTextFont", 0.010, "",
     FontJustificationH JUSTIFYCENTER,
-    FontJustificationV JUSTIFYMIDDLE,
+    FontJustificationV JUSTIFYTOP,
     FontFlags "FIXEDSIZE",
     FontColor 1.0 1.0 1.0 1.0,
     FontHighlightColor 1.0 1.0 1.0 1.0,
