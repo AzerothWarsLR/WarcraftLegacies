@@ -15,13 +15,20 @@ namespace AzerothWarsCSharp.Source.Game_Logic
          {
             DisplayTextToPlayer(player, 0, 0, player.GetFaction()?.IntroText);
          }
+
          DestroyTimer(GetExpiredTimer());
       }
-      
+
       public static void Setup(float timeout)
       {
          var timer = CreateTimer();
          TimerStart(timer, timeout, false, Display);
+         FogEnable(false);
+         FogMaskEnable(false);
+         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "|cffffcc00Warcraft Legacies|r");
+         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, @"|cffaaaaaaJoin our Discord:|r discord.gg/pnWZs69
+                                                     |cffff0000Support our Patreon:|r https://www.patreon.com/lordsebas");
+         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "");
       }
    }
 }
