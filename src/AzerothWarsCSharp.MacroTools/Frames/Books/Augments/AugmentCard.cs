@@ -66,7 +66,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Augments
          }
          catch (Exception ex)
          {
-            Console.Write(ex);
+            Console.WriteLine(ex);
          }
       }
    }

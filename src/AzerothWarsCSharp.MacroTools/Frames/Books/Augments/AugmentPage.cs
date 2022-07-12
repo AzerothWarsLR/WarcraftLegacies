@@ -54,7 +54,14 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Augments
       
       private void OnChoose(object? sender, AugmentCard e)
       {
-         Dispose();
+         try
+         {
+            Dispose();
+         }
+         catch (Exception ex)
+         {
+            Console.WriteLine(ex);
+         }
       }
    }
 }
