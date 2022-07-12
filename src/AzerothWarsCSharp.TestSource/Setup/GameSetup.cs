@@ -39,6 +39,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
       HintSetup.Setup();
       PreplacedUnitSystem.Shutdown();
       DialogueSetup.Setup();
+      AugmentSetup.Setup();
     }
   }
 }

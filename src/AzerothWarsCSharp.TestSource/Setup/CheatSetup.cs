@@ -31,6 +31,8 @@ namespace AzerothWarsCSharp.TestSource.Setup
       CheatUncontrol.Setup();
       CheatVision.Setup();
       CheatCompleteQuest.Setup();
+      CheatAddRandomAugment.Setup();
+      CheatAugment.Setup();
     }
   }
 }
