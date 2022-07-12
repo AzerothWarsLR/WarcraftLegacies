@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
       }
       catch (Exception ex)
       {
-        Console.Write(ex);
+        Console.WriteLine(ex);
       }
     }
 
