@@ -41,6 +41,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Augments
          Cards.Add(augmentCard);
          AddFrame(augmentCard);
          _cardsByAugment.Add(augment, augmentCard);
+         augmentCard.OnChoose += OnChoose;
       }
 
       public void AddAugments(IEnumerable<Augment> augments)
@@ -49,6 +50,11 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Augments
          {
             AddAugment(augment);
          }
+      }
+      
+      private void OnChoose(object? sender, AugmentCard e)
+      {
+         Dispose();
       }
    }
 }

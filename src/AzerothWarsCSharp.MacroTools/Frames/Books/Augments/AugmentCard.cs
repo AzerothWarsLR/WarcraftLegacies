@@ -1,4 +1,6 @@
-﻿using AzerothWarsCSharp.MacroTools.Augments;
+﻿using System;
+using AzerothWarsCSharp.MacroTools.Augments;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Frames.Books.Augments
@@ -9,7 +11,9 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Augments
       private const float BoxHeight = 0.28f;
       private readonly Augment _augment;
       private readonly TextFrame _descriptionFrame;
-
+      
+      public event EventHandler<AugmentCard> OnChoose;
+      
       public AugmentCard(Augment augment, Frame parent) : base(parent, BoxWidth, BoxHeight)
       {
          _augment = augment;
@@ -45,10 +49,17 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Augments
          {
             Width = 0.11f,
             Height = 0.026f,
-            Text = "Choose"
+            Text = "Choose",
+            OnClick = Choose
          };
          buttonFrame.SetPoint(FRAMEPOINT_BOTTOM, this, FRAMEPOINT_BOTTOM, 0, 0.01f);
          AddFrame(buttonFrame);
+      }
+
+      private void Choose(player triggerplayer)
+      {
+         triggerplayer.GetFaction()?.AddAugment(_augment);
+         OnChoose?.Invoke(this, this);
       }
    }
 }
