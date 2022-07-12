@@ -9,6 +9,8 @@ namespace AzerothWarsCSharp.TestSource.Setup
          AugmentSystem.Register(new IncomePowerAugment(10));
          AugmentSystem.Register(new IncomePowerAugment(15));
          AugmentSystem.Register(new IncomePowerAugment(20));
+         AugmentSystem.Register(new LumberIncomeAugment(7));
+         AugmentSystem.Register(new LumberIncomeAugment(1400));
       }
    }
 }
