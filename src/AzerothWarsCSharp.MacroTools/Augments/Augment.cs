@@ -8,9 +8,19 @@ namespace AzerothWarsCSharp.MacroTools.Augments
    /// </summary>
    public abstract class Augment
    {
-      public string IconName { get; init; } = "";
-      
-      public string IconPath => $@"ReplaceableTextures\CommandButtons\BTN{IconName}.blp";
+      private readonly string? _iconName;
+
+      protected string IconName
+      {
+         get => _iconName ?? "Peasant";
+         init
+         {
+            _iconName = value;
+            IconPath = $@"ReplaceableTextures\CommandButtons\BTN{IconName}.blp";
+         }
+      }
+
+      public string? IconPath { get; protected init; }
 
       public string Name { get; init; } = "DefaultName";
 

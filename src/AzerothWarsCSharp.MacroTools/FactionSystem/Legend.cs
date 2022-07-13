@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
@@ -35,6 +36,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public Legend()
     {
       PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, OnUnitTrain);
+    }
+
+    public static ReadOnlyCollection<Legend> GetAllLegends()
+    {
+      return AllLegends.AsReadOnly();
     }
 
     public bool EnableMessages { get; set; }
