@@ -43,12 +43,13 @@ namespace AzerothWarsCSharp.Source.Setup
       WaygateManager.Setup(Constants.UNIT_N0AO_WAY_GATE_DALARAN);
       BlightSystem.Setup(ScourgeSetup.FactionScourge);
       BlightSetup.Setup();
-      PreplacedUnitSystem.Shutdown();
+      CinematicMode.Start(59);
       QuestMenuSetup.Setup();
       DialogueSetup.Setup();
       DisplayIntroText.Setup(10);
       GameSettings.Setup();
       InfoQuests.Setup();
+      PreplacedUnitSystem.Shutdown();
     }
   }
 }

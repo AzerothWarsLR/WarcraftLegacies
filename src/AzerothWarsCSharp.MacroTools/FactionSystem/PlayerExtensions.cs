@@ -5,6 +5,34 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
   public static class PlayerExtensions
   {
+    public static void ApplyCameraField(this player whichPlayer, camerafield whichField, float value, float duration)
+    {
+      if (GetLocalPlayer() != whichPlayer) return;
+      SetCameraField(whichField, value, duration);
+    }
+    
+    /// <summary>
+    /// Changes the player's view to come out of a certain camera.
+    /// </summary>
+    public static void SetupCamera(this player whichPlayer, camerasetup whichSetup, bool doPan, float duration)
+    {
+      if (GetLocalPlayer() != whichPlayer) return;
+      CameraSetupApplyForceDuration(whichSetup, doPan, duration);
+    }
+    
+    /// <summary>
+    /// Prevents the player from moving their camera out of the provided area.
+    /// </summary>
+    public static void SetCameraLimits(this player whichPlayer, rect rect)
+    {
+      if (GetLocalPlayer() != whichPlayer) return;
+      var minX = GetRectMinX(rect);
+      var minY = GetRectMinY(rect);
+      var maxX = GetRectMaxX(rect);
+      var maxY = GetRectMaxY(rect);
+      SetCameraBounds(minX, minY, minX, maxY, maxX, maxY, maxX, minY);
+    }
+
     public static void SetColor(this player whichPlayer, playercolor color, bool changeExisting)
     {
       SetPlayerColor(whichPlayer, color);
@@ -121,7 +149,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     {
       PlayerData.ByHandle(player).Team = whichTeam;
     }
-    
+
     public static Faction? GetFaction(this player player)
     {
       return PlayerData.ByHandle(player).Faction;

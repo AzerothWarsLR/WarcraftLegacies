@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
     {
       PosUnit = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), FourCC("u00X"), 0, 0, 0);
     }
-
+    
     public static void CameraSetEarthquakeNoise(float magnitude)
     {
       var richter = magnitude;

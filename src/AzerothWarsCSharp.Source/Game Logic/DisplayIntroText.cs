@@ -23,8 +23,6 @@ namespace AzerothWarsCSharp.Source.Game_Logic
       {
          var timer = CreateTimer();
          TimerStart(timer, timeout, false, Display);
-         FogEnable(false);
-         FogMaskEnable(false);
          DisplayTimedTextToPlayer(GetLocalPlayer(), 0, 0, 51,@"|cffffcc00Warcraft Legacies|r
 |cffaaaaaaJoin our Discord:|r discord.gg/pnWZs69
 |cffff0000Support our Patreon:|r https://www.patreon.com/lordsebas
