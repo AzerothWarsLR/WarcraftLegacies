@@ -48,6 +48,7 @@ namespace AzerothWarsCSharp.Source.Setup
       DialogueSetup.Setup();
       DisplayIntroText.Setup(10);
       GameSettings.Setup();
+      InfoQuests.Setup();
     }
   }
 }
