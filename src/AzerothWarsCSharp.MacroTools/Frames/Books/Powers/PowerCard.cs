@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
       icon.SetPoint(FRAMEPOINT_LEFT, this, FRAMEPOINT_LEFT, 0.015f, -0.0090f);
       AddFrame(icon);
 
-      var title = new TextFrame("ArtifactItemTitle", this, 0, 0)
+      var title = new TextFrame("ArtifactItemTitle", this, 0)
       {
         Text = power.Name,
         Width = BOX_WIDTH - 0.04f,
@@ -31,7 +31,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
       title.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_CENTER, 0, 0.0255f);
       AddFrame(title);
 
-      _textFrame = new TextFrame("ArtifactItemOwnerText", this, 0, 0)
+      _textFrame = new TextFrame("ArtifactItemOwnerText", this, 0)
       {
         Text = power.Description
       };

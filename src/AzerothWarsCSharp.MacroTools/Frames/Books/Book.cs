@@ -24,20 +24,20 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
       /// <param name="bottomButtonXOffset">How far the Previous and Next buttons should be from the left side of the Book.</param>
       /// <param name="bottomButtonYOffset">How far the Previous and Next buttons should be from the bottom side of the Book.</param>
       protected Book(float width, float height, float bottomButtonXOffset, float bottomButtonYOffset) : base(
-         "ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0, 0)
+         "ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0)
       {
          Width = width;
          Height = height;
          Visible = false;
-
-         _launcher = new Button("ScriptDialogButton", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0))
+         
+         _launcher = new Button("ScriptDialogButton", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0)
          {
             Width = 0.09f,
             Height = 0.025f,
             OnClick = OpenFirstPage
          };
       
-         var exitButton = new Button("ScriptDialogButton", this, 0, 0)
+         var exitButton = new Button("ScriptDialogButton", this, 0)
          {
             Width = 0.03f,
             Height = 0.03f,
@@ -47,7 +47,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
          exitButton.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOPRIGHT, -0.015f, -0.015f);
          AddFrame(exitButton);
       
-         _nextButton = new Button("ScriptDialogButton", this, 0, 0)
+         _nextButton = new Button("ScriptDialogButton", this, 0)
          {
             Width = 0.09f,
             Height = 0.037f,
@@ -59,7 +59,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
             bottomButtonYOffset);
          AddFrame(_nextButton);
       
-         _previousButton = new Button("ScriptDialogButton", this, 0, 0)
+         _previousButton = new Button("ScriptDialogButton", this, 0)
          {
             Width = 0.09f,
             Height = 0.037f,
@@ -71,7 +71,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
             bottomButtonYOffset);
          AddFrame(_previousButton);
       
-         _title = new TextFrame("ArtifactMenuTitle", this, 0, 0)
+         _title = new TextFrame("ArtifactMenuTitle", this, 0)
          {
             Text = "Artifacts"
          };
