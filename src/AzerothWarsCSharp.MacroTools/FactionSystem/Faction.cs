@@ -196,6 +196,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         ApplyObjects();
         ApplyPowers();
         ShowAllQuests();
+        SetPlayerState(Player, PLAYER_STATE_FOOD_CAP_CEILING, _foodMaximum);
       }
     }
 
