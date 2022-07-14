@@ -34,6 +34,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     ///   How much experience is transferred from heroes that leave the game.
     /// </summary>
     private const float XpTransferPercent = 100;
+    
+    /// <summary>
+    /// The amount of food <see cref="Faction"/>s can have by default.
+    /// </summary>
+    private const int FoodMaximumDefault = 150;
 
     private readonly int _defeatedResearch;
 
@@ -47,6 +52,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private ScoreStatus _scoreStatus = ScoreStatus.Undefeated;
     private int _undefeatedResearch;
     private int _xp; //Stored by DistributeUnits and given out again by DistributeResources
+    private int _foodMaximum;
 
     public Faction(string name, playercolor playerColor, string prefixCol, string icon)
     {
@@ -54,6 +60,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       PlayerColor = playerColor;
       PrefixCol = prefixCol;
       _icon = icon;
+      FoodMaximum = FoodMaximumDefault;
     }
     
     /// <summary>
@@ -91,6 +98,23 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       set => SetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER, R2I(value));
     }
 
+    /// <summary>
+    /// The <see cref="Faction"/>'s food limit.
+    /// A <see cref="player"/> with this Faction can never exceed this amount of food.
+    /// </summary>
+    public int FoodMaximum
+    {
+      get => _foodMaximum;
+      set
+      {
+        _foodMaximum = value;
+        if (Player != null)
+        {
+          SetPlayerState(Player, PLAYER_STATE_FOOD_CAP_CEILING, value);
+        }
+      }
+    }
+    
     public ScoreStatus ScoreStatus
     {
       get => _scoreStatus;

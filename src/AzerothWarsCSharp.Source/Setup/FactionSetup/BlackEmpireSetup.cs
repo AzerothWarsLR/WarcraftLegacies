@@ -17,6 +17,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       {
         StartingGold = 150,
         StartingLumber = 500,
+        FoodMaximum = 75,
         IntroText = @"You are playing as the horrifying |cff008080Black Empire|r.
 
         You are cut off in a horrible alternate world, Ny'alotha.
@@ -44,8 +45,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       FactionBlackempire.ModObjectLimit(FourCC("n0AZ"), Faction.UNLIMITED); //sleepeless watcher
       FactionBlackempire.ModObjectLimit(FourCC("n0B1"), Faction.UNLIMITED); //Improved Spitter
       FactionBlackempire.ModObjectLimit(FourCC("n0B0"), Faction.UNLIMITED); //Improved Watcher
-
-
+      
       //Structures
       FactionBlackempire.ModObjectLimit(FourCC("n0B5"), Faction.UNLIMITED); //Cultist
       FactionBlackempire.ModObjectLimit(FourCC("o04Z"), 12); //Flying horror

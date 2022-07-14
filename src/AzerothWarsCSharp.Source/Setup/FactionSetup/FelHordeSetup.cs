@@ -22,7 +22,8 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         Once the Draenei have been dealt with, gather the hordes and prepare to invade Azeroth through the Dark Portal.
 
         The Alliance is gathering outside the Dark Portal to stop you, so prepare to for a very hard breakout.
-        Your allies cannot reach you on Outland, you are alone."
+        Your allies cannot reach you on Outland, you are alone.",
+        FoodMaximum = 250
       };
 
       FactionFelHorde.ModObjectLimit(FourCC("o02Y"), Faction.UNLIMITED); //Great Hall
