@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
       firstPage.Visible = true;
       AddAllArtifacts();
       BookTitle = "Artifacts";
-      LauncherPosition = new Point(0.05f, 0.56f);
+      LauncherParent = BlzGetFrameByName("UpperButtonBarQuestsButton", 0);
       Position = new Point(0.4f, 0.38f);
     }
 

@@ -8,8 +8,8 @@ namespace AzerothWarsCSharp.MacroTools.Frames
   {
     private readonly List<Frame> _children = new();
     private bool _disposed;
-    private readonly float _height;
-    private readonly float _width;
+    private float _height;
+    private float _width;
 
     protected framehandle Handle { get; }
 
@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
     public float Height
     {
       get => _height;
-      init
+      set
       {
         _height = value;
         BlzFrameSetSize(Handle, _width, _height);
@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
     public float Width
     {
       get => _width;
-      init
+      set
       {
         _width = value;
         BlzFrameSetSize(Handle, _width, _height);
@@ -59,6 +59,17 @@ namespace AzerothWarsCSharp.MacroTools.Frames
       BlzFrameSetAbsPoint(Handle, point, x, y);
     }
 
+    /// <summary>
+    /// Sets the position of the <see cref="Frame"/> relative to a <see cref="framehandle"/>.
+    /// </summary>
+    public void SetPoint(framepointtype point, framehandle relativeTo, framepointtype relativePoint, float x, float y)
+    {
+      BlzFrameSetPoint(Handle, point, relativeTo, relativePoint, x, y);
+    }
+    
+    /// <summary>
+    /// Sets the position of the <see cref="Frame"/> relative to another <see cref="Frame"/>.
+    /// </summary>
     public void SetPoint(framepointtype point, Frame relativeTo, framepointtype relativePoint, float x, float y)
     {
       BlzFrameSetPoint(Handle, point, relativeTo.Handle, relativePoint, x, y);

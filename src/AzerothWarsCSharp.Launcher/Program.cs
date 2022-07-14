@@ -61,7 +61,7 @@ namespace AzerothWarsCSharp.Launcher
     /// </summary>
     private static void MakeDecision()
     {
-      Console.Write("Please type the number of your desired action: ");
+      Console.WriteLine("Please type the number of your desired action: ");
       switch (Console.ReadKey().Key)
       {
         case ConsoleKey.D1:
@@ -99,7 +99,7 @@ namespace AzerothWarsCSharp.Launcher
       var map = Map.Open(baseMapPath);
 
       FixDoodadData(map);
-      SetTestPlayerSlot(map, 2);
+      SetTestPlayerSlot(map, 0);
       var builder = new MapBuilder(map);
       builder.AddFiles(baseMapPath, "*", SearchOption.AllDirectories);
       builder.AddFiles(ASSETS_FOLDER_PATH, "*", SearchOption.AllDirectories);
