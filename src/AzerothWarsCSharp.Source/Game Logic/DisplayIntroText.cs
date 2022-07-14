@@ -25,10 +25,10 @@ namespace AzerothWarsCSharp.Source.Game_Logic
          TimerStart(timer, timeout, false, Display);
          FogEnable(false);
          FogMaskEnable(false);
-         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "|cffffcc00Warcraft Legacies|r");
-         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, @"|cffaaaaaaJoin our Discord:|r discord.gg/pnWZs69
-                                                     |cffff0000Support our Patreon:|r https://www.patreon.com/lordsebas");
-         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "");
+         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, @"|cffffcc00Warcraft Legacies|r
+|cffaaaaaaJoin our Discord:|r discord.gg/pnWZs69
+|cffff0000Support our Patreon:|r https://www.patreon.com/lordsebas
+");
       }
    }
 }
