@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Powers
       var firstPage = AddPage();
       firstPage.Visible = true;
       BookTitle = "Powers";
-      LauncherPosition = new Point(0.15f, 0.56f);
+      LauncherParent = BlzGetFrameByName("UpperButtonBarMenuButton", 0);
       Position = new Point(0.4f, 0.36f);
       TrackedFaction = PlayerData.ByHandle(GetLocalPlayer()).Faction;
       PlayerData.FactionChange += OnPersonChangeFaction;

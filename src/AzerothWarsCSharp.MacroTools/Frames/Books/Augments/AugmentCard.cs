@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Augments
          icon.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_CENTER, 0, 0.07f);
          AddFrame(icon);
          
-         var title = new TextFrame("ArtifactItemTitle", this, 0, 0)
+         var title = new TextFrame("ArtifactItemTitle", this, 0)
          {
             Text = augment.Name,
             Width = BoxWidth - 0.04f,
@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Augments
          title.SetPoint(FRAMEPOINT_TOP, icon, FRAMEPOINT_BOTTOM, 0, -0.015f);
          AddFrame(title);
          
-         var buttonFrame = new Button("ScriptDialogButton", this, 0, 0)
+         var buttonFrame = new Button("ScriptDialogButton", this, 0)
          {
             Width = 0.11f,
             Height = 0.026f,
@@ -46,7 +46,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.Augments
          buttonFrame.SetPoint(FRAMEPOINT_BOTTOM, this, FRAMEPOINT_BOTTOM, 0, 0.01f);
          AddFrame(buttonFrame);
          
-         _descriptionFrame = new TextFrame("AugmentDescription", this, 0, 0)
+         _descriptionFrame = new TextFrame("AugmentDescription", this, 0)
          {
             Text = augment.Description
          };

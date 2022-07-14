@@ -11,14 +11,14 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
   /// </summary>
   public sealed class ArtifactCard : Card
   {
-    private const float BOX_WIDTH = 0.13f;
-    private const float BOX_HEIGHT = 0.086f;
+    private const float BoxWidth = 0.13f;
+    private const float BoxHeight = 0.086f;
     private readonly Artifact _artifact;
     private readonly Frame _pingButton;
 
     private readonly TextFrame _text;
 
-    public ArtifactCard(Artifact artifact, Frame parent) : base(parent, BOX_WIDTH, BOX_HEIGHT)
+    public ArtifactCard(Artifact artifact, Frame parent) : base(parent, BoxWidth, BoxHeight)
     {
       _artifact = artifact;
 
@@ -31,22 +31,22 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
       icon.SetPoint(FRAMEPOINT_LEFT, this, FRAMEPOINT_LEFT, 0.015f, -0.0090f);
       AddFrame(icon);
 
-      var title = new TextFrame("ArtifactItemTitle", this, 0, 0)
+      var title = new TextFrame("ArtifactItemTitle", this, 0)
       {
         Text = GetItemName(artifact.Item),
-        Width = BOX_WIDTH - 0.04f,
+        Width = BoxWidth - 0.04f,
         Height = 0
       };
       title.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_CENTER, 0, 0.0255f);
       AddFrame(title);
 
-      _text = new TextFrame("ArtifactItemOwnerText", this, 0, 0);
+      _text = new TextFrame("ArtifactItemOwnerText", this, 0);
       _text.SetPoint(FRAMEPOINT_TOPLEFT, icon, FRAMEPOINT_TOPRIGHT, 0.007f, 0);
       _text.SetPoint(FRAMEPOINT_BOTTOMLEFT, icon, FRAMEPOINT_BOTTOMRIGHT, 0.007f, 0);
       _text.SetPoint(FRAMEPOINT_RIGHT, this, FRAMEPOINT_RIGHT, -0.007f, 0);
       AddFrame(_text);
 
-      _pingButton = new Button("ScriptDialogButton", this, 0, 0)
+      _pingButton = new Button("ScriptDialogButton", this, 0)
       {
         Width = 0.062f,
         Height = 0.027f,

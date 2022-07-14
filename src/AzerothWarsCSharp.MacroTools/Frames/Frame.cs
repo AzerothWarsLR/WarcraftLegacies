@@ -8,8 +8,8 @@ namespace AzerothWarsCSharp.MacroTools.Frames
   {
     private readonly List<Frame> _children = new();
     private bool _disposed;
-    private readonly float _height;
-    private readonly float _width;
+    private float _height;
+    private float _width;
 
     protected framehandle Handle { get; }
 
@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
     public float Height
     {
       get => _height;
-      init
+      set
       {
         _height = value;
         BlzFrameSetSize(Handle, _width, _height);
@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
     public float Width
     {
       get => _width;
-      init
+      set
       {
         _width = value;
         BlzFrameSetSize(Handle, _width, _height);
@@ -59,6 +59,17 @@ namespace AzerothWarsCSharp.MacroTools.Frames
       BlzFrameSetAbsPoint(Handle, point, x, y);
     }
 
+    /// <summary>
+    /// Sets the position of the <see cref="Frame"/> relative to a <see cref="framehandle"/>.
+    /// </summary>
+    public void SetPoint(framepointtype point, framehandle relativeTo, framepointtype relativePoint, float x, float y)
+    {
+      BlzFrameSetPoint(Handle, point, relativeTo, relativePoint, x, y);
+    }
+    
+    /// <summary>
+    /// Sets the position of the <see cref="Frame"/> relative to another <see cref="Frame"/>.
+    /// </summary>
     public void SetPoint(framepointtype point, Frame relativeTo, framepointtype relativePoint, float x, float y)
     {
       BlzFrameSetPoint(Handle, point, relativeTo.Handle, relativePoint, x, y);
@@ -69,24 +80,39 @@ namespace AzerothWarsCSharp.MacroTools.Frames
       BlzFrameClearAllPoints(Handle);
     }
 
-    public Frame(string name, framehandle parent, int priority, int createContext)
+    public Frame(string name, framehandle parent, int priority)
     {
-      Handle = BlzCreateFrame(name, parent, priority, createContext);
+      Handle = BlzCreateFrame(name, parent, priority, 0);
     }
 
-    public Frame(string name, Frame parent, int priority, int createContext)
+    public Frame(string name, Frame parent, int priority)
     {
-      Handle = BlzCreateFrame(name, parent.Handle, priority, createContext);
+      Handle = BlzCreateFrame(name, parent.Handle, priority, 0);
     }
 
-    public Frame(string name, Frame parent, int createContext = 0)
+    /// <summary>
+    /// Creates a Blizzard Simple Frame.
+    /// </summary>
+    /// /// <param name="name">The name of the frame definition to create.</param>
+    /// <param name="parent">The parent which affects the child's position and visibility.</param>
+    public Frame(string name, framehandle parent)
     {
-      Handle = BlzCreateSimpleFrame(name, parent.Handle, createContext);
+      Handle = BlzCreateSimpleFrame(name, parent, 0);
+    }
+    
+    /// <summary>
+    /// Creates a Blizzard Simple Frame.
+    /// </summary>
+    /// <param name="name">The name of the frame definition to create.</param>
+    /// <param name="parent">The parent which affects the child's position and visibility.</param>
+    public Frame(string name, Frame parent)
+    {
+      Handle = BlzCreateSimpleFrame(name, parent.Handle, 0);
     }
 
-    public Frame(string typeName, string name, Frame parent, string inherits = "", int createContext = 0)
+    public Frame(string typeName, string name, Frame parent, string inherits = "")
     {
-      Handle = BlzCreateFrameByType(typeName, name, parent.Handle, inherits, createContext);
+      Handle = BlzCreateFrameByType(typeName, name, parent.Handle, inherits, 0);
     }
 
     public void Dispose()
@@ -101,20 +127,18 @@ namespace AzerothWarsCSharp.MacroTools.Frames
 
     private void Dispose(bool disposing)
     {
-      if (!_disposed)
+      if (_disposed) return;
+      _disposed = true;
+      if (disposing)
       {
-        _disposed = true;
-        if (disposing)
+        DisposeEvents();
+        foreach (var childFrame in _children)
         {
-          DisposeEvents();
-          foreach (var childFrame in _children)
-          {
-            childFrame.Dispose();
-          }
-          _children.Clear();
+          childFrame.Dispose();
         }
-        BlzDestroyFrame(Handle);
+        _children.Clear();
       }
+      BlzDestroyFrame(Handle);
     }
     
     ~Frame()
