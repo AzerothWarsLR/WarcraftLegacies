@@ -76,6 +76,9 @@ namespace AzerothWarsCSharp.Source.Setup
       
       Player(22).SetFaction(LegionSetup.FactionLegion);
       Player(22).SetTeam(TeamSetup.Legion);
+      
+      Player(23).SetFaction(NzothSetup.Nzoth);
+      Player(23).SetTeam(TeamSetup.OldGods);
     }
   }
 }

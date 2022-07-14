@@ -11,50 +11,56 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
     public static void Setup()
     {
       FACTION_TWILIGHT = new Faction("Twilight", PLAYER_COLOR_LAVENDER, "|cff9178a8",
-        "ReplaceableTextures\\CommandButtons\\BTNChogall.blp");
-      var f = FACTION_TWILIGHT;
-      f.StartingGold = 150;
-      f.StartingLumber = 350;
+        "ReplaceableTextures\\CommandButtons\\BTNChogall.blp")
+      {
+        StartingGold = 150,
+        StartingLumber = 350,
+        IntroText = @"You are playing as the fanatical |cffcd8ccdTwilight Hammer Clan|r.
 
-      f.ModObjectLimit(FourCC("o039"), Faction.UNLIMITED); //Great Hall
-      f.ModObjectLimit(FourCC("o03A"), Faction.UNLIMITED); //Stronghold
-      f.ModObjectLimit(FourCC("o03B"), Faction.UNLIMITED); //Fortress
-      f.ModObjectLimit(FourCC("o03C"), Faction.UNLIMITED); //Altar of Storms
-      f.ModObjectLimit(FourCC("o03D"), Faction.UNLIMITED); //Barracks
-      f.ModObjectLimit(FourCC("o03J"), Faction.UNLIMITED); //War Mill
-      f.ModObjectLimit(FourCC("o03E"), Faction.UNLIMITED); //Spirit Lodge
-      f.ModObjectLimit(FourCC("o03F"), Faction.UNLIMITED); //Bestiary
-      f.ModObjectLimit(FourCC("o03I"), Faction.UNLIMITED); //Shipyard
-      f.ModObjectLimit(FourCC("o03G"), Faction.UNLIMITED); //Watch Tower
-      f.ModObjectLimit(FourCC("o03H"), Faction.UNLIMITED); //Improved Watch Tower
-      f.ModObjectLimit(FourCC("u00Y"), Faction.UNLIMITED); //Shop
-      f.ModObjectLimit(FourCC("o03K"), Faction.UNLIMITED); //Burrow
+You start isolated in the Twilight Highlands, the only way for an enemy to reach you is through the Dragonmaw Gate to the West, or the coast to the East.
 
-      f.ModObjectLimit(FourCC("n051"), 4); //Black Drake
-      f.ModObjectLimit(FourCC("o04J"), 8); //WindRider
-      f.ModObjectLimit(FourCC("n07X"), Faction.UNLIMITED); //Fel Orc Warlock
-      f.ModObjectLimit(FourCC("o01H"), Faction.UNLIMITED); //Fel Orc Grunt
-      f.ModObjectLimit(FourCC("o04B"), Faction.UNLIMITED); //Fel Orc Peon
-      f.ModObjectLimit(FourCC("n083"), Faction.UNLIMITED); //Horde Cavarly
-      f.ModObjectLimit(FourCC("o04I"), 6); //Executioner
-      f.ModObjectLimit(FourCC("o04K"), 6); //Demolisher
-      f.ModObjectLimit(FourCC("n09O"), 6); //DK
-      f.ModObjectLimit(FourCC("u01T"), Faction.UNLIMITED); //Necrolyte
-      f.ModObjectLimit(FourCC("n087"), Faction.UNLIMITED); //Phase Grenadier
-      f.ModObjectLimit(FourCC("obot"), 12); //Transport Ship
-      f.ModObjectLimit(FourCC("odes"), 12); //Orc Frigate
-      f.ModObjectLimit(FourCC("ojgn"), 6); //Juggernaught
+The Dragonmaw Gate is invulnerable, whoever controls Grim Batol controls the gate. When the gate is opened, it will take seven minutes to be able to close it again."
+      };
 
-      f.ModObjectLimit(FourCC("O01P"), 1); //Chogall
-      f.ModObjectLimit(FourCC("H08Q"), 1); //Azil
-      f.ModObjectLimit(FourCC("U01S"), 1); //Feludius
-      f.ModObjectLimit(FourCC("O04H"), 1); //ignacius
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("o039"), Faction.UNLIMITED); //Great Hall
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("o03A"), Faction.UNLIMITED); //Stronghold
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("o03B"), Faction.UNLIMITED); //Fortress
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("o03C"), Faction.UNLIMITED); //Altar of Storms
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("o03D"), Faction.UNLIMITED); //Barracks
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("o03J"), Faction.UNLIMITED); //War Mill
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("o03E"), Faction.UNLIMITED); //Spirit Lodge
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("o03F"), Faction.UNLIMITED); //Bestiary
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("o03I"), Faction.UNLIMITED); //Shipyard
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("o03G"), Faction.UNLIMITED); //Watch Tower
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("o03H"), Faction.UNLIMITED); //Improved Watch Tower
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("u00Y"), Faction.UNLIMITED); //Shop
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("o03K"), Faction.UNLIMITED); //Burrow
+
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("n051"), 4); //Black Drake
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("o04J"), 8); //WindRider
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("n07X"), Faction.UNLIMITED); //Fel Orc Warlock
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("o01H"), Faction.UNLIMITED); //Fel Orc Grunt
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("o04B"), Faction.UNLIMITED); //Fel Orc Peon
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("n083"), Faction.UNLIMITED); //Horde Cavarly
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("o04I"), 6); //Executioner
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("o04K"), 6); //Demolisher
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("n09O"), 6); //DK
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("u01T"), Faction.UNLIMITED); //Necrolyte
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("n087"), Faction.UNLIMITED); //Phase Grenadier
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("obot"), 12); //Transport Ship
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("odes"), 12); //Orc Frigate
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("ojgn"), 6); //Juggernaught
+
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("O01P"), 1); //Chogall
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("H08Q"), 1); //Azil
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("U01S"), 1); //Feludius
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("O04H"), 1); //ignacius
 
 
-      f.ModObjectLimit(FourCC("R023"), Faction.UNLIMITED); //Spiritual Infusion
-      f.ModObjectLimit(FourCC("Rosp"), Faction.UNLIMITED); //Spiked Barricades
-      f.ModObjectLimit(FourCC("R06X"), Faction.UNLIMITED); //Magic Training
-      f.ModObjectLimit(FourCC("R06Z"), Faction.UNLIMITED); //Herald Training
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("R023"), Faction.UNLIMITED); //Spiritual Infusion
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("Rosp"), Faction.UNLIMITED); //Spiked Barricades
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("R06X"), Faction.UNLIMITED); //Magic Training
+      FACTION_TWILIGHT.ModObjectLimit(FourCC("R06Z"), Faction.UNLIMITED); //Herald Training
 
       var cultistUnitTypeIds = new[]
       {

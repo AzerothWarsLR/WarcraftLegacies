@@ -35,6 +35,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     ///   How much experience is transferred from heroes that leave the game.
     /// </summary>
     private const float XpTransferPercent = 100;
+    
+    /// <summary>
+    /// The amount of food <see cref="Faction"/>s can have by default.
+    /// </summary>
+    private const int FoodMaximumDefault = 150;
 
     private readonly int _defeatedResearch;
 
@@ -49,7 +54,22 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private ScoreStatus _scoreStatus = ScoreStatus.Undefeated;
     private int _undefeatedResearch;
     private int _xp; //Stored by DistributeUnits and given out again by DistributeResources
+    private int _foodMaximum;
 
+    public Faction(string name, playercolor playerColor, string prefixCol, string icon)
+    {
+      _name = name;
+      PlayerColor = playerColor;
+      PrefixCol = prefixCol;
+      _icon = icon;
+      FoodMaximum = FoodMaximumDefault;
+    }
+    
+    /// <summary>
+    /// Displayed to the <see cref="Faction"/> when the game starts.
+    /// </summary>
+    public string IntroText { get; init; }
+    
     /// <summary>
     ///   Fired when the <see cref="Faction" /> gains a <see cref="Power" />.
     /// </summary>
@@ -61,14 +81,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public EventHandler<FactionPowerEventArgs>? PowerRemoved;
 
     public EventHandler<Faction>? ScoreStatusChanged;
-
-    public Faction(string name, playercolor playerColor, string prefixCol, string icon)
-    {
-      _name = name;
-      PlayerColor = playerColor;
-      PrefixCol = prefixCol;
-      _icon = icon;
-    }
 
     public int StartingGold { get; set; }
 
@@ -88,6 +100,28 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       set => SetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER, R2I(value));
     }
 
+    /// <summary>
+    /// The <see cref="Faction"/>'s food limit.
+    /// A <see cref="player"/> with this Faction can never exceed this amount of food.
+    /// </summary>
+    public int FoodMaximum
+    {
+      get => _foodMaximum;
+      set
+      {
+        _foodMaximum = value;
+        if (Player != null)
+        {
+          SetPlayerState(Player, PLAYER_STATE_FOOD_CAP_CEILING, value);
+        }
+      }
+    }
+    
+    /// <summary>
+    /// Music that will play for the Faction at the start of the game.
+    /// </summary>
+    public string CinematicMusic { get; init; }
+    
     public ScoreStatus ScoreStatus
     {
       get => _scoreStatus;
@@ -169,6 +203,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         ApplyObjects();
         ApplyPowers();
         ShowAllQuests();
+        SetPlayerState(Player, PLAYER_STATE_FOOD_CAP_CEILING, _foodMaximum);
       }
     }
 

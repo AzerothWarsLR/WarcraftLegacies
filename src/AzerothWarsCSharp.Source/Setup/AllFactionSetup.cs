@@ -29,6 +29,7 @@ namespace AzerothWarsCSharp.Source.Setup
       ForsakenSetup.Setup();
       BlackEmpireSetup.Setup();
       DraeneiSetup.Setup();
+      NzothSetup.Setup();
     }
   }
 }

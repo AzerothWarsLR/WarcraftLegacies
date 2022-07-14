@@ -15,6 +15,16 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         UndefeatedResearch = FourCC("R05L"),
         StartingGold = 300,
         StartingLumber = 600,
+        CinematicMusic = "Doom",
+        IntroText = @"You are playing as the bloodthirsty Fel Horde.
+
+The Draenei survivors are fleeing Shattrath for Tempest Keep. At the bidding of your demon-masters, you must slay them all before they can escape Outland.
+
+Once the Draenei have been dealt with, gather the hordes and prepare to invade Azeroth through the Dark Portal.
+
+The Alliance is gathering outside the Dark Portal to stop you, so prepare to for a very hard breakout.
+Your allies cannot reach you on Outland, you are alone.",
+        FoodMaximum = 250
       };
 
       FactionFelHorde.ModObjectLimit(FourCC("o02Y"), Faction.UNLIMITED); //Great Hall

@@ -61,7 +61,7 @@ namespace AzerothWarsCSharp.Launcher
     /// </summary>
     private static void MakeDecision()
     {
-      Console.WriteLine("Please type the number of your desired action: ");
+      Console.Write("Please type the number of your desired action: ");
       switch (Console.ReadKey().Key)
       {
         case ConsoleKey.D1:

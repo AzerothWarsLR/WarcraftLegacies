@@ -17,6 +17,16 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       {
         StartingGold = 150,
         StartingLumber = 500,
+        FoodMaximum = 75,
+        IntroText = @"You are playing as the horrifying |cff008080Black Empire|r.
+
+You are cut off in a horrible alternate world, Ny'alotha.
+
+To exit it, you need to first create 3 Obelisks at 3 points in Azeroth: Storm Peaks, Tanaris and Twilight Highlands, in that order. 
+
+Use your Heralds to summon the Obelisk. Move them to the corners of Ny'alotha to move them to Azeroth.
+
+While summoning the Obelisks, you can temporarily send your armies through the portals into Azeroth. But until all 3 Obelisks are summoned, your units will all return to Ny'alotha when the summoning is over."
       };
 
       //Units
@@ -35,8 +45,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
       FactionBlackempire.ModObjectLimit(FourCC("n0AZ"), Faction.UNLIMITED); //sleepeless watcher
       FactionBlackempire.ModObjectLimit(FourCC("n0B1"), Faction.UNLIMITED); //Improved Spitter
       FactionBlackempire.ModObjectLimit(FourCC("n0B0"), Faction.UNLIMITED); //Improved Watcher
-
-
+      
       //Structures
       FactionBlackempire.ModObjectLimit(FourCC("n0B5"), Faction.UNLIMITED); //Cultist
       FactionBlackempire.ModObjectLimit(FourCC("o04Z"), 12); //Flying horror
