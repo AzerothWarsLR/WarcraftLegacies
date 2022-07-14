@@ -47,6 +47,7 @@ namespace AzerothWarsCSharp.Source.Setup
       QuestMenuSetup.Setup();
       DialogueSetup.Setup();
       DisplayIntroText.Setup(10);
+      GameSettings.Setup();
     }
   }
 }
