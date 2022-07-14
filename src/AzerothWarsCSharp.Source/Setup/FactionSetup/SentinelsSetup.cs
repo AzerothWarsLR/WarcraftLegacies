@@ -19,11 +19,11 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         CinematicMusic = "Comradeship",
         IntroText = @"You are playing as the vigilant Sentinel Army.
 
-        The Druids are slowly waking from their slumber, it falls to you, the Sentinels, to drive back the invaders from Kalimdor until then.
+The Druids are slowly waking from their slumber, it falls to you, the Sentinels, to drive back the invaders from Kalimdor until then.
 
-        Your first mission is to race down the coast all the way to Feathermoon Stronghold, an extremely robust fortress on the southern part of the continent. 
+Your first mission is to race down the coast all the way to Feathermoon Stronghold, an extremely robust fortress on the southern part of the continent. 
 
-        Once you have secured your holdings, gather your army and destroy the orc invaders. Be careful, they will outnumber you if you give them time to rally their allies."
+Once you have secured your holdings, gather your army and destroy the orc invaders. Be careful, they will outnumber you if you give them time to rally their allies."
       };
 
       Sentinels.ModObjectLimit(FourCC("e00V"), Faction.UNLIMITED); //Temple of Elune

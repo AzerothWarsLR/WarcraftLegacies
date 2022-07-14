@@ -16,11 +16,11 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         StartingLumber = 500,
         IntroText = @"You are playing as the Ancient|cffc6b232 Empire of Ahn'Qiraj|r.
 
-        C'thun calls out from the Titan's prison. You must gather your forces and unleash him.
+C'thun calls out from the Titan's prison. You must gather your forces and unleash him.
 
-        Your surface goldmine will run out quickly, but there are many underground. Raise an army and swarm the tunnels beneath Ahn'Qiraj to capture them.
+Your surface goldmine will run out quickly, but there are many underground. Raise an army and swarm the tunnels beneath Ahn'Qiraj to capture them.
 
-        Once you have built up enough resources, unleash the wrath of the Old Gods on the world."
+Once you have built up enough resources, unleash the wrath of the Old Gods on the world."
       };
 
       //Units

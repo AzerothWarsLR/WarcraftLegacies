@@ -17,13 +17,13 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         StartingLumber = 500,
         IntroText = @"You are playing as the industrious |cff808080Bilgewater Cartel|r.
 
-        Early on you must rely on Traders for resources. 
-        Build Trading Zeppelins for Lumber and Traders for Gold.
+Early on you must rely on Traders for resources. 
+Build Trading Zeppelins for Lumber and Traders for Gold.
 
-        Some of your more advanced units and buildings require Fuel. Use the Kezan Oil Supply to discover and build new Oil Platforms and start accumulating it. Your global supply is indicated by the mana of the Kezan Oil Supply.
+Some of your more advanced units and buildings require Fuel. Use the Kezan Oil Supply to discover and build new Oil Platforms and start accumulating it. Your global supply is indicated by the mana of the Kezan Oil Supply.
 
-        The Cataclysm is coming, and when it does your Trading Center and Traders will be destroyed. 
-        Use your resources to raise an army strong enough to take land elsewhere."
+The Cataclysm is coming, and when it does your Trading Center and Traders will be destroyed. 
+Use your resources to raise an army strong enough to take land elsewhere."
       };
 
       factionGoblin.ModObjectLimit(FourCC("o03L"), Faction.UNLIMITED); //Great Hall

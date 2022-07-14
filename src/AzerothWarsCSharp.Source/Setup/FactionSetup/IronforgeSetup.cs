@@ -18,12 +18,12 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         CinematicMusic = "PursuitTheme",
         IntroText = @"You are playing as the long- enduring |cffe4bc00Kingdom of Ironforge.
                     |r
-        Re-establish your stronghold by capturing the surrounding lands.
+Re-establish your stronghold by capturing the surrounding lands.
 
-        The Twilight Hammer clan is gathering in the East, behind the Dragonmaw Gate. It cannot be destroyed, but it can be opened by anyone who owns Grim Batol. 
-        Once the gate opens, it cannot be closed for 7 minutes, use this opening to your advantage.
+The Twilight Hammer clan is gathering in the East, behind the Dragonmaw Gate. It cannot be destroyed, but it can be opened by anyone who owns Grim Batol. 
+Once the gate opens, it cannot be closed for 7 minutes, use this opening to your advantage.
 
-        Stormwind is preparing for the Fel Horde invasion in the South, muster the throng to help them or you may lose your strongest ally."
+Stormwind is preparing for the Fel Horde invasion in the South, muster the throng to help them or you may lose your strongest ally."
       };
 
       //Structures

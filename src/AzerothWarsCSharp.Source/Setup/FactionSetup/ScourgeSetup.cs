@@ -19,13 +19,13 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         CinematicMusic = "ArthasTheme",
         IntroText = @"You are playing as the the terrifying Undead Scourge.
 
-        Northrend is vast and isolated, a perfect place to raise an army of undying warriors to destroy your enemies.
+Northrend is vast and isolated, a perfect place to raise an army of undying warriors to destroy your enemies.
 
-        The Nerubians of Northrend have declared war on you, destroy their decrepit holdings and kill their Queen to secure the continent.
+The Nerubians of Northrend have declared war on you, destroy their decrepit holdings and kill their Queen to secure the continent.
 
-        Coordinate with the Cult of the Damned and Burning Legion for the Plague that will sweep Lordaeron. 
+Coordinate with the Cult of the Damned and Burning Legion for the Plague that will sweep Lordaeron. 
 
-        The Necropolis of Naxxramas is become the perfect weapon for the Scourge, but you will need a powerful necromancer to awaken it."
+The Necropolis of Naxxramas is become the perfect weapon for the Scourge, but you will need a powerful necromancer to awaken it."
       };
 
       //Buildings

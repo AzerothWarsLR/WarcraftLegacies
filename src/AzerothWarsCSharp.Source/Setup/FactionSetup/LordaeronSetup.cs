@@ -18,12 +18,12 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         CinematicMusic = "Comradeship",
         IntroText = @"You are playing as the royal |cff4242ebKingdom of Lordaeron|r.
 
-        You start the game with the largest territory, but the Plague of Undeath is coming.
+You start the game with the largest territory, but the Plague of Undeath is coming.
 
-        Secure your major cities by clearing out clusters of enemies and fortify your Kingdom as much as possible.
+Secure your major cities by clearing out clusters of enemies and fortify your Kingdom as much as possible.
 
-        Keep an eye out for the Cult of the Damned, they have several agents in your lands that will infect your buidings. 
-        Burn these infected buildings to weaken the Cult's power."
+Keep an eye out for the Cult of the Damned, they have several agents in your lands that will infect your buidings. 
+Burn these infected buildings to weaken the Cult's power."
       };
 
       //Structures

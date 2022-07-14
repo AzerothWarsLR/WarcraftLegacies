@@ -18,11 +18,11 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         CinematicMusic = @"war3mapImported\Illidancinematic3.mp3",
         IntroText = @"You are playing as the banished Empire of Nazjatar|r|r.
 
-        You start weak in the middle of the map.
+You start weak in the middle of the map.
 
-        Take control of the deap sea before moving on to raiding coastal settlements and islands all around you, slowly gaining ressources along the way.
+Take control of the deap sea before moving on to raiding coastal settlements and islands all around you, slowly gaining ressources along the way.
 
-        Once you have collected enough, you can rebuild the great Nazjatar empire and start conquering the world."
+Once you have collected enough, you can rebuild the great Nazjatar empire and start conquering the world."
       };
 
       FactionNaga.ModObjectLimit(FourCC("nntt"), Faction.UNLIMITED); //Pillar of Waves

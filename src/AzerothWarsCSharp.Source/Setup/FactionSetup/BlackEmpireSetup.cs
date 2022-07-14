@@ -20,13 +20,13 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         FoodMaximum = 75,
         IntroText = @"You are playing as the horrifying |cff008080Black Empire|r.
 
-        You are cut off in a horrible alternate world, Ny'alotha.
+You are cut off in a horrible alternate world, Ny'alotha.
 
-        To exit it, you need to first create 3 Obelisks at 3 points in Azeroth: Storm Peaks, Tanaris and Twilight Highlands, in that order. 
+To exit it, you need to first create 3 Obelisks at 3 points in Azeroth: Storm Peaks, Tanaris and Twilight Highlands, in that order. 
 
-        Use your Heralds to summon the Obelisk. Move them to the corners of Ny'alotha to move them to Azeroth.
+Use your Heralds to summon the Obelisk. Move them to the corners of Ny'alotha to move them to Azeroth.
 
-        While summoning the Obelisks, you can temporarily send your armies through the portals into Azeroth. But until all 3 Obelisks are summoned, your units will all return to Ny'alotha when the summoning is over."
+While summoning the Obelisks, you can temporarily send your armies through the portals into Azeroth. But until all 3 Obelisks are summoned, your units will all return to Ny'alotha when the summoning is over."
       };
 
       //Units

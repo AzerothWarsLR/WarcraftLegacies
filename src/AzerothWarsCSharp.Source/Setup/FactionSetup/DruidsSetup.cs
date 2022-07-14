@@ -18,12 +18,12 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         CinematicMusic = "DarkAgents",
         IntroText = @"You are playing as the venerable Druids of the Cenarion Circle.
 
-        Without a Hero, you are perilously weak in the beginning. 
-        Awaken Malfurion from his slumber as soon as possible. 
+Without a Hero, you are perilously weak in the beginning. 
+Awaken Malfurion from his slumber as soon as possible. 
 
-        Once awakened, use his Force of Nature to clear a path through the trees in Ashenvale and summon Cenarius to aid you. 
+Once awakened, use his Force of Nature to clear a path through the trees in Ashenvale and summon Cenarius to aid you. 
 
-        The Horde is gathering to burn Ashenvale forest and all within, gather your forces and strike before they can organize their forces."
+The Horde is gathering to burn Ashenvale forest and all within, gather your forces and strike before they can organize their forces."
       };
 
       factionDruids.ModObjectLimit(FourCC("etol"), Faction.UNLIMITED); //Tree of Life

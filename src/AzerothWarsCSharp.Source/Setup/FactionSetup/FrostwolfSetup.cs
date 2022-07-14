@@ -18,10 +18,10 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         CinematicMusic = "SadMystery",
         IntroText = @"You are playing as the honorable |cffff0000Frostwolf Clan|r.
 
-        You have been shipwrecked. Gather enough resources to sail South-West to Kalimdor. Until you reach Kalimdor, you will be unable to train any more peons or research new tech. 
+You have been shipwrecked. Gather enough resources to sail South-West to Kalimdor. Until you reach Kalimdor, you will be unable to train any more peons or research new tech. 
 
-        Once you land, you will find a Tauren caravan with a Great Hall packed in it's inventory. 
-        Escort the kodo to Thunderbluff, where you will find a goldmine waiting for you."
+Once you land, you will find a Tauren caravan with a Great Hall packed in it's inventory. 
+Escort the kodo to Thunderbluff, where you will find a goldmine waiting for you."
       };
 
       FACTION_FROSTWOLF.ModObjectLimit(FourCC("ogre"), Faction.UNLIMITED); //Great Hall

@@ -17,9 +17,9 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         StartingLumber = 350,
         IntroText = @"You are playing as the fanatical |cffcd8ccdTwilight Hammer Clan|r.
 
-        You start isolated in the Twilight Highlands, the only way for an enemy to reach you is through the Dragonmaw Gate to the West, or the coast to the East.
+You start isolated in the Twilight Highlands, the only way for an enemy to reach you is through the Dragonmaw Gate to the West, or the coast to the East.
 
-        The Dragonmaw Gate is invulnerable, whoever controls Grim Batol controls the gate. When the gate is opened, it will take seven minutes to be able to close it again."
+The Dragonmaw Gate is invulnerable, whoever controls Grim Batol controls the gate. When the gate is opened, it will take seven minutes to be able to close it again."
       };
 
       FACTION_TWILIGHT.ModObjectLimit(FourCC("o039"), Faction.UNLIMITED); //Great Hall
