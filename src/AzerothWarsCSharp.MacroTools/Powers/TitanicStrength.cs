@@ -7,7 +7,6 @@ namespace AzerothWarsCSharp.MacroTools.Powers
    public sealed class TitanicStrength : Power
    {
       private readonly float _percentageOfHitPoints;
-      private const string CustomEventIdentifier = "PlayerFinishesTraining";
 
       public TitanicStrength(float percentageOfHitPoints)
       {
@@ -15,21 +14,14 @@ namespace AzerothWarsCSharp.MacroTools.Powers
          Description = $"Units you train gain attack damage equal to {percentageOfHitPoints}% of their maximum hit points.";
       }
       
-      static TitanicStrength()
-      {
-         PlayerUnitEvents.AddCustomEventFilter(EVENT_PLAYER_UNIT_TRAIN_FINISH,
-            CustomEventIdentifier,
-            () => GetPlayerId(GetOwningPlayer(GetTrainedUnit())));
-      }
-      
       public override void OnAdd(player whichPlayer)
       {
-         PlayerUnitEvents.Register(CustomEventIdentifier, OnUnitTrain, GetPlayerId(whichPlayer));
+         PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerFinishesTraining, OnUnitTrain, GetPlayerId(whichPlayer));
       }
       
       public override void OnRemove(player whichPlayer)
       {
-         PlayerUnitEvents.Unregister(CustomEventIdentifier, GetPlayerId(whichPlayer));
+         PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerFinishesTraining, GetPlayerId(whichPlayer));
       }
       
       private void OnUnitTrain()
