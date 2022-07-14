@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools.Augments;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -45,6 +46,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private readonly Dictionary<int, int> _objectLevels = new();
     private readonly Dictionary<int, int> _objectLimits = new();
     private readonly List<Power> _powers = new();
+    private readonly List<Augment> _augments = new();
     private readonly Dictionary<string, QuestData> _questsByName = new();
     private string _icon;
     private string _name;
@@ -299,6 +301,16 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         Player?.SetObjectLevel(key, 0);
     }
 
+    /// <summary>
+    /// Adds a <see cref="Augment"/> to this <see cref="Faction"/>.
+    /// </summary>
+    /// <param name="augment"></param>
+    public void AddAugment(Augment augment)
+    {
+      _augments.Add(augment);
+      augment.OnAdd(this);
+    }
+    
     /// <summary>
     ///   Adds a <see cref="Power" /> to this <see cref="Faction" />.
     /// </summary>

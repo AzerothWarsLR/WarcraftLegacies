@@ -19,12 +19,12 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
     protected float YOffsetTop { get; init; }
     protected float YOffsetBot { get; init; }
 
-    protected Page() : base("ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0, 0)
+    protected Page() : base("ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0)
     {
       Texture = @"UI/Widgets/EscMenu/Human/blank-background.blp";
       SetAbsPoint(FRAMEPOINT_CENTER, 0.4f, 0.38f);
 
-      _pageNumberFrame = new TextFrame("ArtifactMenuTitle", this, 0, 0)
+      _pageNumberFrame = new TextFrame("ArtifactMenuTitle", this, 0)
       {
         Text = "Page DEFAULT"
       };
