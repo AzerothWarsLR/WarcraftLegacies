@@ -15,6 +15,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         UndefeatedResearch = FourCC("R05T"),
         StartingGold = 150,
         StartingLumber = 500,
+        CinematicMusic = "PursuitTheme",
         IntroText = @"You are playing as the long- enduring |cffe4bc00Kingdom of Ironforge.
                     |r
         Re-establish your stronghold by capturing the surrounding lands.

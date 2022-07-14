@@ -115,6 +115,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
     }
     
+    /// <summary>
+    /// Music that will play for the Faction at the start of the game.
+    /// </summary>
+    public string CinematicMusic { get; init; }
+    
     public ScoreStatus ScoreStatus
     {
       get => _scoreStatus;

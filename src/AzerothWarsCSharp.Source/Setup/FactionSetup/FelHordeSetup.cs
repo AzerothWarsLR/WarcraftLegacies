@@ -15,6 +15,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         UndefeatedResearch = FourCC("R05L"),
         StartingGold = 300,
         StartingLumber = 600,
+        CinematicMusic = "Doom",
         IntroText = @"You are playing as the bloodthirsty Fel Horde.
 
         The Draenei survivors are fleeing Shattrath for Tempest Keep. At the bidding of your demon-masters, you must slay them all before they can escape Outland.

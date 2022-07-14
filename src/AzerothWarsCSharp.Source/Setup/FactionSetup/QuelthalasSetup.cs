@@ -17,6 +17,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
           UndefeatedResearch = FourCC("R05U"),
           StartingGold = 150,
           StartingLumber = 500,
+          CinematicMusic = "BloodElfTheme",
           IntroText = @"You are playing as the mystical |cff32e1e1Kingdom of Quel'thalas|r.
 
           The Trolls of Zul'Aman have cut you off from Silvermoon City, and are preparing attacks on your base,

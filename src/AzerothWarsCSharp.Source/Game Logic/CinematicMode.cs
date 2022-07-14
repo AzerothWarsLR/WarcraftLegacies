@@ -49,10 +49,24 @@ namespace AzerothWarsCSharp.Source.Game_Logic
       DestroyTimer(GetExpiredTimer());
     }
 
+    private static void PlayFactionMusic()
+    {
+      foreach (var player in GeneralHelpers.GetAllPlayers())
+      {
+        if (GetLocalPlayer() == player)
+        {
+          PlayThematicMusic(player.GetFaction()?.CinematicMusic);
+        }
+      }
+    }
+    
     public static void Start(float timeout)
     {
       var timer = CreateTimer();
       TimerStart(timer, timeout, false, Cleanup);
+
+      var musicTimer = CreateTimer();
+      TimerStart(musicTimer, 2.1f, false, PlayFactionMusic);
       
       FogEnable(false);
       FogMaskEnable(false);

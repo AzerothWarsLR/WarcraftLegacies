@@ -15,6 +15,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         UndefeatedResearch = FourCC("R06E"),
         StartingGold = 150,
         StartingLumber = 500,
+        CinematicMusic = "DarkAgents",
         IntroText = @"You are playing as the venerable Druids of the Cenarion Circle.
 
         Without a Hero, you are perilously weak in the beginning. 

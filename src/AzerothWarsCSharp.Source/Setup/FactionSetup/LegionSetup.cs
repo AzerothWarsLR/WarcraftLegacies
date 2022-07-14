@@ -15,6 +15,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         UndefeatedResearch = FourCC("R04T"),
         StartingGold = 150,
         StartingLumber = 500,
+        CinematicMusic = "DarkAgents",
         IntroText = @"You are playing as the destructive |cffa2722dBurning Legion|r.
 
         You begin isolated on Argus. Use Astral Walk and Diamonds of Summoning to move your units to Azeroth.

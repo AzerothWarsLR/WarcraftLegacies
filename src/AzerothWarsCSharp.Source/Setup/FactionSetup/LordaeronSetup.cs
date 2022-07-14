@@ -15,6 +15,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         StartingGold = 150,
         StartingLumber = 500,
         UndefeatedResearch = FourCC("R05M"),
+        CinematicMusic = "Comradeship",
         IntroText = @"You are playing as the royal |cff4242ebKingdom of Lordaeron|r.
 
         You start the game with the largest territory, but the Plague of Undeath is coming.

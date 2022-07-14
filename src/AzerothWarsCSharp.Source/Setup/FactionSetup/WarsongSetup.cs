@@ -15,6 +15,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         UndefeatedResearch = FourCC("R05W"),
         StartingGold = 150,
         StartingLumber = 500,
+        CinematicMusic = "DarkAgents",
         IntroText = @"You are playing as the proud |cffd45e19Warsong clan|r.
 
         You start isolated in the woods of Ashenvale. The Warchief expects a large amount of lumber from you, begin harvesting with your Peons.

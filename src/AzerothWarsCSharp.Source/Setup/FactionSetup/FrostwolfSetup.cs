@@ -15,6 +15,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         UndefeatedResearch = FourCC("R05V"),
         StartingGold = 150,
         StartingLumber = 500,
+        CinematicMusic = "SadMystery",
         IntroText = @"You are playing as the honorable |cffff0000Frostwolf Clan|r.
 
         You have been shipwrecked. Gather enough resources to sail South-West to Kalimdor. Until you reach Kalimdor, you will be unable to train any more peons or research new tech. 

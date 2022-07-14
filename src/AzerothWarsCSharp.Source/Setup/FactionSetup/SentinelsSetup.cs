@@ -16,6 +16,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         UndefeatedResearch = FourCC("R05Y"),
         StartingGold = 150,
         StartingLumber = 500,
+        CinematicMusic = "Comradeship",
         IntroText = @"You are playing as the vigilant Sentinel Army.
 
         The Druids are slowly waking from their slumber, it falls to you, the Sentinels, to drive back the invaders from Kalimdor until then.

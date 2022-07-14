@@ -15,6 +15,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
         UndefeatedResearch = FourCC("R02L"),
         StartingGold = 0,
         StartingLumber = 2500,
+        CinematicMusic = @"war3mapImported\Illidancinematic3.mp3",
         IntroText = @"You are playing as the banished Empire of Nazjatar|r|r.
 
         You start weak in the middle of the map.
