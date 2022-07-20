@@ -43,6 +43,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         DeathMessage = "The Great Forge has been extinguished." //Todo: mediocre flavour
       };
       Legend.Register(LegendGreatforge);
+      LegendGreatforge.Unit.SetInvulnerable(true);
 
       LegendThelsamar = new Legend
       {

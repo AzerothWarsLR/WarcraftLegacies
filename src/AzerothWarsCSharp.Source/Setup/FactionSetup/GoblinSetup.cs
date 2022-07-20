@@ -60,13 +60,13 @@ Use your resources to raise an army strong enough to take land elsewhere."
       factionGoblin.ModObjectLimit(FourCC("o04S"), 10); //Trader
       factionGoblin.ModObjectLimit(FourCC("u028"), 2); //Fuel Tanker
 
-      factionGoblin.ModObjectLimit(FourCC("O04N"), 1); //Jastor
-      factionGoblin.ModObjectLimit(FourCC("Ntin"), 1); //Gazlowee
-      factionGoblin.ModObjectLimit(FourCC("Nalc"), 1); //Noggenfogger
+      factionGoblin.ModObjectLimit(Constants.UNIT_O04N_TRADE_PRINCE_OF_THE_BILGEWATER_CARTEL_GOBLIN, 1);
+      factionGoblin.ModObjectLimit(Constants.UNIT_NTIN_CHIEF_ENGINEER_GOBLIN, 1);
+      factionGoblin.ModObjectLimit(Constants.UNIT_NALC_BARON_OF_GADGETZAN_GOBLIN, 1);
 
-      factionGoblin.ModObjectLimit(FourCC("R07L"), Faction.UNLIMITED); //Wizard Training
-      factionGoblin.ModObjectLimit(FourCC("R07M"), Faction.UNLIMITED); //Alchemist Training
-      factionGoblin.ModObjectLimit(FourCC("R023"), Faction.UNLIMITED); //Spiritual Infusion
+      factionGoblin.ModObjectLimit(Constants.UPGRADE_R07L_WIZARD_MASTER_TRAINING_GOBLIN, Faction.UNLIMITED);
+      factionGoblin.ModObjectLimit(Constants.UPGRADE_R07M_ALCHEMIST_MASTER_TRAINING_GOBLIN, Faction.UNLIMITED);
+      factionGoblin.ModObjectLimit(Constants.UPGRADE_R023_SPIRITUAL_INFUSION_WARSONG_FROSTWOLF_FEL_HORDE, Faction.UNLIMITED);
 
       var oilPower = new OilPower
       {

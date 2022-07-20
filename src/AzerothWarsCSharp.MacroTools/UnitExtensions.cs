@@ -7,8 +7,24 @@ namespace AzerothWarsCSharp.MacroTools
 {
   public static class UnitExtensions
   {
-    private const float HERO_DROP_DIST = 50; //The radius in which heroes spread out items when they drop them
+    private const float HeroDropDist = 50; //The radius in which heroes spread out items when they drop them
 
+    /// <summary>
+    /// If true, prevents the unit from moving or taking actions.
+    /// </summary>
+    public static void Pause(this unit unit, bool value)
+    {
+      PauseUnit(unit, value);
+    }
+    
+    /// <summary>
+    /// If true, the unit cannot be targeted by attacks or hostile abilities and cannot be damaged.
+    /// </summary>
+    public static void SetInvulnerable(this unit unit, bool value)
+    {
+      SetUnitInvulnerable(unit, value);
+    }
+    
     public static void Remove(this unit unit)
     {
       RemoveUnit(unit);
@@ -169,8 +185,8 @@ namespace AzerothWarsCSharp.MacroTools
 
       for (var i = 0; i < 6; i++)
       {
-        var x = unitX + HERO_DROP_DIST * Cos(ang);
-        var y = unitY + HERO_DROP_DIST * Sin(ang);
+        var x = unitX + HeroDropDist * Cos(ang);
+        var y = unitY + HeroDropDist * Sin(ang);
         ang += 360 * (float) MathEx.DEG_TO_RAD / 6;
         item dropItem = UnitItemInSlot(u, i);
         if (BlzGetItemBooleanField(dropItem, ITEM_BF_DROPPED_WHEN_CARRIER_DIES) ||

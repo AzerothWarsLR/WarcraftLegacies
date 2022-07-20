@@ -44,11 +44,12 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 
       LegendDalaranCapital = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("h002")),
+        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H002_THE_VIOLET_CITADEL_DALARAN),
         DeathMessage =
           "The Violet Citadel, the ultimate bastion of arcane knowledge in the Eastern Kingdoms, crumbles like a sand castle."
       };
       Legend.Register(LegendDalaranCapital);
+      LegendDalaranCapital.Unit.SetInvulnerable(true);
 
       LegendAntonidas = new Legend
       {

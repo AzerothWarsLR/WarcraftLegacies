@@ -11,8 +11,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
     public static Legend LegendNobundo { get; private set; }
     public static Legend LegendExodar { get; private set; }
     public static Legend LegendExodarship { get; private set; }
-
-
+    
     public static void Setup()
     {
       LegendNobundo = new Legend
@@ -33,6 +32,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         Unit = PreplacedUnitSystem.GetUnit(FourCC("h09W"))
       };
       Legend.Register(LegendExodarship);
+      LegendExodarship.Unit.SetInvulnerable(true);
 
       LegendMaraad = new Legend
       {

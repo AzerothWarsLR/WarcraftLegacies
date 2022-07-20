@@ -71,12 +71,17 @@ The Night Elves are aware of your presence and are gathering against you. Unlock
       FACTION_WARSONG.ModObjectLimit(FourCC("Rosp"), Faction.UNLIMITED); //Spiked Barricades
       FACTION_WARSONG.ModObjectLimit(FourCC("R016"), Faction.UNLIMITED); //Warlords
       FACTION_WARSONG.ModObjectLimit(FourCC("R019"), Faction.UNLIMITED); //Improved Shockwave
-      FACTION_WARSONG.ModObjectLimit(FourCC("R01Z"), Faction.UNLIMITED); //Battle Stations
-      FACTION_WARSONG.SetObjectLevel(FourCC("R01Z"), 1); //Battle Stations
-      FACTION_WARSONG.ModObjectLimit(FourCC("R00D"), Faction.UNLIMITED); //For the Horde!
-      FACTION_WARSONG.ModObjectLimit(FourCC("Rovs"), Faction.UNLIMITED); //Envenomed Spears
-      FACTION_WARSONG.ModObjectLimit(FourCC("R017"), Faction.UNLIMITED); //Improved Ignore Pain
+      FACTION_WARSONG.ModObjectLimit(Constants.UPGRADE_R01Z_BATTLE_STATIONS_ORC, Faction.UNLIMITED);
+      FACTION_WARSONG.SetObjectLevel(Constants.UPGRADE_R01Z_BATTLE_STATIONS_ORC, 1);
+      FACTION_WARSONG.ModObjectLimit(Constants.UPGRADE_R00D_FOR_THE_HORDE_FROSTWOLF, Faction.UNLIMITED);
+      FACTION_WARSONG.ModObjectLimit(Constants.UPGRADE_ROVS_ENVENOMED_SPEARS_FROSTWOLF, Faction.UNLIMITED);
+      FACTION_WARSONG.ModObjectLimit(Constants.UPGRADE_R017_IMPROVED_IGNORE_PAIN_WARSONG, Faction.UNLIMITED);
 
+      FACTION_WARSONG.ModAbilityAvailability(Constants.ABILITY_A0PF_FEL_ENERGY_TEAL_FORTRESSES, -1);
+      FACTION_WARSONG.ModAbilityAvailability(Constants.ABILITY_ANTR_TROLL_REGENERATION_PINK_WITCH_DOCTOR_TROLL_HEADHUNTER_TROLL_BATRIDER_DARKSPEAR_WARLORD_TROLL_BERSERKER_ICON, -1);
+      FACTION_WARSONG.ModAbilityAvailability(Constants.ABILITY_ABTL_BATTLE_STATIONS_FROSTWOLF_WARSONG_BURROW, 1);
+      FACTION_WARSONG.ModAbilityAvailability(Constants.ABILITY_A0M4_BATTLE_STATIONS_PINK_GREY_ORC_BURROW_BLOODPACT, -1);
+      
       FactionManager.Register(FACTION_WARSONG);
     }
   }

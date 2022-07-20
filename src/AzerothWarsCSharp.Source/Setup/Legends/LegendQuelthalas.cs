@@ -26,17 +26,19 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         DeathMessage = "The grand city of the high elves, Silvermoon, has been crushed by her enemies."
       };
       Legend.Register(LegendSilvermoon);
+      LegendSilvermoon.Unit.SetInvulnerable(true);
 
       LegendSunwell = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("n001")),
+        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_N001_THE_SUNWELL),
         Capturable = true
       };
       Legend.Register(LegendSunwell);
+      LegendSunwell.Unit.SetInvulnerable(true);
 
       LegendAnasterian = new Legend
       {
-        UnitType = FourCC("H00Q"),
+        UnitType = Constants.UNIT_H00Q_KING_OF_QUEL_THALAS_QUEL_THALAS,
         PlayerColor = PLAYER_COLOR_MAROON
       };
       LegendAnasterian.AddUnitDependency(LegendSunwell.Unit);
@@ -45,27 +47,27 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 
       LegendRommath = new Legend
       {
-        UnitType = FourCC("H04F"),
+        UnitType = Constants.UNIT_H04F_ARCHMAGE_GREEN,
         StartingXp = 1800
       };
       Legend.Register(LegendRommath);
 
       LegendJennalla = new Legend
       {
-        UnitType = FourCC("H02B")
+        UnitType = Constants.UNIT_H02B_ARCANE_PHANTOM_KHADGAR
       };
       Legend.Register(LegendJennalla);
 
       LegendPathaleon = new Legend
       {
-        UnitType = FourCC("H098"),
+        UnitType = Constants.UNIT_H098_SUNFURY_MASTERMIND_HIGH_ELVES,
         StartingXp = 1800
       };
       Legend.Register(LegendPathaleon);
 
       LegendSylvanas = new Legend
       {
-        UnitType = FourCC("Hvwd"),
+        UnitType = Constants.UNIT_HVWD_RANGER_GENERAL_OF_SILVERMOON_QUEL_THALAS,
         PlayerColor = PLAYER_COLOR_GREEN
       };
       Legend.Register(LegendSylvanas);
@@ -73,21 +75,21 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       LegendKael = new Legend
       {
         PlayerColor = PLAYER_COLOR_RED,
-        UnitType = FourCC("Hkal"),
+        UnitType = Constants.UNIT_HKAL_PRINCE_OF_QUEL_THALAS_QUEL_THALAS,
         StartingXp = 1800
       };
       Legend.Register(LegendKael);
 
       LegendLorthemar = new Legend
       {
-        UnitType = FourCC("H02E"),
+        UnitType = Constants.UNIT_H02E_REGENT_OF_QUEL_THALAS_QUEL_THALAS_VASSAL,
         StartingXp = 2800
       };
       Legend.Register(LegendLorthemar);
 
       LegendKiljaeden = new Legend
       {
-        UnitType = FourCC("U004"),
+        UnitType = Constants.UNIT_U004_THE_DECEIVER_LEGION,
         PermaDies = true,
         StartingXp = 10800,
         DeathMessage =
