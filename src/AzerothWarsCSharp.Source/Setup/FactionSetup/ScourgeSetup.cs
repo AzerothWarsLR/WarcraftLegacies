@@ -94,6 +94,11 @@ The Necropolis of Naxxramas is become the perfect weapon for the Scourge, but yo
       FactionScourge.ModObjectLimit(FourCC("Rusl"), Faction.UNLIMITED); //Skeletal Mastery
       FactionScourge.ModObjectLimit(FourCC("Rusm"), Faction.UNLIMITED); //Skeletal Longevity
 
+      //Abilities
+      FactionScourge.ModAbilityAvailability(Constants.ABILITY_A0WG_SPELL_SHIELD_SPELL_BOOK_ORANGE_ANTONIDAS_RED_LICH_KING, -1);
+      FactionScourge.ModAbilityAvailability(Constants.ABILITY_A0K2_RAISE_DEAD_AUTO_CAST_RED_TEMPLE_OF_THE_DAMNED_OFF, -1);
+      FactionScourge.ModAbilityAvailability(Constants.ABILITY_A09N_PERMANENT_IMMOLATION_SCOURGE_ICECROWN_OBELISK, -1);
+      
       //Powers
       var visionPower = new VisionPower("All-Seeing",
         "Grants permanent vision over Northrend.",

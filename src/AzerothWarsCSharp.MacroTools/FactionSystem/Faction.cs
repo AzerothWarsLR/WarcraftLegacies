@@ -45,6 +45,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     private readonly Dictionary<int, int> _objectLevels = new();
     private readonly Dictionary<int, int> _objectLimits = new();
+    private readonly Dictionary<int, int> _abilityAvailabilities = new();
     private readonly List<Power> _powers = new();
     private readonly List<Augment> _augments = new();
     private readonly Dictionary<string, QuestData> _questsByName = new();
@@ -289,6 +290,9 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
       foreach (var (key, value) in _objectLevels)
         Player?.SetObjectLevel(key, value);
+      
+      foreach (var (key, value) in _abilityAvailabilities)
+        Player?.SetAbilityAvailability(key, value > 0);
     }
 
     //Removes this Faction's object limits and levels from its active Person
@@ -299,6 +303,9 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
       foreach (var (key, _) in _objectLevels)
         Player?.SetObjectLevel(key, 0);
+      
+      foreach (var (key, value) in _abilityAvailabilities)
+        Player?.SetAbilityAvailability(key, true);
     }
 
     /// <summary>
@@ -407,6 +414,20 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       return questData;
     }
 
+    /// <summary>
+    /// Changes the ability's availability by the provided amount.
+    /// If the availability is higher than 0, the <see cref="player"/> with this <see cref="Faction"/>
+    /// can see and use it.
+    /// </summary>
+    public void ModAbilityAvailability(int ability, int value)
+    {
+      if (!_abilityAvailabilities.TryAdd(ability, value))
+      {
+        _abilityAvailabilities[ability] += value;
+      }
+      Player?.SetAbilityAvailability(ability, value > 0);
+    }
+    
     public int GetObjectLevel(int obj)
     {
       return _objectLevels[obj];

@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.UnitEffects;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.Legends
@@ -11,6 +12,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
     public static Legend? LegendRivendare { get; private set; }
     public static Legend? LegendLichking { get; private set; }
     public static Legend? LegendUtgarde { get; private set; }
+    public static Legend? Naxxramas { get; private set; }
 
     public static int UnittypeKelthuzadNecromancer { get; } = FourCC("U001");
     public static int UnittypeKelthuzadGhost { get; } = FourCC("U00M");
@@ -58,6 +60,15 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
           "The great Lich King has been destroyed. With no central mind to command them, the forces of the Undead have gone rogue."
       };
       Legend.Register(LegendLichking);
+      SetUnitInvulnerable(LegendLichking.Unit, true);
+
+      Naxxramas = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_U01X_HEART_OF_NAXXRAMAS)
+      };
+      Legend.Register(Naxxramas);
+      SetUnitInvulnerable(Naxxramas.Unit, true);
+      SetUnitTimeScale(Naxxramas.Unit, 0);
     }
   }
 }

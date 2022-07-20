@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.Legends
@@ -11,6 +12,8 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
     public static Legend LEGEND_TICHONDRIUS { get; private set; }
     public static Legend LEGEND_MALGANIS { get; private set; }
     public static Legend LEGEND_LILIAN { get; private set; }
+    public static Legend LEGION_NEXUS_NORTHREND { get; private set; }
+    public static Legend LEGION_NEXUS_OUTLAND { get; private set; }
 
     public static void Setup()
     {
@@ -52,6 +55,20 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         PlayerColor = PLAYER_COLOR_GREEN
       };
       Legend.Register(LEGEND_MALGANIS);
+
+      LEGION_NEXUS_OUTLAND = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION, new Point(-3483, -21662))
+      };
+      Legend.Register(LEGION_NEXUS_OUTLAND);
+      SetUnitInvulnerable(LEGION_NEXUS_OUTLAND.Unit, true);
+      
+      LEGION_NEXUS_NORTHREND = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION, new Point(-3501, 20951))
+      };
+      Legend.Register(LEGION_NEXUS_NORTHREND);
+      SetUnitInvulnerable(LEGION_NEXUS_NORTHREND.Unit, true);
     }
   }
 }

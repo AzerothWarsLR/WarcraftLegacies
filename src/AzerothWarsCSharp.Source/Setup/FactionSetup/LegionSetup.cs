@@ -77,6 +77,7 @@ Your primary objective is to summon the Burning Legion. Invade the city of Dalar
       FactionLegion.ModObjectLimit(FourCC("R04G"), Faction.UNLIMITED); //Improved Carrion Swarm
       FactionLegion.ModObjectLimit(FourCC("R03Z"), Faction.UNLIMITED); //War Plating
       FactionLegion.ModObjectLimit(FourCC("R040"), Faction.UNLIMITED); //Flying horrors
+      FactionLegion.SetObjectLevel(Constants.UPGRADE_R04R_TIER_4_UNIVERSAL_UPGRADE, 1);
 
       //Heroes
       FactionLegion.ModObjectLimit(FourCC("U00L"), 1); //Anetheron
