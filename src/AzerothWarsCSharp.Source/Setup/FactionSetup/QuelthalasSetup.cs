@@ -6,7 +6,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
   public static class QuelthalasSetup
   {
     public static Faction FactionQuelthalas { get; private set; }
-    
+
     public static void Setup()
     {
       FactionQuelthalas =
@@ -82,16 +82,9 @@ The Plague of Undeath is coming, and your allies to the South will need your hel
       FactionQuelthalas.ModObjectLimit(FourCC("Rhse"), Faction.UNLIMITED); //Magic Sentry
       FactionQuelthalas.ModObjectLimit(FourCC("Rhpt"), Faction.UNLIMITED); //Priest Adept Training
       FactionQuelthalas.ModObjectLimit(FourCC("Rhst"), Faction.UNLIMITED); //Sorceress Adept Training
-
-      //Masteries
-      FactionQuelthalas.ModObjectLimit(FourCC("R01A"), Faction.UNLIMITED); //Arcane Empowerment
-      FactionQuelthalas.ModObjectLimit(FourCC("R00T"), Faction.UNLIMITED); //Archery Mastery
-      FactionQuelthalas.ModObjectLimit(FourCC("R00H"), Faction.UNLIMITED); //Blood Elf Mastery
-
-      //Paths
-      FactionQuelthalas.ModObjectLimit(FourCC("R046"), Faction.UNLIMITED); //Quel)thelas Full Mobilization
-      FactionQuelthalas.ModObjectLimit(FourCC("R04U"), Faction.UNLIMITED); //Solo Path
-
+      
+      FactionQuelthalas.ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
+      
       FactionManager.Register(FactionQuelthalas);
     }
   }

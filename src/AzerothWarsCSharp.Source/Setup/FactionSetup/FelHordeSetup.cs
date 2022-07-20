@@ -88,14 +88,16 @@ Your allies cannot reach you on Outland, you are alone.",
       FactionFelHorde.ModObjectLimit(FourCC("R035"), Faction.UNLIMITED); //Improved Firebolt
       FactionFelHorde.ModObjectLimit(FourCC("R01Z"), Faction.UNLIMITED); //Battle Stations
       FactionFelHorde.SetObjectLevel(FourCC("R01Z"), 1); //Battle Stations
-
-
+      
       FactionFelHorde.ModObjectLimit(FourCC("n05R"), 1); //Felguard
       FactionFelHorde.ModObjectLimit(FourCC("n06H"), 1); //Pit Fiend
       FactionFelHorde.ModObjectLimit(FourCC("n07B"), 1); //Queen
       FactionFelHorde.ModObjectLimit(FourCC("n07D"), 1); //Maiden
       FactionFelHorde.ModObjectLimit(FourCC("n07o"), 1); //Terror
       FactionFelHorde.ModObjectLimit(FourCC("n07N"), 1); //Lord
+      
+      FactionFelHorde.ModAbilityAvailability(Constants.ABILITY_A0MZ_DEMONIC_CONSTRUCTION_TEAL_DEMOLISHERS, -1);
+      FactionFelHorde.ModAbilityAvailability(Constants.ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, -1);
 
       FactionManager.Register(FactionFelHorde);
     }

@@ -12,7 +12,10 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
     public static Legend LegendBolvar { get; private set; }
     public static Legend LegendStormwindkeep { get; private set; }
     public static Legend LegendDarkshire { get; private set; }
+    
+    public static Legend? ConstructionSiteMartial { get; private set; }
 
+    public static Legend? ConstructionSiteMagic { get; private set; }
 
     public static void Setup()
     {
@@ -58,6 +61,18 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         Unit = PreplacedUnitSystem.GetUnit(FourCC("h03Y"))
       };
       Legend.Register(LegendDarkshire);
+
+      ConstructionSiteMagic = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H053_CONSTRUCTION_SITE_ARATHOR_CATHEDRAL_WIZARD)
+      };
+      ConstructionSiteMagic.Unit.SetInvulnerable(true);
+
+      ConstructionSiteMartial = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H055_CONSTRUCTION_SITE_ARATHOR_SI_7_CHAMPION_S_HALL)
+      };
+      ConstructionSiteMartial.Unit.SetInvulnerable(true);
     }
   }
 }

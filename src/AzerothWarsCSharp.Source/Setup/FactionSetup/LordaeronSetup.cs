@@ -73,23 +73,32 @@ Burn these infected buildings to weaken the Cult's power."
       FactionLordaeron.ModObjectLimit(FourCC("Harf"), 1); //Arthas
 
       //Upgrades
-      FactionLordaeron.ModObjectLimit(FourCC("R02E"), Faction.UNLIMITED); //Chaplain Adept Training
-      FactionLordaeron.ModObjectLimit(FourCC("R00I"), Faction.UNLIMITED); //Light)s Praise Initiate Training
-      FactionLordaeron.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
-      FactionLordaeron.ModObjectLimit(FourCC("Rhse"), Faction.UNLIMITED); //Magic Sentry
-      FactionLordaeron.ModObjectLimit(FourCC("Rhan"), Faction.UNLIMITED); //Animal War Training
-      FactionLordaeron.ModObjectLimit(FourCC("Rhlh"), Faction.UNLIMITED); //Improved Lumber Harvesting
-      FactionLordaeron.ModObjectLimit(FourCC("Rhac"), Faction.UNLIMITED); //Improved Masonry
-      FactionLordaeron.ModObjectLimit(FourCC("R04D"), Faction.UNLIMITED); //Exorcism
-      FactionLordaeron.ModObjectLimit(FourCC("R01P"), Faction.UNLIMITED); //Ensnare
-      FactionLordaeron.ModObjectLimit(FourCC("R06Q"), Faction.UNLIMITED); //Paladin Adept Training
-      FactionLordaeron.ModObjectLimit(FourCC("R04A"), Faction.UNLIMITED); //Rapid Fire
-      FactionLordaeron.ModObjectLimit(FourCC("R00B"), Faction.UNLIMITED); //Veteran Footmen
-      FactionLordaeron.ModObjectLimit(FourCC("R01Q"), Faction.UNLIMITED); //Pegasus Taming
+      FactionLordaeron.ModObjectLimit(Constants.UPGRADE_R02E_LIGHT_S_PRAISE_MASTER_TRAINING_ARATHOR_LORDAERON, Faction.UNLIMITED);
+      FactionLordaeron.ModObjectLimit(Constants.UPGRADE_R00I_MAGE_MASTER_TRAINING_LORDAERON, Faction.UNLIMITED);
+      FactionLordaeron.ModObjectLimit(Constants.UPGRADE_R00K_POWER_INFUSION_4_SHARED, Faction.UNLIMITED);
+      FactionLordaeron.ModObjectLimit(Constants.UPGRADE_RHSE_MAGIC_SENTRY_PURPLE_GREEN_DARK_GREEN_RESEARCH, Faction.UNLIMITED);
+      FactionLordaeron.ModObjectLimit(Constants.UPGRADE_RHAN_ANIMAL_WAR_TRAINING_DARK_GREEN_PURPLE_RESEARCH, Faction.UNLIMITED);
+      FactionLordaeron.ModObjectLimit(Constants.UPGRADE_RHLH_IMPROVED_LUMBER_HARVESTING_ADVANCED_LUMBER_HARVESTING_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, Faction.UNLIMITED);
+      FactionLordaeron.ModObjectLimit(Constants.UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, Faction.UNLIMITED);
+      FactionLordaeron.ModObjectLimit(Constants.UPGRADE_R04D_SEAL_OF_RIGHTEOUSNESS_LORDAERON, Faction.UNLIMITED);
+      FactionLordaeron.ModObjectLimit(Constants.UPGRADE_R01P_ENSNARE_LORDAERON, Faction.UNLIMITED);
+      FactionLordaeron.ModObjectLimit(Constants.UPGRADE_R06Q_PALADIN_MASTER_TRAINING_LORDAERON, Faction.UNLIMITED);
+      FactionLordaeron.ModObjectLimit(Constants.UPGRADE_R04A_RAPID_FIRE_LORDAERON, Faction.UNLIMITED);
+      FactionLordaeron.ModObjectLimit(Constants.UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON, Faction.UNLIMITED);
+      FactionLordaeron.ModObjectLimit(Constants.UPGRADE_R01Q_PEGASUS_TAMING_LORDAERON, Faction.UNLIMITED);
 
-      FactionLordaeron.ModObjectLimit(FourCC("R08E"), Faction.UNLIMITED); //Garithos Crusade
-      FactionLordaeron.ModObjectLimit(FourCC("R08F"), Faction.UNLIMITED); //Mind Control
+      FactionLordaeron.ModObjectLimit(Constants.UPGRADE_R08E_JOIN_THE_CRUSADE_LORDAERON, Faction.UNLIMITED);
+      FactionLordaeron.ModObjectLimit(Constants.UPGRADE_R08F_GARITHOS_MIND_CONTROL_LORDAERON, Faction.UNLIMITED);
 
+      //Todo: these probably should be in some kind of ability library, not here
+      FactionLordaeron.ModAbilityAvailability(Constants.ABILITY_A0KC_INCINERATE_PURPLE_ALEXANDROS, -1);
+      FactionLordaeron.ModAbilityAvailability(Constants.ABILITY_A0MQ_PULVERIZE_PURPLE_ALEXANDROS, -1);
+      FactionLordaeron.ModAbilityAvailability(Constants.ABILITY_A0NP_COMMUNION_ALEXANDROS_SPELLBOOK, -1);
+      FactionLordaeron.ModAbilityAvailability(Constants.ABILITY_A0N2_GRASPING_VINES_TREANTS, -1);
+      FactionLordaeron.ModAbilityAvailability(Constants.ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);
+      FactionLordaeron.ModAbilityAvailability(Constants.ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);
+      FactionLordaeron.ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
+      
       FactionManager.Register(FactionLordaeron);
     }
   }

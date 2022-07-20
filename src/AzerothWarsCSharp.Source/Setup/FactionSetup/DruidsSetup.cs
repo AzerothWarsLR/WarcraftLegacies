@@ -77,8 +77,10 @@ The Horde is gathering to burn Ashenvale forest and all within, gather your forc
       factionDruids.ModObjectLimit(FourCC("R047"), Faction.UNLIMITED); //Crippling Poison
       factionDruids.ModObjectLimit(FourCC("R048"), Faction.UNLIMITED); //Deadly Poison
       factionDruids.ModObjectLimit(FourCC("R008"), Faction.UNLIMITED); //Improved Natures FuryR015
-      factionDruids.ModObjectLimit(FourCC("R015"), Faction.UNLIMITED); //Improved Mana Flare
+      factionDruids.ModObjectLimit(FourCC("R015"), Constants.UPGRADE_R015_IMPROVED_MANA_FLARE_DRUIDS);
 
+      factionDruids.SetObjectLevel(Constants.UPGRADE_REWS_WELL_SPRING, 1);
+      
       FactionManager.Register(factionDruids);
     }
   }

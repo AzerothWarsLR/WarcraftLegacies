@@ -90,6 +90,11 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, they will be th
       Stormwind.ModObjectLimit(FourCC("R03A"), Faction.UNLIMITED); //Focus In The Light
       Stormwind.ModObjectLimit(FourCC("R03T"), Faction.UNLIMITED); //Electric Strike Ritual
       Stormwind.ModObjectLimit(FourCC("R03U"), Faction.UNLIMITED); //Solar Flare Ritual
+      
+      Stormwind.ModAbilityAvailability(Constants.ABILITY_ACAV_DEVOTION_AURA_ARATHOR_CAPITALS, -1);
+      Stormwind.ModAbilityAvailability(Constants.ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);
+      Stormwind.ModAbilityAvailability(Constants.ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);
+      Stormwind.ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
 
       FactionManager.Register(Stormwind);
     }

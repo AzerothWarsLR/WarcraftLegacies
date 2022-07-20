@@ -10,6 +10,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
     public static Legend LegendLucille { get; private set; }
     public static Legend LegendKatherine { get; private set; }
     public static Legend LegendBoralus { get; private set; }
+    public static Legend Flagship { get; private set; }
 
     public static void Setup()
     {
@@ -35,10 +36,17 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 
       LegendBoralus = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("h046")),
-        DeathMessage = "Boralus Keep has fallen"
+        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H046_BORALUS_KEEP_KUL_TIRAS),
+        DeathMessage = "Boralus Keep has fallen" //Todo: pointless flavour
       };
       Legend.Register(LegendBoralus);
+
+      Flagship = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS)
+      };
+      Flagship.Unit.SetInvulnerable(true);
+      Flagship.Unit.Pause(true);
     }
   }
 }

@@ -79,16 +79,22 @@ Stormwind is preparing for the Fel Horde invasion in the South, muster the thron
       FACTION_IRONFORGE.ModObjectLimit(FourCC("Rhri"), Faction.UNLIMITED); //Long Rifles
       FACTION_IRONFORGE.ModObjectLimit(FourCC("Rhhb"), Faction.UNLIMITED); //Storm Hammers
       FACTION_IRONFORGE.ModObjectLimit(FourCC("R063"), Faction.UNLIMITED); //Thunder Ale
-      FACTION_IRONFORGE.ModObjectLimit(FourCC("Rhme"), Faction.UNLIMITED); //Copper Forged Weaponry
-      FACTION_IRONFORGE.ModObjectLimit(FourCC("Rhar"), Faction.UNLIMITED); //Copper Armor Plating
-      FACTION_IRONFORGE.ModObjectLimit(FourCC("R014"), Faction.UNLIMITED); //Deeprun Tram
-      FACTION_IRONFORGE.ModObjectLimit(FourCC("R00V"), Faction.UNLIMITED); //Rune Priest Adept Training
-      FACTION_IRONFORGE.ModObjectLimit(FourCC("R00Z"), Faction.UNLIMITED); //Armor Penetration Rounds
-      FACTION_IRONFORGE.ModObjectLimit(FourCC("R010"), Faction.UNLIMITED); //Improved Spell Resistance
-      FACTION_IRONFORGE.ModObjectLimit(FourCC("R00T"), Faction.UNLIMITED); //Overclock
-      FACTION_IRONFORGE.ModObjectLimit(FourCC("R00N"), Faction.UNLIMITED); //Improved Swig
-      FACTION_IRONFORGE.ModObjectLimit(FourCC("R08K"), Faction.UNLIMITED); //Titanforge Artifact
+      FACTION_IRONFORGE.ModObjectLimit(Constants.UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE, Faction.UNLIMITED);
+      FACTION_IRONFORGE.ModObjectLimit(Constants.UPGRADE_RHAR_PYRITE_ARMOR_PLATING_UNIVERSAL_UPGRADE, Faction.UNLIMITED);
+      FACTION_IRONFORGE.ModObjectLimit(Constants.UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, Faction.UNLIMITED);
+      FACTION_IRONFORGE.ModObjectLimit(Constants.UPGRADE_R00V_RUNE_PRIEST_MASTER_TRAINING_IRONFORGE, Faction.UNLIMITED);
+      FACTION_IRONFORGE.ModObjectLimit(Constants.UPGRADE_R00Z_ARMOR_PENETRATION_ROUNDS_IRONFORGE, Faction.UNLIMITED);
+      FACTION_IRONFORGE.ModObjectLimit(Constants.UPGRADE_R010_IMPROVED_SPELL_RESISTANCE_IRONFORGE, Faction.UNLIMITED);
+      FACTION_IRONFORGE.ModObjectLimit(Constants.UPGRADE_R00T_OVERCLOCK_IRONFORGE_STEAM_TANK, Faction.UNLIMITED);
+      FACTION_IRONFORGE.ModObjectLimit(Constants.UPGRADE_R00N_IMPROVED_SWIG_IRONFORGE_TAVERN, Faction.UNLIMITED);
+      FACTION_IRONFORGE.ModObjectLimit(Constants.UPGRADE_R08K_TITANFORGE_ARTIFACT_IRONFORGE, Faction.UNLIMITED);
 
+      FACTION_IRONFORGE.ModAbilityAvailability(Constants.ABILITY_A0IH_SPIKED_BARRICADES_DWARF_KEEP, -1);
+      FACTION_IRONFORGE.ModAbilityAvailability(Constants.ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);
+      FACTION_IRONFORGE.ModAbilityAvailability(Constants.ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);
+      FACTION_IRONFORGE.ModAbilityAvailability(Constants.ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);
+      FACTION_IRONFORGE.ModAbilityAvailability(Constants.ABILITY_A0IH_SPIKED_BARRICADES_DWARF_KEEP, -1);
+      
       FactionManager.Register(FACTION_IRONFORGE);
     }
   }

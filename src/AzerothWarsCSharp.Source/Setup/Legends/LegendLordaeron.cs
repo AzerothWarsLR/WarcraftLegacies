@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.Legends
@@ -19,49 +20,55 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
     {
       LegendMograine = new Legend
       {
-        UnitType = FourCC("H01J"),
+        UnitType = Constants.UNIT_H01J_THE_ASHBRINGER_LORDAERON,
         StartingXp = 2800
       };
       Legend.Register(LegendMograine);
 
       LegendGarithos = new Legend
       {
-        UnitType = FourCC("Hlgr"),
+        UnitType = Constants.UNIT_HLGR_GRAND_MARSHAL_SCARLET,
         StartingXp = 2800
       };
       Legend.Register(LegendGarithos);
 
       LegendGoodchild = new Legend
       {
-        UnitType = FourCC("E00O"),
+        UnitType = Constants.UNIT_E000_IMPROVED_ANCIENT_PROTECTOR_DRUIDS,
         StartingXp = 2800
       };
       Legend.Register(LegendGoodchild);
 
       LegendCapitalpalace = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("h000")),
+        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H000_CAPITAL_PALACE_LORDAERON),
         DeathMessage = "The capital city of Lordaeron has been razed, and King Terenas is dead."
       };
       Legend.Register(LegendCapitalpalace);
+      LegendCapitalpalace.Unit.SetInvulnerable(true);
+      //Todo: these lines below should not be here
+      PreplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(8686, 8862)).SetInvulnerable(true);
+      PreplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(9476, 8843)).SetInvulnerable(true);
 
       LegendStratholme = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("h01G")),
+        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H01G_STRATHOLME_CASTLE_LORDAERON),
         DeathMessage = "The majestic city of Stratholme has been destroyed."
       };
       Legend.Register(LegendStratholme);
+      LegendStratholme.Unit.SetInvulnerable(true);
 
       LegendTyrshand = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("h030")),
+        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H030_TYR_S_HAND_CITADEL_LORDAERON),
         DeathMessage = "Tyr's Hand, the bastion of human power in Lordaeron, has fallen."
       };
       Legend.Register(LegendTyrshand);
+      LegendTyrshand.Unit.SetInvulnerable(true);
 
       LegendUther = new Legend
       {
-        UnitType = FourCC("Huth"),
+        UnitType = Constants.UNIT_HUTH_LEADER_OF_THE_SILVER_HAND_LORDAERON,
         DeathMessage =
           "Uther the Lightbringer makes his last stand, perishing in the defense of the light. Lordaeron, and humanity itself, has lost one of its finest exemplars in this dark hour.",
         PlayerColor = PLAYER_COLOR_LIGHT_BLUE,
@@ -71,7 +78,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 
       LegendArthas = new Legend
       {
-        UnitType = FourCC("Hart"),
+        UnitType = Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON,
         PlayerColor = PLAYER_COLOR_BLUE
       };
       Legend.Register(LegendArthas);
