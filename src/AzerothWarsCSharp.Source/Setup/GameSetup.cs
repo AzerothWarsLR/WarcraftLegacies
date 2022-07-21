@@ -55,6 +55,7 @@ namespace AzerothWarsCSharp.Source.Setup
       OpenAllianceVote.Setup();
       AugmentSetup.Setup();
       RockSetup.Setup();
+      TurnResearchSetup.Setup();
     }
   }
 }
