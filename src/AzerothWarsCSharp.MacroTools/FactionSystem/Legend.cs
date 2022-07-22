@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using WCSharp.Events;
+using WCSharp.Lightnings;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -32,6 +33,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     private unit? _unit;
     private int _unitType;
+    private List<unit> _protectors = new();
 
     public Legend()
     {
@@ -42,8 +44,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     {
       return AllLegends.AsReadOnly();
     }
-
-    public bool EnableMessages { get; set; }
 
     public string Name
     {
@@ -91,14 +91,14 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
     }
 
-    public string DeathSfx { private get; set; } = "Abilities\\Spells\\Demon\\DarkPortal\\DarkPortalTarget.mdl";
+    public string DeathSfx { private get; init; } = "Abilities\\Spells\\Demon\\DarkPortal\\DarkPortalTarget.mdl";
 
     public string DeathMessage { private get; set; }
 
     /// <summary>
     ///   Whether or not the unit changes ownership to its attacker when its hitpoints are reduced past a threshold.
     /// </summary>
-    public bool Capturable { get; set; }
+    public bool Capturable { get; init; }
 
     public unit? Unit
     {
@@ -171,7 +171,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       {
         if (_unit != null)
         {
-          unit newUnit = CreateUnit(OwningPlayer, value, GetUnitX(_unit), GetUnitY(_unit), GetUnitFacing(_unit));
+          var newUnit = CreateUnit(OwningPlayer, value, GetUnitX(_unit), GetUnitY(_unit), GetUnitFacing(_unit));
           SetUnitState(newUnit, UNIT_STATE_LIFE, GetUnitState(_unit, UNIT_STATE_LIFE));
           SetUnitState(newUnit, UNIT_STATE_MANA, GetUnitState(_unit, UNIT_STATE_MANA));
           SetHeroXP(newUnit, GetHeroXP(_unit), false);
@@ -208,6 +208,23 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     public static event EventHandler<Legend>? OnLegendDeath;
 
+    /// <summary>
+    /// Adds a protector to the Legend.
+    /// Legends are invulnerable until all of their protectors are destroyed.
+    /// </summary>
+    public void AddProtector(unit protector)
+    {
+      _protectors.Add(protector);
+      LightningSystem.Add(new Lightning("BLNL", protector, Unit)
+      {
+        Duration = float.MaxValue,
+        FadeDuration = float.MaxValue,
+        CasterHeightOffset = 50f,
+        TargetHeightOffset = 50f
+      });
+      Unit?.SetInvulnerable(true);
+    }
+    
     public void ClearUnitDependencies()
     {
       DestroyGroup(_diesWithout);
@@ -267,13 +284,13 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         UnitRemoveAbility(_unit, _dummyPermadies);
         if (_diesWithout != null)
         {
-          group tempGroup = CreateGroup();
-          string tooltip =
+          var tempGroup = CreateGroup();
+          var tooltip =
             "When this unit dies, it will be unrevivable unless any of the following capitals are under your control:\n";
           BlzGroupAddGroupFast(_diesWithout, tempGroup);
           while (true)
           {
-            unit u = FirstOfGroup(tempGroup);
+            var u = FirstOfGroup(tempGroup);
             if (u == null) break;
 
             tooltip = tooltip + " - " + GetUnitName(u) + "|n";
@@ -299,7 +316,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       OnLegendPrePermaDeath?.Invoke(this, this);
       if (IsUnitType(_unit, UNIT_TYPE_HERO))
       {
-        effect tempEffect = AddSpecialEffect(DeathSfx, GetUnitX(_unit), GetUnitY(_unit));
+        var tempEffect = AddSpecialEffect(DeathSfx, GetUnitX(_unit), GetUnitY(_unit));
         BlzSetSpecialEffectScale(tempEffect, 2);
         DestroyEffect(tempEffect);
         if (_unit != null)
@@ -309,16 +326,16 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
         }
       }
 
-      if (!string.IsNullOrEmpty(DeathMessage) && EnableMessages)
+      if (!string.IsNullOrEmpty(DeathMessage))
       {
-        string displayString = IsUnitType(_unit, UNIT_TYPE_STRUCTURE)
+        var displayString = IsUnitType(_unit, UNIT_TYPE_STRUCTURE)
           ? "\n|cffffcc00CAPITAL DESTROYED|r\n"
           : "\n|cffffcc00HERO SLAIN|r\n";
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, displayString + DeathMessage);
       }
 
       if (Hivemind && OwningPlayer != null)
-        OwningPlayer.GetFaction().Obliterate();
+        OwningPlayer.GetFaction()?.Obliterate();
 
       OnLegendPermaDeath?.Invoke(this, this);
       PermanentlyDied?.Invoke(this, this);
@@ -331,12 +348,10 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     private void OnDamaging()
     {
-      if (Capturable && GetEventDamage() + 1 >= GetUnitState(_unit, UNIT_STATE_LIFE))
-      {
-        SetUnitOwner(_unit, GetOwningPlayer(GetEventDamageSource()), true);
-        BlzSetEventDamage(0);
-        SetUnitState(_unit, UNIT_STATE_LIFE, GetUnitState(_unit, UNIT_STATE_MAX_LIFE));
-      }
+      if (!Capturable || !(GetEventDamage() + 1 >= GetUnitState(_unit, UNIT_STATE_LIFE))) return;
+      SetUnitOwner(_unit, GetOwningPlayer(GetEventDamageSource()), true);
+      BlzSetEventDamage(0);
+      SetUnitState(_unit, UNIT_STATE_LIFE, GetUnitState(_unit, UNIT_STATE_MAX_LIFE));
     }
 
     private void OnCast()
@@ -377,24 +392,22 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
 
       var anyOwned = false;
-      if (_diesWithout != null)
+      if (_diesWithout == null) return;
+      var tempGroup = CreateGroup();
+      BlzGroupAddGroupFast(_diesWithout, tempGroup);
+      while (true)
       {
-        group tempGroup = CreateGroup();
-        BlzGroupAddGroupFast(_diesWithout, tempGroup);
-        while (true)
-        {
-          unit u = FirstOfGroup(tempGroup);
-          if (u == null) break;
+        var u = FirstOfGroup(tempGroup);
+        if (u == null) break;
 
-          if (GetOwningPlayer(u) == GetOwningPlayer(_unit) && UnitAlive(u)) anyOwned = true;
+        if (GetOwningPlayer(u) == GetOwningPlayer(_unit) && UnitAlive(u)) anyOwned = true;
 
-          GroupRemoveUnit(tempGroup, u);
-        }
-
-        if (anyOwned == false) PermaDeath();
-
-        DestroyGroup(tempGroup);
+        GroupRemoveUnit(tempGroup, u);
       }
+
+      if (anyOwned == false) PermaDeath();
+
+      DestroyGroup(tempGroup);
     }
 
     /// <summary>
@@ -429,12 +442,10 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     //When any unit is trained, check if it has the unittype of a Legend, and assign it to that Legend if so
     private void OnUnitTrain()
     {
-      unit trainedUnit = GetTrainedUnit();
-      if (UnitType == GetUnitTypeId(trainedUnit))
-      {
-        Unit = trainedUnit;
-        ChangedOwner?.Invoke(this, null);
-      }
+      var trainedUnit = GetTrainedUnit();
+      if (UnitType != GetUnitTypeId(trainedUnit)) return;
+      Unit = trainedUnit;
+      ChangedOwner?.Invoke(this, null);
     }
 
     ~Legend()
