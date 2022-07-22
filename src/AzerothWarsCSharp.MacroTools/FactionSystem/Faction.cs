@@ -421,9 +421,13 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// </summary>
     public void ModAbilityAvailability(int ability, int value)
     {
-      if (!_abilityAvailabilities.TryAdd(ability, value))
+      if (_abilityAvailabilities.ContainsKey(ability))
       {
         _abilityAvailabilities[ability] += value;
+      }
+      else
+      {
+        _abilityAvailabilities[ability] = value;
       }
       Player?.SetAbilityAvailability(ability, value > 0);
     }
