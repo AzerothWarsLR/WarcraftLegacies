@@ -23,7 +23,6 @@ namespace AzerothWarsCSharp.TestSource.Setup
       CheatNocd.Setup();
       CheatOwner.Setup();
       CheatRemove.Setup();
-      CheatSkipCinematic.Setup();
       CheatSpawn.Setup();
       CheatTeam.Setup();
       CheatTele.Setup();
