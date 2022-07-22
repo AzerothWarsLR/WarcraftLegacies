@@ -20,12 +20,13 @@ namespace AzerothWarsCSharp.Source.Game_Logic
         {
           PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesConstruction, () =>
           {
+            var constructedStructure = GetConstructedStructure();
             foreach (var banZone in banZones)
             {
-              var constructedStructure = GetConstructedStructure();
               if (!banZone.Contains(GetUnitX(constructedStructure), GetUnitY(constructedStructure))) continue;
-              KillUnit(constructedStructure);
               GetOwningPlayer(constructedStructure).AddGold(GetUnitGoldCost(GetUnitTypeId(constructedStructure)));
+              GetOwningPlayer(constructedStructure).AddLumber(GetUnitWoodCost(GetUnitTypeId(constructedStructure)));
+              KillUnit(constructedStructure);
             }
           });
         }
