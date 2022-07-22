@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       _waygateB = waygateB;
       AddObjective(new ObjectiveResearch(Constants.UPGRADE_R050_DECLARE_FORSAKEN_INDEPENDENCE_FORSAKEN,
         FourCC("h08B")));
-      AddObjective(new ObjectiveLegendInRect(LegendForsaken.LegendSylvanasv, Regions.Terenas, "Capital City"));
+      AddObjective(new ObjectiveLegendInRect(LegendForsaken.SylvanasUndead, Regions.Terenas, "Capital City"));
       AddObjective(new ObjectiveLegendDead(LegendLordaeron.LegendCapitalpalace));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R04X");

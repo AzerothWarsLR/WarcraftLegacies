@@ -6,40 +6,40 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 {
   public static class LegendForsaken
   {
-    public static Legend LegendSylvanasv { get; private set; }
-    public static Legend LegendScholomance { get; private set; }
-    public static Legend LegendVarimathras { get; private set; }
-    public static Legend LegendNathanos { get; private set; }
+    public static Legend SylvanasUndead { get; private set; }
+    public static Legend Scholomance { get; private set; }
+    public static Legend Varimathras { get; private set; }
+    public static Legend Nathanos { get; private set; }
 
     public static void Setup()
     {
-      LegendSylvanasv = new Legend
+      SylvanasUndead = new Legend
       {
-        UnitType = FourCC("Usyl"),
+        UnitType = Constants.UNIT_USYL_DARK_RANGER_FORSAKEN,
         StartingXp = 15400
       };
-      Legend.Register(LegendSylvanasv);
+      Legend.Register(SylvanasUndead);
 
-      LegendNathanos = new Legend
+      Nathanos = new Legend
       {
-        UnitType = FourCC("H049"),
+        UnitType = Constants.UNIT_H049_RANGER_LORD_FORSAKEN,
         StartingXp = 4000
       };
-      Legend.Register(LegendNathanos);
+      Legend.Register(Nathanos);
 
-      LegendVarimathras = new Legend
+      Varimathras = new Legend
       {
-        UnitType = FourCC("Uvar"),
+        UnitType = Constants.UNIT_UVAR_ARCH_DREADLORD_FORSAKEN,
         PlayerColor = PLAYER_COLOR_RED
       };
-      Legend.Register(LegendVarimathras);
+      Legend.Register(Varimathras);
 
-      LegendScholomance = new Legend
+      Scholomance = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("u012")),
+        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_U012_SCHOLOMANCE),
         DeathMessage = "Scholomance, the center of the ScourgeFourCC(s operations in Lordaeron, has been destroyed."
       };
-      Legend.Register(LegendScholomance);
+      Legend.Register(Scholomance);
     }
   }
 }

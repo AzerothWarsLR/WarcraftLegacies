@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       "ReplaceableTextures\\CommandButtons\\BTNHelmofdomination.blp")
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BC"))));
-      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendForsaken.LegendSylvanasv));
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendForsaken.SylvanasUndead));
       AddObjective(new ObjectiveLegendDead(LegendScourge.LegendLichking));
     }
 
@@ -26,12 +26,12 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
 
     protected override void OnComplete(Faction completingFaction)
     {
-      unit whichUnit = LegendForsaken.LegendSylvanasv.Unit;
+      unit whichUnit = LegendForsaken.SylvanasUndead.Unit;
       BlzSetUnitName(whichUnit, "Banshee Queen");
       AddSpecialEffectTarget("war3mapImported\\SoulArmor.mdx", whichUnit, "chest");
       BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0, 5); //Chaos
       whichUnit.AddHeroAttributes(20, 0, 20);
-      LegendForsaken.LegendSylvanasv.ClearUnitDependencies();
+      LegendForsaken.SylvanasUndead.ClearUnitDependencies();
     }
   }
 }
