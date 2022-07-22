@@ -33,7 +33,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     private unit? _unit;
     private int _unitType;
-    private List<unit> _protectors = new();
+    private readonly List<Protector> _protectors = new();
 
     public Legend()
     {
@@ -114,37 +114,34 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
         _unit = value;
 
-        if (Unit != null)
-        {
-          _unitType = GetUnitTypeId(_unit);
-          //Death trig
-          DestroyTrigger(_deathTrig);
-          _deathTrig = CreateTrigger();
-          TriggerRegisterUnitEvent(_deathTrig, _unit, EVENT_UNIT_DEATH);
-          TriggerAddAction(_deathTrig, OnUnitDeath);
-          //Cast trig
-          DestroyTrigger(_castTrig);
-          _castTrig = CreateTrigger();
-          TriggerRegisterUnitEvent(_castTrig, _unit, EVENT_UNIT_SPELL_FINISH);
-          TriggerAddAction(_castTrig, OnUnitCast);
-          //Damage trig
-          DestroyTrigger(_damageTrig);
-          _damageTrig = CreateTrigger();
-          TriggerRegisterUnitEvent(_damageTrig, _unit, EVENT_UNIT_DAMAGED);
-          TriggerAddAction(_damageTrig, OnUnitDamaged);
-          //Ownership change trig
-          DestroyTrigger(_ownerTrig);
-          _ownerTrig = CreateTrigger();
-          TriggerRegisterUnitEvent(_ownerTrig, _unit, EVENT_UNIT_CHANGE_OWNER);
-          TriggerAddAction(_ownerTrig, OnUnitChangeOwner);
-          //Color
-          SetUnitColor(_unit, HasCustomColor ? _playerColor : GetPlayerColor(GetOwningPlayer(_unit)));
-          //Set XP to starting XP
-          if (GetHeroXP(_unit) < StartingXp) SetHeroXP(_unit, StartingXp, true);
+        if (Unit == null) return;
+        _unitType = GetUnitTypeId(_unit);
+        //Death trig
+        DestroyTrigger(_deathTrig);
+        _deathTrig = CreateTrigger();
+        TriggerRegisterUnitEvent(_deathTrig, _unit, EVENT_UNIT_DEATH);
+        TriggerAddAction(_deathTrig, OnUnitDeath);
+        //Cast trig
+        DestroyTrigger(_castTrig);
+        _castTrig = CreateTrigger();
+        TriggerRegisterUnitEvent(_castTrig, _unit, EVENT_UNIT_SPELL_FINISH);
+        TriggerAddAction(_castTrig, OnUnitCast);
+        //Damage trig
+        DestroyTrigger(_damageTrig);
+        _damageTrig = CreateTrigger();
+        TriggerRegisterUnitEvent(_damageTrig, _unit, EVENT_UNIT_DAMAGED);
+        TriggerAddAction(_damageTrig, OnUnitDamaged);
+        //Ownership change trig
+        DestroyTrigger(_ownerTrig);
+        _ownerTrig = CreateTrigger();
+        TriggerRegisterUnitEvent(_ownerTrig, _unit, EVENT_UNIT_CHANGE_OWNER);
+        TriggerAddAction(_ownerTrig, OnUnitChangeOwner);
+        
+        SetUnitColor(_unit, HasCustomColor ? _playerColor : GetPlayerColor(GetOwningPlayer(_unit)));
+        if (GetHeroXP(_unit) < StartingXp) SetHeroXP(_unit, StartingXp, true);
 
-          ByUnit[Unit] = this;
-          RefreshDummy();
-        }
+        ByUnit[Unit] = this;
+        RefreshDummy();
       }
     }
 
@@ -208,14 +205,35 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     public static event EventHandler<Legend>? OnLegendDeath;
 
+    private void OnProtectorDeath(object? sender, Protector protector)
+    {
+      try
+      {
+        _protectors.Remove(protector);
+        protector.ProtectorDied -= OnProtectorDeath;
+        if (_protectors.Count != 0) return;
+        if (!BlzIsUnitInvulnerable(Unit))
+        {
+          throw new Exception($"{Name}'s last protector died, which should make it vulnerable, but it is already vulnerable.");
+        }
+        Unit?.SetInvulnerable(false);
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex);
+      }
+    }
+    
     /// <summary>
     /// Adds a protector to the Legend.
     /// Legends are invulnerable until all of their protectors are destroyed.
     /// </summary>
-    public void AddProtector(unit protector)
+    public void AddProtector(unit whichUnit)
     {
+      var protector = new Protector(whichUnit);
       _protectors.Add(protector);
       Unit?.SetInvulnerable(true);
+      protector.ProtectorDied += OnProtectorDeath;
     }
     
     public void ClearUnitDependencies()
