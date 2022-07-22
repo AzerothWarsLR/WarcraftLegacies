@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.Legends
@@ -55,7 +56,9 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         DeathMessage = "Stormwind Keep, the capitol of the nation of Stormwind, has been destroyed!"
       };
       Legend.Register(LegendStormwindkeep);
-
+      LegendStormwindkeep.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND, new Point(9530, -10941)));
+      LegendStormwindkeep.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND, new Point(10177, -10952)));
+      
       LegendDarkshire = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnit(FourCC("h03Y"))

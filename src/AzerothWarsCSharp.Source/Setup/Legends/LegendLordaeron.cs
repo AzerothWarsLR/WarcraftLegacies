@@ -56,7 +56,9 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         DeathMessage = "The majestic city of Stratholme has been destroyed."
       };
       Legend.Register(LegendStratholme);
-      LegendStratholme.Unit.SetInvulnerable(true);
+      LegendStratholme.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(14067, 12242)));
+      LegendStratholme.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(14553, 11593)));
+      LegendStratholme.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(15359, 11612)));
 
       LegendTyrshand = new Legend
       {
@@ -64,7 +66,9 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         DeathMessage = "Tyr's Hand, the bastion of human power in Lordaeron, has fallen."
       };
       Legend.Register(LegendTyrshand);
-      LegendTyrshand.Unit.SetInvulnerable(true);
+      LegendTyrshand.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_HCTW_CANNON_TOWER, new Point(20652, 8057)));
+      LegendTyrshand.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER, new Point(20024, 8123)));
+      LegendTyrshand.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER, new Point(20042, 7420)));
 
       LegendUther = new Legend
       {

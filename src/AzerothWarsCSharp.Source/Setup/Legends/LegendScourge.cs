@@ -1,6 +1,7 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.UnitEffects;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.Legends
@@ -60,7 +61,10 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
           "The great Lich King has been destroyed. With no central mind to command them, the forces of the Undead have gone rogue."
       };
       Legend.Register(LegendLichking);
-      SetUnitInvulnerable(LegendLichking.Unit, true);
+      LegendLichking.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3655, 20220)));
+      LegendLichking.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3015, 20762)));
+      LegendLichking.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3643, 22588)));
+      LegendLichking.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3638, 23374)));
 
       Naxxramas = new Legend
       {

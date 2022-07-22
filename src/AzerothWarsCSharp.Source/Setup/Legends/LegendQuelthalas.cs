@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.Legends
@@ -34,7 +35,8 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         Capturable = true
       };
       Legend.Register(LegendSunwell);
-      LegendSunwell.Unit.SetInvulnerable(true);
+      LegendSunwell.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS, new Point(20479, 17477)));
+      LegendSunwell.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS, new Point(17415, 13196)));
 
       LegendAnasterian = new Legend
       {
