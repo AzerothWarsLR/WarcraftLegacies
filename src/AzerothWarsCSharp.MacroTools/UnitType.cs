@@ -5,7 +5,7 @@ using static War3Api.Common;
 namespace AzerothWarsCSharp.MacroTools
 {
   /// <summary>
-  /// Contains extra Azeroth Wars specific information about Warcraft 3 unit types.
+  /// Contains extra Warcraft Legacies-specific information about Warcraft 3 unit types.
   /// </summary>
   public sealed class UnitType
   {
@@ -28,11 +28,6 @@ namespace AzerothWarsCSharp.MacroTools
     public bool Meta { get; set; }
 
     /// <summary>
-    /// Whether or not the unit should be refunded when the player leaves.
-    /// </summary>
-    public bool Refund { get; set; }
-
-    /// <summary>
     /// An arbitrary category, like "Shipyard" or "Shop".
     /// </summary>
     public int UnitCategory { get; set; }
@@ -53,10 +48,14 @@ namespace AzerothWarsCSharp.MacroTools
       return ById[id];
     }
 
+    public static void Register(UnitType unitType)
+    {
+      ById[unitType._unitId] = unitType;
+    }
+    
     public UnitType(int unitId)
     {
-      this._unitId = unitId;
-      ById[unitId] = this;
+      _unitId = unitId;
     }
   }
 }

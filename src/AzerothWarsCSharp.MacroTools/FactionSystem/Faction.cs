@@ -521,7 +521,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
       foreach (var unit in playerUnits)
       {
-        UnitType loopUnitType = UnitType.GetFromHandle(unit);
+        var loopUnitType = UnitType.GetFromHandle(unit);
         //Refund gold and experience of heroes
         if (IsUnitType(unit, UNIT_TYPE_HERO))
         {
@@ -534,7 +534,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
           RemoveUnit(unit);
           //Refund gold and lumber of refundable units
         }
-        else if (loopUnitType.Refund)
+        else if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
         {
           Gold += loopUnitType.GoldCost * RefundPercent;
           Lumber += loopUnitType.LumberCost * RefundPercent;

@@ -12,6 +12,7 @@ using AzerothWarsCSharp.Source.Mechanics.Quelthalas;
 using AzerothWarsCSharp.Source.Mechanics.Scourge.Blight;
 using AzerothWarsCSharp.Source.Rocks;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
+using AzerothWarsCSharp.Source.UnitTypes;
 
 namespace AzerothWarsCSharp.Source.Setup
 {
@@ -56,6 +57,7 @@ namespace AzerothWarsCSharp.Source.Setup
       AugmentSetup.Setup();
       RockSetup.Setup();
       TurnResearchSetup.Setup();
+      UnitTypeConfig.Setup();
     }
   }
 }
