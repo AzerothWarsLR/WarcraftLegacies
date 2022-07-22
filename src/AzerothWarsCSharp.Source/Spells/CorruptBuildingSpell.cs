@@ -7,17 +7,20 @@ namespace AzerothWarsCSharp.Source.Spells
 {
   public sealed class CorruptBuildingSpell : Spell
   {
-    public CorruptBuildingSpell(int id) : base(id)
+    private readonly int _bonusIncome;
+    private readonly int _bonusHealth;
+
+    public CorruptBuildingSpell(int id, int bonusIncome, int bonusHealth) : base(id)
     {
+      _bonusIncome = bonusIncome;
+      _bonusHealth = bonusHealth;
     }
-
-    public int BonusIncome { get; init; }
-
+    
     public override void OnCast(unit caster, unit target, float targetX, float targetY)
     {
-      var buff = new CorruptBuildingBuff(caster, target)
+      SetUnitState(target, UNIT_STATE_LIFE, GetUnitState(target, UNIT_STATE_MAX_LIFE));
+      var buff = new CorruptBuildingBuff(caster, target, _bonusIncome, _bonusHealth)
       {
-        BonusIncome = BonusIncome,
         Duration = float.MaxValue
       };
       BuffSystem.Add(buff, StackBehaviour.Stack);

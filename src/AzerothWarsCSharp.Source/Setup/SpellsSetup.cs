@@ -315,10 +315,7 @@ namespace AzerothWarsCSharp.Source.Setup
         Constants.ABILITY_A0KZ_SPELL_IMMUNITY_LEGION_SUMMON);
       SpellSystem.Register(summonBurningLegion);
 
-      var corruptBuilding = new CorruptBuildingSpell(Constants.ABILITY_A0N8_CORRUPT_FORSAKEN)
-      {
-        BonusIncome = 6
-      };
+      var corruptBuilding = new CorruptBuildingSpell(Constants.ABILITY_A0N8_CORRUPT_FORSAKEN, 6, 500);
       SpellSystem.Register(corruptBuilding);
 
       SpellSystem.Register(new RegionRestricted(Constants.UNIT_H097_GUARD_POST_SCARLET,

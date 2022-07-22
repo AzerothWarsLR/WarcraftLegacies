@@ -6,22 +6,27 @@ namespace AzerothWarsCSharp.Source.Buffs
 {
   public sealed class CorruptBuildingBuff : PassiveBuff
   {
-    public CorruptBuildingBuff(unit caster, unit target) : base(caster, target)
+    private readonly int _bonusIncome;
+    private readonly int _bonusHealth;
+
+    public CorruptBuildingBuff(unit caster, unit target, int bonusIncome, int bonusHealth) : base(caster, target)
     {
+      _bonusIncome = bonusIncome;
+      _bonusHealth = bonusHealth;
       EffectString = @"Units\Undead\PlagueCloud\PlagueCloudtarget.mdl";
       EffectAttachmentPoint = "overhead";
     }
-
-    public int BonusIncome { get; init; }
-
+    
     public override void OnApply()
     {
-      CastingPlayer.AddBonusIncome(BonusIncome);
+      CastingPlayer.AddBonusIncome(_bonusIncome);
+      BlzSetUnitMaxHP(Target, BlzGetUnitMaxHP(Target) + _bonusHealth);
     }
 
     public override void OnDispose()
     {
-      CastingPlayer.AddBonusIncome(-BonusIncome);
+      CastingPlayer.AddBonusIncome(-_bonusIncome);
+      BlzSetUnitMaxHP(Target, BlzGetUnitMaxHP(Target) - _bonusHealth);
     }
   }
 }
