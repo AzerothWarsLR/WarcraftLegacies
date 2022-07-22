@@ -17,6 +17,7 @@ namespace AzerothWarsCSharp.Source.Game_Logic
     private static weathereffect? _illidanWind;
     private static weathereffect? _illidanRain2;
     private static weathereffect? _illidanWind2;
+    private static timer? _timer;
 
     private static void Cleanup()
     {
@@ -46,7 +47,7 @@ namespace AzerothWarsCSharp.Source.Game_Logic
       EnableWeatherEffect(_illidanWind2, false);
       RemoveWeatherEffect(_illidanRain2);
       RemoveWeatherEffect(_illidanWind2);
-      DestroyTimer(GetExpiredTimer());
+      DestroyTimer(_timer);
     }
 
     private static void PlayFactionMusic()
@@ -59,11 +60,20 @@ namespace AzerothWarsCSharp.Source.Game_Logic
         }
       }
     }
+
+    /// <summary>
+    /// Ends cinematic mode early for all players.
+    /// </summary>
+    public static void EndEarly()
+    {
+      DestroyTimer(_timer);
+      Cleanup();
+    }
     
     public static void Start(float timeout)
     {
-      var timer = CreateTimer();
-      TimerStart(timer, timeout, false, Cleanup);
+      _timer = CreateTimer();
+      TimerStart(_timer, timeout, false, Cleanup);
 
       var musicTimer = CreateTimer();
       TimerStart(musicTimer, 2.1f, false, PlayFactionMusic);
