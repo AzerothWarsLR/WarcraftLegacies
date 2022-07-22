@@ -1,4 +1,5 @@
 ﻿using AzerothWarsCSharp.MacroTools.Cheats;
+using AzerothWarsCSharp.Source.Cheats;
 
 namespace AzerothWarsCSharp.Source.Setup
 {
