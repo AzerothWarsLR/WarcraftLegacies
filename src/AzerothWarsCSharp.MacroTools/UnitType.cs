@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.MacroTools
     /// <summary>
     /// An arbitrary category, like "Shipyard" or "Shop".
     /// </summary>
-    public int UnitCategory { get; set; }
+    public UnitCategory Category { get; init; }
 
     /// <summary>
     /// Returns the UnitType representation of a unit on the map.
