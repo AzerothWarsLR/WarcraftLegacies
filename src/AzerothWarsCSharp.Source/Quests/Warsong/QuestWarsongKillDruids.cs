@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
 
     protected override void OnComplete(Faction completingFaction)
     {
-      AddHeroXP(LegendWarsong.LegendGrom.Unit, EXPERIENCE_REWARD, true);
+      AddHeroXP(LegendWarsong.GromHellscream.Unit, EXPERIENCE_REWARD, true);
     }
 
     public QuestWarsongKillDruids() : base("Tear It Down",
@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.Source.Quests.Warsong
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
     {
       AddObjective(new ObjectiveControlLegend(LegendDruids.LegendNordrassil, false));
-      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendWarsong.LegendGrom));
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendWarsong.GromHellscream));
     }
   }
 }

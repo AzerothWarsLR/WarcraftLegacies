@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       "Remnants of the ancient Highborne survive within the ruins of Dire Maul. If Feathermoon Stronghold falls, it would become a simple matter to slaughter the Highborne and plunder their artifacts.",
       "ReplaceableTextures\\CommandButtons\\BTNNagaWeaponUp2.blp")
     {
-      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendWarsong.LegendStonemaul));
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendWarsong.StonemaulKeep));
       AddObjective(new ObjectiveLegendDead(LegendSentinels.legendFeathermoon));
       AddObjective(new ObjectiveAnyUnitInRect(rescueRect, "Dire Maul", true));
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())

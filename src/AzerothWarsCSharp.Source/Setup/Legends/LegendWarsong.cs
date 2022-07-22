@@ -6,58 +6,57 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 {
   public static class LegendWarsong
   {
-    public static Legend? LegendGrom { get; private set; }
-    public static Legend? LegendJergosh { get; private set; }
-    public static Legend? LegendMannoroth { get; private set; }
-    public static Legend? LegendStonemaul { get; private set; }
-    public static Legend? LegendEncampment { get; private set; }
-    public static Legend? LegendChen { get; private set; }
-    public static Legend? LegendSaurfang { get; private set; }
-
-
+    public static Legend? GromHellscream { get; private set; }
+    public static Legend? Jergosh { get; private set; }
+    public static Legend? Mannoroth { get; private set; }
+    public static Legend? StonemaulKeep { get; private set; }
+    public static Legend? WarsongEncampment { get; private set; }
+    public static Legend? ChenStormstout { get; private set; }
+    public static Legend? Saurfang { get; private set; }
+    
     public static void Setup()
     {
-      LegendChen = new Legend
+      ChenStormstout = new Legend
       {
-        UnitType = FourCC("Nsjs"),
+        UnitType = Constants.UNIT_NSJS_BREWMASTER_WARSONG,
         StartingXp = 1000
       };
-      Legend.Register(LegendChen);
+      Legend.Register(ChenStormstout);
 
-      LegendSaurfang = new Legend
+      Saurfang = new Legend
       {
-        UnitType = FourCC("Obla"),
+        UnitType = Constants.UNIT_OBLA_HIGH_OVERLORD_OF_THE_KOR_KRON_VASSAL,
         StartingXp = 2800
       };
-      Legend.Register(LegendSaurfang);
+      Legend.Register(Saurfang);
 
-      LegendJergosh = new Legend
+      Jergosh = new Legend
       {
-        UnitType = FourCC("Oths")
+        UnitType = Constants.UNIT_OTHS_INVOKER_OF_THE_SEARING_BLADE_WARSONG_BLOODPACT
       };
-      Legend.Register(LegendJergosh);
+      Legend.Register(Jergosh);
 
-      LegendMannoroth = new Legend
+      Mannoroth = new Legend
       {
-        UnitType = FourCC("Nman")
+        UnitType = Constants.UNIT_NMAN_THE_DESTRUCTOR_WARSONG_BLOODPACT
       };
-      Legend.Register(LegendMannoroth);
+      Legend.Register(Mannoroth);
 
-      LegendStonemaul = new Legend
+      StonemaulKeep = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("o004")),
+        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_O004_STONEMAUL_KEEP),
         DeathMessage = "The fortress of the Stonemaul Clan has fallen."
       };
-      Legend.Register(LegendStonemaul);
+      Legend.Register(StonemaulKeep);
 
-      LegendEncampment = new Legend();
-      Legend.Register(LegendEncampment);
+      WarsongEncampment = new Legend();
+      Legend.Register(WarsongEncampment);
 
-      LegendGrom = new Legend
+      GromHellscream = new Legend
       {
-        UnitType = FourCC("Ogrh")
+        UnitType = Constants.UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG
       };
-      Legend.Register(LegendGrom);
+      Legend.Register(GromHellscream);
     }
   }
 }

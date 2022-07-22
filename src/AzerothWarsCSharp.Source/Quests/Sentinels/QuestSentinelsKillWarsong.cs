@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Quests.Sentinels
       "The Warsong Clan has arrived near Ashenvale and begun threatening the wilds. These invaders must be repelled.",
       "ReplaceableTextures\\CommandButtons\\BTNRaider.blp")
     {
-      AddObjective(new ObjectiveLegendDead(LegendWarsong.LegendStonemaul));
+      AddObjective(new ObjectiveLegendDead(LegendWarsong.StonemaulKeep));
       ResearchId = Constants.UPGRADE_R007_QUEST_COMPLETED_GREEN_SKINNED_BRUTES_SENTINELS;
     }
     

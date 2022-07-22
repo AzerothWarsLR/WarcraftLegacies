@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Dialogue
       try
       {
         var gromObjectives = new List<Objective>();
-        gromObjectives.Add(new ObjectiveControlLegend(LegendWarsong.LegendGrom, false)
+        gromObjectives.Add(new ObjectiveControlLegend(LegendWarsong.GromHellscream, false)
         {
           EligibleFactions = new List<Faction>
           {
