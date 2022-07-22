@@ -19,9 +19,9 @@ namespace AzerothWarsCSharp.Source.Setup
         new Instance("Dire Maul", Regions.InstanceDireMaul)
       );
 
-      InstanceSystem.Register(
-        new Instance("Scholomance", Regions.InstanceScholomance)
-      );
+      var scholomance = new Instance("Scholomance", Regions.InstanceScholomance);
+      scholomance.AddDependency(PreplacedUnitSystem.GetUnit(Constants.UNIT_N035_SCHOLOMANCE));
+      InstanceSystem.Register(scholomance);
 
       InstanceSystem.Register(
         new Instance("Blackrock Depths", Regions.InstanceBlackrock)
