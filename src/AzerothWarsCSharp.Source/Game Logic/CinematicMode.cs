@@ -7,6 +7,13 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Game_Logic
 {
+  public enum CinematicState
+  {
+    Inactive,
+    Active,
+    Finished
+  }
+  
   /// <summary>
   /// Used to engage cinematic mode, which prevents players from taking actions and manipulates sound
   /// and weather effects for a cinematic experience.
@@ -18,9 +25,15 @@ namespace AzerothWarsCSharp.Source.Game_Logic
     private static weathereffect? _illidanRain2;
     private static weathereffect? _illidanWind2;
     private static timer? _timer;
-
+    private static CinematicState _state = CinematicState.Inactive;
+    
     private static void Cleanup()
     {
+      if (_state != CinematicState.Active)
+      {
+        return;
+      }
+      
       FogEnable(true);
 
       foreach (var player in GeneralHelpers.GetAllPlayers())
@@ -48,6 +61,8 @@ namespace AzerothWarsCSharp.Source.Game_Logic
       RemoveWeatherEffect(_illidanRain2);
       RemoveWeatherEffect(_illidanWind2);
       DestroyTimer(_timer);
+
+      _state = CinematicState.Finished;
     }
 
     private static void PlayFactionMusic()
@@ -131,6 +146,8 @@ namespace AzerothWarsCSharp.Source.Game_Logic
           EnableUserControl(false);
         }
       }
+
+      _state = CinematicState.Active;
     }
   }
 }
