@@ -6,33 +6,32 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
 {
   public static class LegendGoblin
   {
-    public static Legend LEGEND_GALLYWIX { get; private set; }
-    public static Legend LEGEND_NOGGENFOGGER { get; private set; }
-    public static Legend LEGEND_GAZLOWE { get; private set; }
-    
+    public static Legend? Gallywix { get; private set; }
+    public static Legend? Noggenfogger { get; private set; }
+    public static Legend? Gazlowe { get; private set; }
     public static Legend? KezanTradingCenter { get; private set; }
 
     public static void Setup()
     {
-      LEGEND_GALLYWIX = new Legend
+      Gallywix = new Legend
       {
-        UnitType = FourCC("O04N")
+        UnitType = Constants.UNIT_O04N_TRADE_PRINCE_OF_THE_BILGEWATER_CARTEL_GOBLIN
       };
-      Legend.Register(LEGEND_GALLYWIX);
+      Legend.Register(Gallywix);
 
-      LEGEND_NOGGENFOGGER = new Legend
+      Noggenfogger = new Legend
       {
-        UnitType = FourCC("Nalc"),
+        UnitType = Constants.UNIT_NALC_BARON_OF_GADGETZAN_GOBLIN,
         StartingXp = 800
       };
-      Legend.Register(LEGEND_NOGGENFOGGER);
+      Legend.Register(Noggenfogger);
 
-      LEGEND_GAZLOWE = new Legend
+      Gazlowe = new Legend
       {
-        UnitType = FourCC("Ntin"),
+        UnitType = Constants.UNIT_NTIN_CHIEF_ENGINEER_GOBLIN,
         StartingXp = 1800
       };
-      Legend.Register(LEGEND_GAZLOWE);
+      Legend.Register(Gazlowe);
 
       KezanTradingCenter = new Legend
       {
