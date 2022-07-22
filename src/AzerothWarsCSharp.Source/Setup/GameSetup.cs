@@ -58,6 +58,36 @@ namespace AzerothWarsCSharp.Source.Setup
       RockSetup.Setup();
       TurnResearchSetup.Setup();
       UnitTypeConfig.Setup();
+      ShipyardBanZones.Setup(new []
+      {
+        Regions.CaerDarrowShipyard,
+        Regions.InstanceNazjatar,
+        Regions.Arathi_Ships,
+        Regions.Auberdine_Ships,
+        Regions.Kali_Ships,
+        Regions.Dustwallow_Ships,
+        Regions.STV_Ships,
+        Regions.Fenris_ships,
+        Regions.Auberdine_Ships_2,
+        Regions.Outland_Ships,
+        Regions.Northern_Kali_Ships,
+        Regions.Scholo_Ships,
+        Regions.DalaranDungeon,
+        Regions.Stromwind_antiship,
+        Regions.StratholmeShipyard,
+        Regions.Gilneas_Canals,
+        Regions.TwistingNether,
+        Regions.Dun_Morogh_Ships,
+        Regions.Northrend_ships,
+        Regions.Desolace_Ships,
+        Regions.South_EK_Ships,
+        Regions.IcecrownShipyard,
+        Regions.Loch_Modan_Ships,
+        Regions.Tomb_Of_Sargeras_Ships,
+        Regions.Quel_Ships_1,
+        Regions.Quel_Ships_2,
+        Regions.Quel_Ships_3
+      });
     }
   }
 }

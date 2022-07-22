@@ -9,8 +9,14 @@ namespace AzerothWarsCSharp.MacroTools
   /// </summary>
   public sealed class UnitType
   {
+    private static readonly List<UnitType> All = new();
     private static readonly Dictionary<int, UnitType> ById = new();
     private readonly int _unitId;
+
+    public static IReadOnlyCollection<UnitType> GetAll()
+    {
+      return All.AsReadOnly();
+    }
 
     /// <summary>
     /// How much gold the UnitType costs to train or build.
@@ -25,7 +31,7 @@ namespace AzerothWarsCSharp.MacroTools
     /// <summary>
     /// Whether or not the unit should be deleted without refund when the player leaves.
     /// </summary>
-    public bool Meta { get; set; }
+    public bool Meta { get; init; }
 
     /// <summary>
     /// An arbitrary category, like "Shipyard" or "Shop".
@@ -51,6 +57,7 @@ namespace AzerothWarsCSharp.MacroTools
     public static void Register(UnitType unitType)
     {
       ById[unitType._unitId] = unitType;
+      All.Add(unitType);
     }
     
     public UnitType(int unitId)
