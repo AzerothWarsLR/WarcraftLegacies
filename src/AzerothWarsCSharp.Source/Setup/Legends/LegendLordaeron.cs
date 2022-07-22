@@ -45,10 +45,10 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         DeathMessage = "The capital city of Lordaeron has been razed, and King Terenas is dead."
       };
       Legend.Register(LegendCapitalpalace);
-      LegendCapitalpalace.Unit.SetInvulnerable(true);
-      //Todo: these lines below should not be here
-      PreplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(8686, 8862)).SetInvulnerable(true);
-      PreplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(9476, 8843)).SetInvulnerable(true);
+      LegendCapitalpalace.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(8686, 8862)));
+      LegendCapitalpalace.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(9476, 8843)));
+      LegendCapitalpalace.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER, new Point(8638, 9342)));
+      LegendCapitalpalace.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER, new Point(9545, 9372)));
 
       LegendStratholme = new Legend
       {

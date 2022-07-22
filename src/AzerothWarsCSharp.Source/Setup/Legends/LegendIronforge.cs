@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.Legends
@@ -43,7 +44,8 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         DeathMessage = "The Great Forge has been extinguished." //Todo: mediocre flavour
       };
       Legend.Register(LegendGreatforge);
-      LegendGreatforge.Unit.SetInvulnerable(true);
+      LegendGreatforge.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE, new Point(10509, -5976)));
+      LegendGreatforge.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE, new Point(10710, -5974)));
 
       LegendThelsamar = new Legend
       {

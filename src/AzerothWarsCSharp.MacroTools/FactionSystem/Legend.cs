@@ -215,13 +215,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public void AddProtector(unit protector)
     {
       _protectors.Add(protector);
-      LightningSystem.Add(new Lightning("BLNL", protector, Unit)
-      {
-        Duration = float.MaxValue,
-        FadeDuration = float.MaxValue,
-        CasterHeightOffset = 50f,
-        TargetHeightOffset = 50f
-      });
       Unit?.SetInvulnerable(true);
     }
     
