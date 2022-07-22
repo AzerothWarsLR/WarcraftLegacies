@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using static War3Api.Common;
 
@@ -8,6 +9,8 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
     public static Legend LEGEND_GALLYWIX { get; private set; }
     public static Legend LEGEND_NOGGENFOGGER { get; private set; }
     public static Legend LEGEND_GAZLOWE { get; private set; }
+    
+    public static Legend? KezanTradingCenter { get; private set; }
 
     public static void Setup()
     {
@@ -30,6 +33,12 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         StartingXp = 1800
       };
       Legend.Register(LEGEND_GAZLOWE);
+
+      KezanTradingCenter = new Legend
+      {
+        UnitType = Constants.UNIT_O04M_KEZAN_TRADING_CENTER_GOBLIN
+      };
+      KezanTradingCenter.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_O05I_MISSILE_BATTERY_GOBLIN));
     }
   }
 }

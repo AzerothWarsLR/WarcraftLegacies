@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.Legends
@@ -49,7 +50,9 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
           "The Violet Citadel, the ultimate bastion of arcane knowledge in the Eastern Kingdoms, crumbles like a sand castle."
       };
       Legend.Register(LegendDalaranCapital);
-      LegendDalaranCapital.Unit.SetInvulnerable(true);
+      LegendDalaranCapital.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9084, 4979)));
+      LegendDalaranCapital.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9008, 4092)));
+      LegendDalaranCapital.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9864, 4086)));
 
       LegendAntonidas = new Legend
       {

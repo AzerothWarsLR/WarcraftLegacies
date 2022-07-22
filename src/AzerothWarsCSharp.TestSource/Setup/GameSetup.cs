@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
   {
     public static void Setup()
     {
-      CreateUnit(Player(0), FourCC("hars"), 0, 0, 0);
+      var hars = CreateUnit(Player(0), FourCC("hars"), 0, 0, 0);
       SetPlayerState(Player(0), PLAYER_STATE_RESOURCE_FOOD_CAP, 100);
 
       PreplacedUnitSystem.Initialize();
@@ -40,6 +40,8 @@ namespace AzerothWarsCSharp.TestSource.Setup
       PreplacedUnitSystem.Shutdown();
       DialogueSetup.Setup();
       AugmentSetup.Setup();
+      
+      LegendSetup.Kael.AddProtector(hars);
     }
   }
 }

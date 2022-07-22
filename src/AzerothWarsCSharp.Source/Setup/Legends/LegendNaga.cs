@@ -75,6 +75,7 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
         Hivemind = true
       };
       Legend.Register(LegendNazjatar);
+      LegendNazjatar.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_N0BQ_THE_FIRST_GUARDIAN_GREEN_NAGA));
 
       LegendVault = new Legend
       {
