@@ -45,13 +45,13 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private readonly List<Augment> _augments = new();
 
     private readonly int _defeatedResearch;
+    private readonly List<unit> _goldMines = new();
 
     private readonly Dictionary<int, int> _objectLevels = new();
     private readonly Dictionary<int, int> _objectLimits = new();
     private readonly List<Power> _powers = new();
     private readonly Dictionary<string, QuestData> _questsByName = new();
     private int _foodMaximum;
-    private readonly List<unit> _goldMines = new();
     private string _icon;
     private string _name;
     private player? _player;
@@ -70,6 +70,15 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public EventHandler<FactionPowerEventArgs>? PowerRemoved;
 
     public EventHandler<Faction>? ScoreStatusChanged;
+
+    static Faction()
+    {
+      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, () =>
+      {
+        var faction = FactionManager.GetFromPlayer(GetTriggerPlayer());
+        faction?.SetObjectLevel(GetResearched(), GetPlayerTechCount(GetTriggerPlayer(), GetResearched(), false));
+      });
+    }
 
     public Faction(string name, playercolor playerColor, string prefixCol, string icon)
     {
@@ -583,17 +592,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     {
       foreach (var unit in _goldMines) KillUnit(unit);
       _goldMines.Clear();
-    }
-
-    private static void OnAnyResearch()
-    {
-      var faction = FactionManager.GetFromPlayer(GetTriggerPlayer());
-      faction?.SetObjectLevel(GetResearched(), GetPlayerTechCount(GetTriggerPlayer(), GetResearched(), false));
-    }
-
-    public static void Setup()
-    {
-      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, OnAnyResearch);
     }
 
     /// <summary>
