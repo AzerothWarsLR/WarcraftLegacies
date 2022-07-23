@@ -63,8 +63,8 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
     protected override void OnComplete(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
-      SetPlayerTechResearched(LordaeronSetup.FactionLordaeron.Player, FourCC("R08G"), 1);
-      SetPlayerTechResearched(LegionSetup.FactionLegion.Player, FourCC("R08G"), 1);
+      SetPlayerTechResearched(LordaeronSetup.Lordaeron.Player, FourCC("R08G"), 1);
+      SetPlayerTechResearched(LegionSetup.Legion.Player, FourCC("R08G"), 1);
       ActivatePortal(_waygateA, Regions.Undercity_Interior_2.Center);
       ActivatePortal(_waygateB, Regions.Undercity_Interior_1.Center);
       completingFaction.Player?.SetTeam(TeamSetup.Forsaken);

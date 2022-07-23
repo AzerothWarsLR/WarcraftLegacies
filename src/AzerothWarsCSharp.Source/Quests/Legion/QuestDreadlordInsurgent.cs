@@ -28,12 +28,12 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
     protected override void OnComplete(Faction completingFaction)
     {
-      LegionSetup.FactionLegion.ModObjectLimit(FourCC("Utic"), -Faction.UNLIMITED); //Tichondrius
-      LegionSetup.FactionLegion.ModObjectLimit(FourCC("Umal"), -Faction.UNLIMITED); //maglanis
-      LegionSetup.FactionLegion.ModObjectLimit(FourCC("U00L"), -Faction.UNLIMITED); //Anatheron
+      LegionSetup.Legion.ModObjectLimit(FourCC("Utic"), -Faction.UNLIMITED); //Tichondrius
+      LegionSetup.Legion.ModObjectLimit(FourCC("Umal"), -Faction.UNLIMITED); //maglanis
+      LegionSetup.Legion.ModObjectLimit(FourCC("U00L"), -Faction.UNLIMITED); //Anatheron
 
-      LegionSetup.FactionLegion.ModObjectLimit(FourCC("E01O"), 1); //Lilian
-      LegionSetup.FactionLegion.ModObjectLimit(FourCC("Uvar"), 1); //Vari
+      LegionSetup.Legion.ModObjectLimit(FourCC("E01O"), 1); //Lilian
+      LegionSetup.Legion.ModObjectLimit(FourCC("Uvar"), 1); //Vari
 
       completingFaction.Player?.SetTeam(TeamSetup.Forsaken);
       completingFaction.Name = "|cff8080ffInsurgents|r";

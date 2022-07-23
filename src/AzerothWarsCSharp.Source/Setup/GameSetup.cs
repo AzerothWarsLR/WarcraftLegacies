@@ -44,7 +44,7 @@ namespace AzerothWarsCSharp.Source.Setup
       PowerBook.Initialize();
       HintConfig.Setup();
       WaygateManager.Setup(Constants.UNIT_N0AO_WAY_GATE_DALARAN);
-      BlightSystem.Setup(ScourgeSetup.FactionScourge);
+      BlightSystem.Setup(ScourgeSetup.Scourge);
       BlightSetup.Setup();
       CinematicMode.Start(59);
       QuestMenuSetup.Setup();

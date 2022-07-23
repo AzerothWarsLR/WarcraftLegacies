@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
   public static class DalaranSetup
   {
-    public static Faction Dalaran { get; private set; }
+    public static Faction? Dalaran { get; private set; }
 
     public static void Setup()
     {

@@ -12,19 +12,19 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
   {
     public static void Setup()
     {
-      QuestData newQuest = FactionFelHorde.AddQuest(new QuestKillDraenei());
-      FactionFelHorde.StartingQuest = newQuest;
-      FactionFelHorde.AddQuest(new QuestKilsorrow(Regions.KilsorrowUnlock,
+      QuestData newQuest = FelHorde.AddQuest(new QuestKillDraenei());
+      FelHorde.StartingQuest = newQuest;
+      FelHorde.AddQuest(new QuestKilsorrow(Regions.KilsorrowUnlock,
         PreplacedUnitSystem.GetUnit(Constants.UNIT_O017_KIL_SORROW_FORTRESS)));
-      FactionFelHorde.AddQuest(new QuestHellfireCitadel(Regions.HellfireUnlock, new List<unit>
+      FelHorde.AddQuest(new QuestHellfireCitadel(Regions.HellfireUnlock, new List<unit>
       {
         PreplacedUnitSystem.GetUnit(Constants.UNIT_N081_UNFOCUSED_DEMON_GATE_T0, Regions.DemonGate3.Center),
         PreplacedUnitSystem.GetUnit(Constants.UNIT_N081_UNFOCUSED_DEMON_GATE_T0, Regions.Demongate_1.Center)
       }));
-      FactionFelHorde.AddQuest(new QuestBlackrock(Regions.BlackrockUnlock));
-      FactionFelHorde.AddQuest(new QuestFelHordeKillIronforge());
-      FactionFelHorde.AddQuest(new QuestFelHordeKillStormwind());
-      FactionFelHorde.AddQuest(new QuestGuldansLegacy());
+      FelHorde.AddQuest(new QuestBlackrock(Regions.BlackrockUnlock));
+      FelHorde.AddQuest(new QuestFelHordeKillIronforge());
+      FelHorde.AddQuest(new QuestFelHordeKillStormwind());
+      FelHorde.AddQuest(new QuestGuldansLegacy());
     }
   }
 }

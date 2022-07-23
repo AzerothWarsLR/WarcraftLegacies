@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
     {
       SetPlayerTechResearched(completingFaction.Player, CataclysmResearch, 1);
       PlayThematicMusic("war3mapImported\\TwilightTheme.mp3");
-      SetPlayerTechResearched(CthunSetup.FactionCthun.Player, FourCC("R07D"), 1);
+      SetPlayerTechResearched(CthunSetup.Cthun.Player, FourCC("R07D"), 1);
       IssueImmediateOrder(LegendNeutral.LegendGrimbatol.Unit, "unrobogoblin");
       LegendTwilight.LEGEND_DEATHWING.Spawn(completingFaction.Player ?? Player(GetBJPlayerNeutralVictim()),
         Regions.TwilightOutside.Center, 0);

@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
   {
     public static void Setup()
     {
-      var zandalar = TrollSetup.FACTION_TROLL;
+      var zandalar = ZandalarSetup.Zandalar;
 
       zandalar.StartingQuest = zandalar.AddQuest(new QuestZandalar(Regions.ZandalarUnlock));
       zandalar.AddQuest(new QuestConquerKul());

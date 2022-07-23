@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
   public static class StormwindSetup
   {
-    public static Faction Stormwind { get; private set; }
+    public static Faction? Stormwind { get; private set; }
     
     public static void Setup()
     {

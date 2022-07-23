@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 
     public static void Setup( )
     {
-      var druids = FactionSetup.DruidsSetup.factionDruids;
+      var druids = FactionSetup.DruidsSetup.Druids;
       QuestData newQuest = druids.AddQuest(new QuestMalfurionAwakens(Regions.Moonglade));
       druids.StartingQuest = newQuest;
       druids.AddQuest(new QuestAshenvale(Regions.AshenvaleUnlock));

@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
   {
     public static void Setup()
     {
-      var warsong = WarsongSetup.FACTION_WARSONG;
+      var warsong = WarsongSetup.WarsongClan;
       warsong.StartingQuest = warsong.AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
       warsong.AddQuest(new QuestCrossroads(Regions.Crossroads));
       warsong.AddQuest(new QuestChenStormstout(PreplacedUnitSystem.GetUnit(FourCC("Nsjs"))));

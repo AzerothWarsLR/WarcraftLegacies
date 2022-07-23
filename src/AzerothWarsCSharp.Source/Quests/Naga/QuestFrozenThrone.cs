@@ -34,9 +34,9 @@ namespace AzerothWarsCSharp.Source.Quests.Naga
         UnitAddAbility(LegendQuelthalas.LegendKael.Unit, Constants.ABILITY_A0R7_INSTILL_RAGE_YOGG);
       }
 
-      if (FelHordeSetup.FactionFelHorde.Player?.GetTeam() == TeamSetup.Naga)
-        FelHordeSetup.FactionFelHorde.Player?.SetTeam(TeamSetup.Legion);
-      NagaSetup.FactionNaga.Player?.SetTeam(TeamSetup.Legion);
+      if (FelHordeSetup.FelHorde.Player?.GetTeam() == TeamSetup.Naga)
+        FelHordeSetup.FelHorde.Player?.SetTeam(TeamSetup.Legion);
+      IllidariSetup.Illidari.Player?.SetTeam(TeamSetup.Legion);
     }
   }
 }

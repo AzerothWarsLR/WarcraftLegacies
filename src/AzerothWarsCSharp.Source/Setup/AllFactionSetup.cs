@@ -19,9 +19,9 @@ namespace AzerothWarsCSharp.Source.Setup
       StormwindSetup.Setup();
       IronforgeSetup.Setup();
       KultirasSetup.Setup();
-      NagaSetup.Setup();
+      IllidariSetup.Setup();
       GilneasSetup.Setup();
-      TrollSetup.Setup();
+      ZandalarSetup.Setup();
       GoblinSetup.Setup();
       TwilightSetup.Setup();
       ScarletSetup.Setup();

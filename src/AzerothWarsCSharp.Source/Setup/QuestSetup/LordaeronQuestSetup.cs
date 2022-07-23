@@ -12,7 +12,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 
     public static void Setup()
     {
-      var lordaeron = LordaeronSetup.FactionLordaeron;
+      var lordaeron = LordaeronSetup.Lordaeron;
 
       var questStrahnbrad = new QuestStrahnbrad(Regions.StrahnbradUnlock);
       var questStratholme = new QuestStratholme(Regions.StratholmeUnlock);

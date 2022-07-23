@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
    public static class NzothSetup
    {
-      public static Faction? Nzoth { get; set; }
+      public static Faction? Nzoth { get; private set; }
 
       public static void Setup()
       {

@@ -48,7 +48,7 @@ namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
     protected override void OnComplete(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
-      _kilsorrowFortress.Rescue(FelHordeSetup.FactionFelHorde.Player);
+      _kilsorrowFortress.Rescue(FelHordeSetup.FelHorde.Player);
     }
   }
 }

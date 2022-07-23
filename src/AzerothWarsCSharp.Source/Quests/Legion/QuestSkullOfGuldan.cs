@@ -23,7 +23,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       AddObjective(_objectiveAnyUnitInRect);
 
       AddObjective(new ObjectiveEitherOf(new ObjectiveLegendDead(LegendNaga.LegendIllidan),
-        new ObjectiveFactionDefeated(NagaSetup.FactionNaga)));
+        new ObjectiveFactionDefeated(IllidariSetup.Illidari)));
       AddObjective(new ObjectiveSelfExists());
     }
 

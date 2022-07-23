@@ -7,7 +7,7 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
   public static class SentinelsSetup
   {
-    public static Faction Sentinels { get; private set; }
+    public static Faction? Sentinels { get; private set; }
 
 
     public static void Setup()

@@ -29,18 +29,18 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
     {
       completingFaction.Name = "Argent";
       completingFaction.Icon = "ReplaceableTextures\\CommandButtons\\BTNTirionPaladin.blp";
-      SetPlayerTechResearched(ScarletSetup.FactionScarlet.Player, Constants.UPGRADE_R086_PATH_CHOSEN, 1);
+      SetPlayerTechResearched(ScarletSetup.ScarletCrusade.Player, Constants.UPGRADE_R086_PATH_CHOSEN, 1);
       PlayThematicMusic("war3mapImported\\ScarletTheme.mp3");
       SetPlayerColor(completingFaction.Player, PLAYER_COLOR_SNOW);
 
-      ScarletSetup.FactionScarlet.ModObjectLimit(Constants.UNIT_H08I_CRUSADER_SCARLET, -Faction.UNLIMITED);
-      ScarletSetup.FactionScarlet.ModObjectLimit(Constants.UNIT_H09I_HALBARDIER_ARGENT, Faction.UNLIMITED);
+      ScarletSetup.ScarletCrusade.ModObjectLimit(Constants.UNIT_H08I_CRUSADER_SCARLET, -Faction.UNLIMITED);
+      ScarletSetup.ScarletCrusade.ModObjectLimit(Constants.UNIT_H09I_HALBARDIER_ARGENT, Faction.UNLIMITED);
 
-      ScarletSetup.FactionScarlet.ModObjectLimit(Constants.UNIT_H08L_CAVALIER_SCARLET, -Faction.UNLIMITED);
-      ScarletSetup.FactionScarlet.ModObjectLimit(Constants.UNIT_H0A3_LANCER_SCARLET, Faction.UNLIMITED);
+      ScarletSetup.ScarletCrusade.ModObjectLimit(Constants.UNIT_H08L_CAVALIER_SCARLET, -Faction.UNLIMITED);
+      ScarletSetup.ScarletCrusade.ModObjectLimit(Constants.UNIT_H0A3_LANCER_SCARLET, Faction.UNLIMITED);
 
-      ScarletSetup.FactionScarlet.ModObjectLimit(Constants.UNIT_H08J_ARBALEST_SCARLET, -Faction.UNLIMITED);
-      ScarletSetup.FactionScarlet.ModObjectLimit(Constants.UNIT_H09J_CROSSBOWMAN_SCARLET, Faction.UNLIMITED);
+      ScarletSetup.ScarletCrusade.ModObjectLimit(Constants.UNIT_H08J_ARBALEST_SCARLET, -Faction.UNLIMITED);
+      ScarletSetup.ScarletCrusade.ModObjectLimit(Constants.UNIT_H09J_CROSSBOWMAN_SCARLET, Faction.UNLIMITED);
     }
 
     protected override void OnAdd(Faction whichFaction)

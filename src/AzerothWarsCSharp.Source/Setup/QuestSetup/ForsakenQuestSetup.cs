@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
   {
     public static void Setup(QuestData questPlague)
     {
-      var forsaken = ForsakenSetup.FACTION_FORSAKEN;
+      var forsaken = ForsakenSetup.Forsaken;
 
       forsaken.StartingQuest = forsaken.AddQuest(new QuestScholomanceBuild());
       forsaken.AddQuest(new QuestReanimateSylvanas());

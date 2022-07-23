@@ -5,7 +5,7 @@ namespace AzerothWarsCSharp.TestSource.Setup.FactionSetup.FactionSetup
 {
   public static class CthunSetup
   {
-    public static Faction FactionCthun { get; private set; }
+    public static Faction? FactionCthun { get; private set; }
     
     public static void Setup()
     {

@@ -60,7 +60,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
         unit u = FirstOfGroup(tempGroup);
         if (u == null) break;
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) u.Rescue(completingFaction.Player);
-        if (GetOwningPlayer(u) == FrostwolfSetup.FACTION_FROSTWOLF.Player &&
+        if (GetOwningPlayer(u) == FrostwolfSetup.Frostwolf.Player &&
             IsUnitType(u, UNIT_TYPE_STRUCTURE) == false)
           SetUnitPosition(u, GetRandomReal(Regions.ThrallLanding.Center.X, Regions.ThrallLanding.Center.Y),
             GetRandomReal(Regions.ThrallLanding.Center.X, Regions.ThrallLanding.Center.Y));

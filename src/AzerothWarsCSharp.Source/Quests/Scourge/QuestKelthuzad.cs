@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scourge
       {
         string completionPopup =
           "Kel'thuzad has been reanimated and empowered through the unlimited magical energies of the Sunwell.";
-        if (LegionSetup.FactionLegion != null)
+        if (LegionSetup.Legion != null)
           completionPopup += " He now has the ability to summon the Burning Legion.";
         return completionPopup;
       }

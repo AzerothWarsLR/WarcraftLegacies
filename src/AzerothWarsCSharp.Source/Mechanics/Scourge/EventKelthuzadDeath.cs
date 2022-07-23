@@ -22,7 +22,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge
       KelthuzadExp = GetHeroXP(legend.Unit);
       legend.UnitType = LegendScourge.UnittypeKelthuzadGhost;
       legend.PermaDies = false;
-      legend.Spawn(ScourgeSetup.FactionScourge.Player, Regions.FTSummon.Center,
+      legend.Spawn(ScourgeSetup.Scourge.Player, Regions.FTSummon.Center,
         270);
       DestroyTrigger(GetTriggeringTrigger());
     }

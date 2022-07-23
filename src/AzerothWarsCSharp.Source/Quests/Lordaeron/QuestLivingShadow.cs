@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
     protected override void OnComplete(Faction completingFaction)
     {
       LegendLordaeron.LegendUther.Unit.AddItemSafe(ArtifactSetup.ArtifactLivingshadow.Item);
-      LordaeronSetup.FactionLordaeron.AddQuest(LordaeronQuestSetup.TheAshbringer);
+      LordaeronSetup.Lordaeron.AddQuest(LordaeronQuestSetup.TheAshbringer);
       LordaeronQuestSetup.TheAshbringer.Progress = QuestProgress.Incomplete;
     }
   }

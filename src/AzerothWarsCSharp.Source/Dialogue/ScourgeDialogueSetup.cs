@@ -23,8 +23,8 @@ namespace AzerothWarsCSharp.Source.Dialogue
           speaker: "Kel'thuzad",
           audience: new[]
           {
-            ScourgeSetup.FactionScourge,
-            LordaeronSetup.FactionLordaeron,
+            ScourgeSetup.Scourge,
+            LordaeronSetup.Lordaeron,
           }
         ));
 

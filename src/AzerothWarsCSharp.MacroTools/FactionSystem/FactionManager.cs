@@ -68,7 +68,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       return FactionsByName.ContainsKey(name.ToLower());
     }
 
-    public static Faction GetFromName(string name)
+    public static Faction? GetFromName(string name)
     {
       return FactionsByName[name.ToLower()];
     }

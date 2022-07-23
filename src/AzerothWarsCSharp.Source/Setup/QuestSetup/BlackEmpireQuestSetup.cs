@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
   {
     public static void Setup()
     {
-      var blackempire = BlackEmpireSetup.FactionBlackempire;
+      var blackempire = BlackEmpireSetup.BlackEmpire;
       blackempire.StartingQuest = blackempire.AddQuest(new QuestFirstObelisk(Regions.NyalothaUnlock1.Rect, new[]
       {
         PreplacedUnitSystem.GetDestructable(FourCC("ATg1"), new Point(-23416, -3279)),

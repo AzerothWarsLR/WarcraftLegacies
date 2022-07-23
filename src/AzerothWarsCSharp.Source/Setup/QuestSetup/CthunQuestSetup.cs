@@ -9,7 +9,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
   {
     public static void Setup()
     {
-      var cthun = CthunSetup.FactionCthun;
+      var cthun = CthunSetup.Cthun;
       cthun.StartingQuest = cthun.AddQuest(new QuestTitanJailors(Regions.TunnelUnlock,
         PreplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.Silithus_Stone_Exterior.Center)));
       cthun.AddQuest(new QuestAwakenCthun());

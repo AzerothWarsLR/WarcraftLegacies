@@ -103,7 +103,7 @@ namespace AzerothWarsCSharp.Source.Game_Logic
         BlzChangeMinimapTerrainTex("war3mapImported\\OutlandMinimap.blp");
       }
 
-      ForsakenSetup.FACTION_FORSAKEN.Player?.SetupCamera(Cameras.Forsaken1, true, 0);
+      ForsakenSetup.Forsaken.Player?.SetupCamera(Cameras.Forsaken1, true, 0);
       //Todo: uncomment below
       //NzothSetup.Nzoth.Player.SetupCamera(Cameras.Nazsjatar1, true, 0); 
 

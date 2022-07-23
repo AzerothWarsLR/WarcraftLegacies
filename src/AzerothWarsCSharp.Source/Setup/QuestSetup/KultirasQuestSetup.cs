@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
   {
     public static void Setup()
     {
-      var kultiras = KultirasSetup.FACTION_KULTIRAS;
+      var kultiras = KultirasSetup.Kultiras;
 
       kultiras.StartingQuest = kultiras.AddQuest(new QuestBoralus(Regions.Kultiras));
       kultiras.AddQuest(new QuestUnlockShip(Regions.ShipAmbient,

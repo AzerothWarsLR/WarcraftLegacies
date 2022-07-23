@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
       NearbyControlPoint = nearbyControlPoint;
       _interiorWaygate.SetWaygateDestination(_exteriorWaygate.GetPosition());
       _exteriorWaygate.SetWaygateDestination(interiorDestination);
-      FogModifierStart(CreateFogModifierRadius(BlackEmpireSetup.FactionBlackempire.Player, FOG_OF_WAR_VISIBLE,
+      FogModifierStart(CreateFogModifierRadius(BlackEmpireSetup.BlackEmpire.Player, FOG_OF_WAR_VISIBLE,
         GetUnitX(exteriorWaygate), GetUnitY(exteriorWaygate), 700, true, true));
       State = BlackEmpirePortalState.Closed;
     }

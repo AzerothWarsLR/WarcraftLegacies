@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
     protected override void OnComplete(Faction completingFaction)
     {
       unit whichUnit = LegendLegion.LEGEND_ARCHIMONDE.Unit;
-      DruidsSetup.factionDruids.Obliterate();
+      DruidsSetup.Druids.Obliterate();
       BlzSetUnitName(whichUnit, "Devourer of Worlds");
       AddSpecialEffectTarget("Abilities\\Weapons\\GreenDragonMissile\\GreenDragonMissile.mdl", whichUnit,
         "hand, right");

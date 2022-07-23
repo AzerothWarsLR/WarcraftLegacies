@@ -74,8 +74,8 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
 
     private static void ReturnToNyalotha()
     {
-      if (BlackEmpireSetup.FactionBlackempire.Player != null)
-        foreach (var unit in new GroupWrapper().EnumUnitsOfPlayer(BlackEmpireSetup.FactionBlackempire.Player)
+      if (BlackEmpireSetup.BlackEmpire.Player != null)
+        foreach (var unit in new GroupWrapper().EnumUnitsOfPlayer(BlackEmpireSetup.BlackEmpire.Player)
           .EmptyToList())
         {
           if (!Regions.NyalothaInstance.Contains(unit.GetPosition()) && !BlzIsUnitInvulnerable(unit) &&

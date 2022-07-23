@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.TestSource.Setup.FactionSetup.FactionSetup
 {
   public static class BlackEmpireSetup
   {
-    public static Faction BlackEmpire { get; private set; }
+    public static Faction? BlackEmpire { get; private set; }
 
     public static void Setup()
     {

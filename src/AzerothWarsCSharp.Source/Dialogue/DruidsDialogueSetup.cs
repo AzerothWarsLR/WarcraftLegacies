@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.Source.Dialogue
             {
               EligibleFactions = new List<Faction>
               {
-                DruidsSetup.factionDruids
+                DruidsSetup.Druids
               }
             }
           },
@@ -31,9 +31,9 @@ namespace AzerothWarsCSharp.Source.Dialogue
           audience: new[]
           {
             SentinelsSetup.Sentinels,
-            DruidsSetup.factionDruids,
-            FrostwolfSetup.FACTION_FROSTWOLF,
-            WarsongSetup.FACTION_WARSONG
+            DruidsSetup.Druids,
+            FrostwolfSetup.Frostwolf,
+            WarsongSetup.WarsongClan
           }
         ));
       }

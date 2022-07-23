@@ -20,14 +20,14 @@ namespace AzerothWarsCSharp.Source.Dialogue
         {
           EligibleFactions = new List<Faction>
           {
-            WarsongSetup.FACTION_WARSONG
+            WarsongSetup.WarsongClan
           }
         });
         gromObjectives.Add(new ObjectiveControlLegend(LegendNeutral.LegendFountainofblood, false)
         {
           EligibleFactions = new List<Faction>
           {
-            WarsongSetup.FACTION_WARSONG
+            WarsongSetup.WarsongClan
           }
         });
         DialogueManager.Add(new MacroTools.DialogueSystem.Dialogue(
@@ -38,7 +38,7 @@ namespace AzerothWarsCSharp.Source.Dialogue
           speaker: "Grom Hellscream",
           audience: new[]
           {
-            WarsongSetup.FACTION_WARSONG
+            WarsongSetup.WarsongClan
           }
         ));
       }

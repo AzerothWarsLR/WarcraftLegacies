@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
   {
     public static void Setup()
     {
-      var ironforge = IronforgeSetup.FACTION_IRONFORGE;
+      var ironforge = IronforgeSetup.Ironforge;
       QuestData newQuest = ironforge.AddQuest(new QuestThelsamar(Regions.ThelUnlock));
       ironforge.StartingQuest = newQuest;
       ironforge.AddQuest(new QuestDunMorogh());

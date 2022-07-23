@@ -5,11 +5,11 @@ namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
   public static class CthunSetup
   {
-    public static Faction FactionCthun { get; private set; }
+    public static Faction? Cthun { get; private set; }
 
     public static void Setup()
     {
-      FactionCthun = new Faction("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cFFFFDF80",
+      Cthun = new Faction("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cFFFFDF80",
         "ReplaceableTextures\\CommandButtons\\BTNCthunIcon.blp")
       {
         StartingGold = 150,
@@ -24,43 +24,43 @@ Once you have built up enough resources, unleash the wrath of the Old Gods on th
       };
 
       //Units
-      FactionCthun.ModObjectLimit(FourCC("n071"), Faction.UNLIMITED); //Pillars of C'thunn
-      FactionCthun.ModObjectLimit(FourCC("o00R"), Faction.UNLIMITED); //Black Pyramid
-      FactionCthun.ModObjectLimit(FourCC("ushp"), Faction.UNLIMITED); //Undead Shipyard
-      FactionCthun.ModObjectLimit(FourCC("o00D"), Faction.UNLIMITED); //Ancient Tomb
-      FactionCthun.ModObjectLimit(FourCC("u01F"), Faction.UNLIMITED); //Altar of the Old Ones
-      FactionCthun.ModObjectLimit(FourCC("u01G"), Faction.UNLIMITED); //Spirit Hall
-      FactionCthun.ModObjectLimit(FourCC("u01H"), Faction.UNLIMITED); //Void Portal
-      FactionCthun.ModObjectLimit(FourCC("u01I"), Faction.UNLIMITED); //Chamber of Wonders
-      FactionCthun.ModObjectLimit(FourCC("u020"), Faction.UNLIMITED); //Monument
-      FactionCthun.ModObjectLimit(FourCC("u021"), Faction.UNLIMITED); //Temple
-      FactionCthun.ModObjectLimit(FourCC("u022"), Faction.UNLIMITED); //Nexus
+      Cthun.ModObjectLimit(FourCC("n071"), Faction.UNLIMITED); //Pillars of C'thunn
+      Cthun.ModObjectLimit(FourCC("o00R"), Faction.UNLIMITED); //Black Pyramid
+      Cthun.ModObjectLimit(FourCC("ushp"), Faction.UNLIMITED); //Undead Shipyard
+      Cthun.ModObjectLimit(FourCC("o00D"), Faction.UNLIMITED); //Ancient Tomb
+      Cthun.ModObjectLimit(FourCC("u01F"), Faction.UNLIMITED); //Altar of the Old Ones
+      Cthun.ModObjectLimit(FourCC("u01G"), Faction.UNLIMITED); //Spirit Hall
+      Cthun.ModObjectLimit(FourCC("u01H"), Faction.UNLIMITED); //Void Portal
+      Cthun.ModObjectLimit(FourCC("u01I"), Faction.UNLIMITED); //Chamber of Wonders
+      Cthun.ModObjectLimit(FourCC("u020"), Faction.UNLIMITED); //Monument
+      Cthun.ModObjectLimit(FourCC("u021"), Faction.UNLIMITED); //Temple
+      Cthun.ModObjectLimit(FourCC("u022"), Faction.UNLIMITED); //Nexus
 
 
       //Structures
-      FactionCthun.ModObjectLimit(FourCC("u019"), Faction.UNLIMITED); //Cultist
-      FactionCthun.ModObjectLimit(FourCC("h01K"), 12); //Silithid Overlord
-      FactionCthun.ModObjectLimit(FourCC("o02N"), 24); //Wasp
-      FactionCthun.ModObjectLimit(FourCC("h01N"), 8); //Corrupter
-      FactionCthun.ModObjectLimit(FourCC("o000"), 6); //Silithid Colossus
-      FactionCthun.ModObjectLimit(FourCC("o00L"), Faction.UNLIMITED); //Silithid Reaver
-      FactionCthun.ModObjectLimit(FourCC("n06I"), Faction.UNLIMITED); //Faceless One
-      FactionCthun.ModObjectLimit(FourCC("u013"), Faction.UNLIMITED); //Giant Scarab
-      FactionCthun.ModObjectLimit(FourCC("n05V"), Faction.UNLIMITED); //Faceless Shadow Weaver
-      FactionCthun.ModObjectLimit(FourCC("n060"), Faction.UNLIMITED); //Silithid Tunneler
-      FactionCthun.ModObjectLimit(FourCC("o001"), 6); //Tol)vir Statue
+      Cthun.ModObjectLimit(FourCC("u019"), Faction.UNLIMITED); //Cultist
+      Cthun.ModObjectLimit(FourCC("h01K"), 12); //Silithid Overlord
+      Cthun.ModObjectLimit(FourCC("o02N"), 24); //Wasp
+      Cthun.ModObjectLimit(FourCC("h01N"), 8); //Corrupter
+      Cthun.ModObjectLimit(FourCC("o000"), 6); //Silithid Colossus
+      Cthun.ModObjectLimit(FourCC("o00L"), Faction.UNLIMITED); //Silithid Reaver
+      Cthun.ModObjectLimit(FourCC("n06I"), Faction.UNLIMITED); //Faceless One
+      Cthun.ModObjectLimit(FourCC("u013"), Faction.UNLIMITED); //Giant Scarab
+      Cthun.ModObjectLimit(FourCC("n05V"), Faction.UNLIMITED); //Faceless Shadow Weaver
+      Cthun.ModObjectLimit(FourCC("n060"), Faction.UNLIMITED); //Silithid Tunneler
+      Cthun.ModObjectLimit(FourCC("o001"), 6); //Tol)vir Statue
 
-      FactionCthun.ModObjectLimit(FourCC("U00Z"), 1); //Moam
-      FactionCthun.ModObjectLimit(FourCC("E005"), 1); //Skeram
-      FactionCthun.ModObjectLimit(FourCC("U02A"), 1); //Yorsahj
+      Cthun.ModObjectLimit(FourCC("U00Z"), 1); //Moam
+      Cthun.ModObjectLimit(FourCC("E005"), 1); //Skeram
+      Cthun.ModObjectLimit(FourCC("U02A"), 1); //Yorsahj
 
       //Upgrades
-      FactionCthun.ModObjectLimit(FourCC("Ruwb"), Faction.UNLIMITED); //Web
-      FactionCthun.ModObjectLimit(FourCC("R02A"), Faction.UNLIMITED); //Void Infusion
-      FactionCthun.ModObjectLimit(FourCC("R07I"), Faction.UNLIMITED); //Shadow weaver training
-      FactionCthun.ModObjectLimit(FourCC("R07J"), Faction.UNLIMITED); //Shadow weaver training
+      Cthun.ModObjectLimit(FourCC("Ruwb"), Faction.UNLIMITED); //Web
+      Cthun.ModObjectLimit(FourCC("R02A"), Faction.UNLIMITED); //Void Infusion
+      Cthun.ModObjectLimit(FourCC("R07I"), Faction.UNLIMITED); //Shadow weaver training
+      Cthun.ModObjectLimit(FourCC("R07J"), Faction.UNLIMITED); //Shadow weaver training
 
-      FactionManager.Register(FactionCthun);
+      FactionManager.Register(Cthun);
     }
   }
 }
