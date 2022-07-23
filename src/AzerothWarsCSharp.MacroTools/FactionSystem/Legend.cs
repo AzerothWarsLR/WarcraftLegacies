@@ -92,7 +92,7 @@ public sealed class Legend
 
   public string DeathSfx { private get; init; } = "Abilities\\Spells\\Demon\\DarkPortal\\DarkPortalTarget.mdl";
 
-  public string DeathMessage { private get; set; }
+  public string? DeathMessage { private get; set; }
 
   /// <summary>
   ///   Whether or not the unit changes ownership to its attacker when its hitpoints are reduced past a threshold.
@@ -119,26 +119,17 @@ public sealed class Legend
       DestroyTrigger(_deathTrig);
       _deathTrig = CreateTrigger();
       TriggerRegisterUnitEvent(_deathTrig, _unit, EVENT_UNIT_DEATH);
-      TriggerAddAction(_deathTrig, () =>
-      {
-        GetFromUnit(GetTriggerUnit())?.OnDeath();
-      });
+      TriggerAddAction(_deathTrig, () => { GetFromUnit(GetTriggerUnit())?.OnDeath(); });
       //Cast trig
       DestroyTrigger(_castTrig);
       _castTrig = CreateTrigger();
       TriggerRegisterUnitEvent(_castTrig, _unit, EVENT_UNIT_SPELL_FINISH);
-      TriggerAddAction(_castTrig, () =>
-      {
-        GetFromUnit(GetTriggerUnit())?.OnCast();
-      });
+      TriggerAddAction(_castTrig, () => { GetFromUnit(GetTriggerUnit())?.OnCast(); });
       //Damage trig
       DestroyTrigger(_damageTrig);
       _damageTrig = CreateTrigger();
       TriggerRegisterUnitEvent(_damageTrig, _unit, EVENT_UNIT_DAMAGED);
-      TriggerAddAction(_damageTrig, () =>
-      {
-        GetFromUnit(GetTriggerUnit())?.OnDamaging();
-      });
+      TriggerAddAction(_damageTrig, () => { GetFromUnit(GetTriggerUnit())?.OnDamaging(); });
       //Ownership change trig
       DestroyTrigger(_ownerTrig);
       _ownerTrig = CreateTrigger();
@@ -273,26 +264,20 @@ public sealed class Legend
 
   public void Spawn(player owner, Point position, float facing)
   {
-    Spawn(owner, position.X, position.Y, facing);
-  }
-
-  [Obsolete($"Use the version of the method that takes a {nameof(Point)}.")]
-  public void Spawn(player owner, float x, float y, float face)
-  {
     if (Unit == null)
     {
-      Unit = CreateUnit(owner, _unitType, x, y, face);
+      Unit = CreateUnit(owner, _unitType, position.X, position.Y, facing);
       ChangedOwner?.Invoke(this, new LegendChangeOwnerEventArgs(this));
     }
     else if (!UnitAlive(Unit))
     {
-      ReviveHero(Unit, x, y, false);
+      ReviveHero(Unit, position.X, position.Y, false);
     }
     else
     {
-      SetUnitX(Unit, x);
-      SetUnitY(Unit, y);
-      SetUnitFacing(Unit, face);
+      SetUnitX(Unit, position.X);
+      SetUnitY(Unit, position.Y);
+      SetUnitFacing(Unit, facing);
     }
 
     if (GetOwningPlayer(_unit) != owner) SetUnitOwner(Unit, owner, true);
