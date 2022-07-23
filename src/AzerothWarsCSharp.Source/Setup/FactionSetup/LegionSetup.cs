@@ -1,4 +1,6 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
@@ -81,9 +83,11 @@ Your primary objective is to summon the Burning Legion. Invade the city of Dalar
 
       //Heroes
       FactionLegion.ModObjectLimit(FourCC("U00L"), 1); //Anetheron
-      FactionLegion.ModObjectLimit(FourCC("Umal"), 1); //Mal)ganis
-      FactionLegion.ModObjectLimit(FourCC("Utic"), 1); //Tichondrius
+      FactionLegion.ModObjectLimit(Constants.UNIT_UMAL_THE_CUNNING_LEGION, 1); //Mal)ganis
+      FactionLegion.ModObjectLimit(Constants.UNIT_UTIC_THE_DARKENER_LEGION, 1); //Tichondrius
 
+      FactionLegion.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(-23179, 6865)));
+      
       FactionManager.Register(FactionLegion);
     }
   }

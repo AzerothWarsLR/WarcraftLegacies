@@ -1,4 +1,6 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
@@ -80,6 +82,8 @@ Once you have conquered the Zandalari Empire, set sail to help your allies."
       FACTION_KULTIRAS.ModObjectLimit(FourCC("H05L"), 1); //Lady Ashvane
       FACTION_KULTIRAS.ModObjectLimit(FourCC("E016"), 1); //Lucille
 
+      FACTION_KULTIRAS.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(2619, -4946)));
+      
       FactionManager.Register(FACTION_KULTIRAS);
     }
   }

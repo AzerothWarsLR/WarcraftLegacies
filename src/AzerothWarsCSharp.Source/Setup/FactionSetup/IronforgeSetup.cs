@@ -1,4 +1,6 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
@@ -94,6 +96,8 @@ Stormwind is preparing for the Fel Horde invasion in the South, muster the thron
       FACTION_IRONFORGE.ModAbilityAvailability(Constants.ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);
       FACTION_IRONFORGE.ModAbilityAvailability(Constants.ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);
       FACTION_IRONFORGE.ModAbilityAvailability(Constants.ABILITY_A0IH_SPIKED_BARRICADES_DWARF_KEEP, -1);
+      
+      FACTION_IRONFORGE.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(12079, -2768)));
       
       FactionManager.Register(FACTION_IRONFORGE);
     }

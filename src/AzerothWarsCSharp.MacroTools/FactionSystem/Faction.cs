@@ -35,42 +35,30 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     ///   How much experience is transferred from heroes that leave the game.
     /// </summary>
     private const float XpTransferPercent = 100;
-    
+
     /// <summary>
-    /// The amount of food <see cref="Faction"/>s can have by default.
+    ///   The amount of food <see cref="Faction" />s can have by default.
     /// </summary>
     private const int FoodMaximumDefault = 150;
+
+    private readonly Dictionary<int, int> _abilityAvailabilities = new();
+    private readonly List<Augment> _augments = new();
 
     private readonly int _defeatedResearch;
 
     private readonly Dictionary<int, int> _objectLevels = new();
     private readonly Dictionary<int, int> _objectLimits = new();
-    private readonly Dictionary<int, int> _abilityAvailabilities = new();
     private readonly List<Power> _powers = new();
-    private readonly List<Augment> _augments = new();
     private readonly Dictionary<string, QuestData> _questsByName = new();
+    private int _foodMaximum;
+    private readonly List<unit> _goldMines = new();
     private string _icon;
     private string _name;
     private player? _player;
     private ScoreStatus _scoreStatus = ScoreStatus.Undefeated;
     private int _undefeatedResearch;
     private int _xp; //Stored by DistributeUnits and given out again by DistributeResources
-    private int _foodMaximum;
 
-    public Faction(string name, playercolor playerColor, string prefixCol, string icon)
-    {
-      _name = name;
-      PlayerColor = playerColor;
-      PrefixCol = prefixCol;
-      _icon = icon;
-      FoodMaximum = FoodMaximumDefault;
-    }
-    
-    /// <summary>
-    /// Displayed to the <see cref="Faction"/> when the game starts.
-    /// </summary>
-    public string IntroText { get; init; }
-    
     /// <summary>
     ///   Fired when the <see cref="Faction" /> gains a <see cref="Power" />.
     /// </summary>
@@ -82,6 +70,20 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public EventHandler<FactionPowerEventArgs>? PowerRemoved;
 
     public EventHandler<Faction>? ScoreStatusChanged;
+
+    public Faction(string name, playercolor playerColor, string prefixCol, string icon)
+    {
+      _name = name;
+      PlayerColor = playerColor;
+      PrefixCol = prefixCol;
+      _icon = icon;
+      FoodMaximum = FoodMaximumDefault;
+    }
+
+    /// <summary>
+    ///   Displayed to the <see cref="Faction" /> when the game starts.
+    /// </summary>
+    public string IntroText { get; init; }
 
     public int StartingGold { get; set; }
 
@@ -102,8 +104,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     }
 
     /// <summary>
-    /// The <see cref="Faction"/>'s food limit.
-    /// A <see cref="player"/> with this Faction can never exceed this amount of food.
+    ///   The <see cref="Faction" />'s food limit.
+    ///   A <see cref="player" /> with this Faction can never exceed this amount of food.
     /// </summary>
     public int FoodMaximum
     {
@@ -111,18 +113,15 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       set
       {
         _foodMaximum = value;
-        if (Player != null)
-        {
-          SetPlayerState(Player, PLAYER_STATE_FOOD_CAP_CEILING, value);
-        }
+        if (Player != null) SetPlayerState(Player, PLAYER_STATE_FOOD_CAP_CEILING, value);
       }
     }
-    
+
     /// <summary>
-    /// Music that will play for the Faction at the start of the game.
+    ///   Music that will play for the Faction at the start of the game.
     /// </summary>
     public string CinematicMusic { get; init; }
-    
+
     public ScoreStatus ScoreStatus
     {
       get => _scoreStatus;
@@ -260,7 +259,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     ///   Fires when the <see cref="Faction" /> changes its name.
     /// </summary>
     public event EventHandler<FactionNameChangeEventArgs>? NameChanged;
-    
+
     public static event EventHandler<Faction>? GameLeave;
     public static event EventHandler<Faction>? IconChanged;
     public static event EventHandler<Faction>? StatusChanged;
@@ -290,7 +289,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
       foreach (var (key, value) in _objectLevels)
         Player?.SetObjectLevel(key, value);
-      
+
       foreach (var (key, value) in _abilityAvailabilities)
         Player?.SetAbilityAvailability(key, value > 0);
     }
@@ -303,13 +302,22 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
       foreach (var (key, _) in _objectLevels)
         Player?.SetObjectLevel(key, 0);
-      
+
       foreach (var (key, value) in _abilityAvailabilities)
         Player?.SetAbilityAvailability(key, true);
     }
 
     /// <summary>
-    /// Adds a <see cref="Augment"/> to this <see cref="Faction"/>.
+    ///   Registers a gold mine as belonging to this <see cref="Faction" />.
+    ///   When the Faction leaves the game, all of their goldmines are removed.
+    /// </summary>
+    public void AddGoldMine(unit whichUnit)
+    {
+      _goldMines.Add(whichUnit);
+    }
+
+    /// <summary>
+    ///   Adds a <see cref="Augment" /> to this <see cref="Faction" />.
     /// </summary>
     /// <param name="augment"></param>
     public void AddAugment(Augment augment)
@@ -317,7 +325,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       _augments.Add(augment);
       augment.OnAdd(this);
     }
-    
+
     /// <summary>
     ///   Adds a <see cref="Power" /> to this <see cref="Faction" />.
     /// </summary>
@@ -339,17 +347,13 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     }
 
     /// <summary>
-    /// Gets the first <see cref="Power"/> this <see cref="Faction"/> has with the provided type.
+    ///   Gets the first <see cref="Power" /> this <see cref="Faction" /> has with the provided type.
     /// </summary>
     public T GetPowerByType<T>() where T : Power
     {
       foreach (var power in _powers)
-      {
         if (power.GetType() == typeof(T))
-        {
-          return (T) power;
-        }
-      }
+          return (T)power;
 
       throw new Exception($"{_name} doesn't have a Power with the type {typeof(T).Name}.");
     }
@@ -415,23 +419,19 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     }
 
     /// <summary>
-    /// Changes the ability's availability by the provided amount.
-    /// If the availability is higher than 0, the <see cref="player"/> with this <see cref="Faction"/>
-    /// can see and use it.
+    ///   Changes the ability's availability by the provided amount.
+    ///   If the availability is higher than 0, the <see cref="player" /> with this <see cref="Faction" />
+    ///   can see and use it.
     /// </summary>
     public void ModAbilityAvailability(int ability, int value)
     {
       if (_abilityAvailabilities.ContainsKey(ability))
-      {
         _abilityAvailabilities[ability] += value;
-      }
       else
-      {
         _abilityAvailabilities[ability] = value;
-      }
       Player?.SetAbilityAvailability(ability, value > 0);
     }
-    
+
     public int GetObjectLevel(int obj)
     {
       return _objectLevels[obj];
@@ -475,7 +475,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       //Give all units to Neutral Victim
       foreach (var unit in new GroupWrapper().EnumUnitsOfPlayer(Player).EmptyToList())
       {
-        UnitType tempUnitType = UnitType.GetFromHandle(unit);
+        var tempUnitType = UnitType.GetFromHandle(unit);
         if (!UnitAlive(unit))
           RemoveUnit(unit);
 
@@ -510,8 +510,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     {
       foreach (var player in playersToDistributeTo)
       {
-        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, (int) (Gold / playersToDistributeTo.Count));
-        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, (int) (Lumber / playersToDistributeTo.Count));
+        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, (int)(Gold / playersToDistributeTo.Count));
+        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, (int)(Lumber / playersToDistributeTo.Count));
       }
 
       Gold = 0;
@@ -566,6 +566,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       {
         var eligiblePlayers = Player.GetTeam()?.GetAllPlayers();
         eligiblePlayers?.Remove(Player);
+        RemoveGoldMines();
         DistributeUnits(eligiblePlayers);
         DistributeResources(eligiblePlayers);
         DistributeExperience(eligiblePlayers);
@@ -576,6 +577,12 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
 
       GameLeave?.Invoke(this, this);
+    }
+
+    private void RemoveGoldMines()
+    {
+      foreach (var unit in _goldMines) KillUnit(unit);
+      _goldMines.Clear();
     }
 
     private static void OnAnyResearch()
