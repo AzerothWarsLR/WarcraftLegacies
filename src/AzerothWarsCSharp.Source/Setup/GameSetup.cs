@@ -1,7 +1,7 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem;
 using AzerothWarsCSharp.MacroTools.Frames.Books.Powers;
-using AzerothWarsCSharp.MacroTools.Libraries;
+using AzerothWarsCSharp.MacroTools.Gates;
 using AzerothWarsCSharp.MacroTools.Mechanics;
 using AzerothWarsCSharp.MacroTools.UserInterface;
 using AzerothWarsCSharp.Source.ArtifactBehaviour;
@@ -13,7 +13,6 @@ using AzerothWarsCSharp.Source.Mechanics.Scourge.Blight;
 using AzerothWarsCSharp.Source.Rocks;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using AzerothWarsCSharp.Source.UnitTypes;
-using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup
 {
@@ -60,7 +59,7 @@ namespace AzerothWarsCSharp.Source.Setup
       RockSetup.Setup();
       TurnResearchSetup.Setup();
       UnitTypeConfig.Setup();
-      ShipyardBanZones.Setup(new []
+      ShipyardBanZones.Setup(new[]
       {
         Regions.CaerDarrowShipyard,
         Regions.InstanceNazjatar,
@@ -98,6 +97,7 @@ namespace AzerothWarsCSharp.Source.Setup
       // }
       BlockerSetup.Setup();
       NeutralVictimAndPassiveSetup.Setup();
+      GateSetup.Setup();
     }
   }
 }
