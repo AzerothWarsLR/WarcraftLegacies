@@ -1,7 +1,7 @@
 using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.MacroTools.Augments;
 using AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem;
 using AzerothWarsCSharp.MacroTools.Frames.Books.Powers;
+using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.Mechanics;
 using AzerothWarsCSharp.MacroTools.UserInterface;
 using AzerothWarsCSharp.Source.ArtifactBehaviour;
@@ -13,6 +13,7 @@ using AzerothWarsCSharp.Source.Mechanics.Scourge.Blight;
 using AzerothWarsCSharp.Source.Rocks;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using AzerothWarsCSharp.Source.UnitTypes;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup
 {
@@ -88,6 +89,12 @@ namespace AzerothWarsCSharp.Source.Setup
         Regions.Quel_Ships_2,
         Regions.Quel_Ships_3
       });
+      //Todo: uncomment below
+      // foreach (var player in GeneralHelpers.GetAllPlayers())
+      // {
+      //   var newFogModifier = CreateFogModifierRect(player, FOG_OF_WAR_VISIBLE, Regions.MercTavern, true, true);
+      //   FogModifierStart(newFogModifier);
+      // }
     }
   }
 }
