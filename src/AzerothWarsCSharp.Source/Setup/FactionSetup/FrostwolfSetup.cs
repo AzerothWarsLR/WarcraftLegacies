@@ -1,4 +1,6 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
@@ -77,6 +79,9 @@ Escort the kodo to Thunderbluff, where you will find a goldmine waiting for you.
       FACTION_FROSTWOLF.ModAbilityAvailability(Constants.ABILITY_ANTR_TROLL_REGENERATION_PINK_WITCH_DOCTOR_TROLL_HEADHUNTER_TROLL_BATRIDER_DARKSPEAR_WARLORD_TROLL_BERSERKER_ICON, -1);
       FACTION_FROSTWOLF.ModAbilityAvailability(Constants.ABILITY_A0M4_BATTLE_STATIONS_PINK_GREY_ORC_BURROW_BLOODPACT, -1);
       FACTION_FROSTWOLF.ModAbilityAvailability(Constants.ABILITY_ABTL_BATTLE_STATIONS_FROSTWOLF_WARSONG_BURROW, 1);
+      
+      FACTION_FROSTWOLF.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(-1789, -1697)));
+      FACTION_FROSTWOLF.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(-14466, -4703)));
       
       FactionManager.Register(FACTION_FROSTWOLF);
     }

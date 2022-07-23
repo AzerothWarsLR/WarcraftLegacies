@@ -1,4 +1,6 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
@@ -62,6 +64,8 @@ Once the human menace has been dealt with, sail West and help the Horde in Kalim
       FACTION_TROLL.ModObjectLimit(FourCC("R070"), Faction.UNLIMITED); //Haruspex Training
       FACTION_TROLL.ModObjectLimit(FourCC("R071"), Faction.UNLIMITED); //Hex Training
 
+      FACTION_TROLL.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(-3944, -11999)));
+      
       FactionManager.Register(FACTION_TROLL);
     }
   }

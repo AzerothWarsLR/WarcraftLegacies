@@ -1,4 +1,6 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
@@ -86,6 +88,8 @@ Fortify your strongholds against the storm to come and make ready to unleash the
       FactionScarlet.ModObjectLimit(FourCC("Rhac"), Faction.UNLIMITED); //Improved Masonry
       FactionScarlet.ModObjectLimit(FourCC("R06Q"), Faction.UNLIMITED); //Paladin Adept Training
 
+      FactionScarlet.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(12860, 11254)));
+      
       FactionManager.Register(FactionScarlet);
     }
   }

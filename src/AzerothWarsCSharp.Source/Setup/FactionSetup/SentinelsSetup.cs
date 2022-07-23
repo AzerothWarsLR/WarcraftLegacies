@@ -1,4 +1,6 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
@@ -76,6 +78,8 @@ Once you have secured your holdings, gather your army and destroy the orc invade
       Sentinels.ModObjectLimit(FourCC("R03J"), Faction.UNLIMITED); //Wind Walk
       Sentinels.ModObjectLimit(FourCC("R013"), Faction.UNLIMITED); //Elune)s Blessing
 
+      Sentinels.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(-16016, 10113)));
+      
       FactionManager.Register(Sentinels);
     }
   }
