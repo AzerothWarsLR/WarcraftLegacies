@@ -35,7 +35,13 @@ public sealed class Legend
 
   public Legend()
   {
-    PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, OnUnitTrain);
+    PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, () =>
+    {
+      var trainedUnit = GetTrainedUnit();
+      if (UnitType != GetUnitTypeId(trainedUnit)) return;
+      Unit = trainedUnit;
+      ChangedOwner?.Invoke(this, new LegendChangeOwnerEventArgs(this));
+    });
   }
 
   public string Name
@@ -113,22 +119,35 @@ public sealed class Legend
       DestroyTrigger(_deathTrig);
       _deathTrig = CreateTrigger();
       TriggerRegisterUnitEvent(_deathTrig, _unit, EVENT_UNIT_DEATH);
-      TriggerAddAction(_deathTrig, OnUnitDeath);
+      TriggerAddAction(_deathTrig, () =>
+      {
+        GetFromUnit(GetTriggerUnit())?.OnDeath();
+      });
       //Cast trig
       DestroyTrigger(_castTrig);
       _castTrig = CreateTrigger();
       TriggerRegisterUnitEvent(_castTrig, _unit, EVENT_UNIT_SPELL_FINISH);
-      TriggerAddAction(_castTrig, OnUnitCast);
+      TriggerAddAction(_castTrig, () =>
+      {
+        GetFromUnit(GetTriggerUnit())?.OnCast();
+      });
       //Damage trig
       DestroyTrigger(_damageTrig);
       _damageTrig = CreateTrigger();
       TriggerRegisterUnitEvent(_damageTrig, _unit, EVENT_UNIT_DAMAGED);
-      TriggerAddAction(_damageTrig, OnUnitDamaged);
+      TriggerAddAction(_damageTrig, () =>
+      {
+        GetFromUnit(GetTriggerUnit())?.OnDamaging();
+      });
       //Ownership change trig
       DestroyTrigger(_ownerTrig);
       _ownerTrig = CreateTrigger();
       TriggerRegisterUnitEvent(_ownerTrig, _unit, EVENT_UNIT_CHANGE_OWNER);
-      TriggerAddAction(_ownerTrig, OnUnitChangeOwner);
+      TriggerAddAction(_ownerTrig, () =>
+      {
+        var triggerLegend = GetFromUnit(GetTriggerUnit());
+        triggerLegend?.OnChangeOwner();
+      });
 
       SetUnitColor(_unit, HasCustomColor ? _playerColor : GetPlayerColor(GetOwningPlayer(_unit)));
       if (GetHeroXP(_unit) < StartingXp) SetHeroXP(_unit, StartingXp, true);
@@ -420,36 +439,6 @@ public sealed class Legend
   public static Legend? GetFromUnit(unit whichUnit)
   {
     return ByUnit.ContainsKey(whichUnit) ? ByUnit[whichUnit] : null;
-  }
-
-  private static void OnUnitChangeOwner()
-  {
-    var triggerLegend = GetFromUnit(GetTriggerUnit());
-    triggerLegend?.OnChangeOwner();
-  }
-
-  private static void OnUnitDamaged()
-  {
-    GetFromUnit(GetTriggerUnit())?.OnDamaging();
-  }
-
-  private static void OnUnitDeath()
-  {
-    GetFromUnit(GetTriggerUnit())?.OnDeath();
-  }
-
-  private static void OnUnitCast()
-  {
-    GetFromUnit(GetTriggerUnit())?.OnCast();
-  }
-
-  //When any unit is trained, check if it has the unittype of a Legend, and assign it to that Legend if so
-  private void OnUnitTrain()
-  {
-    var trainedUnit = GetTrainedUnit();
-    if (UnitType != GetUnitTypeId(trainedUnit)) return;
-    Unit = trainedUnit;
-    ChangedOwner?.Invoke(this, new LegendChangeOwnerEventArgs(this));
   }
 
   ~Legend()
