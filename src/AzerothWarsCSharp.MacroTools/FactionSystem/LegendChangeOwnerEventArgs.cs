@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public Legend Legend { get; }
     public player? PreviousOwner { get; }
     
-    public LegendChangeOwnerEventArgs(Legend legend, player previousOwner)
+    public LegendChangeOwnerEventArgs(Legend legend, player? previousOwner = null)
     {
       Legend = legend;
       PreviousOwner = previousOwner;
