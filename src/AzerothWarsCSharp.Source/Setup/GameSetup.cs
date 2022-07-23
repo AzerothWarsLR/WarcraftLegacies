@@ -97,6 +97,7 @@ namespace AzerothWarsCSharp.Source.Setup
       //   FogModifierStart(newFogModifier);
       // }
       BlockerSetup.Setup();
+      NeutralVictimAndPassiveSetup.Setup();
     }
   }
 }
