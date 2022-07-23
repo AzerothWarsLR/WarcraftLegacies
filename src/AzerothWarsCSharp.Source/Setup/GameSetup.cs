@@ -53,6 +53,7 @@ namespace AzerothWarsCSharp.Source.Setup
       DisplayIntroText.Setup(10);
       GameSettings.Setup();
       InfoQuests.Setup();
+      DestructibleSetup.Setup();
       PreplacedUnitSystem.Shutdown();
       OpenAllianceVote.Setup();
       AugmentSetup.Setup();
