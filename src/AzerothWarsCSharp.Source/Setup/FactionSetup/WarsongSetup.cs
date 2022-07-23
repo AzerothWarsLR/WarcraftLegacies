@@ -1,4 +1,6 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
@@ -81,6 +83,8 @@ The Night Elves are aware of your presence and are gathering against you. Unlock
       FACTION_WARSONG.ModAbilityAvailability(Constants.ABILITY_ANTR_TROLL_REGENERATION_PINK_WITCH_DOCTOR_TROLL_HEADHUNTER_TROLL_BATRIDER_DARKSPEAR_WARLORD_TROLL_BERSERKER_ICON, -1);
       FACTION_WARSONG.ModAbilityAvailability(Constants.ABILITY_ABTL_BATTLE_STATIONS_FROSTWOLF_WARSONG_BURROW, 1);
       FACTION_WARSONG.ModAbilityAvailability(Constants.ABILITY_A0M4_BATTLE_STATIONS_PINK_GREY_ORC_BURROW_BLOODPACT, -1);
+      
+      FACTION_WARSONG.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(-9755, 2277)));
       
       FactionManager.Register(FACTION_WARSONG);
     }

@@ -1,4 +1,6 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
@@ -99,6 +101,8 @@ Your allies cannot reach you on Outland, you are alone.",
       FactionFelHorde.ModAbilityAvailability(Constants.ABILITY_A0MZ_DEMONIC_CONSTRUCTION_TEAL_DEMOLISHERS, -1);
       FactionFelHorde.ModAbilityAvailability(Constants.ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, -1);
 
+      FactionFelHorde.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(5804, -29242)));
+      
       FactionManager.Register(FactionFelHorde);
     }
   }

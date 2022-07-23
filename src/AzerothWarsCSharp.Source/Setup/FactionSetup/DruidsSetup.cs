@@ -1,4 +1,6 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
@@ -80,6 +82,8 @@ The Horde is gathering to burn Ashenvale forest and all within, gather your forc
       factionDruids.ModObjectLimit(FourCC("R015"), Constants.UPGRADE_R015_IMPROVED_MANA_FLARE_DRUIDS);
 
       factionDruids.SetObjectLevel(Constants.UPGRADE_REWS_WELL_SPRING, 1);
+      
+      factionDruids.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(-10967, 7196)));
       
       FactionManager.Register(factionDruids);
     }

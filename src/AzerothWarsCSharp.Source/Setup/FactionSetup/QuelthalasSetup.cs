@@ -1,4 +1,6 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
@@ -84,6 +86,8 @@ The Plague of Undeath is coming, and your allies to the South will need your hel
       FactionQuelthalas.ModObjectLimit(FourCC("Rhst"), Faction.UNLIMITED); //Sorceress Adept Training
       
       FactionQuelthalas.ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
+      
+      FactionQuelthalas.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(17716, 13000)));
       
       FactionManager.Register(FactionQuelthalas);
     }

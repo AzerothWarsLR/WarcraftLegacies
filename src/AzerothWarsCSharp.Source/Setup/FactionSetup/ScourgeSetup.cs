@@ -1,5 +1,7 @@
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Powers;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
@@ -116,6 +118,8 @@ The Necropolis of Naxxramas is become the perfect weapon for the Scourge, but yo
           Regions.IcecrownShipyard
         });
       FactionScourge.AddPower(visionPower);
+      
+      FactionScourge.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(-4939, 18803)));
       
       FactionManager.Register(FactionScourge);
     }
