@@ -3,27 +3,28 @@ using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 
-namespace AzerothWarsCSharp.Source.Mechanics.Druids;
-
-public static class CenariusGhost
+namespace AzerothWarsCSharp.Source.Mechanics.Druids
 {
-  private static void Dies(object? sender, Legend legend)
+  public static class CenariusGhost
   {
-    var cenarius = LegendDruids.LegendCenarius;
-    if (cenarius == legend && legend.UnitType == LegendDruids.UnittypeCenariusAlive)
+    private static void Dies(object? sender, Legend legend)
     {
-      cenarius.UnitType = LegendDruids.UnittypeCenariusGhost;
-      cenarius.PermaDies = false;
-      cenarius.ClearUnitDependencies();
-      cenarius.Spawn(DruidsSetup.factionDruids.Player, new Point(Regions.Cenarius.Center.X, Regions.Cenarius.Center.Y),
-        270);
+      var cenarius = LegendDruids.LegendCenarius;
+      if (cenarius == legend && legend.UnitType == LegendDruids.UnittypeCenariusAlive)
+      {
+        cenarius.UnitType = LegendDruids.UnittypeCenariusGhost;
+        cenarius.PermaDies = false;
+        cenarius.ClearUnitDependencies();
+        cenarius.Spawn(DruidsSetup.factionDruids.Player, new Point(Regions.Cenarius.Center.X, Regions.Cenarius.Center.Y),
+          270);
+      }
     }
-  }
 
-  public static void Setup()
-  {
-    Legend.OnLegendPermaDeath += Dies;
-    LegendDruids.LegendCenarius.DeathMessage =
-      "Cenarius, Demigod of the Night Elves, has fallen. His spirit lives on, a mere echo of his former self.";
+    public static void Setup()
+    {
+      Legend.OnLegendPermaDeath += Dies;
+      LegendDruids.LegendCenarius.DeathMessage =
+        "Cenarius, Demigod of the Night Elves, has fallen. His spirit lives on, a mere echo of his former self.";
+    }
   }
 }
