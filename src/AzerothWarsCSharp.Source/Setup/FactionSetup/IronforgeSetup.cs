@@ -97,7 +97,7 @@ Stormwind is preparing for the Fel Horde invasion in the South, muster the thron
       Ironforge.ModAbilityAvailability(Constants.ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);
       Ironforge.ModAbilityAvailability(Constants.ABILITY_A0IH_SPIKED_BARRICADES_DWARF_KEEP, -1);
       
-      Ironforge.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(12079, -2768)));
+      Ironforge.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(12079, -2768)));
       
       FactionManager.Register(Ironforge);
     }

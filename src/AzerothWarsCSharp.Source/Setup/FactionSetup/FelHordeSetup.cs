@@ -101,7 +101,7 @@ Your allies cannot reach you on Outland, you are alone.",
       FelHorde.ModAbilityAvailability(Constants.ABILITY_A0MZ_DEMONIC_CONSTRUCTION_TEAL_DEMOLISHERS, -1);
       FelHorde.ModAbilityAvailability(Constants.ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, -1);
 
-      FelHorde.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(5804, -29242)));
+      FelHorde.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(5804, -29242)));
       
       FactionManager.Register(FelHorde);
     }

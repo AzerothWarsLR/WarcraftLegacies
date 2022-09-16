@@ -83,7 +83,7 @@ The Horde is gathering to burn Ashenvale forest and all within, gather your forc
 
       Druids.SetObjectLevel(Constants.UPGRADE_REWS_WELL_SPRING, 1);
       
-      Druids.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(-10967, 7196)));
+      Druids.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-10967, 7196)));
       
       FactionManager.Register(Druids);
     }

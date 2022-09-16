@@ -88,7 +88,7 @@ Fortify your strongholds against the storm to come and make ready to unleash the
       ScarletCrusade.ModObjectLimit(FourCC("Rhac"), Faction.UNLIMITED); //Improved Masonry
       ScarletCrusade.ModObjectLimit(FourCC("R06Q"), Faction.UNLIMITED); //Paladin Adept Training
 
-      ScarletCrusade.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(12860, 11254)));
+      ScarletCrusade.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(12860, 11254)));
       
       FactionManager.Register(ScarletCrusade);
     }

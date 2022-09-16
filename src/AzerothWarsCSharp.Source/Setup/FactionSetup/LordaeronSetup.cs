@@ -101,7 +101,7 @@ Burn these infected buildings to weaken the Cult's power."
       Lordaeron.ModAbilityAvailability(Constants.ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);
       Lordaeron.ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
       
-      Lordaeron.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(13617, 8741)));
+      Lordaeron.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(13617, 8741)));
       
       FactionManager.Register(Lordaeron);
     }

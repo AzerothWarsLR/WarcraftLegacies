@@ -80,8 +80,8 @@ Escort the kodo to Thunderbluff, where you will find a goldmine waiting for you.
       Frostwolf.ModAbilityAvailability(Constants.ABILITY_A0M4_BATTLE_STATIONS_PINK_GREY_ORC_BURROW_BLOODPACT, -1);
       Frostwolf.ModAbilityAvailability(Constants.ABILITY_ABTL_BATTLE_STATIONS_FROSTWOLF_WARSONG_BURROW, 1);
       
-      Frostwolf.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(-1789, -1697)));
-      Frostwolf.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(-14466, -4703)));
+      Frostwolf.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-1789, -1697)));
+      Frostwolf.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-14466, -4703)));
       
       FactionManager.Register(Frostwolf);
     }

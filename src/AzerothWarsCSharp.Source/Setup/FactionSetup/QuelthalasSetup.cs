@@ -87,7 +87,7 @@ The Plague of Undeath is coming, and your allies to the South will need your hel
       
       Quelthalas.ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
       
-      Quelthalas.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(17716, 13000)));
+      Quelthalas.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(17716, 13000)));
       
       FactionManager.Register(Quelthalas);
     }

@@ -16,11 +16,8 @@ namespace AzerothWarsCSharp.Source.Setup
         SetDestructableAnimationSpeed(GetEnumDestructable(), 0);
       });
 
-      var thandolSpan = PreplacedUnitSystem.GetDestructable(FourCC("MEds"), new Point(15695, 457));
+      var thandolSpan = PreplacedUnitSystem.GetDestructable(FourCC("LT08"), new Point(15695, 457));
       SetDestructableInvulnerable(thandolSpan, true);
-
-      var dalaranShield = AddWeatherEffect(Regions.Dalaran.Rect, FourCC("MEds"));
-      EnableWeatherEffect(dalaranShield, true);
     }
   }
 }

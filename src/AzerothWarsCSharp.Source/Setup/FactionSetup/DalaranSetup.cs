@@ -89,7 +89,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       Dalaran.ModAbilityAvailability(Constants.ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);
       Dalaran.ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
 
-      Dalaran.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ugol"), new Point(9204, 2471)));
+      Dalaran.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9204, 2471)));
       
       FactionManager.Register(Dalaran);
     }
