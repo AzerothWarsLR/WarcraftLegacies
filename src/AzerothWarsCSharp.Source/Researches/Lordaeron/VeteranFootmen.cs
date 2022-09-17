@@ -1,17 +1,18 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using WCSharp.Events;
-using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Researches.Lordaeron
 {
   /// <summary>
-  /// When Veteran Footman is researched, the researching player loses the ability to train Footmen, and gains the ability to train Veteran Footmen.
+  /// When Veteran Footman is researched, the researching player loses the ability to train Footmen,
+  /// and gains the ability to train Veteran Footmen.
   /// </summary>
   public static class VeteranFootmen
   {
     private static void Research()
     {
+      if (LordaeronSetup.Lordaeron == null) return;
       LordaeronSetup.Lordaeron.ModObjectLimit(Constants.UNIT_HFOO_FOOTMAN_LORDAERON, -Faction.UNLIMITED);
       LordaeronSetup.Lordaeron.ModObjectLimit(Constants.UNIT_H029_VETERAN_FOOTMAN_LORDAERON, Faction.UNLIMITED);
     }
