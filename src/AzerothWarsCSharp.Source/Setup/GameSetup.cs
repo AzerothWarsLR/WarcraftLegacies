@@ -98,7 +98,6 @@ namespace AzerothWarsCSharp.Source.Setup
       BlockerSetup.Setup();
       NeutralVictimAndPassiveSetup.Setup();
       GateSetup.Setup();
-      ResearchSetup.Setup();
     }
   }
 }
