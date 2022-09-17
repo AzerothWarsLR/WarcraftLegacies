@@ -8,7 +8,7 @@ namespace AzerothWarsCSharp.Source.Researches.Lordaeron
   /// <summary>
   /// When Veteran Footman is researched, the researching player loses the ability to train Footmen, and gains the ability to train Veteran Footmen.
   /// </summary>
-  public class VeteranFootmen
+  public static class VeteranFootmen
   {
     private static void Research()
     {
