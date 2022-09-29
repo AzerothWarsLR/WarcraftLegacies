@@ -9,7 +9,10 @@
 				"isDefault": true
 			},
 			"label": "Build and run",
-			"detail": "Build and run Warcraft: Legacies"
+			"detail": "Build and run Warcraft: Legacies",
+			"options": {
+				"cwd": "${workspaceFolder}\\src\\AzerothWarsCSharp.Launcher\\bin\\Debug\\net5.0"
+			},
 		}
 	]
 }
