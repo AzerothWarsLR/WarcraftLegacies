@@ -104,7 +104,7 @@ namespace AzerothWarsCSharp.Launcher
       builder.AddFiles(baseMapPath, "*", SearchOption.AllDirectories);
       builder.AddFiles(AssetsFolderPath, "*", SearchOption.AllDirectories);
 
-      ObjectEditor.SupplmentMapWithObjectData(map);
+      //ObjectEditor.SupplmentMapWithObjectData(map);
 
       // Set debug options if necessary, configure compiler
       const string csc = Debug ? "-debug -define:DEBUG" : null;
