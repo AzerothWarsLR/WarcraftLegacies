@@ -154,8 +154,9 @@ namespace AzerothWarsCSharp.Launcher
     /// </summary>
     private static void SetTestPlayerSlot(Map map, int playerSlot)
     {
+      if (map.Info == null) return;
       foreach (var player in map.Info.Players)
-        if (player.Id < playerSlot)
+        if (player.Id != playerSlot)
           player.Controller = PlayerController.Computer;
     }
 
