@@ -22,8 +22,7 @@ namespace AzerothWarsCSharp.Source.Researches.Ironforge
         }
         else
         {
-          GetTriggerPlayer().AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 1000);
-          GetTriggerPlayer().AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 750);
+          GetTriggerPlayer().AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 75);
         }
 
         SetPlayerTechResearched(GetTriggerPlayer(), ResearchId, 0);
