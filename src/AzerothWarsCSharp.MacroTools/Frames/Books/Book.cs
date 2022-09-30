@@ -167,10 +167,16 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books
 
       private void OpenFirstPage(player whichPlayer)
       {
-         if (whichPlayer == GetLocalPlayer())
+         try
          {
+            if (whichPlayer != GetLocalPlayer()) 
+               return;
             Visible = true;
             _launcher.Visible = false;
+         }
+         catch (Exception ex)
+         {
+            Console.WriteLine($"Failed to open {nameof(Book<T>)}: {ex}");
          }
       }
 
