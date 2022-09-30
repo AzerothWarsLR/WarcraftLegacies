@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
         AllArtifacts.Add(artifact);
       }
       else
-      {
+      { 
         throw new Exception($"Attempted to create already existing Artifact from {GetItemName(artifact.Item)}.");
       }
     }
