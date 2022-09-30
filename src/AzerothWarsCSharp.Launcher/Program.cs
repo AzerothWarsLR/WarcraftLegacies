@@ -32,7 +32,7 @@ namespace AzerothWarsCSharp.Launcher
     // Warcraft III
     private const string GraphicsApi = "Direct3D9";
 #if DEBUG
-    private const bool DEBUG = true;
+    private const bool Debug = true;
 #else
 		private const bool Debug = false;
 #endif
