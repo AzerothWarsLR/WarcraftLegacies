@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Configuration;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
 using CSharpLua;
 using Microsoft.CodeAnalysis;
+using Microsoft.Extensions.Configuration;
 using War3Net.Build;
 using War3Net.Build.Extensions;
 using War3Net.Build.Info;
@@ -18,29 +18,23 @@ namespace AzerothWarsCSharp.Launcher
   internal static class Program
   {
     // Input
-    private const string SOURCE_CODE_PROJECT_FOLDER_PATH = @"..\..\..\..\AzerothWarsCSharp.Source";
-    private const string TEST_SOURCE_CODE_PROJECT_FOLDER_PATH = @"..\..\..\..\AzerothWarsCSharp.TestSource";
-    private const string ASSETS_FOLDER_PATH = @"..\..\..\..\Assets\";
-
-    private const string BASE_MAP_PATH = @"..\..\..\..\..\maps\source.w3x";
-    private const string TEST_MAP_PATH = @"..\..\..\..\..\maps\testsource.w3x";
-
-    /// <summary>
-    ///   File containing Warcraft 3 objects that will be added to the final result.
-    /// </summary>
-    private const string BASE_OBJECT_PATH = @"..\..\..\..\..\source.w3o";
+    private const string SourceCodeProjectFolderPath = @"..\..\..\..\AzerothWarsCSharp.Source";
+    private const string TestSourceCodeProjectFolderPath = @"..\..\..\..\AzerothWarsCSharp.TestSource";
+    private const string AssetsFolderPath = @"..\..\..\..\Assets\";
+    private const string BaseMapPath = @"..\..\..\..\..\maps\source.w3x";
+    private const string TestMapPath = @"..\..\..\..\..\maps\testsource.w3x";
 
     // Output
-    private const string OUTPUT_FOLDER_PATH = @"..\..\..\..\..\artifacts";
-    private const string OUTPUT_SCRIPT_NAME = @"war3map.lua";
-    private const string OUTPUT_MAP_NAME = @"target.w3x";
+    private const string OutputFolderPath = @"..\..\..\..\..\artifacts";
+    private const string OutputScriptName = @"war3map.lua";
+    private const string OutputMapName = @"target.w3x";
 
     // Warcraft III
-    private const string GRAPHICS_API = "Direct3D9";
+    private const string GraphicsApi = "Direct3D9";
 #if DEBUG
-    private const bool DEBUG = true;
+    private const bool Debug = true;
 #else
-		private const bool DEBUG = false;
+		private const bool Debug = false;
 #endif
 
     /// <summary>
@@ -53,35 +47,40 @@ namespace AzerothWarsCSharp.Launcher
       Console.WriteLine("2. Compile map");
       Console.WriteLine("3. Compile and run map");
       Console.WriteLine("4. Compile and run test map");
-      MakeDecision();
+
+      IConfiguration config = new ConfigurationBuilder()
+        .AddJsonFile("appsettings.json")
+        .Build();
+      
+      MakeDecision(config);
     }
 
     /// <summary>
     ///   Prompts the user for some build options.
     /// </summary>
-    private static void MakeDecision()
+    private static void MakeDecision(IConfiguration config)
     {
       Console.Write("Please type the number of your desired action: ");
       switch (Console.ReadKey().Key)
       {
         case ConsoleKey.D1:
-          ConstantGenerator.Run(BASE_MAP_PATH, SOURCE_CODE_PROJECT_FOLDER_PATH, new ConstantGeneratorOptions
+          ConstantGenerator.Run(BaseMapPath, SourceCodeProjectFolderPath, new ConstantGeneratorOptions
           {
             IncludeCode = true
           });
           break;
         case ConsoleKey.D2:
-          Build(BASE_MAP_PATH, SOURCE_CODE_PROJECT_FOLDER_PATH, false);
+          Build(BaseMapPath, SourceCodeProjectFolderPath, false, config);
           break;
         case ConsoleKey.D3:
-          Build(BASE_MAP_PATH, SOURCE_CODE_PROJECT_FOLDER_PATH, true);
+          Build(BaseMapPath, SourceCodeProjectFolderPath, true, config);
           break;
         case ConsoleKey.D4:
-          Build(TEST_MAP_PATH, TEST_SOURCE_CODE_PROJECT_FOLDER_PATH, true);
+          Build(TestMapPath, TestSourceCodeProjectFolderPath, true, config);
           break;
         default:
           Console.WriteLine($"{Environment.NewLine}Invalid input. Please choose again.");
-          MakeDecision();
+          MakeDecision(config);
           break;
       }
     }
@@ -89,27 +88,28 @@ namespace AzerothWarsCSharp.Launcher
     /// <summary>
     ///   Builds the Warcraft 3 map.
     /// </summary>
-    private static void Build(string baseMapPath, string projectFolderPath, bool launch)
+    private static void Build(string baseMapPath, string projectFolderPath, bool launch, IConfiguration config)
     {
       // Ensure these folders exist
-      Directory.CreateDirectory(ASSETS_FOLDER_PATH);
-      Directory.CreateDirectory(OUTPUT_FOLDER_PATH);
+      Directory.CreateDirectory(AssetsFolderPath);
+      Directory.CreateDirectory(OutputFolderPath);
 
       // Load existing map data
       var map = Map.Open(baseMapPath);
 
       FixDoodadData(map);
-      SetTestPlayerSlot(map, 0);
+      var launchSettings = config.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
+      SetTestPlayerSlot(map, launchSettings.TestingPlayerSlot);
       var builder = new MapBuilder(map);
       builder.AddFiles(baseMapPath, "*", SearchOption.AllDirectories);
-      builder.AddFiles(ASSETS_FOLDER_PATH, "*", SearchOption.AllDirectories);
+      builder.AddFiles(AssetsFolderPath, "*", SearchOption.AllDirectories);
 
       ObjectEditor.SupplmentMapWithObjectData(map);
 
       // Set debug options if necessary, configure compiler
-      const string csc = DEBUG ? "-debug -define:DEBUG" : null;
+      const string csc = Debug ? "-debug -define:DEBUG" : null;
       var csproj = Directory.EnumerateFiles(projectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
-      var compiler = new Compiler(csproj, OUTPUT_FOLDER_PATH, string.Empty, null,
+      var compiler = new Compiler(csproj, OutputFolderPath, string.Empty, null,
         "War3Api.*;WCSharp.*;AzerothWarsCSharp.MacroTools.*", "", csc, false, null,
         string.Empty)
       {
@@ -117,7 +117,7 @@ namespace AzerothWarsCSharp.Launcher
         IsModule = false,
         IsInlineSimpleProperty = false,
         IsPreventDebugObject = true,
-        IsCommentsDisabled = !DEBUG
+        IsCommentsDisabled = !Debug
       };
 
       // Collect required paths and compile
@@ -133,7 +133,7 @@ namespace AzerothWarsCSharp.Launcher
         throw new Exception(compileResult.Diagnostics.First(x => x.Severity == DiagnosticSeverity.Error).GetMessage());
 
       // Update war3map.lua so you can inspect the generated Lua code easily
-      File.WriteAllText(Path.Combine(OUTPUT_FOLDER_PATH, OUTPUT_SCRIPT_NAME), map.Script);
+      File.WriteAllText(Path.Combine(OutputFolderPath, OutputScriptName), map.Script);
 
       // Build w3x file
       var archiveCreateOptions = new MpqArchiveCreateOptions
@@ -143,10 +143,9 @@ namespace AzerothWarsCSharp.Launcher
         ListFileCreateMode = MpqFileCreateMode.Overwrite
       };
 
-      builder.Build(Path.Combine(OUTPUT_FOLDER_PATH, OUTPUT_MAP_NAME), archiveCreateOptions);
-
-      // Launch if that option was selected
-      if (launch) LaunchGame();
+      builder.Build(Path.Combine(OutputFolderPath, OutputMapName), archiveCreateOptions);
+      if (launch) 
+        LaunchGame(launchSettings);
     }
 
     /// <summary>
@@ -173,18 +172,18 @@ namespace AzerothWarsCSharp.Launcher
       }
     }
 
-    private static void LaunchGame()
+    private static void LaunchGame(LaunchSettings launchSettings)
     {
-      var wc3Exe = ConfigurationManager.AppSettings["wc3exe"];
+      var wc3Exe = launchSettings.Warcraft3ExecutablePath;
       if (File.Exists(wc3Exe))
       {
         var commandLineArgs = new StringBuilder();
         var isReforged = Version.Parse(FileVersionInfo.GetVersionInfo(wc3Exe).FileVersion) >= new Version(1, 32);
-        commandLineArgs.Append(isReforged ? " -launch" : $" -graphicsapi {GRAPHICS_API}");
+        commandLineArgs.Append(isReforged ? " -launch" : $" -graphicsapi {GraphicsApi}");
 
         commandLineArgs.Append(" -nowfpause");
 
-        var mapPath = Path.Combine(OUTPUT_FOLDER_PATH, OUTPUT_MAP_NAME);
+        var mapPath = Path.Combine(OutputFolderPath, OutputMapName);
         var absoluteMapPath = new FileInfo(mapPath).FullName;
         commandLineArgs.Append($" -loadfile \"{absoluteMapPath}\"");
 
