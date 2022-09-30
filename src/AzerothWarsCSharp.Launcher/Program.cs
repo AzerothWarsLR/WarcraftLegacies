@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Configuration;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
 using CSharpLua;
 using Microsoft.CodeAnalysis;
+using Microsoft.Extensions.Configuration;
 using War3Net.Build;
 using War3Net.Build.Extensions;
 using War3Net.Build.Info;
@@ -47,13 +47,18 @@ namespace AzerothWarsCSharp.Launcher
       Console.WriteLine("2. Compile map");
       Console.WriteLine("3. Compile and run map");
       Console.WriteLine("4. Compile and run test map");
-      MakeDecision();
+
+      IConfiguration config = new ConfigurationBuilder()
+        .AddJsonFile("appsettings.json")
+        .Build();
+      
+      MakeDecision(config);
     }
 
     /// <summary>
     ///   Prompts the user for some build options.
     /// </summary>
-    private static void MakeDecision()
+    private static void MakeDecision(IConfiguration config)
     {
       Console.Write("Please type the number of your desired action: ");
       switch (Console.ReadKey().Key)
@@ -65,17 +70,17 @@ namespace AzerothWarsCSharp.Launcher
           });
           break;
         case ConsoleKey.D2:
-          Build(BaseMapPath, SourceCodeProjectFolderPath, false);
+          Build(BaseMapPath, SourceCodeProjectFolderPath, false, config);
           break;
         case ConsoleKey.D3:
-          Build(BaseMapPath, SourceCodeProjectFolderPath, true);
+          Build(BaseMapPath, SourceCodeProjectFolderPath, true, config);
           break;
         case ConsoleKey.D4:
-          Build(TestMapPath, TestSourceCodeProjectFolderPath, true);
+          Build(TestMapPath, TestSourceCodeProjectFolderPath, true, config);
           break;
         default:
           Console.WriteLine($"{Environment.NewLine}Invalid input. Please choose again.");
-          MakeDecision();
+          MakeDecision(config);
           break;
       }
     }
@@ -83,7 +88,7 @@ namespace AzerothWarsCSharp.Launcher
     /// <summary>
     ///   Builds the Warcraft 3 map.
     /// </summary>
-    private static void Build(string baseMapPath, string projectFolderPath, bool launch)
+    private static void Build(string baseMapPath, string projectFolderPath, bool launch, IConfiguration config)
     {
       // Ensure these folders exist
       Directory.CreateDirectory(AssetsFolderPath);
@@ -93,7 +98,8 @@ namespace AzerothWarsCSharp.Launcher
       var map = Map.Open(baseMapPath);
 
       FixDoodadData(map);
-      SetTestPlayerSlot(map, 0);
+      var launchSettings = config.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
+      SetTestPlayerSlot(map, launchSettings.TestingPlayerSlot);
       var builder = new MapBuilder(map);
       builder.AddFiles(baseMapPath, "*", SearchOption.AllDirectories);
       builder.AddFiles(AssetsFolderPath, "*", SearchOption.AllDirectories);
@@ -138,9 +144,8 @@ namespace AzerothWarsCSharp.Launcher
       };
 
       builder.Build(Path.Combine(OutputFolderPath, OutputMapName), archiveCreateOptions);
-
-      // Launch if that option was selected
-      if (launch) LaunchGame();
+      if (launch) 
+        LaunchGame(launchSettings);
     }
 
     /// <summary>
@@ -167,9 +172,9 @@ namespace AzerothWarsCSharp.Launcher
       }
     }
 
-    private static void LaunchGame()
+    private static void LaunchGame(LaunchSettings launchSettings)
     {
-      var wc3Exe = ConfigurationManager.AppSettings["wc3exe"];
+      var wc3Exe = launchSettings.Warcraft3ExecutablePath;
       if (File.Exists(wc3Exe))
       {
         var commandLineArgs = new StringBuilder();
