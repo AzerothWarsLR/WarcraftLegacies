@@ -15,8 +15,9 @@ namespace AzerothWarsCSharp.Source.Researches.Ironforge
       try
       {
         var heldItem = UnitItemInSlot(GetTriggerUnit(), 0);
+        if (heldItem == null) return;
         var heldArtifact = ArtifactManager.GetFromTypeId(GetItemTypeId(heldItem));
-        if (heldItem != null && heldArtifact != null && heldArtifact.Titanforged == false)
+        if (heldArtifact != null && heldArtifact.Titanforged == false)
         {
           heldArtifact.Titanforge();
         }
