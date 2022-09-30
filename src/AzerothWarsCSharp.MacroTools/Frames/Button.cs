@@ -35,7 +35,7 @@ namespace AzerothWarsCSharp.MacroTools.Frames
          init
          {
             _onClickTrigger = new TriggerWrapper();
-            _onClickTrigger.RegisterFrameEvent(Handle, FRAMEEVENT_MOUSE_UP);
+            _onClickTrigger.RegisterFrameEvent(Handle, FRAMEEVENT_CONTROL_CLICK);
             _onClickTrigger.AddAction(() => value(GetTriggerPlayer()));
          }
       }
