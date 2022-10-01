@@ -20,9 +20,9 @@ namespace AzerothWarsCSharp.Source.Setup.Spells
       };
       SpellSystem.Register(warStompCairne);
       
-      ResearchScaledAbility.Register(Constants.UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE,
+      ParentChildResearchSystem.Register(Constants.UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE,
         Constants.UPGRADE_R06C_KABOOM_LEVEL_UP);
-      ResearchScaledAbility.Register(Constants.UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE,
+      ParentChildResearchSystem.Register(Constants.UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE,
         Constants.UPGRADE_R06B_UNSTABLE_CONCONUION_LEVEL_UP);
     }
   }
