@@ -11,18 +11,16 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
   /// </summary>
   public abstract class Hazard : IPeriodicDisposableAction
   {
-    protected Hazard(string effectPath, unit caster, float x, float y)
+    protected Hazard(unit caster, float x, float y)
     {
       X = x;
       Y = y;
       Caster = caster;
-      Effect = AddSpecialEffect(effectPath, x, y);
     }
 
     protected float X { get; }
     protected float Y { get; }
     protected unit Caster { get; }
-    private effect Effect { get; }
 
     private readonly float _interval;
 
@@ -60,8 +58,8 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
     /// <inheritdoc />
     public void Dispose()
     {
+      Active = false;
       OnDispose();
-      if (Effect != null) DestroyEffect(Effect);
     }
 
     public abstract bool Active { get; set; }

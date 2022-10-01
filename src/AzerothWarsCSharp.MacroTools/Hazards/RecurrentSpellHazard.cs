@@ -22,8 +22,7 @@ namespace AzerothWarsCSharp.MacroTools.Hazards
       DummyCast.DummyCastPoint(GetOwningPlayer(Caster), _dummySpellId, _dummySpellOrder, _level, X, Y);
     }
     
-    public RecurrentSpellHazard(string effectPath, unit caster, float x, float y, string dummySpellOrder, int level,
-      int dummySpellId) : base(effectPath, caster, x, y)
+    public RecurrentSpellHazard(unit caster, float x, float y, string dummySpellOrder, int level, int dummySpellId) : base(caster, x, y)
     {
       _dummySpellOrder = dummySpellOrder;
       _level = level;

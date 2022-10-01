@@ -13,8 +13,7 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
     public static bool IsTargetAllyAndAlive(unit caster, unit target)
     {
       var casterPlayer = GetOwningPlayer(caster);
-      return caster != target &&
-             (IsUnitAlly(target, casterPlayer) || GetOwningPlayer(target) == Player(PLAYER_NEUTRAL_PASSIVE)) &&
+      return (IsUnitAlly(target, casterPlayer) || GetOwningPlayer(target) == Player(PLAYER_NEUTRAL_PASSIVE)) &&
              UnitAlive(target) && BlzIsUnitInvulnerable(target) == false;
     }
     
