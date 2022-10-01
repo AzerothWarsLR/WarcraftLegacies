@@ -58,7 +58,7 @@ namespace AzerothWarsCSharp.MacroTools.Buffs
       var i = 0;
       foreach (var tentacle in _tentacles)
       {
-        var offsetAngle = MathEx.PI * 2 / TentacleCount * i;
+        var offsetAngle = MathEx.Pi * 2 / TentacleCount * i;
         var offsetX = GetUnitX(Target) + RadiusOffset * Cos(offsetAngle);
         var offsetY = GetUnitY(Target) + RadiusOffset * Sin(offsetAngle);
         SetUnitPosition(tentacle, offsetX, offsetY);

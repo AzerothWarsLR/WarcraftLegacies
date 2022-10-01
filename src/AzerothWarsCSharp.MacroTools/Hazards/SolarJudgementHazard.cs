@@ -38,7 +38,7 @@ namespace AzerothWarsCSharp.MacroTools.Hazards
     
     private void DoRandomBolts()
     {
-      var randomAngle = GetRandomReal(0, 2 * MathEx.PI);
+      var randomAngle = GetRandomReal(0, 2 * MathEx.Pi);
       var randomRadius = GetRandomReal(0, Radius);
       DoBolt(X + randomRadius * Cos(randomAngle), Y + randomRadius * Sin(randomAngle));
     }
