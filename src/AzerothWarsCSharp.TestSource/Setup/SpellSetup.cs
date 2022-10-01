@@ -1,4 +1,5 @@
 ﻿using System;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.Spells;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.UnitEffects;
@@ -70,6 +71,8 @@ namespace AzerothWarsCSharp.TestSource.Setup
 
         var taxGuardTower = new ProvidesIncome(FourCC("hgtw"), 20);
         SpellSystem.Register(taxGuardTower);
+        
+        ParentChildResearchSystem.Register(FourCC("Rhde"), FourCC("Rhan"));
       }
       catch (Exception ex)
       {

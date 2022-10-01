@@ -1,7 +1,7 @@
 ﻿using AzerothWarsCSharp.MacroTools.Spells;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.UnitEffects;
-using AzerothWarsCSharp.Source.Mechanics.Goblins;
+using AzerothWarsCSharp.Source.Setup.Spells;
 using AzerothWarsCSharp.Source.Spells;
 using static War3Api.Common;
 
@@ -11,18 +11,6 @@ namespace AzerothWarsCSharp.Source.Setup
   {
     public static void Setup()
     {
-      var warStompCairne = new Stomp(Constants.ABILITY_A0WM_WAR_STOMP_PINK_CAIRNE_AZGALOR)
-      {
-        Radius = 300,
-        DamageBase = 20,
-        DamageLevel = 30,
-        DurationBase = 0,
-        DurationLevel = 1,
-        StunAbilityId = FourCC("A0WN"),
-        StunOrderString = "thunderbolt"
-      };
-      SpellSystem.Register(warStompCairne);
-
       var warStompImmoltar = new Stomp(Constants.ABILITY_A0LU_WAR_STOMP_IMMOLTAR)
       {
         Radius = 200,
@@ -52,17 +40,6 @@ namespace AzerothWarsCSharp.Source.Setup
         StunOrderString = "cripple"
       };
       SpellSystem.Register(thunderClap);
-
-      var consecration = new Stomp(Constants.ABILITY_A0WE_CONSECRATION_LORDAERON_UTHER)
-      {
-        Radius = 225,
-        DamageBase = 0,
-        DamageLevel = 60,
-        DurationBase = 1,
-        StunAbilityId = FourCC("S00H"),
-        StunOrderString = "cripple"
-      };
-      SpellSystem.Register(consecration);
 
       var massAntiMagicShell = new MassAnySpell(FourCC("A099"))
       {
@@ -166,19 +143,6 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(bombingRun);
 
-      var inspireMadness = new InspireMadness(Constants.ABILITY_A10M_INSPIRE_MADNESS_LEGION_TICHONDRIUS)
-      {
-        Radius = 400,
-        CountBase = 2,
-        CountLevel = 4,
-        Duration = 16,
-        Effect = @"war3mapImported\Call of Dread Purple.mdx",
-        EffectScale = 1.1f,
-        EffectTarget = @"Abilities\Spells\Other\Charm\CharmTarget.mdl",
-        EffectScaleTarget = 0.5f
-      };
-      SpellSystem.Register(inspireMadness);
-
       var summonGraniteGolems = new SummonUnits(Constants.ABILITY_A0EP_SUMMON_GRANITE_GOLEMS_QUEL_THALAS_SUNWELL)
       {
         SummonUnitTypeId = FourCC("nggr"),
@@ -189,21 +153,6 @@ namespace AzerothWarsCSharp.Source.Setup
         Effect = @"war3mapImported\Earth NovaTarget.mdx"
       };
       SpellSystem.Register(summonGraniteGolems);
-
-      var solarJudgement = new SolarJudgementSpell(Constants.ABILITY_A01F_SOLAR_JUDGEMENT_LORDAERON_ARTHAS)
-      {
-        DamageBase = 20,
-        DamageLevel = 20,
-        Duration = 14,
-        Period = 0.25f,
-        HealMultiplier = 1.5f,
-        UndeadDamageMultiplier = 1.1f,
-        Radius = 250,
-        BoltRadius = 125,
-        EffectPath = "Shining Flare.mdx",
-        EffectHealPath = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
-      };
-      SpellSystem.Register(solarJudgement);
 
       var resurgentFlameStrike = new ResurgentSpell(Constants.ABILITY_A04H_RESURGENT_FLAME_STRIKE_QUEL_THALAS_KAEL_THAS,
         Constants.ABILITY_A0F9_RESURGENT_FLAME_STRIKE_QUEL_THALAS_KAEL_THAS_DUMMY, "flamestrike")
@@ -244,12 +193,6 @@ namespace AzerothWarsCSharp.Source.Setup
         ReviveEffect = "Heal Blue.mdx"
       };
       SpellSystem.Register(burningVengeance);
-
-      var devour = new Devour(Constants.ABILITY_ADEV_DEVOUR_PINK_KODO_BEAST)
-      {
-        PercentageOfMaxHealth = 0.5f
-      };
-      SpellSystem.Register(devour);
 
       //Todo: inappropriately named
       var manaSyphon = new GrantMana(Constants.ABILITY_A0RG_MANA_SYPHON_ARATHOR_MAGE_TOWER)
@@ -311,10 +254,6 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(hideousAppendagesNzoth);
 
-      var summonBurningLegion = new SummonLegionSpell(Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS,
-        Constants.ABILITY_A0KZ_SPELL_IMMUNITY_LEGION_SUMMON);
-      SpellSystem.Register(summonBurningLegion);
-
       var corruptBuilding = new CorruptBuildingSpell(Constants.ABILITY_A0N8_CORRUPT_FORSAKEN, 6, 500);
       SpellSystem.Register(corruptBuilding);
 
@@ -334,48 +273,12 @@ namespace AzerothWarsCSharp.Source.Setup
       SpellSystem.Register(new ProvidesIncome(Constants.UNIT_H09O_CRIMSON_CASTLE_SCARLET, 80));
       SpellSystem.Register(new ProvidesIncome(Constants.UNIT_H09Q_ROYAL_FORTRESS_SCARLET, 100));
 
-      var zeppelinTradeTargets = new[]
-      {
-        Regions.Trade1.Center,
-        Regions.Trade2.Center,
-        Regions.Trade3.Center,
-        Regions.Trade4.Center
-      };
-      SpellSystem.Register(new Trader(Constants.UNIT_NZEP_TRADING_ZEPPELIN_WARSONG, 0, 60, zeppelinTradeTargets));
-
-      var traderTradeTargets = new[]
-      {
-        Regions.Trader1.Center,
-        Regions.Trader2.Center,
-        Regions.Trader3.Center
-      };
-      SpellSystem.Register(new Trader(Constants.UNIT_O04S_TRADER_GOBLIN, 40, 0, traderTradeTargets));
-
-      var nuclearLaunch = new NuclearLaunch(Constants.ABILITY_A0RH_INTERCONTINENTAL_BOMBARDMENT_GOBLIN_ARTILLERY,
-        @"war3mapImported/NuclearLaunchDetected.mp3", Constants.UNIT_H06L_DUMMY_NUKE_WARNING,
-        Constants.UNIT_H050_DUMMY_NUKE_LEFTOVER, 25);
-      SpellSystem.Register(nuclearLaunch);
-
-      var artillerySpeedMult =
-        new AnimationSpeedMultiplier(Constants.UNIT_H011_INTERCONTINENTAL_ARTILLERY_GOBLIN, 0.4f);
-      SpellSystem.Register(artillerySpeedMult);
-
-      SpellSystem.Register(new OilUser(Constants.UNIT_H011_INTERCONTINENTAL_ARTILLERY_GOBLIN));
-      SpellSystem.Register(new OilUser(FourCC("Ntin")));
-      SpellSystem.Register(new OilUser(Constants.UNIT_N062_SHREDDER_GOBLIN));
-      SpellSystem.Register(new OilUser(Constants.UNIT_H08Z_ASSAULT_TANK_GOBLIN));
-      SpellSystem.Register(new OilUser(Constants.UNIT_H091_WAR_ZEPPELIN_GOBLIN));
-      SpellSystem.Register(new OilProducer(Constants.UNIT_O04R_OIL_PLATFORM_GOBLIN, 11.5f));
-      SpellSystem.Register(new OilUser(Constants.UNIT_H04Z_KEZAN_OIL_SUPPLY_GOBLIN));
-      SpellSystem.Register(new OilRigConstructor(Constants.UNIT_N0AQ_OIL_RIG_WARSONG, new[]
-      {
-        Regions.OilRig1.Center, 
-        Regions.OilRig2.Center,
-        Regions.OilRig3.Center,
-        Regions.OilRig4.Center,
-        Regions.OilRig5.Center,
-        Regions.OilRig6.Center
-      }));
+      FrostwolfSpellSetup.Setup();
+      LegionSpellSetup.Setup();
+      GoblinSpellSetup.Setup();
+      ScourgeSpellSetup.Setup();
+      LordaeronSpellSetup.Setup();
+      DruidsSpellSetup.Setup();
     }
   }
 }
