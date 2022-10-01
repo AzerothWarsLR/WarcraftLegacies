@@ -313,6 +313,7 @@ namespace AzerothWarsCSharp.Source.Setup
       FrostwolfSpellSetup.Setup();
       LegionSpellSetup.Setup();
       GoblinSpellSetup.Setup();
+      ScourgeSpellSetup.Setup();
     }
   }
 }
