@@ -1,6 +1,6 @@
-﻿using AzerothWarsCSharp.MacroTools.Hazards;
+﻿using System;
+using AzerothWarsCSharp.MacroTools.Hazards;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
-
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Spells
@@ -26,13 +26,20 @@ namespace AzerothWarsCSharp.MacroTools.Spells
 
     public override void OnCast(unit caster, unit target, float targetX, float targetY)
     {
-      var hazard = new RecurrentSpellHazard(GetTriggerUnit(), GetSpellTargetX(), GetSpellTargetY(),
-        _dummySpellOrder, GetUnitAbilityLevel(GetTriggerUnit(), Id), _dummySpellId)
+      try
       {
-        Duration = Duration,
-        Interval = Interval
-      };
-      HazardSystem.Add(hazard);
+        var hazard = new RecurrentSpellHazard(GetTriggerUnit(), GetSpellTargetX(), GetSpellTargetY(),
+          _dummySpellOrder, GetUnitAbilityLevel(GetTriggerUnit(), Id), _dummySpellId)
+        {
+          Duration = Duration,
+          Interval = Interval
+        };
+        HazardSystem.Add(hazard);
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine($"Failed to cast spell {nameof(RecurrentSpellHazard)}: {ex}");
+      }
     }
   }
 }
