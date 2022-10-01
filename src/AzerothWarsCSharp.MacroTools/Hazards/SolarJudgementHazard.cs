@@ -1,5 +1,4 @@
-﻿using System;
-using AzerothWarsCSharp.MacroTools.Libraries;
+﻿using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 
@@ -14,8 +13,8 @@ namespace AzerothWarsCSharp.MacroTools.Hazards
     public float BoltDamage { get; init; }
     public float UndeadDamageMultiplier { get; init; } = 1;
     public float HealMultiplier { get; init; } = 1;
-    public string EffectPath { get; init; }
-    public string EffectHealPath { get; init; }
+    public string? EffectPath { get; init; }
+    public string? EffectHealPath { get; init; }
 
     private void DoBolt(float x, float y)
     {
@@ -44,14 +43,11 @@ namespace AzerothWarsCSharp.MacroTools.Hazards
       DoBolt(X + randomRadius * Cos(randomAngle), Y + randomRadius * Sin(randomAngle));
     }
     
-    protected override void OnPeriodic()
-    {
-      DoRandomBolts();
-    }
+    protected override void OnPeriodic() => DoRandomBolts();
 
-    public override bool Active { get; set; }
+    public override bool Active { get; set; } = true;
 
-    public SolarJudgementHazard(string effectPath, unit caster, float x, float y) : base(effectPath, caster, x, y)
+    public SolarJudgementHazard(unit caster, float x, float y) : base(caster, x, y)
     {
       
     }
