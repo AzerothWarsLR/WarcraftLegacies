@@ -22,8 +22,6 @@ namespace AzerothWarsCSharp.Source.Setup.Spells
       
       ParentChildResearchSystem.Register(Constants.UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE,
         Constants.UPGRADE_R06C_KABOOM_LEVEL_UP);
-      ParentChildResearchSystem.Register(Constants.UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE,
-        Constants.UPGRADE_R06B_UNSTABLE_CONCONUION_LEVEL_UP);
     }
   }
 }

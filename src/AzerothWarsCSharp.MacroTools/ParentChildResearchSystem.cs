@@ -18,6 +18,7 @@ namespace AzerothWarsCSharp.MacroTools
       PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, () =>
       {
         var triggerFaction = GetTriggerPlayer().GetFaction();
+        triggerFaction?.ModObjectLimit(childResearch, 1);
         triggerFaction?.SetObjectLevel(childResearch, triggerFaction.GetObjectLevel(parentResearch));
       }, parentResearch);
     }
