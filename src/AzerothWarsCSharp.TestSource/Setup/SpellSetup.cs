@@ -70,17 +70,21 @@ namespace AzerothWarsCSharp.TestSource.Setup
 
         var taxGuardTower = new ProvidesIncome(FourCC("hgtw"), 20);
         SpellSystem.Register(taxGuardTower);
-        var StormEarthandFire = new StormEarthandFire(FourCC("AHbz"))
-        {
-          Duration = 60
-        };
-        SpellSystem.Register(StormEarthandFire);
-        
+        //var StormEarthandFire = new StormEarthandFire(FourCC("AHbz"))
+        //{
+        //Duration = 60
+        //};
+        //SpellSystem.Register(StormEarthandFire);
         var StormEarthandFireUnit = new StormEarthandFire(FourCC("BEAN"))
         {
           Duration = 10
         };
         SpellSystem.Register(StormEarthandFireUnit);
+        var ElectricStrike = new ElectricStrike(FourCC("A0RC"))
+        {
+          PURGE_ID = FourCC("A003")
+        };
+        SpellSystem.Register(ElectricStrike);
       }
       catch (Exception ex)
       {
