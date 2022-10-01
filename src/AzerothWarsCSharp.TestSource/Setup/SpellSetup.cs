@@ -70,6 +70,8 @@ namespace AzerothWarsCSharp.TestSource.Setup
 
         var taxGuardTower = new ProvidesIncome(FourCC("hgtw"), 20);
         SpellSystem.Register(taxGuardTower);
+        var StormEarthandFire = new StormEarthandFire(FourCC("AHbz"));
+        SpellSystem.Register(StormEarthandFire);
       }
       catch (Exception ex)
       {
