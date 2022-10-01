@@ -2,6 +2,7 @@
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.UnitEffects;
 using AzerothWarsCSharp.Source.Mechanics.Goblins;
+using AzerothWarsCSharp.Source.Setup.Spells;
 using AzerothWarsCSharp.Source.Spells;
 using static War3Api.Common;
 
@@ -11,18 +12,6 @@ namespace AzerothWarsCSharp.Source.Setup
   {
     public static void Setup()
     {
-      var warStompCairne = new Stomp(Constants.ABILITY_A0WM_WAR_STOMP_PINK_CAIRNE_AZGALOR)
-      {
-        Radius = 300,
-        DamageBase = 20,
-        DamageLevel = 30,
-        DurationBase = 0,
-        DurationLevel = 1,
-        StunAbilityId = FourCC("A0WN"),
-        StunOrderString = "thunderbolt"
-      };
-      SpellSystem.Register(warStompCairne);
-
       var warStompImmoltar = new Stomp(Constants.ABILITY_A0LU_WAR_STOMP_IMMOLTAR)
       {
         Radius = 200,
@@ -376,6 +365,8 @@ namespace AzerothWarsCSharp.Source.Setup
         Regions.OilRig5.Center,
         Regions.OilRig6.Center
       }));
+      
+      FrostwolfSpellSetup.Setup();
     }
   }
 }

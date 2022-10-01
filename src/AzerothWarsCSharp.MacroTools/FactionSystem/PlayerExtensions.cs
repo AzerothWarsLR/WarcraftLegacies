@@ -138,7 +138,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       SetPlayerAbilityAvailable(player, ability, value);
     }
     
-    public static void SetObjectLevel(this player player, int objectId, int level)
+    internal static void SetObjectLevel(this player player, int objectId, int level)
     {
       PlayerData.ByHandle(player).SetObjectLevel(objectId, level);
     }
