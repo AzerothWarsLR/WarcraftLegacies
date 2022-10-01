@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using static War3Api.Common;
+using AzerothWarsCSharp.MacroTools.Libraries;
 
 namespace AzerothWarsCSharp.MacroTools.Spells
 {
@@ -25,53 +26,30 @@ namespace AzerothWarsCSharp.MacroTools.Spells
     {
     }
 
-    public SummonPanda(War3Api.Common.player player, int UnitType, float x, float y, float facing, float damageBonus, float hitpointBonus, float durationunit)
+    public unit SummonPanda(War3Api.Common.player player, int UnitType, float x, float y, float facing, float damageBonus, float hitpointBonus, float durationunit)
     {
-
+        unit newUnit = CreateUnit(player, UnitType, x, y, facing);
+        effect tempEffect;
+        UnitAddType(newUnit, UNIT_TYPE_SUMMONED);
+        UnitApplyTimedLife(newUnit, 0, DURATION);
+        UnitExtensions.ScaleBaseDamage(newUnit, 1 + damageBonus, 0);
+        UnitExtensions.ScaleMaxHitpoints(newUnit, 1 + hitpointBonus);
+        tempEffect = AddSpecialEffect(EFFECT_TARGET, GetUnitX(newUnit), GetUnitY(newUnit));
+        BlzSetSpecialEffectScale(tempEffect, EFFECT_SCALE_TARGET);
+        DestroyEffect(tempEffect);
+        return newUnit;
     }
     public override void OnCast(unit caster, unit target, float targetX, float targetY)
     {
-        CreateUnit(GetOwningPlayer(caster), FourCC("hfoo"),100,100,90);
+      var triggerPlayer = GetOwningPlayer(caster);
+      var level = GetUnitAbilityLevel(caster, ABIL_ID);
+      var x = MathEx.GetPolarOffsetX(GetUnitX(caster), 150, GetUnitFacing(caster));
+      var y = MathEx.GetPolarOffsetY(GetUnitY(caster), 150, GetUnitFacing(caster));
+      var damageBonus = DAMAGE_BONUS_BASE + DAMAGE_BONUS_LEVEL * level;
+      var hitpointBonus = HEALTH_BONUS_BASE + HEALTH_BONUS_LEVEL * level;
+      SummonPanda(triggerPlayer, UNIT_TYPE_1, x, y, GetUnitFacing(caster), damageBonus, hitpointBonus, DURATION);
+      SummonPanda(triggerPlayer, UNIT_TYPE_2, x, y, GetUnitFacing(caster), damageBonus, hitpointBonus, DURATION);
+      SummonPanda(triggerPlayer, UNIT_TYPE_3, x, y, GetUnitFacing(caster), damageBonus, hitpointBonus, DURATION);
     }
   }
 }
-
-
-/*    private function SummonPanda takes player whichPlayer, int unitType, float x, float y, float facing, float damageBonus, float hitpointBonus, float duration returns unit
-        local unit newUnit = CreateUnit(whichPlayer, unitType, x, y, facing)
-        local effect tempEffect
-        call UnitAddType(newUnit, UNIT_TYPE_SUMMONED)
-        call UnitApplyTimedLife(newUnit, 0, DURATION)
-        call ScaleUnitBaseDamage(newUnit, 1 + damageBonus, 0)
-        call ScaleUnitMaxHP(newUnit, 1 + hitpointBonus)
-        set tempEffect = AddSpecialEffect(EFFECT_TARGET, GetUnitX(newUnit), GetUnitY(newUnit))
-        call BlzSetSpecialEffectScale(tempEffect, EFFECT_SCALE_TARGET)
-        call DestroyEffect(tempEffect)
-        return newUnit
-    endfunction
-
-    private function Cast takes nothing returns nothing
-        local unit caster = null
-        local int level
-        local group tempGroup
-        local unit u = null
-        local player triggerPlayer = null
-        local effect tempEffect = null
-        local unit newUnit = null
-        local float x
-        local float y
-        set caster = GetTriggerUnit()
-        set triggerPlayer = GetOwningPlayer(caster)
-        set level = GetUnitAbilityLevel(caster, ABIL_ID) 
-        set x = GetPolarOffsetX(GetUnitX(caster), 150, GetUnitFacing(caster))
-        set y = GetPolarOffsetY(GetUnitY(caster), 150, GetUnitFacing(caster))
-        //Create the replicant
-        call SummonPanda(triggerPlayer, UNIT_TYPE_1, x, y, GetUnitFacing(caster), DAMAGE_BONUS_BASE + DAMAGE_BONUS_LEVEL*level, HEALTH_BONUS_BASE + HEALTH_BONUS_LEVEL*level, DURATION)
-        call SummonPanda(triggerPlayer, UNIT_TYPE_2, x, y, GetUnitFacing(caster), DAMAGE_BONUS_BASE + DAMAGE_BONUS_LEVEL*level, HEALTH_BONUS_BASE + HEALTH_BONUS_LEVEL*level, DURATION)
-        call SummonPanda(triggerPlayer, UNIT_TYPE_3, x, y, GetUnitFacing(caster), DAMAGE_BONUS_BASE + DAMAGE_BONUS_LEVEL*level, HEALTH_BONUS_BASE + HEALTH_BONUS_LEVEL*level, DURATION)
-    endfunction
-
-    private function OnInit takes nothing returns nothing
-        call RegisterSpellEffectAction(ABIL_ID, function Cast)
-    endfunction
-*/
