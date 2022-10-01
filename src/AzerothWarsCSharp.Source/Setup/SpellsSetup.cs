@@ -1,7 +1,6 @@
 ﻿using AzerothWarsCSharp.MacroTools.Spells;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.UnitEffects;
-using AzerothWarsCSharp.Source.Mechanics.Goblins;
 using AzerothWarsCSharp.Source.Setup.Spells;
 using AzerothWarsCSharp.Source.Spells;
 using static War3Api.Common;
@@ -166,21 +165,6 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(summonGraniteGolems);
 
-      var solarJudgement = new SolarJudgementSpell(Constants.ABILITY_A01F_SOLAR_JUDGEMENT_LORDAERON_ARTHAS)
-      {
-        DamageBase = 20,
-        DamageLevel = 20,
-        Duration = 14,
-        Period = 0.25f,
-        HealMultiplier = 1.5f,
-        UndeadDamageMultiplier = 1.1f,
-        Radius = 250,
-        BoltRadius = 125,
-        EffectPath = "Shining Flare.mdx",
-        EffectHealPath = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
-      };
-      SpellSystem.Register(solarJudgement);
-
       var resurgentFlameStrike = new ResurgentSpell(Constants.ABILITY_A04H_RESURGENT_FLAME_STRIKE_QUEL_THALAS_KAEL_THAS,
         Constants.ABILITY_A0F9_RESURGENT_FLAME_STRIKE_QUEL_THALAS_KAEL_THAS_DUMMY, "flamestrike")
       {
@@ -287,10 +271,6 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(hideousAppendagesNzoth);
 
-      var summonBurningLegion = new SummonLegionSpell(Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS,
-        Constants.ABILITY_A0KZ_SPELL_IMMUNITY_LEGION_SUMMON);
-      SpellSystem.Register(summonBurningLegion);
-
       var corruptBuilding = new CorruptBuildingSpell(Constants.ABILITY_A0N8_CORRUPT_FORSAKEN, 6, 500);
       SpellSystem.Register(corruptBuilding);
 
@@ -314,6 +294,7 @@ namespace AzerothWarsCSharp.Source.Setup
       LegionSpellSetup.Setup();
       GoblinSpellSetup.Setup();
       ScourgeSpellSetup.Setup();
+      LordaeronSpellSetup.Setup();
     }
   }
 }
