@@ -8,6 +8,17 @@ namespace AzerothWarsCSharp.Source.Setup.Spells
   {
     public static void Setup()
     {
+      var consecration = new Stomp(Constants.ABILITY_A0WE_CONSECRATION_LORDAERON_UTHER)
+      {
+        Radius = 225,
+        DamageBase = 0,
+        DamageLevel = 60,
+        DurationBase = 1,
+        StunAbilityId = Constants.ABILITY_S00H_THUNDER_CLAP_DUMMY,
+        StunOrderString = "cripple"
+      };
+      SpellSystem.Register(consecration);
+      
       var solarJudgement = new SolarJudgementSpell(Constants.ABILITY_A01F_SOLAR_JUDGEMENT_LORDAERON_ARTHAS)
       {
         DamageBase = 20,

@@ -8,6 +8,12 @@ namespace AzerothWarsCSharp.Source.Setup.Spells
   {
     public static void Setup()
     {
+      var devour = new Devour(Constants.ABILITY_ADEV_DEVOUR_PINK_KODO_BEAST)
+      {
+        PercentageOfMaxHealth = 0.5f
+      };
+      SpellSystem.Register(devour);
+      
       var warStompCairne = new Stomp(Constants.ABILITY_A0WM_WAR_STOMP_PINK_CAIRNE_AZGALOR)
       {
         Radius = 300,

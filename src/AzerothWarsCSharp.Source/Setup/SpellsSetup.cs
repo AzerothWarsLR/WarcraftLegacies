@@ -41,17 +41,6 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(thunderClap);
 
-      var consecration = new Stomp(Constants.ABILITY_A0WE_CONSECRATION_LORDAERON_UTHER)
-      {
-        Radius = 225,
-        DamageBase = 0,
-        DamageLevel = 60,
-        DurationBase = 1,
-        StunAbilityId = FourCC("S00H"),
-        StunOrderString = "cripple"
-      };
-      SpellSystem.Register(consecration);
-
       var massAntiMagicShell = new MassAnySpell(FourCC("A099"))
       {
         DummyAbilityId = FourCC("A0JN"),
@@ -205,12 +194,6 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(burningVengeance);
 
-      var devour = new Devour(Constants.ABILITY_ADEV_DEVOUR_PINK_KODO_BEAST)
-      {
-        PercentageOfMaxHealth = 0.5f
-      };
-      SpellSystem.Register(devour);
-
       //Todo: inappropriately named
       var manaSyphon = new GrantMana(Constants.ABILITY_A0RG_MANA_SYPHON_ARATHOR_MAGE_TOWER)
       {
@@ -295,6 +278,7 @@ namespace AzerothWarsCSharp.Source.Setup
       GoblinSpellSetup.Setup();
       ScourgeSpellSetup.Setup();
       LordaeronSpellSetup.Setup();
+      DruidsSpellSetup.Setup();
     }
   }
 }
