@@ -10,18 +10,18 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       if (GetLocalPlayer() != whichPlayer) return;
       SetCameraField(whichField, value, duration);
     }
-    
+
     /// <summary>
-    /// Changes the player's view to come out of a certain camera.
+    ///   Changes the player's view to come out of a certain camera.
     /// </summary>
     public static void SetupCamera(this player whichPlayer, camerasetup whichSetup, bool doPan, float duration)
     {
       if (GetLocalPlayer() != whichPlayer) return;
       CameraSetupApplyForceDuration(whichSetup, doPan, duration);
     }
-    
+
     /// <summary>
-    /// Prevents the player from moving their camera out of the provided area.
+    ///   Prevents the player from moving their camera out of the provided area.
     /// </summary>
     public static void SetCameraLimits(this player whichPlayer, rect rect)
     {
@@ -33,71 +33,32 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       SetCameraBounds(minX, minY, minX, maxY, maxX, maxY, maxX, minY);
     }
 
-    public static void SetColor(this player whichPlayer, playercolor color, bool changeExisting)
-    {
-      SetPlayerColor(whichPlayer, color);
-      if (changeExisting)
-      {
-        foreach (var unit in new GroupWrapper().EnumUnitsOfPlayer(whichPlayer).EmptyToList())
-        {
-          SetUnitColor(unit, color);
-        }
-      }
-    }
-
     public static void SetAllianceState(this player sourcePlayer, player otherPlayer, AllianceState allianceState)
     {
       // Prevent players from attempting to ally with themselves.
-      if (sourcePlayer == otherPlayer)
+      if (sourcePlayer == otherPlayer) return;
+
+      switch (allianceState)
       {
-        return;
+        case AllianceState.UnalliedVision:
+          sourcePlayer.SetPlayerAllianceStateAlly(otherPlayer, false);
+          sourcePlayer.SetPlayerAllianceStateVision(otherPlayer, true);
+          sourcePlayer.SetPlayerAllianceStateControl(otherPlayer, false);
+          sourcePlayer.SetPlayerAllianceStateFullControl(otherPlayer, false);
+          break;
+        case AllianceState.AlliedVision:
+          sourcePlayer.SetPlayerAllianceStateAlly(otherPlayer, true);
+          sourcePlayer.SetPlayerAllianceStateVision(otherPlayer, true);
+          sourcePlayer.SetPlayerAllianceStateControl(otherPlayer, false);
+          sourcePlayer.SetPlayerAllianceStateFullControl(otherPlayer, false);
+          break;
+        case AllianceState.AlliedAdvUnits:
+          sourcePlayer.SetPlayerAllianceStateAlly(otherPlayer, true);
+          sourcePlayer.SetPlayerAllianceStateVision(otherPlayer, true);
+          sourcePlayer.SetPlayerAllianceStateControl(otherPlayer, true);
+          sourcePlayer.SetPlayerAllianceStateFullControl(otherPlayer, true);
+          break;
       }
-
-      if (allianceState == AllianceState.UnalliedVision)
-      {
-        sourcePlayer.SetPlayerAllianceStateAlly(otherPlayer, false);
-        sourcePlayer.SetPlayerAllianceStateVision(otherPlayer, true);
-        sourcePlayer.SetPlayerAllianceStateControl(otherPlayer, false);
-        sourcePlayer.SetPlayerAllianceStateFullControl(otherPlayer, false);
-      }
-      else if (allianceState == AllianceState.AlliedVision)
-      {
-        sourcePlayer.SetPlayerAllianceStateAlly(otherPlayer, true);
-        sourcePlayer.SetPlayerAllianceStateVision(otherPlayer, true);
-        sourcePlayer.SetPlayerAllianceStateControl(otherPlayer, false);
-        sourcePlayer.SetPlayerAllianceStateFullControl(otherPlayer, false);
-      }
-      else if (allianceState == AllianceState.AlliedAdvUnits)
-      {
-        sourcePlayer.SetPlayerAllianceStateAlly(otherPlayer, true);
-        sourcePlayer.SetPlayerAllianceStateVision(otherPlayer, true);
-        sourcePlayer.SetPlayerAllianceStateControl(otherPlayer, true);
-        sourcePlayer.SetPlayerAllianceStateFullControl(otherPlayer, true);
-      }
-    }
-
-    public static void SetPlayerAllianceStateAlly(this player sourcePlayer, player otherPlayer, bool flag)
-    {
-      SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_PASSIVE, flag);
-      SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_HELP_REQUEST, flag);
-      SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_HELP_RESPONSE, flag);
-      SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_SHARED_XP, flag);
-      SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_SHARED_SPELLS, flag);
-    }
-
-    public static void SetPlayerAllianceStateVision(this player sourcePlayer, player otherPlayer, bool flag)
-    {
-      SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_SHARED_VISION, flag);
-    }
-
-    public static void SetPlayerAllianceStateControl(this player sourcePlayer, player otherPlayer, bool flag)
-    {
-      SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_SHARED_CONTROL, flag);
-    }
-
-    public static void SetPlayerAllianceStateFullControl(this player sourcePlayer, player otherPlayer, bool flag)
-    {
-      SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_SHARED_ADVANCED_CONTROL, flag);
     }
 
     public static void AdjustPlayerState(this player player, playerstate playerState, int value)
@@ -108,11 +69,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public static int GetObjectLimit(this player player, int objectId)
     {
       return PlayerData.ByHandle(player).GetObjectLimit(objectId);
-    }
-
-    internal static void SetControlPointCount(this player player, int value)
-    {
-      PlayerData.ByHandle(player).ControlPointCount = value;
     }
 
     public static int GetControlPointCount(this player player)
@@ -128,24 +84,6 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     public static void AddLumber(this player player, float lumber)
     {
       PlayerData.ByHandle(player).AddLumber(lumber);
-    }
-
-    /// <summary>
-    /// Determines whether or not the player can see or use the specified ability.
-    /// </summary>
-    public static void SetAbilityAvailability(this player player, int ability, bool value)
-    {
-      SetPlayerAbilityAvailable(player, ability, value);
-    }
-    
-    internal static void SetObjectLevel(this player player, int objectId, int level)
-    {
-      PlayerData.ByHandle(player).SetObjectLevel(objectId, level);
-    }
-
-    public static void ModObjectLimit(this player player, int objectId, int limit)
-    {
-      PlayerData.ByHandle(player).ModObjectLimit(objectId, limit);
     }
 
     public static Team? GetTeam(this player player)
@@ -202,10 +140,65 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     {
       PlayerData.ByHandle(player).LumberIncome += value;
     }
+    
+    internal static void SetControlPointCount(this player player, int value)
+    {
+      PlayerData.ByHandle(player).ControlPointCount = value;
+    }
+    
+    /// <summary>
+    ///   Determines whether or not the player can see or use the specified ability.
+    /// </summary>
+    internal static void SetAbilityAvailability(this player player, int ability, bool value)
+    {
+      SetPlayerAbilityAvailable(player, ability, value);
+    }
 
+    internal static void SetObjectLevel(this player player, int objectId, int level)
+    {
+      PlayerData.ByHandle(player).SetObjectLevel(objectId, level);
+    }
+
+    internal static void ModObjectLimit(this player player, int objectId, int limit)
+    {
+      PlayerData.ByHandle(player).ModObjectLimit(objectId, limit);
+    }
+    
+    internal static void SetColor(this player whichPlayer, playercolor color, bool changeExisting)
+    {
+      SetPlayerColor(whichPlayer, color);
+      if (!changeExisting) return;
+      foreach (var unit in new GroupWrapper().EnumUnitsOfPlayer(whichPlayer).EmptyToList())
+        SetUnitColor(unit, color);
+    }
+    
     internal static PlayerData GetPlayerData(this player player)
     {
       return PlayerData.ByHandle(player);
+    }
+
+    private static void SetPlayerAllianceStateAlly(this player sourcePlayer, player otherPlayer, bool flag)
+    {
+      SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_PASSIVE, flag);
+      SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_HELP_REQUEST, flag);
+      SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_HELP_RESPONSE, flag);
+      SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_SHARED_XP, flag);
+      SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_SHARED_SPELLS, flag);
+    }
+
+    private static void SetPlayerAllianceStateVision(this player sourcePlayer, player otherPlayer, bool flag)
+    {
+      SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_SHARED_VISION, flag);
+    }
+
+    private static void SetPlayerAllianceStateControl(this player sourcePlayer, player otherPlayer, bool flag)
+    {
+      SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_SHARED_CONTROL, flag);
+    }
+
+    private static void SetPlayerAllianceStateFullControl(this player sourcePlayer, player otherPlayer, bool flag)
+    {
+      SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_SHARED_ADVANCED_CONTROL, flag);
     }
   }
 }
