@@ -155,19 +155,6 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(bombingRun);
 
-      var inspireMadness = new InspireMadness(Constants.ABILITY_A10M_INSPIRE_MADNESS_LEGION_TICHONDRIUS)
-      {
-        Radius = 400,
-        CountBase = 2,
-        CountLevel = 4,
-        Duration = 16,
-        Effect = @"war3mapImported\Call of Dread Purple.mdx",
-        EffectScale = 1.1f,
-        EffectTarget = @"Abilities\Spells\Other\Charm\CharmTarget.mdl",
-        EffectScaleTarget = 0.5f
-      };
-      SpellSystem.Register(inspireMadness);
-
       var summonGraniteGolems = new SummonUnits(Constants.ABILITY_A0EP_SUMMON_GRANITE_GOLEMS_QUEL_THALAS_SUNWELL)
       {
         SummonUnitTypeId = FourCC("nggr"),
@@ -367,6 +354,7 @@ namespace AzerothWarsCSharp.Source.Setup
       }));
       
       FrostwolfSpellSetup.Setup();
+      LegionSpellSetup.Setup();
     }
   }
 }
