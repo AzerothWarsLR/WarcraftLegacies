@@ -1,4 +1,5 @@
 ﻿using System;
+using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.Spells;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.UnitEffects;
@@ -70,21 +71,8 @@ namespace AzerothWarsCSharp.TestSource.Setup
 
         var taxGuardTower = new ProvidesIncome(FourCC("hgtw"), 20);
         SpellSystem.Register(taxGuardTower);
-        //var StormEarthandFire = new StormEarthandFire(FourCC("AHbz"))
-        //{
-        //Duration = 60
-        //};
-        //SpellSystem.Register(StormEarthandFire);
-        var StormEarthandFireUnit = new StormEarthandFire(FourCC("BEAN"))
-        {
-          Duration = 10
-        };
-        SpellSystem.Register(StormEarthandFireUnit);
-        var ElectricStrike = new ElectricStrike(FourCC("A0RC"))
-        {
-          PURGE_ID = FourCC("A003")
-        };
-        SpellSystem.Register(ElectricStrike);
+        
+        ParentChildResearchSystem.Register(FourCC("Rhde"), FourCC("Rhan"));
       }
       catch (Exception ex)
       {

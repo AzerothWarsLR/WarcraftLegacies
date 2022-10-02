@@ -27,17 +27,17 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player?.ModObjectLimit(Constants.UNIT_H00F_PALADIN_LORDAERON, -Faction.UNLIMITED);
-      completingFaction.Player?.ModObjectLimit(Constants.UPGRADE_R06Q_PALADIN_MASTER_TRAINING_LORDAERON, -Faction.UNLIMITED);
-      completingFaction.Player?.ModObjectLimit(Constants.UNIT_H012_CAPTAIN_FALRIC_LORDAERON_DEMI, -Faction.UNLIMITED);
-      completingFaction.Player?.ModObjectLimit(Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON, -Faction.UNLIMITED);
-      completingFaction.Player?.ModObjectLimit(Constants.UNIT_HUTH_LEADER_OF_THE_SILVER_HAND_LORDAERON, -Faction.UNLIMITED);
-      completingFaction.Player?.ModObjectLimit(Constants.UNIT_H01J_THE_ASHBRINGER_LORDAERON, -Faction.UNLIMITED);
-      completingFaction.Player?.ModObjectLimit(Constants.UNIT_HARF_HIGH_KING_LORDAERON_HIGH_KING, -Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(Constants.UNIT_H00F_PALADIN_LORDAERON, -Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(Constants.UPGRADE_R06Q_PALADIN_MASTER_TRAINING_LORDAERON, -Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(Constants.UNIT_H012_CAPTAIN_FALRIC_LORDAERON_DEMI, -Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON, -Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(Constants.UNIT_HUTH_LEADER_OF_THE_SILVER_HAND_LORDAERON, -Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(Constants.UNIT_H01J_THE_ASHBRINGER_LORDAERON, -Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(Constants.UNIT_HARF_HIGH_KING_LORDAERON_HIGH_KING, -Faction.UNLIMITED);
 
-      completingFaction.Player?.ModObjectLimit(Constants.UNIT_H009_DARK_KNIGHT_GARITHOS, 6);
-      completingFaction.Player?.ModObjectLimit(Constants.UNIT_HLGR_GRAND_MARSHAL_SCARLET, 1);
-      completingFaction.Player?.ModObjectLimit(Constants.UNIT_E000_IMPROVED_ANCIENT_PROTECTOR_DRUIDS, 1);
+      completingFaction.ModObjectLimit(Constants.UNIT_H009_DARK_KNIGHT_GARITHOS, 6);
+      completingFaction.ModObjectLimit(Constants.UNIT_HLGR_GRAND_MARSHAL_SCARLET, 1);
+      completingFaction.ModObjectLimit(Constants.UNIT_E000_IMPROVED_ANCIENT_PROTECTOR_DRUIDS, 1);
 
       completingFaction.Player?.SetTeam(TeamSetup.ScarletCrusade);
       completingFaction.Name = "Garithos";

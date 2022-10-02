@@ -106,3 +106,9 @@ STRING 21
 Force 2
 }
 
+STRING 22
+// Units: u00X (Dummy Caster), Name (Name)
+{
+Dummy Caster
+}
+
