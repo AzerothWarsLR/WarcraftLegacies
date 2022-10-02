@@ -3,7 +3,6 @@ using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.Spells;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.UnitEffects;
-using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.TestSource.Setup
@@ -73,6 +72,15 @@ namespace AzerothWarsCSharp.TestSource.Setup
         SpellSystem.Register(taxGuardTower);
         
         ParentChildResearchSystem.Register(FourCC("Rhde"), FourCC("Rhan"));
+        
+        var electricStrike = new ElectricStrike(FourCC("AHbz"))
+        {
+          STUN_ID = FourCC("ANsb"),
+          PURGE_ID = FourCC("Aprg"),
+          PURGE_ORDER = "purge",
+          STUN_ORDER = "thunderbolt"
+        };
+        SpellSystem.Register(electricStrike);
       }
       catch (Exception ex)
       {
