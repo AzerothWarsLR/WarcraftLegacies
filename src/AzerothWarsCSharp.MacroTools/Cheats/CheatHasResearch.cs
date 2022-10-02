@@ -5,38 +5,11 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
 {
   public static class CheatHasResearch
   {
-    private const string COMMAND = "-hasresearch ";
-
-    private static int Char2Id(string c)
-    {
-      var i = 0;
-      const string abc = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-
-      while (true)
-      {
-        string t = SubString(abc, i, i + 1);
-        if (t == null || t == c) break;
-
-        i += 1;
-      }
-
-      if (i < 10)
-        return i + 48;
-      else if (i < 36)
-        return i + 65 - 10;
-      else
-        return i + 97 - 36;
-    }
-
-    private static int S2Raw(string s)
-    {
-      return ((Char2Id(SubString(s, 0, 1)) * 256 + Char2Id(SubString(s, 1, 2))) * 256 + Char2Id(SubString(s, 2, 3))) *
-        256 + Char2Id(SubString(s, 3, 4));
-    }
+    private const string Command = "-hasresearch ";
 
     private static void CheckResearch(player p, string parameter)
     {
-      var obj = S2Raw(parameter);
+      var obj = FourCC(parameter);
       DisplayTextToPlayer(p, 0, 0,
         "|cffD27575CHEAT:|r Level of research " + GetObjectName(obj) + ": " + I2S(GetPlayerTechCount(p, obj, true)));
     }
@@ -45,15 +18,15 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
     {
       if (!TestSafety.CheatCondition()) return;
 
-      string enteredString = GetEventPlayerChatString();
-      string parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
+      var enteredString = GetEventPlayerChatString();
+      var parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
       CheckResearch(GetTriggerPlayer(), parameter);
     }
 
     public static void Setup()
     {
-      trigger trig = CreateTrigger();
-      foreach (var player in GetAllPlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
+      var trig = CreateTrigger();
+      foreach (var player in GetAllPlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
 
       TriggerAddAction(trig, Actions);
     }
