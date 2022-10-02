@@ -112,3 +112,9 @@ STRING 22
 Dummy Caster
 }
 
+STRING 23
+// Units: n003 (Dummy), Name (Name)
+{
+Dummy
+}
+
