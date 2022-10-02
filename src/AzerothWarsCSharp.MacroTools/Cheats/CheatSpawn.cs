@@ -7,18 +7,13 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
   public static class CheatSpawn
   {
     private const string Command = "-spawn ";
-    private static string? _parameter;
-    private static string? _parameter2;
 
-    private static void Spawn(unit whichUnit)
+    private static void SpawnUnitsOrItems(unit whichUnit, int typeId, int count)
     {
-      var i = 0;
-      while (true)
+      for (var i = 0; i < count; i++)
       {
-        if (i == S2I(_parameter2)) break;
-        CreateUnit(GetTriggerPlayer(), FourCC(_parameter), GetUnitX(whichUnit), GetUnitY(whichUnit), 0);
-        CreateItem(FourCC(_parameter), GetUnitX(whichUnit), GetUnitY(whichUnit));
-        i += 1;
+        CreateUnit(GetTriggerPlayer(), typeId, GetUnitX(whichUnit), GetUnitY(whichUnit), 0);
+        CreateItem(typeId, GetUnitX(whichUnit), GetUnitY(whichUnit));
       }
     }
 
@@ -26,21 +21,24 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
     {
       if (!TestSafety.CheatCondition()) return;
       var enteredString = GetEventPlayerChatString();
-      var p = GetTriggerPlayer();
-      _parameter = SubString(enteredString, StringLength(Command), StringLength(Command) + 4);
-      _parameter2 = SubString(enteredString, StringLength(Command) + StringLength(_parameter) + 1,
+      var triggerPlayer = GetTriggerPlayer();
+      var typeIdParameter = SubString(enteredString, StringLength(Command), StringLength(Command) + 4);
+      var countParameter = SubString(enteredString, StringLength(Command) + StringLength(typeIdParameter) + 1,
         StringLength(enteredString));
 
-      if (S2I(_parameter2) < 1) _parameter2 = "1";
+      if (S2I(countParameter) < 1) 
+        countParameter = "1";
 
-      if (FourCC(_parameter) < 0) return;
-      foreach (var unit in new GroupWrapper().EnumSelectedUnits(p).EmptyToList())
+      if (FourCC(typeIdParameter) <= 0) 
+        return;
+      
+      foreach (var unit in new GroupWrapper().EnumSelectedUnits(triggerPlayer).EmptyToList())
       {
-        Spawn(unit);
+        SpawnUnitsOrItems(unit, FourCC(typeIdParameter), S2I(countParameter));
       }
 
-      DisplayTextToPlayer(p, 0, 0,
-        $"|cffD27575CHEAT:|r Attempted to spawn {_parameter2} of object {GetObjectName(FourCC(_parameter))}.");
+      DisplayTextToPlayer(triggerPlayer, 0, 0,
+        $"|cffD27575CHEAT:|r Attempted to spawn {countParameter} of object {GetObjectName(FourCC(typeIdParameter))}.");
     }
 
     public static void Setup()
