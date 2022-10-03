@@ -49,16 +49,10 @@ namespace AzerothWarsCSharp.Source.Setup
       
       Player(13).SetFaction(DraeneiSetup.Draenei);
       Player(13).SetTeam(TeamSetup.NightElves);
-      
-      Player(14).SetFaction(BlackEmpireSetup.BlackEmpire);
-      Player(14).SetTeam(TeamSetup.OldGods);
-      
+
       Player(15).SetFaction(IllidariSetup.Illidari);
       Player(15).SetTeam(TeamSetup.NightElves);
-      
-      Player(16).SetFaction(CthunSetup.Cthun);
-      Player(16).SetTeam(TeamSetup.OldGods);
-      
+
       Player(17).SetFaction(ZandalarSetup.Zandalar);
       Player(17).SetTeam(TeamSetup.Horde);
       
@@ -66,7 +60,7 @@ namespace AzerothWarsCSharp.Source.Setup
       Player(18).SetTeam(TeamSetup.NightElves);
       
       Player(19).SetFaction(TwilightSetup.TwilightsHammer);
-      Player(19).SetTeam(TeamSetup.OldGods);
+      Player(19).SetTeam(TeamSetup.Legion);
       
       Player(20).SetFaction(GilneasSetup.Gilneas);
       Player(20).SetTeam(TeamSetup.Alliance);
@@ -76,9 +70,6 @@ namespace AzerothWarsCSharp.Source.Setup
       
       Player(22).SetFaction(LegionSetup.Legion);
       Player(22).SetTeam(TeamSetup.Legion);
-      
-      Player(23).SetFaction(NzothSetup.Nzoth);
-      Player(23).SetTeam(TeamSetup.OldGods);
     }
   }
 }

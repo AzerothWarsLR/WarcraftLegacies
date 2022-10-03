@@ -11,7 +11,6 @@ namespace AzerothWarsCSharp.Source.Setup
     public static Team Gilneas { get; private set; }
     public static Team ScarletCrusade { get; private set; }
     public static Team Forsaken { get; private set; }
-    public static Team OldGods { get; private set; }
     public static Team Scourge { get; private set; }
   
 
@@ -39,13 +38,7 @@ namespace AzerothWarsCSharp.Source.Setup
         VictoryMusic = "HeroicVictory"
       };
       FactionManager.Register(NightElves);
-      
-      OldGods = new Team("Old Gods")
-      {
-        VictoryMusic = "DarkVictory"
-      };
-      FactionManager.Register(OldGods);
-      
+
       Naga = new Team("Illidari")
       {
         VictoryMusic = "DarkVictory"
