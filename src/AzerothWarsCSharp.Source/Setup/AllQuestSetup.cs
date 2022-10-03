@@ -25,9 +25,7 @@ namespace AzerothWarsCSharp.Source.Setup
       TrollQuestSetup.Setup();
       ForsakenQuestSetup.Setup(questPlague);
       TwilightQuestSetup.Setup();
-      CthunQuestSetup.Setup();
       GoblinQuestSetup.Setup();
-      BlackEmpireQuestSetup.Setup();
       DraeneiQuestSetup.Setup();
       SharedQuestSetup.Setup();
     }

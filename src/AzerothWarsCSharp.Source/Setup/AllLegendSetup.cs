@@ -6,8 +6,6 @@ namespace AzerothWarsCSharp.Source.Setup
   {
     public static void Setup()
     {
-      LegendBlackEmpire.Setup();
-      LegendCthun.Setup();
       LegendDalaran.Setup();
       LegendDraenei.Setup();
       LegendDruids.Setup();
