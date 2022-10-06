@@ -1,64 +1,66 @@
-using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.Researches.Ironforge;
+using static War3Api.Common;
+using AzerothWarsCSharp.Source.Setup.FactionSetup;
+using AzerothWarsCSharp.MacroTools.FactionSystem;
+using WCSharp.Events;
+using AzerothWarsCSharp.MacroTools.Libraries;
+using AzerothWarsCSharp.MacroTools;
+using WCSharp.Shared.Data;
+using AzerothWarsCSharp.Source.Setup.Legends;
+
+namespace AzerothWarsCSharp.Source.Researches.Ironforge
 {
    public static class DeeprunTram
    {
 
    
-     private const int RESEARCH_ID = Constants.UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE;
+     private const int ResearchId = Constants.UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE;
    
 
-     private static void Transfer( )
+     private static void Transfer()
      {
-       unit ironforgeTram = gg_unit_n03B_0010;
-       unit stormwindTram = gg_unit_n03B_0037;
-       Person recipient;
-
-       recipient = FACTION_IRONFORGE.Person;
-       if (recipient == 0){
-         recipient = StormwindSetup.Stormwind.Person;
-       }
-       if (recipient == 0){
-         KillUnit(gg_unit_n03B_0010);
-         KillUnit(gg_unit_n03B_0037);
+       
+       
+       var Greatforge = LegendIronforge.LegendGreatforge.Unit;
+       var ironForgeLocation = new Point(GetUnitX(Greatforge), GetUnitY(Greatforge));
+       var Keep = LegendStormwind.LegendStormwindkeep.Unit;
+       var StormwindLocation = new Point(GetUnitX(Keep),GetUnitY(Keep));
+       unit tramToIronforge = PreplacedUnitSystem.GetUnit(FourCC("n03B"), StormwindLocation);
+       unit tramToStormwind = PreplacedUnitSystem.GetUnit(FourCC("n03B"), ironForgeLocation);
+       var recipient = IronforgeSetup.Ironforge?.Player ?? StormwindSetup.Stormwind?.Player;
+       if (recipient == null){
+         KillUnit(tramToIronforge);
+         KillUnit(tramToStormwind);
          return;
        }
 
-       SetUnitOwner(ironforgeTram, recipient.Player, true);
-       WaygateActivateBJ(true, ironforgeTram);
-       WaygateSetDestination(ironforgeTram, GetRectCenterX(gg_rct_Stormwind), GetRectCenterY(gg_rct_Stormwind));
-       SetUnitInvulnerable(ironforgeTram, false);
+       SetUnitOwner(tramToIronforge, recipient, true);
+       WaygateActivate(tramToIronforge,true);
+       tramToIronforge.SetWaygateDestination(Regions.Stormwind.Center);
+       SetUnitInvulnerable(tramToIronforge, false);
 
-       SetUnitOwner(stormwindTram, recipient.Player, true);
-       WaygateActivateBJ(true, stormwindTram);
-       WaygateSetDestination(stormwindTram, GetRectCenterX(gg_rct_Ironforge), GetRectCenterY(gg_rct_Ironforge));
-       SetUnitInvulnerable(stormwindTram, false);
+       SetUnitOwner(tramToStormwind, recipient, true);
+       WaygateActivate(tramToStormwind, true);
+       tramToStormwind.SetWaygateDestination(Regions.Ironforge.Center);
+       SetUnitInvulnerable(tramToStormwind, false);
      }
 
      private static void ResearchStart( ){
-       var i = 0;
-       while(true){
-         if ( i > MAX_PLAYERS){ break; }
-         Person.ById(i).SetObjectLimit(RESEARCH_ID, 0);
-         i = i + 1;
-       }
+        foreach (var player in GeneralHelpers.GetAllPlayers()){
+          player.GetFaction()?.ModObjectLimit(ResearchId, -1);
+        }
      }
 
-     private static void ResearchCancel( ){
-       var i = 0;
-       while(true){
-         if ( i > MAX_PLAYERS){ break; }
-         Person.ById(i).SetObjectLimit(RESEARCH_ID, 1);
-         i = i + 1;
-       }
+      private static void ResearchCancel( ){
+        foreach (var player in GeneralHelpers.GetAllPlayers()){
+          player.GetFaction()?.ModObjectLimit(ResearchId, 0);
+        }
      }
 
      public static void Setup( ){
-       RegisterResearchFinishedAction(RESEARCH_ID,  Transfer);
-       RegisterResearchStartedAction(RESEARCH_ID,  ResearchStart);
-       RegisterResearchCancelledAction(RESEARCH_ID,  ResearchCancel);
+       PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished,  Transfer, ResearchId);
+       PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsStarted,  Transfer, ResearchId);
+       PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsCancelled,  Transfer, ResearchId);
      }
-
    }
- }
+}
