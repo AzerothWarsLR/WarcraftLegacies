@@ -1,4 +1,5 @@
-﻿using AzerothWarsCSharp.MacroTools.Hazards;
+﻿using System;
+using AzerothWarsCSharp.MacroTools.Hazards;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 
 using static War3Api.Common;
@@ -15,8 +16,8 @@ namespace AzerothWarsCSharp.MacroTools.Spells
     public float UndeadDamageMultiplier { get; init; }
     public float Radius { get; init; }
     public float BoltRadius { get; init; }
-    public string EffectPath { get; init; }
-    public string EffectHealPath { get; init; }
+    public string? EffectPath { get; init; }
+    public string? EffectHealPath { get; init; }
     
     public SolarJudgementSpell(int id) : base(id)
     {
@@ -24,20 +25,27 @@ namespace AzerothWarsCSharp.MacroTools.Spells
 
     public override void OnCast(unit caster, unit target, float targetX, float targetY)
     {
-      var level = GetAbilityLevel(caster);
-      var hazard = new SolarJudgementHazard(null, caster, targetX, targetY)
+      try
       {
-        Radius = Radius,
-        BoltRadius = BoltRadius,
-        BoltDamage = DamageBase + DamageLevel * level,
-        UndeadDamageMultiplier = UndeadDamageMultiplier,
-        HealMultiplier = HealMultiplier,
-        EffectPath = EffectPath,
-        EffectHealPath = EffectHealPath,
-        Interval = Period,
-        Duration = Duration,
-      };
-      SpellSystem.HazardSystem.Add(hazard);
+        var level = GetAbilityLevel(caster);
+        var hazard = new SolarJudgementHazard(caster, targetX, targetY)
+        {
+          Radius = Radius,
+          BoltRadius = BoltRadius,
+          BoltDamage = DamageBase + DamageLevel * level,
+          UndeadDamageMultiplier = UndeadDamageMultiplier,
+          HealMultiplier = HealMultiplier,
+          EffectPath = EffectPath,
+          EffectHealPath = EffectHealPath,
+          Interval = Period,
+          Duration = Duration,
+        };
+        HazardSystem.Add(hazard);
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine($"Failed to cast {nameof(SolarJudgementSpell)}: {ex}");
+      }
     }
   }
 }

@@ -1,13 +1,13 @@
-﻿using System;
-using WCSharp.Shared.Data;
-
+﻿using WCSharp.Shared.Data;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Libraries
 {
   public static class MathEx
   {
-    public const double DEG_TO_RAD = Math.PI / 180.0;
-    public const float PI = 3.141593F;
+    public const float Pi = 3.141593F;
+    public const float DegToRad = Pi / 180.0f;
+    public const float RadToDeg = 180 / Pi;
 
     public static float Max(float a, float b)
     {
@@ -34,22 +34,13 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
       var dx = positionB.X - positionA.X;
       var dy = positionB.Y - positionA.Y;
 
-      return (float)Math.Sqrt(dx * dx + dy * dy);
+      return SquareRoot(dx * dx + dy * dy);
     }
 
-    public static float GetAngleBetweenPoints(float xa, float ya, float xb, float yb)
-    {
-      return (float)(DEG_TO_RAD * Math.Atan2(yb - ya, xb - xa));
-    }
+    public static float GetAngleBetweenPoints(float xa, float ya, float xb, float yb) => RadToDeg * Atan2(yb - ya, xb - xa);
 
-    public static float GetPolarOffsetX(float x, float dist, float angle)
-    {
-      return (float)(x + dist * Math.Cos(angle * DEG_TO_RAD));
-    }
+    public static float GetPolarOffsetX(float x, float dist, float angle) => x + dist * Cos(angle * DegToRad);
 
-    public static float GetPolarOffsetY(float y, float dist, float angle)
-    {
-      return (float)(y + dist * Math.Sin(angle * DEG_TO_RAD));
-    }
+    public static float GetPolarOffsetY(float y, float dist, float angle) => y + dist * Sin(angle * DegToRad);
   }
 }
