@@ -26,7 +26,10 @@ namespace AzerothWarsCSharp.MacroTools.Spells
 
     public override void OnCast(unit caster, unit target, float targetX, float targetY)
     {
-      foreach (var unit in new GroupWrapper().EnumUnitsInRange(GetUnitX(caster), GetUnitY(caster), Radius).EmptyToList())
+      foreach (var unit in new GroupWrapper()
+                 .EnumUnitsInRange(caster.GetPosition(), Radius)
+                 .EmptyToList()
+               )
       {
         if (IsPlayerAlly(GetOwningPlayer(caster), GetOwningPlayer(unit)))
         {

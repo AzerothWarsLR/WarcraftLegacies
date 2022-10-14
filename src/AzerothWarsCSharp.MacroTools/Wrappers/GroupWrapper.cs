@@ -102,9 +102,9 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
     /// <summary>
     /// Adds all units within range of the specified <see cref="Point"/> to the <see cref="GroupWrapper"/>.
     /// </summary>
-    public GroupWrapper EnumUnitsInRange(float x, float y, float radius)
+    public GroupWrapper EnumUnitsInRange(Point point, float radius)
     {
-      GroupEnumUnitsInRange(_group, x, y, radius, null);
+      GroupEnumUnitsInRange(_group, point.X, point.Y, radius, null);
       return this;
     }
 

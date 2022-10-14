@@ -3,7 +3,7 @@ using AzerothWarsCSharp.MacroTools.Buffs;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Buffs;
-
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Spells
@@ -52,7 +52,7 @@ namespace AzerothWarsCSharp.MacroTools.Spells
     public override void OnCast(unit caster, unit target, float targetX, float targetY)
     {
       var group = new GroupWrapper();
-      group.EnumUnitsInRange(targetX, targetY, Radius);
+      group.EnumUnitsInRange(new Point(targetX, targetY), Radius);
       var maxTargets = CountBase * CountLevel * GetAbilityLevel(caster);
       foreach (var unit in group.EmptyToList().Take(maxTargets))
       {
