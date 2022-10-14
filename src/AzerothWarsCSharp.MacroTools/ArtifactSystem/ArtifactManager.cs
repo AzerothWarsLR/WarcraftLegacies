@@ -14,6 +14,10 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
     /// </summary>
     public static event EventHandler<Artifact>? ArtifactRegistered;
     
+    /// <summary>
+    /// Returns the registered <see cref="Artifact"/> that represents the item with the provided item type ID.
+    /// If there isn't one, returns null.
+    /// </summary>
     public static Artifact? GetFromTypeId(int typeId) => ArtifactsByType.ContainsKey(typeId) ? ArtifactsByType[typeId] : null;
 
     /// <summary>
