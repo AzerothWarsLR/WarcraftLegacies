@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Quests.Frostwolf
       var drektharsSpellbook = ArtifactSetup.ArtifactDrektharsspellbook;
       if (drektharsSpellbook != null && LegendFrostwolf.LegendThrall?.Unit != null)
       {
-        drektharsSpellbook.Status = ArtifactStatus.Ground;
+        drektharsSpellbook.LocationType = ArtifactLocationType.Ground;
         LegendFrostwolf.LegendThrall.Unit.AddItemSafe(drektharsSpellbook.Item);
       }
     }

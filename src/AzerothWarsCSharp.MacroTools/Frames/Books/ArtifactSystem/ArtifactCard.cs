@@ -77,21 +77,21 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
 
     private void OnArtifactStatusChanged(object? sender, Artifact artifact)
     {
-      switch (artifact.Status)
+      switch (artifact.LocationType)
       {
-        case ArtifactStatus.Unit:
+        case ArtifactLocationType.Unit:
           _text.Visible = true;
           _pingButton.Visible = false;
           break;
-        case ArtifactStatus.Ground:
+        case ArtifactLocationType.Ground:
           _text.Visible = false;
           _pingButton.Visible = true;
           break;
-        case ArtifactStatus.Special:
+        case ArtifactLocationType.Special:
           _text.Visible = false;
           _pingButton.Visible = true;
           break;
-        case ArtifactStatus.Hidden:
+        case ArtifactLocationType.Hidden:
           _text.Visible = true;
           _pingButton.Visible = false;
           break;

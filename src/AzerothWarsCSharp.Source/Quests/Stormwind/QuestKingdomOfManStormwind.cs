@@ -42,10 +42,10 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
       RemoveItem(ArtifactSetup.ArtifactCrownlordaeron.Item);
       RemoveItem(ArtifactSetup.ArtifactCrownstormwind.Item);
       crownHolder.AddItemSafe(ArtifactSetup.ArtifactCrowneasternkingdoms.Item);
-      ArtifactSetup.ArtifactCrownlordaeron.Status = ArtifactStatus.Hidden;
-      ArtifactSetup.ArtifactCrownlordaeron.Description = "Melted down";
-      ArtifactSetup.ArtifactCrownstormwind.Status = ArtifactStatus.Hidden;
-      ArtifactSetup.ArtifactCrownstormwind.Description = "Melted down";
+      ArtifactSetup.ArtifactCrownlordaeron.LocationType = ArtifactLocationType.Hidden;
+      ArtifactSetup.ArtifactCrownlordaeron.LocationDescription = "Melted down";
+      ArtifactSetup.ArtifactCrownstormwind.LocationType = ArtifactLocationType.Hidden;
+      ArtifactSetup.ArtifactCrownstormwind.LocationDescription = "Melted down";
       SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
       DisplayResearchAcquired(completingFaction.Player, ResearchId, 1);
       BlzSetUnitName(LegendStormwind.LegendVarian.Unit, "High King");
