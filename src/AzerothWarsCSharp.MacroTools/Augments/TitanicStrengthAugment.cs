@@ -16,11 +16,13 @@ namespace AzerothWarsCSharp.MacroTools.Augments
          Description = $"Units you train gain attack damage equal to {percentageOfHitPoints}% of their maximum hit points.";
       }
       
+      /// <inheritdoc />
       public override float GetWeight(player whichPlayer)
       {
          return 10;
       }
 
+      /// <inheritdoc />
       public override void OnAdd(Faction whichFaction)
       {
          whichFaction.AddPower(new TitanicStrength(_percentageOfHitPoints)

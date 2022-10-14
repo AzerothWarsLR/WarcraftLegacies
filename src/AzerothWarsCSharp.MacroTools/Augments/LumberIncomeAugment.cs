@@ -16,11 +16,13 @@ namespace AzerothWarsCSharp.MacroTools.Augments
          Description = $"Your lumber income is increased by {income}.";
       }
 
+      /// <inheritdoc />
       public override float GetWeight(player whichPlayer)
       {
          return whichPlayer.GetLumberIncome() > 10 ? 0 : 5;
       }
 
+      /// <inheritdoc />
       public override void OnAdd(Faction whichFaction)
       {
          whichFaction.AddPower(new LumberIncomePower(_income)
