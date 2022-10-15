@@ -1,6 +1,9 @@
 ﻿namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
 {
-  public enum ArtifactStatus
+  /// <summary>
+  /// Describes the kind of location that an <see cref="Artifact"/> is in.
+  /// </summary>
+  public enum ArtifactLocationType
   {
     /// <summary>
     /// Artifact is on the ground.

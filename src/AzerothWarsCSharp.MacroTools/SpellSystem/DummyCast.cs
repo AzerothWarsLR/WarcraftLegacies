@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools.Wrappers;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.SpellSystem
@@ -119,7 +120,9 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
     public static void DummyCastOnUnitsInCircle(unit caster, int abilId, string orderId, int level, float x, float y,
       float radius, CastFilter castFilter)
     {
-      foreach (var target in new GroupWrapper().EnumUnitsInRange(x, y, radius).EmptyToList().FindAll(unit => castFilter(caster, unit)))
+      foreach (var target in new GroupWrapper()
+                 .EnumUnitsInRange(new Point(x, y), radius).EmptyToList()
+                 .FindAll(unit => castFilter(caster, unit)))
       {
         DummyCastUnit(GetOwningPlayer(caster), abilId, orderId, level, target);
       }

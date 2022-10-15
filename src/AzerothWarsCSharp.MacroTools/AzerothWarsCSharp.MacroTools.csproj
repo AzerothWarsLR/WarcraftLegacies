@@ -15,4 +15,8 @@
         <PackageReference Include="WCSharp.Shared" Version="2.0.6" />
     </ItemGroup>
 
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
 </Project>

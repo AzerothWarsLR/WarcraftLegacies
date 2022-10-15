@@ -6,7 +6,7 @@ using static War3Api.Common;
 namespace AzerothWarsCSharp.MacroTools.Wrappers
 {
   /// <summary>
-  ///   A wrapper for a Warcraft 3 unit group.
+  ///   A wrapper for a Warcraft 3 <see cref="group"/>.
   ///   Manages the creation and destruction of the internal group automatically,
   ///   preventing memory leak issues.
   /// </summary>
@@ -15,6 +15,9 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
     private readonly group _group;
     private bool _disposed;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="GroupWrapper"/> class.
+    /// </summary>
     public GroupWrapper()
     {
       _group = CreateGroup();
@@ -43,11 +46,17 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
       return list;
     }
 
+    /// <summary>
+    /// Adds an additional <see cref="unit"/> to the <see cref="GroupWrapper"/>.
+    /// </summary>
     public void Add(unit unit)
     {
       GroupAddUnit(_group, unit);
     }
 
+    /// <summary>
+    /// Adds all units selected by the provided <see cref="player"/> to the <see cref="GroupWrapper"/>.
+    /// </summary>
     public GroupWrapper EnumSelectedUnits(player whichPlayer)
     {
       SyncSelections();
@@ -55,32 +64,47 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
       return this;
     }
 
+    /// <summary>
+    /// Adds all units of the provided type to the <see cref="GroupWrapper"/>.
+    /// </summary>
     public GroupWrapper EnumUnitsOfType(int unitType)
     {
       GroupEnumUnitsOfType(_group, GetObjectName(unitType), null);
       return this;
     }
 
+    /// <summary>
+    /// Adds all units owned by the provided player to the <see cref="GroupWrapper"/>.
+    /// </summary>
     public GroupWrapper EnumUnitsOfPlayer(player player)
     {
       GroupEnumUnitsOfPlayer(_group, player, null);
       return this;
     }
 
+    /// <summary>
+    /// Adds all units positioned in the provided <see cref="Rectangle"/> to the <see cref="GroupWrapper"/>.
+    /// </summary>
     public GroupWrapper EnumUnitsInRect(Rectangle rect)
     {
       return EnumUnitsInRect(rect.Rect);
     }
 
+    /// <summary>
+    /// Adds all units positioned in the provided <see cref="rect"/> to the <see cref="GroupWrapper"/>.
+    /// </summary>
     public GroupWrapper EnumUnitsInRect(rect rect)
     {
       GroupEnumUnitsInRect(_group, rect, null);
       return this;
     }
 
-    public GroupWrapper EnumUnitsInRange(float x, float y, float radius)
+    /// <summary>
+    /// Adds all units within range of the specified <see cref="Point"/> to the <see cref="GroupWrapper"/>.
+    /// </summary>
+    public GroupWrapper EnumUnitsInRange(Point point, float radius)
     {
-      GroupEnumUnitsInRange(_group, x, y, radius, null);
+      GroupEnumUnitsInRange(_group, point.X, point.Y, radius, null);
       return this;
     }
 

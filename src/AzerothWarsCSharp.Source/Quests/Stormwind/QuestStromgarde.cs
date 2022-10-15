@@ -42,7 +42,7 @@ namespace AzerothWarsCSharp.Source.Quests.Stormwind
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       SetItemPosition(ArtifactSetup.ArtifactTrolkalar.Item, 140889, 12363);
-      ArtifactSetup.ArtifactTrolkalar.Status = ArtifactStatus.Ground;
+      ArtifactSetup.ArtifactTrolkalar.LocationType = ArtifactLocationType.Ground;
     }
 
     protected override void OnComplete(Faction completingFaction)

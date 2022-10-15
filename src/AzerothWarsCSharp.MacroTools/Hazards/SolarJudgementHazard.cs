@@ -1,7 +1,7 @@
 ﻿using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
-
+using WCSharp.Shared.Data;
 using static War3Api.Common; 
 
 namespace AzerothWarsCSharp.MacroTools.Hazards
@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.MacroTools.Hazards
     private void DoBolt(float x, float y)
     {
       DestroyEffect(AddSpecialEffect(EffectPath, x, y));
-      var unitsInRange = new GroupWrapper().EnumUnitsInRange(x, y, BoltRadius).EmptyToList();
+      var unitsInRange = new GroupWrapper().EnumUnitsInRange(new Point(x, y), BoltRadius).EmptyToList();
       foreach (var target in unitsInRange)
       {
         if (CastFilters.IsTargetEnemyAndAlive(Caster, target))

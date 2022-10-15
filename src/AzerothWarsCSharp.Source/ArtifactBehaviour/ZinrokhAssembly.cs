@@ -18,8 +18,8 @@ namespace AzerothWarsCSharp.Source.ArtifactBehaviour
     {
       Artifact tempArtifact = ArtifactManager.GetFromTypeId(whichItemId);
       SetItemPosition(tempArtifact.Item, DUMMY_X, DUMMY_Y);
-      tempArtifact.Status = ArtifactStatus.Hidden;
-      tempArtifact.Description = "Used to create the Demon Soul";
+      tempArtifact.LocationType = ArtifactLocationType.Hidden;
+      tempArtifact.LocationDescription = "Used to create the Demon Soul";
     }
 
     private static void ItemPickup()

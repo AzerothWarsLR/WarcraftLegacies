@@ -42,10 +42,10 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       RemoveItem(ArtifactSetup.ArtifactCrownlordaeron.Item);
       RemoveItem(ArtifactSetup.ArtifactCrownstormwind.Item);
       crownHolder.AddItemSafe(ArtifactSetup.ArtifactCrowneasternkingdoms.Item);
-      ArtifactSetup.ArtifactCrownlordaeron.Status = ArtifactStatus.Hidden;
-      ArtifactSetup.ArtifactCrownlordaeron.Description = "Melted down";
-      ArtifactSetup.ArtifactCrownstormwind.Status = ArtifactStatus.Hidden;
-      ArtifactSetup.ArtifactCrownstormwind.Description = "Melted down";
+      ArtifactSetup.ArtifactCrownlordaeron.LocationType = ArtifactLocationType.Hidden;
+      ArtifactSetup.ArtifactCrownlordaeron.LocationDescription = "Melted down";
+      ArtifactSetup.ArtifactCrownstormwind.LocationType = ArtifactLocationType.Hidden;
+      ArtifactSetup.ArtifactCrownstormwind.LocationDescription = "Melted down";
       //Research
       SetPlayerTechResearched(completingFaction.Player, RewardResearchId, 1);
       Display.DisplayResearchAcquired(completingFaction.Player, RewardResearchId, 1);

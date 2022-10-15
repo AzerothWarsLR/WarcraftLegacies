@@ -38,8 +38,8 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
       SetHeroLevel(LegendLordaeron.LegendMograine.Unit, 10, false);
       LegendLordaeron.LegendMograine.Unit.AddItemSafe(ArtifactSetup.ArtifactAshbringer.Item);
       SetItemPosition(ArtifactSetup.ArtifactLivingshadow.Item, DummyX, DummyY);
-      ArtifactSetup.ArtifactLivingshadow.Status = ArtifactStatus.Ground;
-      ArtifactSetup.ArtifactLivingshadow.Description = "Used to create the Ashbringer";
+      ArtifactSetup.ArtifactLivingshadow.LocationType = ArtifactLocationType.Ground;
+      ArtifactSetup.ArtifactLivingshadow.LocationDescription = "Used to create the Ashbringer";
     }
   }
 }

@@ -79,8 +79,8 @@ namespace AzerothWarsCSharp.Source.Setup
 
       ArtifactTrolkalar = new Artifact(CreateItem(FourCC("I01O"), DummyX, DummyY))
       {
-        Status = ArtifactStatus.Hidden,
-        Description = "Stormwind Quest",
+        LocationType = ArtifactLocationType.Hidden,
+        LocationDescription = "Stormwind Quest",
         TitanforgedAbility = FourCC("A0VM")
       };
       ArtifactManager.Register(ArtifactTrolkalar);
@@ -98,7 +98,7 @@ namespace AzerothWarsCSharp.Source.Setup
 
       ArtifactSkullofguldan = new Artifact(CreateItem(FourCC("I007"), 21886, -25219))
       {
-        Description = "Illidan Quest"
+        LocationDescription = "Illidan Quest"
       };
       ArtifactManager.Register(ArtifactSkullofguldan);
 
@@ -137,15 +137,15 @@ namespace AzerothWarsCSharp.Source.Setup
 
       ArtifactDrektharsspellbook = new Artifact(CreateItem(FourCC("dtsb"), DummyX, DummyY))
       {
-        Status = ArtifactStatus.Hidden,
-        Description = "Frostwolf Quest"
+        LocationType = ArtifactLocationType.Hidden,
+        LocationDescription = "Frostwolf Quest"
       };
       ArtifactManager.Register(ArtifactDrektharsspellbook);
 
       ArtifactSoulgem = new Artifact(CreateItem(FourCC("gsou"), DummyX, DummyY))
       {
-        Status = ArtifactStatus.Hidden,
-        Description = "DalaranFourCC(s Quest",
+        LocationType = ArtifactLocationType.Hidden,
+        LocationDescription = "DalaranFourCC(s Quest",
         FalsePosition = new Point(-14269, 22282)
       };
       ArtifactManager.Register(ArtifactSoulgem);
@@ -176,54 +176,54 @@ namespace AzerothWarsCSharp.Source.Setup
 
       ArtifactCrowneasternkingdoms = new Artifact(CreateItem(FourCC("I00U"), DummyX, DummyY))
       {
-        Status = ArtifactStatus.Hidden,
-        Description = "Stormwind and Lordaeron Quest"
+        LocationType = ArtifactLocationType.Hidden,
+        LocationDescription = "Stormwind and Lordaeron Quest"
       };
       ArtifactManager.Register(ArtifactCrowneasternkingdoms);
 
       ArtifactCrowntriumvirate = new Artifact(CreateItem(FourCC("I011"), DummyX, DummyY))
       {
-        Status = ArtifactStatus.Hidden,
-        Description = "Draenei Quest"
+        LocationType = ArtifactLocationType.Hidden,
+        LocationDescription = "Draenei Quest"
       };
       ArtifactManager.Register(ArtifactCrowntriumvirate);
 
       ArtifactThunderfury = new Artifact(CreateItem(FourCC("I00Z"), DummyX, DummyY))
       {
-        Status = ArtifactStatus.Hidden,
-        Description = "Twilight Hammer's Quest",
+        LocationType = ArtifactLocationType.Hidden,
+        LocationDescription = "Twilight Hammer's Quest",
         FalsePosition = new Point(-1649, 7628)
       };
       ArtifactManager.Register(ArtifactThunderfury);
 
       ArtifactLivingshadow = new Artifact(CreateItem(FourCC("odef"), DummyX, DummyY))
       {
-        Status = ArtifactStatus.Hidden,
-        Description = "Lordaeron's Quest",
+        LocationType = ArtifactLocationType.Hidden,
+        LocationDescription = "Lordaeron's Quest",
         FalsePosition = new Point(-19525, -5192)
       };
       ArtifactManager.Register(ArtifactLivingshadow);
 
       ArtifactAshbringer = new Artifact(CreateItem(FourCC("I012"), DummyX, DummyY))
       {
-        Status = ArtifactStatus.Hidden,
-        Description = "Lordaeron's Quest",
+        LocationType = ArtifactLocationType.Hidden,
+        LocationDescription = "Lordaeron's Quest",
         FalsePosition = new Point(10569, -5280)
       };
       ArtifactManager.Register(ArtifactAshbringer);
 
       ArtifactXalatath = new Artifact(CreateItem(FourCC("I015"), DummyX, DummyY))
       {
-        Status = ArtifactStatus.Hidden,
-        Description = "Black Empire's Quest",
+        LocationType = ArtifactLocationType.Hidden,
+        LocationDescription = "Black Empire's Quest",
         FalsePosition = new Point(7121, 10000)
       };
       ArtifactManager.Register(ArtifactXalatath);
 
       ArtifactDemonsoul = new Artifact(CreateItem(FourCC("I01A"), DummyX, DummyY))
       {
-        Status = ArtifactStatus.Hidden,
-        Description = "Ahn'qiraj's Quest",
+        LocationType = ArtifactLocationType.Hidden,
+        LocationDescription = "Ahn'qiraj's Quest",
         FalsePosition = new Point(12508, -11437)
       };
       ArtifactManager.Register(ArtifactDemonsoul);

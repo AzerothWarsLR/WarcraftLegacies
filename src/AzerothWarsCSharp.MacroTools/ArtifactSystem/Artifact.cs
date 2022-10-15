@@ -7,19 +7,24 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
 {
+  /// <summary>
+  ///   Represents a unique item with some significance to the game's lore.
+  /// </summary>
   public sealed class Artifact : IDisposable
   {
-    private unit? _owningUnit;
-    private ArtifactStatus _status;
-    private int _titanforgedAbility = FourCC("A0VJ");
     private string? _description;
+    private ArtifactLocationType _locationType;
+    private unit? _owningUnit;
+    private int _titanforgedAbility = FourCC("A0VJ");
 
-    public static int ArtifactHolderAbilId { get; } = FourCC("A01Y");
-
+    /// <summary>
+    ///   Initializes a new instance of the <see cref="Artifact" /> class.
+    /// </summary>
+    /// <param name="whichItem">The real item that the Artifact is representing.</param>
     public Artifact(item whichItem)
     {
       Item = whichItem;
-      _status = ArtifactStatus.Ground;
+      _locationType = ArtifactLocationType.Ground;
       SetOwningPlayer(null);
       PlayerUnitEvents.Register(PlayerUnitEvent.ItemTypeIsPickedUp, OnPickedUp, GetItemTypeId(whichItem));
       PlayerUnitEvents.Register(PlayerUnitEvent.ItemTypeIsDropped, OnDropped, GetItemTypeId(whichItem));
@@ -27,25 +32,20 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
       PlayerData.FactionChange += OnPlayerFactionChange;
     }
 
-    private void OnPlayerFactionChange(object? sender, PlayerFactionChangeEventArgs e)
-    {
-      if (OwningPlayer?.GetFaction() == e.Player.GetFaction())
-      {
-        FactionChanged?.Invoke(this, this);
-      }
-    }
+    /// <summary>
+    ///   This ability is granted to any creep unit which holds an Artifact at the start of the game.
+    ///   It should be an inventory ability so that the creep can hold the Artifact.
+    /// </summary>
+    public static int ArtifactHolderAbilId { get; } = FourCC("A01Y");
 
-    private void OnUnitChangesOwner()
-    {
-      if (OwningUnit == GetTriggerUnit())
-        SetOwningPlayer(GetOwningPlayer(GetTriggerUnit()));
-    }
-
+    /// <summary>
+    ///   The real <see cref="item" /> that the <see cref="Artifact" /> is representing.
+    /// </summary>
     public item Item { get; private set; }
 
     /// <summary>
     ///   A pretend-position. The player can ping this position instead of the item's real position if
-    ///   <see cref="ArtifactStatus" /> is set to <see cref="ArtifactStatus.Special" />.
+    ///   <see cref="ArtifactLocationType" /> is set to <see cref="ArtifactLocationType.Special" />.
     /// </summary>
     public Point FalsePosition { get; set; } = new(0, 0);
 
@@ -62,14 +62,17 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
     /// </summary>
     public bool Titanforged { get; private set; }
 
-    public ArtifactStatus Status
+    /// <summary>
+    ///   Describes the kind of location that the <see cref="Artifact" /> is in.
+    /// </summary>
+    public ArtifactLocationType LocationType
     {
       set
       {
-        _status = value;
+        _locationType = value;
         StatusChanged?.Invoke(this, this);
       }
-      get => _status;
+      get => _locationType;
     }
 
     /// <summary>
@@ -88,7 +91,11 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
       }
     }
 
-    public string Description
+    /// <summary>
+    ///   A user-friendly description of the <see cref="Artifact" />'s location.
+    ///   Only displayed when <see cref="LocationType" /> is set to <see cref="ArtifactLocationType.Hidden" />.
+    /// </summary>
+    public string LocationDescription
     {
       set
       {
@@ -99,22 +106,34 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
     }
 
     /// <summary>
-    /// Fired when the <see cref="player"/> owning the <see cref="unit"/> carrying the <see cref="Artifact"/> changes <see cref="Faction"/>.
+    ///   The <see cref="player" /> owning the <see cref="unit" /> carrying this <see cref="Artifact" />.
+    ///   Returs null if the Artifact is not being carried.
+    /// </summary>
+    public player? OwningPlayer { get; private set; }
+
+    public void Dispose()
+    {
+      Dispose(true);
+    }
+
+    /// <summary>
+    ///   Fired when the <see cref="player" /> owning the <see cref="unit" /> carrying the <see cref="Artifact" /> changes
+    ///   <see cref="Faction" />.
     /// </summary>
     public event EventHandler<Artifact>? FactionChanged;
 
     /// <summary>
-    /// Fired when the <see cref="Artifact"/> is picked up by a unit.
+    ///   Fired when the <see cref="Artifact" /> is picked up by a unit.
     /// </summary>
     public event EventHandler<Artifact>? PickedUp;
 
     /// <summary>
-    /// Fired when the <see cref="Artifact"/> is dropped.
+    ///   Fired when the <see cref="Artifact" /> is dropped.
     /// </summary>
     public event EventHandler<Artifact>? Dropped;
 
     /// <summary>
-    /// Fired when the <see cref="Artifact"/> is permanently destroyed.
+    ///   Fired when the <see cref="Artifact" /> is permanently destroyed.
     /// </summary>
     public event EventHandler<Artifact>? Disposed;
 
@@ -124,7 +143,7 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
     public event EventHandler<Artifact>? OwnerChanged;
 
     /// <summary>
-    ///   Any Artifact changes its <see cref="ArtifactStatus" />.
+    ///   Any Artifact changes its <see cref="ArtifactLocationType" />.
     /// </summary>
     public event EventHandler<Artifact>? StatusChanged;
 
@@ -134,12 +153,12 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
     public event EventHandler<Artifact>? OnArtifactFactionChange;
 
     /// <summary>
-    /// Any unit carrying an Artifact's unit carrier changes player ownership.
+    ///   Any unit carrying an Artifact's unit carrier changes player ownership.
     /// </summary>
     public event EventHandler<Artifact>? CarrierOwnerChanged;
 
     /// <summary>
-    /// Any <see cref="Artifact"/> has its description changed.
+    ///   Any <see cref="Artifact" /> has its description changed.
     /// </summary>
     public event EventHandler<Artifact>? DescriptionChanged;
 
@@ -159,19 +178,27 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
       }
     }
 
-    private void UpdateFaction()
+    /// <summary>
+    ///   Pings the <see cref="Artifact" /> on the minimap for the given player.
+    /// </summary>
+    public void Ping(player whichPlayer)
     {
-      OnArtifactFactionChange?.Invoke(this, this);
+      if (GetLocalPlayer() != whichPlayer) 
+        return;
+      if (_locationType == ArtifactLocationType.Special)
+        PingMinimap(FalsePosition.X, FalsePosition.Y, 3);
+      else if (_owningUnit != null)
+        PingMinimap(GetUnitX(_owningUnit), GetUnitY(_owningUnit), 3);
+      else
+        PingMinimap(GetItemX(Item), GetItemY(Item), 3);
     }
-
-    public player? OwningPlayer { get; private set; }
 
     private void SetOwningPlayer(player? value)
     {
       OwningPlayer = value;
       OwnerChanged?.Invoke(this, this);
 
-      Status = OwningPlayer != null ? ArtifactStatus.Unit : ArtifactStatus.Ground;
+      LocationType = OwningPlayer != null ? ArtifactLocationType.Unit : ArtifactLocationType.Ground;
     }
 
     private void OnPickedUp()
@@ -186,7 +213,7 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
           IsTerrainPathable(GetUnitX(_owningUnit), GetUnitY(_owningUnit), PATHING_TYPE_WALKABILITY))
         if (!UnitAlive(_owningUnit))
         {
-          Shore tempShore = Shore.GetNearestShore(new Point(GetUnitX(_owningUnit), GetUnitY(_owningUnit)));
+          var tempShore = Shore.GetNearestShore(new Point(GetUnitX(_owningUnit), GetUnitY(_owningUnit)));
           Item = CreateItem(GetItemTypeId(Item), tempShore.Position.X, tempShore.Position.Y);
         }
 
@@ -199,29 +226,23 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
       Dropped?.Invoke(this, this);
     }
 
-    /// <summary>
-    /// Pings the <see cref="Artifact"/> on the minimap for the given player.
-    /// </summary>
-    public void Ping(player p)
+    private void OnPlayerFactionChange(object? sender, PlayerFactionChangeEventArgs e)
     {
-      if (GetLocalPlayer() == p)
-      {
-        if (_status == ArtifactStatus.Special)
-          PingMinimap(FalsePosition.X, FalsePosition.Y, 3);
-        else if (_owningUnit != null)
-          PingMinimap(GetUnitX(_owningUnit), GetUnitY(_owningUnit), 3);
-        else
-          PingMinimap(GetItemX(Item), GetItemY(Item), 3);
-      }
+      if (OwningPlayer?.GetFaction() == e.Player.GetFaction()) FactionChanged?.Invoke(this, this);
     }
 
+    private void OnUnitChangesOwner()
+    {
+      if (OwningUnit == GetTriggerUnit())
+        SetOwningPlayer(GetOwningPlayer(GetTriggerUnit()));
+    }
 
     private void Dispose(bool disposing)
     {
       if (disposing)
       {
-        
       }
+
       Disposed?.Invoke(this, this);
       RemoveItem(Item);
     }
@@ -229,11 +250,6 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
     ~Artifact()
     {
       Dispose(false);
-    }
-
-    public void Dispose()
-    {
-      Dispose(true);
     }
   }
 }

@@ -16,11 +16,13 @@ namespace AzerothWarsCSharp.MacroTools.Augments
       Description = $"When you train a unit, you have a {percentageChance}% of instantly training an additional copy for free.";
     }
 
+    /// <inheritdoc />
     public override float GetWeight(player whichPlayer)
     {
       return 1;
     }
 
+    /// <inheritdoc />
     public override void OnAdd(Faction whichFaction)
     {
       whichFaction.AddPower(new RapidMobilization(_chance)
