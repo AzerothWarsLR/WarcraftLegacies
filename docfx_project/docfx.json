@@ -3,14 +3,26 @@
     {
       "src": [
         {
-			"src": "../src/",
-         "files": [
+          "src": "../src/",
+          "files": [
             "AzerothWarsCSharp.Source/**.csproj",
-			"AzerothWarsCSharp.MacroTools/**.csproj"
           ]
         }
       ],
-      "dest": "api",
+      "dest": "api/MacroTools",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    },
+    {
+      "src": [
+        {
+          "src": "../src/",
+          "files": [
+            "AzerothWarsCSharp.Source/**.csproj"
+          ]
+        }
+      ],
+      "dest": "api/Source",
       "disableGitFeatures": false,
       "disableDefaultFilter": false
     }
