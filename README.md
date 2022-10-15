@@ -1,16 +1,21 @@
 # AzerothWarsCSharp
-Azeroth Wars: Legacy Reborn was a Warcraft 3 macro-strategy map representing the events of the Warcraft story from Reign of Chaos through to World of Warcraft: Cataclysm.
+Warcraft: Legacies was a Warcraft 3 macro-strategy map representing the events of the Warcraft story from Reign of Chaos through to World of Warcraft: Cataclysm.
 
-This project is a complete rewrite of Azeroth Wars: Legacy Reborn in C#.
+This project is a complete rewrite of Warcraft: Legacies in C#.
 
-### AzerothWarsCSharp.DataExtractor
-Transforms an object data file (.w3o) into a C# class file which gets placed into AzerothWarsCSharp.Launcher.
+## Code Documentation
+Can be found [here](https://azerothwarslr.github.io/AzerothWarsCSharp/). This documentation is still a work-in-progress.
 
-### AzerothWarsCSharp.Generated
-Variables extracted from the base Warcraft 3 map file (.w3x).
+## Projects
 
 ### AzerothWarsCSharp.Launcher
-Compiles the map from a series of base files and code instructions. 
+Compiles Warcraft: Legacies from a series of base files and code instructions. 
+
+### AzerothWarsCSharp.MacroTools
+A library intended to be useable by any map in the Warcraft 3 Macro-Map genre. Currently only used by Warcraft: Legacies.
 
 ### AzerothWarsCSharp.Source
-The map's code, which gets compiled into Lua before being executed during the map's runtime.
+Code specific to Warcraft: Legacies, which gets compiled into Lua before being executed during the map's runtime.
+
+### AzerothWarsCSharp.TestSource
+Code to be inserted into a simple test map which demonstrates features from AzerothWarsCSharp.MacroTools.
