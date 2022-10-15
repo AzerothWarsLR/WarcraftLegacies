@@ -10,4 +10,8 @@
         <ProjectReference Include="..\AzerothWarsCSharp.MacroTools\AzerothWarsCSharp.MacroTools.csproj" />
     </ItemGroup>
 
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
 </Project>
