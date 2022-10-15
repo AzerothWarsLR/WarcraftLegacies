@@ -3,8 +3,10 @@
     {
       "src": [
         {
-          "files": [
-            "src/**.csproj"
+			"src": "../src/",
+         "files": [
+            "AzerothWarsCSharp.Source/**.csproj",
+			"AzerothWarsCSharp.MacroTools/**.csproj"
           ]
         }
       ],
