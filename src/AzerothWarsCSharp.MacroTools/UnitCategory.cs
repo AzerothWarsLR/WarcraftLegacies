@@ -1,8 +1,15 @@
-﻿namespace AzerothWarsCSharp.MacroTools
+﻿using War3Api;
+
+namespace AzerothWarsCSharp.MacroTools
 {
+  /// <summary>
+  /// Indicates which special category a <see cref="Common.unit"/> belongs to.
+  /// </summary>
   public enum UnitCategory
   {
-    Shipyard,
-    Shop
+    /// <summary>
+    /// The unit can train boats.
+    /// </summary>
+    Shipyard
   }
 }
