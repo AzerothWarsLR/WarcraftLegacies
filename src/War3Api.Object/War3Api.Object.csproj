@@ -4,6 +4,14 @@
     <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="War3Net.Build" Version="5.4.2" />
     <PackageReference Include="War3Net.Build.Core" Version="5.4.3" />
