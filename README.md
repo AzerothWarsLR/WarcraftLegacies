@@ -8,7 +8,7 @@ This project is a complete rewrite of Warcraft: Legacies in C#.
 2. Run the AzerothWarsCSharp.Launcher project from your chosen IDE. I recommend Visual Studio or Jetbrains Rider. If you're using Visual Studio Code, open the solution as a folder and press CTRL+Shift+B instead.
 3. A console should appear and prompt you with a list of available actions.
 4. Enter the options to compile and run the test map. If this works, you're done.
-4a. If step (4) fails, it may be because you need to set up appsettings.json. Navigate to `src\AzerothWarsCSharp.Launcher\` and open `appsettings.json`. Change the Warcraft3ExecutablePath setting to wherever your Warcraft 3 executable is, then repeat step (4).
+5. If step 4 fails, it may be because you need to set up appsettings.json. Navigate to `src\AzerothWarsCSharp.Launcher\` and open `appsettings.json`. Change the Warcraft3ExecutablePath setting to wherever your Warcraft 3 executable is, then repeat step 4.
 
 ## Code Documentation
 * Documentation specific to this project can be found [here](https://azerothwarslr.github.io/AzerothWarsCSharp/). It is still a work-in-progress.
