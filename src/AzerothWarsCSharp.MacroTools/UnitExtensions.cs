@@ -5,6 +5,9 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools
 {
+  /// <summary>
+  /// Provides a series of useful extensions to the <see cref="unit"/> class.
+  /// </summary>
   public static class UnitExtensions
   {
     private const float HeroDropDist = 50; //The radius in which heroes spread out items when they drop them
@@ -25,31 +28,49 @@ namespace AzerothWarsCSharp.MacroTools
       SetUnitInvulnerable(unit, value);
     }
     
+    /// <summary>
+    /// Removes the unit from the game permanently.
+    /// </summary>
     public static void Remove(this unit unit)
     {
       RemoveUnit(unit);
     }
     
+    /// <summary>
+    /// Orders a unit to perform a specified order at a specified <see cref="Point"/>.
+    /// </summary>
     public static void IssueOrder(this unit unit, string order, Point target)
     {
       IssuePointOrder(unit, order, target.X, target.Y);
     }
 
+    /// <summary>
+    /// Moves the unit to a specified <see cref="Point"/>.
+    /// </summary>
     public static void SetPosition(this unit unit, Point where)
     {
       SetUnitPosition(unit, where.X, where.Y);
     }
 
+    /// <summary>
+    /// Returns the position of the unit.
+    /// </summary>
     public static Point GetPosition(this unit unit)
     {
       return new Point(GetUnitX(unit), GetUnitY(unit));
     }
 
+    /// <summary>
+    /// Changess the <see cref="unit"/>'s owner to the specified <see cref="player"/>.
+    /// </summary>
     public static void SetOwner(this unit unit, player whichPlayer)
     {
       SetUnitOwner(unit, whichPlayer, true);
     }
     
+    /// <summary>
+    /// Returns the current owner of the specified <see cref="unit"/>/
+    /// </summary>
     public static player OwningPlayer(this unit unit)
     {
       return GetOwningPlayer(unit);
@@ -85,21 +106,26 @@ namespace AzerothWarsCSharp.MacroTools
       return 0;
     }
 
+    /// <summary>
+    /// Sets the units hit points to a specified percentage value.
+    /// </summary>
     public static void SetLifePercent(this unit whichUnit, float percent)
     {
       SetUnitState(whichUnit, UNIT_STATE_LIFE,
         GetUnitState(whichUnit, UNIT_STATE_MAX_LIFE) * MathEx.Max(0, percent) * 0.01f);
     }
 
+    /// <summary>
+    /// Returns the percentage hit points the unit has remaining.
+    /// </summary>
     public static float GetLifePercent(this unit whichUnit)
     {
       return GetUnitState(whichUnit, UNIT_STATE_LIFE) / GetUnitState(whichUnit, UNIT_STATE_MAX_LIFE) * 100;
     }
 
     /// <summary>
-    ///   Resurrects a dead unit.
+    ///   Resurrects the specified unit.
     /// </summary>
-    /// <param name="whichUnit">The unit to resurrect.</param>
     public static void Resurrect(this unit whichUnit)
     {
       if (UnitAlive(whichUnit)) throw new ArgumentException("Tried to resurrect a unit that is already alive.");
@@ -113,11 +139,22 @@ namespace AzerothWarsCSharp.MacroTools
       CreateUnit(OwningPlayer(whichUnit), unitType, x, y, face);
     }
 
+    /// <summary>
+    /// Damages the specified unit by the specified amount.
+    /// </summary>
+    /// <param name="unit">The unit to damage.</param>
+    /// <param name="damager">The unit dealing the damage.</param>
+    /// <param name="amount">The amount of damage to deal.</param>
     public static void Damage(this unit unit, unit damager, float amount)
     {
       SetUnitState(unit, UNIT_STATE_LIFE, GetUnitState(unit, UNIT_STATE_LIFE) - amount);
     }
 
+    /// <summary>
+    /// Heals the specified unit by the specified amount.
+    /// </summary>
+    /// <param name="unit">The unit to heal.</param>
+    /// <param name="amount">The amount of damage to heal.</param>
     public static void Heal(this unit unit, float amount)
     {
       SetUnitState(unit, UNIT_STATE_LIFE, GetUnitState(unit, UNIT_STATE_LIFE) + amount);
@@ -134,6 +171,11 @@ namespace AzerothWarsCSharp.MacroTools
       SetUnitInvulnerable(whichUnit, false);
     }
 
+    /// <summary>
+    /// The amount of damage the unit deals on average when it uses its basic attack.
+    /// </summary>
+    /// <param name="whichUnit">The unit to get the average damage for.</param>
+    /// <param name="weaponIndex">Which weapon to return information about; can be 1 or 2.</param>
     public static int GetAverageDamage(this unit whichUnit, int weaponIndex)
     {
       float baseDamage = BlzGetUnitBaseDamage(whichUnit, weaponIndex);
@@ -215,16 +257,27 @@ namespace AzerothWarsCSharp.MacroTools
       UnitAddItem(whichUnit, whichItem);
     }
 
-    public static void ScaleBaseDamage(this unit u, float scale, int weaponIndex)
+    /// <summary>
+    /// Multiplities the specified unit's attack damage by the specified amount.
+    /// </summary>
+    /// <param name="whichUnit">The unit to affect.</param>
+    /// <param name="multiplier">The amount to multiply attack damage by.</param>
+    /// <param name="weaponIndex">Which weapon to return information about; can be 1 or 2.</param>
+    public static void MultiplyBaseDamage(this unit whichUnit, float multiplier, int weaponIndex)
     {
-      BlzSetUnitBaseDamage(u, R2I(I2R(BlzGetUnitBaseDamage(u, weaponIndex)) * scale), weaponIndex);
+      BlzSetUnitBaseDamage(whichUnit, R2I(I2R(BlzGetUnitBaseDamage(whichUnit, weaponIndex)) * multiplier), weaponIndex);
     }
 
-    public static void ScaleMaxHitpoints(this unit u, float scale)
+    /// <summary>
+    /// Multiplities the specified unit's hit points by the specified amount.
+    /// </summary>
+    /// <param name="whichUnit">The unit to affect.</param>
+    /// <param name="multiplier">The amount to multiply hit points by.</param>
+    public static void MultiplyMaxHitpoints(this unit whichUnit, float multiplier)
     {
-      var percentageHitpoints = u.GetLifePercent();
-      BlzSetUnitMaxHP(u, R2I(I2R(BlzGetUnitMaxHP(u)) * scale));
-      u.SetLifePercent(percentageHitpoints);
+      var percentageHitpoints = whichUnit.GetLifePercent();
+      BlzSetUnitMaxHP(whichUnit, R2I(I2R(BlzGetUnitMaxHP(whichUnit)) * multiplier));
+      whichUnit.SetLifePercent(percentageHitpoints);
     }
   }
 }

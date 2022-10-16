@@ -40,8 +40,8 @@ namespace AzerothWarsCSharp.MacroTools.Buffs
       UnitAddType(Target, UNIT_TYPE_SUMMONED);
       UnitApplyTimedLife(Target, 0, Duration);
       SetUnitVertexColor(Target, 100, 100, 230, 150);
-      Target.ScaleBaseDamage(_damageScale, 0);
-      Target.ScaleMaxHitpoints(_hitpointScale);
+      Target.MultiplyBaseDamage(_damageScale, 0);
+      Target.MultiplyMaxHitpoints(_hitpointScale);
       var tempEffect = AddSpecialEffect(_effectTarget, GetUnitX(Target), GetUnitY(Target));
       BlzSetSpecialEffectScale(tempEffect, _effectScaleTarget);
       DestroyEffect(tempEffect);
