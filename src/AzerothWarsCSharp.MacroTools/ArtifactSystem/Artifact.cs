@@ -111,6 +111,9 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
     /// </summary>
     public player? OwningPlayer { get; private set; }
 
+    /// <summary>
+    /// Cleans up all managed resources used by the <see cref="Artifact"/>.
+    /// </summary>
     public void Dispose()
     {
       Dispose(true);
@@ -148,16 +151,6 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
     public event EventHandler<Artifact>? StatusChanged;
 
     /// <summary>
-    ///   Any <see cref="Artifact" /> changes Faction.
-    /// </summary>
-    public event EventHandler<Artifact>? OnArtifactFactionChange;
-
-    /// <summary>
-    ///   Any unit carrying an Artifact's unit carrier changes player ownership.
-    /// </summary>
-    public event EventHandler<Artifact>? CarrierOwnerChanged;
-
-    /// <summary>
     ///   Any <see cref="Artifact" /> has its description changed.
     /// </summary>
     public event EventHandler<Artifact>? DescriptionChanged;
@@ -167,15 +160,13 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
     /// </summary>
     public void Titanforge()
     {
-      if (Titanforged == false)
-      {
-        Titanforged = true;
-        BlzItemAddAbility(Item, _titanforgedAbility);
-        BlzSetItemExtendedTooltip(Item,
-          BlzGetItemExtendedTooltip(Item) + "|n|n|cff800000Titanforged|r|n" +
-          BlzGetAbilityExtendedTooltip(_titanforgedAbility, 0));
-        BlzSetItemDescription(Item, BlzGetItemDescription(Item) + "|n|cff800000Titanforged|r");
-      }
+      if (Titanforged) 
+        return;
+      Titanforged = true;
+      BlzItemAddAbility(Item, _titanforgedAbility);
+      BlzSetItemExtendedTooltip(Item,
+        $"{BlzGetItemExtendedTooltip(Item)}|n|n|cff800000Titanforged|r|n{BlzGetAbilityExtendedTooltip(_titanforgedAbility, 0)}");
+      BlzSetItemDescription(Item, $"{BlzGetItemDescription(Item)}|n|cff800000Titanforged|r");
     }
 
     /// <summary>
@@ -214,7 +205,8 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
         if (!UnitAlive(_owningUnit))
         {
           var tempShore = Shore.GetNearestShore(new Point(GetUnitX(_owningUnit), GetUnitY(_owningUnit)));
-          Item = CreateItem(GetItemTypeId(Item), tempShore.Position.X, tempShore.Position.Y);
+          if (tempShore != null) 
+            Item = CreateItem(GetItemTypeId(Item), tempShore.Position.X, tempShore.Position.Y);
         }
 
       //Remove dummy Artifact holding ability if the dropping unit had one

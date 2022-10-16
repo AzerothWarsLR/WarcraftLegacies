@@ -4,6 +4,10 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
 {
+  /// <summary>
+  /// Manages all <see cref="Artifact"/>s by maintaining a list of registered <see cref="Artifact"/>s indexed by item type,
+  /// and by firing <see cref="Artifact"/> related events.
+  /// </summary>
   public static class ArtifactManager
   {
     private static readonly Dictionary<int, Artifact> ArtifactsByType = new();

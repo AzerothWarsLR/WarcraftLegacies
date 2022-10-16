@@ -33,6 +33,9 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private unit? _unit;
     private int _unitType;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="Legend"/> class.
+    /// </summary>
     public Legend()
     {
       PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, () =>
@@ -44,6 +47,10 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       });
     }
 
+    /// <summary>
+    /// A user-friendly name for the <see cref="Legend"/>.
+    /// If this hasn't been set, the system will guess an appropriate name based on the <see cref="Legend"/> unit type.
+    /// </summary>
     public string Name
     {
       get
@@ -57,6 +64,10 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       init => _name = value;
     }
 
+    /// <summary>
+    /// If true, the <see cref="Legend"/> has a custom <see cref="playercolor"/> rather than having its color based
+    /// on its owning player.
+    /// </summary>
     public bool HasCustomColor { get; private set; }
 
     /// <summary>
@@ -69,7 +80,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       {
         _playerColor = value;
         HasCustomColor = true;
-        if (_unit != null) SetUnitColor(_unit, _playerColor);
+        if (_unit != null) 
+          SetUnitColor(_unit, _playerColor);
       }
     }
 
@@ -90,8 +102,14 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
     }
 
+    /// <summary>
+    /// The special effect that appears when this <see cref="Legend"/> dies permanently.
+    /// </summary>
     public string DeathSfx { private get; init; } = "Abilities\\Spells\\Demon\\DarkPortal\\DarkPortalTarget.mdl";
 
+    /// <summary>
+    /// A flavourful message that pops up when this <see cref="Legend"/> dies permanently.
+    /// </summary>
     public string? DeathMessage { private get; set; }
 
     /// <summary>
@@ -99,6 +117,11 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// </summary>
     public bool Capturable { get; init; }
 
+    /// <summary>
+    /// The unit representing this <see cref="Legend"/>.
+    /// <para>The system will assign this on its own if a <see cref="UnitType"/> has been set for the <see cref="Legend"/>,
+    /// and a hero with that <see cref="UnitType"/> is trained from an Altar.</para>
+    /// </summary>
     public unit? Unit
     {
       get => GetOwningPlayer(_unit) == null ? null : _unit;
@@ -163,6 +186,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     /// <summary>
     ///   The current unit type of the Legend. Can be changed at any time, even if the Legend is already in the game world.
+    ///   This will be automatically updated if <see cref="Unit"/> is changed.
     /// </summary>
     public int UnitType
     {
@@ -187,8 +211,16 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       }
     }
 
+    /// <summary>
+    /// The player that owns the unit representing this <see cref="Legend"/>. Returns null if the <see cref="Legend"/>
+    /// doesn't exist on the map yet.
+    /// </summary>
     public player? OwningPlayer => GetOwningPlayer(_unit);
 
+    /// <summary>
+    /// Returns all registered <see cref="Legend"/>s.
+    /// </summary>
+    /// <returns></returns>
     public static ReadOnlyCollection<Legend> GetAllLegends()
     {
       return AllLegends.AsReadOnly();
@@ -209,8 +241,14 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// </summary>
     public static event EventHandler<Legend>? OnLegendPrePermaDeath;
 
+    /// <summary>
+    /// Fired when the <see cref="Legend"/> permanently dies, after it is removed from the game.
+    /// </summary>
     public static event EventHandler<Legend>? OnLegendPermaDeath;
 
+    /// <summary>
+    /// Fired when the <see cref="Legend"/> dies, even if not permanently.
+    /// </summary>
     public static event EventHandler<Legend>? OnLegendDeath;
 
     private void OnProtectorDeath(object? sender, Protector protector)
@@ -243,6 +281,10 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       protector.ProtectorDied += OnProtectorDeath;
     }
 
+    /// <summary>
+    /// A <see cref="Legend"/> will die permanently if it dies while all of its dependencies are dead or captured.
+    /// <para>This removes all of those dependencies.</para>
+    /// </summary>
     public void ClearUnitDependencies()
     {
       DestroyGroup(_diesWithout);
@@ -262,6 +304,14 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       RefreshDummy();
     }
 
+    /// <summary>
+    /// Forces the <see cref="Legend"/> to appear somewhere in the game world as a <see cref="unit"/>.
+    /// <para>If the <see cref="Legend"/> is alive, it moves there. If it's dead, it revives as well. If it doesn't exist,
+    /// it gets created.</para>
+    /// </summary>
+    /// <param name="owner">Which <see cref="player"/> should own the <see cref="unit"/> once it's spawned.</param>
+    /// <param name="position">Where the <see cref="unit"/> should spawn.</param>
+    /// <param name="facing">Which way the <see cref="unit"/> should face.</param>
     public void Spawn(player owner, Point position, float facing)
     {
       if (Unit == null)
@@ -419,7 +469,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     }
 
     /// <summary>
-    ///   Returns the Legend represented by a particular unit.
+    ///   Returns the <see cref="Legend"/> represented by the <see cref="Legend"/>.
+    /// Returns null if there is no match.
     /// </summary>
     public static Legend? GetFromUnit(unit whichUnit)
     {
@@ -432,10 +483,9 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     }
 
     /// <summary>
-    ///   Register a Legend to the Legend system, causing it to be tracked for <see cref="QuestData" />
+    ///   Register a <see cref="Legend"/> to the <see cref="Legend"/> system, causing it to be tracked for <see cref="QuestData" />
     ///   and <see cref="Legend" /> purposes.
     /// </summary>
-    /// <param name="legend"></param>
     public static void Register(Legend legend)
     {
       AllLegends.Add(legend);

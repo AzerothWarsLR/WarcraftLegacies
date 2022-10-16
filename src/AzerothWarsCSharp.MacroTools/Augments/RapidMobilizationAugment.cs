@@ -4,10 +4,17 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Augments
 {
+  /// <summary>
+  /// An <see cref="Augment"/> that sometimes copied units trained by the owning <see cref="player"/>.
+  /// </summary>
   public sealed class RapidMobilizationAugment : Augment
   {
     private readonly float _chance;
 
+    /// <summary>
+    /// Initializes an instance of the <see cref="RapidMobilizationAugment"/> class.
+    /// </summary>
+    /// <param name="percentageChance">The chance for trained units to be copied.</param>
     public RapidMobilizationAugment(float percentageChance)
     {
       _chance = percentageChance;
@@ -17,10 +24,7 @@ namespace AzerothWarsCSharp.MacroTools.Augments
     }
 
     /// <inheritdoc />
-    public override float GetWeight(player whichPlayer)
-    {
-      return 1;
-    }
+    public override float GetWeight(player whichPlayer) => 1;
 
     /// <inheritdoc />
     public override void OnAdd(Faction whichFaction)

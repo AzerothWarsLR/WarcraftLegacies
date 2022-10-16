@@ -4,10 +4,17 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Augments
 {
+   /// <summary>
+   /// An <see cref="Augment"/> that causes trained units to gain attack damage based on their hit points.
+   /// </summary>
    public sealed class TitanicStrengthAugment : Augment
    {
       private readonly float _percentageOfHitPoints;
 
+      /// <summary>
+      /// Initializes an instance of the <see cref="RapidMobilizationAugment"/> class.
+      /// </summary>
+      /// <param name="percentageOfHitPoints">Trained units get extra attack damage equal to this percentage of their hit points.</param>
       public TitanicStrengthAugment(float percentageOfHitPoints)
       {
          _percentageOfHitPoints = percentageOfHitPoints;
