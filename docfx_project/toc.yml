@@ -1,5 +1,7 @@
 - name: Articles
   href: articles/
-- name: Api Documentation
-  href: api/
+- name: Macro Tools Documentation
+  href: api/MacroTools
   homepage: api/index.md
+- name: "Warcraft: Legacies Documentation"
+  href: api/Source
