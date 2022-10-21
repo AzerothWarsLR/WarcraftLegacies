@@ -1,17 +1,18 @@
 using System;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using static War3Api.Common;
+using WCSharp.Effects;
 
 namespace AzerothWarsCSharp.MacroTools.Spells
 {
   public sealed class ElectricStrike : Spell
   {
-    public int STUN_ID { get; init; } = FourCC("A0RD"); //The ability that gets cast on each unit in the radius
-    public int PURGE_ID { get; init; } = FourCC("Aprg"); //The ability that gets cast on each unit in the radius
-    public string PURGE_ORDER { get; init; } = "purge";
-    public string STUN_ORDER { get; init; } = "firebolt";
-    private float RADIUS { get; init; } = 200.00F;
-    private string EFFECT { get; init; } = "Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl";
+    public int StunId { get; init; }//The ability that gets cast on each unit in the radius
+    public int PurgeId { get; init; } //The ability that gets cast on each unit in the radius
+    public string PurgeOrder { get; init; } = string.Empty;
+    public string StunOrder { get; init; } = string.Empty;
+    public float Radius { get; init; }
+    public string Effect { get; init; } = string.Empty;
 
     private group TempGroup = CreateGroup();
 
@@ -23,7 +24,8 @@ namespace AzerothWarsCSharp.MacroTools.Spells
     {
       try
       {
-        GroupEnumUnitsInRange(TempGroup, targetX, targetY, RADIUS, null);
+        GroupEnumUnitsInRange(TempGroup, targetX, targetY, Radius, null);
+        EffectSystem.Add(AddSpecialEffect(Effect, targetX, targetY));
         while (true)
         {
           unit u = FirstOfGroup(TempGroup);
@@ -34,10 +36,10 @@ namespace AzerothWarsCSharp.MacroTools.Spells
 
           if (IsUnitType(u, UNIT_TYPE_STRUCTURE) == false && UnitAlive(u))
           {
-            DummyCast.DummyCastUnit(GetOwningPlayer(caster), STUN_ID, STUN_ORDER, 1, u);
-            DummyCast.DummyCastUnit(GetOwningPlayer(caster), PURGE_ID, PURGE_ORDER, 1, u);
+            DummyCast.DummyCastUnit(GetOwningPlayer(caster), StunId, StunOrder, 1, u);
+            DummyCast.DummyCastUnit(GetOwningPlayer(caster), PurgeId, PurgeOrder, 1, u);
           }
-
+          
           GroupRemoveUnit(TempGroup, u);
         }
       }

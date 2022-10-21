@@ -21,12 +21,12 @@ namespace AzerothWarsCSharp.Source.Researches.Ironforge
      {
        
        
-       var Greatforge = LegendIronforge.LegendGreatforge.Unit;
+       var greatForge = LegendIronforge.LegendGreatforge.Unit;
        var ironForgeLocation = new Point(GetUnitX(Greatforge), GetUnitY(Greatforge));
-       var Keep = LegendStormwind.LegendStormwindkeep.Unit;
-       var StormwindLocation = new Point(GetUnitX(Keep),GetUnitY(Keep));
-       unit tramToIronforge = PreplacedUnitSystem.GetUnit(FourCC("n03B"), StormwindLocation);
-       unit tramToStormwind = PreplacedUnitSystem.GetUnit(FourCC("n03B"), ironForgeLocation);
+       var keep = LegendStormwind.LegendStormwindkeep.Unit;
+       var stormwindLocation = new Point(GetUnitX(Keep),GetUnitY(Keep));
+       unit tramToIronforge = PreplacedUnitSystem.GetUnit(Constants.n03B, StormwindLocation);
+       unit tramToStormwind = PreplacedUnitSystem.GetUnit(Constants.n03B, ironForgeLocation);
        var recipient = IronforgeSetup.Ironforge?.Player ?? StormwindSetup.Stormwind?.Player;
        if (recipient == null){
          KillUnit(tramToIronforge);
@@ -53,7 +53,7 @@ namespace AzerothWarsCSharp.Source.Researches.Ironforge
 
       private static void ResearchCancel( ){
         foreach (var player in GeneralHelpers.GetAllPlayers()){
-          player.GetFaction()?.ModObjectLimit(ResearchId, 0);
+          player.GetFaction()?.ModObjectLimit(ResearchId, 1);
         }
      }
 

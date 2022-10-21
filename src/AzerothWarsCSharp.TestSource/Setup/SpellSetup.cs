@@ -75,12 +75,15 @@ namespace AzerothWarsCSharp.TestSource.Setup
         
         var electricStrike = new ElectricStrike(FourCC("AHbz"))
         {
-          STUN_ID = FourCC("ANsb"),
-          PURGE_ID = FourCC("Aprg"),
-          PURGE_ORDER = "purge",
-          STUN_ORDER = "thunderbolt"
+          StunId = FourCC("ANsb"),
+          PurgeId = FourCC("Aprg"),
+          PurgeOrder = "purge",
+          StunOrder = "thunderbolt",
+          Radius = 200.00F,
+          Effect = "Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl"
         };
         SpellSystem.Register(electricStrike);
+        
       }
       catch (Exception ex)
       {
