@@ -22,9 +22,9 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
       UnitRemoveAbility(dummy, abilityId);
     }
     
-    public static void ChannelOnPoint(unit caster, int abilityId, string orderId, int level, float x, float y, float duration)
+    public static void ChannelOnPoint(unit caster, int abilityId, string orderId, int level, Point targetPoint, float duration)
     {
-      var u = CreateUnit(GetOwningPlayer(caster), DummyCaster.UnitTypeId, x, y, 0);
+      var u = CreateUnit(GetOwningPlayer(caster), DummyCaster.UnitTypeId, targetPoint.X, targetPoint.Y, 0);
       UnitAddAbility(u, abilityId);
       IssueImmediateOrder(u, orderId);
       UnitApplyTimedLife(u, FourCC("BLTF"), duration);
@@ -117,11 +117,11 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
       UnitRemoveAbility(DummyCaster.DummyUnit, abilId);
     }
 
-    public static void DummyCastOnUnitsInCircle(unit caster, int abilId, string orderId, int level, float x, float y,
+    public static void DummyCastOnUnitsInCircle(unit caster, int abilId, string orderId, int level, Point center,
       float radius, CastFilter castFilter)
     {
       foreach (var target in new GroupWrapper()
-                 .EnumUnitsInRange(new Point(x, y), radius).EmptyToList()
+                 .EnumUnitsInRange(center, radius).EmptyToList()
                  .FindAll(unit => castFilter(caster, unit)))
       {
         DummyCastUnit(GetOwningPlayer(caster), abilId, orderId, level, target);

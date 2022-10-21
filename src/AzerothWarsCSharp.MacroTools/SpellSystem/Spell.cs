@@ -54,7 +54,7 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
     /// <param name="caster">The unit starting the spell.</param>
     /// <param name="target">The target of the spell, if any.</param>
     /// <param name="targetPoint">The target location of the spell, if any.</param>
-    public virtual void OnCast(unit caster, unit target, float targetX, float targetY)
+    public virtual void OnCast(unit caster, unit target, Point targetPoint)
     {
     }
 

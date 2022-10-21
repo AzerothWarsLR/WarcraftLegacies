@@ -31,7 +31,7 @@ namespace AzerothWarsCSharp.MacroTools.Spells
       DummyCast.CastOnUnit(caster, StunAbilityId, StunOrderString, duration, target);
     }
 
-    public override void OnCast(unit caster, unit target, float targetX, float targetY)
+    public override void OnCast(unit caster, unit target, Point targetPoint)
     {
       var tempGroup = new GroupWrapper();
       tempGroup.EnumUnitsInRange(new Point(GetUnitX(caster), GetUnitY(caster)), Radius);

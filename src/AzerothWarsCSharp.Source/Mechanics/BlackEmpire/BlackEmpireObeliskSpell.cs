@@ -1,6 +1,7 @@
 ﻿using AzerothWarsCSharp.MacroTools.ChannelSystem;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
@@ -16,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
 
     public float Duration { get; init; } = 10;
 
-    public override void OnCast(unit caster, unit target, float targetX, float targetY)
+    public override void OnCast(unit caster, unit target, Point targetPoint)
     {
       if (ControlPointManager.UnitIsControlPoint(target))
       {

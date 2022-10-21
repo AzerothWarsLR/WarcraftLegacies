@@ -31,11 +31,11 @@ namespace AzerothWarsCSharp.Source.Mechanics.Goblins
       UnitApplyTimedLife(dummyNukeWarning, 0, _castTime);
     }
 
-    public override void OnCast(unit caster, unit target, float targetX, float targetY)
+    public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      var dummyNukeLeftover = CreateUnit(caster.OwningPlayer(), _dummyNukeLeftOverId, targetX, targetY, 0);
+      var dummyNukeLeftover = CreateUnit(caster.OwningPlayer(), _dummyNukeLeftOverId, targetPoint.X, targetPoint.Y, 0);
       UnitApplyTimedLife(dummyNukeLeftover, 0, 3);
-      dummyNukeLeftover.IssueOrder("flamestrike", new Point(targetX, targetY));
+      dummyNukeLeftover.IssueOrder("flamestrike", targetPoint);
     }
   }
 }

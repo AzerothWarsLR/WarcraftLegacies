@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using WCSharp.Events;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.SpellSystem
@@ -13,11 +14,9 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
   {
     private static readonly Dictionary<int, Spell> SpellsByAbilityId = new();
 
-    static SpellSystem()
-    {
+    static SpellSystem() =>
       PlayerUnitEvents.AddCustomEventFilter(EVENT_PLAYER_UNIT_TRAIN_FINISH, "UnitTypeFinishesBeingTrained",
         () => GetUnitTypeId(GetTrainedUnit()));
-    }
 
     /// <summary>
     /// Returns the registered <see cref="Spell"/> with the provided ability ID.
@@ -34,13 +33,11 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
     /// Registeres the provided passive ability to the <see cref="SpellSystem"/>, causing its functionality
     /// to be invoked when specific Warcraft 3 events occur.
     /// </summary>
-    public static void Register(TakeDamageEffect takeDamageEffect)
-    {
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, takeDamageEffect.OnTakesDamage,
-        takeDamageEffect.DamagedUnitTypeId);
-    }
+    public static void Register(TakeDamageEffect takeDamageEffect) => 
+          PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, takeDamageEffect.OnTakesDamage,
+            takeDamageEffect.DamagedUnitTypeId);
 
-    /// <summary>
+        /// <summary>
     /// Registeres the provided passive ability to the <see cref="SpellSystem"/>, causing its functionality
     /// to be invoked when specific Warcraft 3 events occur.
     /// </summary>
@@ -68,21 +65,14 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
       SpellsByAbilityId.Add(spell.Id, spell);
     }
 
-    private static void OnStop()
-    {
+    private static void OnStop() =>
       SpellsByAbilityId[GetSpellAbilityId()]
         .OnStop(GetTriggerUnit());
-    }
 
-    private static void OnCast()
-    {
+    private static void OnCast() =>
       SpellsByAbilityId[GetSpellAbilityId()]
-        .OnCast(GetTriggerUnit(), GetSpellTargetUnit(), GetSpellTargetX(), GetSpellTargetY());
-    }
+        .OnCast(GetTriggerUnit(), GetSpellTargetUnit(), new Point(GetSpellTargetX(), GetSpellTargetY()));
 
-    private static void OnLearn()
-    {
-      SpellsByAbilityId[GetLearnedSkill()].OnLearn(GetTriggerUnit());
-    }
+    private static void OnLearn() => SpellsByAbilityId[GetLearnedSkill()].OnLearn(GetTriggerUnit());
   }
 }
