@@ -22,11 +22,11 @@ namespace AzerothWarsCSharp.Source.Researches.Ironforge
        
        
        var greatForge = LegendIronforge.LegendGreatforge.Unit;
-       var ironForgeLocation = new Point(GetUnitX(Greatforge), GetUnitY(Greatforge));
+       var ironForgeLocation = new Point(GetUnitX(greatForge), GetUnitY(greatForge));
        var keep = LegendStormwind.LegendStormwindkeep.Unit;
-       var stormwindLocation = new Point(GetUnitX(Keep),GetUnitY(Keep));
-       unit tramToIronforge = PreplacedUnitSystem.GetUnit(Constants.n03B, StormwindLocation);
-       unit tramToStormwind = PreplacedUnitSystem.GetUnit(Constants.n03B, ironForgeLocation);
+       var stormwindLocation = new Point(GetUnitX(keep),GetUnitY(keep));
+       unit tramToIronforge = PreplacedUnitSystem.GetUnit(Constants.UNIT_N03B_DEEPRUN_TRAM, stormwindLocation);
+       unit tramToStormwind = PreplacedUnitSystem.GetUnit(Constants.UNIT_N03B_DEEPRUN_TRAM, ironForgeLocation);
        var recipient = IronforgeSetup.Ironforge?.Player ?? StormwindSetup.Stormwind?.Player;
        if (recipient == null){
          KillUnit(tramToIronforge);
