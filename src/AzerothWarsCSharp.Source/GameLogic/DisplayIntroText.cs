@@ -2,7 +2,7 @@
 using AzerothWarsCSharp.MacroTools.Libraries;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.Game_Logic
+namespace AzerothWarsCSharp.Source.GameLogic
 {
    /// <summary>
    /// Display intro text to all players after some period of time has elapsed.

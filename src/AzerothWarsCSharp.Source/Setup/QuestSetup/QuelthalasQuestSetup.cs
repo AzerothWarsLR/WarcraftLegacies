@@ -1,5 +1,4 @@
 using AzerothWarsCSharp.MacroTools;
-using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.Source.Quests.Quelthalas;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;

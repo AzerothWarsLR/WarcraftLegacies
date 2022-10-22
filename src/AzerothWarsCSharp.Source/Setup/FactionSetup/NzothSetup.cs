@@ -1,5 +1,4 @@
-﻿using System.Data;
-using AzerothWarsCSharp.MacroTools.FactionSystem;
+﻿using AzerothWarsCSharp.MacroTools.FactionSystem;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {

@@ -1,4 +1,3 @@
-using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using WCSharp.Events;
 

@@ -3,7 +3,7 @@ using WCSharp.Events;
 using static War3Api.Common;
 
 
-namespace AzerothWarsCSharp.Source.Game_Logic
+namespace AzerothWarsCSharp.Source.GameLogic
 {
   /// <summary>
   ///   If a unit with a tech limit of 0 is trained or revived, delete and refund it instantly.

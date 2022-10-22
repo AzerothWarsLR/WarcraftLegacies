@@ -4,7 +4,7 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 using static War3Api.Common;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
-namespace AzerothWarsCSharp.Source.Game_Logic
+namespace AzerothWarsCSharp.Source.GameLogic
 {
   public static class StartingResources
   {

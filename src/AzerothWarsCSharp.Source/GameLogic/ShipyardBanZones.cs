@@ -5,7 +5,7 @@ using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.Game_Logic
+namespace AzerothWarsCSharp.Source.GameLogic
 {
   public static class ShipyardBanZones
   {
