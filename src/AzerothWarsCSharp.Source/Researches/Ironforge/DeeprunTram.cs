@@ -59,8 +59,8 @@ namespace AzerothWarsCSharp.Source.Researches.Ironforge
 
      public static void Setup( ){
        PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished,  Transfer, ResearchId);
-       PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsStarted,  Transfer, ResearchId);
-       PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsCancelled,  Transfer, ResearchId);
+       PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsStarted,  ResearchStart, ResearchId);
+       PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsCancelled,  ResearchCancel, ResearchId);
      }
    }
 }

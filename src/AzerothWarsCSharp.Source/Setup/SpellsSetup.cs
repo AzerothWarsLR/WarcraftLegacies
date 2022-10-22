@@ -194,6 +194,23 @@ namespace AzerothWarsCSharp.Source.Setup
       };
       SpellSystem.Register(burningVengeance);
 
+      var stormEarthandFire = new StormEarthandFire(Constants.ABILITY_A0HM_STORM_EARTH_AND_FIRE_WARSONG_CHEN_SUMMON)
+      {
+          UnitType1 = FourCC("npn4"),
+          UnitType2 = FourCC("npn5"),
+          UnitType3 = FourCC("npn6"),
+        /// <summary>
+        /// How long the summoned units last.
+        /// </summary>
+          Duration = 60.0F,
+          EffectTarget = "Abilities\\Spells\\Items\\AIil\\AIilTarget.mdl",
+          EffectScaleTarget = 1.0F,
+          HealthBonusBase = -0.15F,
+          HealthBonusLevel = 0.15F,     //The level ones are for each additional hero level, including level 1
+          DamageBonusBase = -0.15F,
+          DamageBonusLevel = 0.15F
+      };
+      SpellSystem.Register(stormEarthandFire);
       //Todo: inappropriately named
       var manaSyphon = new GrantMana(Constants.ABILITY_A0RG_MANA_SYPHON_ARATHOR_MAGE_TOWER)
       {

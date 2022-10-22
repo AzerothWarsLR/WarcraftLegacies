@@ -9,6 +9,7 @@ namespace AzerothWarsCSharp.Source.Setup
     {
       VeteranFootmen.Setup();
       TitanForgeArtifact.Setup();
+      DeeprunTram.Setup();
     }
   }
-}
+} 

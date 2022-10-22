@@ -6,20 +6,20 @@ namespace AzerothWarsCSharp.MacroTools.Spells
 {
     public sealed class StormEarthandFire : Spell
     {
-        public int UnitType1 { get; init; } = FourCC("npn4");
-        public int UnitType2 { get; init; } = FourCC("npn5");
-        public int UnitType3 { get; init; } = FourCC("npn6");
+        public int UnitType1 { get; init; }
+        public int UnitType2 { get; init; }
+        public int UnitType3 { get; init; }
         /// <summary>
         /// How long the summoned units last.
         /// </summary>
-        public float Duration { get; init; } = 60.0F;
-        public string EffectTarget { get; init; } = "Abilities\\Spells\\Items\\AIil\\AIilTarget.mdl";
-        public float EffectScaleTarget { get; init; } = 1.0F;
+        public float Duration { get; init; }
+        public string EffectTarget { get; init; }
+        public float EffectScaleTarget { get; init; }
 
-        public float HealthBonusBase { get; init; } = -0.15F;
-        public float HealthBonusLevel { get; init; } = 0.15F;     //The level ones are for each additional hero level, including level 1
-        public float DamageBonusBase { get; init; } = -0.15F;
-        public float DamageBonusLevel { get; init; } = 0.15F;
+        public float HealthBonusBase { get; init; }
+        public float HealthBonusLevel { get; init; }     //The level ones are for each additional hero level, including level 1
+        public float DamageBonusBase { get; init; }
+        public float DamageBonusLevel { get; init; }
 
         public StormEarthandFire(int id) : base(id)
         {
