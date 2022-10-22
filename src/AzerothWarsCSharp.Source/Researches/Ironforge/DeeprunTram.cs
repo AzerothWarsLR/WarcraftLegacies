@@ -1,3 +1,4 @@
+using System;
 using static War3Api.Common;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
@@ -12,32 +13,36 @@ namespace AzerothWarsCSharp.Source.Researches.Ironforge
   public static class DeeprunTram
   {
     private const int ResearchId = Constants.UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE;
+    private static unit? _tramToIronforge;
+    private static unit? _tramToStormwind;
     
     private static void Transfer()
     {
-      var greatForge = LegendIronforge.LegendGreatforge.Unit;
-      var ironForgeLocation = new Point(GetUnitX(greatForge), GetUnitY(greatForge));
-      var keep = LegendStormwind.LegendStormwindkeep.Unit;
-      var stormwindLocation = new Point(GetUnitX(keep), GetUnitY(keep));
-      var tramToIronforge = PreplacedUnitSystem.GetUnit(Constants.UNIT_N03B_DEEPRUN_TRAM, stormwindLocation);
-      var tramToStormwind = PreplacedUnitSystem.GetUnit(Constants.UNIT_N03B_DEEPRUN_TRAM, ironForgeLocation);
-      var recipient = IronforgeSetup.Ironforge?.Player ?? StormwindSetup.Stormwind?.Player;
-      if (recipient == null)
+      try
       {
-        KillUnit(tramToIronforge);
-        KillUnit(tramToStormwind);
-        return;
+        var recipient = IronforgeSetup.Ironforge?.Player ?? StormwindSetup.Stormwind?.Player;
+        if (recipient == null)
+        {
+          KillUnit(_tramToIronforge);
+          KillUnit(_tramToStormwind);
+          return;
+        }
+
+        SetUnitOwner(_tramToIronforge, recipient, true);
+        _tramToIronforge?.SetWaygateDestination(Regions.Ironforge.Center);
+        SetUnitInvulnerable(_tramToIronforge, false);
+
+        SetUnitOwner(_tramToStormwind, recipient, true);
+        _tramToStormwind?.SetWaygateDestination(Regions.Stormwind.Center);
+        SetUnitInvulnerable(_tramToStormwind, false);
+
+        _tramToIronforge = null;
+        _tramToStormwind = null;
       }
-
-      SetUnitOwner(tramToIronforge, recipient, true);
-      WaygateActivate(tramToIronforge, true);
-      tramToIronforge.SetWaygateDestination(Regions.Stormwind.Center);
-      SetUnitInvulnerable(tramToIronforge, false);
-
-      SetUnitOwner(tramToStormwind, recipient, true);
-      WaygateActivate(tramToStormwind, true);
-      tramToStormwind.SetWaygateDestination(Regions.Ironforge.Center);
-      SetUnitInvulnerable(tramToStormwind, false);
+      catch (Exception ex)
+      {
+        Console.WriteLine($"Failed to execute {nameof(DeeprunTram)}: {ex}");
+      }
     }
 
     private static void ResearchStart()
@@ -61,6 +66,12 @@ namespace AzerothWarsCSharp.Source.Researches.Ironforge
       PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, Transfer, ResearchId);
       PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsStarted, ResearchStart, ResearchId);
       PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsCancelled, ResearchCancel, ResearchId);
+      var greatForge = LegendIronforge.LegendGreatforge.Unit;
+      var stormwindKeep = LegendStormwind.LegendStormwindkeep.Unit;
+      var ironforgeLocation = new Point(GetUnitX(greatForge), GetUnitY(greatForge));
+      var stormwindLocation = new Point(GetUnitX(stormwindKeep), GetUnitY(stormwindKeep));
+      _tramToIronforge = PreplacedUnitSystem.GetUnit(Constants.UNIT_N03B_DEEPRUN_TRAM, stormwindLocation);
+      _tramToStormwind = PreplacedUnitSystem.GetUnit(Constants.UNIT_N03B_DEEPRUN_TRAM, ironforgeLocation);
     }
   }
 }
