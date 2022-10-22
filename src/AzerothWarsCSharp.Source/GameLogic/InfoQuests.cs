@@ -1,12 +1,15 @@
 ﻿using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.Game_Logic
+namespace AzerothWarsCSharp.Source.GameLogic
 {
    /// <summary>
    /// Provides a set of dummy quests that provide information to players.
    /// </summary>
    public static class InfoQuests
    {
+     /// <summary>
+     /// Creates a series of dummy quests that provide information to players.
+     /// </summary>
       public static void Setup()
       {
          var commandQuest = CreateQuest();

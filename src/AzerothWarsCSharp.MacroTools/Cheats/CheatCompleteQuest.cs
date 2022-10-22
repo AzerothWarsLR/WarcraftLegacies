@@ -1,32 +1,41 @@
 ﻿using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
+using War3Api;
 using static War3Api.Common;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.Cheats
 {
+  /// <summary>
+  /// A cheat that completes a specified <see cref="QuestData"/>.
+  /// </summary>
   public static class CheatCompleteQuest
   {
-    private const string COMMAND = "-complete ";
+    private const string Command = "-complete ";
 
     private static void Actions()
     {
       if (!TestSafety.CheatCondition()) return;
 
-      string enteredString = GetEventPlayerChatString();
-      player triggerPlayer = GetTriggerPlayer();
-      GetPlayerId(triggerPlayer);
-      string parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
+      var enteredString = GetEventPlayerChatString();
+      var triggerPlayer = GetTriggerPlayer();
+      var parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
 
-      triggerPlayer.GetFaction().GetQuestByTitle(parameter).Progress = QuestProgress.Complete;
+      var quest = triggerPlayer.GetFaction()?.GetQuestByTitle(parameter);
+      if (quest != null) 
+        quest.Progress = QuestProgress.Complete;
+      
       DisplayTextToPlayer(triggerPlayer, 0, 0, $"|cffD27575CHEAT:|r Attempted to complete quest {parameter}.");
     }
 
+    /// <summary>
+    /// Registers the command which allows players to execute the <see cref="CheatCompleteQuest"/> cheat.
+    /// </summary>
     public static void Setup()
     {
-      trigger trig = CreateTrigger();
-      foreach (var player in GetAllPlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
-
+      var trig = CreateTrigger();
+      foreach (var player in GetAllPlayers()) 
+        TriggerRegisterPlayerChatEvent(trig, player, Command, false);
       TriggerAddAction(trig, Actions);
     }
   }

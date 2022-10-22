@@ -11,13 +11,20 @@ namespace AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer
   {
     private effect? _effect;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="CorruptWorkerBuff"/> class.
+    /// </summary>
     public CorruptWorkerBuff(unit caster, unit target) : base(caster, target)
     {
       Duration = float.MaxValue;
     }
 
+    /// <summary>
+    /// The buff grants this much income to the casting player while it persists.
+    /// </summary>
     public int BonusIncome { get; init; }
 
+    /// <inheritdoc />
     public override void OnApply()
     {
       _effect = AddSpecialEffectTarget(
@@ -27,6 +34,7 @@ namespace AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer
       UnitShareVision(Target, CastingPlayer, true);
     }
 
+    /// <inheritdoc />
     public override void OnDispose()
     {
       DestroyEffect(_effect);

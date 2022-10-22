@@ -3,6 +3,7 @@ using System.Linq;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Effects;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Spells
@@ -22,12 +23,16 @@ namespace AzerothWarsCSharp.MacroTools.Spells
     public string EffectTarget { get; init; } = "";
     public float EffectScaleTarget { get; init; }
 
-    public override void OnCast(unit caster, unit target, float targetX, float targetY)
+    public override void OnCast(unit caster, unit target, Point targetPoint)
     {
       try
       {
         var maxTargets = CountBase * CountLevel * GetAbilityLevel(caster);
-        foreach (var unit in new GroupWrapper().EnumUnitsInRange(targetX, targetY, Radius).EmptyToList().Take(maxTargets))
+        foreach (var unit in new GroupWrapper()
+                   .EnumUnitsInRange(targetPoint, Radius)
+                   .EmptyToList()
+                   .Take(maxTargets)
+                 )
           if (IsValidTarget(caster, unit))
             ConvertUnit(caster, unit);
         var tempEffect = AddSpecialEffect(Effect, GetSpellTargetX(), GetSpellTargetY());

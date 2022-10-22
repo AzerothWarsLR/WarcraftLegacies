@@ -1,80 +1,50 @@
 using AzerothWarsCSharp.MacroTools.Wrappers;
-using static War3Api.Common;  using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;
+using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.Cheats
 {
   public static class CheatSpawn
   {
-    private const string COMMAND = "-spawn ";
-    private static string? _parameter;
-    private static string? _parameter2;
+    private const string Command = "-spawn ";
 
-
-    private static int Char2Id(string c)
+    private static void SpawnUnitsOrItems(unit whichUnit, int typeId, int count)
     {
-      var i = 0;
-      const string abc = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-
-      while (true)
+      for (var i = 0; i < count; i++)
       {
-        string t = SubString(abc, i, i + 1);
-        if (t == null || t == c) break;
-        i += 1;
-      }
-
-      if (i < 10)
-        return i + 48;
-      else if (i < 36)
-        return i + 65 - 10;
-      else
-        return i + 97 - 36;
-    }
-
-    private static int S2Raw(string? s)
-    {
-      return ((Char2Id(SubString(s, 0, 1)) * 256 + Char2Id(SubString(s, 1, 2))) * 256 + Char2Id(SubString(s, 2, 3))) *
-        256 + Char2Id(SubString(s, 3, 4));
-    }
-
-    private static void Spawn(unit whichUnit)
-    {
-      var i = 0;
-      while (true)
-      {
-        if (i == S2I(_parameter2)) break;
-        CreateUnit(GetTriggerPlayer(), S2Raw(_parameter), GetUnitX(whichUnit), GetUnitY(whichUnit), 0);
-        CreateItem(S2Raw(_parameter), GetUnitX(whichUnit), GetUnitY(whichUnit));
-        i += 1;
+        CreateUnit(GetTriggerPlayer(), typeId, GetUnitX(whichUnit), GetUnitY(whichUnit), 0);
+        CreateItem(typeId, GetUnitX(whichUnit), GetUnitY(whichUnit));
       }
     }
 
     private static void Actions()
     {
       if (!TestSafety.CheatCondition()) return;
-      string enteredString = GetEventPlayerChatString();
-      player p = GetTriggerPlayer();
-      _parameter = SubString(enteredString, StringLength(COMMAND), StringLength(COMMAND) + 4);
-      _parameter2 = SubString(enteredString, StringLength(COMMAND) + StringLength(_parameter) + 1,
+      var enteredString = GetEventPlayerChatString();
+      var triggerPlayer = GetTriggerPlayer();
+      var typeIdParameter = SubString(enteredString, StringLength(Command), StringLength(Command) + 4);
+      var countParameter = SubString(enteredString, StringLength(Command) + StringLength(typeIdParameter) + 1,
         StringLength(enteredString));
 
-      if (S2I(_parameter2) < 1) _parameter2 = "1";
+      if (S2I(countParameter) < 1) 
+        countParameter = "1";
 
-      if (S2Raw(_parameter) >= 0)
+      if (FourCC(typeIdParameter) <= 0) 
+        return;
+      
+      foreach (var unit in new GroupWrapper().EnumSelectedUnits(triggerPlayer).EmptyToList())
       {
-        foreach (var unit in new GroupWrapper().EnumSelectedUnits(p).EmptyToList())
-        {
-          Spawn(unit);
-        }
-        DisplayTextToPlayer(p, 0, 0,
-          "|cffD27575CHEAT:|r Attempted to spawn " + _parameter2 + " of object " + GetObjectName(S2Raw(_parameter)) +
-          ".");
+        SpawnUnitsOrItems(unit, FourCC(typeIdParameter), S2I(countParameter));
       }
+
+      DisplayTextToPlayer(triggerPlayer, 0, 0,
+        $"|cffD27575CHEAT:|r Attempted to spawn {countParameter} of object {GetObjectName(FourCC(typeIdParameter))}.");
     }
 
     public static void Setup()
     {
-      trigger trig = CreateTrigger();
-      foreach (var player in GetAllPlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
+      var trig = CreateTrigger();
+      foreach (var player in GetAllPlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
       TriggerAddAction(trig, Actions);
     }
   }

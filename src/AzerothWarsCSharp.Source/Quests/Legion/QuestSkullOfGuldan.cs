@@ -35,14 +35,14 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
 
     protected override void OnComplete(Faction completingFaction)
     {
-      ArtifactSetup.ArtifactSkullofguldan.Status = ArtifactStatus.Ground;
+      ArtifactSetup.ArtifactSkullofguldan.LocationType = ArtifactLocationType.Ground;
       _objectiveAnyUnitInRect.TriggerUnit.AddItemSafe(ArtifactSetup.ArtifactSkullofguldan.Item);
     }
 
     protected override void OnFail(Faction completingFaction)
     {
       SetItemPosition(ArtifactSetup.ArtifactSkullofguldan.Item, -11867, 222165);
-      ArtifactSetup.ArtifactSkullofguldan.Status = ArtifactStatus.Ground;
+      ArtifactSetup.ArtifactSkullofguldan.LocationType = ArtifactLocationType.Ground;
     }
   }
 }

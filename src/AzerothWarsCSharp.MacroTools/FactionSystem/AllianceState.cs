@@ -3,7 +3,6 @@
   public enum AllianceState
   {
     Unallied,
-    UnalliedVision,
     Allied,
     AlliedVision,
     AlliedUnits,

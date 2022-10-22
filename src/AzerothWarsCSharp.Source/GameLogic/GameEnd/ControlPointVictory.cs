@@ -2,7 +2,7 @@ using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.Game_Logic.GameEnd
+namespace AzerothWarsCSharp.Source.GameLogic.GameEnd
 {
   /// <summary>
   ///   When a Team gets a certain number of <see cref="ControlPoint" />s they win.

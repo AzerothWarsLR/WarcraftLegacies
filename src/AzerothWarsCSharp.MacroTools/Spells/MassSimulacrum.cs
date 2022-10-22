@@ -3,7 +3,7 @@ using AzerothWarsCSharp.MacroTools.Buffs;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Buffs;
-
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Spells
@@ -49,10 +49,10 @@ namespace AzerothWarsCSharp.MacroTools.Spells
       BuffSystem.Add(buff);
     }
 
-    public override void OnCast(unit caster, unit target, float targetX, float targetY)
+    public override void OnCast(unit caster, unit target, Point targetPoint)
     {
       var group = new GroupWrapper();
-      group.EnumUnitsInRange(targetX, targetY, Radius);
+      group.EnumUnitsInRange(targetPoint, Radius);
       var maxTargets = CountBase * CountLevel * GetAbilityLevel(caster);
       foreach (var unit in group.EmptyToList().Take(maxTargets))
       {
@@ -61,7 +61,7 @@ namespace AzerothWarsCSharp.MacroTools.Spells
           ReplicateUnit(caster, unit);
         }
       }
-      var effect = AddSpecialEffect(Effect, targetX, targetY);
+      var effect = AddSpecialEffect(Effect, targetPoint.X, targetPoint.Y);
       BlzSetSpecialEffectScale(effect, EffectScale);
       DestroyEffect(effect);
     }

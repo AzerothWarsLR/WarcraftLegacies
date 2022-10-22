@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
@@ -9,5 +9,9 @@
         <ProjectReference Include="..\AzerothWarsCSharp.Generated\AzerothWarsCSharp.Generated.csproj" />
         <ProjectReference Include="..\AzerothWarsCSharp.MacroTools\AzerothWarsCSharp.MacroTools.csproj" />
     </ItemGroup>
+
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
 
 </Project>

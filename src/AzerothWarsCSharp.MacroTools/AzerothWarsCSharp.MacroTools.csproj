@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
@@ -14,5 +14,9 @@
         <PackageReference Include="WCSharp.Lightnings" Version="2.0.0" />
         <PackageReference Include="WCSharp.Shared" Version="2.0.6" />
     </ItemGroup>
+
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
 
 </Project>

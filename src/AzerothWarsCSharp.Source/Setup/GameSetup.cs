@@ -1,12 +1,11 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem;
 using AzerothWarsCSharp.MacroTools.Frames.Books.Powers;
-using AzerothWarsCSharp.MacroTools.Gates;
 using AzerothWarsCSharp.MacroTools.Mechanics;
 using AzerothWarsCSharp.MacroTools.UserInterface;
 using AzerothWarsCSharp.Source.ArtifactBehaviour;
-using AzerothWarsCSharp.Source.Game_Logic;
-using AzerothWarsCSharp.Source.Game_Logic.GameEnd;
+using AzerothWarsCSharp.Source.GameLogic;
+using AzerothWarsCSharp.Source.GameLogic.GameEnd;
 using AzerothWarsCSharp.Source.Hints;
 using AzerothWarsCSharp.Source.Mechanics.Quelthalas;
 using AzerothWarsCSharp.Source.Mechanics.Scourge.Blight;
@@ -16,8 +15,14 @@ using AzerothWarsCSharp.Source.UnitTypes;
 
 namespace AzerothWarsCSharp.Source.Setup
 {
+  /// <summary>
+  /// Responsible for setting up the entire game.
+  /// </summary>
   public static class GameSetup
   {
+    /// <summary>
+    /// Initialize the entire game.
+    /// </summary>
     public static void Setup()
     {
       PreplacedUnitSystem.Initialize();
@@ -99,6 +104,12 @@ namespace AzerothWarsCSharp.Source.Setup
       BlockerSetup.Setup();
       NeutralVictimAndPassiveSetup.Setup();
       GateSetup.Setup();
+      StartingResources.Setup();
+      StartingQuestPopup.Setup(63);
+      RefundZeroLimitUnits.Setup();
+      HeroGlowFix.Setup();
+      CleanPersons.Setup();
+      PlayerLeaves.Setup();
     }
   }
 }

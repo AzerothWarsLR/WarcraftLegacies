@@ -1,4 +1,3 @@
-using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ShoreSystem;
 
 namespace AzerothWarsCSharp.Source.Setup

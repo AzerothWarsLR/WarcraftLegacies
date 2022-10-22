@@ -1,6 +1,5 @@
-using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.HintSystem;
-using AzerothWarsCSharp.Source.Game_Logic.GameEnd;
+using AzerothWarsCSharp.Source.GameLogic.GameEnd;
 
 namespace AzerothWarsCSharp.Source.Hints
 {

@@ -3,6 +3,7 @@ using AzerothWarsCSharp.MacroTools.Buffs;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Buffs;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Spells
@@ -24,9 +25,12 @@ namespace AzerothWarsCSharp.MacroTools.Spells
     {
     }
 
-    public override void OnCast(unit caster, unit target, float targetX, float targetY)
+    public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      foreach (var unit in new GroupWrapper().EnumUnitsInRange(GetUnitX(caster), GetUnitY(caster), Radius).EmptyToList())
+      foreach (var unit in new GroupWrapper()
+                 .EnumUnitsInRange(caster.GetPosition(), Radius)
+                 .EmptyToList()
+               )
       {
         if (IsPlayerAlly(GetOwningPlayer(caster), GetOwningPlayer(unit)))
         {

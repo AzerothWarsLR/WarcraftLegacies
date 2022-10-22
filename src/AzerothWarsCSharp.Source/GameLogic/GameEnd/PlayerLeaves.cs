@@ -1,7 +1,7 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.Game_Logic.GameEnd
+namespace AzerothWarsCSharp.Source.GameLogic.GameEnd
 {
   public static class PlayerLeaves
   {

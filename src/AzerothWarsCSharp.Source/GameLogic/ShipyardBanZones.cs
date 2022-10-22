@@ -5,8 +5,11 @@ using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.Game_Logic
+namespace AzerothWarsCSharp.Source.GameLogic
 {
+  /// <summary>
+  /// Responsible for preventing Shipyards from being constructed in specific areas.
+  /// </summary>
   public static class ShipyardBanZones
   {
     /// <summary>

@@ -1,5 +1,6 @@
 ﻿using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Spells
@@ -30,10 +31,10 @@ namespace AzerothWarsCSharp.MacroTools.Spells
       DummyCast.CastOnUnit(caster, StunAbilityId, StunOrderString, duration, target);
     }
 
-    public override void OnCast(unit caster, unit target, float targetX, float targetY)
+    public override void OnCast(unit caster, unit target, Point targetPoint)
     {
       var tempGroup = new GroupWrapper();
-      tempGroup.EnumUnitsInRange(GetUnitX(caster), GetUnitY(caster), Radius);
+      tempGroup.EnumUnitsInRange(new Point(GetUnitX(caster), GetUnitY(caster)), Radius);
       foreach (var enumUnit in tempGroup.EmptyToList())
       {
         if (CastFilters.IsTargetEnemyAndAlive(caster, enumUnit))

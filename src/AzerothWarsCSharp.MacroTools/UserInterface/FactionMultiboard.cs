@@ -24,11 +24,13 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
     private const float WidthCp = 0.02f;
     private const float WidthIncome = 0.02f;
     private const float WidthTeam = WidthFaction + WidthCp + WidthIncome;
+    
+    private static bool _initialized;
+    
     private readonly Dictionary<Faction, int> _rowsByFaction = new();
     private readonly Dictionary<Team, int> _rowsByTeam = new();
-
     private multiboard _multiboard;
-
+    
     private FactionMultiboard(int columnCount, int rowCount, string title)
     {
       _multiboard = CreateMultiboard();
@@ -41,8 +43,13 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
 
     private static FactionMultiboard? Instance { get; set; }
 
+    /// <summary>
+    /// Sets up the globally visible <see cref="FactionMultiboard"/>.
+    /// </summary>
     public static void Setup()
     {
+      if (_initialized) throw new SystemAlreadyInitializedException(nameof(FactionMultiboard));
+
       var timer = CreateTimer();
       TimerStart(timer, 2, false, () => { Instance = new FactionMultiboard(ColumnCount, 3, Title); }
       );
@@ -57,6 +64,8 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
 
       foreach (var player in GeneralHelpers.GetAllPlayers())
         player.GetPlayerData().IncomeChanged += OnPlayerIncomeChanged;
+
+      _initialized = true;
     }
 
     //Run when a detail about a Faction has changed

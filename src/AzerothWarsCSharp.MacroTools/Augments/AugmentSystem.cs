@@ -5,6 +5,9 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Augments
 {
+   /// <summary>
+   /// Manages all <see cref="Augments"/> in the game, and can be used to retrieve random Augments.
+   /// </summary>
    public static class AugmentSystem
    {
       private static readonly List<Augment> Augments = new();
@@ -28,6 +31,10 @@ namespace AzerothWarsCSharp.MacroTools.Augments
          return Augments[GetRandomInt(0, Augments.Count - 1)];
       }
       
+      /// <summary>
+      /// Registers an <see cref="Augment"/> to the <see cref="AugmentSystem"/>, allowing it to be provided as a
+      /// random result from a pool.
+      /// </summary>
       public static void Register(Augment augment)
       {
          Augments.Add(augment);

@@ -2,7 +2,7 @@
 using AzerothWarsCSharp.MacroTools.Libraries;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.Source.Game_Logic
+namespace AzerothWarsCSharp.Source.GameLogic
 {
    /// <summary>
    /// Display intro text to all players after some period of time has elapsed.
@@ -19,6 +19,10 @@ namespace AzerothWarsCSharp.Source.Game_Logic
          DestroyTimer(GetExpiredTimer());
       }
 
+      /// <summary>
+      /// Displays intro text to all players after some period of time has elapsed.
+      /// </summary>
+      /// <param name="timeout">The time after which to display intro text, in seconds.</param>
       public static void Setup(float timeout)
       {
          var timer = CreateTimer();

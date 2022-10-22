@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.Source.Quests.Fel_Horde;
-using WCSharp.Shared.Data;
 using static AzerothWarsCSharp.Source.Setup.FactionSetup.FelHordeSetup;
 using static War3Api.Common;
 
