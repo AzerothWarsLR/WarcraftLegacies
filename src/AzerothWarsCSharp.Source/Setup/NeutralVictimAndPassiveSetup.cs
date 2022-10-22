@@ -1,5 +1,4 @@
 ﻿using AzerothWarsCSharp.MacroTools.Libraries;
-using static War3Api.Common;
 using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Setup

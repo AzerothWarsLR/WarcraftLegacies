@@ -8,7 +8,6 @@ using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using AzerothWarsCSharp.Source.Setup.QuestSetup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Naga
 {

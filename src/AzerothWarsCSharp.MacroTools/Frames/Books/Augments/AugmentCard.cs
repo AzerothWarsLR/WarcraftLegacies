@@ -1,7 +1,6 @@
 ﻿using System;
 using AzerothWarsCSharp.MacroTools.Augments;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
-using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Frames.Books.Augments
 {

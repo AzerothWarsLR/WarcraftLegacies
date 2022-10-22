@@ -7,7 +7,6 @@ using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.Legends;
-using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 {

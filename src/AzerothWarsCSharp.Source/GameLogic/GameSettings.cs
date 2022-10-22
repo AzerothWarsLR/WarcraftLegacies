@@ -1,6 +1,4 @@
-﻿using static War3Api.Common;
-
-namespace AzerothWarsCSharp.Source.GameLogic
+﻿namespace AzerothWarsCSharp.Source.GameLogic
 {
    /// <summary>
    /// Responsible for managing basic game settings.

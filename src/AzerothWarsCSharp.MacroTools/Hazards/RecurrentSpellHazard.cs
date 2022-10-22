@@ -1,7 +1,5 @@
 ﻿using AzerothWarsCSharp.MacroTools.SpellSystem;
 
-using static War3Api.Common;
-
 namespace AzerothWarsCSharp.MacroTools.Hazards
 {
   public sealed class RecurrentSpellHazard : Hazard

@@ -1,6 +1,4 @@
-﻿using static War3Api.Common;
-
-namespace AzerothWarsCSharp.MacroTools.ChannelSystem
+﻿namespace AzerothWarsCSharp.MacroTools.ChannelSystem
 {
   public abstract class Channel
   {

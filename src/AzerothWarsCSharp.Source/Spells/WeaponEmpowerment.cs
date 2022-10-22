@@ -1,5 +1,4 @@
 ﻿using AzerothWarsCSharp.MacroTools.SpellSystem;
-using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Spells
 {

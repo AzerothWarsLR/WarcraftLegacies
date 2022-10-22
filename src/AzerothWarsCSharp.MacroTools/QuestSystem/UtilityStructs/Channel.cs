@@ -2,8 +2,6 @@
 using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Shared.Data;
-
-using static War3Api.Common;
 using Environment = AzerothWarsCSharp.MacroTools.Libraries.Environment;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs

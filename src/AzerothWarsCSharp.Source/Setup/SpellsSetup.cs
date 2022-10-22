@@ -3,7 +3,6 @@ using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.UnitEffects;
 using AzerothWarsCSharp.Source.Setup.Spells;
 using AzerothWarsCSharp.Source.Spells;
-using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup
 {

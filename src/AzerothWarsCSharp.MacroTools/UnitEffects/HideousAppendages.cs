@@ -1,7 +1,6 @@
 ﻿using AzerothWarsCSharp.MacroTools.Buffs;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using WCSharp.Buffs;
-using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.UnitEffects
 {

@@ -1,5 +1,4 @@
-﻿using static War3Api.Common;
-using WCSharp.Buffs;
+﻿using WCSharp.Buffs;
 
 namespace AzerothWarsCSharp.MacroTools.Buffs
 {

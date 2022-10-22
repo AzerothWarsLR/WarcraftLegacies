@@ -1,6 +1,4 @@
-﻿using static War3Api.Common;
-
-namespace AzerothWarsCSharp.MacroTools.Frames
+﻿namespace AzerothWarsCSharp.MacroTools.Frames
 {
   public class TextFrame : Frame
   {

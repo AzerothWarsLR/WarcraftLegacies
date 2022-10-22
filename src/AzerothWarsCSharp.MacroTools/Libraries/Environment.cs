@@ -1,5 +1,3 @@
-using static War3Api.Common;
-
 namespace AzerothWarsCSharp.MacroTools.Libraries
 {
   public class Environment

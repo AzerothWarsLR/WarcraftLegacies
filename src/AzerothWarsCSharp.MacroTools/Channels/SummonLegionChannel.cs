@@ -1,5 +1,4 @@
 ﻿using AzerothWarsCSharp.MacroTools.ChannelSystem;
-using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Channels
 {

@@ -2,8 +2,6 @@
 using AzerothWarsCSharp.MacroTools.Libraries;
 using WCSharp.Shared.Data;
 
-using static War3Api.Common;
-
 namespace AzerothWarsCSharp.MacroTools.Instances
 {
   public static class InstanceSystem

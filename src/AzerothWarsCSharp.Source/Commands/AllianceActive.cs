@@ -1,5 +1,4 @@
 using AzerothWarsCSharp.Source.GameLogic.GameEnd;
-using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Commands
 {

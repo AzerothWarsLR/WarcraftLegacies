@@ -4,7 +4,6 @@ using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests
 {

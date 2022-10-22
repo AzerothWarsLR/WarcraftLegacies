@@ -2,8 +2,6 @@
 using System.Diagnostics.CodeAnalysis;
 using AzerothWarsCSharp.Source.Setup;
 
-using static War3Api.Common;
-
 namespace AzerothWarsCSharp.Source
 {
 	public static class Program

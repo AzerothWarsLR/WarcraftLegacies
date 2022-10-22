@@ -1,7 +1,6 @@
 using System;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
-using static War3Api.Common;
 
 
 namespace AzerothWarsCSharp.MacroTools.ControlPointSystem

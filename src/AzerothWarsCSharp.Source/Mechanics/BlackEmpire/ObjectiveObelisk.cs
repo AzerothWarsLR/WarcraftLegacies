@@ -1,7 +1,6 @@
 ﻿using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
 {

@@ -2,7 +2,6 @@
 using System.Linq;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.UnitEffects
 {

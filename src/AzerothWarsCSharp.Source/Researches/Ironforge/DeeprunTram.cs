@@ -1,5 +1,4 @@
 using System;
-using static War3Api.Common;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using WCSharp.Events;

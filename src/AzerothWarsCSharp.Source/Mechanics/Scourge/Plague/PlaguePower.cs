@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using WCSharp.Events;
-using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
 {
