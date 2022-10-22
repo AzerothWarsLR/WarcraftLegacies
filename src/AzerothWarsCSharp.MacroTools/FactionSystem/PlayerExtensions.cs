@@ -35,17 +35,10 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     public static void SetAllianceState(this player sourcePlayer, player otherPlayer, AllianceState allianceState)
     {
-      // Prevent players from attempting to ally with themselves.
       if (sourcePlayer == otherPlayer) return;
 
       switch (allianceState)
       {
-        case AllianceState.UnalliedVision:
-          sourcePlayer.SetPlayerAllianceStateAlly(otherPlayer, false);
-          sourcePlayer.SetPlayerAllianceStateVision(otherPlayer, true);
-          sourcePlayer.SetPlayerAllianceStateControl(otherPlayer, false);
-          sourcePlayer.SetPlayerAllianceStateFullControl(otherPlayer, false);
-          break;
         case AllianceState.AlliedVision:
           sourcePlayer.SetPlayerAllianceStateAlly(otherPlayer, true);
           sourcePlayer.SetPlayerAllianceStateVision(otherPlayer, true);
