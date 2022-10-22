@@ -2,6 +2,7 @@ using System;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using static War3Api.Common;
 using WCSharp.Effects;
+using WCSharp.Shared.Data;
 
 namespace AzerothWarsCSharp.MacroTools.Spells
 {
@@ -20,12 +21,12 @@ namespace AzerothWarsCSharp.MacroTools.Spells
     {
     }
 
-    public override void OnCast(unit caster, unit target, float targetX, float targetY)
+    public override void OnCast(unit caster, unit target, Point targetPoint)
     {
       try
       {
-        GroupEnumUnitsInRange(TempGroup, targetX, targetY, Radius, null);
-        EffectSystem.Add(AddSpecialEffect(Effect, targetX, targetY));
+        GroupEnumUnitsInRange(TempGroup, targetPoint.X, targetPoint.Y, Radius, null);
+        EffectSystem.Add(AddSpecialEffect(Effect, targetPoint.X, targetPoint.Y));
         while (true)
         {
           unit u = FirstOfGroup(TempGroup);

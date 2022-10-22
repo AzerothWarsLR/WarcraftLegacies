@@ -1,6 +1,7 @@
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using static War3Api.Common;
 using AzerothWarsCSharp.MacroTools.Libraries;
+using WCSharp.Shared.Data;
 
 namespace AzerothWarsCSharp.MacroTools.Spells
 {
@@ -33,14 +34,14 @@ namespace AzerothWarsCSharp.MacroTools.Spells
       var newUnit = CreateUnit(player, unitType, x, y, facing);
       UnitAddType(newUnit, UNIT_TYPE_SUMMONED);
       UnitApplyTimedLife(newUnit, 0, Duration);
-      newUnit.ScaleBaseDamage(1 + damageBonus, 0);
-      newUnit.ScaleMaxHitpoints(1 + hitpointBonus);
+      newUnit.MultiplyBaseDamage(1 + damageBonus, 0);
+      newUnit.MultiplyMaxHitpoints(1 + hitpointBonus);
       var tempEffect = AddSpecialEffect(EffectTarget, GetUnitX(newUnit), GetUnitY(newUnit));
       BlzSetSpecialEffectScale(tempEffect, EffectScaleTarget);
       DestroyEffect(tempEffect);
     }
 
-    public override void OnCast(unit caster, unit target, float targetX, float targetY)
+    public override void OnCast(unit caster, unit target, Point targetPoint)
     {
       var triggerPlayer = GetOwningPlayer(caster);
       var level = GetUnitAbilityLevel(caster, Id);
