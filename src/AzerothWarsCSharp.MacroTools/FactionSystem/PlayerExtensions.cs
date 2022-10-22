@@ -1,4 +1,5 @@
-﻿using AzerothWarsCSharp.MacroTools.Wrappers;
+﻿using System;
+using AzerothWarsCSharp.MacroTools.Wrappers;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
@@ -35,10 +36,17 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     public static void SetAllianceState(this player sourcePlayer, player otherPlayer, AllianceState allianceState)
     {
+      // Prevent players from attempting to ally with themselves.
       if (sourcePlayer == otherPlayer) return;
 
       switch (allianceState)
       {
+        case AllianceState.Unallied:
+          sourcePlayer.SetPlayerAllianceStateAlly(otherPlayer, false);
+          sourcePlayer.SetPlayerAllianceStateVision(otherPlayer, false);
+          sourcePlayer.SetPlayerAllianceStateControl(otherPlayer, false);
+          sourcePlayer.SetPlayerAllianceStateFullControl(otherPlayer, false);
+          break;
         case AllianceState.AlliedVision:
           sourcePlayer.SetPlayerAllianceStateAlly(otherPlayer, true);
           sourcePlayer.SetPlayerAllianceStateVision(otherPlayer, true);
@@ -51,6 +59,8 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
           sourcePlayer.SetPlayerAllianceStateControl(otherPlayer, true);
           sourcePlayer.SetPlayerAllianceStateFullControl(otherPlayer, true);
           break;
+        default:
+          throw new ArgumentOutOfRangeException(nameof(allianceState), allianceState, null);
       }
     }
 
