@@ -58,6 +58,7 @@ namespace AzerothWarsCSharp.Source.Setup
       GameSettings.Setup();
       InfoQuests.Setup();
       DestructibleSetup.Setup();
+      ResearchSetup.Setup();
       PreplacedUnitSystem.Shutdown();
       OpenAllianceVote.Setup();
       AugmentSetup.Setup();
@@ -103,7 +104,6 @@ namespace AzerothWarsCSharp.Source.Setup
       BlockerSetup.Setup();
       NeutralVictimAndPassiveSetup.Setup();
       GateSetup.Setup();
-      ResearchSetup.Setup();
       StartingResources.Setup();
       StartingQuestPopup.Setup(63);
       RefundZeroLimitUnits.Setup();

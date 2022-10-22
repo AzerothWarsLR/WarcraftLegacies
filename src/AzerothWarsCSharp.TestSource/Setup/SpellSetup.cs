@@ -3,7 +3,6 @@ using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.Spells;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.UnitEffects;
-using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.TestSource.Setup
@@ -73,6 +72,18 @@ namespace AzerothWarsCSharp.TestSource.Setup
         SpellSystem.Register(taxGuardTower);
         
         ParentChildResearchSystem.Register(FourCC("Rhde"), FourCC("Rhan"));
+        
+        var electricStrike = new ElectricStrike(FourCC("AHbz"))
+        {
+          StunId = FourCC("ANsb"),
+          PurgeId = FourCC("Aprg"),
+          PurgeOrder = "purge",
+          StunOrder = "thunderbolt",
+          Radius = 200.00F,
+          Effect = "Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl"
+        };
+        SpellSystem.Register(electricStrike);
+        
       }
       catch (Exception ex)
       {
