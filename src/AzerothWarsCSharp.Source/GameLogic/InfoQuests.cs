@@ -7,6 +7,9 @@ namespace AzerothWarsCSharp.Source.GameLogic
    /// </summary>
    public static class InfoQuests
    {
+     /// <summary>
+     /// Creates a series of dummy quests that provide information to players.
+     /// </summary>
       public static void Setup()
       {
          var commandQuest = CreateQuest();

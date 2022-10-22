@@ -13,14 +13,17 @@ namespace AzerothWarsCSharp.Source.GameLogic
     private static void VerifyUnitIntegrity(unit whichUnit)
     {
       var player = GetOwningPlayer(whichUnit);
-      if (player.GetObjectLimit(GetUnitTypeId(whichUnit)) == 0)
-      {
-        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, GetUnitGoldCost(GetUnitTypeId(whichUnit)));
-        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, GetUnitWoodCost(GetUnitTypeId(whichUnit)));
-        RemoveUnit(whichUnit);
-      }
+      if (player.GetObjectLimit(GetUnitTypeId(whichUnit)) != 0) 
+        return;
+      player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, GetUnitGoldCost(GetUnitTypeId(whichUnit)));
+      player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, GetUnitWoodCost(GetUnitTypeId(whichUnit)));
+      RemoveUnit(whichUnit);
     }
 
+    /// <summary>
+    /// Registers triggers that cause the following:
+    /// <para>Whenever a unit with a tech limit of 0 is trained or revived, delete and refund it instantly.</para>
+    /// </summary>
     public static void Setup()
     {
       PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining,

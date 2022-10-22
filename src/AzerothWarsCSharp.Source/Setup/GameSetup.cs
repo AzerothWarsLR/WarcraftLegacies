@@ -15,8 +15,14 @@ using AzerothWarsCSharp.Source.UnitTypes;
 
 namespace AzerothWarsCSharp.Source.Setup
 {
+  /// <summary>
+  /// Responsible for setting up the entire game.
+  /// </summary>
   public static class GameSetup
   {
+    /// <summary>
+    /// Initialize the entire game.
+    /// </summary>
     public static void Setup()
     {
       PreplacedUnitSystem.Initialize();
@@ -98,6 +104,12 @@ namespace AzerothWarsCSharp.Source.Setup
       NeutralVictimAndPassiveSetup.Setup();
       GateSetup.Setup();
       ResearchSetup.Setup();
+      StartingResources.Setup();
+      StartingQuestPopup.Setup(63);
+      RefundZeroLimitUnits.Setup();
+      HeroGlowFix.Setup();
+      CleanPersons.Setup();
+      PlayerLeaves.Setup();
     }
   }
 }

@@ -7,13 +7,6 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.GameLogic
 {
-  public enum CinematicState
-  {
-    Inactive,
-    Active,
-    Finished
-  }
-  
   /// <summary>
   /// Used to engage cinematic mode, which prevents players from taking actions and manipulates sound
   /// and weather effects for a cinematic experience.
@@ -103,7 +96,7 @@ namespace AzerothWarsCSharp.Source.GameLogic
         BlzChangeMinimapTerrainTex("war3mapImported\\OutlandMinimap.blp");
       }
 
-      ForsakenSetup.Forsaken.Player?.SetupCamera(Cameras.Forsaken1, true, 0);
+      ForsakenSetup.Forsaken?.Player?.SetupCamera(Cameras.Forsaken1, true, 0);
       //Todo: uncomment below
       //NzothSetup.Nzoth.Player.SetupCamera(Cameras.Nazsjatar1, true, 0); 
 

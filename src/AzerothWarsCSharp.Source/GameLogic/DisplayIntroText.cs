@@ -19,6 +19,10 @@ namespace AzerothWarsCSharp.Source.GameLogic
          DestroyTimer(GetExpiredTimer());
       }
 
+      /// <summary>
+      /// Displays intro text to all players after some period of time has elapsed.
+      /// </summary>
+      /// <param name="timeout">The time after which to display intro text, in seconds.</param>
       public static void Setup(float timeout)
       {
          var timer = CreateTimer();
