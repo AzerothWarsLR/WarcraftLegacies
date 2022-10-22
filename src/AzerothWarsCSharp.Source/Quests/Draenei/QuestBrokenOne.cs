@@ -1,6 +1,7 @@
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Draenei
 {

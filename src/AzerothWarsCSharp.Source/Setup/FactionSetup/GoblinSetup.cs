@@ -1,5 +1,6 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Powers;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {

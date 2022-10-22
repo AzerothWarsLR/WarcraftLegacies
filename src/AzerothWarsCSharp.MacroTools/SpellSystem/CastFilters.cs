@@ -1,4 +1,6 @@
-﻿namespace AzerothWarsCSharp.MacroTools.SpellSystem
+﻿using static War3Api.Common;
+
+namespace AzerothWarsCSharp.MacroTools.SpellSystem
 {
   public static class CastFilters
   {

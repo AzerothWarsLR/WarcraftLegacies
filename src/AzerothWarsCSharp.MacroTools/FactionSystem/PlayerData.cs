@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {

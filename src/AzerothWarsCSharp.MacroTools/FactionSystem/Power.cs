@@ -1,4 +1,5 @@
 ﻿using System;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {

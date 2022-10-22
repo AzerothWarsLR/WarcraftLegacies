@@ -4,6 +4,7 @@ using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using WCSharp.Buffs;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
 {

@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools.Libraries;
+using static War3Api.Common; 
 
 namespace AzerothWarsCSharp.MacroTools.Cheats
 {

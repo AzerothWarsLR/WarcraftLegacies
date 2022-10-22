@@ -1,6 +1,7 @@
 using AzerothWarsCSharp.MacroTools.Cheats;
 using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.Source.GameLogic;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Cheats
 {

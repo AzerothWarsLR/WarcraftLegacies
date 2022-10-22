@@ -3,6 +3,7 @@ using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.Source.Quests.Fel_Horde;
 using static AzerothWarsCSharp.Source.Setup.FactionSetup.FelHordeSetup;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {

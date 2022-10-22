@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.QuestSystem
 {

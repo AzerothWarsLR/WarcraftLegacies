@@ -1,4 +1,6 @@
-﻿namespace AzerothWarsCSharp.MacroTools
+﻿using static War3Api.Common;
+
+namespace AzerothWarsCSharp.MacroTools
 {
   /// <summary>
   /// Changes the size of the vanilla Quest menu to fit more text in it.

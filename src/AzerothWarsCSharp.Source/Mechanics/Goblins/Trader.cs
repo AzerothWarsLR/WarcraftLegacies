@@ -6,6 +6,7 @@ using AzerothWarsCSharp.MacroTools.Buffs;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Mechanics.Goblins
 {

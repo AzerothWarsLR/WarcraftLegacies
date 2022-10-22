@@ -1,4 +1,6 @@
-﻿namespace AzerothWarsCSharp.Source.GameLogic
+﻿using static War3Api.Common;
+
+namespace AzerothWarsCSharp.Source.GameLogic
 {
    /// <summary>
    /// Provides a set of dummy quests that provide information to players.

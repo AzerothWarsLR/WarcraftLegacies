@@ -1,6 +1,7 @@
 ﻿using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Buffs;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Buffs
 {

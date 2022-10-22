@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Augments
 {

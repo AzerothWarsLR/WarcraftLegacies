@@ -1,4 +1,6 @@
-﻿namespace AzerothWarsCSharp.MacroTools
+﻿using static War3Api.Common;
+
+namespace AzerothWarsCSharp.MacroTools
 {
   public static class SoundLibrary
   {

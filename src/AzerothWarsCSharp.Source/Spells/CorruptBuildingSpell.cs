@@ -2,6 +2,7 @@
 using AzerothWarsCSharp.Source.Buffs;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Spells
 {

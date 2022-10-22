@@ -5,6 +5,7 @@ using AzerothWarsCSharp.Source.Setup;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;
 
 
 namespace AzerothWarsCSharp.Source.Quests.Lordaeron

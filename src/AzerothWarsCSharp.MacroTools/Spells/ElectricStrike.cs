@@ -1,5 +1,6 @@
 using System;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
+using static War3Api.Common;
 using WCSharp.Effects;
 using WCSharp.Shared.Data;
 

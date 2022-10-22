@@ -2,6 +2,7 @@
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Buffs;
 using WCSharp.Events;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer
 {

@@ -3,6 +3,7 @@ using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.GameLogic
 {

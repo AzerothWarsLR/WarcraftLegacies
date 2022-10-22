@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using AzerothWarsCSharp.MacroTools.ArtifactSystem;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
 {

@@ -4,6 +4,7 @@ using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Buffs;
 using WCSharp.Events;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
 {

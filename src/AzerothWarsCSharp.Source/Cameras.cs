@@ -1,3 +1,5 @@
+using static War3Api.Common;
+
 public static class Cameras
 {
 	public static readonly camerasetup Dalaran_1 = CreateCameraSetup();

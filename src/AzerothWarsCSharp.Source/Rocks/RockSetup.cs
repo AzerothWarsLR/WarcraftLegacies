@@ -1,4 +1,6 @@
-﻿namespace AzerothWarsCSharp.Source.Rocks
+﻿using static War3Api.Common;
+
+namespace AzerothWarsCSharp.Source.Rocks
 {
   /// <summary>
   /// Sets up all <see cref="RockGroup"/>s in the <see cref="RockSystem"/>.

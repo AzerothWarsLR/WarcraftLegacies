@@ -3,6 +3,7 @@ using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.Source.Quests.Draenei;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {

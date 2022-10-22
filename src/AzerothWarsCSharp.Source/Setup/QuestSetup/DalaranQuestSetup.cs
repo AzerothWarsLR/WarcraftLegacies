@@ -2,6 +2,7 @@ using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Quests.Dalaran;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 {

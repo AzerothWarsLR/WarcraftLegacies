@@ -1,4 +1,5 @@
 ﻿using WCSharp.Events;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.ChannelSystem
 {

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Libraries;
+using static War3Api.Common;
 
 
 namespace AzerothWarsCSharp.MacroTools.ControlPointSystem

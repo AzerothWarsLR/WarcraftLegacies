@@ -7,6 +7,7 @@ using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Fel_Horde
 {

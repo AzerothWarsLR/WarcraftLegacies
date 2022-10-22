@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools.SpellSystem;
+using static War3Api.Common;
 using AzerothWarsCSharp.MacroTools.Libraries;
 using WCSharp.Shared.Data;
 

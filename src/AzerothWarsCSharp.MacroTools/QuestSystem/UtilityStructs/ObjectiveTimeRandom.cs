@@ -1,4 +1,6 @@
-﻿namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
+﻿using static War3Api.Common;
+
+namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
 {
   public sealed class ObjectiveTimeRandom : Objective
   {

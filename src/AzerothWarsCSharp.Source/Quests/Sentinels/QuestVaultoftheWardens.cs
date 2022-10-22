@@ -4,6 +4,7 @@ using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static AzerothWarsCSharp.MacroTools.Libraries.Display;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Sentinels
 {

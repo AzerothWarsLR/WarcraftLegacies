@@ -1,5 +1,6 @@
 ﻿using AzerothWarsCSharp.MacroTools.FactionSystem;
 using WCSharp.Buffs;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Mechanics.TwilightHammer
 {

@@ -1,5 +1,6 @@
 using System;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using static War3Api.Common;
 using WCSharp.Events;
 using AzerothWarsCSharp.MacroTools.ArtifactSystem;
 

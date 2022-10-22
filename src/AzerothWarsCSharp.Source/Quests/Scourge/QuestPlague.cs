@@ -6,6 +6,7 @@ using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.Source.Mechanics.Scourge.Plague;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Quests.Scourge
 {
