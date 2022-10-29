@@ -39,7 +39,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
             -Faction.UNLIMITED);
          completingFaction.ModObjectLimit(Constants.UNIT_N075_VEREESA_WINDRUNNER_QUEL_THALAS_DEMI,
             -Faction.UNLIMITED);
-         completingFaction.ModObjectLimit(Constants.UNIT_N00A_FARSTRIDER_QUEL_THALAS,
+         completingFaction.ModObjectLimit(Constants.UNIT_N00A_FARSTRIDER_QUEL_THALAS_ELITE,
             -Faction.UNLIMITED);
          completingFaction.ModObjectLimit(Constants.UNIT_HHES_SWORDSMAN_QUEL_THALAS,
             -Faction.UNLIMITED);
@@ -60,8 +60,6 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
 
          UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit,
             Constants.ABILITY_A0IP_GO_TO_OUTLAND_AND_BUILD_TEMPEST_KEEP_KAEL_PATH);
-         SetPlayerTechResearched(completingFaction.Player,
-            Constants.UPGRADE_R076_KIL_JAEDEN_HAS_MADE_HIS_OFFER_TO_KAEL_QUELTHALAS, 1);
 
          foreach (var unit in new GroupWrapper().EnumUnitsInRect(Regions.TempestKeep).EmptyToList())
          {
@@ -72,6 +70,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
          //{
          //   unit.Rescue(completingFaction.Player);
          //}
+         //todo: finish the rescue part of this
 
          completingFaction.Player?.SetTeam(TeamSetup.Naga);
          UnitAddAbility(LegendQuelthalas.LegendKael.Unit,

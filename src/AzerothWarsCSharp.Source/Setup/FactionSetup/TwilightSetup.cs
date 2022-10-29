@@ -65,7 +65,7 @@ The Dragonmaw Gate is invulnerable, whoever controls Grim Batol controls the gat
       var cultistUnitTypeIds = new[]
       {
         Constants.UNIT_N087_PHASE_GRENADIER_TWILIGHT,
-        Constants.UNIT_O04B_CULTIST_TWILIGHT_HAMMER,
+        Constants.UNIT_O04B_CULTIST_TWILIGHT_HAMMER_WORKER,
         Constants.UNIT_O01H_TWILIGHT_HAMMER_ENFORCER_TWILIGHT,
       };
 

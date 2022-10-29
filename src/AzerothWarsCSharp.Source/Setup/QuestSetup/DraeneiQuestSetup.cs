@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 
       var questExiled = new QuestExiled
       {
-        GoldMine = PreplacedUnitSystem.GetUnit(FourCC("ngol"), Regions.Draenei_Invulnerable.Center),
+        GoldMine = PreplacedUnitSystem.GetUnit(FourCC("ngol"), Regions.TempestKeep.Center),
         KilledOnFail = new List<unit>
         {
           PreplacedUnitSystem.GetUnit(FourCC("o02P")),

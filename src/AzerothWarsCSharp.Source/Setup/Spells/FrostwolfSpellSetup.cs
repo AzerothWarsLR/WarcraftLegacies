@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Setup.Spells
       };
       SpellSystem.Register(devour);
       
-      var warStompCairne = new Stomp(Constants.ABILITY_A0WM_WAR_STOMP_PINK_CAIRNE_AZGALOR)
+      var warStompCairne = new Stomp(Constants.ABILITY_A0WM_WAR_STOMP_CAIRNE_MANNOROTH)
       {
         Radius = 300,
         DamageBase = 20,
