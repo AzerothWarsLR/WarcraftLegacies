@@ -269,7 +269,7 @@ namespace AzerothWarsCSharp.Source.Setup
         PurgeId = Constants.ABILITY_APRG_PURGE_ELECTRIKE_STRIKE,
         PurgeOrder = "purge",
         StunOrder = "firebolt",
-        Radius = 200f,
+        Radius = 500f,
         Effect = "Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl"
       };
       SpellSystem.Register(electricStrike);
