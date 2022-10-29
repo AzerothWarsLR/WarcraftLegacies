@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using AzerothWarsCSharp.MacroTools.Instances;
 using WCSharp.Shared.Data;
 
 namespace AzerothWarsCSharp.MacroTools.ShoreSystem
@@ -9,47 +7,28 @@ namespace AzerothWarsCSharp.MacroTools.ShoreSystem
   /// </summary>
   public sealed class Shore
   {
-    private static readonly List<Shore> ShoresByIndex = new();
-
-    private static int Count => ShoresByIndex.Count;
-
+    /// <summary>
+    /// Where the <see cref="Shore"/> is on the map.
+    /// </summary>
     public Point Position { get; }
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="Shore"/> class.
+    /// </summary>
+    /// <param name="x">The x position of the <see cref="Shore"/>.</param>
+    /// <param name="y">The y position of the <see cref="Shore"/>.</param>
     public Shore(float x, float y)
     {
       Position = new Point(x, y);
-      ShoresByIndex.Add(this);
     }
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="Shore"/> class.
+    /// </summary>
+    /// <param name="position">The position of the <see cref="Shore"/>.</param>
     public Shore(Point position)
     {
       Position = position;
-      ShoresByIndex.Add(this);
-    }
-
-    public static Shore? GetNearestShore(Point position)
-    {
-      var i = 0;
-      Shore? nearestShore = null;
-      float nearestDistance = 1000000;
-      while (true)
-      {
-        if (i == Count)
-        {
-          break;
-        }
-
-        var tempDistance = InstanceSystem.GetDistanceBetweenPointsEx(position, ShoresByIndex[i].Position);
-        if (tempDistance < nearestDistance)
-        {
-          nearestDistance = tempDistance;
-          nearestShore = ShoresByIndex[i];
-        }
-
-        i += 1;
-      }
-
-      return nearestShore;
     }
   }
 }
