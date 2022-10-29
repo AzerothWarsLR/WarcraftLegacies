@@ -7,12 +7,6 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
     public const int MAX_PLAYERS = 28;
     private static unit _posUnit;
 
-    //Player(21) is used as a hostile computer player in this map. Use this to check if a player is neutral hostile or this pseudo-player.
-    public static bool IsPlayerNeutralHostile(player whichPlayer)
-    {
-      return whichPlayer == Player(21) || whichPlayer == Player(PLAYER_NEUTRAL_AGGRESSIVE);
-    }
-
     public static float GetPositionZ(float x, float y)
     {
       SetUnitX(_posUnit, x);
