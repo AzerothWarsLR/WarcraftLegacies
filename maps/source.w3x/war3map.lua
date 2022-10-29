@@ -1,3 +1,224 @@
+gg_cam_Naga1 = nil
+gg_cam_Naga2 = nil
+gg_cam_Naga3 = nil
+gg_cam_Naga4 = nil
+gg_cam_Naga5 = nil
+gg_cam_Naga6 = nil
+gg_cam_Naga7 = nil
+gg_cam_Naga8 = nil
+gg_cam_IllidanExit1 = nil
+gg_cam_IllidanExit2 = nil
+gg_cam_IllidanExit3 = nil
+gg_cam_IllidanDalaran1 = nil
+gg_cam_IllidanDalaran2 = nil
+gg_cam_IllidanAetheneum1 = nil
+gg_cam_IllidanAetheneum2 = nil
+gg_cam_IllidanDalaran3 = nil
+gg_cam_IllidanDalaran4 = nil
+gg_cam_IllidanDala5 = nil
+gg_cam_IllidanDala6 = nil
+gg_cam_IllidanDala7 = nil
+gg_cam_IllidanDala8 = nil
+gg_cam_IllidanDala9 = nil
+gg_cam_IllidanNazjatar1 = nil
+gg_cam_IllidanNazjatar2 = nil
+gg_cam_IllidanDalaExit1 = nil
+gg_cam_IllidanDalaExit2 = nil
+gg_cam_IllidanNaga3 = nil
+gg_cam_IllidanNaga1 = nil
+gg_cam_IllidanNaga2 = nil
+gg_cam_IllidanNaga4 = nil
+gg_cam_Forsaken1 = nil
+gg_cam_Nazsjatar1 = nil
+gg_cam_Scholo_Inner = nil
+gg_snd_ArcaneObservatoryWhat1 = nil
+gg_snd_ArrangedTeamInvitation = nil
+gg_snd_ClanInvitation = nil
+gg_snd_D03Shaman04 = nil
+gg_snd_D03Thrall01 = nil
+gg_snd_D04Thrall01 = nil
+gg_snd_D04Thrall03 = nil
+gg_snd_D04Troll02 = nil
+gg_snd_D04Troll04 = nil
+gg_snd_D05SeaWitch01 = nil
+gg_snd_D05Thrall02 = nil
+gg_snd_D13Jaina03 = nil
+gg_snd_FootmanWhat4 = nil
+gg_snd_GameFound = nil
+gg_snd_GameFound01 = nil
+gg_snd_GromWarcry1 = nil
+gg_snd_H01Arthas02 = nil
+gg_snd_H01Arthas06 = nil
+gg_snd_H01Arthas08 = nil
+gg_snd_H01Grunt21 = nil
+gg_snd_H01Uther01 = nil
+gg_snd_H01Uther03 = nil
+gg_snd_H01Uther07 = nil
+gg_snd_H02Antonidas35 = nil
+gg_snd_H02Arthas07 = nil
+gg_snd_H02Arthas09 = nil
+gg_snd_H02DwarfScout16 = nil
+gg_snd_H02Jaina34 = nil
+gg_snd_H02Jaina36 = nil
+gg_snd_H02Uther02 = nil
+gg_snd_H02Uther06 = nil
+gg_snd_H02Uther10 = nil
+gg_snd_H03Jaina09 = nil
+gg_snd_H07Muradin15 = nil
+gg_snd_H09Muradin06 = nil
+gg_snd_HeroDreadlordWhat1 = nil
+gg_snd_HeroDreadlordYes1 = nil
+gg_snd_HuntressMissileLaunch = nil
+gg_snd_L01Detheroc01 = nil
+gg_snd_L06Rifleman21 = nil
+gg_snd_L07AAxeman19 = nil
+gg_snd_MetalHeavySliceFlesh1 = nil
+gg_snd_MetalHeavySliceFlesh2 = nil
+gg_snd_MetalHeavySliceFlesh3 = nil
+gg_snd_MuradinWhat1 = nil
+gg_snd_MuradinWhat4 = nil
+gg_snd_MuradinYesAttack1 = nil
+gg_snd_N07Archimonde28 = nil
+gg_snd_NewTournament = nil
+gg_snd_O01Grunt01 = nil
+gg_snd_O01Grunt03 = nil
+gg_snd_O01Grunt05 = nil
+gg_snd_O04Grom01 = nil
+gg_snd_O04Grom03 = nil
+gg_snd_O04Grom07 = nil
+gg_snd_O04WarsongOrc02 = nil
+gg_snd_O05Grom38 = nil
+gg_snd_PriestYes3 = nil
+gg_snd_QuestFailed = nil
+gg_snd_QuestNew = nil
+gg_snd_RiflemanWhat1 = nil
+gg_snd_RiflemanWhat4 = nil
+gg_snd_SecretFound = nil
+gg_snd_T02Grunt004 = nil
+gg_snd_TichondriusWhat1 = nil
+gg_snd_U02DreadlordA32 = nil
+gg_snd_U02DreadlordA35 = nil
+gg_snd_U02DreadlordA37 = nil
+gg_snd_U02Tichondrius36 = nil
+gg_snd_U03BSylvanas18 = nil
+gg_snd_U06Archimonde26 = nil
+gg_snd_U08Archimonde19 = nil
+gg_snd_War2IntroMusic = ""
+gg_snd_Warning = nil
+gg_snd_N01Shandris01 = nil
+gg_snd_N01Tyrande02 = nil
+gg_snd_S01Maiev04 = nil
+gg_snd_S01Maiev07 = nil
+gg_snd_S01WatcherOne05 = nil
+gg_snd_S01WatcherOne20 = nil
+gg_snd_S01Maiev21 = nil
+gg_snd_S04Tyrande31 = nil
+gg_snd_S05Maiev24 = nil
+gg_snd_O04Huntress09 = nil
+gg_snd_N04Furion32 = nil
+gg_snd_O05Cenarius01 = nil
+gg_snd_S05Furion07 = nil
+gg_snd_O05Cenarius03 = nil
+gg_snd_O05Cenarius07 = nil
+gg_snd_O05Cenarius27 = nil
+gg_snd_O05Cenarius28 = nil
+gg_snd_N04Tyrande10 = nil
+gg_snd_N05Tyrande18 = nil
+gg_snd_N03Tyrande01X = nil
+gg_snd_U05ATichondrius01 = nil
+gg_snd_U05AArthas02 = nil
+gg_snd_U05ATichondrius03 = nil
+gg_snd_U05AArthas06 = nil
+gg_snd_U05BKelThuzad35 = nil
+gg_snd_U06KelThuzad02XX3 = nil
+gg_snd_U05BKelThuzad39XX = nil
+gg_snd_U05AKelThuzad07XX = nil
+gg_snd_U06KelThuzad04X = nil
+gg_snd_KelThuzadYes4 = nil
+gg_snd_H02Warlock22 = nil
+gg_snd_H02Footman23 = nil
+gg_snd_D06AFootman06 = nil
+gg_snd_H02Arthas26X = nil
+gg_snd_VarianWrynnDialogue01 = nil
+gg_snd_VarianWrynnDialogue02 = nil
+gg_snd_VarianWrynnDialogue03 = nil
+gg_snd_VarianWrynnDialogue04 = nil
+gg_snd_VarianWrynnDialogue05 = nil
+gg_snd_H02Blademaster11 = nil
+gg_snd_HeroBladeMasterWarcry1 = nil
+gg_snd_D03Grunt17 = nil
+gg_snd_O03Grom14 = nil
+gg_snd_GromYesAttack3 = nil
+gg_snd_A07OrcWarlock01 = nil
+gg_snd_A07Magtheridon02 = nil
+gg_snd_KnightYesAttack1 = nil
+gg_snd_O05WitchDoctor19 = nil
+gg_snd_D03WitchDoctor12 = nil
+gg_snd_U03ASylvanas12 = nil
+gg_snd_U03BPriest07XX = nil
+gg_snd_IceTrollWhat4 = nil
+gg_snd_U03BSylvanas14 = nil
+gg_snd_ForestTrollWarcry1 = nil
+gg_snd_U04ASylvanas03 = nil
+gg_snd_ForestTrollYesAttack2 = nil
+gg_snd_U04ASylvanas05 = nil
+gg_snd_ForestTrollWhat1 = nil
+gg_snd_DarkVictory = ""
+gg_snd_HeroicVictory = ""
+gg_snd_HumanVictory = ""
+gg_snd_NightElfVictory = ""
+gg_snd_OrcVictory = ""
+gg_snd_UndeadVictory = ""
+gg_snd_DaybreakRooster = nil
+gg_snd_ArthasTheme = ""
+gg_snd_HumanX1stormwind3 = ""
+gg_snd_NorthrendNight = nil
+gg_snd_DalaranRuinsNight = nil
+gg_snd_BlackCitadel_OutlandNight = nil
+gg_snd_BlackCitadel_OutlandDay = nil
+gg_snd_IceCrownNight = nil
+gg_snd_AshenvaleNight = nil
+gg_snd_LordaeronFallDay = nil
+gg_snd_AshenvaleDay = nil
+gg_snd_BarrensDay = nil
+gg_snd_DalaranRuinsDay = nil
+gg_snd_WetlandsNight = nil
+gg_snd_Wetlandsday = nil
+gg_snd_IceCrownDay = nil
+gg_snd_LordaeronSummerDay = nil
+gg_snd_CityScapeDay = nil
+gg_snd_LordaeronSummerNight = nil
+gg_snd_NorthrendDay = nil
+gg_snd_LordaeronWinterNight = nil
+gg_snd_LordaeronFallNight = nil
+gg_snd_LordaeronWinterDay = nil
+gg_snd_ThunderClapCaster = nil
+gg_snd_Illidancinematic3 = ""
+gg_snd_JainaWarcry1 = nil
+gg_snd_HPitLordWhat1 = nil
+gg_snd_IllidanYesAttack2 = nil
+gg_snd_SargerasLaugh = nil
+gg_snd_IllidanYes4 = nil
+gg_snd_QuestLog = nil
+gg_snd_N06Illidan17 = nil
+gg_snd_Cinematic5Illidan = nil
+gg_snd_Archamge1 = nil
+gg_snd_Archmage2 = nil
+gg_snd_IllidanWarcry1 = nil
+gg_snd_BattlenetDeath1 = nil
+gg_snd_Hint = nil
+gg_snd_N06Illidan1701 = nil
+gg_snd_S07Illidan29 = nil
+gg_snd_DemonHunterMorphedReady1 = nil
+gg_snd_GilneasTheme1 = ""
+gg_snd_Loading = nil
+gg_snd_FootmanYesAttack3 = nil
+gg_snd_WolfHowl = nil
+gg_snd_ZandalarTheme = ""
+gg_snd_DoorCloseRemix = nil
+gg_snd_DoorOpenRemix = nil
+gg_snd_NuclearLaunchDetected = nil
+gg_trg_Dummy = nil
 gg_rct_Solliden_Farmstead = nil
 gg_rct_Arathi_Ships = nil
 gg_rct_Auberdine_Ships = nil
@@ -74,7 +295,6 @@ gg_rct_Northern_Kali_Ships = nil
 gg_rct_Northrend_ships = nil
 gg_rct_OrgGate = nil
 gg_rct_Orgrimmar = nil
-gg_rct_Outland_Ships = nil
 gg_rct_Plague_1 = nil
 gg_rct_Plague_2 = nil
 gg_rct_Plague_3 = nil
@@ -139,10 +359,17 @@ gg_rct_Sunwell_region = nil
 gg_rct_RiseSpawn2 = nil
 gg_rct_AzjolNerub_South_Entrance = nil
 gg_rct_AzjolNerub_North_Exit = nil
+gg_rct_Auberdine_Ships_2_Copy = nil
+gg_rct_Auberdine_Ships_Copy = nil
 gg_rct_AzjolNerubNorth_entrance = nil
+gg_rct_Auberdine_Ships_2_Copy_2 = nil
+gg_rct_Auberdine_Ships_Copy_2 = nil
+gg_rct_Arathi_Ships_Copy = nil
 gg_rct_Alterac_Exca = nil
+gg_rct_Arathi_Ships_Copy_2 = nil
 gg_rct_Andorhal = nil
 gg_rct_Aerie_Peak = nil
+gg_rct_Arathi_Ships_Copy_3 = nil
 gg_rct_TempestKeep = nil
 gg_rct_Sunwell = nil
 gg_rct_InstanceBarrowDeeps = nil
@@ -151,7 +378,6 @@ gg_rct_InstanceScholomance = nil
 gg_rct_InstanceBlackrock = nil
 gg_rct_InstanceSargerasTomb = nil
 gg_rct_InstanceAzjolNerub = nil
-gg_rct_InstanceOutland = nil
 gg_rct_DalaranEntrance2 = nil
 gg_rct_InstanceDalaranDungeon1 = nil
 gg_rct_InstanceDalaranDungeon2 = nil
@@ -284,6 +510,7 @@ gg_rct_BridgeAmbient = nil
 gg_rct_ScholomanceAmbient3 = nil
 gg_rct_HinterlandAmbient1 = nil
 gg_rct_HinterlandAmbient2 = nil
+gg_rct_Aerie_Peak_Copy = nil
 gg_rct_TolbaradAmbient = nil
 gg_rct_BalorAmbient = nil
 gg_rct_StormwindAmbient2 = nil
@@ -506,227 +733,6 @@ gg_rct_Halaar = nil
 gg_rct_Tuurem = nil
 gg_rct_TempestKeepHide = nil
 gg_rct_TempestKeepHide2 = nil
-gg_cam_Naga1 = nil
-gg_cam_Naga2 = nil
-gg_cam_Naga3 = nil
-gg_cam_Naga4 = nil
-gg_cam_Naga5 = nil
-gg_cam_Naga6 = nil
-gg_cam_Naga7 = nil
-gg_cam_Naga8 = nil
-gg_cam_IllidanExit1 = nil
-gg_cam_IllidanExit2 = nil
-gg_cam_IllidanExit3 = nil
-gg_cam_IllidanDalaran1 = nil
-gg_cam_IllidanDalaran2 = nil
-gg_cam_IllidanAetheneum1 = nil
-gg_cam_IllidanAetheneum2 = nil
-gg_cam_IllidanDalaran3 = nil
-gg_cam_IllidanDalaran4 = nil
-gg_cam_IllidanDala5 = nil
-gg_cam_IllidanDala6 = nil
-gg_cam_IllidanDala7 = nil
-gg_cam_IllidanDala8 = nil
-gg_cam_IllidanDala9 = nil
-gg_cam_IllidanNazjatar1 = nil
-gg_cam_IllidanNazjatar2 = nil
-gg_cam_IllidanDalaExit1 = nil
-gg_cam_IllidanDalaExit2 = nil
-gg_cam_IllidanNaga3 = nil
-gg_cam_IllidanNaga1 = nil
-gg_cam_IllidanNaga2 = nil
-gg_cam_IllidanNaga4 = nil
-gg_cam_Forsaken1 = nil
-gg_cam_Nazsjatar1 = nil
-gg_cam_Scholo_Inner = nil
-gg_snd_ArcaneObservatoryWhat1 = nil
-gg_snd_ArrangedTeamInvitation = nil
-gg_snd_ClanInvitation = nil
-gg_snd_D03Shaman04 = nil
-gg_snd_D03Thrall01 = nil
-gg_snd_D04Thrall01 = nil
-gg_snd_D04Thrall03 = nil
-gg_snd_D04Troll02 = nil
-gg_snd_D04Troll04 = nil
-gg_snd_D05SeaWitch01 = nil
-gg_snd_D05Thrall02 = nil
-gg_snd_D13Jaina03 = nil
-gg_snd_FootmanWhat4 = nil
-gg_snd_GameFound = nil
-gg_snd_GameFound01 = nil
-gg_snd_GromWarcry1 = nil
-gg_snd_H01Arthas02 = nil
-gg_snd_H01Arthas06 = nil
-gg_snd_H01Arthas08 = nil
-gg_snd_H01Grunt21 = nil
-gg_snd_H01Uther01 = nil
-gg_snd_H01Uther03 = nil
-gg_snd_H01Uther07 = nil
-gg_snd_H02Antonidas35 = nil
-gg_snd_H02Arthas07 = nil
-gg_snd_H02Arthas09 = nil
-gg_snd_H02DwarfScout16 = nil
-gg_snd_H02Jaina34 = nil
-gg_snd_H02Jaina36 = nil
-gg_snd_H02Uther02 = nil
-gg_snd_H02Uther06 = nil
-gg_snd_H02Uther10 = nil
-gg_snd_H03Jaina09 = nil
-gg_snd_H07Muradin15 = nil
-gg_snd_H09Muradin06 = nil
-gg_snd_HeroDreadlordWhat1 = nil
-gg_snd_HeroDreadlordYes1 = nil
-gg_snd_HuntressMissileLaunch = nil
-gg_snd_L01Detheroc01 = nil
-gg_snd_L06Rifleman21 = nil
-gg_snd_L07AAxeman19 = nil
-gg_snd_MetalHeavySliceFlesh1 = nil
-gg_snd_MetalHeavySliceFlesh2 = nil
-gg_snd_MetalHeavySliceFlesh3 = nil
-gg_snd_MuradinWhat1 = nil
-gg_snd_MuradinWhat4 = nil
-gg_snd_MuradinYesAttack1 = nil
-gg_snd_N07Archimonde28 = nil
-gg_snd_NewTournament = nil
-gg_snd_O01Grunt01 = nil
-gg_snd_O01Grunt03 = nil
-gg_snd_O01Grunt05 = nil
-gg_snd_O04Grom01 = nil
-gg_snd_O04Grom03 = nil
-gg_snd_O04Grom07 = nil
-gg_snd_O04WarsongOrc02 = nil
-gg_snd_O05Grom38 = nil
-gg_snd_PriestYes3 = nil
-gg_snd_QuestFailed = nil
-gg_snd_QuestNew = nil
-gg_snd_RiflemanWhat1 = nil
-gg_snd_RiflemanWhat4 = nil
-gg_snd_SecretFound = nil
-gg_snd_T02Grunt004 = nil
-gg_snd_TichondriusWhat1 = nil
-gg_snd_U02DreadlordA32 = nil
-gg_snd_U02DreadlordA35 = nil
-gg_snd_U02DreadlordA37 = nil
-gg_snd_U02Tichondrius36 = nil
-gg_snd_U03BSylvanas18 = nil
-gg_snd_U06Archimonde26 = nil
-gg_snd_U08Archimonde19 = nil
-gg_snd_War2IntroMusic = ""
-gg_snd_Warning = nil
-gg_snd_N01Shandris01 = nil
-gg_snd_N01Tyrande02 = nil
-gg_snd_S01Maiev04 = nil
-gg_snd_S01Maiev07 = nil
-gg_snd_S01WatcherOne05 = nil
-gg_snd_S01WatcherOne20 = nil
-gg_snd_S01Maiev21 = nil
-gg_snd_S04Tyrande31 = nil
-gg_snd_S05Maiev24 = nil
-gg_snd_O04Huntress09 = nil
-gg_snd_N04Furion32 = nil
-gg_snd_O05Cenarius01 = nil
-gg_snd_S05Furion07 = nil
-gg_snd_O05Cenarius03 = nil
-gg_snd_O05Cenarius07 = nil
-gg_snd_O05Cenarius27 = nil
-gg_snd_O05Cenarius28 = nil
-gg_snd_N04Tyrande10 = nil
-gg_snd_N05Tyrande18 = nil
-gg_snd_N03Tyrande01X = nil
-gg_snd_U05ATichondrius01 = nil
-gg_snd_U05AArthas02 = nil
-gg_snd_U05ATichondrius03 = nil
-gg_snd_U05AArthas06 = nil
-gg_snd_U05BKelThuzad35 = nil
-gg_snd_U06KelThuzad02XX3 = nil
-gg_snd_U05BKelThuzad39XX = nil
-gg_snd_U05AKelThuzad07XX = nil
-gg_snd_U06KelThuzad04X = nil
-gg_snd_KelThuzadYes4 = nil
-gg_snd_H02Warlock22 = nil
-gg_snd_H02Footman23 = nil
-gg_snd_D06AFootman06 = nil
-gg_snd_H02Arthas26X = nil
-gg_snd_VarianWrynnDialogue01 = nil
-gg_snd_VarianWrynnDialogue02 = nil
-gg_snd_VarianWrynnDialogue03 = nil
-gg_snd_VarianWrynnDialogue04 = nil
-gg_snd_VarianWrynnDialogue05 = nil
-gg_snd_H02Blademaster11 = nil
-gg_snd_HeroBladeMasterWarcry1 = nil
-gg_snd_D03Grunt17 = nil
-gg_snd_O03Grom14 = nil
-gg_snd_GromYesAttack3 = nil
-gg_snd_A07OrcWarlock01 = nil
-gg_snd_A07Magtheridon02 = nil
-gg_snd_KnightYesAttack1 = nil
-gg_snd_O05WitchDoctor19 = nil
-gg_snd_D03WitchDoctor12 = nil
-gg_snd_U03ASylvanas12 = nil
-gg_snd_U03BPriest07XX = nil
-gg_snd_IceTrollWhat4 = nil
-gg_snd_U03BSylvanas14 = nil
-gg_snd_ForestTrollWarcry1 = nil
-gg_snd_U04ASylvanas03 = nil
-gg_snd_ForestTrollYesAttack2 = nil
-gg_snd_U04ASylvanas05 = nil
-gg_snd_ForestTrollWhat1 = nil
-gg_snd_DarkVictory = ""
-gg_snd_HeroicVictory = ""
-gg_snd_HumanVictory = ""
-gg_snd_NightElfVictory = ""
-gg_snd_OrcVictory = ""
-gg_snd_UndeadVictory = ""
-gg_snd_DaybreakRooster = nil
-gg_snd_ArthasTheme = ""
-gg_snd_HumanX1stormwind3 = ""
-gg_snd_NorthrendNight = nil
-gg_snd_DalaranRuinsNight = nil
-gg_snd_BlackCitadel_OutlandNight = nil
-gg_snd_BlackCitadel_OutlandDay = nil
-gg_snd_IceCrownNight = nil
-gg_snd_AshenvaleNight = nil
-gg_snd_LordaeronFallDay = nil
-gg_snd_AshenvaleDay = nil
-gg_snd_BarrensDay = nil
-gg_snd_DalaranRuinsDay = nil
-gg_snd_WetlandsNight = nil
-gg_snd_Wetlandsday = nil
-gg_snd_IceCrownDay = nil
-gg_snd_LordaeronSummerDay = nil
-gg_snd_CityScapeDay = nil
-gg_snd_LordaeronSummerNight = nil
-gg_snd_NorthrendDay = nil
-gg_snd_LordaeronWinterNight = nil
-gg_snd_LordaeronFallNight = nil
-gg_snd_LordaeronWinterDay = nil
-gg_snd_ThunderClapCaster = nil
-gg_snd_Illidancinematic3 = ""
-gg_snd_JainaWarcry1 = nil
-gg_snd_HPitLordWhat1 = nil
-gg_snd_IllidanYesAttack2 = nil
-gg_snd_SargerasLaugh = nil
-gg_snd_IllidanYes4 = nil
-gg_snd_QuestLog = nil
-gg_snd_N06Illidan17 = nil
-gg_snd_Cinematic5Illidan = nil
-gg_snd_Archamge1 = nil
-gg_snd_Archmage2 = nil
-gg_snd_IllidanWarcry1 = nil
-gg_snd_BattlenetDeath1 = nil
-gg_snd_Hint = nil
-gg_snd_N06Illidan1701 = nil
-gg_snd_S07Illidan29 = nil
-gg_snd_DemonHunterMorphedReady1 = nil
-gg_snd_GilneasTheme1 = ""
-gg_snd_Loading = nil
-gg_snd_FootmanYesAttack3 = nil
-gg_snd_WolfHowl = nil
-gg_snd_ZandalarTheme = ""
-gg_snd_DoorCloseRemix = nil
-gg_snd_DoorOpenRemix = nil
-gg_snd_NuclearLaunchDetected = nil
-gg_trg_Dummy = nil
 function InitGlobals()
 end
 
@@ -4302,8 +4308,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("nfoh"), 10752.0, 5760.0, 0.000, FourCC("nfo
 u = BlzCreateUnitWithSkin(p, FourCC("n09C"), -5696.0, -7104.0, 270.000, FourCC("n09C"))
 u = BlzCreateUnitWithSkin(p, FourCC("n02Z"), -20928.0, 10112.0, 270.000, FourCC("n02Z"))
 u = BlzCreateUnitWithSkin(p, FourCC("n03A"), 9920.0, 5376.0, 270.000, FourCC("n03A"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_DalaranEntrance2), GetRectCenterY(gg_rct_DalaranEntrance2))
-WaygateActivate(u, true)
 u = BlzCreateUnitWithSkin(p, FourCC("n00F"), -7616.0, 20736.0, 270.000, FourCC("n00F"))
 u = BlzCreateUnitWithSkin(p, FourCC("n02J"), 6784.0, 14784.0, 270.000, FourCC("n02J"))
 u = BlzCreateUnitWithSkin(p, FourCC("n03U"), 5760.0, 18624.0, 270.000, FourCC("n03U"))
@@ -4334,8 +4338,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("n00S"), 1216.0, -26240.0, 270.000, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("h03V"), -18656.0, -18272.0, 270.000, FourCC("h03V"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("h03V"), -19360.0, -30496.0, 270.000, FourCC("h03V"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_Silithus_Bug_Exterior), GetRectCenterY(gg_rct_Silithus_Bug_Exterior))
-WaygateActivate(u, true)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("n01T"), -11840.0, -2176.0, 270.000, FourCC("n01T"))
 u = BlzCreateUnitWithSkin(p, FourCC("n02A"), -12928.0, -4800.0, 270.000, FourCC("n02A"))
@@ -4361,8 +4363,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("nfr2"), 5312.0, 18816.0, 90.970, FourCC("nf
 u = BlzCreateUnitWithSkin(p, FourCC("n02S"), 3456.0, 22976.0, 270.000, FourCC("n02S"))
 u = BlzCreateUnitWithSkin(p, FourCC("nfr1"), 4672.0, 18496.0, 87.282, FourCC("nfr1"))
 u = BlzCreateUnitWithSkin(p, FourCC("n032"), -10208.0, -25504.0, 270.000, FourCC("n032"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_Sargeras_Entrance), GetRectCenterY(gg_rct_Sargeras_Entrance))
-WaygateActivate(u, true)
 u = BlzCreateUnitWithSkin(p, FourCC("o016"), 2496.0, 19584.0, 270.000, FourCC("o016"))
 u = BlzCreateUnitWithSkin(p, FourCC("n036"), 4576.0, -24736.0, 270.000, FourCC("n036"))
 u = BlzCreateUnitWithSkin(p, FourCC("n07L"), 5376.0, -12416.0, 270.000, FourCC("n07L"))
@@ -4387,8 +4387,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("n00P"), 17664.0, -29184.0, 270.000, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("n0AF"), -9152.0, -7296.0, 270.000, FourCC("n0AF"))
 u = BlzCreateUnitWithSkin(p, FourCC("h026"), -256.0, -31616.0, 270.000, FourCC("h026"))
 u = BlzCreateUnitWithSkin(p, FourCC("h03V"), -16608.0, -27552.0, 270.000, FourCC("h03V"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_Silithus_Stone_Exterior), GetRectCenterY(gg_rct_Silithus_Stone_Exterior))
-WaygateActivate(u, true)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("h024"), 2752.0, 15744.0, 270.000, FourCC("h024"))
 u = BlzCreateUnitWithSkin(p, FourCC("n07Q"), 1088.0, -21952.0, 270.000, FourCC("n07Q"))
@@ -4396,8 +4394,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("o02V"), 288.0, -25504.0, 270.000, FourCC("o
 u = BlzCreateUnitWithSkin(p, FourCC("ncnt"), -20000.0, -4448.0, 270.000, FourCC("ncnt"))
 u = BlzCreateUnitWithSkin(p, FourCC("h006"), 13312.0, 3840.0, 270.000, FourCC("h006"))
 u = BlzCreateUnitWithSkin(p, FourCC("h03V"), -24800.0, 15392.0, 270.000, FourCC("h03V"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_Scarlet_Monastery_Exterior), GetRectCenterY(gg_rct_Scarlet_Monastery_Exterior))
-WaygateActivate(u, true)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("n02M"), 16960.0, -9216.0, 270.000, FourCC("n02M"))
 u = BlzCreateUnitWithSkin(p, FourCC("n012"), 13248.0, -11328.0, 270.000, FourCC("n012"))
@@ -4419,8 +4415,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("n01V"), 21952.0, 12096.0, 270.000, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("nfh1"), 22208.0, 12992.0, 270.000, FourCC("nfh1"))
 u = BlzCreateUnitWithSkin(p, FourCC("hbla"), 11680.0, -1760.0, 270.000, FourCC("hbla"))
 u = BlzCreateUnitWithSkin(p, FourCC("h03V"), -16096.0, -17312.0, 270.000, FourCC("h03V"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_Silithus_Bug_Interior), GetRectCenterY(gg_rct_Silithus_Bug_Interior))
-WaygateActivate(u, true)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("n01C"), 12928.0, 5440.0, 270.000, FourCC("n01C"))
 u = BlzCreateUnitWithSkin(p, FourCC("owtw"), -11264.0, -13888.0, 270.000, FourCC("owtw"))
@@ -4428,8 +4422,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("owtw"), -11136.0, -13184.0, 270.000, FourCC
 u = BlzCreateUnitWithSkin(p, FourCC("n09K"), 1664.0, -12928.0, 270.000, FourCC("n09K"))
 u = BlzCreateUnitWithSkin(p, FourCC("n01D"), 7552.0, 4160.0, 270.000, FourCC("n01D"))
 u = BlzCreateUnitWithSkin(p, FourCC("n03A"), 8640.0, 4800.0, 270.000, FourCC("n03A"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_Dalaran_Dungeons_Exit), GetRectCenterY(gg_rct_Dalaran_Dungeons_Exit))
-WaygateActivate(u, true)
 u = BlzCreateUnitWithSkin(p, FourCC("nhns"), -18944.0, -320.0, 270.000, FourCC("nhns"))
 u = BlzCreateUnitWithSkin(p, FourCC("nfh1"), 20480.0, 11328.0, 119.763, FourCC("nfh1"))
 SetUnitAcquireRange(u, 200.0)
@@ -4439,17 +4431,11 @@ u = BlzCreateUnitWithSkin(p, FourCC("o002"), 12864.0, -18560.0, 270.000, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("nfr1"), -10368.0, 11264.0, 270.000, FourCC("nfr1"))
 u = BlzCreateUnitWithSkin(p, FourCC("nct1"), -9440.0, -3040.0, 270.000, FourCC("nct1"))
 u = BlzCreateUnitWithSkin(p, FourCC("h03V"), -28448.0, 14944.0, 270.000, FourCC("h03V"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_Undercity_Escape), GetRectCenterY(gg_rct_Undercity_Escape))
-WaygateActivate(u, true)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("n0BJ"), -9216.0, 8192.0, 270.000, FourCC("n0BJ"))
 u = BlzCreateUnitWithSkin(p, FourCC("h03V"), -26528.0, 14432.0, 270.000, FourCC("h03V"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_Undercity_Exterior_1), GetRectCenterY(gg_rct_Undercity_Exterior_1))
-WaygateActivate(u, true)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("h03V"), -27936.0, 17632.0, 270.000, FourCC("h03V"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_Undercity_Exterior_2), GetRectCenterY(gg_rct_Undercity_Exterior_2))
-WaygateActivate(u, true)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nnzg"), -13472.0, -28832.0, 270.000, FourCC("nnzg"))
 u = BlzCreateUnitWithSkin(p, FourCC("o002"), 14336.0, -18816.0, 270.000, FourCC("o002"))
@@ -4505,8 +4491,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("n036"), 16544.0, -19168.0, 270.000, FourCC(
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("owtw"), 20992.0, 15232.0, 270.000, FourCC("owtw"))
 u = BlzCreateUnitWithSkin(p, FourCC("h03V"), -23968.0, 17248.0, 270.000, FourCC("h03V"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_ScarletExit), GetRectCenterY(gg_rct_ScarletExit))
-WaygateActivate(u, true)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("o02X"), 1472.0, -26688.0, 270.000, FourCC("o02X"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0BM"), -6464.0, 1984.0, 270.000, FourCC("n0BM"))
@@ -7368,8 +7352,6 @@ SetResourceAmount(u, 800)
 u = BlzCreateUnitWithSkin(p, FourCC("ngme"), 11456.0, 9728.0, 270.000, FourCC("ngme"))
 u = BlzCreateUnitWithSkin(p, FourCC("h01S"), 10624.0, -5760.0, 270.000, FourCC("h01S"))
 u = BlzCreateUnitWithSkin(p, FourCC("n033"), 20064.0, -29856.0, 270.000, FourCC("n033"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_BlackrockEntrance2), GetRectCenterY(gg_rct_BlackrockEntrance2))
-WaygateActivate(u, true)
 u = BlzCreateUnitWithSkin(p, FourCC("n002"), -11584.0, 7744.0, 236.080, FourCC("n002"))
 u = BlzCreateUnitWithSkin(p, FourCC("h00L"), -8832.0, -1344.0, 270.000, FourCC("h00L"))
 u = BlzCreateUnitWithSkin(p, FourCC("n02V"), -7424.0, -5376.0, 270.000, FourCC("n02V"))
@@ -7434,13 +7416,9 @@ u = BlzCreateUnitWithSkin(p, FourCC("n03E"), -8000.0, 960.0, 270.000, FourCC("n0
 u = BlzCreateUnitWithSkin(p, FourCC("h02N"), 6112.0, 3936.0, 270.000, FourCC("h02N"))
 u = BlzCreateUnitWithSkin(p, FourCC("h067"), 8768.0, 5120.0, 270.000, FourCC("h067"))
 u = BlzCreateUnitWithSkin(p, FourCC("n03H"), -11648.0, 22976.0, 270.000, FourCC("n03H"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_DalaranExit2), GetRectCenterY(gg_rct_DalaranExit2))
-WaygateActivate(u, true)
 u = BlzCreateUnitWithSkin(p, FourCC("o028"), -8960.0, 128.0, 270.000, FourCC("o028"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02D"), -7168.0, -5120.0, 270.000, FourCC("o02D"))
 u = BlzCreateUnitWithSkin(p, FourCC("n03S"), 14976.0, 320.0, 270.000, FourCC("n03S"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_East_Thandol), GetRectCenterY(gg_rct_East_Thandol))
-WaygateActivate(u, true)
 u = BlzCreateUnitWithSkin(p, FourCC("o020"), -7008.0, 608.0, 270.000, FourCC("o020"))
 u = BlzCreateUnitWithSkin(p, FourCC("h03V"), -26208.0, -1952.0, 270.000, FourCC("h03V"))
 SetUnitAcquireRange(u, 200.0)
@@ -7482,8 +7460,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("h05O"), 8709.1, 4423.5, 154.418, FourCC("h0
 u = BlzCreateUnitWithSkin(p, FourCC("o006"), -8960.0, -448.0, 270.000, FourCC("o006"))
 u = BlzCreateUnitWithSkin(p, FourCC("ncb9"), 15104.0, 1408.0, 180.904, FourCC("ncb9"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0BU"), -1888.0, -7072.0, 270.000, FourCC("n0BU"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_GadgetUnlock), GetRectCenterY(gg_rct_GadgetUnlock))
-WaygateActivate(u, true)
 u = BlzCreateUnitWithSkin(p, FourCC("nmrk"), 9472.0, 8576.0, 270.000, FourCC("nmrk"))
 u = BlzCreateUnitWithSkin(p, FourCC("h08R"), -22880.0, 17312.0, 270.000, FourCC("h08R"))
 u = BlzCreateUnitWithSkin(p, FourCC("h036"), 6432.0, 3616.0, 270.000, FourCC("h036"))
@@ -7758,8 +7734,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("u02L"), -3872.0, 24096.0, 270.000, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("h05E"), 17856.0, -17920.0, 125.000, FourCC("h05E"))
 SetUnitState(u, UNIT_STATE_MANA, 200)
 u = BlzCreateUnitWithSkin(p, FourCC("n03I"), -18144.0, 20896.0, 270.000, FourCC("n03I"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_Dire_Maul_Entrance), GetRectCenterY(gg_rct_Dire_Maul_Entrance))
-WaygateActivate(u, true)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("h06F"), 11808.0, -13728.0, 270.000, FourCC("h06F"))
 u = BlzCreateUnitWithSkin(p, FourCC("u014"), -3488.0, 23968.0, 270.000, FourCC("u014"))
@@ -7798,8 +7772,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("ovln"), -9632.0, -9760.0, 270.000, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("u01W"), -26048.0, 16384.0, 270.000, FourCC("u01W"))
 u = BlzCreateUnitWithSkin(p, FourCC("h03A"), 6784.0, -640.0, 270.000, FourCC("h03A"))
 u = BlzCreateUnitWithSkin(p, FourCC("n03H"), -14208.0, 20736.0, 270.000, FourCC("n03H"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_Dalaran_Dungeons_Entrance), GetRectCenterY(gg_rct_Dalaran_Dungeons_Entrance))
-WaygateActivate(u, true)
 u = BlzCreateUnitWithSkin(p, FourCC("h044"), -11680.0, 20832.0, 270.000, FourCC("h044"))
 u = BlzCreateUnitWithSkin(p, FourCC("h079"), -12992.0, 21696.0, 270.000, FourCC("h079"))
 u = BlzCreateUnitWithSkin(p, FourCC("hvlt"), -12544.0, 21056.0, 270.000, FourCC("hvlt"))
@@ -7839,8 +7811,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("ncb3"), 8960.0, -11840.0, 270.000, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("n03N"), 18560.0, 21248.0, 270.000, FourCC("n03N"))
 u = BlzCreateUnitWithSkin(p, FourCC("h03E"), 6912.0, 512.0, 270.000, FourCC("h03E"))
 u = BlzCreateUnitWithSkin(p, FourCC("n03S"), 21632.0, -8256.0, 270.000, FourCC("n03S"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_West_of_Kalimdor), GetRectCenterY(gg_rct_West_of_Kalimdor))
-WaygateActivate(u, true)
 u = BlzCreateUnitWithSkin(p, FourCC("n02Y"), -18432.0, 15168.0, 270.000, FourCC("n02Y"))
 u = BlzCreateUnitWithSkin(p, FourCC("h082"), -24640.0, 17024.0, 270.000, FourCC("h082"))
 u = BlzCreateUnitWithSkin(p, FourCC("owtw"), -11008.0, -8128.0, 270.000, FourCC("owtw"))
@@ -8059,8 +8029,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("h03P"), 8064.0, -6400.0, 270.000, FourCC("h
 u = BlzCreateUnitWithSkin(p, FourCC("nbt2"), -3136.0, -20736.0, 270.000, FourCC("nbt2"))
 u = BlzCreateUnitWithSkin(p, FourCC("h07Q"), 5408.0, -6880.0, 270.000, FourCC("h07Q"))
 u = BlzCreateUnitWithSkin(p, FourCC("n03Q"), 17216.0, 384.0, 270.000, FourCC("n03Q"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_West_Thandol), GetRectCenterY(gg_rct_West_Thandol))
-WaygateActivate(u, true)
 u = BlzCreateUnitWithSkin(p, FourCC("n08W"), -3584.0, -20416.0, 270.000, FourCC("n08W"))
 u = BlzCreateUnitWithSkin(p, FourCC("o040"), -10656.0, -13216.0, 270.000, FourCC("o040"))
 u = BlzCreateUnitWithSkin(p, FourCC("n06J"), -15328.0, 2336.0, 270.000, FourCC("n06J"))
@@ -8126,8 +8094,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("u00U"), 2496.0, -20096.0, 270.000, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("u00U"), 3136.0, -20864.0, 270.000, FourCC("u00U"))
 u = BlzCreateUnitWithSkin(p, FourCC("h0AH"), -1632.0, -28640.0, 270.000, FourCC("h0AH"))
 u = BlzCreateUnitWithSkin(p, FourCC("h03V"), 19232.0, -31776.0, 270.000, FourCC("h03V"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_BlackrockEntrance1), GetRectCenterY(gg_rct_BlackrockEntrance1))
-WaygateActivate(u, true)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("o069"), 21888.0, -4864.0, 270.000, FourCC("o069"))
 SetUnitColor(u, ConvertPlayerColor(20))
@@ -8283,8 +8249,6 @@ SetUnitState(u, UNIT_STATE_MANA, 500)
 u = BlzCreateUnitWithSkin(p, FourCC("n06M"), -16640.0, 23168.0, 193.701, FourCC("n06M"))
 SetUnitState(u, UNIT_STATE_MANA, 500)
 u = BlzCreateUnitWithSkin(p, FourCC("n03I"), -16992.0, -8480.0, 270.000, FourCC("n03I"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_Dire_Maul_Exit), GetRectCenterY(gg_rct_Dire_Maul_Exit))
-WaygateActivate(u, true)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("o048"), -2560.0, -15168.0, 270.000, FourCC("o048"))
 u = BlzCreateUnitWithSkin(p, FourCC("ovln"), -16032.0, -4192.0, 270.000, FourCC("ovln"))
@@ -8454,11 +8418,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("nnfm"), -24320.0, 21696.0, 270.000, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("n045"), 8576.0, -30784.0, 270.000, FourCC("n045"))
 u = BlzCreateUnitWithSkin(p, FourCC("h01D"), -668.7, 1193.4, 270.000, FourCC("h01D"))
 u = BlzCreateUnitWithSkin(p, FourCC("h01D"), -27808.0, 23584.0, 180.000, FourCC("h01D"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_AethneumLibraryEntrance), GetRectCenterY(gg_rct_AethneumLibraryEntrance))
-WaygateActivate(u, true)
 u = BlzCreateUnitWithSkin(p, FourCC("h01D"), -23840.0, 21024.0, 180.000, FourCC("h01D"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_AetheneumTombEntrance2), GetRectCenterY(gg_rct_AetheneumTombEntrance2))
-WaygateActivate(u, true)
 u = BlzCreateUnitWithSkin(p, FourCC("h01D"), 12231.1, -27480.6, 270.000, FourCC("h01D"))
 u = BlzCreateUnitWithSkin(p, FourCC("h01D"), -18004.9, 24158.5, 270.000, FourCC("h01D"))
 u = BlzCreateUnitWithSkin(p, FourCC("ngol"), -3008.0, -31680.0, 270.000, FourCC("ngol"))
@@ -8536,8 +8496,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("h07T"), 1856.0, -5312.0, 270.000, FourCC("h
 u = BlzCreateUnitWithSkin(p, FourCC("nnsg"), -26432.0, -26176.0, 270.000, FourCC("nnsg"))
 u = BlzCreateUnitWithSkin(p, FourCC("nntt"), -26432.0, -25408.0, 270.000, FourCC("nntt"))
 u = BlzCreateUnitWithSkin(p, FourCC("n03Q"), -20800.0, 4864.0, 270.000, FourCC("n03Q"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_East_of_Azeroth), GetRectCenterY(gg_rct_East_of_Azeroth))
-WaygateActivate(u, true)
 u = BlzCreateUnitWithSkin(p, FourCC("nntg"), -26496.0, -27008.0, 270.000, FourCC("nntg"))
 u = BlzCreateUnitWithSkin(p, FourCC("h0A4"), -26912.0, -25760.0, 270.000, FourCC("h0A4"))
 u = BlzCreateUnitWithSkin(p, FourCC("h06S"), -24864.0, -25632.0, 270.000, FourCC("h06S"))
@@ -8693,8 +8651,6 @@ SetUnitColor(u, ConvertPlayerColor(16))
 u = BlzCreateUnitWithSkin(p, FourCC("hpea"), -23167.2, 17192.1, 221.854, FourCC("hpea"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02M"), -6835.6, 219.1, 236.373, FourCC("o02M"))
 u = BlzCreateUnitWithSkin(p, FourCC("n038"), -3296.0, 17856.0, 270.000, FourCC("n038"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_AzjolNerubDragonblight_Exit), GetRectCenterY(gg_rct_AzjolNerubDragonblight_Exit))
-WaygateActivate(u, true)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("h0A8"), 18528.8, -29968.0, 271.438, FourCC("h0A8"))
 u = BlzCreateUnitWithSkin(p, FourCC("h0A8"), 18257.8, -29968.1, 266.996, FourCC("h0A8"))
@@ -8922,8 +8878,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("hkni"), 14142.1, 12511.5, 1.520, FourCC("hk
 u = BlzCreateUnitWithSkin(p, FourCC("hspt"), -11205.7, 22241.3, 215.491, FourCC("hspt"))
 u = BlzCreateUnitWithSkin(p, FourCC("hmpr"), -11185.0, 21946.5, 187.569, FourCC("hmpr"))
 u = BlzCreateUnitWithSkin(p, FourCC("n038"), -12768.0, -26720.0, 270.000, FourCC("n038"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_AzjolNerub_South_Entrance), GetRectCenterY(gg_rct_AzjolNerub_South_Entrance))
-WaygateActivate(u, true)
 u = BlzCreateUnitWithSkin(p, FourCC("u019"), -16479.8, -16457.1, 270.438, FourCC("u019"))
 SetUnitColor(u, ConvertPlayerColor(16))
 u = BlzCreateUnitWithSkin(p, FourCC("u019"), -16416.2, -16596.7, 138.905, FourCC("u019"))
@@ -9064,11 +9018,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("nvl2"), 14819.9, 12995.4, 268.156, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("nvil"), 15111.3, 12044.2, 347.398, FourCC("nvil"))
 u = BlzCreateUnitWithSkin(p, FourCC("nvl2"), 14050.0, 11795.8, 303.631, FourCC("nvl2"))
 u = BlzCreateUnitWithSkin(p, FourCC("n08R"), 16568.8, -2772.2, 315.280, FourCC("n08R"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_Grim_Batol_Tunnel_Top), GetRectCenterY(gg_rct_Grim_Batol_Tunnel_Top))
-WaygateActivate(u, true)
 u = BlzCreateUnitWithSkin(p, FourCC("n08R"), 16760.8, -2484.2, 116.560, FourCC("n08R"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_Grim_Batol_Tunnel_Entrance), GetRectCenterY(gg_rct_Grim_Batol_Tunnel_Entrance))
-WaygateActivate(u, true)
 u = BlzCreateUnitWithSkin(p, FourCC("nvlw"), 12365.8, 2024.0, 4.182, FourCC("nvlw"))
 u = BlzCreateUnitWithSkin(p, FourCC("nvl2"), 10435.9, 2512.6, 331.200, FourCC("nvl2"))
 u = BlzCreateUnitWithSkin(p, FourCC("nvlw"), 10514.6, 2572.3, 329.120, FourCC("nvlw"))
@@ -9155,11 +9105,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("o04C"), -24305.1, 17012.1, 300.324, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("nfro"), -14177.3, 6723.9, 295.219, FourCC("nfro"))
 u = BlzCreateUnitWithSkin(p, FourCC("edes"), -21032.5, -8227.3, 144.782, FourCC("edes"))
 u = BlzCreateUnitWithSkin(p, FourCC("n038"), -8608.0, -28896.0, 270.000, FourCC("n038"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_AzjolNerubNorth_entrance), GetRectCenterY(gg_rct_AzjolNerubNorth_entrance))
-WaygateActivate(u, true)
 u = BlzCreateUnitWithSkin(p, FourCC("n038"), -5534.6, 23981.1, 269.000, FourCC("n038"))
-WaygateSetDestination(u, GetRectCenterX(gg_rct_AzjolNerub_North_Exit), GetRectCenterY(gg_rct_AzjolNerub_North_Exit))
-WaygateActivate(u, true)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nmpe"), 11928.2, -30668.2, 170.055, FourCC("nmpe"))
 u = BlzCreateUnitWithSkin(p, FourCC("h08J"), -24658.6, 16633.9, 294.765, FourCC("h08J"))
@@ -9522,7 +9468,6 @@ gg_rct_Northern_Kali_Ships = Rect(-17344.0, -1376.0, -8704.0, 8800.0)
 gg_rct_Northrend_ships = Rect(-9216.0, 19680.0, 6048.0, 24992.0)
 gg_rct_OrgGate = Rect(-9056.0, -1408.0, -8576.0, -1248.0)
 gg_rct_Orgrimmar = Rect(-9824.0, -2080.0, -5824.0, 1248.0)
-gg_rct_Outland_Ships = Rect(-6432.0, -32224.0, 6688.0, -18176.0)
 gg_rct_Plague_1 = Rect(6368.0, 6848.0, 7840.0, 10816.0)
 gg_rct_Plague_2 = Rect(11392.0, 8736.0, 13952.0, 9888.0)
 gg_rct_Plague_3 = Rect(15968.0, 7744.0, 18656.0, 8960.0)
@@ -9589,17 +9534,17 @@ gg_rct_Sunwell_region = Rect(15456.0, 18816.0, 20768.0, 23168.0)
 gg_rct_RiseSpawn2 = Rect(12704.0, 17376.0, 14080.0, 18816.0)
 gg_rct_AzjolNerub_South_Entrance = Rect(-3456.0, 17696.0, -3136.0, 17856.0)
 gg_rct_AzjolNerub_North_Exit = Rect(-8832.0, -28992.0, -8352.0, -28864.0)
-gg_rct_Auberdine_Ships_2 = Rect(-16640.0, 7424.0, -9504.0, 11072.0)
-gg_rct_Auberdine_Ships = Rect(-18272.0, 2848.0, -15936.0, 5312.0)
+gg_rct_Auberdine_Ships_2_Copy = Rect(-16640.0, 7424.0, -9504.0, 11072.0)
+gg_rct_Auberdine_Ships_Copy = Rect(-18272.0, 2848.0, -15936.0, 5312.0)
 gg_rct_AzjolNerubNorth_entrance = Rect(-5760.0, 23808.0, -5312.0, 24000.0)
-gg_rct_Auberdine_Ships_2 = Rect(-16640.0, 7424.0, -9504.0, 11072.0)
-gg_rct_Auberdine_Ships = Rect(-18272.0, 2848.0, -15936.0, 5312.0)
-gg_rct_Arathi_Ships = Rect(16256.0, 768.0, 17024.0, 1632.0)
+gg_rct_Auberdine_Ships_2_Copy_2 = Rect(-16640.0, 7424.0, -9504.0, 11072.0)
+gg_rct_Auberdine_Ships_Copy_2 = Rect(-18272.0, 2848.0, -15936.0, 5312.0)
+gg_rct_Arathi_Ships_Copy = Rect(16256.0, 768.0, 17024.0, 1632.0)
 gg_rct_Alterac_Exca = Rect(11104.0, 5856.0, 11168.0, 5920.0)
-gg_rct_Arathi_Ships = Rect(16256.0, 768.0, 17024.0, 1632.0)
+gg_rct_Arathi_Ships_Copy_2 = Rect(16256.0, 768.0, 17024.0, 1632.0)
 gg_rct_Andorhal = Rect(11136.0, 7104.0, 13696.0, 8512.0)
 gg_rct_Aerie_Peak = Rect(13600.0, 4096.0, 14752.0, 5184.0)
-gg_rct_Arathi_Ships = Rect(16256.0, 768.0, 17024.0, 1632.0)
+gg_rct_Arathi_Ships_Copy_3 = Rect(16256.0, 768.0, 17024.0, 1632.0)
 gg_rct_TempestKeep = Rect(1408.0, -22432.0, 5024.0, -17952.0)
 gg_rct_Sunwell = Rect(18144.0, 21248.0, 18976.0, 22048.0)
 gg_rct_InstanceBarrowDeeps = Rect(15712.0, -32128.0, 15840.0, -31904.0)
@@ -9608,7 +9553,6 @@ gg_rct_InstanceScholomance = Rect(-21216.0, 17344.0, -19136.0, 19808.0)
 gg_rct_InstanceBlackrock = Rect(16416.0, -32032.0, 22592.0, -28544.0)
 gg_rct_InstanceSargerasTomb = Rect(-10752.0, -25760.0, -8032.0, -22816.0)
 gg_rct_InstanceAzjolNerub = Rect(-14496.0, -31200.0, -7872.0, -26560.0)
-gg_rct_InstanceOutland = Rect(-6432.0, -32224.0, 6688.0, -18176.0)
 gg_rct_DalaranEntrance2 = Rect(-11968.0, 22880.0, -11616.0, 23104.0)
 gg_rct_InstanceDalaranDungeon1 = Rect(-14016.0, 20224.0, -10944.0, 24096.0)
 gg_rct_InstanceDalaranDungeon2 = Rect(-14176.0, 20192.0, -13792.0, 22176.0)
@@ -9743,7 +9687,7 @@ gg_rct_BridgeAmbient = Rect(15232.0, -288.0, 17504.0, 736.0)
 gg_rct_ScholomanceAmbient3 = Rect(11200.0, 7072.0, 13728.0, 7840.0)
 gg_rct_HinterlandAmbient1 = Rect(13600.0, 3040.0, 19136.0, 5408.0)
 gg_rct_HinterlandAmbient2 = Rect(16256.0, 5408.0, 19072.0, 7040.0)
-gg_rct_Aerie_Peak = Rect(13600.0, 4096.0, 14752.0, 5184.0)
+gg_rct_Aerie_Peak_Copy = Rect(13600.0, 4096.0, 14752.0, 5184.0)
 gg_rct_TolbaradAmbient = Rect(10400.0, -2176.0, 12416.0, 544.0)
 gg_rct_BalorAmbient = Rect(3104.0, -14400.0, 6656.0, -10112.0)
 gg_rct_StormwindAmbient2 = Rect(6624.0, -10528.0, 8160.0, -8544.0)
