@@ -263,6 +263,17 @@ namespace AzerothWarsCSharp.Source.Setup
       SpellSystem.Register(new ProvidesIncome(Constants.UNIT_H09O_CRIMSON_CASTLE_SCARLET, 80));
       SpellSystem.Register(new ProvidesIncome(Constants.UNIT_H09Q_ROYAL_FORTRESS_SCARLET, 100));
 
+      var electricStrike = new ElectricStrike(Constants.ABILITY_A0RC_ELECTRIC_STRIKE_DARK_GREEN_WIZARD_S_SANCTUM)
+      {
+        StunId = Constants.ABILITY_A0RD_ELECTRIC_STRIKE_MINI_STUN_DARK_GREEN,
+        PurgeId = Constants.ABILITY_APRG_PURGE_ELECTRIKE_STRIKE,
+        PurgeOrder = "purge",
+        StunOrder = "firebolt",
+        Radius = 500f,
+        Effect = "Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl"
+      };
+      SpellSystem.Register(electricStrike);
+      
       FrostwolfSpellSetup.Setup();
       LegionSpellSetup.Setup();
       GoblinSpellSetup.Setup();
