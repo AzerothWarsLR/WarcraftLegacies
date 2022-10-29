@@ -11,22 +11,26 @@ namespace AzerothWarsCSharp.MacroTools
   {
     private static readonly List<UnitType> All = new();
     private static readonly Dictionary<int, UnitType> ById = new();
-    private readonly int _unitId;
+    
+    /// <summary>
+    /// The Warcraft 3 unit type ID for the <see cref="UnitType"/> wrapper.
+    /// </summary>
+    public int Id { get; }
 
-    public static IReadOnlyCollection<UnitType> GetAll()
-    {
-      return All.AsReadOnly();
-    }
+    /// <summary>
+    /// Returns all registered <see cref="UnitType"/>s.
+    /// </summary>
+    public static IEnumerable<UnitType> GetAll() => All.AsReadOnly();
 
     /// <summary>
     /// How much gold the UnitType costs to train or build.
     /// </summary>
-    public int GoldCost => GetUnitGoldCost(_unitId);
+    public int GoldCost => GetUnitGoldCost(Id);
 
     /// <summary>
     /// How much lumber the UnitType costs to train or build.
     /// </summary>
-    public int LumberCost => GetUnitWoodCost(_unitId);
+    public int LumberCost => GetUnitWoodCost(Id);
 
     /// <summary>
     /// Whether or not the unit should be deleted without refund when the player leaves.
@@ -41,10 +45,8 @@ namespace AzerothWarsCSharp.MacroTools
     /// <summary>
     /// Returns the UnitType representation of a unit on the map.
     /// </summary>
-    public static UnitType GetFromHandle(unit whichUnit)
-    {
-      return ById.TryGetValue(GetUnitTypeId(whichUnit), out var unitType) ? unitType : new UnitType(GetUnitTypeId(whichUnit));
-    }
+    public static UnitType GetFromHandle(unit whichUnit) => 
+      ById.TryGetValue(GetUnitTypeId(whichUnit), out var unitType) ? unitType : new UnitType(GetUnitTypeId(whichUnit));
 
     /// <summary>
     /// Returns the UnitType representation of a particular UnitTypeId.
@@ -54,15 +56,22 @@ namespace AzerothWarsCSharp.MacroTools
       return ById[id];
     }
 
+    /// <summary>
+    /// Registers a <see cref="UnitType"/> to the system.
+    /// </summary>
     public static void Register(UnitType unitType)
     {
-      ById[unitType._unitId] = unitType;
+      ById[unitType.Id] = unitType;
       All.Add(unitType);
     }
     
+    /// <summary>
+    /// Initializes a new instance of the <see cref="UnitType"/> class.
+    /// </summary>
+    /// <param name="unitId">The Warcraft 3 unit type ID you want to record extra information about.</param>
     public UnitType(int unitId)
     {
-      _unitId = unitId;
+      Id = unitId;
     }
   }
 }
