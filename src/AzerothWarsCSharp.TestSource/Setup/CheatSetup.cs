@@ -34,6 +34,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
       CheatAddRandomAugment.Setup();
       CheatAugment.Setup();
       CheatManager.Register(new CheatAddSpell());
+      CheatManager.Register(new CheatSetResearchLevel());
     }
   }
 }
