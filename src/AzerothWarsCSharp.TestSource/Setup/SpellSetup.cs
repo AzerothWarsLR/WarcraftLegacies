@@ -73,7 +73,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
         
         ParentChildResearchSystem.Register(FourCC("Rhde"), FourCC("Rhan"));
         
-        var electricStrike = new ElectricStrike(FourCC("AHbz"))
+        var electricStrike = new ElectricStrike(FourCC("A0RC"))
         {
           StunId = FourCC("A0RD"),
           PurgeId = FourCC("Aprg"),
