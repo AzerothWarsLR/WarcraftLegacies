@@ -29,18 +29,6 @@ namespace AzerothWarsCSharp.Source.Setup.Legends
       };
       Legend.Register(Saurfang);
 
-      Jergosh = new Legend
-      {
-        UnitType = Constants.UNIT_OTHS_INVOKER_OF_THE_SEARING_BLADE_WARSONG_BLOODPACT
-      };
-      Legend.Register(Jergosh);
-
-      Mannoroth = new Legend
-      {
-        UnitType = Constants.UNIT_NMAN_THE_DESTRUCTOR_WARSONG_BLOODPACT
-      };
-      Legend.Register(Mannoroth);
-
       StonemaulKeep = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_O004_STONEMAUL_KEEP),

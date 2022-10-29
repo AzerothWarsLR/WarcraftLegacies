@@ -32,10 +32,10 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       };
       plagueParameters.PlagueCauldronSummonParameters = new List<PlagueCauldronSummonParameter>
       {
-        new(1, Constants.UNIT_U01R_APOTHECARY_FORSAKEN),
-        new(2, Constants.UNIT_UACO_ACOLYTE_SCOURGE, ScourgeSetup.Scourge),
-        new(2, Constants.UNIT_U01K_ACOLYTE_FORSAKEN),
-        new(4, Constants.UNIT_N07S_DEADEYE_FORSAKEN),
+        new(1, Constants.UNIT_U01R_APOTHECARY_FORSAKEN_CULT),
+        new(2, Constants.UNIT_UACO_ACOLYTE_SCOURGE_WORKER, ScourgeSetup.Scourge),
+        new(2, Constants.UNIT_U01K_ACOLYTE_FORSAKEN_CULT_WORKER),
+        new(4, Constants.UNIT_N07S_DEADEYE_FORSAKEN_CULT),
         new(4, Constants.UNIT_H08O_ROTGUARD_FORSAKEN),
       };
       plagueParameters.PlagueCauldronUnitTypeId = Constants.UNIT_H02W_PLAGUE_CAULDRON;
@@ -43,7 +43,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
 
       QuestPlague questPlague = new(ForsakenSetup.Forsaken,
         PreplacedUnitSystem.GetUnit(Constants.UNIT_N0AG_LORD_BAROV),
-        new GroupWrapper().EnumUnitsOfType(Constants.UNIT_U01U_CULTIST_OF_THE_DAMNED_FORSAKEN).EmptyToList(),
+        new GroupWrapper().EnumUnitsOfType(Constants.UNIT_U01U_CULTIST_OF_THE_DAMNED_FORSAKEN_CULT).EmptyToList(),
         plagueParameters
       );
 
