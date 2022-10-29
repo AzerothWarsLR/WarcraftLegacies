@@ -27,11 +27,11 @@ namespace AzerothWarsCSharp.Source.GameLogic
             foreach (var banZone in banZones)
             {
               if (!banZone.Contains(GetUnitX(constructedStructure), GetUnitY(constructedStructure))) continue;
-              GetOwningPlayer(constructedStructure).AddGold(GetUnitGoldCost(GetUnitTypeId(constructedStructure)));
-              GetOwningPlayer(constructedStructure).AddLumber(GetUnitWoodCost(GetUnitTypeId(constructedStructure)));
+              GetOwningPlayer(constructedStructure).AddGold(unitType.GoldCost);
+              GetOwningPlayer(constructedStructure).AddLumber(unitType.LumberCost);
               KillUnit(constructedStructure);
             }
-          });
+          }, unitType.Id);
         }
       }
     }
