@@ -23,7 +23,7 @@ STRING 3
 }
 
 STRING 4
-// Units: n08H (Illidari Proving Grounds), EditorSuffix (Name - Editor Suffix)
+// Units: Naka (Elder Sage), EditorSuffix (Name - Editor Suffix)
 {
 (Illidari)
 }
@@ -7482,7 +7482,7 @@ Revive Rend
 }
 
 STRING 1273
-// Units: Naka (Elder Sage), EditorSuffix (Name - Editor Suffix)
+// Units: n08H (Illidari Proving Grounds), EditorSuffix (Name - Editor Suffix)
 {
 (Illidari)
 }
