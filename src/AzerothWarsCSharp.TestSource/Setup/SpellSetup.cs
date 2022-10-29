@@ -75,10 +75,10 @@ namespace AzerothWarsCSharp.TestSource.Setup
         
         var electricStrike = new ElectricStrike(FourCC("AHbz"))
         {
-          StunId = FourCC("ANsb"),
+          StunId = FourCC("A0RD"),
           PurgeId = FourCC("Aprg"),
           PurgeOrder = "purge",
-          StunOrder = "thunderbolt",
+          StunOrder = "firebolt",
           Radius = 200.00F,
           Effect = "Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl"
         };
