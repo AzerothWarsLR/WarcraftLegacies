@@ -1,5 +1,6 @@
 using System;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
+using AzerothWarsCSharp.MacroTools.Wrappers;
 using static War3Api.Common;
 using WCSharp.Effects;
 using WCSharp.Shared.Data;
@@ -41,8 +42,6 @@ namespace AzerothWarsCSharp.MacroTools.Spells
     /// </summary>
     public string Effect { get; init; } = string.Empty;
 
-    private readonly group _tempGroup = CreateGroup();
-
     /// <inheritdoc />
     public ElectricStrike(int id) : base(id)
     {
@@ -53,23 +52,13 @@ namespace AzerothWarsCSharp.MacroTools.Spells
     {
       try
       {
-        GroupEnumUnitsInRange(_tempGroup, targetPoint.X, targetPoint.Y, Radius, null);
         EffectSystem.Add(AddSpecialEffect(Effect, targetPoint.X, targetPoint.Y));
-        while (true)
+        foreach (var unit in new GroupWrapper().EnumUnitsInRange(targetPoint, Radius).EmptyToList())
         {
-          var u = FirstOfGroup(_tempGroup);
-          if (u == null)
-          {
-            return;
-          }  
-
-          if (IsUnitType(u, UNIT_TYPE_STRUCTURE) == false && UnitAlive(u))
-          {
-            DummyCast.DummyCastUnit(GetOwningPlayer(caster), StunId, StunOrder, 1, u);
-            DummyCast.DummyCastUnit(GetOwningPlayer(caster), PurgeId, PurgeOrder, 1, u);
-          }
-          
-          GroupRemoveUnit(_tempGroup, u);
+          if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) || !UnitAlive(unit)) 
+            continue;
+          DummyCast.DummyCastUnit(GetOwningPlayer(caster), StunId, StunOrder, 1, unit);
+          DummyCast.DummyCastUnit(GetOwningPlayer(caster), PurgeId, PurgeOrder, 1, unit);
         }
       }
       catch (Exception ex)
