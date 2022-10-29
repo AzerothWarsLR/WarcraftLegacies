@@ -73,12 +73,12 @@ namespace AzerothWarsCSharp.TestSource.Setup
         
         ParentChildResearchSystem.Register(FourCC("Rhde"), FourCC("Rhan"));
         
-        var electricStrike = new ElectricStrike(FourCC("A0RC"))
+        var electricStrike = new ElectricStrike(FourCC("AHbz"))
         {
-          StunId = FourCC("A0RD"),
+          StunId = FourCC("ANsb"),
           PurgeId = FourCC("Aprg"),
           PurgeOrder = "purge",
-          StunOrder = "firebolt",
+          StunOrder = "thunderbolt",
           Radius = 200.00F,
           Effect = "Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl"
         };
