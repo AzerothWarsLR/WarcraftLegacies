@@ -19,7 +19,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
     private readonly unit _waygateA;
     private readonly unit _waygateB;
 
-    public QuestUndercity(Rectangle rescueRect, unit waygateA, unit waygateB) : base("Forsaken Independance",
+    public QuestUndercity(Rectangle rescueRect, unit waygateA, unit waygateB) : base("Forsaken Independence",
       "The Forsaken had enough of living under the tyranny of the Lich King. Sylvanas has vowed to give them their freedom back and a home",
       "ReplaceableTextures\\CommandButtons\\BTNForsakenArrows.blp")
     {
@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       Global = true;
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))  
         {
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
@@ -42,12 +42,15 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
     }
 
     //Todo: bad flavour
+    /// <inheritdoc />
     protected override string CompletionPopup =>
       "Undercity is now under the Forsaken's control and they have declared independance.";
 
+    /// <inheritdoc />
     protected override string RewardDescription =>
       "Control of all units in Undercity, unlock Nathanos and unally the Legion team";
 
+    /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
@@ -60,6 +63,7 @@ namespace AzerothWarsCSharp.Source.Quests.Forsaken
       WaygateSetDestination(waygate, destination.X, destination.Y);
     }
 
+    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
