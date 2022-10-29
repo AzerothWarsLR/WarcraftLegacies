@@ -1,4 +1,5 @@
 ﻿using AzerothWarsCSharp.MacroTools.Cheats;
+using AzerothWarsCSharp.MacroTools.CheatSystem;
 
 namespace AzerothWarsCSharp.TestSource.Setup
 {
@@ -32,6 +33,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
       CheatCompleteQuest.Setup();
       CheatAddRandomAugment.Setup();
       CheatAugment.Setup();
+      CheatManager.Register(new CheatAddSpell());
     }
   }
 }
