@@ -37,7 +37,7 @@ namespace AzerothWarsCSharp.Source.Quests.Scarlet
       ScarletSetup.ScarletCrusade.ModObjectLimit(Constants.UNIT_H09I_HALBARDIER_ARGENT, Faction.UNLIMITED);
 
       ScarletSetup.ScarletCrusade.ModObjectLimit(Constants.UNIT_H08L_CAVALIER_SCARLET, -Faction.UNLIMITED);
-      ScarletSetup.ScarletCrusade.ModObjectLimit(Constants.UNIT_H0A3_LANCER_SCARLET, Faction.UNLIMITED);
+      ScarletSetup.ScarletCrusade.ModObjectLimit(Constants.UNIT_H0A3_LANCER_ARGENT, Faction.UNLIMITED);
 
       ScarletSetup.ScarletCrusade.ModObjectLimit(Constants.UNIT_H08J_ARBALEST_SCARLET, -Faction.UNLIMITED);
       ScarletSetup.ScarletCrusade.ModObjectLimit(Constants.UNIT_H09J_CROSSBOWMAN_SCARLET, Faction.UNLIMITED);
