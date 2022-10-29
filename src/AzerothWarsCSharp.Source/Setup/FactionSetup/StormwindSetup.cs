@@ -3,6 +3,9 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Setup.FactionSetup
 {
+  /// <summary>
+  /// Responsible for creating and containing the Stormwind <see cref="Faction"/>.
+  /// </summary>
   public static class StormwindSetup
   {
     public static Faction? Stormwind { get; private set; }
@@ -75,7 +78,7 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, they will be th
       Stormwind.ModObjectLimit(FourCC("Rhlh"), Faction.UNLIMITED); //Improved Lumber Harvesting
       Stormwind.ModObjectLimit(FourCC("Rhac"), Faction.UNLIMITED); //Improved Masonry
       Stormwind.ModObjectLimit(FourCC("Rhse"), Faction.UNLIMITED); //Magic Sentry
-      Stormwind.ModObjectLimit(FourCC("R014"), Faction.UNLIMITED); //Deeprun Tram
+      Stormwind.ModObjectLimit(Constants.UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 1);
 
       //Tier researches
       Stormwind.ModObjectLimit(FourCC("R02S"), Faction.UNLIMITED); //Cathedral of Light

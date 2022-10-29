@@ -10,6 +10,10 @@ using AzerothWarsCSharp.Source.Setup.Legends;
 
 namespace AzerothWarsCSharp.Source.Researches.Ironforge
 {
+  /// <summary>
+  /// When Deeprun Tram is researched, the two Deeprun Tram waygates at Ironforge and Stormwind Keep become active
+  /// and connected to eachother.
+  /// </summary>
   public static class DeeprunTram
   {
     private const int ResearchId = Constants.UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE;
@@ -38,6 +42,8 @@ namespace AzerothWarsCSharp.Source.Researches.Ironforge
 
         _tramToIronforge = null;
         _tramToStormwind = null;
+        StormwindSetup.Stormwind?.SetObjectLevel(ResearchId, 1);
+        IronforgeSetup.Ironforge?.SetObjectLevel(ResearchId, 1);
       }
       catch (Exception ex)
       {
@@ -61,6 +67,9 @@ namespace AzerothWarsCSharp.Source.Researches.Ironforge
       }
     }
 
+    /// <summary>
+    /// Registers the event that allows the Deeprun Tram research to take effect.
+    /// </summary>
     public static void Setup()
     {
       PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, Transfer, ResearchId);
