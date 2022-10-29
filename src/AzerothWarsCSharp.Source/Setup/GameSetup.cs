@@ -110,6 +110,8 @@ namespace AzerothWarsCSharp.Source.Setup
       HeroGlowFix.Setup();
       CleanPersons.Setup();
       PlayerLeaves.Setup();
+      FloatingTextSetup.Setup(60, 10);
+      AmbianceSetup.Setup();
     }
   }
 }
