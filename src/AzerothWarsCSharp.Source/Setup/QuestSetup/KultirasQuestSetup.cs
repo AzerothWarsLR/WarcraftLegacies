@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Setup.QuestSetup
       kultiras.AddQuest(new QuestUnlockShip(Regions.ShipAmbient,
         PreplacedUnitSystem.GetUnit(Constants.UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS)));
       kultiras.AddQuest(new QuestSafeSea());
-      kultiras.AddQuest(new QuestTheramore(Regions.Kultiras));
+      kultiras.AddQuest(new QuestTheramore(Regions.Theramore));
       kultiras.AddQuest(new QuestBeyondPortal());
       kultiras.AddQuest(new QuestJoinCrusade());
     }

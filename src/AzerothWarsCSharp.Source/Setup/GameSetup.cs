@@ -113,6 +113,7 @@ namespace AzerothWarsCSharp.Source.Setup
       PlayerLeaves.Setup();
       FloatingTextSetup.Setup(60, 10);
       AmbianceSetup.Setup();
+      NeutralHostileSetup.Setup();
     }
   }
 }
