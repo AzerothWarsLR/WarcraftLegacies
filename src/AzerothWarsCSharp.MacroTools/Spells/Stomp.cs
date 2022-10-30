@@ -76,11 +76,9 @@ namespace AzerothWarsCSharp.MacroTools.Spells
       tempGroup.EnumUnitsInRange(new Point(GetUnitX(caster), GetUnitY(caster)), Radius);
       foreach (var enumUnit in tempGroup.EmptyToList())
       {
-        if (CastFilters.IsTargetEnemyAndAlive(caster, enumUnit))
-        {
-          DamageUnit(caster, enumUnit);
-          StunUnit(caster, enumUnit);
-        }
+        if (!CastFilters.IsTargetEnemyAndAlive(caster, enumUnit)) continue;
+        DamageUnit(caster, enumUnit);
+        StunUnit(caster, enumUnit);
       }
       DestroyEffect(AddSpecialEffect(@"Abilities\\Spells\\Orc\\Warstomp\\WarStompCaster.mdl", GetUnitX(caster),
         GetUnitY(caster)));
