@@ -1,5 +1,6 @@
 ﻿using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
+using WCSharp.Effects;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -44,6 +45,11 @@ namespace AzerothWarsCSharp.MacroTools.Spells
     /// The order string for <see cref="StunAbilityId"/>.
     /// </summary>
     public string StunOrderString { get; init; } = "";
+
+    /// <summary>
+    /// The special effect to create at the caster's position.
+    /// </summary>
+    public string SpecialEffect { get; init; } = "";
     
     private void DamageUnit(unit caster, widget target)
     {
@@ -64,6 +70,8 @@ namespace AzerothWarsCSharp.MacroTools.Spells
     /// <inheritdoc />
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
+      EffectSystem.Add(AddSpecialEffect(SpecialEffect, GetUnitX(caster), GetUnitY(caster)));
+      
       var tempGroup = new GroupWrapper();
       tempGroup.EnumUnitsInRange(new Point(GetUnitX(caster), GetUnitY(caster)), Radius);
       foreach (var enumUnit in tempGroup.EmptyToList())
