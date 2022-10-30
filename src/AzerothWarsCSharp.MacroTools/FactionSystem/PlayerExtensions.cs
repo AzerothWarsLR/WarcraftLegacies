@@ -69,10 +69,14 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       SetPlayerState(player, playerState, GetPlayerState(player, playerState) + value);
     }
 
-    public static int GetObjectLimit(this player player, int objectId)
-    {
-      return PlayerData.ByHandle(player).GetObjectLimit(objectId);
-    }
+    /// <summary>
+    /// Returns the maximum number of units the player can build of the given type, or the maximum research level
+    /// the player can achieve for the given type.
+    /// </summary>
+    /// <param name="player">The player in question.</param>
+    /// <param name="objectId">The unit type ID or research ID we want to know about.</param>
+    public static int GetObjectLimit(this player player, int objectId) =>
+      PlayerData.ByHandle(player).GetObjectLimit(objectId);
 
     public static int GetControlPointCount(this player player)
     {

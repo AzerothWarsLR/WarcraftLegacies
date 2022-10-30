@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// <summary>
     ///   The gold cost value of a hero.
     /// </summary>
-    private const int HeroCost = 100; //For refunding
+    public const int HeroCost = 100;
 
     /// <summary>
     ///   How much gold and lumber is refunded from units that get refunded when a player leaves.

@@ -15,8 +15,17 @@ namespace AzerothWarsCSharp.Source.GameLogic
       var player = GetOwningPlayer(whichUnit);
       if (player.GetObjectLimit(GetUnitTypeId(whichUnit)) != 0) 
         return;
-      player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, GetUnitGoldCost(GetUnitTypeId(whichUnit)));
-      player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, GetUnitWoodCost(GetUnitTypeId(whichUnit)));
+
+      if (IsUnitType(whichUnit, UNIT_TYPE_HERO))
+      {
+        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, Faction.HeroCost);
+      }
+      else
+      {
+        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, GetUnitGoldCost(GetUnitTypeId(whichUnit)));
+        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, GetUnitWoodCost(GetUnitTypeId(whichUnit)));
+      }
+      
       RemoveUnit(whichUnit);
     }
 
