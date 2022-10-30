@@ -1,14 +1,14 @@
 ﻿using AzerothWarsCSharp.MacroTools.Buffs;
-using AzerothWarsCSharp.MacroTools.SpellSystem;
+using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.UnitEffects
+namespace AzerothWarsCSharp.MacroTools.PassiveAbilities
 {
   /// <summary>
   /// Any unit with this effect increases its owner's income.
   /// </summary>
-  public sealed class ProvidesIncome : UnitEffect
+  public sealed class ProvidesIncome : PassiveAbility
   {
     private readonly int _income;
 

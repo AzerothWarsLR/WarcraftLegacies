@@ -1,6 +1,7 @@
-﻿using AzerothWarsCSharp.MacroTools.Spells;
+﻿using AzerothWarsCSharp.MacroTools.PassiveAbilities;
+using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
+using AzerothWarsCSharp.MacroTools.Spells;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
-using AzerothWarsCSharp.MacroTools.UnitEffects;
 using AzerothWarsCSharp.Source.Setup.Spells;
 using AzerothWarsCSharp.Source.Spells;
 using static War3Api.Common;
@@ -163,7 +164,7 @@ namespace AzerothWarsCSharp.Source.Setup
       SpellSystem.Register(resurgentFlameStrike);
 
       var executeWarsong = new Execute(Constants.UNIT_O021_RAVAGER_WARSONG);
-      SpellSystem.Register(executeWarsong);
+      PassiveAbilityManager.Register(executeWarsong);
 
       var maievVengeance = new Vengeance(FourCC("Ewrd"), FourCC("A017"))
       {
@@ -176,7 +177,7 @@ namespace AzerothWarsCSharp.Source.Setup
         Duration = 20,
         ReviveEffect = "Heal Blue.mdx"
       };
-      SpellSystem.Register(maievVengeance);
+      PassiveAbilityManager.Register(maievVengeance);
 
       var burningVengeance = new Vengeance(FourCC("O04H"), FourCC("A0OO"))
       {
@@ -189,7 +190,7 @@ namespace AzerothWarsCSharp.Source.Setup
         Duration = 20,
         ReviveEffect = "Heal Blue.mdx"
       };
-      SpellSystem.Register(burningVengeance);
+      PassiveAbilityManager.Register(burningVengeance);
 
       var stormEarthandFire = new StormEarthandFire(Constants.ABILITY_A0HM_STORM_EARTH_AND_FIRE_WARSONG_CHEN_SUMMON)
       {
@@ -247,7 +248,7 @@ namespace AzerothWarsCSharp.Source.Setup
       var corruptBuilding = new CorruptBuildingSpell(Constants.ABILITY_A0N8_CORRUPT_FORSAKEN, 6, 500);
       SpellSystem.Register(corruptBuilding);
 
-      SpellSystem.Register(new RegionRestricted(Constants.UNIT_H097_GUARD_POST_SCARLET,
+      PassiveAbilityManager.Register(new RegionRestricted(Constants.UNIT_H097_GUARD_POST_SCARLET,
         new[]
         {
           Regions.HeartglenTaxe,
@@ -258,10 +259,10 @@ namespace AzerothWarsCSharp.Source.Setup
           Regions.CorinTaxe
         }));
 
-      SpellSystem.Register(new ProvidesIncome(Constants.UNIT_H09N_PALISADE_FORT_SCARLET, 15));
-      SpellSystem.Register(new ProvidesIncome(Constants.UNIT_H09P_SCARLET_KEEP_SCARLET, 60));
-      SpellSystem.Register(new ProvidesIncome(Constants.UNIT_H09O_CRIMSON_CASTLE_SCARLET, 80));
-      SpellSystem.Register(new ProvidesIncome(Constants.UNIT_H09Q_ROYAL_FORTRESS_SCARLET, 100));
+      PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_H09N_PALISADE_FORT_SCARLET, 15));
+      PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_H09P_SCARLET_KEEP_SCARLET, 60));
+      PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_H09O_CRIMSON_CASTLE_SCARLET, 80));
+      PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_H09Q_ROYAL_FORTRESS_SCARLET, 100));
 
       var electricStrike = new ElectricStrike(Constants.ABILITY_A0RC_ELECTRIC_STRIKE_DARK_GREEN_WIZARD_S_SANCTUM)
       {

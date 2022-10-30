@@ -1,9 +1,9 @@
-﻿using AzerothWarsCSharp.MacroTools.SpellSystem;
+﻿using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.UnitEffects
+namespace AzerothWarsCSharp.MacroTools.PassiveAbilities
 {
-  public sealed class Execute : UnitEffect
+  public sealed class Execute : PassiveAbility
   {
     private const string EFFECT = "Objects\\Spawnmodels\\Human\\HumanLargeDeathExplode\\HumanLargeDeathExplode.mdl";
     private const int DAMAGE_MULT = 5;

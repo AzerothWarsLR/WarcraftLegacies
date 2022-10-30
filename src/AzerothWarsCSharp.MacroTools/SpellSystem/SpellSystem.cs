@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -27,30 +28,6 @@ namespace AzerothWarsCSharp.MacroTools.SpellSystem
       if (!SpellsByAbilityId.ContainsKey(abilityId))
         throw new Exception($"There is no Spell with abilityId {abilityId}.");
       return SpellsByAbilityId[abilityId];
-    }
-    
-        /// <summary>
-    /// Registeres the provided passive ability to the <see cref="SpellSystem"/>, causing its functionality
-    /// to be invoked when specific Warcraft 3 events occur.
-    /// </summary>
-    public static void Register(TakeDamageEffect takeDamageEffect) => 
-          PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, takeDamageEffect.OnTakesDamage,
-            takeDamageEffect.DamagedUnitTypeId);
-
-        /// <summary>
-    /// Registeres the provided passive ability to the <see cref="SpellSystem"/>, causing its functionality
-    /// to be invoked when specific Warcraft 3 events occur.
-    /// </summary>
-    public static void Register(UnitEffect unitEffect)
-    {
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, unitEffect.OnDealsDamage, unitEffect.UnitTypeId);
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeIsCreated, unitEffect.OnCreated, unitEffect.UnitTypeId);
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesBeingTrained, unitEffect.OnTrained, unitEffect.UnitTypeId);
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, unitEffect.OnTrainedUnit, unitEffect.UnitTypeId);
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesBeingConstructed, unitEffect.OnConstruction,
-        unitEffect.UnitTypeId);
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesUpgrade, unitEffect.OnUpgrade, unitEffect.UnitTypeId);
-      PlayerUnitEvents.Register(PlayerUnitEvent.HeroTypeFinishesRevive, unitEffect.OnCreated, unitEffect.UnitTypeId);
     }
 
     /// <summary>

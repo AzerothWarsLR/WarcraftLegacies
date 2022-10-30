@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -9,7 +10,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Goblins
    /// <summary>
    /// When this unit is trained, it removes itself and creates an Oil Platform at one of the eligible oil locations instead.
    /// </summary>
-   public sealed class OilRigConstructor : UnitEffect
+   public sealed class OilRigConstructor : PassiveAbility
    {
       private readonly List<Point> _oilLocations;
       

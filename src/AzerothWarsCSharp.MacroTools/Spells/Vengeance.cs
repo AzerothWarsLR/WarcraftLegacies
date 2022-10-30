@@ -1,4 +1,5 @@
 ﻿using AzerothWarsCSharp.MacroTools.Buffs;
+using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using WCSharp.Buffs;
 
@@ -11,7 +12,7 @@ namespace AzerothWarsCSharp.MacroTools.Spells
   /// If they attack enough times while a Spirit, they revive with some health.
   /// Otherwise, they die.
   /// </summary>
-  public sealed class Vengeance : TakeDamageEffect
+  public sealed class Vengeance : TakeDamagePassiveAbility
   {
     public int BonusDamageBase { private get; init; }
     public int BonusDamageLevel { private get; init; }
