@@ -2,6 +2,7 @@
 using AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem;
 using AzerothWarsCSharp.MacroTools.Frames.Books.Powers;
 using AzerothWarsCSharp.MacroTools.Mechanics;
+using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
 using AzerothWarsCSharp.MacroTools.UserInterface;
 using static War3Api.Common;
 
@@ -40,7 +41,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
       PreplacedUnitSystem.Shutdown();
       DialogueSetup.Setup();
       AugmentSetup.Setup();
-      
+      PassiveAbilityManager.InitializePreplacedUnits();
       LegendSetup.Kael.AddProtector(hars);
     }
   }

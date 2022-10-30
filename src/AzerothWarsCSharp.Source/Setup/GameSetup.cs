@@ -2,6 +2,7 @@ using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem;
 using AzerothWarsCSharp.MacroTools.Frames.Books.Powers;
 using AzerothWarsCSharp.MacroTools.Mechanics;
+using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
 using AzerothWarsCSharp.MacroTools.UserInterface;
 using AzerothWarsCSharp.Source.ArtifactBehaviour;
 using AzerothWarsCSharp.Source.GameLogic;
@@ -113,6 +114,7 @@ namespace AzerothWarsCSharp.Source.Setup
       PlayerLeaves.Setup();
       FloatingTextSetup.Setup(60, 10);
       AmbianceSetup.Setup();
+      PassiveAbilityManager.InitializePreplacedUnits();
     }
   }
 }

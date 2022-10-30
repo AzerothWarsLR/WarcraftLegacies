@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Events;
 using static War3Api.Common;
@@ -11,7 +12,23 @@ namespace AzerothWarsCSharp.MacroTools.PassiveAbilitySystem
   /// </summary>
   public static class PassiveAbilityManager
   {
-    private static readonly Dictionary<int, PassiveAbility> PassiveAbilitiesByUnitTypeId = new();
+    private static readonly Dictionary<int, List<PassiveAbility>> PassiveAbilitiesByUnitTypeId = new();
+
+    /// <summary>
+    /// Iterates across all <see cref="unit"/>s on the map, and fires the <see cref="PassiveAbility.OnCreated"/>
+    /// for any <see cref="PassiveAbility"/>s it finds. This should be run at game start to ensure that preplaced units
+    /// are initialized correctly.
+    /// </summary>
+    public static void InitializePreplacedUnits()
+    {
+      using var group = new GroupWrapper().EnumUnitsInRect(GeneralHelpers.GetPlayableMapArea());
+      foreach (var unit in group.EmptyToList())
+      {
+        if (PassiveAbilitiesByUnitTypeId.TryGetValue(GetUnitTypeId(unit), out var passiveAbilities))
+          foreach (var passiveAbility in passiveAbilities)
+            passiveAbility.OnCreated(unit);
+      }
+    }
     
     /// <summary>
     /// Registeres the provided passive ability to the <see cref="SpellSystem"/>, causing its functionality
@@ -39,13 +56,13 @@ namespace AzerothWarsCSharp.MacroTools.PassiveAbilitySystem
           passiveAbility.UnitTypeId);
         PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesUpgrade, passiveAbility.OnUpgrade, passiveAbility.UnitTypeId);
         PlayerUnitEvents.Register(PlayerUnitEvent.HeroTypeFinishesRevive, UnitCreated, passiveAbility.UnitTypeId);
-        PassiveAbilitiesByUnitTypeId.Add(passiveAbility.UnitTypeId, passiveAbility);
 
-        using var group = new GroupWrapper().EnumUnitsOfType(passiveAbility.UnitTypeId);
-        foreach (var unit in group.EmptyToList())
+        if (!PassiveAbilitiesByUnitTypeId.ContainsKey(passiveAbility.UnitTypeId))
         {
-          passiveAbility.OnCreated(unit);
+          PassiveAbilitiesByUnitTypeId.Add(passiveAbility.UnitTypeId, new List<PassiveAbility>());
         }
+
+        PassiveAbilitiesByUnitTypeId[passiveAbility.UnitTypeId].Add(passiveAbility);
       }
       catch (Exception ex)
       {
@@ -56,7 +73,8 @@ namespace AzerothWarsCSharp.MacroTools.PassiveAbilitySystem
     private static void UnitCreated()
     {
       var triggerUnit = GetTriggerUnit();
-      PassiveAbilitiesByUnitTypeId[GetUnitTypeId(triggerUnit)].OnCreated(triggerUnit);
+      foreach (var passiveAbility in PassiveAbilitiesByUnitTypeId[GetUnitTypeId(triggerUnit)])
+        passiveAbility.OnCreated(triggerUnit);
     }
   }
 }
