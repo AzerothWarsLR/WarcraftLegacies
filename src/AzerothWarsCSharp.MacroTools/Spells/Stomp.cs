@@ -64,7 +64,7 @@ namespace AzerothWarsCSharp.MacroTools.Spells
       {
         return;
       }
-      DummyCast.CastOnUnit(caster, StunAbilityId, StunOrderString, duration, target);
+      DummyCast.DummyCastUnit(caster.OwningPlayer(), StunAbilityId, StunOrderString, duration, target);
     }
 
     /// <inheritdoc />
