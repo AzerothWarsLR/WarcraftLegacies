@@ -8,8 +8,14 @@ using AzerothWarsCSharp.Source.Setup.Legends;
 
 namespace AzerothWarsCSharp.Source.Dialogue
 {
+  /// <summary>
+  /// Responsible for setting up all dialogue related to the Druids.
+  /// </summary>
   public static class DruidsDialogueSetup
   {
+    /// <summary>
+    /// Sets up all dialogue related to the Druids.
+    /// </summary>
     public static void Setup()
     {
       try
