@@ -312,7 +312,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     /// <param name="owner">Which <see cref="player"/> should own the <see cref="unit"/> once it's spawned.</param>
     /// <param name="position">Where the <see cref="unit"/> should spawn.</param>
     /// <param name="facing">Which way the <see cref="unit"/> should face.</param>
-    public void Spawn(player owner, Point position, float facing)
+    public void ForceCreate(player owner, Point position, float facing)
     {
       if (Unit == null)
       {

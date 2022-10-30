@@ -52,7 +52,7 @@ namespace AzerothWarsCSharp.Source.Quests.KulTiras
     {
       LegendKultiras.LegendKatherine.StartingXp = GetHeroXP(LegendKultiras.LegendKatherine.Unit);
       completingFaction.Obliterate();
-      LegendKultiras.LegendKatherine.Spawn(completingFaction.Player, new Point(-15223, -22856), 110);
+      LegendKultiras.LegendKatherine.ForceCreate(completingFaction.Player, new Point(-15223, -22856), 110);
       UnitAddItem(LegendKultiras.LegendKatherine.Unit,
         CreateItem(FourCC("I00M"), GetUnitX(LegendKultiras.LegendKatherine.Unit),
           GetUnitY(LegendKultiras.LegendKatherine.Unit)));

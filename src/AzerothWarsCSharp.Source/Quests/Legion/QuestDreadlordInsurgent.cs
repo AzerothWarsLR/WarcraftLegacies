@@ -43,8 +43,8 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       LegendForsaken.Varimathras.StartingXp = GetHeroXP(LegendLegion.LEGEND_TICHONDRIUS.Unit);
       LegendLegion.LEGEND_LILIAN.StartingXp = GetHeroXP(LegendLegion.LEGEND_MALGANIS.Unit);
       completingFaction.Obliterate();
-      LegendLegion.LEGEND_LILIAN.Spawn(completingFaction.Player, new Point(7254, 7833), 110);
-      LegendForsaken.Varimathras.Spawn(completingFaction.Player, new Point(7254, 7833), 110);
+      LegendLegion.LEGEND_LILIAN.ForceCreate(completingFaction.Player, new Point(7254, 7833), 110);
+      LegendForsaken.Varimathras.ForceCreate(completingFaction.Player, new Point(7254, 7833), 110);
       CreateUnits(completingFaction.Player, FourCC("n04J"), Regions.Vandermar_Village.Center.X,
         Regions.Vandermar_Village.Center.Y, 270, 12);
       CreateUnits(completingFaction.Player, FourCC("u00D"), Regions.Vandermar_Village.Center.X,

@@ -36,7 +36,7 @@ namespace AzerothWarsCSharp.Source.Quests.Twilight
       PlayThematicMusic("war3mapImported\\TwilightTheme.mp3");
       SetPlayerTechResearched(CthunSetup.Cthun.Player, FourCC("R07D"), 1);
       IssueImmediateOrder(LegendNeutral.LegendGrimbatol.Unit, "unrobogoblin");
-      LegendTwilight.LEGEND_DEATHWING.Spawn(completingFaction.Player ?? Player(GetBJPlayerNeutralVictim()),
+      LegendTwilight.LEGEND_DEATHWING.ForceCreate(completingFaction.Player ?? Player(GetBJPlayerNeutralVictim()),
         Regions.TwilightOutside.Center, 0);
       GeneralHelpers.CameraSetEarthquakeNoise(30);
       if (completingFaction.Player != null)

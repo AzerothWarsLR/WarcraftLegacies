@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Druids
         cenarius.UnitType = LegendDruids.UnittypeCenariusGhost;
         cenarius.PermaDies = false;
         cenarius.ClearUnitDependencies();
-        cenarius.Spawn(DruidsSetup.Druids.Player, new Point(Regions.Cenarius.Center.X, Regions.Cenarius.Center.Y),
+        cenarius.ForceCreate(DruidsSetup.Druids.Player, new Point(Regions.Cenarius.Center.X, Regions.Cenarius.Center.Y),
           270);
       }
     }

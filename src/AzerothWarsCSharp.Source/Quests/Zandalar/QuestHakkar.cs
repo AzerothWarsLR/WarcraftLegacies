@@ -27,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Quests.Zandalar
 
     protected override void OnComplete(Faction completingFaction)
     {
-      LegendTroll.LEGEND_HAKKAR.Spawn(completingFaction.Player, Regions.DrownedTemple.Center, 270);
+      LegendTroll.LEGEND_HAKKAR.ForceCreate(completingFaction.Player, Regions.DrownedTemple.Center, 270);
       SetHeroLevel(LegendTroll.LEGEND_HAKKAR.Unit, 12, false);
     }
   }

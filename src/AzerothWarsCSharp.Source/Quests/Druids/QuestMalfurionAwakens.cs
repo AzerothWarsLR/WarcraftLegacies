@@ -45,7 +45,7 @@ namespace AzerothWarsCSharp.Source.Quests.Druids
       foreach (var unit in _moongladeUnits) unit.Rescue(completingFaction.Player);
       if (LegendDruids.LegendMalfurion.Unit == null)
       {
-        LegendDruids.LegendMalfurion.Spawn(completingFaction.Player, Regions.Moonglade.Center,
+        LegendDruids.LegendMalfurion.ForceCreate(completingFaction.Player, Regions.Moonglade.Center,
           270);
         SetHeroLevel(LegendDruids.LegendMalfurion.Unit, 3, false);
         LegendDruids.LegendMalfurion.Unit.AddItemSafe(ArtifactSetup.ArtifactGhanir.Item);

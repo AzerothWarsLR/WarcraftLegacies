@@ -46,8 +46,8 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
       LegendLordaeron.LegendGarithos.StartingXp = GetHeroXP(LegendLordaeron.LegendArthas.Unit);
       completingFaction.Obliterate();
-      LegendLordaeron.LegendGarithos.Spawn(completingFaction.Player, new Point(19410, 7975), 110);
-      LegendLordaeron.LegendGoodchild.Spawn(completingFaction.Player, new Point(19410, 7975), 110);
+      LegendLordaeron.LegendGarithos.ForceCreate(completingFaction.Player, new Point(19410, 7975), 110);
+      LegendLordaeron.LegendGoodchild.ForceCreate(completingFaction.Player, new Point(19410, 7975), 110);
       CreateUnits(completingFaction.Player, FourCC("hkni"), Regions.GarithosCrusadeSpawn.Center.X,
         Regions.GarithosCrusadeSpawn.Center.Y, 270, 12);
       CreateUnits(completingFaction.Player, FourCC("hpea"), Regions.GarithosCrusadeSpawn.Center.X,

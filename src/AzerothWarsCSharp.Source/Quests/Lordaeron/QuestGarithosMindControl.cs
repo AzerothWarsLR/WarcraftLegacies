@@ -43,8 +43,8 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
       LegendLordaeron.LegendGarithos.StartingXp = GetHeroXP(LegendLordaeron.LegendArthas.Unit);
       completingFaction.Obliterate();
-      LegendLordaeron.LegendGarithos.Spawn(completingFaction.Player, new Point(9090, 8743), 110);
-      LegendForsaken.Nathanos.Spawn(completingFaction.Player, new Point(9090, 8743), 110);
+      LegendLordaeron.LegendGarithos.ForceCreate(completingFaction.Player, new Point(9090, 8743), 110);
+      LegendForsaken.Nathanos.ForceCreate(completingFaction.Player, new Point(9090, 8743), 110);
       CreateUnits(completingFaction.Player, FourCC("hkni"), Regions.Terenas.Center.X, Regions.Terenas.Center.Y,
         270, 12);
       CreateUnits(completingFaction.Player, FourCC("hpea"), Regions.Terenas.Center.X, Regions.Terenas.Center.Y,

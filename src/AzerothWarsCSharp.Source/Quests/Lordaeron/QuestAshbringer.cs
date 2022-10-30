@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.Source.Quests.Lordaeron
 
     protected override void OnComplete(Faction completingFaction)
     {
-      LegendLordaeron.LegendMograine.Spawn(completingFaction.Player, Regions.AshbringerForge.Center, 270);
+      LegendLordaeron.LegendMograine.ForceCreate(completingFaction.Player, Regions.AshbringerForge.Center, 270);
       SetHeroLevel(LegendLordaeron.LegendMograine.Unit, 10, false);
       LegendLordaeron.LegendMograine.Unit.AddItemSafe(ArtifactSetup.ArtifactAshbringer.Item);
       SetItemPosition(ArtifactSetup.ArtifactLivingshadow.Item, DummyX, DummyY);

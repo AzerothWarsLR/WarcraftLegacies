@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Quests.Quelthalas
     {
       if (completingFaction.Player == null) return;
       UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit, Constants.ABILITY_A0R7_INSTILL_RAGE_YOGG);
-      LegendQuelthalas.LegendKiljaeden.Spawn(completingFaction.Player, Regions.Sunwell.Center, 244);
+      LegendQuelthalas.LegendKiljaeden.ForceCreate(completingFaction.Player, Regions.Sunwell.Center, 244);
     }
   }
 }
