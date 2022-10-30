@@ -2,6 +2,7 @@
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.Buffs;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
 using AzerothWarsCSharp.MacroTools.Powers;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using WCSharp.Buffs;
@@ -12,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Goblins
   /// <summary>
   /// Oil users use oil instead of mana. The oil is provided by the owner's <see cref="OilPower"/> if they have one.
   /// </summary>
-  public sealed class OilUser : UnitEffect
+  public sealed class OilUser : PassiveAbility
   {
     public OilUser(int unitTypeId) : base(unitTypeId)
     {

@@ -1,15 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using AzerothWarsCSharp.MacroTools.SpellSystem;
+using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.UnitEffects
+namespace AzerothWarsCSharp.MacroTools.PassiveAbilities
 {
   /// <summary>
   /// Prevents the unit from being created or built outside of particular areas.
   /// </summary>
-  public sealed class RegionRestricted : UnitEffect
+  public sealed class RegionRestricted : PassiveAbility
   {
     private readonly Rectangle[] _requiredRectangles;
 

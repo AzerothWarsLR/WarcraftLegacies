@@ -1,11 +1,11 @@
 ﻿using AzerothWarsCSharp.MacroTools.Buffs;
-using AzerothWarsCSharp.MacroTools.SpellSystem;
+using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.UnitEffects
+namespace AzerothWarsCSharp.MacroTools.PassiveAbilities
 {
-  public sealed class ResurrectionAura : UnitEffect
+  public sealed class ResurrectionAura : PassiveAbility
   {
     public float ResurrectionChance { get; init; } = 0.35f;
     

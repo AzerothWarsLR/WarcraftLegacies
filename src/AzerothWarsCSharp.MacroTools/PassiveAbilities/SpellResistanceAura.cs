@@ -1,11 +1,11 @@
 ﻿using AzerothWarsCSharp.MacroTools.Buffs;
-using AzerothWarsCSharp.MacroTools.SpellSystem;
+using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.UnitEffects
+namespace AzerothWarsCSharp.MacroTools.PassiveAbilities
 {
-  public sealed class SpellResistanceAura : UnitEffect
+  public sealed class SpellResistanceAura : PassiveAbility
   {
     public SpellResistanceAura(int unitTypeId) : base(unitTypeId)
     {

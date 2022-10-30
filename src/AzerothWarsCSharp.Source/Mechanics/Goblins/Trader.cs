@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.Buffs;
+using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
@@ -14,7 +15,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Goblins
   /// When trained, the <see cref="Trader"/> patrols between the originating point and a random trade destination.
   /// If the training unit dies, the <see cref="Trader"/> dies too.
   /// </summary>
-  public sealed class Trader : UnitEffect
+  public sealed class Trader : PassiveAbility
   {
     private readonly int _goldIncomeBonus;
     private readonly int _lumberIncomeBonus;

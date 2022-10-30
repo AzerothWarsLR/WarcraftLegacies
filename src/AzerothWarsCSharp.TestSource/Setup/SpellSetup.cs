@@ -1,8 +1,9 @@
 ﻿using System;
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.PassiveAbilities;
+using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
 using AzerothWarsCSharp.MacroTools.Spells;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
-using AzerothWarsCSharp.MacroTools.UnitEffects;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.TestSource.Setup
@@ -42,34 +43,34 @@ namespace AzerothWarsCSharp.TestSource.Setup
         SpellSystem.Register(massSimulacrum);
 
         var executeFootman = new Execute(FourCC("hfoo"));
-        SpellSystem.Register(executeFootman);
+        PassiveAbilityManager.Register(executeFootman);
 
         var animalCompanion = new AnimalCompanion(FourCC("hfoo"), FourCC("nqb1"))
         {
           Duration = 12
         };
-        SpellSystem.Register(animalCompanion);
+        PassiveAbilityManager.Register(animalCompanion);
 
         var hideousAppendages = new HideousAppendages(FourCC("Huth"))
         {
           TentacleUnitTypeId = FourCC("nfgt")
         };
-        SpellSystem.Register(hideousAppendages);
+        PassiveAbilityManager.Register(hideousAppendages);
 
         var spellResistanceAura = new SpellResistanceAura(FourCC("Huth"));
-        SpellSystem.Register(spellResistanceAura);
+        PassiveAbilityManager.Register(spellResistanceAura);
 
         var resurrectionAura = new ResurrectionAura(FourCC("Huth"));
-        SpellSystem.Register(resurrectionAura);
+        PassiveAbilityManager.Register(resurrectionAura);
 
         var summonLegion = new SummonLegionSpell(FourCC("AHdr"), FourCC("ACm2"));
         SpellSystem.Register(summonLegion);
 
         var taxScoutTower = new ProvidesIncome(FourCC("hwtw"), 17);
-        SpellSystem.Register(taxScoutTower);
+        PassiveAbilityManager.Register(taxScoutTower);
 
         var taxGuardTower = new ProvidesIncome(FourCC("hgtw"), 20);
-        SpellSystem.Register(taxGuardTower);
+        PassiveAbilityManager.Register(taxGuardTower);
         
         ParentChildResearchSystem.Register(FourCC("Rhde"), FourCC("Rhan"));
         

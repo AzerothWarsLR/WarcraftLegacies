@@ -1,8 +1,15 @@
-﻿namespace AzerothWarsCSharp.MacroTools.SpellSystem
+﻿namespace AzerothWarsCSharp.MacroTools.PassiveAbilitySystem
 {
-  public abstract class UnitEffect
+  /// <summary>
+  /// A passive ability attached to a specific unit type.
+  /// </summary>
+  public abstract class PassiveAbility
   {
-    protected UnitEffect(int unitTypeId)
+    /// <summary>
+    /// Initializes a new instance of the <see cref="PassiveAbility"/> class.
+    /// </summary>
+    /// <param name="unitTypeId">The unit type to attach the effect to.</param>
+    protected PassiveAbility(int unitTypeId)
     {
       UnitTypeId = unitTypeId;
     }
@@ -20,16 +27,22 @@
     }
 
     /// <summary>
-    /// Fired when the unit finishes being constructed.
+    /// Fired when a unit of the matching unit type finishes being constructed.
     /// </summary>
     public virtual void OnConstruction()
     {
     }
 
+    /// <summary>
+    /// Fired when a unit of the matching unit type deals damage.
+    /// </summary>
     public virtual void OnDealsDamage()
     {
     }
 
+    /// <summary>
+    /// Fired when a unit of the matching unit type is created.
+    /// </summary>
     public virtual void OnCreated()
     {
     }

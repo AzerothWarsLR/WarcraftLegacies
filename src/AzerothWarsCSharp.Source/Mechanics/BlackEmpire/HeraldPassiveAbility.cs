@@ -1,12 +1,13 @@
-﻿using AzerothWarsCSharp.MacroTools.SpellSystem;
+﻿using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
+using AzerothWarsCSharp.MacroTools.SpellSystem;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
 {
-  public sealed class HeraldUnitEffect : UnitEffect
+  public sealed class HeraldPassiveAbility : PassiveAbility
   {
-    public HeraldUnitEffect(int unitTypeId) : base(unitTypeId)
+    public HeraldPassiveAbility(int unitTypeId) : base(unitTypeId)
     {
     }
 

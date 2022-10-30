@@ -1,14 +1,14 @@
 ﻿using AzerothWarsCSharp.MacroTools.Buffs;
-using AzerothWarsCSharp.MacroTools.SpellSystem;
+using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.UnitEffects
+namespace AzerothWarsCSharp.MacroTools.PassiveAbilities
 {
   /// <summary>
   ///   The ability holder summons a unit whenever it attacks, up to one unit alive at a time.
   /// </summary>
-  public sealed class AnimalCompanion : UnitEffect
+  public sealed class AnimalCompanion : PassiveAbility
   {
     private readonly int _summonUnitTypeId;
 

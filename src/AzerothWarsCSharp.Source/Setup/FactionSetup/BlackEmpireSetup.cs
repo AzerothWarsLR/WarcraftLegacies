@@ -1,4 +1,5 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
+using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
 using AzerothWarsCSharp.MacroTools.Powers;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.Source.Mechanics.BlackEmpire;
@@ -72,8 +73,8 @@ While summoning the Obelisks, you can temporarily send your armies through the p
 
       //Special mechanics
       BlackEmpirePortalSetup.Setup();
-      var heraldUnitEffect = new HeraldUnitEffect(Constants.UNIT_U02E_HERALD_OF_NY_ALOTHA_BLACK_EMPRIE);
-      SpellSystem.Register(heraldUnitEffect);
+      var heraldUnitEffect = new HeraldPassiveAbility(Constants.UNIT_U02E_HERALD_OF_NY_ALOTHA_BLACK_EMPRIE);
+      PassiveAbilityManager.Register(heraldUnitEffect);
       var obeliskCast =
         new BlackEmpireObeliskSpell(Constants.ABILITY_A06Z_SUMMON_OBELISK_BLACK_EMPIRE, Constants.UNIT_N0BA_NY_ALOTHA_OBELISK)
         {

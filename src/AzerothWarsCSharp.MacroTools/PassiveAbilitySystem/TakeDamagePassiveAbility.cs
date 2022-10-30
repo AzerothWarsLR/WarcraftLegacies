@@ -1,6 +1,6 @@
-﻿namespace AzerothWarsCSharp.MacroTools.SpellSystem
+﻿namespace AzerothWarsCSharp.MacroTools.PassiveAbilitySystem
 {
-  public abstract class TakeDamageEffect
+  public abstract class TakeDamagePassiveAbility
   {
     public int DamagedUnitTypeId { get; }
     
@@ -8,7 +8,7 @@
   
     public abstract void OnTakesDamage();
 
-    protected TakeDamageEffect(int damagedUnitTypeId, int abilityTypeId)
+    protected TakeDamagePassiveAbility(int damagedUnitTypeId, int abilityTypeId)
     {
       DamagedUnitTypeId = damagedUnitTypeId;
       AbilityTypeId = abilityTypeId;

@@ -1,14 +1,14 @@
 ﻿using AzerothWarsCSharp.MacroTools.Buffs;
-using AzerothWarsCSharp.MacroTools.SpellSystem;
+using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.UnitEffects
+namespace AzerothWarsCSharp.MacroTools.PassiveAbilities
 {
   /// <summary>
   ///   Causes the specified unit type to always have a squad of tentacles surrounding them.
   /// </summary>
-  public sealed class HideousAppendages : UnitEffect
+  public sealed class HideousAppendages : PassiveAbility
   {
     public HideousAppendages(int id) : base(id)
     {

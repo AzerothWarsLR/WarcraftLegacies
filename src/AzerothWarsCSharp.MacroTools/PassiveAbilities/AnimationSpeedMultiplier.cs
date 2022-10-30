@@ -1,9 +1,9 @@
-﻿using AzerothWarsCSharp.MacroTools.SpellSystem;
+﻿using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools.UnitEffects
+namespace AzerothWarsCSharp.MacroTools.PassiveAbilities
 {
-  public sealed class AnimationSpeedMultiplier : UnitEffect
+  public sealed class AnimationSpeedMultiplier : PassiveAbility
   {
     private readonly float _multiplier;
 
