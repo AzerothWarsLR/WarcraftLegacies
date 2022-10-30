@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Events;
 using static War3Api.Common;
@@ -28,20 +29,27 @@ namespace AzerothWarsCSharp.MacroTools.PassiveAbilitySystem
     /// </summary>
     public static void Register(PassiveAbility passiveAbility)
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, passiveAbility.OnDealsDamage, passiveAbility.UnitTypeId);
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeIsCreated, UnitCreated, passiveAbility.UnitTypeId);
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesBeingTrained, passiveAbility.OnTrained, passiveAbility.UnitTypeId);
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, passiveAbility.OnTrainedUnit, passiveAbility.UnitTypeId);
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesBeingConstructed, passiveAbility.OnConstruction,
-        passiveAbility.UnitTypeId);
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesUpgrade, passiveAbility.OnUpgrade, passiveAbility.UnitTypeId);
-      PlayerUnitEvents.Register(PlayerUnitEvent.HeroTypeFinishesRevive, UnitCreated, passiveAbility.UnitTypeId);
-      PassiveAbilitiesByUnitTypeId.Add(passiveAbility.UnitTypeId, passiveAbility);
-
-      using var group = new GroupWrapper().EnumUnitsOfType(passiveAbility.UnitTypeId);
-      foreach (var unit in group.EmptyToList())
+      try
       {
-        passiveAbility.OnCreated(unit);
+        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, passiveAbility.OnDealsDamage, passiveAbility.UnitTypeId);
+        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeIsCreated, UnitCreated, passiveAbility.UnitTypeId);
+        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesBeingTrained, passiveAbility.OnTrained, passiveAbility.UnitTypeId);
+        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, passiveAbility.OnTrainedUnit, passiveAbility.UnitTypeId);
+        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesBeingConstructed, passiveAbility.OnConstruction,
+          passiveAbility.UnitTypeId);
+        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesUpgrade, passiveAbility.OnUpgrade, passiveAbility.UnitTypeId);
+        PlayerUnitEvents.Register(PlayerUnitEvent.HeroTypeFinishesRevive, UnitCreated, passiveAbility.UnitTypeId);
+        PassiveAbilitiesByUnitTypeId.Add(passiveAbility.UnitTypeId, passiveAbility);
+
+        using var group = new GroupWrapper().EnumUnitsOfType(passiveAbility.UnitTypeId);
+        foreach (var unit in group.EmptyToList())
+        {
+          passiveAbility.OnCreated(unit);
+        }
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine($"Failed to register {nameof(PassiveAbility)} for {GetObjectName(passiveAbility.UnitTypeId)}: {ex}");
       }
     }
 
