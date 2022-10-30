@@ -4363,6 +4363,8 @@ u = BlzCreateUnitWithSkin(p, FourCC("nfr2"), 5312.0, 18816.0, 90.970, FourCC("nf
 u = BlzCreateUnitWithSkin(p, FourCC("n02S"), 3456.0, 22976.0, 270.000, FourCC("n02S"))
 u = BlzCreateUnitWithSkin(p, FourCC("nfr1"), 4672.0, 18496.0, 87.282, FourCC("nfr1"))
 u = BlzCreateUnitWithSkin(p, FourCC("n032"), -10208.0, -25504.0, 270.000, FourCC("n032"))
+WaygateSetDestination(u, GetRectCenterX(gg_rct_Sargeras_Entrance), GetRectCenterY(gg_rct_Sargeras_Entrance))
+WaygateActivate(u, true)
 u = BlzCreateUnitWithSkin(p, FourCC("o016"), 2496.0, 19584.0, 270.000, FourCC("o016"))
 u = BlzCreateUnitWithSkin(p, FourCC("n036"), 4576.0, -24736.0, 270.000, FourCC("n036"))
 u = BlzCreateUnitWithSkin(p, FourCC("n07L"), 5376.0, -12416.0, 270.000, FourCC("n07L"))
