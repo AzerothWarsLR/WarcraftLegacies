@@ -20,6 +20,7 @@ namespace AzerothWarsCSharp.Source.Setup
       IronforgeSetup.Setup();
       KultirasSetup.Setup();
       IllidariSetup.Setup();
+      IllidanSetup.Setup();
       GilneasSetup.Setup();
       ZandalarSetup.Setup();
       GoblinSetup.Setup();

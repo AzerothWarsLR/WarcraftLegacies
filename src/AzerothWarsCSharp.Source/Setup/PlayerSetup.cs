@@ -50,7 +50,7 @@ namespace AzerothWarsCSharp.Source.Setup
       Player(13).SetFaction(DraeneiSetup.Draenei);
       Player(13).SetTeam(TeamSetup.NightElves);
 
-      Player(15).SetFaction(IllidariSetup.Illidari);
+      Player(15).SetFaction(IllidanSetup.Illidan);
       Player(15).SetTeam(TeamSetup.NightElves);
 
       Player(17).SetFaction(ZandalarSetup.Zandalar);
