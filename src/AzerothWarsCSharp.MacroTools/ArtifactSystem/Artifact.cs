@@ -83,11 +83,9 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
       get => _owningUnit;
       private set
       {
-        if (OwningPlayer != GetOwningPlayer(value))
-        {
-          _owningUnit = value;
+        _owningUnit = value;
+        if (OwningPlayer != GetOwningPlayer(value)) 
           SetOwningPlayer(value != null ? GetOwningPlayer(value) : null);
-        }
       }
     }
 
@@ -200,15 +198,6 @@ namespace AzerothWarsCSharp.MacroTools.ArtifactSystem
 
     private void OnDropped()
     {
-      if (!IsTerrainPathable(GetUnitX(_owningUnit), GetUnitY(_owningUnit), PATHING_TYPE_FLOATABILITY) &&
-          IsTerrainPathable(GetUnitX(_owningUnit), GetUnitY(_owningUnit), PATHING_TYPE_WALKABILITY))
-        if (!UnitAlive(_owningUnit))
-        {
-          var tempShore = Shore.GetNearestShore(new Point(GetUnitX(_owningUnit), GetUnitY(_owningUnit)));
-          if (tempShore != null) 
-            Item = CreateItem(GetItemTypeId(Item), tempShore.Position.X, tempShore.Position.Y);
-        }
-
       //Remove dummy Artifact holding ability if the dropping unit had one
       if (GetUnitAbilityLevel(_owningUnit, ArtifactHolderAbilId) > 0)
         UnitRemoveAbility(_owningUnit, ArtifactHolderAbilId);
