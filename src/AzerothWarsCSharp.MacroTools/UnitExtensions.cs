@@ -6,7 +6,7 @@ using static War3Api.Common;
 namespace AzerothWarsCSharp.MacroTools
 {
   /// <summary>
-  /// Provides a series of useful extensions to the <see cref="unit"/> class.
+  /// Provides a series of useful extensions to the unit class.
   /// </summary>
   public static class UnitExtensions
   {
@@ -61,7 +61,7 @@ namespace AzerothWarsCSharp.MacroTools
     }
 
     /// <summary>
-    /// Changess the <see cref="unit"/>'s owner to the specified <see cref="player"/>.
+    /// Changess the unit's owner to the specified player.
     /// </summary>
     public static void SetOwner(this unit unit, player whichPlayer)
     {
@@ -69,7 +69,7 @@ namespace AzerothWarsCSharp.MacroTools
     }
     
     /// <summary>
-    /// Returns the current owner of the specified <see cref="unit"/>/
+    /// Returns the current owner of the specified unit/
     /// </summary>
     public static player OwningPlayer(this unit unit)
     {

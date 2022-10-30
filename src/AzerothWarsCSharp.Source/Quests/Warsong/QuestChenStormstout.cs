@@ -7,7 +7,7 @@ using static War3Api.Common;
 namespace AzerothWarsCSharp.Source.Quests.Warsong
 {
   /// <summary>
-  /// Chen Stormstout joins the Warsong when a Warsong <see cref="unit"/> approaches him.
+  /// Chen Stormstout joins the Warsong when a Warsong unit approaches him.
   /// </summary>
   public sealed class QuestChenStormstout : QuestData
   {

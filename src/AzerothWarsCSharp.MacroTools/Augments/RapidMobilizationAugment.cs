@@ -5,7 +5,7 @@ using static War3Api.Common;
 namespace AzerothWarsCSharp.MacroTools.Augments
 {
   /// <summary>
-  /// An <see cref="Augment"/> that sometimes copied units trained by the owning <see cref="player"/>.
+  /// An <see cref="Augment"/> that sometimes copied units trained by the owning player.
   /// </summary>
   public sealed class RapidMobilizationAugment : Augment
   {

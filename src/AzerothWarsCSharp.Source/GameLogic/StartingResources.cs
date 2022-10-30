@@ -10,7 +10,7 @@ namespace AzerothWarsCSharp.Source.GameLogic
   public static class StartingResources
   {
     /// <summary>
-    /// After a period of time, gives all <see cref="player"/>s their starting resources.
+    /// After a period of time, gives all players their starting resources.
     /// </summary>
     public static void Setup()
     {

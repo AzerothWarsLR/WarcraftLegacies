@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.MacroTools.PassiveAbilitySystem
     private static readonly Dictionary<int, List<PassiveAbility>> PassiveAbilitiesByUnitTypeId = new();
 
     /// <summary>
-    /// Iterates across all <see cref="unit"/>s on the map, and fires the <see cref="PassiveAbility.OnCreated"/>
+    /// Iterates across all units on the map, and fires the <see cref="PassiveAbility.OnCreated"/>
     /// for any <see cref="PassiveAbility"/>s it finds. This should be run at game start to ensure that preplaced units
     /// are initialized correctly.
     /// </summary>

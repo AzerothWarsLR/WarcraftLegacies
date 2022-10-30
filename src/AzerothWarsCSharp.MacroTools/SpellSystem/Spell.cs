@@ -4,7 +4,7 @@ using static War3Api.Common;
 namespace AzerothWarsCSharp.MacroTools.SpellSystem
 {
   /// <summary>
-  /// A castable ability which can be invoked by a <see cref="unit"/>.
+  /// A castable ability which can be invoked by a unit.
   /// <para>Provides a set of overrideable methods that, when implemented, define everything that a given custom spell does.</para>
   /// </summary>
   public abstract class Spell

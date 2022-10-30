@@ -5,7 +5,7 @@ using static War3Api.Common;
 namespace AzerothWarsCSharp.MacroTools.Buffs
 {
   /// <summary>
-  /// Increases the owning <see cref="player"/>'s income.
+  /// Increases the owning player's income.
   /// </summary>
   public sealed class IncomeBuff : PassiveBuff
   {

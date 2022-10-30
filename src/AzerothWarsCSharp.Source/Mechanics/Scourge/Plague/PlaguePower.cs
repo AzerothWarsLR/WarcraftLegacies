@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Scourge.Plague
       new(1.0f);
 
     /// <summary>
-    /// A list of all <see cref="player"/>s that have this <see cref="Power"/>.
+    /// A list of all players that have this <see cref="Power"/>.
     /// </summary>
     private readonly List<player> _holders = new();
     

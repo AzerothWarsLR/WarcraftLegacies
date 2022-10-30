@@ -45,7 +45,7 @@ namespace AzerothWarsCSharp.MacroTools.Augments
       public abstract float GetWeight(player whichPlayer);
       
       /// <summary>
-      /// Invoked when the <see cref="Augment"/> is added to a <see cref="player"/>.
+      /// Invoked when the <see cref="Augment"/> is added to a player.
       /// </summary>
       public abstract void OnAdd(Faction whichFaction);
    }

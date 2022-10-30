@@ -47,7 +47,7 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
     }
 
     /// <summary>
-    /// Adds an additional <see cref="unit"/> to the <see cref="GroupWrapper"/>.
+    /// Adds an additional unit to the <see cref="GroupWrapper"/>.
     /// </summary>
     public void Add(unit unit)
     {
@@ -55,7 +55,7 @@ namespace AzerothWarsCSharp.MacroTools.Wrappers
     }
 
     /// <summary>
-    /// Adds all units selected by the provided <see cref="player"/> to the <see cref="GroupWrapper"/>.
+    /// Adds all units selected by the provided player to the <see cref="GroupWrapper"/>.
     /// </summary>
     public GroupWrapper EnumSelectedUnits(player whichPlayer)
     {

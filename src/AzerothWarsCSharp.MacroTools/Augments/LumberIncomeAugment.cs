@@ -5,7 +5,7 @@ using static War3Api.Common;
 namespace AzerothWarsCSharp.MacroTools.Augments
 {
    /// <summary>
-   /// An <see cref="Augment"/> that increases a <see cref="player"/>'s lumber income by a fixed amount.
+   /// An <see cref="Augment"/> that increases a player's lumber income by a fixed amount.
    /// </summary>
    public sealed class LumberIncomeAugment : Augment
    {
@@ -14,7 +14,7 @@ namespace AzerothWarsCSharp.MacroTools.Augments
       /// <summary>
       /// Initializes an instance of the <see cref="LumberIncomeAugment"/> class.
       /// </summary>
-      /// <param name="income">The amount of lumber income to grant the selecting <see cref="player"/>.</param>
+      /// <param name="income">The amount of lumber income to grant the selecting player.</param>
       public LumberIncomeAugment(int income)
       {
          _income = income;

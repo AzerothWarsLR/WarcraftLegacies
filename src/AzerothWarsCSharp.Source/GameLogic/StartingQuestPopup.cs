@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.GameLogic
   public static class StartingQuestPopup
   {
     /// <summary>
-    /// Displays each <see cref="Faction"/>'s starting <see cref="QuestData"/> to the occupying <see cref="player"/>
+    /// Displays each <see cref="Faction"/>'s starting <see cref="QuestData"/> to the occupying player
     /// after a period of time has elapsed.
     /// </summary>
     /// <param name="timeToDisplay">Number of seconds after which to display the quests.</param>

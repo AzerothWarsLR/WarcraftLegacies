@@ -3,7 +3,7 @@
 namespace AzerothWarsCSharp.MacroTools.CheatSystem
 {
   /// <summary>
-  /// A function that a <see cref="player"/> can execute via the chat, which is only enabled in testing scenarios.
+  /// A function that a player can execute via the chat, which is only enabled in testing scenarios.
   /// </summary>
   public abstract class Cheat
   {
@@ -20,9 +20,9 @@ namespace AzerothWarsCSharp.MacroTools.CheatSystem
     /// <summary>
     /// What happens when the <see cref="Cheat"/> gets executed by a player.
     /// </summary>
-    /// <param name="cheater">The <see cref="player"/> typing the <see cref="Cheat"/> command in.</param>
-    /// <param name="parameters">The parameters specified by the <see cref="player"/> entering the sheet, seperated by spaces.</param>
-    /// <returns>A message describing what the <see cref="Cheat"/> is doing to the executing <see cref="player"/>.</returns>
+    /// <param name="cheater">The player typing the <see cref="Cheat"/> command in.</param>
+    /// <param name="parameters">The parameters specified by the player entering the sheet, seperated by spaces.</param>
+    /// <returns>A message describing what the <see cref="Cheat"/> is doing to the executing player.</returns>
     public abstract string Execute(player cheater, params string[] parameters);
   }
 }

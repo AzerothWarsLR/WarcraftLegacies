@@ -24,7 +24,7 @@ namespace AzerothWarsCSharp.MacroTools.Augments
       
       /// <summary>
       /// Gets a random <see cref="Augment"/>.
-      /// The result is weighted based on particular attributes of the provided <see cref="player"/>.
+      /// The result is weighted based on particular attributes of the provided player.
       /// </summary>
       public static Augment GetRandom(player whichPlayer)
       {

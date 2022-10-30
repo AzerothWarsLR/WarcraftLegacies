@@ -34,7 +34,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     private player Player { get; }
 
     /// <summary>
-    /// Controls who the <see cref="player"/> is allied to.
+    /// Controls who the player is allied to.
     /// </summary>
     public Team? Team
     {
@@ -146,7 +146,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     }
 
     /// <summary>
-    /// Fired when the <see cref="player"/>'s income changes.
+    /// Fired when the player's income changes.
     /// </summary>
     public event EventHandler<PlayerData>? IncomeChanged;
 

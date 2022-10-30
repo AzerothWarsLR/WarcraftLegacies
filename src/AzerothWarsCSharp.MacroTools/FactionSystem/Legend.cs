@@ -186,7 +186,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     /// <summary>
     ///   The current unit type of the Legend. Can be changed at any time, even if the Legend is already in the game world.
-    ///   This will be automatically updated if <see cref="Unit"/> is changed.
+    ///   This will be automatically updated if unit is changed.
     /// </summary>
     public int UnitType
     {
@@ -305,13 +305,13 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
     }
 
     /// <summary>
-    /// Forces the <see cref="Legend"/> to appear somewhere in the game world as a <see cref="unit"/>.
+    /// Forces the <see cref="Legend"/> to appear somewhere in the game world as a unit.
     /// <para>If the <see cref="Legend"/> is alive, it moves there. If it's dead, it revives as well. If it doesn't exist,
     /// it gets created.</para>
     /// </summary>
-    /// <param name="owner">Which <see cref="player"/> should own the <see cref="unit"/> once it's spawned.</param>
-    /// <param name="position">Where the <see cref="unit"/> should spawn.</param>
-    /// <param name="facing">Which way the <see cref="unit"/> should face.</param>
+    /// <param name="owner">Which player should own the unit once it's spawned.</param>
+    /// <param name="position">Where the unit should spawn.</param>
+    /// <param name="facing">Which way the unit should face.</param>
     public void ForceCreate(player owner, Point position, float facing)
     {
       if (Unit == null)

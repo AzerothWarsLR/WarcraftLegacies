@@ -6,7 +6,7 @@ using static War3Api.Common;
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
   /// <summary>
-  /// A collection of <see cref="player"/>s who are all allied to each other.
+  /// A collection of players who are all allied to each other.
   /// </summary>
   public sealed class Team
   {
