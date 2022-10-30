@@ -18,7 +18,8 @@ namespace AzerothWarsCSharp.Source.Setup
         DamageBase = 9000,
         DurationBase = 3,
         StunAbilityId = FourCC("A0WN"),
-        StunOrderString = "thunderbolt"
+        StunOrderString = "thunderbolt",
+        SpecialEffect = @"Abilities\Spells\Orc\WarStomp\WarStompCaster.mdl"
       };
       SpellSystem.Register(warStompImmoltar);
 
@@ -28,7 +29,8 @@ namespace AzerothWarsCSharp.Source.Setup
         DamageBase = 25,
         DurationBase = 3,
         StunAbilityId = FourCC("A0WN"),
-        StunOrderString = "thunderbolt"
+        StunOrderString = "thunderbolt",
+        SpecialEffect = @"Abilities\Spells\Orc\WarStomp\WarStompCaster.mdl"
       };
       SpellSystem.Register(warStompKazzak);
 
@@ -38,7 +40,8 @@ namespace AzerothWarsCSharp.Source.Setup
         DamageBase = 65,
         DurationBase = 1,
         StunAbilityId = FourCC("S00H"),
-        StunOrderString = "cripple"
+        StunOrderString = "cripple",
+        SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
       };
       SpellSystem.Register(thunderClap);
 

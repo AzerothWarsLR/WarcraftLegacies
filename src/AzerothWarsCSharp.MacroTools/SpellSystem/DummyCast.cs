@@ -4,24 +4,15 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.SpellSystem
 {
+  /// <summary>
+  /// Provides methods for casting abilities through a dummy unit.
+  /// </summary>
   public static class DummyCast
   {
-    private static group TempGroup = CreateGroup();
+    private static readonly group TempGroup = CreateGroup();
 
     public delegate bool CastFilter(unit caster, unit target);
-    
-    public static void CastOnUnit(unit caster, int abilityId, string orderId, int level, unit target)
-    {
-      var dummy = DummyCaster.DummyUnit;
-      SetUnitOwner(dummy, GetOwningPlayer(caster), false);
-      SetUnitX(dummy, GetUnitX(caster));
-      SetUnitY(dummy, GetUnitY(caster));
-      UnitAddAbility(dummy, abilityId);
-      SetUnitAbilityLevel(dummy, abilityId, level);
-      IssueTargetOrder(dummy, orderId, target);
-      UnitRemoveAbility(dummy, abilityId);
-    }
-    
+
     public static void ChannelOnPoint(unit caster, int abilityId, string orderId, int level, Point targetPoint, float duration)
     {
       var u = CreateUnit(GetOwningPlayer(caster), DummyCaster.UnitTypeId, targetPoint.X, targetPoint.Y, 0);

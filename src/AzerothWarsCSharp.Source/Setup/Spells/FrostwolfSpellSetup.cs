@@ -22,7 +22,8 @@ namespace AzerothWarsCSharp.Source.Setup.Spells
         DurationBase = 0,
         DurationLevel = 1,
         StunAbilityId = Constants.ABILITY_A0WN_STUN_UNIT_DUMMY,
-        StunOrderString = "thunderbolt"
+        StunOrderString = "thunderbolt",
+        SpecialEffect = @"Abilities\Spells\Orc\WarStomp\WarStompCaster.mdl"
       };
       SpellSystem.Register(warStompCairne);
       

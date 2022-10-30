@@ -16,7 +16,7 @@ namespace AzerothWarsCSharp.MacroTools.Spells
 
     private void DoSpellOnTarget(unit caster, unit target)
     {
-      DummyCast.CastOnUnit(caster, DummyAbilityId, DummyOrderString, GetAbilityLevel(caster), GetTriggerUnit());
+      DummyCast.DummyCastUnit(GetOwningPlayer(caster), DummyAbilityId, DummyOrderString, GetAbilityLevel(caster), target);
     }
     
     public void OnDealsDamage(unit caster, unit target)
