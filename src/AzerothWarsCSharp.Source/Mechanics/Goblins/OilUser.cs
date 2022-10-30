@@ -19,10 +19,9 @@ namespace AzerothWarsCSharp.Source.Mechanics.Goblins
     {
     }
 
-    public override void OnCreated()
+    public override void OnCreated(unit createdUnit)
     {
-      var triggerUnit = GetTriggerUnit();
-      var owningFaction = triggerUnit.OwningPlayer().GetFaction();
+      var owningFaction = createdUnit.OwningPlayer().GetFaction();
       var oilPower = owningFaction?.GetPowerByType<OilPower>();
       if (oilPower == null)
       {
@@ -30,7 +29,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.Goblins
           $"Oil user {GetUnitName(GetTriggerUnit())} was created but owning faction {owningFaction?.Name} doesn't have a power that stores oil.");
       }
 
-      var oilBuff = new OilUserBuff(triggerUnit, oilPower);
+      var oilBuff = new OilUserBuff(createdUnit, oilPower);
       BuffSystem.Add(oilBuff);
     }
   }

@@ -11,7 +11,7 @@ namespace AzerothWarsCSharp.Source.Mechanics.BlackEmpire
     {
     }
 
-    public override void OnCreated()
+    public override void OnCreated(unit createdUnit)
     {
       var buff = new HeraldBuff(GetTriggerUnit(), GetTriggerUnit())
       {

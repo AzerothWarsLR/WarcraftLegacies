@@ -18,9 +18,9 @@ namespace AzerothWarsCSharp.MacroTools.PassiveAbilities
       _requiredRectangles = requiredRectangles.ToArray();
     }
 
-    public override void OnCreated()
+    public override void OnCreated(unit createdUnit)
     {
-      var pos = GetTriggerUnit().GetPosition();
+      var pos = createdUnit.GetPosition();
       var inValidRectangle = false;
       foreach (var rectangle in _requiredRectangles)
       {

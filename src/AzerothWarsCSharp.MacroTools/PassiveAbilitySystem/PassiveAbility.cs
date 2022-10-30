@@ -1,4 +1,6 @@
-﻿namespace AzerothWarsCSharp.MacroTools.PassiveAbilitySystem
+﻿using static War3Api.Common;
+
+namespace AzerothWarsCSharp.MacroTools.PassiveAbilitySystem
 {
   /// <summary>
   /// A passive ability attached to a specific unit type.
@@ -43,7 +45,8 @@
     /// <summary>
     /// Fired when a unit of the matching unit type is created.
     /// </summary>
-    public virtual void OnCreated()
+    /// <param name="createdUnit"></param>
+    public virtual void OnCreated(unit createdUnit)
     {
     }
 

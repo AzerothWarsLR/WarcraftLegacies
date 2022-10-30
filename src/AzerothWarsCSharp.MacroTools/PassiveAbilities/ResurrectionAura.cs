@@ -13,9 +13,9 @@ namespace AzerothWarsCSharp.MacroTools.PassiveAbilities
     {
     }
 
-    public override void OnCreated()
+    public override void OnCreated(unit createdUnit)
     {
-      var aura = new ResurrectionAuraCaster(GetTriggerUnit(), ResurrectionChance);
+      var aura = new ResurrectionAuraCaster(createdUnit, ResurrectionChance);
       AuraSystem.Add(aura);
     }
   }

@@ -23,9 +23,9 @@ namespace AzerothWarsCSharp.MacroTools.PassiveAbilities
     /// </summary>
     public float RadiusOffset { get; init; } = 250;
 
-    public override void OnCreated()
+    public override void OnCreated(unit createdUnit)
     {
-      var hideousAppendagesBuff = new HideousAppendagesBuff(GetTriggerUnit(), GetTriggerUnit())
+      var hideousAppendagesBuff = new HideousAppendagesBuff(createdUnit, createdUnit)
       {
         TentacleUnitTypeId = TentacleUnitTypeId,
         TentacleCount = TentacleCount,
