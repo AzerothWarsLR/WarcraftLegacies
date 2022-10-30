@@ -15,7 +15,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       TargetWidget = Target;
       InitializeDescription();
       DisplaysPosition = IsUnitType(Target, UNIT_TYPE_STRUCTURE) ||
-                         Environment.IsPlayerNeutralHostile(GetOwningPlayer(Target));
+                         GetOwningPlayer(Target) == Player(PLAYER_NEUTRAL_AGGRESSIVE);
     }
 
     public override Point Position => new(GetUnitX(Target), GetUnitY(Target));

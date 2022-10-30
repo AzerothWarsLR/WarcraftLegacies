@@ -17,7 +17,7 @@ namespace AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs
       _canFail = canFail;
       if (target.Unit != null) TargetWidget = target.Unit;
 
-      DisplaysPosition = Environment.IsPlayerNeutralHostile(GetOwningPlayer(target.Unit));
+      DisplaysPosition = GetOwningPlayer(target.Unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE);
       target.ChangedOwner += OnTargetChangeOwner;
       target.PermanentlyDied += OnTargetDeath;
     }
