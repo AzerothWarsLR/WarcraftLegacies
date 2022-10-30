@@ -17,11 +17,16 @@ namespace AzerothWarsCSharp.Source.GameLogic
     {
       PlayerUnitEvents.Register(PlayerUnitEvent.HeroTypeFinishesRevive, () =>
       {
-        var revivedLegend = Legend.GetFromUnit(GetTriggerUnit());
-        SetUnitColor(GetTriggerUnit(),
-          revivedLegend is {HasCustomColor: true}
-            ? revivedLegend.PlayerColor
-            : GetTriggerPlayer().GetFaction()?.PlayerColor);
+        var triggerUnit = GetTriggerUnit();
+        var revivedLegend = Legend.GetFromUnit(triggerUnit);
+        if (revivedLegend?.HasCustomColor == true)
+        {
+          SetUnitColor(triggerUnit, revivedLegend.PlayerColor);
+        }
+        else
+        {
+          SetUnitColor(triggerUnit, GetTriggerPlayer()?.GetFaction()?.PlayerColor ?? PLAYER_COLOR_COAL);
+        }
       });
     }
   }
