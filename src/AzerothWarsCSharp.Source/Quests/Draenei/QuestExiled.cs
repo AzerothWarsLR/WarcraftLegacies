@@ -52,25 +52,6 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
     protected override string RewardDescription =>
       "Control of all units in Azuremyst, gain 200 gold, 500 lumber and teleports all your units away from Outland";
 
-    private static void GrantExiled(player whichPlayer)
-    {
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(Regions.DraeneiEvacuation.Rect).EmptyToList())
-        if (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE))
-          unit.Rescue(whichPlayer);
-    }
-
-    private static void EscapeOutland(player whichPlayer)
-    {
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(Regions.InstanceOutland.Rect).EmptyToList())
-      {
-        if (GetOwningPlayer(unit) != whichPlayer) continue;
-        if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) && !IsUnitType(unit, UNIT_TYPE_ANCIENT))
-          KillUnit(unit);
-        else if (!IsUnitType(unit, UNIT_TYPE_ANCIENT)) 
-          SetUnitPosition(unit, -21185, 8000);
-      }
-    }
-
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
@@ -111,6 +92,25 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
       if (KilledOnFail != null)
         foreach (var unit in KilledOnFail)
           KillUnit(unit);
+    }
+    
+    private static void GrantExiled(player whichPlayer)
+    {
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(Regions.DraeneiEvacuation.Rect).EmptyToList())
+        if (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE))
+          unit.Rescue(whichPlayer);
+    }
+
+    private static void EscapeOutland(player whichPlayer)
+    {
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(Regions.InstanceOutland.Rect).EmptyToList())
+      {
+        if (GetOwningPlayer(unit) != whichPlayer) continue;
+        if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) && !IsUnitType(unit, UNIT_TYPE_ANCIENT))
+          KillUnit(unit);
+        else if (!IsUnitType(unit, UNIT_TYPE_ANCIENT)) 
+          SetUnitPosition(unit, -21185, 8000);
+      }
     }
   }
 }
