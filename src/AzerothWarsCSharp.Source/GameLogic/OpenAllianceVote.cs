@@ -1,5 +1,4 @@
 ﻿using AzerothWarsCSharp.MacroTools.HintSystem;
-using AzerothWarsCSharp.MacroTools.Libraries;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.GameLogic
@@ -49,7 +48,7 @@ namespace AzerothWarsCSharp.Source.GameLogic
     
     private static void StartVote()
     {
-      foreach (var player in GeneralHelpers.GetAllPlayers())
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
         DialogDisplay(player, VoteDialogue, true);
       }

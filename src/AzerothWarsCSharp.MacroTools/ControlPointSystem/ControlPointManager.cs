@@ -59,7 +59,7 @@ namespace AzerothWarsCSharp.MacroTools.ControlPointSystem
         timer incomeTimer = CreateTimer();
         TimerStart(incomeTimer, PERIOD, true, () =>
         {
-          foreach (var player in GeneralHelpers.GetAllPlayers())
+          foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
             if (player.GetFaction() != null)
             {
               var goldPerSecond = player.GetTotalIncome() * PERIOD / 60;

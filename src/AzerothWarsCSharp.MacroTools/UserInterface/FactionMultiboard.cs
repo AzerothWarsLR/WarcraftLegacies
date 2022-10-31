@@ -62,7 +62,7 @@ namespace AzerothWarsCSharp.MacroTools.UserInterface
       FactionManager.AnyFactionNameChanged += OnFactionAnyFactionNameChanged;
       Faction.IconChanged += OnFactionIconChanged;
 
-      foreach (var player in GeneralHelpers.GetAllPlayers())
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         player.GetPlayerData().IncomeChanged += OnPlayerIncomeChanged;
 
       _initialized = true;

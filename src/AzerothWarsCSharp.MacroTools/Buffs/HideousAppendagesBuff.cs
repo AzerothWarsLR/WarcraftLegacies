@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.Libraries;
 using WCSharp.Buffs;
 using static War3Api.Common;

@@ -1,8 +1,5 @@
 using System.Collections.Generic;
-using AzerothWarsCSharp.MacroTools.Libraries;
 using static War3Api.Common;
-
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.Cheats
 {
@@ -35,7 +32,7 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
     public static void Setup()
     {
       trigger trig = CreateTrigger();
-      foreach (var player in GetAllPlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
       TriggerAddAction(trig, Actions);
     }
   }

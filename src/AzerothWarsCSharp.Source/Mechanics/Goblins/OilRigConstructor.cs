@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
-using AzerothWarsCSharp.MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 

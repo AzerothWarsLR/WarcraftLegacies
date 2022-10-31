@@ -6,7 +6,6 @@ using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Events;
 using static War3Api.Common;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
@@ -137,7 +136,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       set
       {
         //Change defeated/undefeated researches
-        foreach (var player in GetAllPlayers())
+        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
           if (value == ScoreStatus.Defeated)
           {
             SetPlayerTechResearched(player, _defeatedResearch, 1);
@@ -227,7 +226,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       {
         if (_undefeatedResearch != 0) return;
         _undefeatedResearch = value;
-        foreach (var player in GetAllPlayers()) SetPlayerTechResearched(player, _undefeatedResearch, 1);
+        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) SetPlayerTechResearched(player, _undefeatedResearch, 1);
       }
       get => _undefeatedResearch;
     }
@@ -241,7 +240,7 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
       {
         if (_defeatedResearch != 0) return;
         _defeatedResearch = value;
-        foreach (var player in GetAllPlayers()) SetPlayerTechResearched(player, _defeatedResearch, 0);
+        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) SetPlayerTechResearched(player, _defeatedResearch, 0);
       }
     }
 

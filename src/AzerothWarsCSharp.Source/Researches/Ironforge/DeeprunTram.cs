@@ -3,7 +3,6 @@ using static War3Api.Common;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using WCSharp.Events;
-using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools;
 using WCSharp.Shared.Data;
 using AzerothWarsCSharp.Source.Setup.Legends;
@@ -53,7 +52,7 @@ namespace AzerothWarsCSharp.Source.Researches.Ironforge
 
     private static void ResearchStart()
     {
-      foreach (var player in GeneralHelpers.GetAllPlayers())
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
         player.GetFaction()?.ModObjectLimit(ResearchId, -1);
       }
@@ -61,7 +60,7 @@ namespace AzerothWarsCSharp.Source.Researches.Ironforge
 
     private static void ResearchCancel()
     {
-      foreach (var player in GeneralHelpers.GetAllPlayers())
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
         player.GetFaction()?.ModObjectLimit(ResearchId, 1);
       }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Events;
 using static War3Api.Common;

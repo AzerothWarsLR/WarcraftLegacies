@@ -3,7 +3,6 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using static War3Api.Common;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.Commands
 {
@@ -28,7 +27,7 @@ namespace AzerothWarsCSharp.Source.Commands
     public static void Setup()
     {
       trigger trig = CreateTrigger();
-      foreach (var player in GetAllPlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, true);
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, true);
       TriggerAddAction(trig, Actions);
     }
   }

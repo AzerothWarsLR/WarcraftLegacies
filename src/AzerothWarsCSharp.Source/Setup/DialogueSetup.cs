@@ -1,6 +1,5 @@
 ﻿using System;
 using AzerothWarsCSharp.Source.Dialogue;
-using AzerothWarsCSharp.Source.Setup.FactionSetup;
 
 namespace AzerothWarsCSharp.Source.Setup
 {

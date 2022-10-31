@@ -98,7 +98,7 @@ namespace AzerothWarsCSharp.Source.Setup
         Regions.Quel_Ships_3
       });
       //Todo: uncomment below
-      // foreach (var player in GeneralHelpers.GetAllPlayers())
+      // foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       // {
       //   var newFogModifier = CreateFogModifierRect(player, FOG_OF_WAR_VISIBLE, Regions.MercTavern, true, true);
       //   FogModifierStart(newFogModifier);

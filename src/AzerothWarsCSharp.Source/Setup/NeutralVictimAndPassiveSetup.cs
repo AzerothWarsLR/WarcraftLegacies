@@ -1,5 +1,4 @@
-﻿using AzerothWarsCSharp.MacroTools.Libraries;
-using static War3Api.Common;
+﻿using static War3Api.Common;
 using static War3Api.Blizzard;
 
 namespace AzerothWarsCSharp.Source.Setup
@@ -17,7 +16,7 @@ namespace AzerothWarsCSharp.Source.Setup
     
     public static void Setup()
     {
-      foreach (var player in GeneralHelpers.GetAllPlayers())
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
         Unally(player, Player(bj_PLAYER_NEUTRAL_VICTIM));
         Unally(Player(bj_PLAYER_NEUTRAL_VICTIM), player);

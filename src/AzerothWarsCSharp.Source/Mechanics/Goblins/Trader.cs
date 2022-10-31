@@ -4,7 +4,6 @@ using System.Linq;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.Buffs;
 using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
-using AzerothWarsCSharp.MacroTools.SpellSystem;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;

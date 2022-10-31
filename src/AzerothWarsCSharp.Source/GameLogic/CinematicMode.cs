@@ -29,7 +29,7 @@ namespace AzerothWarsCSharp.Source.GameLogic
       
       FogEnable(true);
 
-      foreach (var player in GeneralHelpers.GetAllPlayers())
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
         SetMapMusic("music", true, 0);
         player.GetFaction()?.SetObjectLevel(Constants.UPGRADE_R068_INTRO_FINISHED, 1);
@@ -60,7 +60,7 @@ namespace AzerothWarsCSharp.Source.GameLogic
 
     private static void PlayFactionMusic()
     {
-      foreach (var player in GeneralHelpers.GetAllPlayers())
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
         if (GetLocalPlayer() == player)
         {

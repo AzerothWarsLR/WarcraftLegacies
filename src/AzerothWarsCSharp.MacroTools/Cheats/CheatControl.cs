@@ -1,5 +1,5 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
-using static War3Api.Common;  using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.Cheats
 {
@@ -20,7 +20,7 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
       string parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
       if (parameter == "all")
       {
-        foreach (var player in GetAllPlayers())
+        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         {
           GetTriggerPlayer().SetAllianceState(player, AllianceState.AlliedAdvUnits);
           player.SetAllianceState(GetTriggerPlayer(), AllianceState.AlliedAdvUnits);
@@ -40,7 +40,7 @@ namespace AzerothWarsCSharp.MacroTools.Cheats
     public static void Setup()
     {
       trigger trig = CreateTrigger();
-      foreach (var player in GetAllPlayers())
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
         TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
       }

@@ -1,6 +1,5 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using static War3Api.Common;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.GameLogic
 {
@@ -18,7 +17,7 @@ namespace AzerothWarsCSharp.Source.GameLogic
       TriggerRegisterTimerEvent(trig, 60, false);
       TriggerAddAction(trig, () =>
       {
-        foreach (var player in GetAllPlayers())
+        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         {
           var faction = player.GetFaction();
           if (faction == null) continue;

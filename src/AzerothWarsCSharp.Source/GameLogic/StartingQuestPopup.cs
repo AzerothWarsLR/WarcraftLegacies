@@ -1,7 +1,6 @@
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using static War3Api.Common;
-using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 
 namespace AzerothWarsCSharp.Source.GameLogic
 {
@@ -21,7 +20,7 @@ namespace AzerothWarsCSharp.Source.GameLogic
       TriggerRegisterTimerEvent(trig, timeToDisplay, false);
       TriggerAddAction(trig, () =>
       {
-        foreach (var player in GetAllPlayers())
+        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         {
           var playerFaction = player.GetFaction();
           if (playerFaction != null && player.GetFaction()?.StartingQuest != null && GetLocalPlayer() == player)

@@ -30,7 +30,7 @@ namespace AzerothWarsCSharp.MacroTools
       var timer = CreateTimer();
       TimerStart(timer, (turnResearch._turn) + 1 * 60, false, () =>
       {
-        foreach (var player in GeneralHelpers.GetAllPlayers())
+        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         {
           SetPlayerTechResearched(player, turnResearch._researchId, 1);
         }

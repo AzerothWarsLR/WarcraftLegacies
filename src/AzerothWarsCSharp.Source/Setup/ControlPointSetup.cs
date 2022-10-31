@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
-using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using static War3Api.Common;
 

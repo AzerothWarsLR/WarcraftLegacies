@@ -1,5 +1,4 @@
 ﻿using AzerothWarsCSharp.MacroTools.FactionSystem;
-using AzerothWarsCSharp.MacroTools.Libraries;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.Source.GameLogic
@@ -11,7 +10,7 @@ namespace AzerothWarsCSharp.Source.GameLogic
    {
       private static void Display()
       {
-         foreach (var player in GeneralHelpers.GetAllPlayers())
+         foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
          {
             DisplayTextToPlayer(player, 0, 0, player.GetFaction()?.IntroText);
          }

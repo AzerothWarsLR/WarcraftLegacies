@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
-using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;
@@ -46,7 +45,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
     protected override void OnComplete(Faction whichFaction)
     {
       whichFaction.Gold += 1000;
-      foreach (var player in GeneralHelpers.GetAllPlayers())
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         SetPlayerAbilityAvailable(player, Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS, false);
       if (whichFaction.Player != null)
         foreach (var unit in _rescueUnits)
@@ -62,7 +61,7 @@ namespace AzerothWarsCSharp.Source.Quests.Legion
       _musicTimer = new TimerWrapper();
       _musicTimer.Start(6, false, PlayMusic);
 
-      foreach (var player in GeneralHelpers.GetAllPlayers())
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         SetPlayerAbilityAvailable(player, RITUAL_ID, false);
     }
 
