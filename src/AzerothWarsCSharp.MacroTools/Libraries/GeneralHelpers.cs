@@ -21,28 +21,6 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
       PosUnit = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), FourCC("u00X"), 0, 0, 0);
     }
 
-    /// <summary>
-    /// Causes the provided region to be played as ambience whenever a player has their camera near the specified region.
-    /// </summary>
-    /// <param name="add"></param>
-    /// <param name="soundHandle"></param>
-    /// <param name="region"></param>
-    public static void AddSoundToRegion(bool add, sound soundHandle, Rectangle region)
-    {
-      var width = GetRectMaxX(region.Rect) - GetRectMinX(region.Rect);
-      var height = GetRectMaxY(region.Rect) - GetRectMinY(region.Rect);
-
-      SetSoundPosition(soundHandle, GetRectCenterX(region.Rect), GetRectCenterY(region.Rect), 0);
-      if (add)
-      {
-        RegisterStackedSound(soundHandle, true, width, height);
-      }
-      else
-      {
-        UnregisterStackedSound(soundHandle, true, width, height);
-      }
-    }
-
     public static void CameraSetEarthquakeNoise(float magnitude)
     {
       var richter = magnitude;
