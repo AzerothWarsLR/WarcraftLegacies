@@ -18,6 +18,11 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
 
     private readonly TextFrame _text;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ArtifactCard"/> class.
+    /// </summary>
+    /// <param name="artifact">The <see cref="Artifact"/> being represented.</param>
+    /// <param name="parent"><inheritdoc /></param>
     public ArtifactCard(Artifact artifact, Frame parent) : base(parent, BoxWidth, BoxHeight)
     {
       _artifact = artifact;
@@ -61,27 +66,29 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
       artifact.StatusChanged += OnArtifactStatusChanged;
       artifact.FactionChanged += OnArtifactOwnerChanged;
       FactionManager.AnyFactionNameChanged += OnAnyFactionNameChanged;
+      
+      RefreshLocationDescriptionFrame();
     }
 
-    private void OnArtifactOwnerChanged(object? sender, Artifact artifact)
+    /// <summary>
+    /// Updates the description to reflect current <see cref="Artifact.LocationType"/> and <see cref="Artifact.LocationDescription"/> settings.
+    /// </summary>
+    private void RefreshLocationDescriptionFrame()
     {
-      try
-      {
-        _text.Text = $"Owned by {artifact.OwningPlayer?.GetFaction()?.ColoredName}";
-      }
-      catch (Exception ex)
-      {
-        Console.WriteLine(ex);
-      }
-    }
-
-    private void OnArtifactStatusChanged(object? sender, Artifact artifact)
-    {
-      switch (artifact.LocationType)
+      switch (_artifact.LocationType)
       {
         case ArtifactLocationType.Unit:
-          _text.Visible = true;
-          _pingButton.Visible = false;
+          if (_artifact.OwningPlayer?.GetFaction() != null)
+          {
+            _text.Visible = true;
+            _pingButton.Visible = false;
+            _text.Text = $"Owned by {_artifact.OwningPlayer?.GetFaction()?.ColoredName}";
+          }
+          else
+          {
+            _text.Visible = false;
+            _pingButton.Visible = true;
+          }
           break;
         case ArtifactLocationType.Ground:
           _text.Visible = false;
@@ -94,18 +101,51 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
         case ArtifactLocationType.Hidden:
           _text.Visible = true;
           _pingButton.Visible = false;
+          _text.Text = _artifact.LocationDescription;
           break;
         default:
           throw new InvalidEnumArgumentException();
       }
     }
+    
+    private void OnArtifactOwnerChanged(object? sender, Artifact artifact)
+    {
+      try
+      {
+        RefreshLocationDescriptionFrame();
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex);
+      }
+    }
+
+    private void OnArtifactStatusChanged(object? sender, Artifact artifact)
+    {
+      try
+      {
+        RefreshLocationDescriptionFrame();
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex);
+      }
+    }
 
     private void OnAnyFactionNameChanged(object? sender, Faction e)
     {
-      if (e == _artifact.OwningPlayer?.GetFaction()) 
-        OnArtifactOwnerChanged(this, _artifact);
+      try
+      {
+        if (e == _artifact.OwningPlayer?.GetFaction())
+          RefreshLocationDescriptionFrame();
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex);
+      }
     }
 
+    /// <inheritdoc />
     protected override void DisposeEvents()
     {
       _artifact.OwnerChanged -= OnArtifactOwnerChanged;

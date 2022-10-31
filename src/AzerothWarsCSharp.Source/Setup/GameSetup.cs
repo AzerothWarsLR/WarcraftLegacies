@@ -34,6 +34,7 @@ namespace AzerothWarsCSharp.Source.Setup
       TeamSetup.Setup();
       AllFactionSetup.Setup();
       PlayerSetup.Setup();
+      NeutralHostileSetup.Setup();
       ArtifactSetup.Setup();
       AllQuestSetup.Setup();
       //ResearchSetup.Setup();
@@ -60,7 +61,6 @@ namespace AzerothWarsCSharp.Source.Setup
       InfoQuests.Setup();
       DestructibleSetup.Setup();
       ResearchSetup.Setup();
-      NeutralHostileSetup.Setup();
       PreplacedUnitSystem.Shutdown();
       OpenAllianceVote.Setup();
       AugmentSetup.Setup();
