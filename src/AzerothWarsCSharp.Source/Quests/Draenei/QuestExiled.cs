@@ -93,6 +93,17 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
         foreach (var unit in KilledOnFail)
           KillUnit(unit);
     }
+
+    /// <inheritdoc />
+    protected override void OnAdd(Faction whichFaction)
+    {
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(Regions.DraeneiEvacuation).EmptyToList())
+      {
+        SetUnitInvulnerable(unit, true);
+        if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE)) 
+          ShowUnit(unit, false);
+      }
+    }
     
     private static void GrantExiled(player whichPlayer)
     {
