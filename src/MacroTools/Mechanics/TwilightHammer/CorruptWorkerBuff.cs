@@ -1,8 +1,8 @@
-﻿using WarcraftLegacies.MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Mechanics.TwilightHammer
+namespace MacroTools.Mechanics.TwilightHammer
 {
   /// <summary>
   /// Grants the caster vision of the target and increases the caster's income.

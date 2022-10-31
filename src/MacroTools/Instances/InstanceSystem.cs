@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
-using WarcraftLegacies.MacroTools.Libraries;
+using MacroTools.Libraries;
 using WCSharp.Shared.Data;
-
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Instances
+namespace MacroTools.Instances
 {
   public static class InstanceSystem
   {

@@ -1,5 +1,5 @@
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.Instances;
+using MacroTools;
+using MacroTools.Instances;
 
 namespace WarcraftLegacies.Source.Setup
 {

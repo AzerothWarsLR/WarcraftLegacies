@@ -1,5 +1,5 @@
-using WarcraftLegacies.MacroTools.ControlPointSystem;
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools.ControlPointSystem;
+using MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.GameLogic.GameEnd

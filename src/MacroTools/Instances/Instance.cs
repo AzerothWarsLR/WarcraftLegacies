@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using System.Linq;
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.Libraries;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.Extensions;
+using MacroTools.Libraries;
+using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Instances
+namespace MacroTools.Instances
 {
   /// <summary>
   ///   An instance is a region that is physically seperate from all other instances irrespective of its actual geographical

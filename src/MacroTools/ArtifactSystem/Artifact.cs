@@ -1,10 +1,10 @@
 using System;
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools.FactionSystem;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.ArtifactSystem
+namespace MacroTools.ArtifactSystem
 {
   /// <summary>
   ///   Represents a unique item with some significance to the game's lore.

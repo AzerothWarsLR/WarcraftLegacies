@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using WarcraftLegacies.MacroTools.Buffs;
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.Buffs;
+using MacroTools.FactionSystem;
+using MacroTools.Wrappers;
 using WCSharp.Buffs;
 using WCSharp.Events;
 using static War3Api.Common;

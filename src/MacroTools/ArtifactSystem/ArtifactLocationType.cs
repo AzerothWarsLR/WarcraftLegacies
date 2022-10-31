@@ -1,4 +1,4 @@
-﻿namespace WarcraftLegacies.MacroTools.ArtifactSystem
+﻿namespace MacroTools.ArtifactSystem
 {
   /// <summary>
   /// Describes the kind of location that an <see cref="Artifact"/> is in.

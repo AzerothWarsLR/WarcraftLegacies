@@ -1,6 +1,6 @@
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools.FactionSystem;
 
-namespace WarcraftLegacies.TestSource.Setup
+namespace TestMap.Source.Setup
 {
   public static class TeamSetup{
     public static Team TeamLegion { get; private set; }

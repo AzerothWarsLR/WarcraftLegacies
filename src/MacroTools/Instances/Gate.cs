@@ -1,7 +1,7 @@
 ﻿using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Instances
+namespace MacroTools.Instances
 {
   public sealed class Gate
   {

@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using WarcraftLegacies.MacroTools.ArtifactSystem;
+using MacroTools.ArtifactSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Frames.Books.ArtifactSystem
+namespace MacroTools.Frames.Books.ArtifactSystem
 {
   /// <summary>
   ///   Displays all Artifacts in the game.

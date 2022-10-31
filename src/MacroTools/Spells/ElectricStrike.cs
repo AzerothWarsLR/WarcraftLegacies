@@ -1,11 +1,11 @@
 using System;
-using WarcraftLegacies.MacroTools.SpellSystem;
-using WarcraftLegacies.MacroTools.Wrappers;
-using static War3Api.Common;
+using MacroTools.SpellSystem;
+using MacroTools.Wrappers;
 using WCSharp.Effects;
 using WCSharp.Shared.Data;
+using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Spells
+namespace MacroTools.Spells
 {
   /// <summary>
   /// Casts Storm Bolt and Purge on each unit in the target radius.

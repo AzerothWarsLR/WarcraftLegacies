@@ -1,7 +1,7 @@
-﻿using WarcraftLegacies.MacroTools.Augments;
-using WarcraftLegacies.MacroTools.FactionSystem;
+﻿using MacroTools.Augments;
+using MacroTools.FactionSystem;
 
-namespace WarcraftLegacies.TestSource.Setup
+namespace TestMap.Source.Setup
 {
    public static class AugmentSetup
    {

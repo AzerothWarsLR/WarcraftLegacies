@@ -1,7 +1,7 @@
 ﻿using System;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.FactionSystem
+namespace MacroTools.FactionSystem
 {
   public class LegendChangeOwnerEventArgs : EventArgs
   {

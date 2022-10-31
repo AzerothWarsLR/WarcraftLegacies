@@ -1,4 +1,4 @@
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools.FactionSystem;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;

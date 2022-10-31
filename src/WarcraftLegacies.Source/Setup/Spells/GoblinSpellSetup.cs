@@ -1,6 +1,6 @@
-﻿using WarcraftLegacies.MacroTools.PassiveAbilities;
-using WarcraftLegacies.MacroTools.PassiveAbilitySystem;
-using WarcraftLegacies.MacroTools.SpellSystem;
+﻿using MacroTools.PassiveAbilities;
+using MacroTools.PassiveAbilitySystem;
+using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Mechanics.Goblins;
 using static War3Api.Common;
 

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
-    <RootNamespace>AzerothWarsCSharp.Launcher</RootNamespace>
+    <RootNamespace>Launcher</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup>

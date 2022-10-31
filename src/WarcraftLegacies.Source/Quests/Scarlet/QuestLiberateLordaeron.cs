@@ -1,17 +1,16 @@
 using System.Collections.Generic;
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.ControlPointSystem;
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.Libraries;
-using WarcraftLegacies.MacroTools.QuestSystem;
-using WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.ControlPointSystem;
+using MacroTools.Extensions;
+using MacroTools.FactionSystem;
+using MacroTools.Libraries;
+using MacroTools.QuestSystem;
+using MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-using static WarcraftLegacies.MacroTools.Libraries.GeneralHelpers;
+using static MacroTools.Libraries.GeneralHelpers;
 
 namespace WarcraftLegacies.Source.Quests.Scarlet
 {

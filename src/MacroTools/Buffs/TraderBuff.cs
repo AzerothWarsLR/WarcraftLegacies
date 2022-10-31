@@ -1,9 +1,9 @@
-﻿using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.Wrappers;
+﻿using MacroTools.FactionSystem;
+using MacroTools.Wrappers;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Buffs
+namespace MacroTools.Buffs
 {
   /// <summary>
   /// Increases the owner's income by an amount, and destroys the unit when its trade center dies.

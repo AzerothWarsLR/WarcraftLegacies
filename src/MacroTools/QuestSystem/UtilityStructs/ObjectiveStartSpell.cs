@@ -1,8 +1,8 @@
-﻿using WarcraftLegacies.MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using WCSharp.Events;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs
+namespace MacroTools.QuestSystem.UtilityStructs
 {
   /// <summary>
   ///   Completes when a unit starts casting a specific spell.

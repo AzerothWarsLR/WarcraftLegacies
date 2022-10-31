@@ -1,4 +1,4 @@
-namespace WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs
+namespace MacroTools.QuestSystem.UtilityStructs
 {
   public sealed class ObjectiveCompleteQuest : Objective
   {

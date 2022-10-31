@@ -1,9 +1,9 @@
-﻿using WarcraftLegacies.MacroTools.Buffs;
-using WarcraftLegacies.MacroTools.PassiveAbilitySystem;
+﻿using MacroTools.Buffs;
+using MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.PassiveAbilities
+namespace MacroTools.PassiveAbilities
 {
   /// <summary>
   ///   The ability holder summons a unit whenever it attacks, up to one unit alive at a time.

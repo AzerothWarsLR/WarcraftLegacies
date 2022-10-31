@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.QuestSystem;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.FactionSystem;
+using MacroTools.QuestSystem;
+using MacroTools.Wrappers;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.DialogueSystem
+namespace MacroTools.DialogueSystem
 {
   /// <summary>
   /// Can play a piece of dialogue from the Warcraft 3 campaign.

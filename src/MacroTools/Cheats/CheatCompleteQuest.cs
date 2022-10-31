@@ -1,8 +1,8 @@
-﻿using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.QuestSystem;
+﻿using MacroTools.FactionSystem;
+using MacroTools.QuestSystem;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Cheats
+namespace MacroTools.Cheats
 {
   /// <summary>
   /// A cheat that completes a specified <see cref="QuestData"/>.

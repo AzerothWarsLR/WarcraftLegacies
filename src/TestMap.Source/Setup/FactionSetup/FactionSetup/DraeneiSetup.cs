@@ -1,7 +1,7 @@
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools.FactionSystem;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.TestSource.Setup.FactionSetup.FactionSetup
+namespace TestMap.Source.Setup.FactionSetup.FactionSetup
 {
   public static class DraeneiSetup
   {

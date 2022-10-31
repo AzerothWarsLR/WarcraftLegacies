@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.FactionSystem
+namespace MacroTools.FactionSystem
 {
   /// <summary>
   ///   Responsible for the management of all <see cref="Faction" />s and <see cref="Team" />s in the game.

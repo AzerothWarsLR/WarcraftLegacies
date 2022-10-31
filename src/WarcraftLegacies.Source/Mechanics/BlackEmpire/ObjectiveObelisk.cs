@@ -1,5 +1,5 @@
-﻿using WarcraftLegacies.MacroTools.ControlPointSystem;
-using WarcraftLegacies.MacroTools.QuestSystem;
+﻿using MacroTools.ControlPointSystem;
+using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 

@@ -1,10 +1,9 @@
 using System.Collections.Generic;
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools.FactionSystem;
 using WCSharp.Events;
-
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools
+namespace MacroTools
 {
   /// <summary>
   /// An IncompatibleResearchSet is a list of Researchs which are mutually exclusive with each other.

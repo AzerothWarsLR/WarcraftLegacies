@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools.FactionSystem;
 
-namespace WarcraftLegacies.MacroTools.Frames.Books.Powers
+namespace MacroTools.Frames.Books.Powers
 {
   public sealed class PowerPage : Page
   {

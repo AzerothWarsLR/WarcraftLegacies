@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WarcraftLegacies.MacroTools.FactionSystem
+namespace MacroTools.FactionSystem
 {
   public sealed class FactionNameChangeEventArgs : EventArgs
   {

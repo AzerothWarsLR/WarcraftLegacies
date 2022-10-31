@@ -1,7 +1,7 @@
 ﻿using System;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Wrappers
+namespace MacroTools.Wrappers
 {
   public sealed class TriggerWrapper : IDisposable
   {

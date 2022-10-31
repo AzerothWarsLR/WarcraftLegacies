@@ -1,7 +1,7 @@
-using WarcraftLegacies.MacroTools.FactionSystem;
-using static WarcraftLegacies.MacroTools.Libraries.Display;
-using WarcraftLegacies.MacroTools.QuestSystem;
-using WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.FactionSystem;
+using MacroTools.QuestSystem;
+using MacroTools.QuestSystem.UtilityStructs;
+using static MacroTools.Libraries.Display;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 

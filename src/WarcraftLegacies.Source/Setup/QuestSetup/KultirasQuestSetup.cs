@@ -1,4 +1,4 @@
-using WarcraftLegacies.MacroTools;
+using MacroTools;
 using WarcraftLegacies.Source.Quests.KulTiras;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 

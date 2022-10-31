@@ -1,5 +1,5 @@
-using WarcraftLegacies.MacroTools.QuestSystem;
-using WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.QuestSystem;
+using MacroTools.QuestSystem.UtilityStructs;
 
 namespace WarcraftLegacies.Source.Quests.Twilight
 {

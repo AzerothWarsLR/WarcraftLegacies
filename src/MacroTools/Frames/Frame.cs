@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Frames
+namespace MacroTools.Frames
 {
   public class Frame : IDisposable
   {

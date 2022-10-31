@@ -1,10 +1,10 @@
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.Mechanics.TwilightHammer;
-using WarcraftLegacies.MacroTools.Powers;
+using MacroTools.FactionSystem;
+using MacroTools.Mechanics.TwilightHammer;
+using MacroTools.Powers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.TestSource.Setup.FactionSetup.FactionSetup
+namespace TestMap.Source.Setup.FactionSetup.FactionSetup
 {
   public static class BlackEmpireSetup
   {

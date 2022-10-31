@@ -1,9 +1,8 @@
 ﻿using System;
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.ChannelSystem;
-using WarcraftLegacies.MacroTools.ControlPointSystem;
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.Libraries;
+using MacroTools.ChannelSystem;
+using MacroTools.ControlPointSystem;
+using MacroTools.Extensions;
+using MacroTools.Libraries;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Mechanics.BlackEmpire

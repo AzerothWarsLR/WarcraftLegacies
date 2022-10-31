@@ -1,8 +1,8 @@
-﻿using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.Powers;
+﻿using MacroTools.FactionSystem;
+using MacroTools.Powers;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Augments
+namespace MacroTools.Augments
 {
    /// <summary>
    /// An <see cref="Augment"/> that increases a player's income by a fixed amount.

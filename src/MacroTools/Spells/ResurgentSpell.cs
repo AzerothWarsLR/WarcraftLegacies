@@ -1,10 +1,10 @@
 ﻿using System;
-using WarcraftLegacies.MacroTools.Hazards;
-using WarcraftLegacies.MacroTools.SpellSystem;
+using MacroTools.Hazards;
+using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Spells
+namespace MacroTools.Spells
 {
   /// <summary>
   /// Repeatedly casts a spell at the target location.

@@ -1,11 +1,11 @@
 using System;
-using WarcraftLegacies.MacroTools.ArtifactSystem;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.ArtifactSystem;
+using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 
-namespace WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs
+namespace MacroTools.QuestSystem.UtilityStructs
 {
   public sealed class ObjectiveArtifactInRect : Objective
   {

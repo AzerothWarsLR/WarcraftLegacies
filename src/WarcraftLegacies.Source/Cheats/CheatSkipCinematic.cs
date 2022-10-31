@@ -1,4 +1,4 @@
-using WarcraftLegacies.MacroTools.Cheats;
+using MacroTools.Cheats;
 using WarcraftLegacies.Source.GameLogic;
 using static War3Api.Common;
 

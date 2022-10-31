@@ -1,4 +1,4 @@
-﻿using WarcraftLegacies.MacroTools.PassiveAbilitySystem;
+﻿using MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 using static War3Api.Common;
 

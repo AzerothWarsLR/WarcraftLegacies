@@ -1,6 +1,6 @@
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.Powers;
+using MacroTools;
+using MacroTools.FactionSystem;
+using MacroTools.Powers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 

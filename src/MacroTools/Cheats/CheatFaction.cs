@@ -1,8 +1,8 @@
 using System;
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools.FactionSystem;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Cheats
+namespace MacroTools.Cheats
 {
   public static class CheatFaction
   {

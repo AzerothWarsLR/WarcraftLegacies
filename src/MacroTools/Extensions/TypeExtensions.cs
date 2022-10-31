@@ -3,7 +3,7 @@ using System.Linq;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Extensions
+namespace MacroTools.Extensions
 {
   /// <summary>
   /// Useful extensions to the <see cref="Type"/> class.

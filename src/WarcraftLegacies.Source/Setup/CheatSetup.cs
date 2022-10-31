@@ -1,5 +1,5 @@
-﻿using WarcraftLegacies.MacroTools.Cheats;
-using WarcraftLegacies.MacroTools.CheatSystem;
+﻿using MacroTools.Cheats;
+using MacroTools.CheatSystem;
 using WarcraftLegacies.Source.Cheats;
 
 namespace WarcraftLegacies.Source.Setup

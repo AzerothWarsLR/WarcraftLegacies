@@ -1,9 +1,9 @@
 ﻿using System;
-using WarcraftLegacies.MacroTools.Augments;
-using WarcraftLegacies.MacroTools.Frames.Books.Augments;
+using MacroTools.Augments;
+using MacroTools.Frames.Books.Augments;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Cheats
+namespace MacroTools.Cheats
 {
    public static class CheatAugment
    {

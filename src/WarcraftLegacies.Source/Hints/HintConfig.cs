@@ -1,4 +1,4 @@
-using WarcraftLegacies.MacroTools.HintSystem;
+using MacroTools.HintSystem;
 
 namespace WarcraftLegacies.Source.Hints
 {

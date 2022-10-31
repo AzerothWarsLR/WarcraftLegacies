@@ -1,5 +1,5 @@
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.Powers;
+using MacroTools.FactionSystem;
+using MacroTools.Powers;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.FactionSetup

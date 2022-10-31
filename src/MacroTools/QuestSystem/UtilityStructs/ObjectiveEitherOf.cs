@@ -1,7 +1,7 @@
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs
+namespace MacroTools.QuestSystem.UtilityStructs
 {
   public class ObjectiveEitherOf : Objective
   {

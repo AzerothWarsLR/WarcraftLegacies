@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
-using WarcraftLegacies.MacroTools.ControlPointSystem;
-using WarcraftLegacies.MacroTools.Libraries;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.ControlPointSystem;
+using MacroTools.Wrappers;
 using static War3Api.Common;
 
 
-namespace WarcraftLegacies.TestSource.Setup
+namespace TestMap.Source.Setup
 {
   public static class ControlPointSetup
   {

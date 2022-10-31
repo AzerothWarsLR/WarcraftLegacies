@@ -1,4 +1,4 @@
-using WarcraftLegacies.MacroTools;
+using MacroTools;
 using WarcraftLegacies.Source.Quests.Scarlet;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 

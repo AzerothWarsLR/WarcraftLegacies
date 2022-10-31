@@ -1,7 +1,7 @@
 ﻿using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Buffs
+namespace MacroTools.Buffs
 {
   /// <summary>
   /// Summons a unit for the target when the buff is acquired.

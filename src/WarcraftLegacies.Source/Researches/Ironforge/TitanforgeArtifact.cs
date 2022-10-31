@@ -1,8 +1,8 @@
 using System;
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools.ArtifactSystem;
+using MacroTools.FactionSystem;
 using static War3Api.Common;
 using WCSharp.Events;
-using WarcraftLegacies.MacroTools.ArtifactSystem;
 
 namespace WarcraftLegacies.Source.Researches.Ironforge
 {

@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.Extensions;
+using MacroTools.Wrappers;
 using WCSharp.Buffs;
 using WCSharp.Events;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Mechanics.TwilightHammer
+namespace MacroTools.Mechanics.TwilightHammer
 {
   public sealed class CorruptWorkerPeriodicAction : IPeriodicAction
   {

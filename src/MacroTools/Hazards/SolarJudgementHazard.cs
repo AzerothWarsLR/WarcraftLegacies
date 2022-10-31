@@ -1,10 +1,10 @@
-﻿using WarcraftLegacies.MacroTools.Libraries;
-using WarcraftLegacies.MacroTools.SpellSystem;
-using WarcraftLegacies.MacroTools.Wrappers;
+﻿using MacroTools.Libraries;
+using MacroTools.SpellSystem;
+using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common; 
 
-namespace WarcraftLegacies.MacroTools.Hazards
+namespace MacroTools.Hazards
 {
   public sealed class SolarJudgementHazard : Hazard
   {

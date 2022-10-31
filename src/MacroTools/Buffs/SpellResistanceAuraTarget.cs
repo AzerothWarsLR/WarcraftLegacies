@@ -1,7 +1,7 @@
 ﻿using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Buffs
+namespace MacroTools.Buffs
 {
   public sealed class SpellResistanceAuraTarget : AuraBoundBuff
   {

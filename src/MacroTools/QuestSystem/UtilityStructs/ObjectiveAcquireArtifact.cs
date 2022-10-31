@@ -1,8 +1,8 @@
-using WarcraftLegacies.MacroTools.ArtifactSystem;
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools.ArtifactSystem;
+using MacroTools.FactionSystem;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs
+namespace MacroTools.QuestSystem.UtilityStructs
 {
   /// <summary>
   ///   Completes when the quest holder picks up a particular <see cref="Artifact" />.

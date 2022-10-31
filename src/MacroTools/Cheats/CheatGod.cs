@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using WCSharp.Events;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Cheats
+namespace MacroTools.Cheats
 {
   public static class CheatGod
   {

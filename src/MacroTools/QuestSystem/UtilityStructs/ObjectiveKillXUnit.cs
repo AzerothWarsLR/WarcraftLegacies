@@ -1,7 +1,7 @@
 using WCSharp.Events;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs
+namespace MacroTools.QuestSystem.UtilityStructs
 {
   /// <summary>
   ///   Completes when the quest holder has killed a certain number of units of a certain type.

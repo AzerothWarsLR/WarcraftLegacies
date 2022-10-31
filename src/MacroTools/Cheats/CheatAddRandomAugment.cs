@@ -1,9 +1,9 @@
 ﻿using System;
-using WarcraftLegacies.MacroTools.Augments;
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools.Augments;
+using MacroTools.FactionSystem;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Cheats
+namespace MacroTools.Cheats
 {
    /// <summary>
    /// Gives the cheater a random <see cref="Augment"/>.

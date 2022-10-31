@@ -1,5 +1,5 @@
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.Mechanics.TwilightHammer;
+using MacroTools.FactionSystem;
+using MacroTools.Mechanics.TwilightHammer;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.FactionSetup

@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using WarcraftLegacies.MacroTools.DialogueSystem;
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.QuestSystem;
-using WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs;
-using WarcraftLegacies.TestSource.Setup.FactionSetup.FactionSetup;
+using MacroTools.DialogueSystem;
+using MacroTools.FactionSystem;
+using MacroTools.QuestSystem;
+using MacroTools.QuestSystem.UtilityStructs;
+using TestMap.Source.Setup.FactionSetup.FactionSetup;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.TestSource.Setup
+namespace TestMap.Source.Setup
 {
   public static class DialogueSetup
   {

@@ -1,6 +1,6 @@
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.MacroTools.ShoreSystem
+namespace MacroTools.ShoreSystem
 {
   /// <summary>
   /// A position where the beach meets the shore.

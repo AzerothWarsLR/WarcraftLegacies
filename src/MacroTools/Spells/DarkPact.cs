@@ -1,8 +1,8 @@
-﻿using WarcraftLegacies.MacroTools.SpellSystem;
+﻿using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Spells
+namespace MacroTools.Spells
 {
   /// <summary>
   /// Kills a target unit and gives its hitpoints to the caster.

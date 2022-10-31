@@ -1,9 +1,9 @@
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.QuestSystem;
-using WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.FactionSystem;
+using MacroTools.QuestSystem;
+using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
-using static WarcraftLegacies.MacroTools.Libraries.Display; namespace WarcraftLegacies.Source.Quests.Dalaran
+using static MacroTools.Libraries.Display; namespace WarcraftLegacies.Source.Quests.Dalaran
 {
   public sealed class QuestBlueDragons : QuestData
   {

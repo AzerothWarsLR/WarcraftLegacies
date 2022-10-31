@@ -1,6 +1,5 @@
-﻿using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.Wrappers;
+﻿using MacroTools.Extensions;
+using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;

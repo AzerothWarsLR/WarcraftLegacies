@@ -1,5 +1,5 @@
-﻿using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.FactionSystem;
+﻿using MacroTools;
+using MacroTools.FactionSystem;
 using WarcraftLegacies.Source.Quests;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup

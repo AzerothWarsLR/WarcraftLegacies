@@ -1,9 +1,9 @@
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs
+namespace MacroTools.QuestSystem.UtilityStructs
 {
   public sealed class ObjectiveControlLegend : Objective
   {

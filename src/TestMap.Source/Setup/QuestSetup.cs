@@ -1,8 +1,8 @@
-﻿using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.TestSource.Quests;
-using WarcraftLegacies.TestSource.Setup.FactionSetup.FactionSetup;
+﻿using MacroTools.FactionSystem;
+using TestMap.Source.Quests;
+using TestMap.Source.Setup.FactionSetup.FactionSetup;
 
-namespace WarcraftLegacies.TestSource.Setup
+namespace TestMap.Source.Setup
 {
   public static class AllQuestSetup
   {

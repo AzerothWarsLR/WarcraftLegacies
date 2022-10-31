@@ -1,6 +1,6 @@
-﻿using WarcraftLegacies.MacroTools.HintSystem;
+﻿using MacroTools.HintSystem;
 
-namespace WarcraftLegacies.TestSource.Setup
+namespace TestMap.Source.Setup
 {
   public static class HintSetup
   {

@@ -1,7 +1,7 @@
-﻿using WarcraftLegacies.MacroTools.ChannelSystem;
+﻿using MacroTools.ChannelSystem;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Channels
+namespace MacroTools.Channels
 {
   public sealed class SummonLegionChannel : SimpleChannel
   {

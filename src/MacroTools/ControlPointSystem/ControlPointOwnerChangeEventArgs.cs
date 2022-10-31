@@ -1,7 +1,7 @@
 ﻿using System;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.ControlPointSystem
+namespace MacroTools.ControlPointSystem
 {
   public sealed class ControlPointOwnerChangeEventArgs : EventArgs
   {

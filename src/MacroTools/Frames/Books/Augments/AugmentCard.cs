@@ -1,9 +1,9 @@
 ﻿using System;
-using WarcraftLegacies.MacroTools.Augments;
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools.Augments;
+using MacroTools.FactionSystem;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Frames.Books.Augments
+namespace MacroTools.Frames.Books.Augments
 {
    public sealed class AugmentCard : Card
    {

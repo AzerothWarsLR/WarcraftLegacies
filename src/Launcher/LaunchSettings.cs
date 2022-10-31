@@ -1,4 +1,4 @@
-﻿namespace WarcraftLegacies.Launcher
+﻿namespace Launcher
 {
   public sealed class LaunchSettings
   {

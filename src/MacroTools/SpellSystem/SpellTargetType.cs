@@ -1,4 +1,4 @@
-﻿namespace WarcraftLegacies.MacroTools.SpellSystem
+﻿namespace MacroTools.SpellSystem
 {
   public enum SpellTargetType
   {

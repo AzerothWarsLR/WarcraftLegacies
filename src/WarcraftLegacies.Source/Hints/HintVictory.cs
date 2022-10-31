@@ -1,4 +1,4 @@
-using WarcraftLegacies.MacroTools.HintSystem;
+using MacroTools.HintSystem;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 
 namespace WarcraftLegacies.Source.Hints

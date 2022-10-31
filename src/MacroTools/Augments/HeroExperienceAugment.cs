@@ -1,7 +1,7 @@
-﻿using WarcraftLegacies.MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Augments
+namespace MacroTools.Augments
 {
    /// <summary>
    /// An <see cref="Augment"/> that instantly grants experience to a <see cref="Legend"/>.

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.Wrappers;
 using WCSharp.Events;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.PassiveAbilitySystem
+namespace MacroTools.PassiveAbilitySystem
 {
   /// <summary>
   /// Responsible for registering the events that allow <see cref="PassiveAbility"/> instances to work.

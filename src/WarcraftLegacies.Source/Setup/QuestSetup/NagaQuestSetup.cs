@@ -1,4 +1,4 @@
-using WarcraftLegacies.MacroTools.QuestSystem;
+using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
 {

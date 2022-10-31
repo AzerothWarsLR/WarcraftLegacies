@@ -1,8 +1,8 @@
-﻿using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.PassiveAbilitySystem;
+﻿using MacroTools.Extensions;
+using MacroTools.PassiveAbilitySystem;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.PassiveAbilities
+namespace MacroTools.PassiveAbilities
 {
   public sealed class Execute : PassiveAbility
   {

@@ -1,4 +1,4 @@
-﻿namespace WarcraftLegacies.MacroTools.Gates
+﻿namespace MacroTools.Gates
 {
   /// <summary>
   /// Gates are buildings that can open and close.

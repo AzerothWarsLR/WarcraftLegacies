@@ -1,12 +1,12 @@
-﻿using WarcraftLegacies.MacroTools.ArtifactSystem;
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.Powers;
-using WarcraftLegacies.MacroTools.QuestSystem;
-using WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs;
-using WarcraftLegacies.TestSource.Setup;
+﻿using MacroTools.ArtifactSystem;
+using MacroTools.FactionSystem;
+using MacroTools.Powers;
+using MacroTools.QuestSystem;
+using MacroTools.QuestSystem.UtilityStructs;
+using TestMap.Source.Setup;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.TestSource.Quests
+namespace TestMap.Source.Quests
 {
   public sealed class ExampleQuestC : QuestData
   {

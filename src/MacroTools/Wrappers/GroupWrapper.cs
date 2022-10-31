@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Wrappers
+namespace MacroTools.Wrappers
 {
   /// <summary>
   ///   A wrapper for a Warcraft 3 <see cref="group"/>.

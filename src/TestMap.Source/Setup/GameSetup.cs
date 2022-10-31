@@ -1,12 +1,12 @@
-﻿using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.Frames.Books.ArtifactSystem;
-using WarcraftLegacies.MacroTools.Frames.Books.Powers;
-using WarcraftLegacies.MacroTools.Mechanics;
-using WarcraftLegacies.MacroTools.PassiveAbilitySystem;
-using WarcraftLegacies.MacroTools.UserInterface;
+﻿using MacroTools;
+using MacroTools.Frames.Books.ArtifactSystem;
+using MacroTools.Frames.Books.Powers;
+using MacroTools.Mechanics;
+using MacroTools.PassiveAbilitySystem;
+using MacroTools.UserInterface;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.TestSource.Setup
+namespace TestMap.Source.Setup
 {
   public static class GameSetup
   {

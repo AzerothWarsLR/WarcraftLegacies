@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.FactionSystem;
+using MacroTools.QuestSystem.UtilityStructs;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.QuestSystem
+namespace MacroTools.QuestSystem
 {
   public abstract class QuestData
   {

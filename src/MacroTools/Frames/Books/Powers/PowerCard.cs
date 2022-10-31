@@ -1,7 +1,7 @@
-﻿using WarcraftLegacies.MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Frames.Books.Powers
+namespace MacroTools.Frames.Books.Powers
 {
   public sealed class PowerCard : Card
   {

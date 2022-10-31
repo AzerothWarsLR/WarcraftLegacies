@@ -1,8 +1,8 @@
 ﻿using System;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.Wrappers;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.FactionSystem
+namespace MacroTools.FactionSystem
 {
   /// <summary>
   /// A set of helpful extension methods for dealing with Warcraft 3's native player class.

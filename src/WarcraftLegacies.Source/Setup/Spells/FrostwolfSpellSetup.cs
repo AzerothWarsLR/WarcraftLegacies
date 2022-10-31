@@ -1,6 +1,6 @@
-﻿using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.Spells;
-using WarcraftLegacies.MacroTools.SpellSystem;
+﻿using MacroTools;
+using MacroTools.Spells;
+using MacroTools.SpellSystem;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {

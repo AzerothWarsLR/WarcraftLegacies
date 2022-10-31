@@ -1,6 +1,5 @@
-﻿using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.Extensions;
-using static WarcraftLegacies.MacroTools.Libraries.GeneralHelpers;
+﻿using MacroTools.Extensions;
+using static MacroTools.Libraries.GeneralHelpers;
 using static WarcraftLegacies.Source.AmbianceLibrary;
 
 namespace WarcraftLegacies.Source.Setup

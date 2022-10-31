@@ -1,9 +1,8 @@
 ﻿using System;
 using WCSharp.Events;
-
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.SpellSystem
+namespace MacroTools.SpellSystem
 {
   /// <summary>
   ///   A visible but unselectabe effect on the map that causes some periodic effect around it,

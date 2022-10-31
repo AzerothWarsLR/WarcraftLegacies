@@ -1,4 +1,4 @@
-﻿namespace WarcraftLegacies.MacroTools.PassiveAbilitySystem
+﻿namespace MacroTools.PassiveAbilitySystem
 {
   public abstract class TakeDamagePassiveAbility
   {

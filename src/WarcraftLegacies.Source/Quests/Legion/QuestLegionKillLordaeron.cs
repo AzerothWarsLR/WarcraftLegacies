@@ -1,9 +1,8 @@
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.Libraries;
-using WarcraftLegacies.MacroTools.QuestSystem;
-using WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.Extensions;
+using MacroTools.FactionSystem;
+using MacroTools.Libraries;
+using MacroTools.QuestSystem;
+using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Quests.Legion

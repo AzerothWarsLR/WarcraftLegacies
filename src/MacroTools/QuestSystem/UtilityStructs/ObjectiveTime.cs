@@ -1,6 +1,6 @@
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs
+namespace MacroTools.QuestSystem.UtilityStructs
 {
   public class ObjectiveTime : Objective
   {

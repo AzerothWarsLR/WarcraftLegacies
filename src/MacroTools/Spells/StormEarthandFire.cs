@@ -1,10 +1,10 @@
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.SpellSystem;
-using static War3Api.Common;
-using WarcraftLegacies.MacroTools.Libraries;
+using MacroTools.Extensions;
+using MacroTools.Libraries;
+using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
+using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Spells
+namespace MacroTools.Spells
 {
   public sealed class StormEarthandFire : Spell
   {

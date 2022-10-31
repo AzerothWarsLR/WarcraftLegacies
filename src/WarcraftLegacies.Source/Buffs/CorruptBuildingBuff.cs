@@ -1,4 +1,4 @@
-﻿using WarcraftLegacies.MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using WCSharp.Buffs;
 using static War3Api.Common;
 

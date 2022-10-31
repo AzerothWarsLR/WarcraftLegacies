@@ -1,7 +1,7 @@
-﻿using WarcraftLegacies.MacroTools.Wrappers;
+﻿using MacroTools.Wrappers;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Frames
+namespace MacroTools.Frames
 {
    public delegate void OnClickAction(player triggerPlayer);
 

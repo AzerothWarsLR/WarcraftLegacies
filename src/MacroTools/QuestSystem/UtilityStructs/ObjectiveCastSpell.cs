@@ -1,7 +1,7 @@
 using WCSharp.Events;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs
+namespace MacroTools.QuestSystem.UtilityStructs
 {
   /// <summary>
   ///   Completes when a unit casts a specific spell.

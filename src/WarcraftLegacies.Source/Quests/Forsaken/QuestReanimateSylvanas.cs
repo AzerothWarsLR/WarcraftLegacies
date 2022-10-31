@@ -1,7 +1,7 @@
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools.FactionSystem;
+using MacroTools.QuestSystem;
+using MacroTools.QuestSystem.UtilityStructs;
 using static War3Api.Common;
-using WarcraftLegacies.MacroTools.QuestSystem;
-using WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Quests.Forsaken

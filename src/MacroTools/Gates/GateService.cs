@@ -1,9 +1,9 @@
-﻿using WarcraftLegacies.MacroTools.Wrappers;
+﻿using MacroTools.Wrappers;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Gates
+namespace MacroTools.Gates
 {
   /// <summary>
   /// When registered to the <see cref="GateService"/>, <see cref="Gate"/>s play their open animation when opened

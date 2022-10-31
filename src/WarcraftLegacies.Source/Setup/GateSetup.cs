@@ -1,4 +1,4 @@
-﻿using WarcraftLegacies.MacroTools.Gates;
+﻿using MacroTools.Gates;
 
 namespace WarcraftLegacies.Source.Setup
 {

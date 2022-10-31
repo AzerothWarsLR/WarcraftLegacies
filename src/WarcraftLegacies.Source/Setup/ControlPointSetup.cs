@@ -1,6 +1,6 @@
 using System.Collections.Generic;
-using WarcraftLegacies.MacroTools.ControlPointSystem;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.ControlPointSystem;
+using MacroTools.Wrappers;
 using static War3Api.Common;
 
 

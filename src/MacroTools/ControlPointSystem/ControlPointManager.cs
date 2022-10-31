@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.Libraries;
+using MacroTools.Extensions;
+using MacroTools.FactionSystem;
+using MacroTools.Libraries;
 using static War3Api.Common;
 
 
-namespace WarcraftLegacies.MacroTools.ControlPointSystem
+namespace MacroTools.ControlPointSystem
 {
   public static class ControlPointManager
   {

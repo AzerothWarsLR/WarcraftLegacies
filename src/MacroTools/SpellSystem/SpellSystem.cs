@@ -4,7 +4,7 @@ using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.SpellSystem
+namespace MacroTools.SpellSystem
 {
   /// <summary>
   /// Provides a way to extend the functionality of existing Warcraft 3 spells and passive abilities

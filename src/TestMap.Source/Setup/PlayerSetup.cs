@@ -1,8 +1,8 @@
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.TestSource.Setup.FactionSetup.FactionSetup;
+using MacroTools.FactionSystem;
+using TestMap.Source.Setup.FactionSetup.FactionSetup;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.TestSource.Setup
+namespace TestMap.Source.Setup
 {
   public static class PlayerSetup
   {

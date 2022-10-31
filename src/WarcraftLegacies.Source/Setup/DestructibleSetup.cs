@@ -1,4 +1,4 @@
-﻿using WarcraftLegacies.MacroTools;
+﻿using MacroTools;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 

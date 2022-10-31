@@ -1,14 +1,13 @@
 using System.Collections.Generic;
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.QuestSystem;
-using WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.Extensions;
+using MacroTools.FactionSystem;
+using MacroTools.QuestSystem;
+using MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
-using static WarcraftLegacies.MacroTools.Libraries.Display;
+using static MacroTools.Libraries.Display;
 
 namespace WarcraftLegacies.Source.Quests.Quelthalas
 {

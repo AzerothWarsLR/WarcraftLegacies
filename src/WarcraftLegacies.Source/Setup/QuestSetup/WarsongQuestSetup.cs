@@ -1,4 +1,4 @@
-using WarcraftLegacies.MacroTools;
+using MacroTools;
 using WarcraftLegacies.Source.Quests.Warsong;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using static War3Api.Common;

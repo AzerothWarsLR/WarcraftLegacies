@@ -1,8 +1,8 @@
-using WarcraftLegacies.MacroTools.Extensions;
+using MacroTools.Extensions;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs
+namespace MacroTools.QuestSystem.UtilityStructs
 {
   public sealed class ObjectiveKillUnit : Objective
   {

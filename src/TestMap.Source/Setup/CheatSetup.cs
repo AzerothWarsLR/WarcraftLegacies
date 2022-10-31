@@ -1,7 +1,7 @@
-﻿using WarcraftLegacies.MacroTools.Cheats;
-using WarcraftLegacies.MacroTools.CheatSystem;
+﻿using MacroTools.Cheats;
+using MacroTools.CheatSystem;
 
-namespace WarcraftLegacies.TestSource.Setup
+namespace TestMap.Source.Setup
 {
   public static class CheatSetup
   {

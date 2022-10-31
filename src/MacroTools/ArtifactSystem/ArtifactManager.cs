@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.ShoreSystem;
+using MacroTools.Extensions;
+using MacroTools.ShoreSystem;
 using WCSharp.Events;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.ArtifactSystem
+namespace MacroTools.ArtifactSystem
 {
   /// <summary>
   /// Manages all <see cref="Artifact"/>s by maintaining a list of registered <see cref="Artifact"/>s indexed by item type,

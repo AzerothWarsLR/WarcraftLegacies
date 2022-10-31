@@ -1,10 +1,10 @@
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.FactionSystem;
+using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
-using static WarcraftLegacies.MacroTools.Libraries.GeneralHelpers;
+using static MacroTools.Libraries.GeneralHelpers;
 
-namespace WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs
+namespace MacroTools.QuestSystem.UtilityStructs
 {
   /// <summary>
   ///   Bring a unit to a location, where they will channel for some period of time. When it's over, the

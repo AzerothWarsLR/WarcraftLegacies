@@ -1,7 +1,7 @@
-﻿using WarcraftLegacies.MacroTools.PassiveAbilitySystem;
+﻿using MacroTools.PassiveAbilitySystem;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.PassiveAbilities
+namespace MacroTools.PassiveAbilities
 {
   public sealed class AnimationSpeedMultiplier : PassiveAbility
   {

@@ -1,8 +1,8 @@
-﻿using WarcraftLegacies.MacroTools.CheatSystem;
-using WarcraftLegacies.MacroTools.FactionSystem;
+﻿using MacroTools.CheatSystem;
+using MacroTools.FactionSystem;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Cheats
+namespace MacroTools.Cheats
 {
   /// <summary>
   /// A <see cref="Cheat"/> that sets the specified research to the specified level for the cheater.

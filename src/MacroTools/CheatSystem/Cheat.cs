@@ -1,6 +1,6 @@
 ﻿using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.CheatSystem
+namespace MacroTools.CheatSystem
 {
   /// <summary>
   /// A function that a player can execute via the chat, which is only enabled in testing scenarios.

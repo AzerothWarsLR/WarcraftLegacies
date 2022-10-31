@@ -1,6 +1,6 @@
 using System.Collections.Generic;
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.QuestSystem;
+using MacroTools;
+using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Fel_Horde;
 using static WarcraftLegacies.Source.Setup.FactionSetup.FelHordeSetup;
 using static War3Api.Common;

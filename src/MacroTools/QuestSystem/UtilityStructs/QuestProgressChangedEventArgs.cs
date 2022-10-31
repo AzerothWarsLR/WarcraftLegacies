@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs
+namespace MacroTools.QuestSystem.UtilityStructs
 {
   public sealed class QuestProgressChangedEventArgs : EventArgs
   {

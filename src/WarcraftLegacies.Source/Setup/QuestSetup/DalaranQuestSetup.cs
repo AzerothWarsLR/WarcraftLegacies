@@ -1,5 +1,5 @@
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs;
+using MacroTools;
+using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Quests.Dalaran;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using static War3Api.Common;

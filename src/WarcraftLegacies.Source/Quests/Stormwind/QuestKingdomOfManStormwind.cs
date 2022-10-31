@@ -1,13 +1,12 @@
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.ArtifactSystem;
-using WarcraftLegacies.MacroTools.ControlPointSystem;
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.QuestSystem;
-using WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.ArtifactSystem;
+using MacroTools.ControlPointSystem;
+using MacroTools.Extensions;
+using MacroTools.FactionSystem;
+using MacroTools.QuestSystem;
+using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
-using static WarcraftLegacies.MacroTools.Libraries.Display;
+using static MacroTools.Libraries.Display;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Stormwind

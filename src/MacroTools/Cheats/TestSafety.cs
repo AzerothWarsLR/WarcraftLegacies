@@ -1,7 +1,7 @@
-using WarcraftLegacies.MacroTools.Libraries;
+using MacroTools.Libraries;
 using static War3Api.Common; 
 
-namespace WarcraftLegacies.MacroTools.Cheats
+namespace MacroTools.Cheats
 {
   public static class TestSafety
   {

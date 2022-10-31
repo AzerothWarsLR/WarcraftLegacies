@@ -1,9 +1,9 @@
 ﻿using System;
-using WarcraftLegacies.MacroTools.Libraries;
+using MacroTools.Libraries;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Extensions
+namespace MacroTools.Extensions
 {
   /// <summary>
   /// Provides a series of useful extensions to the unit class.

@@ -1,8 +1,8 @@
-﻿using WarcraftLegacies.MacroTools.Powers;
+﻿using MacroTools.Powers;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Buffs
+namespace MacroTools.Buffs
 {
   /// <summary>
   /// Units with this buff use oil instead of mana.

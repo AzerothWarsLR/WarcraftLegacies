@@ -1,6 +1,6 @@
 ﻿using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.PassiveAbilitySystem
+namespace MacroTools.PassiveAbilitySystem
 {
   /// <summary>
   /// A passive ability attached to a specific unit type.

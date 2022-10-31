@@ -1,7 +1,6 @@
-﻿using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.SpellSystem;
-using WarcraftLegacies.MacroTools.Wrappers;
+﻿using MacroTools.Extensions;
+using MacroTools.SpellSystem;
+using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 

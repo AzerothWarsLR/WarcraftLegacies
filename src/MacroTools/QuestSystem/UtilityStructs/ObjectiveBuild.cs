@@ -1,8 +1,7 @@
 using WCSharp.Events;
-
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs
+namespace MacroTools.QuestSystem.UtilityStructs
 {
   public sealed class ObjectiveBuild : Objective
   {

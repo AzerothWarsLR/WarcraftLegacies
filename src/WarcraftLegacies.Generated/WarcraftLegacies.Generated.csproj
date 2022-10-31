@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
-    <RootNamespace>AzerothWarsCSharp.Generated</RootNamespace>
+    <RootNamespace>WarcraftLegacies.Generated</RootNamespace>
   </PropertyGroup>
 
 </Project>

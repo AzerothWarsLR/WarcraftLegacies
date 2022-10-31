@@ -13,7 +13,7 @@ using War3Net.IO.Mpq;
 using WCSharp.ConstantGenerator;
 using CoreSystemProvider = CSharpLua.CoreSystem.CoreSystemProvider;
 
-namespace WarcraftLegacies.Launcher
+namespace Launcher
 {
   internal static class Program
   {

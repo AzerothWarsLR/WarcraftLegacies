@@ -1,8 +1,7 @@
-﻿using WarcraftLegacies.MacroTools.SpellSystem;
-
+﻿using MacroTools.SpellSystem;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Hazards
+namespace MacroTools.Hazards
 {
   public sealed class RecurrentSpellHazard : Hazard
   {

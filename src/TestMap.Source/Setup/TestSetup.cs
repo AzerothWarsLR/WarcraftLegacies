@@ -1,7 +1,7 @@
 ﻿using static War3Api.Common;
 
 
-namespace WarcraftLegacies.TestSource.Setup
+namespace TestMap.Source.Setup
 {
   public static class TestSetup
   {

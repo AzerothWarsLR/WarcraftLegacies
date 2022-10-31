@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WarcraftLegacies.MacroTools.Wrappers
+namespace MacroTools.Wrappers
 {
   /// <summary>
   /// Environmental audio extensions.

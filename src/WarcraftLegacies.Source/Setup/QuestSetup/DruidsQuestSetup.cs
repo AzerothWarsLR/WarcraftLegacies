@@ -1,4 +1,4 @@
-using WarcraftLegacies.MacroTools.QuestSystem;
+using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Druids;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup

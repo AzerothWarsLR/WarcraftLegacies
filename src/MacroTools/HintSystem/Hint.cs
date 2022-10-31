@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.HintSystem
+namespace MacroTools.HintSystem
 {
   public sealed class Hint
   {

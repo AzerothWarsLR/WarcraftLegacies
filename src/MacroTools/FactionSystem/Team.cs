@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.FactionSystem
+namespace MacroTools.FactionSystem
 {
   /// <summary>
   /// A collection of players who are all allied to each other.

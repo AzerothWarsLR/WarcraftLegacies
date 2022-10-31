@@ -1,11 +1,11 @@
-﻿using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.SpellSystem;
-using WarcraftLegacies.MacroTools.Wrappers;
+﻿using MacroTools.Extensions;
+using MacroTools.SpellSystem;
+using MacroTools.Wrappers;
 using WCSharp.Effects;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Spells
+namespace MacroTools.Spells
 {
   /// <summary>
   /// Deals damage and casts a dummy spell at each unit in the area.

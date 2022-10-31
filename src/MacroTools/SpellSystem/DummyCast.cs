@@ -1,8 +1,8 @@
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.SpellSystem
+namespace MacroTools.SpellSystem
 {
   /// <summary>
   /// Provides methods for casting abilities through a dummy unit.

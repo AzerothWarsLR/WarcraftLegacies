@@ -1,4 +1,4 @@
-using WarcraftLegacies.MacroTools.ShoreSystem;
+using MacroTools.ShoreSystem;
 
 namespace WarcraftLegacies.Source.Setup
 {

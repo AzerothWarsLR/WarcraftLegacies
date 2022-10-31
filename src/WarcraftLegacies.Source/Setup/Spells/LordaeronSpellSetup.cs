@@ -1,5 +1,5 @@
-﻿using WarcraftLegacies.MacroTools.Spells;
-using WarcraftLegacies.MacroTools.SpellSystem;
+﻿using MacroTools.Spells;
+using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
 
 namespace WarcraftLegacies.Source.Setup.Spells

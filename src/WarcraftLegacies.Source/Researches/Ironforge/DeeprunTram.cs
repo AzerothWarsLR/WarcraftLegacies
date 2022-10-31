@@ -1,10 +1,10 @@
 using System;
+using MacroTools;
+using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using static War3Api.Common;
 using WarcraftLegacies.Source.Setup.FactionSetup;
-using WarcraftLegacies.MacroTools.FactionSystem;
 using WCSharp.Events;
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.Extensions;
 using WCSharp.Shared.Data;
 using WarcraftLegacies.Source.Setup.Legends;
 

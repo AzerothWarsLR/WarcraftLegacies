@@ -1,7 +1,7 @@
 ﻿using System;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.FactionSystem
+namespace MacroTools.FactionSystem
 {
   /// <summary>
   ///   An ability that can be bestowed on a Faction.

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools;
+using MacroTools.FactionSystem;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;

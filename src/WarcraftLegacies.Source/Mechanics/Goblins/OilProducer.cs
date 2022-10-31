@@ -1,10 +1,9 @@
 ﻿using System;
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.Buffs;
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.PassiveAbilitySystem;
-using WarcraftLegacies.MacroTools.Powers;
+using MacroTools.Buffs;
+using MacroTools.Extensions;
+using MacroTools.FactionSystem;
+using MacroTools.PassiveAbilitySystem;
+using MacroTools.Powers;
 using WCSharp.Buffs;
 using static War3Api.Common;
 

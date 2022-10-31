@@ -1,7 +1,6 @@
 ﻿using System.Linq;
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.Libraries;
+using MacroTools;
+using MacroTools.FactionSystem;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using static War3Api.Common;
 

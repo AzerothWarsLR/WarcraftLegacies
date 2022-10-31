@@ -3,7 +3,7 @@ using WCSharp.Effects;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Buffs
+namespace MacroTools.Buffs
 {
   public sealed class DarkConversionBuff : PassiveBuff
   {

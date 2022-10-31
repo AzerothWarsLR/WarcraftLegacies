@@ -1,5 +1,5 @@
-﻿using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.ControlPointSystem;
+﻿using MacroTools;
+using MacroTools.ControlPointSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 

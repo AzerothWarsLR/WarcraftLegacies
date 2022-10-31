@@ -1,7 +1,7 @@
-﻿using WarcraftLegacies.MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Augments
+namespace MacroTools.Augments
 {
    /// <summary>
    /// A selectable option that gives a particular bonus to a <see cref="Faction"/>.

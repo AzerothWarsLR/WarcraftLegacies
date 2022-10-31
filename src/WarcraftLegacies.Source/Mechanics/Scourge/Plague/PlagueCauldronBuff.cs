@@ -1,4 +1,4 @@
-﻿using WarcraftLegacies.MacroTools.Libraries;
+﻿using MacroTools.Libraries;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;

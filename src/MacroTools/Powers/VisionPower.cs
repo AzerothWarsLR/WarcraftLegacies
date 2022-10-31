@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Powers
+namespace MacroTools.Powers
 {
   /// <summary>
   ///   Grants the <see cref="Faction" /> permanent visibility over one or more <see cref="Rectangle" />s.

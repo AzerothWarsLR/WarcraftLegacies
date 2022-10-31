@@ -1,4 +1,4 @@
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools.FactionSystem;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Events;
 

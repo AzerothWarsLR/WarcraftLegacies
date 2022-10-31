@@ -1,11 +1,10 @@
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.ControlPointSystem;
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.Libraries;
-using WarcraftLegacies.MacroTools.QuestSystem;
-using WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs;
-using static WarcraftLegacies.MacroTools.Libraries.GeneralHelpers;
+using MacroTools.ControlPointSystem;
+using MacroTools.Extensions;
+using MacroTools.FactionSystem;
+using MacroTools.Libraries;
+using MacroTools.QuestSystem;
+using MacroTools.QuestSystem.UtilityStructs;
+using static MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common;
 
 

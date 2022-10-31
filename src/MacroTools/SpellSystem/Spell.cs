@@ -1,7 +1,7 @@
 ﻿using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.SpellSystem
+namespace MacroTools.SpellSystem
 {
   /// <summary>
   /// A castable ability which can be invoked by a unit.

@@ -1,4 +1,4 @@
-﻿using WarcraftLegacies.MacroTools.SpellSystem;
+﻿using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Buffs;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;

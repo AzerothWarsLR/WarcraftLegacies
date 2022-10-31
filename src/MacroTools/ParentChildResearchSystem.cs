@@ -1,8 +1,8 @@
-﻿using WarcraftLegacies.MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using WCSharp.Events;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools
+namespace MacroTools
 {
   /// <summary>
   /// Provides an easy way to force a research's level to always be equal to that of another.

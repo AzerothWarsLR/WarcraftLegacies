@@ -1,12 +1,12 @@
 ﻿using System;
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.PassiveAbilities;
-using WarcraftLegacies.MacroTools.PassiveAbilitySystem;
-using WarcraftLegacies.MacroTools.Spells;
-using WarcraftLegacies.MacroTools.SpellSystem;
+using MacroTools;
+using MacroTools.PassiveAbilities;
+using MacroTools.PassiveAbilitySystem;
+using MacroTools.Spells;
+using MacroTools.SpellSystem;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.TestSource.Setup
+namespace TestMap.Source.Setup
 {
   public static class SpellSetup
   {

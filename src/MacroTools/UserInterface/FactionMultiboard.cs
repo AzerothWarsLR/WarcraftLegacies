@@ -1,10 +1,9 @@
 using System.Collections.Generic;
-using WarcraftLegacies.MacroTools.ControlPointSystem;
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.Libraries;
+using MacroTools.ControlPointSystem;
+using MacroTools.FactionSystem;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.UserInterface
+namespace MacroTools.UserInterface
 {
   /// <summary>
   ///   Displays the name, color, <see cref="Team" />, <see cref="ControlPoint" /> count, and income of all

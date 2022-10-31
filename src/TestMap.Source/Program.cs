@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
-using WarcraftLegacies.TestSource.Setup;
+using TestMap.Source.Setup;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.TestSource
+namespace TestMap.Source
 {
 	public static class Program
 	{

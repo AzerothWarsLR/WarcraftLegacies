@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.QuestSystem;
-using WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools;
+using MacroTools.QuestSystem;
+using MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Mechanics.Scourge.Plague;
 using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Setup.FactionSetup;

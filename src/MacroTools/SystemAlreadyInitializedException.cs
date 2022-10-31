@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WarcraftLegacies.MacroTools
+namespace MacroTools
 {
   /// <summary>
   /// The exception that is thrown when trying to initialize a system that has already been initialized.

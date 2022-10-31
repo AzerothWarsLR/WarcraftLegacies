@@ -1,8 +1,8 @@
-﻿using WarcraftLegacies.ObjectFactory.Abilities;
-using War3Api.Object;
+﻿using War3Api.Object;
 using War3Net.Build;
+using WarcraftLegacies.ObjectFactory.Abilities;
 
-namespace WarcraftLegacies.Launcher
+namespace Launcher
 {
   /// <summary>
   ///   Helper class for adding object data to the map at compile time.

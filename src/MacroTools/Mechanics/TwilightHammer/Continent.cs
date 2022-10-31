@@ -1,6 +1,6 @@
 ﻿using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.MacroTools.Mechanics.TwilightHammer
+namespace MacroTools.Mechanics.TwilightHammer
 {
   public sealed class Continent
   {

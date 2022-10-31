@@ -1,10 +1,9 @@
 using System.Collections.Generic;
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.QuestSystem;
-using WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.Extensions;
+using MacroTools.FactionSystem;
+using MacroTools.QuestSystem;
+using MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;

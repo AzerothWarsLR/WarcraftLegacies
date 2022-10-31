@@ -1,4 +1,4 @@
-﻿using WarcraftLegacies.MacroTools.HintSystem;
+﻿using MacroTools.HintSystem;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.GameLogic

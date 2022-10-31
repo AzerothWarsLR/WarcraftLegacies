@@ -1,10 +1,10 @@
 ﻿using System;
-using WarcraftLegacies.MacroTools.Libraries;
-using WarcraftLegacies.MacroTools.SpellSystem;
+using MacroTools.Libraries;
+using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Spells
+namespace MacroTools.Spells
 {
   public class SummonUnits : Spell
   {

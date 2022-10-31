@@ -1,14 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using WarcraftLegacies.MacroTools.DialogueSystem;
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.DialogueSystem;
+using MacroTools.FactionSystem;
+using MacroTools.QuestSystem.UtilityStructs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
-using Environment = WarcraftLegacies.MacroTools.Libraries.Environment;
+using Environment = MacroTools.Libraries.Environment;
 
-namespace WarcraftLegacies.MacroTools.QuestSystem
+namespace MacroTools.QuestSystem
 {
   public abstract class Objective
   {

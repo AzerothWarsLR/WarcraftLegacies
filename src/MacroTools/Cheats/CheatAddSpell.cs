@@ -1,8 +1,8 @@
-﻿using WarcraftLegacies.MacroTools.CheatSystem;
-using WarcraftLegacies.MacroTools.Wrappers;
+﻿using MacroTools.CheatSystem;
+using MacroTools.Wrappers;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Cheats
+namespace MacroTools.Cheats
 {
   /// <summary>
   /// A <see cref="Cheat"/> that adds a specified spell to all selected units.

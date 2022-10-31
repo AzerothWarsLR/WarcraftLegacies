@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
-using WarcraftLegacies.MacroTools.Buffs;
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.SpellSystem;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.Buffs;
+using MacroTools.Extensions;
+using MacroTools.SpellSystem;
+using MacroTools.Wrappers;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Spells
+namespace MacroTools.Spells
 {
   /// <summary>
   /// Heals nearby friendly units and removes specific abilities from the caster for a limited duration.

@@ -1,6 +1,6 @@
 ﻿using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.SpellSystem
+namespace MacroTools.SpellSystem
 {
   public static class CastFilters
   {

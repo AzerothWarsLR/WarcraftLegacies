@@ -1,8 +1,7 @@
 using System;
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.ArtifactSystem;
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools.ArtifactSystem;
+using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Events;
 using static War3Api.Common;

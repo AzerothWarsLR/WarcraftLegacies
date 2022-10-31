@@ -1,5 +1,5 @@
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.QuestSystem;
+using MacroTools;
+using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Forsaken;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 

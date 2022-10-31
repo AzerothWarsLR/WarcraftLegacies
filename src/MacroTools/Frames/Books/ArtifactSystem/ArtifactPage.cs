@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using WarcraftLegacies.MacroTools.ArtifactSystem;
+using MacroTools.ArtifactSystem;
 
-namespace WarcraftLegacies.MacroTools.Frames.Books.ArtifactSystem
+namespace MacroTools.Frames.Books.ArtifactSystem
 {
   /// <summary>
   ///   Represents a limited number of Artifacts in a rectangular grid.

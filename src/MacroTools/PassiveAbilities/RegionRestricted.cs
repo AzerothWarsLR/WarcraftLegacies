@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.PassiveAbilitySystem;
+using MacroTools.Extensions;
+using MacroTools.PassiveAbilitySystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.PassiveAbilities
+namespace MacroTools.PassiveAbilities
 {
   /// <summary>
   /// Prevents the unit from being created or built outside of particular areas.

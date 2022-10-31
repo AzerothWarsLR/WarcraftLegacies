@@ -1,6 +1,6 @@
 ﻿using War3Api;
 
-namespace WarcraftLegacies.MacroTools
+namespace MacroTools
 {
   /// <summary>
   /// Indicates which special category a <see cref="Common.unit"/> belongs to.

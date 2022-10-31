@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.Libraries;
+using MacroTools;
+using MacroTools.FactionSystem;
+using MacroTools.Libraries;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WarcraftLegacies.MacroTools.Frames
+namespace MacroTools.Frames
 {
   public class FrameEventArgs : EventArgs
   {

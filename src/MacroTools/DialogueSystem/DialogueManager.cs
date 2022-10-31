@@ -1,4 +1,4 @@
-﻿namespace WarcraftLegacies.MacroTools.DialogueSystem
+﻿namespace MacroTools.DialogueSystem
 {
   /// <summary>
   /// Responsible for registering <see cref="Dialogue"/> events and disposing of them when the dialogue finishes playing.

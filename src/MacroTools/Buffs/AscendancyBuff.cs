@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using static War3Api.Common;
 using WCSharp.Buffs;
+using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Buffs
+namespace MacroTools.Buffs
 {
   public class AscendancyBuff : PassiveBuff
   {

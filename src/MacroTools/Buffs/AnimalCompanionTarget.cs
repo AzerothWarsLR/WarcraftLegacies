@@ -1,7 +1,7 @@
-﻿using static War3Api.Common;
-using WCSharp.Buffs;
+﻿using WCSharp.Buffs;
+using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Buffs
+namespace MacroTools.Buffs
 {
   /// <summary>
   /// Causes the buff holder to die when the corresponding <see cref="AnimalCompanionCaster"/> buff is removed.

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.ComponentModel;
-using WarcraftLegacies.MacroTools.ArtifactSystem;
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools.ArtifactSystem;
+using MacroTools.FactionSystem;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Frames.Books.ArtifactSystem
+namespace MacroTools.Frames.Books.ArtifactSystem
 {
   /// <summary>
   ///   Represents a single Artifact in a black rectangle.

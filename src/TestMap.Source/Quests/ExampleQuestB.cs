@@ -1,8 +1,8 @@
-﻿using WarcraftLegacies.MacroTools.QuestSystem;
-using WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs;
+﻿using MacroTools.QuestSystem;
+using MacroTools.QuestSystem.UtilityStructs;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.TestSource.Quests
+namespace TestMap.Source.Quests
 {
   public sealed class ExampleQuestB : QuestData
   {

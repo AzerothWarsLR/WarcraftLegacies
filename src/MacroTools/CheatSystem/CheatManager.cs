@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.Wrappers;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.CheatSystem
+namespace MacroTools.CheatSystem
 {
   /// <summary>
   /// Responsible for managing all <see cref="Cheat"/>s in the game.

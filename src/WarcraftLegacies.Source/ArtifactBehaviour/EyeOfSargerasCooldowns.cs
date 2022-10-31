@@ -1,4 +1,4 @@
-using WarcraftLegacies.MacroTools.SpellSystem;
+using MacroTools.SpellSystem;
 using WCSharp.Events;
 
 using static War3Api.Common;

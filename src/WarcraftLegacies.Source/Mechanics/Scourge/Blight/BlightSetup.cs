@@ -1,4 +1,4 @@
-﻿using WarcraftLegacies.MacroTools;
+﻿using MacroTools;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Mechanics.Scourge.Blight

@@ -1,6 +1,6 @@
 ﻿using WCSharp.Events;
 
-namespace WarcraftLegacies.MacroTools.SpellSystem
+namespace MacroTools.SpellSystem
 {
   public static class HazardSystem
   {

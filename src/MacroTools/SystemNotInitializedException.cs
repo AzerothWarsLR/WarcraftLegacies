@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WarcraftLegacies.MacroTools
+namespace MacroTools
 {
   public sealed class SystemNotInitializedException : Exception
   {

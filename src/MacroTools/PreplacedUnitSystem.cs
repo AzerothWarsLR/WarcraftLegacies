@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using WarcraftLegacies.MacroTools.Libraries;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.Libraries;
+using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 
-namespace WarcraftLegacies.MacroTools
+namespace MacroTools
 {
   /// <summary>
   ///   Once initialized, the system contains a reference to all preplaced units on the map.

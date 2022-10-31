@@ -1,8 +1,7 @@
 using System.Collections.Generic;
-
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools
+namespace MacroTools
 {
   /// <summary>
   /// Contains extra Warcraft Legacies-specific information about Warcraft 3 unit types.

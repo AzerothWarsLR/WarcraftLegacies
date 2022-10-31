@@ -1,14 +1,14 @@
 using System;
 using System.Collections.Generic;
-using WarcraftLegacies.MacroTools.Augments;
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.QuestSystem;
-using WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.Augments;
+using MacroTools.Extensions;
+using MacroTools.QuestSystem;
+using MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.Wrappers;
 using WCSharp.Events;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.FactionSystem
+namespace MacroTools.FactionSystem
 {
   /// <summary>
   ///   Represents a faction in the Azeroth Wars universe, such as Lordaeron, Stormwind, or the Frostwolf Clan.

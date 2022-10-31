@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using WarcraftLegacies.MacroTools.Instances;
+using MacroTools.Instances;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.MacroTools.ShoreSystem
+namespace MacroTools.ShoreSystem
 {
   /// <summary>
   /// Responsible for recording and providing searching for all <see cref="Shore"/>s in the game.

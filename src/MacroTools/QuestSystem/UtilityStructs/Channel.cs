@@ -1,12 +1,11 @@
 ﻿using System;
-using WarcraftLegacies.MacroTools.Libraries;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.Libraries;
+using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
-
 using static War3Api.Common;
-using Environment = WarcraftLegacies.MacroTools.Libraries.Environment;
+using Environment = MacroTools.Libraries.Environment;
 
-namespace WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs
+namespace MacroTools.QuestSystem.UtilityStructs
 {
   public sealed class Channel : IDisposable
   {

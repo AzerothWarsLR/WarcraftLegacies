@@ -1,5 +1,5 @@
-using WarcraftLegacies.MacroTools.Cheats;
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools.Cheats;
+using MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.GameLogic

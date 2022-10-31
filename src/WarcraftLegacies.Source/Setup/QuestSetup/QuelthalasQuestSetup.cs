@@ -1,4 +1,4 @@
-using WarcraftLegacies.MacroTools;
+using MacroTools;
 using WarcraftLegacies.Source.Quests.Quelthalas;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;

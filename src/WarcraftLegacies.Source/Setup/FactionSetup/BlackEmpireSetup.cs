@@ -1,7 +1,7 @@
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.PassiveAbilitySystem;
-using WarcraftLegacies.MacroTools.Powers;
-using WarcraftLegacies.MacroTools.SpellSystem;
+using MacroTools.FactionSystem;
+using MacroTools.PassiveAbilitySystem;
+using MacroTools.Powers;
+using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Mechanics.BlackEmpire;
 using static War3Api.Common;
 

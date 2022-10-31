@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
-using WarcraftLegacies.MacroTools.Libraries;
+using MacroTools.Libraries;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
 
-namespace WarcraftLegacies.MacroTools.Buffs
+namespace MacroTools.Buffs
 {
   /// <summary>
   ///   Surrounds the buff holder with tentacles.

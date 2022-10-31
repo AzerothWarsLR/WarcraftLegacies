@@ -1,7 +1,7 @@
-﻿using WarcraftLegacies.MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Powers
+namespace MacroTools.Powers
 {
    public sealed class LumberIncomePower : Power
    {

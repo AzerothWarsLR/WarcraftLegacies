@@ -1,6 +1,6 @@
 ﻿using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.ChannelSystem
+namespace MacroTools.ChannelSystem
 {
   public abstract class Channel
   {

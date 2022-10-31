@@ -2,7 +2,7 @@
 using WCSharp.Events;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Mechanics
+namespace MacroTools.Mechanics
 {
   /// <summary>
   ///   Notices when a Waygate structure is built and registers it a new <see cref="Waygate" />.

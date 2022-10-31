@@ -1,5 +1,5 @@
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.ArtifactSystem;
+using MacroTools;
+using MacroTools.ArtifactSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 

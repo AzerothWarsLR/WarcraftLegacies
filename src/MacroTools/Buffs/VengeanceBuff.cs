@@ -1,9 +1,8 @@
 ﻿using WCSharp.Buffs;
 using WCSharp.Events;
-
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Buffs
+namespace MacroTools.Buffs
 {
   /// <summary>
   /// The unit becomes a Spirit of Vengeance when this is applied, heaiing for an amount and gaining bonus damage.

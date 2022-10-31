@@ -1,7 +1,7 @@
 //A command that pings all units belonging to the user that have a limit on how many of them can be made.
 
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.FactionSystem;
+using MacroTools.Wrappers;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Commands

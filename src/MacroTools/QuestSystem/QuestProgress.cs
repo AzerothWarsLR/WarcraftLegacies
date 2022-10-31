@@ -1,4 +1,4 @@
-﻿namespace WarcraftLegacies.MacroTools.QuestSystem
+﻿namespace MacroTools.QuestSystem
 {
   public enum QuestProgress
   {

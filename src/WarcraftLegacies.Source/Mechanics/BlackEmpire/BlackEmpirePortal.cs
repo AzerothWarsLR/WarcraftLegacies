@@ -1,7 +1,6 @@
 ﻿using System;
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.ControlPointSystem;
-using WarcraftLegacies.MacroTools.Extensions;
+using MacroTools.ControlPointSystem;
+using MacroTools.Extensions;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;

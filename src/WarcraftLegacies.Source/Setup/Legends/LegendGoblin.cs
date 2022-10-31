@@ -1,5 +1,5 @@
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools;
+using MacroTools.FactionSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {

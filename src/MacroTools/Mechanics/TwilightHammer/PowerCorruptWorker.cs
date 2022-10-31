@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.FactionSystem;
+using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Mechanics.TwilightHammer
+namespace MacroTools.Mechanics.TwilightHammer
 {
   public sealed class PowerCorruptWorker : Power
   {

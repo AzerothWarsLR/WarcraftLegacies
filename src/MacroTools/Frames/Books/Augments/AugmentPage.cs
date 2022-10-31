@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using WarcraftLegacies.MacroTools.Augments;
+using MacroTools.Augments;
 
-namespace WarcraftLegacies.MacroTools.Frames.Books.Augments
+namespace MacroTools.Frames.Books.Augments
 {
    public sealed class AugmentPage : Page
    {

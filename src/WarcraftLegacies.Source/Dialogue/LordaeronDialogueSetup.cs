@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using WarcraftLegacies.MacroTools.DialogueSystem;
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.DialogueSystem;
+using MacroTools.FactionSystem;
+using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 
 namespace WarcraftLegacies.Source.Dialogue

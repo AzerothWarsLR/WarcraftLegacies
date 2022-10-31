@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Augments
+namespace MacroTools.Augments
 {
    /// <summary>
    /// Manages all <see cref="Augments"/> in the game, and can be used to retrieve random Augments.

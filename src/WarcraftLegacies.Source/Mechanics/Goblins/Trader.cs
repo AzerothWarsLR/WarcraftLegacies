@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using WarcraftLegacies.MacroTools;
-using WarcraftLegacies.MacroTools.Buffs;
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.PassiveAbilitySystem;
+using MacroTools.Buffs;
+using MacroTools.Extensions;
+using MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;

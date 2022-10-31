@@ -1,4 +1,4 @@
-namespace WarcraftLegacies.MacroTools.FactionSystem
+namespace MacroTools.FactionSystem
 {
   public enum ScoreStatus
   {

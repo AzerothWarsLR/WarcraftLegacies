@@ -1,11 +1,11 @@
 using System;
-using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.FactionSystem;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.Extensions;
+using MacroTools.FactionSystem;
+using MacroTools.Wrappers;
 using static War3Api.Common;
 
 
-namespace WarcraftLegacies.MacroTools.ControlPointSystem
+namespace MacroTools.ControlPointSystem
 {
   /// <summary>
   ///   An immobile and permanent unit on the map.

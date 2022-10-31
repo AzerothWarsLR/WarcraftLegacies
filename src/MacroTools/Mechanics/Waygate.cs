@@ -1,8 +1,8 @@
 ﻿using System;
-using WarcraftLegacies.MacroTools.Wrappers;
+using MacroTools.Wrappers;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Mechanics
+namespace MacroTools.Mechanics
 {
   public sealed class Waygate
   {

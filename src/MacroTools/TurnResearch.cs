@@ -1,7 +1,6 @@
-﻿using WarcraftLegacies.MacroTools.Libraries;
-using static War3Api.Common;
+﻿using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools
+namespace MacroTools
 {
   /// <summary>
   /// A research that is automatically granted to all players when a particular turn has passed.

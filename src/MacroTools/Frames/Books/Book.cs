@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Frames.Books
+namespace MacroTools.Frames.Books
 {
    public abstract class Book<T> : Frame where T : Page, new()
    {

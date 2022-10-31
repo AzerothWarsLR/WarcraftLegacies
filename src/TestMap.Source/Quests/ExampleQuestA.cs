@@ -1,10 +1,9 @@
-﻿using WarcraftLegacies.MacroTools.QuestSystem;
-using WarcraftLegacies.MacroTools.QuestSystem.UtilityStructs;
-using WarcraftLegacies.TestSource.Setup;
+﻿using MacroTools.QuestSystem;
+using MacroTools.QuestSystem.UtilityStructs;
+using TestMap.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
-namespace WarcraftLegacies.TestSource.Quests
+namespace TestMap.Source.Quests
 {
   public sealed class ExampleQuestA : QuestData
   {

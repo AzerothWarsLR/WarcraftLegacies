@@ -1,6 +1,6 @@
-﻿using WarcraftLegacies.MacroTools.ChannelSystem;
-using WarcraftLegacies.MacroTools.ControlPointSystem;
-using WarcraftLegacies.MacroTools.SpellSystem;
+﻿using MacroTools.ChannelSystem;
+using MacroTools.ControlPointSystem;
+using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 

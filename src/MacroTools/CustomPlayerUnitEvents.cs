@@ -1,7 +1,7 @@
 ﻿using WCSharp.Events;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools
+namespace MacroTools
 {
   public static class CustomPlayerUnitEvents
   {

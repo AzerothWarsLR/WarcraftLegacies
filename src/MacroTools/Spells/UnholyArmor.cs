@@ -1,9 +1,9 @@
-﻿using WarcraftLegacies.MacroTools.Extensions;
-using WarcraftLegacies.MacroTools.SpellSystem;
+﻿using MacroTools.Extensions;
+using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Spells
+namespace MacroTools.Spells
 {
   public sealed class UnholyArmor : Spell
   {

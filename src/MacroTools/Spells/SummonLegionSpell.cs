@@ -1,10 +1,10 @@
-﻿using WarcraftLegacies.MacroTools.Channels;
-using WarcraftLegacies.MacroTools.ChannelSystem;
-using WarcraftLegacies.MacroTools.SpellSystem;
+﻿using MacroTools.Channels;
+using MacroTools.ChannelSystem;
+using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.MacroTools.Spells
+namespace MacroTools.Spells
 {
   public sealed class SummonLegionSpell : Spell
   {

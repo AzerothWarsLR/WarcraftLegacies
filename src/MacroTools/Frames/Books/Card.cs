@@ -1,4 +1,4 @@
-﻿namespace WarcraftLegacies.MacroTools.Frames.Books
+﻿namespace MacroTools.Frames.Books
 {
   public abstract class Card : Frame
   {
