@@ -88,14 +88,7 @@ namespace AzerothWarsCSharp.Source.GameLogic
       
       FogEnable(false);
       FogMaskEnable(false);
-
-      //Todo: uncomment below
-      //DraeneiSetup.Draenei?.Player?.SetCameraLimits(Regions.DraeneiCamLock);
-      if (DraeneiSetup.Draenei?.Player == GetLocalPlayer())
-      {
-        BlzChangeMinimapTerrainTex("war3mapImported\\OutlandMinimap.blp");
-      }
-
+      
       ForsakenSetup.Forsaken?.Player?.SetupCamera(Cameras.Forsaken1, true, 0);
       //Todo: uncomment below
       //NzothSetup.Nzoth.Player.SetupCamera(Cameras.Nazsjatar1, true, 0); 

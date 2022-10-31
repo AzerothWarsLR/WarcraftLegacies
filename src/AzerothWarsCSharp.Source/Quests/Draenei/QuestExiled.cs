@@ -69,6 +69,8 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
           if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) && !IsUnitType(unit, UNIT_TYPE_ANCIENT))
             KillUnit(unit);
       }
+      
+      ResetCamera(completingFaction);
     }
 
     /// <inheritdoc />
@@ -86,8 +88,10 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
         completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 200);
         completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 500);
         RemoveUnit(TheExodar);
-        if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\DraeneiTheme.mp3");
       }
+      
+      completingFaction.Player?.RunLocal(() => PlayThematicMusic("war3mapImported\\DraeneiTheme.mp3"));
+      ResetCamera(completingFaction);
 
       if (KilledOnFail != null)
         foreach (var unit in KilledOnFail)
@@ -103,6 +107,15 @@ namespace AzerothWarsCSharp.Source.Quests.Draenei
         if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE)) 
           ShowUnit(unit, false);
       }
+      
+      whichFaction.Player?.SetCameraLimits(Regions.DraeneiCamLock.Rect);
+      whichFaction.Player?.ChangeMinimapTerrainTexture("war3mapImported\\OutlandMinimap.blp");
+    }
+
+    private static void ResetCamera(Faction whichFaction)
+    {
+      whichFaction.Player?.SetCameraLimits(WCSharp.Shared.Data.Rectangle.WorldBounds.Rect);
+      whichFaction.Player?.ChangeMinimapTerrainTexture("war3mapMap.blp");
     }
     
     private static void GrantExiled(player whichPlayer)
