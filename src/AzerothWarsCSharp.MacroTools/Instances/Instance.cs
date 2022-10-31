@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using AzerothWarsCSharp.MacroTools.Extensions;
 using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Shared.Data;

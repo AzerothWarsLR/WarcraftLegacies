@@ -1,4 +1,5 @@
 ﻿using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.Extensions;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using AzerothWarsCSharp.Source.Setup.Legends;

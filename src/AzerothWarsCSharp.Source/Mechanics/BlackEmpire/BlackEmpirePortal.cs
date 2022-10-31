@@ -1,6 +1,7 @@
 ﻿using System;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ControlPointSystem;
+using AzerothWarsCSharp.MacroTools.Extensions;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;

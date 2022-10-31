@@ -1,4 +1,5 @@
 using System;
+using AzerothWarsCSharp.MacroTools.Extensions;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using static War3Api.Common;

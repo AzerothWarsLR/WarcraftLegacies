@@ -1,5 +1,6 @@
 ﻿using System;
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.Extensions;
 using AzerothWarsCSharp.MacroTools.Libraries;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup.FactionSetup;

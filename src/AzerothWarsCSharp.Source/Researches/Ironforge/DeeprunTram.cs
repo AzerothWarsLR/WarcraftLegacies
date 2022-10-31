@@ -4,6 +4,7 @@ using AzerothWarsCSharp.Source.Setup.FactionSetup;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using WCSharp.Events;
 using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.Extensions;
 using WCSharp.Shared.Data;
 using AzerothWarsCSharp.Source.Setup.Legends;
 

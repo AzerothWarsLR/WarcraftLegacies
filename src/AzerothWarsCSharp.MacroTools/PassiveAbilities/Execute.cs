@@ -1,4 +1,5 @@
-﻿using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
+﻿using AzerothWarsCSharp.MacroTools.Extensions;
+using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
 using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.PassiveAbilities

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.Buffs;
+using AzerothWarsCSharp.MacroTools.Extensions;
 using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Buffs;

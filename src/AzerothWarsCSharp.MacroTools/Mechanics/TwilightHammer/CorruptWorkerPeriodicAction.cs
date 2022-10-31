@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using AzerothWarsCSharp.MacroTools.Extensions;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Buffs;
 using WCSharp.Events;

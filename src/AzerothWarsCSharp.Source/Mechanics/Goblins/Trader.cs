@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.Buffs;
+using AzerothWarsCSharp.MacroTools.Extensions;
 using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;

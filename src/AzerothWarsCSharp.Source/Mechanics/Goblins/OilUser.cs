@@ -1,6 +1,7 @@
 ﻿using System;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.Buffs;
+using AzerothWarsCSharp.MacroTools.Extensions;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.PassiveAbilitySystem;
 using AzerothWarsCSharp.MacroTools.Powers;

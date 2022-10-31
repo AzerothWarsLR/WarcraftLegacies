@@ -1,3 +1,4 @@
+using AzerothWarsCSharp.MacroTools.Extensions;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 

@@ -1,6 +1,7 @@
 using System;
 using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.ArtifactSystem;
+using AzerothWarsCSharp.MacroTools.Extensions;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.Source.Setup;
 using WCSharp.Events;

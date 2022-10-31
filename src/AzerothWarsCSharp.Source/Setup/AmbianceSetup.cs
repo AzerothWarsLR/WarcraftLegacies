@@ -1,4 +1,5 @@
 ﻿using AzerothWarsCSharp.MacroTools;
+using AzerothWarsCSharp.MacroTools.Extensions;
 using static AzerothWarsCSharp.MacroTools.Libraries.GeneralHelpers;
 using static AzerothWarsCSharp.Source.AmbianceLibrary;
 

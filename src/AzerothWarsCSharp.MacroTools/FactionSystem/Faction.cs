@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using AzerothWarsCSharp.MacroTools.Augments;
+using AzerothWarsCSharp.MacroTools.Extensions;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
 using AzerothWarsCSharp.MacroTools.Wrappers;

@@ -3,7 +3,7 @@ using AzerothWarsCSharp.MacroTools.Libraries;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools
+namespace AzerothWarsCSharp.MacroTools.Extensions
 {
   /// <summary>
   /// Provides a series of useful extensions to the unit class.

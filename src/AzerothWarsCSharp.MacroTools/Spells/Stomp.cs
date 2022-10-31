@@ -1,4 +1,5 @@
-﻿using AzerothWarsCSharp.MacroTools.SpellSystem;
+﻿using AzerothWarsCSharp.MacroTools.Extensions;
+using AzerothWarsCSharp.MacroTools.SpellSystem;
 using AzerothWarsCSharp.MacroTools.Wrappers;
 using WCSharp.Effects;
 using WCSharp.Shared.Data;

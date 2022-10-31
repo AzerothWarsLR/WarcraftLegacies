@@ -1,7 +1,7 @@
 ﻿using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools
+namespace AzerothWarsCSharp.MacroTools.Extensions
 {
   public static class ItemExtensions
   {

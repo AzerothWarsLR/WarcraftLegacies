@@ -1,7 +1,7 @@
-﻿using static War3Api.Common;
-using WCSharp.Shared.Data;
+﻿using WCSharp.Shared.Data;
+using static War3Api.Common;
 
-namespace AzerothWarsCSharp.MacroTools
+namespace AzerothWarsCSharp.MacroTools.Extensions
 {
   /// <summary>
   /// Provides a helpful set of extension methods for <see cref="Rectangle"/>s.
