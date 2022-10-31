@@ -3,121 +3,125 @@ using AzerothWarsCSharp.MacroTools;
 using AzerothWarsCSharp.MacroTools.FactionSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem;
 using AzerothWarsCSharp.MacroTools.QuestSystem.UtilityStructs;
+using AzerothWarsCSharp.MacroTools.Wrappers;
 using AzerothWarsCSharp.Source.Setup.Legends;
 using AzerothWarsCSharp.Source.Setup.QuestSetup;
 using static War3Api.Common;
 
-
 namespace AzerothWarsCSharp.Source.Quests.Draenei
 {
+  /// <summary>
+  /// After waiting a while or completing a specific research, the Draenei escape from Outland.
+  /// </summary>
   public sealed class QuestExiled : QuestData
   {
+    /// <summary>
+    /// Initializes a new instance of the <see cref="QuestExiled"/> class.
+    /// </summary>
     public QuestExiled() : base("The Exile from Outland",
       "The Draenei need to escape Outland through the Exodar ship. We will need to power it up with a Divine Citadel first. The longer you hold out, the better the rewards will be",
       "ReplaceableTextures\\CommandButtons\\BTNUndeadAirBarge.blp")
     {
-      AddObjective(new ObjectiveEitherOf(new ObjectiveResearch(FourCC("R080"), FourCC("h09W")),
+      AddObjective(new ObjectiveEitherOf(new ObjectiveResearch(FourCC("R080"), Constants.UNIT_H09W_THE_EXODAR),
         new ObjectiveTime(782)));
       AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendDraenei.LegendExodarship));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = FourCC("R081");
+      ResearchId = Constants.UPGRADE_R081_QUEST_COMPLETED_THE_EXILE_FROM_OUTLAND;
       Global = true;
     }
 
-    public unit GoldMine { get; init; }
+    /// <summary>
+    /// Upon completion, the completing player instantly gains however much gold was still left in this gold mine.
+    /// </summary>
+    public unit? GoldMine { get; init; }
 
-    public IEnumerable<unit> KilledOnFail { get; init; }
+    /// <summary>
+    /// These units are killed when the <see cref="QuestExiled"/> is failed.
+    /// </summary>
+    public IEnumerable<unit>? KilledOnFail { get; init; }
 
     /// <summary>
     ///   Removed from the game when the Draenei escape.
     /// </summary>
-    public unit TheExodar { get; init; }
+    public unit? TheExodar { get; init; }
 
+    /// <inheritdoc />
     protected override string CompletionPopup => "The Draenei have landed on Azuremyst after escaping Outland";
 
+    /// <inheritdoc />
     protected override string RewardDescription =>
       "Control of all units in Azuremyst, gain 200 gold, 500 lumber and teleports all your units away from Outland";
 
-    private static void GrantExiled(player whichPlayer)
-    {
-      group tempGroup = CreateGroup();
-
-      //Transfer all Neutral Passive units in Exiled
-      GroupEnumUnitsInRect(tempGroup, Regions.DraeneiEvacuation.Rect, null);
-      unit u = FirstOfGroup(tempGroup);
-      while (true)
-      {
-        if (u == null) break;
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) u.Rescue(whichPlayer);
-        GroupRemoveUnit(tempGroup, u);
-        u = FirstOfGroup(tempGroup);
-      }
-
-      DestroyGroup(tempGroup);
-    }
-
-    private void EscapeOutland(player whichPlayer)
-    {
-      group tempGroup = CreateGroup();
-
-      //Transfer all Neutral Passive units in Exiled
-      GroupEnumUnitsInRect(tempGroup, Regions.InstanceOutland.Rect, null);
-      unit u = FirstOfGroup(tempGroup);
-      while (true)
-      {
-        if (u == null) break;
-        if (GetOwningPlayer(u) == whichPlayer)
-        {
-          if (IsUnitType(u, UNIT_TYPE_STRUCTURE) && !IsUnitType(u, UNIT_TYPE_ANCIENT))
-            KillUnit(u);
-          else if (!IsUnitType(u, UNIT_TYPE_ANCIENT)) SetUnitPosition(u, -21185, 8000);
-        }
-
-        GroupRemoveUnit(tempGroup, u);
-        u = FirstOfGroup(tempGroup);
-      }
-
-      DestroyGroup(tempGroup);
-    }
-
+    /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      group tempGroup = CreateGroup();
-
       GrantExiled(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      foreach (var unit in KilledOnFail) KillUnit(unit);
+      if (KilledOnFail != null)
+        foreach (var unit in KilledOnFail)
+          KillUnit(unit);
 
       KillUnit(LegendDraenei.LegendVelen.Unit);
 
-      GroupEnumUnitsInRect(tempGroup, Regions.InstanceOutland.Rect, null);
-      unit u = FirstOfGroup(tempGroup);
-      while (true)
+      using var group = new GroupWrapper().EnumUnitsInRect(Regions.InstanceOutland);
+      foreach (var unit in group.EmptyToList())
       {
-        if (u == null) break;
-        if (GetOwningPlayer(u) == completingFaction.Player)
-          if (IsUnitType(u, UNIT_TYPE_STRUCTURE) && !IsUnitType(u, UNIT_TYPE_ANCIENT))
-            KillUnit(u);
-        GroupRemoveUnit(tempGroup, u);
-        u = FirstOfGroup(tempGroup);
+        if (GetOwningPlayer(unit) == completingFaction.Player)
+          if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) && !IsUnitType(unit, UNIT_TYPE_ANCIENT))
+            KillUnit(unit);
       }
-
-      DestroyGroup(tempGroup);
     }
 
+    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 200);
       Player(13).AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 2000 - GetResourceAmount(GoldMine));
-      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 500);
       completingFaction.AddQuest(DraeneiQuestSetup.SHIP_ARGUS);
       DraeneiQuestSetup.SHIP_ARGUS.Progress = QuestProgress.Incomplete;
-      UnitRemoveAbility(LegendDraenei.LegendVelen.Unit, FourCC("ACm2"));
-      GrantExiled(completingFaction.Player);
-      EscapeOutland(completingFaction.Player);
-      RemoveUnit(TheExodar);
-      foreach (var unit in KilledOnFail) KillUnit(unit);
+      UnitRemoveAbility(LegendDraenei.LegendVelen.Unit, Constants.ABILITY_ACM2_SPELL_IMMUNITY_DIVINE_ARMOR);
 
-      if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\DraeneiTheme.mp3");
+      if (completingFaction.Player != null)
+      {
+        GrantExiled(completingFaction.Player);
+        EscapeOutland(completingFaction.Player);
+        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 200);
+        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 500);
+        RemoveUnit(TheExodar);
+        if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\DraeneiTheme.mp3");
+      }
+
+      if (KilledOnFail != null)
+        foreach (var unit in KilledOnFail)
+          KillUnit(unit);
+    }
+
+    /// <inheritdoc />
+    protected override void OnAdd(Faction whichFaction)
+    {
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(Regions.DraeneiEvacuation).EmptyToList())
+      {
+        SetUnitInvulnerable(unit, true);
+        if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE)) 
+          ShowUnit(unit, false);
+      }
+    }
+    
+    private static void GrantExiled(player whichPlayer)
+    {
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(Regions.DraeneiEvacuation.Rect).EmptyToList())
+        if (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE))
+          unit.Rescue(whichPlayer);
+    }
+
+    private static void EscapeOutland(player whichPlayer)
+    {
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(Regions.InstanceOutland.Rect).EmptyToList())
+      {
+        if (GetOwningPlayer(unit) != whichPlayer) continue;
+        if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) && !IsUnitType(unit, UNIT_TYPE_ANCIENT))
+          KillUnit(unit);
+        else if (!IsUnitType(unit, UNIT_TYPE_ANCIENT)) 
+          SetUnitPosition(unit, -21185, 8000);
+      }
     }
   }
 }
