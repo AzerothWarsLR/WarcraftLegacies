@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\WarcraftLegacies.MacroTools\WarcraftLegacies.MacroTools.csproj" />
+        <ProjectReference Include="..\MacroTools\MacroTools.csproj" />
     </ItemGroup>
 
 </Project>

@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarcraftLegacies.Launcher", "src\WarcraftLegacies.Launcher\WarcraftLegacies.Launcher.csproj", "{7467C647-3C6F-437C-A761-7E37542F577C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Launcher", "src\Launcher\Launcher.csproj", "{7467C647-3C6F-437C-A761-7E37542F577C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarcraftLegacies.Source", "src\WarcraftLegacies.Source\WarcraftLegacies.Source.csproj", "{F93D82E3-B6B7-4BBD-B87D-8AD0969BFC94}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarcraftLegacies.Generated", "src\WarcraftLegacies.Generated\WarcraftLegacies.Generated.csproj", "{3DE25822-0AB6-4F6B-B8E3-6353A4068171}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftLegacies.MacroTools", "src\WarcraftLegacies.MacroTools\WarcraftLegacies.MacroTools.csproj", "{E62365A9-413C-44F8-BB5D-2EFF6AFBFEF8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacroTools", "src\MacroTools\MacroTools.csproj", "{E62365A9-413C-44F8-BB5D-2EFF6AFBFEF8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{626B90E8-C679-4658-88F5-2EDE97F940DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftLegacies.TestSource", "src\WarcraftLegacies.TestSource\WarcraftLegacies.TestSource.csproj", "{9507E86D-4F4D-4160-870D-741A5FB8E496}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMap.Source", "src\TestMap.Source\TestMap.Source.csproj", "{9507E86D-4F4D-4160-870D-741A5FB8E496}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftLegacies.ObjectFactory", "src\WarcraftLegacies.ObjectFactory\WarcraftLegacies.ObjectFactory.csproj", "{AD7FD357-7B09-414C-B5E8-9366CE165319}"
 EndProject

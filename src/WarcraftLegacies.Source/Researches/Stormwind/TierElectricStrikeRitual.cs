@@ -1,6 +1,6 @@
-// using WarcraftLegacies.MacroTools.FactionSystem;
+// using MacroTools.FactionSystem;
 //
-// using static War3Api.Common;  using static WarcraftLegacies.MacroTools.GeneralHelpers;
+// using static War3Api.Common;  using static MacroTools.GeneralHelpers;
 // {
 //   public class TierElectricStrikeRitual{
 //

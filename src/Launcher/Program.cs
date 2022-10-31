@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Launcher
   {
     // Input
     private const string SourceCodeProjectFolderPath = @"..\..\..\..\WarcraftLegacies.Source";
-    private const string TestSourceCodeProjectFolderPath = @"..\..\..\..\WarcraftLegacies.TestSource";
+    private const string TestSourceCodeProjectFolderPath = @"..\..\..\..\TestMap.Source";
     private const string AssetsFolderPath = @"..\..\..\..\Assets\";
     private const string BaseMapPath = @"..\..\..\..\..\maps\source.w3x";
     private const string TestMapPath = @"..\..\..\..\..\maps\testsource.w3x";
@@ -110,7 +110,7 @@ namespace WarcraftLegacies.Launcher
       const string csc = Debug ? "-debug -define:DEBUG" : null;
       var csproj = Directory.EnumerateFiles(projectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
       var compiler = new Compiler(csproj, OutputFolderPath, string.Empty, null,
-        "War3Api.*;WCSharp.*;WarcraftLegacies.MacroTools.*", "", csc, false, null,
+        "War3Api.*;WCSharp.*;MacroTools.*", "", csc, false, null,
         string.Empty)
       {
         IsExportMetadata = true,

@@ -2,7 +2,7 @@
 // using WarcraftLegacies.Source.Setup;
 // using WarcraftLegacies.Source.Setup.FactionSetup;
 //
-// using static War3Api.Common;  using static WarcraftLegacies.MacroTools.GeneralHelpers;
+// using static War3Api.Common;  using static MacroTools.GeneralHelpers;
 // {
 //   public class HelmOfDominationDropsWhenScourgeLeaves{
 //
