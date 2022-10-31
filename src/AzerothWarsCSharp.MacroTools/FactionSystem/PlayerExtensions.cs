@@ -4,8 +4,28 @@ using static War3Api.Common;
 
 namespace AzerothWarsCSharp.MacroTools.FactionSystem
 {
+  /// <summary>
+  /// A set of helpful extension methods for dealing with Warcraft 3's native player class.
+  /// </summary>
   public static class PlayerExtensions
   {
+    /// <summary>
+    /// Replaces the minimap background texture with the specified one.
+    /// </summary>
+    public static void ChangeMinimapTerrainTexture(this player whichPlayer, string texturePath)
+    {
+      if (GetLocalPlayer() == whichPlayer) BlzChangeMinimapTerrainTex(texturePath);
+    }
+    
+    /// <summary>
+    /// Runs a function for the player locally, as in, only on their machine.
+    /// <para>This MUST contain asynchronous code only. If synchronous code is used, the game will desynchronize.</para>
+    /// </summary>
+    public static void RunLocal(this player whichPlayer, Action localFunction)
+    {
+      if (GetLocalPlayer() == whichPlayer) localFunction();
+    }
+
     public static void ApplyCameraField(this player whichPlayer, camerafield whichField, float value, float duration)
     {
       if (GetLocalPlayer() != whichPlayer) return;

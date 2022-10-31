@@ -413,7 +413,14 @@ namespace AzerothWarsCSharp.MacroTools.FactionSystem
 
     private void OnQuestProgressChanged(object? sender, QuestProgressChangedEventArgs args)
     {
-      args.Quest.ApplyFactionProgress(this, args.Quest.Progress, args.FormerProgress);
+      try
+      {
+        args.Quest.ApplyFactionProgress(this, args.Quest.Progress, args.FormerProgress);
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex);
+      }
     }
 
     public QuestData AddQuest(QuestData questData)
