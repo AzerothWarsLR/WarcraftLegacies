@@ -107,11 +107,6 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
       return result;
     }
 
-    public static IEnumerable<player> GetAllPlayers()
-    {
-      for (var i = 0; i < Environment.MAX_PLAYERS; i++) yield return Player(i);
-    }
-
     public static void KillNeutralHostileUnitsInRadius(float x, float y, float radius)
     {
       GroupEnumUnitsInRange(TempGroup, x, y, radius, null);

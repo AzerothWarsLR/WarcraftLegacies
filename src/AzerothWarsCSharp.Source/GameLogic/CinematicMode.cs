@@ -113,9 +113,8 @@ namespace AzerothWarsCSharp.Source.GameLogic
       VolumeGroupSetVolume(SOUND_VOLUMEGROUP_AMBIENTSOUNDS, 0);
       VolumeGroupSetVolume(SOUND_VOLUMEGROUP_UI, 0);
       VolumeGroupSetVolume(SOUND_VOLUMEGROUP_SPELLS, 0.4f);
-
-      var allPlayers = GeneralHelpers.GetAllPlayers().ToList();
-      foreach (var player in allPlayers)
+      
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
         if (GetLocalPlayer() == player)
         {
@@ -125,7 +124,7 @@ namespace AzerothWarsCSharp.Source.GameLogic
 
       ForceCinematicSubtitles(true);
 
-      foreach (var player in allPlayers)
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
         if (GetLocalPlayer() == player)
         {
