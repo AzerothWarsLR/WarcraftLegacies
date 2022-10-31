@@ -12,18 +12,18 @@ namespace AzerothWarsCSharp.Source.Setup
   public static class NeutralHostileSetup
   {
     /// <summary>
-    /// Grants all units controlled by Illidari to Neutral Hostile, then gives the actual Illidan hero back to Illidari.
+    /// Grants all units controlled by Illidan to Neutral Hostile, then gives the actual Illidan hero back to Illidan.
     /// </summary>
     public static void Setup()
     {
-      if (IllidariSetup.Illidari == null) return;
-      if (IllidariSetup.Illidari.Player == null) return;
-      foreach (var unit in new GroupWrapper().EnumUnitsOfPlayer(IllidariSetup.Illidari.Player).EmptyToList())
+      if (IllidanSetup.Illidan == null) return;
+      if (IllidanSetup.Illidan.Player == null) return;
+      foreach (var unit in new GroupWrapper().EnumUnitsOfPlayer(IllidanSetup.Illidan.Player).EmptyToList())
       {
         unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
       if (LegendNaga.LegendIllidan.Unit != null) 
-        LegendNaga.LegendIllidan.Unit.SetOwner(IllidariSetup.Illidari.Player);
+        LegendNaga.LegendIllidan.Unit.SetOwner(IllidanSetup.Illidan.Player);
     }
   }
 }
