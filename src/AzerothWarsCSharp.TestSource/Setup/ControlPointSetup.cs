@@ -25,7 +25,7 @@ namespace AzerothWarsCSharp.TestSource.Setup
 
     public static void Setup()
     {
-      var playableMapArea = GeneralHelpers.GetPlayableMapArea();
+      var playableMapArea = WCSharp.Shared.Data.Rectangle.WorldBounds;
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(playableMapArea).EmptyToList())
         InitializeControlPoint(unit);
     }

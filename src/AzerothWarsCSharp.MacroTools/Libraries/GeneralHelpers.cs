@@ -83,14 +83,6 @@ namespace AzerothWarsCSharp.MacroTools.Libraries
       }
     }
 
-    public static Rectangle GetPlayableMapArea()
-    {
-      return new Rectangle(Rect(GetCameraBoundMinX() - GetCameraMargin(CAMERA_MARGIN_LEFT),
-        GetCameraBoundMinY() - GetCameraMargin(CAMERA_MARGIN_BOTTOM),
-        GetCameraBoundMaxX() + GetCameraMargin(CAMERA_MARGIN_RIGHT),
-        GetCameraBoundMaxY() + GetCameraMargin(CAMERA_MARGIN_TOP)));
-    }
-
     public static void SetBlightRadius(player whichPlayer, Point position, float radius, bool addBlight)
     {
       var location = Location(position.X, position.Y);

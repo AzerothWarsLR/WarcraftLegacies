@@ -13,7 +13,7 @@ namespace AzerothWarsCSharp.Source.Commands
       var triggerPlayer = GetTriggerPlayer();
       triggerPlayer.GetFaction().ScoreStatus = ScoreStatus.Defeated;
       FogModifierStart(
-        CreateFogModifierRect(GetTriggerPlayer(), FOG_OF_WAR_VISIBLE, GetPlayableMapArea().Rect, false, false));
+        CreateFogModifierRect(GetTriggerPlayer(), FOG_OF_WAR_VISIBLE, WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, false, false));
     }
 
     public static void Setup()

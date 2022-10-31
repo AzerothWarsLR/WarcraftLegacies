@@ -26,7 +26,7 @@ namespace AzerothWarsCSharp.Source.Setup
         FourCC("OTip")
       };
 
-      EnumDestructablesInRect(GeneralHelpers.GetPlayableMapArea().Rect, null, () =>
+      EnumDestructablesInRect(WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, null, () =>
       {
         foreach (var pathingBlocker in pathingBlockers)
         {

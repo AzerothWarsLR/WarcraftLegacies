@@ -21,7 +21,7 @@ namespace AzerothWarsCSharp.MacroTools.PassiveAbilitySystem
     /// </summary>
     public static void InitializePreplacedUnits()
     {
-      using var group = new GroupWrapper().EnumUnitsInRect(GeneralHelpers.GetPlayableMapArea());
+      using var group = new GroupWrapper().EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds);
       foreach (var unit in group.EmptyToList())
       {
         if (PassiveAbilitiesByUnitTypeId.TryGetValue(GetUnitTypeId(unit), out var passiveAbilities))

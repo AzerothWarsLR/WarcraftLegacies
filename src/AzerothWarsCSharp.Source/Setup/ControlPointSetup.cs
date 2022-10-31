@@ -28,7 +28,7 @@ namespace AzerothWarsCSharp.Source.Setup
 
     public static void Setup()
     {
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(GeneralHelpers.GetPlayableMapArea()).EmptyToList())
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds).EmptyToList())
         InitializeControlPoint(unit);
     }
   }
