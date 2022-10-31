@@ -78,9 +78,17 @@ namespace AzerothWarsCSharp.MacroTools.Frames.Books.ArtifactSystem
       switch (_artifact.LocationType)
       {
         case ArtifactLocationType.Unit:
-          _text.Visible = true;
-          _pingButton.Visible = false;
-          _text.Text = $"Owned by {_artifact.OwningPlayer?.GetFaction()?.ColoredName}";
+          if (_artifact.OwningPlayer?.GetFaction() != null)
+          {
+            _text.Visible = true;
+            _pingButton.Visible = false;
+            _text.Text = $"Owned by {_artifact.OwningPlayer?.GetFaction()?.ColoredName}";
+          }
+          else
+          {
+            _text.Visible = false;
+            _pingButton.Visible = true;
+          }
           break;
         case ArtifactLocationType.Ground:
           _text.Visible = false;
