@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
+        <Nullable>enable</Nullable>
+        <RootNamespace>TestMap.Source</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\MacroTools\MacroTools.csproj" />
+    </ItemGroup>
+
+</Project>
