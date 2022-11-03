@@ -96,6 +96,14 @@ namespace TestMap.Source.Setup
           DamageType = DAMAGE_TYPE_MAGIC
         };
         PassiveAbilityManager.Register(warglaivesOfAzzinoth);
+
+        var stormBoltOnAttack = new SpellOnAttack(FourCC("Udea"), FourCC("AUau"))
+        {
+          DummyAbilityId = FourCC("ANsb"),
+          DummyOrderString = "thunderbolt",
+          ProcChance = 1
+        };
+        PassiveAbilityManager.Register(stormBoltOnAttack);
       }
       catch (Exception ex)
       {
