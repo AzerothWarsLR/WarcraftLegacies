@@ -47,15 +47,7 @@ namespace MacroTools.PassiveAbilitySystem
     {
       try
       {
-        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, passiveAbility.OnDealsDamage, passiveAbility.UnitTypeId);
-        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeIsCreated, UnitCreated, passiveAbility.UnitTypeId);
-        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesBeingTrained, passiveAbility.OnTrained, passiveAbility.UnitTypeId);
-        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, passiveAbility.OnTrainedUnit, passiveAbility.UnitTypeId);
-        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesBeingConstructed, passiveAbility.OnConstruction,
-          passiveAbility.UnitTypeId);
-        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesUpgrade, passiveAbility.OnUpgrade, passiveAbility.UnitTypeId);
-        PlayerUnitEvents.Register(PlayerUnitEvent.HeroTypeFinishesRevive, UnitCreated, passiveAbility.UnitTypeId);
-
+        RegisterEvents(passiveAbility);
         if (!PassiveAbilitiesByUnitTypeId.ContainsKey(passiveAbility.UnitTypeId))
         {
           PassiveAbilitiesByUnitTypeId.Add(passiveAbility.UnitTypeId, new List<PassiveAbility>());
@@ -69,6 +61,21 @@ namespace MacroTools.PassiveAbilitySystem
       }
     }
 
+    private static void RegisterEvents(PassiveAbility passiveAbility)
+    {
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeIsCreated, UnitCreated, passiveAbility.UnitTypeId);
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesBeingTrained, passiveAbility.OnTrained, passiveAbility.UnitTypeId);
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, passiveAbility.OnTrainedUnit, passiveAbility.UnitTypeId);
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesBeingConstructed, passiveAbility.OnConstruction,
+        passiveAbility.UnitTypeId);
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesUpgrade, passiveAbility.OnUpgrade, passiveAbility.UnitTypeId);
+      PlayerUnitEvents.Register(PlayerUnitEvent.HeroTypeFinishesRevive, UnitCreated, passiveAbility.UnitTypeId);
+
+      if (passiveAbility is IAppliesEffectOnDamage appliesEffectOnDamage)
+        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, appliesEffectOnDamage.OnDealsDamage,
+          passiveAbility.UnitTypeId);
+    }
+    
     private static void UnitCreated()
     {
       var triggerUnit = GetTriggerUnit();

@@ -145,9 +145,16 @@ namespace MacroTools.Extensions
     /// <param name="unit">The unit to damage.</param>
     /// <param name="damager">The unit dealing the damage.</param>
     /// <param name="amount">The amount of damage to deal.</param>
-    public static void Damage(this unit unit, unit damager, float amount)
+    /// <param name="attack">Whether or not the damage instance is an attack.</param>
+    /// <param name="ranged">Whether or not the damage instance is considered ranged.</param>
+    /// <param name="attackType">The attack type to use.</param>
+    /// <param name="damageType">The damage type to use.</param>
+    /// <param name="weaponType">The weapon type to use.</param>
+    public static void TakeDamage(this unit unit, unit damager, float amount, bool attack = false, bool ranged = true,
+      attacktype? attackType = null, damagetype? damageType = null, weapontype? weaponType = null)
     {
-      SetUnitState(unit, UNIT_STATE_LIFE, GetUnitState(unit, UNIT_STATE_LIFE) - amount);
+      UnitDamageTarget(damager, unit, amount, attack, ranged, attackType ?? ATTACK_TYPE_NORMAL,
+        damageType ?? DAMAGE_TYPE_MAGIC, weaponType ?? WEAPON_TYPE_WHOKNOWS);
     }
 
     /// <summary>

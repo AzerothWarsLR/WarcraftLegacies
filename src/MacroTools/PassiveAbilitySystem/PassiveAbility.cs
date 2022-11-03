@@ -36,13 +36,6 @@ namespace MacroTools.PassiveAbilitySystem
     }
 
     /// <summary>
-    /// Fired when a unit of the matching unit type deals damage.
-    /// </summary>
-    public virtual void OnDealsDamage()
-    {
-    }
-
-    /// <summary>
     /// Fired when a unit of the matching unit type is created.
     /// </summary>
     /// <param name="createdUnit"></param>

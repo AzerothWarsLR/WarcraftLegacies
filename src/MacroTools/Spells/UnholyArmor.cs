@@ -13,9 +13,7 @@ namespace MacroTools.Spells
     {
     }
 
-    public override void OnCast(unit caster, unit target, Point targetPoint)
-    {
-      target.Damage(caster, GetUnitState(target, UNIT_STATE_LIFE) * PercentageDamage);
-    }
+    public override void OnCast(unit caster, unit target, Point targetPoint) =>
+      target.TakeDamage(caster, GetUnitState(target, UNIT_STATE_LIFE) * PercentageDamage);
   }
 }

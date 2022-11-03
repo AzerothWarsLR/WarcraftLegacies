@@ -4,7 +4,7 @@ using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
 {
-  public sealed class Execute : PassiveAbility
+  public sealed class Execute : PassiveAbility, IAppliesEffectOnDamage
   {
     private const string EFFECT = "Objects\\Spawnmodels\\Human\\HumanLargeDeathExplode\\HumanLargeDeathExplode.mdl";
     private const int DAMAGE_MULT = 5;
@@ -13,7 +13,7 @@ namespace MacroTools.PassiveAbilities
     {
     }
 
-    public override void OnDealsDamage()
+    public void OnDealsDamage()
     {
       unit triggerUnit = GetTriggerUnit();
       if (BlzGetEventIsAttack() && GetUnitState(triggerUnit, UNIT_STATE_LIFE) <
