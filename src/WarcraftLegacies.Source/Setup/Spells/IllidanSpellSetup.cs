@@ -15,7 +15,20 @@ namespace WarcraftLegacies.Source.Setup.Spells
     /// </summary>
     public static void Setup()
     {
-      var warglaivesOfAzzinoth = new WarglaivesOfAzzinoth(Constants.UNIT_EILL_THE_BETRAYER_NAGA,
+      var illidanVariations = new[]
+      {
+        Constants.UNIT_EILL_THE_BETRAYER_NAGA,
+        FourCC("Eidm"),
+        Constants.UNIT_EEVM_DEMON_HUNTER_EVIL_MORPHED,
+        Constants.UNIT_EILM_DEMON_HUNTER,
+        Constants.UNIT_EEVI_BETRAYER_NAGA,
+        Constants.UNIT_E00F_DEMON_HUNTER_EVIL_MORPHED_LEVEL_2,
+        Constants.UNIT_E00G_DEMON_HUNTER_EVIL_MORPHED_LEVEL_3,
+        Constants.UNIT_E00E_DEMON_HUNTER_MORPHED_LEVEL_2,
+        Constants.UNIT_E00D_DEMON_HUNTER_MORPHED_LEVEL_3
+      };
+
+      var warglaivesOfAzzinoth = new WarglaivesOfAzzinoth(illidanVariations,
         Constants.ABILITY_A0YW_WARGLAIVES_OF_AZZINOTH_GREEN_LIGHT_BLUE_ILLIDAN)
       {
         Radius = 150,

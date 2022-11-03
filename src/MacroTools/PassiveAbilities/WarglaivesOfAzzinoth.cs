@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.PassiveAbilitySystem;
@@ -58,6 +59,16 @@ namespace MacroTools.PassiveAbilities
     /// <param name="unitTypeId"><inheritdoc /></param>
     /// <param name="abilityTypeId">The ability the provided unit type has which represents this object.</param>
     public WarglaivesOfAzzinoth(int unitTypeId, int abilityTypeId) : base(unitTypeId)
+    {
+      AbilityTypeId = abilityTypeId;
+    }
+    
+    /// <summary>
+    /// Initializes a new instance of the <see cref="WarglaivesOfAzzinoth"/> class.
+    /// </summary>
+    /// <param name="unitTypeIds"><inheritdoc /></param>
+    /// <param name="abilityTypeId">The ability the provided unit type has which represents this object.</param>
+    public WarglaivesOfAzzinoth(IEnumerable<int> unitTypeIds, int abilityTypeId) : base(unitTypeIds)
     {
       AbilityTypeId = abilityTypeId;
     }
