@@ -95,13 +95,14 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(massBanish);
 
-      var thunderFists = new SpellOnAttack(Constants.ABILITY_A0LN_THUNDER_FISTS_CHO_GALL)
+      var thunderFists = new SpellOnAttack(Constants.UNIT_O01P_LEADER_OF_THE_TWILIGHT_S_HAMMER_TWILIGHT_HAMMER,
+        Constants.ABILITY_A0LN_THUNDER_FISTS_CHO_GALL)
       {
         DummyAbilityId = Constants.ABILITY_A024_THUNDER_FISTS_CHO_GALL_DUMMY_CAST,
         DummyOrderString = "forkedlightning",
         ProcChance = 0.15f
       };
-      SpellSystem.Register(thunderFists);
+      PassiveAbilityManager.Register(thunderFists);
 
       var seismicShard = new MassAnySpell(Constants.ABILITY_A0OD_SEISMIC_SHARD_AZIL)
       {
