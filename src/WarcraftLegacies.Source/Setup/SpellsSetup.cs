@@ -201,9 +201,6 @@ namespace WarcraftLegacies.Source.Setup
           UnitType1 = FourCC("npn4"),
           UnitType2 = FourCC("npn5"),
           UnitType3 = FourCC("npn6"),
-        /// <summary>
-        /// How long the summoned units last.
-        /// </summary>
           Duration = 60.0F,
           EffectTarget = "Abilities\\Spells\\Items\\AIil\\AIilTarget.mdl",
           EffectScaleTarget = 1.0F,
