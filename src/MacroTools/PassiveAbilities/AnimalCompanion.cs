@@ -8,7 +8,7 @@ namespace MacroTools.PassiveAbilities
   /// <summary>
   ///   The ability holder summons a unit whenever it attacks, up to one unit alive at a time.
   /// </summary>
-  public sealed class AnimalCompanion : PassiveAbility
+  public sealed class AnimalCompanion : PassiveAbility, IAppliesEffectOnDamage
   {
     private readonly int _summonUnitTypeId;
 
@@ -24,7 +24,7 @@ namespace MacroTools.PassiveAbilities
     /// </summary>
     public string SpecialEffect { get; init; } = @"Abilities\Spells\Orc\FeralSpirit\feralspiritdone.mdl";
 
-    public override void OnDealsDamage()
+    public void OnDealsDamage()
     {
       var animalCompanionBuff =
         new AnimalCompanionCaster(GetEventDamageSource(), GetEventDamageSource(), _summonUnitTypeId)

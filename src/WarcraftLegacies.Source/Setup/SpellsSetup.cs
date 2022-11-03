@@ -284,6 +284,7 @@ namespace WarcraftLegacies.Source.Setup
       ScourgeSpellSetup.Setup();
       LordaeronSpellSetup.Setup();
       DruidsSpellSetup.Setup();
+      IllidanSpellSetup.Setup();
     }
   }
 }

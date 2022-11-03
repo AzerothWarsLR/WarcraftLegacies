@@ -1,4 +1,5 @@
-﻿using static War3Api.Common;
+﻿using System.Collections.Generic;
+using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilitySystem
 {
@@ -13,13 +14,22 @@ namespace MacroTools.PassiveAbilitySystem
     /// <param name="unitTypeId">The unit type to attach the effect to.</param>
     protected PassiveAbility(int unitTypeId)
     {
-      UnitTypeId = unitTypeId;
+      UnitTypeIds = new[] { unitTypeId };
     }
 
     /// <summary>
-    ///   The unit type that gets this effect.
+    /// Initializes a new instance of the <see cref="PassiveAbility"/> class.
     /// </summary>
-    public int UnitTypeId { get; }
+    /// <param name="unitTypeIds">A list of unit types to attach the effect to.</param>
+    protected PassiveAbility(IEnumerable<int> unitTypeIds)
+    {
+      UnitTypeIds = unitTypeIds;
+    }
+
+    /// <summary>
+    ///   The unit types that gets this effect.
+    /// </summary>
+    public IEnumerable<int> UnitTypeIds { get; }
 
     /// <summary>
     /// Fired when the unit finishes upgrading itself.
@@ -32,13 +42,6 @@ namespace MacroTools.PassiveAbilitySystem
     /// Fired when a unit of the matching unit type finishes being constructed.
     /// </summary>
     public virtual void OnConstruction()
-    {
-    }
-
-    /// <summary>
-    /// Fired when a unit of the matching unit type deals damage.
-    /// </summary>
-    public virtual void OnDealsDamage()
     {
     }
 
