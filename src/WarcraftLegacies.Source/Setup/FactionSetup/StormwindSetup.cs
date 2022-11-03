@@ -47,6 +47,8 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, they will be th
       Stormwind.ModObjectLimit(FourCC("h06Y"), Faction.UNLIMITED); //Arcane Tower
       Stormwind.ModObjectLimit(FourCC("h06Z"), Faction.UNLIMITED); //Arcane Tower (Improved)
       Stormwind.ModObjectLimit(FourCC("h024"), Faction.UNLIMITED); //Light House
+      Stormwind.ModObjectLimit(Constants.UNIT_H05J_CHAMPION_S_HALL_ARATHOR, 1);
+      Stormwind.ModObjectLimit(Constants.UNIT_H05A_WIZARD_S_SANCTUM_DARK_GREEN, 1);
 
       //Units
       Stormwind.ModObjectLimit(FourCC("hpea"), Faction.UNLIMITED); //Peasant
@@ -81,10 +83,6 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, they will be th
       Stormwind.ModObjectLimit(Constants.UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 1);
 
       //Tier researches
-      Stormwind.ModObjectLimit(FourCC("R02S"), Faction.UNLIMITED); //Cathedral of Light
-      Stormwind.ModObjectLimit(FourCC("R02U"), Faction.UNLIMITED); //SI:7 Headquarters
-      Stormwind.ModObjectLimit(FourCC("R02K"), Faction.UNLIMITED); //Wizard)s Sanctum
-      Stormwind.ModObjectLimit(FourCC("R02V"), Faction.UNLIMITED); //Champion)s Hall
       Stormwind.ModObjectLimit(FourCC("R038"), Faction.UNLIMITED); //Enforcer Training
       Stormwind.ModObjectLimit(FourCC("R03E"), Faction.UNLIMITED); //Saboteur Training
       Stormwind.ModObjectLimit(FourCC("R02Y"), Faction.UNLIMITED); //Battle Tactics
@@ -94,7 +92,6 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, they will be th
       Stormwind.ModObjectLimit(FourCC("R03T"), Faction.UNLIMITED); //Electric Strike Ritual
       Stormwind.ModObjectLimit(FourCC("R03U"), Faction.UNLIMITED); //Solar Flare Ritual
       
-      Stormwind.ModAbilityAvailability(Constants.ABILITY_ACAV_DEVOTION_AURA_ARATHOR_CAPITALS, -1);
       Stormwind.ModAbilityAvailability(Constants.ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);
       Stormwind.ModAbilityAvailability(Constants.ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);
       Stormwind.ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
