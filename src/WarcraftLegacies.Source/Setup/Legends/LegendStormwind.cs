@@ -1,6 +1,8 @@
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.Wrappers;
+using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -59,7 +61,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Legend.Register(LegendStormwindkeep);
       LegendStormwindkeep.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND, new Point(9530, -10941)));
       LegendStormwindkeep.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND, new Point(10177, -10952)));
-      
+
       LegendDarkshire = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnit(FourCC("h03Y"))
@@ -71,12 +73,18 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H053_CONSTRUCTION_SITE_ARATHOR_CATHEDRAL_WIZARD)
       };
       ConstructionSiteMagic.Unit.SetInvulnerable(true);
+      CreateTrigger()
+        .RegisterUnitEvent(LegendStormwindkeep.Unit, EVENT_UNIT_DEATH)
+        .AddAction(() => ConstructionSiteMagic.Unit.Kill());
 
       ConstructionSiteMartial = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H055_CONSTRUCTION_SITE_ARATHOR_SI_7_CHAMPION_S_HALL)
       };
       ConstructionSiteMartial.Unit.SetInvulnerable(true);
+      CreateTrigger()
+        .RegisterUnitEvent(LegendStormwindkeep.Unit, EVENT_UNIT_DEATH)
+        .AddAction(() => ConstructionSiteMartial.Unit.Kill());
     }
   }
 }

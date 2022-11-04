@@ -13,6 +13,15 @@ namespace MacroTools.Extensions
     private const float HeroDropDist = 50; //The radius in which heroes spread out items when they drop them
 
     /// <summary>
+    /// Kill the unit instantly.
+    /// </summary>
+    public static unit Kill(this unit whichUnit)
+    {
+      KillUnit(whichUnit);
+      return whichUnit;
+    }
+
+    /// <summary>
     /// Pings the unit on the minimap.
     /// </summary>
     /// <param name="whichUnit">The unit to ping.</param>
