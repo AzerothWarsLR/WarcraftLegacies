@@ -115,6 +115,7 @@ namespace WarcraftLegacies.Source.Setup
       FloatingTextSetup.Setup(60, 10);
       AmbianceSetup.Setup();
       PassiveAbilityManager.InitializePreplacedUnits();
+      IncompatibleResearchSetup.Setup();
     }
   }
 }

@@ -2,7 +2,7 @@
 using WCSharp.Events;
 using static War3Api.Common;
 
-namespace MacroTools
+namespace MacroTools.ResearchSystems
 {
   /// <summary>
   /// Provides an easy way to force a research's level to always be equal to that of another.
