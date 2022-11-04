@@ -22,11 +22,9 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       LegendMagtheridon = new Legend
       {
-        UnitType = FourCC("Nmag")
+        UnitType = Constants.UNIT_NMAG_LORD_OF_OUTLAND_FEL_HORDE,
+        DeathMessage = "Magtheridon’s eternal demon soul has been consumed, and his life permanently extinguished. The Lord of Outland has fallen."
       };
-      LegendMagtheridon.AddUnitDependency(PreplacedUnitSystem.GetUnit(FourCC("o00F")));
-      LegendMagtheridon.DeathMessage =
-        "Magtheridon’s eternal demon soul has been consumed, and his life permanently extinguished. The Lord of Outland has fallen.";
       Legend.Register(LegendMagtheridon);
 
       LegendRend = new Legend

@@ -9,7 +9,6 @@ using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-
 namespace WarcraftLegacies.Source.Quests.Fel_Horde
 {
   public sealed class QuestHellfireCitadel : QuestData
@@ -18,21 +17,23 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     private readonly List<unit> _rescueUnits = new();
 
     //Todo: mediocre flavour
-    public QuestHellfireCitadel(Rectangle rescueRect, List<unit> demonGates) : base("The Citadel",
+    public QuestHellfireCitadel(Rectangle rescueRect, List<unit> demonGates, IEnumerable<QuestData> prerequisites) : base("The Citadel",
       "The clans holding Hellfire Citadel do not respect Kargath authority yet, destroy Murmur to finally establish Magtheridon as the undisputable king of Outland",
       "ReplaceableTextures\\CommandButtons\\BTNFelOrcFortress.blp")
     {
       _demonGates = demonGates;
-      AddObjective(new ObjectiveLegendDead(LegendDraenei.LegendExodarship));
+      foreach (var prerequisite in prerequisites) 
+        AddObjective(new ObjectiveCompleteQuest(prerequisite));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N01J_ZANGARMARSH_15GOLD_MIN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N02N_BLADE_S_EDGE_MOUNTAINS_15GOLD_MIN)));
       AddObjective(new ObjectiveUpgrade(FourCC("o030"), FourCC("o02Y")));
       AddObjective(new ObjectiveExpire(1450));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = FourCC("R00P");
+      ResearchId = Constants.UPGRADE_R00P_QUEST_COMPLETED_THE_CITADEL;
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE))
           _rescueUnits.Add(unit);
+      Required = true;
     }
 
     //Todo: bad flavor
