@@ -11,7 +11,7 @@ This project is a complete rewrite of Warcraft: Legacies in C#.
 5. If step 4 fails, it may be because you need to set up appsettings.json. Navigate to `src\AzerothWarsCSharp.Launcher\` and open `appsettings.json`. Change the Warcraft3ExecutablePath setting to wherever your Warcraft 3 executable is, then repeat step 4.
 
 ## Code Documentation
-* Documentation specific to this project can be found [here](https://azerothwarslr.github.io/AzerothWarsCSharp/). It is still a work-in-progress.
+* Documentation specific to this project can be found [here](https://azerothwarslr.github.io/WarcraftLegacies/). It is still a work-in-progress.
 * You will also need to understand the Warcraft 3 API. Unfortunately documentation is scarce, but method signatures can be found [here](https://github.com/Drake53/War3Api/blob/master/src/War3Api.Common/Common/Common.cs). I recommend using [Hive Workshop](https://www.hiveworkshop.com/) Discord or forum if you need more information.
 
 ## Projects
