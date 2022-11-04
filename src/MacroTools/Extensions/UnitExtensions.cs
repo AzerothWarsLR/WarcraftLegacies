@@ -13,6 +13,15 @@ namespace MacroTools.Extensions
     private const float HeroDropDist = 50; //The radius in which heroes spread out items when they drop them
 
     /// <summary>
+    /// Determines whether or not the unit exists in the game world.
+    /// </summary>
+    public static unit Show(this unit whichUnit, bool show)
+    {
+      ShowUnit(whichUnit, show);
+      return whichUnit;
+    }
+    
+    /// <summary>
     /// Kill the unit instantly.
     /// </summary>
     public static unit Kill(this unit whichUnit)

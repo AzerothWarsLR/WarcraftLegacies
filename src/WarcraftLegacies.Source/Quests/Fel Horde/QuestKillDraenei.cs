@@ -18,6 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09X"))));
       AddObjective(new ObjectiveLegendDead(LegendDraenei.LegendExodarship));
       AddObjective(new ObjectiveSelfExists());
+      Required = true;
     }
 
     protected override string CompletionPopup =>
