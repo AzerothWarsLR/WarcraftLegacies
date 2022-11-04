@@ -32,6 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
+      Required = true;
     }
 
     protected override string CompletionPopup =>

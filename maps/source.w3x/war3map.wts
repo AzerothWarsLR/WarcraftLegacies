@@ -110499,12 +110499,6 @@ STRING 18477
 Fortified Hulls
 }
 
-STRING 18478
-// Upgrades: R08W (Chaos), Name (Name)
-{
-Quest Completed: Threat Eliminated
-}
-
 STRING 18479
 // Units: H0A5 (Sea Witch), Propernames (Proper Names)
 {
@@ -113896,12 +113890,6 @@ STRING 19046
 (Dragonmaw)
 }
 
-STRING 19047
-// Upgrades: R08T (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
-{
-(Dwarf)
-}
-
 STRING 19048
 // Upgrades: R08O (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
@@ -113920,56 +113908,38 @@ STRING 19050
 C
 }
 
-STRING 19051
-// Upgrades: R08T (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
-{
-Awaken the Firelord
-}
-
 STRING 19052
-// Upgrades: R08T (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
 
 STRING 19053
-// Upgrades: R08T (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
 
-STRING 19054
-// Upgrades: R08T (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
-{
-Awaken the Firelord
-}
-
 STRING 19055
-// Upgrades: R08T (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
 
 STRING 19056
-// Upgrades: R08T (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
 
-STRING 19057
-// Upgrades: R08T (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
-{
-You will unally the Alliance and join the Old Gods as a new faction, Ragnaros minions. 
-}
-
 STRING 19058
-// Upgrades: R08T (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 19059
-// Upgrades: R08T (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
@@ -113978,12 +113948,6 @@ STRING 19060
 // Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
-}
-
-STRING 19061
-// Upgrades: R08U (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
-{
-(Dwarf)
 }
 
 STRING 19062
@@ -114004,62 +113968,8 @@ STRING 19064
 C
 }
 
-STRING 19065
-// Upgrades: R08U (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
-{
-Ally the Dark Iron Dwarves
-}
-
-STRING 19066
-// Upgrades: R08U (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
-{
-Fortified Hulls
-}
-
-STRING 19067
-// Upgrades: R08U (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
-{
-Fortified Hulls
-}
-
-STRING 19068
-// Upgrades: R08U (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
-{
-Ally the Dark Iron Dwarves
-}
-
-STRING 19069
-// Upgrades: R08U (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
-{
-Research Fortified Hulls
-}
-
-STRING 19070
-// Upgrades: R08U (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
-{
-Research Fortified Hulls
-}
-
-STRING 19071
-// Upgrades: R08U (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
-{
-You will gain Thaurissan as a hero and complete the Dark Iron Quest
-}
-
-STRING 19072
-// Upgrades: R08U (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
-{
-Further increases the armor of all Naval Units.
-}
-
-STRING 19073
-// Upgrades: R08U (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
-{
-Further increases the armor of all Naval Units.
-}
-
 STRING 19074
-// Upgrades: R08T (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -114293,13 +114203,13 @@ Revive Gronn Overlord
 }
 
 STRING 19114
-// Upgrades: R08T (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 19115
-// Upgrades: R08T (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -114310,52 +114220,16 @@ STRING 19116
 Exploit the Sea Floor
 }
 
-STRING 19117
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
-{
-Fortified Hulls
-}
-
-STRING 19118
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
-{
-Fortified Hulls
-}
-
 STRING 19119
 // Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Exploit the Sea Floor
 }
 
-STRING 19120
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
-{
-Research Fortified Hulls
-}
-
-STRING 19121
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
-{
-Research Fortified Hulls
-}
-
 STRING 19122
 // Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 The Sea floor has many possibilities, exploit them to start rebuilding the Naga forces.
-}
-
-STRING 19123
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
-{
-Further increases the armor of all Naval Units.
-}
-
-STRING 19124
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
-{
-Further increases the armor of all Naval Units.
 }
 
 STRING 19125
@@ -114991,24 +114865,6 @@ STRING 19232
 // Upgrades: R091 (Defend), Hotkey (Hotkey)
 {
 A
-}
-
-STRING 19233
-// Upgrades: R08U (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
-{
-C
-}
-
-STRING 19234
-// Upgrades: R08U (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
-{
-C
-}
-
-STRING 19235
-// Upgrades: R08U (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
-{
-C
 }
 
 STRING 19236
@@ -115966,40 +115822,10 @@ STRING 19399
 S
 }
 
-STRING 19400
-// Upgrades: R08T (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
-{
-X
-}
-
-STRING 19401
-// Upgrades: R08U (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
-{
-Z
-}
-
 STRING 19402
 // Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
-}
-
-STRING 19403
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
-{
-C
-}
-
-STRING 19404
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
-{
-C
-}
-
-STRING 19405
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
-{
-C
 }
 
 STRING 19406

@@ -27,6 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
+      Required = true;
     }
 
     protected override string CompletionPopup => "The Murlocs have been defeated, Thelsamar will join your cause.";
