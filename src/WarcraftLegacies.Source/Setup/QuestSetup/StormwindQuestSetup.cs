@@ -24,6 +24,11 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       stormwind.AddQuest(new QuestHonorHold(Regions.HonorHold));
       stormwind.AddQuest(new QuestKhadgar());
       stormwind.AddQuest(new QuestClosePortal());
+      stormwind.AddQuest(new QuestConstructionSites(new[]
+      {
+        PreplacedUnitSystem.GetUnit(Constants.UNIT_H053_CONSTRUCTION_SITE_ARATHOR_CATHEDRAL_WIZARD),
+        PreplacedUnitSystem.GetUnit(Constants.UNIT_H055_CONSTRUCTION_SITE_ARATHOR_SI_7_CHAMPION_S_HALL)
+      }));
     }
   }
 }

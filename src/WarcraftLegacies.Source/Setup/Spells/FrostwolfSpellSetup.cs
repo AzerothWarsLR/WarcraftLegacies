@@ -1,4 +1,5 @@
 ﻿using MacroTools;
+using MacroTools.ResearchSystems;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 

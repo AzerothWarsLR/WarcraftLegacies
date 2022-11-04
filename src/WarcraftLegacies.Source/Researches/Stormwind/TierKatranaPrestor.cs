@@ -1,19 +1,23 @@
-// using static War3Api.Common;  using static MacroTools.GeneralHelpers;
-// {
-//   public class TierKatranaPrestor{
-//
-//   
-//     private const int DEMI_UNITTYPE_ID = FourCC("n06F");
-//   
-//
-//     private static void Research( ){
-//       CreateUnit(StormwindSetup.Stormwind.Player, DEMI_UNITTYPE_ID, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()), 0);
-//     }
-//
-//     public static void Setup( ){
-//       RegisterResearchFinishedAction(FourCC("R03Y"),  Research);
-//       StormwindSetup.Stormwind.ModObjectLimit(DEMI_UNITTYPE_ID, 1);
-//     }
-//
-//   }
-// }
+using WarcraftLegacies.Source.Setup.FactionSetup;
+using WCSharp.Events;
+using static War3Api.Common;
+
+namespace WarcraftLegacies.Source.Researches.Stormwind
+{
+  public static class TierKatranaPrestor
+  {
+    private const int DemiUnittypeId = Constants.UNIT_N06F_KATRANA_PRESTOR_ARATHOR_DEMI;
+    
+    private static void Research()
+    {
+      CreateUnit(StormwindSetup.Stormwind.Player, DemiUnittypeId, GetUnitX(GetTriggerUnit()),
+        GetUnitY(GetTriggerUnit()), 0);
+    }
+
+    public static void Setup()
+    {
+      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, Research, FourCC("R03Y"));
+      StormwindSetup.Stormwind.ModObjectLimit(DemiUnittypeId, 1);
+    }
+  }
+}
