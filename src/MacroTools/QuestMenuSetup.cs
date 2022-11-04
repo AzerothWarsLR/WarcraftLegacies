@@ -11,7 +11,7 @@ namespace MacroTools
     {
       //Quest frames aren't rendered until the Quest menu is first accessed
       BlzFrameClick(BlzGetFrameByName("UpperButtonBarQuestsButton", 0));
-      ForceUICancel();
+      BlzFrameClick(BlzGetFrameByName("QuestAcceptButton", 0));
       
       var questDisplayBackdrop = BlzGetFrameByName("QuestDisplayBackdrop", 0);
       var questBackdrop = BlzGetFrameByName("QuestBackdrop", 0);

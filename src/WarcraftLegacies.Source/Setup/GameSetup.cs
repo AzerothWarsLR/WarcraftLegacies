@@ -53,8 +53,8 @@ namespace WarcraftLegacies.Source.Setup
       WaygateManager.Setup(Constants.UNIT_N0AO_WAY_GATE_DALARAN);
       BlightSystem.Setup(ScourgeSetup.Scourge);
       BlightSetup.Setup();
-      CinematicMode.Start(59);
       QuestMenuSetup.Setup();
+      CinematicMode.Start(59);
       DialogueSetup.Setup();
       DisplayIntroText.Setup(10);
       GameSettings.Setup();
