@@ -16,28 +16,33 @@ namespace MacroTools.Spells
     /// <summary>
     /// The maximum number of targets that can be drained simultaneously.
     /// </summary>
-    public int CountBase { get; init; }
+    public int TargetCountBase { get; init; }
     
+    /// <summary>
+    /// Gets multiplied by the spell level and added to <see cref="TargetCountBase"/>.
+    /// </summary>
+    public int TargetCountLevel { get; init; }
+
     /// <summary>
     /// How many hit points to drain per second.
     /// </summary>
     public float LifeDrainedPerSecondBase { get; init; }
-    
+
     /// <summary>
     /// How many hit points to drain per second. Gets multiplied by the spell level.
     /// </summary>
     public float LifeDrainedPerSecondLevel { get; init; }
-    
+
     /// <summary>
     /// How much mana to drain per second. Gets multiplied by the spell level.
     /// </summary>
     public float ManaDrainedPerSecondBase { get; init; }
-    
+
     /// <summary>
     /// How much mana to to drain per second. Gets multiplied by the spell level.
     /// </summary>
     public float ManaDrainedPerSecondLevel { get; init; }
-    
+
     /// <summary>
     /// If a unit goes beyond this range, the drain breaks.
     /// </summary>
@@ -47,12 +52,12 @@ namespace MacroTools.Spells
     /// The radius around the target position in which to get units for draining.
     /// </summary>
     public float Radius { get; init; }
-    
+
     /// <summary>
     /// The interval at which to drain units.
     /// </summary>
     public float Interval { get; init; }
-    
+
     /// <summary>
     /// Initializes a new instance of the <see cref="SiphoningRitualSpell"/> class.
     /// </summary>
@@ -64,10 +69,10 @@ namespace MacroTools.Spells
     /// <inheritdoc />
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      var targets = new GroupWrapper().
-        EnumUnitsInRange(targetPoint, Radius).
-        EmptyToList().
-        Where(unit => IsValidTarget(caster, unit));
+      var targets = new GroupWrapper()
+        .EnumUnitsInRange(targetPoint, Radius)
+        .EmptyToList().Where(unit => IsValidTarget(caster, unit))
+        .Take(TargetCountBase + TargetCountLevel * GetAbilityLevel(caster));
       foreach (var unit in targets)
       {
         var channel = new SiphoningRitualChannel(caster, unit, Id)
