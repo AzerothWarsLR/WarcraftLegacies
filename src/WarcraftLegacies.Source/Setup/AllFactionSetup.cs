@@ -28,7 +28,6 @@ namespace WarcraftLegacies.Source.Setup
       ScarletSetup.Setup();
       CthunSetup.Setup();
       ForsakenSetup.Setup();
-      BlackEmpireSetup.Setup();
       DraeneiSetup.Setup();
       NzothSetup.Setup();
     }
