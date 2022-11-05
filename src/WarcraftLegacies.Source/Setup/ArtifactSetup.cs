@@ -30,6 +30,7 @@ namespace WarcraftLegacies.Source.Setup
     public static Artifact? ArtifactAshbringer { get; private set; }
     public static Artifact? ArtifactXalatath { get; private set; }
     public static Artifact? ArtifactZinrokh { get; private set; }
+    public static Artifact? ScytheOfElune { get; private set; }
 
     public static void Setup()
     {
@@ -227,6 +228,13 @@ namespace WarcraftLegacies.Source.Setup
         FalsePosition = new Point(12508, -11437)
       };
       ArtifactManager.Register(ArtifactDemonsoul);
+
+      ScytheOfElune = new Artifact(CreateItem(Constants.ITEM_I00R_SCYTHE_OF_ELUNE, DummyX, DummyX));
+      var worgenBloodShamanHero = PreplacedUnitSystem.GetUnit(Constants.UNIT_O038_WORGEN_BLOOD_SHAMAN_WORGEN_HERO,
+        new Point(5410.7f, 2499.0f));
+      UnitAddAbility(worgenBloodShamanHero, Artifact.ArtifactHolderAbilId);
+      UnitAddItem(worgenBloodShamanHero, ScytheOfElune.Item);
+      ArtifactManager.Register(ScytheOfElune);
     }
   }
 }
