@@ -30,11 +30,6 @@ namespace MacroTools.Channels
     public float Range { get; init; } = float.MaxValue;
 
     /// <summary>
-    /// The time between drains.
-    /// </summary>
-    public float Period { get; init; } = 1;
-    
-    /// <summary>
     /// Initializes a new instance of the <see cref="SiphoningRitualChannel"/> class.
     /// </summary>
     /// <param name="caster"><inheritdoc /></param>
@@ -61,15 +56,15 @@ namespace MacroTools.Channels
       if (GetUnitState(Caster, UNIT_STATE_LIFE) < GetUnitState(Caster, UNIT_STATE_MAX_LIFE) ||
           !IsUnitAlly(_target, GetOwningPlayer(Caster)))
       {
-        _target.TakeDamage(Caster, LifeDrainedPerSecond * Period, ranged: true, damageType: DAMAGE_TYPE_MAGIC);
-        Caster.Heal(Math.Min(LifeDrainedPerSecond * Period, GetUnitState(_target, UNIT_STATE_LIFE)));
+        _target.TakeDamage(Caster, LifeDrainedPerSecond * Interval, ranged: true, damageType: DAMAGE_TYPE_MAGIC);
+        Caster.Heal(Math.Min(LifeDrainedPerSecond * Interval, GetUnitState(_target, UNIT_STATE_LIFE)));
       }
 
       if (GetUnitState(Caster, UNIT_STATE_MANA) < GetUnitState(Caster, UNIT_STATE_MAX_MANA) ||
           !IsUnitAlly(_target, GetOwningPlayer(Caster)))
       {
-        Caster.RestoreMana(Math.Min(ManaDrainedPerSecond * Period, _target.GetMana()));
-        _target.RestoreMana(-ManaDrainedPerSecond * Period);
+        Caster.RestoreMana(Math.Min(ManaDrainedPerSecond * Interval, _target.GetMana()));
+        _target.RestoreMana(-ManaDrainedPerSecond * Interval);
       }
     }
 

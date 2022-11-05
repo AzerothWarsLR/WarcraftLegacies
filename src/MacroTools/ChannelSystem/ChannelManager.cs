@@ -13,7 +13,7 @@ namespace MacroTools.ChannelSystem
     ///   Adds the <see cref="Channel" /> to the system, allowing it to take effect.
     /// </summary>
     public static void Add(Channel channel)
-    {
+    {   
       PeriodicTrigger.Add(channel);
       channel.RegisterCancellationTrigger();
       channel.OnCreate();
