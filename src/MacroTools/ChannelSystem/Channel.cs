@@ -1,18 +1,30 @@
-﻿using static War3Api.Common;
+﻿using System;
+using WCSharp.Events;
+using static War3Api.Common;
 
 namespace MacroTools.ChannelSystem
 {
-  public abstract class Channel
+  /// <summary>
+  /// A spell effect which has to be continually maintained by a caster. If the caster is interrupted, the effect ends.
+  /// </summary>
+  public abstract class Channel : IPeriodicDisposableAction
   {
-    public bool Active { get; set; }
-    public unit Caster { get; }
-    public int SpellId { get; }
-
     /// <summary>
-    ///   The remaining duration before this buff expires.
+    /// The unit that is maintaining the channel. If it dies or is interrupted, the channel ends.
     /// </summary>
-    public float Duration { get; set; }
-
+    public unit Caster { get; }
+    
+    /// <summary>
+    /// The spell being used to represent the channel.
+    /// The duration for it is used to determine the duration of this custom effect.
+    /// </summary>
+    public int SpellId { get; }
+    
+    /// <summary>
+    /// Initializes a new instance of the <see cref="Channel"/> class.
+    /// </summary>
+    /// <param name="caster">The unit maintaining the <see cref="Channel"/>.</param>
+    /// <param name="spellId">The spell ID representing the <see cref="Channel"/>.</param>
     protected Channel(unit caster, int spellId)
     {
       Caster = caster;
@@ -21,63 +33,99 @@ namespace MacroTools.ChannelSystem
       Duration = BlzGetAbilityRealLevelField(ability, ABILITY_RLF_DURATION_NORMAL,
         GetUnitAbilityLevel(Caster, SpellId));
     }
+    
+    private readonly float _interval;
 
     /// <summary>
-    ///   Fired when the caster stops channeling.
+    ///   The interval at which the missile will call <see cref="OnPeriodic" />. Leave at default (0) to disable.
     /// </summary>
-    internal void OnStop()
+    public float Interval
+    {
+      get => _interval;
+      init
+      {
+        _interval = value;
+        _intervalLeft = Math.Max(_interval, _intervalLeft);
+      }
+    }
+
+    /// <summary>
+    ///   The time left until the next call to <see cref="OnPeriodic" />.
+    /// </summary>
+    private float _intervalLeft;
+
+    /// <summary>
+    ///   How long until the <see cref="Channel"/> disappears.
+    /// </summary>
+    public float Duration { get; private set; }
+
+    /// <summary>
+    ///   Called by the system. Do not call yourself.
+    /// </summary>
+    public void Action()
+    {
+      if (Interval > 0) RunInterval();
+    }
+
+    /// <inheritdoc />
+    public void Dispose()
     {
       Active = false;
+      OnDispose();
     }
-    
-    /// <summary>
-    ///   Called by the system. Do not call yourself.
-    /// </summary>
-    public abstract void Apply();
 
     /// <summary>
-    ///   Called by the system. Do not call yourself.
+    /// When false, the <see cref="Channel"/> should be disposed of.
     /// </summary>
-    public abstract void Action();
+    public abstract bool Active { get; set; }
 
     /// <summary>
-    ///   Executes immediately upon registry of the Channel.
+    /// Fired when the <see cref="Channel"/> is initially registered.
     /// </summary>
-    protected virtual void OnApply()
+    public virtual void OnCreate()
     {
     }
 
     /// <summary>
-    ///   Executes when the buff is removed for any reason whatsoever.
+    ///   <para>Override this method if your <see cref="Channel"/> has a periodic effect.</para>
+    ///   <para>For this to be active, <see cref="Interval" /> must be greater than 0.</para>
+    /// </summary>
+    protected virtual void OnPeriodic()
+    {
+    }
+
+    /// <summary>
+    ///   Override this method if your <see cref="Channel"/> has an effect that should trigger when it ends.
     /// </summary>
     protected virtual void OnDispose()
     {
     }
 
     /// <summary>
-    ///   Executes when the Channel expires by reaching the end of its duration. Does not trigger when the buff is removed via
-    ///   a dispel or target dies.
+    ///   Retrieves the LocationZ at the given (X, Y) coordinates.
     /// </summary>
-    protected virtual void OnExpire()
+    protected static float GetZ(float x, float y)
     {
+      var loc = Location(x, y);
+      var z = GetLocationZ(loc);
+      RemoveLocation(loc);
+      return z;
     }
 
     /// <summary>
-    ///   Executes immediately after <see cref="Caster" /> dies.
-    ///   <para>
-    ///     Note: <paramref name="killingBlow" /> will be true if the unit dies while the buffs actions are being evaluated.
-    ///     It may not be directly responsible for the death due to asynchronous events.
-    ///   </para>
+    ///   Runs the Interval related code. Do not call if <see cref="Interval" /> is 0.
     /// </summary>
-    /// <param name="killingBlow"></param>
-    public virtual void OnDeath(bool killingBlow)
+    private void RunInterval()
     {
-    }
+      _intervalLeft -= PeriodicEvents.SYSTEM_INTERVAL;
+      if (_intervalLeft <= 0)
+      {
+        _intervalLeft += Interval;
+        OnPeriodic();
+      }
 
-    /// <summary>
-    ///   Automatically called after <see cref="Active" /> is set to false.
-    ///   <para>Automatically called by the system. Do not call yourself.</para>
-    /// </summary>
-    public abstract void Dispose();
+      Duration -= PeriodicEvents.SYSTEM_INTERVAL;
+      if (Duration <= 0) Dispose();
+    }
   }
 }

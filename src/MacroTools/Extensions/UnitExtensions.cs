@@ -193,6 +193,19 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
+    /// Restore mana to the unit.
+    /// </summary>
+    /// <param name="whichUnit">The unit to restore mana to.</param>
+    /// <param name="amount">How much mana to restore.</param>
+    public static void RestoreMana(this unit whichUnit, float amount) => SetUnitState(whichUnit, UNIT_STATE_MANA,
+      whichUnit.GetMana() + amount);
+
+    /// <summary>
+    /// Returns the current mana value of the unit.
+    /// </summary>
+    public static float GetMana(this unit whichUnit) => GetUnitState(whichUnit, UNIT_STATE_MANA);
+
+    /// <summary>
     /// Heals the specified unit by the specified amount.
     /// </summary>
     /// <param name="unit">The unit to heal.</param>

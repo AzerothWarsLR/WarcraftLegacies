@@ -9,7 +9,10 @@ namespace MacroTools.Channels
     private readonly timer _timer;
     private readonly timerdialog _timerDialog;
 
-    protected override void OnApply()
+    /// <inheritdoc />
+    public override bool Active { get; set; }
+
+    public override void OnCreate()
     {
       UnitAddAbility(Caster, _spellImmunityId);
       TimerStart(_timer, Duration, false, null);
@@ -19,6 +22,7 @@ namespace MacroTools.Channels
       DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "The Burning Legion is being summoned!");
     }
 
+    /// <inheritdoc />
     protected override void OnDispose()
     {
       UnitRemoveAbility(Caster, _spellImmunityId);
