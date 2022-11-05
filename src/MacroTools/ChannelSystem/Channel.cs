@@ -1,30 +1,20 @@
 ﻿using System;
+using MacroTools.Extensions;
 using WCSharp.Events;
 using static War3Api.Common;
 
 namespace MacroTools.ChannelSystem
 {
   /// <summary>
-  /// A spell effect which has to be continually maintained by a caster. If the caster is interrupted, the effect ends.
+  ///   A spell effect which has to be continually maintained by a caster. If the caster is interrupted, the effect ends.
   /// </summary>
   public abstract class Channel : IPeriodicDisposableAction
   {
     /// <summary>
-    /// The unit that is maintaining the channel. If it dies or is interrupted, the channel ends.
+    ///   Initializes a new instance of the <see cref="Channel" /> class.
     /// </summary>
-    public unit Caster { get; }
-    
-    /// <summary>
-    /// The spell being used to represent the channel.
-    /// The duration for it is used to determine the duration of this custom effect.
-    /// </summary>
-    public int SpellId { get; }
-    
-    /// <summary>
-    /// Initializes a new instance of the <see cref="Channel"/> class.
-    /// </summary>
-    /// <param name="caster">The unit maintaining the <see cref="Channel"/>.</param>
-    /// <param name="spellId">The spell ID representing the <see cref="Channel"/>.</param>
+    /// <param name="caster">The unit maintaining the <see cref="Channel" />.</param>
+    /// <param name="spellId">The spell ID representing the <see cref="Channel" />.</param>
     protected Channel(unit caster, int spellId)
     {
       Caster = caster;
@@ -35,6 +25,19 @@ namespace MacroTools.ChannelSystem
     }
     
     private readonly float _interval;
+    private trigger? _cancelTrigger;
+    private float _intervalLeft;
+
+    /// <summary>
+    ///   The unit that is maintaining the channel. If it dies or is interrupted, the channel ends.
+    /// </summary>
+    public unit Caster { get; }
+
+    /// <summary>
+    ///   The spell being used to represent the channel.
+    ///   The duration for it is used to determine the duration of this custom effect.
+    /// </summary>
+    public int SpellId { get; }
 
     /// <summary>
     ///   The interval at which the missile will call <see cref="OnPeriodic" />. Leave at default (0) to disable.
@@ -50,14 +53,9 @@ namespace MacroTools.ChannelSystem
     }
 
     /// <summary>
-    ///   The time left until the next call to <see cref="OnPeriodic" />.
+    ///   How long until the <see cref="Channel" /> disappears.
     /// </summary>
-    private float _intervalLeft;
-
-    /// <summary>
-    ///   How long until the <see cref="Channel"/> disappears.
-    /// </summary>
-    public float Duration { get; private set; }
+    public float Duration { get; set; }
 
     /// <summary>
     ///   Called by the system. Do not call yourself.
@@ -71,23 +69,34 @@ namespace MacroTools.ChannelSystem
     public void Dispose()
     {
       Active = false;
+      DestroyTrigger(_cancelTrigger);
+      _cancelTrigger = null;
       OnDispose();
     }
 
     /// <summary>
-    /// When false, the <see cref="Channel"/> should be disposed of.
+    ///   When false, the <see cref="Channel" /> should be disposed of.
     /// </summary>
     public abstract bool Active { get; set; }
 
     /// <summary>
-    /// Fired when the <see cref="Channel"/> is initially registered.
+    ///   Fired when the <see cref="Channel" /> is initially registered.
     /// </summary>
     public virtual void OnCreate()
     {
     }
 
     /// <summary>
-    ///   <para>Override this method if your <see cref="Channel"/> has a periodic effect.</para>
+    ///   Registers an event that causes the <see cref="Channel" /> to become inactive whenever its caster stops channeling.
+    /// </summary>
+    internal void RegisterCancellationTrigger()
+    {
+      _cancelTrigger = CreateTrigger().RegisterUnitEvent(Caster, EVENT_UNIT_SPELL_ENDCAST)
+        .AddAction(() => { Active = false; });
+    }
+    
+    /// <summary>
+    ///   <para>Override this method if your <see cref="Channel" /> has a periodic effect.</para>
     ///   <para>For this to be active, <see cref="Interval" /> must be greater than 0.</para>
     /// </summary>
     protected virtual void OnPeriodic()
@@ -95,7 +104,7 @@ namespace MacroTools.ChannelSystem
     }
 
     /// <summary>
-    ///   Override this method if your <see cref="Channel"/> has an effect that should trigger when it ends.
+    ///   Override this method if your <see cref="Channel" /> has an effect that should trigger when it ends.
     /// </summary>
     protected virtual void OnDispose()
     {

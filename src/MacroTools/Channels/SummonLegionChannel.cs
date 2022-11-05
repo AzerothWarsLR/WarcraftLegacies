@@ -3,11 +3,18 @@ using static War3Api.Common;
 
 namespace MacroTools.Channels
 {
-  public sealed class SummonLegionChannel : SimpleChannel
+  public sealed class SummonLegionChannel : Channel
   {
     private readonly int _spellImmunityId;
     private readonly timer _timer;
     private readonly timerdialog _timerDialog;
+
+    public SummonLegionChannel(unit caster, int spellId, int spellImmunityId) : base(caster, spellId)
+    {
+      _spellImmunityId = spellImmunityId;
+      _timer = CreateTimer();
+      _timerDialog = CreateTimerDialog(_timer);
+    }
 
     /// <inheritdoc />
     public override bool Active { get; set; }
@@ -28,13 +35,6 @@ namespace MacroTools.Channels
       UnitRemoveAbility(Caster, _spellImmunityId);
       DestroyTimer(_timer);
       DestroyTimerDialog(_timerDialog);
-    }
-
-    public SummonLegionChannel(unit caster, int spellId, int spellImmunityId) : base(caster, spellId)
-    {
-      _spellImmunityId = spellImmunityId;
-      _timer = CreateTimer();
-      _timerDialog = CreateTimerDialog(_timer);
     }
   }
 }
