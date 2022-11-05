@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using static War3Api.Common;
 
 namespace MacroTools.Frames.Books
@@ -44,12 +43,11 @@ namespace MacroTools.Frames.Books
     /// </summary>
     public int CardCount => Cards.Count;
     
-    private void PositionAllCards()
+    protected void PositionAllCards()
     {
       var i = 0;
       foreach (var card in Cards)
       {
-        Console.WriteLine(i);
         PositionFrameAtIndex(card, i);
         i++;
       }
