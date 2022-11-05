@@ -17,6 +17,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       warsong.AddQuest(new QuestWarsongKillDruids());
       warsong.AddQuest(new QuestMoreWyverns());
       warsong.AddQuest(new QuestWarsongHold());
+      warsong.AddQuest(new QuestJergosh());
     }
   }
 }
