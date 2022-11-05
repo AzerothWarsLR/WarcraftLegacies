@@ -66,7 +66,7 @@ namespace MacroTools.ArtifactSystem
       artifact.Dispose();
     }
 
-    static ArtifactManager()
+    private static void RegisterItemSinkingPrevention()
     {
       //When a hero carrying an Artifact dies, the Artifact is dropped to the floor,
       // or to the nearest Shore if the hero died on the water.
@@ -107,6 +107,11 @@ namespace MacroTools.ArtifactSystem
           Console.WriteLine($"{nameof(ArtifactManager)} failed to handle a unit dying: {ex}");
         }
       });
+    }
+    
+    static ArtifactManager()
+    {
+      RegisterItemSinkingPrevention();
     }
   }
 }

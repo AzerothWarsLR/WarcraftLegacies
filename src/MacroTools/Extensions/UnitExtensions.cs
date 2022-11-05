@@ -13,6 +13,15 @@ namespace MacroTools.Extensions
     private const float HeroDropDist = 50; //The radius in which heroes spread out items when they drop them
 
     /// <summary>
+    /// Drops the item on the ground.
+    /// </summary>
+    public static unit DropItem(this unit whichUnit, item whichItem)
+    {
+      UnitRemoveItem(whichUnit, whichItem);
+      return whichUnit;
+    }
+    
+    /// <summary>
     /// Determines whether or not the unit exists in the game world.
     /// </summary>
     public static unit Show(this unit whichUnit, bool show)
@@ -35,11 +44,9 @@ namespace MacroTools.Extensions
     /// </summary>
     /// <param name="whichUnit">The unit to ping.</param>
     /// <param name="duration">How long the ping should last.</param>
-    public static void Ping(this unit whichUnit, float duration)
-    {
-      
-    }
-    
+    public static void Ping(this unit whichUnit, float duration) =>
+      PingMinimap(GetUnitX(whichUnit), GetUnitY(whichUnit), duration);
+
     /// <summary>
     /// If true, prevents the unit from moving or taking actions.
     /// </summary>
@@ -254,24 +261,22 @@ namespace MacroTools.Extensions
     /// <summary>
     ///   Drops a units entire inventory on the ground.
     /// </summary>
-    public static void DropAllItems(this unit u)
+    public static void DropAllItems(this unit whichUnit)
     {
-      var unitX = GetUnitX(u);
-      var unitY = GetUnitY(u);
-      float ang = 0; //Radians
+      var unitX = GetUnitX(whichUnit);
+      var unitY = GetUnitY(whichUnit);
+      float angInRadians = 0;
 
       for (var i = 0; i < 6; i++)
       {
-        var x = unitX + HeroDropDist * Cos(ang);
-        var y = unitY + HeroDropDist * Sin(ang);
-        ang += 360 * MathEx.DegToRad / 6;
-        item dropItem = UnitItemInSlot(u, i);
-        if (BlzGetItemBooleanField(dropItem, ITEM_BF_DROPPED_WHEN_CARRIER_DIES) ||
-            BlzGetItemBooleanField(dropItem, ITEM_BF_CAN_BE_DROPPED))
-        {
-          UnitRemoveItem(u, dropItem);
-          SetItemPosition(dropItem, x, y);
-        }
+        var x = unitX + HeroDropDist * Cos(angInRadians);
+        var y = unitY + HeroDropDist * Sin(angInRadians);
+        angInRadians += 360 * MathEx.DegToRad / 6;
+        var itemToDrop = UnitItemInSlot(whichUnit, i);
+        if (!BlzGetItemBooleanField(itemToDrop, ITEM_BF_DROPPED_WHEN_CARRIER_DIES) &&
+            !BlzGetItemBooleanField(itemToDrop, ITEM_BF_CAN_BE_DROPPED)) continue;
+        whichUnit.DropItem(itemToDrop);
+        itemToDrop.SetPositionSafe(new Point(x, y));
       }
     }
 
