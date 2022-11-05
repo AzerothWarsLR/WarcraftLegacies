@@ -1,6 +1,7 @@
 ﻿using System;
 using MacroTools.ChannelSystem;
 using MacroTools.Extensions;
+using MacroTools.Libraries;
 using WCSharp.Lightnings;
 using static War3Api.Common;
 
@@ -41,18 +42,27 @@ namespace MacroTools.Channels
     }
 
     /// <inheritdoc />
-    public override bool Active { get; set; }
+    public override bool Active { get; set; } = true;
 
     /// <inheritdoc />
     public override void OnCreate()
     {
-      _lightning = new Lightning("DRAB", Caster, _target);
+      _lightning = new Lightning("DRAB", Caster, _target)
+      {
+        Duration = float.MaxValue
+      };
       LightningSystem.Add(_lightning);
     }
 
     /// <inheritdoc />
     protected override void OnPeriodic()
     {
+      if (MathEx.GetDistanceBetweenPoints(Caster.GetPosition(), _target.GetPosition()) > Range || !UnitAlive(_target))
+      {
+        Active = false;
+        return;
+      }
+      
       if (GetUnitState(Caster, UNIT_STATE_LIFE) < GetUnitState(Caster, UNIT_STATE_MAX_LIFE) ||
           !IsUnitAlly(_target, GetOwningPlayer(Caster)))
       {

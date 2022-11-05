@@ -80,8 +80,7 @@ namespace MacroTools.Spells
           Interval = Interval,
           LifeDrainedPerSecond = LifeDrainedPerSecondBase + LifeDrainedPerSecondLevel * GetAbilityLevel(caster),
           ManaDrainedPerSecond = ManaDrainedPerSecondBase + ManaDrainedPerSecondLevel * GetAbilityLevel(caster),
-          Range = Range,
-          Active = false
+          Range = Range + Radius/2
         };
         ChannelManager.Add(channel);
       }
