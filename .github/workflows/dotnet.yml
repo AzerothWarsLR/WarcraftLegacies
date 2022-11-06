@@ -27,6 +27,7 @@ jobs:
   deploy-docs:
     name: Deploy Docs
     needs: [ build ]
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
