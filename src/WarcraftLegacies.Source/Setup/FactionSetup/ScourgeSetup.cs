@@ -120,7 +120,9 @@ The Necropolis of Naxxramas is become the perfect weapon for the Scourge, but yo
       Scourge.AddPower(visionPower);
       
       Scourge.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-4939, 18803)));
-      
+
+      HelmOfDominationDropsWhenScourgeLeaves.Setup();
+
       FactionManager.Register(Scourge);
     }
   }
