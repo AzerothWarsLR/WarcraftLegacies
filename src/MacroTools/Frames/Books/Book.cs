@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -173,6 +174,13 @@ namespace MacroTools.Frames.Books
                return;
             Visible = true;
             _launcher.Visible = false;
+            foreach (var page in Pages)
+            {
+                page.Visible = false;
+            }
+            Pages.First().Visible = true;
+            _activePageIndex = 0;
+            RefreshNavigationButtonVisiblity();
          }
          catch (Exception ex)
          {
