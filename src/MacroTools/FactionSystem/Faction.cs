@@ -147,6 +147,8 @@ namespace MacroTools.FactionSystem
         //Remove player from game if necessary
         if (value == ScoreStatus.Defeated && Player != null)
         {
+          FogModifierStart(CreateFogModifierRect(Player, FOG_OF_WAR_VISIBLE,
+            WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, false, false));
           RemovePlayer(Player, PLAYER_GAME_RESULT_DEFEAT);
           SetPlayerState(Player, PLAYER_STATE_OBSERVER, 1);
           Leave();
