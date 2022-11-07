@@ -176,21 +176,14 @@ namespace MacroTools.FactionSystem
     }
 
     /// <summary>
-    /// Changes the owner of all <paramref name="units"/> to <paramref name="newOwningPlayer"/> 
-    /// and renders all non-building units invisible.
+    /// Rescues all <paramref name="units"/> for <paramref name="newOwningPlayer"/>.
     /// </summary>
-    /// <param name="newOwningPlayer"></param>
-    /// <param name="units"></param>
-    public static void MakeUnitsOwner(this player newOwningPlayer, List<unit> units)
+    /// <param name="newOwningPlayer">The player who should own the units after being rescued</param>
+    /// <param name="units">The units to rescue.</param>
+    public static void RescueGroup(this player newOwningPlayer, List<unit> units)
     {
-        foreach (var unit in units)
-        {
-            unit.SetOwner(newOwningPlayer);
-            if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
-            {
-                unit.Show(false);
-            }
-        }
+      foreach (var unit in units) 
+        unit.Rescue(newOwningPlayer);
     }
 
     /// <summary>

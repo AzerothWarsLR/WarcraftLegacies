@@ -1,4 +1,7 @@
-﻿using WCSharp.Shared.Data;
+﻿using System.Collections.Generic;
+using System.Linq;
+using MacroTools.Wrappers;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace MacroTools.Extensions
@@ -17,6 +20,28 @@ namespace MacroTools.Extensions
       var height = GetRectMaxY(region.Rect) - GetRectMinY(region.Rect);
       SetSoundPosition(soundHandle, GetRectCenterX(region.Rect), GetRectCenterY(region.Rect), 0);
       RegisterStackedSound(soundHandle, true, width, height);
+    }
+
+    /// <summary>
+    /// Renders all units inside the specified <paramref name="area"/> that belong to <paramref name="owningUnitsPlayer"/> invulnerable.
+    /// </summary>
+    /// <param name="area">The area in which to make units invulnerable.</param>
+    /// <param name="owningUnitsPlayer">Only units owned by this player will be made invulnerable.</param>
+    /// <returns>A list of all units found in the specified area that belong to <paramref name="owningUnitsPlayer"/>.</returns>
+    public static List<unit> PrepareUnitsForRescue(this Rectangle area, player owningUnitsPlayer)
+    {
+      var group = new GroupWrapper()
+        .EnumUnitsInRect(area)
+        .EmptyToList()
+        .Where(x => x.OwningPlayer() == owningUnitsPlayer)
+        .ToList();
+      foreach (var unit in group)
+      {
+        unit.SetInvulnerable(true);
+        if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE)) 
+          unit.Show(false);
+      }
+      return group;
     }
   }
 }
