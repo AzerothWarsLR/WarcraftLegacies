@@ -1,4 +1,4 @@
-# AzerothWarsCSharp
+# WarcraftLegacies
 Warcraft: Legacies was a Warcraft 3 macro-strategy map representing the events of the Warcraft story from Reign of Chaos through to World of Warcraft: Cataclysm.
 
 This project is a complete rewrite of Warcraft: Legacies in C#.
@@ -16,14 +16,14 @@ This project is a complete rewrite of Warcraft: Legacies in C#.
 
 ## Projects
 
-### AzerothWarsCSharp.Launcher
-Compiles Warcraft: Legacies from a series of base files and code instructions into a playable .w3x file.
+### Launcher
+Compiles source code and source .w3x files into playable .w3x maps.
 
-### AzerothWarsCSharp.MacroTools
-A library intended to be useable by any map in the Warcraft 3 Macro-Map genre. Currently only used by Warcraft: Legacies.
+### MacroTools
+A library intended to be useable by any map in the Warcraft 3 Macro-Map genre. Currently only used by Warcraft: Legacies and the test map.
 
-### AzerothWarsCSharp.Source
+### WarcraftLegacies.Source
 Code specific to Warcraft: Legacies, which gets compiled into Lua before being executed during the map's runtime.
 
-### AzerothWarsCSharp.TestSource
+### TestMap.Source
 Code to be inserted into a simple test map which demonstrates features from AzerothWarsCSharp.MacroTools.
