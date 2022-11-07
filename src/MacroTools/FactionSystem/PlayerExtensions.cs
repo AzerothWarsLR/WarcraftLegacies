@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using MacroTools.Extensions;
 using MacroTools.Wrappers;
 using static War3Api.Common;
 
@@ -167,12 +169,30 @@ namespace MacroTools.FactionSystem
     {
       PlayerData.ByHandle(player).LumberIncome += value;
     }
-    
+
     internal static void SetControlPointCount(this player player, int value)
     {
       PlayerData.ByHandle(player).ControlPointCount = value;
     }
-    
+
+    /// <summary>
+    /// Changes the owner of all <paramref name="units"/> to <paramref name="newOwningPlayer"/> 
+    /// and renders all non-building units invisible.
+    /// </summary>
+    /// <param name="newOwningPlayer"></param>
+    /// <param name="units"></param>
+    public static void MakeUnitsOwner(this player newOwningPlayer, List<unit> units)
+    {
+        foreach (var unit in units)
+        {
+            unit.SetOwner(newOwningPlayer);
+            if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
+            {
+                unit.Show(false);
+            }
+        }
+    }
+
     /// <summary>
     ///   Determines whether or not the player can see or use the specified ability.
     /// </summary>

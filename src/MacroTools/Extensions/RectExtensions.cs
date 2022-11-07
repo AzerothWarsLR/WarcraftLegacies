@@ -1,20 +1,25 @@
 ﻿using MacroTools.Wrappers;
+using System.Collections.Generic;
 using static War3Api.Common;
 
 namespace MacroTools.Extensions
 {
     /// <summary>
-    /// Provides a helpful set of extension methods for <see cref="rect"/>s.
+    /// Provides a helpful set of extension methods for native Warcraft 3 <see cref="rect"/>s.
     /// </summary>
     public static class RectExtensions
     {
         /// <summary>
-        /// Renders all units inside the specified area invulnerable/>
+        /// Renders all units inside the specified <paramref name="area"/> that belong to <paramref name="owningUnitsPlayer"/> invulnerable/>
         /// </summary>
         /// <param name="area"></param>
-        public static void MakeUnitsInvulnerable(this rect area)
-        {
+        /// <param name="owningUnitsPlayer"></param>
+        /// <returns>A list of all units found in the specified area that belong to <paramref name="owningUnitsPlayer"/></returns>
+        // Todo: Rename to something more sensible
+        public static List<unit> MakeUnitsInvulnerable(this rect area, player owningUnitsPlayer)
+        {        
             var shenGroup = CreateGroup();
+            List<unit> groupUnits = new();
             GroupEnumUnitsInRect(shenGroup, area, null);
             bool execute = true;
             while (execute)
@@ -25,12 +30,14 @@ namespace MacroTools.Extensions
                     execute = false;
                     continue;
                 }
-                if (GetOwningPlayer(unit) == Player(GetPlayerNeutralPassive()))
+                if (GetOwningPlayer(unit) == owningUnitsPlayer)
                 {
                     SetUnitInvulnerable(unit, true);
+                    groupUnits.Add(unit);
                 }
-                GroupRemoveUnit(shenGroup, unit);
+                GroupRemoveUnit(shenGroup, unit);               
             }
+            return groupUnits;
         }
 
         /// <summary>
