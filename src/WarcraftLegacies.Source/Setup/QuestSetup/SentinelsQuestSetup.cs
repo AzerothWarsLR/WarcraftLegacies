@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       sentinels.AddQuest(new QuestSentinelsKillWarsong());
       sentinels.AddQuest(new QuestSentinelsKillFrostwolf());
       sentinels.AddQuest(new QuestMaievOutland(Regions.MaievStartUnlock));
-      //sentinels.AddQuest(new QuestScepterOfTheQueenSentinels());
+      sentinels.AddQuest(new QuestScepterOfTheQueenSentinels(Regions.HighBourne));
       sentinels.AddQuest(new QuestVaultoftheWardens());
     }
   }
