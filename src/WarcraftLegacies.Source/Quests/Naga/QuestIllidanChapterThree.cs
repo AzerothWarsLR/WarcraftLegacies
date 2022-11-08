@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       "ReplaceableTextures\\CommandButtons\\BTNNagaMyrmidon.blp")
     {
       _unitToMakeInvulnerable = unitToMakeInvulnerable;
-      AddObjective(new ObjectiveLegendReachRect(LegendNaga.LegendIllidan, Regions.StartQuest3, "the exit"));
+      //AddObjective(new ObjectiveLegendReachRect(LegendNaga.LegendIllidan, Regions.StartQuest3, "the exit")); Todo: ask Sebas what this was doing
       AddObjective(new ObjectiveLegendReachRect(LegendNaga.LegendIllidan, Regions.MaelstromAmbient, "the Maelstrom"));
       AddObjective(new ObjectiveCastSpell(RitualId, true));
 

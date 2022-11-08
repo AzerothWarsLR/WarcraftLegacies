@@ -70,7 +70,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       ConstructionSiteMagic = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H053_CONSTRUCTION_SITE_ARATHOR_CATHEDRAL_WIZARD)
+        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H053_CONSTRUCTION_SITE_STORMWIND_WIZARD_S_SANCTUM)
       };
       ConstructionSiteMagic.Unit.SetInvulnerable(true);
       CreateTrigger()
@@ -79,7 +79,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       ConstructionSiteMartial = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H055_CONSTRUCTION_SITE_ARATHOR_SI_7_CHAMPION_S_HALL)
+        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H055_CONSTRUCTION_SITE_STORMWIND_CHAMPION_S_HALL)
       };
       ConstructionSiteMartial.Unit.SetInvulnerable(true);
       CreateTrigger()
