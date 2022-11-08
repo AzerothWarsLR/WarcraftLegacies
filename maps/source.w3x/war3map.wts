@@ -94498,12 +94498,6 @@ STRING 15802
 Q
 }
 
-STRING 15803
-// Units: nico (Hero's Obelisk), Name (Name)
-{
-Hero's Obelisk
-}
-
 STRING 15804
 // Abilities: A02A (Roar of the Worgen), Researchtip (Tooltip - Learn)
 {
