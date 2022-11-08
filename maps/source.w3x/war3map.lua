@@ -508,6 +508,8 @@ gg_rct_Halaar = nil
 gg_rct_Tuurem = nil
 gg_rct_TempestKeepHide = nil
 gg_rct_TempestKeepHide2 = nil
+gg_rct_InstanceOutland = nil
+gg_rct_Outland_Ships = nil
 gg_cam_Naga1 = nil
 gg_cam_Naga2 = nil
 gg_cam_Naga3 = nil
@@ -729,8 +731,6 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_trg_Dummy = nil
-gg_rct_InstanceOutland = nil
-gg_rct_Outland_Ships = nil
 function InitGlobals()
 end
 
@@ -9794,7 +9794,7 @@ gg_rct_AstranaarUnlock = Rect(-16832.0, 1344.0, -15168.0, 2496.0)
 gg_rct_AshenvaleUnlock = Rect(-15552.0, 2464.0, -13088.0, 4576.0)
 gg_rct_DrownedTemple = Rect(17248.0, -15936.0, 17696.0, -15520.0)
 gg_rct_DragonmawUnlock = Rect(21024.0, -5792.0, 23072.0, -3232.0)
-gg_rct_SouthshoreUnlock = Rect(10784.0, 1632.0, 12096.0, 2656.0)
+gg_rct_SouthshoreUnlock = Rect(10464.0, 512.0, 11712.0, 1408.0)
 gg_rct_MaievStartUnlock = Rect(-6016.0, -28416.0, -4896.0, -27104.0)
 gg_rct_Silithus_Bug_Interior = Rect(-19584.0, -30784.0, -19104.0, -30272.0)
 gg_rct_Silithus_Stone_Interior = Rect(-16864.0, -27808.0, -16576.0, -27296.0)
