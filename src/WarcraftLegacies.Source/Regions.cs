@@ -404,7 +404,7 @@ public static class Regions
 	public static Rectangle AshenvaleUnlock { get; set; } = new Rectangle(-15552f, 2464f, -13088f, 4576f);
 	public static Rectangle DrownedTemple { get; set; } = new Rectangle(17248f, -15936f, 17696f, -15520f);
 	public static Rectangle DragonmawUnlock { get; set; } = new Rectangle(21024f, -5792f, 23072f, -3232f);
-	public static Rectangle SouthshoreUnlock { get; set; } = new Rectangle(10464f, 512f, 11712f, 1408f);
+	public static Rectangle SouthshoreUnlock { get; set; } = new Rectangle(10784f, 1632f, 12096f, 2656f);
 	public static Rectangle MaievStartUnlock { get; set; } = new Rectangle(-6016f, -28416f, -4896f, -27104f);
 	public static Rectangle Silithus_Bug_Interior { get; set; } = new Rectangle(-19584f, -30784f, -19104f, -30272f);
 	public static Rectangle Silithus_Stone_Interior { get; set; } = new Rectangle(-16864f, -27808f, -16576f, -27296f);
