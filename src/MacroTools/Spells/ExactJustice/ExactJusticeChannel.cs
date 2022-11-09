@@ -104,6 +104,8 @@ namespace MacroTools.Spells.ExactJustice
       _ringEffect?.Destroy();
       _sparkleEffect?.Destroy();
       _progressEffect?.Destroy();
+      if (_aura != null) 
+        _aura.Active = false;
     }
   }
 }

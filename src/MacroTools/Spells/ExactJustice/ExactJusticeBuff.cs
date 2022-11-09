@@ -1,27 +1,37 @@
-﻿using War3Api;
+﻿using MacroTools.Extensions;
+using static War3Api.Common;
 using WCSharp.Buffs;
 
 namespace MacroTools.Spells.ExactJustice
 {
-  public sealed class ExactJusticeBuff : Buff
+  /// <summary>
+  /// Renders the affected unit invulnerable.
+  /// </summary>
+  public sealed class ExactJusticeBuff : PassiveBuff
   {
-    public ExactJusticeBuff(Common.unit caster, Common.unit target) : base(caster, target)
+    private trigger? _noDamageTrigger;
+    
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ExactJusticeBuff"/> class.
+    /// </summary>
+    /// <param name="caster"><inheritdoc /></param>
+    /// <param name="target"><inheritdoc /></param>
+    public ExactJusticeBuff(unit caster, unit target) : base(caster, target)
     {
     }
 
-    public override void Apply()
+    /// <inheritdoc />
+    public override void OnApply()
     {
-      throw new System.NotImplementedException();
+      _noDamageTrigger = CreateTrigger()
+        .RegisterUnitEvent(Target, EVENT_UNIT_DEATH)
+        .AddAction(() => BlzSetEventDamage(0));
     }
 
-    public override void Action()
+    /// <inheritdoc />
+    public override void OnDispose()
     {
-      throw new System.NotImplementedException();
-    }
-
-    public override void Dispose()
-    {
-      throw new System.NotImplementedException();
+      DestroyTrigger(_noDamageTrigger);
     }
   }
 }
