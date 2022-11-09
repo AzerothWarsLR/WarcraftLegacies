@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using MacroTools.ChannelSystem;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
@@ -58,6 +59,7 @@ namespace MacroTools.Spells.ExactJustice
       
       _maximumDuration = Duration;
       _ringEffect = AddSpecialEffect(EffectSettings.RingPath, x, y)
+        .SetAlpha(0)
         .SetTimeScale(0)
         .SetColor(235, 235, 50)
         .SetScale(EffectSettings.RingScale);
@@ -83,10 +85,11 @@ namespace MacroTools.Spells.ExactJustice
     /// <inheritdoc />
     protected override void OnPeriodic()
     {
-      _damage += MaximumDamage / (_maximumDuration * Interval);
+      if (_damage < MaximumDamage) 
+        _damage += MaximumDamage / (_maximumDuration / Interval);
       if (!(_ringAlpha < EffectSettings.AlphaRing))
         return;
-      _ringAlpha += EffectSettings.AlphaRing / (EffectSettings.AlphaFade * Interval);
+      _ringAlpha += EffectSettings.AlphaRing / (_maximumDuration / Interval);
       _ringEffect?.SetAlpha(R2I(_ringAlpha));
     }
 
@@ -105,13 +108,9 @@ namespace MacroTools.Spells.ExactJustice
       
       //The below effects have no death animations so they have//to be moved off the map as they are destroyed.
       var dummyRemovalPoint = new Point(-100000, -100000);
-      _sparkleEffect?
-        .SetPosition(dummyRemovalPoint)
-        .Destroy();
-      _progressEffect?
-        .SetPosition(dummyRemovalPoint)
-        .Destroy();
-      _ringEffect?.Destroy();
+      _sparkleEffect?.SetPosition(dummyRemovalPoint).Destroy();
+      _progressEffect?.SetPosition(dummyRemovalPoint).Destroy();
+      _ringEffect?.SetTimeScale(1).Destroy();
       if (_aura != null) 
         _aura.Active = false;
     }
