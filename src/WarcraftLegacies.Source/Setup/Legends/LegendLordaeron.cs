@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// <summary>
     /// King of Lordaeron.
     /// </summary>
-    public static Legend Terenas { get; private set; }
+    public static Legend? Terenas { get; private set; }
     
     /// <summary>
     /// Leader of the Silver Hand.
