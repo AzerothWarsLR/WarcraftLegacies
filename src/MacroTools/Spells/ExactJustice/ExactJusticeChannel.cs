@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using MacroTools.ChannelSystem;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
