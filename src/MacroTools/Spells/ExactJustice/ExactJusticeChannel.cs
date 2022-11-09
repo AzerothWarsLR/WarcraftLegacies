@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using MacroTools.Wrappers;
 using WCSharp.Buffs;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace MacroTools.Spells.ExactJustice
@@ -101,9 +102,16 @@ namespace MacroTools.Spells.ExactJustice
       {
         unit.TakeDamage(Caster, _damage, false, false, damageType: DAMAGE_TYPE_MAGIC);
       }
+      
+      //The below effects have no death animations so they have//to be moved off the map as they are destroyed.
+      var dummyRemovalPoint = new Point(-100000, -100000);
+      _sparkleEffect?
+        .SetPosition(dummyRemovalPoint)
+        .Destroy();
+      _progressEffect?
+        .SetPosition(dummyRemovalPoint)
+        .Destroy();
       _ringEffect?.Destroy();
-      _sparkleEffect?.Destroy();
-      _progressEffect?.Destroy();
       if (_aura != null) 
         _aura.Active = false;
     }

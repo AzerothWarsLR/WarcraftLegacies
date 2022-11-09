@@ -1,4 +1,5 @@
 ﻿using WCSharp.Effects;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace MacroTools.Extensions
@@ -88,6 +89,16 @@ namespace MacroTools.Extensions
     public static effect SetHeight(this effect effect, float height)
     {
       BlzSetSpecialEffectHeight(effect, height);
+      return effect;
+    }
+    
+    /// <summary>
+    /// Sets the effect's position in the game world.
+    /// </summary>
+    /// <returns>The same effect that was provided.</returns>
+    public static effect SetPosition(this effect effect, Point point)
+    {
+      BlzSetSpecialEffectPosition(effect, point.X, point.Y, 0);
       return effect;
     }
 
