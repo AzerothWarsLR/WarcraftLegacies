@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using System;
+using MacroTools.Extensions;
 using static War3Api.Common;
 using WCSharp.Buffs;
 
@@ -24,7 +25,7 @@ namespace MacroTools.Spells.ExactJustice
     public override void OnApply()
     {
       _noDamageTrigger = CreateTrigger()
-        .RegisterUnitEvent(Target, EVENT_UNIT_DEATH)
+        .RegisterUnitEvent(Target, EVENT_UNIT_DAMAGED)
         .AddAction(() => BlzSetEventDamage(0));
     }
 
