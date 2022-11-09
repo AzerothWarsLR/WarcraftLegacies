@@ -6,7 +6,6 @@ using MacroTools.QuestSystem.UtilityStructs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 using static War3Api.Blizzard;
-using WarcraftLegacies.Source.Setup.FactionSetup;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
@@ -17,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
   {
     private const int RequiredResearch = Constants.UPGRADE_R06K_KALIMDOR_EXPEDITION_DALARAN;
 
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestTheramore"/> class.
@@ -29,9 +28,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     {
       AddObjective(new ObjectiveResearch(RequiredResearch, Constants.UNIT_H076_ALLIANCE_SHIPYARD_DALARAN));
       AddObjective(new ObjectiveSelfExists());
-      if (KultirasSetup.Kultiras?.Player != null)
-        _rescueUnits = theramoreRect.PrepareUnitsForRescue(KultirasSetup.Kultiras.Player); 
-      Player(PLAYER_NEUTRAL_PASSIVE).RescueGroup(_rescueUnits); // Have to make units neutral because they are owned by Kul'Tiras by default
+      _rescueUnits = theramoreRect.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE));
     }
 
     /// <inheritdoc />
@@ -52,13 +49,9 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     protected override void OnComplete(Faction completingFaction)
     {
       if (completingFaction.Player != null)
-      {
         completingFaction.Player.RescueGroup(_rescueUnits);
-      }
       else
-      {
         Player(bj_PLAYER_NEUTRAL_VICTIM).RescueGroup(_rescueUnits);
-      }
       completingFaction.ModObjectLimit(RequiredResearch, -Faction.UNLIMITED);
     }
 
