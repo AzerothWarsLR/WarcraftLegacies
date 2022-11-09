@@ -1,12 +1,12 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 using static War3Api.Blizzard;
+using WarcraftLegacies.Source.Setup.FactionSetup;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
@@ -29,12 +29,9 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     {
       AddObjective(new ObjectiveResearch(RequiredResearch, Constants.UNIT_H076_ALLIANCE_SHIPYARD_DALARAN));
       AddObjective(new ObjectiveSelfExists());
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(theramoreRect).EmptyToList())
-      {
-        SetUnitInvulnerable(unit, true);
-        _rescueUnits.Add(unit);
-        SetUnitOwner(unit, Player(PLAYER_NEUTRAL_PASSIVE), true);
-      }
+      if (KultirasSetup.Kultiras?.Player != null)
+        _rescueUnits = theramoreRect.PrepareUnitsForRescue(KultirasSetup.Kultiras.Player); 
+      Player(PLAYER_NEUTRAL_PASSIVE).RescueGroup(_rescueUnits); // Have to make units neutral because they are owned by Kul'Tiras by default
     }
 
     /// <inheritdoc />
@@ -47,14 +44,21 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
       completingFaction.ModObjectLimit(RequiredResearch, -Faction.UNLIMITED);
     }
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player ?? Player(bj_PLAYER_NEUTRAL_VICTIM));
+      if (completingFaction.Player != null)
+      {
+        completingFaction.Player.RescueGroup(_rescueUnits);
+      }
+      else
+      {
+        Player(bj_PLAYER_NEUTRAL_VICTIM).RescueGroup(_rescueUnits);
+      }
       completingFaction.ModObjectLimit(RequiredResearch, -Faction.UNLIMITED);
     }
 
