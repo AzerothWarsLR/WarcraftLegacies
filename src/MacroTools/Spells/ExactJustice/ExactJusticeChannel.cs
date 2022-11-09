@@ -71,7 +71,11 @@ namespace MacroTools.Spells.ExactJustice
         .SetScale(EffectSettings.ProgressBarScale)
         .SetHeight(EffectSettings.ProgressBarHeight);
 
-      _aura = new ExactJusticeAura(Caster);
+      _aura = new ExactJusticeAura(Caster)
+      {
+        Radius = Radius,
+        Duration = float.MaxValue,
+      };
       AuraSystem.Add(_aura);
     }
 

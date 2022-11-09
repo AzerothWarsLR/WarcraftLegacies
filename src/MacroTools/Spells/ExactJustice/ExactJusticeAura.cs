@@ -1,22 +1,26 @@
-﻿using War3Api;
+﻿using MacroTools.SpellSystem;
 using WCSharp.Buffs;
+using static War3Api.Common;
 
 namespace MacroTools.Spells.ExactJustice
 {
+  /// <summary>
+  /// Renders nearby friendly units invulnerable.
+  /// </summary>
   public sealed class ExactJusticeAura : Aura<ExactJusticeBuff>
   {
-    public ExactJusticeAura(Common.unit caster) : base(caster)
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ExactJusticeAura"/> class.
+    /// </summary>
+    /// <param name="caster"><inheritdoc /></param>
+    public ExactJusticeAura(unit caster) : base(caster)
     {
     }
 
-    protected override ExactJusticeBuff CreateAuraBuff(Common.unit unit)
-    {
-      throw new System.NotImplementedException();
-    }
+    /// <inheritdoc />
+    protected override ExactJusticeBuff CreateAuraBuff(unit unit) => new(Caster, unit);
 
-    protected override bool UnitFilter(Common.unit unit)
-    {
-      throw new System.NotImplementedException();
-    }
+    /// <inheritdoc />
+    protected override bool UnitFilter(unit unit) => CastFilters.IsTargetAllyAndAlive(Caster, unit);
   }
 }
