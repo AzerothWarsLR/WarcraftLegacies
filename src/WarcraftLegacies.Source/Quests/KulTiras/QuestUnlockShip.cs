@@ -1,20 +1,30 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
+using static War3Api.Blizzard;
+using WarcraftLegacies.Source.Setup.FactionSetup;
+using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
+  /// <summary>
+  /// Proudmoore captial ship starts locked. Boralus and Dazar'Alor must be captured to unlock it.
+  /// </summary>
   public sealed class QuestUnlockShip : QuestData
   {
     private readonly unit _proudmooreCapitalShip;
     private readonly List<unit> _rescueUnits = new();
-
+    private readonly Rectangle _rescueRect;
+    /// <summary>
+    /// Initializes a new instance of the <see cref="QuestUnlockShip"/> class.
+    /// </summary>
+    /// <param name="rescueRect">All units in this area will be made neutral, then rescued when the quest is completed.</param>
+    /// <param name="proudmooreCapitalShip">starts invulnerable and unusable. Made usuable and vulnerable when the quest is completed.</param>
     public QuestUnlockShip(Rectangle rescueRect, unit proudmooreCapitalShip) : base("The Zandalar Menace",
       "The Troll Empire of Zandalar is a danger to the safety of Kul'tiras and the Alliance. Before setting sail, we must eliminate them.",
       "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp")
@@ -22,45 +32,67 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendDazaralor, false));
       AddObjective(new ObjectiveControlLegend(LegendKultiras.LegendBoralus, true));
       _proudmooreCapitalShip = proudmooreCapitalShip;
-
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          SetUnitInvulnerable(unit, true);
-          _rescueUnits.Add(unit);
-        }
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE));
+      _rescueRect = rescueRect;
     }
 
+    /// <inheritdoc/>
     protected override string FailurePopup =>
-      "Boralus has fallen, Katherine has escaped on the Proudmoore Capital Ship with a handful of Survivors.";
+      "Boralus has fallen, but Katherine and Daelin have escaped on the Proudmoore Capital Ship with a handful of Survivors.";
 
+    /// <inheritdoc/>
     protected override string PenaltyDescription =>
-      "You lose everything you control, but you gain Katherine at the capital ship.";
+      "You lose everything you control, but you gain Katherine and Daelin Proudmoore at the Proudmoore Capital Ship.";
 
-    protected override string CompletionPopup => "The Proudmoore capital ship is now ready to sails!";
+    /// <inheritdoc/>
+    protected override string CompletionPopup => "The Proudmoore Capital Ship is now ready to set sail!";
 
+    /// <inheritdoc/>
     protected override string RewardDescription =>
       "Unpause the Proudmoore capital ship and unlocks the buildings inside.";
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
-      PauseUnit(_proudmooreCapitalShip, false);
+      if (completingFaction.Player != null)
+      {
+        completingFaction.Player.RescueGroup(_rescueUnits);
+        _proudmooreCapitalShip.Rescue(completingFaction.Player);
+      }
+      else
+      {
+        Player(bj_PLAYER_NEUTRAL_VICTIM).RescueGroup(_rescueUnits);
+        _proudmooreCapitalShip.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      }
+      _proudmooreCapitalShip.Pause(false);
+      KultirasSetup.Kultiras?.Player?.SetTeam(TeamSetup.Alliance);
+      ZandalarSetup.Zandalar?.Player?.SetTeam(TeamSetup.Horde);
     }
 
+    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
       LegendKultiras.LegendKatherine.StartingXp = GetHeroXP(LegendKultiras.LegendKatherine.Unit);
       completingFaction.Obliterate();
-      LegendKultiras.LegendKatherine.ForceCreate(completingFaction.Player, new Point(-15223, -22856), 110);
-      UnitAddItem(LegendKultiras.LegendKatherine.Unit,
-        CreateItem(FourCC("I00M"), GetUnitX(LegendKultiras.LegendKatherine.Unit),
-          GetUnitY(LegendKultiras.LegendKatherine.Unit)));
-      if (GetLocalPlayer() == completingFaction.Player)
-        SetCameraPosition(Regions.ShipAmbient.Center.X, Regions.ShipAmbient.Center.Y);
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
-      PauseUnit(_proudmooreCapitalShip, true);
-      SetUnitOwner(_proudmooreCapitalShip, completingFaction.Player, true);
+      if (completingFaction.Player != null)
+      {
+        LegendKultiras.LegendKatherine.ForceCreate(completingFaction.Player, new Point(_rescueRect.Center.X, _rescueRect.Center.Y), 110);
+        LegendKultiras.LegendAdmiral.ForceCreate(completingFaction.Player, new Point(_rescueRect.Center.X, _rescueRect.Center.Y), 110);
+        if (GetLocalPlayer() == completingFaction.Player)
+          SetCameraPosition(_rescueRect.Center.X, _rescueRect.Center.Y);
+        completingFaction.Player.RescueGroup(_rescueUnits);
+        completingFaction.Player.AddGold(500);
+        completingFaction.Player.AddLumber(2000);
+        _proudmooreCapitalShip.Rescue(completingFaction.Player);
+      }
+      else
+      {
+        _proudmooreCapitalShip.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      }
+      _proudmooreCapitalShip.Pause(false); 
+      IssuePointOrder(_proudmooreCapitalShip, "move", Regions.SouthshoreUnlock.Center.X, Regions.SouthshoreUnlock.Center.Y);
+      KultirasSetup.Kultiras?.Player?.SetTeam(TeamSetup.Alliance);
+      ZandalarSetup.Zandalar?.Player?.SetTeam(TeamSetup.Horde);
     }
   }
 }
