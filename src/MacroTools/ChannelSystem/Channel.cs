@@ -22,6 +22,11 @@ namespace MacroTools.ChannelSystem
       var ability = BlzGetUnitAbility(Caster, SpellId);
       var durationFromObjectEditor = BlzGetAbilityRealLevelField(ability, ABILITY_RLF_DURATION_NORMAL,
         GetUnitAbilityLevel(Caster, SpellId));
+
+      if (durationFromObjectEditor == 0)
+        durationFromObjectEditor = BlzGetAbilityRealLevelField(ability, ABILITY_RLF_FOLLOW_THROUGH_TIME,
+          GetUnitAbilityLevel(Caster, SpellId));
+
       Duration = durationFromObjectEditor != 0 ? durationFromObjectEditor : float.MaxValue;
     }
     
