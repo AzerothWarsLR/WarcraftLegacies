@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       "ReplaceableTextures\\CommandButtons\\BTNTheLichKingQuest.blp")
     {
       AddObjective(new ObjectiveResearch(FourCC("R07W"), FourCC("u000")));
-      AddObjective(new ObjectiveControlLegend(LegendLordaeron.LegendArthas, false));
+      AddObjective(new ObjectiveControlLegend(LegendLordaeron.Arthas, false));
       AddObjective(new ObjectiveTime(900));
       Global = true;
     }

@@ -44,10 +44,10 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       completingFaction.Icon = "ReplaceableTextures\\CommandButtons\\BTNGarithos.blp";
       SetPlayerColor(completingFaction.Player, PLAYER_COLOR_MAROON);
 
-      LegendLordaeron.LegendGarithos.StartingXp = GetHeroXP(LegendLordaeron.LegendArthas.Unit);
+      LegendLordaeron.Garithos.StartingXp = GetHeroXP(LegendLordaeron.Arthas.Unit);
       completingFaction.Obliterate();
-      LegendLordaeron.LegendGarithos.ForceCreate(completingFaction.Player, new Point(19410, 7975), 110);
-      LegendLordaeron.LegendGoodchild.ForceCreate(completingFaction.Player, new Point(19410, 7975), 110);
+      LegendLordaeron.Garithos.ForceCreate(completingFaction.Player, new Point(19410, 7975), 110);
+      LegendLordaeron.Goodchild.ForceCreate(completingFaction.Player, new Point(19410, 7975), 110);
       CreateUnits(completingFaction.Player, FourCC("hkni"), Regions.GarithosCrusadeSpawn.Center.X,
         Regions.GarithosCrusadeSpawn.Center.Y, 270, 12);
       CreateUnits(completingFaction.Player, FourCC("hpea"), Regions.GarithosCrusadeSpawn.Center.X,

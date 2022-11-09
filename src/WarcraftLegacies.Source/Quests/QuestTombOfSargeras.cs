@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests
       _guldanRemains = guldanRemains;
       AddObjective(new ObjectiveTime(900));
       AddObjective(new ObjectiveEitherOf(
-        new ObjectiveLegendReachRect(LegendLordaeron.LegendUther, Regions.Sargeras_Entrance,
+        new ObjectiveLegendReachRect(LegendLordaeron.Uther, Regions.Sargeras_Entrance,
           "the Tomb of Sargeras' entrance"),
         new ObjectiveHeroWithLevelReachRect(10, Regions.Sargeras_Entrance, "the Tomb of Sargeras' entrance")));
     }

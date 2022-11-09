@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       "Before the First War, all of humanity was united under the banner of the Arathorian Empire. Reclaim its greatness by uniting mankind once again.",
       "ReplaceableTextures\\CommandButtons\\BTNFireKingCrown.blp")
     {
-      AddObjective(new ObjectiveControlLegend(LegendLordaeron.LegendArthas, true));
+      AddObjective(new ObjectiveControlLegend(LegendLordaeron.Arthas, true));
       AddObjective(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactCrownlordaeron));
       AddObjective(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactCrownstormwind));
       AddObjective(new ObjectiveLegendDead(LegendScourge.LegendLichking));
@@ -50,8 +50,8 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       SetPlayerTechResearched(completingFaction.Player, RewardResearchId, 1);
       Display.DisplayResearchAcquired(completingFaction.Player, RewardResearchId, 1);
       //High King Arthas
-      LegendLordaeron.LegendArthas.UnitType = FourCC("Harf");
-      LegendLordaeron.LegendArthas.ClearUnitDependencies();
+      LegendLordaeron.Arthas.UnitType = FourCC("Harf");
+      LegendLordaeron.Arthas.ClearUnitDependencies();
     }
 
     protected override void OnAdd(Faction whichFaction)

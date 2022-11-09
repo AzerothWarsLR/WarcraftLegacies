@@ -7,70 +7,70 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public static class LegendLordaeron
   {
-    public static Legend LegendUther { get; private set; }
-    public static Legend LegendArthas { get; private set; }
-    public static Legend LegendMograine { get; private set; }
-    public static Legend LegendGarithos { get; private set; }
-    public static Legend LegendGoodchild { get; private set; }
-    public static Legend LegendCapitalpalace { get; private set; }
-    public static Legend LegendStratholme { get; private set; }
-    public static Legend LegendTyrshand { get; private set; }
+    public static Legend? Uther { get; private set; }
+    public static Legend? Arthas { get; private set; }
+    public static Legend? Mograine { get; private set; }
+    public static Legend? Garithos { get; private set; }
+    public static Legend? Goodchild { get; private set; }
+    public static Legend? CapitalPalace { get; private set; }
+    public static Legend? Stratholme { get; private set; }
+    public static Legend? TyrsHand { get; private set; }
 
     public static void Setup()
     {
-      LegendMograine = new Legend
+      Mograine = new Legend
       {
         UnitType = Constants.UNIT_H01J_THE_ASHBRINGER_LORDAERON,
         StartingXp = 2800
       };
-      Legend.Register(LegendMograine);
+      Legend.Register(Mograine);
 
-      LegendGarithos = new Legend
+      Garithos = new Legend
       {
         UnitType = Constants.UNIT_HLGR_GRAND_MARSHAL_SCARLET,
         StartingXp = 2800
       };
-      Legend.Register(LegendGarithos);
+      Legend.Register(Garithos);
 
-      LegendGoodchild = new Legend
+      Goodchild = new Legend
       {
         UnitType = Constants.UNIT_E000_IMPROVED_ANCIENT_PROTECTOR_DRUIDS,
         StartingXp = 2800
       };
-      Legend.Register(LegendGoodchild);
+      Legend.Register(Goodchild);
 
-      LegendCapitalpalace = new Legend
+      CapitalPalace = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H000_CAPITAL_PALACE_LORDAERON),
         DeathMessage = "The capital city of Lordaeron has been razed, and King Terenas is dead."
       };
-      Legend.Register(LegendCapitalpalace);
-      LegendCapitalpalace.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(8686, 8862)));
-      LegendCapitalpalace.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(9476, 8843)));
-      LegendCapitalpalace.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER, new Point(8638, 9342)));
-      LegendCapitalpalace.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER, new Point(9545, 9372)));
+      Legend.Register(CapitalPalace);
+      CapitalPalace.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(8686, 8862)));
+      CapitalPalace.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(9476, 8843)));
+      CapitalPalace.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER, new Point(8638, 9342)));
+      CapitalPalace.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER, new Point(9545, 9372)));
 
-      LegendStratholme = new Legend
+      Stratholme = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H01G_STRATHOLME_CASTLE_LORDAERON),
         DeathMessage = "The majestic city of Stratholme has been destroyed."
       };
-      Legend.Register(LegendStratholme);
-      LegendStratholme.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(14067, 12242)));
-      LegendStratholme.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(14553, 11593)));
-      LegendStratholme.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(15359, 11612)));
+      Legend.Register(Stratholme);
+      Stratholme.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(14067, 12242)));
+      Stratholme.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(14553, 11593)));
+      Stratholme.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(15359, 11612)));
 
-      LegendTyrshand = new Legend
+      TyrsHand = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H030_TYR_S_HAND_CITADEL_LORDAERON),
         DeathMessage = "Tyr's Hand, the bastion of human power in Lordaeron, has fallen."
       };
-      Legend.Register(LegendTyrshand);
-      LegendTyrshand.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_HCTW_CANNON_TOWER, new Point(20652, 8057)));
-      LegendTyrshand.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER, new Point(20024, 8123)));
-      LegendTyrshand.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER, new Point(20042, 7420)));
+      Legend.Register(TyrsHand);
+      TyrsHand.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_HCTW_CANNON_TOWER, new Point(20652, 8057)));
+      TyrsHand.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER, new Point(20024, 8123)));
+      TyrsHand.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER, new Point(20042, 7420)));
 
-      LegendUther = new Legend
+      Uther = new Legend
       {
         UnitType = Constants.UNIT_HUTH_LEADER_OF_THE_SILVER_HAND_LORDAERON,
         DeathMessage =
@@ -78,14 +78,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
         PlayerColor = PLAYER_COLOR_LIGHT_BLUE,
         StartingXp = 1000
       };
-      Legend.Register(LegendUther);
+      Legend.Register(Uther);
 
-      LegendArthas = new Legend
+      Arthas = new Legend
       {
         UnitType = Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON,
         PlayerColor = PLAYER_COLOR_BLUE
       };
-      Legend.Register(LegendArthas);
+      Legend.Register(Arthas);
     }
   }
 }

@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      LegendLordaeron.LegendUther.AddUnitDependency(LegendLordaeron.LegendCapitalpalace.Unit);
+      LegendLordaeron.Uther.AddUnitDependency(LegendLordaeron.CapitalPalace.Unit);
     }
 
     protected override void OnComplete(Faction completingFaction)
@@ -55,7 +55,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       SetUnitInvulnerable(_unitToMakeInvulnerable, true);
       if (GetLocalPlayer() == completingFaction.Player)
         PlayThematicMusic("war3mapImported\\CapitalCity.mp3");
-      LegendLordaeron.LegendUther.AddUnitDependency(LegendLordaeron.LegendCapitalpalace.Unit);
+      LegendLordaeron.Uther.AddUnitDependency(LegendLordaeron.CapitalPalace.Unit);
     }
   }
 }

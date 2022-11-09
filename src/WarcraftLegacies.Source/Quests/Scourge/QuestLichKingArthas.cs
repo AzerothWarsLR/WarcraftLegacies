@@ -19,10 +19,10 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp")
     {
       _utgardeKeep = utgardeKeep;
-      AddObjective(new ObjectiveControlLegend(LegendLordaeron.LegendArthas, false));
-      AddObjective(new ObjectiveLegendLevel(LegendLordaeron.LegendArthas, 12));
+      AddObjective(new ObjectiveControlLegend(LegendLordaeron.Arthas, false));
+      AddObjective(new ObjectiveLegendLevel(LegendLordaeron.Arthas, 12));
       AddObjective(new ObjectiveResearch(FourCC("R07X"), FourCC("u000")));
-      AddObjective(new ObjectiveLegendInRect(LegendLordaeron.LegendArthas, Regions.LichKing, "Icecrown Citadel"));
+      AddObjective(new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.LichKing, "Icecrown Citadel"));
       Global = true;
       Required = true;
     }
@@ -46,16 +46,16 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       UnitRemoveAbility(LegendScourge.LegendLichking.Unit, FourCC("A001"));
       BlzSetUnitMaxMana(LegendScourge.LegendLichking.Unit, 0);
       BlzSetUnitName(LegendScourge.LegendLichking.Unit, "Icecrown Citadel");
-      LegendLordaeron.LegendArthas.UnitType = FourCC("N023");
-      LegendLordaeron.LegendArthas.PermaDies = true;
-      LegendLordaeron.LegendArthas.Hivemind = true;
-      LegendLordaeron.LegendArthas.DeathMessage =
+      LegendLordaeron.Arthas.UnitType = FourCC("N023");
+      LegendLordaeron.Arthas.PermaDies = true;
+      LegendLordaeron.Arthas.Hivemind = true;
+      LegendLordaeron.Arthas.DeathMessage =
         "The great Lich King has been destroyed. With no central mind to command them, the forces of the Undead have gone rogue.";
-      SetUnitState(LegendLordaeron.LegendArthas.Unit, UNIT_STATE_LIFE,
-        GetUnitState(LegendLordaeron.LegendArthas.Unit, UNIT_STATE_MAX_LIFE));
-      SetUnitState(LegendLordaeron.LegendArthas.Unit, UNIT_STATE_MANA,
-        GetUnitState(LegendLordaeron.LegendArthas.Unit, UNIT_STATE_MAX_MANA));
-      LegendLordaeron.LegendArthas.Unit.AddItemSafe(ArtifactSetup.ArtifactHelmofdomination.Item);
+      SetUnitState(LegendLordaeron.Arthas.Unit, UNIT_STATE_LIFE,
+        GetUnitState(LegendLordaeron.Arthas.Unit, UNIT_STATE_MAX_LIFE));
+      SetUnitState(LegendLordaeron.Arthas.Unit, UNIT_STATE_MANA,
+        GetUnitState(LegendLordaeron.Arthas.Unit, UNIT_STATE_MAX_MANA));
+      LegendLordaeron.Arthas.Unit.AddItemSafe(ArtifactSetup.ArtifactHelmofdomination.Item);
       completingFaction.Player?.SetTeam(TeamSetup.Scourge);
       _utgardeKeep.Rescue(ScourgeSetup.Scourge.Player);
       SetPlayerState(completingFaction.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);

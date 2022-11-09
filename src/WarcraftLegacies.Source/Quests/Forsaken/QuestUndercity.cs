@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Quests.Forsaken
       AddObjective(new ObjectiveResearch(Constants.UPGRADE_R050_DECLARE_FORSAKEN_INDEPENDENCE_FORSAKEN,
         Constants.UNIT_H08B_HAUNTED_CASTLE_FORSAKEN));
       AddObjective(new ObjectiveLegendInRect(LegendForsaken.SylvanasUndead, Regions.Terenas, "Capital City"));
-      AddObjective(new ObjectiveLegendDead(LegendLordaeron.LegendCapitalpalace));
+      AddObjective(new ObjectiveLegendDead(LegendLordaeron.CapitalPalace));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R04X_QUEST_COMPLETED_FORSAKEN_INDEPENDANCE;
       Global = true;

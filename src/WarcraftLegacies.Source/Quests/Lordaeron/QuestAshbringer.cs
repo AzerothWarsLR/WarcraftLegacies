@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendIronforge.LegendGreatforge));
       AddObjective(new ObjectiveArtifactInRect(ArtifactSetup.ArtifactLivingshadow, Regions.AshbringerForge,
         "The Great Forge"));
-      AddObjective(new ObjectiveChannelRect(Regions.AshbringerForge, "The Great Forge", LegendLordaeron.LegendUther, 60,
+      AddObjective(new ObjectiveChannelRect(Regions.AshbringerForge, "The Great Forge", LegendLordaeron.Uther, 60,
         340));
       Global = true;
     }
@@ -34,9 +34,9 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     protected override void OnComplete(Faction completingFaction)
     {
-      LegendLordaeron.LegendMograine.ForceCreate(completingFaction.Player, Regions.AshbringerForge.Center, 270);
-      SetHeroLevel(LegendLordaeron.LegendMograine.Unit, 10, false);
-      LegendLordaeron.LegendMograine.Unit.AddItemSafe(ArtifactSetup.ArtifactAshbringer.Item);
+      LegendLordaeron.Mograine.ForceCreate(completingFaction.Player, Regions.AshbringerForge.Center, 270);
+      SetHeroLevel(LegendLordaeron.Mograine.Unit, 10, false);
+      LegendLordaeron.Mograine.Unit.AddItemSafe(ArtifactSetup.ArtifactAshbringer.Item);
       SetItemPosition(ArtifactSetup.ArtifactLivingshadow.Item, DummyX, DummyY);
       ArtifactSetup.ArtifactLivingshadow.LocationType = ArtifactLocationType.Ground;
       ArtifactSetup.ArtifactLivingshadow.LocationDescription = "Used to create the Ashbringer";

@@ -17,10 +17,10 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       "Arthas Menethil is the one true heir of the Kingdom of Lordaeron. The only thing standing in the way of his coronation is the world-ending threat of the Scourge.",
       "ReplaceableTextures\\CommandButtons\\BTNArthas.blp")
     {
-      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendLordaeron.LegendCapitalpalace));
-      AddObjective(new ObjectiveControlLegend(LegendLordaeron.LegendArthas, true));
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendLordaeron.CapitalPalace));
+      AddObjective(new ObjectiveControlLegend(LegendLordaeron.Arthas, true));
       AddObjective(new ObjectiveLegendDead(LegendScourge.LegendLichking));
-      AddObjective(new ObjectiveLegendInRect(LegendLordaeron.LegendArthas, Regions.King_Arthas_crown, "King Terenas"));
+      AddObjective(new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.King_Arthas_crown, "King Terenas"));
       ResearchId = QuestResearchId;
       _terenas = terenas;
       Required = true;
@@ -34,12 +34,12 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     protected override void OnComplete(Faction completingFaction)
     {
-      BlzSetUnitName(LegendLordaeron.LegendArthas.Unit, "King of Lordaeron");
+      BlzSetUnitName(LegendLordaeron.Arthas.Unit, "King of Lordaeron");
       BlzSetUnitName(_terenas, "King Emeritus Terenas Menethil");
       RemoveUnit(_terenas);
-      AddHeroXP(LegendLordaeron.LegendArthas.Unit, 2000, true);
-      LegendLordaeron.LegendArthas.Unit.AddItemSafe(ArtifactSetup.ArtifactCrownlordaeron.Item);
-      LegendLordaeron.LegendArthas.ClearUnitDependencies();
+      AddHeroXP(LegendLordaeron.Arthas.Unit, 2000, true);
+      LegendLordaeron.Arthas.Unit.AddItemSafe(ArtifactSetup.ArtifactCrownlordaeron.Item);
+      LegendLordaeron.Arthas.ClearUnitDependencies();
     }
   }
 }

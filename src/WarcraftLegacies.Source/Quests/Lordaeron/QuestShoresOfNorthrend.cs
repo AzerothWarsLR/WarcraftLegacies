@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     public QuestShoresOfNorthrend() : base("Shores of Northrend", "Mal'ganis' citadel lies somewhere within the arctic wastes of the north. In order to assault the Dreadlord, Arthas must first establish a base camp at the shores of Northrend.", "ReplaceableTextures\\CommandButtons\\BTNHumanTransport.blp")
     {
-      AddObjective(new ObjectiveControlLegend(LegendLordaeron.LegendArthas, true));
+      AddObjective(new ObjectiveControlLegend(LegendLordaeron.Arthas, true));
       AddObjective(new ObjectiveLegendDead(LegendForsaken.Scholomance));
       AddObjective(new ObjectiveResearch(ResearchId, Constants.UNIT_HSHY_ALLIANCE_SHIPYARD_LORDAERON));
     }
@@ -34,10 +34,10 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     {
       KillNeutralHostileUnitsInRadius(4152, 16521, 2300);
       KillNeutralHostileUnitsInRadius(-2190, 16803, 700);
-      if (GetOwningPlayer(LegendLordaeron.LegendArthas.Unit) == completingFaction.Player)
+      if (GetOwningPlayer(LegendLordaeron.Arthas.Unit) == completingFaction.Player)
       {
-        ReviveHero(LegendLordaeron.LegendArthas.Unit, 400, 16102, true);
-        BlzSetUnitFacingEx(LegendLordaeron.LegendArthas.Unit, 112);
+        ReviveHero(LegendLordaeron.Arthas.Unit, 400, 16102, true);
+        BlzSetUnitFacingEx(LegendLordaeron.Arthas.Unit, 112);
       }
 
       CreateStructureForced(completingFaction.Player, FourCC("h01C"), -5133152, 1667969, (float)(4757993 * MathEx.DegToRad), 256);

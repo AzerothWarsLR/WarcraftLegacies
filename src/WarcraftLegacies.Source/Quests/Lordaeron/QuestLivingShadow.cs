@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       "The Dark Fortress looming over the Twilight Highlands is a beacon of darkness. Destroy it and clear the surrounding lands of evil.",
       "ReplaceableTextures\\CommandButtons\\BTNShadow Orb.blp")
     {
-      AddObjective(new ObjectiveLegendInRect(LegendLordaeron.LegendUther, Regions.TwilightOutside, "Twilight Citadel"));
+      AddObjective(new ObjectiveLegendInRect(LegendLordaeron.Uther, Regions.TwilightOutside, "Twilight Citadel"));
       AddObjective(new ObjectiveLegendDead(LegendTwilight.LegendTwilightcitadel));
     }
 
@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     protected override void OnComplete(Faction completingFaction)
     {
-      LegendLordaeron.LegendUther.Unit.AddItemSafe(ArtifactSetup.ArtifactLivingshadow.Item);
+      LegendLordaeron.Uther.Unit.AddItemSafe(ArtifactSetup.ArtifactLivingshadow.Item);
       LordaeronSetup.Lordaeron.AddQuest(LordaeronQuestSetup.TheAshbringer);
       LordaeronQuestSetup.TheAshbringer.Progress = QuestProgress.Incomplete;
     }

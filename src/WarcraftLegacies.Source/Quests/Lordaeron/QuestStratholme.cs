@@ -43,13 +43,13 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      LegendLordaeron.LegendArthas.AddUnitDependency(LegendLordaeron.LegendStratholme.Unit);
+      LegendLordaeron.Arthas.AddUnitDependency(LegendLordaeron.Stratholme.Unit);
     }
 
     protected override void OnComplete(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
-      LegendLordaeron.LegendArthas.AddUnitDependency(LegendLordaeron.LegendStratholme.Unit);
+      LegendLordaeron.Arthas.AddUnitDependency(LegendLordaeron.Stratholme.Unit);
     }
   }
 }

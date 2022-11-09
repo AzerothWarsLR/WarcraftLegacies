@@ -17,8 +17,8 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       "When the city of Stratholme, Prince Arthas will abandon his people and join the Scourge as their champion.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroDeathKnight.blp")
     {
-      AddObjective(new ObjectiveLegendDead(LegendLordaeron.LegendStratholme));
-      AddObjective(new ObjectiveEitherOf(new ObjectiveLegendDead(LegendLordaeron.LegendArthas),
+      AddObjective(new ObjectiveLegendDead(LegendLordaeron.Stratholme));
+      AddObjective(new ObjectiveEitherOf(new ObjectiveLegendDead(LegendLordaeron.Arthas),
         new ObjectiveFactionDefeated(LordaeronSetup.Lordaeron)));
       AddObjective(new ObjectiveSelfExists());
       Required = true;
@@ -32,13 +32,13 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     protected override void OnComplete(Faction completingFaction)
     {
-      LegendLordaeron.LegendArthas.Unit.DropAllItems();
-      RemoveUnit(LegendLordaeron.LegendArthas.Unit);
-      LegendLordaeron.LegendArthas.Unit = null;
-      LegendLordaeron.LegendArthas.PlayerColor = PLAYER_COLOR_PURPLE;
-      LegendLordaeron.LegendArthas.StartingXp = 7000;
-      LegendLordaeron.LegendArthas.UnitType = FourCC("Uear");
-      LegendLordaeron.LegendArthas.ClearUnitDependencies();
+      LegendLordaeron.Arthas.Unit.DropAllItems();
+      RemoveUnit(LegendLordaeron.Arthas.Unit);
+      LegendLordaeron.Arthas.Unit = null;
+      LegendLordaeron.Arthas.PlayerColor = PLAYER_COLOR_PURPLE;
+      LegendLordaeron.Arthas.StartingXp = 7000;
+      LegendLordaeron.Arthas.UnitType = FourCC("Uear");
+      LegendLordaeron.Arthas.ClearUnitDependencies();
       SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
     }
 
