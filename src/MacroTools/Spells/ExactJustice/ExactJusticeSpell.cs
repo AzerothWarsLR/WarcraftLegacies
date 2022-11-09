@@ -35,7 +35,10 @@ namespace MacroTools.Spells.ExactJustice
     {
       var channel = new ExactJusticeChannel(caster, Id)
       {
-        EffectSettings = EffectSettings
+        EffectSettings = EffectSettings,
+        Interval = 0.25f,
+        Radius = Radius,
+        MaximumDamage = DamageBase + DamageLevel * GetAbilityLevel(caster)
       };
       ChannelManager.Add(channel);
     }
