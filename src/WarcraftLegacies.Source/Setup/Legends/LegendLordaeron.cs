@@ -1,23 +1,72 @@
 using MacroTools;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
+  /// <summary>
+  /// Responsible for creating and storing all Lordaeron <see cref="Legend"/>s.
+  /// </summary>
   public static class LegendLordaeron
   {
+    /// <summary>
+    /// King of Lordaeron.
+    /// </summary>
+    public static Legend Terenas { get; private set; }
+    
+    /// <summary>
+    /// Leader of the Silver Hand.
+    /// </summary>
     public static Legend? Uther { get; private set; }
+    
+    /// <summary>
+    /// Prince of Lordaeron.
+    /// </summary>
     public static Legend? Arthas { get; private set; }
+    
+    /// <summary>
+    /// Legendary wielder of Ashbringer.
+    /// </summary>
     public static Legend? Mograine { get; private set; }
+    
+    /// <summary>
+    /// Xenophobic human general.
+    /// </summary>
     public static Legend? Garithos { get; private set; }
+    
+    /// <summary>
+    /// High Commander of the Scarlet Crusade.
+    /// </summary>
     public static Legend? Goodchild { get; private set; }
+    
+    /// <summary>
+    /// Capital of Lordaeron.
+    /// </summary>
     public static Legend? CapitalPalace { get; private set; }
+    
+    /// <summary>
+    /// The place Arthas culls in the Culling of Stratholme campaign mission.
+    /// </summary>
     public static Legend? Stratholme { get; private set; }
+    
+    /// <summary>
+    /// A well fortified city.
+    /// </summary>
     public static Legend? TyrsHand { get; private set; }
 
+    /// <summary>
+    /// Sets up all Lordaeron <see cref="Legend"/>s.
+    /// </summary>
     public static void Setup()
     {
+      Terenas = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_NEMI_KING_TERENAS_MENETHIL_LORDAERON)
+      };
+      Legend.Register(Terenas);
+      
       Mograine = new Legend
       {
         UnitType = Constants.UNIT_H01J_THE_ASHBRINGER_LORDAERON,
@@ -49,6 +98,21 @@ namespace WarcraftLegacies.Source.Setup.Legends
       CapitalPalace.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(9476, 8843)));
       CapitalPalace.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER, new Point(8638, 9342)));
       CapitalPalace.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER, new Point(9545, 9372)));
+      CreateTrigger()
+        .RegisterUnitEvent(CapitalPalace.Unit, EVENT_UNIT_DEATH)
+        .AddAction(() =>
+        {
+          Terenas.Unit.Kill();
+          ArtifactSetup.ArtifactCrownstormwind?.Item.SetPosition(Regions.King_Arthas_crown.Center);
+          SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
+            FourCC("Ysaw"), false, "hide", false);
+          SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
+            FourCC("D044"), false, "hide", false);
+          SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
+            FourCC("YObb"), false, "hide", false);
+          SetDoodadAnimationRect(Regions.Terenas.Rect, FourCC("YScr"), "show", false);
+          DestroyTrigger(GetTriggeringTrigger());
+        });
 
       Stratholme = new Legend
       {
