@@ -40,8 +40,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
 
       var exactJustice = new ExactJusticeSpell(Constants.ABILITY_A097_EXACT_JUSTICE_PURPLE_UTHER)
       {
-        DamageBase = 200,
-        DamageLevel = 250,
+        DamageBase = 0,
+        DamageLevel = 200,
         Radius = 400,
         EffectSettings = new ExactJusticeEffectSettings
         {
