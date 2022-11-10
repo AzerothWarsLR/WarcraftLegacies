@@ -1,9 +1,8 @@
-﻿using MacroTools.Buffs;
-using MacroTools.PassiveAbilitySystem;
+﻿using MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace MacroTools.PassiveAbilities
+namespace MacroTools.Mechanics.DemonGates
 {
   /// <summary>
   /// Causes the unit type to periodically spawn units.
@@ -34,7 +33,12 @@ namespace MacroTools.PassiveAbilities
     /// <inheritdoc />
     public override void OnCreated(unit createdUnit)
     {
-      var buff = new DemonGateBuff(createdUnit, _demonUnitTypeId, _spawnInterval, _spawnCount, _toggleBuffId);
+      var buff = new DemonGateBuff(createdUnit, _demonUnitTypeId, _spawnInterval, _spawnCount, _toggleBuffId)
+      {
+        SpawnEffectPath = "Abilities\\Spells\\Demon\\DarkPortal\\DarkPortalTarget.mdl",
+        SpawnLimit = 12,
+        Duration = float.MaxValue
+      };
       BuffSystem.Add(buff);
     }
   }

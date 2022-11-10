@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using static War3Api.Common;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
+using static War3Api.Common;
 
-namespace MacroTools.Buffs
+namespace MacroTools.Mechanics.DemonGates
 {
   /// <summary>
   /// Units with this buff will periodically spawn units from themselves.

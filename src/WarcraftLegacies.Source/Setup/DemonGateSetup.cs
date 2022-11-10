@@ -1,12 +1,21 @@
-﻿using MacroTools.PassiveAbilities;
+﻿using MacroTools.Mechanics.DemonGates;
+using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 
 namespace WarcraftLegacies.Source.Setup
 {
+  /// <summary>
+  /// Responsible for registering all <see cref="DemonGateType"/>s.
+  /// </summary>
   public static class DemonGateSetup
   {
+    /// <summary>
+    /// Registers all <see cref="DemonGateType"/>s.
+    /// </summary>
     public static void Setup()
     {
+      PassiveAbilityManager.Register(new FocalDemonGate(Constants.UNIT_N0AP_FOCAL_DEMON_GATE_FEL_HORDE));
+      
       PassiveAbilityManager.Register(new DemonGateType(Constants.UNIT_N000_FEL_HOUND_DEMON_GATE_T1_HOUNDS,
         Constants.UNIT_N059_FEL_HOUND_FEL_HORDE_PORTAL, 80, 2,
         Constants.BUFF_B08B_TOGGLE_SUMMONING_FEL_HORDE_DEMON_GATE));
