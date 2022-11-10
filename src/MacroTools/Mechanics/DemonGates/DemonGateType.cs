@@ -31,15 +31,26 @@ namespace MacroTools.Mechanics.DemonGates
     }
     
     /// <inheritdoc />
+    public override void OnUpgrade()
+    {
+      ApplyBuff(GetTriggerUnit());
+    }
+    
+    /// <inheritdoc />
     public override void OnCreated(unit createdUnit)
     {
-      var buff = new DemonGateBuff(createdUnit, _demonUnitTypeId, _spawnInterval, _spawnCount, _toggleBuffId)
+      ApplyBuff(createdUnit);
+    }
+    
+    private void ApplyBuff(unit whichUnit)
+    {
+      var buff = new DemonGateBuff(whichUnit, _demonUnitTypeId, _spawnInterval, _spawnCount, _toggleBuffId)
       {
         SpawnEffectPath = "Abilities\\Spells\\Demon\\DarkPortal\\DarkPortalTarget.mdl",
         SpawnLimit = 12,
         Duration = float.MaxValue
       };
-      BuffSystem.Add(buff);
+      BuffSystem.Add(buff, StackBehaviour.Stack);
     }
   }
 }

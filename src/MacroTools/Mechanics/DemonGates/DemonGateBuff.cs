@@ -21,7 +21,7 @@ namespace MacroTools.Mechanics.DemonGates
     /// The number of demons from this portal that can exist simultaneously.
     /// </summary>
     public int SpawnLimit { get; init; } = 12;
-    
+
     private Point SpawnPoint
     {
       get
@@ -38,7 +38,7 @@ namespace MacroTools.Mechanics.DemonGates
       }
     }
 
-    private Point RallyPoint => 
+    private Point RallyPoint =>
       FocalDemonGateBuff.Instance != null ? FocalDemonGateBuff.Instance.RallyPoint : Target.GetRallyPoint();
 
     private readonly int _demonUnitTypeId;
@@ -50,7 +50,7 @@ namespace MacroTools.Mechanics.DemonGates
 
     private const float FacingOffset = -45f; //Demon gate model is spun around weirdly so this reverses that for code
     private const float SpawnDistance = 300f; //How far away from the gate to spawn units
-    
+
     /// <summary>
     /// Initializesa  new instance of the <see cref="DemonGateBuff"/> class.
     /// </summary>
@@ -87,6 +87,9 @@ namespace MacroTools.Mechanics.DemonGates
       }
     }
 
+    /// <inheritdoc />
+    public override StackResult OnStack(Buff newStack) => StackResult.Consume;
+
     private void SpawnDemon()
     {
       for (var i = 0; i < _spawnCount; i++)
@@ -94,6 +97,7 @@ namespace MacroTools.Mechanics.DemonGates
         _spawnedDemons.Add(CreateUnit(Target.OwningPlayer(), _demonUnitTypeId, SpawnPoint.X, SpawnPoint.Y,
           Target.GetFacing() + FacingOffset).IssueOrder("attack", RallyPoint));
       }
+
       AddSpecialEffect(SpawnEffectPath, SpawnPoint.X, SpawnPoint.Y).SetLifespan();
     }
   }
