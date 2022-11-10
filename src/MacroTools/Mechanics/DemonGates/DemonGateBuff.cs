@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Buffs;
@@ -23,9 +22,24 @@ namespace MacroTools.Mechanics.DemonGates
     /// </summary>
     public int SpawnLimit { get; init; } = 12;
     
-    private Point SpawnPoint => throw new NotImplementedException();
+    private Point SpawnPoint
+    {
+      get
+      {
+        if (FocalDemonGateBuff.Instance != null)
+        {
+          return FocalDemonGateBuff.Instance.SpawnPoint;
+        }
 
-    private Point RallyPoint => throw new NotImplementedException();
+        var targetPosition = Target.GetPosition();
+        var offsetPosition =
+          WCSharp.Shared.Util.PositionWithPolarOffset(targetPosition.X, targetPosition.Y, SpawnDistance, FacingOffset);
+        return new Point(offsetPosition.x, offsetPosition.y);
+      }
+    }
+
+    private Point RallyPoint => 
+      FocalDemonGateBuff.Instance != null ? FocalDemonGateBuff.Instance.RallyPoint : Target.GetRallyPoint();
 
     private readonly int _demonUnitTypeId;
     private readonly float _spawnInterval;
@@ -35,9 +49,8 @@ namespace MacroTools.Mechanics.DemonGates
     private readonly List<unit> _spawnedDemons = new();
 
     private const float FacingOffset = -45f; //Demon gate model is spun around weirdly so this reverses that for code
-    private const float _spawnDistance = 300f; //How far away from the gate to spawn units
-
-
+    private const float SpawnDistance = 300f; //How far away from the gate to spawn units
+    
     /// <summary>
     /// Initializesa  new instance of the <see cref="DemonGateBuff"/> class.
     /// </summary>
@@ -55,6 +68,9 @@ namespace MacroTools.Mechanics.DemonGates
       _toggleBuffTypeId = toggleBuffTypeId;
       Interval = 1;
     }
+
+    /// <inheritdoc />
+    public override void OnApply() => Target.IssueOrder("setrally", Target.GetPosition());
 
     /// <inheritdoc />
     public override void OnTick()
