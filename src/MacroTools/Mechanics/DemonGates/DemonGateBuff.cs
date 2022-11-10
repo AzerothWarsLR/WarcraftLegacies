@@ -39,7 +39,7 @@ namespace MacroTools.Mechanics.DemonGates
     {
       get
       {
-        if (FocalDemonGateBuff.Instance != null)
+        if (FocalDemonGateBuff.Instance != null && FocalDemonGateBuff.Instance.Target.IsAlive())
           return FocalDemonGateBuff.Instance.SpawnPoint;
 
         var targetPosition = Target.GetPosition();
@@ -51,7 +51,9 @@ namespace MacroTools.Mechanics.DemonGates
     }
 
     private Point RallyPoint =>
-      FocalDemonGateBuff.Instance != null ? FocalDemonGateBuff.Instance.RallyPoint : Target.GetRallyPoint();
+      FocalDemonGateBuff.Instance != null && FocalDemonGateBuff.Instance.Target.IsAlive()
+        ? FocalDemonGateBuff.Instance.RallyPoint
+        : Target.GetRallyPoint();
 
     private readonly int _demonUnitTypeId;
     private readonly float _spawnInterval;

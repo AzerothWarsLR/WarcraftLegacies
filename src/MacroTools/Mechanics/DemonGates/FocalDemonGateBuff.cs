@@ -15,10 +15,10 @@ namespace MacroTools.Mechanics.DemonGates
     /// The <see cref="FocalDemonGateBuff"/>. There can only ever be up to one in the game at a time.
     /// </summary>
     public static FocalDemonGateBuff? Instance { get; private set; }
-   
+
     private const float FacingOffset = -45f; //Demon gate model is spun around weirdly so this reverses that for code
     private const float SpawnDistance = 300f; //How far away from the gate to spawn units
-    
+
     /// <summary>
     /// Where units spawned by the <see cref="FocalDemonGateBuff"/> should appear.
     /// </summary>
@@ -28,7 +28,8 @@ namespace MacroTools.Mechanics.DemonGates
       {
         var targetPosition = Target.GetPosition();
         var offsetPosition =
-          WCSharp.Shared.Util.PositionWithPolarOffset(targetPosition.X, targetPosition.Y, SpawnDistance, FacingOffset);
+          WCSharp.Shared.Util.PositionWithPolarOffset(targetPosition.X, targetPosition.Y, SpawnDistance,
+            Target.GetFacing() + FacingOffset);
         return new Point(offsetPosition.x, offsetPosition.y);
       }
     }
@@ -42,20 +43,15 @@ namespace MacroTools.Mechanics.DemonGates
     /// Initializes a new instance of the <see cref="FocalDemonGateBuff"/> class.
     /// </summary>
     /// <param name="target"><inheritdoc /></param>
-    public FocalDemonGateBuff(unit target) : base(target, target)
-    {
-    }
-    
+    public FocalDemonGateBuff(unit target) : base(target, target) => Duration = float.MaxValue;
+
     /// <inheritdoc />
     public override void OnApply()
     {
-      if (Instance == null)
-        Instance = this;
-      else
-        throw new Exception($"Tried to create a second {nameof(FocalDemonGateBuff)}. There can only be one.");
+      if (Instance != null)
+        KillUnit(Instance.Target);
+      Instance = this;
+      Target.IssueOrder("setrally", SpawnPoint);
     }
-
-    /// <inheritdoc />
-    public override void OnDispose() => Instance = null;
   }
 }

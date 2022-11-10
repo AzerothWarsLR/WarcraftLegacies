@@ -18,9 +18,9 @@ namespace MacroTools.Mechanics.DemonGates
     }
     
     /// <inheritdoc />
-    public override void OnCreated(unit createdUnit)
+    public override void OnConstruction()
     {
-      var buff = new FocalDemonGateBuff(createdUnit);
+      var buff = new FocalDemonGateBuff(GetTriggerUnit());
       BuffSystem.Add(buff);
     }
   }

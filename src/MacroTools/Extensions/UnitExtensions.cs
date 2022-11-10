@@ -386,5 +386,10 @@ namespace MacroTools.Extensions
       UnitAddAbility(whichUnit, abilityTypeId);
       return whichUnit;
     }
+
+    /// <summary>
+    /// Returns true if the unit is alive.
+    /// </summary>
+    public static bool IsAlive(this unit whichUnit) => UnitAlive(whichUnit);
   }
 }
