@@ -116,6 +116,7 @@ namespace WarcraftLegacies.Source.Setup
       AmbianceSetup.Setup();
       PassiveAbilityManager.InitializePreplacedUnits();
       IncompatibleResearchSetup.Setup();
+      DemonGateSetup.Setup();
     }
   }
 }

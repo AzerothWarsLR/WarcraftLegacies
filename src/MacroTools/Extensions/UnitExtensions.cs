@@ -74,9 +74,19 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Orders a unit to perform a specified order at a specified <see cref="Point"/>.
     /// </summary>
-    public static void IssueOrder(this unit unit, string order, Point target)
+    public static unit IssueOrder(this unit unit, string order, Point target)
     {
       IssuePointOrder(unit, order, target.X, target.Y);
+      return unit;
+    }
+    
+    /// <summary>
+    /// Orders a unit to perform the specified targetless order.
+    /// </summary>
+    public static unit IssueOrder(this unit unit, string order)
+    {
+      IssueImmediateOrder(unit, order);
+      return unit;
     }
 
     /// <summary>
@@ -332,5 +342,55 @@ namespace MacroTools.Extensions
       BlzSetUnitMaxHP(whichUnit, R2I(I2R(BlzGetUnitMaxHP(whichUnit)) * multiplier));
       whichUnit.SetLifePercent(percentageHitpoints);
     }
+
+    /// <summary>
+    /// Sets the unit's maximum mana.
+    /// </summary>
+    /// <returns>The same unit that was provided.</returns>
+    public static unit SetMaximumMana(this unit whichUnit, int maximumMana)
+    {
+      BlzSetUnitMaxMana(whichUnit, maximumMana);
+      return whichUnit;
+    }
+    
+    /// <summary>
+    /// Sets the unit's current mana.
+    /// </summary>
+    /// <returns>The same unit that was provided.</returns>
+    public static unit SetMana(this unit whichUnit, int value)
+    {
+      SetUnitState(whichUnit, UNIT_STATE_MANA, value);
+      return whichUnit;
+    }
+
+    /// <summary>
+    /// Returns the unit's facing angle.
+    /// </summary>
+    public static float GetFacing(this unit whichUnit) => GetUnitFacing(whichUnit);
+
+    /// <summary>
+    /// Returns the unit's active rally point.
+    /// </summary>
+    public static Point GetRallyPoint(this unit whichUnit)
+    {
+      var rallyLocation = GetUnitRallyPoint(whichUnit);
+      var rallyPoint = new Point(GetLocationX(rallyLocation), GetLocationY(rallyLocation));
+      return rallyPoint;
+    }
+
+    /// <summary>
+    /// Adds an ability to the unit.
+    /// </summary>
+    public static unit AddAbility(this unit whichUnit, int abilityTypeId)
+    {
+      UnitAddAbility(whichUnit, abilityTypeId);
+      UnitMakeAbilityPermanent(whichUnit, true, abilityTypeId);
+      return whichUnit;
+    }
+
+    /// <summary>
+    /// Returns true if the unit is alive.
+    /// </summary>
+    public static bool IsAlive(this unit whichUnit) => UnitAlive(whichUnit);
   }
 }
