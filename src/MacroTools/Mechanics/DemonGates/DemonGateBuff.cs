@@ -55,9 +55,10 @@ namespace MacroTools.Mechanics.DemonGates
     private readonly int _demonUnitTypeId;
     private readonly float _spawnInterval;
     private readonly int _spawnCount;
-    private readonly int _toggleBuffTypeId;
     private float _progress;
     private readonly List<unit> _spawnedDemons = new();
+    private static int _toggleBuffTypeId;
+    private static int _toggleAbilityTypeId;
 
     private const float FacingOffset = -45f; //Demon gate model is spun around weirdly so this reverses that for code
     private const float SpawnDistance = 300f; //How far away from the gate to spawn units
@@ -69,14 +70,12 @@ namespace MacroTools.Mechanics.DemonGates
     /// <param name="demonUnitTypeId">The unit to spawn.</param>
     /// <param name="spawnInterval">How frequently to spawn the unit.</param>
     /// <param name="spawnCount">How many units to spawn.</param>
-    /// <param name="toggleBuffTypeId">Units will not spawn if the buff target doesn't have a buff with this ID active.</param>
-    public DemonGateBuff(unit caster, int demonUnitTypeId, float spawnInterval, int spawnCount, int toggleBuffTypeId) :
+    public DemonGateBuff(unit caster, int demonUnitTypeId, float spawnInterval, int spawnCount) :
       base(caster, caster)
     {
       _demonUnitTypeId = demonUnitTypeId;
       _spawnInterval = spawnInterval;
       _spawnCount = spawnCount;
-      _toggleBuffTypeId = toggleBuffTypeId;
       Interval = 1;
     }
 
@@ -86,7 +85,7 @@ namespace MacroTools.Mechanics.DemonGates
       Target
         .IssueOrder("setrally", Target.GetPosition())
         .SetMaximumMana((int)_spawnInterval)
-        .AddAbility(_toggleBuffTypeId)
+        .AddAbility(_toggleAbilityTypeId)
         .IssueOrder("immolation");
     }
 
@@ -108,6 +107,17 @@ namespace MacroTools.Mechanics.DemonGates
     /// <inheritdoc />
     public override StackResult OnStack(Buff newStack) => StackResult.Consume;
 
+    /// <summary>
+    /// Sets up the <see cref="DemonGateBuff"/> system.
+    /// </summary>
+    /// <param name="toggleAbilityTypeId">An ability to add to all Demon Gates.</param>
+    /// <param name="toggleBuffTypeId">Demon Gates only function while this buff is active.</param>
+    public static void Setup(int toggleAbilityTypeId, int toggleBuffTypeId)
+    {
+      _toggleAbilityTypeId = toggleAbilityTypeId;
+      _toggleBuffTypeId = toggleBuffTypeId;
+    }
+    
     private void SpawnDemon()
     {
       for (var i = 0; i < _spawnCount; i++)
