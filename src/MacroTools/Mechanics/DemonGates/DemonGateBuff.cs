@@ -44,7 +44,8 @@ namespace MacroTools.Mechanics.DemonGates
 
         var targetPosition = Target.GetPosition();
         var offsetPosition =
-          WCSharp.Shared.Util.PositionWithPolarOffset(targetPosition.X, targetPosition.Y, SpawnDistance, FacingOffset);
+          WCSharp.Shared.Util.PositionWithPolarOffset(targetPosition.X, targetPosition.Y, SpawnDistance,
+            Target.GetFacing() + FacingOffset);
         return new Point(offsetPosition.x, offsetPosition.y);
       }
     }
@@ -92,7 +93,7 @@ namespace MacroTools.Mechanics.DemonGates
     /// <inheritdoc />
     public override void OnTick()
     {
-      if (Progress < _spawnInterval) 
+      if (Progress < _spawnInterval)
         Progress += Interval;
       if (Progress >= _spawnInterval
           && Caster.OwningPlayer().GetFoodUsed() < Caster.OwningPlayer().GetFoodCap()
@@ -117,7 +118,7 @@ namespace MacroTools.Mechanics.DemonGates
       _toggleAbilityTypeId = toggleAbilityTypeId;
       _toggleBuffTypeId = toggleBuffTypeId;
     }
-    
+
     private void SpawnDemon()
     {
       for (var i = 0; i < _spawnCount; i++)

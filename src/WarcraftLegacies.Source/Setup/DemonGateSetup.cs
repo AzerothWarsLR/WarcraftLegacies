@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Setup
       PassiveAbilityManager.Register(new DemonGateType(Constants.UNIT_N04I_EREDAR_WITCH_DEMON_GATE_T1_SUCCUBUS,
         Constants.UNIT_NDQN_SUCCUBUS_FEL_HORDE_PORTAL, 90, 1));
       PassiveAbilityManager.Register(new DemonGateType(Constants.UNIT_N05F_VOIDWALKER_DEMON_GATE_T1_VOIDWALKER,
-        Constants.UNIT_NVDL_VOIDWALKER_FEL_HORDE_PORTAL, 60, 1));
+        Constants.UNIT_NVDL_VOIDWALKER_FEL_HORDE_PORTAL, 2, 1));
 
       PassiveAbilityManager.Register(new DemonGateType(Constants.UNIT_N05I_FEL_HOUND_PACK_DEMON_GATE_T2_HOUNDS_PACK,
         Constants.UNIT_N059_FEL_HOUND_FEL_HORDE_PORTAL, 80, 6));
