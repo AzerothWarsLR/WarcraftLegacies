@@ -384,6 +384,7 @@ namespace MacroTools.Extensions
     public static unit AddAbility(this unit whichUnit, int abilityTypeId)
     {
       UnitAddAbility(whichUnit, abilityTypeId);
+      UnitMakeAbilityPermanent(whichUnit, true, abilityTypeId);
       return whichUnit;
     }
 

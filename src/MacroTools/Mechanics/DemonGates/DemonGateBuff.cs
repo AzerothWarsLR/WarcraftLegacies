@@ -55,7 +55,7 @@ namespace MacroTools.Mechanics.DemonGates
         ? FocalDemonGateBuff.Instance.RallyPoint
         : Target.GetRallyPoint();
 
-    private readonly int _demonUnitTypeId;
+    private int _demonUnitTypeId;
     private readonly float _spawnInterval;
     private readonly int _spawnCount;
     private float _progress;
@@ -108,7 +108,13 @@ namespace MacroTools.Mechanics.DemonGates
     }
 
     /// <inheritdoc />
-    public override StackResult OnStack(Buff newStack) => StackResult.Consume;
+    public override StackResult OnStack(Buff newStack)
+    {
+      if (newStack is DemonGateBuff newDemonGateBuff) 
+        _demonUnitTypeId = newDemonGateBuff._demonUnitTypeId;
+      Target.SetMaximumMana((int)_spawnInterval);
+      return StackResult.Stack;
+    }
 
     /// <summary>
     /// Sets up the <see cref="DemonGateBuff"/> system.
