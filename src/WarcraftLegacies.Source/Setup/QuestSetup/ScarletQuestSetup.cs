@@ -12,7 +12,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 
       ScarletSetup.ScarletCrusade.StartingQuest = ScarletSetup.ScarletCrusade.AddQuest(new QuestTownWatch());
       ScarletSetup.ScarletCrusade.AddQuest(new QuestScarletCrusade(Regions.ScarletAmbient,
-        PreplacedUnitSystem.GetUnit(Constants.UNIT_H00T_SCARLET_MONASTERY_LORDAERON), liberateLordaeron));
+        PreplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.Scarlet_Monastery_Exterior.Center),
+        liberateLordaeron));
       ScarletSetup.ScarletCrusade.AddQuest(new QuestArgentDawn());
       ScarletSetup.ScarletCrusade.AddQuest(new QuestArathiVolunteers());
       ScarletSetup.ScarletCrusade.AddQuest(new QuestTyr(Regions.TyrUnlock));
