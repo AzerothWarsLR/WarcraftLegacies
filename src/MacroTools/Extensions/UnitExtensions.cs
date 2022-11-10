@@ -79,6 +79,15 @@ namespace MacroTools.Extensions
       IssuePointOrder(unit, order, target.X, target.Y);
       return unit;
     }
+    
+    /// <summary>
+    /// Orders a unit to perform the specified targetless order.
+    /// </summary>
+    public static unit IssueOrder(this unit unit, string order)
+    {
+      IssueImmediateOrder(unit, order);
+      return unit;
+    }
 
     /// <summary>
     /// Moves the unit to a specified <see cref="Point"/>.
@@ -343,6 +352,16 @@ namespace MacroTools.Extensions
       BlzSetUnitMaxMana(whichUnit, maximumMana);
       return whichUnit;
     }
+    
+    /// <summary>
+    /// Sets the unit's current mana.
+    /// </summary>
+    /// <returns>The same unit that was provided.</returns>
+    public static unit SetMana(this unit whichUnit, int value)
+    {
+      SetUnitState(whichUnit, UNIT_STATE_MANA, value);
+      return whichUnit;
+    }
 
     /// <summary>
     /// Returns the unit's facing angle.
@@ -357,6 +376,15 @@ namespace MacroTools.Extensions
       var rallyLocation = GetUnitRallyPoint(whichUnit);
       var rallyPoint = new Point(GetLocationX(rallyLocation), GetLocationY(rallyLocation));
       return rallyPoint;
+    }
+
+    /// <summary>
+    /// Adds an ability to the unit.
+    /// </summary>
+    public static unit AddAbility(this unit whichUnit, int abilityTypeId)
+    {
+      UnitAddAbility(whichUnit, abilityTypeId);
+      return whichUnit;
     }
   }
 }

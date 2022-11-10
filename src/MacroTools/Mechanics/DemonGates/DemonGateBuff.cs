@@ -22,6 +22,19 @@ namespace MacroTools.Mechanics.DemonGates
     /// </summary>
     public int SpawnLimit { get; init; } = 12;
 
+    /// <summary>
+    /// The progress towards spawning a new demon.
+    /// </summary>
+    private float Progress
+    {
+      get => _progress;
+      set
+      {
+        _progress = value;
+        Target.SetMana((int)value);
+      }
+    }
+
     private Point SpawnPoint
     {
       get
@@ -50,7 +63,7 @@ namespace MacroTools.Mechanics.DemonGates
     private const float SpawnDistance = 300f; //How far away from the gate to spawn units
 
     /// <summary>
-    /// Initializesa  new instance of the <see cref="DemonGateBuff"/> class.
+    /// Initializes a new instance of the <see cref="DemonGateBuff"/> class.
     /// </summary>
     /// <param name="caster"><inheritdoc /></param>
     /// <param name="demonUnitTypeId">The unit to spawn.</param>
@@ -68,14 +81,21 @@ namespace MacroTools.Mechanics.DemonGates
     }
 
     /// <inheritdoc />
-    public override void OnApply() => Target.IssueOrder("setrally", Target.GetPosition());
+    public override void OnApply()
+    {
+      Target
+        .IssueOrder("setrally", Target.GetPosition())
+        .SetMaximumMana((int)_spawnInterval)
+        .AddAbility(_toggleBuffTypeId)
+        .IssueOrder("immolation");
+    }
 
     /// <inheritdoc />
     public override void OnTick()
     {
-      _progress += Interval;
-      Caster.SetMaximumMana((int)_progress);
-      if (_progress >= _spawnInterval
+      if (Progress < _spawnInterval) 
+        Progress += Interval;
+      if (Progress >= _spawnInterval
           && Caster.OwningPlayer().GetFoodUsed() < Caster.OwningPlayer().GetFoodCap()
           && Caster.OwningPlayer().GetFoodUsed() < Caster.OwningPlayer().GetFoodCapCeiling()
           && GetUnitAbilityLevel(Caster, _toggleBuffTypeId) > 0
@@ -97,6 +117,7 @@ namespace MacroTools.Mechanics.DemonGates
       }
 
       AddSpecialEffect(SpawnEffectPath, SpawnPoint.X, SpawnPoint.Y).SetLifespan();
+      Progress = 0;
     }
   }
 }
