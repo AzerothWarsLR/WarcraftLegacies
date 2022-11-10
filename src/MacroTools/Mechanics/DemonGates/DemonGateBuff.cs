@@ -27,9 +27,7 @@ namespace MacroTools.Mechanics.DemonGates
       get
       {
         if (FocalDemonGateBuff.Instance != null)
-        {
           return FocalDemonGateBuff.Instance.SpawnPoint;
-        }
 
         var targetPosition = Target.GetPosition();
         var offsetPosition =
