@@ -1,7 +1,9 @@
 using MacroTools;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
@@ -64,6 +66,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendLichking.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3015, 20762)));
       LegendLichking.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3643, 22588)));
       LegendLichking.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3638, 23374)));
+      CreateTrigger()
+        .RegisterUnitEvent(LegendLichking.Unit, EVENT_UNIT_CHANGE_OWNER)
+        .AddAction(() =>
+      {
+        if (LegendLichking.Unit.OwningPlayer() != Player(bj_PLAYER_NEUTRAL_VICTIM))
+          LegendLichking.Unit.SetOwner(Player(bj_PLAYER_NEUTRAL_VICTIM));
+      });
 
       Naxxramas = new Legend
       {
