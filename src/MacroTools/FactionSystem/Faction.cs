@@ -568,7 +568,7 @@ namespace MacroTools.FactionSystem
         {
           SetUnitOwner(unit,
             Player?.GetTeam()?.Size > 1
-              ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count)]
+              ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count-1)]
               : Player(GetBJPlayerNeutralVictim()), false);
         }
       }

@@ -47,12 +47,13 @@ namespace WarcraftLegacies.Source.GameLogic.GameEnd
       ControlPointOwnerChangeEventArgs controlPointOwnerChangeEventArgs)
     {
       if (VictoryDefeat.GameWon) return;
-      var team = controlPointOwnerChangeEventArgs.ControlPoint.Owner.GetTeam();
-      if (team == null) return;
-      var teamControlPoints = GetTeamControlPoints(team);
+      var newOwnerTeam = controlPointOwnerChangeEventArgs.ControlPoint.Owner.GetTeam();
+      var formerOwnerTeam = controlPointOwnerChangeEventArgs.FormerOwner.GetTeam();
+      if (newOwnerTeam == null || newOwnerTeam == formerOwnerTeam) return;
+      var teamControlPoints = GetTeamControlPoints(newOwnerTeam);
       if (teamControlPoints >= _cpsVictory)
-        VictoryDefeat.TeamVictory(team);
-      else if (teamControlPoints > CpsWarning) TeamWarning(team, teamControlPoints);
+        VictoryDefeat.TeamVictory(newOwnerTeam);
+      else if (teamControlPoints > CpsWarning) TeamWarning(newOwnerTeam, teamControlPoints);
     }
 
     public static void Setup()
