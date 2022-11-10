@@ -74,9 +74,10 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Orders a unit to perform a specified order at a specified <see cref="Point"/>.
     /// </summary>
-    public static void IssueOrder(this unit unit, string order, Point target)
+    public static unit IssueOrder(this unit unit, string order, Point target)
     {
       IssuePointOrder(unit, order, target.X, target.Y);
+      return unit;
     }
 
     /// <summary>
@@ -332,5 +333,20 @@ namespace MacroTools.Extensions
       BlzSetUnitMaxHP(whichUnit, R2I(I2R(BlzGetUnitMaxHP(whichUnit)) * multiplier));
       whichUnit.SetLifePercent(percentageHitpoints);
     }
+
+    /// <summary>
+    /// Sets the unit's maximum mana.
+    /// </summary>
+    /// <returns>The same unit that was provided.</returns>
+    public static unit SetMaximumMana(this unit whichUnit, int maximumMana)
+    {
+      BlzSetUnitMaxMana(whichUnit, maximumMana);
+      return whichUnit;
+    }
+
+    /// <summary>
+    /// Returns the unit's facing angle.
+    /// </summary>
+    public static float GetFacing(this unit whichUnit) => GetUnitFacing(whichUnit);
   }
 }

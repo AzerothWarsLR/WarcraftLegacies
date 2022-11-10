@@ -187,6 +187,24 @@ namespace MacroTools.FactionSystem
     }
 
     /// <summary>
+    /// Returns the amount of food the player is using.
+    /// </summary>
+    public static int GetFoodUsed(this player whichPlayer) =>
+      GetPlayerState(whichPlayer, PLAYER_STATE_RESOURCE_FOOD_USED);
+
+    /// <summary>
+    /// Returns the player's food cap.
+    /// </summary>
+    public static int GetFoodCap(this player whichPlayer) =>
+      GetPlayerState(whichPlayer, PLAYER_STATE_RESOURCE_FOOD_CAP);
+
+    /// <summary>
+    /// Returns player's food cap ceiling.
+    /// </summary>
+    public static int GetFoodCapCeiling(this player whichPlayer) =>
+      GetPlayerState(whichPlayer, PLAYER_STATE_FOOD_CAP_CEILING);
+
+    /// <summary>
     ///   Determines whether or not the player can see or use the specified ability.
     /// </summary>
     internal static void SetAbilityAvailability(this player player, int ability, bool value)
