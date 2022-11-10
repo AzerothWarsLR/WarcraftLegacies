@@ -131,8 +131,17 @@ namespace MacroTools.Mechanics.DemonGates
     {
       for (var i = 0; i < _spawnCount; i++)
       {
-        _spawnedDemons.Add(CreateUnit(Target.OwningPlayer(), _demonUnitTypeId, SpawnPoint.X, SpawnPoint.Y,
-          Target.GetFacing() + FacingOffset).IssueOrder("attack", RallyPoint));
+        var spawnedDemon = CreateUnit(Target.OwningPlayer(), _demonUnitTypeId, SpawnPoint.X, SpawnPoint.Y,
+          Target.GetFacing() + FacingOffset)
+          .IssueOrder("attack", RallyPoint);
+        _spawnedDemons.Add(spawnedDemon);
+        CreateTrigger()
+          .RegisterUnitEvent(spawnedDemon, EVENT_UNIT_DEATH)
+          .AddAction(() =>
+          {
+            _spawnedDemons.Remove(spawnedDemon);
+            DestroyTrigger(GetTriggeringTrigger());
+          });
       }
 
       AddSpecialEffect(SpawnEffectPath, SpawnPoint.X, SpawnPoint.Y).SetLifespan();
