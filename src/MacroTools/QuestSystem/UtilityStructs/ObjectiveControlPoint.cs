@@ -27,8 +27,6 @@ namespace MacroTools.QuestSystem.UtilityStructs
       Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer())
         ? QuestProgress.Complete
         : QuestProgress.Incomplete;
-
-      //whichFaction.JoinedTeam += OnFactionTeamJoin;
     }
 
     private void OnTargetChangeOwner(object? sender, ControlPointOwnerChangeEventArgs controlPointOwnerChangeEventArgs)
