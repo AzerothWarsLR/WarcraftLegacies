@@ -47,7 +47,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       LegendJaina = new Legend
       {
-        UnitType = FourCC("Hjai")
+        UnitType = Constants.UNIT_HJAI_ARCHMAGE_OF_DALARAN_DALARAN,
+        Name = "Jaina Proudmoore"
       };
       Legend.Register(LegendJaina);
 
