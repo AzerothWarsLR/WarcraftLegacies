@@ -12,15 +12,11 @@ namespace WarcraftLegacies.Source
   {
     private static int TierToUnitType(PatronTier tier)
     {
-      switch (tier)
-      {
-        case PatronTier.One:
-          return Constants.UNIT_NHMC_PATRONS_FOOTMAN_TIER_1_PATRON;
-        case PatronTier.Two:
-          return Constants.UNIT_NFRO_PATRONS_KNIGHT_TIER_2_PATRON;
-        default:
-          throw new ArgumentOutOfRangeException(nameof(tier), tier, null);
-      }
+      if (tier == PatronTier.One)
+        return Constants.UNIT_NHMC_PATRONS_FOOTMAN_TIER_1_PATRON;
+      if (tier == PatronTier.Two)
+        return Constants.UNIT_NFRO_PATRONS_KNIGHT_TIER_2_PATRON;
+      throw new ArgumentOutOfRangeException(nameof(tier), tier, null);
     }
 
     private static void SetupPatron(string name, PatronTier tier, Point position)
