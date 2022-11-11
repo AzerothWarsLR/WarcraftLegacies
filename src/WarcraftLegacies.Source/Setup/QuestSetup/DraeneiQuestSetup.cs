@@ -29,13 +29,12 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       draenei.AddQuest(new QuestSurvivorsShattrah());
       draenei.AddQuest(new QuestFirstWave());
       draenei.AddQuest(new QuestBrokenOne());
-      draenei.AddQuest(new QuestTriumvirate());
-
       draenei.AddQuest(new QuestShipArgus(
         questExiled,
         PreplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.OutlandToArgus.Center),
         PreplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center)
         ));
+      draenei.AddQuest(new QuestTriumvirate());
     }
   }
 }
