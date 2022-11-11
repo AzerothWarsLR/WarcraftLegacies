@@ -68,11 +68,11 @@ namespace WarcraftLegacies.Source.Setup
       Player(20).SetFaction(GilneasSetup.Gilneas);
       Player(20).SetTeam(TeamSetup.Alliance);
       
-      Player(21).SetFaction(KultirasSetup.Kultiras);
-      Player(21).SetTeam(TeamSetup.Alliance);
+      Player(22).SetFaction(KultirasSetup.Kultiras);
+      Player(22).SetTeam(TeamSetup.Alliance);
       
-      Player(22).SetFaction(LegionSetup.Legion);
-      Player(22).SetTeam(TeamSetup.Legion);
+      Player(23).SetFaction(LegionSetup.Legion);
+      Player(23).SetTeam(TeamSetup.Legion);
     }
   }
 }
