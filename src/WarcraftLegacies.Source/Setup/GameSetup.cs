@@ -46,6 +46,7 @@ namespace WarcraftLegacies.Source.Setup
       SilvermoonDies.Setup();
       ZinrokhAssembly.Setup();
       //IncompatibleTierConfig.Setup();
+      GameTime.Setup();
       FactionMultiboard.Setup();
       ArtifactBook.Initialize();
       PowerBook.Initialize();
