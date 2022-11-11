@@ -14,14 +14,15 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       "ReplaceableTextures\\CommandButtons\\BTNGlazeroth.blp")
     {
       AddObjective(new ObjectiveTime(480));
-      this.AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendDraenei.LegendExodarship));
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendDraenei.LegendExodarship));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = QuestResearchId;
     }
 
-
+    /// <inheritdoc />
     protected override string CompletionPopup => "The hero Maraad is now trainable at the Altar";
 
+    /// <inheritdoc />
     protected override string RewardDescription => "Maraad will join the survivors on the Exodar";
   }
 }

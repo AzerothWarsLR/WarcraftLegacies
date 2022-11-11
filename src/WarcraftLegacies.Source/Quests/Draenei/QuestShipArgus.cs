@@ -15,10 +15,13 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       Global = true;
     }
 
+    /// <inheritdoc />
     protected override string CompletionPopup => "Velen has opened the portal to Argus";
 
+    /// <inheritdoc />
     protected override string RewardDescription => "Open a Portal between Tempest Keep and Argus";
     
+    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
       //Todo: uncomment these

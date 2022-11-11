@@ -18,8 +18,10 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       ResearchId = QuestResearchId;
     }
 
+    /// <inheritdoc />
     protected override string CompletionPopup => "The hero Nobundo is now trainable at the Altar";
 
+    /// <inheritdoc />
     protected override string RewardDescription => "Nobundo will join the survivors on the Exodar";
   }
 }

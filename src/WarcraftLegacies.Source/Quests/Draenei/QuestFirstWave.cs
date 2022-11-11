@@ -28,12 +28,15 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       };
     }
 
+    /// <inheritdoc />
     protected override string CompletionPopup =>
       "The Draenei have holded long enough and most of their civilisation had time to join the Exodar";
 
+    /// <inheritdoc />
     protected override string PenaltyDescription =>
       "You lose the Divine Citadel, Teleporter, Astral Sanctum and Crystal Spire at Azuremyst Isle";
 
+    /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _unitsToKill) KillUnit(unit);
