@@ -5,15 +5,44 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
+  /// <summary>
+  /// Responsible for setting up and storing all Dalaran <see cref="Legend"/>s.
+  /// </summary>
   public static class LegendDalaran
   {
-    public static Legend LegendAntonidas { get; private set; }
-    public static Legend LegendMedivh { get; private set; }
-    public static Legend LegendJaina { get; private set; }
-    public static Legend LegendKalecgos { get; private set; }
-    public static Legend LegendMalygos { get; private set; }
-    public static Legend LegendDalaranCapital { get; private set; }
+    /// <summary>
+    /// Archmage of Dalaran.
+    /// </summary>
+    public static Legend? LegendAntonidas { get; private set; }
+    
+    /// <summary>
+    /// Former Guardian of Tirisfal.
+    /// </summary>
+    public static Legend? LegendMedivh { get; private set; }
+    
+    /// <summary>
+    /// Antonidas' best student.
+    /// </summary>
+    public static Legend? LegendJaina { get; private set; }
+    
+    /// <summary>
+    /// Powerful Blue Dragon and sorcerer.
+    /// </summary>
+    public static Legend? LegendKalecgos { get; private set; }
+    
+    /// <summary>
+    /// Aspect of the Blue Dragonflight.
+    /// </summary>
+    public static Legend? LegendMalygos { get; private set; }
+    
+    /// <summary>
+    /// Dalaran city capital.l
+    /// </summary>
+    public static Legend? LegendDalaranCapital { get; private set; }
 
+    /// <summary>
+    /// Sets up all Dalaran <see cref="Legend"/>s.
+    /// </summary>
     public static void Setup()
     {
       LegendJaina = new Legend
