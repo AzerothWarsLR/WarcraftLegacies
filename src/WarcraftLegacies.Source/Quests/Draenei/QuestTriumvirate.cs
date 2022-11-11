@@ -22,14 +22,16 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       Global = true;
     }
 
+    /// <inheritdoc />
     protected override string CompletionPopup => "Velen has liberated Argus and re-assembled the Crown of Triumvirate";
 
+    /// <inheritdoc />
     protected override string RewardDescription => "You gain the powerful item, the Crown of the Triumvirate";
 
-
+    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      LegendDraenei.LegendVelen.Unit.AddItemSafe(ArtifactSetup.ArtifactCrowntriumvirate.Item);
+      LegendDraenei.LegendVelen.Unit?.AddItemSafe(ArtifactSetup.ArtifactCrowntriumvirate.Item);
     }
   }
 }
