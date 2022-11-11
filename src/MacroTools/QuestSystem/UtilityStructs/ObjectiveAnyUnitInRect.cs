@@ -11,8 +11,6 @@ namespace MacroTools.QuestSystem.UtilityStructs
   /// </summary>
   public sealed class ObjectiveAnyUnitInRect : Objective
   {
-    private static readonly trigger EntersRectTrig = CreateTrigger();
-    private static readonly trigger ExitsRectTrig = CreateTrigger();
     private readonly bool _heroOnly;
     private readonly rect _targetRect;
 
@@ -26,12 +24,32 @@ namespace MacroTools.QuestSystem.UtilityStructs
     {
       _targetRect = targetRect.Rect;
       Description = heroOnly ? $"You have a hero at {rectName}" : $"You have a unit at {rectName}";
-      var target = RectToRegion(_targetRect);
       _heroOnly = heroOnly;
       DisplaysPosition = true;
-      TriggerRegisterEnterRegion(EntersRectTrig, target, null);
-      TriggerRegisterLeaveRegion(ExitsRectTrig, target, null);
       PingPath = "MinimapQuestTurnIn";
+
+      CreateTrigger()
+        .RegisterEnterRegion(targetRect)
+        .AddAction(() =>
+        {
+          var triggerUnit = GetTriggerUnit();
+          if (IsValidUnitInRect())
+          {
+            TriggerUnit = triggerUnit;
+            Progress = QuestProgress.Complete;
+          }
+          else
+          {
+            Progress = QuestProgress.Incomplete;
+          }
+        });
+      CreateTrigger()
+        .RegisterLeaveRegion(targetRect)
+        .AddAction(() =>
+        {
+          if (!IsValidUnitInRect()) 
+            Progress = QuestProgress.Incomplete;
+        });
     }
 
     /// <inheritdoc />
@@ -42,13 +60,6 @@ namespace MacroTools.QuestSystem.UtilityStructs
     /// </summary>
     public unit? TriggerUnit { get; private set; }
 
-    private static region RectToRegion(rect whichRect)
-    {
-      var rectRegion = CreateRegion();
-      RegionAddRect(rectRegion, whichRect);
-      return rectRegion;
-    }
-
     private bool IsValidUnitInRect()
     {
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(_targetRect).EmptyToList())
@@ -58,31 +69,9 @@ namespace MacroTools.QuestSystem.UtilityStructs
       return false;
     }
 
-    private void OnRegionEnter()
-    {
-      var triggerUnit = GetTriggerUnit();
-      if (EligibleFactions.Contains(GetOwningPlayer(triggerUnit)) && UnitAlive(triggerUnit) &&
-        (IsUnitType(triggerUnit, UNIT_TYPE_HERO) || !_heroOnly) || IsValidUnitInRect())
-      {
-        TriggerUnit = triggerUnit;
-        Progress = QuestProgress.Complete;
-      }
-      else
-      {
-        Progress = QuestProgress.Incomplete;
-      }
-    }
-
-    private void OnRegionExit()
-    {
-      Progress = IsValidUnitInRect() ? QuestProgress.Complete : QuestProgress.Incomplete;
-    }
-
     internal override void OnAdd(Faction whichFaction)
     {
       Progress = IsValidUnitInRect() ? QuestProgress.Complete : QuestProgress.Incomplete;
-      TriggerAddAction(EntersRectTrig, OnRegionEnter);
-      TriggerAddAction(ExitsRectTrig, OnRegionExit);
     }
   }
 }
