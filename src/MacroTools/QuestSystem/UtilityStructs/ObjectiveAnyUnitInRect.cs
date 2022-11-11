@@ -24,10 +24,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
     public ObjectiveAnyUnitInRect(Rectangle targetRect, string rectName, bool heroOnly)
     {
       _targetRect = targetRect.Rect;
-      if (heroOnly)
-        Description = "You have a hero at " + rectName;
-      else
-        Description = "You have a unit at " + rectName;
+      Description = heroOnly ? $"You have a hero at {rectName}" : $"You have a unit at {rectName}";
       var target = RectToRegion(_targetRect);
       _heroOnly = heroOnly;
       DisplaysPosition = true;
