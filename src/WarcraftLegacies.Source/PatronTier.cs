@@ -1,8 +1,7 @@
-﻿namespace AzerothWarsCSharp.Source;
+﻿namespace WarcraftLegacies.Source;
 
 public enum PatronTier
 {
    One,
-   Two,
-   Three
+   Two
 }
