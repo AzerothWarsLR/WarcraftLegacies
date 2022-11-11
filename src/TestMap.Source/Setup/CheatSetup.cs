@@ -25,7 +25,6 @@ namespace TestMap.Source.Setup
       CheatOwner.Setup();
       CheatRemove.Setup();
       CheatSpawn.Setup();
-      CheatTeam.Setup();
       CheatTele.Setup();
       CheatTime.Setup();
       CheatUncontrol.Setup();
@@ -35,6 +34,7 @@ namespace TestMap.Source.Setup
       CheatAugment.Setup();
       CheatManager.Register(new CheatAddSpell());
       CheatManager.Register(new CheatSetResearchLevel());
+      CheatManager.Register(new CheatTeam());
     }
   }
 }

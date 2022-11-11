@@ -53,10 +53,12 @@ namespace MacroTools.FactionSystem
       return TeamsByName.ContainsKey(teamName.ToLower());
     }
 
-    public static Team GetTeamByName(string teamName)
-    {
-      return TeamsByName[teamName.ToLower()];
-    }
+    /// <summary>
+    /// Returns the <see cref="Team"/> with the specified name if one exists.
+    /// Returns null otherwise.
+    /// </summary>
+    public static Team? GetTeamByName(string teamName) =>
+      TeamsByName.TryGetValue(teamName.ToLower(), out var team) ? team : null;
 
     public static Faction? GetFromPlayer(player whichPlayer)
     {
@@ -68,10 +70,12 @@ namespace MacroTools.FactionSystem
       return FactionsByName.ContainsKey(name.ToLower());
     }
 
-    public static Faction? GetFromName(string name)
-    {
-      return FactionsByName[name.ToLower()];
-    }
+    /// <summary>
+    /// Returns the <see cref="Faction"/> with the specified name if one exists.
+    /// Returns null otherwise.
+    /// </summary>
+    public static Faction? GetFromName(string name) => 
+      FactionsByName.TryGetValue(name.ToLower(), out var faction) ? faction : null;
 
     /// <summary>
     ///   Registers a <see cref="Faction" /> to the <see cref="FactionManager" />,
