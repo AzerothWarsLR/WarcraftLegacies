@@ -156,7 +156,7 @@ namespace Launcher
     {
       if (map.Info == null) return;
       foreach (var player in map.Info.Players)
-        if (player.Id != playerSlot)
+        if (player.Id != playerSlot && player.Controller != PlayerController.None)
           player.Controller = PlayerController.Computer;
     }
 
