@@ -162,7 +162,7 @@ namespace MacroTools.UserInterface
       RenderInstance();
     }
 
-    private static void OnFactionTeamJoin(object? sender, Team team)
+    private static void OnFactionTeamJoin(object? sender, PlayerChangeTeamEventArgs playerChangeTeamEventArgs)
     {
       RenderInstance();
     }

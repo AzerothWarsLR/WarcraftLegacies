@@ -20,6 +20,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
       DisplaysPosition = GetOwningPlayer(target.Unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE);
       target.ChangedOwner += OnTargetChangeOwner;
       target.PermanentlyDied += OnTargetDeath;
+      PlayerData.PlayerJoinedTeam += OnFactionTeamJoin;
     }
 
     public override Point Position => new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
@@ -31,6 +32,14 @@ namespace MacroTools.QuestSystem.UtilityStructs
     }
 
     private void OnTargetChangeOwner(object? sender, LegendChangeOwnerEventArgs legendChangeOwnerEventArgs)
+    {
+      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
+        Progress = QuestProgress.Complete;
+      else
+        Progress = _canFail ? QuestProgress.Failed : QuestProgress.Incomplete;
+    }
+    
+    private void OnFactionTeamJoin(object? sender, PlayerChangeTeamEventArgs playerChangeTeamEventArgs)
     {
       if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
         Progress = QuestProgress.Complete;

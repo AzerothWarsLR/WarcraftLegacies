@@ -16,6 +16,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
       Description = "Your team controls " + target.Name;
       TargetWidget = target.Unit;
       target.ChangedOwner += OnTargetChangeOwner;
+      PlayerData.PlayerJoinedTeam += OnFactionTeamJoin;
       DisplaysPosition = true;
     }
 
@@ -23,10 +24,11 @@ namespace MacroTools.QuestSystem.UtilityStructs
 
     internal override void OnAdd(Faction whichFaction)
     {
-      if (IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
-        Progress = QuestProgress.Complete;
+      Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer())
+        ? QuestProgress.Complete
+        : QuestProgress.Incomplete;
 
-      whichFaction.JoinedTeam += OnFactionTeamJoin;
+      //whichFaction.JoinedTeam += OnFactionTeamJoin;
     }
 
     private void OnTargetChangeOwner(object? sender, ControlPointOwnerChangeEventArgs controlPointOwnerChangeEventArgs)
@@ -36,10 +38,11 @@ namespace MacroTools.QuestSystem.UtilityStructs
         : QuestProgress.Incomplete;
     }
 
-    private void OnFactionTeamJoin(object? sender, Faction faction)
+    private void OnFactionTeamJoin(object? sender, PlayerChangeTeamEventArgs playerChangeTeamEventArgs)
     {
-      if (IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
-        Progress = QuestProgress.Complete;
+      Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer())
+        ? QuestProgress.Complete
+        : QuestProgress.Incomplete;
     }
   }
 }
