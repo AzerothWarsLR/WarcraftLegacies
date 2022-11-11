@@ -7,10 +7,8 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
-  public class DraeneiQuestSetup
+  public static class DraeneiQuestSetup
   {
-    public static QuestData SHIP_ARGUS { get; private set; }
-
     public static void Setup()
     {
       var draenei = DraeneiSetup.Draenei;
@@ -20,19 +18,24 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         GoldMine = PreplacedUnitSystem.GetUnit(FourCC("ngol"), Regions.TempestKeep.Center),
         KilledOnFail = new List<unit>
         {
-          PreplacedUnitSystem.GetUnit(FourCC("o02P")),
-          PreplacedUnitSystem.GetUnit(FourCC("o02P"))
+          PreplacedUnitSystem.GetUnit(Constants.UNIT_O02P_CRYSTAL_HALL_DRAENEI)
         },
         TheExodar = PreplacedUnitSystem.GetUnit(Constants.UNIT_H09W_THE_EXODAR)
       };
-      draenei.AddQuest(questExiled);
-      draenei.StartingQuest = questExiled;
-      draenei.AddQuest(new QuestFirstWave());
+      draenei.StartingQuest = draenei.AddQuest(questExiled);
+      draenei.AddQuest(new QuestWarnBase(Regions.Halaar, "Halaar", "ReplaceableTextures\\CommandButtons\\BTNCallToArms.blp"));
+      draenei.AddQuest(new QuestWarnBase(Regions.Shattrah, "Shattrah", "ReplaceableTextures\\CommandButtons\\BTNCallToArms.blp"));
+      draenei.AddQuest(new QuestWarnBase(Regions.Farahlon, "Farahlon", "ReplaceableTextures\\CommandButtons\\BTNCallToArms.blp"));
       draenei.AddQuest(new QuestSurvivorsShattrah());
+      draenei.AddQuest(new QuestFirstWave());
       draenei.AddQuest(new QuestBrokenOne());
       draenei.AddQuest(new QuestTriumvirate());
 
-      SHIP_ARGUS = new QuestShipArgus();
+      draenei.AddQuest(new QuestShipArgus(
+        questExiled,
+        PreplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.OutlandToArgus.Center),
+        PreplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center)
+        ));
     }
   }
 }

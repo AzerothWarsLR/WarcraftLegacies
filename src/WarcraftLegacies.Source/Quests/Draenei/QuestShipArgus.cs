@@ -1,18 +1,36 @@
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Draenei
 {
+  /// <summary>
+  /// Create a portal between Tempest Keep and Argus.
+  /// </summary>
   public sealed class QuestShipArgus : QuestData
   {
-    public QuestShipArgus() : base("Reconquering Tempest Keep",
+    private readonly unit _outlandToArgusWaygate;
+    private readonly unit _argusToOutlandWaygate;
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="QuestShipArgus"/> class.
+    /// </summary>
+    /// <param name="prerequisite">This quest has to be completed first.</param>
+    /// <param name="outlandToArgusWaygate">Starts hidden, and gets enabled as a waygate when the quest is complete.</param>
+    /// <param name="argusToOutlandWaygate">Starts hidden, and gets enabled as a waygate when the quest is complete.</param>
+    public QuestShipArgus(QuestData prerequisite, unit outlandToArgusWaygate, unit argusToOutlandWaygate) : base("Reconquering Tempest Keep",
       "Tempest Keep still has the power to open a portal Argus, but Velen needs to channel it",
       "ReplaceableTextures\\CommandButtons\\BTNArcaneCastle.blp")
     {
+      _outlandToArgusWaygate = outlandToArgusWaygate.Show(false);
+      _argusToOutlandWaygate = argusToOutlandWaygate.Show(false);
+      AddObjective(new ObjectiveCompleteQuest(prerequisite));
       AddObjective(new ObjectiveChannelRect(Regions.TempestKeepSpawn, "Tempest Keep", LegendDraenei.LegendVelen, 180, 0));
       Global = true;
+      Progress = QuestProgress.Undiscovered;
     }
 
     /// <inheritdoc />
@@ -24,13 +42,12 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      //Todo: uncomment these
-      // WaygateActivateBJ(true, gg_unit_h03V_3538);
-      // ShowUnitShow(gg_unit_h03V_3538);
-      // WaygateSetDestinationLocBJ(gg_unit_h03V_3538, GetRectCenter(gg_rct_OutlandToArgus));
-      // WaygateActivateBJ(true, gg_unit_h03V_3539);
-      // ShowUnitShow(gg_unit_h03V_3539);
-      // WaygateSetDestinationLocBJ(gg_unit_h03V_3539, GetRectCenter(gg_rct_TempestKeepSpawn));
+      _outlandToArgusWaygate
+        .Show(true)
+        .SetWaygateDestination(Regions.TempestKeepSpawn.Center);
+      _argusToOutlandWaygate
+        .Show(true)
+        .SetWaygateDestination(Regions.OutlandToArgus.Center);
     }
   }
 }

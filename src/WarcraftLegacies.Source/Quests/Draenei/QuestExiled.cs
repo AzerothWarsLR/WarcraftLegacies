@@ -5,7 +5,6 @@ using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.Legends;
-using WarcraftLegacies.Source.Setup.QuestSetup;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Draenei
@@ -22,12 +21,13 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       "The Draenei need to escape Outland through the Exodar ship. We will need to power it up with a Divine Citadel first. The longer you hold out, the better the rewards will be",
       "ReplaceableTextures\\CommandButtons\\BTNUndeadAirBarge.blp")
     {
-      AddObjective(new ObjectiveEitherOf(new ObjectiveResearch(FourCC("R080"), Constants.UNIT_H09W_THE_EXODAR),
-        new ObjectiveTime(782)));
+      AddObjective(new ObjectiveEitherOf(new ObjectiveResearch(Constants.UPGRADE_R080_FORTIFIED_HULLS_DRAENEI, Constants.UNIT_H09W_THE_EXODAR),
+        new ObjectiveTime(662)));
       AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendDraenei.LegendExodarship));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R081_QUEST_COMPLETED_THE_EXILE_FROM_OUTLAND;
       Global = true;
+      Required = true;
     }
 
     /// <summary>
@@ -58,9 +58,9 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       GrantExiled(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       if (KilledOnFail != null)
         foreach (var unit in KilledOnFail)
-          KillUnit(unit);
-
-      KillUnit(LegendDraenei.LegendVelen.Unit);
+          unit.Kill();
+      
+      LegendDraenei.LegendVelen.Unit?.Kill();
 
       using var group = new GroupWrapper().EnumUnitsInRect(Regions.InstanceOutland);
       foreach (var unit in group.EmptyToList())
@@ -77,8 +77,6 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     protected override void OnComplete(Faction completingFaction)
     {
       Player(13).AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 2000 - GetResourceAmount(GoldMine));
-      completingFaction.AddQuest(DraeneiQuestSetup.SHIP_ARGUS);
-      DraeneiQuestSetup.SHIP_ARGUS.Progress = QuestProgress.Incomplete;
       UnitRemoveAbility(LegendDraenei.LegendVelen.Unit, Constants.ABILITY_ACM2_SPELL_IMMUNITY_DIVINE_ARMOR);
 
       if (completingFaction.Player != null)
