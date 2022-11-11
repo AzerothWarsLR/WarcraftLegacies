@@ -125,10 +125,11 @@ namespace MacroTools.Extensions
     ///   Sets the Waygate's destination to the target point.
     ///   Blindly assumes that the unit is a Waygate.
     /// </summary>
-    public static void SetWaygateDestination(this unit waygate, Point destination)
+    public static unit SetWaygateDestination(this unit waygate, Point destination)
     {
       WaygateActivate(waygate, true);
       WaygateSetDestination(waygate, destination.X, destination.Y);
+      return waygate;
     }
 
     /// <summary>
