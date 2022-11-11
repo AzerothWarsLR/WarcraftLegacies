@@ -92,7 +92,7 @@ namespace MacroTools.FactionSystem
     /// <summary>
     ///   Displayed to the <see cref="Faction" /> when the game starts.
     /// </summary>
-    public string IntroText { get; init; }
+    public string? IntroText { get; init; }
 
     public int StartingGold { get; set; }
 
