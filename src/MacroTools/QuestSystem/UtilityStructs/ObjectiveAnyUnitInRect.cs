@@ -5,6 +5,9 @@ using static War3Api.Common;
 
 namespace MacroTools.QuestSystem.UtilityStructs
 {
+  /// <summary>
+  /// Completed when an eligible player moves a unit into the specified <see cref="Rectangle"/>.
+  /// </summary>
   public sealed class ObjectiveAnyUnitInRect : Objective
   {
     private static readonly trigger EntersRectTrig = CreateTrigger();
@@ -12,6 +15,12 @@ namespace MacroTools.QuestSystem.UtilityStructs
     private readonly bool _heroOnly;
     private readonly rect _targetRect;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ObjectiveAnyUnitInRect"/> class.
+    /// </summary>
+    /// <param name="targetRect">Where the player has to move a unit.</param>
+    /// <param name="rectName">A user-friendly name for the area.</param>
+    /// <param name="heroOnly">If true, can only be completed with a hero.</param>
     public ObjectiveAnyUnitInRect(Rectangle targetRect, string rectName, bool heroOnly)
     {
       _targetRect = targetRect.Rect;
@@ -19,7 +28,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
         Description = "You have a hero at " + rectName;
       else
         Description = "You have a unit at " + rectName;
-      region target = RectToRegion(_targetRect);
+      var target = RectToRegion(_targetRect);
       _heroOnly = heroOnly;
       DisplaysPosition = true;
       TriggerRegisterEnterRegion(EntersRectTrig, target, null);
@@ -27,6 +36,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
       PingPath = "MinimapQuestTurnIn";
     }
 
+    /// <inheritdoc />
     public override Point Position => new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
 
     /// <summary>
@@ -36,7 +46,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
 
     private static region RectToRegion(rect whichRect)
     {
-      region rectRegion = CreateRegion();
+      var rectRegion = CreateRegion();
       RegionAddRect(rectRegion, whichRect);
       return rectRegion;
     }
