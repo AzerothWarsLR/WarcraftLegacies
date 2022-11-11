@@ -13,5 +13,14 @@ namespace MacroTools.Extensions
     /// </summary>
     public static Point GetPosition(this destructable destructable) =>
       new(GetDestructableX(destructable), GetDestructableY(destructable));
+
+    /// <summary>
+    /// Determines whether or not the destructable is invulnerable.
+    /// </summary>
+    public static destructable SetInvulnerable(this destructable destructable, bool flag)
+    {
+      SetDestructableInvulnerable(destructable, flag);
+      return destructable;
+    }
   }
 }

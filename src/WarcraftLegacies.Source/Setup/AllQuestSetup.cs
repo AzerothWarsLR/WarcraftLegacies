@@ -27,6 +27,7 @@ namespace WarcraftLegacies.Source.Setup
       TwilightQuestSetup.Setup();
       GoblinQuestSetup.Setup();
       DraeneiQuestSetup.Setup();
+      DragonmawQuestSetup.Setup();
       SharedQuestSetup.Setup();
     }
   }

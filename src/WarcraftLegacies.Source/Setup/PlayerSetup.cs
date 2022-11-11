@@ -53,6 +53,9 @@ namespace WarcraftLegacies.Source.Setup
       Player(15).SetFaction(IllidanSetup.Illidan);
       Player(15).SetTeam(TeamSetup.NightElves);
 
+      Player(16).SetFaction(DragonmawSetup.Dragonmaw);
+      Player(16).SetTeam(TeamSetup.Horde);
+      
       Player(17).SetFaction(ZandalarSetup.Zandalar);
       Player(17).SetTeam(TeamSetup.Horde);
       
