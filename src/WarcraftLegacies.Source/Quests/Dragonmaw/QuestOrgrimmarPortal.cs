@@ -36,6 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       AddObjective(new ObjectiveControlLegend(LegendFrostwolf.LegendOrgrimmar, false));
       waygateOrgrimmar.Show(false);
       waygateDragonmawPort.Show(false);
+      Required = true;
     }
 
     /// <inheritdoc />

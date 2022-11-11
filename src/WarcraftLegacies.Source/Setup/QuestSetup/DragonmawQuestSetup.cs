@@ -1,6 +1,7 @@
 ﻿using MacroTools;
 using WarcraftLegacies.Source.Quests.Dragonmaw;
 using WarcraftLegacies.Source.Setup.FactionSetup;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
@@ -20,7 +21,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       if (dragonmaw != null)
       {
         dragonmaw.StartingQuest = dragonmaw.AddQuest(new QuestOrgrimmarPortal(
-          PreplacedUnitSystem.GetDestructable(FourCC("ATg4")),
+          PreplacedUnitSystem.GetDestructable(FourCC("ATg4"), new Point(17851.9f, -1816.1f)),
           PreplacedUnitSystem.GetUnit(Constants.UNIT_N07E_PORTAL_GREEN_NAZJATAR, Regions.OrgrimmarPortal.Center),
           PreplacedUnitSystem.GetUnit(Constants.UNIT_N07E_PORTAL_GREEN_NAZJATAR, Regions.DragonmawPortal.Center)));
       }
