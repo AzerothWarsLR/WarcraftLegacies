@@ -8,6 +8,9 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
   /// </summary>
   public static class DragonmawSetup
   {
+    /// <summary>
+    /// Orc clan obsessed with dragons.
+    /// </summary>
     public static Faction? Dragonmaw { get; private set; }
 
     /// <summary>
@@ -22,42 +25,42 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingLumber = 350
       };
 
-      Dragonmaw.ModObjectLimit('o039', UNLIMITED); //Great Hall
-      Dragonmaw.ModObjectLimit('o03A', UNLIMITED); //Stronghold
-      Dragonmaw.ModObjectLimit('o03B', UNLIMITED); //Fortress
-      Dragonmaw.ModObjectLimit('o03C', UNLIMITED); //Altar of Storms
-      Dragonmaw.ModObjectLimit('o03D', UNLIMITED); //Barracks
-      Dragonmaw.ModObjectLimit('o03J', UNLIMITED); //War Mill
-      Dragonmaw.ModObjectLimit('o03E', UNLIMITED); //Spirit Lodge
-      Dragonmaw.ModObjectLimit('o05J', UNLIMITED); //Bestiary
-      Dragonmaw.ModObjectLimit('o03I', UNLIMITED); //Shipyard
-      Dragonmaw.ModObjectLimit('o03G', UNLIMITED); //Watch Tower
-      Dragonmaw.ModObjectLimit('o03H', UNLIMITED); //Improved Watch Tower
-      Dragonmaw.ModObjectLimit('u00Y', UNLIMITED); //Shop
-      Dragonmaw.ModObjectLimit('o03K', UNLIMITED); //Burrow
+      Dragonmaw.ModObjectLimit(FourCC("o039"), Faction.UNLIMITED); //Great Hall
+      Dragonmaw.ModObjectLimit(FourCC("o03A"), Faction.UNLIMITED); //Stronghold
+      Dragonmaw.ModObjectLimit(FourCC("o03B"), Faction.UNLIMITED); //Fortress
+      Dragonmaw.ModObjectLimit(FourCC("o03C"), Faction.UNLIMITED); //Altar of Storms
+      Dragonmaw.ModObjectLimit(FourCC("o03D"), Faction.UNLIMITED); //Barracks
+      Dragonmaw.ModObjectLimit(FourCC("o03J"), Faction.UNLIMITED); //War Mill
+      Dragonmaw.ModObjectLimit(FourCC("o03E"), Faction.UNLIMITED); //Spirit Lodge
+      Dragonmaw.ModObjectLimit(FourCC("o05J"), Faction.UNLIMITED); //Bestiary
+      Dragonmaw.ModObjectLimit(FourCC("o03I"), Faction.UNLIMITED); //Shipyard
+      Dragonmaw.ModObjectLimit(FourCC("o03G"), Faction.UNLIMITED); //Watch Tower
+      Dragonmaw.ModObjectLimit(FourCC("o03H"), Faction.UNLIMITED); //Improved Watch Tower
+      Dragonmaw.ModObjectLimit(FourCC("u00Y"), Faction.UNLIMITED); //Shop
+      Dragonmaw.ModObjectLimit(FourCC("o03K"), Faction.UNLIMITED); //Burrow
 
-      Dragonmaw.ModObjectLimit('n0CP', 2); //Black Drake
-      Dragonmaw.ModObjectLimit('o05M', 8); //WindRider
-      Dragonmaw.ModObjectLimit('n07X', UNLIMITED); //Fel Orc Warlock
-      Dragonmaw.ModObjectLimit('o05K', UNLIMITED); //Fel Orc Grunt
-      Dragonmaw.ModObjectLimit('o05P', UNLIMITED); //Fel Orc Peon
-      Dragonmaw.ModObjectLimit('n0CQ', UNLIMITED); //Fel Orc Peon
-      Dragonmaw.ModObjectLimit('o04I', 6); //Executioner
-      Dragonmaw.ModObjectLimit('o04K', 6); //Demolisher
-      Dragonmaw.ModObjectLimit('n09O', 6); //DK
-      Dragonmaw.ModObjectLimit('u01T', UNLIMITED); //Necrolyte
-      Dragonmaw.ModObjectLimit('o05L', UNLIMITED); //Phase Grenadier
-      Dragonmaw.ModObjectLimit('obot', 12); //Transport Ship
-      Dragonmaw.ModObjectLimit('odes', 12); //Orc Frigate
-      Dragonmaw.ModObjectLimit('ojgn', 6); //Juggernaught
+      Dragonmaw.ModObjectLimit(FourCC("n0CP"), 2); //Black Drake
+      Dragonmaw.ModObjectLimit(FourCC("o05M"), 8); //WindRider
+      Dragonmaw.ModObjectLimit(FourCC("n07X"), Faction.UNLIMITED); //Fel Orc Warlock
+      Dragonmaw.ModObjectLimit(FourCC("o05K"), Faction.UNLIMITED); //Fel Orc Grunt
+      Dragonmaw.ModObjectLimit(FourCC("o05P"), Faction.UNLIMITED); //Fel Orc Peon
+      Dragonmaw.ModObjectLimit(FourCC("n0CQ"), Faction.UNLIMITED); //Fel Orc Peon
+      Dragonmaw.ModObjectLimit(FourCC("o04I"), 6); //Executioner
+      Dragonmaw.ModObjectLimit(FourCC("o04K"), 6); //Demolisher
+      Dragonmaw.ModObjectLimit(FourCC("n09O"), 6); //DK
+      Dragonmaw.ModObjectLimit(FourCC("u01T"), Faction.UNLIMITED); //Necrolyte
+      Dragonmaw.ModObjectLimit(FourCC("o05L"), Faction.UNLIMITED); //Phase Grenadier
+      Dragonmaw.ModObjectLimit(FourCC("obot"), 12); //Transport Ship
+      Dragonmaw.ModObjectLimit(FourCC("odes"), 12); //Orc Frigate
+      Dragonmaw.ModObjectLimit(FourCC("ojgn"), 6); //Juggernaught
 
-      Dragonmaw.ModObjectLimit('O01Q', 1); //Nekrosh
-      Dragonmaw.ModObjectLimit('O00Y', 1); //Zuluhead
-      
-      Dragonmaw.ModObjectLimit('R023', UNLIMITED); //Spiritual Infusion
-      Dragonmaw.ModObjectLimit('Rosp', UNLIMITED); //Spiked Barricades
-      Dragonmaw.ModObjectLimit('R06X', UNLIMITED); //Magic Training
-      Dragonmaw.ModObjectLimit('R06Z', UNLIMITED); //Herald Training
+      Dragonmaw.ModObjectLimit(FourCC("O01Q"), 1); //Nekrosh
+      Dragonmaw.ModObjectLimit(FourCC("O00Y"), 1); //Zuluhead
+
+      Dragonmaw.ModObjectLimit(FourCC("R023"), Faction.UNLIMITED); //Spiritual Infusion
+      Dragonmaw.ModObjectLimit(FourCC("Rosp"), Faction.UNLIMITED); //Spiked Barricades
+      Dragonmaw.ModObjectLimit(FourCC("R06X"), Faction.UNLIMITED); //Magic Training
+      Dragonmaw.ModObjectLimit(FourCC("R06Z"), Faction.UNLIMITED); //Herald Training
     }
   }
 }
