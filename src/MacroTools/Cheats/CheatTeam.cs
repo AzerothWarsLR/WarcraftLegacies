@@ -10,7 +10,7 @@ namespace MacroTools.Cheats
   public sealed class CheatTeam : Cheat
   {
     /// <inheritdoc />
-    public override string Command => "setteam";
+    public override string Command => "team";
 
     /// <inheritdoc />
     public override int ParameterCount => 2;
