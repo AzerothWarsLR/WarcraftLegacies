@@ -25,10 +25,10 @@ Please note that we cannot accept public Pull Requests that involve changes to t
 Compiles source code and source .w3x files into playable .w3x maps.
 
 ### MacroTools
-A library intended to be useable by any map in the Warcraft 3 Macro-Map genre. Currently only used by Warcraft: Legacies and the test map.
+A library intended to be usable by any map in the Warcraft 3 Macro-Map genre. Currently only used by Warcraft: Legacies and the test map.
 
 ### WarcraftLegacies.Source
 Code specific to Warcraft: Legacies, which gets compiled into Lua before being executed during the map's runtime.
 
 ### TestMap.Source
-Code to be inserted into a simple test map which demonstrates features from AzerothWarsCSharp.MacroTools.
+Code to be inserted into a simple test map which demonstrates features from the MacroTools project.
