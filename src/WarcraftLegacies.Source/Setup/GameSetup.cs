@@ -61,6 +61,7 @@ namespace WarcraftLegacies.Source.Setup
       InfoQuests.Setup();
       DestructibleSetup.Setup();
       ResearchSetup.Setup();
+      PatronSystem.Setup();
       PreplacedUnitSystem.Shutdown();
       OpenAllianceVote.Setup();
       AugmentSetup.Setup();

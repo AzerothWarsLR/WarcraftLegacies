@@ -27,7 +27,6 @@ namespace WarcraftLegacies.Source.Setup
       CheatRemove.Setup();
       CheatSkipCinematic.Setup();
       CheatSpawn.Setup();
-      CheatTeam.Setup();
       CheatTele.Setup();
       CheatTime.Setup();
       CheatUncontrol.Setup();
@@ -35,6 +34,7 @@ namespace WarcraftLegacies.Source.Setup
       CheatCompleteQuest.Setup();
       CheatAddRandomAugment.Setup();
       CheatAugment.Setup();
+      CheatManager.Register(new CheatTeam());
       CheatManager.Register(new CheatAddSpell());
       CheatManager.Register(new CheatSetResearchLevel());
     }

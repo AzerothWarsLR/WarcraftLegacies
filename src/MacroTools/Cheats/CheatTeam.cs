@@ -1,46 +1,35 @@
-using System;
+﻿using MacroTools.CheatSystem;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatTeam
+  /// <summary>
+  /// Sets the <see cref="Team"/> any <see cref="Faction"/>.
+  /// </summary>
+  public sealed class CheatTeam : Cheat
   {
-    private const string COMMAND = "-team ";
-    private static string? _parameter;
+    /// <inheritdoc />
+    public override string Command => "team";
+
+    /// <inheritdoc />
+    public override int ParameterCount => 2;
     
-    private static void Actions()
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
-      try
+      var faction = FactionManager.GetFromName(parameters[0]);
+      if (faction == null)
+        return $"You must specify a valid {nameof(Faction)} name as the first parameter.";
+      if (faction.Player == null)
       {
-        if (!TestSafety.CheatCondition()) return;
-
-        var enteredString = GetEventPlayerChatString();
-        var p = GetTriggerPlayer();
-        _parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
-
-        if (!FactionManager.TeamWithNameExists(_parameter))
-        {
-          throw new Exception($"There is no registered {nameof(Team)} with the name {_parameter}.");
-        }
-      
-        var t = FactionManager.GetTeamByName(_parameter);
-        var faction = PlayerData.ByHandle(p).Faction;
-        faction?.Player?.SetTeam(t);
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Attempted to team to " + t.Name + ".");
+        return $"The specified {nameof(Faction)} is not occupied by a player and therefore cannot have a {nameof(Team)}.";
       }
-      catch (Exception ex)
-      {
-        Console.WriteLine(ex);
-      }
-    }
-
-    public static void Setup()
-    {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
-
-      TriggerAddAction(trig, Actions);
+      var team = FactionManager.GetTeamByName(parameters[1]);
+      if (team == null)
+        return $"You must specify a valid {nameof(Team)} name as the second parameter.";
+      faction.Player.SetTeam(team);
+      return $"Set {faction.Name}'s {nameof(Team)} to {team.Name}.";
     }
   }
 }

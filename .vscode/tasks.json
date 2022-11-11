@@ -3,7 +3,7 @@
 	"tasks": [
 		{
 			"type": "shell",
-			"command": "dotnet run --project ${workspaceFolder}\\src\\AzerothWarsCSharp.Launcher",
+			"command": "dotnet run --project ${workspaceFolder}\\src\\Launcher",
 			"group": {
 				"kind": "build",
 				"isDefault": true
@@ -11,8 +11,8 @@
 			"label": "Build and run",
 			"detail": "Build and run Warcraft: Legacies",
 			"options": {
-				"cwd": "${workspaceFolder}\\src\\AzerothWarsCSharp.Launcher\\bin\\Debug\\net5.0"
-			},
+				"cwd": "${workspaceFolder}\\src\\Launcher\\bin\\Debug\\net5.0"
+			}
 		}
 	]
 }

@@ -13,13 +13,15 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       "The great shaman Nobundo is fighting to enable Velen and most of the Draenei to escape. If the Draenei hold out long enough, he might have time to join the survivors aboard the Exodar",
       "ReplaceableTextures\\CommandButtons\\BTNAkamanew.blp")
     {
-      AddObjective(new ObjectiveTime(720));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02O"))));
+      AddObjective(new ObjectiveTime(660));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N02O_NETHERSTORM_10GOLD_MIN)));
       ResearchId = QuestResearchId;
     }
 
+    /// <inheritdoc />
     protected override string CompletionPopup => "The hero Nobundo is now trainable at the Altar";
 
+    /// <inheritdoc />
     protected override string RewardDescription => "Nobundo will join the survivors on the Exodar";
   }
 }
