@@ -30,6 +30,7 @@ namespace WarcraftLegacies.Source.Setup
       ForsakenSetup.Setup();
       DraeneiSetup.Setup();
       NzothSetup.Setup();
+      DragonmawSetup.Setup();
     }
   }
 }
