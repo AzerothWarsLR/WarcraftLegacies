@@ -1,3 +1,4 @@
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
@@ -51,7 +52,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
     private bool IsValidUnitInRect()
     {
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(_targetRect).EmptyToList())
-        if (EligibleFactions.Contains(GetOwningPlayer(unit)) && UnitAlive(unit) &&
+        if (EligibleFactions.Contains(unit.OwningPlayer()) && unit.IsAlive() &&
             (IsUnitType(unit, UNIT_TYPE_HERO) || !_heroOnly))
           return true;
       return false;
