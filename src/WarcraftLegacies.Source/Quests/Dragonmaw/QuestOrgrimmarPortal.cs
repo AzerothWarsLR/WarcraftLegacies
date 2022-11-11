@@ -22,12 +22,16 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
     /// <param name="dragonmawGate">Starts invulnerable and gets opened when the quest is complete.</param>
     /// <param name="waygateOrgrimmar">Starts hidden and gets revealed when the quest is complete.</param>
     /// <param name="waygateDragonmawPort">Starts hidden and gets revealed when the quest is complete.</param>
-    public QuestOrgrimmarPortal(destructable dragonmawGate, unit waygateOrgrimmar, unit waygateDragonmawPort) : base("The Reunification of the Horde", "The new Horde in Kalimdor has send a message to the Dragonmaw Clan to join them, Zuluhead will need to open a portal for his people to go through!", "ReplaceableTextures\\CommandButtons\\BTNPortal.blp")
+    public QuestOrgrimmarPortal(destructable dragonmawGate, unit waygateOrgrimmar, unit waygateDragonmawPort) : base(
+      "The Reunification of the Horde",
+      "The new Horde in Kalimdor has send a message to the Dragonmaw Clan to join them, Zuluhead will need to open a portal for his people to go through!",
+      "ReplaceableTextures\\CommandButtons\\BTNPortal.blp")
     {
       _waygateOrgrimmar = waygateOrgrimmar;
       _waygateDragonmawPort = waygateDragonmawPort;
       _dragonmawGate = dragonmawGate.SetInvulnerable(true);
-      AddObjective(new ObjectiveChannelRect(Regions.DragonmawPortal, "Dragonmaw Port", LegendFelHorde.LegendZuluhed, 180, 300));
+      AddObjective(new ObjectiveChannelRect(Regions.DragonmawPortal, "Dragonmaw Port", LegendFelHorde.LegendZuluhed,
+        180, 300));
       AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendGrimbatol, false));
       AddObjective(new ObjectiveControlLegend(LegendFrostwolf.LegendOrgrimmar, false));
       waygateOrgrimmar.Show(false);
@@ -53,7 +57,13 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       _waygateDragonmawPort
         .Show(true)
         .SetWaygateDestination(Regions.OrgrimmarPortal.Center);
-      
+      CreateTimer().Start(180, false, () =>
+      {
+        _dragonmawGate.SetInvulnerable(false);
+        _waygateOrgrimmar.Kill();
+        _waygateDragonmawPort.Kill();
+        GetExpiredTimer().Destroy();
+      });
     }
   }
 }
