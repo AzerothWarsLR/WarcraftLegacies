@@ -10,7 +10,7 @@ namespace MacroTools.FactionSystem
   internal sealed class PlayerData
   {
     public static event EventHandler<PlayerChangeTeamEventArgs>? PlayerLeftTeam;
-    public static event EventHandler<Team>? PlayerJoinedTeam;
+    public static event EventHandler<PlayerChangeTeamEventArgs>? PlayerJoinedTeam;
     
     private static readonly Dictionary<int, PlayerData> ById = new();
     private readonly Dictionary<int, int> _objectLevels = new();
@@ -46,12 +46,12 @@ namespace MacroTools.FactionSystem
           _team?.RemovePlayer(Player);
           PlayerLeftTeam?.Invoke(this, new PlayerChangeTeamEventArgs(Player, _team));
         }
-        if (value != null)
-        {
-          value.AddPlayer(Player);
-          PlayerJoinedTeam?.Invoke(this, value);
-        }
+
+        if (value == null) return;
+        var prevTeam = _team;
         _team = value;
+        value.AddPlayer(Player);
+        PlayerJoinedTeam?.Invoke(this, new PlayerChangeTeamEventArgs(Player, prevTeam));
       }
     }
     
