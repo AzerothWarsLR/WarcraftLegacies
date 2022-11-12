@@ -16,6 +16,7 @@ namespace MacroTools.ArtifactSystem
   public static class ArtifactManager
   {
     private static readonly Dictionary<int, Artifact> ArtifactsByType = new();
+    private static readonly Dictionary<string, Artifact> ArtifactsByName = new();
     private static readonly List<Artifact> AllArtifacts = new();
     
     /// <summary>
@@ -30,6 +31,13 @@ namespace MacroTools.ArtifactSystem
     public static Artifact? GetFromTypeId(int typeId) => ArtifactsByType.ContainsKey(typeId) ? ArtifactsByType[typeId] : null;
 
     /// <summary>
+    /// Returns the registered <see cref="Artifact"/> with the given name.
+    /// <para>Case insensitive.</para>
+    /// <para>Returns null if there is no match.</para>
+    /// </summary>
+    public static Artifact? GetFromName(string name) => ArtifactsByName.ContainsKey(name.ToLower()) ? ArtifactsByName[name.ToLower()] : null;
+    
+    /// <summary>
     /// Registers an <see cref="Artifact"/> to the <see cref="ArtifactManager"/>.
     /// </summary>
     public static void Register(Artifact artifact)
@@ -38,6 +46,7 @@ namespace MacroTools.ArtifactSystem
       {
         SetItemDropOnDeath(artifact.Item, false);
         ArtifactsByType[GetItemTypeId(artifact.Item)] = artifact;
+        ArtifactsByName.Add(GetItemName(artifact.Item).ToLower(), artifact);
         ArtifactRegistered?.Invoke(artifact, artifact);
         AllArtifacts.Add(artifact);
       }
@@ -63,6 +72,7 @@ namespace MacroTools.ArtifactSystem
     {
       AllArtifacts.Remove(artifact);
       ArtifactsByType.Remove(GetItemTypeId(artifact.Item));
+      ArtifactsByName.Remove(GetItemName(artifact.Item));
       artifact.Dispose();
     }
 
