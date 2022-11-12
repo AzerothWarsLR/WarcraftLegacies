@@ -115,26 +115,26 @@ namespace WarcraftLegacies.Source.Setup
 
       BronzeFragment = new Artifact(CreateItem(Constants.ITEM_I01M_BRONZE_FRAGMENT, DummyX, DummyY));
       UnitAddAbility(PreplacedUnitSystem.GetUnit(Constants.UNIT_O024_CHIEFTAN_OF_THE_SANDFURY_TRIBE_CREEP_ZUL_FARRAK), Artifact.ArtifactHolderAbilId);
-      UnitAddItem(PreplacedUnitSystem.GetUnit(Constants.UNIT_O024_CHIEFTAN_OF_THE_SANDFURY_TRIBE_CREEP_ZUL_FARRAK), tempArtifact.Item);
-      ArtifactManager.Register(tempArtifact);
+      UnitAddItem(PreplacedUnitSystem.GetUnit(Constants.UNIT_O024_CHIEFTAN_OF_THE_SANDFURY_TRIBE_CREEP_ZUL_FARRAK), BronzeFragment.Item);
+      ArtifactManager.Register(BronzeFragment);
 
       ObsidianFragment = new Artifact(CreateItem(Constants.ITEM_I01L_OBSIDIAN_FRAGMENT, DummyX, DummyY));
-      UnitAddItem(PreplacedUnitSystem.GetUnit(Constants.UNIT_O04E_BONESEER_TROLL), tempArtifact.Item);
-      ArtifactManager.Register(tempArtifact);
+      UnitAddItem(PreplacedUnitSystem.GetUnit(Constants.UNIT_O04E_BONESEER_TROLL), ObsidianFragment.Item);
+      ArtifactManager.Register(ObsidianFragment);
 
       RubyFragment = new Artifact(CreateItem(Constants.ITEM_I01J_RUBY_FRAGMENT, DummyX, DummyY));
       UnitAddAbility(PreplacedUnitSystem.GetUnit(Constants.UNIT_O023_WITCH_DOCTOR_OF_THE_GURUBIAN_TRIBE_CREEP_ZUL_GURUB), Artifact.ArtifactHolderAbilId); //Jin)do
-      UnitAddItem(PreplacedUnitSystem.GetUnit(Constants.UNIT_O023_WITCH_DOCTOR_OF_THE_GURUBIAN_TRIBE_CREEP_ZUL_GURUB), tempArtifact.Item);
-      ArtifactManager.Register(tempArtifact);
+      UnitAddItem(PreplacedUnitSystem.GetUnit(Constants.UNIT_O023_WITCH_DOCTOR_OF_THE_GURUBIAN_TRIBE_CREEP_ZUL_GURUB), RubyFragment.Item);
+      ArtifactManager.Register(RubyFragment);
 
       AzureFragment = new Artifact(CreateItem(Constants.ITEM_I01I_AZURE_FRAGMENT, DummyX, DummyY));
       UnitAddAbility(PreplacedUnitSystem.GetUnit(Constants.UNIT_O02C_HIGH_PROPHET_OF_AKALI_CREEP_ZUL_DRAK), Artifact.ArtifactHolderAbilId);
-      UnitAddItem(PreplacedUnitSystem.GetUnit(Constants.UNIT_O02C_HIGH_PROPHET_OF_AKALI_CREEP_ZUL_DRAK), tempArtifact.Item);
-      ArtifactManager.Register(tempArtifact);
+      UnitAddItem(PreplacedUnitSystem.GetUnit(Constants.UNIT_O02C_HIGH_PROPHET_OF_AKALI_CREEP_ZUL_DRAK), AzureFragment.Item);
+      ArtifactManager.Register(AzureFragment);
 
       EmeraldFragment = new Artifact(CreateItem(Constants.ITEM_I01K_EMERALD_FRAGMENT, DummyX, DummyY));
-      UnitAddItem(PreplacedUnitSystem.GetUnit(Constants.UNIT_O00O_CHIEFTAN_OF_THE_AMANI_TRIBE_CREEP_ZUL_AMAN), tempArtifact.Item);
-      ArtifactManager.Register(tempArtifact);
+      UnitAddItem(PreplacedUnitSystem.GetUnit(Constants.UNIT_O00O_CHIEFTAN_OF_THE_AMANI_TRIBE_CREEP_ZUL_AMAN), EmeraldFragment.Item);
+      ArtifactManager.Register(EmeraldFragment);
 
       tempArtifact = new Artifact(CreateItem(FourCC("arsh"), DummyX, DummyY)); //Shroud of Nozdormuru
       UnitAddAbility(PreplacedUnitSystem.GetUnit(FourCC("O025_3426")), Artifact.ArtifactHolderAbilId); //Occulus
