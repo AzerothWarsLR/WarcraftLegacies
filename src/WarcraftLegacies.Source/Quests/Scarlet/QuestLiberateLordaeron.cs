@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
 
     public QuestLiberateLordaeron(Rectangle rescueRect) : base("Liberation of Lordaeron",
       "The lands of Lordaeron are overrun by corruption. Everything must be purged!",
-      "ReplaceableTextures\\CommandButtons\\BTNNorthrendCastle.blp")
+      "ReplaceableTextures\\CommandButtons\\BTNCastle.blp")
     {
       AddObjective(new ObjectiveControlLegend(LegendScarlet.LegendBrigitte, false));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01F"))));

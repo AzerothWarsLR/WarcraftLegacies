@@ -14,15 +14,12 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
 
     public QuestKhadgar() : base("Keeper of the Eternal Watch",
       "At the end of the Second War, Khadgar remained in Draenor to seal the Dark Portal, effectively ending the conflict. He has been stranded deep in Outland ever since.",
-      "ReplaceableTextures\\CommandButtons\\BTNMageWC2blp")
+      "ReplaceableTextures\\CommandButtons\\BTNMageWC2.blp")
     {
       AddObjective(new ObjectiveControlLegend(LegendFelHorde.LegendBlacktemple, false));
       ResearchId = FourCC("R016");
-      ;
-      ;
     }
-
-
+    
     protected override string CompletionPopup =>
       "Khadgar has been freed from his confines under the Black Temple, and he is now free to serve the Kingdom of Stormwind.";
 
