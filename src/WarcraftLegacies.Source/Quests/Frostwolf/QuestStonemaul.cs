@@ -1,56 +1,42 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-
 namespace WarcraftLegacies.Source.Quests.Frostwolf
 {
+  /// <summary>
+  /// Quest for capturing Stonemaul Keep.
+  /// </summary>
   public sealed class QuestStonemaul : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
 
-    public QuestStonemaul(Rectangle rescueRect) : base("The Chieftain's Challenge",
-      "The Ogres of Stonemaul follow the strongest, slay the Chieftain to gain control of the base.",
+    //Todo: bad flavour
+    /// <inheritdoc />
+    protected override string CompletionPopup =>
+      "Korghal has been defeated, Rexxar has joined the Frostwolf!";
+
+    /// <inheritdoc />
+    protected override string RewardDescription => "Enable to train Rexxar at the Altar";
+    
+    /// <summary>
+    /// Initializes a new instance of the <see cref="QuestStonemaul"/> class.
+    /// </summary>
+    public QuestStonemaul() : base("The Chieftain's Challenge",
+      "Rexxar is having trouble with a beligerent Ogre Warlord, slay the Chieftain to gain the heroe's allegiance.",
       "ReplaceableTextures\\CommandButtons\\BTNOneHeadedOgre.blp")
     {
-      AddObjective(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("noga")))); //Korgall
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n022"))));
-      AddObjective(new ObjectiveExpire(1505));
+      AddObjective(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(Constants.UNIT_NOGA_STONEMAUL_WARCHIEF_KOR_GALL)));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = FourCC("R03S");
-
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          SetUnitInvulnerable(unit, true);
-          _rescueUnits.Add(unit);
-        }
+      ResearchId = Constants.UPGRADE_R03S_QUEST_COMPLETED_THE_CHIEFTAIN_S_CHALLENGE_FROSTWOLF;
 
       Required = true;
     }
-
-    //Todo: bad flavour
-    protected override string CompletionPopup =>
-      "Stonemaul has been liberated, and its military is now free to assist the Frostwolf Clan.";
-
-    protected override string RewardDescription => "Control of all units in Stonemaul and 3000 lumber";
-
-    protected override void OnFail(Faction completingFaction)
-    {
-      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-    }
-
-    protected override void OnComplete(Faction completingFaction)
-    {
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
-      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 3000);
-    }
+    
   }
 }

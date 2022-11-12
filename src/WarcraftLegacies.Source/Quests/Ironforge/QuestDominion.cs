@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
 
     public QuestDominion(Rectangle rescueRect) : base("Dwarven Dominion",
       "The Dwarven Dominion must be established before Ironforge can join the war.",
-      "ReplaceableTextures\\CommandButtons\\BTNNorthrendCastle.blp")
+      "ReplaceableTextures\\CommandButtons\\BTNDwarvenFortress.blp")
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n017"))));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n014"))));

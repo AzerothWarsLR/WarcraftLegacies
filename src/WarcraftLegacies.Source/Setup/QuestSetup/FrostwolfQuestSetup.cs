@@ -1,4 +1,4 @@
-using MacroTools.QuestSystem;
+﻿using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Frostwolf;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 
@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       QuestData newQuest = frostwolf.AddQuest(new QuestSeaWitch(Regions.EchoUnlock));
       frostwolf.StartingQuest = newQuest;
       frostwolf.AddQuest(new QuestThunderBluff(Regions.ThunderBluff.Rect));
-      frostwolf.AddQuest(new QuestStonemaul(Regions.StonemaulKeep));
+      frostwolf.AddQuest(new QuestStonemaul());
       frostwolf.AddQuest(new QuestDrektharsSpellbook());
       frostwolf.AddQuest(new QuestRoyalPlunder(Regions.HighBourne));
       frostwolf.AddQuest(new QuestFreeNerzhul());

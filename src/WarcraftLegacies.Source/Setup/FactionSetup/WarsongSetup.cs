@@ -50,7 +50,6 @@ The Night Elves are aware of your presence and are gathering against you. Unlock
       WarsongClan.ModObjectLimit(FourCC("otbk"), Faction.UNLIMITED); //Troll Berseker
       WarsongClan.ModObjectLimit(FourCC("nogn"), Faction.UNLIMITED); //Stonemaul Ogre Magi
       WarsongClan.ModObjectLimit(FourCC("o00I"), 6); //Horde War Machine
-      WarsongClan.ModObjectLimit(FourCC("e01L"), 2); //War Station
       WarsongClan.ModObjectLimit(FourCC("e01M"), 4); //Azerite Siege Engine
       WarsongClan.ModObjectLimit(FourCC("okod"), 4); //Kodo Beast
       WarsongClan.ModObjectLimit(FourCC("obot"), 12); //Transport Ship
@@ -62,6 +61,7 @@ The Night Elves are aware of your presence and are gathering against you. Unlock
 
       WarsongClan.ModObjectLimit(FourCC("Ogrh"), 1); //Grom
       WarsongClan.ModObjectLimit(FourCC("Obla"), 1); //Varok
+      WarsongClan.ModObjectLimit(FourCC("O05O"), 1); //Varok
 
       WarsongClan.ModObjectLimit(FourCC("Robs"), Faction.UNLIMITED); //Berserker Strength
       WarsongClan.ModObjectLimit(FourCC("Rotr"), Faction.UNLIMITED); //Troll Regeneration
