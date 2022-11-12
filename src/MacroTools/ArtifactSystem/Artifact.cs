@@ -9,7 +9,7 @@ namespace MacroTools.ArtifactSystem
   /// <summary>
   ///   Represents a unique item with some significance to the game's lore.
   /// </summary>
-  public sealed class Artifact : IDisposable
+  public sealed class Artifact
   {
     private string? _description;
     private ArtifactLocationType _locationType;
@@ -107,14 +107,6 @@ namespace MacroTools.ArtifactSystem
     ///   Returs null if the Artifact is not being carried.
     /// </summary>
     public player? OwningPlayer { get; private set; }
-
-    /// <summary>
-    /// Cleans up all managed resources used by the <see cref="Artifact"/>.
-    /// </summary>
-    public void Dispose()
-    {
-      Dispose(true);
-    }
 
     /// <summary>
     ///   Fired when the <see cref="player" /> owning the <see cref="unit" /> carrying the <see cref="Artifact" /> changes
@@ -217,19 +209,18 @@ namespace MacroTools.ArtifactSystem
         SetOwningPlayer(GetOwningPlayer(GetTriggerUnit()));
     }
 
-    private void Dispose(bool disposing)
+    /// <summary>
+    /// Cleans up all managed resources used by the <see cref="Artifact"/>.
+    /// </summary>
+    internal void Dispose()
     {
-      if (disposing)
-      {
-      }
-
       Disposed?.Invoke(this, this);
       RemoveItem(Item);
     }
 
     ~Artifact()
     {
-      Dispose(false);
+      Dispose();
     }
   }
 }
