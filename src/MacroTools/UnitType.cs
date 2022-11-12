@@ -35,6 +35,11 @@ namespace MacroTools
     /// Whether or not the unit should be deleted without refund when the player leaves.
     /// </summary>
     public bool Meta { get; init; }
+    
+    /// <summary>
+    /// Whether or not the unit should be refunded in full before being deleted when the player leaves.
+    /// </summary>
+    public bool Refund { get; init; }
 
     /// <summary>
     /// An arbitrary category, like "Shipyard" or "Shop".

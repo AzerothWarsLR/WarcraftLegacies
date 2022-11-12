@@ -554,9 +554,9 @@ namespace MacroTools.FactionSystem
 
           unit.DropAllItems();
           RemoveUnit(unit);
-          //Refund gold and lumber of refundable units
         }
-        else if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
+        //Refund gold and lumber of refundable units
+        else if (loopUnitType.Refund)
         {
           Gold += loopUnitType.GoldCost * RefundPercent;
           Lumber += loopUnitType.LumberCost * RefundPercent;
