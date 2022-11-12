@@ -62,9 +62,6 @@ namespace WarcraftLegacies.Source.Setup
       Player(18).SetFaction(SentinelsSetup.Sentinels);
       Player(18).SetTeam(TeamSetup.NightElves);
       
-      Player(19).SetFaction(TwilightSetup.TwilightsHammer);
-      Player(19).SetTeam(TeamSetup.Legion);
-      
       Player(20).SetFaction(GilneasSetup.Gilneas);
       Player(20).SetTeam(TeamSetup.Alliance);
       

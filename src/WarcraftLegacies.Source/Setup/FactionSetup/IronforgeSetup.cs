@@ -49,7 +49,6 @@ Stormwind is preparing for the Fel Horde invasion in the South, muster the thron
       Ironforge.ModObjectLimit(FourCC("h07K"), Faction.UNLIMITED); //Cannon Tower (Improved)
       Ironforge.ModObjectLimit(FourCC("h07D"), Faction.UNLIMITED); //Alliance Shipyard
       Ironforge.ModObjectLimit(FourCC("n07U"), Faction.UNLIMITED); //Marketplace
-      Ironforge.ModObjectLimit(FourCC("h00B"), 4); //Dwarven Keep Tower
       Ironforge.ModObjectLimit(FourCC("h07I"), Faction.UNLIMITED); //Guard Tower
       Ironforge.ModObjectLimit(FourCC("h07L"), Faction.UNLIMITED); //Guard Tower (Improved)
 
