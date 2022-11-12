@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using MacroTools.ArtifactSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
@@ -21,12 +22,15 @@ namespace WarcraftLegacies.Source.Quests
       AddObjective(new ObjectiveAcquireArtifact(EmeraldFragment));
       AddObjective(new ObjectiveAcquireArtifact(ObsidianFragment));
       AddObjective(new ObjectiveAcquireArtifact(RubyFragment));
-      Global = true;
     }
 
     /// <inheritdoc/>
     protected override string CompletionPopup =>
-      $"{AzureFragment?.OwningPlayer?.GetFaction()?.ColoredName ?? ""} has assembled Zin'rokh, Destroyer of Worlds!";
+      $"{AzureFragment?.OwningUnit?.GetName() ?? ""} has assembled Zin'rokh, Destroyer of Worlds!";
+    
+    /// <inheritdoc/>
+    protected override string FailurePopup =>
+      $"{AzureFragment?.OwningPlayer?.GetFaction()?.ColoredName ?? ""} has assembled Zin'rokh, Destroyer of Worlds. The only way we will acquire it now is if we take it from them.";
     
     /// <inheritdoc/>
     protected override string RewardDescription => "Reforge Zin'rokh, Destroyer of Worlds from its Shards";
@@ -35,11 +39,11 @@ namespace WarcraftLegacies.Source.Quests
     protected override void OnComplete(Faction completingFaction)
     {
       var azureFragmentHolder = AzureFragment?.OwningUnit;
-      AzureFragment?.Dispose();
-      BronzeFragment?.Dispose();
-      EmeraldFragment?.Dispose();
-      ObsidianFragment?.Dispose();
-      RubyFragment?.Dispose();
+      ArtifactManager.Destroy(AzureFragment);
+      ArtifactManager.Destroy(BronzeFragment);
+      ArtifactManager.Destroy(EmeraldFragment);
+      ArtifactManager.Destroy(ObsidianFragment);
+      ArtifactManager.Destroy(RubyFragment);
       if (ArtifactZinrokh != null) 
         azureFragmentHolder?.AddItemSafe(ArtifactZinrokh.Item);
     }

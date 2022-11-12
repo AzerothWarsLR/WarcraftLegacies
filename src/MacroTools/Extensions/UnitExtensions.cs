@@ -13,6 +13,11 @@ namespace MacroTools.Extensions
     private const float HeroDropDist = 50; //The radius in which heroes spread out items when they drop them
 
     /// <summary>
+    /// Returns the units name.
+    /// </summary>
+    public static string GetName(this unit whichUnit) => GetUnitName(whichUnit);
+
+    /// <summary>
     /// Drops the item on the ground.
     /// </summary>
     public static unit DropItem(this unit whichUnit, item whichItem)
