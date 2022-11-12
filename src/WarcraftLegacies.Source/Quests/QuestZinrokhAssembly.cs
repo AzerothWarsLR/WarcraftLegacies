@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests
 
     /// <inheritdoc/>
     protected override string CompletionPopup =>
-      $"{AzureFragment?.OwningUnit?.GetName() ?? ""} has assembled Zin'rokh, Destroyer of Worlds!";
+      $"{AzureFragment?.OwningUnit?.GetProperName() ?? ""} has assembled Zin'rokh, Destroyer of Worlds!";
     
     /// <inheritdoc/>
     protected override string FailurePopup =>
