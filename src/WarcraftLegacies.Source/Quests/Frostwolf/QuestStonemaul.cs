@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
@@ -15,46 +15,28 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
   /// </summary>
   public sealed class QuestStonemaul : QuestData
   {
-    private readonly List<unit> _rescueUnits;
 
     //Todo: bad flavour
     /// <inheritdoc />
     protected override string CompletionPopup =>
-      "Stonemaul has been liberated, and its military is now free to assist the Frostwolf Clan.";
+      "Korghal has been defeated, Rexxar has joined the Frostwolf!";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Control of all units in Stonemaul and 3000 lumber";
+    protected override string RewardDescription => "Enable to train Rexxar at the Altar";
     
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestStonemaul"/> class.
     /// </summary>
-    /// <param name="rescueRect">Units in this area will be made invulnerable, then rescued when the quest is completed.</param>
-    public QuestStonemaul(Rectangle rescueRect) : base("The Chieftain's Challenge",
-      "The Ogres of Stonemaul follow the strongest, slay the Chieftain to gain control of the base.",
+    public QuestStonemaul() : base("The Chieftain's Challenge",
+      "Rexxar is having trouble with a beligerent Ogre Warlord, slay the Chieftain to gain the heroe's allegiance.",
       "ReplaceableTextures\\CommandButtons\\BTNOneHeadedOgre.blp")
     {
       AddObjective(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(Constants.UNIT_NOGA_STONEMAUL_WARCHIEF_KOR_GALL)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N022_STONEMAUL_20GOLD_MIN)));
-      AddObjective(new ObjectiveExpire(1505));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R03S_QUEST_COMPLETED_THE_CHIEFTAIN_S_CHALLENGE_FROSTWOLF;
-
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE));
 
       Required = true;
     }
     
-    /// <inheritdoc />
-    protected override void OnFail(Faction completingFaction)
-    {
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
-    }
-
-    /// <inheritdoc />
-    protected override void OnComplete(Faction completingFaction)
-    {
-      completingFaction.Player?.RescueGroup(_rescueUnits);
-      completingFaction.Player?.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 3000);
-    }
   }
 }
