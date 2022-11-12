@@ -11,22 +11,28 @@ namespace MacroTools.QuestSystem.UtilityStructs
   {
     private readonly Artifact _target;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ObjectiveAcquireArtifact"/> class.
+    /// </summary>
+    /// <param name="target">The objective is completed when this artifact is acquired.</param>
     public ObjectiveAcquireArtifact(Artifact target)
     {
       Description = "Acquire " + GetItemName(target.Item);
       _target = target;
-      target.PickedUp += OnPickedUp;
+      target.PickedUp += (_, _) =>
+      {
+        Progress = EligibleFactions.Contains(_target.OwningPlayer) ? QuestProgress.Complete : QuestProgress.Incomplete;
+      };
+      target.Disposed += (_, _) =>
+      {
+        Progress = QuestProgress.Failed;
+      };
     }
 
     internal override void OnAdd(Faction whichFaction)
     {
       if (EligibleFactions.Contains(_target.OwningPlayer))
         Progress = QuestProgress.Complete;
-    }
-
-    private void OnPickedUp(object? sender, Artifact artifact)
-    {
-      Progress = EligibleFactions.Contains(_target.OwningPlayer) ? QuestProgress.Complete : QuestProgress.Incomplete;
     }
   }
 }
