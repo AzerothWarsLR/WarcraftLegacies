@@ -12,10 +12,10 @@ namespace MacroTools.Frames.Books.ArtifactSystem
   /// </summary>
   public sealed class ArtifactBook : Book<ArtifactPage>
   {
-    private const float BOTTOM_BUTTON_Y_OFFSET = 0.015f;
-    private const float BOTTOM_BUTTON_X_OFFSET = 0.02f;
-    private const float BOOK_WIDTH = 0.7f;
-    private const float BOOK_HEIGHT = 0.37f;
+    private const float BottomButtonYOffset = 0.015f;
+    private const float BottomButtonXOffset = 0.02f;
+    private const float BookWidth = 0.65f;
+    private const float BookHeight = 0.37f;
 
     private static ArtifactBook? _instance;
     private static bool _initialized;
@@ -91,7 +91,7 @@ namespace MacroTools.Frames.Books.ArtifactSystem
       {
         LoadToc(@"ArtifactSystem.toc");
         LoadToc(@"ui\framedef\framedef.toc");
-        _instance = new ArtifactBook(BOOK_WIDTH, BOOK_HEIGHT, BOTTOM_BUTTON_X_OFFSET, BOTTOM_BUTTON_Y_OFFSET);
+        _instance = new ArtifactBook(BookWidth, BookHeight, BottomButtonXOffset, BottomButtonYOffset);
         _initialized = true;
       }
     }

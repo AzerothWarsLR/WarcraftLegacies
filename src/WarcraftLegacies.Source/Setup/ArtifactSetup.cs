@@ -31,6 +31,11 @@ namespace WarcraftLegacies.Source.Setup
     public static Artifact? ArtifactXalatath { get; private set; }
     public static Artifact? ArtifactZinrokh { get; private set; }
     public static Artifact? ScytheOfElune { get; private set; }
+    public static Artifact? AzureFragment { get; private set; }
+    public static Artifact? EmeraldFragment { get; private set; }
+    public static Artifact? RubyFragment { get; private set; }
+    public static Artifact? ObsidianFragment { get; private set; }
+    public static Artifact? BronzeFragment { get; private set; }
 
     public static void Setup()
     {
@@ -75,7 +80,7 @@ namespace WarcraftLegacies.Source.Setup
       tempArtifact = new Artifact(CreateItem(FourCC("I004"), -1480, -2240)); //The Doomhammer
       ArtifactManager.Register(tempArtifact);
 
-      tempArtifact = new Artifact(CreateItem(FourCC("I01V"), -10330, 2105)); //Gorehowl
+      tempArtifact = new Artifact(CreateItem(Constants.ITEM_I01V_GOREHOWL, -10330, 2105));
       ArtifactManager.Register(tempArtifact);
 
       ArtifactTrolkalar = new Artifact(CreateItem(FourCC("I01O"), DummyX, DummyY))
@@ -108,28 +113,28 @@ namespace WarcraftLegacies.Source.Setup
         TitanforgedAbility = FourCC("A0VM")
       };
 
-      tempArtifact = new Artifact(CreateItem(FourCC("I01M"), DummyX, DummyY)); //Bronze Demon Soul Fragment
-      UnitAddAbility(PreplacedUnitSystem.GetUnit(FourCC("O024_0567")), Artifact.ArtifactHolderAbilId); //Ukorz
-      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("O024")), tempArtifact.Item);
-      ArtifactManager.Register(tempArtifact);
+      BronzeFragment = new Artifact(CreateItem(Constants.ITEM_I01M_BRONZE_FRAGMENT, DummyX, DummyY));
+      UnitAddAbility(PreplacedUnitSystem.GetUnit(Constants.UNIT_O024_CHIEFTAN_OF_THE_SANDFURY_TRIBE_CREEP_ZUL_FARRAK), Artifact.ArtifactHolderAbilId);
+      UnitAddItem(PreplacedUnitSystem.GetUnit(Constants.UNIT_O024_CHIEFTAN_OF_THE_SANDFURY_TRIBE_CREEP_ZUL_FARRAK), BronzeFragment.Item);
+      ArtifactManager.Register(BronzeFragment);
 
-      tempArtifact = new Artifact(CreateItem(FourCC("I01L"), DummyX, DummyY)); //Black Demon Soul Fragment
-      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("o04E")), tempArtifact.Item);
-      ArtifactManager.Register(tempArtifact);
+      ObsidianFragment = new Artifact(CreateItem(Constants.ITEM_I01L_OBSIDIAN_FRAGMENT, DummyX, DummyY));
+      UnitAddItem(PreplacedUnitSystem.GetUnit(Constants.UNIT_O04E_BONESEER_TROLL), ObsidianFragment.Item);
+      ArtifactManager.Register(ObsidianFragment);
 
-      tempArtifact = new Artifact(CreateItem(FourCC("I01J"), DummyX, DummyY)); //Red Demon Soul Fragment
-      UnitAddAbility(PreplacedUnitSystem.GetUnit(FourCC("O023_0517")), Artifact.ArtifactHolderAbilId); //Jin)do
-      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("O023")), tempArtifact.Item);
-      ArtifactManager.Register(tempArtifact);
+      RubyFragment = new Artifact(CreateItem(Constants.ITEM_I01J_RUBY_FRAGMENT, DummyX, DummyY));
+      UnitAddAbility(PreplacedUnitSystem.GetUnit(Constants.UNIT_O023_WITCH_DOCTOR_OF_THE_GURUBIAN_TRIBE_CREEP_ZUL_GURUB), Artifact.ArtifactHolderAbilId); //Jin)do
+      UnitAddItem(PreplacedUnitSystem.GetUnit(Constants.UNIT_O023_WITCH_DOCTOR_OF_THE_GURUBIAN_TRIBE_CREEP_ZUL_GURUB), RubyFragment.Item);
+      ArtifactManager.Register(RubyFragment);
 
-      tempArtifact = new Artifact(CreateItem(FourCC("I01I"), DummyX, DummyY)); //Blue Demon Soul Fragment
-      UnitAddAbility(PreplacedUnitSystem.GetUnit(FourCC("O02C_2437")), Artifact.ArtifactHolderAbilId); //Gal)darah
-      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("O02C")), tempArtifact.Item);
-      ArtifactManager.Register(tempArtifact);
+      AzureFragment = new Artifact(CreateItem(Constants.ITEM_I01I_AZURE_FRAGMENT, DummyX, DummyY));
+      UnitAddAbility(PreplacedUnitSystem.GetUnit(Constants.UNIT_O02C_HIGH_PROPHET_OF_AKALI_CREEP_ZUL_DRAK), Artifact.ArtifactHolderAbilId);
+      UnitAddItem(PreplacedUnitSystem.GetUnit(Constants.UNIT_O02C_HIGH_PROPHET_OF_AKALI_CREEP_ZUL_DRAK), AzureFragment.Item);
+      ArtifactManager.Register(AzureFragment);
 
-      tempArtifact = new Artifact(CreateItem(FourCC("I01K"), DummyX, DummyY)); //Green Demon Soul Fragment
-      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("O00O")), tempArtifact.Item);
-      ArtifactManager.Register(tempArtifact);
+      EmeraldFragment = new Artifact(CreateItem(Constants.ITEM_I01K_EMERALD_FRAGMENT, DummyX, DummyY));
+      UnitAddItem(PreplacedUnitSystem.GetUnit(Constants.UNIT_O00O_CHIEFTAN_OF_THE_AMANI_TRIBE_CREEP_ZUL_AMAN), EmeraldFragment.Item);
+      ArtifactManager.Register(EmeraldFragment);
 
       tempArtifact = new Artifact(CreateItem(FourCC("arsh"), DummyX, DummyY)); //Shroud of Nozdormuru
       UnitAddAbility(PreplacedUnitSystem.GetUnit(FourCC("O025_3426")), Artifact.ArtifactHolderAbilId); //Occulus

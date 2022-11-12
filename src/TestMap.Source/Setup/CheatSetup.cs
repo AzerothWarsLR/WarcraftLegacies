@@ -35,6 +35,7 @@ namespace TestMap.Source.Setup
       CheatManager.Register(new CheatAddSpell());
       CheatManager.Register(new CheatSetResearchLevel());
       CheatManager.Register(new CheatTeam());
+      CheatManager.Register(new CheatDestroy());
     }
   }
 }
