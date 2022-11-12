@@ -31,15 +31,11 @@ namespace WarcraftLegacies.Source.Setup
     public static Artifact? ArtifactXalatath { get; private set; }
     public static Artifact? ArtifactZinrokh { get; private set; }
     public static Artifact? ScytheOfElune { get; private set; }
-    public static Artifact? AzureFragment { get; set; }
-
-    public static Artifact? EmeraldFragment { get; set; }
-
-    public static Artifact? RubyFragment { get; set; }
-
-    public static Artifact? ObsidianFragment { get; set; }
-
-    public static Artifact? BronzeFragment { get; set; }
+    public static Artifact? AzureFragment { get; private set; }
+    public static Artifact? EmeraldFragment { get; private set; }
+    public static Artifact? RubyFragment { get; private set; }
+    public static Artifact? ObsidianFragment { get; private set; }
+    public static Artifact? BronzeFragment { get; private set; }
 
     public static void Setup()
     {
@@ -84,7 +80,7 @@ namespace WarcraftLegacies.Source.Setup
       tempArtifact = new Artifact(CreateItem(FourCC("I004"), -1480, -2240)); //The Doomhammer
       ArtifactManager.Register(tempArtifact);
 
-      tempArtifact = new Artifact(CreateItem(FourCC("I01V"), -10330, 2105)); //Gorehowl
+      tempArtifact = new Artifact(CreateItem(Constants.ITEM_I01V_GOREHOWL, -10330, 2105));
       ArtifactManager.Register(tempArtifact);
 
       ArtifactTrolkalar = new Artifact(CreateItem(FourCC("I01O"), DummyX, DummyY))

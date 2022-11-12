@@ -1,11 +1,18 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
+using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
+  /// <summary>
+  /// Responsible for setting up all shared <see cref="QuestData"/>s.
+  /// </summary>
   public static class SharedQuestSetup
   {
+    /// <summary>
+    /// Sets up all shared <see cref="QuestData"/>s.
+    /// </summary>
     public static void Setup()
     {
       var tombOfSargerasQuest =
@@ -16,6 +23,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       foreach (var faction in FactionManager.GetAllFactions())
       {
         faction.AddQuest(tombOfSargerasQuest);
+        faction.AddQuest(new QuestZinrokhAssembly());
       }
     }
   }
