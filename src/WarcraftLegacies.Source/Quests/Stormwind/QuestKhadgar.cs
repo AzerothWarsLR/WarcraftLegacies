@@ -1,5 +1,3 @@
-//When Black Temple is destroyed, Stormwind can train Khadgar.
-
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
@@ -8,6 +6,9 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Stormwind
 {
+  /// <summary>
+  /// When Black Temple is destroyed, Stormwind can train Khadgar.
+  /// </summary>
   public sealed class QuestKhadgar : QuestData
   {
     private static readonly int HeroId = FourCC("H05Y");
