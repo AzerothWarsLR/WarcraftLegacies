@@ -4,7 +4,6 @@ using MacroTools.Frames.Books.Powers;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.UserInterface;
-using WarcraftLegacies.Source.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.Hints;
@@ -44,7 +43,6 @@ namespace WarcraftLegacies.Source.Setup
       CommandSetup.Setup();
       ControlPointVictory.Setup();
       SilvermoonDies.Setup();
-      ZinrokhAssembly.Setup();
       //IncompatibleTierConfig.Setup();
       GameTime.Setup();
       FactionMultiboard.Setup();

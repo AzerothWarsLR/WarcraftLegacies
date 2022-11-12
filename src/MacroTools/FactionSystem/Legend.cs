@@ -60,7 +60,7 @@ namespace MacroTools.FactionSystem
 
         if (_unit == null && _unitType != 0) return GetObjectName(_unitType);
 
-        return IsUnitType(_unit, UNIT_TYPE_HERO) ? GetHeroProperName(_unit) : GetUnitName(_unit);
+        return _unit?.GetProperName() ?? "";
       }
       init => _name = value;
     }
