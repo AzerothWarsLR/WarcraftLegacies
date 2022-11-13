@@ -3876,12 +3876,6 @@ STRING 647
 W
 }
 
-STRING 648
-// Abilities: A00D (Slipstream), Researchubertip (Tooltip - Learn - Extended)
-{
-Opens a two-way portal to the target location within a range of <A00D,Rng1>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.|n|n|cffffcc00Level 1|r - <A00D,Rng1> range. |n|cffffcc00Level 2|r - <A00D,Rng2> range. |n|cffffcc00Level 3|r - <A00D,Rng3> range.
-}
-
 STRING 649
 // Units: nndr (Nether Dragon), Ubertip (Tooltip - Extended)
 {
@@ -17805,6 +17799,12 @@ STRING 2968
 // Units: h056 (Khaz Modan Tower), Ubertip (Tooltip - Extended)
 {
 Heavy defensive structure. Particularly effective against clusters of troops. Grants a 5% Command Aura. Requires Riflemen manning it in order to attack. Can learn the Magic Sentry ability. |n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land units and trees.|r
+}
+
+STRING 2969
+// Abilities: A00D (Slipstream), Researchubertip (Tooltip - Learn - Extended)
+{
+Opens a two-way portal to the target location. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.|n|n|cffffcc00Level 1|r - <A00D,Rng1> range. |n|cffffcc00Level 2|r - <A00D,Rng2> range. |n|cffffcc00Level 3|r - <A00D,Rng3> range.
 }
 
 STRING 2970
