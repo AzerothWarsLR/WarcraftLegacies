@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
@@ -10,6 +10,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Legend Scholomance { get; private set; }
     public static Legend Varimathras { get; private set; }
     public static Legend Nathanos { get; private set; }
+    public static Legend Undercity { get; private set; }
 
     public static void Setup()
     {
@@ -40,6 +41,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage = "Scholomance, the center of the ScourgeFourCC(s operations in Lordaeron, has been destroyed."
       };
       Legend.Register(Scholomance);
+
+      Undercity = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H08S_UNDERCITY_FORSAKEN),
+        DeathMessage = "Undercity, the heart of the Forsaken Kingdom, has been destroyed"
+      };
+      Legend.Register(Undercity);
     }
   }
 }
