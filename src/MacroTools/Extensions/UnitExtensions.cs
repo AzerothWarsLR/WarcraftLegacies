@@ -157,6 +157,15 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
+    /// Determines whether or not the waygate is active.
+    /// </summary>
+    public static unit SetWaygateActive(this unit waygate, bool flag)
+    {
+      WaygateActivate(waygate, flag);
+      return waygate;
+    }
+    
+    /// <summary>
     ///   Sets the Waygate's destination to the target point.
     ///   Blindly assumes that the unit is a Waygate.
     /// </summary>

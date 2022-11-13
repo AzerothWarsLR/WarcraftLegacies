@@ -37,7 +37,8 @@ namespace MacroTools.Spells.Slipstream
           _state = SlipstreamPortalState.Stable;
           Target
             .SetAnimationSpeed(1)
-            .SetAnimation("stand");
+            .SetAnimation("stand")
+            .SetWaygateActive(true);
         }
 
         DestroyTimer(GetExpiredTimer());
@@ -67,6 +68,12 @@ namespace MacroTools.Spells.Slipstream
         CloseInstantly();
         DestroyTimer(GetExpiredTimer());
       });
+    }
+
+    /// <inheritdoc />
+    public override void OnApply()
+    {
+      Target.SetWaygateActive(false);
     }
 
     private void CloseInstantly()

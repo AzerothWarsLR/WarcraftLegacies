@@ -51,7 +51,7 @@ namespace MacroTools.Spells.Slipstream
     public override void OnCreate()
     {
       var casterPosition = WCSharp.Shared.Util.PositionWithPolarOffset(GetUnitX(Caster), GetUnitY(Caster), 200, Caster.GetFacing());
-      _portalOrigin = CreateUnit(Caster.OwningPlayer(), PortalUnitTypeId, casterPosition.x, casterPosition.y, Caster.GetFacing())
+      _portalOrigin = CreateUnit(Caster.OwningPlayer(), PortalUnitTypeId, casterPosition.x, casterPosition.y, Caster.GetFacing() - 180)
         .SetWaygateDestination(_target);
       _portalOriginBuff = new SlipstreamPortalBuff(Caster, _portalOrigin);
       BuffSystem.Add(_portalOriginBuff);
