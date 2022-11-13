@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -14,11 +14,11 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
   {
     private readonly List<unit> _rescueUnits = new();
 
-    public QuestShadowfang(Rectangle rescueRect, unit worgenToKill) : base("Shadows of Silverspine Forest",
+    public QuestShadowfang(Rectangle rescueRect, unit DirewolfToKill) : base("Shadows of Silverspine Forest",
       "The woods of Silverspine are unsafe for travellers, they need to be investigated",
       "ReplaceableTextures\\CommandButtons\\BTNworgen.blp")
     {
-      AddObjective(new ObjectiveKillUnit(worgenToKill)); //Worgen
+      AddObjective(new ObjectiveKillUnit(DirewolfToKill)); //Worgen
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01D"))));
       AddObjective(new ObjectiveExpire(1444));
       AddObjective(new ObjectiveSelfExists());

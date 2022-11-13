@@ -1,0 +1,24 @@
+//  0   Frostwolf 
+//  1   Lordaeron
+//  2   Quelthalas 
+//  3	Scourge
+//  4	Ironforge
+//  5	Warsong
+//  6	Fel Horde
+//  7	Dalaran
+//  8	Goblin
+//  9	Forsaken
+//  10	Stormwind
+//  11	Druids
+//  12	Scarlet
+//  13	Draenei
+//  14	Empty
+//  15	Illidan
+//  16	Dragonmaw
+//  17  Zandalar
+//  18	Sentinels
+//  19  Empty
+//  20  Gilneas
+//  21  Empty
+//  22  Kultiras
+//  23  Legion

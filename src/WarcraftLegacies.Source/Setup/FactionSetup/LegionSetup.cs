@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -79,7 +79,7 @@ Your primary objective is to summon the Burning Legion. Invade the city of Dalar
       Legion.ModObjectLimit(FourCC("R04G"), Faction.UNLIMITED); //Improved Carrion Swarm
       Legion.ModObjectLimit(FourCC("R03Z"), Faction.UNLIMITED); //War Plating
       Legion.ModObjectLimit(FourCC("R040"), Faction.UNLIMITED); //Flying horrors
-      Legion.SetObjectLevel(Constants.UPGRADE_R04R_TIER_4_UNIVERSAL_UPGRADE, 1);
+      Legion.SetObjectLevel(Constants.UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, 1);
 
       //Heroes
       Legion.ModObjectLimit(FourCC("U00L"), 1); //Anetheron
