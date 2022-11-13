@@ -1,50 +1,55 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Scourge
 {
+  /// <summary>
+  /// Capture <see cref="LegendNeutral.LegendDraktharonkeep"/> and its control point to gain control of all buildings in the area.
+  /// </summary>
   public sealed class QuestDrakUnlock : QuestData
   {
     private readonly List<unit> _rescueUnits = new();
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="QuestDrakUnlock"/> class.
+    /// </summary>
+    /// <param name="rescueRect">Units in this area will be made invulnerable, then rescued when the quest is completed.</param>
     public QuestDrakUnlock(Rectangle rescueRect) : base(
-      "Draktharon's Keep", "Drak'tharon's Keep will be the place for an outpost by the sea.",
+      "Draktharon Keep", "Drak'tharon Keep will be the perfect place for an outpost by the sea.",
       "ReplaceableTextures\\CommandButtons\\BTNUndeadShipyard.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n030"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N030_DRAK_THARON_KEEP_30GOLD_MIN)));
       AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendDraktharonkeep, false));
       AddObjective(new ObjectiveExpire(1140));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = FourCC("R08J");
-
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          SetUnitInvulnerable(unit, true);
-          _rescueUnits.Add(unit);
-        }
+      ResearchId = Constants.UPGRADE_R08J_QUEST_COMPLETED_DRAK_THARON_KEEP;
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE));
     }
 
-    protected override string CompletionPopup => "DrakFourCC(taron Keep is now under the control of the Scourge.";
+    /// <inheritdoc/>
+    protected override string CompletionPopup => "Drak'tharon Keep is now under the control of the Scourge.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Control of all buildings in Drak'tharon Keep";
 
+    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
     }
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      if (completingFaction.Player != null)
+        completingFaction.Player.RescueGroup(_rescueUnits);
     }
   }
 }

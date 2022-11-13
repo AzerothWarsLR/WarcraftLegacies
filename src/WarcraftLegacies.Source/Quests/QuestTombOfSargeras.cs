@@ -2,7 +2,6 @@
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -16,8 +15,13 @@ namespace WarcraftLegacies.Source.Quests
     private readonly unit _tombOfSargerasEntrance;
     private readonly Rectangle _tombOfSargerasInteriorEntrance;
     private readonly unit _guldanRemains;
-    
-    /// <inheritdoc />
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="QuestTombOfSargeras"/> class.
+    /// </summary>
+    /// <param name="tombOfSargerasEntrance"></param>
+    /// <param name="tombOfSargerasInteriorEntrance"></param>
+    /// <param name="guldanRemains"></param>
     public QuestTombOfSargeras(unit tombOfSargerasEntrance, Rectangle tombOfSargerasInteriorEntrance, unit guldanRemains) : base("Tomb of Sargeras",
       "When the Guardian Aegwynn defeated the fallen Titan Sargeras, she sealed his corpse within the temple that would come to be known as the Tomb of Sargeras. It lies still there, tempting those with the ambition to seize the power that remains within.",
       @"ReplaceableTextures\CommandButtons\BTNUnholyFrenzy.blp")
@@ -26,18 +30,15 @@ namespace WarcraftLegacies.Source.Quests
       _tombOfSargerasInteriorEntrance = tombOfSargerasInteriorEntrance;
       _guldanRemains = guldanRemains;
       AddObjective(new ObjectiveTime(900));
-      AddObjective(new ObjectiveEitherOf(
-        new ObjectiveLegendReachRect(LegendLordaeron.Uther, Regions.Sargeras_Entrance,
-          "the Tomb of Sargeras' entrance"),
-        new ObjectiveHeroWithLevelReachRect(10, Regions.Sargeras_Entrance, "the Tomb of Sargeras' entrance")));
+      AddObjective(new ObjectiveHeroWithLevelReachRect(10, Regions.Sargeras_Entrance, "the Tomb of Sargeras' entrance"));
+      Global = true;
     }
     
     /// <inheritdoc />
     protected override string RewardDescription => "The Tomb of Sargeras opens";
 
-    //Todo; it would be really cool if this depended on the hero that opens it
     /// <inheritdoc />
-    protected override string CompletionPopup => "The Tomb of Sargeras has been opened.";
+    protected override string CompletionPopup => $"The Tomb of Sargeras has been opened by {GetTriggerUnit().GetProperName()}";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)

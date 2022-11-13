@@ -16,7 +16,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
       _targetRect = targetRect.Rect;
       _targetLevel = targetLevel;
       region target = RectToRegion(_targetRect);
-      Description = $"Any hero reaches {rectName}";
+      Description = $"Any hero that is atleast level {targetLevel} reaches {rectName}";
       TriggerRegisterEnterRegion(_entersRect.Trigger, target, null);
       TriggerAddAction(_entersRect.Trigger, OnRegionEnter);
       PingPath = "MinimapQuestTurnIn";
