@@ -51,6 +51,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     {
       Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
       _rescueUnits.Clear();
+      DestroyTrigger(_rescueTrigger);
     }
 
     protected override void OnComplete(Faction completingFaction)
