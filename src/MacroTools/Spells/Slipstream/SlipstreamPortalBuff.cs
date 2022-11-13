@@ -49,13 +49,13 @@ namespace MacroTools.Spells.Slipstream
     /// </summary>
     public void Close(float delay)
     {
-      if (_state != SlipstreamPortalState.Stable) return;
-
       if (_state == SlipstreamPortalState.Opening)
       {
         CloseInstantly();
         return;
       }
+      
+      if (_state != SlipstreamPortalState.Stable) return;
       
       _state = SlipstreamPortalState.Closing;
       Target
