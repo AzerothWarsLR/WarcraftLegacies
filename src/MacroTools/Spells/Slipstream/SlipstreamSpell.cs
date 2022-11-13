@@ -1,7 +1,6 @@
 ﻿using MacroTools.ChannelSystem;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
-using Microsoft.VisualBasic.CompilerServices;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
