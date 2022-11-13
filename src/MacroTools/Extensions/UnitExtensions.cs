@@ -13,6 +13,30 @@ namespace MacroTools.Extensions
     private const float HeroDropDist = 50; //The radius in which heroes spread out items when they drop them
 
     /// <summary>
+    /// Sets the unit's animation speed.
+    /// </summary>
+    /// <param name="whichUnit">The unit to set animation speed for.</param>
+    /// <param name="speed">The animation speed. 0 is completely paused, 1 is normal.</param>
+    /// <returns>The same unit that was passed in.</returns>
+    public static unit SetAnimationSpeed(this unit whichUnit, float speed)
+    {
+      SetUnitTimeScale(whichUnit, speed);
+      return whichUnit;
+    }
+
+    /// <summary>
+    /// Sets the unit's animation speed.
+    /// </summary>
+    /// <param name="whichUnit">The unit to set animation speed for.</param>
+    /// <param name="animation">The name of the animation to play, e.g. "birth".</param>
+    /// <returns>The same unit that was passed in.</returns>
+    public static unit SetAnimation(this unit whichUnit, string animation)
+    {
+      SetUnitAnimation(whichUnit, animation);
+      return whichUnit;
+    }
+    
+    /// <summary>
     /// Gets the units proper name. If it doesn't have one, get their unit name instead.
     /// </summary>
     public static string GetProperName(this unit whichUnit) => 

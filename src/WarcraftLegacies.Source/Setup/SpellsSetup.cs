@@ -257,6 +257,7 @@ namespace WarcraftLegacies.Source.Setup
       IllidanSpellSetup.Setup();
       QuelthalasSpellSetup.Setup();
       KulTirasSpellSetup.Setup();
+      StormwindSpellSetup.Setup();
     }
   }
 }
