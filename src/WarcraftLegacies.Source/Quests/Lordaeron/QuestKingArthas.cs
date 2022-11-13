@@ -1,4 +1,4 @@
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
@@ -8,11 +8,17 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Lordaeron
 {
+  /// <summary>
+  /// Destroying the Lich King while Arthas is under Lordaeron's control and Capital Palace is alive will result in Arthas becoming King of Lordaeron.
+  /// </summary>
   public sealed class QuestKingArthas : QuestData
   {
-    private static readonly int QuestResearchId = FourCC("R08A"); //This research is given when the quest is completed
+    private static readonly int QuestResearchId = Constants.UPGRADE_R08A_QUEST_COMPLETED_LINE_OF_SUCCESSION; //This research is given when the quest is completed
     private readonly unit _terenas;
-
+    private readonly int _completionExperienceBonus;
+    /// <summary>
+    /// Initializes a new instance of the <see cref="QuestKingArthas"/> class.
+    /// </summary>
     public QuestKingArthas(unit terenas) : base("Line of Succession",
       "Arthas Menethil is the one true heir of the Kingdom of Lordaeron. The only thing standing in the way of his coronation is the world-ending threat of the Scourge.",
       "ReplaceableTextures\\CommandButtons\\BTNArthas.blp")
@@ -25,19 +31,22 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       _terenas = terenas;
       Required = true;
     }
-    
+
+    /// <inheritdoc/>
     protected override string CompletionPopup =>
       "With the Lich King eliminated, the Kingdom of Lordaeron is free of its greatest threat. King Terenas Menethil proudly abdicates in favor of his son.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Arthas gains 2000 experience and the Crown of Lordaeron, and he can no longer permanently die";
+      $"Arthas gains {_completionExperienceBonus} experience and the Crown of Lordaeron, and he can no longer permanently die";
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       BlzSetUnitName(LegendLordaeron.Arthas.Unit, "King of Lordaeron");
       BlzSetUnitName(_terenas, "King Emeritus Terenas Menethil");
       RemoveUnit(_terenas);
-      AddHeroXP(LegendLordaeron.Arthas.Unit, 2000, true);
+      AddHeroXP(LegendLordaeron.Arthas.Unit, _completionExperienceBonus, true);
       LegendLordaeron.Arthas.Unit.AddItemSafe(ArtifactSetup.ArtifactCrownlordaeron.Item);
       LegendLordaeron.Arthas.ClearUnitDependencies();
     }
