@@ -43,5 +43,22 @@ namespace MacroTools.Extensions
       }
       return group;
     }
+    
+    /// <summary>
+    /// Sets the owner of all units inside the specified <paramref name="area"/> to the specifed <see cref="player" />
+    /// </summary>
+    /// <param name="area"></param> The area the units are in
+    /// <param name="whichPlayer"></param> The player to gain control of the units
+    public static void RescueNeutralUnitsInRect(this Rectangle area, player whichPlayer)
+    {
+      var group = new GroupWrapper()
+        .EnumUnitsInRect(area)
+        .EmptyToList()
+        .ToList();
+      foreach (var unit in group)
+      {
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE)) unit.Rescue(whichPlayer);
+      }
+    }
   }
 }

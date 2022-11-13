@@ -21,6 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
   {
     private readonly List<unit> _rescueUnits = new();
     private weathereffect? _storm;
+    private readonly trigger _rescueTrigger;
 
     public QuestSeaWitch(Rectangle rescueRect) : base("Riders on the Storm",
       "Warchief Thrall and his forces have been shipwrecked on the Darkspear Isles. Kill the Sea Witch there to give them a chance to rebuild their fleet and escape.",
@@ -29,13 +30,15 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       AddObjective(new ObjectiveKillUnit(LegendNeutral.LegendSeawitch.Unit));
       AddObjective(new ObjectiveExpire(600));
       ResearchId = FourCC("R05H");
-
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE));
+      CreateTrigger()
+        .RegisterEnterRegion(Regions.Thrall_Landing1)
+        .AddAction(() =>
         {
-          SetUnitInvulnerable(unit, true);
-          _rescueUnits.Add(unit);
-        }
+          var triggerUnit = GetTriggerUnit();
+          if (GetOwningPlayer(triggerUnit) != FrostwolfSetup.Frostwolf.Player) return;
+          Regions.Thrall_Landing1.RescueNeutralUnitsInRect(GetOwningPlayer(triggerUnit));
+        });
     }
 
     protected override string CompletionPopup =>
@@ -51,35 +54,27 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 
     protected override void OnComplete(Faction completingFaction)
     {
-      group tempGroup = CreateGroup();
       //Transfer control of all passive units on island and teleport all Frostwolf units to shore
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
-      GroupEnumUnitsInRect(tempGroup, Regions.Darkspear_Island.Rect, null);
-      while (true)
+      Regions.CairneStart.RescueNeutralUnitsInRect(completingFaction.Player);
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(Regions.Darkspear_Island.Rect).EmptyToList())
       {
-        unit u = FirstOfGroup(tempGroup);
-        if (u == null) break;
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) u.Rescue(completingFaction.Player);
-        if (GetOwningPlayer(u) == FrostwolfSetup.Frostwolf.Player &&
-            IsUnitType(u, UNIT_TYPE_STRUCTURE) == false)
-          SetUnitPosition(u, GetRandomReal(Regions.ThrallLanding.Center.X, Regions.ThrallLanding.Center.Y),
-            GetRandomReal(Regions.ThrallLanding.Center.X, Regions.ThrallLanding.Center.Y));
-        GroupRemoveUnit(tempGroup, u);
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE)) unit.Rescue(completingFaction.Player);
+        if (GetOwningPlayer(unit) == FrostwolfSetup.Frostwolf.Player &&
+            IsUnitType(unit, UNIT_TYPE_STRUCTURE) == false)
+          SetUnitPosition(unit, GetRandomReal(GetRectMinX(Regions.ThrallLanding.Rect), GetRectMaxX(Regions.ThrallLanding.Rect)),
+            GetRandomReal(GetRectMinY(Regions.ThrallLanding.Rect), GetRectMaxY(Regions.ThrallLanding.Rect)));
       }
-
-      DestroyGroup(tempGroup);
       RemoveWeatherEffect(_storm);
       CreateUnits(completingFaction.Player, FourCC("opeo"), -1818, -2070, 270, 3);
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      DestroyTrigger(_rescueTrigger);
     }
 
     protected override void OnAdd(Faction whichFaction)
     {
-      if (_storm == null)
-      {
-        _storm = AddWeatherEffect(Regions.Darkspear_Island.Rect, FourCC("RAhr"));
-        EnableWeatherEffect(_storm, true);
-      }
+      if (_storm != null) return;
+      _storm = AddWeatherEffect(Regions.Darkspear_Island.Rect, FourCC("RAhr"));
+      EnableWeatherEffect(_storm, true);
     }
   }
 }
