@@ -61,11 +61,5 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       if (GetLocalPlayer() == completingFaction.Player) 
         PlayThematicMusic("war3mapImported\\StormwindTheme.mp3");
     }
-
-    /// <inheritdoc />
-    protected override void OnAdd(Faction whichFaction)
-    {
-      whichFaction.ModObjectLimit(ResearchId, 1);
-    }
   }
 }
