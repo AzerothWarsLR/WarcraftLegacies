@@ -10,7 +10,7 @@ namespace MacroTools.Spells.Slipstream
   public sealed class SlipstreamPortalBuff : PassiveBuff
   {
     private SlipstreamPortalState _state = SlipstreamPortalState.Unopened;
-    
+
     /// <summary>
     /// Initializes a new instance of the <see cref="SlipstreamPortalBuff"/> class.
     /// </summary>
@@ -28,7 +28,7 @@ namespace MacroTools.Spells.Slipstream
       if (_state != SlipstreamPortalState.Unopened) return;
       _state = SlipstreamPortalState.Opening;
       Target
-        .SetAnimationSpeed(1 / delay)
+        .SetAnimationSpeed(9.3f * (1 / delay))
         .SetAnimation("birth");
       CreateTimer().Start(delay, false, () =>
       {
@@ -39,10 +39,11 @@ namespace MacroTools.Spells.Slipstream
             .SetAnimationSpeed(1)
             .SetAnimation("stand");
         }
+
         DestroyTimer(GetExpiredTimer());
       });
     }
-    
+
     /// <summary>
     /// Closes the portal after a delay.
     /// <para>If the portal is still opening, it closes instantly instead.</para>
@@ -54,12 +55,12 @@ namespace MacroTools.Spells.Slipstream
         CloseInstantly();
         return;
       }
-      
+
       if (_state != SlipstreamPortalState.Stable) return;
-      
+
       _state = SlipstreamPortalState.Closing;
       Target
-        .SetAnimationSpeed(1 / delay)
+        .SetAnimationSpeed(0.65f * (1 / delay))
         .SetAnimation("death");
       CreateTimer().Start(delay, false, () =>
       {
@@ -73,7 +74,11 @@ namespace MacroTools.Spells.Slipstream
       _state = SlipstreamPortalState.Closed;
       Target
         .SetAnimationSpeed(1)
-        .Kill();
+        .Kill()
+        .Remove();
+      AddSpecialEffect(@"Abilities\Spells\Human\Feedback\SpellBreakerAttack.mdl", GetUnitX(Target), GetUnitY(Target))
+        .SetScale(6)
+        .SetLifespan();
     }
   }
 }

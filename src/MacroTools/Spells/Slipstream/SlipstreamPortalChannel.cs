@@ -6,9 +6,14 @@ using static War3Api.Common;
 
 namespace MacroTools.Spells.Slipstream
 {
+  /// <summary>
+  /// Channel a portal between two locations.
+  /// </summary>
   public sealed class SlipstreamPortalChannel : Channel
   {
     private readonly Point _target;
+    
+    /// <inheritdoc />
     public override bool Active { get; set; }
     
     /// <summary>
@@ -45,15 +50,15 @@ namespace MacroTools.Spells.Slipstream
     /// <inheritdoc />
     public override void OnCreate()
     {
-      var casterPosition = Caster.GetPosition();
-      _portalOrigin = CreateUnit(Caster.OwningPlayer(), PortalUnitTypeId, casterPosition.X, casterPosition.Y, Caster.GetFacing())
+      var casterPosition = WCSharp.Shared.Util.PositionWithPolarOffset(GetUnitX(Caster), GetUnitY(Caster), 200, Caster.GetFacing());
+      _portalOrigin = CreateUnit(Caster.OwningPlayer(), PortalUnitTypeId, casterPosition.x, casterPosition.y, Caster.GetFacing())
         .SetWaygateDestination(_target);
       _portalOriginBuff = new SlipstreamPortalBuff(Caster, _portalOrigin);
       BuffSystem.Add(_portalOriginBuff);
       _portalOriginBuff.Open(OpeningDelay);
       
       _portalDestination = CreateUnit(Caster.OwningPlayer(), PortalUnitTypeId, _target.X, _target.Y, Caster.GetFacing())
-        .SetWaygateDestination(casterPosition);
+        .SetWaygateDestination(new Point(casterPosition.x, casterPosition.y));
       _portalDestinationBuff = new SlipstreamPortalBuff(Caster, _portalDestination);
       BuffSystem.Add(_portalDestinationBuff);
       _portalDestinationBuff.Open(OpeningDelay);

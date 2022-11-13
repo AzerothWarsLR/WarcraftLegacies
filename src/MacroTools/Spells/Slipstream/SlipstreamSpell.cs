@@ -1,5 +1,7 @@
 ﻿using MacroTools.ChannelSystem;
+using MacroTools.Extensions;
 using MacroTools.SpellSystem;
+using Microsoft.VisualBasic.CompilerServices;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -43,6 +45,21 @@ namespace MacroTools.Spells.Slipstream
         OpeningDelay = OpeningDelay,
         ClosingDelay = ClosingDelay
       });
+    }
+
+    /// <inheritdoc/>
+    public override void OnStartCast(unit caster, unit target, Point targetPoint)
+    {
+      if (IsTerrainPathable(targetPoint.X, targetPoint.Y, PATHING_TYPE_WALKABILITY) 
+          || WCSharp.Shared.Util.DistanceBetweenPoints(GetUnitX(caster), GetUnitY(caster), targetPoint.X, targetPoint.Y) < 500) 
+        Refund(caster);
+    }
+
+    private void Refund(unit whichUnit)
+    {
+      whichUnit.IssueOrder("stop");
+      whichUnit.RestoreMana(BlzGetUnitAbilityManaCost(whichUnit, Id, GetAbilityLevel(whichUnit)));
+      BlzEndUnitAbilityCooldown(whichUnit, Id);
     }
   }
 }
