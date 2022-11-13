@@ -35,6 +35,7 @@ namespace MacroTools.SpellSystem
     /// </summary>
     public static void Register(Spell spell)
     {
+      PlayerUnitEvents.Register(PlayerUnitEvent.SpellCast, OnStartCast, spell.Id);
       PlayerUnitEvents.Register(PlayerUnitEvent.SpellEffect, OnCast, spell.Id);
       PlayerUnitEvents.Register(PlayerUnitEvent.SpellEndCast, OnStop, spell.Id);
       PlayerUnitEvents.Register(PlayerUnitEvent.SpellLearnedByHeroType, OnLearn, spell.Id);
@@ -48,6 +49,10 @@ namespace MacroTools.SpellSystem
     private static void OnCast() =>
       SpellsByAbilityId[GetSpellAbilityId()]
         .OnCast(GetTriggerUnit(), GetSpellTargetUnit(), new Point(GetSpellTargetX(), GetSpellTargetY()));
+    
+    private static void OnStartCast() =>
+      SpellsByAbilityId[GetSpellAbilityId()]
+        .OnStartCast(GetTriggerUnit(), GetSpellTargetUnit(), new Point(GetSpellTargetX(), GetSpellTargetY()));
 
     private static void OnLearn() => SpellsByAbilityId[GetLearnedSkill()].OnLearn(GetTriggerUnit());
   }
