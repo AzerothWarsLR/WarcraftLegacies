@@ -1,8 +1,5 @@
-﻿using MacroTools.Spells;
-using MacroTools.Spells.Slipstream;
+﻿using MacroTools.Spells.Slipstream;
 using MacroTools.SpellSystem;
-using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -16,8 +13,9 @@ namespace WarcraftLegacies.Source.Setup.Spells
     /// </summary>
     public static void Setup()
     {
-      SpellSystem.Register(new SlipstreamSpell(Constants.ABILITY_A0LM_OPEN_SHIP)
+      SpellSystem.Register(new SlipstreamSpell(Constants.ABILITY_A00D_SLIPSTREAM_STORMWIND_KHADGAR)
       {
+        PortalUnitTypeId = Constants.UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 5,
         ClosingDelay = 10
       });
