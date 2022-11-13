@@ -1102,6 +1102,12 @@ STRING 183
 Dark Regeneration
 }
 
+STRING 184
+// Abilities: ACs7 (Feral Spirit), EditorSuffix (Editor Suffix)
+{
+(Creep)
+}
+
 STRING 185
 // Units: ospw (Spirit Walker), Hotkey (Hotkey)
 {
@@ -3211,7 +3217,7 @@ G
 }
 
 STRING 542
-// Units: nvde (Elder Voidwalker), EditorSuffix (Name - Editor Suffix)
+// Units: nwld (Dire Wolf), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -3409,7 +3415,7 @@ Light ranged unit that spits poison at opponents. Can Cast Web. |n|n|cffffcc00At
 }
 
 STRING 575
-// Units: nssn (Warden), EditorSuffix (Name - Editor Suffix)
+// Units: nvde (Elder Voidwalker), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -3895,7 +3901,7 @@ STRING 656
 }
 
 STRING 657
-// Units: nhcn (Horn of Cenarius Pedestal), EditorSuffix (Name - Editor Suffix)
+// Units: nssn (Warden), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -4263,7 +4269,7 @@ Renowned Ranger of Quel'thalas.|n|cfff5962dAbilities:|r Cold Arrows|n|cfff5962dC
 }
 
 STRING 720
-// Units: nfgo (Forgotten One), EditorSuffix (Name - Editor Suffix)
+// Units: nhcn (Horn of Cenarius Pedestal), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -4515,7 +4521,7 @@ A mighty tentacle from the depths. |n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 762
-// Units: Ekgg (Keeper of the Grove), EditorSuffix (Name - Editor Suffix)
+// Units: nfgo (Forgotten One), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -7987,7 +7993,7 @@ Revive High Priestess
 }
 
 STRING 1343
-// Units: h05I (Ethel Rethor), EditorSuffix (Name - Editor Suffix)
+// Units: Ekgg (Keeper of the Grove), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -15222,7 +15228,7 @@ Crystalline Golem
 }
 
 STRING 2549
-// Units: h02Z (Oshu'gun), EditorSuffix (Name - Editor Suffix)
+// Units: h05I (Ethel Rethor), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -17490,7 +17496,7 @@ Champion's Hall
 }
 
 STRING 2930
-// Units: h02A (Mountaineer), EditorSuffix (Name - Editor Suffix)
+// Units: h02Z (Oshu'gun), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -19383,7 +19389,7 @@ Tyr's Hand Citadel
 }
 
 STRING 3247
-// Units: h026 (Auchindoun), EditorSuffix (Name - Editor Suffix)
+// Units: h02A (Mountaineer), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -19887,7 +19893,7 @@ STRING 3330
 }
 
 STRING 3331
-// Units: h01Z (Grim Batol), EditorSuffix (Name - Editor Suffix)
+// Units: h026 (Auchindoun), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -19953,7 +19959,7 @@ STRING 3341
 }
 
 STRING 3342
-// Units: h00G (Karazhan), EditorSuffix (Name - Editor Suffix)
+// Units: h01Z (Grim Batol), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -20079,7 +20085,7 @@ Greymane Manor
 }
 
 STRING 3363
-// Units: e014 (Seradane Great Tree), EditorSuffix (Name - Editor Suffix)
+// Units: h00G (Karazhan), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -21034,7 +21040,7 @@ Monk Master Training
 }
 
 STRING 3528
-// Units: e003 (Storm Giant), EditorSuffix (Name - Editor Suffix)
+// Units: e014 (Seradane Great Tree), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -21394,7 +21400,7 @@ Heavy melee unit with Roar, Animal Fury and Mighty Bash. Can learn Ferocious Str
 }
 
 STRING 3588
-// Units: O02L (Sea Witch), EditorSuffix (Name - Editor Suffix)
+// Units: e003 (Storm Giant), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -22024,7 +22030,7 @@ Divine priestess of Elune.|n|cfff5962dAbilities:|r Heal, Elune's Grace|n|cfff596
 }
 
 STRING 3693
-// Units: N00D (Primary Firelord), EditorSuffix (Name - Editor Suffix)
+// Units: O02L (Sea Witch), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -22186,7 +22192,7 @@ Gives a 30% (10 on heroes) chance to purge a unit on attack.
 }
 
 STRING 3720
-// Units: E00P (Keeper of the Grove), EditorSuffix (Name - Editor Suffix)
+// Units: N00D (Primary Firelord), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -22330,7 +22336,7 @@ STRING 3746
 }
 
 STRING 3747
-// Abilities: ANr2 (Reincarnation), EditorSuffix (Editor Suffix)
+// Units: E00P (Keeper of the Grove), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -22894,7 +22900,7 @@ Revive Lich King
 }
 
 STRING 3841
-// Abilities: ACs7 (Feral Spirit), EditorSuffix (Editor Suffix)
+// Abilities: ANr2 (Reincarnation), EditorSuffix (Editor Suffix)
 {
 (Creep)
 }

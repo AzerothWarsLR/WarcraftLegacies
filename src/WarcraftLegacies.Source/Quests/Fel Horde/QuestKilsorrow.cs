@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -36,7 +36,6 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     {
       AddObjective(new ObjectiveLegendDead(Shattrah ?? throw new SystemNotInitializedException(nameof(LegendDraenei))));
       AddObjective(new ObjectiveLegendDead(Halaar ?? throw new SystemNotInitializedException(nameof(LegendDraenei))));
-      AddObjective(new ObjectiveLegendDead(Farahlon ?? throw new SystemNotInitializedException(nameof(LegendDraenei))));
       AddObjective(new ObjectiveExpire(1452));
       AddObjective(new ObjectiveSelfExists());
 
