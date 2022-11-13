@@ -12,7 +12,7 @@ namespace MacroTools.Instances
     /// <summary>
     /// Returns the <see cref="Instance"/> a given point is in, if any.
     /// </summary>
-    private static Instance? GetPointInstance(Point position)
+    public static Instance? GetPointInstance(Point position)
     {
       foreach (var instance in RegisteredInstances)
       {

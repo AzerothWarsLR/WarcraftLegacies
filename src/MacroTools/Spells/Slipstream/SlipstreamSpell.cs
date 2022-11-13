@@ -1,5 +1,6 @@
 ﻿using MacroTools.ChannelSystem;
 using MacroTools.Extensions;
+using MacroTools.Instances;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -50,7 +51,8 @@ namespace MacroTools.Spells.Slipstream
     public override void OnStartCast(unit caster, unit target, Point targetPoint)
     {
       if (IsTerrainPathable(targetPoint.X, targetPoint.Y, PATHING_TYPE_WALKABILITY) 
-          || WCSharp.Shared.Util.DistanceBetweenPoints(GetUnitX(caster), GetUnitY(caster), targetPoint.X, targetPoint.Y) < 500) 
+          || WCSharp.Shared.Util.DistanceBetweenPoints(GetUnitX(caster), GetUnitY(caster), targetPoint.X, targetPoint.Y) < 500
+          || InstanceSystem.GetPointInstance(caster.GetPosition()) != InstanceSystem.GetPointInstance(targetPoint)) 
         Refund(caster);
     }
 
