@@ -1,19 +1,24 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Lordaeron
 {
+  /// <summary>
+  /// Capture Strahnbrad's control point to gain control of the village.
+  /// </summary>
   public sealed class QuestStrahnbrad : QuestData
   {
     private readonly List<unit> _rescueUnits = new();
-
+    /// <summary>
+    /// Initializes a new instance of the <see cref="QuestStrahnbrad"/> class.
+    /// </summary>
+    /// <param name="rescueRect"></param>
     public QuestStrahnbrad(Rectangle rescueRect) : base("The Defense of Strahnbrad",
       "The Strahnbrad is under attack by some brigands, clear them out",
       "ReplaceableTextures\\CommandButtons\\BTNFarm.blp")
@@ -21,27 +26,27 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N01C_STRAHNBRAD_10GOLD_MIN)));
       AddObjective(new ObjectiveExpire(1170));
       AddObjective(new ObjectiveSelfExists());
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          SetUnitInvulnerable(unit, true);
-          _rescueUnits.Add(unit);
-        }
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE));
       Required = true;
     }
 
+    /// <inheritdoc/>
     protected override string CompletionPopup => "Strahnbrad has been liberated.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Control of all buildings in Strahnbrad";
 
+    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
     }
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      if (completingFaction.Player != null)
+        completingFaction.Player.RescueGroup(_rescueUnits);
     }
   }
 }

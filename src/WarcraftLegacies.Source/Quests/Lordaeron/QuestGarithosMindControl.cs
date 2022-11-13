@@ -1,4 +1,4 @@
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using static MacroTools.Libraries.GeneralHelpers;
@@ -9,8 +9,16 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Lordaeron
 {
+  /// <summary>
+  /// Reasearch 'Garithos Mind Control' at the blacksmith to join the <see cref="TeamSetup.Forsaken"/> team. 
+  /// <para/>
+  /// Lose everything but gain new units and heroes.
+  /// </summary>
   public sealed class QuestGarithosMindControl : QuestData
   {
+    /// <summary>
+    /// Initializes a new instance of the <see cref="QuestGarithosMindControl"/> class.
+    /// </summary>
     public QuestGarithosMindControl() : base("Garithos' Mind-Control",
       "Garithos has always had a distrust of other races, he might be tempted to join the Scarlet MindControl.",
       "ReplaceableTextures\\CommandButtons\\BTNGarithos.blp")
@@ -18,11 +26,12 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       AddObjective(new ObjectiveResearch(Constants.UPGRADE_R08F_GARITHOS_MIND_CONTROL_LORDAERON, Constants.UNIT_HBLA_BLACKSMITH_LORDAERON));
     }
 
+    /// <inheritdoc/>
     protected override string CompletionPopup => "Garithos weak mind is an easy pray to Sylvanas mind control, ";
-
+    /// <inheritdoc/>
     protected override string RewardDescription =>
       "You lose everything, but will spawn with Garithos and a small army in Capital City";
-
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.ModObjectLimit(Constants.UNIT_H00F_PALADIN_LORDAERON, -Faction.UNLIMITED);
