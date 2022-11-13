@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       "Proudmoore is stranded at sea. Rejoin Boralus to take control of the city.",
       "ReplaceableTextures\\CommandButtons\\BTNHumanShipyard.blp")
     {
-      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R04R_TIER_4_UNIVERSAL_UPGRADE, Constants.UNIT_H06I_CASTLE_KUL_TIRAS));
+      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, Constants.UNIT_H06I_CASTLE_KUL_TIRAS));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_H06I_CASTLE_KUL_TIRAS, Constants.UNIT_H062_TOWN_HALL_KUL_TIRAS));
       AddObjective(new ObjectiveExpire(900));
       AddObjective(new ObjectiveSelfExists());
