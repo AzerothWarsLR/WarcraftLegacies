@@ -1103,7 +1103,7 @@ Dark Regeneration
 }
 
 STRING 184
-// Abilities: ACs7 (Feral Spirit), EditorSuffix (Editor Suffix)
+// Units: ubdr (Sapphiron), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -1420,6 +1420,12 @@ STRING 236
 Teleporter Circle Indicator
 }
 
+STRING 237
+// Units: H05Y (Lord Wizard), Ubertip (Tooltip - Extended)
+{
+Arcane Hero, adept at dealing magic damage and transporting armies.|n|cfff5962dCan learn:|R Forked Thunder, Polymorph, Wise Council, Slipstream|n|n|cffffcc00Attacks land and air units.|R
+}
+
 STRING 238
 // Abilities: A075 (Acid Blob), EditorSuffix (Editor Suffix)
 {
@@ -1442,6 +1448,12 @@ STRING 241
 // Units: h06I (Castle), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Deckhand, Storm Sorcerer |n|cfff5962dAbilities:|R Summon Garrison
+}
+
+STRING 242
+// Units: n0D9 (Slipstream Portal), EditorSuffix (Name - Editor Suffix)
+{
+(Stormwind - Khadgar)
 }
 
 STRING 243
@@ -1539,6 +1551,12 @@ STRING 260
 // Units: o039 (Great Hall), EditorSuffix (Name - Editor Suffix)
 {
 (twilight)
+}
+
+STRING 261
+// Abilities: A00D (Slipstream), Name (Name)
+{
+Slipstream
 }
 
 STRING 262
@@ -1979,6 +1997,12 @@ STRING 334
 Build Corsair
 }
 
+STRING 335
+// Abilities: A00D (Slipstream), Researchtip (Tooltip - Learn)
+{
+Learn Slipstream - [|cffffcc00Level %d|r]
+}
+
 STRING 336
 // Units: ucsC (Burrowed Carrion Beetle), EditorSuffix (Name - Editor Suffix)
 {
@@ -2112,7 +2136,7 @@ Creates a barrier that stops 600 points of spell damage from affecting a target 
 }
 
 STRING 358
-// Units: ubdr (Sapphiron), EditorSuffix (Name - Editor Suffix)
+// Units: nwld (Dire Wolf), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -3217,7 +3241,7 @@ G
 }
 
 STRING 542
-// Units: nwld (Dire Wolf), EditorSuffix (Name - Editor Suffix)
+// Units: nvde (Elder Voidwalker), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -3415,7 +3439,7 @@ Light ranged unit that spits poison at opponents. Can Cast Web. |n|n|cffffcc00At
 }
 
 STRING 575
-// Units: nvde (Elder Voidwalker), EditorSuffix (Name - Editor Suffix)
+// Units: nssn (Warden), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -3852,6 +3876,12 @@ STRING 647
 W
 }
 
+STRING 648
+// Abilities: A00D (Slipstream), Researchubertip (Tooltip - Learn - Extended)
+{
+Opens a two-way portal to the target location within a range of <A00D,Rng1>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.|n|n|cffffcc00Level 1|r - <A00D,Rng1> range. |n|cffffcc00Level 2|r - <A00D,Rng2> range. |n|cffffcc00Level 3|r - <A00D,Rng3> range.
+}
+
 STRING 649
 // Units: nndr (Nether Dragon), Ubertip (Tooltip - Extended)
 {
@@ -3901,7 +3931,7 @@ STRING 656
 }
 
 STRING 657
-// Units: nssn (Warden), EditorSuffix (Name - Editor Suffix)
+// Units: nhcn (Horn of Cenarius Pedestal), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -3942,6 +3972,12 @@ STRING 663
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Cultist
 }
 
+STRING 664
+// Abilities: A00D (Slipstream), Tip (Tooltip - Normal)
+{
+Slipstream - [|cffffcc00Level 1|r]
+}
+
 STRING 665
 // Units: ewsp (Wisp), EditorSuffix (Name - Editor Suffix)
 {
@@ -3952,6 +3988,12 @@ STRING 666
 // Units: nfel (Fel Stalker), Hotkey (Hotkey)
 {
 Q
+}
+
+STRING 667
+// Abilities: A00D (Slipstream), Tip (Tooltip - Normal)
+{
+Slipstream - [|cffffcc00Level 2|r]
 }
 
 STRING 668
@@ -4269,7 +4311,7 @@ Renowned Ranger of Quel'thalas.|n|cfff5962dAbilities:|r Cold Arrows|n|cfff5962dC
 }
 
 STRING 720
-// Units: nhcn (Horn of Cenarius Pedestal), EditorSuffix (Name - Editor Suffix)
+// Units: nfgo (Forgotten One), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -4521,7 +4563,7 @@ A mighty tentacle from the depths. |n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 762
-// Units: nfgo (Forgotten One), EditorSuffix (Name - Editor Suffix)
+// Units: Ekgg (Keeper of the Grove), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -4752,6 +4794,12 @@ STRING 800
 // Units: nefm (Residence), Ubertip (Tooltip - Extended)
 {
 Rural elven home, providing for its nation. Provides 8 food, which increases the maximum number of units that can be trained.
+}
+
+STRING 801
+// Abilities: A00D (Slipstream), Tip (Tooltip - Normal)
+{
+Slipstream - [|cffffcc00Level 3|r]
 }
 
 STRING 802
@@ -7110,6 +7158,12 @@ STRING 1193
 Summon Arthas Menethil
 }
 
+STRING 1194
+// Abilities: A00D (Slipstream), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a two-way portal to the target location within a range of <A00D,Rng1>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.
+}
+
 STRING 1195
 // Units: Ubal (Envoy of Archimonde), EditorSuffix (Name - Editor Suffix)
 {
@@ -7704,6 +7758,12 @@ STRING 1293
 Summon Othmar Garithos
 }
 
+STRING 1294
+// Abilities: A00D (Slipstream), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a two-way portal to the target location within a range of <A00D,Rng2>. The portal becomes useable after 5 seconds, and closes 20 seconds after the caster stops channeling.
+}
+
 STRING 1295
 // Units: Hkal (Prince of Quel'thalas), Awakentip (Tooltip - Awaken)
 {
@@ -7993,7 +8053,7 @@ Revive High Priestess
 }
 
 STRING 1343
-// Units: Ekgg (Keeper of the Grove), EditorSuffix (Name - Editor Suffix)
+// Units: h05I (Ethel Rethor), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -15228,7 +15288,7 @@ Crystalline Golem
 }
 
 STRING 2549
-// Units: h05I (Ethel Rethor), EditorSuffix (Name - Editor Suffix)
+// Units: h02Z (Oshu'gun), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -15677,6 +15737,12 @@ STRING 2623
 Booty Bay (10gold/min)
 }
 
+STRING 2624
+// Abilities: A00D (Slipstream), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a two-way portal to the target location within a range of <A00D,Rng3>. The portal becomes useable after 5 seconds, and closes 30 seconds after the caster stops channeling.
+}
+
 STRING 2625
 // Units: n00J (Tomb of Sargeras (20gold/min)), Name (Name)
 {
@@ -16017,6 +16083,12 @@ STRING 2681
 // Units: h07L (Improved Guard Tower), Name (Name)
 {
 Improved Guard Tower
+}
+
+STRING 2682
+// Units: n0D9 (Slipstream Portal), Name (Name)
+{
+Slipstream Portal
 }
 
 STRING 2683
@@ -17489,6 +17561,12 @@ STRING 2927
 Northgate Woods (10gold/min)
 }
 
+STRING 2928
+// Abilities: A00D (Slipstream), EditorSuffix (Editor Suffix)
+{
+(Stormwind - Khadgar)
+}
+
 STRING 2929
 // Units: h05J (Champion's Hall), Name (Name)
 {
@@ -17496,7 +17574,7 @@ Champion's Hall
 }
 
 STRING 2930
-// Units: h02Z (Oshu'gun), EditorSuffix (Name - Editor Suffix)
+// Units: h02A (Mountaineer), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -19389,7 +19467,7 @@ Tyr's Hand Citadel
 }
 
 STRING 3247
-// Units: h02A (Mountaineer), EditorSuffix (Name - Editor Suffix)
+// Units: h026 (Auchindoun), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -19893,7 +19971,7 @@ STRING 3330
 }
 
 STRING 3331
-// Units: h026 (Auchindoun), EditorSuffix (Name - Editor Suffix)
+// Units: h01Z (Grim Batol), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -19959,7 +20037,7 @@ STRING 3341
 }
 
 STRING 3342
-// Units: h01Z (Grim Batol), EditorSuffix (Name - Editor Suffix)
+// Units: h00G (Karazhan), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -20085,7 +20163,7 @@ Greymane Manor
 }
 
 STRING 3363
-// Units: h00G (Karazhan), EditorSuffix (Name - Editor Suffix)
+// Units: e014 (Seradane Great Tree), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -21040,7 +21118,7 @@ Monk Master Training
 }
 
 STRING 3528
-// Units: e014 (Seradane Great Tree), EditorSuffix (Name - Editor Suffix)
+// Units: e003 (Storm Giant), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -21400,7 +21478,7 @@ Heavy melee unit with Roar, Animal Fury and Mighty Bash. Can learn Ferocious Str
 }
 
 STRING 3588
-// Units: e003 (Storm Giant), EditorSuffix (Name - Editor Suffix)
+// Units: O02L (Sea Witch), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -22030,7 +22108,7 @@ Divine priestess of Elune.|n|cfff5962dAbilities:|r Heal, Elune's Grace|n|cfff596
 }
 
 STRING 3693
-// Units: O02L (Sea Witch), EditorSuffix (Name - Editor Suffix)
+// Units: N00D (Primary Firelord), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -22192,7 +22270,7 @@ Gives a 30% (10 on heroes) chance to purge a unit on attack.
 }
 
 STRING 3720
-// Units: N00D (Primary Firelord), EditorSuffix (Name - Editor Suffix)
+// Units: E00P (Keeper of the Grove), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -22336,7 +22414,7 @@ STRING 3746
 }
 
 STRING 3747
-// Units: E00P (Keeper of the Grove), EditorSuffix (Name - Editor Suffix)
+// Abilities: ANr2 (Reincarnation), EditorSuffix (Editor Suffix)
 {
 (Creep)
 }
@@ -22900,7 +22978,7 @@ Revive Lich King
 }
 
 STRING 3841
-// Abilities: ANr2 (Reincarnation), EditorSuffix (Editor Suffix)
+// Abilities: ACs7 (Feral Spirit), EditorSuffix (Editor Suffix)
 {
 (Creep)
 }
@@ -108950,12 +109028,6 @@ STRING 18227
 Disciplined Orc Warriors.|n|cfff5962dAbilities:|R Charge|R|n|cfff5962d|n|cffffcc00Attacks land units.|r
 }
 
-STRING 18228
-// Units: H05Y (Lord Wizard), Ubertip (Tooltip - Extended)
-{
-Arcane Hero, adept at dealing magic damage and transporting armies.|n|cfff5962dCan learn:|R Forked Thunder, Polymorph, Wise Council, Mass Teleport|n|n|cffffcc00Attacks land and air units.|R
-}
-
 STRING 18229
 // Abilities: ANhx (Polymorph), Researchtip (Tooltip - Learn)
 {
@@ -111383,12 +111455,6 @@ STRING 18633
 Learn Herald of Destruction
 }
 
-STRING 18634
-// Abilities: A0XB (Arcane Storm), EditorSuffix (Editor Suffix)
-{
- (Khadgar)
-}
-
 STRING 18635
 // Abilities: A0WF (Herald of Destruction), Tip (Tooltip - Normal)
 {
@@ -111405,24 +111471,6 @@ STRING 18637
 // Abilities: A0WF (Herald of Destruction), Tip (Tooltip - Normal)
 {
 Herald of Destruction - [|cffffcc00Level 3|r]
-}
-
-STRING 18638
-// Abilities: A0XB (Arcane Storm), Researchtip (Tooltip - Learn)
-{
-Learn Arcane Storm - [|cffffcc00Level %d|r]
-}
-
-STRING 18639
-// Abilities: A0XB (Arcane Storm), Researchubertip (Tooltip - Learn - Extended)
-{
-Calls down waves of falling stars that damage nearby enemy units.|nLasts for <A0XB,Dur1> seconds. |n|n|cffffcc00Level 1|r - <A0XB,DataA1> damage.|n|cffffcc00Level 2|r - <A0XB,DataA2> damage.|n|cffffcc00Level 3|r - <A0XB,DataA3> damage.
-}
-
-STRING 18640
-// Abilities: A0XB (Arcane Storm), Tip (Tooltip - Normal)
-{
-Arcane Storm - [|cffffcc00Level 1|r]
 }
 
 STRING 18641
@@ -111483,12 +111531,6 @@ STRING 18650
 // Units: O05O (Ragefire Warlock), EditorSuffix (Name - Editor Suffix)
 {
  (Warsong)
-}
-
-STRING 18651
-// Abilities: A0XB (Arcane Storm), Tip (Tooltip - Normal)
-{
-Arcane Storm - [|cffffcc00Level 2|r]
 }
 
 STRING 18652
@@ -111599,30 +111641,6 @@ STRING 18669
 Curse of Executus
 }
 
-STRING 18670
-// Abilities: A0XB (Arcane Storm), Tip (Tooltip - Normal)
-{
-Arcane Storm - [|cffffcc00Level 3|r]
-}
-
-STRING 18671
-// Abilities: A0XB (Arcane Storm), Ubertip (Tooltip - Normal - Extended)
-{
-Calls down waves of arcane energy that damage nearby enemy units. Each wave deals <A0XB,DataA1> damage. |nLasts for <A0XB,Dur1> seconds.
-}
-
-STRING 18672
-// Abilities: A0XB (Arcane Storm), Ubertip (Tooltip - Normal - Extended)
-{
-Calls down waves of arcane energy that damage nearby enemy units. Each wave deals <A0XB,DataA2> damage. |nLasts for <A0XB,Dur2> seconds.
-}
-
-STRING 18673
-// Abilities: A0XB (Arcane Storm), Ubertip (Tooltip - Normal - Extended)
-{
-Calls down waves of arcane energy that damage nearby enemy units. Each wave deals <A0XB,DataA3> damage. |nLasts for <A0XB,Dur3> seconds.
-}
-
 STRING 18674
 // Abilities: A0WQ (Locust Swarm), EditorSuffix (Editor Suffix)
 {
@@ -111687,12 +111705,6 @@ STRING 18684
 // Abilities: A0WR (Molten Strike), Name (Name)
 {
 Molten Strike
-}
-
-STRING 18685
-// Abilities: A0XB (Arcane Storm), Name (Name)
-{
-Arcane Storm
 }
 
 STRING 18686
@@ -112110,13 +112122,13 @@ This unit was hit by a Serrated Bite; its armor is temporarily reduced.
 }
 
 STRING 18756
-// Abilities: A0XB (Arcane Storm), Hotkey (Hotkey - Normal)
+// Abilities: A00D (Slipstream), Hotkey (Hotkey - Normal)
 {
 R
 }
 
 STRING 18757
-// Abilities: A0XB (Arcane Storm), Researchhotkey (Hotkey - Learn)
+// Abilities: A00D (Slipstream), Researchhotkey (Hotkey - Learn)
 {
 R
 }
