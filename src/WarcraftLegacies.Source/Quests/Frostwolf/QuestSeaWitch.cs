@@ -49,7 +49,8 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 
     protected override void OnFail(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+      _rescueUnits.Clear();
     }
 
     protected override void OnComplete(Faction completingFaction)
@@ -66,7 +67,8 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       }
       RemoveWeatherEffect(_storm);
       CreateUnits(completingFaction.Player, FourCC("opeo"), -1818, -2070, 270, 3);
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      completingFaction.Player.RescueGroup(_rescueUnits);
+      _rescueUnits.Clear();
       DestroyTrigger(_rescueTrigger);
     }
 
