@@ -32,11 +32,13 @@ namespace MacroTools.Spells.Slipstream
         .SetAnimation("birth");
       CreateTimer().Start(delay, false, () =>
       {
-        Active = false;
-        _state = SlipstreamPortalState.Stable;
-        Target
-          .SetAnimationSpeed(1)
-          .SetAnimation("stand");
+        if (_state == SlipstreamPortalState.Opening)
+        {
+          _state = SlipstreamPortalState.Stable;
+          Target
+            .SetAnimationSpeed(1)
+            .SetAnimation("stand");
+        }
         DestroyTimer(GetExpiredTimer());
       });
     }
