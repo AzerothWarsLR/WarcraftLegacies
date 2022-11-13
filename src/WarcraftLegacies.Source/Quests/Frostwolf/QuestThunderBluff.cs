@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     }
 
     //todo: bad flavour
-    protected override string CompletionPopup => "The Long March of the Tauren clans has ended and they have joined forces with the Horde.";
+    protected override string CompletionPopup => "The long march of the Tauren clans has ended, and they have joined forces with the Horde.";
 
     protected override string RewardDescription => "Control of Thunder Bluff";
 

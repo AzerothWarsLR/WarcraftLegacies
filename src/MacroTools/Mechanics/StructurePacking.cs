@@ -8,17 +8,17 @@ namespace MacroTools.Mechanics
   /// <summary>
   /// System to allow structures to convert themselves into units. Those units can then use an ability to rebuild the building.
   /// </summary>
-  public class StructurePacking
+  public sealed class StructurePacking
   {
     /// <summary>
     /// Object that contains information and methods for packable structures
     /// </summary>
-    public class PackableStructure
+    public sealed class PackableStructure
     {
-      private static readonly Dictionary<int, PackableStructure> PackableStructureById = new();
-      private int _packedUnitId;
-      private int _buildAbility;
-      private string? _structureModel;
+      public int _packedUnitId;
+      public int _buildAbility;
+      public string _structureModel = string.Empty;
+      public int _structureId;
 
       /// <summary>
       /// Method for creating new packable structure entries
@@ -27,33 +27,26 @@ namespace MacroTools.Mechanics
       /// <param name="packedUnitId"></param>
       /// <param name="buildAbility"></param>
       /// <param name="structureModel"></param>
-      public static void Create(int structureId, int packedUnitId, int buildAbility, string? structureModel)
+      public static void Register(int structureId, int packedUnitId, int buildAbility, string structureModel)
       {
         var packable = new PackableStructure
         {
           _packedUnitId = packedUnitId,
           _buildAbility = buildAbility,
-          _structureModel = structureModel
+          _structureModel = structureModel,
+          _structureId = structureId
         };
-        PackableStructureById[structureId] = packable;
-        
-        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, GetPackableStructureById(structureId).OnTrainUnitType,structureId);
+
+        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, () => packable.OnTrainUnitType(),structureId);
           
-        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeSpellEndCast, GetPackableStructureById(structureId).OnUnitTypeCastSpell,packedUnitId);
+        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeSpellEndCast, () => packable.OnUnitTypeCastSpell(),packedUnitId);
       }
-      
-      /// <summary>
-      /// Use a structure id to retrieve a <see cref="PackableStructure" /> object from the Dictionary
-      /// </summary>
-      /// <param name="structureId"></param>
-      /// <returns></returns>
-      public static PackableStructure? GetPackableStructureById(int structureId) =>
-        PackableStructureById.TryGetValue(structureId, out var packableStructure) ? packableStructure : null;
 
       /// <summary>
       /// Addes the build ability and special effect to pack units
       /// </summary>
       /// <param name="packedUnit"></param>
+      /// <param name="packable"></param>
       public void PackUnitSetup(unit packedUnit)
       {
         var effect = AddSpecialEffectTarget(_structureModel, packedUnit, "overhead");
@@ -62,14 +55,14 @@ namespace MacroTools.Mechanics
         UnitAddAbility(packedUnit, _buildAbility);
       }
 
-      private static void PackBuilding(unit building, unit packedUnit)
+      private void PackBuilding(unit building, unit packedUnit)
       {
-        if (!PackableStructureById.ContainsKey(GetUnitTypeId(building)))
+        if (_structureId != GetUnitTypeId(building))
         {
           Console.WriteLine($"ERROR: there is no PackableStructure setup for building: {GetUnitName(building)}");
           return;
         }
-        PackableStructureById[GetUnitTypeId(building)].PackUnitSetup(packedUnit);
+        PackUnitSetup(packedUnit);
         RemoveUnit(building);
       }
 

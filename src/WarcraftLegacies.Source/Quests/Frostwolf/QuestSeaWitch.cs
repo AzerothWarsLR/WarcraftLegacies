@@ -19,7 +19,8 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
   /// </summary>
   public sealed class QuestSeaWitch : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueEchoUnits = new();
+    private readonly List<unit> _rescueDarkspearUnits = new();
     private weathereffect? _storm;
     private readonly trigger _rescueTrigger;
 
@@ -30,14 +31,15 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       AddObjective(new ObjectiveKillUnit(LegendNeutral.LegendSeawitch.Unit));
       AddObjective(new ObjectiveExpire(600));
       ResearchId = FourCC("R05H");
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE));
-      CreateTrigger()
+      _rescueEchoUnits = rescueRect.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE));
+      _rescueDarkspearUnits = Regions.Thrall_Landing1.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE));
+      _rescueTrigger = CreateTrigger()
         .RegisterEnterRegion(Regions.Thrall_Landing1)
         .AddAction(() =>
         {
           var triggerUnit = GetTriggerUnit();
           if (GetOwningPlayer(triggerUnit) != FrostwolfSetup.Frostwolf.Player) return;
-          Regions.Thrall_Landing1.RescueNeutralUnitsInRect(GetOwningPlayer(triggerUnit));
+          FrostwolfSetup.Frostwolf.Player.RescueGroup(_rescueDarkspearUnits);
         });
     }
 
@@ -49,18 +51,21 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 
     protected override void OnFail(Faction completingFaction)
     {
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
-      _rescueUnits.Clear();
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueEchoUnits);
+      _rescueEchoUnits.Clear();
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueDarkspearUnits);
+      _rescueDarkspearUnits.Clear();
       DestroyTrigger(_rescueTrigger);
     }
 
     protected override void OnComplete(Faction completingFaction)
     {
       //Transfer control of all passive units on island and teleport all Frostwolf units to shore
-      Regions.CairneStart.RescueNeutralUnitsInRect(completingFaction.Player);
+      var rescueCairneUnits = Regions.CairneStart.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE));
+      FrostwolfSetup.Frostwolf.Player.RescueGroup(rescueCairneUnits);
+      FrostwolfSetup.Frostwolf.Player.RescueGroup(_rescueDarkspearUnits);
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(Regions.Darkspear_Island.Rect).EmptyToList())
       {
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE)) unit.Rescue(completingFaction.Player);
         if (GetOwningPlayer(unit) == FrostwolfSetup.Frostwolf.Player &&
             IsUnitType(unit, UNIT_TYPE_STRUCTURE) == false)
           SetUnitPosition(unit, GetRandomReal(GetRectMinX(Regions.ThrallLanding.Rect), GetRectMaxX(Regions.ThrallLanding.Rect)),
@@ -68,8 +73,10 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       }
       RemoveWeatherEffect(_storm);
       CreateUnits(completingFaction.Player, FourCC("opeo"), -1818, -2070, 270, 3);
-      completingFaction.Player.RescueGroup(_rescueUnits);
-      _rescueUnits.Clear();
+      completingFaction.Player.RescueGroup(_rescueEchoUnits);
+      rescueCairneUnits.Clear();
+      _rescueEchoUnits.Clear();
+      _rescueDarkspearUnits.Clear();
       DestroyTrigger(_rescueTrigger);
     }
 
