@@ -34,10 +34,10 @@ namespace MacroTools.Spells.Slipstream
       {
         Active = false;
         _state = SlipstreamPortalState.Stable;
-        DestroyTimer(GetExpiredTimer());
         Target
           .SetAnimationSpeed(1)
           .SetAnimation("stand");
+        DestroyTimer(GetExpiredTimer());
       });
     }
     
