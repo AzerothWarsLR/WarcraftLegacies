@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -83,6 +83,7 @@ Stormwind is preparing for the Fel Horde invasion in the South, muster the thron
       Ironforge.ModObjectLimit(FourCC("Rhri"), Faction.UNLIMITED); //Long Rifles
       Ironforge.ModObjectLimit(FourCC("Rhhb"), Faction.UNLIMITED); //Storm Hammers
       Ironforge.ModObjectLimit(FourCC("R063"), Faction.UNLIMITED); //Thunder Ale
+      Ironforge.ModObjectLimit(FourCC("R02K"), Faction.UNLIMITED); //Gryphon Superior Breed
       Ironforge.ModObjectLimit(Constants.UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE, Faction.UNLIMITED);
       Ironforge.ModObjectLimit(Constants.UPGRADE_RHAR_PYRITE_ARMOR_PLATING_UNIVERSAL_UPGRADE, Faction.UNLIMITED);
       Ironforge.ModObjectLimit(Constants.UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 1);

@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
@@ -21,10 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     {
       _naxxramas = naxxramas;
       ObjectiveChannelRect objectiveChannelRect =
-        new(Regions.NaxUnlock, "Naxxramas", LegendScourge.LegendKelthuzad, 60, 270)
-        {
-          RequiredUnitTypeId = LegendScourge.UnittypeKelthuzadLich
-        };
+        new(Regions.NaxUnlock, "Naxxramas", LegendScourge.LegendKelthuzad, 60, 270);
       AddObjective(objectiveChannelRect);
       SetUnitInvulnerable(naxxramas, true);
 

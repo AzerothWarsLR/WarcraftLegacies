@@ -1,10 +1,12 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using MacroTools.Wrappers;
+using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Draenei
@@ -85,6 +87,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
         EscapeOutland(completingFaction.Player);
         completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 200);
         completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 500);
+        completingFaction.Player?.SetTeam(TeamSetup.NightElves);
         RemoveUnit(TheExodar);
       }
       

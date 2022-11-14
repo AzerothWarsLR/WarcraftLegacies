@@ -1,4 +1,4 @@
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
@@ -12,10 +12,11 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
     private static readonly int HeroId = FourCC("H028");
 
     public QuestWildhammer() : base("Wildhammer Alliance",
-      "The Wildhammer dwarves roam freely over the peaks of the Hinterlands. An audience with Magni himself might earn their cooperation.",
+      "The Wildhammer dwarves roam freely over the peaks of the Hinterlands. Defeating their mortal enemy, the Dragonmaw clan, might earn their cooperation.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroGriffonWarrior.blp")
     {
-      AddObjective(new ObjectiveLegendInRect(LegendIronforge.LegendMagni, Regions.Aerie_Peak, "Aerie Peak"));
+      AddObjective(new ObjectiveLegendDead(LegendDragonmaw.LegendDragonmawPort));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendGrimbatol, false));
       ResearchId = FourCC("R01C");
     }
 
@@ -24,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       "Magni has spoken with Falstad Wildhammer and secured an alliance with the Wildhammer Clan.";
 
     protected override string RewardDescription =>
-      "You gain control of Aerie Peak and you can train the hero Falstad Wildhammer from the Altar of Fortitude";
+      "You gain control of Aerie Peak and you can train the hero Falstad Wildhammer from the Altar of Fortitude. You can also now research Gryphon Superior breed at the Gryphon Aviary.";
 
     protected override void OnComplete(Faction completingFaction)
     {

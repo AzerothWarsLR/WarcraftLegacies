@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -6,6 +6,7 @@ using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
+using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
 
@@ -22,6 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n017"))));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n014"))));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n013"))));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendGrimbatol, false));
       AddObjective(new ObjectiveUpgrade(FourCC("h07G"), FourCC("h07E")));
       AddObjective(new ObjectiveExpire(1462));
       AddObjective(new ObjectiveSelfExists());

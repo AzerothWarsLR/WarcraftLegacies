@@ -1,4 +1,4 @@
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.FactionSetup
@@ -10,19 +10,19 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     public static void Setup()
     {
       Illidan = new Faction("Illidan's Forces", PLAYER_COLOR_VIOLET, "|cffff00ff",
-        "ReplaceableTextures\\CommandButtons\\BTNEvilIllidan.blp")
+        "ReplaceableTextures\\CommandButtons\\BTNHeroDemonHunter.blp")
       {
         UndefeatedResearch = FourCC("R02L"),
         StartingGold = 0,
         StartingLumber = 2500,
         CinematicMusic = @"war3mapImported\Illidancinematic3.mp3",
-        IntroText = @"You are playing as the banished Empire of Nazjatar|r|r.
+        IntroText = @"You are playing as the renegade Illidan.|r|r.
 
-You start weak in the middle of the map.
+While shunned by most of Night Elven society, you still support Tyrande, the object of your eternal affection.
 
-Take control of the deap sea before moving on to raiding coastal settlements and islands all around you, slowly gaining ressources along the way.
+Start by expanding east and north, taking territory and unlocking the secrets of the Aetheneum.
 
-Once you have collected enough, you can rebuild the great Nazjatar empire and start conquering the world."
+The goblins will be vying for the support of Tanaris, be ready for a tough fight."
       };
 
       Illidan.ModObjectLimit(FourCC("e01P"), Faction.UNLIMITED); //Coral of Life
@@ -38,7 +38,7 @@ Once you have collected enough, you can rebuild the great Nazjatar empire and st
       Illidan.ModObjectLimit(FourCC("n0D4"), Faction.UNLIMITED); //Improved Tidal Guardian
       Illidan.ModObjectLimit(FourCC("n0D5"), Faction.UNLIMITED); //Tidal Guardian
 
-      Illidan.ModObjectLimit(FourCC("nmpe"), Faction.UNLIMITED); //Mur)gul Slave
+      Illidan.ModObjectLimit(FourCC("nmpe"), Faction.UNLIMITED); //Murgul Slave
       Illidan.ModObjectLimit(FourCC("nmyr"), Faction.UNLIMITED); //Myrmidon
       Illidan.ModObjectLimit(FourCC("nsnp"), Faction.UNLIMITED); //Snap Dragon
       Illidan.ModObjectLimit(FourCC("nnsw"), Faction.UNLIMITED); //Siren
@@ -52,7 +52,7 @@ Once you have collected enough, you can rebuild the great Nazjatar empire and st
       Illidan.ModObjectLimit(FourCC("Hvsh"), 1); //Vashj
       Illidan.ModObjectLimit(FourCC("U00S"), 1); //Najentus
       Illidan.ModObjectLimit(FourCC("Naka"), 1); //Akama
-      Illidan.ModObjectLimit(FourCC("E015"), 1); //Akama
+      Illidan.ModObjectLimit(FourCC("E015"), 1); //Altruis
       Illidan.ModObjectLimit(FourCC("Eevi"), 1); //Illidan
 
       Illidan.ModObjectLimit(FourCC("R062"), Faction.UNLIMITED); //Redemption path

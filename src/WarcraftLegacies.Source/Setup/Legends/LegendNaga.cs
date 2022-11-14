@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       LegendIllidan = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("Eill")),
+        UnitType = FourCC("Eill"),
         PlayerColor = PLAYER_COLOR_PURPLE
       };
       Legend.Register(LegendIllidan);
