@@ -32,7 +32,6 @@ namespace WarcraftLegacies.Source.Quests
       AddObjective(new ObjectiveTime(900));
       _enterTombOfSargerasRegion = new ObjectiveHeroWithLevelReachRect(10, Regions.Sargeras_Entrance, "the Tomb of Sargeras' entrance");
       AddObjective(_enterTombOfSargerasRegion);
-      Global = true;
     }
     
     /// <inheritdoc />
