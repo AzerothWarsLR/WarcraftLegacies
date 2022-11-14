@@ -59,6 +59,9 @@ The goblins will be vying for the support of Tanaris, be ready for a tough fight
       Illidan.ModObjectLimit(FourCC("R063"), Faction.UNLIMITED); //Exile Path
       Illidan.ModObjectLimit(FourCC("R065"), Faction.UNLIMITED); //Madness Path
 
+      Illidan.ModObjectLimit(FourCC("Rnsw"), Faction.UNLIMITED); //Siren Adept Training
+      Illidan.ModObjectLimit(FourCC("R02V"), Faction.UNLIMITED); //Shadowcaster Adept Training
+
       FactionManager.Register(Illidan);
     }
   }
