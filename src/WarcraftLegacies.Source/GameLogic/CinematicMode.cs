@@ -42,16 +42,7 @@ namespace WarcraftLegacies.Source.GameLogic
       
       VolumeGroupReset();
       VolumeGroupSetVolume(SOUND_VOLUMEGROUP_AMBIENTSOUNDS, 0.4f);
-      SetUnitTimeScale(PreplacedUnitSystem.GetUnit(Constants.UNIT_EILL_THE_BETRAYER_NAGA), 1);
 
-      EnableWeatherEffect(_illidanRain, false);
-      EnableWeatherEffect(_illidanWind, false);
-      RemoveWeatherEffect(_illidanRain);
-      RemoveWeatherEffect(_illidanWind);
-      EnableWeatherEffect(_illidanRain2, false);
-      EnableWeatherEffect(_illidanWind2, false);
-      RemoveWeatherEffect(_illidanRain2);
-      RemoveWeatherEffect(_illidanWind2);
       DestroyTimer(_timer);
 
       _state = CinematicState.Finished;

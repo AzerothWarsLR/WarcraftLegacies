@@ -4905,7 +4905,7 @@ STRING 818
 }
 
 STRING 819
-// Units: nbot (Transport Ship), Hotkey (Hotkey)
+// Units: nbot (Goblin Privateer), Hotkey (Hotkey)
 {
 Q
 }
@@ -5445,9 +5445,9 @@ Q
 }
 
 STRING 909
-// Units: nbot (Transport Ship), Tip (Tooltip - Basic)
+// Units: o06E (Dragonmaw Port), Name (Name)
 {
-|cffeae402(Q) |r- Hire |cffffcc00T|rransport Ship
+Dragonmaw Port
 }
 
 STRING 910
@@ -22431,10 +22431,28 @@ STRING 3738
 Revive Necromancer
 }
 
+STRING 3739
+// Units: udes (Corsair), Ubertip (Tooltip - Extended)
+{
+Banshee of the water, and killer of seaman.|n|cfff5962dAbilities:|R Board, Fishing Nets|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 3740
+// Units: odes (Frigate), Ubertip (Tooltip - Extended)
+{
+Mainstay of the Horde Navy and conquerer of the ocean.|n|cfff5962dAbilities:|R Board, Fishing Nets|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 3741
 // Units: o03L (Great Hall), Hotkey (Hotkey)
 {
 Q
+}
+
+STRING 3742
+// Units: nbot (Goblin Privateer), Name (Name)
+{
+Goblin Privateer
 }
 
 STRING 3743
@@ -31006,6 +31024,12 @@ STRING 5170
 Tosses a target non-mechanical enemy unit into the air, rendering it unable to move, attack or cast spells, and stopping others from attacking or casting on it. Lasts 15 seconds on units and 2 seconds on heroes.
 }
 
+STRING 5171
+// Units: nbot (Goblin Privateer), Ubertip (Tooltip - Extended)
+{
+Goblin Privateers. Can transport units as well as defend itself.|n|cfff5962dAbilities:|R Load and unload|n|n|cffffcc00Attacks land units.|r
+}
+
 STRING 5172
 // Units: o063 (Great Hall), Hotkey (Hotkey)
 {
@@ -31880,6 +31904,12 @@ STRING 5317
 // Abilities: AUim (Impale), Researchtip (Tooltip - Learn)
 {
 Learn Impale (|cffffcc00Q|r) - [|cffffcc00Level %d|r]
+}
+
+STRING 5318
+// Units: nbot (Goblin Privateer), Tip (Tooltip - Basic)
+{
+Hire Goblin Privateer
 }
 
 STRING 5319
@@ -35537,10 +35567,34 @@ STRING 5927
 (unused)
 }
 
+STRING 5928
+// Units: hdes (Destroyer), Ubertip (Tooltip - Extended)
+{
+Pride of the Alliance Navy, and defender of the seas.|n|cfff5962dAbilities:|R Board, Fishing Nets|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 5929
 // Abilities: A096 (Summon Water Elemental), Tip (Tooltip - Normal)
 {
 Summon Water Elemental - [|cffffcc00Level 4|r]
+}
+
+STRING 5930
+// Units: edes (Corvette), Ubertip (Tooltip - Extended)
+{
+Agile dominator of the seas of Kalimdor.|n|cfff5962dAbilities:|R Board, Fishing Nets|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.
+}
+
+STRING 5931
+// Units: o04W (Golden Vessel), Ubertip (Tooltip - Extended)
+{
+Main Ships of the Zandalari Empire. They are both powerful and can transport troops.|n|cfff5962dAbilities:|R Board, Load and unload, Fishing Nets|n|n|cff99b4d1Can only build 24.|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 5932
+// Upgrades: R02K (Storm Hammers), EditorSuffix (Editor Suffix)
+{
+(Khaz Modan)
 }
 
 STRING 5933
@@ -38674,6 +38728,12 @@ STRING 6454
 (Grey - Draz'zilb, Chen. Dark Green - Katrana)
 }
 
+STRING 6455
+// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
+{
+A
+}
+
 STRING 6456
 // Abilities: ACat (Trueshot Aura), EditorSuffix (Editor Suffix)
 {
@@ -39866,6 +39926,12 @@ STRING 6654
 // Abilities: AOws (War Stomp), Researchhotkey (Hotkey - Learn)
 {
 W
+}
+
+STRING 6655
+// Upgrades: R02K (Storm Hammers), Name (Name)
+{
+Gryphon Superior Breed
 }
 
 STRING 6656
@@ -41578,6 +41644,12 @@ STRING 6940
 Altar of Madness
 }
 
+STRING 6941
+// Upgrades: R02K (Storm Hammers), Tip (Tooltip)
+{
+Research Gryphon Superior Breed
+}
+
 STRING 6942
 // Units: o03K (Twilight Burrow), Tip (Tooltip - Basic)
 {
@@ -42616,6 +42688,12 @@ STRING 7111
 // Abilities: A0Y2 (Locust Swarm), Researchtip (Tooltip - Learn)
 {
 Learn Locust Swarm - [|cffffcc00Level %d|r]
+}
+
+STRING 7112
+// Upgrades: R02K (Storm Hammers), Ubertip (Tooltip - Extended)
+{
+Grant all Gryphons a bonus 300 hit points.
 }
 
 STRING 7113
@@ -65219,6 +65297,12 @@ STRING 10879
 // Abilities: A0E3 (Lightning Shield), Hotkey (Hotkey - Normal)
 {
 W
+}
+
+STRING 10880
+// Upgrades: R02K (Storm Hammers), effect1 (Effect 1)
+{
+rhpx
 }
 
 STRING 10881
@@ -99757,12 +99841,6 @@ STRING 16674
 Home to the warriors of the Horde.|n|cfff5962dTrains:|R Grunt, Headhunter, Bat Rider |n|cfff5962dResearches:|RTroll Regeneration, Liquid Fire
 }
 
-STRING 16675
-// Units: o04W (Golden Vessel), Ubertip (Tooltip - Extended)
-{
-Main Ships of the Zandalari Empire. They are both powerful and can transport troops.|n|cfff5962dAbilities:|R Board, Load and unlock|n|n|cff99b4d1Can only build 24.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 16676
 // Upgrades: R03O (Animal War Training), EditorSuffix (Editor Suffix)
 {
@@ -99835,12 +99913,6 @@ STRING 16687
 The dread of the sea and the bane of any Navy.|n|cfff5962dAbilities:|R Repair|n|n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land units.|r
 }
 
-STRING 16688
-// Units: udes (Corsair), Ubertip (Tooltip - Extended)
-{
-Banshee of the water, and killer of seaman.|n|cfff5962dAbilities:|R Board|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 16689
 // Units: ubot (Haunted Transport Ship), Ubertip (Tooltip - Extended)
 {
@@ -99853,22 +99925,10 @@ STRING 16690
 Pure strength and dominance of the Horde.|n|cfff5962dAbilities:|R Repair|n|n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land units.|r
 }
 
-STRING 16691
-// Units: odes (Frigate), Ubertip (Tooltip - Extended)
-{
-Mainstay of the Horde Navy and conquerer of the ocean.|n|cfff5962dAbilities:|R Board|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 16692
 // Units: obot (Horde Transport Ship), Ubertip (Tooltip - Extended)
 {
 A sturdy transport ship capable of carrying units over the sea.|n|n|cff99b4d1Can only build 12.|r|n|cff00ffffCan transport 10 units.
-}
-
-STRING 16693
-// Units: hdes (Destroyer), Ubertip (Tooltip - Extended)
-{
-Pride of the Alliance Navy, and defender of the seas.|n|cfff5962dAbilities:|R Board|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 16694
@@ -99887,12 +99947,6 @@ STRING 16696
 // Units: etrs (Night Elf Transport Ship), Ubertip (Tooltip - Extended)
 {
 A sturdy transport ship capable of carrying units over the sea.|n|n|cff99b4d1Can only build 12.|r|n|cff00ffffCan transport 10 units.
-}
-
-STRING 16697
-// Units: edes (Corvette), Ubertip (Tooltip - Extended)
-{
-Agile dominator of the seas of Kalimdor.|n|cfff5962dAbilities:|R Board|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.|
 }
 
 STRING 16698

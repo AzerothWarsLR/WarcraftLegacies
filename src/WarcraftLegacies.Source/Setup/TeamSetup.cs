@@ -1,4 +1,4 @@
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 
 namespace WarcraftLegacies.Source.Setup
 {
@@ -12,7 +12,9 @@ namespace WarcraftLegacies.Source.Setup
     public static Team ScarletCrusade { get; private set; }
     public static Team Forsaken { get; private set; }
     public static Team Scourge { get; private set; }
-  
+    public static Team Dragonmaw { get; private set; }
+    public static Team Draenei { get; private set; }
+
 
     public static void Setup( ){
       Alliance = new Team("Alliance")
@@ -68,6 +70,18 @@ namespace WarcraftLegacies.Source.Setup
         VictoryMusic = "DarkVictory"
       };
       FactionManager.Register(Scourge);
+
+      Dragonmaw = new Team("Dragonmaw")
+      {
+        VictoryMusic = "DarkVictory"
+      };
+      FactionManager.Register(Dragonmaw);
+
+      Draenei = new Team("Draenei")
+      {
+        VictoryMusic = "HeroicVictory"
+      };
+      FactionManager.Register(Draenei);
     }
 
   }

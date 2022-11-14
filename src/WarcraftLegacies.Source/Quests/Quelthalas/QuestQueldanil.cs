@@ -1,10 +1,13 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using MacroTools.Wrappers;
+using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Quests.Quelthalas
 {
@@ -17,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp")
     {
       AddObjective(new ObjectiveAnyUnitInRect(Regions.QuelDanil_Lodge, "Quel'danil Lodge", true));
-      AddObjective(new ObjectiveTime(1200));
+      AddObjective(new ObjectiveLegendDead(LegendForsaken.Scholomance));
       ResearchId = FourCC("R074");
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())

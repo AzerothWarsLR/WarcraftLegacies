@@ -1,4 +1,4 @@
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using static War3Api.Common;
 
@@ -48,13 +48,13 @@ namespace WarcraftLegacies.Source.Setup
       Player(12).SetTeam(TeamSetup.Alliance);
       
       Player(13).SetFaction(DraeneiSetup.Draenei);
-      Player(13).SetTeam(TeamSetup.NightElves);
+      Player(13).SetTeam(TeamSetup.Draenei);
 
       Player(15).SetFaction(IllidanSetup.Illidan);
       Player(15).SetTeam(TeamSetup.NightElves);
 
       Player(16).SetFaction(DragonmawSetup.Dragonmaw);
-      Player(16).SetTeam(TeamSetup.Horde);
+      Player(16).SetTeam(TeamSetup.Dragonmaw);
       
       Player(17).SetFaction(ZandalarSetup.Zandalar);
       Player(17).SetTeam(TeamSetup.Horde);

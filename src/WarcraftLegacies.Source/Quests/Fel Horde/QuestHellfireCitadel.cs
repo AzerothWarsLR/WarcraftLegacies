@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
 
     //Todo: mediocre flavour
     public QuestHellfireCitadel(Rectangle rescueRect, List<unit> demonGates, IEnumerable<QuestData> prerequisites) : base("The Citadel",
-      "The clans holding Hellfire Citadel do not respect Kargath authority yet, destroy Murmur to finally establish Magtheridon as the undisputable king of Outland",
+      "The clans holding Hellfire Citadel do not respect Magtheridon's authority yet, capture a large part of Outland to finally establish Magtheridon as the undisputable king of Outland",
       "ReplaceableTextures\\CommandButtons\\BTNFelOrcFortress.blp")
     {
       _demonGates = demonGates;
