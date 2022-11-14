@@ -32,7 +32,6 @@ namespace MacroTools.Spells
           var summonX = MathEx.GetPolarOffsetX(casterX, Radius, angle);
           var summonY = MathEx.GetPolarOffsetY(casterY, Radius, angle);
           var summonFacing = MathEx.GetAngleBetweenPoints(summonX, summonY, casterX, casterY);
-          Console.WriteLine(summonFacing);
           var summonedUnit = CreateUnit(GetOwningPlayer(caster), SummonUnitTypeId, summonX, summonY, summonFacing);
           UnitApplyTimedLife(summonedUnit, 0, Duration);
           UnitAddType(summonedUnit, UNIT_TYPE_SUMMONED);

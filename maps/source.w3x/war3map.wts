@@ -3876,6 +3876,12 @@ STRING 647
 W
 }
 
+STRING 648
+// Units: o05J (Red Dragon Hatchery), Ubertip (Tooltip - Extended)
+{
+Dragon Hatchery for the Dragonmaw Clan.|n|cfff5962dTrains:|R Dragon Whelp, Dragon Rider, Ancient Red Dragon
+}
+
 STRING 649
 // Units: nndr (Nether Dragon), Ubertip (Tooltip - Extended)
 {
@@ -17843,6 +17849,12 @@ STRING 2975
 Freshly knighted Outrider of Arathor.|n|cfff5962dAbilities:|R Charge, War Plating, Trample |n|n|cffffcc00Attacks land units.|r
 }
 
+STRING 2976
+// Units: ogre (Great Hall), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon
+}
+
 STRING 2977
 // Units: h053 (Construction Site), Name (Name)
 {
@@ -20948,10 +20960,40 @@ STRING 3493
 Scarlet Monastery
 }
 
+STRING 3494
+// Units: o03L (Great Hall), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon
+}
+
+STRING 3495
+// Units: o065 (Fortress), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon, Battlemaster
+}
+
 STRING 3496
 // Units: h04Z (Kezan Oil Supply), EditorSuffix (Name - Editor Suffix)
 {
  (Goblin)
+}
+
+STRING 3497
+// Units: o067 (War Camp), Ubertip (Tooltip - Extended)
+{
+Camp of the crazed Twilight Hammer warriors.|n|cfff5962dTrains:|R Warrior, Spearthrower, Skull Catapult
+}
+
+STRING 3498
+// Units: o069 (Dark Conclave), Ubertip (Tooltip - Extended)
+{
+Grim gathering of the Dragonmaw masters of the Dark Arts.|n|cfff5962dTrains:|R Herald, Magi, Death Knight|n|cfff5962dResearches:|R Magi Training, Herald Training
+}
+
+STRING 3499
+// Units: o06B (High Watchtower), Ubertip (Tooltip - Extended)
+{
+Watch Towers of the Dragonmaw Clan.|n|cfff5962dCan learn:|R Spiked Barricades|n|cfff5962dUpgrades Into:|R Improved High Watchtower|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 3500
@@ -20964,6 +21006,12 @@ STRING 3501
 // Units: nogn (Warlock), Ubertip (Tooltip - Extended)
 {
 Dark art mage of the horde.|n|cfff5962dAbilities:|R Firebolt|n|cfff5962dCan Learn:|R Frenzy, Soulburn |n|n|cffd5d500Attacks land and air units.|r
+}
+
+STRING 3502
+// Units: o066 (Altar of Dragons), Tip (Tooltip - Basic)
+{
+Build Altar of Dragons
 }
 
 STRING 3503
@@ -21028,7 +21076,7 @@ Primary structure, used to train workers and gather resources.|n|cfff5962dTrains
 }
 
 STRING 3513
-// Units: ogre (Great Hall), Ubertip (Tooltip - Extended)
+// Units: o05R (Murloc Gathering), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon
 }
@@ -39820,12 +39868,6 @@ STRING 6654
 W
 }
 
-STRING 6655
-// Units: o069 (Dark Conclave), Ubertip (Tooltip - Extended)
-{
-Grim gathering of the Twilight Hammer occultist.|n|cfff5962dTrains:|R Herald, Magi, Death Knight|n|cfff5962dResearches:|R Magi Training, Herald Training
-}
-
 STRING 6656
 // Abilities: A01J (Inferno Strike), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -41534,12 +41576,6 @@ STRING 6940
 // Units: n0AV (Altar of Madness), Name (Name)
 {
 Altar of Madness
-}
-
-STRING 6941
-// Units: o066 (Altar of Dragons), Tip (Tooltip - Basic)
-{
-Build Altar of Madness
 }
 
 STRING 6942
@@ -96228,7 +96264,7 @@ STRING 16080
 }
 
 STRING 16081
-// Units: o03L (Great Hall), Ubertip (Tooltip - Extended)
+// Units: o05T (Gnoll Kennel), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon
 }
@@ -99925,12 +99961,6 @@ STRING 16708
 Warrior hero, adept at melee combat and bolstering nearby allies.|n|cfff5962dAbilities:|r Critical Strike|n|cfff5962dCan Learn:|R White Wolf's Fury, Goldrinn's Howl, Vampiric Aura, Reincarnation|n|n|cffffcc00Attacks land units.|R
 }
 
-STRING 16709
-// Units: o063 (Great Hall), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Cultist
-}
-
 STRING 16710
 // Abilities: A0RX (Raise Plaguelings), Researchhotkey (Hotkey - Learn)
 {
@@ -99941,24 +99971,6 @@ STRING 16711
 // Abilities: A0RZ (Arcane Bomb), Hotkey (Hotkey - Normal)
 {
 E
-}
-
-STRING 16712
-// Units: o064 (Stronghold), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Cultist
-}
-
-STRING 16713
-// Units: o065 (Fortress), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Cultist, Battlemaster
-}
-
-STRING 16714
-// Units: o067 (War Camp), Ubertip (Tooltip - Extended)
-{
-Camp of the crazed Twilight Hammer warriors.|n|cfff5962dTrains:|R Twilight Enforcer, Phase Grenadier, Skull Catapult
 }
 
 STRING 16715
@@ -99983,12 +99995,6 @@ STRING 16718
 // Units: o04I (Battlemaster), Ubertip (Tooltip - Extended)
 {
 Powerful Ogre that follows the Twilight Hammer.|n|cfff5962dAbilities:|R Avatar, Shockwave, Pulverise, Self-Bloodlust|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
-}
-
-STRING 16719
-// Units: o06B (High Watchtower), Ubertip (Tooltip - Extended)
-{
-Grim Towers of the Twilight Hammer.|n|cfff5962dCan learn:|R Spiked Barricades|n|cfff5962dUpgrades Into:|R Improved Twilight lookout|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 16720
@@ -104550,12 +104556,6 @@ STRING 17480
 // Upgrades: R08C (Chaos), Name (Name)
 {
 Turn 10 has passed
-}
-
-STRING 17481
-// Units: o05J (Red Dragon Hatchery), Ubertip (Tooltip - Extended)
-{
-Dragon Hatchery for the Dragonmaw Clan.|n|cfff5962dTrains:|R Twilight Dragonspawn, Void Rider, Nether Dragon
 }
 
 STRING 17482
@@ -114504,7 +114504,7 @@ Mercenaries Tavern 1
 }
 
 STRING 19178
-// Units: o05R (Murloc Gathering), Ubertip (Tooltip - Extended)
+// Units: o05U (Defias Hideout), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon
 }
@@ -114593,7 +114593,7 @@ STRING 19192
 }
 
 STRING 19193
-// Units: o05T (Gnoll Kennel), Ubertip (Tooltip - Extended)
+// Units: o063 (Great Hall), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon
 }
@@ -114623,7 +114623,7 @@ STRING 19197
 }
 
 STRING 19198
-// Units: o05U (Defias Hideout), Ubertip (Tooltip - Extended)
+// Units: o064 (Stronghold), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon
 }

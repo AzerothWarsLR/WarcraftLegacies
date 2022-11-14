@@ -25,19 +25,19 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingLumber = 350
       };
 
-      Dragonmaw.ModObjectLimit(FourCC("o039"), Faction.UNLIMITED); //Great Hall
-      Dragonmaw.ModObjectLimit(FourCC("o03A"), Faction.UNLIMITED); //Stronghold
-      Dragonmaw.ModObjectLimit(FourCC("o03B"), Faction.UNLIMITED); //Fortress
-      Dragonmaw.ModObjectLimit(FourCC("o03C"), Faction.UNLIMITED); //Altar of Storms
-      Dragonmaw.ModObjectLimit(FourCC("o03D"), Faction.UNLIMITED); //Barracks
-      Dragonmaw.ModObjectLimit(FourCC("o03J"), Faction.UNLIMITED); //War Mill
-      Dragonmaw.ModObjectLimit(FourCC("o03E"), Faction.UNLIMITED); //Spirit Lodge
+      Dragonmaw.ModObjectLimit(FourCC("o063"), Faction.UNLIMITED); //Great Hall
+      Dragonmaw.ModObjectLimit(FourCC("o064"), Faction.UNLIMITED); //Stronghold
+      Dragonmaw.ModObjectLimit(FourCC("o065"), Faction.UNLIMITED); //Fortress
+      Dragonmaw.ModObjectLimit(FourCC("o066"), Faction.UNLIMITED); //Altar of Storms
+      Dragonmaw.ModObjectLimit(FourCC("o067"), Faction.UNLIMITED); //Barracks
+      Dragonmaw.ModObjectLimit(FourCC("o068"), Faction.UNLIMITED); //War Mill
+      Dragonmaw.ModObjectLimit(FourCC("o069"), Faction.UNLIMITED); //Spirit Lodge
       Dragonmaw.ModObjectLimit(FourCC("o05J"), Faction.UNLIMITED); //Bestiary
-      Dragonmaw.ModObjectLimit(FourCC("o03I"), Faction.UNLIMITED); //Shipyard
-      Dragonmaw.ModObjectLimit(FourCC("o03G"), Faction.UNLIMITED); //Watch Tower
-      Dragonmaw.ModObjectLimit(FourCC("o03H"), Faction.UNLIMITED); //Improved Watch Tower
-      Dragonmaw.ModObjectLimit(FourCC("u00Y"), Faction.UNLIMITED); //Shop
-      Dragonmaw.ModObjectLimit(FourCC("o03K"), Faction.UNLIMITED); //Burrow
+      Dragonmaw.ModObjectLimit(FourCC("o06D"), Faction.UNLIMITED); //Shipyard
+      Dragonmaw.ModObjectLimit(FourCC("o06B"), Faction.UNLIMITED); //Watch Tower
+      Dragonmaw.ModObjectLimit(FourCC("o06A"), Faction.UNLIMITED); //Improved Watch Tower
+      Dragonmaw.ModObjectLimit(FourCC("u02N"), Faction.UNLIMITED); //Shop
+      Dragonmaw.ModObjectLimit(FourCC("o06C"), Faction.UNLIMITED); //Burrow
 
       Dragonmaw.ModObjectLimit(FourCC("n0CP"), 2); //Black Drake
       Dragonmaw.ModObjectLimit(FourCC("o05M"), 8); //WindRider
