@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
@@ -11,6 +12,28 @@ namespace MacroTools.Extensions
   /// </summary>
   public static class RectangleExtensions
   {
+    /// <summary>
+    /// The mode to use when rescuing group of nuetral passive units in the region
+    /// </summary>
+    public enum RescueMode
+    {
+      /// <summary>
+      /// Just return the group of nuetral passive units.
+      /// </summary>
+      Group,
+      /// <summary>
+      /// Return the group of nuetral passive units and set them to be invulnerable.
+      /// </summary>
+      Invulnerable,
+      /// <summary>
+      /// Return the group of nuetral passive units and set them to be invulnerable and hide the units.
+      /// </summary>
+      HideUnits,
+      /// <summary>
+      /// Return the group of nuetral passive units and set them to be invulnerable, hide the units, and hide structures.
+      /// </summary>
+      HideStructures
+    }
     /// <summary>
     /// Causes the provided sound to be played as ambience whenever a player has their camera near this <see cref="Rectangle"/>.
     /// </summary>
@@ -27,7 +50,7 @@ namespace MacroTools.Extensions
     /// </summary>
     /// <param name="area">The area in which to get the group of units.</param>
     /// <returns>A list of all units found in the specified area</returns>
-    public static List<unit> PrepareUnitsForRescue(this Rectangle area)
+    private static List<unit> PrepareUnitsForRescue(this Rectangle area)
     {
       var group = new GroupWrapper()
         .EnumUnitsInRect(area)
@@ -36,12 +59,43 @@ namespace MacroTools.Extensions
     }
     
     /// <summary>
+    /// Creates a group of units inside the specified <paramref name="area"/> that belong to the neutral passive player.
+    /// </summary>
+    /// <param name="area">The area in which to get the group of units.</param>
+    /// <param name="rescueMode">Set the <see cref="RescueMode"/> to use</param>
+    /// <returns>A list of all units found in the specified area that belong to the neutral passive player.</returns>
+    public static List<unit> PrepareUnitsForRescue(this Rectangle area, RescueMode rescueMode)
+    {
+      switch(rescueMode)
+      {
+        case RescueMode.Group:
+        {
+          return PrepareUnitsForRescue(area, Player(PLAYER_NEUTRAL_PASSIVE));
+        }
+        case RescueMode.Invulnerable:
+        {
+          return PrepareUnitsForRescue(area, Player(PLAYER_NEUTRAL_PASSIVE),true);
+        }
+        case RescueMode.HideUnits:
+        {
+          return PrepareUnitsForRescue(area, Player(PLAYER_NEUTRAL_PASSIVE),true,true);
+        }
+        case RescueMode.HideStructures:
+        {
+          return PrepareUnitsForRescue(area, Player(PLAYER_NEUTRAL_PASSIVE),true,true,true);
+        }
+        default:
+          return PrepareUnitsForRescue(area, Player(PLAYER_NEUTRAL_PASSIVE),true);;
+      }
+    }
+    
+    /// <summary>
     /// Creates a group of units inside the specified <paramref name="area"/> that belong to <paramref name="owningUnitsPlayer"/>.
     /// </summary>
-    /// <param name="area">The area in which to make units invulnerable.</param>
-    /// <param name="owningUnitsPlayer">Only units owned by this player will be made invulnerable.</param>
+    /// <param name="area">The area in which to get the group of units.</param>
+    /// <param name="owningUnitsPlayer">Only units owned by this player will be selected.</param>
     /// <returns>A list of all units found in the specified area that belong to <paramref name="owningUnitsPlayer"/>.</returns>
-    public static List<unit> PrepareUnitsForRescue(this Rectangle area,player owningUnitsPlayer)
+    private static List<unit> PrepareUnitsForRescue(this Rectangle area, player owningUnitsPlayer)
     {
       var group = PrepareUnitsForRescue(area)
         .Where(x => x.OwningPlayer() == owningUnitsPlayer)
@@ -53,10 +107,10 @@ namespace MacroTools.Extensions
     /// Renders all units inside the specified <paramref name="area"/> that belong to <paramref name="owningUnitsPlayer"/> invulnerable.
     /// </summary>
     /// <param name="area">The area in which to make units invulnerable.</param>
-    /// <param name="owningUnitsPlayer">Only units owned by this player will be made invulnerable.</param>
+    /// <param name="owningUnitsPlayer">Only units owned by this player will be selected.</param>
     /// <param name="invulnerable">Flag for if units should be made invulnerable</param>
     /// <returns>A list of all units found in the specified area that belong to <paramref name="owningUnitsPlayer"/>.</returns>
-    public static List<unit> PrepareUnitsForRescue(this Rectangle area, player owningUnitsPlayer, bool invulnerable)
+    private static List<unit> PrepareUnitsForRescue(this Rectangle area, player owningUnitsPlayer, bool invulnerable)
     {
       var group = PrepareUnitsForRescue(area, owningUnitsPlayer);
       if (!invulnerable) return group;
@@ -70,12 +124,12 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Renders all units inside the specified <paramref name="area"/> that belong to <paramref name="owningUnitsPlayer"/> invulnerable.
     /// </summary>
-    /// <param name="area">The area in which to make units invulnerable.</param>
-    /// <param name="owningUnitsPlayer">Only units owned by this player will be made invulnerable.</param>
+    /// <param name="area">The area in which to get the group of units.</param>
+    /// <param name="owningUnitsPlayer">Only units owned by this player will be selected.</param>
     /// <param name="invulnerable">Flag for if units should be made invulnerable</param>
     /// <param name="hideUnits">Flag for if units should be hidden</param>
     /// <returns>A list of all units found in the specified area that belong to <paramref name="owningUnitsPlayer"/>.</returns>
-    public static List<unit> PrepareUnitsForRescue(this Rectangle area, player owningUnitsPlayer, bool invulnerable, bool hideUnits)
+    private static List<unit> PrepareUnitsForRescue(this Rectangle area, player owningUnitsPlayer, bool invulnerable, bool hideUnits)
     {
       var group = PrepareUnitsForRescue(area, owningUnitsPlayer);
       foreach (var unit in group)
@@ -91,13 +145,13 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Renders all units inside the specified <paramref name="area"/> that belong to <paramref name="owningUnitsPlayer"/> invulnerable.
     /// </summary>
-    /// <param name="area">The area in which to make units invulnerable.</param>
-    /// <param name="owningUnitsPlayer">Only units owned by this player will be made invulnerable.</param>
+    /// <param name="area">The area in which to get the group of units.</param>
+    /// <param name="owningUnitsPlayer">Only units owned by this player will be selected.</param>
     /// <param name="invulnerable">Flag for if units should be made invulnerable</param>
     /// <param name="hideUnits">Flag for if units should be hidden</param>
-    /// <param name="hideStructures">Flag for if structures should be hidden. Wont hide control points.</param>
+    /// <param name="hideStructures">Flag for if structures should be hidden. Won't hide control points.</param>
     /// <returns>A list of all units found in the specified area that belong to <paramref name="owningUnitsPlayer"/>.</returns>
-    public static List<unit> PrepareUnitsForRescue(this Rectangle area, player owningUnitsPlayer, bool invulnerable, bool hideUnits, bool hideStructures)
+    private static List<unit> PrepareUnitsForRescue(this Rectangle area, player owningUnitsPlayer, bool invulnerable, bool hideUnits, bool hideStructures)
     {
       var group = PrepareUnitsForRescue(area, owningUnitsPlayer);
       foreach (var unit in group)
