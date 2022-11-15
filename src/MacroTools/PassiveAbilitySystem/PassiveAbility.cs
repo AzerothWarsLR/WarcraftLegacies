@@ -72,7 +72,13 @@ namespace MacroTools.PassiveAbilitySystem
     /// </summary>
     public virtual void OnTrainedUnit()
     {
-      
+    }
+
+    /// <summary>
+    /// Fired when the unit is issued a point order.
+    /// </summary>
+    public virtual void OnOrderIssued()
+    {
     }
   }
 }

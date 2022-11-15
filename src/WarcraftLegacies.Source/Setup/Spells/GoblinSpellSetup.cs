@@ -2,12 +2,19 @@
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Mechanics.Goblins;
+using WarcraftLegacies.Source.Setup.FactionSetup;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
+  /// <summary>
+  /// Responsible for setting up all <see cref="GoblinSetup.Goblin"/> related <see cref="Spell"/>s and <see cref="PassiveAbility"/>s.
+  /// </summary>
   public static class GoblinSpellSetup
   {
+    /// <summary>
+    /// Sets up all <see cref="GoblinSetup.Goblin"/> related <see cref="Spell"/>s and <see cref="PassiveAbility"/>s.
+    /// </summary>
     public static void Setup()
     {
       var zeppelinTradeTargets = new[]
@@ -27,10 +34,10 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       PassiveAbilityManager.Register(new Trader(Constants.UNIT_O04S_TRADER_GOBLIN, 40, 0, traderTradeTargets));
 
-      var nuclearLaunch = new NuclearLaunch(Constants.ABILITY_A0RH_INTERCONTINENTAL_BOMBARDMENT_GOBLIN_ARTILLERY,
-        @"war3mapImported/NuclearLaunchDetected.mp3", Constants.UNIT_H06L_DUMMY_NUKE_WARNING,
-        Constants.UNIT_H050_DUMMY_NUKE_LEFTOVER, 25);
-      SpellSystem.Register(nuclearLaunch);
+      SpellSystem.Register(new NuclearLaunch(Constants.ABILITY_A0RH_INTERCONTINENTAL_BOMBARDMENT_GOBLIN_ARTILLERY, 25));
+
+      PassiveAbilityManager.Register(new NuclearLaunchWarning(Constants.UNIT_H011_INTERCONTINENTAL_ARTILLERY_GOBLIN,
+        Constants.UNIT_H06L_DUMMY_NUKE_WARNING, @"war3mapImported/NuclearLaunchDetected.mp3", 25));
 
       var artillerySpeedMult =
         new AnimationSpeedMultiplier(Constants.UNIT_H011_INTERCONTINENTAL_ARTILLERY_GOBLIN, 0.4f);
