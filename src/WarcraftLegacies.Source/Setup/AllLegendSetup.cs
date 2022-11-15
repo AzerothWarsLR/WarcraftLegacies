@@ -28,6 +28,7 @@ namespace WarcraftLegacies.Source.Setup
       LegendTroll.Setup();
       LegendTwilight.Setup();
       LegendWarsong.Setup();
+      LegendDragonmaw.Setup();
     }
   }
 }

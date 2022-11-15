@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       "The Wildhammer dwarves roam freely over the peaks of the Hinterlands. Defeating their mortal enemy, the Dragonmaw clan, might earn their cooperation.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroGriffonWarrior.blp")
     {
-      AddObjective(new ObjectiveLegendDead(LegendDragonmaw.LegendDragonmawPort));
+      AddObjective(new ObjectiveLegendDead(LegendDragonmaw.DragonmawPort));
       AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendGrimbatol, false));
       ResearchId = FourCC("R01C");
     }
