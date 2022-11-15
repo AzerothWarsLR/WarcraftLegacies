@@ -4,7 +4,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -47,12 +46,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       _goldmine.Show(false);
       _demonGate.SetInvulnerable(true);
 
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          SetUnitInvulnerable(unit, true);
-          _rescueUnits.Add(unit);
-        }
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE),true,true);
       LegendExodarship.Unit?.SetInvulnerable(true);
     }
 
@@ -67,7 +61,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
       _demonGate.Kill();
     }
 
@@ -75,13 +69,12 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     protected override void OnComplete(Faction completingFaction)
     {
       var rewardPlayer = completingFaction.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE);
-      foreach (var unit in _rescueUnits) 
-        unit.Rescue(rewardPlayer);
+      rewardPlayer.RescueGroup(_rescueUnits);
       _kilsorrowFortress.Rescue(rewardPlayer);
       _demonGate.Rescue(rewardPlayer);
       _goldmine.Show(true);
       LegendBlacktemple.Unit?.Rescue(rewardPlayer);
-      LegendExodar.Unit?.SetInvulnerable(false);
+      LegendExodarship.Unit?.SetInvulnerable(false);
       if (LegendBlacktemple.Unit != null)
         LegendMagtheridon.AddUnitDependency(LegendBlacktemple.Unit);
     }

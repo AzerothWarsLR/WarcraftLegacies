@@ -95,7 +95,7 @@ namespace MacroTools.Extensions
     /// <param name="owningUnitsPlayer">Only units owned by this player will be made invulnerable.</param>
     /// <param name="invulnerable">Flag for if units should be made invulnerable</param>
     /// <param name="hideUnits">Flag for if units should be hidden</param>
-    /// <param name="hideStructures">Flag for if structures should be hidden</param>
+    /// <param name="hideStructures">Flag for if structures should be hidden. Wont hide control points.</param>
     /// <returns>A list of all units found in the specified area that belong to <paramref name="owningUnitsPlayer"/>.</returns>
     public static List<unit> PrepareUnitsForRescue(this Rectangle area, player owningUnitsPlayer, bool invulnerable, bool hideUnits, bool hideStructures)
     {
@@ -104,7 +104,7 @@ namespace MacroTools.Extensions
       {
         if (invulnerable)
           unit.SetInvulnerable(true);
-        if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideStructures)
+        if ((IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideStructures) && !IsUnitType(unit, UNIT_TYPE_ANCIENT))
           unit.Show(false);
         if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideUnits)
           unit.Show(false);

@@ -61,7 +61,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     protected override void OnComplete(Faction completingFaction)
     {
       //Transfer control of all passive units on island and teleport all Frostwolf units to shore
-      var rescueCairneUnits = Regions.CairneStart.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE),true);
+      var rescueCairneUnits = Regions.CairneStart.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE),true,true);
       FrostwolfSetup.Frostwolf.Player.RescueGroup(rescueCairneUnits);
       FrostwolfSetup.Frostwolf.Player.RescueGroup(_rescueDarkspearUnits);
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(Regions.Darkspear_Island.Rect).EmptyToList())
