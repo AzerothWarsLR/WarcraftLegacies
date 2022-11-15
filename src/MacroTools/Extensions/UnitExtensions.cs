@@ -13,6 +13,41 @@ namespace MacroTools.Extensions
     private const float HeroDropDist = 50; //The radius in which heroes spread out items when they drop them
 
     /// <summary>
+    /// Gets the unit's unit level if it's a unit, or hero level if it's a hero.
+    /// </summary>
+    public static int GetLevel(this unit whichUnit) =>
+      IsUnitType(whichUnit, UNIT_TYPE_HERO) ? GetHeroLevel(whichUnit) : GetUnitLevel(whichUnit);
+
+    /// <summary>
+    /// Changes the unit's colour to the specified values.
+    /// <para>255 is full, 0 is empty.</para>
+    /// </summary>
+    /// <returns>The same unit that was passed in.</returns>
+    public static unit SetColor(this unit whichUnit, int red, int green, int blue, int alpha)
+    {
+      SetUnitVertexColor(whichUnit, red, green, blue, alpha);
+      return whichUnit;
+    }
+    
+    /// <summary>
+    /// Causes the unit to die after the specified duration, like a summoned unit.
+    /// </summary>
+    /// <param name="whichUnit">The unit to affect.</param>
+    /// <param name="duration">How long the unit should last.</param>
+    /// <param name="buffId">This buff's name is placed on the unit's timed life progress bar.</param>
+    /// <returns></returns>
+    public static unit SetTimedLife(this unit whichUnit, float duration, int buffId = 0)
+    {
+      UnitApplyTimedLife(whichUnit, buffId, duration);
+      return whichUnit;
+    }
+    
+    /// <summary>
+    /// Gets the unit's type ID as shown in the object editor.
+    /// </summary>
+    public static int GetTypeId(this unit whichUnit) => GetUnitTypeId(whichUnit);
+
+    /// <summary>
     /// Sets the unit's animation speed.
     /// </summary>
     /// <param name="whichUnit">The unit to set animation speed for.</param>

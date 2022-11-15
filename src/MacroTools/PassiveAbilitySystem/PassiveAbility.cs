@@ -37,6 +37,13 @@ namespace MacroTools.PassiveAbilitySystem
     public virtual void OnUpgrade()
     {
     }
+    
+    /// <summary>
+    /// Fired when the unit dies.
+    /// </summary>
+    public virtual void OnDeath()
+    {
+    }
 
     /// <summary>
     /// Fired when a unit of the matching unit type finishes being constructed.
