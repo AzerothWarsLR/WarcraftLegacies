@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -8,14 +8,14 @@ using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.Quests.Twilight
+namespace WarcraftLegacies.Source.Quests.Dragonmaw
 {
   public sealed class QuestDragonmawPort : QuestData
   {
     private readonly List<unit> _rescueUnits = new();
 
     public QuestDragonmawPort(Rectangle rescueRect) : base("Dragonmaw Port",
-      "The Dragonmaw Port will be the perfect staging ground of the invasion of Azeroth",
+      "The Dragonmaw Port will be the site of the portal summoning to escape to kalimdor! ",
       "ReplaceableTextures\\CommandButtons\\BTNIronHordeSummoningCircle.blp")
     {
       AddObjective(
@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Twilight
 
     //Todo: bad flavour
     protected override string CompletionPopup =>
-      "Dragonmaw Port has fallen under our control and its military is now free to assist the Twilight Clan.";
+      "Dragonmaw Port has fallen under our control.";
 
     protected override string RewardDescription => "Control of all buildings in Dragonmaw Port";
 

@@ -20,10 +20,12 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 
       if (dragonmaw != null)
       {
-        dragonmaw.StartingQuest = dragonmaw.AddQuest(new QuestOrgrimmarPortal(
+        dragonmaw.StartingQuest = dragonmaw.AddQuest(new QuestOrgrimmarPortal)
           PreplacedUnitSystem.GetDestructable(FourCC("ATg4"), new Point(17851.9f, -1816.1f)),
           PreplacedUnitSystem.GetUnit(Constants.UNIT_N07E_PORTAL_GREEN_NAZJATAR, Regions.OrgrimmarPortal.Center),
           PreplacedUnitSystem.GetUnit(Constants.UNIT_N07E_PORTAL_GREEN_NAZJATAR, Regions.DragonmawPortal.Center)));
+        dragonmaw.AddQuest(new QuestDragonmawPort());
+        dragonmaw.AddQuest(new QuestGrimBatol());
       }
     }
   }

@@ -75,6 +75,16 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(massFrostArmor);
 
+      var massUnholyArmor = new MassAnySpell(Constants.ABILITY_A0OJ_MASS_UNHOLY_ARMOR_DRAGONMAW_GORFAX)
+      {
+        DummyAbilityId = Constants.ABILITY_A0HG_UNHOLY_ARMOR_DRAGONMAW_GORFAX,
+        DummyAbilityOrderString = "innerfire",
+        Radius = 400,
+        CastFilter = CastFilters.IsTargetAllyAndAlive,
+        TargetType = SpellTargetType.Point
+      };
+      SpellSystem.Register(massUnholyArmor);
+
       var scattershot = new MassAnySpell(Constants.ABILITY_A0GP_SCATTERSHOT_KUL_TIRAS_LADY_ASHVANE)
       {
         DummyAbilityId = Constants.ABILITY_A0GL_SCATTERSHOT_KUL_TIRAS_LADY_ASHVANE_DUMMY,
