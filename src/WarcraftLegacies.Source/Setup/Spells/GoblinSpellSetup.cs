@@ -43,6 +43,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_H091_WAR_ZEPPELIN_GOBLIN));
       PassiveAbilityManager.Register(new OilProducer(Constants.UNIT_O04R_OIL_PLATFORM_GOBLIN, 11.5f));
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_H04Z_KEZAN_OIL_SUPPLY_GOBLIN));
+      PassiveAbilityManager.Register(new OilUser(Constants.UNIT_NTIN_CHIEF_ENGINEER_GOBLIN));
       PassiveAbilityManager.Register(new OilRigConstructor(Constants.UNIT_N0AQ_OIL_RIG_WARSONG, new[]
       {
         Regions.OilRig1.Center, 
@@ -52,6 +53,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Regions.OilRig5.Center,
         Regions.OilRig6.Center
       }));
+      
     }
   }
 }
