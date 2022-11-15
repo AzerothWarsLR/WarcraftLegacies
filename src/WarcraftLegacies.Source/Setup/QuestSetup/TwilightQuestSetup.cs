@@ -1,5 +1,6 @@
 using MacroTools;
 using MacroTools.Mechanics.TwilightHammer;
+using WarcraftLegacies.Source.Quests.Dragonmaw;
 using WarcraftLegacies.Source.Quests.Twilight;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
