@@ -31,8 +31,8 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       AddObjective(new ObjectiveKillUnit(LegendNeutral.LegendSeawitch.Unit));
       AddObjective(new ObjectiveExpire(600));
       ResearchId = FourCC("R05H");
-      _rescueEchoUnits = rescueRect.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE));
-      _rescueDarkspearUnits = Regions.Thrall_Landing1.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE));
+      _rescueEchoUnits = rescueRect.PrepareUnitsForRescue(RectangleExtensions.RescueMode.HideUnits);
+      _rescueDarkspearUnits = Regions.Thrall_Landing1.PrepareUnitsForRescue(RectangleExtensions.RescueMode.Invulnerable);
       _rescueTrigger = CreateTrigger()
         .RegisterEnterRegion(Regions.Thrall_Landing1)
         .AddAction(() =>
@@ -61,7 +61,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     protected override void OnComplete(Faction completingFaction)
     {
       //Transfer control of all passive units on island and teleport all Frostwolf units to shore
-      var rescueCairneUnits = Regions.CairneStart.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE));
+      var rescueCairneUnits = Regions.CairneStart.PrepareUnitsForRescue(RectangleExtensions.RescueMode.HideUnits);
       FrostwolfSetup.Frostwolf.Player.RescueGroup(rescueCairneUnits);
       FrostwolfSetup.Frostwolf.Player.RescueGroup(_rescueDarkspearUnits);
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(Regions.Darkspear_Island.Rect).EmptyToList())

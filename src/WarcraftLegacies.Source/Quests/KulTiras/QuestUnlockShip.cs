@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendDazaralor, false));
       AddObjective(new ObjectiveControlLegend(LegendKultiras.LegendBoralus, true));
       _proudmooreCapitalShip = proudmooreCapitalShip;
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE));
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RectangleExtensions.RescueMode.HideUnits);
       _rescueRect = rescueRect;
     }
 

@@ -21,7 +21,7 @@ namespace MacroTools.UserInterface
 
     private const float WidthFaction = 0.08f;
     private const float WidthCp = 0.02f;
-    private const float WidthIncome = 0.02f;
+    private const float WidthIncome = 0.022f;
     private const float WidthTeam = WidthFaction + WidthCp + WidthIncome;
     
     private static bool _initialized;

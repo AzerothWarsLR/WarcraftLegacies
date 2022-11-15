@@ -9,7 +9,7 @@ using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.Quests.Twilight
+namespace WarcraftLegacies.Source.Quests.Dragonmaw
 {
   public sealed class QuestGrimBatol : QuestData
   {
