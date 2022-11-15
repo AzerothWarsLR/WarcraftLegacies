@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       _baseName = baseName;
       AddObjective(new ObjectiveAnyUnitInRect(baseRect, baseName, false));
       AddObjective(new ObjectiveSelfExists());
-      _rescueUnits = baseRect.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE));
+      _rescueUnits = baseRect.PrepareUnitsForRescue(RectangleExtensions.RescueMode.Group);
       Required = true;
     }
 

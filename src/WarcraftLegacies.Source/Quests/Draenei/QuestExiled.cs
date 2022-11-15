@@ -6,7 +6,6 @@ using MacroTools.QuestSystem.UtilityStructs;
 using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
-using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Draenei
@@ -88,6 +87,12 @@ namespace WarcraftLegacies.Source.Quests.Draenei
         completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 200);
         completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 500);
         completingFaction.Player?.SetTeam(TeamSetup.NightElves);
+        if (!completingFaction.GetQuestByTitle("The Survivors of Shattrah").ProgressLocked) completingFaction.GetQuestByTitle("The Survivors of Shattrah").Progress = QuestProgress.Failed;
+        if (!completingFaction.GetQuestByTitle("Broken Civilisation").ProgressLocked) completingFaction.GetQuestByTitle("Broken Civilisation").Progress = QuestProgress.Failed;
+        if (!completingFaction.GetQuestByTitle("The Broken One").ProgressLocked) completingFaction.GetQuestByTitle("The Broken One").Progress = QuestProgress.Failed;
+        if (!completingFaction.GetQuestByTitle("Warn Halaar").ProgressLocked) completingFaction.GetQuestByTitle("Warn Halaar").Progress = QuestProgress.Failed;
+        if (!completingFaction.GetQuestByTitle("Warn Shattrah").ProgressLocked) completingFaction.GetQuestByTitle("Warn Shattrah").Progress = QuestProgress.Failed;
+        if (!completingFaction.GetQuestByTitle("Warn Farahlon").ProgressLocked) completingFaction.GetQuestByTitle("Warn Farahlon").Progress = QuestProgress.Failed;
         RemoveUnit(TheExodar);
       }
       
@@ -135,6 +140,8 @@ namespace WarcraftLegacies.Source.Quests.Draenei
           KillUnit(unit);
         else if (!IsUnitType(unit, UNIT_TYPE_ANCIENT)) 
           SetUnitPosition(unit, -21185, 8000);
+        else if (IsUnitType(unit, UNIT_TYPE_ANCIENT))
+          unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
     }
   }
