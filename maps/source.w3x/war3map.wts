@@ -1295,21 +1295,21 @@ Hurl a Dark Hammer towards an enemy unit, damaging them for 75 damage and stunni
 }
 
 STRING 216
-// Abilities: A05L (Rust Aura), Name (Name)
+// Units: h04Z (Kezan Oil Supply), Ubertip (Tooltip - Extended)
 {
-Rust Aura
+The oilstained crown of Kezan.
 }
 
 STRING 217
-// Abilities: A05L (Rust Aura), Tip (Tooltip - Normal)
+// Units: u028 (Transport Vehicle), Name (Name)
 {
-Rust Aura
+Transport Vehicle
 }
 
 STRING 218
-// Abilities: A05L (Rust Aura), Ubertip (Tooltip - Normal - Extended)
+// Units: u028 (Transport Vehicle), Tip (Tooltip - Basic)
 {
-The Plague construct emits horrifying gases of plague and death. Decreases the armour of nearby enemies by 3
+Build Transport Vehicle
 }
 
 STRING 219
@@ -1397,9 +1397,9 @@ Elite Commander of the Forsaken.|n|cfff5962dAbilities: |RCharge, Unholy Plating,
 }
 
 STRING 233
-// Units: n07W (Plague Construct), Ubertip (Tooltip - Extended)
+// Units: u028 (Transport Vehicle), Ubertip (Tooltip - Extended)
 {
-Heavy melee unit with Acid Blob, Rust Aura and Smoke Bomb. |n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
+Explosive transport vehicle.|n|cfff5962dAbilities:|R Explosion|n|n|cff99b4d1Can only build 2.
 }
 
 STRING 234
@@ -5445,7 +5445,7 @@ Q
 }
 
 STRING 909
-// Units: o06E (Dragonmaw Port), Name (Name)
+// Units: o06D (Dragonmaw Port), Name (Name)
 {
 Dragonmaw Port
 }
@@ -8166,12 +8166,6 @@ STRING 1361
 Go to Outland in search of new Masters.|n|n|cffeb5f2dYou will lose Sylvanas and Anasterian and gain a new base in Outland. You will join the Illidari team and leave the alliance|r
 }
 
-STRING 1362
-// Abilities: A0OJ (Fuel Refill), EditorSuffix (Editor Suffix)
-{
-(goblin Fuel Tank)
-}
-
 STRING 1363
 // Units: n065 (Green Dragon), EditorSuffix (Name - Editor Suffix)
 {
@@ -8194,12 +8188,6 @@ STRING 1366
 // Units: n0BE (Legion Nexus), Name (Name)
 {
 Legion Nexus
-}
-
-STRING 1367
-// Abilities: A0OJ (Fuel Refill), Name (Name)
-{
-Fuel Refill
 }
 
 STRING 1368
@@ -8758,12 +8746,6 @@ STRING 1460
 // Units: u00G (Legion Stronghold), Tip (Tooltip - Basic)
 {
 Legion Stronghold
-}
-
-STRING 1461
-// Abilities: A0OJ (Fuel Refill), Tip (Tooltip - Normal)
-{
-Fuel Refill
 }
 
 STRING 1462
@@ -16272,9 +16254,9 @@ A
 }
 
 STRING 2713
-// Units: u014 (Laboratory), Ubertip (Tooltip - Extended)
+// Abilities: A0MN (Oil Consumer), Ubertip (Tooltip - Normal - Extended)
 {
-Mad Laboratory for Plague experimentation.|n|cfff5962dTrains:|R Apothecary, Plague Catapult, Plague Construct|n|cfff5962dResearches:|R Apothecary Training
+This unit's abilities consume Oil instead of mana.
 }
 
 STRING 2714
@@ -17913,12 +17895,6 @@ STRING 2986
 // Units: h02S (Gates of Ahn'Qiraj), Ubertip (Tooltip - Extended)
 {
  
-}
-
-STRING 2987
-// Units: h04Z (Kezan Oil Supply), Ubertip (Tooltip - Extended)
-{
-The oilstained crown of Kezan.|nContains up to 200,000 units of Oil, which is required for your mechanized units to function on the battlefield.
 }
 
 STRING 2988
@@ -25707,7 +25683,7 @@ Gives bonus experience points.
 }
 
 STRING 4285
-// Units: n07W (Plague Construct), Hotkey (Hotkey)
+// Units: n07W (Plague Revenant), Hotkey (Hotkey)
 {
 E
 }
@@ -29663,7 +29639,7 @@ Causes this unit to shift out of existence whenever it takes damage, temporarily
 }
 
 STRING 4944
-// Units: u028 (Fuel Transport Vehicle), Hotkey (Hotkey)
+// Units: u028 (Transport Vehicle), Hotkey (Hotkey)
 {
 Q
 }
@@ -38729,7 +38705,7 @@ STRING 6454
 }
 
 STRING 6455
-// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: Robs (Brute Strength), Hotkey (Hotkey)
 {
 A
 }
@@ -40703,7 +40679,7 @@ Q
 }
 
 STRING 6784
-// Abilities: A05L (Rust Aura), EditorSuffix (Editor Suffix)
+// Upgrades: R050 (Defend), EditorSuffix (Editor Suffix)
 {
 (forsaken)
 }
@@ -40727,7 +40703,7 @@ Fires and arrow that stuns the target and does significant damage.|n|n|cffffcc00
 }
 
 STRING 6788
-// Upgrades: Robs (Brute Strength), Hotkey (Hotkey)
+// Upgrades: Rhar (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
@@ -51018,12 +50994,6 @@ STRING 8499
 A Close
 }
 
-STRING 8500
-// Abilities: A0FR (Transfer Fuel), Ubertip (Tooltip - Normal - Extended)
-{
-Replenish mana (fuel) of a target friendly mechanical unit. |n|nRestores 1 mana to the unit for every point of mana spent.
-}
-
 STRING 8501
 // Abilities: A0O0 (A Close), Ubertip (Tooltip - Normal - Extended)
 {
@@ -51034,12 +51004,6 @@ STRING 8502
 // Abilities: A0WE (Consecration), Hotkey (Hotkey - Normal)
 {
 Q
-}
-
-STRING 8503
-// Abilities: A0HG (Transfer Fuel), Ubertip (Tooltip - Normal - Extended)
-{
-Replenish mana (fuel) of a target friendly mechanical unit. |n|nRestores 1 mana to the unit for every point of mana spent.
 }
 
 STRING 8504
@@ -65300,7 +65264,7 @@ W
 }
 
 STRING 10880
-// Upgrades: R02K (Storm Hammers), effect1 (Effect 1)
+// Upgrades: R064 (Nature's Blessing), effect1 (Effect 1)
 {
 rhpx
 }
@@ -69709,6 +69673,12 @@ STRING 11614
 Learn Toughness - [|cffffcc00Level %d|r]
 }
 
+STRING 11615
+// Units: e01T (Coral of War), Ubertip (Tooltip - Extended)
+{
+Primary troop producing building.|n|cfff5962dTrains:|R Myrmidon, Snap Dragon, Dragon Turtles|n|cfff5962dResearches:|R |n|n|cffffcc00Attacks land units.|r
+}
+
 STRING 11616
 // Abilities: A066 (Toughness), Tip (Tooltip - Normal)
 {
@@ -69731,6 +69701,18 @@ STRING 11619
 // Abilities: A066 (Toughness), Tip (Tooltip - Normal)
 {
 Toughness - [|cffffcc00Level 4|r]
+}
+
+STRING 11620
+// Units: e01U (Coral of Lore), Ubertip (Tooltip - Extended)
+{
+Spellcaster producing building.|n|cfff5962dTrains:|R Siren, Shadowcaster|n|cfff5962dResearches:|R Sirene Adept Training, Shadowcaster Adept Training|n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 11621
+// Units: e01V (Coral of Wind), Ubertip (Tooltip - Extended)
+{
+Advanced unit production building, focuses on training aerial units.|n|cfff5962dTrains: |r Couatl, Scylla|n|cfff5962dResearches: |R|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 11622
@@ -75004,7 +74986,7 @@ STRING 12499
 }
 
 STRING 12500
-// Upgrades: Rhar (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: Rerh (Reinforced Hides,Improved Reinforced Hides,Advanced Reinforced Hides), Hotkey (Hotkey)
 {
 A
 }
@@ -77607,6 +77589,24 @@ STRING 12933
 E
 }
 
+STRING 12934
+// Units: n07H (Tradehouse), Ubertip (Tooltip - Extended)
+{
+A shop of purchasable items.
+}
+
+STRING 12935
+// Abilities: A0O3 (Dispel Magic), EditorSuffix (Editor Suffix)
+{
+(Shadowcaster)
+}
+
+STRING 12936
+// Abilities: A0NW (Dispel Magic), Ubertip (Tooltip - Normal - Extended)
+{
+Removes all buffs from units in a target area and deals <Adis,DataB1> damage to summoned units.|r
+}
+
 STRING 12937
 // Abilities: A00T (Fan of Knives), Hotkey (Hotkey - Normal)
 {
@@ -79669,6 +79669,18 @@ STRING 13280
 // Buffs/Effects: B06A (), EditorSuffix (Editor Suffix)
 {
 (human Bishop)
+}
+
+STRING 13281
+// Upgrades: Rnsw (Naga Siren Adept Training,Naga Siren Master Training), Ubertip (Tooltip - Extended)
+{
+Increases Naga Sirens' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Anti-magic Shell
+}
+
+STRING 13282
+// Upgrades: Rnsw (Naga Siren Adept Training,Naga Siren Master Training), Ubertip (Tooltip - Extended)
+{
+Increases Naga Sirens' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Parasite
 }
 
 STRING 13283
@@ -82984,13 +82996,13 @@ STRING 13834
 }
 
 STRING 13835
-// Upgrades: Rerh (Reinforced Hides,Improved Reinforced Hides,Advanced Reinforced Hides), Hotkey (Hotkey)
+// Upgrades: Remg (Upgrade Moon Glaive), Hotkey (Hotkey)
 {
 A
 }
 
 STRING 13836
-// Upgrades: Remg (Upgrade Moon Glaive), Hotkey (Hotkey)
+// Upgrades: R06I (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -83830,15 +83842,15 @@ Further increases the armor of all units.
 }
 
 STRING 13976
-// Upgrades: Rnsw (Naga Siren Adept Training,Naga Siren Master Training), Ubertip (Tooltip - Extended)
+// Abilities: A0MN (Oil Consumer), Name (Name)
 {
-Increases Naga Sirens' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Frost Armor.
+Oil Consumer
 }
 
 STRING 13977
-// Upgrades: Rnsw (Naga Siren Adept Training,Naga Siren Master Training), Ubertip (Tooltip - Extended)
+// Units: n07W (Plague Revenant), Name (Name)
 {
-Increases Naga Sirens' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Cyclone.
+Plague Revenant
 }
 
 STRING 13978
@@ -85060,7 +85072,7 @@ STRING 14180
 }
 
 STRING 14181
-// Upgrades: R050 (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R05C (Sorceress Adept Training,Sorceress Master Training), EditorSuffix (Editor Suffix)
 {
 (forsaken)
 }
@@ -85078,7 +85090,7 @@ rlev
 }
 
 STRING 14184
-// Upgrades: Rhss (Control Magic), Hotkey (Hotkey)
+// Upgrades: Rnsw (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -85204,7 +85216,7 @@ STRING 14204
 }
 
 STRING 14205
-// Upgrades: Rhpt (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: Rnsw (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -85306,7 +85318,7 @@ STRING 14221
 }
 
 STRING 14222
-// Upgrades: Rhpt (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: Rhss (Control Magic), Hotkey (Hotkey)
 {
 Z
 }
@@ -85336,7 +85348,7 @@ STRING 14226
 }
 
 STRING 14227
-// Upgrades: Rhhb (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: Rhpt (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -85450,7 +85462,7 @@ STRING 14245
 }
 
 STRING 14246
-// Upgrades: R064 (Nature's Blessing), effect1 (Effect 1)
+// Upgrades: R05X (Mark of the Claw), effect3 (Effect 3)
 {
 rhpx
 }
@@ -85564,7 +85576,7 @@ rarm
 }
 
 STRING 14265
-// Upgrades: R05X (Mark of the Claw), effect3 (Effect 3)
+// Upgrades: R056 (Chaos), effect1 (Effect 1)
 {
 rhpx
 }
@@ -85810,7 +85822,7 @@ Ironforge eliminated
 }
 
 STRING 14306
-// Upgrades: R056 (Chaos), effect1 (Effect 1)
+// Upgrades: R054 (Chaos), effect3 (Effect 3)
 {
 rhpx
 }
@@ -85852,7 +85864,7 @@ rmvx
 }
 
 STRING 14313
-// Upgrades: R054 (Chaos), effect3 (Effect 3)
+// Upgrades: R053 (Chaos), effect2 (Effect 2)
 {
 rhpx
 }
@@ -85882,7 +85894,7 @@ ratx
 }
 
 STRING 14318
-// Upgrades: R053 (Chaos), effect2 (Effect 2)
+// Upgrades: R04D (Magic Sentry), effect1 (Effect 1)
 {
 rhpx
 }
@@ -85954,7 +85966,7 @@ rlev
 }
 
 STRING 14330
-// Upgrades: Reuv (Ultravision), Hotkey (Hotkey)
+// Upgrades: Rhpt (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -86170,7 +86182,7 @@ STRING 14365
 }
 
 STRING 14366
-// Upgrades: R04D (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R02P (Backpack), effect1 (Effect 1)
 {
 rhpx
 }
@@ -86362,7 +86374,7 @@ STRING 14397
 }
 
 STRING 14398
-// Upgrades: Redt (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
+// Upgrades: Rhhb (Storm Hammers), Hotkey (Hotkey)
 {
 Z
 }
@@ -86434,7 +86446,7 @@ ratx
 }
 
 STRING 14410
-// Upgrades: Redt (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
+// Upgrades: Reuv (Ultravision), Hotkey (Hotkey)
 {
 Z
 }
@@ -86494,7 +86506,7 @@ STRING 14419
 }
 
 STRING 14420
-// Upgrades: Redc (Druid of the Claw Adept Training,Druid of the Claw Master Training), Hotkey (Hotkey)
+// Upgrades: Redt (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -86620,7 +86632,7 @@ rlev
 }
 
 STRING 14441
-// Upgrades: Redc (Druid of the Claw Adept Training,Druid of the Claw Master Training), Hotkey (Hotkey)
+// Upgrades: Redt (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -86812,13 +86824,13 @@ Q
 }
 
 STRING 14473
-// Upgrades: R06O (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: Redc (Druid of the Claw Adept Training,Druid of the Claw Master Training), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 14474
-// Upgrades: R06K (Defend), Hotkey (Hotkey)
+// Upgrades: Redc (Druid of the Claw Adept Training,Druid of the Claw Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -86926,7 +86938,7 @@ rlev
 }
 
 STRING 14492
-// Upgrades: R06G (Defend), Hotkey (Hotkey)
+// Upgrades: R06O (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -87178,7 +87190,7 @@ rlev
 }
 
 STRING 14534
-// Upgrades: R06F (Defend), Hotkey (Hotkey)
+// Upgrades: R06K (Defend), Hotkey (Hotkey)
 {
 Z
 }
@@ -87256,7 +87268,7 @@ STRING 14546
 }
 
 STRING 14547
-// Upgrades: R04V (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R06G (Defend), Hotkey (Hotkey)
 {
 Z
 }
@@ -87316,7 +87328,7 @@ Bombard
 }
 
 STRING 14557
-// Upgrades: R04F (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R06F (Defend), Hotkey (Hotkey)
 {
 Z
 }
@@ -87358,7 +87370,7 @@ rtma
 }
 
 STRING 14564
-// Upgrades: R04F (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R04V (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -87406,7 +87418,7 @@ rlev
 }
 
 STRING 14572
-// Upgrades: R03X (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R04F (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -87448,7 +87460,7 @@ Summon Fel Hound - [|cffffcc00Level 1|r]
 }
 
 STRING 14579
-// Upgrades: R03V (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R04F (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -87491,7 +87503,7 @@ rlev
 }
 
 STRING 14586
-// Upgrades: R03T (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R03X (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -87514,16 +87526,40 @@ STRING 14589
 - Increases the armor bonus on Clergymen's |cffcece00Inner Fire |rby 2.|n|n- Improves Chaplain's |cffcece00Renewal|r with an additional 200 health restored and increases it's cast range by 200.
 }
 
+STRING 14590
+// Abilities: A00A (Blink), Hotkey (Hotkey - Normal)
+{
+W
+}
+
 STRING 14591
-// Units: o06D (Dragonmaw Port), Name (Name)
+// Units: o06E (Dragonmaw Port), Name (Name)
 {
 Dragonmaw Port
+}
+
+STRING 14592
+// Upgrades: R03V (Magic Sentry), Hotkey (Hotkey)
+{
+Z
+}
+
+STRING 14593
+// Upgrades: R03T (Magic Sentry), Hotkey (Hotkey)
+{
+Z
 }
 
 STRING 14594
 // Units: h05J (Champion's Hall), Ubertip (Tooltip - Extended)
 {
 - Enables |cffcece00Devotion Aura |ron Stormwind Keep, Lakeshire, Darkshire, Netherguard Keep, Sentinel Tower, and Honor Hold which grants an additional 2 armor to units within 1200 range.|n|n- Contains research which improves the |cffcece00Bladesman|r, |cffcece00Outrider|r, |cffcece00Marshal|r, and |cffcece00Brigadier |runits.|n|n- Further research will unlock the |cffcece00Stormwind Knight|r or |cffcece00Marksman |runit, replacing Outriders or Spearmen.|n
+}
+
+STRING 14595
+// Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Ubertip (Tooltip - Extended)
+{
+Increases Shadowcasters' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Dispel Magic
 }
 
 STRING 14596
@@ -87593,7 +87629,7 @@ Increases Shadowpriests' mana capacity, mana regeneration rate, attack damage an
 }
 
 STRING 14607
-// Upgrades: R02P (Backpack), effect1 (Effect 1)
+// Upgrades: R020 (Defend), effect1 (Effect 1)
 {
 rhpx
 }
@@ -87676,6 +87712,18 @@ STRING 14620
 (Creep - Gilneas Big)
 }
 
+STRING 14621
+// Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Ubertip (Tooltip - Extended)
+{
+Increases Shadowcasters' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Healing Ward
+}
+
+STRING 14622
+// Upgrades: R04G (Magic Sentry), Hotkey (Hotkey)
+{
+X
+}
+
 STRING 14623
 // Units: h05A (Wizard's Sanctum), Ubertip (Tooltip - Extended)
 {
@@ -87695,13 +87743,13 @@ STRING 14625
 }
 
 STRING 14626
-// Upgrades: R04G (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R03Y (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 14627
-// Upgrades: R03Y (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R03W (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
@@ -87791,13 +87839,13 @@ STRING 14641
 }
 
 STRING 14642
-// Upgrades: R03W (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R03U (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 14643
-// Upgrades: R03U (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R03E (Defend), Hotkey (Hotkey)
 {
 X
 }
@@ -88007,13 +88055,13 @@ STRING 14677
 }
 
 STRING 14678
-// Upgrades: R03E (Defend), Hotkey (Hotkey)
+// Upgrades: R03D (Defend), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 14679
-// Upgrades: R03D (Defend), Hotkey (Hotkey)
+// Upgrades: R03B (Defend), Hotkey (Hotkey)
 {
 X
 }
@@ -88294,7 +88342,7 @@ STRING 14725
 }
 
 STRING 14726
-// Upgrades: R020 (Defend), effect1 (Effect 1)
+// Upgrades: R01N (Defend), effect2 (Effect 2)
 {
 rhpx
 }
@@ -88516,7 +88564,7 @@ STRING 14762
 }
 
 STRING 14763
-// Upgrades: R03B (Defend), Hotkey (Hotkey)
+// Upgrades: R031 (Defend), Hotkey (Hotkey)
 {
 X
 }
@@ -88624,7 +88672,7 @@ rlev
 }
 
 STRING 14781
-// Upgrades: R031 (Defend), Hotkey (Hotkey)
+// Upgrades: R02I (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -88648,7 +88696,7 @@ Further increases the armor of all Naval Units.
 }
 
 STRING 14785
-// Upgrades: R01N (Defend), effect2 (Effect 2)
+// Upgrades: R001 (Defend), effect1 (Effect 1)
 {
 rhpx
 }
@@ -88762,7 +88810,7 @@ STRING 14803
 }
 
 STRING 14804
-// Upgrades: R02I (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R02E (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -88894,7 +88942,7 @@ Research Fortified Hulls
 }
 
 STRING 14826
-// Upgrades: R02E (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R02B (Control Magic), Hotkey (Hotkey)
 {
 X
 }
@@ -88984,7 +89032,7 @@ rlev
 }
 
 STRING 14841
-// Upgrades: R02B (Control Magic), Hotkey (Hotkey)
+// Upgrades: R028 (Banshee Adept Training,Banshee Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -89380,13 +89428,13 @@ STRING 14906
 }
 
 STRING 14907
-// Upgrades: R028 (Banshee Adept Training,Banshee Master Training), Hotkey (Hotkey)
+// Upgrades: R01S (Long Rifles), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 14908
-// Upgrades: R01S (Long Rifles), Hotkey (Hotkey)
+// Upgrades: R01P (Ensnare), Hotkey (Hotkey)
 {
 X
 }
@@ -89476,7 +89524,7 @@ STRING 14922
 }
 
 STRING 14923
-// Upgrades: R01P (Ensnare), Hotkey (Hotkey)
+// Upgrades: R01I (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -89536,7 +89584,7 @@ Heavy ranged amphibious unit with Heal, Dispel Magic and Binding Shackles. |n|n|
 }
 
 STRING 14933
-// Upgrades: R01I (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R019 (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
@@ -89614,7 +89662,7 @@ STRING 14945
 }
 
 STRING 14946
-// Upgrades: R019 (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R018 (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
@@ -89704,13 +89752,13 @@ STRING 14960
 }
 
 STRING 14961
-// Upgrades: R018 (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R00Y (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 14962
-// Upgrades: R00Y (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R00V (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -89968,7 +90016,7 @@ Research Animal Companion
 }
 
 STRING 15005
-// Abilities: A00A (Blink), Hotkey (Hotkey - Normal)
+// Abilities: A005 (Deploy Barricades), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -90292,7 +90340,7 @@ Q
 }
 
 STRING 15059
-// Upgrades: R001 (Defend), effect1 (Effect 1)
+// Upgrades: R01O (Defend), effect1 (Effect 1)
 {
 rhpx
 }
@@ -90937,7 +90985,7 @@ STRING 15174
 }
 
 STRING 15175
-// Upgrades: R00V (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R00S (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -90991,7 +91039,7 @@ Scattershot
 }
 
 STRING 15184
-// Upgrades: R01O (Defend), effect1 (Effect 1)
+// Upgrades: R07V (Control Magic), effect1 (Effect 1)
 {
 rhpx
 }
@@ -91808,6 +91856,12 @@ STRING 15319
 Serpent Ward (|cffffcc00Q|r) - [|cffffcc00Level 2|r]
 }
 
+STRING 15320
+// Upgrades: R00R (Magic Sentry), Hotkey (Hotkey)
+{
+X
+}
+
 STRING 15321
 // Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
@@ -91953,7 +92007,7 @@ Quest Completed: The Heart of Hakkar
 }
 
 STRING 15345
-// Abilities: A005 (Deploy Barricades), Hotkey (Hotkey - Normal)
+// Abilities: A0GW (Make It Rain), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -92061,7 +92115,7 @@ Charred Ancient
 }
 
 STRING 15363
-// Upgrades: R00S (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
+// Upgrades: R00M (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -92253,7 +92307,7 @@ Improves the Ignore Pain ability, making it last 10 seconds, up from 5.
 }
 
 STRING 15395
-// Upgrades: R00R (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R00M (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -92354,6 +92408,12 @@ STRING 15411
 // Upgrades: R040 (Magic Sentry), Ubertip (Tooltip - Extended)
 {
 Allows Sky Barges to be trained from the Infernal Machine Factory.
+}
+
+STRING 15412
+// Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Name (Name)
+{
+Shadowcaster Adept Training
 }
 
 STRING 15413
@@ -92681,7 +92741,7 @@ Powerful portable cannon.|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks la
 }
 
 STRING 15467
-// Abilities: A0GW (Make It Rain), Hotkey (Hotkey - Normal)
+// Abilities: A0GW (Make It Rain), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -92897,7 +92957,7 @@ Power Infusion 2
 }
 
 STRING 15503
-// Upgrades: R00M (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R00H (Envenomed Spears), Hotkey (Hotkey)
 {
 X
 }
@@ -92915,7 +92975,7 @@ Gives the Felguard a 25% chance for an attack to be absorbed reducing damage tak
 }
 
 STRING 15506
-// Upgrades: R00M (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R00G (Flare), Hotkey (Hotkey)
 {
 X
 }
@@ -92951,7 +93011,7 @@ STRING 15511
 }
 
 STRING 15512
-// Upgrades: R00H (Envenomed Spears), Hotkey (Hotkey)
+// Upgrades: R00C (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 X
 }
@@ -93083,7 +93143,7 @@ Creates a barrier that stops 800 points of spell damage from affecting a target 
 }
 
 STRING 15534
-// Upgrades: R06I (Defend), Hotkey (Hotkey)
+// Upgrades: R01L (Magic Sentry), Hotkey (Hotkey)
 {
 A
 }
@@ -93473,7 +93533,7 @@ Mana Flare - [|cffffcc00Level 1|r]
 }
 
 STRING 15599
-// Upgrades: R00G (Flare), Hotkey (Hotkey)
+// Upgrades: R00C (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 X
 }
@@ -93764,6 +93824,12 @@ STRING 15647
 // Upgrades: R01V (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
 {
 C
+}
+
+STRING 15648
+// Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Name (Name)
+{
+Shadowcaster Master Training
 }
 
 STRING 15649
@@ -94061,7 +94127,7 @@ Research Eredar Summoner Master Training
 }
 
 STRING 15698
-// Abilities: A0GW (Make It Rain), Researchhotkey (Hotkey - Learn)
+// Abilities: A0HB (Multiple Heads), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -94482,7 +94548,7 @@ Initiate,Adept,Master
 }
 
 STRING 15768
-// Abilities: A0HB (Multiple Heads), Researchhotkey (Hotkey - Learn)
+// Abilities: A0HV (Ignore Pain), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -94494,7 +94560,7 @@ Shotgunner
 }
 
 STRING 15770
-// Abilities: A0HV (Ignore Pain), Hotkey (Hotkey - Normal)
+// Abilities: A0HV (Ignore Pain), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -94614,7 +94680,7 @@ Q
 }
 
 STRING 15790
-// Abilities: A0HV (Ignore Pain), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0JN (Anti-magic Shell), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -94689,6 +94755,12 @@ STRING 15802
 // Abilities: A0MV (Greater Heal), Hotkey (Hotkey - Normal)
 {
 Q
+}
+
+STRING 15803
+// Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Tip (Tooltip)
+{
+Research Shadowcaster Adept Training
 }
 
 STRING 15804
@@ -94776,7 +94848,7 @@ E
 }
 
 STRING 15818
-// Abilities: A0JN (Anti-magic Shell), Hotkey (Hotkey - Normal)
+// Abilities: A0K1 (Blink), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -94968,7 +95040,7 @@ STRING 15849
 }
 
 STRING 15850
-// Abilities: A0K1 (Blink), Hotkey (Hotkey - Normal)
+// Abilities: A0KJ (Blink), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -95700,7 +95772,7 @@ Q
 }
 
 STRING 15972
-// Abilities: A0KJ (Blink), Hotkey (Hotkey - Normal)
+// Abilities: A05F (Mass Polymorph), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -95712,7 +95784,7 @@ Hurls a bolt of damaging lightning at a target enemy that jumps to nearby enemie
 }
 
 STRING 15974
-// Abilities: A05F (Mass Polymorph), Hotkey (Hotkey - Normal)
+// Abilities: A05F (Mass Polymorph), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -95802,7 +95874,7 @@ STRING 15988
 }
 
 STRING 15989
-// Abilities: A05F (Mass Polymorph), Researchhotkey (Hotkey - Learn)
+// Abilities: A0LN (Thunder Fists), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -95934,19 +96006,19 @@ Q
 }
 
 STRING 16011
-// Units: n07H (Tradehouse), Ubertip (Tooltip - Extended)
+// Units: n0CU (Deep Sea Vault), Ubertip (Tooltip - Extended)
 {
 A shop of purchasable items.
 }
 
 STRING 16012
-// Abilities: A0LN (Thunder Fists), Researchhotkey (Hotkey - Learn)
+// Abilities: A027 (Summon Grunts), Researchhotkey (Hotkey - Learn)
 {
 W
 }
 
 STRING 16013
-// Abilities: A027 (Summon Grunts), Researchhotkey (Hotkey - Learn)
+// Abilities: A0LS (Shockwave), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -95957,7 +96029,7 @@ Zandalar
 }
 
 STRING 16015
-// Abilities: A0LS (Shockwave), Hotkey (Hotkey - Normal)
+// Abilities: A0LV (Shockwave), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -96017,7 +96089,7 @@ Z
 }
 
 STRING 16025
-// Abilities: A0LV (Shockwave), Hotkey (Hotkey - Normal)
+// Abilities: A0ML (Renewal), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -96251,8 +96323,14 @@ STRING 16063
 (twilight)
 }
 
+STRING 16064
+// Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Tip (Tooltip)
+{
+Research Shadowcaster Master Training
+}
+
 STRING 16065
-// Abilities: A0ML (Renewal), Hotkey (Hotkey - Normal)
+// Abilities: A0N9 (Assasinate), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -96318,7 +96396,7 @@ Fortified Hulls
 }
 
 STRING 16076
-// Upgrades: R05C (Sorceress Adept Training,Sorceress Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R07V (Control Magic), EditorSuffix (Editor Suffix)
 {
 (forsaken)
 }
@@ -96516,7 +96594,7 @@ Mystical lounge with purchasable items.
 }
 
 STRING 16109
-// Abilities: A0N9 (Assasinate), Hotkey (Hotkey - Normal)
+// Abilities: A0NB (Dispel Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -96582,9 +96660,9 @@ Corrupted
 }
 
 STRING 16120
-// Upgrades: R07V (Control Magic), EditorSuffix (Editor Suffix)
+// Abilities: A0MN (Oil Consumer), Tip (Tooltip - Normal)
 {
-(forsaken)
+Oil Consumer
 }
 
 STRING 16121
@@ -96663,6 +96741,12 @@ STRING 16133
 // Units: o067 (War Camp), Tip (Tooltip - Basic)
 {
 Build War Camp
+}
+
+STRING 16134
+// Units: n07W (Plague Revenant), Tip (Tooltip - Basic)
+{
+Train Plague Revenant
 }
 
 STRING 16135
@@ -96762,7 +96846,7 @@ STRING 16150
 }
 
 STRING 16151
-// Abilities: A0NB (Dispel Magic), Hotkey (Hotkey - Normal)
+// Abilities: A0NK (Plague Strike), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -96855,6 +96939,42 @@ STRING 16166
 // Units: h06A (Smitty), Tip (Tooltip - Basic)
 {
 Build Smitty
+}
+
+STRING 16167
+// Units: n07W (Plague Revenant), Ubertip (Tooltip - Extended)
+{
+Heavy melee unit. |n|cfff5962dAbilities:|R Acid Blob, Smoke Bomb, Persistent Soul |n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
+}
+
+STRING 16168
+// Abilities: A05L (Persistent Soul), Name (Name)
+{
+Persistent Soul
+}
+
+STRING 16169
+// Abilities: A05L (Persistent Soul), Tip (Tooltip - Normal)
+{
+Persistent Soul - [|cffffcc00Level 1|r]
+}
+
+STRING 16170
+// Abilities: A0TA (Mech Kit), EditorSuffix (Editor Suffix)
+{
+(Goblin)
+}
+
+STRING 16171
+// Abilities: A05L (Persistent Soul), EditorSuffix (Editor Suffix)
+{
+(Forsaken - Plague Revenant)
+}
+
+STRING 16173
+// Abilities: A05L (Persistent Soul), Tip (Tooltip - Normal)
+{
+Persistent Soul - [|cffffcc00Level 2|r]
 }
 
 STRING 16174
@@ -96999,7 +97119,7 @@ STRING 16197
 }
 
 STRING 16198
-// Abilities: A0NK (Plague Strike), Researchhotkey (Hotkey - Learn)
+// Abilities: A0NO (Land), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -97269,7 +97389,7 @@ STRING 16242
 }
 
 STRING 16243
-// Abilities: A0NO (Land), Hotkey (Hotkey - Normal)
+// Abilities: A0NO (Land), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -97323,7 +97443,7 @@ Ship Gold Trader. Once trained, it cannot be controlled and will automatically t
 }
 
 STRING 16252
-// Abilities: A0NO (Land), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0BM (Mass Animate Dead), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -97341,15 +97461,9 @@ E
 }
 
 STRING 16255
-// Units: u028 (Fuel Transport Vehicle), EditorSuffix (Name - Editor Suffix)
+// Units: u028 (Transport Vehicle), EditorSuffix (Name - Editor Suffix)
 {
 (Goblin)
-}
-
-STRING 16256
-// Abilities: A0FR (Transfer Fuel), EditorSuffix (Editor Suffix)
-{
-(main supply)
 }
 
 STRING 16257
@@ -97374,12 +97488,6 @@ STRING 16260
 // Abilities: A0OK (Corrupt Blood), Ubertip (Tooltip - Normal - Extended)
 {
 Corrupt the blood of a target unit with the power of the Old Gods. The afflicted unit cannot cast spells and will take <A04A,DataA3> damage per second. Upon its death, 6 Faceless One Deathbringer will spawn from its corpse. Corrupt Blood cannot be dispelled or cancelled.|nLasts 8 seconds on heroes and indefinitely on units.
-}
-
-STRING 16261
-// Abilities: A0FR (Transfer Fuel), Tip (Tooltip - Normal)
-{
-Transfer Fuel
 }
 
 STRING 16262
@@ -97652,12 +97760,6 @@ STRING 16306
 (scarlet)
 }
 
-STRING 16307
-// Abilities: A0FR (Transfer Fuel), Name (Name)
-{
-Transfer Fuel
-}
-
 STRING 16308
 // Upgrades: R07H (Chaos), EditorSuffix (Editor Suffix)
 {
@@ -97665,7 +97767,7 @@ STRING 16308
 }
 
 STRING 16309
-// Abilities: A0BM (Mass Animate Dead), Hotkey (Hotkey - Normal)
+// Abilities: A0JT (Drop the Anchor), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -97689,7 +97791,7 @@ Train Monk
 }
 
 STRING 16313
-// Abilities: A0JT (Drop the Anchor), Hotkey (Hotkey - Normal)
+// Abilities: A0JT (Drop the Anchor), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -97719,7 +97821,7 @@ Rays of the New Dawn - [|cffffcc00Level 2|r]
 }
 
 STRING 16318
-// Abilities: A0JT (Drop the Anchor), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0OD (Seismic Shard), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -97731,7 +97833,7 @@ Mystical hero, adept at dealing magical damage.|n|cfff5962dCan Learn:|R Resurgen
 }
 
 STRING 16320
-// Abilities: A0OD (Seismic Shard), Hotkey (Hotkey - Normal)
+// Abilities: A0OD (Seismic Shard), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -97911,13 +98013,13 @@ Research Fortified Hulls
 }
 
 STRING 16350
-// Abilities: A0OD (Seismic Shard), Researchhotkey (Hotkey - Learn)
+// Abilities: A0OL (Rain of Fire), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 16351
-// Abilities: A0OL (Rain of Fire), Hotkey (Hotkey - Normal)
+// Abilities: A0OZ (Dispel Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -98096,12 +98198,6 @@ STRING 16380
 Summon Bolvar Fordragon
 }
 
-STRING 16381
-// Units: u028 (Fuel Transport Vehicle), Name (Name)
-{
-Fuel Transport Vehicle
-}
-
 STRING 16382
 // Units: u01P (Plague Catapult), EditorSuffix (Name - Editor Suffix)
 {
@@ -98109,7 +98205,7 @@ STRING 16382
 }
 
 STRING 16383
-// Upgrades: R01L (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R00W (Magic Sentry), Hotkey (Hotkey)
 {
 A
 }
@@ -98133,7 +98229,7 @@ Deadeye
 }
 
 STRING 16387
-// Abilities: A0OZ (Dispel Magic), Hotkey (Hotkey - Normal)
+// Abilities: A0L4 (Dispel Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -98163,7 +98259,7 @@ Fortified Hulls
 }
 
 STRING 16392
-// Units: n07W (Plague Construct), EditorSuffix (Name - Editor Suffix)
+// Units: n07W (Plague Revenant), EditorSuffix (Name - Editor Suffix)
 {
 (Forsaken)
 }
@@ -98228,18 +98324,6 @@ STRING 16402
 Research Fortified Hulls
 }
 
-STRING 16403
-// Units: n07W (Plague Construct), Name (Name)
-{
-Plague Construct
-}
-
-STRING 16404
-// Units: n07W (Plague Construct), Tip (Tooltip - Basic)
-{
-Train Plague Construct
-}
-
 STRING 16405
 // Abilities: A0VC (Viral Plague), EditorSuffix (Editor Suffix)
 {
@@ -98271,7 +98355,7 @@ Train Apothecary
 }
 
 STRING 16410
-// Abilities: A0L4 (Dispel Magic), Hotkey (Hotkey - Normal)
+// Abilities: A0QK (Mass Enrage), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -98397,7 +98481,7 @@ Q
 }
 
 STRING 16431
-// Abilities: A0QK (Mass Enrage), Hotkey (Hotkey - Normal)
+// Abilities: A0QK (Mass Enrage), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -98420,12 +98504,6 @@ STRING 16434
 Train Ogre Magi
 }
 
-STRING 16435
-// Units: u028 (Fuel Transport Vehicle), Tip (Tooltip - Basic)
-{
-Build Fuel Transport Vehicle
-}
-
 STRING 16436
 // Units: o006 (Spire), Ubertip (Tooltip - Extended)
 {
@@ -98442,12 +98520,6 @@ STRING 16438
 // Units: h096 (Light Cavalry), EditorSuffix (Name - Editor Suffix)
 {
 (scarlet)
-}
-
-STRING 16439
-// Units: u028 (Fuel Transport Vehicle), Ubertip (Tooltip - Extended)
-{
-Armored Vehicule to transport fuel, will explode on death.|n|cfff5962dAbilities:|R Transfer Fuel, Explosion|n|n|cff99b4d1Can only build 2.
 }
 
 STRING 16440
@@ -98636,7 +98708,7 @@ STRING 16470
 }
 
 STRING 16471
-// Abilities: A0QK (Mass Enrage), Researchhotkey (Hotkey - Learn)
+// Abilities: A0NW (Dispel Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -98665,6 +98737,12 @@ STRING 16475
 Illidan is in Outland
 }
 
+STRING 16476
+// Upgrades: R08T (Cannibalize), EditorSuffix (Editor Suffix)
+{
+(Forsaken)
+}
+
 STRING 16477
 // Units: h011 (Intercontinental Artillery), Ubertip (Tooltip - Extended)
 {
@@ -98687,6 +98765,12 @@ STRING 16481
 // Abilities: A0RP (Cluster Rockets), Tip (Tooltip - Normal)
 {
 Cluster Rockets - [|cffffcc00Level 4|r]
+}
+
+STRING 16482
+// Upgrades: R08T (Cannibalize), Name (Name)
+{
+Split Soul
 }
 
 STRING 16483
@@ -98996,7 +99080,7 @@ NzothTentacle
 }
 
 STRING 16534
-// Abilities: A0FR (Transfer Fuel), Hotkey (Hotkey - Normal)
+// Abilities: A0OB (Call Trade Prince Guards), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -99151,12 +99235,6 @@ STRING 16559
 Build Assault Tank
 }
 
-STRING 16560
-// Abilities: A0HG (Transfer Fuel), EditorSuffix (Editor Suffix)
-{
-(tanker)
-}
-
 STRING 16561
 // Units: o04O (Alchemist), EditorSuffix (Name - Editor Suffix)
 {
@@ -99194,21 +99272,9 @@ Heal all friendly units in the target area for 130 hit points.
 }
 
 STRING 16567
-// Abilities: A0FR (Transfer Fuel), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0OB (Call Trade Prince Guards), Researchhotkey (Hotkey - Learn)
 {
 W
-}
-
-STRING 16568
-// Abilities: A0HG (Transfer Fuel), Tip (Tooltip - Normal)
-{
-Transfer Fuel
-}
-
-STRING 16569
-// Abilities: A0HG (Transfer Fuel), Name (Name)
-{
-Transfer Fuel
 }
 
 STRING 16570
@@ -99254,7 +99320,7 @@ Spiritual Hut for the casters of the Zandalari.|n|cfff5962dTrains:|r Haruspex, H
 }
 
 STRING 16577
-// Abilities: A0NW (Dispel Magic), Hotkey (Hotkey - Normal)
+// Abilities: A02G (Stoneform), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -99266,21 +99332,9 @@ STRING 16578
 }
 
 STRING 16579
-// Abilities: A0MN (Oil Unit), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0MN (Oil Consumer), Ubertip (Tooltip - Normal - Extended)
 {
 Increases the rate at which this unit gathers lumber.
-}
-
-STRING 16580
-// Abilities: A0MN (Oil Unit), Name (Name)
-{
-Oil Unit
-}
-
-STRING 16581
-// Abilities: A0MN (Oil Unit), Tip (Tooltip - Normal)
-{
-Oil Unit
 }
 
 STRING 16582
@@ -99302,13 +99356,13 @@ Trading Gold
 }
 
 STRING 16585
-// Abilities: A0HG (Transfer Fuel), Hotkey (Hotkey - Normal)
+// Abilities: A0RJ (Exploding Cocktail), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 16586
-// Abilities: A0HG (Transfer Fuel), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0RJ (Exploding Cocktail), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -99500,7 +99554,7 @@ Disorienting Howl - [|cffffcc00Level 4|r]
 }
 
 STRING 16618
-// Abilities: A0RJ (Exploding Cocktail), Hotkey (Hotkey - Normal)
+// Abilities: A06Z (Summon Obelisk), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -99800,7 +99854,7 @@ Long-range percision siege weaponry.|n|n|cff99b4d1Can only build 8.|r|n|cffffcc0
 }
 
 STRING 16668
-// Abilities: A0RJ (Exploding Cocktail), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SO (Essence of Blight), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -99839,6 +99893,12 @@ STRING 16674
 // Units: obar (War Camp), Ubertip (Tooltip - Extended)
 {
 Home to the warriors of the Horde.|n|cfff5962dTrains:|R Grunt, Headhunter, Bat Rider |n|cfff5962dResearches:|RTroll Regeneration, Liquid Fire
+}
+
+STRING 16675
+// Upgrades: R08T (Cannibalize), Tip (Tooltip)
+{
+Research Split Soul
 }
 
 STRING 16676
@@ -99913,6 +99973,12 @@ STRING 16687
 The dread of the sea and the bane of any Navy.|n|cfff5962dAbilities:|R Repair|n|n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land units.|r
 }
 
+STRING 16688
+// Upgrades: R08T (Cannibalize), Ubertip (Tooltip - Extended)
+{
+Causes Plague Revenants' Persistent Soul to reanimate an additional unit.
+}
+
 STRING 16689
 // Units: ubot (Haunted Transport Ship), Ubertip (Tooltip - Extended)
 {
@@ -99925,10 +99991,22 @@ STRING 16690
 Pure strength and dominance of the Horde.|n|cfff5962dAbilities:|R Repair|n|n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land units.|r
 }
 
+STRING 16691
+// Buffs/Effects: B069 (), Bufftip (Tooltip)
+{
+Persistent Soul
+}
+
 STRING 16692
 // Units: obot (Horde Transport Ship), Ubertip (Tooltip - Extended)
 {
 A sturdy transport ship capable of carrying units over the sea.|n|n|cff99b4d1Can only build 12.|r|n|cff00ffffCan transport 10 units.
+}
+
+STRING 16693
+// Buffs/Effects: B069 (), EditorSuffix (Editor Suffix)
+{
+(Forsaken - Plague Revenant)
 }
 
 STRING 16694
@@ -99947,6 +100025,12 @@ STRING 16696
 // Units: etrs (Night Elf Transport Ship), Ubertip (Tooltip - Extended)
 {
 A sturdy transport ship capable of carrying units over the sea.|n|n|cff99b4d1Can only build 12.|r|n|cff00ffffCan transport 10 units.
+}
+
+STRING 16697
+// Units: u014 (Laboratory), Ubertip (Tooltip - Extended)
+{
+Mad Laboratory for Plague experimentation.|n|cfff5962dTrains:|R Plague Flyer, Plague Catapult, Plague Revenant|n|cfff5962dResearches:|R Split Soul
 }
 
 STRING 16698
@@ -100015,6 +100099,12 @@ STRING 16708
 Warrior hero, adept at melee combat and bolstering nearby allies.|n|cfff5962dAbilities:|r Critical Strike|n|cfff5962dCan Learn:|R White Wolf's Fury, Goldrinn's Howl, Vampiric Aura, Reincarnation|n|n|cffffcc00Attacks land units.|R
 }
 
+STRING 16709
+// Upgrades: R08T (Cannibalize), effect1 (Effect 1)
+{
+rlev
+}
+
 STRING 16710
 // Abilities: A0RX (Raise Plaguelings), Researchhotkey (Hotkey - Learn)
 {
@@ -100025,6 +100115,18 @@ STRING 16711
 // Abilities: A0RZ (Arcane Bomb), Hotkey (Hotkey - Normal)
 {
 E
+}
+
+STRING 16712
+// Abilities: A05L (Persistent Soul), Ubertip (Tooltip - Normal - Extended)
+{
+When this unit dies, it reanimates the highest level nearby corpse for 40 seconds.
+}
+
+STRING 16713
+// Abilities: A05L (Persistent Soul), Ubertip (Tooltip - Normal - Extended)
+{
+When this unit dies, it reanimates the two highest level nearby corpses for 40 seconds.
 }
 
 STRING 16715
@@ -100190,13 +100292,13 @@ STRING 16742
 }
 
 STRING 16743
-// Upgrades: R00C (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: R02T (Well Spring), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 16744
-// Upgrades: R00C (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: R040 (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
@@ -100664,7 +100766,7 @@ STRING 16821
 }
 
 STRING 16822
-// Abilities: A0NW (Dispel Magic), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A07A (Dispel Magic), Ubertip (Tooltip - Normal - Extended)
 {
 Removes all buffs from units in a target area and deals <Adis,DataB1> damage to summoned units.|r
 }
@@ -100718,7 +100820,7 @@ Sends a bolt of negative energy that burns up to 40 points of a target enemy uni
 }
 
 STRING 16831
-// Abilities: A0OB (Call Trade Prince Guards), Hotkey (Hotkey - Normal)
+// Abilities: A02G (Stoneform), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -100796,13 +100898,13 @@ Quest Completed: Tear it Down
 }
 
 STRING 16844
-// Upgrades: R02T (Well Spring), Hotkey (Hotkey)
+// Upgrades: R047 (Marksmanship), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 16845
-// Upgrades: R040 (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R015 (Marksmanship), Hotkey (Hotkey)
 {
 X
 }
@@ -102290,43 +102392,43 @@ Summon Engineer
 }
 
 STRING 17093
-// Upgrades: R047 (Marksmanship), Hotkey (Hotkey)
+// Upgrades: R04P (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 17094
-// Upgrades: R015 (Marksmanship), Hotkey (Hotkey)
+// Upgrades: R04P (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 17095
-// Upgrades: R04P (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
-{
-X
-}
-
-STRING 17096
-// Upgrades: R04P (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
-{
-X
-}
-
-STRING 17097
 // Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 X
 }
 
-STRING 17098
+STRING 17096
 // Upgrades: R05C (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
 {
 X
 }
 
-STRING 17099
+STRING 17097
 // Upgrades: R05C (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
+{
+X
+}
+
+STRING 17098
+// Upgrades: R05D (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+{
+X
+}
+
+STRING 17099
+// Upgrades: R05D (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -102764,7 +102866,7 @@ Deals <A0VU,DataA4> damage, stuns heroes for <A0VU,HeroDur4> seconds and normal 
 }
 
 STRING 17173
-// Abilities: A0OB (Call Trade Prince Guards), Researchhotkey (Hotkey - Learn)
+// Abilities: A0RO (Summon Succubus), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -102908,7 +103010,7 @@ Revive Kalecgos
 }
 
 STRING 17197
-// Abilities: A02G (Stoneform), Hotkey (Hotkey - Normal)
+// Abilities: A0RR (Energy Wave), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -103034,7 +103136,7 @@ STRING 17217
 }
 
 STRING 17218
-// Abilities: A06Z (Summon Obelisk), Hotkey (Hotkey - Normal)
+// Abilities: A0SO (Essence of Blight), Unhotkey (Hotkey - Turn Off)
 {
 Q
 }
@@ -103046,7 +103148,7 @@ E
 }
 
 STRING 17220
-// Upgrades: R00W (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R001 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -103076,7 +103178,7 @@ C
 }
 
 STRING 17225
-// Abilities: A0SO (Essence of Blight), Hotkey (Hotkey - Normal)
+// Abilities: A0SV (White Wolf's Fury), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -103281,49 +103383,49 @@ STRING 17258
 }
 
 STRING 17259
-// Abilities: A0SO (Essence of Blight), Unhotkey (Hotkey - Turn Off)
-{
-Q
-}
-
-STRING 17260
-// Abilities: A0SV (White Wolf's Fury), Hotkey (Hotkey - Normal)
-{
-Q
-}
-
-STRING 17261
-// Abilities: A02G (Stoneform), Researchhotkey (Hotkey - Learn)
-{
-W
-}
-
-STRING 17262
-// Abilities: A0RO (Summon Succubus), Researchhotkey (Hotkey - Learn)
-{
-W
-}
-
-STRING 17263
 // Abilities: A0SV (White Wolf's Fury), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
 
-STRING 17264
-// Abilities: A0RR (Energy Wave), Hotkey (Hotkey - Normal)
-{
-W
-}
-
-STRING 17265
+STRING 17260
 // Abilities: A0R7 (Instill Rage), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
-STRING 17266
+STRING 17261
+// Abilities: A0RR (Energy Wave), Researchhotkey (Hotkey - Learn)
+{
+W
+}
+
+STRING 17262
+// Abilities: A0SE (Suppression), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 17263
 // Abilities: A0R7 (Instill Rage), Researchhotkey (Hotkey - Learn)
+{
+Q
+}
+
+STRING 17264
+// Abilities: A07A (Dispel Magic), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 17265
+// Abilities: A0TG (Renewal), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 17266
+// Abilities: A0TR (Soul Voodoo), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -103335,7 +103437,7 @@ E
 }
 
 STRING 17268
-// Abilities: A0OJ (Fuel Refill), Hotkey (Hotkey - Normal)
+// Abilities: A0TM (Spirit Orb), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -103467,13 +103569,13 @@ STRING 17289
 }
 
 STRING 17290
-// Abilities: A0OJ (Fuel Refill), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0TM (Spirit Orb), Researchhotkey (Hotkey - Learn)
 {
 E
 }
 
 STRING 17291
-// Abilities: A0TG (Renewal), Hotkey (Hotkey - Normal)
+// Abilities: A0TU (Devour), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -103827,7 +103929,7 @@ Reincarnation
 }
 
 STRING 17350
-// Abilities: A0TM (Spirit Orb), Hotkey (Hotkey - Normal)
+// Abilities: A0TM (Spirit Orb), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -103923,13 +104025,13 @@ Calls forth 5 Guards.
 }
 
 STRING 17366
-// Abilities: A0TR (Soul Voodoo), Hotkey (Hotkey - Normal)
+// Abilities: A0U5 (Greater Storm Bolt), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 17367
-// Abilities: A0TU (Devour), Hotkey (Hotkey - Normal)
+// Abilities: A0U5 (Greater Storm Bolt), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -104271,13 +104373,13 @@ The hero's Stoneform blocks 32 damage from all physical attacks to a minimum of 
 }
 
 STRING 17424
-// Abilities: A0RR (Energy Wave), Researchhotkey (Hotkey - Learn)
+// Abilities: A02R (Mage Armor), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 17425
-// Abilities: A0U5 (Greater Storm Bolt), Hotkey (Hotkey - Normal)
+// Abilities: A0UI (Siege Form), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -104619,7 +104721,7 @@ STRING 17482
 }
 
 STRING 17483
-// Abilities: A0SE (Suppression), Hotkey (Hotkey - Normal)
+// Abilities: A02R (Mage Armor), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -104631,13 +104733,13 @@ Curse of Silence - [|cffffcc00Level 3|r]
 }
 
 STRING 17485
-// Abilities: A07A (Dispel Magic), Hotkey (Hotkey - Normal)
+// Abilities: A0SM (Devour Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 17486
-// Abilities: A07A (Dispel Magic), EditorSuffix (Editor Suffix)
+// Abilities: A0MN (Oil Consumer), EditorSuffix (Editor Suffix)
 {
 (Goblin)
 }
@@ -104763,7 +104865,7 @@ STRING 17507
 }
 
 STRING 17508
-// Abilities: A07A (Dispel Magic), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0O3 (Dispel Magic), Ubertip (Tooltip - Normal - Extended)
 {
 Removes all buffs from units in a target area and deals <Adis,DataB1> damage to summoned units.|r
 }
@@ -104811,7 +104913,7 @@ STRING 17515
 }
 
 STRING 17516
-// Abilities: A0SJ (Rain of Fire), EditorSuffix (Editor Suffix)
+// Abilities: A07A (Dispel Magic), EditorSuffix (Editor Suffix)
 {
 (Goblin)
 }
@@ -104925,7 +105027,7 @@ Calls down 6 Arcane waves; each wave deals 15 damage to units in a small area.
 }
 
 STRING 17535
-// Abilities: A02R (Mage Armor), Hotkey (Hotkey - Normal)
+// Abilities: A0SN (Anti-magic Shell), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -104991,13 +105093,13 @@ STRING 17545
 }
 
 STRING 17546
-// Upgrades: R05D (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R05G (Druid of the Claw Adept Training,Druid of the Claw Master Training), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 17547
-// Upgrades: R05D (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R05G (Druid of the Claw Adept Training,Druid of the Claw Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -105142,7 +105244,7 @@ Suppresses all enemy ranged units in a target area from attacking for 4 seconds.
 }
 
 STRING 17571
-// Abilities: A02R (Mage Armor), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0ST (Goldrinn's Howl), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -105154,13 +105256,13 @@ Elemental Fire - [|cffffcc00Level 2|r]
 }
 
 STRING 17573
-// Upgrades: R05G (Druid of the Claw Adept Training,Druid of the Claw Master Training), Hotkey (Hotkey)
+// Upgrades: R06X (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 17574
-// Upgrades: R05G (Druid of the Claw Adept Training,Druid of the Claw Master Training), Hotkey (Hotkey)
+// Upgrades: R06X (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -105310,7 +105412,7 @@ Further increases the armor of all Naval Units.
 }
 
 STRING 17599
-// Upgrades: R06X (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R071 (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -105400,7 +105502,7 @@ Elemental Fire - [|cffffcc00Level 4|r]
 }
 
 STRING 17614
-// Abilities: A0SM (Devour Magic), Hotkey (Hotkey - Normal)
+// Abilities: A0ST (Goldrinn's Howl), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -105574,13 +105676,13 @@ STRING 17642
 }
 
 STRING 17643
-// Abilities: A0SN (Anti-magic Shell), Hotkey (Hotkey - Normal)
+// Abilities: A0RB (Summon Garrison), Researchhotkey (Hotkey - Learn)
 {
 W
 }
 
 STRING 17644
-// Abilities: A0ST (Goldrinn's Howl), Hotkey (Hotkey - Normal)
+// Abilities: A0T9 (Unload), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -105604,7 +105706,7 @@ Steamwork Reservoir
 }
 
 STRING 17648
-// Abilities: A0ST (Goldrinn's Howl), Researchhotkey (Hotkey - Learn)
+// Abilities: A0TE (Fishing Net), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -105628,7 +105730,7 @@ STRING 17651
 }
 
 STRING 17652
-// Upgrades: R07V (Control Magic), effect1 (Effect 1)
+// Upgrades: R07Z (Chaos), effect1 (Effect 1)
 {
 rhpx
 }
@@ -105856,7 +105958,7 @@ Quest Completed: Lumber Market Crash
 }
 
 STRING 17690
-// Upgrades: R07Z (Chaos), effect1 (Effect 1)
+// Upgrades: R02K (Storm Hammers), effect1 (Effect 1)
 {
 rhpx
 }
@@ -105971,13 +106073,13 @@ Build Crimson Castle
 }
 
 STRING 17709
-// Abilities: A0U5 (Greater Storm Bolt), Researchhotkey (Hotkey - Learn)
+// Abilities: A0UI (Siege Form), Unhotkey (Hotkey - Turn Off)
 {
 Q
 }
 
 STRING 17710
-// Abilities: A0UI (Siege Form), Hotkey (Hotkey - Normal)
+// Abilities: A0V0 (Snipe), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -106013,7 +106115,7 @@ STRING 17715
 }
 
 STRING 17716
-// Abilities: A0RB (Summon Garrison), Researchhotkey (Hotkey - Learn)
+// Abilities: A0TH (Dispel Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -106073,31 +106175,31 @@ STRING 17725
 }
 
 STRING 17726
-// Upgrades: R001 (Defend), Hotkey (Hotkey)
-{
-A
-}
-
-STRING 17727
 // Upgrades: R03L (Chaos), Hotkey (Hotkey)
 {
 A
 }
 
-STRING 17728
+STRING 17727
 // Upgrades: R046 (Marksmanship), Hotkey (Hotkey)
 {
 A
 }
 
-STRING 17729
+STRING 17728
 // Upgrades: R02X (Defend), Hotkey (Hotkey)
 {
 A
 }
 
-STRING 17730
+STRING 17729
 // Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+A
+}
+
+STRING 17730
+// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
@@ -106237,7 +106339,7 @@ V
 }
 
 STRING 17753
-// Abilities: A0T9 (Unload), Hotkey (Hotkey - Normal)
+// Abilities: A0TO (Summon Garrison), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -106279,7 +106381,7 @@ Teleports <AUds,DataA1> of the player's non-hero units within the targeted area 
 }
 
 STRING 17760
-// Abilities: A0TA (Mech Kit), EditorSuffix (Editor Suffix)
+// Abilities: A0SJ (Rain of Fire), EditorSuffix (Editor Suffix)
 {
 (Goblin)
 }
@@ -106303,7 +106405,7 @@ Mech Kit
 }
 
 STRING 17764
-// Abilities: A0TE (Fishing Net), Hotkey (Hotkey - Normal)
+// Abilities: A0TX (Field Medkit), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -106455,13 +106557,13 @@ Build Altar of Loa
 }
 
 STRING 17789
-// Abilities: A0UI (Siege Form), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0V1 (Healing Surge), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 17790
-// Abilities: A0TM (Spirit Orb), Researchhotkey (Hotkey - Learn)
+// Abilities: A0UF (Spike Aura), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -106497,13 +106599,13 @@ C
 }
 
 STRING 17796
-// Abilities: A0TH (Dispel Magic), Hotkey (Hotkey - Normal)
+// Abilities: A0V5 (Soul Burn), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 17797
-// Upgrades: R06X (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R071 (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -106743,7 +106845,7 @@ Vindication
 }
 
 STRING 17837
-// Abilities: A0V0 (Snipe), Hotkey (Hotkey - Normal)
+// Abilities: A0V2 (Call Admiral Guard), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -106839,7 +106941,7 @@ Revive Velen
 }
 
 STRING 17853
-// Abilities: A0V1 (Healing Surge), Hotkey (Hotkey - Normal)
+// Abilities: A0V2 (Call Admiral Guard), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -106851,7 +106953,7 @@ STRING 17854
 }
 
 STRING 17855
-// Abilities: A0TO (Summon Garrison), Researchhotkey (Hotkey - Learn)
+// Abilities: A0V5 (Soul Burn), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -106941,7 +107043,7 @@ Moving Earth - [|cffffcc00Level 1|r]
 }
 
 STRING 17870
-// Abilities: A0TX (Field Medkit), Hotkey (Hotkey - Normal)
+// Abilities: A0V7 (Plague Summon), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -107019,13 +107121,13 @@ STRING 17882
 }
 
 STRING 17883
-// Abilities: A0V2 (Call Admiral Guard), Hotkey (Hotkey - Normal)
+// Abilities: A041 (Otherworldly Rampage), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 17884
-// Abilities: A0TM (Spirit Orb), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0US (Protector of King's), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -107073,19 +107175,19 @@ Renewal - [|cffffcc00Level 3|r]
 }
 
 STRING 17892
-// Abilities: A0V2 (Call Admiral Guard), Researchhotkey (Hotkey - Learn)
+// Abilities: A0V3 (Knife Throw), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 17893
-// Abilities: A041 (Otherworldly Rampage), Hotkey (Hotkey - Normal)
+// Abilities: A0W9 (Elemental Fire), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 17894
-// Abilities: A0UF (Spike Aura), Researchhotkey (Hotkey - Learn)
+// Abilities: A0UX (Summon Zombie), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -107289,13 +107391,13 @@ Renewal
 }
 
 STRING 17928
-// Abilities: A0V3 (Knife Throw), Hotkey (Hotkey - Normal)
+// Abilities: A0W9 (Elemental Fire), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
 
 STRING 17929
-// Abilities: A0US (Protector of King's), Researchhotkey (Hotkey - Learn)
+// Abilities: A0V4 (Black Arrow), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -107313,13 +107415,13 @@ STRING 17931
 }
 
 STRING 17932
-// Upgrades: R071 (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
+// Upgrades: R07M (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 17933
-// Upgrades: R071 (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
+// Upgrades: R07M (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -107433,7 +107535,7 @@ Adds <A0WH,DataA4> bonus damage to the caster's attack.
 }
 
 STRING 17952
-// Abilities: A0UX (Summon Zombie), Hotkey (Hotkey - Normal)
+// Abilities: A0VE (Flame Shield), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -107504,12 +107606,6 @@ STRING 17963
 Quest Completed: The Exile from Outland
 }
 
-STRING 17964
-// Abilities: A0OJ (Fuel Refill), Ubertip (Tooltip - Normal - Extended)
-{
-Restores 5 mana to nearby oil units.|n|nWill be charged 10 mana per unit. Can refill up to 20 units.
-}
-
 STRING 17965
 // Upgrades: R082 (Chaos), Name (Name)
 {
@@ -107559,7 +107655,7 @@ Summon Water Elemental
 }
 
 STRING 17973
-// Upgrades: R07M (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R07N (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -107643,7 +107739,7 @@ F
 }
 
 STRING 17987
-// Abilities: A0W9 (Elemental Fire), Hotkey (Hotkey - Normal)
+// Abilities: A0WR (Molten Strike), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -107733,7 +107829,7 @@ R
 }
 
 STRING 18002
-// Abilities: A0V5 (Soul Burn), Hotkey (Hotkey - Normal)
+// Abilities: A0V7 (Plague Summon), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -107799,7 +107895,7 @@ Bouncing Attack
 }
 
 STRING 18013
-// Abilities: A0W9 (Elemental Fire), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WR (Molten Strike), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -107847,7 +107943,7 @@ Consumes an enemy unit, killing it instantly. Heals the caster for 50% of its hi
 }
 
 STRING 18021
-// Abilities: A0WR (Molten Strike), Hotkey (Hotkey - Normal)
+// Abilities: A0WU (Shadow Mend), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -107949,13 +108045,13 @@ Throws a magical hammer at a target enemy unit, dealing 400 damage and stunning 
 }
 
 STRING 18038
-// Abilities: A0WR (Molten Strike), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WU (Shadow Mend), Unhotkey (Hotkey - Turn Off)
 {
 Q
 }
 
 STRING 18039
-// Abilities: A0WU (Shadow Mend), Hotkey (Hotkey - Normal)
+// Abilities: A0WX (Curse of Flame), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -108345,13 +108441,13 @@ Allows the Azerite Siege Engine to move again.
 }
 
 STRING 18105
-// Abilities: A0WU (Shadow Mend), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0WX (Curse of Flame), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
 
 STRING 18106
-// Abilities: A0WX (Curse of Flame), Hotkey (Hotkey - Normal)
+// Abilities: A0X0 (Cremate), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -108369,7 +108465,7 @@ STRING 18108
 }
 
 STRING 18109
-// Abilities: A0V4 (Black Arrow), Hotkey (Hotkey - Normal)
+// Abilities: A0VW (Wrath of Ragnaros), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -108405,7 +108501,7 @@ STRING 18114
 }
 
 STRING 18115
-// Abilities: A0VE (Flame Shield), Hotkey (Hotkey - Normal)
+// Abilities: A0VW (Wrath of Ragnaros), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -108501,7 +108597,7 @@ An aura that gives friendly nearby units a damage shield, which deals 25% of an 
 }
 
 STRING 18131
-// Abilities: A0VW (Wrath of Ragnaros), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WP (Curse of Executus), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -108549,7 +108645,7 @@ Path Chosen
 }
 
 STRING 18139
-// Abilities: A0VW (Wrath of Ragnaros), Hotkey (Hotkey - Normal)
+// Abilities: A0WP (Curse of Executus), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -108591,7 +108687,7 @@ Protector of King's
 }
 
 STRING 18146
-// Abilities: A0WP (Curse of Executus), Researchhotkey (Hotkey - Learn)
+// Abilities: A0X1 (Flame Shield), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -108621,7 +108717,7 @@ Lilian Voss
 }
 
 STRING 18151
-// Abilities: A0WP (Curse of Executus), Hotkey (Hotkey - Normal)
+// Abilities: A0X8 (Summon Shadowspawn), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -108705,7 +108801,7 @@ Pulverize - [|cffffcc00Level 3|r]
 }
 
 STRING 18165
-// Abilities: A0X1 (Flame Shield), Hotkey (Hotkey - Normal)
+// Abilities: A0XE (Goblin Flare), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -108843,13 +108939,13 @@ Grants <A0WF,DataA1> bonus armor, <A0WF,DataB1> bonus hit points, <A0WF,DataC1> 
 }
 
 STRING 18188
-// Upgrades: R07M (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R07N (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 18189
-// Upgrades: R07N (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -108861,7 +108957,7 @@ Summon Zombie
 }
 
 STRING 18191
-// Abilities: A0X8 (Summon Shadowspawn), Hotkey (Hotkey - Normal)
+// Abilities: A0XC (Bloodlust), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -108969,7 +109065,7 @@ STRING 18208
 }
 
 STRING 18209
-// Abilities: A0XE (Goblin Flare), Hotkey (Hotkey - Normal)
+// Abilities: A0XC (Bloodlust), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -109041,7 +109137,7 @@ The hero takes aim and fires at an enemy unit, causing damage and stunning the t
 }
 
 STRING 18221
-// Abilities: A0WX (Curse of Flame), Researchhotkey (Hotkey - Learn)
+// Abilities: A0X0 (Cremate), Unhotkey (Hotkey - Turn Off)
 {
 Q
 }
@@ -109125,13 +109221,13 @@ STRING 18235
 }
 
 STRING 18236
-// Abilities: A0X0 (Cremate), Hotkey (Hotkey - Normal)
+// Abilities: A0X5 (Summon Fel Hounds), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 18237
-// Abilities: A0X0 (Cremate), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0X5 (Summon Fel Hounds), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -109173,7 +109269,7 @@ STRING 18243
 }
 
 STRING 18244
-// Abilities: A0X5 (Summon Fel Hounds), Hotkey (Hotkey - Normal)
+// Abilities: A0XD (Tinker), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -109185,7 +109281,7 @@ STRING 18245
 }
 
 STRING 18246
-// Upgrades: R07N (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -109408,7 +109504,7 @@ Train Dragon Rider
 }
 
 STRING 18283
-// Abilities: A0X5 (Summon Fel Hounds), Researchhotkey (Hotkey - Learn)
+// Abilities: A0XQ (Squall), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -109480,13 +109576,13 @@ Gives a 25% chance that an attack will deal 60 damage to nearby units in a large
 }
 
 STRING 18295
-// Abilities: A0XD (Tinker), Hotkey (Hotkey - Normal)
+// Abilities: A0HR (Heal), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 18296
-// Abilities: A0XQ (Squall), Hotkey (Hotkey - Normal)
+// Abilities: A0HR (Heal), Unhotkey (Hotkey - Turn Off)
 {
 Q
 }
@@ -109516,13 +109612,13 @@ Hurl a Dark Hammer towards an enemy unit, damaging them for 75 damage and stunni
 }
 
 STRING 18301
-// Abilities: A0HR (Heal), Hotkey (Hotkey - Normal)
+// Abilities: A0OA (Emergency Repairs), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 18302
-// Abilities: A0V5 (Soul Burn), Researchhotkey (Hotkey - Learn)
+// Abilities: A0VR (Blazing Aura), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -109546,7 +109642,7 @@ Adds <ACbk,DataA1> bonus damage to attacks. Units killed while under the effect 
 }
 
 STRING 18306
-// Abilities: A0XC (Bloodlust), Hotkey (Hotkey - Normal)
+// Abilities: A0XJ (Tsunami), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -109647,7 +109743,7 @@ STRING 18322
 }
 
 STRING 18323
-// Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
+// Upgrades: R08B (Long Rifles), Hotkey (Hotkey)
 {
 X
 }
@@ -109761,13 +109857,13 @@ Wreaths an enemy unit in magical flames which cause <ANso,DataA1> damage per sec
 }
 
 STRING 18342
-// Abilities: A0V7 (Plague Summon), Hotkey (Hotkey - Normal)
+// Abilities: A0VR (Blazing Aura), Researchhotkey (Hotkey - Learn)
 {
 W
 }
 
 STRING 18343
-// Abilities: A0V7 (Plague Summon), Researchhotkey (Hotkey - Learn)
+// Abilities: A0VU (Magma Blast), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -109809,13 +109905,13 @@ Summon Renault
 }
 
 STRING 18350
-// Abilities: A0VR (Blazing Aura), Hotkey (Hotkey - Normal)
+// Abilities: A0VU (Magma Blast), Researchhotkey (Hotkey - Learn)
 {
 W
 }
 
 STRING 18351
-// Abilities: A0VR (Blazing Aura), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WK (Dispel Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -109839,7 +109935,7 @@ STRING 18354
 }
 
 STRING 18355
-// Abilities: A0XC (Bloodlust), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0MJ (Parasite), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -109935,13 +110031,13 @@ Gives a 25% chance that an attack will deal 50 damage to nearby units.
 }
 
 STRING 18371
-// Abilities: A0HR (Heal), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0YU (Select Unit), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 18372
-// Abilities: A0XJ (Tsunami), Hotkey (Hotkey - Normal)
+// Abilities: A0MJ (Parasite), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -109953,7 +110049,7 @@ STRING 18373
 }
 
 STRING 18374
-// Abilities: A0VU (Magma Blast), Hotkey (Hotkey - Normal)
+// Abilities: A0WY (Banish), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -110165,7 +110261,7 @@ STRING 18408
 }
 
 STRING 18409
-// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 A
 }
@@ -110315,7 +110411,7 @@ Titanforged
 }
 
 STRING 18434
-// Abilities: A0MJ (Parasite), Hotkey (Hotkey - Normal)
+// Abilities: A0YQ (Bloodlust), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -110393,7 +110489,7 @@ Learn Curse of Executus - [|cffffcc00Level %d|r]
 }
 
 STRING 18447
-// Abilities: A0MJ (Parasite), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0YQ (Bloodlust), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -110423,13 +110519,13 @@ Reduces nearby enemy units' attack damage by <A0WP,DataA2,%>% for <A0WP,Dur2> se
 }
 
 STRING 18452
-// Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
+// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 18453
-// Upgrades: R08B (Long Rifles), Hotkey (Hotkey)
+// Upgrades: R08O (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -110513,13 +110609,13 @@ Learn Molten Strike - [|cffffcc00Level %d|r]
 }
 
 STRING 18467
-// Abilities: A0OA (Emergency Repairs), Hotkey (Hotkey - Normal)
+// Abilities: A0YU (Select Unit), Unhotkey (Hotkey - Turn Off)
 {
 Q
 }
 
 STRING 18468
-// Abilities: A0YQ (Bloodlust), Hotkey (Hotkey - Normal)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -110531,13 +110627,13 @@ D
 }
 
 STRING 18470
-// Abilities: A0VU (Magma Blast), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WY (Banish), Researchhotkey (Hotkey - Learn)
 {
 W
 }
 
 STRING 18471
-// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08O (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -110603,13 +110699,13 @@ Spawning Pit
 }
 
 STRING 18483
-// Abilities: A0YU (Select Unit), Hotkey (Hotkey - Normal)
+// Abilities: A0Z9 (Bile Shot), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 18484
-// Abilities: A0YU (Select Unit), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0Z9 (Bile Shot), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -110657,7 +110753,7 @@ STRING 18491
 }
 
 STRING 18492
-// Abilities: A0Z9 (Bile Shot), Hotkey (Hotkey - Normal)
+// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
 {
 Q
 }
@@ -110771,37 +110867,37 @@ Naga Sea Witch
 }
 
 STRING 18511
-// Abilities: A0WK (Dispel Magic), Hotkey (Hotkey - Normal)
-{
-W
-}
-
-STRING 18512
-// Abilities: A0WY (Banish), Hotkey (Hotkey - Normal)
-{
-W
-}
-
-STRING 18513
-// Abilities: A0WY (Banish), Researchhotkey (Hotkey - Learn)
-{
-W
-}
-
-STRING 18514
-// Abilities: A0Z9 (Bile Shot), Researchhotkey (Hotkey - Learn)
-{
-Q
-}
-
-STRING 18515
 // Abilities: A0WZ (Incinerate), Hotkey (Hotkey - Normal)
 {
 W
 }
 
-STRING 18516
+STRING 18512
 // Abilities: A0WZ (Incinerate), Researchhotkey (Hotkey - Learn)
+{
+W
+}
+
+STRING 18513
+// Abilities: A0X6 (Forked Lightning), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 18514
+// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
+{
+Q
+}
+
+STRING 18515
+// Abilities: A0X6 (Forked Lightning), Researchhotkey (Hotkey - Learn)
+{
+W
+}
+
+STRING 18516
+// Abilities: A0XH (Frost Shell), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -110867,7 +110963,7 @@ Summon Fire Wyrm
 }
 
 STRING 18527
-// Abilities: A0YQ (Bloodlust), Unhotkey (Hotkey - Turn Off)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -110987,19 +111083,19 @@ Q
 }
 
 STRING 18547
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 18548
-// Abilities: A0X6 (Forked Lightning), Hotkey (Hotkey - Normal)
+// Abilities: A0XH (Frost Shell), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
 
 STRING 18549
-// Abilities: A0X6 (Forked Lightning), Researchhotkey (Hotkey - Learn)
+// Abilities: A0XI (Dispel Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -111011,7 +111107,7 @@ STRING 18550
 }
 
 STRING 18551
-// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
+// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
 {
 Q
 }
@@ -111077,7 +111173,7 @@ STRING 18561
 }
 
 STRING 18562
-// Abilities: A0XH (Frost Shell), Hotkey (Hotkey - Normal)
+// Abilities: A0XR (Breath of Life), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -111107,7 +111203,7 @@ Gilneas Cathedral
 }
 
 STRING 18567
-// Abilities: A0XH (Frost Shell), Unhotkey (Hotkey - Turn Off)
+// Abilities: A03L (Explosive Ammo), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -111642,7 +111738,7 @@ R
 }
 
 STRING 18661
-// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
+// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
 {
 Q
 }
@@ -111654,7 +111750,7 @@ Q
 }
 
 STRING 18663
-// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
 Q
 }
@@ -111924,13 +112020,13 @@ R
 }
 
 STRING 18713
-// Abilities: A0XI (Dispel Magic), Hotkey (Hotkey - Normal)
+// Abilities: A03L (Explosive Ammo), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
 
 STRING 18714
-// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
 Q
 }
@@ -111948,13 +112044,13 @@ R
 }
 
 STRING 18717
-// Abilities: A0XR (Breath of Life), Hotkey (Hotkey - Normal)
+// Abilities: A0YK (Oil Lubrification), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 18718
-// Abilities: A03L (Explosive Ammo), Hotkey (Hotkey - Normal)
+// Abilities: A0YK (Oil Lubrification), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -112224,7 +112320,7 @@ Curse of Flame (|cffffcc00Q|r)
 }
 
 STRING 18764
-// Abilities: A03L (Explosive Ammo), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0Z7 (Earth's Grace), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -112278,7 +112374,7 @@ STRING 18772
 }
 
 STRING 18773
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -112296,13 +112392,13 @@ Gruul
 }
 
 STRING 18776
-// Abilities: A0YK (Oil Lubrification), Hotkey (Hotkey - Normal)
+// Abilities: A0Z7 (Earth's Grace), Researchhotkey (Hotkey - Learn)
 {
 W
 }
 
 STRING 18777
-// Abilities: A0YK (Oil Lubrification), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0O3 (Dispel Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -112446,13 +112542,13 @@ STRING 18800
 }
 
 STRING 18801
-// Abilities: A0Z7 (Earth's Grace), Hotkey (Hotkey - Normal)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
 
 STRING 18802
-// Abilities: A0Z7 (Earth's Grace), Researchhotkey (Hotkey - Learn)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -112902,7 +112998,7 @@ Q
 }
 
 STRING 18877
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -113490,25 +113586,25 @@ Q
 }
 
 STRING 18977
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
-{
-E
-}
-
-STRING 18978
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
-{
-E
-}
-
-STRING 18979
 // Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
 
+STRING 18978
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 18979
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+{
+E
+}
+
 STRING 18980
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -113610,7 +113706,7 @@ STRING 18996
 }
 
 STRING 18997
-// Upgrades: R08O (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
+// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 X
 }
@@ -113790,7 +113886,7 @@ STRING 19026
 }
 
 STRING 19027
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -113838,7 +113934,7 @@ Gives a total of <Aamk,DataA1> points to Intelligence, and Strength
 }
 
 STRING 19035
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -113910,7 +114006,7 @@ STRING 19046
 }
 
 STRING 19048
-// Upgrades: R08O (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
+// Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -114126,7 +114222,7 @@ Quel Tree Wall (Barrens)
 }
 
 STRING 19098
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
+// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
 {
 Q
 }
@@ -114192,7 +114288,7 @@ E
 }
 
 STRING 19109
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
@@ -114204,7 +114300,7 @@ The Forest will be unleashed upon the Warsong Lumber Camp.|n|n|cffffcc00Required
 }
 
 STRING 19111
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R090 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -114257,12 +114353,6 @@ STRING 19125
 (murloc)
 }
 
-STRING 19126
-// Abilities: A0MN (Oil Unit), Ubertip (Tooltip - Normal - Extended)
-{
-This unit carries Fuel instead of Mana. |n|nIt will not regenerate it over time, use Fuel Transport Vehicules to refuel your units.|n|nAll collected Oil is accumulated at your Oil Supply in Kezan. 
-}
-
 STRING 19127
 // Abilities: A03L (Explosive Ammo), EditorSuffix (Editor Suffix)
 {
@@ -114282,7 +114372,7 @@ Orb of Annihilation - [|cffffcc00Level 2|r]
 }
 
 STRING 19130
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
@@ -114414,7 +114504,7 @@ Lubrificated
 }
 
 STRING 19154
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: R01B (Defend), Hotkey (Hotkey)
 {
 W
 }
@@ -114432,7 +114522,7 @@ STRING 19156
 }
 
 STRING 19157
-// Upgrades: R090 (Defend), Hotkey (Hotkey)
+// Upgrades: R091 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -114546,7 +114636,7 @@ STRING 19175
 }
 
 STRING 19176
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 W
 }
@@ -114612,7 +114702,7 @@ Snarlmane
 }
 
 STRING 19187
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
+// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
 {
 Q
 }
@@ -114665,7 +114755,7 @@ Build Gnoll Kennel
 }
 
 STRING 19196
-// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
+// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
 {
 Q
 }
@@ -114695,7 +114785,7 @@ Build Defias Hideout
 }
 
 STRING 19201
-// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
+// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
 {
 Q
 }
@@ -114826,18 +114916,6 @@ STRING 19222
 D
 }
 
-STRING 19223
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
-{
-E
-}
-
-STRING 19224
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
-{
-E
-}
-
 STRING 19225
 // Upgrades: R034 (Improved Bows), Hotkey (Hotkey)
 {
@@ -114857,7 +114935,7 @@ Z
 }
 
 STRING 19228
-// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -114869,7 +114947,7 @@ Z
 }
 
 STRING 19232
-// Upgrades: R091 (Defend), Hotkey (Hotkey)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
@@ -114965,13 +115043,13 @@ Q
 }
 
 STRING 19251
-// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
+// Upgrades: R020 (Defend), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 19252
-// Upgrades: R01B (Defend), Hotkey (Hotkey)
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 W
 }
@@ -115337,22 +115415,10 @@ STRING 19314
 Earth's Grace
 }
 
-STRING 19315
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
-{
-W
-}
-
 STRING 19316
 // Upgrades: Rews (Well Spring), Hotkey (Hotkey)
 {
 R
-}
-
-STRING 19318
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
-{
-W
 }
 
 STRING 19319
@@ -115434,7 +115500,7 @@ Binds a target unit so that it cannot move or attack and takes 50 damage per sec
 }
 
 STRING 19332
-// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
+// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Q
 }
@@ -115524,13 +115590,7 @@ Blasts enemy units with a wave of plague that deals 175 damage to the target, an
 }
 
 STRING 19349
-// Upgrades: R020 (Defend), Hotkey (Hotkey)
-{
-Q
-}
-
-STRING 19350
-// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
 {
 Q
 }
@@ -115631,12 +115691,6 @@ STRING 19369
 Build Coral of War
 }
 
-STRING 19370
-// Units: e01T (Coral of War), Ubertip (Tooltip - Extended)
-{
-Ancient of the warrior Sentinels.|n|cfff5962dTrains:|R Sapling, Dryad, Siege Ancient|n|cfff5962dResearches:|R Improved Thorns, Crippling Poison, Deadly Poison, Limber Timber|n|n|cffffcc00Attacks land units.|r
-}
-
 STRING 19371
 // Units: e01T (Coral of War), Name (Name)
 {
@@ -115655,12 +115709,6 @@ STRING 19373
 Build Coral of Lore
 }
 
-STRING 19374
-// Units: e01U (Coral of Lore), Ubertip (Tooltip - Extended)
-{
-Ancient keeper of the forest dwellers.|n|cfff5962dTrains:|R Druid of the Claw, Mountain Giant|n|cfff5962dResearches:|R Druid of the Claw Training, Resistant Skin|n|n|cffffcc00Attacks land units.|r
-}
-
 STRING 19375
 // Units: e01U (Coral of Lore), Name (Name)
 {
@@ -115677,12 +115725,6 @@ STRING 19377
 // Units: e01V (Coral of Wind), Tip (Tooltip - Basic)
 {
 Build Coral of Wind
-}
-
-STRING 19378
-// Units: e01V (Coral of Wind), Ubertip (Tooltip - Extended)
-{
-Keeper of aerial brethren and spellweavers of the forest.|n|cfff5962dTrains: |RDruids of the Talon, Faerie Dragon, Green Dragon|n|cfff5962dResearches: |RDruid of the Talon Training, Improved Mana Flare, Emerald Flames|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 19379
@@ -115781,12 +115823,6 @@ STRING 19394
 (Illidan)
 }
 
-STRING 19395
-// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
-{
-Q
-}
-
 STRING 19397
 // Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
@@ -115800,7 +115836,7 @@ S
 }
 
 STRING 19402
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
 {
 A
 }

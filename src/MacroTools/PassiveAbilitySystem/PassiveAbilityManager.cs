@@ -74,7 +74,9 @@ namespace MacroTools.PassiveAbilitySystem
         PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, passiveAbility.OnTrainedUnit, unitTypeId);
         PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesBeingConstructed, passiveAbility.OnConstruction, unitTypeId);
         PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesUpgrade, passiveAbility.OnUpgrade, unitTypeId);
+        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDies, passiveAbility.OnDeath, unitTypeId);
         PlayerUnitEvents.Register(PlayerUnitEvent.HeroTypeFinishesRevive, UnitCreated, unitTypeId);
+        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeReceivesPointOrder, passiveAbility.OnOrderIssued, unitTypeId);
 
         if (passiveAbility is IAppliesEffectOnDamage appliesEffectOnDamage)
           PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, appliesEffectOnDamage.OnDealsDamage, unitTypeId);
