@@ -13,6 +13,15 @@ namespace MacroTools.Extensions
     private const float HeroDropDist = 50; //The radius in which heroes spread out items when they drop them
 
     /// <summary>
+    /// Determines whether or not the unit explodes on death.
+    /// </summary>
+    public static unit SetExplodeOnDeath(this unit whichUnit, bool flag)
+    {
+      SetUnitExploded(whichUnit, flag);
+      return whichUnit;
+    }
+    
+    /// <summary>
     /// Gets the unit's unit level if it's a unit, or hero level if it's a hero.
     /// </summary>
     public static int GetLevel(this unit whichUnit) =>

@@ -83847,12 +83847,6 @@ STRING 13975
 Further increases the armor of all units.
 }
 
-STRING 13976
-// Units: u014 (Laboratory), Ubertip (Tooltip - Extended)
-{
-Mad Laboratory for Plague experimentation.|n|cfff5962dTrains:|R Apothecary, Plague Catapult, Plague Revenant|n|cfff5962dResearches:|R Apothecary Training, Split Soul
-}
-
 STRING 13977
 // Units: n07W (Plague Revenant), Name (Name)
 {
@@ -96959,22 +96953,10 @@ STRING 16169
 Persistent Soul - [|cffffcc00Level 1|r]
 }
 
-STRING 16170
-// Abilities: A05L (Persistent Soul), Ubertip (Tooltip - Normal - Extended)
-{
-When this unit dies, it reanimates the highest level nearby friendly unit for 40 seconds.
-}
-
 STRING 16171
 // Abilities: A05L (Persistent Soul), EditorSuffix (Editor Suffix)
 {
 (Forsaken - Plague Revenant)
-}
-
-STRING 16172
-// Abilities: A05L (Persistent Soul), Ubertip (Tooltip - Normal - Extended)
-{
-When this unit dies, it reanimates the two highest level nearby friendly units for 40 seconds.
 }
 
 STRING 16173
@@ -98797,12 +98779,6 @@ STRING 16478
 Intercontinental Artillery
 }
 
-STRING 16479
-// Upgrades: R08T (Cannibalize), Hotkey (Hotkey)
-{
-S
-}
-
 STRING 16480
 // Units: h011 (Intercontinental Artillery), Tip (Tooltip - Basic)
 {
@@ -100105,6 +100081,12 @@ STRING 16696
 A sturdy transport ship capable of carrying units over the sea.|n|n|cff99b4d1Can only build 12.|r|n|cff00ffffCan transport 10 units.
 }
 
+STRING 16697
+// Units: u014 (Laboratory), Ubertip (Tooltip - Extended)
+{
+Mad Laboratory for Plague experimentation.|n|cfff5962dTrains:|R Plague Flyer, Plague Catapult, Plague Revenant|n|cfff5962dResearches:|R Split Soul
+}
+
 STRING 16698
 // Units: ebsh (Cruiser), Ubertip (Tooltip - Extended)
 {
@@ -100171,6 +100153,12 @@ STRING 16708
 Warrior hero, adept at melee combat and bolstering nearby allies.|n|cfff5962dAbilities:|r Critical Strike|n|cfff5962dCan Learn:|R White Wolf's Fury, Goldrinn's Howl, Vampiric Aura, Reincarnation|n|n|cffffcc00Attacks land units.|R
 }
 
+STRING 16709
+// Upgrades: R08T (Cannibalize), effect1 (Effect 1)
+{
+rlev
+}
+
 STRING 16710
 // Abilities: A0RX (Raise Plaguelings), Researchhotkey (Hotkey - Learn)
 {
@@ -100181,6 +100169,18 @@ STRING 16711
 // Abilities: A0RZ (Arcane Bomb), Hotkey (Hotkey - Normal)
 {
 E
+}
+
+STRING 16712
+// Abilities: A05L (Persistent Soul), Ubertip (Tooltip - Normal - Extended)
+{
+When this unit dies, it reanimates the highest level nearby corpse for 40 seconds.
+}
+
+STRING 16713
+// Abilities: A05L (Persistent Soul), Ubertip (Tooltip - Normal - Extended)
+{
+When this unit dies, it reanimates the two highest level nearby corpses for 40 seconds.
 }
 
 STRING 16715
