@@ -218,9 +218,6 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(unholyArmor);
 
-      var corruptBuilding = new CorruptBuildingSpell(Constants.ABILITY_A0N8_CORRUPT_FORSAKEN, 6, 500);
-      SpellSystem.Register(corruptBuilding);
-
       PassiveAbilityManager.Register(new RegionRestricted(Constants.UNIT_H097_GUARD_POST_SCARLET,
         new[]
         {
@@ -258,6 +255,7 @@ namespace WarcraftLegacies.Source.Setup
       QuelthalasSpellSetup.Setup();
       KulTirasSpellSetup.Setup();
       StormwindSpellSetup.Setup();
+      ForsakenSpellSetup.Setup();
     }
   }
 }

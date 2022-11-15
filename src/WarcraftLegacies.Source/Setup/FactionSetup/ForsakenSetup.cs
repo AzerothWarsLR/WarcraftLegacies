@@ -57,6 +57,7 @@ To do so, march North to Quel'thalas and capture the Sunwell. This will unlock S
       Forsaken.ModObjectLimit(FourCC("ubot"), 12); //Undead Transport Ship
       Forsaken.ModObjectLimit(FourCC("udes"), 12); //Undead Frigate
       Forsaken.ModObjectLimit(FourCC("uubs"), 6); //Undead Battleship
+      Forsaken.ModObjectLimit(Constants.UNIT_N07W_PLAGUE_REVENANT_FORSAKEN, 12);
 
       Forsaken.ModObjectLimit(FourCC("U01O"), 1); //Putress
       Forsaken.ModObjectLimit(FourCC("Usyl"), 1); //Sylvanas
@@ -68,6 +69,7 @@ To do so, march North to Quel'thalas and capture the Sunwell. This will unlock S
       Forsaken.ModObjectLimit(FourCC("R051"), Faction.UNLIMITED); //Apotechary Training
       Forsaken.ModObjectLimit(FourCC("R02X"), Faction.UNLIMITED); // Open Scholomance
       Forsaken.ModObjectLimit(FourCC("R02A"), Faction.UNLIMITED); //Chaos Infusion
+      Forsaken.ModObjectLimit(Constants.UPGRADE_R08T_SPLIT_SOUL_FORSAKEN, Faction.UNLIMITED);
 
       FactionManager.Register(Forsaken);
     }

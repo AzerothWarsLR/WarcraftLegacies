@@ -1,6 +1,7 @@
 ﻿using MacroTools.Extensions;
-using static MacroTools.Libraries.GeneralHelpers;
 using static WarcraftLegacies.Source.AmbianceLibrary;
+using static War3Api.Blizzard;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup
 {
@@ -14,10 +15,18 @@ namespace WarcraftLegacies.Source.Setup
     /// </summary>
     public static void Setup()
     {
+      StopDefaultAmbientSounds();
       SetupEasternKingdoms();
       SetupKalimdor();
     }
-    
+
+
+    private static void StopDefaultAmbientSounds()
+    {
+      StopSound(bj_dayAmbientSound, true, true);
+      StopSound(bj_nightAmbientSound, true, true);
+    }
+
     private static void SetupEasternKingdoms()
     {
       Regions.QuelthalasAmbient.AddSound(LordaeronSummerDay);
