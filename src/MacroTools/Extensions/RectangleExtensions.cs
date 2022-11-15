@@ -21,24 +21,92 @@ namespace MacroTools.Extensions
       SetSoundPosition(soundHandle, GetRectCenterX(region.Rect), GetRectCenterY(region.Rect), 0);
       RegisterStackedSound(soundHandle, true, width, height);
     }
+    
+    /// <summary>
+    /// Creates a group of units inside the specified <paramref name="area"/> that belong to <paramref name="owningUnitsPlayer"/>.
+    /// </summary>
+    /// <param name="area">The area in which to get the group of units.</param>
+    /// <returns>A list of all units found in the specified area</returns>
+    public static List<unit> PrepareUnitsForRescue(this Rectangle area)
+    {
+      var group = new GroupWrapper()
+        .EnumUnitsInRect(area)
+        .EmptyToList();
+      return group;
+    }
+    
+    /// <summary>
+    /// Creates a group of units inside the specified <paramref name="area"/> that belong to <paramref name="owningUnitsPlayer"/>.
+    /// </summary>
+    /// <param name="area">The area in which to make units invulnerable.</param>
+    /// <param name="owningUnitsPlayer">Only units owned by this player will be made invulnerable.</param>
+    /// <returns>A list of all units found in the specified area that belong to <paramref name="owningUnitsPlayer"/>.</returns>
+    public static List<unit> PrepareUnitsForRescue(this Rectangle area,player owningUnitsPlayer)
+    {
+      var group = PrepareUnitsForRescue(area)
+        .Where(x => x.OwningPlayer() == owningUnitsPlayer)
+        .ToList();
+      return group;
+    }
 
     /// <summary>
     /// Renders all units inside the specified <paramref name="area"/> that belong to <paramref name="owningUnitsPlayer"/> invulnerable.
     /// </summary>
     /// <param name="area">The area in which to make units invulnerable.</param>
     /// <param name="owningUnitsPlayer">Only units owned by this player will be made invulnerable.</param>
+    /// <param name="invulnerable">Flag for if units should be made invulnerable</param>
     /// <returns>A list of all units found in the specified area that belong to <paramref name="owningUnitsPlayer"/>.</returns>
-    public static List<unit> PrepareUnitsForRescue(this Rectangle area, player owningUnitsPlayer)
+    public static List<unit> PrepareUnitsForRescue(this Rectangle area, player owningUnitsPlayer, bool invulnerable)
     {
-      var group = new GroupWrapper()
-        .EnumUnitsInRect(area)
-        .EmptyToList()
-        .Where(x => x.OwningPlayer() == owningUnitsPlayer)
-        .ToList();
+      var group = PrepareUnitsForRescue(area, owningUnitsPlayer);
+      if (!invulnerable) return group;
       foreach (var unit in group)
       {
         unit.SetInvulnerable(true);
-        if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE)) 
+      }
+      return group;
+    }
+    
+    /// <summary>
+    /// Renders all units inside the specified <paramref name="area"/> that belong to <paramref name="owningUnitsPlayer"/> invulnerable.
+    /// </summary>
+    /// <param name="area">The area in which to make units invulnerable.</param>
+    /// <param name="owningUnitsPlayer">Only units owned by this player will be made invulnerable.</param>
+    /// <param name="invulnerable">Flag for if units should be made invulnerable</param>
+    /// <param name="hideUnits">Flag for if units should be hidden</param>
+    /// <returns>A list of all units found in the specified area that belong to <paramref name="owningUnitsPlayer"/>.</returns>
+    public static List<unit> PrepareUnitsForRescue(this Rectangle area, player owningUnitsPlayer, bool invulnerable, bool hideUnits)
+    {
+      var group = PrepareUnitsForRescue(area, owningUnitsPlayer);
+      foreach (var unit in group)
+      {
+        if (invulnerable)
+          unit.SetInvulnerable(true);
+        if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideUnits)
+          unit.Show(false);
+      }
+      return group;
+    }
+    
+    /// <summary>
+    /// Renders all units inside the specified <paramref name="area"/> that belong to <paramref name="owningUnitsPlayer"/> invulnerable.
+    /// </summary>
+    /// <param name="area">The area in which to make units invulnerable.</param>
+    /// <param name="owningUnitsPlayer">Only units owned by this player will be made invulnerable.</param>
+    /// <param name="invulnerable">Flag for if units should be made invulnerable</param>
+    /// <param name="hideUnits">Flag for if units should be hidden</param>
+    /// <param name="hideStructures">Flag for if structures should be hidden</param>
+    /// <returns>A list of all units found in the specified area that belong to <paramref name="owningUnitsPlayer"/>.</returns>
+    public static List<unit> PrepareUnitsForRescue(this Rectangle area, player owningUnitsPlayer, bool invulnerable, bool hideUnits, bool hideStructures)
+    {
+      var group = PrepareUnitsForRescue(area, owningUnitsPlayer);
+      foreach (var unit in group)
+      {
+        if (invulnerable)
+          unit.SetInvulnerable(true);
+        if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideStructures)
+          unit.Show(false);
+        if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideUnits)
           unit.Show(false);
       }
       return group;

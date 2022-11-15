@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       "ReplaceableTextures\\CommandButtons\\BTNNagaWeaponUp2.blp")
     {
       _highBourneArea = area;
-      _highBourneAreaUnits = _highBourneArea.PrepareUnitsForRescue(Player(GetPlayerNeutralPassive()));
+      _highBourneAreaUnits = _highBourneArea.PrepareUnitsForRescue(Player(GetPlayerNeutralPassive()),true);
       ResearchId = Constants.UPGRADE_R02O_QUEST_COMPLETED_RETURN_TO_THE_FOLD_SENTINELS;
       AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendSentinels.legendFeathermoon));
       AddObjective(new ObjectiveLegendDead(LegendWarsong.StonemaulKeep));

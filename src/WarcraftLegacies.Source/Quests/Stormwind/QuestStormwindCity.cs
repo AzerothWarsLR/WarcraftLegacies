@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_H06K_TOWN_HALL_STORMWIND, Constants.UNIT_H06N_CASTLE_STORMWIND));
       AddObjective(new ObjectiveExpire(1020));
       AddObjective(new ObjectiveSelfExists());
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE));
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE),true);
       ResearchId = Constants.UPGRADE_R02S_QUEST_COMPLETED_CLEAR_THE_OUTSKIRTS;
       Required = true;
     }

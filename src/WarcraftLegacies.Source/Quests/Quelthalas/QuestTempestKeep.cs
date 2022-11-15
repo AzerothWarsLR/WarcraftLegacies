@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       AddObjective(new ObjectiveControlLegend(LegendQuelthalas.LegendKael, true));
       AddObjective(new ObjectiveCompleteQuest(prequel));
       ResearchId = Constants.UPGRADE_R073_QUEST_COMPLETED_TEMPEST_KEEP;
-      _rescueUnits = tempestKeepRect.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE));
+      _rescueUnits = tempestKeepRect.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE),true);
     }
 
     protected override void OnComplete(Faction completingFaction)

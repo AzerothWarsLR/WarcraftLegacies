@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
 
     /// <inheritdoc />
     protected override string CompletionPopup =>
-      "The Draenei have holded long enough and most of their civilisation had time to join the Exodar";
+      "The Draenei have held long enough and most of their civilisation had time to join the Exodar";
 
     /// <inheritdoc />
     protected override string PenaltyDescription =>

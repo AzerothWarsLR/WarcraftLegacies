@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_HCAS_CASTLE, Constants.UNIT_HTOW_TOWN_HALL));
       AddObjective(new ObjectiveExpire(1470));
       AddObjective(new ObjectiveSelfExists());
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE));
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(Player(PLAYER_NEUTRAL_PASSIVE),true);
       Required = true;
     }
 
