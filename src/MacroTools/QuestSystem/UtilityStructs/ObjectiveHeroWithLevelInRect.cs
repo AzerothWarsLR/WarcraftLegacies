@@ -1,7 +1,5 @@
-using System;
-using System.Linq;
+﻿using System.Linq;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -9,27 +7,27 @@ using static War3Api.Common;
 namespace MacroTools.QuestSystem.UtilityStructs
 {
   /// <summary>
-  /// Completed when an eligible player moves a unit into the specified <see cref="Rectangle"/>.
+  /// Completed when an eligible player enters the provided <see cref="Rectangle"/> with a hero of the appropriate level.
   /// </summary>
-  public sealed class ObjectiveAnyUnitInRect : Objective, IHasCompletingUnit
+  public sealed class ObjectiveHeroWithLevelInRect : Objective, IHasCompletingUnit
   {
-    private readonly bool _heroOnly;
     private readonly rect _targetRect;
+    private readonly int _targetLevel;
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="ObjectiveAnyUnitInRect"/> class.
+    /// Initializes a new instance of the <see cref="ObjectiveHeroWithLevelInRect"/> class.
     /// </summary>
-    /// <param name="targetRect">Where the player has to move a unit.</param>
-    /// <param name="rectName">A user-friendly name for the area.</param>
-    /// <param name="heroOnly">If true, can only be completed with a hero.</param>
-    public ObjectiveAnyUnitInRect(Rectangle targetRect, string rectName, bool heroOnly)
+    /// <param name="targetLevel">Minimum required level to complete the objective</param>
+    /// <param name="targetRect">Region that the unit has to enter in order to complete the objective</param>
+    /// <param name="rectName">Display name of the region the unit has to enter. Used for flavor only.</param>
+    public ObjectiveHeroWithLevelInRect(int targetLevel, Rectangle targetRect, string rectName)
     {
       _targetRect = targetRect.Rect;
-      Description = heroOnly ? $"You have a hero at {rectName}" : $"You have a unit at {rectName}";
-      _heroOnly = heroOnly;
-      DisplaysPosition = true;
+      _targetLevel = targetLevel;
+      Description = $"Reach {rectName} with a level {targetLevel}+ hero";
       PingPath = "MinimapQuestTurnIn";
-
+      DisplaysPosition = true;
+      
       CreateTrigger()
         .RegisterEnterRegion(targetRect)
         .AddAction(() =>
@@ -55,23 +53,18 @@ namespace MacroTools.QuestSystem.UtilityStructs
     }
 
     /// <inheritdoc />
-    public override Point Position => new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
-
-    /// <inheritdoc />
     public unit? CompletingUnit { get; private set; }
-
+    
     /// <inheritdoc />
     public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : "an unknown hero";
+    
+    /// <inheritdoc/>
+    public override Point Position => new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
 
     private bool IsUnitValid(unit whichUnit) =>
-      EligibleFactions.Contains(whichUnit.OwningPlayer()) && whichUnit.IsAlive() &&
-      (IsUnitType(whichUnit, UNIT_TYPE_HERO) || !_heroOnly);
+      EligibleFactions.Contains(whichUnit.OwningPlayer()) && whichUnit.IsAlive() && IsUnitType(whichUnit, UNIT_TYPE_HERO) &&
+      GetHeroLevel(whichUnit) >= _targetLevel;
 
     private bool IsValidUnitInRect() => new GroupWrapper().EnumUnitsInRect(_targetRect).EmptyToList().Any(IsUnitValid);
-
-    internal override void OnAdd(Faction whichFaction)
-    {
-      Progress = IsValidUnitInRect() ? QuestProgress.Complete : QuestProgress.Incomplete;
-    }
   }
 }

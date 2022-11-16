@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Setup
     public static Artifact? ArtifactHelmofdomination { get; private set; }
     public static Artifact? ArtifactDrektharsspellbook { get; private set; }
     public static Artifact? ArtifactScepterofthequeen { get; private set; }
-    public static Artifact? ArtifactBookofmedivh { get; private set; }
+    public static Artifact? BookOfMedivh { get; private set; }
     public static Artifact? ArtifactSoulgem { get; private set; }
     public static Artifact? ArtifactHornofcenarius { get; private set; }
     public static Artifact? ArtifactEyeofsargeras { get; private set; }
@@ -96,11 +96,11 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("n085")), ArtifactScepterofthequeen.Item);
       ArtifactManager.Register(ArtifactScepterofthequeen);
 
-      ArtifactBookofmedivh = new Artifact(CreateItem(FourCC("I006"), DummyX, DummyY)); //Book of Medivh
+      BookOfMedivh = new Artifact(CreateItem(FourCC("I006"), DummyX, DummyY)); //Book of Medivh
       UnitAddAbility(PreplacedUnitSystem.GetUnit(FourCC("nbsm_1188")),
         Artifact.ArtifactHolderAbilId); //Book of Medivh Pedestal
-      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("nbsm")), ArtifactBookofmedivh.Item);
-      ArtifactManager.Register(ArtifactBookofmedivh);
+      UnitAddItem(PreplacedUnitSystem.GetUnit(FourCC("nbsm")), BookOfMedivh.Item);
+      ArtifactManager.Register(BookOfMedivh);
 
       ArtifactSkullofguldan = new Artifact(CreateItem(FourCC("I007"), 21886, -25219))
       {

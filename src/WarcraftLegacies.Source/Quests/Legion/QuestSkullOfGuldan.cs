@@ -30,13 +30,13 @@ namespace WarcraftLegacies.Source.Quests.Legion
     protected override string CompletionPopup => "The Skull of Gul'dan";
 
     protected override string RewardDescription => "The Skull of Gul'dan has been retrieved by " +
-                                                   GetHeroProperName(_objectiveAnyUnitInRect.TriggerUnit) +
+                                                   GetHeroProperName(_objectiveAnyUnitInRect.CompletingUnit) +
                                                    ". Its nefarious energies will fuel the Legion's operations on Azeroth.";
 
     protected override void OnComplete(Faction completingFaction)
     {
       ArtifactSetup.ArtifactSkullofguldan.LocationType = ArtifactLocationType.Ground;
-      _objectiveAnyUnitInRect.TriggerUnit.AddItemSafe(ArtifactSetup.ArtifactSkullofguldan.Item);
+      _objectiveAnyUnitInRect.CompletingUnit.AddItemSafe(ArtifactSetup.ArtifactSkullofguldan.Item);
     }
 
     protected override void OnFail(Faction completingFaction)

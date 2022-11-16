@@ -22,6 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BG"))));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R055");
+      Required = true;
       _rescueUnits.Add(PreplacedUnitSystem.GetUnit(FourCC("n0BE"), Regions.Eastern_Northrend.Center));
       _rescueUnits.Add(PreplacedUnitSystem.GetUnit(FourCC("n0BE"), Regions.InstanceOutland.Center));
     }
