@@ -1,11 +1,6 @@
-﻿using System.Collections.Generic;
-using MacroTools;
-using MacroTools.ControlPointSystem;
-using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+﻿using MacroTools;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Frostwolf
@@ -13,7 +8,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
   /// <summary>
   /// Quest for capturing Stonemaul Keep.
   /// </summary>
-  public sealed class QuestStonemaul : QuestData
+  public sealed class QuestRexxar : QuestData
   {
 
     //Todo: bad flavour
@@ -25,9 +20,9 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     protected override string RewardDescription => "Enable to train Rexxar at the Altar";
     
     /// <summary>
-    /// Initializes a new instance of the <see cref="QuestStonemaul"/> class.
+    /// Initializes a new instance of the <see cref="QuestRexxar"/> class.
     /// </summary>
-    public QuestStonemaul() : base("The Chieftain's Challenge",
+    public QuestRexxar() : base("The Chieftain's Challenge",
       "Rexxar is having trouble with a beligerent Ogre Warlord, slay the Chieftain to gain the heroe's allegiance.",
       "ReplaceableTextures\\CommandButtons\\BTNOneHeadedOgre.blp")
     {

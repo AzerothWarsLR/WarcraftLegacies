@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
@@ -7,6 +7,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
   public static class LegendNeutral
   {
     public static Legend LegendRagnaros { get; private set; }
+    public static Legend LegendMorghor { get; private set; }
     public static Legend LegendSeawitch { get; private set; }
     public static Legend LegendAuchindoun { get; private set; }
     public static Legend LegendDraktharonkeep { get; private set; }
@@ -46,6 +47,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage = "Ragnaros, the King of Fire and Lord of the Firelands, has been extinguished."
       };
       Legend.Register(LegendRagnaros);
+
+      LegendMorghor = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("N0DA")),
+        DeathMessage = "Mor'ghor, the tyrant of the Twilight Highlands, has been defeated."
+      };
+      Legend.Register(LegendMorghor);
 
       LegendSeawitch = new Legend
       {

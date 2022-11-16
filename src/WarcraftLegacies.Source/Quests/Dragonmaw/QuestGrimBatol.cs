@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -20,8 +20,8 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
 
     public QuestGrimBatol(Rectangle rescueRect, unit grimBatol, unit waygateA, unit waygateB) : base(
       "The Cursed Fortress",
-      "The mountain fortress of Grim Batol will be the perfect stronghold for the Twilight hammer clan. It has served well in the past and will do so again.",
-      "ReplaceableTextures\\CommandButtons\\BTNFortressWC2blp")
+      "The mountain fortress of Grim Batol will be the perfect stronghold for the Dragonmaw clan. It has served well in the past and will do so again.",
+      "ReplaceableTextures\\CommandButtons\\BTNDarkIronLair.blp")
     {
       _grimBatol = grimBatol;
       _waygateA = waygateA;
@@ -30,7 +30,6 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03X"))));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n04V"))));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09F"))));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n08T"))));
       AddObjective(new ObjectiveExpire(1428));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R06Y_QUEST_COMPLETED_THE_CURSED_FORTRESS;
@@ -47,10 +46,10 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
 
     //Todo: bad flavour
     protected override string CompletionPopup =>
-      "Grim Batol is now under our control, and its military is now free to assist the Twilight Hammer.";
+      "Grim Batol is now under our control, and its military is now free to assist the Dragonmaw.";
 
     protected override string RewardDescription =>
-      "Control of all units in Grim Batol and able to train Orcish Death Knights";
+      "Control of all units in Grim Batol";
 
     protected override void OnFail(Faction completingFaction)
     {
