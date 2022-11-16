@@ -1,4 +1,5 @@
 ﻿using System;
+using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
@@ -58,18 +59,16 @@ namespace MacroTools.QuestSystem.UtilityStructs
 
       _position = position;
 
-      SetUnitX(caster, position.X);
-      SetUnitY(caster, position.Y);
-      _sfxProgress = AddSpecialEffect(ProgressEffect, GetUnitX(caster), GetUnitY(caster));
-      BlzSetSpecialEffectTimeScale(_sfxProgress, 10 / duration);
-      BlzSetSpecialEffectColorByPlayer(_sfxProgress, GetOwningPlayer(caster));
-      BlzSetSpecialEffectScale(_sfxProgress, ProgressScale);
-      BlzSetSpecialEffectHeight(_sfxProgress,
-        ProgressHeight + Environment.GetPositionZ(position.X, position.Y));
+      caster.SetPosition(_position)
+        .Pause(true)
+        .SetAnimation("channel")
+        .SetFacingEx(facing);
+      _sfxProgress = AddSpecialEffect(ProgressEffect, GetUnitX(caster), GetUnitY(caster))
+        .SetTimeScale(10 / duration)
+        .SetColor(caster.OwningPlayer())
+        .SetScale(ProgressScale)
+        .SetHeight(ProgressHeight + Environment.GetPositionZ(position));
       _sfx = AddSpecialEffect(Effect, GetUnitX(caster), GetUnitY(caster));
-      PauseUnit(caster, true);
-      SetUnitAnimation(caster, "channel");
-      BlzSetUnitFacingEx(caster, facing);
 
       if (global)
       {
