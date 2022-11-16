@@ -271,8 +271,19 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public event EventHandler<FactionNameChangeEventArgs>? NameChanged;
 
-    public static event EventHandler<Faction>? GameLeave;
+    /// <summary>
+    /// Fired after the <see cref="Faction"/> leaves the game.
+    /// </summary>
+    public event EventHandler<Faction>? LeftGame;
+    
+    /// <summary>
+    /// Fired when the <see cref="Faction"/>'s has changed.
+    /// </summary>
     public static event EventHandler<Faction>? IconChanged;
+    
+    /// <summary>
+    /// Fired after the <see cref="Faction"/>'s status has changed.
+    /// </summary>
     public static event EventHandler<Faction>? StatusChanged;
 
     /// <summary>
@@ -594,7 +605,7 @@ namespace MacroTools.FactionSystem
         Obliterate();
       }
 
-      GameLeave?.Invoke(this, this);
+      LeftGame?.Invoke(this, this);
     }
 
     private void RemoveGoldMines()

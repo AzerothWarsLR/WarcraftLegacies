@@ -44,7 +44,14 @@ namespace MacroTools.PassiveAbilitySystem
     public virtual void OnDeath()
     {
     }
-
+    
+    /// <summary>
+    /// Fired when the unit finishes casting a spell.
+    /// </summary>
+    public virtual void OnSpellFinish()
+    {
+    }
+    
     /// <summary>
     /// Fired when a unit of the matching unit type finishes being constructed.
     /// </summary>

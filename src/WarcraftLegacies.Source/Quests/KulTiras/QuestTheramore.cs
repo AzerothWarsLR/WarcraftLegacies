@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     {
       AddObjective(new ObjectiveResearch(RequiredResearch, Constants.UNIT_H076_ALLIANCE_SHIPYARD_DALARAN));
       AddObjective(new ObjectiveSelfExists());
-      _rescueUnits = theramoreRect.PrepareUnitsForRescue(RectangleExtensions.RescueMode.HideUnits);
+      _rescueUnits = theramoreRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
     /// <inheritdoc />

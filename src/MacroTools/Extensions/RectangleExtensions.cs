@@ -13,28 +13,6 @@ namespace MacroTools.Extensions
   public static class RectangleExtensions
   {
     /// <summary>
-    /// The mode to use when rescuing group of nuetral passive units in the region
-    /// </summary>
-    public enum RescueMode
-    {
-      /// <summary>
-      /// Just return the group of nuetral passive units.
-      /// </summary>
-      Group,
-      /// <summary>
-      /// Return the group of nuetral passive units and set them to be invulnerable.
-      /// </summary>
-      Invulnerable,
-      /// <summary>
-      /// Return the group of nuetral passive units and set them to be invulnerable and hide the units.
-      /// </summary>
-      HideUnits,
-      /// <summary>
-      /// Return the group of nuetral passive units and set them to be invulnerable, hide the units, and hide structures.
-      /// </summary>
-      HideStructures
-    }
-    /// <summary>
     /// Causes the provided sound to be played as ambience whenever a player has their camera near this <see cref="Rectangle"/>.
     /// </summary>
     public static void AddSound(this Rectangle region, sound soundHandle)
@@ -46,119 +24,57 @@ namespace MacroTools.Extensions
     }
     
     /// <summary>
-    /// Creates a group of units inside the specified <paramref name="area"/> that belong to <paramref name="owningUnitsPlayer"/>.
+    /// Prepares all Neutral Passive owned units within the specified <paramref name="rectangle"/> according to
+    /// the provided <see cref="RescuePreparationMode"/>.
     /// </summary>
-    /// <param name="area">The area in which to get the group of units.</param>
-    /// <returns>A list of all units found in the specified area</returns>
-    private static List<unit> PrepareUnitsForRescue(this Rectangle area)
+    /// <param name="rectangle">The rectangle in which to prepare units.</param>
+    /// <param name="rescuePreparationMode">Determines how units are prepared.</param>
+    /// <returns>All Neutral Passive units in the specified rectangle.</returns>
+    public static List<unit> PrepareUnitsForRescue(this Rectangle rectangle, RescuePreparationMode rescuePreparationMode)
     {
-      var group = new GroupWrapper()
-        .EnumUnitsInRect(area)
-        .EmptyToList();
-      return group;
-    }
-    
-    /// <summary>
-    /// Creates a group of units inside the specified <paramref name="area"/> that belong to the neutral passive player.
-    /// </summary>
-    /// <param name="area">The area in which to get the group of units.</param>
-    /// <param name="rescueMode">Set the <see cref="RescueMode"/> to use</param>
-    /// <returns>A list of all units found in the specified area that belong to the neutral passive player.</returns>
-    public static List<unit> PrepareUnitsForRescue(this Rectangle area, RescueMode rescueMode)
-    {
-      switch(rescueMode)
+      switch(rescuePreparationMode)
       {
-        case RescueMode.Group:
+        case RescuePreparationMode.None:
         {
-          return PrepareUnitsForRescue(area, Player(PLAYER_NEUTRAL_PASSIVE));
+          return PrepareUnitsForRescue(rectangle, false, false, false);
         }
-        case RescueMode.Invulnerable:
+        case RescuePreparationMode.Invulnerable:
         {
-          return PrepareUnitsForRescue(area, Player(PLAYER_NEUTRAL_PASSIVE),true);
+          return PrepareUnitsForRescue(rectangle,true, false, false);
         }
-        case RescueMode.HideUnits:
+        case RescuePreparationMode.HideNonStructures:
         {
-          return PrepareUnitsForRescue(area, Player(PLAYER_NEUTRAL_PASSIVE),true,true);
+          return PrepareUnitsForRescue(rectangle,true,true, false);
         }
-        case RescueMode.HideStructures:
+        case RescuePreparationMode.HideAll:
         {
-          return PrepareUnitsForRescue(area, Player(PLAYER_NEUTRAL_PASSIVE),true,true,true);
+          return PrepareUnitsForRescue(rectangle, true, true, true);
         }
         default:
-          return PrepareUnitsForRescue(area, Player(PLAYER_NEUTRAL_PASSIVE),true);;
+          throw new ArgumentException($"{nameof(rescuePreparationMode)} is not implemented for this function.", nameof(rescuePreparationMode));
       }
     }
     
     /// <summary>
-    /// Creates a group of units inside the specified <paramref name="area"/> that belong to <paramref name="owningUnitsPlayer"/>.
+    /// Prepares all Neutral Passive inside the specified <paramref name="rectangle"/>.
     /// </summary>
-    /// <param name="area">The area in which to get the group of units.</param>
-    /// <param name="owningUnitsPlayer">Only units owned by this player will be selected.</param>
-    /// <returns>A list of all units found in the specified area that belong to <paramref name="owningUnitsPlayer"/>.</returns>
-    private static List<unit> PrepareUnitsForRescue(this Rectangle area, player owningUnitsPlayer)
+    /// <param name="rectangle">The rectangle in which to prepare units.</param>
+    /// <param name="makeInvulnerable">If true, prepared units are made invulnerable.</param>
+    /// <param name="hideUnits">If true, prepared units are hidden.</param>
+    /// <param name="hideStructures">If true, prepared structures are hidden.</param>
+    /// <returns>All Neutral Passive units in the specified rectangle.</returns>
+    private static List<unit> PrepareUnitsForRescue(this Rectangle rectangle, bool makeInvulnerable, bool hideUnits, bool hideStructures)
     {
-      var group = PrepareUnitsForRescue(area)
-        .Where(x => x.OwningPlayer() == owningUnitsPlayer)
+      var group = new GroupWrapper()
+        .EnumUnitsInRect(rectangle)
+        .EmptyToList()
+        .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE))
         .ToList();
-      return group;
-    }
-
-    /// <summary>
-    /// Renders all units inside the specified <paramref name="area"/> that belong to <paramref name="owningUnitsPlayer"/> invulnerable.
-    /// </summary>
-    /// <param name="area">The area in which to make units invulnerable.</param>
-    /// <param name="owningUnitsPlayer">Only units owned by this player will be selected.</param>
-    /// <param name="invulnerable">Flag for if units should be made invulnerable</param>
-    /// <returns>A list of all units found in the specified area that belong to <paramref name="owningUnitsPlayer"/>.</returns>
-    private static List<unit> PrepareUnitsForRescue(this Rectangle area, player owningUnitsPlayer, bool invulnerable)
-    {
-      var group = PrepareUnitsForRescue(area, owningUnitsPlayer);
-      if (!invulnerable) return group;
       foreach (var unit in group)
       {
-        unit.SetInvulnerable(true);
-      }
-      return group;
-    }
-    
-    /// <summary>
-    /// Renders all units inside the specified <paramref name="area"/> that belong to <paramref name="owningUnitsPlayer"/> invulnerable.
-    /// </summary>
-    /// <param name="area">The area in which to get the group of units.</param>
-    /// <param name="owningUnitsPlayer">Only units owned by this player will be selected.</param>
-    /// <param name="invulnerable">Flag for if units should be made invulnerable</param>
-    /// <param name="hideUnits">Flag for if units should be hidden</param>
-    /// <returns>A list of all units found in the specified area that belong to <paramref name="owningUnitsPlayer"/>.</returns>
-    private static List<unit> PrepareUnitsForRescue(this Rectangle area, player owningUnitsPlayer, bool invulnerable, bool hideUnits)
-    {
-      var group = PrepareUnitsForRescue(area, owningUnitsPlayer);
-      foreach (var unit in group)
-      {
-        if (invulnerable)
+        if (makeInvulnerable)
           unit.SetInvulnerable(true);
-        if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideUnits)
-          unit.Show(false);
-      }
-      return group;
-    }
-    
-    /// <summary>
-    /// Renders all units inside the specified <paramref name="area"/> that belong to <paramref name="owningUnitsPlayer"/> invulnerable.
-    /// </summary>
-    /// <param name="area">The area in which to get the group of units.</param>
-    /// <param name="owningUnitsPlayer">Only units owned by this player will be selected.</param>
-    /// <param name="invulnerable">Flag for if units should be made invulnerable</param>
-    /// <param name="hideUnits">Flag for if units should be hidden</param>
-    /// <param name="hideStructures">Flag for if structures should be hidden. Won't hide control points.</param>
-    /// <returns>A list of all units found in the specified area that belong to <paramref name="owningUnitsPlayer"/>.</returns>
-    private static List<unit> PrepareUnitsForRescue(this Rectangle area, player owningUnitsPlayer, bool invulnerable, bool hideUnits, bool hideStructures)
-    {
-      var group = PrepareUnitsForRescue(area, owningUnitsPlayer);
-      foreach (var unit in group)
-      {
-        if (invulnerable)
-          unit.SetInvulnerable(true);
-        if ((IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideStructures) && !IsUnitType(unit, UNIT_TYPE_ANCIENT))
+        if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideStructures && !IsUnitType(unit, UNIT_TYPE_ANCIENT))
           unit.Show(false);
         if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideUnits)
           unit.Show(false);

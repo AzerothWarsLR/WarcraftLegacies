@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N01D_SILVERPINE_FOREST_15GOLD_MIN)));
       AddObjective(new ObjectiveExpire(1444));
       AddObjective(new ObjectiveSelfExists());
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RectangleExtensions.RescueMode.HideUnits);
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
     /// <inheritdoc />
