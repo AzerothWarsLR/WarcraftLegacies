@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests
     private readonly unit _tombOfSargerasEntrance;
     private readonly Rectangle _tombOfSargerasInteriorEntrance;
     private readonly unit _guldanRemains;
-    private readonly ObjectiveHeroWithLevelReachRect _enterTombOfSargerasRegion;
+    private readonly ObjectiveAnyHeroWithLevelReachRect _enterTombOfSargerasRegion;
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestTombOfSargeras"/> class.
     /// </summary>
@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests
       _tombOfSargerasInteriorEntrance = tombOfSargerasInteriorEntrance;
       _guldanRemains = guldanRemains;
       AddObjective(new ObjectiveTime(900));
-      _enterTombOfSargerasRegion = new ObjectiveHeroWithLevelReachRect(10, Regions.Sargeras_Entrance, "the Tomb of Sargeras' entrance");
+      _enterTombOfSargerasRegion = new ObjectiveAnyHeroWithLevelReachRect(10, Regions.Sargeras_Entrance, "the Tomb of Sargeras' entrance");
       AddObjective(_enterTombOfSargerasRegion);
     }
     
@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests
     protected override string RewardDescription => "The Tomb of Sargeras opens";
 
     /// <inheritdoc />
-    protected override string CompletionPopup => $"The Tomb of Sargeras has been opened by {_enterTombOfSargerasRegion.EnteredRegionUnitName}";
+    protected override string CompletionPopup => $"The Tomb of Sargeras has been opened by {_enterTombOfSargerasRegion.CompletingUnitName}";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)

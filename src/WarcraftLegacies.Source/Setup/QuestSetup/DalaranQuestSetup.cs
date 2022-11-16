@@ -2,6 +2,7 @@
 using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Quests.Dalaran;
 using WarcraftLegacies.Source.Setup.FactionSetup;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
@@ -27,7 +28,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       dalaran.AddQuest(questSouthshore);
       dalaran.StartingQuest = questSouthshore;
       dalaran.AddQuest(new QuestShadowfang(Regions.ShadowfangUnlock,
-        PreplacedUnitSystem.GetUnit(Constants.UNIT_NWLD_DIRE_WOLF_CREEP, Regions.ShadowfangUnlock.Center)));
+        PreplacedUnitSystem.GetUnit(Constants.UNIT_NWLD_DIRE_WOLF_CREEP, new Point(7668.5f, 4352.2f))));
       dalaran.AddQuest(new QuestDalaran(new[] {Regions.Dalaran, Regions.DalaranDungeon}));
       dalaran.AddQuest(new QuestJainaSoulGem());
       dalaran.AddQuest(new QuestBlueDragons());

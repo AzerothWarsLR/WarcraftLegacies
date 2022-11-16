@@ -1,28 +1,24 @@
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace MacroTools.Libraries
 {
-  public class Environment
+  public static class Environment
   {
     public const int MAX_PLAYERS = 28;
-    private static unit _posUnit;
+    private static readonly unit PosUnit;
 
-    public static float GetPositionZ(float x, float y)
+    /// <summary>
+    /// Returns the height of the terrain at the given position.
+    /// </summary>
+    public static float GetPositionZ(Point position)
     {
-      SetUnitX(_posUnit, x);
-      SetUnitY(_posUnit, y);
-      return BlzGetUnitZ(_posUnit);
+      SetUnitX(PosUnit, position.X);
+      SetUnitY(PosUnit, position.Y);
+      return BlzGetUnitZ(PosUnit);
     }
 
-    public static bool IsUnitInRect(unit u, rect r)
-    {
-      return GetUnitX(u) > GetRectMinX(r) - 32 && GetUnitX(u) < GetRectMaxX(r) + 32 &&
-             GetUnitY(u) > GetRectMinY(r) - 32 && GetUnitY(u) < GetRectMaxY(r) + 32;
-    }
-
-    public static void Setup()
-    {
-      _posUnit = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), FourCC("u00X"), 0, 0, 0);
-    }
+    static Environment() =>
+      PosUnit = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), FourCC("u00X"), 0, 0, 0);
   }
 }

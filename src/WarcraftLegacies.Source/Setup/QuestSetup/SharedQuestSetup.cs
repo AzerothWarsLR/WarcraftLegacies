@@ -2,6 +2,7 @@
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests;
+using WarcraftLegacies.Source.Setup.FactionSetup;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
@@ -24,6 +25,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       {
         faction.AddQuest(tombOfSargerasQuest);
         faction.AddQuest(new QuestZinrokhAssembly());
+        faction.AddQuest(new QuestBookOfMedivh(PreplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH),
+          faction == LegionSetup.Legion));
       }
     }
   }

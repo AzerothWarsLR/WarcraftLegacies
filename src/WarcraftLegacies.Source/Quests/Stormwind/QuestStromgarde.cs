@@ -47,7 +47,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
 
     protected override void OnComplete(Faction completingFaction)
     {
-      _objectiveAnyUnitInRect.TriggerUnit.AddItemSafe(ArtifactSetup.ArtifactTrolkalar.Item);
+      _objectiveAnyUnitInRect.CompletingUnit.AddItemSafe(ArtifactSetup.ArtifactTrolkalar.Item);
       SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
     }

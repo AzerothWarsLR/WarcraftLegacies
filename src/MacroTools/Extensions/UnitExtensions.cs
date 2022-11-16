@@ -13,6 +13,16 @@ namespace MacroTools.Extensions
     private const float HeroDropDist = 50; //The radius in which heroes spread out items when they drop them
 
     /// <summary>
+    /// Forces the unit to face a particular direction.
+    /// </summary>
+    /// <returns>The same unit that was passed in.</returns>
+    public static unit SetFacingEx(this unit whichUnit, float facing)
+    {
+      BlzSetUnitFacingEx(whichUnit, facing);
+      return whichUnit;
+    }
+    
+    /// <summary>
     /// Determines whether or not the unit explodes on death.
     /// </summary>
     public static unit SetExplodeOnDeath(this unit whichUnit, bool flag)
@@ -129,9 +139,10 @@ namespace MacroTools.Extensions
     /// <summary>
     /// If true, prevents the unit from moving or taking actions.
     /// </summary>
-    public static void Pause(this unit unit, bool value)
+    public static unit Pause(this unit unit, bool value)
     {
       PauseUnit(unit, value);
+      return unit;
     }
     
     /// <summary>
@@ -171,9 +182,10 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Moves the unit to a specified <see cref="Point"/>.
     /// </summary>
-    public static void SetPosition(this unit unit, Point where)
+    public static unit SetPosition(this unit unit, Point where)
     {
       SetUnitPosition(unit, where.X, where.Y);
+      return unit;
     }
 
     /// <summary>

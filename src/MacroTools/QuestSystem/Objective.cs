@@ -158,7 +158,7 @@ namespace MacroTools.QuestSystem
           effectPath = EligibleFactions.Contains(GetLocalPlayer()) ? MapEffectPath : "";
           _mapEffect = AddSpecialEffect(effectPath, Position.X, Position.Y);
           BlzSetSpecialEffectColorByPlayer(_mapEffect, EligibleFactions.First().Player);
-          BlzSetSpecialEffectHeight(_mapEffect, 100 + Environment.GetPositionZ(Position.X, Position.Y));
+          BlzSetSpecialEffectHeight(_mapEffect, 100 + Environment.GetPositionZ(Position));
         }
 
         if (OverheadEffectPath != null && _overheadEffect == null && TargetWidget != null)
