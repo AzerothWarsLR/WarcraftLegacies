@@ -102,7 +102,7 @@ public static class Regions
 	public static Rectangle Shadowmoon_Excavation { get; set; } = new Rectangle(2528f, -31072f, 2592f, -31008f);
 	public static Rectangle Siphon_Cast_Zone { get; set; } = new Rectangle(-11744f, 7424f, -11488f, 7648f);
 	public static Rectangle South_EK_Ships { get; set; } = new Rectangle(7872f, -18240f, 18880f, -12288f);
-	public static Rectangle StonemaulKeep { get; set; } = new Rectangle(-12192f, -10112f, -9408f, -7904f);
+	public static Rectangle StonemaulKeep { get; set; } = new Rectangle(-11808f, -10112f, -9216f, -7904f);
 	public static Rectangle Storm_Peaks { get; set; } = new Rectangle(-1088f, 21088f, 4640f, 25088f);
 	public static Rectangle Stormwind { get; set; } = new Rectangle(10880f, -10176f, 11040f, -10016f);
 	public static Rectangle Stratholme_Platform_entrance { get; set; } = new Rectangle(14560f, 12320f, 14592f, 12384f);
@@ -173,8 +173,8 @@ public static class Regions
 	public static Rectangle Varok { get; set; } = new Rectangle(-8608f, -512f, -8512f, -384f);
 	public static Rectangle Region_077 { get; set; } = new Rectangle(4640f, 16832f, 7200f, 17504f);
 	public static Rectangle NyHighland { get; set; } = new Rectangle(19200f, -512f, 19520f, -160f);
-	public static Rectangle Mannoroth { get; set; } = new Rectangle(-10592f, -9472f, -10176f, -9024f);
-	public static Rectangle Jergosh { get; set; } = new Rectangle(-11360f, -9024f, -11200f, -8864f);
+	public static Rectangle Mannoroth { get; set; } = new Rectangle(-10816f, -9408f, -10400f, -8960f);
+	public static Rectangle Jergosh { get; set; } = new Rectangle(-10688f, -9248f, -10528f, -9088f);
 	public static Rectangle Dark_Portal_Exit_2 { get; set; } = new Rectangle(4032f, -25088f, 4416f, -24704f);
 	public static Rectangle Dark_Portal_Exit_3 { get; set; } = new Rectangle(4864f, -26304f, 5248f, -25920f);
 	public static Rectangle Dark_Portal_Entrance_2 { get; set; } = new Rectangle(17600f, -19232f, 18016f, -18912f);
