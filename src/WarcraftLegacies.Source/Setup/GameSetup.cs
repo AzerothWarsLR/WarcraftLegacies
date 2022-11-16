@@ -103,7 +103,6 @@ namespace WarcraftLegacies.Source.Setup
       //   var newFogModifier = CreateFogModifierRect(player, FOG_OF_WAR_VISIBLE, Regions.MercTavern, true, true);
       //   FogModifierStart(newFogModifier);
       // }
-      BlockerSetup.Setup();
       NeutralVictimAndPassiveSetup.Setup();
       GateSetup.Setup();
       StartingResources.Setup();
