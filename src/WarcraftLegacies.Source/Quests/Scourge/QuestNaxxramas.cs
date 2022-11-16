@@ -12,6 +12,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 {
   public sealed class QuestNaxxramas : QuestData
   {
+    private readonly unit _naxxramas;
     private readonly List<unit> _rescueUnits = new();
 
     public QuestNaxxramas(Rectangle rescueRect, unit naxxramas) : base("The Dread Citadel",
@@ -32,7 +33,8 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player ?? Player(GetBJPlayerNeutralVictim()));
+      completingFaction.Player?.RescueGroup(_rescueUnits);
+      _naxxramas.Rescue(completingFaction.Player ?? Player(GetBJPlayerNeutralVictim()));
       completingFaction.Player?.RescueGroup(_rescueUnits);
       SetPlayerAbilityAvailable(completingFaction.Player, FourCC("A0O2"), false);
     }
