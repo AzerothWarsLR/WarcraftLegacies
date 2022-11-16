@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       @"ReplaceableTextures\CommandButtons\BTNBlackCitadel.blp")
     {
       ObjectiveChannelRect objectiveChannelRect =
-        new(Regions.NaxUnlock, "Naxxramas", LegendScourge.LegendKelthuzad, 60, 270);
+        new(Regions.NaxUnlock, "Naxxramas", LegendScourge.LegendKelthuzad, 180, 270);
       AddObjective(objectiveChannelRect);
       SetUnitInvulnerable(naxxramas, true);
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
