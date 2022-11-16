@@ -24,13 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       AddObjective(new ObjectiveExpire(1451));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R03C_QUEST_COMPLETED_BLACKROCK_UNIFICATION;
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          SetUnitInvulnerable(unit, true);
-          _rescueUnits.Add(unit);
-        }
-
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;
     }
 
@@ -41,14 +35,10 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     protected override string RewardDescription =>
       "Control of all units in Blackrock Citadel and enable Dal'rend Blackhand to be trained at the altar";
 
-    protected override void OnFail(Faction completingFaction)
-    {
-      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-    }
+    protected override void OnFail(Faction completingFaction) => 
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
 
-    protected override void OnComplete(Faction completingFaction)
-    {
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
-    }
+    protected override void OnComplete(Faction completingFaction) => 
+      completingFaction.Player?.RescueGroup(_rescueUnits);
   }
 }

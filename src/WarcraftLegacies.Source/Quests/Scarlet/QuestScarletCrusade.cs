@@ -50,10 +50,8 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       "Control of all units in the Scarlet Monastery and you will unally the alliance";
 
     /// <inheritdoc />
-    protected override void OnFail(Faction completingFaction)
-    {
-      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-    }
+    protected override void OnFail(Faction completingFaction) => 
+      completingFaction.Player?.RescueGroup(_rescueUnits);
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
@@ -76,9 +74,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     }
 
     /// <inheritdoc />
-    protected override void OnAdd(Faction whichFaction)
-    {
+    protected override void OnAdd(Faction whichFaction) => 
       whichFaction.ModObjectLimit(UnleashTheCrusadeResearchId, 1);
-    }
   }
 }
