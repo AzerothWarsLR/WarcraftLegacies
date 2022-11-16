@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Quests.Forsaken
       ResearchId = Constants.UPGRADE_R04X_QUEST_COMPLETED_FORSAKEN_INDEPENDANCE;
       Global = true;
 
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RectangleExtensions.RescueMode.HideUnits);
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
     }
 
     //Todo: bad flavour
@@ -65,7 +65,6 @@ namespace WarcraftLegacies.Source.Quests.Forsaken
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
       completingFaction.Player?.RescueGroup(_rescueUnits);
       SetPlayerTechResearched(LordaeronSetup.Lordaeron.Player, Constants.UPGRADE_R08G_FORSAKEN_ARE_INDEPENDANT, 1);
       SetPlayerTechResearched(LegionSetup.Legion.Player, Constants.UPGRADE_R08G_FORSAKEN_ARE_INDEPENDANT, 1);

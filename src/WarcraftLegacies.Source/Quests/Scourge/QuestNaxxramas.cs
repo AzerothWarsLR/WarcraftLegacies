@@ -19,19 +19,11 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       "This fallen necropolis can be transformed into a potent war machine by the Lich Kel'thuzad",
       @"ReplaceableTextures\CommandButtons\BTNBlackCitadel.blp")
     {
-      _naxxramas = naxxramas;
       ObjectiveChannelRect objectiveChannelRect =
         new(Regions.NaxUnlock, "Naxxramas", LegendScourge.LegendKelthuzad, 60, 270);
       AddObjective(objectiveChannelRect);
       SetUnitInvulnerable(naxxramas, true);
-
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          SetUnitInvulnerable(unit, true);
-          ShowUnit(unit, false);
-          _rescueUnits.Add(unit);
-        }
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
     }
 
     protected override string CompletionPopup =>
@@ -41,8 +33,9 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player ?? Player(GetBJPlayerNeutralVictim()));
+      completingFaction.Player?.RescueGroup(_rescueUnits);
       _naxxramas.Rescue(completingFaction.Player ?? Player(GetBJPlayerNeutralVictim()));
+      completingFaction.Player?.RescueGroup(_rescueUnits);
       SetPlayerAbilityAvailable(completingFaction.Player, FourCC("A0O2"), false);
     }
   }

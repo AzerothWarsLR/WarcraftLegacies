@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       _goldmine.Show(false);
       _demonGate.SetInvulnerable(true);
 
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RectangleExtensions.RescueMode.HideUnits);
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       LegendExodarship.Unit?.SetInvulnerable(true);
     }
 
