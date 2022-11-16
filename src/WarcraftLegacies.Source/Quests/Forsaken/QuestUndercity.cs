@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Forsaken
 {
   public sealed class QuestUndercity : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
     private readonly unit _innerWaygate1;
     private readonly unit _innerWaygate2;
     private readonly unit _outerWaygate1;
@@ -34,8 +34,8 @@ namespace WarcraftLegacies.Source.Quests.Forsaken
     {
       _innerWaygate1 = innerWaygate1;
       _innerWaygate2 = innerWaygate2;
-      _outerWaygate1 = outerWaygate1;
-      _outerWaygate2 = outerWaygate2;
+      _outerWaygate1 = outerWaygate1.Show(false);
+      _outerWaygate2 = outerWaygate2.Show(false);
       AddObjective(new ObjectiveResearch(Constants.UPGRADE_R050_DECLARE_FORSAKEN_INDEPENDENCE_FORSAKEN,
         Constants.UNIT_H08B_HAUNTED_CASTLE_FORSAKEN));
       AddObjective(new ObjectiveLegendInRect(LegendForsaken.SylvanasUndead, Regions.Terenas, "Capital City"));
@@ -44,12 +44,7 @@ namespace WarcraftLegacies.Source.Quests.Forsaken
       ResearchId = Constants.UPGRADE_R04X_QUEST_COMPLETED_FORSAKEN_INDEPENDANCE;
       Global = true;
 
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))  
-        {
-          SetUnitInvulnerable(unit, true);
-          _rescueUnits.Add(unit);
-        }
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RectangleExtensions.RescueMode.HideUnits);
     }
 
     //Todo: bad flavour
@@ -64,21 +59,26 @@ namespace WarcraftLegacies.Source.Quests.Forsaken
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
     }
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      completingFaction.Player?.RescueGroup(_rescueUnits);
       SetPlayerTechResearched(LordaeronSetup.Lordaeron.Player, Constants.UPGRADE_R08G_FORSAKEN_ARE_INDEPENDANT, 1);
       SetPlayerTechResearched(LegionSetup.Legion.Player, Constants.UPGRADE_R08G_FORSAKEN_ARE_INDEPENDANT, 1);
       
       _innerWaygate1.SetWaygateDestination(Regions.Undercity_Exterior_1.Center);
       _innerWaygate2.SetWaygateDestination(Regions.Undercity_Exterior_2.Center);
       
-      _outerWaygate1.SetWaygateDestination(Regions.Undercity_Interior_1.Center);
-      _outerWaygate2.SetWaygateDestination(Regions.Undercity_Interior_2.Center);
+      _outerWaygate1
+        .Show(true)
+        .SetWaygateDestination(Regions.Undercity_Interior_1.Center);
+      _outerWaygate2
+        .Show(true)
+        .SetWaygateDestination(Regions.Undercity_Interior_2.Center);
       
       completingFaction.Player?.SetTeam(TeamSetup.Forsaken);
       completingFaction.Name = "Forsaken";
