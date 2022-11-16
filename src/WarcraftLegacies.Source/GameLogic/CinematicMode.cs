@@ -87,18 +87,6 @@ namespace WarcraftLegacies.Source.GameLogic
       Player(19).ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400, 1.00f);
       Player(8).ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400, 1.00f);
 
-      _illidanRain = AddWeatherEffect(Regions.IllidanWeather.Rect, FourCC("RAhr"));
-      EnableWeatherEffect(_illidanRain, true);
-
-      _illidanWind = AddWeatherEffect(Regions.IllidanWeather.Rect, FourCC("WNcw"));
-      EnableWeatherEffect(_illidanWind, true);
-
-      _illidanRain2 = AddWeatherEffect(Regions.IllidanAmbiance2.Rect, FourCC("Rahr"));
-      EnableWeatherEffect(_illidanRain2, true);
-
-      _illidanWind2 = AddWeatherEffect(Regions.IllidanAmbiance2.Rect, FourCC("WNwc"));
-      EnableWeatherEffect(_illidanWind2, true);
-
       VolumeGroupSetVolume(SOUND_VOLUMEGROUP_MUSIC, 0.45f);
       VolumeGroupSetVolume(SOUND_VOLUMEGROUP_AMBIENTSOUNDS, 0);
       VolumeGroupSetVolume(SOUND_VOLUMEGROUP_UI, 0);
