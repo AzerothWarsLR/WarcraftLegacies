@@ -3079,8 +3079,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("uaco"), -5298.0, 18618.7, 169.843, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("uaco"), -5415.8, 18717.1, 286.353, FourCC("uaco"))
 u = BlzCreateUnitWithSkin(p, FourCC("ugho"), -5116.7, 18351.4, 153.033, FourCC("ugho"))
 u = BlzCreateUnitWithSkin(p, FourCC("h05M"), 22007.0, 24074.9, 357.230, FourCC("h05M"))
-u = BlzCreateUnitWithSkin(p, FourCC("u008"), -4250.9, 18726.8, 301.190, FourCC("u008"))
-SetUnitAcquireRange(u, 200.0)
 end
 
 function CreateBuildingsForPlayer4()
@@ -7432,6 +7430,8 @@ u = BlzCreateUnitWithSkin(p, FourCC("h05O"), 8709.1, 4423.5, 154.418, FourCC("h0
 u = BlzCreateUnitWithSkin(p, FourCC("o006"), -8960.0, -448.0, 270.000, FourCC("o006"))
 u = BlzCreateUnitWithSkin(p, FourCC("ncb9"), 15104.0, 1408.0, 180.904, FourCC("ncb9"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0BU"), -1888.0, -7072.0, 270.000, FourCC("n0BU"))
+WaygateSetDestination(u, GetRectCenterX(gg_rct_GadgetUnlock), GetRectCenterY(gg_rct_GadgetUnlock))
+WaygateActivate(u, true)
 u = BlzCreateUnitWithSkin(p, FourCC("nmrk"), 9472.0, 8576.0, 270.000, FourCC("nmrk"))
 u = BlzCreateUnitWithSkin(p, FourCC("h08R"), -22880.0, 17312.0, 270.000, FourCC("h08R"))
 u = BlzCreateUnitWithSkin(p, FourCC("h036"), 6432.0, 3616.0, 270.000, FourCC("h036"))

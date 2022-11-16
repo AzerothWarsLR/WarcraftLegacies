@@ -8892,12 +8892,6 @@ STRING 1482
 Turns a target enemy unit into a sheep. The targeted unit retains its hit points and armor, but cannot attack. |nCannot be cast on Heroes or summoned units.|nLasts <A0L7,Dur1> seconds.
 }
 
-STRING 1483
-// Units: u008 (Peasant Converter), Name (Name)
-{
-Peasant Converter
-}
-
 STRING 1484
 // Units: u007 (Dreadlord), EditorSuffix (Name - Editor Suffix)
 {
@@ -76156,15 +76150,9 @@ Q
 }
 
 STRING 12690
-// Abilities: A01G (Disease Power), EditorSuffix (Editor Suffix)
+// Abilities: A0MU (Worgen Curse Conversation), EditorSuffix (Editor Suffix)
 {
 (Peasant converter)
-}
-
-STRING 12691
-// Abilities: A01G (Disease Power), Name (Name)
-{
-Disease Power
 }
 
 STRING 12692
@@ -94881,12 +94869,6 @@ STRING 15818
 // Abilities: A0HV (Ignore Pain), Unhotkey (Hotkey - Turn Off)
 {
 W
-}
-
-STRING 15819
-// Abilities: A0MU (Worgen Curse Conversation), EditorSuffix (Editor Suffix)
-{
-(Peasant converter)
 }
 
 STRING 15820
