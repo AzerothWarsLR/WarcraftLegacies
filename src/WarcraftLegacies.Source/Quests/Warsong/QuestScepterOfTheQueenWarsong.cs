@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       "ReplaceableTextures\\CommandButtons\\BTNNagaWeaponUp2.blp")
     {
       _highBourneArea = area;
-      _highBourneAreaUnits = _highBourneArea.PrepareUnitsForRescue(RectangleExtensions.RescueMode.HideUnits);
+      _highBourneAreaUnits = _highBourneArea.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendWarsong.StonemaulKeep ?? throw new SystemNotInitializedException(nameof(LegendWarsong))));
       AddObjective(new ObjectiveLegendDead(LegendSentinels.legendFeathermoon));
       AddObjective(new ObjectiveAnyUnitInRect(_highBourneArea, "Dire Maul", true));

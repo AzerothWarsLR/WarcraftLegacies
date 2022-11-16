@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       ResearchId = Constants.UPGRADE_R03F_QUEST_COMPLETED_UNLEASH_THE_CRUSADE;
       Global = true;
       _sequel = sequel;
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RectangleExtensions.RescueMode.HideUnits);
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
     //Todo: bad flavour

@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Quests.Forsaken
       ResearchId = Constants.UPGRADE_R04X_QUEST_COMPLETED_FORSAKEN_INDEPENDANCE;
       Global = true;
 
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RectangleExtensions.RescueMode.HideUnits);
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
     }
 
     //Todo: bad flavour
