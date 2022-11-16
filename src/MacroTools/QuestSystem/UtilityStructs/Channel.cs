@@ -1,4 +1,5 @@
 ﻿using System;
+using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
@@ -7,13 +8,17 @@ using Environment = MacroTools.Libraries.Environment;
 
 namespace MacroTools.QuestSystem.UtilityStructs
 {
+  /// <summary>
+  /// Used to immobilize a unit and force them to play their channeling animation for a duration.
+  /// <para>Used exclusively by <see cref="ObjectiveChannelRect"/>.</para>
+  /// </summary>
   public sealed class Channel : IDisposable
   {
-    private const string EFFECT = "Abilities\\Spells\\Other\\Drain\\ManaDrainCaster.mdl";
-    private const string PROGRESS_EFFECT = "war3mapImported\\Progressbar10sec.mdx";
-    private const float PROGRESS_SCALE = 1.5f;
-    private const float PROGRESS_HEIGHT = 285f;
-    private const float PERIOD = 0.15f;
+    private const string Effect = "Abilities\\Spells\\Other\\Drain\\ManaDrainCaster.mdl";
+    private const string ProgressEffect = "war3mapImported\\Progressbar10sec.mdx";
+    private const float ProgressScale = 1.5f;
+    private const float ProgressHeight = 285f;
+    private const float Period = 0.15f;
 
     private bool _disposed;
     private readonly unit _caster;
@@ -27,6 +32,9 @@ namespace MacroTools.QuestSystem.UtilityStructs
 
     private readonly TimerWrapper _periodictimer = new();
 
+    /// <summary>
+    /// Fired when the <see cref="Channel"/> ends, successfully or otherwise.
+    /// </summary>
     public event EventHandler<Channel>? Finished;
 
     /// <summary>
@@ -34,6 +42,59 @@ namespace MacroTools.QuestSystem.UtilityStructs
     /// </summary>
     public bool FinishedWithoutInterruption { get; private set; }
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="Channel"/> class.
+    /// </summary>
+    /// <param name="caster">The caster to force to channel.</param>
+    /// <param name="duration">How long the channel should last.</param>
+    /// <param name="facing">Which way the caster should face while channeling.</param>
+    /// <param name="position">Where the caster should channel from.</param>
+    /// <param name="global">If true, all players are alerted to the channel by a timer.</param>
+    /// <param name="title">The name of the timer to use when alerting all players.</param>
+    public Channel(unit caster, float duration, float facing, Point position, bool global = false, string title = "")
+    {
+      _caster = caster;
+      _elapsedDuration = 0;
+      _maxDuration = duration;
+
+      _position = position;
+
+      caster.SetPosition(_position)
+        .Pause(true)
+        .SetAnimation("channel")
+        .SetFacingEx(facing);
+      _sfxProgress = AddSpecialEffect(ProgressEffect, GetUnitX(caster), GetUnitY(caster))
+        .SetTimeScale(10 / duration)
+        .SetColor(caster.OwningPlayer())
+        .SetScale(ProgressScale)
+        .SetHeight(ProgressHeight + Environment.GetPositionZ(position));
+      _sfx = AddSpecialEffect(Effect, GetUnitX(caster), GetUnitY(caster));
+
+      if (global)
+      {
+        _channelingTimer = CreateTimer();
+        TimerStart(_channelingTimer, _maxDuration, false, null);
+        _channelingDialog = CreateTimerDialog(_channelingTimer);
+        TimerDialogSetTitle(_channelingDialog, title);
+        TimerDialogDisplay(_channelingDialog, true);
+      }
+
+      _periodictimer.Start(Period, true, Periodic);
+    }
+    
+    ~Channel()
+    {
+      Dispose(false);
+    }
+    
+    /// <summary>
+    /// Clean up the object's managed resources.
+    /// </summary>
+    public void Dispose()
+    {
+      Dispose(true);
+    }
+    
     private void End(bool finishedWithoutInterruption)
     {
       PauseUnit(_caster, false);
@@ -59,21 +120,11 @@ namespace MacroTools.QuestSystem.UtilityStructs
         End(false);
       }
 
-      _elapsedDuration += PERIOD;
+      _elapsedDuration += Period;
       if (_elapsedDuration >= _maxDuration)
       {
         End(true);
       }
-    }
-
-    ~Channel()
-    {
-      Dispose(false);
-    }
-
-    public void Dispose()
-    {
-      Dispose(true);
     }
 
     private void Dispose(bool disposing)
@@ -96,39 +147,6 @@ namespace MacroTools.QuestSystem.UtilityStructs
       DestroyTimerDialog(_channelingDialog);
 
       _disposed = true;
-    }
-
-    public Channel(unit caster, float duration, float facing, Point position, bool global = false, string title = "")
-    {
-      _caster = caster;
-      _elapsedDuration = 0;
-      _maxDuration = duration;
-
-      _position = position;
-
-      SetUnitX(caster, position.X);
-      SetUnitY(caster, position.Y);
-      _sfxProgress = AddSpecialEffect(PROGRESS_EFFECT, GetUnitX(caster), GetUnitY(caster));
-      BlzSetSpecialEffectTimeScale(_sfxProgress, 10 / duration);
-      BlzSetSpecialEffectColorByPlayer(_sfxProgress, GetOwningPlayer(caster));
-      BlzSetSpecialEffectScale(_sfxProgress, PROGRESS_SCALE);
-      BlzSetSpecialEffectHeight(_sfxProgress,
-        PROGRESS_HEIGHT + Environment.GetPositionZ(position.X, position.Y));
-      _sfx = AddSpecialEffect(EFFECT, GetUnitX(caster), GetUnitY(caster));
-      PauseUnit(caster, true);
-      SetUnitAnimation(caster, "channel");
-      BlzSetUnitFacingEx(caster, facing);
-
-      if (global)
-      {
-        _channelingTimer = CreateTimer();
-        TimerStart(_channelingTimer, _maxDuration, false, null);
-        _channelingDialog = CreateTimerDialog(_channelingTimer);
-        TimerDialogSetTitle(_channelingDialog, title);
-        TimerDialogDisplay(_channelingDialog, true);
-      }
-
-      _periodictimer.Start(PERIOD, true, Periodic);
     }
   }
 }
