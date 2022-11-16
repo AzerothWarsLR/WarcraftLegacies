@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       "ReplaceableTextures\\CommandButtons\\BTNAstral Blessing.blp")
     {
       AddObjective(new ObjectiveLegendLevel(LegendDalaran.LegendJaina, 15));
-      AddObjective(new ObjectiveLegendHasArtifact(LegendDalaran.LegendJaina, ArtifactSetup.ArtifactBookofmedivh));
+      AddObjective(new ObjectiveLegendHasArtifact(LegendDalaran.LegendJaina, ArtifactSetup.BookOfMedivh));
     }
 
     protected override string CompletionPopup =>
