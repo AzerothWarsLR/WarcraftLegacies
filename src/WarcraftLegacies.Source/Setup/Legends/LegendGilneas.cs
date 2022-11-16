@@ -1,5 +1,4 @@
-using MacroTools.FactionSystem;
-using static War3Api.Common;
+﻿using MacroTools.FactionSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
@@ -16,42 +15,42 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       LegendTess = new Legend
       {
-        UnitType = FourCC("Ewar")
+        UnitType = Constants.UNIT_EWAR_PRINCESS_OF_GILNEAS_GILNEAS
       };
       Legend.Register(LegendTess);
 
       LegendGoldrinn = new Legend
       {
-        UnitType = FourCC("E01E"),
+        UnitType = Constants.UNIT_E01E_ANCIENT_GUARDIAN_GILNEAS,
         StartingXp = 8800
       };
       Legend.Register(LegendGoldrinn);
 
       LegendGenn = new Legend
       {
-        UnitType = FourCC("HHkl")
+        Name = "Genn Greymane",
+        UnitType = Constants.UNIT_HHKL_KING_OF_GILNEAS_GILNEAS,
+        StartingXp = 2800
       };
       Legend.Register(LegendGenn);
 
       LegendDarius = new Legend
       {
-        UnitType = FourCC("hpb2")
+        UnitType = Constants.UNIT_HPB2_GILNEAN_LORD_GILNEAS
       };
       Legend.Register(LegendDarius);
 
       LegendLightdawn = new Legend
       {
-        UnitType = FourCC("h057"),
+        UnitType = Constants.UNIT_H057_LIGHT_S_DAWN_CATHEDRAL_GILNEAS,
         DeathMessage = "The Light's Dawn Capital has been destroyed.",
-        
       };
       Legend.Register(LegendLightdawn);
 
       LegendGilneascastle = new Legend
       {
-        UnitType = FourCC("h04I"),
-        DeathMessage = "The Gilneas castle has fallen",
-        
+        UnitType = Constants.UNIT_H04I_GILNEAS_CASTLE_GILNEAS,
+        DeathMessage = "The Gilneas castle has fallen",  
       };
       Legend.Register(LegendGilneascastle);
     }
