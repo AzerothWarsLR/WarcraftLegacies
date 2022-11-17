@@ -21,19 +21,20 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
     /// <param name="waygateDragonmawPort">Starts hidden and gets revealed when the quest is complete.</param>
     public QuestOrgrimmarPortal(unit waygateDragonmawPort) : base(
       "The Reunification of the Horde",
-      "The new Horde in Kalimdor has send a message to the Dragonmaw Clan to join them, Zuluhead will need to open a portal for his people to go through!",
+      "The new Horde in Kalimdor has send a message to the Dragonmaw Clan to join them, Zaela has foreseen it to be the salvation of the Dragonmaw Clan. But the portal will be unstable, as soon as it is open, we should escape with great haste",
       "ReplaceableTextures\\CommandButtons\\BTNPortal.blp")
     {
       _waygateDragonmawPort = waygateDragonmawPort;
 
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendGrimbatol, false));
+      AddObjective(new ObjectiveTime(540));
       waygateDragonmawPort.Show(false);
       Required = true;
+      Global = true;
     }
 
     /// <inheritdoc />
     protected override string CompletionPopup =>
-      "Zuluhead has opened the portal to Orgrimmar. Hurry, it will collapse in 3 mins";
+      "The portal to Kalimdor is opened! Hurry, it will collapse in 60 seconds!";
 
     /// <inheritdoc />
     protected override string RewardDescription => "Open a Portal between Dragonmaw Port and Orgrimmar";
@@ -44,7 +45,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       _waygateDragonmawPort
         .Show(true)
         .SetWaygateDestination(Regions.OrgrimmarPortal.Center);
-      CreateTimer().Start(180, false, () =>
+      CreateTimer().Start(60, false, () =>
       {
         _waygateDragonmawPort.Kill();
         GetExpiredTimer().Destroy();

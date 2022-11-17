@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -39,7 +39,7 @@ Fortify your strongholds against the storm to come and make ready to unleash the
       ScarletCrusade.ModObjectLimit(FourCC("h084"), Faction.UNLIMITED); //Scout Tower
       ScarletCrusade.ModObjectLimit(FourCC("h085"), Faction.UNLIMITED); //Guard Tower
       ScarletCrusade.ModObjectLimit(FourCC("h087"), Faction.UNLIMITED); //Guard Tower (Improved)
-      ScarletCrusade.ModObjectLimit(FourCC("hshy"), Faction.UNLIMITED); //Alliance Shipyard
+      ScarletCrusade.ModObjectLimit(FourCC("h0AG"), Faction.UNLIMITED); //Alliance Shipyard
       ScarletCrusade.ModObjectLimit(FourCC("h086"), Faction.UNLIMITED); //Marketplace
       ScarletCrusade.ModObjectLimit(FourCC("h082"), Faction.UNLIMITED); //Aviary
       ScarletCrusade.ModObjectLimit(FourCC("h097"), Faction.UNLIMITED); //Training Camp
