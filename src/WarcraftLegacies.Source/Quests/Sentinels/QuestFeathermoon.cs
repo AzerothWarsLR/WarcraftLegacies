@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       "Feathermoon Stronghold stood guard for ten thousand years, it is time to relieve the guards from their duty.",
       "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp")
     {
-      AddObjective(new ObjectiveLegendReachRect(LegendSentinels.legendTyrande, Regions.FeathermoonUnlock,
+      AddObjective(new ObjectiveLegendReachRect(LegendSentinels.Tyrande, Regions.FeathermoonUnlock,
         "Feathermoon Stronghold"));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01R"))));
       AddObjective(new ObjectiveUpgrade(FourCC("n06P"), FourCC("n06J")));

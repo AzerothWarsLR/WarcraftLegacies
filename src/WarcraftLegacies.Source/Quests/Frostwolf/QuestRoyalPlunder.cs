@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       "ReplaceableTextures\\CommandButtons\\BTNNagaWeaponUp2.blp")
     {
       AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendWarsong.StonemaulKeep));
-      AddObjective(new ObjectiveLegendDead(LegendSentinels.legendFeathermoon));
+      AddObjective(new ObjectiveLegendDead(LegendSentinels.Feathermoon));
       AddObjective(new ObjectiveAnyUnitInRect(rescueRect, "Dire Maul", true));
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
         if (!ControlPointManager.UnitIsControlPoint(unit))
