@@ -1,0 +1,55 @@
+﻿using System.Collections.Generic;
+using MacroTools;
+using MacroTools.ControlPointSystem;
+using MacroTools.Extensions;
+using MacroTools.FactionSystem;
+using MacroTools.QuestSystem;
+using MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.Wrappers;
+using WarcraftLegacies.Source.Setup.Legends;
+using WCSharp.Shared.Data;
+using static War3Api.Common;
+
+namespace WarcraftLegacies.Source.Quests.Dragonmaw
+{
+  public sealed class QuestStonemaul : QuestData
+  {
+    private readonly List<unit> _rescueUnits = new();
+
+    public QuestStonemaul(Rectangle rescueRect) : base("Ruins of Stonemaul",
+      "The deserted base of Stonemaul is right next to a lair of Black Drakes. A perfect emplacement to lay the new foundations of the Dragonmaw Clan",
+      "ReplaceableTextures\\CommandButtons\\BTNMercenaryCamp.blp")
+    {
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N022_STONEMAUL_20GOLD_MIN)));
+      AddObjective(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(Constants.UNIT_NOGA_STONEMAUL_WARCHIEF_KOR_GALL)));
+      AddObjective(new ObjectiveLegendInRect(LegendDragonmaw.LegendZaela, Regions.StonemaulKeep, "Stonemaul"));
+      AddObjective(new ObjectiveExpire(1327));
+      AddObjective(new ObjectiveSelfExists());
+      ResearchId = Constants.UPGRADE_R08U_QUEST_COMPLETED_RUINS_OF_STONEMAUL;
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        {
+          SetUnitInvulnerable(unit, true);
+          _rescueUnits.Add(unit);
+        }
+
+      Required = true;
+    }
+
+    //Todo: bad flavour
+    protected override string CompletionPopup =>
+      "Stonemaul now belongs to the Dragonmaw Clan.";
+
+    protected override string RewardDescription => "Control of all buildings in Stonemaul";
+
+    protected override void OnFail(Faction completingFaction)
+    {
+      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+    }
+
+    protected override void OnComplete(Faction completingFaction)
+    {
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+    }
+  }
+}

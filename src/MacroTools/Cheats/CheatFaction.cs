@@ -6,7 +6,7 @@ namespace MacroTools.Cheats
 {
   public static class CheatFaction
   {
-    private const string COMMAND = "-faction ";
+    private const string Command = "-faction ";
     private static string? _parameter;
 
     private static void Actions()
@@ -18,7 +18,7 @@ namespace MacroTools.Cheats
 
         string enteredString = GetEventPlayerChatString();
         player p = GetTriggerPlayer();
-        _parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
+        _parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
 
         if (!FactionManager.FactionWithNameExists(_parameter))
           throw new Exception($"There is no registered {nameof(Faction)} with the name {_parameter}.");
@@ -37,7 +37,7 @@ namespace MacroTools.Cheats
     public static void Setup()
     {
       trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
 
       TriggerAddAction(trig, Actions);
     }

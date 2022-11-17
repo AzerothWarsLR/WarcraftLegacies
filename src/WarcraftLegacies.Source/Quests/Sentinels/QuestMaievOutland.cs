@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       "ReplaceableTextures\\CommandButtons\\BTNMaievArmor.blp")
     {
       AddObjective(new ObjectiveCastSpell(FourCC("A0J5"), true));
-      AddObjective(new ObjectiveControlLegend(LegendSentinels.legendMaiev, true));
+      AddObjective(new ObjectiveControlLegend(LegendSentinels.Maiev, true));
 
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
       {
@@ -34,8 +34,8 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
 
     protected override void OnComplete(Faction completingFaction)
     {
-      SetUnitPosition(LegendSentinels.legendMaiev.Unit, -5252, -27597);
-      UnitRemoveAbility(LegendSentinels.legendMaiev.Unit, FourCC("A0J5"));
+      SetUnitPosition(LegendSentinels.Maiev.Unit, -5252, -27597);
+      UnitRemoveAbility(LegendSentinels.Maiev.Unit, FourCC("A0J5"));
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
     }
   }

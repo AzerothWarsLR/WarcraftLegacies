@@ -2,6 +2,7 @@
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
+using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
@@ -24,10 +25,8 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       "ReplaceableTextures\\CommandButtons\\BTNPortal.blp")
     {
       _waygateDragonmawPort = waygateDragonmawPort;
-      AddObjective(new ObjectiveChannelRect(Regions.DragonmawPortal, "Dragonmaw Port", LegendFelHorde.LegendZuluhed,
-        180, 300));
+
       AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendGrimbatol, false));
-      AddObjective(new ObjectiveControlLegend(LegendFrostwolf.LegendOrgrimmar, false));
       waygateDragonmawPort.Show(false);
       Required = true;
     }
@@ -50,6 +49,9 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
         _waygateDragonmawPort.Kill();
         GetExpiredTimer().Destroy();
       });
+      if (whichFaction.Player != null)
+        whichFaction.Player?.SetTeam(TeamSetup.Horde);
+
     }
   }
 }

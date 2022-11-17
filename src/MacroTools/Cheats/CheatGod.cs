@@ -7,7 +7,7 @@ namespace MacroTools.Cheats
 {
   public static class CheatGod
   {
-    private const string COMMAND = "-god ";
+    private const string Command = "-god ";
     private static readonly List<player> PlayersWithCheat = new();
 
     private static bool IsCheatActive(player whichPlayer)
@@ -47,7 +47,7 @@ namespace MacroTools.Cheats
 
       string enteredString = GetEventPlayerChatString();
       player triggerPlayer = GetTriggerPlayer();
-      string parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
+      string parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
 
       if (parameter == "on")
       {
@@ -65,7 +65,7 @@ namespace MacroTools.Cheats
     public static void Setup()
     {
       trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
 
       TriggerAddAction(trig, Actions);
 

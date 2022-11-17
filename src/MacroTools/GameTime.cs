@@ -4,9 +4,9 @@ namespace MacroTools
 {
   public static class GameTime
   {
-    private const float TURN_DURATION = 60;
+    private const float TurnDuration = 60;
 
-    private const float TIMER_DELAY = 6; //How long after game start to actually show the timer.
+    private const float TimerDelay = 6; //How long after game start to actually show the timer.
 
     //This must be after the Multiboard is shown or the Multiboard will break
     private static timer? _gameTimer;
@@ -44,7 +44,7 @@ namespace MacroTools
     {
       _turnTimer = CreateTimer();
       _turnTimerDialog = CreateTimerDialog(_turnTimer);
-      TimerStart(_turnTimer, TURN_DURATION, true, EndTurn);
+      TimerStart(_turnTimer, TurnDuration, true, EndTurn);
       _gameTimer = CreateTimer();
       TimerStart(_gameTimer, 1, true, GameTick);
     }
@@ -56,7 +56,7 @@ namespace MacroTools
       TriggerAddAction(trig, Actions);
 
       trig = CreateTrigger();
-      TriggerRegisterTimerEvent(trig, TIMER_DELAY, false);
+      TriggerRegisterTimerEvent(trig, TimerDelay, false);
       TriggerAddAction(trig, ShowTimer);
     }
   }

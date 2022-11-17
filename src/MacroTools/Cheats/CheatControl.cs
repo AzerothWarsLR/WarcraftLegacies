@@ -5,7 +5,7 @@ namespace MacroTools.Cheats
 {
   public static class CheatControl
   {
-    private const string COMMAND = "-control ";
+    private const string Command = "-control ";
 
     private static void Actions()
     {
@@ -17,7 +17,7 @@ namespace MacroTools.Cheats
       string enteredString = GetEventPlayerChatString();
       player p = GetTriggerPlayer();
       GetPlayerId(p);
-      string parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
+      string parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
       if (parameter == "all")
       {
         foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
@@ -42,7 +42,7 @@ namespace MacroTools.Cheats
       trigger trig = CreateTrigger();
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
-        TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
+        TriggerRegisterPlayerChatEvent(trig, player, Command, false);
       }
 
       TriggerAddAction(trig, Actions);

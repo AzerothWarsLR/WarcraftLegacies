@@ -1,4 +1,4 @@
-using WarcraftLegacies.Source.Setup.QuestSetup;
+﻿using WarcraftLegacies.Source.Setup.QuestSetup;
 
 namespace WarcraftLegacies.Source.Setup
 {
@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup
       StormwindQuestSetup.Setup();
       WarsongQuestSetup.Setup();
       NagaQuestSetup.Setup();
-      //GilneasQuestSetup.Setup();
+      GilneasQuestSetup.Setup();
       KultirasQuestSetup.Setup();
       ScarletQuestSetup.Setup();
       TrollQuestSetup.Setup();

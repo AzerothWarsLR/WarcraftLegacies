@@ -5,12 +5,12 @@ namespace MacroTools.Frames.Books.Powers
 {
   public sealed class PowerCard : Card
   {
-    private const float BOX_WIDTH = 0.28f;
-    private const float BOX_HEIGHT = 0.092f;
+    private const float BoxWidth = 0.28f;
+    private const float BoxHeight = 0.092f;
     private readonly Power _power;
     private readonly TextFrame _textFrame;
 
-    public PowerCard(Power power, Frame parent) : base(parent, BOX_WIDTH, BOX_HEIGHT)
+    public PowerCard(Power power, Frame parent) : base(parent, BoxWidth, BoxHeight)
     {
       _power = power;
       var icon = new Frame("BACKDROP", "ArtifactIcon", this)
@@ -25,7 +25,7 @@ namespace MacroTools.Frames.Books.Powers
       var title = new TextFrame("ArtifactItemTitle", this, 0)
       {
         Text = power.Name,
-        Width = BOX_WIDTH - 0.04f,
+        Width = BoxWidth - 0.04f,
         Height = 0
       };
       title.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_CENTER, 0, 0.0255f);

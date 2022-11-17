@@ -15,10 +15,10 @@ namespace MacroTools.Mechanics
     /// </summary>
     public sealed class PackableStructure
     {
-      public int _packedUnitId;
-      public int _buildAbility;
-      public string _structureModel = string.Empty;
-      public int _structureId;
+      public int PackedUnitId;
+      public int BuildAbility;
+      public string StructureModel = string.Empty;
+      public int StructureId;
 
       /// <summary>
       /// Method for creating new packable structure entries
@@ -31,10 +31,10 @@ namespace MacroTools.Mechanics
       {
         var packable = new PackableStructure
         {
-          _packedUnitId = packedUnitId,
-          _buildAbility = buildAbility,
-          _structureModel = structureModel,
-          _structureId = structureId
+          PackedUnitId = packedUnitId,
+          BuildAbility = buildAbility,
+          StructureModel = structureModel,
+          StructureId = structureId
         };
 
         PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, () => packable.OnTrainUnitType(),structureId);
@@ -49,15 +49,15 @@ namespace MacroTools.Mechanics
       /// <param name="packable"></param>
       public void PackUnitSetup(unit packedUnit)
       {
-        var effect = AddSpecialEffectTarget(_structureModel, packedUnit, "overhead");
+        var effect = AddSpecialEffectTarget(StructureModel, packedUnit, "overhead");
         BlzSetSpecialEffectScale(effect, (float)0.25);
         BlzSetSpecialEffectTime(effect, 100);
-        UnitAddAbility(packedUnit, _buildAbility);
+        UnitAddAbility(packedUnit, BuildAbility);
       }
 
       private void PackBuilding(unit building, unit packedUnit)
       {
-        if (_structureId != GetUnitTypeId(building))
+        if (StructureId != GetUnitTypeId(building))
         {
           Console.WriteLine($"ERROR: there is no PackableStructure setup for building: {GetUnitName(building)}");
           return;
@@ -68,14 +68,14 @@ namespace MacroTools.Mechanics
 
       private void OnTrainUnitType()
       {
-        if (GetUnitTypeId(GetTrainedUnit()) != _packedUnitId) return;
+        if (GetUnitTypeId(GetTrainedUnit()) != PackedUnitId) return;
         PackBuilding(GetTriggerUnit(),GetTrainedUnit());
         RemoveUnit(GetTriggerUnit());
       }
       
       private void OnUnitTypeCastSpell()
       {
-        if (GetUnitTypeId(GetTriggerUnit()) != _packedUnitId) return;
+        if (GetUnitTypeId(GetTriggerUnit()) != PackedUnitId) return;
         KillUnit(GetTriggerUnit());
         RemoveUnit(GetTriggerUnit());
       }

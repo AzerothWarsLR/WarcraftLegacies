@@ -55,7 +55,8 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       Dragonmaw.ModObjectLimit(FourCC("ojgn"), 6); //Juggernaught
 
       Dragonmaw.ModObjectLimit(FourCC("O01Q"), 1); //Nekrosh
-      Dragonmaw.ModObjectLimit(FourCC("O00Y"), 1); //Zuluhead
+      Dragonmaw.ModObjectLimit(FourCC("O05S"), 1); //Zaela
+      Dragonmaw.ModObjectLimit(FourCC("O06F"), 1); //Gorfax
 
       Dragonmaw.ModObjectLimit(FourCC("R023"), Faction.UNLIMITED); //Spiritual Infusion
       Dragonmaw.ModObjectLimit(FourCC("Rosp"), Faction.UNLIMITED); //Spiked Barricades

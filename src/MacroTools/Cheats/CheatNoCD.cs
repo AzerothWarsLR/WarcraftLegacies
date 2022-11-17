@@ -6,7 +6,7 @@ namespace MacroTools.Cheats
 {
   public static class CheatNocd
   {
-    private const string COMMAND = "-nocd ";
+    private const string Command = "-nocd ";
     private static readonly List<player> PlayersWithCheat = new();
 
     private static bool IsCheatActive(player whichPlayer)
@@ -36,7 +36,7 @@ namespace MacroTools.Cheats
       if (!TestSafety.CheatCondition()) return;
       string enteredString = GetEventPlayerChatString();
       player p = GetTriggerPlayer();
-      string parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
+      string parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
 
       if (parameter == "on")
       {
@@ -53,7 +53,7 @@ namespace MacroTools.Cheats
     public static void Setup()
     {
       trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
       TriggerAddAction(trig, Actions);
 
       PlayerUnitEvents.Register(PlayerUnitEvent.SpellEndCast, Spell);

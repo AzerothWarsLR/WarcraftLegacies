@@ -9,10 +9,10 @@ namespace MacroTools.Frames.Books.Powers
 {
   public sealed class PowerBook : Book<PowerPage>
   {
-    private const float BOTTOM_BUTTON_Y_OFFSET = 0.015f;
-    private const float BOTTOM_BUTTON_X_OFFSET = 0.02f;
-    private const float BOOK_WIDTH = 0.3f;
-    private const float BOOK_HEIGHT = 0.39f;
+    private const float BottomButtonYOffset = 0.015f;
+    private const float BottomButtonXOffset = 0.02f;
+    private const float BookWidth = 0.3f;
+    private const float BookHeight = 0.39f;
 
     private static bool _initialized;
     private static PowerBook _instance;
@@ -118,7 +118,7 @@ namespace MacroTools.Frames.Books.Powers
       {
         LoadToc(@"ArtifactSystem.toc");
         LoadToc(@"ui\framedef\framedef.toc");
-        _instance = new PowerBook(BOOK_WIDTH, BOOK_HEIGHT, BOTTOM_BUTTON_X_OFFSET, BOTTOM_BUTTON_Y_OFFSET);
+        _instance = new PowerBook(BookWidth, BookHeight, BottomButtonXOffset, BottomButtonYOffset);
         _initialized = true;
       }
     }
