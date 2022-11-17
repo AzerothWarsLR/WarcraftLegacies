@@ -53,7 +53,11 @@ namespace MacroTools.Frames.Books.ArtifactSystem
     private void ReRender()
     {
       foreach (var page in Pages)
+      {
+        page.Visible = false; //This avoid a crash to desktop when rerendering a Book that a player has open.
         page.Dispose();
+      }
+
       _pagesByArtifact.Clear();
       Pages.Clear();
       AddPagesAndArtifacts();
