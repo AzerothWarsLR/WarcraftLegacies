@@ -35,6 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
+      Required = true;
     }
 
     protected override string CompletionPopup => "Ashenvale is under control and Cenarius can now be awaken";

@@ -1,5 +1,5 @@
-using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Druids;
+using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     public static void Setup( )
     {
       var druids = FactionSetup.DruidsSetup.Druids;
-      QuestData newQuest = druids.AddQuest(new QuestMalfurionAwakens(Regions.Moonglade));
+      var newQuest = druids.AddQuest(new QuestMalfurionAwakens(Regions.Moonglade, LegendDruids.LegendNordrassil.Unit));
       druids.StartingQuest = newQuest;
       druids.AddQuest(new QuestAshenvale(Regions.AshenvaleUnlock));
       druids.AddQuest(new QuestDruidsKillFrostwolf());
