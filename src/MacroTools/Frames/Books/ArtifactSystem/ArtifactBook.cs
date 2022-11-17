@@ -39,6 +39,7 @@ namespace MacroTools.Frames.Books.ArtifactSystem
         AddPage();
         lastPage = Pages.Last();
       }
+
       lastPage.AddArtifact(artifact);
       _pagesByArtifact.Add(artifact, lastPage);
       artifact.Disposed += OnArtifactDisposed;
@@ -46,33 +47,29 @@ namespace MacroTools.Frames.Books.ArtifactSystem
 
     private void OnArtifactDisposed(object? sender, Artifact artifact)
     {
-        ReRender();
+      ReRender();
     }
 
     private void ReRender()
     {
-        foreach (var artifactbyPage in _pagesByArtifact)
-            artifactbyPage.Value.RemoveArtifact(artifactbyPage.Key);
-        _pagesByArtifact.Clear();
-
-        foreach (var page in Pages)
-            page.Dispose();
-        Pages.Clear();
-
-        AddPagesAndArtifacts();
+      foreach (var page in Pages)
+        page.Dispose();
+      _pagesByArtifact.Clear();
+      Pages.Clear();
+      AddPagesAndArtifacts();
     }
 
     private void AddPagesAndArtifacts()
     {
-        var firstPage = AddPage();
-        firstPage.Visible = true;
-        AddAllArtifacts();
+      var firstPage = AddPage();
+      firstPage.Visible = true;
+      AddAllArtifacts();
     }
 
     private void AddAllArtifacts()
     {
       foreach (var artifact in ArtifactManager.GetAllArtifacts())
-       AddArtifact(artifact);
+        AddArtifact(artifact);
     }
 
     private static void LoadToc(string tocFilePath)
