@@ -7,6 +7,9 @@ namespace WarcraftLegacies.Source.Setup
   /// </summary>
   public static class BlockerSetup
   {
+    /// <summary>
+    /// Hides all pathing blockers on the map.
+    /// </summary>
     public static void Setup()
     {
       var pathingBlockers = new[]
@@ -22,14 +25,14 @@ namespace WarcraftLegacies.Source.Setup
         FourCC("YTpb"),
         FourCC("YTpc"),
         FourCC("B011"),
-        FourCC("OTip")
       };
 
       EnumDestructablesInRect(WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, null, () =>
       {
         foreach (var pathingBlocker in pathingBlockers)
         {
-          if (GetDestructableTypeId(GetEnumDestructable()) == pathingBlocker) RemoveDestructable(GetEnumDestructable());
+          if (GetDestructableTypeId(GetEnumDestructable()) == pathingBlocker) 
+            ShowDestructable(GetEnumDestructable(), false);
         }
       });
     }
