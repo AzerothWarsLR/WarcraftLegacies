@@ -1,4 +1,4 @@
-using WarcraftLegacies.Source.Quests.Ironforge;
+﻿using WarcraftLegacies.Source.Quests.Ironforge;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
@@ -10,6 +10,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       var ironforge = IronforgeSetup.Ironforge;
       var newQuest = ironforge.AddQuest(new QuestThelsamar(Regions.ThelUnlock));
       ironforge.StartingQuest = newQuest;
+      ironforge.AddQuest(new QuestGrimBatolOffensive());
+      ironforge.AddQuest(new QuestTheAccursedCoast());
       ironforge.AddQuest(new QuestDunMorogh());
       ironforge.AddQuest(new QuestDominion(Regions.IronforgeAmbient));
       ironforge.AddQuest(new QuestGnomeregan(Regions.Gnomergan));

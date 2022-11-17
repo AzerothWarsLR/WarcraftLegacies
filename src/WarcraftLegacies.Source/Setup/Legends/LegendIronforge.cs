@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -12,6 +12,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Legend LegendMagni { get; private set; }
     public static Legend LegendGreatforge { get; private set; }
     public static Legend LegendThelsamar { get; private set; }
+    public static Legend LegendMenethilHarbor { get; private set; }
 
     public static void Setup()
     {
@@ -52,6 +53,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = PreplacedUnitSystem.GetUnit(FourCC("h05H"))
       };
       Legend.Register(LegendThelsamar);
+
+      LegendMenethilHarbor = new Legend
+      {
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("h05K"))
+      };
+      Legend.Register(LegendMenethilHarbor);
     }
   }
 }
