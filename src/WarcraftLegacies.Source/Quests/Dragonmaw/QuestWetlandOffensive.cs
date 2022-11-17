@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
 
     protected override void OnComplete(Faction completingFaction)
     {
-      CreateTimer().Start(900 - GameTime.GetGameTime(), false, () =>
+      CreateTimer().Start(600 - GameTime.GetGameTime(), false, () =>
       {
         AddHeroXP(LegendDragonmaw.LegendNekrosh.Unit, 3000, true);
         completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 750);

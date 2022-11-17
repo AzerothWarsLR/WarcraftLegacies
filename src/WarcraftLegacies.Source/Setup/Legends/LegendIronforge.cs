@@ -56,7 +56,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       LegendMenethilHarbor = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("h05K"))
+        Unit = PreplacedUnitSystem.GetUnit(FourCC("h0AK"))
       };
       Legend.Register(LegendMenethilHarbor);
     }
