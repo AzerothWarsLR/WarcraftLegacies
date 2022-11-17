@@ -51,7 +51,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendMorghor = new Legend
       {
         Unit = PreplacedUnitSystem.GetUnit(FourCC("N0DA")),
-        DeathMessage = "Mor'ghor, the tyrant of the Twilight Highlands, has been defeated."
+        DeathMessage = "Mor'ghor, the tyrant of the Twilight Highlands, has been defeated.",
+        PermaDies = true
       };
       Legend.Register(LegendMorghor);
 
