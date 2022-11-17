@@ -61,7 +61,6 @@ public static class Regions
 	public static Rectangle Lordaeron_East { get; set; } = new Rectangle(12896f, 7456f, 18240f, 13984f);
 	public static Rectangle Moonglade { get; set; } = new Rectangle(-12992f, 10176f, -12416f, 10656f);
 	public static Rectangle InstanceNazjatar { get; set; } = new Rectangle(7872f, -31584f, 15552f, -26624f);
-	public static Rectangle Nether_Exit { get; set; } = new Rectangle(-26688f, 7776f, -25696f, 8800f);
 	public static Rectangle Northern_Kali_Ships { get; set; } = new Rectangle(-17344f, -1376f, -8704f, 8800f);
 	public static Rectangle Northrend_ships { get; set; } = new Rectangle(-9216f, 19680f, 6048f, 24992f);
 	public static Rectangle Orgrimmar { get; set; } = new Rectangle(-9824f, -2080f, -5824f, 1248f);
@@ -155,7 +154,7 @@ public static class Regions
 	public static Rectangle SilithusAmbient { get; set; } = new Rectangle(-20768f, -19744f, -15712f, -11744f);
 	public static Rectangle UngoroAmbient { get; set; } = new Rectangle(-15616f, -15200f, -12608f, -11680f);
 	public static Rectangle FeralasAmbient1 { get; set; } = new Rectangle(-17408f, -11552f, -14336f, -7904f);
-	public static Rectangle FeralasAmbient2 { get; set; } = new Rectangle(-21504f, -11744f, -17248f, -5536f);
+	public static Rectangle FeralasAmbient2 { get; set; } = new Rectangle(-23808f, -14464f, -17248f, -5536f);
 	public static Rectangle AszharaAmbient1 { get; set; } = new Rectangle(-9824f, -3872f, -5920f, 3488f);
 	public static Rectangle AzsharaAmbient2 { get; set; } = new Rectangle(-8704f, 832f, -4352f, 6176f);
 	public static Rectangle DusthallowAmbient { get; set; } = new Rectangle(-12256f, -9920f, -8640f, -5728f);
@@ -218,19 +217,6 @@ public static class Regions
 	public static Rectangle WetlandAmbient2 { get; set; } = new Rectangle(11296f, -3808f, 12576f, -2272f);
 	public static Rectangle GrimBatolAmbient1 { get; set; } = new Rectangle(14720f, -4032f, 17920f, -256f);
 	public static Rectangle GrimBatolAmbient2 { get; set; } = new Rectangle(17952f, -8768f, 22080f, 736f);
-	public static Rectangle Region_BS { get; set; } = new Rectangle(19776f, -29792f, 19840f, -29728f);
-	public static Rectangle Region_IC { get; set; } = new Rectangle(-12928f, -26848f, -12864f, -26784f);
-	public static Rectangle Region_DB { get; set; } = new Rectangle(-8832f, -28992f, -8768f, -28928f);
-	public static Rectangle Region_AE { get; set; } = new Rectangle(-17312f, -8448f, -17248f, -8384f);
-	public static Rectangle Region_AZ_1 { get; set; } = new Rectangle(-3488f, 17888f, -3424f, 17952f);
-	public static Rectangle Region_AZ_2 { get; set; } = new Rectangle(-5760f, 23968f, -5696f, 24032f);
-	public static Rectangle Region_BM { get; set; } = new Rectangle(12576f, -10592f, 12640f, -10528f);
-	public static Rectangle Region_ToS { get; set; } = new Rectangle(-960f, 8576f, -896f, 8640f);
-	public static Rectangle Region_SC { get; set; } = new Rectangle(14464f, 7616f, 14528f, 7680f);
-	public static Rectangle IllidanWeather { get; set; } = new Rectangle(-19456f, 2624f, -17632f, 4640f);
-	public static Rectangle IllidanMovement1 { get; set; } = new Rectangle(-18816f, 4032f, -18784f, 4064f);
-	public static Rectangle IllidanMovement2 { get; set; } = new Rectangle(-18816f, 3968f, -18784f, 4000f);
-	public static Rectangle IllidanAmbiance2 { get; set; } = new Rectangle(-1984f, 8128f, 608f, 10432f);
 	public static Rectangle LightningBolt2 { get; set; } = new Rectangle(-18528f, 3488f, -18496f, 3520f);
 	public static Rectangle LightningBolt3 { get; set; } = new Rectangle(-18784f, 3584f, -18752f, 3616f);
 	public static Rectangle WaveCrash { get; set; } = new Rectangle(-18912f, 3872f, -18880f, 3904f);
@@ -247,7 +233,6 @@ public static class Regions
 	public static Rectangle NazjatarExit1 { get; set; } = new Rectangle(12000f, -27712f, 12480f, -27520f);
 	public static Rectangle NazjatarExit2 { get; set; } = new Rectangle(12416f, -29728f, 12800f, -29408f);
 	public static Rectangle AetheneumTombEntrance2 { get; set; } = new Rectangle(-18016f, -7200f, -17664f, -6912f);
-	public static Rectangle IllidanBoat1 { get; set; } = new Rectangle(-6880f, 4064f, -6560f, 4512f);
 	public static Rectangle IllidanBoat2 { get; set; } = new Rectangle(3616f, 7456f, 3744f, 7616f);
 	public static Rectangle IllidanBoat3 { get; set; } = new Rectangle(4416f, 7072f, 4480f, 7136f);
 	public static Rectangle IllidanBoat4 { get; set; } = new Rectangle(-5280f, 3168f, -5248f, 3200f);
@@ -414,5 +399,6 @@ public static class Regions
 	public static Rectangle TempestKeepHide2 { get; set; } = new Rectangle(1216f, -19552f, 3040f, -18368f);
 	public static Rectangle InstanceOutland { get; set; } = new Rectangle(-7104f, -32256f, 6016f, -18208f);
 	public static Rectangle Outland_Ships { get; set; } = new Rectangle(-7104f, -32256f, 6016f, -18208f);
+	public static Rectangle IllidanStartingPosition { get; set; } = new Rectangle(-22496f, -14272f, -21472f, -13152f);
 
 }

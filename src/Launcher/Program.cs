@@ -99,7 +99,8 @@ namespace Launcher
 
       FixDoodadData(map);
       var launchSettings = config.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
-      SetTestPlayerSlot(map, launchSettings.TestingPlayerSlot);
+      if (launch)
+        SetTestPlayerSlot(map, launchSettings.TestingPlayerSlot);
       var builder = new MapBuilder(map);
       builder.AddFiles(baseMapPath, "*", SearchOption.AllDirectories);
       builder.AddFiles(AssetsFolderPath, "*", SearchOption.AllDirectories);
