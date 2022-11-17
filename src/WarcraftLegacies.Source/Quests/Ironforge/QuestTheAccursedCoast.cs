@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
 
     protected override void OnComplete(Faction completingFaction)
     {
-      CreateTimer().Start(900 - GameTime.GetGameTime(), false, () =>
+      CreateTimer().Start(600 - GameTime.GetGameTime(), false, () =>
       {
         completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 500);
         GetExpiredTimer().Destroy();
