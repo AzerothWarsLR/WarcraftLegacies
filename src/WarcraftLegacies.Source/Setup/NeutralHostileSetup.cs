@@ -1,4 +1,5 @@
 ﻿using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
@@ -24,6 +25,8 @@ namespace WarcraftLegacies.Source.Setup
       }
       if (LegendNaga.LegendIllidan.Unit != null) 
         LegendNaga.LegendIllidan.Unit.SetOwner(IllidanSetup.Illidan.Player);
+      var rescueUnits = Regions.IllidanStartingPosition.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      IllidanSetup.Illidan.Player.RescueGroup(rescueUnits);
     }
   }
 }

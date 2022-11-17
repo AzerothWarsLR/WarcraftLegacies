@@ -439,9 +439,8 @@ namespace MacroTools.FactionSystem
     {
       OnLegendDeath?.Invoke(this, this);
 
-      if (GetOwningPlayer(_unit) == Player(PLAYER_NEUTRAL_PASSIVE) ||
-          (GetOwningPlayer(_unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && DeathMessage != "" &&
-           !string.IsNullOrEmpty(DeathMessage)))
+      if (GetOwningPlayer(_unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && DeathMessage != "" &&
+           !string.IsNullOrEmpty(DeathMessage) && !IsUnitType(_unit, UNIT_TYPE_STRUCTURE))
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"\n|cffffcc00LEGENDARY CREEP DEATH|r\n{DeathMessage}");
 
       if (_permaDies || !IsUnitType(_unit, UNIT_TYPE_HERO))

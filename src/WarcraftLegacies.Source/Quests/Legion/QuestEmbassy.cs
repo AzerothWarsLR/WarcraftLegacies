@@ -12,8 +12,8 @@ namespace WarcraftLegacies.Source.Quests.Legion
       "A stronger foothold in this world will be required to field the Burning Legion's war machines and to in more of its lieutenants."
       , "ReplaceableTextures\\CommandButtons\\BTNDemonBlackCitadel.blp")
     {
-      AddObjective(new ObjectiveUpgrade(FourCC("e01H"), FourCC("e01F")));
-      ResearchId = FourCC("R042");
+      AddObjective(new ObjectiveUpgrade(Constants.UNIT_U00N_BURNING_CITADEL_LEGION, Constants.UNIT_U00C_LEGION_BASTION_LEGION));
+      ResearchId = Constants.UPGRADE_R042_QUEST_COMPLETED_INFERNAL_FOOTHOLD_LEGION;
     }
 
     protected override string CompletionPopup => "The Legion has secured a foothold on Azeroth.";

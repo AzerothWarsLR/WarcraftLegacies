@@ -42,9 +42,9 @@ Your primary objective is to summon the Burning Legion. Invade the city of Dalar
       Legion.ModObjectLimit(FourCC("ndmg"), Faction.UNLIMITED); //Demon Gate
       Legion.ModObjectLimit(FourCC("n04N"), Faction.UNLIMITED); //Infernal Machine Factory
       Legion.ModObjectLimit(FourCC("n04Q"), Faction.UNLIMITED); //Nether Pit
-      Legion.ModObjectLimit(FourCC("e01F"), 1); //Monolith
-      Legion.ModObjectLimit(FourCC("e01G"), 1); //Satue
-      Legion.ModObjectLimit(FourCC("e01H"), 1); //Fortress
+      Legion.ModObjectLimit(Constants.UNIT_U00F_DORMANT_SPIRE_BLUE, 1);
+      Legion.ModObjectLimit(Constants.UNIT_U00C_LEGION_BASTION_LEGION, 1);
+      Legion.ModObjectLimit(Constants.UNIT_U00N_BURNING_CITADEL_LEGION, 1);
 
       //Units
       Legion.ModObjectLimit(FourCC("u00D"), Faction.UNLIMITED); //Legion Herald
