@@ -76161,12 +76161,6 @@ STRING 12689
 Q
 }
 
-STRING 12690
-// Abilities: A0MU (Worgen Curse Conversation), EditorSuffix (Editor Suffix)
-{
-(Peasant converter)
-}
-
 STRING 12691
 // Abilities: A0OJ (Mass Unholy Armor), Ubertip (Tooltip - Normal - Extended)
 {
@@ -95241,12 +95235,6 @@ STRING 15877
 // Units: u02J (Tidal Terror), Ubertip (Tooltip - Extended)
 {
 Sea-dragon of the crushing depths.|n|cfff5962dAbilities:|R Squall, Tsunami|n|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 15878
-// Abilities: A0MU (Worgen Curse Conversation), Name (Name)
-{
-Worgen Curse Conversation
 }
 
 STRING 15879
