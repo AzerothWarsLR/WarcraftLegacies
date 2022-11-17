@@ -13,6 +13,16 @@ namespace MacroTools.Extensions
     private const float HeroDropDist = 50; //The radius in which heroes spread out items when they drop them
 
     /// <summary>
+    /// Returns true if the unit is an illusion.
+    /// </summary>
+    public static bool IsIllusion(this unit whichUnit) => IsUnitIllusion(whichUnit);
+
+    /// <summary>
+    /// Returns whether or not the unit is of the specified type.
+    /// </summary>
+    public static bool IsType(this unit whichUnit, unittype unitType) => IsUnitType(whichUnit, unitType);
+
+    /// <summary>
     /// Forces the unit to face a particular direction.
     /// </summary>
     /// <returns>The same unit that was passed in.</returns>
@@ -387,6 +397,9 @@ namespace MacroTools.Extensions
     /// </summary>
     public static void DropAllItems(this unit whichUnit)
     {
+      if (IsUnitType(whichUnit, UNIT_TYPE_SUMMONED))
+        throw new InvalidOperationException("Tried to call {nameof(DropAllItems)} on a oned hero.");
+
       var unitX = GetUnitX(whichUnit);
       var unitY = GetUnitY(whichUnit);
       float angInRadians = 0;
