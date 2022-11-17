@@ -21,6 +21,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         return;
       dragonmaw.StartingQuest = dragonmaw.AddQuest(new QuestOrgrimmarPortal(PreplacedUnitSystem.GetUnit(Constants.UNIT_N07E_PORTAL_GREEN_NAZJATAR, Regions.DragonmawPortal.Center)));
       dragonmaw.AddQuest(new QuestDragonmawPort(Regions.DragonmawUnlock));
+      dragonmaw.AddQuest(new QuestWetlandOffensive());
+      dragonmaw.AddQuest(new QuestDunAlgazSiege());
       dragonmaw.AddQuest(new QuestGrimBatol(Regions.Grim_Batol,
         PreplacedUnitSystem.GetUnit(Constants.UNIT_H01Z_GRIM_BATOL_CREEP),
         PreplacedUnitSystem.GetUnit(Constants.UNIT_N08R_GRIM_BATOL_TUNNELS, new Point(16562, -2766)),

@@ -8,6 +8,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
   {
     public static Legend? DragonmawPort { get; private set; }
     public static Legend? LegendZaela { get; private set; }
+    public static Legend? LegendNekrosh { get; private set; }
 
     public static void Setup()
     {
@@ -22,6 +23,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Legend.Register(LegendZaela = new Legend
       {
         UnitType = FourCC("O05S")
+      });
+
+      Legend.Register(LegendNekrosh = new Legend
+      {
+        UnitType = FourCC("O01Q")
       });
 
     }
