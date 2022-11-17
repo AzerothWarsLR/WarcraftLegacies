@@ -50,10 +50,6 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       "Control of all units in the Scarlet Monastery and you will unally the alliance";
 
     /// <inheritdoc />
-    protected override void OnFail(Faction completingFaction) => 
-      completingFaction.Player?.RescueGroup(_rescueUnits);
-
-    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
       SetPlayerTechResearched(KultirasSetup.Kultiras.Player,
