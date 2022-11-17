@@ -18,15 +18,6 @@ namespace MacroTools.FactionSystem
     {
       if (GetLocalPlayer() == whichPlayer) BlzChangeMinimapTerrainTex(texturePath);
     }
-    
-    /// <summary>
-    /// Runs a function for the player locally, as in, only on their machine.
-    /// <para>This MUST contain asynchronous code only. If synchronous code is used, the game will desynchronize.</para>
-    /// </summary>
-    public static void RunLocal(this player whichPlayer, Action localFunction)
-    {
-      if (GetLocalPlayer() == whichPlayer) localFunction();
-    }
 
     public static void ApplyCameraField(this player whichPlayer, camerafield whichField, float value, float duration)
     {

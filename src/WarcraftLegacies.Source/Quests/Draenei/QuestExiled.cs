@@ -95,8 +95,9 @@ namespace WarcraftLegacies.Source.Quests.Draenei
         if (!completingFaction.GetQuestByTitle("Warn Farahlon").ProgressLocked) completingFaction.GetQuestByTitle("Warn Farahlon").Progress = QuestProgress.Failed;
         RemoveUnit(TheExodar);
       }
-      
-      completingFaction.Player?.RunLocal(() => PlayThematicMusic("war3mapImported\\DraeneiTheme.mp3"));
+
+      if (GetLocalPlayer() == completingFaction.Player) 
+        PlayThematicMusic("war3mapImported\\DraeneiTheme.mp3");
       ResetCamera(completingFaction);
 
       if (KilledOnFail != null)
