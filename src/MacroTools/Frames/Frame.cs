@@ -32,7 +32,7 @@ namespace MacroTools.Frames
         BlzFrameSetSize(Handle, _width, _height);
       }
     }
-    
+
     public float Width
     {
       get => _width;
@@ -66,7 +66,7 @@ namespace MacroTools.Frames
     {
       BlzFrameSetPoint(Handle, point, relativeTo, relativePoint, x, y);
     }
-    
+
     /// <summary>
     /// Sets the position of the <see cref="Frame"/> relative to another <see cref="Frame"/>.
     /// </summary>
@@ -99,7 +99,7 @@ namespace MacroTools.Frames
     {
       Handle = BlzCreateSimpleFrame(name, parent, 0);
     }
-    
+
     /// <summary>
     /// Creates a Blizzard Simple Frame.
     /// </summary>
@@ -115,6 +115,7 @@ namespace MacroTools.Frames
       Handle = BlzCreateFrameByType(typeName, name, parent.Handle, inherits, 0);
     }
 
+    /// <inheritdoc />
     public void Dispose()
     {
       Dispose(true);
@@ -123,7 +124,9 @@ namespace MacroTools.Frames
     /// <summary>
     /// Unhooks all events from this class. Called when Dispose is called or the Frame is garbage collected.
     /// </summary>
-    protected virtual void DisposeEvents() { }
+    protected virtual void DisposeEvents()
+    {
+    }
 
     private void Dispose(bool disposing)
     {
@@ -136,11 +139,13 @@ namespace MacroTools.Frames
         {
           childFrame.Dispose();
         }
+
         _children.Clear();
       }
+
       BlzDestroyFrame(Handle);
     }
-    
+
     ~Frame()
     {
       Dispose(false);

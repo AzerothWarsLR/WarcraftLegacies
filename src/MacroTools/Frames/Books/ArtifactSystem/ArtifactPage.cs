@@ -10,8 +10,6 @@ namespace MacroTools.Frames.Books.ArtifactSystem
   /// </summary>
   public sealed class ArtifactPage : Page
   {
-    private readonly Dictionary<Artifact, ArtifactCard> _cardsByArtifact = new();
-    
     public ArtifactPage()
     {
       Rows = 3;
@@ -19,20 +17,7 @@ namespace MacroTools.Frames.Books.ArtifactSystem
       YOffsetTop = 0.025f;
       YOffsetBot = 0.05f;
     }
-    
-    /// <summary>
-    /// Unrenders a <see cref="Artifact"/> from this <see cref="ArtifactPage"/>.
-    /// </summary>
-    public void RemoveArtifact(Artifact artifact)
-    {
-      if (_cardsByArtifact.TryGetValue(artifact, out var artifactCard))
-      {
-        Cards.Remove(artifactCard);
-        _cardsByArtifact.Remove(artifact);
-        artifactCard.Dispose();
-      }
-    }
-    
+
     /// <summary>
     ///   Renders an Artifact on this MenuPage as an ArtifactCard.
     /// </summary>
@@ -44,7 +29,6 @@ namespace MacroTools.Frames.Books.ArtifactSystem
       PositionFrameAtIndex(artifactCard, Cards.Count);
       Cards.Add(artifactCard);
       AddFrame(artifactCard);
-      _cardsByArtifact.Add(artifact, artifactCard);
     }
   }
 }
