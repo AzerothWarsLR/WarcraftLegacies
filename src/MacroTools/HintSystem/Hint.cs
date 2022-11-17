@@ -6,7 +6,7 @@ namespace MacroTools.HintSystem
 {
   public sealed class Hint
   {
-    private const float HINT_INTERVAL = 180;
+    private const float HintInterval = 180;
     
     private static readonly List<Hint> Unread = new();
     private readonly string _msg;
@@ -55,7 +55,7 @@ namespace MacroTools.HintSystem
     {
       _initialized = true;
       var trig = CreateTrigger();
-      TriggerRegisterTimerEvent(trig, HINT_INTERVAL, true);
+      TriggerRegisterTimerEvent(trig, HintInterval, true);
       TriggerAddAction(trig, DisplayRandomHints);
     }
   }

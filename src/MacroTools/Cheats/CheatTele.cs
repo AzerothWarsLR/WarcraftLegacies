@@ -6,7 +6,7 @@ namespace MacroTools.Cheats
 {
   public static class CheatTele
   {
-    private const string COMMAND = "-tele ";
+    private const string Command = "-tele ";
     private static readonly Dictionary<player, bool> TeleToggle = new();
 
     private static void Patrol()
@@ -24,7 +24,7 @@ namespace MacroTools.Cheats
 
       string enteredString = GetEventPlayerChatString();
       player p = GetTriggerPlayer();
-      string parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
+      string parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
 
       if (parameter == "on")
       {
@@ -41,7 +41,7 @@ namespace MacroTools.Cheats
     public static void Setup()
     {
       trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
       TriggerAddAction(trig, Actions);
       PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeReceivesPointOrder, Patrol);
     }

@@ -41,10 +41,10 @@ namespace WarcraftLegacies.Source.Mechanics.Frostwolf
     {
       var packable = new StructurePacking.PackableStructure
       {
-        _packedUnitId = Constants.UNIT_OOSC_PACK_KODO_FROSTWOLF,
-        _buildAbility = BuildAbilitys[index],
-        _structureModel = StructureModels[index],
-        _structureId = Buildings[index]
+        PackedUnitId = Constants.UNIT_OOSC_PACK_KODO_FROSTWOLF,
+        BuildAbility = BuildAbilitys[index],
+        StructureModel = StructureModels[index],
+        StructureId = Buildings[index]
       };
       packable.PackUnitSetup(packedUnit);
     }

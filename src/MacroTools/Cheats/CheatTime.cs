@@ -4,7 +4,7 @@ namespace MacroTools.Cheats
 {
   public static class CheatTime
   {
-    private const string COMMAND = "-time ";
+    private const string Command = "-time ";
 
     private static void Actions()
     {
@@ -13,7 +13,7 @@ namespace MacroTools.Cheats
       string enteredString = GetEventPlayerChatString();
       player p = GetTriggerPlayer();
       var pId = GetPlayerId(p);
-      string parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
+      string parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
 
       SetFloatGameState(GAME_STATE_TIME_OF_DAY, S2R(parameter));
       DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Time of day to " + parameter + ".");
@@ -22,7 +22,7 @@ namespace MacroTools.Cheats
     public static void Setup()
     {
       trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
       TriggerAddAction(trig, Actions);
     }
   }

@@ -5,7 +5,7 @@ namespace MacroTools.Cheats
 {
   public static class CheatRemove
   {
-    private const string COMMAND = "-remove";
+    private const string Command = "-remove";
 
     private static void Remove(unit whichUnit)
     {
@@ -26,7 +26,7 @@ namespace MacroTools.Cheats
     public static void Setup()
     {
       trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
       TriggerAddAction(trig, Actions);
     }
   }

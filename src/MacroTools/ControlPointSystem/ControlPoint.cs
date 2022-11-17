@@ -14,7 +14,7 @@ namespace MacroTools.ControlPointSystem
   /// </summary>
   public sealed class ControlPoint
   {
-    private const float CAPTURE_THRESHOLD = 0.8f; //Percentage of maximum HP; below this, the CP will go to the damager
+    private const float CaptureThreshold = 0.8f; //Percentage of maximum HP; below this, the CP will go to the damager
     private static readonly int RegenerationAbility = FourCC("A0UT");
 
     private readonly TriggerWrapper _damageTrigger = new();
@@ -60,7 +60,7 @@ namespace MacroTools.ControlPointSystem
 
         var hp = (GetUnitState(Unit, UNIT_STATE_LIFE) - GetEventDamage()) /
                  GetUnitState(Unit, UNIT_STATE_MAX_LIFE);
-        if (hp < CAPTURE_THRESHOLD)
+        if (hp < CaptureThreshold)
         {
           BlzSetEventDamage(0);
           SetUnitOwner(Unit, GetOwningPlayer(attacker), true);

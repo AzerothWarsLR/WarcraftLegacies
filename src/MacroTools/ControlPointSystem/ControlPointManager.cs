@@ -13,9 +13,9 @@ namespace MacroTools.ControlPointSystem
     ///   How often players receive income.
     ///   Changing this will not affect the total amount of income they receive.
     /// </summary>
-    private const float PERIOD = 1;
+    private const float Period = 1;
 
-    private const int MAX_HITPOINTS = 10000; //All Control Points get given this many hitpoints
+    private const int MaxHitpoints = 10000; //All Control Points get given this many hitpoints
 
     private static bool _initialized;
 
@@ -48,7 +48,7 @@ namespace MacroTools.ControlPointSystem
     {
       ByUnit.Add(controlPoint.Unit, controlPoint);
       ByUnitType.Add(controlPoint.UnitType, controlPoint);
-      BlzSetUnitMaxHP(controlPoint.Unit, MAX_HITPOINTS);
+      BlzSetUnitMaxHP(controlPoint.Unit, MaxHitpoints);
       controlPoint.Unit.SetLifePercent(80);
 
       controlPoint.Owner.SetBaseIncome(controlPoint.Owner.GetBaseIncome() + controlPoint.Value);
@@ -58,14 +58,14 @@ namespace MacroTools.ControlPointSystem
       {
         _initialized = true;
         timer incomeTimer = CreateTimer();
-        TimerStart(incomeTimer, PERIOD, true, () =>
+        TimerStart(incomeTimer, Period, true, () =>
         {
           foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
             if (player.GetFaction() != null)
             {
-              var goldPerSecond = player.GetTotalIncome() * PERIOD / 60;
+              var goldPerSecond = player.GetTotalIncome() * Period / 60;
               player.AddGold(goldPerSecond);
-              var lumberPerSecond = player.GetLumberIncome() * PERIOD / 60;
+              var lumberPerSecond = player.GetLumberIncome() * Period / 60;
               player.AddLumber(lumberPerSecond);
             }
         });

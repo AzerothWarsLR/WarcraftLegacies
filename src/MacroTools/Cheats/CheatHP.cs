@@ -5,7 +5,7 @@ namespace MacroTools.Cheats
 {
   public static class CheatHp
   {
-    private const string COMMAND = "-hp ";
+    private const string Command = "-hp ";
     private static string? _parameter;
 
     private static void SetHp(unit whichUnit)
@@ -20,7 +20,7 @@ namespace MacroTools.Cheats
       string enteredString = GetEventPlayerChatString();
       player p = GetTriggerPlayer();
       GetPlayerId(p);
-      _parameter = SubString(enteredString, StringLength(COMMAND), StringLength(enteredString));
+      _parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
 
       if (S2I(_parameter) >= 0)
       {
@@ -35,7 +35,7 @@ namespace MacroTools.Cheats
     public static void Setup()
     {
       trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, false);
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
 
       TriggerAddAction(trig, Actions);
     }
