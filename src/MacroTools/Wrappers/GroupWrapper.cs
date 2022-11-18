@@ -13,7 +13,6 @@ namespace MacroTools.Wrappers
   public sealed class GroupWrapper : IDisposable
   {
     private readonly group _group;
-    private bool _disposed;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="GroupWrapper"/> class.
@@ -23,10 +22,8 @@ namespace MacroTools.Wrappers
       _group = CreateGroup();
     }
 
-    public void Dispose()
-    {
-      Dispose(true);
-    }
+    /// <inheritdoc />
+    public void Dispose() => DestroyGroup(_group);
 
     /// <summary>
     ///   Empties the units in this group into a List,
@@ -106,19 +103,6 @@ namespace MacroTools.Wrappers
     {
       GroupEnumUnitsInRange(_group, point.X, point.Y, radius, null);
       return this;
-    }
-
-    ~GroupWrapper()
-    {
-      Dispose(false);
-    }
-
-    private void Dispose(bool disposing)
-    {
-      if (_disposed) return;
-
-      if (disposing) DestroyGroup(_group);
-      _disposed = true;
     }
   }
 }
