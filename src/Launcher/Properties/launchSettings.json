@@ -1,0 +1,24 @@
+{
+  "profiles": {
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    },
+    "TestMap: Test": {
+      "commandName": "Project",
+      "commandLineArgs": "Test \"..\\..\\..\\..\\..\\maps\\testsource.w3x\" \"..\\..\\..\\..\\TestMap.Source\""
+    },
+    "WarcraftLegacies: Test": {
+      "commandName": "Project",
+      "commandLineArgs": "Test \"..\\..\\..\\..\\..\\maps\\source.w3x\" \"..\\..\\..\\..\\WarcraftLegacies.Source\""
+    },
+    "WarcraftLegacies: Publish": {
+      "commandName": "Project",
+      "commandLineArgs": "Publish \"..\\..\\..\\..\\..\\maps\\source.w3x\" \"..\\..\\..\\..\\WarcraftLegacies.Source\""
+    },
+    "WarcraftLegacies: Generate Constants": {
+      "commandName": "Project",
+      "commandLineArgs": "GenerateConstants \"..\\..\\..\\..\\..\\maps\\source.w3x\""
+    }
+  }
+}
