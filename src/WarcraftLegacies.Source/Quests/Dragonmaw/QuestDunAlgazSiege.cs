@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using System;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
@@ -19,19 +20,31 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendGrimbatol, true));
     }
 
+    /// <inheritdoc />
     protected override string CompletionPopup =>
       "Zaela emerges victorious, having pillaged Thelsamar, uncovering great treasures to bring back to the clan.";
 
+    /// <inheritdoc />
     protected override string RewardDescription => "3000 experience for Zaela and 750 gold at turn 10";
 
+    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      CreateTimer().Start(600 - GameTime.GetGameTime(), false, () =>
-      {
-        AddHeroXP(LegendDragonmaw.LegendZaela.Unit, 3000, true);
-        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 750);
-        GetExpiredTimer().Destroy();
-      });
+      var timeUntilReward = 600 - GameTime.GetGameTime();
+      if (timeUntilReward <= 0)
+        GiveReward(completingFaction);
+      else
+        CreateTimer().Start(Math.Max(600 - GameTime.GetGameTime(), 0), false, () =>
+        {
+          GiveReward(completingFaction);
+        });
+    }
+    
+    private static void GiveReward(Faction completingFaction)
+    {
+      AddHeroXP(LegendDragonmaw.LegendZaela.Unit, 3000, true);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 750);
+      GetExpiredTimer().Destroy();
     }
   }
 }
