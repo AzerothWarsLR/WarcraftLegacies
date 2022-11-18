@@ -6,6 +6,10 @@ using static War3Api.Common;
 
 namespace MacroTools.Frames.Books
 {
+  /// <summary>
+  /// A collection of <see cref="Page"/>s that players can flip through to read information.
+  /// </summary>
+  /// <typeparam name="T"></typeparam>
   public abstract class Book<T> : Frame where T : Page, new()
   {
     private readonly Button _launcher;
@@ -13,6 +17,9 @@ namespace MacroTools.Frames.Books
     private readonly Button _previousButton;
     private readonly TextFrame _title;
 
+    /// <summary>
+    /// All <see cref="Page"/>s contained in the Book.
+    /// </summary>
     protected readonly List<T> Pages = new();
 
     private int _activePageIndex;
@@ -106,6 +113,9 @@ namespace MacroTools.Frames.Books
       }
     }
 
+    /// <summary>
+    /// Determines the book's center.
+    /// </summary>
     protected Point Position
     {
       init => SetAbsPoint(FRAMEPOINT_CENTER, value.X, value.Y);
