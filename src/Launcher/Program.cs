@@ -17,14 +17,6 @@ namespace Launcher
 {
   internal static class Program
   {
-    // Input
-    private const string AssetsFolderPath = @"..\..\..\..\Assets\";
-
-    // Output
-    private const string OutputFolderPath = @"..\..\..\..\..\artifacts";
-    private const string OutputScriptName = @"war3map.lua";
-    private const string OutputMapName = @"target.w3x";
-
     // Warcraft III
     private const string GraphicsApi = "Direct3D9";
 #if DEBUG
@@ -70,27 +62,28 @@ namespace Launcher
     /// </summary>
     private static void Build(string baseMapPath, string projectFolderPath, bool launch, IConfiguration config)
     {
+      var launchSettings = config.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
+      
       // Ensure these folders exist
-      Directory.CreateDirectory(AssetsFolderPath);
-      Directory.CreateDirectory(OutputFolderPath);
+      Directory.CreateDirectory(launchSettings.AssetsFolderPath);
+      Directory.CreateDirectory(launchSettings.OutputFolderPath);
 
       // Load existing map data
       var map = Map.Open(baseMapPath);
 
       FixDoodadData(map);
-      var launchSettings = config.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
       if (launch)
         SetTestPlayerSlot(map, launchSettings.TestingPlayerSlot);
       var builder = new MapBuilder(map);
       builder.AddFiles(baseMapPath, "*", SearchOption.AllDirectories);
-      builder.AddFiles(AssetsFolderPath, "*", SearchOption.AllDirectories);
+      builder.AddFiles(launchSettings.AssetsFolderPath, "*", SearchOption.AllDirectories);
 
       //ObjectEditor.SupplmentMapWithObjectData(map);
 
       // Set debug options if necessary, configure compiler
       const string csc = Debug ? "-debug -define:DEBUG" : null;
       var csproj = Directory.EnumerateFiles(projectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
-      var compiler = new Compiler(csproj, OutputFolderPath, string.Empty, null,
+      var compiler = new Compiler(csproj, launchSettings.OutputFolderPath, string.Empty, null,
         "War3Api.*;WCSharp.*;MacroTools.*", "", csc, false, null,
         string.Empty)
       {
@@ -114,7 +107,7 @@ namespace Launcher
         throw new Exception(compileResult.Diagnostics.First(x => x.Severity == DiagnosticSeverity.Error).GetMessage());
 
       // Update war3map.lua so you can inspect the generated Lua code easily
-      File.WriteAllText(Path.Combine(OutputFolderPath, OutputScriptName), map.Script);
+      File.WriteAllText(Path.Combine(launchSettings.OutputFolderPath, launchSettings.OutputScriptName), map.Script);
 
       // Build w3x file
       var archiveCreateOptions = new MpqArchiveCreateOptions
@@ -124,7 +117,7 @@ namespace Launcher
         ListFileCreateMode = MpqFileCreateMode.Overwrite
       };
 
-      builder.Build(Path.Combine(OutputFolderPath, OutputMapName), archiveCreateOptions);
+      builder.Build(Path.Combine(launchSettings.OutputFolderPath, launchSettings.OutputMapName), archiveCreateOptions);
       if (launch) 
         LaunchGame(launchSettings);
     }
@@ -165,7 +158,7 @@ namespace Launcher
 
         commandLineArgs.Append(" -nowfpause");
 
-        var mapPath = Path.Combine(OutputFolderPath, OutputMapName);
+        var mapPath = Path.Combine(launchSettings.OutputFolderPath, launchSettings.OutputMapName);
         var absoluteMapPath = new FileInfo(mapPath).FullName;
         commandLineArgs.Append($" -loadfile \"{absoluteMapPath}\"");
 
