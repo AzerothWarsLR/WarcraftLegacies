@@ -42,12 +42,6 @@ namespace Launcher
       var baseMapPath = args[1];
       var sourceCodeProjectFolderPath = args[2];
       
-      Console.WriteLine("The following actions are available:");
-      Console.WriteLine("1. Generate constants");
-      Console.WriteLine("2. Compile map");
-      Console.WriteLine("3. Compile and run map");
-      Console.WriteLine("4. Compile and run test map");
-
       IConfiguration config = new ConfigurationBuilder()
         .AddJsonFile("appsettings.json")
         .Build();
@@ -55,7 +49,7 @@ namespace Launcher
       switch (launchMode)
       {
         case LaunchMode.GenerateConstants:
-          ConstantGenerator.Run(baseMapPath, sourceCodeProjectFolderPath, new ConstantGeneratorOptions
+          ConstantGenerator.Run(baseMapPath, baseMapPath, new ConstantGeneratorOptions
           {
             IncludeCode = true
           });
