@@ -19161,11 +19161,6 @@ STRING 3193
 (Warsong)
 }
 
-STRING 3194
-{
-Nyalotha, Cthun,Twilight,Nzoth
-}
-
 STRING 3195
 // Units: u01Y (Deathwing), Hotkey (Hotkey)
 {
@@ -76197,11 +76192,6 @@ STRING 12695
 R
 }
 
-STRING 12696
-{
-Druid,Draenei, Illidan, Sentinel
-}
-
 STRING 12697
 // Abilities: A01F (Solar Judgement), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -115558,6 +115548,11 @@ STRING 19262
 Summon Fire Elemental
 }
 
+STRING 19263
+{
+Druids, Illidan, Sentinels
+}
+
 STRING 19264
 // Abilities: A0YZ (Hunt Aura), Tip (Tooltip - Normal)
 {
@@ -115767,6 +115762,11 @@ STRING 19298
 // Units: h0AJ (Gnoll Overseer), Ubertip (Tooltip - Extended)
 {
 Powerful Gnoll Leader.|n|cfff5962dAbilities:|R Earth Healing, Taunt, Bash|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land units.|r
+}
+
+STRING 19299
+{
+Draenei, Dragonmaw
 }
 
 STRING 19300
