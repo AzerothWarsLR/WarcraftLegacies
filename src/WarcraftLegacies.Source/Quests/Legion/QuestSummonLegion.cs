@@ -12,18 +12,17 @@ namespace WarcraftLegacies.Source.Quests.Legion
 {
   public sealed class QuestSummonLegion : QuestData
   {
-    private const int RITUAL_ID = Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS;
+    private const int RitualId = Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS;
     private readonly List<unit> _rescueUnits = new();
     private readonly unit _interiorPortal;
     private readonly ObjectiveCastSpell _objectiveCastSpell;
-    private TimerWrapper _musicTimer = new();
 
     public QuestSummonLegion(Rectangle rescueRect, unit interiorPortal) : base("Under the Burning Sky",
       "The greater forces of the Burning Legion lie in wait in the vast expanse of the Twisting Nether. Use the Book of Medivh to tear open a hole in space-time, and visit the full might of the Legion upon Azeroth.",
       "ReplaceableTextures\\CommandButtons\\BTNArchimonde.blp")
     {
       _interiorPortal = interiorPortal;
-      _objectiveCastSpell = new ObjectiveCastSpell(RITUAL_ID, false);
+      _objectiveCastSpell = new ObjectiveCastSpell(RitualId, false);
       AddObjective(_objectiveCastSpell);
       ResearchId = Constants.UPGRADE_R04B_QUEST_COMPLETED_UNDER_THE_BURNING_SKY;
       Global = true;
@@ -38,11 +37,14 @@ namespace WarcraftLegacies.Source.Quests.Legion
         }
     }
 
+    /// <inheritdoc />
     protected override string CompletionPopup => "Tremble, mortals, and despair. Doom has come to this world.";
 
+    /// <inheritdoc />
     protected override string RewardDescription =>
       "The hero Archimonde, control of all units in the Twisting Nether, learn to train Greater Demons, and 1000 gold";
 
+    /// <inheritdoc />
     protected override void OnComplete(Faction whichFaction)
     {
       whichFaction.Gold += 1000;
@@ -59,22 +61,26 @@ namespace WarcraftLegacies.Source.Quests.Legion
         soundEax: SoundEax.HeroAcks);
       archimondeDialogue.Play(true);
 
-      _musicTimer = new TimerWrapper();
-      _musicTimer.Start(6, false, PlayMusic);
+      CreateTimer().Start(6, false, () =>
+      {
+        PlayThematicMusic("Doom");
+        GetExpiredTimer().Destroy();
+      });
 
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-        SetPlayerAbilityAvailable(player, RITUAL_ID, false);
+        SetPlayerAbilityAvailable(player, RitualId, false);
     }
 
-    private void PlayMusic()
+    /// <inheritdoc />
+    protected override void OnAdd(Faction whichFaction)
     {
-      PlayThematicMusic("Doom");
-      _musicTimer.Dispose();
+      if (whichFaction.UndefeatedResearch == 0)
+        throw new Exception($"{whichFaction.Name} has no presence research. QuestSummonLegion won't work.");
     }
-
+    
     private void CreatePortals(player? whichPlayer)
     {
-      Point exteriorPortalPosition = _objectiveCastSpell.Caster != null
+      var exteriorPortalPosition = _objectiveCastSpell.Caster != null
         ? _objectiveCastSpell.Caster!.GetPosition()
         : new Point(0, 0);
       SetUnitOwner(_interiorPortal, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
@@ -82,12 +88,6 @@ namespace WarcraftLegacies.Source.Quests.Legion
         Constants.UNIT_N037_DEMON_PORTAL, exteriorPortalPosition.X, exteriorPortalPosition.Y, 0);
       exteriorPortal.SetWaygateDestination(_interiorPortal.GetPosition());
       _interiorPortal.SetWaygateDestination(exteriorPortal.GetPosition());
-    }
-
-    protected override void OnAdd(Faction whichFaction)
-    {
-      if (whichFaction.UndefeatedResearch == 0)
-        throw new Exception($"{whichFaction.Name} has no presence research. QuestSummonLegion won't work.");
     }
   }
 }
