@@ -22,7 +22,16 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNRedDragon.blp")
       {
         StartingGold = 150,
-        StartingLumber = 350
+        StartingLumber = 350,
+        IntroText = @"You are playing as the Fragmented |cffe4bc00Dragonmaw Clan.
+                    |r
+Your current situation is dire, the Dwarves of Ironforge will soon attack whatever is left of your clan.
+
+Your best chance of survival is escaping to Kalimdor, Warlord Zaela has heard of a new horde forming there. 
+
+The portal to Kalimdor will take 9 mins to summon and will only last for 60 seconds, be ready to escape when it is.
+
+Until then, plunder as much as you can from the surrounding lands."
       };
 
       Dragonmaw.ModObjectLimit(FourCC("o063"), Faction.UNLIMITED); //Great Hall
