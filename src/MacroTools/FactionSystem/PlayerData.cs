@@ -9,8 +9,20 @@ namespace MacroTools.FactionSystem
   /// </summary>
   internal sealed class PlayerData
   {
+    /// <summary>
+    /// Fired when the player leaves a team.
+    /// </summary>
     public static event EventHandler<PlayerChangeTeamEventArgs>? PlayerLeftTeam;
+    
+    /// <summary>
+    /// Fired when the player joins a team.
+    /// </summary>
     public static event EventHandler<PlayerChangeTeamEventArgs>? PlayerJoinedTeam;
+
+    /// <summary>
+    /// Fired when the player changes their <see cref="Faction"/>.
+    /// </summary>
+    public event EventHandler<PlayerFactionChangeEventArgs> ChangedFaction;
     
     private static readonly Dictionary<int, PlayerData> ById = new();
     private readonly Dictionary<int, int> _objectLevels = new();
@@ -92,6 +104,7 @@ namespace MacroTools.FactionSystem
         }
 
         FactionChange?.Invoke(this, new PlayerFactionChangeEventArgs(Player, prevFaction));
+        ChangedFaction?.Invoke(this, new PlayerFactionChangeEventArgs(Player, prevFaction));
       }
     }
 
@@ -150,6 +163,10 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public event EventHandler<PlayerData>? IncomeChanged;
 
+    /// <summary>
+    /// Fired when any player changes <see cref="Faction"/>.
+    /// Todo: remove this and use the instance version instead.
+    /// </summary>
     public static event EventHandler<PlayerFactionChangeEventArgs>? FactionChange;
 
     public int GetObjectLevel(int obj)

@@ -9,7 +9,7 @@ namespace MacroTools.Frames.Books.ArtifactSystem
   /// <summary>
   ///   Displays all Artifacts in the game.
   /// </summary>
-  public sealed class ArtifactBook : Book<ArtifactPage>, IBook
+  public sealed class ArtifactBook : Book<ArtifactPage>
   {
     private readonly Dictionary<Artifact, ArtifactPage> _pagesByArtifact = new();
 
@@ -75,6 +75,7 @@ namespace MacroTools.Frames.Books.ArtifactSystem
       AddArtifact(artifact);
     }
 
+    /// <inheritdoc/>
     protected override void DisposeEvents()
     {
       ArtifactManager.ArtifactRegistered -= ArtifactCreated;

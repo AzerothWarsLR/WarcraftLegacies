@@ -48,8 +48,7 @@ namespace WarcraftLegacies.Source.Setup
       //IncompatibleTierConfig.Setup();
       GameTime.Setup();
       FactionMultiboard.Setup();
-      BookManager.Register(new ArtifactBook());
-      //PowerBook.Initialize();
+      BookSetup.Setup();
       HintConfig.Setup();
       WaygateManager.Setup(Constants.UNIT_N0AO_WAY_GATE_DALARAN);
       BlightSystem.Setup(ScourgeSetup.Scourge);

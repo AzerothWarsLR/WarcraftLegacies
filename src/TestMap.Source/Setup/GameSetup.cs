@@ -1,6 +1,4 @@
 ﻿using MacroTools;
-using MacroTools.Frames.Books;
-using MacroTools.Frames.Books.ArtifactSystem;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.UserInterface;
@@ -17,24 +15,16 @@ namespace TestMap.Source.Setup
 
       PreplacedUnitSystem.Initialize();
       LegendSetup.Setup();
-      //ShoreSetup.Setup();
-      //InstanceSetup.Setup();
       TeamSetup.Setup();
       AllFactionSetup.Setup();
       PlayerSetup.Setup();
       ArtifactSetup.Setup();
       ControlPointSetup.Setup();
       AllQuestSetup.Setup();
-      //ResearchSetup.Setup();
-      //ObserverSetup.Setup();
       SpellSetup.Setup();
       CheatSetup.Setup();
-      //CommandSetup.Setup();
-      //ControlPointVictory.Setup();
-      //IncompatibleTierConfig.Setup();
       FactionMultiboard.Setup();
-      //PowerBook.Initialize();
-      BookManager.Register(new ArtifactBook());
+      BookSetup.Setup();
       TestSetup.Setup();
       WaygateManager.Setup(FourCC("nwgt"));
       HintSetup.Setup();

@@ -6,28 +6,34 @@ using static War3Api.Common;
 
 namespace MacroTools.Frames.Books.Powers
 {
+  /// <summary>
+  /// Shows all the <see cref="Power"/>s a particular player has.
+  /// </summary>
   public sealed class PowerBook : Book<PowerPage>
   {
     private Faction? _trackedFaction;
     private readonly Dictionary<Power, PowerPage> _pagesByPower = new();
-
-    private PowerBook() : base(0.3f, 0.39f, 0.02f, 0.015f)
+    
+    /// <summary>
+    /// Initializes a new instance of the <see cref="PowerBook"/> class.
+    /// </summary>
+    /// <param name="trackedPlayer">The player to show <see cref="Power"/>s for.</param>
+    public PowerBook(player trackedPlayer) : base(0.3f, 0.39f, 0.02f, 0.015f)
     {
       var firstPage = AddPage();
       firstPage.Visible = true;
       Title = "Powers";
       LauncherParent = BlzGetFrameByName("UpperButtonBarMenuButton", 0);
       Position = new Point(0.4f, 0.36f);
-      TrackedFaction = PlayerData.ByHandle(GetLocalPlayer()).Faction;
-      PlayerData.FactionChange += OnPersonChangeFaction;
+      TrackedFaction = trackedPlayer.GetFaction();
+      trackedPlayer.GetPlayerData().ChangedFaction += OnPlayerChangedFaction;
     }
 
     /// <summary>
     ///   The <see cref="PowerBook" /> displays the <see cref="Power" />s of this <see cref="Faction" />.
     /// </summary>
-    public Faction? TrackedFaction
+    private Faction? TrackedFaction
     {
-      get => _trackedFaction;
       set
       {
         if (_trackedFaction != null)
@@ -37,11 +43,17 @@ namespace MacroTools.Frames.Books.Powers
           RemoveAllPowers(_trackedFaction);
         }
         
-        if (_trackedFaction == value) return;
+        if (_trackedFaction == value) 
+          return;
         _trackedFaction = value;
-        _trackedFaction.PowerAdded += OnFactionAddPower;
-        _trackedFaction.PowerRemoved += OnFactionRemovePower;
-        AddAllPowers(value);
+        if (_trackedFaction != null)
+        {
+          _trackedFaction.PowerAdded += OnFactionAddPower;
+          _trackedFaction.PowerRemoved += OnFactionRemovePower;
+        }
+
+        if (value != null) 
+          AddAllPowers(value);
       }
     }
 
@@ -50,7 +62,7 @@ namespace MacroTools.Frames.Books.Powers
       AddPower(factionPowerEventArgs.Power);
     }
 
-    private void OnPersonChangeFaction(object? sender, PlayerFactionChangeEventArgs args)
+    private void OnPlayerChangedFaction(object? sender, PlayerFactionChangeEventArgs args)
     {
       if (args.Player == GetLocalPlayer())
       {
@@ -65,10 +77,8 @@ namespace MacroTools.Frames.Books.Powers
 
     private void RemoveAllPowers(Faction faction)
     {
-      foreach (var power in faction.GetAllPowers())
-      {
+      foreach (var power in faction.GetAllPowers()) 
         RemovePower(power);
-      }
     }
 
     private void AddAllPowers(Faction faction)

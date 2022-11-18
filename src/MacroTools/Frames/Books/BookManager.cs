@@ -5,22 +5,28 @@ using static War3Api.Common;
 
 namespace MacroTools.Frames.Books
 {
+  /// <summary>
+  /// Responsible for managing all <see cref="IBook"/>s.
+  /// </summary>
   public static class BookManager
   {
-    private static List<IBook> _books = new();
-    private static Dictionary<player, IBook> _booksByPlayer = new();
+    // ReSharper disable once CollectionNeverQueried.Local
+    private static readonly List<IBook> Books = new();
 
     /// <summary>
     /// Registers a <see cref="IBook"/> as being visible to all players.
     /// </summary>
-    public static void Register(IBook book)
+    /// <param name="book">The book to register.</param>
+    /// <param name="whichPlayer">If specified, the Book can only be seen by this player.</param>
+    public static void Register(IBook book, player? whichPlayer = null)
     {
-      _books.Add(book);
+      Books.Add(book);
       var launcherButton = new Button("ScriptDialogButton", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0)
       {
         Width = book.LauncherParent.GetWidth(),
         Height = book.LauncherParent.GetHeight(),
-        Text = book.Title
+        Text = book.Title,
+        Visible = whichPlayer == null || whichPlayer == GetLocalPlayer()
       };
       launcherButton.SetPoint(FRAMEPOINT_TOP, book.LauncherParent, FRAMEPOINT_BOTTOM, 0, 0);
       launcherButton.OnClick = triggerPlayer =>
@@ -37,13 +43,6 @@ namespace MacroTools.Frames.Books
         book.Visible = false;
         launcherButton.Visible = true;
       };
-    }
-
-    /// <summary>
-    /// Registers an <see cref="IBook"/> as being visible to a specific player.
-    /// </summary>
-    public static void Register(IBook book, player whichPlayer)
-    {
     }
 
     private static void LoadToc(string tocFilePath)
