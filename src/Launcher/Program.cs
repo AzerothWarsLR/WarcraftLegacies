@@ -37,11 +37,11 @@ namespace Launcher
       IConfiguration config = new ConfigurationBuilder()
         .AddJsonFile("appsettings.json")
         .Build();
-
+      
       switch (launchMode)
       {
         case LaunchMode.GenerateConstants:
-          ConstantGenerator.Run(baseMapPath, baseMapPath, new ConstantGeneratorOptions
+          ConstantGenerator.Run(baseMapPath, sourceCodeProjectFolderPath, new ConstantGeneratorOptions
           {
             IncludeCode = true
           });
