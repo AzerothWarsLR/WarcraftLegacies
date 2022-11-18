@@ -217,10 +217,5 @@ namespace MacroTools.ArtifactSystem
       Disposed?.Invoke(this, this);
       RemoveItem(Item);
     }
-
-    ~Artifact()
-    {
-      Dispose();
-    }
   }
 }

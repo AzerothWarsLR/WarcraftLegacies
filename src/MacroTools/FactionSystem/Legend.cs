@@ -477,11 +477,6 @@ namespace MacroTools.FactionSystem
       return ByUnit.ContainsKey(whichUnit) ? ByUnit[whichUnit] : null;
     }
 
-    ~Legend()
-    {
-      DestroyGroup(_diesWithout);
-    }
-
     /// <summary>
     ///   Register a <see cref="Legend"/> to the <see cref="Legend"/> system, causing it to be tracked for <see cref="QuestData" />
     ///   and <see cref="Legend" /> purposes.
