@@ -10,7 +10,7 @@ namespace MacroTools.Frames
    /// </summary>
    public sealed class Button : Frame
    {
-      private readonly TriggerWrapper _onClickTrigger;
+      private TriggerWrapper _onClickTrigger;
 
       public Button(string name, framehandle parent, int priority) : base(name, parent,
          priority)
@@ -30,9 +30,12 @@ namespace MacroTools.Frames
       {
       }
 
+      /// <summary>
+      /// Determines what happens when the button is clicked.
+      /// </summary>
       public OnClickAction OnClick
       {
-         init
+         set
          {
             _onClickTrigger = new TriggerWrapper();
             _onClickTrigger.RegisterFrameEvent(Handle, FRAMEEVENT_CONTROL_CLICK);

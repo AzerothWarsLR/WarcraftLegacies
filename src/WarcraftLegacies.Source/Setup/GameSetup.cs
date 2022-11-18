@@ -1,4 +1,6 @@
 using MacroTools;
+using MacroTools.ArtifactSystem;
+using MacroTools.Frames.Books;
 using MacroTools.Frames.Books.ArtifactSystem;
 using MacroTools.Frames.Books.Powers;
 using MacroTools.Mechanics;
@@ -46,8 +48,8 @@ namespace WarcraftLegacies.Source.Setup
       //IncompatibleTierConfig.Setup();
       GameTime.Setup();
       FactionMultiboard.Setup();
-      ArtifactBook.Initialize();
-      PowerBook.Initialize();
+      BookManager.Register(new ArtifactBook());
+      //PowerBook.Initialize();
       HintConfig.Setup();
       WaygateManager.Setup(Constants.UNIT_N0AO_WAY_GATE_DALARAN);
       BlightSystem.Setup(ScourgeSetup.Scourge);

@@ -1,6 +1,6 @@
 ﻿using MacroTools;
+using MacroTools.Frames.Books;
 using MacroTools.Frames.Books.ArtifactSystem;
-using MacroTools.Frames.Books.Powers;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.UserInterface;
@@ -33,8 +33,8 @@ namespace TestMap.Source.Setup
       //ControlPointVictory.Setup();
       //IncompatibleTierConfig.Setup();
       FactionMultiboard.Setup();
-      PowerBook.Initialize();
-      ArtifactBook.Initialize();
+      //PowerBook.Initialize();
+      BookManager.Register(new ArtifactBook());
       TestSetup.Setup();
       WaygateManager.Setup(FourCC("nwgt"));
       HintSetup.Setup();

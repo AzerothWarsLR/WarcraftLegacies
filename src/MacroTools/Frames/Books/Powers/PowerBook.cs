@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
@@ -9,19 +8,10 @@ namespace MacroTools.Frames.Books.Powers
 {
   public sealed class PowerBook : Book<PowerPage>
   {
-    private const float BottomButtonYOffset = 0.015f;
-    private const float BottomButtonXOffset = 0.02f;
-    private const float BookWidth = 0.3f;
-    private const float BookHeight = 0.39f;
-
-    private static bool _initialized;
-    private static PowerBook _instance;
+    private Faction? _trackedFaction;
     private readonly Dictionary<Power, PowerPage> _pagesByPower = new();
 
-    private Faction _trackedFaction;
-
-    private PowerBook(float width, float height, float bottomButtonXOffset, float bottomButtonYOffset) : base(width,
-      height, bottomButtonXOffset, bottomButtonYOffset)
+    private PowerBook() : base(0.3f, 0.39f, 0.02f, 0.015f)
     {
       var firstPage = AddPage();
       firstPage.Visible = true;
@@ -35,7 +25,7 @@ namespace MacroTools.Frames.Books.Powers
     /// <summary>
     ///   The <see cref="PowerBook" /> displays the <see cref="Power" />s of this <see cref="Faction" />.
     /// </summary>
-    public Faction TrackedFaction
+    public Faction? TrackedFaction
     {
       get => _trackedFaction;
       set
@@ -46,8 +36,7 @@ namespace MacroTools.Frames.Books.Powers
           _trackedFaction.PowerRemoved -= OnFactionRemovePower;
           RemoveAllPowers(_trackedFaction);
         }
-
-
+        
         if (_trackedFaction == value) return;
         _trackedFaction = value;
         _trackedFaction.PowerAdded += OnFactionAddPower;
@@ -105,22 +94,6 @@ namespace MacroTools.Frames.Books.Powers
     {
       _pagesByPower[power].RemovePower(power);
       _pagesByPower.Remove(power);
-    }
-
-    private static void LoadToc(string tocFilePath)
-    {
-      if (!BlzLoadTOCFile(tocFilePath)) throw new Exception($"Failed to load TOC {tocFilePath}");
-    }
-
-    public static void Initialize()
-    {
-      if (!_initialized)
-      {
-        LoadToc(@"ArtifactSystem.toc");
-        LoadToc(@"ui\framedef\framedef.toc");
-        _instance = new PowerBook(BookWidth, BookHeight, BottomButtonXOffset, BottomButtonYOffset);
-        _initialized = true;
-      }
     }
   }
 }

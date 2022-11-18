@@ -10,18 +10,17 @@ namespace MacroTools.Frames.Books
   /// A collection of <see cref="Page"/>s that players can flip through to read information.
   /// </summary>
   /// <typeparam name="T"></typeparam>
-  public abstract class Book<T> : Frame where T : Page, new()
+  public abstract class Book<T> : Frame, IBook where T : Page, new()
   {
-    private readonly Button _launcher;
-    private readonly Button _nextButton;
-    private readonly Button _previousButton;
-    private readonly TextFrame _title;
-
     /// <summary>
     /// All <see cref="Page"/>s contained in the Book.
     /// </summary>
     protected readonly List<T> Pages = new();
-
+    
+    private readonly Button _nextButton;
+    private readonly Button _previousButton;
+    private readonly Button _exitButton;
+    private readonly TextFrame _title;
     private int _activePageIndex;
 
     /// <summary>
@@ -38,22 +37,14 @@ namespace MacroTools.Frames.Books
       Height = height;
       Visible = false;
 
-      _launcher = new Button("ScriptDialogButton", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0)
-      {
-        Width = 0.09f,
-        Height = 0.025f,
-        OnClick = OpenFirstPage
-      };
-
-      var exitButton = new Button("ScriptDialogButton", this, 0)
+      _exitButton = new Button("ScriptDialogButton", this, 0)
       {
         Width = 0.03f,
         Height = 0.03f,
-        Text = "x",
-        OnClick = OnClickExitButton
+        Text = "x"
       };
-      exitButton.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOPRIGHT, -0.015f, -0.015f);
-      AddFrame(exitButton);
+      _exitButton.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOPRIGHT, -0.015f, -0.015f);
+      AddFrame(_exitButton);
 
       _nextButton = new Button("ScriptDialogButton", this, 0)
       {
@@ -87,31 +78,22 @@ namespace MacroTools.Frames.Books
       AddFrame(_title);
     }
 
+    /// <inheritdoc />
+    public OnClickAction OnClickExitButton
+    {
+      set => _exitButton.OnClick = value;
+    }
+    
     /// <summary>
     ///    The name of the Book's launcher Button.
     /// </summary>
     protected string BookTitle
     {
-      init
-      {
-        _launcher.Text = value;
-        _title.Text = value;
-      }
+      init => _title.Text = value;
     }
 
-    /// <summary>
-    /// When set, the Book's Launcher button is moved directly below the provided parent with the same width and height.
-    /// Useful for mimicking existing Blizzard buttons like the Quest or Allies menu.
-    /// </summary>
-    protected framehandle LauncherParent
-    {
-      init
-      {
-        _launcher.Width = BlzFrameGetWidth(value);
-        _launcher.Height = BlzFrameGetHeight(value);
-        _launcher.SetPoint(FRAMEPOINT_TOP, value, FRAMEPOINT_BOTTOM, 0, 0);
-      }
-    }
+    /// <inheritdoc />
+    public framehandle LauncherParent { get; protected init; }
 
     /// <summary>
     /// Determines the book's center.
@@ -162,12 +144,6 @@ namespace MacroTools.Frames.Books
       }
     }
 
-    private void OnClickExitButton(player triggerPlayer)
-    {
-      Visible = false;
-      _launcher.Visible = true;
-    }
-
     private void OpenFirstPage(player whichPlayer)
     {
       try
@@ -175,7 +151,6 @@ namespace MacroTools.Frames.Books
         if (whichPlayer != GetLocalPlayer())
           return;
         Visible = true;
-        _launcher.Visible = false;
         foreach (var page in Pages)
         {
           page.Visible = false;
