@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using MacroTools.FactionSystem;
 
-namespace MacroTools.Frames.Books.Powers
+namespace MacroTools.BookSystem.Powers
 {
   public sealed class PowerPage : Page
   {

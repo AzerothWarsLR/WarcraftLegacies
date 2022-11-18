@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using MacroTools.Augments;
 
-namespace MacroTools.Frames.Books.Augments
+namespace MacroTools.BookSystem.Augments
 {
    public sealed class AugmentPage : Page
    {

@@ -1,32 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.ArtifactSystem;
+using MacroTools.BookSystem.Artifacts;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace MacroTools.Frames.Books.ArtifactSystem
+namespace MacroTools.BookSystem.ArtifactSystem
 {
   /// <summary>
   ///   Displays all Artifacts in the game.
   /// </summary>
   public sealed class ArtifactBook : Book<ArtifactPage>
   {
-    private const float BottomButtonYOffset = 0.015f;
-    private const float BottomButtonXOffset = 0.02f;
-    private const float BookWidth = 0.65f;
-    private const float BookHeight = 0.37f;
-
-    private static ArtifactBook? _instance;
-    private static bool _initialized;
     private readonly Dictionary<Artifact, ArtifactPage> _pagesByArtifact = new();
 
-    private ArtifactBook(float width, float height, float bottomButtonXOffset, float bottomButtonYOffset) : base(width,
-      height, bottomButtonXOffset, bottomButtonYOffset)
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ArtifactBook"/> class.
+    /// </summary>
+    public ArtifactBook() : base(0.65f, 0.37f, 0.015f, 0.02f)
     {
       ArtifactManager.ArtifactRegistered += ArtifactCreated;
       AddPagesAndArtifacts();
-      BookTitle = "Artifacts";
+      Title = "Artifacts";
       LauncherParent = BlzGetFrameByName("UpperButtonBarQuestsButton", 0);
       Position = new Point(0.4f, 0.38f);
     }
@@ -75,28 +70,13 @@ namespace MacroTools.Frames.Books.ArtifactSystem
       foreach (var artifact in ArtifactManager.GetAllArtifacts())
         AddArtifact(artifact);
     }
-
-    private static void LoadToc(string tocFilePath)
-    {
-      if (!BlzLoadTOCFile(tocFilePath)) throw new Exception($"Failed to load TOC {tocFilePath}");
-    }
-
+    
     private void ArtifactCreated(object? sender, Artifact artifact)
     {
       AddArtifact(artifact);
     }
 
-    public static void Initialize()
-    {
-      if (!_initialized)
-      {
-        LoadToc(@"ArtifactSystem.toc");
-        LoadToc(@"ui\framedef\framedef.toc");
-        _instance = new ArtifactBook(BookWidth, BookHeight, BottomButtonXOffset, BottomButtonYOffset);
-        _initialized = true;
-      }
-    }
-
+    /// <inheritdoc/>
     protected override void DisposeEvents()
     {
       ArtifactManager.ArtifactRegistered -= ArtifactCreated;

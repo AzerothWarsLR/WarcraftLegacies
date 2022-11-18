@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using MacroTools.ArtifactSystem;
 
-namespace MacroTools.Frames.Books.ArtifactSystem
+namespace MacroTools.BookSystem.Artifacts
 {
   /// <summary>
   ///   Represents a limited number of Artifacts in a rectangular grid.

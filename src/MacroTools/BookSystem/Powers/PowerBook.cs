@@ -1,43 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace MacroTools.Frames.Books.Powers
+namespace MacroTools.BookSystem.Powers
 {
+  /// <summary>
+  /// Shows all the <see cref="Power"/>s a particular player has.
+  /// </summary>
   public sealed class PowerBook : Book<PowerPage>
   {
-    private const float BottomButtonYOffset = 0.015f;
-    private const float BottomButtonXOffset = 0.02f;
-    private const float BookWidth = 0.3f;
-    private const float BookHeight = 0.39f;
-
-    private static bool _initialized;
-    private static PowerBook _instance;
+    private Faction? _trackedFaction;
     private readonly Dictionary<Power, PowerPage> _pagesByPower = new();
-
-    private Faction _trackedFaction;
-
-    private PowerBook(float width, float height, float bottomButtonXOffset, float bottomButtonYOffset) : base(width,
-      height, bottomButtonXOffset, bottomButtonYOffset)
+    
+    /// <summary>
+    /// Initializes a new instance of the <see cref="PowerBook"/> class.
+    /// </summary>
+    /// <param name="trackedPlayer">The player to show <see cref="Power"/>s for.</param>
+    public PowerBook(player trackedPlayer) : base(0.3f, 0.39f, 0.02f, 0.015f)
     {
       var firstPage = AddPage();
       firstPage.Visible = true;
-      BookTitle = "Powers";
+      Title = "Powers";
       LauncherParent = BlzGetFrameByName("UpperButtonBarMenuButton", 0);
       Position = new Point(0.4f, 0.36f);
-      TrackedFaction = PlayerData.ByHandle(GetLocalPlayer()).Faction;
-      PlayerData.FactionChange += OnPersonChangeFaction;
+      TrackedFaction = trackedPlayer.GetFaction();
+      trackedPlayer.GetPlayerData().ChangedFaction += OnPlayerChangedFaction;
     }
 
     /// <summary>
     ///   The <see cref="PowerBook" /> displays the <see cref="Power" />s of this <see cref="Faction" />.
     /// </summary>
-    public Faction TrackedFaction
+    private Faction? TrackedFaction
     {
-      get => _trackedFaction;
       set
       {
         if (_trackedFaction != null)
@@ -46,13 +42,18 @@ namespace MacroTools.Frames.Books.Powers
           _trackedFaction.PowerRemoved -= OnFactionRemovePower;
           RemoveAllPowers(_trackedFaction);
         }
-
-
-        if (_trackedFaction == value) return;
+        
+        if (_trackedFaction == value) 
+          return;
         _trackedFaction = value;
-        _trackedFaction.PowerAdded += OnFactionAddPower;
-        _trackedFaction.PowerRemoved += OnFactionRemovePower;
-        AddAllPowers(value);
+        if (_trackedFaction != null)
+        {
+          _trackedFaction.PowerAdded += OnFactionAddPower;
+          _trackedFaction.PowerRemoved += OnFactionRemovePower;
+        }
+
+        if (value != null) 
+          AddAllPowers(value);
       }
     }
 
@@ -61,7 +62,7 @@ namespace MacroTools.Frames.Books.Powers
       AddPower(factionPowerEventArgs.Power);
     }
 
-    private void OnPersonChangeFaction(object? sender, PlayerFactionChangeEventArgs args)
+    private void OnPlayerChangedFaction(object? sender, PlayerFactionChangeEventArgs args)
     {
       if (args.Player == GetLocalPlayer())
       {
@@ -76,10 +77,8 @@ namespace MacroTools.Frames.Books.Powers
 
     private void RemoveAllPowers(Faction faction)
     {
-      foreach (var power in faction.GetAllPowers())
-      {
+      foreach (var power in faction.GetAllPowers()) 
         RemovePower(power);
-      }
     }
 
     private void AddAllPowers(Faction faction)
@@ -105,22 +104,6 @@ namespace MacroTools.Frames.Books.Powers
     {
       _pagesByPower[power].RemovePower(power);
       _pagesByPower.Remove(power);
-    }
-
-    private static void LoadToc(string tocFilePath)
-    {
-      if (!BlzLoadTOCFile(tocFilePath)) throw new Exception($"Failed to load TOC {tocFilePath}");
-    }
-
-    public static void Initialize()
-    {
-      if (!_initialized)
-      {
-        LoadToc(@"ArtifactSystem.toc");
-        LoadToc(@"ui\framedef\framedef.toc");
-        _instance = new PowerBook(BookWidth, BookHeight, BottomButtonXOffset, BottomButtonYOffset);
-        _initialized = true;
-      }
     }
   }
 }

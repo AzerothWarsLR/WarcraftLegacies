@@ -4,22 +4,26 @@ namespace MacroTools
 {
   public static class SoundLibrary
   {
-    private static sound? _rescue;
-    public static sound Rescue => _rescue ??= CreateSoundFromLabel("Rescue", false, false, false, 10000, 10000);
-    
-    private static sound? _hint;
-    public static sound Hint => _hint ??= CreateSoundFromLabel("Hint", false, false, false, 10000, 10000);
-    
-    private static sound? _completed;
-    public static sound Completed => _completed ??= CreateSoundFromLabel("QuestCompleted", false, false, false, 10000, 10000);
+    public static sound Rescue { get; private set; }
 
-    private static sound? _failed;
-    public static sound Failed => _failed ??= CreateSoundFromLabel("QuestFailed", false, false, false, 10000, 10000);
-    
-    private static sound? _warning;
-    public static sound Warning => _warning ??= CreateSoundFromLabel("Warning", false, false, false, 10000, 10000);
-    
-    private static sound? _discovered;
-    public static sound Discovered => _discovered ??= CreateSoundFromLabel("QuestNew", false, false, false, 10000, 10000);
+    public static sound Hint { get; private set; }
+
+    public static sound Completed { get; private set; }
+
+    public static sound Failed { get; private set; }
+
+    public static sound Warning { get; private set; }
+
+    public static sound Discovered { get; private set; }
+
+    public static void Setup()
+    {
+      Rescue = CreateSoundFromLabel("Rescue", false, false, false, 10000, 10000);
+      Hint = CreateSoundFromLabel("Hint", false, false, false, 10000, 10000);
+      Completed = CreateSoundFromLabel("QuestCompleted", false, false, false, 10000, 10000);
+      Failed = CreateSoundFromLabel("QuestFailed", false, false, false, 10000, 10000);
+      Warning = CreateSoundFromLabel("Warning", false, false, false, 10000, 10000);
+      Discovered = CreateSoundFromLabel("QuestNew", false, false, false, 10000, 10000);
+    }
   }
 }

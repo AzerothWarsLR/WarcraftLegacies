@@ -2,9 +2,10 @@
 using System.ComponentModel;
 using MacroTools.ArtifactSystem;
 using MacroTools.FactionSystem;
+using MacroTools.Frames;
 using static War3Api.Common;
 
-namespace MacroTools.Frames.Books.ArtifactSystem
+namespace MacroTools.BookSystem.Artifacts
 {
   /// <summary>
   ///   Represents a single Artifact in a black rectangle.
