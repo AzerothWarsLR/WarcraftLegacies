@@ -1,4 +1,4 @@
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.Powers;
 using static War3Api.Common;
 
@@ -58,7 +58,6 @@ Use your resources to raise an army strong enough to take land elsewhere."
       Goblin.ModObjectLimit(FourCC("h091"), 6); //Zep
       Goblin.ModObjectLimit(FourCC("nzep"), 16); //Trading Zeppelin
       Goblin.ModObjectLimit(FourCC("o04S"), 10); //Trader
-      Goblin.ModObjectLimit(FourCC("u028"), 2); //Fuel Tanker
 
       Goblin.ModObjectLimit(Constants.UNIT_O04N_TRADE_PRINCE_OF_THE_BILGEWATER_CARTEL_GOBLIN, 1);
       Goblin.ModObjectLimit(Constants.UNIT_NTIN_CHIEF_ENGINEER_GOBLIN, 1);

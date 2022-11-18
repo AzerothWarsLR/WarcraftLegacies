@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Lordaeron;
@@ -36,7 +36,6 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         lordaeron.AddQuest(new QuestShoresOfNorthrend());
         lordaeron.AddQuest(new QuestThunderEagle());
         lordaeron.AddQuest(new QuestKingArthas(kingTerenas));
-        lordaeron.AddQuest(new QuestLivingShadow());
         lordaeron.AddQuest(new QuestKingdomOfManLordaeron());
         lordaeron.AddQuest(new QuestGarithosCrusade());
         lordaeron.AddQuest(new QuestGarithosMindControl());
