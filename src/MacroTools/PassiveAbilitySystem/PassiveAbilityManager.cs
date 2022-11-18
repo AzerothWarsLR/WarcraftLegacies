@@ -81,6 +81,9 @@ namespace MacroTools.PassiveAbilitySystem
 
         if (passiveAbility is IAppliesEffectOnDamage appliesEffectOnDamage)
           PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, appliesEffectOnDamage.OnDealsDamage, unitTypeId);
+        
+        if (passiveAbility is IEffectOnTakesDamage effectOnTakesDamage)
+          PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeIsDamaged, effectOnTakesDamage.OnTakesDamage, unitTypeId);
       }
     }
     

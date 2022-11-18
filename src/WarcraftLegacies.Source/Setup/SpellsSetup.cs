@@ -256,6 +256,7 @@ namespace WarcraftLegacies.Source.Setup
       StormwindSpellSetup.Setup();
       ForsakenSpellSetup.Setup();
       DragonmawSpellSetup.Setup();
+      IllidariSpellSetup.Setup();
     }
   }
 }
