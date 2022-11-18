@@ -1,4 +1,6 @@
-﻿namespace MacroTools.Frames.Books
+﻿using MacroTools.Frames;
+
+namespace MacroTools.BookSystem
 {
   public abstract class Card : Frame
   {

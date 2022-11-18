@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using MacroTools.Frames;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace MacroTools.Frames.Books
+namespace MacroTools.BookSystem
 {
   /// <summary>
   /// A collection of <see cref="Page"/>s that players can flip through to read information.

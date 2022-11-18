@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
+using MacroTools.Frames;
 using static War3Api.Common;
 
-namespace MacroTools.Frames.Books
+namespace MacroTools.BookSystem
 {
   public abstract class Page : Frame
   {

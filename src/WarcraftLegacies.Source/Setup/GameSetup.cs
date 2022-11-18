@@ -1,8 +1,5 @@
 using MacroTools;
 using MacroTools.ArtifactSystem;
-using MacroTools.Frames.Books;
-using MacroTools.Frames.Books.ArtifactSystem;
-using MacroTools.Frames.Books.Powers;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.UserInterface;

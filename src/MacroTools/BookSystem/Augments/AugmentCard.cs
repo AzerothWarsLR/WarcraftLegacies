@@ -1,9 +1,10 @@
 ﻿using System;
 using MacroTools.Augments;
 using MacroTools.FactionSystem;
+using MacroTools.Frames;
 using static War3Api.Common;
 
-namespace MacroTools.Frames.Books.Augments
+namespace MacroTools.BookSystem.Augments
 {
    public sealed class AugmentCard : Card
    {

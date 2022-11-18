@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using MacroTools.Extensions;
+using MacroTools.Frames;
 using static War3Api.Common;
 
-namespace MacroTools.Frames.Books
+namespace MacroTools.BookSystem
 {
   /// <summary>
   /// Responsible for managing all <see cref="IBook"/>s.

@@ -4,7 +4,7 @@ using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace MacroTools.Frames.Books.Powers
+namespace MacroTools.BookSystem.Powers
 {
   /// <summary>
   /// Shows all the <see cref="Power"/>s a particular player has.

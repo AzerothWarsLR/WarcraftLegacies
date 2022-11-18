@@ -1,6 +1,6 @@
 ﻿using System;
 using MacroTools.Augments;
-using MacroTools.Frames.Books.Augments;
+using MacroTools.BookSystem.Augments;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats

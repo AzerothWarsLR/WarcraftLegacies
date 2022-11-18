@@ -1,6 +1,7 @@
-﻿using static War3Api.Common;
+﻿using MacroTools.Frames;
+using static War3Api.Common;
 
-namespace MacroTools.Frames.Books
+namespace MacroTools.BookSystem
 {
   public interface IBook
   {
