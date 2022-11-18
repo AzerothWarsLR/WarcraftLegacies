@@ -18,7 +18,7 @@
     },
     "WarcraftLegacies: Generate Constants": {
       "commandName": "Project",
-      "commandLineArgs": "GenerateConstants \"..\\..\\..\\..\\..\\maps\\source.w3x\""
+      "commandLineArgs": "GenerateConstants \"..\\..\\..\\..\\..\\maps\\source.w3x\" \"..\\..\\..\\..\\WarcraftLegacies.Source\""
     }
   }
 }
