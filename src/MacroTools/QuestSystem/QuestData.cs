@@ -73,7 +73,7 @@ namespace MacroTools.QuestSystem
     ///   Displayed to the player when the quest is failed.
     ///   Describes flavour, not mechanics.
     /// </summary>
-    protected virtual string FailurePopup => "null";
+    protected virtual string FailurePopup => string.Empty;
 
     /// <summary>
     ///   Describes the background and flavour of this quest.
@@ -123,9 +123,9 @@ namespace MacroTools.QuestSystem
       QuestSetDiscovered(Quest, true);
       DisplayCompleted(whichFaction);
       if (Global) DisplayCompletedGlobal(whichFaction.Player);
-
+      
       if (ResearchId != 0) SetPlayerTechResearched(whichFaction.Player, ResearchId, 1);
-
+      
       foreach (var objective in _objectives)
       {
         objective.ProgressLocked = true;
@@ -165,28 +165,31 @@ namespace MacroTools.QuestSystem
 
     internal void ApplyFactionProgress(Faction whichFaction, QuestProgress progress, QuestProgress formerProgress)
     {
-      if (progress == QuestProgress.Complete)
+      switch (progress)
       {
-        Complete(whichFaction);
-      }
-      else if (progress == QuestProgress.Failed)
-      {
-        Fail(whichFaction);
-      }
-      else if (progress == QuestProgress.Incomplete)
-      {
-        if (formerProgress == QuestProgress.Undiscovered)
-          DisplayDiscovered(whichFaction);
+        case QuestProgress.Complete:
+          Complete(whichFaction);
+          break;
+        case QuestProgress.Failed:
+          Fail(whichFaction);
+          break;
+        case QuestProgress.Incomplete:
+        {
+          if (formerProgress == QuestProgress.Undiscovered)
+            DisplayDiscovered(whichFaction);
 
-        QuestSetCompleted(Quest, false);
-        QuestSetFailed(Quest, false);
-        QuestSetDiscovered(Quest, true);
-      }
-      else if (progress == QuestProgress.Undiscovered)
-      {
-        QuestSetCompleted(Quest, false);
-        QuestSetFailed(Quest, false);
-        QuestSetDiscovered(Quest, false);
+          QuestSetCompleted(Quest, false);
+          QuestSetFailed(Quest, false);
+          QuestSetDiscovered(Quest, true);
+          break;
+        }
+        case QuestProgress.Undiscovered:
+          QuestSetCompleted(Quest, false);
+          QuestSetFailed(Quest, false);
+          QuestSetDiscovered(Quest, false);
+          break;
+        default:
+          throw new ArgumentOutOfRangeException(nameof(progress), progress, null);
       }
 
       //If the quest is incomplete, show its markers. Otherwise, hide them.
@@ -273,21 +276,23 @@ namespace MacroTools.QuestSystem
     /// </summary>
     private void DisplayCompletedGlobal(player whichPlayer)
     {
+      var soundCompleted = SoundLibrary.Completed;
+      var soundFailed = SoundLibrary.Failed;
       StartSound(GetLocalPlayer().GetTeam()?.Contains(whichPlayer) == true
-        ? SoundLibrary.Completed
-        : SoundLibrary.Warning);
+        ? soundCompleted
+        : soundFailed);
       
-      var display = GetLocalPlayer() == whichPlayer ? $"\n|cffffcc00MAJOR EVENT - {whichPlayer.GetFaction()?.PrefixCol}{Title}|r\n{CompletionPopup}\n" : "";
-      DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
+      foreach (var enumPlayer in WCSharp.Shared.Util.EnumeratePlayers())
+        if (enumPlayer != whichPlayer)
+          DisplayTextToPlayer(enumPlayer, 0, 0,
+            $"\n|cffffcc00MAJOR EVENT - {whichPlayer.GetFaction()?.PrefixCol}{Title}|r\n{CompletionPopup}\n");
     }
 
     private void DisplayFailed(Faction faction)
     {
-      var display = "";
-      if (GetLocalPlayer() != faction.Player) return;
-      display = !string.IsNullOrEmpty(FailurePopup)
-        ? $"{display}\n|cffffcc00QUEST FAILED - {Title}|r\n{FailurePopup}\n"
-        : $"{display}\n|cffffcc00QUEST FAILED - {Title}|r\n{Description}\n";
+      var display = !string.IsNullOrEmpty(FailurePopup)
+        ? $"\n|cffffcc00QUEST FAILED - {Title}|r\n{FailurePopup}\n"
+        : $"\n|cffffcc00QUEST FAILED - {Title}|r\n{Description}\n";
 
       foreach (var questItem in _objectives)
         if (questItem.ShowsInQuestLog)
@@ -298,42 +303,42 @@ namespace MacroTools.QuestSystem
             _ => $"{display} - {questItem.Description}\n"
           };
 
-      DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
-      StartSound(SoundLibrary.Failed);
+      DisplayTextToPlayer(faction.Player, 0, 0, display);
+      var sound = SoundLibrary.Failed;
+      if (GetLocalPlayer() == faction.Player)
+        StartSound(sound);
     }
 
     private void DisplayCompleted(Faction faction)
     {
-      var display = "";
-      if (GetLocalPlayer() == faction.Player)
-      {
-        display = $"{display}\n|cffffcc00QUEST COMPLETED - {Title}|r\n{CompletionPopup}\n";
-        foreach (var questItem in _objectives)
-          if (questItem.ShowsInQuestLog)
-            display = $"{display} - |cff808080{questItem.Description} (Completed)|r\n";
-
-        DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
-        StartSound(SoundLibrary.Completed);
-      }
+      var display = $"\n|cffffcc00QUEST COMPLETED - {Title}|r\n{CompletionPopup}\n";
+      foreach (var questItem in _objectives)
+        if (questItem.ShowsInQuestLog)
+          display = $"{display} - |cff808080{questItem.Description} (Completed)|r\n";
+      DisplayTextToPlayer(faction.Player, 0, 0, display);
+      var sound = SoundLibrary.Completed;
+      if (GetLocalPlayer() == faction.Player) 
+        StartSound(sound);
     }
 
+    /// <summary>
+    /// Indicates to the provided question that the quest has been discovered.
+    /// </summary>
+    /// <param name="faction"></param>
     public void DisplayDiscovered(Faction faction)
     {
-      var display = "";
-      if (GetLocalPlayer() == faction.Player)
-      {
-        display = $"{display}\n|cffffcc00QUEST DISCOVERED - {Title}|r\n{Description}\n";
-        foreach (var questItem in _objectives)
-          if (questItem.ShowsInQuestLog)
-          {
-            display = questItem.Progress == QuestProgress.Complete
-              ? $"{display} - |cff808080{questItem.Description} (Completed)|r\n"
-              : $"{display} - {questItem.Description}\n";
-          }
-
-        DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
-        StartSound(SoundLibrary.Discovered);
-      }
+      var display = $"\n|cffffcc00QUEST DISCOVERED - {Title}|r\n{Description}\n";
+      foreach (var questItem in _objectives)
+        if (questItem.ShowsInQuestLog)
+        {
+          display = questItem.Progress == QuestProgress.Complete
+            ? $"{display} - |cff808080{questItem.Description} (Completed)|r\n"
+            : $"{display} - {questItem.Description}\n";
+        }
+      DisplayTextToPlayer(faction.Player, 0, 0, display);
+      var sound = SoundLibrary.Discovered;
+      if (GetLocalPlayer() == faction.Player) 
+        StartSound(sound);
     }
 
     private void OnQuestItemProgressChanged(object? sender, Objective changedObjective)
