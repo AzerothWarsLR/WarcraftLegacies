@@ -125,7 +125,8 @@ namespace MacroTools.Frames.Books
     {
       try
       {
-        ActivePageIndex++;
+        if (GetLocalPlayer() == whichPlayer) 
+          ActivePageIndex++;
       }
       catch (Exception ex)
       {
@@ -137,7 +138,8 @@ namespace MacroTools.Frames.Books
     {
       try
       {
-        ActivePageIndex--;
+        if (GetLocalPlayer() == whichPlayer) 
+          ActivePageIndex--;
       }
       catch (Exception ex)
       {
