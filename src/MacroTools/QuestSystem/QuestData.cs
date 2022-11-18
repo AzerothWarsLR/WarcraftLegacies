@@ -264,14 +264,12 @@ namespace MacroTools.QuestSystem
     /// </summary>
     private void DisplayCompletedGlobal(player whichPlayer)
     {
-      var display = "";
-      if (GetLocalPlayer() == whichPlayer) return;
-      display =
-        $"{display}\n|cffffcc00MAJOR EVENT - {whichPlayer.GetFaction()?.PrefixCol}{Title}|r\n{CompletionPopup}\n";
-      DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
       StartSound(GetLocalPlayer().GetTeam()?.Contains(whichPlayer) == true
         ? SoundLibrary.Completed
         : SoundLibrary.Warning);
+      if (GetLocalPlayer() == whichPlayer) return;
+      DisplayTextToPlayer(GetLocalPlayer(), 0, 0,
+        $"\n|cffffcc00MAJOR EVENT - {whichPlayer.GetFaction()?.PrefixCol}{Title}|r\n{CompletionPopup}\n");
     }
 
     private void DisplayFailed(Faction faction)
