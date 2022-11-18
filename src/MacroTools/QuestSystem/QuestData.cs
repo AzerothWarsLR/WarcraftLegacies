@@ -6,12 +6,21 @@ using static War3Api.Common;
 
 namespace MacroTools.QuestSystem
 {
+  /// <summary>
+  /// A highly implementation of Warcraft 3 quests which supports <see cref="Objective"/>s, rewards, and penalties.
+  /// </summary>
   public abstract class QuestData
   {
     private readonly List<Objective> _objectives = new();
 
     private QuestProgress _progress = QuestProgress.Incomplete;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="QuestData"/> class.
+    /// </summary>
+    /// <param name="title">A user-friendly name for the quest.</param>
+    /// <param name="desc">A user-friendly description for the quest.</param>
+    /// <param name="icon">A path to an icon.</param>
     protected QuestData(string title, string desc, string icon)
     {
       Quest = CreateQuest();
@@ -32,6 +41,9 @@ namespace MacroTools.QuestSystem
       set => QuestSetRequired(Quest, value);
     }
 
+    /// <summary>
+    /// A user-friendly name for the quest.
+    /// </summary>
     public string Title { get; }
 
     /// <summary>
@@ -98,12 +110,10 @@ namespace MacroTools.QuestSystem
 
     private void RefreshDescription()
     {
-      if (!string.IsNullOrEmpty(PenaltyDescription))
-        QuestSetDescription(Quest,
-          $"{Description}\n|cffffcc00On completion:|r {RewardDescription}\n|cffffcc00On failure:|r {PenaltyDescription}");
-      else
-        QuestSetDescription(Quest,
-          $"{Description}\n|cffffcc00On completion:|r {RewardDescription}");
+      QuestSetDescription(Quest,
+        !string.IsNullOrEmpty(PenaltyDescription)
+          ? $"{Description}\n|cffffcc00On completion:|r {RewardDescription}\n|cffffcc00On failure:|r {PenaltyDescription}"
+          : $"{Description}\n|cffffcc00On completion:|r {RewardDescription}");
     }
 
     private void Complete(Faction whichFaction)
@@ -275,10 +285,9 @@ namespace MacroTools.QuestSystem
     {
       var display = "";
       if (GetLocalPlayer() != faction.Player) return;
-      if (!string.IsNullOrEmpty(FailurePopup))
-        display = $"{display}\n|cffffcc00QUEST FAILED - {Title}|r\n{FailurePopup}\n";
-      else
-        display = $"{display}\n|cffffcc00QUEST FAILED - {Title}|r\n{Description}\n";
+      display = !string.IsNullOrEmpty(FailurePopup)
+        ? $"{display}\n|cffffcc00QUEST FAILED - {Title}|r\n{FailurePopup}\n"
+        : $"{display}\n|cffffcc00QUEST FAILED - {Title}|r\n{Description}\n";
 
       foreach (var questItem in _objectives)
         if (questItem.ShowsInQuestLog)
@@ -317,10 +326,9 @@ namespace MacroTools.QuestSystem
         foreach (var questItem in _objectives)
           if (questItem.ShowsInQuestLog)
           {
-            if (questItem.Progress == QuestProgress.Complete)
-              display = $"{display} - |cff808080{questItem.Description} (Completed)|r\n";
-            else
-              display = $"{display} - {questItem.Description}\n";
+            display = questItem.Progress == QuestProgress.Complete
+              ? $"{display} - |cff808080{questItem.Description} (Completed)|r\n"
+              : $"{display} - {questItem.Description}\n";
           }
 
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
