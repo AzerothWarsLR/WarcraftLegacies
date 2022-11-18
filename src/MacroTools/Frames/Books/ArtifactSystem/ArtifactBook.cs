@@ -16,11 +16,11 @@ namespace MacroTools.Frames.Books.ArtifactSystem
     /// <summary>
     /// Initializes a new instance of the <see cref="ArtifactBook"/> class.
     /// </summary>
-    public ArtifactBook() : base(0.065f, 0.37f, 0.015f, 0.02f)
+    public ArtifactBook() : base(0.65f, 0.37f, 0.015f, 0.02f)
     {
       ArtifactManager.ArtifactRegistered += ArtifactCreated;
       AddPagesAndArtifacts();
-      BookTitle = "Artifacts";
+      Title = "Artifacts";
       LauncherParent = BlzGetFrameByName("UpperButtonBarQuestsButton", 0);
       Position = new Point(0.4f, 0.38f);
     }

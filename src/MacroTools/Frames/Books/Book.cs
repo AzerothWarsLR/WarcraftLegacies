@@ -87,9 +87,10 @@ namespace MacroTools.Frames.Books
     /// <summary>
     ///    The name of the Book's launcher Button.
     /// </summary>
-    protected string BookTitle
+    public string Title
     {
       init => _title.Text = value;
+      get => _title.Text;
     }
 
     /// <inheritdoc />

@@ -15,6 +15,6 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Returns the framehandle's height.
     /// </summary>
-    public static float GetHeight(this framehandle frameHandle) => BlzFrameGetWidth(frameHandle);
+    public static float GetHeight(this framehandle frameHandle) => BlzFrameGetHeight(frameHandle);
   }
 }

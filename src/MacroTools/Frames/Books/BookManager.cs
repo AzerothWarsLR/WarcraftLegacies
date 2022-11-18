@@ -19,7 +19,8 @@ namespace MacroTools.Frames.Books
       var launcherButton = new Button("ScriptDialogButton", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0)
       {
         Width = book.LauncherParent.GetWidth(),
-        Height = book.LauncherParent.GetHeight()
+        Height = book.LauncherParent.GetHeight(),
+        Text = book.Title
       };
       launcherButton.SetPoint(FRAMEPOINT_TOP, book.LauncherParent, FRAMEPOINT_BOTTOM, 0, 0);
       launcherButton.OnClick = triggerPlayer =>
