@@ -123,9 +123,9 @@ namespace MacroTools.QuestSystem
       QuestSetDiscovered(Quest, true);
       DisplayCompleted(whichFaction);
       if (Global) DisplayCompletedGlobal(whichFaction.Player);
-
+      
       if (ResearchId != 0) SetPlayerTechResearched(whichFaction.Player, ResearchId, 1);
-
+      
       foreach (var objective in _objectives)
       {
         objective.ProgressLocked = true;
@@ -276,9 +276,11 @@ namespace MacroTools.QuestSystem
     /// </summary>
     private void DisplayCompletedGlobal(player whichPlayer)
     {
+      var soundCompleted = SoundLibrary.Completed;
+      var soundFailed = SoundLibrary.Failed;
       StartSound(GetLocalPlayer().GetTeam()?.Contains(whichPlayer) == true
-        ? SoundLibrary.Completed
-        : SoundLibrary.Warning);
+        ? soundCompleted
+        : soundFailed);
       
       foreach (var enumPlayer in WCSharp.Shared.Util.EnumeratePlayers())
         if (enumPlayer != whichPlayer)
@@ -302,8 +304,9 @@ namespace MacroTools.QuestSystem
           };
 
       DisplayTextToPlayer(faction.Player, 0, 0, display);
+      var sound = SoundLibrary.Failed;
       if (GetLocalPlayer() == faction.Player)
-        StartSound(SoundLibrary.Failed);
+        StartSound(sound);
     }
 
     private void DisplayCompleted(Faction faction)
@@ -313,8 +316,9 @@ namespace MacroTools.QuestSystem
         if (questItem.ShowsInQuestLog)
           display = $"{display} - |cff808080{questItem.Description} (Completed)|r\n";
       DisplayTextToPlayer(faction.Player, 0, 0, display);
+      var sound = SoundLibrary.Completed;
       if (GetLocalPlayer() == faction.Player) 
-        StartSound(SoundLibrary.Completed);
+        StartSound(sound);
     }
 
     /// <summary>
@@ -332,8 +336,9 @@ namespace MacroTools.QuestSystem
             : $"{display} - {questItem.Description}\n";
         }
       DisplayTextToPlayer(faction.Player, 0, 0, display);
+      var sound = SoundLibrary.Discovered;
       if (GetLocalPlayer() == faction.Player) 
-        StartSound(SoundLibrary.Discovered);
+        StartSound(sound);
     }
 
     private void OnQuestItemProgressChanged(object? sender, Objective changedObjective)

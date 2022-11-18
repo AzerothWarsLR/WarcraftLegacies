@@ -24,6 +24,7 @@ namespace WarcraftLegacies.Source.Setup
     /// </summary>
     public static void Setup()
     {
+      SoundLibrary.Setup();
       PreplacedUnitSystem.Initialize();
       AllLegendSetup.Setup();
       ShoreSetup.Setup();
@@ -35,14 +36,12 @@ namespace WarcraftLegacies.Source.Setup
       NeutralHostileSetup.Setup();
       ArtifactSetup.Setup();
       AllQuestSetup.Setup();
-      //ResearchSetup.Setup();
       ObserverSetup.Setup();
       SpellsSetup.Setup();
       CheatSetup.Setup();
       CommandSetup.Setup();
       ControlPointVictory.Setup();
       SilvermoonDies.Setup();
-      //IncompatibleTierConfig.Setup();
       GameTime.Setup();
       FactionMultiboard.Setup();
       BookSetup.Setup();
