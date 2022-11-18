@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using MacroTools;
-using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Draenei;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using static War3Api.Common;

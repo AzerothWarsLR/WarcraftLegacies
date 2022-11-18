@@ -3,7 +3,6 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Setup.Spells;
-using WarcraftLegacies.Source.Spells;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup

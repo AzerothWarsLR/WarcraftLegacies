@@ -1,7 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Frostwolf
 {

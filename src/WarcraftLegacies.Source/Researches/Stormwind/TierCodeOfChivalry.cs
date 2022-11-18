@@ -1,7 +1,6 @@
 using MacroTools.FactionSystem;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Events;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Researches.Stormwind
 {

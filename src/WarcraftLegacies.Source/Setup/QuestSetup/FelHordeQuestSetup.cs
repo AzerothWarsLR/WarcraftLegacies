@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using MacroTools;
-using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Fel_Horde;
 using WCSharp.Shared.Data;
 using static WarcraftLegacies.Source.Setup.FactionSetup.FelHordeSetup;

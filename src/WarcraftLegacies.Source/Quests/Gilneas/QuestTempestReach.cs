@@ -5,7 +5,6 @@ using static War3Api.Common;
 using MacroTools.Extensions;
 using MacroTools.QuestSystem.UtilityStructs;
 using MacroTools.ControlPointSystem;
-using static MacroTools.Extensions.RectangleExtensions;
 
 namespace WarcraftLegacies.Source.Quests.Gilneas
 {
