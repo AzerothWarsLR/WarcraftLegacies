@@ -100,11 +100,10 @@ namespace MacroTools.QuestSystem
     {
       if (!string.IsNullOrEmpty(PenaltyDescription))
         QuestSetDescription(Quest,
-          Description + "\n|cffffcc00On completion:|r " + RewardDescription +
-          "\n|cffffcc00On failure:|r " + PenaltyDescription);
+          $"{Description}\n|cffffcc00On completion:|r {RewardDescription}\n|cffffcc00On failure:|r {PenaltyDescription}");
       else
         QuestSetDescription(Quest,
-          Description + "\n|cffffcc00On completion:|r " + RewardDescription);
+          $"{Description}\n|cffffcc00On completion:|r {RewardDescription}");
     }
 
     private void Complete(Faction whichFaction)
@@ -277,17 +276,17 @@ namespace MacroTools.QuestSystem
       var display = "";
       if (GetLocalPlayer() != faction.Player) return;
       if (!string.IsNullOrEmpty(FailurePopup))
-        display = display + "\n|cffffcc00QUEST FAILED - " + Title + "|r\n" + FailurePopup + "\n";
+        display = $"{display}\n|cffffcc00QUEST FAILED - {Title}|r\n{FailurePopup}\n";
       else
-        display = display + "\n|cffffcc00QUEST FAILED - " + Title + "|r\n" + Description + "\n";
+        display = $"{display}\n|cffffcc00QUEST FAILED - {Title}|r\n{Description}\n";
 
       foreach (var questItem in _objectives)
         if (questItem.ShowsInQuestLog)
           display = questItem.Progress switch
           {
-            QuestProgress.Complete => display + " - |cff808080" + questItem.Description + " (Completed)|r\n",
-            QuestProgress.Failed => display + " - |cffCD5C5C" + questItem.Description + " (Failed)|r\n",
-            _ => display + " - " + questItem.Description + "\n"
+            QuestProgress.Complete => $"{display} - |cff808080{questItem.Description} (Completed)|r\n",
+            QuestProgress.Failed => $"{display} - |cffCD5C5C{questItem.Description} (Failed)|r\n",
+            _ => $"{display} - {questItem.Description}\n"
           };
 
       DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
@@ -299,10 +298,10 @@ namespace MacroTools.QuestSystem
       var display = "";
       if (GetLocalPlayer() == faction.Player)
       {
-        display = display + "\n|cffffcc00QUEST COMPLETED - " + Title + "|r\n" + CompletionPopup + "\n";
+        display = $"{display}\n|cffffcc00QUEST COMPLETED - {Title}|r\n{CompletionPopup}\n";
         foreach (var questItem in _objectives)
           if (questItem.ShowsInQuestLog)
-            display = display + " - |cff808080" + questItem.Description + " (Completed)|r\n";
+            display = $"{display} - |cff808080{questItem.Description} (Completed)|r\n";
 
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
         StartSound(SoundLibrary.Completed);
@@ -314,14 +313,14 @@ namespace MacroTools.QuestSystem
       var display = "";
       if (GetLocalPlayer() == faction.Player)
       {
-        display = display + "\n|cffffcc00QUEST DISCOVERED - " + Title + "|r\n" + Description + "\n";
+        display = $"{display}\n|cffffcc00QUEST DISCOVERED - {Title}|r\n{Description}\n";
         foreach (var questItem in _objectives)
           if (questItem.ShowsInQuestLog)
           {
             if (questItem.Progress == QuestProgress.Complete)
-              display = display + " - |cff808080" + questItem.Description + " (Completed)|r\n";
+              display = $"{display} - |cff808080{questItem.Description} (Completed)|r\n";
             else
-              display = display + " - " + questItem.Description + "\n";
+              display = $"{display} - {questItem.Description}\n";
           }
 
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
