@@ -85989,6 +85989,12 @@ STRING 14327
 - Paralysis,- Paralysis|n- Corrosive Strike,- Paralysis|n- Corrosive Strikel|n- Faerie Fire
 }
 
+STRING 14328
+// Abilities: A01G (Amphibian), EditorSuffix (Editor Suffix)
+{
+(Naga ability)
+}
+
 STRING 14329
 // Upgrades: R03M (Defend), effect2 (Effect 2)
 {
@@ -115378,6 +115384,18 @@ STRING 19233
 (Ironforge)
 }
 
+STRING 19234
+// Abilities: A01G (Amphibian), Ubertip (Tooltip - Normal - Extended)
+{
+This unit is Amphibian, it can walk on water, but will take 200% bonus damage while doing so.
+}
+
+STRING 19235
+// Abilities: A01G (Amphibian), Name (Name)
+{
+Amphibian
+}
+
 STRING 19236
 // Units: n0C0 (Altar of the Queen), Tip (Tooltip - Basic)
 {
@@ -115502,6 +115520,12 @@ STRING 19256
 // Units: n0DC (Bandit Mage), Name (Name)
 {
 Bandit Mage
+}
+
+STRING 19257
+// Abilities: A01G (Amphibian), Tip (Tooltip - Normal)
+{
+Amphibian
 }
 
 STRING 19258
