@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Legend Nathanos { get; private set; }
     public static Legend Undercity { get; private set; }
 
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       SylvanasUndead = new Legend
       {
@@ -37,14 +37,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Scholomance = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_U012_SCHOLOMANCE),
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_U012_SCHOLOMANCE),
         DeathMessage = "Scholomance, the center of the ScourgeFourCC(s operations in Lordaeron, has been destroyed."
       };
       Legend.Register(Scholomance);
 
       Undercity = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H08S_UNDERCITY_FORSAKEN),
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H08S_UNDERCITY_FORSAKEN),
         DeathMessage = "Undercity, the heart of the Forsaken Kingdom, has been destroyed"
       };
       Legend.Register(Undercity);

@@ -1,3 +1,4 @@
+using MacroTools;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Lordaeron;
@@ -13,7 +14,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
   {
     public static QuestData TheAshbringer { get; private set; }
 
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       var lordaeron = LordaeronSetup.Lordaeron;
       var kingTerenas = LegendLordaeron.Terenas?.Unit;
@@ -21,7 +22,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       if (lordaeron != null && kingTerenas != null)
       {
         var questStrahnbrad = new QuestStrahnbrad(Regions.StrahnbradUnlock);
-        var questStratholme = new QuestStratholme(Regions.StratholmeUnlock);
+        var questStratholme = new QuestStratholme(Regions.StratholmeUnlock, preplacedUnitSystem);
         lordaeron.AddQuest(questStratholme);
         lordaeron.StartingQuest = questStratholme;
         lordaeron.AddQuest(questStrahnbrad);

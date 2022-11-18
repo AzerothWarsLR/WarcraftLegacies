@@ -13,11 +13,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Legend LegendTwilightcitadel { get; private set; }
 
 
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendTwilightcitadel = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("h05U")),
+        Unit = preplacedUnitSystem.GetUnit(FourCC("h05U")),
         DeathMessage =
           "The Twilight Citadel has been toppled. Already the land has begun to heal, but it may be decades before the permeating Old God stink fully dissipates from the Twilight Highlands."
       };

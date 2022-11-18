@@ -1,34 +1,35 @@
-﻿using WarcraftLegacies.Source.Setup.QuestSetup;
+﻿using MacroTools;
+using WarcraftLegacies.Source.Setup.QuestSetup;
 
 namespace WarcraftLegacies.Source.Setup
 {
   public static class AllQuestSetup
   {
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      DalaranQuestSetup.Setup();
+      DalaranQuestSetup.Setup(preplacedUnitSystem);
       DruidsQuestSetup.Setup();
-      FelHordeQuestSetup.Setup();
-      FrostwolfQuestSetup.Setup();
-      IronforgeQuestSetup.Setup();
-      LegionQuestSetup.Setup();
-      LordaeronQuestSetup.Setup();
-      QuelthalasQuestSetup.Setup();
-      var questPlague = ScourgeQuestSetup.Setup();
+      FelHordeQuestSetup.Setup(preplacedUnitSystem);
+      FrostwolfQuestSetup.Setup(preplacedUnitSystem);
+      IronforgeQuestSetup.Setup(preplacedUnitSystem);
+      LegionQuestSetup.Setup(preplacedUnitSystem);
+      LordaeronQuestSetup.Setup(preplacedUnitSystem);
+      QuelthalasQuestSetup.Setup(preplacedUnitSystem);
+      var questPlague = ScourgeQuestSetup.Setup(preplacedUnitSystem);
       SentinelsQuestSetup.Setup();
-      StormwindQuestSetup.Setup();
-      WarsongQuestSetup.Setup();
+      StormwindQuestSetup.Setup(preplacedUnitSystem);
+      WarsongQuestSetup.Setup(preplacedUnitSystem);
       NagaQuestSetup.Setup();
       GilneasQuestSetup.Setup();
-      KultirasQuestSetup.Setup();
-      ScarletQuestSetup.Setup();
+      KultirasQuestSetup.Setup(preplacedUnitSystem);
+      ScarletQuestSetup.Setup(preplacedUnitSystem);
       TrollQuestSetup.Setup();
-      ForsakenQuestSetup.Setup(questPlague);
-      TwilightQuestSetup.Setup();
+      ForsakenQuestSetup.Setup(questPlague, preplacedUnitSystem);
+      TwilightQuestSetup.Setup(preplacedUnitSystem);
       GoblinQuestSetup.Setup();
-      DraeneiQuestSetup.Setup();
-      DragonmawQuestSetup.Setup();
-      SharedQuestSetup.Setup();
+      DraeneiQuestSetup.Setup(preplacedUnitSystem);
+      DragonmawQuestSetup.Setup(preplacedUnitSystem);
+      SharedQuestSetup.Setup(preplacedUnitSystem);
     }
   }
 }

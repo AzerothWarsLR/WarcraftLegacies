@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Legend LegendHellfirecitadel { get; private set; }
 
 
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendMagtheridon = new Legend
       {
@@ -69,21 +69,21 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       LegendBlackrockspire = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("o013")),
+        Unit = preplacedUnitSystem.GetUnit(FourCC("o013")),
         DeathMessage = "Blackrock Spire has been razed."
       };
       Legend.Register(LegendBlackrockspire);
 
       LegendBlacktemple = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("o00F")),
+        Unit = preplacedUnitSystem.GetUnit(FourCC("o00F")),
         Capturable = true
       };
       Legend.Register(LegendBlacktemple);
 
       LegendHellfirecitadel = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("o008"))
+        Unit = preplacedUnitSystem.GetUnit(FourCC("o008"))
       };
       Legend.Register(LegendHellfirecitadel);
     }

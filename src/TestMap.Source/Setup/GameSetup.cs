@@ -12,8 +12,7 @@ namespace TestMap.Source.Setup
     {
       var hars = CreateUnit(Player(0), FourCC("hars"), 0, 0, 0);
       SetPlayerState(Player(0), PLAYER_STATE_RESOURCE_FOOD_CAP, 100);
-
-      PreplacedUnitSystem.Initialize();
+      
       LegendSetup.Setup();
       TeamSetup.Setup();
       AllFactionSetup.Setup();
@@ -28,7 +27,6 @@ namespace TestMap.Source.Setup
       TestSetup.Setup();
       WaygateManager.Setup(FourCC("nwgt"));
       HintSetup.Setup();
-      PreplacedUnitSystem.Shutdown();
       DialogueSetup.Setup();
       AugmentSetup.Setup();
       PassiveAbilityManager.InitializePreplacedUnits();

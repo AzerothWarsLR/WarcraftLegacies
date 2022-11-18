@@ -1,5 +1,4 @@
 using MacroTools;
-using MacroTools.ArtifactSystem;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.UserInterface;
@@ -24,18 +23,18 @@ namespace WarcraftLegacies.Source.Setup
     /// </summary>
     public static void Setup()
     {
+      var preplacedUnitSystem = new PreplacedUnitSystem();
       SoundLibrary.Setup();
-      PreplacedUnitSystem.Initialize();
-      AllLegendSetup.Setup();
+      AllLegendSetup.Setup(preplacedUnitSystem);
       ShoreSetup.Setup();
       ControlPointSetup.Setup();
-      InstanceSetup.Setup();
+      InstanceSetup.Setup(preplacedUnitSystem);
       TeamSetup.Setup();
-      AllFactionSetup.Setup();
+      AllFactionSetup.Setup(preplacedUnitSystem);
       PlayerSetup.Setup();
       NeutralHostileSetup.Setup();
-      ArtifactSetup.Setup();
-      AllQuestSetup.Setup();
+      ArtifactSetup.Setup(preplacedUnitSystem);
+      AllQuestSetup.Setup(preplacedUnitSystem);
       ObserverSetup.Setup();
       SpellsSetup.Setup();
       CheatSetup.Setup();
@@ -48,17 +47,16 @@ namespace WarcraftLegacies.Source.Setup
       HintConfig.Setup();
       WaygateManager.Setup(Constants.UNIT_N0AO_WAY_GATE_DALARAN);
       BlightSystem.Setup(ScourgeSetup.Scourge);
-      BlightSetup.Setup();
+      BlightSetup.Setup(preplacedUnitSystem);
       QuestMenuSetup.Setup();
       CinematicMode.Start(59);
       DialogueSetup.Setup();
       DisplayIntroText.Setup(10);
       GameSettings.Setup();
       InfoQuests.Setup();
-      DestructibleSetup.Setup();
-      ResearchSetup.Setup();
-      PatronSystem.Setup();
-      PreplacedUnitSystem.Shutdown();
+      DestructibleSetup.Setup(preplacedUnitSystem);
+      ResearchSetup.Setup(preplacedUnitSystem);
+      PatronSystem.Setup(preplacedUnitSystem);
       OpenAllianceVote.Setup();
       AugmentSetup.Setup();
       RockSetup.Setup();

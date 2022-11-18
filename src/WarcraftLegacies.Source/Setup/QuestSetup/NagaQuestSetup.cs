@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     {
       // //Early duel
       //
-      // QuestData chapterThree = new QuestIllidanChapterThree(PreplacedUnitSystem.GetUnitByUnitType(FourCC("n045")), Regions.NagaUnlock1, Regions.NagaUnlock2);
+      // QuestData chapterThree = new QuestIllidanChapterThree(preplacedUnitSystem.GetUnitByUnitType(FourCC("n045")), Regions.NagaUnlock1, Regions.NagaUnlock2);
       // QuestData chapterTwo = new QuestIllidanChapterTwo(chapterThree);
       // QuestData chapterOne = new QuestIllidanChapterOne(chapterTwo);
       // NagaSetup.FactionNaga.AddQuest(chapterOne);

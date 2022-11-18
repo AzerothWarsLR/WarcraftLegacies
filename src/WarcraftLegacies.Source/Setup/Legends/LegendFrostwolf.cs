@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Legend? LegendDarkspearhold { get; private set; }
     public static Legend? LegendOrgrimmar { get; private set; }
 
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendCairne = new Legend
       {
@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       LegendThunderbluff = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("o00J")),
+        Unit = preplacedUnitSystem.GetUnit(FourCC("o00J")),
         DeathMessage =
           "The mesas of Thunderbluff have been swept clean of the Tauren. The Bloodhoof are without a home."
       };
@@ -41,7 +41,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       LegendDarkspearhold = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("o02D"))
+        Unit = preplacedUnitSystem.GetUnit(FourCC("o02D"))
       };
       Legend.Register(LegendDarkspearhold);
 

@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
   {
     private readonly List<unit> _unitsToKill;
 
-    public QuestFirstWave() : base("Broken Civilisation",
+    public QuestFirstWave(PreplacedUnitSystem preplacedUnitSystem) : base("Broken Civilisation",
       "The Fel Orc attack will begin at any moment, the Draenei need to evacuate their civilians aboard the Exodar",
       "ReplaceableTextures\\CommandButtons\\BTNDraeneiDivineCitadel.blp")
     {
@@ -21,10 +21,10 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       AddObjective(new ObjectiveSelfExists());
       _unitsToKill = new List<unit>
       {
-        PreplacedUnitSystem.GetUnit(FourCC("o051"), Regions.DraeneiEvacuation.Center),
-        PreplacedUnitSystem.GetUnit(FourCC("o055"), Regions.DraeneiEvacuation.Center),
-        PreplacedUnitSystem.GetUnit(FourCC("o054"), Regions.DraeneiEvacuation.Center),
-        PreplacedUnitSystem.GetUnit(FourCC("n0BU"), Regions.DraeneiEvacuation.Center)
+        preplacedUnitSystem.GetUnit(FourCC("o051"), Regions.DraeneiEvacuation.Center),
+        preplacedUnitSystem.GetUnit(FourCC("o055"), Regions.DraeneiEvacuation.Center),
+        preplacedUnitSystem.GetUnit(FourCC("o054"), Regions.DraeneiEvacuation.Center),
+        preplacedUnitSystem.GetUnit(FourCC("n0BU"), Regions.DraeneiEvacuation.Center)
       };
     }
 

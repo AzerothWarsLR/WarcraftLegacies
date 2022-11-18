@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
   {
     public static Faction? Kultiras { get; private set; }
 
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Kultiras =
         new Faction(
@@ -82,7 +82,7 @@ Once you have conquered the Zandalari Empire, set sail to help your allies."
       Kultiras.ModObjectLimit(FourCC("H05L"), 1); //Lady Ashvane
       Kultiras.ModObjectLimit(FourCC("E016"), 1); //Lucille
 
-      Kultiras.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(2619, -4946)));
+      Kultiras.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(2619, -4946)));
       
       FactionManager.Register(Kultiras);
     }

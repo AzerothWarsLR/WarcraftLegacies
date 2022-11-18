@@ -15,11 +15,11 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
     private static readonly int QuestResearchId = FourCC("R05Q");
     private readonly List<unit> _rescueUnits = new();
 
-    public QuestGnomeregan(Rectangle rescueRect) : base("The City of Invention",
+    public QuestGnomeregan(Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem) : base("The City of Invention",
       "The people of Gnomeregan have long been unable to assist the Alliance in its wars due an infestation of troggs and Ice Trolls. Resolve their conflicts for them to gain their services.",
       "ReplaceableTextures\\CommandButtons\\BTNFlyingMachine.blp")
     {
-      AddObjective(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nitw"), Regions.Gnomergan.Center))); //Ice Troll Warlord
+      AddObjective(new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(FourCC("nitw"), Regions.Gnomergan.Center))); //Ice Troll Warlord
       AddObjective(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))

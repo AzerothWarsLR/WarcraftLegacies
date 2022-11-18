@@ -14,11 +14,11 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
   {
     private readonly List<unit> _rescueUnits = new();
 
-    public QuestThelsamar(Rectangle rescueRect) : base("Murloc Menace",
+    public QuestThelsamar(PreplacedUnitSystem preplacedUnitSystem, Rectangle rescueRect) : base("Murloc Menace",
       "A vile group of Murloc is terrorizing Thelsamar. Destroy them!",
       "ReplaceableTextures\\CommandButtons\\BTNMurlocNightCrawler.blp")
     {
-      AddObjective(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("N089")))); //Murloc
+      AddObjective(new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(FourCC("N089")))); //Murloc
       AddObjective(new ObjectiveExpire(1435));
       AddObjective(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())

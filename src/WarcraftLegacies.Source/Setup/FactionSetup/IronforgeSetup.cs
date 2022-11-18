@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
   {
     public static Faction? Ironforge { get; private set; }
     
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Ironforge = new Faction("Ironforge", PLAYER_COLOR_YELLOW, "|C00FFFC01",
         "ReplaceableTextures\\CommandButtons\\BTNHeroMountainKing.blp")
@@ -100,7 +100,7 @@ Stormwind is preparing for the Fel Horde invasion in the South, muster the thron
       Ironforge.ModAbilityAvailability(Constants.ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);
       Ironforge.ModAbilityAvailability(Constants.ABILITY_A0IH_SPIKED_BARRICADES_DWARF_KEEP, -1);
       
-      Ironforge.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(12079, -2768)));
+      Ironforge.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(12079, -2768)));
       
       FactionManager.Register(Ironforge);
     }

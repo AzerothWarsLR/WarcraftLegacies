@@ -22,11 +22,11 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// Initializes a new instance of the <see cref="QuestStratholme"/> class.
     /// </summary>
     /// <param name="rescueRect"></param>
-    public QuestStratholme(Rectangle rescueRect) : base("Blackrock and Roll",
+    public QuestStratholme(Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem) : base("Blackrock and Roll",
       "The Blackrock clan has taken over Alterac, they must be eliminated for the safety of Lordaeron",
       "ReplaceableTextures\\CommandButtons\\BTNChaosBlademaster.blp")
     {
-      AddObjective(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(Constants.UNIT_O00B_JUBEI_THOS_LEGION_DEMI)));
+      AddObjective(new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(Constants.UNIT_O00B_JUBEI_THOS_LEGION_DEMI)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N019_ALTERAC_MOUNTAINS_20GOLD_MIN)));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_HCAS_CASTLE, Constants.UNIT_HTOW_TOWN_HALL));
       AddObjective(new ObjectiveExpire(1470));

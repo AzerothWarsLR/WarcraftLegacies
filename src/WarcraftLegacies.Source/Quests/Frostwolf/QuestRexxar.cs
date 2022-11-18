@@ -22,11 +22,11 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestRexxar"/> class.
     /// </summary>
-    public QuestRexxar() : base("The Chieftain's Challenge",
+    public QuestRexxar(PreplacedUnitSystem preplacedUnitSystem) : base("The Chieftain's Challenge",
       "Rexxar is having trouble with a beligerent Ogre Warlord, slay the Chieftain to gain the heroe's allegiance.",
       "ReplaceableTextures\\CommandButtons\\BTNOneHeadedOgre.blp")
     {
-      AddObjective(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(Constants.UNIT_NOGA_STONEMAUL_WARCHIEF_KOR_GALL)));
+      AddObjective(new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(Constants.UNIT_NOGA_STONEMAUL_WARCHIEF_KOR_GALL)));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R03S_QUEST_COMPLETED_THE_CHIEFTAIN_S_CHALLENGE_FROSTWOLF;
 

@@ -14,11 +14,11 @@ namespace WarcraftLegacies.Source.Quests.Legion
 
     private readonly ObjectiveKillUnit _objectiveKillMonastery;
 
-    public QuestDemonGateMonastery() : base("A Scarlet Rift",
+    public QuestDemonGateMonastery(PreplacedUnitSystem preplacedUnitSystem) : base("A Scarlet Rift",
       "The energies surrounding the Scarlet Monastery are extraordinary. Destroy this bastion of light to fabricate a Demon Gate in its place.",
       "ReplaceableTextures\\CommandButtons\\BTNMaskOfDeath.blp")
     {
-      _objectiveKillMonastery = new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("h00T")));
+      _objectiveKillMonastery = new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(FourCC("h00T")));
       AddObjective(_objectiveKillMonastery);
     }
 

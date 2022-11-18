@@ -10,11 +10,11 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
 {
   public sealed class QuestDunMorogh : QuestData
   {
-    public QuestDunMorogh() : base("Mountain Village",
+    public QuestDunMorogh(PreplacedUnitSystem preplacedUnitSystem) : base("Mountain Village",
       "A small troll skirmish is attacking Dun Morogh. Push them back!",
       "ReplaceableTextures\\CommandButtons\\BTNIceTrollShadowPriest.blp")
     {
-      AddObjective(new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nith"), Regions.DunmoroghAmbient2.Center))); //Troll
+      AddObjective(new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(FourCC("nith"), Regions.DunmoroghAmbient2.Center))); //Troll
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n014"))));
       AddObjective(new ObjectiveExpire(1435));
       AddObjective(new ObjectiveSelfExists());

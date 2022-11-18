@@ -8,9 +8,8 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
   public static class SentinelsSetup
   {
     public static Faction? Sentinels { get; private set; }
-
-
-    public static void Setup()
+    
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Sentinels = new Faction("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80",
         "ReplaceableTextures\\CommandButtons\\BTNPriestessOfTheMoon.blp")
@@ -78,7 +77,7 @@ Once you have secured your holdings, gather your army and destroy the orc invade
       Sentinels.ModObjectLimit(FourCC("R03J"), Faction.UNLIMITED); //Wind Walk
       Sentinels.ModObjectLimit(FourCC("R013"), Faction.UNLIMITED); //Elune)s Blessing
 
-      Sentinels.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-16016, 10113)));
+      Sentinels.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-16016, 10113)));
       
       FactionManager.Register(Sentinels);
     }

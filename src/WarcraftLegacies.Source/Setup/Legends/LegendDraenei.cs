@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     
     public static Legend? Halaar { get; private set; }
     
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendNobundo = new Legend
       {
@@ -30,13 +30,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       LegendExodar = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_O05E_EXODAR_REGALIS_DRAENEI)
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O05E_EXODAR_REGALIS_DRAENEI)
       };
       Legend.Register(LegendExodar);
 
       LegendExodarship = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H09W_THE_EXODAR)
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H09W_THE_EXODAR)
       };
       Legend.Register(LegendExodarship);
 
@@ -56,19 +56,19 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Shattrah = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H0AH_SHATTRAH_DRAENEI)
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AH_SHATTRAH_DRAENEI)
       };
       Legend.Register(Shattrah);
       
       Farahlon = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H0AF_FARAHLON_DRAENEI)
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AF_FARAHLON_DRAENEI)
       };
       Legend.Register(Farahlon);
       
       Halaar = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H0AE_HALAAR_DRAENEI)
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AE_HALAAR_DRAENEI)
       };
       Legend.Register(Halaar);
     }

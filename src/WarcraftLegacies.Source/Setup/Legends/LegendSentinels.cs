@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// <summary>
     /// Sets up all Sentinel <see cref="Legend"/>s.
     /// </summary>
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Maiev = new Legend
       {
@@ -52,13 +52,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Auberdine = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("e00J"))
+        Unit = preplacedUnitSystem.GetUnit(FourCC("e00J"))
       };
       Legend.Register(Auberdine);
 
       Feathermoon = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("e00M"))
+        Unit = preplacedUnitSystem.GetUnit(FourCC("e00M"))
       };
       Legend.Register(Feathermoon);
 

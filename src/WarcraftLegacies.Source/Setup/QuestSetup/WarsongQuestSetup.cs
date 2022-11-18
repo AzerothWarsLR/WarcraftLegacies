@@ -7,12 +7,12 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class WarsongQuestSetup
   {
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       var warsong = WarsongSetup.WarsongClan;
       warsong.StartingQuest = warsong.AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
-      warsong.AddQuest(new QuestCrossroads(Regions.Crossroads));
-      warsong.AddQuest(new QuestChenStormstout(PreplacedUnitSystem.GetUnit(FourCC("Nsjs"))));
+      warsong.AddQuest(new QuestCrossroads(Regions.Crossroads, preplacedUnitSystem));
+      warsong.AddQuest(new QuestChenStormstout(preplacedUnitSystem.GetUnit(FourCC("Nsjs"))));
       warsong.AddQuest(new QuestFountainOfBlood());
       warsong.AddQuest(new QuestWarsongKillDruids());
       warsong.AddQuest(new QuestMoreWyverns());

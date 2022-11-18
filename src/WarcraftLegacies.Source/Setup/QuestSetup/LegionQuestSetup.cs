@@ -7,17 +7,17 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class LegionQuestSetup
   {
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       //Early duel
-      QuestData newQuest = LegionSetup.Legion.AddQuest(new QuestArgusControl());
+      QuestData newQuest = LegionSetup.Legion.AddQuest(new QuestArgusControl(preplacedUnitSystem));
       LegionSetup.Legion.StartingQuest = newQuest;
       LegionSetup.Legion.AddQuest(new QuestEmbassy());
       LegionSetup.Legion.AddQuest(new QuestLegionCaptureSunwell());
       LegionSetup.Legion.AddQuest(new QuestLegionKillLordaeron());
       //Misc
       LegionSetup.Legion.AddQuest(new QuestSummonLegion(Regions.TwistingNether,
-        PreplacedUnitSystem.GetUnit(Constants.UNIT_N03C_DEMON_PORTAL_NETHER)));
+        preplacedUnitSystem.GetUnit(Constants.UNIT_N03C_DEMON_PORTAL_NETHER)));
       LegionSetup.Legion.AddQuest(new QuestConsumeTree());
       LegionSetup.Legion.AddQuest(new QuestDreadlordInsurgent());
     }
