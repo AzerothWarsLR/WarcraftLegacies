@@ -276,9 +276,9 @@ namespace MacroTools.QuestSystem
       StartSound(GetLocalPlayer().GetTeam()?.Contains(whichPlayer) == true
         ? SoundLibrary.Completed
         : SoundLibrary.Warning);
-      if (GetLocalPlayer() == whichPlayer) return;
-      DisplayTextToPlayer(GetLocalPlayer(), 0, 0,
-        $"\n|cffffcc00MAJOR EVENT - {whichPlayer.GetFaction()?.PrefixCol}{Title}|r\n{CompletionPopup}\n");
+      
+      var display = GetLocalPlayer() == whichPlayer ? $"\n|cffffcc00MAJOR EVENT - {whichPlayer.GetFaction()?.PrefixCol}{Title}|r\n{CompletionPopup}\n" : "";
+      DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
     }
 
     private void DisplayFailed(Faction faction)
