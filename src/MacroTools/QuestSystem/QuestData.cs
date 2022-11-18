@@ -165,28 +165,31 @@ namespace MacroTools.QuestSystem
 
     internal void ApplyFactionProgress(Faction whichFaction, QuestProgress progress, QuestProgress formerProgress)
     {
-      if (progress == QuestProgress.Complete)
+      switch (progress)
       {
-        Complete(whichFaction);
-      }
-      else if (progress == QuestProgress.Failed)
-      {
-        Fail(whichFaction);
-      }
-      else if (progress == QuestProgress.Incomplete)
-      {
-        if (formerProgress == QuestProgress.Undiscovered)
-          DisplayDiscovered(whichFaction);
+        case QuestProgress.Complete:
+          Complete(whichFaction);
+          break;
+        case QuestProgress.Failed:
+          Fail(whichFaction);
+          break;
+        case QuestProgress.Incomplete:
+        {
+          if (formerProgress == QuestProgress.Undiscovered)
+            DisplayDiscovered(whichFaction);
 
-        QuestSetCompleted(Quest, false);
-        QuestSetFailed(Quest, false);
-        QuestSetDiscovered(Quest, true);
-      }
-      else if (progress == QuestProgress.Undiscovered)
-      {
-        QuestSetCompleted(Quest, false);
-        QuestSetFailed(Quest, false);
-        QuestSetDiscovered(Quest, false);
+          QuestSetCompleted(Quest, false);
+          QuestSetFailed(Quest, false);
+          QuestSetDiscovered(Quest, true);
+          break;
+        }
+        case QuestProgress.Undiscovered:
+          QuestSetCompleted(Quest, false);
+          QuestSetFailed(Quest, false);
+          QuestSetDiscovered(Quest, false);
+          break;
+        default:
+          throw new ArgumentOutOfRangeException(nameof(progress), progress, null);
       }
 
       //If the quest is incomplete, show its markers. Otherwise, hide them.
