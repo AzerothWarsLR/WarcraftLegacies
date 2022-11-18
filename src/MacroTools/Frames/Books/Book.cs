@@ -106,14 +106,6 @@ namespace MacroTools.Frames.Books
       }
     }
 
-    /// <summary>
-    ///    The position of the Book's launcher Button.
-    /// </summary>
-    protected Point LauncherPosition
-    {
-      init => _launcher.SetAbsPoint(FRAMEPOINT_CENTER, value.X, value.Y);
-    }
-
     protected Point Position
     {
       init => SetAbsPoint(FRAMEPOINT_CENTER, value.X, value.Y);
