@@ -277,8 +277,10 @@ namespace MacroTools.QuestSystem
         ? SoundLibrary.Completed
         : SoundLibrary.Warning);
       
-      var display = GetLocalPlayer() == whichPlayer ? $"\n|cffffcc00MAJOR EVENT - {whichPlayer.GetFaction()?.PrefixCol}{Title}|r\n{CompletionPopup}\n" : "";
-      DisplayTextToPlayer(GetLocalPlayer(), 0, 0, display);
+      foreach (var enumPlayer in WCSharp.Shared.Util.EnumeratePlayers())
+        if (enumPlayer != whichPlayer)
+          DisplayTextToPlayer(enumPlayer, 0, 0,
+            $"\n|cffffcc00MAJOR EVENT - {whichPlayer.GetFaction()?.PrefixCol}{Title}|r\n{CompletionPopup}\n");
     }
 
     private void DisplayFailed(Faction faction)
