@@ -1,5 +1,6 @@
 ﻿using MacroTools.BookSystem;
 using MacroTools.BookSystem.Artifacts;
+using MacroTools.BookSystem.ArtifactSystem;
 using MacroTools.BookSystem.Powers;
 
 namespace TestMap.Source.Setup
