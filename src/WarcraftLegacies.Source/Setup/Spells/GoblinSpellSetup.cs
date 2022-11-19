@@ -3,7 +3,6 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Mechanics.Goblins;
 using WarcraftLegacies.Source.Setup.FactionSetup;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -42,7 +41,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       PassiveAbilityManager.Register(new AnimationSpeedMultiplier(Constants.UNIT_H011_INTERCONTINENTAL_ARTILLERY_GOBLIN, 0.4f));
       
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_H011_INTERCONTINENTAL_ARTILLERY_GOBLIN));
-      PassiveAbilityManager.Register(new OilUser(FourCC("Ntin")));
+      PassiveAbilityManager.Register(new OilUser(Constants.UNIT_NTIN_CHIEF_ENGINEER_GOBLIN));
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_N062_SHREDDER_GOBLIN));
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_H08Z_ASSAULT_TANK_GOBLIN));
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_H091_WAR_ZEPPELIN_GOBLIN));
