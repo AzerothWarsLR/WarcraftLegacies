@@ -1,5 +1,6 @@
 ﻿using System;
 using WCSharp.Events;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace MacroTools.SpellSystem
@@ -10,19 +11,21 @@ namespace MacroTools.SpellSystem
   /// </summary>
   public abstract class Hazard : IPeriodicDisposableAction
   {
-    protected Hazard(unit caster, float x, float y)
+    protected Hazard(unit? caster, float x, float y)
     {
-      X = x;
-      Y = y;
+      Position = new Point(x, y);
       Caster = caster;
     }
-
-    protected float X { get; }
-    protected float Y { get; }
-    protected unit Caster { get; }
+    
+    protected unit? Caster { get; }
 
     private readonly float _interval;
 
+    /// <summary>
+    /// The location of the <see cref="Hazard"/>.
+    /// </summary>
+    public Point Position { get; init; }
+    
     /// <summary>
     ///   The interval at which the missile will call <see cref="OnPeriodic" />. Leave at default (0) to disable.
     /// </summary>

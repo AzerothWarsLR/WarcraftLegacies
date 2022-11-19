@@ -39,7 +39,7 @@ Use your resources to raise an army strong enough to take land elsewhere."
       Goblin.ModObjectLimit(FourCC("o03W"), Faction.UNLIMITED); //Improved Watch Tower
       Goblin.ModObjectLimit(FourCC("o03X"), Faction.UNLIMITED); //Voodoo Lounge
       Goblin.ModObjectLimit(FourCC("o03V"), Faction.UNLIMITED); //Shipyard
-      Goblin.ModObjectLimit(FourCC("n0AQ"), 6); //Oil Platform
+      Goblin.ModObjectLimit(Constants.UNIT_O06G_OIL_TANKER_GOBLIN, Faction.UNLIMITED);
       Goblin.ModObjectLimit(FourCC("h011"), 1); //Artillery
 
       Goblin.ModObjectLimit(FourCC("o02I"), Faction.UNLIMITED); //Peon
@@ -70,7 +70,8 @@ Use your resources to raise an army strong enough to take land elsewhere."
       var oilPower = new OilPower
       {
         Name = "Oil Tycoon",
-        IconName = "OilStation"
+        IconName = "OilStation",
+        OilPoolMax = 10
       };
       Goblin.AddPower(oilPower);
 

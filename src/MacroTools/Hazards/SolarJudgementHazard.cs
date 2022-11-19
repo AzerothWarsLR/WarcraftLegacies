@@ -40,7 +40,7 @@ namespace MacroTools.Hazards
     {
       var randomAngle = GetRandomReal(0, 2 * MathEx.Pi);
       var randomRadius = GetRandomReal(0, Radius);
-      DoBolt(X + randomRadius * Cos(randomAngle), Y + randomRadius * Sin(randomAngle));
+      DoBolt(Position.X + randomRadius * Cos(randomAngle), Position.Y + randomRadius * Sin(randomAngle));
     }
     
     protected override void OnPeriodic() => DoRandomBolts();

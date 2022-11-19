@@ -13,12 +13,12 @@ namespace MacroTools.Hazards
 
     protected override void OnPeriodic()
     {
-      DummyCast.DummyCastPoint(GetOwningPlayer(Caster), _dummySpellId, _dummySpellOrder, _level, X, Y);
+      DummyCast.DummyCastPoint(GetOwningPlayer(Caster), _dummySpellId, _dummySpellOrder, _level, Position.X, Position.Y);
     }
 
     public override void OnCreate()
     {
-      DummyCast.DummyCastPoint(GetOwningPlayer(Caster), _dummySpellId, _dummySpellOrder, _level, X, Y);
+      DummyCast.DummyCastPoint(GetOwningPlayer(Caster), _dummySpellId, _dummySpellOrder, _level, Position.X, Position.Y);
     }
     
     public RecurrentSpellHazard(unit caster, float x, float y, string dummySpellOrder, int level, int dummySpellId) : base(caster, x, y)
