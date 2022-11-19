@@ -38,6 +38,11 @@ namespace MacroTools.FactionSystem
     public int Size => _members.Count;
 
     /// <summary>
+    /// The number of players in the <see cref="Team"/> who have not been defeated.
+    /// </summary>
+    public int UndefeatedPlayerCount => _members.Count(x => x.GetFaction()?.ScoreStatus != ScoreStatus.Defeated);
+
+    /// <summary>
     ///   Music that plays when this <see cref="Team" /> wins the game.
     /// </summary>
     public string? VictoryMusic { get; init; }

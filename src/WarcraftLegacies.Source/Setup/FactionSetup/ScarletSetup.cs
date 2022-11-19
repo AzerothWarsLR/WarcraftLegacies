@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
   {
     public static Faction? ScarletCrusade { get; private set; }
 
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       ScarletCrusade = new Faction("Militia", PLAYER_COLOR_MAROON, "|cff800000",
         "ReplaceableTextures\\CommandButtons\\BTNPeasant.blp")
@@ -88,7 +88,7 @@ Fortify your strongholds against the storm to come and make ready to unleash the
       ScarletCrusade.ModObjectLimit(FourCC("Rhac"), Faction.UNLIMITED); //Improved Masonry
       ScarletCrusade.ModObjectLimit(FourCC("R06Q"), Faction.UNLIMITED); //Paladin Adept Training
 
-      ScarletCrusade.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(12860, 11254)));
+      ScarletCrusade.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(12860, 11254)));
       
       FactionManager.Register(ScarletCrusade);
     }

@@ -18,13 +18,13 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     private readonly unit _elvenRunestone;
     private readonly List<unit> _rescueUnits = new();
 
-    public QuestSilvermoon(Rectangle rescueRect, unit elvenRunestone) : base("The Siege of Silvermoon",
+    public QuestSilvermoon(Rectangle rescueRect, unit elvenRunestone, PreplacedUnitSystem preplacedUnitSystem) : base("The Siege of Silvermoon",
       "Silvermoon has been besieged by Trolls. Clear them out and destroy their city of Zul'aman.",
       "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp")
     {
       _elvenRunestone = elvenRunestone;
       AddObjective(new ObjectiveKillUnit(
-        PreplacedUnitSystem.GetUnit(Constants.UNIT_O00O_CHIEFTAN_OF_THE_AMANI_TRIBE_CREEP_ZUL_AMAN)));
+        preplacedUnitSystem.GetUnit(Constants.UNIT_O00O_CHIEFTAN_OF_THE_AMANI_TRIBE_CREEP_ZUL_AMAN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01V"))));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01L"))));
       AddObjective(new ObjectiveUpgrade(FourCC("h03T"), FourCC("h033")));

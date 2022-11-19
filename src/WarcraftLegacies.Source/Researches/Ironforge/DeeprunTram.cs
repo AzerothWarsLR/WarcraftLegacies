@@ -70,7 +70,7 @@ namespace WarcraftLegacies.Source.Researches.Ironforge
     /// <summary>
     /// Registers the event that allows the Deeprun Tram research to take effect.
     /// </summary>
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, Transfer, ResearchId);
       PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsStarted, ResearchStart, ResearchId);
@@ -79,8 +79,8 @@ namespace WarcraftLegacies.Source.Researches.Ironforge
       var stormwindKeep = LegendStormwind.LegendStormwindkeep.Unit;
       var ironforgeLocation = new Point(GetUnitX(greatForge), GetUnitY(greatForge));
       var stormwindLocation = new Point(GetUnitX(stormwindKeep), GetUnitY(stormwindKeep));
-      _tramToIronforge = PreplacedUnitSystem.GetUnit(Constants.UNIT_N03B_DEEPRUN_TRAM, stormwindLocation);
-      _tramToStormwind = PreplacedUnitSystem.GetUnit(Constants.UNIT_N03B_DEEPRUN_TRAM, ironforgeLocation);
+      _tramToIronforge = preplacedUnitSystem.GetUnit(Constants.UNIT_N03B_DEEPRUN_TRAM, stormwindLocation);
+      _tramToStormwind = preplacedUnitSystem.GetUnit(Constants.UNIT_N03B_DEEPRUN_TRAM, ironforgeLocation);
     }
   }
 }

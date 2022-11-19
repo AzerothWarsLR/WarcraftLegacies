@@ -3,7 +3,6 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Setup.Spells;
-using WarcraftLegacies.Source.Spells;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup
@@ -74,16 +73,6 @@ namespace WarcraftLegacies.Source.Setup
         TargetType = SpellTargetType.Point
       };
       SpellSystem.Register(massFrostArmor);
-
-      var massUnholyArmor = new MassAnySpell(Constants.ABILITY_A0OJ_MASS_UNHOLY_ARMOR_DRAGONMAW_GORFAX)
-      {
-        DummyAbilityId = Constants.ABILITY_A0HG_UNHOLY_ARMOR_DRAGONMAW_GORFAX,
-        DummyAbilityOrderString = "innerfire",
-        Radius = 400,
-        CastFilter = CastFilters.IsTargetAllyAndAlive,
-        TargetType = SpellTargetType.Point
-      };
-      SpellSystem.Register(massUnholyArmor);
 
       var scattershot = new MassAnySpell(Constants.ABILITY_A0GP_SCATTERSHOT_KUL_TIRAS_LADY_ASHVANE)
       {
@@ -266,6 +255,8 @@ namespace WarcraftLegacies.Source.Setup
       KulTirasSpellSetup.Setup();
       StormwindSpellSetup.Setup();
       ForsakenSpellSetup.Setup();
+      DragonmawSpellSetup.Setup();
+      IllidariSpellSetup.Setup();
     }
   }
 }

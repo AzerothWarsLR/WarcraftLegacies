@@ -20,8 +20,8 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     public QuestMograine() : base("The Exile",
       "The Lich King, looming over Northrend from Icecrown's peak, is the greatest threat Lordaeron has ever faced. He must be destroyed.",
       "ReplaceableTextures\\CommandButtons\\BTNAlexandros.blp")
-    {   
-      AddObjective(new ObjectiveLegendDead(LegendScourge.LegendLichking));
+    {
+      AddObjective(new ObjectiveTime(720));
       ResearchId = Constants.UPGRADE_R06P_QUEST_COMPLETED_THE_EXILE_LORDAERON;
     }
 
@@ -32,11 +32,6 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     protected override string RewardDescription =>
       "You can summon Alexandros Mograine from the " + GetObjectName(AltarId);
 
-    /// <inheritdoc/>
-    protected override void OnAdd(Faction whichFaction)
-    {
-      whichFaction.ModObjectLimit(HeroId, 1);
-    }
 
   }
 }

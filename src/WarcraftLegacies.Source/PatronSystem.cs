@@ -19,21 +19,21 @@ namespace WarcraftLegacies.Source
       throw new ArgumentOutOfRangeException(nameof(tier), tier, null);
     }
 
-    private static void SetupPatron(string name, PatronTier tier, Point position)
+    private static void SetupPatron(string name, PatronTier tier, Point position, PreplacedUnitSystem preplacedUnitSystem)
     {
-      var unit = PreplacedUnitSystem.GetUnit(TierToUnitType(tier), position);
+      var unit = preplacedUnitSystem.GetUnit(TierToUnitType(tier), position);
       BlzSetUnitName(unit, $"{name} - Tier {(int)tier} Patron");
     }
 
     /// <summary>
     /// Renames some units on the map to be named after Patreon Patrons.
     /// </summary>
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      SetupPatron("bredbrodak", PatronTier.Two, Regions.Quelthalas.Center);
-      SetupPatron("Dromoka", PatronTier.Two, Regions.AlteracAmbient.Center);
-      SetupPatron("Bocelot", PatronTier.Two, Regions.TyrsFall.Center);
-      SetupPatron("Eagleman", PatronTier.Two, Regions.Stromgarde.Center);
+      SetupPatron("bredbrodak", PatronTier.Two, Regions.Quelthalas.Center, preplacedUnitSystem);
+      SetupPatron("Dromoka", PatronTier.Two, Regions.AlteracAmbient.Center, preplacedUnitSystem);
+      SetupPatron("Bocelot", PatronTier.Two, Regions.TyrsFall.Center, preplacedUnitSystem);
+      SetupPatron("Eagleman", PatronTier.Two, Regions.Stromgarde.Center, preplacedUnitSystem);
     }
   }
 }

@@ -115,12 +115,6 @@ namespace MacroTools.Frames
       Handle = BlzCreateFrameByType(typeName, name, parent.Handle, inherits, 0);
     }
 
-    /// <inheritdoc />
-    public void Dispose()
-    {
-      Dispose(true);
-    }
-
     /// <summary>
     /// Unhooks all events from this class. Called when Dispose is called or the Frame is garbage collected.
     /// </summary>
@@ -128,27 +122,20 @@ namespace MacroTools.Frames
     {
     }
 
-    private void Dispose(bool disposing)
+    /// <inheritdoc />
+    public void Dispose()
     {
       if (_disposed) return;
       _disposed = true;
-      if (disposing)
-      {
-        DisposeEvents();
-        foreach (var childFrame in _children)
-        {
-          childFrame.Dispose();
-        }
 
-        _children.Clear();
+      DisposeEvents();
+      foreach (var childFrame in _children)
+      {
+        childFrame.Dispose();
       }
 
+      _children.Clear();
       BlzDestroyFrame(Handle);
-    }
-
-    ~Frame()
-    {
-      Dispose(false);
     }
   }
 }

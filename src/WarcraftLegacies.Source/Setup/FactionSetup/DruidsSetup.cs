@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
   {
     public static Faction? Druids { get; private set; }
 
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Druids = new Faction("Druids", PLAYER_COLOR_BROWN, "|c004e2a04",
         "ReplaceableTextures\\CommandButtons\\BTNFurion.blp")
@@ -83,7 +83,7 @@ The Horde is gathering to burn Ashenvale forest and all within, gather your forc
 
       Druids.SetObjectLevel(Constants.UPGRADE_REWS_WELL_SPRING, 1);
       
-      Druids.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-10967, 7196)));
+      Druids.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-10967, 7196)));
       
       FactionManager.Register(Druids);
     }

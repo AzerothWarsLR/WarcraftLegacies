@@ -20,11 +20,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Legend LegendSilvermoon { get; private set; }
     public static Legend LegendSunwell { get; private set; }
 
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendSilvermoon = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("h003")),
+        Unit = preplacedUnitSystem.GetUnit(FourCC("h003")),
         DeathMessage = "The grand city of the high elves, Silvermoon, has been crushed by her enemies."
       };
       Legend.Register(LegendSilvermoon);
@@ -32,12 +32,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       LegendSunwell = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_N001_THE_SUNWELL),
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N001_THE_SUNWELL),
         Capturable = true
       };
       Legend.Register(LegendSunwell);
-      LegendSunwell.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS, new Point(20479, 17477)));
-      LegendSunwell.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS, new Point(17415, 13196)));
+      LegendSunwell.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS, new Point(20479, 17477)));
+      LegendSunwell.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS, new Point(17415, 13196)));
 
       LegendAnasterian = new Legend
       {

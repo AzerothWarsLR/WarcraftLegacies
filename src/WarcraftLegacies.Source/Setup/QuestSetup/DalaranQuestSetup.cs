@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class DalaranQuestSetup
   {
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       var dalaran = DalaranSetup.Dalaran;
 
@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       QuestCrystalGolem crystalGolem = new();
       QuestFallenGuardian fallenGuardian = new();
       QuestSouthshore questSouthshore =
-        new(Regions.SouthshoreUnlock, PreplacedUnitSystem.GetUnit(FourCC("nmrm"), Regions.SouthshoreUnlock.Center));
+        new(Regions.SouthshoreUnlock, preplacedUnitSystem.GetUnit(FourCC("nmrm"), Regions.SouthshoreUnlock.Center));
 
       newGuardian.AddObjective(new ObjectiveDontCompleteQuest(theNexus));
       crystalGolem.AddObjective(new ObjectiveDontCompleteQuest(theNexus));
@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       dalaran.AddQuest(questSouthshore);
       dalaran.StartingQuest = questSouthshore;
       dalaran.AddQuest(new QuestShadowfang(Regions.ShadowfangUnlock,
-        PreplacedUnitSystem.GetUnit(Constants.UNIT_NWLD_DIRE_WOLF_CREEP, new Point(7668.5f, 4352.2f))));
+        preplacedUnitSystem.GetUnit(Constants.UNIT_NWLD_DIRE_WOLF_CREEP, new Point(7668.5f, 4352.2f))));
       dalaran.AddQuest(new QuestDalaran(new[] {Regions.Dalaran, Regions.DalaranDungeon}));
       dalaran.AddQuest(new QuestJainaSoulGem());
       dalaran.AddQuest(new QuestBlueDragons());

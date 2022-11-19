@@ -1,7 +1,6 @@
 ﻿using System;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
-using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 using Environment = MacroTools.Libraries.Environment;
@@ -19,8 +18,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
     private const float ProgressScale = 1.5f;
     private const float ProgressHeight = 285f;
     private const float Period = 0.15f;
-
-    private bool _disposed;
+    
     private readonly unit _caster;
     private readonly float _maxDuration;
     private float _elapsedDuration;
@@ -29,8 +27,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
     private readonly timer? _channelingTimer;
     private readonly timerdialog? _channelingDialog;
     private readonly Point _position;
-
-    private readonly TimerWrapper _periodictimer = new();
+    private readonly timer _periodictimer;
 
     /// <summary>
     /// Fired when the <see cref="Channel"/> ends, successfully or otherwise.
@@ -79,34 +76,29 @@ namespace MacroTools.QuestSystem.UtilityStructs
         TimerDialogDisplay(_channelingDialog, true);
       }
 
-      _periodictimer.Start(Period, true, Periodic);
+      _periodictimer = CreateTimer().Start(Period, true, Periodic);
     }
-    
-    ~Channel()
-    {
-      Dispose(false);
-    }
-    
-    /// <summary>
-    /// Clean up the object's managed resources.
-    /// </summary>
+
+    /// <inheritdoc />
     public void Dispose()
     {
-      Dispose(true);
+      _sfxProgress
+        .SetPosition(new Point(-100000, -100000)) //Has no death animation so needs to be moved off the map
+        .Destroy();
+      _sfx.Destroy();
+      _channelingTimer?.Destroy();
+      _periodictimer.Destroy();
+      DestroyTimerDialog(_channelingDialog);
     }
     
     private void End(bool finishedWithoutInterruption)
     {
       PauseUnit(_caster, false);
-      if (finishedWithoutInterruption)
-      {
+      if (finishedWithoutInterruption) 
         SetUnitAnimation(_caster, "spell");
-      }
 
-      if (UnitAlive(_caster))
-      {
+      if (UnitAlive(_caster)) 
         QueueUnitAnimation(_caster, "stand");
-      }
 
       FinishedWithoutInterruption = finishedWithoutInterruption;
       Finished?.Invoke(this, this);
@@ -115,38 +107,12 @@ namespace MacroTools.QuestSystem.UtilityStructs
     private void Periodic()
     {
       if (!UnitAlive(_caster) || MathEx.GetDistanceBetweenPoints(new Point(GetUnitX(_caster), GetUnitY(_caster)),
-        _position) > 100)
-      {
+        _position) > 100) 
         End(false);
-      }
 
       _elapsedDuration += Period;
-      if (_elapsedDuration >= _maxDuration)
-      {
+      if (_elapsedDuration >= _maxDuration) 
         End(true);
-      }
-    }
-
-    private void Dispose(bool disposing)
-    {
-      if (_disposed)
-      {
-        return;
-      }
-
-      if (disposing)
-      {
-        _periodictimer.Dispose();
-      }
-
-      BlzSetSpecialEffectPosition(_sfxProgress, -100000, -100000,
-        0); //Has no death animation so needs to be moved off the map
-      DestroyEffect(_sfxProgress);
-      DestroyEffect(_sfx);
-      DestroyTimer(_channelingTimer);
-      DestroyTimerDialog(_channelingDialog);
-
-      _disposed = true;
     }
   }
 }

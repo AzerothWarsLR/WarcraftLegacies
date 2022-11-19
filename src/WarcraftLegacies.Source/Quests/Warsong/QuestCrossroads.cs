@@ -16,12 +16,12 @@ namespace WarcraftLegacies.Source.Quests.Warsong
   {
     private readonly List<unit> _rescueUnits = new();
 
-    public QuestCrossroads(Rectangle rescueRect) : base("The Crossroads",
+    public QuestCrossroads(Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem) : base("The Crossroads",
       "The Horde still needs to establish a strong strategic foothold into Kalimdor. There is an opportune crossroads nearby.",
       "ReplaceableTextures\\CommandButtons\\BTNBarracks.blp")
     {
       AddObjective(
-        new ObjectiveKillUnit(PreplacedUnitSystem.GetUnit(FourCC("nrzm"), rescueRect.Center))); //Razorman Medicine Man
+        new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(FourCC("nrzm"), rescueRect.Center))); //Razorman Medicine Man
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01T"))));
       AddObjective(new ObjectiveExpire(1460));
       AddObjective(new ObjectiveSelfExists());

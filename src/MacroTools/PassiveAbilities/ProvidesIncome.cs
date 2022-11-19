@@ -12,6 +12,11 @@ namespace MacroTools.PassiveAbilities
   {
     private readonly int _income;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ProvidesIncome"/> class.
+    /// </summary>
+    /// <param name="unitTypeId"><inheritdoc /></param>
+    /// <param name="income">The amount of extra gold income the unit grants.</param>
     public ProvidesIncome(int unitTypeId, int income) : base(unitTypeId)
     {
       _income = income;
@@ -24,14 +29,23 @@ namespace MacroTools.PassiveAbilities
       BuffSystem.Add(buff, StackBehaviour.Stack);
     }
 
+    /// <inheritdoc />
     public override void OnUpgrade()
     {
       ApplyBuff();
     }
 
+    /// <inheritdoc />
     public override void OnConstruction()
     {
       ApplyBuff();
+    }
+
+    /// <inheritdoc />
+    public override void OnCreated(unit createdUnit)
+    {
+      if (!IsUnitType(createdUnit, UNIT_TYPE_STRUCTURE)) 
+        ApplyBuff();
     }
   }
 }

@@ -9,14 +9,14 @@ namespace WarcraftLegacies.Source.Setup
   /// </summary>
   public static class DestructibleSetup
   {
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       EnumDestructablesInRect(Regions.AhnqirajInstance.Rect, null, () =>
       {
         SetDestructableAnimationSpeed(GetEnumDestructable(), 0);
       });
 
-      var thandolSpan = PreplacedUnitSystem.GetDestructable(FourCC("LT08"), new Point(15695, 457));
+      var thandolSpan = preplacedUnitSystem.GetDestructable(FourCC("LT08"), new Point(15695, 457));
       SetDestructableInvulnerable(thandolSpan, true);
     }
   }

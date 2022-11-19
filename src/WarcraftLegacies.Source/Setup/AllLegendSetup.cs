@@ -1,34 +1,35 @@
-﻿using WarcraftLegacies.Source.Setup.Legends;
+﻿using MacroTools;
+using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Setup
 {
   public static class AllLegendSetup
   {
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendDalaran.Setup();
-      LegendDraenei.Setup();
-      LegendDruids.Setup();
-      LegendFelHorde.Setup();
-      LegendForsaken.Setup();
-      LegendFrostwolf.Setup();
+      LegendDalaran.Setup(preplacedUnitSystem);
+      LegendDraenei.Setup(preplacedUnitSystem);
+      LegendDruids.Setup(preplacedUnitSystem);
+      LegendFelHorde.Setup(preplacedUnitSystem);
+      LegendForsaken.Setup(preplacedUnitSystem);
+      LegendFrostwolf.Setup(preplacedUnitSystem);
       LegendGilneas.Setup();
-      LegendGoblin.Setup();
-      LegendIronforge.Setup();
-      LegendKultiras.Setup();
-      LegendLegion.Setup();
-      LegendLordaeron.Setup();
-      LegendNaga.Setup();
-      LegendNeutral.Setup();
-      LegendQuelthalas.Setup();
+      LegendGoblin.Setup(preplacedUnitSystem);
+      LegendIronforge.Setup(preplacedUnitSystem);
+      LegendKultiras.Setup(preplacedUnitSystem);
+      LegendLegion.Setup(preplacedUnitSystem);
+      LegendLordaeron.Setup(preplacedUnitSystem);
+      LegendNaga.Setup(preplacedUnitSystem);
+      LegendNeutral.Setup(preplacedUnitSystem);
+      LegendQuelthalas.Setup(preplacedUnitSystem);
       LegendScarlet.Setup();
-      LegendScourge.Setup();
-      LegendSentinels.Setup();
-      LegendStormwind.Setup();
+      LegendScourge.Setup(preplacedUnitSystem);
+      LegendSentinels.Setup(preplacedUnitSystem);
+      LegendStormwind.Setup(preplacedUnitSystem);
       LegendTroll.Setup();
-      LegendTwilight.Setup();
-      LegendWarsong.Setup();
-      LegendDragonmaw.Setup();
+      LegendTwilight.Setup(preplacedUnitSystem);
+      LegendWarsong.Setup(preplacedUnitSystem);
+      LegendDragonmaw.Setup(preplacedUnitSystem);
     }
   }
 }

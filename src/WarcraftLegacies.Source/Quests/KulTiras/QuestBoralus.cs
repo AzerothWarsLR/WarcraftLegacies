@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     /// Initializes a new instance of the <see cref="QuestBoralus"/> class.
     /// </summary>
     /// <param name="rescueRect">All units in this area will be made neutral, then rescued when the quest is completed or made aggressive when the quest is failed.</param>
-    public QuestBoralus(Rectangle rescueRect) : base("The City at Sea",
+    public QuestBoralus(Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem) : base("The City at Sea",
       "Proudmoore is stranded at sea. Rejoin Boralus to take control of the city.",
       "ReplaceableTextures\\CommandButtons\\BTNHumanShipyard.blp")
     {
@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R00L_QUEST_COMPLETED_CITY_AT_SEA_KULTIRAS;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      _rescueUnits.Remove(PreplacedUnitSystem.GetUnit(Constants.UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS)); // Proudmoore Capital Ship is not supposed to be rescued on this quest
+      _rescueUnits.Remove(preplacedUnitSystem.GetUnit(Constants.UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS)); // Proudmoore Capital Ship is not supposed to be rescued on this quest
     }
 
     /// <inheritdoc/>

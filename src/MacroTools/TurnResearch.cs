@@ -27,12 +27,10 @@ namespace MacroTools
     public static void Register(TurnResearch turnResearch)
     {
       var timer = CreateTimer();
-      TimerStart(timer, (turnResearch._turn) + 1 * 60, false, () =>
+      TimerStart(timer, (turnResearch._turn + 1) * 60, false, () =>
       {
         foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-        {
           SetPlayerTechResearched(player, turnResearch._researchId, 1);
-        }
         DestroyTimer(GetExpiredTimer());
       });
     }

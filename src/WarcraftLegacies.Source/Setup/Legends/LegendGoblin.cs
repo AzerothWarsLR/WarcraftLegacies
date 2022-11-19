@@ -10,7 +10,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Legend? Gazlowe { get; private set; }
     public static Legend? KezanTradingCenter { get; private set; }
 
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Gallywix = new Legend
       {
@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = Constants.UNIT_O04M_KEZAN_TRADING_CENTER_GOBLIN
       };
-      KezanTradingCenter.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_O05I_MISSILE_BATTERY_GOBLIN));
+      KezanTradingCenter.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_O05I_MISSILE_BATTERY_GOBLIN));
     }
   }
 }

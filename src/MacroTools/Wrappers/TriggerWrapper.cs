@@ -12,10 +12,8 @@ namespace MacroTools.Wrappers
 
     public trigger Trigger { get; }
 
-    public void Dispose()
-    {
-      DestroyTrigger(Trigger);
-    }
+    /// <inheritdoc />
+    public void Dispose() => DestroyTrigger(Trigger);
 
     /// <summary>
     /// Causes the <see cref="trigger"/> to be fired when any player executes the specified chat command.
@@ -38,11 +36,6 @@ namespace MacroTools.Wrappers
     public void AddAction(Action actionFunc)
     {
       TriggerAddAction(Trigger, actionFunc);
-    }
-
-    ~TriggerWrapper()
-    {
-      DestroyTrigger(Trigger);
     }
   }
 }

@@ -12,16 +12,16 @@ namespace WarcraftLegacies.Source.Researches.Stormwind
   {
     private const int UnittypePortal = Constants.UNIT_N09P_PORTAL_STORMWIND;
     private const float WaygateOffset = 100;
+    private static destructable? DestructableA;
+    private static destructable? DestructableB;
 
     private static void EnablePortals()
     {
-      var destructableA = PreplacedUnitSystem.GetDestructable(FourCC("B017"), new Point(8229, -11703));
-      var waygateA = CreateUnit(StormwindSetup.Stormwind.Player, UnittypePortal, destructableA.GetPosition().X,
-        destructableA.GetPosition().Y, 0);
-
-      var destructableB = PreplacedUnitSystem.GetDestructable(FourCC("B017"), Regions.HonorHold.Center);
-      var waygateB = CreateUnit(StormwindSetup.Stormwind.Player, UnittypePortal, destructableB.GetPosition().X,
-        destructableB.GetPosition().Y, 130.80f);
+      var waygateA = CreateUnit(StormwindSetup.Stormwind.Player, UnittypePortal, DestructableA.GetPosition().X,
+        DestructableA.GetPosition().Y, 0);
+      
+      var waygateB = CreateUnit(StormwindSetup.Stormwind.Player, UnittypePortal, DestructableB.GetPosition().X,
+        DestructableB.GetPosition().Y, 130.80f);
 
       SetUnitPathing(waygateA, false);
       SetUnitPathing(waygateB, false);
@@ -49,7 +49,12 @@ namespace WarcraftLegacies.Source.Researches.Stormwind
       EnablePortals();
     }
 
-    public static void Setup() => PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, Research,
-      Constants.UPGRADE_R03W_KNOWLEDGE_OF_HONOR_HOLD_ARATHOR_T2);
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    {
+      DestructableA = preplacedUnitSystem.GetDestructable(FourCC("B017"), new Point(8229, -11703));
+      DestructableB = preplacedUnitSystem.GetDestructable(FourCC("B017"), Regions.HonorHold.Center);
+      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, Research,
+        Constants.UPGRADE_R03W_KNOWLEDGE_OF_HONOR_HOLD_ARATHOR_T2);
+    }
   }
 }

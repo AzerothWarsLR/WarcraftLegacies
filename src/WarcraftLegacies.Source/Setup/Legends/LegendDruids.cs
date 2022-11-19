@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static int UnittypeCenariusAlive { get; } = FourCC("Ecen");
     public static int UnittypeCenariusGhost { get; } = FourCC("E00H");
 
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Legend.Register(LegendCenarius = new Legend
       {
@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Legend.Register(LegendNordrassil = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("n002")),
+        Unit = preplacedUnitSystem.GetUnit(FourCC("n002")),
         Capturable = true
       });
 

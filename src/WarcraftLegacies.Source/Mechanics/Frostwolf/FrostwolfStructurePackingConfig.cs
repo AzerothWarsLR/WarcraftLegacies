@@ -1,5 +1,4 @@
-﻿using System;
-using MacroTools.Mechanics;
+﻿using MacroTools.Mechanics;
 
 namespace WarcraftLegacies.Source.Mechanics.Frostwolf
 {

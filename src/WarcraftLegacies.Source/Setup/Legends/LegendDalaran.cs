@@ -43,7 +43,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// <summary>
     /// Sets up all Dalaran <see cref="Legend"/>s.
     /// </summary>
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendJaina = new Legend
       {
@@ -75,14 +75,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       LegendDalaranCapital = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H002_THE_VIOLET_CITADEL_DALARAN),
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H002_THE_VIOLET_CITADEL_DALARAN),
         DeathMessage =
           "The Violet Citadel, the ultimate bastion of arcane knowledge in the Eastern Kingdoms, crumbles like a sand castle."
       };
       Legend.Register(LegendDalaranCapital);
-      LegendDalaranCapital.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9084, 4979)));
-      LegendDalaranCapital.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9008, 4092)));
-      LegendDalaranCapital.AddProtector(PreplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9864, 4086)));
+      LegendDalaranCapital.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9084, 4979)));
+      LegendDalaranCapital.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9008, 4092)));
+      LegendDalaranCapital.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9864, 4086)));
 
       LegendAntonidas = new Legend
       {

@@ -15,11 +15,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Legend LEGION_NEXUS_NORTHREND { get; private set; }
     public static Legend LEGION_NEXUS_OUTLAND { get; private set; }
 
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       LEGEND_ARCHIMONDE = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("Uwar")),
+        Unit = preplacedUnitSystem.GetUnit(FourCC("Uwar")),
         PermaDies = true,
         DeathMessage =
           "Archimonde the Defiler has been banished from Azeroth, marking the end of his second failed invasion.",
@@ -58,14 +58,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       LEGION_NEXUS_OUTLAND = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION, new Point(-3483, -21662))
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION, new Point(-3483, -21662))
       };
       Legend.Register(LEGION_NEXUS_OUTLAND);
       SetUnitInvulnerable(LEGION_NEXUS_OUTLAND.Unit, true);
       
       LEGION_NEXUS_NORTHREND = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION, new Point(-3501, 20951))
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION, new Point(-3501, 20951))
       };
       Legend.Register(LEGION_NEXUS_NORTHREND);
       SetUnitInvulnerable(LEGION_NEXUS_NORTHREND.Unit, true);

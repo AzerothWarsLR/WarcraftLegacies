@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Setup
     /// <summary>
     /// Sets up all <see cref="Instance"/>s.
     /// </summary>
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       InstanceSystem.Register(
         new Instance("Barrow Deeps", Regions.InstanceBarrowDeeps)
@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Setup
       );
 
       var scholomance = new Instance("Scholomance", Regions.InstanceScholomance);
-      scholomance.AddDependency(PreplacedUnitSystem.GetUnit(Constants.UNIT_N035_SCHOLOMANCE));
+      scholomance.AddDependency(preplacedUnitSystem.GetUnit(Constants.UNIT_N035_SCHOLOMANCE));
       InstanceSystem.Register(scholomance);
 
       InstanceSystem.Register(
@@ -61,17 +61,17 @@ namespace WarcraftLegacies.Source.Setup
       );
 
       var naxxramas = new Instance("Naxxramas", Regions.NaxxramasInside);
-      naxxramas.AddDependency(PreplacedUnitSystem.GetUnit(Constants.UNIT_U01X_HEART_OF_NAXXRAMAS));
-      naxxramas.AddDependency(PreplacedUnitSystem.GetUnit(Constants.UNIT_E013_NAXXRAMAS_SCOURGE));
+      naxxramas.AddDependency(preplacedUnitSystem.GetUnit(Constants.UNIT_U01X_HEART_OF_NAXXRAMAS));
+      naxxramas.AddDependency(preplacedUnitSystem.GetUnit(Constants.UNIT_E013_NAXXRAMAS_SCOURGE));
       InstanceSystem.Register(naxxramas);
 
       var scarletMonastery = new Instance("Scarlet Monastery", Regions.ScarletAmbient);
-      scarletMonastery.AddDependency(PreplacedUnitSystem.GetUnit(Constants.UNIT_H00T_SCARLET_MONASTERY_LORDAERON));
+      scarletMonastery.AddDependency(preplacedUnitSystem.GetUnit(Constants.UNIT_H00T_SCARLET_MONASTERY_LORDAERON));
       InstanceSystem.Register(scarletMonastery);
 
       var proudmooreFlagshipInterior = new Instance("Proudmoore Flagship Interior", Regions.ShipAmbient);
-      proudmooreFlagshipInterior.AddDependency(PreplacedUnitSystem.GetUnit(Constants.UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS));
-      proudmooreFlagshipInterior.AddDependency(PreplacedUnitSystem.GetUnit(Constants.UNIT_H09D_FLEETMASTER_S_TABLE));
+      proudmooreFlagshipInterior.AddDependency(preplacedUnitSystem.GetUnit(Constants.UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS));
+      proudmooreFlagshipInterior.AddDependency(preplacedUnitSystem.GetUnit(Constants.UNIT_H09D_FLEETMASTER_S_TABLE));
       InstanceSystem.Register(proudmooreFlagshipInterior);
     }
   }

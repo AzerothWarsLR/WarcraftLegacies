@@ -1,4 +1,4 @@
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.Powers;
 using static War3Api.Common;
 
@@ -39,7 +39,7 @@ Use your resources to raise an army strong enough to take land elsewhere."
       Goblin.ModObjectLimit(FourCC("o03W"), Faction.UNLIMITED); //Improved Watch Tower
       Goblin.ModObjectLimit(FourCC("o03X"), Faction.UNLIMITED); //Voodoo Lounge
       Goblin.ModObjectLimit(FourCC("o03V"), Faction.UNLIMITED); //Shipyard
-      Goblin.ModObjectLimit(FourCC("n0AQ"), 6); //Oil Platform
+      Goblin.ModObjectLimit(Constants.UNIT_O06G_OIL_TANKER_GOBLIN, Faction.UNLIMITED);
       Goblin.ModObjectLimit(FourCC("h011"), 1); //Artillery
 
       Goblin.ModObjectLimit(FourCC("o02I"), Faction.UNLIMITED); //Peon
@@ -58,7 +58,6 @@ Use your resources to raise an army strong enough to take land elsewhere."
       Goblin.ModObjectLimit(FourCC("h091"), 6); //Zep
       Goblin.ModObjectLimit(FourCC("nzep"), 16); //Trading Zeppelin
       Goblin.ModObjectLimit(FourCC("o04S"), 10); //Trader
-      Goblin.ModObjectLimit(FourCC("u028"), 2); //Fuel Tanker
 
       Goblin.ModObjectLimit(Constants.UNIT_O04N_TRADE_PRINCE_OF_THE_BILGEWATER_CARTEL_GOBLIN, 1);
       Goblin.ModObjectLimit(Constants.UNIT_NTIN_CHIEF_ENGINEER_GOBLIN, 1);
@@ -71,7 +70,8 @@ Use your resources to raise an army strong enough to take land elsewhere."
       var oilPower = new OilPower
       {
         Name = "Oil Tycoon",
-        IconName = "OilStation"
+        IconName = "OilStation",
+        OilPoolMax = 10
       };
       Goblin.AddPower(oilPower);
 

@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
   {
     public static Faction? Zandalar { get; private set; }
     
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Zandalar = new Faction("Zandalar", PLAYER_COLOR_PEACH, "|cffff8c6c",
         "ReplaceableTextures\\CommandButtons\\BTNHeadHunterBerserker.blp")
@@ -64,7 +64,7 @@ Once the human menace has been dealt with, sail West and help the Horde in Kalim
       Zandalar.ModObjectLimit(FourCC("R070"), Faction.UNLIMITED); //Haruspex Training
       Zandalar.ModObjectLimit(FourCC("R071"), Faction.UNLIMITED); //Hex Training
 
-      Zandalar.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-3944, -11999)));
+      Zandalar.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-3944, -11999)));
       
       FactionManager.Register(Zandalar);
     }

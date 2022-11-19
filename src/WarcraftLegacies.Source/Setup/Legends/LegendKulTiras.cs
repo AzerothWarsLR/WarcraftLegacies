@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Legend LegendBoralus { get; private set; }
     public static Legend Flagship { get; private set; }
 
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendAdmiral = new Legend
       {
@@ -37,14 +37,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       LegendBoralus = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H046_BORALUS_KEEP_KUL_TIRAS),
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H046_BORALUS_KEEP_KUL_TIRAS),
         DeathMessage = "Boralus Keep has fallen" //Todo: pointless flavour
       };
       Legend.Register(LegendBoralus);
 
       Flagship = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS)
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS)
       };
       Flagship.Unit.SetInvulnerable(true);
       Flagship.Unit.Pause(true);

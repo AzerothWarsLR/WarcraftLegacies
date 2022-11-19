@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
   {
     public static Faction? Scourge { get; private set; }
 
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Scourge = new Faction("Scourge", PLAYER_COLOR_PURPLE, "|c00540081",
         "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp")
@@ -120,7 +120,7 @@ The Necropolis of Naxxramas is become the perfect weapon for the Scourge, but yo
         });
       Scourge.AddPower(visionPower);
       
-      Scourge.AddGoldMine(PreplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-4939, 18803)));
+      Scourge.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-4939, 18803)));
 
       HelmOfDominationDropsWhenScourgeLeaves.Setup();
 

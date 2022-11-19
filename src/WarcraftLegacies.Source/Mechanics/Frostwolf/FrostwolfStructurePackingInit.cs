@@ -1,5 +1,4 @@
-﻿using System;
-using MacroTools.Mechanics;
+﻿using MacroTools.Mechanics;
 using MacroTools.Wrappers;
 using static War3Api.Common;
 

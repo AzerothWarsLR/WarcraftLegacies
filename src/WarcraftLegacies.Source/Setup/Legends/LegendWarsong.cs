@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Legend? ChenStormstout { get; private set; }
     public static Legend? Saurfang { get; private set; }
     
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       ChenStormstout = new Legend
       {
@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       StonemaulKeep = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(Constants.UNIT_O004_STONEMAUL_KEEP),
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O004_STONEMAUL_KEEP),
         DeathMessage = "The fortress of the Stonemaul Clan has fallen."
       };
       Legend.Register(StonemaulKeep);

@@ -10,11 +10,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Legend? LegendZaela { get; private set; }
     public static Legend? LegendNekrosh { get; private set; }
 
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       DragonmawPort = new Legend
       {
-        Unit = PreplacedUnitSystem.GetUnit(FourCC("o06E")),
+        Unit = preplacedUnitSystem.GetUnit(FourCC("o06E")),
         DeathMessage =
           "The Dragonmaw Port has fallen, the Twilight Highlands are finally liberated"
       };
