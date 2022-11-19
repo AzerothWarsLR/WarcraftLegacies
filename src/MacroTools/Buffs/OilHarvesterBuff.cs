@@ -45,8 +45,13 @@ namespace MacroTools.Buffs
           var harvesterPosition = Target.GetPosition();
           var oilPoolPosition = x.Position;
           return WCSharp.Shared.Util.DistanceBetweenPoints(harvesterPosition.X, harvesterPosition.Y, oilPoolPosition.X,
-            oilPoolPosition.Y) > Radius;
-        });
+            oilPoolPosition.Y) < Radius;
+        }).ToList();
+      if (nearbyOilPools.Count == 0)
+      {
+        KillUnit(Target);
+        return;
+      }
       foreach (var oilPool in nearbyOilPools) 
         oilPool.Harvest(OilHarvestedPerSecond);
     }

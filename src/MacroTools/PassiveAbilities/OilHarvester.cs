@@ -38,7 +38,7 @@ namespace MacroTools.PassiveAbilities
     /// <inheritdoc />
     public override void OnCreated(unit createdUnit)
     {
-      if (!EnsureOnlyOne(createdUnit))
+      if (!EnsureValidPositioning(createdUnit))
         return;
 
       var owningFaction = createdUnit.OwningPlayer().GetFaction();
@@ -57,11 +57,11 @@ namespace MacroTools.PassiveAbilities
       BuffSystem.Add(oilBuff);
     }
 
-    private bool EnsureOnlyOne(unit createdUnit)
+    private bool EnsureValidPositioning(unit createdUnit)
     {
       if (new GroupWrapper().EnumUnitsInRange(createdUnit.GetPosition(), Radius)
           .EmptyToList()
-          .All(x => x.GetTypeId() != createdUnit.GetTypeId())) return true;
+          .All(x => x.GetTypeId() != createdUnit.GetTypeId() || x == createdUnit)) return true;
       KillUnit(createdUnit);
       return false;
     }

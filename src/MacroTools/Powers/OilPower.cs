@@ -4,6 +4,7 @@ using MacroTools.FactionSystem;
 using MacroTools.Hazards;
 using MacroTools.SpellSystem;
 using WCSharp.Events;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace MacroTools.Powers
@@ -99,7 +100,7 @@ namespace MacroTools.Powers
       
       for (var i = 0; i < OilPoolMax; i++)
       {
-        var randomPoint = WCSharp.Shared.Data.Rectangle.WorldBounds.GetRandomPoint();
+        var randomPoint = GetRandomPointAtSea();
         var oilPool = new OilPool(randomPoint, "Tar Pool.mdx", this)
         {
           Active = true,
@@ -116,6 +117,16 @@ namespace MacroTools.Powers
     {
       Description =
         $"You can harvest oil and use it to enhance your mechanical units.|n|cffffcc00Oil:|r {Amount}|n|cffffcc00Income:|r {Income}";
+    }
+
+    private static Point GetRandomPointAtSea()
+    {
+      Point randomPoint;
+      do
+      {
+        randomPoint = Rectangle.WorldBounds.GetRandomPoint();
+      } while (IsTerrainPathable(randomPoint.X, randomPoint.Y, PATHING_TYPE_FLOATABILITY));
+      return randomPoint;
     }
   }
 }
