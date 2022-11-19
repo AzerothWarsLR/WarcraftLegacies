@@ -33,8 +33,7 @@ namespace MacroTools.Hazards
     {
       _oilPower = oilPower;
       _effect = AddSpecialEffect(effectPath, position.X, position.Y)
-        .SetScale(5)
-        .SetHeight(Libraries.Environment.GetPositionZ(position));
+        .SetScale(2);
     }
 
     /// <inheritdoc />
