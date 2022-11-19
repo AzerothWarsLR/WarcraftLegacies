@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Linq;
 using MacroTools.Buffs;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Hazards;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Powers;
+using MacroTools.Wrappers;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
@@ -36,6 +38,9 @@ namespace MacroTools.PassiveAbilities
     /// <inheritdoc />
     public override void OnCreated(unit createdUnit)
     {
+      if (!EnsureOnlyOne(createdUnit))
+        return;
+
       var owningFaction = createdUnit.OwningPlayer().GetFaction();
       var oilPower = owningFaction?.GetPowerByType<OilPower>();
       if (oilPower == null)
@@ -50,6 +55,15 @@ namespace MacroTools.PassiveAbilities
         OilHarvestedPerSecond = OilHarvestedPerSecond
       };
       BuffSystem.Add(oilBuff);
+    }
+
+    private bool EnsureOnlyOne(unit createdUnit)
+    {
+      if (new GroupWrapper().EnumUnitsInRange(createdUnit.GetPosition(), Radius)
+          .EmptyToList()
+          .All(x => x.GetTypeId() != createdUnit.GetTypeId())) return true;
+      KillUnit(createdUnit);
+      return false;
     }
   }
 }
