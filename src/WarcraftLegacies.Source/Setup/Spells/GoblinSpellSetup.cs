@@ -38,12 +38,9 @@ namespace WarcraftLegacies.Source.Setup.Spells
 
       PassiveAbilityManager.Register(new NuclearLaunchWarning(Constants.UNIT_H011_INTERCONTINENTAL_ARTILLERY_GOBLIN,
         Constants.UNIT_H06L_DUMMY_NUKE_WARNING, @"war3mapImported/NuclearLaunchDetected.mp3", 25));
-
-      var artillerySpeedMult =
-        new AnimationSpeedMultiplier(Constants.UNIT_H011_INTERCONTINENTAL_ARTILLERY_GOBLIN, 0.4f);
-      PassiveAbilityManager.Register(artillerySpeedMult);
-
-      PassiveAbilityManager.Register(new OilProducer(Constants.UNIT_O04R_OIL_PLATFORM_GOBLIN, 11.5f));
+      
+      PassiveAbilityManager.Register(new AnimationSpeedMultiplier(Constants.UNIT_H011_INTERCONTINENTAL_ARTILLERY_GOBLIN, 0.4f));
+      
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_H011_INTERCONTINENTAL_ARTILLERY_GOBLIN));
       PassiveAbilityManager.Register(new OilUser(FourCC("Ntin")));
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_N062_SHREDDER_GOBLIN));
@@ -56,15 +53,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
       });
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_H04Z_KEZAN_OIL_SUPPLY_GOBLIN));
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_NTIN_CHIEF_ENGINEER_GOBLIN));
-      PassiveAbilityManager.Register(new OilRigConstructor(Constants.UNIT_N0AQ_OIL_RIG_WARSONG, new[]
-      {
-        Regions.OilRig1.Center, 
-        Regions.OilRig2.Center,
-        Regions.OilRig3.Center,
-        Regions.OilRig4.Center,
-        Regions.OilRig5.Center,
-        Regions.OilRig6.Center
-      }));
     }
   }
 }
