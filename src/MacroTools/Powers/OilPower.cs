@@ -98,7 +98,7 @@ namespace MacroTools.Powers
         }
       }
       
-      for (var i = 0; i < OilPoolMax; i++)
+      for (var i = _oilPools.Count; i < OilPoolMax; i++)
       {
         var randomPoint = GetRandomPointAtSea();
         var oilPool = new OilPool(randomPoint, "Tar Pool.mdx", this)
