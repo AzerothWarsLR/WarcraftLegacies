@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       AddObjective(
         new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N08T_DRAGONMAW_PORT_10GOLD_MIN)));
       AddObjective(new ObjectiveLegendDead(LegendNeutral.LegendMorghor));
-      AddObjective(new ObjectiveExpire(1227));
+      AddObjective(new ObjectiveExpire(480));
       AddObjective(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))

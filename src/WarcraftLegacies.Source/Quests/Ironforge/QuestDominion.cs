@@ -23,7 +23,6 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n017"))));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n014"))));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n013"))));
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendGrimbatol, false));
       AddObjective(new ObjectiveUpgrade(FourCC("h07G"), FourCC("h07E")));
       AddObjective(new ObjectiveExpire(1462));
       AddObjective(new ObjectiveSelfExists());

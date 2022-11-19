@@ -76157,7 +76157,7 @@ R
 }
 
 STRING 12696
-// Abilities: A0TA (Mech Kit), EditorSuffix (Editor Suffix)
+// Units: o03O (Altar of Industry), EditorSuffix (Name - Editor Suffix)
 {
 (Goblin)
 }
@@ -96410,13 +96410,13 @@ Corrupt Blood - [|cffffcc00Level 3|r]
 }
 
 STRING 16079
-// Units: o03O (Altar of Industry), EditorSuffix (Name - Editor Suffix)
+// Units: o03P (War Camp), EditorSuffix (Name - Editor Suffix)
 {
 (Goblin)
 }
 
 STRING 16080
-// Units: o03P (War Camp), EditorSuffix (Name - Editor Suffix)
+// Units: o03Q (Lumber Mill), EditorSuffix (Name - Editor Suffix)
 {
 (Goblin)
 }
@@ -96428,7 +96428,7 @@ Primary structure, used to train workers and gather resources.|n|cfff5962dTrains
 }
 
 STRING 16082
-// Units: o03Q (Lumber Mill), EditorSuffix (Name - Editor Suffix)
+// Units: o03S (Laboratory), EditorSuffix (Name - Editor Suffix)
 {
 (Goblin)
 }
@@ -96440,7 +96440,7 @@ Primary structure, used to train workers and gather resources.|n|cfff5962dTrains
 }
 
 STRING 16084
-// Units: o03S (Laboratory), EditorSuffix (Name - Editor Suffix)
+// Units: o03U (Missile Tower), EditorSuffix (Name - Editor Suffix)
 {
 (Goblin)
 }
@@ -96452,7 +96452,7 @@ Blood Fury - [|cffffcc00Level %d|r]
 }
 
 STRING 16086
-// Units: o03U (Missile Tower), EditorSuffix (Name - Editor Suffix)
+// Units: o03V (Goblin Dock), EditorSuffix (Name - Editor Suffix)
 {
 (Goblin)
 }
@@ -96464,7 +96464,7 @@ Revives slain Heroes and Demi-heros.
 }
 
 STRING 16088
-// Units: o03V (Goblin Dock), EditorSuffix (Name - Editor Suffix)
+// Units: o03W (Improved Missile Tower), EditorSuffix (Name - Editor Suffix)
 {
 (Goblin)
 }
@@ -96488,7 +96488,7 @@ Q
 }
 
 STRING 16092
-// Units: o03W (Improved Missile Tower), EditorSuffix (Name - Editor Suffix)
+// Units: o03X (Voodoo Lounge), EditorSuffix (Name - Editor Suffix)
 {
 (Goblin)
 }
@@ -96500,7 +96500,7 @@ Resource harvesting center and producer of Horde enhancements. |n|cfff5962dResea
 }
 
 STRING 16094
-// Units: o03X (Voodoo Lounge), EditorSuffix (Name - Editor Suffix)
+// Units: O04N (Trade Prince of the Bilgewater Cartel), EditorSuffix (Name - Editor Suffix)
 {
 (Goblin)
 }
@@ -96518,7 +96518,7 @@ Defensive hovel for peons to defend the territory.|nProvides 10 food, which incr
 }
 
 STRING 16097
-// Units: O04N (Trade Prince of the Bilgewater Cartel), EditorSuffix (Name - Editor Suffix)
+// Units: o04R (Oil Rig), EditorSuffix (Name - Editor Suffix)
 {
 (Goblin)
 }
@@ -96530,7 +96530,7 @@ Spearman filled eyes of the Horde.|n|cfff5962dUpgrades Into:|R Improved Watch To
 }
 
 STRING 16099
-// Units: o04R (Oil Rig), EditorSuffix (Name - Editor Suffix)
+// Units: o04M (Kezan Trading Center), EditorSuffix (Name - Editor Suffix)
 {
 (Goblin)
 }
@@ -96554,7 +96554,7 @@ Boat construction facility for the Horde.|n|cfff5962dBuilds:|R Horde Transport S
 }
 
 STRING 16103
-// Units: o04M (Kezan Trading Center), EditorSuffix (Name - Editor Suffix)
+// Units: o06G (Oil Rig Constructor), EditorSuffix (Name - Editor Suffix)
 {
 (Goblin)
 }
@@ -96956,7 +96956,7 @@ Persistent Soul - [|cffffcc00Level 1|r]
 }
 
 STRING 16170
-// Units: o06G (Oil Rig Constructor), EditorSuffix (Name - Editor Suffix)
+// Abilities: A0MN (Oil Consumer), EditorSuffix (Editor Suffix)
 {
 (Goblin)
 }
@@ -97457,7 +97457,7 @@ E
 }
 
 STRING 16255
-// Abilities: A0MN (Oil Consumer), EditorSuffix (Editor Suffix)
+// Abilities: A07A (Dispel Magic), EditorSuffix (Editor Suffix)
 {
 (Goblin)
 }
@@ -104843,7 +104843,7 @@ W
 }
 
 STRING 17486
-// Abilities: A07A (Dispel Magic), EditorSuffix (Editor Suffix)
+// Abilities: A0SJ (Rain of Fire), EditorSuffix (Editor Suffix)
 {
 (Goblin)
 }
@@ -105023,7 +105023,7 @@ STRING 17515
 }
 
 STRING 17516
-// Abilities: A0SJ (Rain of Fire), EditorSuffix (Editor Suffix)
+// Abilities: A0TA (Mech Kit), EditorSuffix (Editor Suffix)
 {
 (Goblin)
 }
@@ -115800,7 +115800,7 @@ Q
 }
 
 STRING 19318
-// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
 {
 R
 }
@@ -115890,7 +115890,7 @@ Build Oil Rig
 }
 
 STRING 19333
-// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
 {
 R
 }
