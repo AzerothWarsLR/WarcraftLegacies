@@ -43,12 +43,17 @@ namespace WarcraftLegacies.Source.Setup.Spells
         new AnimationSpeedMultiplier(Constants.UNIT_H011_INTERCONTINENTAL_ARTILLERY_GOBLIN, 0.4f);
       PassiveAbilityManager.Register(artillerySpeedMult);
 
+      PassiveAbilityManager.Register(new OilProducer(Constants.UNIT_O04R_OIL_PLATFORM_GOBLIN, 11.5f));
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_H011_INTERCONTINENTAL_ARTILLERY_GOBLIN));
       PassiveAbilityManager.Register(new OilUser(FourCC("Ntin")));
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_N062_SHREDDER_GOBLIN));
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_H08Z_ASSAULT_TANK_GOBLIN));
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_H091_WAR_ZEPPELIN_GOBLIN));
-      PassiveAbilityManager.Register(new OilProducer(Constants.UNIT_O04R_OIL_PLATFORM_GOBLIN, 11.5f));
+      PassiveAbilityManager.Register(new OilHarvester(Constants.UNIT_HFOO_FOOTMAN_LORDAERON)
+      {
+        OilHarvestedPerSecond = 20,
+        Radius = 700
+      });
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_H04Z_KEZAN_OIL_SUPPLY_GOBLIN));
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_NTIN_CHIEF_ENGINEER_GOBLIN));
       PassiveAbilityManager.Register(new OilRigConstructor(Constants.UNIT_N0AQ_OIL_RIG_WARSONG, new[]
@@ -60,7 +65,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Regions.OilRig5.Center,
         Regions.OilRig6.Center
       }));
-      
     }
   }
 }

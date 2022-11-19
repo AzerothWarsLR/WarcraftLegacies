@@ -70,7 +70,8 @@ Use your resources to raise an army strong enough to take land elsewhere."
       var oilPower = new OilPower
       {
         Name = "Oil Tycoon",
-        IconName = "OilStation"
+        IconName = "OilStation",
+        OilPoolMax = 10
       };
       Goblin.AddPower(oilPower);
 
