@@ -1306,12 +1306,6 @@ STRING 217
 Boat construction facility for the Horde.|n|cfff5962dBuilds:|R Horde Transport Ship, Frigate, Juggernaut, Oil Tanker |n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
 
-STRING 218
-// Units: o06G (Oil Tanker), Name (Name)
-{
-Oil Tanker
-}
-
 STRING 219
 // Abilities: A0XL (Life Drain), EditorSuffix (Editor Suffix)
 {
@@ -1394,12 +1388,6 @@ STRING 232
 // Units: h08N (Dreadguard), Ubertip (Tooltip - Extended)
 {
 Elite Commander of the Forsaken.|n|cfff5962dAbilities: |RCharge, Unholy Plating, Elite Combat Experience |n|n|cffffcc00Attacks land units.|r
-}
-
-STRING 233
-// Units: o06G (Oil Tanker), Tip (Tooltip - Basic)
-{
-Train Oil Tanker
 }
 
 STRING 234
@@ -19155,12 +19143,6 @@ STRING 3193
 (Warsong)
 }
 
-STRING 3194
-// Units: o06G (Oil Tanker), Ubertip (Tooltip - Extended)
-{
-A sturdy transport ship that periodically harvests nearby Oil, which can be found randomly throughout the sea.
-}
-
 STRING 3195
 // Units: u01Y (Deathwing), Hotkey (Hotkey)
 {
@@ -29094,7 +29076,7 @@ Q
 }
 
 STRING 4851
-// Units: o06G (Oil Tanker), Hotkey (Hotkey)
+// Units: o06G (Oil Rig Constructor), Hotkey (Hotkey)
 {
 R
 }
@@ -29142,7 +29124,7 @@ STRING 4858
 }
 
 STRING 4859
-// Units: o04R (Oil Platform), Hotkey (Hotkey)
+// Units: o04R (Oil Rig), Hotkey (Hotkey)
 {
 Q
 }
@@ -42281,12 +42263,6 @@ STRING 7045
 // Units: ndog (Patrons Crusader), Name (Name)
 {
 Patrons Crusader
-}
-
-STRING 7046
-// Units: o04R (Oil Platform), Tip (Tooltip - Basic)
-{
-Build Oil Platform
 }
 
 STRING 7047
@@ -65670,12 +65646,6 @@ STRING 10943
 // Abilities: A0D9 (Unpack War Mill), Hotkey (Hotkey - Normal)
 {
 Q
-}
-
-STRING 10944
-// Units: o04R (Oil Platform), Name (Name)
-{
-Oil Platform
 }
 
 STRING 10945
@@ -96427,6 +96397,12 @@ STRING 16076
 (forsaken)
 }
 
+STRING 16077
+// Units: o04R (Oil Rig), Name (Name)
+{
+Oil Rig
+}
+
 STRING 16078
 // Abilities: A0OK (Corrupt Blood), Tip (Tooltip - Normal)
 {
@@ -96554,7 +96530,7 @@ Spearman filled eyes of the Horde.|n|cfff5962dUpgrades Into:|R Improved Watch To
 }
 
 STRING 16099
-// Units: o04R (Oil Platform), EditorSuffix (Name - Editor Suffix)
+// Units: o04R (Oil Rig), EditorSuffix (Name - Editor Suffix)
 {
 (Goblin)
 }
@@ -96980,7 +96956,7 @@ Persistent Soul - [|cffffcc00Level 1|r]
 }
 
 STRING 16170
-// Units: o06G (Oil Tanker), EditorSuffix (Name - Editor Suffix)
+// Units: o06G (Oil Rig Constructor), EditorSuffix (Name - Editor Suffix)
 {
 (Goblin)
 }
@@ -106514,12 +106490,6 @@ STRING 17759
 Teleports <AUds,DataA1> of the player's non-hero units within the targeted area to the location of the Hero when used.
 }
 
-STRING 17760
-// Abilities: A0MU (Build Oil Platform), EditorSuffix (Editor Suffix)
-{
-(Goblin - Oil Tanker)
-}
-
 STRING 17761
 // Abilities: A0TA (Mech Kit), Ubertip (Tooltip - Normal - Extended)
 {
@@ -110899,7 +110869,7 @@ STRING 18491
 }
 
 STRING 18492
-// Abilities: A0MU (Build Oil Platform), Hotkey (Hotkey - Normal)
+// Abilities: A0MU (Build Oil Rig), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -115446,12 +115416,6 @@ STRING 19250
 Q
 }
 
-STRING 19251
-// Abilities: A0MU (Build Oil Platform), Name (Name)
-{
-Build Oil Platform
-}
-
 STRING 19252
 // Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
@@ -115763,12 +115727,6 @@ STRING 19303
 Hunt Aura
 }
 
-STRING 19304
-// Abilities: A0MU (Build Oil Platform), Tip (Tooltip - Normal)
-{
-Build Oil Platform
-}
-
 STRING 19305
 // Abilities: A0Z7 (Earth's Grace), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -115827,12 +115785,6 @@ STRING 19314
 // Buffs/Effects: B03O (), Bufftip (Tooltip)
 {
 Earth's Grace
-}
-
-STRING 19315
-// Abilities: A0MU (Build Oil Platform), Ubertip (Tooltip - Normal - Extended)
-{
-Builds an Oil Platform at the target location.|n|n|cff99b4d1Must be built near an Oil deposit in the sea, and only one Oil Platform can be built at each deposit.
 }
 
 STRING 19316
@@ -115931,10 +115883,28 @@ STRING 19331
 Binds a target unit so that it cannot move or attack and takes 50 damage per second. |nLasts .5 seconds on heroes, 15 on units.
 }
 
+STRING 19332
+// Units: o04R (Oil Rig), Tip (Tooltip - Basic)
+{
+Build Oil Rig
+}
+
 STRING 19333
 // Upgrades: Rews (Well Spring), Hotkey (Hotkey)
 {
 R
+}
+
+STRING 19334
+// Units: o06G (Oil Rig Constructor), Name (Name)
+{
+Oil Rig Constructor
+}
+
+STRING 19335
+// Units: o06G (Oil Rig Constructor), Tip (Tooltip - Basic)
+{
+Train Oil Rig Constructor
 }
 
 STRING 19336
@@ -116015,6 +115985,18 @@ STRING 19348
 Blasts enemy units with a wave of plague that deals 175 damage to the target, and 250 nova damage. Plague damage slows units' movement for 4 seconds.
 }
 
+STRING 19349
+// Units: o06G (Oil Rig Constructor), Ubertip (Tooltip - Extended)
+{
+A sturdy transport ship that can construct Oil Rigs.
+}
+
+STRING 19350
+// Abilities: A0MU (Build Oil Rig), EditorSuffix (Editor Suffix)
+{
+(Goblin - Oil Rig Constructor)
+}
+
 STRING 19351
 // Units: n0A0 (Heart of Azeroth (15gold/min)), Name (Name)
 {
@@ -116051,6 +116033,12 @@ STRING 19356
 Turn 18 has passed
 }
 
+STRING 19357
+// Abilities: A0MU (Build Oil Rig), Name (Name)
+{
+Build Oil Rig
+}
+
 STRING 19358
 // Units: e01P (Coral of Life), Name (Name)
 {
@@ -116063,6 +116051,12 @@ STRING 19359
 (illidan)
 }
 
+STRING 19360
+// Abilities: A0MU (Build Oil Rig), Tip (Tooltip - Normal)
+{
+Build Oil Rig
+}
+
 STRING 19361
 // Units: e01Q (Coral of Ages), Name (Name)
 {
@@ -116073,6 +116067,12 @@ STRING 19362
 // Units: e01Q (Coral of Ages), Tip (Tooltip - Basic)
 {
 Upgrade to Coral of Ages
+}
+
+STRING 19363
+// Abilities: A0MU (Build Oil Rig), Ubertip (Tooltip - Normal - Extended)
+{
+Builds an Oil Rig at the target location.|n|n|cff99b4d1Must be built near an Oil deposit in the sea, and only one Oil Rig can be built at each deposit.
 }
 
 STRING 19364
