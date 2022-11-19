@@ -14,8 +14,10 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       "The cursed fortress of Grim Batol was once a Dwarf hold. It is now used as a base of operation to threaten the safety of the town of Thelsamar. Conquer the fortress back in the name of Khaz Modan.",
       "ReplaceableTextures\\CommandButtons\\BTNDwarvenKeep.blp")
     {
-      AddObjective(new ObjectiveControlLegend(LegendIronforge.LegendThelsamar, true));
+      AddObjective(new ObjectiveControlLegend(LegendIronforge.LegendThelsamar, false));
       AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendGrimbatol, false));
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendIronforge.LegendThelsamar));
+      AddObjective(new ObjectiveExpire(600));
     }
 
     protected override string CompletionPopup =>

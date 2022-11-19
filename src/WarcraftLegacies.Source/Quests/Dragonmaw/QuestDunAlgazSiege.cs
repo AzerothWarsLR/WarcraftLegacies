@@ -17,7 +17,8 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
     {
       AddObjective(new ObjectiveLegendDead(LegendIronforge.LegendThelsamar));
       AddObjective(new ObjectiveControlLegend(LegendDragonmaw.LegendZaela, false));
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendGrimbatol, true));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendGrimbatol, false));
+      AddObjective(new ObjectiveExpire(600));
     }
 
     /// <inheritdoc />

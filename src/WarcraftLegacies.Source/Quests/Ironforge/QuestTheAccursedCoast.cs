@@ -16,6 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
     {
       AddObjective(new ObjectiveControlLegend(LegendIronforge.LegendMenethilHarbor, true));
       AddObjective(new ObjectiveLegendDead(LegendDragonmaw.DragonmawPort));
+      AddObjective(new ObjectiveExpire(600));
     }
 
     protected override string CompletionPopup =>
