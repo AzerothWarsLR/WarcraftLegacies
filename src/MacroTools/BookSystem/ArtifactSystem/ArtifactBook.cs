@@ -17,13 +17,10 @@ namespace MacroTools.BookSystem.ArtifactSystem
     /// <summary>
     /// Initializes a new instance of the <see cref="ArtifactBook"/> class.
     /// </summary>
-    public ArtifactBook() : base(0.65f, 0.37f, 0.015f, 0.02f)
+    public ArtifactBook() : base(0.65f, 0.37f, 0.015f, 0.02f, "Artifacts", new Point(0.4f, 0.38f), BlzGetFrameByName("UpperButtonBarQuestsButton", 0), true)
     {
       ArtifactManager.ArtifactRegistered += ArtifactCreated;
       AddPagesAndArtifacts();
-      Title = "Artifacts";
-      LauncherParent = BlzGetFrameByName("UpperButtonBarQuestsButton", 0);
-      Position = new Point(0.4f, 0.38f);
     }
 
     private void AddArtifact(Artifact artifact)
@@ -49,7 +46,7 @@ namespace MacroTools.BookSystem.ArtifactSystem
     {
       foreach (var page in Pages)
       {
-        page.Visible = false; //This avoid a crash to desktop when rerendering a Book that a player has open.
+        page.Visible = false; //This avoids a crash to desktop when rerendering a Book that a player has open.
         page.Dispose();
       }
 

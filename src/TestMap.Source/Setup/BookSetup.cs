@@ -16,7 +16,7 @@ namespace TestMap.Source.Setup
     public static void Setup()
     {
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) 
-        BookManager.Register(new PowerBook(player), player);
+        BookManager.Register(new PowerBook(player));
       BookManager.Register(new ArtifactBook());
     }
   }

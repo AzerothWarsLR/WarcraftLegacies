@@ -15,15 +15,6 @@ namespace MacroTools.BookSystem
     /// Determines whether or not the book is visible.
     /// </summary>
     public bool Visible { get; set; }
-    
-    /// <summary>
-    /// Fired when the exit button is clicked.
-    /// </summary>
-    public OnClickAction OnClickExitButton { set; }
-    
-    /// <summary>
-    ///    The name of the Book's launcher Button.
-    /// </summary>
-    public string Title { get; init; }
+        
   }
 }

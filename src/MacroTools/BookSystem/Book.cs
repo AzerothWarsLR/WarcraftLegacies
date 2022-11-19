@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using MacroTools.Extensions;
 using MacroTools.Frames;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -17,10 +18,11 @@ namespace MacroTools.BookSystem
     /// All <see cref="Page"/>s contained in the Book.
     /// </summary>
     protected readonly List<T> Pages = new();
-    
+
     private readonly Button _nextButton;
     private readonly Button _previousButton;
     private readonly Button _exitButton;
+    private readonly Button _launcherButton;
     private readonly TextFrame _title;
     private int _activePageIndex;
 
@@ -31,20 +33,39 @@ namespace MacroTools.BookSystem
     /// <param name="height">How tall the Book should be.</param>
     /// <param name="bottomButtonXOffset">How far the Previous and Next buttons should be from the left side of the Book.</param>
     /// <param name="bottomButtonYOffset">How far the Previous and Next buttons should be from the bottom side of the Book.</param>
-    protected Book(float width, float height, float bottomButtonXOffset, float bottomButtonYOffset) : base(
+    /// <param name="title"> The name of the Book's launcher Button.</param>
+    /// <param name="position">the book's center.</param>
+    /// <param name="launcherParent">framehandle used by the launcher button to position itself</param>
+    /// <param name="launcherButtonVisible"></param>
+    protected Book(float width, float height, float bottomButtonXOffset, float bottomButtonYOffset, string title, Point position, framehandle launcherParent, bool launcherButtonVisible) : base(
       "ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0)
     {
       Width = width;
       Height = height;
+     
+      Position = position;
+      LauncherParent = launcherParent;
       Visible = false;
+      _launcherButton = new Button("ScriptDialogButton", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0)
+      {
+        Width = launcherParent.GetWidth(),
+        Height = launcherParent.GetHeight(),
+        Text = title,
+        OnClick = OnClickLauncherButton,
+        Visible = launcherButtonVisible
+      };
+      _launcherButton.SetPoint(FRAMEPOINT_TOP, LauncherParent, FRAMEPOINT_BOTTOM, 0, 0);
 
+    
       _exitButton = new Button("ScriptDialogButton", this, 0)
       {
         Width = 0.03f,
         Height = 0.03f,
-        Text = "x"
+        Text = "x",
+        OnClick = OnClickExitButton     
       };
       _exitButton.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOPRIGHT, -0.015f, -0.015f);
+     
       AddFrame(_exitButton);
 
       _nextButton = new Button("ScriptDialogButton", this, 0)
@@ -71,36 +92,21 @@ namespace MacroTools.BookSystem
         bottomButtonYOffset);
       AddFrame(_previousButton);
 
-      _title = new TextFrame("ArtifactMenuTitle", this, 0)
+      _title = new TextFrame("BookMenuTitle", this, 0)
       {
-        Text = "Artifacts"
+        Text = title
       };
       _title.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOP, 0, -0.025f);
       AddFrame(_title);
     }
 
     /// <inheritdoc />
-    public OnClickAction OnClickExitButton
-    {
-      set => _exitButton.OnClick = value;
-    }
-    
-    /// <summary>
-    ///    The name of the Book's launcher Button.
-    /// </summary>
-    public string Title
-    {
-      init => _title.Text = value;
-      get => _title.Text;
-    }
-
-    /// <inheritdoc />
-    public framehandle LauncherParent { get; protected init; }
+    public framehandle LauncherParent { get; private init; }
 
     /// <summary>
     /// Determines the book's center.
     /// </summary>
-    protected Point Position
+    private Point Position
     {
       init => SetAbsPoint(FRAMEPOINT_CENTER, value.X, value.Y);
     }
@@ -122,11 +128,26 @@ namespace MacroTools.BookSystem
       }
     }
 
+    private void OnClickExitButton(player whichPlayer)
+    {
+      try
+      {
+        if (whichPlayer != GetLocalPlayer())
+          return;
+        Visible = false;
+        _launcherButton.Visible = true;
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex);
+      }
+    }
+
     private void OnClickNextButton(player whichPlayer)
     {
       try
       {
-        if (GetLocalPlayer() == whichPlayer) 
+        if (GetLocalPlayer() == whichPlayer)
           ActivePageIndex++;
       }
       catch (Exception ex)
@@ -139,7 +160,7 @@ namespace MacroTools.BookSystem
     {
       try
       {
-        if (GetLocalPlayer() == whichPlayer) 
+        if (GetLocalPlayer() == whichPlayer)
           ActivePageIndex--;
       }
       catch (Exception ex)
@@ -148,18 +169,19 @@ namespace MacroTools.BookSystem
       }
     }
 
-    private void OpenFirstPage(player whichPlayer)
+    private void OnClickLauncherButton(player whichPlayer)
     {
       try
       {
         if (whichPlayer != GetLocalPlayer())
           return;
         Visible = true;
+         _launcherButton.Visible = false;
         foreach (var page in Pages)
         {
           page.Visible = false;
         }
-
+       
         Pages.First().Visible = true;
         _activePageIndex = 0;
         RefreshNavigationButtonVisiblity();

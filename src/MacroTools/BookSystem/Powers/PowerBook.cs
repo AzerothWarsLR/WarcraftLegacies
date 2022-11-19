@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
@@ -13,18 +14,17 @@ namespace MacroTools.BookSystem.Powers
   {
     private Faction? _trackedFaction;
     private readonly Dictionary<Power, PowerPage> _pagesByPower = new();
-    
+
     /// <summary>
     /// Initializes a new instance of the <see cref="PowerBook"/> class.
     /// </summary>
     /// <param name="trackedPlayer">The player to show <see cref="Power"/>s for.</param>
-    public PowerBook(player trackedPlayer) : base(0.3f, 0.39f, 0.02f, 0.015f)
+    public PowerBook(player trackedPlayer) : base(0.3f, 0.39f, 0.02f, 0.015f, "Powers", new Point(0.4f, 0.36f), 
+      BlzGetFrameByName("UpperButtonBarMenuButton", 0), 
+      trackedPlayer == null || trackedPlayer == GetLocalPlayer())
     {
       var firstPage = AddPage();
       firstPage.Visible = true;
-      Title = "Powers";
-      LauncherParent = BlzGetFrameByName("UpperButtonBarMenuButton", 0);
-      Position = new Point(0.4f, 0.36f);
       TrackedFaction = trackedPlayer.GetFaction();
       trackedPlayer.GetPlayerData().ChangedFaction += OnPlayerChangedFaction;
     }
@@ -42,18 +42,16 @@ namespace MacroTools.BookSystem.Powers
           _trackedFaction.PowerRemoved -= OnFactionRemovePower;
           RemoveAllPowers(_trackedFaction);
         }
-        
-        if (_trackedFaction == value) 
+
+        if (_trackedFaction == value)
           return;
         _trackedFaction = value;
         if (_trackedFaction != null)
         {
           _trackedFaction.PowerAdded += OnFactionAddPower;
           _trackedFaction.PowerRemoved += OnFactionRemovePower;
+          AddAllPowers(_trackedFaction);
         }
-
-        if (value != null) 
-          AddAllPowers(value);
       }
     }
 
@@ -72,12 +70,32 @@ namespace MacroTools.BookSystem.Powers
 
     private void OnFactionRemovePower(object? sender, FactionPowerEventArgs factionPowerEventArgs)
     {
-      RemovePower(factionPowerEventArgs.Power);
+      ReRender();
+    }
+
+    private void ReRender()
+    {
+      foreach (var page in Pages)
+      {
+        page.Visible = false; //This avoids a crash to desktop when rerendering a Book that a player has open.
+        page.Dispose();
+      }
+      _pagesByPower.Clear();
+      Pages.Clear();
+      AddPagesAndPowers();
+    }
+
+    private void AddPagesAndPowers()
+    {
+      var firstPage = AddPage();
+      firstPage.Visible = true;
+      if (_trackedFaction != null)
+        AddAllPowers(_trackedFaction);
     }
 
     private void RemoveAllPowers(Faction faction)
     {
-      foreach (var power in faction.GetAllPowers()) 
+      foreach (var power in faction.GetAllPowers())
         RemovePower(power);
     }
 

@@ -1,5 +1,6 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Augments;
 using MacroTools.Extensions;
 using MacroTools.QuestSystem;
@@ -518,7 +519,8 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public IEnumerable<Power> GetAllPowers()
     {
-      foreach (var power in _powers) yield return power;
+      foreach (var power in _powers.OrderBy(p => p.Name)) 
+        yield return power;
     }
 
     private void DistributeExperience(IEnumerable<player> playersToDistributeTo)
