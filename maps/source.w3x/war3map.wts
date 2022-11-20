@@ -1300,6 +1300,12 @@ STRING 216
 The oilstained crown of Kezan.
 }
 
+STRING 217
+// Units: o05K (Pillager), Ubertip (Tooltip - Extended)
+{
+Savage Orc Mounted Warrior.|n|cfff5962dAbilities:|R Charge, Demolish|R|n|cfff5962d|n|cffffcc00Attacks land units.|r
+}
+
 STRING 218
 // Units: o03V (Goblin Dock), Ubertip (Tooltip - Extended)
 {
@@ -1388,6 +1394,12 @@ STRING 232
 // Units: h08N (Dreadguard), Ubertip (Tooltip - Extended)
 {
 Elite Commander of the Forsaken.|n|cfff5962dAbilities: |RCharge, Unholy Plating, Elite Combat Experience |n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 233
+// Units: o05K (Pillager), Name (Name)
+{
+Pillager
 }
 
 STRING 234
@@ -3082,6 +3094,12 @@ STRING 517
 // Units: h021 (Watcher), Ubertip (Tooltip - Extended)
 {
 Versatile Warriors of Zandalar.|n|cfff5962dAbilities:|R Net, Defend|n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 518
+// Units: o05K (Pillager), Tip (Tooltip - Basic)
+{
+Train Pillager
 }
 
 STRING 519
@@ -20962,9 +20980,9 @@ STRING 3496
 }
 
 STRING 3497
-// Units: o067 (War Camp), Ubertip (Tooltip - Extended)
+// Abilities: A0XB (Decapitate), Researchtip (Tooltip - Learn)
 {
-Camp of the crazed Twilight Hammer warriors.|n|cfff5962dTrains:|R Warrior, Spearthrower, Skull Catapult
+Learn Decapitate - [|cffffcc00Level %d|r]
 }
 
 STRING 3498
@@ -30024,7 +30042,7 @@ STRING 5006
 }
 
 STRING 5007
-// Units: o05K (Dragonmaw Warrior), Hotkey (Hotkey)
+// Units: o05K (Pillager), Hotkey (Hotkey)
 {
 Q
 }
@@ -31560,7 +31578,7 @@ Galen has always been an adept commander and his skills give his armies increase
 }
 
 STRING 5263
-// Units: o05L (Spearthrower), Hotkey (Hotkey)
+// Units: o05L (Dragon Hunter), Hotkey (Hotkey)
 {
 W
 }
@@ -50125,10 +50143,34 @@ STRING 8353
 Fires an enchanted arrow at an enemy target, dealing 375 damage and stunning the target for 7 seconds. Lasts 2 seconds on heroes.
 }
 
+STRING 8354
+// Units: o05L (Dragon Hunter), Ubertip (Tooltip - Extended)
+{
+Specialized marksman, has a particularly strong attack against air.|n|cfff5962dAbilities:|R Slow Poison|n|cfff5962d|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 8355
 // Abilities: A0YD (Parasite), Hotkey (Hotkey - Normal)
 {
 Q
+}
+
+STRING 8356
+// Units: o05L (Dragon Hunter), Name (Name)
+{
+Dragon Hunter
+}
+
+STRING 8357
+// Units: o05L (Dragon Hunter), Tip (Tooltip - Basic)
+{
+Train Dragon Hunter
+}
+
+STRING 8358
+// Units: o067 (War Camp), Ubertip (Tooltip - Extended)
+{
+Camp of the crazed Twilight Hammer warriors.|n|cfff5962dTrains:|R Warrior, Dragon Hunter, Skull Catapult
 }
 
 STRING 8359
@@ -50996,7 +51038,7 @@ Q
 }
 
 STRING 8503
-// Units: o05K (Dragonmaw Warrior), EditorSuffix (Name - Editor Suffix)
+// Units: o05K (Pillager), EditorSuffix (Name - Editor Suffix)
 {
 (dragonmaw)
 }
@@ -106225,7 +106267,7 @@ The closest 40 enemies are forced to attack this unit. 14 pulses.
 }
 
 STRING 17715
-// Units: o05L (Spearthrower), EditorSuffix (Name - Editor Suffix)
+// Units: o05L (Dragon Hunter), EditorSuffix (Name - Editor Suffix)
 {
 (dragonmaw)
 }
@@ -108622,6 +108664,12 @@ STRING 18113
 (Scarlet)
 }
 
+STRING 18114
+// Abilities: A0XB (Decapitate), EditorSuffix (Editor Suffix)
+{
+(Zaela)
+}
+
 STRING 18115
 // Abilities: A0X1 (Flame Shield), Hotkey (Hotkey - Normal)
 {
@@ -109276,6 +109324,12 @@ STRING 18223
 Build Kezan Trading Center
 }
 
+STRING 18224
+// Abilities: A0XB (Decapitate), Name (Name)
+{
+Decapitate
+}
+
 STRING 18225
 // Units: E01O (Champion of the Uncrowned), Name (Name)
 {
@@ -109286,12 +109340,6 @@ STRING 18226
 // Abilities: A0WF (Herald of Destruction), Ubertip (Tooltip - Normal - Extended)
 {
 Grants <A0WF,DataA2> bonus armor, <A0WF,DataB2> bonus hit points, <A0WF,DataC2> bonus damage and spell immunity. |nLasts <A0WF,Dur2> seconds.
-}
-
-STRING 18227
-// Units: o05K (Dragonmaw Warrior), Ubertip (Tooltip - Extended)
-{
-Disciplined Orc Warriors.|n|cfff5962dAbilities:|R Charge|R|n|cfff5962d|n|cffffcc00Attacks land units.|r
 }
 
 STRING 18228
@@ -109559,18 +109607,6 @@ STRING 18271
 Provides Daelin with the resources required to launch an incursion into Kalimdor.|n|n|cffffcc00Required to complete the quest Theramore.
 }
 
-STRING 18272
-// Units: o05K (Dragonmaw Warrior), Name (Name)
-{
-Dragonmaw Warrior
-}
-
-STRING 18273
-// Units: o05K (Dragonmaw Warrior), Tip (Tooltip - Basic)
-{
-Train Dragonmaw Warrior
-}
-
 STRING 18274
 // Units: o05M (Dragon Rider), EditorSuffix (Name - Editor Suffix)
 {
@@ -109581,24 +109617,6 @@ STRING 18275
 // Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
-}
-
-STRING 18276
-// Units: o05L (Spearthrower), Ubertip (Tooltip - Extended)
-{
-Versatile marksmen and a true believer of the Horde.|n|cfff5962dAbilities:|R Slow Poison|n|cfff5962d|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 18277
-// Units: o05L (Spearthrower), Name (Name)
-{
-Spearthrower
-}
-
-STRING 18278
-// Units: o05L (Spearthrower), Tip (Tooltip - Basic)
-{
-Train Spearthrower
 }
 
 STRING 18279
@@ -114343,6 +114361,12 @@ STRING 19068
 Unholy Armor
 }
 
+STRING 19069
+// Abilities: A0XB (Decapitate), Tip (Tooltip - Normal)
+{
+Decapitate
+}
+
 STRING 19070
 // Units: o04I (Battlemaster), Ubertip (Tooltip - Extended)
 {
@@ -114542,7 +114566,7 @@ Farahlon (10gold/min)
 }
 
 STRING 19103
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A0XB (Decapitate), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -115303,7 +115327,7 @@ Boat construction facility for the Alliance.|n|cfff5962dTrains:|R Alliance Trans
 }
 
 STRING 19230
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A0XB (Decapitate), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -115426,6 +115450,12 @@ STRING 19250
 // Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
 {
 Q
+}
+
+STRING 19251
+// Abilities: A0XB (Decapitate), Tip (Tooltip - Normal)
+{
+Decapitate
 }
 
 STRING 19252
@@ -115739,6 +115769,12 @@ STRING 19303
 Hunt Aura
 }
 
+STRING 19304
+// Abilities: A0XB (Decapitate), Tip (Tooltip - Normal)
+{
+Decapitate
+}
+
 STRING 19305
 // Abilities: A0Z7 (Earth's Grace), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -115799,14 +115835,26 @@ STRING 19314
 Earth's Grace
 }
 
+STRING 19315
+// Abilities: A0XB (Decapitate), Ubertip (Tooltip - Normal - Extended)
+{
+The hero unleashes a mortal axe strike, dealing 750 damage after a short delay.
+}
+
 STRING 19316
-// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
 
+STRING 19317
+// Abilities: A0XB (Decapitate), Ubertip (Tooltip - Normal - Extended)
+{
+The hero unleashes a mortal axe strike, dealing 1250 damage after a short delay.
+}
+
 STRING 19318
-// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
@@ -115896,7 +115944,7 @@ Build Oil Rig
 }
 
 STRING 19333
-// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
 {
 R
 }
@@ -115989,6 +116037,12 @@ STRING 19348
 // Abilities: A0Z9 (Bile Shot), Ubertip (Tooltip - Normal - Extended)
 {
 Blasts enemy units with a wave of plague that deals 175 damage to the target, and 250 nova damage. Plague damage slows units' movement for 4 seconds.
+}
+
+STRING 19349
+// Abilities: A0XB (Decapitate), Ubertip (Tooltip - Normal - Extended)
+{
+The hero unleashes a mortal axe strike, dealing 2000 damage after a short delay.
 }
 
 STRING 19350
@@ -116129,6 +116183,12 @@ STRING 19373
 Build Coral of Lore
 }
 
+STRING 19374
+// Abilities: A0XB (Decapitate), Researchubertip (Tooltip - Learn - Extended)
+{
+The hero unleashes a mortal axe strike after a short duration.|n|n|cffffcc00Level 1|r - 750 damage. |n|cffffcc00Level 2|r - 1250 damage. |n|cffffcc00Level 3|r - 2000 damage.
+}
+
 STRING 19375
 // Units: e01U (Coral of Lore), Name (Name)
 {
@@ -116145,6 +116205,12 @@ STRING 19377
 // Units: e01V (Coral of Wind), Tip (Tooltip - Basic)
 {
 Build Coral of Wind
+}
+
+STRING 19378
+// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+{
+R
 }
 
 STRING 19379
@@ -116241,6 +116307,12 @@ STRING 19394
 // Abilities: A07K (Reincarnation), EditorSuffix (Editor Suffix)
 {
 (Illidan)
+}
+
+STRING 19395
+// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+{
+R
 }
 
 STRING 19397
