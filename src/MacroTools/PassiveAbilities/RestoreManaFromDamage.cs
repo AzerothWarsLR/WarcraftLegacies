@@ -7,7 +7,7 @@ namespace MacroTools.PassiveAbilities
   /// <summary>
   /// The unit with this ability gains mana based on the damage they deal.
   /// </summary>
-  public sealed class StealManaOnDamage : PassiveAbility, IAppliesEffectOnDamage
+  public sealed class RestoreManaFromDamage : PassiveAbility, IAppliesEffectOnDamage
   {
     private readonly int _abilityTypeId;
 
@@ -22,11 +22,11 @@ namespace MacroTools.PassiveAbilities
     public LeveledAbilityField<float> ManaPerDamage { get; init; } = new();
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="StealManaOnDamage"/> class.
+    /// Initializes a new instance of the <see cref="RestoreManaFromDamage"/> class.
     /// </summary>
     /// <param name="unitTypeId"><inheritdoc /></param>
     /// <param name="abilityTypeId">The Warcraft 3 ability representing this instance.</param>
-    public StealManaOnDamage(int unitTypeId, int abilityTypeId) : base(unitTypeId)
+    public RestoreManaFromDamage(int unitTypeId, int abilityTypeId) : base(unitTypeId)
     {
       _abilityTypeId = abilityTypeId;
     }

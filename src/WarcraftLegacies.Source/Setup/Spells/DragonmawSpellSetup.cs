@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         PercentageDamage = 0.06f
       });
 
-      PassiveAbilityManager.Register(new StealManaOnDamage(Constants.UNIT_O06F_BLOOD_WARRIOR_DRAGONMAW, Constants.ABILITY_A0FR_TRANSFUSION_GORFAX)
+      PassiveAbilityManager.Register(new RestoreManaFromDamage(Constants.UNIT_O06F_BLOOD_WARRIOR_DRAGONMAW, Constants.ABILITY_A0FR_TRANSFUSION_GORFAX)
       {
         ManaPerDamage = new LeveledAbilityField<float>
         {
