@@ -80220,7 +80220,7 @@ STRING 13365
 }
 
 STRING 13366
-// Buffs/Effects: B058 (Vitality Aura), Bufftip (Tooltip)
+// Abilities: A0ZC (Vitality Aura), Name (Name)
 {
 Vitality Aura
 }
@@ -80232,7 +80232,7 @@ This unit is under the effects of Vitality Aura; it has increased hit point rege
 }
 
 STRING 13368
-// Buffs/Effects: B058 (Vitality Aura), EditorName (Name (Editor Only))
+// Abilities: A0ZC (Vitality Aura), Tip (Tooltip - Normal)
 {
 Vitality Aura
 }
@@ -109342,6 +109342,12 @@ STRING 18226
 Grants <A0WF,DataA2> bonus armor, <A0WF,DataB2> bonus hit points, <A0WF,DataC2> bonus damage and spell immunity. |nLasts <A0WF,Dur2> seconds.
 }
 
+STRING 18227
+// Units: o06H (Dragonmaw Battle Standard), EditorSuffix (Name - Editor Suffix)
+{
+(Dragonmaw)(Level 1)
+}
+
 STRING 18228
 // Abilities: A0FR (Transfusion), Ubertip (Tooltip - Normal - Extended)
 {
@@ -109607,6 +109613,18 @@ STRING 18271
 Provides Daelin with the resources required to launch an incursion into Kalimdor.|n|n|cffffcc00Required to complete the quest Theramore.
 }
 
+STRING 18272
+// Units: o06H (Dragonmaw Battle Standard), Name (Name)
+{
+Dragonmaw Battle Standard
+}
+
+STRING 18273
+// Units: o06I (Dragonmaw Battle Standard), EditorSuffix (Name - Editor Suffix)
+{
+(Dragonmaw)(Level 2)
+}
+
 STRING 18274
 // Units: o05M (Dragon Rider), EditorSuffix (Name - Editor Suffix)
 {
@@ -109617,6 +109635,24 @@ STRING 18275
 // Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
+}
+
+STRING 18276
+// Units: o06I (Dragonmaw Battle Standard), Name (Name)
+{
+Dragonmaw Battle Standard
+}
+
+STRING 18277
+// Units: o06J (Dragonmaw Battle Standard), EditorSuffix (Name - Editor Suffix)
+{
+(Dragonmaw)(Level 3)
+}
+
+STRING 18278
+// Units: o06J (Dragonmaw Battle Standard), Name (Name)
+{
+Dragonmaw Battle Standard
 }
 
 STRING 18279
@@ -110755,7 +110791,7 @@ Q
 }
 
 STRING 18468
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A0ZB (Devotion Aura), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -111229,7 +111265,7 @@ Q
 }
 
 STRING 18547
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -112820,7 +112856,7 @@ W
 }
 
 STRING 18812
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -113210,7 +113246,7 @@ Q
 }
 
 STRING 18877
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -113810,13 +113846,13 @@ Q
 }
 
 STRING 18977
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 18978
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -115842,7 +115878,7 @@ The hero unleashes a mortal axe strike, dealing 750 damage after a short delay.
 }
 
 STRING 19316
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A0ZA (Dragonmaw Battle Standard), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -115854,7 +115890,7 @@ The hero unleashes a mortal axe strike, dealing 1250 damage after a short delay.
 }
 
 STRING 19318
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A0ZA (Dragonmaw Battle Standard), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -115944,7 +115980,7 @@ Build Oil Rig
 }
 
 STRING 19333
-// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
@@ -116165,6 +116201,12 @@ STRING 19369
 Build Coral of War
 }
 
+STRING 19370
+// Abilities: A0ZA (Dragonmaw Battle Standard), EditorSuffix (Editor Suffix)
+{
+(Dragonmaw)
+}
+
 STRING 19371
 // Units: e01T (Coral of War), Name (Name)
 {
@@ -116208,7 +116250,7 @@ Build Coral of Wind
 }
 
 STRING 19378
-// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
@@ -116310,9 +116352,15 @@ STRING 19394
 }
 
 STRING 19395
-// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
 {
 R
+}
+
+STRING 19396
+// Abilities: A0ZA (Dragonmaw Battle Standard), Name (Name)
+{
+Dragonmaw Battle Standard
 }
 
 STRING 19397
@@ -116321,10 +116369,28 @@ STRING 19397
 D
 }
 
+STRING 19398
+// Abilities: A0ZA (Dragonmaw Battle Standard), Researchtip (Tooltip - Learn)
+{
+Learn Dragonmaw Battle Standard - [|cffffcc00Level %d|r]
+}
+
 STRING 19399
 // Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 S
+}
+
+STRING 19400
+// Abilities: A0ZA (Dragonmaw Battle Standard), Researchubertip (Tooltip - Learn - Extended)
+{
+Places a battle standard, giving bonus regeneration and armor to friendly units next to the banner.|nLasts 25 seconds. |n|n|cffffcc00Level 1|r - 750 hit points gives a 50% regeneration increase and 10 armor. |n|cffffcc00Level 2|r - 950 hit points gives a 100% regeneration increase and 10 armor.|n|cffffcc00Level 3|r - 1250 hit points gives a 150% regeneration increase and 10 armor.
+}
+
+STRING 19401
+// Abilities: A0ZA (Dragonmaw Battle Standard), Tip (Tooltip - Normal)
+{
+Dragonmaw Battle Standard - [|cffffcc00Level 1|r]
 }
 
 STRING 19402
@@ -116333,9 +116399,165 @@ STRING 19402
 A
 }
 
+STRING 19403
+// Abilities: A0ZA (Dragonmaw Battle Standard), Tip (Tooltip - Normal)
+{
+Dragonmaw Battle Standard - [|cffffcc00Level 2|r]
+}
+
+STRING 19404
+// Abilities: A0ZA (Dragonmaw Battle Standard), Tip (Tooltip - Normal)
+{
+Dragonmaw Battle Standard - [|cffffcc00Level 3|r]
+}
+
+STRING 19405
+// Abilities: A0ZA (Dragonmaw Battle Standard), Tip (Tooltip - Normal)
+{
+Sentinel Standard |cffffcc00(E)|r - [|cffffcc00Level 4|r]
+}
+
 STRING 19406
 // Units: e01R (Coral of Eternity), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Slaves, Royal Guard
+}
+
+STRING 19407
+// Abilities: A0ZA (Dragonmaw Battle Standard), Ubertip (Tooltip - Normal - Extended)
+{
+Places a battle standard, giving a 50%  bonus regeneration and 10 armor to friendly units next to the banner. Has a range of 600.|nLasts 25 seconds
+}
+
+STRING 19408
+// Abilities: A0ZA (Dragonmaw Battle Standard), Ubertip (Tooltip - Normal - Extended)
+{
+Places a battle standard, giving a 100%  bonus regeneration and 10 armor to friendly units next to the banner. Has a range of 600.|nLasts 25 seconds
+}
+
+STRING 19409
+// Abilities: A0ZA (Dragonmaw Battle Standard), Ubertip (Tooltip - Normal - Extended)
+{
+Places a battle standard, giving a 150%  bonus regeneration and 10 armor to friendly units next to the banner. Has a range of 600.|nLasts 25 seconds
+}
+
+STRING 19410
+// Abilities: A0ZA (Dragonmaw Battle Standard), Ubertip (Tooltip - Normal - Extended)
+{
+Places a battle standard, giving 30% bouns damage to friendly units next to the banner. Has a range of 300.|nLasts <AOsw,Dur4> seconds
+}
+
+STRING 19411
+// Abilities: A0ZB (Devotion Aura), EditorSuffix (Editor Suffix)
+{
+(Battle Standard)
+}
+
+STRING 19412
+// Abilities: A0ZB (Devotion Aura), Researchubertip (Tooltip - Learn - Extended)
+{
+Gives additional armor to nearby friendly units. |n|n|cffffcc00Level 1|r - Increases base armor by 1.5. |n|cffffcc00Level 2|r - Increases base armor by 3. |n|cffffcc00Level 3|r - Increases base armor by 4.5. |n|cffffcc00Level 4|r - Increases base armor by 6.
+}
+
+STRING 19413
+// Abilities: A0ZB (Devotion Aura), Tip (Tooltip - Normal)
+{
+Devotion Aura
+}
+
+STRING 19414
+// Abilities: A0ZB (Devotion Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Gives 4 additional armor to nearby friendly units.
+}
+
+STRING 19415
+// Abilities: A0ZC (Vitality Aura), EditorSuffix (Editor Suffix)
+{
+(Dragonmaw Standard Level 1)
+}
+
+STRING 19416
+// Abilities: A0ZC (Vitality Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Increases nearby friendly units' hit point regeneration rate by 50%.
+}
+
+STRING 19417
+// Abilities: A0ZD (Vitality Aura), EditorSuffix (Editor Suffix)
+{
+(Dragonmaw Standard Level 2)
+}
+
+STRING 19418
+// Abilities: A0ZD (Vitality Aura), Name (Name)
+{
+Vitality Aura
+}
+
+STRING 19419
+// Abilities: A0ZD (Vitality Aura), Tip (Tooltip - Normal)
+{
+Vitality Aura
+}
+
+STRING 19420
+// Abilities: A0ZD (Vitality Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Increases nearby friendly units' hit point regeneration rate by 100%.
+}
+
+STRING 19421
+// Abilities: A0ZE (Vitality Aura), EditorSuffix (Editor Suffix)
+{
+(Dragonmaw Standard Level 3)
+}
+
+STRING 19422
+// Abilities: A0ZE (Vitality Aura), Name (Name)
+{
+Vitality Aura
+}
+
+STRING 19423
+// Abilities: A0ZE (Vitality Aura), Tip (Tooltip - Normal)
+{
+Vitality Aura
+}
+
+STRING 19424
+// Abilities: A0ZE (Vitality Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Increases nearby friendly units' hit point regeneration rate by 200%.
+}
+
+STRING 19425
+// Buffs/Effects: B058 (Vitality Aura), Bufftip (Tooltip)
+{
+Vitality Aura
+}
+
+STRING 19426
+// Buffs/Effects: B058 (Vitality Aura), EditorName (Name (Editor Only))
+{
+Vitality Aura
+}
+
+STRING 19427
+// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+{
+R
+}
+
+STRING 19428
+// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+{
+R
+}
+
+STRING 19429
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+{
+E
 }
 
