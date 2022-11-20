@@ -21,8 +21,8 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       Dragonmaw = new Faction("Dragonmaw", PLAYER_COLOR_WHEAT, "|C00FFFC01",
         "ReplaceableTextures\\CommandButtons\\BTNRedDragon.blp")
       {
-        StartingGold = 150,
-        StartingLumber = 350,
+        StartingGold = 250,
+        StartingLumber = 500,
         IntroText = @"You are playing as the Fragmented |cffe4bc00Dragonmaw Clan.
                     |r
 Your current situation is dire, the Dwarves of Ironforge will soon attack whatever is left of your clan.
