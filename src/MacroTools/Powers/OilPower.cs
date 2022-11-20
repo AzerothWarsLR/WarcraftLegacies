@@ -109,7 +109,6 @@ namespace MacroTools.Powers
         };
         HazardSystem.Add(oilPool);
         _oilPools.Add(oilPool);
-        //PingMinimapEx(randomPoint.X, randomPoint.Y, 120, 255, 255, 255, false);
       }
     }
 
