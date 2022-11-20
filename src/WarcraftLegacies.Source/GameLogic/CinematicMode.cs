@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.GameLogic
       EnableUserControl(true);
       ForceCinematicSubtitles(false);
       SetMapMusic("music", true, 0);
-      SetCameraField(CAMERA_FIELD_TARGET_DISTANCE, 0.4f, 1f);
+      SetCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400f, 1f);
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         player.GetFaction()?.SetObjectLevel(Constants.UPGRADE_R068_INTRO_FINISHED, 1);
 
