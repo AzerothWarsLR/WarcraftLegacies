@@ -30,7 +30,13 @@ namespace MacroTools.Buffs
     }
 
     /// <inheritdoc />
-    public override void OnApply() => _oilPool.OilPower.Income += OilHarvestedPerSecond;
+    public override void OnApply()
+    {
+      _oilPool.OilPower.Income += OilHarvestedPerSecond;
+      Target
+        .SetMaximumMana(_oilPool.OilAmount)
+        .SetMana(_oilPool.OilAmount);
+    }
 
     /// <inheritdoc />
     public override void OnDispose() => _oilPool.OilPower.Income -= OilHarvestedPerSecond;
@@ -38,12 +44,18 @@ namespace MacroTools.Buffs
     /// <inheritdoc />
     public override void OnTick()
     {
-      if (!_oilPool.Active && _oilPool.OilAmount > OilHarvestedPerSecond) 
-        return;
-      _oilPool.OilAmount -= OilHarvestedPerSecond;
-      _oilPool.OilPower.Amount += OilHarvestedPerSecond;
-      _oilPool.Dispose();
-      Caster.Kill();
+      if (!_oilPool.Active || _oilPool.OilAmount <= OilHarvestedPerSecond)
+      {
+        Caster.Kill();
+        _oilPool.OilAmount -= OilHarvestedPerSecond;
+        _oilPool.OilPower.Amount += OilHarvestedPerSecond;
+        _oilPool.Dispose();
+      }
+      else
+      {
+        _oilPool.OilAmount -= OilHarvestedPerSecond;
+        Target.SetMana(_oilPool.OilAmount);
+      }
     }
   }
 }

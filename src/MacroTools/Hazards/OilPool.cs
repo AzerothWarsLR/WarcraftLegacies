@@ -20,7 +20,7 @@ namespace MacroTools.Hazards
     private readonly effect _effectCircle;
 
     /// <inheritdoc />
-    public override bool Active { get; set; }
+    public override bool Active { get; set; } = true;
 
     /// <summary>
     /// The amount of oil left in the pool.
