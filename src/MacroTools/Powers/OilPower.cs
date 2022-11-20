@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using MacroTools.FactionSystem;
 using MacroTools.Hazards;
 using MacroTools.SpellSystem;
@@ -19,6 +20,7 @@ namespace MacroTools.Powers
     private float _income;
     private OilIncomePeriodicAction? _oilIncomePeriodicAction;
     private readonly List<OilPool> _oilPools = new();
+    private List<player> _owners = new();
 
     /// <summary>
     /// Fired when the amount of oil stored changes.
@@ -77,6 +79,7 @@ namespace MacroTools.Powers
       OilIncomePeriodicTrigger.Add(_oilIncomePeriodicAction);
       GameTime.TurnEnded += (_, _) => GenerateOilPools();
       GenerateOilPools();
+      _owners.Add(whichPlayer);
     }
 
     /// <inheritdoc/>
@@ -85,6 +88,7 @@ namespace MacroTools.Powers
       if (_oilIncomePeriodicAction == null) return;
       _oilIncomePeriodicAction.Active = false;
       _oilIncomePeriodicAction = null;
+      _owners.Add(whichPlayer);
     }
 
     private void GenerateOilPools()
@@ -101,7 +105,7 @@ namespace MacroTools.Powers
       for (var i = _oilPools.Count; i < OilPoolMax; i++)
       {
         var randomPoint = GetRandomPointAtSea();
-        var oilPool = new OilPool(randomPoint, "Tar Pool.mdx", this)
+        var oilPool = new OilPool(_owners.First(), randomPoint, "Tar Pool.mdx", this)
         {
           Active = true,
           Duration = float.MaxValue,
