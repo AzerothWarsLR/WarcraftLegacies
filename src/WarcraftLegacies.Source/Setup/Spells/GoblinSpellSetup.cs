@@ -3,6 +3,7 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Mechanics.Goblins;
 using WarcraftLegacies.Source.Setup.FactionSetup;
+using WarcraftLegacies.Source.Spells;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -52,6 +53,11 @@ namespace WarcraftLegacies.Source.Setup.Spells
       });
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_H04Z_KEZAN_OIL_SUPPLY_GOBLIN));
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_NTIN_CHIEF_ENGINEER_GOBLIN));
+
+      SpellSystem.Register(new PingOilDeposits(Constants.ABILITY_A0PJ_LOCATE_OIL_GOBLIN_OIL_RIG_CONSTRUCTOR)
+      {
+        Duration = 10
+      });
     }
   }
 }
