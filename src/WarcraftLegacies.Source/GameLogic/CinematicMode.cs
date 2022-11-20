@@ -10,39 +10,29 @@ namespace WarcraftLegacies.Source.GameLogic
   /// </summary>
   public static class CinematicMode
   {
-    private static weathereffect? _illidanRain;
-    private static weathereffect? _illidanWind;
-    private static weathereffect? _illidanRain2;
-    private static weathereffect? _illidanWind2;
     private static timer? _timer;
     private static CinematicState _state = CinematicState.Inactive;
     
-    private static void Cleanup()
+    private static void End()
     {
       if (_state != CinematicState.Active)
-      {
         return;
-      }
-      
+
       FogEnable(true);
 
+      ResetToGameCamera(1);
+      ShowInterface(true, 2);
+      EnableUserControl(true);
+      ForceCinematicSubtitles(false);
+      SetMapMusic("music", true, 0);
+      SetCameraField(CAMERA_FIELD_TARGET_DISTANCE, 0.4f, 1f);
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-      {
-        SetMapMusic("music", true, 0);
         player.GetFaction()?.SetObjectLevel(Constants.UPGRADE_R068_INTRO_FINISHED, 1);
-        player.ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400, 1);
-        ForceCinematicSubtitles(false);
-        if (GetLocalPlayer() != player) continue;
-        ResetToGameCamera(1);
-        ShowInterface(true, 2);
-        EnableUserControl(true);
-      }
-      
+
       VolumeGroupReset();
       VolumeGroupSetVolume(SOUND_VOLUMEGROUP_AMBIENTSOUNDS, 0.4f);
 
       DestroyTimer(_timer);
-
       _state = CinematicState.Finished;
     }
 
@@ -63,13 +53,17 @@ namespace WarcraftLegacies.Source.GameLogic
     public static void EndEarly()
     {
       DestroyTimer(_timer);
-      Cleanup();
+      End();
     }
     
+    /// <summary>
+    /// Initiates cinematic mode.
+    /// </summary>
+    /// <param name="timeout">How long cinematic mode should last.</param>
     public static void Start(float timeout)
     {
       _timer = CreateTimer();
-      TimerStart(_timer, timeout, false, Cleanup);
+      TimerStart(_timer, timeout, false, End);
 
       var musicTimer = CreateTimer();
       TimerStart(musicTimer, 2.1f, false, PlayFactionMusic);
@@ -78,8 +72,6 @@ namespace WarcraftLegacies.Source.GameLogic
       FogMaskEnable(false);
       
       ForsakenSetup.Forsaken?.Player?.SetupCamera(Cameras.Forsaken1, true, 0);
-      //Todo: uncomment below
-      //NzothSetup.Nzoth.Player.SetupCamera(Cameras.Nazsjatar1, true, 0); 
 
       Player(21).ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400, 1.00f);
       Player(19).ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400, 1.00f);
@@ -89,24 +81,10 @@ namespace WarcraftLegacies.Source.GameLogic
       VolumeGroupSetVolume(SOUND_VOLUMEGROUP_AMBIENTSOUNDS, 0);
       VolumeGroupSetVolume(SOUND_VOLUMEGROUP_UI, 0);
       VolumeGroupSetVolume(SOUND_VOLUMEGROUP_SPELLS, 0.4f);
-      
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-      {
-        if (GetLocalPlayer() == player)
-        {
-          ShowInterface(false, 0.5f);
-        }
-      }
 
+      ShowInterface(false, 0.5f);
       ForceCinematicSubtitles(true);
-
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-      {
-        if (GetLocalPlayer() == player)
-        {
-          EnableUserControl(false);
-        }
-      }
+      EnableUserControl(false);
 
       _state = CinematicState.Active;
     }
