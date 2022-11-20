@@ -13,7 +13,8 @@ namespace MacroTools.Hazards
   public sealed class OilPool : Hazard
   {
     private readonly OilPower _oilPower;
-    private readonly effect _effect;
+    private readonly effect _effectOil;
+    private readonly effect _effectCircle;
     
     /// <inheritdoc />
     public override bool Active { get; set; }
@@ -32,12 +33,20 @@ namespace MacroTools.Hazards
     public OilPool(Point position, string effectPath, OilPower oilPower) : base(null, position.X, position.Y)
     {
       _oilPower = oilPower;
-      _effect = AddSpecialEffect(effectPath, position.X, position.Y)
+      _effectOil = AddSpecialEffect(effectPath, position.X, position.Y)
         .SetScale(2);
+      _effectCircle = AddSpecialEffect(@"buildings\other\CircleOfPower\CircleOfPower", position.X, position.Y)
+        .SetScale(2)
+        .SetHeight(Libraries.Environment.GetPositionZ(position))
+        .SetColor(Player(20));
     }
 
     /// <inheritdoc />
-    protected override void OnDispose() => _effect.Destroy();
+    protected override void OnDispose()
+    {
+      _effectOil.Destroy();
+      _effectCircle.Destroy();
+    }
 
     /// <summary>
     /// Harvest an amount of oil from the pool.
