@@ -1,7 +1,9 @@
-﻿using MacroTools.Extensions;
+﻿using MacroTools;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
+using System;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
@@ -26,7 +28,8 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
     {
       _waygateDragonmawPort = waygateDragonmawPort;
 
-      AddObjective(new ObjectiveTime(540));
+      AddObjective(new ObjectiveControlLegend(LegendDragonmaw.DragonmawPort, false));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.GrimBatol, false));
       waygateDragonmawPort.Show(false);
       Required = true;
       Global = true;
@@ -40,7 +43,20 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
     protected override string RewardDescription => "Open a Portal between Dragonmaw Port and Orgrimmar";
 
     /// <inheritdoc />
-    protected override void OnComplete(Faction whichFaction)
+    protected override void OnComplete(Faction completingFaction)
+    {
+      var timeUntilReward = 540 - GameTime.GetGameTime();
+      if (timeUntilReward <= 0)
+        GiveReward(completingFaction);
+      else
+        CreateTimer().Start(Math.Max(540 - GameTime.GetGameTime(), 0), false, () =>
+        {
+          GiveReward(completingFaction);
+        });
+    }
+
+    /// <inheritdoc />
+    private void GiveReward(Faction completingFaction)
     {
       _waygateDragonmawPort
         .Show(true)
@@ -50,8 +66,8 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
         _waygateDragonmawPort.Kill();
         GetExpiredTimer().Destroy();
       });
-      if (whichFaction.Player != null)
-        whichFaction.Player?.SetTeam(TeamSetup.Horde);
+      if (completingFaction.Player != null)
+        completingFaction.Player?.SetTeam(TeamSetup.Horde);
 
     }
   }

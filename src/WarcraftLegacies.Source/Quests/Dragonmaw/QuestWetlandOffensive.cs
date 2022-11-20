@@ -5,6 +5,7 @@ using MacroTools.QuestSystem.UtilityStructs;
 using static War3Api.Common;
 using WarcraftLegacies.Source.Setup.Legends;
 using MacroTools;
+using System;
 
 namespace WarcraftLegacies.Source.Quests.Dragonmaw
 {
@@ -28,12 +29,21 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
 
     protected override void OnComplete(Faction completingFaction)
     {
-      CreateTimer().Start(600 - GameTime.GetGameTime(), false, () =>
-      {
-        AddHeroXP(LegendDragonmaw.LegendNekrosh.Unit, 3000, true);
-        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 750);
-        GetExpiredTimer().Destroy();
-      });
+      var timeUntilReward = 600 - GameTime.GetGameTime();
+      if (timeUntilReward <= 0)
+        GiveReward(completingFaction);
+      else
+        CreateTimer().Start(Math.Max(600 - GameTime.GetGameTime(), 0), false, () =>
+        {
+          GiveReward(completingFaction);
+        });
+    }
+
+    private static void GiveReward(Faction completingFaction)
+    {
+      AddHeroXP(LegendDragonmaw.LegendNekrosh.Unit, 3000, true);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 750);
+      GetExpiredTimer().Destroy();
     }
   }
 }

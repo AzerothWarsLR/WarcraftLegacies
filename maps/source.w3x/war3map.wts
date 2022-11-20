@@ -97451,7 +97451,7 @@ W
 }
 
 STRING 16253
-// Abilities: A0MU (Build Oil Rig), EditorSuffix (Editor Suffix)
+// Abilities: A0PJ (Locate Oil), EditorSuffix (Editor Suffix)
 {
 (Goblin - Oil Rig Constructor)
 }
@@ -106497,7 +106497,7 @@ Teleports <AUds,DataA1> of the player's non-hero units within the targeted area 
 }
 
 STRING 17760
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Abilities: A0UX (Summon Zombie), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -106679,7 +106679,7 @@ Q
 }
 
 STRING 17790
-// Abilities: A0UX (Summon Zombie), Hotkey (Hotkey - Normal)
+// Abilities: A0V4 (Black Arrow), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -107243,7 +107243,7 @@ Q
 }
 
 STRING 17884
-// Abilities: A0V4 (Black Arrow), Hotkey (Hotkey - Normal)
+// Abilities: A0VE (Flame Shield), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -107303,7 +107303,7 @@ Q
 }
 
 STRING 17894
-// Abilities: A0VE (Flame Shield), Hotkey (Hotkey - Normal)
+// Abilities: A0VW (Wrath of Ragnaros), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -107513,7 +107513,7 @@ Q
 }
 
 STRING 17929
-// Abilities: A0VW (Wrath of Ragnaros), Researchhotkey (Hotkey - Learn)
+// Abilities: A0VW (Wrath of Ragnaros), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -107651,7 +107651,7 @@ Adds <A0WH,DataA4> bonus damage to the caster's attack.
 }
 
 STRING 17952
-// Abilities: A0VW (Wrath of Ragnaros), Hotkey (Hotkey - Normal)
+// Abilities: A0WP (Curse of Executus), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -108593,7 +108593,7 @@ STRING 18108
 }
 
 STRING 18109
-// Abilities: A0WP (Curse of Executus), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WP (Curse of Executus), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -108623,7 +108623,7 @@ STRING 18113
 }
 
 STRING 18115
-// Abilities: A0WP (Curse of Executus), Hotkey (Hotkey - Normal)
+// Abilities: A0X1 (Flame Shield), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -108719,7 +108719,7 @@ An aura that gives friendly nearby units a damage shield, which deals 25% of an 
 }
 
 STRING 18131
-// Abilities: A0X1 (Flame Shield), Hotkey (Hotkey - Normal)
+// Abilities: A0X8 (Summon Shadowspawn), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -108767,7 +108767,7 @@ Path Chosen
 }
 
 STRING 18139
-// Abilities: A0X8 (Summon Shadowspawn), Hotkey (Hotkey - Normal)
+// Abilities: A0XE (Goblin Flare), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -108809,7 +108809,7 @@ Protector of King's
 }
 
 STRING 18146
-// Abilities: A0XE (Goblin Flare), Hotkey (Hotkey - Normal)
+// Abilities: A0XC (Bloodlust), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -108839,7 +108839,7 @@ Lilian Voss
 }
 
 STRING 18151
-// Abilities: A0XC (Bloodlust), Hotkey (Hotkey - Normal)
+// Abilities: A0XC (Bloodlust), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -108923,7 +108923,7 @@ Pulverize - [|cffffcc00Level 3|r]
 }
 
 STRING 18165
-// Abilities: A0XC (Bloodlust), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0XJ (Tsunami), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -109079,7 +109079,7 @@ Summon Zombie
 }
 
 STRING 18191
-// Abilities: A0XJ (Tsunami), Hotkey (Hotkey - Normal)
+// Abilities: A0MJ (Parasite), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -109187,7 +109187,7 @@ STRING 18208
 }
 
 STRING 18209
-// Abilities: A0MJ (Parasite), Hotkey (Hotkey - Normal)
+// Abilities: A0MJ (Parasite), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -109764,7 +109764,7 @@ Adds <ACbk,DataA1> bonus damage to attacks. Units killed while under the effect 
 }
 
 STRING 18306
-// Abilities: A0MJ (Parasite), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0YQ (Bloodlust), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -110057,7 +110057,7 @@ STRING 18354
 }
 
 STRING 18355
-// Abilities: A0YQ (Bloodlust), Hotkey (Hotkey - Normal)
+// Abilities: A0YQ (Bloodlust), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -110159,7 +110159,7 @@ Q
 }
 
 STRING 18372
-// Abilities: A0YQ (Bloodlust), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0HG (Unholy Armor), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -110533,7 +110533,7 @@ Titanforged
 }
 
 STRING 18434
-// Abilities: A0HG (Unholy Armor), Hotkey (Hotkey - Normal)
+// Abilities: A0HG (Unholy Armor), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -110611,7 +110611,7 @@ Learn Curse of Executus - [|cffffcc00Level %d|r]
 }
 
 STRING 18447
-// Abilities: A0HG (Unholy Armor), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0MU (Build Oil Rig), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -110737,7 +110737,7 @@ Q
 }
 
 STRING 18468
-// Abilities: A0MU (Build Oil Rig), Hotkey (Hotkey - Normal)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -111211,7 +111211,7 @@ Q
 }
 
 STRING 18547
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -112802,7 +112802,7 @@ W
 }
 
 STRING 18812
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -113192,7 +113192,7 @@ Q
 }
 
 STRING 18877
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -113792,13 +113792,13 @@ Q
 }
 
 STRING 18977
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 18978
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -115992,7 +115992,7 @@ Blasts enemy units with a wave of plague that deals 175 damage to the target, an
 }
 
 STRING 19350
-// Abilities: A0PJ (Locate Oil), EditorSuffix (Editor Suffix)
+// Abilities: A0MU (Build Oil Rig), EditorSuffix (Editor Suffix)
 {
 (Goblin - Oil Rig Constructor)
 }
