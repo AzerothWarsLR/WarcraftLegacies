@@ -24,7 +24,7 @@ namespace MacroTools.BookSystem.Powers
       firstPage.Visible = true;
       Title = "Powers";
       LauncherParent = BlzGetFrameByName("UpperButtonBarMenuButton", 0);
-      Position = new Point(0.4f, 0.36f);
+      Position = new Point(0.36f, 0.35f);
       TrackedFaction = trackedPlayer.GetFaction();
       trackedPlayer.GetPlayerData().ChangedFaction += OnPlayerChangedFaction;
     }
@@ -50,10 +50,8 @@ namespace MacroTools.BookSystem.Powers
         {
           _trackedFaction.PowerAdded += OnFactionAddPower;
           _trackedFaction.PowerRemoved += OnFactionRemovePower;
+          AddAllPowers(_trackedFaction);
         }
-
-        if (value != null) 
-          AddAllPowers(value);
       }
     }
 
@@ -72,7 +70,7 @@ namespace MacroTools.BookSystem.Powers
 
     private void OnFactionRemovePower(object? sender, FactionPowerEventArgs factionPowerEventArgs)
     {
-      RemovePower(factionPowerEventArgs.Power);
+      ReRender();
     }
 
     private void RemoveAllPowers(Faction faction)
@@ -85,6 +83,26 @@ namespace MacroTools.BookSystem.Powers
     {
       foreach (var power in faction.GetAllPowers())
         AddPower(power);
+    }
+
+    private void ReRender()
+    {
+      foreach (var page in Pages)
+      {
+        page.Visible = false; //This avoids a crash to desktop when rerendering a Book that a player has open.
+        page.Dispose();
+      }
+      _pagesByPower.Clear();
+      Pages.Clear();
+      AddPagesAndPowers();
+    }
+
+    private void AddPagesAndPowers()
+    {
+      var firstPage = AddPage();
+      firstPage.Visible = true;
+      if (_trackedFaction != null)
+        AddAllPowers(_trackedFaction);
     }
 
     private void AddPower(Power power)
