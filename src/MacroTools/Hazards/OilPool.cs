@@ -1,5 +1,4 @@
-﻿using System;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.Powers;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
@@ -12,7 +11,11 @@ namespace MacroTools.Hazards
   /// </summary>
   public sealed class OilPool : Hazard
   {
-    private readonly OilPower _oilPower;
+    /// <summary>
+    /// The <see cref="OilPower"/> that generated this <see cref="OilPool"/>.
+    /// </summary>
+    public OilPower OilPower { get; }
+    
     private readonly effect _effectOil;
     private readonly effect _effectCircle;
     
@@ -32,7 +35,7 @@ namespace MacroTools.Hazards
     /// <param name="oilPower">Where to put any oil harvested.</param>
     public OilPool(Point position, string effectPath, OilPower oilPower) : base(null, position.X, position.Y)
     {
-      _oilPower = oilPower;
+      OilPower = oilPower;
       _effectOil = AddSpecialEffect(effectPath, position.X, position.Y)
         .SetScale(2);
       _effectCircle = AddSpecialEffect(@"buildings\other\CircleOfPower\CircleOfPower", position.X, position.Y)
@@ -46,19 +49,6 @@ namespace MacroTools.Hazards
     {
       _effectOil.Destroy();
       _effectCircle.Destroy();
-    }
-
-    /// <summary>
-    /// Harvest an amount of oil from the pool.
-    /// </summary>
-    public void Harvest(int oilHarvestedPerSecond)
-    {
-      var amountToHarvest = Math.Min(oilHarvestedPerSecond, OilAmount);
-      OilAmount -= amountToHarvest;
-      _oilPower.Amount += amountToHarvest;
-      
-      if (OilAmount <= 0) 
-        Active = false;
     }
   }
 }
