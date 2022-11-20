@@ -46,12 +46,26 @@ namespace MacroTools.PassiveAbilities
       if (oilPower == null)
         throw new Exception(
           $"Oil user {GetUnitName(GetTriggerUnit())} was created but owning faction {owningFaction?.Name} doesn't have a power that stores oil.");
+      
+      var oilPoolNearby = oilPower.GetAllOilPools()
+        .Where(x =>
+        {
+          var harvesterPosition = createdUnit.GetPosition();
+          var oilPoolPosition = x.Position;
+          return WCSharp.Shared.Util.DistanceBetweenPoints(harvesterPosition.X, harvesterPosition.Y, oilPoolPosition.X,
+            oilPoolPosition.Y) < Radius;
+        }).FirstOrDefault();
 
-      var oilBuff = new OilHarvesterBuff(createdUnit, oilPower)
+      if (oilPoolNearby == null)
+      {
+        createdUnit.Kill().Remove();
+        return;
+      }
+      
+      var oilBuff = new OilHarvesterBuff(createdUnit, oilPoolNearby)
       {
         Active = true,
         Duration = float.MaxValue,
-        Radius = Radius,
         OilHarvestedPerSecond = OilHarvestedPerSecond
       };
       BuffSystem.Add(oilBuff);
@@ -62,7 +76,7 @@ namespace MacroTools.PassiveAbilities
       if (new GroupWrapper().EnumUnitsInRange(createdUnit.GetPosition(), Radius)
           .EmptyToList()
           .All(x => x.GetTypeId() != createdUnit.GetTypeId() || x == createdUnit)) return true;
-      KillUnit(createdUnit);
+      createdUnit.Kill().Remove();
       return false;
     }
   }
