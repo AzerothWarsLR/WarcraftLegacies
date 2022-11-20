@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       "ReplaceableTextures\\CommandButtons\\BTNDwarvenKeep.blp")
     {
       AddObjective(new ObjectiveControlLegend(LegendIronforge.LegendThelsamar, false));
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendGrimbatol, false));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.GrimBatol, false));
       AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendIronforge.LegendThelsamar));
       AddObjective(new ObjectiveExpire(600));
     }

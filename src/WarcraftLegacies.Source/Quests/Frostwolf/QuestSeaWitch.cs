@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       "Warchief Thrall and his forces have been shipwrecked on the Darkspear Isles. Kill the Sea Witch there to give them a chance to rebuild their fleet and escape.",
       "ReplaceableTextures\\CommandButtons\\BTNGhost.blp")
     {
-      AddObjective(new ObjectiveKillUnit(LegendNeutral.LegendSeawitch.Unit));
+      AddObjective(new ObjectiveKillUnit(LegendNeutral.SeaWitch.Unit));
       AddObjective(new ObjectiveExpire(600));
       ResearchId = Constants.UPGRADE_R05H_QUEST_COMPLETED_RIDERS_ON_THE_STORM;
       Required = true;

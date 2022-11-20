@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       , "ReplaceableTextures\\CommandButtons\\BTNRockGolem.blp")
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02R"))));
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendDraktharonkeep, false));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.DraktharonKeep, false));
       ResearchId = FourCC("R045");
     }
 

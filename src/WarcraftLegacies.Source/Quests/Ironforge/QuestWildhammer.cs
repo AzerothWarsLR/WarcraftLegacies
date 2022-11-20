@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       "ReplaceableTextures\\CommandButtons\\BTNHeroGriffonWarrior.blp")
     {
       AddObjective(new ObjectiveLegendDead(LegendDragonmaw.DragonmawPort));
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendGrimbatol, false));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.GrimBatol, false));
       ResearchId = FourCC("R01C");
     }
 

@@ -15,7 +15,7 @@ using static MacroTools.Libraries.Display; namespace WarcraftLegacies.Source.Que
       "The Blue Dragons of Northrend are the wardens of magic on Azeroth. They might be convinced to willingly join the mages of Dalaran.",
       "ReplaceableTextures\\CommandButtons\\BTNAzureDragon.blp")
     {
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendNexus, false));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.TheNexus, false));
     }
 
     protected override string CompletionPopup =>

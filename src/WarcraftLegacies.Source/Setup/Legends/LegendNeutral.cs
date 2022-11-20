@@ -6,246 +6,244 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public static class LegendNeutral
   {
-    public static Legend LegendRagnaros { get; private set; }
-    public static Legend LegendMorghor { get; private set; }
-    public static Legend LegendSeawitch { get; private set; }
-    public static Legend LegendAuchindoun { get; private set; }
-    public static Legend LegendDraktharonkeep { get; private set; }
-    public static Legend LegendOshugun { get; private set; }
-    public static Legend LegendJinthaalor { get; private set; }
-    public static Legend LegendShrineofulatek { get; private set; }
-    public static Legend LegendSeradane { get; private set; }
-    public static Legend LegendZulgurub { get; private set; }
-    public static Legend LegendDazaralor { get; private set; }
-    public static Legend LegendGundrak { get; private set; }
-    public static Legend LegendDuskwoodgraveyard { get; private set; }
-    public static Legend LegendGrimbatol { get; private set; }
-    public static Legend LegendEthelrethor { get; private set; }
-    public static Legend LegendNexus { get; private set; }
-    public static Legend LegendKarazhan { get; private set; }
-    public static Legend LegendZulfarrak { get; private set; }
-    public static Legend LegendFountainofhealth { get; private set; }
-    public static Legend LegendFountainofhealthWetlands { get; private set; }
-    public static Legend LegendFountainofhealthFeralas { get; private set; }
-    public static Legend LegendFountainofhealthTomb { get; private set; }
-    public static Legend LegendFountainofhealthDalaran { get; private set; }
-    public static Legend LegendFountainofblood { get; private set; }
-    public static Legend LegendCentaurkhan { get; private set; }
-    public static Legend LegendImmolthar { get; private set; }
-    public static Legend LegendArugal { get; private set; }
-    public static Legend LegendVaelastrasz { get; private set; }
-    public static Legend LegendOcculus { get; private set; }
-    public static Legend LegendSaragosa { get; private set; }
-    public static Legend LegendCaerdarrow { get; private set; }
-
-
+    public static Legend Ragnaros { get; private set; }
+    public static Legend Morghor { get; private set; }
+    public static Legend SeaWitch { get; private set; }
+    public static Legend Auchindoun { get; private set; }
+    public static Legend DraktharonKeep { get; private set; }
+    public static Legend Oshugun { get; private set; }
+    public static Legend Jinthaalor { get; private set; }
+    public static Legend ShrineOfUlatek { get; private set; }
+    public static Legend Seradane { get; private set; }
+    public static Legend Zulgurub { get; private set; }
+    public static Legend Dazaralor { get; private set; }
+    public static Legend Gundrak { get; private set; }
+    public static Legend DuskwoodGraveyard { get; private set; }
+    public static Legend GrimBatol { get; private set; }
+    public static Legend Ethelrethor { get; private set; }
+    public static Legend TheNexus { get; private set; }
+    public static Legend Karazhan { get; private set; }
+    public static Legend Zulfarrak { get; private set; }
+    public static Legend FountainOfHealth { get; private set; }
+    public static Legend FountainOfHealthWetlands { get; private set; }
+    public static Legend FountainOfHealthFeralas { get; private set; }
+    public static Legend FountainOfHealthTomb { get; private set; }
+    public static Legend FountainOfHealthDalaran { get; private set; }
+    public static Legend FountainOfBlood { get; private set; }
+    public static Legend CentaurKhan { get; private set; }
+    public static Legend Immolthar { get; private set; }
+    public static Legend Vaelastrasz { get; private set; }
+    public static Legend Occulus { get; private set; }
+    public static Legend Saragosa { get; private set; }
+    public static Legend Caerdarrow { get; private set; }
+    
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendRagnaros = new Legend
+      Ragnaros = new Legend
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("N00D")),
         DeathMessage = "Ragnaros, the King of Fire and Lord of the Firelands, has been extinguished."
       };
-      Legend.Register(LegendRagnaros);
+      Legend.Register(Ragnaros);
 
-      LegendMorghor = new Legend
+      Morghor = new Legend
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("N0DA")),
         DeathMessage = "Mor'ghor, the tyrant of the Twilight Highlands, has been defeated.",
         PermaDies = true
       };
-      Legend.Register(LegendMorghor);
+      Legend.Register(Morghor);
 
-      LegendSeawitch = new Legend
+      SeaWitch = new Legend
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("O02L"))
       };
-      Legend.Register(LegendSeawitch);
+      Legend.Register(SeaWitch);
 
-      LegendAuchindoun = new Legend
+      Auchindoun = new Legend
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("h026"))
       };
-      Legend.Register(LegendAuchindoun);
+      Legend.Register(Auchindoun);
 
-      LegendDraktharonkeep = new Legend
+      DraktharonKeep = new Legend
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("o016"))
       };
-      Legend.Register(LegendDraktharonkeep);
+      Legend.Register(DraktharonKeep);
 
-      LegendOshugun = new Legend
+      Oshugun = new Legend
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("h02Z"))
       };
-      Legend.Register(LegendOshugun);
+      Legend.Register(Oshugun);
 
-      LegendJinthaalor = new Legend
+      Jinthaalor = new Legend
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("o02G"))
       };
-      Legend.Register(LegendJinthaalor);
+      Legend.Register(Jinthaalor);
 
-      LegendShrineofulatek = new Legend
+      ShrineOfUlatek = new Legend
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("o00Q"))
       };
-      Legend.Register(LegendShrineofulatek);
+      Legend.Register(ShrineOfUlatek);
 
-      LegendSeradane = new Legend
+      Seradane = new Legend
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("e014"))
       };
-      Legend.Register(LegendSeradane);
+      Legend.Register(Seradane);
 
-      LegendZulgurub = new Legend
+      Zulgurub = new Legend
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("o018"))
       };
-      Legend.Register(LegendZulgurub);
+      Legend.Register(Zulgurub);
 
-      LegendDazaralor = new Legend
+      Dazaralor = new Legend
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("o00V"))
       };
-      Legend.Register(LegendDazaralor);
+      Legend.Register(Dazaralor);
 
-      LegendGundrak = new Legend
+      Gundrak = new Legend
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("o00N"))
       };
-      Legend.Register(LegendGundrak);
+      Legend.Register(Gundrak);
 
-      LegendDuskwoodgraveyard = new Legend
+      DuskwoodGraveyard = new Legend
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("h01F"))
       };
-      Legend.Register(LegendDuskwoodgraveyard);
+      Legend.Register(DuskwoodGraveyard);
 
-      LegendGrimbatol = new Legend
+      GrimBatol = new Legend
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("h01Z"))
       };
-      Legend.Register(LegendGrimbatol);
+      Legend.Register(GrimBatol);
 
-      LegendEthelrethor = new Legend
+      Ethelrethor = new Legend
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("h05I"))
       };
-      Legend.Register(LegendEthelrethor);
+      Legend.Register(Ethelrethor);
 
-      LegendNexus = new Legend
+      TheNexus = new Legend
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h04P")),
         Capturable = true
       };
-      Legend.Register(LegendNexus);
+      Legend.Register(TheNexus);
 
-      LegendKarazhan = new Legend
+      Karazhan = new Legend
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h00G")),
         Capturable = true
       };
-      Legend.Register(LegendKarazhan);
+      Legend.Register(Karazhan);
 
-      LegendZulfarrak = new Legend
+      Zulfarrak = new Legend
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("o00K"))
       };
-      Legend.Register(LegendZulfarrak);
+      Legend.Register(Zulfarrak);
 
-      LegendFountainofhealth = new Legend
+      FountainOfHealth = new Legend
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("nfoh"), Regions.AlteracAmbient.Center)
       };
-      Legend.Register(LegendFountainofhealth);
+      Legend.Register(FountainOfHealth);
 
-      LegendFountainofhealthWetlands = new Legend
+      FountainOfHealthWetlands = new Legend
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("nfoh"), Regions.WetlandAmbient1.Center)
       };
-      Legend.Register(LegendFountainofhealthWetlands);
+      Legend.Register(FountainOfHealthWetlands);
 
-      LegendFountainofhealthFeralas = new Legend
+      FountainOfHealthFeralas = new Legend
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("nfoh"), Regions.FeralasAmbient1.Center)
       };
-      Legend.Register(LegendFountainofhealthFeralas);
+      Legend.Register(FountainOfHealthFeralas);
 
-      LegendFountainofhealthTomb = new Legend
+      FountainOfHealthTomb = new Legend
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("nfoh"), Regions.InstanceSargerasTomb.Center)
       };
-      Legend.Register(LegendFountainofhealthTomb);
+      Legend.Register(FountainOfHealthTomb);
 
-      LegendFountainofhealthDalaran = new Legend
+      FountainOfHealthDalaran = new Legend
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("nfoh"), Regions.DalaranDungeon.Center)
       };
-      Legend.Register(LegendFountainofhealthDalaran);
+      Legend.Register(FountainOfHealthDalaran);
 
-      LegendFountainofblood = new Legend
+      FountainOfBlood = new Legend
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("nbfl"))
       };
-      Legend.Register(LegendFountainofblood);
+      Legend.Register(FountainOfBlood);
 
-      LegendCentaurkhan = new Legend
+      CentaurKhan = new Legend
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("ncnk"), Regions.ThunderBluff.Center)
       };
-      Legend.Register(LegendCentaurkhan);
+      Legend.Register(CentaurKhan);
 
-      LegendImmolthar = new Legend
+      Immolthar = new Legend
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("n04R"))
       };
-      Legend.Register(LegendImmolthar);
+      Legend.Register(Immolthar);
 
-      LegendVaelastrasz = new Legend
+      Vaelastrasz = new Legend
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("nrwm"))
       };
-      Legend.Register(LegendVaelastrasz);
+      Legend.Register(Vaelastrasz);
 
-      LegendOcculus = new Legend
+      Occulus = new Legend
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("O025")),
         PermaDies = true
       };
-      Legend.Register(LegendOcculus);
+      Legend.Register(Occulus);
 
-      LegendSaragosa = new Legend
+      Saragosa = new Legend
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("nadr"))
       };
-      Legend.Register(LegendSaragosa);
+      Legend.Register(Saragosa);
 
-      LegendCaerdarrow = new Legend
+      Caerdarrow = new Legend
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("u01M")),
         Capturable = true
       };
-      Legend.Register(LegendCaerdarrow);
+      Legend.Register(Caerdarrow);
     }
   }
 }

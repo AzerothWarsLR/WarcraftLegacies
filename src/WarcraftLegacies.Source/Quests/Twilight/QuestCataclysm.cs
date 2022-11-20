@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Twilight
       SetPlayerTechResearched(completingFaction.Player, CataclysmResearch, 1);
       PlayThematicMusic("war3mapImported\\TwilightTheme.mp3");
       SetPlayerTechResearched(CthunSetup.Cthun.Player, FourCC("R07D"), 1);
-      IssueImmediateOrder(LegendNeutral.LegendGrimbatol.Unit, "unrobogoblin");
+      IssueImmediateOrder(LegendNeutral.GrimBatol.Unit, "unrobogoblin");
       LegendTwilight.LEGEND_DEATHWING.ForceCreate(completingFaction.Player ?? Player(GetBJPlayerNeutralVictim()),
         Regions.TwilightOutside.Center, 0);
       GeneralHelpers.CameraSetEarthquakeNoise(30);

@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       "ReplaceableTextures\\CommandButtons\\BTNDarkTroll.blp")
     {
       ResearchId = Constants.UPGRADE_R02F_QUEST_COMPLETED_FURY_OF_THE_SANDS_WARSONG;
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendZulfarrak, false));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.Zulfarrak, false));
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
@@ -40,7 +40,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     {
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
       completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
-      SetUnitOwner(LegendNeutral.LegendZulfarrak.Unit, completingFaction.Player, true);
+      SetUnitOwner(LegendNeutral.Zulfarrak.Unit, completingFaction.Player, true);
     }
 
     protected override void OnAdd(Faction whichFaction)

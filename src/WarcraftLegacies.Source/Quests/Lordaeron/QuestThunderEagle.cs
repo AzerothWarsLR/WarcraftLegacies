@@ -9,7 +9,7 @@ using static War3Api.Common;
 namespace WarcraftLegacies.Source.Quests.Lordaeron
 {
   /// <summary>
-  /// Gain control of <see cref="LegendNeutral.LegendDraktharonkeep"/> and the Storm Peaks control point to unlock Thunder Eagles.
+  /// Gain control of <see cref="LegendNeutral.DraktharonKeep"/> and the Storm Peaks control point to unlock Thunder Eagles.
   /// </summary>
   public sealed class QuestThunderEagle : QuestData
   {
@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       "The Thunder Eagles of the Storm Peaks live in fear of the Legion. Wipe out the Legion Nexus to bring these great birds out into the open.",
       "ReplaceableTextures\\CommandButtons\\BTNWarEagle.blp")
     {
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendDraktharonkeep, false));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.DraktharonKeep, false));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N02S_STORM_PEAKS_15GOLD_MIN)));
     }
 

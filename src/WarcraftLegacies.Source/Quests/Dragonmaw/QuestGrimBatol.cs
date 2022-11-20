@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       _grimBatol = grimBatol;
       _waygateA = waygateA;
       _waygateB = waygateB;
-      AddObjective(new ObjectiveLegendDead(LegendNeutral.LegendVaelastrasz));
+      AddObjective(new ObjectiveLegendDead(LegendNeutral.Vaelastrasz));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03X"))));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n04V"))));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09F"))));

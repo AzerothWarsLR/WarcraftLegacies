@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       "The Tauren have been wandering for too long. The plains of Mulgore would offer respite from this endless journey.",
       "ReplaceableTextures\\CommandButtons\\BTNCentaurKhan.blp")
     {
-      AddObjective(new ObjectiveLegendDead(LegendNeutral.LegendCentaurkhan));
+      AddObjective(new ObjectiveLegendDead(LegendNeutral.CentaurKhan));
       AddObjective(new ObjectiveAnyUnitInRect(Regions.ThunderBluff, "Thunder Bluff", true));
       AddObjective(new ObjectiveExpire(1455));
       AddObjective(new ObjectiveSelfExists());
