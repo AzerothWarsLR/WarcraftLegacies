@@ -112,6 +112,7 @@ namespace WarcraftLegacies.Source.Setup
       PassiveAbilityManager.InitializePreplacedUnits();
       IncompatibleResearchSetup.Setup();
       DemonGateSetup.Setup();
+      SummonRallyPoints.Setup();
     }
   }
 }
