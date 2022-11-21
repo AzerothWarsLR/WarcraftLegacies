@@ -32,6 +32,7 @@ jobs:
                         ./src/WarcraftLegacies.Source/**
                         ./src/TestMap.Source/**
                         ./src/Launcher/**
+                    solutionWideAnalysis: false
     
     deploy-docs:
         name: Deploy Docs
