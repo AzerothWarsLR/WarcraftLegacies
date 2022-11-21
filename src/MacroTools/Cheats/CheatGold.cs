@@ -9,7 +9,6 @@ namespace MacroTools.Cheats
     private static void Actions()
     {
       if (!TestSafety.CheatCondition()) return;
-      var i = 0;
       string enteredString = GetEventPlayerChatString();
       string parameter = null;
       player p = GetTriggerPlayer();

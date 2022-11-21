@@ -5,7 +5,7 @@ using MacroTools.FactionSystem;
 using MacroTools.Frames;
 using static War3Api.Common;
 
-namespace MacroTools.BookSystem.Artifacts
+namespace MacroTools.BookSystem.ArtifactSystem
 {
   /// <summary>
   ///   Represents a single Artifact in a black rectangle.

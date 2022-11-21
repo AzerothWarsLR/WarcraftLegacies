@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.ShoreSystem;
 using WCSharp.Events;
@@ -62,7 +63,7 @@ namespace MacroTools.ArtifactSystem
     /// Returns all <see cref="Artifact"/>s registered to the system.
     /// </summary>
     public static IEnumerable<Artifact> GetAllArtifacts() =>
-      AllArtifacts.AsReadOnly();
+      AllArtifacts.AsReadOnly().OrderBy(a => GetItemName(a.Item));
 
     /// <summary>
     /// Completely removes the given Artifact from the game.

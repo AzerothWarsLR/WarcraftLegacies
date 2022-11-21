@@ -11,7 +11,7 @@ using static War3Api.Common;
 namespace WarcraftLegacies.Source.Quests.Scourge
 {
   /// <summary>
-  /// Capture <see cref="LegendNeutral.LegendDraktharonkeep"/> and its control point to gain control of all buildings in the area.
+  /// Capture <see cref="LegendNeutral.DraktharonKeep"/> and its control point to gain control of all buildings in the area.
   /// </summary>
   public sealed class QuestDrakUnlock : QuestData
   {
@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       "ReplaceableTextures\\CommandButtons\\BTNUndeadShipyard.blp")
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N030_DRAK_THARON_KEEP_30GOLD_MIN)));
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendDraktharonkeep, false));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.DraktharonKeep, false));
       AddObjective(new ObjectiveExpire(1140));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R08J_QUEST_COMPLETED_DRAK_THARON_KEEP;

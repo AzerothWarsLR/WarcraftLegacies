@@ -18,6 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Forsaken
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestOpenScholomance"/> class.
     /// </summary>
+    /// <param name="preplacedUnitSystem">A system which can be used to find preplaced units.</param>
     /// <param name="parentQuest">The <see cref="QuestData"/> which must be completed before this one can be.</param>
     public QuestOpenScholomance(PreplacedUnitSystem preplacedUnitSystem, QuestData parentQuest) : base("Open Scholomance",
       "Scholomance remains hidden deep within the ancient crypts beneath Caer Darrow, away from the prying eyes of the Alliance. Soon it will be time to open its doors and unleash the necromantic horrors within.",

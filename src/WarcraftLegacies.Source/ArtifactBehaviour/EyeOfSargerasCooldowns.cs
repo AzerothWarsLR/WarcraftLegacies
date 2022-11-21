@@ -1,9 +1,8 @@
 using MacroTools.SpellSystem;
 using WCSharp.Events;
-
 using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.Artifacts
+namespace WarcraftLegacies.Source.ArtifactBehaviour
 {
   public class EyeOfSargerasCooldowns
   {

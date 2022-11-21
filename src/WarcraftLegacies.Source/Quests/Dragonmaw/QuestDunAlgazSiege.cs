@@ -16,8 +16,8 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       "ReplaceableTextures\\CommandButtons\\BTNDwarvenKeep.blp")
     {
       AddObjective(new ObjectiveLegendDead(LegendIronforge.LegendThelsamar));
-      AddObjective(new ObjectiveControlLegend(LegendDragonmaw.LegendZaela, false));
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendGrimbatol, false));
+      AddObjective(new ObjectiveControlLegend(LegendDragonmaw.Zaela, false));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.GrimBatol, false));
       AddObjective(new ObjectiveExpire(600));
     }
 
@@ -43,7 +43,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
     
     private static void GiveReward(Faction completingFaction)
     {
-      AddHeroXP(LegendDragonmaw.LegendZaela.Unit, 3000, true);
+      AddHeroXP(LegendDragonmaw.Zaela.Unit, 3000, true);
       completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 750);
       GetExpiredTimer().Destroy();
     }

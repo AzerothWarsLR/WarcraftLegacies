@@ -10,7 +10,7 @@ using static War3Api.Common;
 namespace WarcraftLegacies.Source.Quests.Lordaeron
 {
   /// <summary>
-  /// Capture <see cref="LegendNeutral.LegendCaerdarrow"/> to unlock the capital city of Lordaeron.
+  /// Capture <see cref="LegendNeutral.Caerdarrow"/> to unlock the capital city of Lordaeron.
   /// </summary>
   public sealed class QuestCapitalCity : QuestData
   {
@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
         "The territories of Lordaeron are fragmented. Regain control of the old Alliance's hold to secure the kingdom.",
         "ReplaceableTextures\\CommandButtons\\BTNCastle.blp")
     {
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.LegendCaerdarrow, false));
+      AddObjective(new ObjectiveControlLegend(LegendNeutral.Caerdarrow, false));
       foreach (var prequisite in prequisites)
         AddObjective(new ObjectiveCompleteQuest(prequisite));
       AddObjective(new ObjectiveExpire(1472));

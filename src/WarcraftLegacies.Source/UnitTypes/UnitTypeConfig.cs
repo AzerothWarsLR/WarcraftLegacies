@@ -101,11 +101,6 @@ namespace WarcraftLegacies.Source.UnitTypes
       {
         Category = UnitCategory.Shipyard
       });
-      
-      UnitType.Register(new UnitType(Constants.UNIT_O04R_OIL_PLATFORM_GOBLIN)
-      {
-        Category = UnitCategory.Shipyard
-      });
     }
   }
 }

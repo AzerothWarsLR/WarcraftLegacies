@@ -21,6 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestStratholme"/> class.
     /// </summary>
+    /// <param name="preplacedUnitSystem">A system which can be used to find preplaced units.</param>
     /// <param name="rescueRect"></param>
     public QuestStratholme(Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem) : base("Blackrock and Roll",
       "The Blackrock clan has taken over Alterac, they must be eliminated for the safety of Lordaeron",

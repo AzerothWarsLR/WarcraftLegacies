@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -45,8 +44,6 @@ namespace MacroTools.Mechanics
       /// <summary>
       /// Addes the build ability and special effect to pack units
       /// </summary>
-      /// <param name="packedUnit"></param>
-      /// <param name="packable"></param>
       public void PackUnitSetup(unit packedUnit)
       {
         var effect = AddSpecialEffectTarget(StructureModel, packedUnit, "overhead");

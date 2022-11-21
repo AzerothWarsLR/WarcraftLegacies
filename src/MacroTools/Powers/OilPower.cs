@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using MacroTools.FactionSystem;
 using MacroTools.Hazards;
 using MacroTools.SpellSystem;
@@ -19,6 +20,7 @@ namespace MacroTools.Powers
     private float _income;
     private OilIncomePeriodicAction? _oilIncomePeriodicAction;
     private readonly List<OilPool> _oilPools = new();
+    private readonly List<player> _owners = new();
 
     /// <summary>
     /// Fired when the amount of oil stored changes.
@@ -61,9 +63,19 @@ namespace MacroTools.Powers
     }
 
     /// <summary>
-    /// The maximum number of oil pools that can generate on the map.
+    /// The number of oil pools that will generate on the map.
     /// </summary>
-    public int OilPoolMax { get; init; }
+    public int OilPoolCount { get; init; }
+    
+    /// <summary>
+    /// The maximum amount of oil that a given <see cref="OilPool"/> can start with.
+    /// </summary>
+    public int OilPoolMaximumValue { get; init; }
+    
+    /// <summary>
+    /// The minimum amount of oil that a given <see cref="OilPool"/> can start with.
+    /// </summary>
+    public int OilPoolMinimumValue { get; init; }
 
     /// <summary>
     /// Returns all <see cref="OilPool"/>s managed by this <see cref="OilPower"/>.
@@ -73,6 +85,7 @@ namespace MacroTools.Powers
     /// <inheritdoc/>
     public override void OnAdd(player whichPlayer)
     {
+      _owners.Add(whichPlayer);
       _oilIncomePeriodicAction = new OilIncomePeriodicAction(this);
       OilIncomePeriodicTrigger.Add(_oilIncomePeriodicAction);
       GameTime.TurnEnded += (_, _) => GenerateOilPools();
@@ -85,6 +98,7 @@ namespace MacroTools.Powers
       if (_oilIncomePeriodicAction == null) return;
       _oilIncomePeriodicAction.Active = false;
       _oilIncomePeriodicAction = null;
+      _owners.Remove(whichPlayer);
     }
 
     private void GenerateOilPools()
@@ -98,18 +112,17 @@ namespace MacroTools.Powers
         }
       }
       
-      for (var i = _oilPools.Count; i < OilPoolMax; i++)
+      for (var i = _oilPools.Count; i < OilPoolCount; i++)
       {
         var randomPoint = GetRandomPointAtSea();
-        var oilPool = new OilPool(randomPoint, "Tar Pool.mdx", this)
+        var oilPool = new OilPool(_owners.First(), randomPoint, "Tar Pool.mdx", this)
         {
           Active = true,
           Duration = float.MaxValue,
-          OilAmount = GetRandomInt(1000, 5000)
+          OilAmount = GetRandomInt(OilPoolMinimumValue, OilPoolMaximumValue)
         };
         HazardSystem.Add(oilPool);
         _oilPools.Add(oilPool);
-        //PingMinimapEx(randomPoint.X, randomPoint.Y, 120, 255, 255, 255, false);
       }
     }
 

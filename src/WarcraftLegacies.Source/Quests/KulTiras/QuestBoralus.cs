@@ -20,6 +20,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestBoralus"/> class.
     /// </summary>
+    /// <param name="preplacedUnitSystem">A system which can be used to find preplaced units.</param>
     /// <param name="rescueRect">All units in this area will be made neutral, then rescued when the quest is completed or made aggressive when the quest is failed.</param>
     public QuestBoralus(Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem) : base("The City at Sea",
       "Proudmoore is stranded at sea. Rejoin Boralus to take control of the city.",
