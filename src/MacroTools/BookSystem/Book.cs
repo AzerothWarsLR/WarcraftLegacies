@@ -17,10 +17,7 @@ namespace MacroTools.BookSystem
     /// All <see cref="Page"/>s contained in the Book.
     /// </summary>
     protected readonly List<T> Pages = new();
-    
-    private readonly Button _nextButton;
-    private readonly Button _previousButton;
-    private readonly Button _exitButton;
+
     private readonly TextFrame _title;
     private int _activePageIndex;
 
@@ -38,38 +35,39 @@ namespace MacroTools.BookSystem
       Height = height;
       Visible = false;
 
-      _exitButton = new Button("ScriptDialogButton", this, 0)
+      ExitButton = new Button("ScriptDialogButton", this, 0)
       {
         Width = 0.03f,
         Height = 0.03f,
-        Text = "x"
+        Text = "x",
+        OnClick = Exit
       };
-      _exitButton.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOPRIGHT, -0.015f, -0.015f);
-      AddFrame(_exitButton);
+      ExitButton.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOPRIGHT, -0.015f, -0.015f);
+      AddFrame(ExitButton);
 
-      _nextButton = new Button("ScriptDialogButton", this, 0)
+      MoveNextButton = new Button("ScriptDialogButton", this, 0)
       {
         Width = 0.09f,
         Height = 0.037f,
         Text = "Next",
-        OnClick = OnClickNextButton,
+        OnClick = MoveNext,
         Visible = true
       };
-      _nextButton.SetPoint(FRAMEPOINT_BOTTOMRIGHT, this, FRAMEPOINT_BOTTOMRIGHT, -bottomButtonXOffset,
+      MoveNextButton.SetPoint(FRAMEPOINT_BOTTOMRIGHT, this, FRAMEPOINT_BOTTOMRIGHT, -bottomButtonXOffset,
         bottomButtonYOffset);
-      AddFrame(_nextButton);
+      AddFrame(MoveNextButton);
 
-      _previousButton = new Button("ScriptDialogButton", this, 0)
+      MovePreviousButton = new Button("ScriptDialogButton", this, 0)
       {
         Width = 0.09f,
         Height = 0.037f,
         Text = "Previous",
-        OnClick = OnClickPreviousButton,
+        OnClick = MovePrevious,
         Visible = true
       };
-      _previousButton.SetPoint(FRAMEPOINT_BOTTOMLEFT, this, FRAMEPOINT_BOTTOMLEFT, bottomButtonXOffset,
+      MovePreviousButton.SetPoint(FRAMEPOINT_BOTTOMLEFT, this, FRAMEPOINT_BOTTOMLEFT, bottomButtonXOffset,
         bottomButtonYOffset);
-      AddFrame(_previousButton);
+      AddFrame(MovePreviousButton);
 
       _title = new TextFrame("ArtifactMenuTitle", this, 0)
       {
@@ -79,14 +77,28 @@ namespace MacroTools.BookSystem
       AddFrame(_title);
     }
 
-    /// <inheritdoc />
-    public OnClickAction OnClickExitButton
-    {
-      set => _exitButton.OnClick = value;
-    }
-    
     /// <summary>
-    ///    The name of the Book's launcher Button.
+    /// <inheritdoc/>
+    /// </summary>
+    public Button ExitButton { get; init; }
+
+    /// <summary>
+    /// <inheritdoc/>
+    /// </summary>
+    public Button LauncherButton { get; set; }
+
+    /// <summary>
+    /// <inheritdoc/>
+    /// </summary>
+    public Button MoveNextButton { get; init; }
+
+    /// <summary>
+    /// <inheritdoc/>
+    /// </summary>
+    public Button MovePreviousButton { get; init; }
+
+    /// <summary>
+    /// <inheritdoc/>
     /// </summary>
     public string Title
     {
@@ -110,11 +122,8 @@ namespace MacroTools.BookSystem
       get => _activePageIndex;
       set
       {
-        var pageCount = Pages.Count;
-        if (value >= pageCount)
-          throw new ArgumentOutOfRangeException(nameof(value),
-            $"ActivePageIndex must be lower than page count {pageCount}.");
-        if (value < 0) throw new ArgumentOutOfRangeException(nameof(value), "ActivePageIndex cannot be negative.");
+        if (value >= Pages.Count || value < 0)
+          return;
         Pages[_activePageIndex].Visible = false;
         _activePageIndex = value;
         Pages[_activePageIndex].Visible = true;
@@ -122,11 +131,27 @@ namespace MacroTools.BookSystem
       }
     }
 
-    private void OnClickNextButton(player whichPlayer)
+    /// <summary>
+    /// <inheritdoc/>
+    /// </summary>
+    /// <param name="triggerPlayer"></param>
+    public void Exit(player triggerPlayer)
+    {
+      if (triggerPlayer != GetLocalPlayer())
+        return;
+      Visible = false;
+      LauncherButton.Visible = true;
+    }
+
+    /// <summary>
+    /// <inheritdoc/>
+    /// </summary>
+    /// <param name="triggerPlayer"></param>
+    public void MoveNext(player triggerPlayer)
     {
       try
       {
-        if (GetLocalPlayer() == whichPlayer) 
+        if (GetLocalPlayer() == triggerPlayer)
           ActivePageIndex++;
       }
       catch (Exception ex)
@@ -135,11 +160,15 @@ namespace MacroTools.BookSystem
       }
     }
 
-    private void OnClickPreviousButton(player whichPlayer)
+    /// <summary>
+    /// <inheritdoc/>
+    /// </summary>
+    /// <param name="triggerPlayer"></param>
+    public void MovePrevious(player triggerPlayer)
     {
       try
       {
-        if (GetLocalPlayer() == whichPlayer) 
+        if (GetLocalPlayer() == triggerPlayer)
           ActivePageIndex--;
       }
       catch (Exception ex)
@@ -148,13 +177,18 @@ namespace MacroTools.BookSystem
       }
     }
 
-    private void OpenFirstPage(player whichPlayer)
+    /// <summary>
+    /// <inheritdoc/>
+    /// </summary>
+    /// <param name="triggerPlayer"></param>
+    public void Open(player triggerPlayer)
     {
       try
       {
-        if (whichPlayer != GetLocalPlayer())
+        if (triggerPlayer != GetLocalPlayer())
           return;
         Visible = true;
+        LauncherButton.Visible = false;
         foreach (var page in Pages)
         {
           page.Visible = false;
@@ -196,9 +230,8 @@ namespace MacroTools.BookSystem
     private void RefreshNavigationButtonVisiblity()
     {
       var pageCount = Pages.Count;
-
-      _nextButton.Visible = pageCount > ActivePageIndex + 1;
-      _previousButton.Visible = ActivePageIndex > 0;
+      MoveNextButton.Visible = pageCount > ActivePageIndex + 1;
+      MovePreviousButton.Visible = ActivePageIndex > 0;
     }
   }
 }

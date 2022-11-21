@@ -22,28 +22,16 @@ namespace MacroTools.BookSystem
     public static void Register(IBook book, player? whichPlayer = null)
     {
       Books.Add(book);
-      var launcherButton = new Button("ScriptDialogButton", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0)
+      book.LauncherButton = new Button("ScriptDialogButton", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0)
       {
         Width = book.LauncherParent.GetWidth(),
         Height = book.LauncherParent.GetHeight(),
         Text = book.Title,
         Visible = whichPlayer == null || whichPlayer == GetLocalPlayer()
       };
-      launcherButton.SetPoint(FRAMEPOINT_TOP, book.LauncherParent, FRAMEPOINT_BOTTOM, 0, 0);
-      launcherButton.OnClick = triggerPlayer =>
-      {
-        if (triggerPlayer != GetLocalPlayer()) 
-          return;
-        book.Visible = true;
-        launcherButton.Visible = false;
-      };
-      book.OnClickExitButton = triggerPlayer =>
-      {
-        if (triggerPlayer != GetLocalPlayer()) 
-          return;
-        book.Visible = false;
-        launcherButton.Visible = true;
-      };
+      book.LauncherButton.SetPoint(FRAMEPOINT_TOP, book.LauncherParent, FRAMEPOINT_BOTTOM, 0, 0);
+      book.LauncherButton.OnClick = book.Open;
+      
     }
 
     private static void LoadToc(string tocFilePath)
