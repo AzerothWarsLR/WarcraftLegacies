@@ -27,7 +27,7 @@ jobs:
                     solutionPath: ./WarcraftLegacies.sln
                     minimumSeverity: error
                     failOnIssue: 1
-                    exclude: ./src/War3Api.Object/*
+                    exclude: ./src/War3Api.Object/**
     
     deploy-docs:
         name: Deploy Docs
