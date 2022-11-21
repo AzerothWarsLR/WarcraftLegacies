@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 
 namespace WarcraftLegacies.Source.Setup
@@ -25,12 +25,9 @@ namespace WarcraftLegacies.Source.Setup
       GilneasSetup.Setup();
       ZandalarSetup.Setup(preplacedUnitSystem);
       GoblinSetup.Setup();
-      TwilightSetup.Setup();
       ScarletSetup.Setup(preplacedUnitSystem);
-      CthunSetup.Setup();
       ForsakenSetup.Setup();
       DraeneiSetup.Setup();
-      NzothSetup.Setup();
       DragonmawSetup.Setup();
     }
   }

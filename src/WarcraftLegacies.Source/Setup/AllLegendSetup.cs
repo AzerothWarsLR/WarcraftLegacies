@@ -27,7 +27,6 @@ namespace WarcraftLegacies.Source.Setup
       LegendSentinels.Setup(preplacedUnitSystem);
       LegendStormwind.Setup(preplacedUnitSystem);
       LegendTroll.Setup();
-      LegendTwilight.Setup(preplacedUnitSystem);
       LegendWarsong.Setup(preplacedUnitSystem);
       LegendDragonmaw.Setup(preplacedUnitSystem);
     }

@@ -1,4 +1,4 @@
-using static War3Api.Common;
+﻿using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup
 {
@@ -153,7 +153,6 @@ namespace WarcraftLegacies.Source.Setup
 		public static readonly camerasetup gilneasChapter2Cam3 = CreateCameraSetup();
 		public static readonly camerasetup gilneasChapter2Cam4 = CreateCameraSetup();
 		public static readonly camerasetup forsaken1 = CreateCameraSetup();
-		public static readonly camerasetup twilight1 = CreateCameraSetup();
 
 		static Cameras()
 		{
