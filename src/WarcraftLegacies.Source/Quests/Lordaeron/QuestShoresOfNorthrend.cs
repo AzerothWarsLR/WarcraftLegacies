@@ -51,31 +51,31 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       }
       if(completingFaction.Player != null)
       {
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_H01C_HUNTSMAN_LORDAERON, -513, 16679, (float)(4757993 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_NMRK_MARKETPLACE_LORDAERON, 1280, 16064, (float)(4712389 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_HCTW_CANNON_TOWER, -640, 16576, (float)(4712389 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_HBAR_BARRACKS, -256, 16832, (float)(4712389 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_HALT_ALTAR_OF_KINGS, 416, 16416, (float)(4712389 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_HPEA_PEASANT_LORDAERON_STORMWIND_WORKER, 8187402, 1686473, (float)(6156587 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_HPEA_PEASANT_LORDAERON_STORMWIND_WORKER, 6240182, 1672541, (float)(4578159 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_HGTW_GUARD_TOWER_LORDAERON, -960, 15872, (float)(4712389 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_HDES_DESTROYER_ALLIANCE, 582, 15512, (float)(43173 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_HSHY_ALLIANCE_SHIPYARD_LORDAERON, 800, 15776, (float)(4712389 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_HCAS_CASTLE, -512, 15744, (float)(4712389 * MathEx.DegToRad), 512);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_HBLA_BLACKSMITH_LORDAERON, 672, 16928, (float)(4712389 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_HFOO_FOOTMAN_LORDAERON, 771, 16064, (float)(06401012 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_HGTW_GUARD_TOWER_LORDAERON, -448, 16128, (float)(4712389 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_HWTW_SCOUT_TOWER_LORDAERON, 704, 17152, (float)(4712389 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_HHOU_FARM, -1088, 16576, (float)(4712389 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_H035_CHAPEL_LORDAERON, -928, 16736, (float)(4712389 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_HFOO_FOOTMAN_LORDAERON, -174, 16631, (float)(3987584 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_HFOO_FOOTMAN_LORDAERON, -388, 16871, (float)(4113693 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_HFOO_FOOTMAN_LORDAERON, -561, 16521, (float)(602386 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_HDES_DESTROYER_ALLIANCE, 251, 15569, (float)(533097 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_HBLA_BLACKSMITH_LORDAERON, 800, 16288, (float)(4712389 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_HGTW_GUARD_TOWER_LORDAERON, 1472, 16384, (float)(4712389 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_HKNI_KNIGHT_LORDAERON, 893, 16175, (float)(4130178 * MathEx.DegToRad), 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_NCHP_MAGE_LORDAERON, -931, 16554, (float)(5458206 * MathEx.DegToRad), 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_H01C_HUNTSMAN_LORDAERON, -513, 16679, 4757993 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_NMRK_MARKETPLACE_LORDAERON, 1280, 16064, 4712389 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_HCTW_CANNON_TOWER, -640, 16576, 4712389 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_HBAR_BARRACKS, -256, 16832, 4712389 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_HALT_ALTAR_OF_KINGS, 416, 16416, 4712389 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_HPEA_PEASANT_LORDAERON_STORMWIND_WORKER, 8187402, 1686473, 6156587 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_HPEA_PEASANT_LORDAERON_STORMWIND_WORKER, 6240182, 1672541, 4578159 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_HGTW_GUARD_TOWER_LORDAERON, -960, 15872, 4712389 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_HDES_DESTROYER_ALLIANCE, 582, 15512, 43173 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_HSHY_ALLIANCE_SHIPYARD_LORDAERON, 800, 15776, 4712389 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_HCAS_CASTLE, -512, 15744, 4712389 * MathEx.DegToRad, 512);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_HBLA_BLACKSMITH_LORDAERON, 672, 16928, 4712389 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_HFOO_FOOTMAN_LORDAERON, 771, 16064, 06401012 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_HGTW_GUARD_TOWER_LORDAERON, -448, 16128, 4712389 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_HWTW_SCOUT_TOWER_LORDAERON, 704, 17152, 4712389 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_HHOU_FARM, -1088, 16576, 4712389 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_H035_CHAPEL_LORDAERON, -928, 16736, 4712389 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_HFOO_FOOTMAN_LORDAERON, -174, 16631, 3987584 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_HFOO_FOOTMAN_LORDAERON, -388, 16871, 4113693 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_HFOO_FOOTMAN_LORDAERON, -561, 16521, 602386 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_HDES_DESTROYER_ALLIANCE, 251, 15569, 533097 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_HBLA_BLACKSMITH_LORDAERON, 800, 16288, 4712389 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_HGTW_GUARD_TOWER_LORDAERON, 1472, 16384, 4712389 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_HKNI_KNIGHT_LORDAERON, 893, 16175, 4130178 * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_NCHP_MAGE_LORDAERON, -931, 16554, 5458206 * MathEx.DegToRad, 256);
       }
     
       completingFaction.ModObjectLimit(ResearchId, -Faction.UNLIMITED);

@@ -116561,3 +116561,27 @@ STRING 19429
 E
 }
 
+STRING 19430
+// Units: nbot (Goblin Privateer), EditorSuffix (Name - Editor Suffix)
+{
+(Neutral Goblin)
+}
+
+STRING 19431
+// Abilities: A0ZF (Upkeep -2 gold per minute), Name (Name)
+{
+Upkeep -2 gold per minute
+}
+
+STRING 19432
+// Abilities: A0ZF (Upkeep -2 gold per minute), Tip (Tooltip - Normal)
+{
+Salary
+}
+
+STRING 19433
+// Abilities: A0ZF (Upkeep -2 gold per minute), Ubertip (Tooltip - Normal - Extended)
+{
+Costs 2 gold per minute
+}
+

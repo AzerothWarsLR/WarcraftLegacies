@@ -30,8 +30,6 @@ jobs:
                     include: |
                         ./src/MacroTools/**
                         ./src/WarcraftLegacies.Source/**
-                        ./src/TestMap.Source/**
-                        ./src/Launcher/**
                     solutionWideAnalysis: false
     
     deploy-docs:

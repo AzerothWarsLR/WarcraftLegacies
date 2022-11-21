@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
   {
     private readonly List<unit> _rescueUnits = new();
 
-    public QuestDragonmawPort(Rectangle rescueRect) : base("Dragonmaw Port",
+    public QuestDragonmawPort(Rectangle rescueRect, unit waygateDragonmawPort) : base("Dragonmaw Port",
       "The Dragonmaw Port will be the site of the portal summoning to escape to kalimdor! The Tyrant Mor'ghor and his followers have taken control of the Port, kill him to reunite the clan. ",
       "ReplaceableTextures\\CommandButtons\\BTNIronHordeSummoningCircle.blp")
     {
@@ -25,31 +25,31 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       AddObjective(new ObjectiveControlLegend(LegendDragonmaw.Zaela, false));
       AddObjective(new ObjectiveExpire(480));
       AddObjective(new ObjectiveSelfExists());
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          SetUnitInvulnerable(unit, true);
-          _rescueUnits.Add(unit);
-        }
 
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
+      _rescueUnits.Remove(waygateDragonmawPort);
       Required = true;
     }
 
     //Todo: bad flavour
+    /// <inheritdoc />
     protected override string CompletionPopup =>
       "Dragonmaw Port has fallen under our control.";
 
+    /// <inheritdoc />
     protected override string RewardDescription => "Control of all buildings in Dragonmaw Port";
 
+    /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
+    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
       PlayThematicMusic("war3mapImported\\DragonmawTheme.mp3");
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      completingFaction.Player?.RescueGroup(_rescueUnits);
     }
   }
 }
