@@ -34,7 +34,7 @@ jobs:
                   resharper-version: "2021.2"
     
             - name: Analyze code
-              run: InspectCode.sh WarcraftLegacies.sln
+              run: InspectCode.sh WarcraftLegacies.sln -o=ReSharper.txt
     
     deploy-docs:
         name: Deploy Docs
