@@ -25,11 +25,16 @@ jobs:
     resharper:
         runs-on: ubuntu-latest
         steps:
-            -   uses: actions/checkout@master
-            -   uses: goit/setup-resharper@v2.0.0
-                with:
-                    version: '2021.2'
-            -   run: InspectCode.sh WarcraftLegacies.sln
+            - name: Checkout repository
+              uses: actions/checkout@v2.3.4
+    
+            - name: Install ReSharper CLT
+              uses: kasperhesthaven/setup-resharper-clt@v1.1.0
+              with:
+                  resharper-version: "2021.2"
+    
+            - name: Analyze code
+              run: InspectCode.sh YourSolution.sln -o=<PathToOutputFile>
     
     deploy-docs:
         name: Deploy Docs
