@@ -80,7 +80,7 @@ namespace MacroTools.BookSystem
     /// <summary>
     /// <inheritdoc/>
     /// </summary>
-    public Button ExitButton { get; set; }
+    public Button ExitButton { get; init; }
 
     /// <summary>
     /// <inheritdoc/>
@@ -90,12 +90,12 @@ namespace MacroTools.BookSystem
     /// <summary>
     /// <inheritdoc/>
     /// </summary>
-    public Button MoveNextButton { get; set; }
+    public Button MoveNextButton { get; init; }
 
     /// <summary>
     /// <inheritdoc/>
     /// </summary>
-    public Button MovePreviousButton { get; set; }
+    public Button MovePreviousButton { get; init; }
 
     /// <summary>
     /// <inheritdoc/>
@@ -122,11 +122,8 @@ namespace MacroTools.BookSystem
       get => _activePageIndex;
       set
       {
-        var pageCount = Pages.Count;
-        if (value >= pageCount)
-          throw new ArgumentOutOfRangeException(nameof(value),
-            $"ActivePageIndex must be lower than page count {pageCount}.");
-        if (value < 0) throw new ArgumentOutOfRangeException(nameof(value), "ActivePageIndex cannot be negative.");
+        if (value >= Pages.Count || value < 0)
+          return;
         Pages[_activePageIndex].Visible = false;
         _activePageIndex = value;
         Pages[_activePageIndex].Visible = true;

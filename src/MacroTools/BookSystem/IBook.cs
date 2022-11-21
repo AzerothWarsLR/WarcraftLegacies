@@ -25,7 +25,7 @@ namespace MacroTools.BookSystem
     /// <summary>
     /// A button for exiting of the book
     /// </summary>
-    public Button ExitButton { get; set; }
+    public Button ExitButton { get; init; }
 
     /// <summary>
     /// A button for launching of the book
@@ -35,12 +35,12 @@ namespace MacroTools.BookSystem
     /// <summary>
     /// A button for moving to the next page of the book
     /// </summary>
-    public Button MoveNextButton { get; set; }
+    public Button MoveNextButton { get; init; }
 
     /// <summary>
     /// A button for moving to the previous page of the book
     /// </summary>
-    public Button MovePreviousButton { get; set; }
+    public Button MovePreviousButton { get; init; }
 
     /// <summary>
     ///  Opens the book
