@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       AddObjective(
         new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N08T_DRAGONMAW_PORT_10GOLD_MIN)));
       AddObjective(new ObjectiveLegendDead(LegendNeutral.Morghor));
-      AddObjective(new ObjectiveControlLegend(LegendDragonmaw.LegendZaela, false));
+      AddObjective(new ObjectiveControlLegend(LegendDragonmaw.Zaela, false));
       AddObjective(new ObjectiveExpire(480));
       AddObjective(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())

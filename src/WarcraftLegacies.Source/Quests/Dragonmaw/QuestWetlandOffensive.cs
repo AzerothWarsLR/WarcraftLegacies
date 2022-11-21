@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       "ReplaceableTextures\\CommandButtons\\BTNHumanShipyard.blp")
     {
       AddObjective(new ObjectiveLegendDead(LegendIronforge.LegendMenethilHarbor));
-      AddObjective(new ObjectiveControlLegend(LegendDragonmaw.LegendNekrosh, false));
+      AddObjective(new ObjectiveControlLegend(LegendDragonmaw.Nekrosh, false));
       AddObjective(new ObjectiveControlLegend(LegendDragonmaw.DragonmawPort, false));
       AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendDragonmaw.DragonmawPort));
       AddObjective(new ObjectiveExpire(600));
@@ -41,7 +41,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
 
     private static void GiveReward(Faction completingFaction)
     {
-      AddHeroXP(LegendDragonmaw.LegendNekrosh.Unit, 3000, true);
+      AddHeroXP(LegendDragonmaw.Nekrosh.Unit, 3000, true);
       completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 750);
       GetExpiredTimer().Destroy();
     }
