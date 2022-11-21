@@ -1,4 +1,5 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeEditing/GenerateMemberBody/DocumentationGenerationKind/@EntryValue">Inherit</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/GeneratedFilesAndFolders/=3DE25822_002D0AB6_002D4F6B_002DB8E3_002D6353A4068171/@EntryIndexedValue">3DE25822-0AB6-4F6B-B8E3-6353A4068171</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/GeneratedFilesAndFolders/=BD465133_002DF515_002D4436_002DBDCD_002D31861A3D0DDD/@EntryIndexedValue">BD465133-F515-4436-BDCD-31861A3D0DDD</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/GeneratedFilesAndFolders/=F93D82E3_002DB6B7_002D4BBD_002DB87D_002D8AD0969BFC94_002Ff_003AConstants_002Ecs/@EntryIndexedValue">F93D82E3-B6B7-4BBD-B87D-8AD0969BFC94/f:Constants.cs</s:String>
