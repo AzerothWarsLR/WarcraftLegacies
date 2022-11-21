@@ -21,10 +21,15 @@ jobs:
                 run: dotnet build --no-restore
             -   name: Test
                 run: dotnet test --no-build --verbosity normal
-            -   name: resharper
-                uses: glassechidna/resharper-action@master
+    
+    resharper:
+        runs-on: ubuntu-latest
+        steps:
+            -   uses: actions/checkout@master
+            -   uses: goit/setup-resharper@v2
                 with:
-                    solution: WarcraftLegacies.sln
+                    version: '2021.2'
+            -   run: InspectCode <solution file>
     
     deploy-docs:
         name: Deploy Docs
