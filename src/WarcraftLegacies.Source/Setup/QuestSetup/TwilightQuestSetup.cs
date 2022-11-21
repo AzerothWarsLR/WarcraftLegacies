@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       var twilight = TwilightSetup.TwilightsHammer;
-      twilight.StartingQuest = twilight.AddQuest(new QuestDragonmawPort(Regions.DragonmawUnlock));
+      //twilight.StartingQuest = twilight.AddQuest(new QuestDragonmawPort(Regions.DragonmawUnlock));
       twilight.AddQuest(new QuestGrimBatol(Regions.Grim_Batol,
         preplacedUnitSystem.GetUnit(Constants.UNIT_N08R_GRIM_BATOL_TUNNELS, new Point(16562, -2766)),
         preplacedUnitSystem.GetUnit(Constants.UNIT_N08R_GRIM_BATOL_TUNNELS, new Point(16756, -2473)),

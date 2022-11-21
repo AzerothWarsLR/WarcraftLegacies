@@ -20,15 +20,16 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestOrgrimmarPortal"/> class.
     /// </summary>
+    /// <param name="prequel">This quest must be completed first.</param>
     /// <param name="waygateDragonmawPort">Starts hidden and gets revealed when the quest is complete.</param>
-    public QuestOrgrimmarPortal(unit waygateDragonmawPort) : base(
+    public QuestOrgrimmarPortal(QuestData prequel, unit waygateDragonmawPort) : base(
       "The Reunification of the Horde",
       "The new Horde in Kalimdor has send a message to the Dragonmaw Clan to join them, Zaela has foreseen it to be the salvation of the Dragonmaw Clan. But the portal will be unstable, as soon as it is open, we should escape with great haste",
       "ReplaceableTextures\\CommandButtons\\BTNPortal.blp")
     {
       _waygateDragonmawPort = waygateDragonmawPort;
 
-      AddObjective(new ObjectiveControlLegend(LegendDragonmaw.DragonmawPort, false));
+      AddObjective(new ObjectiveCompleteQuest(prequel));
       AddObjective(new ObjectiveControlLegend(LegendNeutral.GrimBatol, false));
       waygateDragonmawPort.Show(false);
       Required = true;
