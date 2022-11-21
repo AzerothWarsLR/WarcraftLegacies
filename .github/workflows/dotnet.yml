@@ -24,7 +24,7 @@ jobs:
             -   name: resharper
                 uses: glassechidna/resharper-action@master
                 with:
-                    solution: HelloWorld.sln
+                    solution: WarcraftLegacies.sln
     
     deploy-docs:
         name: Deploy Docs
