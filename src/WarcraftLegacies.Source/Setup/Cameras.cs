@@ -153,8 +153,9 @@ namespace WarcraftLegacies.Source.Setup
 		public static readonly camerasetup gilneasChapter2Cam3 = CreateCameraSetup();
 		public static readonly camerasetup gilneasChapter2Cam4 = CreateCameraSetup();
 		public static readonly camerasetup forsaken1 = CreateCameraSetup();
+    public static readonly camerasetup twilight1 = CreateCameraSetup();
 
-		static Cameras()
+    static Cameras()
 		{
 			CameraSetupSetDestPosition(dalaran1, 9426.06f, 5152.28f, 0);
 			CameraSetupSetField(dalaran1, CAMERA_FIELD_ZOFFSET, 0f, 0);
