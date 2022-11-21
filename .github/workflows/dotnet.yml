@@ -21,16 +21,10 @@ jobs:
                 run: dotnet build --no-restore
             -   name: Test
                 run: dotnet test --no-build --verbosity normal
-    
-    resharper:
-        runs-on: ubuntu-latest
-        steps:
-            -   name: checkout
-                uses: actions/checkout@v2
             -   name: resharper
-                uses: glassechidna/resharper-action@master
-                with:
-                    solution: WarcraftLegacies.sln
+                    uses: glassechidna/resharper-action@master
+                    with:
+                        solution: WarcraftLegacies.sln
     
     deploy-docs:
         name: Deploy Docs
