@@ -22,11 +22,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Legend.Register(LegendZaela = new Legend
       {
+        Name = "Zaela",
         UnitType = FourCC("O05S")
       });
 
       Legend.Register(LegendNekrosh = new Legend
       {
+        Name = "Nekrosh",
         UnitType = FourCC("O01Q")
       });
 
