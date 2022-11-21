@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       "Zaela emerges victorious, having pillaged Thelsamar, uncovering great treasures to bring back to the clan.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "3000 experience for Zaela and 750 gold at turn 10";
+    protected override string RewardDescription => "3000 experience for Zaela, 750 lumber and 750 gold at turn 10";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
@@ -45,6 +45,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
     {
       AddHeroXP(LegendDragonmaw.Zaela.Unit, 3000, true);
       completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 750);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 750);
       GetExpiredTimer().Destroy();
     }
   }

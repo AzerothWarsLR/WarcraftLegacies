@@ -33,12 +33,11 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       AddObjective(new ObjectiveControlLegend(LegendNeutral.GrimBatol, false));
       waygateDragonmawPort.Show(false);
       Required = true;
-      Global = true;
     }
 
     /// <inheritdoc />
     protected override string CompletionPopup =>
-      "The portal to Kalimdor is opened! Hurry, it will collapse in 60 seconds!";
+      "The portal to Kalimdor will open at turn 9! Once it does, hurry! it will only last for 60 seconds.";
 
     /// <inheritdoc />
     protected override string RewardDescription => "Open a Portal between Dragonmaw Port and Orgrimmar";

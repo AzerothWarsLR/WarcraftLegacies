@@ -58,6 +58,10 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         Duration = 10
       });
+
+      PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_NBOT_GOBLIN_PRIVATEER_NEUTRAL_GOBLIN, -2));
+      PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_NGIR_SHREDDER_GOBLIN_SHOP, -2));
+
     }
   }
 }

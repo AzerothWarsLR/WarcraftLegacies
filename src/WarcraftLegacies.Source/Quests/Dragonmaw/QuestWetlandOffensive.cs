@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
     protected override string CompletionPopup =>
       "Nek'rosh's revenge is finally complete and the plounder of Menethil Harbor will give the Dragonmaw plenty of ressources for the wars to come";
 
-    protected override string RewardDescription => "3000 experience for Nek'rosh and 750 gold at turn 10";
+    protected override string RewardDescription => "3000 experience for Nek'rosh, 750 gold and lumber at turn 10";
 
     protected override void OnComplete(Faction completingFaction)
     {
@@ -43,6 +43,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
     {
       AddHeroXP(LegendDragonmaw.Nekrosh.Unit, 3000, true);
       completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 750);
+      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 750);
       GetExpiredTimer().Destroy();
     }
   }
