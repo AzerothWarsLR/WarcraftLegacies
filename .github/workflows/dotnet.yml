@@ -22,9 +22,9 @@ jobs:
             -   name: Test
                 run: dotnet test --no-build --verbosity normal
             -   name: resharper
-                    uses: glassechidna/resharper-action@master
-                    with:
-                        solution: WarcraftLegacies.sln
+                uses: glassechidna/resharper-action@master
+                with:
+                    solution: HelloWorld.sln
     
     deploy-docs:
         name: Deploy Docs
