@@ -54,8 +54,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
           GiveReward(completingFaction);
         });
     }
-
-    /// <inheritdoc />
+    
     private void GiveReward(Faction completingFaction)
     {
       _waygateDragonmawPort
