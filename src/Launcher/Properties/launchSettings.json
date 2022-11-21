@@ -1,9 +1,5 @@
 {
   "profiles": {
-    "WSL": {
-      "commandName": "WSL2",
-      "distributionName": ""
-    },
     "TestMap: Test": {
       "commandName": "Project",
       "commandLineArgs": "Test \"..\\..\\..\\..\\..\\maps\\testsource.w3x\" \"..\\..\\..\\..\\TestMap.Source\""
