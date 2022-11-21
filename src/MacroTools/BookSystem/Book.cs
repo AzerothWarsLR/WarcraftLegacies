@@ -75,6 +75,14 @@ namespace MacroTools.BookSystem
       };
       _title.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOP, 0, -0.025f);
       AddFrame(_title);
+      var trig = CreateTrigger();
+      BlzTriggerRegisterPlayerKeyEvent(trig,GetLocalPlayer(),OSKEY_ESCAPE,BlzGetTriggerPlayerMetaKey(),false);
+      TriggerAddAction(trig, () =>
+      {
+        if (GetTriggerPlayer() != GetLocalPlayer())
+          return;
+        Exit(GetLocalPlayer());
+      });
     }
 
     /// <summary>
