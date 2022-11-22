@@ -5,7 +5,6 @@ using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
-using WarcraftLegacies.Source.PassiveAbilities;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -43,7 +42,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Effect = "Abilities\\Spells\\Undead\\ReplenishMana\\SpiritTouchTarget.mdl"
       });
 
-      PassiveAbilityManager.Register(new FlavourBasedOnLocation(Constants.UNIT_O05J_DRAGON_HATCHERY_DRAGONMAW)
+      PassiveAbilityManager.Register(new LocationBasedFlavourAbility(Constants.UNIT_O05J_DRAGON_HATCHERY_DRAGONMAW)
       {
         LocationBasedFlavourSettings = new List<LocationBasedFlavourSetting>
         {

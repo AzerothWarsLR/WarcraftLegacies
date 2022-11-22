@@ -1,13 +1,12 @@
 ﻿using System.Collections.Generic;
-using System.Drawing;
 using MacroTools.PassiveAbilitySystem;
 
-namespace WarcraftLegacies.Source.PassiveAbilities
+namespace MacroTools.PassiveAbilities
 {
   /// <summary>
   /// The unit changes its model and name depending on the region it's created in.
   /// </summary>
-  public sealed class FlavourBasedOnLocation : PassiveAbility
+  public sealed class LocationBasedFlavourAbility : PassiveAbility
   {
     /// <summary>
     /// A list of settings that determine the models and names given to the unit when they are nearest the given location.
@@ -15,7 +14,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities
     public List<LocationBasedFlavourSetting>? LocationBasedFlavourSettings { get; init; }
     
     /// <inheritdoc />
-    public FlavourBasedOnLocation(int unitTypeId) : base(unitTypeId)
+    public LocationBasedFlavourAbility(int unitTypeId) : base(unitTypeId)
     {
     }
   }

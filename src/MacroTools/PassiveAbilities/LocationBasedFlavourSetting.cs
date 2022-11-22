@@ -1,6 +1,6 @@
 ﻿using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.PassiveAbilities
+namespace MacroTools.PassiveAbilities
 {
   /// <summary>
   /// Determines a units' flavour changes when near a particular location.
