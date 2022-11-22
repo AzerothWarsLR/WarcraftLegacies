@@ -25,8 +25,7 @@ namespace TestMap.Source.Setup
           speaker: "Cenarius",
           audience: new[]
           {
-            DalaranSetup.Dalaran,
-            BlackEmpireSetup.BlackEmpire
+            DalaranSetup.Dalaran
           }
         ));
         DialogueManager.Add(new Dialogue(
@@ -39,31 +38,6 @@ namespace TestMap.Source.Setup
           "Kel'thuzad"
         ));
         var gromObjectives = new List<Objective>();
-        gromObjectives.Add(new ObjectiveControlLegend(LegendSetup.Kael, false)
-        {
-          EligibleFactions = new List<Faction>
-          {
-            BlackEmpireSetup.BlackEmpire
-          }
-        });
-        gromObjectives.Add(new ObjectiveControlLegend(LegendSetup.Uther, false)
-        {
-          EligibleFactions = new List<Faction>
-          {
-            BlackEmpireSetup.BlackEmpire
-          }
-        });
-        DialogueManager.Add(new Dialogue(
-          objectives: gromObjectives,
-          soundFile: @"Sound\Dialogue\OrcCampaign\Orc05\O05Grom26.flac",
-          caption:
-          "Yes! I feel the power once again! Come, my warriors; drink from the dark waters, and you will be reborn!",
-          speaker: "Grom Hellscream",
-          audience: new[]
-          {
-            BlackEmpireSetup.BlackEmpire
-          }
-        ));
       }
       catch (Exception ex)
       {

@@ -8,12 +8,6 @@ namespace TestMap.Source.Setup
   {
     public static void Setup()
     {
-      var exampleQuestA = new ExampleQuestA();
-      
-      BlackEmpireSetup.BlackEmpire.AddQuest(exampleQuestA);
-      BlackEmpireSetup.BlackEmpire.AddQuest(new ExampleQuestB(exampleQuestA));
-      BlackEmpireSetup.BlackEmpire.AddQuest(new ExampleQuestC());
-
       var sharedQuest = new SharedQuest();
       foreach (var faction in FactionManager.GetAllFactions())
       {
