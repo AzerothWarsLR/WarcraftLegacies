@@ -858,6 +858,36 @@ bj_lastDyingWidget = nil
 DestroyTrigger(GetTriggeringTrigger())
 end
 
+function Unit000070_DropItems()
+local trigWidget = nil
+local trigUnit = nil
+local itemID = 0
+local canDrop = true
+
+trigWidget = bj_lastDyingWidget
+if (trigWidget == nil) then
+trigUnit = GetTriggerUnit()
+end
+if (trigUnit ~= nil) then
+canDrop = not IsUnitHidden(trigUnit)
+if (canDrop and GetChangingUnit() ~= nil) then
+canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+end
+end
+if (canDrop) then
+RandomDistReset()
+RandomDistAddItem(FourCC("texp"), 100)
+itemID = RandomDistChoose()
+if (trigUnit ~= nil) then
+UnitDropItem(trigUnit, itemID)
+else
+WidgetDropItem(trigWidget, itemID)
+end
+end
+bj_lastDyingWidget = nil
+DestroyTrigger(GetTriggeringTrigger())
+end
+
 function Unit000115_DropItems()
 local trigWidget = nil
 local trigUnit = nil
@@ -879,36 +909,6 @@ RandomDistReset()
 RandomDistAddItem(FourCC("srrc"), 33)
 RandomDistAddItem(FourCC("rej6"), 33)
 RandomDistAddItem(FourCC("sres"), 34)
-itemID = RandomDistChoose()
-if (trigUnit ~= nil) then
-UnitDropItem(trigUnit, itemID)
-else
-WidgetDropItem(trigWidget, itemID)
-end
-end
-bj_lastDyingWidget = nil
-DestroyTrigger(GetTriggeringTrigger())
-end
-
-function Unit000133_DropItems()
-local trigWidget = nil
-local trigUnit = nil
-local itemID = 0
-local canDrop = true
-
-trigWidget = bj_lastDyingWidget
-if (trigWidget == nil) then
-trigUnit = GetTriggerUnit()
-end
-if (trigUnit ~= nil) then
-canDrop = not IsUnitHidden(trigUnit)
-if (canDrop and GetChangingUnit() ~= nil) then
-canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-end
-end
-if (canDrop) then
-RandomDistReset()
-RandomDistAddItem(FourCC("rhe3"), 100)
 itemID = RandomDistChoose()
 if (trigUnit ~= nil) then
 UnitDropItem(trigUnit, itemID)
@@ -1012,7 +1012,7 @@ bj_lastDyingWidget = nil
 DestroyTrigger(GetTriggeringTrigger())
 end
 
-function Unit000381_DropItems()
+function Unit000331_DropItems()
 local trigWidget = nil
 local trigUnit = nil
 local itemID = 0
@@ -1030,7 +1030,7 @@ end
 end
 if (canDrop) then
 RandomDistReset()
-RandomDistAddItem(FourCC("rhe3"), 100)
+RandomDistAddItem(FourCC("texp"), 100)
 itemID = RandomDistChoose()
 if (trigUnit ~= nil) then
 UnitDropItem(trigUnit, itemID)
@@ -1042,7 +1042,7 @@ bj_lastDyingWidget = nil
 DestroyTrigger(GetTriggeringTrigger())
 end
 
-function Unit000511_DropItems()
+function Unit000333_DropItems()
 local trigWidget = nil
 local trigUnit = nil
 local itemID = 0
@@ -1060,37 +1060,7 @@ end
 end
 if (canDrop) then
 RandomDistReset()
-RandomDistAddItem(FourCC("rat9"), 100)
-itemID = RandomDistChoose()
-if (trigUnit ~= nil) then
-UnitDropItem(trigUnit, itemID)
-else
-WidgetDropItem(trigWidget, itemID)
-end
-end
-bj_lastDyingWidget = nil
-DestroyTrigger(GetTriggeringTrigger())
-end
-
-function Unit000523_DropItems()
-local trigWidget = nil
-local trigUnit = nil
-local itemID = 0
-local canDrop = true
-
-trigWidget = bj_lastDyingWidget
-if (trigWidget == nil) then
-trigUnit = GetTriggerUnit()
-end
-if (trigUnit ~= nil) then
-canDrop = not IsUnitHidden(trigUnit)
-if (canDrop and GetChangingUnit() ~= nil) then
-canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-end
-end
-if (canDrop) then
-RandomDistReset()
-RandomDistAddItem(FourCC("rhe2"), 100)
+RandomDistAddItem(FourCC("texp"), 100)
 itemID = RandomDistChoose()
 if (trigUnit ~= nil) then
 UnitDropItem(trigUnit, itemID)
@@ -1134,7 +1104,67 @@ bj_lastDyingWidget = nil
 DestroyTrigger(GetTriggeringTrigger())
 end
 
-function Unit000785_DropItems()
+function Unit000572_DropItems()
+local trigWidget = nil
+local trigUnit = nil
+local itemID = 0
+local canDrop = true
+
+trigWidget = bj_lastDyingWidget
+if (trigWidget == nil) then
+trigUnit = GetTriggerUnit()
+end
+if (trigUnit ~= nil) then
+canDrop = not IsUnitHidden(trigUnit)
+if (canDrop and GetChangingUnit() ~= nil) then
+canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+end
+end
+if (canDrop) then
+RandomDistReset()
+RandomDistAddItem(FourCC("phea"), 100)
+itemID = RandomDistChoose()
+if (trigUnit ~= nil) then
+UnitDropItem(trigUnit, itemID)
+else
+WidgetDropItem(trigWidget, itemID)
+end
+end
+bj_lastDyingWidget = nil
+DestroyTrigger(GetTriggeringTrigger())
+end
+
+function Unit000727_DropItems()
+local trigWidget = nil
+local trigUnit = nil
+local itemID = 0
+local canDrop = true
+
+trigWidget = bj_lastDyingWidget
+if (trigWidget == nil) then
+trigUnit = GetTriggerUnit()
+end
+if (trigUnit ~= nil) then
+canDrop = not IsUnitHidden(trigUnit)
+if (canDrop and GetChangingUnit() ~= nil) then
+canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+end
+end
+if (canDrop) then
+RandomDistReset()
+RandomDistAddItem(FourCC("texp"), 100)
+itemID = RandomDistChoose()
+if (trigUnit ~= nil) then
+UnitDropItem(trigUnit, itemID)
+else
+WidgetDropItem(trigWidget, itemID)
+end
+end
+bj_lastDyingWidget = nil
+DestroyTrigger(GetTriggeringTrigger())
+end
+
+function Unit000798_DropItems()
 local trigWidget = nil
 local trigUnit = nil
 local itemID = 0
@@ -1196,6 +1226,36 @@ bj_lastDyingWidget = nil
 DestroyTrigger(GetTriggeringTrigger())
 end
 
+function Unit000890_DropItems()
+local trigWidget = nil
+local trigUnit = nil
+local itemID = 0
+local canDrop = true
+
+trigWidget = bj_lastDyingWidget
+if (trigWidget == nil) then
+trigUnit = GetTriggerUnit()
+end
+if (trigUnit ~= nil) then
+canDrop = not IsUnitHidden(trigUnit)
+if (canDrop and GetChangingUnit() ~= nil) then
+canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+end
+end
+if (canDrop) then
+RandomDistReset()
+RandomDistAddItem(FourCC("modt"), 100)
+itemID = RandomDistChoose()
+if (trigUnit ~= nil) then
+UnitDropItem(trigUnit, itemID)
+else
+WidgetDropItem(trigWidget, itemID)
+end
+end
+bj_lastDyingWidget = nil
+DestroyTrigger(GetTriggeringTrigger())
+end
+
 function Unit000936_DropItems()
 local trigWidget = nil
 local trigUnit = nil
@@ -1217,6 +1277,66 @@ RandomDistReset()
 RandomDistAddItem(FourCC("envl"), 33)
 RandomDistAddItem(FourCC("pnvu"), 33)
 RandomDistAddItem(FourCC("pres"), 34)
+itemID = RandomDistChoose()
+if (trigUnit ~= nil) then
+UnitDropItem(trigUnit, itemID)
+else
+WidgetDropItem(trigWidget, itemID)
+end
+end
+bj_lastDyingWidget = nil
+DestroyTrigger(GetTriggeringTrigger())
+end
+
+function Unit000970_DropItems()
+local trigWidget = nil
+local trigUnit = nil
+local itemID = 0
+local canDrop = true
+
+trigWidget = bj_lastDyingWidget
+if (trigWidget == nil) then
+trigUnit = GetTriggerUnit()
+end
+if (trigUnit ~= nil) then
+canDrop = not IsUnitHidden(trigUnit)
+if (canDrop and GetChangingUnit() ~= nil) then
+canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+end
+end
+if (canDrop) then
+RandomDistReset()
+RandomDistAddItem(FourCC("tkno"), 100)
+itemID = RandomDistChoose()
+if (trigUnit ~= nil) then
+UnitDropItem(trigUnit, itemID)
+else
+WidgetDropItem(trigWidget, itemID)
+end
+end
+bj_lastDyingWidget = nil
+DestroyTrigger(GetTriggeringTrigger())
+end
+
+function Unit001033_DropItems()
+local trigWidget = nil
+local trigUnit = nil
+local itemID = 0
+local canDrop = true
+
+trigWidget = bj_lastDyingWidget
+if (trigWidget == nil) then
+trigUnit = GetTriggerUnit()
+end
+if (trigUnit ~= nil) then
+canDrop = not IsUnitHidden(trigUnit)
+if (canDrop and GetChangingUnit() ~= nil) then
+canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+end
+end
+if (canDrop) then
+RandomDistReset()
+RandomDistAddItem(FourCC("shas"), 100)
 itemID = RandomDistChoose()
 if (trigUnit ~= nil) then
 UnitDropItem(trigUnit, itemID)
@@ -1322,7 +1442,7 @@ bj_lastDyingWidget = nil
 DestroyTrigger(GetTriggeringTrigger())
 end
 
-function Unit001295_DropItems()
+function Unit001348_DropItems()
 local trigWidget = nil
 local trigUnit = nil
 local itemID = 0
@@ -1340,7 +1460,7 @@ end
 end
 if (canDrop) then
 RandomDistReset()
-RandomDistAddItem(FourCC("shas"), 100)
+RandomDistAddItem(FourCC("rhe2"), 100)
 itemID = RandomDistChoose()
 if (trigUnit ~= nil) then
 UnitDropItem(trigUnit, itemID)
@@ -1352,67 +1472,7 @@ bj_lastDyingWidget = nil
 DestroyTrigger(GetTriggeringTrigger())
 end
 
-function Unit001390_DropItems()
-local trigWidget = nil
-local trigUnit = nil
-local itemID = 0
-local canDrop = true
-
-trigWidget = bj_lastDyingWidget
-if (trigWidget == nil) then
-trigUnit = GetTriggerUnit()
-end
-if (trigUnit ~= nil) then
-canDrop = not IsUnitHidden(trigUnit)
-if (canDrop and GetChangingUnit() ~= nil) then
-canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-end
-end
-if (canDrop) then
-RandomDistReset()
-RandomDistAddItem(FourCC("tkno"), 100)
-itemID = RandomDistChoose()
-if (trigUnit ~= nil) then
-UnitDropItem(trigUnit, itemID)
-else
-WidgetDropItem(trigWidget, itemID)
-end
-end
-bj_lastDyingWidget = nil
-DestroyTrigger(GetTriggeringTrigger())
-end
-
-function Unit001500_DropItems()
-local trigWidget = nil
-local trigUnit = nil
-local itemID = 0
-local canDrop = true
-
-trigWidget = bj_lastDyingWidget
-if (trigWidget == nil) then
-trigUnit = GetTriggerUnit()
-end
-if (trigUnit ~= nil) then
-canDrop = not IsUnitHidden(trigUnit)
-if (canDrop and GetChangingUnit() ~= nil) then
-canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-end
-end
-if (canDrop) then
-RandomDistReset()
-RandomDistAddItem(FourCC("modt"), 100)
-itemID = RandomDistChoose()
-if (trigUnit ~= nil) then
-UnitDropItem(trigUnit, itemID)
-else
-WidgetDropItem(trigWidget, itemID)
-end
-end
-bj_lastDyingWidget = nil
-DestroyTrigger(GetTriggeringTrigger())
-end
-
-function Unit001504_DropItems()
+function Unit001384_DropItems()
 local trigWidget = nil
 local trigUnit = nil
 local itemID = 0
@@ -1431,6 +1491,36 @@ end
 if (canDrop) then
 RandomDistReset()
 RandomDistAddItem(FourCC("texp"), 100)
+itemID = RandomDistChoose()
+if (trigUnit ~= nil) then
+UnitDropItem(trigUnit, itemID)
+else
+WidgetDropItem(trigWidget, itemID)
+end
+end
+bj_lastDyingWidget = nil
+DestroyTrigger(GetTriggeringTrigger())
+end
+
+function Unit001429_DropItems()
+local trigWidget = nil
+local trigUnit = nil
+local itemID = 0
+local canDrop = true
+
+trigWidget = bj_lastDyingWidget
+if (trigWidget == nil) then
+trigUnit = GetTriggerUnit()
+end
+if (trigUnit ~= nil) then
+canDrop = not IsUnitHidden(trigUnit)
+if (canDrop and GetChangingUnit() ~= nil) then
+canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+end
+end
+if (canDrop) then
+RandomDistReset()
+RandomDistAddItem(FourCC("rhe3"), 100)
 itemID = RandomDistChoose()
 if (trigUnit ~= nil) then
 UnitDropItem(trigUnit, itemID)
@@ -1463,66 +1553,6 @@ RandomDistReset()
 RandomDistAddItem(FourCC("envl"), 33)
 RandomDistAddItem(FourCC("pnvu"), 33)
 RandomDistAddItem(FourCC("pres"), 34)
-itemID = RandomDistChoose()
-if (trigUnit ~= nil) then
-UnitDropItem(trigUnit, itemID)
-else
-WidgetDropItem(trigWidget, itemID)
-end
-end
-bj_lastDyingWidget = nil
-DestroyTrigger(GetTriggeringTrigger())
-end
-
-function Unit001959_DropItems()
-local trigWidget = nil
-local trigUnit = nil
-local itemID = 0
-local canDrop = true
-
-trigWidget = bj_lastDyingWidget
-if (trigWidget == nil) then
-trigUnit = GetTriggerUnit()
-end
-if (trigUnit ~= nil) then
-canDrop = not IsUnitHidden(trigUnit)
-if (canDrop and GetChangingUnit() ~= nil) then
-canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-end
-end
-if (canDrop) then
-RandomDistReset()
-RandomDistAddItem(FourCC("texp"), 100)
-itemID = RandomDistChoose()
-if (trigUnit ~= nil) then
-UnitDropItem(trigUnit, itemID)
-else
-WidgetDropItem(trigWidget, itemID)
-end
-end
-bj_lastDyingWidget = nil
-DestroyTrigger(GetTriggeringTrigger())
-end
-
-function Unit002046_DropItems()
-local trigWidget = nil
-local trigUnit = nil
-local itemID = 0
-local canDrop = true
-
-trigWidget = bj_lastDyingWidget
-if (trigWidget == nil) then
-trigUnit = GetTriggerUnit()
-end
-if (trigUnit ~= nil) then
-canDrop = not IsUnitHidden(trigUnit)
-if (canDrop and GetChangingUnit() ~= nil) then
-canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-end
-end
-if (canDrop) then
-RandomDistReset()
-RandomDistAddItem(FourCC("phea"), 100)
 itemID = RandomDistChoose()
 if (trigUnit ~= nil) then
 UnitDropItem(trigUnit, itemID)
@@ -1626,156 +1656,6 @@ bj_lastDyingWidget = nil
 DestroyTrigger(GetTriggeringTrigger())
 end
 
-function Unit002681_DropItems()
-local trigWidget = nil
-local trigUnit = nil
-local itemID = 0
-local canDrop = true
-
-trigWidget = bj_lastDyingWidget
-if (trigWidget == nil) then
-trigUnit = GetTriggerUnit()
-end
-if (trigUnit ~= nil) then
-canDrop = not IsUnitHidden(trigUnit)
-if (canDrop and GetChangingUnit() ~= nil) then
-canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-end
-end
-if (canDrop) then
-RandomDistReset()
-RandomDistAddItem(FourCC("phea"), 100)
-itemID = RandomDistChoose()
-if (trigUnit ~= nil) then
-UnitDropItem(trigUnit, itemID)
-else
-WidgetDropItem(trigWidget, itemID)
-end
-end
-bj_lastDyingWidget = nil
-DestroyTrigger(GetTriggeringTrigger())
-end
-
-function Unit002772_DropItems()
-local trigWidget = nil
-local trigUnit = nil
-local itemID = 0
-local canDrop = true
-
-trigWidget = bj_lastDyingWidget
-if (trigWidget == nil) then
-trigUnit = GetTriggerUnit()
-end
-if (trigUnit ~= nil) then
-canDrop = not IsUnitHidden(trigUnit)
-if (canDrop and GetChangingUnit() ~= nil) then
-canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-end
-end
-if (canDrop) then
-RandomDistReset()
-RandomDistAddItem(FourCC("texp"), 100)
-itemID = RandomDistChoose()
-if (trigUnit ~= nil) then
-UnitDropItem(trigUnit, itemID)
-else
-WidgetDropItem(trigWidget, itemID)
-end
-end
-bj_lastDyingWidget = nil
-DestroyTrigger(GetTriggeringTrigger())
-end
-
-function Unit002792_DropItems()
-local trigWidget = nil
-local trigUnit = nil
-local itemID = 0
-local canDrop = true
-
-trigWidget = bj_lastDyingWidget
-if (trigWidget == nil) then
-trigUnit = GetTriggerUnit()
-end
-if (trigUnit ~= nil) then
-canDrop = not IsUnitHidden(trigUnit)
-if (canDrop and GetChangingUnit() ~= nil) then
-canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-end
-end
-if (canDrop) then
-RandomDistReset()
-RandomDistAddItem(FourCC("texp"), 100)
-itemID = RandomDistChoose()
-if (trigUnit ~= nil) then
-UnitDropItem(trigUnit, itemID)
-else
-WidgetDropItem(trigWidget, itemID)
-end
-end
-bj_lastDyingWidget = nil
-DestroyTrigger(GetTriggeringTrigger())
-end
-
-function Unit002860_DropItems()
-local trigWidget = nil
-local trigUnit = nil
-local itemID = 0
-local canDrop = true
-
-trigWidget = bj_lastDyingWidget
-if (trigWidget == nil) then
-trigUnit = GetTriggerUnit()
-end
-if (trigUnit ~= nil) then
-canDrop = not IsUnitHidden(trigUnit)
-if (canDrop and GetChangingUnit() ~= nil) then
-canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-end
-end
-if (canDrop) then
-RandomDistReset()
-RandomDistAddItem(FourCC("texp"), 100)
-itemID = RandomDistChoose()
-if (trigUnit ~= nil) then
-UnitDropItem(trigUnit, itemID)
-else
-WidgetDropItem(trigWidget, itemID)
-end
-end
-bj_lastDyingWidget = nil
-DestroyTrigger(GetTriggeringTrigger())
-end
-
-function Unit002861_DropItems()
-local trigWidget = nil
-local trigUnit = nil
-local itemID = 0
-local canDrop = true
-
-trigWidget = bj_lastDyingWidget
-if (trigWidget == nil) then
-trigUnit = GetTriggerUnit()
-end
-if (trigUnit ~= nil) then
-canDrop = not IsUnitHidden(trigUnit)
-if (canDrop and GetChangingUnit() ~= nil) then
-canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-end
-end
-if (canDrop) then
-RandomDistReset()
-RandomDistAddItem(FourCC("hslv"), 100)
-itemID = RandomDistChoose()
-if (trigUnit ~= nil) then
-UnitDropItem(trigUnit, itemID)
-else
-WidgetDropItem(trigWidget, itemID)
-end
-end
-bj_lastDyingWidget = nil
-DestroyTrigger(GetTriggeringTrigger())
-end
-
 function Unit002893_DropItems()
 local trigWidget = nil
 local trigUnit = nil
@@ -1857,36 +1737,6 @@ end
 if (canDrop) then
 RandomDistReset()
 RandomDistAddItem(FourCC("sres"), 100)
-itemID = RandomDistChoose()
-if (trigUnit ~= nil) then
-UnitDropItem(trigUnit, itemID)
-else
-WidgetDropItem(trigWidget, itemID)
-end
-end
-bj_lastDyingWidget = nil
-DestroyTrigger(GetTriggeringTrigger())
-end
-
-function Unit003128_DropItems()
-local trigWidget = nil
-local trigUnit = nil
-local itemID = 0
-local canDrop = true
-
-trigWidget = bj_lastDyingWidget
-if (trigWidget == nil) then
-trigUnit = GetTriggerUnit()
-end
-if (trigUnit ~= nil) then
-canDrop = not IsUnitHidden(trigUnit)
-if (canDrop and GetChangingUnit() ~= nil) then
-canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-end
-end
-if (canDrop) then
-RandomDistReset()
-RandomDistAddItem(FourCC("texp"), 100)
 itemID = RandomDistChoose()
 if (trigUnit ~= nil) then
 UnitDropItem(trigUnit, itemID)
@@ -2760,29 +2610,18 @@ end
 function CreateAllItems()
 local itemID
 
+BlzCreateItemWithSkin(FourCC("amrc"), -23569.8, 7764.5, FourCC("amrc"))
 BlzCreateItemWithSkin(FourCC("amrc"), -23664.3, 7610.8, FourCC("amrc"))
 BlzCreateItemWithSkin(FourCC("amrc"), -23378.6, 7548.7, FourCC("amrc"))
 BlzCreateItemWithSkin(FourCC("amrc"), -23330.3, 7300.0, FourCC("amrc"))
 BlzCreateItemWithSkin(FourCC("amrc"), -23855.4, 7771.9, FourCC("amrc"))
-BlzCreateItemWithSkin(FourCC("amrc"), -23569.8, 7764.5, FourCC("amrc"))
 BlzCreateItemWithSkin(FourCC("amrc"), -23121.6, 7190.1, FourCC("amrc"))
-BlzCreateItemWithSkin(FourCC("bspd"), -24151.0, 20144.7, FourCC("bspd"))
-BlzCreateItemWithSkin(FourCC("gold"), -24095.4, 19304.7, FourCC("gold"))
-BlzCreateItemWithSkin(FourCC("gold"), -23995.1, 19307.7, FourCC("gold"))
-BlzCreateItemWithSkin(FourCC("gold"), -23865.9, 19307.1, FourCC("gold"))
-BlzCreateItemWithSkin(FourCC("rhe1"), -26591.9, 20503.6, FourCC("rhe1"))
-BlzCreateItemWithSkin(FourCC("rhe1"), -25467.3, 24142.9, FourCC("rhe1"))
-BlzCreateItemWithSkin(FourCC("rhe1"), -27348.5, 19423.3, FourCC("rhe1"))
-BlzCreateItemWithSkin(FourCC("rhe2"), -26928.8, 18617.6, FourCC("rhe2"))
-BlzCreateItemWithSkin(FourCC("rhe2"), -26826.7, 19726.9, FourCC("rhe2"))
-BlzCreateItemWithSkin(FourCC("rhe3"), -24069.6, 19474.9, FourCC("rhe3"))
-BlzCreateItemWithSkin(FourCC("rma2"), -23913.7, 19484.5, FourCC("rma2"))
-BlzCreateItemWithSkin(FourCC("rman"), -26587.1, 20234.8, FourCC("rman"))
-BlzCreateItemWithSkin(FourCC("rman"), -26587.2, 18634.3, FourCC("rman"))
-BlzCreateItemWithSkin(FourCC("rman"), -26476.4, 22765.0, FourCC("rman"))
-BlzCreateItemWithSkin(FourCC("texp"), -23867.8, 19656.8, FourCC("texp"))
-BlzCreateItemWithSkin(FourCC("texp"), -24124.1, 19653.8, FourCC("texp"))
-BlzCreateItemWithSkin(FourCC("texp"), -24005.7, 19660.7, FourCC("texp"))
+BlzCreateItemWithSkin(FourCC("rhe1"), -20831.9, 22935.6, FourCC("rhe1"))
+BlzCreateItemWithSkin(FourCC("rhe1"), -21588.5, 21855.3, FourCC("rhe1"))
+BlzCreateItemWithSkin(FourCC("rhe2"), -21066.7, 22158.9, FourCC("rhe2"))
+BlzCreateItemWithSkin(FourCC("rhe2"), -21168.8, 21049.6, FourCC("rhe2"))
+BlzCreateItemWithSkin(FourCC("rman"), -20827.1, 22666.8, FourCC("rman"))
+BlzCreateItemWithSkin(FourCC("rman"), -20827.2, 21066.3, FourCC("rman"))
 end
 
 function CreateBuildingsForPlayer0()
@@ -4799,6 +4638,11 @@ SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("n02H"), -218.1, 20030.6, 141.475, FourCC("n02H"))
 SetUnitState(u, UNIT_STATE_MANA, 300)
 SetUnitAcquireRange(u, 200.0)
+u = BlzCreateUnitWithSkin(p, FourCC("nmcf"), -19355.5, 21947.6, 196.050, FourCC("nmcf"))
+t = CreateTrigger()
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
+TriggerAddAction(t, Unit001429_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("nlds"), -4145.8, -24998.0, 285.777, FourCC("nlds"))
 SetUnitState(u, UNIT_STATE_MANA, 300)
 SetUnitAcquireRange(u, 200.0)
@@ -4832,6 +4676,11 @@ SetUnitState(u, UNIT_STATE_MANA, 350)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nfrl"), -7623.5, 20926.9, 50.813, FourCC("nfrl"))
 SetUnitAcquireRange(u, 200.0)
+u = BlzCreateUnitWithSkin(p, FourCC("nogr"), -20349.1, 23875.6, 228.910, FourCC("nogr"))
+t = CreateTrigger()
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
+TriggerAddAction(t, Unit001384_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("nftb"), 21529.2, 12012.4, 72.411, FourCC("nftb"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nfrl"), -7642.9, 21093.7, 306.956, FourCC("nfrl"))
@@ -5048,6 +4897,11 @@ u = BlzCreateUnitWithSkin(p, FourCC("osp4"), 22404.6, 12644.0, 243.320, FourCC("
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nlsn"), 14938.4, -28682.0, 266.141, FourCC("nlsn"))
 SetUnitAcquireRange(u, 200.0)
+u = BlzCreateUnitWithSkin(p, FourCC("nogr"), -20765.4, 23030.6, 94.560, FourCC("nogr"))
+t = CreateTrigger()
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
+TriggerAddAction(t, Unit001348_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("ncim"), -18311.2, -3788.9, 164.690, FourCC("ncim"))
 SetUnitAcquireRange(u, 200.0)
 IssueImmediateOrder(u, "flamingarrows")
@@ -5453,7 +5307,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("nrzb"), -12771.3, -8840.9, 102.263, FourCC(
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nhrr"), -18801.3, -204.6, 43.716, FourCC("nhrr"))
 SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("ngh1"), -18012.3, 23179.4, 308.400, FourCC("ngh1"))
+u = BlzCreateUnitWithSkin(p, FourCC("ngh1"), -17980.8, 23023.8, 308.400, FourCC("ngh1"))
 SetUnitState(u, UNIT_STATE_MANA, 300)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nhrr"), -18863.9, -363.3, 8.705, FourCC("nhrr"))
@@ -5600,12 +5454,6 @@ SetUnitAcquireRange(u, 200.0)
 IssueImmediateOrder(u, "frenzyon")
 IssueImmediateOrder(u, "")
 IssueImmediateOrder(u, "")
-u = BlzCreateUnitWithSkin(p, FourCC("n04R"), -27072.1, 19243.5, 0.000, FourCC("n04R"))
-IssueImmediateOrder(u, "")
-t = CreateTrigger()
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit001390_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("ngrk"), -11896.4, -16437.9, 10.580, FourCC("ngrk"))
 SetUnitState(u, UNIT_STATE_MANA, 300)
 SetUnitAcquireRange(u, 200.0)
@@ -6267,7 +6115,7 @@ SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nogl"), -16893.2, 21425.0, 94.870, FourCC("nogl"))
 SetUnitState(u, UNIT_STATE_MANA, 250)
 SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("ngh1"), -18121.6, 23195.6, 271.313, FourCC("ngh1"))
+u = BlzCreateUnitWithSkin(p, FourCC("ngh1"), -18095.5, 22926.8, 271.313, FourCC("ngh1"))
 SetUnitState(u, UNIT_STATE_MANA, 300)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nvde"), 1450.2, -20051.5, 229.360, FourCC("nvde"))
@@ -6306,11 +6154,6 @@ SetUnitState(u, UNIT_STATE_MANA, 400)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nban"), 8263.5, -2487.9, 82.258, FourCC("nban"))
 SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("nmcf"), -25115.5, 19515.6, 196.050, FourCC("nmcf"))
-t = CreateTrigger()
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit000133_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("nban"), 4733.6, -2590.1, 24.681, FourCC("nban"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("ngst"), -11707.1, -16450.4, 28.334, FourCC("ngst"))
@@ -6824,56 +6667,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("nwlg"), 14939.6, -20354.4, 308.225, FourCC(
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nftb"), 2444.4, 17586.5, 93.936, FourCC("nftb"))
 SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("nrel"), -23602.2, 23641.9, 292.630, FourCC("nrel"))
-t = CreateTrigger()
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit000381_DropItems)
-u = BlzCreateUnitWithSkin(p, FourCC("nrel"), -23612.5, 23458.6, 87.730, FourCC("nrel"))
-t = CreateTrigger()
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit000785_DropItems)
-u = BlzCreateUnitWithSkin(p, FourCC("nmcf"), -25213.2, 19477.8, 78.250, FourCC("nmcf"))
-t = CreateTrigger()
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit002772_DropItems)
-u = BlzCreateUnitWithSkin(p, FourCC("ndrv"), -27390.1, 20679.5, 8.840, FourCC("ndrv"))
-t = CreateTrigger()
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit001500_DropItems)
-u = BlzCreateUnitWithSkin(p, FourCC("nhyh"), -25257.1, 20843.3, 21.220, FourCC("nhyh"))
-t = CreateTrigger()
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit001504_DropItems)
-u = BlzCreateUnitWithSkin(p, FourCC("nogm"), -24564.8, 22729.6, 297.780, FourCC("nogm"))
-t = CreateTrigger()
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit000511_DropItems)
-u = BlzCreateUnitWithSkin(p, FourCC("nogr"), -25341.0, 23314.3, 113.560, FourCC("nogr"))
-t = CreateTrigger()
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit002861_DropItems)
-u = BlzCreateUnitWithSkin(p, FourCC("nomg"), -26120.3, 21662.8, 313.870, FourCC("nomg"))
-t = CreateTrigger()
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit001295_DropItems)
-u = BlzCreateUnitWithSkin(p, FourCC("nogr"), -26525.4, 20598.6, 94.560, FourCC("nogr"))
-t = CreateTrigger()
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit000523_DropItems)
-u = BlzCreateUnitWithSkin(p, FourCC("nogr"), -25311.6, 23821.6, 217.700, FourCC("nogr"))
-t = CreateTrigger()
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit002681_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("nfpu"), 5531.7, 18710.1, 57.687, FourCC("nfpu"))
 SetUnitState(u, UNIT_STATE_MANA, 500)
 SetUnitAcquireRange(u, 200.0)
@@ -6884,36 +6677,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("nmrl"), 7867.0, 19345.7, 99.155, FourCC("nm
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nmrr"), 8068.6, 19326.4, 222.870, FourCC("nmrr"))
 SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("nogr"), -26509.2, 20766.3, 217.700, FourCC("nogr"))
-t = CreateTrigger()
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit002046_DropItems)
-u = BlzCreateUnitWithSkin(p, FourCC("nogr"), -26109.1, 21443.6, 228.910, FourCC("nogr"))
-t = CreateTrigger()
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit000322_DropItems)
-u = BlzCreateUnitWithSkin(p, FourCC("ntrv"), -27424.8, 20945.1, 201.650, FourCC("ntrv"))
-t = CreateTrigger()
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit001959_DropItems)
-u = BlzCreateUnitWithSkin(p, FourCC("nhyd"), -25105.5, 20787.9, 83.050, FourCC("nhyd"))
-t = CreateTrigger()
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit003128_DropItems)
-u = BlzCreateUnitWithSkin(p, FourCC("nmsn"), -25019.2, 19509.1, 193.350, FourCC("nmsn"))
-t = CreateTrigger()
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit002860_DropItems)
-u = BlzCreateUnitWithSkin(p, FourCC("nmbg"), -25294.3, 19472.8, 126.700, FourCC("nmbg"))
-t = CreateTrigger()
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
-TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit002792_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("nban"), 6325.1, 8558.9, 213.881, FourCC("nban"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nrog"), 17641.1, -20548.9, 178.644, FourCC("nrog"))
@@ -7088,6 +6851,27 @@ IssueImmediateOrder(u, "")
 IssueImmediateOrder(u, "")
 u = BlzCreateUnitWithSkin(p, FourCC("nftt"), 20289.4, 11496.6, 24.808, FourCC("nftt"))
 SetUnitAcquireRange(u, 200.0)
+u = BlzCreateUnitWithSkin(p, FourCC("nomg"), -20360.3, 24094.8, 313.870, FourCC("nomg"))
+t = CreateTrigger()
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
+TriggerAddAction(t, Unit001033_DropItems)
+u = BlzCreateUnitWithSkin(p, FourCC("n04R"), -21312.1, 21675.5, 0.000, FourCC("n04R"))
+IssueImmediateOrder(u, "")
+t = CreateTrigger()
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
+TriggerAddAction(t, Unit000970_DropItems)
+u = BlzCreateUnitWithSkin(p, FourCC("ndrv"), -21630.1, 23111.5, 8.840, FourCC("ndrv"))
+t = CreateTrigger()
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
+TriggerAddAction(t, Unit000890_DropItems)
+u = BlzCreateUnitWithSkin(p, FourCC("nhyh"), -19497.1, 23275.3, 21.220, FourCC("nhyh"))
+t = CreateTrigger()
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
+TriggerAddAction(t, Unit000798_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("h02A"), 15367.4, -1121.4, 270.923, FourCC("h02A"))
 SetUnitAcquireRange(u, 200.0)
 IssueImmediateOrder(u, "")
@@ -7095,6 +6879,36 @@ IssueImmediateOrder(u, "")
 IssueImmediateOrder(u, "")
 u = BlzCreateUnitWithSkin(p, FourCC("nogr"), 15444.3, -17884.7, 281.249, FourCC("nogr"))
 SetUnitAcquireRange(u, 200.0)
+u = BlzCreateUnitWithSkin(p, FourCC("ntrv"), -21664.8, 23377.1, 201.650, FourCC("ntrv"))
+t = CreateTrigger()
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
+TriggerAddAction(t, Unit000727_DropItems)
+u = BlzCreateUnitWithSkin(p, FourCC("nogr"), -20749.2, 23198.3, 217.700, FourCC("nogr"))
+t = CreateTrigger()
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
+TriggerAddAction(t, Unit000572_DropItems)
+u = BlzCreateUnitWithSkin(p, FourCC("nmcf"), -19453.2, 21909.8, 78.250, FourCC("nmcf"))
+t = CreateTrigger()
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
+TriggerAddAction(t, Unit000333_DropItems)
+u = BlzCreateUnitWithSkin(p, FourCC("nmbg"), -19534.3, 21904.8, 126.700, FourCC("nmbg"))
+t = CreateTrigger()
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
+TriggerAddAction(t, Unit000331_DropItems)
+u = BlzCreateUnitWithSkin(p, FourCC("nmsn"), -19259.2, 21941.1, 193.350, FourCC("nmsn"))
+t = CreateTrigger()
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
+TriggerAddAction(t, Unit000322_DropItems)
+u = BlzCreateUnitWithSkin(p, FourCC("nhyd"), -19345.5, 23219.9, 83.050, FourCC("nhyd"))
+t = CreateTrigger()
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
+TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
+TriggerAddAction(t, Unit000070_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("ntrs"), 16452.5, -21317.0, 65.380, FourCC("ntrs"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("ntrs"), 16716.3, -21276.3, 141.795, FourCC("ntrs"))
@@ -7506,6 +7320,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("nef0"), 19840.0, 17920.0, 270.000, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("nef0"), 18176.0, 20864.0, 49.729, FourCC("nef0"))
 u = BlzCreateUnitWithSkin(p, FourCC("h07W"), 4128.0, -6560.0, 270.000, FourCC("h07W"))
 u = BlzCreateUnitWithSkin(p, FourCC("h06W"), 11072.0, -12864.0, 270.000, FourCC("h06W"))
+u = BlzCreateUnitWithSkin(p, FourCC("nnfm"), -19200.0, 21760.0, 270.000, FourCC("nnfm"))
 u = BlzCreateUnitWithSkin(p, FourCC("h030"), 20672.0, 7808.0, 200.650, FourCC("h030"))
 u = BlzCreateUnitWithSkin(p, FourCC("h034"), 17248.0, 18336.0, 270.000, FourCC("h034"))
 u = BlzCreateUnitWithSkin(p, FourCC("nef5"), 19968.0, 17792.0, 0.000, FourCC("nef5"))
@@ -7731,7 +7546,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("o00J"), -15552.0, -3968.0, 220.000, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("h02F"), 6912.0, 1152.0, 270.000, FourCC("h02F"))
 u = BlzCreateUnitWithSkin(p, FourCC("n008"), 7936.0, 64.0, 270.000, FourCC("n008"))
 u = BlzCreateUnitWithSkin(p, FourCC("h07J"), 7872.0, -5824.0, 270.000, FourCC("h07J"))
-u = BlzCreateUnitWithSkin(p, FourCC("o01I"), -26208.0, 20768.0, 270.000, FourCC("o01I"))
 u = BlzCreateUnitWithSkin(p, FourCC("ngol"), -16960.0, -28160.0, 270.000, FourCC("ngol"))
 SetResourceAmount(u, 600)
 u = BlzCreateUnitWithSkin(p, FourCC("h02F"), 7552.0, -320.0, 270.000, FourCC("h02F"))
@@ -7843,6 +7657,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("uzig"), -24384.0, 13056.0, 270.000, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("uzig"), -23488.0, 12160.0, 270.000, FourCC("uzig"))
 u = BlzCreateUnitWithSkin(p, FourCC("n07U"), 17472.0, -31616.0, 270.000, FourCC("n07U"))
 u = BlzCreateUnitWithSkin(p, FourCC("u00U"), -4096.0, -29440.0, 270.000, FourCC("u00U"))
+u = BlzCreateUnitWithSkin(p, FourCC("o01I"), -20448.0, 23200.0, 270.000, FourCC("o01I"))
 u = BlzCreateUnitWithSkin(p, FourCC("o06C"), 21888.0, -3584.0, 270.000, FourCC("o06C"))
 u = BlzCreateUnitWithSkin(p, FourCC("uslh"), -24672.0, 13920.0, 270.000, FourCC("uslh"))
 u = BlzCreateUnitWithSkin(p, FourCC("uzig"), -24704.0, 14336.0, 270.000, FourCC("uzig"))
@@ -7864,6 +7679,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("uzg2"), -23040.0, 13952.0, 270.000, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("ugrv"), -22336.0, 12288.0, 270.000, FourCC("ugrv"))
 u = BlzCreateUnitWithSkin(p, FourCC("o053"), -1888.0, -28960.0, 270.000, FourCC("o053"))
 u = BlzCreateUnitWithSkin(p, FourCC("utom"), -24096.0, 12384.0, 264.489, FourCC("utom"))
+u = BlzCreateUnitWithSkin(p, FourCC("nntg"), -18816.0, 23936.0, 270.000, FourCC("nntg"))
 u = BlzCreateUnitWithSkin(p, FourCC("uzig"), -24704.0, 11776.0, 270.000, FourCC("uzig"))
 u = BlzCreateUnitWithSkin(p, FourCC("uzig"), -24704.0, 11904.0, 270.000, FourCC("uzig"))
 u = BlzCreateUnitWithSkin(p, FourCC("uzig"), -24704.0, 12032.0, 270.000, FourCC("uzig"))
@@ -7985,7 +7801,9 @@ u = BlzCreateUnitWithSkin(p, FourCC("o068"), 17632.0, -3808.0, 270.000, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("o06A"), 17728.0, -2752.0, 270.000, FourCC("o06A"))
 u = BlzCreateUnitWithSkin(p, FourCC("o06A"), 16448.0, -2304.0, 270.000, FourCC("o06A"))
 u = BlzCreateUnitWithSkin(p, FourCC("o06A"), 17920.0, -3136.0, 270.000, FourCC("o06A"))
+u = BlzCreateUnitWithSkin(p, FourCC("nmrb"), -19712.0, 23424.0, 270.000, FourCC("nmrb"))
 u = BlzCreateUnitWithSkin(p, FourCC("o06A"), 17152.0, -2176.0, 270.000, FourCC("o06A"))
+u = BlzCreateUnitWithSkin(p, FourCC("nnsa"), -20864.0, 22144.0, 270.000, FourCC("nnsa"))
 u = BlzCreateUnitWithSkin(p, FourCC("hgra"), 10368.0, -8192.0, 270.000, FourCC("hgra"))
 u = BlzCreateUnitWithSkin(p, FourCC("harm"), 10176.0, -7104.0, 270.000, FourCC("harm"))
 u = BlzCreateUnitWithSkin(p, FourCC("h01S"), 10496.0, -7424.0, 270.000, FourCC("h01S"))
@@ -8002,6 +7820,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("h036"), 10976.0, 2144.0, 270.000, FourCC("h
 u = BlzCreateUnitWithSkin(p, FourCC("h078"), 11392.0, 2496.0, 270.000, FourCC("h078"))
 u = BlzCreateUnitWithSkin(p, FourCC("h078"), 11328.0, 1728.0, 270.000, FourCC("h078"))
 u = BlzCreateUnitWithSkin(p, FourCC("h063"), 11008.0, 2560.0, 270.000, FourCC("h063"))
+u = BlzCreateUnitWithSkin(p, FourCC("n005"), -20672.0, 22208.0, 270.000, FourCC("n005"))
 u = BlzCreateUnitWithSkin(p, FourCC("n06M"), -5888.0, -28032.0, 270.000, FourCC("n06M"))
 u = BlzCreateUnitWithSkin(p, FourCC("n06M"), -5440.0, -27520.0, 270.000, FourCC("n06M"))
 u = BlzCreateUnitWithSkin(p, FourCC("o06C"), 22080.0, -5504.0, 270.000, FourCC("o06C"))
@@ -8010,6 +7829,8 @@ u = BlzCreateUnitWithSkin(p, FourCC("o06C"), 21248.0, -4160.0, 270.000, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("o068"), 21600.0, -4384.0, 270.000, FourCC("o068"))
 u = BlzCreateUnitWithSkin(p, FourCC("o05F"), 5120.0, -6720.0, 270.000, FourCC("o05F"))
 u = BlzCreateUnitWithSkin(p, FourCC("h01O"), 16960.0, -31424.0, 270.000, FourCC("h01O"))
+u = BlzCreateUnitWithSkin(p, FourCC("n05A"), -20992.0, 21632.0, 270.000, FourCC("n05A"))
+u = BlzCreateUnitWithSkin(p, FourCC("n005"), -20672.0, 21248.0, 270.000, FourCC("n005"))
 u = BlzCreateUnitWithSkin(p, FourCC("o013"), 22208.0, -28864.0, 270.000, FourCC("o013"))
 SetUnitState(u, UNIT_STATE_MANA, 300)
 u = BlzCreateUnitWithSkin(p, FourCC("h00O"), 5056.0, 15424.0, 270.000, FourCC("h00O"))
@@ -8098,24 +7919,19 @@ u = BlzCreateUnitWithSkin(p, FourCC("ngad"), 19072.0, -9664.0, 270.000, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("n06M"), -17984.0, 14976.0, 270.000, FourCC("n06M"))
 u = BlzCreateUnitWithSkin(p, FourCC("n03E"), -9216.0, -1152.0, 270.000, FourCC("n03E"))
 u = BlzCreateUnitWithSkin(p, FourCC("nshp"), 19648.0, -9920.0, 270.000, FourCC("nshp"))
-u = BlzCreateUnitWithSkin(p, FourCC("nnfm"), -25984.0, 21696.0, 270.000, FourCC("nnfm"))
 u = BlzCreateUnitWithSkin(p, FourCC("ngol"), -19584.0, -28800.0, 329.348, FourCC("ngol"))
 SetResourceAmount(u, 600)
 u = BlzCreateUnitWithSkin(p, FourCC("n06M"), -18240.0, 16384.0, 270.000, FourCC("n06M"))
 u = BlzCreateUnitWithSkin(p, FourCC("h03M"), -19584.0, 12928.0, 270.000, FourCC("h03M"))
 u = BlzCreateUnitWithSkin(p, FourCC("h03M"), -19136.0, 12480.0, 270.000, FourCC("h03M"))
-u = BlzCreateUnitWithSkin(p, FourCC("nnfm"), -25536.0, 20864.0, 270.000, FourCC("nnfm"))
 u = BlzCreateUnitWithSkin(p, FourCC("hbar"), 8448.0, 6528.0, 301.622, FourCC("hbar"))
 u = BlzCreateUnitWithSkin(p, FourCC("h07O"), -7904.0, -9376.0, 270.000, FourCC("h07O"))
 u = BlzCreateUnitWithSkin(p, FourCC("ngme"), 18880.0, -9856.0, 270.000, FourCC("ngme"))
 u = BlzCreateUnitWithSkin(p, FourCC("h03M"), -20224.0, 13248.0, 270.000, FourCC("h03M"))
 u = BlzCreateUnitWithSkin(p, FourCC("edos"), -19584.0, 14528.0, 270.000, FourCC("edos"))
-u = BlzCreateUnitWithSkin(p, FourCC("nntg"), -24576.0, 20928.0, 270.000, FourCC("nntg"))
-u = BlzCreateUnitWithSkin(p, FourCC("nntg"), -24576.0, 21504.0, 270.000, FourCC("nntg"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0B6"), -26432.0, -3776.0, 270.000, FourCC("n0B6"))
 u = BlzCreateUnitWithSkin(p, FourCC("n03E"), -8704.0, 128.0, 270.000, FourCC("n03E"))
 u = BlzCreateUnitWithSkin(p, FourCC("e00V"), -16704.0, 22976.0, 270.000, FourCC("e00V"))
-u = BlzCreateUnitWithSkin(p, FourCC("n05A"), -26752.0, 19200.0, 270.000, FourCC("n05A"))
 u = BlzCreateUnitWithSkin(p, FourCC("n085"), -16736.0, 23392.0, 186.360, FourCC("n085"))
 SetUnitState(u, UNIT_STATE_MANA, 300)
 u = BlzCreateUnitWithSkin(p, FourCC("n06M"), -17216.0, 23232.0, 356.827, FourCC("n06M"))
@@ -8134,8 +7950,6 @@ SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("o048"), -2560.0, -15168.0, 270.000, FourCC("o048"))
 u = BlzCreateUnitWithSkin(p, FourCC("ovln"), -16032.0, -4192.0, 270.000, FourCC("ovln"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0BC"), -27136.0, 15936.0, 270.000, FourCC("n0BC"))
-u = BlzCreateUnitWithSkin(p, FourCC("h06S"), -25632.0, 21536.0, 270.000, FourCC("h06S"))
-u = BlzCreateUnitWithSkin(p, FourCC("n0A3"), -27232.0, 20896.0, 270.000, FourCC("n0A3"))
 u = BlzCreateUnitWithSkin(p, FourCC("h09L"), -8544.0, 23200.0, 270.000, FourCC("h09L"))
 u = BlzCreateUnitWithSkin(p, FourCC("h085"), -8512.0, 22400.0, 270.000, FourCC("h085"))
 u = BlzCreateUnitWithSkin(p, FourCC("ntt2"), -15232.0, -3328.0, 250.000, FourCC("ntt2"))
@@ -8160,9 +7974,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("n0AZ"), -25152.0, -6720.0, 270.000, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("h07W"), -6944.0, -9952.0, 270.000, FourCC("h07W"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0AZ"), -24640.0, 1216.0, 270.000, FourCC("n0AZ"))
 u = BlzCreateUnitWithSkin(p, FourCC("nfh0"), 9920.0, -18432.0, 270.000, FourCC("nfh0"))
-u = BlzCreateUnitWithSkin(p, FourCC("n005"), -25344.0, 19136.0, 270.000, FourCC("n005"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0AY"), -23552.0, -320.0, 270.000, FourCC("n0AY"))
-u = BlzCreateUnitWithSkin(p, FourCC("n005"), -24896.0, 19456.0, 270.000, FourCC("n005"))
 u = BlzCreateUnitWithSkin(p, FourCC("h07P"), -7744.0, -9728.0, 270.000, FourCC("h07P"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0AY"), -22848.0, -320.0, 270.000, FourCC("n0AY"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0B1"), -22976.0, -2560.0, 270.000, FourCC("n0B1"))
@@ -8228,13 +8040,8 @@ u = BlzCreateUnitWithSkin(p, FourCC("h05Q"), 9152.0, 4544.0, 270.000, FourCC("h0
 u = BlzCreateUnitWithSkin(p, FourCC("h07V"), -7808.0, -8192.0, 270.000, FourCC("h07V"))
 u = BlzCreateUnitWithSkin(p, FourCC("h07V"), -7040.0, -8384.0, 270.000, FourCC("h07V"))
 u = BlzCreateUnitWithSkin(p, FourCC("h07V"), -6144.0, -8960.0, 270.000, FourCC("h07V"))
-u = BlzCreateUnitWithSkin(p, FourCC("n005"), -26432.0, 18816.0, 270.000, FourCC("n005"))
 u = BlzCreateUnitWithSkin(p, FourCC("h07V"), -7552.0, -9728.0, 270.000, FourCC("h07V"))
 u = BlzCreateUnitWithSkin(p, FourCC("h066"), -13472.0, 21344.0, 270.000, FourCC("h066"))
-u = BlzCreateUnitWithSkin(p, FourCC("n005"), -26432.0, 19776.0, 270.000, FourCC("n005"))
-u = BlzCreateUnitWithSkin(p, FourCC("n0A3"), -26336.0, 20384.0, 270.000, FourCC("n0A3"))
-u = BlzCreateUnitWithSkin(p, FourCC("n0A3"), -27040.0, 19744.0, 270.000, FourCC("n0A3"))
-u = BlzCreateUnitWithSkin(p, FourCC("nnsg"), -26752.0, 18688.0, 270.000, FourCC("nnsg"))
 u = BlzCreateUnitWithSkin(p, FourCC("nfh1"), -3328.0, -2816.0, 270.000, FourCC("nfh1"))
 u = BlzCreateUnitWithSkin(p, FourCC("nfh0"), -3904.0, -2688.0, 270.000, FourCC("nfh0"))
 SetUnitAcquireRange(u, 200.0)
@@ -8247,7 +8054,6 @@ SetUnitState(u, UNIT_STATE_LIFE, 0.78 * life)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("ngol"), 15296.0, -28608.0, 270.000, FourCC("ngol"))
 SetResourceAmount(u, 700)
-u = BlzCreateUnitWithSkin(p, FourCC("nnsg"), -27136.0, 22464.0, 270.000, FourCC("nnsg"))
 u = BlzCreateUnitWithSkin(p, FourCC("h07T"), -6144.0, -9472.0, 270.000, FourCC("h07T"))
 u = BlzCreateUnitWithSkin(p, FourCC("h07T"), -7680.0, -10240.0, 270.000, FourCC("h07T"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0BE"), 3552.0, 20768.0, 270.000, FourCC("n0BE"))
@@ -8261,16 +8067,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("npgf"), 22464.0, -29952.0, 270.000, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("npgf"), 21568.0, -30208.0, 270.000, FourCC("npgf"))
 u = BlzCreateUnitWithSkin(p, FourCC("npgf"), 21568.0, -30080.0, 270.000, FourCC("npgf"))
 u = BlzCreateUnitWithSkin(p, FourCC("npgf"), 21696.0, -30144.0, 270.000, FourCC("npgf"))
-u = BlzCreateUnitWithSkin(p, FourCC("nnsg"), -25024.0, 21632.0, 270.000, FourCC("nnsg"))
-u = BlzCreateUnitWithSkin(p, FourCC("nnsa"), -23936.0, 22080.0, 270.000, FourCC("nnsa"))
-u = BlzCreateUnitWithSkin(p, FourCC("nnsa"), -26304.0, 22720.0, 270.000, FourCC("nnsa"))
-u = BlzCreateUnitWithSkin(p, FourCC("nnsa"), -26624.0, 19712.0, 270.000, FourCC("nnsa"))
-u = BlzCreateUnitWithSkin(p, FourCC("nmrb"), -25472.0, 20992.0, 270.000, FourCC("nmrb"))
-u = BlzCreateUnitWithSkin(p, FourCC("nmrb"), -23936.0, 23936.0, 270.000, FourCC("nmrb"))
-u = BlzCreateUnitWithSkin(p, FourCC("nnfm"), -24384.0, 22080.0, 270.000, FourCC("nnfm"))
 u = BlzCreateUnitWithSkin(p, FourCC("ncbb"), 9088.0, -11840.0, 270.000, FourCC("ncbb"))
-u = BlzCreateUnitWithSkin(p, FourCC("n005"), -24640.0, 20416.0, 270.000, FourCC("n005"))
-u = BlzCreateUnitWithSkin(p, FourCC("nnfm"), -27456.0, 22016.0, 270.000, FourCC("nnfm"))
 u = BlzCreateUnitWithSkin(p, FourCC("o056"), -1536.0, -28160.0, 270.000, FourCC("o056"))
 u = BlzCreateUnitWithSkin(p, FourCC("o057"), -1120.0, -28192.0, 270.000, FourCC("o057"))
 u = BlzCreateUnitWithSkin(p, FourCC("o056"), -1408.0, -29184.0, 270.000, FourCC("o056"))
@@ -8290,7 +8087,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("ngme"), -1472.0, -5440.0, 270.000, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("ngad"), 2944.0, 16256.0, 270.000, FourCC("ngad"))
 u = BlzCreateUnitWithSkin(p, FourCC("u00U"), -20800.0, 7232.0, 270.000, FourCC("u00U"))
 u = BlzCreateUnitWithSkin(p, FourCC("u00U"), -20416.0, 7680.0, 270.000, FourCC("u00U"))
-u = BlzCreateUnitWithSkin(p, FourCC("nnfm"), -24960.0, 19328.0, 270.000, FourCC("nnfm"))
 u = BlzCreateUnitWithSkin(p, FourCC("u00U"), -20416.0, 8576.0, 270.000, FourCC("u00U"))
 u = BlzCreateUnitWithSkin(p, FourCC("u00U"), -21184.0, 8832.0, 270.000, FourCC("u00U"))
 u = BlzCreateUnitWithSkin(p, FourCC("o055"), -21312.0, 7168.0, 270.000, FourCC("o055"))
@@ -8298,16 +8094,8 @@ u = BlzCreateUnitWithSkin(p, FourCC("o054"), -21024.0, 7648.0, 270.000, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("o051"), -21024.0, 8480.0, 270.000, FourCC("o051"))
 u = BlzCreateUnitWithSkin(p, FourCC("o056"), -21504.0, 8320.0, 270.000, FourCC("o056"))
 u = BlzCreateUnitWithSkin(p, FourCC("o028"), -6464.0, 320.0, 270.000, FourCC("o028"))
-u = BlzCreateUnitWithSkin(p, FourCC("nnad"), -24032.0, 20256.0, 270.000, FourCC("nnad"))
-u = BlzCreateUnitWithSkin(p, FourCC("nnfm"), -25600.0, 24128.0, 270.000, FourCC("nnfm"))
-u = BlzCreateUnitWithSkin(p, FourCC("nnfm"), -25344.0, 24128.0, 270.000, FourCC("nnfm"))
-u = BlzCreateUnitWithSkin(p, FourCC("nntg"), -25920.0, 23232.0, 270.000, FourCC("nntg"))
-u = BlzCreateUnitWithSkin(p, FourCC("nntg"), -25920.0, 23872.0, 270.000, FourCC("nntg"))
-u = BlzCreateUnitWithSkin(p, FourCC("nnfm"), -24320.0, 21696.0, 270.000, FourCC("nnfm"))
 u = BlzCreateUnitWithSkin(p, FourCC("n045"), 8576.0, -30784.0, 270.000, FourCC("n045"))
 u = BlzCreateUnitWithSkin(p, FourCC("h01D"), -668.7, 1193.4, 270.000, FourCC("h01D"))
-u = BlzCreateUnitWithSkin(p, FourCC("h01D"), -27808.0, 23584.0, 180.000, FourCC("h01D"))
-u = BlzCreateUnitWithSkin(p, FourCC("h01D"), -23840.0, 21024.0, 180.000, FourCC("h01D"))
 u = BlzCreateUnitWithSkin(p, FourCC("h01D"), 12231.1, -27480.6, 270.000, FourCC("h01D"))
 u = BlzCreateUnitWithSkin(p, FourCC("h01D"), -18004.9, 24158.5, 270.000, FourCC("h01D"))
 u = BlzCreateUnitWithSkin(p, FourCC("ngol"), -3008.0, -31680.0, 270.000, FourCC("ngol"))
@@ -8344,7 +8132,6 @@ SetResourceAmount(u, 200)
 u = BlzCreateUnitWithSkin(p, FourCC("n0C1"), 8192.0, -29312.0, 270.000, FourCC("n0C1"))
 u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), -5568.0, 15808.0, 245.672, FourCC("ntn2"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0C1"), 8512.0, -28288.0, 270.000, FourCC("n0C1"))
-u = BlzCreateUnitWithSkin(p, FourCC("n00K"), -25472.0, 22272.0, 270.000, FourCC("n00K"))
 u = BlzCreateUnitWithSkin(p, FourCC("nten"), -6080.0, 15872.0, 293.921, FourCC("nten"))
 u = BlzCreateUnitWithSkin(p, FourCC("nten"), -5696.0, 15040.0, 184.406, FourCC("nten"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0C5"), 9408.0, -30400.0, 270.000, FourCC("n0C5"))
@@ -8408,9 +8195,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("h07N"), -7232.0, -8576.0, 270.000, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("h07N"), -6784.0, -9088.0, 270.000, FourCC("h07N"))
 u = BlzCreateUnitWithSkin(p, FourCC("h07N"), -7808.0, -8704.0, 270.000, FourCC("h07N"))
 u = BlzCreateUnitWithSkin(p, FourCC("h02F"), 7168.0, -3136.0, 270.000, FourCC("h02F"))
-u = BlzCreateUnitWithSkin(p, FourCC("n005"), -24256.0, 20416.0, 270.000, FourCC("n005"))
-u = BlzCreateUnitWithSkin(p, FourCC("n005"), -26048.0, 22656.0, 270.000, FourCC("n005"))
-u = BlzCreateUnitWithSkin(p, FourCC("n005"), -24896.0, 22592.0, 270.000, FourCC("n005"))
 u = BlzCreateUnitWithSkin(p, FourCC("h02F"), 4992.0, -1024.0, 270.000, FourCC("h02F"))
 u = BlzCreateUnitWithSkin(p, FourCC("h02F"), 4928.0, -1408.0, 270.000, FourCC("h02F"))
 u = BlzCreateUnitWithSkin(p, FourCC("h02F"), 5056.0, -1472.0, 270.000, FourCC("h02F"))
@@ -8419,6 +8203,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("h02F"), 4800.0, -1280.0, 270.000, FourCC("h
 u = BlzCreateUnitWithSkin(p, FourCC("h039"), 4864.0, -1024.0, 270.000, FourCC("h039"))
 u = BlzCreateUnitWithSkin(p, FourCC("ngol"), 19264.0, -6208.0, 270.000, FourCC("ngol"))
 SetResourceAmount(u, 1000)
+u = BlzCreateUnitWithSkin(p, FourCC("nntg"), -18816.0, 23360.0, 270.000, FourCC("nntg"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02V"), 22496.0, -29216.0, 270.000, FourCC("o02V"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0C5"), -28416.0, -26944.0, 270.000, FourCC("n0C5"))
 u = BlzCreateUnitWithSkin(p, FourCC("o028"), -7168.0, 704.0, 270.000, FourCC("o028"))
@@ -8445,10 +8230,21 @@ u = BlzCreateUnitWithSkin(p, FourCC("n0D5"), -26496.0, -24960.0, 270.000, FourCC
 u = BlzCreateUnitWithSkin(p, FourCC("h0AD"), -24928.0, -23904.0, 270.000, FourCC("h0AD"))
 u = BlzCreateUnitWithSkin(p, FourCC("o06B"), 21632.0, -3456.0, 270.000, FourCC("o06B"))
 u = BlzCreateUnitWithSkin(p, FourCC("o06B"), 21120.0, -4032.0, 270.000, FourCC("o06B"))
+u = BlzCreateUnitWithSkin(p, FourCC("n005"), -19136.0, 21888.0, 270.000, FourCC("n005"))
 u = BlzCreateUnitWithSkin(p, FourCC("ngol"), 22656.0, -3648.0, 270.000, FourCC("ngol"))
 SetResourceAmount(u, 800)
 u = BlzCreateUnitWithSkin(p, FourCC("ngol"), 14720.0, -5568.0, 349.180, FourCC("ngol"))
 SetResourceAmount(u, 800)
+u = BlzCreateUnitWithSkin(p, FourCC("n005"), -19584.0, 21568.0, 270.000, FourCC("n005"))
+u = BlzCreateUnitWithSkin(p, FourCC("nnsg"), -20992.0, 21120.0, 270.000, FourCC("nnsg"))
+u = BlzCreateUnitWithSkin(p, FourCC("nnsg"), -19264.0, 24064.0, 270.000, FourCC("nnsg"))
+u = BlzCreateUnitWithSkin(p, FourCC("nnfm"), -20224.0, 24128.0, 270.000, FourCC("nnfm"))
+u = BlzCreateUnitWithSkin(p, FourCC("n0A3"), -20576.0, 22816.0, 270.000, FourCC("n0A3"))
+u = BlzCreateUnitWithSkin(p, FourCC("n005"), -18880.0, 22848.0, 270.000, FourCC("n005"))
+u = BlzCreateUnitWithSkin(p, FourCC("n0A3"), -21472.0, 23328.0, 270.000, FourCC("n0A3"))
+u = BlzCreateUnitWithSkin(p, FourCC("h06S"), -19872.0, 23968.0, 270.000, FourCC("h06S"))
+u = BlzCreateUnitWithSkin(p, FourCC("nnfm"), -19776.0, 23296.0, 270.000, FourCC("nnfm"))
+u = BlzCreateUnitWithSkin(p, FourCC("n0A3"), -21280.0, 22176.0, 270.000, FourCC("n0A3"))
 u = BlzCreateUnitWithSkin(p, FourCC("n03G"), 9088.0, 4992.0, 270.000, FourCC("n03G"))
 u = BlzCreateUnitWithSkin(p, FourCC("h02K"), 6912.0, 2688.0, 270.000, FourCC("h02K"))
 IssueImmediateOrder(u, "")
@@ -8559,6 +8355,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("h01I"), 9816.3, 5325.3, 216.874, FourCC("h0
 SetUnitState(u, UNIT_STATE_MANA, 200)
 u = BlzCreateUnitWithSkin(p, FourCC("nfro"), 8892.4, 3647.3, 274.230, FourCC("nfro"))
 u = BlzCreateUnitWithSkin(p, FourCC("nfro"), 9055.7, 5435.4, 295.219, FourCC("nfro"))
+u = BlzCreateUnitWithSkin(p, FourCC("nmpe"), -19713.6, 23930.6, 59.405, FourCC("nmpe"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0CR"), -1634.7, -25611.1, 72.680, FourCC("n0CR"))
 u = BlzCreateUnitWithSkin(p, FourCC("n04H"), -27786.0, 11394.1, 270.373, FourCC("n04H"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02M"), -7492.0, -479.2, 221.648, FourCC("o02M"))
@@ -8762,7 +8559,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("nvlk"), 12491.4, 1880.9, 76.186, FourCC("nv
 u = BlzCreateUnitWithSkin(p, FourCC("n08P"), -25974.0, -5259.5, 27.516, FourCC("n08P"))
 u = BlzCreateUnitWithSkin(p, FourCC("hpea"), 11665.7, -13681.1, 54.428, FourCC("hpea"))
 u = BlzCreateUnitWithSkin(p, FourCC("h00A"), 10734.3, -13984.7, 241.021, FourCC("h00A"))
-u = BlzCreateUnitWithSkin(p, FourCC("nmpe"), -25467.3, 21372.1, 59.405, FourCC("nmpe"))
 u = BlzCreateUnitWithSkin(p, FourCC("h00A"), 9183.1, -14055.2, 241.021, FourCC("h00A"))
 u = BlzCreateUnitWithSkin(p, FourCC("n093"), 10319.9, -12948.8, 266.614, FourCC("n093"))
 SetUnitState(u, UNIT_STATE_MANA, 200)
@@ -9061,14 +8857,12 @@ u = BlzCreateUnitWithSkin(p, FourCC("n08P"), -24894.9, -1202.7, 238.297, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("n08P"), -27809.4, -379.7, 349.385, FourCC("n08P"))
 u = BlzCreateUnitWithSkin(p, FourCC("h00J"), 13598.3, 1061.3, 314.372, FourCC("h00J"))
 SetUnitState(u, UNIT_STATE_MANA, 200)
-u = BlzCreateUnitWithSkin(p, FourCC("nmyr"), -24550.3, 21359.8, 347.190, FourCC("nmyr"))
 u = BlzCreateUnitWithSkin(p, FourCC("owar"), 22278.1, -29399.1, 240.090, FourCC("owar"))
 u = BlzCreateUnitWithSkin(p, FourCC("owar"), 22362.8, -29459.7, 240.090, FourCC("owar"))
 u = BlzCreateUnitWithSkin(p, FourCC("earc"), -18872.5, 14956.6, 352.980, FourCC("earc"))
 u = BlzCreateUnitWithSkin(p, FourCC("n08P"), 19271.2, -436.9, 172.531, FourCC("n08P"))
 u = BlzCreateUnitWithSkin(p, FourCC("e006"), -19375.2, 14811.7, 89.069, FourCC("e006"))
 u = BlzCreateUnitWithSkin(p, FourCC("e006"), -19463.2, 14889.4, 46.452, FourCC("e006"))
-u = BlzCreateUnitWithSkin(p, FourCC("nmyr"), -24556.2, 21089.1, 48.968, FourCC("nmyr"))
 u = BlzCreateUnitWithSkin(p, FourCC("e006"), -19343.4, 14946.2, 221.260, FourCC("e006"))
 u = BlzCreateUnitWithSkin(p, FourCC("nfro"), 21798.3, 13566.1, 294.600, FourCC("nfro"))
 u = BlzCreateUnitWithSkin(p, FourCC("nfro"), 13236.0, 5344.2, 175.990, FourCC("nfro"))
@@ -9186,22 +8980,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("h01E"), -7081.6, -9093.2, 319.668, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("h01E"), -6964.8, -9068.8, 25.808, FourCC("h01E"))
 u = BlzCreateUnitWithSkin(p, FourCC("h06J"), -6746.9, -9253.9, 138.531, FourCC("h06J"))
 u = BlzCreateUnitWithSkin(p, FourCC("h06J"), -7742.3, -9455.7, 229.775, FourCC("h06J"))
-u = BlzCreateUnitWithSkin(p, FourCC("nmpe"), -25473.6, 21498.6, 59.405, FourCC("nmpe"))
-u = BlzCreateUnitWithSkin(p, FourCC("nsnp"), -24657.5, 21637.7, 349.958, FourCC("nsnp"))
-u = BlzCreateUnitWithSkin(p, FourCC("nsnp"), -24674.4, 20731.0, 52.549, FourCC("nsnp"))
-u = BlzCreateUnitWithSkin(p, FourCC("nnsw"), -24721.5, 21215.7, 7.823, FourCC("nnsw"))
-u = BlzCreateUnitWithSkin(p, FourCC("nmsc"), -24813.4, 21408.7, 300.507, FourCC("nmsc"))
-u = BlzCreateUnitWithSkin(p, FourCC("nmsc"), -24819.7, 21059.8, 332.434, FourCC("nmsc"))
-u = BlzCreateUnitWithSkin(p, FourCC("nnsw"), -24813.7, 20844.2, 349.453, FourCC("nnsw"))
-u = BlzCreateUnitWithSkin(p, FourCC("nmyr"), -25660.3, 22501.0, 110.394, FourCC("nmyr"))
-u = BlzCreateUnitWithSkin(p, FourCC("nmyr"), -25317.0, 22505.0, 124.413, FourCC("nmyr"))
-u = BlzCreateUnitWithSkin(p, FourCC("nsnp"), -25557.9, 22309.4, 77.643, FourCC("nsnp"))
-u = BlzCreateUnitWithSkin(p, FourCC("nsnp"), -25397.1, 22330.0, 98.517, FourCC("nsnp"))
-u = BlzCreateUnitWithSkin(p, FourCC("nnsw"), -26150.1, 22605.9, 282.181, FourCC("nnsw"))
-u = BlzCreateUnitWithSkin(p, FourCC("nmsc"), -26021.0, 22555.3, 240.784, FourCC("nmsc"))
-u = BlzCreateUnitWithSkin(p, FourCC("nmpe"), -26534.8, 19376.8, 68.656, FourCC("nmpe"))
-u = BlzCreateUnitWithSkin(p, FourCC("nmpe"), -26477.8, 19117.6, 146.782, FourCC("nmpe"))
-u = BlzCreateUnitWithSkin(p, FourCC("nnsw"), -26253.9, 22542.1, 328.468, FourCC("nnsw"))
 u = BlzCreateUnitWithSkin(p, FourCC("o00X"), -23283.4, 17323.6, 340.224, FourCC("o00X"))
 u = BlzCreateUnitWithSkin(p, FourCC("h06B"), -23039.0, 16761.2, 223.179, FourCC("h06B"))
 u = BlzCreateUnitWithSkin(p, FourCC("h06B"), -23290.8, 17020.9, 223.179, FourCC("h06B"))
@@ -9229,7 +9007,18 @@ u = BlzCreateUnitWithSkin(p, FourCC("o04K"), 22105.8, -4363.2, 149.170, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("o04K"), 22173.5, -4247.3, 149.170, FourCC("o04K"))
 u = BlzCreateUnitWithSkin(p, FourCC("o04K"), 21913.0, -4260.2, 149.170, FourCC("o04K"))
 u = BlzCreateUnitWithSkin(p, FourCC("o04K"), 21992.5, -4150.7, 149.170, FourCC("o04K"))
+u = BlzCreateUnitWithSkin(p, FourCC("nmpe"), -20774.8, 21808.8, 68.656, FourCC("nmpe"))
+u = BlzCreateUnitWithSkin(p, FourCC("nmpe"), -20717.8, 21549.6, 146.782, FourCC("nmpe"))
+u = BlzCreateUnitWithSkin(p, FourCC("nnsw"), -19053.7, 23276.2, 349.453, FourCC("nnsw"))
 u = BlzCreateUnitWithSkin(p, FourCC("hpea"), 18328.0, -17602.9, 134.982, FourCC("hpea"))
+u = BlzCreateUnitWithSkin(p, FourCC("nmpe"), -19707.3, 23804.1, 59.405, FourCC("nmpe"))
+u = BlzCreateUnitWithSkin(p, FourCC("nmsc"), -19059.7, 23491.8, 332.434, FourCC("nmsc"))
+u = BlzCreateUnitWithSkin(p, FourCC("nmsc"), -19053.4, 23840.7, 300.507, FourCC("nmsc"))
+u = BlzCreateUnitWithSkin(p, FourCC("nnsw"), -18961.5, 23647.7, 7.823, FourCC("nnsw"))
+u = BlzCreateUnitWithSkin(p, FourCC("nsnp"), -18914.4, 23163.0, 52.549, FourCC("nsnp"))
+u = BlzCreateUnitWithSkin(p, FourCC("nsnp"), -18897.5, 24069.7, 349.958, FourCC("nsnp"))
+u = BlzCreateUnitWithSkin(p, FourCC("nmyr"), -18796.2, 23521.1, 48.968, FourCC("nmyr"))
+u = BlzCreateUnitWithSkin(p, FourCC("nmyr"), -18790.3, 23791.8, 347.190, FourCC("nmyr"))
 u = BlzCreateUnitWithSkin(p, FourCC("hpea"), 18123.4, -17256.9, 311.798, FourCC("hpea"))
 u = BlzCreateUnitWithSkin(p, FourCC("hspt"), 19615.7, 19011.9, 258.761, FourCC("hspt"))
 u = BlzCreateUnitWithSkin(p, FourCC("ospw"), -15804.7, -4354.6, 8.767, FourCC("ospw"))
