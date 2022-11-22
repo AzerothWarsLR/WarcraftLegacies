@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Constants.UNIT_O061_CLIFFRUNNER_MURLOC
       }, Constants.ABILITY_A01G_AMPHIBIAN_NAGA_ABILITY)
       {
-        DamageMultiplier = 200
+        DamageMultiplier = 3
       });
     }
   }
