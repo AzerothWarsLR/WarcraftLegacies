@@ -3877,7 +3877,7 @@ W
 }
 
 STRING 648
-// Units: o05J (Dragon Hatchery), Ubertip (Tooltip - Extended)
+// Units: n08H (Hunter Proving Grounds), Ubertip (Tooltip - Extended)
 {
 Trains Cliffrunners, Glaive Warriors and Demon Hunters
 }
@@ -86094,9 +86094,8 @@ Cunning trapper of prey, in service to the Sentinels.|n|cfff5962dAbilities:|R Pa
 }
 
 STRING 14345
-// Units: O06F (Blood Warrior), Ubertip (Tooltip - Extended)
 {
-Warrior Hero, specialised in healing Troups.|n|cfff5962dCan learn:|R Seismic Slam, Battleshout, Toughness, Battle Trance|n|n|cffffcc00Attacks land units.|R
+Observer
 }
 
 STRING 14346
@@ -94487,12 +94486,6 @@ STRING 15751
 // Abilities: A0M9 (Void Exile), Ubertip (Tooltip - Normal - Extended)
 {
 Causes this unit to shift out of existence for a long duration, avoiding any further damage until cancelled. |nLasts 30 seconds.|n|cffd45e19Has an 80 seconds cooldown.|r
-}
-
-STRING 15752
-// Units: n00K (Aetheneum Catacombs (20gold/min)), Name (Name)
-{
-Aetheneum Catacombs (20gold/min)
 }
 
 STRING 15753
@@ -113846,7 +113839,7 @@ Q
 }
 
 STRING 18977
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A0ZG (Blood Absorption), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -113858,7 +113851,7 @@ E
 }
 
 STRING 18979
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -114134,7 +114127,7 @@ Train Battlemaster
 }
 
 STRING 19025
-// Abilities: A0ZF (Upkeep -2 gold per minute), Ubertip (Tooltip - Normal - Extended)
+// Units: o061 (Cliffrunner), Ubertip (Tooltip - Extended)
 {
 Murloc bound to the will of Illidan.|n|cfff5962dAbilities:|R Charge, Amphibious|R|n|cfff5962d|n|cffffcc00Attacks land units.|r
 }
@@ -114817,6 +114810,12 @@ STRING 19138
 Goblin Pilot
 }
 
+STRING 19139
+// Upgrades: R08W (Chaos), Name (Name)
+{
+Quest Completed: Clean Sea
+}
+
 STRING 19140
 // Abilities: A0O2 (Goblin Pilot), EditorSuffix (Editor Suffix)
 {
@@ -115171,19 +115170,19 @@ E
 }
 
 STRING 19199
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 19200
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 19201
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -115225,7 +115224,7 @@ Build a Defias Hideout at target location, has a 300 seconds cooldown.
 }
 
 STRING 19208
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -115240,6 +115239,12 @@ STRING 19210
 // Abilities: A0YM (Build Murloc Gathering), Ubertip (Tooltip - Normal - Extended)
 {
 Build a Murloc Gathering at target location, has a 300 seconds cooldown.
+}
+
+STRING 19211
+// Units: n0DJ (Aetheneum Catacomb (25gold/min)), Name (Name)
+{
+Aetheneum Catacomb (25gold/min)
 }
 
 STRING 19212
@@ -115464,10 +115469,28 @@ STRING 19248
 Train Bandit Spearman
 }
 
+STRING 19249
+// Upgrades: R093 (Chaos), Name (Name)
+{
+Quest Completed: Splintered People
+}
+
+STRING 19250
+// Abilities: A0ZG (Blood Absorption), EditorSuffix (Editor Suffix)
+{
+(Gorfax)
+}
+
 STRING 19251
 // Abilities: A0XB (Decapitate), Tip (Tooltip - Normal)
 {
 Decapitate
+}
+
+STRING 19252
+// Abilities: A0ZG (Blood Absorption), Researchubertip (Tooltip - Learn - Extended)
+{
+When this hero attacks, it will regain a portion of the damage dealt as mana. |n|n|cffffcc00Level 1|r - 50% of the damage gained as mana. |n|cffffcc00Level 2|r - 75% of the damage gained as mana.|n|cffffcc00Level 3|r - 100% of the damage gained as mana.|n|cffffcc00Level 4|r - 125% of the damage gained as mana.
 }
 
 STRING 19253
@@ -115971,6 +115994,12 @@ STRING 19336
 // Units: n0DE (Murloc Mutant), Ubertip (Tooltip - Extended)
 {
 Incredibly powerful melee unit. Has Resistant Skin, which reduces the duration of negative spells, Disease Cloud and Bile Shot.|n|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land units.|r
+}
+
+STRING 19337
+// Abilities: A0ZG (Blood Absorption), Tip (Tooltip - Normal)
+{
+Blood Absorption - [|cffffcc00Level 4|r]
 }
 
 STRING 19338
@@ -116537,6 +116566,12 @@ STRING 19431
 Upkeep -2 gold per minute
 }
 
+STRING 19432
+// Abilities: A0ZG (Blood Absorption), Ubertip (Tooltip - Normal - Extended)
+{
+When this hero attacks, 50% of the damage will be gained as mana
+}
+
 STRING 19433
 // Abilities: A0ZF (Upkeep -2 gold per minute), Tip (Tooltip - Normal)
 {
@@ -116556,13 +116591,13 @@ Build - Hunter Proving Grounds
 }
 
 STRING 19436
-// Units: n08H (Hunter Proving Grounds), Ubertip (Tooltip - Extended)
+// Units: o05J (Dragon Hatchery), Ubertip (Tooltip - Extended)
 {
 Trains Cliffrunners, Glaive Warriors and Demon Hunters
 }
 
 STRING 19437
-// Units: o061 (Cliffrunner), Ubertip (Tooltip - Extended)
+// Abilities: A0ZF (Upkeep -2 gold per minute), Ubertip (Tooltip - Normal - Extended)
 {
 Murloc bound to the will of Illidan.|n|cfff5962dAbilities:|R Charge, Amphibious|R|n|cfff5962d|n|cffffcc00Attacks land units.|r
 }
@@ -116571,5 +116606,71 @@ STRING 19438
 // Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
+}
+
+STRING 19439
+// Abilities: A0ZG (Blood Absorption), Ubertip (Tooltip - Normal - Extended)
+{
+When this hero attacks, 75% of the damage will be gained as mana
+}
+
+STRING 19440
+// Abilities: A0ZG (Blood Absorption), Ubertip (Tooltip - Normal - Extended)
+{
+When this hero attacks, 100% of the damage will be gained as mana
+}
+
+STRING 19441
+// Abilities: A0ZG (Blood Absorption), Ubertip (Tooltip - Normal - Extended)
+{
+When this hero attacks, 125% of the damage will be gained as mana
+}
+
+STRING 19442
+// Abilities: A0ZG (Blood Absorption), Name (Name)
+{
+Blood Absorption
+}
+
+STRING 19443
+// Abilities: A0ZG (Blood Absorption), Researchtip (Tooltip - Learn)
+{
+Learn Blood Absorption - [|cffffcc00Level %d|r]
+}
+
+STRING 19444
+// Abilities: A0ZG (Blood Absorption), Tip (Tooltip - Normal)
+{
+Blood Absorption - [|cffffcc00Level 1|r]
+}
+
+STRING 19445
+// Abilities: A0ZG (Blood Absorption), Tip (Tooltip - Normal)
+{
+Blood Absorption - [|cffffcc00Level 2|r]
+}
+
+STRING 19446
+// Abilities: A0ZG (Blood Absorption), Tip (Tooltip - Normal)
+{
+Blood Absorption - [|cffffcc00Level 3|r]
+}
+
+STRING 19447
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 19448
+// Upgrades: R094 (Chaos), Name (Name)
+{
+Quest Completed: The Skull of Gul'dan
+}
+
+STRING 19449
+// Units: O06F (Blood Warrior), Ubertip (Tooltip - Extended)
+{
+Warrior Hero, specialised in healing Troups.|n|cfff5962dCan learn:|R Transfusion, Mass Unholy Armor, Blood Absorption, Field of Blood|n|cffffcc00Attacks land units.|R
 }
 

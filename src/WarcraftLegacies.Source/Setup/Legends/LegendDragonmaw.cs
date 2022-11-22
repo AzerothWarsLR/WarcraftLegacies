@@ -9,6 +9,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Legend? DragonmawPort { get; private set; }
     public static Legend? Zaela { get; private set; }
     public static Legend? Nekrosh { get; private set; }
+    public static Legend? Gorfax { get; private set; }
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
@@ -30,6 +31,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         Name = "Nek'rosh Skullcrasher",
         UnitType = Constants.UNIT_O01Q_DRAGONMAW_CHIEFTAIN_FEL_HORDE
+      });
+
+      Legend.Register(Gorfax = new Legend
+      {
+        Name = "Gorfax Angerfang",
+        UnitType = Constants.UNIT_O06F_BLOOD_WARRIOR_DRAGONMAW,
+        StartingXp = 5400,
       });
 
     }

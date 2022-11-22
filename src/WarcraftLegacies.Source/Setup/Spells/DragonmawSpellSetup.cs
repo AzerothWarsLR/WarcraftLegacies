@@ -36,8 +36,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         ManaPerDamage = new LeveledAbilityField<float>
         {
-          Base = 0.8f,
-          PerLevel = 0.2f
+          Base = 0.25f,
+          PerLevel = 0.25f
         },
         Effect = "Abilities\\Spells\\Undead\\ReplenishMana\\SpiritTouchTarget.mdl"
       });

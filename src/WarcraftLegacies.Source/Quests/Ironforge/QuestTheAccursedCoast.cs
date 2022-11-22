@@ -16,6 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       "ReplaceableTextures\\CommandButtons\\BTNHumanShipyard.blp")
     {
       AddObjective(new ObjectiveControlLegend(LegendIronforge.LegendMenethilHarbor, true));
+      AddObjective(new ObjectiveControlLegend(LegendIronforge.LegendThelsamar, false));
       AddObjective(new ObjectiveLegendDead(LegendDragonmaw.DragonmawPort));
       AddObjective(new ObjectiveExpire(600));
     }
