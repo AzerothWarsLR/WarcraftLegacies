@@ -14,7 +14,9 @@ namespace WarcraftLegacies.Source.Setup
       ObserverCommand.Setup();
       UnallyCommand.Setup();
       UninviteCommand.Setup();
-      CommandManager.Register(new CommandLimited());
+      CommandManager.Register(new Limited());
+      CommandManager.Register(new Clear());
+      CommandManager.Register(new Cam());
     }
   }
 }

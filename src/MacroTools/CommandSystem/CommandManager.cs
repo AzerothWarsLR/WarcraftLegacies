@@ -11,8 +11,8 @@ namespace MacroTools.CommandSystem
   /// </summary>
   public static class CommandManager
   {
-    private static readonly Dictionary<string, Command> CheatsByCommand = new();
-    private static readonly TriggerWrapper CheatTrigger = new();
+    private static readonly Dictionary<string, Command> CommandsByString = new();
+    private static readonly TriggerWrapper CommandTrigger = new();
     
     /// <summary>
     /// A piece of text to be appended before any message relating to cheats.
@@ -29,28 +29,28 @@ namespace MacroTools.CommandSystem
     /// </summary>
     public static void Register(Command command)
     {
-      CheatsByCommand.Add(Prefix + command.CommandText, command);
+      CommandsByString.Add(Prefix + command.CommandText, command);
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) 
-        CheatTrigger.RegisterPlayerChatEvent(player, Prefix + command.CommandText, false);
+        CommandTrigger.RegisterPlayerChatEvent(player, Prefix + command.CommandText, false);
     }
 
-    private static void ExecuteCheat()
+    private static void ExecuteCommand()
     {
       try
       {
         var split = GetEventPlayerChatString().Split(" ");
-        var command = split[0];
-        if (!CheatsByCommand.TryGetValue(command, out var cheat)) 
+        var commandText = split[0];
+        if (!CommandsByString.TryGetValue(commandText, out var command)) 
           return;
         var triggerPlayer = GetTriggerPlayer();
         var parameters = split.Skip(1).ToArray();
-        if (parameters.Length != cheat.ParameterCount)
+        if (parameters.Length != command.ParameterCount)
         {
-          DisplayTextToPlayer(triggerPlayer, 0, 0, $"{CheatMessagePrefix} You must supply exactly {cheat.ParameterCount} parameters.");
+          DisplayTextToPlayer(triggerPlayer, 0, 0, $"You must supply exactly {command.ParameterCount} parameters.");
           return;
         }
-        var message = cheat.Execute(triggerPlayer, parameters);
-        DisplayTextToPlayer(triggerPlayer, 0, 0, $"{CheatMessagePrefix} {message}");
+        var message = command.Execute(triggerPlayer, parameters);
+        DisplayTextToPlayer(triggerPlayer, 0, 0, $"{message}");
       }
       catch (Exception ex)
       {
@@ -60,7 +60,7 @@ namespace MacroTools.CommandSystem
 
     static CommandManager()
     {
-      CheatTrigger.AddAction(ExecuteCheat);
+      CommandTrigger.AddAction(ExecuteCommand);
     }
   }
 }

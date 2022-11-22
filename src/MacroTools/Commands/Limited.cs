@@ -10,7 +10,7 @@ namespace MacroTools.Commands
   /// <summary>
   /// A <see cref="CommandSystem.Command"/> that pings all of the player's limited units.
   /// </summary>
-  public sealed class CommandLimited : Command
+  public sealed class Limited : Command
   {
     /// <inheritdoc />
     public override string CommandText => "limited";
