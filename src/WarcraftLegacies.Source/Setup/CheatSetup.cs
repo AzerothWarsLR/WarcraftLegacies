@@ -1,5 +1,5 @@
 ﻿using MacroTools.Cheats;
-using MacroTools.CheatSystem;
+using MacroTools.CommandSystem;
 using WarcraftLegacies.Source.Cheats;
 
 namespace WarcraftLegacies.Source.Setup
@@ -34,10 +34,10 @@ namespace WarcraftLegacies.Source.Setup
       CheatCompleteQuest.Setup();
       CheatAddRandomAugment.Setup();
       CheatAugment.Setup();
-      CheatManager.Register(new CheatTeam());
-      CheatManager.Register(new CheatAddSpell());
-      CheatManager.Register(new CheatSetResearchLevel());
-      CheatManager.Register(new CheatDestroy());
+      CommandManager.Register(new CommandTeam());
+      CommandManager.Register(new CommandAddSpell());
+      CommandManager.Register(new CommandSetResearchLevel());
+      CommandManager.Register(new CommandDestroy());
     }
   }
 }
