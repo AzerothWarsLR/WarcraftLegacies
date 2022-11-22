@@ -3876,6 +3876,12 @@ STRING 647
 W
 }
 
+STRING 648
+// Units: o05J (Dragon Hatchery), Ubertip (Tooltip - Extended)
+{
+Trains Cliffrunners, Glaive Warriors and Demon Hunters
+}
+
 STRING 649
 // Units: nndr (Nether Dragon), Ubertip (Tooltip - Extended)
 {
@@ -21557,7 +21563,7 @@ Train Siege Ancient
 }
 
 STRING 3594
-// Units: n0CP (Salary), EditorSuffix (Name - Editor Suffix)
+// Units: n0CP (Enslaved Dragon), EditorSuffix (Name - Editor Suffix)
 {
 (Dragonmaw) (Base)
 }
@@ -35371,7 +35377,7 @@ STRING 5895
 }
 
 STRING 5896
-// Units: n0CP (Salary), Hotkey (Hotkey)
+// Units: n0CP (Enslaved Dragon), Hotkey (Hotkey)
 {
 E
 }
@@ -88337,6 +88343,12 @@ STRING 14719
 Quest Completed: Inevitable Progress
 }
 
+STRING 14720
+// Units: n0CP (Enslaved Dragon), Name (Name)
+{
+Enslaved Dragon
+}
+
 STRING 14721
 // Units: n0C9 (Temple of Tides), Tip (Tooltip - Basic)
 {
@@ -90486,7 +90498,7 @@ Further increases the armor of all Naval Units.
 }
 
 STRING 15079
-// Units: n0CP (Salary), Tip (Tooltip - Basic)
+// Units: n0CP (Enslaved Dragon), Tip (Tooltip - Basic)
 {
 Train Enslaved Dragon
 }
@@ -114121,6 +114133,12 @@ STRING 19024
 Train Battlemaster
 }
 
+STRING 19025
+// Abilities: A0ZF (Upkeep -2 gold per minute), Ubertip (Tooltip - Normal - Extended)
+{
+Murloc bound to the will of Illidan.|n|cfff5962dAbilities:|R Charge, Amphibious|R|n|cfff5962d|n|cffffcc00Attacks land units.|r
+}
+
 STRING 19026
 // Units: O06F (Blood Warrior), EditorSuffix (Name - Editor Suffix)
 {
@@ -114230,7 +114248,7 @@ STRING 19043
 }
 
 STRING 19044
-// Units: n0CP (Salary), Ubertip (Tooltip - Extended)
+// Units: n0CP (Enslaved Dragon), Ubertip (Tooltip - Extended)
 {
 Powerful Flying Caster of the Dragonmaw.|n|cfff5962dAbilities:|R Breath of Fire, Breath of Life|n|n|cff99b4d1Can only train 2.|r|n|cffffcc00Attacks land and air units.|r
 }
@@ -116519,12 +116537,6 @@ STRING 19431
 Upkeep -2 gold per minute
 }
 
-STRING 19432
-// Units: n0CP (Salary), Name (Name)
-{
-Salary
-}
-
 STRING 19433
 // Abilities: A0ZF (Upkeep -2 gold per minute), Tip (Tooltip - Normal)
 {
@@ -116544,13 +116556,13 @@ Build - Hunter Proving Grounds
 }
 
 STRING 19436
-// Units: o05J (Dragon Hatchery), Ubertip (Tooltip - Extended)
+// Units: n08H (Hunter Proving Grounds), Ubertip (Tooltip - Extended)
 {
 Trains Cliffrunners, Glaive Warriors and Demon Hunters
 }
 
 STRING 19437
-// Abilities: A0ZF (Upkeep -2 gold per minute), Ubertip (Tooltip - Normal - Extended)
+// Units: o061 (Cliffrunner), Ubertip (Tooltip - Extended)
 {
 Murloc bound to the will of Illidan.|n|cfff5962dAbilities:|R Charge, Amphibious|R|n|cfff5962d|n|cffffcc00Attacks land units.|r
 }
