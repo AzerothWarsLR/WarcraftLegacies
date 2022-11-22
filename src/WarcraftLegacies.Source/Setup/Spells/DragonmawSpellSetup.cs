@@ -1,4 +1,6 @@
-﻿using MacroTools;
+﻿using System.Collections.Generic;
+using static War3Api.Common;
+using MacroTools;
 using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
@@ -38,6 +40,34 @@ namespace WarcraftLegacies.Source.Setup.Spells
           PerLevel = 0.2f
         },
         Effect = "Abilities\\Spells\\Undead\\ReplenishMana\\SpiritTouchTarget.mdl"
+      });
+
+      PassiveAbilityManager.Register(new LocationBasedFlavourAbility(Constants.UNIT_O05J_DRAGON_HATCHERY_DRAGONMAW)
+      {
+        LocationBasedFlavourSettings = new List<LocationBasedFlavourSetting>
+        {
+          new("Green Dragon Hatchery", FourCC("ndrg"), Regions.AshenvaleAmbient.Center),
+          new("Red Dragon Hatchery", FourCC("ndrr"), Regions.Stormwind.Center),
+          new("Black Dragon Hatchery", FourCC("ndrk"), Regions.InstanceBlackrock.Center),
+          new("Blue Dragon Hatchery", FourCC("ndru"), Regions.Central_Northrend.Center),
+          new("Nether Dragon Hatchery", FourCC("ndro"), Regions.InstanceOutland.Center),
+          new("Bronze Dragon Hatchery", FourCC("ndrz"), Regions.Zulfarrak.Center),
+          new("Green Dragon Hatchery", FourCC("ndrg"), Regions.LordaeronAmbient2.Center)
+        }
+      });
+
+      PassiveAbilityManager.Register(new LocationBasedFlavourAbility(Constants.UNIT_N0CP_ENSLAVED_DRAGON_DRAGONMAW_BASE)
+      {
+        LocationBasedFlavourSettings = new List<LocationBasedFlavourSetting>
+        {
+          new("Enslaved Green Dragon", FourCC("ndrg"), Regions.AshenvaleAmbient.Center),
+          new("Enslaved Red Dragon", FourCC("ndrr"), Regions.Stormwind.Center),
+          new("Enslaved Black Dragon", FourCC("ndrk"), Regions.InstanceBlackrock.Center),
+          new("Enslaved Blue Dragon", FourCC("ndru"), Regions.Central_Northrend.Center),
+          new("Enslaved Nether Dragon", FourCC("ndro"), Regions.InstanceOutland.Center),
+          new("Enslaved Bronze Dragon", FourCC("ndrz"), Regions.Zulfarrak.Center),
+          new("Enslaved Green Dragon", FourCC("ndrg"), Regions.LordaeronAmbient2.Center)
+        }
       });
     }
   }

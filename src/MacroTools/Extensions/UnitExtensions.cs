@@ -13,6 +13,24 @@ namespace MacroTools.Extensions
     private const float HeroDropDist = 50; //The radius in which heroes spread out items when they drop them
 
     /// <summary>
+    /// Changes the unit's skin to match that of another unit type.
+    /// </summary>
+    public static unit SetSkin(this unit whichUnit, int skinUnitTypeId)
+    {
+      BlzSetUnitSkin(whichUnit, skinUnitTypeId);
+      return whichUnit;
+    }
+    
+    /// <summary>
+    /// Changes the unit's name.
+    /// </summary>
+    public static unit SetName(this unit whichUnit, string name)
+    {
+      BlzSetUnitName(whichUnit, name);
+      return whichUnit;
+    }
+    
+    /// <summary>
     /// Returns true if the unit is an illusion.
     /// </summary>
     public static bool IsIllusion(this unit whichUnit) => IsUnitIllusion(whichUnit);
