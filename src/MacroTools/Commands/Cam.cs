@@ -20,16 +20,12 @@ namespace MacroTools.Commands
     public override string Execute(player commandUser, params string[] parameters)
     {
       var cameraHeight = parameters[0];
-      if (int.TryParse(cameraHeight, out var cameraHeightInt))
-      {
-        cameraHeightInt = Math.Clamp(cameraHeightInt, 700, 2400);
-        commandUser.ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, cameraHeightInt, 1);
-        return $"Setting camera height to {cameraHeightInt}.";
-      }
-      else
-      {
-        return $"You must specify a number as the first parameter.";
-      }
+      if (!int.TryParse(cameraHeight, out var cameraHeightInt))
+        return "You must specify a number as the first parameter.";
+      
+      cameraHeightInt = Math.Clamp(cameraHeightInt, 700, 2400);
+      commandUser.ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, cameraHeightInt, 1);
+      return $"Setting camera height to {cameraHeightInt}.";
     }
   }
 }
