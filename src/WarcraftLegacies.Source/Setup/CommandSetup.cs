@@ -1,4 +1,6 @@
-﻿using WarcraftLegacies.Source.Commands;
+﻿using MacroTools.Commands;
+using MacroTools.CommandSystem;
+using WarcraftLegacies.Source.Commands;
 
 namespace WarcraftLegacies.Source.Setup
 {
@@ -12,6 +14,7 @@ namespace WarcraftLegacies.Source.Setup
       ObserverCommand.Setup();
       UnallyCommand.Setup();
       UninviteCommand.Setup();
+      CommandManager.Register(new CommandLimited());
     }
   }
 }

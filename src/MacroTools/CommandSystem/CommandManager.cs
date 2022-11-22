@@ -4,14 +4,14 @@ using System.Linq;
 using MacroTools.Wrappers;
 using static War3Api.Common;
 
-namespace MacroTools.CheatSystem
+namespace MacroTools.CommandSystem
 {
   /// <summary>
-  /// Responsible for managing all <see cref="Cheat"/>s in the game.
+  /// Responsible for managing all <see cref="Command"/>s in the game.
   /// </summary>
-  public static class CheatManager
+  public static class CommandManager
   {
-    private static readonly Dictionary<string, Cheat> CheatsByCommand = new();
+    private static readonly Dictionary<string, Command> CheatsByCommand = new();
     private static readonly TriggerWrapper CheatTrigger = new();
     
     /// <summary>
@@ -20,18 +20,18 @@ namespace MacroTools.CheatSystem
     private const string CheatMessagePrefix = "|cffD27575CHEAT:|r";
     
     /// <summary>
-    /// All <see cref="Cheat"/>s must be prefixed with this when entered into the chat.
+    /// All <see cref="Command"/>s must be prefixed with this when entered into the chat.
     /// </summary>
     private const string Prefix = "-";
     
     /// <summary>
-    /// Registers a <see cref="Cheat"/>, allowing it to be fired when a player executes its command in the chat.
+    /// Registers a <see cref="Command"/>, allowing it to be fired when a player executes its command in the chat.
     /// </summary>
-    public static void Register(Cheat cheat)
+    public static void Register(Command command)
     {
-      CheatsByCommand.Add(Prefix + cheat.Command, cheat);
+      CheatsByCommand.Add(Prefix + command.CommandText, command);
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) 
-        CheatTrigger.RegisterPlayerChatEvent(player, Prefix + cheat.Command, false);
+        CheatTrigger.RegisterPlayerChatEvent(player, Prefix + command.CommandText, false);
     }
 
     private static void ExecuteCheat()
@@ -54,11 +54,11 @@ namespace MacroTools.CheatSystem
       }
       catch (Exception ex)
       {
-        Console.WriteLine($"Failed to execute cheat: {ex}");
+        Console.WriteLine($"Failed to execute command: {ex}");
       }
     }
 
-    static CheatManager()
+    static CommandManager()
     {
       CheatTrigger.AddAction(ExecuteCheat);
     }
