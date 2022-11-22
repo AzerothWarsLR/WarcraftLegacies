@@ -48,7 +48,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendAltruis = new Legend
       {
         UnitType = FourCC("E015"),
-        StartingXp = 4000
       };
       Legend.Register(LegendAltruis);
 

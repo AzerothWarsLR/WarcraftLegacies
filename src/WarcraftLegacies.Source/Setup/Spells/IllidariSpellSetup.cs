@@ -27,7 +27,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Constants.UNIT_HVSH_SEA_WITCH,
         Constants.UNIT_E015_CHAMPION_OF_THE_ILLIDARI_NAGA,
         Constants.UNIT_U00S_HIGH_WARLORD_NAGA,
-        Constants.UNIT_NMPE_MUR_GUL_SLAVE_ILLIDARI_NZOTH_WORKER
+        Constants.UNIT_NMPE_MUR_GUL_SLAVE_ILLIDARI_NZOTH_WORKER,
+        Constants.UNIT_O061_CLIFFRUNNER_MURLOC
       }, Constants.ABILITY_A01G_AMPHIBIAN_NAGA_ABILITY)
       {
         DamageMultiplier = 200
