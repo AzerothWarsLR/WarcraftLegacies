@@ -23169,12 +23169,6 @@ STRING 3861
 Revive Demigod
 }
 
-STRING 3862
-// Units: o01I (Illidan Path Selector), Name (Name)
-{
-Illidan Path Selector
-}
-
 STRING 3863
 // Units: edot (Druid of the Talon), Ubertip (Tooltip - Extended)
 {
