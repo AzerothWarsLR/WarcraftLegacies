@@ -56,7 +56,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         }
       });
 
-      PassiveAbilityManager.Register(new LocationBasedFlavourAbility(Constants.UNIT_N0CP_ANCIENT_DRAGON_DRAGONMAW)
+      PassiveAbilityManager.Register(new LocationBasedFlavourAbility(Constants.UNIT_N0CP_SALARY_DRAGONMAW_BASE)
       {
         LocationBasedFlavourSettings = new List<LocationBasedFlavourSetting>
         {

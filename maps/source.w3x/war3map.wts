@@ -3876,12 +3876,6 @@ STRING 647
 W
 }
 
-STRING 648
-// Units: o05J (Dragon Hatchery), Ubertip (Tooltip - Extended)
-{
-Dragon Hatchery for the Dragonmaw Clan.|n|cfff5962dTrains:|R Dragon Whelp, Dragon Rider, Ancient Red Dragon
-}
-
 STRING 649
 // Units: nndr (Nether Dragon), Ubertip (Tooltip - Extended)
 {
@@ -21563,7 +21557,7 @@ Train Siege Ancient
 }
 
 STRING 3594
-// Units: n0CP (Enslaved Red Dragon), EditorSuffix (Name - Editor Suffix)
+// Units: n0CP (Salary), EditorSuffix (Name - Editor Suffix)
 {
 (Dragonmaw) (Base)
 }
@@ -35377,7 +35371,7 @@ STRING 5895
 }
 
 STRING 5896
-// Units: n0CP (Enslaved Red Dragon), Hotkey (Hotkey)
+// Units: n0CP (Salary), Hotkey (Hotkey)
 {
 E
 }
@@ -88343,12 +88337,6 @@ STRING 14719
 Quest Completed: Inevitable Progress
 }
 
-STRING 14720
-// Units: n0CP (Enslaved Red Dragon), Name (Name)
-{
-Enslaved Red Dragon
-}
-
 STRING 14721
 // Units: n0C9 (Temple of Tides), Tip (Tooltip - Basic)
 {
@@ -90498,7 +90486,7 @@ Further increases the armor of all Naval Units.
 }
 
 STRING 15079
-// Units: n0CP (Enslaved Red Dragon), Tip (Tooltip - Basic)
+// Units: n0CP (Salary), Tip (Tooltip - Basic)
 {
 Train Enslaved Dragon
 }
@@ -114242,7 +114230,7 @@ STRING 19043
 }
 
 STRING 19044
-// Units: n0CP (Enslaved Red Dragon), Ubertip (Tooltip - Extended)
+// Units: n0CP (Salary), Ubertip (Tooltip - Extended)
 {
 Powerful Flying Caster of the Dragonmaw.|n|cfff5962dAbilities:|R Breath of Fire, Breath of Life|n|n|cff99b4d1Can only train 2.|r|n|cffffcc00Attacks land and air units.|r
 }
@@ -115040,7 +115028,7 @@ Mercenaries Tavern 1
 }
 
 STRING 19178
-// Units: n0DH (Enslaved Nether Dragon), EditorSuffix (Name - Editor Suffix)
+// Units: n0DF (Enslaved Black Dragon), EditorSuffix (Name - Editor Suffix)
 {
 (Dragonmaw)
 }
@@ -115064,7 +115052,7 @@ Medium dragon of the Dragonmaw Clan.|n|r|n|cffffcc00Attacks land and air units.|
 }
 
 STRING 19182
-// Units: n0DF (Enslaved Black Dragon), EditorSuffix (Name - Editor Suffix)
+// Units: n0DG (Enslaved Bronze Dragon), EditorSuffix (Name - Editor Suffix)
 {
 (Dragonmaw)
 }
@@ -115129,7 +115117,7 @@ STRING 19192
 }
 
 STRING 19193
-// Units: n0DI (Enslaved Green Dragon), EditorSuffix (Name - Editor Suffix)
+// Units: n0DH (Enslaved Nether Dragon), EditorSuffix (Name - Editor Suffix)
 {
 (Dragonmaw)
 }
@@ -115147,37 +115135,37 @@ Build Gnoll Kennel
 }
 
 STRING 19196
-// Abilities: A074 (Breath of Fire), EditorSuffix (Editor Suffix)
+// Units: n0DI (Enslaved Green Dragon), EditorSuffix (Name - Editor Suffix)
 {
 (Dragonmaw)
 }
 
 STRING 19197
-// Abilities: A0ZA (Dragonmaw Battle Standard), EditorSuffix (Editor Suffix)
+// Abilities: A074 (Breath of Fire), EditorSuffix (Editor Suffix)
 {
 (Dragonmaw)
 }
 
 STRING 19198
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 19199
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 19200
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 19201
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -116160,7 +116148,7 @@ Build Coral of War
 }
 
 STRING 19370
-// Units: n0DG (Enslaved Bronze Dragon), EditorSuffix (Name - Editor Suffix)
+// Abilities: A0ZA (Dragonmaw Battle Standard), EditorSuffix (Editor Suffix)
 {
 (Dragonmaw)
 }
@@ -116514,7 +116502,7 @@ R
 }
 
 STRING 19429
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -116532,13 +116520,13 @@ Upkeep -2 gold per minute
 }
 
 STRING 19432
-// Abilities: A0ZF (Upkeep -2 gold per minute), Tip (Tooltip - Normal)
+// Units: n0CP (Salary), Name (Name)
 {
 Salary
 }
 
 STRING 19433
-// Abilities: A0ZF (Upkeep -2 gold per minute), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0ZF (Upkeep -2 gold per minute), Tip (Tooltip - Normal)
 {
 Costs 2 gold per minute
 }
@@ -116556,19 +116544,19 @@ Build - Hunter Proving Grounds
 }
 
 STRING 19436
-// Units: n08H (Hunter Proving Grounds), Ubertip (Tooltip - Extended)
+// Units: o05J (Dragon Hatchery), Ubertip (Tooltip - Extended)
 {
 Trains Cliffrunners, Glaive Warriors and Demon Hunters
 }
 
 STRING 19437
-// Units: o061 (Cliffrunner), Ubertip (Tooltip - Extended)
+// Abilities: A0ZF (Upkeep -2 gold per minute), Ubertip (Tooltip - Normal - Extended)
 {
 Murloc bound to the will of Illidan.|n|cfff5962dAbilities:|R Charge, Amphibious|R|n|cfff5962d|n|cffffcc00Attacks land units.|r
 }
 
 STRING 19438
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
