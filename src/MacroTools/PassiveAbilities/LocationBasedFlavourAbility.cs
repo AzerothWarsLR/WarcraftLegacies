@@ -1,5 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
+using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
 {
@@ -16,6 +19,19 @@ namespace MacroTools.PassiveAbilities
     /// <inheritdoc />
     public LocationBasedFlavourAbility(int unitTypeId) : base(unitTypeId)
     {
+    }
+
+    /// <inheritdoc />
+    public override void OnCreated(unit createdUnit)
+    {
+      if (LocationBasedFlavourSettings == null) 
+        return;
+      var unitPosition = createdUnit.GetPosition();
+      var closestSetting = LocationBasedFlavourSettings.OrderBy(x =>
+        WCSharp.Shared.Util.DistanceBetweenPoints(x.Location.X, x.Location.Y, unitPosition.X, unitPosition.Y)).Last();
+      createdUnit
+        .SetName(closestSetting.Name)
+        .SetSkin(closestSetting.AlternateUnitTypeId);
     }
   }
 }
