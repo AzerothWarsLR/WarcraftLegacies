@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Wrappers;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace MacroTools.FactionSystem
@@ -11,6 +12,20 @@ namespace MacroTools.FactionSystem
   /// </summary>
   public static class PlayerExtensions
   {
+    /// <summary>
+    /// Pings the minimap for the player.
+    /// </summary>
+    /// <param name="whichPlayer">Who to display the ping to.</param>
+    /// <param name="position">Where to ping.</param>
+    /// <param name="duration">How long the ping should last.</param>
+    /// <returns>The same player that was passed in.</returns>
+    public static player PingLocation(this player whichPlayer, Point position, float duration)
+    {
+      if (GetLocalPlayer() == whichPlayer)
+        PingMinimap(position.X, position.Y, duration);
+      return whichPlayer;
+    }
+    
     /// <summary>
     /// Replaces the minimap background texture with the specified one.
     /// </summary>
@@ -88,8 +103,7 @@ namespace MacroTools.FactionSystem
     /// </summary>
     /// <param name="player">The player in question.</param>
     /// <param name="objectId">The unit type ID or research ID we want to know about.</param>
-    public static int GetObjectLimit(this player player, int objectId) =>
-      PlayerData.ByHandle(player).GetObjectLimit(objectId);
+    public static int GetObjectLimit(this player player, int objectId) => GetPlayerTechMaxAllowed(player, objectId);
 
     public static int GetControlPointCount(this player player)
     {

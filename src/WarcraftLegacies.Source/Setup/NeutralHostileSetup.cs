@@ -1,8 +1,6 @@
 ﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.FactionSetup;
-using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup
@@ -13,20 +11,14 @@ namespace WarcraftLegacies.Source.Setup
   public static class NeutralHostileSetup
   {
     /// <summary>
-    /// Grants all units controlled by Illidan to Neutral Hostile, then gives the actual Illidan hero back to Illidan.
+    /// Grants all units controlled by Illidan to Neutral Hostile, except for those in <see cref="Regions.IllidanStartingPosition"/>.
     /// </summary>
     public static void Setup()
     {
-      if (IllidanSetup.Illidan == null) return;
-      if (IllidanSetup.Illidan.Player == null) return;
+      if (IllidanSetup.Illidan?.Player == null) return;
       foreach (var unit in new GroupWrapper().EnumUnitsOfPlayer(IllidanSetup.Illidan.Player).EmptyToList())
-      {
-        unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      }
-      if (LegendNaga.LegendIllidan.Unit != null) 
-        LegendNaga.LegendIllidan.Unit.SetOwner(IllidanSetup.Illidan.Player);
-      var rescueUnits = Regions.IllidanStartingPosition.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      IllidanSetup.Illidan.Player.RescueGroup(rescueUnits);
+        if (!Regions.IllidanStartingPosition.Contains(unit.GetPosition()))
+          unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
   }
 }

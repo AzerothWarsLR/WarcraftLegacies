@@ -1,4 +1,4 @@
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.Powers;
 using TestMap.Source.Setup.FactionSetup.FactionSetup;
 using static War3Api.Common;
@@ -11,8 +11,6 @@ namespace TestMap.Source.Setup
     {
       DalaranSetup.Setup();
       DruidsSetup.Setup();
-      CthunSetup.Setup();
-      BlackEmpireSetup.Setup();
       DraeneiSetup.Setup();
 
       var spaceMarines = new Faction("Space Marines", PLAYER_COLOR_BLUE, "|c000042ff",

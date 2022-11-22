@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNHeroMountainKing.blp")
       {
         UndefeatedResearch = FourCC("R05T"),
-        StartingGold = 300,
+        StartingGold = 250,
         StartingLumber = 500,
         CinematicMusic = "PursuitTheme",
         IntroText = @"You are playing as the long- enduring |cffe4bc00Kingdom of Ironforge.

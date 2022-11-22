@@ -166,7 +166,7 @@ namespace Launcher
       }
       else
       {
-        throw new Exception("Please set wc3exe in Launcher/app.config to the path of your Warcraft III executable.");
+        throw new Exception("Please set Warcraft3ExecutablePath in Launcher/appsettings.json to the path of your Warcraft III executable.");
       }
     }
   }

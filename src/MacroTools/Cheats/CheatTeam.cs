@@ -1,4 +1,4 @@
-﻿using MacroTools.CheatSystem;
+﻿using MacroTools.CommandSystem;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
@@ -7,10 +7,10 @@ namespace MacroTools.Cheats
   /// <summary>
   /// Sets the <see cref="Team"/> any <see cref="Faction"/>.
   /// </summary>
-  public sealed class CheatTeam : Cheat
+  public sealed class CommandTeam : Command
   {
     /// <inheritdoc />
-    public override string Command => "team";
+    public override string CommandText => "team";
 
     /// <inheritdoc />
     public override int ParameterCount => 2;

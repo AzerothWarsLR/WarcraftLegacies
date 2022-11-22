@@ -221,13 +221,8 @@ public static class Regions
 	public static Rectangle LightningBolt3 { get; set; } = new Rectangle(-18784f, 3584f, -18752f, 3616f);
 	public static Rectangle WaveCrash { get; set; } = new Rectangle(-18912f, 3872f, -18880f, 3904f);
 	public static Rectangle BloodElfSecondChanceSpawn { get; set; } = new Rectangle(-11744f, 21504f, -11040f, 22304f);
-	public static Rectangle AethneumTombExit { get; set; } = new Rectangle(-27840f, 23232f, -27712f, 23840f);
 	public static Rectangle AethneumLibraryEntrance { get; set; } = new Rectangle(-18272f, 23904f, -17664f, 24160f);
-	public static Rectangle IllidanMoveAethneum { get; set; } = new Rectangle(-26144f, 21856f, -26112f, 21888f);
-	public static Rectangle ImmolFight { get; set; } = new Rectangle(-27456f, 18496f, -26240f, 19936f);
-	public static Rectangle AethneumCatacombs { get; set; } = new Rectangle(-28160f, 17952f, -23072f, 24544f);
-	public static Rectangle AethneumRemove { get; set; } = new Rectangle(-25728f, 22624f, -25184f, 22912f);
-	public static Rectangle AetheneumTombExit2 { get; set; } = new Rectangle(-24064f, 20832f, -23872f, 21216f);
+	public static Rectangle AethneumCatacombs { get; set; } = new Rectangle(-22432f, 20480f, -18592f, 24576f);
 	public static Rectangle NazjatarEntrance2 { get; set; } = new Rectangle(-896f, 992f, -416f, 1184f);
 	public static Rectangle NazjatarEntrance1 { get; set; } = new Rectangle(384f, 2752f, 864f, 2944f);
 	public static Rectangle NazjatarExit1 { get; set; } = new Rectangle(12000f, -27712f, 12480f, -27520f);
@@ -241,10 +236,6 @@ public static class Regions
 	public static Rectangle SkullOfGuldan { get; set; } = new Rectangle(-13824f, 23232f, -13408f, 23488f);
 	public static Rectangle IllidanDalaExit { get; set; } = new Rectangle(8736f, 6432f, 8896f, 6624f);
 	public static Rectangle IllidanLast { get; set; } = new Rectangle(-18720f, 3712f, -18688f, 3744f);
-	public static Rectangle AetheneumtoNazjatar { get; set; } = new Rectangle(-27200f, 19008f, -26880f, 19392f);
-	public static Rectangle IllidanNaga1 { get; set; } = new Rectangle(-26240f, 20832f, -26208f, 20864f);
-	public static Rectangle IllidanNaga2 { get; set; } = new Rectangle(-25280f, 20160f, -25248f, 20192f);
-	public static Rectangle IllidanNaga3 { get; set; } = new Rectangle(-26304f, 20768f, -26272f, 20800f);
 	public static Rectangle MaelstromAmbient { get; set; } = new Rectangle(-1888f, 224f, 1568f, 3552f);
 	public static Rectangle BlackrockUnlock { get; set; } = new Rectangle(20448f, -31968f, 22560f, -28512f);
 	public static Rectangle Scarlet_Monastery_Interior { get; set; } = new Rectangle(-24864f, 15360f, -24512f, 15744f);

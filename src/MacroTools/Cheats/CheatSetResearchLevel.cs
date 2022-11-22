@@ -1,16 +1,16 @@
-﻿using MacroTools.CheatSystem;
+﻿using MacroTools.CommandSystem;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
   /// <summary>
-  /// A <see cref="Cheat"/> that sets the specified research to the specified level for the cheater.
+  /// A <see cref="CommandSystem.Command"/> that sets the specified research to the specified level for the cheater.
   /// </summary>
-  public sealed class CheatSetResearchLevel : Cheat
+  public sealed class CommandSetResearchLevel : Command
   {
     /// <inheritdoc />
-    public override string Command => "setresearchlevel";
+    public override string CommandText => "setresearchlevel";
     
     /// <inheritdoc />
     public override int ParameterCount => 2;
@@ -31,7 +31,7 @@ namespace MacroTools.Cheats
       
       var faction = cheater.GetFaction();
       if (faction == null)
-        return $"You need to have a valid {nameof(Faction)} to use this Cheat.";
+        return $"You need to have a valid {nameof(Faction)} to use this Command.";
       faction.SetObjectLevel(researchId, level);
       return $"Setting research {objectName} to level {level}.";
     }

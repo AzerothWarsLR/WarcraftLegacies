@@ -1,16 +1,16 @@
-﻿using MacroTools.CheatSystem;
+﻿using MacroTools.CommandSystem;
 using MacroTools.Wrappers;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
   /// <summary>
-  /// A <see cref="Cheat"/> that adds a specified spell to all selected units.
+  /// A <see cref="CommandSystem.Command"/> that adds a specified spell to all selected units.
   /// </summary>
-  public sealed class CheatAddSpell : Cheat
+  public sealed class CommandAddSpell : Command
   {
     /// <inheritdoc />
-    public override string Command => "add";
+    public override string CommandText => "add";
 
     /// <inheritdoc />
     public override int ParameterCount => 1;

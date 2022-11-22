@@ -1,5 +1,5 @@
 ﻿using MacroTools.Cheats;
-using MacroTools.CheatSystem;
+using MacroTools.CommandSystem;
 
 namespace TestMap.Source.Setup
 {
@@ -32,10 +32,10 @@ namespace TestMap.Source.Setup
       CheatCompleteQuest.Setup();
       CheatAddRandomAugment.Setup();
       CheatAugment.Setup();
-      CheatManager.Register(new CheatAddSpell());
-      CheatManager.Register(new CheatSetResearchLevel());
-      CheatManager.Register(new CheatTeam());
-      CheatManager.Register(new CheatDestroy());
+      CommandManager.Register(new CommandAddSpell());
+      CommandManager.Register(new CommandSetResearchLevel());
+      CommandManager.Register(new CommandTeam());
+      CommandManager.Register(new CommandDestroy());
     }
   }
 }
