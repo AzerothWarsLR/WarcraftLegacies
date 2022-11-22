@@ -55,6 +55,20 @@ namespace WarcraftLegacies.Source.Setup.Spells
           new("Green Dragon Hatchery", FourCC("ndrg"), Regions.LordaeronAmbient2.Center)
         }
       });
+
+      PassiveAbilityManager.Register(new LocationBasedFlavourAbility(Constants.UNIT_N0CP_ANCIENT_DRAGON_DRAGONMAW)
+      {
+        LocationBasedFlavourSettings = new List<LocationBasedFlavourSetting>
+        {
+          new("Enslaved Green Dragon", FourCC("ndrg"), Regions.AshenvaleAmbient.Center),
+          new("Enslaved Red Dragon", FourCC("ndrr"), Regions.Stormwind.Center),
+          new("Enslaved Black Dragon", FourCC("ndrk"), Regions.InstanceBlackrock.Center),
+          new("Enslaved Blue Dragon", FourCC("ndru"), Regions.Central_Northrend.Center),
+          new("Enslaved Nether Dragon", FourCC("ndro"), Regions.InstanceOutland.Center),
+          new("Enslaved Bronze Dragon", FourCC("ndrz"), Regions.Zulfarrak.Center),
+          new("Enslaved Green Dragon", FourCC("ndrg"), Regions.LordaeronAmbient2.Center)
+        }
+      });
     }
   }
 }
