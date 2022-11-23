@@ -17,6 +17,9 @@ namespace MacroTools.Commands
     public override int ParameterCount => 1;
 
     /// <inheritdoc />
+    public override CommandType Type => CommandType.Normal;
+    
+    /// <inheritdoc />
     public override string Execute(player commandUser, params string[] parameters)
     {
       var cameraHeight = parameters[0];

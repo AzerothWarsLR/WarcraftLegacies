@@ -15,6 +15,9 @@ namespace MacroTools.Commands
     public override int ParameterCount => 0;
 
     /// <inheritdoc />
+    public override CommandType Type => CommandType.Normal;
+    
+    /// <inheritdoc />
     public override string Execute(player commandUser, params string[] parameters)
     {
       if (GetLocalPlayer() == commandUser)
