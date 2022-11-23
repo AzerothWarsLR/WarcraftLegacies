@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using WarcraftLegacies.Source.Quests.Quelthalas;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       quelthalas.StartingQuest = newQuest;
       var theBloodElves = quelthalas.AddQuest(new QuestTheBloodElves(Regions.BloodElfSecondChanceSpawn));
       quelthalas.AddQuest(new QuestQueldanil(Regions.QuelDanil_Lodge.Rect));
-      quelthalas.AddQuest(new QuestTempestKeep(Regions.TempestKeepHide, theBloodElves));
+      //quelthalas.AddQuest(new QuestTempestKeep(Regions.TempestKeepHide, theBloodElves));
     }
   }
 }

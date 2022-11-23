@@ -13,7 +13,7 @@ namespace MacroTools.Cheats
     {
       try
       {
-        if (!TestSafety.CheatCondition())
+        if (!TestMode.CheatCondition())
           return;
 
         string enteredString = GetEventPlayerChatString();

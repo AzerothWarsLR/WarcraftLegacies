@@ -9,6 +9,26 @@ namespace MacroTools.Extensions
   /// </summary>
   public static class TriggerExtensions
   {
+    /// <summary>
+    /// Causes the <see cref="trigger"/> to fire when any player executes the specified chat command.
+    /// </summary>
+    public static trigger RegisterSharedChatEvent(this trigger whichTrigger, string chatMessageToDetect, bool exactMatchOnly)
+    {
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+        TriggerRegisterPlayerChatEvent(whichTrigger, player, chatMessageToDetect, exactMatchOnly);
+      return whichTrigger;
+    }
+    
+    /// <summary>
+    /// Registers a key event for all players.
+    /// </summary>
+    public static trigger RegisterSharedKeyEvent(this trigger whichTrigger, oskeytype key, int metaKey, bool keyDown)
+    {
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+        BlzTriggerRegisterPlayerKeyEvent(whichTrigger, player, key, metaKey, keyDown);
+      return whichTrigger;
+    }
+    
     public static trigger RegisterEnterRegion(this trigger whichTrigger, Rectangle region, boolexpr? filter = null)
     {
       TriggerRegisterEnterRegion(whichTrigger, region.Region, filter);

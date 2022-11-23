@@ -16,6 +16,9 @@ namespace MacroTools.Cheats
     public override int ParameterCount => 1;
     
     /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+    
+    /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
       var artifact = ArtifactManager.GetFromName(parameters[0]);

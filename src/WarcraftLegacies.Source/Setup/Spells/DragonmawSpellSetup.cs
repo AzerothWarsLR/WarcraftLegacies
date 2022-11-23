@@ -36,8 +36,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         ManaPerDamage = new LeveledAbilityField<float>
         {
-          Base = 0.8f,
-          PerLevel = 0.2f
+          Base = 0.25f,
+          PerLevel = 0.25f
         },
         Effect = "Abilities\\Spells\\Undead\\ReplenishMana\\SpiritTouchTarget.mdl"
       });
@@ -60,13 +60,13 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         LocationBasedFlavourSettings = new List<LocationBasedFlavourSetting>
         {
-          new("Enslaved Green Dragon", FourCC("ndrg"), Regions.AshenvaleAmbient.Center),
-          new("Enslaved Red Dragon", FourCC("ndrr"), Regions.Stormwind.Center),
-          new("Enslaved Black Dragon", FourCC("ndrk"), Regions.InstanceBlackrock.Center),
-          new("Enslaved Blue Dragon", FourCC("ndru"), Regions.Central_Northrend.Center),
-          new("Enslaved Nether Dragon", FourCC("ndro"), Regions.InstanceOutland.Center),
-          new("Enslaved Bronze Dragon", FourCC("ndrz"), Regions.Zulfarrak.Center),
-          new("Enslaved Green Dragon", FourCC("ndrg"), Regions.LordaeronAmbient2.Center)
+          new("Enslaved Green Dragon", Constants.UNIT_N0DI_ENSLAVED_GREEN_DRAGON_DRAGONMAW, Regions.AshenvaleAmbient.Center),
+          new("Enslaved Red Dragon", Constants.UNIT_N0CP_ENSLAVED_DRAGON_DRAGONMAW_BASE, Regions.Stormwind.Center),
+          new("Enslaved Black Dragon", Constants.UNIT_N0DF_ENSLAVED_BLACK_DRAGON_DRAGONMAW, Regions.InstanceBlackrock.Center),
+          new("Enslaved Blue Dragon", Constants.UNIT_N0AQ_ENSLAVED_BLUE_DRAGON_DRAGONMAW, Regions.Central_Northrend.Center),
+          new("Enslaved Nether Dragon", Constants.UNIT_N0DH_ENSLAVED_NETHER_DRAGON_DRAGONMAW, Regions.InstanceOutland.Center),
+          new("Enslaved Bronze Dragon", Constants.UNIT_N0DG_ENSLAVED_BRONZE_DRAGON_DRAGONMAW, Regions.Zulfarrak.Center),
+          new("Enslaved Green Dragon", Constants.UNIT_N0DI_ENSLAVED_GREEN_DRAGON_DRAGONMAW, Regions.LordaeronAmbient2.Center)
         }
       });
     }

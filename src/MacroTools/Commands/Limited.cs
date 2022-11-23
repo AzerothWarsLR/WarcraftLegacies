@@ -19,6 +19,9 @@ namespace MacroTools.Commands
     public override int ParameterCount => 0;
 
     /// <inheritdoc />
+    public override CommandType Type => CommandType.Normal;
+    
+    /// <inheritdoc />
     public override string Execute(player commandUser, params string[] parameters)
     {
       var limitedUnits = new GroupWrapper().EnumUnitsOfPlayer(commandUser).EmptyToList().Where(

@@ -13,7 +13,7 @@ namespace MacroTools.Cheats
       {
          try
          {
-            if (!TestSafety.CheatCondition()) return;
+            if (!TestMode.CheatCondition()) return;
             var triggerPlayer = GetTriggerPlayer();
             var augmentSelectionWindow = new AugmentPage
             {

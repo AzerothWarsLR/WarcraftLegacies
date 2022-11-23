@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.GameLogic
       TriggerRegisterTimerEvent(trig, 2, false);
       TriggerAddAction(trig, () =>
       {
-        if (TestSafety.AreCheatsActive) return;
+        if (TestMode.AreCheatsActive) return;
 
         foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         {
