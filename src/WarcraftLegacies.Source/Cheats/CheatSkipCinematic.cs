@@ -17,9 +17,7 @@ namespace WarcraftLegacies.Source.Cheats
     {
       var trig = CreateTrigger();
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-      {
         TriggerRegisterPlayerEvent(trig, player, EVENT_PLAYER_END_CINEMATIC);
-      }
       TriggerAddAction(trig, Actions);
     }
 

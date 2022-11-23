@@ -47,7 +47,7 @@ namespace MacroTools.Cheats
     public static void Setup()
     {
       AreCheatsActive = Util.EnumeratePlayers().Count(player =>
-        GetPlayerSlotState(player) == PLAYER_SLOT_STATE_PLAYING && GetPlayerController(player) == MAP_CONTROL_USER) > 1;
+        GetPlayerSlotState(player) == PLAYER_SLOT_STATE_PLAYING && GetPlayerController(player) == MAP_CONTROL_USER) < 2;
 
       if (!AreCheatsActive) 
         return;
