@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       "ReplaceableTextures\\CommandButtons\\BTNMurlocNightCrawler.blp")
     {
       AddObjective(new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(FourCC("N089")))); //Murloc
-      AddObjective(new ObjectiveExpire(480));
+      AddObjective(new ObjectiveExpire(420));
       AddObjective(new ObjectiveSelfExists());
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))

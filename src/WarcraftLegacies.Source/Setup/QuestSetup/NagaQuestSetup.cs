@@ -14,6 +14,9 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         // //Early duel
         //
         naga.AddQuest(new QuestAetheneumTomb(Regions.AethneumCatacombs));
+        naga.AddQuest(new QuestRegroupCastaway());
+        naga.AddQuest(new QuestSkullOfGuldan());
+        naga.AddQuest(new QuestIllidanKillGoblin());
 
       }
 
