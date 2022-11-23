@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -62,6 +62,7 @@ The Night Elves are aware of your presence and are gathering against you. Unlock
       WarsongClan.ModObjectLimit(FourCC("Ogrh"), 1); //Grom
       WarsongClan.ModObjectLimit(FourCC("Obla"), 1); //Varok
       WarsongClan.ModObjectLimit(FourCC("O05O"), 1); //Varok
+      WarsongClan.ModObjectLimit(FourCC("n0CN"), 1); //Gibbs
 
       WarsongClan.ModObjectLimit(FourCC("Robs"), Faction.UNLIMITED); //Berserker Strength
       WarsongClan.ModObjectLimit(FourCC("Rotr"), Faction.UNLIMITED); //Troll Regeneration

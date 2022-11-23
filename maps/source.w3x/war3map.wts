@@ -10652,7 +10652,7 @@ STRING 1775
 }
 
 STRING 1776
-// Units: e00X (Elemental Guardian), Hotkey (Hotkey)
+// Units: h00C (Drek'Thar), Hotkey (Hotkey)
 {
 S
 }
@@ -11532,7 +11532,7 @@ STRING 1922
 }
 
 STRING 1923
-// Units: e00V (Temple of Elune), Hotkey (Hotkey)
+// Units: e00X (Elemental Guardian), Hotkey (Hotkey)
 {
 S
 }
@@ -12727,7 +12727,7 @@ STRING 2121
 }
 
 STRING 2122
-// Units: h00C (Drek'Thar), Hotkey (Hotkey)
+// Units: e00L (War Academy), Hotkey (Hotkey)
 {
 A
 }
@@ -12983,7 +12983,7 @@ Upgrade to Burning Citadel
 }
 
 STRING 2165
-// Units: e00L (War Academy), Hotkey (Hotkey)
+// Units: e009 (Naisha), Hotkey (Hotkey)
 {
 A
 }
@@ -13253,7 +13253,7 @@ STRING 2209
 }
 
 STRING 2210
-// Units: U00M (Master of the Cult of the Damned), Hotkey (Hotkey)
+// Units: e00V (Temple of Elune), Hotkey (Hotkey)
 {
 S
 }
@@ -13283,7 +13283,7 @@ STRING 2214
 }
 
 STRING 2215
-// Units: e009 (Naisha), Hotkey (Hotkey)
+// Units: H02E (Regent of Quel'Thalas), Hotkey (Hotkey)
 {
 A
 }
@@ -13481,7 +13481,7 @@ STRING 2247
 }
 
 STRING 2248
-// Units: H04F (Archmage), Hotkey (Hotkey)
+// Units: U00M (Master of the Cult of the Damned), Hotkey (Hotkey)
 {
 S
 }
@@ -13739,7 +13739,7 @@ STRING 2290
 }
 
 STRING 2291
-// Units: H02E (Regent of Quel'Thalas), Hotkey (Hotkey)
+// Units: n04Q (Nether Pit), Hotkey (Hotkey)
 {
 A
 }
@@ -14147,7 +14147,7 @@ Summon Water Elemental
 }
 
 STRING 2359
-// Units: n04Q (Nether Pit), Hotkey (Hotkey)
+// Units: h06R (Garrison), Hotkey (Hotkey)
 {
 A
 }
@@ -14189,7 +14189,7 @@ Azerite Siege Engine
 }
 
 STRING 2366
-// Units: h06R (Garrison), Hotkey (Hotkey)
+// Units: o03D (War Camp), Hotkey (Hotkey)
 {
 A
 }
@@ -14346,7 +14346,7 @@ Summon Dormant Spire
 }
 
 STRING 2392
-// Units: o03D (War Camp), Hotkey (Hotkey)
+// Units: o03P (War Camp), Hotkey (Hotkey)
 {
 A
 }
@@ -14586,7 +14586,7 @@ STRING 2431
 }
 
 STRING 2432
-// Units: o03P (War Camp), Hotkey (Hotkey)
+// Units: o041 (War Camp), Hotkey (Hotkey)
 {
 A
 }
@@ -14712,7 +14712,7 @@ STRING 2452
 }
 
 STRING 2453
-// Units: o041 (War Camp), Hotkey (Hotkey)
+// Units: h081 (Barracks), Hotkey (Hotkey)
 {
 A
 }
@@ -14826,7 +14826,7 @@ STRING 2471
 }
 
 STRING 2472
-// Units: h081 (Barracks), Hotkey (Hotkey)
+// Units: u011 (Plaguetorium), Hotkey (Hotkey)
 {
 A
 }
@@ -15120,7 +15120,7 @@ R
 }
 
 STRING 2521
-// Units: u011 (Plaguetorium), Hotkey (Hotkey)
+// Units: h09A (Draconian Spire), Hotkey (Hotkey)
 {
 A
 }
@@ -16266,7 +16266,7 @@ STRING 2711
 }
 
 STRING 2712
-// Units: h09A (Draconian Spire), Hotkey (Hotkey)
+// Units: n0AW (Creation Hive), Hotkey (Hotkey)
 {
 A
 }
@@ -16865,7 +16865,7 @@ STRING 2811
 }
 
 STRING 2812
-// Units: n0AW (Creation Hive), Hotkey (Hotkey)
+// Units: U02D (Death Knight Lord), Hotkey (Hotkey)
 {
 A
 }
@@ -17003,7 +17003,7 @@ STRING 2834
 }
 
 STRING 2835
-// Units: U02D (Death Knight Lord), Hotkey (Hotkey)
+// Units: E01E (Ancient Guardian), Hotkey (Hotkey)
 {
 A
 }
@@ -17280,7 +17280,7 @@ STRING 2880
 }
 
 STRING 2881
-// Units: E01E (Ancient Guardian), Hotkey (Hotkey)
+// Units: h09M (Training Camp), Hotkey (Hotkey)
 {
 A
 }
@@ -17310,7 +17310,7 @@ Z
 }
 
 STRING 2886
-// Units: E001 (Archdruid of Darnassus), Hotkey (Hotkey)
+// Units: H04F (Archmage), Hotkey (Hotkey)
 {
 S
 }
@@ -17538,7 +17538,7 @@ STRING 2923
 }
 
 STRING 2924
-// Units: h09M (Training Camp), Hotkey (Hotkey)
+// Units: h09N (Palisade Fort), Hotkey (Hotkey)
 {
 A
 }
@@ -18332,7 +18332,7 @@ Gathering spot of the Bloodhoof Tribe.|n|cfff5962dTrains:|R Tauren, Catapult|n|c
 }
 
 STRING 3056
-// Units: h07Q (School of the Tides), Hotkey (Hotkey)
+// Units: E001 (Archdruid of Darnassus), Hotkey (Hotkey)
 {
 S
 }
@@ -18532,7 +18532,7 @@ Q
 }
 
 STRING 3089
-// Units: o03S (Laboratory), Hotkey (Hotkey)
+// Units: h07Q (School of the Tides), Hotkey (Hotkey)
 {
 S
 }
@@ -18556,7 +18556,7 @@ STRING 3092
 }
 
 STRING 3093
-// Units: h083 (Church), Hotkey (Hotkey)
+// Units: o03S (Laboratory), Hotkey (Hotkey)
 {
 S
 }
@@ -18724,7 +18724,7 @@ STRING 3120
 }
 
 STRING 3121
-// Units: h09N (Palisade Fort), Hotkey (Hotkey)
+// Units: h09O (Crimson Castle), Hotkey (Hotkey)
 {
 A
 }
@@ -18856,7 +18856,7 @@ STRING 3142
 }
 
 STRING 3143
-// Units: h09O (Crimson Castle), Hotkey (Hotkey)
+// Units: h09P (Scarlet Keep), Hotkey (Hotkey)
 {
 A
 }
@@ -19000,7 +19000,7 @@ STRING 3166
 }
 
 STRING 3167
-// Units: h09P (Scarlet Keep), Hotkey (Hotkey)
+// Units: h09Q (Royal Fortress), Hotkey (Hotkey)
 {
 A
 }
@@ -19060,7 +19060,7 @@ STRING 3176
 }
 
 STRING 3177
-// Units: u016 (Forbidden Archive), Hotkey (Hotkey)
+// Units: h083 (Church), Hotkey (Hotkey)
 {
 S
 }
@@ -19120,7 +19120,7 @@ Quest Completed: Liberation of Lordaeron
 }
 
 STRING 3187
-// Units: h09Q (Royal Fortress), Hotkey (Hotkey)
+// Units: o052 (Ceremonial Altar), Hotkey (Hotkey)
 {
 A
 }
@@ -19168,7 +19168,7 @@ A sturdy ship that can construct Oil Rigs.|n|cfff5962dAbilities:|R Transport Uni
 }
 
 STRING 3195
-// Units: u01Y (Deathwing), Hotkey (Hotkey)
+// Units: u016 (Forbidden Archive), Hotkey (Hotkey)
 {
 S
 }
@@ -19306,7 +19306,7 @@ STRING 3217
 }
 
 STRING 3218
-// Units: u024 (Undead Vrykul), Hotkey (Hotkey)
+// Units: u01Y (Deathwing), Hotkey (Hotkey)
 {
 S
 }
@@ -19336,7 +19336,7 @@ STRING 3222
 }
 
 STRING 3223
-// Units: h0AI (Defias Assassin), Hotkey (Hotkey)
+// Units: u024 (Undead Vrykul), Hotkey (Hotkey)
 {
 S
 }
@@ -19366,7 +19366,7 @@ STRING 3227
 }
 
 STRING 3228
-// Units: e01U (Coral of Lore), Hotkey (Hotkey)
+// Units: h0AI (Defias Assassin), Hotkey (Hotkey)
 {
 S
 }
@@ -19888,7 +19888,7 @@ Summons a water elemental to attack the Hydromancer's enemies. Has <hwat,realHP>
 }
 
 STRING 3315
-// Units: o052 (Ceremonial Altar), Hotkey (Hotkey)
+// Units: n0C4 (Spawning Grounds), Hotkey (Hotkey)
 {
 A
 }
@@ -20140,7 +20140,7 @@ Q
 }
 
 STRING 3357
-// Units: n0C4 (Spawning Grounds), Hotkey (Hotkey)
+// Units: O05O (Ragefire Warlock), Hotkey (Hotkey)
 {
 A
 }
@@ -20446,7 +20446,7 @@ STRING 3407
 }
 
 STRING 3408
-// Units: O05O (Ragefire Warlock), Hotkey (Hotkey)
+// Units: E01G (Gronn Overlord), Hotkey (Hotkey)
 {
 A
 }
@@ -20836,7 +20836,7 @@ STRING 3472
 }
 
 STRING 3473
-// Units: E01G (Gronn Overlord), Hotkey (Hotkey)
+// Units: o067 (War Camp), Hotkey (Hotkey)
 {
 A
 }
@@ -21245,7 +21245,7 @@ STRING 3540
 }
 
 STRING 3541
-// Units: o067 (War Camp), Hotkey (Hotkey)
+// Units: e01T (Coral of War), Hotkey (Hotkey)
 {
 A
 }
@@ -21647,7 +21647,7 @@ STRING 3607
 }
 
 STRING 3608
-// Units: e01T (Coral of War), Hotkey (Hotkey)
+// Items: phea (Potion of Healing), Hotkey (Hotkey)
 {
 A
 }
@@ -21695,7 +21695,7 @@ STRING 3615
 }
 
 STRING 3616
-// Items: rlif (Ring of Regeneration), Hotkey (Hotkey)
+// Units: e01U (Coral of Lore), Hotkey (Hotkey)
 {
 S
 }
@@ -21737,7 +21737,7 @@ STRING 3622
 }
 
 STRING 3623
-// Items: pman (Potion of Mana), Hotkey (Hotkey)
+// Items: rlif (Ring of Regeneration), Hotkey (Hotkey)
 {
 S
 }
@@ -21923,7 +21923,7 @@ STRING 3653
 }
 
 STRING 3654
-// Items: phea (Potion of Healing), Hotkey (Hotkey)
+// Items: pghe (Potion of Greater Healing), Hotkey (Hotkey)
 {
 A
 }
@@ -22043,7 +22043,7 @@ STRING 3673
 }
 
 STRING 3674
-// Items: pghe (Potion of Greater Healing), Hotkey (Hotkey)
+// Items: hlst (Health Stone), Hotkey (Hotkey)
 {
 A
 }
@@ -22271,7 +22271,7 @@ STRING 3711
 }
 
 STRING 3712
-// Items: pgma (Potion of Greater Mana), Hotkey (Hotkey)
+// Items: pman (Potion of Mana), Hotkey (Hotkey)
 {
 S
 }
@@ -22295,7 +22295,7 @@ STRING 3715
 }
 
 STRING 3716
-// Items: hlst (Health Stone), Hotkey (Hotkey)
+// Items: gemt (Gem of True Seeing), Hotkey (Hotkey)
 {
 A
 }
@@ -22415,7 +22415,7 @@ STRING 3735
 }
 
 STRING 3736
-// Items: mnst (Mana Stone), Hotkey (Hotkey)
+// Items: pgma (Potion of Greater Mana), Hotkey (Hotkey)
 {
 S
 }
@@ -22763,7 +22763,7 @@ Summon Water Elemental
 }
 
 STRING 3794
-// Items: gemt (Gem of True Seeing), Hotkey (Hotkey)
+// Abilities: A0UH (Phase Blade Auto-Cast), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -22991,7 +22991,7 @@ STRING 3831
 }
 
 STRING 3832
-// Abilities: A0AF (Fire Curse), Hotkey (Hotkey - Normal)
+// Items: mnst (Mana Stone), Hotkey (Hotkey)
 {
 S
 }
@@ -23069,7 +23069,7 @@ STRING 3844
 }
 
 STRING 3845
-// Upgrades: Rhse (Magic Sentry), Hotkey (Hotkey)
+// Abilities: A0AF (Fire Curse), Hotkey (Hotkey - Normal)
 {
 S
 }
@@ -23278,7 +23278,7 @@ STRING 3879
 }
 
 STRING 3880
-// Upgrades: R06Q (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: Rhse (Magic Sentry), Hotkey (Hotkey)
 {
 S
 }
@@ -23500,7 +23500,7 @@ STRING 3916
 }
 
 STRING 3917
-// Abilities: A0UH (Phase Blade Auto-Cast), Hotkey (Hotkey - Normal)
+// Abilities: A0UG (Phase Blade Auto-Cast), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -23758,7 +23758,7 @@ Extremely heavily armored vehicle.|n|cfff5962dAbilities:|R Flamethrower, Lockdow
 }
 
 STRING 3960
-// Abilities: A0UG (Phase Blade Auto-Cast), Hotkey (Hotkey - Normal)
+// Abilities: A0K2 (Raise Dead Auto-Cast), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -23806,7 +23806,7 @@ STRING 3967
 }
 
 STRING 3968
-// Abilities: A0K2 (Raise Dead Auto-Cast), Hotkey (Hotkey - Normal)
+// Abilities: A0JY (Raise Dead Auto-Cast), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -23890,7 +23890,7 @@ STRING 3981
 }
 
 STRING 3982
-// Abilities: A0JY (Raise Dead Auto-Cast), Hotkey (Hotkey - Normal)
+// Upgrades: Rusm (Skeletal Mastery), Hotkey (Hotkey)
 {
 A
 }
@@ -23986,7 +23986,7 @@ STRING 3997
 }
 
 STRING 3998
-// Upgrades: R04A (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R06Q (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 S
 }
@@ -24154,7 +24154,7 @@ STRING 4025
 }
 
 STRING 4026
-// Upgrades: R03J (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R04A (Magic Sentry), Hotkey (Hotkey)
 {
 S
 }
@@ -24196,7 +24196,7 @@ STRING 4032
 }
 
 STRING 4033
-// Upgrades: R01Y (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R03J (Magic Sentry), Hotkey (Hotkey)
 {
 S
 }
@@ -24568,7 +24568,7 @@ Creates six Skeleton Warriors from a corpse. |nContains <rnec,uses> charges.
 }
 
 STRING 4095
-// Upgrades: R01R (Improved Bows), Hotkey (Hotkey)
+// Upgrades: R01Y (Magic Sentry), Hotkey (Hotkey)
 {
 S
 }
@@ -24586,7 +24586,7 @@ Seismic Shard
 }
 
 STRING 4098
-// Upgrades: R013 (Mark of the Claw), Hotkey (Hotkey)
+// Upgrades: R01R (Improved Bows), Hotkey (Hotkey)
 {
 S
 }
@@ -24634,7 +24634,7 @@ Seismic Shard - [|cffffcc00Level 1|r]
 }
 
 STRING 4106
-// Upgrades: R00Z (Defend), Hotkey (Hotkey)
+// Upgrades: R013 (Mark of the Claw), Hotkey (Hotkey)
 {
 S
 }
@@ -24664,7 +24664,7 @@ E
 }
 
 STRING 4111
-// Upgrades: Rusm (Skeletal Mastery), Hotkey (Hotkey)
+// Upgrades: Rufb (Freezing Breath), Hotkey (Hotkey)
 {
 A
 }
@@ -24862,7 +24862,7 @@ While wearing this mask, a Hero will recover hit points equal to 25% of the atta
 }
 
 STRING 4144
-// Upgrades: R00J (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R00Z (Defend), Hotkey (Hotkey)
 {
 S
 }
@@ -24946,7 +24946,7 @@ Conjures a Field of Blood which Heals allied ground units in a target area over 
 }
 
 STRING 4158
-// Upgrades: Rufb (Freezing Breath), Hotkey (Hotkey)
+// Upgrades: Ruar (Unholy Armor,Improved Unholy Armor,Advanced Unholy Armor), Hotkey (Hotkey)
 {
 A
 }
@@ -25384,7 +25384,7 @@ Mystical Hero, exceptional at light magic and aiding allies. |n|cfff5962dCan lea
 }
 
 STRING 4231
-// Upgrades: Ruar (Unholy Armor,Improved Unholy Armor,Advanced Unholy Armor), Hotkey (Hotkey)
+// Upgrades: Robs (Brute Strength), Hotkey (Hotkey)
 {
 A
 }
@@ -29484,7 +29484,7 @@ STRING 4913
 }
 
 STRING 4914
-// Upgrades: R003 (Cannibalize), Hotkey (Hotkey)
+// Upgrades: R00J (Magic Sentry), Hotkey (Hotkey)
 {
 S
 }
@@ -29496,7 +29496,7 @@ STRING 4915
 }
 
 STRING 4916
-// Upgrades: R035 (Chaos), Hotkey (Hotkey)
+// Upgrades: R003 (Cannibalize), Hotkey (Hotkey)
 {
 S
 }
@@ -38730,7 +38730,7 @@ STRING 6454
 }
 
 STRING 6455
-// Upgrades: Robs (Brute Strength), Hotkey (Hotkey)
+// Upgrades: Rhar (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
@@ -43951,12 +43951,6 @@ STRING 7321
 Learn Thunder Grip - [|cffffcc00Level %d|r]
 }
 
-STRING 7322
-// Abilities: A0WL (Thunder Grip), Researchubertip (Tooltip - Learn - Extended)
-{
-Lightning wraps itself around the body of a foe, rendering it immobile and dealing damage over time. |n|n|cffffcc00Level 1|r - 75 damage a second for 6 seconds (2 for Heroes). |n|cffffcc00Level 2|r - 75 damage per second for 8 seconds (3 for Heroes). |n|cffffcc00Level 3|r - 75 damage per second for 10 seconds (4 for Heroes). |n|cffffcc00Level 4|r - 75 damage per second for 12 seconds (5 for Heroes). |n|n|cffc4c4ffChanneling.|r
-}
-
 STRING 7323
 // Abilities: A0WL (Thunder Grip), Tip (Tooltip - Normal)
 {
@@ -46466,7 +46460,7 @@ E
 }
 
 STRING 7741
-// Upgrades: R048 (Marksmanship), Hotkey (Hotkey)
+// Upgrades: R035 (Chaos), Hotkey (Hotkey)
 {
 S
 }
@@ -47570,7 +47564,7 @@ Q
 }
 
 STRING 7925
-// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R048 (Marksmanship), Hotkey (Hotkey)
 {
 S
 }
@@ -64227,7 +64221,7 @@ C
 }
 
 STRING 10701
-// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 S
 }
@@ -66722,6 +66716,12 @@ STRING 11116
 Create Troll Corpse
 }
 
+STRING 11117
+// Abilities: A0ZF (Upkeep -2 gold per minute), Ubertip (Tooltip - Normal - Extended)
+{
+This unit will cost 2 gold per minute.
+}
+
 STRING 11118
 // Abilities: A087 (Warplate), Name (Name)
 {
@@ -67646,6 +67646,12 @@ STRING 11271
 Z
 }
 
+STRING 11272
+// Abilities: A0OJ (Mass Unholy Armor), Researchubertip (Tooltip - Learn - Extended)
+{
+Grants Unholy Armor to all friendly unit in a large area of effect. |n|n|cffffcc00Level 1|r - Lasts 60 seconds and grants 12 armor.|n|cffffcc00Level 2|r - Lasts 60 seconds and grants 15 armor.|n|cffffcc00Level 3|r - Lasts 60 seconds and grants 18 armor.|n|cffffcc00Level 4|r - Lasts 60 seconds and grants 21 armor
+}
+
 STRING 11273
 // Abilities: A0BR (Surge of Power), Hotkey (Hotkey - Normal)
 {
@@ -68424,12 +68430,6 @@ STRING 11402
 // Abilities: A0B7 (Bloodlust), Hotkey (Hotkey - Normal)
 {
 E
-}
-
-STRING 11403
-// Abilities: A072 (Acid Bomb), Researchubertip (Tooltip - Learn - Extended)
-{
-Hurls a flask of plague at a target.  The flask breaks upon impact, splashing a powerful plague on nearby hostile units.|nDecreases armor; deals high damage over time to the primary target; deals slightly less damage over time to nearby targets.|nLasts <A03Z,Dur1> seconds.|n|n|cffffcc00Level 1|r - <A03Z,DataD1> max damage per second, reduces armor by <A03Z,DataC1>.|n|cffffcc00Level 2|r - <A03Z,DataD2> max damage per second, reduces armor by <A03Z,DataC2>.|n|cffffcc00Level 3|r - <A03Z,DataD3> max damage per second, reduces armor by <A03Z,DataC3>. |n|cffffcc00Level 4|r - <A03Z,DataD4> max damage per second, reduces armor by <A03Z,DataC4>.
 }
 
 STRING 11404
@@ -74345,7 +74345,7 @@ W
 }
 
 STRING 12389
-// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 S
 }
@@ -74639,7 +74639,7 @@ W
 }
 
 STRING 12438
-// Upgrades: Rhar (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: Rerh (Reinforced Hides,Improved Reinforced Hides,Advanced Reinforced Hides), Hotkey (Hotkey)
 {
 A
 }
@@ -79715,12 +79715,6 @@ STRING 13283
 Bleeding
 }
 
-STRING 13284
-// Buffs/Effects: B068 (), Buffubertip (Tooltip - Extended)
-{
-This unis is bleeding and has it's mouvement speed slowed.
-}
-
 STRING 13285
 // Buffs/Effects: B068 (), EditorSuffix (Editor Suffix)
 {
@@ -82944,7 +82938,7 @@ STRING 13821
 }
 
 STRING 13822
-// Upgrades: Rerh (Reinforced Hides,Improved Reinforced Hides,Advanced Reinforced Hides), Hotkey (Hotkey)
+// Upgrades: Remg (Upgrade Moon Glaive), Hotkey (Hotkey)
 {
 A
 }
@@ -83022,13 +83016,13 @@ STRING 13834
 }
 
 STRING 13835
-// Upgrades: Remg (Upgrade Moon Glaive), Hotkey (Hotkey)
+// Upgrades: R06I (Defend), Hotkey (Hotkey)
 {
 A
 }
 
 STRING 13836
-// Upgrades: R06I (Defend), Hotkey (Hotkey)
+// Upgrades: R01L (Magic Sentry), Hotkey (Hotkey)
 {
 A
 }
@@ -93168,7 +93162,7 @@ Creates a barrier that stops 800 points of spell damage from affecting a target 
 }
 
 STRING 15534
-// Upgrades: R01L (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R00W (Magic Sentry), Hotkey (Hotkey)
 {
 A
 }
@@ -98260,7 +98254,7 @@ STRING 16382
 }
 
 STRING 16383
-// Upgrades: R00W (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R001 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -103281,7 +103275,7 @@ E
 }
 
 STRING 17220
-// Upgrades: R001 (Defend), Hotkey (Hotkey)
+// Upgrades: R03L (Chaos), Hotkey (Hotkey)
 {
 A
 }
@@ -106320,31 +106314,31 @@ STRING 17725
 }
 
 STRING 17726
-// Upgrades: R03L (Chaos), Hotkey (Hotkey)
-{
-A
-}
-
-STRING 17727
 // Upgrades: R046 (Marksmanship), Hotkey (Hotkey)
 {
 A
 }
 
-STRING 17728
+STRING 17727
 // Upgrades: R02X (Defend), Hotkey (Hotkey)
 {
 A
 }
 
-STRING 17729
+STRING 17728
 // Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
 
-STRING 17730
+STRING 17729
 // Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+A
+}
+
+STRING 17730
+// Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 A
 }
@@ -110526,7 +110520,7 @@ A
 }
 
 STRING 18426
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R090 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -113682,12 +113676,6 @@ STRING 18951
 Enslaved Black Dragon
 }
 
-STRING 18952
-// Abilities: A0OJ (Mass Unholy Armor), Researchubertip (Tooltip - Learn - Extended)
-{
-Grants Frost Armor to all friendly unit in a large area of effect. |n|n|cffffcc00Level 1|r - Lasts 60 seconds and grants 8 armor.|n|cffffcc00Level 2|r - Lasts 60 seconds and grants 12 armor.|n|cffffcc00Level 3|r - Lasts 60 seconds and grants 16 armor
-}
-
 STRING 18953
 // Abilities: A0WV (Attribute Bonus), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -114637,7 +114625,7 @@ The Forest will be unleashed upon the Warsong Lumber Camp.|n|n|cffffcc00Required
 }
 
 STRING 19111
-// Upgrades: R090 (Defend), Hotkey (Hotkey)
+// Upgrades: R091 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -114913,7 +114901,7 @@ Train Drake
 }
 
 STRING 19157
-// Upgrades: R091 (Defend), Hotkey (Hotkey)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
@@ -115362,7 +115350,7 @@ Z
 }
 
 STRING 19232
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
 {
 A
 }
@@ -116363,7 +116351,7 @@ Learn Dragonmaw Battle Standard - [|cffffcc00Level %d|r]
 }
 
 STRING 19399
-// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 S
 }
@@ -116378,12 +116366,6 @@ STRING 19401
 // Abilities: A0ZA (Dragonmaw Battle Standard), Tip (Tooltip - Normal)
 {
 Dragonmaw Battle Standard - [|cffffcc00Level 1|r]
-}
-
-STRING 19402
-// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
-{
-A
 }
 
 STRING 19403
@@ -116590,12 +116572,6 @@ STRING 19436
 Trains Cliffrunners, Glaive Warriors and Demon Hunters
 }
 
-STRING 19437
-// Abilities: A0ZF (Upkeep -2 gold per minute), Ubertip (Tooltip - Normal - Extended)
-{
-Murloc bound to the will of Illidan.|n|cfff5962dAbilities:|R Charge, Amphibious|R|n|cfff5962d|n|cffffcc00Attacks land units.|r
-}
-
 STRING 19438
 // Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
@@ -116654,12 +116630,6 @@ STRING 19447
 // Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
-}
-
-STRING 19448
-// Upgrades: R094 (Chaos), Name (Name)
-{
-Quest Completed: The Skull of Gul'dan
 }
 
 STRING 19449
@@ -116786,5 +116756,41 @@ STRING 19469
 // Abilities: A07N (Maiming Strike), EditorSuffix (Editor Suffix)
 {
 (Druids - Ursoc, Jarod, Zaela)
+}
+
+STRING 19470
+// Buffs/Effects: B068 (), Buffubertip (Tooltip - Extended)
+{
+This unis is bleeding and has it's attack speed slowed.
+}
+
+STRING 19471
+// Abilities: A0WL (Thunder Grip), Researchubertip (Tooltip - Learn - Extended)
+{
+Thrall channels to fire lightning that wraps itself around the body of a foe, rendering it immobile and dealing damage over time. |n|n|cffffcc00Level 1|r - 75 damage a second for 6 seconds (2 for Heroes). |n|cffffcc00Level 2|r - 75 damage per second for 8 seconds (3 for Heroes). |n|cffffcc00Level 3|r - 75 damage per second for 10 seconds (4 for Heroes). |n|cffffcc00Level 4|r - 75 damage per second for 12 seconds (5 for Heroes). |n|n|cffc4c4ffChanneling.|r
+}
+
+STRING 19472
+// Abilities: A072 (Acid Bomb), Researchubertip (Tooltip - Learn - Extended)
+{
+Hurls a flask of plague at a target.  The flask breaks upon impact, splashing a powerful plague on nearby hostile units.|nDecreases armor; deals high damage over time to the primary target; deals slightly less damage over time to nearby targets.|nLasts 15 seconds.|n|n|cffffcc00Level 1|r - 15 max damage per second, reduces armor by 3 .|n|cffffcc00Level 2|r - 20 max damage per second, reduces armor by 4.|n|cffffcc00Level 3|r - 25 max damage per second, reduces armor by 5. |n|cffffcc00Level 4|r - 30 max damage per second, reduces armor by 6.
+}
+
+STRING 19473
+// Abilities: A072 (Acid Bomb), EditorSuffix (Editor Suffix)
+{
+(farawell)
+}
+
+STRING 19474
+// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+S
+}
+
+STRING 19475
+// Upgrades: R094 (Chaos), Name (Name)
+{
+Quest Completed: The Eye of Sargeras
 }
 
