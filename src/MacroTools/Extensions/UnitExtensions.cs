@@ -1,4 +1,5 @@
 ﻿using System;
+using MacroTools.FactionSystem;
 using MacroTools.Libraries;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -344,7 +345,9 @@ namespace MacroTools.Extensions
       //If the unit costs 10 food, that means it should be owned by neutral passive instead of the rescuing player.
       SetUnitOwner(whichUnit, GetUnitFoodUsed(whichUnit) == 10 ? Player(PLAYER_NEUTRAL_PASSIVE) : whichPlayer, true);
       ShowUnit(whichUnit, true);
-      SetUnitInvulnerable(whichUnit, false);
+
+      if (Legend.GetFromUnit(whichUnit)?.ProtectorCount == 0) 
+        whichUnit.SetInvulnerable(false);
     }
 
     /// <summary>

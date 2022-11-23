@@ -228,6 +228,11 @@ namespace MacroTools.FactionSystem
     }
 
     /// <summary>
+    /// The number of living <see cref="Protector"/> making this <see cref="Legend"/> invulnerable.
+    /// </summary>
+    public int ProtectorCount => _protectors.Count;
+    
+    /// <summary>
     ///   Fired when the <see cref="Legend" /> permanently dies.
     /// </summary>
     public event EventHandler<Legend>? PermanentlyDied;
