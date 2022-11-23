@@ -43,7 +43,7 @@ namespace MacroTools.Cheats
 
     private static void Actions()
     {
-      if (!TestSafety.CheatCondition()) return;
+      if (!TestMode.CheatCondition()) return;
 
       string enteredString = GetEventPlayerChatString();
       player triggerPlayer = GetTriggerPlayer();

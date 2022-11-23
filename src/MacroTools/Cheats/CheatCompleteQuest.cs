@@ -13,7 +13,7 @@ namespace MacroTools.Cheats
 
     private static void Actions()
     {
-      if (!TestSafety.CheatCondition()) return;
+      if (!TestMode.CheatCondition()) return;
 
       var enteredString = GetEventPlayerChatString();
       var triggerPlayer = GetTriggerPlayer();

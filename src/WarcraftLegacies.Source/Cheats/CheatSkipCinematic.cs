@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.Cheats
   {
     private static void Actions()
     {
-      if (!TestSafety.CheatCondition()) return;
+      if (!TestMode.CheatCondition()) return;
       CinematicMode.EndEarly();
       DestroyTrigger(GetTriggeringTrigger());
     }

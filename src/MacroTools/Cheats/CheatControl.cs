@@ -9,7 +9,7 @@ namespace MacroTools.Cheats
 
     private static void Actions()
     {
-      if (!TestSafety.CheatCondition())
+      if (!TestMode.CheatCondition())
       {
         return;
       }

@@ -16,7 +16,7 @@ namespace MacroTools.Cheats
       {
          try
          {
-            if (!TestSafety.CheatCondition()) return;
+            if (!TestMode.CheatCondition()) return;
             GetTriggerPlayer().GetFaction()?.AddAugment(AugmentSystem.GetRandom(GetTriggerPlayer()));
             DisplayTextToPlayer(GetTriggerPlayer(), 0, 0, "|cffD27575CHEAT:|r Attempted to add random augment.");
          }
