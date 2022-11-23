@@ -9,6 +9,16 @@ namespace MacroTools.Extensions
   /// </summary>
   public static class TriggerExtensions
   {
+    /// <summary>
+    /// Registers a key event for all players.
+    /// </summary>
+    public static trigger RegisterSharedKeyEvent(this trigger whichTrigger, oskeytype key, int metaKey, bool keyDown)
+    {
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+        BlzTriggerRegisterPlayerKeyEvent(whichTrigger, player, key, metaKey, keyDown);
+      return whichTrigger;
+    }
+    
     public static trigger RegisterEnterRegion(this trigger whichTrigger, Rectangle region, boolexpr? filter = null)
     {
       TriggerRegisterEnterRegion(whichTrigger, region.Region, filter);

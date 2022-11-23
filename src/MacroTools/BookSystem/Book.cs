@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using MacroTools.Extensions;
 using MacroTools.Frames;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -75,9 +76,10 @@ namespace MacroTools.BookSystem
       };
       _title.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOP, 0, -0.025f);
       AddFrame(_title);
-      var trig = CreateTrigger();
-      BlzTriggerRegisterPlayerKeyEvent(trig,GetLocalPlayer(),OSKEY_ESCAPE,BlzGetTriggerPlayerMetaKey(),false);
-      TriggerAddAction(trig, () =>
+      
+      CreateTrigger()
+        .RegisterSharedKeyEvent(OSKEY_ESCAPE, BlzGetTriggerPlayerMetaKey(), false)
+        .AddAction(() =>
       {
         if (GetTriggerPlayer() != GetLocalPlayer())
           return;
@@ -145,7 +147,7 @@ namespace MacroTools.BookSystem
     /// <param name="triggerPlayer"></param>
     public void Exit(player triggerPlayer)
     {
-      if (triggerPlayer != GetLocalPlayer())
+      if (triggerPlayer != GetLocalPlayer() || !Visible || LauncherButton.Visible)
         return;
       Visible = false;
       LauncherButton.Visible = true;
