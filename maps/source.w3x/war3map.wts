@@ -66237,7 +66237,7 @@ Trollbane uses the power from the Periapt of Vitality, instantly restoring himse
 }
 
 STRING 11036
-// Abilities: A08N (Conveyance Aura), EditorSuffix (Editor Suffix)
+// Abilities: A087 (Warplate), EditorSuffix (Editor Suffix)
 {
 (Dark Green - Galen)
 }
@@ -66720,12 +66720,6 @@ STRING 11116
 // Abilities: A088 (Create Troll Corpse), Name (Name)
 {
 Create Troll Corpse
-}
-
-STRING 11117
-// Abilities: A087 (Warplate), EditorSuffix (Editor Suffix)
-{
-(Dark Green - Galen)
 }
 
 STRING 11118
@@ -67650,12 +67644,6 @@ STRING 11271
 // Abilities: A0W8 (Recall), Hotkey (Hotkey - Normal)
 {
 Z
-}
-
-STRING 11272
-// Abilities: A07N (Maiming Strike), EditorSuffix (Editor Suffix)
-{
-(Druids - Ursoc, Jarod)
 }
 
 STRING 11273
@@ -112212,6 +112200,12 @@ STRING 18704
 Learn Attribute Bonus - [|cffffcc00Level %d|r]
 }
 
+STRING 18705
+// Abilities: A08N (Conveyance Aura), EditorSuffix (Editor Suffix)
+{
+(Dark Green - Galen, Zaela)
+}
+
 STRING 18706
 // Abilities: A0XH (Frost Shell), EditorSuffix (Editor Suffix)
 {
@@ -116786,5 +116780,11 @@ STRING 19468
 // Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
 {
 R
+}
+
+STRING 19469
+// Abilities: A07N (Maiming Strike), EditorSuffix (Editor Suffix)
+{
+(Druids - Ursoc, Jarod, Zaela)
 }
 
