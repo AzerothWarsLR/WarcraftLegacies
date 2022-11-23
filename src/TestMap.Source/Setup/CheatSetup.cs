@@ -7,7 +7,7 @@ namespace TestMap.Source.Setup
   {
     public static void Setup()
     {
-      TestSafety.Setup();
+      TestMode.Setup();
       CheatBuild.Setup();
       CheatControl.Setup();
       CheatFaction.Setup();

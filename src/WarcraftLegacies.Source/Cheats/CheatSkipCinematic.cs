@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.Cheats
   {
     private static void Actions()
     {
-      if (!TestSafety.CheatCondition()) return;
+      if (!TestMode.CheatCondition()) return;
       CinematicMode.EndEarly();
       DestroyTrigger(GetTriggeringTrigger());
     }
@@ -17,9 +17,7 @@ namespace WarcraftLegacies.Source.Cheats
     {
       var trig = CreateTrigger();
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-      {
         TriggerRegisterPlayerEvent(trig, player, EVENT_PLAYER_END_CINEMATIC);
-      }
       TriggerAddAction(trig, Actions);
     }
 

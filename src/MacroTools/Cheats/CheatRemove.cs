@@ -14,7 +14,7 @@ namespace MacroTools.Cheats
 
     private static void Actions()
     {
-      if (!TestSafety.CheatCondition()) return;
+      if (!TestMode.CheatCondition()) return;
       player p = GetTriggerPlayer();
       foreach (var unit in new GroupWrapper().EnumSelectedUnits(p).EmptyToList())
       {

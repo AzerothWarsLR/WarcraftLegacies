@@ -15,14 +15,6 @@ namespace MacroTools.Wrappers
     /// <inheritdoc />
     public void Dispose() => DestroyTrigger(Trigger);
 
-    /// <summary>
-    /// Causes the <see cref="trigger"/> to be fired when any player executes the specified chat command.
-    /// </summary>
-    public void RegisterPlayerChatEvent(player whichPlayer, string chatMessageToDetect, bool exactMatchOnly)
-    {
-      TriggerRegisterPlayerChatEvent(Trigger, whichPlayer, chatMessageToDetect, exactMatchOnly);
-    }
-    
     public void RegisterUnitEvent(unit whichUnit, unitevent whichEvent)
     {
       TriggerRegisterUnitEvent(Trigger, whichUnit, whichEvent);

@@ -24,5 +24,10 @@ namespace MacroTools.CommandSystem
     /// <param name="parameters">The parameters specified by the player entering the sheet, seperated by spaces.</param>
     /// <returns>A message describing what the <see cref="CommandSystem.Command"/> is doing to the executing player.</returns>
     public abstract string Execute(player cheater, params string[] parameters);
+
+    /// <summary>
+    /// Determines the purpose of the command and when it can be used.
+    /// </summary>
+    public abstract CommandType Type { get; }
   }
 }

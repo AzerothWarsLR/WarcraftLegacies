@@ -16,6 +16,9 @@ namespace MacroTools.Cheats
     public override int ParameterCount => 2;
     
     /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+    
+    /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
       var faction = FactionManager.GetFromName(parameters[0]);

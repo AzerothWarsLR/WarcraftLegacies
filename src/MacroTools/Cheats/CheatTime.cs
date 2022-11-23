@@ -8,7 +8,7 @@ namespace MacroTools.Cheats
 
     private static void Actions()
     {
-      if (!TestSafety.CheatCondition()) return;
+      if (!TestMode.CheatCondition()) return;
       string enteredString = GetEventPlayerChatString();
       player p = GetTriggerPlayer();
       var pId = GetPlayerId(p);
