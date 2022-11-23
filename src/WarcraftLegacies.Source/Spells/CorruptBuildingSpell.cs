@@ -33,12 +33,13 @@ namespace WarcraftLegacies.Source.Spells
     /// <inheritdoc />
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      SetUnitState(target, UNIT_STATE_LIFE, GetUnitState(target, UNIT_STATE_MAX_LIFE));
+
       var buff = new CorruptBuildingBuff(caster, target, _bonusGoldIncome, _bonusLumberIncome, _bonusHealth)
       {
         Duration = float.MaxValue
       };
       BuffSystem.Add(buff, StackBehaviour.Stack);
+      SetUnitState(target, UNIT_STATE_LIFE, GetUnitState(target, UNIT_STATE_MAX_LIFE));
     }
   }
 }
