@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
@@ -14,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
   /// </summary>
   public sealed class QuestCapitalCity : QuestData
   {
-    private readonly List<unit> _rescueUnits;
+    private readonly List<unit> _rescueUnits = new();
     private readonly unit _unitToMakeInvulnerable;
 
 
@@ -36,7 +37,8 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R04Y_QUEST_COMPLETED_HEARTHLANDS;
       _unitToMakeInvulnerable = unitToMakeInvulnerable;
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      Func<unit, bool> rescueUnitFilter = (unit whichUnit) => { return GetUnitTypeId(whichUnit) != Constants.UNIT_N08F_UNDERCITY_ENTRANCE; };
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures, null, rescueUnitFilter);
       Required = true;
     }
 
@@ -56,11 +58,12 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player?.RescueGroup(_rescueUnits);
+      if (completingFaction.Player != null)
+        completingFaction.Player.RescueGroup(_rescueUnits);
       SetUnitInvulnerable(_unitToMakeInvulnerable, true);
       if (GetLocalPlayer() == completingFaction.Player)
         PlayThematicMusic("war3mapImported\\CapitalCity.mp3");
-      LegendLordaeron.Uther?.AddUnitDependency(LegendLordaeron.CapitalPalace.Unit);
+      LegendLordaeron.Uther.AddUnitDependency(LegendLordaeron.CapitalPalace.Unit);
     }
   }
 }
