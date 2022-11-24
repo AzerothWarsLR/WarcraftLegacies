@@ -55,8 +55,6 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       QuestLichKingArthas questLichKingArthas =
         new(preplacedUnitSystem.GetUnit(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE));
 
-      questNaxxramas.AddObjective(new ObjectiveCompleteQuest(questKelthuzad));
-
       //Setup
       ScourgeSetup.Scourge.AddQuest(questSpiderWar);
       ScourgeSetup.Scourge.StartingQuest = questSpiderWar;
