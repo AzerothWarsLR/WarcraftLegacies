@@ -15,8 +15,9 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         //
         naga.AddQuest(new QuestAetheneumTomb(Regions.AethneumCatacombs));
         naga.AddQuest(new QuestRegroupCastaway());
-        naga.AddQuest(new QuestSkullOfGuldan());
+        naga.AddQuest(new QuestEyeofSargeras());
         naga.AddQuest(new QuestIllidanKillGoblin());
+        naga.AddQuest(new QuestADestinyofFlameandSorrow());
 
       }
 

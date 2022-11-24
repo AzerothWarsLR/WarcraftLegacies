@@ -9,11 +9,11 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Naga
 {
-  public sealed class QuestSkullOfGuldan : QuestData
+  public sealed class QuestEyeofSargeras : QuestData
   {
-    public QuestSkullOfGuldan() : base("The Eye of Sargeras",
+    public QuestEyeofSargeras() : base("The Eye of Sargeras",
       "The Eye of Sargeras is an extremely powerful artifact, it could be the key to satiate Illidan's thirst for power",
-      "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp")
+      "ReplaceableTextures\\CommandButtons\\BTNEyeOfSargeras.blp")
     {
       AddObjective(new ObjectiveLegendHasArtifact(LegendNaga.LegendIllidan, ArtifactSetup.ArtifactEyeofsargeras));
       ResearchId = FourCC("R094");

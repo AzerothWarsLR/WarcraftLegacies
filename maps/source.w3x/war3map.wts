@@ -9445,9 +9445,9 @@ Dragonmaw Fortification
 }
 
 STRING 1575
-// Abilities: A0GA (Summon Garrison), Ubertip (Tooltip - Normal - Extended)
+// Units: n0DK (Skull of Gul'dan), EditorSuffix (Name - Editor Suffix)
 {
-Summons <A0GA,DataB1> Footmen for <A0GA,Dur1> seconds.
+(pedestal)
 }
 
 STRING 1576
@@ -26242,7 +26242,7 @@ Increases Intelligence. Can be used to cast Doom.
 }
 
 STRING 4374
-// Items: I007 (Skull of Gul'dan), Name (Name)
+// Units: n0DK (Skull of Gul'dan), Name (Name)
 {
 Skull of Gul'dan
 }
@@ -43949,6 +43949,12 @@ STRING 7321
 // Abilities: A0WL (Thunder Grip), Researchtip (Tooltip - Learn)
 {
 Learn Thunder Grip - [|cffffcc00Level %d|r]
+}
+
+STRING 7322
+// Abilities: A0GA (Summon Garrison), Ubertip (Tooltip - Normal - Extended)
+{
+Summons <A0GA,DataB1> Militia for <A0GA,Dur1> seconds.
 }
 
 STRING 7323
@@ -68432,6 +68438,12 @@ STRING 11402
 E
 }
 
+STRING 11403
+// Abilities: A0RB (Summon Garrison), Ubertip (Tooltip - Normal - Extended)
+{
+Summons <A0GA,DataB1> Man-at-arms for <A0GA,Dur1> seconds.
+}
+
 STRING 11404
 // Abilities: A072 (Acid Bomb), Tip (Tooltip - Normal)
 {
@@ -79713,6 +79725,12 @@ STRING 13283
 // Buffs/Effects: B068 (), Bufftip (Tooltip)
 {
 Bleeding
+}
+
+STRING 13284
+// Abilities: A0TO (Summon Garrison), Ubertip (Tooltip - Normal - Extended)
+{
+Summons <A0GA,DataB1> Militia for <A0GA,Dur1> seconds.
 }
 
 STRING 13285
@@ -106382,9 +106400,9 @@ Summon Garrison
 }
 
 STRING 17737
-// Abilities: A0RB (Summon Garrison), Ubertip (Tooltip - Normal - Extended)
+// Upgrades: R095 (Chaos), Name (Name)
 {
-Summons <A0GA,DataB1> Footmen for <A0GA,Dur1> seconds.
+Quest Completed: A Destiny of Flame and Sorrow
 }
 
 STRING 17738
@@ -107944,9 +107962,9 @@ Summon Garrison
 }
 
 STRING 17997
-// Abilities: A0TO (Summon Garrison), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0ZI (Serrated Blades), Name (Name)
 {
-Summons <A0GA,DataB1> Footmen for <A0GA,Dur1> seconds.
+Serrated Blades
 }
 
 STRING 17998
@@ -113676,6 +113694,12 @@ STRING 18951
 Enslaved Black Dragon
 }
 
+STRING 18952
+// Items: I007 (Skull of Gul'dan), Name (Name)
+{
+Skull of Gul'dan
+}
+
 STRING 18953
 // Abilities: A0WV (Attribute Bonus), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -116368,6 +116392,12 @@ STRING 19401
 Dragonmaw Battle Standard - [|cffffcc00Level 1|r]
 }
 
+STRING 19402
+// Abilities: A0ZI (Serrated Blades), Tip (Tooltip - Normal)
+{
+Serrated Blades
+}
+
 STRING 19403
 // Abilities: A0ZA (Dragonmaw Battle Standard), Tip (Tooltip - Normal)
 {
@@ -116570,6 +116600,12 @@ STRING 19436
 // Units: o05J (Dragon Hatchery), Ubertip (Tooltip - Extended)
 {
 Trains Cliffrunners, Glaive Warriors and Demon Hunters
+}
+
+STRING 19437
+// Abilities: A0ZI (Serrated Blades), Ubertip (Tooltip - Normal - Extended)
+{
+Increases damage dealt to enemy targets with Heavy armor by 20%. |nIn addition, the Hunter's missile will bounce once to a new target.
 }
 
 STRING 19438
