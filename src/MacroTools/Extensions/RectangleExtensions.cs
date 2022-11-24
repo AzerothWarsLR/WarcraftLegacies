@@ -68,7 +68,7 @@ namespace MacroTools.Extensions
       var group = new GroupWrapper()
         .EnumUnitsInRect(rectangle)
         .EmptyToList()
-        .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE))
+        .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE) && GetUnitAbilityLevel(x, FourCC("Awan")) == 0)
         .ToList();
       foreach (var unit in group)
       {
