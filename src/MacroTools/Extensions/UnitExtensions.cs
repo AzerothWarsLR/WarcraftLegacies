@@ -108,6 +108,18 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
+    /// Queues an animation to play after the current one.
+    /// </summary>
+    /// <param name="whichUnit">The unit to queue the animation for.</param>
+    /// <param name="animation">The animation to queue.</param>
+    /// <returns>The same unit that was passed in.</returns>
+    public static unit QueueAnimation(this unit whichUnit, string animation)
+    {
+      QueueUnitAnimation(whichUnit, animation);
+      return whichUnit;
+    }
+    
+    /// <summary>
     /// Sets the unit's animation speed.
     /// </summary>
     /// <param name="whichUnit">The unit to set animation speed for.</param>

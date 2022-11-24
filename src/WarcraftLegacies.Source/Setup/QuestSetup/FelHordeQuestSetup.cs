@@ -25,6 +25,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         preplacedUnitSystem.GetUnit(Constants.UNIT_N081_UNFOCUSED_DEMON_GATE_T0, Regions.Demongate_1.Center)
       }, new[] { shattrahMassacre }));
 
+      FelHorde.AddQuest(new QuestDarkPortalOpen(preplacedUnitSystem));
+
       FelHorde.AddQuest(new QuestBlackrock(Regions.BlackrockUnlock, new[] { questKilsorrow, questHellfireCitadel }));
       FelHorde.AddQuest(new QuestFelHordeKillIronforge());
       FelHorde.AddQuest(new QuestFelHordeKillStormwind());
