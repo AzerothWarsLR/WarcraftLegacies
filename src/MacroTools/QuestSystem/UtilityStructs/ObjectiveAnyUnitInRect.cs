@@ -35,15 +35,10 @@ namespace MacroTools.QuestSystem.UtilityStructs
         .AddAction(() =>
         {
           var triggerUnit = GetTriggerUnit();
-          if (IsUnitValid(triggerUnit))
-          {
-            CompletingUnit = triggerUnit;
-            Progress = QuestProgress.Complete;
-          }
-          else
-          {
-            Progress = QuestProgress.Incomplete;
-          }
+          if (!IsUnitValid(triggerUnit)) 
+            return;
+          CompletingUnit = triggerUnit;
+          Progress = QuestProgress.Complete;
         });
       CreateTrigger()
         .RegisterLeaveRegion(targetRect)

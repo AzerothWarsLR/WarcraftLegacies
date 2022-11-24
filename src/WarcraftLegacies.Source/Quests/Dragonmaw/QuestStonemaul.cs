@@ -38,9 +38,9 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
 
     //Todo: bad flavour
     protected override string CompletionPopup =>
-      "Stonemaul now belongs to the Dragonmaw Clan.";
+      "Stonemaul now belongs to the Dragonmaw Clan. Gorfax Angerfang has joined the Dragonmaw";
 
-    protected override string RewardDescription => "Control of all buildings in Stonemaul";
+    protected override string RewardDescription => "Control of all buildings in Stonemaul and Gorfax is now trainable at the Altar";
 
     protected override void OnFail(Faction completingFaction)
     {

@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.ArtifactSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -151,7 +151,7 @@ namespace WarcraftLegacies.Source.Setup
       ArtifactSoulgem = new Artifact(CreateItem(FourCC("gsou"), DummyX, DummyY))
       {
         LocationType = ArtifactLocationType.Hidden,
-        LocationDescription = "DalaranFourCC(s Quest",
+        LocationDescription = "Dalaran's Quest",
         FalsePosition = new Point(-14269, 22282)
       };
       ArtifactManager.Register(ArtifactSoulgem);
