@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
   /// </summary>
   public sealed class QuestCapitalCity : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
     private readonly unit _unitToMakeInvulnerable;
 
 
@@ -56,12 +56,11 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      if (completingFaction.Player != null)
-        completingFaction.Player.RescueGroup(_rescueUnits);
+      completingFaction.Player?.RescueGroup(_rescueUnits);
       SetUnitInvulnerable(_unitToMakeInvulnerable, true);
       if (GetLocalPlayer() == completingFaction.Player)
         PlayThematicMusic("war3mapImported\\CapitalCity.mp3");
-      LegendLordaeron.Uther.AddUnitDependency(LegendLordaeron.CapitalPalace.Unit);
+      LegendLordaeron.Uther?.AddUnitDependency(LegendLordaeron.CapitalPalace.Unit);
     }
   }
 }
