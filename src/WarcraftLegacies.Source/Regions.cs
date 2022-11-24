@@ -233,7 +233,6 @@ public static class Regions
 	public static Rectangle IllidanBoat4 { get; set; } = new Rectangle(-5280f, 3168f, -5248f, 3200f);
 	public static Rectangle IllidanCameraExit { get; set; } = new Rectangle(-19840f, -10400f, -15072f, -6112f);
 	public static Rectangle IllidanExitText1 { get; set; } = new Rectangle(-16928f, -7808f, -16896f, -7776f);
-	public static Rectangle SkullOfGuldan { get; set; } = new Rectangle(-13824f, 23232f, -13408f, 23488f);
 	public static Rectangle IllidanDalaExit { get; set; } = new Rectangle(8736f, 6432f, 8896f, 6624f);
 	public static Rectangle IllidanLast { get; set; } = new Rectangle(-18720f, 3712f, -18688f, 3744f);
 	public static Rectangle MaelstromAmbient { get; set; } = new Rectangle(-1888f, 224f, 1568f, 3552f);
@@ -391,5 +390,6 @@ public static class Regions
 	public static Rectangle InstanceOutland { get; set; } = new Rectangle(-7104f, -32256f, 6016f, -18208f);
 	public static Rectangle Outland_Ships { get; set; } = new Rectangle(-7104f, -32256f, 6016f, -18208f);
 	public static Rectangle IllidanStartingPosition { get; set; } = new Rectangle(-22496f, -14272f, -21472f, -13152f);
+	public static Rectangle SkullOfGuldan { get; set; } = new Rectangle(-13632f, 22144f, -13344f, 22432f);
 
 }

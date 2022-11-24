@@ -226,7 +226,6 @@ gg_rct_IllidanBoat3 = nil
 gg_rct_IllidanBoat4 = nil
 gg_rct_IllidanCameraExit = nil
 gg_rct_IllidanExitText1 = nil
-gg_rct_SkullOfGuldan = nil
 gg_rct_IllidanDalaExit = nil
 gg_rct_IllidanLast = nil
 gg_rct_MaelstromAmbient = nil
@@ -384,6 +383,7 @@ gg_rct_TempestKeepHide2 = nil
 gg_rct_InstanceOutland = nil
 gg_rct_Outland_Ships = nil
 gg_rct_IllidanStartingPosition = nil
+gg_rct_SkullOfGuldan = nil
 gg_cam_Naga1 = nil
 gg_cam_Naga2 = nil
 gg_cam_Naga3 = nil
@@ -7192,7 +7192,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("n05Z"), -12736.0, 21312.0, 270.000, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("oalt"), -7968.0, -4192.0, 270.000, FourCC("oalt"))
 u = BlzCreateUnitWithSkin(p, FourCC("h01H"), 4192.0, -21344.0, 270.000, FourCC("h01H"))
 u = BlzCreateUnitWithSkin(p, FourCC("h00K"), -11264.0, 22464.0, 270.000, FourCC("h00K"))
-u = BlzCreateUnitWithSkin(p, FourCC("h067"), -13824.0, 21696.0, 270.000, FourCC("h067"))
+u = BlzCreateUnitWithSkin(p, FourCC("h067"), -13824.0, 21632.0, 270.000, FourCC("h067"))
 u = BlzCreateUnitWithSkin(p, FourCC("ncb9"), 9920.0, 8960.0, 270.000, FourCC("ncb9"))
 u = BlzCreateUnitWithSkin(p, FourCC("o069"), -9728.0, -9024.0, 270.000, FourCC("o069"))
 SetUnitColor(u, ConvertPlayerColor(20))
@@ -8843,6 +8843,8 @@ u = BlzCreateUnitWithSkin(p, FourCC("n08P"), -24894.9, -1202.7, 238.297, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("n08P"), -27809.4, -379.7, 349.385, FourCC("n08P"))
 u = BlzCreateUnitWithSkin(p, FourCC("h00J"), 13598.3, 1061.3, 314.372, FourCC("h00J"))
 SetUnitState(u, UNIT_STATE_MANA, 200)
+u = BlzCreateUnitWithSkin(p, FourCC("n0DK"), -13612.5, 22447.4, 280.810, FourCC("n0DK"))
+SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("owar"), 22278.1, -29399.1, 240.090, FourCC("owar"))
 u = BlzCreateUnitWithSkin(p, FourCC("owar"), 22362.8, -29459.7, 240.090, FourCC("owar"))
 u = BlzCreateUnitWithSkin(p, FourCC("earc"), -18872.5, 14956.6, 352.980, FourCC("earc"))
@@ -9317,7 +9319,6 @@ gg_rct_IllidanBoat3 = Rect(4416.0, 7072.0, 4480.0, 7136.0)
 gg_rct_IllidanBoat4 = Rect(-5280.0, 3168.0, -5248.0, 3200.0)
 gg_rct_IllidanCameraExit = Rect(-19840.0, -10400.0, -15072.0, -6112.0)
 gg_rct_IllidanExitText1 = Rect(-16928.0, -7808.0, -16896.0, -7776.0)
-gg_rct_SkullOfGuldan = Rect(-13824.0, 23232.0, -13408.0, 23488.0)
 gg_rct_IllidanDalaExit = Rect(8736.0, 6432.0, 8896.0, 6624.0)
 gg_rct_IllidanLast = Rect(-18720.0, 3712.0, -18688.0, 3744.0)
 gg_rct_MaelstromAmbient = Rect(-1888.0, 224.0, 1568.0, 3552.0)
@@ -9481,6 +9482,7 @@ gg_rct_TempestKeepHide2 = Rect(1216.0, -19552.0, 3040.0, -18368.0)
 gg_rct_InstanceOutland = Rect(-7104.0, -32256.0, 6016.0, -18208.0)
 gg_rct_Outland_Ships = Rect(-7104.0, -32256.0, 6016.0, -18208.0)
 gg_rct_IllidanStartingPosition = Rect(-22496.0, -14272.0, -21472.0, -13152.0)
+gg_rct_SkullOfGuldan = Rect(-13632.0, 22144.0, -13344.0, 22432.0)
 end
 
 function CreateCameras()

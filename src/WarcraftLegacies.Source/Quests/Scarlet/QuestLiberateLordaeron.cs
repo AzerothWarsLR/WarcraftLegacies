@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -39,10 +39,10 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     }
 
 
-    protected override string CompletionPopup => "The lands of Lordaeron have been purged from Undeath and Corruption";
+    protected override string CompletionPopup => "The lands of Lordaeron have been purged from Undeath and Corruption, the Scarlet can now expand North";
 
     protected override string RewardDescription =>
-      "Enable to train Commander Goodchild and Isilien, Unlock New Hearthglen in Northrend and the Scarlet Harbor";
+      "Unlock New Hearthglen in Northrend and the Scarlet Harbor";
 
     protected override void OnComplete(Faction completingFaction)
     {
