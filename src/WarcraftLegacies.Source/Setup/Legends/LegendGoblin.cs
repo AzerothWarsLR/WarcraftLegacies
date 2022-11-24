@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       KezanTradingCenter = new Legend
       {
-        UnitType = Constants.UNIT_O04M_KEZAN_TRADING_CENTER_GOBLIN
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O04M_KEZAN_TRADING_CENTER_GOBLIN)
       };
       KezanTradingCenter.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_O05I_MISSILE_BATTERY_GOBLIN));
     }
