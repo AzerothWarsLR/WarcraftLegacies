@@ -6,13 +6,13 @@ using static War3Api.Common;
 
 namespace MacroTools.QuestSystem.UtilityStructs
 {
-  public class ObjectiveUnitIsDead : Objective
+  public sealed class ObjectiveUnitIsDead : Objective
   {
     public ObjectiveUnitIsDead(unit unitToKill)
     {
-      trigger trig = CreateTrigger();
-      TriggerRegisterUnitEvent(trig, unitToKill, EVENT_UNIT_DEATH);
-      TriggerAddAction(trig, OnUnitDeath);
+      CreateTrigger()
+        .RegisterUnitEvent(unitToKill, EVENT_UNIT_DEATH)
+        .AddAction(() => { Progress = QuestProgress.Complete; });
       Target = unitToKill;
       TargetWidget = Target;
       InitializeDescription();
@@ -23,12 +23,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
     public override Point Position => new(GetUnitX(Target), GetUnitY(Target));
 
     public unit Target { get; }
-
-    private void OnUnitDeath()
-    {
-      Progress = QuestProgress.Complete;
-    }
-
+    
     private void InitializeDescription()
     {
       if (IsUnitType(Target, UNIT_TYPE_STRUCTURE) || IsUnitType(Target, UNIT_TYPE_ANCIENT))
