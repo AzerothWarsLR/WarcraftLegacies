@@ -6,7 +6,6 @@ using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
-using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
 

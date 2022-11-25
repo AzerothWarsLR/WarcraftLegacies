@@ -1,7 +1,5 @@
-﻿using MacroTools;
-using WarcraftLegacies.Source.Quests.Naga;
+﻿using WarcraftLegacies.Source.Quests.Naga;
 using WarcraftLegacies.Source.Setup.FactionSetup;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
