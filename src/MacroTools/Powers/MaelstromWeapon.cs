@@ -13,15 +13,8 @@ namespace MacroTools.Powers
   /// </summary>
   public sealed class MaelstromWeapon : Power
   {
-    /// <summary>
-    /// The chance to do bonus damage.
-    /// </summary>
-    public float DamageChance { get; init; }
-    
-    /// <summary>
-    /// The bonus damage dealt.
-    /// </summary>
-    public float DamageDealt { get; init; }
+    private readonly float _damageChance;
+    private readonly float _damageDealt;
 
     /// <summary>
     /// The effect that appears when bonus damage is dealt.
@@ -36,9 +29,12 @@ namespace MacroTools.Powers
     /// <summary>
     /// Initializes a new instance of the <see cref="MaelstromWeapon"/> class.
     /// </summary>
-    public MaelstromWeapon()
+    public MaelstromWeapon(float damageChance, float damageDealt)
     {
-      Description = $"Your Orc units have a {DamageChance*100}% chance to deal {DamageDealt} extra magical damage on attack. Thrall instead has a 100% chance.";
+      _damageChance = damageChance;
+      _damageDealt = damageDealt;
+      Name = "Maelstrom Spirit";
+      Description = $"Your Orc units have a {damageChance*100}% on attack to call down a lightning bolt dealing {damageDealt} magic damage. Thrall instead has a 100% chance.";
     }
     
     /// <inheritdoc />
@@ -51,15 +47,15 @@ namespace MacroTools.Powers
 
     private void OnDamage()
     {
-      if (!BlzGetEventIsAttack() || (ValidUnitTypes != null && ValidUnitTypes.Contains(GetEventDamageSource().GetTypeId()))) 
+      if (!BlzGetEventIsAttack() || (ValidUnitTypes != null && !ValidUnitTypes.Contains(GetEventDamageSource().GetTypeId()))) 
         return;
 
-      if (!IsHeroUnitId(GetEventDamageSource().GetTypeId()) && !(GetRandomReal(0, 1) < DamageChance))
+      if (!IsHeroUnitId(GetEventDamageSource().GetTypeId()) && !(GetRandomReal(0, 1) < _damageChance))
         return;
       
-      GetTriggerUnit().Damage(GetEventDamageSource(), DamageDealt, ATTACK_TYPE_MAGIC);
+      GetTriggerUnit().Damage(GetEventDamageSource(), _damageDealt, ATTACK_TYPE_MAGIC);
       AddSpecialEffect(Effect, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()))
-        .SetLifespan();
+        .SetLifespan(1);
     }
   }
 }

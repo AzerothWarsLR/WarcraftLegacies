@@ -15,10 +15,10 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     /// <inheritdoc />
     public QuestWorldShaman() : base("The World-Shaman",
       "The elements of Azeroth are in terrible disarray, and the situation only grows worse as rising conflicts threaten to tear our world apart. Thrall, as one of the most formidable Shamans of his time, must take up the mantle of the World-Shaman if he is to save his people - and the world.",
-      @"ReplaceableTextures\CommandButtons\BTNspell_shaman_maelstromweapon.blp")
+      @"ReplaceableTextures\CommandButtons\BTN_Lightning_Orc.blp")
     {
       AddObjective(new ObjectiveLegendLevel(LegendFrostwolf.LegendThrall, 12));
-      AddObjective(new ObjectiveChannelRect(Regions.MaelstromAmbient, "the Maelstrom", LegendFrostwolf.LegendThrall, 120, 270));
+      AddObjective(new ObjectiveLegendInRect(LegendFrostwolf.LegendThrall, Regions.MaelstromAmbient, "the Maelstrom"));
     }
 
     /// <inheritdoc />
@@ -35,10 +35,8 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       LegendFrostwolf.LegendThrall?.Unit?.SetName("World-Shaman")
         .AddHeroAttributes(0, 0, 10)
         .AddExperience(2000);
-      completingFaction.AddPower(new MaelstromWeapon
+      completingFaction.AddPower(new MaelstromWeapon(0.35f, 50)
       {
-        DamageChance = 0.35f,
-        DamageDealt = 100,
         Effect = @"Doodads\Cinematic\Lightningbolt\Lightningbolt",
         ValidUnitTypes = new[]
         {
@@ -48,7 +46,8 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
           Constants.UNIT_O00A_FAR_SEER_FROSTWOLF_ELITE,
           Constants.UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF,
           Constants.UNIT_H00C_DREK_THAR_FROSTWOLF_DEMI
-        }
+        },
+        IconName = "_Lightning_Orc"
       });
     }
   }
