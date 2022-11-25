@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DamageBase = 4,
         DamageLevel = 14,
         DamageMultiplierAgainstDemons = 1.2f,
-        Effect = @"war3mapImported\\Culling Cleave.mdx",
+        Effect = @"war3mapImported\Culling Cleave.mdx",
         EffectScale = 1.2f,
         DamageType = DAMAGE_TYPE_MAGIC
       };
