@@ -1,6 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
-using MacroTools.QuestSystem;
+﻿using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
