@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "Thrall gains 2000 experience and 10 Intelligence, and you gain the power Maelstrom Weapon.";
+      "Thrall gains 2000 experience and 10 Intelligence, and you gain the power Maelstrom Weapon";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
