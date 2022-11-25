@@ -1,9 +1,10 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools;
 using WarcraftLegacies.Source.Quests.Fel_Horde;
 using WCSharp.Shared.Data;
 using static WarcraftLegacies.Source.Setup.FactionSetup.FelHordeSetup;
 using static War3Api.Common;
+using WarcraftLegacies.Source.Quests.FelHorde;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
@@ -24,7 +25,17 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         preplacedUnitSystem.GetUnit(Constants.UNIT_N081_UNFOCUSED_DEMON_GATE_T0, Regions.DemonGate3.Center),
         preplacedUnitSystem.GetUnit(Constants.UNIT_N081_UNFOCUSED_DEMON_GATE_T0, Regions.Demongate_1.Center)
       }, new[] { shattrahMassacre }));
-
+     
+      FelHorde.AddQuest(new QuestDarkPortalOpen(
+        preplacedUnitSystem.GetUnit(Constants.UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS, new Point(3703, -26045)),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, Regions.Dark_Portal_Entrance_1.Center),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, Regions.Dark_Portal_Entrance_2.Center),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, Regions.Dark_Portal_Entrance_3.Center),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, Regions.Dark_Portal_Exit_1.Center),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, Regions.Dark_Portal_Exit_2.Center),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, Regions.Dark_Portal_Exit_3.Center)));
+      
+    
       FelHorde.AddQuest(new QuestBlackrock(Regions.BlackrockUnlock, new[] { questKilsorrow, questHellfireCitadel }));
       FelHorde.AddQuest(new QuestFelHordeKillIronforge());
       FelHorde.AddQuest(new QuestFelHordeKillStormwind());

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
@@ -14,17 +15,18 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
   /// </summary>
   public sealed class QuestCapitalCity : QuestData
   {
-    private readonly List<unit> _rescueUnits;
+    private readonly List<unit> _rescueUnits = new();
     private readonly unit _unitToMakeInvulnerable;
-
+    private readonly Legend _uther;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestCapitalCity"/> class.
     /// </summary>
     /// <param name="rescueRect"></param>
     /// <param name="unitToMakeInvulnerable"></param>
+    /// <param name="uther"></param>
     /// <param name="prequisites"></param>
-    public QuestCapitalCity(Rectangle rescueRect, unit unitToMakeInvulnerable, IEnumerable<QuestData> prequisites) :
+    public QuestCapitalCity(Rectangle rescueRect, unit unitToMakeInvulnerable, Legend uther, IEnumerable<QuestData> prequisites) :
       base("Hearthlands",
         "The territories of Lordaeron are fragmented. Regain control of the old Alliance's hold to secure the kingdom.",
         "ReplaceableTextures\\CommandButtons\\BTNCastle.blp")
@@ -36,7 +38,9 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R04Y_QUEST_COMPLETED_HEARTHLANDS;
       _unitToMakeInvulnerable = unitToMakeInvulnerable;
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      _uther = uther;
+      Func<unit, bool> rescueUnitFilter = (unit whichUnit) => { return GetUnitTypeId(whichUnit) != Constants.UNIT_N08F_UNDERCITY_ENTRANCE; };
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures, rescueUnitFilter);
       Required = true;
     }
 
@@ -56,11 +60,12 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player?.RescueGroup(_rescueUnits);
+      if (completingFaction.Player != null)
+        completingFaction.Player.RescueGroup(_rescueUnits);
       SetUnitInvulnerable(_unitToMakeInvulnerable, true);
       if (GetLocalPlayer() == completingFaction.Player)
         PlayThematicMusic("war3mapImported\\CapitalCity.mp3");
-      LegendLordaeron.Uther?.AddUnitDependency(LegendLordaeron.CapitalPalace.Unit);
+      _uther.AddUnitDependency(LegendLordaeron.CapitalPalace.Unit);
     }
   }
 }
