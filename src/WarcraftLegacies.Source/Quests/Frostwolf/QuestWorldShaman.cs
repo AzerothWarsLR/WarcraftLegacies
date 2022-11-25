@@ -2,6 +2,7 @@
 using MacroTools.FactionSystem;
 using MacroTools.Powers;
 using MacroTools.QuestSystem;
+using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Quests.Frostwolf
@@ -16,6 +17,8 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       "The elements of Azeroth are in terrible disarray, and the situation only grows worse as rising conflicts threaten to tear our world apart. Thrall, as one of the most formidable Shamans of his time, must take up the mantle of the World-Shaman if he is to save his people - and the world.",
       @"ReplaceableTextures\CommandButtons\BTNspell_shaman_maelstromweapon.blp")
     {
+      AddObjective(new ObjectiveLegendLevel(LegendFrostwolf.LegendThrall, 12));
+      AddObjective(new ObjectiveChannelRect(Regions.MaelstromAmbient, "the Maelstrom", LegendFrostwolf.LegendThrall, 120, 270));
     }
 
     /// <inheritdoc />
