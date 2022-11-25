@@ -18,15 +18,15 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     {
       var lordaeron = LordaeronSetup.Lordaeron;
       var kingTerenas = LegendLordaeron.Terenas?.Unit;
-
-      if (lordaeron != null && kingTerenas != null)
+      var uther = LegendLordaeron.Uther;
+      if (lordaeron != null && kingTerenas != null && uther != null)
       {
         var questStrahnbrad = new QuestStrahnbrad(Regions.StrahnbradUnlock);
         var questStratholme = new QuestStratholme(Regions.StratholmeUnlock, preplacedUnitSystem);
         lordaeron.AddQuest(questStratholme);
         lordaeron.StartingQuest = questStratholme;
         lordaeron.AddQuest(questStrahnbrad);
-        lordaeron.AddQuest(new QuestCapitalCity(Regions.Terenas, kingTerenas,
+        lordaeron.AddQuest(new QuestCapitalCity(Regions.Terenas, kingTerenas, uther,
           new QuestData[]
           {
           questStrahnbrad,

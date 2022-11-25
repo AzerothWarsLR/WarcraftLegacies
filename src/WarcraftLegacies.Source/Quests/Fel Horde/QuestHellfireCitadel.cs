@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
   public sealed class QuestHellfireCitadel : QuestData
   {
     private readonly List<unit> _demonGates;
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
 
     /// <summary>
     /// 
@@ -36,9 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       AddObjective(new ObjectiveExpire(1450));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R00P_QUEST_COMPLETED_THE_CITADEL;
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable, Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      foreach (var unit in _rescueUnits)
-        SetUnitOwner(unit, Player(PLAYER_NEUTRAL_PASSIVE), false);
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       Required = true;
     }
 
