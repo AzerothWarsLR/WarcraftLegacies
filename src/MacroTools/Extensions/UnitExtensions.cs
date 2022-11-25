@@ -395,7 +395,7 @@ namespace MacroTools.Extensions
     ///   Increases the unit's Strength, Agility, or Intelligence.
     ///   Displays a special effect depending on which attributes are increased.
     /// </summary>
-    public static void AddHeroAttributes(this unit whichUnit, int str, int agi, int intelligence)
+    public static unit AddHeroAttributes(this unit whichUnit, int str, int agi, int intelligence)
     {
       SetHeroStr(whichUnit, GetHeroStr(whichUnit, false) + str, true);
       SetHeroAgi(whichUnit, GetHeroAgi(whichUnit, false) + agi, true);
@@ -412,6 +412,16 @@ namespace MacroTools.Extensions
         sfx = "Abilities\\Spells\\Items\\AIlm\\AIlmTarget.mdl";
 
       DestroyEffect(AddSpecialEffect(sfx, GetUnitX(whichUnit), GetUnitY(whichUnit)));
+      return whichUnit;
+    }
+
+    /// <summary>
+    /// Adds an amount of experience to the hero.
+    /// </summary>
+    public static unit AddExperience(this unit whichUnit, int amount)
+    {
+      AddHeroXP(whichUnit, amount, true);
+      return whichUnit;
     }
 
     /// <summary>
