@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp")
     {
       AddObjective(new ObjectiveLegendHasArtifact(LegendNaga.LegendIllidan, ArtifactSetup.ArtifactSkullofguldan));
-      ResearchId = FourCC("R095");
+      ResearchId = Constants.UPGRADE_R095_QUEST_COMPLETED_A_DESTINY_OF_FLAME_AND_SORROW;
     }
 
     /// <inheritdoc/>
