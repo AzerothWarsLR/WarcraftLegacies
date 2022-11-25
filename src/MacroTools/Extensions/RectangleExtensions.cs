@@ -29,36 +29,22 @@ namespace MacroTools.Extensions
     /// </summary>
     /// <param name="rectangle">The rectangle in which to prepare units.</param>
     /// <param name="rescuePreparationMode">Determines how units are prepared.</param>
-    /// <param name="filter">A function that is applied to each unit found in <paramref name="rectangle"/>
-    /// <para/>
-    /// The unit gets rescued if <paramref name="filter"/> returns true, else it does not get rescued.
+    /// <param name="filter">A function that is applied to each unit found in <paramref name="rectangle"/>.
+    /// The unit gets rescued if and only if <paramref name="filter"/> returns true.
     /// </param>
     /// <returns>Returns all neutral passive units not matching the <paramref name="filter"/> in the specified rectangle.</returns>
     public static List<unit> PrepareUnitsForRescue(this Rectangle rectangle, RescuePreparationMode rescuePreparationMode, Func<unit, bool>? filter = null)
     {
-     
-      filter ??= unit => { return true; }; 
-      switch (rescuePreparationMode)
+      filter ??= _ => true;
+      return rescuePreparationMode switch
       {
-        case RescuePreparationMode.None:
-        {
-          return PrepareUnitsForRescue(rectangle, false, false, false, filter);
-        }
-        case RescuePreparationMode.Invulnerable:
-        {
-          return PrepareUnitsForRescue(rectangle,true, false, false,  filter);
-        }
-        case RescuePreparationMode.HideNonStructures:
-        {
-          return PrepareUnitsForRescue(rectangle,true,true, false,  filter);
-        }
-        case RescuePreparationMode.HideAll:
-        {
-          return PrepareUnitsForRescue(rectangle, true, true, true,  filter);
-        }
-        default:
-          throw new ArgumentException($"{nameof(rescuePreparationMode)} is not implemented for this function.", nameof(rescuePreparationMode));
-      }
+        RescuePreparationMode.None => PrepareUnitsForRescue(rectangle, false, false, false, filter),
+        RescuePreparationMode.Invulnerable => PrepareUnitsForRescue(rectangle, true, false, false, filter),
+        RescuePreparationMode.HideNonStructures => PrepareUnitsForRescue(rectangle, true, true, false, filter),
+        RescuePreparationMode.HideAll => PrepareUnitsForRescue(rectangle, true, true, true, filter),
+        _ => throw new ArgumentException($"{nameof(rescuePreparationMode)} is not implemented for this function.",
+          nameof(rescuePreparationMode))
+      };
     }
 
     /// <summary>
