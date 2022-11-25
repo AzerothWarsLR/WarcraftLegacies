@@ -24,7 +24,7 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
-    /// Prepares units owned by <paramref name="owningPlayer"/> within the specified <paramref name="rectangle"/> according to
+    /// Prepares neutral passive units within the specified <paramref name="rectangle"/> according to
     /// the provided <see cref="RescuePreparationMode"/>.
     /// </summary>
     /// <param name="rectangle">The rectangle in which to prepare units.</param>
@@ -33,7 +33,7 @@ namespace MacroTools.Extensions
     /// <para/>
     /// The unit gets rescued if <paramref name="filter"/> returns true, else it does not get rescued.
     /// </param>
-    /// <returns>Returns all <paramref name="owningPlayer"/> units in the specified rectangle. Default is neutral passive.</returns>
+    /// <returns>Returns all neutral passive units not matching the <paramref name="filter"/> in the specified rectangle.</returns>
     public static List<unit> PrepareUnitsForRescue(this Rectangle rectangle, RescuePreparationMode rescuePreparationMode, Func<unit, bool>? filter = null)
     {
      
@@ -69,7 +69,7 @@ namespace MacroTools.Extensions
     /// <param name="hideUnits">If true, prepared units are hidden.</param>
     /// <param name="hideStructures">If true, prepared structures are hidden.</param>
     /// <param name="filter"></param>
-    /// <returns>All Neutral Passive units in the specified rectangle.</returns>
+    /// <returns>Returns all neutral passive units not matching the <paramref name="filter"/> in the specified rectangle.</returns>
     private static List<unit> PrepareUnitsForRescue(this Rectangle rectangle, bool makeInvulnerable, bool hideUnits, bool hideStructures, Func<unit, bool> filter)
     {
       var group = new GroupWrapper()
