@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -15,9 +17,10 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
   /// </summary>
   public sealed class QuestZulfarrak : QuestData
   {
-    private const int GAHZRILLA_ID = Constants.UNIT_H06Q_DEMIGOD_WARSONG;
+    private const int _ghazrilla_id = Constants.UNIT_H06Q_DEMIGOD_WARSONG;
     private readonly List<unit> _rescueUnits;
     private readonly List<unit> _killUnits;
+
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestZulfarrak"/> class
     /// </summary>
@@ -30,24 +33,18 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       AddObjective(new ObjectiveControlLegend(LegendNeutral.Zulfarrak, false));
       AddObjective(new ObjectiveLegendReachRect(LegendTroll.LEGEND_PRIEST, rescueRect, "Zul'Farrak"));
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      _killUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures, (unit => GetUnitTypeId(unit) != GetUnitTypeId(LegendNeutral.Zulfarrak.Unit)), Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      _killUnits = new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList().Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE)).ToList();
     }
 
-    /// <summary>
-    ///<inheritdoc/>
-    /// </summary>
+    /// <inheritdoc/>
     protected override string CompletionPopup =>
       $"Zul'farrak has fallen. The Sandfury trolls lend their might to the Zandalari.";
 
-    /// <summary>
-    ///<inheritdoc/>
-    /// </summary>
+    /// <inheritdoc/>
     protected override string RewardDescription =>
       "Control of Zul'farrak, 300 gold tribute, enable to train Storm Wyrm and you can summon the hero Gahz'rilla from the Altar of Conquerors";
 
-    /// <summary>
-    ///<inheritdoc/>
-    /// </summary>
+    /// <inheritdoc/>>
     protected override void OnComplete(Faction completingFaction)
     {
       if (completingFaction.Player != null)
@@ -60,12 +57,10 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       }
     }
 
-    /// <summary>
-    ///<inheritdoc/>
-    /// </summary>
+    /// <inheritdoc/>
     protected override void OnAdd(Faction whichFaction)
     {
-      whichFaction.ModObjectLimit(GAHZRILLA_ID, 1);
+      whichFaction.ModObjectLimit(_ghazrilla_id, 1);
     }
   }
 }

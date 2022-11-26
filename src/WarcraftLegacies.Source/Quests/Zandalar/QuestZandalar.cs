@@ -31,29 +31,21 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       Required = true;
     }
 
-    /// <summary>
     /// <inheritdoc/>
-    /// </summary>
     protected override string CompletionPopup =>
       "The City of Gold is now yours to command and has joined the Zandalari";
 
-    /// <summary>
     /// <inheritdoc/>
-    /// </summary>
     protected override string RewardDescription =>
       "Control of all units in Dazar'alor and enables the Golden Fleet to be built";
 
-    /// <summary>
     /// <inheritdoc/>
-    /// </summary>
     protected override void OnFail(Faction completingFaction)
     {
       Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
     }
 
-    /// <summary>
     /// <inheritdoc/>
-    /// </summary>
     protected override void OnComplete(Faction completingFaction)
     {
       if(completingFaction.Player != null)

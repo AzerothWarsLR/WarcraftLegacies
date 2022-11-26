@@ -11,9 +11,9 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
   /// </summary>
   public sealed class QuestZulgurub : QuestData
   {
-    private static readonly int ZulgurubResearch = Constants.UPGRADE_R02M_QUEST_COMPLETED_THE_HEART_OF_HAKKAR_WARSONG;
-    private static readonly int TrollShrineId = Constants.UNIT_O04X_LOA_SHRINE_ZANDALAR;
-    private static readonly int RavagerId = Constants.UNIT_O021_RAVAGER_WARSONG;
+    private const int _zulgurubResearch = Constants.UPGRADE_R02M_QUEST_COMPLETED_THE_HEART_OF_HAKKAR_WARSONG;
+    private const int _trollShrineId = Constants.UNIT_O04X_LOA_SHRINE_ZANDALAR;
+    private const int _ravagerId = Constants.UNIT_O021_RAVAGER_WARSONG;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestZulgurub"/> class
@@ -25,34 +25,27 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       AddObjective(new ObjectiveControlLegend(LegendNeutral.Zulgurub, false));
     }
 
-    /// <summary>
+
     /// <inheritdoc/>
-    /// </summary>
     protected override string CompletionPopup => "Zul'gurub has fallen. The Gurubashi trolls lend their might to the Zandalari.";
 
-    /// <summary>
     /// <inheritdoc/>
-    /// </summary>
-    protected override string RewardDescription => "300 gold and the ability to train " + GetObjectName(RavagerId) + "s from the " + GetObjectName(TrollShrineId);
+    protected override string RewardDescription => "300 gold and the ability to train " + GetObjectName(_ravagerId) + "s from the " + GetObjectName(_trollShrineId);
 
-    /// <summary>
-    /// <inheritdoc/>
-    /// </summary>
+    /// <inheritdoc/>>
     protected override void OnComplete(Faction completingFaction)
     {
       if(completingFaction.Player != null)
       {
-        SetPlayerTechResearched(completingFaction.Player, ZulgurubResearch, 1);
+        SetPlayerTechResearched(completingFaction.Player, _zulgurubResearch, 1);
         completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
       }
     }
 
-    /// <summary>
     /// <inheritdoc/>
-    /// </summary>
     protected override void OnAdd(Faction whichFaction)
     {
-      whichFaction.ModObjectLimit(ZulgurubResearch, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(_zulgurubResearch, Faction.UNLIMITED);
     }
   }
 }

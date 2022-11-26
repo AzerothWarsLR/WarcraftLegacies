@@ -1,7 +1,6 @@
 ﻿using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using System.Collections.Generic;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
@@ -16,15 +15,15 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
   public sealed class QuestConquerKul : QuestData
   {
     private readonly QuestData _completeOnFailQuest;
-    private readonly List<QuestData> _failOnFailQuests;
+    private readonly QuestData _failOnFailQuest;
     private readonly Rectangle _onFailSpawnRect;
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestConquerKul"/> class
     /// </summary>
     /// <param name="onFailSpawnRect"></param>
     /// <param name="completeOnFailQuest">Quest that gets completed upon failing <see cref="QuestConquerKul"/>.</param>
-    /// <param name="failOnFailQuests">Quests that are failed upon failing <see cref="QuestConquerKul"/>. </param>
-    public QuestConquerKul(Rectangle onFailSpawnRect, QuestData completeOnFailQuest, List<QuestData> failOnFailQuests) : base("Conquer Boralus",
+    /// <param name="failOnFailQuest">Quest that is failed upon failing <see cref="QuestConquerKul"/>. </param>
+    public QuestConquerKul(Rectangle onFailSpawnRect, QuestData completeOnFailQuest, QuestData failOnFailQuest) : base("Conquer Boralus",
       "The Kul'tiran people and their fleet have been a threat to the Zandalari Empire for ages, it is time to put them to rest.",
       "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp")
     {
@@ -33,54 +32,41 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       ResearchId = Constants.UPGRADE_R08D_QUEST_COMPLETED_CONQUER_BORALUS;
       _onFailSpawnRect = onFailSpawnRect;
       _completeOnFailQuest = completeOnFailQuest;
-      _failOnFailQuests = failOnFailQuests;
+      _failOnFailQuest = failOnFailQuest;
       Required = true;
     }
 
-    /// <summary>
     /// <inheritdoc/>
-    /// </summary>
     protected override string CompletionPopup => "Before setting sails we need to conquer Kul'tiras";
 
-    /// <summary>
-    /// <inheritdoc/>
-    /// </summary>
+    /// <inheritdoc/>>
     protected override string RewardDescription => "Unlock shipyards";
 
-    /// <summary>
     /// <inheritdoc/>
-    /// </summary>
     protected override string FailurePopup => "Zandalar has fallen.";
 
-    /// <summary>
     /// <inheritdoc/>
-    /// </summary>
     protected override string PenaltyDescription => "You lose everything you control and can no longer build shipyards, but you unlock Zul'Farrak";
 
-    /// <summary>
     /// <inheritdoc/>
-    /// </summary>
     protected override void OnComplete(Faction whichFaction)
     {
       if (whichFaction.Player != null)
         whichFaction.Player.AddGold(750);
-      
+
       KultirasSetup.Kultiras?.Player?.SetTeam(TeamSetup.Alliance);
       ZandalarSetup.Zandalar?.Player?.SetTeam(TeamSetup.Horde);
     }
 
-    /// <summary>
     /// <inheritdoc/>
-    /// </summary>
     protected override void OnFail(Faction completingFaction)
     {
       completingFaction.Obliterate();
       if (completingFaction.Player != null)
       {
         _completeOnFailQuest.Progress = QuestProgress.Complete;
-        foreach (var quest in _failOnFailQuests)
-          quest.Progress = QuestProgress.Failed;
-               
+        _failOnFailQuest.Progress = QuestProgress.Failed;
+
         LegendTroll.LEGEND_PRIEST.ForceCreate(completingFaction.Player, new Point(_onFailSpawnRect.Center.X, _onFailSpawnRect.Center.Y), 110);
         LegendTroll.LEGEND_RASTAKHAN.ForceCreate(completingFaction.Player, new Point(_onFailSpawnRect.Center.X, _onFailSpawnRect.Center.Y), 110);
         if (GetLocalPlayer() == completingFaction.Player)

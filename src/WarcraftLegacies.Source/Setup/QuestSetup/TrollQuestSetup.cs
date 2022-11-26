@@ -1,6 +1,4 @@
-﻿using MacroTools.QuestSystem;
-using System.Collections.Generic;
-using WarcraftLegacies.Source.Quests.Zandalar;
+﻿using WarcraftLegacies.Source.Quests.Zandalar;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
@@ -17,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         zandalar.StartingQuest = zandalar.AddQuest(questZandalar);
       
         zandalar.AddQuest(questZulFarrak);
-        zandalar.AddQuest(new QuestConquerKul(Regions.Zulfarrak, questZulFarrak, new List<QuestData> {questZandalar}));
+        zandalar.AddQuest(new QuestConquerKul(Regions.Zulfarrak, questZulFarrak, questZandalar));
         zandalar.AddQuest(new QuestZulgurub());
         zandalar.AddQuest(new QuestGundrak());
         zandalar.AddQuest(new QuestJinthaAlor());

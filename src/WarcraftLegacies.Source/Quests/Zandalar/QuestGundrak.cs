@@ -12,9 +12,9 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
   /// </summary>
   public sealed class QuestGundrak : QuestData
   {
-    private static readonly int GundrakResearch = Constants.UPGRADE_R02Q_QUEST_COMPLETED_THE_DRAKKARI_FORTRESS_WARSONG;
-    private static readonly int WarlordId = Constants.UNIT_NFTK_WARLORD_WARSONG;
-    private static readonly int TrollShrineId = Constants.UNIT_O04X_LOA_SHRINE_ZANDALAR;
+    private const int _gundrakResearch = Constants.UPGRADE_R02Q_QUEST_COMPLETED_THE_DRAKKARI_FORTRESS_WARSONG;
+    private const int _warlordId = Constants.UNIT_NFTK_WARLORD_WARSONG;
+    private const int _trollShrineId = Constants.UNIT_O04X_LOA_SHRINE_ZANDALAR;
 
 
     /// <summary>
@@ -28,36 +28,28 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       
     }
 
-    /// <summary>
     /// <inheritdoc/>
-    /// </summary>
     protected override string CompletionPopup =>
       "Gundrak has fallen. The Drakkari trolls lend their might to the Zandalari.";
 
-    /// <summary>
     /// <inheritdoc/>
-    /// </summary
     protected override string RewardDescription =>
-      $"300 gold and the ability to train {GetObjectName(WarlordId)}s from the {GetObjectName(TrollShrineId)}.";
+      $"300 gold and the ability to train {GetObjectName(_warlordId)}s from the {GetObjectName(_trollShrineId)}.";
 
-    /// <summary>
     /// <inheritdoc/>
-    /// </summary
     protected override void OnComplete(Faction completingFaction)
     {
       if (completingFaction.Player != null)
       {
-        SetPlayerTechResearched(completingFaction.Player, GundrakResearch, 1);
+        SetPlayerTechResearched(completingFaction.Player, _gundrakResearch, 1);
         completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
       }
     }
 
-    /// <summary>
     /// <inheritdoc/>
-    /// </summary
     protected override void OnAdd(Faction whichFaction)
     {
-      whichFaction.ModObjectLimit(GundrakResearch, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(_gundrakResearch, Faction.UNLIMITED);
     }
   }
 }

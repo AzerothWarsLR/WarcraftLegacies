@@ -22,14 +22,11 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       Required = true;
       
     }
-    /// <summary>
-    /// <inheritdoc/>
-    /// </summary>
+
+    /// <inheritdoc/>>
     protected override string CompletionPopup => "Rastakhan is now trainable and Direhorn are available.";
 
-    /// <summary>
     /// <inheritdoc/>
-    /// </summary>
     protected override string RewardDescription => "Rastakhan is trainable at the altar and Direhorns are trainable";
 
   }
