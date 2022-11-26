@@ -25,15 +25,14 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
-
       AddObjective(new ObjectiveLegendDead(LegendFelHorde.LegendHellfirecitadel));
     }
 
     protected override string CompletionPopup =>
-      "Honor Hold is now free from the constant looming threat of Hellfire Citadel. Danath Trollbane and his people elect to rejoin the Alliance.";
+      "Honor Hold is now free from the constant looming threat of Hellfire Citadel, and have finally been reconnected with their Alliance from Azeroth.";
 
     protected override string RewardDescription =>
-      "The demihero Danath Trollbane, and control of all units at Honor Hold";
+      "Control of all units at Honor Hold";
 
     protected override void OnFail(Faction completingFaction)
     {
@@ -43,8 +42,6 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     protected override void OnComplete(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
-      completingFaction.ModObjectLimit(Constants.UNIT_H03W_DANATH_TROLLBANE_ARATHOR_DEMI, 1);
       //Set animations of doodads within Honor Hold
       SetDoodadAnimationRect(Regions.HonorHold.Rect, FourCC("ISrb"), "hide", false);
       SetDoodadAnimationRect(Regions.HonorHold.Rect, FourCC("LSst"), "hide", false);

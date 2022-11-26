@@ -28,6 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
+      Required = true;
     }
 
     protected override string CompletionPopup => "The Gnolls have been defeated, Goldshire is safe.";
