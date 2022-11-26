@@ -1,4 +1,4 @@
-using WarcraftLegacies.Source.Quests.Zandalar;
+﻿using WarcraftLegacies.Source.Quests.Zandalar;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
@@ -8,14 +8,19 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     public static void Setup()
     {
       var zandalar = ZandalarSetup.Zandalar;
-
-      zandalar.StartingQuest = zandalar.AddQuest(new QuestZandalar(Regions.ZandalarUnlock));
-      zandalar.AddQuest(new QuestConquerKul());
-      zandalar.AddQuest(new QuestZulfarrak(Regions.Zulfarrak));
-      zandalar.AddQuest(new QuestZulgurub());
-      zandalar.AddQuest(new QuestGundrak());
-      zandalar.AddQuest(new QuestJinthaAlor());
-      zandalar.AddQuest(new QuestHakkar());
+      if (zandalar != null)
+      {
+        var questZulFarrak = new QuestZulfarrak(Regions.Zulfarrak);
+        var questZandalar = new QuestZandalar(Regions.ZandalarUnlock);
+        zandalar.StartingQuest = zandalar.AddQuest(questZandalar);
+      
+        zandalar.AddQuest(questZulFarrak);
+        zandalar.AddQuest(new QuestConquerKul(Regions.Zulfarrak, questZulFarrak, questZandalar));
+        zandalar.AddQuest(new QuestZulgurub());
+        zandalar.AddQuest(new QuestGundrak());
+        zandalar.AddQuest(new QuestJinthaAlor());
+        zandalar.AddQuest(new QuestHakkar());
+      }
     }
   }
 }

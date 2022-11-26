@@ -22,7 +22,7 @@ namespace MacroTools.Extensions
       SetSoundPosition(soundHandle, GetRectCenterX(region.Rect), GetRectCenterY(region.Rect), 0);
       RegisterStackedSound(soundHandle, true, width, height);
     }
-
+   
     /// <summary>
     /// Prepares neutral passive units within the specified <paramref name="rectangle"/> according to
     /// the provided <see cref="RescuePreparationMode"/>.

@@ -27,7 +27,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       LegendThrall = new Legend
       {
-        UnitType = FourCC("Othr")
+        UnitType = Constants.UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF,
+        Name = "Thrall"
       };
       Legend.Register(LegendThrall);
 
