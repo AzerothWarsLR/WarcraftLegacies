@@ -8,9 +8,9 @@ using static War3Api.Common;
 namespace MacroTools.Spells.Slipstream
 {
   /// <summary>
-  /// Channel a portal to a target location.
+  /// Channel a portal to a predetermined location.
   /// </summary>
-  public sealed class SlipstreamSpell : Spell
+  public sealed class SlipstreamSpellSpecificLocation : Spell
   {
     /// <summary>
     /// The unit to spawn to act as the actual portal.
@@ -28,6 +28,11 @@ namespace MacroTools.Spells.Slipstream
     public float ClosingDelay { get; init; }
 
     /// <summary>
+    /// The destination of any portal created by this spell.
+    /// </summary>
+    public Point TargetLocation { get; init; } = new(0, 0);
+
+    /// <summary>
     /// The color of the created portals.
     /// </summary>
     public Color Color { get; init; } = new(255, 255, 255, 255);
@@ -36,14 +41,14 @@ namespace MacroTools.Spells.Slipstream
     /// Initializes a new instance of the <see cref="SlipstreamSpell"/> class.
     /// </summary>
     /// <param name="id"><inheritdoc /></param>
-    public SlipstreamSpell(int id) : base(id)
+    public SlipstreamSpellSpecificLocation(int id) : base(id)
     {
     }
 
     /// <inheritdoc/>
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      ChannelManager.Add(new SlipstreamPortalChannel(caster, Id, targetPoint)
+      ChannelManager.Add(new SlipstreamPortalChannel(caster, Id, TargetLocation)
       {
         Active = true,
         PortalUnitTypeId = PortalUnitTypeId,
@@ -57,7 +62,7 @@ namespace MacroTools.Spells.Slipstream
     public override void OnStartCast(unit caster, unit target, Point targetPoint)
     {
       if (IsTerrainPathable(targetPoint.X, targetPoint.Y, PATHING_TYPE_WALKABILITY) 
-          || WCSharp.Shared.Util.DistanceBetweenPoints(GetUnitX(caster), GetUnitY(caster), targetPoint.X, targetPoint.Y) < 500
+          || WCSharp.Shared.Util.DistanceBetweenPoints(GetUnitX(caster), GetUnitY(caster), TargetLocation.X, TargetLocation.Y) < 500
           || InstanceSystem.GetPointInstance(caster.GetPosition()) != InstanceSystem.GetPointInstance(targetPoint)) 
         Refund(caster);
     }
