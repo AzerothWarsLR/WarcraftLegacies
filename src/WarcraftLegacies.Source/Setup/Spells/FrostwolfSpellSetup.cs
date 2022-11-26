@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       ParentChildResearchSystem.Register(Constants.UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE,
         Constants.UPGRADE_R06C_KABOOM_LEVEL_UP);
 
-      SpellSystem.Register(new SlipstreamSpellSpecificLocation(0)
+      SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A0ZJ_PORTAL_TO_NAGRAND_FROSTWOLF_THRALL)
       {
         PortalUnitTypeId = Constants.UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 5,
