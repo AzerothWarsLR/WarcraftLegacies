@@ -39,6 +39,7 @@ namespace MacroTools
           $"There is no preplaced unit with Unit Type Id {GeneralHelpers.DebugIdInteger2IdString(unitTypeId)}.");
       return GetClosestUnitToPoint(_unitsByTypeId[unitTypeId], location);
     }
+    
 
     /// <summary>
     ///   Gets a preplaced unit.
@@ -57,6 +58,19 @@ namespace MacroTools
           $"There are multiple preplaced units with Unit Type Id {GeneralHelpers.DebugIdInteger2IdString(unitTypeId)}. Use the overload that requires a position instead.");
 
       return _unitsByTypeId[unitTypeId].First();
+    }
+    
+    /// <summary>
+    ///   Gets a list of preplaced units.
+    /// </summary>
+    /// <param name="unitTypeId">The unit type id the units must have to be retrieved.</param>
+    /// <exception cref="KeyNotFoundException">Thrown if there is no preplaced units with the given unit type id.</exception>
+    public List<unit> GetUnits(int unitTypeId)
+    {
+      if (!_unitsByTypeId.ContainsKey(unitTypeId))
+        throw new KeyNotFoundException(
+          $"There is no preplaced unit with Unit Type Id {GeneralHelpers.DebugIdInteger2IdString(unitTypeId)}.");
+      return _unitsByTypeId[unitTypeId];
     }
 
     /// <summary>
