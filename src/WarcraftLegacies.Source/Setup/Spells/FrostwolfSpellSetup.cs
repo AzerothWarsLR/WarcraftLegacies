@@ -1,4 +1,5 @@
-﻿using MacroTools.ResearchSystems;
+﻿using MacroTools;
+using MacroTools.ResearchSystems;
 using MacroTools.Spells;
 using MacroTools.Spells.Slipstream;
 using MacroTools.SpellSystem;
@@ -37,7 +38,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
         PortalUnitTypeId = Constants.UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 5,
         ClosingDelay = 10,
-        TargetLocation = new Point(-3169, -29714)
+        TargetLocation = new Point(-3169, -29714),
+        Color = new Color(255, 50, 50, 255)
       });
     }
   }

@@ -84336,7 +84336,7 @@ STRING 14051
 }
 
 STRING 14052
-// Upgrades: Rhfl (Flare), Hotkey (Hotkey)
+// Abilities: A0ZJ (Portal to Nagrand), Hotkey (Hotkey - Normal)
 {
 D
 }
@@ -86939,7 +86939,7 @@ rarm
 }
 
 STRING 14486
-// Upgrades: Rehs (Hardened Skin), Hotkey (Hotkey)
+// Upgrades: Rhfl (Flare), Hotkey (Hotkey)
 {
 D
 }
@@ -87233,7 +87233,7 @@ Z
 }
 
 STRING 14535
-// Upgrades: Rusl (Skeletal Longevity), Hotkey (Hotkey)
+// Upgrades: Rehs (Hardened Skin), Hotkey (Hotkey)
 {
 D
 }
@@ -88008,7 +88008,7 @@ rarm
 }
 
 STRING 14664
-// Upgrades: R02A (Animal War Training), Hotkey (Hotkey)
+// Upgrades: Rusl (Skeletal Longevity), Hotkey (Hotkey)
 {
 D
 }
@@ -88307,7 +88307,7 @@ rarm
 }
 
 STRING 14714
-// Upgrades: R026 (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R02A (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -89879,7 +89879,7 @@ Q
 }
 
 STRING 14976
-// Upgrades: R023 (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R026 (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -103299,7 +103299,7 @@ A
 }
 
 STRING 17221
-// Upgrades: R01H (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R023 (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -109685,7 +109685,7 @@ Q
 }
 
 STRING 18284
-// Upgrades: R00Q (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R01H (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -110796,7 +110796,7 @@ E
 }
 
 STRING 18469
-// Upgrades: R00K (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R00Q (Magic Sentry), Hotkey (Hotkey)
 {
 D
 }
@@ -115332,7 +115332,7 @@ Build Shipyard
 }
 
 STRING 19225
-// Upgrades: R034 (Improved Bows), Hotkey (Hotkey)
+// Upgrades: R00K (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -116363,7 +116363,7 @@ Dragonmaw Battle Standard
 }
 
 STRING 19397
-// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R034 (Improved Bows), Hotkey (Hotkey)
 {
 D
 }
@@ -116543,13 +116543,13 @@ Vitality Aura
 }
 
 STRING 19427
-// Abilities: A0ZJ (Portal to Nagrand), Hotkey (Hotkey - Normal)
+// Abilities: A0ZJ (Portal to Nagrand), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 19428
-// Abilities: A0ZJ (Portal to Nagrand), Researchhotkey (Hotkey - Learn)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
@@ -116783,13 +116783,13 @@ R
 }
 
 STRING 19467
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
 {
 R
 }
 
 STRING 19468
-// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
 {
 R
 }
@@ -116891,12 +116891,6 @@ Opens a two-way portal to the target location within a range of <A00D,Rng3>. The
 }
 
 STRING 19485
-// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
-{
-R
-}
-
-STRING 19486
 // Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
 {
 R
@@ -116906,5 +116900,11 @@ STRING 19487
 // Upgrades: R096 (Chaos), Name (Name)
 {
 Quest Completed: Jailor of the Damned
+}
+
+STRING 19488
+// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+D
 }
 

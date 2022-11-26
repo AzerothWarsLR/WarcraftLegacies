@@ -33,6 +33,11 @@ namespace MacroTools.Spells.Slipstream
     public Point TargetLocation { get; init; } = new(0, 0);
 
     /// <summary>
+    /// The color of the created portals.
+    /// </summary>
+    public Color Color { get; init; } = new(255, 255, 255, 255);
+    
+    /// <summary>
     /// Initializes a new instance of the <see cref="SlipstreamSpell"/> class.
     /// </summary>
     /// <param name="id"><inheritdoc /></param>
@@ -48,7 +53,8 @@ namespace MacroTools.Spells.Slipstream
         Active = true,
         PortalUnitTypeId = PortalUnitTypeId,
         OpeningDelay = OpeningDelay,
-        ClosingDelay = ClosingDelay
+        ClosingDelay = ClosingDelay,
+        Color = Color
       });
     }
 
