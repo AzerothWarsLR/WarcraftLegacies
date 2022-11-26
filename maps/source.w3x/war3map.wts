@@ -116668,12 +116668,6 @@ STRING 19447
 E
 }
 
-STRING 19448
-// Abilities: A0ZJ (Portal to Nagrand), EditorSuffix (Editor Suffix)
-{
-(Frostwolf - Thrall)
-}
-
 STRING 19449
 // Units: O06F (Blood Warrior), Ubertip (Tooltip - Extended)
 {
@@ -116837,7 +116831,7 @@ Quest Completed: The Eye of Sargeras
 }
 
 STRING 19476
-// Abilities: A0ZJ (Portal to Nagrand), Name (Name)
+// Items: I017 (Portal to Nagrand), Name (Name)
 {
 Portal to Nagrand
 }
@@ -116855,7 +116849,7 @@ Opens a two-way portal to the target location. The portal becomes useable after 
 }
 
 STRING 19479
-// Abilities: A0ZJ (Portal to Nagrand), Tip (Tooltip - Normal)
+// Abilities: A0ZJ (Portal to Nagrand), Name (Name)
 {
 Portal to Nagrand
 }
@@ -116873,7 +116867,7 @@ Slipstream - [|cffffcc00Level 3|r]
 }
 
 STRING 19482
-// Abilities: A0ZJ (Portal to Nagrand), Ubertip (Tooltip - Normal - Extended)
+// Items: I017 (Portal to Nagrand), Ubertip (Tooltip - Extended)
 {
 Opens a two-way portal to Nagrand at the target location within a range of <A00D,Rng1>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.
 }
@@ -116896,15 +116890,39 @@ STRING 19485
 R
 }
 
-STRING 19487
-// Upgrades: R096 (Chaos), Name (Name)
+STRING 19486
+// Items: I017 (Portal to Nagrand), Description (Description)
 {
-Quest Completed: Jailor of the Damned
+Transports troops to Nagrand.
 }
 
 STRING 19488
 // Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 D
+}
+
+STRING 19489
+// Items: I017 (Portal to Nagrand), Tip (Tooltip - Basic)
+{
+Purchase Portal to Nagrand
+}
+
+STRING 19490
+// Abilities: A0ZJ (Portal to Nagrand), EditorSuffix (Editor Suffix)
+{
+(Item)
+}
+
+STRING 19491
+// Abilities: A0ZJ (Portal to Nagrand), Tip (Tooltip - Normal)
+{
+Portal to Nagrand
+}
+
+STRING 19492
+// Abilities: A0ZJ (Portal to Nagrand), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a two-way portal to Nagrand at the target location within a range of <A00D,Rng1>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.
 }
 

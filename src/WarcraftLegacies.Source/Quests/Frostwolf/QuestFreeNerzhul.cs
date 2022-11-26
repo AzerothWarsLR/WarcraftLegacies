@@ -3,6 +3,7 @@ using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Frostwolf
 {
@@ -19,7 +20,6 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       "ReplaceableTextures\\CommandButtons\\BTNShaman.blp")
     {
       AddObjective(new ObjectiveKillUnit(LegendScourge.LegendLichking.Unit));
-      ResearchId = Constants.UPGRADE_R096_QUEST_COMPLETED_JAILOR_OF_THE_DAMNED;
     }
     
     /// <inheritdoc/>
@@ -27,13 +27,13 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       "Ner'zhul is finally free from his tortured existence as the bearer of the Helm of Domination. With his dying breath, he shares with Thrall the latent energies of the Spell of Conjuration that once shattered the Orc homeworld of Draenor.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Thrall gains 10 Strength, 10 Dexterity, 10 Intelligence and the ability to channel a portal to Nagrand in Outland";
+    protected override string RewardDescription => "Thrall gains 10 Strength, 10 Dexterity, 10 Intelligence, and an item that can channel a one-time portal to Nagrand in Outland";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      if (LegendFrostwolf.LegendThrall?.Unit != null)
-        LegendFrostwolf.LegendThrall.Unit.AddHeroAttributes(10, 10, 10);
+      LegendFrostwolf.LegendThrall?.Unit?.AddHeroAttributes(10, 10, 10);
+      LegendFrostwolf.LegendThrall?.Unit?.AddItemSafe(CreateItem(Constants.ITEM_I017_PORTAL_TO_NAGRAND, 0, 0));
     }
   }
 }
