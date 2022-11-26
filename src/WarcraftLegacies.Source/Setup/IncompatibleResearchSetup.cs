@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Setup
       IncompatibleResearchSystem.Register(Constants.UPGRADE_R030_CODE_OF_CHIVALRY_ARATHOR_T3,
         Constants.UPGRADE_R031_EXPEDITION_SURVIVORS_ARATHOR_T3);
 
-      IncompatibleResearchSystem.Register(Constants.UPGRADE_R03X_HIGH_SORCERER_ANDROMATH_AID_ARATHOR_T3,
+      IncompatibleResearchSystem.Register(Constants.UPGRADE_R03X_CONJURERS_ARATHOR_T3,
         Constants.UPGRADE_R03Y_KATRANA_PRESTOR_AID_ARATHOR_T3);
 
       IncompatibleResearchSystem.Register(Constants.UPGRADE_R062_PATH_OF_REDEMPTION_NAGA,

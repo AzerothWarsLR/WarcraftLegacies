@@ -391,5 +391,6 @@ public static class Regions
 	public static Rectangle Outland_Ships { get; set; } = new Rectangle(-7104f, -32256f, 6016f, -18208f);
 	public static Rectangle IllidanStartingPosition { get; set; } = new Rectangle(-22496f, -14272f, -21472f, -13152f);
 	public static Rectangle SkullOfGuldan { get; set; } = new Rectangle(-13632f, 22144f, -13344f, 22432f);
+	public static Rectangle ArtifactDummyInstance { get; set; } = new Rectangle(19584f, 23232f, 22688f, 24800f);
 
 }

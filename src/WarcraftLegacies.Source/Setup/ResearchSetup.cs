@@ -18,8 +18,6 @@ namespace WarcraftLegacies.Source.Setup
       TierElectricStrikeRitual.Setup();
       TierExpeditionSurvivors.Setup();
       TierExploitWeakness.Setup();
-      TierHighSorcererAndromath.Setup();
-      TierKatranaPrestor.Setup();
       TierKnowledgeOfHonorHold.Setup(preplacedUnitSystem);
       TierMagesOfStromgarde.Setup(preplacedUnitSystem);
       TierReflectivePlating.Setup();

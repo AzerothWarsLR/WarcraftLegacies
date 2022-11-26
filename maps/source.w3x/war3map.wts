@@ -7759,7 +7759,7 @@ Summon Othmar Garithos
 }
 
 STRING 1294
-// Abilities: A00D (Slipstream), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0ZJ (Portal to Nagrand), Ubertip (Tooltip - Normal - Extended)
 {
 Opens a two-way portal to the target location within a range of <A00D,Rng2>. The portal becomes useable after 5 seconds, and closes 20 seconds after the caster stops channeling.
 }
@@ -13246,10 +13246,28 @@ STRING 2208
 Gateway attuned to the Felguards of the Burning Crusade, summoning 2 every 85 seconds. |n|n|cfff5962dAbilities:|R Charge, Cleaving Attack, Critical Strike|n|cff99b4d1Can only build 1 gate. |r
 }
 
+STRING 2209
+// Items: I017 (Portal to Nagrand), Ubertip (Tooltip - Extended)
+{
+Opens a two-way portal to Nagrand at the target location within a range of <A0ZJ,Rng1>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.
+}
+
 STRING 2210
 // Units: U00M (Master of the Cult of the Damned), Hotkey (Hotkey)
 {
 S
+}
+
+STRING 2211
+// Abilities: A00D (Slipstream), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a two-way portal to the target location within a range of <A00D,Rng2>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.
+}
+
+STRING 2212
+// Abilities: A00D (Slipstream), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a two-way portal to the target location within a range of <A00D,Rng3>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.
 }
 
 STRING 2214
@@ -15714,7 +15732,7 @@ Booty Bay (10gold/min)
 }
 
 STRING 2624
-// Abilities: A00D (Slipstream), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0ZJ (Portal to Nagrand), Ubertip (Tooltip - Normal - Extended)
 {
 Opens a two-way portal to the target location within a range of <A00D,Rng3>. The portal becomes useable after 5 seconds, and closes 30 seconds after the caster stops channeling.
 }
@@ -116507,21 +116525,9 @@ Slipstream - [|cffffcc00Level 3|r]
 }
 
 STRING 19482
-// Items: I017 (Portal to Nagrand), Ubertip (Tooltip - Extended)
+// Abilities: A0ZJ (Portal to Nagrand), Ubertip (Tooltip - Normal - Extended)
 {
 Opens a two-way portal to Nagrand at the target location within a range of <A00D,Rng1>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.
-}
-
-STRING 19483
-// Abilities: A0ZJ (Portal to Nagrand), Ubertip (Tooltip - Normal - Extended)
-{
-Opens a two-way portal to the target location within a range of <A00D,Rng2>. The portal becomes useable after 5 seconds, and closes 20 seconds after the caster stops channeling.
-}
-
-STRING 19484
-// Abilities: A0ZJ (Portal to Nagrand), Ubertip (Tooltip - Normal - Extended)
-{
-Opens a two-way portal to the target location within a range of <A00D,Rng3>. The portal becomes useable after 5 seconds, and closes 30 seconds after the caster stops channeling.
 }
 
 STRING 19485
@@ -116558,12 +116564,6 @@ STRING 19491
 // Abilities: A0ZJ (Portal to Nagrand), Tip (Tooltip - Normal)
 {
 Portal to Nagrand
-}
-
-STRING 19492
-// Abilities: A0ZJ (Portal to Nagrand), Ubertip (Tooltip - Normal - Extended)
-{
-Opens a two-way portal to Nagrand at the target location within a range of <A00D,Rng1>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.
 }
 
 STRING 19493
