@@ -24,7 +24,7 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
-    /// Prepares neutral passive units within the specified <paramref name="rectangle"/> according to
+    /// Prepares units belonging to <paramref name="owningPlayer"/> within the specified <paramref name="rectangle"/> according to
     /// the provided <see cref="RescuePreparationMode"/>.
     /// </summary>
     /// <param name="rectangle">The rectangle in which to prepare units.</param>
@@ -32,16 +32,18 @@ namespace MacroTools.Extensions
     /// <param name="filter">A function that is applied to each unit found in <paramref name="rectangle"/>.
     /// The unit gets rescued if and only if <paramref name="filter"/> returns true.
     /// </param>
-    /// <returns>Returns all neutral passive units not matching the <paramref name="filter"/> in the specified rectangle.</returns>
-    public static List<unit> PrepareUnitsForRescue(this Rectangle rectangle, RescuePreparationMode rescuePreparationMode, Func<unit, bool>? filter = null)
+    /// <param name="owningPlayer">Player the units inside the specified rectangle belong to. The default value is neutral passive.</param>
+    /// <returns>Returns all units belonging to <paramref name="owningPlayer"/> and not matching the <paramref name="filter"/> in the specified rectangle.</returns>
+    public static List<unit> PrepareUnitsForRescue(this Rectangle rectangle, RescuePreparationMode rescuePreparationMode, Func<unit, bool>? filter = null, player? owningPlayer = null)
     {
       filter ??= _ => true;
+      owningPlayer ??= Player(PLAYER_NEUTRAL_PASSIVE);
       return rescuePreparationMode switch
       {
-        RescuePreparationMode.None => PrepareUnitsForRescue(rectangle, false, false, false, filter),
-        RescuePreparationMode.Invulnerable => PrepareUnitsForRescue(rectangle, true, false, false, filter),
-        RescuePreparationMode.HideNonStructures => PrepareUnitsForRescue(rectangle, true, true, false, filter),
-        RescuePreparationMode.HideAll => PrepareUnitsForRescue(rectangle, true, true, true, filter),
+        RescuePreparationMode.None => PrepareUnitsForRescue(rectangle, false, false, false, filter, owningPlayer),
+        RescuePreparationMode.Invulnerable => PrepareUnitsForRescue(rectangle, true, false, false, filter, owningPlayer),
+        RescuePreparationMode.HideNonStructures => PrepareUnitsForRescue(rectangle, true, true, false, filter, owningPlayer),
+        RescuePreparationMode.HideAll => PrepareUnitsForRescue(rectangle, true, true, true, filter, owningPlayer),
         _ => throw new ArgumentException($"{nameof(rescuePreparationMode)} is not implemented for this function.",
           nameof(rescuePreparationMode))
       };
@@ -56,12 +58,12 @@ namespace MacroTools.Extensions
     /// <param name="hideStructures">If true, prepared structures are hidden.</param>
     /// <param name="filter"></param>
     /// <returns>Returns all neutral passive units not matching the <paramref name="filter"/> in the specified rectangle.</returns>
-    private static List<unit> PrepareUnitsForRescue(this Rectangle rectangle, bool makeInvulnerable, bool hideUnits, bool hideStructures, Func<unit, bool> filter)
+    private static List<unit> PrepareUnitsForRescue(this Rectangle rectangle, bool makeInvulnerable, bool hideUnits, bool hideStructures, Func<unit, bool> filter, player owningPlayer)
     {
       var group = new GroupWrapper()
         .EnumUnitsInRect(rectangle)
         .EmptyToList()
-        .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE) && filter.Invoke(x))
+        .Where(x => x.OwningPlayer() == owningPlayer && filter.Invoke(x))
         .ToList();
       foreach (var unit in group)
       {

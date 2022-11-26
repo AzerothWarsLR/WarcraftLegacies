@@ -1,30 +1,36 @@
-using MacroTools.FactionSystem;
-using MacroTools.QuestSystem;
+﻿using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Zandalar
 {
+
+  /// <summary>
+  /// Train 5 Golden Vessels to unlock a hero and a unit
+  /// </summary>
   public sealed class QuestGoldenFleet : QuestData
   {
-    private static readonly int QuestResearchId = FourCC("R06W"); //This research is given when the quest is completed
 
-    protected override string CompletionPopup => "Rastakhan is now trainable and Direhorn are available.";
-
-    protected override string RewardDescription =>
-      "Rastakhan is trainable at the altar and Direhorns are trainable";
-
-    protected override void OnAdd(Faction whichFaction)
-    {
-      whichFaction.ModObjectLimit(QuestResearchId, 1);
-    }
-
+    /// <summary>
+    /// Initializes a new instance of the <see cref="QuestConquerKul"/> class
+    /// </summary>
     public QuestGoldenFleet() : base("The Golden Fleet",
       "The King has ordered for the greatest armada in the world. The construction of the Golden Fleet has begun!",
       "ReplaceableTextures\\CommandButtons\\BTNTrollConjurer.blp")
     {
-      AddObjective(new ObjectiveTrain(FourCC("o04W"), FourCC("o049"), 5));
-      ResearchId = QuestResearchId;
+      AddObjective(new ObjectiveTrain(Constants.UNIT_O04W_GOLDEN_VESSEL_ZANDALAR, Constants.UNIT_O049_GOLDEN_DOCK_ZANDALAR, 5));
+      ResearchId = Constants.UPGRADE_R06W_QUEST_COMPLETED_THE_GOLDEN_FLEET;
+      Required = true;
+      
     }
+    /// <summary>
+    /// <inheritdoc/>
+    /// </summary>
+    protected override string CompletionPopup => "Rastakhan is now trainable and Direhorn are available.";
+
+    /// <summary>
+    /// <inheritdoc/>
+    /// </summary>
+    protected override string RewardDescription => "Rastakhan is trainable at the altar and Direhorns are trainable";
+
   }
 }
