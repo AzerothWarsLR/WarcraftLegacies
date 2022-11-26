@@ -561,5 +561,23 @@ namespace MacroTools.Extensions
     /// Returns true if the unit is alive.
     /// </summary>
     public static bool IsAlive(this unit whichUnit) => UnitAlive(whichUnit);
+
+    /// <summary>
+    /// Changes a unit's attack type.
+    /// </summary>
+    public static unit SetAttackType(this unit whichUnit, int attackType)
+    {
+      BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0, attackType);
+      return whichUnit;
+    }
+
+    /// <summary>
+    /// Changes a unit's armor type.
+    /// </summary>
+    public static unit SetArmorType(this unit whichUnit, int armorType)
+    {
+      BlzSetUnitIntegerField(whichUnit, UNIT_IF_DEFENSE_TYPE, armorType);
+      return whichUnit;
+    }
   }
 }

@@ -25,7 +25,7 @@ namespace MacroTools.Powers
     {
       _chance = chance;
       Description =
-        $"Units you train have a {chance * 100}% to become demiheroes, increasing their hit points, mana, and damage by 25%, and granting them the ability to use items.";
+        $"Units you train have a {chance * 100}% to become demiheroes, increasing their hit points, mana, and damage by 25%, changing their attack and armor types to Hero, and granting them the ability to use items.";
     }
     
     /// <inheritdoc />
@@ -49,7 +49,9 @@ namespace MacroTools.Powers
         .MultiplyMaxHitpoints(1.25f)
         .MultiplyMaxMana(1.25f)
         .AddAbility(HeroGlowAbilityTypeId)
-        .AddAbility(FourCC("AInv"));
+        .AddAbility(FourCC("AInv"))
+        .SetAttackType(6)
+        .SetArmorType(5);
     }
 
     private void OnTrainUnit()
