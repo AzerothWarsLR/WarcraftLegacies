@@ -1,6 +1,8 @@
 ﻿using MacroTools.ResearchSystems;
 using MacroTools.Spells;
+using MacroTools.Spells.Slipstream;
 using MacroTools.SpellSystem;
+using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -29,6 +31,14 @@ namespace WarcraftLegacies.Source.Setup.Spells
       
       ParentChildResearchSystem.Register(Constants.UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE,
         Constants.UPGRADE_R06C_KABOOM_LEVEL_UP);
+
+      SpellSystem.Register(new SlipstreamSpellSpecificLocation(0)
+      {
+        PortalUnitTypeId = Constants.UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
+        OpeningDelay = 5,
+        ClosingDelay = 10,
+        TargetLocation = new Point(-3169, -29714)
+      });
     }
   }
 }
