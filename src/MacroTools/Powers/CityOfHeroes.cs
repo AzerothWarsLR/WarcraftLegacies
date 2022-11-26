@@ -58,7 +58,7 @@ namespace MacroTools.Powers
 
     private void OnTrainUnit()
     {
-      if (!(_chance > GetRandomReal(0, 1))) return;
+      if (_chance < GetRandomReal(0, 1)) return;
       Heroize(GetTrainedUnit());
     }
   }
