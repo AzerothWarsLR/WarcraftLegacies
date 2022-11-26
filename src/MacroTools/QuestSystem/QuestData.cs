@@ -139,11 +139,9 @@ namespace MacroTools.QuestSystem
       QuestSetFailed(Quest, true);
       QuestSetDiscovered(Quest, true);
       DisplayFailed(whichFaction);
-      OnFail(whichFaction);
-      foreach (var objective in _objectives)
-      {
+      foreach (var objective in _objectives) 
         objective.ProgressLocked = true;
-      }
+      OnFail(whichFaction);
     }
 
     /// <summary>
