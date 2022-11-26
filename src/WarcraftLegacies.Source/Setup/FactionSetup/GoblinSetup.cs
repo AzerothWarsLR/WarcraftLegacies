@@ -42,21 +42,21 @@ Use your resources to raise an army strong enough to take land elsewhere."
       Goblin.ModObjectLimit(Constants.UNIT_O06G_OIL_RIG_CONSTRUCTOR_GOBLIN, 12);
       Goblin.ModObjectLimit(FourCC("h011"), 1); //Artillery
 
-      Goblin.ModObjectLimit(FourCC("o02I"), Faction.UNLIMITED); //Peon
-      Goblin.ModObjectLimit(FourCC("n099"), Faction.UNLIMITED); //Ogre
-      Goblin.ModObjectLimit(FourCC("h08X"), 8); //sapper
-      Goblin.ModObjectLimit(FourCC("h08Y"), Faction.UNLIMITED); //Gunner
-      Goblin.ModObjectLimit(FourCC("odoc"), Faction.UNLIMITED); //GOBLIN Witch Doctor
-      Goblin.ModObjectLimit(FourCC("o04P"), Faction.UNLIMITED); //Mage
-      Goblin.ModObjectLimit(FourCC("o04O"), Faction.UNLIMITED); //Alch
-      Goblin.ModObjectLimit(FourCC("o04Q"), 6); //Tinker
-      Goblin.ModObjectLimit(FourCC("odes"), 12); //Orc Frigate
-      Goblin.ModObjectLimit(FourCC("ojgn"), 6); //Juggernaught
-      Goblin.ModObjectLimit(FourCC("n062"), 12); //Shredder
-      Goblin.ModObjectLimit(FourCC("h08Z"), 5); //Tank
-      Goblin.ModObjectLimit(FourCC("h091"), 6); //Zep
-      Goblin.ModObjectLimit(FourCC("nzep"), 16); //Trading Zeppelin
-      Goblin.ModObjectLimit(FourCC("o04S"), 10); //Trader
+      Goblin.ModObjectLimit(Constants.UNIT_O02I_BUILDER_GOBLIN_WORKER, Faction.UNLIMITED);
+      Goblin.ModObjectLimit(Constants.UNIT_N099_OGRE_MERCENARY_GOBLIN, Faction.UNLIMITED);
+      Goblin.ModObjectLimit(Constants.UNIT_H08X_SAPPERS_GOBLIN, 8);
+      Goblin.ModObjectLimit(Constants.UNIT_H08Y_GUNNER_GOBLIN, Faction.UNLIMITED);
+      Goblin.ModObjectLimit(Constants.UNIT_ODOC_WITCH_DOCTOR_FROSTWOLF, Faction.UNLIMITED);
+      Goblin.ModObjectLimit(Constants.UNIT_O04P_WIZARD_GOBLIN, Faction.UNLIMITED);
+      Goblin.ModObjectLimit(Constants.UNIT_O04O_ALCHEMIST_GOBLIN, Faction.UNLIMITED);
+      Goblin.ModObjectLimit(Constants.UNIT_O04Q_TINKER_GOBLIN, 6);
+      Goblin.ModObjectLimit(Constants.UNIT_ODES_FRIGATE_WARSONG_FROSTWOLF_FEL_HORDE, 12);
+      Goblin.ModObjectLimit(Constants.UNIT_OJGN_JUGGERNAUT_WARSONG_FROSTWOLF_FEL_HORDE, 6);
+      Goblin.ModObjectLimit(Constants.UNIT_N062_SHREDDER_GOBLIN, 12);
+      Goblin.ModObjectLimit(Constants.UNIT_H08Z_ASSAULT_TANK_GOBLIN, 5);
+      Goblin.ModObjectLimit(Constants.UNIT_H091_WAR_ZEPPELIN_GOBLIN, 6);
+      Goblin.ModObjectLimit(Constants.UNIT_NZEP_TRADING_ZEPPELIN_WARSONG, 16);
+      Goblin.ModObjectLimit(Constants.UNIT_O04S_TRADER_GOBLIN, 10);
 
       Goblin.ModObjectLimit(Constants.UNIT_O04N_TRADE_PRINCE_OF_THE_BILGEWATER_CARTEL_GOBLIN, 1);
       Goblin.ModObjectLimit(Constants.UNIT_NTIN_CHIEF_ENGINEER_GOBLIN, 1);
