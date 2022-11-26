@@ -93,7 +93,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
         if (!completingFaction.GetQuestByTitle("Warn Halaar").ProgressLocked) completingFaction.GetQuestByTitle("Warn Halaar").Progress = QuestProgress.Failed;
         if (!completingFaction.GetQuestByTitle("Warn Shattrah").ProgressLocked) completingFaction.GetQuestByTitle("Warn Shattrah").Progress = QuestProgress.Failed;
         if (!completingFaction.GetQuestByTitle("Warn Farahlon").ProgressLocked) completingFaction.GetQuestByTitle("Warn Farahlon").Progress = QuestProgress.Failed;
-        RemoveUnit(TheExodar);
+        TheExodar.Kill();
       }
 
       if (GetLocalPlayer() == completingFaction.Player) 

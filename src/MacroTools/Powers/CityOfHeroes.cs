@@ -11,6 +11,7 @@ namespace MacroTools.Powers
   public sealed class CityOfHeroes : Power
   {
     private readonly float _chance;
+    private readonly float _statMultiplier;
 
     /// <summary>
     /// An ability ID that bestows a hero glow.
@@ -21,11 +22,13 @@ namespace MacroTools.Powers
     /// Initializes a new instance of the <see cref="CityOfHeroes"/> class.
     /// </summary>
     /// <param name="chance">The chance that trained units have to become demiheroes.</param>
-    public CityOfHeroes(float chance)
+    /// <param name="statMultiplier">The chance that trained units have to become demiheroes.</param>
+    public CityOfHeroes(float chance, float statMultiplier)
     {
       _chance = chance;
+      _statMultiplier = statMultiplier;
       Description =
-        $"Units you train have a {chance * 100}% to become demiheroes, increasing their hit points, mana, and damage by 25%, changing their attack and armor types to Hero, and granting them the ability to use items.";
+        $"Units you train have a {chance * 100}% to become demiheroes, increasing their hit points, mana, and damage by {(1-statMultiplier)*100}%, changing their attack and armor types to Hero, and granting them the ability to use items.";
     }
     
     /// <inheritdoc />
@@ -44,10 +47,10 @@ namespace MacroTools.Powers
       AddSpecialEffect(@"Abilities\Spells\Other\Levelup\Levelupcaster.mdx", GetUnitX(whichUnit), GetUnitY(whichUnit))
         .SetLifespan(1);
       whichUnit
-        .MultiplyBaseDamage(1.25f, 0)
-        .MultiplyBaseDamage(1.50f, 1)
-        .MultiplyMaxHitpoints(1.25f)
-        .MultiplyMaxMana(1.25f)
+        .MultiplyBaseDamage(_statMultiplier, 0)
+        .MultiplyBaseDamage(_statMultiplier, 1)
+        .MultiplyMaxHitpoints(_statMultiplier)
+        .MultiplyMaxMana(_statMultiplier)
         .AddAbility(HeroGlowAbilityTypeId)
         .AddAbility(FourCC("AInv"))
         .SetAttackType(6)

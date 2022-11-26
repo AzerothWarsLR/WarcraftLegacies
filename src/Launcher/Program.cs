@@ -33,11 +33,8 @@ namespace Launcher
       var launchMode = Enum.Parse<LaunchMode>(args[0]);
       var baseMapPath = args[1];
       var sourceCodeProjectFolderPath = args[2];
-      
-      IConfiguration config = new ConfigurationBuilder()
-        .AddJsonFile("appsettings.json")
-        .Build();
-      
+      var config = GetAppConfiguration();
+
       switch (launchMode)
       {
         case LaunchMode.GenerateConstants:
@@ -57,13 +54,40 @@ namespace Launcher
       }
     }
 
+    private static IConfiguration GetAppConfiguration()
+    {
+      var userAppsettingsFileName = $"appsettings.{Environment.UserName}.json";
+      var projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent;
+      var projectDirPath = Path.GetDirectoryName(projectDir.FullName);
+      var userAppsettingsFilePath = $"{projectDirPath}\\{userAppsettingsFileName}";
+
+      if (!File.Exists(userAppsettingsFilePath))
+      {
+        CreateUserAppsettings(userAppsettingsFilePath);
+      }
+
+      return new ConfigurationBuilder()
+        .AddJsonFile("appsettings.json", true, true)
+        .AddJsonFile(userAppsettingsFilePath, false, true)
+        .Build();
+    }
+
+    private static void CreateUserAppsettings(string userAppsettingsFilePath)
+    {
+      File.WriteAllText(userAppsettingsFilePath,
+                "{\n" +
+                "  \"LaunchSettings\": {\n" +
+                "  }\n" +
+                "}");
+    }
+
     /// <summary>
     ///   Builds the Warcraft 3 map.
     /// </summary>
     private static void Build(string baseMapPath, string projectFolderPath, bool launch, IConfiguration config)
     {
       var launchSettings = config.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
-      
+
       // Ensure these folders exist
       Directory.CreateDirectory(launchSettings.AssetsFolderPath);
       Directory.CreateDirectory(launchSettings.OutputFolderPath);
@@ -118,7 +142,7 @@ namespace Launcher
       };
 
       builder.Build(Path.Combine(launchSettings.OutputFolderPath, launchSettings.OutputMapName), archiveCreateOptions);
-      if (launch) 
+      if (launch)
         LaunchGame(launchSettings);
     }
 

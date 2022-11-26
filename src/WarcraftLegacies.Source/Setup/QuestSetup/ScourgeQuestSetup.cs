@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 
       QuestPlague questPlague = new(ForsakenSetup.Forsaken,
         preplacedUnitSystem.GetUnit(Constants.UNIT_N0AG_LORD_BAROV),
-        new GroupWrapper().EnumUnitsOfType(Constants.UNIT_U01U_CULTIST_OF_THE_DAMNED_FORSAKEN_CULT).EmptyToList(),
+        preplacedUnitSystem.GetUnits(Constants.UNIT_U01U_CULTIST_OF_THE_DAMNED_FORSAKEN_CULT),
         plagueParameters
       );
 
