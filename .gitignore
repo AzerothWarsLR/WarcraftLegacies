@@ -341,3 +341,6 @@ healthchecksdb
 
 # Project specific
 /artifacts
+
+# User specific appsettings
+appsettings.*.json
