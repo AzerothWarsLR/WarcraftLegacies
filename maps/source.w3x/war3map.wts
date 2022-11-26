@@ -22480,12 +22480,6 @@ STRING 3762
 Revive Witch Doctor
 }
 
-STRING 3763
-// Units: O038 (Worgen Blood Shaman), Awakentip (Tooltip - Awaken)
-{
-Revive Zuluhed
-}
-
 STRING 3764
 // Units: O027 (Chieftan of the Dragonmaw Clan), EditorSuffix (Name - Editor Suffix)
 {
@@ -22508,24 +22502,6 @@ STRING 3767
 // Units: O027 (Chieftan of the Dragonmaw Clan), Propernames (Proper Names)
 {
 Zuluhed The Whacked
-}
-
-STRING 3768
-// Units: O038 (Worgen Blood Shaman), Revivetip (Tooltip - Revive)
-{
-Revive Zuluhed
-}
-
-STRING 3769
-// Units: O038 (Worgen Blood Shaman), Tip (Tooltip - Basic)
-{
-Revive |cffffcc00Z|ruluhed the Whacked
-}
-
-STRING 3770
-// Units: O038 (Worgen Blood Shaman), Ubertip (Tooltip - Extended)
-{
-Powerful Shaman of the Old Horde, can cast chain heal, Bloodlust totem, and Summon Nether Dragons. |n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 3771
@@ -116308,12 +116284,6 @@ STRING 19441
 When this hero attacks, 125% of the damage will be gained as mana
 }
 
-STRING 19499
-// Units: h06T (Altar of Kings), Ubertip (Tooltip - Extended)
-{
-Summons Heroes and revives slain Heroes.
-}
-
 STRING 19442
 // Abilities: A0ZG (Blood Absorption), Name (Name)
 {
@@ -116630,5 +116600,11 @@ STRING 19498
 // Abilities: A02Y (War Plating), EditorSuffix (Editor Suffix)
 {
 (Stormwind - Knights, Lordaeron - Knights)
+}
+
+STRING 19499
+// Units: h06T (Altar of Kings), Ubertip (Tooltip - Extended)
+{
+Summons Heroes and revives slain Heroes.
 }
 
