@@ -24,10 +24,10 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     
     /// <inheritdoc/>
     protected override string CompletionPopup =>
-      "Ner'zhul is finally free from his tortured existence as the bearer of the Helm of Domination. With his dying breath, he passes his wisdom on to Thrall.";
+      "Ner'zhul is finally free from his tortured existence as the bearer of the Helm of Domination. With his dying breath, he shares with Thrall the latent energies of the Spell of Conjuration that once shattered the Orc homeworld of Draenor.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Thrall gains 10 Strength, 10 Agility and 10 Intelligence";
+    protected override string RewardDescription => "Thrall gains 10 Strength, 10 Dexterity, 10 Intelligence and the ability to channel a portal to Nagrand in Outland";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

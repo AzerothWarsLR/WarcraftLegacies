@@ -27,13 +27,13 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "Thrall gains 2000 experience and 10 Intelligence, and you gain the power Maelstrom Spirit";
+      "Thrall gains 2000 experience and 10 Agility, and you gain the power Maelstrom Spirit";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
       LegendFrostwolf.LegendThrall?.Unit?.SetName("World-Shaman")
-        .AddHeroAttributes(0, 0, 10)
+        .AddHeroAttributes(0, 10, 0)
         .AddExperience(2000);
       completingFaction.AddPower(new MaelstromWeapon(0.35f, 50)
       {
