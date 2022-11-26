@@ -28,6 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
+      Required = true;
     }
 
     //Todo: bad flavour

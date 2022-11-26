@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
 {
   public sealed class QuestDarkshire : QuestData
   {
-    public QuestDarkshire(unit gnollToKill) : base("Gnoll troubles",
+    public QuestDarkshire(unit gnollToKill) : base("Gnoll Troubles",
       "The town of Darkshire is under attack by Gnoll's, clear them out!",
       "ReplaceableTextures\\CommandButtons\\BTNGnollArcher.blp")
     {
@@ -17,6 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00V"))));
       AddObjective(new ObjectiveExpire(1425));
       AddObjective(new ObjectiveSelfExists());
+      Required = true;
     }
 
     protected override string CompletionPopup =>
