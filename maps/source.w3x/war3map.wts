@@ -16680,7 +16680,7 @@ X
 }
 
 STRING 2781
-// Units: h06T (Altar of Kings), Ubertip (Tooltip - Extended)
+// Units: h044 (Altar of Knowledge), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heroes.
 }
@@ -18514,7 +18514,7 @@ Build Altar of Knowledge
 }
 
 STRING 3086
-// Units: h044 (Altar of Knowledge), Ubertip (Tooltip - Extended)
+// Units: h02X (Altar of Kings), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heroes.
 }
@@ -19534,7 +19534,7 @@ X
 }
 
 STRING 3256
-// Units: h02X (Altar of Kings), Ubertip (Tooltip - Extended)
+// Units: h01H (Altar of Prowess), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heroes.
 }
@@ -20590,7 +20590,7 @@ Build Altar of Prowess
 }
 
 STRING 3432
-// Units: h01H (Altar of Prowess), Ubertip (Tooltip - Extended)
+// Units: e00R (Altar of Watchers), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heroes.
 }
@@ -21833,7 +21833,7 @@ Build Altar of Watchers
 }
 
 STRING 3639
-// Units: e00R (Altar of Watchers), Ubertip (Tooltip - Extended)
+// Units: h07M (Altar of Admirals), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heroes.
 }
@@ -95863,7 +95863,7 @@ STRING 15980
 }
 
 STRING 15981
-// Units: h07M (Altar of Admirals), Ubertip (Tooltip - Extended)
+// Units: h080 (Altar of Harvest), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heroes.
 }
@@ -96167,7 +96167,7 @@ STRING 16031
 }
 
 STRING 16032
-// Units: h080 (Altar of Harvest), Ubertip (Tooltip - Extended)
+// Units: e01S (Altar of the Depth), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heroes.
 }
@@ -116182,12 +116182,6 @@ STRING 19366
 Build Altar of the Depth
 }
 
-STRING 19367
-// Units: e01S (Altar of the Depth), Ubertip (Tooltip - Extended)
-{
-Revives slain Heroes and Demi-heroes.
-}
-
 STRING 19368
 // Units: e01S (Altar of the Depth), Name (Name)
 {
@@ -116630,6 +116624,12 @@ STRING 19441
 // Abilities: A0ZG (Blood Absorption), Ubertip (Tooltip - Normal - Extended)
 {
 When this hero attacks, 125% of the damage will be gained as mana
+}
+
+STRING 19499
+// Units: h06T (Altar of Kings), Ubertip (Tooltip - Extended)
+{
+Summons Heroes and revives slain Heroes.
 }
 
 STRING 19442
