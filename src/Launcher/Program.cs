@@ -3,6 +3,8 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using CSharpLua;
 using Microsoft.CodeAnalysis;
 using Microsoft.Extensions.Configuration;
@@ -61,24 +63,27 @@ namespace Launcher
       var projectDirPath = Path.GetDirectoryName(projectDir.FullName);
       var userAppsettingsFilePath = $"{projectDirPath}\\{userAppsettingsFileName}";
 
-      if (!File.Exists(userAppsettingsFilePath))
-      {
-        CreateUserAppsettings(userAppsettingsFilePath);
-      }
+      if (!File.Exists(userAppsettingsFilePath)) 
+        CreateUserAppSettings(userAppsettingsFilePath);
 
       return new ConfigurationBuilder()
-        .AddJsonFile("appsettings.json", true, true)
-        .AddJsonFile(userAppsettingsFilePath, false, true)
+        .AddJsonFile("appsettings.json", false, true)
+        .AddJsonFile(userAppsettingsFilePath, true, true)
         .Build();
     }
 
-    private static void CreateUserAppsettings(string userAppsettingsFilePath)
+    private static void CreateUserAppSettings(string userAppsettingsFilePath)
     {
-      File.WriteAllText(userAppsettingsFilePath,
-                "{\n" +
-                "  \"LaunchSettings\": {\n" +
-                "  }\n" +
-                "}");
+      var settings = new JsonSerializerOptions
+      {
+        DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
+        WriteIndented = true
+      };
+      File.WriteAllText(userAppsettingsFilePath, JsonSerializer.Serialize(new LaunchSettings
+      {
+        TestingPlayerSlot = 0,
+        Warcraft3ExecutablePath = "",
+      }, settings));
     }
 
     /// <summary>
