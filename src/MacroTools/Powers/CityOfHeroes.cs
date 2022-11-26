@@ -29,20 +29,16 @@ namespace MacroTools.Powers
     }
     
     /// <inheritdoc />
-    public override void OnAdd(player whichPlayer)
-    {
+    public override void OnAdd(player whichPlayer) => 
       PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerFinishesTraining, OnTrainUnit, GetPlayerId(whichPlayer));
-    }
 
     /// <inheritdoc />
-    public override void OnRemove(player whichPlayer)
-    {
+    public override void OnRemove(player whichPlayer) =>
       PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerFinishesTraining, GetPlayerId(whichPlayer));
-    }
 
     private void Heroize(unit whichUnit)
     {
-      if (whichUnit.IsType(UNIT_TYPE_HERO))
+      if (whichUnit.IsType(UNIT_TYPE_HERO) || whichUnit.IsType(UNIT_TYPE_PEON))
         return;
 
       AddSpecialEffect(@"Abilities\Spells\Other\Levelup\Levelupcaster.mdx", GetUnitX(whichUnit), GetUnitY(whichUnit))
@@ -53,7 +49,7 @@ namespace MacroTools.Powers
         .MultiplyMaxHitpoints(1.25f)
         .MultiplyMaxMana(1.25f)
         .AddAbility(HeroGlowAbilityTypeId)
-        .AddAbility(FourCC("Alnv"));
+        .AddAbility(FourCC("AInv"));
     }
 
     private void OnTrainUnit()
