@@ -116543,13 +116543,13 @@ Vitality Aura
 }
 
 STRING 19427
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A0ZJ (Portal to Nagrand), Hotkey (Hotkey - Normal)
 {
 R
 }
 
 STRING 19428
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A0ZJ (Portal to Nagrand), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -116668,6 +116668,12 @@ STRING 19447
 E
 }
 
+STRING 19448
+// Abilities: A0ZJ (Portal to Nagrand), EditorSuffix (Editor Suffix)
+{
+(Frostwolf - Thrall)
+}
+
 STRING 19449
 // Units: O06F (Blood Warrior), Ubertip (Tooltip - Extended)
 {
@@ -116771,19 +116777,19 @@ The Demon's blood haze ends, and it turns back into a Legion Herald.
 }
 
 STRING 19466
-// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
 
 STRING 19467
-// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
 
 STRING 19468
-// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
 {
 R
 }
@@ -116828,5 +116834,77 @@ STRING 19475
 // Upgrades: R094 (Chaos), Name (Name)
 {
 Quest Completed: The Eye of Sargeras
+}
+
+STRING 19476
+// Abilities: A0ZJ (Portal to Nagrand), Name (Name)
+{
+Portal to Nagrand
+}
+
+STRING 19477
+// Abilities: A0ZJ (Portal to Nagrand), Researchtip (Tooltip - Learn)
+{
+Learn Slipstream - [|cffffcc00Level %d|r]
+}
+
+STRING 19478
+// Abilities: A0ZJ (Portal to Nagrand), Researchubertip (Tooltip - Learn - Extended)
+{
+Opens a two-way portal to the target location. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.|n|n|cffffcc00Level 1|r - <A00D,Rng1> range. |n|cffffcc00Level 2|r - <A00D,Rng2> range. |n|cffffcc00Level 3|r - <A00D,Rng3> range.
+}
+
+STRING 19479
+// Abilities: A0ZJ (Portal to Nagrand), Tip (Tooltip - Normal)
+{
+Portal to Nagrand
+}
+
+STRING 19480
+// Abilities: A0ZJ (Portal to Nagrand), Tip (Tooltip - Normal)
+{
+Slipstream - [|cffffcc00Level 2|r]
+}
+
+STRING 19481
+// Abilities: A0ZJ (Portal to Nagrand), Tip (Tooltip - Normal)
+{
+Slipstream - [|cffffcc00Level 3|r]
+}
+
+STRING 19482
+// Abilities: A0ZJ (Portal to Nagrand), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a two-way portal to Nagrand at the target location within a range of <A00D,Rng1>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.
+}
+
+STRING 19483
+// Abilities: A0ZJ (Portal to Nagrand), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a two-way portal to the target location within a range of <A00D,Rng2>. The portal becomes useable after 5 seconds, and closes 20 seconds after the caster stops channeling.
+}
+
+STRING 19484
+// Abilities: A0ZJ (Portal to Nagrand), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a two-way portal to the target location within a range of <A00D,Rng3>. The portal becomes useable after 5 seconds, and closes 30 seconds after the caster stops channeling.
+}
+
+STRING 19485
+// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+{
+R
+}
+
+STRING 19486
+// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+{
+R
+}
+
+STRING 19487
+// Upgrades: R096 (Chaos), Name (Name)
+{
+Quest Completed: Jailor of the Damned
 }
 
