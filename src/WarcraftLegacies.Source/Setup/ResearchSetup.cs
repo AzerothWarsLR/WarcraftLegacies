@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.Setup
             Name = "Rematerialization",
             EligibilityCondition = dyingUnit => dyingUnit.OwningPlayer().GetObjectLimit(dyingUnit.GetTypeId()) != 0
           });
-      }, 0);
+      }, Constants.UPGRADE_R096_REMATERIALIZATION_LEGION);
     }
   }
 } 
