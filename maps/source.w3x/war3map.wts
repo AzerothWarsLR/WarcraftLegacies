@@ -13270,6 +13270,12 @@ STRING 2212
 Opens a two-way portal to the target location within a range of <A00D,Rng3>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.
 }
 
+STRING 2213
+// Units: u00F (Dormant Spire), Ubertip (Tooltip - Extended)
+{
+A gathering point for the followers of the Burning Legion.|n|cfff5962dAbilities:|r Curse Aura|n|cfff5962dTrains:|R Legion Herald |n|cfff5962dResearches:|R Rematerialization |n|n|cfff5962dUpgrades Into:|R Burning Citadel|n|n
+}
+
 STRING 2214
 // Units: n06E (Shadowleaf), EditorSuffix (Name - Editor Suffix)
 {
@@ -17243,6 +17249,30 @@ STRING 2875
 Arathor's outpost within Outland
 }
 
+STRING 2876
+// Units: u00C (Legion Bastion), Ubertip (Tooltip - Extended)
+{
+Death ridden halls soaring high above.|n|cfff5962dAbilities:|R Curse Aura |n|cfff5962dTrains:|R Legion Herald, Dreadlord|n|cfff5962dResearches:|R Rematerialization|n|n|cfff5962dUpgrades Into:|R Burning Citadel|R|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 2877
+// Units: u00N (Burning Citadel), Ubertip (Tooltip - Extended)
+{
+Flying bastion of Legion's reign.|n|cfff5962dAbilities:|R Curse Aura, Multishot |n|cfff5962dTrains:|R Legion Herald, Dreadlord|n|cfff5962dResearches:|R Improved Carrion Swarm, Astral Walk, Rematerialization|n|n|cfff5962dUpgrades Into:|R Infernal Palace|R|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 2878
+// Upgrades: R096 (Defend), EditorSuffix (Editor Suffix)
+{
+(Legion)
+}
+
+STRING 2880
+// Upgrades: R096 (Defend), Name (Name)
+{
+Rematerialization
+}
+
 STRING 2881
 // Units: h09N (Palisade Fort), Hotkey (Hotkey)
 {
@@ -18639,10 +18669,28 @@ STRING 3112
 Sentinel Tower
 }
 
+STRING 3113
+// Upgrades: R096 (Defend), Tip (Tooltip)
+{
+Research Rematerialization
+}
+
 STRING 3114
 // Units: h093 (Order Chapter House), Hotkey (Hotkey)
 {
 F
+}
+
+STRING 3116
+// Upgrades: R096 (Defend), Hotkey (Hotkey)
+{
+A
+}
+
+STRING 3117
+// Upgrades: R096 (Defend), Ubertip (Tooltip - Extended)
+{
+Grants your units a 15% chance to rematerialize at Argus upon death.
 }
 
 STRING 3118
@@ -53207,12 +53255,6 @@ STRING 8888
 // Abilities: A0GQ (Rampage), EditorSuffix (Editor Suffix)
 {
 (Fel Horde - Executioner)
-}
-
-STRING 8889
-// Units: u00F (Dormant Spire), Ubertip (Tooltip - Extended)
-{
-A gathering point for the followers of the Burning Legion.|n|cfff5962dAbilities:|R Curse Aura |n|cfff5962dUpgrades Into:|R Burning Citadel|n|n|cfff5962dTrains:|R Legion Herald
 }
 
 STRING 8890
@@ -90763,12 +90805,6 @@ STRING 15175
 X
 }
 
-STRING 15176
-// Units: u00N (Burning Citadel), Ubertip (Tooltip - Extended)
-{
-Flying bastion of Legion's reign.|n|cfff5962dAbilities:|R Curse Aura, Multishot |n|cfff5962dTrains:|R Legion Herald and Dreadlords|n|n|cfff5962dUpgrades Into:|R Infernal Palace|R|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 15177
 // Upgrades: R000 (Priest Adept Training,Priest Master Training), Name (Name)
 {
@@ -94030,12 +94066,6 @@ STRING 15720
 // Units: n04Q (Nether Pit), Ubertip (Tooltip - Extended)
 {
 Summoning site for minor demons.|n|cfff5962dTrains:|R Fel Guard, Burning Archer, Fel Creeper
-}
-
-STRING 15721
-// Units: u00C (Legion Bastion), Ubertip (Tooltip - Extended)
-{
-Death ridden halls soaring high above.|n|cfff5962dAbilities:|R Curse Aura |n|cfff5962dTrains:|R Legion Herald, Dreadlord|n|n|cfff5962dUpgrades Into:|R Burning Citadel|R|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 15722
