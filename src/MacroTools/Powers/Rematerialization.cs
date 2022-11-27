@@ -33,7 +33,7 @@ namespace MacroTools.Powers
       _chance = chance;
       _returnPoint = returnPoint;
       _noReturnRect = noReturnRect;
-      Description = $"Your Demon units that die have a {chance*100}% chance to rematerialize at {returnPointName}.";
+      Description = $"Your Demon units have a {chance*100}% chance to rematerialize at {returnPointName} upon death.";
     }
     
     /// <inheritdoc />
