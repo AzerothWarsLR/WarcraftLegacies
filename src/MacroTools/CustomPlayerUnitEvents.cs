@@ -34,7 +34,7 @@ namespace MacroTools
         () => GetPlayerId(GetOwningPlayer(GetEventDamageSource())));
       
       PlayerUnitEvents.AddCustomEventFilter(EVENT_PLAYER_UNIT_DEATH,
-        PlayerDealsDamage,
+        PlayerUnitDies,
         () => GetPlayerId(GetOwningPlayer(GetTriggerUnit())));
     }
   }

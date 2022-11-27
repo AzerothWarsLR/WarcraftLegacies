@@ -38,16 +38,16 @@ namespace MacroTools.Powers
     
     /// <inheritdoc />
     public override void OnAdd(player whichPlayer) => 
-      PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerFinishesTraining, OnUnitDeath, GetPlayerId(whichPlayer));
+      PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerUnitDies, OnUnitDeath, GetPlayerId(whichPlayer));
 
     /// <inheritdoc />
     public override void OnRemove(player whichPlayer) => 
-      PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerFinishesTraining, GetPlayerId(whichPlayer));
+      PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerUnitDies, GetPlayerId(whichPlayer));
 
     private void OnUnitDeath()
     {
       var dyingUnit = GetTriggerUnit();
-      if (!(GetRandomReal(0, 1) >= _chance) 
+      if (GetRandomReal(0, 1) > _chance 
           || !EligibilityCondition(dyingUnit) 
           || _noReturnRect.Contains(dyingUnit.GetPosition())
           || dyingUnit.IsType(UNIT_TYPE_HERO) 
