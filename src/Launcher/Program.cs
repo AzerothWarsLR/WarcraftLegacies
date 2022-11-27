@@ -63,7 +63,7 @@ namespace Launcher
       var projectDirPath = Path.GetDirectoryName(projectDir.FullName);
       var userAppsettingsFilePath = $"{projectDirPath}\\{userAppsettingsFileName}";
 
-      if (!File.Exists(userAppsettingsFilePath)) 
+      if (!File.Exists(userAppsettingsFilePath))
         CreateUserAppSettings(userAppsettingsFilePath);
 
       return new ConfigurationBuilder()
@@ -79,10 +79,13 @@ namespace Launcher
         DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
         WriteIndented = true
       };
-      File.WriteAllText(userAppsettingsFilePath, JsonSerializer.Serialize(new LaunchSettings
+      File.WriteAllText(userAppsettingsFilePath, JsonSerializer.Serialize(new AppSettings()
       {
-        TestingPlayerSlot = 0,
-        Warcraft3ExecutablePath = "",
+        LaunchSettings = new LaunchSettings
+        {
+          TestingPlayerSlot = 0,
+          Warcraft3ExecutablePath = ""
+        }
       }, settings));
     }
 
@@ -195,7 +198,8 @@ namespace Launcher
       }
       else
       {
-        throw new Exception("Please set Warcraft3ExecutablePath in Launcher/appsettings.json to the path of your Warcraft III executable.");
+        throw new Exception(
+          "Please set Warcraft3ExecutablePath in Launcher/appsettings.json to the path of your Warcraft III executable.");
       }
     }
   }
