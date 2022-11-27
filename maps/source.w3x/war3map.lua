@@ -384,6 +384,7 @@ gg_rct_InstanceOutland = nil
 gg_rct_Outland_Ships = nil
 gg_rct_IllidanStartingPosition = nil
 gg_rct_SkullOfGuldan = nil
+gg_rct_ArtifactDummyInstance = nil
 gg_cam_Naga1 = nil
 gg_cam_Naga2 = nil
 gg_cam_Naga3 = nil
@@ -606,7 +607,6 @@ gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
 gg_trg_Dummy = nil
-gg_rct_ArtifactDummyInstance = nil
 function InitGlobals()
 end
 
