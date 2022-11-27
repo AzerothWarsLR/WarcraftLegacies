@@ -18681,16 +18681,16 @@ STRING 3114
 F
 }
 
-STRING 3115
-// Upgrades: R096 (Defend), Ubertip (Tooltip - Extended)
-{
-Your units have a 15% chance to rematerialize at Argus upon death.
-}
-
 STRING 3116
 // Upgrades: R096 (Defend), Hotkey (Hotkey)
 {
 A
+}
+
+STRING 3117
+// Upgrades: R096 (Defend), Ubertip (Tooltip - Extended)
+{
+Grants your units a 15% chance to rematerialize at Argus upon death.
 }
 
 STRING 3118
