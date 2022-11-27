@@ -11,8 +11,15 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup
 {
+  /// <summary>
+  /// Responsible for setting up all coded researches.
+  /// </summary>
   public static class ResearchSetup
   {
+    /// <summary>
+    /// Sets up all coded researches.
+    /// </summary>
+    /// <param name="preplacedUnitSystem">A system that can find preplaced units.</param>
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       VeteranFootmen.Setup();
@@ -35,7 +42,7 @@ namespace WarcraftLegacies.Source.Setup
           .GetFaction()?
           .AddPower(new Rematerialization(0.15f, new Point(-25562.9f, 8536.6f), "Argus", Regions.MonolithNoBuild)
           {
-            IconName = null,
+            IconName = "achievement_raid_argusraid",
             Name = "Rematerialization",
             EligibilityCondition = dyingUnit => dyingUnit.OwningPlayer().GetObjectLimit(dyingUnit.GetTypeId()) != 0
           });
