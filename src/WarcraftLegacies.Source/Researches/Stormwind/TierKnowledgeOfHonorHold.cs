@@ -43,9 +43,8 @@ namespace WarcraftLegacies.Source.Researches.Stormwind
 
     private static void Research()
     {
-      StormwindSetup.Stormwind.ModObjectLimit(Constants.UPGRADE_R03X_HIGH_SORCERER_ANDROMATH_AID_ARATHOR_T3,
-        Faction.UNLIMITED);
-      StormwindSetup.Stormwind.ModObjectLimit(Constants.UPGRADE_R03Y_KATRANA_PRESTOR_AID_ARATHOR_T3, Faction.UNLIMITED);
+      StormwindSetup.Stormwind?.ModObjectLimit(Constants.UPGRADE_R03X_CONJURERS_ARATHOR_T3, Faction.UNLIMITED);
+      StormwindSetup.Stormwind?.ModObjectLimit(Constants.UPGRADE_R03Y_KATRANA_PRESTOR_AID_ARATHOR_T3, Faction.UNLIMITED);
       EnablePortals();
     }
 

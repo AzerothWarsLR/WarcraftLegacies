@@ -606,6 +606,7 @@ gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
 gg_trg_Dummy = nil
+gg_rct_ArtifactDummyInstance = nil
 function InitGlobals()
 end
 
@@ -9475,6 +9476,7 @@ gg_rct_InstanceOutland = Rect(-7104.0, -32256.0, 6016.0, -18208.0)
 gg_rct_Outland_Ships = Rect(-7104.0, -32256.0, 6016.0, -18208.0)
 gg_rct_IllidanStartingPosition = Rect(-22496.0, -14272.0, -21472.0, -13152.0)
 gg_rct_SkullOfGuldan = Rect(-13632.0, 22144.0, -13344.0, 22432.0)
+gg_rct_ArtifactDummyInstance = Rect(19584.0, 23232.0, 22688.0, 24800.0)
 end
 
 function CreateCameras()
