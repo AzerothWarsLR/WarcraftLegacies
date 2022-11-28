@@ -65,6 +65,7 @@ Use your resources to raise an army strong enough to take land elsewhere."
       Goblin.ModObjectLimit(Constants.UPGRADE_R07L_WIZARD_MASTER_TRAINING_GOBLIN, Faction.UNLIMITED);
       Goblin.ModObjectLimit(Constants.UPGRADE_R07M_ALCHEMIST_MASTER_TRAINING_GOBLIN, Faction.UNLIMITED);
       Goblin.ModObjectLimit(Constants.UPGRADE_R023_SPIRITUAL_INFUSION_WARSONG_FROSTWOLF_FEL_HORDE, Faction.UNLIMITED);
+      Goblin.ModObjectLimit(Constants.UPGRADE_R097_FORTIFIED_HULLS_GOBLIN, Faction.UNLIMITED);
 
       var oilPower = new OilPower
       {

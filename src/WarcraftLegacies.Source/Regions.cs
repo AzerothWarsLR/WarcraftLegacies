@@ -295,7 +295,7 @@ public static class Regions
 	public static Rectangle Trader1 { get; set; } = new Rectangle(2144f, 15456f, 2560f, 15776f);
 	public static Rectangle Trader2 { get; set; } = new Rectangle(-7840f, -13344f, -7456f, -13024f);
 	public static Rectangle Trader3 { get; set; } = new Rectangle(9344f, -22752f, 9664f, -22464f);
-	public static Rectangle GadgetUnlock { get; set; } = new Rectangle(-9248f, -13984f, -8320f, -12896f);
+	public static Rectangle GadgetUnlock { get; set; } = new Rectangle(-9248f, -13984f, -8160f, -12896f);
 	public static Rectangle OilRig1 { get; set; } = new Rectangle(-736f, -4768f, 448f, -3808f);
 	public static Rectangle OilRig2 { get; set; } = new Rectangle(-640f, -3264f, 1728f, -384f);
 	public static Rectangle OilRig3 { get; set; } = new Rectangle(2272f, -16512f, 5568f, -14624f);
@@ -355,8 +355,8 @@ public static class Regions
 	public static Rectangle DraeneiCamLock { get; set; } = new Rectangle(-4992f, -31296f, 2304f, -19616f);
 	public static Rectangle GilneasUnlock6 { get; set; } = new Rectangle(6272f, -928f, 8672f, 1312f);
 	public static Rectangle GilneasUnlock1 { get; set; } = new Rectangle(8480f, -2368f, 9824f, -832f);
-	public static Rectangle GilneasUnlock2 { get; set; } = new Rectangle(6624f, -3232f, 8032f, -2400f);
-	public static Rectangle GilneasUnlock3 { get; set; } = new Rectangle(3968f, 416f, 5216f, 2656f);
+	public static Rectangle GilneasUnlock2 { get; set; } = new Rectangle(6624f, -3264f, 8032f, -2400f);
+	public static Rectangle GilneasUnlock3 { get; set; } = new Rectangle(3968f, 416f, 5376f, 2656f);
 	public static Rectangle GilneasUnlock4 { get; set; } = new Rectangle(3392f, -2656f, 5504f, -320f);
 	public static Rectangle GilneasUnlock5 { get; set; } = new Rectangle(6496f, 2144f, 7360f, 2784f);
 	public static Rectangle DragonmawPathUnlock { get; set; } = new Rectangle(18784f, -7488f, 19488f, -5920f);
