@@ -106,7 +106,7 @@ Your allies cannot reach you on Outland, you are alone.",
       
       FactionManager.Register(FelHorde);
 
-      FelHordeJuggernautDeath.Setup(preplacedUnitSystem);
+      JuggernautDeath.Setup(preplacedUnitSystem);
     }
   }
 }
