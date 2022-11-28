@@ -22432,6 +22432,18 @@ STRING 3738
 Revive Necromancer
 }
 
+STRING 3739
+// Abilities: S000 (Load), EditorSuffix (Editor Suffix)
+{
+ (Ships) (goblin)
+}
+
+STRING 3740
+// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
+{
+Q
+}
+
 STRING 3741
 // Units: o03L (Great Hall), Hotkey (Hotkey)
 {
@@ -109541,7 +109553,7 @@ Hurl a Dark Hammer towards an enemy unit, damaging them for 75 damage and stunni
 }
 
 STRING 18301
-// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
+// Abilities: S000 (Load), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -110634,7 +110646,7 @@ Spawning Pit
 }
 
 STRING 18483
-// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
+// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
 {
 Q
 }
@@ -110820,7 +110832,7 @@ W
 }
 
 STRING 18514
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
+// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
 {
 Q
 }
@@ -112027,7 +112039,7 @@ Q
 }
 
 STRING 18715
-// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
 Q
 }
@@ -113119,7 +113131,7 @@ V
 }
 
 STRING 18897
-// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
+// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
 {
 Q
 }
@@ -113593,7 +113605,7 @@ Creates a small cloud that slows units by 50% and give them a 15% chance to miss
 }
 
 STRING 18976
-// Upgrades: R020 (Defend), Hotkey (Hotkey)
+// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
 {
 Q
 }
@@ -114259,7 +114271,7 @@ Throws a smoke bomb in the midst of the enemy causing them to have a 100% chance
 }
 
 STRING 19087
-// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R020 (Defend), Hotkey (Hotkey)
 {
 Q
 }
@@ -114325,7 +114337,7 @@ Quel Tree Wall (Barrens)
 }
 
 STRING 19098
-// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Q
 }
