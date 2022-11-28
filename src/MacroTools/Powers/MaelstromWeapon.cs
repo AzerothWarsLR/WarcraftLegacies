@@ -34,7 +34,7 @@ namespace MacroTools.Powers
       _damageChance = damageChance;
       _damageDealt = damageDealt;
       Name = "Maelstrom Spirit";
-      Description = $"Your Orc units have a {damageChance*100}% on attack to call down a lightning bolt dealing {damageDealt} magic damage. Thrall instead has a 100% chance.";
+      Description = $"Your Orc units have a {damageChance*100}% chance on attack to call down a lightning bolt dealing {damageDealt} magic damage. Thrall instead has a 100% chance.";
     }
     
     /// <inheritdoc />
