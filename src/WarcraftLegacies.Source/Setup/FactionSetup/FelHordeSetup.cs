@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -59,8 +59,8 @@ Your allies cannot reach you on Outland, you are alone.",
       FelHorde.ModObjectLimit(FourCC("u00V"), Faction.UNLIMITED); //Necrolyte
       FelHorde.ModObjectLimit(FourCC("n057"), -Faction.UNLIMITED); //Nether Dragon Hatchling
       FelHorde.ModObjectLimit(FourCC("n058"), Faction.UNLIMITED); //Troll Axethrowers
-      FelHorde.ModObjectLimit(FourCC("obot"), 12); //Transport Ship
-      FelHorde.ModObjectLimit(FourCC("odes"), 12); //Orc Frigate
+      FelHorde.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
+      FelHorde.ModObjectLimit(FourCC("odes"), Faction.UNLIMITED); //Orc Frigate
       FelHorde.ModObjectLimit(FourCC("ojgn"), 6); //Juggernaught
 
       FelHorde.ModObjectLimit(FourCC("n05T"), 1); //Kazzak

@@ -17267,6 +17267,12 @@ STRING 2878
 (Legion)
 }
 
+STRING 2879
+// Units: nzep (Trading Zeppelin), Ubertip (Tooltip - Extended)
+{
+Flying Gold Trader. Once trained, it cannot be controlled and will automatically trade between the Trading Center and a random Goblin trading location. Will generate 25 gold per minute. |n|n|cff99b4d1Can only build 16.
+}
+
 STRING 2880
 // Upgrades: R096 (Defend), Name (Name)
 {
@@ -18681,6 +18687,12 @@ STRING 3114
 F
 }
 
+STRING 3115
+// Units: o04S (Trader), Ubertip (Tooltip - Extended)
+{
+Ship Gold Trader. Once trained, it cannot be controlled and will automatically trade between the Trading Center and a random Goblin trading location. Will generate 50 gold per minute.|n|n|cff99b4d1Can only build 10.|r
+}
+
 STRING 3116
 // Units: h09P (Scarlet Keep), Hotkey (Hotkey)
 {
@@ -19111,6 +19123,24 @@ STRING 3187
 // Units: O05O (Ragefire Warlock), Hotkey (Hotkey)
 {
 A
+}
+
+STRING 3188
+// Units: udes (Corsair), Ubertip (Tooltip - Extended)
+{
+Banshee of the water, and killer of seaman.|n|cfff5962dAbilities:|R Board, Fishing Nets|n|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 3189
+// Units: ubot (Haunted Transport Ship), Ubertip (Tooltip - Extended)
+{
+A sturdy transport ship capable of carrying units over the sea.|n|r|n|cff00ffffCan transport 10 units.
+}
+
+STRING 3190
+// Units: odes (Frigate), Ubertip (Tooltip - Extended)
+{
+Mainstay of the Horde Navy and conquerer of the ocean.|n|cfff5962dAbilities:|R Board, Fishing Nets|n|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 3191
@@ -22402,18 +22432,6 @@ STRING 3738
 Revive Necromancer
 }
 
-STRING 3739
-// Units: udes (Corsair), Ubertip (Tooltip - Extended)
-{
-Banshee of the water, and killer of seaman.|n|cfff5962dAbilities:|R Board, Fishing Nets|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 3740
-// Units: odes (Frigate), Ubertip (Tooltip - Extended)
-{
-Mainstay of the Horde Navy and conquerer of the ocean.|n|cfff5962dAbilities:|R Board, Fishing Nets|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 3741
 // Units: o03L (Great Hall), Hotkey (Hotkey)
 {
@@ -22546,6 +22564,12 @@ STRING 3762
 Revive Witch Doctor
 }
 
+STRING 3763
+// Units: obot (Horde Transport Ship), Ubertip (Tooltip - Extended)
+{
+A sturdy transport ship capable of carrying units over the sea.|n|n|cff00ffffCan transport 10 units.
+}
+
 STRING 3764
 // Units: O027 (Chieftan of the Dragonmaw Clan), EditorSuffix (Name - Editor Suffix)
 {
@@ -22568,6 +22592,24 @@ STRING 3767
 // Units: O027 (Chieftan of the Dragonmaw Clan), Propernames (Proper Names)
 {
 Zuluhed The Whacked
+}
+
+STRING 3768
+// Units: hdes (Destroyer), Ubertip (Tooltip - Extended)
+{
+Pride of the Alliance Navy, and defender of the seas.|n|cfff5962dAbilities:|R Board, Fishing Nets|n|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 3769
+// Units: hbot (Alliance Transport Ship), Ubertip (Tooltip - Extended)
+{
+A sturdy transport ship capable of carrying units over the sea.|n|n|cff00ffffCan transport 10 units.
+}
+
+STRING 3770
+// Units: etrs (Night Elf Transport Ship), Ubertip (Tooltip - Extended)
+{
+A sturdy transport ship capable of carrying units over the sea.|n|r|n|cff00ffffCan transport 10 units.
 }
 
 STRING 3771
@@ -22892,12 +22934,6 @@ STRING 3824
 // Units: O00O (Chieftan of the Amani Tribe), Tip (Tooltip - Basic)
 {
 Summon |cffffcc00A|rmani Warlord
-}
-
-STRING 3825
-// Units: nzep (Trading Zeppelin), Ubertip (Tooltip - Extended)
-{
-Flying Lumber Trader. Once trained, it cannot be controlled and will automatically trade between the Trading Center and a random Goblin trading location. Will collect Gold over time. |n|n|cff99b4d1Can only build 16.
 }
 
 STRING 3826
@@ -32603,6 +32639,12 @@ STRING 5442
 Revive Defias Kingpin
 }
 
+STRING 5443
+// Units: edes (Corvette), Ubertip (Tooltip - Extended)
+{
+Agile dominator of the seas of Kalimdor.|n|cfff5962dAbilities:|R Board, Fishing Nets|n|r|n|cffffcc00Attacks land and air units.
+}
+
 STRING 5444
 // Abilities: AOwk (Wind Walk), Tip (Tooltip - Normal)
 {
@@ -35508,28 +35550,10 @@ STRING 5927
 (unused)
 }
 
-STRING 5928
-// Units: hdes (Destroyer), Ubertip (Tooltip - Extended)
-{
-Pride of the Alliance Navy, and defender of the seas.|n|cfff5962dAbilities:|R Board, Fishing Nets|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 5929
 // Abilities: A096 (Summon Water Elemental), Tip (Tooltip - Normal)
 {
 Summon Water Elemental - [|cffffcc00Level 4|r]
-}
-
-STRING 5930
-// Units: edes (Corvette), Ubertip (Tooltip - Extended)
-{
-Agile dominator of the seas of Kalimdor.|n|cfff5962dAbilities:|R Board, Fishing Nets|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.
-}
-
-STRING 5931
-// Units: o04W (Golden Vessel), Ubertip (Tooltip - Extended)
-{
-Main Ships of the Zandalari Empire. They are both powerful and can transport troops.|n|cfff5962dAbilities:|R Board, Load and unload, Fishing Nets|n|n|cff99b4d1Can only build 24.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 5932
@@ -47759,6 +47783,12 @@ STRING 7966
 // Abilities: A0S9 (Stealth), Ubertip (Tooltip - Normal - Extended)
 {
 Grants the unit invisibility at all times, breaking if it attacks or performs any action.
+}
+
+STRING 7967
+// Units: o04W (Golden Vessel), Ubertip (Tooltip - Extended)
+{
+Main Ships of the Zandalari Empire. They are both powerful and can transport troops.|n|cfff5962dAbilities:|R Board, Load and unload, Fishing Nets|n|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 7968
@@ -97233,12 +97263,6 @@ STRING 16250
 Summon Fel Hound - [|cffffcc00Level 3|r]
 }
 
-STRING 16251
-// Units: o04S (Trader), Ubertip (Tooltip - Extended)
-{
-Ship Gold Trader. Once trained, it cannot be controlled and will automatically trade between the Trading Center and a random Goblin trading location. Will collect gold over time.|n|n|cff99b4d1Can only build 10.|r
-}
-
 STRING 16252
 // Abilities: A0JT (Drop the Anchor), Hotkey (Hotkey - Normal)
 {
@@ -99860,12 +99884,6 @@ STRING 16688
 Causes Plague Revenants' Persistent Soul to reanimate an additional unit.
 }
 
-STRING 16689
-// Units: ubot (Haunted Transport Ship), Ubertip (Tooltip - Extended)
-{
-A sturdy transport ship capable of carrying units over the sea.|n|n|cff99b4d1Can only build 12.|r|n|cff00ffffCan transport 10 units.
-}
-
 STRING 16690
 // Units: ojgn (Juggernaut), Ubertip (Tooltip - Extended)
 {
@@ -99878,12 +99896,6 @@ STRING 16691
 Persistent Soul
 }
 
-STRING 16692
-// Units: obot (Horde Transport Ship), Ubertip (Tooltip - Extended)
-{
-A sturdy transport ship capable of carrying units over the sea.|n|n|cff99b4d1Can only build 12.|r|n|cff00ffffCan transport 10 units.
-}
-
 STRING 16693
 // Buffs/Effects: B069 (), EditorSuffix (Editor Suffix)
 {
@@ -99894,18 +99906,6 @@ STRING 16694
 // Units: hbsh (Battleship), Ubertip (Tooltip - Extended)
 {
 Massive vessel of naval domination for the Alliance.|n|cfff5962dAbilities:|R Repair|n|n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land units.|r
-}
-
-STRING 16695
-// Units: hbot (Alliance Transport Ship), Ubertip (Tooltip - Extended)
-{
-A sturdy transport ship capable of carrying units over the sea.|n|n|cff99b4d1Can only build 12.|r|n|cff00ffffCan transport 10 units.
-}
-
-STRING 16696
-// Units: etrs (Night Elf Transport Ship), Ubertip (Tooltip - Extended)
-{
-A sturdy transport ship capable of carrying units over the sea.|n|n|cff99b4d1Can only build 12.|r|n|cff00ffffCan transport 10 units.
 }
 
 STRING 16697

@@ -52,8 +52,8 @@ The Night Elves are aware of your presence and are gathering against you. Unlock
       WarsongClan.ModObjectLimit(FourCC("o00I"), 6); //Horde War Machine
       WarsongClan.ModObjectLimit(FourCC("e01M"), 4); //Azerite Siege Engine
       WarsongClan.ModObjectLimit(FourCC("okod"), 4); //Kodo Beast
-      WarsongClan.ModObjectLimit(FourCC("obot"), 12); //Transport Ship
-      WarsongClan.ModObjectLimit(FourCC("odes"), 12); //Orc Frigate
+      WarsongClan.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
+      WarsongClan.ModObjectLimit(FourCC("odes"), Faction.UNLIMITED); //Orc Frigate
       WarsongClan.ModObjectLimit(FourCC("ojgn"), 6); //Juggernaught
       WarsongClan.ModObjectLimit(FourCC("o00G"), 6); //Blademaster
       WarsongClan.ModObjectLimit(FourCC("n03F"), 6); //Korkron elite
