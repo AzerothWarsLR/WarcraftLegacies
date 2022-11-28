@@ -1,5 +1,6 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
+using WarcraftLegacies.Source.Mechanics.Fel_Horde;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -104,6 +105,8 @@ Your allies cannot reach you on Outland, you are alone.",
       FelHorde.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(5804, -29242)));
       
       FactionManager.Register(FelHorde);
+
+      FelHordeJuggernautDeath.Setup(preplacedUnitSystem);
     }
   }
 }
