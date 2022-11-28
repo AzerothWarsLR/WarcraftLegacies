@@ -19161,12 +19161,6 @@ STRING 3193
 (Warsong)
 }
 
-STRING 3194
-// Units: o06G (Oil Rig Constructor), Ubertip (Tooltip - Extended)
-{
-A sturdy ship that can construct Oil Rigs.|n|cfff5962dAbilities:|R Transport Units, Build Oil Rig, Locate Oil|n|n|cff99b4d1Can only build 12.|r|n|cff00ffffCan transport 10 units.
-}
-
 STRING 3195
 // Units: u01Y (Deathwing), Hotkey (Hotkey)
 {
@@ -22949,7 +22943,7 @@ Summon |cffffcc00A|rmani Warlord
 }
 
 STRING 3825
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
+// Units: n062 (Shredder), EditorSuffix (Name - Editor Suffix)
 {
 (goblin)
 }
@@ -35569,7 +35563,7 @@ STRING 5927
 }
 
 STRING 5928
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R048 (Marksmanship), Hotkey (Hotkey)
 {
 S
 }
@@ -35581,13 +35575,13 @@ Summon Water Elemental - [|cffffcc00Level 4|r]
 }
 
 STRING 5930
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Units: n0AS (Whispering Chambers), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 5931
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Units: n0AT (Cathedral of Madness), Hotkey (Hotkey)
 {
 C
 }
@@ -39456,7 +39450,7 @@ STRING 6575
 }
 
 STRING 6576
-// Units: n0AS (Whispering Chambers), Hotkey (Hotkey)
+// Units: n0B2 (Ominous Vault), Hotkey (Hotkey)
 {
 C
 }
@@ -40062,7 +40056,7 @@ Learn N'zoth Pressure Aura  - [|cffffcc00Level %d|r]
 }
 
 STRING 6677
-// Units: n0AT (Cathedral of Madness), Hotkey (Hotkey)
+// Units: n0B6 (Pyramid of Madness), Hotkey (Hotkey)
 {
 C
 }
@@ -42788,7 +42782,7 @@ Chain Fence
 }
 
 STRING 7128
-// Units: n0B2 (Ominous Vault), Hotkey (Hotkey)
+// Units: o050 (Metropolis), Hotkey (Hotkey)
 {
 C
 }
@@ -46466,7 +46460,7 @@ E
 }
 
 STRING 7741
-// Upgrades: R048 (Marksmanship), Hotkey (Hotkey)
+// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 S
 }
@@ -47570,7 +47564,7 @@ Q
 }
 
 STRING 7925
-// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 S
 }
@@ -47840,13 +47834,13 @@ Oil Prospecting
 }
 
 STRING 7970
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
 
 STRING 7971
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R04R (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -47972,7 +47966,7 @@ Dragon's Fury
 }
 
 STRING 7992
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -48716,7 +48710,7 @@ Removes all buffs from units in a target area and deals <Adis,DataB1> damage to 
 }
 
 STRING 8116
-// Units: n062 (Shredder), EditorSuffix (Name - Editor Suffix)
+// Units: o03T (Burrow), EditorSuffix (Name - Editor Suffix)
 {
 (goblin)
 }
@@ -48860,7 +48854,7 @@ Purges all units in a target area and stuns them for 2(1) seconds.|n|cffffcc00De
 }
 
 STRING 8140
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -52850,7 +52844,7 @@ STRING 8804
 }
 
 STRING 8805
-// Units: n0B6 (Pyramid of Madness), Hotkey (Hotkey)
+// Units: o051 (Divine Citadel), Hotkey (Hotkey)
 {
 C
 }
@@ -55844,7 +55838,7 @@ STRING 9303
 }
 
 STRING 9304
-// Units: o050 (Metropolis), Hotkey (Hotkey)
+// Units: o057 (Vault of Relics), Hotkey (Hotkey)
 {
 C
 }
@@ -61172,7 +61166,7 @@ STRING 10191
 }
 
 STRING 10192
-// Units: o051 (Divine Citadel), Hotkey (Hotkey)
+// Units: h0A1 (Admiral Guard), Hotkey (Hotkey)
 {
 C
 }
@@ -61196,7 +61190,7 @@ Increases a nearby friendly tower's damage by 40% for 60 seconds. 4 seconds cool
 }
 
 STRING 10196
-// Units: o057 (Vault of Relics), Hotkey (Hotkey)
+// Units: n0BZ (Deep Sea Vault), Hotkey (Hotkey)
 {
 C
 }
@@ -63405,7 +63399,7 @@ W
 }
 
 STRING 10564
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
@@ -63417,7 +63411,7 @@ Blink
 }
 
 STRING 10566
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
@@ -63825,7 +63819,7 @@ Transforms Fandral into a Night Elf, losing his defensive bonuses but returning 
 }
 
 STRING 10634
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Units: n0C8 (Monument of Currents), Hotkey (Hotkey)
 {
 C
 }
@@ -64221,13 +64215,13 @@ E
 }
 
 STRING 10700
-// Units: h0A1 (Admiral Guard), Hotkey (Hotkey)
+// Units: n0C9 (Temple of Tides), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 10701
-// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 S
 }
@@ -65319,13 +65313,13 @@ A
 }
 
 STRING 10883
-// Units: n0BZ (Deep Sea Vault), Hotkey (Hotkey)
+// Units: o064 (Stronghold), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 10884
-// Units: n0C8 (Monument of Currents), Hotkey (Hotkey)
+// Units: o065 (Fortress), Hotkey (Hotkey)
 {
 C
 }
@@ -65337,13 +65331,13 @@ Escape to Azeroth
 }
 
 STRING 10886
-// Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R04R (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
 
 STRING 10887
-// Upgrades: R04R (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -69146,6 +69140,12 @@ STRING 11520
 Deactivate Divine Shield - [|cffffcc00Level 4|r]
 }
 
+STRING 11521
+// Units: o06G (Oil Rig Constructor), Ubertip (Tooltip - Extended)
+{
+A sturdy ship that can construct Oil Rigs.|n|cfff5962dAbilities:|R Transport Units, Build Oil Rig, Locate Oil|n|r|n|cff00ffffCan transport 10 units.
+}
+
 STRING 11522
 // Abilities: A09C (Shock), Hotkey (Hotkey - Normal)
 {
@@ -71499,7 +71499,7 @@ STRING 11919
 }
 
 STRING 11920
-// Units: n0C9 (Temple of Tides), Hotkey (Hotkey)
+// Units: u02N (Voodoo Lounge), Hotkey (Hotkey)
 {
 C
 }
@@ -74309,7 +74309,7 @@ W
 }
 
 STRING 12389
-// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 S
 }
@@ -79878,7 +79878,7 @@ Smoke Cloud
 }
 
 STRING 13319
-// Units: o064 (Stronghold), Hotkey (Hotkey)
+// Units: e01Q (Coral of Ages), Hotkey (Hotkey)
 {
 C
 }
@@ -79890,7 +79890,7 @@ This unit has been affected by Impaling Strike. It is taking damage over time an
 }
 
 STRING 13321
-// Units: o065 (Fortress), Hotkey (Hotkey)
+// Units: e01R (Coral of Eternity), Hotkey (Hotkey)
 {
 C
 }
@@ -80898,7 +80898,7 @@ This unit is being trampled by an Outrider; its movement speed is reduced.
 }
 
 STRING 13489
-// Units: u02N (Voodoo Lounge), Hotkey (Hotkey)
+// Units: n0CU (Deep Sea Vault), Hotkey (Hotkey)
 {
 C
 }
@@ -81876,7 +81876,7 @@ A
 }
 
 STRING 13652
-// Units: e01Q (Coral of Ages), Hotkey (Hotkey)
+// Items: vddl (Voodoo Doll), Hotkey (Hotkey)
 {
 C
 }
@@ -82752,7 +82752,7 @@ STRING 13799
 }
 
 STRING 13800
-// Units: e01R (Coral of Eternity), Hotkey (Hotkey)
+// Items: srrc (Scroll of Resurrection), Hotkey (Hotkey)
 {
 C
 }
@@ -83022,13 +83022,13 @@ STRING 13844
 }
 
 STRING 13845
-// Units: n0CU (Deep Sea Vault), Hotkey (Hotkey)
+// Items: sman (Scroll of Mana), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 13846
-// Items: vddl (Voodoo Doll), Hotkey (Hotkey)
+// Items: sand (Scroll of Animate Dead), Hotkey (Hotkey)
 {
 C
 }
@@ -83682,7 +83682,7 @@ Research Demonic Flux
 }
 
 STRING 13955
-// Items: srrc (Scroll of Resurrection), Hotkey (Hotkey)
+// Items: rej5 (Lesser Scroll of Replenishment ), Hotkey (Hotkey)
 {
 C
 }
@@ -84252,7 +84252,7 @@ STRING 14049
 }
 
 STRING 14050
-// Items: sman (Scroll of Mana), Hotkey (Hotkey)
+// Items: ratf (Claws of Attack +15), Hotkey (Hotkey)
 {
 C
 }
@@ -84294,13 +84294,13 @@ Warrior Hero, adept at offensive combat and disrupting enemy troops.|n|cfff5962d
 }
 
 STRING 14057
-// Units: o03T (Burrow), EditorSuffix (Name - Editor Suffix)
+// Units: h08X (Sappers), EditorSuffix (Name - Editor Suffix)
 {
 (goblin)
 }
 
 STRING 14058
-// Upgrades: R04R (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -84450,7 +84450,7 @@ STRING 14082
 }
 
 STRING 14083
-// Items: sand (Scroll of Animate Dead), Hotkey (Hotkey)
+// Items: dust (Dust of Appearance), Hotkey (Hotkey)
 {
 C
 }
@@ -84714,7 +84714,7 @@ STRING 14126
 }
 
 STRING 14127
-// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -85092,7 +85092,7 @@ rlev
 }
 
 STRING 14190
-// Items: rej5 (Lesser Scroll of Replenishment ), Hotkey (Hotkey)
+// Items: I00B (Summon Mur'gul Workers ), Hotkey (Hotkey)
 {
 C
 }
@@ -85122,7 +85122,7 @@ STRING 14194
 }
 
 STRING 14195
-// Items: ratf (Claws of Attack +15), Hotkey (Hotkey)
+// Abilities: AeoK (Summon Eye of Grillok), Hotkey (Hotkey - Normal)
 {
 C
 }
@@ -85152,7 +85152,7 @@ STRING 14199
 }
 
 STRING 14200
-// Items: dust (Dust of Appearance), Hotkey (Hotkey)
+// Abilities: A0L3 (Animate Dead), Hotkey (Hotkey - Normal)
 {
 C
 }
@@ -85410,7 +85410,7 @@ STRING 14242
 }
 
 STRING 14243
-// Items: I00B (Summon Mur'gul Workers ), Hotkey (Hotkey)
+// Abilities: A0HO (Auberdine Navy), Hotkey (Hotkey - Normal)
 {
 C
 }
@@ -85548,7 +85548,7 @@ rhpx
 }
 
 STRING 14266
-// Abilities: AeoK (Summon Eye of Grillok), Hotkey (Hotkey - Normal)
+// Abilities: A0CY (Powered Up Ammunition), Hotkey (Hotkey - Normal)
 {
 C
 }
@@ -85890,7 +85890,7 @@ Tunneler Master Training
 }
 
 STRING 14323
-// Abilities: A0L3 (Animate Dead), Hotkey (Hotkey - Normal)
+// Abilities: A0CY (Powered Up Ammunition), Unhotkey (Hotkey - Turn Off)
 {
 C
 }
@@ -86153,7 +86153,7 @@ rhpx
 }
 
 STRING 14367
-// Abilities: A0HO (Auberdine Navy), Hotkey (Hotkey - Normal)
+// Abilities: A04T (Mass Animate Dead), Hotkey (Hotkey - Normal)
 {
 C
 }
@@ -86171,7 +86171,7 @@ Research Seal of Righteousness
 }
 
 STRING 14370
-// Abilities: A0CY (Powered Up Ammunition), Hotkey (Hotkey - Normal)
+// Upgrades: Rusf (Stone Form), Hotkey (Hotkey)
 {
 C
 }
@@ -86183,13 +86183,13 @@ STRING 14371
 }
 
 STRING 14372
-// Abilities: A0CY (Powered Up Ammunition), Unhotkey (Hotkey - Turn Off)
+// Upgrades: Rowt (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 14373
-// Abilities: A04T (Mass Animate Dead), Hotkey (Hotkey - Normal)
+// Upgrades: Rowt (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
 {
 C
 }
@@ -86621,7 +86621,7 @@ rlev
 }
 
 STRING 14448
-// Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R04R (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -86717,13 +86717,13 @@ STRING 14463
 }
 
 STRING 14464
-// Upgrades: Rusf (Stone Form), Hotkey (Hotkey)
+// Upgrades: Rolf (Liquid Fire), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 14465
-// Upgrades: Rowt (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
+// Upgrades: Rhfs (Fragmentation Shards), Hotkey (Hotkey)
 {
 C
 }
@@ -87017,7 +87017,7 @@ X
 }
 
 STRING 14514
-// Upgrades: Rowt (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
+// Upgrades: Rhan (Animal War Training), Hotkey (Hotkey)
 {
 C
 }
@@ -87185,7 +87185,7 @@ ratr
 }
 
 STRING 14542
-// Upgrades: Rolf (Liquid Fire), Hotkey (Hotkey)
+// Upgrades: Rers (Resistant Skin), Hotkey (Hotkey)
 {
 C
 }
@@ -87528,13 +87528,13 @@ STRING 14598
 }
 
 STRING 14599
-// Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R04R (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 14600
-// Upgrades: Rhfs (Fragmentation Shards), Hotkey (Hotkey)
+// Upgrades: R06L (Magic Sentry), Hotkey (Hotkey)
 {
 C
 }
@@ -87552,7 +87552,7 @@ Revive Dark Prophet
 }
 
 STRING 14603
-// Upgrades: Rhan (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R066 (Burning Oil), Hotkey (Hotkey)
 {
 C
 }
@@ -87624,7 +87624,7 @@ STRING 14614
 }
 
 STRING 14615
-// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -87648,7 +87648,7 @@ Teleports the hero a short distance, allowing her to move in and out of combat.|
 }
 
 STRING 14619
-// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -87750,7 +87750,7 @@ STRING 14636
 }
 
 STRING 14637
-// Upgrades: Rers (Resistant Skin), Hotkey (Hotkey)
+// Upgrades: R05X (Mark of the Claw), Hotkey (Hotkey)
 {
 C
 }
@@ -87876,7 +87876,7 @@ Upgrade to Improved Guard Tower
 }
 
 STRING 14658
-// Upgrades: R06L (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R04D (Magic Sentry), Hotkey (Hotkey)
 {
 C
 }
@@ -88445,13 +88445,13 @@ STRING 14753
 }
 
 STRING 14754
-// Upgrades: R066 (Burning Oil), Hotkey (Hotkey)
+// Upgrades: R04C (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 14755
-// Upgrades: R05X (Mark of the Claw), Hotkey (Hotkey)
+// Upgrades: R04C (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 C
 }
@@ -88625,7 +88625,7 @@ STRING 14783
 }
 
 STRING 14784
-// Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R04R (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
@@ -88871,7 +88871,7 @@ Quest Completed: The Grand Marshal
 }
 
 STRING 14825
-// Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R04R (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -89057,7 +89057,7 @@ STRING 14855
 }
 
 STRING 14856
-// Upgrades: R04D (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R03I (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 C
 }
@@ -89153,7 +89153,7 @@ rlev
 }
 
 STRING 14872
-// Upgrades: R04R (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -89279,7 +89279,7 @@ rlev
 }
 
 STRING 14893
-// Upgrades: R04R (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
@@ -89429,7 +89429,7 @@ STRING 14917
 }
 
 STRING 14918
-// Upgrades: R04C (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R03I (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 C
 }
@@ -89543,7 +89543,7 @@ Improves Far Seers' Chain Lightning by increasing its damage dealt to <ACcl,Data
 }
 
 STRING 14937
-// Upgrades: R04R (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
@@ -89579,7 +89579,7 @@ Blackhand's Howl - [|cffffcc00Level 4|r]
 }
 
 STRING 14943
-// Upgrades: R04C (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R036 (Pillage), Hotkey (Hotkey)
 {
 C
 }
@@ -89603,7 +89603,7 @@ X
 }
 
 STRING 14947
-// Upgrades: R03I (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R02G (Corrosive Breath), Hotkey (Hotkey)
 {
 C
 }
@@ -89651,7 +89651,7 @@ STRING 14954
 }
 
 STRING 14955
-// Upgrades: R03I (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R01V (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
 {
 C
 }
@@ -89843,7 +89843,7 @@ rhpo
 }
 
 STRING 14987
-// Upgrades: R036 (Pillage), Hotkey (Hotkey)
+// Upgrades: R01V (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
 {
 C
 }
@@ -90341,37 +90341,37 @@ Archer filled tower defense.|n|cfff5962dCan learn:|R Magic Sentry|n|cfff5962dUpg
 }
 
 STRING 15070
-// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
 
 STRING 15071
-// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
 
 STRING 15072
-// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
 
 STRING 15073
-// Upgrades: R04R (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
 
 STRING 15074
-// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
 
 STRING 15075
-// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -90383,13 +90383,13 @@ Increases the armor of all Naval Units.
 }
 
 STRING 15077
-// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 15078
-// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
@@ -90461,7 +90461,7 @@ Bloodpact
 }
 
 STRING 15090
-// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -90980,7 +90980,7 @@ Increases Inquisitor's mana capacity, mana regeneration rate, hit points, damage
 }
 
 STRING 15186
-// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -91792,13 +91792,13 @@ X
 }
 
 STRING 15321
-// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
 
 STRING 15322
-// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -91840,7 +91840,7 @@ Quest Completed: Arathi Volunteer
 }
 
 STRING 15329
-// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
@@ -92290,7 +92290,7 @@ The hero heals every ally in a large radious around him. |n|n|cffffcc00Level 4|r
 }
 
 STRING 15404
-// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
@@ -92370,7 +92370,7 @@ STRING 15416
 }
 
 STRING 15417
-// Upgrades: R02G (Corrosive Breath), Hotkey (Hotkey)
+// Upgrades: R01D (Freezing Breath), Hotkey (Hotkey)
 {
 C
 }
@@ -93414,7 +93414,7 @@ Revive Lord Wizard
 }
 
 STRING 15591
-// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -93624,7 +93624,7 @@ Guarding Light - [|cffffcc00Level 2|r]
 }
 
 STRING 15627
-// Upgrades: R01V (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
+// Upgrades: R00T (Long Rifles), Hotkey (Hotkey)
 {
 C
 }
@@ -93666,7 +93666,7 @@ E
 }
 
 STRING 15634
-// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -93744,7 +93744,7 @@ Orgrimmar
 }
 
 STRING 15647
-// Upgrades: R01V (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
+// Upgrades: R00D (Envenomed Spears), Hotkey (Hotkey)
 {
 C
 }
@@ -93774,7 +93774,7 @@ Research Power Infusion 2
 }
 
 STRING 15652
-// Upgrades: R01D (Freezing Breath), Hotkey (Hotkey)
+// Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -95503,7 +95503,7 @@ Q
 }
 
 STRING 15941
-// Upgrades: R00T (Long Rifles), Hotkey (Hotkey)
+// Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -95521,7 +95521,7 @@ E
 }
 
 STRING 15944
-// Upgrades: R00D (Envenomed Spears), Hotkey (Hotkey)
+// Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -95982,7 +95982,7 @@ F
 }
 
 STRING 16021
-// Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R01O (Defend), Hotkey (Hotkey)
 {
 C
 }
@@ -96071,7 +96071,7 @@ STRING 16035
 }
 
 STRING 16036
-// Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R01T (Defend), Hotkey (Hotkey)
 {
 C
 }
@@ -96265,13 +96265,13 @@ Open the Scholomance
 }
 
 STRING 16068
-// Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R04R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 16069
-// Upgrades: R01O (Defend), Hotkey (Hotkey)
+// Upgrades: R04R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -96283,13 +96283,13 @@ E
 }
 
 STRING 16071
-// Upgrades: R01T (Defend), Hotkey (Hotkey)
+// Upgrades: R04R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 16072
-// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -96307,7 +96307,7 @@ Z
 }
 
 STRING 16075
-// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -96535,7 +96535,7 @@ C
 }
 
 STRING 16113
-// Upgrades: R04R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -96547,7 +96547,7 @@ E
 }
 
 STRING 16115
-// Upgrades: R04R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -96589,7 +96589,7 @@ STRING 16121
 }
 
 STRING 16122
-// Units: h08X (Sappers), EditorSuffix (Name - Editor Suffix)
+// Units: n099 (Ogre Mercenary), EditorSuffix (Name - Editor Suffix)
 {
 (goblin)
 }
@@ -96775,13 +96775,13 @@ Q
 }
 
 STRING 16153
-// Upgrades: R04R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 16154
-// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -96793,7 +96793,7 @@ E
 }
 
 STRING 16156
-// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -96811,7 +96811,7 @@ Q
 }
 
 STRING 16159
-// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -96823,7 +96823,7 @@ E
 }
 
 STRING 16161
-// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -97048,13 +97048,13 @@ W
 }
 
 STRING 16199
-// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 16200
-// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -97066,7 +97066,7 @@ This unit is corrupted
 }
 
 STRING 16202
-// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -97078,19 +97078,19 @@ E
 }
 
 STRING 16204
-// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 16205
-// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 16206
-// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -97330,7 +97330,7 @@ Revive Bolvar Fordragon
 }
 
 STRING 16246
-// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -97342,7 +97342,7 @@ STRING 16247
 }
 
 STRING 16248
-// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -97420,13 +97420,13 @@ Warrior Hero, adept at bolstering troups and melee combat.|n|cfff5962dCan Learn:
 }
 
 STRING 16262
-// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
 
 STRING 16263
-// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -97588,7 +97588,7 @@ Reduces the damage of all incoming attacks by <A066,DataC1>. Attacks cannot be r
 }
 
 STRING 16290
-// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
@@ -97654,7 +97654,7 @@ Train Arbalest
 }
 
 STRING 16301
-// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
@@ -97780,13 +97780,13 @@ Path of Exile
 }
 
 STRING 16322
-// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
 
 STRING 16323
-// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -97942,7 +97942,7 @@ F
 }
 
 STRING 16349
-// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -97960,7 +97960,7 @@ W
 }
 
 STRING 16352
-// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -97972,13 +97972,13 @@ Illidan, trying to escape Kil'jaeden wrath, escapes to Outland. His thirst for p
 }
 
 STRING 16354
-// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 16355
-// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
@@ -98188,13 +98188,13 @@ Path of Madness
 }
 
 STRING 16390
-// Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
 
 STRING 16391
-// Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -98248,7 +98248,7 @@ Plague Catapult
 }
 
 STRING 16400
-// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -98260,7 +98260,7 @@ STRING 16401
 }
 
 STRING 16402
-// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -98314,13 +98314,13 @@ W
 }
 
 STRING 16411
-// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 16412
-// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
@@ -99069,7 +99069,7 @@ Baron of Gadgetzan
 }
 
 STRING 16537
-// Units: n099 (Ogre Mercenary), EditorSuffix (Name - Editor Suffix)
+// Units: h08Y (Gunner), EditorSuffix (Name - Editor Suffix)
 {
 (goblin)
 }
@@ -99117,7 +99117,7 @@ Frenzy
 }
 
 STRING 16545
-// Units: h08Y (Gunner), EditorSuffix (Name - Editor Suffix)
+// Units: h08Z (Assault Tank), EditorSuffix (Name - Editor Suffix)
 {
 (goblin)
 }
@@ -99141,7 +99141,7 @@ Train Sappers
 }
 
 STRING 16549
-// Units: h08Z (Assault Tank), EditorSuffix (Name - Editor Suffix)
+// Units: o04P (Wizard), EditorSuffix (Name - Editor Suffix)
 {
 (goblin)
 }
@@ -99159,13 +99159,13 @@ Train Ogre Mercenary
 }
 
 STRING 16552
-// Units: o04P (Wizard), EditorSuffix (Name - Editor Suffix)
+// Units: o04Q (Tinker), EditorSuffix (Name - Editor Suffix)
 {
 (goblin)
 }
 
 STRING 16553
-// Units: o04Q (Tinker), EditorSuffix (Name - Editor Suffix)
+// Units: h090 (Trade Prince Guard), EditorSuffix (Name - Editor Suffix)
 {
 (goblin)
 }
@@ -99189,7 +99189,7 @@ Train Gunner
 }
 
 STRING 16557
-// Units: h090 (Trade Prince Guard), EditorSuffix (Name - Editor Suffix)
+// Units: o04S (Trader), EditorSuffix (Name - Editor Suffix)
 {
 (goblin)
 }
@@ -99237,7 +99237,7 @@ Train Alchemist
 }
 
 STRING 16565
-// Units: o04S (Trader), EditorSuffix (Name - Editor Suffix)
+// Units: h091 (War Zeppelin), EditorSuffix (Name - Editor Suffix)
 {
 (goblin)
 }
@@ -99285,7 +99285,7 @@ Train Wizard
 }
 
 STRING 16573
-// Units: h091 (War Zeppelin), EditorSuffix (Name - Editor Suffix)
+// Units: h011 (Intercontinental Artillery), EditorSuffix (Name - Editor Suffix)
 {
 (goblin)
 }
@@ -99381,7 +99381,7 @@ E
 }
 
 STRING 16589
-// Units: h011 (Intercontinental Artillery), EditorSuffix (Name - Editor Suffix)
+// Units: o05I (Missile Battery), EditorSuffix (Name - Editor Suffix)
 {
 (goblin)
 }
@@ -99411,13 +99411,13 @@ STRING 16593
 }
 
 STRING 16594
-// Units: o05I (Missile Battery), EditorSuffix (Name - Editor Suffix)
+// Abilities: A07O (Reveal), EditorSuffix (Editor Suffix)
 {
 (goblin)
 }
 
 STRING 16595
-// Abilities: A07O (Reveal), EditorSuffix (Editor Suffix)
+// Abilities: A0NY (AOE damage upon death), EditorSuffix (Editor Suffix)
 {
 (goblin)
 }
@@ -99489,13 +99489,13 @@ Disorienting Howl - [|cffffcc00Level 1|r]
 }
 
 STRING 16607
-// Abilities: A0NY (AOE damage upon death), EditorSuffix (Editor Suffix)
+// Abilities: A02R (Mage Armor), EditorSuffix (Editor Suffix)
 {
 (goblin)
 }
 
 STRING 16608
-// Abilities: A02R (Mage Armor), EditorSuffix (Editor Suffix)
+// Upgrades: R07L (Shaman Adept Training,Shaman Master Training), EditorSuffix (Editor Suffix)
 {
 (goblin)
 }
@@ -103155,19 +103155,19 @@ D
 }
 
 STRING 17222
-// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 17223
-// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 17224
-// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -103894,13 +103894,13 @@ Gunner Pilot
 }
 
 STRING 17345
-// Upgrades: R07L (Shaman Adept Training,Shaman Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R07M (Shaman Adept Training,Shaman Master Training), EditorSuffix (Editor Suffix)
 {
 (goblin)
 }
 
 STRING 17346
-// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -104824,7 +104824,7 @@ Spawn Flying Horror
 }
 
 STRING 17500
-// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -104938,7 +104938,7 @@ Calls down 3 waves of fire that damage units in an area. Each wave deals 25 dama
 }
 
 STRING 17519
-// Upgrades: R07M (Shaman Adept Training,Shaman Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
 {
 (goblin)
 }
@@ -105010,7 +105010,7 @@ Learn Goldrinn's Howl - [|cffffcc00Level %d|r]
 }
 
 STRING 17531
-// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -105371,7 +105371,7 @@ Lose everything but spawn with a small dreadlord force south of Capital Palace.Y
 }
 
 STRING 17591
-// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
@@ -105413,7 +105413,7 @@ STRING 17597
 }
 
 STRING 17598
-// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
@@ -106576,7 +106576,7 @@ E
 }
 
 STRING 17791
-// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -106588,19 +106588,19 @@ D
 }
 
 STRING 17793
-// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 17794
-// Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 17795
-// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -107332,7 +107332,7 @@ Defender Shield
 }
 
 STRING 17917
-// Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -107410,7 +107410,7 @@ E
 }
 
 STRING 17930
-// Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -107590,19 +107590,19 @@ Evacuate Outland through the dimensional ship The Exodar. You will land in Azure
 }
 
 STRING 17960
-// Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 17961
-// Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 17962
-// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -108916,7 +108916,7 @@ Increases Archivists' mana capacity, mana regeneration rate, attack damage and g
 }
 
 STRING 18181
-// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -108982,13 +108982,13 @@ E
 }
 
 STRING 18192
-// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 18193
-// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -109000,13 +109000,13 @@ Rays of a New Dawn
 }
 
 STRING 18195
-// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
 
 STRING 18196
-// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -109018,13 +109018,13 @@ Rays of a New Dawn
 }
 
 STRING 18198
-// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
 
 STRING 18199
-// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -109036,19 +109036,19 @@ Tirion Fordring has decided to raise the Argent Crusade to help the Alliance in 
 }
 
 STRING 18201
-// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 18202
-// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 18203
-// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -109690,13 +109690,13 @@ Build the Empire
 }
 
 STRING 18310
-// Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 18311
-// Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -109708,13 +109708,13 @@ Join the Crusade
 }
 
 STRING 18313
-// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
 
 STRING 18314
-// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -109726,13 +109726,13 @@ Join the Crusade
 }
 
 STRING 18316
-// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
 
 STRING 18317
-// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -109744,19 +109744,19 @@ Lose everything but join the Scarlet Crusade with a small force and Garithos in 
 }
 
 STRING 18319
-// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 18320
-// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 18321
-// Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -109774,13 +109774,13 @@ X
 }
 
 STRING 18324
-// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 18325
-// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -109792,13 +109792,13 @@ Garithos Mind Control
 }
 
 STRING 18327
-// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
 
 STRING 18328
-// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -109810,13 +109810,13 @@ Garithos Mind Control
 }
 
 STRING 18330
-// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
 
 STRING 18331
-// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -109828,19 +109828,19 @@ Lose everything but join the Forsaken with a small force and Garithos in Capital
 }
 
 STRING 18333
-// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 18334
-// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 18335
-// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -110670,19 +110670,19 @@ Z
 }
 
 STRING 18473
-// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 18474
-// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 18475
-// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -110694,7 +110694,7 @@ Patrons Tier 3 2
 }
 
 STRING 18477
-// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -110964,7 +110964,7 @@ Train Naga Sea Witch
 }
 
 STRING 18522
-// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -113581,7 +113581,7 @@ Build the Nazjatar Empire
 }
 
 STRING 18958
-// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -113719,7 +113719,7 @@ W
 }
 
 STRING 18981
-// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -113779,19 +113779,19 @@ Quest Completed: Shrine of the Wolf God
 }
 
 STRING 18991
-// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 18992
-// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 18993
-// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -113821,13 +113821,13 @@ X
 }
 
 STRING 18998
-// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 18999
-// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -113839,13 +113839,13 @@ The Way of the Dragonmaw Clan
 }
 
 STRING 19001
-// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
 
 STRING 19002
-// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -113857,13 +113857,13 @@ The Way of the Dragonmaw Clan
 }
 
 STRING 19004
-// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
 
 STRING 19005
-// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -113875,19 +113875,19 @@ You will start the game as the Dragonmaw Clan, allied to the Horde and trying to
 }
 
 STRING 19007
-// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 19008
-// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 19009
-// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -113905,13 +113905,13 @@ Unleash the Spirits of Ashenvale
 }
 
 STRING 19012
-// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 19013
-// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -113923,13 +113923,13 @@ The Path of the Old Gods
 }
 
 STRING 19015
-// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
 
 STRING 19016
-// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -113941,13 +113941,13 @@ The Path of the Old Gods
 }
 
 STRING 19018
-// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
 
 STRING 19019
-// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -113959,19 +113959,19 @@ You will start the game as normal playing the Twilight Hammer
 }
 
 STRING 19021
-// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 19022
-// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 19023
-// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -114127,13 +114127,13 @@ X
 }
 
 STRING 19049
-// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 19050
-// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -114145,13 +114145,13 @@ Mass Unholy Armor - [|cffffcc00Level 2|r]
 }
 
 STRING 19052
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
 
 STRING 19053
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
 }
@@ -114163,13 +114163,13 @@ Mass Unholy Armor - [|cffffcc00Level 3|r]
 }
 
 STRING 19055
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
 
 STRING 19056
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
 }
@@ -114181,19 +114181,19 @@ Mass Unholy Armor - [|cffffcc00Level 4|r]
 }
 
 STRING 19058
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 19059
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of all Naval Units.
 }
 
 STRING 19060
-// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -114211,13 +114211,13 @@ Unleash the Spirits of Ashenvale
 }
 
 STRING 19063
-// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 19064
-// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -114277,7 +114277,7 @@ The hero unleashes a devastating roar that reduces attack damage of all nearby e
 }
 
 STRING 19074
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -114517,13 +114517,13 @@ Revive Gronn Overlord
 }
 
 STRING 19114
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 19115
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -116159,7 +116159,7 @@ Learn Dragonmaw Battle Standard - [|cffffcc00Level %d|r]
 }
 
 STRING 19399
-// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 S
 }
