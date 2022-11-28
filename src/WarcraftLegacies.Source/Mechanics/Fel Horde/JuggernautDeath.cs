@@ -6,9 +6,13 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Mechanics.Fel_Horde
 {
-
+  ///<summary>
+  ///This script involves the mechanic where two power generators in the Fel Horde
+  ///starting area will destroy two of their associated invulnerable Fel Juggernauts
+  ///when destroyed.
+  ///</summary>
  
-  internal class FelHordeJuggernautDeath
+  internal static class JuggernautDeath
   {
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
