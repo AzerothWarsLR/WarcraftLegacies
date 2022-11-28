@@ -17262,7 +17262,7 @@ Flying bastion of Legion's reign.|n|cfff5962dAbilities:|R Curse Aura, Multishot 
 }
 
 STRING 2878
-// Upgrades: R096 (Defend), EditorSuffix (Editor Suffix)
+// Units: U023 (The Soulflayer), EditorSuffix (Name - Editor Suffix)
 {
 (Legion)
 }
@@ -18682,7 +18682,7 @@ F
 }
 
 STRING 3116
-// Upgrades: R096 (Defend), Hotkey (Hotkey)
+// Units: h09P (Scarlet Keep), Hotkey (Hotkey)
 {
 A
 }
@@ -18712,7 +18712,7 @@ STRING 3120
 }
 
 STRING 3121
-// Units: h09P (Scarlet Keep), Hotkey (Hotkey)
+// Units: h09Q (Royal Fortress), Hotkey (Hotkey)
 {
 A
 }
@@ -18844,7 +18844,7 @@ STRING 3142
 }
 
 STRING 3143
-// Units: h09Q (Royal Fortress), Hotkey (Hotkey)
+// Units: o052 (Ceremonial Altar), Hotkey (Hotkey)
 {
 A
 }
@@ -18988,7 +18988,7 @@ STRING 3166
 }
 
 STRING 3167
-// Units: o052 (Ceremonial Altar), Hotkey (Hotkey)
+// Units: n0C4 (Spawning Grounds), Hotkey (Hotkey)
 {
 A
 }
@@ -19108,7 +19108,7 @@ Quest Completed: Liberation of Lordaeron
 }
 
 STRING 3187
-// Units: n0C4 (Spawning Grounds), Hotkey (Hotkey)
+// Units: O05O (Ragefire Warlock), Hotkey (Hotkey)
 {
 A
 }
@@ -19858,7 +19858,7 @@ Summons a water elemental to attack the Hydromancer's enemies. Has <hwat,realHP>
 }
 
 STRING 3315
-// Units: O05O (Ragefire Warlock), Hotkey (Hotkey)
+// Units: E01G (Gronn Overlord), Hotkey (Hotkey)
 {
 A
 }
@@ -20110,7 +20110,7 @@ Q
 }
 
 STRING 3357
-// Units: E01G (Gronn Overlord), Hotkey (Hotkey)
+// Units: o067 (War Camp), Hotkey (Hotkey)
 {
 A
 }
@@ -20416,7 +20416,7 @@ STRING 3407
 }
 
 STRING 3408
-// Units: o067 (War Camp), Hotkey (Hotkey)
+// Units: e01T (Coral of War), Hotkey (Hotkey)
 {
 A
 }
@@ -20614,7 +20614,7 @@ Basic worker unit.|n|cfff5962dAbilities:|r Repair, Gather|n|cfff5962dCan Learn:|
 }
 
 STRING 3441
-// Units: U023 (The Soulflayer), EditorSuffix (Name - Editor Suffix)
+// Units: n0BE (Legion Nexus), EditorSuffix (Name - Editor Suffix)
 {
 (Legion)
 }
@@ -20788,7 +20788,7 @@ Improved Trueshot Aura
 }
 
 STRING 3470
-// Units: n0BE (Legion Nexus), EditorSuffix (Name - Editor Suffix)
+// Abilities: Anh2 (Heal), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -20806,7 +20806,7 @@ STRING 3472
 }
 
 STRING 3473
-// Units: e01T (Coral of War), Hotkey (Hotkey)
+// Items: phea (Potion of Healing), Hotkey (Hotkey)
 {
 A
 }
@@ -21215,7 +21215,7 @@ STRING 3540
 }
 
 STRING 3541
-// Items: phea (Potion of Healing), Hotkey (Hotkey)
+// Items: pghe (Potion of Greater Healing), Hotkey (Hotkey)
 {
 A
 }
@@ -21617,7 +21617,7 @@ STRING 3607
 }
 
 STRING 3608
-// Items: pghe (Potion of Greater Healing), Hotkey (Hotkey)
+// Items: hlst (Health Stone), Hotkey (Hotkey)
 {
 A
 }
@@ -21893,7 +21893,7 @@ STRING 3653
 }
 
 STRING 3654
-// Items: hlst (Health Stone), Hotkey (Hotkey)
+// Items: gemt (Gem of True Seeing), Hotkey (Hotkey)
 {
 A
 }
@@ -22013,7 +22013,7 @@ STRING 3673
 }
 
 STRING 3674
-// Items: gemt (Gem of True Seeing), Hotkey (Hotkey)
+// Abilities: A0UH (Phase Blade Auto-Cast), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -22259,13 +22259,13 @@ Revive Necromancer
 }
 
 STRING 3715
-// Abilities: Anh2 (Heal), EditorSuffix (Editor Suffix)
+// Abilities: ACmf (Mana Shield), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
 
 STRING 3716
-// Abilities: A0UH (Phase Blade Auto-Cast), Hotkey (Hotkey - Normal)
+// Abilities: A0UG (Phase Blade Auto-Cast), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -22355,7 +22355,7 @@ Cave
 }
 
 STRING 3731
-// Abilities: ACmf (Mana Shield), EditorSuffix (Editor Suffix)
+// Abilities: ACdm (Abolish Magic), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -22709,7 +22709,7 @@ Summon Water Elemental
 }
 
 STRING 3794
-// Abilities: A0UG (Phase Blade Auto-Cast), Hotkey (Hotkey - Normal)
+// Abilities: A0K2 (Raise Dead Auto-Cast), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -23446,7 +23446,7 @@ STRING 3916
 }
 
 STRING 3917
-// Abilities: A0K2 (Raise Dead Auto-Cast), Hotkey (Hotkey - Normal)
+// Abilities: A0JY (Raise Dead Auto-Cast), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -23704,7 +23704,7 @@ Extremely heavily armored vehicle.|n|cfff5962dAbilities:|R Flamethrower, Lockdow
 }
 
 STRING 3960
-// Abilities: A0JY (Raise Dead Auto-Cast), Hotkey (Hotkey - Normal)
+// Upgrades: Rusm (Skeletal Mastery), Hotkey (Hotkey)
 {
 A
 }
@@ -23752,7 +23752,7 @@ STRING 3967
 }
 
 STRING 3968
-// Upgrades: Rusm (Skeletal Mastery), Hotkey (Hotkey)
+// Upgrades: Rufb (Freezing Breath), Hotkey (Hotkey)
 {
 A
 }
@@ -23836,7 +23836,7 @@ STRING 3981
 }
 
 STRING 3982
-// Upgrades: Rufb (Freezing Breath), Hotkey (Hotkey)
+// Upgrades: Ruar (Unholy Armor,Improved Unholy Armor,Advanced Unholy Armor), Hotkey (Hotkey)
 {
 A
 }
@@ -24934,7 +24934,7 @@ Adds 6 bonus fire damage to the attack of a Hero when carried. The Hero's attack
 }
 
 STRING 4165
-// Upgrades: Ruar (Unholy Armor,Improved Unholy Armor,Advanced Unholy Armor), Hotkey (Hotkey)
+// Upgrades: Robs (Brute Strength), Hotkey (Hotkey)
 {
 A
 }
@@ -25036,7 +25036,7 @@ Blasts enemy units with a wave of frost that deals <A0OS,DataB1> damage to the t
 }
 
 STRING 4182
-// Upgrades: Robs (Brute Strength), Hotkey (Hotkey)
+// Upgrades: Rhar (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
@@ -27090,7 +27090,7 @@ Agave
 }
 
 STRING 4524
-// Abilities: ACdm (Abolish Magic), EditorSuffix (Editor Suffix)
+// Abilities: ACcs (Curse), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -29718,7 +29718,7 @@ STRING 4961
 }
 
 STRING 4962
-// Abilities: ACcs (Curse), EditorSuffix (Editor Suffix)
+// Abilities: A0GU (Inject Spiderlings), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -32601,12 +32601,6 @@ STRING 5442
 // Units: E01H (Defias Kingpin), Revivetip (Tooltip - Revive)
 {
 Revive Defias Kingpin
-}
-
-STRING 5443
-// Units: n0D8 (Mercenaries Tavern 1), EditorSuffix (Name - Editor Suffix)
-{
-(Vassals)
 }
 
 STRING 5444
@@ -37938,7 +37932,7 @@ Calls down a storm of lightning to strike enemy units for 40 damage in a medium 
 }
 
 STRING 6332
-// Abilities: A0GU (Inject Spiderlings), EditorSuffix (Editor Suffix)
+// Abilities: A0AZ (Paralyse), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -38244,7 +38238,7 @@ Life Drain
 }
 
 STRING 6383
-// Abilities: A0AZ (Paralyse), EditorSuffix (Editor Suffix)
+// Abilities: A07G (Trueshot Aura), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -38406,7 +38400,7 @@ STRING 6409
 }
 
 STRING 6410
-// Abilities: A07G (Trueshot Aura), EditorSuffix (Editor Suffix)
+// Abilities: A08A (Inferno), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -44120,7 +44114,7 @@ STRING 7358
 }
 
 STRING 7359
-// Abilities: A08A (Inferno), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B022 (), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -56270,7 +56264,7 @@ W
 }
 
 STRING 9392
-// Buffs/Effects: B022 (), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B040 (), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -63585,7 +63579,7 @@ Burns nearby enemy units for 20 points of damage per second.
 }
 
 STRING 10613
-// Buffs/Effects: B040 (), EditorSuffix (Editor Suffix)
+// Upgrades: R04G (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -65193,7 +65187,7 @@ STRING 10881
 }
 
 STRING 10882
-// Upgrades: Rhar (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: Rerh (Reinforced Hides,Improved Reinforced Hides,Advanced Reinforced Hides), Hotkey (Hotkey)
 {
 A
 }
@@ -70425,7 +70419,7 @@ Calls forth a cone of lightning on a target enemy unit, hitting up to 11 enemy u
 }
 
 STRING 11756
-// Upgrades: R04G (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R028 (Banshee Adept Training,Banshee Master Training), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -73019,7 +73013,7 @@ Send emissaries to rally the Blackrock Clan to the Fel Horde.|n|n|cffffcc00Requi
 }
 
 STRING 12193
-// Upgrades: R028 (Banshee Adept Training,Banshee Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R027 (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -74843,7 +74837,7 @@ Revive Daelin Proudmoore
 }
 
 STRING 12498
-// Upgrades: R027 (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R01Y (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -74855,7 +74849,7 @@ STRING 12499
 }
 
 STRING 12500
-// Upgrades: Rerh (Reinforced Hides,Improved Reinforced Hides,Advanced Reinforced Hides), Hotkey (Hotkey)
+// Upgrades: Remg (Upgrade Moon Glaive), Hotkey (Hotkey)
 {
 A
 }
@@ -81666,7 +81660,7 @@ This unit is Paralysed
 }
 
 STRING 13637
-// Upgrades: R01Y (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R003 (Cannibalize), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -81750,7 +81744,7 @@ Mind Shield
 }
 
 STRING 13651
-// Upgrades: Remg (Upgrade Moon Glaive), Hotkey (Hotkey)
+// Upgrades: R06I (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -82764,7 +82758,7 @@ STRING 13821
 }
 
 STRING 13822
-// Upgrades: R06I (Defend), Hotkey (Hotkey)
+// Upgrades: R01L (Magic Sentry), Hotkey (Hotkey)
 {
 A
 }
@@ -82842,13 +82836,13 @@ STRING 13834
 }
 
 STRING 13835
-// Upgrades: R01L (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R00W (Magic Sentry), Hotkey (Hotkey)
 {
 A
 }
 
 STRING 13836
-// Upgrades: R00W (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R001 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -85913,7 +85907,7 @@ Team not full
 }
 
 STRING 14347
-// Upgrades: R003 (Cannibalize), EditorSuffix (Editor Suffix)
+// Upgrades: R096 (Defend), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -92952,7 +92946,7 @@ Creates a barrier that stops 800 points of spell damage from affecting a target 
 }
 
 STRING 15534
-// Upgrades: R001 (Defend), Hotkey (Hotkey)
+// Upgrades: R03L (Chaos), Hotkey (Hotkey)
 {
 A
 }
@@ -98032,7 +98026,7 @@ STRING 16382
 }
 
 STRING 16383
-// Upgrades: R03L (Chaos), Hotkey (Hotkey)
+// Upgrades: R046 (Marksmanship), Hotkey (Hotkey)
 {
 A
 }
@@ -103053,7 +103047,7 @@ E
 }
 
 STRING 17220
-// Upgrades: R046 (Marksmanship), Hotkey (Hotkey)
+// Upgrades: R02X (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -106092,19 +106086,19 @@ STRING 17725
 }
 
 STRING 17726
-// Upgrades: R02X (Defend), Hotkey (Hotkey)
-{
-A
-}
-
-STRING 17727
 // Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
 
-STRING 17728
+STRING 17727
 // Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+A
+}
+
+STRING 17728
+// Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 A
 }
@@ -110286,19 +110280,19 @@ A
 }
 
 STRING 18424
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
-{
-A
-}
-
-STRING 18425
 // Upgrades: R090 (Defend), Hotkey (Hotkey)
 {
 A
 }
 
-STRING 18426
+STRING 18425
 // Upgrades: R091 (Defend), Hotkey (Hotkey)
+{
+A
+}
+
+STRING 18426
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
@@ -114409,7 +114403,7 @@ The Forest will be unleashed upon the Warsong Lumber Camp.|n|n|cffffcc00Required
 }
 
 STRING 19111
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
 {
 A
 }
@@ -114673,7 +114667,7 @@ Train Drake
 }
 
 STRING 19157
-// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: R096 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -114784,12 +114778,6 @@ STRING 19175
 // Abilities: ANen (Ensnare), EditorSuffix (Editor Suffix)
 {
 (Naga)
-}
-
-STRING 19177
-// Units: n0D8 (Mercenaries Tavern 1), Name (Name)
-{
-Mercenaries Tavern 1
 }
 
 STRING 19178
