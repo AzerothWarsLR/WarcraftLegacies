@@ -113,6 +113,7 @@ namespace MacroTools
       if (!_destructablesByTypeId.ContainsKey(destructableId))
         _destructablesByTypeId[destructableId] = new List<destructable>();
       _destructablesByTypeId[destructableId].Add(destructable);
+      DestructibleHider.Register(destructable);
     }
 
     private void ReadAllUnits()
