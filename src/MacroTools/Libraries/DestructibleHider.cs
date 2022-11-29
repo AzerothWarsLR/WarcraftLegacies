@@ -49,10 +49,13 @@ using static War3Api.Common;
 
 namespace MacroTools.Libraries
 {
-  public class DestructibleHider
+  /// <summary>
+  /// Responsible for hiding destructibles which are not within a player's view.
+  /// </summary>
+  public static class DestructibleHider
   {
     //==== CONFIGURABLES ====
-    private const float Interval = (float)0.10; //Update interval in seconds.
+    private const float Interval = 0.10f; //Update interval in seconds.
     //[in multiplayer, the camera positions will only get updated every 0.05-0.1 seconds, so setting it to a lower value than 0.05 makes no sense]
     //[update frequency can be much higher in single player mode!]
     private const int DrawDistance = 3072; //the radius around the camera target in which the tiles are considered visible; should be about the same as sight radius (not diameter) of the camera; for 3d cams, use the FarZ value
@@ -69,11 +72,9 @@ namespace MacroTools.Libraries
     private static readonly float MapMinY;
     private const int Tilesize = DrawDistance / TileResolution;
     
-    private static bool Filter(destructable destructable)
-    {
-      return GetDestructableMaxLife(destructable) == 1;
-    }
-    
+    private static bool Filter(destructable destructable) => 
+      GetDestructableMaxLife(destructable) == 1;
+
     /// <summary>
     /// Constructor for the DestructibleHider
     /// </summary>
