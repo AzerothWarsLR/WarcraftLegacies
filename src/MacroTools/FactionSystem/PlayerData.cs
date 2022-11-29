@@ -12,12 +12,12 @@ namespace MacroTools.FactionSystem
     /// <summary>
     /// Fired when the player leaves a team.
     /// </summary>
-    public static event EventHandler<PlayerChangeTeamEventArgs>? PlayerLeftTeam;
+    public event EventHandler<PlayerChangeTeamEventArgs>? PlayerLeftTeam;
     
     /// <summary>
     /// Fired when the player joins a team.
     /// </summary>
-    public static event EventHandler<PlayerChangeTeamEventArgs>? PlayerJoinedTeam;
+    public event EventHandler<PlayerChangeTeamEventArgs>? PlayerJoinedTeam;
 
     /// <summary>
     /// Fired when the player changes their <see cref="Faction"/>.
