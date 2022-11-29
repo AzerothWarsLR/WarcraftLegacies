@@ -9,7 +9,6 @@ using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-
 namespace WarcraftLegacies.Source.Quests.Sentinels
 {
   public sealed class QuestFeathermoon : QuestData
@@ -22,30 +21,36 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     {
       AddObjective(new ObjectiveLegendReachRect(LegendSentinels.Tyrande, Regions.FeathermoonUnlock,
         "Feathermoon Stronghold"));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01R"))));
-      AddObjective(new ObjectiveUpgrade(FourCC("n06P"), FourCC("n06J")));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N01R_ASTRANAAR_15GOLD_MIN)));
+      AddObjective(new ObjectiveUpgrade(Constants.UNIT_N06P_SENTINEL_ENCLAVE_SENTINELS, Constants.UNIT_N06J_SENTINEL_OUTPOST_SENTINELS));
       AddObjective(new ObjectiveExpire(1485));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = FourCC("R06M");
+      ResearchId = Constants.UPGRADE_R06M_QUEST_COMPLETED_FEATHERMOON_RELIEF;
       foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
+
+      Required = true;
     }
 
+    /// <inheritdoc />
     protected override string CompletionPopup =>
       "Feathermoon Stronghold has been relieved and has joined the Sentinels in their war effort";
 
+    /// <inheritdoc />
     protected override string RewardDescription =>
       "Control of all units in Feathermoon Stronghold and make Shandris and Maiev trainable at the Altar";
 
+    /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
+    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
