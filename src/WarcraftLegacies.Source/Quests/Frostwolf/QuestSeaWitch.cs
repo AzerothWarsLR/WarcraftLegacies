@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
@@ -41,7 +41,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
         .AddAction(() =>
         {
           var triggerUnit = GetTriggerUnit();
-          if (GetOwningPlayer(triggerUnit) != FrostwolfSetup.Frostwolf?.Player) return;
+          if (triggerUnit != LegendFrostwolf.LegendThrall.Unit) return;
           FrostwolfSetup.Frostwolf.Player?.RescueGroup(_rescueDarkspearUnits);
           var murlocSpawnA = new Point(-3426, -3431);
           var murlocSpawnB = new Point(-4595, -2797);
@@ -58,6 +58,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
           {
             murgul.IssueOrder("attack", new Point(-3372, -2261));
           }
+          TriggerClearActions(_rescueTrigger);
         });
     }
 
