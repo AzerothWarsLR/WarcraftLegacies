@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -47,8 +47,8 @@ Once you have conquered the Zandalari Empire, set sail to help your allies."
 
       //Units
       Kultiras.ModObjectLimit(FourCC("h01E"), Faction.UNLIMITED); //Deckhand
-      Kultiras.ModObjectLimit(FourCC("hbot"), 12); //Alliance Transport Ship
-      Kultiras.ModObjectLimit(FourCC("hdes"), 12); //Alliance Frigate
+      Kultiras.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
+      Kultiras.ModObjectLimit(FourCC("hdes"), Faction.UNLIMITED); //Alliance Frigate
       Kultiras.ModObjectLimit(FourCC("h04J"), 5); //Warship
       Kultiras.ModObjectLimit(FourCC("e007"), Faction.UNLIMITED); //Thornspeaker
       Kultiras.ModObjectLimit(FourCC("n09A"), 12); //Ember Cleric

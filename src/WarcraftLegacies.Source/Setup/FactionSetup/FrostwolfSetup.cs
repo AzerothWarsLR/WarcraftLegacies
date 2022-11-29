@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
 using WarcraftLegacies.Source.Mechanics.Frostwolf;
 using WCSharp.Shared.Data;
@@ -51,8 +51,8 @@ Escort the kodo to Thunderbluff, where you will find a goldmine waiting for you.
       Frostwolf.ModObjectLimit(FourCC("oshm"), Faction.UNLIMITED); //Shaman
       Frostwolf.ModObjectLimit(FourCC("ospw"), Faction.UNLIMITED); //Spirit Walker
       Frostwolf.ModObjectLimit(FourCC("o00A"), 6); //Far Seer
-      Frostwolf.ModObjectLimit(FourCC("obot"), 12); //Transport Ship
-      Frostwolf.ModObjectLimit(FourCC("odes"), 12); //Orc Frigate
+      Frostwolf.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
+      Frostwolf.ModObjectLimit(FourCC("odes"), Faction.UNLIMITED); //Orc Frigate
       Frostwolf.ModObjectLimit(FourCC("oosc"), Faction.UNLIMITED); //Pack Kodo
       Frostwolf.ModObjectLimit(FourCC("ojgn"), 6); //Juggernaught
 

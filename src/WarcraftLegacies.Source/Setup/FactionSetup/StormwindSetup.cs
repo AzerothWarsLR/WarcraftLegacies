@@ -1,4 +1,4 @@
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.Powers;
 using static War3Api.Common;
 
@@ -63,8 +63,8 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, they will be th
       Stormwind.ModObjectLimit(FourCC("h00J"), Faction.UNLIMITED); //Clergyman
       Stormwind.ModObjectLimit(FourCC("n06N"), 6); //Gyrobomber
       Stormwind.ModObjectLimit(FourCC("n093"), Faction.UNLIMITED); //Chaplain
-      Stormwind.ModObjectLimit(FourCC("hbot"), 12); //Alliance Transport Ship
-      Stormwind.ModObjectLimit(FourCC("hdes"), 12); //Alliance Frigate
+      Stormwind.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
+      Stormwind.ModObjectLimit(FourCC("hdes"), Faction.UNLIMITED); //Alliance Frigate
       Stormwind.ModObjectLimit(FourCC("hbsh"), 6); //Alliance Battle Ship
       Stormwind.ModObjectLimit(FourCC("h060"), 3); //Arathor Flagship
 

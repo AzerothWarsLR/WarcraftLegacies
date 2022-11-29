@@ -102,10 +102,11 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("nbsm")), BookOfMedivh.Item);
       ArtifactManager.Register(BookOfMedivh);
 
-      ArtifactSkullofguldan = new Artifact(CreateItem(FourCC("I007"), 21886, -25219))
-      {
-        LocationDescription = "Illidan Quest"
-      };
+
+      ArtifactSkullofguldan = new Artifact(CreateItem(FourCC("I007"), DummyX, DummyY)); //Skull of Guldan
+      UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("n0DK")),
+        Artifact.ArtifactHolderAbilId); //Skull Pedestal
+      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n0DK")), ArtifactSkullofguldan.Item);
       ArtifactManager.Register(ArtifactSkullofguldan);
 
       ArtifactZinrokh = new Artifact(CreateItem(FourCC("I016"), DummyX, DummyY))

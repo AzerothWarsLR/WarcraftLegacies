@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -53,8 +53,8 @@ Once you have secured your holdings, gather your army and destroy the orc invade
       Sentinels.ModObjectLimit(FourCC("ehpr"), 6); //Hippogryph Rider
       Sentinels.ModObjectLimit(FourCC("n034"), 12); //Guild Ranger
       Sentinels.ModObjectLimit(FourCC("nwat"), Faction.UNLIMITED); //Nightblade
-      Sentinels.ModObjectLimit(FourCC("etrs"), 12); //Night Elf Transport Ship
-      Sentinels.ModObjectLimit(FourCC("edes"), 12); //Night Elf Frigate
+      Sentinels.ModObjectLimit(FourCC("etrs"), Faction.UNLIMITED); //Night Elf Transport Ship
+      Sentinels.ModObjectLimit(FourCC("edes"), Faction.UNLIMITED); //Night Elf Frigate
       Sentinels.ModObjectLimit(FourCC("ebsh"), 6); //Night Elf Battleship
       Sentinels.ModObjectLimit(FourCC("nnmg"), 12); //Redeemed Highborne
 

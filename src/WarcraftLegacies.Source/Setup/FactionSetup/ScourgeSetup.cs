@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
 using MacroTools.Powers;
 using WarcraftLegacies.Source.Mechanics.Scourge;
@@ -65,8 +65,8 @@ The Necropolis of Naxxramas is become the perfect weapon for the Scourge, but yo
       Scourge.ModObjectLimit(FourCC("uobs"), 4); //Obsidian Statue
       Scourge.ModObjectLimit(FourCC("ufro"), 4); //Frost Wyrm
       Scourge.ModObjectLimit(FourCC("h00H"), 6); //Death Knight
-      Scourge.ModObjectLimit(FourCC("ubot"), 12); //Undead Transport Ship
-      Scourge.ModObjectLimit(FourCC("udes"), 12); //Undead Frigate
+      Scourge.ModObjectLimit(FourCC("ubot"), Faction.UNLIMITED); //Undead Transport Ship
+      Scourge.ModObjectLimit(FourCC("udes"), Faction.UNLIMITED); //Undead Frigate
       Scourge.ModObjectLimit(FourCC("uubs"), 6); //Undead Battleship
       Scourge.ModObjectLimit(FourCC("ubsp"), 6); //Destroyer
       Scourge.ModObjectLimit(FourCC("nfgl"), 2); //Plague Titan
