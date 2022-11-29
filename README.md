@@ -6,7 +6,7 @@ This project is a complete rewrite of Warcraft: Legacies in C#.
 ## Getting started
 1. Clone the `main` branch of the repository to your local machine.
 2. Run the `WarcraftLegacies.Launcher` project from Visual Studio or Jetbrains Rider using the `WarcraftLegacies: Test` launch setting.
-4. You should get an error saying it can't find your Warcraft 3 path. Navigate to `src\WarcraftLegacies.Launcher\` and open `app.{YOURUSERNAME}.settings.json`. Change the Warcraft3ExecutablePath setting to wherever your Warcraft 3 executable is, then repeat step 2. It should now launch.
+4. You should get an error saying it can't find your Warcraft 3 path. Navigate to `src\WarcraftLegacies.Launcher\` and open `appsettings.{YOURUSERNAME}.json`. Change the Warcraft3ExecutablePath setting to wherever your Warcraft 3 executable is, then repeat step 2. It should now launch.
 
 ## Code Documentation
 * Documentation specific to this project can be found [here](https://azerothwarslr.github.io/WarcraftLegacies/). It is still a work-in-progress.
