@@ -16,7 +16,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
       Description = "Your team controls " + target.Name;
       TargetWidget = target.Unit;
       target.ChangedOwner += OnTargetChangeOwner;
-      PlayerData.PlayerJoinedTeam += OnFactionTeamJoin;
+      target.Owner.GetPlayerData().PlayerJoinedTeam += OnFactionTeamJoin;
       DisplaysPosition = true;
     }
 
