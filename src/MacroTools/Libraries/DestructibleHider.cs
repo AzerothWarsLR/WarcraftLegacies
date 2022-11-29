@@ -71,7 +71,6 @@ namespace MacroTools.Libraries
     
     private static bool Filter(destructable destructable)
     {
-      return true;
       return GetDestructableMaxLife(destructable) == 1;
     }
     
