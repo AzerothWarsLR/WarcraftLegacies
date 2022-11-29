@@ -29,12 +29,12 @@ namespace MacroTools.FactionSystem
     /// <summary>
     ///   How much gold and lumber is refunded from units that get refunded when a player leaves.
     /// </summary>
-    private const float RefundPercent = 100;
+    private const float RefundMultiplier = 1;
 
     /// <summary>
     ///   How much experience is transferred from heroes that leave the game.
     /// </summary>
-    private const float XpTransferPercent = 100;
+    private const float ExperienceTransferMultiplier = 1;
 
     /// <summary>
     ///   The amount of food <see cref="Faction" />s can have by default.
@@ -529,7 +529,7 @@ namespace MacroTools.FactionSystem
         var allyHeroes = new GroupWrapper().EnumUnitsOfPlayer(ally).EmptyToList()
           .FindAll(unit => IsUnitType(unit, UNIT_TYPE_HERO));
         foreach (var hero in allyHeroes)
-          AddHeroXP(hero, R2I(_xp / (Player.GetTeam().Size - 1) / allyHeroes.Count * XpTransferPercent), true);
+          AddHeroXP(hero, R2I(_xp / (Player.GetTeam().Size - 1) / allyHeroes.Count * ExperienceTransferMultiplier), true);
       }
 
       _xp = 0;
@@ -569,8 +569,8 @@ namespace MacroTools.FactionSystem
         }
         else if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
         {
-          Gold += loopUnitType.GoldCost * RefundPercent;
-          Lumber += loopUnitType.LumberCost * RefundPercent;
+          Gold += loopUnitType.GoldCost * RefundMultiplier;
+          Lumber += loopUnitType.LumberCost * RefundMultiplier;
           unit.DropAllItems();
           RemoveUnit(unit);
         }
