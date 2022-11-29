@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
@@ -57,16 +56,18 @@ namespace MacroTools.UserInterface
       PlayerData.FactionChange += (_, _) => { Instance?.Render(); };
       FactionManager.AnyFactionNameChanged += OnFactionAnyFactionNameChanged;
       
-
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
         player.GetPlayerData().IncomeChanged += OnPlayerIncomeChanged;
         player.GetPlayerData().PlayerJoinedTeam += (_, _) => { Instance?.Render(); };  
         player.GetPlayerData().PlayerLeftTeam += (_, _) => { Instance?.Render(); };
-        player.GetFaction().StatusChanged += (_, _) => { Instance?.Render(); };
-        player.GetFaction().IconChanged += OnFactionIconChanged;
       }
 
+      foreach (var faction in FactionManager.GetAllFactions())
+      {
+        faction.StatusChanged += (_, _) => { Instance?.Render(); };
+        faction.IconChanged += OnFactionIconChanged;
+      }
 
       _initialized = true;
     }
