@@ -428,7 +428,7 @@ namespace MacroTools.Extensions
     public static void DropAllItems(this unit whichUnit)
     {
       if (IsUnitType(whichUnit, UNIT_TYPE_SUMMONED))
-        throw new InvalidOperationException("Tried to call {nameof(DropAllItems)} on a oned hero.");
+        throw new InvalidOperationException($"Tried to call {nameof(DropAllItems)} on a summoned hero.");
 
       var unitX = GetUnitX(whichUnit);
       var unitY = GetUnitY(whichUnit);

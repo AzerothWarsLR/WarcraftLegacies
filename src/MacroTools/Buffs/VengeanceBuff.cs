@@ -58,7 +58,6 @@ namespace MacroTools.Buffs
     {
       if (!BlzGetEventIsAttack()) return;
       HitsDone++;
-      Console.WriteLine(HitsDone);
       if (HitsDone >= HitsReviveThreshold) Dispose();
     }
 

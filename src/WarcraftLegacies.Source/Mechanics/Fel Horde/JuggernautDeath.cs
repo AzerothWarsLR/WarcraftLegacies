@@ -1,19 +1,18 @@
 ﻿using MacroTools;
-using MacroTools.Wrappers;
-using System;
+using MacroTools.Extensions;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Mechanics.Fel_Horde
 {
-  ///<summary>
-  ///This script involves the mechanic where two power generators in the Fel Horde
-  ///starting area will destroy two of their associated invulnerable Fel Juggernauts
-  ///when destroyed.
-  ///</summary>
- 
+  /// <summary>
+  /// Fel Horde's Juggernaut towers start invulnerable and can be destroyed by destroying their corresponding generator.
+  /// </summary>
   internal static class JuggernautDeath
   {
+    /// <summary>
+    /// Sets up <see cref="JuggernautDeath"/>.
+    /// </summary>
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       var powerGenerator1 = preplacedUnitSystem.GetUnit(Constants.UNIT_NPGR_POWER_GENERATOR_TEAL, new Point(5511.9f, -29688.2f));
@@ -23,21 +22,23 @@ namespace WarcraftLegacies.Source.Mechanics.Fel_Horde
       var inferJuggernaut3 = preplacedUnitSystem.GetUnit(Constants.UNIT_N066_INFERNAL_JUGGERNAUT_TEAL_TOWER, new Point(4537.8f, -30988.1f));
       var inferJuggernaut4 = preplacedUnitSystem.GetUnit(Constants.UNIT_N066_INFERNAL_JUGGERNAUT_TEAL_TOWER, new Point(4631.4f, -31433.0f));
 
-      var deathTrigger1 = new TriggerWrapper();
-      deathTrigger1.RegisterUnitEvent(powerGenerator1, EVENT_UNIT_DEATH);
-      deathTrigger1.AddAction(() =>
-      {
-        KillUnit(inferJuggernaut1);
-        KillUnit(inferJuggernaut2);
-      });
+      CreateTrigger()
+        .RegisterUnitEvent(powerGenerator1, EVENT_UNIT_DEATH)
+        .AddAction(() =>
+        {
+          KillUnit(inferJuggernaut1);
+          KillUnit(inferJuggernaut2);
+          DestroyTrigger(GetTriggeringTrigger());
+        });
 
-      var deathTrigger2 = new TriggerWrapper();
-      deathTrigger2.RegisterUnitEvent(powerGenerator2, EVENT_UNIT_DEATH);
-      deathTrigger2.AddAction(() =>
-      {
-        KillUnit(inferJuggernaut3);
-        KillUnit(inferJuggernaut4);
-      });
+      CreateTrigger()
+        .RegisterUnitEvent(powerGenerator2, EVENT_UNIT_DEATH)
+        .AddAction(() =>
+        {
+          KillUnit(inferJuggernaut3);
+          KillUnit(inferJuggernaut4);
+          DestroyTrigger(GetTriggeringTrigger());
+        });
     }
   }
 }
