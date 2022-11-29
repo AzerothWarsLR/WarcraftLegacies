@@ -58,7 +58,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
           {
             murgul.IssueOrder("attack", new Point(-3372, -2261));
           }
-          TriggerClearActions(_rescueTrigger);
+          DestroyTrigger(_rescueTrigger);
         });
     }
 
