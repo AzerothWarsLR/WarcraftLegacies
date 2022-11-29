@@ -7,6 +7,7 @@ namespace WarcraftLegacies.Source.Setup
   {
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
+      QuelthalasQuestSetup.Setup(preplacedUnitSystem);
       DalaranQuestSetup.Setup(preplacedUnitSystem);
       DruidsQuestSetup.Setup();
       FelHordeQuestSetup.Setup(preplacedUnitSystem);
@@ -14,7 +15,6 @@ namespace WarcraftLegacies.Source.Setup
       IronforgeQuestSetup.Setup(preplacedUnitSystem);
       LegionQuestSetup.Setup(preplacedUnitSystem);
       LordaeronQuestSetup.Setup(preplacedUnitSystem);
-      QuelthalasQuestSetup.Setup(preplacedUnitSystem);
       var questPlague = ScourgeQuestSetup.Setup(preplacedUnitSystem);
       SentinelsQuestSetup.Setup();
       StormwindQuestSetup.Setup(preplacedUnitSystem);

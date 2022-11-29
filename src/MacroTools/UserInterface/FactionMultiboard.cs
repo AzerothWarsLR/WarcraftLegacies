@@ -55,15 +55,18 @@ namespace MacroTools.UserInterface
       );
 
       PlayerData.FactionChange += (_, _) => { Instance?.Render(); };
-      PlayerData.PlayerJoinedTeam += (_, _) => { Instance?.Render(); };  
-      PlayerData.PlayerLeftTeam += (_, _) => { Instance?.Render(); };
-      Faction.StatusChanged += (_, _) => { Instance?.Render(); };
-
       FactionManager.AnyFactionNameChanged += OnFactionAnyFactionNameChanged;
-      Faction.IconChanged += OnFactionIconChanged;
+      
 
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      {
         player.GetPlayerData().IncomeChanged += OnPlayerIncomeChanged;
+        player.GetPlayerData().PlayerJoinedTeam += (_, _) => { Instance?.Render(); };  
+        player.GetPlayerData().PlayerLeftTeam += (_, _) => { Instance?.Render(); };
+        player.GetFaction().StatusChanged += (_, _) => { Instance?.Render(); };
+        player.GetFaction().IconChanged += OnFactionIconChanged;
+      }
+
 
       _initialized = true;
     }

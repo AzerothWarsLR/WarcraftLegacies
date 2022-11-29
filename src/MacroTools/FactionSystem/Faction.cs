@@ -279,12 +279,12 @@ namespace MacroTools.FactionSystem
     /// <summary>
     /// Fired when the <see cref="Faction"/>'s has changed.
     /// </summary>
-    public static event EventHandler<Faction>? IconChanged;
+    public event EventHandler<Faction>? IconChanged;
     
     /// <summary>
     /// Fired after the <see cref="Faction"/>'s status has changed.
     /// </summary>
-    public static event EventHandler<Faction>? StatusChanged;
+    public event EventHandler<Faction>? StatusChanged;
 
     /// <summary>
     ///   Returns all unit types which this <see cref="Faction" /> can only train a limited number of.
