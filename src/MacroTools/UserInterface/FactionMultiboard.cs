@@ -75,6 +75,9 @@ namespace MacroTools.UserInterface
     //Run when a detail about a Faction has changed
     private void UpdateFactionRow(Faction faction)
     {
+      if (!_rowsByFaction.ContainsKey(faction))
+        return;
+
       var row = _rowsByFaction[faction];
       var factionMbi = MultiboardGetItem(_multiboard, row, ColumnFaction);
       var cpMbi = MultiboardGetItem(_multiboard, row, ColumnCp);
@@ -124,6 +127,8 @@ namespace MacroTools.UserInterface
     //Run when the number of Teams or Factions have changed, or a Faction has changed its Team
     private void Render()
     {
+      _rowsByFaction.Clear();
+      _rowsByTeam.Clear();
       var row = 0;
       DestroyMultiboard(_multiboard);
       _multiboard = CreateMultiboard();
