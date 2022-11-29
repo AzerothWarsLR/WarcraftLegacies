@@ -41,7 +41,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
         .AddAction(() =>
         {
           var triggerUnit = GetTriggerUnit();
-          if (triggerUnit != LegendFrostwolf.LegendThrall.Unit) return;
+          if (GetOwningPlayer(triggerUnit) != FrostwolfSetup.Frostwolf?.Player) return;
           FrostwolfSetup.Frostwolf.Player?.RescueGroup(_rescueDarkspearUnits);
           var murlocSpawnA = new Point(-3426, -3431);
           var murlocSpawnB = new Point(-4595, -2797);
