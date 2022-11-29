@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
@@ -58,6 +58,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
           {
             murgul.IssueOrder("attack", new Point(-3372, -2261));
           }
+          DestroyTrigger(_rescueTrigger);
         });
     }
 
