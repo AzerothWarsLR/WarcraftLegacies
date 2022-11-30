@@ -1,5 +1,6 @@
 ﻿using MacroTools.Missiles;
 using MacroTools.PassiveAbilitySystem;
+using Microsoft.VisualBasic;
 using WCSharp.Missiles;
 using static War3Api.Common;
 
@@ -53,13 +54,15 @@ namespace MacroTools.PassiveAbilities
     {
       var caster = GetTriggerUnit();
       var abilityLevel = GetUnitAbilityLevel(caster, _abilityTypeId);
+      if (abilityLevel == 0) return;
       var newOrb = new DefensiveOrbMissile(caster, caster)
       {
         OrbitalPeriod = OrbitalPeriod,
         CollisionRadius = CollisionRadius.Base + CollisionRadius.PerLevel * abilityLevel,
         EffectString = OrbEffectPath,
         Range = OrbitRadius,
-        Damage = Damage.Base + Damage.PerLevel * abilityLevel
+        Damage = Damage.Base + Damage.PerLevel * abilityLevel,
+        Duration = OrbDuration
       };
       MissileSystem.Add(newOrb);
     }

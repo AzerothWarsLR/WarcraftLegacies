@@ -71013,7 +71013,7 @@ Q
 }
 
 STRING 11834
-// Abilities: A04X (Mana Shield), Tip (Tooltip - Normal)
+// Abilities: A0BY (Mana Shield), Tip (Tooltip - Normal)
 {
 Activate Mana Shield
 }
@@ -71289,7 +71289,7 @@ Q
 }
 
 STRING 11880
-// Abilities: A0BY (Mana Shield), Tip (Tooltip - Normal)
+// Abilities: A04X (Mana Shield), Tip (Tooltip - Normal)
 {
 Activate Mana Shield
 }
@@ -88145,19 +88145,19 @@ Illidari
 }
 
 STRING 14690
-// Upgrades: R034 (Improved Bows), Hotkey (Hotkey)
-{
-D
-}
-
-STRING 14691
 // Upgrades: Rehs (Hardened Skin), Hotkey (Hotkey)
 {
 D
 }
 
-STRING 14692
+STRING 14691
 // Upgrades: Rusl (Skeletal Longevity), Hotkey (Hotkey)
+{
+D
+}
+
+STRING 14692
+// Upgrades: R02A (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -89381,7 +89381,7 @@ Research Improved Self-Bloodlust
 }
 
 STRING 14896
-// Upgrades: R02A (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R026 (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -91010,7 +91010,7 @@ X
 }
 
 STRING 15176
-// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R023 (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -91238,7 +91238,7 @@ STRING 15213
 }
 
 STRING 15214
-// Upgrades: R026 (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R023 (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -104776,7 +104776,7 @@ STRING 17477
 }
 
 STRING 17478
-// Upgrades: R023 (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R01H (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -106666,7 +106666,7 @@ C
 }
 
 STRING 17792
-// Upgrades: R023 (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R01H (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -110730,7 +110730,7 @@ E
 }
 
 STRING 18469
-// Upgrades: R01H (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R00Q (Magic Sentry), Hotkey (Hotkey)
 {
 D
 }
@@ -112537,7 +112537,7 @@ R
 }
 
 STRING 18770
-// Upgrades: R01H (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R00K (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -115080,7 +115080,7 @@ E
 }
 
 STRING 19202
-// Upgrades: R00Q (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R00K (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -116231,7 +116231,7 @@ Dragonmaw Battle Standard
 }
 
 STRING 19397
-// Upgrades: R00K (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R034 (Improved Bows), Hotkey (Hotkey)
 {
 D
 }
@@ -116729,7 +116729,7 @@ Transports troops to Nagrand.
 }
 
 STRING 19488
-// Upgrades: R00K (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 D
 }

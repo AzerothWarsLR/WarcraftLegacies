@@ -16,6 +16,11 @@ namespace MacroTools.Missiles
     /// The amount of damage the orb deals.
     /// </summary>
     public float Damage { get; init; }
+    
+    /// <summary>
+    /// How long the orb has before dissipating.
+    /// </summary>
+    public float Duration { get; set; }
 
     private readonly List<UnitHit> _targetsHitCooldown = new();
 
@@ -47,13 +52,16 @@ namespace MacroTools.Missiles
         TargetsHit.Remove(cooldown.Unit);
         return false;
       });
+      Duration -= PeriodicEvents.SYSTEM_INTERVAL;
+      if (Duration <= 0) 
+        Active = false;
     }
 
     private bool IsValidTarget(unit whichUnit)
     {
-      return IsUnitAlly(whichUnit, Caster.OwningPlayer()) || !UnitAlive(whichUnit) ||
-             BlzIsUnitInvulnerable(whichUnit) || IsUnitType(whichUnit, UNIT_TYPE_STRUCTURE) ||
-             IsUnitType(whichUnit, UNIT_TYPE_ANCIENT);
+      return !IsUnitAlly(whichUnit, Caster.OwningPlayer()) && UnitAlive(whichUnit) &&
+             !BlzIsUnitInvulnerable(whichUnit) && !IsUnitType(whichUnit, UNIT_TYPE_STRUCTURE) &&
+             !IsUnitType(whichUnit, UNIT_TYPE_ANCIENT);
     }
 
     private class UnitHit
