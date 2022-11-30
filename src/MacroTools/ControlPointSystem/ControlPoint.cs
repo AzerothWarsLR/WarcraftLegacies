@@ -78,18 +78,18 @@ namespace MacroTools.ControlPointSystem
       try
       {
         var formerOwner = GetChangingUnitPrevOwner();
-        var newOwner = GetTriggerPlayer();
+        var newOwner = GetTriggerUnit().OwningPlayer();
 
-        PlayerData playerData = PlayerData.ByHandle(formerOwner);
-
-        playerData.BaseIncome -= Value;
+        var playerData = PlayerData.ByHandle(formerOwner);
+        
         playerData.ControlPointCount -= 1;
-        
-        playerData = PlayerData.ByHandle(newOwner);
+        playerData.BaseIncome -= Value;
 
-        playerData.BaseIncome += Value;
-        playerData.ControlPointCount += 1;
+        playerData = PlayerData.ByHandle(newOwner);
         
+        playerData.ControlPointCount += 1;
+        playerData.BaseIncome += Value;
+
         UnitAddAbility(Unit, RegenerationAbility);
         SetUnitState(Unit, UNIT_STATE_LIFE, GetUnitState(Unit, UNIT_STATE_MAX_LIFE));
 
