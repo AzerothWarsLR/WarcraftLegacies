@@ -21,7 +21,7 @@ namespace MacroTools.BookSystem.ArtifactSystem
     {
       ArtifactManager.ArtifactRegistered += ArtifactCreated;
       AddPagesAndArtifacts();
-      Title = "Artifacts";
+      Title = "Artifacts (F7)";
       LauncherParent = BlzGetFrameByName("UpperButtonBarQuestsButton", 0);
       Position = new Point(0.4f, 0.35f);
       CreateTrigger()
