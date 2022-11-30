@@ -95,11 +95,12 @@ namespace MacroTools.ArtifactSystem
             var itemInSlot = UnitItemInSlot(triggerUnit, i);
             if (itemInSlot == null)
               continue;
+            
             var artifactInSlot = GetFromTypeId(GetItemTypeId(itemInSlot));
-
-            if (isPositionPathable == null && artifactInSlot != null)
-              isPositionPathable =
-                !IsTerrainPathable(GetUnitX(triggerUnit), GetUnitY(triggerUnit), PATHING_TYPE_WALKABILITY);
+            if (artifactInSlot == null) 
+              continue;
+            
+            isPositionPathable ??= !IsTerrainPathable(GetUnitX(triggerUnit), GetUnitY(triggerUnit), PATHING_TYPE_WALKABILITY);
 
             if (isPositionPathable == true)
             {
