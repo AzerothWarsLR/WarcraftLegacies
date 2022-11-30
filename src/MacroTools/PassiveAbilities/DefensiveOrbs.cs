@@ -31,9 +31,14 @@ namespace MacroTools.PassiveAbilities
     public LeveledAbilityField<float> Damage { get; init; } = new();
 
     /// <summary>
-    /// The radius in which orbs deal damage when they explode.
+    /// The collision radius for the orbs.
     /// </summary>
-    public LeveledAbilityField<float> Radius { get; init; } = new();
+    public LeveledAbilityField<float> CollisionRadius { get; init; } = new();
+    
+    /// <summary>
+    /// How long orbs last before detonating.
+    /// </summary>
+    public float OrbDuration { get; init; }
 
     private readonly int _abilityTypeId;
     
@@ -51,11 +56,10 @@ namespace MacroTools.PassiveAbilities
       var newOrb = new DefensiveOrbMissile(caster, caster)
       {
         OrbitalPeriod = OrbitalPeriod,
-        CollisionRadius = Radius.Base + Radius.PerLevel * abilityLevel,
+        CollisionRadius = CollisionRadius.Base + CollisionRadius.PerLevel * abilityLevel,
         EffectString = OrbEffectPath,
         Range = OrbitRadius,
-        Damage = Damage.Base + Damage.PerLevel * abilityLevel,
-        DamageRadius = Radius.Base + Radius.PerLevel * abilityLevel
+        Damage = Damage.Base + Damage.PerLevel * abilityLevel
       };
       MissileSystem.Add(newOrb);
     }
