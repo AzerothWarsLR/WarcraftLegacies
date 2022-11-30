@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using MacroTools.Extensions;
-using MacroTools.Wrappers;
 using WCSharp.Events;
 using static War3Api.Common;
 using WCSharp.Missiles;
