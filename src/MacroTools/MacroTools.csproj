@@ -13,6 +13,7 @@
         <PackageReference Include="WCSharp.Events" Version="2.0.8" />
         <PackageReference Include="WCSharp.Json" Version="2.0.1" />
         <PackageReference Include="WCSharp.Lightnings" Version="2.0.0" />
+        <PackageReference Include="WCSharp.Missiles" Version="2.0.5" />
         <PackageReference Include="WCSharp.Shared" Version="2.0.6" />
     </ItemGroup>
 
