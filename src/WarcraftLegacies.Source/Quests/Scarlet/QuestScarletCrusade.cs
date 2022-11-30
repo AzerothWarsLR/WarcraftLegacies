@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
   /// </summary>
   public sealed class QuestScarletCrusade : QuestData
   {
-    private const int UnleashTheCrusadeResearchId = Constants.UPGRADE_R03P_FORTIFIED_HULLS_SCARLET_CRUSADE;
+    private const int UnleashTheCrusadeResearchId = Constants.UPGRADE_R03P_UNLEASH_THE_CRUSADE_SCARLET_CRUSADE;
     private readonly List<unit> _rescueUnits;
     private readonly unit _scarletMonasteryEntrance;
     private readonly QuestData _sequel;

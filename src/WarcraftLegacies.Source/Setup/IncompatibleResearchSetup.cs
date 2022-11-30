@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Setup
         Constants.UPGRADE_R063_PATH_OF_EXILE_NAGA, Constants.UPGRADE_R065_PATH_OF_MADNESS_NAGA);
 
       IncompatibleResearchSystem.Register(Constants.UPGRADE_R088_RAYS_OF_A_NEW_DAWN_SCARLET_CRUSADE,
-        Constants.UPGRADE_R03P_FORTIFIED_HULLS_SCARLET_CRUSADE);
+        Constants.UPGRADE_R03P_UNLEASH_THE_CRUSADE_SCARLET_CRUSADE);
 
       IncompatibleResearchSystem.Register(Constants.UPGRADE_R08F_GARITHOS_MIND_CONTROL_LORDAERON,
         Constants.UPGRADE_R08E_JOIN_THE_CRUSADE_LORDAERON);
