@@ -17,9 +17,9 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     /// </summary>
     public QuestGoldrinnElvePath() : base("Shrine of the Wolf God", "To understand the plight of her people, Tess will go to the Shrine of Goldrinn in Hyjal to understand what it means to be a Worgen.", "ReplaceableTextures\\CommandButtons\\BTNWorgenMoon.blp")
     {
-      AddObjective(new ObjectiveLegendInRect(LegendGilneas.LegendTess, Regions.GoldrinnHyjal, "Shrine of Goldrinn in Mount Hyjal"));
+      AddObjective(new ObjectiveLegendInRect(LegendGilneas.Tess, Regions.GoldrinnHyjal, "Shrine of Goldrinn in Mount Hyjal"));
       AddObjective(new ObjectiveArtifactInRect(ArtifactSetup.ScytheOfElune, Regions.GoldrinnHyjal, "Shrine of Goldrinn in Mount Hyjal"));
-      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendGilneas.LegendGenn));
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendGilneas.Genn));
       ResearchId = Constants.UPGRADE_R07U_QUEST_COMPLETED_SHRINE_OF_THE_WOLF_GOD;
     }
 
