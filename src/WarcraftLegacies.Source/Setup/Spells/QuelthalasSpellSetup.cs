@@ -53,7 +53,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(siphoningRitual);
       
-      PassiveAbilityManager.Register(new DefensiveOrbs(Constants.UNIT_H00Q_KING_OF_QUEL_THALAS_QUEL_THALAS, 0)
+      PassiveAbilityManager.Register(new DefensiveOrbs(Constants.UNIT_H00Q_KING_OF_QUEL_THALAS_QUEL_THALAS, Constants.ABILITY_A055_DEFENSIVE_ORBS_QUEL_THALAS_ANASTERIAN)
       {
         OrbitRadius = 400,
         OrbitalPeriod = 4,
