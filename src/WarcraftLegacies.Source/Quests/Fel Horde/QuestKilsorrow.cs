@@ -62,6 +62,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     protected override void OnFail(Faction completingFaction)
     {
       Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+      LegendBlacktemple.Unit?.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       _demonGate.Kill();
     }
 
