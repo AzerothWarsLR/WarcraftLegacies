@@ -1,5 +1,4 @@
-﻿using System;
-using WCSharp.Buffs;
+﻿using WCSharp.Buffs;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -32,17 +31,17 @@ namespace MacroTools.Buffs
     /// <summary>
     /// The effect when the vengeance form is exited ans the hero is revived.
     /// </summary>
-    public string? ReviveEffect { private get; set; }
+    public string? ReviveEffect { private get; init; }
     
     /// <summary>
     /// How many hits the hero needs to make to revive out of the vengeance form.
     /// </summary>
-    public int HitsReviveThreshold { private get; set; }
+    public int HitsReviveThreshold { private get; init; }
     
     /// <summary>
     /// The unit type ID of the vengeance form.
     /// </summary>
-    public int AlternateFormId { private get; set; }
+    public int AlternateFormId { private get; init; }
 
     /// <summary>
     ///   The unit type ID of the unit before it was transformed.
@@ -58,7 +57,7 @@ namespace MacroTools.Buffs
     {
       if (!BlzGetEventIsAttack()) return;
       HitsDone++;
-      if (HitsDone >= HitsReviveThreshold) Dispose();
+      if (HitsDone >= HitsReviveThreshold) Active = false;
     }
 
     /// <inheritdoc />
@@ -77,8 +76,7 @@ namespace MacroTools.Buffs
     {
       BlzSetUnitBaseDamage(Target, BlzGetUnitBaseDamage(Target, 0) - BonusDamage, 0);
       BlzSetUnitSkin(Caster, OriginalFormId);
-      PlayerUnitEvents.Unregister(PlayerUnitEvent.UnitTypeDamages, OnInflictsDamage);
-      
+      PlayerUnitEvents.Unregister(PlayerUnitEvent.UnitTypeDamages, OriginalFormId);
       if (HitsDone >= HitsReviveThreshold)
         DestroyEffect(AddSpecialEffect(ReviveEffect, GetUnitX(Caster), GetUnitY(Caster)));
       else
