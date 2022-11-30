@@ -57,9 +57,10 @@ namespace MacroTools.Spells
     {
       var damaged = GetTriggerUnit();
       var abilityLevel = GetUnitAbilityLevel(damaged, AbilityTypeId);
-      if (BlzGetUnitSkin(damaged) == AlternateFormId || !(GetEventDamage() >= GetUnitState(damaged, UNIT_STATE_LIFE)) ||
-          !(GetUnitState(damaged, UNIT_STATE_MANA) >=
-            BlzGetUnitAbilityManaCost(damaged, AbilityTypeId, abilityLevel))) 
+      if (abilityLevel == 0 || BlzGetUnitSkin(damaged) == AlternateFormId ||
+          !(GetEventDamage() >= GetUnitState(damaged, UNIT_STATE_LIFE)) || !(GetUnitState(damaged, UNIT_STATE_MANA) >=
+                                                                             BlzGetUnitAbilityManaCost(damaged,
+                                                                               AbilityTypeId, abilityLevel))) 
         return;
       BlzSetEventDamage(0);
       var vengeanceBuff = new VengeanceBuff(damaged, damaged)
