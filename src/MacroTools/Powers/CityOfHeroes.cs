@@ -22,19 +22,20 @@ namespace MacroTools.Powers
     /// <summary>
     /// The filter that units must pass to be eligible to become demiheroes.
     /// </summary>
-    public Func<unit, bool> Filter { get; init; } = unit => true;
-    
+    public Func<unit, bool> Filter { get; init; } = _ => true;
+
     /// <summary>
     /// Initializes a new instance of the <see cref="CityOfHeroes"/> class.
     /// </summary>
     /// <param name="chance">The chance that trained units have to become demiheroes.</param>
     /// <param name="statMultiplier">The chance that trained units have to become demiheroes.</param>
-    public CityOfHeroes(float chance, float statMultiplier)
+    /// <param name="eligibleUnitPlural">The type of unit that this power affects, e.g. "units" or "Murlocs".</param>
+    public CityOfHeroes(float chance, float statMultiplier, string eligibleUnitPlural)
     {
       _chance = chance;
       _statMultiplier = statMultiplier;
       Description =
-        $"Units you train have a {chance * 100}% to become demiheroes, increasing their hit points, mana, and damage by {(1-statMultiplier)*100}%, changing their attack and armor types to Hero, and granting them the ability to use items.";
+        $"{eligibleUnitPlural} you train have a {chance * 100}% to become demiheroes, increasing their hit points, mana, and damage by {(statMultiplier-1)*100}%, changing their attack and armor types to Hero, and granting them the ability to use items.";
     }
     
     /// <inheritdoc />
@@ -47,7 +48,7 @@ namespace MacroTools.Powers
 
     private void Heroize(unit whichUnit)
     {
-      if (whichUnit.IsType(UNIT_TYPE_HERO) || whichUnit.IsType(UNIT_TYPE_PEON))
+      if (whichUnit.IsType(UNIT_TYPE_HERO) || whichUnit.IsType(UNIT_TYPE_PEON) || !Filter(whichUnit))
         return;
 
       AddSpecialEffect(@"Abilities\Spells\Other\Levelup\Levelupcaster.mdx", GetUnitX(whichUnit), GetUnitY(whichUnit))
@@ -57,6 +58,7 @@ namespace MacroTools.Powers
         .MultiplyBaseDamage(_statMultiplier, 1)
         .MultiplyMaxHitpoints(_statMultiplier)
         .MultiplyMaxMana(_statMultiplier)
+        .RemoveAbility(FourCC("Aihn"))
         .AddAbility(HeroGlowAbilityTypeId)
         .AddAbility(FourCC("AInv"))
         .SetAttackType(6)

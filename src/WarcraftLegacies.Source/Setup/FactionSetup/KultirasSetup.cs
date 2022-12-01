@@ -1,5 +1,7 @@
 ﻿using MacroTools;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.Powers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -83,6 +85,20 @@ Once you have conquered the Zandalari Empire, set sail to help your allies."
       Kultiras.ModObjectLimit(FourCC("E016"), 1); //Lucille
 
       Kultiras.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(2619, -4946)));
+      
+      Kultiras.AddPower(new CityOfHeroes(0.125f, 1.5f, "Ships")
+      {
+        IconName = "LordAdmiralPendant",
+        Name = "City of Admirals",
+        HeroGlowAbilityTypeId = Constants.ABILITY_A0GK_HERO_GLOW_ORIGIN,
+        Filter = unit =>
+        {
+          var x = GetUnitX(unit);
+          var y = GetUnitY(unit);
+          return unit.IsType(UNIT_TYPE_MECHANICAL) && !IsTerrainPathable(x, y, PATHING_TYPE_FLOATABILITY) &&
+                 IsTerrainPathable(x, y, PATHING_TYPE_WALKABILITY);
+        },
+      });
       
       FactionManager.Register(Kultiras);
     }

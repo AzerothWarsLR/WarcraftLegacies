@@ -99,7 +99,7 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, they will be th
       Stormwind.ModAbilityAvailability(Constants.ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);
       Stormwind.ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
 
-      Stormwind.AddPower(new CityOfHeroes(0.125f, 1.5f)
+      Stormwind.AddPower(new CityOfHeroes(0.125f, 1.5f, "Units")
       {
         IconName = "Angel",
         Name = "City of Heroes",
