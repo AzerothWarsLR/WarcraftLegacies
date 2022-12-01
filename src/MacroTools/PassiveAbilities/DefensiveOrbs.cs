@@ -1,4 +1,5 @@
-﻿using MacroTools.Missiles;
+﻿using System.Collections.Generic;
+using MacroTools.Missiles;
 using MacroTools.PassiveAbilitySystem;
 using Microsoft.VisualBasic;
 using WCSharp.Missiles;
@@ -15,7 +16,7 @@ namespace MacroTools.PassiveAbilities
     /// The radius in which the orbs orbit.
     /// </summary>
     public float OrbitRadius { get; init; }
-    
+
     /// <summary>
     /// The time it takes for the orbs to complete a full rotation.
     /// </summary>
@@ -35,14 +36,19 @@ namespace MacroTools.PassiveAbilities
     /// The collision radius for the orbs.
     /// </summary>
     public LeveledAbilityField<float> CollisionRadius { get; init; } = new();
-    
+
     /// <summary>
     /// How long orbs last before detonating.
     /// </summary>
     public float OrbDuration { get; init; }
 
+    /// <summary>
+    /// Only abilities in this list generate defensive orbs.
+    /// </summary>
+    public List<int> AbilityWhitelist { get; init; } = new();
+
     private readonly int _abilityTypeId;
-    
+
     /// <inheritdoc />
     public DefensiveOrbs(int unitTypeId, int abilityTypeId) : base(unitTypeId)
     {
@@ -54,7 +60,8 @@ namespace MacroTools.PassiveAbilities
     {
       var caster = GetTriggerUnit();
       var abilityLevel = GetUnitAbilityLevel(caster, _abilityTypeId);
-      if (abilityLevel == 0) return;
+      if (abilityLevel == 0 || !AbilityWhitelist.Contains(GetSpellAbilityId()))
+        return;
       var newOrb = new DefensiveOrbMissile(caster, caster)
       {
         OrbitalPeriod = OrbitalPeriod,

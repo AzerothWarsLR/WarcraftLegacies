@@ -1,4 +1,5 @@
-﻿using MacroTools;
+﻿using System.Collections.Generic;
+using MacroTools;
 using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
@@ -60,7 +61,13 @@ namespace WarcraftLegacies.Source.Setup.Spells
         OrbEffectPath = @"war3mapImported\OrbFireX.mdx",
         Damage = new LeveledAbilityField<float> { Base = 50, PerLevel = 100 },
         CollisionRadius = new LeveledAbilityField<float> { Base = 100, PerLevel = 0},
-        OrbDuration = 45
+        OrbDuration = 45,
+        AbilityWhitelist = new List<int>
+        {
+          Constants.ABILITY_A04J_ARCANE_BURST_HIGH_ELVES_ANASTERIAN,
+          Constants.ABILITY_A013_DEVOUR_MAGIC_GUL_DAN,
+          Constants.ABILITY_AHPX_ASHES_OF_AL_AR_QUEL_THALAS_ANASTERIAN_KAEL_THAS
+        }
       });
     }
   }
