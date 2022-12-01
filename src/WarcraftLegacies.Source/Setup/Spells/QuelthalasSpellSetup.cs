@@ -60,7 +60,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         OrbitalPeriod = 4,
         OrbEffectPath = @"war3mapImported\OrbFireX.mdx",
         Damage = new LeveledAbilityField<float> { Base = 50, PerLevel = 100 },
-        CollisionRadius = new LeveledAbilityField<float> { Base = 100, PerLevel = 0},
+        CollisionRadius = new LeveledAbilityField<float> { Base = 150, PerLevel = 0},
         OrbDuration = 45,
         AbilityWhitelist = new List<int>
         {
