@@ -45,7 +45,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     protected override void OnComplete(Faction completingFaction)
     {
       SetPlayerTechResearched(completingFaction.Player, RewardResearchId, 1);
-      completingFaction.Player.DisplayResearchAcquired(RewardResearchId, 1);
+      completingFaction.Player?.DisplayResearchAcquired(RewardResearchId, 1);
       
       if (LegendLordaeron.Arthas != null)
       {
@@ -54,10 +54,12 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       }
 
       var crownHolder = ArtifactSetup.ArtifactCrownstormwind?.OwningUnit;
-      
-      ArtifactManager.Destroy(ArtifactSetup.ArtifactCrownlordaeron);
-      ArtifactManager.Destroy(ArtifactSetup.ArtifactCrownstormwind);
-      
+
+      if (ArtifactSetup.ArtifactCrownlordaeron != null) 
+        ArtifactManager.Destroy(ArtifactSetup.ArtifactCrownlordaeron);
+      if (ArtifactSetup.ArtifactCrownstormwind != null) 
+        ArtifactManager.Destroy(ArtifactSetup.ArtifactCrownstormwind);
+
       var crownOfTheEasternKingdoms = new Artifact(CreateItem(Constants.ITEM_I00U_CROWN_OF_THE_EASTERN_KINGDOMS, 0, 0))
       {
         LocationType = ArtifactLocationType.Hidden,
