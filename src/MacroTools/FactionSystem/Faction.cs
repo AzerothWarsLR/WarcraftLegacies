@@ -595,13 +595,13 @@ namespace MacroTools.FactionSystem
       {
         var eligiblePlayers = Player.GetTeam()?.GetAllPlayers();
         eligiblePlayers?.Remove(Player);
-        RemoveGoldMines();
         DistributeUnits(eligiblePlayers);
         DistributeResources(eligiblePlayers);
         DistributeExperience(eligiblePlayers);
       }
       else
       {
+        RemoveGoldMines();
         Obliterate();
       }
 
