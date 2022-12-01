@@ -66,12 +66,12 @@ namespace MacroTools.Powers
     /// The number of oil pools that will generate on the map.
     /// </summary>
     public int OilPoolCount { get; init; }
-    
+
     /// <summary>
     /// The maximum amount of oil that a given <see cref="OilPool"/> can start with.
     /// </summary>
     public int OilPoolMaximumValue { get; init; }
-    
+
     /// <summary>
     /// The minimum amount of oil that a given <see cref="OilPool"/> can start with.
     /// </summary>
@@ -105,13 +105,13 @@ namespace MacroTools.Powers
     {
       if (_oilPools.Count > 0)
       {
-        for (var i = _oilPools.Count; i --> 0;)
+        for (var i = _oilPools.Count; i-- > 0;)
         {
-          if (_oilPools[i].OilAmount <= 0) 
+          if (_oilPools[i].OilAmount <= 0)
             _oilPools.Remove(_oilPools[i]);
         }
       }
-      
+
       for (var i = _oilPools.Count; i < OilPoolCount; i++)
       {
         var randomPoint = GetRandomPointAtSea();
@@ -138,7 +138,9 @@ namespace MacroTools.Powers
       do
       {
         randomPoint = Rectangle.WorldBounds.GetRandomPoint();
-      } while (IsTerrainPathable(randomPoint.X, randomPoint.Y, PATHING_TYPE_FLOATABILITY));
+      } while (IsTerrainPathable(randomPoint.X, randomPoint.Y, PATHING_TYPE_FLOATABILITY) ||
+               !IsTerrainPathable(randomPoint.X, randomPoint.Y, PATHING_TYPE_WALKABILITY));
+
       return randomPoint;
     }
   }
