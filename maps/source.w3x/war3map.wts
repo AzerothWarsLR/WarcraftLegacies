@@ -89878,24 +89878,6 @@ STRING 14979
 Improves caster units by increasing their hit points by 100 and armor by 2.
 }
 
-STRING 14980
-// Upgrades: R00K (Animal War Training), Ubertip (Tooltip - Extended)
-{
-Improves caster units by increasing their hit points by 200 and armor by 2.
-}
-
-STRING 14981
-// Upgrades: R00K (Animal War Training), Ubertip (Tooltip - Extended)
-{
-Improves caster units by increasing their hit points by 300 and armor by 2.
-}
-
-STRING 14982
-// Upgrades: R00K (Animal War Training), Ubertip (Tooltip - Extended)
-{
-Improves caster units by increasing their hit points by 400 and armor by 2.
-}
-
 STRING 14983
 // Upgrades: R00J (Magic Sentry), EditorSuffix (Editor Suffix)
 {
@@ -115063,7 +115045,7 @@ STRING 19182
 }
 
 STRING 19183
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -115075,7 +115057,7 @@ Mighty warriors of the Burning Legion.|n|cfff5962dAbilities:|R Pulverize|n|n|cff
 }
 
 STRING 19185
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -115087,7 +115069,7 @@ STRING 19186
 }
 
 STRING 19187
-// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R00K (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -115146,25 +115128,25 @@ STRING 19197
 }
 
 STRING 19198
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
-{
-E
-}
-
-STRING 19199
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
-{
-E
-}
-
-STRING 19200
 // Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
 
-STRING 19201
+STRING 19199
 // Upgrades: R02P (Backpack), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 19200
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 19201
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -115737,11 +115719,6 @@ STRING 19298
 // Units: h0AJ (Gnoll Overseer), Ubertip (Tooltip - Extended)
 {
 Powerful Gnoll Leader.|n|cfff5962dAbilities:|R Earth Healing, Taunt, Bash|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land units.|r
-}
-
-STRING 19299
-{
-Draenei, Dragonmaw
 }
 
 STRING 19300
@@ -116321,7 +116298,7 @@ Dragonmaw Battle Standard
 }
 
 STRING 19397
-// Upgrades: R00K (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R034 (Improved Bows), Hotkey (Hotkey)
 {
 D
 }
@@ -116512,6 +116489,11 @@ STRING 19428
 R
 }
 
+STRING 19429
+{
+Draenei, Dragonmaw, Obs
+}
+
 STRING 19430
 // Units: nbot (Goblin Privateer), EditorSuffix (Name - Editor Suffix)
 {
@@ -116560,6 +116542,12 @@ STRING 19437
 Increases damage dealt to enemy targets with Heavy armor by 20%. |nIn addition, the Hunter's missile will bounce once to a new target.
 }
 
+STRING 19438
+// Upgrades: R00K (Animal War Training), Ubertip (Tooltip - Extended)
+{
+Improves caster units by increasing their hit points by a further 100 and armor by 2.
+}
+
 STRING 19439
 // Abilities: A0ZG (Blood Absorption), Ubertip (Tooltip - Normal - Extended)
 {
@@ -116606,6 +116594,18 @@ STRING 19446
 // Abilities: A0ZG (Blood Absorption), Tip (Tooltip - Normal)
 {
 Blood Absorption - [|cffffcc00Level 3|r]
+}
+
+STRING 19447
+// Upgrades: R00K (Animal War Training), Ubertip (Tooltip - Extended)
+{
+Improves caster units by increasing their hit points by a further 100 and armor by 2.
+}
+
+STRING 19448
+// Upgrades: R00K (Animal War Training), Ubertip (Tooltip - Extended)
+{
+Improves caster units by increasing their hit points by a further 100 and armor by 2.
 }
 
 STRING 19449
@@ -116819,7 +116819,7 @@ Transports troops to Nagrand.
 }
 
 STRING 19488
-// Upgrades: R034 (Improved Bows), Hotkey (Hotkey)
+// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 D
 }

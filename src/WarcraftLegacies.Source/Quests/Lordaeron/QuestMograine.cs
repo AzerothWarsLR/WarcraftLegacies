@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// Initializes a new instance of the <see cref="QuestMograine"/> class.
     /// </summary>
     public QuestMograine() : base("The Exile",
-      "The Lich King, looming over Northrend from Icecrown's peak, is the greatest threat Lordaeron has ever faced. He must be destroyed.",
+      "Mograine has been gone for a long time, if Lordaeron would be in great peril, he would surely come back to defend it!",
       "ReplaceableTextures\\CommandButtons\\BTNAlexandros.blp")
     {
       AddObjective(new ObjectiveTime(720));
@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     /// <inheritdoc/>
     protected override string CompletionPopup =>
-      "With the Lich King eliminated, the Kingdom of Lordaeron is free of its greatest threat. Alexandros Mograine gains recognition as a champion of the war, and prepares himself to aid Lordaeron in future conflicts in a greater capacity.";
+      "With the threat of the Scourge and the Plague, Mograine has returned to help Lordaeorn in their dire times.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
