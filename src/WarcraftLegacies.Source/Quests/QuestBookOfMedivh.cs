@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using MacroTools.ArtifactSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
@@ -15,23 +16,26 @@ namespace WarcraftLegacies.Source.Quests
     private readonly IHasCompletingUnit _objectiveWithCompletingUnit;
     private readonly unit _bookOfMedivhPedestal;
     private readonly bool _isLegion;
+    private readonly Artifact _bookOfMedivh;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestBookOfMedivh"/> class.
     /// </summary>
     /// <param name="bookOfMedivhPedestal">The pedestal which has the Book on it.</param>
     /// <param name="isLegion">If set to true, any hero of any level can complete the objective.</param>
-    public QuestBookOfMedivh(unit bookOfMedivhPedestal, bool isLegion) : base("Book of Medivh",
+    /// <param name="bookOfMedivh">Reward for completing the quest.</param>
+    public QuestBookOfMedivh(unit bookOfMedivhPedestal, bool isLegion, Artifact bookOfMedivh) : base("Book of Medivh",
       "The last remaining spellbook written by Medivh, the Last Guardian, is held securely within the dungeons of Dalaran. The spells within its pages could bring us great power.",
       @"ReplaceableTextures\CommandButtons\BTNBookOfTheDead.blp")
     {
       _isLegion = isLegion;
+      _bookOfMedivh = bookOfMedivh;
       _objectiveWithCompletingUnit = isLegion
         ? new ObjectiveAnyUnitInRect(Regions.Book_Retrieval, "the Book of Medivh's pedestal", true)
         : new ObjectiveHeroWithLevelInRect(12, Regions.Book_Retrieval, "the Book of Medivh's pedestal");
       if (_objectiveWithCompletingUnit is Objective objective) 
         AddObjective(objective);
-      AddObjective(new ObjectiveNoOtherPlayerGetsArtifact(ArtifactSetup.BookOfMedivh));
+      AddObjective(new ObjectiveNoOtherPlayerGetsArtifact(bookOfMedivh));
       _bookOfMedivhPedestal = bookOfMedivhPedestal;
       Required = isLegion;
     }
@@ -53,8 +57,7 @@ namespace WarcraftLegacies.Source.Quests
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      if (ArtifactSetup.BookOfMedivh != null)
-        _objectiveWithCompletingUnit.CompletingUnit?.AddItemSafe(ArtifactSetup.BookOfMedivh.Item);
+      _objectiveWithCompletingUnit.CompletingUnit?.AddItemSafe(_bookOfMedivh.Item);
       _bookOfMedivhPedestal.Kill();
     }
   }

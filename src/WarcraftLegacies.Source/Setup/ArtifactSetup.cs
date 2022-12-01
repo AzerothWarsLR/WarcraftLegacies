@@ -5,30 +5,30 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup
 {
-  public static class ArtifactSetup
+  public sealed class ArtifactSetup
   {
     private const float DummyX = 20195;
     private const float DummyY = 24177;
 
-    public static Artifact? ArtifactGhanir { get; private set; }
-    public static Artifact? ArtifactSkullofguldan { get; private set; }
-    public static Artifact? ArtifactCrownlordaeron { get; private set; }
-    public static Artifact? ArtifactCrownstormwind { get; private set; }
-    public static Artifact? ArtifactHelmofdomination { get; private set; }
-    public static Artifact? ArtifactScepterofthequeen { get; private set; }
-    public static Artifact? BookOfMedivh { get; private set; }
-    public static Artifact? ArtifactHornofcenarius { get; private set; }
-    public static Artifact? ArtifactEyeofsargeras { get; private set; }
-    public static Artifact? ArtifactAshbringer { get; private set; }
-    public static Artifact? ArtifactZinrokh { get; private set; }
-    public static Artifact? ScytheOfElune { get; private set; }
-    public static Artifact? AzureFragment { get; private set; }
-    public static Artifact? EmeraldFragment { get; private set; }
-    public static Artifact? RubyFragment { get; private set; }
-    public static Artifact? ObsidianFragment { get; private set; }
-    public static Artifact? BronzeFragment { get; private set; }
+    public Artifact ArtifactCrownstormwind { get; set; }
+    public Artifact? ArtifactGhanir { get; private set; }
+    public Artifact? ArtifactSkullofguldan { get; private set; }
+    public Artifact? ArtifactCrownlordaeron { get; private set; }
+    public Artifact? ArtifactHelmofdomination { get; private set; }
+    public Artifact? ArtifactScepterofthequeen { get; private set; }
+    public Artifact? BookOfMedivh { get; private set; }
+    public Artifact? ArtifactHornofcenarius { get; private set; }
+    public Artifact? ArtifactEyeofsargeras { get; private set; }
+    public Artifact? ArtifactAshbringer { get; private set; }
+    public Artifact? ArtifactZinrokh { get; private set; }
+    public Artifact? ScytheOfElune { get; private set; }
+    public Artifact? AzureFragment { get; private set; }
+    public Artifact? EmeraldFragment { get; private set; }
+    public Artifact? RubyFragment { get; private set; }
+    public Artifact? ObsidianFragment { get; private set; }
+    public Artifact? BronzeFragment { get; private set; }
 
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public ArtifactSetup Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Artifact tempArtifact;
 
@@ -83,7 +83,7 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH), Artifact.ArtifactHolderAbilId);
       UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH), BookOfMedivh.Item);
       ArtifactManager.Register(BookOfMedivh);
-      
+
       ArtifactSkullofguldan = new Artifact(CreateItem(FourCC("I007"), DummyX, DummyY)); //Skull of Guldan
       UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("n0DK")),
         Artifact.ArtifactHolderAbilId); //Skull Pedestal
@@ -96,8 +96,10 @@ namespace WarcraftLegacies.Source.Setup
       };
 
       BronzeFragment = new Artifact(CreateItem(Constants.ITEM_I01M_BRONZE_FRAGMENT, DummyX, DummyY));
-      UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_O024_CHIEFTAN_OF_THE_SANDFURY_TRIBE_CREEP_ZUL_FARRAK), Artifact.ArtifactHolderAbilId);
-      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_O024_CHIEFTAN_OF_THE_SANDFURY_TRIBE_CREEP_ZUL_FARRAK), BronzeFragment.Item);
+      UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_O024_CHIEFTAN_OF_THE_SANDFURY_TRIBE_CREEP_ZUL_FARRAK),
+        Artifact.ArtifactHolderAbilId);
+      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_O024_CHIEFTAN_OF_THE_SANDFURY_TRIBE_CREEP_ZUL_FARRAK),
+        BronzeFragment.Item);
       ArtifactManager.Register(BronzeFragment);
 
       ObsidianFragment = new Artifact(CreateItem(Constants.ITEM_I01L_OBSIDIAN_FRAGMENT, DummyX, DummyY));
@@ -105,17 +107,23 @@ namespace WarcraftLegacies.Source.Setup
       ArtifactManager.Register(ObsidianFragment);
 
       RubyFragment = new Artifact(CreateItem(Constants.ITEM_I01J_RUBY_FRAGMENT, DummyX, DummyY));
-      UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_O023_WITCH_DOCTOR_OF_THE_GURUBIAN_TRIBE_CREEP_ZUL_GURUB), Artifact.ArtifactHolderAbilId); //Jin)do
-      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_O023_WITCH_DOCTOR_OF_THE_GURUBIAN_TRIBE_CREEP_ZUL_GURUB), RubyFragment.Item);
+      UnitAddAbility(
+        preplacedUnitSystem.GetUnit(Constants.UNIT_O023_WITCH_DOCTOR_OF_THE_GURUBIAN_TRIBE_CREEP_ZUL_GURUB),
+        Artifact.ArtifactHolderAbilId); //Jin)do
+      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_O023_WITCH_DOCTOR_OF_THE_GURUBIAN_TRIBE_CREEP_ZUL_GURUB),
+        RubyFragment.Item);
       ArtifactManager.Register(RubyFragment);
 
       AzureFragment = new Artifact(CreateItem(Constants.ITEM_I01I_AZURE_FRAGMENT, DummyX, DummyY));
-      UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_O02C_HIGH_PROPHET_OF_AKALI_CREEP_ZUL_DRAK), Artifact.ArtifactHolderAbilId);
-      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_O02C_HIGH_PROPHET_OF_AKALI_CREEP_ZUL_DRAK), AzureFragment.Item);
+      UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_O02C_HIGH_PROPHET_OF_AKALI_CREEP_ZUL_DRAK),
+        Artifact.ArtifactHolderAbilId);
+      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_O02C_HIGH_PROPHET_OF_AKALI_CREEP_ZUL_DRAK),
+        AzureFragment.Item);
       ArtifactManager.Register(AzureFragment);
 
       EmeraldFragment = new Artifact(CreateItem(Constants.ITEM_I01K_EMERALD_FRAGMENT, DummyX, DummyY));
-      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_O00O_CHIEFTAN_OF_THE_AMANI_TRIBE_CREEP_ZUL_AMAN), EmeraldFragment.Item);
+      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_O00O_CHIEFTAN_OF_THE_AMANI_TRIBE_CREEP_ZUL_AMAN),
+        EmeraldFragment.Item);
       ArtifactManager.Register(EmeraldFragment);
 
       tempArtifact = new Artifact(CreateItem(FourCC("arsh"), DummyX, DummyY)); //Shroud of Nozdormuru
@@ -161,6 +169,8 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddAbility(worgenBloodShamanHero, Artifact.ArtifactHolderAbilId);
       UnitAddItem(worgenBloodShamanHero, ScytheOfElune.Item);
       ArtifactManager.Register(ScytheOfElune);
+
+      return this;
     }
   }
 }

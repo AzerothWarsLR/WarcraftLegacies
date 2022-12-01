@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Setup
       AllFactionSetup.Setup(preplacedUnitSystem);
       PlayerSetup.Setup();
       NeutralHostileSetup.Setup();
-      ArtifactSetup.Setup(preplacedUnitSystem);
+      var artifactSetup = new ArtifactSetup().Setup(preplacedUnitSystem);
       AllQuestSetup.Setup(preplacedUnitSystem);
       ObserverSetup.Setup();
       SpellsSetup.Setup();
