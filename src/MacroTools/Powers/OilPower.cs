@@ -112,18 +112,17 @@ namespace MacroTools.Powers
         }
       }
 
-      for (var i = _oilPools.Count; i < OilPoolCount; i++)
+      if (_oilPools.Count >= OilPoolCount)
+        return;
+      var randomPoint = GetRandomPointAtSea();
+      var oilPool = new OilPool(_owners.First(), randomPoint, "Tar Pool.mdx", this)
       {
-        var randomPoint = GetRandomPointAtSea();
-        var oilPool = new OilPool(_owners.First(), randomPoint, "Tar Pool.mdx", this)
-        {
-          Active = true,
-          Duration = float.MaxValue,
-          OilAmount = GetRandomInt(OilPoolMinimumValue, OilPoolMaximumValue)
-        };
-        HazardSystem.Add(oilPool);
-        _oilPools.Add(oilPool);
-      }
+        Active = true,
+        Duration = float.MaxValue,
+        OilAmount = GetRandomInt(OilPoolMinimumValue, OilPoolMaximumValue)
+      };
+      HazardSystem.Add(oilPool);
+      _oilPools.Add(oilPool);
     }
 
     private void RefreshDescription()
