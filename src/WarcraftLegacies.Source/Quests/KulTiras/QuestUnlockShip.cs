@@ -34,6 +34,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       _proudmooreCapitalShip = proudmooreCapitalShip;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _rescueRect = rescueRect;
+      Required = true;
     }
 
     /// <inheritdoc/>
