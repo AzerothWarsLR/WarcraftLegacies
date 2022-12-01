@@ -34,6 +34,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       _proudmooreCapitalShip = proudmooreCapitalShip;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _rescueRect = rescueRect;
+      Required = true;
     }
 
     /// <inheritdoc/>
@@ -49,7 +50,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Unpause the Proudmoore capital ship and unlocks the buildings inside.";
+      "Unlock the Proudmoore capital ship and unlocks the buildings inside.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

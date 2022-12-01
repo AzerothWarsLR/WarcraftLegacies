@@ -1,4 +1,5 @@
 ﻿using MacroTools.FactionSystem;
+using MacroTools.Libraries;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup;
@@ -17,13 +18,15 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     private readonly QuestData _completeOnFailQuest;
     private readonly QuestData _failOnFailQuest;
     private readonly Rectangle _onFailSpawnRect;
+
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestConquerKul"/> class
     /// </summary>
     /// <param name="onFailSpawnRect"></param>
     /// <param name="completeOnFailQuest">Quest that gets completed upon failing <see cref="QuestConquerKul"/>.</param>
     /// <param name="failOnFailQuest">Quest that is failed upon failing <see cref="QuestConquerKul"/>. </param>
-    public QuestConquerKul(Rectangle onFailSpawnRect, QuestData completeOnFailQuest, QuestData failOnFailQuest) : base("Conquer Boralus",
+    public QuestConquerKul(Rectangle onFailSpawnRect, QuestData completeOnFailQuest, QuestData failOnFailQuest) : base(
+      "Conquer Boralus",
       "The Kul'tiran people and their fleet have been a threat to the Zandalari Empire for ages, it is time to put them to rest.",
       "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp")
     {
@@ -46,14 +49,13 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     protected override string FailurePopup => "Zandalar has fallen.";
 
     /// <inheritdoc/>
-    protected override string PenaltyDescription => "You lose everything you control and can no longer build shipyards, but you unlock Zul'Farrak";
+    protected override string PenaltyDescription =>
+      "You lose everything you control and can no longer build shipyards, but you unlock Zul'Farrak";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      if (whichFaction.Player != null)
-        whichFaction.Player.AddGold(750);
-
+      whichFaction.Player?.AddGold(750);
       KultirasSetup.Kultiras?.Player?.SetTeam(TeamSetup.Alliance);
       ZandalarSetup.Zandalar?.Player?.SetTeam(TeamSetup.Horde);
     }
@@ -67,13 +69,27 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
         _completeOnFailQuest.Progress = QuestProgress.Complete;
         _failOnFailQuest.Progress = QuestProgress.Failed;
 
-        LegendTroll.LEGEND_PRIEST.ForceCreate(completingFaction.Player, new Point(_onFailSpawnRect.Center.X, _onFailSpawnRect.Center.Y), 110);
-        LegendTroll.LEGEND_RASTAKHAN.ForceCreate(completingFaction.Player, new Point(_onFailSpawnRect.Center.X, _onFailSpawnRect.Center.Y), 110);
+        LegendTroll.LEGEND_PRIEST.ForceCreate(completingFaction.Player,
+          new Point(_onFailSpawnRect.Center.X, _onFailSpawnRect.Center.Y), 110);
+        LegendTroll.LEGEND_RASTAKHAN.ForceCreate(completingFaction.Player,
+          new Point(_onFailSpawnRect.Center.X, _onFailSpawnRect.Center.Y), 110);
         if (GetLocalPlayer() == completingFaction.Player)
           SetCameraPosition(_onFailSpawnRect.Center.X, _onFailSpawnRect.Center.Y);
         completingFaction.Player.AddGold(1500);
         completingFaction.Player.AddLumber(2000);
+
+        GeneralHelpers.CreateUnits(completingFaction.Player, Constants.UNIT_H021_WATCHER_TROLL,
+          Regions.TrollSecondChance.Center.X, Regions.TrollSecondChance.Center.Y, 270, 8);
+        GeneralHelpers.CreateUnits(completingFaction.Player, Constants.UNIT_O04A_GATHERER_TROLL_ZANDALARI_WORKER,
+          Regions.TrollSecondChance.Center.X, Regions.TrollSecondChance.Center.Y, 270, 8);
+        GeneralHelpers.CreateUnits(completingFaction.Player, Constants.UNIT_O04D_SCOUT_TROLL,
+          Regions.TrollSecondChance.Center.X, Regions.TrollSecondChance.Center.Y, 270, 6);
+        GeneralHelpers.CreateUnits(completingFaction.Player, Constants.UNIT_H05D_RAPTOR_RIDER_TROLL,
+          Regions.TrollSecondChance.Center.X, Regions.TrollSecondChance.Center.Y, 270, 4);
+        GeneralHelpers.CreateUnits(completingFaction.Player, Constants.UNIT_O04W_GOLDEN_VESSEL_ZANDALAR,
+          Regions.TrollSecondChance.Center.X, Regions.TrollSecondChance.Center.Y, 270, 3);
       }
+
       KultirasSetup.Kultiras?.Player?.SetTeam(TeamSetup.Alliance);
       ZandalarSetup.Zandalar?.Player?.SetTeam(TeamSetup.Horde);
     }
