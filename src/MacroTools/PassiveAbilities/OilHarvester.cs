@@ -71,9 +71,9 @@ namespace MacroTools.PassiveAbilities
       BuffSystem.Add(oilBuff);
     }
 
-    private bool EnsureValidPositioning(unit createdUnit)
+    private static bool EnsureValidPositioning(unit createdUnit)
     {
-      if (new GroupWrapper().EnumUnitsInRange(createdUnit.GetPosition(), Radius)
+      if (new GroupWrapper().EnumUnitsInRange(createdUnit.GetPosition(), 900)
           .EmptyToList()
           .All(x => x.GetTypeId() != createdUnit.GetTypeId() || x == createdUnit)) return true;
       createdUnit.Kill().Remove();
