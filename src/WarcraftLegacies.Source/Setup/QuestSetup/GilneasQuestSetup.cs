@@ -5,7 +5,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class GilneasQuestSetup
   {
-    public static void Setup()
+    public static void Setup(ArtifactSetup artifactSetup)
     {
       var gilneas = GilneasSetup.Gilneas;
       if (gilneas != null)
@@ -16,9 +16,9 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         gilneas.AddQuest(new QuestDuskhaven());
         gilneas.AddQuest(new QuestGilneasCity());
 
-        var questGoldrinnElvePath = new QuestGoldrinnElvePath();
+        var questGoldrinnElvePath = new QuestGoldrinnElvePath(artifactSetup.ScytheOfElune);
         gilneas.AddQuest(questGoldrinnElvePath);
-        gilneas.AddQuest(new QuestGoldrinnHumanPath(questGoldrinnElvePath));
+        gilneas.AddQuest(new QuestGoldrinnHumanPath(questGoldrinnElvePath, artifactSetup.ScytheOfElune));
       }
     }
   }

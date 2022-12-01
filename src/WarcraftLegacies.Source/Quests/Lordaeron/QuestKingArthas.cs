@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using MacroTools.ArtifactSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
@@ -14,12 +15,13 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
   public sealed class QuestKingArthas : QuestData
   {
     private readonly unit _terenas;
+    private readonly Artifact _crownOfLordaeron;
     private const int CompletionExperienceBonus = 2000;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestKingArthas"/> class.
     /// </summary>
-    public QuestKingArthas(unit terenas) : base("Line of Succession",
+    public QuestKingArthas(unit terenas, Artifact crownOfLordaeron) : base("Line of Succession",
       "Arthas Menethil is the one true heir of the Kingdom of Lordaeron. The only thing standing in the way of his coronation is the world-ending threat of the Scourge.",
       "ReplaceableTextures\\CommandButtons\\BTNArthas.blp")
     {
@@ -29,6 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       AddObjective(new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.King_Arthas_crown, "King Terenas"));
       ResearchId = Constants.UPGRADE_R08A_QUEST_COMPLETED_LINE_OF_SUCCESSION;
       _terenas = terenas;
+      _crownOfLordaeron = crownOfLordaeron;
       Required = true;
     }
 
@@ -47,7 +50,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       BlzSetUnitName(_terenas, "King Emeritus Terenas Menethil");
       RemoveUnit(_terenas);
       AddHeroXP(LegendLordaeron.Arthas.Unit, CompletionExperienceBonus, true);
-      LegendLordaeron.Arthas.Unit?.AddItemSafe(ArtifactSetup.ArtifactCrownlordaeron.Item);
+      LegendLordaeron.Arthas.Unit?.AddItemSafe(_crownOfLordaeron.Item);
       LegendLordaeron.Arthas.ClearUnitDependencies();
     }
   }

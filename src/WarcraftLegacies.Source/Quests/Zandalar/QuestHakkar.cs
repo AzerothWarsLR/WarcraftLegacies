@@ -1,3 +1,4 @@
+using MacroTools.ArtifactSystem;
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
@@ -16,12 +17,12 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestHakkar"/> class.
     /// </summary>
-    public QuestHakkar() : base("The Binding of the Soulflayer",
+    public QuestHakkar(Artifact zinrokh) : base("The Binding of the Soulflayer",
       "Hakkar is the most dangerous and powerful of the Troll gods. Only by fusing the Demon Soul would the Zandalari be able to control Hakkar and bind him to their will.",
       "ReplaceableTextures\\CommandButtons\\BTNWindSerpent2.blp")
     {
-      AddObjective(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactZinrokh));
-      AddObjective(new ObjectiveArtifactInRect(ArtifactSetup.ArtifactZinrokh, Regions.DrownedTemple,
+      AddObjective(new ObjectiveAcquireArtifact(zinrokh));
+      AddObjective(new ObjectiveArtifactInRect(zinrokh, Regions.DrownedTemple,
         "The Drowned Temple"));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N00U_SWAMP_OF_SORROWS_10GOLD_MIN)));
       Global = true;

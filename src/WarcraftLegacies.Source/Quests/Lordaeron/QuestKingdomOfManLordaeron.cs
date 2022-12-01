@@ -15,18 +15,22 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
   /// </summary>
   public sealed class QuestKingdomOfManLordaeron : QuestData
   {
+    private readonly Artifact _crownOfLordaeron;
+    private readonly Artifact _crownOfStormwind;
     private const int RewardResearchId = Constants.UPGRADE_R01N_ARATHORIAN_LEGACY_LORDAERON_STORMWIND_QUEST;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestKingdomOfManLordaeron"/> class.
     /// </summary>
-    public QuestKingdomOfManLordaeron() : base("Kingdom of Man",
+    public QuestKingdomOfManLordaeron(Artifact crownOfLordaeron, Artifact crownOfStormwind) : base("Kingdom of Man",
       "Before the First War, all of humanity was united under the banner of the Arathorian Empire. Reclaim its greatness by uniting mankind once again.",
       "ReplaceableTextures\\CommandButtons\\BTNFireKingCrown.blp")
     {
+      _crownOfLordaeron = crownOfLordaeron;
+      _crownOfStormwind = crownOfStormwind;
       AddObjective(new ObjectiveControlLegend(LegendLordaeron.Arthas, true));
-      AddObjective(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactCrownlordaeron));
-      AddObjective(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactCrownstormwind));
+      AddObjective(new ObjectiveAcquireArtifact(crownOfLordaeron));
+      AddObjective(new ObjectiveAcquireArtifact(crownOfStormwind));
       AddObjective(new ObjectiveLegendDead(LegendScourge.LegendLichking));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N010_STORMWIND_CITY_30GOLD_MIN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N01G_LORDAERON_CITY_30GOLD_MIN)));
@@ -53,12 +57,10 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
         LegendLordaeron.Arthas.ClearUnitDependencies();
       }
 
-      var crownHolder = ArtifactSetup.ArtifactCrownstormwind?.OwningUnit;
-
-      if (ArtifactSetup.ArtifactCrownlordaeron != null) 
-        ArtifactManager.Destroy(ArtifactSetup.ArtifactCrownlordaeron);
-      if (ArtifactSetup.ArtifactCrownstormwind != null) 
-        ArtifactManager.Destroy(ArtifactSetup.ArtifactCrownstormwind);
+      var crownHolder = _crownOfStormwind.OwningUnit;
+      
+      ArtifactManager.Destroy(_crownOfLordaeron);
+      ArtifactManager.Destroy(_crownOfStormwind);
 
       var crownOfTheEasternKingdoms = new Artifact(CreateItem(Constants.ITEM_I00U_CROWN_OF_THE_EASTERN_KINGDOMS, 0, 0))
       {

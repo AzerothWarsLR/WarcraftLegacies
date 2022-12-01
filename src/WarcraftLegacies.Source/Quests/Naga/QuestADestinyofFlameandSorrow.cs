@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using MacroTools.ArtifactSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
@@ -15,11 +16,11 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestADestinyofFlameandSorrow"/> class.
     /// </summary>
-    public QuestADestinyofFlameandSorrow() : base("A Destiny of Flame and Sorrow",
+    public QuestADestinyofFlameandSorrow(Artifact artifactSkullOfGuldan) : base("A Destiny of Flame and Sorrow",
       "The Skull of Gul'dan calls for Illidan. If he could harness it's power, he would gain immeasureable power",
       @"ReplaceableTextures\CommandButtons\BTNMetamorphosis.blp")
     {
-      AddObjective(new ObjectiveLegendHasArtifact(LegendNaga.LegendIllidan, ArtifactSetup.ArtifactSkullofguldan));
+      AddObjective(new ObjectiveLegendHasArtifact(LegendNaga.LegendIllidan, artifactSkullOfGuldan));
       ResearchId = Constants.UPGRADE_R095_QUEST_COMPLETED_A_DESTINY_OF_FLAME_AND_SORROW;
     }
 

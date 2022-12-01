@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
   /// </summary>
   public static class LordaeronQuestSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
     {
       var lordaeron = LordaeronSetup.Lordaeron;
       var kingTerenas = LegendLordaeron.Terenas?.Unit;
@@ -33,8 +33,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         lordaeron.AddQuest(new QuestMograine());
         lordaeron.AddQuest(new QuestShoresOfNorthrend());
         lordaeron.AddQuest(new QuestThunderEagle());
-        lordaeron.AddQuest(new QuestKingArthas(kingTerenas));
-        lordaeron.AddQuest(new QuestKingdomOfManLordaeron());
+        lordaeron.AddQuest(new QuestKingArthas(kingTerenas, artifactSetup.CrownOfLordaeron));
+        lordaeron.AddQuest(new QuestKingdomOfManLordaeron(artifactSetup.CrownOfLordaeron, artifactSetup.CrownOfStormwind));
         lordaeron.AddQuest(new QuestGarithosCrusade());
         lordaeron.AddQuest(new QuestGarithosMindControl());
       }

@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class SentinelsQuestSetup
   {
-    public static void Setup()
+    public static void Setup(ArtifactSetup artifactSetup)
     {
       var sentinels = SentinelsSetup.Sentinels;
 
@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       sentinels.AddQuest(new QuestSentinelsKillWarsong());
       sentinels.AddQuest(new QuestSentinelsKillFrostwolf());
       //sentinels.AddQuest(new QuestMaievOutland(Regions.MaievStartUnlock));
-      sentinels.AddQuest(new QuestScepterOfTheQueenSentinels(Regions.HighBourne));
+      sentinels.AddQuest(new QuestScepterOfTheQueenSentinels(Regions.HighBourne, artifactSetup.ScepterOfTheQueen));
       sentinels.AddQuest(new QuestVaultoftheWardens());
     }
   }

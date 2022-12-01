@@ -1,9 +1,11 @@
-﻿using MacroTools.ArtifactSystem;
+﻿using System.Collections.Generic;
+using System.Linq;
+using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using static WarcraftLegacies.Source.Setup.ArtifactSetup;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests
 {
@@ -12,25 +14,25 @@ namespace WarcraftLegacies.Source.Quests
   /// </summary>
   public sealed class QuestZinrokhAssembly : QuestData
   {
+    private readonly List<Artifact> _fragments;
+
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestZinrokhAssembly"/> class.
     /// </summary>
-    public QuestZinrokhAssembly() : base("Destroyer of Worlds", "When Hakkar the Soulflayer was defeated long ago, Zin'rokh was shattered and spread throughout the Troll tribes. The legendary blade could be reforged if its pieces could be unified once more.", @"ReplaceableTextures\CommandButtons\BTNHSZin'Rokhv1.blp")
+    public QuestZinrokhAssembly(List<Artifact> fragments) : base("Destroyer of Worlds", "When Hakkar the Soulflayer was defeated long ago, Zin'rokh was shattered and spread throughout the Troll tribes. The legendary blade could be reforged if its pieces could be unified once more.", @"ReplaceableTextures\CommandButtons\BTNHSZin'Rokhv1.blp")
     {
-      AddObjective(new ObjectiveAcquireArtifact(AzureFragment));
-      AddObjective(new ObjectiveAcquireArtifact(BronzeFragment));
-      AddObjective(new ObjectiveAcquireArtifact(EmeraldFragment));
-      AddObjective(new ObjectiveAcquireArtifact(ObsidianFragment));
-      AddObjective(new ObjectiveAcquireArtifact(RubyFragment));
+      _fragments = fragments;
+      foreach (var artifact in fragments) 
+        AddObjective(new ObjectiveAcquireArtifact(artifact));
     }
 
     /// <inheritdoc/>
     protected override string CompletionPopup =>
-      $"{AzureFragment?.OwningUnit?.GetProperName() ?? ""} has assembled Zin'rokh, Destroyer of Worlds!";
+      $"{_fragments.First().OwningUnit?.GetProperName() ?? ""} has assembled Zin'rokh, Destroyer of Worlds!";
     
     /// <inheritdoc/>
     protected override string FailurePopup =>
-      $"{AzureFragment?.OwningPlayer?.GetFaction()?.ColoredName ?? ""} has assembled Zin'rokh, Destroyer of Worlds. The only way we will acquire it now is if we take it from them.";
+      $"{_fragments.First().OwningPlayer?.GetFaction()?.ColoredName ?? ""} has assembled Zin'rokh, Destroyer of Worlds. The only way we will acquire it now is if we take it from them.";
     
     /// <inheritdoc/>
     protected override string RewardDescription => "Reforge Zin'rokh, Destroyer of Worlds from its Shards";
@@ -38,14 +40,15 @@ namespace WarcraftLegacies.Source.Quests
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      var azureFragmentHolder = AzureFragment?.OwningUnit;
-      ArtifactManager.Destroy(AzureFragment);
-      ArtifactManager.Destroy(BronzeFragment);
-      ArtifactManager.Destroy(EmeraldFragment);
-      ArtifactManager.Destroy(ObsidianFragment);
-      ArtifactManager.Destroy(RubyFragment);
-      if (ArtifactZinrokh != null) 
-        azureFragmentHolder?.AddItemSafe(ArtifactZinrokh.Item);
+      var azureFragmentHolder = _fragments.First().OwningUnit;
+      foreach (var artifact in _fragments)
+        ArtifactManager.Destroy(artifact);
+      var zinrokh = new Artifact(CreateItem(Constants.ITEM_I016_ZIN_ROKH_DESTROYER_OF_WORLDS, 0, 0))
+      {
+        TitanforgedAbility = Constants.ABILITY_A0VM_TITANFORGED_9_STRENGTH
+      };
+      ArtifactManager.Register(zinrokh);
+      azureFragmentHolder?.AddItemSafe(zinrokh.Item);
     }
   }
 }
