@@ -15,13 +15,10 @@ namespace WarcraftLegacies.Source.Setup
     public static Artifact? ArtifactCrownlordaeron { get; private set; }
     public static Artifact? ArtifactCrownstormwind { get; private set; }
     public static Artifact? ArtifactHelmofdomination { get; private set; }
-    public static Artifact? ArtifactDrektharsspellbook { get; private set; }
     public static Artifact? ArtifactScepterofthequeen { get; private set; }
     public static Artifact? BookOfMedivh { get; private set; }
-    public static Artifact? ArtifactSoulgem { get; private set; }
     public static Artifact? ArtifactHornofcenarius { get; private set; }
     public static Artifact? ArtifactEyeofsargeras { get; private set; }
-    public static Artifact? ArtifactCrowntriumvirate { get; private set; }
     public static Artifact? ArtifactTrolkalar { get; private set; }
     public static Artifact? ArtifactAshbringer { get; private set; }
     public static Artifact? ArtifactZinrokh { get; private set; }
@@ -135,21 +132,6 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("O025")), tempArtifact.Item);
       ArtifactManager.Register(tempArtifact);
 
-      ArtifactDrektharsspellbook = new Artifact(CreateItem(FourCC("dtsb"), DummyX, DummyY))
-      {
-        LocationType = ArtifactLocationType.Hidden,
-        LocationDescription = "Frostwolf Quest"
-      };
-      ArtifactManager.Register(ArtifactDrektharsspellbook);
-
-      ArtifactSoulgem = new Artifact(CreateItem(FourCC("gsou"), DummyX, DummyY))
-      {
-        LocationType = ArtifactLocationType.Hidden,
-        LocationDescription = "Dalaran's Quest",
-        FalsePosition = new Point(-14269, 22282)
-      };
-      ArtifactManager.Register(ArtifactSoulgem);
-
       ArtifactGhanir = new Artifact(CreateItem(FourCC("I00C"), DummyX, DummyY)); //G)hanir
       UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("nbwd_0737")), Artifact.ArtifactHolderAbilId); //Barrow Den
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("nbwd")), ArtifactGhanir.Item);
@@ -173,13 +155,6 @@ namespace WarcraftLegacies.Source.Setup
       tempArtifact = new Artifact(CreateItem(FourCC("I00K"), DummyX, DummyY)); //Essence
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n03T")), tempArtifact.Item); //Murmur
       ArtifactManager.Register(tempArtifact);
-
-      ArtifactCrowntriumvirate = new Artifact(CreateItem(FourCC("I011"), DummyX, DummyY))
-      {
-        LocationType = ArtifactLocationType.Hidden,
-        LocationDescription = "Draenei Quest"
-      };
-      ArtifactManager.Register(ArtifactCrowntriumvirate);
 
       ArtifactAshbringer = new Artifact(CreateItem(FourCC("I012"), DummyX, DummyY))
       {
