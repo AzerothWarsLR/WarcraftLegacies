@@ -12,8 +12,6 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
   /// </summary>
   public static class LordaeronQuestSetup
   {
-    public static QuestData TheAshbringer { get; private set; }
-
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       var lordaeron = LordaeronSetup.Lordaeron;
@@ -39,7 +37,6 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         lordaeron.AddQuest(new QuestKingdomOfManLordaeron());
         lordaeron.AddQuest(new QuestGarithosCrusade());
         lordaeron.AddQuest(new QuestGarithosMindControl());
-        TheAshbringer = new QuestAshbringer();
       }
     }
   }

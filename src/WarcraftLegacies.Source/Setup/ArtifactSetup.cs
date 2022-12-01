@@ -24,11 +24,7 @@ namespace WarcraftLegacies.Source.Setup
     public static Artifact? ArtifactCrowneasternkingdoms { get; private set; }
     public static Artifact? ArtifactCrowntriumvirate { get; private set; }
     public static Artifact? ArtifactTrolkalar { get; private set; }
-    public static Artifact? ArtifactDemonsoul { get; private set; }
-    public static Artifact? ArtifactThunderfury { get; private set; }
-    public static Artifact? ArtifactLivingshadow { get; private set; }
     public static Artifact? ArtifactAshbringer { get; private set; }
-    public static Artifact? ArtifactXalatath { get; private set; }
     public static Artifact? ArtifactZinrokh { get; private set; }
     public static Artifact? ScytheOfElune { get; private set; }
     public static Artifact? AzureFragment { get; private set; }
@@ -87,7 +83,7 @@ namespace WarcraftLegacies.Source.Setup
       {
         LocationType = ArtifactLocationType.Hidden,
         LocationDescription = "Stormwind Quest",
-        TitanforgedAbility = FourCC("A0VM")
+        TitanforgedAbility = Constants.ABILITY_A0VM_TITANFORGED_9_STRENGTH
       };
       ArtifactManager.Register(ArtifactTrolkalar);
 
@@ -96,13 +92,11 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n085")), ArtifactScepterofthequeen.Item);
       ArtifactManager.Register(ArtifactScepterofthequeen);
 
-      BookOfMedivh = new Artifact(CreateItem(FourCC("I006"), DummyX, DummyY)); //Book of Medivh
-      UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("nbsm_1188")),
-        Artifact.ArtifactHolderAbilId); //Book of Medivh Pedestal
-      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("nbsm")), BookOfMedivh.Item);
+      BookOfMedivh = new Artifact(CreateItem(Constants.ITEM_I006_BOOK_OF_MEDIVH, DummyX, DummyY));
+      UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH), Artifact.ArtifactHolderAbilId);
+      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH), BookOfMedivh.Item);
       ArtifactManager.Register(BookOfMedivh);
-
-
+      
       ArtifactSkullofguldan = new Artifact(CreateItem(FourCC("I007"), DummyX, DummyY)); //Skull of Guldan
       UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("n0DK")),
         Artifact.ArtifactHolderAbilId); //Skull Pedestal
@@ -111,7 +105,7 @@ namespace WarcraftLegacies.Source.Setup
 
       ArtifactZinrokh = new Artifact(CreateItem(FourCC("I016"), DummyX, DummyY))
       {
-        TitanforgedAbility = FourCC("A0VM")
+        TitanforgedAbility = Constants.ABILITY_A0VM_TITANFORGED_9_STRENGTH
       };
 
       BronzeFragment = new Artifact(CreateItem(Constants.ITEM_I01M_BRONZE_FRAGMENT, DummyX, DummyY));
@@ -195,22 +189,6 @@ namespace WarcraftLegacies.Source.Setup
       };
       ArtifactManager.Register(ArtifactCrowntriumvirate);
 
-      ArtifactThunderfury = new Artifact(CreateItem(FourCC("I00Z"), DummyX, DummyY))
-      {
-        LocationType = ArtifactLocationType.Hidden,
-        LocationDescription = "Twilight Hammer's Quest",
-        FalsePosition = new Point(-1649, 7628)
-      };
-      ArtifactManager.Register(ArtifactThunderfury);
-
-      ArtifactLivingshadow = new Artifact(CreateItem(FourCC("odef"), DummyX, DummyY))
-      {
-        LocationType = ArtifactLocationType.Hidden,
-        LocationDescription = "Lordaeron's Quest",
-        FalsePosition = new Point(-19525, -5192)
-      };
-      ArtifactManager.Register(ArtifactLivingshadow);
-
       ArtifactAshbringer = new Artifact(CreateItem(FourCC("I012"), DummyX, DummyY))
       {
         LocationType = ArtifactLocationType.Hidden,
@@ -218,22 +196,6 @@ namespace WarcraftLegacies.Source.Setup
         FalsePosition = new Point(10569, -5280)
       };
       ArtifactManager.Register(ArtifactAshbringer);
-
-      ArtifactXalatath = new Artifact(CreateItem(FourCC("I015"), DummyX, DummyY))
-      {
-        LocationType = ArtifactLocationType.Hidden,
-        LocationDescription = "Black Empire's Quest",
-        FalsePosition = new Point(7121, 10000)
-      };
-      ArtifactManager.Register(ArtifactXalatath);
-
-      ArtifactDemonsoul = new Artifact(CreateItem(FourCC("I01A"), DummyX, DummyY))
-      {
-        LocationType = ArtifactLocationType.Hidden,
-        LocationDescription = "Ahn'qiraj's Quest",
-        FalsePosition = new Point(12508, -11437)
-      };
-      ArtifactManager.Register(ArtifactDemonsoul);
 
       ScytheOfElune = new Artifact(CreateItem(Constants.ITEM_I00R_SCYTHE_OF_ELUNE, DummyX, DummyX));
       var worgenBloodShamanHero = preplacedUnitSystem.GetUnit(Constants.UNIT_O038_WORGEN_BLOOD_SHAMAN_WORGEN_HERO,

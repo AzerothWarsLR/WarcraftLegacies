@@ -13,11 +13,11 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
   /// </summary>
   public sealed class QuestThunderEagle : QuestData
   {
-    private new static readonly int ResearchId = Constants.UPGRADE_R04L_QUEST_COMPLETED_TO_THE_SKIES_LORDAERON;
-    private static readonly int ThunderEagleId = Constants.UNIT_NWE2_THUNDER_EAGLE_LORDAERON;
+    private new const int ResearchId = Constants.UPGRADE_R04L_QUEST_COMPLETED_TO_THE_SKIES_LORDAERON;
+    private const int ThunderEagleId = Constants.UNIT_NWE2_THUNDER_EAGLE_LORDAERON;
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="QuestAshbringer"/> class
+    /// Initializes a new instance of the <see cref="QuestThunderEagle"/> class.
     /// </summary>
     public QuestThunderEagle() : base("To the Skies!",
       "The Thunder Eagles of the Storm Peaks live in fear of the Legion. Wipe out the Legion Nexus to bring these great birds out into the open.",
