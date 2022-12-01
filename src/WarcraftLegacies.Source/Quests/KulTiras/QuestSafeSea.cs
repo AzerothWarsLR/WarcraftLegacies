@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     /// Initializes a new instance of the <see cref="QuestSafeSea"/> class.
     /// </summary>
     public QuestSafeSea() : base("Safe Sea Decree",
-      "The seas must be secured and the Kul'tiras navy must be returned to its former glory!", @"ReplaceableTextures\\CommandButtons\\BTNKulTirasDreadnought.blp")
+      "The seas must be secured and the Kul'tiras navy must be returned to its former glory!", @"ReplaceableTextures\CommandButtons\BTNKulTirasDreadnought.blp")
     {
       AddObjective(new ObjectiveTrain(Constants.UNIT_HDES_DESTROYER_ALLIANCE, Constants.UNIT_HSHY_ALLIANCE_SHIPYARD_LORDAERON, 2));
       AddObjective(new ObjectiveTrain(Constants.UNIT_H04J_WARSHIP_KUL_TIRAS, Constants.UNIT_HSHY_ALLIANCE_SHIPYARD_LORDAERON, 1));
