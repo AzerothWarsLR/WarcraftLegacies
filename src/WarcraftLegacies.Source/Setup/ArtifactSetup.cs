@@ -240,8 +240,6 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddAbility(worgenBloodShamanHero, Artifact.ArtifactHolderAbilId);
       UnitAddItem(worgenBloodShamanHero, ScytheOfElune.Item);
       ArtifactManager.Register(ScytheOfElune);
-
-      return this;
     }
   }
 }
