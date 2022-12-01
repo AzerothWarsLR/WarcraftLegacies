@@ -1,34 +1,47 @@
-//A command that pings all units belonging to the user that have a limit on how many of them can be made.
-
 using MacroTools.FactionSystem;
 using MacroTools.Wrappers;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Commands
 {
+  /// <summary>
+  /// Pings all units belonging to the user that have a limit on how many of them can be made.
+  /// </summary>
   public static class LimitedCommand
   {
-    private const string COMMAND = "-limited";
+    private const string Command = "-limited";
+
+    /// <summary>
+    /// Sets up <see cref="LimitedCommand"/>.
+    /// </summary>
+    public static void Setup()
+    {
+      var trig = CreateTrigger();
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+        TriggerRegisterPlayerChatEvent(trig, player, Command, true);
+      TriggerAddAction(trig, Actions);
+    }
 
     private static void Actions()
     {
       var triggerPlayer = GetTriggerPlayer();
-      Faction triggerFaction = triggerPlayer.GetFaction();
+      var triggerFaction = triggerPlayer.GetFaction();
+      if (triggerFaction == null)
+        return;
+
       foreach (var unit in new GroupWrapper().EnumUnitsOfPlayer(triggerPlayer).EmptyToList())
-      foreach (var objectTypeId in triggerFaction.GetLimitedObjects())
       {
-        var objectLimit = triggerFaction.GetObjectLimit(objectTypeId);
-        if (objectLimit < Faction.UNLIMITED && GetUnitTypeId(unit) == triggerFaction.GetObjectLimit(objectTypeId))
-          if (GetLocalPlayer() == triggerPlayer)
-            PingMinimap(GetUnitX(unit), GetUnitY(unit), 5);
+        if (IsPingable(triggerFaction, unit) && GetLocalPlayer() == triggerPlayer)
+          PingMinimap(GetUnitX(unit), GetUnitY(unit), 5);
       }
     }
 
-    public static void Setup()
+    private static bool IsPingable(Faction whichFaction, unit whichUnit)
     {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, true);
-      TriggerAddAction(trig, Actions);
+      var unitTypeId = GetUnitTypeId(whichUnit);
+      var objectLimit = whichFaction.GetObjectLimit(GetUnitTypeId(whichUnit));
+      return objectLimit < Faction.UNLIMITED && GetUnitTypeId(whichUnit) == whichFaction.GetObjectLimit(unitTypeId) &&
+             BlzIsUnitSelectable(whichUnit);
     }
   }
 }
