@@ -14,10 +14,6 @@ namespace MacroTools.SpellSystem
   {
     private static readonly Dictionary<int, Spell> SpellsByAbilityId = new();
 
-    static SpellSystem() =>
-      PlayerUnitEvents.AddCustomEventFilter(EVENT_PLAYER_UNIT_TRAIN_FINISH, "UnitTypeFinishesBeingTrained",
-        () => GetUnitTypeId(GetTrainedUnit()));
-
     /// <summary>
     /// Returns the registered <see cref="Spell"/> with the provided ability ID.
     /// </summary>
