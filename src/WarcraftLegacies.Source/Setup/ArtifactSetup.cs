@@ -19,7 +19,6 @@ namespace WarcraftLegacies.Source.Setup
     public static Artifact? BookOfMedivh { get; private set; }
     public static Artifact? ArtifactHornofcenarius { get; private set; }
     public static Artifact? ArtifactEyeofsargeras { get; private set; }
-    public static Artifact? ArtifactTrolkalar { get; private set; }
     public static Artifact? ArtifactAshbringer { get; private set; }
     public static Artifact? ArtifactZinrokh { get; private set; }
     public static Artifact? ScytheOfElune { get; private set; }
@@ -74,14 +73,6 @@ namespace WarcraftLegacies.Source.Setup
 
       tempArtifact = new Artifact(CreateItem(Constants.ITEM_I01V_GOREHOWL, -10330, 2105));
       ArtifactManager.Register(tempArtifact);
-
-      ArtifactTrolkalar = new Artifact(CreateItem(FourCC("I01O"), DummyX, DummyY))
-      {
-        LocationType = ArtifactLocationType.Hidden,
-        LocationDescription = "Stormwind Quest",
-        TitanforgedAbility = Constants.ABILITY_A0VM_TITANFORGED_9_STRENGTH
-      };
-      ArtifactManager.Register(ArtifactTrolkalar);
 
       ArtifactScepterofthequeen = new Artifact(CreateItem(FourCC("I00I"), DummyX, DummyY));
       UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("n085_2846")), Artifact.ArtifactHolderAbilId); //The Atheneum
