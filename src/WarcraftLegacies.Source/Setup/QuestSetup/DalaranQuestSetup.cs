@@ -10,11 +10,11 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class DalaranQuestSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
     {
       var dalaran = DalaranSetup.Dalaran;
 
-      QuestNewGuardian newGuardian = new();
+      QuestNewGuardian newGuardian = new(artifactSetup.BookOfMedivh);
       QuestTheNexus theNexus = new();
       QuestCrystalGolem crystalGolem = new();
       QuestFallenGuardian fallenGuardian = new();

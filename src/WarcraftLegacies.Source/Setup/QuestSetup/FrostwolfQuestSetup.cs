@@ -6,7 +6,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class FrostwolfQuestSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
     {
       var frostwolf = FrostwolfSetup.Frostwolf;
 
@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       frostwolf.AddQuest(new QuestThunderBluff(Regions.ThunderBluff.Rect));
       frostwolf.AddQuest(new QuestRexxar(preplacedUnitSystem));
       frostwolf.AddQuest(new QuestDrektharsSpellbook());
-      frostwolf.AddQuest(new QuestRoyalPlunder(Regions.HighBourne));
+      frostwolf.AddQuest(new QuestRoyalPlunder(Regions.HighBourne, artifactSetup.ArtifactScepterofthequeen));
       frostwolf.AddQuest(new QuestFreeNerzhul());
       frostwolf.AddQuest(new QuestWorldShaman());
     }

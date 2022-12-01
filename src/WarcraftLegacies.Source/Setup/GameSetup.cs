@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Setup
       PlayerSetup.Setup();
       NeutralHostileSetup.Setup();
       var artifactSetup = new ArtifactSetup().Setup(preplacedUnitSystem);
-      AllQuestSetup.Setup(preplacedUnitSystem);
+      AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
       ObserverSetup.Setup();
       SpellsSetup.Setup();
       CheatSetup.Setup();

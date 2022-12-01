@@ -5,7 +5,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class TrollQuestSetup
   {
-    public static void Setup()
+    public static void Setup(ArtifactSetup artifactSetup)
     {
       var zandalar = ZandalarSetup.Zandalar;
       if (zandalar != null)
@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         zandalar.AddQuest(new QuestZulgurub());
         zandalar.AddQuest(new QuestGundrak());
         zandalar.AddQuest(new QuestJinthaAlor());
-        zandalar.AddQuest(new QuestHakkar());
+        zandalar.AddQuest(new QuestHakkar(artifactSetup.ArtifactZinrokh));
       }
     }
   }
