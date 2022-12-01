@@ -31,7 +31,7 @@ namespace MacroTools.Powers
     /// <inheritdoc />
     public override void OnRemove(player whichPlayer)
     {
-      PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerDealsDamage, GetPlayerId(whichPlayer));
+      PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerDealsDamage, OnDealDamage, GetPlayerId(whichPlayer));
     }
 
     private void OnDealDamage()

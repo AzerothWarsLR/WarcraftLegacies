@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Buffs;
 using MacroTools.Extensions;
@@ -50,6 +51,8 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
       FourCC("nvk2")
     };
 
+    private readonly Dictionary<int, Action> _villagerPlagueConversionActions = new();
+    
     /// <summary>
     /// Causes <see cref="Power" /> holder to periodically convert villagers on the map into Zombies.
     /// </summary>
@@ -66,7 +69,7 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
       if (_holders.Count == 0)
       {
         foreach (var unitTypeId in _cityBuildings)
-          PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDies, SpawnPeasants, unitTypeId);
+          PlayerUnitEvents.Register(UnitTypeEvent.Dies, SpawnPeasants, unitTypeId);
       }
       _holders.Add(whichPlayer);
 
@@ -78,15 +81,14 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
       foreach (var villager in villagers) 
         ApplyDarkConversion(villager, darkConversionBuffOwner);
 
-      if (_holders.Count == 1)
+      if (_holders.Count != 1) 
+        return;
+      
+      foreach (var villagerTypeId in _villagerUnitTypeIds)
       {
-        foreach (var villagerTypeId in _villagerUnitTypeIds)
-        {
-          PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeIsCreated, () =>
-          {
-            ApplyDarkConversion(GetTriggerUnit(), darkConversionBuffOwner);
-          }, villagerTypeId);
-        }
+        void Action() => ApplyDarkConversion(GetTriggerUnit(), darkConversionBuffOwner);
+        _villagerPlagueConversionActions.Add(villagerTypeId, Action);
+        PlayerUnitEvents.Register(UnitTypeEvent.IsCreated, Action, villagerTypeId);
       }
     }
 
@@ -96,9 +98,9 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
       _holders.Remove(whichPlayer);
       if (_holders.Count == 0)
       {
-        PlayerUnitEvents.Unregister(PlayerUnitEvent.UnitTypeDies, SpawnPeasants);
+        PlayerUnitEvents.Unregister(UnitTypeEvent.Dies, SpawnPeasants);
         foreach (var villagerTypeId in _villagerUnitTypeIds)
-          PlayerUnitEvents.Unregister(PlayerUnitEvent.UnitTypeIsCreated, villagerTypeId);
+          PlayerUnitEvents.Unregister(UnitTypeEvent.IsCreated, _villagerPlagueConversionActions[villagerTypeId], villagerTypeId);
       }
     }
 

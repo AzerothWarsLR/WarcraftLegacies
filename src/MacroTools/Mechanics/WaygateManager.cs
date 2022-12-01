@@ -49,7 +49,7 @@ namespace MacroTools.Mechanics
     /// <param name="waygateUnitTypeId">The unit type ID of the buildable Waygate as specified in the Object Editor.</param>
     public static void Setup(int waygateUnitTypeId)
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeIsCreated, OnWaygateCreated,
+      PlayerUnitEvents.Register(UnitTypeEvent.IsCreated, OnWaygateCreated,
         waygateUnitTypeId);
     }
   }

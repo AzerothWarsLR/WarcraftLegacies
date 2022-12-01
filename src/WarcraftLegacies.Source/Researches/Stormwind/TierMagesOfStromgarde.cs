@@ -52,7 +52,7 @@ namespace WarcraftLegacies.Source.Researches.Stormwind
     {
       _destructableA = preplacedUnitSystem.GetDestructable(FourCC("B017"), new Point(8611, -11985));
       _destructableB = preplacedUnitSystem.GetDestructable(FourCC("B017"), Regions.Stromgarde.Center);
-      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, Research,
+      PlayerUnitEvents.Register(ResearchEvent.IsFinished, Research,
         Constants.UPGRADE_R03V_MAGES_OF_STROMGARDE_ARATHOR_T2);
     }
   }

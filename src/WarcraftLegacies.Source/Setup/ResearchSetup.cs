@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Setup
       TierSolarFlareRitual.Setup();
       TierVeteranGuard.Setup();
 
-      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, () =>
+      PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
       {
         GetTriggerPlayer()
           .GetFaction()?

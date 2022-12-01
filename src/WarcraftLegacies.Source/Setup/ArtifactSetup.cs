@@ -57,12 +57,7 @@ namespace WarcraftLegacies.Source.Setup
     /// A remnant of the Titan Sargeras.
     /// </summary>
     public Artifact EyeOfSargeras { get; }
-    
-    /// <summary>
-    /// Super cool holy sword.
-    /// </summary>
-    public Artifact Ashbringer { get; }
-    
+
     /// <summary>
     /// Destroyer of Worlds.
     /// </summary>
@@ -225,14 +220,6 @@ namespace WarcraftLegacies.Source.Setup
       tempArtifact = new Artifact(CreateItem(FourCC("I00K"), DummyX, DummyY)); //Essence
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n03T")), tempArtifact.Item); //Murmur
       ArtifactManager.Register(tempArtifact);
-
-      Ashbringer = new Artifact(CreateItem(FourCC("I012"), DummyX, DummyY))
-      {
-        LocationType = ArtifactLocationType.Hidden,
-        LocationDescription = "Lordaeron's Quest",
-        FalsePosition = new Point(10569, -5280)
-      };
-      ArtifactManager.Register(Ashbringer);
 
       ScytheOfElune = new Artifact(CreateItem(Constants.ITEM_I00R_SCYTHE_OF_ELUNE, DummyX, DummyX));
       var worgenBloodShamanHero = preplacedUnitSystem.GetUnit(Constants.UNIT_O038_WORGEN_BLOOD_SHAMAN_WORGEN_HERO,

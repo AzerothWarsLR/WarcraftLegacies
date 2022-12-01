@@ -44,7 +44,7 @@ namespace MacroTools.Powers
 
     /// <inheritdoc />
     public override void OnRemove(player whichPlayer) =>
-      PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerFinishesTraining, GetPlayerId(whichPlayer));
+      PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerFinishesTraining, OnTrainUnit, GetPlayerId(whichPlayer));
 
     private void Heroize(unit whichUnit)
     {

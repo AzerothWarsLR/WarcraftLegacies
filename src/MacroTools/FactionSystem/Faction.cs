@@ -73,7 +73,7 @@ namespace MacroTools.FactionSystem
 
     static Faction()
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, () =>
+      PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
       {
         var faction = FactionManager.GetFromPlayer(GetTriggerPlayer());
         faction?.SetObjectLevel(GetResearched(), GetPlayerTechCount(GetTriggerPlayer(), GetResearched(), false));
@@ -595,13 +595,13 @@ namespace MacroTools.FactionSystem
       {
         var eligiblePlayers = Player.GetTeam()?.GetAllPlayers();
         eligiblePlayers?.Remove(Player);
-        RemoveGoldMines();
         DistributeUnits(eligiblePlayers);
         DistributeResources(eligiblePlayers);
         DistributeExperience(eligiblePlayers);
       }
       else
       {
+        RemoveGoldMines();
         Obliterate();
       }
 

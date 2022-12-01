@@ -68,7 +68,7 @@ namespace MacroTools.Buffs
       DestroyEffect(AddSpecialEffect(ReviveEffect, GetUnitX(Target), GetUnitY(Target)));
       SetUnitState(Target, UNIT_STATE_LIFE, Heal);
       BlzSetUnitBaseDamage(Target, BlzGetUnitBaseDamage(Target, 0) + BonusDamage, 0);
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, OnInflictsDamage, OriginalFormId);
+      PlayerUnitEvents.Register(UnitTypeEvent.Damaging, OnInflictsDamage, OriginalFormId);
     }
 
     /// <inheritdoc />
@@ -76,7 +76,7 @@ namespace MacroTools.Buffs
     {
       BlzSetUnitBaseDamage(Target, BlzGetUnitBaseDamage(Target, 0) - BonusDamage, 0);
       BlzSetUnitSkin(Caster, OriginalFormId);
-      PlayerUnitEvents.Unregister(PlayerUnitEvent.UnitTypeDamages, OriginalFormId);
+      PlayerUnitEvents.Unregister(UnitTypeEvent.Damaging, OnInflictsDamage, OriginalFormId);
       if (HitsDone >= HitsReviveThreshold)
         DestroyEffect(AddSpecialEffect(ReviveEffect, GetUnitX(Caster), GetUnitY(Caster)));
       else

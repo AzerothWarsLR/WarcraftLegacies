@@ -21,7 +21,7 @@ namespace MacroTools.Cheats
 
     static CheatGod()
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeIsDamaged, Damage);
+      PlayerUnitEvents.Register(UnitTypeEvent.IsDamaged, Damage);
     }
 
     private static bool IsCheatActive(player whichPlayer)

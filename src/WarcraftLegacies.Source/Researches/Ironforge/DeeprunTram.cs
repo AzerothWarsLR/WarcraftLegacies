@@ -72,9 +72,9 @@ namespace WarcraftLegacies.Source.Researches.Ironforge
     /// </summary>
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, Transfer, ResearchId);
-      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsStarted, ResearchStart, ResearchId);
-      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsCancelled, ResearchCancel, ResearchId);
+      PlayerUnitEvents.Register(ResearchEvent.IsFinished, Transfer, ResearchId);
+      PlayerUnitEvents.Register(ResearchEvent.IsStarted, ResearchStart, ResearchId);
+      PlayerUnitEvents.Register(ResearchEvent.IsCancelled, ResearchCancel, ResearchId);
       var greatForge = LegendIronforge.LegendGreatforge.Unit;
       var stormwindKeep = LegendStormwind.LegendStormwindkeep.Unit;
       var ironforgeLocation = new Point(GetUnitX(greatForge), GetUnitY(greatForge));

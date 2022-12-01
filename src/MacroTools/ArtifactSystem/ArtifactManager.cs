@@ -81,7 +81,7 @@ namespace MacroTools.ArtifactSystem
     {
       //When a hero carrying an Artifact dies, the Artifact is dropped to the floor,
       // or to the nearest Shore if the hero died on the water.
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDies, () =>
+      PlayerUnitEvents.Register(UnitTypeEvent.Dies, () =>
       {
         try
         {
