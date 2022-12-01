@@ -19,7 +19,7 @@ namespace MacroTools.Powers
     public UnitsStealMana(float manaPerDamage)
     {
       _manaPerDamage = manaPerDamage;
-      Description = $"Your units restore {manaPerDamage} per damage they deal with basic attacks.";
+      Description = $"Your units restore {manaPerDamage} mana per damage they deal with basic attacks.";
     }
     
     /// <inheritdoc />

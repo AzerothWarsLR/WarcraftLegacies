@@ -89,13 +89,15 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       whichFaction.ModObjectLimit(HeroId, 1);
     }
 
-    private void GrantPower(Faction whichFaction)
+    private static void GrantPower(Faction whichFaction)
     {
-      whichFaction.AddPower(new UnitsStealMana(0.35f)
+      var manaAddiction = new UnitsStealMana(0.35f)
       {
         IconName = "ManaShield",
         Name = "Mana Addiction"
-      });
+      };
+      whichFaction.AddPower(manaAddiction);
+      whichFaction.Player?.DisplayPowerAcquired(manaAddiction);
     }
   }
 }
