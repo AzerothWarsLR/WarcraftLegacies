@@ -28,6 +28,8 @@ namespace WarcraftLegacies.Source.Quests.Goblin
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
+
+      Required = true;
     }
 
     protected override string CompletionPopup =>

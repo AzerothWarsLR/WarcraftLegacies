@@ -18,6 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       AddObjective(new ObjectiveTrain(FourCC("nzep"), FourCC("o04M"), 16));
       AddObjective(new ObjectiveTrain(FourCC("o04S"), FourCC("o04M"), 10));
       ResearchId = QuestResearchId;
+      Required = true;
     }
 
     protected override string RewardDescription => "The shipyard will be buildable";

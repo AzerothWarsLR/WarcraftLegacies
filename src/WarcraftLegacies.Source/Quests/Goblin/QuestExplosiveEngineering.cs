@@ -16,6 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
     {
       AddObjective(new ObjectiveTrain(FourCC("n0AQ"), FourCC("h04Z"), 4));
       ResearchId = FourCC("R01F");
+      Required = true;
     }
   }
 }
