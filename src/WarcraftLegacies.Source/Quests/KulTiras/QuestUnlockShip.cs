@@ -49,7 +49,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Unpause the Proudmoore capital ship and unlocks the buildings inside.";
+      "Unlock the Proudmoore capital ship and unlocks the buildings inside.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
