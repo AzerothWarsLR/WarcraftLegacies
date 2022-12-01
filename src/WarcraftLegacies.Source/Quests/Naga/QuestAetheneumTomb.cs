@@ -42,9 +42,11 @@ namespace WarcraftLegacies.Source.Quests.Naga
     }
 
     /// <inheritdoc />
+    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      PlayThematicMusic("IllidansTheme");
+      if (completingFaction?.Player == GetLocalPlayer())
+        PlayThematicMusic("IllidansTheme");
       completingFaction.Player?.RescueGroup(_rescueUnits);
     }
   }

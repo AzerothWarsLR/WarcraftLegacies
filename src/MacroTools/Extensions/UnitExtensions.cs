@@ -556,6 +556,15 @@ namespace MacroTools.Extensions
       UnitMakeAbilityPermanent(whichUnit, true, abilityTypeId);
       return whichUnit;
     }
+    
+    /// <summary>
+    /// Removes an ability from a unit.
+    /// </summary>
+    public static unit RemoveAbility(this unit whichUnit, int abilityTypeId)
+    {
+      UnitRemoveAbility(whichUnit, abilityTypeId);
+      return whichUnit;
+    }
 
     /// <summary>
     /// Returns true if the unit is alive.

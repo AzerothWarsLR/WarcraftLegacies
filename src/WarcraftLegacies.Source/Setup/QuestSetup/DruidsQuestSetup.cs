@@ -12,10 +12,10 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     /// <summary>
     /// Sets up <see cref="DruidsQuestSetup"/>.
     /// </summary>
-    public static void Setup()
+    public static void Setup(ArtifactSetup artifactSetup)
     {
       var druids = FactionSetup.DruidsSetup.Druids;
-      var newQuest = druids.AddQuest(new QuestMalfurionAwakens(Regions.MoongladeVillage, LegendDruids.LegendNordrassil.Unit));
+      var newQuest = druids.AddQuest(new QuestMalfurionAwakens(Regions.MoongladeVillage, LegendDruids.LegendNordrassil.Unit, artifactSetup.HornOfCenarius));
       druids.StartingQuest = newQuest;
       druids.AddQuest(new QuestAshenvale(Regions.AshenvaleUnlock));
       druids.AddQuest(new QuestDruidsKillFrostwolf());

@@ -1,3 +1,4 @@
+using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
@@ -11,12 +12,12 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
 {
   public sealed class QuestNewGuardian : QuestData
   {
-    public QuestNewGuardian() : base("Guardian of Tirisfal",
+    public QuestNewGuardian(Artifact bookOfMedivh) : base("Guardian of Tirisfal",
       "Medivh's death left Azeroth without a Guardian. The spell book he left behind could be used to empower a new one.",
       "ReplaceableTextures\\CommandButtons\\BTNAstral Blessing.blp")
     {
       AddObjective(new ObjectiveLegendLevel(LegendDalaran.LegendJaina, 15));
-      AddObjective(new ObjectiveLegendHasArtifact(LegendDalaran.LegendJaina, ArtifactSetup.BookOfMedivh));
+      AddObjective(new ObjectiveLegendHasArtifact(LegendDalaran.LegendJaina, bookOfMedivh));
     }
 
     protected override string CompletionPopup =>

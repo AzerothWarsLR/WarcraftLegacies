@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using MacroTools;
 using MacroTools.QuestSystem;
-using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Mechanics.Scourge.Plague;
 using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -11,7 +10,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class ScourgeQuestSetup
   {
-    public static QuestData Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public static QuestData Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
     {
       QuestSpiderWar questSpiderWar = new(Regions.Ice_Crown,
         preplacedUnitSystem.GetUnit(Constants.UNIT_N074_QUEEN_NEZAR_AZRET));
@@ -52,7 +51,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         preplacedUnitSystem.GetUnit(Constants.UNIT_E013_NAXXRAMAS_SCOURGE));
       QuestCivilWar questCivilWar = new();
       QuestLichKingArthas questLichKingArthas =
-        new(preplacedUnitSystem.GetUnit(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE));
+        new(preplacedUnitSystem.GetUnit(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE), artifactSetup.HelmOfDomination);
 
       //Setup
       ScourgeSetup.Scourge.AddQuest(questSpiderWar);

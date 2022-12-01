@@ -5,7 +5,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class NagaQuestSetup
   {
-    public static void Setup()
+    public static void Setup(ArtifactSetup artifactSetup)
     {
       var naga = IllidanSetup.Illidan;
       {
@@ -13,12 +13,10 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         //
         naga.AddQuest(new QuestAetheneumTomb(Regions.AethneumCatacombs));
         naga.AddQuest(new QuestRegroupCastaway());
-        naga.AddQuest(new QuestEyeofSargeras());
+        naga.AddQuest(new QuestEyeofSargeras(artifactSetup.EyeOfSargeras));
         naga.AddQuest(new QuestIllidanKillGoblin());
-        naga.AddQuest(new QuestADestinyofFlameandSorrow());
-
+        naga.AddQuest(new QuestADestinyofFlameandSorrow(artifactSetup.SkullOfGuldan));
       }
-
     }
   }
 }

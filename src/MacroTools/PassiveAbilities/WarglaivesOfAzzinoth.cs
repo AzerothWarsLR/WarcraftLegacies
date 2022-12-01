@@ -78,10 +78,9 @@ namespace MacroTools.PassiveAbilities
     {
       try
       {
-        if (!BlzGetEventIsAttack())
-          return;
-        
         var caster = GetEventDamageSource();
+        if (!BlzGetEventIsAttack() || GetUnitAbilityLevel(caster, AbilityTypeId) == 0)
+          return;
         var target = GetTriggerUnit();
         
         AddSpecialEffect(Effect, GetUnitX(target), GetUnitY(target))

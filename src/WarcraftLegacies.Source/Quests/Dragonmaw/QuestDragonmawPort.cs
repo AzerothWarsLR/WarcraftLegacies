@@ -47,7 +47,8 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      PlayThematicMusic("war3mapImported\\DragonmawTheme.mp3");
+      if (completingFaction?.Player == GetLocalPlayer())
+        PlayThematicMusic("war3mapImported\\DragonmawTheme.mp3");
       completingFaction.Player?.RescueGroup(_rescueUnits);
     }
   }

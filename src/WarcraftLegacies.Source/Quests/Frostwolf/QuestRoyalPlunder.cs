@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using MacroTools.ArtifactSystem;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -14,12 +15,14 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 {
   public sealed class QuestRoyalPlunder : QuestData
   {
+    private readonly Artifact _scepterOfTheQueen;
     private readonly List<unit> _unitsToRescue = new();
 
-    public QuestRoyalPlunder(Rectangle rescueRect) : base("Royal Plunder",
+    public QuestRoyalPlunder(Rectangle rescueRect, Artifact scepterOfTheQueen) : base("Royal Plunder",
       "Remnants of the ancient Highborne survive within the ruins of Dire Maul. If Feathermoon Stronghold falls, it would become a simple matter to slaughter the Highborne and plunder their artifacts.",
       "ReplaceableTextures\\CommandButtons\\BTNNagaWeaponUp2.blp")
     {
+      _scepterOfTheQueen = scepterOfTheQueen;
       AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendWarsong.StonemaulKeep));
       AddObjective(new ObjectiveLegendDead(LegendSentinels.Feathermoon));
       AddObjective(new ObjectiveAnyUnitInRect(rescueRect, "Dire Maul", true));
@@ -39,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 
     protected override void OnComplete(Faction completingFaction)
     {
-      SetItemPosition(ArtifactSetup.ArtifactScepterofthequeen?.Item, Regions.HighBourne.Center.X,
+      SetItemPosition(_scepterOfTheQueen.Item, Regions.HighBourne.Center.X,
         Regions.HighBourne.Center.Y);
       foreach (var unit in _unitsToRescue) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }

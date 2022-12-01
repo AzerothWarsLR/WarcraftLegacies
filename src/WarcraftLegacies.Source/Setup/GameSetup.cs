@@ -25,16 +25,16 @@ namespace WarcraftLegacies.Source.Setup
     {
       var preplacedUnitSystem = new PreplacedUnitSystem();
       SoundLibrary.Setup();
-      AllLegendSetup.Setup(preplacedUnitSystem);
+      var artifactSetup = new ArtifactSetup(preplacedUnitSystem);
+      AllLegendSetup.Setup(preplacedUnitSystem, artifactSetup);
       ShoreSetup.Setup();
       ControlPointSetup.Setup();
       InstanceSetup.Setup(preplacedUnitSystem);
       TeamSetup.Setup();
-      AllFactionSetup.Setup(preplacedUnitSystem);
+      AllFactionSetup.Setup(preplacedUnitSystem, artifactSetup);
       PlayerSetup.Setup();
       NeutralHostileSetup.Setup();
-      ArtifactSetup.Setup(preplacedUnitSystem);
-      AllQuestSetup.Setup(preplacedUnitSystem);
+      AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
       ObserverSetup.Setup();
       SpellsSetup.Setup();
       CheatSetup.Setup();

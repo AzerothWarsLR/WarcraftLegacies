@@ -60,8 +60,7 @@ namespace MacroTools.Missiles
     private bool IsValidTarget(unit whichUnit)
     {
       return !IsUnitAlly(whichUnit, Caster.OwningPlayer()) && UnitAlive(whichUnit) &&
-             !BlzIsUnitInvulnerable(whichUnit) && !IsUnitType(whichUnit, UNIT_TYPE_STRUCTURE) &&
-             !IsUnitType(whichUnit, UNIT_TYPE_ANCIENT);
+             !BlzIsUnitInvulnerable(whichUnit) && !IsUnitType(whichUnit, UNIT_TYPE_ANCIENT);
     }
 
     private class UnitHit

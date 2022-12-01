@@ -1,4 +1,5 @@
 ﻿using MacroTools;
+using MacroTools.ArtifactSystem;
 using MacroTools.FactionSystem;
 using MacroTools.Powers;
 using WarcraftLegacies.Source.Mechanics.Scourge;
@@ -11,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
   {
     public static Faction? Scourge { get; private set; }
 
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, Artifact helmOfDomination)
     {
       Scourge = new Faction("Scourge", PLAYER_COLOR_PURPLE, "|c00540081",
         "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp")
@@ -122,7 +123,7 @@ The Necropolis of Naxxramas is become the perfect weapon for the Scourge, but yo
       
       Scourge.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-4939, 18803)));
 
-      HelmOfDominationDropsWhenScourgeLeaves.Setup();
+      HelmOfDominationDropsWhenScourgeLeaves.Setup(helmOfDomination);
 
       FactionManager.Register(Scourge);
     }

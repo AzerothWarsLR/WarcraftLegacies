@@ -20,12 +20,13 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     /// Initializes a new instance of the <see cref="QuestDalaran"/> class.
     /// </summary>
     /// <param name="rescueRects">Units inside these rectangles start invulnerable and are rescued when the quest ends.</param>
-    public QuestDalaran(IEnumerable<Rectangle> rescueRects) : base("Outskirts",
+    /// <param name="prerequisites">These quests must be completed before this one can be completed.</param>
+    public QuestDalaran(IEnumerable<Rectangle> rescueRects, IEnumerable<QuestData> prerequisites) : base("Outskirts",
       "The territories of Dalaran are fragmented, secure the lands and protect Dalaran citizens .",
       "ReplaceableTextures\\CommandButtons\\BTNArcaneCastle.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N01D_SILVERPINE_FOREST_15GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N08M_SOUTHSHORE_15GOLD_MIN)));
+      foreach (var prerequisite in prerequisites) 
+        AddObjective(new ObjectiveCompleteQuest(prerequisite));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N018_DURNHOLDE_15GOLD_MIN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N01I_CAER_DARROW_15GOLD_MIN)));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_H068_OBSERVATORY_DALARAN, Constants.UNIT_H065_REFUGE_DALARAN));
@@ -36,6 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       foreach (var rectangle in rescueRects)
         _rescueUnits.AddRange(rectangle.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures,
           unit => unit.GetTypeId() != Constants.UNIT_N0DK_SKULL_OF_GUL_DAN_PEDESTAL));
+      Required = true;
     }
 
     /// <inheritdoc/>
