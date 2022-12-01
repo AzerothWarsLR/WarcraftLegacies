@@ -51,7 +51,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         preplacedUnitSystem.GetUnit(Constants.UNIT_E013_NAXXRAMAS_SCOURGE));
       QuestCivilWar questCivilWar = new();
       QuestLichKingArthas questLichKingArthas =
-        new(preplacedUnitSystem.GetUnit(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE), artifactSetup.ArtifactHelmofdomination);
+        new(preplacedUnitSystem.GetUnit(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE), artifactSetup.HelmOfDomination);
 
       //Setup
       ScourgeSetup.Scourge.AddQuest(questSpiderWar);

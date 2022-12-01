@@ -33,8 +33,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         lordaeron.AddQuest(new QuestMograine());
         lordaeron.AddQuest(new QuestShoresOfNorthrend());
         lordaeron.AddQuest(new QuestThunderEagle());
-        lordaeron.AddQuest(new QuestKingArthas(kingTerenas, artifactSetup.ArtifactCrownlordaeron));
-        lordaeron.AddQuest(new QuestKingdomOfManLordaeron(artifactSetup.ArtifactCrownlordaeron, artifactSetup.ArtifactCrownstormwind));
+        lordaeron.AddQuest(new QuestKingArthas(kingTerenas, artifactSetup.CrownOfLordaeron));
+        lordaeron.AddQuest(new QuestKingdomOfManLordaeron(artifactSetup.CrownOfLordaeron, artifactSetup.CrownOfStormwind));
         lordaeron.AddQuest(new QuestGarithosCrusade());
         lordaeron.AddQuest(new QuestGarithosMindControl());
       }

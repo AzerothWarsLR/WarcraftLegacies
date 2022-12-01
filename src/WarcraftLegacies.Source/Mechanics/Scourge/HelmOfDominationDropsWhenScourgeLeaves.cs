@@ -48,13 +48,13 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge
     
     private static void CheckHelmOfDomination()
     {
-      if (ArtifactSetup.ArtifactHelmofdomination == null
+      if (ArtifactSetup.HelmOfDomination == null
           || LegendScourge.LegendLichking?.Unit == null)
         return;
 
       var lichKingPosition = LegendScourge.LegendLichking.Unit.GetPosition();
       LegendScourge.LegendLichking.Unit.DropAllItems();
-      ArtifactSetup.ArtifactHelmofdomination.Item.SetPosition(new Point(lichKingPosition.X - 55,
+      ArtifactSetup.HelmOfDomination.Item.SetPosition(new Point(lichKingPosition.X - 55,
         lichKingPosition.Y + 30));
     }
   }

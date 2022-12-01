@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         zandalar.AddQuest(new QuestZulgurub());
         zandalar.AddQuest(new QuestGundrak());
         zandalar.AddQuest(new QuestJinthaAlor());
-        zandalar.AddQuest(new QuestHakkar(artifactSetup.ArtifactZinrokh));
+        zandalar.AddQuest(new QuestHakkar(artifactSetup.ZinRokh));
       }
     }
   }

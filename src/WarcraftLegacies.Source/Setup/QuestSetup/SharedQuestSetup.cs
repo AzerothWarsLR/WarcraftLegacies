@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         faction.AddQuest(new QuestBookOfMedivh(preplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH),
           faction == LegionSetup.Legion, artifactSetup.BookOfMedivh));
         faction.AddQuest(new QuestSkullOfGuldan(preplacedUnitSystem.GetUnit(Constants.UNIT_N0DK_SKULL_OF_GUL_DAN_PEDESTAL),
-          faction == LegionSetup.Legion || faction == IllidanSetup.Illidan, artifactSetup.ArtifactSkullofguldan));
+          faction == LegionSetup.Legion || faction == IllidanSetup.Illidan, artifactSetup.SkullOfGuldan));
       }
     }
   }

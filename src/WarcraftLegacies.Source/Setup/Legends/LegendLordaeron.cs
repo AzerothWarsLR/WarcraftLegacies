@@ -103,7 +103,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         .AddAction(() =>
         {
           Terenas.Unit.Kill();
-          ArtifactSetup.ArtifactCrownlordaeron?.Item.SetPosition(Regions.King_Arthas_crown.Center);
+          ArtifactSetup.CrownOfLordaeron?.Item.SetPosition(Regions.King_Arthas_crown.Center);
           SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
             FourCC("Ysaw"), false, "hide", false);
           SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
