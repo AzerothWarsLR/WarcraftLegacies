@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.Powers;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using MacroTools.Wrappers;
@@ -37,18 +38,23 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       Required = true;
     }
 
+    /// <inheritdoc />
     protected override string FailurePopup =>
       "The Sunwell has fallen. The survivors escape to Dalaran and name themselves the Blood Elves in remembrance of their fallen people.";
 
+    /// <inheritdoc />
     protected override string CompletionPopup =>
       "The Legion Nexus has been obliterated. A group of ambitious mages seize the opportunity to study the demons' magic, becoming the first Blood Mages.";
 
+    /// <inheritdoc />
     protected override string RewardDescription =>
       $"Learn to train {GetObjectName(UnittypeId)}s from the Consortium, and you can summon Prince Kael'thas from the Altar of Prowess";
 
+    /// <inheritdoc />
     protected override string PenaltyDescription =>
-      $"You lose everything you control, but you gain Prince Kael'thas at the Dalaran Dungeons, and you can train {GetObjectName(UnittypeId)}s from the Consortium";
+      $"You lose everything you control, but you gain Prince Kael'thas at the Dalaran Dungeons, you can train {GetObjectName(UnittypeId)}s from the Consortium, and you gain the Mana Addiction power";
 
+    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
       SetPlayerTechResearched(completingFaction.Player, QuestResearchId, 1);
@@ -56,6 +62,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
         $"You can now train {GetObjectName(UnittypeId)}s from the {GetObjectName(BuildingId)}.");
     }
 
+    /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
       LegendQuelthalas.LegendKael.StartingXp = GetHeroXP(LegendQuelthalas.LegendAnasterian.Unit);
@@ -71,13 +78,24 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
           GetUnitY(LegendQuelthalas.LegendKael.Unit)));
       if (GetLocalPlayer() == completingFaction.Player)
         SetCameraPosition(Regions.BloodElfSecondChanceSpawn.Center.X, Regions.BloodElfSecondChanceSpawn.Center.Y);
+      GrantPower(completingFaction);
     }
 
+    /// <inheritdoc />
     protected override void OnAdd(Faction whichFaction)
     {
       whichFaction.ModObjectLimit(QuestResearchId, Faction.UNLIMITED);
       whichFaction.ModObjectLimit(UnittypeId, 6);
       whichFaction.ModObjectLimit(HeroId, 1);
+    }
+
+    private void GrantPower(Faction whichFaction)
+    {
+      whichFaction.AddPower(new UnitsStealMana(0.35f)
+      {
+        IconName = "ManaShield",
+        Name = "Mana Addiction"
+      });
     }
   }
 }
