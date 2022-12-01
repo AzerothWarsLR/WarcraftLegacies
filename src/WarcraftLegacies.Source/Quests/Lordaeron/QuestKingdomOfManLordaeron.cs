@@ -2,7 +2,6 @@
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.Libraries;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup;
@@ -46,7 +45,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     protected override void OnComplete(Faction completingFaction)
     {
       SetPlayerTechResearched(completingFaction.Player, RewardResearchId, 1);
-      Display.DisplayResearchAcquired(completingFaction.Player, RewardResearchId, 1);
+      completingFaction.Player.DisplayResearchAcquired(RewardResearchId, 1);
       
       if (LegendLordaeron.Arthas != null)
       {

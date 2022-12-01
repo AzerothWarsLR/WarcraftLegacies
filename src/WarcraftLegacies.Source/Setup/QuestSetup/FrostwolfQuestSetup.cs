@@ -1,5 +1,4 @@
 ﻿using MacroTools;
-using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Frostwolf;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 

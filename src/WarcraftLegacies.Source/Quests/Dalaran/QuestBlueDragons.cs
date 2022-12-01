@@ -3,7 +3,8 @@ using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
-using static MacroTools.Libraries.Display; namespace WarcraftLegacies.Source.Quests.Dalaran
+
+namespace WarcraftLegacies.Source.Quests.Dalaran
 {
   public sealed class QuestBlueDragons : QuestData
   {
@@ -26,7 +27,7 @@ using static MacroTools.Libraries.Display; namespace WarcraftLegacies.Source.Que
     protected override void OnComplete(Faction completingFaction)
     {
       SetPlayerTechResearched(completingFaction.Player, RESEARCH_ID, 1);
-      DisplayUnitTypeAcquired(completingFaction.Player, DRAGON_ID,
+      completingFaction.Player.DisplayUnitTypeAcquired(DRAGON_ID,
         "You can now train Blue Dragons from Military Quarters and the Nexus.");
     }
 

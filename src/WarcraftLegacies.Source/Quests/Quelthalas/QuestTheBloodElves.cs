@@ -7,7 +7,6 @@ using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
-using static MacroTools.Libraries.Display;
 
 namespace WarcraftLegacies.Source.Quests.Quelthalas
 {
@@ -53,7 +52,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     protected override void OnComplete(Faction completingFaction)
     {
       SetPlayerTechResearched(completingFaction.Player, QuestResearchId, 1);
-      DisplayUnitTypeAcquired(completingFaction.Player, UnittypeId,
+      completingFaction.Player.DisplayUnitTypeAcquired(UnittypeId,
         $"You can now train {GetObjectName(UnittypeId)}s from the {GetObjectName(BuildingId)}.");
     }
 

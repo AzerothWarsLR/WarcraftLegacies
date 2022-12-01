@@ -4,7 +4,6 @@ using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
-using static MacroTools.Libraries.Display;
 
 namespace WarcraftLegacies.Source.Quests.Dalaran
 {
@@ -25,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
 
     protected override void OnComplete(Faction completingFaction)
     {
-      DisplayResearchAcquired(completingFaction.Player, ResearchId, 1);
+      completingFaction.Player.DisplayResearchAcquired(ResearchId, 1);
       completingFaction.ModObjectLimit(FourCC("n096"), -6);
       completingFaction.ModObjectLimit(FourCC("n0AD"), 6);
     }

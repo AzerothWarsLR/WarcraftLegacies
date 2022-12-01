@@ -3,7 +3,6 @@ using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
-using static MacroTools.Libraries.Display;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Lordaeron
@@ -38,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     protected override void OnComplete(Faction completingFaction)
     {
       SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
-      DisplayUnitTypeAcquired(completingFaction.Player, ThunderEagleId,
+      completingFaction.Player.DisplayUnitTypeAcquired(ThunderEagleId,
         "You can now train Thunder Eagles from upgraded Town Halls and from your capitals.");
     }
   }
