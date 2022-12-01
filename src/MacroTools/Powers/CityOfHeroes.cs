@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using System;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Events;
 using static War3Api.Common;
@@ -17,6 +18,11 @@ namespace MacroTools.Powers
     /// An ability ID that bestows a hero glow.
     /// </summary>
     public int HeroGlowAbilityTypeId { get; init; }
+
+    /// <summary>
+    /// The filter that units must pass to be eligible to become demiheroes.
+    /// </summary>
+    public Func<unit, bool> Filter { get; init; } = unit => true;
     
     /// <summary>
     /// Initializes a new instance of the <see cref="CityOfHeroes"/> class.
