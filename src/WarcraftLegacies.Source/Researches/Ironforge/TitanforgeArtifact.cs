@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Researches.Ironforge
 
     public static void Setup()
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, Research, ResearchId);
+      PlayerUnitEvents.Register(ResearchEvent.IsFinished, Research, ResearchId);
     }
   }
 }

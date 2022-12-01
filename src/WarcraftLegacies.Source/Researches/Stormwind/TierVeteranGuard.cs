@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Researches.Stormwind
 
     public static void Setup()
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, Research,
+      PlayerUnitEvents.Register(ResearchEvent.IsFinished, Research,
         Constants.UPGRADE_R03D_VETERAN_GUARD_ARATHOR_T1);
     }
   }

@@ -73,7 +73,7 @@ namespace MacroTools.FactionSystem
 
     static Faction()
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, () =>
+      PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
       {
         var faction = FactionManager.GetFromPlayer(GetTriggerPlayer());
         faction?.SetObjectLevel(GetResearched(), GetPlayerTechCount(GetTriggerPlayer(), GetResearched(), false));

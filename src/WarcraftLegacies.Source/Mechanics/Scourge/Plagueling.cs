@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge
 
     public static void Setup()
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeSellsUnit, OnSell, PlaguelingId);
+      PlayerUnitEvents.Register(UnitTypeEvent.SellsUnit, OnSell, PlaguelingId);
     }
   }
 }

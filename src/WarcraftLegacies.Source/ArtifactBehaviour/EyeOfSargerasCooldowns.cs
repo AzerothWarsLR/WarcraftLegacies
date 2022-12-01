@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
 
     public static void Setup()
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypePicksUpItem, ItemPickup, FourCC("I003"));
+      PlayerUnitEvents.Register(UnitTypeEvent.PicksUpItem, ItemPickup, FourCC("I003"));
     }
   }
 }

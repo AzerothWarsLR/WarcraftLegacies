@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.GameLogic
     /// </summary>
     public static void Setup()
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeIsSummoned, () =>
+      PlayerUnitEvents.Register(UnitTypeEvent.IsSummoned, () =>
       {
         var summoningUnit = GetSummoningUnit();
         if (summoningUnit.IsType(UNIT_TYPE_STRUCTURE))

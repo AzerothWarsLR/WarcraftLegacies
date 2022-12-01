@@ -39,7 +39,7 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public Legend()
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, () =>
+      PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining, () =>
       {
         var trainedUnit = GetTrainedUnit();
         if (UnitType != GetUnitTypeId(trainedUnit)) return;

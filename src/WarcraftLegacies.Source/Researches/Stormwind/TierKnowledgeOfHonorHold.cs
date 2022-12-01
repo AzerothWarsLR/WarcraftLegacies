@@ -51,7 +51,7 @@ namespace WarcraftLegacies.Source.Researches.Stormwind
     {
       _destructableA = preplacedUnitSystem.GetDestructable(FourCC("B017"), new Point(8229, -11703));
       _destructableB = preplacedUnitSystem.GetDestructable(FourCC("B017"), Regions.HonorHold.Center);
-      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, Research,
+      PlayerUnitEvents.Register(ResearchEvent.IsFinished, Research,
         Constants.UPGRADE_R03W_KNOWLEDGE_OF_HONOR_HOLD_ARATHOR_T2);
     }
   }
