@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Buffs;
 using MacroTools.Extensions;
@@ -50,6 +51,8 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
       FourCC("nvk2")
     };
 
+    private readonly Dictionary<int, Action> _villagerPlagueConversionActions = new();
+    
     /// <summary>
     /// Causes <see cref="Power" /> holder to periodically convert villagers on the map into Zombies.
     /// </summary>
@@ -78,15 +81,14 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
       foreach (var villager in villagers) 
         ApplyDarkConversion(villager, darkConversionBuffOwner);
 
-      if (_holders.Count == 1)
+      if (_holders.Count != 1) 
+        return;
+      
+      foreach (var villagerTypeId in _villagerUnitTypeIds)
       {
-        foreach (var villagerTypeId in _villagerUnitTypeIds)
-        {
-          PlayerUnitEvents.Register(UnitTypeEvent.IsCreated, () =>
-          {
-            ApplyDarkConversion(GetTriggerUnit(), darkConversionBuffOwner);
-          }, villagerTypeId);
-        }
+        void Action() => ApplyDarkConversion(GetTriggerUnit(), darkConversionBuffOwner);
+        _villagerPlagueConversionActions.Add(villagerTypeId, Action);
+        PlayerUnitEvents.Register(UnitTypeEvent.IsCreated, Action, villagerTypeId);
       }
     }
 
@@ -98,7 +100,7 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
       {
         PlayerUnitEvents.Unregister(UnitTypeEvent.Dies, SpawnPeasants);
         foreach (var villagerTypeId in _villagerUnitTypeIds)
-          PlayerUnitEvents.Unregister(UnitTypeEvent.IsCreated, villagerTypeId);
+          PlayerUnitEvents.Unregister(UnitTypeEvent.IsCreated, _villagerPlagueConversionActions[villagerTypeId], villagerTypeId);
       }
     }
 
