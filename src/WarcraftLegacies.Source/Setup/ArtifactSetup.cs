@@ -21,7 +21,6 @@ namespace WarcraftLegacies.Source.Setup
     public static Artifact? ArtifactSoulgem { get; private set; }
     public static Artifact? ArtifactHornofcenarius { get; private set; }
     public static Artifact? ArtifactEyeofsargeras { get; private set; }
-    public static Artifact? ArtifactCrowneasternkingdoms { get; private set; }
     public static Artifact? ArtifactCrowntriumvirate { get; private set; }
     public static Artifact? ArtifactTrolkalar { get; private set; }
     public static Artifact? ArtifactAshbringer { get; private set; }
@@ -174,13 +173,6 @@ namespace WarcraftLegacies.Source.Setup
       tempArtifact = new Artifact(CreateItem(FourCC("I00K"), DummyX, DummyY)); //Essence
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n03T")), tempArtifact.Item); //Murmur
       ArtifactManager.Register(tempArtifact);
-
-      ArtifactCrowneasternkingdoms = new Artifact(CreateItem(FourCC("I00U"), DummyX, DummyY))
-      {
-        LocationType = ArtifactLocationType.Hidden,
-        LocationDescription = "Stormwind and Lordaeron Quest"
-      };
-      ArtifactManager.Register(ArtifactCrowneasternkingdoms);
 
       ArtifactCrowntriumvirate = new Artifact(CreateItem(FourCC("I011"), DummyX, DummyY))
       {

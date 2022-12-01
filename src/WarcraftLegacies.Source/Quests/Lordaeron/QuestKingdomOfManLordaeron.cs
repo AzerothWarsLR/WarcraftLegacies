@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
   /// </summary>
   public sealed class QuestKingdomOfManLordaeron : QuestData
   {
-    private static readonly int RewardResearchId = Constants.UPGRADE_R01N_ARATHORIAN_LEGACY_LORDAERON_STORMWIND_QUEST;
+    private const int RewardResearchId = Constants.UPGRADE_R01N_ARATHORIAN_LEGACY_LORDAERON_STORMWIND_QUEST;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestKingdomOfManLordaeron"/> class.
@@ -45,22 +45,27 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      //Artifact
-      unit crownHolder = ArtifactSetup.ArtifactCrownstormwind.OwningUnit;
-      RemoveItem(ArtifactSetup.ArtifactCrownlordaeron.Item);
-      RemoveItem(ArtifactSetup.ArtifactCrownstormwind.Item);
-      crownHolder.AddItemSafe(ArtifactSetup.ArtifactCrowneasternkingdoms.Item);
-      ArtifactSetup.ArtifactCrownlordaeron.LocationType = ArtifactLocationType.Hidden;
-      ArtifactSetup.ArtifactCrownlordaeron.LocationDescription = "Melted down";
-      ArtifactSetup.ArtifactCrownstormwind.LocationType = ArtifactLocationType.Hidden;
-      ArtifactSetup.ArtifactCrownstormwind.LocationDescription = "Melted down";
-      //Research
       SetPlayerTechResearched(completingFaction.Player, RewardResearchId, 1);
       Display.DisplayResearchAcquired(completingFaction.Player, RewardResearchId, 1);
-      //High King Arthas
-     
-      LegendLordaeron.Arthas.UnitType = Constants.UNIT_HARF_HIGH_KING_LORDAERON_HIGH_KING;
-      LegendLordaeron.Arthas.ClearUnitDependencies();
+      
+      if (LegendLordaeron.Arthas != null)
+      {
+        LegendLordaeron.Arthas.UnitType = Constants.UNIT_HARF_HIGH_KING_LORDAERON_HIGH_KING;
+        LegendLordaeron.Arthas.ClearUnitDependencies();
+      }
+
+      var crownHolder = ArtifactSetup.ArtifactCrownstormwind?.OwningUnit;
+      
+      ArtifactManager.Destroy(ArtifactSetup.ArtifactCrownlordaeron);
+      ArtifactManager.Destroy(ArtifactSetup.ArtifactCrownstormwind);
+      
+      var crownOfTheEasternKingdoms = new Artifact(CreateItem(Constants.ITEM_I00U_CROWN_OF_THE_EASTERN_KINGDOMS, 0, 0))
+      {
+        LocationType = ArtifactLocationType.Hidden,
+        LocationDescription = "Stormwind and Lordaeron Quest"
+      };
+      ArtifactManager.Register(crownOfTheEasternKingdoms);
+      crownHolder?.AddItemSafe(crownOfTheEasternKingdoms.Item);
     }
 
     /// <inheritdoc/>
