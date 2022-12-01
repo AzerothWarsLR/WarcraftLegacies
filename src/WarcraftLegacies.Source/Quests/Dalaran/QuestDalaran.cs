@@ -36,6 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       foreach (var rectangle in rescueRects)
         _rescueUnits.AddRange(rectangle.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures,
           unit => unit.GetTypeId() != Constants.UNIT_N0DK_SKULL_OF_GUL_DAN_PEDESTAL));
+      Required = true;
     }
 
     /// <inheritdoc/>
