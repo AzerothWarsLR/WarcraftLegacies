@@ -66,7 +66,7 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
       if (_holders.Count == 0)
       {
         foreach (var unitTypeId in _cityBuildings)
-          PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDies, SpawnPeasants, unitTypeId);
+          PlayerUnitEvents.Register(UnitTypeEvent.Dies, SpawnPeasants, unitTypeId);
       }
       _holders.Add(whichPlayer);
 
@@ -82,7 +82,7 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
       {
         foreach (var villagerTypeId in _villagerUnitTypeIds)
         {
-          PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeIsCreated, () =>
+          PlayerUnitEvents.Register(UnitTypeEvent.IsCreated, () =>
           {
             ApplyDarkConversion(GetTriggerUnit(), darkConversionBuffOwner);
           }, villagerTypeId);
@@ -96,9 +96,9 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
       _holders.Remove(whichPlayer);
       if (_holders.Count == 0)
       {
-        PlayerUnitEvents.Unregister(PlayerUnitEvent.UnitTypeDies, SpawnPeasants);
+        PlayerUnitEvents.Unregister(UnitTypeEvent.Dies, SpawnPeasants);
         foreach (var villagerTypeId in _villagerUnitTypeIds)
-          PlayerUnitEvents.Unregister(PlayerUnitEvent.UnitTypeIsCreated, villagerTypeId);
+          PlayerUnitEvents.Unregister(UnitTypeEvent.IsCreated, villagerTypeId);
       }
     }
 

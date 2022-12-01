@@ -43,7 +43,7 @@ namespace MacroTools.Cheats
       trigger trig = CreateTrigger();
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
       TriggerAddAction(trig, Actions);
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeReceivesPointOrder, Patrol);
+      PlayerUnitEvents.Register(UnitTypeEvent.ReceivesPointOrder, Patrol);
     }
   }
 }

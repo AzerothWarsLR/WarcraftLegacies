@@ -35,10 +35,10 @@ namespace MacroTools.SpellSystem
     /// </summary>
     public static void Register(Spell spell)
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.SpellCast, OnStartCast, spell.Id);
-      PlayerUnitEvents.Register(PlayerUnitEvent.SpellEffect, OnCast, spell.Id);
-      PlayerUnitEvents.Register(PlayerUnitEvent.SpellEndCast, OnStop, spell.Id);
-      PlayerUnitEvents.Register(PlayerUnitEvent.SpellLearnedByHeroType, OnLearn, spell.Id);
+      PlayerUnitEvents.Register(SpellEvent.Cast, OnStartCast, spell.Id);
+      PlayerUnitEvents.Register(SpellEvent.Effect, OnCast, spell.Id);
+      PlayerUnitEvents.Register(UnitTypeEvent.SpellEndCast, OnStop, spell.Id);
+      PlayerUnitEvents.Register(SpellEvent.Learned, OnLearn, spell.Id);
       SpellsByAbilityId.Add(spell.Id, spell);
     }
 

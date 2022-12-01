@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Researches.Stormwind
 
     public static void Setup()
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, Research,
+      PlayerUnitEvents.Register(ResearchEvent.IsFinished, Research,
         Constants.UPGRADE_R03T_ELECTRIC_STRIKE_RITUAL_ARATHOR_T1);
     }
   }

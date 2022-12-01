@@ -36,9 +36,9 @@ namespace MacroTools.Mechanics
           StructureId = structureId
         };
 
-        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, () => packable.OnTrainUnitType(),structureId);
+        PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining, () => packable.OnTrainUnitType(),structureId);
           
-        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeSpellEndCast, () => packable.OnUnitTypeCastSpell(),packedUnitId);
+        PlayerUnitEvents.Register(UnitTypeEvent.SpellEndCast, () => packable.OnUnitTypeCastSpell(),packedUnitId);
       }
 
       /// <summary>

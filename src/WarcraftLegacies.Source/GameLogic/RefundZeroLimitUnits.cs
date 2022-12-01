@@ -35,9 +35,9 @@ namespace WarcraftLegacies.Source.GameLogic
     /// </summary>
     public static void Setup()
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining,
+      PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining,
         () => { VerifyUnitIntegrity(GetTrainedUnit()); });
-      PlayerUnitEvents.Register(PlayerUnitEvent.HeroTypeFinishesRevive,
+      PlayerUnitEvents.Register(HeroTypeEvent.FinishesRevive,
         () => { VerifyUnitIntegrity(GetRevivingUnit()); });
     }
   }

@@ -20,7 +20,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
     /// <param name="requiredLegend">The <see cref="Legend"/> that must cast the spell. If null, anyone can cast the spell.</param>
     public ObjectiveStartSpell(int spellId, bool holderOnly, Legend? requiredLegend = null)
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.SpellCast, OnCast, spellId);
+      PlayerUnitEvents.Register(UnitTypeEvent.SpellCast, OnCast, spellId);
       if (holderOnly)
         Description = "Start casting " + GetObjectName(spellId);
       else
