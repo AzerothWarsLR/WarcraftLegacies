@@ -1,7 +1,6 @@
 ﻿using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
-using MacroTools.Wrappers;
 using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
@@ -47,7 +46,7 @@ namespace MacroTools.PassiveAbilities
     public override void OnDeath()
     {
       var caster = GetTriggerUnit();
-      foreach (var unit in new GroupWrapper().EnumUnitsInRange(caster.GetPosition(), Radius)
+      foreach (var unit in CreateGroup().EnumUnitsInRange(caster.GetPosition(), Radius)
                  .EmptyToList()
                  .Where(IsReanimationCandidate)
                  .OrderByDescending(x => x.GetLevel())

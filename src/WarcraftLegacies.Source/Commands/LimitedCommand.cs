@@ -1,5 +1,5 @@
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.Wrappers;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Commands
@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Commands
       if (triggerFaction == null)
         return;
 
-      foreach (var unit in new GroupWrapper().EnumUnitsOfPlayer(triggerPlayer).EmptyToList())
+      foreach (var unit in CreateGroup().EnumUnitsOfPlayer(triggerPlayer).EmptyToList())
       {
         if (IsPingable(triggerFaction, unit) && GetLocalPlayer() == triggerPlayer)
           PingMinimap(GetUnitX(unit), GetUnitY(unit), 5);

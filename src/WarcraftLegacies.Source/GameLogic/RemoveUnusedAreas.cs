@@ -1,5 +1,4 @@
 ﻿using MacroTools.Extensions;
-using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -24,7 +23,7 @@ namespace WarcraftLegacies.Source.GameLogic
       };
       foreach (var area in areas)
       {
-        foreach (var unit in new GroupWrapper().EnumUnitsInRect(area).EmptyToList())
+        foreach (var unit in CreateGroup().EnumUnitsInRect(area).EmptyToList())
           unit.Remove();
         EnumDestructablesInRect(area.Rect, null, () => { RemoveDestructable(GetEnumDestructable()); });
       }

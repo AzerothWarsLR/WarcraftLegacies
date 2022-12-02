@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using MacroTools.Extensions;
-using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -231,7 +230,7 @@ namespace MacroTools.FactionSystem
     {
       SetPlayerColor(whichPlayer, color);
       if (!changeExisting) return;
-      foreach (var unit in new GroupWrapper().EnumUnitsOfPlayer(whichPlayer).EmptyToList())
+      foreach (var unit in CreateGroup().EnumUnitsOfPlayer(whichPlayer).EmptyToList())
         SetUnitColor(unit, color);
     }
     

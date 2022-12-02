@@ -1,5 +1,4 @@
 ﻿using MacroTools.Extensions;
-using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using static War3Api.Common;
 
@@ -16,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup
     public static void Setup()
     {
       if (IllidanSetup.Illidan?.Player == null) return;
-      foreach (var unit in new GroupWrapper().EnumUnitsOfPlayer(IllidanSetup.Illidan.Player).EmptyToList())
+      foreach (var unit in CreateGroup().EnumUnitsOfPlayer(IllidanSetup.Illidan.Player).EmptyToList())
         if (!Regions.IllidanStartingPosition.Contains(unit.GetPosition()))
           unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }

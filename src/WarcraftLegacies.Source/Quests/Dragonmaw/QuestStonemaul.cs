@@ -5,7 +5,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -26,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       AddObjective(new ObjectiveExpire(1327));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R08U_QUEST_COMPLETED_RUINS_OF_STONEMAUL;
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
           SetUnitInvulnerable(unit, true);

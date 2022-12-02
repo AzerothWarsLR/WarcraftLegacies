@@ -3,7 +3,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
@@ -87,7 +86,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       var rescueCairneUnits = Regions.CairneStart.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       FrostwolfSetup.Frostwolf.Player.RescueGroup(rescueCairneUnits);
       FrostwolfSetup.Frostwolf.Player.RescueGroup(_rescueDarkspearUnits);
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(Regions.Darkspear_Island.Rect).EmptyToList())
+      foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.Darkspear_Island.Rect).EmptyToList())
       {
         if (GetOwningPlayer(unit) == FrostwolfSetup.Frostwolf.Player &&
             IsUnitType(unit, UNIT_TYPE_STRUCTURE) == false)

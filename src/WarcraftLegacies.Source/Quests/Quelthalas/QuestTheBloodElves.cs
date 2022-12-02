@@ -4,7 +4,6 @@ using MacroTools.FactionSystem;
 using MacroTools.Powers;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -28,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       AddObjective(new ObjectiveControlLegend(LegendQuelthalas.LegendAnasterian, true));
       AddObjective(new ObjectiveControlLegend(LegendQuelthalas.LegendSunwell, true));
 
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(secondChanceRect).EmptyToList())
+      foreach (var unit in CreateGroup().EnumUnitsInRect(secondChanceRect).EmptyToList())
       {
         ShowUnit(unit, false);
         SetUnitInvulnerable(unit, true);

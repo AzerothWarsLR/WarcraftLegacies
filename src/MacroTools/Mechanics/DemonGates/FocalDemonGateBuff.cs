@@ -1,5 +1,4 @@
-﻿using System;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;

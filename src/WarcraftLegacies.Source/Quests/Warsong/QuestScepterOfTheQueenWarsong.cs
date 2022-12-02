@@ -5,7 +5,6 @@ using MacroTools.QuestSystem.UtilityStructs;
 using System.Collections.Generic;
 using MacroTools;
 using MacroTools.ArtifactSystem;
-using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
