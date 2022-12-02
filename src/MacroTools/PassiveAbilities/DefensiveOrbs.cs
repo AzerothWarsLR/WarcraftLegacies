@@ -54,9 +54,9 @@ namespace MacroTools.PassiveAbilities
     {
       _abilityTypeId = abilityTypeId;
     }
-
+    
     /// <inheritdoc />
-    public override void OnSpellFinish()
+    public override void OnSpellEffect()
     {
       var caster = GetTriggerUnit();
       var abilityLevel = GetUnitAbilityLevel(caster, _abilityTypeId);
