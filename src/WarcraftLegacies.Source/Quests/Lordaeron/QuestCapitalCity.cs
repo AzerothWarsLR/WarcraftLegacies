@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       ResearchId = Constants.UPGRADE_R04Y_QUEST_COMPLETED_HEARTHLANDS;
       _unitToMakeInvulnerable = unitToMakeInvulnerable;
       _uther = uther;
-      Func<unit, bool> rescueUnitFilter = (unit whichUnit) => { return GetUnitTypeId(whichUnit) != Constants.UNIT_N08F_UNDERCITY_ENTRANCE; };
+      var rescueUnitFilter = (unit whichUnit) => { return GetUnitTypeId(whichUnit) != Constants.UNIT_N08F_UNDERCITY_ENTRANCE; };
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures, rescueUnitFilter);
       Required = true;
     }

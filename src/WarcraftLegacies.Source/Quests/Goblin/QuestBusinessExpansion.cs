@@ -27,11 +27,11 @@ namespace WarcraftLegacies.Source.Quests.Goblin
 
     private static void GrantGadetzan(player whichPlayer)
     {
-      group tempGroup = CreateGroup();
+      var tempGroup = CreateGroup();
 
       //Transfer all Neutral Passive units in Gadetzan
       GroupEnumUnitsInRect(tempGroup, Regions.GadgetUnlock.Rect, null);
-      unit u = FirstOfGroup(tempGroup);
+      var u = FirstOfGroup(tempGroup);
       while (true)
       {
         if (u == null) break;

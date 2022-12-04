@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
 
     protected override void OnComplete(Faction completingFaction)
     {
-      unit whichUnit = LegendDalaran.LegendJaina.Unit;
+      var whichUnit = LegendDalaran.LegendJaina.Unit;
       UnitRemoveAbility(LegendDalaran.LegendJaina.Unit, FourCC("A0RB"));
       AddSpecialEffectTarget("war3mapImported\\Soul Armor Cosmic.mdx", whichUnit, "chest");
       BlzSetUnitName(whichUnit, "Guardian of Tirisfal");

@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Mechanics.Quelthalas
 
     public static void Setup()
     {
-      trigger trig = CreateTrigger();
+      var trig = CreateTrigger();
       TriggerRegisterUnitEvent(trig, LegendQuelthalas.LegendSunwell.Unit, EVENT_UNIT_DEATH);
       TriggerAddAction(trig, Dies);
     }
