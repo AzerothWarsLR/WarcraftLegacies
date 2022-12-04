@@ -2,6 +2,7 @@ using MacroTools;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.UserInterface;
+using WarcraftLegacies.Source.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.Hints;
@@ -108,6 +109,7 @@ namespace WarcraftLegacies.Source.Setup
       DemonGateSetup.Setup();
       SummonRallyPoints.Setup();
       RemoveUnusedAreas.Run();
+      EyeOfSargerasCooldowns.Setup();
     }
   }
 }
