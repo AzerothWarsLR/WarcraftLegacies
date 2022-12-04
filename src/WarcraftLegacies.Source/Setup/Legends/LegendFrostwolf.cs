@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = FourCC("Ocbh"),
         DeathMessage =
-          "CairneFourCC(s spirit has passed on from this world. The Tauren have already begun to revere their fallen ancestor.",
+          "Cairne's spirit has passed on from this world. The Tauren have already begun to revere their fallen ancestor.",
         StartingXp = 1000
       };
       Legend.Register(LegendCairne);

@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
     }
 
     protected override string CompletionPopup =>
-      "The Kingdom of Lordaeron has fallen, eliminating AzerothFourCC(s vanguard against the Legion.";
+      "The Kingdom of Lordaeron has fallen, eliminating Azeroth's vanguard against the Legion.";
 
     protected override string RewardDescription => "Tichondrius gains 15 Strength, Agility and Intelligence";
 
