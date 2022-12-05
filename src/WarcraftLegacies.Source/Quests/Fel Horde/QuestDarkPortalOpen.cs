@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     /// <param name="outerWaygate2">A Waygate outside outland, next to the Dark Portal.</param>
     /// <param name="outerWaygate3">A Waygate outside outland, next to the Dark Portal.</param>
     public QuestDarkPortalOpen(unit portalController, unit innerWaygate1, unit innerWaygate2, unit innerWaygate3, unit outerWaygate1, unit outerWaygate2, unit outerWaygate3)
-      : base("The Dark Portal Opens", "The Dark Portal has been opened", "ReplaceableTextures\\CommandButtons\\BTNDarkPortal.blp")
+      : base("The Dark Portal Opens", "The Dark Portal has been opened.", "ReplaceableTextures\\CommandButtons\\BTNDarkPortal.blp")
     {
       _portalController = portalController;
       _innerWaygate1 = innerWaygate1;
@@ -41,9 +41,10 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       _outerWaygate1 = outerWaygate1.Show(false);
       _outerWaygate2 = outerWaygate2.Show(false);
       _outerWaygate3 = outerWaygate3.Show(false);
-      AddObjective(new ObjectiveTime(6));
+      AddObjective(new ObjectiveTime(600));
       AddObjective(new ObjectiveExpire(785));
       AddObjective(new ObjectiveLegendDead(LegendDraenei.LegendExodarship));
+      AddObjective(new ObjectiveSelfExists());
       Global = true;
     }
     
