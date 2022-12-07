@@ -1,5 +1,4 @@
-﻿using MacroTools.ArtifactSystem;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup;
@@ -16,11 +15,11 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestGoldrinnElvePath"/> class.
     /// </summary>
-    public QuestGoldrinnElvePath(Artifact scytheOfElune) : base("Shrine of the Wolf God", "To understand the plight of her people, Tess will go to the Shrine of Goldrinn in Hyjal to understand what it means to be a Worgen.", "ReplaceableTextures\\CommandButtons\\BTNWorgenMoon.blp")
+    public QuestGoldrinnElvePath() : base("Shrine of the Wolf God", "To understand the plight of her people, Tess will go to the Shrine of Goldrinn in Hyjal to understand what it means to be a Worgen.", "ReplaceableTextures\\CommandButtons\\BTNWorgenMoon.blp")
     {
-      AddObjective(new ObjectiveLegendInRect(LegendGilneas.Tess, Regions.GoldrinnHyjal, "Shrine of Goldrinn in Mount Hyjal"));
-      AddObjective(new ObjectiveArtifactInRect(scytheOfElune, Regions.GoldrinnHyjal, "Shrine of Goldrinn in Mount Hyjal"));
-      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendGilneas.Genn));
+      AddObjective(new ObjectiveLegendInRect(LegendGilneas.LegendTess, Regions.GoldrinnHyjal, "Shrine of Goldrinn in Mount Hyjal"));
+      AddObjective(new ObjectiveArtifactInRect(ArtifactSetup.ScytheOfElune, Regions.GoldrinnHyjal, "Shrine of Goldrinn in Mount Hyjal"));
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendGilneas.LegendGenn));
       ResearchId = Constants.UPGRADE_R07U_QUEST_COMPLETED_SHRINE_OF_THE_WOLF_GOD;
     }
 

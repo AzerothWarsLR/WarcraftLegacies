@@ -1,4 +1,4 @@
-﻿using MacroTools.FactionSystem;
+using MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.FactionSetup
@@ -49,8 +49,8 @@ Escape as soon as you can and  try to save as many Draenei as you can. If you ar
       Draenei.ModObjectLimit(FourCC("h09U"), 4); //Elekk Knight
       Draenei.ModObjectLimit(FourCC("u02H"), 6); //Nether Ray
 
-      Draenei.ModObjectLimit(FourCC("etrs"), Faction.UNLIMITED); //Night Elf Transport Ship
-      Draenei.ModObjectLimit(FourCC("edes"), Faction.UNLIMITED); //Night Elf Frigate
+      Draenei.ModObjectLimit(FourCC("etrs"), 12); //Night Elf Transport Ship
+      Draenei.ModObjectLimit(FourCC("edes"), 12); //Night Elf Frigate
       Draenei.ModObjectLimit(FourCC("ebsh"), 6); //Night Elf Battleship
 
       Draenei.ModObjectLimit(FourCC("H09S"), 1); //Maraad

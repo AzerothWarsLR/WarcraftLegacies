@@ -6,7 +6,7 @@ namespace MacroTools.BookSystem.Powers
 {
   public sealed class PowerCard : Card
   {
-    private const float BoxWidth = 0.32f;
+    private const float BoxWidth = 0.28f;
     private const float BoxHeight = 0.092f;
     private readonly Power _power;
     private readonly TextFrame _textFrame;

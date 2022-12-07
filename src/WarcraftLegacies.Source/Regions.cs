@@ -233,6 +233,7 @@ public static class Regions
 	public static Rectangle IllidanBoat4 { get; set; } = new Rectangle(-5280f, 3168f, -5248f, 3200f);
 	public static Rectangle IllidanCameraExit { get; set; } = new Rectangle(-19840f, -10400f, -15072f, -6112f);
 	public static Rectangle IllidanExitText1 { get; set; } = new Rectangle(-16928f, -7808f, -16896f, -7776f);
+	public static Rectangle SkullOfGuldan { get; set; } = new Rectangle(-13824f, 23232f, -13408f, 23488f);
 	public static Rectangle IllidanDalaExit { get; set; } = new Rectangle(8736f, 6432f, 8896f, 6624f);
 	public static Rectangle IllidanLast { get; set; } = new Rectangle(-18720f, 3712f, -18688f, 3744f);
 	public static Rectangle MaelstromAmbient { get; set; } = new Rectangle(-1888f, 224f, 1568f, 3552f);
@@ -295,7 +296,7 @@ public static class Regions
 	public static Rectangle Trader1 { get; set; } = new Rectangle(2144f, 15456f, 2560f, 15776f);
 	public static Rectangle Trader2 { get; set; } = new Rectangle(-7840f, -13344f, -7456f, -13024f);
 	public static Rectangle Trader3 { get; set; } = new Rectangle(9344f, -22752f, 9664f, -22464f);
-	public static Rectangle GadgetUnlock { get; set; } = new Rectangle(-9248f, -13984f, -8160f, -12896f);
+	public static Rectangle GadgetUnlock { get; set; } = new Rectangle(-9248f, -13984f, -8320f, -12896f);
 	public static Rectangle OilRig1 { get; set; } = new Rectangle(-736f, -4768f, 448f, -3808f);
 	public static Rectangle OilRig2 { get; set; } = new Rectangle(-640f, -3264f, 1728f, -384f);
 	public static Rectangle OilRig3 { get; set; } = new Rectangle(2272f, -16512f, 5568f, -14624f);
@@ -355,8 +356,8 @@ public static class Regions
 	public static Rectangle DraeneiCamLock { get; set; } = new Rectangle(-4992f, -31296f, 2304f, -19616f);
 	public static Rectangle GilneasUnlock6 { get; set; } = new Rectangle(6272f, -928f, 8672f, 1312f);
 	public static Rectangle GilneasUnlock1 { get; set; } = new Rectangle(8480f, -2368f, 9824f, -832f);
-	public static Rectangle GilneasUnlock2 { get; set; } = new Rectangle(6624f, -3264f, 8032f, -2400f);
-	public static Rectangle GilneasUnlock3 { get; set; } = new Rectangle(3968f, 416f, 5376f, 2656f);
+	public static Rectangle GilneasUnlock2 { get; set; } = new Rectangle(6624f, -3232f, 8032f, -2400f);
+	public static Rectangle GilneasUnlock3 { get; set; } = new Rectangle(3968f, 416f, 5216f, 2656f);
 	public static Rectangle GilneasUnlock4 { get; set; } = new Rectangle(3392f, -2656f, 5504f, -320f);
 	public static Rectangle GilneasUnlock5 { get; set; } = new Rectangle(6496f, 2144f, 7360f, 2784f);
 	public static Rectangle DragonmawPathUnlock { get; set; } = new Rectangle(18784f, -7488f, 19488f, -5920f);
@@ -390,7 +391,5 @@ public static class Regions
 	public static Rectangle InstanceOutland { get; set; } = new Rectangle(-7104f, -32256f, 6016f, -18208f);
 	public static Rectangle Outland_Ships { get; set; } = new Rectangle(-7104f, -32256f, 6016f, -18208f);
 	public static Rectangle IllidanStartingPosition { get; set; } = new Rectangle(-22496f, -14272f, -21472f, -13152f);
-	public static Rectangle SkullOfGuldan { get; set; } = new Rectangle(-13632f, 22144f, -13344f, 22432f);
-	public static Rectangle ArtifactDummyInstance { get; set; } = new Rectangle(19584f, 23232f, 22688f, 24800f);
 
 }

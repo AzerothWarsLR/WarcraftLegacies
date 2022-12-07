@@ -25,11 +25,11 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
 
     private static void GrantNethergarde(player whichPlayer)
     {
-      var tempGroup = CreateGroup();
+      group tempGroup = CreateGroup();
 
       //Transfer all Neutral Passive units in Nethergarde
       GroupEnumUnitsInRect(tempGroup, Regions.NethergardeUnlock.Rect, null);
-      var u = FirstOfGroup(tempGroup);
+      unit u = FirstOfGroup(tempGroup);
       while (true)
       {
         if (u == null) break;

@@ -2,7 +2,6 @@ using MacroTools;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.UserInterface;
-using WarcraftLegacies.Source.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.Hints;
@@ -26,16 +25,16 @@ namespace WarcraftLegacies.Source.Setup
     {
       var preplacedUnitSystem = new PreplacedUnitSystem();
       SoundLibrary.Setup();
-      var artifactSetup = new ArtifactSetup(preplacedUnitSystem);
-      AllLegendSetup.Setup(preplacedUnitSystem, artifactSetup);
+      AllLegendSetup.Setup(preplacedUnitSystem);
       ShoreSetup.Setup();
       ControlPointSetup.Setup();
       InstanceSetup.Setup(preplacedUnitSystem);
       TeamSetup.Setup();
-      AllFactionSetup.Setup(preplacedUnitSystem, artifactSetup);
+      AllFactionSetup.Setup(preplacedUnitSystem);
       PlayerSetup.Setup();
       NeutralHostileSetup.Setup();
-      AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
+      ArtifactSetup.Setup(preplacedUnitSystem);
+      AllQuestSetup.Setup(preplacedUnitSystem);
       ObserverSetup.Setup();
       SpellsSetup.Setup();
       CheatSetup.Setup();
@@ -93,6 +92,12 @@ namespace WarcraftLegacies.Source.Setup
         Regions.Quel_Ships_2,
         Regions.Quel_Ships_3
       });
+      //Todo: uncomment below
+      // foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      // {
+      //   var newFogModifier = CreateFogModifierRect(player, FOG_OF_WAR_VISIBLE, Regions.MercTavern, true, true);
+      //   FogModifierStart(newFogModifier);
+      // }
       BlockerSetup.Setup();
       NeutralVictimAndPassiveSetup.Setup();
       GateSetup.Setup();
@@ -108,8 +113,6 @@ namespace WarcraftLegacies.Source.Setup
       IncompatibleResearchSetup.Setup();
       DemonGateSetup.Setup();
       SummonRallyPoints.Setup();
-      RemoveUnusedAreas.Run();
-      EyeOfSargerasCooldowns.Setup();
     }
   }
 }

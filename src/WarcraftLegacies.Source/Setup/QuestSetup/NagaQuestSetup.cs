@@ -1,11 +1,13 @@
-﻿using WarcraftLegacies.Source.Quests.Naga;
+﻿using MacroTools;
+using WarcraftLegacies.Source.Quests.Naga;
 using WarcraftLegacies.Source.Setup.FactionSetup;
+using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class NagaQuestSetup
   {
-    public static void Setup(ArtifactSetup artifactSetup)
+    public static void Setup()
     {
       var naga = IllidanSetup.Illidan;
       {
@@ -13,10 +15,11 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         //
         naga.AddQuest(new QuestAetheneumTomb(Regions.AethneumCatacombs));
         naga.AddQuest(new QuestRegroupCastaway());
-        naga.AddQuest(new QuestEyeofSargeras(artifactSetup.EyeOfSargeras));
+        naga.AddQuest(new QuestSkullOfGuldan());
         naga.AddQuest(new QuestIllidanKillGoblin());
-        naga.AddQuest(new QuestADestinyofFlameandSorrow(artifactSetup.SkullOfGuldan));
+
       }
+
     }
   }
 }

@@ -3,6 +3,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -29,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
         "Shadowforge"));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R01A_QUEST_COMPLETED_DARK_IRON_ALLIANCE;
-      foreach (var unit in CreateGroup().EnumUnitsInRect(shadowforgeCity).EmptyToList())
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(shadowforgeCity).EmptyToList())
         if (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE))
         {
           unit.SetInvulnerable(true);

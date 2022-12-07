@@ -23,7 +23,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
         : $"{target.Name} is alive";
 
       target.PermanentlyDied += OnAnyUnitDeath;
-      PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining, OnAnyUnitTrain);
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, OnAnyUnitTrain);
     }
 
     private void OnAnyUnitDeath(object? sender, Legend legend)

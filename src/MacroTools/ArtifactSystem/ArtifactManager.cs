@@ -81,7 +81,7 @@ namespace MacroTools.ArtifactSystem
     {
       //When a hero carrying an Artifact dies, the Artifact is dropped to the floor,
       // or to the nearest Shore if the hero died on the water.
-      PlayerUnitEvents.Register(UnitTypeEvent.Dies, () =>
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDies, () =>
       {
         try
         {
@@ -95,12 +95,11 @@ namespace MacroTools.ArtifactSystem
             var itemInSlot = UnitItemInSlot(triggerUnit, i);
             if (itemInSlot == null)
               continue;
-            
             var artifactInSlot = GetFromTypeId(GetItemTypeId(itemInSlot));
-            if (artifactInSlot == null) 
-              continue;
-            
-            isPositionPathable ??= !IsTerrainPathable(GetUnitX(triggerUnit), GetUnitY(triggerUnit), PATHING_TYPE_WALKABILITY);
+
+            if (isPositionPathable == null && artifactInSlot != null)
+              isPositionPathable =
+                !IsTerrainPathable(GetUnitX(triggerUnit), GetUnitY(triggerUnit), PATHING_TYPE_WALKABILITY);
 
             if (isPositionPathable == true)
             {

@@ -73,7 +73,7 @@ namespace MacroTools.Instances
             filterItem.SetPosition(exteriorPosition);
         });
 
-        foreach (var unit in CreateGroup().EnumUnitsInRect(rect).EmptyToList()) KillUnit(unit);
+        foreach (var unit in new GroupWrapper().EnumUnitsInRect(rect).EmptyToList()) KillUnit(unit);
       }
 
       foreach (var gate in _gates) gate.Destroy();

@@ -5,6 +5,7 @@ using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
+using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -47,8 +48,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      if (completingFaction?.Player == GetLocalPlayer())
-        PlayThematicMusic("war3mapImported\\DragonmawTheme.mp3");
+      PlayThematicMusic("war3mapImported\\DragonmawTheme.mp3");
       completingFaction.Player?.RescueGroup(_rescueUnits);
     }
   }

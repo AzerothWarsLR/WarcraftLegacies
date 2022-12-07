@@ -56,7 +56,7 @@ namespace MacroTools.Cheats
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
       TriggerAddAction(trig, Actions);
 
-      PlayerUnitEvents.Register(UnitTypeEvent.SpellEndCast, Spell);
+      PlayerUnitEvents.Register(PlayerUnitEvent.SpellEndCast, Spell);
     }
   }
 }

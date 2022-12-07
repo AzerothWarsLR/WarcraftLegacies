@@ -2,6 +2,7 @@
 using MacroTools.ChannelSystem;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
+using MacroTools.Wrappers;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -97,7 +98,7 @@ namespace MacroTools.Spells.ExactJustice
       AddSpecialEffect(EffectSettings.ExplodePath, GetUnitX(Caster), GetUnitY(Caster))
         .SetScale(EffectSettings.ExplodeScale)
         .SetLifespan();
-      foreach (var unit in CreateGroup().EnumUnitsInRange(Caster.GetPosition(), Radius)
+      foreach (var unit in new GroupWrapper().EnumUnitsInRange(Caster.GetPosition(), Radius)
                  .EmptyToList()
                  .Where(target => CastFilters.IsTargetEnemyAndAlive(Caster, target)))
       {

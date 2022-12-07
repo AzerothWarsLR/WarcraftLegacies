@@ -1,6 +1,7 @@
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
+using static MacroTools.Libraries.Display;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
@@ -25,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
 
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player.DisplayUnitTypeAcquired(UNITTYPE_ID, "You can now train Siege Ancients at the Ancient of War.");
+      DisplayUnitTypeAcquired(completingFaction.Player, UNITTYPE_ID, "You can now train Siege Ancients at the Ancient of War.");
     }
 
     protected override void OnAdd(Faction whichFaction)

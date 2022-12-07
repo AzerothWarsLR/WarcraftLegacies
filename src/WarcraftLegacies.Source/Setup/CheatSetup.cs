@@ -13,6 +13,7 @@ namespace WarcraftLegacies.Source.Setup
       CheatControl.Setup();
       CheatFaction.Setup();
       CheatFood.Setup();
+      CheatGod.Setup();
       CheatGold.Setup();
       CheatHasResearch.Setup();
       CheatHp.Setup();
@@ -37,7 +38,6 @@ namespace WarcraftLegacies.Source.Setup
       CommandManager.Register(new CommandAddSpell());
       CommandManager.Register(new CommandSetResearchLevel());
       CommandManager.Register(new CommandDestroy());
-      CommandManager.Register(new CheatGod());
     }
   }
 }

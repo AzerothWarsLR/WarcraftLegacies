@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Researches.Stormwind
 
     public static void Setup()
     {
-      PlayerUnitEvents.Register(ResearchEvent.IsFinished, Research, Constants.UPGRADE_R030_CODE_OF_CHIVALRY_ARATHOR_T3);
+      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, Research, Constants.UPGRADE_R030_CODE_OF_CHIVALRY_ARATHOR_T3);
     }
   }
 }

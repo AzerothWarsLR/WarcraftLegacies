@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
 
     protected override void OnComplete(Faction completingFaction)
     {
-      var whichUnit = LegendLegion.LEGEND_ARCHIMONDE.Unit;
+      unit whichUnit = LegendLegion.LEGEND_ARCHIMONDE.Unit;
       DruidsSetup.Druids.Obliterate();
       BlzSetUnitName(whichUnit, "Devourer of Worlds");
       AddSpecialEffectTarget("Abilities\\Weapons\\GreenDragonMissile\\GreenDragonMissile.mdl", whichUnit,

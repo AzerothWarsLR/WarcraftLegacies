@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Researches.Lordaeron
 
     public static void Setup()
     {
-      PlayerUnitEvents.Register(ResearchEvent.IsFinished, Research, Constants.UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON);
+      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, Research, Constants.UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON);
     }
   }
 }

@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
     protected override string CompletionPopup =>
       "The great Scarlet Monastery has fallen, and from its ashes rises an even greater Demon Gate.";
 
-    protected override string RewardDescription => "A new Demon Gate at the Monastery's location";
+    protected override string RewardDescription => "A new Demon Gate at the MonasteryFourCC(s location";
 
     protected override void OnComplete(Faction completingFaction)
     {

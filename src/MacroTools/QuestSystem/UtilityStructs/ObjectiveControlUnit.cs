@@ -16,7 +16,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
       _target = target;
       DisplaysPosition = true;
 
-      PlayerUnitEvents.Register(UnitTypeEvent.ChangesOwner, OnUnitChangeOwner);
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeChangesOwner, OnUnitChangeOwner);
     }
 
     public override Point Position => new(GetUnitX(_target), GetUnitY(_target));

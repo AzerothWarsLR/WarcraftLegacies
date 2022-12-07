@@ -1,5 +1,6 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.Libraries;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
@@ -18,13 +19,13 @@ namespace WarcraftLegacies.Source.Quests.Legion
     }
 
     protected override string CompletionPopup =>
-      "The Kingdom of Lordaeron has fallen, eliminating Azeroth's vanguard against the Legion.";
+      "The Kingdom of Lordaeron has fallen, eliminating AzerothFourCC(s vanguard against the Legion.";
 
     protected override string RewardDescription => "Tichondrius gains 15 Strength, Agility and Intelligence";
 
     protected override void OnComplete(Faction completingFaction)
     {
-      LegendLegion.LEGEND_TICHONDRIUS.Unit.DisplayHeroReward(15, 15, 15, 0);
+      Display.DisplayHeroReward(LegendLegion.LEGEND_TICHONDRIUS.Unit, 15, 15, 15, 0);
       LegendLegion.LEGEND_TICHONDRIUS.Unit.AddHeroAttributes(15, 15, 15);
     }
   }

@@ -3,6 +3,7 @@ using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using static MacroTools.Libraries.GeneralHelpers;
+using static MacroTools.Libraries.Display;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Sentinels
@@ -32,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
         Regions.VaultoftheWardens.Center.Y, 220);
       CreateUnits(completingFaction.Player, WardenId, Regions.VaultoftheWardens.Center.X,
         Regions.VaultoftheWardens.Center.Y, 270, 4);
-      completingFaction.Player.DisplayUnitTypeAcquired(WardenId,
+      DisplayUnitTypeAcquired(completingFaction.Player, WardenId,
         "You can now train Wardens from the Vault of the Wardens, Sentinel Enclaves, and your capitals.");
     }
 

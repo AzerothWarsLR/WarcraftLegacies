@@ -17,7 +17,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
       _objectId = objectId;
       _targetKillXUnitCount = targetKillXUnitCount;
       CurrentKillXUnitCount = 0;
-      PlayerUnitEvents.Register(UnitTypeEvent.Dies, OnKillUnit, objectId);
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDies, OnKillUnit, objectId);
     }
 
     private int CurrentKillXUnitCount

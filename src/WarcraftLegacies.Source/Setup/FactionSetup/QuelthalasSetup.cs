@@ -1,4 +1,4 @@
-﻿using MacroTools;
+using MacroTools;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -49,8 +49,8 @@ The Plague of Undeath is coming, and your allies to the South will need your hel
 
       //Units
       Quelthalas.ModObjectLimit(FourCC("nbee"), Faction.UNLIMITED); //Elven Worker
-      Quelthalas.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
-      Quelthalas.ModObjectLimit(FourCC("hdes"), Faction.UNLIMITED); //Alliance Frigate
+      Quelthalas.ModObjectLimit(FourCC("hbot"), 12); //Alliance Transport Ship
+      Quelthalas.ModObjectLimit(FourCC("hdes"), 12); //Alliance Frigate
       Quelthalas.ModObjectLimit(FourCC("hbsh"), 6); //Alliance Battle Ship
       Quelthalas.ModObjectLimit(FourCC("hhes"), Faction.UNLIMITED); //Elven Warrior
       Quelthalas.ModObjectLimit(FourCC("hmpr"), Faction.UNLIMITED); //Priest

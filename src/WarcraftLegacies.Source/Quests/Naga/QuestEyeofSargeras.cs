@@ -1,18 +1,21 @@
-﻿using MacroTools.ArtifactSystem;
+﻿using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
+using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
+
 namespace WarcraftLegacies.Source.Quests.Naga
 {
-  public sealed class QuestEyeofSargeras : QuestData
+  public sealed class QuestSkullOfGuldan : QuestData
   {
-    public QuestEyeofSargeras(Artifact eyeOfSargeras) : base("The Eye of Sargeras",
+    public QuestSkullOfGuldan() : base("The Eye of Sargeras",
       "The Eye of Sargeras is an extremely powerful artifact, it could be the key to satiate Illidan's thirst for power",
-      "ReplaceableTextures\\CommandButtons\\BTNEyeOfSargeras.blp")
+      "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp")
     {
-      AddObjective(new ObjectiveLegendHasArtifact(LegendNaga.LegendIllidan, eyeOfSargeras));
+      AddObjective(new ObjectiveLegendHasArtifact(LegendNaga.LegendIllidan, ArtifactSetup.ArtifactEyeofsargeras));
       ResearchId = FourCC("R094");
     }
 

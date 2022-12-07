@@ -1,4 +1,4 @@
-﻿using MacroTools;
+using MacroTools;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -49,8 +49,8 @@ Burn these infected buildings to weaken the Cult's power."
 
       //Units
       Lordaeron.ModObjectLimit(FourCC("hpea"), Faction.UNLIMITED); //Peasant
-      Lordaeron.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
-      Lordaeron.ModObjectLimit(FourCC("hdes"), Faction.UNLIMITED); //Alliance Frigate
+      Lordaeron.ModObjectLimit(FourCC("hbot"), 12); //Alliance Transport Ship
+      Lordaeron.ModObjectLimit(FourCC("hdes"), 12); //Alliance Frigate
       Lordaeron.ModObjectLimit(FourCC("hbsh"), 6); //Alliance Battle Ship
       Lordaeron.ModObjectLimit(FourCC("hfoo"), Faction.UNLIMITED); //Footman
       Lordaeron.ModObjectLimit(FourCC("hkni"), Faction.UNLIMITED); //Knight

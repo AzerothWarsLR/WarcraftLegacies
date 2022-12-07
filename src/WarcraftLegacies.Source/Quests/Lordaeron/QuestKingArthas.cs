@@ -1,8 +1,8 @@
-﻿using MacroTools.ArtifactSystem;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
+using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
@@ -13,14 +13,13 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
   /// </summary>
   public sealed class QuestKingArthas : QuestData
   {
+    private static readonly int QuestResearchId = Constants.UPGRADE_R08A_QUEST_COMPLETED_LINE_OF_SUCCESSION; //This research is given when the quest is completed
     private readonly unit _terenas;
-    private readonly Artifact _crownOfLordaeron;
-    private const int CompletionExperienceBonus = 2000;
-
+    private readonly int _completionExperienceBonus;
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestKingArthas"/> class.
     /// </summary>
-    public QuestKingArthas(unit terenas, Artifact crownOfLordaeron) : base("Line of Succession",
+    public QuestKingArthas(unit terenas) : base("Line of Succession",
       "Arthas Menethil is the one true heir of the Kingdom of Lordaeron. The only thing standing in the way of his coronation is the world-ending threat of the Scourge.",
       "ReplaceableTextures\\CommandButtons\\BTNArthas.blp")
     {
@@ -28,9 +27,8 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       AddObjective(new ObjectiveControlLegend(LegendLordaeron.Arthas, true));
       AddObjective(new ObjectiveLegendDead(LegendScourge.LegendLichking));
       AddObjective(new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.King_Arthas_crown, "King Terenas"));
-      ResearchId = Constants.UPGRADE_R08A_QUEST_COMPLETED_LINE_OF_SUCCESSION;
+      ResearchId = QuestResearchId;
       _terenas = terenas;
-      _crownOfLordaeron = crownOfLordaeron;
       Required = true;
     }
 
@@ -40,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Arthas gains {CompletionExperienceBonus} experience and the Crown of Lordaeron, and he can no longer permanently die";
+      $"Arthas gains {_completionExperienceBonus} experience and the Crown of Lordaeron, and he can no longer permanently die";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
@@ -48,8 +46,8 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       BlzSetUnitName(LegendLordaeron.Arthas.Unit, "King of Lordaeron");
       BlzSetUnitName(_terenas, "King Emeritus Terenas Menethil");
       RemoveUnit(_terenas);
-      AddHeroXP(LegendLordaeron.Arthas.Unit, CompletionExperienceBonus, true);
-      LegendLordaeron.Arthas.Unit?.AddItemSafe(_crownOfLordaeron.Item);
+      AddHeroXP(LegendLordaeron.Arthas.Unit, _completionExperienceBonus, true);
+      LegendLordaeron.Arthas.Unit.AddItemSafe(ArtifactSetup.ArtifactCrownlordaeron.Item);
       LegendLordaeron.Arthas.ClearUnitDependencies();
     }
   }

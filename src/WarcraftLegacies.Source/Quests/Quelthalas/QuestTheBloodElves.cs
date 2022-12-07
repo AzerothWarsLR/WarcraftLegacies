@@ -1,12 +1,13 @@
 using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.Powers;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
+using static MacroTools.Libraries.Display;
 
 namespace WarcraftLegacies.Source.Quests.Quelthalas
 {
@@ -27,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       AddObjective(new ObjectiveControlLegend(LegendQuelthalas.LegendAnasterian, true));
       AddObjective(new ObjectiveControlLegend(LegendQuelthalas.LegendSunwell, true));
 
-      foreach (var unit in CreateGroup().EnumUnitsInRect(secondChanceRect).EmptyToList())
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(secondChanceRect).EmptyToList())
       {
         ShowUnit(unit, false);
         SetUnitInvulnerable(unit, true);
@@ -37,31 +38,25 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       Required = true;
     }
 
-    /// <inheritdoc />
     protected override string FailurePopup =>
       "The Sunwell has fallen. The survivors escape to Dalaran and name themselves the Blood Elves in remembrance of their fallen people.";
 
-    /// <inheritdoc />
     protected override string CompletionPopup =>
       "The Legion Nexus has been obliterated. A group of ambitious mages seize the opportunity to study the demons' magic, becoming the first Blood Mages.";
 
-    /// <inheritdoc />
     protected override string RewardDescription =>
       $"Learn to train {GetObjectName(UnittypeId)}s from the Consortium, and you can summon Prince Kael'thas from the Altar of Prowess";
 
-    /// <inheritdoc />
     protected override string PenaltyDescription =>
-      $"You lose everything you control, but you gain Prince Kael'thas at the Dalaran Dungeons, you can train {GetObjectName(UnittypeId)}s from the Consortium, and you gain the Mana Addiction power";
+      $"You lose everything you control, but you gain Prince Kael'thas at the Dalaran Dungeons, and you can train {GetObjectName(UnittypeId)}s from the Consortium";
 
-    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
       SetPlayerTechResearched(completingFaction.Player, QuestResearchId, 1);
-      completingFaction.Player.DisplayUnitTypeAcquired(UnittypeId,
+      DisplayUnitTypeAcquired(completingFaction.Player, UnittypeId,
         $"You can now train {GetObjectName(UnittypeId)}s from the {GetObjectName(BuildingId)}.");
     }
 
-    /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
       LegendQuelthalas.LegendKael.StartingXp = GetHeroXP(LegendQuelthalas.LegendAnasterian.Unit);
@@ -77,26 +72,13 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
           GetUnitY(LegendQuelthalas.LegendKael.Unit)));
       if (GetLocalPlayer() == completingFaction.Player)
         SetCameraPosition(Regions.BloodElfSecondChanceSpawn.Center.X, Regions.BloodElfSecondChanceSpawn.Center.Y);
-      GrantPower(completingFaction);
     }
 
-    /// <inheritdoc />
     protected override void OnAdd(Faction whichFaction)
     {
       whichFaction.ModObjectLimit(QuestResearchId, Faction.UNLIMITED);
       whichFaction.ModObjectLimit(UnittypeId, 6);
       whichFaction.ModObjectLimit(HeroId, 1);
-    }
-
-    private static void GrantPower(Faction whichFaction)
-    {
-      var manaAddiction = new UnitsStealMana(0.35f)
-      {
-        IconName = "ManaShield",
-        Name = "Mana Addiction"
-      };
-      whichFaction.AddPower(manaAddiction);
-      whichFaction.Player?.DisplayPowerAcquired(manaAddiction);
     }
   }
 }

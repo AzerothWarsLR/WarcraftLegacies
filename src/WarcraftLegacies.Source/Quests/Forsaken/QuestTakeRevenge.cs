@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Forsaken
 
     protected override void OnComplete(Faction completingFaction)
     {
-      var whichUnit = LegendForsaken.SylvanasUndead.Unit;
+      unit whichUnit = LegendForsaken.SylvanasUndead.Unit;
       BlzSetUnitName(whichUnit, "Banshee Queen");
       AddSpecialEffectTarget("war3mapImported\\SoulArmor.mdx", whichUnit, "chest");
       BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0, 5); //Chaos

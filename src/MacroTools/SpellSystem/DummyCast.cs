@@ -1,4 +1,4 @@
-using MacroTools.Extensions;
+using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -111,7 +111,7 @@ namespace MacroTools.SpellSystem
     public static void DummyCastOnUnitsInCircle(unit caster, int abilId, string orderId, int level, Point center,
       float radius, CastFilter castFilter)
     {
-      foreach (var target in CreateGroup()
+      foreach (var target in new GroupWrapper()
                  .EnumUnitsInRange(center, radius).EmptyToList()
                  .FindAll(unit => castFilter(caster, unit)))
       {

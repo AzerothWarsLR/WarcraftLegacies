@@ -1,8 +1,4 @@
-﻿using System.Collections.Generic;
-using MacroTools;
-using MacroTools.PassiveAbilities;
-using MacroTools.PassiveAbilitySystem;
-using MacroTools.Spells;
+﻿using MacroTools.Spells;
 using MacroTools.SpellSystem;
 
 namespace WarcraftLegacies.Source.Setup.Spells
@@ -53,22 +49,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Interval = 0.1f
       };
       SpellSystem.Register(siphoningRitual);
-      
-      PassiveAbilityManager.Register(new DefensiveOrbs(Constants.UNIT_H00Q_KING_OF_QUEL_THALAS_QUEL_THALAS, Constants.ABILITY_A055_DEFENSIVE_ORBS_QUEL_THALAS_ANASTERIAN)
-      {
-        OrbitRadius = 350,
-        OrbitalPeriod = 4,
-        OrbEffectPath = @"war3mapImported\OrbFireX.mdx",
-        Damage = new LeveledAbilityField<float> { Base = 50, PerLevel = 100 },
-        CollisionRadius = new LeveledAbilityField<float> { Base = 150, PerLevel = 0},
-        OrbDuration = 45,
-        AbilityWhitelist = new List<int>
-        {
-          Constants.ABILITY_A04J_ARCANE_BURST_HIGH_ELVES_ANASTERIAN,
-          Constants.ABILITY_A013_DEVOUR_MAGIC_GUL_DAN,
-          Constants.ABILITY_AHPX_ASHES_OF_AL_AR_QUEL_THALAS_ANASTERIAN_KAEL_THAS
-        }
-      });
     }
   }
 }

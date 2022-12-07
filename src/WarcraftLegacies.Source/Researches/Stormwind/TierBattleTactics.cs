@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Researches.Stormwind
 
     public static void Setup()
     {
-      PlayerUnitEvents.Register(ResearchEvent.IsFinished, Research, FourCC("R02Y"));
+      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, Research, FourCC("R02Y"));
     }
   }
 }

@@ -20,7 +20,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
       DisplaysPosition = GetOwningPlayer(target.Unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE);
       target.ChangedOwner += OnTargetChangeOwner;
       target.PermanentlyDied += OnTargetDeath;
-      target.OwningPlayer.GetPlayerData().PlayerJoinedTeam += OnFactionTeamJoin;
+      PlayerData.PlayerJoinedTeam += OnFactionTeamJoin;
     }
 
     public override Point Position => new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));

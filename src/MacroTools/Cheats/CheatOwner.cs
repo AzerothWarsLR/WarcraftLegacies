@@ -1,4 +1,4 @@
-using MacroTools.Extensions;
+using MacroTools.Wrappers;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
@@ -23,7 +23,7 @@ namespace MacroTools.Cheats
 
       if (S2I(_parameter) >= 0)
       {
-        foreach (var unit in CreateGroup().EnumSelectedUnits(p).EmptyToList())
+        foreach (var unit in new GroupWrapper().EnumSelectedUnits(p).EmptyToList())
         {
           SetOwner(unit);
         }

@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Commands
 
     public static void Setup()
     {
-      var trig = CreateTrigger();
+      trigger trig = CreateTrigger();
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, true);
 
       TriggerAddAction(trig, Actions);

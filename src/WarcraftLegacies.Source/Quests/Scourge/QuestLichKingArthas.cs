@@ -1,4 +1,3 @@
-using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
@@ -8,19 +7,18 @@ using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
+
 namespace WarcraftLegacies.Source.Quests.Scourge
 {
   public sealed class QuestLichKingArthas : QuestData
   {
     private readonly unit _utgardeKeep;
-    private readonly Artifact _helmOfDomination;
 
-    public QuestLichKingArthas(unit utgardeKeep, Artifact helmOfDomination) : base("The Ascension",
+    public QuestLichKingArthas(unit utgardeKeep) : base("The Ascension",
       "From within the depths of the Frozen Throne, the Lich King Ner'zhul cries out for his champion. Release the Helm of Domination from its confines and merge its power with that of the Scourge's greatest Death Knight.",
       "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp")
     {
       _utgardeKeep = utgardeKeep;
-      _helmOfDomination = helmOfDomination;
       AddObjective(new ObjectiveControlLegend(LegendLordaeron.Arthas, false));
       AddObjective(new ObjectiveLegendLevel(LegendLordaeron.Arthas, 12));
       AddObjective(new ObjectiveResearch(FourCC("R07X"), FourCC("u000")));
@@ -57,7 +55,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         GetUnitState(LegendLordaeron.Arthas.Unit, UNIT_STATE_MAX_LIFE));
       SetUnitState(LegendLordaeron.Arthas.Unit, UNIT_STATE_MANA,
         GetUnitState(LegendLordaeron.Arthas.Unit, UNIT_STATE_MAX_MANA));
-      LegendLordaeron.Arthas.Unit?.AddItemSafe(_helmOfDomination.Item);
+      LegendLordaeron.Arthas.Unit.AddItemSafe(ArtifactSetup.ArtifactHelmofdomination.Item);
       completingFaction.Player?.SetTeam(TeamSetup.Scourge);
       _utgardeKeep.Rescue(ScourgeSetup.Scourge.Player);
       SetPlayerState(completingFaction.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);

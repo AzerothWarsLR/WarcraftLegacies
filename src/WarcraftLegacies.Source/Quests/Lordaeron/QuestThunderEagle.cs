@@ -3,6 +3,7 @@ using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
+using static MacroTools.Libraries.Display;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Lordaeron
@@ -12,11 +13,11 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
   /// </summary>
   public sealed class QuestThunderEagle : QuestData
   {
-    private new const int ResearchId = Constants.UPGRADE_R04L_QUEST_COMPLETED_TO_THE_SKIES_LORDAERON;
-    private const int ThunderEagleId = Constants.UNIT_NWE2_THUNDER_EAGLE_LORDAERON;
+    private new static readonly int ResearchId = Constants.UPGRADE_R04L_QUEST_COMPLETED_TO_THE_SKIES_LORDAERON;
+    private static readonly int ThunderEagleId = Constants.UNIT_NWE2_THUNDER_EAGLE_LORDAERON;
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="QuestThunderEagle"/> class.
+    /// Initializes a new instance of the <see cref="QuestAshbringer"/> class
     /// </summary>
     public QuestThunderEagle() : base("To the Skies!",
       "The Thunder Eagles of the Storm Peaks live in fear of the Legion. Wipe out the Legion Nexus to bring these great birds out into the open.",
@@ -37,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     protected override void OnComplete(Faction completingFaction)
     {
       SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
-      completingFaction.Player.DisplayUnitTypeAcquired(ThunderEagleId,
+      DisplayUnitTypeAcquired(completingFaction.Player, ThunderEagleId,
         "You can now train Thunder Eagles from upgraded Town Halls and from your capitals.");
     }
   }

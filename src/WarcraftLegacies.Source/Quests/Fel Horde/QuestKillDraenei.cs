@@ -29,13 +29,13 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
 
     protected override void OnComplete(Faction completingFaction)
     {
-      var tempGroup = CreateGroup();
+      group tempGroup = CreateGroup();
 
       completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 500);
       completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 500);
 
       GroupEnumUnitsInRect(tempGroup, Regions.InstanceOutland.Rect, null);
-      var u = FirstOfGroup(tempGroup);
+      unit u = FirstOfGroup(tempGroup);
       while (true)
       {
         if (u == null) break;

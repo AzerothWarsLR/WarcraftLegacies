@@ -3,6 +3,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
@@ -62,8 +63,8 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       
       LegendDraenei.LegendVelen.Unit?.Kill();
 
-      var group = CreateGroup().EnumUnitsInRect(Regions.InstanceOutland).EmptyToList();
-      foreach (var unit in group)
+      using var group = new GroupWrapper().EnumUnitsInRect(Regions.InstanceOutland);
+      foreach (var unit in group.EmptyToList())
       {
         if (GetOwningPlayer(unit) == completingFaction.Player)
           if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) && !IsUnitType(unit, UNIT_TYPE_ANCIENT))
@@ -92,7 +93,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
         if (!completingFaction.GetQuestByTitle("Warn Halaar").ProgressLocked) completingFaction.GetQuestByTitle("Warn Halaar").Progress = QuestProgress.Failed;
         if (!completingFaction.GetQuestByTitle("Warn Shattrah").ProgressLocked) completingFaction.GetQuestByTitle("Warn Shattrah").Progress = QuestProgress.Failed;
         if (!completingFaction.GetQuestByTitle("Warn Farahlon").ProgressLocked) completingFaction.GetQuestByTitle("Warn Farahlon").Progress = QuestProgress.Failed;
-        TheExodar.Kill();
+        RemoveUnit(TheExodar);
       }
 
       if (GetLocalPlayer() == completingFaction.Player) 
@@ -107,7 +108,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// <inheritdoc />
     protected override void OnAdd(Faction whichFaction)
     {
-      foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.DraeneiEvacuation).EmptyToList())
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(Regions.DraeneiEvacuation).EmptyToList())
       {
         SetUnitInvulnerable(unit, true);
         if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE)) 
@@ -126,14 +127,14 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     
     private static void GrantExiled(player whichPlayer)
     {
-      foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.DraeneiEvacuation.Rect).EmptyToList())
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(Regions.DraeneiEvacuation.Rect).EmptyToList())
         if (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE))
           unit.Rescue(whichPlayer);
     }
 
     private static void EscapeOutland(player whichPlayer)
     {
-      foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.InstanceOutland.Rect).EmptyToList())
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(Regions.InstanceOutland.Rect).EmptyToList())
       {
         if (GetOwningPlayer(unit) != whichPlayer) continue;
         if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) && !IsUnitType(unit, UNIT_TYPE_ANCIENT))

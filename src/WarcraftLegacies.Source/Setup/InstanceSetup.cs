@@ -73,8 +73,6 @@ namespace WarcraftLegacies.Source.Setup
       proudmooreFlagshipInterior.AddDependency(preplacedUnitSystem.GetUnit(Constants.UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS));
       proudmooreFlagshipInterior.AddDependency(preplacedUnitSystem.GetUnit(Constants.UNIT_H09D_FLEETMASTER_S_TABLE));
       InstanceSystem.Register(proudmooreFlagshipInterior);
-
-      InstanceSystem.Register(new Instance("Artifact dummy area", Regions.ArtifactDummyInstance));
     }
   }
 }

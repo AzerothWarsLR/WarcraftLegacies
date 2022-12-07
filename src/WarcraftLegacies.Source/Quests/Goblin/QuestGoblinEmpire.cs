@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
   public sealed class QuestGoblinEmpire : QuestData
   {
     public QuestGoblinEmpire() : base("Goblin Empire",
-      "All the Goblin syndicate's towns must be reunited under one banner.",
+      "All the Goblin syndicatesFourCC( towns must be reunited under one banner.",
       "ReplaceableTextures\\CommandButtons\\BTNGoblinWarZeppelin.blp")
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01X"))));

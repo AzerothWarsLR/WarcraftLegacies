@@ -1,4 +1,4 @@
-﻿using MacroTools.FactionSystem;
+using MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.FactionSetup
@@ -43,8 +43,8 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
 
       //Units
       Gilneas.ModObjectLimit(FourCC("hpea"), Faction.UNLIMITED); //Peasant
-      Gilneas.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
-      Gilneas.ModObjectLimit(FourCC("hdes"), Faction.UNLIMITED); //Alliance Frigate
+      Gilneas.ModObjectLimit(FourCC("hbot"), 12); //Alliance Transport Ship
+      Gilneas.ModObjectLimit(FourCC("hdes"), 12); //Alliance Frigate
       Gilneas.ModObjectLimit(FourCC("hbsh"), 6); //Alliance Battle Ship
       Gilneas.ModObjectLimit(FourCC("n06K"), Faction.UNLIMITED); //Wildsoul
       Gilneas.ModObjectLimit(FourCC("h04M"), Faction.UNLIMITED); //Cleric

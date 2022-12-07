@@ -5,7 +5,7 @@ namespace WarcraftLegacies.Source.Setup
 {
   public static class AllLegendSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendDalaran.Setup(preplacedUnitSystem);
       LegendDraenei.Setup(preplacedUnitSystem);
@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup
       LegendIronforge.Setup(preplacedUnitSystem);
       LegendKultiras.Setup(preplacedUnitSystem);
       LegendLegion.Setup(preplacedUnitSystem);
-      LegendLordaeron.Setup(preplacedUnitSystem, artifactSetup);
+      LegendLordaeron.Setup(preplacedUnitSystem);
       LegendNaga.Setup(preplacedUnitSystem);
       LegendNeutral.Setup(preplacedUnitSystem);
       LegendQuelthalas.Setup(preplacedUnitSystem);

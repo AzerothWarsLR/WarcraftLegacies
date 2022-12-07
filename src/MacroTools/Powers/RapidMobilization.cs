@@ -21,7 +21,7 @@ namespace MacroTools.Powers
       
     public override void OnRemove(player whichPlayer)
     {
-      PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerFinishesTraining, OnUnitTrain, GetPlayerId(whichPlayer));
+      PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerFinishesTraining, GetPlayerId(whichPlayer));
     }
       
     private void OnUnitTrain()

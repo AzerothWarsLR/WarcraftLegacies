@@ -1,58 +1,51 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
+
 namespace WarcraftLegacies.Source.Quests.Zandalar
 {
-  /// <summary>
-  /// Fully upgrade your main to unlock Zan
-  /// </summary>
   public sealed class QuestZandalar : QuestData
   {
-    private readonly List<unit> _rescueUnits;
+    private readonly List<unit> _rescueUnits = new();
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="QuestZandalar"/> class
-    /// </summary>
-    /// <param name="rescueRect"></param>
     public QuestZandalar(Rectangle rescueRect) : base("City of Gold", "We need to regain control of our land.",
       "ReplaceableTextures\\CommandButtons\\BTNBloodTrollMage.blp")
     {
-      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, Constants.UNIT_O03Z_FORTRESS_ZANDALAR));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_O03Z_FORTRESS_ZANDALAR, Constants.UNIT_O03Y_STRONGHOLD_ZANDALAR));
+      AddObjective(new ObjectiveResearch(FourCC("R04R"), FourCC("o03Z")));
+      AddObjective(new ObjectiveUpgrade(FourCC("o03Z"), FourCC("o03Y")));
       AddObjective(new ObjectiveExpire(900));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_R04W_QUEST_COMPLETED_CITY_OF_GOLD;
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
-      Required = true;
+      ResearchId = FourCC("R04W");
+
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+        {
+          SetUnitInvulnerable(unit, true);
+          _rescueUnits.Add(unit);
+        }
     }
 
-    /// <inheritdoc/>
     protected override string CompletionPopup =>
       "The City of Gold is now yours to command and has joined the Zandalari";
 
-    /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Control of all units in Dazar'alor and enables the Golden Fleet to be built";
+      "Control of all units in Zandalar and enables the Golden Fleet to be built";
 
-    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
-    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      if(completingFaction.Player != null)
-        completingFaction.Player.RescueGroup(_rescueUnits);
-      
-      if (GetLocalPlayer() == completingFaction.Player) 
-        PlayThematicMusic("war3mapImported\\ZandalarTheme.mp3");
+      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\ZandalarTheme.mp3");
     }
   }
 }

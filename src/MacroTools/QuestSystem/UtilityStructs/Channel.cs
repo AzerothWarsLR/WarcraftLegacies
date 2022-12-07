@@ -48,7 +48,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
     /// <param name="position">Where the caster should channel from.</param>
     /// <param name="global">If true, all players are alerted to the channel by a timer.</param>
     /// <param name="title">The name of the timer to use when alerting all players.</param>
-    public Channel(unit caster, int duration, float facing, Point position, bool global = false, string title = "")
+    public Channel(unit caster, float duration, float facing, Point position, bool global = false, string title = "")
     {
       _caster = caster;
       _elapsedDuration = 0;
@@ -61,7 +61,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
         .SetAnimation("channel")
         .SetFacingEx(facing);
       _sfxProgress = AddSpecialEffect(ProgressEffect, GetUnitX(caster), GetUnitY(caster))
-        .SetTimeScale(10 / (float)duration)
+        .SetTimeScale(10 / duration)
         .SetColor(caster.OwningPlayer())
         .SetScale(ProgressScale)
         .SetHeight(ProgressHeight + Environment.GetPositionZ(position));

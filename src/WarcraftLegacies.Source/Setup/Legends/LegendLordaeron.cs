@@ -59,7 +59,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// <summary>
     /// Sets up all Lordaeron <see cref="Legend"/>s.
     /// </summary>
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Terenas = new Legend
       {
@@ -103,7 +103,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         .AddAction(() =>
         {
           Terenas.Unit.Kill();
-          artifactSetup.CrownOfLordaeron.Item.SetPosition(Regions.King_Arthas_crown.Center);
+          ArtifactSetup.ArtifactCrownlordaeron?.Item.SetPosition(Regions.King_Arthas_crown.Center);
           SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
             FourCC("Ysaw"), false, "hide", false);
           SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,

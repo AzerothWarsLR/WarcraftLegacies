@@ -40,7 +40,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       "The portal to Kalimdor will open at turn 9! Once it does, hurry! it will only last for 60 seconds.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Will make the Orgrimar Portal open at turn 9. The portal will stay open only for 60 seconds!";
+    protected override string RewardDescription => "Open a Portal between Dragonmaw Port and Orgrimmar";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)

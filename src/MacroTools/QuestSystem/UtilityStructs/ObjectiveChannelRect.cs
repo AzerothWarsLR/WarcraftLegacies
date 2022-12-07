@@ -14,29 +14,21 @@ namespace MacroTools.QuestSystem.UtilityStructs
   {
     private const string TargetEffect = "war3mapImported\\Fortitude Rune Aura.mdx";
 
-    private readonly int _duration;
+    private readonly float _duration;
     private readonly TriggerWrapper _entersRectTrig = new();
-    private readonly float _facing;
+    private readonly float _facing; //Which way the unit faces while it is channeling
     private readonly Legend _targetLegend;
 
     private readonly rect _targetRect;
     private Channel? _channel;
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="ObjectiveChannelRect"/> class.
-    /// </summary>
-    /// <param name="targetRect">Where the channeling must be done.</param>
-    /// <param name="rectName">A user-friendly name for the location the channeling must be done.</param>
-    /// <param name="whichLegend">The Legend that must do the channeling.</param>
-    /// <param name="duration">How long the channel lasts.</param>
-    /// <param name="facing">Which way the unit faces while channeling.</param>
-    public ObjectiveChannelRect(Rectangle targetRect, string rectName, Legend whichLegend, int duration, float facing)
+    public ObjectiveChannelRect(Rectangle targetRect, string rectName, Legend whichLegend, float duration, float facing)
     {
       _targetRect = targetRect.Rect;
-      var target = RectToRegion(_targetRect);
+      region target = RectToRegion(_targetRect);
       _targetLegend = whichLegend;
       _duration = duration;
-      Description = $"Have {whichLegend.Name} channel at {rectName} for {duration} seconds";
+      Description = $"Have {whichLegend.Name} channel at {rectName} for {I2S(R2I(duration))} seconds";
       _facing = facing;
 
       MapEffectPath = TargetEffect;
@@ -64,7 +56,6 @@ namespace MacroTools.QuestSystem.UtilityStructs
       if (channel.FinishedWithoutInterruption) Progress = QuestProgress.Complete;
       channel.Finished -= OnChannelEnd;
       channel.Dispose();
-      _channel = null;
     }
   }
 }

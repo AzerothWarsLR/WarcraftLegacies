@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
 
 
     protected override string CompletionPopup =>
-      "The Great Forge has been annihilated. The Fel Horde's peons immediately salvage its intact refineries and put them to purpose in the creation of Felsteel.";
+      "The Great Forge has been annihilated. The Fel HordeFourCC(s peons immediately salvage its intact refineries and put them to purpose in the creation of Felsteel.";
 
     protected override string RewardDescription => "Learn to train " + I2S(UNIT_LIMIT) + " " +
                                                        GetObjectName(UnittypeId) + "s from the " +

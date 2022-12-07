@@ -15,7 +15,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
       Description = target.Name + " is level " + I2S(level);
       _target = target;
       _level = level;
-      PlayerUnitEvents.Register(HeroTypeEvent.Levels, OnLevel);
+      PlayerUnitEvents.Register(PlayerUnitEvent.HeroTypeLevels, OnLevel);
     }
 
     private void OnLevel()

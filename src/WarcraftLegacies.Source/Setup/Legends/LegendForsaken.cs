@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Scholomance = new Legend
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_U012_SCHOLOMANCE),
-        DeathMessage = "Scholomance, the center of the Scourge's operations in Lordaeron, has been destroyed."
+        DeathMessage = "Scholomance, the center of the ScourgeFourCC(s operations in Lordaeron, has been destroyed."
       };
       Legend.Register(Scholomance);
 

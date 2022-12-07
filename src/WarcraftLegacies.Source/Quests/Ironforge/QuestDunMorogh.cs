@@ -27,11 +27,11 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
 
     private static void GrantDunMorogh(player whichPlayer)
     {
-      var tempGroup = CreateGroup();
+      group tempGroup = CreateGroup();
 
       //Transfer all Neutral Passive units in DunMorogh
       GroupEnumUnitsInRect(tempGroup, Regions.DunmoroghAmbient2.Rect, null);
-      var u = FirstOfGroup(tempGroup);
+      unit u = FirstOfGroup(tempGroup);
       while (true)
       {
         if (u == null) break;

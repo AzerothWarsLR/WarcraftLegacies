@@ -12,6 +12,7 @@ namespace TestMap.Source.Setup
       CheatControl.Setup();
       CheatFaction.Setup();
       CheatFood.Setup();
+      CheatGod.Setup();
       CheatGold.Setup();
       CheatHasResearch.Setup();
       CheatHp.Setup();
@@ -35,7 +36,6 @@ namespace TestMap.Source.Setup
       CommandManager.Register(new CommandSetResearchLevel());
       CommandManager.Register(new CommandTeam());
       CommandManager.Register(new CommandDestroy());
-      CommandManager.Register(new CheatGod());
     }
   }
 }

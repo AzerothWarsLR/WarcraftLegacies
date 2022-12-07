@@ -1,4 +1,4 @@
-﻿using MacroTools;
+using MacroTools;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -49,7 +49,7 @@ Once the human menace has been dealt with, sail West and help the Horde in Kalim
       Zandalar.ModObjectLimit(FourCC("o04G"), Faction.UNLIMITED); //Haruspex
       Zandalar.ModObjectLimit(FourCC("o04E"), 6); //Boneseer
       Zandalar.ModObjectLimit(FourCC("h05D"), Faction.UNLIMITED); //Raptor Rider
-      Zandalar.ModObjectLimit(FourCC("o04W"), Faction.UNLIMITED); //Golden Vessel
+      Zandalar.ModObjectLimit(FourCC("o04W"), 24); //Golden Vessel
       Zandalar.ModObjectLimit(FourCC("ojgn"), 6); //Juggernaught
       Zandalar.ModObjectLimit(FourCC("o021"), 12); //Ravager
       Zandalar.ModObjectLimit(FourCC("nftk"), 12); //Warlord

@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using MacroTools;
 using MacroTools.QuestSystem;
+using MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Mechanics.Scourge.Plague;
 using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -10,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class ScourgeQuestSetup
   {
-    public static QuestData Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
+    public static QuestData Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       QuestSpiderWar questSpiderWar = new(Regions.Ice_Crown,
         preplacedUnitSystem.GetUnit(Constants.UNIT_N074_QUEEN_NEZAR_AZRET));
@@ -41,7 +43,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 
       QuestPlague questPlague = new(ForsakenSetup.Forsaken,
         preplacedUnitSystem.GetUnit(Constants.UNIT_N0AG_LORD_BAROV),
-        preplacedUnitSystem.GetUnits(Constants.UNIT_U01U_CULTIST_OF_THE_DAMNED_FORSAKEN_CULT),
+        new GroupWrapper().EnumUnitsOfType(Constants.UNIT_U01U_CULTIST_OF_THE_DAMNED_FORSAKEN_CULT).EmptyToList(),
         plagueParameters
       );
 
@@ -51,7 +53,9 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         preplacedUnitSystem.GetUnit(Constants.UNIT_E013_NAXXRAMAS_SCOURGE));
       QuestCivilWar questCivilWar = new();
       QuestLichKingArthas questLichKingArthas =
-        new(preplacedUnitSystem.GetUnit(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE), artifactSetup.HelmOfDomination);
+        new(preplacedUnitSystem.GetUnit(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE));
+
+      questNaxxramas.AddObjective(new ObjectiveCompleteQuest(questKelthuzad));
 
       //Setup
       ScourgeSetup.Scourge.AddQuest(questSpiderWar);

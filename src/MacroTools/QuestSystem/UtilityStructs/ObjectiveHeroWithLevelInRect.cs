@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using MacroTools.Extensions;
+using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -32,10 +33,15 @@ namespace MacroTools.QuestSystem.UtilityStructs
         .AddAction(() =>
         {
           var triggerUnit = GetTriggerUnit();
-          if (!IsUnitValid(triggerUnit)) 
-            return;
-          CompletingUnit = triggerUnit;
-          Progress = QuestProgress.Complete;
+          if (IsUnitValid(triggerUnit))
+          {
+            CompletingUnit = triggerUnit;
+            Progress = QuestProgress.Complete;
+          }
+          else
+          {
+            Progress = QuestProgress.Incomplete;
+          }
         });
       CreateTrigger()
         .RegisterLeaveRegion(targetRect)
@@ -59,6 +65,6 @@ namespace MacroTools.QuestSystem.UtilityStructs
       EligibleFactions.Contains(whichUnit.OwningPlayer()) && whichUnit.IsAlive() && IsUnitType(whichUnit, UNIT_TYPE_HERO) &&
       GetHeroLevel(whichUnit) >= _targetLevel;
 
-    private bool IsValidUnitInRect() => CreateGroup().EnumUnitsInRect(_targetRect).EmptyToList().Any(IsUnitValid);
+    private bool IsValidUnitInRect() => new GroupWrapper().EnumUnitsInRect(_targetRect).EmptyToList().Any(IsUnitValid);
   }
 }

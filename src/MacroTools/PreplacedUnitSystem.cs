@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MacroTools.Extensions;
 using MacroTools.Libraries;
+using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -39,7 +39,6 @@ namespace MacroTools
           $"There is no preplaced unit with Unit Type Id {GeneralHelpers.DebugIdInteger2IdString(unitTypeId)}.");
       return GetClosestUnitToPoint(_unitsByTypeId[unitTypeId], location);
     }
-    
 
     /// <summary>
     ///   Gets a preplaced unit.
@@ -58,19 +57,6 @@ namespace MacroTools
           $"There are multiple preplaced units with Unit Type Id {GeneralHelpers.DebugIdInteger2IdString(unitTypeId)}. Use the overload that requires a position instead.");
 
       return _unitsByTypeId[unitTypeId].First();
-    }
-    
-    /// <summary>
-    ///   Gets a list of preplaced units.
-    /// </summary>
-    /// <param name="unitTypeId">The unit type id the units must have to be retrieved.</param>
-    /// <exception cref="KeyNotFoundException">Thrown if there is no preplaced units with the given unit type id.</exception>
-    public List<unit> GetUnits(int unitTypeId)
-    {
-      if (!_unitsByTypeId.ContainsKey(unitTypeId))
-        throw new KeyNotFoundException(
-          $"There is no preplaced unit with Unit Type Id {GeneralHelpers.DebugIdInteger2IdString(unitTypeId)}.");
-      return _unitsByTypeId[unitTypeId];
     }
 
     /// <summary>
@@ -113,12 +99,11 @@ namespace MacroTools
       if (!_destructablesByTypeId.ContainsKey(destructableId))
         _destructablesByTypeId[destructableId] = new List<destructable>();
       _destructablesByTypeId[destructableId].Add(destructable);
-      DestructibleHider.Register(destructable);
     }
 
     private void ReadAllUnits()
     {
-      foreach (var unit in CreateGroup().EnumUnitsInRect(Rectangle.WorldBounds.Rect).EmptyToList())
+      foreach (var unit in new GroupWrapper().EnumUnitsInRect(Rectangle.WorldBounds.Rect).EmptyToList())
       {
         var unitTypeId = GetUnitTypeId(unit);
         if (!_unitsByTypeId.ContainsKey(unitTypeId)) _unitsByTypeId[unitTypeId] = new List<unit>();

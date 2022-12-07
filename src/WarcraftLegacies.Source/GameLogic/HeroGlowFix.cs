@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.GameLogic
     /// </summary>
     public static void Setup()
     {
-      PlayerUnitEvents.Register(HeroTypeEvent.FinishesRevive, () =>
+      PlayerUnitEvents.Register(PlayerUnitEvent.HeroTypeFinishesRevive, () =>
       {
         var triggerUnit = GetTriggerUnit();
         var revivedLegend = Legend.GetFromUnit(triggerUnit);

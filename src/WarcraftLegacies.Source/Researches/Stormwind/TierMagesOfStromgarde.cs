@@ -12,17 +12,17 @@ namespace WarcraftLegacies.Source.Researches.Stormwind
   {
     private const int UnittypePortal = Constants.UNIT_N09P_PORTAL_STORMWIND;
     private const float WaygateOffset = 100;
-    private static destructable? _destructableA;
-    private static destructable? _destructableB;
+    private static destructable? DestructableA;
+    private static destructable? DestructableB;
 
     private static void EnablePortals()
     {
-      var waygateA = CreateUnit(StormwindSetup.Stormwind.Player, UnittypePortal, _destructableA.GetPosition().X,
-        _destructableA.GetPosition().Y, 94.14f);
+      var waygateA = CreateUnit(StormwindSetup.Stormwind.Player, UnittypePortal, DestructableA.GetPosition().X,
+        DestructableA.GetPosition().Y, 94.14f);
 
       
-      var waygateB = CreateUnit(StormwindSetup.Stormwind.Player, UnittypePortal, _destructableB.GetPosition().X,
-        _destructableB.GetPosition().Y, 91.71f);
+      var waygateB = CreateUnit(StormwindSetup.Stormwind.Player, UnittypePortal, DestructableB.GetPosition().X,
+        DestructableB.GetPosition().Y, 91.71f);
 
       SetUnitPathing(waygateA, false);
       SetUnitPathing(waygateB, false);
@@ -34,6 +34,7 @@ namespace WarcraftLegacies.Source.Researches.Stormwind
       var polarOffsetB = WCSharp.Shared.Util.PositionWithPolarOffset(GetUnitX(waygateA), GetUnitY(waygateA),
         WaygateOffset, GetUnitFacing(waygateA));
       waygateB.SetWaygateDestination(new Point(polarOffsetB.x, polarOffsetB.y));
+      WaygateSetDestination(waygateA, polarOffsetB.x, polarOffsetB.y);
 
       QueueUnitAnimation(waygateA, "birth");
       QueueUnitAnimation(waygateB, "birth");
@@ -50,9 +51,9 @@ namespace WarcraftLegacies.Source.Researches.Stormwind
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      _destructableA = preplacedUnitSystem.GetDestructable(FourCC("B017"), new Point(8611, -11985));
-      _destructableB = preplacedUnitSystem.GetDestructable(FourCC("B017"), Regions.Stromgarde.Center);
-      PlayerUnitEvents.Register(ResearchEvent.IsFinished, Research,
+      DestructableA = preplacedUnitSystem.GetDestructable(FourCC("B017"), new Point(8611, -11985));
+      DestructableB = preplacedUnitSystem.GetDestructable(FourCC("B017"), Regions.Stromgarde.Center);
+      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, Research,
         Constants.UPGRADE_R03V_MAGES_OF_STROMGARDE_ARATHOR_T2);
     }
   }

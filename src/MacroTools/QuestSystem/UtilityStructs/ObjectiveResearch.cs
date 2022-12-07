@@ -8,7 +8,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
     public ObjectiveResearch(int researchId, int structureId)
     {
       Description = "Research " + GetObjectName(researchId) + " from the " + GetObjectName(structureId);
-      PlayerUnitEvents.Register(ResearchEvent.IsFinished, OnAnyResearch, researchId);
+      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, OnAnyResearch, researchId);
     }
 
     private void OnAnyResearch()

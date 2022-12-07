@@ -3,8 +3,7 @@ using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
-
-namespace WarcraftLegacies.Source.Quests.Druids
+using static MacroTools.Libraries.Display; namespace WarcraftLegacies.Source.Quests.Druids
 {
   public sealed class QuestDruidsKillFrostwolf : QuestData
   {
@@ -19,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
     protected override void OnComplete(Faction completingFaction)
     {
       SetPlayerTechResearched(completingFaction.Player, RESEARCH_ID, 1);
-      completingFaction.Player.DisplayUnitTypeAcquired(ELEMENTAL_GUARDIAN_ID,
+      DisplayUnitTypeAcquired(completingFaction.Player, ELEMENTAL_GUARDIAN_ID,
         "You can now train the Elemental Guardian from the Altar of Elders.");
     }
 

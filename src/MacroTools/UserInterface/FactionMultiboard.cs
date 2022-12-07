@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
@@ -54,20 +55,15 @@ namespace MacroTools.UserInterface
       );
 
       PlayerData.FactionChange += (_, _) => { Instance?.Render(); };
-      FactionManager.AnyFactionNameChanged += OnFactionAnyFactionNameChanged;
-      
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-      {
-        player.GetPlayerData().IncomeChanged += OnPlayerIncomeChanged;
-        player.GetPlayerData().PlayerJoinedTeam += (_, _) => { Instance?.Render(); };  
-        player.GetPlayerData().PlayerLeftTeam += (_, _) => { Instance?.Render(); };
-      }
+      PlayerData.PlayerJoinedTeam += (_, _) => { Instance?.Render(); };  
+      PlayerData.PlayerLeftTeam += (_, _) => { Instance?.Render(); };
+      Faction.StatusChanged += (_, _) => { Instance?.Render(); };
 
-      foreach (var faction in FactionManager.GetAllFactions())
-      {
-        faction.StatusChanged += (_, _) => { Instance?.Render(); };
-        faction.IconChanged += OnFactionIconChanged;
-      }
+      FactionManager.AnyFactionNameChanged += OnFactionAnyFactionNameChanged;
+      Faction.IconChanged += OnFactionIconChanged;
+
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+        player.GetPlayerData().IncomeChanged += OnPlayerIncomeChanged;
 
       _initialized = true;
     }
@@ -75,9 +71,6 @@ namespace MacroTools.UserInterface
     //Run when a detail about a Faction has changed
     private void UpdateFactionRow(Faction faction)
     {
-      if (!_rowsByFaction.ContainsKey(faction))
-        return;
-
       var row = _rowsByFaction[faction];
       var factionMbi = MultiboardGetItem(_multiboard, row, ColumnFaction);
       var cpMbi = MultiboardGetItem(_multiboard, row, ColumnCp);
@@ -127,8 +120,6 @@ namespace MacroTools.UserInterface
     //Run when the number of Teams or Factions have changed, or a Faction has changed its Team
     private void Render()
     {
-      _rowsByFaction.Clear();
-      _rowsByTeam.Clear();
       var row = 0;
       DestroyMultiboard(_multiboard);
       _multiboard = CreateMultiboard();

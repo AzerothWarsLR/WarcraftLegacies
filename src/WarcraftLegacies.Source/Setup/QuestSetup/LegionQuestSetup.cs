@@ -10,7 +10,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       //Early duel
-      var newQuest = LegionSetup.Legion.AddQuest(new QuestArgusControl(preplacedUnitSystem));
+      QuestData newQuest = LegionSetup.Legion.AddQuest(new QuestArgusControl(preplacedUnitSystem));
       LegionSetup.Legion.StartingQuest = newQuest;
       LegionSetup.Legion.AddQuest(new QuestEmbassy());
       LegionSetup.Legion.AddQuest(new QuestLegionCaptureSunwell());

@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.ArtifactSystem;
-using MacroTools.Extensions;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -21,17 +20,9 @@ namespace MacroTools.BookSystem.ArtifactSystem
     {
       ArtifactManager.ArtifactRegistered += ArtifactCreated;
       AddPagesAndArtifacts();
-      Title = "Artifacts (F7)";
+      Title = "Artifacts";
       LauncherParent = BlzGetFrameByName("UpperButtonBarQuestsButton", 0);
       Position = new Point(0.4f, 0.35f);
-      CreateTrigger()
-        .RegisterSharedKeyEvent(OSKEY_F7, BlzGetTriggerPlayerMetaKey(), false)
-        .AddAction(() =>
-        {
-          if (GetTriggerPlayer() != GetLocalPlayer())
-            return;
-          Open(GetLocalPlayer());
-        });
     }
 
     private void AddArtifact(Artifact artifact)

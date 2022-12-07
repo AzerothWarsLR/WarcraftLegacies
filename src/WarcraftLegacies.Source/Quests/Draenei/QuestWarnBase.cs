@@ -49,11 +49,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits)
-      {
-        if (GetOwningPlayer(unit) == completingFaction.Player || GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE) || GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
-          unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      }
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
       _rescueUnits.Clear();
     }
   }

@@ -53,8 +53,8 @@ Stormwind is preparing for the Fel Horde invasion in the South, muster the thron
 
       //Units
       Ironforge.ModObjectLimit(FourCC("h019"), Faction.UNLIMITED); //Dwarven Worker
-      Ironforge.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
-      Ironforge.ModObjectLimit(FourCC("hdes"), Faction.UNLIMITED); //Alliance Frigate
+      Ironforge.ModObjectLimit(FourCC("hbot"), 12); //Alliance Transport Ship
+      Ironforge.ModObjectLimit(FourCC("hdes"), 12); //Alliance Frigate
       Ironforge.ModObjectLimit(FourCC("hbsh"), 6); //Alliance Battle Ship
       Ironforge.ModObjectLimit(FourCC("hrif"), Faction.UNLIMITED); //Rifleman
       Ironforge.ModObjectLimit(FourCC("hmtm"), 9); //Mortar Team

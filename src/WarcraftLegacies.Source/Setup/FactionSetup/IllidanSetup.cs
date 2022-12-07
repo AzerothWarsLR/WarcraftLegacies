@@ -49,7 +49,6 @@ The goblins will be vying for the support of Tanaris, be ready for a tough fight
       Illidan.ModObjectLimit(FourCC("nnsu"), 6); //Summoner
       Illidan.ModObjectLimit(FourCC("h08W"), 6); //Demon Hunter
       Illidan.ModObjectLimit(FourCC("nnrg"), 6); //Royal Guard
-      Illidan.ModObjectLimit(FourCC("h0AC"), 6); //Sea Witch
       Illidan.ModObjectLimit(FourCC("nhyc"), 8); //Dragon Turtle
       Illidan.ModObjectLimit(FourCC("nwgs"), 8); //Couatl
       Illidan.ModObjectLimit(FourCC("e00Y"), 4); //Scylla

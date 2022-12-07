@@ -13,9 +13,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="War3Net.Build" Version="5.5.6" />
-    <PackageReference Include="War3Net.Build.Core" Version="5.5.6" />
-    <PackageReference Include="War3Net.Common" Version="5.5.5" />
+    <PackageReference Include="War3Net.Build" Version="5.4.2" />
+    <PackageReference Include="War3Net.Build.Core" Version="5.4.3" />
+    <PackageReference Include="War3Net.Common" Version="5.4.0" />
   </ItemGroup>
 
 </Project>

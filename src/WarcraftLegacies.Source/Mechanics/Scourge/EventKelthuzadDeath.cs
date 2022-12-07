@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge
 
     public static void Setup()
     {
-      LegendScourge.LegendKelthuzad.OnLegendPermaDeath += Dies;
+      Legend.OnLegendPermaDeath += Dies;
     }
   }
 }

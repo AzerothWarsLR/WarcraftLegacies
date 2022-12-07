@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests
     protected override string RewardDescription => "The Tomb of Sargeras opens";
 
     /// <inheritdoc />
-    protected override string CompletionPopup => $"The Tomb of Sargeras has been opened by {_enterTombOfSargerasRegion.CompletingUnitName}.";
+    protected override string CompletionPopup => $"The Tomb of Sargeras has been opened by {_enterTombOfSargerasRegion.CompletingUnitName}";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)

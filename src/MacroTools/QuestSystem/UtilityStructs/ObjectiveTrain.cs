@@ -25,7 +25,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
       _trainFromId = trainFromId;
       _targetTrainCount = targetTrainCount;
       CurrentTrainCount = 0;
-      PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining, OnTrain);
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, OnTrain);
     }
 
     private int CurrentTrainCount

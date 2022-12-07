@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge
 
     public static void Setup()
     {
-      PlayerUnitEvents.Register(UnitTypeEvent.SellsUnit, OnSell, AcolyteId);
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeSellsUnit, OnSell, AcolyteId);
     }
   }
 }

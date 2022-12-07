@@ -1,7 +1,7 @@
 using MacroTools;
-using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
@@ -13,12 +13,10 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge
   /// </summary>
   public static class HelmOfDominationDropsWhenScourgeLeaves
   {
-    private static Artifact _helmOfDomination;
-
     /// <summary>
     /// Sets up <see cref="HelmOfDominationDropsWhenScourgeLeaves"/>.
     /// </summary>
-    public static void Setup(Artifact helmOfDomination)
+    public static void Setup()
     {
       if (LegendScourge.LegendLichking == null)
         throw new SystemNotInitializedException(nameof(LegendScourge));
@@ -26,7 +24,6 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge
         throw new SystemNotInitializedException(nameof(ScourgeSetup));
       LegendScourge.LegendLichking.PermanentlyDied += OnLichKingDeath;
       ScourgeSetup.Scourge.LeftGame += OnScourgeLeaveGame;
-      _helmOfDomination = helmOfDomination;
     }
 
     private static void OnLichKingDeath(object? sender, Legend legend)
@@ -51,12 +48,13 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge
     
     private static void CheckHelmOfDomination()
     {
-      if (LegendScourge.LegendLichking?.Unit == null)
+      if (ArtifactSetup.ArtifactHelmofdomination == null
+          || LegendScourge.LegendLichking?.Unit == null)
         return;
 
       var lichKingPosition = LegendScourge.LegendLichking.Unit.GetPosition();
       LegendScourge.LegendLichking.Unit.DropAllItems();
-      _helmOfDomination.Item.SetPosition(new Point(lichKingPosition.X - 55,
+      ArtifactSetup.ArtifactHelmofdomination.Item.SetPosition(new Point(lichKingPosition.X - 55,
         lichKingPosition.Y + 30));
     }
   }

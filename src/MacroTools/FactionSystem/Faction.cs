@@ -4,6 +4,7 @@ using MacroTools.Augments;
 using MacroTools.Extensions;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.Wrappers;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -28,12 +29,12 @@ namespace MacroTools.FactionSystem
     /// <summary>
     ///   How much gold and lumber is refunded from units that get refunded when a player leaves.
     /// </summary>
-    private const float RefundMultiplier = 1;
+    private const float RefundPercent = 100;
 
     /// <summary>
     ///   How much experience is transferred from heroes that leave the game.
     /// </summary>
-    private const float ExperienceTransferMultiplier = 1;
+    private const float XpTransferPercent = 100;
 
     /// <summary>
     ///   The amount of food <see cref="Faction" />s can have by default.
@@ -72,7 +73,7 @@ namespace MacroTools.FactionSystem
 
     static Faction()
     {
-      PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
+      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, () =>
       {
         var faction = FactionManager.GetFromPlayer(GetTriggerPlayer());
         faction?.SetObjectLevel(GetResearched(), GetPlayerTechCount(GetTriggerPlayer(), GetResearched(), false));
@@ -278,12 +279,12 @@ namespace MacroTools.FactionSystem
     /// <summary>
     /// Fired when the <see cref="Faction"/>'s has changed.
     /// </summary>
-    public event EventHandler<Faction>? IconChanged;
+    public static event EventHandler<Faction>? IconChanged;
     
     /// <summary>
     /// Fired after the <see cref="Faction"/>'s status has changed.
     /// </summary>
-    public event EventHandler<Faction>? StatusChanged;
+    public static event EventHandler<Faction>? StatusChanged;
 
     /// <summary>
     ///   Returns all unit types which this <see cref="Faction" /> can only train a limited number of.
@@ -501,7 +502,7 @@ namespace MacroTools.FactionSystem
       SetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER, 0);
 
       //Give all units to Neutral Victim
-      foreach (var unit in CreateGroup().EnumUnitsOfPlayer(Player).EmptyToList())
+      foreach (var unit in new GroupWrapper().EnumUnitsOfPlayer(Player).EmptyToList())
       {
         var tempUnitType = UnitType.GetFromHandle(unit);
         if (!UnitAlive(unit))
@@ -525,10 +526,10 @@ namespace MacroTools.FactionSystem
       if (Player?.GetTeam() == null) return;
       foreach (var ally in playersToDistributeTo)
       {
-        var allyHeroes = CreateGroup().EnumUnitsOfPlayer(ally).EmptyToList()
+        var allyHeroes = new GroupWrapper().EnumUnitsOfPlayer(ally).EmptyToList()
           .FindAll(unit => IsUnitType(unit, UNIT_TYPE_HERO));
         foreach (var hero in allyHeroes)
-          AddHeroXP(hero, R2I(_xp / (Player.GetTeam().Size - 1) / allyHeroes.Count * ExperienceTransferMultiplier), true);
+          AddHeroXP(hero, R2I(_xp / (Player.GetTeam().Size - 1) / allyHeroes.Count * XpTransferPercent), true);
       }
 
       _xp = 0;
@@ -549,7 +550,7 @@ namespace MacroTools.FactionSystem
     private void DistributeUnits(IReadOnlyList<player> playersToDistributeTo)
     {
       if (Player?.GetTeam() == null) return;
-      var playerUnits = CreateGroup().EnumUnitsOfPlayer(Player).EmptyToList();
+      var playerUnits = new GroupWrapper().EnumUnitsOfPlayer(Player).EmptyToList();
 
       foreach (var unit in playerUnits)
       {
@@ -568,8 +569,8 @@ namespace MacroTools.FactionSystem
         }
         else if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
         {
-          Gold += loopUnitType.GoldCost * RefundMultiplier;
-          Lumber += loopUnitType.LumberCost * RefundMultiplier;
+          Gold += loopUnitType.GoldCost * RefundPercent;
+          Lumber += loopUnitType.LumberCost * RefundPercent;
           unit.DropAllItems();
           RemoveUnit(unit);
         }
@@ -594,13 +595,13 @@ namespace MacroTools.FactionSystem
       {
         var eligiblePlayers = Player.GetTeam()?.GetAllPlayers();
         eligiblePlayers?.Remove(Player);
+        RemoveGoldMines();
         DistributeUnits(eligiblePlayers);
         DistributeResources(eligiblePlayers);
         DistributeExperience(eligiblePlayers);
       }
       else
       {
-        RemoveGoldMines();
         Obliterate();
       }
 

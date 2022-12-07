@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       var stormwind = StormwindSetup.Stormwind;
-      var newQuest =
+      QuestData newQuest =
         stormwind.AddQuest(new QuestDarkshire(preplacedUnitSystem.GetUnit(FourCC("ngnv"), Regions.DarkshireUnlock.Center)));
       stormwind.StartingQuest = newQuest;
       stormwind.AddQuest(new QuestLakeshire(Regions.LakeshireUnlock,

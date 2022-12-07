@@ -2,7 +2,6 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Stormwind
@@ -24,7 +23,6 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     {
       _constructionSites = constructionSites;
       ResearchId = Constants.UPGRADE_R022_QUEST_COMPLETED_INEVITABLE_PROGRESS_STORMWIND;
-      AddObjective(new ObjectiveTime(360));
     }
 
     /// <inheritdoc />

@@ -62,7 +62,7 @@ namespace MacroTools.Cheats
 
       TriggerAddAction(trig, Actions);
 
-      PlayerUnitEvents.Register(UnitTypeEvent.ReceivesOrder, Build);
+      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeReceivesOrder, Build);
     }
   }
 }

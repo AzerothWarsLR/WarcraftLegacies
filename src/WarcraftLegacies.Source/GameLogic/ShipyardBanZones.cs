@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.GameLogic
       {
         if (unitType.Category == UnitCategory.Shipyard)
         {
-          PlayerUnitEvents.Register(UnitTypeEvent.FinishesConstruction, () =>
+          PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesConstruction, () =>
           {
             var constructedStructure = GetConstructedStructure();
             foreach (var banZone in banZones)

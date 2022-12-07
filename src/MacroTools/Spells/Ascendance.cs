@@ -2,6 +2,7 @@
 using MacroTools.Buffs;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
+using MacroTools.Wrappers;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -27,7 +28,7 @@ namespace MacroTools.Spells
 
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      foreach (var unit in CreateGroup()
+      foreach (var unit in new GroupWrapper()
                  .EnumUnitsInRange(caster.GetPosition(), Radius)
                  .EmptyToList()
                )
