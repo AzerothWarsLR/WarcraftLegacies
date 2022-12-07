@@ -1,5 +1,4 @@
 using MacroTools.FactionSystem;
-using MacroTools.Libraries;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
@@ -32,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.ModObjectLimit(UnittypeId, LIMIT_CHANGE);
-      Display.DisplayUnitLimit(completingFaction, UnittypeId);
+      completingFaction.DisplayUnitLimit(UnittypeId);
     }
   }
 }

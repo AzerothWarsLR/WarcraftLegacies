@@ -21,10 +21,9 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       AddObjective(new ObjectiveSelfExists());
       _unitsToKill = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("o051"), Regions.DraeneiEvacuation.Center),
-        preplacedUnitSystem.GetUnit(FourCC("o055"), Regions.DraeneiEvacuation.Center),
-        preplacedUnitSystem.GetUnit(FourCC("o054"), Regions.DraeneiEvacuation.Center),
-        preplacedUnitSystem.GetUnit(FourCC("n0BU"), Regions.DraeneiEvacuation.Center)
+        preplacedUnitSystem.GetUnit(Constants.UNIT_O051_DIVINE_CITADEL_DRAENEI, Regions.DraeneiEvacuation.Center),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_O055_CRYSTAL_SPIRE_DRAENEI, Regions.DraeneiEvacuation.Center),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_O054_ASTRAL_SANCTUM_DRAENEI, Regions.DraeneiEvacuation.Center),
       };
     }
 

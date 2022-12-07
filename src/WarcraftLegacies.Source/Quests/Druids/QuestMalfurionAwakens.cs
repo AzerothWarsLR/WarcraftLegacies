@@ -1,9 +1,9 @@
 using System.Collections.Generic;
+using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -16,6 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
   public sealed class QuestMalfurionAwakens : QuestData
   {
     private readonly unit _worldTree;
+    private readonly Artifact _hornofCenarius;
     private readonly List<unit> _moongladeUnits;
 
     /// <summary>
@@ -23,13 +24,15 @@ namespace WarcraftLegacies.Source.Quests.Druids
     /// </summary>
     /// <param name="moonglade">All units here start invulnerable and are rescued when the quest is completed.</param>
     /// <param name="worldTree">Starts invulnerable and is recued when the quest is completed.</param>
-    public QuestMalfurionAwakens(Rectangle moonglade, unit worldTree) : base("Awakening of Stormrage",
+    /// <param name="hornofCenarius">Required to complete the quest.</param>
+    public QuestMalfurionAwakens(Rectangle moonglade, unit worldTree, Artifact hornofCenarius) : base("Awakening of Stormrage",
       "Ever since the War of the Ancients ten thousand years ago, Malfurion Stormrage and his druids have slumbered within the Barrow Den. Now, their help is required once again.",
       "ReplaceableTextures\\CommandButtons\\BTNFurion.blp")
     {
       _worldTree = worldTree;
-      AddObjective(new ObjectiveAcquireArtifact(ArtifactSetup.ArtifactHornofcenarius));
-      AddObjective(new ObjectiveArtifactInRect(ArtifactSetup.ArtifactHornofcenarius, Regions.Moonglade,
+      _hornofCenarius = hornofCenarius;
+      AddObjective(new ObjectiveAcquireArtifact(hornofCenarius));
+      AddObjective(new ObjectiveArtifactInRect(hornofCenarius, Regions.Moonglade,
         "The Barrow Den"));
       AddObjective(new ObjectiveExpire(1440));
       AddObjective(new ObjectiveSelfExists());
@@ -61,11 +64,11 @@ namespace WarcraftLegacies.Source.Quests.Druids
         LegendDruids.LegendMalfurion.ForceCreate(completingFaction.Player, Regions.Moonglade.Center,
           270);
         SetHeroLevel(LegendDruids.LegendMalfurion.Unit, 3, false);
-        LegendDruids.LegendMalfurion.Unit?.AddItemSafe(ArtifactSetup.ArtifactGhanir.Item);
+        LegendDruids.LegendMalfurion.Unit?.AddItemSafe(_hornofCenarius.Item);
       }
       else
       {
-        ArtifactSetup.ArtifactGhanir?.Item.SetPositionSafe(GetTriggerUnit().GetPosition());
+        _hornofCenarius.Item.SetPositionSafe(GetTriggerUnit().GetPosition());
       }
     }
   }

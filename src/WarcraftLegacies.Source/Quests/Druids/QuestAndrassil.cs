@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
 
 
     protected override string CompletionPopup =>
-      "With Northrend finally free of the Lich KingFourCC(s influence, the time is ripe to regrow Andrassil in the hope that it can help reclaim this barren land.";
+      "With Northrend finally free of the Lich King's influence, the time is ripe to regrow Andrassil in the hope that it can help reclaim this barren land.";
 
     protected override string RewardDescription =>
       "A new capital at Grizzly Hills that can research a powerful upgrade for your Druids of the Claw, and you can train the hero Ursoc from the Altar of Elders";

@@ -39,7 +39,7 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public Legend()
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, () =>
+      PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining, () =>
       {
         var trainedUnit = GetTrainedUnit();
         if (UnitType != GetUnitTypeId(trainedUnit)) return;
@@ -250,12 +250,12 @@ namespace MacroTools.FactionSystem
     /// <summary>
     /// Fired when the <see cref="Legend"/> permanently dies, after it is removed from the game.
     /// </summary>
-    public static event EventHandler<Legend>? OnLegendPermaDeath;
+    public event EventHandler<Legend>? OnLegendPermaDeath;
 
     /// <summary>
     /// Fired when the <see cref="Legend"/> dies, even if not permanently.
     /// </summary>
-    public static event EventHandler<Legend>? OnLegendDeath;
+    public event EventHandler<Legend>? OnLegendDeath;
 
     private void OnProtectorDeath(object? sender, Protector protector)
     {

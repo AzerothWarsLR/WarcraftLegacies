@@ -1,5 +1,4 @@
 using MacroTools;
-using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -28,7 +27,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage = "The grand city of the high elves, Silvermoon, has been crushed by her enemies."
       };
       Legend.Register(LegendSilvermoon);
-      LegendSilvermoon.Unit.SetInvulnerable(true);
+      LegendSilvermoon.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS, new Point(20479, 17477)));
+      LegendSilvermoon.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS, new Point(17415, 13196)));
 
       LegendSunwell = new Legend
       {

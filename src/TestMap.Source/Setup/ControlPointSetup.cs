@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
+using MacroTools.Extensions;
 using MacroTools.Wrappers;
 using static War3Api.Common;
 
@@ -25,7 +26,7 @@ namespace TestMap.Source.Setup
     public static void Setup()
     {
       var playableMapArea = WCSharp.Shared.Data.Rectangle.WorldBounds;
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(playableMapArea).EmptyToList())
+      foreach (var unit in CreateGroup().EnumUnitsInRect(playableMapArea).EmptyToList())
         InitializeControlPoint(unit);
     }
   }

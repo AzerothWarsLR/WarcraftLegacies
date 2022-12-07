@@ -4,7 +4,7 @@ using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using System.Collections.Generic;
 using MacroTools;
-using WarcraftLegacies.Source.Setup;
+using MacroTools.ArtifactSystem;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -20,11 +20,13 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     /// Initializes a new instance of the <see cref="QuestScepterOfTheQueenWarsong"/> class.
     /// </summary>
     /// <param name="area">Units in this area will be made invulnerable, then made hostile when the quest is completed.</param>
-    public QuestScepterOfTheQueenWarsong(Rectangle area) : base("Royal Plunder",
+    /// <param name="scepterOfTheQueen">Reward for completing the quest.</param>
+    public QuestScepterOfTheQueenWarsong(Rectangle area, Artifact scepterOfTheQueen) : base("Royal Plunder",
       "Remnants of the ancient Highborne survive within the ruins of Dire Maul. If Feathermoon Stronghold falls, it would become a simple matter to slaughter the Highborne and plunder their artifacts.",
       "ReplaceableTextures\\CommandButtons\\BTNNagaWeaponUp2.blp")
     {
       _highBourneArea = area;
+      _scepterOfTheQueen = scepterOfTheQueen;
       _highBourneAreaUnits = _highBourneArea.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendWarsong.StonemaulKeep ?? throw new SystemNotInitializedException(nameof(LegendWarsong))));
       AddObjective(new ObjectiveLegendDead(LegendSentinels.Feathermoon));
@@ -33,6 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
     private readonly List<unit> _highBourneAreaUnits;
     private readonly Rectangle _highBourneArea;
+    private readonly Artifact _scepterOfTheQueen;
 
     /// <inheritdoc/>
     protected override string CompletionPopup =>
@@ -45,7 +48,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      ArtifactSetup.ArtifactScepterofthequeen?.Item.SetPosition(_highBourneArea.Center);
+      _scepterOfTheQueen.Item.SetPosition(_highBourneArea.Center);
       Player(GetPlayerNeutralAggressive()).RescueGroup(_highBourneAreaUnits);
     }
   }

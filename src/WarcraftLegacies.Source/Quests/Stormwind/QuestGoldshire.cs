@@ -4,7 +4,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -22,12 +21,13 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00Z"))));
       AddObjective(new ObjectiveExpire(1335));
       AddObjective(new ObjectiveSelfExists());
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
+      Required = true;
     }
 
     protected override string CompletionPopup => "The Gnolls have been defeated, Goldshire is safe.";

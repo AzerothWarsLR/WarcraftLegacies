@@ -1,6 +1,5 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.SpellSystem;
-using MacroTools.Wrappers;
 using WCSharp.Effects;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -73,9 +72,9 @@ namespace MacroTools.Spells
     {
       EffectSystem.Add(AddSpecialEffect(SpecialEffect, GetUnitX(caster), GetUnitY(caster)));
       
-      var tempGroup = new GroupWrapper();
-      tempGroup.EnumUnitsInRange(new Point(GetUnitX(caster), GetUnitY(caster)), Radius);
-      foreach (var enumUnit in tempGroup.EmptyToList())
+      foreach (var enumUnit in CreateGroup()
+                 .EnumUnitsInRange(new Point(GetUnitX(caster), GetUnitY(caster)), Radius)
+                 .EmptyToList())
       {
         if (!CastFilters.IsTargetEnemyAndAlive(caster, enumUnit)) continue;
         DamageUnit(caster, enumUnit);

@@ -1,4 +1,4 @@
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
@@ -18,6 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       AddObjective(new ObjectiveTrain(FourCC("nzep"), FourCC("o04M"), 16));
       AddObjective(new ObjectiveTrain(FourCC("o04S"), FourCC("o04M"), 10));
       ResearchId = QuestResearchId;
+      Required = true;
     }
 
     protected override string RewardDescription => "The shipyard will be buildable";
@@ -26,11 +27,11 @@ namespace WarcraftLegacies.Source.Quests.Goblin
 
     private static void GrantGadetzan(player whichPlayer)
     {
-      group tempGroup = CreateGroup();
+      var tempGroup = CreateGroup();
 
       //Transfer all Neutral Passive units in Gadetzan
       GroupEnumUnitsInRect(tempGroup, Regions.GadgetUnlock.Rect, null);
-      unit u = FirstOfGroup(tempGroup);
+      var u = FirstOfGroup(tempGroup);
       while (true)
       {
         if (u == null) break;

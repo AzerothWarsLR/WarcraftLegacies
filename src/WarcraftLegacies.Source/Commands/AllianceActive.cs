@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Commands
 
     public static void Setup()
     {
-      trigger trig = CreateTrigger();
+      var trig = CreateTrigger();
       TriggerRegisterTimerEvent(trig, 8000, false);
       TriggerAddAction(trig, Actions);
     }

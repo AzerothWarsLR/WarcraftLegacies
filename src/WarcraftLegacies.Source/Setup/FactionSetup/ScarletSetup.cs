@@ -51,8 +51,8 @@ Fortify your strongholds against the storm to come and make ready to unleash the
 
       //Units
       ScarletCrusade.ModObjectLimit(FourCC("hpea"), Faction.UNLIMITED); //Peasant
-      ScarletCrusade.ModObjectLimit(FourCC("hbot"), 12); //Alliance Transport Ship
-      ScarletCrusade.ModObjectLimit(FourCC("hdes"), 12); //Alliance Frigate
+      ScarletCrusade.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
+      ScarletCrusade.ModObjectLimit(FourCC("hdes"), Faction.UNLIMITED); //Alliance Frigate
       ScarletCrusade.ModObjectLimit(FourCC("hbsh"), 6); //Alliance Battle Ship
       ScarletCrusade.ModObjectLimit(FourCC("h08I"), Faction.UNLIMITED); //Crusader
       ScarletCrusade.ModObjectLimit(FourCC("h08M"), Faction.UNLIMITED); //Men-at-arms

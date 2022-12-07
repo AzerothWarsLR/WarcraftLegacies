@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
   /// </summary>
   public sealed class QuestStratholme : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestStratholme"/> class.
@@ -46,15 +46,14 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     protected override void OnFail(Faction completingFaction)
     {
       Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
-      LegendLordaeron.Arthas.AddUnitDependency(LegendLordaeron.Stratholme.Unit);
+      LegendLordaeron.Arthas?.AddUnitDependency(LegendLordaeron.Stratholme.Unit);
     }
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      if (completingFaction.Player != null)
-        completingFaction.Player.RescueGroup(_rescueUnits);
-      LegendLordaeron.Arthas.AddUnitDependency(LegendLordaeron.Stratholme.Unit);
+      completingFaction.Player?.RescueGroup(_rescueUnits);
+      LegendLordaeron.Arthas?.AddUnitDependency(LegendLordaeron.Stratholme.Unit);
     }
   }
 }

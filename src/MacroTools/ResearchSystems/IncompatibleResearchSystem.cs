@@ -24,7 +24,7 @@ namespace MacroTools.ResearchSystems
     {
       foreach (var outerResearch in researches)
       {
-        PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsStarted, () =>
+        PlayerUnitEvents.Register(ResearchEvent.IsStarted, () =>
         {
           foreach (var innerResearch in researches)
           {
@@ -35,7 +35,7 @@ namespace MacroTools.ResearchSystems
           }
         }, outerResearch);
         
-        PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsCancelled, () =>
+        PlayerUnitEvents.Register(ResearchEvent.IsCancelled, () =>
         {
           foreach (var innerResearch in researches)
           {

@@ -89,8 +89,8 @@ namespace TestMap.Source.Setup
         var warglaivesOfAzzinoth = new WarglaivesOfAzzinoth(FourCC("Edem"), FourCC("AEev"))
         {
           Radius = 150,
-          DamageBase = 4,
-          DamageLevel = 14,
+          DamageBase = 5,
+          DamageLevel = 15,
           DamageMultiplierAgainstDemons = 50f,
           Effect = @"Abilities\Spells\Human\Invisibility\InvisibilityTarget.mdl",
           EffectScale = 2,
