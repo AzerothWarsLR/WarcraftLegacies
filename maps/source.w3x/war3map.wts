@@ -14561,6 +14561,11 @@ STRING 2427
 Corrupted life spring replenishing the soldiers of the Fel Horde.|n|cfff5962dAbilities:|R Life Regeneration Aura|n|n|cff99b4d1Can only build 1.|r
 }
 
+STRING 2428
+{
+Scourge, Cult, Observer
+}
+
 STRING 2429
 // Units: n04A (Mangrove Ent), EditorSuffix (Name - Editor Suffix)
 {
@@ -15221,6 +15226,11 @@ STRING 2538
 Dragonblight (20gold/min)
 }
 
+STRING 2539
+{
+Lordaeron, Quelthalas, Dalaran
+}
+
 STRING 2540
 // Units: n02O (Netherstorm (10gold/min)), Name (Name)
 {
@@ -15369,6 +15379,11 @@ STRING 2564
 // Units: h04O (Bomber), Ubertip (Tooltip - Extended)
 {
 Kul'tiras weapon of war designed to scout enemy bases and provide aerial support to ground forces.|n|cfff5962dAbilities:|R True Sight|n|cfff5962dCan learn:|R Cluster Rockets|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land units.|r
+}
+
+STRING 2565
+{
+Frostwolf, Warsong, Zandalar
 }
 
 STRING 2566
@@ -15687,6 +15702,21 @@ STRING 2618
 // Units: n00Q (Twisting Nether (50gold/min)), Name (Name)
 {
 Twisting Nether (50gold/min)
+}
+
+STRING 2619
+{
+Ironforge, Stormwind, Kultiras
+}
+
+STRING 2620
+{
+Druids, Draenei, Sentinels
+}
+
+STRING 2621
+{
+Fel Horde, Legion
 }
 
 STRING 2622
@@ -16761,11 +16791,6 @@ STRING 2801
 // Abilities: A0DG (Mass Simulacrum), Researchubertip (Tooltip - Learn - Extended)
 {
 Creates a summoned copy of all friendly units in the target area. Lasts 30 seconds.|n|n|cffffcc00Level 1|r - Each summoned unit has 30% reduced hit points and attack damage. |n|cffffcc00Level 2|r - Each summoned unit has 10% reduced hit points and attack damage. |n|cffffcc00Level 3|r - Each summoned unit has 10% increased hit points and attack damage.  |n|cffffcc00Level 4|r - Each summoned unit has 30% increased hit points and attack damage.
-}
-
-STRING 2802
-{
-Frostwolf, Warsong, Goblin,Troll
 }
 
 STRING 2803
@@ -23054,11 +23079,6 @@ STRING 3852
 // Units: U00L (Envoy of Archimonde), Tip (Tooltip - Basic)
 {
 Summon Anetheron
-}
-
-STRING 3853
-{
-Dwarf, Storm, Gilneas, Kul'tiras
 }
 
 STRING 3854
@@ -36562,11 +36582,6 @@ STRING 6106
 // Abilities: AEst (Scout), Ubertip (Tooltip - Normal - Extended)
 {
 Summons an Owl Scout, which can be used to scout.|nCan see invisible units. |nLasts 40 seconds.
-}
-
-STRING 6107
-{
-Gilneas
 }
 
 STRING 6108
@@ -88055,11 +88070,6 @@ STRING 14688
 Z
 }
 
-STRING 14689
-{
-Illidari
-}
-
 STRING 14690
 // Upgrades: Rhfl (Flare), Hotkey (Hotkey)
 {
@@ -96035,11 +96045,6 @@ STRING 16029
 (Dragonmaw)
 }
 
-STRING 16030
-{
-Bilgewater Cartel
-}
-
 STRING 16031
 // Units: h081 (Barracks), EditorSuffix (Name - Editor Suffix)
 {
@@ -96903,11 +96908,6 @@ Persistent Soul - [|cffffcc00Level 2|r]
 STRING 16174
 {
 Warsong
-}
-
-STRING 16175
-{
-Scarlet Crusade
 }
 
 STRING 16176
@@ -98575,11 +98575,6 @@ STRING 16453
 // Units: n08T (Dragonmaw Port (10gold/min)), Name (Name)
 {
 Dragonmaw Port (10gold/min)
-}
-
-STRING 16454
-{
-Scourge, Fel, Forsaken, Legion
 }
 
 STRING 16455
@@ -109702,11 +109697,6 @@ STRING 18307
 Agile, deadly and skilled Rangers of the Forsaken.|n|cfff5962dAbilities:|R Knife Throw, Blink, Dark Arrow|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
 }
 
-STRING 18308
-{
-Lord, Quel, Dala, Scarlet
-}
-
 STRING 18309
 // Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
@@ -114972,11 +114962,6 @@ STRING 19187
 D
 }
 
-STRING 19189
-{
-Dragonmaw
-}
-
 STRING 19190
 // Abilities: A0A9 (Build Defias Guild), Name (Name)
 {
@@ -115401,11 +115386,6 @@ STRING 19262
 // Abilities: A02C (Summon Fire Elemental), Tip (Tooltip - Normal)
 {
 Summon Fire Elemental
-}
-
-STRING 19263
-{
-Druids, Illidan, Sentinels
 }
 
 STRING 19264
@@ -116385,11 +116365,6 @@ STRING 19428
 // Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
-}
-
-STRING 19429
-{
-Draenei, Dragonmaw, Obs
 }
 
 STRING 19430
