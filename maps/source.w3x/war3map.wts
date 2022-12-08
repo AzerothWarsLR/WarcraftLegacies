@@ -11232,6 +11232,12 @@ STRING 1872
 Occulus
 }
 
+STRING 1873
+// Doodads: D05Q (Blackrock Volcano), Name (Name)
+{
+Blackrock Volcano
+}
+
 STRING 1874
 // Units: n0A9 (Blasted Lands (10gold/min)), Name (Name)
 {
@@ -13630,6 +13636,12 @@ STRING 2273
 (Alchemist)
 }
 
+STRING 2274
+// Units: n0CC (Shadowforge Titan), Tip (Tooltip - Basic)
+{
+Train Shadowforge Titan
+}
+
 STRING 2275
 // Units: n05Y (Broken Isles (20gold/min)), Name (Name)
 {
@@ -14162,6 +14174,12 @@ STRING 2363
 // Units: n054 (Shadowforge Exterior (15gold/min)), Name (Name)
 {
 Shadowforge Exterior (15gold/min)
+}
+
+STRING 2364
+// Units: n0CC (Shadowforge Titan), Name (Name)
+{
+Shadowforge Titan
 }
 
 STRING 2365
@@ -19617,12 +19635,6 @@ STRING 3280
 Build [|cffffcc00W|r] - Farm
 }
 
-STRING 3281
-// Units: n0CC (Shadowforge Gatebreaker), Tip (Tooltip - Basic)
-{
-Train Shadowforge Gatebreaker
-}
-
 STRING 3282
 // Units: H00Z (Crown Prince of Stromgarde), EditorSuffix (Name - Editor Suffix)
 {
@@ -20710,7 +20722,7 @@ Skilled craftsman and designer of dwarven wonders.|n|cfff5962dAbilities:|r Repai
 }
 
 STRING 3463
-// Units: n0CC (Shadowforge Gatebreaker), EditorSuffix (Name - Editor Suffix)
+// Units: n0CC (Shadowforge Titan), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -21212,12 +21224,6 @@ STRING 3546
 // Units: h0AB (Shadowcaster), Ubertip (Tooltip - Extended)
 {
 Dark Iron practitioner of shadow magic.|n|cfff5962dAbilities:|R Shadow Mend, Dispel Magic, Summon Shadowspawn|n|n|cffffcc00Attacks land and air units.|R
-}
-
-STRING 3547
-// Units: n0CC (Shadowforge Gatebreaker), Name (Name)
-{
-Shadowforge Gatebreaker
 }
 
 STRING 3548
@@ -30306,7 +30312,7 @@ Frenzy (|cffffcc00Q|r)
 }
 
 STRING 5062
-// Units: n0CC (Shadowforge Gatebreaker), Hotkey (Hotkey)
+// Units: n0CC (Shadowforge Titan), Hotkey (Hotkey)
 {
 Q
 }
@@ -89315,7 +89321,7 @@ Research Bloodfury
 }
 
 STRING 14901
-// Units: n0CC (Shadowforge Gatebreaker), Ubertip (Tooltip - Extended)
+// Units: n0CC (Shadowforge Titan), Ubertip (Tooltip - Extended)
 {
 Heavy magic-resistant melee unit.|n|cfff5962dAbilities:|R Spell Resistance, Resistant Skin|n|n|cff99b4d1Can only build 4.|r|n|cffffcc00Attacks land units.|r
 }
