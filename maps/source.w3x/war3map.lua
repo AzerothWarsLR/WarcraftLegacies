@@ -2487,18 +2487,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("o02I"), -2060.2, -8264.6, 176.501, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("o02I"), -2230.6, -8217.9, 23.797, FourCC("o02I"))
 end
 
-function CreateUnitsForPlayer9()
-local p = Player(9)
-local u
-local unitID
-local t
-local life
-
-u = BlzCreateUnitWithSkin(p, FourCC("u01U"), 6994.2, 7411.4, 297.630, FourCC("u01U"))
-u = BlzCreateUnitWithSkin(p, FourCC("u01U"), 7923.7, 11774.3, 297.630, FourCC("u01U"))
-u = BlzCreateUnitWithSkin(p, FourCC("u01U"), 16889.9, 8300.4, 229.403, FourCC("u01U"))
-end
-
 function CreateBuildingsForPlayer10()
 local p = Player(10)
 local u
@@ -3474,7 +3462,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("n07Q"), 1088.0, -21952.0, 270.000, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("ncnt"), -20000.0, -4448.0, 270.000, FourCC("ncnt"))
 u = BlzCreateUnitWithSkin(p, FourCC("h006"), 13312.0, 3840.0, 270.000, FourCC("h006"))
 u = BlzCreateUnitWithSkin(p, FourCC("n02M"), 16960.0, -9216.0, 270.000, FourCC("n02M"))
-u = BlzCreateUnitWithSkin(p, FourCC("n012"), 14848.0, -11200.0, 270.000, FourCC("n012"))
+u = BlzCreateUnitWithSkin(p, FourCC("n012"), 15040.0, -11328.0, 270.000, FourCC("n012"))
 u = BlzCreateUnitWithSkin(p, FourCC("n01I"), 14976.0, 7296.0, 270.000, FourCC("n01I"))
 u = BlzCreateUnitWithSkin(p, FourCC("n00Y"), 14016.0, -17600.0, 270.000, FourCC("n00Y"))
 u = BlzCreateUnitWithSkin(p, FourCC("n017"), 15104.0, -896.0, 270.000, FourCC("n017"))
@@ -3586,8 +3574,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("n05J"), 17408.0, -17920.0, 270.000, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("n05J"), 3712.0, -26048.0, 270.000, FourCC("n05J"))
 u = BlzCreateUnitWithSkin(p, FourCC("n084"), 8960.0, -1152.0, 270.000, FourCC("n084"))
 u = BlzCreateUnitWithSkin(p, FourCC("n08D"), -5056.0, 22976.0, 270.000, FourCC("n08D"))
-u = BlzCreateUnitWithSkin(p, FourCC("h03V"), 17376.0, -11232.0, 270.000, FourCC("h03V"))
-SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("o00M"), 5632.0, 20160.0, 270.000, FourCC("o00M"))
 u = BlzCreateUnitWithSkin(p, FourCC("o00M"), 6400.0, 21632.0, 270.000, FourCC("o00M"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0BP"), 22784.0, -17536.0, 270.000, FourCC("n0BP"))
@@ -4311,7 +4297,7 @@ TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
 TriggerAddAction(t, Unit002664_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("nwlt"), -16986.2, 5419.3, 100.000, FourCC("nwlt"))
 SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("N00D"), 12919.0, -10729.4, 252.758, FourCC("N00D"))
+u = BlzCreateUnitWithSkin(p, FourCC("N00D"), 12364.3, -10655.2, -39.250, FourCC("N00D"))
 SetHeroLevel(u, 12, false)
 SetHeroStr(u, 75, true)
 SetHeroAgi(u, 15, true)
@@ -7585,7 +7571,6 @@ CreateUnitsForPlayer5()
 CreateUnitsForPlayer6()
 CreateUnitsForPlayer7()
 CreateUnitsForPlayer8()
-CreateUnitsForPlayer9()
 CreateUnitsForPlayer10()
 CreateUnitsForPlayer11()
 CreateUnitsForPlayer12()
@@ -34830,7 +34815,7 @@ DefineStartLocation(5, -10112.0, 1856.0)
 DefineStartLocation(6, 5376.0, -31104.0)
 DefineStartLocation(7, 9792.0, 2816.0)
 DefineStartLocation(8, -2112.0, -8192.0)
-DefineStartLocation(9, 14848.0, 7296.0)
+DefineStartLocation(9, 128.0, 18496.0)
 DefineStartLocation(10, 7040.0, -16640.0)
 DefineStartLocation(11, -11264.0, 6720.0)
 DefineStartLocation(12, 12416.0, 11072.0)
