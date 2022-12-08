@@ -15743,6 +15743,12 @@ STRING 2625
 Tomb of Sargeras (20gold/min)
 }
 
+STRING 2626
+// Units: n0BL (Azuremyst Isle (25gold/min)), Name (Name)
+{
+Azuremyst Isle (25gold/min)
+}
+
 STRING 2627
 // Units: n00H (Zul'Drak (20gold/min)), Name (Name)
 {
@@ -16791,6 +16797,12 @@ STRING 2801
 // Abilities: A0DG (Mass Simulacrum), Researchubertip (Tooltip - Learn - Extended)
 {
 Creates a summoned copy of all friendly units in the target area. Lasts 30 seconds.|n|n|cffffcc00Level 1|r - Each summoned unit has 30% reduced hit points and attack damage. |n|cffffcc00Level 2|r - Each summoned unit has 10% reduced hit points and attack damage. |n|cffffcc00Level 3|r - Each summoned unit has 10% increased hit points and attack damage.  |n|cffffcc00Level 4|r - Each summoned unit has 30% increased hit points and attack damage.
+}
+
+STRING 2802
+// Units: n00N (The Exodar (30gold/min)), Name (Name)
+{
+The Exodar (30gold/min)
 }
 
 STRING 2803
@@ -107588,12 +107600,6 @@ STRING 17956
 // Items: I011 (Crown of the Triumvirate), Description (Description)
 {
 Increases Strength, Agility and Intelligence and can cast Crown Heal.
-}
-
-STRING 17957
-// Units: n0BL (The Exodar (25gold/min)), Name (Name)
-{
-The Exodar (25gold/min)
 }
 
 STRING 17958
