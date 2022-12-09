@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp")
     {
       AddObjective(new ObjectiveAnyUnitInRect(Regions.QuelDanil_Lodge, "Quel'danil Lodge", true));
-      AddObjective(new ObjectiveLegendDead(LegendForsaken.Scholomance));
+      AddObjective(new ObjectiveLegendDead(LegendNeutral.Caerdarrow));
       ResearchId = FourCC("R074");
 
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())

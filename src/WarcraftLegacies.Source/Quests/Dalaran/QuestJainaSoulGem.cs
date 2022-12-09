@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       "ReplaceableTextures\\CommandButtons\\BTNSoulGem.blp")
     {
       AddObjective(new ObjectiveLegendInRect(LegendDalaran.LegendJaina, Regions.Jaina_soul_gem, "Scholomance"));
-      AddObjective(new ObjectiveLegendDead(LegendForsaken.Scholomance));
+      AddObjective(new ObjectiveLegendDead(LegendNeutral.Caerdarrow));
     }
     
     /// <inheritdoc />
