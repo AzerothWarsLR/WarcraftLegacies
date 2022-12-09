@@ -5,6 +5,8 @@ namespace WarcraftLegacies.Source.Setup
   public static class TeamSetup{
     public static Team Legion { get; private set; }
     public static Team Alliance { get; private set; }
+    public static Team NorthAlliance { get; private set; }
+    public static Team SouthAlliance { get; private set; }
     public static Team Horde { get; private set; }
     public static Team NightElves { get; private set; }
     public static Team Illidari { get; private set; }
@@ -22,7 +24,19 @@ namespace WarcraftLegacies.Source.Setup
         VictoryMusic = "HeroicVictory"
       };
       FactionManager.Register(Alliance);
-      
+
+      NorthAlliance = new Team("North Alliance")
+      {
+        VictoryMusic = "HeroicVictory"
+      };
+      FactionManager.Register(NorthAlliance);
+
+      SouthAlliance = new Team("South Alliance")
+      {
+        VictoryMusic = "HeroicVictory"
+      };
+      FactionManager.Register(SouthAlliance);
+
       Legion = new Team("Burning Legion")
       {
         VictoryMusic = "DarkVictory"

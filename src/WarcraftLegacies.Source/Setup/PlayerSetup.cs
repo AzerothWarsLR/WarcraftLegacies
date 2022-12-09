@@ -12,16 +12,16 @@ namespace WarcraftLegacies.Source.Setup
       Player(0).SetTeam(TeamSetup.Horde);
       
       Player(1).SetFaction(LordaeronSetup.Lordaeron);
-      Player(1).SetTeam(TeamSetup.Alliance);
+      Player(1).SetTeam(TeamSetup.NorthAlliance);
       
       Player(2).SetFaction(QuelthalasSetup.Quelthalas);
-      Player(2).SetTeam(TeamSetup.Alliance);
+      Player(2).SetTeam(TeamSetup.NorthAlliance);
       
       Player(3).SetFaction(ScourgeSetup.Scourge);
       Player(3).SetTeam(TeamSetup.Legion);
       
       Player(4).SetFaction(IronforgeSetup.Ironforge);
-      Player(4).SetTeam(TeamSetup.Alliance);
+      Player(4).SetTeam(TeamSetup.SouthAlliance);
       
       Player(5).SetFaction(WarsongSetup.WarsongClan);
       Player(5).SetTeam(TeamSetup.Horde);
@@ -30,19 +30,19 @@ namespace WarcraftLegacies.Source.Setup
       Player(6).SetTeam(TeamSetup.Illidari);
       
       Player(7).SetFaction(DalaranSetup.Dalaran);
-      Player(7).SetTeam(TeamSetup.Alliance);
+      Player(7).SetTeam(TeamSetup.NorthAlliance);
       
       Player(8).SetFaction(GoblinSetup.Goblin);
       Player(8).SetTeam(TeamSetup.Horde);
       
       Player(10).SetFaction(StormwindSetup.Stormwind);
-      Player(10).SetTeam(TeamSetup.Alliance);
+      Player(10).SetTeam(TeamSetup.SouthAlliance);
       
       Player(11).SetFaction(DruidsSetup.Druids);
       Player(11).SetTeam(TeamSetup.NightElves);
       
       Player(13).SetFaction(DraeneiSetup.Draenei);
-      Player(13).SetTeam(TeamSetup.Draenei);
+      Player(13).SetTeam(TeamSetup.NightElves);
 
       Player(15).SetFaction(IllidariSetup.Illidari);
       Player(15).SetTeam(TeamSetup.Illidari);
@@ -51,7 +51,7 @@ namespace WarcraftLegacies.Source.Setup
       Player(18).SetTeam(TeamSetup.NightElves);
       
       Player(22).SetFaction(KultirasSetup.Kultiras);
-      Player(22).SetTeam(TeamSetup.Alliance);
+      Player(22).SetTeam(TeamSetup.SouthAlliance);
       
       Player(23).SetFaction(LegionSetup.Legion);
       Player(23).SetTeam(TeamSetup.Legion);
