@@ -48,7 +48,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Duration = 40,
         SummonUnitTypeId = Constants.UNIT_N00O_SKELETAL_GRUNT_FEL_HORDE,
         SummonCount = 1,
-        SpecialEffectPath = @"Abilities\Spells\Undead\RaiseSkeletonWarrior\RaiseSkeleton.mdl"
+        SpecialEffectPath = @"Abilities\Spells\Undead\RaiseSkeletonWarrior\RaiseSkeleton.mdl",
+        RequiredResearch = Constants.UPGRADE_R098_FEL_INFUSED_SKELETON_FEL_HORDE
       });
     }
   }

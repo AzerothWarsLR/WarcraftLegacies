@@ -29,6 +29,11 @@ namespace MacroTools.PassiveAbilities
     /// </summary>
     public string SpecialEffectPath { get; init; } = "";
     
+    /// <summary>
+    /// The player must have this research for the ability to take effect.
+    /// </summary>
+    public int RequiredResearch { get; init; }
+    
     /// <inheritdoc />
     public SummonUnitOnDeath(int unitTypeId) : base(unitTypeId)
     {
@@ -38,6 +43,8 @@ namespace MacroTools.PassiveAbilities
     public override void OnDeath()
     {
       var triggerUnit = GetTriggerUnit();
+      if (GetPlayerTechCount(triggerUnit.OwningPlayer(), RequiredResearch, false) == 0)
+        return;
       var pos = triggerUnit.GetPosition();
       for (var i = 0; i < SummonCount; i++)
         CreateUnit(triggerUnit.OwningPlayer(), SummonUnitTypeId, pos.X, pos.Y, triggerUnit.GetFacing())
