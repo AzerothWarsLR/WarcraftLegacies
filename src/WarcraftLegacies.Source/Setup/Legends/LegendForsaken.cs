@@ -8,7 +8,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Legend SylvanasUndead { get; private set; }
     public static Legend Varimathras { get; private set; }
     public static Legend Nathanos { get; private set; }
-    public static Legend Undercity { get; private set; }
 
     public static void Setup()
     {

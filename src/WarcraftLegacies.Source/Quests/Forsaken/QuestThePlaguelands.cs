@@ -14,7 +14,6 @@ namespace WarcraftLegacies.Source.Quests.Forsaken
       "The ravaged lands of Lordaeron must be conquered by the Forsaken, their survival depends on it",
       "ReplaceableTextures\\CommandButtons\\BTNNathanosBlightcaller.blp")
     {
-      AddObjective(new ObjectiveControlLegend(LegendForsaken.Undercity, false));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01F"))));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n044"))));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01H"))));
