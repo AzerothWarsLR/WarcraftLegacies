@@ -4,9 +4,11 @@ using MacroTools.FactionSystem;
 using MacroTools.Libraries;
 using static War3Api.Common;
 
-
 namespace MacroTools.ControlPointSystem
 {
+  /// <summary>
+  /// Responsible for managing all <see cref="ControlPoint"/>s.
+  /// </summary>
   public static class ControlPointManager
   {
     /// <summary>
@@ -47,29 +49,32 @@ namespace MacroTools.ControlPointSystem
     public static void Register(ControlPoint controlPoint)
     {
       ByUnit.Add(controlPoint.Unit, controlPoint);
-      ByUnitType.Add(controlPoint.UnitType, controlPoint);
+      if (ByUnitType.ContainsKey(controlPoint.UnitType))
+        WarningLogger.Log(
+          $"There are two Control Points with the same ID of {GeneralHelpers.DebugIdInteger2IdString(controlPoint.UnitType)}.");
+      else
+        ByUnitType.Add(controlPoint.UnitType, controlPoint);
       BlzSetUnitMaxHP(controlPoint.Unit, MaxHitpoints);
       controlPoint.Unit.SetLifePercent(80);
 
       controlPoint.Owner.SetBaseIncome(controlPoint.Owner.GetBaseIncome() + controlPoint.Value);
       controlPoint.Owner.SetControlPointCount(controlPoint.Owner.GetControlPointCount() + 1);
 
-      if (!_initialized)
+      if (_initialized) 
+        return;
+      _initialized = true;
+      var incomeTimer = CreateTimer();
+      TimerStart(incomeTimer, Period, true, () =>
       {
-        _initialized = true;
-        timer incomeTimer = CreateTimer();
-        TimerStart(incomeTimer, Period, true, () =>
-        {
-          foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-            if (player.GetFaction() != null)
-            {
-              var goldPerSecond = player.GetTotalIncome() * Period / 60;
-              player.AddGold(goldPerSecond);
-              var lumberPerSecond = player.GetLumberIncome() * Period / 60;
-              player.AddLumber(lumberPerSecond);
-            }
-        });
-      }
+        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+          if (player.GetFaction() != null)
+          {
+            var goldPerSecond = player.GetTotalIncome() * Period / 60;
+            player.AddGold(goldPerSecond);
+            var lumberPerSecond = player.GetLumberIncome() * Period / 60;
+            player.AddLumber(lumberPerSecond);
+          }
+      });
     }
   }
 }
