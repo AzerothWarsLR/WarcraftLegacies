@@ -23,6 +23,11 @@ namespace MacroTools.PassiveAbilities
     /// How many units to summon.
     /// </summary>
     public int SummonCount { get; init; } = 1;
+
+    /// <summary>
+    /// The special effect that appears when the ability triggers.
+    /// </summary>
+    public string SpecialEffectPath { get; init; } = "";
     
     /// <inheritdoc />
     public SummonUnitOnDeath(int unitTypeId) : base(unitTypeId)
@@ -38,6 +43,9 @@ namespace MacroTools.PassiveAbilities
         CreateUnit(triggerUnit.OwningPlayer(), SummonUnitTypeId, pos.X, pos.Y, triggerUnit.GetFacing())
           .AddType(UNIT_TYPE_SUMMONED)
           .SetTimedLife(Duration);
+      AddSpecialEffect(SpecialEffectPath, pos.X, pos.Y)
+        .SetLifespan(1);
+      triggerUnit.Remove();
     }
   }
 }
