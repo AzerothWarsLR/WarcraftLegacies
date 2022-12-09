@@ -4,7 +4,10 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.ArtifactBehaviour
 {
-  public class EyeOfSargerasCooldowns
+  /// <summary>
+  /// Eye of Sargeras' abilities go on cooldown when transferring the item between heroes to avoid abuse.
+  /// </summary>
+  public sealed class EyeOfSargerasCooldowns
   {
     private static readonly int SpellA = FourCC("A04G");
     private static readonly int SpellB = FourCC("ACrg");
@@ -13,16 +16,19 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
 
     private static void ItemPickup()
     {
-      unit triggerUnit = GetTriggerUnit();
+      var triggerUnit = GetTriggerUnit();
       SpellHelpers.StartUnitAbilityCooldownFull(triggerUnit, SpellA);
       SpellHelpers.StartUnitAbilityCooldownFull(triggerUnit, SpellB);
       SpellHelpers.StartUnitAbilityCooldownFull(triggerUnit, SpellC);
       SpellHelpers.StartUnitAbilityCooldownFull(triggerUnit, SpellD);
     }
 
+    /// <summary>
+    /// Sets up <see cref="EyeOfSargerasCooldowns"/>.
+    /// </summary>
     public static void Setup()
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypePicksUpItem, ItemPickup, FourCC("I003"));
+      PlayerUnitEvents.Register(UnitTypeEvent.PicksUpItem, ItemPickup, Constants.ITEM_I003_EYE_OF_SARGERAS);
     }
   }
 }

@@ -1,5 +1,5 @@
-﻿using MacroTools.Mechanics;
-using MacroTools.Wrappers;
+﻿using MacroTools.Extensions;
+using MacroTools.Mechanics;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Mechanics.Frostwolf
@@ -54,7 +54,7 @@ namespace WarcraftLegacies.Source.Mechanics.Frostwolf
     public static void Setup()
     {
       var index = 0;
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(Regions.CairneStart.Rect).EmptyToList())
+      foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.CairneStart.Rect).EmptyToList())
       {
         if (GetUnitTypeId(unit) != Constants.UNIT_OOSC_PACK_KODO_FROSTWOLF) continue;
         KodoSetup(index,unit);

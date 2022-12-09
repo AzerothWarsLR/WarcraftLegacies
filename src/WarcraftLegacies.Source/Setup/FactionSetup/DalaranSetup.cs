@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -48,8 +48,8 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
 
       //Units
       Dalaran.ModObjectLimit(FourCC("h022"), Faction.UNLIMITED); //Shaper
-      Dalaran.ModObjectLimit(FourCC("hbot"), 12); //Alliance Transport Ship
-      Dalaran.ModObjectLimit(FourCC("hdes"), 12); //Alliance Frigate
+      Dalaran.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
+      Dalaran.ModObjectLimit(FourCC("hdes"), Faction.UNLIMITED); //Alliance Frigate
       Dalaran.ModObjectLimit(FourCC("hbsh"), 6); //Alliance Battle Ship
       Dalaran.ModObjectLimit(FourCC("nhym"), Faction.UNLIMITED); //Hydromancer
       Dalaran.ModObjectLimit(FourCC("h032"), Faction.UNLIMITED); //Battlemage

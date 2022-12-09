@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
 using WarcraftLegacies.Source.Mechanics.Frostwolf;
 using WCSharp.Shared.Data;
@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       Frostwolf = new Faction("Frostwolf", PLAYER_COLOR_RED, "|c00ff0303",
         "ReplaceableTextures\\CommandButtons\\BTNThrall.blp")
       {
-        UndefeatedResearch = FourCC("R05V"),
+        UndefeatedResearch = Constants.UPGRADE_R05V_FROSTWOLF_EXISTS,
         StartingGold = 150,
         StartingLumber = 500,
         CinematicMusic = "SadMystery",
@@ -27,19 +27,19 @@ Once you land, you will find a Tauren caravan with a Great Hall packed in it's i
 Escort the kodo to Thunderbluff, where you will find a goldmine waiting for you."
       };
 
-      Frostwolf.ModObjectLimit(FourCC("ogre"), Faction.UNLIMITED); //Great Hall
-      Frostwolf.ModObjectLimit(FourCC("ostr"), Faction.UNLIMITED); //Stronghold
-      Frostwolf.ModObjectLimit(FourCC("ofrt"), Faction.UNLIMITED); //Fortress
-      Frostwolf.ModObjectLimit(FourCC("oalt"), Faction.UNLIMITED); //Altar of Storms
-      Frostwolf.ModObjectLimit(FourCC("obar"), Faction.UNLIMITED); //Barracks
-      Frostwolf.ModObjectLimit(FourCC("ofor"), Faction.UNLIMITED); //War Mill
-      Frostwolf.ModObjectLimit(FourCC("otto"), Faction.UNLIMITED); //Tauren Totem
-      Frostwolf.ModObjectLimit(FourCC("osld"), Faction.UNLIMITED); //Spirit Lodge
-      Frostwolf.ModObjectLimit(FourCC("otrb"), Faction.UNLIMITED); //Orc Burrow
-      Frostwolf.ModObjectLimit(FourCC("owtw"), Faction.UNLIMITED); //Watch Tower
-      Frostwolf.ModObjectLimit(FourCC("o002"), Faction.UNLIMITED); //Improved Watch Tower
-      Frostwolf.ModObjectLimit(FourCC("ovln"), Faction.UNLIMITED); //Voodoo Lounge
-      Frostwolf.ModObjectLimit(FourCC("oshy"), Faction.UNLIMITED); //Shipyard
+      Frostwolf.ModObjectLimit(Constants.UNIT_OGRE_GREAT_HALL_FROSTWOLF, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OSTR_STRONGHOLD_FROSTWOLF, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OFRT_FORTRESS_FROSTWOLF, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OALT_ALTAR_OF_STORMS_FROSTWOLF, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OBAR_WAR_CAMP_FROSTWOLF, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OFOR_WAR_MILL_FROSTWOLF, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OSLD_SPIRIT_LODGE_FROSTWOLF, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OTRB_BURROW_FROSTWOLF, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OWTW_WATCH_TOWER_FROSTWOLF, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_O002_IMPROVED_WATCH_TOWER_FROSTWOLF, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OVLN_VOODOO_LOUNGE_FROSTWOLF, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OSHY_HORDE_PIER_FROSTWOLF, Faction.UNLIMITED);
 
       Frostwolf.ModObjectLimit(FourCC("opeo"), Faction.UNLIMITED); //Peon
       Frostwolf.ModObjectLimit(FourCC("ogru"), Faction.UNLIMITED); //Grunt
@@ -51,8 +51,8 @@ Escort the kodo to Thunderbluff, where you will find a goldmine waiting for you.
       Frostwolf.ModObjectLimit(FourCC("oshm"), Faction.UNLIMITED); //Shaman
       Frostwolf.ModObjectLimit(FourCC("ospw"), Faction.UNLIMITED); //Spirit Walker
       Frostwolf.ModObjectLimit(FourCC("o00A"), 6); //Far Seer
-      Frostwolf.ModObjectLimit(FourCC("obot"), 12); //Transport Ship
-      Frostwolf.ModObjectLimit(FourCC("odes"), 12); //Orc Frigate
+      Frostwolf.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
+      Frostwolf.ModObjectLimit(FourCC("odes"), Faction.UNLIMITED); //Orc Frigate
       Frostwolf.ModObjectLimit(FourCC("oosc"), Faction.UNLIMITED); //Pack Kodo
       Frostwolf.ModObjectLimit(FourCC("ojgn"), 6); //Juggernaught
 

@@ -40,7 +40,8 @@ namespace MacroTools.PassiveAbilities
     public void OnTakesDamage()
     {
       var triggerUnit = GetTriggerUnit();
-      if (!IsTerrainPathable(GetUnitX(triggerUnit), GetUnitY(triggerUnit), PATHING_TYPE_FLOATABILITY))
+      if (!IsTerrainPathable(GetUnitX(triggerUnit), GetUnitY(triggerUnit), PATHING_TYPE_FLOATABILITY) 
+          && IsTerrainPathable(GetUnitX(triggerUnit), GetUnitY(triggerUnit), PATHING_TYPE_WALKABILITY))
         BlzSetEventDamage(GetEventDamage() * DamageMultiplier);
     }
   }

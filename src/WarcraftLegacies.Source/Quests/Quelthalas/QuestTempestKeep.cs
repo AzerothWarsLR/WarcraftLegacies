@@ -3,7 +3,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
@@ -66,7 +65,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       UnitRemoveAbility(LegendQuelthalas.LegendKael.Unit,
         Constants.ABILITY_A0IP_GO_TO_OUTLAND_AND_BUILD_TEMPEST_KEEP_KAEL_PATH);
 
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(Regions.TempestKeep).EmptyToList())
+      foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.TempestKeep).EmptyToList())
       {
         unit.Rescue(completingFaction.Player ?? Player(GetBJPlayerNeutralVictim()));
       }

@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
 {
   public sealed class QuestDarkshire : QuestData
   {
-    public QuestDarkshire(unit gnollToKill) : base("Gnoll troubles",
+    public QuestDarkshire(unit gnollToKill) : base("Gnoll Troubles",
       "The town of Darkshire is under attack by Gnoll's, clear them out!",
       "ReplaceableTextures\\CommandButtons\\BTNGnollArcher.blp")
     {
@@ -17,6 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00V"))));
       AddObjective(new ObjectiveExpire(1425));
       AddObjective(new ObjectiveSelfExists());
+      Required = true;
     }
 
     protected override string CompletionPopup =>
@@ -26,11 +27,11 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
 
     private static void GrantDarkshire(player whichPlayer)
     {
-      group tempGroup = CreateGroup();
+      var tempGroup = CreateGroup();
 
       //Transfer all Neutral Passive units in Darkshire
       GroupEnumUnitsInRect(tempGroup, Regions.DarkshireUnlock.Rect, null);
-      unit u = FirstOfGroup(tempGroup);
+      var u = FirstOfGroup(tempGroup);
       while (true)
       {
         if (u == null) break;

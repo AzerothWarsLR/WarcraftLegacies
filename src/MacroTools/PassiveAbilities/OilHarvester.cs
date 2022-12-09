@@ -6,7 +6,6 @@ using MacroTools.FactionSystem;
 using MacroTools.Hazards;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Powers;
-using MacroTools.Wrappers;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
@@ -71,9 +70,9 @@ namespace MacroTools.PassiveAbilities
       BuffSystem.Add(oilBuff);
     }
 
-    private bool EnsureValidPositioning(unit createdUnit)
+    private static bool EnsureValidPositioning(unit createdUnit)
     {
-      if (new GroupWrapper().EnumUnitsInRange(createdUnit.GetPosition(), Radius)
+      if (CreateGroup().EnumUnitsInRange(createdUnit.GetPosition(), 900)
           .EmptyToList()
           .All(x => x.GetTypeId() != createdUnit.GetTypeId() || x == createdUnit)) return true;
       createdUnit.Kill().Remove();

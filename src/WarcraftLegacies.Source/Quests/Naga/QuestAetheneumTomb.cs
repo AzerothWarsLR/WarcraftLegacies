@@ -17,6 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       "Illidan has heard of Highborns secrets hiding in the depths of the Dire Maul. If he could uncover them, they could be a source of great power.",
       "ReplaceableTextures\\CommandButtons\\BTNDoomlord.blp")
     {
+      AddObjective(new ObjectiveControlLegend(LegendNaga.LegendIllidan, false));
       AddObjective(new ObjectiveLegendDead(LegendNeutral.Immolthar));
       AddObjective(new ObjectiveExpire(1280));
       AddObjective(new ObjectiveSelfExists());
@@ -41,9 +42,11 @@ namespace WarcraftLegacies.Source.Quests.Naga
     }
 
     /// <inheritdoc />
+    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      PlayThematicMusic("IllidansTheme");
+      if (completingFaction?.Player == GetLocalPlayer())
+        PlayThematicMusic("IllidansTheme");
       completingFaction.Player?.RescueGroup(_rescueUnits);
     }
   }

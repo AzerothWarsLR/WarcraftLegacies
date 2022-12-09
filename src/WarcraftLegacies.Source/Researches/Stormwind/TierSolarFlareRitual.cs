@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Researches.Stormwind
         Faction.UNLIMITED);
     }
 
-    public static void Setup() => PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, Research,
+    public static void Setup() => PlayerUnitEvents.Register(ResearchEvent.IsFinished, Research,
       Constants.UPGRADE_R03U_SOLAR_FLARE_RITUAL_ARATHOR_T1);
   }
 }

@@ -8,6 +8,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
   {
     public static Legend Ragnaros { get; private set; }
     public static Legend Morghor { get; private set; }
+    public static Legend MurlocSorc { get; private set; }
     public static Legend SeaWitch { get; private set; }
     public static Legend Auchindoun { get; private set; }
     public static Legend DraktharonKeep { get; private set; }
@@ -52,6 +53,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
         PermaDies = true
       };
       Legend.Register(Morghor);
+
+      MurlocSorc = new Legend
+      {
+        Unit = preplacedUnitSystem.GetUnit(FourCC("N089")),
+        PermaDies = true
+      };
+      Legend.Register(MurlocSorc);
 
       SeaWitch = new Legend
       {

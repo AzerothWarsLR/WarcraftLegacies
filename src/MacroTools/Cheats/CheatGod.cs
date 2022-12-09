@@ -1,14 +1,28 @@
 using System;
 using System.Collections.Generic;
+using MacroTools.CommandSystem;
 using WCSharp.Events;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatGod
+  public sealed  class CheatGod : Command
   {
-    private const string Command = "-god ";
     private static readonly List<player> PlayersWithCheat = new();
+    
+    /// <inheritdoc />
+    public override string CommandText => "god";
+
+    /// <inheritdoc />
+    public override int ParameterCount => 1;
+
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+
+    static CheatGod()
+    {
+      PlayerUnitEvents.Register(UnitTypeEvent.IsDamaged, Damage);
+    }
 
     private static bool IsCheatActive(player whichPlayer)
     {
@@ -17,13 +31,15 @@ namespace MacroTools.Cheats
 
     private static void SetCheatActive(player whichPlayer, bool isActive)
     {
-      if (isActive && !PlayersWithCheat.Contains(whichPlayer))
+      switch (isActive)
       {
-        PlayersWithCheat.Add(whichPlayer);
-        return;
+        case true when !PlayersWithCheat.Contains(whichPlayer):
+          PlayersWithCheat.Add(whichPlayer);
+          return;
+        case false when PlayersWithCheat.Contains(whichPlayer):
+          PlayersWithCheat.Remove(whichPlayer);
+          break;
       }
-
-      if (!isActive && PlayersWithCheat.Contains(whichPlayer)) PlayersWithCheat.Remove(whichPlayer);
     }
 
     private static void Damage()
@@ -40,36 +56,22 @@ namespace MacroTools.Cheats
         Console.WriteLine(e);
       }
     }
-
-    private static void Actions()
+    
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
-      if (!TestMode.CheatCondition()) return;
-
-      string enteredString = GetEventPlayerChatString();
-      player triggerPlayer = GetTriggerPlayer();
-      string parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
-
-      if (parameter == "on")
+      var parameter = parameters[0];
+      switch (parameter)
       {
-        SetCheatActive(triggerPlayer, true);
-        DisplayTextToPlayer(triggerPlayer, 0, 0,
-          "|cffD27575CHEAT:|r God mod activated. Your units will deal 100x damage and take no damage.");
+        case "on":
+          SetCheatActive(cheater, true);
+          return "God mod activated. Your units will deal 100x damage and take no damage.";
+        case "off":
+          SetCheatActive(cheater, false);
+          return "God mode deactivated.";
+        default:
+          return "Invalid parameter used.";
       }
-      else if (parameter == "off")
-      {
-        SetCheatActive(triggerPlayer, true);
-        DisplayTextToPlayer(triggerPlayer, 0, 0, "|cffD27575CHEAT:|r God mode deactivated.");
-      }
-    }
-
-    public static void Setup()
-    {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-
-      TriggerAddAction(trig, Actions);
-
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeIsDamaged, Damage);
     }
   }
 }

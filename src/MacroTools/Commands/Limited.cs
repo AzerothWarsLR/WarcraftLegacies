@@ -2,7 +2,6 @@
 using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.Wrappers;
 using static War3Api.Common;
 
 namespace MacroTools.Commands
@@ -24,7 +23,7 @@ namespace MacroTools.Commands
     /// <inheritdoc />
     public override string Execute(player commandUser, params string[] parameters)
     {
-      var limitedUnits = new GroupWrapper().EnumUnitsOfPlayer(commandUser).EmptyToList().Where(
+      var limitedUnits = CreateGroup().EnumUnitsOfPlayer(commandUser).EmptyToList().Where(
         x => commandUser.GetObjectLimit(x.GetTypeId()) is > 0 and < Faction.UNLIMITED);
       foreach (var unit in limitedUnits) 
         commandUser.PingLocation(unit.GetPosition(), 5f);

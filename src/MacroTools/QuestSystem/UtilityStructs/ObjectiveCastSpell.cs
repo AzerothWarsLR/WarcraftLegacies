@@ -17,7 +17,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
     /// <param name="holderOnly">If true, the quest holder must cast the spell themselves.</param>
     public ObjectiveCastSpell(int spellId, bool holderOnly)
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.SpellFinish, OnCast, spellId);
+      PlayerUnitEvents.Register(UnitTypeEvent.SpellFinish, OnCast, spellId);
       if (holderOnly)
         Description = "Cast " + GetObjectName(spellId);
       else

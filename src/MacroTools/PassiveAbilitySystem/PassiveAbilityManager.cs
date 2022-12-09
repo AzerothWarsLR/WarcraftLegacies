@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MacroTools.Wrappers;
+using MacroTools.Extensions;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -21,8 +21,8 @@ namespace MacroTools.PassiveAbilitySystem
     /// </summary>
     public static void InitializePreplacedUnits()
     {
-      using var group = new GroupWrapper().EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds);
-      foreach (var unit in group.EmptyToList())
+      var group = CreateGroup().EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds).EmptyToList();
+      foreach (var unit in group)
       {
         if (PassiveAbilitiesByUnitTypeId.TryGetValue(GetUnitTypeId(unit), out var passiveAbilities))
           foreach (var passiveAbility in passiveAbilities)
@@ -36,7 +36,7 @@ namespace MacroTools.PassiveAbilitySystem
     /// </summary>
     public static void Register(TakeDamagePassiveAbility takeDamagePassiveAbility)
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeIsDamaged, takeDamagePassiveAbility.OnTakesDamage,
+      PlayerUnitEvents.Register(UnitTypeEvent.IsDamaged, takeDamagePassiveAbility.OnTakesDamage,
         takeDamagePassiveAbility.DamagedUnitTypeId);
     }
 
@@ -69,21 +69,22 @@ namespace MacroTools.PassiveAbilitySystem
     {
       foreach (var unitTypeId in passiveAbility.UnitTypeIds)
       {
-        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeIsCreated, UnitCreated, unitTypeId);
-        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesBeingTrained, passiveAbility.OnTrained, unitTypeId);
-        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesTraining, passiveAbility.OnTrainedUnit, unitTypeId);
-        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesBeingConstructed, passiveAbility.OnConstruction, unitTypeId);
-        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesUpgrade, passiveAbility.OnUpgrade, unitTypeId);
-        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDies, passiveAbility.OnDeath, unitTypeId);
-        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeSpellFinish, passiveAbility.OnSpellFinish, unitTypeId);
-        PlayerUnitEvents.Register(PlayerUnitEvent.HeroTypeFinishesRevive, UnitCreated, unitTypeId);
-        PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeReceivesPointOrder, passiveAbility.OnOrderIssued, unitTypeId);
+        PlayerUnitEvents.Register(UnitTypeEvent.IsCreated, UnitCreated, unitTypeId);
+        PlayerUnitEvents.Register(UnitTypeEvent.FinishesBeingTrained, passiveAbility.OnTrained, unitTypeId);
+        PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining, passiveAbility.OnTrainedUnit, unitTypeId);
+        PlayerUnitEvents.Register(UnitTypeEvent.FinishesBeingConstructed, passiveAbility.OnConstruction, unitTypeId);
+        PlayerUnitEvents.Register(UnitTypeEvent.FinishesConstruction, passiveAbility.OnUpgrade, unitTypeId);
+        PlayerUnitEvents.Register(UnitTypeEvent.Dies, passiveAbility.OnDeath, unitTypeId);
+        PlayerUnitEvents.Register(UnitTypeEvent.SpellEffect, passiveAbility.OnSpellEffect, unitTypeId);
+        PlayerUnitEvents.Register(UnitTypeEvent.SpellFinish, passiveAbility.OnSpellFinish, unitTypeId);
+        PlayerUnitEvents.Register(HeroTypeEvent.FinishesRevive, UnitCreated, unitTypeId);
+        PlayerUnitEvents.Register(UnitTypeEvent.ReceivesPointOrder, passiveAbility.OnOrderIssued, unitTypeId);
 
         if (passiveAbility is IAppliesEffectOnDamage appliesEffectOnDamage)
-          PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeDamages, appliesEffectOnDamage.OnDealsDamage, unitTypeId);
+          PlayerUnitEvents.Register(UnitTypeEvent.Damaging, appliesEffectOnDamage.OnDealsDamage, unitTypeId);
         
         if (passiveAbility is IEffectOnTakesDamage effectOnTakesDamage)
-          PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeIsDamaged, effectOnTakesDamage.OnTakesDamage, unitTypeId);
+          PlayerUnitEvents.Register(UnitTypeEvent.IsDamaged, effectOnTakesDamage.OnTakesDamage, unitTypeId);
       }
     }
     

@@ -3,7 +3,8 @@ using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
-using static MacroTools.Libraries.Display; namespace WarcraftLegacies.Source.Quests.Sentinels
+
+namespace WarcraftLegacies.Source.Quests.Sentinels
 {
   public sealed class QuestSentinelsKillFrostwolf : QuestData
   {
@@ -25,7 +26,7 @@ using static MacroTools.Libraries.Display; namespace WarcraftLegacies.Source.Que
     protected override void OnComplete(Faction completingFaction)
     {
       SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
-      DisplayUnitTypeAcquired(completingFaction.Player, AmaraId, "You can now revive Amara from the Altar of Elders.");
+      completingFaction.Player.DisplayUnitTypeAcquired(AmaraId, "You can now revive Amara from the Altar of Elders.");
     }
 
     protected override void OnAdd(Faction whichFaction)

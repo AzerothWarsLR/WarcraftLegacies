@@ -29,13 +29,13 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
 
     protected override void OnComplete(Faction completingFaction)
     {
-      group tempGroup = CreateGroup();
+      var tempGroup = CreateGroup();
 
       //Transfer all Neutral Passive units in region to Ironforge
       GroupEnumUnitsInRect(tempGroup, Regions.Aerie_Peak.Rect, null);
       while (true)
       {
-        unit u = FirstOfGroup(tempGroup);
+        var u = FirstOfGroup(tempGroup);
         if (u == null) break;
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) u.Rescue(completingFaction.Player);
         GroupRemoveUnit(tempGroup, u);

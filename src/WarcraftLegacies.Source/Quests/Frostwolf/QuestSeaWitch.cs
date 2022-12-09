@@ -1,9 +1,8 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
@@ -14,7 +13,6 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 {
   /// <summary>
   ///   Frostwolf kills the Sea Witch. Thrall gets some boats to leave the Darkspear Isles.
-  ///   Presently this ONLY deals with the final component of the event. The rest is done in GUI.
   /// </summary>
   public sealed class QuestSeaWitch : QuestData
   {
@@ -42,8 +40,24 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
         .AddAction(() =>
         {
           var triggerUnit = GetTriggerUnit();
-          if (GetOwningPlayer(triggerUnit) != FrostwolfSetup.Frostwolf.Player) return;
-          FrostwolfSetup.Frostwolf.Player.RescueGroup(_rescueDarkspearUnits);
+          if (GetOwningPlayer(triggerUnit) != FrostwolfSetup.Frostwolf?.Player) return;
+          FrostwolfSetup.Frostwolf.Player?.RescueGroup(_rescueDarkspearUnits);
+          var murlocSpawnA = new Point(-3426, -3431);
+          var murlocSpawnB = new Point(-4595, -2797);
+          foreach (var murgul in new unit[]
+                   {
+                     CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), Constants.UNIT_N0DD_MURLOC_SNARECASTER_MURLOC, murlocSpawnA.X, murlocSpawnA.Y, 3),
+                     CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), FourCC("nmrv"), murlocSpawnA.X, murlocSpawnA.Y, 3),
+                     CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), FourCC("nmcf"), murlocSpawnA.X, murlocSpawnA.Y, 3),
+                     CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), FourCC("nmbg"), murlocSpawnA.X, murlocSpawnA.Y, 3),
+                     CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), FourCC("nmbg"), murlocSpawnB.X, murlocSpawnB.Y, 93),
+                     CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), Constants.UNIT_NMTW_MUR_GUL_TIDEWARRIOR_NAJENTUS_SUMMON, murlocSpawnB.X, murlocSpawnB.Y, 93),
+                     CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), FourCC("nmbg"), murlocSpawnB.X, murlocSpawnB.Y, 93),
+                   })
+          {
+            murgul.IssueOrder("attack", new Point(-3372, -2261));
+          }
+          DestroyTrigger(_rescueTrigger);
         });
     }
 
@@ -72,13 +86,15 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       var rescueCairneUnits = Regions.CairneStart.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       FrostwolfSetup.Frostwolf.Player.RescueGroup(rescueCairneUnits);
       FrostwolfSetup.Frostwolf.Player.RescueGroup(_rescueDarkspearUnits);
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(Regions.Darkspear_Island.Rect).EmptyToList())
+      foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.Darkspear_Island.Rect).EmptyToList())
       {
         if (GetOwningPlayer(unit) == FrostwolfSetup.Frostwolf.Player &&
             IsUnitType(unit, UNIT_TYPE_STRUCTURE) == false)
-          SetUnitPosition(unit, GetRandomReal(GetRectMinX(Regions.ThrallLanding.Rect), GetRectMaxX(Regions.ThrallLanding.Rect)),
+          SetUnitPosition(unit,
+            GetRandomReal(GetRectMinX(Regions.ThrallLanding.Rect), GetRectMaxX(Regions.ThrallLanding.Rect)),
             GetRandomReal(GetRectMinY(Regions.ThrallLanding.Rect), GetRectMaxY(Regions.ThrallLanding.Rect)));
       }
+
       RemoveWeatherEffect(_storm);
       CreateUnits(completingFaction.Player, Constants.UNIT_OPEO_PEON_FROSTWOLF_WARSONG_WORKER, -1818, -2070, 270, 3);
       completingFaction.Player.RescueGroup(_rescueEchoUnits);

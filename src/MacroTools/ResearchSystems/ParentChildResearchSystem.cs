@@ -15,7 +15,7 @@ namespace MacroTools.ResearchSystems
     /// </summary>
     public static void Register(int parentResearch, int childResearch)
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.ResearchIsFinished, () =>
+      PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
       {
         var triggerFaction = GetTriggerPlayer().GetFaction();
         triggerFaction?.ModObjectLimit(childResearch, 1);

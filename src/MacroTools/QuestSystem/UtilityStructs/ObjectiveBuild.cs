@@ -24,7 +24,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
       _objectId = objectId;
       _targetBuildCount = targetBuildCount;
       CurrentBuildCount = 0;
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesConstruction, OnBuild, objectId);
+      PlayerUnitEvents.Register(UnitTypeEvent.FinishesConstruction, OnBuild, objectId);
     }
 
     private void OnBuild()

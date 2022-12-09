@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -38,26 +37,22 @@ namespace MacroTools.Libraries
 
     private static bool EnumDestructablesInCircleFilter()
     {
-      Debug.Assert(_enumDestructableCenter != null, nameof(_enumDestructableCenter) + " != null");
       return MathEx.GetDistanceBetweenPoints(
         new Point(GetDestructableX(GetFilterDestructable()), GetDestructableY(GetFilterDestructable())),
-        _enumDestructableCenter) <= _enumDestructableRadius;
+        _enumDestructableCenter!) <= _enumDestructableRadius;
     }
 
-    public static Rectangle GetRectFromCircle(Point center, float radius)
-    {
-      return new Rectangle(center.X - radius, center.Y - radius, center.X + radius, center.Y + radius);
-    }
+    public static Rectangle GetRectFromCircle(Point center, float radius) => 
+      new(center.X - radius, center.Y - radius, center.X + radius, center.Y + radius);
 
     public static void EnumDestructablesInCircle(float radius, Point center, Action actionFunc)
     {
-      if (radius >= 0)
-      {
-        _enumDestructableCenter = center;
-        _enumDestructableRadius = radius;
-        var r = GetRectFromCircle(center, radius);
-        EnumDestructablesInRect(r.Rect, Condition(EnumDestructablesInCircleFilter), actionFunc);
-      }
+      if (radius < 0) 
+        return;
+      _enumDestructableCenter = center;
+      _enumDestructableRadius = radius;
+      var circleAsRectangle = GetRectFromCircle(center, radius);
+      EnumDestructablesInRect(circleAsRectangle.Rect, Condition(EnumDestructablesInCircleFilter), actionFunc);
     }
 
     public static void SetBlightRadius(player whichPlayer, Point position, float radius, bool addBlight)

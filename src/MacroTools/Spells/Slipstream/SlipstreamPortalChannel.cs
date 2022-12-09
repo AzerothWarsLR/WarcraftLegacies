@@ -30,6 +30,11 @@ namespace MacroTools.Spells.Slipstream
     /// It takes this long for the portal to close after the caster stops channeling.
     /// </summary>
     public float ClosingDelay { get; init; }
+
+    /// <summary>
+    /// The color of the created portals.
+    /// </summary>
+    public Color Color { get; init; } = new(255, 255, 255, 255);
     
     private unit? _portalOrigin;
     private unit? _portalDestination;
@@ -52,13 +57,15 @@ namespace MacroTools.Spells.Slipstream
     {
       var casterPosition = WCSharp.Shared.Util.PositionWithPolarOffset(GetUnitX(Caster), GetUnitY(Caster), 200, Caster.GetFacing());
       _portalOrigin = CreateUnit(Caster.OwningPlayer(), PortalUnitTypeId, casterPosition.x, casterPosition.y, Caster.GetFacing() - 180)
-        .SetWaygateDestination(_target);
+        .SetWaygateDestination(_target)
+        .SetColor(Color.Red, Color.Green, Color.Blue, Color.Alpha);
       _portalOriginBuff = new SlipstreamPortalBuff(Caster, _portalOrigin);
       BuffSystem.Add(_portalOriginBuff);
       _portalOriginBuff.Open(OpeningDelay);
       
       _portalDestination = CreateUnit(Caster.OwningPlayer(), PortalUnitTypeId, _target.X, _target.Y, Caster.GetFacing())
-        .SetWaygateDestination(new Point(casterPosition.x, casterPosition.y));
+        .SetWaygateDestination(new Point(casterPosition.x, casterPosition.y))
+        .SetColor(Color.Red, Color.Green, Color.Blue, Color.Alpha);
       _portalDestinationBuff = new SlipstreamPortalBuff(Caster, _portalDestination);
       BuffSystem.Add(_portalDestinationBuff);
       _portalDestinationBuff.Open(OpeningDelay);

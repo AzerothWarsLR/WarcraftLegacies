@@ -14,10 +14,6 @@ namespace MacroTools.SpellSystem
   {
     private static readonly Dictionary<int, Spell> SpellsByAbilityId = new();
 
-    static SpellSystem() =>
-      PlayerUnitEvents.AddCustomEventFilter(EVENT_PLAYER_UNIT_TRAIN_FINISH, "UnitTypeFinishesBeingTrained",
-        () => GetUnitTypeId(GetTrainedUnit()));
-
     /// <summary>
     /// Returns the registered <see cref="Spell"/> with the provided ability ID.
     /// </summary>
@@ -35,10 +31,10 @@ namespace MacroTools.SpellSystem
     /// </summary>
     public static void Register(Spell spell)
     {
-      PlayerUnitEvents.Register(PlayerUnitEvent.SpellCast, OnStartCast, spell.Id);
-      PlayerUnitEvents.Register(PlayerUnitEvent.SpellEffect, OnCast, spell.Id);
-      PlayerUnitEvents.Register(PlayerUnitEvent.SpellEndCast, OnStop, spell.Id);
-      PlayerUnitEvents.Register(PlayerUnitEvent.SpellLearnedByHeroType, OnLearn, spell.Id);
+      PlayerUnitEvents.Register(SpellEvent.Cast, OnStartCast, spell.Id);
+      PlayerUnitEvents.Register(SpellEvent.Effect, OnCast, spell.Id);
+      PlayerUnitEvents.Register(UnitTypeEvent.SpellEndCast, OnStop, spell.Id);
+      PlayerUnitEvents.Register(SpellEvent.Learned, OnLearn, spell.Id);
       SpellsByAbilityId.Add(spell.Id, spell);
     }
 
