@@ -1,5 +1,4 @@
-﻿using MacroTools;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
@@ -12,7 +11,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Legend Nathanos { get; private set; }
     public static Legend Undercity { get; private set; }
 
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public static void Setup()
     {
       SylvanasUndead = new Legend
       {
@@ -34,20 +33,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         PlayerColor = PLAYER_COLOR_RED
       };
       Legend.Register(Varimathras);
-
-      Scholomance = new Legend
-      {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_U012_SCHOLOMANCE),
-        DeathMessage = "Scholomance, the center of the Scourge's operations in Lordaeron, has been destroyed."
-      };
-      Legend.Register(Scholomance);
-
-      Undercity = new Legend
-      {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H08S_UNDERCITY_FORSAKEN),
-        DeathMessage = "Undercity, the heart of the Forsaken Kingdom, has been destroyed"
-      };
-      Legend.Register(Undercity);
     }
   }
 }

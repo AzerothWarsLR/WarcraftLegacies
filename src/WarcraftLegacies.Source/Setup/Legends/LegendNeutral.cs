@@ -32,7 +32,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Legend FountainOfHealthDalaran { get; private set; }
     public static Legend FountainOfBlood { get; private set; }
     public static Legend CentaurKhan { get; private set; }
-    public static Legend Immolthar { get; private set; }
     public static Legend Vaelastrasz { get; private set; }
     public static Legend Occulus { get; private set; }
     public static Legend Saragosa { get; private set; }
@@ -219,12 +218,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(FourCC("ncnk"), Regions.ThunderBluff.Center)
       };
       Legend.Register(CentaurKhan);
-
-      Immolthar = new Legend
-      {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("n04R"))
-      };
-      Legend.Register(Immolthar);
 
       Vaelastrasz = new Legend
       {

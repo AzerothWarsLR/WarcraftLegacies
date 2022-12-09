@@ -18,7 +18,6 @@ namespace WarcraftLegacies.Source.Quests.Naga
       "ReplaceableTextures\\CommandButtons\\BTNDoomlord.blp")
     {
       AddObjective(new ObjectiveControlLegend(LegendNaga.LegendIllidan, false));
-      AddObjective(new ObjectiveLegendDead(LegendNeutral.Immolthar));
       AddObjective(new ObjectiveExpire(1280));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R07H_QUEST_COMPLETED_THE_SECRETS_OF_DIRE_MAUL;
