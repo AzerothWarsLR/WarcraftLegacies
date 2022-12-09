@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.Instances;
 
 namespace WarcraftLegacies.Source.Setup
@@ -14,15 +14,7 @@ namespace WarcraftLegacies.Source.Setup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       InstanceSystem.Register(
-        new Instance("Barrow Deeps", Regions.InstanceBarrowDeeps)
-      );
-
-      InstanceSystem.Register(
         new Instance("Twisting Nether", Regions.TwistingNether)
-      );
-      
-      InstanceSystem.Register(
-        new Instance("Blackrock Depths", Regions.InstanceBlackrock)
       );
 
       InstanceSystem.Register(

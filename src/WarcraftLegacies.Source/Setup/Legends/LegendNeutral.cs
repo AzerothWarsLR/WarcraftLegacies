@@ -60,12 +60,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       Legend.Register(MurlocSorc);
 
-      SeaWitch = new Legend
-      {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("O02L"))
-      };
-      Legend.Register(SeaWitch);
-
       Auchindoun = new Legend
       {
         Capturable = true,

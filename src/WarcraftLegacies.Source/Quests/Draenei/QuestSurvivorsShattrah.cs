@@ -11,7 +11,6 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       "ReplaceableTextures\\CommandButtons\\BTNGlazeroth.blp")
     {
       AddObjective(new ObjectiveTime(420));
-      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendDraenei.LegendExodarship));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R082_QUEST_COMPLETED_THE_SURVIVORS_OF_SHATTRAH;
     }

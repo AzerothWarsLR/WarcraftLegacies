@@ -1524,11 +1524,6 @@ STRING 255
 Hurls a bolt of lightning that bounces up to 5 times, dealing 75 damage to the primary target. Each jump deals 5% less damage.
 }
 
-STRING 256
-{
-Forsaken
-}
-
 STRING 257
 // Units: O026 (God King of the Zandalari Tribe), Tip (Tooltip - Basic)
 {
@@ -7960,6 +7955,11 @@ STRING 1327
 // Units: Haah (The Fallen Guardian), Propernames (Proper Names)
 {
 Medivh
+}
+
+STRING 1328
+{
+Goblin
 }
 
 STRING 1329
@@ -14555,11 +14555,6 @@ STRING 2427
 Corrupted life spring replenishing the soldiers of the Fel Horde.|n|cfff5962dAbilities:|R Life Regeneration Aura|n|n|cff99b4d1Can only build 1.|r
 }
 
-STRING 2428
-{
-Scourge, Cult, Observer
-}
-
 STRING 2429
 // Units: n04A (Mangrove Ent), EditorSuffix (Name - Editor Suffix)
 {
@@ -15375,11 +15370,6 @@ STRING 2564
 Kul'tiras weapon of war designed to scout enemy bases and provide aerial support to ground forces.|n|cfff5962dAbilities:|R True Sight|n|cfff5962dCan learn:|R Cluster Rockets|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land units.|r
 }
 
-STRING 2565
-{
-Frostwolf, Warsong, Zandalar
-}
-
 STRING 2566
 // Units: n027 (Feralas (15gold/min)), Name (Name)
 {
@@ -15706,11 +15696,6 @@ Ironforge, Stormwind, Kultiras
 STRING 2620
 {
 Druids, Draenei, Sentinels
-}
-
-STRING 2621
-{
-Fel Horde, Legion
 }
 
 STRING 2622
@@ -19198,6 +19183,11 @@ STRING 3201
 X
 }
 
+STRING 3202
+{
+Illidari
+}
+
 STRING 3203
 // Units: n00O (Skeletal Grunt), Name (Name)
 {
@@ -21261,6 +21251,11 @@ STRING 3546
 // Units: h0AB (Shadowcaster), Ubertip (Tooltip - Extended)
 {
 Dark Iron practitioner of shadow magic.|n|cfff5962dAbilities:|R Shadow Mend, Dispel Magic, Summon Shadowspawn|n|n|cffffcc00Attacks land and air units.|R
+}
+
+STRING 3547
+{
+Scourge, Legion
 }
 
 STRING 3548
@@ -26385,6 +26380,11 @@ STRING 4401
 // Destructibles: B01M (Gilneas Bridge), Name (Name)
 {
 Gilneas Bridge
+}
+
+STRING 4402
+{
+Frostwolf, Warsong, Goblin
 }
 
 STRING 4403
@@ -34136,7 +34136,7 @@ Improves Fel Grunts, Crossbowmen and Bonecrushers by increasing their hit points
 }
 
 STRING 5694
-// Upgrades: R07N (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
+// Units: N03D (Warchief of the Fel Horde), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -36615,7 +36615,7 @@ Summons an Owl Scout, which can be used to scout.|nCan see invisible units. |nLa
 }
 
 STRING 6107
-// Upgrades: R098 (Burning Oil), EditorSuffix (Editor Suffix)
+// Units: n00O (Skeletal Grunt), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -58961,7 +58961,7 @@ STRING 9827
 }
 
 STRING 9828
-// Upgrades: R098 (Burning Oil), Hotkey (Hotkey)
+// Upgrades: Rhar (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
@@ -63888,7 +63888,7 @@ Forms a shield of flames around a target unit, dealing 15 damage per second to u
 }
 
 STRING 10649
-// Upgrades: Rhar (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: Rerh (Reinforced Hides,Improved Reinforced Hides,Advanced Reinforced Hides), Hotkey (Hotkey)
 {
 A
 }
@@ -66624,7 +66624,7 @@ Every attack that does damage to an enemy unit or building will yield some resou
 }
 
 STRING 11105
-// Units: N03D (Warchief of the Fel Horde), EditorSuffix (Name - Editor Suffix)
+// Abilities: A08B (Burning Oil), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -71021,12 +71021,6 @@ STRING 11837
 Research Fel Infused Skeleton
 }
 
-STRING 11838
-// Abilities: A055 (Defensive Orbs), Researchubertip (Tooltip - Learn - Extended)
-{
-Research Fel Infused Skeleton
-}
-
 STRING 11839
 // Abilities: A055 (Defensive Orbs), Tip (Tooltip - Normal)
 {
@@ -74125,6 +74119,11 @@ STRING 12354
 Causes rains of healing energy to pour down in a large area, healing friendly allied units for 20 hit points per second. |nLasts 10 seconds.
 }
 
+STRING 12355
+{
+Fel Horde, Illidari, Observer
+}
+
 STRING 12356
 // Abilities: A05G (Unholy Booster), Hotkey (Hotkey - Normal)
 {
@@ -74618,7 +74617,7 @@ W
 }
 
 STRING 12438
-// Upgrades: Rerh (Reinforced Hides,Improved Reinforced Hides,Advanced Reinforced Hides), Hotkey (Hotkey)
+// Upgrades: Remg (Upgrade Moon Glaive), Hotkey (Hotkey)
 {
 A
 }
@@ -74990,7 +74989,7 @@ STRING 12499
 }
 
 STRING 12500
-// Upgrades: Remg (Upgrade Moon Glaive), Hotkey (Hotkey)
+// Upgrades: R06I (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -81897,7 +81896,7 @@ Mind Shield
 }
 
 STRING 13651
-// Upgrades: R06I (Defend), Hotkey (Hotkey)
+// Upgrades: R01L (Magic Sentry), Hotkey (Hotkey)
 {
 A
 }
@@ -82923,7 +82922,7 @@ STRING 13821
 }
 
 STRING 13822
-// Upgrades: R01L (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R00W (Magic Sentry), Hotkey (Hotkey)
 {
 A
 }
@@ -83001,13 +83000,13 @@ STRING 13834
 }
 
 STRING 13835
-// Upgrades: R00W (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R001 (Defend), Hotkey (Hotkey)
 {
 A
 }
 
 STRING 13836
-// Upgrades: R001 (Defend), Hotkey (Hotkey)
+// Upgrades: R03L (Chaos), Hotkey (Hotkey)
 {
 A
 }
@@ -83685,7 +83684,7 @@ Improves Grunts by increasing their hit points by 225 and attack damage by 3.
 }
 
 STRING 13949
-// Units: n00O (Skeletal Grunt), EditorSuffix (Name - Editor Suffix)
+// Upgrades: Robf (Burning Oil), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -85419,7 +85418,7 @@ Quest Completed: To Tame a Land
 }
 
 STRING 14238
-// Abilities: A08B (Burning Oil), EditorSuffix (Editor Suffix)
+// Upgrades: R069 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -85443,7 +85442,7 @@ Turn 6 has passed
 }
 
 STRING 14242
-// Upgrades: Robf (Burning Oil), EditorSuffix (Editor Suffix)
+// Upgrades: R066 (Burning Oil), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -85545,7 +85544,7 @@ Stormwind exists
 }
 
 STRING 14259
-// Upgrades: R069 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R05Z (Chaos), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -86756,7 +86755,7 @@ Alows Archers, Huntresses, Moonhunters, Priestesses, and Hippogryph Riders to be
 }
 
 STRING 14463
-// Upgrades: R066 (Burning Oil), EditorSuffix (Editor Suffix)
+// Upgrades: R03I (Shaman Adept Training,Shaman Master Training), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -86942,7 +86941,7 @@ Q
 }
 
 STRING 14494
-// Upgrades: R05Z (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R036 (Pillage), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -87218,7 +87217,7 @@ Quest Completed: The Wandering Brewmaster
 }
 
 STRING 14540
-// Upgrades: R03I (Shaman Adept Training,Shaman Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R024 (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -87663,7 +87662,7 @@ Quest Completed: Return to the Fold
 }
 
 STRING 14614
-// Upgrades: R036 (Pillage), EditorSuffix (Editor Suffix)
+// Upgrades: R011 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -88191,7 +88190,7 @@ Quest Completed: Sapphiron
 }
 
 STRING 14703
-// Upgrades: R024 (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R00Y (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -89241,7 +89240,7 @@ Quest Completed: Secrets of Karazhan
 }
 
 STRING 14878
-// Upgrades: R011 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R00O (Ensnare), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -89319,7 +89318,7 @@ Causes Riflemen to deal <A0F4,DataB1,%>% increased damage to units with Heavy ar
 }
 
 STRING 14891
-// Upgrades: R00Y (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R00M (Shaman Adept Training,Shaman Master Training), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -89661,7 +89660,7 @@ C
 }
 
 STRING 14948
-// Upgrades: R00O (Ensnare), EditorSuffix (Editor Suffix)
+// Upgrades: R041 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -89733,7 +89732,7 @@ Improves the Swig ability by causing it to restore <A09J,DataA2> hit points.
 }
 
 STRING 14960
-// Upgrades: R00M (Shaman Adept Training,Shaman Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R03G (Chaos), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -91646,7 +91645,7 @@ Primary defensive structure. |n|cfff5962dCan learn:|R Magic Sentry |n|n|cffffcc0
 }
 
 STRING 15287
-// Upgrades: R041 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R07N (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -93136,7 +93135,7 @@ Creates a barrier that stops 800 points of spell damage from affecting a target 
 }
 
 STRING 15534
-// Upgrades: R03L (Chaos), Hotkey (Hotkey)
+// Upgrades: R046 (Marksmanship), Hotkey (Hotkey)
 {
 A
 }
@@ -93706,7 +93705,7 @@ Quest Completed: The First Banshee
 }
 
 STRING 15629
-// Upgrades: R03G (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R098 (Burning Oil), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -96016,11 +96015,6 @@ STRING 16013
 W
 }
 
-STRING 16014
-{
-Zandalar
-}
-
 STRING 16015
 // Abilities: A0ML (Renewal), Hotkey (Hotkey - Normal)
 {
@@ -98194,7 +98188,7 @@ STRING 16382
 }
 
 STRING 16383
-// Upgrades: R046 (Marksmanship), Hotkey (Hotkey)
+// Upgrades: R02X (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -103210,7 +103204,7 @@ E
 }
 
 STRING 17220
-// Upgrades: R02X (Defend), Hotkey (Hotkey)
+// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
@@ -106243,13 +106237,13 @@ STRING 17725
 }
 
 STRING 17726
-// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
 
 STRING 17727
-// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 A
 }
@@ -110420,25 +110414,25 @@ Titanforge Artifact
 }
 
 STRING 18423
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
-{
-A
-}
-
-STRING 18424
 // Upgrades: R090 (Defend), Hotkey (Hotkey)
 {
 A
 }
 
-STRING 18425
+STRING 18424
 // Upgrades: R091 (Defend), Hotkey (Hotkey)
 {
 A
 }
 
-STRING 18426
+STRING 18425
 // Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+A
+}
+
+STRING 18426
+// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
 {
 A
 }
@@ -114537,7 +114531,7 @@ The Forest will be unleashed upon the Warsong Lumber Camp.|n|n|cffffcc00Required
 }
 
 STRING 19111
-// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: R096 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -114807,7 +114801,7 @@ Train Drake
 }
 
 STRING 19157
-// Upgrades: R096 (Defend), Hotkey (Hotkey)
+// Upgrades: R098 (Burning Oil), Hotkey (Hotkey)
 {
 A
 }

@@ -1,4 +1,4 @@
-using MacroTools.ControlPointSystem;
+﻿using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
@@ -16,7 +16,6 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       "ReplaceableTextures\\CommandButtons\\BTNChaosWolfRider.blp")
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09X"))));
-      AddObjective(new ObjectiveLegendDead(LegendDraenei.LegendExodarship));
       AddObjective(new ObjectiveSelfExists());
       Required = true;
     }

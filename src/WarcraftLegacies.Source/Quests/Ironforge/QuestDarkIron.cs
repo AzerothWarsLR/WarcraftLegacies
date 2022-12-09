@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       "ReplaceableTextures\\CommandButtons\\BTNRPGDarkIron.blp")
     {
       AddObjective(new ObjectiveControlLegend(LegendFelHorde.LegendBlacktemple, false));
-      AddObjective(new ObjectiveLegendInRect(LegendIronforge.LegendMagni, Regions.Shadowforge_gate,
+      AddObjective(new ObjectiveLegendInRect(LegendIronforge.LegendMagni, Regions.Shadowforge_City,
         "Shadowforge"));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R01A_QUEST_COMPLETED_DARK_IRON_ALLIANCE;

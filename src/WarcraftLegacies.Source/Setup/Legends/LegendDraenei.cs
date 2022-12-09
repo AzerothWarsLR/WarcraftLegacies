@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
@@ -10,8 +10,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Legend LegendMaraad { get; private set; }
     public static Legend LegendNobundo { get; private set; }
     public static Legend LegendExodar { get; private set; }
-    public static Legend LegendExodarship { get; private set; }
-    
     public static Legend? Shattrah { get; private set; }
     
     public static Legend? Farahlon { get; private set; }
@@ -33,12 +31,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       Legend.Register(LegendExodar);
 
-      LegendExodarship = new Legend
-      {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H09W_THE_EXODAR)
-      };
-      Legend.Register(LegendExodarship);
-
       LegendMaraad = new Legend
       {
         UnitType = FourCC("H09S")
@@ -49,8 +41,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = FourCC("E01I")
       };
-      LegendVelen.AddUnitDependency(LegendExodar.Unit);
-      LegendVelen.AddUnitDependency(LegendExodarship.Unit);
       Legend.Register(LegendVelen);
 
       Shattrah = new Legend

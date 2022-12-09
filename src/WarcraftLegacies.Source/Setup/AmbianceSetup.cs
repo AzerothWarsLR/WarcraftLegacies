@@ -92,7 +92,6 @@ namespace WarcraftLegacies.Source.Setup
       Regions.Northrend_Ambiance.AddSound(NorthrendNight);
       Regions.Coldarra.AddSound(NorthrendNight);
       Regions.InstanceOutland.AddSound(BlackCitadelOutlandDay);
-      Regions.InstanceBlackrock.AddSound(BlackCitadelOutlandDay);
       Regions.MonolithNoBuild.AddSound(BlackCitadelOutlandDay);
       Regions.TeldrassilAmbient.AddSound(AshenvaleNight);
       Regions.FeralasAmbient1.AddSound(AshenvaleNight);

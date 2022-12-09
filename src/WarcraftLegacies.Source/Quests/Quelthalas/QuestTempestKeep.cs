@@ -71,7 +71,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       }
 
       completingFaction.Player?.RescueGroup(_rescueUnits);
-      completingFaction.Player?.SetTeam(TeamSetup.Naga);
+      completingFaction.Player?.SetTeam(TeamSetup.Illidari);
       UnitAddAbility(LegendQuelthalas.LegendKael.Unit,
         Constants.ABILITY_A0IK_STAY_LOYAL_TO_THE_ILLIDARI_FACTION_SELECT);
       UnitAddAbility(LegendQuelthalas.LegendKael.Unit,

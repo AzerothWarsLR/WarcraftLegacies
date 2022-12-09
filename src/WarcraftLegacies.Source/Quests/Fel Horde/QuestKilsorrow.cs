@@ -47,7 +47,6 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       _demonGate.SetInvulnerable(true);
 
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      LegendExodarship.Unit?.SetInvulnerable(true);
     }
 
     //Todo: bad flavour
@@ -75,7 +74,6 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       _demonGate.Rescue(rewardPlayer);
       _goldmine.Show(true);
       LegendBlacktemple.Unit?.Rescue(rewardPlayer);
-      LegendExodarship.Unit?.SetInvulnerable(false);
       if (LegendBlacktemple.Unit != null)
         LegendMagtheridon.AddUnitDependency(LegendBlacktemple.Unit);
     }

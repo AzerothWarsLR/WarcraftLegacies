@@ -42,7 +42,6 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       _outerWaygate3 = outerWaygate3.Show(false);
       AddObjective(new ObjectiveTime(600));
       AddObjective(new ObjectiveExpire(785));
-      AddObjective(new ObjectiveLegendDead(LegendDraenei.LegendExodarship));
       AddObjective(new ObjectiveSelfExists());
       Global = true;
     }
