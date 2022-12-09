@@ -38,6 +38,9 @@ namespace WarcraftLegacies.Source.Setup
 
       IncompatibleResearchSystem.Register(Constants.UPGRADE_R08F_GARITHOS_MIND_CONTROL_LORDAERON,
         Constants.UPGRADE_R08E_JOIN_THE_CRUSADE_LORDAERON);
+      
+      IncompatibleResearchSystem.Register(Constants.UPGRADE_ROBF_DEMONIC_FLUX_FEL_HORDE, 
+        Constants.UPGRADE_R098_FEL_INFUSED_SKELETON_FEL_HORDE);
     }
   }
 }

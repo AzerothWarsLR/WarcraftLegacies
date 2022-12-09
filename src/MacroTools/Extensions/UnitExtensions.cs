@@ -588,5 +588,15 @@ namespace MacroTools.Extensions
       BlzSetUnitIntegerField(whichUnit, UNIT_IF_DEFENSE_TYPE, armorType);
       return whichUnit;
     }
+
+    /// <summary>
+    /// Adds an additional unit type to the unit.
+    /// </summary>
+    /// <returns>The same unit that was passed in.</returns>
+    public static unit AddType(this unit whichUnit, unittype whichUnitType)
+    {
+      UnitAddType(whichUnit, whichUnitType);
+      return whichUnit;
+    }
   }
 }

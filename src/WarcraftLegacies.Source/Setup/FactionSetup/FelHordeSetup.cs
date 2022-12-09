@@ -90,6 +90,7 @@ Your allies cannot reach you on Outland, you are alone.",
       FelHorde.ModObjectLimit(FourCC("R034"), Faction.UNLIMITED); //Enhanced Breath
       FelHorde.ModObjectLimit(FourCC("R035"), Faction.UNLIMITED); //Improved Firebolt
       FelHorde.ModObjectLimit(FourCC("R01Z"), Faction.UNLIMITED); //Battle Stations
+      FelHorde.ModObjectLimit(Constants.UPGRADE_R098_FEL_INFUSED_SKELETON_FEL_HORDE, Faction.UNLIMITED);
       FelHorde.SetObjectLevel(FourCC("R01Z"), 1); //Battle Stations
       
       FelHorde.ModObjectLimit(FourCC("n05R"), 1); //Felguard
