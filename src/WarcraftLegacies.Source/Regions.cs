@@ -326,7 +326,7 @@ public static class Regions
 	public static Rectangle TempestKeepHide2 { get; set; } = new Rectangle(1216f, -19552f, 3040f, -18368f);
 	public static Rectangle InstanceOutland { get; set; } = new Rectangle(-7104f, -32256f, 6016f, -18208f);
 	public static Rectangle Outland_Ships { get; set; } = new Rectangle(-7104f, -32256f, 6016f, -18208f);
-	public static Rectangle IllidanStartingPosition { get; set; } = new Rectangle(-22496f, -14272f, -21472f, -13152f);
+	public static Rectangle IllidanStartingPosition { get; set; } = new Rectangle(4032f, -31776f, 6048f, -29152f);
 	public static Rectangle ArtifactDummyInstance { get; set; } = new Rectangle(19584f, 23232f, 22688f, 24800f);
 	public static Rectangle Shadowforge_City { get; set; } = new Rectangle(11680f, -9728f, 13248f, -8544f);
 	public static Rectangle BlackrockUnlock { get; set; } = new Rectangle(11840f, -12224f, 13632f, -10208f);

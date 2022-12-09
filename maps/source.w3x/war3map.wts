@@ -1524,6 +1524,12 @@ STRING 255
 Hurls a bolt of lightning that bounces up to 5 times, dealing 75 damage to the primary target. Each jump deals 5% less damage.
 }
 
+STRING 256
+// Units: n0BL (Landing Site (25gold/min)), Name (Name)
+{
+Landing Site (25gold/min)
+}
+
 STRING 257
 // Units: O026 (God King of the Zandalari Tribe), Tip (Tooltip - Basic)
 {
@@ -15720,12 +15726,6 @@ STRING 2625
 // Units: n00J (Tomb of Sargeras (20gold/min)), Name (Name)
 {
 Tomb of Sargeras (20gold/min)
-}
-
-STRING 2626
-// Units: n0BL (Azuremyst Isle (25gold/min)), Name (Name)
-{
-Azuremyst Isle (25gold/min)
 }
 
 STRING 2627
