@@ -21269,12 +21269,6 @@ STRING 3546
 Dark Iron practitioner of shadow magic.|n|cfff5962dAbilities:|R Shadow Mend, Dispel Magic, Summon Shadowspawn|n|n|cffffcc00Attacks land and air units.|R
 }
 
-STRING 3547
-// Abilities: A0B9 (Fel Infused Skeleton), Ubertip (Tooltip - Normal - Extended)
-{
-Causes the Fel Grunt to transform into a Skeletal Grunt upon death, allowing it to continue to fight for 40 seconds.
-}
-
 STRING 3548
 // Abilities: A0LN (Thunder Fists), Researchtip (Tooltip - Learn)
 {
@@ -88140,6 +88134,12 @@ STRING 14688
 // Upgrades: R032 (Defend), Hotkey (Hotkey)
 {
 Z
+}
+
+STRING 14689
+// Abilities: A0B9 (Fel Infused Skeleton), Ubertip (Tooltip - Normal - Extended)
+{
+Causes the Fel Grunt to transform into a Skeletal Grunt upon death, allowing it to continue fighting for 40 seconds.
 }
 
 STRING 14690
