@@ -71024,7 +71024,7 @@ Research Fel Infused Skeleton
 STRING 11838
 // Abilities: A055 (Defensive Orbs), Researchubertip (Tooltip - Learn - Extended)
 {
-Causes the caster to generate an arcane orb whenever they cast a spell. The orb orbits around the caster for 45 seconds, dealing damage to enemy units it strikes. |n|n|cffffcc00Level 1|r - 150 damage. |n|cffffcc00Level 2|r - 250 damage. |n|cffffcc00Level 3|r - 350 damage. |n|cffffcc00Level 3|r - 450 damage.
+Research Fel Infused Skeleton
 }
 
 STRING 11839
@@ -74123,12 +74123,6 @@ STRING 12354
 // Abilities: A02Z (Healing Rain), Ubertip (Tooltip - Normal - Extended)
 {
 Causes rains of healing energy to pour down in a large area, healing friendly allied units for 20 hit points per second. |nLasts 10 seconds.
-}
-
-STRING 12355
-// Abilities: A055 (Defensive Orbs), Ubertip (Tooltip - Normal - Extended)
-{
-Causes the caster to generate an arcane orb whenever they cast a spell. The orb orbits around the caster for 45 seconds, dealing 450 damage to enemy units it strikes.
 }
 
 STRING 12356
@@ -86395,18 +86389,6 @@ STRING 14399
 Causes the caster to generate an arcane orb whenever they cast a spell. The orb orbits around the caster for 45 seconds, dealing 150 damage to enemy units it strikes.
 }
 
-STRING 14400
-// Abilities: A055 (Defensive Orbs), Ubertip (Tooltip - Normal - Extended)
-{
-Causes the caster to generate an arcane orb whenever they cast a spell. The orb orbits around the caster for 45 seconds, dealing 250 damage to enemy units it strikes.
-}
-
-STRING 14401
-// Abilities: A055 (Defensive Orbs), Ubertip (Tooltip - Normal - Extended)
-{
-Causes the caster to generate an arcane orb whenever they cast a spell. The orb orbits around the caster for 45 seconds, dealing 350 damage to enemy units it strikes.
-}
-
 STRING 14402
 // Upgrades: R03W (Magic Sentry), EditorSuffix (Editor Suffix)
 {
@@ -89868,6 +89850,24 @@ STRING 14979
 // Upgrades: R00K (Animal War Training), Ubertip (Tooltip - Extended)
 {
 Improves caster units by increasing their hit points by 100 and armor by 2.
+}
+
+STRING 14980
+// Abilities: A055 (Defensive Orbs), Researchubertip (Tooltip - Learn - Extended)
+{
+Causes the caster to generate an arcane orb whenever they cast a spell. The orb orbits around the caster for 45 seconds, dealing damage to enemy units it strikes. |n|n|cffffcc00Level 1|r - 75 damage. |n|cffffcc00Level 2|r - 125 damage. |n|cffffcc00Level 3|r - 175 damage. |n|cffffcc00Level 3|r - 225 damage.
+}
+
+STRING 14981
+// Abilities: A055 (Defensive Orbs), Ubertip (Tooltip - Normal - Extended)
+{
+Causes the caster to generate an arcane orb whenever they cast a spell. The orb orbits around the caster for 45 seconds, dealing 225 damage to enemy units it strikes.
+}
+
+STRING 14982
+// Abilities: A055 (Defensive Orbs), Ubertip (Tooltip - Normal - Extended)
+{
+Causes the caster to generate an arcane orb whenever they cast a spell. The orb orbits around the caster for 45 seconds, dealing 75 damage to enemy units it strikes.
 }
 
 STRING 14983
@@ -96109,6 +96109,12 @@ STRING 16029
 // Units: u02N (Voodoo Lounge), EditorSuffix (Name - Editor Suffix)
 {
 (Dragonmaw)
+}
+
+STRING 16030
+// Abilities: A055 (Defensive Orbs), Ubertip (Tooltip - Normal - Extended)
+{
+Causes the caster to generate an arcane orb whenever they cast a spell. The orb orbits around the caster for 45 seconds, dealing 175 damage to enemy units it strikes.
 }
 
 STRING 16031
