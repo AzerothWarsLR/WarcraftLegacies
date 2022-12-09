@@ -19198,12 +19198,6 @@ STRING 3201
 X
 }
 
-STRING 3202
-// Units: o02W (War Camp), Ubertip (Tooltip - Extended)
-{
-Home to the warriors of the Fel Horde.|n|cfff5962dTrains:|R Fel Grunt, Crossbowman, Demolisher|n|cfff5962dResearches:|R Demonic Flux, Improved Self-Bloodlust, Burning Oil
-}
-
 STRING 3203
 // Units: n00O (Skeletal Grunt), Name (Name)
 {
@@ -88320,6 +88314,12 @@ STRING 14720
 // Units: n0CP (Enslaved Dragon), Name (Name)
 {
 Enslaved Dragon
+}
+
+STRING 14721
+// Units: o02W (War Camp), Ubertip (Tooltip - Extended)
+{
+Home to the warriors of the Fel Horde.|n|cfff5962dTrains:|R Fel Grunt, Crossbowman, Demolisher|n|cfff5962dResearches:|R Fel Infused Skeleton, Demonic Flux, Improved Self-Bloodlust, Burning Oil
 }
 
 STRING 14722
