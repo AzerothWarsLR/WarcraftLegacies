@@ -44,7 +44,6 @@ namespace WarcraftLegacies.Source.Setup
       Regions.Stromgarde.AddSound(CityScapeDay);
       Regions.StormwindAmbient2.AddSound(CityScapeDay);
       Regions.Stromwind_antiship.AddSound(CityScapeDay);
-      Regions.ScarletAmbient.AddSound(CityScapeDay);
       Regions.ShipAmbient.AddSound(CityScapeDay);
       Regions.Gilneas.AddSound(DalaranRuinsDay);
       Regions.ShadowfangAmbient.AddSound(LordaeronSummerNight);
@@ -72,7 +71,6 @@ namespace WarcraftLegacies.Source.Setup
       Regions.HinterlandAmbient1.AddSound(LordaeronWinterNight);
       Regions.HinterlandAmbient2.AddSound(LordaeronWinterNight);
       Regions.TolbaradAmbient.AddSound(DalaranRuinsDay);
-      Regions.UndercityUnlock.AddSound(DalaranRuinsDay);
       Regions.DarkshireAmbient1.AddSound(DalaranRuinsDay);
       Regions.DarkshireAmbient2.AddSound(DalaranRuinsDay);
       Regions.DarkshireAmbient3.AddSound(DalaranRuinsDay);
@@ -93,15 +91,9 @@ namespace WarcraftLegacies.Source.Setup
     {
       Regions.Northrend_Ambiance.AddSound(NorthrendNight);
       Regions.Coldarra.AddSound(NorthrendNight);
-      Regions.InstanceDalaranDungeon1.AddSound(DalaranRuinsNight);
-      Regions.InstanceScholomance.AddSound(DalaranRuinsNight);
-      Regions.InstanceDireMaul.AddSound(BlackCitadelOutlandNight);
-      Regions.AethneumCatacombs.AddSound(BlackCitadelOutlandNight);
-      Regions.InstanceSargerasTomb.AddSound(BlackCitadelOutlandNight);
       Regions.InstanceOutland.AddSound(BlackCitadelOutlandDay);
       Regions.InstanceBlackrock.AddSound(BlackCitadelOutlandDay);
       Regions.MonolithNoBuild.AddSound(BlackCitadelOutlandDay);
-      Regions.InstanceAzjolNerub.AddSound(IceCrownNight);
       Regions.TeldrassilAmbient.AddSound(AshenvaleNight);
       Regions.FeralasAmbient1.AddSound(AshenvaleNight);
       Regions.FeralasAmbient2.AddSound(AshenvaleNight);
@@ -122,7 +114,6 @@ namespace WarcraftLegacies.Source.Setup
       Regions.BarrenAmbient4.AddSound(BarrensDay);
       Regions.BarrenAmbient5.AddSound(BarrensDay);
       Regions.UldumAmbiance.AddSound(BarrensDay);
-      Regions.AhnqirajInstance.AddSound(BarrensDay);
       Regions.SilithusAmbient.AddSound(DalaranRuinsDay);
       Regions.UngoroAmbient.AddSound(WetlandsNight);
       Regions.ZulfarrakAmbient.AddSound(Wetlandsday);

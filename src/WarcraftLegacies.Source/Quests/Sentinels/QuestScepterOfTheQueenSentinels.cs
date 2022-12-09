@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       ResearchId = Constants.UPGRADE_R02O_QUEST_COMPLETED_RETURN_TO_THE_FOLD_SENTINELS;
       AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendSentinels.Feathermoon));
       AddObjective(new ObjectiveLegendDead(LegendWarsong.StonemaulKeep));
-      AddObjective(new ObjectiveAnyUnitInRect(Regions.HighBourne, "Dire Maul", true));
+      //AddObjective(new ObjectiveAnyUnitInRect(Regions.HighBourne, "Dire Maul", true));
     }
 
     private readonly List<unit> _highBourneAreaUnits;

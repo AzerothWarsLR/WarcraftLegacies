@@ -15,7 +15,6 @@ namespace WarcraftLegacies.Source.Quests.Scourge
   /// </summary>
   public sealed class QuestPlague : QuestData
   {
-    private readonly IEnumerable<unit> _cultistsOfTheDamned;
     private readonly float _duration;
     private readonly unit _lordBarov;
 
@@ -30,17 +29,14 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// </summary>
     /// <param name="preferredPlagueFaction">If this Faction is still in the game, it gets control of the Plague Cauldrons instead of the quest holder.</param>
     /// <param name="lordBarov">Gets killed when the quest is completed.</param>
-    /// <param name="cultistsOfTheDamned">Gets killed when the quest is completed.</param>
     /// <param name="plagueParameters">Provides information about how the Plague should work.</param>
-    public QuestPlague(Faction preferredPlagueFaction, unit lordBarov, IEnumerable<unit> cultistsOfTheDamned,
-      PlagueParameters plagueParameters) : base(
+    public QuestPlague(Faction preferredPlagueFaction, unit lordBarov, PlagueParameters plagueParameters) : base(
       "Plague of Undeath",
       "The Cult of the Damned is prepared to unleash a devastating zombifying plague across the lands of Lordaeron.",
       "ReplaceableTextures\\CommandButtons\\BTNPlagueBarrel.blp")
     {
       _preferredPlagueFaction = preferredPlagueFaction;
       _lordBarov = lordBarov;
-      _cultistsOfTheDamned = cultistsOfTheDamned;
       _plagueRects = plagueParameters.PlagueRects;
       _plagueCauldronUnitTypeId = plagueParameters.PlagueCauldronUnitTypeId;
       _plagueCauldronSummonParameters = plagueParameters.PlagueCauldronSummonParameters;
@@ -80,10 +76,6 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.ModObjectLimit(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, -Faction.UNLIMITED);
-      foreach (var unit in _cultistsOfTheDamned)
-      {
-        KillUnit(unit);
-      }
 
       KillUnit(_lordBarov);
 

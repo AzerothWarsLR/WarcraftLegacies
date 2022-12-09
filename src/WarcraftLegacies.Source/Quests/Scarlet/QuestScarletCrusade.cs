@@ -58,8 +58,8 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
         Constants.UPGRADE_R06V_SCARLET_CRUSADE_IS_UNLEASHED, 1);
       SetPlayerTechResearched(ScarletSetup.ScarletCrusade.Player, Constants.UPGRADE_R086_PATH_CHOSEN, 1);
       _scarletMonasteryEntrance
-        .Show(true)
-        .SetWaygateDestination(Regions.Scarlet_Monastery_Interior.Center);
+        .Show(true);
+        //.SetWaygateDestination(Regions.Scarlet_Monastery_Interior.Center);
       completingFaction.Player?.RescueGroup(_rescueUnits);
       completingFaction.Player?.SetTeam(TeamSetup.ScarletCrusade);
       completingFaction.Name = "Scarlet";

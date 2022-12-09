@@ -15,7 +15,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
     /// </summary>
     public static void Setup()
     {
-      SpellSystem.Register(new CorruptBuildingSpell(Constants.ABILITY_A0N8_CORRUPT_FORSAKEN, 72, 60, 500));
       PassiveAbilityManager.Register(new PersistentSoul(Constants.UNIT_N07W_PLAGUE_REVENANT_FORSAKEN,
         Constants.ABILITY_A05L_PERSISTENT_SOUL_FORSAKEN_PLAGUE_REVENANT)
       {

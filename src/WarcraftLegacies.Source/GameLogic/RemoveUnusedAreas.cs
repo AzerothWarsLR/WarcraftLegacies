@@ -16,10 +16,7 @@ namespace WarcraftLegacies.Source.GameLogic
     {
       var areas = new Rectangle[]
       {
-        Regions.NyalothaInstance,
-        Regions.InstanceNazjatar,
-        Regions.TempestKeepHide2,
-        Regions.AhnqirajInstance
+        Regions.TempestKeepHide2
       };
       foreach (var area in areas)
       {

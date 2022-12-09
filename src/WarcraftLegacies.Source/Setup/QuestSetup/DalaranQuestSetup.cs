@@ -31,8 +31,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         preplacedUnitSystem.GetUnit(Constants.UNIT_NWLD_DIRE_WOLF_CREEP, new Point(7668.5f, 4352.2f))));
       dalaran.AddQuest(new QuestDalaran(new[]
       {
-        Regions.Dalaran,
-        Regions.DalaranDungeon
+        Regions.Dalaran
       }, new QuestData[]
       {
         questSouthshore,

@@ -66,7 +66,6 @@ namespace WarcraftLegacies.Source.Setup
       ShipyardBanZones.Setup(new[]
       {
         Regions.CaerDarrowShipyard,
-        Regions.InstanceNazjatar,
         Regions.Arathi_Ships,
         Regions.Auberdine_Ships,
         Regions.Kali_Ships,
@@ -76,8 +75,6 @@ namespace WarcraftLegacies.Source.Setup
         Regions.Auberdine_Ships_2,
         Regions.Outland_Ships,
         Regions.Northern_Kali_Ships,
-        Regions.Scholo_Ships,
-        Regions.DalaranDungeon,
         Regions.Stromwind_antiship,
         Regions.StratholmeShipyard,
         Regions.Gilneas_Canals,
@@ -88,7 +85,6 @@ namespace WarcraftLegacies.Source.Setup
         Regions.South_EK_Ships,
         Regions.IcecrownShipyard,
         Regions.Loch_Modan_Ships,
-        Regions.Tomb_Of_Sargeras_Ships,
         Regions.Quel_Ships_1,
         Regions.Quel_Ships_2,
         Regions.Quel_Ships_3

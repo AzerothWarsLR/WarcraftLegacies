@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       frostwolf.AddQuest(new QuestThunderBluff(Regions.ThunderBluff.Rect));
       frostwolf.AddQuest(new QuestRexxar(preplacedUnitSystem));
       frostwolf.AddQuest(new QuestDrektharsSpellbook());
-      frostwolf.AddQuest(new QuestRoyalPlunder(Regions.HighBourne, artifactSetup.ScepterOfTheQueen));
+      //frostwolf.AddQuest(new QuestRoyalPlunder(Regions.HighBourne, artifactSetup.ScepterOfTheQueen));
       frostwolf.AddQuest(new QuestFreeNerzhul());
       frostwolf.AddQuest(new QuestWorldShaman());
     }

@@ -40,8 +40,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 
     protected override void OnComplete(Faction completingFaction)
     {
-      SetItemPosition(_scepterOfTheQueen.Item, Regions.HighBourne.Center.X,
-        Regions.HighBourne.Center.Y);
+      //SetItemPosition(_scepterOfTheQueen.Item, Regions.HighBourne.Center.X, Regions.HighBourne.Center.Y);
       foreach (var unit in _unitsToRescue) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
   }

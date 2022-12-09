@@ -75,8 +75,8 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       UnitAddItem(LegendQuelthalas.LegendKael.Unit,
         CreateItem(Constants.ITEM_I00M_SUMMON_ELVEN_WORKERS, GetUnitX(LegendQuelthalas.LegendKael.Unit),
           GetUnitY(LegendQuelthalas.LegendKael.Unit)));
-      if (GetLocalPlayer() == completingFaction.Player)
-        SetCameraPosition(Regions.BloodElfSecondChanceSpawn.Center.X, Regions.BloodElfSecondChanceSpawn.Center.Y);
+      //if (GetLocalPlayer() == completingFaction.Player)
+        //SetCameraPosition(Regions.BloodElfSecondChanceSpawn.Center.X, Regions.BloodElfSecondChanceSpawn.Center.Y);
       GrantPower(completingFaction);
     }
 

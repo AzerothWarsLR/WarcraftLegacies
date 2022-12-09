@@ -192,20 +192,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       Legend.Register(FountainOfHealthFeralas);
 
-      FountainOfHealthTomb = new Legend
-      {
-        Capturable = true,
-        Unit = preplacedUnitSystem.GetUnit(FourCC("nfoh"), Regions.InstanceSargerasTomb.Center)
-      };
-      Legend.Register(FountainOfHealthTomb);
-
-      FountainOfHealthDalaran = new Legend
-      {
-        Capturable = true,
-        Unit = preplacedUnitSystem.GetUnit(FourCC("nfoh"), Regions.DalaranDungeon.Center)
-      };
-      Legend.Register(FountainOfHealthDalaran);
-
       FountainOfBlood = new Legend
       {
         Capturable = true,

@@ -2,7 +2,6 @@
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using WarcraftLegacies.Source.Quests.Forsaken;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
@@ -22,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     private readonly unit _outerWaygate3;
 
     /// <summary>
-    /// Initializes a new instance of the class <see cref="QuestUndercity"/>.
+    /// Initializes a new instance of the class <see cref="QuestDarkPortalOpen"/>.
     /// </summary>
     /// <param name="portalController"></param>
     /// <param name="innerWaygate1">A Waygate inside outland, next to the Dark Portal.</param>

@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       "Scholomance is home to a wide variety of profane artifacts. Bring Jaina there to see what might be discovered.",
       "ReplaceableTextures\\CommandButtons\\BTNSoulGem.blp")
     {
-      AddObjective(new ObjectiveLegendInRect(LegendDalaran.LegendJaina, Regions.Jaina_soul_gem, "Scholomance"));
+      //AddObjective(new ObjectiveLegendInRect(LegendDalaran.LegendJaina, Regions.Jaina_soul_gem, "Scholomance"));
       AddObjective(new ObjectiveLegendDead(LegendNeutral.Caerdarrow));
     }
     

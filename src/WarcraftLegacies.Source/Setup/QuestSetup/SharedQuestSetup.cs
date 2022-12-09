@@ -18,14 +18,14 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     /// </summary>
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
     {
-      var tombOfSargerasQuest =
-        new QuestTombOfSargeras(
-          preplacedUnitSystem.GetUnit(Constants.UNIT_N032_TOMB_OF_SARGERAS, Regions.Broken_Isles.Center),
-          Regions.Sargeras_Exit, preplacedUnitSystem.GetUnit(Constants.UNIT_O01U_GUL_DAN_S_REMAINS));
+      // var tombOfSargerasQuest =
+      //   new QuestTombOfSargeras(
+      //     preplacedUnitSystem.GetUnit(Constants.UNIT_N032_TOMB_OF_SARGERAS, Regions.Broken_Isles.Center),
+      //     Regions.Sargeras_Exit, preplacedUnitSystem.GetUnit(Constants.UNIT_O01U_GUL_DAN_S_REMAINS));
       
       foreach (var faction in FactionManager.GetAllFactions())
       {
-        faction.AddQuest(tombOfSargerasQuest);
+        //faction.AddQuest(tombOfSargerasQuest);
         faction.AddQuest(new QuestZinrokhAssembly(new List<Artifact>()
         {
           artifactSetup.AzureFragment,

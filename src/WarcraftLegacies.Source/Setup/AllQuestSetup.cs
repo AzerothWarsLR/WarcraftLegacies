@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Setup
       KultirasQuestSetup.Setup(preplacedUnitSystem);
       ScarletQuestSetup.Setup(preplacedUnitSystem);
       TrollQuestSetup.Setup(artifactSetup);
-      ForsakenQuestSetup.Setup(questPlague, preplacedUnitSystem);
+      ForsakenQuestSetup.Setup();
       GoblinQuestSetup.Setup();
       DraeneiQuestSetup.Setup(preplacedUnitSystem);
       DragonmawQuestSetup.Setup(preplacedUnitSystem);
