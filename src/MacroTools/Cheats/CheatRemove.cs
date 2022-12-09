@@ -1,4 +1,4 @@
-using MacroTools.Wrappers;
+using MacroTools.Extensions;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
@@ -16,7 +16,7 @@ namespace MacroTools.Cheats
     {
       if (!TestMode.CheatCondition()) return;
       player p = GetTriggerPlayer();
-      foreach (var unit in new GroupWrapper().EnumSelectedUnits(p).EmptyToList())
+      foreach (var unit in CreateGroup().EnumSelectedUnits(p).EmptyToList())
       {
         Remove(unit);
       }

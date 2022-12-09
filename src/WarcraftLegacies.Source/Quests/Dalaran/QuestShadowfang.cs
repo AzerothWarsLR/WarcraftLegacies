@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     /// </summary>
     /// <param name="rescueRect">Units in this region will start invulnerable and be rescued when the quest completes.</param>
     /// <param name="direwolfToKill">This unit must be killed to complete the quest.</param>
-    public QuestShadowfang(Rectangle rescueRect, unit direwolfToKill) : base("Shadows of Silverspine Forest",
+    public QuestShadowfang(Rectangle rescueRect, unit direwolfToKill) : base("Shadows of Silverpine Forest",
       "The woods of Silverspine are unsafe for travellers, they need to be investigated",
       "ReplaceableTextures\\CommandButtons\\BTNworgen.blp")
     {
@@ -30,6 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       AddObjective(new ObjectiveExpire(1444));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      Required = true;
     }
 
     /// <inheritdoc />

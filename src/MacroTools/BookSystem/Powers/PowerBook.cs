@@ -18,7 +18,7 @@ namespace MacroTools.BookSystem.Powers
     /// Initializes a new instance of the <see cref="PowerBook"/> class.
     /// </summary>
     /// <param name="trackedPlayer">The player to show <see cref="Power"/>s for.</param>
-    public PowerBook(player trackedPlayer) : base(0.3f, 0.39f, 0.02f, 0.015f)
+    public PowerBook(player trackedPlayer) : base(0.34f, 0.39f, 0.02f, 0.015f)
     {
       var firstPage = AddPage();
       firstPage.Visible = true;

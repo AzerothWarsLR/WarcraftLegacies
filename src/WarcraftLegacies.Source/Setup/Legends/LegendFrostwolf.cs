@@ -20,14 +20,15 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = FourCC("Ocbh"),
         DeathMessage =
-          "CairneFourCC(s spirit has passed on from this world. The Tauren have already begun to revere their fallen ancestor.",
+          "Cairne's spirit has passed on from this world. The Tauren have already begun to revere their fallen ancestor.",
         StartingXp = 1000
       };
       Legend.Register(LegendCairne);
 
       LegendThrall = new Legend
       {
-        UnitType = FourCC("Othr")
+        UnitType = Constants.UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF,
+        Name = "Thrall"
       };
       Legend.Register(LegendThrall);
 

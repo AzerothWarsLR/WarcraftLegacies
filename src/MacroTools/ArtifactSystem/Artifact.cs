@@ -25,9 +25,9 @@ namespace MacroTools.ArtifactSystem
       Item = whichItem;
       _locationType = ArtifactLocationType.Ground;
       SetOwningPlayer(null);
-      PlayerUnitEvents.Register(PlayerUnitEvent.ItemTypeIsPickedUp, OnPickedUp, GetItemTypeId(whichItem));
-      PlayerUnitEvents.Register(PlayerUnitEvent.ItemTypeIsDropped, OnDropped, GetItemTypeId(whichItem));
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeChangesOwner, OnUnitChangesOwner);
+      PlayerUnitEvents.Register(ItemTypeEvent.IsPickedUp, OnPickedUp, GetItemTypeId(whichItem));
+      PlayerUnitEvents.Register(ItemTypeEvent.IsDropped, OnDropped, GetItemTypeId(whichItem));
+      PlayerUnitEvents.Register(UnitTypeEvent.ChangesOwner, OnUnitChangesOwner);
       PlayerData.FactionChange += OnPlayerFactionChange;
     }
 

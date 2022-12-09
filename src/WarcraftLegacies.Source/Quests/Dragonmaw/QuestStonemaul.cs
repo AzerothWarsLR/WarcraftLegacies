@@ -5,7 +5,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -21,12 +20,12 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       "ReplaceableTextures\\CommandButtons\\BTNMercenaryCamp.blp")
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N022_STONEMAUL_20GOLD_MIN)));
-      AddObjective(new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(Constants.UNIT_NOGA_STONEMAUL_WARCHIEF_KOR_GALL)));
+      AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(Constants.UNIT_NOGA_STONEMAUL_WARCHIEF_KOR_GALL)));
       AddObjective(new ObjectiveLegendInRect(LegendDragonmaw.Zaela, Regions.StonemaulKeep, "Stonemaul"));
       AddObjective(new ObjectiveExpire(1327));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R08U_QUEST_COMPLETED_RUINS_OF_STONEMAUL;
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
           SetUnitInvulnerable(unit, true);
@@ -38,9 +37,9 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
 
     //Todo: bad flavour
     protected override string CompletionPopup =>
-      "Stonemaul now belongs to the Dragonmaw Clan.";
+      "Stonemaul now belongs to the Dragonmaw Clan. Gorfax Angerfang has joined the Dragonmaw";
 
-    protected override string RewardDescription => "Control of all buildings in Stonemaul";
+    protected override string RewardDescription => "Control of all buildings in Stonemaul and Gorfax is now trainable at the Altar";
 
     protected override void OnFail(Faction completingFaction)
     {

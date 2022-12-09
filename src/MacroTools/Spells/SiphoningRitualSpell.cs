@@ -1,8 +1,8 @@
 ﻿using System.Linq;
 using MacroTools.Channels;
 using MacroTools.ChannelSystem;
+using MacroTools.Extensions;
 using MacroTools.SpellSystem;
-using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -69,7 +69,7 @@ namespace MacroTools.Spells
     /// <inheritdoc />
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      var targets = new GroupWrapper()
+      var targets = CreateGroup()
         .EnumUnitsInRange(targetPoint, Radius)
         .EmptyToList().Where(unit => IsValidTarget(caster, unit))
         .Take(TargetCountBase + TargetCountLevel * GetAbilityLevel(caster));

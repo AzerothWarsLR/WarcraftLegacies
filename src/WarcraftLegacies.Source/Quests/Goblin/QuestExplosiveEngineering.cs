@@ -1,6 +1,5 @@
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Goblin
 {
@@ -14,8 +13,9 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       "The Goblin chief engineer, Gazlowee, is overseeing the construction of the overseas oil platforms.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp")
     {
-      AddObjective(new ObjectiveTrain(FourCC("n0AQ"), FourCC("h04Z"), 4));
-      ResearchId = FourCC("R01F");
+      AddObjective(new ObjectiveBuild(Constants.UNIT_O04R_OIL_RIG_GOBLIN, 4));
+      ResearchId = Constants.UPGRADE_R01F_QUEST_COMPLETED_EXPLOSIVE_ENGINEERING_FROSTWOLF;
+      Required = true;
     }
   }
 }

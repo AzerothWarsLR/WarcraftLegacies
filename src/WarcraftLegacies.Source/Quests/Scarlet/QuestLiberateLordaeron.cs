@@ -1,11 +1,10 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Libraries;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -30,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R07P");
 
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
           SetUnitInvulnerable(unit, true);
@@ -39,10 +38,10 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     }
 
 
-    protected override string CompletionPopup => "The lands of Lordaeron have been purged from Undeath and Corruption";
+    protected override string CompletionPopup => "The lands of Lordaeron have been purged from Undeath and Corruption, the Scarlet can now expand North";
 
     protected override string RewardDescription =>
-      "Enable to train Commander Goodchild and Isilien, Unlock New Hearthglen in Northrend and the Scarlet Harbor";
+      "Unlock New Hearthglen in Northrend and the Scarlet Harbor";
 
     protected override void OnComplete(Faction completingFaction)
     {

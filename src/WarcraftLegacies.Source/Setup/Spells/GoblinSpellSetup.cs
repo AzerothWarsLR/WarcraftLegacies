@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Regions.Trade3.Center,
         Regions.Trade4.Center
       };
-      PassiveAbilityManager.Register(new Trader(Constants.UNIT_NZEP_TRADING_ZEPPELIN_WARSONG, 0, 60, zeppelinTradeTargets));
+      PassiveAbilityManager.Register(new Trader(Constants.UNIT_NZEP_TRADING_ZEPPELIN_WARSONG, 25, 0, zeppelinTradeTargets));
 
       var traderTradeTargets = new[]
       {
@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Regions.Trader2.Center,
         Regions.Trader3.Center
       };
-      PassiveAbilityManager.Register(new Trader(Constants.UNIT_O04S_TRADER_GOBLIN, 40, 0, traderTradeTargets));
+      PassiveAbilityManager.Register(new Trader(Constants.UNIT_O04S_TRADER_GOBLIN, 50, 0, traderTradeTargets));
 
       SpellSystem.Register(new NuclearLaunch(Constants.ABILITY_A0RH_INTERCONTINENTAL_BOMBARDMENT_GOBLIN_ARTILLERY, 25));
 
@@ -46,9 +46,10 @@ namespace WarcraftLegacies.Source.Setup.Spells
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_N062_SHREDDER_GOBLIN));
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_H08Z_ASSAULT_TANK_GOBLIN));
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_H091_WAR_ZEPPELIN_GOBLIN));
+      PassiveAbilityManager.Register(new OilUser(Constants.UNIT_O01M_ENGINEER_S_GUILD_GOBLIN));
       PassiveAbilityManager.Register(new OilHarvester(Constants.UNIT_O04R_OIL_RIG_GOBLIN)
       {
-        OilHarvestedPerSecond = 10,
+        OilHarvestedPerSecond = 5,
         Radius = 400
       });
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_H04Z_KEZAN_OIL_SUPPLY_GOBLIN));

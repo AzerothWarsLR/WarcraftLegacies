@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.PassiveAbilitySystem;
-using MacroTools.Wrappers;
 using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
@@ -78,10 +77,9 @@ namespace MacroTools.PassiveAbilities
     {
       try
       {
-        if (!BlzGetEventIsAttack())
-          return;
-        
         var caster = GetEventDamageSource();
+        if (!BlzGetEventIsAttack() || GetUnitAbilityLevel(caster, AbilityTypeId) == 0)
+          return;
         var target = GetTriggerUnit();
         
         AddSpecialEffect(Effect, GetUnitX(target), GetUnitY(target))
@@ -89,7 +87,7 @@ namespace MacroTools.PassiveAbilities
           .SetYaw(GetUnitFacing(caster) * MathEx.DegToRad)
           .SetLifespan();
 
-        foreach (var nearbyUnit in new GroupWrapper().EnumUnitsInRange(caster.GetPosition(), Radius).EmptyToList())
+        foreach (var nearbyUnit in CreateGroup().EnumUnitsInRange(caster.GetPosition(), Radius).EmptyToList())
         {
           if (IsUnitAlly(nearbyUnit, caster.OwningPlayer()) || !UnitAlive(nearbyUnit) || BlzIsUnitInvulnerable(nearbyUnit) ||
               IsUnitType(nearbyUnit, UNIT_TYPE_STRUCTURE) || IsUnitType(nearbyUnit, UNIT_TYPE_ANCIENT))

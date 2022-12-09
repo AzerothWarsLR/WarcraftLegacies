@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace MacroTools.HintSystem
@@ -28,7 +29,7 @@ namespace MacroTools.HintSystem
 
     private void Display()
     {
-      Libraries.Display.DisplayHint(GetLocalPlayer(), _msg);
+      GetLocalPlayer().DisplayHint(_msg);
       Unread.Remove(this);
     }
 

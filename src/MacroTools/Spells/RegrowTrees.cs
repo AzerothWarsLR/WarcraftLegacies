@@ -16,7 +16,7 @@ namespace MacroTools.Spells
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
       GeneralHelpers.EnumDestructablesInCircle(Radius, new Point(GetUnitX(caster), GetUnitY(caster)),
-        () => { DestructableRestoreLife(GetEnumDestructable(), GetDestructableMaxLife(GetEnumDestructable()), true); });
+        () => DestructableRestoreLife(GetEnumDestructable(), GetDestructableMaxLife(GetEnumDestructable()), true));
     }
   }
 }

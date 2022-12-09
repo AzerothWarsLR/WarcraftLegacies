@@ -59,8 +59,8 @@ Until then, plunder as much as you can from the surrounding lands."
       Dragonmaw.ModObjectLimit(FourCC("n09O"), 6); //DK
       Dragonmaw.ModObjectLimit(FourCC("u01T"), Faction.UNLIMITED); //Necrolyte
       Dragonmaw.ModObjectLimit(FourCC("o05L"), Faction.UNLIMITED); //Phase Grenadier
-      Dragonmaw.ModObjectLimit(FourCC("obot"), 12); //Transport Ship
-      Dragonmaw.ModObjectLimit(FourCC("odes"), 12); //Orc Frigate
+      Dragonmaw.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
+      Dragonmaw.ModObjectLimit(FourCC("odes"), Faction.UNLIMITED); //Orc Frigate
       Dragonmaw.ModObjectLimit(FourCC("ojgn"), 6); //Juggernaught
 
       Dragonmaw.ModObjectLimit(FourCC("O01Q"), 1); //Nekrosh

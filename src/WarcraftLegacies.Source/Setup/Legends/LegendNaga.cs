@@ -21,40 +21,46 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendIllidan = new Legend
       {
         UnitType = FourCC("Eill"),
-        PlayerColor = PLAYER_COLOR_PURPLE
+        PlayerColor = PLAYER_COLOR_PURPLE,
+        Name = "Illidan"
       };
       Legend.Register(LegendIllidan);
 
       LegendVashj = new Legend
       {
         UnitType = FourCC("Hvsh"),
-        StartingXp = 2800
+        StartingXp = 2800,
+        Name = "Lady Vashj"
       };
       Legend.Register(LegendVashj);
 
       LegendAzshara = new Legend
       {
-        UnitType = FourCC("H08U")
+        UnitType = FourCC("H08U"),
+        Name = "Azshara"
       };
       Legend.Register(LegendAzshara);
 
       LegendNajentus = new Legend
       {
         UnitType = FourCC("U00S"),
-        StartingXp = 2800
+        StartingXp = 2800,
+        Name = "Warlord Najentus"
       };
       Legend.Register(LegendNajentus);
 
       LegendAltruis = new Legend
       {
         UnitType = FourCC("E015"),
+        Name = "Altruis"
       };
       Legend.Register(LegendAltruis);
 
       LegendAkama = new Legend
       {
         UnitType = FourCC("Naka"),
-        StartingXp = 4000
+        StartingXp = 4000,
+        Name = "Akama"
       };
       Legend.Register(LegendAkama);
 
@@ -63,7 +69,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(FourCC("U01Z")),
         DeathMessage =
           "N'zoth the Corruptor lay in wait for millenia before enacting final ploy. In the end, it was all for naught;Legend.Register(LegendNzoth); N'zoth lies dead, and he will never witness the true floatization of his Black Empire.",
-        PermaDies = true
+        PermaDies = true,
+        Name = "N'zoth"
       };
 
       LegendNazjatar = new Legend
@@ -71,7 +78,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(FourCC("n045")),
         DeathMessage =
           "The Eternal Palace, the royal seat of Queen Azshara and the Nazjatar Empire, has been destroyed.",
-        Hivemind = true
+        Hivemind = true,
       };
       Legend.Register(LegendNazjatar);
       LegendNazjatar.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N0BQ_THE_FIRST_GUARDIAN_NZOTH));

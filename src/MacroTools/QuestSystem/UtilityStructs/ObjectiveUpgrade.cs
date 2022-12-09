@@ -8,7 +8,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
     public ObjectiveUpgrade(int objectId, int upgradeFromId)
     {
       Description = "Upgrade your " + GetObjectName(upgradeFromId) + " to a " + GetObjectName(objectId);
-      PlayerUnitEvents.Register(PlayerUnitEvent.UnitTypeFinishesUpgrade, OnUpgrade, objectId);
+      PlayerUnitEvents.Register(UnitTypeEvent.FinishesUpgrade, OnUpgrade, objectId);
     }
 
     private void OnUpgrade()
