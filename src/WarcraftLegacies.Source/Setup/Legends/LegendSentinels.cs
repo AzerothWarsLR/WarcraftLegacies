@@ -45,7 +45,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// </summary>
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Maiev = new LegendaryHero
+      Maiev = new LegendaryHero("Maiev Shadowsong")
       {
         UnitType = FourCC("Ewrd")
       };
@@ -63,21 +63,21 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       CapitalManager.Register(Feathermoon);
 
-      Tyrande = new LegendaryHero
+      Tyrande = new LegendaryHero("Tyrande Whisperwind")
       {
         UnitType = FourCC("Etyr"),
         PlayerColor = PLAYER_COLOR_CYAN
       };
       LegendaryHeroManager.Register(Tyrande);
 
-      Shandris = new LegendaryHero
+      Shandris = new LegendaryHero("Shandris Feathermoon")
       {
         UnitType = FourCC("E002"),
         StartingXp = 1000
       };
       LegendaryHeroManager.Register(Shandris);
 
-      Jarod = new LegendaryHero
+      Jarod = new LegendaryHero("Jarod Shadowsong")
       {
         UnitType = FourCC("O02E"),
         StartingXp = 4000

@@ -23,32 +23,31 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendKelthuzad = new LegendaryHero
+      LegendKelthuzad = new LegendaryHero("Kel'thuzad")
       {
         UnitType = FourCC("U001"),
         PermaDies = true,
         DeathMessage =
           "Kel'thuzad has been slain. He lives on in spectral form, and may yet return if (he is brought to the Sunwell.",
         DeathSfx = "Abilities\\Spells\\Undead\\DeathCoil\\DeathCoilSpecialArt.mdl",
-        StartingXp = 1000,
-        Name = "Kel'thuzad"
+        StartingXp = 1000
       };
       LegendaryHeroManager.Register(LegendKelthuzad);
 
-      LegendAnubarak = new LegendaryHero
+      LegendAnubarak = new LegendaryHero("Anub'arak")
       {
         UnitType = FourCC("Uanb")
       };
       LegendaryHeroManager.Register(LegendAnubarak);
 
-      LegendRivendare = new LegendaryHero
+      LegendRivendare = new LegendaryHero("Baron Rivendare")
       {
         UnitType = FourCC("U00A"),
         StartingXp = 1000
       };
       LegendaryHeroManager.Register(LegendRivendare);
 
-      LegendUtgarde = new Capital()
+      LegendUtgarde = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h00O")),
         Capturable = true

@@ -14,49 +14,43 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
     public static void Setup()
     {
-      LegendIllidan = new LegendaryHero
+      LegendIllidan = new LegendaryHero("Illidan")
       {
         UnitType = FourCC("Eill"),
-        PlayerColor = PLAYER_COLOR_PURPLE,
-        Name = "Illidan"
+        PlayerColor = PLAYER_COLOR_PURPLE
       };
       LegendaryHeroManager.Register(LegendIllidan);
 
-      LegendVashj = new LegendaryHero
+      LegendVashj = new LegendaryHero("Lady Vashj")
       {
         UnitType = FourCC("Hvsh"),
         StartingXp = 2800,
-        Name = "Lady Vashj"
       };
       LegendaryHeroManager.Register(LegendVashj);
 
-      LegendAzshara = new LegendaryHero
+      LegendAzshara = new LegendaryHero("Azshara")
       {
-        UnitType = FourCC("H08U"),
-        Name = "Azshara"
+        UnitType = FourCC("H08U")
       };
       LegendaryHeroManager.Register(LegendAzshara);
 
-      LegendNajentus = new LegendaryHero
+      LegendNajentus = new LegendaryHero("Warlord Najentus")
       {
         UnitType = FourCC("U00S"),
-        StartingXp = 2800,
-        Name = "Warlord Najentus"
+        StartingXp = 2800
       };
       LegendaryHeroManager.Register(LegendNajentus);
 
-      LegendAltruis = new LegendaryHero
+      LegendAltruis = new LegendaryHero("Altruis")
       {
-        UnitType = FourCC("E015"),
-        Name = "Altruis"
+        UnitType = FourCC("E015")
       };
       LegendaryHeroManager.Register(LegendAltruis);
 
-      LegendAkama = new LegendaryHero
+      LegendAkama = new LegendaryHero("Akama")
       {
         UnitType = FourCC("Naka"),
-        StartingXp = 4000,
-        Name = "Akama"
+        StartingXp = 4000
       };
       LegendaryHeroManager.Register(LegendAkama);
     }

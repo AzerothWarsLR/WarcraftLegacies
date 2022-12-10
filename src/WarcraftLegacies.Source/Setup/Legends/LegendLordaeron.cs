@@ -62,27 +62,27 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// </summary>
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
     {
-      Terenas = new LegendaryHero
+      Terenas = new LegendaryHero("Terenas Menethil")
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_NEMI_KING_TERENAS_MENETHIL_LORDAERON)
       };
       LegendaryHeroManager.Register(Terenas);
       
-      Mograine = new LegendaryHero
+      Mograine = new LegendaryHero("Alexandros Mograine")
       {
         UnitType = Constants.UNIT_H01J_THE_ASHBRINGER_LORDAERON,
         StartingXp = 2800
       };
       LegendaryHeroManager.Register(Mograine);
 
-      Garithos = new LegendaryHero
+      Garithos = new LegendaryHero("Garithos")
       {
         UnitType = Constants.UNIT_HLGR_GRAND_MARSHAL_SCARLET,
         StartingXp = 2800
       };
       LegendaryHeroManager.Register(Garithos);
 
-      Goodchild = new LegendaryHero
+      Goodchild = new LegendaryHero("High Commander Goodchilde")
       {
         UnitType = Constants.UNIT_E000_IMPROVED_ANCIENT_PROTECTOR_DRUIDS,
         StartingXp = 2800
@@ -135,7 +135,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       TyrsHand.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER, new Point(20024, 8123)));
       TyrsHand.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER, new Point(20042, 7420)));
 
-      Uther = new LegendaryHero
+      Uther = new LegendaryHero("Uther the Lightbringer")
       {
         UnitType = Constants.UNIT_HUTH_LEADER_OF_THE_SILVER_HAND_LORDAERON,
         DeathMessage =
@@ -145,7 +145,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       LegendaryHeroManager.Register(Uther);
 
-      Arthas = new LegendaryHero
+      Arthas = new LegendaryHero("Arthas Menethil")
       {
         UnitType = Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON,
         PlayerColor = PLAYER_COLOR_BLUE

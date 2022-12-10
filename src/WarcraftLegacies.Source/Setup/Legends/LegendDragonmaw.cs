@@ -21,21 +21,18 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       CapitalManager.Register(DragonmawPort);
 
-      LegendaryHeroManager.Register(Zaela = new LegendaryHero
+      LegendaryHeroManager.Register(Zaela = new LegendaryHero("Zaela")
       {
-        Name = "Zaela",
         UnitType = Constants.UNIT_O05S_WARLORD_MAIDEN_DRAGONMAW
       });
 
-      LegendaryHeroManager.Register(Nekrosh = new LegendaryHero
+      LegendaryHeroManager.Register(Nekrosh = new LegendaryHero("Nek'rosh Skullcrasher")
       {
-        Name = "Nek'rosh Skullcrasher",
         UnitType = Constants.UNIT_O01Q_DRAGONMAW_CHIEFTAIN_FEL_HORDE
       });
 
-      LegendaryHeroManager.Register(Gorfax = new LegendaryHero
+      LegendaryHeroManager.Register(Gorfax = new LegendaryHero("Gorfax")
       {
-        Name = "Gorfax Angerfang",
         UnitType = Constants.UNIT_O06F_BLOOD_WARRIOR_DRAGONMAW,
         StartingXp = 5400,
       });

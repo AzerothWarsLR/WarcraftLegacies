@@ -21,46 +21,46 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendMagtheridon = new LegendaryHero
+      LegendMagtheridon = new LegendaryHero("Magtheridon")
       {
         UnitType = Constants.UNIT_NMAG_LORD_OF_OUTLAND_FEL_HORDE,
         DeathMessage = "Magtheridon’s eternal demon soul has been consumed, and his life permanently extinguished. The Lord of Outland has fallen."
       };
       LegendaryHeroManager.Register(LegendMagtheridon);
 
-      LegendRend = new LegendaryHero
+      LegendRend = new LegendaryHero("Rend Blackhand")
       {
         UnitType = FourCC("Nbbc"),
         StartingXp = 2800
       };
       LegendaryHeroManager.Register(LegendRend);
 
-      LegendKargath = new LegendaryHero
+      LegendKargath = new LegendaryHero("Kargath Bladefist")
       {
         UnitType = FourCC("N03D"),
         StartingXp = 2800
       };
       LegendaryHeroManager.Register(LegendKargath);
 
-      LegendZuluhed = new LegendaryHero
+      LegendZuluhed = new LegendaryHero("Zuluhed the Whacked")
       {
         UnitType = FourCC("O00Y")
       };
       LegendaryHeroManager.Register(LegendZuluhed);
 
-      LegendNekrosh = new LegendaryHero
+      LegendNekrosh = new LegendaryHero("Nek'rosh Sullcrusher")
       {
         UnitType = FourCC("O01Q")
       };
       LegendaryHeroManager.Register(LegendNekrosh);
 
-      LegendChogall = new LegendaryHero
+      LegendChogall = new LegendaryHero("Cho'gall")
       {
         UnitType = FourCC("O01P")
       };
       LegendaryHeroManager.Register(LegendChogall);
 
-      LegendTeron = new LegendaryHero
+      LegendTeron = new LegendaryHero("Teron Gorefiend")
       {
         UnitType = FourCC("U02D"),
         StartingXp = 5400,

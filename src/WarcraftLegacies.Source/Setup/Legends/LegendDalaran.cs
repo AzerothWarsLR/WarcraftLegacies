@@ -46,28 +46,27 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// </summary>
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendJaina = new LegendaryHero
+      LegendJaina = new LegendaryHero("Jaina Proudmoore")
       {
-        UnitType = Constants.UNIT_HJAI_ARCHMAGE_OF_DALARAN_DALARAN,
-        Name = "Jaina Proudmoore"
+        UnitType = Constants.UNIT_HJAI_ARCHMAGE_OF_DALARAN_DALARAN
       };
       LegendaryHeroManager.Register(LegendJaina);
 
-      LegendMedivh = new LegendaryHero
+      LegendMedivh = new LegendaryHero("Medivh")
       {
         UnitType = FourCC("Haah"),
         StartingXp = 2800
       };
       LegendaryHeroManager.Register(LegendMedivh);
 
-      LegendKalecgos = new LegendaryHero
+      LegendKalecgos = new LegendaryHero("Kalecgos")
       {
         UnitType = FourCC("U027"),
         StartingXp = 9800
       };
       LegendaryHeroManager.Register(LegendKalecgos);
 
-      LegendMalygos = new LegendaryHero
+      LegendMalygos = new LegendaryHero("Malygos")
       {
         UnitType = FourCC("U026"),
         StartingXp = 10900
@@ -85,7 +84,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendDalaranCapital.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9008, 4092)));
       LegendDalaranCapital.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9864, 4086)));
 
-      LegendAntonidas = new LegendaryHero
+      LegendAntonidas = new LegendaryHero("Antonidas")
       {
         UnitType = FourCC("Hant"),
         StartingXp = 1000,

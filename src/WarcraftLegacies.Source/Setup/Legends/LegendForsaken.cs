@@ -12,21 +12,21 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
     public static void Setup()
     {
-      SylvanasUndead = new LegendaryHero
+      SylvanasUndead = new LegendaryHero("Sylvanas")
       {
         UnitType = Constants.UNIT_USYL_DARK_RANGER_FORSAKEN,
         StartingXp = 15400
       };
       LegendaryHeroManager.Register(SylvanasUndead);
 
-      Nathanos = new LegendaryHero
+      Nathanos = new LegendaryHero("Nathanos Blightcaller")
       {
         UnitType = Constants.UNIT_H049_RANGER_LORD_FORSAKEN,
         StartingXp = 4000
       };
       LegendaryHeroManager.Register(Nathanos);
 
-      Varimathras = new LegendaryHero
+      Varimathras = new LegendaryHero("Varimathras")
       {
         UnitType = Constants.UNIT_UVAR_ARCH_DREADLORD_FORSAKEN,
         PlayerColor = PLAYER_COLOR_RED

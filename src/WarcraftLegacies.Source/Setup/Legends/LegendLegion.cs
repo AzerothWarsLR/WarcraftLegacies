@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LEGEND_ARCHIMONDE = new LegendaryHero
+      LEGEND_ARCHIMONDE = new LegendaryHero("Archimonde")
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("Uwar")),
         PermaDies = true,
@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       LegendaryHeroManager.Register(LEGEND_ARCHIMONDE);
 
-      LEGEND_ANETHERON = new LegendaryHero
+      LEGEND_ANETHERON = new LegendaryHero("Anetheron")
       {
         UnitType = FourCC("U00L"),
         PlayerColor = PLAYER_COLOR_ORANGE,
@@ -36,21 +36,21 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       LegendaryHeroManager.Register(LEGEND_ANETHERON);
 
-      LEGEND_LILIAN = new LegendaryHero
+      LEGEND_LILIAN = new LegendaryHero("Lilian Voss")
       {
         UnitType = FourCC("E01O"),
         StartingXp = 4000
       };
       LegendaryHeroManager.Register(LEGEND_LILIAN);
 
-      LEGEND_TICHONDRIUS = new LegendaryHero
+      LEGEND_TICHONDRIUS = new LegendaryHero("Tichondrius")
       {
         UnitType = FourCC("Utic"),
         PlayerColor = PLAYER_COLOR_RED
       };
       LegendaryHeroManager.Register(LEGEND_TICHONDRIUS);
 
-      LEGEND_MALGANIS = new LegendaryHero
+      LEGEND_MALGANIS = new LegendaryHero("Mal'ganis")
       {
         UnitType = FourCC("Umal"),
         PlayerColor = PLAYER_COLOR_GREEN

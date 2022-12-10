@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendCairne = new LegendaryHero
+      LegendCairne = new LegendaryHero("Cairne Bloodhoof")
       {
         UnitType = FourCC("Ocbh"),
         DeathMessage =
@@ -26,10 +26,9 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       LegendaryHeroManager.Register(LegendCairne);
 
-      LegendThrall = new LegendaryHero
+      LegendThrall = new LegendaryHero("Thrall")
       {
         UnitType = Constants.UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF,
-        Name = "Thrall"
       };
       LegendaryHeroManager.Register(LegendThrall);
 
@@ -47,7 +46,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       CapitalManager.Register(LegendDarkspearhold);
 
-      LegendRexxar = new LegendaryHero
+      LegendRexxar = new LegendaryHero("Rexxar")
       {
         UnitType = FourCC("Orex"),
         StartingXp = 1800

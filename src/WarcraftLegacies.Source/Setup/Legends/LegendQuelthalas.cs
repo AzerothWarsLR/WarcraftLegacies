@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendSunwell.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS, new Point(20479, 17477)));
       LegendSunwell.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS, new Point(17415, 13196)));
 
-      LegendAnasterian = new LegendaryHero
+      LegendAnasterian = new LegendaryHero("Anasterian Sunstrider")
       {
         UnitType = Constants.UNIT_H00Q_KING_OF_QUEL_THALAS_QUEL_THALAS,
         PlayerColor = PLAYER_COLOR_MAROON
@@ -48,34 +48,34 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendAnasterian.StartingXp = 1000;
       LegendaryHeroManager.Register(LegendAnasterian);
 
-      LegendRommath = new LegendaryHero
+      LegendRommath = new LegendaryHero("Grand Magister Rommath")
       {
         UnitType = Constants.UNIT_H04F_ARCHMAGE_GREEN,
         StartingXp = 1800
       };
       LegendaryHeroManager.Register(LegendRommath);
 
-      LegendJennalla = new LegendaryHero
+      LegendJennalla = new LegendaryHero("Jennalla")
       {
         UnitType = Constants.UNIT_H02B_ARCANE_PHANTOM_KHADGAR
       };
       LegendaryHeroManager.Register(LegendJennalla);
 
-      LegendPathaleon = new LegendaryHero
+      LegendPathaleon = new LegendaryHero("Pathaleon")
       {
         UnitType = Constants.UNIT_H098_SUNFURY_MASTERMIND_HIGH_ELVES,
         StartingXp = 1800
       };
       LegendaryHeroManager.Register(LegendPathaleon);
 
-      LegendSylvanas = new LegendaryHero
+      LegendSylvanas = new LegendaryHero("Sylvanas Windrunner")
       {
         UnitType = Constants.UNIT_HVWD_RANGER_GENERAL_OF_SILVERMOON_QUEL_THALAS,
         PlayerColor = PLAYER_COLOR_GREEN
       };
       LegendaryHeroManager.Register(LegendSylvanas);
 
-      LegendKael = new LegendaryHero
+      LegendKael = new LegendaryHero("Kael'thas Sunstrider")
       {
         PlayerColor = PLAYER_COLOR_RED,
         UnitType = Constants.UNIT_HKAL_PRINCE_OF_QUEL_THALAS_QUEL_THALAS,
@@ -83,14 +83,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       LegendaryHeroManager.Register(LegendKael);
 
-      LegendLorthemar = new LegendaryHero
+      LegendLorthemar = new LegendaryHero("Lor'themar Theron")
       {
         UnitType = Constants.UNIT_H02E_REGENT_OF_QUEL_THALAS_QUEL_THALAS_VASSAL,
         StartingXp = 2800
       };
       LegendaryHeroManager.Register(LegendLorthemar);
 
-      LegendKiljaeden = new LegendaryHero
+      LegendKiljaeden = new LegendaryHero("Kil'jaeden")
       {
         UnitType = Constants.UNIT_U004_THE_DECEIVER_LEGION,
         PermaDies = true,

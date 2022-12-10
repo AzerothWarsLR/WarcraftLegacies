@@ -1,4 +1,4 @@
-using MacroTools.LegendSystem;
+﻿using MacroTools.LegendSystem;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
@@ -10,14 +10,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
     public static void Setup()
     {
-      LegendBrigitte = new LegendaryHero
+      LegendBrigitte = new LegendaryHero("?")
       {
         UnitType = FourCC("H00Y"),
         StartingXp = 7000
       };
       LegendaryHeroManager.Register(LegendBrigitte);
 
-      LEGEND_TIRION = new LegendaryHero
+      LEGEND_TIRION = new LegendaryHero("?")
       {
         UnitType = FourCC("H09Z"),
         StartingXp = 7000

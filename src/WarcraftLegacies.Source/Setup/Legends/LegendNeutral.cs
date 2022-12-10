@@ -37,21 +37,21 @@ namespace WarcraftLegacies.Source.Setup.Legends
     
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Ragnaros = new LegendaryHero
+      Ragnaros = new LegendaryHero("Ragnaros")
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("N00D")),
         DeathMessage = "Ragnaros, the King of Fire and Lord of the Firelands, has been extinguished."
       };
       LegendaryHeroManager.Register(Ragnaros);
 
-      Morghor = new LegendaryHero
+      Morghor = new LegendaryHero("Mor'ghor")
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("N0DA")),
         PermaDies = true
       };
       LegendaryHeroManager.Register(Morghor);
 
-      MurlocSorc = new LegendaryHero
+      MurlocSorc = new LegendaryHero("?")
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("N089")),
         PermaDies = true
@@ -191,26 +191,26 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       CapitalManager.Register(FountainOfBlood);
 
-      CentaurKhan = new LegendaryHero
+      CentaurKhan = new LegendaryHero("Centaur Khan")
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("ncnk"), Regions.ThunderBluff.Center)
       };
       LegendaryHeroManager.Register(CentaurKhan);
 
-      Vaelastrasz = new LegendaryHero
+      Vaelastrasz = new LegendaryHero("Vaelastrasz")
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("nrwm"))
       };
       LegendaryHeroManager.Register(Vaelastrasz);
 
-      Occulus = new LegendaryHero
+      Occulus = new LegendaryHero("Occulus")
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("O025")),
         PermaDies = true
       };
       LegendaryHeroManager.Register(Occulus);
 
-      Saragosa = new LegendaryHero
+      Saragosa = new LegendaryHero("Saragosa")
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("nadr"))
       };

@@ -19,26 +19,26 @@ namespace WarcraftLegacies.Source.Setup.Legends
     
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendNobundo = new LegendaryHero
+      LegendNobundo = new LegendaryHero("Nobundo")
       {
         UnitType = FourCC("E01J"),
         StartingXp = 1800
       };
       LegendaryHeroManager.Register(LegendNobundo);
 
-      LegendExodar = new Capital()
+      LegendExodar = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O05E_EXODAR_REGALIS_DRAENEI)
       };
       CapitalManager.Register(LegendExodar);
 
-      LegendMaraad = new LegendaryHero
+      LegendMaraad = new LegendaryHero("Maraad")
       {
         UnitType = FourCC("H09S")
       };
       LegendaryHeroManager.Register(LegendMaraad);
 
-      LegendVelen = new LegendaryHero
+      LegendVelen = new LegendaryHero("Velen")
       {
         UnitType = FourCC("E01I")
       };

@@ -20,33 +20,29 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// </summary>
     public static void Setup()
     {
-      Tess = new LegendaryHero
+      Tess = new LegendaryHero("Tess Greymane")
       {
         UnitType = Constants.UNIT_EWAR_PRINCESS_OF_GILNEAS_GILNEAS,
-        Name = "Tess Greymane"
       };
       LegendaryHeroManager.Register(Tess);
 
-      Goldrinn = new LegendaryHero
+      Goldrinn = new LegendaryHero("Goldrinn")
       {
         UnitType = Constants.UNIT_E01E_ANCIENT_GUARDIAN_GILNEAS,
         StartingXp = 8800,
-        Name = "Goldrinn"
       };
       LegendaryHeroManager.Register(Goldrinn);
 
-      Genn = new LegendaryHero
+      Genn = new LegendaryHero("Genn Greymane")
       {
-        Name = "Genn Greymane",
         UnitType = Constants.UNIT_HHKL_KING_OF_GILNEAS_GILNEAS,
         StartingXp = 2800
       };
       LegendaryHeroManager.Register(Genn);
 
-      Darius = new LegendaryHero
+      Darius = new LegendaryHero("Darius Crowley")
       {
         UnitType = Constants.UNIT_HPB2_GILNEAN_LORD_GILNEAS,
-        Name = "Darius Crowley"
       };
       LegendaryHeroManager.Register(Darius);
 

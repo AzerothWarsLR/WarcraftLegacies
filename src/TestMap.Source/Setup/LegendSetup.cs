@@ -10,13 +10,13 @@ namespace TestMap.Source.Setup
 
     public static void Setup()
     {
-      Kael = new LegendaryHero
+      Kael = new LegendaryHero("Kael")
       {
         Unit = CreateUnit(Player(12), FourCC("Hkal"), 0, 0, 0),
         PermaDies = true
       };
       LegendaryHeroManager.Register(Kael);
-      Uther = new LegendaryHero
+      Uther = new LegendaryHero("Uther")
       {
         UnitType = FourCC("Huth"),
         StartingXp = 3000

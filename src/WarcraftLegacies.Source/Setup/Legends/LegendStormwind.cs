@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Varian = new LegendaryHero
+      Varian = new LegendaryHero("Varian Wrynn")
       {
         UnitType = FourCC("H00R")
       };
@@ -32,20 +32,20 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Varian.StartingXp = 1800;
       LegendaryHeroManager.Register(Varian);
 
-      Galen = new LegendaryHero
+      Galen = new LegendaryHero("Galen Trollbane")
       {
         UnitType = FourCC("H00Z"),
         StartingXp = 1000
       };
       LegendaryHeroManager.Register(Galen);
 
-      Bolvar = new LegendaryHero
+      Bolvar = new LegendaryHero("Bolvar Fordragon")
       {
         UnitType = FourCC("H017")
       };
       LegendaryHeroManager.Register(Bolvar);
 
-      khadgar = new LegendaryHero
+      khadgar = new LegendaryHero("Khadgar")
       {
         UnitType = FourCC("H05Y"),
         StartingXp = 7000

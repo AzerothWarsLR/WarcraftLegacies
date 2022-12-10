@@ -12,19 +12,19 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
     public static void Setup()
     {
-      LEGEND_PRIEST = new LegendaryHero
+      LEGEND_PRIEST = new LegendaryHero("Zul")
       {
-        UnitType = FourCC("O01J"),
+        UnitType = FourCC("O01J")
       };
       LegendaryHeroManager.Register(LEGEND_PRIEST);
 
-      LEGEND_HAKKAR = new LegendaryHero
+      LEGEND_HAKKAR = new LegendaryHero("Hakkar the Soulflayer")
       {
         UnitType = FourCC("U023")
       };
       LegendaryHeroManager.Register(LEGEND_HAKKAR);
 
-      LEGEND_RASTAKHAN = new LegendaryHero
+      LEGEND_RASTAKHAN = new LegendaryHero("Rastakhan")
       {
         UnitType = FourCC("O026"),
         StartingXp = 2800

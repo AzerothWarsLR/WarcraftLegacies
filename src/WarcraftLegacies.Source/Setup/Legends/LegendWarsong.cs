@@ -14,14 +14,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
     
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      ChenStormstout = new LegendaryHero
+      ChenStormstout = new LegendaryHero("Chen Stormstout")
       {
         UnitType = Constants.UNIT_NSJS_BREWMASTER_WARSONG,
         StartingXp = 1000
       };
       LegendaryHeroManager.Register(ChenStormstout);
 
-      Saurfang = new LegendaryHero
+      Saurfang = new LegendaryHero("Varok Saurfang")
       {
         UnitType = Constants.UNIT_OBLA_HIGH_OVERLORD_OF_THE_KOR_KRON_VASSAL,
         StartingXp = 2800
@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       WarsongEncampment = new Capital();
       CapitalManager.Register(WarsongEncampment);
 
-      GromHellscream = new LegendaryHero()
+      GromHellscream = new LegendaryHero("Grom Hellscream")
       {
         UnitType = Constants.UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG
       };

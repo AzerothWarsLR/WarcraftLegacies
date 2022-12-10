@@ -62,7 +62,6 @@ namespace MacroTools.LegendSystem
 
         return Unit?.GetProperName() ?? "";
       }
-      init => _name = value;
     }
     
     /// <summary>
@@ -90,6 +89,14 @@ namespace MacroTools.LegendSystem
     /// </summary>
     public string DeathSfx { private get; init; } = "Abilities\\Spells\\Demon\\DarkPortal\\DarkPortalTarget.mdl";
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="LegendaryHero"/> class.
+    /// </summary>
+    public LegendaryHero(string name)
+    {
+      _name = name;
+    }
+    
     /// <summary>
     /// Forces the <see cref="Legend"/> to appear somewhere in the game world as a unit.
     /// <para>If the <see cref="Legend"/> is alive, it moves there. If it's dead, it revives as well. If it doesn't exist,

@@ -17,21 +17,21 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendDagran = new LegendaryHero
+      LegendDagran = new LegendaryHero("Dagran Thaurissan")
       {
         UnitType = FourCC("H03G"),
         StartingXp = 1000
       };
       LegendaryHeroManager.Register(LegendDagran);
 
-      LegendFalstad = new LegendaryHero
+      LegendFalstad = new LegendaryHero("Falstad Wildhammer")
       {
         UnitType = FourCC("H028"),
         StartingXp = 1000
       };
       LegendaryHeroManager.Register(LegendFalstad);
 
-      LegendMagni = new LegendaryHero
+      LegendMagni = new LegendaryHero("Magni Bronzebeard")
       {
         UnitType = FourCC("H00S"),
         DeathMessage = "King Magni Bronzebeard has died.", //Todo: bad flavour

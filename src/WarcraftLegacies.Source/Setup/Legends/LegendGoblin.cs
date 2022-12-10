@@ -13,20 +13,20 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Gallywix = new LegendaryHero
+      Gallywix = new LegendaryHero("Gallywix")
       {
         UnitType = Constants.UNIT_O04N_TRADE_PRINCE_OF_THE_BILGEWATER_CARTEL_GOBLIN
       };
       LegendaryHeroManager.Register(Gallywix);
 
-      Noggenfogger = new LegendaryHero
+      Noggenfogger = new LegendaryHero("Noggenfogger")
       {
         UnitType = Constants.UNIT_NALC_BARON_OF_GADGETZAN_GOBLIN,
         StartingXp = 800
       };
       LegendaryHeroManager.Register(Noggenfogger);
 
-      Gazlowe = new LegendaryHero
+      Gazlowe = new LegendaryHero("Gazlowe")
       {
         UnitType = Constants.UNIT_NTIN_CHIEF_ENGINEER_GOBLIN,
         StartingXp = 1800
