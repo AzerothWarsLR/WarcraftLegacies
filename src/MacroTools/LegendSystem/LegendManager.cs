@@ -27,7 +27,7 @@ namespace MacroTools.LegendSystem
     /// Returns the <see cref="Legend"/> represented by the <see cref="Legend"/>.
     /// Returns null if there is no match.
     /// </summary>
-    public static Legend? GetFromUnit(unit whichUnit)
+    public static LegendaryHero? GetFromUnit(unit whichUnit)
     {
       return ByUnit.ContainsKey(whichUnit) ? ByUnit[whichUnit] : null;
     }
