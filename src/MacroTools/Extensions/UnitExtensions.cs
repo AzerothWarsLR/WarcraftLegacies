@@ -1,5 +1,6 @@
 ﻿using System;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.Libraries;
 using WCSharp.Shared.Data;
 using static War3Api.Common;

@@ -1,9 +1,10 @@
 ﻿using System;
 using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace MacroTools.FactionSystem
+namespace MacroTools.LegendSystem
 {
   /// <summary>
   /// An important hero, such as Arthas or Illidan.

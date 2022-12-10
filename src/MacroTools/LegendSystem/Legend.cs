@@ -2,11 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WCSharp.Events;
 using static War3Api.Common;
 
-namespace MacroTools.FactionSystem
+namespace MacroTools.LegendSystem
 {
   /// <summary>
   ///   A Legend is a wrapper for unique heroes. A Legend can continue to exist even if the unit it describes does not.

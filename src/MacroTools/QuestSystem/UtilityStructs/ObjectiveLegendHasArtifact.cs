@@ -1,5 +1,6 @@
 using MacroTools.ArtifactSystem;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using static War3Api.Common;
 
 namespace MacroTools.QuestSystem.UtilityStructs

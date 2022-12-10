@@ -1,4 +1,5 @@
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using WCSharp.Events;
 using static War3Api.Common;
 

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using MacroTools.Augments;
 using MacroTools.Extensions;
+using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using WCSharp.Events;
