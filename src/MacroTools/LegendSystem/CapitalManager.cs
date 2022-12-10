@@ -10,7 +10,6 @@ namespace MacroTools.LegendSystem
   public static class CapitalManager
   {
     private static readonly Dictionary<unit, Capital> ByUnit = new();
-    private static readonly List<Capital> AllCapitals = new();
 
     /// <summary>
     /// Registers a <see cref="Capital"/> to the <see cref="CapitalManager"/>.
@@ -19,8 +18,6 @@ namespace MacroTools.LegendSystem
     {
       if (capital.Unit != null)
         ByUnit.Add(capital.Unit, capital);
-      AllCapitals.Add(capital);
-      capital.UnitChanged += OnLegendUnitChanged;
     }
 
     /// <summary>
@@ -30,21 +27,6 @@ namespace MacroTools.LegendSystem
     public static Capital? GetFromUnit(unit whichUnit)
     {
       return ByUnit.ContainsKey(whichUnit) ? ByUnit[whichUnit] : null;
-    }
-    
-    /// <summary>
-    /// Returns all registered <see cref="Legend"/>s.
-    /// </summary>
-    public static ReadOnlyCollection<Capital> GetAllCapitals()
-    {
-      return AllCapitals.AsReadOnly();
-    }
-    
-    private static void OnLegendUnitChanged(object? sender, LegendChangeUnitEventArgs args)
-    {
-      if (args.PreviousUnit != null) 
-        ByUnit.Remove(args.PreviousUnit);
-      AllCapitals.Add(args.Legend as Capital);
     }
   }
 }
