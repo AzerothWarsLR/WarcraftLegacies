@@ -137,37 +137,33 @@ namespace MacroTools.FactionSystem
 
         _unit = value;
 
-        if (Unit == null) return;
+        if (_unit == null) return;
         _unitType = GetUnitTypeId(_unit);
-        //Death trig
-        DestroyTrigger(_deathTrig);
-        _deathTrig = CreateTrigger();
-        TriggerRegisterUnitEvent(_deathTrig, _unit, EVENT_UNIT_DEATH);
-        TriggerAddAction(_deathTrig, () => { GetFromUnit(GetTriggerUnit())?.OnDeath(); });
-        //Cast trig
-        DestroyTrigger(_castTrig);
-        _castTrig = CreateTrigger();
-        TriggerRegisterUnitEvent(_castTrig, _unit, EVENT_UNIT_SPELL_FINISH);
-        TriggerAddAction(_castTrig, () => { GetFromUnit(GetTriggerUnit())?.OnCast(); });
-        //Damage trig
-        DestroyTrigger(_damageTrig);
-        _damageTrig = CreateTrigger();
-        TriggerRegisterUnitEvent(_damageTrig, _unit, EVENT_UNIT_DAMAGED);
-        TriggerAddAction(_damageTrig, () => { GetFromUnit(GetTriggerUnit())?.OnDamaging(); });
-        //Ownership change trig
-        DestroyTrigger(_ownerTrig);
-        _ownerTrig = CreateTrigger();
-        TriggerRegisterUnitEvent(_ownerTrig, _unit, EVENT_UNIT_CHANGE_OWNER);
-        TriggerAddAction(_ownerTrig, () =>
-        {
-          var triggerLegend = GetFromUnit(GetTriggerUnit());
-          triggerLegend?.OnChangeOwner();
-        });
+
+        _deathTrig?.Destroy();
+        _deathTrig = CreateTrigger()
+          .RegisterUnitEvent(_unit, EVENT_UNIT_DEATH)
+          .AddAction(OnDeath);
+
+        _castTrig?.Destroy();
+        _castTrig = CreateTrigger()
+          .RegisterUnitEvent(_unit, EVENT_UNIT_SPELL_FINISH)
+          .AddAction(OnCast);
+
+        _damageTrig?.Destroy();
+        _damageTrig = CreateTrigger()
+          .RegisterUnitEvent(_unit, EVENT_UNIT_DAMAGED)
+          .AddAction(OnDamaging);
+
+        _ownerTrig?.Destroy();
+        _ownerTrig = CreateTrigger()
+          .RegisterUnitEvent(_unit, EVENT_UNIT_CHANGE_OWNER)
+          .AddAction(OnChangeOwner);
 
         SetUnitColor(_unit, HasCustomColor ? _playerColor : GetPlayerColor(GetOwningPlayer(_unit)));
         if (GetHeroXP(_unit) < StartingXp) SetHeroXP(_unit, StartingXp, true);
 
-        ByUnit[Unit] = this;
+        ByUnit[_unit] = this;
         RefreshDummy();
       }
     }
