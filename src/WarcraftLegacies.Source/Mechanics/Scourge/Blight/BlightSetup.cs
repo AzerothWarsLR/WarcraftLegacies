@@ -26,16 +26,6 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Blight
         });
 
       BlightSystem.Register(
-        preplacedUnitSystem.GetUnit(Constants.UNIT_H07X_TOWN_HALL_SCARLET, Regions.Hearthglen.Center),
-        new BlightParameters
-        {
-          PrimaryBlightRadius = 512,
-          RandomBlightCount = 6,
-          RandomBlightRadius = 200,
-          RandomBlightRectangle = Regions.Hearthglen
-        });
-
-      BlightSystem.Register(
         preplacedUnitSystem.GetUnit(Constants.UNIT_H01T_INN_LORDAERON_OTHER, Regions.Darrowshire.Center),
         new BlightParameters
         {
