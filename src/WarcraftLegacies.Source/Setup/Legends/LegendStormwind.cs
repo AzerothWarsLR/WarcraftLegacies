@@ -30,34 +30,34 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Varian.DeathMessage =
         "The King of Stormwind dies a warrior’s death, defending hearth and family. The Wrynn Dynasty crumbles with his passing.";
       Varian.StartingXp = 1800;
-      Legend.Register(Varian);
+      LegendaryHeroManager.Register(Varian);
 
       Galen = new LegendaryHero
       {
         UnitType = FourCC("H00Z"),
         StartingXp = 1000
       };
-      Legend.Register(Galen);
+      LegendaryHeroManager.Register(Galen);
 
       Bolvar = new LegendaryHero
       {
         UnitType = FourCC("H017")
       };
-      Legend.Register(Bolvar);
+      LegendaryHeroManager.Register(Bolvar);
 
       khadgar = new LegendaryHero
       {
         UnitType = FourCC("H05Y"),
         StartingXp = 7000
       };
-      Legend.Register(khadgar);
+      LegendaryHeroManager.Register(khadgar);
 
       Stormwindkeep = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h00X")),
         DeathMessage = "Stormwind Keep, the capitol of the nation of Stormwind, has been destroyed!"
       };
-      Legend.Register(Stormwindkeep);
+      LegendaryHeroManager.Register(Stormwindkeep);
       Stormwindkeep.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND, new Point(9530, -10941)));
       Stormwindkeep.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND, new Point(10177, -10952)));
 
@@ -65,7 +65,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h03Y"))
       };
-      Legend.Register(Darkshire);
+      LegendaryHeroManager.Register(Darkshire);
 
       ConstructionSiteMagic = new Capital
       {

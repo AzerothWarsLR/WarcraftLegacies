@@ -19,30 +19,30 @@ namespace WarcraftLegacies.Source.Setup.Legends
         UnitType = Constants.UNIT_NSJS_BREWMASTER_WARSONG,
         StartingXp = 1000
       };
-      Legend.Register(ChenStormstout);
+      LegendaryHeroManager.Register(ChenStormstout);
 
       Saurfang = new LegendaryHero
       {
         UnitType = Constants.UNIT_OBLA_HIGH_OVERLORD_OF_THE_KOR_KRON_VASSAL,
         StartingXp = 2800
       };
-      Legend.Register(Saurfang);
+      LegendaryHeroManager.Register(Saurfang);
 
       StonemaulKeep = new Capital()
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O004_STONEMAUL_KEEP),
         DeathMessage = "The fortress of the Stonemaul Clan has fallen."
       };
-      Legend.Register(StonemaulKeep);
+      LegendaryHeroManager.Register(StonemaulKeep);
 
       WarsongEncampment = new Capital();
-      Legend.Register(WarsongEncampment);
+      LegendaryHeroManager.Register(WarsongEncampment);
 
       GromHellscream = new LegendaryHero()
       {
         UnitType = Constants.UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG
       };
-      Legend.Register(GromHellscream);
+      LegendaryHeroManager.Register(GromHellscream);
     }
   }
 }

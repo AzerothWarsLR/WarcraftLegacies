@@ -49,40 +49,40 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = FourCC("Ewrd")
       };
-      Legend.Register(Maiev);
+      LegendaryHeroManager.Register(Maiev);
 
       Auberdine = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("e00J"))
       };
-      Legend.Register(Auberdine);
+      LegendaryHeroManager.Register(Auberdine);
 
       Feathermoon = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("e00M"))
       };
-      Legend.Register(Feathermoon);
+      LegendaryHeroManager.Register(Feathermoon);
 
       Tyrande = new LegendaryHero
       {
         UnitType = FourCC("Etyr"),
         PlayerColor = PLAYER_COLOR_CYAN
       };
-      Legend.Register(Tyrande);
+      LegendaryHeroManager.Register(Tyrande);
 
       Shandris = new LegendaryHero
       {
         UnitType = FourCC("E002"),
         StartingXp = 1000
       };
-      Legend.Register(Shandris);
+      LegendaryHeroManager.Register(Shandris);
 
       Jarod = new LegendaryHero
       {
         UnitType = FourCC("O02E"),
         StartingXp = 4000
       };
-      Legend.Register(Jarod);
+      LegendaryHeroManager.Register(Jarod);
     }
   }
 }

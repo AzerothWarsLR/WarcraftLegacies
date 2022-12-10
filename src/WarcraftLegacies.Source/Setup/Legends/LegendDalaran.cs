@@ -51,28 +51,28 @@ namespace WarcraftLegacies.Source.Setup.Legends
         UnitType = Constants.UNIT_HJAI_ARCHMAGE_OF_DALARAN_DALARAN,
         Name = "Jaina Proudmoore"
       };
-      Legend.Register(LegendJaina);
+      LegendaryHeroManager.Register(LegendJaina);
 
       LegendMedivh = new LegendaryHero
       {
         UnitType = FourCC("Haah"),
         StartingXp = 2800
       };
-      Legend.Register(LegendMedivh);
+      LegendaryHeroManager.Register(LegendMedivh);
 
       LegendKalecgos = new LegendaryHero
       {
         UnitType = FourCC("U027"),
         StartingXp = 9800
       };
-      Legend.Register(LegendKalecgos);
+      LegendaryHeroManager.Register(LegendKalecgos);
 
       LegendMalygos = new LegendaryHero
       {
         UnitType = FourCC("U026"),
         StartingXp = 10900
       };
-      Legend.Register(LegendMalygos);
+      LegendaryHeroManager.Register(LegendMalygos);
 
       LegendDalaranCapital = new Capital
       {
@@ -80,7 +80,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage =
           "The Violet Citadel, the ultimate bastion of arcane knowledge in the Eastern Kingdoms, crumbles like a sand castle."
       };
-      Legend.Register(LegendDalaranCapital);
+      LegendaryHeroManager.Register(LegendDalaranCapital);
       LegendDalaranCapital.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9084, 4979)));
       LegendDalaranCapital.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9008, 4092)));
       LegendDalaranCapital.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9864, 4086)));
@@ -93,7 +93,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
           "Archmage Antonidas has been cut down, his vast knowledge forever lost with his death. The mages of Dalaran have lost their brightest mind."
       };
       LegendAntonidas.AddUnitDependency(LegendDalaranCapital.Unit);
-      Legend.Register(LegendAntonidas);
+      LegendaryHeroManager.Register(LegendAntonidas);
     }
   }
 }

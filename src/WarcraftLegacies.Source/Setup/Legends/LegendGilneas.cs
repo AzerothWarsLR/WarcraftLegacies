@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         UnitType = Constants.UNIT_EWAR_PRINCESS_OF_GILNEAS_GILNEAS,
         Name = "Tess Greymane"
       };
-      Legend.Register(Tess);
+      LegendaryHeroManager.Register(Tess);
 
       Goldrinn = new LegendaryHero
       {
@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 8800,
         Name = "Goldrinn"
       };
-      Legend.Register(Goldrinn);
+      LegendaryHeroManager.Register(Goldrinn);
 
       Genn = new LegendaryHero
       {
@@ -41,28 +41,28 @@ namespace WarcraftLegacies.Source.Setup.Legends
         UnitType = Constants.UNIT_HHKL_KING_OF_GILNEAS_GILNEAS,
         StartingXp = 2800
       };
-      Legend.Register(Genn);
+      LegendaryHeroManager.Register(Genn);
 
       Darius = new LegendaryHero
       {
         UnitType = Constants.UNIT_HPB2_GILNEAN_LORD_GILNEAS,
         Name = "Darius Crowley"
       };
-      Legend.Register(Darius);
+      LegendaryHeroManager.Register(Darius);
 
       LightDawn = new Capital
       {
         UnitType = Constants.UNIT_H057_LIGHT_S_DAWN_CATHEDRAL_GILNEAS,
         DeathMessage = "The Light's Dawn Capital has been destroyed.",
       };
-      Legend.Register(LightDawn);
+      LegendaryHeroManager.Register(LightDawn);
 
       GilneasCastle = new Capital
       {
         UnitType = Constants.UNIT_H04I_GILNEAS_CASTLE_GILNEAS,
         DeathMessage = "The Gilneas castle has fallen",  
       };
-      Legend.Register(GilneasCastle);
+      LegendaryHeroManager.Register(GilneasCastle);
     }
   }
 }

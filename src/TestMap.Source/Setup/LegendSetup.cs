@@ -16,13 +16,13 @@ namespace TestMap.Source.Setup
         Unit = CreateUnit(Player(12), FourCC("Hkal"), 0, 0, 0),
         PermaDies = true
       };
-      Legend.Register(Kael);
+      LegendaryHeroManager.Register(Kael);
       Uther = new Legend
       {
         UnitType = FourCC("Huth"),
         StartingXp = 3000
       };
-      Legend.Register(Uther);
+      LegendaryHeroManager.Register(Uther);
     }
   }
 }

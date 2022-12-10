@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(FourCC("h003")),
         DeathMessage = "The grand city of the high elves, Silvermoon, has been crushed by her enemies."
       };
-      Legend.Register(LegendSilvermoon);
+      LegendaryHeroManager.Register(LegendSilvermoon);
       LegendSilvermoon.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS, new Point(20479, 17477)));
       LegendSilvermoon.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS, new Point(17415, 13196)));
 
@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N001_THE_SUNWELL),
         Capturable = true
       };
-      Legend.Register(LegendSunwell);
+      LegendaryHeroManager.Register(LegendSunwell);
       LegendSunwell.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS, new Point(20479, 17477)));
       LegendSunwell.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS, new Point(17415, 13196)));
 
@@ -46,34 +46,34 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       LegendAnasterian.AddUnitDependency(LegendSunwell.Unit);
       LegendAnasterian.StartingXp = 1000;
-      Legend.Register(LegendAnasterian);
+      LegendaryHeroManager.Register(LegendAnasterian);
 
       LegendRommath = new LegendaryHero
       {
         UnitType = Constants.UNIT_H04F_ARCHMAGE_GREEN,
         StartingXp = 1800
       };
-      Legend.Register(LegendRommath);
+      LegendaryHeroManager.Register(LegendRommath);
 
       LegendJennalla = new LegendaryHero
       {
         UnitType = Constants.UNIT_H02B_ARCANE_PHANTOM_KHADGAR
       };
-      Legend.Register(LegendJennalla);
+      LegendaryHeroManager.Register(LegendJennalla);
 
       LegendPathaleon = new LegendaryHero
       {
         UnitType = Constants.UNIT_H098_SUNFURY_MASTERMIND_HIGH_ELVES,
         StartingXp = 1800
       };
-      Legend.Register(LegendPathaleon);
+      LegendaryHeroManager.Register(LegendPathaleon);
 
       LegendSylvanas = new LegendaryHero
       {
         UnitType = Constants.UNIT_HVWD_RANGER_GENERAL_OF_SILVERMOON_QUEL_THALAS,
         PlayerColor = PLAYER_COLOR_GREEN
       };
-      Legend.Register(LegendSylvanas);
+      LegendaryHeroManager.Register(LegendSylvanas);
 
       LegendKael = new LegendaryHero
       {
@@ -81,14 +81,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
         UnitType = Constants.UNIT_HKAL_PRINCE_OF_QUEL_THALAS_QUEL_THALAS,
         StartingXp = 1800
       };
-      Legend.Register(LegendKael);
+      LegendaryHeroManager.Register(LegendKael);
 
       LegendLorthemar = new LegendaryHero
       {
         UnitType = Constants.UNIT_H02E_REGENT_OF_QUEL_THALAS_QUEL_THALAS_VASSAL,
         StartingXp = 2800
       };
-      Legend.Register(LegendLorthemar);
+      LegendaryHeroManager.Register(LegendLorthemar);
 
       LegendKiljaeden = new LegendaryHero
       {
@@ -98,7 +98,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage =
           "Kil'jaeden the Deceiver has been annihilated, but it is too late for the Blood Elves, who will continue to live and die with demonic taint coursing through their veins."
       };
-      Legend.Register(LegendKiljaeden);
+      LegendaryHeroManager.Register(LegendKiljaeden);
     }
   }
 }

@@ -16,20 +16,20 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = FourCC("O01J"),
       };
-      Legend.Register(LEGEND_PRIEST);
+      LegendaryHeroManager.Register(LEGEND_PRIEST);
 
       LEGEND_HAKKAR = new LegendaryHero
       {
         UnitType = FourCC("U023")
       };
-      Legend.Register(LEGEND_HAKKAR);
+      LegendaryHeroManager.Register(LEGEND_HAKKAR);
 
       LEGEND_RASTAKHAN = new LegendaryHero
       {
         UnitType = FourCC("O026"),
         StartingXp = 2800
       };
-      Legend.Register(LEGEND_RASTAKHAN);
+      LegendaryHeroManager.Register(LEGEND_RASTAKHAN);
     }
   }
 }

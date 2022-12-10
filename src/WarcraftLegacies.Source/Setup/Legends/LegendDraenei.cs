@@ -24,43 +24,43 @@ namespace WarcraftLegacies.Source.Setup.Legends
         UnitType = FourCC("E01J"),
         StartingXp = 1800
       };
-      Legend.Register(LegendNobundo);
+      LegendaryHeroManager.Register(LegendNobundo);
 
       LegendExodar = new Capital()
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O05E_EXODAR_REGALIS_DRAENEI)
       };
-      Legend.Register(LegendExodar);
+      LegendaryHeroManager.Register(LegendExodar);
 
       LegendMaraad = new LegendaryHero
       {
         UnitType = FourCC("H09S")
       };
-      Legend.Register(LegendMaraad);
+      LegendaryHeroManager.Register(LegendMaraad);
 
       LegendVelen = new LegendaryHero
       {
         UnitType = FourCC("E01I")
       };
-      Legend.Register(LegendVelen);
+      LegendaryHeroManager.Register(LegendVelen);
 
       Shattrah = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AH_SHATTRAH_DRAENEI)
       };
-      Legend.Register(Shattrah);
+      LegendaryHeroManager.Register(Shattrah);
       
       Farahlon = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AF_FARAHLON_DRAENEI)
       };
-      Legend.Register(Farahlon);
+      LegendaryHeroManager.Register(Farahlon);
       
       Halaar = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AE_HALAAR_DRAENEI)
       };
-      Legend.Register(Halaar);
+      LegendaryHeroManager.Register(Halaar);
     }
   }
 }

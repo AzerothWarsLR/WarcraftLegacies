@@ -16,14 +16,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
         UnitType = FourCC("H00Y"),
         StartingXp = 7000
       };
-      Legend.Register(LegendBrigitte);
+      LegendaryHeroManager.Register(LegendBrigitte);
 
       LEGEND_TIRION = new Legend
       {
         UnitType = FourCC("H09Z"),
         StartingXp = 7000
       };
-      Legend.Register(LEGEND_TIRION);
+      LegendaryHeroManager.Register(LEGEND_TIRION);
     }
   }
 }

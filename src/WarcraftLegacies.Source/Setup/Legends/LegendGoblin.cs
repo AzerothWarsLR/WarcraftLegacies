@@ -17,21 +17,21 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = Constants.UNIT_O04N_TRADE_PRINCE_OF_THE_BILGEWATER_CARTEL_GOBLIN
       };
-      Legend.Register(Gallywix);
+      LegendaryHeroManager.Register(Gallywix);
 
       Noggenfogger = new Legend
       {
         UnitType = Constants.UNIT_NALC_BARON_OF_GADGETZAN_GOBLIN,
         StartingXp = 800
       };
-      Legend.Register(Noggenfogger);
+      LegendaryHeroManager.Register(Noggenfogger);
 
       Gazlowe = new Legend
       {
         UnitType = Constants.UNIT_NTIN_CHIEF_ENGINEER_GOBLIN,
         StartingXp = 1800
       };
-      Legend.Register(Gazlowe);
+      LegendaryHeroManager.Register(Gazlowe);
 
       KezanTradingCenter = new Legend
       {

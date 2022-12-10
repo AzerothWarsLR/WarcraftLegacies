@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
           "Archimonde the Defiler has been banished from Azeroth, marking the end of his second failed invasion.",
         StartingXp = 10800
       };
-      Legend.Register(LEGEND_ARCHIMONDE);
+      LegendaryHeroManager.Register(LEGEND_ARCHIMONDE);
 
       LEGEND_ANETHERON = new Legend
       {
@@ -34,41 +34,41 @@ namespace WarcraftLegacies.Source.Setup.Legends
         PlayerColor = PLAYER_COLOR_ORANGE,
         StartingXp = 4000
       };
-      Legend.Register(LEGEND_ANETHERON);
+      LegendaryHeroManager.Register(LEGEND_ANETHERON);
 
       LEGEND_LILIAN = new Legend
       {
         UnitType = FourCC("E01O"),
         StartingXp = 4000
       };
-      Legend.Register(LEGEND_LILIAN);
+      LegendaryHeroManager.Register(LEGEND_LILIAN);
 
       LEGEND_TICHONDRIUS = new Legend
       {
         UnitType = FourCC("Utic"),
         PlayerColor = PLAYER_COLOR_RED
       };
-      Legend.Register(LEGEND_TICHONDRIUS);
+      LegendaryHeroManager.Register(LEGEND_TICHONDRIUS);
 
       LEGEND_MALGANIS = new Legend
       {
         UnitType = FourCC("Umal"),
         PlayerColor = PLAYER_COLOR_GREEN
       };
-      Legend.Register(LEGEND_MALGANIS);
+      LegendaryHeroManager.Register(LEGEND_MALGANIS);
 
       LEGION_NEXUS_OUTLAND = new Legend
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION, new Point(-3483, -21662))
       };
-      Legend.Register(LEGION_NEXUS_OUTLAND);
+      LegendaryHeroManager.Register(LEGION_NEXUS_OUTLAND);
       SetUnitInvulnerable(LEGION_NEXUS_OUTLAND.Unit, true);
       
       LEGION_NEXUS_NORTHREND = new Legend
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION, new Point(-3501, 20951))
       };
-      Legend.Register(LEGION_NEXUS_NORTHREND);
+      LegendaryHeroManager.Register(LEGION_NEXUS_NORTHREND);
       SetUnitInvulnerable(LEGION_NEXUS_NORTHREND.Unit, true);
     }
   }

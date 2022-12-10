@@ -20,28 +20,28 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = FourCC("Hapm")
       };
-      Legend.Register(LegendAdmiral);
+      LegendaryHeroManager.Register(LegendAdmiral);
 
       LegendLucille = new LegendaryHero
       {
         UnitType = FourCC("E016"),
         StartingXp = 2800
       };
-      Legend.Register(LegendLucille);
+      LegendaryHeroManager.Register(LegendLucille);
 
       LegendKatherine = new LegendaryHero
       {
         UnitType = FourCC("H05L"),
         StartingXp = 1200
       };
-      Legend.Register(LegendKatherine);
+      LegendaryHeroManager.Register(LegendKatherine);
 
       LegendBoralus = new Capital()
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H046_BORALUS_KEEP_KUL_TIRAS),
         DeathMessage = "Boralus Keep has fallen" //Todo: pointless flavour
       };
-      Legend.Register(LegendBoralus);
+      LegendaryHeroManager.Register(LegendBoralus);
 
       Flagship = new LegendaryHero
       {

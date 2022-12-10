@@ -19,21 +19,21 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage =
           "The Dragonmaw Port has fallen, the Twilight Highlands are finally liberated"
       };
-      Legend.Register(DragonmawPort);
+      LegendaryHeroManager.Register(DragonmawPort);
 
-      Legend.Register(Zaela = new LegendaryHero
+      LegendaryHeroManager.Register(Zaela = new LegendaryHero
       {
         Name = "Zaela",
         UnitType = Constants.UNIT_O05S_WARLORD_MAIDEN_DRAGONMAW
       });
 
-      Legend.Register(Nekrosh = new LegendaryHero
+      LegendaryHeroManager.Register(Nekrosh = new LegendaryHero
       {
         Name = "Nek'rosh Skullcrasher",
         UnitType = Constants.UNIT_O01Q_DRAGONMAW_CHIEFTAIN_FEL_HORDE
       });
 
-      Legend.Register(Gorfax = new LegendaryHero
+      LegendaryHeroManager.Register(Gorfax = new LegendaryHero
       {
         Name = "Gorfax Angerfang",
         UnitType = Constants.UNIT_O06F_BLOOD_WARRIOR_DRAGONMAW,

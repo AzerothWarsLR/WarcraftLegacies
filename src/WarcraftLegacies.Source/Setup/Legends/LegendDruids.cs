@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Legend.Register(LegendCenarius = new LegendaryHero
+      LegendaryHeroManager.Register(LegendCenarius = new LegendaryHero
       {
         UnitType = FourCC("Ecen"),
         PermaDies = true,
@@ -29,29 +29,29 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 1000
       });
 
-      Legend.Register(LegendMalfurion = new LegendaryHero
+      LegendaryHeroManager.Register(LegendMalfurion = new LegendaryHero
       {
         UnitType = FourCC("Efur")
       });
 
-      Legend.Register(LegendFandral = new LegendaryHero
+      LegendaryHeroManager.Register(LegendFandral = new LegendaryHero
       {
         UnitType = FourCC("E00K")
       });
 
-      Legend.Register(LegendUrsoc = new LegendaryHero
+      LegendaryHeroManager.Register(LegendUrsoc = new LegendaryHero
       {
         UnitType = FourCC("E00A"),
         StartingXp = 7000
       });
 
-      Legend.Register(LegendNordrassil = new Capital
+      LegendaryHeroManager.Register(LegendNordrassil = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("n002")),
         Capturable = true
       });
 
-      Legend.Register(LegendTortolla = new LegendaryHero
+      LegendaryHeroManager.Register(LegendTortolla = new LegendaryHero
       {
         UnitType = FourCC("H04U"),
         StartingXp = 1800

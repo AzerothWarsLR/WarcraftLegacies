@@ -33,27 +33,27 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 1000,
         Name = "Kel'thuzad"
       };
-      Legend.Register(LegendKelthuzad);
+      LegendaryHeroManager.Register(LegendKelthuzad);
 
       LegendAnubarak = new LegendaryHero
       {
         UnitType = FourCC("Uanb")
       };
-      Legend.Register(LegendAnubarak);
+      LegendaryHeroManager.Register(LegendAnubarak);
 
       LegendRivendare = new LegendaryHero
       {
         UnitType = FourCC("U00A"),
         StartingXp = 1000
       };
-      Legend.Register(LegendRivendare);
+      LegendaryHeroManager.Register(LegendRivendare);
 
       LegendUtgarde = new Capital()
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h00O")),
         Capturable = true
       };
-      Legend.Register(LegendUtgarde);
+      LegendaryHeroManager.Register(LegendUtgarde);
 
       LegendLichking = new Capital
       {
@@ -62,7 +62,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage =
           "The great Lich King has been destroyed. With no central mind to command them, the forces of the Undead have gone rogue."
       };
-      Legend.Register(LegendLichking);
+      LegendaryHeroManager.Register(LegendLichking);
       LegendLichking.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3655, 20220)));
       LegendLichking.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3015, 20762)));
       LegendLichking.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3643, 22588)));
@@ -79,7 +79,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_U01X_HEART_OF_NAXXRAMAS)
       };
-      Legend.Register(Naxxramas);
+      LegendaryHeroManager.Register(Naxxramas);
       SetUnitInvulnerable(Naxxramas.Unit, true);
       SetUnitTimeScale(Naxxramas.Unit, 0);
     }

@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         PlayerColor = PLAYER_COLOR_PURPLE,
         Name = "Illidan"
       };
-      Legend.Register(LegendIllidan);
+      LegendaryHeroManager.Register(LegendIllidan);
 
       LegendVashj = new Legend
       {
@@ -29,14 +29,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 2800,
         Name = "Lady Vashj"
       };
-      Legend.Register(LegendVashj);
+      LegendaryHeroManager.Register(LegendVashj);
 
       LegendAzshara = new Legend
       {
         UnitType = FourCC("H08U"),
         Name = "Azshara"
       };
-      Legend.Register(LegendAzshara);
+      LegendaryHeroManager.Register(LegendAzshara);
 
       LegendNajentus = new Legend
       {
@@ -44,14 +44,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 2800,
         Name = "Warlord Najentus"
       };
-      Legend.Register(LegendNajentus);
+      LegendaryHeroManager.Register(LegendNajentus);
 
       LegendAltruis = new Legend
       {
         UnitType = FourCC("E015"),
         Name = "Altruis"
       };
-      Legend.Register(LegendAltruis);
+      LegendaryHeroManager.Register(LegendAltruis);
 
       LegendAkama = new Legend
       {
@@ -59,7 +59,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 4000,
         Name = "Akama"
       };
-      Legend.Register(LegendAkama);
+      LegendaryHeroManager.Register(LegendAkama);
     }
   }
 }
