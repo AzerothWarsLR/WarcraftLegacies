@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       AddObjective(new ObjectiveCapitalDead(LegendIronforge.LegendMenethilHarbor));
       AddObjective(new ObjectiveControlLegend(LegendDragonmaw.Nekrosh, false));
       AddObjective(new ObjectiveControlCapital(LegendDragonmaw.DragonmawPort, false));
-      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendDragonmaw.DragonmawPort));
+      AddObjective(new ObjectiveUnitAlive(LegendDragonmaw.DragonmawPort.Unit));
       AddObjective(new ObjectiveExpire(600));
     }
 

@@ -40,7 +40,6 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       PlayThematicMusic("Sound\\Music\\mp3Music\\LichKingTheme.mp3");
       LegendScourge.LegendLichking.DeathMessage =
         "Icecrown Citadel been razed. Unfortunately, the Lich King has already vacated his unholy throne.";
-      LegendScourge.LegendLichking.PermaDies = false;
       LegendScourge.LegendLichking.Hivemind = false;
       UnitRemoveAbility(LegendScourge.LegendLichking.Unit, FourCC("A0W8"));
       UnitRemoveAbility(LegendScourge.LegendLichking.Unit, FourCC("A0L3"));

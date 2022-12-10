@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       "When the city of Stratholme, Prince Arthas will abandon his people and join the Scourge as their champion.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroDeathKnight.blp")
     {
-      AddObjective(new ObjectiveLegendDead(LegendLordaeron.Stratholme));
+      AddObjective(new ObjectiveCapitalDead(LegendLordaeron.Stratholme));
       AddObjective(new ObjectiveEitherOf(new ObjectiveLegendDead(LegendLordaeron.Arthas),
         new ObjectiveFactionDefeated(LordaeronSetup.Lordaeron)));
       AddObjective(new ObjectiveSelfExists());
@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       LegendLordaeron.Arthas.Unit = null;
       LegendLordaeron.Arthas.PlayerColor = PLAYER_COLOR_PURPLE;
       LegendLordaeron.Arthas.StartingXp = 7000;
-      LegendLordaeron.Arthas.UnitType = FourCC("Uear");
+      LegendLordaeron.Arthas.UnitType = Constants.UNIT_UEAR_CHAMPION_OF_THE_SCOURGE_SCOURGE;
       LegendLordaeron.Arthas.ClearUnitDependencies();
       SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
     }

@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
     {
       AddObjective(new ObjectiveControlCapital(LegendIronforge.LegendThelsamar, false));
       AddObjective(new ObjectiveControlCapital(LegendNeutral.GrimBatol, false));
-      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendIronforge.LegendThelsamar));
+      AddObjective(new ObjectiveUnitAlive(LegendIronforge.LegendThelsamar.Unit));
       AddObjective(new ObjectiveExpire(600));
     }
 

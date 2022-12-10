@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       "ReplaceableTextures\\CommandButtons\\BTNUndeadShipyard.blp")
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N030_DRAK_THARON_KEEP_30GOLD_MIN)));
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.DraktharonKeep, false));
+      AddObjective(new ObjectiveControlCapital(LegendNeutral.DraktharonKeep, false));
       AddObjective(new ObjectiveExpire(1140));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R08J_QUEST_COMPLETED_DRAK_THARON_KEEP;

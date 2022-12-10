@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
@@ -18,21 +17,17 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
   {
     private readonly List<unit> _rescueUnits = new();
     private readonly unit _unitToMakeInvulnerable;
-    private readonly Legend _uther;
+    private readonly LegendaryHero _uther;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestCapitalCity"/> class.
     /// </summary>
-    /// <param name="rescueRect"></param>
-    /// <param name="unitToMakeInvulnerable"></param>
-    /// <param name="uther"></param>
-    /// <param name="prequisites"></param>
-    public QuestCapitalCity(Rectangle rescueRect, unit unitToMakeInvulnerable, Legend uther, IEnumerable<QuestData> prequisites) :
+    public QuestCapitalCity(Rectangle rescueRect, unit unitToMakeInvulnerable, LegendaryHero uther, IEnumerable<QuestData> prequisites) :
       base("Hearthlands",
         "The territories of Lordaeron are fragmented. Regain control of the old Alliance's hold to secure the kingdom.",
         "ReplaceableTextures\\CommandButtons\\BTNCastle.blp")
     {
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.Caerdarrow, false));
+      AddObjective(new ObjectiveControlCapital(LegendNeutral.Caerdarrow, false));
       foreach (var prequisite in prequisites)
         AddObjective(new ObjectiveCompleteQuest(prequisite));
       AddObjective(new ObjectiveExpire(1472));
@@ -40,7 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       ResearchId = Constants.UPGRADE_R04Y_QUEST_COMPLETED_HEARTHLANDS;
       _unitToMakeInvulnerable = unitToMakeInvulnerable;
       _uther = uther;
-      var rescueUnitFilter = (unit whichUnit) => { return GetUnitTypeId(whichUnit) != Constants.UNIT_N08F_UNDERCITY_ENTRANCE; };
+      var rescueUnitFilter = (unit whichUnit) => GetUnitTypeId(whichUnit) != Constants.UNIT_N08F_UNDERCITY_ENTRANCE;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures, rescueUnitFilter);
       Required = true;
     }
