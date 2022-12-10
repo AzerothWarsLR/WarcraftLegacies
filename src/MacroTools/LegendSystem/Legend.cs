@@ -1,9 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
-using MacroTools.QuestSystem;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -17,24 +13,8 @@ namespace MacroTools.LegendSystem
   /// </summary>
   public abstract class Legend
   {
-    private static readonly Dictionary<unit, Legend> ByUnit = new();
-    private static readonly List<Legend> AllLegends = new();
     private unit? _unit;
     private int _unitType;
-
-    /// <summary>
-    /// Initializes a new instance of the <see cref="Legend"/> class.
-    /// </summary>
-    protected Legend()
-    {
-      PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining, () =>
-      {
-        var trainedUnit = GetTrainedUnit();
-        if (UnitType != GetUnitTypeId(trainedUnit)) return;
-        Unit = trainedUnit;
-        ChangedOwner?.Invoke(this, new LegendChangeOwnerEventArgs(this));
-      });
-    }
 
     /// <summary>
     /// A flavourful message that pops up when this <see cref="Legend"/> dies permanently.
@@ -51,9 +31,9 @@ namespace MacroTools.LegendSystem
       get => GetOwningPlayer(_unit) == null ? null : _unit;
       set
       {
+        var previousUnit = Unit;
         if (Unit != null)
         {
-          ByUnit.Remove(Unit);
           Unit.DropAllItems();
           RemoveUnit(_unit);
         }
@@ -62,11 +42,30 @@ namespace MacroTools.LegendSystem
 
         if (_unit == null) return;
         _unitType = GetUnitTypeId(_unit);
-        ByUnit[_unit] = this;
         OnChangeUnit();
+        UnitChanged?.Invoke(this, new LegendChangeUnitEventArgs(this, previousUnit));
       }
     }
 
+    /// <summary>
+    /// Invoked when the <see cref="Unit"/> value changes.
+    /// </summary>
+    public event EventHandler<LegendChangeUnitEventArgs>? UnitChanged;
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="Legend"/> class.
+    /// </summary>
+    protected Legend()
+    {
+      PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining, () =>
+      {
+        var trainedUnit = GetTrainedUnit();
+        if (UnitType != GetUnitTypeId(trainedUnit)) return;
+        Unit = trainedUnit;
+        ChangedOwner?.Invoke(this, new LegendChangeOwnerEventArgs(this));
+      });
+    }
+    
     /// <summary>
     /// Fired when the <see cref="Legend"/> changes unit.
     /// </summary>
@@ -111,46 +110,14 @@ namespace MacroTools.LegendSystem
     public player? OwningPlayer => GetOwningPlayer(_unit);
 
     /// <summary>
-    /// Returns all registered <see cref="Legend"/>s.
-    /// </summary>
-    /// <returns></returns>
-    public static ReadOnlyCollection<Legend> GetAllLegends()
-    {
-      return AllLegends.AsReadOnly();
-    }
-
-    /// <summary>
     ///   Fired when the <see cref="Legend" /> changes owner.
     /// </summary>
     public event EventHandler<LegendChangeOwnerEventArgs>? ChangedOwner;
 
-    private void OnChangeOwner()
-    {
-      ChangedOwner?.Invoke(this, new LegendChangeOwnerEventArgs(this));
-    }
-
-    /// <summary>
-    ///   Returns the <see cref="Legend"/> represented by the <see cref="Legend"/>.
-    /// Returns null if there is no match.
-    /// </summary>
-    public static Legend? GetFromUnit(unit whichUnit)
-    {
-      return ByUnit.ContainsKey(whichUnit) ? ByUnit[whichUnit] : null;
-    }
-
-    /// <summary>
-    ///   Register a <see cref="Legend"/> to the <see cref="Legend"/> system, causing it to be tracked for <see cref="QuestData" />
-    ///   and <see cref="Legend" /> purposes.
-    /// </summary>
-    public static void Register(Legend legend)
-    {
-      AllLegends.Add(legend);
-    }
-
     /// <summary>
     /// Invokes the <see cref="ChangedOwner"/> event.
     /// </summary>
-    protected virtual void OnChangeOwner(LegendChangeOwnerEventArgs args)
+    protected void OnChangeOwner(LegendChangeOwnerEventArgs args)
     {
       ChangedOwner?.Invoke(this, args);
     }
