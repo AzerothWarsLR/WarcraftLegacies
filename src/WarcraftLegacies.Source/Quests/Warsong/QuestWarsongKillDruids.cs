@@ -1,8 +1,8 @@
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Warsong
 {
@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Grom Hellscream gains {I2S(ExperienceReward)} experience and you can now train Foreman Glibbs";
+      $"Grom Hellscream gains {ExperienceReward} experience and you can now train Foreman Glibbs";
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestWarsongKillDruids"/> class.
@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       "The World Tree, Nordrassil, is the Night Elves' source of immortality. Capture it to cripple them permanently.",
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
     {
-      AddObjective(new ObjectiveControlLegend(LegendDruids.LegendNordrassil, false));
+      AddObjective(new ObjectiveControlCapital(LegendDruids.LegendNordrassil, false));
       AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendWarsong.GromHellscream));
       ResearchId = Constants.UPGRADE_R08M_QUEST_COMPLETED_TEAR_IT_DOWN;
     }
@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      AddHeroXP(LegendWarsong.GromHellscream.Unit, ExperienceReward, true);
+      LegendWarsong.GromHellscream?.Unit?.AddExperience(ExperienceReward);
     }
   }
 }

@@ -1,5 +1,6 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -10,7 +11,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
     private readonly bool _canFail;
     private readonly Legend _target;
 
-    public ObjectiveControlLegend(Legend target, bool canFail)
+    public ObjectiveControlLegend(LegendaryHero target, bool canFail)
     {
       _target = target;
       Description = $"Your team controls {target.Name}";

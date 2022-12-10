@@ -1,5 +1,6 @@
 using MacroTools.ArtifactSystem;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using static War3Api.Common;
 
 namespace MacroTools.QuestSystem.UtilityStructs
@@ -11,11 +12,11 @@ namespace MacroTools.QuestSystem.UtilityStructs
   {
     private readonly Artifact _targetArtifact;
     private readonly Legend _targetLegend;
-
+ 
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectiveLegendHasArtifact"/> class.
     /// </summary>
-    public ObjectiveLegendHasArtifact(Legend targetLegend, Artifact targetArtifact)
+    public ObjectiveLegendHasArtifact(LegendaryHero targetLegend, Artifact targetArtifact)
     {
       Description = $"{targetLegend.Name} has {GetItemName(targetArtifact.Item)}";
       _targetLegend = targetLegend;

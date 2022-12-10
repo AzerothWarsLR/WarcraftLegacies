@@ -76,7 +76,7 @@ namespace WarcraftLegacies.Source.Researches.Ironforge
       PlayerUnitEvents.Register(ResearchEvent.IsStarted, ResearchStart, ResearchId);
       PlayerUnitEvents.Register(ResearchEvent.IsCancelled, ResearchCancel, ResearchId);
       var greatForge = LegendIronforge.LegendGreatforge.Unit;
-      var stormwindKeep = LegendStormwind.LegendStormwindkeep.Unit;
+      var stormwindKeep = LegendStormwind.Stormwindkeep.Unit;
       var ironforgeLocation = new Point(GetUnitX(greatForge), GetUnitY(greatForge));
       var stormwindLocation = new Point(GetUnitX(stormwindKeep), GetUnitY(stormwindKeep));
       _tramToIronforge = preplacedUnitSystem.GetUnit(Constants.UNIT_N03B_DEEPRUN_TRAM, stormwindLocation);

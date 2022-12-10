@@ -2,7 +2,7 @@
 using MacroTools.Wrappers;
 using static War3Api.Common;
 
-namespace MacroTools.FactionSystem
+namespace MacroTools.LegendSystem
 {
   /// <summary>
   /// A unit bestowing invulnerability on a <see cref="Legend"/>.

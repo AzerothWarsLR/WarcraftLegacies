@@ -1,4 +1,5 @@
 ﻿using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.Libraries;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
@@ -13,16 +14,16 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
   /// </summary>
   public sealed class QuestShoresOfNorthrend : QuestData
   {
-    private new static readonly int ResearchId = Constants.UPGRADE_R06F_NORTHREND_EXPEDITION_LORDAERON;
-    private Legend _arthas => LegendLordaeron.Arthas;
+    private new const int ResearchId = Constants.UPGRADE_R06F_NORTHREND_EXPEDITION_LORDAERON;
+    private static LegendaryHero Arthas => LegendLordaeron.Arthas;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestShoresOfNorthrend"/> class.
     /// </summary>
     public QuestShoresOfNorthrend() : base("Shores of Northrend", "Mal'ganis' citadel lies somewhere within the arctic wastes of the north. In order to assault the Dreadlord, Arthas must first establish a base camp at the shores of Northrend.", "ReplaceableTextures\\CommandButtons\\BTNHumanTransport.blp")
     {
-      AddObjective(new ObjectiveControlLegend(_arthas, true));
-      AddObjective(new ObjectiveLegendDead(LegendNeutral.Caerdarrow));
+      AddObjective(new ObjectiveControlLegend(Arthas, true));
+      AddObjective(new ObjectiveCapitalDead(LegendNeutral.Caerdarrow));
       AddObjective(new ObjectiveResearch(ResearchId, Constants.UNIT_HSHY_ALLIANCE_SHIPYARD_LORDAERON));
     }
 
@@ -44,10 +45,10 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     protected override void OnComplete(Faction completingFaction)
     {
       KillNeutralHostileUnitsInRadius(-512, 15776, 2000);
-      if (GetOwningPlayer(_arthas.Unit) == completingFaction.Player)
+      if (GetOwningPlayer(Arthas.Unit) == completingFaction.Player)
       {
-        ReviveHero(_arthas.Unit, 400, 16102, true);
-        BlzSetUnitFacingEx(_arthas.Unit, 112);
+        ReviveHero(Arthas.Unit, 400, 16102, true);
+        BlzSetUnitFacingEx(Arthas.Unit, 112);
       }
       if(completingFaction.Player != null)
       {

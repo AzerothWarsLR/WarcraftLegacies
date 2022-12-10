@@ -52,5 +52,10 @@ namespace MacroTools.Extensions
       TriggerAddAction(whichTrigger, actionFunc);
       return whichTrigger;
     }
+    
+    /// <summary>
+    /// Destroys the trigger.
+    /// </summary>
+    public static void Destroy(this trigger whichTrigger) => DestroyTrigger(whichTrigger);
   }
 }

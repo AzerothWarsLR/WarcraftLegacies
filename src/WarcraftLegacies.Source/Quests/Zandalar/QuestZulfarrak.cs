@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       "ReplaceableTextures\\CommandButtons\\BTNDarkTroll.blp")
     {
       ResearchId = Constants.UPGRADE_R02F_QUEST_COMPLETED_FURY_OF_THE_SANDS_WARSONG;
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.Zulfarrak, false));
+      AddObjective(new ObjectiveControlCapital(LegendNeutral.Zulfarrak, false));
       AddObjective(new ObjectiveLegendReachRect(LegendTroll.LEGEND_PRIEST, rescueRect, "Zul'Farrak"));
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _killUnits = CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList().Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE)).ToList();

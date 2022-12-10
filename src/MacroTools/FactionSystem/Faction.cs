@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using MacroTools.Augments;
 using MacroTools.Extensions;
+using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using WCSharp.Events;
@@ -560,11 +561,10 @@ namespace MacroTools.FactionSystem
           Player?.AddGold(HeroCost);
           _xp += GetHeroXP(unit);
           //Subtract hero's starting XP from refunded XP
-          if (Legend.GetFromUnit(unit) != null) _xp -= Legend.GetFromUnit(unit)!.StartingXp;
+          if (LegendaryHeroManager.GetFromUnit(unit) != null) _xp -= LegendaryHeroManager.GetFromUnit(unit)!.StartingXp;
 
           unit.DropAllItems();
           RemoveUnit(unit);
-          //Refund gold and lumber of refundable units
         }
         else if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
         {

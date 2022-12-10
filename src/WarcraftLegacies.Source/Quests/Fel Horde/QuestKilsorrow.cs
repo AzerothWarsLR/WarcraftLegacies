@@ -33,8 +33,8 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       "This sinister fortress will serve the Fel Horde well, clear the surrounding lands to establish it",
       "ReplaceableTextures\\CommandButtons\\BTNFelOrcWatchTower.blp")
     {
-      AddObjective(new ObjectiveLegendDead(Shattrah ?? throw new SystemNotInitializedException(nameof(LegendDraenei))));
-      AddObjective(new ObjectiveLegendDead(Halaar ?? throw new SystemNotInitializedException(nameof(LegendDraenei))));
+      AddObjective(new ObjectiveCapitalDead(Shattrah));
+      AddObjective(new ObjectiveCapitalDead(Halaar));
       AddObjective(new ObjectiveExpire(1452));
       AddObjective(new ObjectiveSelfExists());
 

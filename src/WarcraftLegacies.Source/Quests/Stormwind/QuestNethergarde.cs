@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       "The nethergarde fort is holding down the Dark Portal, they will need to be reinforced soon!",
       "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionBarracks.blp")
     {
-      AddObjective(new ObjectiveLegendInRect(LegendStormwind.LegendVarian, Regions.NethergardeUnlock, "Nethergarde"));
+      AddObjective(new ObjectiveLegendInRect(LegendStormwind.Varian, Regions.NethergardeUnlock, "Nethergarde"));
       AddObjective(new ObjectiveExpire(1440));
       AddObjective(new ObjectiveSelfExists());
     }

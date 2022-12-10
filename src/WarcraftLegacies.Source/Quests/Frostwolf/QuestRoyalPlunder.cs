@@ -21,8 +21,8 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       "ReplaceableTextures\\CommandButtons\\BTNNagaWeaponUp2.blp")
     {
       _scepterOfTheQueen = scepterOfTheQueen;
-      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendWarsong.StonemaulKeep));
-      AddObjective(new ObjectiveLegendDead(LegendSentinels.Feathermoon));
+      AddObjective(new ObjectiveUnitAlive(LegendWarsong.StonemaulKeep.Unit));
+      AddObjective(new ObjectiveCapitalDead(LegendSentinels.Feathermoon));
       AddObjective(new ObjectiveAnyUnitInRect(rescueRect, "Dire Maul", true));
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
         if (!ControlPointManager.UnitIsControlPoint(unit))

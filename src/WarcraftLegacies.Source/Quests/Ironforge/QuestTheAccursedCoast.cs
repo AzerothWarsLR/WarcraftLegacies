@@ -15,9 +15,9 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       "The Dragonmaw orcs of the Dragonmaw Port have been getting more and more daring. They are now menacing to destroy Menethil Harbor. The Dwarves will have to respond in kind to keep their lands safe",
       "ReplaceableTextures\\CommandButtons\\BTNHumanShipyard.blp")
     {
-      AddObjective(new ObjectiveControlLegend(LegendIronforge.LegendMenethilHarbor, true));
-      AddObjective(new ObjectiveControlLegend(LegendIronforge.LegendThelsamar, false));
-      AddObjective(new ObjectiveLegendDead(LegendDragonmaw.DragonmawPort));
+      AddObjective(new ObjectiveControlCapital(LegendIronforge.LegendMenethilHarbor, true));
+      AddObjective(new ObjectiveControlCapital(LegendIronforge.LegendThelsamar, false));
+      AddObjective(new ObjectiveCapitalDead(LegendDragonmaw.DragonmawPort));
       AddObjective(new ObjectiveExpire(600));
     }
 

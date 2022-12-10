@@ -1,65 +1,66 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
   public static class LegendDraenei
   {
-    public static Legend LegendVelen { get; private set; }
-    public static Legend LegendMaraad { get; private set; }
-    public static Legend LegendNobundo { get; private set; }
-    public static Legend LegendExodar { get; private set; }
-    public static Legend? Shattrah { get; private set; }
+    public static LegendaryHero LegendVelen { get; private set; }
+    public static LegendaryHero LegendMaraad { get; private set; }
+    public static LegendaryHero LegendNobundo { get; private set; }
+    public static Capital LegendExodar { get; private set; }
+    public static Capital? Shattrah { get; private set; }
     
-    public static Legend? Farahlon { get; private set; }
+    public static Capital? Farahlon { get; private set; }
     
-    public static Legend? Halaar { get; private set; }
+    public static Capital? Halaar { get; private set; }
     
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendNobundo = new Legend
+      LegendNobundo = new LegendaryHero
       {
         UnitType = FourCC("E01J"),
         StartingXp = 1800
       };
-      Legend.Register(LegendNobundo);
+      LegendaryHeroManager.Register(LegendNobundo);
 
-      LegendExodar = new Legend
+      LegendExodar = new Capital()
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O05E_EXODAR_REGALIS_DRAENEI)
       };
-      Legend.Register(LegendExodar);
+      CapitalManager.Register(LegendExodar);
 
-      LegendMaraad = new Legend
+      LegendMaraad = new LegendaryHero
       {
         UnitType = FourCC("H09S")
       };
-      Legend.Register(LegendMaraad);
+      LegendaryHeroManager.Register(LegendMaraad);
 
-      LegendVelen = new Legend
+      LegendVelen = new LegendaryHero
       {
         UnitType = FourCC("E01I")
       };
-      Legend.Register(LegendVelen);
+      LegendaryHeroManager.Register(LegendVelen);
 
-      Shattrah = new Legend
+      Shattrah = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AH_SHATTRAH_DRAENEI)
       };
-      Legend.Register(Shattrah);
+      CapitalManager.Register(Shattrah);
       
-      Farahlon = new Legend
+      Farahlon = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AF_FARAHLON_DRAENEI)
       };
-      Legend.Register(Farahlon);
+      CapitalManager.Register(Farahlon);
       
-      Halaar = new Legend
+      Halaar = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AE_HALAAR_DRAENEI)
       };
-      Legend.Register(Halaar);
+      CapitalManager.Register(Halaar);
     }
   }
 }

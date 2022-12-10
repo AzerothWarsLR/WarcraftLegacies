@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
-      AddObjective(new ObjectiveLegendDead(LegendFelHorde.LegendHellfirecitadel));
+      AddObjective(new ObjectiveCapitalDead(LegendFelHorde.LegendHellfirecitadel));
     }
 
     protected override string CompletionPopup =>

@@ -9,14 +9,14 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
 {
   public sealed class QuestSentinelsKillFrostwolf : QuestData
   {
-    private static readonly int AmaraId = FourCC("h03I");
+    private const int AmaraId = Constants.UNIT_H03I_MOON_PRIESTESS_AMARA_SENTINELS_DEMI;
 
     public QuestSentinelsKillFrostwolf() : base("Drive Them Back",
       "The Frostwolf Clan is beginning to seize a firm foothold within the Barrens and on the plains of Mulgore. They must be driven back.",
       "ReplaceableTextures\\CommandButtons\\BTNThrall.blp")
     {
-      AddObjective(new ObjectiveLegendDead(LegendFrostwolf.LegendThunderbluff));
-      ResearchId = FourCC("R052");
+      AddObjective(new ObjectiveCapitalDead(LegendFrostwolf.LegendThunderbluff));
+      ResearchId = Constants.UPGRADE_R052_QUEST_COMPLETED_DRIVE_THEM_BACK_SENTINELS;
     }
 
     protected override string CompletionPopup =>

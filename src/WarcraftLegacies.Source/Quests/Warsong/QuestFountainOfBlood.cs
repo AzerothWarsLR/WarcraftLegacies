@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       "Long ago, the orcs drank the blood of Mannoroth and were infused with demonic fury. A mere taste of his blood would reignite those powers.",
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLifeBlood.blp")
     {
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.FountainOfBlood, false));
+      AddObjective(new ObjectiveControlCapital(LegendNeutral.FountainOfBlood, false));
     }
     
     protected override string CompletionPopup =>

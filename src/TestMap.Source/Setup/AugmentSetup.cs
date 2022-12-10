@@ -1,5 +1,6 @@
 ﻿using MacroTools.Augments;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 
 namespace TestMap.Source.Setup
 {
@@ -11,7 +12,7 @@ namespace TestMap.Source.Setup
          AugmentSystem.Register(new IncomePowerAugment(10));
          AugmentSystem.Register(new LumberIncomeAugment(1400));
          AugmentSystem.Register(new RapidMobilizationAugment(25));
-         foreach (var legend in Legend.GetAllLegends())
+         foreach (var legend in LegendaryHeroManager.GetAll())
          {
             AugmentSystem.Register(new HeroExperienceAugment(legend, 5000));
          }
