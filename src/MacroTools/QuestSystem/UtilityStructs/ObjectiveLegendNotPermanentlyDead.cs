@@ -15,7 +15,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
     /// Initializes a new instance of the <see cref="ObjectiveLegendNotPermanentlyDead"/> class.
     /// </summary>
     /// <param name="target">The <see cref="Legend"/> to check death status for.</param>
-    public ObjectiveLegendNotPermanentlyDead(Legend target)
+    public ObjectiveLegendNotPermanentlyDead(LegendaryHero target)
     {
       _target = target;
       Description = IsUnitType(target.Unit, UNIT_TYPE_STRUCTURE)

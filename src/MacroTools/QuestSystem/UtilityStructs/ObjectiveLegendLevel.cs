@@ -10,9 +10,9 @@ namespace MacroTools.QuestSystem.UtilityStructs
 
     private readonly Legend _target;
 
-    public ObjectiveLegendLevel(Legend target, int level)
+    public ObjectiveLegendLevel(LegendaryHero target, int level)
     {
-      Description = target.Name + " is level " + I2S(level);
+      Description = $"{target.Name} is level {level}";
       _target = target;
       _level = level;
       PlayerUnitEvents.Register(HeroTypeEvent.Levels, OnLevel);

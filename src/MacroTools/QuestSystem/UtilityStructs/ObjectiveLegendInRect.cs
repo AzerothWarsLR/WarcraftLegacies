@@ -10,16 +10,16 @@ namespace MacroTools.QuestSystem.UtilityStructs
     private readonly TriggerWrapper _entersRect = new();
     private readonly TriggerWrapper _exitsRect = new();
 
-    private readonly Legend _legend;
+    private readonly Legend _legendaryHero;
     private readonly region _target;
     private readonly rect _targetRect;
 
-    public ObjectiveLegendInRect(Legend legend, Rectangle targetRect, string rectName)
+    public ObjectiveLegendInRect(LegendaryHero legendaryHero, Rectangle targetRect, string rectName)
     {
       _targetRect = targetRect.Rect;
       _target = RectToRegion(_targetRect);
-      _legend = legend;
-      Description = legend.Name + " is at " + rectName;
+      _legendaryHero = legendaryHero;
+      Description = $"{legendaryHero.Name} is at {rectName}";
       TriggerRegisterEnterRegion(_entersRect.Trigger, _target, null);
       TriggerAddAction(_entersRect.Trigger, OnRegionEnter);
       TriggerRegisterLeaveRegion(_exitsRect.Trigger, _target, null);
@@ -40,7 +40,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
 
     private void OnRegionExit()
     {
-      if (UnitAlive(_legend.Unit) && IsUnitInRegion(_target, _legend.Unit))
+      if (UnitAlive(_legendaryHero.Unit) && IsUnitInRegion(_target, _legendaryHero.Unit))
         Progress = QuestProgress.Complete;
       else
         Progress = QuestProgress.Incomplete;
@@ -48,7 +48,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
 
     private void OnRegionEnter()
     {
-      if (UnitAlive(_legend.Unit) && GetTriggerUnit() == _legend.Unit) Progress = QuestProgress.Complete;
+      if (UnitAlive(_legendaryHero.Unit) && GetTriggerUnit() == _legendaryHero.Unit) Progress = QuestProgress.Complete;
     }
   }
 }

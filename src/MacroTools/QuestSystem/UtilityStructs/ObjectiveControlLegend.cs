@@ -10,7 +10,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
     private readonly bool _canFail;
     private readonly Legend _target;
 
-    public ObjectiveControlLegend(Legend target, bool canFail)
+    public ObjectiveControlLegend(LegendaryHero target, bool canFail)
     {
       _target = target;
       Description = $"Your team controls {target.Name}";

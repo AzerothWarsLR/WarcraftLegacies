@@ -13,12 +13,12 @@ namespace MacroTools.QuestSystem.UtilityStructs
     private readonly region _target;
     private readonly rect _targetRect;
 
-    public ObjectiveLegendReachRect(Legend legend, Rectangle targetRect, string rectName)
+    public ObjectiveLegendReachRect(LegendaryHero legendaryHero, Rectangle targetRect, string rectName)
     {
       _targetRect = targetRect.Rect;
       _target = RectToRegion(_targetRect);
-      _legend = legend;
-      Description = legend.Name + " reaches " + rectName;
+      _legend = legendaryHero;
+      Description = legendaryHero.Name + " reaches " + rectName;
       TriggerRegisterEnterRegion(_entersRect.Trigger, _target, null);
       TriggerAddAction(_entersRect.Trigger, OnRegionEnter);
       PingPath = "MinimapQuestTurnIn";

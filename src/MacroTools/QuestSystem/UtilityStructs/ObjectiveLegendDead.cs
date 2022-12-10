@@ -15,7 +15,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
     /// Initializes a new instance of the <see cref="ObjectiveLegendDead"/> class.
     /// </summary>
     /// <param name="target">The <see cref="Legend"/> that has to die for this objective to be completed.</param>
-    public ObjectiveLegendDead(Legend target)
+    public ObjectiveLegendDead(LegendaryHero target)
     {
       _target = target;
       TargetWidget = target.Unit;
