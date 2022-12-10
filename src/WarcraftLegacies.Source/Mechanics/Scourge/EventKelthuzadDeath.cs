@@ -16,14 +16,14 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge
   {
     public static int KelthuzadExp { get; private set; }
 
-    private static void Dies(object? sender, Legend legend)
+    private static void Dies(object? sender, LegendaryHero legendaryHero)
     {
-      if (legend != LegendScourge.LegendKelthuzad ||
-          legend.UnitType != LegendScourge.UnittypeKelthuzadNecromancer) return;
-      KelthuzadExp = GetHeroXP(legend.Unit);
-      legend.UnitType = LegendScourge.UnittypeKelthuzadGhost;
-      legend.PermaDies = false;
-      legend.ForceCreate(ScourgeSetup.Scourge.Player, Regions.FTSummon.Center,
+      if (legendaryHero != LegendScourge.LegendKelthuzad ||
+          legendaryHero.UnitType != LegendScourge.UnittypeKelthuzadNecromancer) return;
+      KelthuzadExp = GetHeroXP(legendaryHero.Unit);
+      legendaryHero.UnitType = LegendScourge.UnittypeKelthuzadGhost;
+      legendaryHero.PermaDies = false;
+      legendaryHero.ForceCreate(ScourgeSetup.Scourge.Player, Regions.FTSummon.Center,
         270);
       DestroyTrigger(GetTriggeringTrigger());
     }

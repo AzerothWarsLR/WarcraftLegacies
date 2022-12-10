@@ -7,6 +7,7 @@ using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.Hints;
 using WarcraftLegacies.Source.Mechanics.Quelthalas;
+using WarcraftLegacies.Source.Mechanics.Scourge;
 using WarcraftLegacies.Source.Mechanics.Scourge.Blight;
 using WarcraftLegacies.Source.Rocks;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -106,6 +107,7 @@ namespace WarcraftLegacies.Source.Setup
       SummonRallyPoints.Setup();
       RemoveUnusedAreas.Run();
       EyeOfSargerasCooldowns.Setup();
+      EventKelthuzadDeath.Setup();
     }
   }
 }

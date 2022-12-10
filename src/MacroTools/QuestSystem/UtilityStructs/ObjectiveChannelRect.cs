@@ -1,4 +1,3 @@
-using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
@@ -55,7 +54,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
     {
       var whichUnit = GetEnteringUnit();
       if (!EligibleFactions.Contains(GetOwningPlayer(whichUnit)) || !UnitAlive(whichUnit) ||
-          Legend.GetFromUnit(GetTriggerUnit()) != _targetLegend || _channel != null ||
+          LegendaryHeroManager.GetFromUnit(GetTriggerUnit()) != _targetLegend || _channel != null ||
           Progress != QuestProgress.Incomplete) return;
       _channel = new Channel(whichUnit, _duration, _facing, Position);
       _channel.Finished += OnChannelEnd;

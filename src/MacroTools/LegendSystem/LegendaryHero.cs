@@ -29,12 +29,12 @@ namespace MacroTools.LegendSystem
     /// <summary>
     /// Fired when the <see cref="Legend"/> permanently dies, after it is removed from the game.
     /// </summary>
-    public event EventHandler<Legend>? OnLegendPermaDeath;
+    public event EventHandler<LegendaryHero>? OnLegendPermaDeath;
     
     /// <summary>
     ///   Fired when the <see cref="Legend" /> permanently dies.
     /// </summary>
-    public event EventHandler<Legend>? PermanentlyDied;
+    public event EventHandler<LegendaryHero>? PermanentlyDied;
     
     /// <summary>
     ///   If true, the Legend is permanently removed from the game upon death.

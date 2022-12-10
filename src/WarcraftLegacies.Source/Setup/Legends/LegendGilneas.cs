@@ -55,14 +55,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
         UnitType = Constants.UNIT_H057_LIGHT_S_DAWN_CATHEDRAL_GILNEAS,
         DeathMessage = "The Light's Dawn Capital has been destroyed.",
       };
-      LegendaryHeroManager.Register(LightDawn);
+      CapitalManager.Register(LightDawn);
 
       GilneasCastle = new Capital
       {
         UnitType = Constants.UNIT_H04I_GILNEAS_CASTLE_GILNEAS,
         DeathMessage = "The Gilneas castle has fallen",  
       };
-      LegendaryHeroManager.Register(GilneasCastle);
+      CapitalManager.Register(GilneasCastle);
     }
   }
 }

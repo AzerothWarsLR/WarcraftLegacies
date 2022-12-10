@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.GameLogic
       PlayerUnitEvents.Register(HeroTypeEvent.FinishesRevive, () =>
       {
         var triggerUnit = GetTriggerUnit();
-        var revivedLegend = Legend.GetFromUnit(triggerUnit);
+        var revivedLegend = LegendaryHeroManager.GetFromUnit(triggerUnit);
         if (revivedLegend?.HasCustomColor == true)
         {
           SetUnitColor(triggerUnit, revivedLegend.PlayerColor);

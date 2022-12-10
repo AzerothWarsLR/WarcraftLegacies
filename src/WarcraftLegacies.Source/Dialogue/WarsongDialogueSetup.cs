@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Dialogue
             WarsongSetup.WarsongClan
           }
         });
-        gromObjectives.Add(new ObjectiveControlLegend(LegendNeutral.FountainOfBlood, false)
+        gromObjectives.Add(new ObjectiveControlCapital(LegendNeutral.FountainOfBlood, false)
         {
           EligibleFactions = new List<Faction>
           {
