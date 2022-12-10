@@ -1,4 +1,5 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using TestMap.Source.Setup.FactionSetup.FactionSetup;
 using static War3Api.Common;
 

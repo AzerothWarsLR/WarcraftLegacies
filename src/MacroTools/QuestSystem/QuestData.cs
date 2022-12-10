@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using static War3Api.Common;

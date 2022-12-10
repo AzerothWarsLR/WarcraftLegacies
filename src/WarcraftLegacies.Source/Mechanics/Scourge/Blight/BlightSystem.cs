@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Libraries;
 using WCSharp.Shared.Data;

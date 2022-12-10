@@ -1,4 +1,5 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using MacroTools.Libraries;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;

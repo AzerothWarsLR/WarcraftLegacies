@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace MacroTools.FactionSystem
+namespace MacroTools.Extensions
 {
   /// <summary>
   /// A set of helpful extension methods for dealing with Warcraft 3's native player class.
