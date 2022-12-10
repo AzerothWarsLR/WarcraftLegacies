@@ -6,60 +6,60 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public static class LegendFelHorde
   {
-    public static Legend LegendMagtheridon { get; private set; }
-    public static Legend LegendZuluhed { get; private set; }
-    public static Legend LegendChogall { get; private set; }
-    public static Legend LegendNekrosh { get; private set; }
-    public static Legend LegendRend { get; private set; }
-    public static Legend LegendTeron { get; private set; }
-    public static Legend LegendKargath { get; private set; }
-    public static Legend LegendBlackrockspire { get; private set; }
-    public static Legend LegendBlacktemple { get; private set; }
-    public static Legend LegendHellfirecitadel { get; private set; }
+    public static LegendaryHero LegendMagtheridon { get; private set; }
+    public static LegendaryHero LegendZuluhed { get; private set; }
+    public static LegendaryHero LegendChogall { get; private set; }
+    public static LegendaryHero LegendNekrosh { get; private set; }
+    public static LegendaryHero LegendRend { get; private set; }
+    public static LegendaryHero LegendTeron { get; private set; }
+    public static LegendaryHero LegendKargath { get; private set; }
+    public static Capital LegendBlackrockspire { get; private set; }
+    public static Capital LegendBlacktemple { get; private set; }
+    public static Capital LegendHellfirecitadel { get; private set; }
 
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendMagtheridon = new Legend
+      LegendMagtheridon = new LegendaryHero
       {
         UnitType = Constants.UNIT_NMAG_LORD_OF_OUTLAND_FEL_HORDE,
         DeathMessage = "Magtheridon’s eternal demon soul has been consumed, and his life permanently extinguished. The Lord of Outland has fallen."
       };
       Legend.Register(LegendMagtheridon);
 
-      LegendRend = new Legend
+      LegendRend = new LegendaryHero
       {
         UnitType = FourCC("Nbbc"),
         StartingXp = 2800
       };
       Legend.Register(LegendRend);
 
-      LegendKargath = new Legend
+      LegendKargath = new LegendaryHero
       {
         UnitType = FourCC("N03D"),
         StartingXp = 2800
       };
       Legend.Register(LegendKargath);
 
-      LegendZuluhed = new Legend
+      LegendZuluhed = new LegendaryHero
       {
         UnitType = FourCC("O00Y")
       };
       Legend.Register(LegendZuluhed);
 
-      LegendNekrosh = new Legend
+      LegendNekrosh = new LegendaryHero
       {
         UnitType = FourCC("O01Q")
       };
       Legend.Register(LegendNekrosh);
 
-      LegendChogall = new Legend
+      LegendChogall = new LegendaryHero
       {
         UnitType = FourCC("O01P")
       };
       Legend.Register(LegendChogall);
 
-      LegendTeron = new Legend
+      LegendTeron = new LegendaryHero
       {
         UnitType = FourCC("U02D"),
         StartingXp = 5400,
@@ -67,21 +67,21 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       Legend.Register(LegendTeron);
 
-      LegendBlackrockspire = new Legend
+      LegendBlackrockspire = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o013")),
         DeathMessage = "Blackrock Spire has been razed."
       };
       Legend.Register(LegendBlackrockspire);
 
-      LegendBlacktemple = new Legend
+      LegendBlacktemple = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o00F")),
         Capturable = true
       };
       Legend.Register(LegendBlacktemple);
 
-      LegendHellfirecitadel = new Legend
+      LegendHellfirecitadel = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o008"))
       };

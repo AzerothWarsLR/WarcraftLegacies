@@ -7,42 +7,42 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public static class LegendKultiras
   {
-    public static Legend LegendAdmiral { get; private set; }
-    public static Legend LegendLucille { get; private set; }
-    public static Legend LegendKatherine { get; private set; }
-    public static Legend LegendBoralus { get; private set; }
-    public static Legend Flagship { get; private set; }
+    public static LegendaryHero LegendAdmiral { get; private set; }
+    public static LegendaryHero LegendLucille { get; private set; }
+    public static LegendaryHero LegendKatherine { get; private set; }
+    public static Capital LegendBoralus { get; private set; }
+    public static LegendaryHero Flagship { get; private set; }
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendAdmiral = new Legend
+      LegendAdmiral = new LegendaryHero
       {
         UnitType = FourCC("Hapm")
       };
       Legend.Register(LegendAdmiral);
 
-      LegendLucille = new Legend
+      LegendLucille = new LegendaryHero
       {
         UnitType = FourCC("E016"),
         StartingXp = 2800
       };
       Legend.Register(LegendLucille);
 
-      LegendKatherine = new Legend
+      LegendKatherine = new LegendaryHero
       {
         UnitType = FourCC("H05L"),
         StartingXp = 1200
       };
       Legend.Register(LegendKatherine);
 
-      LegendBoralus = new Legend
+      LegendBoralus = new Capital()
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H046_BORALUS_KEEP_KUL_TIRAS),
         DeathMessage = "Boralus Keep has fallen" //Todo: pointless flavour
       };
       Legend.Register(LegendBoralus);
 
-      Flagship = new Legend
+      Flagship = new LegendaryHero
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS)
       };

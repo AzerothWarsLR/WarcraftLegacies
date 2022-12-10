@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       "The spire of Medivh stands mysteriously idle. Dalaran could make use of its grand magicks.",
       "ReplaceableTextures\\CommandButtons\\BTNTomeBrown.blp")
     {
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.Karazhan, false));
+      AddObjective(new ObjectiveControlCapital(LegendNeutral.Karazhan, false));
     }
     
     protected override string CompletionPopup => "Karazhan has been captured. Dalaran's archivists scour its halls for arcane resources.";

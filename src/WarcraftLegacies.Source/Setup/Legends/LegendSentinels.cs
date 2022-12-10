@@ -12,71 +12,71 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// <summary>
     /// Leader of the Wardens.
     /// </summary>
-    public static Legend? Maiev { get; private set; }
+    public static LegendaryHero? Maiev { get; private set; }
 
     /// <summary>
     /// High Priestess of Elune.
     /// </summary>
-    public static Legend? Tyrande { get; private set; }
+    public static LegendaryHero? Tyrande { get; private set; }
     
     /// <summary>
     /// Tyrande's second in command.
     /// </summary>
-    public static Legend? Shandris { get; private set; }
+    public static LegendaryHero? Shandris { get; private set; }
     
     /// <summary>
     /// Night Elven Commander.
     /// </summary>
-    public static Legend? Jarod { get; private set; }
+    public static LegendaryHero? Jarod { get; private set; }
     
     /// <summary>
     /// Night Elven town in Darkshore.
     /// </summary>
-    public static Legend? Auberdine { get; private set; }
+    public static Capital? Auberdine { get; private set; }
     
     /// <summary>
     /// Night Elven stronghold village led by Shandris.
     /// </summary>
-    public static Legend? Feathermoon { get; private set; }
+    public static Capital? Feathermoon { get; private set; }
 
     /// <summary>
     /// Sets up all Sentinel <see cref="Legend"/>s.
     /// </summary>
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Maiev = new Legend
+      Maiev = new LegendaryHero
       {
         UnitType = FourCC("Ewrd")
       };
       Legend.Register(Maiev);
 
-      Auberdine = new Legend
+      Auberdine = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("e00J"))
       };
       Legend.Register(Auberdine);
 
-      Feathermoon = new Legend
+      Feathermoon = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("e00M"))
       };
       Legend.Register(Feathermoon);
 
-      Tyrande = new Legend
+      Tyrande = new LegendaryHero
       {
         UnitType = FourCC("Etyr"),
         PlayerColor = PLAYER_COLOR_CYAN
       };
       Legend.Register(Tyrande);
 
-      Shandris = new Legend
+      Shandris = new LegendaryHero
       {
         UnitType = FourCC("E002"),
         StartingXp = 1000
       };
       Legend.Register(Shandris);
 
-      Jarod = new Legend
+      Jarod = new LegendaryHero
       {
         UnitType = FourCC("O02E"),
         StartingXp = 4000

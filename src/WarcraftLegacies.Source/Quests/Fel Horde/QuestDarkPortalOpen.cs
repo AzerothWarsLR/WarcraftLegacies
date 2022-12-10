@@ -2,15 +2,11 @@
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Fel_Horde
 {
-  /// <summary>
-  /// Destroy <see cref="LegendDraenei.LegendExodarship"/> to be able to use the dark portal
-  /// </summary>
-  public class QuestDarkPortalOpen : QuestData
+  public sealed class QuestDarkPortalOpen : QuestData
   {
     private readonly unit _portalController;
     private readonly unit _innerWaygate1;

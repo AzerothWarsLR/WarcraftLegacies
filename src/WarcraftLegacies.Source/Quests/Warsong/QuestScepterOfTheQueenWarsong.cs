@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       _scepterOfTheQueen = scepterOfTheQueen;
       _highBourneAreaUnits = _highBourneArea.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendWarsong.StonemaulKeep ?? throw new SystemNotInitializedException(nameof(LegendWarsong))));
-      AddObjective(new ObjectiveLegendDead(LegendSentinels.Feathermoon));
+      AddObjective(new ObjectiveCapitalDead(LegendSentinels.Feathermoon));
       AddObjective(new ObjectiveAnyUnitInRect(_highBourneArea, "Dire Maul", true));
     }
 

@@ -15,9 +15,9 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       "Nek'rosh has a grudge against the alliance for the death of his father. His first target is the port town of Menethil Harbor.",
       "ReplaceableTextures\\CommandButtons\\BTNHumanShipyard.blp")
     {
-      AddObjective(new ObjectiveLegendDead(LegendIronforge.LegendMenethilHarbor));
+      AddObjective(new ObjectiveCapitalDead(LegendIronforge.LegendMenethilHarbor));
       AddObjective(new ObjectiveControlLegend(LegendDragonmaw.Nekrosh, false));
-      AddObjective(new ObjectiveControlLegend(LegendDragonmaw.DragonmawPort, false));
+      AddObjective(new ObjectiveControlCapital(LegendDragonmaw.DragonmawPort, false));
       AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendDragonmaw.DragonmawPort));
       AddObjective(new ObjectiveExpire(600));
     }

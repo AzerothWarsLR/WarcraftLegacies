@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     {
       AddObjective(new ObjectiveChannelRect(Regions.JainaChannel, "The Nexus", LegendDalaran.LegendJaina, 60, 270));
       AddObjective(new ObjectiveControlLegend(LegendDalaran.LegendJaina, true));
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.TheNexus, false));
+      AddObjective(new ObjectiveControlCapital(LegendNeutral.TheNexus, false));
       Global = true;
     }
 

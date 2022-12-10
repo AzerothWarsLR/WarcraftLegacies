@@ -6,17 +6,17 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public static class LegendFrostwolf
   {
-    public static Legend? LegendCairne { get; private set; }
-    public static Legend? LegendThrall { get; private set; }
-    public static Legend? LegendRexxar { get; private set; }
+    public static LegendaryHero? LegendCairne { get; private set; }
+    public static LegendaryHero? LegendThrall { get; private set; }
+    public static LegendaryHero? LegendRexxar { get; private set; }
 
-    public static Legend? LegendThunderbluff { get; private set; }
-    public static Legend? LegendDarkspearhold { get; private set; }
-    public static Legend? LegendOrgrimmar { get; private set; }
+    public static Capital? LegendThunderbluff { get; private set; }
+    public static Capital? LegendDarkspearhold { get; private set; }
+    public static Capital? LegendOrgrimmar { get; private set; }
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendCairne = new Legend
+      LegendCairne = new LegendaryHero
       {
         UnitType = FourCC("Ocbh"),
         DeathMessage =
@@ -25,14 +25,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       Legend.Register(LegendCairne);
 
-      LegendThrall = new Legend
+      LegendThrall = new LegendaryHero
       {
         UnitType = Constants.UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF,
         Name = "Thrall"
       };
       Legend.Register(LegendThrall);
 
-      LegendThunderbluff = new Legend
+      LegendThunderbluff = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o00J")),
         DeathMessage =
@@ -40,20 +40,20 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       Legend.Register(LegendThunderbluff);
 
-      LegendDarkspearhold = new Legend
+      LegendDarkspearhold = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o02D"))
       };
       Legend.Register(LegendDarkspearhold);
 
-      LegendRexxar = new Legend
+      LegendRexxar = new LegendaryHero
       {
         UnitType = FourCC("Orex"),
         StartingXp = 1800
       };
       Legend.Register(LegendRexxar);
 
-      LegendOrgrimmar = new Legend
+      LegendOrgrimmar = new Capital
       {
         DeathMessage =
           "Orgrimmar has been demolished. With it dies the hopes and dreams of a wartorn race seeking refuge in a new world."

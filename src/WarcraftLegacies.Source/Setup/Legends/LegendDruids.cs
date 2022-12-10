@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static LegendaryHero LegendFandral { get; private set; }
     public static LegendaryHero LegendUrsoc { get; private set; }
     public static LegendaryHero LegendTortolla { get; private set; }
-    public static LegendaryHero LegendNordrassil { get; private set; }
+    public static Capital LegendNordrassil { get; private set; }
     public static int UnittypeCenariusAlive { get; } = FourCC("Ecen");
     public static int UnittypeCenariusGhost { get; } = FourCC("E00H");
 
@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 7000
       });
 
-      Legend.Register(LegendNordrassil = new LegendaryHero
+      Legend.Register(LegendNordrassil = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("n002")),
         Capturable = true

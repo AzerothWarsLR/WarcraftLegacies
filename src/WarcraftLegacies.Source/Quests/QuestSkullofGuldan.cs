@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests
       if (_objectiveWithCompletingUnit is Objective objective)
         AddObjective(objective);
       AddObjective(new ObjectiveNoOtherPlayerGetsArtifact(skullOfGuldan));
-      AddObjective(new ObjectiveLegendDead(LegendDalaran.LegendDalaranCapital));
+      AddObjective(new ObjectiveCapitalDead(LegendDalaran.LegendDalaranCapital));
       _skullOfGuldanBuilding = skullOfGuldanBuilding;
       _skullOfGuldan = skullOfGuldan;
     }

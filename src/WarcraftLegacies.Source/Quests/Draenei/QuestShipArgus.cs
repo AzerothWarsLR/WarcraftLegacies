@@ -18,7 +18,6 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestShipArgus"/> class.
     /// </summary>
-    /// <param name="prerequisite">This quest has to be completed first.</param>
     /// <param name="outlandToArgusWaygate">Starts hidden, and gets enabled as a waygate when the quest is complete.</param>
     /// <param name="argusToOutlandWaygate">Starts hidden, and gets enabled as a waygate when the quest is complete.</param>
     public QuestShipArgus(unit outlandToArgusWaygate, unit argusToOutlandWaygate) : base("Reconquering Tempest Keep",

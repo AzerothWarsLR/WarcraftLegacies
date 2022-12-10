@@ -31,8 +31,8 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       "The Kul'tiran people and their fleet have been a threat to the Zandalari Empire for ages, it is time to put them to rest.",
       "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp")
     {
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.Dazaralor, true));
-      AddObjective(new ObjectiveLegendDead(LegendKultiras.LegendBoralus));
+      AddObjective(new ObjectiveControlCapital(LegendNeutral.Dazaralor, true));
+      AddObjective(new ObjectiveCapitalDead(LegendKultiras.LegendBoralus));
       ResearchId = Constants.UPGRADE_R08D_QUEST_COMPLETED_CONQUER_BORALUS;
       _onFailSpawnRect = onFailSpawnRect;
       _completeOnFailQuest = completeOnFailQuest;

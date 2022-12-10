@@ -16,9 +16,9 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       "The Orc threat from Draenor still looms over all. Eliminate every trace of the Orcs and their bases.",
       "ReplaceableTextures\\CommandButtons\\BTNDarkPortal.blp")
     {
-      AddObjective(new ObjectiveControlLegend(LegendFelHorde.LegendBlacktemple, false));
-      AddObjective(new ObjectiveLegendDead(LegendFelHorde.LegendHellfirecitadel));
-      AddObjective(new ObjectiveLegendDead(LegendFelHorde.LegendBlackrockspire));
+      AddObjective(new ObjectiveControlCapital(LegendFelHorde.LegendBlacktemple, false));
+      AddObjective(new ObjectiveCapitalDead(LegendFelHorde.LegendHellfirecitadel));
+      AddObjective(new ObjectiveCapitalDead(LegendFelHorde.LegendBlackrockspire));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R085_QUEST_COMPLETED_BEYOND_THE_DARK_PORTAL;
     }

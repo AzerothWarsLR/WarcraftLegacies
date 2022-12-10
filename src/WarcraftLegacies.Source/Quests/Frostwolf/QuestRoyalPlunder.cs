@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     {
       _scepterOfTheQueen = scepterOfTheQueen;
       AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendWarsong.StonemaulKeep));
-      AddObjective(new ObjectiveLegendDead(LegendSentinels.Feathermoon));
+      AddObjective(new ObjectiveCapitalDead(LegendSentinels.Feathermoon));
       AddObjective(new ObjectiveAnyUnitInRect(rescueRect, "Dire Maul", true));
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
         if (!ControlPointManager.UnitIsControlPoint(unit))

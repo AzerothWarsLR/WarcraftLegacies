@@ -16,8 +16,6 @@ namespace MacroTools.QuestSystem.UtilityStructs
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectiveControlCapital"/> class.
     /// </summary>
-    /// <param name="target"></param>
-    /// <param name="canFail"></param>
     public ObjectiveControlCapital(Capital target, bool canFail)
     {
       _target = target;
