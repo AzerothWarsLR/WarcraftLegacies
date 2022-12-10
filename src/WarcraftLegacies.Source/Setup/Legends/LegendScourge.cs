@@ -9,12 +9,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public static class LegendScourge
   {
-    public static Legend? LegendKelthuzad { get; private set; }
-    public static Legend? LegendAnubarak { get; private set; }
-    public static Legend? LegendRivendare { get; private set; }
-    public static Legend? LegendLichking { get; private set; }
-    public static Legend? LegendUtgarde { get; private set; }
-    public static Legend? Naxxramas { get; private set; }
+    public static LegendaryHero? LegendKelthuzad { get; private set; }
+    public static LegendaryHero? LegendAnubarak { get; private set; }
+    public static LegendaryHero? LegendRivendare { get; private set; }
+    public static Capital? LegendLichking { get; private set; }
+    public static Capital? LegendUtgarde { get; private set; }
+    public static Capital? Naxxramas { get; private set; }
 
     public static int UnittypeKelthuzadNecromancer { get; } = FourCC("U001");
     public static int UnittypeKelthuzadGhost { get; } = FourCC("U00M");
@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendKelthuzad = new Legend
+      LegendKelthuzad = new LegendaryHero
       {
         UnitType = FourCC("U001"),
         PermaDies = true,
@@ -34,27 +34,27 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       Legend.Register(LegendKelthuzad);
 
-      LegendAnubarak = new Legend
+      LegendAnubarak = new LegendaryHero
       {
         UnitType = FourCC("Uanb")
       };
       Legend.Register(LegendAnubarak);
 
-      LegendRivendare = new Legend
+      LegendRivendare = new LegendaryHero
       {
         UnitType = FourCC("U00A"),
         StartingXp = 1000
       };
       Legend.Register(LegendRivendare);
 
-      LegendUtgarde = new Legend
+      LegendUtgarde = new Capital()
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h00O")),
         Capturable = true
       };
       Legend.Register(LegendUtgarde);
 
-      LegendLichking = new Legend
+      LegendLichking = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("u000")),
         Hivemind = true,
@@ -74,7 +74,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
           LegendLichking.Unit.SetOwner(Player(bj_PLAYER_NEUTRAL_VICTIM));
       });
 
-      Naxxramas = new Legend
+      Naxxramas = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_U01X_HEART_OF_NAXXRAMAS)
       };
