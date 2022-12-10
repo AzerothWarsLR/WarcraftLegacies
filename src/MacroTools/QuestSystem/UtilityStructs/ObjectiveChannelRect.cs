@@ -27,16 +27,17 @@ namespace MacroTools.QuestSystem.UtilityStructs
     /// </summary>
     /// <param name="targetRect">Where the channeling must be done.</param>
     /// <param name="rectName">A user-friendly name for the location the channeling must be done.</param>
-    /// <param name="whichLegend">The Legend that must do the channeling.</param>
+    /// <param name="legendaryHero"></param>
     /// <param name="duration">How long the channel lasts.</param>
     /// <param name="facing">Which way the unit faces while channeling.</param>
-    public ObjectiveChannelRect(Rectangle targetRect, string rectName, Legend whichLegend, int duration, float facing)
+    public ObjectiveChannelRect(Rectangle targetRect, string rectName, LegendaryHero legendaryHero, int duration,
+      float facing)
     {
       _targetRect = targetRect.Rect;
       var target = RectToRegion(_targetRect);
-      _targetLegend = whichLegend;
+      _targetLegend = legendaryHero;
       _duration = duration;
-      Description = $"Have {whichLegend.Name} channel at {rectName} for {duration} seconds";
+      Description = $"Have {legendaryHero.Name} channel at {rectName} for {duration} seconds";
       _facing = facing;
 
       MapEffectPath = TargetEffect;
