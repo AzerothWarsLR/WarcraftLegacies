@@ -19,6 +19,11 @@ namespace MacroTools.FactionSystem
     /// The number of living <see cref="Protector"/> making this <see cref="Legend"/> invulnerable.
     /// </summary>
     public int ProtectorCount => _protectors.Count;
+
+    /// <summary>
+    /// A user-friendly name for the <see cref="Capital"/>.
+    /// </summary>
+    public string Name => GetObjectName(UnitType);
     
     private readonly List<Protector> _protectors = new();
     private trigger? _damageTrig;

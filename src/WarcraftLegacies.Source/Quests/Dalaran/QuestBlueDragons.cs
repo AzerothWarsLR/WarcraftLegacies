@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       "The Blue Dragons of Northrend are the wardens of magic on Azeroth. They might be convinced to willingly join the mages of Dalaran.",
       "ReplaceableTextures\\CommandButtons\\BTNAzureDragon.blp")
     {
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.TheNexus, false));
+      AddObjective(new ObjectiveControlCapital(LegendNeutral.TheNexus, false));
     }
 
     protected override string CompletionPopup =>
