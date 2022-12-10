@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using static War3Api.Common;
 
-namespace MacroTools.FactionSystem
+namespace MacroTools.Extensions
 {
   /// <summary>
   /// Provides extra information about players that is not already tracked by the Warcraft 3 engine.
