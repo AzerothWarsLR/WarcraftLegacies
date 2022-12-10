@@ -1,23 +1,22 @@
-﻿using MacroTools.FactionSystem;
-using MacroTools.LegendSystem;
+﻿using MacroTools.LegendSystem;
 using static War3Api.Common;
 
 namespace TestMap.Source.Setup
 {
   public static class LegendSetup
   {
-    public static Legend Kael { get; private set; }
-    public static Legend Uther { get; private set; }
+    public static LegendaryHero Kael { get; private set; }
+    public static LegendaryHero Uther { get; private set; }
 
     public static void Setup()
     {
-      Kael = new Legend
+      Kael = new LegendaryHero
       {
         Unit = CreateUnit(Player(12), FourCC("Hkal"), 0, 0, 0),
         PermaDies = true
       };
       LegendaryHeroManager.Register(Kael);
-      Uther = new Legend
+      Uther = new LegendaryHero
       {
         UnitType = FourCC("Huth"),
         StartingXp = 3000

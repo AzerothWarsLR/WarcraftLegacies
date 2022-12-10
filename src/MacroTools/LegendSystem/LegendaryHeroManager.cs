@@ -35,7 +35,7 @@ namespace MacroTools.LegendSystem
     /// <summary>
     /// Returns all registered <see cref="Legend"/>s.
     /// </summary>
-    public static ReadOnlyCollection<LegendaryHero> GetAllLegends()
+    public static ReadOnlyCollection<LegendaryHero> GetAll()
     {
       return AllLegendaryHeroes.AsReadOnly();
     }
