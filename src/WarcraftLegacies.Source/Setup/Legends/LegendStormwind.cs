@@ -57,7 +57,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(FourCC("h00X")),
         DeathMessage = "Stormwind Keep, the capitol of the nation of Stormwind, has been destroyed!"
       };
-      LegendaryHeroManager.Register(Stormwindkeep);
+      CapitalManager.Register(Stormwindkeep);
       Stormwindkeep.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND, new Point(9530, -10941)));
       Stormwindkeep.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND, new Point(10177, -10952)));
 
@@ -65,7 +65,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h03Y"))
       };
-      LegendaryHeroManager.Register(Darkshire);
+      CapitalManager.Register(Darkshire);
 
       ConstructionSiteMagic = new Capital
       {

@@ -53,7 +53,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(FourCC("h00O")),
         Capturable = true
       };
-      LegendaryHeroManager.Register(LegendUtgarde);
+      CapitalManager.Register(LegendUtgarde);
 
       LegendLichking = new Capital
       {
@@ -62,7 +62,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage =
           "The great Lich King has been destroyed. With no central mind to command them, the forces of the Undead have gone rogue."
       };
-      LegendaryHeroManager.Register(LegendLichking);
+      CapitalManager.Register(LegendLichking);
       LegendLichking.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3655, 20220)));
       LegendLichking.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3015, 20762)));
       LegendLichking.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3643, 22588)));
@@ -79,7 +79,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_U01X_HEART_OF_NAXXRAMAS)
       };
-      LegendaryHeroManager.Register(Naxxramas);
+      CapitalManager.Register(Naxxramas);
       SetUnitInvulnerable(Naxxramas.Unit, true);
       SetUnitTimeScale(Naxxramas.Unit, 0);
     }

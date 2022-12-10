@@ -45,7 +45,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 7000
       });
 
-      LegendaryHeroManager.Register(LegendNordrassil = new Capital
+      CapitalManager.Register(LegendNordrassil = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("n002")),
         Capturable = true

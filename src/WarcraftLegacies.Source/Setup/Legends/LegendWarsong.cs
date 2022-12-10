@@ -28,15 +28,15 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       LegendaryHeroManager.Register(Saurfang);
 
-      StonemaulKeep = new Capital()
+      StonemaulKeep = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O004_STONEMAUL_KEEP),
         DeathMessage = "The fortress of the Stonemaul Clan has fallen."
       };
-      LegendaryHeroManager.Register(StonemaulKeep);
+      CapitalManager.Register(StonemaulKeep);
 
       WarsongEncampment = new Capital();
-      LegendaryHeroManager.Register(WarsongEncampment);
+      CapitalManager.Register(WarsongEncampment);
 
       GromHellscream = new LegendaryHero()
       {

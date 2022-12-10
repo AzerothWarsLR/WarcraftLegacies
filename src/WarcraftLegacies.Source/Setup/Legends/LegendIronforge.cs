@@ -45,7 +45,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(FourCC("h001")),
         DeathMessage = "The Great Forge has been extinguished." //Todo: mediocre flavour
       };
-      LegendaryHeroManager.Register(LegendGreatforge);
+      CapitalManager.Register(LegendGreatforge);
       LegendGreatforge.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE, new Point(10509, -5976)));
       LegendGreatforge.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE, new Point(10710, -5974)));
 
@@ -53,13 +53,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h05H"))
       };
-      LegendaryHeroManager.Register(LegendThelsamar);
+      CapitalManager.Register(LegendThelsamar);
 
       LegendMenethilHarbor = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h0AK"))
       };
-      LegendaryHeroManager.Register(LegendMenethilHarbor);
+      CapitalManager.Register(LegendMenethilHarbor);
     }
   }
 }

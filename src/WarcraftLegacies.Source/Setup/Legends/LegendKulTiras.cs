@@ -41,7 +41,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H046_BORALUS_KEEP_KUL_TIRAS),
         DeathMessage = "Boralus Keep has fallen" //Todo: pointless flavour
       };
-      LegendaryHeroManager.Register(LegendBoralus);
+      CapitalManager.Register(LegendBoralus);
 
       Flagship = new LegendaryHero
       {

@@ -73,20 +73,20 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(FourCC("o013")),
         DeathMessage = "Blackrock Spire has been razed."
       };
-      LegendaryHeroManager.Register(LegendBlackrockspire);
+      CapitalManager.Register(LegendBlackrockspire);
 
       LegendBlacktemple = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o00F")),
         Capturable = true
       };
-      LegendaryHeroManager.Register(LegendBlacktemple);
+      CapitalManager.Register(LegendBlacktemple);
 
       LegendHellfirecitadel = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o008"))
       };
-      LegendaryHeroManager.Register(LegendHellfirecitadel);
+      CapitalManager.Register(LegendHellfirecitadel);
     }
   }
 }

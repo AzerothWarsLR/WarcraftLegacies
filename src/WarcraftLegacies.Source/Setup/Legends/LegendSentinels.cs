@@ -55,13 +55,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("e00J"))
       };
-      LegendaryHeroManager.Register(Auberdine);
+      CapitalManager.Register(Auberdine);
 
       Feathermoon = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("e00M"))
       };
-      LegendaryHeroManager.Register(Feathermoon);
+      CapitalManager.Register(Feathermoon);
 
       Tyrande = new LegendaryHero
       {

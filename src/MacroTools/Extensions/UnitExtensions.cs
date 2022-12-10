@@ -363,8 +363,8 @@ namespace MacroTools.Extensions
       SetUnitOwner(whichUnit, GetUnitFoodUsed(whichUnit) == 10 ? Player(PLAYER_NEUTRAL_PASSIVE) : whichPlayer, true);
       ShowUnit(whichUnit, true);
 
-      var asLegend = Legend.GetFromUnit(whichUnit) as Capital;
-      if (asLegend == null || asLegend.ProtectorCount == 0) 
+      var asCapital = CapitalManager.GetFromUnit(whichUnit);
+      if (asCapital == null || asCapital.ProtectorCount == 0) 
         whichUnit.SetInvulnerable(false);
     }
 

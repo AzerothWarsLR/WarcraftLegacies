@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage =
           "The Dragonmaw Port has fallen, the Twilight Highlands are finally liberated"
       };
-      LegendaryHeroManager.Register(DragonmawPort);
+      CapitalManager.Register(DragonmawPort);
 
       LegendaryHeroManager.Register(Zaela = new LegendaryHero
       {

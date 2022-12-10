@@ -63,133 +63,133 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("h026"))
       };
-      LegendaryHeroManager.Register(Auchindoun);
+      CapitalManager.Register(Auchindoun);
 
       DraktharonKeep = new Capital
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("o016"))
       };
-      LegendaryHeroManager.Register(DraktharonKeep);
+      CapitalManager.Register(DraktharonKeep);
 
       Oshugun = new Capital
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("h02Z"))
       };
-      LegendaryHeroManager.Register(Oshugun);
+      CapitalManager.Register(Oshugun);
 
       Jinthaalor = new Capital
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("o02G"))
       };
-      LegendaryHeroManager.Register(Jinthaalor);
+      CapitalManager.Register(Jinthaalor);
 
       ShrineOfUlatek = new Capital
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("o00Q"))
       };
-      LegendaryHeroManager.Register(ShrineOfUlatek);
+      CapitalManager.Register(ShrineOfUlatek);
 
       Seradane = new Capital
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("e014"))
       };
-      LegendaryHeroManager.Register(Seradane);
+      CapitalManager.Register(Seradane);
 
       Zulgurub = new Capital
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("o018"))
       };
-      LegendaryHeroManager.Register(Zulgurub);
+      CapitalManager.Register(Zulgurub);
 
       Dazaralor = new Capital
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("o00V"))
       };
-      LegendaryHeroManager.Register(Dazaralor);
+      CapitalManager.Register(Dazaralor);
 
       Gundrak = new Capital
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("o00N"))
       };
-      LegendaryHeroManager.Register(Gundrak);
+      CapitalManager.Register(Gundrak);
 
       DuskwoodGraveyard = new Capital
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("h01F"))
       };
-      LegendaryHeroManager.Register(DuskwoodGraveyard);
+      CapitalManager.Register(DuskwoodGraveyard);
 
       GrimBatol = new Capital
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("h01Z"))
       };
-      LegendaryHeroManager.Register(GrimBatol);
+      CapitalManager.Register(GrimBatol);
 
       Ethelrethor = new Capital
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("h05I"))
       };
-      LegendaryHeroManager.Register(Ethelrethor);
+      CapitalManager.Register(Ethelrethor);
 
       TheNexus = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h04P")),
         Capturable = true
       };
-      LegendaryHeroManager.Register(TheNexus);
+      CapitalManager.Register(TheNexus);
 
       Karazhan = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h00G")),
         Capturable = true
       };
-      LegendaryHeroManager.Register(Karazhan);
+      CapitalManager.Register(Karazhan);
 
       Zulfarrak = new Capital
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("o00K"))
       };
-      LegendaryHeroManager.Register(Zulfarrak);
+      CapitalManager.Register(Zulfarrak);
 
       FountainOfHealth = new Capital
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("nfoh"), Regions.AlteracAmbient.Center)
       };
-      LegendaryHeroManager.Register(FountainOfHealth);
+      CapitalManager.Register(FountainOfHealth);
 
       FountainOfHealthWetlands = new Capital
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("nfoh"), Regions.WetlandAmbient1.Center)
       };
-      LegendaryHeroManager.Register(FountainOfHealthWetlands);
+      CapitalManager.Register(FountainOfHealthWetlands);
 
       FountainOfHealthFeralas = new Capital
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("nfoh"), Regions.FeralasAmbient1.Center)
       };
-      LegendaryHeroManager.Register(FountainOfHealthFeralas);
+      CapitalManager.Register(FountainOfHealthFeralas);
 
       FountainOfBlood = new Capital
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("nbfl"))
       };
-      LegendaryHeroManager.Register(FountainOfBlood);
+      CapitalManager.Register(FountainOfBlood);
 
       CentaurKhan = new LegendaryHero
       {
@@ -221,7 +221,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(FourCC("u01M")),
         Capturable = true
       };
-      LegendaryHeroManager.Register(Caerdarrow);
+      CapitalManager.Register(Caerdarrow);
     }
   }
 }

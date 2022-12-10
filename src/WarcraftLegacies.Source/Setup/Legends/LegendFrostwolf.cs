@@ -39,13 +39,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage =
           "The mesas of Thunderbluff have been swept clean of the Tauren. The Bloodhoof are without a home."
       };
-      LegendaryHeroManager.Register(LegendThunderbluff);
+      CapitalManager.Register(LegendThunderbluff);
 
       LegendDarkspearhold = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o02D"))
       };
-      LegendaryHeroManager.Register(LegendDarkspearhold);
+      CapitalManager.Register(LegendDarkspearhold);
 
       LegendRexxar = new LegendaryHero
       {
@@ -59,7 +59,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage =
           "Orgrimmar has been demolished. With it dies the hopes and dreams of a wartorn race seeking refuge in a new world."
       };
-      LegendaryHeroManager.Register(LegendOrgrimmar);
+      CapitalManager.Register(LegendOrgrimmar);
     }
   }
 }
