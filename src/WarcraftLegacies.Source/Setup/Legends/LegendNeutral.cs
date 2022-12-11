@@ -8,8 +8,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
   public static class LegendNeutral
   {
     public static LegendaryHero Ragnaros { get; private set; }
-    public static LegendaryHero Morghor { get; private set; }
-    public static LegendaryHero MurlocSorc { get; private set; }
     public static Capital Auchindoun { get; private set; }
     public static Capital DraktharonKeep { get; private set; }
     public static Capital Oshugun { get; private set; }
@@ -26,7 +24,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Capital Karazhan { get; private set; }
     public static Capital Zulfarrak { get; private set; }
     public static Capital FountainOfBlood { get; private set; }
-    public static LegendaryHero CentaurKhan { get; private set; }
     public static LegendaryHero Vaelastrasz { get; private set; }
     public static LegendaryHero Occulus { get; private set; }
     public static LegendaryHero Saragosa { get; private set; }
@@ -40,20 +37,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage = "Ragnaros, the King of Fire and Lord of the Firelands, has been extinguished."
       };
       LegendaryHeroManager.Register(Ragnaros);
-
-      Morghor = new LegendaryHero("Mor'ghor")
-      {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("N0DA")),
-        PermaDies = true
-      };
-      LegendaryHeroManager.Register(Morghor);
-
-      MurlocSorc = new LegendaryHero("?")
-      {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("N089")),
-        PermaDies = true
-      };
-      LegendaryHeroManager.Register(MurlocSorc);
 
       Auchindoun = new Capital
       {
@@ -166,12 +149,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(FourCC("nbfl"))
       };
       CapitalManager.Register(FountainOfBlood);
-
-      CentaurKhan = new LegendaryHero("Centaur Khan")
-      {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("ncnk"), Regions.ThunderBluff.Center)
-      };
-      LegendaryHeroManager.Register(CentaurKhan);
 
       Vaelastrasz = new LegendaryHero("Vaelastrasz")
       {

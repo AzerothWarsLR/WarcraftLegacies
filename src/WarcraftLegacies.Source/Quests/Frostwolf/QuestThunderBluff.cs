@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
@@ -13,11 +14,11 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
   {
     private readonly List<unit> _rescueUnits = new();
 
-    public QuestThunderBluff(rect rescueRect) : base("The Long March",
+    public QuestThunderBluff(PreplacedUnitSystem preplacedUnitSystem, rect rescueRect) : base("The Long March",
       "The Tauren have been wandering for too long. The plains of Mulgore would offer respite from this endless journey.",
       "ReplaceableTextures\\CommandButtons\\BTNCentaurKhan.blp")
     {
-      AddObjective(new ObjectiveLegendDead(LegendNeutral.CentaurKhan));
+      AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(FourCC("ncnk"), Regions.ThunderBluff.Center)));
       AddObjective(new ObjectiveAnyUnitInRect(Regions.ThunderBluff, "Thunder Bluff", true));
       AddObjective(new ObjectiveExpire(1455));
       AddObjective(new ObjectiveSelfExists());
