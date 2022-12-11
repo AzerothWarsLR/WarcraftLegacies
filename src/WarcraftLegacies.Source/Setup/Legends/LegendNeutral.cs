@@ -25,8 +25,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Capital Zulfarrak { get; private set; }
     public static Capital FountainOfBlood { get; private set; }
     public static LegendaryHero Vaelastrasz { get; private set; }
-    public static LegendaryHero Occulus { get; private set; }
-    public static LegendaryHero Saragosa { get; private set; }
     public static Capital Caerdarrow { get; private set; }
     
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
@@ -155,19 +153,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(FourCC("nrwm"))
       };
       LegendaryHeroManager.Register(Vaelastrasz);
-
-      Occulus = new LegendaryHero("Occulus")
-      {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("O025")),
-        PermaDies = true
-      };
-      LegendaryHeroManager.Register(Occulus);
-
-      Saragosa = new LegendaryHero("Saragosa")
-      {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("nadr"))
-      };
-      LegendaryHeroManager.Register(Saragosa);
 
       Caerdarrow = new Capital
       {
