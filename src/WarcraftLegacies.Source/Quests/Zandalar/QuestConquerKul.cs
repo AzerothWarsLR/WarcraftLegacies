@@ -57,7 +57,6 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     protected override void OnComplete(Faction whichFaction)
     {
       whichFaction.Player?.AddGold(750);
-      KultirasSetup.Kultiras?.Player?.SetTeam(TeamSetup.Alliance);
       ZandalarSetup.Zandalar?.Player?.SetTeam(TeamSetup.Horde);
     }
 
@@ -90,8 +89,6 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
         GeneralHelpers.CreateUnits(completingFaction.Player, Constants.UNIT_O04W_GOLDEN_VESSEL_ZANDALAR,
           Regions.TrollSecondChance.Center.X, Regions.TrollSecondChance.Center.Y, 270, 3);
       }
-
-      KultirasSetup.Kultiras?.Player?.SetTeam(TeamSetup.Alliance);
       ZandalarSetup.Zandalar?.Player?.SetTeam(TeamSetup.Horde);
     }
   }

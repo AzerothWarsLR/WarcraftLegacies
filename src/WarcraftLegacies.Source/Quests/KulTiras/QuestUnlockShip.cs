@@ -9,48 +9,52 @@ using static War3Api.Common;
 using static War3Api.Blizzard;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup;
+using MacroTools.ControlPointSystem;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
   /// <summary>
-  /// Proudmoore captial ship starts locked. Boralus and Dazar'Alor must be captured to unlock it.
+  /// Proudmoore captial ship starts locked. Take control of Kul Tiras to unlock it.
   /// </summary>
   public sealed class QuestUnlockShip : QuestData
   {
     private readonly unit _proudmooreCapitalShip;
     private readonly List<unit> _rescueUnits = new();
-    private readonly Rectangle _rescueRect;
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestUnlockShip"/> class.
     /// </summary>
     /// <param name="rescueRect">All units in this area will be made neutral, then rescued when the quest is completed.</param>
     /// <param name="proudmooreCapitalShip">starts invulnerable and unusable. Made usuable and vulnerable when the quest is completed.</param>
-    public QuestUnlockShip(Rectangle rescueRect, unit proudmooreCapitalShip) : base("The Zandalar Menace",
-      "The Troll Empire of Zandalar is a danger to the safety of Kul'tiras and the Alliance. Before setting sail, we must eliminate them.",
+    public QuestUnlockShip(Rectangle rescueRect, unit proudmooreCapitalShip) : base("The Admiralty of Kul Tiras",
+      "Kul Tiras has degenerated severely in contemporary times. Bandits and vile monsters threaten the islands and the noble houses have split apart. We must quell these threats and reunite the kingdom's various regions under Daelin Proudmoore's command.",
       "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp")
     {
-      AddObjective(new ObjectiveControlCapital(LegendNeutral.Dazaralor, false));
-      AddObjective(new ObjectiveControlCapital(LegendKultiras.LegendBoralus, true));
+      AddObjective(new ObjectiveControlCapital(LegendKultiras.LegendBoralus, false));
+      AddObjective(new ObjectiveControlLegend(LegendKultiras.LegendAdmiral, false));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N0BX_TIRAGARDE_SOUND_10GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N0BW_STORMSONG_VALLEY_10GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N0BV_DRUSTVAR_10GOLD_MIN)));
+      AddObjective(new ObjectiveExpire(900));
+      AddObjective(new ObjectiveSelfExists());
       _proudmooreCapitalShip = proudmooreCapitalShip;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      _rescueRect = rescueRect;
       Required = true;
     }
 
     /// <inheritdoc/>
     protected override string FailurePopup =>
-      "Boralus has fallen, but Katherine and Daelin have escaped on the Proudmoore Capital Ship with a handful of Survivors.";
+      "You failed to reunite the Kul'Tiran kingdom. It will never rise to its former glory again.";
 
     /// <inheritdoc/>
     protected override string PenaltyDescription =>
-      "You lose everything you control, but you gain Katherine and Daelin Proudmoore at the Proudmoore Capital Ship.";
+      "The Proudmoore Capital Ship is lost forever.";
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => "The Proudmoore Capital Ship is now ready to set sail!";
+    protected override string CompletionPopup => "The Kul'Tiran kingdom has been united once more. The Proudmoore Capital Ship is now ready to set sail!";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Unlock the Proudmoore capital ship and unlocks the buildings inside.";
+      "Unlock the Proudmoore capital ship and the buildings inside.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
@@ -66,34 +70,12 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
         _proudmooreCapitalShip.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
       _proudmooreCapitalShip.Pause(false);
-      KultirasSetup.Kultiras?.Player?.SetTeam(TeamSetup.Alliance);
-      ZandalarSetup.Zandalar?.Player?.SetTeam(TeamSetup.Horde);
     }
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
-      LegendKultiras.LegendKatherine.StartingXp = GetHeroXP(LegendKultiras.LegendKatherine.Unit);
-      completingFaction.Obliterate();
-      if (completingFaction.Player != null)
-      {
-        LegendKultiras.LegendKatherine.ForceCreate(completingFaction.Player, new Point(_rescueRect.Center.X, _rescueRect.Center.Y), 110);
-        LegendKultiras.LegendAdmiral.ForceCreate(completingFaction.Player, new Point(_rescueRect.Center.X, _rescueRect.Center.Y), 110);
-        if (GetLocalPlayer() == completingFaction.Player)
-          SetCameraPosition(_rescueRect.Center.X, _rescueRect.Center.Y);
-        completingFaction.Player.RescueGroup(_rescueUnits);
-        completingFaction.Player.AddGold(500);
-        completingFaction.Player.AddLumber(2000);
-        _proudmooreCapitalShip.Rescue(completingFaction.Player);
-      }
-      else
-      {
-        _proudmooreCapitalShip.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      }
-      _proudmooreCapitalShip.Pause(false); 
-      IssuePointOrder(_proudmooreCapitalShip, "move", Regions.SouthshoreUnlock.Center.X, Regions.SouthshoreUnlock.Center.Y);
-      KultirasSetup.Kultiras?.Player?.SetTeam(TeamSetup.Alliance);
-      ZandalarSetup.Zandalar?.Player?.SetTeam(TeamSetup.Horde);
+      _proudmooreCapitalShip.Remove();
     }
   }
 }
