@@ -10092,6 +10092,12 @@ STRING 1682
 Bloodlust Totem
 }
 
+STRING 1683
+// Units: n04Y (Nazjatar Royal Court (25gold/min)), Name (Name)
+{
+Nazjatar Royal Court (25gold/min)
+}
+
 STRING 1684
 // Units: n08C (Voidcrusher), EditorSuffix (Name - Editor Suffix)
 {
@@ -14230,12 +14236,6 @@ STRING 2373
 Kezan (15gold/min)
 }
 
-STRING 2374
-// Units: n04Y (Darkspear Isles (10gold/min)), Name (Name)
-{
-Darkspear Isles (10gold/min)
-}
-
 STRING 2375
 // Units: n04X (Plunder Isle/Balor (15gold/min)), Name (Name)
 {
@@ -15376,6 +15376,12 @@ STRING 2564
 Kul'tiras weapon of war designed to scout enemy bases and provide aerial support to ground forces.|n|cfff5962dAbilities:|R True Sight|n|cfff5962dCan learn:|R Cluster Rockets|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land units.|r
 }
 
+STRING 2565
+// Units: n00P (The Abyss (25gold/min)), Name (Name)
+{
+The Abyss (25gold/min)
+}
+
 STRING 2566
 // Units: n027 (Feralas (15gold/min)), Name (Name)
 {
@@ -15704,6 +15710,12 @@ STRING 2620
 Druids, Draenei, Sentinels
 }
 
+STRING 2621
+// Units: n00R (Nazjatar Depths (15gold/min)), Name (Name)
+{
+Nazjatar Depths (15gold/min)
+}
+
 STRING 2622
 // Units: n00M (Theramore (30gold/min)), Name (Name)
 {
@@ -15726,6 +15738,12 @@ STRING 2625
 // Units: n00J (Tomb of Sargeras (20gold/min)), Name (Name)
 {
 Tomb of Sargeras (20gold/min)
+}
+
+STRING 2626
+// Units: n028 (Drowned Reaches (10gold/min)), Name (Name)
+{
+Drowned Reaches (10gold/min)
 }
 
 STRING 2627
@@ -60658,6 +60676,12 @@ STRING 10110
 Awaken
 }
 
+STRING 10111
+// Units: n02P (Mak'ara (10gold/min)), Name (Name)
+{
+Mak'ara (10gold/min)
+}
+
 STRING 10112
 // Abilities: A00J (Summon the Burning Legion), Tip (Tooltip - Normal)
 {
@@ -60674,6 +60698,18 @@ STRING 10114
 // Units: u00Y (Voodoo Lounge), Tip (Tooltip - Basic)
 {
 Summon Voodoo Lounge
+}
+
+STRING 10115
+// Units: n04B (Gishan Caverns (10gold/min)), Name (Name)
+{
+Gishan Caverns (10gold/min)
+}
+
+STRING 10116
+// Destructibles: B025 (Coral Tree Wall), Name (Name)
+{
+Coral Tree Wall
 }
 
 STRING 10117
