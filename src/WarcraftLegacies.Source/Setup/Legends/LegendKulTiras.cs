@@ -1,6 +1,5 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using static War3Api.Common;
 
