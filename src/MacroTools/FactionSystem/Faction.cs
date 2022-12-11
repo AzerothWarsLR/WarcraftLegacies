@@ -597,6 +597,7 @@ namespace MacroTools.FactionSystem
         DistributeUnits(eligiblePlayers);
         DistributeResources(eligiblePlayers);
         DistributeExperience(eligiblePlayers);
+        RemoveGoldMines();
       }
       else
       {
