@@ -599,5 +599,23 @@ namespace MacroTools.Extensions
       UnitAddType(whichUnit, whichUnitType);
       return whichUnit;
     }
+
+    /// <summary>
+    /// Causes the specified unit to become capturable,
+    /// such that it changes ownership to the attacker when reduced below 0 hit points.
+    /// </summary>
+    public static unit MakeCapturable(this unit whichUnit)
+    {
+      CreateTrigger()
+        .RegisterUnitEvent(whichUnit, EVENT_UNIT_DAMAGED)
+        .AddAction(() =>
+        {
+          if (!(GetEventDamage() + 1 >= GetUnitState(whichUnit, UNIT_STATE_LIFE))) return;
+          SetUnitOwner(whichUnit, GetOwningPlayer(GetEventDamageSource()), true);
+          BlzSetEventDamage(0);
+          SetUnitState(whichUnit, UNIT_STATE_LIFE, GetUnitState(whichUnit, UNIT_STATE_MAX_LIFE));
+        });
+      return whichUnit;
+    }
   }
 }

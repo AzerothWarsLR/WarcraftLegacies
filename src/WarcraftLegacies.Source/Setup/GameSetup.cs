@@ -108,6 +108,7 @@ namespace WarcraftLegacies.Source.Setup
       RemoveUnusedAreas.Run();
       EyeOfSargerasCooldowns.Setup();
       EventKelthuzadDeath.Setup();
+      CapturableUnitSetup.Setup(preplacedUnitSystem);
     }
   }
 }

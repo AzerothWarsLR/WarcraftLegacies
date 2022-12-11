@@ -25,9 +25,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Capital TheNexus { get; private set; }
     public static Capital Karazhan { get; private set; }
     public static Capital Zulfarrak { get; private set; }
-    public static Capital FountainOfHealth { get; private set; }
-    public static Capital FountainOfHealthWetlands { get; private set; }
-    public static Capital FountainOfHealthFeralas { get; private set; }
     public static Capital FountainOfBlood { get; private set; }
     public static LegendaryHero CentaurKhan { get; private set; }
     public static LegendaryHero Vaelastrasz { get; private set; }
@@ -162,27 +159,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(FourCC("o00K"))
       };
       CapitalManager.Register(Zulfarrak);
-
-      FountainOfHealth = new Capital
-      {
-        Capturable = true,
-        Unit = preplacedUnitSystem.GetUnit(FourCC("nfoh"), Regions.AlteracAmbient.Center)
-      };
-      CapitalManager.Register(FountainOfHealth);
-
-      FountainOfHealthWetlands = new Capital
-      {
-        Capturable = true,
-        Unit = preplacedUnitSystem.GetUnit(FourCC("nfoh"), Regions.WetlandAmbient1.Center)
-      };
-      CapitalManager.Register(FountainOfHealthWetlands);
-
-      FountainOfHealthFeralas = new Capital
-      {
-        Capturable = true,
-        Unit = preplacedUnitSystem.GetUnit(FourCC("nfoh"), Regions.FeralasAmbient1.Center)
-      };
-      CapitalManager.Register(FountainOfHealthFeralas);
 
       FountainOfBlood = new Capital
       {
