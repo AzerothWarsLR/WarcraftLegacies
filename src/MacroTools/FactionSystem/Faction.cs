@@ -555,14 +555,12 @@ namespace MacroTools.FactionSystem
       foreach (var unit in playerUnits)
       {
         var loopUnitType = UnitType.GetFromHandle(unit);
-        //Refund gold and experience of heroes
         if (IsUnitType(unit, UNIT_TYPE_HERO))
         {
           Player?.AddGold(HeroCost);
           _xp += GetHeroXP(unit);
-          //Subtract hero's starting XP from refunded XP
-          if (LegendaryHeroManager.GetFromUnit(unit) != null) _xp -= LegendaryHeroManager.GetFromUnit(unit)!.StartingXp;
-
+          if (LegendaryHeroManager.GetFromUnit(unit) != null) 
+            _xp -= LegendaryHeroManager.GetFromUnit(unit)!.StartingXp;
           unit.DropAllItems();
           RemoveUnit(unit);
         }
@@ -573,7 +571,6 @@ namespace MacroTools.FactionSystem
           unit.DropAllItems();
           RemoveUnit(unit);
         }
-        //Transfer the ownership of everything else
         else if (loopUnitType.Meta == false)
         {
           SetUnitOwner(unit,
