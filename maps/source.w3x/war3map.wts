@@ -13642,12 +13642,6 @@ STRING 2274
 Train Shadowforge Titan
 }
 
-STRING 2275
-// Units: n05Y (Broken Isles (20gold/min)), Name (Name)
-{
-Broken Isles (20gold/min)
-}
-
 STRING 2276
 // Units: n05X (Tempest Keep), Description (Description)
 {
@@ -14234,6 +14228,12 @@ STRING 2373
 // Units: n04Z (Kezan (15gold/min)), Name (Name)
 {
 Kezan (15gold/min)
+}
+
+STRING 2374
+// Units: n05Y (Azsuna (15gold/min)), Name (Name)
+{
+Azsuna (15gold/min)
 }
 
 STRING 2375
@@ -15141,12 +15141,6 @@ STRING 2525
 // Units: n033 (Blackrock Entrance), Name (Name)
 {
 Blackrock Entrance
-}
-
-STRING 2526
-// Units: n032 (Tomb of Sargeras), Name (Name)
-{
-Tomb of Sargeras
 }
 
 STRING 2527
@@ -22471,7 +22465,7 @@ STRING 3746
 }
 
 STRING 3747
-// Abilities: ANr2 (Reincarnation), EditorSuffix (Editor Suffix)
+// Units: e01W (Shaladrassil), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
 }
@@ -23035,7 +23029,7 @@ Revive Lich King
 }
 
 STRING 3841
-// Abilities: ACs7 (Feral Spirit), EditorSuffix (Editor Suffix)
+// Abilities: ANr2 (Reincarnation), EditorSuffix (Editor Suffix)
 {
 (Creep)
 }
@@ -64379,6 +64373,30 @@ STRING 10727
 (argent)
 }
 
+STRING 10728
+// Units: n053 (Val'sharah (15gold/min)), Name (Name)
+{
+Val'sharah (15gold/min)
+}
+
+STRING 10729
+// Units: n05Z (Stormheim (15gold/min)), Name (Name)
+{
+Stormheim (15gold/min)
+}
+
+STRING 10730
+// Units: e01W (Shaladrassil), Name (Name)
+{
+Shaladrassil
+}
+
+STRING 10731
+// Units: h03C (Black Rook Hold), EditorSuffix (Name - Editor Suffix)
+{
+ (Neutral Hostile)
+}
+
 STRING 10732
 // Abilities: A0A7 (Faerie Fire), EditorSuffix (Editor Suffix)
 {
@@ -66335,16 +66353,34 @@ STRING 11057
 Varian blows the Horn of Stormwind giving nearby friendly units a bonus 45 point to attack damage and a 12 point bouns to defense. |nLasts 25 seconds.
 }
 
+STRING 11058
+// Units: h03C (Black Rook Hold), Name (Name)
+{
+Black Rook Hold
+}
+
 STRING 11059
 // Abilities: Amic (Call To Arms), Hotkey (Hotkey - Normal)
 {
 Z
 }
 
+STRING 11060
+// Units: h03C (Black Rook Hold), Tip (Tooltip - Basic)
+{
+Black Rook Hold
+}
+
 STRING 11061
 // Abilities: A05V (Toggle Summoning), Tip (Tooltip - Normal)
 {
 Activate Summoning
+}
+
+STRING 11062
+// Units: h03C (Black Rook Hold), Ubertip (Tooltip - Extended)
+{
+The gloomy fortress of the Elf-wardens of old.
 }
 
 STRING 11063
@@ -66357,6 +66393,12 @@ STRING 11064
 // Abilities: A05V (Toggle Summoning), Untip (Tooltip - Turn Off)
 {
 Deactivate Summoning
+}
+
+STRING 11065
+// Abilities: ACs7 (Feral Spirit), EditorSuffix (Editor Suffix)
+{
+(Creep)
 }
 
 STRING 11066
