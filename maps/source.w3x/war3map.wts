@@ -13642,6 +13642,12 @@ STRING 2274
 Train Shadowforge Titan
 }
 
+STRING 2275
+// Units: h04C (Pikeman), Ubertip (Tooltip - Extended)
+{
+Veteran warrior ready to risk his life and blood for humanity. |n|cfff5962dAbilities:|R Defend, Combat Experience, Evasion|n|cfff5962dAbilities:|R First Strike, Sunder Armor|n|n|cffffcc00Attacks land units.|r
+}
+
 STRING 2276
 // Units: n05X (Tempest Keep), Description (Description)
 {
@@ -15141,6 +15147,12 @@ STRING 2525
 // Units: n033 (Blackrock Entrance), Name (Name)
 {
 Blackrock Entrance
+}
+
+STRING 2526
+// Units: h02O (Bladesman), Ubertip (Tooltip - Extended)
+{
+Soldier of Arathor, ready to defend his nation.|n|cfff5962dAbilities:|R Defend, Combat Experience|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 2527
@@ -18386,9 +18398,9 @@ Train Pikeman
 }
 
 STRING 3067
-// Units: h04C (Pikeman), Ubertip (Tooltip - Extended)
+// Doodads: D05W (Dalaran Shield), Name (Name)
 {
-Veteran warrior ready to risk his life and blood for humanity. |n|cfff5962dAbilities:|R Defend, Combat Experience, Evasion|n|cfff5962dAbilities:|R Runic Strength, First Strike, Sunder Armor|n|n|cffffcc00Attacks land units.|r
+Dalaran Shield
 }
 
 STRING 3068
@@ -19699,9 +19711,9 @@ Train Bladesman
 }
 
 STRING 3286
-// Units: h02O (Bladesman), Ubertip (Tooltip - Extended)
+// Units: n032 (Suramar (20gold/min)), Name (Name)
 {
-Soldier of Arathor, ready to defend his nation.|n|cfff5962dAbilities:|R Defend, Combat Experience|n|cfff5962dCan Learn:|R Runic Strength|n|n|cffffcc00Attacks land units.|r
+Suramar (20gold/min)
 }
 
 STRING 3287
@@ -49006,22 +49018,10 @@ STRING 8166
 Brings back to life the corpse of 3 friendly nearby unit.
 }
 
-STRING 8167
-// Upgrades: R05G (Druid of the Claw Adept Training,Druid of the Claw Master Training), Ubertip (Tooltip - Extended)
-{
-Increases their Human Form's mana capacity, mana regeneration rate, attack damage and gives them the ability Natural Burial.
-}
-
 STRING 8168
 // Abilities: A0Z4 (Breath of Frost), Researchhotkey (Hotkey - Learn)
 {
 Q
-}
-
-STRING 8169
-// Upgrades: R05G (Druid of the Claw Adept Training,Druid of the Claw Master Training), Ubertip (Tooltip - Extended)
-{
-Increases their Human's mana capacity, mana regeneration rate, attack damage and gives them the ability Wickerbeast form.
 }
 
 STRING 8170
@@ -57029,7 +57029,7 @@ Regrows all of the tree in a radius around the building.
 }
 
 STRING 9504
-// Abilities: A0G7 (Natural Burial), EditorSuffix (Editor Suffix)
+// Abilities: A0G2 (Summon Sea Elemental), EditorSuffix (Editor Suffix)
 {
 (Kul'tiras - Tidesage)
 }
@@ -57233,7 +57233,7 @@ Hero sends out a wave of fire that damages nearby enemies. Each wave does 300 da
 }
 
 STRING 9538
-// Abilities: A0G2 (Summon Sea Elemental), EditorSuffix (Editor Suffix)
+// Abilities: A0GI (Whirlpool), EditorSuffix (Editor Suffix)
 {
 (Kul'tiras - Tidesage)
 }
@@ -57251,7 +57251,7 @@ Removes all buffs from units in a target area and deals <A0G3,DataB1> damage to 
 }
 
 STRING 9541
-// Abilities: A0GI (Whirlpool), EditorSuffix (Editor Suffix)
+// Abilities: S00A (Whirlpool Aura), EditorSuffix (Editor Suffix)
 {
 (Kul'tiras - Tidesage)
 }
@@ -57695,7 +57695,7 @@ Gives 2 additional armor to nearby friendly units.
 }
 
 STRING 9615
-// Abilities: A0FM (Wickerbeast Form), EditorSuffix (Editor Suffix)
+// Abilities: A0G7 (Natural Burial), EditorSuffix (Editor Suffix)
 {
 (Kul'tiras - Thornspeaker)
 }
@@ -67613,12 +67613,6 @@ STRING 11267
 Apprentice spellcaster from Lordaeron.|n|cfff5962dAbilities:|r Frost Bolt|n|cfff5962dCan learn:|R Dispel, Ice Fall|n|n|cffffcc00Attacks land and air units.|R
 }
 
-STRING 11268
-// Abilities: A10W (Frost Bolt), EditorSuffix (Editor Suffix)
-{
-(Lordaeron Mage)
-}
-
 STRING 11269
 // Abilities: A10W (Frost Bolt), Tip (Tooltip - Normal)
 {
@@ -70061,6 +70055,12 @@ STRING 11675
 Toggle Summoning
 }
 
+STRING 11676
+// Doodads: D05R (Glow), Name (Name)
+{
+Glow
+}
+
 STRING 11677
 // Abilities: A05V (Toggle Summoning), Ubertip (Tooltip - Normal - Extended)
 {
@@ -70071,6 +70071,12 @@ STRING 11678
 // Abilities: A0K4 (Explore Map), Hotkey (Hotkey - Normal)
 {
 Z
+}
+
+STRING 11679
+// Abilities: A10W (Frost Bolt), EditorSuffix (Editor Suffix)
+{
+(Lordaeron Mage, Tidesage)
 }
 
 STRING 11680
@@ -71019,6 +71025,14 @@ STRING 11837
 // Upgrades: R098 (Burning Oil), Tip (Tooltip)
 {
 Research Fel Infused Skeleton
+}
+
+STRING 11838
+// Abilities: A0VC (Viral Plague), Researchubertip (Tooltip - Learn - Extended)
+{
+Corrupt the target blood with a nasty plague. The afflicted target cannot cast spells and will take damage per second. Upon its death, an Elite Abomination will spawn from its corpse. Corrupt Blood cannot be dispelled or cancelled.
+Lasts 8 seconds on heroes and indefinitely on units.
+ |n|cffffcc00Level 1|r - 40 damage per second and 2 Elite Abominations summoned.|n|cffffcc00Level 2|r - 70 damage per second and 4 Elite Abominations summoned. |n|cffffcc00Level 3|r - 100 damage per second and 6 Elite Abominations
 }
 
 STRING 11839
@@ -78398,7 +78412,7 @@ Natural Burial
 }
 
 STRING 13068
-// Buffs/Effects: B09B (), EditorSuffix (Editor Suffix)
+// Abilities: A0FM (Wickerbeast Form), EditorSuffix (Editor Suffix)
 {
 (Kul'tiras - Thornspeaker)
 }
@@ -78410,7 +78424,7 @@ Sea Elemental
 }
 
 STRING 13070
-// Abilities: S00A (Whirlpool Aura), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B09A (), EditorSuffix (Editor Suffix)
 {
 (Kul'tiras - Tidesage)
 }
@@ -86388,6 +86402,18 @@ STRING 14399
 Causes the caster to generate an arcane orb whenever they cast a spell. The orb orbits around the caster for 45 seconds, dealing 150 damage to enemy units it strikes.
 }
 
+STRING 14400
+// Abilities: A08L (Create Single Corpse), Name (Name)
+{
+Create Single Corpse
+}
+
+STRING 14401
+// Buffs/Effects: B09B (), EditorSuffix (Editor Suffix)
+{
+(Kul'tiras - Thornspeaker)
+}
+
 STRING 14402
 // Upgrades: R03W (Magic Sentry), EditorSuffix (Editor Suffix)
 {
@@ -88181,6 +88207,12 @@ STRING 14700
 // Upgrades: R026 (Animal War Training), Ubertip (Tooltip - Extended)
 {
 Increases the maximum hit points of all casters by 100 and increases armor by 2.|n|n|cffffd700Affects Priestesses, Moonhunters, and Wisps.|r
+}
+
+STRING 14701
+// Upgrades: R000 (Priest Adept Training,Priest Master Training), Ubertip (Tooltip - Extended)
+{
+Increases Tidesages' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Summon Sea Elemental.
 }
 
 STRING 14702
@@ -90911,7 +90943,7 @@ Whirlpool Aura
 }
 
 STRING 15165
-// Buffs/Effects: B09A (), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B09C (), EditorSuffix (Editor Suffix)
 {
 (Kul'tiras - Tidesage)
 }
@@ -90926,12 +90958,6 @@ STRING 15167
 // Abilities: S00A (Whirlpool Aura), Ubertip (Tooltip - Normal - Extended)
 {
 Reduces nearby enemy units' movement speed by 10% and attack rate by 15%.
-}
-
-STRING 15168
-// Buffs/Effects: B09C (), EditorSuffix (Editor Suffix)
-{
-(Kul'tiras - Tidesage)
 }
 
 STRING 15169
@@ -91004,12 +91030,6 @@ STRING 15180
 // Upgrades: R000 (Priest Adept Training,Priest Master Training), Tip (Tooltip)
 {
 Research Tidesage Master Training
-}
-
-STRING 15181
-// Upgrades: R000 (Priest Adept Training,Priest Master Training), Ubertip (Tooltip - Extended)
-{
-Increases Tidesages' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Dispel Magic.
 }
 
 STRING 15182
@@ -96015,6 +96035,12 @@ STRING 16013
 W
 }
 
+STRING 16014
+// Upgrades: R05G (Druid of the Claw Adept Training,Druid of the Claw Master Training), Ubertip (Tooltip - Extended)
+{
+Increases their Human Form's mana capacity, mana regeneration rate, attack damage and gives them the ability Dispel Magic.
+}
+
 STRING 16015
 // Abilities: A0ML (Renewal), Hotkey (Hotkey - Normal)
 {
@@ -96381,6 +96407,12 @@ STRING 16075
 // Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
+}
+
+STRING 16076
+// Upgrades: R05G (Druid of the Claw Adept Training,Druid of the Claw Master Training), Ubertip (Tooltip - Extended)
+{
+Increases their Human Form's mana capacity, mana regeneration rate, attack damage and gives them the ability Natural Burial and Wickerbeast Form.
 }
 
 STRING 16077
@@ -110237,14 +110269,6 @@ STRING 18393
 Learn Viral Plague - [|cffffcc00Level %d|r]
 }
 
-STRING 18394
-// Abilities: A0VC (Viral Plague), Researchubertip (Tooltip - Learn - Extended)
-{
-Corrupt the target blood with a nasty plague. The afflicted target cannot cast spells and will take damage per second. Upon its death, an Elite Abomination will spawn from its corpse. Corrupt Blood cannot be dispelled or cancelled.
-Lasts 8 seconds on heroes and indefinitely on units.
- |n|cffffcc00Level 1|r - 40 damage per second and 2 Greater Doom Guards summoned.|n|cffffcc00Level 2|r - 70 damage per second and 4 Greater Doom Guards summoned. |n|cffffcc00Level 3|r - 100 damage per second and 6 Greater Doom Guards
-}
-
 STRING 18395
 // Abilities: A0VC (Viral Plague), Tip (Tooltip - Normal)
 {
@@ -115104,12 +115128,6 @@ STRING 19210
 // Abilities: A0YM (Build Murloc Gathering), Ubertip (Tooltip - Normal - Extended)
 {
 Build a Murloc Gathering at target location, has a 300 seconds cooldown.
-}
-
-STRING 19211
-// Units: n0DJ (Aetheneum Catacomb (25gold/min)), Name (Name)
-{
-Aetheneum Catacomb (25gold/min)
 }
 
 STRING 19212
