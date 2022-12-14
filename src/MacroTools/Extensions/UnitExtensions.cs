@@ -201,6 +201,15 @@ namespace MacroTools.Extensions
     }
     
     /// <summary>
+    /// Orders a unit to perform a specified order on the specified target.
+    /// </summary>
+    public static unit IssueOrder(this unit unit, string order, widget target)
+    {
+      IssueTargetOrder(unit, order, target);
+      return unit;
+    }
+    
+    /// <summary>
     /// Orders a unit to perform the specified targetless order.
     /// </summary>
     public static unit IssueOrder(this unit unit, string order)
@@ -229,9 +238,10 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Changess the unit's owner to the specified player.
     /// </summary>
-    public static void SetOwner(this unit unit, player whichPlayer)
+    public static unit SetOwner(this unit unit, player whichPlayer)
     {
       SetUnitOwner(unit, whichPlayer, true);
+      return unit;
     }
     
     /// <summary>
@@ -555,6 +565,16 @@ namespace MacroTools.Extensions
     {
       UnitAddAbility(whichUnit, abilityTypeId);
       UnitMakeAbilityPermanent(whichUnit, true, abilityTypeId);
+      return whichUnit;
+    }
+
+    /// <summary>
+    /// Sets a specific ability of a unit to the specified level.
+    /// </summary>
+    /// <returns></returns>
+    public static unit SetAbilityLevel(this unit whichUnit, int abilityTypeId, int level)
+    {
+      SetUnitAbilityLevel(whichUnit, abilityTypeId, level);
       return whichUnit;
     }
     

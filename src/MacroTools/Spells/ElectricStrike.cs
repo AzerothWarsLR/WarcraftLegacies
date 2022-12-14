@@ -57,8 +57,8 @@ namespace MacroTools.Spells
         {
           if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) || !UnitAlive(unit)) 
             continue;
-          DummyCast.DummyCastUnit(GetOwningPlayer(caster), StunId, StunOrder, 1, unit);
-          DummyCast.DummyCastUnit(GetOwningPlayer(caster), PurgeId, PurgeOrder, 1, unit);
+          DummyCast.DummyCastUnit(caster, StunId, StunOrder, 1, unit);
+          DummyCast.DummyCastUnit(caster, PurgeId, PurgeOrder, 1, unit);
         }
       }
       catch (Exception ex)

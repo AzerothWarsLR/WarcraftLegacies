@@ -30,15 +30,18 @@ namespace MacroTools.SpellSystem
       UnitApplyTimedLife(u, FourCC("BTLF"), duration);
     }
 
-    public static void DummyCastUnit(player whichPlayer, int abilId, string orderId, int level, unit u)
+    /// <summary>
+    /// Causes the specified ability to be cast from the specified object at the specified target.
+    /// </summary>
+    public static void DummyCastUnit(unit caster, int abilId, string orderId, int level, unit u)
     {
-      SetUnitOwner(DummyCaster.DummyUnit, whichPlayer, false);
-      SetUnitX(DummyCaster.DummyUnit, GetUnitX(u));
-      SetUnitY(DummyCaster.DummyUnit, GetUnitY(u));
-      UnitAddAbility(DummyCaster.DummyUnit, abilId);
-      SetUnitAbilityLevel(DummyCaster.DummyUnit, abilId, level);
-      IssueTargetOrder(DummyCaster.DummyUnit, orderId, u);
-      UnitRemoveAbility(DummyCaster.DummyUnit, abilId);
+      DummyCaster.DummyUnit
+        .SetOwner(caster.OwningPlayer())
+        .SetPosition(caster.GetPosition())
+        .AddAbility(abilId)
+        .SetAbilityLevel(abilId, level)
+        .IssueOrder(orderId, u)
+        .RemoveAbility(abilId);
     }
 
     public static void DummyCastPoint(player whichPlayer, int abilId, string orderId, int level, float x, float y)
@@ -115,7 +118,7 @@ namespace MacroTools.SpellSystem
                  .EnumUnitsInRange(center, radius).EmptyToList()
                  .FindAll(unit => castFilter(caster, unit)))
       {
-        DummyCastUnit(GetOwningPlayer(caster), abilId, orderId, level, target);
+        DummyCastUnit(caster, abilId, orderId, level, target);
       }
     }
   }
