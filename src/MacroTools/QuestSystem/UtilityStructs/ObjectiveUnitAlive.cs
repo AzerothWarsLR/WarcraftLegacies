@@ -15,8 +15,8 @@ namespace MacroTools.QuestSystem.UtilityStructs
     public ObjectiveUnitAlive(unit whichUnit)
     {
       Description = IsUnitType(whichUnit, UNIT_TYPE_STRUCTURE)
-        ? $"{whichUnit} is intact"
-        : $"{whichUnit} is alive";
+        ? $"{whichUnit.GetName()} is intact"
+        : $"{whichUnit.GetName()} is alive";
       Progress = QuestProgress.Complete;
       CreateTrigger()
         .RegisterUnitEvent(whichUnit, EVENT_UNIT_DEATH)
