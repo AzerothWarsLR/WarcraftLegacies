@@ -49018,6 +49018,12 @@ STRING 8166
 Brings back to life the corpse of 3 friendly nearby unit.
 }
 
+STRING 8167
+// Units: h045 (Warden), Ubertip (Tooltip - Extended)
+{
+Sentinel Elite Warrior, specialises in disruption. |n|cfff5962dAbilities:|R Fan of Knives, Blink, Spell Steal|n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units.|r
+}
+
 STRING 8168
 // Abilities: A0Z4 (Breath of Frost), Researchhotkey (Hotkey - Learn)
 {
@@ -64131,12 +64137,6 @@ STRING 10687
 // Units: h07D (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility for the Alliance.|n|cfff5962dTrains:|R Alliance Transport Ship, Destroyer, Battleship|R|n|n|cff00c4c4Cannot be built near small inland water areas.
-}
-
-STRING 10688
-// Units: h045 (Warden), Ubertip (Tooltip - Extended)
-{
-Sentinel Elite Warrior, specialises in disruption. |n|cfff5962dAbilities:|R Fan of Knives, Blink, Spell Steal, Feedback|n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 10689

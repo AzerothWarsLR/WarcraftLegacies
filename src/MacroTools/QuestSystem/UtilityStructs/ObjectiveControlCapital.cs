@@ -23,8 +23,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
       Description = $"Your team controls {target.Name}";
       _canFail = canFail;
       if (target.Unit != null) TargetWidget = target.Unit;
-
-      DisplaysPosition = GetOwningPlayer(target.Unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE);
+      DisplaysPosition = true;
       target.ChangedOwner += OnTargetChangeOwner;
       target.OwningPlayer.GetPlayerData().PlayerJoinedTeam += OnFactionTeamJoin;
 

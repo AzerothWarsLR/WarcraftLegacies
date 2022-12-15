@@ -14,7 +14,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
     public ObjectiveControlLegend(LegendaryHero target, bool canFail)
     {
       _target = target;
-      Description = $"Your team controls {target.Name}";
+      Description = $"You control {target.Name}";
       _canFail = canFail;
       if (target.Unit != null) TargetWidget = target.Unit;
 

@@ -1,5 +1,4 @@
 using MacroTools;
-using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using static War3Api.Common;
 
@@ -40,6 +39,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// </summary>
     public static Capital? Feathermoon { get; private set; }
 
+    /// <summary>
+    /// Where the Wardens store their worst enemies.
+    /// </summary>
+    public static Capital? VaultOfTheWardens { get; private set; }
+    
     /// <summary>
     /// Sets up all Sentinel <see cref="Legend"/>s.
     /// </summary>
@@ -83,6 +87,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 4000
       };
       LegendaryHeroManager.Register(Jarod);
+
+      VaultOfTheWardens = new Capital
+      {
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS),
+        Capturable = true
+      };
     }
   }
 }
