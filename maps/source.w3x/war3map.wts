@@ -67613,6 +67613,12 @@ STRING 11267
 Apprentice spellcaster from Lordaeron.|n|cfff5962dAbilities:|r Frost Bolt|n|cfff5962dCan learn:|R Dispel, Ice Fall|n|n|cffffcc00Attacks land and air units.|R
 }
 
+STRING 11268
+// Abilities: A01G (Amphibian), Ubertip (Tooltip - Normal - Extended)
+{
+This unit can move on both land and water, but takes 200% additional damage while on water.
+}
+
 STRING 11269
 // Abilities: A10W (Frost Bolt), Tip (Tooltip - Normal)
 {
@@ -115242,12 +115248,6 @@ STRING 19233
 // Upgrades: R08K (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
-}
-
-STRING 19234
-// Abilities: A01G (Amphibian), Ubertip (Tooltip - Normal - Extended)
-{
-This unit is Amphibian, it can walk on water, but will take 200% bonus damage while doing so.
 }
 
 STRING 19235
