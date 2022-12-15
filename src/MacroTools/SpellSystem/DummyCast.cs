@@ -15,10 +15,10 @@ namespace MacroTools.SpellSystem
 
     public static void ChannelOnPoint(unit caster, int abilityId, string orderId, int level, Point targetPoint, float duration)
     {
-      var u = CreateUnit(GetOwningPlayer(caster), DummyCaster.UnitTypeId, targetPoint.X, targetPoint.Y, 0);
-      UnitAddAbility(u, abilityId);
-      IssueImmediateOrder(u, orderId);
-      UnitApplyTimedLife(u, FourCC("BLTF"), duration);
+      CreateUnit(GetOwningPlayer(caster), DummyCaster.UnitTypeId, targetPoint.X, targetPoint.Y, 0)
+        .AddAbility(abilityId)
+        .IssueOrder(orderId)
+        .SetTimedLife(duration);
     }
     
     public static void DummyChannelInstantFromPoint(player whichPlayer, int abilId, string orderId, int level,

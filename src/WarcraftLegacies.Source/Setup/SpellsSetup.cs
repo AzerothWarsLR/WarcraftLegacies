@@ -119,9 +119,9 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(massSimulacrum);
 
-      var bombingRun = new ChannelAnySpell(Constants.ABILITY_A0S1_BOMBING_RUN_DARK_GREEN)
+      var bombingRun = new ChannelAnySpell(Constants.ABILITY_A0S5_BOMBING_RUN_ARATHOR_DUMMY_SPELL)
       {
-        DummyAbilityId = FourCC("A0S1"),
+        DummyAbilityId = Constants.ABILITY_A0S1_BOMBING_RUN_DARK_GREEN,
         DummyAbilityOrderString = "locustswarm"
       };
       SpellSystem.Register(bombingRun);
