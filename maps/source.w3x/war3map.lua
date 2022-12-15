@@ -539,6 +539,7 @@ gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
 gg_trg_Dummy = nil
+gg_rct_BloodElfSecondChanceSpawn = nil
 function InitGlobals()
 end
 
@@ -7824,6 +7825,7 @@ gg_rct_Nzoth_Spawn = Rect(-4416.0, 1728.0, -3360.0, 2912.0)
 gg_rct_Exodar_South_Interior = Rect(-11648.0, -26816.0, -11168.0, -26304.0)
 gg_rct_Exodar_North_Interior = Rect(-9792.0, -25024.0, -9312.0, -24512.0)
 gg_rct_Exodar_Interior_All = Rect(-11616.0, -26848.0, -9280.0, -24480.0)
+gg_rct_BloodElfSecondChanceSpawn = Rect(10432.0, 3520.0, 10816.0, 3936.0)
 end
 
 function CreateCameras()

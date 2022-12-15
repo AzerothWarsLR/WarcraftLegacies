@@ -97,7 +97,7 @@ public static class Regions
 	public static Rectangle Chen { get; set; } = new Rectangle(-9536f, -2848f, -9088f, -2176f);
 	public static Rectangle QuelDanil_Lodge { get; set; } = new Rectangle(15360f, 4352f, 16160f, 5152f);
 	public static Rectangle Andrassil { get; set; } = new Rectangle(4992f, 18400f, 5440f, 18816f);
-	public static Rectangle VaultoftheWardens { get; set; } = new Rectangle(-1152f, 6784f, -832f, 7104f);
+	public static Rectangle VaultoftheWardens { get; set; } = new Rectangle(-2432f, 3840f, -2112f, 4160f);
 	public static Rectangle Theramore { get; set; } = new Rectangle(-8480f, -10304f, -6016f, -7776f);
 	public static Rectangle Terrordale { get; set; } = new Rectangle(14656f, 10336f, 15968f, 10880f);
 	public static Rectangle Dreadscar_1 { get; set; } = new Rectangle(18080f, 12256f, 18784f, 14688f);
@@ -321,5 +321,9 @@ public static class Regions
 	public static Rectangle Shadowforge_City { get; set; } = new Rectangle(11680f, -9728f, 13248f, -8544f);
 	public static Rectangle BlackrockUnlock { get; set; } = new Rectangle(11840f, -12224f, 13632f, -10208f);
 	public static Rectangle Nzoth_Spawn { get; set; } = new Rectangle(-4416f, 1728f, -3360f, 2912f);
+	public static Rectangle Exodar_South_Interior { get; set; } = new Rectangle(-11648f, -26816f, -11168f, -26304f);
+	public static Rectangle Exodar_North_Interior { get; set; } = new Rectangle(-9792f, -25024f, -9312f, -24512f);
+	public static Rectangle Exodar_Interior_All { get; set; } = new Rectangle(-11616f, -26848f, -9280f, -24480f);
+	public static Rectangle BloodElfSecondChanceSpawn { get; set; } = new Rectangle(10432f, 3520f, 10816f, 3936f);
 
 }
