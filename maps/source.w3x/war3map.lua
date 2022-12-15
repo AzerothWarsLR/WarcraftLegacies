@@ -59,7 +59,6 @@ gg_rct_Quel_Ships_3 = nil
 gg_rct_Quelthalas = nil
 gg_rct_Sargeras_Entrance = nil
 gg_rct_ScarletMonastery = nil
-gg_rct_Scholomance_Entrance = nil
 gg_rct_South_EK_Ships = nil
 gg_rct_StonemaulKeep = nil
 gg_rct_Storm_Peaks = nil
@@ -540,6 +539,7 @@ gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
 gg_trg_Dummy = nil
 gg_rct_BloodElfSecondChanceSpawn = nil
+gg_rct_CaerDarrow = nil
 function InitGlobals()
 end
 
@@ -7563,7 +7563,6 @@ gg_rct_Quel_Ships_3 = Rect(16288.0, 11744.0, 21920.0, 15584.0)
 gg_rct_Quelthalas = Rect(15136.0, 13536.0, 21408.0, 23168.0)
 gg_rct_Sargeras_Entrance = Rect(-1024.0, 8096.0, -448.0, 8576.0)
 gg_rct_ScarletMonastery = Rect(11072.0, 11168.0, 11520.0, 11840.0)
-gg_rct_Scholomance_Entrance = Rect(14560.0, 7552.0, 14912.0, 7872.0)
 gg_rct_South_EK_Ships = Rect(7872.0, -18240.0, 18880.0, -12288.0)
 gg_rct_StonemaulKeep = Rect(-11808.0, -10112.0, -9216.0, -7904.0)
 gg_rct_Storm_Peaks = Rect(-1088.0, 21088.0, 4640.0, 25088.0)
@@ -7826,6 +7825,7 @@ gg_rct_Exodar_South_Interior = Rect(-11648.0, -26816.0, -11168.0, -26304.0)
 gg_rct_Exodar_North_Interior = Rect(-9792.0, -25024.0, -9312.0, -24512.0)
 gg_rct_Exodar_Interior_All = Rect(-11616.0, -26848.0, -9280.0, -24480.0)
 gg_rct_BloodElfSecondChanceSpawn = Rect(10432.0, 3520.0, 10816.0, 3936.0)
+gg_rct_CaerDarrow = Rect(14240.0, 6528.0, 15520.0, 8064.0)
 end
 
 function CreateCameras()

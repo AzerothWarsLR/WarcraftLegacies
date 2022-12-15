@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
   /// </summary>
   public sealed class QuestCapitalCity : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
     private readonly unit _unitToMakeInvulnerable;
     private readonly LegendaryHero _uther;
 
@@ -35,8 +35,8 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       ResearchId = Constants.UPGRADE_R04Y_QUEST_COMPLETED_HEARTHLANDS;
       _unitToMakeInvulnerable = unitToMakeInvulnerable;
       _uther = uther;
-      var rescueUnitFilter = (unit whichUnit) => GetUnitTypeId(whichUnit) != Constants.UNIT_N08F_UNDERCITY_ENTRANCE;
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures, rescueUnitFilter);
+      bool RescueUnitFilter(unit whichUnit) => GetUnitTypeId(whichUnit) != Constants.UNIT_N08F_UNDERCITY_ENTRANCE;
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures, RescueUnitFilter);
       Required = true;
     }
 

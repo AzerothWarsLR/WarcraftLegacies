@@ -66,7 +66,6 @@ public static class Regions
 	public static Rectangle Quelthalas { get; set; } = new Rectangle(15136f, 13536f, 21408f, 23168f);
 	public static Rectangle Sargeras_Entrance { get; set; } = new Rectangle(-1024f, 8096f, -448f, 8576f);
 	public static Rectangle ScarletMonastery { get; set; } = new Rectangle(11072f, 11168f, 11520f, 11840f);
-	public static Rectangle Scholomance_Entrance { get; set; } = new Rectangle(14560f, 7552f, 14912f, 7872f);
 	public static Rectangle South_EK_Ships { get; set; } = new Rectangle(7872f, -18240f, 18880f, -12288f);
 	public static Rectangle StonemaulKeep { get; set; } = new Rectangle(-11808f, -10112f, -9216f, -7904f);
 	public static Rectangle Storm_Peaks { get; set; } = new Rectangle(-1088f, 21088f, 4640f, 25088f);
@@ -325,5 +324,6 @@ public static class Regions
 	public static Rectangle Exodar_North_Interior { get; set; } = new Rectangle(-9792f, -25024f, -9312f, -24512f);
 	public static Rectangle Exodar_Interior_All { get; set; } = new Rectangle(-11616f, -26848f, -9280f, -24480f);
 	public static Rectangle BloodElfSecondChanceSpawn { get; set; } = new Rectangle(10432f, 3520f, 10816f, 3936f);
+	public static Rectangle CaerDarrow { get; set; } = new Rectangle(14240f, 6528f, 15520f, 8064f);
 
 }
